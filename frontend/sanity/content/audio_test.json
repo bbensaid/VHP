@@ -1,0 +1,47 @@
+{
+  "title": "HTR Audio Brief: The 2026 Policy Landscape",
+  "slug": {"current": "audio-brief-policy-2026"},
+  "pillar": "Policy",
+  "status": "Active",
+  "impactLevel": "Medium",
+  "summary": "Listen to our 5-minute executive summary of the upcoming legislative session. We cover the top 3 bills impacting reimbursement.",
+  "publishedAt": "2025-12-16T08:00:00.000Z",
+  "body": [
+    {
+      "_key": "b1",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "text": "For executives on the go, we have condensed our 40-page analysis into a high-level audio briefing. Listen below for the key takeaways on Act 167 and the Federal Data Privacy mandate."
+        }
+      ]
+    },
+    {
+      "_key": "audio-1",
+      "_type": "audio",
+      "title": "Executive Brief: Q4 Policy Outlook",
+      "duration": "04:15"
+    },
+    {
+      "_key": "b2",
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_key": "s2", "_type": "span", "text": "Transcript Highlights"}]
+    },
+    {
+      "_key": "b3",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "s3",
+          "_type": "span",
+          "text": "The audio covers the three main friction points: The Global Budget cap rollout, the new interoperability penalties, and the shift in M&A scrutiny."
+        }
+      ]
+    }
+  ]
+}

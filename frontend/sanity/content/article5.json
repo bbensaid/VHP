@@ -1,0 +1,205 @@
+{
+  "_type": "policyAnalysis",
+  "title": "First Draft: Health Economics Fundamentals: The Case of Vermont's Act 167",
+  "slug": {
+    "current": "First Draft: health-economics-fundamentals-vermont-act-167"
+  },
+  "publishedAt": "2025-12-18T09:00:00Z",
+  "pillar": "Economics",
+  "category": "market",
+  "status": "Active",
+  "impactLevel": "Critical",
+  "summary": "Using Vermont's Act 167 as a living case study, this analysis explores the core principles of health economics—from supply and demand mismatches to the volume-outcome relationship—demonstrating why structural reform is not just a policy choice but an economic inevitability.",
+  "body": [
+    {
+      "_type": "audio",
+      "_key": "aud1",
+      "title": "Audio Briefing: The Economics of Reform",
+      "summary": "A breakdown of how economic principles like 'Baumol's Cost Disease' and 'Supplier-Induced Demand' apply to Vermont's current crisis."
+    },
+    {
+      "_type": "block",
+      "_key": "intro",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Health economics is the study of how society allocates scarce resources to care for the sick and promote wellness. Nowhere is the tension between infinite demand and finite resources more visible than in Vermont's current healthcare crisis. The 2024 Oliver Wyman report on Act 167 provides a stark data set illustrating the classical failures of a fragmented market.",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "video",
+      "_key": "vid1",
+      "url": "https://www.youtube.com/watch?v=3qZso97XfT0",
+      "caption": "Video: The Iron Triangle of Health Economics"
+    },
+    {
+      "_type": "block",
+      "_key": "h2_1",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sh2_1",
+          "text": "1. Scarcity and The Affordability Crisis",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "p1",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sp1",
+          "text": "The fundamental problem of economics is scarcity. In Vermont, this is manifesting as an unsustainable rise in costs relative to income. Commercial insurance premiums for silver exchange plans have risen ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "sp1_b",
+          "text": "108% in just six years",
+          "marks": ["strong"]
+        },
+        {
+          "_type": "span",
+          "_key": "sp1_c",
+          "text": ", reaching an average of $985 per month in 2024. As the Grossman Model of health demand predicts, when the price of health investment rises (via premiums and out-of-pocket costs), the optimal level of health stock that individuals can maintain declines. We are seeing this in the 'decreasing affordability' that forces patients to delay care.",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "h2_2",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sh2_2",
+          "text": "2. Industrial Organization: The Volume-Outcome Relationship",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "p2",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sp2",
+          "text": "A key concept in health economics is the 'Volume-Outcome Relationship,' which posits that hospitals performing a higher volume of specific procedures tend to achieve better patient outcomes due to learning-by-doing. Vermont's fragmented system of 14 hospitals, many with low procedure volumes, challenges this efficiency.",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "q1",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sq1",
+          "text": "“Low volume of procedures to sustain operational excellence... 9 of the 14 hospitals report operating losses.” — Oliver Wyman Act 167 Report",
+          "marks": ["highlight-economics"]
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "p3",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sp3",
+          "text": "The report's recommendation to 'regionalize specialty care services' is a direct application of this economic principle. Consolidating complex surgeries into Centers of Excellence (COEs) exploits economies of scale and improves clinical quality, addressing the inefficiency of maintaining full-service hospitals in areas with shrinking populations.",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "image",
+      "_key": "img1",
+      "caption": "Figure 1: Projected Operating Margins for Vermont Hospitals (2018-2028)",
+      "alt": "Chart showing declining operating margins for Vermont hospitals"
+    },
+    {
+      "_type": "block",
+      "_key": "h2_3",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sh2_3",
+          "text": "3. The Labor Market and Asymmetric Information",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "p4",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sp4",
+          "text": "Vermont faces a severe supply constraint in the physician labor market. The working-age population is projected to decline by 13% by 2040, exacerbating the 'Baumol's Cost Disease' phenomenon where wages in low-productivity growth sectors (like healthcare) must rise to keep pace with other sectors. To mitigate this, the report recommends expanding the scope of practice for nurses and pharmacists—an economic substitution strategy to lower the unit cost of care.",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "code",
+      "_key": "table1",
+      "language": "json",
+      "code": "[{\"Economic Principle\": \"Volume-Outcome Relationship\", \"Vermont Context\": \"Low procedure volumes in rural hospitals leading to inefficiency.\", \"Act 167 Recommendation\": \"Regionalize specialty care into Centers of Excellence.\"}, {\"Economic Principle\": \"Substitute Goods\", \"Vermont Context\": \"Physician shortage and high cost of locum tenens.\", \"Act 167 Recommendation\": \"Expand licensure scope for nurses and pharmacists.\"}, {\"Economic Principle\": \"Allocative Efficiency\", \"Vermont Context\": \"High use of expensive ER for non-urgent conditions.\", \"Act 167 Recommendation\": \"Invest in Urgent Care and primary care infrastructure.\"}]"
+    },
+    {
+      "_type": "block",
+      "_key": "h2_4",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sh2_4",
+          "text": "4. Policy Intervention: Reference-Based Pricing",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "p5",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sp5",
+          "text": "To address the monopolistic pricing power often seen in concentrated hospital markets, the report suggests moving to 'Reference-Based Pricing' (ideally at 200% of Medicare). This introduces a price ceiling mechanism to prevent commercial cross-subsidization from spiraling further out of control, forcing providers to align costs with a standardized market benchmark.",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    }
+  ]
+}

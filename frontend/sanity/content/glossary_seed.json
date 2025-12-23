@@ -1,0 +1,122 @@
+[
+  {
+    "term": "ACO",
+    "description": "Accountable Care Organization. A group of doctors/hospitals who share financial and medical responsibility for providing coordinated care to patients."
+  },
+  {
+    "term": "Capitation",
+    "description": "A payment arrangement where a physician or hospital is paid a fixed amount per patient for a prescribed period of time by an insurer."
+  },
+  {
+    "term": "FHIR",
+    "description": "Fast Healthcare Interoperability Resources. A standard describing data formats and elements (known as 'resources') and an API for exchanging electronic health records."
+  },
+  {
+    "term": "Interoperability",
+    "description": "The ability of different information systems, devices and applications to access, exchange, integrate and cooperatively use data in a coordinated manner."
+  },
+  {
+    "term": "Risk Adjustment",
+    "description": "A statistical process that takes into account the underlying health status and health spending of the enrollees in an insurance plan."
+  },
+  {
+    "term": "Value-Based Care",
+    "description": "A healthcare delivery model in which providers, including hospitals and physicians, are paid based on patient health outcomes."
+  },
+  {
+    "term": "TCOC",
+    "description": "Total Cost of Care. A measure of all the costs associated with a patient's care, often used as a benchmark in value-based contracts."
+  },
+  {
+    "term": "MLR",
+    "description": "Medical Loss Ratio. The percent of premium an insurer spends on claims and expenses that improve health care quality."
+  },
+  {
+    "term": "PBM",
+    "description": "Pharmacy Benefit Manager. Third-party administrators of prescription drug programs for commercial health plans and self-insured employer plans."
+  },
+  {
+    "term": "CMS",
+    "description": "Centers for Medicare & Medicaid Services. A federal agency within the United States Department of Health and Human Services that administers the Medicare program."
+  },
+  {
+    "term": "HIPAA",
+    "description": "Health Insurance Portability and Accountability Act. A federal law that required the creation of national standards to protect sensitive patient health information."
+  },
+  {
+    "term": "GDPR",
+    "description": "General Data Protection Regulation. A regulation in EU law on data protection and privacy in the European Union and the European Economic Area."
+  },
+  {
+    "term": "SaaS",
+    "description": "Software as a Service. A software licensing and delivery model in which software is licensed on a subscription basis and is centrally hosted."
+  },
+  {
+    "term": "RPM",
+    "description": "Remote Patient Monitoring. The use of digital technologies to monitor and capture medical and other health data from patients and electronically transmit this information to healthcare providers."
+  },
+  {
+    "term": "AI",
+    "description": "Artificial Intelligence. The simulation of human intelligence processes by machines, especially computer systems."
+  },
+  {
+    "term": "LLM",
+    "description": "Large Language Model. A type of AI algorithm that uses deep learning techniques and vastly large data sets to understand, summarize, generate and predict new content."
+  },
+  {
+    "term": "SDOH",
+    "description": "Social Determinants of Health. The non-medical factors that influence health outcomes, such as the conditions in which people are born, grow, work, live, and age."
+  },
+  {
+    "term": "HIE",
+    "description": "Health Information Exchange. The mobilization of health care information electronically across organizations within a region, community or hospital system."
+  },
+  {
+    "term": "TEFCA",
+    "description": "Trusted Exchange Framework and Common Agreement. A set of principles and terms for nationwide health information exchange."
+  },
+  {
+    "term": "Prior Authorization",
+    "description": "A management process used by insurance companies to determine if a prescribed procedure, service, or medication is medically necessary."
+  },
+  {
+    "term": "Fee-For-Service",
+    "description": "A payment model where services are unbundled and paid for separately. In health care, it gives an incentive for physicians to provide more treatments."
+  },
+  {
+    "term": "Bundled Payment",
+    "description": "A reimbursement of health care providers (such as hospitals and physicians) on the basis of expected costs for a clinically-defined episode of care."
+  },
+  {
+    "term": "DRG",
+    "description": "Diagnosis-Related Group. A statistical system of classifying any inpatient stay into groups for the purposes of payment."
+  },
+  {
+    "term": "EHR",
+    "description": "Electronic Health Record. An electronic version of a patients medical history, that is maintained by the provider over time."
+  },
+  {
+    "term": "RCM",
+    "description": "Revenue Cycle Management. The financial process, utilizing medical billing software, that healthcare facilities use to track patient care episodes from registration and appointment scheduling to the final payment of a balance."
+  },
+  {
+    "term": "Stark Law",
+    "description": "A set of US federal laws that prohibit physician self-referral, specifically a referral by a physician of a Medicare or Medicaid patient to an entity providing designated health services if the physician has a financial relationship with that entity."
+  },
+  {
+    "term": "Anti-Kickback Statute",
+    "description": "A criminal law that prohibits the knowing and willful payment of 'remuneration' to induce or reward patient referrals."
+  },
+  {
+    "term": "Telehealth",
+    "description": "The use of digital information and communication technologies, such as computers and mobile devices, to access health care services remotely."
+  },
+  {
+    "term": "Digital Twin",
+    "description": "A virtual model designed to accurately reflect a physical object. In healthcare, it refers to virtual replicas of patients or organs used for simulation."
+  },
+  {
+    "term": "Precision Medicine",
+    "description": "An approach to patient care that allows doctors to select treatments that are most likely to help patients based on a genetic understanding of their disease."
+  }
+]

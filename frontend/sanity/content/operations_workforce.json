@@ -1,0 +1,61 @@
+{
+  "title": "The Nursing Workforce Crisis: Retention Economics vs. Agency Spend",
+  "slug": {"current": "nursing-workforce-crisis-economics"},
+  "pillar": "Operations",
+  "status": "Active",
+  "impactLevel": "Critical",
+  "summary": "Hospitals are trading margin for staffing stability. We analyze the $120/hr travel nurse premium and the operational ROI of internal float pools.",
+  "publishedAt": "2025-12-18T10:00:00.000Z",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The post-pandemic labor market has permanently shifted the cost basis of care delivery. Reliance on external contract labor has moved from a 'stop-gap' measure to a structural liability."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "1. The Agency Premium"}]
+    },
+    {
+      "_type": "image",
+      "alt": "Chart comparing full-time employee cost vs travel nurse cost over 5 years",
+      "caption": "Figure 1: The 'Margin Gap' - Agency labor costs have risen 40% faster than reimbursement rates."
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "For every $1.00 spent on a core staff RN, hospitals spend $2.40 for a travel equivalent. This wage disparity creates a toxic feedback loop: Core staff leave for agency roles, forcing the hospital to hire more agency staff."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "2. Internal Float Pools: The Solution?"}]
+    },
+    {
+      "_type": "code",
+      "language": "json",
+      "code": "[\n  { \"Metric\": \"Hourly Rate (Fully Loaded)\", \"Agency Nurse\": \"$125\", \"Internal Float\": \"$85\" },\n  { \"Metric\": \"Onboarding Time\", \"Agency Nurse\": \"2 Days\", \"Internal Float\": \"0 Days\" },\n  { \"Metric\": \"Quality Score (HCAHPS)\", \"Agency Nurse\": \"Average\", \"Internal Float\": \"High\" }\n]"
+    },
+    {
+      "_type": "block",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Verdict: Systems investing in 'Internal Agencies' (Gig-work platforms for their own staff) report a 15% reduction in total labor spend within 12 months."
+        }
+      ]
+    }
+  ]
+}

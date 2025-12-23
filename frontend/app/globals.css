@@ -1,0 +1,66 @@
+/* app/globals.css */
+@import "tailwindcss";
+
+@theme {
+  /* =========================================
+     LAYER 1: BRAND PALETTE (The 5 Pillars)
+     ========================================= */
+  --color-brand-orange: #f97316; /* Policy */
+  --color-brand-green: #059669; /* Economics */
+  --color-brand-indigo: #4f46e5; /* Technology */
+  --color-brand-rose: #e11d48; /* Operations (New) */
+  --color-brand-teal: #0d9488; /* Science (New) */
+
+  --color-brand-blue: #1d4ed8; /* UI Primary */
+  --color-brand-light: #dbeafe; /* UI Backgrounds */
+
+  /* =========================================
+     LAYER 2: GLOBAL UI (Functional)
+     ========================================= */
+  --color-ui-primary: var(--color-brand-blue);
+  --color-ui-bg-light: var(--color-brand-light);
+  --color-ui-text-on-primary: #ffffff;
+  --color-ui-border: #e5e7eb;
+
+  /* =========================================
+     LAYER 3: CONTEXTUAL CONTENT (Pillar Mapping)
+     ========================================= */
+
+  /* --- Homepage Card Colors --- */
+  --color-card-policy: var(--color-brand-orange);
+  --color-card-economics: var(--color-brand-green);
+  --color-card-tech: var(--color-brand-indigo);
+  --color-card-operations: var(--color-brand-rose); /* New */
+  --color-card-science: var(--color-brand-teal); /* New */
+
+  /* --- Sidebar Title Colors --- */
+  --color-sidebar-policy: var(--color-brand-orange);
+  --color-sidebar-economics: var(--color-brand-green);
+  --color-sidebar-tech: var(--color-brand-indigo);
+  --color-sidebar-operations: var(--color-brand-rose); /* New */
+  --color-sidebar-science: var(--color-brand-teal); /* New */
+
+  --color-sidebar-default: #4b5563;
+
+  /* --- Typography --- */
+  --color-text-heading: #111827;
+  --color-text-body: #4b5563;
+  --color-text-inverse: #ffffff;
+
+  /* --- Surfaces --- */
+  --color-surface: #ffffff;
+  --color-surface-muted: #f9fafb;
+}
+
+/* Base Reset */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}

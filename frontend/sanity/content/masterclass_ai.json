@@ -1,0 +1,137 @@
+{
+  "title": "Masterclass: Implementing AI Governance in Clinical Settings",
+  "slug": {"current": "masterclass-ai-governance"},
+  "pillar": "Technology",
+  "status": "Active",
+  "impactLevel": "High",
+  "summary": "Module 1: A step-by-step guide to establishing an algorithmic safety committee. We cover the charter, the stakeholders, and the initial audit framework.",
+  "publishedAt": "2025-12-15T10:00:00.000Z",
+  "body": [
+    {
+      "_key": "video-placeholder",
+      "_type": "image",
+      "alt": "Video Thumbnail showing Dr. Thorne lecturing",
+      "caption": "WATCH: Lecture 1 - The Governance Charter (14:20)"
+    },
+    {
+      "_key": "obj-header",
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_key": "s1", "_type": "span", "text": "Learning Objectives"}]
+    },
+    {
+      "_key": "obj-list-1",
+      "_type": "block",
+      "style": "normal",
+      "listItem": "bullet",
+      "level": 1,
+      "children": [
+        {
+          "_key": "s2",
+          "_type": "span",
+          "text": "Define the roles required for a Clinical AI Safety Committee."
+        }
+      ]
+    },
+    {
+      "_key": "obj-list-2",
+      "_type": "block",
+      "style": "normal",
+      "listItem": "bullet",
+      "level": 1,
+      "children": [
+        {
+          "_key": "s3",
+          "_type": "span",
+          "text": "Draft a 'Model Card' policy for vendor procurement."
+        }
+      ]
+    },
+    {
+      "_key": "obj-list-3",
+      "_type": "block",
+      "style": "normal",
+      "listItem": "bullet",
+      "level": 1,
+      "children": [
+        {
+          "_key": "s4",
+          "_type": "span",
+          "text": "Establish a 'Red Button' protocol for algorithm suspension."
+        }
+      ]
+    },
+    {
+      "_key": "step1-header",
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_key": "s5", "_type": "span", "text": "Step 1: The Stakeholder Table"}]
+    },
+    {
+      "_key": "step1-text",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "s6",
+          "_type": "span",
+          "text": "Governance fails when it is purely IT-driven. Your committee must include clinical champions. "
+        },
+        {"_key": "s7", "_type": "span", "text": "Do not proceed", "marks": ["strong"]},
+        {
+          "_key": "s8",
+          "_type": "span",
+          "text": " without a Chief Medical Information Officer (CMIO) and a Legal/Risk representative present."
+        }
+      ]
+    },
+    {
+      "_key": "tip-box",
+      "_type": "block",
+      "style": "blockquote",
+      "children": [
+        {
+          "_key": "s9",
+          "_type": "span",
+          "text": "Pro Tip: Invite a patient advocate to quarterly reviews. Their questions regarding data privacy often catch risks that technical teams miss."
+        }
+      ]
+    },
+    {
+      "_key": "step2-header",
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_key": "s10", "_type": "span", "text": "Step 2: The Audit Baseline"}]
+    },
+    {
+      "_key": "step2-text",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "s11",
+          "_type": "span",
+          "text": "Before deploying new tools, audit existing 'Silent AI'—algorithms embedded in your EHR (like Sepsis alerts) that may already be firing without oversight. Document their current False Positive rates."
+        }
+      ]
+    },
+    {
+      "_key": "quiz-header",
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_key": "s12", "_type": "span", "text": "Knowledge Check"}]
+    },
+    {
+      "_key": "quiz-text",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "s13",
+          "_type": "span",
+          "text": "Scenario: A vendor refuses to provide training data demographics citing 'IP protection.' Do you approve the pilot? (Answer: No. This violates the Transparency Standard defined in Step 1)."
+        }
+      ]
+    }
+  ]
+}

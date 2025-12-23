@@ -1,0 +1,544 @@
+[
+  {
+    "title": "The 2025 AI Transparency Act: Compliance Costs",
+    "slug": {"current": "ai-transparency-act-compliance"},
+    "pillar": "Policy",
+    "status": "In Committee",
+    "impactLevel": "High",
+    "summary": "Analyzing the proposed federal mandate for 'Algorithmic Nutrition Labels.' We model the operational cost of continuous validation for clinical decision support systems.",
+    "publishedAt": "2025-11-15T09:00:00.000Z",
+    "body": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "The era of 'Black Box' clinical AI is ending. The proposed AI Transparency Act introduces a requirement for continuous validation of all Class II software as a medical device (SaMD)."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "1. The 'Nutrition Label' Mandate"}]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Under Section 403, every clinical algorithm must display a real-time dashboard showing accuracy drift, demographic bias, and training data provenance. This is not a one-time FDA submission; it is a live requirement."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "2. The Economic Burden"}]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Our modeling suggests that for a Tier 1 Health System running 50+ algorithms, the compliance overhead will require a 40% increase in MLOps headcount."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "blockquote",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Projected Cost: $1.2M annually per health system solely for auditing and drift monitoring."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Public Health Mandates: The 2026 Interoperability Cliff",
+    "slug": {"current": "2026-interoperability-cliff"},
+    "pillar": "Policy",
+    "status": "Active",
+    "impactLevel": "Critical",
+    "summary": "The CMS penalty phase for FHIR adoption begins in Q1 2026. We review the readiness gap for rural networks and the inevitable consolidation of HIEs.",
+    "publishedAt": "2025-11-10T09:00:00.000Z",
+    "body": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "While 95% of academic medical centers are FHIR-ready, the long tail of the market is unprepared. The upcoming penalties represent an existential threat to independent rural networks."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "1. The Penalty Structure"}]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "CMS has authorized a 2% reduction in Medicare reimbursement for non-compliance. For a rural hospital operating at a -1% margin, this is a solvency event."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "2. Vendor Bottlenecks"}]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Small EHR vendors are abandoning proprietary API development, forcing clients to purchase expensive middleware wrappers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GDPR vs. HIPAA: The Biotech Innovation Gap",
+    "slug": {"current": "gdpr-vs-hipaa-gap"},
+    "pillar": "Policy",
+    "status": "Active",
+    "impactLevel": "Medium",
+    "summary": "A comparative analysis of clinical trial recruitment speeds in the EU versus the US. How data sovereignty laws are driving a 15% efficiency wedge between regions.",
+    "publishedAt": "2025-11-05T09:00:00.000Z",
+    "body": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "The strict interpretation of 'Right to be Forgotten' in the EU is creating a data retention problem for longitudinal studies. US-based biotech firms are seeing a 6-month speed advantage in cohort recruitment."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "1. The Cost of Privacy"}]
+      },
+      {
+        "_type": "block",
+        "style": "blockquote",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Data: EU clinical trials are now 18% more expensive to administer per-patient than US trials."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "This is driving 'Capital Flight' where global pharma is shifting Phase II trials back to North America."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Feasibility Study: A National Patient Identifier",
+    "slug": {"current": "national-patient-id"},
+    "pillar": "Policy",
+    "status": "Proposed",
+    "impactLevel": "High",
+    "summary": "Lifting the ban on a Unique Patient ID could save the US healthcare system $6B annually. We analyze the current political capital and privacy lobby opposition.",
+    "publishedAt": "2025-11-01T09:00:00.000Z",
+    "body": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Patient matching errors are the silent killer of value-based care. Without a unique ID, 'Identity Resolution' software creates false negatives at a rate of 12%."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "1. The Cost of Error"}]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Duplicate records cost the average hospital $1.5M per year in denied claims. The legislative ban on a federal ID is a $6B annual tax on the system."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "2. Probability Score"}]
+      },
+      {
+        "_type": "block",
+        "style": "blockquote",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Feasibility: Low (15%). The privacy lobby remains an insurmountable barrier in the current Congress."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "ACO Reach: The 'Downside Risk' Meltdown",
+    "slug": {"current": "aco-reach-analysis"},
+    "pillar": "Economics",
+    "status": "Active",
+    "impactLevel": "High",
+    "summary": "Why 35% of ACO Reach participants are projected to exit the program in 2026. We analyze the failure of actuarial risk adjustment for social determinants.",
+    "publishedAt": "2025-10-30T09:00:00.000Z",
+    "body": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "The promise of ACO Reach was health equity. The reality is adverse selection. Practices serving high-needs populations are hitting stop-loss limits faster than projected."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "1. The Math Doesn't Work"}]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Only 18% of participants achieved shared savings in Performance Year 1. The rest faced downside penalties or barely broke even."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "blockquote",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Advisory: Secure Stop-Loss insurance covering at least 110% of benchmark expenditures before entering the 2026 cohort."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Private Equity: The Physician Roll-Up Bubble",
+    "slug": {"current": "pe-physician-rollups"},
+    "pillar": "Economics",
+    "status": "Active",
+    "impactLevel": "Critical",
+    "summary": "Analyzing the arbitrage model of buying independent practices at 4x EBITDA and selling at 12x. Why the FTC's new scrutiny is popping the bubble.",
+    "publishedAt": "2025-10-25T09:00:00.000Z",
+    "body": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "The PE strategy in dermatology and ophthalmology relied on 'multiple arbitrage.' By consolidating small practices, firms created artificial scale."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "1. The Debt Servicing Crisis"}]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Rising interest rates have doubled the cost of the leverage used to buy these practices. Many platforms are now failing to cover their debt covenants."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "2. FTC Intervention"}]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "New antitrust guidelines targeting 'serial acquisitions' below the HSR reporting threshold will freeze roll-up activity in 2026."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Cost-Effectiveness: The QALY Controversy",
+    "slug": {"current": "qaly-controversy-cea"},
+    "pillar": "Economics",
+    "status": "Active",
+    "impactLevel": "Medium",
+    "summary": "The Inflation Reduction Act explicitly bans QALYs in Medicare negotiation. We explore the rise of 'evLYG' as the new standard for drug pricing.",
+    "publishedAt": "2025-10-20T09:00:00.000Z",
+    "body": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Quality-Adjusted Life Years (QALYs) have been the gold standard for decades. However, they inherently undervalue treatments for disabled and elderly populations."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "1. The Shift to evLYG"}]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "The Equal Value of Life Years Gained (evLYG) metric removes the 'quality' penalty for disability. Pharma companies must re-run their health economic models immediately."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "blockquote",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Impact: Drugs for chronic conditions may see a 15-20% increase in calculated 'value' under the new metric."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Venture Capital: The Series A Crunch",
+    "slug": {"current": "venture-capital-series-a-crunch"},
+    "pillar": "Economics",
+    "status": "Active",
+    "impactLevel": "High",
+    "summary": "Valuations have corrected. Why companies with $5M ARR are failing to raise Series B and the return to 'Unit Economics'.",
+    "publishedAt": "2025-10-15T09:00:00.000Z",
+    "body": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Investors have shifted from 'Growth at all costs' to 'Unit Economics.' The median revenue multiple for Health Tech has compressed from 14x to 4x."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "1. The Exit Drought"}]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "With the IPO window shut, M&A is the only path. Strategic acquirers are buying distressed assets at <1x revenue, wiping out common stock equity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Generative AI: Hallucination Rates in Oncology",
+    "slug": {"current": "genai-hallucination-oncology"},
+    "pillar": "Technology",
+    "status": "Active",
+    "impactLevel": "High",
+    "summary": "Benchmarking GPT-4 against human oncologists. We reveal a 12% error rate in complex treatment protocol recommendations.",
+    "publishedAt": "2025-10-10T09:00:00.000Z",
+    "body": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Ambient AI reduces documentation time, but clinical decision support is a different beast. Our study tested LLMs on NCCN guidelines."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "1. The Accuracy Gap"}]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "While accurate for standard protocols, LLMs fabricated citations in 12% of complex, multi-modality cancer cases."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "blockquote",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Verdict: Human-in-the-loop review remains mandatory for all AI-generated clinical plans."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Hospital at Home: The Logistics Gap",
+    "slug": {"current": "hospital-at-home-logistics"},
+    "pillar": "Technology",
+    "status": "Active",
+    "impactLevel": "High",
+    "summary": "Scaling Acute Care at Home requires a complex supply chain. We analyze the failure of 'Tech-Only' platforms that ignore last-mile delivery.",
+    "publishedAt": "2025-10-05T09:00:00.000Z",
+    "body": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Treating pneumonia in a living room requires more than an iPad. It requires infusion nurses, portable oxygen, and meal delivery."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "1. The Unit Economics"}]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "HaH only breaks even at an average daily census of 15 patients per hub. Below that, the fixed costs of the logistics fleet erode the DRG margin."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Zero Trust: Biometric Auth in Hospitals",
+    "slug": {"current": "zero-trust-biometrics"},
+    "pillar": "Technology",
+    "status": "Active",
+    "impactLevel": "Medium",
+    "summary": "Moving beyond passwords. The implementation of palm-vein and facial recognition for clinician login workflows.",
+    "publishedAt": "2025-10-01T09:00:00.000Z",
+    "body": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Tap-and-go badges are insecure. Biometric authentication reduces login friction by 8 seconds per interaction."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "1. The Workflow Gain"}]
+      },
+      {
+        "_type": "block",
+        "style": "blockquote",
+        "children": [
+          {
+            "_type": "span",
+            "text": "In a busy ED, saving 8 seconds per login saves 40 minutes of physician time per shift."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "IoMT: The Data Exhaust Problem",
+    "slug": {"current": "iomt-data-exhaust"},
+    "pillar": "Technology",
+    "status": "Active",
+    "impactLevel": "Medium",
+    "summary": "Hospitals are drowning in sensor data. The shift to 'Edge Processing' to filter noise before it hits the EHR.",
+    "publishedAt": "2025-09-25T09:00:00.000Z",
+    "body": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "A 500-bed hospital generates 50TB of data per year. 90% of this is 'Exhaust'—useless noise (e.g., normal sinus rhythm)."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [{"_type": "span", "text": "1. Edge Intelligence"}]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Smart gateways that filter alerts at the bedside are the only way to prevent alarm fatigue. The algorithm must run on the device, not the cloud."
+          }
+        ]
+      }
+    ]
+  }
+]
