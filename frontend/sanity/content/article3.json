@@ -1,0 +1,205 @@
+{
+  "_type": "policyAnalysis",
+  "title": "The Algorithmic Second Opinion: Who Pays When AI Misses?",
+  "slug": {
+    "current": "algorithmic-second-opinion-liability-crisis"
+  },
+  "publishedAt": "2025-12-15T09:00:00Z",
+  "pillar": "Technology",
+  "category": "workflow",
+  "status": "Active",
+  "impactLevel": "Critical",
+  "summary": "As clinical AI moves from 'Decision Support' to 'Autonomous Diagnosis,' the legal liability shield for software vendors is cracking. Hospitals are unknowingly assuming billions in malpractice risk while vendors retain zero liability for clinical errors.",
+  "body": [
+    {
+      "_type": "audio",
+      "_key": "aud1",
+      "title": "Audio Briefing: The AI Malpractice Trap",
+      "summary": "Legal analysis of the shifting liability frameworks in radiology and pathology."
+    },
+    {
+      "_type": "block",
+      "_key": "intro1",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "For the past decade, Health IT vendors have operated under a distinct legal shield: they provide 'tools,' not 'care.' The physician is always the 'human in the loop,' and therefore, the physician holds the bag. That framework is collapsing under the weight of generative AI.",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "video",
+      "_key": "vid1",
+      "url": "https://www.youtube.com/watch?v=S2s5I6d7e1o",
+      "caption": "Video: Legal experts discuss FDA regulation of autonomous AI"
+    },
+    {
+      "_type": "block",
+      "_key": "h2_1",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sh2_1",
+          "text": "1. The Accuracy Paradox",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "p1",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sp1",
+          "text": "The irony of the current crisis is that the technology is working. In controlled studies, algorithmic diagnostics are outperforming board-certified humans. However, this creates a ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "sp1_b",
+          "text": "reliance trap",
+          "marks": ["strong"]
+        },
+        {
+          "_type": "span",
+          "_key": "sp1_c",
+          "text": ". If the AI is correct 94% of the time, the physician stops checking. When the 6% error occurs, it is catastrophic.",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "code",
+      "_key": "table1",
+      "language": "json",
+      "code": "[{\"Metric\": \"Diagnostic Accuracy\", \"Human Radiologist\": \"88%\", \"AI Model (FDA Approved)\": \"94%\"}, {\"Metric\": \"Time per Read\", \"Human Radiologist\": \"6.5 mins\", \"AI Model (FDA Approved)\": \"0.2 mins\"}, {\"Metric\": \"Vendor Liability Coverage\", \"Human Radiologist\": \"N/A\", \"AI Model (FDA Approved)\": \"0%\"}]"
+    },
+    {
+      "_type": "block",
+      "_key": "q1",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sq1",
+          "text": "“We are buying the software, but we are renting the risk. The vendor indemnification clauses explicitly exclude clinical errors, even if the algorithm caused them.”",
+          "marks": ["highlight-tech"]
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "h2_2",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sh2_2",
+          "text": "2. The Insurance Response",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "p2",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sp2",
+          "text": "Malpractice carriers are reacting faster than regulators. We are seeing a distinct rise in premiums for departments heavily reliant on 'Black Box' algorithms. The actuarial math is simple: if you cannot explain why the decision was made, you cannot defend it in court.",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "image",
+      "_key": "img1",
+      "caption": "Figure 1: Malpractice Premium Trends in AI-Heavy Radiology Depts",
+      "alt": "Bar chart showing 15% YoY increase in premiums"
+    },
+    {
+      "_type": "block",
+      "_key": "h2_3",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sh2_3",
+          "text": "Strategic Implications",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "h3_1",
+      "style": "h3",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sh3_1",
+          "text": "POLICY: The End of 'Learned Intermediary'",
+          "marks": ["highlight-policy"]
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "p3",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sp3",
+          "text": "The legal doctrine of the 'Learned Intermediary' protects device manufacturers by placing the duty to warn on the doctor. New case law suggests AI is eroding this defense. If the AI provides a definitive diagnosis (not just a suggestion), it may be legally classified as the 'practitioner'—a role for which it is unlicensed.",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "h3_2",
+      "style": "h3",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sh3_2",
+          "text": "ECONOMICS: The Hidden Cost of AI",
+          "marks": ["highlight-economics"]
+        }
+      ],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "p4",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "sp4",
+          "text": "Hospitals calculating ROI on AI tools are missing the liability line item. An algorithm that saves $200k in labor but triggers a $5M settlement is a net negative asset. CFOs must demand 'Liability Sharing Agreements' from SaaS vendors before signing contracts.",
+          "marks": []
+        }
+      ],
+      "markDefs": []
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "title": "The ROI of Hospital Price Transparency: Compliance vs. Customer Acquisition",
+  "slug": {"current": "roi-hospital-price-transparency"},
+  "pillar": "Economics",
+  "status": "Active",
+  "impactLevel": "Critical",
+  "summary": "As CMS enforcement actions spike in 2024, hospitals face a binary choice: pay the penalty or risk negotiating leverage. We analyze the actuarial tipping point where transparency shifts from a liability to a customer acquisition strategy.",
+  "publishedAt": "2025-12-10T12:00:00.000Z",
+  "body": [
+    {
+      "_key": "intro-1",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "span-1",
+          "_type": "span",
+          "text": "In 2024, the CMS Hospital Price Transparency rule transitioned from a bureaucratic suggestion to an operational mandate. With maximum penalties rising to over "
+        },
+        {"_key": "span-2", "_type": "span", "text": "$2 million per year", "marks": ["strong"]},
+        {
+          "_key": "span-3",
+          "_type": "span",
+          "text": " for large health systems, CFOs are recalculating the cost of non-compliance. However, the decision is rarely about the fine; it is about the strategic risk of data exposure."
+        }
+      ]
+    },
+    {
+      "_key": "sec-1-header",
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_key": "span-4", "_type": "span", "text": "1. The 2024 Enforcement Shift"}]
+    },
+    {
+      "_key": "sec-1-p1",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "span-5",
+          "_type": "span",
+          "text": "The initial rollout saw fewer than 20% of hospitals fully compliant. CMS responded by standardizing machine-readable file (MRF) formats and automating audits. The 'Good Faith' defense is no longer viable. Systems must now weigh the certainty of the penalty against the uncertainty of market reaction."
+        }
+      ]
+    },
+    {
+      "_key": "sec-2-header",
+      "_type": "block",
+      "style": "h2",
+      "children": [
+        {"_key": "span-6", "_type": "span", "text": "2. The Calculus: Penalties vs. Rate Leakage"}
+      ]
+    },
+    {
+      "_key": "sec-2-p1",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "span-7",
+          "_type": "span",
+          "text": "For a $2B revenue health system, a $2M fine is a rounding error (0.1% of revenue). The real threat is "
+        },
+        {"_key": "span-8", "_type": "span", "text": "Rate Leakage", "marks": ["strong"]},
+        {
+          "_key": "span-9",
+          "_type": "span",
+          "text": ". If payers see that a competitor negotiated a rate 15% lower for the same DRG, they will aggressively leverage that data in the next contract cycle to compress margins."
+        }
+      ]
+    },
+    {
+      "_key": "quote-1",
+      "_type": "block",
+      "style": "blockquote",
+      "children": [
+        {
+          "_key": "span-10",
+          "_type": "span",
+          "text": "Actuarial Risk: While the penalty is capped at $2M, the downside risk of rate compression from exposed negotiated rates can exceed $15M annually for a mid-sized system."
+        }
+      ]
+    },
+    {
+      "_key": "sec-3-header",
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_key": "span-11", "_type": "span", "text": "3. The CDHP Opportunity"}]
+    },
+    {
+      "_key": "sec-3-p1",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {"_key": "span-12", "_type": "span", "text": "The defensive posture ignores the rise of "},
+        {
+          "_key": "span-13",
+          "_type": "span",
+          "text": "Consumer-Driven Health Plans (CDHPs)",
+          "marks": ["strong"]
+        },
+        {
+          "_key": "span-14",
+          "_type": "span",
+          "text": ". With 30% of commercial lives now in high-deductible plans, price has become a primary selection factor for elective procedures. Hospitals that obfuscate pricing are losing volume to ambulatory surgery centers (ASCs) that present clear, bundled rates."
+        }
+      ]
+    },
+    {
+      "_key": "verdict-header",
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_key": "span-15", "_type": "span", "text": "Strategic Verdict"}]
+    },
+    {
+      "_key": "verdict-p1",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "span-16",
+          "_type": "span",
+          "text": "Stop viewing transparency as a compliance check-box. Systems with competitive unit costs should weaponize transparency to capture CDHP market share, while high-cost systems must accelerate value-based contract adoption to hide unit-price variances."
+        }
+      ]
+    }
+  ]
+}

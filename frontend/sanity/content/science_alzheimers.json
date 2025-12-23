@@ -1,0 +1,66 @@
+{
+  "title": "The Alzheimer's Pipeline: Monoclonal Antibodies & The Cost of Hope",
+  "slug": {"current": "alzheimers-drug-pipeline-costs"},
+  "pillar": "Science",
+  "status": "Active",
+  "impactLevel": "High",
+  "summary": "Evaluating the clinical efficacy of Leqembi and Donanemab against the infrastructure costs of infusion centers and MRI monitoring requirements.",
+  "publishedAt": "2025-12-20T09:00:00.000Z",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The FDA approval of anti-amyloid therapies represents a scientific breakthrough but an operational bottleneck. These are not pills; they are complex biological infusions requiring significant infrastructure."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "1. The ARIA Risk Profile"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Amyloid-Related Imaging Abnormalities (ARIA) occur in roughly 20-30% of patients. This mandates a strict protocol of surveillance MRIs, creating a capacity constraint for radiology departments."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Capacity Alert: A standard 500-bed hospital needs to increase MRI throughput by 12% to handle a full panel of Alzheimer's patients."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "2. Clinical Efficacy Data"}]
+    },
+    {
+      "_type": "code",
+      "language": "json",
+      "code": "[\n  { \"Trial Endpoint\": \"CDR-SB Decline\", \"Leqembi\": \"-27%\", \"Donanemab\": \"-35%\" },\n  { \"Trial Endpoint\": \"ARIA-E Incidence\", \"Leqembi\": \"12.6%\", \"Donanemab\": \"24.0%\" },\n  { \"Trial Endpoint\": \"Annual Price\", \"Leqembi\": \"$26,500\", \"Donanemab\": \"$32,000\" }\n]"
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "While Donanemab shows slightly higher efficacy, its higher side-effect profile (ARIA) increases the 'Total Cost of Administration' due to additional monitoring."
+        }
+      ]
+    }
+  ]
+}

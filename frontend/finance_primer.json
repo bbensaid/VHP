@@ -1,0 +1,223 @@
+{
+  "title": "Healthcare Economics vs. Finance: A Primer for Leaders",
+  "slug": { "current": "economics-vs-finance-primer" },
+  "pillar": "Economics",
+  "status": "Active",
+  "impactLevel": "Medium",
+  "summary": "A foundational guide distinguishing the 'macro' view of resource allocation (Economics) from the 'micro' view of capital management (Finance). Understanding the difference is vital for the shift to Value-Based Care.",
+  "publishedAt": "2025-10-27T12:00:00.000Z",
+  "body": [
+    {
+      "_key": "intro-1",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "span-1",
+          "_type": "span",
+          "text": "For emerging leaders in the health sector, 'Economics' and 'Finance' are often used interchangeably in boardrooms. However, conflating these two disciplines leads to strategic errors. While they are siblings, they ask fundamentally different questions about the business of care."
+        }
+      ]
+    },
+    {
+      "_key": "quote-1",
+      "_type": "block",
+      "style": "blockquote",
+      "children": [
+        {
+          "_key": "span-2",
+          "_type": "span",
+          "text": "Economics is the science of scarcity (Should we do this?). Finance is the science of money management (Can we pay for this?)."
+        }
+      ]
+    },
+    {
+      "_key": "sec-1-header",
+      "_type": "block",
+      "style": "h2",
+      "children": [
+        {
+          "_key": "span-3",
+          "_type": "span",
+          "text": "1. Healthcare Economics: The Macro View"
+        }
+      ]
+    },
+    {
+      "_key": "sec-1-p1",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "span-4",
+          "_type": "span",
+          "text": "Healthcare economics focuses on the allocation of scarce resources. It deals with efficiency, behavior, and societal value. It doesn't just look at the bank account; it looks at the 'Opportunity Cost'—if we spend resources treating Disease A, what are we giving up in Disease B?"
+        }
+      ]
+    },
+    {
+      "_key": "sec-1-sub",
+      "_type": "block",
+      "style": "h3",
+      "children": [
+        { "_key": "span-5", "_type": "span", "text": "Key Economic Concepts:" }
+      ]
+    },
+    {
+      "_key": "list-1",
+      "_type": "block",
+      "style": "normal",
+      "listItem": "bullet",
+      "level": 1,
+      "children": [
+        {
+          "_key": "span-6",
+          "_type": "span",
+          "text": "Supply and Demand (e.g., The nursing labor shortage)."
+        }
+      ]
+    },
+    {
+      "_key": "list-2",
+      "_type": "block",
+      "style": "normal",
+      "listItem": "bullet",
+      "level": 1,
+      "children": [
+        {
+          "_key": "span-7",
+          "_type": "span",
+          "text": "Elasticity (e.g., How price changes affect patient volume)."
+        }
+      ]
+    },
+    {
+      "_key": "list-3",
+      "_type": "block",
+      "style": "normal",
+      "listItem": "bullet",
+      "level": 1,
+      "children": [
+        {
+          "_key": "span-8",
+          "_type": "span",
+          "text": "Cost-Effectiveness (e.g., QALYs and ICER thresholds)."
+        }
+      ]
+    },
+    {
+      "_key": "sec-2-header",
+      "_type": "block",
+      "style": "h2",
+      "children": [
+        {
+          "_key": "span-9",
+          "_type": "span",
+          "text": "2. Healthcare Finance: The Micro View"
+        }
+      ]
+    },
+    {
+      "_key": "sec-2-p1",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "span-10",
+          "_type": "span",
+          "text": "If economics is the map, finance is the fuel gauge. Healthcare finance is concerned with the acquisition, management, and financing of capital. It is operational, tangible, and focused on liquidity and solvency."
+        }
+      ]
+    },
+    {
+      "_key": "sec-2-sub",
+      "_type": "block",
+      "style": "h3",
+      "children": [
+        {
+          "_key": "span-11",
+          "_type": "span",
+          "text": "Key Financial Concepts:"
+        }
+      ]
+    },
+    {
+      "_key": "list-4",
+      "_type": "block",
+      "style": "normal",
+      "listItem": "bullet",
+      "level": 1,
+      "children": [
+        {
+          "_key": "span-12",
+          "_type": "span",
+          "text": "Revenue Cycle Management (RCM)."
+        }
+      ]
+    },
+    {
+      "_key": "list-5",
+      "_type": "block",
+      "style": "normal",
+      "listItem": "bullet",
+      "level": 1,
+      "children": [
+        {
+          "_key": "span-13",
+          "_type": "span",
+          "text": "Capital Budgeting (e.g., Buying an MRI machine)."
+        }
+      ]
+    },
+    {
+      "_key": "list-6",
+      "_type": "block",
+      "style": "normal",
+      "listItem": "bullet",
+      "level": 1,
+      "children": [
+        {
+          "_key": "span-14",
+          "_type": "span",
+          "text": "Operating Margins and Cash Flow."
+        }
+      ]
+    },
+    {
+      "_key": "sec-3-header",
+      "_type": "block",
+      "style": "h2",
+      "children": [
+        {
+          "_key": "span-15",
+          "_type": "span",
+          "text": "The Collision: Value-Based Care"
+        }
+      ]
+    },
+    {
+      "_key": "sec-3-p1",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "span-16",
+          "_type": "span",
+          "text": "The transition to Value-Based Care forces these two disciplines to merge. In a Fee-For-Service world, Finance ruled (maximize volume). In a Capitated world, Economics rules (maximize population health efficiency)."
+        }
+      ]
+    },
+    {
+      "_key": "outro",
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_key": "span-17",
+          "_type": "span",
+          "text": "To succeed in the next decade, leaders must be bilingual: able to read a P&L sheet (Finance) and interpret a utility curve (Economics)."
+        }
+      ]
+    }
+  ]
+}
