@@ -1,0 +1,116 @@
+{
+  "_type": "policyAnalysis",
+  "title": "Health Economics Fundamentals: Act 167 & The Vermont Case",
+  "slug": {
+    "current": "health-economics-fundamentals-vermont-act-167"
+  },
+  "publishedAt": "2025-12-23",
+  "status": "active",
+  "pillar": "Economics",
+  "category": "market",
+  "impactLevel": "Critical",
+  "excerpt": "A foundational analysis applying Bhattacharya's core economic principles—Supply, Demand, and Information Asymmetry—to the specific structural deficiencies identified in the Oliver Wyman Act 167 Report.",
+  "body": [
+    {
+      "_type": "block",
+      "style": "h3",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The Grossman Model and Vermont's Demand Curve"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "In Health Economics (Bhattacharya), the demand for healthcare is treated as a derived demand for 'Health Capital.' The Grossman Model posits that individuals invest in medical care to offset the natural depreciation of their health stock. Applying this to the Vermont context, the Oliver Wyman report highlights a critical demographic variable: Vermont's aging population represents a rapidly accelerating depreciation rate of health capital. The community engagement sessions for Act 167 revealed a stark inelasticity of demand; rural populations require access regardless of price, yet the 'cost of investment' (premiums and deductibles) has outpaced the marginal utility for the commercial sector."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h3",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The Hospital Industry: Fixed Costs and Market Failure"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The standard hospital firm model assumes that firms exit the market when Average Total Cost (ATC) exceeds Price. However, Vermont's hospital market is characterized by 'natural monopoly' features in rural areas. The Oliver Wyman report data indicates that many Critical Access Hospitals (CAHs) are operating where Marginal Cost is low, but high Fixed Costs (infrastructure, compliance) make solvency impossible without cross-subsidization. Act 167 attempts to address this not by market exit (closure), but by 'global budgeting'—essentially regulating the utility to ensure survival despite market failure."
+        }
+      ]
+    },
+    {
+      "_type": "code",
+      "language": "json",
+      "code": "[{\"Economic Principle\": \"Grossman Model (Demand)\", \"Vermont Reality (Wyman Report)\": \"High depreciation of health capital due to aging; demand is increasing while ability to pay decreases.\"}, {\"Economic Principle\": \"Supplier-Induced Demand\", \"Vermont Reality (Wyman Report)\": \"Excess capacity in acute care beds vs. shortage in sub-acute/mental health (misaligned supply).\"}, {\"Economic Principle\": \"Information Asymmetry\", \"Vermont Reality (Wyman Report)\": \"Community Engagement revealed patients do not understand cost drivers vs. hospital pricing transparency.\"}]"
+    },
+    {
+      "_type": "block",
+      "style": "h3",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Labor Markets: The Physician Constraint"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Bhattacharya describes the physician labor market as heavily restricted by barriers to entry (licensure, education costs), creating a steep supply curve. The Oliver Wyman report explicitly cites workforce shortages as a primary driver of insolvency. Vermont cannot simply 'pay more' to attract labor (shift along the curve) because reimbursement rates are capped. The system faces a backward-bending supply curve of labor where burnout is reducing total hours worked despite high demand."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "blockquote",
+      "markDefs": [
+        {
+          "_key": "highlight-economics",
+          "_type": "highlight-economics"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "text": "Community engagement highlighted that the market is not clearing: wait times are up, costs are up, and satisfaction is down. This is the definition of a market in disequilibrium."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h3",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Innovation and Policy: The Act 167 Correction"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Finally, the relationship between technological innovation and cost is pivotal. In most industries, technology lowers prices. In healthcare, it raises them (The Newhouse Conjecture). Act 167 P2 proposes a transformation from 'volume-based' innovation (more MRIs) to 'value-based' innovation (better care coordination). This requires a fundamental shift in the production function of health, moving away from capital-intensive inputs toward labor-intensive preventive care."
+        }
+      ]
+    }
+  ]
+}

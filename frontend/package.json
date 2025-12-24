@@ -9,22 +9,32 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@sanity/image-url": "^2.0.2",
-    "dotenv": "^17.2.3",
-    "next": "^16.0.7",
-    "next-sanity": "^11.6.10",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "react-youtube": "^10.1.0"
+    "@sanity/code-input": "^4.1.4",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.50.0",
+    "dotenv": "^16.4.5",
+    "next": "15.1.0",
+    "next-sanity": "^9.8.0",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-youtube": "^10.1.0",
+    "sanity": "^3.67.0",
+    "styled-components": "^6.1.13"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.0.0-beta.9",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.0.6",
-    "tailwindcss": "^4",
+    "eslint": "^8",
+    "eslint-config-next": "15.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^4.0.0-beta.9",
     "typescript": "^5"
+  },
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom",
+    "styled-components": "$styled-components"
   }
 }
