@@ -19,18 +19,22 @@ const client = createClient({
 
 const args = process.argv.slice(2);
 if (args.length === 0) {
-  console.error("❌ Usage: node scripts/import.js <filename.json>");
+  console.error(
+    "❌ Usage: node scripts/import.js <file1.json> [file2.json ...]"
+  );
   process.exit(1);
 }
 
-const fileName = args[0];
 const contentDir = path.resolve(process.cwd(), "sanity", "content");
-const filePath = path.join(contentDir, fileName);
 
-async function runImport() {
+async function processFile(fileName) {
+  const filePath = path.join(contentDir, fileName);
+
   try {
-    if (!fs.existsSync(filePath))
-      throw new Error(`File not found: ${filePath}`);
+    if (!fs.existsSync(filePath)) {
+      console.error(`❌ File not found: ${filePath}`);
+      return;
+    }
 
     const rawData = fs.readFileSync(filePath, "utf8");
     const inputData = JSON.parse(rawData);
@@ -38,7 +42,7 @@ async function runImport() {
     // Convert single object to array for consistent processing
     const articles = Array.isArray(inputData) ? inputData : [inputData];
 
-    console.log(`🚀 Found ${articles.length} articles to import...`);
+    console.log(`🚀 Found ${articles.length} articles in ${fileName}...`);
 
     for (const article of articles) {
       if (!article.title || !article.body) {
@@ -60,9 +64,15 @@ async function runImport() {
       });
     }
 
-    console.log(`✅ Batch Complete!`);
+    console.log(`✅ Finished file: ${fileName}`);
   } catch (err) {
-    console.error("❌ Import Failed:", err.message);
+    console.error(`❌ Failed to import ${fileName}:`, err.message);
+  }
+}
+
+async function runImport() {
+  for (const fileName of args) {
+    await processFile(fileName);
   }
 }
 

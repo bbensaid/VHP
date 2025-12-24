@@ -1,0 +1,75 @@
+{
+  "_type": "policyAnalysis",
+  "title": "The Impact of Cost-Shifting on Rural Hospital Solvency",
+  "slug": {
+    "current": "impact-cost-shifting-rural-solvency"
+  },
+  "publishedAt": "2025-12-23",
+  "status": "active",
+  "pillar": "Economics",
+  "category": "solvency",
+  "impactLevel": "Critical",
+  "excerpt": "This analysis examines the collapse of the traditional cost-shifting mechanism in Vermont's rural healthcare landscape, where a shrinking commercial base can no longer subsidize government payer shortfalls. We utilize Bhattacharya's economic framework to demonstrate why current solvency models are mathematically unsustainable.",
+  "body": [
+    {
+      "_type": "block",
+      "style": "h3",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The Breakdown of the Hydraulic Model"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "In standard health economics, cost-shifting operates on a 'hydraulic' principle: as government reimbursement rates (Medicare/Medicaid) fall below the marginal cost of care, hospitals raise prices for private commercial insurers to cross-subsidize the loss. Bhattacharya notes that this model relies heavily on a firm's market power and a balanced payer mix. However, the Oliver Wyman report indicates a structural failure of this mechanism in Vermont. Due to demographic aging, the ratio of commercially insured patients in rural areas has plummeted. The remaining commercial base is too small to absorb the 'tax' required to cover the widening gap between Medicaid reimbursement and fixed hospital operating costs."
+        }
+      ]
+    },
+    {
+      "_type": "customTable",
+      "title": "The Solvency Gap: Payment-to-Cost Ratios (2024)",
+      "data": [
+        {"payerType": "Medicaid", "reimbursementRatio": "0.71"},
+        {"payerType": "Medicare", "reimbursementRatio": "0.84"},
+        {"payerType": "Commercial Required", "reimbursementRatio": "1.55+"},
+        {"payerType": "Actual Commercial Rate", "reimbursementRatio": "1.38"}
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h3",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Fixed Costs and the Volume Trap"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Rural hospitals are characterized by high fixed costs relative to variable costs. The inability to cost-shift effectively leads to an immediate solvency crisis because revenue is largely fixed by government fee schedules, while inflation drives up input costs (labor, technology). Unlike standard competitive firms that would exit the market when Average Total Cost exceeds Price, rural hospitals are 'essential utilities' constrained by Act 167 mandates to remain open. This creates a disconnect between economic reality and policy mandate, forcing hospitals to consume reserves to survive."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The arithmetic of cost-shifting fails when the commercial population drops below 35%. You cannot balance a system-wide deficit on a vanishing tax base."
+        }
+      ]
+    }
+  ]
+}
