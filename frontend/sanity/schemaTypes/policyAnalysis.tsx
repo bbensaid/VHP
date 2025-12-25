@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import React from 'react'
 
 export default defineType({
   name: 'policyAnalysis',
@@ -69,13 +70,38 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
 
-    // --- THE BODY BLOCK (FIXED) ---
+    // --- THE BODY BLOCK ---
     defineField({
       name: 'body',
       title: 'Body Content',
       type: 'array',
       of: [
-        {type: 'block'}, // Standard text
+        {
+          type: 'block',
+          // 🚨 HYDRATION FIX: Standard JSX <span>
+          styles: [
+            {title: 'Normal', value: 'normal'},
+            {title: 'Heading 2', value: 'h2'},
+            {title: 'Heading 3', value: 'h3'},
+            {
+              title: 'Quote',
+              value: 'blockquote',
+              component: (props) => (
+                <span
+                  style={{
+                    display: 'block',
+                    borderLeft: '4px solid #e2e8f0',
+                    paddingLeft: '1rem',
+                    color: '#64748b',
+                    fontStyle: 'italic',
+                  }}
+                >
+                  {props.children}
+                </span>
+              ),
+            },
+          ],
+        },
 
         // IMAGE BLOCK
         {
@@ -93,7 +119,7 @@ export default defineType({
           options: {language: 'json'},
         },
 
-        // --- VIDEO BLOCK (HYBRID: URL + UPLOAD) ---
+        // --- VIDEO BLOCK ---
         {
           name: 'video',
           title: 'Video Player',
@@ -114,7 +140,6 @@ export default defineType({
             },
             {name: 'caption', type: 'string', title: 'Caption'},
           ],
-          // THIS PREVIEW OBJECT IS WHAT WAS MISSING
           preview: {
             select: {
               title: 'caption',
@@ -125,7 +150,7 @@ export default defineType({
               return {
                 title: title || 'Video Block',
                 subtitle: subtitle || 'Uploaded Video or YouTube',
-                media: media, // Shows thumbnail if uploaded
+                media: media,
               }
             },
           },
