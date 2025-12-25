@@ -19,7 +19,8 @@
     "react-dom": "19.0.0-rc-66855b96-20241106",
     "react-youtube": "^10.1.0",
     "sanity": "^3.67.0",
-    "styled-components": "^6.1.13"
+    "styled-components": "^6.1.13",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.0-beta.9",

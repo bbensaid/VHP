@@ -1,0 +1,70 @@
+{
+  "_type": "policyAnalysis",
+  "title": "The Inflationary Scissors: Rural Hospitals in Crisis",
+  "slug": {"current": "inflationary-scissors-rural-hospitals"},
+  "publishedAt": "2025-12-24",
+  "status": "Active",
+  "pillar": "Economics",
+  "category": "solvency",
+  "impactLevel": "Critical",
+  "summary": "With medical inflation hitting 8% while reimbursement rates remain flat, Vermont's rural hospitals face a mathematical impossibility. This analysis quantifies the purchasing power loss and the resulting erosion of operating margins.",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Rural healthcare is currently caught in a 'Scissors Effect' where the cost of doing business is decoupling from revenue capacity. As inputs (labor, drugs, supplies) rise with the 8% inflation rate, the fixed nature of government reimbursement creates an immediate liquidity crisis."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "The Real Wage Gap"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "For the first time in a decade, the cost of delivering care is growing faster than the ability to bill for it. This is not a volume issue; it is a unit price failure."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Inflation is a tax on solvency. When your largest payer (Medicare) offers a 0% real-term update in an 8% inflation environment, you are effectively running a deficit on every patient treated.",
+          "marks": ["highlight-economics"]
+        }
+      ]
+    },
+    {
+      "_type": "code",
+      "title": "The Purchasing Power Erosion (2024-2025)",
+      "language": "json",
+      "code": [
+        {"Metric": "Medical CPI (Input Costs)", "Result": "+8.2%"},
+        {"Metric": "Medicare Market Basket Update", "Result": "+0.0% (Real)"},
+        {"Metric": "Net Margin Impact", "Result": "-8.2%"},
+        {"Metric": "Avg Rural Hospital Margin", "Result": "-4.5%"}
+      ]
+    },
+    {
+      "_type": "video",
+      "url": "https://www.youtube.com/watch?v=15eXXTrX3tU",
+      "caption": "Video: The Collapse of Rural Healthcare & Medicaid Cuts"
+    },
+    {
+      "_type": "audio",
+      "title": "Audio Brief: The Unit Price Failure",
+      "summary": "Dr. Bhattacharya discusses why volume cannot solve a unit price deficit."
+    }
+  ]
+}

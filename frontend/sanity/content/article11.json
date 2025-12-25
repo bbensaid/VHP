@@ -1,0 +1,75 @@
+{
+"_type": "policyAnalysis",
+"title": "The Great Resignation: Why Primary Care is Firing the Hospital",
+"slug": { "current": "great-resignation-primary-care-firing-hospital" },
+"publishedAt": "2025-12-24T10:00:00Z",
+"status": "Active",
+"pillar": "Economics",
+"category": "value",
+"impactLevel": "High",
+"summary": "With 77.6% of U.S. physicians now employed by corporate entities, a counter-movement is rapidly gaining momentum. Burned out by the 'hamster wheel' of volume-based reimbursement, primary care doctors are opting out of the insurance system entirely to launch Direct Primary Care (DPC) and Concierge models, fundamentally disrupting the labor economics of health systems.",
+"body": [
+{
+"_type": "block",
+"style": "normal",
+"children": [{ "_type": "span", "text": "For the last decade, the dominant trend in American healthcare economics has been consolidation. The independent physician was declared an endangered species, with data showing a relentless march toward hospital employment. However, a quiet rebellion has begun at the edges of the primary care market. Driven by moral injury and the administrative burden of fee-for-service medicine, a growing cohort of doctors is executing a 'reverse merger'—firing their hospital employers to return to a direct-to-consumer relationship." }]
+},
+{
+"_type": "block",
+"style": "h2",
+"children": [{ "_type": "span", "text": "The Corporate Takeover: A Decade of Data" }]
+},
+{
+"_type": "block",
+"style": "normal",
+"children": [{ "_type": "span", "text": "The statistics paint a clear picture of the loss of autonomy. In 2012, only 25.8% of physicians were employed by hospitals or corporate entities. By January 2024, that number had surged to 77.6%. This shift was promised to bring efficiency and stability; instead, it brought commoditization. For primary care specifically, the corporate model's reliance on high-volume, 15-minute patient slots has proven fundamentally incompatible with the relational nature of the discipline." }]
+},
+{
+"_type": "block",
+"style": "blockquote",
+"children": [{
+"_type": "span",
+"text": "The hospital employment model effectively turned primary care doctors into data entry clerks who occasionally see patients. The 'Great Resignation' in medicine is not about leaving medicine; it is about leaving the assembly line.",
+"marks": ["highlight-economics"]
+}]
+},
+{
+"_type": "block",
+"style": "h2",
+"children": [{ "_type": "span", "text": "DPC vs. Concierge: The Economics of Autonomy" }]
+},
+{
+"_type": "block",
+"style": "normal",
+"children": [{ "_type": "span", "text": "Two distinct models have emerged as the lifeboats for these exiting physicians: Direct Primary Care (DPC) and Concierge Medicine. While often conflated, their economic structures differ significantly. DPC typically targets the mass market with a flat monthly fee (avg. $75/month) and refuses all insurance, effectively functioning as a subscription utility. Concierge medicine retains the insurance billing component but adds a substantial retainer (often $2,000+/year) for enhanced access, targeting a wealthier demographic." }]
+},
+{
+"_type": "code",
+"title": "The Corporate Consolidation Trend (Physicians Employed by Hospitals/Corps)",
+"language": "json",
+"code": [
+{ "Metric": "2012 Employment Rate", "Result": "25.8%" },
+{ "Metric": "2018 Employment Rate", "Result": "47.4%" },
+{ "Metric": "2024 Employment Rate", "Result": "77.6%" },
+{ "Metric": "Primary Care Burnout Rate", "Result": "52.0%" }
+]
+},
+{
+"_type": "block",
+"style": "normal",
+"children": [{ "_type": "span", "text": "The scalability of these models poses a serious threat to traditional health systems. As more physicians exit the employed workforce to manage smaller patient panels (typically 600 in DPC vs. 2,500 in employed models), the aggregate supply of primary care access for the general public contracts. This creates a paradox: the models that save the doctors may accelerate the access crisis for the system at large." }]
+},
+{
+"_type": "video",
+"url": "[https://www.youtube.com/watch?v=Cj4xkYtp4Fs](https://www.youtube.com/watch?v=Cj4xkYtp4Fs)",
+"caption": "Analysis: The economic trade-offs between private practice autonomy and hospital employment stability."
+},
+{
+"_type": "audio",
+"title": "Audio Brief: The Subscription Doctor",
+"summary": "An analysis of why subscription-based medicine is proving to be the only viable antidote to physician burnout."
+}
+]
+}
+
+The video [Private Practice or Hospital Employed Physician](https://www.youtube.com/watch?v=Cj4xkYtp4Fs) is relevant because it directly addresses the decision-making process for doctors considering leaving hospital employment, outlining the financial and lifestyle trade-offs discussed in the article.
