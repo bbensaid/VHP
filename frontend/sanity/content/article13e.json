@@ -1,0 +1,194 @@
+{
+  "_type": "policyAnalysis",
+  "title": "The Zero-Sum Suicide: An Economic Autopsy of Vermont’s Payer-Provider War",
+  "slug": {"current": "zero-sum-suicide-economic-autopsy"},
+  "publishedAt": "2025-12-26T18:00:00Z",
+  "status": "Active",
+  "pillar": "Economics",
+  "category": "market",
+  "impactLevel": "Critical",
+  "summary": "The social contract of Vermont healthcare is dead. With residents paying 19.6% of their income on premiums to fund a system defined by $6,520 MRIs and adversarial oligopolies, the market has ceased to function. This analysis dissects the Fee-For-Service pathology and argues that Global Budgets are the only exit from the demographic death spiral.",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The social contract of Vermont healthcare is dead. It did not die from natural causes; it was strangled by a toxic economic feedback loop known as the Fee-For-Service (FFS) model."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The current public warfare between Blue Cross Blue Shield of Vermont (BCBSVT) and the University of Vermont Medical Center (UVMMC) is not a standard contract dispute. It is a symptom of Allocative Failure. When a state’s residents pay 19.6% of their household income on insurance premiums—nearly triple the national average—to fund a system where a single MRI scan costs $6,520, the market has ceased to function as a mechanism for value and has become a mechanism for extraction."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "text": "I. The Data: The Price of Leverage"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The catalyst for this open conflict is BCBSVT’s unprecedented 'VT Affordable Care' campaign, which explicitly urges patients to bypass the state’s academic medical center. The insurer, facing a $62.1 million deficit and paying out $35 million weekly in claims, has broken the omertà of the healthcare industry to reveal the raw unit prices driving these deficits."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The data reveals a market defined by extreme price dispersion, which violates the Law of One Price. In a competitive market, identical goods (a 3T MRI scan) should command identical prices. In Vermont, they do not."
+        }
+      ]
+    },
+    {
+      "_type": "code",
+      "language": "json",
+      "title": "The Price of Leverage: 2025 Market Rates",
+      "code": [
+        {"Facility": "UVMMC (Academic)", "MRI Cost": "$6,520", "Markup": "Baseline"},
+        {"Facility": "Northwestern (Community)", "MRI Cost": "$2,785", "Markup": "-57%"},
+        {"Facility": "Independent Facility", "MRI Cost": "$1,799", "Markup": "-72%"}
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Economically, this is not a pricing error. It is the result of Market Power. UVMMC functions as a 'Differentiated Oligopoly.' Because they are the sole provider of essential, non-substitutable services (Trauma, Burn Unit), they leverage this monopoly power to demand exorbitant rents on substitutable services. They effectively say to the insurer: 'If you want access to our Trauma Center, you must pay $6,500 for our MRIs.'"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "text": "II. The Root Pathology: Fee-For-Service (FFS)"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The villain in this story is not a person; it is an incentive structure. Under Fee-For-Service, healthcare providers are paid for volume, not value. Every test, scan, and visit is a billable unit. This creates a fundamental misalignment between the hospital’s financial health and the patient’s financial health."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The Fee-For-Service model turns the patient into a 'revenue extraction unit.' To cover massive fixed costs, the hospital needs the $6,500 MRI to subsidize its other operations, creating a perverse incentive to hoard simple procedures that could be done cheaper elsewhere.",
+          "marks": ["highlight-economics"]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "This leads to 'Physician-Induced Demand' (PID). Because of Information Asymmetry, the doctor (Agent) influences the patient (Principal). UVMMC, burdened by a 31% non-clinical administrative load, needs high throughput to survive. Thus, physicians are subtly incentivized to keep care 'in-house,' steering patients toward the $6,500 option rather than the $1,799 independent one."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "text": "III. The Demographic Trap: A Pyramid Scheme Collapse"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The Wyman Report provides the grim context: Vermont is aging faster than it can pay. Healthcare financing in the US is essentially a Ponzi scheme that relies on a large base of healthy, working-age people paying premiums to subsidize the care of the elderly. By 2040, 30% of Vermonters will be over age 65, while the working-age population shrinks by 13%."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "You cannot fund a 'Rolls-Royce' academic medical system on a shrinking, aging tax base using a Fee-For-Service model. As the pool of commercially insured people shrinks, the hospital must charge them even more per unit to maintain revenue. This creates a Death Spiral: premiums rise, healthy people drop coverage, the risk pool gets sicker, and premiums rise again."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "text": "IV. The Solution: Global Budgets"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The only structural fix is to kill Fee-For-Service and move to Global Budgets (The Maryland Model). Instead of negotiating the price of an MRI, the state sets a Total Revenue Cap for UVMMC (e.g., $2.5 Billion/year)."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "This flips the incentives entirely. Under a Global Budget, that $6,500 MRI is no longer 'profit'—it is an 'expense' against the fixed budget. UVMMC would suddenly want to partner with the $1,799 independent center to save its own resources. The war ends because the economic reason for the war—volume maximization—is removed."
+        }
+      ]
+    },
+    {
+      "_type": "video",
+      "url": "https://www.youtube.com/watch?v=mk3xIRXo2nw",
+      "caption": "Deep Dive: Understanding Market Failure in healthcare and why standard competition rules don't apply to hospitals."
+    },
+    {
+      "_type": "audio",
+      "title": "Audio Brief: The End of the Cross-Subsidy",
+      "summary": "An analysis of how the demographic shift in Vermont makes the current hospital pricing model mathematically impossible."
+    }
+  ]
+}

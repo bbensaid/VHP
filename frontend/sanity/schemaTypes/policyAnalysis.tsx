@@ -70,6 +70,27 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
 
+    defineField({
+      name: 'mainImage',
+      title: 'Main Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'caption',
+          type: 'string',
+          title: 'Caption',
+        },
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative Text',
+        },
+      ],
+    }),
+
     // --- THE BODY BLOCK ---
     defineField({
       name: 'body',
