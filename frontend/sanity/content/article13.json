@@ -1,0 +1,108 @@
+{
+  "_type": "policyAnalysis",
+  "title": "The 19.6% Trap: Vermont’s Affordability Crisis & The Oligopoly Problem",
+  "slug": {"current": "vermont-affordability-crisis-oligopoly-problem"},
+  "publishedAt": "2025-12-26T12:00:00Z",
+  "status": "Active",
+  "pillar": "Economics",
+  "category": "market",
+  "impactLevel": "Critical",
+  "summary": "Vermont’s healthcare landscape is buckling under an 'adversarial oligopoly.' With residents paying 19.6% of their income on premiums and price disparities reaching 555% between academic and independent providers, this analysis breaks down the economic pathologies driving the crisis—from Physician-Induced Demand to the failure of cross-subsidization—and explores Global Budgets as a structural exit strategy.",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The fundamental economic pact of Vermont's healthcare system is fracturing. Data extracted from recent reports reveals a system where the 'price of admission' has become unsustainable: residents now spend 19.6% of their income on health insurance premiums—nearly double the national average of 7.9%. This financial strain is not an abstract market fluctuation; it is the direct result of a 'simmering and adversarial' relationship between a dominant insurer (BCBSVT) facing a $62.1 million deficit and a hospital network that holds significant market leverage."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "The Pathology of Pricing: Differentiated Oligopoly"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The core of the conflict lies in the indefensible variance in pricing for identical services. In a perfectly competitive market, the price of a standardized commodity like an MRI would converge. However, Vermont's market is a 'Differentiated Oligopoly,' where the University of Vermont Medical Center (UVMMC) commands two-thirds of total spending. Because the insurer cannot afford to lose the network's patients, UVMMC acts as a 'price maker' rather than a 'price taker.'"
+        }
+      ]
+    },
+    {
+      "_type": "code",
+      "title": "The Price Gap: UVMMC vs. Independent Facilities (2025)",
+      "language": "json",
+      "code": [
+        {
+          "Service": "MRI (Standard)",
+          "UVMMC Price": "$6,520",
+          "Independent Price": "$1,799",
+          "Markup": "+262%"
+        },
+        {
+          "Service": "Lab Test (Basic)",
+          "UVMMC Price": "$118",
+          "Independent Price": "$18",
+          "Markup": "+555%"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "Economic Theory: Why Money Doesn't Buy Health"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "This pricing power is exacerbated by two classic health economic failures: 'Physician-Induced Demand' (PID) and 'Supply-Sensitive Care.' The data shows that 31% of physician FTEs at UVMMC are non-clinical, yet clinical productivity remains low (75% of physicians are below the 50th percentile). In a Fee-For-Service (FFS) model, this bloat is incentivized. Physicians, acting as agents for uniformed patients, may recommend higher-intensity care that generates institutional revenue but offers diminishing marginal returns for patient health—a phenomenon known as the 'Flat of the Curve' medicine."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "text": "To understand the difference between expenditure and utility, consider a leaky bucket: if the bucket (the health system) has holes (inefficiencies like high administrative costs), adding more water (funding) will not help you carry it any further.",
+          "marks": ["highlight-economics"]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "The Solution: Global Budgets & Site Neutrality"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The Wyman Report and economic theory suggest a definitive path forward: breaking the Fee-For-Service addiction. The proposed shift to 'Global Budgets' (modeled after Maryland) would cap total hospital revenue, flipping the incentive: suddenly, an MRI becomes a cost to manage rather than a product to sell. Furthermore, enforcing 'Site Neutrality' would mandate that a check-up costs the same whether performed in a hospital tower or a strip mall, effectively dismantling the arbitrage opportunity that drives today's 555% markups."
+        }
+      ]
+    },
+    {
+      "_type": "video",
+      "url": "https://www.youtube.com/watch?v=tNla9nyRMmQ",
+      "caption": "Deep Dive: Vox explains why hospital prices vary so wildly and how 'leverage' dictates the cost of your MRI."
+    },
+    {
+      "_type": "audio",
+      "title": "Audio Brief: The Zero-Sum Game",
+      "summary": "An analysis of the adversarial relationship between payers and providers in Vermont."
+    }
+  ]
+}

@@ -17,11 +17,11 @@
   "dependencies": {
     "@portabletext/react": "^5.0.0",
     "@sanity/image-url": "^2.0.2",
-    "@sanity/vision": "^4.20.3",
+    "@sanity/vision": "^4.22.0",
     "next-sanity": "^11.6.10",
     "react": "^19.1",
     "react-dom": "^19.1",
-    "sanity": "^4.20.3",
+    "sanity": "^4.22.0",
     "styled-components": "^6.1.18"
   },
   "devDependencies": {
