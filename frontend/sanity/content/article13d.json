@@ -1,0 +1,123 @@
+{
+  "_type": "policyAnalysis",
+  "title": "The Zero-Sum Battlefield: How Fee-For-Service is Bankrupting Vermont",
+  "slug": {"current": "zero-sum-battlefield-fee-for-service-failure-vermont"},
+  "publishedAt": "2025-12-26T18:00:00Z",
+  "status": "Active",
+  "pillar": "Economics",
+  "category": "market",
+  "impactLevel": "Critical",
+  "summary": "Vermont’s healthcare market is in a state of allocative failure, with residents spending 19.6% of their income on premiums to fund a system defined by extreme price disparities and adversarial oligopolies. This analysis deconstructs the Fee-For-Service (FFS) model as the root pathology driving the conflict between BCBSVT and UVMMC, exposing how the failure of cross-subsidization in an aging state has turned patients into revenue extraction units. We argue that only a structural shift to Global Budgets can halt the demographic death spiral.",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The social contract of Vermont healthcare—that high premiums buy access to a stable, non-profit system—is actively collapsing. The latest escalation, a direct-to-consumer marketing campaign by Blue Cross Blue Shield of Vermont (BCBSVT) urging members to bypass the University of Vermont Medical Center (UVMMC), is not merely a contract dispute. It is a signal that the market has reached a point of 'Allocative Failure.' With residents spending 19.6% of their household income on premiums—the highest rate in the nation and nearly triple the 7.9% national average—the system has crossed the threshold from expensive to predatory."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "I. The Precipitating Crisis: War in the Open"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The conflict began when BCBSVT, facing a $62.1 million deficit after paying out $35 million a week in claims, launched the 'VT Affordable Care' campaign. This initiative explicitly encourages patients to seek care at independent facilities rather than the academic medical center. The insurer's data reveals indefensible price variances that cannot be explained by clinical quality differences alone. For example, a standard MRI costs $6,520 at UVMMC, compared to $1,799 at independent sites. This 262% to 555% markup is the hallmark of a 'Differentiated Oligopoly' flexing its market power."
+        }
+      ]
+    },
+    {
+      "_type": "code",
+      "title": "The Price of Leverage: UVMMC vs. Independent Providers (2025)",
+      "language": "json",
+      "code": [
+        {
+          "Service": "MRI (Standard)",
+          "UVMMC Price": "$6,520",
+          "Independent Price": "$1,799",
+          "Markup": "+262%"
+        },
+        {
+          "Service": "Lab Test (Basic)",
+          "UVMMC Price": "$118",
+          "Independent Price": "$18",
+          "Markup": "+555%"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "II. The Root Cause: Fee-For-Service Incentives"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Why does this persist? The culprit is the 'Fee-For-Service' (FFS) payment model. In an FFS system, every procedure is a revenue unit. Hospitals are economically incentivized to maximize volume and intensity. This leads to 'Physician-Induced Demand' (PID), where providers—acting as agents for medically uninformed patients—recommend expensive hospital-based imaging instead of cheaper community alternatives. The data shows that 31% of UVMMC physician time is non-clinical, yet the system demands high throughput to cover its massive fixed costs."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The Fee-For-Service model turns the patient into a 'revenue extraction unit.' The hospital needs the $6,500 MRI to subsidize its other operations, creating a perverse incentive to hoard simple procedures that could be done cheaper elsewhere.",
+          "marks": ["highlight-economics"]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "III. The Demographic Death Spiral"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The Wyman Report highlights that this model is doomed by demographics. By 2040, 30% of Vermonters will be over 65. The traditional strategy of 'Cross-Subsidization'—charging commercially insured workers high rates to cover the losses from Medicare/Medicaid patients—is failing because the workforce (the subsidy source) is shrinking by 13%. We are running out of 'rich' patients to overcharge."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "IV. The Solution: Global Budgets & Site Neutrality"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "To fix this, Vermont must abandon FFS for **Global Budgets**. Under this model (successfully used in Maryland), the hospital gets a fixed annual revenue cap (e.g., $2.5 Billion) to care for the population. Crucially, this flips the incentive: an MRI becomes a *cost* to the hospital, not a profit. The hospital would suddenly *want* to partner with cheaper independent centers to save its own budget. Combined with 'Site Neutrality' laws (mandating equal pay for equal work regardless of location), this would structurally end the 555% markup arbitrage."
+        }
+      ]
+    },
+    {
+      "_type": "video",
+      "url": "https://www.youtube.com/watch?v=mk3xIRXo2nw",
+      "caption": "Deep Dive: Understanding 'Market Failure' in healthcare and why standard competition rules don't apply to hospitals."
+    },
+    {
+      "_type": "audio",
+      "title": "Audio Brief: The End of Fee-For-Service",
+      "summary": "A breakdown of why paying for volume is bankrupting Vermont, and how Global Budgets offer a way out."
+    }
+  ]
+}

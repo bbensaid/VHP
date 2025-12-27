@@ -1,0 +1,137 @@
+{
+  "_type": "policyAnalysis",
+  "title": "The Zero-Sum War: An Economic Autopsy of Vermont’s Payer-Provider Crisis",
+  "slug": {"current": "zero-sum-war-economic-autopsy-vermont"},
+  "publishedAt": "2025-12-26T15:00:00Z",
+  "status": "Active",
+  "pillar": "Economics",
+  "category": "market",
+  "impactLevel": "Critical",
+  "summary": "Vermont’s healthcare market has entered a phase of destructive conflict. With Blue Cross Blue Shield of Vermont (BCBSVT) launching a direct marketing campaign against the University of Vermont Medical Center (UVMMC), the veil of 'non-profit cooperation' has been lifted. This comprehensive analysis combines data from the Wyman Report, VTDigger investigations, and standard Health Economics theory to explain why a state with the highest insurance premiums in the nation (19.6% of income) is trapped in a 'Differentiated Oligopoly'—and why Global Budgets offer the only structural exit.",
+  "body": [
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "I. The Precipitating Crisis: War in the Open"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The conflict began not in a boardroom, but on a billboard. As reported by VTDigger, BCBSVT’s 'VT Affordable Care' campaign represents a historic breach of protocol. The insurer is explicitly urging its members to bypass the state’s flagship academic medical center, UVMMC, in favor of independent clinics. This is a desperate move driven by solvency risks: the insurer paid out $35 million a week in claims in 2024, ending the year with a $62.1 million deficit. This is no longer a negotiation; it is a fight for survival."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "II. The Data: Anatomy of a Price Disparity"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The insurer's argument rests on the 'Law of One Price'—or rather, its violation. In a functional market, identical goods command identical prices. In Vermont, market leverage has distorted this beyond recognition. UVMMC, controlling two-thirds of the hospital market, charges multiples of what independent competitors charge for commoditized diagnostic services."
+        }
+      ]
+    },
+    {
+      "_type": "code",
+      "title": "The Premium on Leverage: 2025 Price Comparison",
+      "language": "json",
+      "code": [
+        {
+          "Service": "MRI (Standard)",
+          "UVMMC Cost": "$6,520",
+          "Northwestern Cost": "$2,785",
+          "Independent Cost": "$1,799",
+          "Markup": "+262%"
+        },
+        {
+          "Service": "CT Scan (Abdomen)",
+          "UVMMC Cost": "$5,408",
+          "Independent Cost": "$1,339",
+          "Markup": "+303%"
+        },
+        {
+          "Service": "Lab Test (Metabolic)",
+          "UVMMC Cost": "$118",
+          "Independent Cost": "$18",
+          "Markup": "+555%"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [
+        {"_type": "span", "text": "III. Theoretical Framework: Why 'Shopping' Doesn't Work"}
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "BCBSVT's strategy relies on 'Consumer Directed Health Care'—the idea that patients will vote with their feet. However, standard Health Economics (Bhattacharya et al.) explains why this fails in healthcare markets due to **Agency Theory**. The patient (Principal) delegates decision-making to the physician (Agent). If a UVMMC specialist orders an MRI, the patient rarely questions the location, even if it costs thousands more. Furthermore, **Moral Hazard** dampens the signal: once a patient meets their deductible, the marginal cost of the expensive MRI is zero to them, even as it bankrupts the insurance pool."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "IV. The Wyman Report: Structural unsustainability"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The Act 167 (Wyman) Report provides the macro-context. Vermont faces a 'Demographic Death Spiral.' By 2040, 30% of the population will be over 65. The working-age population—the ones paying the commercial premiums that subsidize the system—is shrinking. UVMMC argues its high prices are necessary to cross-subsidize the underfunded Trauma and Burn units. However, the data shows inefficiencies: 31% of physician FTEs at UVMMC are non-clinical, and clinical productivity is below national benchmarks."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The state is attempting to fund a Rolls-Royce academic medical system on a rickshaw demographic base. The 19.6% premium burden is the breaking point.",
+          "marks": ["highlight-economics"]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "V. The Solution: Global Budgets & Site Neutrality"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The only theoretical exit from this zero-sum conflict is to abandon Fee-For-Service entirely. \n\n1. **Global Budgets (Maryland Model):** If UVMMC received a fixed annual revenue cap (e.g., $2.5 Billion) rather than getting paid per MRI, the economic incentives would invert. An MRI would become a *cost* to the hospital, not a profit center. They would *want* patients to use cheaper independent centers.\n\n2. **Site Neutrality:** Legislation must mandate that a service codes for the same price regardless of the building it is performed in. This removes the arbitrage incentive that drives hospital consolidation."
+        }
+      ]
+    },
+    {
+      "_type": "video",
+      "url": "https://www.youtube.com/watch?v=tNla9nyRMmQ",
+      "caption": "Deep Dive: Why American hospitals have unique 'leverage' to dictate prices, and why regulation is the only counter-force."
+    },
+    {
+      "_type": "audio",
+      "title": "Audio Brief: The End of the Cross-Subsidy",
+      "summary": "An analysis of how the demographic shift in Vermont makes the current hospital pricing model mathematically impossible."
+    }
+  ]
+}

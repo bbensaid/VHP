@@ -1,0 +1,124 @@
+{
+  "_type": "policyAnalysis",
+  "title": "The 19.6% Trap: The Economics of Vermont’s Payer-Provider War",
+  "slug": {"current": "vermont-payer-provider-war-economics-19-percent"},
+  "publishedAt": "2025-12-26T14:00:00Z",
+  "status": "Active",
+  "pillar": "Economics",
+  "category": "market",
+  "impactLevel": "Critical",
+  "summary": "Vermont’s healthcare market has devolved into an open conflict between its largest insurer and largest hospital system, driven by a structural failure where residents pay 19.6% of their income on premiums. This analysis dissects the 'Adversarial Oligopoly' between BCBSVT and UVMMC, applies agency theory to the $6,520 MRI disparity, and argues why Global Budgets are the only theoretical exit from this zero-sum game.",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The social contract of Vermont healthcare—that high premiums buy access to a stable, non-profit system—is actively collapsing. The latest escalation, a direct-to-consumer marketing campaign by Blue Cross Blue Shield of Vermont (BCBSVT) urging members to bypass the University of Vermont Medical Center (UVMMC), is not merely a contract dispute. It is a signal that the market has reached a point of 'Allocative Failure.' With residents spending 19.6% of their household income on premiums—the highest rate in the nation and nearly triple the 7.9% national average—the system has crossed the threshold from expensive to predatory."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "The Raw Data: A Market Without Substitutes"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The insurer’s campaign relies on a stark economic reality: price dispersion for commoditized services. In a functional market, the 'Law of One Price' suggests that identical goods (like a standard 3T MRI scan) should have similar costs. In Vermont, this law has been broken by market power. Recent disclosures reveal that UVMMC charges a premium of 262% to 555% over independent competitors for identical diagnostic work."
+        }
+      ]
+    },
+    {
+      "_type": "code",
+      "title": "The Price of Leverage: UVMMC vs. Independent Providers (2025)",
+      "language": "json",
+      "code": [
+        {
+          "Service": "MRI (Standard)",
+          "UVMMC Price": "$6,520",
+          "Independent Price": "$1,799",
+          "Markup": "+262%"
+        },
+        {
+          "Service": "MRI (Northwestern)",
+          "UVMMC Price": "$6,520",
+          "Independent Price": "$2,785",
+          "Markup": "+134%"
+        },
+        {
+          "Service": "Lab Test (Basic)",
+          "UVMMC Price": "$118",
+          "Independent Price": "$18",
+          "Markup": "+555%"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "This data illustrates a 'Differentiated Oligopoly.' UVMMC controls two-thirds of all hospital spending in the state. Because they provide unique, non-substitutable services (Level 1 Trauma, Burn Unit), they can demand monopoly rents on substitutable services (MRIs, Labs). BCBSVT, facing a $62.1 million deficit, is attempting to break this leverage by turning patients into price-sensitive shoppers—a strategy that rarely succeeds in healthcare due to 'Agency Theory.'"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "Theoretical Expansion: Why 'Shopping' Fails"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The insurer's plea for patients to 'shop around' ignores the fundamental specificities of health economics: \n\n1. **Agency Problems:** The patient (Principal) relies on the doctor (Agent) to make decisions. If a UVMMC specialist orders an MRI, they will default to the internal system. The patient, lacking medical knowledge, rarely overrides this 'default bias' even if it costs them thousands.\n\n2. **Moral Hazard & The Deductible:** For a patient who has already met their deductible, the marginal cost of a $6,500 MRI is zero. They have no financial incentive to drive to St. Albans for the $1,799 option. The cost is fully externalized to the insurance pool, driving up next year's premiums for everyone (the 'Tragedy of the Commons')."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The market is trapped in a 'Cost Shift' loop. UVMMC argues these high commercial prices are necessary to subsidize Medicaid underpayments ($0.70 on the dollar). This effectively turns commercial premiums into a hidden tax on Vermont's middle class.",
+          "marks": ["highlight-economics"]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{"_type": "span", "text": "The Structural Fix: Global Budgets"}]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The current 'Fee-For-Service' (FFS) war is a race to the bottom. The Wyman Report and economic consensus point to one viable exit strategy: **Global Budgets** (The Maryland Model).\n\nIn a Global Budget system, the state sets a total annual revenue cap for the hospital (e.g., $2 Billion). The hospital is paid this amount regardless of how many MRIs it performs. \n\n**Why this solves the problem:**\n* **Incentive Reversal:** Under FFS, every MRI is profit. Under Global Budgets, every MRI is a *cost*. UVMMC would suddenly *want* to send patients to the cheaper independent center to save its own budget.\n* **Stable Funding:** The 'Cost Shift' is formalized. The budget explicitly covers the Trauma Center's fixed costs, removing the need to overcharge for MRIs to keep the lights on.\n* **Site Neutrality:** It eliminates the arbitrage between hospital-based and freestanding clinics."
+        }
+      ]
+    },
+    {
+      "_type": "video",
+      "url": "https://www.youtube.com/watch?v=kLv3636yLI4",
+      "caption": "Analysis: How Price Transparency laws expose the 'ChargeMaster' game, but why regulation (Global Budgets) is needed to actually fix it."
+    },
+    {
+      "_type": "audio",
+      "title": "Audio Brief: The 19.6% Solution",
+      "summary": "A theoretical breakdown of how Global Budgets could end the BCBSVT-UVMMC war."
+    }
+  ]
+}
