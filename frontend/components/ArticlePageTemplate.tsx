@@ -31,7 +31,7 @@ export default async function ArticlePageTemplate({
   const { id } = await params;
 
   // --- THE QUERY (UPDATED) ---
-  // We explicitly expand the videoFile and audio file assets here.
+  // Added 'mainImage' fetching logic
   const query = `*[_type == "policyAnalysis" && slug.current == $slug][0]{
     title,
     summary,
@@ -39,6 +39,14 @@ export default async function ArticlePageTemplate({
     pillar,
     status,
     impactLevel,
+    mainImage {
+      asset->{
+        _id,
+        url
+      },
+      alt,
+      caption
+    },
     // EXPANDED BODY QUERY FOR MEDIA
     body[]{
       ...,
@@ -85,7 +93,7 @@ export default async function ArticlePageTemplate({
   return (
     <article className="max-w-4xl mx-auto py-16 px-4 md:px-8">
       {/* HEADER */}
-      <header className="mb-12 border-b border-gray-200 pb-10">
+      <header className="mb-10 border-b border-gray-200 pb-10">
         <div className="flex items-center gap-3 mb-6">
           {article.pillar && (
             <span
@@ -116,6 +124,23 @@ export default async function ArticlePageTemplate({
           {article.summary}
         </p>
       </header>
+
+      {/* --- ADDED: MAIN IMAGE RENDERER --- */}
+      {article.mainImage?.asset?.url && (
+        <figure className="mb-12">
+          <img
+            src={article.mainImage.asset.url}
+            alt={article.mainImage.alt || article.title}
+            className="w-full h-auto rounded-xl shadow-lg object-cover max-h-[600px]"
+          />
+          {article.mainImage.caption && (
+            <figcaption className="mt-3 text-center text-sm text-gray-500 italic">
+              {article.mainImage.caption}
+            </figcaption>
+          )}
+        </figure>
+      )}
+      {/* ---------------------------------- */}
 
       {/* BODY CONTENT */}
       <div className="prose prose-lg prose-indigo max-w-none">
