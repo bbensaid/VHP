@@ -2,117 +2,7 @@ import React from "react";
 import { PortableText } from "@portabletext/react";
 import Link from "next/link";
 
-// 1. Helper to extract YouTube ID
-const getYouTubeId = (url: string) => {
-  if (!url) return null;
-  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
-  const match = url.match(regExp);
-  return match && match[2].length === 11 ? match[2] : null;
-};
-
-// 2. The Video Component (Handles BOTH Uploads and YouTube)
-const VideoBlock = ({ value }: { value: any }) => {
-  const { url, caption, videoFile } = value;
-
-  // A. Check for Uploaded File (Sanity File)
-  const uploadedUrl = videoFile?.asset?.url;
-
-  // B. Check for YouTube ID
-  const youtubeId = url ? getYouTubeId(url) : null;
-
-  return (
-    <div className="my-8">
-      <div
-        className="relative w-full overflow-hidden rounded-xl shadow-lg bg-gray-900"
-        style={{ paddingTop: "56.25%" }}
-      >
-        {/* Priority 1: Uploaded Video File */}
-        {uploadedUrl ? (
-          <video
-            src={uploadedUrl}
-            controls
-            className="absolute top-0 left-0 w-full h-full object-cover"
-          />
-        ) : youtubeId ? (
-          /* Priority 2: YouTube Embed */
-          <iframe
-            src={`https://www.youtube.com/embed/${youtubeId}`}
-            title={caption || "Video player"}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="absolute top-0 left-0 w-full h-full border-0"
-          />
-        ) : (
-          /* Fallback: No Source */
-          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white bg-gray-800">
-            <p className="text-sm">No Video Source Found</p>
-          </div>
-        )}
-      </div>
-      {caption && (
-        <p className="mt-2 text-sm text-center text-gray-500 italic">
-          {caption}
-        </p>
-      )}
-    </div>
-  );
-};
-
-// 3. The Audio Component
-const AudioBlock = ({ value }: { value: any }) => {
-  const audioUrl = value.file?.asset?.url;
-
-  if (!audioUrl) {
-    return (
-      <div className="p-4 bg-red-50 text-red-600 rounded border border-red-100 text-sm">
-        Audio file not found. Check GROQ query:{" "}
-        <code>file &#123; asset-&gt;&#123;url&#125; &#125;</code>
-      </div>
-    );
-  }
-
-  return (
-    <div className="my-8 p-6 bg-gray-50 rounded-xl border border-gray-200">
-      <div className="flex items-center gap-4 mb-4">
-        <div className="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center flex-shrink-0">
-          <svg
-            className="w-5 h-5 text-white"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-            />
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-        </div>
-        <div>
-          <h4 className="font-bold text-gray-900 leading-tight">
-            {value.title || "Audio Briefing"}
-          </h4>
-          <p className="text-xs text-gray-500 uppercase tracking-wide">
-            Listen to Summary
-          </p>
-        </div>
-      </div>
-      <audio controls src={audioUrl} className="w-full" />
-      {value.summary && (
-        <p className="mt-3 text-sm text-gray-600">{value.summary}</p>
-      )}
-    </div>
-  );
-};
-
-// 4. The Table Component
+// The Table Component
 const TableBlock = ({ value }: { value: any }) => {
   let data = [];
   try {
@@ -163,8 +53,6 @@ const TableBlock = ({ value }: { value: any }) => {
 
 const components = {
   types: {
-    video: VideoBlock,
-    audio: AudioBlock,
     code: TableBlock,
     image: ({ value }: any) => (
       <figure className="my-8">
