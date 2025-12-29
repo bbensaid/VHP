@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 
 // 1. Helper to extract YouTube ID
 const getYouTubeId = (url: string) => {
@@ -9,8 +10,9 @@ const getYouTubeId = (url: string) => {
 };
 
 // 2. The Video Component (Handles BOTH Uploads and YouTube)
-const VideoBlock = ({ value }: { value: any }) => {
+const VideoBlock = ({ value, compact }: { value: any; compact?: boolean }) => {
   const { url, caption, videoFile } = value;
+  const containerRef = useRef<HTMLDivElement>(null);
 
   // A. Check for Uploaded File (Sanity File)
   const uploadedUrl = videoFile?.asset?.url;
@@ -19,9 +21,9 @@ const VideoBlock = ({ value }: { value: any }) => {
   const youtubeId = url ? getYouTubeId(url) : null;
 
   return (
-    <div className="my-8">
+    <div ref={containerRef} className={compact ? "" : "my-8"}>
       <div
-        className="relative w-full overflow-hidden rounded-xl shadow-lg bg-gray-900"
+        className={`relative w-full overflow-hidden ${compact ? "rounded-md" : "rounded-xl shadow-lg"} bg-gray-900`}
         style={{ paddingTop: "56.25%" }}
       >
         {/* Priority 1: Uploaded Video File */}
@@ -34,7 +36,7 @@ const VideoBlock = ({ value }: { value: any }) => {
         ) : youtubeId ? (
           /* Priority 2: YouTube Embed */
           <iframe
-            src={`https://www.youtube.com/embed/${youtubeId}`}
+            src={`https://www.youtube.com/embed/${youtubeId}?rel=0`}
             title={caption || "Video player"}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -47,7 +49,7 @@ const VideoBlock = ({ value }: { value: any }) => {
           </div>
         )}
       </div>
-      {caption && (
+      {!compact && caption && (
         <p className="mt-2 text-sm text-center text-gray-500 italic">
           {caption}
         </p>
