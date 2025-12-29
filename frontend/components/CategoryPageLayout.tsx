@@ -2,6 +2,8 @@
 import React from "react";
 import Link from "next/link";
 import { client } from "@/lib/sanity";
+import VideoBlock from "./VideoBlock";
+import AudioBlock from "./AudioBlock";
 
 interface CategoryPageProps {
   pillar: "Policy" | "Economics" | "Technology"; // Restricted to your 3 Pillars
@@ -25,7 +27,16 @@ export default async function CategoryPageLayout({
   // Dynamic Query: Fetches articles matching the Pillar AND Category
   const query = `*[_type == "policyAnalysis" && pillar == "${pillar}" && category == "${category}"] | order(publishedAt desc) {
     _id, title, summary, publishedAt, slug, status,
-    body[]{ _type }
+    body[]{
+      _key,
+      _type,
+      url,
+      videoFile { asset->{url} },
+      file { asset->{url} },
+      title,
+      summary,
+      caption
+    }
   }`;
 
   const articles = await client.fetch(query, {}, { next: { revalidate: 0 } });
@@ -70,33 +81,23 @@ export default async function CategoryPageLayout({
         )}
 
         {articles.map((article: any) => {
-          const hasVideo = article.body?.some((b: any) => b._type === "video");
-          const hasAudio = article.body?.some((b: any) => b._type === "audio");
+          const videos = article.body?.filter((b: any) => b._type === "video") || [];
+          const audios = article.body?.filter((b: any) => b._type === "audio") || [];
 
           return (
             <div key={article._id} className="flex flex-col lg:flex-row gap-8">
-              {/* LEFT SIDEBAR (25%) - Buttons */}
-              <div className="order-2 lg:order-1 lg:w-1/4 flex flex-row lg:flex-col gap-3 items-start justify-start">
-                {hasVideo && (
-                  <Link
-                    href={`/articles/${article.slug.current}#video-content`}
-                    className="flex items-center gap-2 px-3 py-2 rounded-md bg-gray-100 text-gray-600 text-xs font-bold hover:bg-red-50 hover:text-red-600 transition-colors w-auto lg:w-full justify-center lg:justify-start"
-                    title="Watch Video"
-                  >
-                    <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-                    Watch Video
-                  </Link>
-                )}
-                {hasAudio && (
-                  <Link
-                    href={`/articles/${article.slug.current}#audio-content`}
-                    className="flex items-center gap-2 px-3 py-2 rounded-md bg-gray-100 text-gray-600 text-xs font-bold hover:bg-indigo-50 hover:text-indigo-600 transition-colors w-auto lg:w-full justify-center lg:justify-start"
-                    title="Listen to Audio"
-                  >
-                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
-                    Listen to Audio
-                  </Link>
-                )}
+              {/* LEFT SIDEBAR (25%) - Media Blocks */}
+              <div className="order-2 lg:order-1 lg:w-1/4 flex flex-row lg:flex-col gap-4 items-start justify-start">
+                {videos.map((video: any) => (
+                  <div key={video._key} className="w-full max-w-[240px] lg:max-w-none">
+                    <VideoBlock value={video} compact={true} />
+                  </div>
+                ))}
+                {audios.map((audio: any) => (
+                  <div key={audio._key} className="w-full max-w-[240px] lg:max-w-none">
+                    <AudioBlock value={audio} compact={true} />
+                  </div>
+                ))}
               </div>
 
               {/* MAIN CONTENT (75%) - Article Card */}
