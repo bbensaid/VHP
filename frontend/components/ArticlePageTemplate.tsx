@@ -95,18 +95,24 @@ export default async function ArticlePageTemplate({
   const mainContent = article.body?.filter((block: any) => block._type !== 'video' && block._type !== 'audio') || [];
 
   return (
-    <div className="mx-auto grid grid-cols-12 gap-x-12 px-4 sm:px-6 lg:px-8">
+    <div className="flex flex-col lg:flex-row gap-8 mt-6">
       {/* Left Sidebar */}
-      <aside className="col-span-2 hidden xl:block">
+      <aside className="order-2 lg:order-1 lg:w-1/4 hidden lg:block">
         <div className="sticky top-24 space-y-6">
           {videoElements.map((video: any) => (
             <VideoBlock key={video._key} value={video} />
+          ))}
+          {videoElements.length > 0 && audioElements.length > 0 && (
+            <hr className="border-gray-200 my-8" />
+          )}
+          {audioElements.map((audio: any) => (
+            <AudioBlock key={audio._key} value={audio} />
           ))}
         </div>
       </aside>
 
       {/* Main Content */}
-      <article className="col-span-12 xl:col-span-8">
+      <article className="order-1 lg:order-2 w-full lg:w-3/4">
         <header className="mb-10 border-b border-gray-200 pb-10">
           <div className="flex items-center gap-3 mb-6">
             {article.pillar && (
@@ -167,15 +173,6 @@ export default async function ArticlePageTemplate({
           </Link>
         </div>
       </article>
-
-      {/* Right Sidebar */}
-      <aside className="col-span-2 hidden xl:block">
-        <div className="sticky top-24 space-y-6">
-          {audioElements.map((audio: any) => (
-            <AudioBlock key={audio._key} value={audio} />
-          ))}
-        </div>
-      </aside>
     </div>
   );
 }
