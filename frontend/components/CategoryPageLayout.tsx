@@ -6,13 +6,13 @@ import VideoBlock from "./VideoBlock";
 import AudioBlock from "./AudioBlock";
 
 interface CategoryPageProps {
-  pillar: "Policy" | "Economics" | "Technology"; // Restricted to your 3 Pillars
-  category: string; // Must match the folder name / Header link
-  title: string; // The big H1 title
-  description: string; // The subtitle
-  themeColor: string; // CSS class for text color
-  hoverBg: string; // CSS class for hover background
-  badgeStyle: string; // CSS classes for the status badge
+  pillar: "Policy" | "Economics" | "Technology";
+  category: string;
+  title: string;
+  description: string;
+  themeColor: string;
+  hoverBg: string;
+  badgeStyle: string;
 }
 
 export default async function CategoryPageLayout({
@@ -24,7 +24,6 @@ export default async function CategoryPageLayout({
   hoverBg,
   badgeStyle,
 }: CategoryPageProps) {
-  // Dynamic Query: Fetches articles matching the Pillar AND Category
   const query = `*[_type == "policyAnalysis" && pillar == "${pillar}" && category == "${category}"] | order(publishedAt desc) {
     _id, title, summary, publishedAt, slug, status,
     body[]{
@@ -85,32 +84,48 @@ export default async function CategoryPageLayout({
           const audios = article.body?.filter((b: any) => b._type === "audio") || [];
 
           return (
-            <div key={article._id} className="flex flex-col lg:flex-row gap-8">
-              {/* LEFT SIDEBAR (25%) - Media Blocks */}
-              <div className="order-2 lg:order-1 lg:w-1/4 flex flex-row lg:flex-col gap-4 items-start justify-start">
-                {videos.map((video: any) => (
-                  <div key={video._key} className="w-full max-w-[240px] lg:max-w-none">
-                    <VideoBlock value={video} compact={true} />
-                  </div>
-                ))}
-                {audios.map((audio: any) => (
-                  <div key={audio._key} className="w-full max-w-[240px] lg:max-w-none">
-                    <AudioBlock value={audio} compact={true} />
-                  </div>
-                ))}
+            // lg:items-stretch ensures the sidebar height equals the content card height
+            <div key={article._id} className="flex flex-col lg:flex-row gap-4 lg:items-stretch">
+              
+              {/* LEFT SIDEBAR: 
+                  - justify-center: Centers the content vertically (Middle alignment)
+                  - gap-4: Consistent spacing between Video and Audio
+                  - w-32: Fixed narrow width
+              */}
+              <div className="order-2 lg:order-1 flex-none flex flex-col w-32 justify-center gap-4">
+                
+                {/* VIDEOS */}
+                <div className="flex flex-col gap-3">
+                  {videos.map((video: any) => (
+                    <div key={video._key} className="w-full shadow-sm">
+                      <VideoBlock value={video} compact={true} />
+                    </div>
+                  ))}
+                </div>
+
+                {/* AUDIOS */}
+                <div className="flex flex-col gap-3">
+                  {audios.map((audio: any) => (
+                    <div key={audio._key} className="w-full">
+                      <AudioBlock value={audio} compact={true} />
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              {/* MAIN CONTENT (75%) - Article Card */}
-              <div className="order-1 lg:order-2 w-full lg:w-3/4">
-                <div className="group bg-surface border border-ui-border rounded-xl p-6 hover:shadow-md transition-all relative overflow-hidden">
+              {/* RIGHT CONTENT: Article Card */}
+              <div className="order-1 lg:order-2 flex-1 w-full min-w-0">
+                <div className="group bg-surface border border-ui-border rounded-xl p-6 hover:shadow-md transition-all relative overflow-hidden h-full flex flex-col">
                   {/* Hover Color Bar */}
                   <div
                     className={`absolute left-0 top-0 bottom-0 w-1 ${hoverBg} opacity-0 group-hover:opacity-100 transition-opacity`}
                   ></div>
 
-                  <div className="flex flex-col gap-4">
-                    <div>
-                      <div className="flex items-center gap-3 mb-3">
+                  <div className="flex flex-col gap-4 flex-grow">
+                    {/* Header Row: Date/Status | Link */}
+                    <div className="flex flex-wrap items-center justify-between gap-4 border-b border-ui-border/30 pb-3 mb-1">
+                      {/* Meta */}
+                      <div className="flex items-center gap-3">
                         <span className="text-xs text-text-body/60 font-mono border border-ui-border px-2 py-1 rounded">
                           {new Date(article.publishedAt).toLocaleDateString()}
                         </span>
@@ -122,20 +137,24 @@ export default async function CategoryPageLayout({
                           </span>
                         )}
                       </div>
-                      <h3 className="text-xl font-bold text-text-heading mb-3">
-                        {article.title}
-                      </h3>
-                      <p className="text-text-body leading-relaxed">{article.summary}</p>
-                    </div>
 
-                    {/* Footer Action Row (Just Read Analysis now) */}
-                    <div className="flex items-center justify-between pt-4 border-t border-ui-border/50 mt-2">
+                      {/* Link Right */}
                       <Link
                         href={`/articles/${article.slug.current}`}
-                        className={`text-sm font-bold ${themeColor} hover:underline`}
+                        className={`text-xs font-bold ${themeColor} hover:underline uppercase tracking-wide whitespace-nowrap ml-auto`}
                       >
                         Read Analysis &rarr;
                       </Link>
+                    </div>
+
+                    {/* Main Content */}
+                    <div>
+                      <h3 className="text-xl font-bold text-text-heading mb-3">
+                        {article.title}
+                      </h3>
+                      <p className="text-text-body leading-relaxed text-sm">
+                        {article.summary}
+                      </p>
                     </div>
                   </div>
                 </div>
