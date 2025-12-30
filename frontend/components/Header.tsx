@@ -37,7 +37,7 @@ const academyItems = [
   { href: "/education/courses", label: "Executive Masterclasses" },
   { href: "/education/faculty", label: "Faculty & Experts" },
   { href: "/education/webinars", label: "Webinars & Events" },
-  { href: "/education/glossary", label: "Policy & Tech Glossary" },
+  { href: "/education/glossary", label: "Glossary" },
   { href: "/education/case-studies", label: "Case Studies Library" },
 ];
 
