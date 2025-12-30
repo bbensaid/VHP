@@ -1,5 +1,4 @@
-// sanity/schemaTypes/definition.ts
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'definition',
@@ -18,6 +17,20 @@ export default defineType({
       type: 'text',
       rows: 3,
       validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'pillars',
+      title: 'Associated Pillars',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        list: [
+          { title: 'Policy', value: 'Policy' },
+          { title: 'Economics', value: 'Economics' },
+          { title: 'Technology', value: 'Technology' },
+        ],
+        layout: 'tags',
+      },
     }),
   ],
 })
