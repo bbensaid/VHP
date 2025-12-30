@@ -1,39 +1,25 @@
-// app/education/faculty/page.tsx
 import React from "react";
 import Link from "next/link";
+import { client } from "@/lib/sanity";
 
-const faculty = [
-  {
-    name: "Dr. Aris Thorne",
-    role: "Chair of Technology Pillar",
-    bio: "Former Chief Medical Information Officer at Mayo Clinic. Pioneer in clinical AI deployment.",
-    tags: ["AI", "Clinical Ops"],
-    imageColor: "bg-indigo-200"
-  },
-  {
-    name: "Sarah Jenkins, MPH",
-    role: "Chair of Policy Pillar",
-    bio: "Served 10 years at CMS, architecting key components of the ACA and MACRA legislation.",
-    tags: ["Regulation", "CMS"],
-    imageColor: "bg-blue-200"
-  },
-  {
-    name: "Marcus Chen",
-    role: "Visiting Fellow, Economics",
-    bio: "Founder of 3 digital health unicorns. Expert in go-to-market strategy and venture finance.",
-    tags: ["Venture Capital", "Strategy"],
-    imageColor: "bg-emerald-200"
-  },
-   {
-    name: "Elena Roza",
-    role: "Senior Fellow, Population Health",
-    bio: "Designed value-based contracts for major national payer covering 15M lives.",
-    tags: ["VBC", "Payer Strategy"],
-    imageColor: "bg-purple-200"
-  },
-];
+// 1. Fetch Data from Sanity
+async function getFaculty() {
+  const query = `*[_type == "instructor"] | order(name asc) {
+    _id,
+    name,
+    role,
+    bio,
+    tags,
+    "imageUrl": image.asset->url
+  }`;
+  
+  // Revalidate every 60 seconds so you see updates quickly
+  return client.fetch(query, {}, { next: { revalidate: 60 } });
+}
 
-export default function FacultyPage() {
+export default async function FacultyPage() {
+  const faculty = await getFaculty();
+
   return (
     <div className="bg-white min-h-screen">
       <div className="container mx-auto px-4 md:px-8 py-16">
@@ -46,25 +32,50 @@ export default function FacultyPage() {
             </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
-            {faculty.map((person) => (
-                <div key={person.name} className="flex flex-col sm:flex-row gap-6 p-6 bg-surface border border-ui-border rounded-xl hover:shadow-lg transition-shadow">
-                    <div className={`w-32 h-32 ${person.imageColor} rounded-full flex-shrink-0 mx-auto sm:mx-0`}>
-                        {/* Placeholder for Headshot */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {faculty.length === 0 && (
+                <div className="col-span-2 text-center py-12 bg-gray-50 rounded-xl border border-dashed border-gray-300">
+                    <p className="text-gray-500">
+                        No faculty found. Run the seed script to populate data.
+                    </p>
+                </div>
+            )}
+
+            {faculty.map((person: any) => (
+                <div key={person._id} className="flex flex-col sm:flex-row gap-6 p-6 bg-white border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
+                    {/* Image Handling: Real Photo or Fallback Initials */}
+                    <div className="flex-shrink-0 mx-auto sm:mx-0">
+                        {person.imageUrl ? (
+                            <img 
+                                src={person.imageUrl} 
+                                alt={person.name} 
+                                className="w-32 h-32 rounded-full object-cover border-4 border-indigo-50"
+                            />
+                        ) : (
+                            <div className="w-32 h-32 rounded-full bg-slate-900 flex items-center justify-center text-white text-2xl font-bold border-4 border-indigo-50">
+                                {person.name.split(" ").map((n: string) => n[0]).join("").slice(0,2)}
+                            </div>
+                        )}
                     </div>
+                    
                     <div>
                         <h3 className="text-2xl font-bold text-gray-900">{person.name}</h3>
-                        <p className="text-indigo-600 font-bold mb-3">{person.role}</p>
+                        <p className="text-indigo-600 font-bold mb-3 uppercase text-xs tracking-wider">
+                            {person.role || "Instructor"}
+                        </p>
                         <p className="text-gray-600 mb-4 leading-relaxed">
                             {person.bio}
                         </p>
-                        <div className="flex gap-2">
-                            {person.tags.map(tag => (
-                                <span key={tag} className="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase rounded">
-                                    {tag}
-                                </span>
-                            ))}
-                        </div>
+                        
+                        {person.tags && (
+                            <div className="flex flex-wrap gap-2">
+                                {person.tags.map((tag: string) => (
+                                    <span key={tag} className="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase rounded border border-gray-200">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        )}
                     </div>
                 </div>
             ))}
