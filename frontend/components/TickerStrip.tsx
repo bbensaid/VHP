@@ -1,40 +1,3 @@
-(venv) baba@bechir frontend % node scripts/seed-supabase.js
-🔌 Connecting to Sanity & Supabase...
-   Found 7 courses and 4 reports in Sanity.
-👤 creating auth user: aris.thorne@htr.com...
-✅ Auth User Ready. ID: 54d15aa6-5252-40f6-8686-b8301b2a44fc
-Enrollment Error: {
-  code: '42501',
-  details: null,
-  hint: null,
-  message: 'new row violates row-level security policy for table "enrollments"'
-}
-Report Error: {
-  code: '42501',
-  details: null,
-  hint: null,
-  message: 'new row violates row-level security policy for table "saved_reports"'
-}
-🚀 Supabase Seeding Complete.
-👉 Login with: aris.thorne@htr.com / password123
-(venv) baba@bechir frontend % 
-
-
-
-
-////
-
-(venv) baba@bechir frontend % node scripts/seed-supabase.js
-🔌 Connecting with Admin Privileges...
-👤 Checking for user: aris.thorne@htr.com...
-   User already exists.
-✅ Target User ID: 54d15aa6-5252-40f6-8686-b8301b2a44fc
-✅ Successfully linked 2 courses to user.
-✅ Successfully linked 1 report to user.
-🚀 Seeding Complete.
-(venv) baba@bechir frontend % 
-
-//////////////////
 "use client";
 
 import React, { useState } from "react";
@@ -48,6 +11,7 @@ interface TickerItem {
 
 export default function TickerStrip({ tickerData }: { tickerData: TickerItem[] }) {
   const [isPaused, setIsPaused] = useState(false);
+  const [isHovered, setIsHovered] = useState(false); // New state for hover
   const [isHidden, setIsHidden] = useState(false);
 
   const getTickerColor = (status: string) => {
@@ -63,32 +27,28 @@ export default function TickerStrip({ tickerData }: { tickerData: TickerItem[] }
     <div className="w-full bg-white transition-all duration-300">
       
       {/* --- CONTROLS ROW --- */}
-      {/* Responsive: Hidden on mobile (hidden), Flex on desktop (md:flex) */}
-      {/* Layout: Standard Flexbox centering */}
-      {/* Padding: Standard minimal padding (py-1) */}
-      <div className="hidden md:flex container mx-auto px-4 justify-end items-center gap-4 border-b border-slate-100 py-1">
+      <div className="hidden md:flex container mx-auto px-4 justify-end items-start gap-4 border-b border-slate-100 pt-0 pb-1">
         
         {/* 1. PAUSE CONTROL */}
         {!isHidden && (
             <>
-                <label className="flex items-center gap-1.5 cursor-pointer group select-none">
+                <label className="flex items-center gap-1.5 cursor-pointer group select-none pt-1">
                     <input 
                         type="checkbox" 
                         checked={isPaused} 
                         onChange={(e) => setIsPaused(e.target.checked)}
                         className="w-3 h-3 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500 cursor-pointer"
                     />
-                    <span className="text-[10px] font-bold text-slate-400 group-hover:text-slate-600 uppercase tracking-wider transition-colors">
+                    <span className="text-[10px] font-bold text-slate-400 group-hover:text-slate-600 uppercase tracking-wider transition-colors leading-none">
                         Pause Ticker
                     </span>
                 </label>
-                {/* Separator Line */}
-                <div className="h-3 w-px bg-slate-200"></div>
+                <div className="h-3 w-px bg-slate-200 mt-1"></div>
             </>
         )}
 
         {/* 2. SHOW/HIDE CONTROL */}
-        <label className="flex items-center gap-1.5 cursor-pointer group select-none">
+        <label className="flex items-center gap-1.5 cursor-pointer group select-none pt-1">
             <input 
                 type="checkbox" 
                 checked={isHidden} 
@@ -98,7 +58,7 @@ export default function TickerStrip({ tickerData }: { tickerData: TickerItem[] }
                 }}
                 className="w-3 h-3 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500 cursor-pointer"
             />
-            <span className="text-[10px] font-bold text-slate-400 group-hover:text-slate-600 uppercase tracking-wider transition-colors">
+            <span className="text-[10px] font-bold text-slate-400 group-hover:text-slate-600 uppercase tracking-wider transition-colors leading-none">
                 {isHidden ? "Show Ticker" : "Hide Ticker"}
             </span>
         </label>
@@ -116,20 +76,27 @@ export default function TickerStrip({ tickerData }: { tickerData: TickerItem[] }
                     </span>
                 </div>
 
-                <div className="flex-1 overflow-hidden relative h-full mask-linear-fade">
+                {/* Added Hover Listeners Here */}
+                <div 
+                    className="flex-1 overflow-hidden relative h-full mask-linear-fade"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                >
                     <div 
                         className="flex items-center h-full animate-marquee whitespace-nowrap"
-                        style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+                        // Logic: Pause if Checkbox is TRUE -OR- Mouse is HOVERING
+                        style={{ animationPlayState: (isPaused || isHovered) ? 'paused' : 'running' }}
                     >
                         {tickerData.map((item, i) => (
-                            <div key={`s1-${i}`} className="flex items-center gap-2 mx-8 whitespace-nowrap">
+                            <div key={`s1-${i}`} className="flex items-center gap-2 mx-8 whitespace-nowrap cursor-default">
                                 <span className="font-medium text-slate-500 text-xs">{item.label}:</span>
                                 <span className={`font-bold text-xs ${getTickerColor(item.status)}`}>{item.value}</span> 
                                 <span className="text-slate-400 text-[10px] uppercase">({item.trend})</span>
                             </div>
                         ))}
+                        {/* Duplicate for seamless loop */}
                         {tickerData.map((item, i) => (
-                            <div key={`s2-${i}`} className="flex items-center gap-2 mx-8 whitespace-nowrap">
+                            <div key={`s2-${i}`} className="flex items-center gap-2 mx-8 whitespace-nowrap cursor-default">
                                 <span className="font-medium text-slate-500 text-xs">{item.label}:</span>
                                 <span className={`font-bold text-xs ${getTickerColor(item.status)}`}>{item.value}</span> 
                                 <span className="text-slate-400 text-[10px] uppercase">({item.trend})</span>

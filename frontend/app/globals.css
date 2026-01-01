@@ -64,3 +64,37 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
+
+
+
+
+/* Pause on hover */
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ... keep your other global styles ... */
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  /* 1. SLOWED DOWN TO 80s */
+  animation: marquee 80s linear infinite; 
+}
+
+/* 2. THE FADE MASK */
+/* This makes the text transparent on the edges so it doesn't hit the label abruptly */
+.mask-linear-fade {
+  mask-image: linear-gradient(to right, transparent 0%, black 100px, black calc(100% - 50px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 100px, black calc(100% - 50px), transparent 100%);
+}

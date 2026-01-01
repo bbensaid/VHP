@@ -5,5 +5,8 @@ import instructor from './instructor'
 import webinar from './webinar' // <--- ADD THIS
 import caseStudy from './caseStudy'
 import report from './report'
+import ticker from './ticker' 
+import dailyInsight from './dailyInsight'
 
-export const schemaTypes = [policyAnalysis, definition, course, instructor, webinar, caseStudy, report]
+
+export const schemaTypes = [policyAnalysis, definition, course, instructor, webinar, caseStudy, report, ticker, dailyInsight ]
