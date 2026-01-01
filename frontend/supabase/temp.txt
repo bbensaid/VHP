@@ -1,0 +1,35 @@
+(venv) baba@bechir frontend % node scripts/seed-supabase.js
+🔌 Connecting to Sanity & Supabase...
+   Found 7 courses and 4 reports in Sanity.
+👤 creating auth user: aris.thorne@htr.com...
+✅ Auth User Ready. ID: 54d15aa6-5252-40f6-8686-b8301b2a44fc
+Enrollment Error: {
+  code: '42501',
+  details: null,
+  hint: null,
+  message: 'new row violates row-level security policy for table "enrollments"'
+}
+Report Error: {
+  code: '42501',
+  details: null,
+  hint: null,
+  message: 'new row violates row-level security policy for table "saved_reports"'
+}
+🚀 Supabase Seeding Complete.
+👉 Login with: aris.thorne@htr.com / password123
+(venv) baba@bechir frontend % 
+
+
+
+
+////
+
+(venv) baba@bechir frontend % node scripts/seed-supabase.js
+🔌 Connecting with Admin Privileges...
+👤 Checking for user: aris.thorne@htr.com...
+   User already exists.
+✅ Target User ID: 54d15aa6-5252-40f6-8686-b8301b2a44fc
+✅ Successfully linked 2 courses to user.
+✅ Successfully linked 1 report to user.
+🚀 Seeding Complete.
+(venv) baba@bechir frontend % 
