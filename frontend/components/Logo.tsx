@@ -9,7 +9,7 @@ const Logo: React.FC = () => {
       <div className="flex items-center gap-2">
         
         {/* 2. IMAGE SIZE */}
-        <div className="relative h-12 w-12 sm:h-16 sm:w-16 flex-shrink-0">
+        <div className="relative h-12 w-12 sm:h-15 sm:w-15 flex-shrink-0">
           <Image 
             src="/logo-icon.svg" 
             alt="HTR Logo" 
@@ -28,9 +28,9 @@ const Logo: React.FC = () => {
       </div>
 
       {/* 4. TAGLINE */}
-      <div className="mt-1 w-full hidden sm:block">
+      <div className="mt-0 w-full hidden sm:block">
         <div className="w-full border-t border-gray-300" />
-        <div className="mt-1 text-center text-gray-500 text-[10px] font-medium tracking-widest uppercase">
+        <div className="mt-0 text-center text-gray-500 text-[10px] font-medium tracking-widest uppercase">
           Decoding the Value Transition
         </div>
       </div>
