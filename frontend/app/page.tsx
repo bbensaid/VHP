@@ -14,16 +14,25 @@ async function getPageData() {
     },
     "ticker": *[_type == "ticker"]{
       label, value, trend, status
+    },
+    // FETCH THE SIGNAL
+    "analystNote": *[_type == "analystNote"] | order(_updatedAt desc)[0]{
+      headline, content, author
     }
   }`;
+
+
+
   const data = await client.fetch(query, {}, { next: { revalidate: 60 } });
   return {
     leadStory: data.leadStory,
     feed: data.feed,
-    ticker: data.ticker || []
+    ticker: data.ticker || [],
+    analystNote: data.analystNote || null // Pass this down
   };
 }
 
+// ... (Your existing helper functions: getCategoryStyle, getCategoryLabel) ...
 const getCategoryStyle = (type: string, pillar: string) => {
   if (type === 'webinar') return "text-rose-700 bg-rose-50 border-rose-200";
   switch (pillar) {
@@ -40,24 +49,25 @@ const getCategoryLabel = (type: string, pillar: string) => {
 };
 
 export default async function HomePage() {
-  const { leadStory, feed, ticker } = await getPageData();
+  const { leadStory, feed, ticker, analystNote } = await getPageData();
 
   return (
     <div className="min-h-screen bg-white">
       
-      {/* 1. TickerStrip (Numbers) - Below Header, Top of Body */}
+      {/* 1. TickerStrip */}
       <TickerStrip tickerData={ticker} />
 
       {/* 2. Main Content */}
       <div className="flex flex-col lg:flex-row gap-8 mt-8 px-4 md:px-0 container mx-auto">
         
-        {/* Sidebar */}
+        {/* Sidebar - PASSING THE NOTE DATA HERE */}
         <div className="order-2 lg:order-1 lg:w-1/4">
-          <Sidebar />
+          <Sidebar noteData={analystNote} />
         </div>
 
         {/* Intelligence Feed */}
         <div className="order-1 lg:order-2 lg:w-3/4">
+            {/* ... (Your existing Main Feed Layout) ... */}
             
             {/* LEAD STORY */}
             <div className="mb-10 group cursor-pointer">

@@ -1,23 +1,27 @@
-// components/Sidebar.tsx
 import React from "react";
 import PolicyCalendar from "./sidebar/PolicyCalendar";
 import SectorVitals from "./sidebar/SectorVitals";
 import AnalystNote from "./sidebar/AnalystNote";
+import StateMonitor from "./sidebar/StateMonitor";
 import Link from "next/link";
 
-const Sidebar: React.FC = () => {
+// 1. Define the Props
+interface SidebarProps {
+  noteData?: any; 
+}
+
+// 2. Accept the Prop
+const Sidebar: React.FC<SidebarProps> = ({ noteData }) => {
   return (
-    <aside className="w-full flex flex-col gap-2">
-      {/* 1. Editor's Insight (Top Priority) */}
-      <AnalystNote />
+    <aside className="w-full flex flex-col gap-6">
+      
+      {/* 3. Pass the Prop Down */}
+      <AnalystNote data={noteData} />
 
-      {/* 2. Systemic Health (The Numbers) */}
+      <StateMonitor />
       <SectorVitals />
-
-      {/* 3. Deadlines (The Utility) */}
       <PolicyCalendar />
 
-      {/* 4. The Only 'Ad' - Premium Subscription */}
       <div className="bg-slate-900 rounded-lg p-6 text-center shadow-lg">
         <h3 className="text-white font-bold text-lg mb-2">
           Unlock Full Intelligence

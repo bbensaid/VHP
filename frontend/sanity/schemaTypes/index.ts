@@ -7,6 +7,7 @@ import caseStudy from './caseStudy'
 import report from './report'
 import ticker from './ticker' 
 import dailyInsight from './dailyInsight'
+import analystNote from './analystNote'
 
 
-export const schemaTypes = [policyAnalysis, definition, course, instructor, webinar, caseStudy, report, ticker, dailyInsight ]
+export const schemaTypes = [policyAnalysis, definition, course, instructor, webinar, caseStudy, report, ticker, dailyInsight , analystNote]
