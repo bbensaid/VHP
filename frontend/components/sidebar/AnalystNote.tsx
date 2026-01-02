@@ -1,43 +1,45 @@
-// components/sidebar/AnalystNote.tsx
 import React from "react";
+import { PortableText } from "@portabletext/react";
 
-const AnalystNote: React.FC = () => {
+interface NoteData {
+  headline: string;
+  content: any;
+  author: string;
+}
+
+export default function AnalystNote({ data }: { data: NoteData | null }) {
+  if (!data) return null;
+
   return (
-    <div className="bg-slate-50 border border-slate-200 rounded-lg p-5 mb-6 relative overflow-hidden">
-      {/* Decorative 'Quote' Mark */}
-      <span className="absolute top-0 right-4 text-6xl text-slate-200 font-serif leading-none select-none">
-        ”
-      </span>
-
-      <div className="relative z-10">
-        <h3 className="font-extrabold text-indigo-600 uppercase tracking-wider text-xs mb-3 flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-indigo-600 animate-pulse"></span>
-          Analyst's Notebook
+    // OUTER CONTAINER: Standard White Card
+    <div className="bg-white border border-slate-200 rounded-lg shadow-sm p-5">
+      
+      {/* HEADER */}
+      <div className="flex items-center gap-2 mb-3">
+        <svg className="w-4 h-4 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+        <h3 className="font-bold text-slate-900 text-sm uppercase tracking-wider">
+          The Signal
         </h3>
+      </div>
 
-        <p className="text-sm font-medium text-slate-800 leading-relaxed italic">
-          "Don't get distracted by the topline revenue in the Q4 Kaiser earnings
-          report. The real story is the{" "}
-          <span className="underline decoration-indigo-300 decoration-2">
-            MLR (Medical Loss Ratio)
-          </span>{" "}
-          spiking to 89%. That is the signal that payer margins are compressing
-          faster than anticipated."
-        </p>
-
-        <div className="mt-4 flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-slate-300"></div>{" "}
-          {/* Placeholder for your Headshot */}
-          <div className="flex flex-col">
-            <span className="text-[10px] font-bold text-slate-900 uppercase">
-              The Editor
-            </span>
-            <span className="text-[9px] text-slate-500">Dec 12, 2025</span>
-          </div>
+      {/* INNER CONTENT BOX: THIS IS NOW bg-emerald-50 */}
+      <div className="bg-emerald-50 rounded p-3 border border-emerald-100 mb-3 prose prose-sm max-w-none">
+        <h4 className="text-xs font-black text-emerald-900 uppercase mb-2 tracking-tight">
+          {data.headline}
+        </h4>
+        <div className="text-xs text-emerald-800 font-medium leading-relaxed">
+            <PortableText value={data.content} />
         </div>
+      </div>
+
+      {/* FOOTER */}
+      <div className="flex justify-end">
+        <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+            — {data.author}
+        </span>
       </div>
     </div>
   );
-};
-
-export default AnalystNote;
+}
