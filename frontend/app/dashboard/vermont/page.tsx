@@ -1,6 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
+/**
+ * HTR SYSTEM HEALTH INDEX (SHI) - VERMONT STATE DASHBOARD
+ * Data Source: Oliver Wyman Act 167 Report (Aug 2024)
+ */
+
 export default function VermontDashboard() {
   return (
     <div className="min-h-screen bg-slate-50 pb-20 font-sans text-slate-800">
@@ -169,9 +174,10 @@ export default function VermontDashboard() {
                       Stop low-volume surgeries. Convert to Regional Specialty Hub.
                     </td>
                     <td className="p-4">
+                      {/* FIX APPLIED HERE: Added inline-block and whitespace-nowrap */}
                       <Link 
                         href="/dashboard/vermont/nvrh" 
-                        className="text-xs font-bold text-indigo-600 hover:text-indigo-800 uppercase tracking-wide border border-indigo-200 px-3 py-1 rounded hover:bg-indigo-50 transition-colors"
+                        className="inline-block whitespace-nowrap text-xs font-bold text-indigo-600 hover:text-indigo-800 uppercase tracking-wide border border-indigo-200 px-3 py-1 rounded hover:bg-indigo-50 transition-colors"
                       >
                         View Profile &rarr;
                       </Link>
