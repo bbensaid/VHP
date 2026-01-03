@@ -1,4 +1,3 @@
-// components/Header.tsx
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -6,20 +5,24 @@ import Link from "next/link";
 import Logo from "./Logo";
 import NavDropdown from "./NavDropdown";
 
-// ... (Your existing Pillars/Items arrays remain unchanged) ...
+// --- 1. CONTENT CONFIGURATION ---
+
 const policyItems = [
+  { href: "/policy", label: "Policy Hub (Overview)" },
   { href: "/policy/regulation", label: "Regulation & Legislation" },
   { href: "/policy/mandates", label: "Public Health Mandates" },
   { href: "/policy/global", label: "Global & Comparative Policy" },
   { href: "/policy/feasibility", label: "Policy Feasibility Studies" },
 ];
 const economicsItems = [
+  { href: "/economics", label: "Economics Hub (Overview)" },
   { href: "/economics/value", label: "Value-Based Care Models" },
   { href: "/economics/market", label: "Market & Finance" },
   { href: "/economics/cea", label: "Labor & Workforce Strategy" },
   { href: "/economics/investment", label: "Healthcare Investment Trends" },
 ];
 const technologyItems = [
+  { href: "/technology", label: "Technology Hub (Overview)" },
   { href: "/technology/ai", label: "AI & Machine Learning" },
   { href: "/technology/digital", label: "Digital Health & Telemedicine" },
   { href: "/technology/security", label: "Data Security & Governance" },
@@ -62,81 +65,77 @@ const Header: React.FC = () => {
     );
   }, []);
 
-  // TICKER LOGIC (Consuming your existing /api/ticker)
-  const [headlines, setHeadlines] = useState<{ text: string; url: string }[]>([
-    { text: "Loading Intelligence...", url: "#" },
-  ]);
-  const [currentHeadline, setCurrentHeadline] = useState(0);
-
-  useEffect(() => {
-    async function fetchTicker() {
-      try {
-        const res = await fetch("/api/ticker");
-        const data = await res.json();
-        if (data.headlines && Array.isArray(data.headlines) && data.headlines.length > 0) {
-          setHeadlines(data.headlines);
-        }
-      } catch (error) {
-        console.error("Failed to fetch live ticker", error);
-        setHeadlines([{ text: "HTR Intelligence: System Online", url: "#" }]);
-      }
-    }
-    fetchTicker();
-  }, []);
-
-  useEffect(() => {
-    if (headlines.length <= 1) return;
-    const timer = setInterval(() => {
-      setCurrentHeadline((prev) => (prev + 1) % headlines.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [headlines.length]);
+  // TICKER DATA (Using Real Links)
+  const headlines = [
+    { text: "INSOLVENCY ALERT: NVRH projects $75M Deficit", url: "/dashboard/vermont/nvrh" },
+    { text: "MARKET MOVER: Medicare Advantage Denials Rise 12%", url: "/economics/market" },
+    { text: "STATE PROFILE: Vermont Rated CRITICAL (42/100)", url: "/dashboard/vermont" },
+    { text: "NEW REPORT: The End of Fee-for-Service in Rural America", url: "/advisory/reports" }
+  ];
 
   return (
     <header className="sticky top-0 z-50 shadow-md flex flex-col">
-      {/* 1. EYEBROW (RENAMED TO DAILY INSIGHT) */}
-      <div className="bg-slate-900 text-slate-300 text-[11px] font-bold tracking-wider uppercase py-2 relative overflow-hidden">
+      
+      {/* 1. EYEBROW / NEWS FEED BAR */}
+      <div className="bg-slate-900 text-slate-300 text-[11px] font-bold tracking-wider uppercase py-2 relative overflow-hidden border-b border-slate-800">
         <div className="container mx-auto px-4 md:px-8 flex justify-between items-center h-full">
-          <span className="hidden lg:inline-block w-1/4 opacity-80 min-h-[1em]">
+          
+          {/* Left: Date */}
+          <span className="hidden lg:inline-block w-1/5 opacity-80 min-h-[1em]">
             {dateString}
           </span>
-          <div className="flex-grow flex justify-center items-center w-full lg:w-auto absolute lg:static left-0 right-0 px-4">
-            <div className="flex items-center gap-3 bg-slate-800/50 px-3 py-1 rounded-full border border-slate-700/50 transition hover:bg-slate-800">
-              <span className="flex items-center gap-1.5 text-white flex-shrink-0">
-                {/* CHANGED: Red pulsating dot -> Indigo/Blue 'Insight' Dot */}
-                <span className="relative flex h-2 w-2">
+          
+          {/* Center: The SCROLLING News Feed */}
+          <div className="flex-grow flex items-center w-full lg:w-3/5 overflow-hidden px-4 relative">
+            
+            {/* The Static Label */}
+            <div className="flex items-center gap-2 pr-4 z-10 bg-slate-900 flex-shrink-0">
+               <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
-                </span>
-                {/* CHANGED: Label */}
-                <span className="text-slate-300 opacity-80 tracking-tight whitespace-nowrap">
-                  DAILY INSIGHT
-                </span>
-              </span>
-              <span className="text-slate-600">|</span>
-              <a
-                key={currentHeadline}
-                href={headlines[currentHeadline].url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white normal-case font-medium tracking-normal animate-in fade-in slide-in-from-bottom-1 duration-300 truncate max-w-[200px] md:max-w-md hover:text-indigo-400 hover:underline decoration-indigo-400/50 underline-offset-4 cursor-pointer"
-                title="Read Source Article"
-              >
-                {headlines[currentHeadline].text}
-              </a>
+               </span>
+               <span className="text-white font-bold whitespace-nowrap">DAILY INSIGHT</span>
+               <span className="text-slate-600">|</span>
             </div>
+
+            {/* The Scrolling Marquee */}
+            <div className="relative overflow-hidden w-full h-5 mask-linear-fade">
+               <div className="animate-marquee whitespace-nowrap absolute top-0 left-0 flex items-center gap-8 w-max">
+                  {headlines.map((item, index) => (
+                    <Link key={index} href={item.url} className="flex items-center gap-2 group hover:opacity-80 transition-opacity">
+                      <span className="text-white group-hover:text-indigo-400 transition-colors">
+                        {item.text}
+                      </span>
+                      <span className="text-slate-700">///</span>
+                    </Link>
+                  ))}
+                  {/* Duplicate for seamless loop */}
+                  {headlines.map((item, index) => (
+                    <Link key={`dup-${index}`} href={item.url} className="flex items-center gap-2 group hover:opacity-80 transition-opacity">
+                      <span className="text-white group-hover:text-indigo-400 transition-colors">
+                        {item.text}
+                      </span>
+                      <span className="text-slate-700">///</span>
+                    </Link>
+                  ))}
+               </div>
+            </div>
+
           </div>
-          <div className="flex items-center justify-end gap-6 w-1/4 z-10 bg-slate-900 lg:bg-transparent pl-4">
-            <Link href="/about" className="hover:text-white transition-colors hidden xl:inline-block">About</Link>
-            <Link href="/faq" className="hover:text-white transition-colors hidden xl:inline-block">FAQ</Link>
-            <div className="h-4 w-0.5 bg-slate-400 hidden xl:block"></div>
+          
+          {/* Right: Utility Links */}
+          <div className="flex items-center justify-end gap-6 w-1/5 z-10 bg-slate-900 pl-4">
+            <Link href="/dashboard" className="text-indigo-400 hover:text-white transition-colors hidden xl:inline-block font-black">
+              INTELLIGENCE
+            </Link>
+            <div className="h-4 w-0.5 bg-slate-600 hidden xl:block"></div>
             <Link href="/login" className="hover:text-white transition-colors">Login</Link>
             <Link href="/subscribe" className="bg-white text-slate-900 px-3 py-0.5 rounded-sm hover:bg-slate-200 transition-colors">Subscribe</Link>
           </div>
         </div>
       </div>
 
-      {/* 2. MAIN DECK (Unchanged) */}
+      {/* 2. MAIN DECK (Archived Layout) */}
       <div className="bg-white py-1">
         <div className="container mx-auto px-4 md:px-8 flex flex-col xl:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-16 flex-shrink-0 w-full xl:w-auto justify-between xl:justify-start">
@@ -149,6 +148,7 @@ const Header: React.FC = () => {
               <NavDropdown label="TECHNOLOGY" items={technologyItems} colorClass="text-card-tech" />
             </nav>
           </div>
+          
           <div className="hidden md:flex flex-grow justify-center px-4 min-w-0">
             <div className="relative w-full">
               <input type="text" placeholder="Search intelligence..." className="w-full px-4 py-2 pl-10 border border-ui-border rounded-full text-sm bg-surface-muted focus:outline-none focus:ring-2 focus:ring-ui-primary focus:bg-white transition-all shadow-sm" />
@@ -157,6 +157,7 @@ const Header: React.FC = () => {
               </svg>
             </div>
           </div>
+          
           <div className="flex items-center gap-2 flex-shrink-0 w-full xl:w-auto justify-end">
             <nav className="hidden md:flex items-center space-x-2">
               <NavDropdown label="HTR ACADEMY" items={academyItems} icon={<GradCapIcon />} colorClass="text-indigo-700 bg-indigo-50 border border-indigo-200 rounded-md hover:bg-indigo-100 hover:border-indigo-300" />
