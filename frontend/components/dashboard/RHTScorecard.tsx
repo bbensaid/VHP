@@ -1,0 +1,100 @@
+import React from 'react';
+import { rhtProgramData } from '@/lib/data/rht-program';
+import { 
+  CurrencyDollarIcon, 
+  LightBulbIcon, 
+  ChartBarIcon 
+} from '@heroicons/react/24/outline';
+
+interface RHTScorecardProps {
+  stateSlug: string; // e.g. 'vermont', 'texas'
+}
+
+export const RHTScorecard: React.FC<RHTScorecardProps> = ({ stateSlug }) => {
+  const data = rhtProgramData[stateSlug.toLowerCase()];
+
+  if (!data) {
+    return (
+      <div className="p-4 border border-red-200 bg-red-50 text-red-700 rounded-lg">
+        RHT Program data not found for state: {stateSlug}
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      {/* 1. Header: Funding & Focus */}
+      <div className="bg-slate-900 text-white rounded-xl p-6 shadow-md">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          <div>
+            <div className="flex items-center gap-2 mb-1 opacity-80">
+              <span className="text-xs font-bold uppercase tracking-wider text-indigo-400">FY26 RHT Program</span>
+              <span className="h-1 w-1 bg-slate-500 rounded-full"></span>
+              <span className="text-xs uppercase">{data.stateName} Cohort</span>
+            </div>
+            <h2 className="text-2xl font-black">{data.strategicFocus}</h2>
+          </div>
+          <div className="bg-white/10 px-5 py-3 rounded-lg border border-white/10 backdrop-blur-sm min-w-[180px]">
+            <div className="flex items-center gap-2 text-indigo-300 mb-1">
+              <CurrencyDollarIcon className="w-4 h-4" />
+              <span className="text-xs font-bold uppercase">Awarded</span>
+            </div>
+            <div className="text-3xl font-bold">{data.awardAmount}</div>
+          </div>
+        </div>
+      </div>
+
+      {/* 2. Strategy & Metrics Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        {/* Initiatives (Strategic Narrative) */}
+        <div className="lg:col-span-2 bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+          <div className="bg-slate-50 px-6 py-3 border-b border-slate-100 flex items-center gap-2">
+            <LightBulbIcon className="w-5 h-5 text-amber-500" />
+            <h3 className="font-bold text-slate-800">Transformation Initiatives</h3>
+          </div>
+          <div className="divide-y divide-slate-100">
+            {data.initiatives.map((init, i) => (
+              <div key={i} className="p-5 hover:bg-slate-50 transition-colors">
+                <h4 className="font-bold text-slate-900 text-sm mb-1">{init.title}</h4>
+                <p className="text-sm text-slate-600 leading-relaxed">{init.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Metrics (Review Scorecard) */}
+        <div className="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+          <div className="bg-slate-50 px-6 py-3 border-b border-slate-100 flex items-center gap-2">
+            <ChartBarIcon className="w-5 h-5 text-emerald-500" />
+            <h3 className="font-bold text-slate-800">Review Metrics</h3>
+          </div>
+          <div className="p-5 space-y-5">
+            {data.metrics.map((m, i) => (
+              <div key={i} className="relative">
+                <div className="flex justify-between items-center mb-1">
+                  <span className="text-sm font-medium text-slate-700">{m.label}</span>
+                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full uppercase ${
+                    m.status === 'Achieved' ? 'bg-emerald-100 text-emerald-700' :
+                    m.status === 'In Progress' ? 'bg-blue-100 text-blue-700' :
+                    'bg-slate-100 text-slate-500'
+                  }`}>
+                    {m.status}
+                  </span>
+                </div>
+                <div className="flex items-center justify-between text-xs text-slate-500">
+                   <span>Target: <span className="font-mono text-slate-900 font-bold">{m.target || "N/A"}</span></span>
+                </div>
+                {/* Progress Bar Visual */}
+                <div className="w-full h-1.5 bg-slate-100 rounded-full mt-2 overflow-hidden">
+                   <div className={`h-full rounded-full ${m.status === 'Achieved' ? 'w-full bg-emerald-500' : 'w-1/3 bg-blue-500'}`}></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+};
