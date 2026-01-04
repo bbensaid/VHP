@@ -1,17 +1,17 @@
 import React from "react";
 import Link from "next/link";
 import { RHTScorecard } from "@/components/dashboard/RHTScorecard";
-import { ArrowRightIcon, BuildingOffice2Icon, ChartBarIcon } from "@heroicons/react/24/outline";
+import { ChartBarIcon } from "@heroicons/react/24/outline";
 
 export default function VermontRHTLanding() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
       
-      {/* 1. BREADCRUMBS */}
+      {/* 1. BREADCRUMBS: USA -> Vermont */}
       <div className="bg-white border-b border-slate-200 px-8 py-3 flex items-center gap-2 text-xs font-medium text-slate-500">
         <Link href="/dashboard" className="hover:text-indigo-600">USA Dashboard</Link>
         <span>/</span>
-        <span className="text-slate-900 font-bold">Vermont (State Profile)</span>
+        <span className="text-slate-900 font-bold">Vermont (Strategy)</span>
       </div>
 
       <div className="max-w-7xl mx-auto px-8 py-10 space-y-10">
@@ -26,7 +26,7 @@ export default function VermontRHTLanding() {
             </p>
           </div>
 
-          {/* DRILL DOWN BUTTONS */}
+          {/* DRILL DOWN BUTTON TO OPERATIONS */}
           <div className="flex gap-4">
              <Link 
                href="/dashboard/vermont/hospitals" 
