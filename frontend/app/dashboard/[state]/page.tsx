@@ -5,7 +5,6 @@ import { rhtProgramData } from "@/lib/data/rht-program";
 import { RHTScorecard } from "@/components/dashboard/RHTScorecard";
 import { ChartBarIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 
-// 1. GENERATE STATIC PARAMS
 export async function generateStaticParams() {
   return Object.keys(rhtProgramData).map((slug) => ({
     state: slug,
@@ -16,7 +15,6 @@ export default function DynamicStatePage({ params }: { params: { state: string }
   const stateSlug = params.state.toLowerCase();
   const stateData = rhtProgramData[stateSlug];
 
-  // 2. HANDLE UNKNOWN STATES
   if (!stateData) {
     return (
       <div className="min-h-screen bg-white flex flex-col items-center justify-center p-8 text-center font-sans">
@@ -34,12 +32,7 @@ export default function DynamicStatePage({ params }: { params: { state: string }
   return (
     <div className="min-h-screen bg-white font-sans text-slate-800">
       
-      {/* BREADCRUMBS */}
-      <div className="bg-white border-b border-slate-200 px-8 py-3 flex items-center gap-2 text-xs font-medium text-slate-500 sticky top-0 z-10">
-        <Link href="/dashboard" className="hover:text-indigo-600">USA Dashboard</Link>
-        <span>/</span>
-        <span className="text-slate-900 font-bold">{stateData.stateName} (Strategy)</span>
-      </div>
+      {/* BREADCRUMBS REMOVED (Handled by Global Layout) */}
 
       <div className="max-w-7xl mx-auto px-8 py-10 space-y-10">
 
@@ -53,7 +46,7 @@ export default function DynamicStatePage({ params }: { params: { state: string }
             </p>
           </div>
 
-          {/* DRILL DOWN BUTTON (UNLOCKED FOR ALL) */}
+          {/* DYNAMIC DRILL DOWN BUTTON */}
           <div className="flex gap-4">
              <Link 
                href={`/dashboard/${stateSlug}/hospitals`} 
