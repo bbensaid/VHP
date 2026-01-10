@@ -1,116 +1,214 @@
-// app/dashboard/page.tsx
-
-import React from "react";
-import Link from "next/link";
-
-export const metadata = {
-  title: "HTR Intelligence Hub | System Health Index",
-  description: "National command center for health system performance tracking.",
-};
+import React from 'react';
+import Link from 'next/link';
+import { USAMap } from '@/components/dashboard/USAMap';
+import { rhtProgramData } from '@/lib/data/rht-program'; // IMPORT THE BRAIN
+import { 
+  ArrowUpRightIcon, 
+  ExclamationCircleIcon,
+  CurrencyDollarIcon,
+  BuildingLibraryIcon,
+  FunnelIcon,
+  MagnifyingGlassIcon
+} from '@heroicons/react/24/outline';
 
 export default function DashboardIndex() {
+  
+  // 1. CALCULATE REAL AGGREGATE METRICS
+  const states = Object.values(rhtProgramData);
+  const totalAwarded = states.reduce((acc, curr) => {
+    // Strip '$' and ',' to sum numbers (Simple parse for demo)
+    const val = parseInt(curr.awardAmount.replace(/[^0-9]/g, '')) || 0;
+    return acc + val;
+  }, 0);
+  const criticalStates = states.filter(s => s.metrics.some(m => m.status === 'Pending')).length; // Mock logic for 'Critical'
+
+  // 2. IDENTIFY PRIORITY STATES (Mock logic: Vermont is Critical)
+  const priorityStates = states.filter(s => s.id === 'vermont' || s.id === 'california');
+
   return (
-    <div className="min-h-screen pb-20 font-sans text-slate-800">
+    <div className="min-h-screen bg-white font-sans text-slate-800">
       
-      {/* 1. HERO HEADER */}
-      <div className="mb-12 border-b border-slate-200 pb-8">
-        <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-4">
-          Intelligence <span className="text-slate-400 font-light">Hub</span>
-        </h1>
-        <p className="text-xl text-slate-600 max-w-3xl leading-relaxed">
-          The national command center for the <strong>System Health Index (SHI)</strong>. 
-          Track performance, identify distress signals, and monitor transformation velocity across state systems.
-        </p>
+      {/* 1. NATIONAL HUD (HEADS UP DISPLAY) */}
+      <div className="border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 py-8">
+           <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-8">
+              <div>
+                <h1 className="text-3xl font-black text-slate-900">National Intelligence Platform</h1>
+                <p className="text-slate-500 mt-1">FY2026 Rural Health Transformation Surveillance</p>
+              </div>
+              <div className="flex gap-2">
+                 <div className="relative">
+                    <select className="appearance-none bg-white border border-slate-300 text-sm font-bold text-slate-700 rounded-lg pl-4 pr-10 py-2 cursor-pointer hover:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm">
+                        <option>View: All Regions</option>
+                        <option>Northeast</option>
+                        <option>South</option>
+                        <option>Midwest</option>
+                        <option>West</option>
+                    </select>
+                    <FunnelIcon className="w-4 h-4 text-slate-500 absolute right-3 top-2.5 pointer-events-none" />
+                 </div>
+                 <button className="bg-indigo-600 text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-indigo-700 shadow-sm transition-colors">
+                    Generate Report
+                 </button>
+              </div>
+           </div>
+
+           {/* DYNAMIC AGGREGATE METRICS */}
+           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="bg-indigo-50 border border-indigo-100 p-4 rounded-xl">
+                 <div className="flex items-center gap-2 text-indigo-600 mb-1">
+                    <CurrencyDollarIcon className="w-4 h-4" />
+                    <span className="text-[10px] font-bold uppercase tracking-widest">Total Awarded</span>
+                 </div>
+                 {/* DYNAMIC VALUE */}
+                 <div className="text-2xl font-black text-slate-900">
+                    ${(totalAwarded / 1000000).toFixed(0)}M
+                 </div>
+                 <div className="text-xs text-slate-500">Across {states.length} Active Cohorts</div>
+              </div>
+              <div className="bg-red-50 border border-red-100 p-4 rounded-xl">
+                 <div className="flex items-center gap-2 text-red-600 mb-1">
+                    <ExclamationCircleIcon className="w-4 h-4" />
+                    <span className="text-[10px] font-bold uppercase tracking-widest">System Alerts</span>
+                 </div>
+                 {/* DYNAMIC VALUE */}
+                 <div className="text-2xl font-black text-slate-900">{criticalStates} States</div>
+                 <div className="text-xs text-slate-500">Immediate Intervention</div>
+              </div>
+              <div className="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
+                 <div className="flex items-center gap-2 text-slate-500 mb-1">
+                    <BuildingLibraryIcon className="w-4 h-4" />
+                    <span className="text-[10px] font-bold uppercase tracking-widest">Hospitals Tracked</span>
+                 </div>
+                 <div className="text-2xl font-black text-slate-900">14</div>
+                 <div className="text-xs text-green-600 flex items-center gap-1">
+                    <ArrowUpRightIcon className="w-3 h-3" /> Real-time Feed
+                 </div>
+              </div>
+              <div className="bg-white border border-slate-200 p-4 rounded-xl shadow-sm flex flex-col justify-center items-center text-center hover:border-indigo-300 transition-colors cursor-pointer group">
+                 <div className="text-indigo-600 font-bold text-sm group-hover:underline">Global View &rarr;</div>
+                 <div className="text-[10px] text-slate-400">Switch to International</div>
+              </div>
+           </div>
+        </div>
       </div>
 
-      {/* 2. ACTIVE ASSESSMENTS (Grid) */}
-      <div className="mb-16">
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-slate-900">Active State Assessments</h2>
-          <span className="text-xs font-bold bg-green-100 text-green-700 px-3 py-1 rounded-full border border-green-200 uppercase tracking-widest">
-            1 Active Region
-          </span>
-        </div>
+      <div className="max-w-7xl mx-auto px-6 py-10 space-y-12">
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          
-          {/* CARD 1: VERMONT (Live) */}
-          <Link href="/dashboard/vermont" className="group block h-full">
-            <div className="bg-white border-2 border-slate-200 rounded-xl p-6 hover:border-indigo-600 hover:shadow-xl transition-all duration-300 h-full flex flex-col relative overflow-hidden">
-              {/* Status Badge */}
-              <div className="absolute top-4 right-4">
-                <span className="bg-red-100 text-red-600 text-[10px] font-bold px-2 py-1 rounded border border-red-200 uppercase tracking-widest">
-                  Critical
-                </span>
+        {/* 2. THE MAP & CRISIS DECK */}
+        <div className="grid lg:grid-cols-3 gap-8">
+           
+           {/* LEFT: THE MAP */}
+           <div className="lg:col-span-2 h-full">
+              <USAMap />
+           </div>
+
+           {/* RIGHT: PRIORITY ALERTS (DYNAMIC) */}
+           <div className="space-y-4">
+              <div className="flex justify-between items-center px-1">
+                 <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest">Priority Watchlist</h3>
+                 <span className="text-[10px] font-bold bg-red-100 text-red-600 px-2 py-0.5 rounded-full uppercase">
+                    {priorityStates.length} Active Alerts
+                 </span>
               </div>
               
-              <div className="mb-4">
-                <div className="text-4xl mb-2">VT</div>
-                <h3 className="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
-                  Vermont Profile
-                </h3>
-                <p className="text-xs text-slate-400 font-mono uppercase mt-1">
-                  Updated: Q4 2025
-                </p>
+              {priorityStates.map((state) => (
+                <Link 
+                  key={state.id}
+                  href={`/dashboard/${state.id}`} 
+                  className={`block bg-white p-5 rounded-xl border border-slate-200 border-l-4 shadow-sm hover:shadow-md hover:translate-x-1 transition-all ${
+                    state.id === 'vermont' ? 'border-l-red-500' : 'border-l-amber-400'
+                  }`}
+                >
+                   <div className="flex justify-between items-start mb-2">
+                      <h4 className="font-black text-slate-900">{state.stateName}</h4>
+                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded uppercase ${
+                        state.id === 'vermont' 
+                          ? 'bg-red-50 text-red-600 border border-red-100' 
+                          : 'bg-amber-50 text-amber-600 border border-amber-100'
+                      }`}>
+                        {state.id === 'vermont' ? 'CRITICAL' : 'WATCH'}
+                      </span>
+                   </div>
+                   <div className="text-xs text-slate-500 mb-3 line-clamp-2">
+                      {state.strategicFocus}
+                   </div>
+                   <div className="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                      <div className={`h-full ${state.id === 'vermont' ? 'bg-red-500 w-[42%]' : 'bg-amber-400 w-[62%]'}`}></div>
+                   </div>
+                   <div className="text-[10px] text-right text-slate-400 mt-1">Health Index: {state.id === 'vermont' ? '42' : '62'}/100</div>
+                </Link>
+              ))}
+           </div>
+        </div>
+
+        {/* 3. THE ALL-STATE REGISTRY (DYNAMIC TABLE) */}
+        <div className="w-full bg-slate-50 rounded-xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
+           
+           {/* Header */}
+           <div className="px-6 py-4 border-b border-slate-200 bg-white flex flex-col sm:flex-row justify-between items-center gap-4">
+              <div>
+                 <h2 className="text-sm font-bold uppercase tracking-widest text-slate-900">National Registry</h2>
+                 <p className="text-xs text-slate-500">Full Cohort Performance Data</p>
               </div>
-
-              <p className="text-sm text-slate-600 mb-6 flex-grow">
-                Analysis of Act 167 impact, hospital solvency risks (NVRH), and regulatory fragmentation.
-              </p>
-
-              {/* Mini Score Footer */}
-              <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">SHI Score</span>
-                <span className="text-2xl font-black text-slate-900">42<span className="text-sm text-slate-400 font-normal">/100</span></span>
+              <div className="relative">
+                 <input 
+                   type="text" 
+                   placeholder="Filter states..." 
+                   className="pl-9 pr-4 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500 w-64" 
+                 />
+                 <MagnifyingGlassIcon className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-2" />
               </div>
-            </div>
-          </Link>
+           </div>
 
-          {/* CARD 2: COMING SOON (Placeholder) */}
-          <div className="bg-slate-50 border border-slate-200 border-dashed rounded-xl p-6 flex flex-col justify-center items-center text-center h-full opacity-60">
-            <div className="text-4xl mb-2 text-slate-300">NH</div>
-            <h3 className="text-xl font-bold text-slate-400 mb-2">New Hampshire</h3>
-            <span className="bg-slate-200 text-slate-500 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-widest">
-              Data Pending
-            </span>
-          </div>
+           {/* Table Content */}
+           <div className="bg-white">
+              <table className="w-full text-left text-sm">
+                 <thead className="bg-slate-50 border-b border-slate-200 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                    <tr>
+                       <th className="p-4 pl-6">State</th>
+                       <th className="p-4">RHT Award (FY26)</th>
+                       <th className="p-4">Strategic Focus</th>
+                       <th className="p-4">Status</th>
+                       <th className="p-4 text-right pr-6">Action</th>
+                    </tr>
+                 </thead>
+                 <tbody className="divide-y divide-slate-100">
+                    
+                    {/* DYNAMIC ROWS MAPPED FROM DATA */}
+                    {states.map((state) => (
+                      <tr key={state.id} className="hover:bg-slate-50 transition-colors group">
+                         <td className="p-4 pl-6 font-bold text-slate-900">{state.stateName}</td>
+                         <td className="p-4 text-slate-600 font-mono">{state.awardAmount}</td>
+                         <td className="p-4 text-slate-500">{state.strategicFocus}</td>
+                         <td className="p-4">
+                            <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-bold border ${
+                               state.id === 'vermont' 
+                               ? 'bg-red-50 text-red-700 border-red-100'
+                               : state.id === 'texas'
+                               ? 'bg-emerald-50 text-emerald-700 border-emerald-100'
+                               : 'bg-amber-50 text-amber-700 border-amber-100'
+                            }`}>
+                               {state.id === 'vermont' ? 'Critical' : state.id === 'texas' ? 'Stable' : 'Watch'}
+                            </span>
+                         </td>
+                         <td className="p-4 text-right pr-6">
+                            <Link href={`/dashboard/${state.id}`} className="text-slate-400 group-hover:text-indigo-600 font-bold text-xs uppercase tracking-wide transition-colors">
+                               View Profile &rarr;
+                            </Link>
+                         </td>
+                      </tr>
+                    ))}
 
-           {/* CARD 3: COMING SOON (Placeholder) */}
-           <div className="bg-slate-50 border border-slate-200 border-dashed rounded-xl p-6 flex flex-col justify-center items-center text-center h-full opacity-60">
-            <div className="text-4xl mb-2 text-slate-300">ME</div>
-            <h3 className="text-xl font-bold text-slate-400 mb-2">Maine</h3>
-            <span className="bg-slate-200 text-slate-500 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-widest">
-              Data Pending
-            </span>
-          </div>
-
+                 </tbody>
+              </table>
+              <div className="p-3 bg-slate-50 border-t border-slate-200 text-center text-xs font-bold text-slate-500 uppercase tracking-widest cursor-pointer hover:bg-indigo-50 hover:text-indigo-600 transition-colors">
+                 Load All 50 States
+              </div>
+           </div>
         </div>
+
       </div>
-
-      {/* 3. QUICK LINKS / METHODOLOGY */}
-      <div className="grid md:grid-cols-2 gap-8">
-        <div className="bg-slate-900 text-white rounded-xl p-8">
-          <h3 className="text-xl font-bold mb-4 text-indigo-400">Methodology Note</h3>
-          <p className="text-slate-300 mb-6 leading-relaxed">
-            The System Health Index (SHI) aggregates data across three pillars: 
-            <strong> Policy, Economics, and Technology</strong>. Scores are normalized against federal benchmarks.
-          </p>
-          <Link href="/htr-index" className="text-sm font-bold underline decoration-indigo-500 underline-offset-4 hover:text-indigo-400">
-            Read Technical Documentation &rarr;
-          </Link>
-        </div>
-
-        <div className="bg-indigo-50 rounded-xl p-8 border border-indigo-100">
-          <h3 className="text-xl font-bold mb-4 text-indigo-900">Request Coverage</h3>
-          <p className="text-indigo-800 mb-6 leading-relaxed">
-            Are you a state policymaker or hospital executive? Request a preliminary SHI assessment for your region.
-          </p>
-          <button className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded shadow-sm transition-colors text-sm">
-            Contact Advisory Team
-          </button>
-        </div>
-      </div>
-
     </div>
   );
 }
