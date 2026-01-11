@@ -2,8 +2,8 @@
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { USAMap } from '@/components/dashboard/USAMap'; // NOW ACCEPTS PROPS
-import { rhtProgramData } from '@/lib/data/rht-program';
+import { USAMap } from '@/components/dashboard/USAMap';
+import { rhtProgramData, getStateStatus } from '@/lib/data/rht-program';
 import { 
   ArrowUpRightIcon, 
   ExclamationCircleIcon,
@@ -34,34 +34,44 @@ export default function DashboardIndex() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedRegion, setSelectedRegion] = useState("All");
 
-  // FILTER LOGIC
+  // 1. FILTER LOGIC
   const filteredStates = useMemo(() => {
     const allStates = Object.values(rhtProgramData);
     
     return allStates.filter(state => {
+      // Search Filter
       const matchesSearch = state.stateName.toLowerCase().includes(searchQuery.toLowerCase());
+      
+      // Region Filter
       const region = REGION_MAP[state.id] || 'Other';
       const matchesRegion = selectedRegion === "All" || region === selectedRegion;
+
       return matchesSearch && matchesRegion;
     });
   }, [searchQuery, selectedRegion]);
 
-  // DYNAMIC METRICS
+  // 2. DYNAMIC METRICS CALCULATION
   const metrics = useMemo(() => {
     const total = filteredStates.reduce((acc, curr) => {
       const val = parseInt(curr.awardAmount.replace(/[^0-9]/g, '')) || 0;
       return acc + val;
     }, 0);
-    const criticalCount = filteredStates.filter(s => s.id === 'vermont' || s.id === 'california').length;
+    
+    // Use the Unified Helper Logic for Critical Count
+    const criticalCount = filteredStates.filter(s => getStateStatus(s) === 'critical').length;
+
     return { total, criticalCount };
   }, [filteredStates]);
 
-  const watchlist = filteredStates.slice(0, 3);
+  // 3. PRIORITY WATCHLIST (Show non-stable states first)
+  const watchlist = filteredStates
+     .filter(s => getStateStatus(s) !== 'stable')
+     .slice(0, 3);
 
   return (
     <div className="min-h-screen bg-white font-sans text-slate-800">
       
-      {/* NATIONAL HUD */}
+      {/* 1. NATIONAL HUD */}
       <div className="border-b border-slate-200 sticky top-0 bg-white/95 backdrop-blur z-20">
         <div className="max-w-7xl mx-auto px-6 py-6">
            <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-6">
@@ -70,7 +80,9 @@ export default function DashboardIndex() {
                 <p className="text-slate-500 mt-1">FY2026 Rural Health Transformation Surveillance</p>
               </div>
               
+              {/* INTERACTIVE CONTROLS */}
               <div className="flex gap-2 w-full md:w-auto">
+                 {/* REGION FILTER */}
                  <div className="relative">
                     <select 
                       value={selectedRegion}
@@ -86,6 +98,7 @@ export default function DashboardIndex() {
                     <FunnelIcon className="w-4 h-4 text-slate-500 absolute right-3 top-3 pointer-events-none" />
                  </div>
                  
+                 {/* SEARCH BAR */}
                  <div className="relative flex-1 md:w-64">
                     <input 
                        type="text" 
@@ -148,9 +161,13 @@ export default function DashboardIndex() {
       <div className="max-w-7xl mx-auto px-6 py-10 space-y-12">
 
         <div className="grid lg:grid-cols-3 gap-8">
-           {/* 2. THE REACTIVE MAP (WIRED UP) */}
+           {/* 2. THE MAP */}
            <div className="lg:col-span-2 h-full">
-              <USAMap searchQuery={searchQuery} selectedRegion={selectedRegion} />
+              <USAMap 
+                  searchQuery={searchQuery} 
+                  selectedRegion={selectedRegion} 
+                  statesData={rhtProgramData} 
+              />
            </div>
 
            {/* WATCHLIST */}
@@ -163,32 +180,36 @@ export default function DashboardIndex() {
               </div>
               
               {watchlist.length > 0 ? (
-                 watchlist.map((state) => (
-                    <Link 
-                      key={state.id}
-                      href={`/dashboard/${state.id}`} 
-                      className={`block bg-white p-5 rounded-xl border border-slate-200 border-l-4 shadow-sm hover:shadow-md hover:translate-x-1 transition-all ${
-                        state.id === 'vermont' ? 'border-l-red-500' : 'border-l-amber-400'
-                      }`}
-                    >
-                       <div className="flex justify-between items-start mb-2">
-                          <h4 className="font-black text-slate-900">{state.stateName}</h4>
-                          <span className={`text-[10px] font-bold px-2 py-0.5 rounded uppercase ${
-                            state.id === 'vermont' 
-                              ? 'bg-red-50 text-red-600 border border-red-100' 
-                              : 'bg-amber-50 text-amber-600 border border-amber-100'
-                          }`}>
-                            {state.id === 'vermont' ? 'CRITICAL' : 'WATCH'}
-                          </span>
-                       </div>
-                       <div className="text-xs text-slate-500 mb-3 line-clamp-2">
-                          {state.strategicFocus}
-                       </div>
-                       <div className="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
-                          <div className={`h-full ${state.id === 'vermont' ? 'bg-red-500 w-[42%]' : 'bg-amber-400 w-[62%]'}`}></div>
-                       </div>
-                    </Link>
-                 ))
+                 watchlist.map((state) => {
+                    // USE UNIFIED HELPER FOR COLOR LOGIC
+                    const status = getStateStatus(state);
+                    return (
+                        <Link 
+                          key={state.id}
+                          href={`/dashboard/${state.id}`} 
+                          className={`block bg-white p-5 rounded-xl border border-slate-200 border-l-4 shadow-sm hover:shadow-md hover:translate-x-1 transition-all ${
+                            status === 'critical' ? 'border-l-red-500' : 'border-l-amber-400'
+                          }`}
+                        >
+                           <div className="flex justify-between items-start mb-2">
+                              <h4 className="font-black text-slate-900">{state.stateName}</h4>
+                              <span className={`text-[10px] font-bold px-2 py-0.5 rounded uppercase ${
+                                status === 'critical' 
+                                  ? 'bg-red-50 text-red-600 border border-red-100' 
+                                  : 'bg-amber-50 text-amber-600 border border-amber-100'
+                              }`}>
+                                {status === 'critical' ? 'CRITICAL' : 'WATCH'}
+                              </span>
+                           </div>
+                           <div className="text-xs text-slate-500 mb-3 line-clamp-2">
+                              {state.strategicFocus}
+                           </div>
+                           <div className="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                              <div className={`h-full ${status === 'critical' ? 'bg-red-500 w-[42%]' : 'bg-amber-400 w-[62%]'}`}></div>
+                           </div>
+                        </Link>
+                    );
+                 })
               ) : (
                  <div className="p-8 text-center bg-slate-50 rounded-xl border border-slate-200 border-dashed">
                     <p className="text-sm text-slate-400 font-bold">No states match filters</p>
@@ -197,7 +218,7 @@ export default function DashboardIndex() {
            </div>
         </div>
 
-        {/* 3. REGISTRY TABLE */}
+        {/* 3. DYNAMIC REGISTRY TABLE */}
         <div className="w-full bg-slate-50 rounded-xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
            <div className="px-6 py-4 border-b border-slate-200 bg-white flex justify-between items-center">
               <div>
