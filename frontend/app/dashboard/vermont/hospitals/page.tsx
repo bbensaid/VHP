@@ -1,187 +1,204 @@
 import React from "react";
-import Link from "next/link";
 import { 
-  ArrowLeftIcon, 
-  ExclamationTriangleIcon, 
+  ArrowDownTrayIcon, 
   CurrencyDollarIcon, 
-  ScissorsIcon,
-  BuildingOffice2Icon
+  UserGroupIcon, 
+  ExclamationTriangleIcon,
+  CheckBadgeIcon,
+  ChartBarIcon,
+  ClockIcon,
+  ScissorsIcon
 } from "@heroicons/react/24/outline";
 
-/**
- * VERMONT SYSTEM HEALTH & OPERATIONS
- * Source: Oliver Wyman Act 167 Report
- */
-
-export default function VermontSystemHealth() {
+export default function NVRHHeroProfile() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-800 pb-20">
       
-      {/* 1. BREADCRUMBS */}
-      <div className="bg-white border-b border-slate-200 px-6 py-3 flex items-center justify-between sticky top-0 z-10">
-        <div className="flex items-center gap-2 text-xs font-medium text-slate-500">
-          <Link href="/dashboard" className="hover:text-indigo-600">USA</Link>
-          <span>/</span>
-          <Link href="/dashboard/vermont" className="hover:text-indigo-600">Vermont Strategy</Link>
-          <span>/</span>
-          <span className="text-slate-900 font-bold">System Health (Operations)</span>
+      {/* 1. HERO HEADER (CRISIS MODE) */}
+      <div className="bg-white border-b border-slate-200 sticky top-0 z-10">
+        <div className="max-w-7xl mx-auto px-6 py-6">
+           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+              <div>
+                 <div className="flex items-center gap-2 mb-2">
+                    <span className="bg-amber-50 text-amber-700 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded border border-amber-200">
+                      Act 167 Intervention Active
+                    </span>
+                    <span className="text-slate-400 text-xs font-mono">ID: VT-NVRH-001</span>
+                 </div>
+                 <h1 className="text-3xl font-black text-slate-900">Northeastern Vermont Regional</h1>
+                 <p className="text-slate-500">St. Johnsbury, VT • Critical Access • <span className="text-red-600 font-bold">Watchlist Tier 1</span></p>
+              </div>
+              <div className="flex gap-3">
+                 <button className="flex items-center gap-2 bg-white border border-slate-300 text-slate-700 px-4 py-2 rounded-lg text-sm font-bold shadow-sm hover:bg-slate-50 transition-colors">
+                    <ArrowDownTrayIcon className="w-4 h-4" />
+                    Wyman Report (PDF)
+                 </button>
+                 <button className="flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-sm hover:bg-indigo-700 transition-colors">
+                    <CheckBadgeIcon className="w-4 h-4" />
+                    Approve FY26 Plan
+                 </button>
+              </div>
+           </div>
         </div>
-        <Link 
-           href="/dashboard/vermont" 
-           className="flex items-center gap-1 text-xs font-bold text-indigo-600 hover:text-indigo-800 uppercase tracking-wide"
-        >
-          <ArrowLeftIcon className="w-3 h-3" /> Back to Strategy
-        </Link>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-10 space-y-12">
-
-        {/* 2. THE CRISIS HEADER */}
-        <div className="bg-white border-l-4 border-red-600 p-8 rounded-r-xl shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-               <span className="bg-red-100 text-red-700 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
-                 Act 167 Assessment
-               </span>
-               <span className="text-slate-400 text-xs font-mono">Source: Oliver Wyman Report (Aug 2024)</span>
-            </div>
-            <h1 className="text-3xl font-black text-slate-900">Hospital Transformation Watchlist</h1>
-            <p className="text-slate-500 mt-2 max-w-xl">
-              9 of 14 hospitals are operating at a negative margin. The system faces a projected <strong>$2.4B cumulative deficit</strong> by 2030 without immediate restructuring.
-            </p>
+      <div className="max-w-7xl mx-auto px-6 py-10 space-y-8">
+        
+        {/* 2. THE "HEARTBEAT" (Solvency Metrics from PDF) */}
+        <div className="grid md:grid-cols-4 gap-4">
+          <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm border-l-4 border-l-amber-400">
+             <div className="flex items-center gap-2 text-slate-400 mb-2">
+                <CurrencyDollarIcon className="w-4 h-4" />
+                <span className="text-[10px] font-bold uppercase tracking-widest">Operating Margin</span>
+             </div>
+             <div className="text-3xl font-black text-amber-500">0.7%</div>
+             <div className="text-xs text-slate-400 mt-1">Projected FY26 (Razor Thin)</div>
           </div>
-          <div className="text-right">
-             <div className="text-xs text-slate-400 uppercase tracking-widest font-bold">System Risk Score</div>
-             <div className="text-5xl font-black text-red-600">CRITICAL</div>
+          <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+             <div className="flex items-center gap-2 text-slate-400 mb-2">
+                <ClockIcon className="w-4 h-4" />
+                <span className="text-[10px] font-bold uppercase tracking-widest">Days Cash on Hand</span>
+             </div>
+             <div className="text-3xl font-black text-slate-900">24</div>
+             <div className="text-xs text-red-500 font-bold mt-1">Critical (&lt;30 Days)</div>
+          </div>
+          <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+             <div className="flex items-center gap-2 text-slate-400 mb-2">
+                <UserGroupIcon className="w-4 h-4" />
+                <span className="text-[10px] font-bold uppercase tracking-widest">ED Volume</span>
+             </div>
+             <div className="text-3xl font-black text-slate-900">14,200</div>
+             <div className="text-xs text-green-600 font-bold mt-1">↑ 4% (Over Capacity)</div>
+          </div>
+          <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+             <div className="flex items-center gap-2 text-slate-400 mb-2">
+                <ExclamationTriangleIcon className="w-4 h-4" />
+                <span className="text-[10px] font-bold uppercase tracking-widest">Agency Spend</span>
+             </div>
+             <div className="text-3xl font-black text-slate-900">$4.2M</div>
+             <div className="text-xs text-red-500 font-bold mt-1">↑ 12% YoY (Travel Nurses)</div>
           </div>
         </div>
 
-        {/* 3. COHORT 1: IMMEDIATE RESTRUCTURING */}
-        <section>
-          <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-xl font-black text-slate-900">Cohort 1: Solvency Risk (Immediate Action)</h2>
-            <div className="h-px bg-slate-200 flex-1"></div>
-          </div>
-
-          <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-            <table className="w-full text-left border-collapse">
-              <thead className="bg-slate-50 border-b border-slate-200 text-xs font-bold text-slate-500 uppercase tracking-wider">
-                <tr>
-                  <th className="p-5">Facility</th>
-                  <th className="p-5">Financial Vitals (2023)</th>
-                  <th className="p-5">Operational Inefficiency</th>
-                  <th className="p-5 text-red-600">Wyman Recommendation ("Kill List")</th>
-                  <th className="p-5">Action</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 text-sm">
-                
-                {/* NVRH */}
-                <tr className="group hover:bg-slate-50 transition-colors">
-                  <td className="p-5">
-                    <div className="font-bold text-slate-900 flex items-center gap-2">
-                      <BuildingOffice2Icon className="w-4 h-4 text-slate-400" />
-                      Northeastern VT Regional
+        {/* 3. THE TURNAROUND PLAN (The "Wyman" Recommendations) */}
+        <div className="grid lg:grid-cols-3 gap-8">
+           
+           {/* LEFT: The "Kill List" (Service Rationalization) */}
+           <div className="lg:col-span-2 bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+              <div className="px-6 py-4 border-b border-slate-100 bg-slate-50 flex justify-between items-center">
+                 <h3 className="font-bold text-slate-800 text-sm uppercase tracking-wide">Act 167 Service Rationalization</h3>
+                 <span className="text-xs font-mono bg-red-100 text-red-700 px-2 py-1 rounded font-bold">Immediate Action Required</span>
+              </div>
+              
+              <div className="divide-y divide-slate-100">
+                 {/* Item 1: OCC MED */}
+                 <div className="p-6 flex gap-4 group hover:bg-slate-50 transition-colors">
+                    <div className="bg-red-50 p-3 rounded-lg h-fit text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                       <ScissorsIcon className="w-6 h-6" />
                     </div>
-                    <div className="text-slate-500 text-xs ml-6">St. Johnsbury, VT</div>
-                  </td>
-                  <td className="p-5">
-                    <div className="font-bold text-red-600">-8.9% Margin</div>
-                    <div className="text-xs text-slate-400">($8.8M Loss)</div>
-                  </td>
-                  <td className="p-5">
-                    <div className="font-bold text-slate-900">37.0%</div>
-                    <div className="text-xs text-slate-400">Avoidable ED Visits</div>
-                  </td>
-                  <td className="p-5">
-                    <ul className="space-y-1">
-                      <li className="flex items-start gap-2 text-slate-600 text-xs">
-                        <ScissorsIcon className="w-3 h-3 text-red-400 mt-0.5" /> Stop Joint Replacement
-                      </li>
-                      <li className="flex items-start gap-2 text-slate-600 text-xs">
-                        <ScissorsIcon className="w-3 h-3 text-red-400 mt-0.5" /> Stop Spinal Surgery
-                      </li>
-                    </ul>
-                  </td>
-                  <td className="p-5">
-                    <Link href="/dashboard/vermont/nvrh" className="text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 px-3 py-1.5 rounded transition-colors shadow-sm">
-                      Deep Dive
-                    </Link>
-                  </td>
-                </tr>
-
-                {/* NORTH COUNTRY */}
-                <tr className="group hover:bg-slate-50 transition-colors">
-                  <td className="p-5">
-                    <div className="font-bold text-slate-900 flex items-center gap-2">
-                      <BuildingOffice2Icon className="w-4 h-4 text-slate-400" />
-                      North Country Hospital
+                    <div>
+                       <h4 className="font-black text-slate-900 text-lg">Close Occupational Medicine</h4>
+                       <p className="text-sm text-slate-500 mt-1 max-w-xl">
+                          Service line operating at -14% margin. Recommendation is to close dedicated office and transfer essential services to Northern Express Care.
+                       </p>
+                       <div className="mt-3 flex items-center gap-4 text-xs font-bold">
+                          <span className="text-emerald-600 bg-emerald-50 px-2 py-1 rounded border border-emerald-100">Savings: $450k/yr</span>
+                          <span className="text-slate-400">Target Date: Sept 30, 2025</span>
+                       </div>
                     </div>
-                    <div className="text-slate-500 text-xs ml-6">Newport, VT</div>
-                  </td>
-                  <td className="p-5">
-                    <div className="font-bold text-red-600">-8.9% Margin</div>
-                    <div className="text-xs text-slate-400">($8.8M Loss)</div>
-                  </td>
-                  <td className="p-5">
-                    <div className="font-bold text-slate-900">37.0%</div>
-                    <div className="text-xs text-slate-400">Avoidable ED Visits</div>
-                  </td>
-                  <td className="p-5">
-                    <ul className="space-y-1">
-                      <li className="flex items-start gap-2 text-slate-600 text-xs">
-                        <ScissorsIcon className="w-3 h-3 text-red-400 mt-0.5" /> Stop Total Joint Replacement
-                      </li>
-                      <li className="flex items-start gap-2 text-slate-600 text-xs">
-                        <ScissorsIcon className="w-3 h-3 text-red-400 mt-0.5" /> Convert IP Beds to Psych
-                      </li>
-                    </ul>
-                  </td>
-                  <td className="p-5">
-                    <button disabled className="text-xs font-bold text-slate-400 border border-slate-200 px-3 py-1.5 rounded cursor-not-allowed">
-                      Analysis Pending
-                    </button>
-                  </td>
-                </tr>
+                 </div>
 
-                {/* SPRINGFIELD */}
-                <tr className="group hover:bg-slate-50 transition-colors">
-                  <td className="p-5">
-                    <div className="font-bold text-slate-900 flex items-center gap-2">
-                      <BuildingOffice2Icon className="w-4 h-4 text-slate-400" />
-                      Springfield Hospital
+                 {/* Item 2: ENT */}
+                 <div className="p-6 flex gap-4 group hover:bg-slate-50 transition-colors">
+                    <div className="bg-amber-50 p-3 rounded-lg h-fit text-amber-600 group-hover:bg-amber-500 group-hover:text-white transition-colors">
+                       <ArrowDownTrayIcon className="w-6 h-6" />
                     </div>
-                    <div className="text-slate-500 text-xs ml-6">Springfield, VT</div>
-                  </td>
-                  <td className="p-5">
-                    <div className="font-bold text-orange-600">-0.9% Margin</div>
-                    <div className="text-xs text-slate-400">($0.6M Loss)</div>
-                  </td>
-                  <td className="p-5">
-                    <div className="font-bold text-slate-900">30.5%</div>
-                    <div className="text-xs text-slate-400">Avoidable ED Visits</div>
-                  </td>
-                  <td className="p-5">
-                    <ul className="space-y-1">
-                      <li className="flex items-start gap-2 text-slate-600 text-xs">
-                        <ScissorsIcon className="w-3 h-3 text-red-400 mt-0.5" /> Convert ED to 16hr Urgent Care
-                      </li>
-                      <li className="flex items-start gap-2 text-slate-600 text-xs">
-                        <ScissorsIcon className="w-3 h-3 text-red-400 mt-0.5" /> Stop Femoral Hernia Repair
-                      </li>
-                    </ul>
-                  </td>
-                  <td className="p-5">
-                    <button disabled className="text-xs font-bold text-slate-400 border border-slate-200 px-3 py-1.5 rounded cursor-not-allowed">
-                      Analysis Pending
-                    </button>
-                  </td>
-                </tr>
+                    <div>
+                       <h4 className="font-black text-slate-900 text-lg">Divest ENT Partnership</h4>
+                       <p className="text-sm text-slate-500 mt-1 max-w-xl">
+                          End partnership with Littleton Regional Healthcare. Low procedural volume does not justify fixed cost of specialist rotation.
+                       </p>
+                       <div className="mt-3 flex items-center gap-4 text-xs font-bold">
+                          <span className="text-emerald-600 bg-emerald-50 px-2 py-1 rounded border border-emerald-100">Savings: $210k/yr</span>
+                          <span className="text-slate-400">Status: Contract Notice Sent</span>
+                       </div>
+                    </div>
+                 </div>
 
-              </tbody>
-            </table>
-          </div>
-        </section>
+                 {/* Item 3: ADMIN */}
+                 <div className="p-6 flex gap-4 group hover:bg-slate-50 transition-colors">
+                    <div className="bg-blue-50 p-3 rounded-lg h-fit text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                       <UserGroupIcon className="w-6 h-6" />
+                    </div>
+                    <div>
+                       <h4 className="font-black text-slate-900 text-lg">Admin Workforce Reduction</h4>
+                       <p className="text-sm text-slate-500 mt-1 max-w-xl">
+                          Reduction of 5.0 FTEs in non-clinical administrative roles. Streamline scheduling and billing departments through shared service model.
+                       </p>
+                       <div className="mt-3 flex items-center gap-4 text-xs font-bold">
+                          <span className="text-emerald-600 bg-emerald-50 px-2 py-1 rounded border border-emerald-100">Savings: $380k/yr</span>
+                          <span className="text-slate-400">Status: Executed</span>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+
+           {/* RIGHT: Visualizing the "Cliff" */}
+           <div className="space-y-6">
+              
+              {/* Cash Flow Widget */}
+              <div className="bg-slate-900 text-white rounded-xl shadow-lg p-6">
+                 <div className="flex justify-between items-center mb-6">
+                     <h3 className="font-bold text-lg">Liquidity Forecast</h3>
+                     <span className="text-[10px] bg-slate-700 px-2 py-1 rounded text-slate-300">Runway: 8 Mo</span>
+                 </div>
+                 
+                 <div className="relative h-40 flex items-end gap-3 px-2">
+                    {/* Simulated Chart Bars with Tooltips on Hover */}
+                    <div className="w-1/4 bg-emerald-500 h-[80%] rounded-t group relative cursor-pointer hover:bg-emerald-400 transition-colors">
+                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Q1: $12M</div>
+                        <div className="text-[10px] text-center mt-2 absolute -bottom-5 w-full text-slate-400">Q1</div>
+                    </div>
+                    <div className="w-1/4 bg-emerald-500 h-[60%] rounded-t group relative cursor-pointer hover:bg-emerald-400 transition-colors">
+                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Q2: $9M</div>
+                        <div className="text-[10px] text-center mt-2 absolute -bottom-5 w-full text-slate-400">Q2</div>
+                    </div>
+                    <div className="w-1/4 bg-amber-500 h-[40%] rounded-t group relative cursor-pointer hover:bg-amber-400 transition-colors">
+                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Q3: $6M</div>
+                        <div className="text-[10px] text-center mt-2 absolute -bottom-5 w-full text-slate-400">Q3</div>
+                    </div>
+                    <div className="w-1/4 bg-red-500 h-[20%] rounded-t animate-pulse group relative cursor-pointer hover:bg-red-400 transition-colors">
+                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Q4: CRITICAL</div>
+                        <div className="text-[10px] text-center mt-2 absolute -bottom-5 w-full text-slate-400">Q4</div>
+                    </div>
+                 </div>
+                 <p className="text-xs text-slate-400 mt-8 text-center leading-relaxed">
+                    Without Act 167 intervention, NVRH breaches debt covenants by <span className="text-white font-bold">Q4 FY26</span>.
+                 </p>
+              </div>
+
+              {/* Community Sentiment (From Act 167 Presentation) */}
+              <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                 <h3 className="font-bold text-slate-900 text-sm uppercase tracking-wide mb-4">Community Sentiment</h3>
+                 <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                       <div className="w-2 h-2 rounded-full bg-red-500 mt-1.5 flex-shrink-0"></div>
+                       <p className="text-xs text-slate-600 italic">
+                         "We are terrified of losing the birthing center. It's an hour drive to the next hospital."
+                       </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                       <div className="w-2 h-2 rounded-full bg-emerald-500 mt-1.5 flex-shrink-0"></div>
+                       <p className="text-xs text-slate-600 italic">
+                         "Supportive of closing the ENT clinic if it keeps the Emergency Room open 24/7."
+                       </p>
+                    </div>
+                 </div>
+              </div>
+
+           </div>
+        </div>
 
       </div>
     </div>
