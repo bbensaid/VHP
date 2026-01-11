@@ -1,799 +1,852 @@
-export type Initiative = {
+import { 
+  CurrencyDollarIcon, 
+  UserGroupIcon, 
+  ChartBarIcon, 
+  BuildingOffice2Icon 
+} from '@heroicons/react/24/outline';
+
+// --- DATA TYPES ---
+export interface RHTInitiative {
   title: string;
   description: string;
-};
+  status: 'Active' | 'Planned' | 'Completed';
+}
 
-export type Metric = {
+export interface RHTMetric {
   label: string;
-  status: "Pending" | "In Progress" | "Achieved";
-  target?: string;
-};
+  value: string;
+  trend: 'up' | 'down' | 'neutral';
+  status: 'On Track' | 'Pending' | 'At Risk';
+}
 
-export type RHTProfile = {
+export interface RHTProfile {
   id: string;
   stateName: string;
   awardAmount: string;
   strategicFocus: string;
-  description: string;
-  initiatives: Initiative[];
-  metrics: Metric[];
-};
+  metrics: RHTMetric[];
+  initiatives: RHTInitiative[];
+}
 
+// --- LIVE RHT PROGRAM DATA (FY2026 AWARDS - 50 STATES) ---
 export const rhtProgramData: Record<string, RHTProfile> = {
+  
   // --- NORTHEAST ---
-  vermont: {
-    id: "vermont",
-    stateName: "Vermont",
-    awardAmount: "$200,000,000",
-    strategicFocus: "Regionalization & Innovative Care Strategies",
-    description: "The Vermont RHT Program seeks to advance a cohesive suite of health care innovations and reforms that address the State's rural health care access, quality, and affordability challenges. The Program is designed to ensure long-term health care system sustainability in the face of rising costs and population health needs.",
-    initiatives: [
-      {
-        title: "Regionalization & Innovative Care Strategies",
-        description: "Implementing a statewide transformation planning initiative to ensure non-duplication of services. The vision is that essential services remain local, while other services move to regional hubs or a single statewide location for complex care."
-      },
-      {
-        title: "Clinically Integrated Network (CIN)",
-        description: "Fostering collaboration across independent providers to produce operational efficiencies, facilitate patient choice, and promote patient-facing technologies that deliver care closer to home."
-      },
-      {
-        title: "Strengthening Primary Care",
-        description: "Enhancing the 'Blueprint for Health' initiative to improve team-based chronic disease care, deliver workforce training, and create a statewide quality improvement learning network."
-      },
-      {
-        title: "Health Care Workforce Development",
-        description: "Strategic investments in workforce programs to strengthen the rural pipeline and address housing shortages, enabling providers to practice at the top of their license."
-      },
-      {
-        title: "Price Transparency & Insurance Competition",
-        description: "Investments in new accountability tools and strategies to address rising health care costs and affordability barriers."
-      }
-    ],
+  'vermont': {
+    id: 'vermont',
+    stateName: 'Vermont',
+    awardAmount: '$195M', 
+    strategicFocus: 'Primary Care, Long-Term Support & Workforce',
     metrics: [
-      { label: "Regional Hubs Designated", status: "Pending", target: "Implementation Phase" },
-      { label: "Primary Care Transformation", status: "In Progress", target: "Blueprint Expansion" },
-      { label: "Workforce Housing Units", status: "Pending", target: "Pipeline Active" }
+      { label: 'MH Follow-up (30d)', value: '78%', trend: 'up', status: 'On Track' }, 
+      { label: 'SUD Follow-up', value: '69%', trend: 'up', status: 'On Track' },
+      { label: 'ED Utilization', value: 'Reducing', trend: 'down', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Mobile Integrated Health', description: 'Deploying specially trained paramedics/EMTs for home-based post-discharge and primary care follow-up.', status: 'Active' },
+      { title: 'Maple Mountain Residency', description: 'Establishing a new Family Medicine Residency Program to address rural physician shortages.', status: 'Planned' },
+      { title: 'Primary Care PMPM', description: 'New Per-Member-Per-Month payment model incentivizing practices that meet specific access requirements.', status: 'Active' },
+      { title: 'Bed Tracking System', description: 'Real-time data platform to track bed availability and patient transfers across the rural network.', status: 'Active' }
     ]
   },
-  maine: {
-    id: "maine",
-    stateName: "Maine",
-    awardAmount: "$190,000,000",
-    strategicFocus: "AI Innovation & Paramedicine",
-    description: "Maine is partnering with Duke University to create a Rural AI Hub while simultaneously expanding community paramedicine to address its aging, geographically dispersed population.",
-    initiatives: [
-      { title: "Rural AI Hub", description: "Innovation institute for deploying AI tools in rural clinics." },
-      { title: "Community Paramedicine", description: "Strengthened reimbursement models for EMS home visits." }
-    ],
+  'maine': {
+    id: 'maine',
+    stateName: 'Maine',
+    awardAmount: '$190M',
+    strategicFocus: 'Rural Ambulance & EMS Stabilization',
     metrics: [
-      { label: "AI Pilots Launched", status: "Pending", target: "5 Pilots" },
-      { label: "EMS Home Visits", status: "In Progress", target: "5,000/yr" }
+      { label: 'BP Control', value: '+10%', trend: 'up', status: 'On Track' },
+      { label: 'Readmissions', value: '-10%', trend: 'down', status: 'On Track' },
+      { label: 'Delayed Care', value: '-10%', trend: 'down', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Maine Rural AI Hub', description: 'Partnership with Duke University to create an AI innovation hub for rural providers.', status: 'Active' },
+      { title: 'Community Paramedicine', description: 'New reimbursement models to sustain EMS involvement in primary care.', status: 'Active' },
+      { title: 'School-Based Health', description: 'Expanding centers that offer dental and mental health alongside preventive care.', status: 'Active' }
     ]
   },
-  new_hampshire: {
-    id: "new_hampshire",
-    stateName: "New Hampshire",
-    awardAmount: "$204,000,000",
-    strategicFocus: "Pharmacy Lockboxes & Prevention",
-    description: "New Hampshire is tackling polypharmacy risks in seniors via community lockboxes and expanding prevention access points in schools and libraries.",
-    initiatives: [
-      { title: "Pharmacy Transformation", description: "Community lockboxes and AI tools for polypharmacy risk reduction." },
-      { title: "Prevention-First Model", description: "Community access points in libraries and schools." }
-    ],
+  'new_hampshire': {
+    id: 'new_hampshire',
+    stateName: 'New Hampshire',
+    awardAmount: '$204M',
+    strategicFocus: 'Behavioral Health & Crisis Networks',
     metrics: [
-      { label: "Lockboxes Deployed", status: "In Progress", target: "50 Sites" },
-      { label: "Adverse Drug Events", status: "Pending", target: "-10%" }
+      { label: 'Preventative Dental', value: '2/yr', trend: 'up', status: 'On Track' },
+      { label: 'Rural Nurses', value: '+4%', trend: 'up', status: 'On Track' },
+      { label: 'Safety Net Closures', value: '0', trend: 'neutral', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Pharmacy Transformation', description: 'Community lockboxes and AI-driven polypharmacy risk reduction.', status: 'Active' },
+      { title: 'Virtual-First Primary Care', description: 'Digital-first model to expand access in remote regions.', status: 'Active' },
+      { title: 'Tele-Specialty Hubs', description: 'Coordinated intake for tele-psychiatry, critical care, and obstetrics.', status: 'Active' }
     ]
   },
-  massachusetts: {
-    id: "massachusetts",
-    stateName: "Massachusetts",
-    awardAmount: "$162,000,000",
-    strategicFocus: "Mobile ROI & Bed Tracking",
-    description: "Focusing on high-tech Mobile Health Units with a projected $36:1 ROI and a 'Beds Not Buildings' platform for behavioral health tracking.",
-    initiatives: [
-      { title: "Mobile Health Units", description: "High-tech units with diagnostic/AI capabilities." },
-      { title: "Beds Not Buildings", description: "Live cross-agency platform to track behavioral health bed availability." }
-    ],
+  'massachusetts': {
+    id: 'massachusetts',
+    stateName: 'Massachusetts',
+    awardAmount: '$162M',
+    strategicFocus: 'Community Health & Mobile Integration',
     metrics: [
-      { label: "Mobile Unit ROI", status: "Pending", target: "$36:1" },
-      { label: "BH Boarding Time", status: "In Progress", target: "-20%" }
+      { label: 'Hypertension ED', value: '-10k', trend: 'down', status: 'On Track' },
+      { label: 'Preventative Visits', value: '+25/1k', trend: 'up', status: 'On Track' },
+      { label: 'Food Insecurity', value: '-5%', trend: 'down', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Mobile Health Units', description: 'Tech-enabled units with diagnostic equipment and telemedicine support.', status: 'Active' },
+      { title: 'Beds Not Buildings', description: 'Live cross-agency platform to track behavioral health bed availability.', status: 'Active' },
+      { title: 'Workforce THRIVE', description: 'Targeted recruitment and retention for rural health professionals.', status: 'Active' }
     ]
   },
-  connecticut: {
-    id: "connecticut",
-    stateName: "Connecticut",
-    awardAmount: "$154,000,000",
-    strategicFocus: "Crisis Stabilization & Home Visits",
-    description: "Implementing universal nurse home-visiting for newborns and 23-hour crisis stabilization centers to offload rural EDs.",
-    initiatives: [
-      { title: "Universal Nurse Home-Visits", description: "Expansion of home visiting for all new/expecting rural families." },
-      { title: "23-Hour Crisis Centers", description: "Stabilization centers linked to rural hospitals." }
-    ],
+  'rhode_island': {
+    id: 'rhode_island',
+    stateName: 'Rhode Island',
+    awardAmount: '$156M',
+    strategicFocus: 'Technology & Remote Care',
     metrics: [
-      { label: "Nurse Visits", status: "In Progress", target: "100% Eligible" },
-      { label: "ED Psych Diversion", status: "Pending", target: "40%" }
+      { label: 'Well-Care Visits', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'EMS Response', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'Home Services', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'EHR Platform', description: 'State-sponsored EHR platform and infrastructure grants for small practices.', status: 'Active' },
+      { title: 'Tele-Dentistry', description: 'Remote care services including tele-dentistry triage.', status: 'Active' },
+      { title: 'Rural HIT Modernization', description: 'Infrastructure grants for telehealth platforms and remote monitoring.', status: 'Active' }
     ]
   },
-  rhode_island: {
-    id: "rhode_island",
-    stateName: "Rhode Island",
-    awardAmount: "$156,000,000",
-    strategicFocus: "Island EMS & Hospital-at-Home",
-    description: "Specific infrastructure for Block Island and Narragansett Tribe, combined with a Hospital-at-Home program.",
-    initiatives: [
-      { title: "Island/Tribal Support", description: "Infrastructure hardening for Block Island and Narragansett." },
-      { title: "Hospital-at-Home", description: "Enabling acute care in home settings." }
-    ],
+  'connecticut': {
+    id: 'connecticut',
+    stateName: 'Connecticut',
+    awardAmount: '$154M',
+    strategicFocus: 'Maternal Health & Crisis Stabilization',
     metrics: [
-      { label: "HaH Admissions", status: "Pending", target: "200/yr" }
+      { label: 'Maternal Service', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'ED Utilization', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'Licensure', value: '+5%', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Nurse Home Visits', description: 'Universal nurse home-visits across rural regions for maternal/newborn support.', status: 'Active' },
+      { title: 'Crisis Stabilization', description: '23-hour crisis-stabilization centers linked to rural hospitals.', status: 'Active' },
+      { title: 'Mobile Services', description: 'Mobile services in primary, dental, and behavioral health care.', status: 'Active' }
     ]
   },
-  new_york: {
-    id: "new_york",
-    stateName: "New York",
-    awardAmount: "$212,000,000",
-    strategicFocus: "Rural Roots & eConsult",
-    description: "Addressing maternal deserts with the 'Rural Roots' workforce model and scaling a statewide eConsult platform.",
-    initiatives: [
-      { title: "Rural Roots", description: "Workforce model focusing on maternal care deserts and simulation training." },
-      { title: "eConsult Platform", description: "Statewide implementation to address specialty access." }
-    ],
+  'new_york': {
+    id: 'new_york',
+    stateName: 'New York',
+    awardAmount: '$212M',
+    strategicFocus: 'Safety Net Transformation & Primary Care',
     metrics: [
-      { label: "OB Simulation Training", status: "In Progress", target: "500 Staff" },
-      { label: "eConsult Volume", status: "Pending", target: "50,000/yr" }
+      { label: 'Preventable ER', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'Maternal Health', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Workforce Gap', value: 'Dec', trend: 'down', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Rural Roots', description: 'Workforce model emphasizing maternal care, lactation counseling, and OB simulation.', status: 'Active' },
+      { title: 'eConsult Platform', description: 'Statewide specialist consultation platform to reduce wait times.', status: 'Active' },
+      { title: 'Rural Integration', description: 'Formal partnership network across hospitals, FQHCs, and CBOs.', status: 'Active' }
     ]
   },
-  pennsylvania: {
-    id: "pennsylvania",
-    stateName: "Pennsylvania",
-    awardAmount: "$193,000,000",
-    strategicFocus: "Regional Hubs & Value-Based Care",
-    description: "Establishing 8 Regional Hubs to provide technical expertise and competitive grants for Value-Based Care adoption.",
-    initiatives: [
-      { title: "Regional Hub Model", description: "8 hubs providing technical expertise (IT, workflow) to local providers." },
-      { title: "Value-Based Care Grants", description: "Competitive grants building on the PA Rural Health Model." }
-    ],
+  'new_jersey': {
+    id: 'new_jersey',
+    stateName: 'New Jersey',
+    awardAmount: '$147M',
+    strategicFocus: 'Infrastructure & Telehealth',
     metrics: [
-      { label: "Hubs Operational", status: "Pending", target: "8 Hubs" },
-      { label: "VBC Adoption", status: "In Progress", target: "60% Providers" }
+      { label: 'Rural Providers', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Preventative Care', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Hospital Stability', value: 'Stable', trend: 'neutral', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'CCBHC Transition', description: 'Supporting CCBHCs to transition from federal to Medicaid funding.', status: 'Active' },
+      { title: 'Telehealth Access', description: 'Developing telehealth access points in public areas and clinician training.', status: 'Active' },
+      { title: 'Innovation Engine', description: 'Funding for existing Healthcare Innovation Engine for tech innovations.', status: 'Active' }
     ]
   },
-  new_jersey: {
-    id: "new_jersey",
-    stateName: "New Jersey",
-    awardAmount: "$147,000,000",
-    strategicFocus: "CCBHC Transition & Telehealth Points",
-    description: "Transitioning mental health centers to the CCBHC model and installing public telehealth access points.",
-    initiatives: [
-      { title: "CCBHC Support", description: "Transitioning centers from federal to Medicaid funding." },
-      { title: "Public Telehealth Points", description: "Developing telehealth access in public areas." }
-    ],
+  'pennsylvania': {
+    id: 'pennsylvania',
+    stateName: 'Pennsylvania',
+    awardAmount: '$193M',
+    strategicFocus: 'Regional Hubs & Workforce',
     metrics: [
-      { label: "CCBHC Transition", status: "Pending", target: "100%" },
-      { label: "Public Telehealth Use", status: "In Progress", target: "1,000 Sessions" }
+      { label: 'Vacancy Rate', value: '-10%', trend: 'down', status: 'On Track' },
+      { label: 'SUD Engagement', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Paramedicine', value: 'Adopted', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Regional Hub Model', description: '8 Regional Care Collaboratives sharing technical expertise and services.', status: 'Active' },
+      { title: 'Rural Training', description: 'Scholarships and housing for students committing to 5 years of rural service.', status: 'Planned' },
+      { title: 'Digital Models', description: 'Scaling app-based care for maternal and behavioral health.', status: 'Active' }
+    ]
+  },
+  'delaware': {
+    id: 'delaware',
+    stateName: 'Delaware',
+    awardAmount: '$157M',
+    strategicFocus: 'Workforce & Mobile Access',
+    metrics: [
+      { label: 'Mobile Reach', value: '1500/yr', trend: 'up', status: 'On Track' },
+      { label: 'Residency Retention', value: '50%', trend: 'up', status: 'On Track' },
+      { label: 'Primary Care', value: 'Improving', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Medical School', description: 'Establishing first four-year medical school with rural track.', status: 'Planned' },
+      { title: 'Hope Centers', description: 'Integrated housing and care centers for unhoused and rural populations.', status: 'Active' },
+      { title: 'Mobile Units', description: 'Deploying mobile health units and health pods.', status: 'Active' }
+    ]
+  },
+  'maryland': {
+    id: 'maryland',
+    stateName: 'Maryland',
+    awardAmount: '$168M',
+    strategicFocus: 'Aging & Chronic Disease',
+    metrics: [
+      { label: 'Infrastructure', value: 'Improved', trend: 'up', status: 'On Track' },
+      { label: 'Data Sharing', value: 'Active', trend: 'up', status: 'On Track' },
+      { label: 'Nutrition Ed', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'SUD Case Mgmt', description: 'Intensive case management programs for older adults with substance use disorders.', status: 'Active' },
+      { title: 'Tech Chronic Care', description: 'Deploying tech-enabled chronic disease management (remote monitoring).', status: 'Active' },
+      { title: 'Eat for Health', description: 'Post-harvest infrastructure and mobile markets for healthy food access.', status: 'Active' }
+    ]
+  },
+  'virginia': {
+    id: 'virginia',
+    stateName: 'Virginia',
+    awardAmount: '$190M',
+    strategicFocus: 'Food as Medicine & Maternal Care',
+    metrics: [
+      { label: 'Chronic Disease', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'Primary Access', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'SUD Rates', value: 'Dec', trend: 'down', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Food as Medicine', description: 'Infrastructure for food pharmacy programs and medically tailored meals.', status: 'Active' },
+      { title: 'Innovative Maternal', description: 'Expanding rural prenatal services through hubs and mobile units.', status: 'Active' },
+      { title: 'CareIQ', description: 'Invest in health tech startups and modernize EHRs.', status: 'Active' }
+    ]
+  },
+  'west_virginia': {
+    id: 'west_virginia',
+    stateName: 'West Virginia',
+    awardAmount: '$199M',
+    strategicFocus: 'Workforce & Mobility',
+    metrics: [
+      { label: 'Workforce Partic.', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Health Outcomes', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'Provider Cap', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Rural Health Link', description: 'Health mobility platform to dispatch non-emergency medical transportation.', status: 'Active' },
+      { title: 'Mountain State Care', description: 'Attract talent and train/retain rural clinicians via incentives.', status: 'Active' },
+      { title: 'Connected Care Grid', description: 'Integrating telehealth, remote monitoring, and local care coordination.', status: 'Active' }
     ]
   },
 
   // --- SOUTH ---
- // 2. TEXAS
-  texas: {
-    id: "texas",
-    stateName: "Texas",
-    awardAmount: "$281,000,000",
-    strategicFocus: "AI Specialty Networks & Wellness",
-    description: "Texas proposes a massive technological overhaul to address the severe fragmentation of specialty care in its vast rural regions. The state is leveraging its RHT award to build a unified 'Lone Star' digital backbone while simultaneously investing in physical 'Wellness Centers' to address upstream social determinants of health.",
-    initiatives: [
-      {
-        title: "Lone Star Advanced AI Network",
-        description: "Connecting fragmented specialty telehealth services into a unified statewide AI-driven network. This allows rural primary care providers to instantly consult with urban specialists, reducing unnecessary transfers."
-      },
-      {
-        title: "Community Wellness Centers",
-        description: "Converting underutilized rural spaces into 'Wellness Centers' that offer preventative screenings, nutrition classes, and physical fitness programs to address chronic disease roots."
-      },
-      {
-        title: "Unified Care Cyber Infrastructure",
-        description: "Deploying a statewide cybersecurity shield for rural hospitals to protect patient data and ensure continuity of operations during cyberattacks."
-      },
-      {
-        title: "Next Gen Doctor Pipeline",
-        description: "Aggressive workforce expansion focused on retaining medical students in rural areas through residency stipends and housing support."
-      }
-    ],
+  'alabama': {
+    id: 'alabama',
+    stateName: 'Alabama',
+    awardAmount: '$203M',
+    strategicFocus: 'Maternal Health & Cancer Digital',
     metrics: [
-      { label: "AI Consult Volume", status: "Pending", target: "10,000/yr" },
-      { label: "Wellness Centers Opened", status: "Pending", target: "12 Sites" },
-      { label: "Cybersecurity Compliance", status: "In Progress", target: "100% Rural Hospitals" }
+      { label: 'Hubs Est.', value: '5', trend: 'up', status: 'On Track' },
+      { label: 'Screenings', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'ER Diversions', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Maternal Initiative', description: 'Digital maternity care using telerobotic ultrasound and delivery carts.', status: 'Active' },
+      { title: 'Cancer Digital', description: 'Local referral hubs and mobile units for cancer prevention/detection.', status: 'Active' },
+      { title: 'Collaborative EHR', description: 'Regional IT hubs supporting EHR integration and cybersecurity.', status: 'Active' }
     ]
   },
-
-
-  florida: {
-    id: "florida",
-    stateName: "Florida",
-    awardAmount: "$210,000,000",
-    strategicFocus: "Regional Collaboratives & Paramedicine",
-    description: "Using Community Paramedicine for post-discharge care and formalizing Regional Collaboratives for shared infrastructure.",
-    initiatives: [
-      { title: "Community Paramedicine", description: "Paramedics providing on-site support for minor illnesses and post-discharge." },
-      { title: "Regional Collaboratives", description: "Formal sharing of planning and infrastructure among local providers." }
-    ],
+  'arkansas': {
+    id: 'arkansas',
+    stateName: 'Arkansas',
+    awardAmount: '$209M',
+    strategicFocus: 'Hospital Stabilization & Heart Health',
     metrics: [
-      { label: "Readmissions", status: "Pending", target: "-15%" },
-      { label: "Collaboratives Formed", status: "In Progress", target: "5 Regions" }
+      { label: 'Wellness Eng.', value: '12.5k', trend: 'up', status: 'On Track' },
+      { label: 'EMS Response', value: '-15%', trend: 'down', status: 'On Track' },
+      { label: 'Clinicians Recr.', value: '100', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'SAFE Initiative', description: 'System Acquisition & Facility Enhancement Fund to stabilize vulnerable facilities.', status: 'Active' },
+      { title: 'HEART Initiative', description: 'Six-pronged effort to reduce chronic disease (heart disease focus).', status: 'Active' },
+      { title: 'THRIVE', description: 'Telehealth and remote monitoring for chronic diseases.', status: 'Active' }
     ]
   },
-  georgia: {
-    id: "georgia",
-    stateName: "Georgia",
-    awardAmount: "$219,000,000",
-    strategicFocus: "Obstetric Access & AHEAD Model",
-    description: "Preparing rural hospitals for the CMS AHEAD global budget model and deploying Obstetric Carts to emergency departments.",
-    initiatives: [
-      { title: "Obstetric Carts", description: "Deploying carts with hemorrhage/neonatal supplies to rural EDs." },
-      { title: "AHEAD Model Readiness", description: "Preparing hospitals to adopt the CMS AHEAD global budget model." }
-    ],
+  'florida': {
+    id: 'florida',
+    stateName: 'Florida',
+    awardAmount: '$210M',
+    strategicFocus: 'Regional Collaboratives & Paramedicine',
     metrics: [
-      { label: "AHEAD Participation", status: "Pending", target: "10 Hospitals" },
-      { label: "OB Cart Deployment", status: "In Progress", target: "40 EDs" }
+      { label: 'Access', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'Workforce', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Outcomes', value: 'Tracking', trend: 'neutral', status: 'Pending' }
+    ],
+    initiatives: [
+      { title: 'Regional Collaboratives', description: 'Shared planning to improve efficiency and leverage urban specialty resources.', status: 'Active' },
+      { title: 'Community Paramedicine', description: 'Paramedics providing on-site minor illness support and post-discharge care.', status: 'Active' },
+      { title: 'Remote Monitoring', description: 'BP, glucose, and weight tracking integrated with mobile health units.', status: 'Active' }
     ]
   },
-  north_carolina: {
-    id: "north_carolina",
-    stateName: "North Carolina",
-    awardAmount: "$213,000,000",
-    strategicFocus: "ROOTS Hubs & SUD",
-    description: "Establishing 6 'ROOTS' regional hubs and deploying mobile opioid treatment units.",
-    initiatives: [
-      { title: "ROOTS Hubs", description: "6 regional hubs for medical/social/behavioral integration." },
-      { title: "Mobile Opioid Treatment", description: "Mobile units for SUD treatment in rural counties." }
-    ],
+  'georgia': {
+    id: 'georgia',
+    stateName: 'Georgia',
+    awardAmount: '$219M',
+    strategicFocus: 'Maternal Care & AHEAD Adoption',
     metrics: [
-      { label: "ROOTS Hubs", status: "Pending", target: "6 Operational" },
-      { label: "SUD Treatment Access", status: "In Progress", target: "+25%" }
+      { label: 'Nursing Faculty', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Robotic Proc.', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'ED Utilization', value: 'Dec', trend: 'down', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Obstetric Carts', description: 'Deploying OB carts to rural EDs without labor & delivery units.', status: 'Active' },
+      { title: 'AHEAD Adoption', description: 'Preparing hospitals for the AHEAD global budget model.', status: 'Planned' },
+      { title: 'GREAT Health', description: 'Comprehensive program for rural enhancement and transformation.', status: 'Active' }
     ]
   },
-  virginia: {
-    id: "virginia",
-    stateName: "Virginia",
-    awardAmount: "$190,000,000",
-    strategicFocus: "CareIQ & Food Prescriptions",
-    description: "Investing in health tech startups via 'CareIQ' and scaling 'Food as Medicine' produce prescriptions.",
-    initiatives: [
-      { title: "CareIQ", description: "Investing in health tech startups and modernizing EHRs." },
-      { title: "Food as Medicine", description: "Produce prescriptions for food-insecure patients." }
-    ],
+  'kentucky': {
+    id: 'kentucky',
+    stateName: 'Kentucky',
+    awardAmount: '$213M',
+    strategicFocus: 'Chronic Disease Hubs & Maternal Teams',
     metrics: [
-      { label: "Tech Startups Funded", status: "Pending", target: "10 Startups" },
-      { label: "A1C Improvement", status: "Pending", target: "-1.5 pts" }
+      { label: 'Chronic Disease', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'Perinatal Access', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'Crisis Care', value: 'Exp', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Chronic Care Hubs', description: 'Coordinated system for interventions across chronic disease continuum (diabetes focus).', status: 'Active' },
+      { title: 'PoWERing Maternal', description: 'Community-based teams for pregnancy and post-partum support.', status: 'Active' },
+      { title: 'Rooted in Health', description: 'Rural dental access program with mobile services.', status: 'Active' }
     ]
   },
-  alabama: {
-    id: "alabama",
-    stateName: "Alabama",
-    awardAmount: "$203,000,000",
-    strategicFocus: "Maternal & Cancer Digital Regionalization",
-    description: "Deploying telerobotic ultrasound for high-risk pregnancy and establishing cancer prevention hubs.",
-    initiatives: [
-      { title: "Telerobotic Ultrasound", description: "Remote-controlled ultrasound units for high-risk pregnancy monitoring." },
-      { title: "Cancer Digital Hubs", description: "Establishing 5 IT/telehealth hubs for cancer prevention." }
-    ],
+  'louisiana': {
+    id: 'louisiana',
+    stateName: 'Louisiana',
+    awardAmount: '$208M',
+    strategicFocus: 'Workforce & Technology Capacity',
     metrics: [
-      { label: "Telerobotic Sites", status: "Pending", target: "15 Sites" },
-      { label: "Cancer Screening", status: "In Progress", target: "+20%" }
+      { label: 'BH Care 30d', value: '+15%', trend: 'up', status: 'On Track' },
+      { label: 'Travel Distance', value: '-15%', trend: 'down', status: 'On Track' },
+      { label: 'EMS Response', value: '-10%', trend: 'down', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Clinician Credit Bank', description: 'Targeted tax-credit incentives for high-need parishes.', status: 'Active' },
+      { title: 'Tech Capacity Fund', description: 'Smartphones with health apps and shared IT Help Desk for rural sites.', status: 'Active' },
+      { title: 'CRIS Initiative', description: 'Coordinated Regional Integrated Systems for EMS and behavioral health.', status: 'Active' }
     ]
   },
-  mississippi: {
-    id: "mississippi",
-    stateName: "Mississippi",
-    awardAmount: "$206,000,000",
-    strategicFocus: "CRIS & Regional Integration",
-    description: "Creating 'Rural Healthcare Districts' (CRIS) and piloting EMS Treat-in-Place protocols.",
-    initiatives: [
-      { title: "CRIS Initiative", description: "Coordinated Regional Integrated Systems creating Healthcare Districts." },
-      { title: "EMS Treat-in-Place", description: "Pilot program for on-site EMS care without transport." }
-    ],
+  'mississippi': {
+    id: 'mississippi',
+    stateName: 'Mississippi',
+    awardAmount: '$206M',
+    strategicFocus: 'Coordinated Regional Systems',
     metrics: [
-      { label: "Districts Formed", status: "Pending", target: "3 Districts" },
-      { label: "EMS Diversion", status: "In Progress", target: "15%" }
+      { label: 'Transport', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'Retention', value: 'High', trend: 'up', status: 'On Track' },
+      { label: 'Telehealth', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'CRIS Initiative', description: 'Creating regional Rural Healthcare Districts to avoid fragmentation.', status: 'Active' },
+      { title: 'EMS Treat-in-Place', description: 'Pilot program allowing EMS to treat patients on-site without transport.', status: 'Active' },
+      { title: 'AI Decision Support', description: 'Algorithmic support tools for rural clinicians.', status: 'Active' }
     ]
   },
-  louisiana: {
-    id: "louisiana",
-    stateName: "Louisiana",
-    awardAmount: "$208,000,000",
-    strategicFocus: "Digital Equity & Smartphones",
-    description: "Providing subsidized smartphones with health apps to rural residents and offering tax credits to clinicians.",
-    initiatives: [
-      { title: "Rural Tech Fund", description: "Providing subsidized smartphones with health apps/data to residents." },
-      { title: "Clinician Credit Bank", description: "Tax-credit incentives for high-need parishes." }
-    ],
+  'north_carolina': {
+    id: 'north_carolina',
+    stateName: 'North Carolina',
+    awardAmount: '$213M',
+    strategicFocus: 'Community Care Hubs',
     metrics: [
-      { label: "App Activation", status: "In Progress", target: "50,000 Users" },
-      { label: "Clinician Vacancy", status: "Pending", target: "-10%" }
+      { label: 'ROOTS Hubs', value: 'Active', trend: 'up', status: 'On Track' },
+      { label: 'SUD Treatment', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'VBP Readiness', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'ROOTS Hubs', description: '6 regional hubs tailored to local needs to coordinate care.', status: 'Active' },
+      { title: 'Mobile SUD', description: 'Mobile units delivering medication-assisted treatment.', status: 'Active' },
+      { title: 'CCBHC Expansion', description: 'Standardizing and expanding Certified Community Behavioral Health Clinics.', status: 'Active' }
     ]
   },
-  tennessee: {
-    id: "tennessee",
-    stateName: "Tennessee",
-    awardAmount: "$207,000,000",
-    strategicFocus: "Memory Care & NEMT",
-    description: "Hub-and-spoke model for dementia care and a tech-enabled non-emergency transport system.",
-    initiatives: [
-      { title: "Memory Care Network", description: "Hub-and-spoke model for dementia diagnosis/treatment." },
-      { title: "Rural NEMT System", description: "Tech-enabled non-emergency transportation coordination." }
-    ],
+  'oklahoma': {
+    id: 'oklahoma',
+    stateName: 'Oklahoma',
+    awardAmount: '$223M',
+    strategicFocus: 'Upstream Prevention & Wellness',
     metrics: [
-      { label: "Dementia Screening", status: "Pending", target: "+30%" },
-      { label: "Transport Volume", status: "In Progress", target: "10,000 Rides" }
+      { label: 'Hosp. Visits', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'Outcomes', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'Access', value: 'Imp', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Moving Upstream', description: 'Community-driven prevention programs using consumer-facing tech.', status: 'Active' },
+      { title: 'Wellness Hubs', description: 'Competitive microgrants for local health departments to address unmet wellness demand.', status: 'Active' },
+      { title: 'Native Compacts', description: 'New agreements for state-tribal care coordination.', status: 'Active' }
     ]
   },
-  kentucky: {
-    id: "kentucky",
-    stateName: "Kentucky",
-    awardAmount: "$213,000,000",
-    strategicFocus: "Maternal Teams & Diabetes Hubs",
-    description: "Community-based maternal teams for 1-year postpartum support and Diabetes Hubs.",
-    initiatives: [
-      { title: "PoWERing Maternal Health", description: "Community teams supporting women through 1 year post-partum." },
-      { title: "Rural Community Hubs", description: "Interventions focused on the diabetes continuum." }
-    ],
+  'south_carolina': {
+    id: 'south_carolina',
+    stateName: 'South Carolina',
+    awardAmount: '$200M',
+    strategicFocus: 'Digital Literacy & Tech Catalyst',
     metrics: [
-      { label: "Postpartum Visits", status: "Pending", target: "80% Attendance" },
-      { label: "A1C Control", status: "In Progress", target: "Improved" }
+      { label: 'Chronic Mgmt', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'Capacity', value: 'Enh', trend: 'up', status: 'On Track' },
+      { label: 'Innovation', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Connections to Care', description: 'Improving digital health literacy to increase telehealth adoption.', status: 'Active' },
+      { title: 'Tech Catalyst Fund', description: 'Investment in rural health startups and community innovations.', status: 'Active' },
+      { title: 'Wellness Within Reach', description: 'Deploys mobile health units and crisis response teams.', status: 'Active' }
     ]
   },
-  south_carolina: {
-    id: "south_carolina",
-    stateName: "South Carolina",
-    awardAmount: "$200,000,000",
-    strategicFocus: "Digital Literacy & Startups",
-    description: "Investing in rural health tech startups and a statewide digital literacy campaign.",
-    initiatives: [
-      { title: "Connections to Care", description: "Digital health literacy improvement." },
-      { title: "Tech Catalyst Fund", description: "Investment in rural health technology startups." }
-    ],
+  'tennessee': {
+    id: 'tennessee',
+    stateName: 'Tennessee',
+    awardAmount: '$207M',
+    strategicFocus: 'Dementia Care & NEMT',
     metrics: [
-      { label: "Digital Literacy", status: "In Progress", target: "10,000 Certified" },
-      { label: "Startups Funded", status: "Pending", target: "5 Companies" }
+      { label: 'Maternity Desert', value: '0', trend: 'down', status: 'On Track' },
+      { label: 'Preventative', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'Workforce', value: 'Exp', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Memory Care Network', description: 'Hub-and-spoke model connecting rural Memory Assessment Centers to urban Neuropsychiatry.', status: 'Active' },
+      { title: 'Rural NEMT', description: 'Tech-enabled transportation coordination for non-emergency medical travel.', status: 'Active' },
+      { title: 'Maternal Health', description: 'Investments to eliminate maternity care deserts statewide.', status: 'Active' }
     ]
   },
-  arkansas: {
-    id: "arkansas",
-    stateName: "Arkansas",
-    awardAmount: "$209,000,000",
-    strategicFocus: "System Stabilization & Heart Health",
-    description: "Shared service agreements to stabilize vulnerable hospitals (SAFE) and a 6-pronged heart health initiative.",
-    initiatives: [
-      { title: "SAFE Initiative", description: "Shared service agreements to stabilize financially vulnerable hospitals." },
-      { title: "HEART Initiative", description: "Focus on local food access and recreation infrastructure." }
-    ],
+  'texas': {
+    id: 'texas',
+    stateName: 'Texas',
+    awardAmount: '$281M',
+    strategicFocus: 'Technology, Workforce & AI',
     metrics: [
-      { label: "Hospital Solvency", status: "Pending", target: "Stabilized" },
-      { label: "HEART Participation", status: "In Progress", target: "High" }
+      { label: 'Dietician Ratio', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'RPM Adoption', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Fax Auto', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Lone Star AI', description: 'Connecting fragmented specialty telehealth into a statewide network.', status: 'Active' },
+      { title: 'Wellness Centers', description: 'Local hubs for chronic disease screening, fitness, and nutrition.', status: 'Active' },
+      { title: 'After-Hours Clinics', description: 'New primary care access points to reduce non-emergent ED use.', status: 'Active' }
     ]
   },
 
   // --- MIDWEST ---
-  ohio: {
-    id: "ohio",
-    stateName: "Ohio",
-    awardAmount: "$202,000,000",
-    strategicFocus: "School Clinics & Mobile Vision",
-    description: "Expanding School-Based Health Centers and 'OH SEE' mobile vision clinics.",
-    initiatives: [
-      { title: "School-Based Health", description: "Clinics on K-12 and college campuses." },
-      { title: "OH SEE", description: "Statewide expansion of mobile vision/hearing/dental clinics." }
-    ],
+  'illinois': {
+    id: 'illinois',
+    stateName: 'Illinois',
+    awardAmount: '$193M',
+    strategicFocus: 'Community Infrastructure & EMS',
     metrics: [
-      { label: "School Clinics", status: "Pending", target: "20 New Sites" },
-      { label: "Children Screened", status: "In Progress", target: "50,000" }
+      { label: 'Access', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'Financial', value: 'Stable', trend: 'neutral', status: 'On Track' },
+      { label: 'Provider Ratio', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Community Care', description: 'Funding for staffing/workflows to integrate primary and behavioral health.', status: 'Active' },
+      { title: 'EMS Treat-Not-Transport', description: 'Medicaid payment for on-site EMS care to reduce hospitalizations.', status: 'Planned' },
+      { title: 'Workforce Expansion', description: 'Training for CHWs, doulas, and lactation consultants.', status: 'Active' }
     ]
   },
-  michigan: {
-    id: "michigan",
-    stateName: "Michigan",
-    awardAmount: "$173,000,000",
-    strategicFocus: "Aging in Place & Pipelines",
-    description: "High School to Health Care workforce pipelines and an 'Aging in Place' blueprint for the Upper Peninsula.",
-    initiatives: [
-      { title: "Workforce Pipeline", description: "Funding to transition high school students into local health professions." },
-      { title: "Healthy Aging Blueprint", description: "Community-based care focus for the Upper Peninsula." }
-    ],
+  'indiana': {
+    id: 'indiana',
+    stateName: 'Indiana',
+    awardAmount: '$207M',
+    strategicFocus: 'Care Coordination & Meds',
     metrics: [
-      { label: "Student Pipeline", status: "In Progress", target: "500 Students" },
-      { label: "Nursing Home Avoidance", status: "Pending", target: "Increased" }
+      { label: 'Chronic Disease', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'Access', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Interop', value: 'Imp', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Med Ops Center', description: 'Medical Operations Coordination Center for patient transfer/diversion.', status: 'Active' },
+      { title: 'Post-Discharge Meds', description: 'Providing patients medications prior to leaving hospital at outpatient prices.', status: 'Active' },
+      { title: 'GROW Initiative', description: 'Landmark transformation program expanding Make Indiana Healthy Again.', status: 'Active' }
     ]
   },
-  indiana: {
-    id: "indiana",
-    stateName: "Indiana",
-    awardAmount: "$207,000,000",
-    strategicFocus: "Coordination Center & ED Readiness",
-    description: "Centralized Medical Operations Coordination Center and meds at outpatient prices post-discharge.",
-    initiatives: [
-      { title: "Coordination Center", description: "Centralized transfer coordination and diversion management." },
-      { title: "Post-Discharge Meds", description: "Providing meds to patients before they leave hospital at outpatient prices." }
-    ],
+  'iowa': {
+    id: 'iowa',
+    stateName: 'Iowa',
+    awardAmount: '$209M',
+    strategicFocus: 'Skin Cancer & Digital Literacy',
     metrics: [
-      { label: "Transfer Time", status: "Pending", target: "-30 Minutes" },
-      { label: "Med Adherence", status: "In Progress", target: "+15%" }
+      { label: 'ED Visits', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'Local Care', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Telehealth', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Dermatoscopes', description: 'Distributing equipment to rural providers for early skin cancer detection.', status: 'Active' },
+      { title: 'Connections to Care', description: 'Improving digital health literacy to increase telehealth adoption.', status: 'Active' },
+      { title: 'Hometown Connections', description: 'Building formal partnerships to restructure healthcare delivery.', status: 'Active' }
     ]
   },
-  illinois: {
-    id: "illinois",
-    stateName: "Illinois",
-    awardAmount: "$193,000,000",
-    strategicFocus: "EMS Transformation & Infrastructure",
-    description: "'Treat-Not-Transport' payment models for EMS and community care infrastructure.",
-    initiatives: [
-      { title: "Treat-Not-Transport", description: "Expanding payment models to allow EMS to treat patients on-site." },
-      { title: "Community Infrastructure", description: "Funding for staffing/workflows to integrate primary/behavioral health." }
-    ],
+  'kansas': {
+    id: 'kansas',
+    stateName: 'Kansas',
+    awardAmount: '$222M',
+    strategicFocus: 'PACE & Value-Based Care',
     metrics: [
-      { label: "Treat-on-Site", status: "Pending", target: "10% of Calls" },
-      { label: "BH Integration", status: "In Progress", target: "Expanded" }
+      { label: 'Chronic Disease', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'Hospital Margin', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'VBC Partic.', value: '100%', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'PACE Expansion', description: 'Expanding PACE programs in regions with high eligible beneficiaries.', status: 'Active' },
+      { title: 'Accountable FIM', description: 'Food is Medicine and CHW Development program.', status: 'Active' },
+      { title: 'Shadow VBC', description: 'Program for providers not in MSSP/ACO REACH to transition to VBC.', status: 'Active' }
     ]
   },
-  wisconsin: {
-    id: "wisconsin",
-    stateName: "Wisconsin",
-    awardAmount: "$204,000,000",
-    strategicFocus: "Farmer Wellness & Dental",
-    description: "24-hour Farmer Wellness Helpline and equipment grants for rural dental clinics.",
-    initiatives: [
-      { title: "Farmer Wellness", description: "Helpline, counseling vouchers, and support groups for farmers." },
-      { title: "Dental Grants", description: "Equipment upgrades for rural dental clinics." }
-    ],
+  'michigan': {
+    id: 'michigan',
+    stateName: 'Michigan',
+    awardAmount: '$173M',
+    strategicFocus: 'Aging & Youth Pipeline',
     metrics: [
-      { label: "Helpline Volume", status: "In Progress", target: "Active" },
-      { label: "Dental Procedures", status: "Pending", target: "+10%" }
+      { label: 'EHR Use', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'ED Util', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'Workforce', value: 'Stab', trend: 'neutral', status: 'Pending' }
+    ],
+    initiatives: [
+      { title: 'HS Pipeline', description: 'Transitioning high school students to health professions in home communities.', status: 'Active' },
+      { title: 'Healthy Aging', description: 'Expanding community-based care for older adults in the Upper Peninsula.', status: 'Active' },
+      { title: 'Interoperability', description: 'Modernizing health information exchange for rural providers.', status: 'Active' }
     ]
   },
-  minnesota: {
-    id: "minnesota",
-    stateName: "Minnesota",
-    awardAmount: "$193,000,000",
-    strategicFocus: "Mental Health Urgent Care & Cardio",
-    description: "Establishing Mental Health Urgent Care centers and regional cardiometabolic collaboratives.",
-    initiatives: [
-      { title: "Mental Health Urgent Care", description: "Centers for crisis intervention to divert from EDs." },
-      { title: "Regional Care Models", description: "Collaboratives to improve cardiometabolic health outcomes." }
-    ],
+  'minnesota': {
+    id: 'minnesota',
+    stateName: 'Minnesota',
+    awardAmount: '$193M',
+    strategicFocus: 'Cardiometabolic & Mental Health',
     metrics: [
-      { label: "ED Psych Diversion", status: "Pending", target: "High" },
-      { label: "Cardio Outcomes", status: "In Progress", target: "Improved" }
+      { label: 'Avoidable Hosp', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'VBC Capacity', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'Tech Use', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Recruit Talent', description: 'Exposing rural HS students to careers and reducing provider burnout.', status: 'Active' },
+      { title: 'Regional Care', description: 'Mental health urgent care centers and tele-specialty connections.', status: 'Active' },
+      { title: 'Cardiometabolic', description: 'Improving outcomes for heart disease, diabetes, and kidney disease.', status: 'Active' }
     ]
   },
-  iowa: {
-    id: "iowa",
-    stateName: "Iowa",
-    awardAmount: "$209,000,000",
-    strategicFocus: "Skin Cancer & Digital Literacy",
-    description: "Distributing dermatoscopes for melanoma detection and improving digital health literacy.",
-    initiatives: [
-      { title: "Dermatoscopes", description: "Equipping rural providers to detect melanoma." },
-      { title: "Connections to Care", description: "Improving digital health literacy to boost telehealth usage." }
-    ],
+  'missouri': {
+    id: 'missouri',
+    stateName: 'Missouri',
+    awardAmount: '$216M',
+    strategicFocus: 'Hub-and-Spoke & APM',
     metrics: [
-      { label: "Melanoma Screening", status: "In Progress", target: "Expanded" },
-      { label: "Telehealth Usage", status: "Pending", target: "+20%" }
+      { label: 'Primary Visits', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'ED Visits', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'Workforce', value: 'High', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'ToRCH Care', description: 'Hub-and-spoke model with 7 regional networks and 30 local hubs.', status: 'Active' },
+      { title: 'APM Design', description: 'Alternative payment model incentivizing reductions in ED visits/admissions.', status: 'Planned' },
+      { title: 'Digital Backbone', description: 'Rural Health Data Collaborative for interoperability.', status: 'Active' }
     ]
   },
-  missouri: {
-    id: "missouri",
-    stateName: "Missouri",
-    awardAmount: "$216,000,000",
-    strategicFocus: "ToRCH Care & Value-Based Payment",
-    description: "Hub-and-spoke 'ToRCH' networks and an APM incentivizing reduced ED visits.",
-    initiatives: [
-      { title: "ToRCH Care", description: "Transformation of Rural Community Health hub-and-spoke model." },
-      { title: "ED Reduction APM", description: "Alternative Payment Model incentivizing reduced ED utilization." }
-    ],
+  'nebraska': {
+    id: 'nebraska',
+    stateName: 'Nebraska',
+    awardAmount: '$219M',
+    strategicFocus: 'Food as Medicine & Workforce',
     metrics: [
-      { label: "Network Participation", status: "Pending", target: "High" },
-      { label: "ED Reduction", status: "In Progress", target: "-10%" }
+      { label: 'Process', value: 'Focus', trend: 'neutral', status: 'On Track' },
+      { label: 'Enrollment', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Obesity', value: 'Dec', trend: 'down', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'School Food Lab', description: 'School-farm interconnectivity and partnerships.', status: 'Active' },
+      { title: 'SNAP E&T', description: 'Using SNAP E&T to assist eligible individuals in finding healthcare jobs.', status: 'Active' },
+      { title: 'VR/AR Training', description: 'VR/AR-based training for rural providers and remote patient monitoring.', status: 'Active' }
     ]
   },
-  kansas: {
-    id: "kansas",
-    stateName: "Kansas",
-    awardAmount: "$222,000,000",
-    strategicFocus: "PACE Expansion & Back-Office Support",
-    description: "Expanding PACE for the elderly and providing centralized back-office services for clinics.",
-    initiatives: [
-      { title: "PACE Expansion", description: "Expanding 'Program of All-Inclusive Care for the Elderly' to rural regions." },
-      { title: "Centralized Back-Office", description: "State-level service for credentialing and contract negotiation." }
-    ],
+  'north_dakota': {
+    id: 'north_dakota',
+    stateName: 'North Dakota',
+    awardAmount: '$199M',
+    strategicFocus: 'Consumer Tech & Workforce',
     metrics: [
-      { label: "PACE Enrollment", status: "Pending", target: "Growth" },
-      { label: "Admin Cost", status: "In Progress", target: "Reduced" }
+      { label: 'Train-in-Place', value: '5', trend: 'up', status: 'On Track' },
+      { label: 'Wellness', value: '40', trend: 'up', status: 'On Track' },
+      { label: 'Protocol Comp', value: '90%', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Consumer Tech', description: 'Automated pharmacy kiosks, self-collected lab specimens, and drone delivery.', status: 'Active' },
+      { title: 'Scrubs Camp', description: 'Immersion experiences for grades 5-12 to build workforce pipeline.', status: 'Active' },
+      { title: 'Tribal Residency', description: 'Expansion of residency slots and creation of Tribal residency opportunities.', status: 'Active' }
     ]
   },
-  nebraska: {
-    id: "nebraska",
-    stateName: "Nebraska",
-    awardAmount: "$219,000,000",
-    strategicFocus: "School Food & VR Training",
-    description: "'School Food Learning Labs' connecting farms to schools, and VR/AR training for providers.",
-    initiatives: [
-      { title: "School Food Lab", description: "Connecting schools with farms for 'Food as Medicine'." },
-      { title: "VR/AR Training", description: "Using virtual reality to train rural providers." }
-    ],
+  'ohio': {
+    id: 'ohio',
+    stateName: 'Ohio',
+    awardAmount: '$202M',
+    strategicFocus: 'Innovation Hubs & Mobile',
     metrics: [
-      { label: "Student Obesity", status: "Pending", target: "Reduced" },
-      { label: "VR Training Hours", status: "In Progress", target: "1,000" }
+      { label: 'Cost of Care', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'A1C', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'Hypertension', value: 'Mgd', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Innovation Hubs', description: 'Integrated networks of hospitals, clinics, pharmacies to improve access.', status: 'Active' },
+      { title: 'School-Based', description: 'Clinics in K-12/colleges for primary, dental, and behavioral care.', status: 'Active' },
+      { title: 'OH SEE', description: 'Mobile vision, dental, and hearing care network.', status: 'Active' }
     ]
   },
-  north_dakota: {
-    id: "north_dakota",
-    stateName: "North Dakota",
-    awardAmount: "$199,000,000",
-    strategicFocus: "Drones & Kiosks",
-    description: "Automated pharmacy kiosks and drone delivery for supplies/labs in frontier areas.",
-    initiatives: [
-      { title: "Pharmacy Kiosks", description: "Self-service medication access points." },
-      { title: "Drone Delivery", description: "Rapid delivery of supplies and lab samples." }
-    ],
+  'south_dakota': {
+    id: 'south_dakota',
+    stateName: 'South Dakota',
+    awardAmount: '$189M',
+    strategicFocus: 'Provider Capacity & Maternal Hubs',
     metrics: [
-      { label: "Kiosk Transactions", status: "Pending", target: "Active" },
-      { label: "Drone Flights", status: "In Progress", target: "Successful" }
+      { label: 'Tech Connect', value: 'High', trend: 'up', status: 'On Track' },
+      { label: 'Workforce', value: 'Adv', trend: 'up', status: 'On Track' },
+      { label: 'Sustainability', value: 'Trans', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Maternal Hubs', description: 'Regional hubs for maternal/infant care coordination and social support.', status: 'Active' },
+      { title: 'Primary Accountable', description: 'Alternative payment model with flexible capitated payments.', status: 'Active' },
+      { title: 'Direct Investment', description: 'Prioritizing direct investment in provider capacity over new programs.', status: 'Active' }
     ]
   },
-  south_dakota: {
-    id: "south_dakota",
-    stateName: "South Dakota",
-    awardAmount: "$189,000,000",
-    strategicFocus: "Maternal Hubs & Medicaid APM",
-    description: "Regional Maternal/Infant Hubs and a capitated Medicaid Primary Care model.",
-    initiatives: [
-      { title: "Maternal Hubs", description: "Clinical care plus social support network." },
-      { title: "Medicaid Transformation", description: "Flexible, capitated payments for rural primary care." }
-    ],
+  'wisconsin': {
+    id: 'wisconsin',
+    stateName: 'Wisconsin',
+    awardAmount: '$204M',
+    strategicFocus: 'Farmer Wellness & Interoperability',
     metrics: [
-      { label: "Maternal Outcomes", status: "Pending", target: "Improved" },
-      { label: "Capitation Adoption", status: "In Progress", target: "30 Practices" }
+      { label: 'Chronic Disease', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'Behavioral ID', value: 'Early', trend: 'up', status: 'On Track' },
+      { label: 'Efficiency', value: 'Enh', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Dental Grants', description: 'Funds for efficient cleaning tech and routine dental services.', status: 'Active' },
+      { title: 'Farmer Wellness', description: '24-hour helpline, counseling vouchers, and support groups for farmers.', status: 'Active' },
+      { title: 'Partnerships', description: 'Competitive grants for coordinated systems of care.', status: 'Active' }
     ]
   },
 
   // --- WEST ---
-  // 3. CALIFORNIA
-  california: {
-    id: "california",
-    stateName: "California",
-    awardAmount: "$234,000,000",
-    strategicFocus: "Hub-and-Spoke Resilience",
-    description: "California's RHT plan focuses on formalizing regional networks to ensure rural hospital survival amidst climate risks and payer consolidation. The state is establishing a 'Hub and Spoke' model where financially stronger rural hospitals support smaller clinics and Tribal health programs.",
-    initiatives: [
-      {
-        title: "Transformative Care Model",
-        description: "Formalizing 'Hub and Spoke' networks where rural hospitals serve as hubs for FQHCs and Tribal health programs, sharing administrative burdens and clinical resources."
-      },
-      {
-        title: "Statewide Workforce Mapping",
-        description: "Development and deployment of a live GIS tool to track workforce gaps in real-time and direct 'Train-the-Trainer' resources to the counties with the highest vacancy rates."
-      },
-      {
-        title: "Infrastructure Hardening",
-        description: "Modernizing connectivity and facility resilience against climate and wildfire risks, ensuring rural hospitals remain operational during natural disasters."
-      }
-    ],
+  'alaska': {
+    id: 'alaska',
+    stateName: 'Alaska',
+    awardAmount: '$272M',
+    strategicFocus: 'Pharmacy & Maternal Tech',
     metrics: [
-      { label: "Spokes Integrated", status: "Pending", target: "25 FQHCs" },
-      { label: "Workforce Map Users", status: "In Progress", target: "58 Counties" },
-      { label: "Climate Retrofits", status: "Pending", target: "15 Facilities" }
+      { label: 'Mortality Gap', value: 'Close 50%', trend: 'down', status: 'On Track' },
+      { label: 'Fresh Start', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'APM Partic.', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Pharmacy Capacity', description: 'Drone delivery, remote dispensing, and portable diagnosis tools.', status: 'Active' },
+      { title: 'Maternal Infra', description: 'Remote fetal monitoring and coordinated case management.', status: 'Active' },
+      { title: 'Healthy Beginnings', description: 'Strengthening maternal and child health foundations.', status: 'Active' }
     ]
   },
-
-  washington: {
-    id: "washington",
-    stateName: "Washington",
-    awardAmount: "$181,000,000",
-    strategicFocus: "Hospital Solvency & Native Families",
-    description: "Value-based models for hospital solvency and dedicated funding for Tribal health.",
-    initiatives: [
-      { title: "Ignite Innovation", description: "Value-based models to support hospital financial health." },
-      { title: "Invest in Native Families", description: "Dedicated funding for Tribal workforce and coordination." }
-    ],
+  'arizona': {
+    id: 'arizona',
+    stateName: 'Arizona',
+    awardAmount: '$167M',
+    strategicFocus: 'Clinical Rotations & Mobile',
     metrics: [
-      { label: "Hospital Margins", status: "Pending", target: "Neutral/Positive" },
-      { label: "Tribal Providers", status: "In Progress", target: "Trained" }
+      { label: 'Recruitment', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Telehealth', value: 'Exp', trend: 'up', status: 'On Track' },
+      { label: 'Preventive', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Clinical Rotations', description: 'New residency slots and educational incentives for rural service.', status: 'Active' },
+      { title: 'Mobile Clinics', description: 'Deploying mobile/satellite clinics to close access gaps.', status: 'Active' },
+      { title: 'Digital Mod.', description: 'Investing in electronic billing capabilities and telehealth equipment.', status: 'Active' }
     ]
   },
-  oregon: {
-    id: "oregon",
-    stateName: "Oregon",
-    awardAmount: "$197,000,000",
-    strategicFocus: "Provider Exchange & Pharmacy Lockers",
-    description: "Rural-Urban provider exchange program and secure pharmacy pickup lockers.",
-    initiatives: [
-      { title: "Provider Exchange", description: "Rural providers training in urban centers, and vice-versa." },
-      { title: "Pharmacy Lockers", description: "Secure pickup lockers to expand access." }
-    ],
+  'california': {
+    id: 'california',
+    stateName: 'California',
+    awardAmount: '$234M',
+    strategicFocus: 'Maternal Hub-and-Spoke',
     metrics: [
-      { label: "Exchange Participants", status: "In Progress", target: "50 Providers" },
-      { label: "Locker Usage", status: "Pending", target: "High" }
+      { label: 'Complications', value: 'Fewer', trend: 'down', status: 'On Track' },
+      { label: 'Capacity', value: 'Exp', trend: 'up', status: 'On Track' },
+      { label: 'Bypass', value: 'Red', trend: 'down', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Hub-and-Spoke', description: 'Statewide network for maternal and primary care.', status: 'Active' },
+      { title: 'OB Nest', description: 'Virtual nurse contacts and home monitoring for prenatal care.', status: 'Active' },
+      { title: 'Project ECHO', description: 'Telementorship for chronic disease management.', status: 'Active' }
     ]
   },
-  idaho: {
-    id: "idaho",
-    stateName: "Idaho",
-    awardAmount: "$186,000,000",
-    strategicFocus: "Tele-Pharmacy & Compliance",
-    description: "Remote tele-pharmacy dispensing and facility renovations for code compliance.",
-    initiatives: [
-      { title: "Remote Tele-Pharmacy", description: "Dispensing units to expand medication access." },
-      { title: "Facility Compliance", description: "Renovations to bring aging facilities into safety code compliance." }
-    ],
+  'colorado': {
+    id: 'colorado',
+    stateName: 'Colorado',
+    awardAmount: '$200M',
+    strategicFocus: 'Telehealth & Prevention',
     metrics: [
-      { label: "Scripts Dispensed", status: "Pending", target: "Volume" },
-      { label: "Code Citations", status: "In Progress", target: "Resolved" }
+      { label: 'Telehealth', value: 'Exp', trend: 'up', status: 'On Track' },
+      { label: 'Partnerships', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Stability', value: 'Stab', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Telehealth Integration', description: 'Expansion of mobile health and statewide tech readiness assessment.', status: 'Active' },
+      { title: 'Chronic Prevention', description: 'Education and care coordination for high-priority conditions.', status: 'Active' },
+      { title: 'Hospital Sustain', description: 'Diversifying revenue streams and operational capacity.', status: 'Active' }
     ]
   },
-  montana: {
-    id: "montana",
-    stateName: "Montana",
-    awardAmount: "$234,000,000",
-    strategicFocus: "Center of Excellence & Restructuring",
-    description: "A 'Rural Center of Excellence' to oversee system restructuring and eliminate negative margins.",
-    initiatives: [
-      { title: "Center of Excellence", description: "Body to oversee restructuring of care availability." },
-      { title: "Pharmacist Access", description: "Extending access to lower-cost care from pharmacists." }
-    ],
+  'hawaii': {
+    id: 'hawaii',
+    stateName: 'Hawaii',
+    awardAmount: '$189M',
+    strategicFocus: 'Digital Backbone & Respite',
     metrics: [
-      { label: "Restructuring Plans", status: "Pending", target: "Implemented" },
-      { label: "Pharmacist Services", status: "In Progress", target: "Expanded" }
+      { label: 'Remote Access', value: 'Enabled', trend: 'up', status: 'On Track' },
+      { label: 'Workforce', value: 'Building', trend: 'up', status: 'On Track' },
+      { label: 'Emerg. Util', value: 'Red', trend: 'down', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Health Info Net', description: 'Statewide digital backbone connecting rural sites via interoperable EHRs.', status: 'Active' },
+      { title: 'Respite Network', description: 'Medical respite model for unhoused patients to reduce hospital use.', status: 'Active' },
+      { title: 'AHEAD Readiness', description: 'Financing local value-based innovations.', status: 'Planned' }
     ]
   },
-  wyoming: {
-    id: "wyoming",
-    stateName: "Wyoming",
-    awardAmount: "$205,000,000",
-    strategicFocus: "CAH Incentives & Telepsychiatry",
-    description: "Incentivizing CAHs to limit elective services and focus on essentials (ED/Ambulance), plus statewide telepsych.",
-    initiatives: [
-      { title: "CAH Basic Incentive", description: "Incentivizing hospitals to focus on essentials." },
-      { title: "Statewide Telepsychiatry", description: "Crisis intervention services." }
-    ],
+  'idaho': {
+    id: 'idaho',
+    stateName: 'Idaho',
+    awardAmount: '$186M',
+    strategicFocus: 'Tech Access & Tribal',
     metrics: [
-      { label: "Incentive Participation", status: "Pending", target: "High" },
-      { label: "Crisis Response", status: "In Progress", target: "Faster" }
+      { label: 'Care Access', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'ED Visits', value: 'Red', trend: 'down', status: 'On Track' },
+      { label: 'Recruitment', value: 'Pos', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Tech Access', description: 'Tele-pharmacy dispensing and AI data analytics tools.', status: 'Active' },
+      { title: 'Infrastructure', description: 'Renovations for safety code compliance and facility efficiency.', status: 'Active' },
+      { title: 'Tribal Set-Aside', description: '3.5% funding reserved for Tribal nation plans.', status: 'Active' }
     ]
   },
-  colorado: {
-    id: "colorado",
-    stateName: "Colorado",
-    awardAmount: "$200,000,000",
-    strategicFocus: "Regional Partnerships & Mobile Health",
-    description: "Formalizing regional partnerships to diversify revenue and expanding mobile health tools.",
-    initiatives: [
-      { title: "Mobile Health", description: "Increasing adoption of mobile tools and dashboards." },
-      { title: "Regional Partnerships", description: "Legal structures to bind rural hospitals together." }
-    ],
+  'montana': {
+    id: 'montana',
+    stateName: 'Montana',
+    awardAmount: '$234M',
+    strategicFocus: 'Center of Excellence',
     metrics: [
-      { label: "Partnerships Signed", status: "Pending", target: "Executed" },
-      { label: "Mobile Usage", status: "In Progress", target: "Increased" }
+      { label: 'Clinician Count', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'ED Utilization', value: 'Red', trend: 'down', status: 'On Track' },
+      { label: 'HIE Partic.', value: 'Higher', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Rural CoE', description: 'Center of Excellence to oversee restructuring of care availability.', status: 'Active' },
+      { title: 'Innovative Payments', description: 'Supporting value-based care and modernizing EMS.', status: 'Active' },
+      { title: 'Pharmacist Access', description: 'Extending access to lower-cost care from pharmacists.', status: 'Active' }
     ]
   },
-  utah: {
-    id: "utah",
-    stateName: "Utah",
-    awardAmount: "$196,000,000",
-    strategicFocus: "PATH & SUPPORT",
-    description: "'PATH' for preventive built environments and 'SUPPORT' for AI tools to reduce admin burden.",
-    initiatives: [
-      { title: "PATH Initiative", description: "Nutrition, physical activity, and built environment." },
-      { title: "SUPPORT Tools", description: "Reducing admin burden via AI." }
-    ],
+  'nevada': {
+    id: 'nevada',
+    stateName: 'Nevada',
+    awardAmount: '$180M',
+    strategicFocus: 'Outcomes Accelerator',
     metrics: [
-      { label: "Obesity Rates", status: "Pending", target: "Reduced" },
-      { label: "Admin Hours", status: "In Progress", target: "Reduced" }
+      { label: 'Provider Count', value: '+25%', trend: 'up', status: 'On Track' },
+      { label: 'Suicide Rate', value: 'Dec', trend: 'down', status: 'On Track' },
+      { label: 'Telehealth', value: '+25%', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Outcomes Accelerator', description: 'Deploying value-based care and online collaborative care.', status: 'Active' },
+      { title: 'Workforce Recruit', description: '$80M investment in incentives for living/serving in rural areas.', status: 'Active' },
+      { title: 'Mobile Units', description: 'Ensuring each rural region has at least one additional mobile unit.', status: 'Active' }
     ]
   },
-  nevada: {
-    id: "nevada",
-    stateName: "Nevada",
-    awardAmount: "$180,000,000",
-    strategicFocus: "Outcomes Accelerator & Incentives",
-    description: "$30M Accelerator for value-based care and $80M in provider incentives.",
-    initiatives: [
-      { title: "Outcomes Accelerator", description: "Investing in value-based care models and AI." },
-      { title: "Provider Incentives", description: "$80M investment for living/serving in rural areas." }
-    ],
+  'new_mexico': {
+    id: 'new_mexico',
+    stateName: 'New Mexico',
+    awardAmount: '$211M',
+    strategicFocus: 'Specialty & Workforce',
     metrics: [
-      { label: "Accelerator Adoption", status: "Pending", target: "High" },
-      { label: "Provider Count", status: "In Progress", target: "Increased" }
+      { label: 'Chronic Risk', value: 'Red', trend: 'down', status: 'On Track' },
+      { label: 'Capacity', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Margins', value: 'Imp', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Healthy Horizons', description: 'Regional specialty and maternal care networks.', status: 'Active' },
+      { title: 'Rooted in NM', description: 'Local workforce recruitment and retention pipeline.', status: 'Active' },
+      { title: 'Rural Innovation', description: 'Community-led health initiatives addressing local challenges.', status: 'Active' }
     ]
   },
-  arizona: {
-    id: "arizona",
-    stateName: "Arizona",
-    awardAmount: "$167,000,000",
-    strategicFocus: "Mobile Access & Workforce Pipeline",
-    description: "New rural residency slots and mobile satellite clinics to close the '20-mile gap'.",
-    initiatives: [
-      { title: "Rural Clinical Rotations", description: "Establishing new residency slots for rural placement." },
-      { title: "Mobile & Satellite Clinics", description: "Deploying units to close the travel gap." }
-    ],
+  'oregon': {
+    id: 'oregon',
+    stateName: 'Oregon',
+    awardAmount: '$197M',
+    strategicFocus: 'Provider Exchange',
     metrics: [
-      { label: "Student Retention", status: "Pending", target: "High" },
-      { label: "Patient Volume", status: "In Progress", target: "Increased" }
+      { label: 'Primary Access', value: 'Imp', trend: 'up', status: 'On Track' },
+      { label: 'VBP Partic.', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'IT Security', value: 'Secure', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Provider Exchange', description: 'Bringing specialists to rural areas while rural providers get training.', status: 'Active' },
+      { title: 'Pharmacy Lockers', description: 'Expanded pharmacy access through lockers and telepharmacy.', status: 'Active' },
+      { title: 'Grow-Your-Own', description: 'Workforce initiative focused on local recruitment.', status: 'Active' }
     ]
   },
-  new_mexico: {
-    id: "new_mexico",
-    stateName: "New Mexico",
-    awardAmount: "$211,000,000",
-    strategicFocus: "Specialty Networks & Workforce",
-    description: "'Healthy Horizons' specialty networks and housing/mentorship for workforce.",
-    initiatives: [
-      { title: "Healthy Horizons", description: "Regionalized specialty and maternal care networks." },
-      { title: "Rooted in New Mexico", description: "Housing and mentorship for rural workforce." }
-    ],
+  'utah': {
+    id: 'utah',
+    stateName: 'Utah',
+    awardAmount: '$196M',
+    strategicFocus: 'Wellness & Digital',
     metrics: [
-      { label: "Specialty Wait Times", status: "Pending", target: "Reduced" },
-      { label: "Workforce Retention", status: "In Progress", target: "Improved" }
+      { label: 'Obesity Rate', value: 'Red', trend: 'down', status: 'On Track' },
+      { label: 'Sustainability', value: 'Maint', trend: 'neutral', status: 'On Track' },
+      { label: 'Provider Count', value: 'Inc', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'PATH (Wellness)', description: 'Promoting nutrition, physical activity, and preventative care.', status: 'Active' },
+      { title: 'SUPPORT (Digital)', description: 'EHR upgrades, AI deployment, and administrative burden reduction.', status: 'Active' },
+      { title: 'LIFT (Telehealth)', description: 'Leveraging innovation for facilitated telehealth.', status: 'Active' }
     ]
   },
-  alaska: {
-    id: "alaska",
-    stateName: "Alaska",
-    awardAmount: "$272,000,000",
-    strategicFocus: "Frontier Logistics & Pharmacy Innovation",
-    description: "Drone delivery pilots and remote fetal monitoring for off-road communities.",
-    initiatives: [
-      { title: "Drone Delivery", description: "Utilizing drones and remote pharmacy dispensing units." },
-      { title: "Remote Fetal Monitoring", description: "Devices for high-risk pregnancies in frontier areas." }
-    ],
+  'washington': {
+    id: 'washington',
+    stateName: 'Washington',
+    awardAmount: '$181M',
+    strategicFocus: 'Innovation & Native Health',
     metrics: [
-      { label: "Drone Deliveries", status: "In Progress", target: "Successful" },
-      { label: "Med Evacuations", status: "Pending", target: "Reduced" }
+      { label: 'VBP Partic.', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'OB Closures', value: '0', trend: 'neutral', status: 'On Track' },
+      { label: 'Workforce', value: 'Larger', trend: 'up', status: 'On Track' }
+    ],
+    initiatives: [
+      { title: 'Ignite Innovation', description: 'Designing VBP models and sustaining essential service lines.', status: 'Active' },
+      { title: 'Native Health', description: 'Reserved funding for Tribes to invest in workforce.', status: 'Active' },
+      { title: 'AI Integration', description: 'Adoption of population health management analytic tools.', status: 'Planned' }
     ]
   },
-  hawaii: {
-    id: "hawaii",
-    stateName: "Hawaii",
-    awardAmount: "$189,000,000",
-    strategicFocus: "Digital Backbone & Respite",
-    description: "Statewide Rural Health Information Network (RHIN) and medical respite for the unhoused.",
-    initiatives: [
-      { title: "RHIN", description: "Statewide digital backbone connecting all rural entities." },
-      { title: "Rural Respite Network", description: "Medical respite for unhoused patients." }
-    ],
+  'wyoming': {
+    id: 'wyoming',
+    stateName: 'Wyoming',
+    awardAmount: '$205M',
+    strategicFocus: 'Tech Transformation',
     metrics: [
-      { label: "RHIN Integration", status: "Pending", target: "100%" },
-      { label: "ALOS (Unhoused)", status: "In Progress", target: "Reduced" }
-    ]
-  },
-  oklahoma: {
-    id: "oklahoma",
-    stateName: "Oklahoma",
-    awardAmount: "$223,000,000",
-    strategicFocus: "Upstream Prevention & Microgrants",
-    description: "'Moving Upstream' consumer tech and $50k wellness microgrants for local departments.",
-    initiatives: [
-      { title: "Moving Upstream", description: "Consumer-facing tech and remote monitoring." },
-      { title: "Wellness Microgrants", description: "Grants up to $50k for local health departments." }
+      { label: 'Specialty Access', value: 'Inc', trend: 'up', status: 'On Track' },
+      { label: 'Suicide Rate', value: 'Red', trend: 'down', status: 'On Track' },
+      { label: 'Providers', value: 'Inc', trend: 'up', status: 'On Track' }
     ],
-    metrics: [
-      { label: "App Adoption", status: "In Progress", target: "High" },
-      { label: "Projects Launched", status: "Pending", target: "All Counties" }
+    initiatives: [
+      { title: 'Tech Transformation', description: 'Telespecialist platform and centralized billing capacity.', status: 'Active' },
+      { title: 'CAH Incentive', description: 'Incentivizing essential services while limiting elective ones.', status: 'Active' },
+      { title: 'Workforce Pipeline', description: 'Individual education support for nurses and EMTs.', status: 'Active' }
     ]
   }
 };
 
-
-
-// NEW HELPER: UNIFIED STATUS LOGIC
 export function getStateStatus(state: RHTProfile): 'critical' | 'watch' | 'stable' {
-  // 1. Vermont is always Critical for the Demo
-  if (state.id === 'vermont') return 'critical';
-
-  // 2. If any metric is "Pending", it is At Risk (Watch)
   const hasPending = state.metrics.some(m => m.status === 'Pending');
-  if (hasPending) return 'watch';
+  if (hasPending) return 'critical';
 
-  // 3. Otherwise, it is Stable
+  const hasRisk = state.metrics.some(m => m.status === 'At Risk');
+  if (hasRisk) return 'watch';
+
   return 'stable';
 }
