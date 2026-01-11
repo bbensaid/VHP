@@ -4,6 +4,7 @@ import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { USAMap } from '@/components/dashboard/USAMap';
 import { rhtProgramData, getStateStatus } from '@/lib/data/rht-program';
+import { useProgramContext } from '@/lib/context/ProgramContext'; 
 import { 
   ArrowUpRightIcon, 
   ExclamationCircleIcon,
@@ -34,9 +35,26 @@ export default function DashboardIndex() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedRegion, setSelectedRegion] = useState("All");
 
-  // 1. FILTER LOGIC
+  // 1. ACCESS THE LIVE BRAIN
+  const { hospitalStatuses } = useProgramContext();
+
+  // 2. MERGE STATIC DATA WITH LIVE UPDATES
+  const liveData = useMemo(() => {
+    const updated = { ...rhtProgramData };
+    
+    // Check if NVRH is fixed. If so, override Vermont's static status
+    if (hospitalStatuses['nvrh'] === 'stable') {
+      const vt = { ...updated['vermont'] };
+      vt.metrics = vt.metrics.map(m => ({ ...m, status: 'On Track' as const }));
+      vt.strategicFocus = "Act 167 Plan Approved - Monitoring";
+      updated['vermont'] = vt;
+    }
+    return updated;
+  }, [hospitalStatuses]); 
+
+  // 3. FILTER LOGIC
   const filteredStates = useMemo(() => {
-    const allStates = Object.values(rhtProgramData);
+    const allStates = Object.values(liveData);
     
     return allStates.filter(state => {
       // Search Filter
@@ -48,22 +66,33 @@ export default function DashboardIndex() {
 
       return matchesSearch && matchesRegion;
     });
-  }, [searchQuery, selectedRegion]);
+  }, [searchQuery, selectedRegion, liveData]);
 
-  // 2. DYNAMIC METRICS CALCULATION
+  // 4. DYNAMIC METRICS CALCULATION (FIXED MATH)
   const metrics = useMemo(() => {
     const total = filteredStates.reduce((acc, curr) => {
-      const val = parseInt(curr.awardAmount.replace(/[^0-9]/g, '')) || 0;
-      return acc + val;
+      // Clean string: remove '$' and ',' 
+      const cleanStr = curr.awardAmount.replace(/[$,]/g, '').trim();
+      let val = 0;
+
+      // Check for 'M' (Millions) or 'B' (Billions)
+      if (cleanStr.toUpperCase().includes('M')) {
+         val = parseFloat(cleanStr.replace(/M/i, '')) * 1000000;
+      } else if (cleanStr.toUpperCase().includes('B')) {
+         val = parseFloat(cleanStr.replace(/B/i, '')) * 1000000000;
+      } else {
+         val = parseFloat(cleanStr); // Fallback for plain numbers
+      }
+
+      return acc + (isNaN(val) ? 0 : val);
     }, 0);
     
-    // Use the Unified Helper Logic for Critical Count
     const criticalCount = filteredStates.filter(s => getStateStatus(s) === 'critical').length;
 
     return { total, criticalCount };
   }, [filteredStates]);
 
-  // 3. PRIORITY WATCHLIST (Show non-stable states first)
+  // 5. PRIORITY WATCHLIST
   const watchlist = filteredStates
      .filter(s => getStateStatus(s) !== 'stable')
      .slice(0, 3);
@@ -71,7 +100,7 @@ export default function DashboardIndex() {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-800">
       
-      {/* 1. NATIONAL HUD */}
+      {/* NATIONAL HUD */}
       <div className="border-b border-slate-200 sticky top-0 bg-white/95 backdrop-blur z-20">
         <div className="max-w-7xl mx-auto px-6 py-6">
            <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-6">
@@ -125,7 +154,8 @@ export default function DashboardIndex() {
                     <span className="text-[10px] font-bold uppercase tracking-widest">Active Awards</span>
                  </div>
                  <div className="text-2xl font-black text-slate-900 animate-in fade-in">
-                    ${(metrics.total / 1000000).toFixed(0)}M
+                    {/* FIXED: Display logic now divides correctly to show Millions */}
+                    ${(metrics.total / 1000000).toLocaleString(undefined, { maximumFractionDigits: 0 })}M
                  </div>
                  <div className="text-xs text-slate-500">In Selected View</div>
               </div>
@@ -161,12 +191,12 @@ export default function DashboardIndex() {
       <div className="max-w-7xl mx-auto px-6 py-10 space-y-12">
 
         <div className="grid lg:grid-cols-3 gap-8">
-           {/* 2. THE MAP */}
+           {/* 2. THE MAP (Connected to Live Data) */}
            <div className="lg:col-span-2 h-full">
               <USAMap 
                   searchQuery={searchQuery} 
                   selectedRegion={selectedRegion} 
-                  statesData={rhtProgramData} 
+                  statesData={liveData} 
               />
            </div>
 
@@ -181,7 +211,6 @@ export default function DashboardIndex() {
               
               {watchlist.length > 0 ? (
                  watchlist.map((state) => {
-                    // USE UNIFIED HELPER FOR COLOR LOGIC
                     const status = getStateStatus(state);
                     return (
                         <Link 
@@ -212,13 +241,14 @@ export default function DashboardIndex() {
                  })
               ) : (
                  <div className="p-8 text-center bg-slate-50 rounded-xl border border-slate-200 border-dashed">
-                    <p className="text-sm text-slate-400 font-bold">No states match filters</p>
+                    <p className="text-sm text-slate-400 font-bold">No active alerts</p>
+                    <p className="text-xs text-slate-300 mt-1">Systems are stable</p>
                  </div>
               )}
            </div>
         </div>
 
-        {/* 3. DYNAMIC REGISTRY TABLE */}
+        {/* 3. REGISTRY TABLE */}
         <div className="w-full bg-slate-50 rounded-xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
            <div className="px-6 py-4 border-b border-slate-200 bg-white flex justify-between items-center">
               <div>
