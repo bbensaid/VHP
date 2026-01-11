@@ -585,7 +585,7 @@ export const rhtProgramData: Record<string, RHTProfile> = {
       { label: "Climate Retrofits", status: "Pending", target: "15 Facilities" }
     ]
   },
-  
+
   washington: {
     id: "washington",
     stateName: "Washington",
@@ -782,3 +782,18 @@ export const rhtProgramData: Record<string, RHTProfile> = {
     ]
   }
 };
+
+
+
+// NEW HELPER: UNIFIED STATUS LOGIC
+export function getStateStatus(state: RHTProfile): 'critical' | 'watch' | 'stable' {
+  // 1. Vermont is always Critical for the Demo
+  if (state.id === 'vermont') return 'critical';
+
+  // 2. If any metric is "Pending", it is At Risk (Watch)
+  const hasPending = state.metrics.some(m => m.status === 'Pending');
+  if (hasPending) return 'watch';
+
+  // 3. Otherwise, it is Stable
+  return 'stable';
+}
