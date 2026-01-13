@@ -1,40 +1,45 @@
 "use client";
 
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import { ProgramContextType, RHTProfile, ScenarioType } from '@/types';
+import { rhtProgramData } from '@/lib/data/rht-program'; 
 
-// Define the shape of our Global Memory
-interface ProgramState {
-  hospitalStatuses: Record<string, 'critical' | 'watch' | 'stable'>;
-  updateStatus: (id: string, status: 'critical' | 'watch' | 'stable') => void;
-}
-
-const ProgramContext = createContext<ProgramState | undefined>(undefined);
+const ProgramContext = createContext<ProgramContextType | undefined>(undefined);
 
 export function ProgramProvider({ children }: { children: React.ReactNode }) {
-  // Initial State: NVRH is Critical
-  const [hospitalStatuses, setStatuses] = useState<Record<string, 'critical' | 'watch' | 'stable'>>({
-    'nvrh': 'critical',
-    'uvm': 'stable'
-  });
+  const [selectedStateId, setSelectedStateId] = useState<string | null>(null);
+  const [simulationMode, setSimulationMode] = useState<ScenarioType>('statusQuo');
+  const [mounted, setMounted] = useState(false);
 
-  const updateStatus = (id: string, status: 'critical' | 'watch' | 'stable') => {
-    setStatuses(prev => ({
-      ...prev,
-      [id]: status
-    }));
+  // Hydration fix: Only render after client mount
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const value: ProgramContextType = {
+    selectedStateId,
+    setSelectedStateId,
+    simulationMode,
+    setSimulationMode,
+    allStates: rhtProgramData,
+    selectedStateData: selectedStateId ? rhtProgramData[selectedStateId] : null
   };
 
+  if (!mounted) {
+    return <>{children}</>;
+  }
+
   return (
-    <ProgramContext.Provider value={{ hospitalStatuses, updateStatus }}>
+    <ProgramContext.Provider value={value}>
       {children}
     </ProgramContext.Provider>
   );
 }
 
-export function useProgramContext() {
+export function useProgram() {
   const context = useContext(ProgramContext);
   if (context === undefined) {
-    throw new Error('useProgramContext must be used within a ProgramProvider');
+    throw new Error('useProgram must be used within a ProgramProvider');
   }
   return context;
 }
