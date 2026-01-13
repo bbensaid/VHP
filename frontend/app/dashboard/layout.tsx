@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProgramProvider } from '@/lib/context/ProgramContext'; // Import the provider
+import { DashboardProvider } from '@/lib/context/DashboardContext';
 
 export default function DashboardLayout({
   children,
@@ -7,11 +7,10 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ProgramProvider>
+    <DashboardProvider>
       <div className="min-h-screen bg-slate-50">
-         {/* You can keep your Sidebar/Header here if you have one layout file */}
          {children}
       </div>
-    </ProgramProvider>
+    </DashboardProvider>
   );
 }

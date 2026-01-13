@@ -1,4 +1,4 @@
-import { RHTProfile, SimulationProfile } from '@/types';
+import { RHTProfile, SimulationProfile } from '@/lib/dashboard-types';
 
 // --- HELPER: Generate Simulation Data for Non-Vermont States ---
 const generateSimulatedHospital = (stateName: string): SimulationProfile => ({
@@ -6,14 +6,14 @@ const generateSimulatedHospital = (stateName: string): SimulationProfile => ({
   scenarios: {
     statusQuo: {
       label: "Status Quo",
-      margin: -0.032, // -3.2%
+      margin: -0.032,
       revenue: 45000000,
       expenses: 46440000,
       operatingIncome: -1440000
     },
     optimized: {
       label: "RHTP Optimized",
-      margin: 0.015, // +1.5%
+      margin: 0.015,
       revenue: 48500000,
       expenses: 47772500,
       operatingIncome: 727500
@@ -21,20 +21,19 @@ const generateSimulatedHospital = (stateName: string): SimulationProfile => ({
   }
 });
 
-// --- HELPER: Generate Standard Grant Profile for Non-Specific States ---
+// --- HELPER: Generate Standard Grant Profile ---
 const createStandardProfile = (id: string, name: string, amount: string): RHTProfile => ({
   id,
   stateName: name,
   awardAmount: amount,
   strategicFocus: [
     "Rural workforce development",
-    "Telehealth infrastructure expansion",
-    "Chronic disease prevention"
+    "Telehealth infrastructure expansion"
   ],
   metrics: [
     { label: "Provider Retention", value: "+12%", trend: "up", status: "On Track" },
     { label: "Telehealth Visits", value: "+45%", trend: "up", status: "On Track" },
-    { label: "Hospital Operating Margin", value: "Stabilized", trend: "neutral", status: "Pending" }
+    { label: "Operating Margin", value: "Stabilized", trend: "neutral", status: "Pending" }
   ],
   initiatives: [
     {
@@ -51,9 +50,8 @@ const createStandardProfile = (id: string, name: string, amount: string): RHTPro
   simulation: generateSimulatedHospital(name)
 });
 
-// --- THE FULL 50 STATE DATA OBJECT ---
-export const rhtProgramData: Record<string, RHTProfile> = {
-  // 1. VERMONT (STRICT REAL DATA)
+export const rhtAwardsData: Record<string, RHTProfile> = {
+  // 1. VERMONT (STRICT DATA)
   'vermont': {
     id: 'vermont',
     stateName: 'Vermont',
@@ -90,14 +88,14 @@ export const rhtProgramData: Record<string, RHTProfile> = {
       scenarios: {
         statusQuo: {
           label: "Status Quo (Current Trend)",
-          margin: -0.045, // -4.5% Deficit
+          margin: -0.045, 
           revenue: 95000000,
           expenses: 99275000,
           operatingIncome: -4275000
         },
         optimized: {
           label: "Wyman Optimized",
-          margin: 0.028, // +2.8% Surplus
+          margin: 0.028, 
           revenue: 102000000,
           expenses: 99144000,
           operatingIncome: 2856000
@@ -105,8 +103,7 @@ export const rhtProgramData: Record<string, RHTProfile> = {
       }
     }
   },
-
-  // 2. TEXAS (REAL SNIPPET DATA)
+  // 2. TEXAS
   'texas': {
     id: 'texas',
     stateName: 'Texas',
@@ -122,8 +119,7 @@ export const rhtProgramData: Record<string, RHTProfile> = {
     ],
     simulation: generateSimulatedHospital('Texas')
   },
-
-  // 3. CALIFORNIA (REAL SNIPPET DATA)
+  // 3. CALIFORNIA
   'california': {
     id: 'california',
     stateName: 'California',
@@ -139,42 +135,8 @@ export const rhtProgramData: Record<string, RHTProfile> = {
     ],
     simulation: generateSimulatedHospital('California')
   },
-
-  // 4. WYOMING (REAL SNIPPET DATA)
-  'wyoming': {
-    id: 'wyoming',
-    stateName: 'Wyoming',
-    awardAmount: '$205M',
-    strategicFocus: "Tech Transformation",
-    metrics: [
-      { label: "Specialty Access", value: "Inc", trend: "up", status: "On Track" },
-      { label: "Suicide Rate", value: "Red", trend: "down", status: "On Track" }
-    ],
-    initiatives: [
-      { title: "Tech Transformation", description: "Telespecialist platform and centralized billing.", status: "Active" },
-      { title: "CAH Incentive", description: "Incentivizing essential services.", status: "Active" }
-    ],
-    simulation: generateSimulatedHospital('Wyoming')
-  },
-
-  // 5. ALABAMA (REAL SNIPPET DATA)
-  'alabama': {
-    id: 'alabama',
-    stateName: 'Alabama',
-    awardAmount: '$203M',
-    strategicFocus: "Maternal & Fetal Health",
-    metrics: [
-      { label: "New Hubs", value: "5", trend: "up", status: "On Track" },
-      { label: "Maternal Mortality", value: "Reduce", trend: "down", status: "Pending" }
-    ],
-    initiatives: [
-      { title: "Maternal Health Initiative", description: "Digital maternity care and telerobotic ultrasound.", status: "Active" },
-      { title: "Cancer Regionalization", description: "Mobile screening units.", status: "Active" }
-    ],
-    simulation: generateSimulatedHospital('Alabama')
-  },
-
-  // --- REMAINING STATES (FULL LIST GENERATED) ---
+  // REMAINING STATES
+  'alabama': createStandardProfile('alabama', 'Alabama', '$203M'),
   'alaska': createStandardProfile('alaska', 'Alaska', '$272M'),
   'arizona': createStandardProfile('arizona', 'Arizona', '$167M'),
   'arkansas': createStandardProfile('arkansas', 'Arkansas', '$209M'),
@@ -219,5 +181,6 @@ export const rhtProgramData: Record<string, RHTProfile> = {
   'virginia': createStandardProfile('virginia', 'Virginia', '$190M'),
   'washington': createStandardProfile('washington', 'Washington', '$181M'),
   'west_virginia': createStandardProfile('west_virginia', 'West Virginia', '$199M'),
-  'wisconsin': createStandardProfile('wisconsin', 'Wisconsin', '$204M')
+  'wisconsin': createStandardProfile('wisconsin', 'Wisconsin', '$204M'),
+  'wyoming': createStandardProfile('wyoming', 'Wyoming', '$205M')
 };
