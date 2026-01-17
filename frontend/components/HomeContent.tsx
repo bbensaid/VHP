@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Sidebar from "@/components/Sidebar";
+import HomeSidebar from "@/components/HomeSidebar";
 import TickerStrip from "@/components/TickerStrip";
 import HeroCarousel from "@/components/HeroCarousel";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
@@ -54,14 +54,7 @@ export default function HomeContent({
           `}
         >
           <div className="w-full h-full overflow-y-auto p-6 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
-            <Sidebar
-              noteData={{
-                headline: "RHTP Network Status",
-                content:
-                  "Active Surveillance: 47 State Cohorts ($9.5B). CRITICAL ALERT: Vermont & California reporting elevated financial distress signals despite Phase 2 funding.",
-                author: "National Program Office",
-              }}
-            />
+            <HomeSidebar />
           </div>
           {/* Scroll Fade Overlay */}
           <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none z-10" />
