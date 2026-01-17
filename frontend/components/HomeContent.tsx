@@ -49,12 +49,14 @@ export default function HomeContent({
         {/* Sidebar */}
         <div
           className={`
-            bg-white transition-all duration-300 ease-in-out overflow-hidden flex-shrink-0 z-40 rounded-xl border border-slate-200
+            bg-white transition-all duration-300 ease-in-out overflow-hidden flex-shrink-0 z-40 rounded-xl border border-slate-200 sticky top-24 max-h-[calc(100vh-6rem)] flex flex-col
             ${isSidebarOpen ? "w-80 shadow-[4px_0_24px_rgba(0,0,0,0.02)] ml-0" : "w-0 border-none"}
           `}
         >
-          <div className="w-full h-full overflow-y-auto p-6 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
-            <HomeSidebar />
+          <div className="w-full flex-1 overflow-y-auto p-6 [direction:rtl] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:bg-slate-400 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-slate-100">
+            <div className="[direction:ltr]">
+              <HomeSidebar />
+            </div>
           </div>
           {/* Scroll Fade Overlay */}
           <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none z-10" />
