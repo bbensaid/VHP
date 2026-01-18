@@ -233,8 +233,16 @@ const Header = () => {
 
           <div className="flex items-center gap-4 flex-shrink-0">
             <nav className="hidden xl:flex items-center gap-2">
-              <NavDropdown label="ACADEMY" items={academyItems} />
-              <NavDropdown label="ADVISORY" items={advisoryItems} />
+              <NavDropdown
+                label="ACADEMY"
+                items={academyItems}
+                colorClass="text-card-academy"
+              />
+              <NavDropdown
+                label="ADVISORY"
+                items={advisoryItems}
+                colorClass="text-card-advisory"
+              />
             </nav>
 
             <button
