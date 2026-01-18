@@ -10,6 +10,8 @@
   --color-brand-indigo: #4f46e5; /* Technology */
   --color-brand-rose: #e11d48; /* Operations (New) */
   --color-brand-teal: #0d9488; /* Science (New) */
+  --color-brand-sky: #38bdf8; /* Academy (Lighter) */
+  --color-brand-violet: #d946ef; /* Advisory (Changed to Fuchsia) */
 
   --color-brand-blue: #1d4ed8; /* UI Primary */
   --color-brand-light: #dbeafe; /* UI Backgrounds */
@@ -32,6 +34,8 @@
   --color-card-tech: var(--color-brand-indigo);
   --color-card-operations: var(--color-brand-rose); /* New */
   --color-card-science: var(--color-brand-teal); /* New */
+  --color-card-academy: var(--color-brand-sky);
+  --color-card-advisory: var(--color-brand-violet);
 
   /* --- Sidebar Title Colors --- */
   --color-sidebar-policy: var(--color-brand-orange);
@@ -65,14 +69,10 @@ body {
   font-size: 15px;
 }
 
-
-
-
 /* Pause on hover */
 .animate-marquee:hover {
   animation-play-state: paused;
 }
-
 
 @tailwind base;
 @tailwind components;
@@ -81,20 +81,36 @@ body {
 /* ... keep your other global styles ... */
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-marquee {
   display: flex;
   width: max-content;
   /* 1. SLOWED DOWN TO 80s */
-  animation: marquee 80s linear infinite; 
+  animation: marquee 80s linear infinite;
 }
 
 /* 2. THE FADE MASK */
 /* This makes the text transparent on the edges so it doesn't hit the label abruptly */
 .mask-linear-fade {
-  mask-image: linear-gradient(to right, transparent 0%, black 100px, black calc(100% - 50px), transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 100px, black calc(100% - 50px), transparent 100%);
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 100px,
+    black calc(100% - 50px),
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 100px,
+    black calc(100% - 50px),
+    transparent 100%
+  );
 }

@@ -99,6 +99,7 @@ export default function HomeSidebar() {
     icon: React.ReactNode,
     colorClass: string,
     bgClass: string,
+    hoverBgClass: string,
     items: { href: string; label: string }[]
   ) => {
     const isOpen = openSections.includes(title);
@@ -106,11 +107,11 @@ export default function HomeSidebar() {
       <div className="border-b border-slate-100 last:border-0">
         <button
           onClick={() => toggleSection(title)}
-          className={`w-full flex items-center justify-between py-3 px-3 my-1 rounded-lg group transition-all duration-200 focus:outline-none ${bgClass} hover:brightness-95`}
+          className={`w-full flex items-center justify-between py-3 px-3 my-1 rounded-lg group transition-all duration-200 focus:outline-none ${isOpen ? bgClass : `bg-white ${hoverBgClass}`}`}
         >
           <div className="flex items-center gap-3">
             <div
-              className={`p-1.5 rounded-md transition-colors duration-200 bg-white shadow-sm`}
+              className={`p-1.5 rounded-md transition-colors duration-200 ${isOpen ? "bg-white/60 shadow-sm" : "bg-slate-50 group-hover:bg-white/60 group-hover:shadow-sm"}`}
             >
               <span
                 className={`block w-5 h-5 transition-colors duration-200 ${colorClass}`}
@@ -229,20 +230,23 @@ export default function HomeSidebar() {
             <ScaleIcon />,
             "text-orange-700",
             "bg-orange-50",
+            "hover:bg-orange-50",
             policyItems
           )}
           {renderPillar(
             "Economics",
             <CurrencyDollarIcon />,
-            "text-emerald-700",
+            "text-emerald-600",
             "bg-emerald-50",
+            "hover:bg-emerald-50",
             economicsItems
           )}
           {renderPillar(
             "Technology",
             <CpuChipIcon />,
-            "text-indigo-700",
+            "text-indigo-600",
             "bg-indigo-50",
+            "hover:bg-indigo-50",
             technologyItems
           )}
         </div>
@@ -257,15 +261,17 @@ export default function HomeSidebar() {
           {renderPillar(
             "Academy",
             <AcademicCapIcon />,
-            "text-sky-700",
+            "text-sky-400",
             "bg-sky-50",
+            "hover:bg-sky-50",
             academyItems
           )}
           {renderPillar(
             "Advisory",
             <BriefcaseIcon />,
-            "text-violet-700",
-            "bg-violet-50",
+            "text-fuchsia-500",
+            "bg-fuchsia-50",
+            "hover:bg-fuchsia-50",
             advisoryItems
           )}
         </div>
@@ -282,6 +288,7 @@ export default function HomeSidebar() {
             <BuildingOfficeIcon />,
             "text-slate-700",
             "bg-slate-50",
+            "hover:bg-slate-50",
             companyItems
           )}
         </div>
