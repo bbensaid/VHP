@@ -1,16 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
-  DocumentTextIcon,
-  LifebuoyIcon,
   ScaleIcon,
   CurrencyDollarIcon,
   CpuChipIcon,
   ChevronDownIcon,
   AcademicCapIcon,
   BriefcaseIcon,
+  BuildingOfficeIcon,
 } from "@heroicons/react/24/outline";
 
 const policyItems = [
@@ -52,12 +52,21 @@ const advisoryItems = [
   { href: "/advisory/contact", label: "Hire an Expert" },
 ];
 
+const companyItems = [
+  { href: "/about", label: "About Us" },
+  { href: "/mission", label: "Mission & Vision" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/careers", label: "Careers" },
+  { href: "/contact", label: "Contact Us" },
+];
+
 const ALL_SECTIONS = [
   "Policy",
   "Economics",
   "Technology",
   "Academy",
   "Advisory",
+  "Company",
 ];
 
 export default function HomeSidebar() {
@@ -97,39 +106,39 @@ export default function HomeSidebar() {
       <div className="border-b border-slate-100 last:border-0">
         <button
           onClick={() => toggleSection(title)}
-          className={`w-full flex items-center justify-between py-4 px-1 group transition-colors focus:outline-none ${isOpen ? "" : "hover:bg-slate-50/80"}`}
+          className={`w-full flex items-center justify-between py-3 px-3 my-1 rounded-lg group transition-all duration-200 focus:outline-none ${bgClass} hover:brightness-95`}
         >
           <div className="flex items-center gap-3">
             <div
-              className={`p-1.5 rounded-md transition-colors duration-300 ${isOpen ? bgClass : "bg-white border border-slate-100"}`}
+              className={`p-1.5 rounded-md transition-colors duration-200 bg-white shadow-sm`}
             >
               <span
-                className={`block w-5 h-5 transition-colors duration-300 ${isOpen ? colorClass : "text-slate-400 group-hover:text-slate-600"}`}
+                className={`block w-5 h-5 transition-colors duration-200 ${colorClass}`}
               >
                 {icon}
               </span>
             </div>
             <span
-              className={`text-xs font-black uppercase tracking-widest transition-colors duration-300 ${isOpen ? "text-slate-900" : "text-slate-500 group-hover:text-slate-800"}`}
+              className={`text-xs font-black uppercase tracking-widest transition-colors duration-200 ${colorClass}`}
             >
               {title}
             </span>
           </div>
           <ChevronDownIcon
-            className={`w-4 h-4 text-slate-300 transition-transform duration-300 ease-out ${isOpen ? "rotate-180 text-slate-600" : ""}`}
+            className={`w-4 h-4 transition-transform duration-200 ease-out ${colorClass} ${isOpen ? "rotate-180" : ""}`}
           />
         </button>
 
         <div
-          className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100 pb-4" : "grid-rows-[0fr] opacity-0"}`}
+          className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100 pb-2" : "grid-rows-[0fr] opacity-0"}`}
         >
           <div className="overflow-hidden">
-            <ul className="space-y-1 pl-11 border-l-2 border-slate-100 ml-4">
+            <ul className="space-y-1 pl-2 ml-2">
               {items.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`block px-3 py-2 text-sm font-medium text-slate-500 hover:${colorClass} hover:bg-slate-50 rounded-r-md transition-colors`}
+                    className={`block px-3 py-2 text-sm font-medium text-slate-500 hover:${colorClass} hover:bg-slate-50 rounded-md transition-colors`}
                   >
                     {item.label}
                   </Link>
@@ -172,23 +181,37 @@ export default function HomeSidebar() {
         <div className="space-y-2">
           <Link
             href="/dashboard"
-            className="flex items-center gap-3 p-3 rounded-lg bg-slate-50 hover:bg-slate-100 border border-slate-200 transition-colors group"
+            title="View the national surveillance map and active state cohorts"
+            className="flex items-center gap-3 p-3 rounded-lg bg-[#1e3a8a] hover:bg-[#1e40af] border border-[#1e3a8a] transition-colors group shadow-md"
           >
-            <div className="w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 group-hover:text-indigo-600 group-hover:border-indigo-200">
-              <DocumentTextIcon className="w-4 h-4" />
+            <div className="w-8 h-8 rounded-full bg-white border border-white flex items-center justify-center overflow-hidden flex-shrink-0">
+              <Image
+                src="/rhtp-icon.png"
+                alt="RHTP Logo"
+                width={32}
+                height={32}
+                className="object-contain w-full h-full"
+              />
             </div>
-            <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
-              Rural Health Trasnformation Program (RHTP)
+            <span className="text-sm font-bold text-white">
+              Rural Health Transformation
             </span>
           </Link>
           <Link
             href="/dashboard/vermont"
-            className="flex items-center gap-3 p-3 rounded-lg bg-slate-50 hover:bg-slate-100 border border-slate-200 transition-colors group"
+            title="Read the detailed case study on Vermont's health reform"
+            className="flex items-center gap-3 p-3 rounded-lg bg-emerald-700 hover:bg-emerald-800 border border-emerald-700 transition-colors group shadow-md"
           >
-            <div className="w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 group-hover:text-indigo-600 group-hover:border-indigo-200">
-              <LifebuoyIcon className="w-4 h-4" />
+            <div className="w-8 h-8 rounded-full bg-white border border-white flex items-center justify-center overflow-hidden flex-shrink-0">
+              <Image
+                src="/vermont-icon.svg"
+                alt="Vermont Case Study"
+                width={32}
+                height={32}
+                className="object-contain w-full h-full"
+              />
             </div>
-            <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
+            <span className="text-sm font-bold text-white">
               Case Study: Vermont
             </span>
           </Link>
@@ -204,21 +227,21 @@ export default function HomeSidebar() {
           {renderPillar(
             "Policy",
             <ScaleIcon />,
-            "text-orange-600",
+            "text-orange-700",
             "bg-orange-50",
             policyItems
           )}
           {renderPillar(
             "Economics",
             <CurrencyDollarIcon />,
-            "text-emerald-600",
+            "text-emerald-700",
             "bg-emerald-50",
             economicsItems
           )}
           {renderPillar(
             "Technology",
             <CpuChipIcon />,
-            "text-indigo-600",
+            "text-indigo-700",
             "bg-indigo-50",
             technologyItems
           )}
@@ -234,16 +257,32 @@ export default function HomeSidebar() {
           {renderPillar(
             "Academy",
             <AcademicCapIcon />,
-            "text-sky-600",
+            "text-sky-700",
             "bg-sky-50",
             academyItems
           )}
           {renderPillar(
             "Advisory",
             <BriefcaseIcon />,
-            "text-violet-600",
+            "text-violet-700",
             "bg-violet-50",
             advisoryItems
+          )}
+        </div>
+      </div>
+
+      {/* COMPANY ACCORDION */}
+      <div className="mt-2">
+        <h3 className="text-[10px] font-black text-slate-300 uppercase tracking-widest mb-2 px-1">
+          Company
+        </h3>
+        <div className="bg-white rounded-xl border border-slate-200 shadow-[0_2px_8px_rgba(0,0,0,0.02)] overflow-hidden px-3">
+          {renderPillar(
+            "Company",
+            <BuildingOfficeIcon />,
+            "text-slate-700",
+            "bg-slate-50",
+            companyItems
           )}
         </div>
       </div>

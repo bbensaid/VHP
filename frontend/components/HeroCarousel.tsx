@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ChevronLeftIcon,
@@ -231,8 +232,14 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                     </button>
                   </div>
                 </div>
-                <div className="w-full md:w-1/3 aspect-square bg-blue-50 rounded-full flex items-center justify-center border-4 border-blue-100">
-                  <span className="text-6xl">🇺🇸</span>
+                <div className="w-full md:w-1/4 aspect-square bg-white rounded-full flex items-center justify-center border-4 border-white shadow-xl p-9">
+                  <Image
+                    src="/rhtp-icon.png"
+                    alt="RHTP Logo"
+                    width={140}
+                    height={140}
+                    className="object-contain w-full h-full"
+                  />
                 </div>
               </div>
             )}
