@@ -139,7 +139,7 @@ export default function HomeSidebar() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`block px-3 py-2 text-sm font-medium text-slate-500 hover:${colorClass} hover:bg-slate-50 rounded-md transition-colors`}
+                    className={`block px-3 py-2 text-sm font-medium text-slate-500 hover:${colorClass} hover:bg-slate-50 rounded-md transition-colors duration-200`}
                   >
                     {item.label}
                   </Link>
