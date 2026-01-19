@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import HomeSidebar from "@/components/HomeSidebar";
 import TickerStrip from "@/components/TickerStrip";
@@ -39,21 +39,62 @@ export default function HomeContent({
 }: HomeContentProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1024) {
+        setIsSidebarOpen(false);
+      }
+    };
+    handleResize(); // Check on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       {/* 1. TickerStrip */}
       <TickerStrip tickerData={ticker} />
 
       {/* 2. Main Content */}
-      <div className="flex flex-col lg:flex-row gap-8 mt-8 px-4 md:px-0 container mx-auto transition-all">
+      <div className="flex flex-col lg:flex-row mt-8 px-4 md:px-0 container mx-auto transition-all relative">
+        {/* EXPAND BUTTON (Sticky, Floating outside sidebar) */}
+        <div
+          className={`sticky top-24 z-50 w-0 h-10 ${isSidebarOpen ? "hidden" : "block"}`}
+        >
+          <button
+            onClick={() => setIsSidebarOpen(true)}
+            className="absolute -left-24 top-0 p-2 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-500 hover:text-indigo-600 transition-all flex flex-row items-center gap-2 animate-pulse hover:animate-none"
+            title="Expand Sidebar"
+          >
+            <ChevronRightIcon className="w-4 h-4" />
+            <span className="text-[10px] font-bold uppercase tracking-wider">
+              Expand
+            </span>
+          </button>
+        </div>
+
         {/* Sidebar */}
         <div
           className={`
             bg-white transition-all duration-300 ease-in-out overflow-hidden flex-shrink-0 z-40 rounded-xl border border-slate-200 sticky top-24 max-h-[calc(100vh-6rem)] flex flex-col
-            ${isSidebarOpen ? "w-80 shadow-[4px_0_24px_rgba(0,0,0,0.02)] ml-0" : "w-0 border-none"}
+            ${isSidebarOpen ? "w-80 shadow-[4px_0_24px_rgba(0,0,0,0.02)] opacity-100" : "w-0 border-none opacity-0"}
           `}
         >
-          <div className="w-full flex-1 overflow-y-auto p-6 [direction:rtl] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:bg-slate-300 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-slate-50">
+          {/* HIDE BUTTON (Inside Sidebar) */}
+          <div className="flex-shrink-0 p-2 sticky top-0 bg-white z-50 flex justify-end border-b border-slate-100">
+            <button
+              onClick={() => setIsSidebarOpen(false)}
+              className="p-2 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors flex items-center gap-2"
+              title="Collapse Sidebar"
+            >
+              <span className="text-[10px] font-bold uppercase tracking-wider">
+                Hide
+              </span>
+              <ChevronLeftIcon className="w-4 h-4" />
+            </button>
+          </div>
+
+          <div className="w-full flex-1 overflow-y-auto p-6 pt-4 [direction:rtl] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:bg-slate-300 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-slate-50">
             <div className="[direction:ltr]">
               <HomeSidebar />
             </div>
@@ -63,22 +104,9 @@ export default function HomeContent({
         </div>
 
         {/* Intelligence Feed */}
-        <div className="flex-1 min-w-0">
-          {/* Toggle Button */}
-          <div className="mb-4">
-            <button
-              onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-              className="p-2 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors flex-shrink-0"
-              title={isSidebarOpen ? "Collapse Sidebar" : "Expand Sidebar"}
-            >
-              {isSidebarOpen ? (
-                <ChevronLeftIcon className="w-6 h-6" />
-              ) : (
-                <ChevronRightIcon className="w-6 h-6" />
-              )}
-            </button>
-          </div>
-
+        <div
+          className={`flex-1 min-w-0 transition-all duration-300 ${isSidebarOpen ? "pl-8" : "pl-0"}`}
+        >
           {/* HERO CAROUSEL */}
           <HeroCarousel leadStory={leadStory} />
 

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { NationalMap } from "@/components/dashboard/NationalMap";
 import Sidebar from "@/components/Sidebar";
@@ -73,6 +73,17 @@ export default function DashboardIndex() {
   const [selectedRegion, setSelectedRegion] = useState("All");
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1024) {
+        setIsSidebarOpen(false);
+      }
+    };
+    handleResize(); // Check on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   // FILTER LOGIC
   const filteredStates = useMemo(() => {
     const allStates = Object.values(rhtProgramData);
@@ -121,14 +132,44 @@ export default function DashboardIndex() {
         onClick={() => setIsSidebarOpen(false)}
       />
 
+      {/* EXPAND BUTTON (Sticky, Floating outside sidebar) */}
+      <div
+        className={`sticky top-24 z-50 w-0 h-10 ${isSidebarOpen ? "hidden" : "block"}`}
+      >
+        <button
+          onClick={() => setIsSidebarOpen(true)}
+          className="absolute -left-20 top-0 p-2 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-500 hover:text-indigo-600 transition-all flex flex-row items-center gap-2 animate-pulse hover:animate-none"
+          title="Expand Sidebar"
+        >
+          <ChevronRightIcon className="w-4 h-4" />
+          <span className="text-[10px] font-bold uppercase tracking-wider">
+            Expand
+          </span>
+        </button>
+      </div>
+
       {/* SIDEBAR (Left, Fixed Width) */}
       <div
         className={`
-          bg-white transition-all duration-300 ease-in-out overflow-hidden flex-shrink-0 z-40 rounded-xl border border-slate-200
-          ${isSidebarOpen ? "w-80 shadow-[4px_0_24px_rgba(0,0,0,0.02)] ml-0" : "w-0 border-none"}
+          bg-white transition-all duration-300 ease-in-out overflow-hidden flex-shrink-0 z-40 rounded-xl border border-slate-200 sticky top-24 max-h-[calc(100vh-6rem)] flex flex-col
+          ${isSidebarOpen ? "w-80 shadow-[4px_0_24px_rgba(0,0,0,0.02)] opacity-100 ml-4 lg:ml-0" : "w-0 border-none opacity-0"}
         `}
       >
-        <div className="w-full h-full overflow-y-auto p-6 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
+        {/* HIDE BUTTON (Inside Sidebar) */}
+        <div className="flex-shrink-0 p-2 sticky top-0 bg-white z-50 flex justify-end border-b border-slate-100">
+          <button
+            onClick={() => setIsSidebarOpen(false)}
+            className="p-2 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors flex items-center gap-2"
+            title="Collapse Sidebar"
+          >
+            <span className="text-[10px] font-bold uppercase tracking-wider">
+              Hide
+            </span>
+            <ChevronLeftIcon className="w-4 h-4" />
+          </button>
+        </div>
+
+        <div className="w-full flex-1 overflow-y-auto p-6 pt-4 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
           <Sidebar
             noteData={{
               headline: "Dashboard Intelligence",
@@ -146,17 +187,6 @@ export default function DashboardIndex() {
       <div className="flex-1 min-w-0">
         {/* NATIONAL HUD */}
         <div className="border-b border-slate-200 sticky top-0 bg-white/95 backdrop-blur z-20 flex items-start">
-          <button
-            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-            className="ml-0 mt-0 p-2 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors flex-shrink-0"
-            title={isSidebarOpen ? "Collapse Sidebar" : "Expand Sidebar"}
-          >
-            {isSidebarOpen ? (
-              <ChevronLeftIcon className="w-6 h-6" />
-            ) : (
-              <ChevronRightIcon className="w-6 h-6" />
-            )}
-          </button>
           <div className="flex-1 max-w-7xl mx-auto px-6 py-6">
             <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-6">
               <div>
