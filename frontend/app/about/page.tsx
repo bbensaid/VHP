@@ -75,44 +75,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      <section className="mb-20 bg-slate-50 p-10 rounded-2xl border border-slate-100">
-        <div className="space-y-10">
-          <div>
-            <h2 className="text-3xl font-black text-slate-900 mb-4">
-              Our Mission
-            </h2>
-            <p className="text-xl text-slate-700 leading-relaxed">
-              To accelerate the adoption of sustainable, value-based care models
-              in rural America by decoding the complex interplay of federal
-              policy, market economics, and emerging technology.
-            </p>
-          </div>
-
-          <hr className="border-slate-200" />
-
-          <div>
-            <h2 className="text-3xl font-black text-slate-900 mb-4">
-              Our Vision
-            </h2>
-            <p className="mb-4 text-lg text-slate-600 leading-relaxed">
-              We envision a rural health system that is{" "}
-              <strong>financially resilient</strong>,{" "}
-              <strong>technologically advanced</strong>, and{" "}
-              <strong>clinically integrated</strong>.
-            </p>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              In this future, the "Rural Health Transformation Program" is no
-              longer a pilot, but the standard of care. Small community
-              hospitals operate as high-tech triage and stabilization hubs,
-              connected seamlessly to urban centers of excellence, ensuring that
-              every patient receives the right care, at the right time, in the
-              right place.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* 3 Pillars */}
       <section className="mb-20">
         <div className="text-center mb-12">
