@@ -36,19 +36,12 @@ const technologyItems = [
   { href: "/technology/workflow", label: "Tech-Enabled Workflow" },
 ];
 
-const advisoryItems = [
-  { href: "/advisory/consulting", label: "Strategic Consulting" },
-  { href: "/advisory/research", label: "Custom Research Projects" },
-  { href: "/advisory/reports", label: "Annual Impact Reports" },
-  { href: "/advisory/contact", label: "Hire an Expert" },
-];
-
-const academyItems = [
-  { href: "/education/courses", label: "Executive Masterclasses" },
-  { href: "/education/faculty", label: "Faculty & Experts" },
-  { href: "/education/webinars", label: "Webinars & Events" },
-  { href: "/education/glossary", label: "Glossary" },
-  { href: "/education/case-studies", label: "Case Studies Library" },
+const companyItems = [
+  { href: "/about", label: "About Us" },
+  { href: "/mission", label: "Mission & Vision" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/careers", label: "Careers" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 // --- 2. MAIN COMPONENT ---
@@ -160,12 +153,11 @@ const Header = () => {
             )}
           </div>
           <div className="hidden lg:flex items-center gap-6 whitespace-nowrap">
-            <Link href="/about" className="hover:text-white transition-colors">
-              About
-            </Link>
-            <Link href="/faq" className="hover:text-white transition-colors">
-              FAQ
-            </Link>
+            <NavDropdown
+              label="COMPANY"
+              items={companyItems}
+              buttonClassName="flex items-center gap-1 text-[11px] font-bold tracking-wider uppercase hover:text-white transition-colors text-slate-300"
+            />
             <div className="h-4 w-px bg-slate-700"></div>
             <Link href="/login" className="hover:text-white transition-colors">
               Login
@@ -182,29 +174,17 @@ const Header = () => {
 
       {/* 2. MAIN NAV BAR */}
       <div className="bg-white py-2 border-b border-slate-200 w-full relative z-40">
-        <div className="container mx-auto px-4 md:px-8 flex items-center justify-between gap-2">
+        <div className="container mx-auto px-4 md:px-8 flex items-center justify-between gap-2 xl:gap-16">
           <div className="flex items-center gap-6 xl:gap-8 flex-shrink-0">
             <Link href="/" className="z-50 relative">
               <Logo />
             </Link>
 
             {/* UPDATED NAV ORDER */}
-            <nav className="hidden xl:flex items-center space-x-1 pl-4 border-l border-slate-200 ml-2 h-8">
-              <NavDropdown
-                label="POLICY"
-                items={policyItems}
-                colorClass="text-card-policy"
-              />
-              <NavDropdown
-                label="ECONOMICS"
-                items={economicsItems}
-                colorClass="text-card-economics"
-              />
-              <NavDropdown
-                label="TECHNOLOGY"
-                items={technologyItems}
-                colorClass="text-card-tech"
-              />
+            <nav className="hidden xl:flex items-center gap-10 ml-20 h-8">
+              <NavDropdown label="POLICY" items={policyItems} />
+              <NavDropdown label="ECONOMICS" items={economicsItems} />
+              <NavDropdown label="TECHNOLOGY" items={technologyItems} />
             </nav>
           </div>
 
@@ -231,22 +211,9 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-4 flex-shrink-0">
-            <nav className="hidden xl:flex items-center gap-2">
-              <NavDropdown
-                label="ACADEMY"
-                items={academyItems}
-                colorClass="text-card-academy"
-              />
-              <NavDropdown
-                label="ADVISORY"
-                items={advisoryItems}
-                colorClass="text-card-advisory"
-              />
-            </nav>
-
+          <div className="flex items-center gap-4 flex-shrink-0 xl:hidden">
             <button
-              className="xl:hidden p-2 text-slate-800 hover:bg-slate-100 rounded-md transition-colors"
+              className="p-2 text-slate-800 hover:bg-slate-100 rounded-md transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? (
