@@ -11,7 +11,6 @@ import RightSidebar, {
 import CollapsibleSidebar from "@/components/CollapsibleSidebar";
 import TickerStrip from "@/components/TickerStrip";
 import HeroCarousel from "@/components/HeroCarousel";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 interface HomeContentProps {
   leadStory: any;
@@ -49,7 +48,6 @@ export default function HomeContent({
   const [rightOpenSections, setRightOpenSections] = useState<string[]>([
     "Multimedia",
   ]);
-  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -63,14 +61,6 @@ export default function HomeContent({
     handleResize(); // Check on mount
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleLeftSection = (section: string) => {
@@ -96,32 +86,6 @@ export default function HomeContent({
 
       {/* 2. Main Content */}
       <div className="flex flex-col lg:flex-row mt-8 px-4 md:px-0 container mx-auto transition-all relative">
-        {/* EXPAND BUTTON (Sticky, Floating outside sidebar) */}
-        <div
-          className={`sticky top-24 z-50 w-0 h-10 ${isSidebarOpen ? "hidden" : "block"}`}
-        >
-          <button
-            onClick={() => setIsSidebarOpen(true)}
-            className={`absolute -left-24 top-0 p-2 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-500 hover:text-slate-900 transition-all duration-500 flex flex-row items-center gap-2 ${isScrolled ? "opacity-30 hover:opacity-100" : "opacity-100 animate-pulse hover:animate-none"}`}
-            title="Expand Sidebar"
-          >
-            <ChevronRightIcon className="w-4 h-4" />
-            <span className="text-[10px] font-bold uppercase tracking-wider">
-              Expand
-            </span>
-          </button>
-        </div>
-
-        {/* Sidebar */}
-        <div
-          className={`
-            bg-white transition-all duration-300 ease-in-out overflow-hidden flex-shrink-0 z-40 rounded-xl border border-slate-200 sticky top-24 max-h-[calc(100vh-6rem)] flex flex-col
-            ${isSidebarOpen ? "w-80 shadow-[4px_0_24px_rgba(0,0,0,0.02)] opacity-100" : "w-0 border-none opacity-0"}
-          `}
-        >
-          {/* SIDEBAR HEADER (Expand/Collapse + Hide) */}
-          <div className="flex-shrink-0 p-2 sticky top-0 bg-white z-50 flex justify-between items-center border-b border-slate-100">
-            <div className="flex gap-2">
         {/* LEFT SIDEBAR */}
         <CollapsibleSidebar
           side="left"
@@ -145,18 +109,6 @@ export default function HomeContent({
                   Collapse All
                 </button>
               )}
-            </div>
-            <button
-              onClick={() => setIsSidebarOpen(false)}
-              className="p-2 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors flex items-center gap-2"
-              title="Collapse Sidebar"
-            >
-              <span className="text-[10px] font-bold uppercase tracking-wider">
-                Hide
-              </span>
-              <ChevronLeftIcon className="w-4 h-4" />
-            </button>
-          </div>
             </>
           }
         >
@@ -165,18 +117,6 @@ export default function HomeContent({
             onToggleSection={toggleLeftSection}
           />
         </CollapsibleSidebar>
-
-          <div className="w-80 flex-1 overflow-y-auto p-6 pt-4 [direction:rtl] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:bg-slate-300 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-slate-50">
-            <div className="[direction:ltr]">
-              <HomeSidebar
-                openSections={leftOpenSections}
-                onToggleSection={toggleLeftSection}
-              />
-            </div>
-          </div>
-          {/* Scroll Fade Overlay */}
-          <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none z-10" />
-        </div>
 
         {/* Intelligence Feed */}
         <div
@@ -237,16 +177,6 @@ export default function HomeContent({
           </div>
         </div>
 
-        {/* Right Sidebar (Intelligence Rail) */}
-        <div
-          className={`
-            bg-white transition-all duration-300 ease-in-out overflow-hidden flex-shrink-0 z-40 rounded-xl border border-slate-200 sticky top-24 max-h-[calc(100vh-6rem)] flex flex-col
-            ${isRightSidebarOpen ? "w-80 shadow-[4px_0_24px_rgba(0,0,0,0.02)] opacity-100" : "w-0 border-none opacity-0"}
-          `}
-        >
-          {/* RIGHT SIDEBAR HEADER */}
-          <div className="flex-shrink-0 p-2 sticky top-0 bg-white z-50 flex justify-between items-center border-b border-slate-100 flex-row-reverse">
-            <div className="flex gap-2">
         {/* RIGHT SIDEBAR */}
         <CollapsibleSidebar
           side="right"
@@ -271,44 +201,9 @@ export default function HomeContent({
                   Collapse All
                 </button>
               )}
-            </div>
-            <button
-              onClick={() => setIsRightSidebarOpen(false)}
-              className="p-2 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors flex items-center gap-2"
-              title="Collapse Intelligence Rail"
-            >
-              <ChevronRightIcon className="w-4 h-4" />
-              <span className="text-[10px] font-bold uppercase tracking-wider">
-                Hide
-              </span>
-            </button>
-          </div>
-
-          <div className="w-80 flex-1 overflow-y-auto p-6 pt-4 [direction:ltr] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:bg-slate-300 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-slate-50">
-            <RightSidebar
-              openSections={rightOpenSections}
-              onToggleSection={toggleRightSection}
-            />
-          </div>
-        </div>
-
-        {/* RIGHT EXPAND BUTTON */}
-        <div
-          className={`sticky top-24 z-50 w-0 h-10 ${isRightSidebarOpen ? "hidden" : "block"}`}
             </>
           }
         >
-          <button
-            onClick={() => setIsRightSidebarOpen(true)}
-            className={`absolute -right-24 top-0 p-2 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-500 hover:text-slate-900 transition-all duration-500 flex flex-row items-center gap-2 ${isScrolled ? "opacity-30 hover:opacity-100" : "opacity-100 animate-pulse hover:animate-none"}`}
-            title="Expand Intelligence Rail"
-          >
-            <span className="text-[10px] font-bold uppercase tracking-wider">
-              Expand
-            </span>
-            <ChevronLeftIcon className="w-4 h-4" />
-          </button>
-        </div>
           <RightSidebar
             openSections={rightOpenSections}
             onToggleSection={toggleRightSection}

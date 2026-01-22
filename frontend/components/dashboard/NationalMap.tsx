@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import {
   ComposableMap,
@@ -14,6 +14,9 @@ import {
   PlusIcon,
   MinusIcon,
   ArrowPathIcon,
+  ArrowsPointingOutIcon,
+  ArrowsPointingInIcon,
+  XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { rhtProgramData } from "@/lib/data/rht-program";
 
@@ -148,6 +151,18 @@ const REGION_MAP: Record<string, string> = {
   hawaii: "West",
 };
 
+// Region View Settings (Coordinates + Zoom)
+const REGION_VIEWS: Record<
+  string,
+  { coordinates: [number, number]; zoom: number }
+> = {
+  All: { coordinates: [-96, 37], zoom: 1 },
+  Northeast: { coordinates: [-74, 42], zoom: 2.5 },
+  South: { coordinates: [-88, 33], zoom: 2 },
+  Midwest: { coordinates: [-94, 41], zoom: 2 },
+  West: { coordinates: [-115, 39], zoom: 1.7 },
+};
+
 interface NationalMapProps {
   searchQuery?: string;
   selectedRegion?: string;
@@ -174,6 +189,15 @@ export function NationalMap({
     coordinates: [-96, 37] as [number, number],
     zoom: 1,
   });
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  // Auto-zoom when region changes
+  useEffect(() => {
+    const view = REGION_VIEWS[selectedRegion];
+    if (view) {
+      setPosition(view);
+    }
+  }, [selectedRegion]);
 
   const handleZoomIn = () => {
     if (position.zoom >= 4) return;
@@ -228,14 +252,37 @@ export function NationalMap({
     }
   };
 
+  const toggleFullscreen = () => {
+    setIsFullscreen(!isFullscreen);
+  };
+
   return (
-    <div className="w-full max-w-5xl mx-auto relative">
+    <div
+      className={
+        isFullscreen
+          ? "fixed inset-0 z-[5000] bg-white flex items-center justify-center p-4 h-screen w-screen"
+          : "w-full mx-auto relative transition-all duration-300 ease-in-out"
+      }
+    >
+      {isFullscreen && (
+        <button
+          onClick={toggleFullscreen}
+          className="absolute top-6 right-6 p-2 bg-white rounded-full shadow-md border border-slate-200 hover:bg-slate-100 transition-colors z-50"
+          title="Exit Fullscreen"
+        >
+          <XMarkIcon className="w-6 h-6 text-slate-600" />
+        </button>
+      )}
       <ComposableMap
         projection="geoAlbersUsa"
         viewBox="0 0 800 600"
         width={800}
         height={600}
-        style={{ width: "100%", height: "auto" }}
+        style={{
+          width: "100%",
+          height: isFullscreen ? "100%" : "auto",
+          maxHeight: isFullscreen ? "100vh" : "none",
+        }}
       >
         <ZoomableGroup
           zoom={position.zoom}
@@ -437,6 +484,17 @@ export function NationalMap({
             <ArrowPathIcon className="w-5 h-5" />
           </button>
         )}
+        <button
+          onClick={toggleFullscreen}
+          className="bg-white p-2 rounded-lg shadow-sm border border-slate-200 hover:bg-slate-50 text-slate-600"
+          title={isFullscreen ? "Exit Fullscreen" : "Enter Fullscreen"}
+        >
+          {isFullscreen ? (
+            <ArrowsPointingInIcon className="w-5 h-5" />
+          ) : (
+            <ArrowsPointingOutIcon className="w-5 h-5" />
+          )}
+        </button>
       </div>
 
       {/* Tooltip */}
