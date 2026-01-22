@@ -72,6 +72,7 @@ export default function DashboardIndex() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedRegion, setSelectedRegion] = useState("All");
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -82,6 +83,14 @@ export default function DashboardIndex() {
     handleResize(); // Check on mount
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // FILTER LOGIC
@@ -138,7 +147,7 @@ export default function DashboardIndex() {
       >
         <button
           onClick={() => setIsSidebarOpen(true)}
-          className="absolute -left-20 top-0 p-2 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-500 hover:text-indigo-600 transition-all flex flex-row items-center gap-2 animate-pulse hover:animate-none"
+          className={`absolute -left-20 top-0 p-2 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-500 hover:text-indigo-600 transition-all duration-500 flex flex-row items-center gap-2 ${isScrolled ? "opacity-30 hover:opacity-100" : "opacity-100 animate-pulse hover:animate-none"}`}
           title="Expand Sidebar"
         >
           <ChevronRightIcon className="w-4 h-4" />
@@ -169,7 +178,7 @@ export default function DashboardIndex() {
           </button>
         </div>
 
-        <div className="w-full flex-1 overflow-y-auto p-6 pt-4 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
+        <div className="w-80 flex-1 overflow-y-auto p-6 pt-4 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
           <Sidebar
             noteData={{
               headline: "Dashboard Intelligence",
