@@ -17,6 +17,8 @@ import {
   ArrowsPointingOutIcon,
   ArrowsPointingInIcon,
   XMarkIcon,
+  ChevronUpIcon,
+  ChevronDownIcon,
 } from "@heroicons/react/24/outline";
 import { rhtProgramData } from "@/lib/data/rht-program";
 
@@ -190,6 +192,7 @@ export function NationalMap({
     zoom: 1,
   });
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isLegendOpen, setIsLegendOpen] = useState(true);
 
   // Auto-zoom when region changes
   useEffect(() => {
@@ -198,6 +201,15 @@ export function NationalMap({
       setPosition(view);
     }
   }, [selectedRegion]);
+
+  // Auto-collapse legend when zoomed in
+  useEffect(() => {
+    if (position.zoom > 1.1) {
+      setIsLegendOpen(false);
+    } else {
+      setIsLegendOpen(true);
+    }
+  }, [position.zoom]);
 
   const handleZoomIn = () => {
     if (position.zoom >= 4) return;
@@ -458,7 +470,7 @@ export function NationalMap({
       </ComposableMap>
 
       {/* Zoom Controls */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-row gap-2">
+      <div className="absolute bottom-1 left-1/2 -translate-x-1/2 flex flex-row gap-2">
         <button
           onClick={handleZoomIn}
           className="bg-white p-2 rounded-lg shadow-sm border border-slate-200 hover:bg-slate-50 text-slate-600"
@@ -511,24 +523,40 @@ export function NationalMap({
       )}
 
       {/* Legend */}
-      <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur p-4 rounded-xl shadow-sm border border-slate-200 text-xs space-y-2">
-        <div className="font-bold text-slate-900 mb-1">Status Key</div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-emerald-400"></div>
-          <span className="text-slate-600 font-medium">Active</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-amber-400"></div>
-          <span className="text-slate-600 font-medium">Watch</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-rose-600"></div>
-          <span className="text-slate-600 font-medium">Critical</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-slate-200"></div>
-          <span className="text-slate-600 font-medium">No Data</span>
-        </div>
+      <div
+        className={`absolute ${isFullscreen ? "bottom-8" : "-bottom-16"} right-10 bg-white/95 backdrop-blur rounded-xl shadow-sm border border-slate-200 text-xs transition-all duration-300 overflow-hidden`}
+      >
+        <button
+          onClick={() => setIsLegendOpen(!isLegendOpen)}
+          className="flex items-center justify-between gap-2 p-3 w-full font-bold text-slate-900 hover:bg-slate-50 transition-colors"
+        >
+          <span>Status Key</span>
+          {isLegendOpen ? (
+            <ChevronDownIcon className="w-3 h-3" />
+          ) : (
+            <ChevronUpIcon className="w-3 h-3" />
+          )}
+        </button>
+        {isLegendOpen && (
+          <div className="px-3 pb-3 space-y-1">
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full bg-emerald-400"></div>
+              <span className="text-slate-600 font-medium">Active</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full bg-amber-400"></div>
+              <span className="text-slate-600 font-medium">Watch</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full bg-rose-600"></div>
+              <span className="text-slate-600 font-medium">Critical</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full bg-slate-200"></div>
+              <span className="text-slate-600 font-medium">No Data</span>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

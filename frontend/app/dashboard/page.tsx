@@ -17,6 +17,8 @@ import {
   FunnelIcon,
   MagnifyingGlassIcon,
   XMarkIcon,
+  ChevronUpIcon,
+  ChevronDownIcon,
 } from "@heroicons/react/24/outline";
 
 // REGION MAPPING
@@ -78,6 +80,10 @@ export default function DashboardIndex() {
   const [rightOpenSections, setRightOpenSections] = useState<string[]>([
     "Multimedia",
   ]);
+  const [sortConfig, setSortConfig] = useState<{
+    key: string;
+    direction: "asc" | "desc";
+  } | null>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -91,6 +97,18 @@ export default function DashboardIndex() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const handleSort = (key: string) => {
+    let direction: "asc" | "desc" = "desc";
+    if (
+      sortConfig &&
+      sortConfig.key === key &&
+      sortConfig.direction === "desc"
+    ) {
+      direction = "asc";
+    }
+    setSortConfig({ key, direction });
+  };
+
   const toggleRightSection = (section: string) => {
     setRightOpenSections((prev) =>
       prev.includes(section)
@@ -103,7 +121,7 @@ export default function DashboardIndex() {
   const filteredStates = useMemo(() => {
     const allStates = Object.values(rhtProgramData);
 
-    return allStates.filter((state) => {
+    let result = allStates.filter((state) => {
       const matchesSearch = state.stateName
         .toLowerCase()
         .includes(searchQuery.toLowerCase());
@@ -112,7 +130,27 @@ export default function DashboardIndex() {
         selectedRegion === "All" || region === selectedRegion;
       return matchesSearch && matchesRegion;
     });
-  }, [searchQuery, selectedRegion]);
+
+    if (sortConfig !== null) {
+      result.sort((a, b) => {
+        if (sortConfig.key === "awardAmount") {
+          const valA = parseInt(a.awardAmount.replace(/[^0-9]/g, "")) || 0;
+          const valB = parseInt(b.awardAmount.replace(/[^0-9]/g, "")) || 0;
+          if (valA < valB) return sortConfig.direction === "asc" ? -1 : 1;
+          if (valA > valB) return sortConfig.direction === "asc" ? 1 : -1;
+          return 0;
+        }
+        if (sortConfig.key === "stateName") {
+          return sortConfig.direction === "asc"
+            ? a.stateName.localeCompare(b.stateName)
+            : b.stateName.localeCompare(a.stateName);
+        }
+        return 0;
+      });
+    }
+
+    return result;
+  }, [searchQuery, selectedRegion, sortConfig]);
 
   // DYNAMIC METRICS
   const metrics = useMemo(() => {
@@ -357,8 +395,34 @@ export default function DashboardIndex() {
               <table className="w-full text-left text-sm">
                 <thead className="bg-slate-50 border-b border-slate-200 text-xs font-bold text-slate-500 uppercase tracking-wider">
                   <tr>
-                    <th className="p-4 pl-6">State</th>
-                    <th className="p-4">RHT Award (FY26)</th>
+                    <th
+                      className="p-4 pl-6 cursor-pointer hover:bg-slate-100 transition-colors group select-none"
+                      onClick={() => handleSort("stateName")}
+                    >
+                      <div className="flex items-center gap-1">
+                        State
+                        {sortConfig?.key === "stateName" &&
+                          (sortConfig.direction === "asc" ? (
+                            <ChevronUpIcon className="w-3 h-3 text-indigo-600" />
+                          ) : (
+                            <ChevronDownIcon className="w-3 h-3 text-indigo-600" />
+                          ))}
+                      </div>
+                    </th>
+                    <th
+                      className="p-4 cursor-pointer hover:bg-slate-100 transition-colors group select-none"
+                      onClick={() => handleSort("awardAmount")}
+                    >
+                      <div className="flex items-center gap-1">
+                        RHT Award (FY26)
+                        {sortConfig?.key === "awardAmount" &&
+                          (sortConfig.direction === "asc" ? (
+                            <ChevronUpIcon className="w-3 h-3 text-indigo-600" />
+                          ) : (
+                            <ChevronDownIcon className="w-3 h-3 text-indigo-600" />
+                          ))}
+                      </div>
+                    </th>
                     <th className="p-4">Region</th>
                     <th className="p-4">Strategic Focus</th>
                     <th className="p-4 text-right pr-6">Action</th>
