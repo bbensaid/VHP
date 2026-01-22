@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -9,12 +9,6 @@ import {
   ChevronUpIcon,
   ChevronDownIcon,
   BuildingOfficeIcon,
-  MicrophoneIcon,
-  VideoCameraIcon,
-  FilmIcon,
-  SparklesIcon,
-  PaperAirplaneIcon,
-  TrashIcon,
 } from "@heroicons/react/24/outline";
 
 const academyItems = [
@@ -32,34 +26,18 @@ const advisoryItems = [
   { href: "/advisory/contact", label: "Hire an Expert" },
 ];
 
-const mediaItems = [
-  { href: "/media/podcasts", label: "HTR Podcast Network" },
-  { href: "/media/videos", label: "Video Briefings" },
-  { href: "/media/library", label: "Full Multimedia Library" },
-];
+export const ALL_SECTIONS = ["Academy", "Advisory", "Company"];
 
-const ALL_SECTIONS = ["Academy", "Advisory", "Multimedia"];
+interface HomeSidebarProps {
+  openSections: string[];
+  onToggleSection: (section: string) => void;
+}
 
-export default function HomeSidebar() {
-  const [openSections, setOpenSections] = useState<string[]>([]);
-  const [isChatOpen, setIsChatOpen] = useState(false);
+export default function HomeSidebar({
+  openSections,
+  onToggleSection,
+}: HomeSidebarProps) {
   const [showBackToTop, setShowBackToTop] = useState(false);
-  const [chatMessages, setChatMessages] = useState([
-    { role: "user", text: "What is the impact of the new RHTP guidelines?" },
-    {
-      role: "ai",
-      text: "The new guidelines prioritize global budgets over fee-for-service, aiming to stabilize rural hospital revenue.",
-    },
-  ]);
-
-  const chatContainerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (chatContainerRef.current) {
-      chatContainerRef.current.scrollTop =
-        chatContainerRef.current.scrollHeight;
-    }
-  }, [chatMessages, isChatOpen]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,24 +51,6 @@ export default function HomeSidebar() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const toggleSection = (section: string) => {
-    setOpenSections((prev) =>
-      prev.includes(section)
-        ? prev.filter((s) => s !== section)
-        : [...prev, section]
-    );
-  };
-
-  const handleExpandAll = () => {
-    setOpenSections(ALL_SECTIONS);
-    scrollToTop();
-  };
-
-  const handleCollapseAll = () => {
-    setOpenSections([]);
-    scrollToTop();
-  };
-
   const renderPillar = (
     title: string,
     icon: React.ReactNode,
@@ -101,7 +61,7 @@ export default function HomeSidebar() {
     return (
       <div className="border-b border-slate-100 last:border-0">
         <button
-          onClick={() => toggleSection(title)}
+          onClick={() => onToggleSection(title)}
           className={`w-full flex items-center justify-between py-3 px-3 my-1 rounded-lg group transition-all duration-200 focus:outline-none border border-slate-200 ${isOpen ? "bg-slate-100 text-slate-900" : "bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900"}`}
         >
           <div className="flex items-center gap-3">
@@ -147,29 +107,6 @@ export default function HomeSidebar() {
     <aside className="w-full flex flex-col gap-6">
       {/* QUICK ACTIONS */}
       <div>
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest">
-            Quick Actions
-          </h3>
-          <div className="flex gap-3">
-            {openSections.length < ALL_SECTIONS.length && (
-              <button
-                onClick={handleExpandAll}
-                className="text-[10px] font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-wider transition-colors"
-              >
-                Expand All
-              </button>
-            )}
-            {openSections.length > 0 && (
-              <button
-                onClick={handleCollapseAll}
-                className="text-[10px] font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-wider transition-colors"
-              >
-                Collapse All
-              </button>
-            )}
-          </div>
-        </div>
         <div className="space-y-2">
           <Link
             href="/dashboard"
@@ -210,86 +147,6 @@ export default function HomeSidebar() {
         </div>
       </div>
 
-      {/* AI ANALYST (CHATBOX) */}
-      <div
-        className={`bg-white border border-slate-200 rounded-xl p-5 text-slate-900 shadow-sm relative overflow-hidden group transition-all duration-500 ease-in-out ${isChatOpen ? "h-96" : "h-auto"}`}
-      >
-        <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-slate-50 rounded-full blur-2xl"></div>
-
-        <button
-          onClick={() => setIsChatOpen(!isChatOpen)}
-          className="flex items-center justify-between w-full mb-3 relative z-10 focus:outline-none"
-        >
-          <div className="flex items-center gap-2">
-            <SparklesIcon className="w-5 h-5 text-slate-600" />
-            <h3 className="font-bold text-sm uppercase tracking-wider text-slate-700">
-              AI Analyst
-            </h3>
-          </div>
-          <ChevronDownIcon
-            className={`w-4 h-4 text-slate-400 transition-transform duration-300 ${isChatOpen ? "rotate-180" : ""}`}
-          />
-        </button>
-
-        {!isChatOpen && (
-          <p className="text-xs text-slate-500 mb-4 relative z-10 leading-relaxed font-medium animate-in fade-in">
-            Ask questions about policy impact, reimbursement models, or
-            workforce trends.
-          </p>
-        )}
-
-        {isChatOpen && (
-          <div className="mb-4 h-56 relative animate-in fade-in slide-in-from-bottom-2 duration-300">
-            {chatMessages.length > 0 && (
-              <button
-                onClick={() => setChatMessages([])}
-                className="absolute top-0 right-0 z-10 flex items-center gap-1 text-[10px] font-medium text-slate-400 hover:text-slate-600 bg-slate-50 hover:bg-slate-100 px-2 py-1 rounded transition-colors"
-              >
-                <TrashIcon className="w-3 h-3" /> Clear
-              </button>
-            )}
-            <div
-              ref={chatContainerRef}
-              className="h-full overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent pt-6"
-            >
-              <div className="flex flex-col gap-2">
-                {chatMessages.map((msg, i) => (
-                  <div
-                    key={i}
-                    className={`self-${msg.role === "user" ? "end" : "start"} ${
-                      msg.role === "user"
-                        ? "bg-slate-100 text-slate-900 rounded-tr-none"
-                        : "bg-slate-100 text-slate-700 border border-slate-200 rounded-tl-none"
-                    } rounded-lg py-2 px-3 text-xs max-w-[90%]`}
-                  >
-                    {msg.text}
-                  </div>
-                ))}
-                {chatMessages.length === 0 && (
-                  <div className="h-full flex items-center justify-center text-slate-400 text-xs italic mt-10">
-                    Chat history cleared
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        )}
-
-        <div className="relative z-10 mt-auto">
-          <div className="relative flex items-center">
-            <input
-              type="text"
-              placeholder="Ask HTR Intelligence..."
-              className="w-full bg-slate-50 border border-slate-200 rounded-lg py-2.5 pl-3 pr-10 text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:bg-white focus:border-slate-300 transition-all"
-              onFocus={() => setIsChatOpen(true)}
-            />
-            <button className="absolute right-1.5 p-1.5 bg-slate-800 text-white rounded-md hover:bg-slate-700 transition-colors shadow-sm">
-              <PaperAirplaneIcon className="w-3 h-3" />
-            </button>
-          </div>
-        </div>
-      </div>
-
       {/* ACADEMY ACCORDION */}
       <div className="mt-2">
         {renderPillar("Academy", <AcademicCapIcon />, academyItems)}
@@ -299,23 +156,6 @@ export default function HomeSidebar() {
       <div className="mt-2">
         {renderPillar("Advisory", <BriefcaseIcon />, advisoryItems)}
       </div>
-
-      {/* MULTIMEDIA ACCORDION */}
-      <div className="mt-2">
-        {renderPillar("Multimedia", <FilmIcon />, mediaItems)}
-      </div>
-
-      {/* BOTTOM COLLAPSE ALL */}
-      {openSections.length > 0 && (
-        <div className="flex justify-center">
-          <button
-            onClick={handleCollapseAll}
-            className="text-[10px] font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-wider transition-colors"
-          >
-            Collapse All
-          </button>
-        </div>
-      )}
 
       {/* BACK TO TOP */}
       <div
