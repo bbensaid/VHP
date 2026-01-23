@@ -45,9 +45,7 @@ export default function HomeContent({
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isRightSidebarOpen, setIsRightSidebarOpen] = useState(true);
   const [leftOpenSections, setLeftOpenSections] = useState<string[]>([]);
-  const [rightOpenSections, setRightOpenSections] = useState<string[]>([
-    "Multimedia",
-  ]);
+  const [rightOpenSections, setRightOpenSections] = useState<string[]>([]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -67,7 +65,7 @@ export default function HomeContent({
     setLeftOpenSections((prev) =>
       prev.includes(section)
         ? prev.filter((s) => s !== section)
-        : [...prev, section]
+        : [...prev, section],
     );
   };
 
@@ -75,7 +73,7 @@ export default function HomeContent({
     setRightOpenSections((prev) =>
       prev.includes(section)
         ? prev.filter((s) => s !== section)
-        : [...prev, section]
+        : [...prev, section],
     );
   };
 

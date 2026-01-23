@@ -9,6 +9,8 @@ import {
   ChevronUpIcon,
   ChevronDownIcon,
   BuildingOfficeIcon,
+  FilmIcon,
+  ArrowTrendingUpIcon,
 } from "@heroicons/react/24/outline";
 
 const academyItems = [
@@ -26,7 +28,25 @@ const advisoryItems = [
   { href: "/advisory/contact", label: "Hire an Expert" },
 ];
 
-export const ALL_SECTIONS = ["Academy", "Advisory", "Company"];
+const mediaItems = [
+  { href: "/media/podcasts", label: "HTR Podcast Network" },
+  { href: "/media/videos", label: "Video Briefings" },
+  { href: "/media/library", label: "Full Multimedia Library" },
+];
+
+const trendingItems = [
+  { href: "/topics/value-based-care", label: "Value-Based Care Models" },
+  { href: "/topics/workforce", label: "Clinical Workforce Gaps" },
+  { href: "/topics/telehealth", label: "Telehealth Reimbursement" },
+];
+
+export const ALL_SECTIONS = [
+  "Academy",
+  "Advisory",
+  "Multimedia",
+  "Trending Topics",
+  "Company",
+];
 
 interface HomeSidebarProps {
   openSections: string[];
@@ -54,7 +74,7 @@ export default function HomeSidebar({
   const renderPillar = (
     title: string,
     icon: React.ReactNode,
-    items: { href: string; label: string }[]
+    items: { href: string; label: string }[],
   ) => {
     const isOpen = openSections.includes(title);
 
@@ -155,6 +175,20 @@ export default function HomeSidebar({
       {/* ADVISORY ACCORDION */}
       <div className="mt-2">
         {renderPillar("Advisory", <BriefcaseIcon />, advisoryItems)}
+      </div>
+
+      {/* MULTIMEDIA ACCORDION */}
+      <div className="mt-2">
+        {renderPillar("Multimedia", <FilmIcon />, mediaItems)}
+      </div>
+
+      {/* TRENDING TOPICS ACCORDION */}
+      <div className="mt-2">
+        {renderPillar(
+          "Trending Topics",
+          <ArrowTrendingUpIcon />,
+          trendingItems,
+        )}
       </div>
 
       {/* BACK TO TOP */}
