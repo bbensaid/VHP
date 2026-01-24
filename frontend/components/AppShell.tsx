@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import HomeSidebar, {
   ALL_SECTIONS as HOME_SECTIONS,
 } from "@/components/HomeSidebar";
@@ -19,6 +20,8 @@ interface AppShellProps {
 }
 
 export default function AppShell({ children, tickerData }: AppShellProps) {
+  const pathname = usePathname();
+  const isHomepage = pathname === "/";
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isRightSidebarOpen, setIsRightSidebarOpen] = useState(true);
   const [leftOpenSections, setLeftOpenSections] = useState<string[]>([]);
@@ -87,15 +90,15 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
       {isStickyBarVisible && (
         <div className="sticky top-28 z-40 h-8 flex justify-center transition-all duration-300 pointer-events-none">
           <div className="container mx-auto px-4 md:px-0 h-full pointer-events-auto">
-            <div className="h-full flex items-center justify-between w-full">
+            <div className="h-full flex items-center w-full">
               {showBreadcrumbs && (
-                <div className="flex-shrink-0 flex items-center h-full">
+                <div className="flex-shrink-0 flex items-center h-full min-w-[260px]">
                   <Breadcrumbs />
                 </div>
               )}
 
               {showTicker && (
-                <div className="flex-1 flex items-center h-full min-w-0 ml-30 pr-2">
+                <div className="flex-1 flex items-center h-full min-w-0 ml-24">
                   <div className="flex-1 min-w-0 h-full">
                     <TickerStrip
                       tickerData={activeTickerData}
@@ -115,7 +118,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
               {showRestore && (
                 <button
                   onClick={() => setStripVisible(true)}
-                  className="ml-auto flex items-center gap-2 text-[10px] font-bold text-slate-500 hover:text-indigo-600 uppercase tracking-wider transition-colors"
+                  className="ml-auto flex items-center gap-2 text-[10px] font-bold text-slate-500 hover:text-indigo-600 uppercase tracking-wider transition-colors bg-white/90 backdrop-blur px-3 py-1 rounded-full border border-slate-200 shadow-sm"
                 >
                   <ArrowPathIcon className="w-3 h-3" /> Restore Vitals
                 </button>
