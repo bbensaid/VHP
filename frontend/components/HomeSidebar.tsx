@@ -51,11 +51,13 @@ export const ALL_SECTIONS = [
 interface HomeSidebarProps {
   openSections: string[];
   onToggleSection: (section: string) => void;
+  onNavigate?: () => void;
 }
 
 export default function HomeSidebar({
   openSections,
   onToggleSection,
+  onNavigate,
 }: HomeSidebarProps) {
   const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -110,6 +112,7 @@ export default function HomeSidebar({
                 <li key={item.href}>
                   <Link
                     href={item.href}
+                    onClick={onNavigate}
                     className="block px-3 py-2 text-sm font-medium text-slate-500 hover:text-slate-900 hover:bg-slate-100 rounded-md transition-colors duration-200"
                   >
                     {item.label}
@@ -130,6 +133,7 @@ export default function HomeSidebar({
         <div className="space-y-2">
           <Link
             href="/dashboard"
+            onClick={onNavigate}
             title="View the national surveillance map and active state cohorts"
             className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
           >
@@ -148,6 +152,7 @@ export default function HomeSidebar({
           </Link>
           <Link
             href="/dashboard/vermont"
+            onClick={onNavigate}
             title="Read the detailed case study on Vermont's health reform"
             className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
           >

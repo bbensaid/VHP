@@ -33,7 +33,7 @@ const CategoryPage: React.FC<Props> = async ({
   const borderClass = colorClass.replace("text-", "border-"); // turns text-card-ops -> border-card-ops
 
   return (
-    <div className="py-16 px-4 md:px-8 max-w-7xl mx-auto">
+    <>
       {/* HEADER */}
       <div className="mb-16 border-b border-ui-border pb-8">
         <span
@@ -104,7 +104,7 @@ const CategoryPage: React.FC<Props> = async ({
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

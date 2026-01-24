@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   try {
-    const { message
+    const { message, temperature, systemPrompt } = await req.json();
     if (!message) {
       return NextResponse.json(
         { response: "Please provide a message." },
@@ -28,9 +28,12 @@ export async function POST(req: Request) {
 
     const defaultContext = `You are an expert AI Analyst for the Health Transformation Review (HTR). 
     Your audience consists of healthcare executives, policy makers, and economists.
-    Answeron policy, economics, and technology implications.`;
+    Answer the following question concisely and professionally.
+    Focus on policy, economics, and technology implications.`;
 
     const systemContext = `${systemPrompt || defaultContext}\n\nQuestion: ${message}`;
+    const result = await model.generateContentStream(systemContext);
+
     const stream = new ReadableStream({
       async start(controller) {
         const encoder = new TextEncoder();

@@ -8,7 +8,9 @@ import {
   Bars3Icon,
   XMarkIcon,
   ArrowRightIcon,
+  ArrowPathIcon,
 } from "@heroicons/react/24/outline";
+import { useTicker } from "@/components/TickerContext";
 
 // --- 1. CONTENT CONFIGURATION ---
 
@@ -48,7 +50,8 @@ const companyItems = [
 const Header = () => {
   const [dateString, setDateString] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [showTicker, setShowTicker] = useState(true);
+  const { isHeaderVisible, setHeaderVisible, isStripVisible, setStripVisible } =
+    useTicker();
 
   const [headlines, setHeadlines] = useState<{ text: string; url: string }[]>([
     { text: "Loading Intelligence...", url: "#" },
@@ -61,7 +64,7 @@ const Header = () => {
         year: "numeric",
         month: "long",
         day: "numeric",
-      })
+      }),
     );
 
     async function fetchTicker() {
@@ -108,20 +111,31 @@ const Header = () => {
             <div className="flex items-center gap-2 pr-3 z-10 bg-slate-900 flex-shrink-0">
               <input
                 type="checkbox"
-                checked={showTicker}
-                onChange={() => setShowTicker(!showTicker)}
+                checked={isHeaderVisible}
+                onChange={() => setHeaderVisible(!isHeaderVisible)}
                 className="w-3 h-3 cursor-pointer accent-indigo-500 hover:accent-indigo-400"
                 title="Toggle News Feed"
               />
               <span
                 className="text-white font-bold whitespace-nowrap cursor-pointer"
-                onClick={() => setShowTicker(!showTicker)}
+                onClick={() => setHeaderVisible(!isHeaderVisible)}
               >
                 DAILY INSIGHT
               </span>
               <span className="text-slate-600">|</span>
+              {!isStripVisible && (
+                <>
+                  <button
+                    onClick={() => setStripVisible(true)}
+                    className="text-[10px] font-bold text-indigo-400 hover:text-indigo-300 uppercase tracking-wider flex items-center gap-1 ml-1"
+                  >
+                    <ArrowPathIcon className="w-3 h-3" /> Restore Vitals
+                  </button>
+                  <span className="text-slate-600">|</span>
+                </>
+              )}
             </div>
-            {showTicker && (
+            {isHeaderVisible ? (
               <div className="relative overflow-hidden flex-1 h-5 mask-linear-fade animate-in fade-in zoom-in duration-300">
                 <div className="animate-marquee whitespace-nowrap absolute top-0 left-0 flex items-center gap-8 w-max">
                   {headlines.map((item, index) => (
@@ -150,6 +164,10 @@ const Header = () => {
                   ))}
                 </div>
               </div>
+            ) : (
+              <span className="text-slate-500 text-[10px] font-medium uppercase tracking-wider ml-2">
+                Feed Paused
+              </span>
             )}
           </div>
           <div className="hidden lg:flex items-center gap-6 whitespace-nowrap">
