@@ -11,6 +11,7 @@ interface CollapsibleSidebarProps {
   headerContent?: React.ReactNode; // For "Expand All / Collapse All" buttons
   expandLabel?: string;
   hideLabel?: string;
+  stickyTop?: string;
 }
 
 export default function CollapsibleSidebar({
@@ -21,6 +22,7 @@ export default function CollapsibleSidebar({
   headerContent,
   expandLabel = "Expand",
   hideLabel = "Hide",
+  stickyTop = "6rem",
 }: CollapsibleSidebarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const isLeft = side === "left";
@@ -37,7 +39,8 @@ export default function CollapsibleSidebar({
     <>
       {/* EXPAND BUTTON (Sticky, Floating outside sidebar) */}
       <div
-        className={`sticky top-24 z-50 w-0 h-10 ${isOpen ? "hidden" : "block"}`}
+        className={`sticky z-50 w-0 h-10 ${isOpen ? "hidden" : "block"}`}
+        style={{ top: stickyTop }}
       >
         <button
           onClick={() => setIsOpen(true)}
@@ -55,9 +58,10 @@ export default function CollapsibleSidebar({
       {/* SIDEBAR CONTAINER */}
       <div
         className={`
-          bg-white transition-all duration-300 ease-in-out overflow-hidden flex-shrink-0 z-40 rounded-xl border border-slate-200 sticky top-24 max-h-[calc(100vh-6rem)] flex flex-col
+          bg-white transition-all duration-300 ease-in-out overflow-hidden flex-shrink-0 z-40 rounded-xl border border-slate-200 sticky flex flex-col
           ${isOpen ? "w-80 shadow-[4px_0_24px_rgba(0,0,0,0.02)] opacity-100" : "w-0 border-none opacity-0"}
         `}
+        style={{ top: stickyTop, maxHeight: `calc(100vh - ${stickyTop})` }}
       >
         {/* SIDEBAR HEADER */}
         <div

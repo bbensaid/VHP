@@ -1,15 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
-import HomeSidebar, {
-  ALL_SECTIONS as HOME_SECTIONS,
-} from "@/components/HomeSidebar";
-import RightSidebar, {
-  ALL_SECTIONS as RIGHT_SECTIONS,
-} from "@/components/RightSidebar";
-import CollapsibleSidebar from "@/components/CollapsibleSidebar";
-import TickerStrip from "@/components/TickerStrip";
 import HeroCarousel from "@/components/HeroCarousel";
 
 interface HomeContentProps {
@@ -42,172 +34,61 @@ export default function HomeContent({
   feed,
   ticker,
 }: HomeContentProps) {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-  const [isRightSidebarOpen, setIsRightSidebarOpen] = useState(true);
-  const [leftOpenSections, setLeftOpenSections] = useState<string[]>([]);
-  const [rightOpenSections, setRightOpenSections] = useState<string[]>([]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 1024) {
-        setIsSidebarOpen(false);
-      }
-      if (window.innerWidth < 1280) {
-        setIsRightSidebarOpen(false);
-      }
-    };
-    handleResize(); // Check on mount
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const toggleLeftSection = (section: string) => {
-    setLeftOpenSections((prev) =>
-      prev.includes(section)
-        ? prev.filter((s) => s !== section)
-        : [...prev, section],
-    );
-  };
-
-  const toggleRightSection = (section: string) => {
-    setRightOpenSections((prev) =>
-      prev.includes(section)
-        ? prev.filter((s) => s !== section)
-        : [...prev, section],
-    );
-  };
-
   return (
-    <div className="min-h-screen bg-white">
-      {/* 1. TickerStrip */}
-      <TickerStrip tickerData={ticker} />
+    <>
+      {/* HERO CAROUSEL */}
+      <HeroCarousel leadStory={leadStory} />
 
-      {/* 2. Main Content */}
-      <div className="flex flex-col lg:flex-row mt-8 px-4 md:px-0 container mx-auto transition-all relative">
-        {/* LEFT SIDEBAR */}
-        <CollapsibleSidebar
-          side="left"
-          isOpen={isSidebarOpen}
-          setIsOpen={setIsSidebarOpen}
-          headerContent={
-            <>
-              {leftOpenSections.length < HOME_SECTIONS.length && (
-                <button
-                  onClick={() => setLeftOpenSections(HOME_SECTIONS)}
-                  className="text-[10px] font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-wider transition-colors"
-                >
-                  Expand All
-                </button>
-              )}
-              {leftOpenSections.length > 0 && (
-                <button
-                  onClick={() => setLeftOpenSections([])}
-                  className="text-[10px] font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-wider transition-colors"
-                >
-                  Collapse All
-                </button>
-              )}
-            </>
-          }
-        >
-          <HomeSidebar
-            openSections={leftOpenSections}
-            onToggleSection={toggleLeftSection}
-          />
-        </CollapsibleSidebar>
-
-        {/* Intelligence Feed */}
-        <div
-          className={`flex-1 min-w-0 transition-all duration-300 ${isSidebarOpen ? "pl-8" : "pl-0"} ${isRightSidebarOpen ? "pr-8" : "pr-0"}`}
-        >
-          {/* HERO CAROUSEL */}
-          <HeroCarousel leadStory={leadStory} />
-
-          {/* THE WIRE */}
-          <div>
-            <div className="flex items-center justify-between mb-6 border-b border-slate-200 pb-2">
-              <h2 className="text-xl font-black text-slate-900 uppercase tracking-tight">
-                The Wire{" "}
-                <span className="text-slate-400 font-normal normal-case ml-2 text-base">
-                  Real-time Intelligence
-                </span>
-              </h2>
-              <Link
-                href="/advisory/reports"
-                className="text-xs font-bold text-slate-500 hover:text-indigo-600"
-              >
-                View All
-              </Link>
-            </div>
-            <div className="space-y-4">
-              {feed?.map((item: any, index: number) => (
-                <div
-                  key={index}
-                  className="flex flex-col md:flex-row md:items-center gap-3 md:gap-6 py-4 border-b border-slate-100 hover:bg-slate-50 transition-colors p-2 rounded -mx-2 group"
-                >
-                  <div className="flex items-center gap-3 w-40 flex-shrink-0">
-                    <span
-                      className={`text-[10px] font-black px-2 py-1 rounded w-16 text-center border ${getCategoryStyle(item._type, item.pillar)}`}
-                    >
-                      {getCategoryLabel(item._type, item.pillar)}
-                    </span>
-                  </div>
-                  <div className="flex-grow">
-                    <Link
-                      href={
-                        item._type === "webinar"
-                          ? `/education/webinars/${item.slug}`
-                          : item._type === "course"
-                            ? `/education/courses/${item.slug}`
-                            : `/advisory/reports`
-                      }
-                      className="text-base font-bold text-slate-800 leading-snug hover:text-indigo-600"
-                    >
-                      {item.title}
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <button className="w-full mt-8 py-3 border border-slate-200 text-slate-500 font-bold text-sm rounded hover:bg-slate-50 hover:text-slate-900 transition-colors">
-              Load More Intelligence
-            </button>
-          </div>
+      {/* THE WIRE */}
+      <div>
+        <div className="flex items-center justify-between mb-6 border-b border-slate-200 pb-2">
+          <h2 className="text-xl font-black text-slate-900 uppercase tracking-tight">
+            The Wire{" "}
+            <span className="text-slate-400 font-normal normal-case ml-2 text-base">
+              Real-time Intelligence
+            </span>
+          </h2>
+          <Link
+            href="/advisory/reports"
+            className="text-xs font-bold text-slate-500 hover:text-indigo-600"
+          >
+            View All
+          </Link>
         </div>
-
-        {/* RIGHT SIDEBAR */}
-        <CollapsibleSidebar
-          side="right"
-          isOpen={isRightSidebarOpen}
-          setIsOpen={setIsRightSidebarOpen}
-          expandLabel="Expand Intelligence Rail"
-          headerContent={
-            <>
-              {rightOpenSections.length < RIGHT_SECTIONS.length && (
-                <button
-                  onClick={() => setRightOpenSections(RIGHT_SECTIONS)}
-                  className="text-[10px] font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-wider transition-colors"
+        <div className="space-y-4">
+          {feed?.map((item: any, index: number) => (
+            <div
+              key={index}
+              className="flex flex-col md:flex-row md:items-center gap-3 md:gap-6 py-4 border-b border-slate-100 hover:bg-slate-50 transition-colors p-2 rounded -mx-2 group"
+            >
+              <div className="flex items-center gap-3 w-40 flex-shrink-0">
+                <span
+                  className={`text-[10px] font-black px-2 py-1 rounded w-16 text-center border ${getCategoryStyle(item._type, item.pillar)}`}
                 >
-                  Expand All
-                </button>
-              )}
-              {rightOpenSections.length > 0 && (
-                <button
-                  onClick={() => setRightOpenSections([])}
-                  className="text-[10px] font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-wider transition-colors"
+                  {getCategoryLabel(item._type, item.pillar)}
+                </span>
+              </div>
+              <div className="flex-grow">
+                <Link
+                  href={
+                    item._type === "webinar"
+                      ? `/education/webinars/${item.slug}`
+                      : item._type === "course"
+                        ? `/education/courses/${item.slug}`
+                        : `/advisory/reports`
+                  }
+                  className="text-base font-bold text-slate-800 leading-snug hover:text-indigo-600"
                 >
-                  Collapse All
-                </button>
-              )}
-            </>
-          }
-        >
-          <RightSidebar
-            openSections={rightOpenSections}
-            onToggleSection={toggleRightSection}
-          />
-        </CollapsibleSidebar>
+                  {item.title}
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+        <button className="w-full mt-8 py-3 border border-slate-200 text-slate-500 font-bold text-sm rounded hover:bg-slate-50 hover:text-slate-900 transition-colors">
+          Load More Intelligence
+        </button>
       </div>
-    </div>
+    </>
   );
 }
