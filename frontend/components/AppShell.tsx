@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
 import HomeSidebar, {
   ALL_SECTIONS as HOME_SECTIONS,
 } from "@/components/HomeSidebar";
@@ -10,7 +9,7 @@ import RightSidebar, {
 } from "@/components/RightSidebar";
 import CollapsibleSidebar from "@/components/CollapsibleSidebar";
 import TickerStrip from "@/components/TickerStrip";
-import { XMarkIcon } from "@heroicons/react/24/outline";
+import { XMarkIcon, ArrowPathIcon } from "@heroicons/react/24/outline";
 import { useTicker } from "@/components/TickerContext";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
@@ -20,8 +19,6 @@ interface AppShellProps {
 }
 
 export default function AppShell({ children, tickerData }: AppShellProps) {
-  const pathname = usePathname();
-  const isHomepage = pathname === "/";
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isRightSidebarOpen, setIsRightSidebarOpen] = useState(true);
   const [leftOpenSections, setLeftOpenSections] = useState<string[]>([]);
@@ -71,8 +68,10 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
     );
   };
 
-  const showBreadcrumbs = !isHomepage;
-  const showTicker = activeTickerData && isStripVisible;
+  const showBreadcrumbs = true; // Always show breadcrumbs (Home is now visible)
+  const hasTickerData = !!activeTickerData;
+  const showTicker = hasTickerData && isStripVisible;
+  const showRestore = hasTickerData && !isStripVisible;
   const isStickyBarVisible = showBreadcrumbs || showTicker;
   const sidebarTop = isStickyBarVisible ? "9rem" : "7rem"; // Header (7rem) + Bar (2rem)
 
@@ -86,31 +85,42 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
     <div className="min-h-screen bg-white">
       {/* 1. Sticky Navigation Bar (Breadcrumbs + Ticker) */}
       {isStickyBarVisible && (
-        <div className="sticky top-28 z-40 bg-white border-b border-slate-200 h-8 flex items-center shadow-sm transition-all duration-300">
-          <div className="container mx-auto px-4 md:px-0 flex items-center h-full gap-8">
-            {showBreadcrumbs && (
-              <div className="flex-shrink-0 flex items-center">
-                <Breadcrumbs />
-              </div>
-            )}
-
-            {showTicker && (
-              <div className="flex-1 flex items-center h-full min-w-0">
-                <div className="flex-1 min-w-0 h-full">
-                  <TickerStrip
-                    tickerData={activeTickerData}
-                    transparent={isHomepage}
-                  />
+        <div className="sticky top-28 z-40 h-8 flex justify-center transition-all duration-300 pointer-events-none">
+          <div className="container mx-auto px-4 md:px-0 h-full pointer-events-auto">
+            <div className="h-full flex items-center justify-between w-full">
+              {showBreadcrumbs && (
+                <div className="flex-shrink-0 flex items-center h-full">
+                  <Breadcrumbs />
                 </div>
+              )}
+
+              {showTicker && (
+                <div className="flex-1 flex items-center h-full min-w-0 ml-30 pr-2">
+                  <div className="flex-1 min-w-0 h-full">
+                    <TickerStrip
+                      tickerData={activeTickerData}
+                      transparent={true}
+                    />
+                  </div>
+                  <button
+                    onClick={() => setStripVisible(false)}
+                    className="h-full w-8 flex items-center justify-center text-slate-400 hover:text-slate-700 hover:bg-slate-50 transition-colors cursor-pointer ml-2 rounded-sm"
+                    title="Dismiss Ticker"
+                  >
+                    <XMarkIcon className="w-4 h-4" />
+                  </button>
+                </div>
+              )}
+
+              {showRestore && (
                 <button
-                  onClick={() => setStripVisible(false)}
-                  className="h-full w-8 flex items-center justify-center text-slate-400 hover:text-slate-700 hover:bg-slate-50 transition-colors cursor-pointer bg-white ml-2 rounded-sm"
-                  title="Dismiss Ticker"
+                  onClick={() => setStripVisible(true)}
+                  className="ml-auto flex items-center gap-2 text-[10px] font-bold text-slate-500 hover:text-indigo-600 uppercase tracking-wider transition-colors"
                 >
-                  <XMarkIcon className="w-4 h-4" />
+                  <ArrowPathIcon className="w-3 h-3" /> Restore Vitals
                 </button>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
       )}

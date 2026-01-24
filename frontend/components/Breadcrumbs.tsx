@@ -17,9 +17,6 @@ const routeNameMap: { [key: string]: string } = {
 const Breadcrumbs = () => {
   const pathname = usePathname();
 
-  // 1. Don't show breadcrumbs on the Homepage
-  if (pathname === "/") return null;
-
   // 2. Split the path into segments (e.g., ['dashboard', 'vermont', 'nvrh'])
   const pathSegments = pathname.split("/").filter((segment) => segment !== "");
 
@@ -30,7 +27,7 @@ const Breadcrumbs = () => {
         <li>
           <Link
             href="/"
-            className="text-xs font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-widest transition-colors"
+            className="text-[10px] font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-widest transition-colors font-mono"
           >
             HOME
           </Link>
@@ -51,18 +48,18 @@ const Breadcrumbs = () => {
           return (
             <React.Fragment key={href}>
               {/* SEPARATOR */}
-              <li className="text-slate-300 text-xs">/</li>
+              <li className="text-slate-300 text-[10px] px-1">/</li>
 
               {/* BREADCRUMB ITEM */}
               <li>
                 {isLast ? (
-                  <span className="text-xs font-bold text-slate-800 uppercase tracking-widest cursor-default">
+                  <span className="text-[10px] font-bold text-slate-600 uppercase tracking-wider cursor-default font-mono">
                     {displayName}
                   </span>
                 ) : (
                   <Link
                     href={href}
-                    className="text-xs font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-widest transition-colors"
+                    className="text-[10px] font-medium text-slate-400 hover:text-indigo-600 uppercase tracking-wider transition-colors font-mono"
                   >
                     {displayName}
                   </Link>

@@ -8,7 +8,6 @@ import {
   Bars3Icon,
   XMarkIcon,
   ArrowRightIcon,
-  ArrowPathIcon,
 } from "@heroicons/react/24/outline";
 import { useTicker } from "@/components/TickerContext";
 
@@ -123,17 +122,6 @@ const Header = () => {
                 DAILY INSIGHT
               </span>
               <span className="text-slate-600">|</span>
-              {!isStripVisible && (
-                <>
-                  <button
-                    onClick={() => setStripVisible(true)}
-                    className="text-[10px] font-bold text-indigo-400 hover:text-indigo-300 uppercase tracking-wider flex items-center gap-1 ml-1"
-                  >
-                    <ArrowPathIcon className="w-3 h-3" /> Restore Vitals
-                  </button>
-                  <span className="text-slate-600">|</span>
-                </>
-              )}
             </div>
             {isHeaderVisible ? (
               <div className="relative overflow-hidden flex-1 h-5 mask-linear-fade animate-in fade-in zoom-in duration-300">
