@@ -15,6 +15,7 @@ import {
   ChevronUpIcon,
   ChevronDownIcon,
 } from "@heroicons/react/24/outline";
+import { formatCompactCurrency } from "@/lib/utils";
 
 // REGION MAPPING
 const REGION_MAP: Record<string, string> = {
@@ -150,9 +151,9 @@ export default function DashboardIndex() {
       {/* NATIONAL HUD */}
       <div className="border-b border-slate-200 sticky top-0 bg-white/95 backdrop-blur z-20 flex items-start">
         <div className="flex-1 w-full px-6 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-6">
             <div>
-              <h1 className="text-3xl font-black text-slate-900">
+              <h1 className="text-3xl font-black text-slate-900 md:whitespace-nowrap">
                 National Platform
               </h1>
               <p className="text-slate-500 mt-1">
@@ -207,11 +208,11 @@ export default function DashboardIndex() {
                 </span>
               </div>
               <div className="text-2xl font-black text-slate-900 animate-in fade-in">
-                ${(metrics.total / 1000000).toFixed(0)}M
+                {formatCompactCurrency(metrics.total)}
               </div>
               <div className="text-xs text-slate-500">
                 {metrics.total !== metrics.grandTotal
-                  ? `of $${(metrics.grandTotal / 1000000).toFixed(0)}M Total`
+                  ? `of ${formatCompactCurrency(metrics.grandTotal)} Total`
                   : "Total Program Value"}
               </div>
             </div>
@@ -384,7 +385,7 @@ export default function DashboardIndex() {
                         {state.stateName}
                       </td>
                       <td className="p-4 text-slate-600 font-mono">
-                        {state.awardAmount}
+                        {formatCompactCurrency(state.awardAmount)}
                       </td>
                       <td className="p-4 text-slate-500">
                         <span className="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">

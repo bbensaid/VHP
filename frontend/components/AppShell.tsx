@@ -107,10 +107,10 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
                   </div>
                   <button
                     onClick={() => setStripVisible(false)}
-                    className="h-full w-8 flex items-center justify-center text-slate-400 hover:text-slate-700 hover:bg-slate-50 transition-colors cursor-pointer ml-2 rounded-sm"
+                    className="h-6 w-6 flex items-center justify-center text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors cursor-pointer ml-2 rounded-full border border-slate-200"
                     title="Dismiss Ticker"
                   >
-                    <XMarkIcon className="w-4 h-4" />
+                    <XMarkIcon className="w-3 h-3" />
                   </button>
                 </div>
               )}
@@ -161,6 +161,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
             openSections={leftOpenSections}
             onToggleSection={toggleLeftSection}
             onNavigate={handleSidebarLinkClick}
+            onCollapseAll={() => setLeftOpenSections([])}
           />
         </CollapsibleSidebar>
 

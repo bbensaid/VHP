@@ -27,7 +27,7 @@ const Breadcrumbs = () => {
         <li>
           <Link
             href="/"
-            className="text-[10px] font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-widest transition-colors font-mono"
+            className="text-[10px] font-medium text-slate-400 hover:text-indigo-600 uppercase tracking-wider transition-colors font-mono"
           >
             HOME
           </Link>
