@@ -180,7 +180,7 @@ const Header = () => {
 
       {/* 2. MAIN NAV BAR */}
       <div className="bg-white py-2 border-b border-slate-200 w-full relative z-40">
-        <div className="container mx-auto px-4 md:px-8 flex items-center justify-between gap-2 xl:gap-16">
+        <div className="container mx-auto pl-0 pr-0 flex items-center justify-between gap-2 xl:gap-16">
           <div className="flex items-center gap-6 xl:gap-8 flex-shrink-0">
             <Link href="/" className="z-50 relative">
               <Logo />
@@ -194,7 +194,7 @@ const Header = () => {
             </nav>
           </div>
 
-          <div className="hidden md:flex flex-1">
+          <div className="hidden md:flex flex-1 pr-4 md:pr-8 xl:pr-0">
             <div className="relative w-full">
               <input
                 type="text"
@@ -217,7 +217,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-4 flex-shrink-0 xl:hidden">
+          <div className="flex items-center gap-4 flex-shrink-0 xl:hidden pr-4 md:pr-8">
             <button
               className="p-2 text-slate-800 hover:bg-slate-100 rounded-md transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

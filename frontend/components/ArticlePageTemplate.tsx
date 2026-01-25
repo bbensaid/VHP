@@ -104,7 +104,7 @@ export default async function ArticlePageTemplate({
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Left Sidebar */}
         <aside className="order-2 lg:order-1 lg:w-1/4 w-full">
-          <div className="sticky top-24 space-y-6">
+          <div className="sticky top-40 space-y-6">
             <div id="video-content" className="scroll-mt-32">
               {videoElements.map((video: any, index: number) => (
                 <VideoBlock key={video._key} value={video} />

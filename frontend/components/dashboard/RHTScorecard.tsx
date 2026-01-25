@@ -1,13 +1,14 @@
-import React from 'react';
-import { rhtProgramData } from '@/lib/data/rht-program';
-import { 
-  CurrencyDollarIcon, 
-  LightBulbIcon, 
-  ChartBarIcon 
-} from '@heroicons/react/24/outline';
+import React from "react";
+import { rhtProgramData } from "@/lib/data/rht-program";
+import {
+  CurrencyDollarIcon,
+  LightBulbIcon,
+  ChartBarIcon,
+} from "@heroicons/react/24/outline";
+import { formatCompactCurrency } from "@/lib/utils";
 
 interface RHTScorecardProps {
-  stateSlug: string; 
+  stateSlug: string;
 }
 
 export const RHTScorecard: React.FC<RHTScorecardProps> = ({ stateSlug }) => {
@@ -28,7 +29,9 @@ export const RHTScorecard: React.FC<RHTScorecardProps> = ({ stateSlug }) => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
             <div className="flex items-center gap-2 mb-1 opacity-80">
-              <span className="text-xs font-bold uppercase tracking-wider text-indigo-400">FY26 RHT Program</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-indigo-400">
+                FY26 RHT Program
+              </span>
               <span className="h-1 w-1 bg-slate-500 rounded-full"></span>
               <span className="text-xs uppercase">{data.stateName} Cohort</span>
             </div>
@@ -42,25 +45,42 @@ export const RHTScorecard: React.FC<RHTScorecardProps> = ({ stateSlug }) => {
               <CurrencyDollarIcon className="w-4 h-4" />
               <span className="text-xs font-bold uppercase">Awarded</span>
             </div>
-            <div className="text-3xl font-bold">{data.awardAmount}</div>
+            <div
+              className="text-3xl font-bold cursor-help"
+              title={new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD",
+              }).format(
+                typeof data.awardAmount === "string"
+                  ? parseFloat(data.awardAmount.replace(/[^0-9.-]+/g, ""))
+                  : data.awardAmount,
+              )}
+            >
+              {formatCompactCurrency(data.awardAmount)}
+            </div>
           </div>
         </div>
       </div>
 
       {/* Strategy & Metrics Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        
         {/* Initiatives */}
         <div className="lg:col-span-2 bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
           <div className="bg-slate-50 px-6 py-3 border-b border-slate-100 flex items-center gap-2">
             <LightBulbIcon className="w-5 h-5 text-amber-500" />
-            <h3 className="font-bold text-slate-800">Transformation Initiatives</h3>
+            <h3 className="font-bold text-slate-800">
+              Transformation Initiatives
+            </h3>
           </div>
           <div className="divide-y divide-slate-100">
             {data.initiatives.map((init, i) => (
               <div key={i} className="p-5 hover:bg-slate-50 transition-colors">
-                <h4 className="font-bold text-slate-900 text-sm mb-1">{init.title}</h4>
-                <p className="text-sm text-slate-600 leading-relaxed">{init.description}</p>
+                <h4 className="font-bold text-slate-900 text-sm mb-1">
+                  {init.title}
+                </h4>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  {init.description}
+                </p>
               </div>
             ))}
           </div>
@@ -76,26 +96,38 @@ export const RHTScorecard: React.FC<RHTScorecardProps> = ({ stateSlug }) => {
             {data.metrics.map((m, i) => (
               <div key={i} className="relative">
                 <div className="flex justify-between items-center mb-1">
-                  <span className="text-sm font-medium text-slate-700">{m.label}</span>
-                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full uppercase ${
-                    m.status === 'Achieved' ? 'bg-emerald-100 text-emerald-700' :
-                    m.status === 'In Progress' ? 'bg-blue-100 text-blue-700' :
-                    'bg-slate-100 text-slate-500'
-                  }`}>
+                  <span className="text-sm font-medium text-slate-700">
+                    {m.label}
+                  </span>
+                  <span
+                    className={`text-[10px] font-bold px-2 py-0.5 rounded-full uppercase ${
+                      m.status === "Achieved"
+                        ? "bg-emerald-100 text-emerald-700"
+                        : m.status === "In Progress"
+                          ? "bg-blue-100 text-blue-700"
+                          : "bg-slate-100 text-slate-500"
+                    }`}
+                  >
                     {m.status}
                   </span>
                 </div>
                 <div className="flex items-center justify-between text-xs text-slate-500">
-                   <span>Target: <span className="font-mono text-slate-900 font-bold">{m.target || "N/A"}</span></span>
+                  <span>
+                    Target:{" "}
+                    <span className="font-mono text-slate-900 font-bold">
+                      {m.target || "N/A"}
+                    </span>
+                  </span>
                 </div>
                 <div className="w-full h-1.5 bg-slate-100 rounded-full mt-2 overflow-hidden">
-                   <div className={`h-full rounded-full ${m.status === 'Achieved' ? 'w-full bg-emerald-500' : 'w-1/3 bg-blue-500'}`}></div>
+                  <div
+                    className={`h-full rounded-full ${m.status === "Achieved" ? "w-full bg-emerald-500" : "w-1/3 bg-blue-500"}`}
+                  ></div>
                 </div>
               </div>
             ))}
           </div>
         </div>
-
       </div>
     </div>
   );

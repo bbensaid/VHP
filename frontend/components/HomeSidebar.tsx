@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -52,25 +52,40 @@ interface HomeSidebarProps {
   openSections: string[];
   onToggleSection: (section: string) => void;
   onNavigate?: () => void;
+  onCollapseAll?: () => void;
 }
 
 export default function HomeSidebar({
   openSections,
   onToggleSection,
   onNavigate,
+  onCollapseAll,
 }: HomeSidebarProps) {
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const topSentinelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setShowBackToTop(window.scrollY > 300);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setShowBackToTop(!entry.isIntersecting);
+      },
+      { threshold: 0 },
+    );
+
+    if (topSentinelRef.current) {
+      observer.observe(topSentinelRef.current);
+    }
+
+    return () => observer.disconnect();
   }, []);
 
-  const scrollToTop = () => {
+  const scrollToTop = (e: React.MouseEvent) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    // Also scroll the sidebar container itself
+    const sidebarContainer = e.currentTarget.closest(".overflow-y-auto");
+    if (sidebarContainer) {
+      sidebarContainer.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   const renderPillar = (
@@ -127,7 +142,11 @@ export default function HomeSidebar({
   };
 
   return (
-    <aside className="w-full flex flex-col gap-6">
+    <aside className="w-full flex flex-col gap-6 min-h-full relative">
+      <div
+        ref={topSentinelRef}
+        className="absolute top-0 left-0 w-full h-1 pointer-events-none"
+      />
       {/* QUICK ACTIONS */}
       <div>
         <div className="space-y-2">
@@ -196,15 +215,31 @@ export default function HomeSidebar({
         )}
       </div>
 
-      {/* BACK TO TOP */}
-      <div
-        className={`transition-all duration-300 ease-in-out overflow-hidden ${
-          showBackToTop ? "max-h-12 opacity-100 mt-2" : "max-h-0 opacity-0"
-        }`}
-      >
+      {/* FOOTER ACTIONS */}
+      <div className="sticky bottom-0 bg-white pt-4 pb-6 mt-auto border-t border-slate-100 z-20 -mx-6 px-6 -mb-6">
+        {/* COLLAPSE ALL */}
+        {onCollapseAll && (
+          <button
+            onClick={onCollapseAll}
+            className={`w-full flex items-center justify-center gap-2 rounded-lg bg-white border hover:bg-slate-50 text-slate-500 hover:text-slate-900 transition-all duration-300 text-[10px] font-bold uppercase tracking-wider shadow-sm overflow-hidden ${
+              openSections.length > 0
+                ? "opacity-100 max-h-10 py-2 border-slate-200 mb-3"
+                : "opacity-0 max-h-0 py-0 border-transparent pointer-events-none mb-0"
+            }`}
+          >
+            <ChevronUpIcon className="w-3 h-3 rotate-180" />
+            Collapse All
+          </button>
+        )}
+
+        {/* BACK TO TOP */}
         <button
           onClick={scrollToTop}
-          className="w-full flex items-center justify-center gap-2 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-900 transition-colors text-[10px] font-bold uppercase tracking-wider"
+          className={`w-full flex items-center justify-center gap-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-900 transition-all duration-300 text-[10px] font-bold uppercase tracking-wider overflow-hidden ${
+            showBackToTop
+              ? "opacity-100 max-h-10 py-2"
+              : "opacity-0 max-h-0 py-0 pointer-events-none"
+          }`}
         >
           <ChevronUpIcon className="w-3 h-3" />
           Back to Top
