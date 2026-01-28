@@ -44,7 +44,7 @@ export default function CollapsibleSidebar({
       >
         <button
           onClick={() => setIsOpen(true)}
-          className={`absolute ${isLeft ? "-left-24" : "-right-24"} top-0 p-2 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-500 hover:text-slate-900 transition-all duration-500 flex flex-row items-center gap-2 ${isScrolled ? "opacity-30 hover:opacity-100" : "opacity-100 animate-pulse hover:animate-none"}`}
+          className={`absolute ${isLeft ? "-left-24" : "-right-32"} top-0 p-2 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-500 hover:text-slate-900 transition-all duration-500 flex flex-row items-center gap-2 ${isScrolled ? "opacity-30 hover:opacity-100" : "opacity-100 animate-pulse hover:animate-none"}`}
           title={`${expandLabel} Sidebar`}
         >
           {!isLeft && <ChevronLeftIcon className="w-4 h-4" />}
