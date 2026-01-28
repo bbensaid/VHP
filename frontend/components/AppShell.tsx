@@ -136,6 +136,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           isOpen={isSidebarOpen}
           setIsOpen={setIsSidebarOpen}
           stickyTop={sidebarTop}
+          expandLabel="Display Sidebar"
           headerContent={
             <>
               {leftOpenSections.length < HOME_SECTIONS.length && (
@@ -178,7 +179,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           isOpen={isRightSidebarOpen}
           setIsOpen={setIsRightSidebarOpen}
           stickyTop={sidebarTop}
-          expandLabel="Expand Intelligence Rail"
+          expandLabel="Chat with AI Analyst"
           headerContent={
             <>
               {rightOpenSections.length < RIGHT_SECTIONS.length && (
