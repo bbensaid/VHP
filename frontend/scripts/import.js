@@ -56,8 +56,20 @@ function sanitizeBlock(block) {
 
   // Convert AI "Clean Arrays" to Sanity "Stringified JSON"
   if (block._type === "code") {
-    if (Array.isArray(block.code)) block.code = JSON.stringify(block.code);
+    if (Array.isArray(block.code)) {
+      console.log(`🔧 Auto-fixing Data Table (Array -> String)`);
+      block.code = JSON.stringify(block.code, null, 2);
+    }
     if (!block.language) block.language = "json";
+  }
+
+  // Sanitize AI-generated video URLs that might be in Markdown format
+  if (block._type === "video" && block.url && block.url.startsWith("[")) {
+    const match = block.url.match(/\((https?:\/\/[^)]+)\)/);
+    if (match && match[1]) {
+      console.log(`🔧 Auto-fixing Video URL (Markdown -> Raw URL)`);
+      block.url = match[1];
+    }
   }
 
   // Recurse for children

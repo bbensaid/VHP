@@ -1,3 +1,11 @@
+import { type SchemaTypeDefinition } from 'sanity'
+
+export const schema: { types: SchemaTypeDefinition[] } = {
+  types: [],
+}
+
+
+
 import policyAnalysis from './policyAnalysis'
 import definition from './definition'
 import course from './course'
@@ -9,17 +17,5 @@ import ticker from './ticker'
 import dailyInsight from './dailyInsight'
 import analystNote from './analystNote'
 
-export const schema = {
-  types: [
-    policyAnalysis,
-    definition,
-    course,
-    instructor,
-    webinar,
-    caseStudy,
-    report,
-    ticker,
-    dailyInsight,
-    analystNote,
-  ],
-}
+
+export const schemaTypes = [policyAnalysis, definition, course, instructor, webinar, caseStudy, report, ticker, dailyInsight , analystNote]
