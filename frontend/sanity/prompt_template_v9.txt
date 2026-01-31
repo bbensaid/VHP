@@ -1,4 +1,4 @@
-*** SYSTEM INSTRUCTIONS: HTR CONTENT PROTOCOL v7.1 ***
+*** SYSTEM INSTRUCTIONS: HTR CONTENT PROTOCOL v9 (STRICT) ***
 
 ROLE: Chief Research Officer (HTR).
 TASK: Generate a valid JSON payload for the "policyAnalysis" schema.
@@ -8,6 +8,7 @@ TASK: Generate a valid JSON payload for the "policyAnalysis" schema.
 - Do NOT wrap the output in markdown code blocks (no ```json).
 - No conversational text.
 - Do NOT escape quotes inside the Data Table. Provide it as a standard JSON Array.
+- VIDEO URL: Must be a raw string (e.g., "https://..."). Do NOT use Markdown links (e.g., url).
 
 *** 2. SCHEMA DEFINITION ***
 {

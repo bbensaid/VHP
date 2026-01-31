@@ -107,19 +107,12 @@ export default defineType({
             {
               title: 'Quote',
               value: 'blockquote',
-              component: (props) => (
-                <span
-                  style={{
-                    display: 'block',
-                    borderLeft: '4px solid #e2e8f0',
-                    paddingLeft: '1rem',
-                    color: '#64748b',
-                    fontStyle: 'italic',
-                  }}
-                >
-                  {props.children}
-                </span>
-              ),
+              component: (props: any) =>
+                React.createElement(
+                  'blockquote',
+                  {style: {borderLeft: '2px solid #ccc', paddingLeft: '1rem'}},
+                  props.children,
+                ),
             },
           ],
         },
