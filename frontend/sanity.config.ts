@@ -13,6 +13,7 @@ import {codeInput} from '@sanity/code-input'
 import {apiVersion, dataset, projectId} from './sanity/env'
 import {schema} from './sanity/schemaTypes'
 import {structure} from './sanity/structure'
+// import {StudioBlock} from './sanity/components/StudioBlock'
 
 export default defineConfig({
   basePath: '/studio',
@@ -27,4 +28,9 @@ export default defineConfig({
     // https://www.sanity.io/docs/the-vision-plugin
     visionTool({defaultApiVersion: apiVersion}),
   ],
+  // form: {
+  //   components: {
+  //     block: StudioBlock,
+  //   },
+  // },
 })

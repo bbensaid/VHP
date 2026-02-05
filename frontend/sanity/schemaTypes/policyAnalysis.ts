@@ -1,7 +1,6 @@
 import {defineField, defineType} from 'sanity'
-import React from 'react'
 
-export default defineType({
+export const policyAnalysisType = defineType({
   name: 'policyAnalysis',
   title: 'Policy Analysis',
   type: 'document',
@@ -10,37 +9,25 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
-      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
-      options: {
-        source: 'title',
-        maxLength: 96,
-      },
-      validation: (Rule) => Rule.required(),
+      options: { source: 'title', maxLength: 96 },
     }),
     defineField({
       name: 'pillar',
       title: 'Pillar',
       type: 'string',
       options: {
-        list: [
-          {title: 'Policy', value: 'Policy'},
-          {title: 'Economics', value: 'Economics'},
-          {title: 'Technology', value: 'Technology'},
-        ],
+        list: ['Policy', 'Economics', 'Technology'],
       },
-      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'category',
-      title: 'Category (Menu Slug)',
-      description: 'Must match a folder name (e.g. workflow, ai, market)',
+      title: 'Category',
       type: 'string',
-      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'status',
@@ -67,121 +54,34 @@ export default defineType({
       name: 'summary',
       title: 'Summary',
       type: 'text',
-      validation: (Rule) => Rule.required(),
     }),
-
-    defineField({
-      name: 'mainImage',
-      title: 'Main Image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-      fields: [
-        {
-          name: 'caption',
-          type: 'string',
-          title: 'Caption',
-        },
-        {
-          name: 'alt',
-          type: 'string',
-          title: 'Alternative Text',
-        },
-      ],
-    }),
-
-    // --- THE BODY BLOCK ---
     defineField({
       name: 'body',
-      title: 'Body Content',
+      title: 'Body',
       type: 'array',
       of: [
-        {
-          type: 'block',
-          // 🚨 HYDRATION FIX: Standard JSX <span>
-          styles: [
-            {title: 'Normal', value: 'normal'},
-            {title: 'Heading 2', value: 'h2'},
-            {title: 'Heading 3', value: 'h3'},
-            {
-              title: 'Quote',
-              value: 'blockquote',
-              component: (props: any) =>
-                React.createElement(
-                  'blockquote',
-                  {style: {borderLeft: '2px solid #ccc', paddingLeft: '1rem'}},
-                  props.children,
-                ),
-            },
-          ],
-        },
-
-        // IMAGE BLOCK
-        {
-          type: 'image',
-          fields: [
-            {name: 'caption', type: 'string', title: 'Caption'},
-            {name: 'alt', type: 'string', title: 'Alt Text'},
-          ],
-        },
-
-        // DATA TABLE BLOCK
-        {
-          type: 'code',
-          title: 'Data Table (JSON)',
-          options: {language: 'json'},
-        },
-
-        // --- VIDEO BLOCK ---
+        {type: 'block'},
+        {type: 'code', options: {language: 'json'}},
+        {type: 'image', options: {hotspot: true}},
         {
           name: 'video',
-          title: 'Video Player',
+          title: 'Video',
           type: 'object',
           fields: [
-            {
-              name: 'url',
-              type: 'url',
-              title: 'YouTube URL',
-              description: 'Paste a YouTube link here...',
-            },
-            {
-              name: 'videoFile',
-              type: 'file',
-              title: 'OR Upload Video File',
-              description: 'Drag and drop an MP4 here (overrides URL)',
-              options: {accept: 'video/*'},
-            },
-            {name: 'caption', type: 'string', title: 'Caption'},
-          ],
-          preview: {
-            select: {
-              title: 'caption',
-              subtitle: 'url',
-              media: 'videoFile',
-            },
-            prepare({title, subtitle, media}) {
-              return {
-                title: title || 'Video Block',
-                subtitle: subtitle || 'Uploaded Video or YouTube',
-                media: media,
-              }
-            },
-          },
+            {name: 'url', type: 'url', title: 'URL'},
+            {name: 'caption', type: 'string', title: 'Caption'}
+          ]
         },
-
-        // AUDIO BLOCK
         {
           name: 'audio',
-          title: 'Audio Player',
+          title: 'Audio',
           type: 'object',
           fields: [
-            {name: 'file', type: 'file', title: 'Audio File'},
             {name: 'title', type: 'string', title: 'Title'},
-            {name: 'summary', type: 'string', title: 'Summary'},
-          ],
-        },
-      ],
+            {name: 'summary', type: 'string', title: 'Summary'}
+          ]
+        }
+      ]
     }),
   ],
 })
