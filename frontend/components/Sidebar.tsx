@@ -1,44 +1,37 @@
 import React from "react";
-import PolicyCalendar from "./sidebar/PolicyCalendar";
-import SectorVitals from "./sidebar/SectorVitals";
-import AnalystNote from "./sidebar/AnalystNote";
-import StateMonitor from "./sidebar/StateMonitor";
-import Link from "next/link";
+import StateMonitor from "@/components/sidebar/StateMonitor"; // <--- FIXED IMPORT
+import PolicyCalendar from "@/components/PolicyCalendar"; // Assumed location based on repo
+import NewsTicker from "@/components/NewsTicker"; // Assumed location based on repo
 
-// 1. Define the Props
-interface SidebarProps {
-  noteData?: any; 
-}
-
-// 2. Accept the Prop
-const Sidebar: React.FC<SidebarProps> = ({ noteData }) => {
+export default function Sidebar() {
   return (
-    <aside className="w-full flex flex-col gap-6">
-      
-      {/* 3. Pass the Prop Down */}
-      <AnalystNote data={noteData} />
-
+    <aside className="space-y-6">
+      {/* 1. STATE MONITOR WIDGET */}
       <StateMonitor />
-      <SectorVitals />
-      <PolicyCalendar />
 
-      <div className="bg-slate-900 rounded-lg p-6 text-center shadow-lg">
-        <h3 className="text-white font-bold text-lg mb-2">
-          Unlock Full Intelligence
-        </h3>
-        <p className="text-slate-400 text-xs mb-4">
-          Get unrestricted access to our VBC forecast models and policy impact
-          reports.
-        </p>
-        <Link
-          href="/subscribe"
-          className="block w-full py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold rounded transition-colors"
-        >
-          Start Free Trial
-        </Link>
+      {/* 2. POLICY CALENDAR WIDGET */}
+      <div className="bg-white border border-slate-200 rounded-lg shadow-sm overflow-hidden">
+        <div className="p-4 border-b border-slate-100 bg-slate-50">
+          <h3 className="font-bold text-slate-900 text-sm uppercase tracking-wider">
+            Policy Calendar
+          </h3>
+        </div>
+        <div className="p-4">
+          <PolicyCalendar />
+        </div>
+      </div>
+
+      {/* 3. NEWS TICKER WIDGET */}
+      <div className="bg-white border border-slate-200 rounded-lg shadow-sm overflow-hidden">
+        <div className="p-4 border-b border-slate-100 bg-slate-50">
+          <h3 className="font-bold text-slate-900 text-sm uppercase tracking-wider">
+            Trending News
+          </h3>
+        </div>
+        <div>
+          <NewsTicker />
+        </div>
       </div>
     </aside>
   );
-};
-
-export default Sidebar;
+}

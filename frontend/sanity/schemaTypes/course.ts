@@ -62,7 +62,10 @@ export default defineType({
       name: 'overview',
       title: 'Full Overview / Syllabus',
       type: 'array',
-      of: [{ type: 'block' }],
+      of: [
+        { type: 'block' },
+        { type: 'code', options: { language: 'json' } }
+      ],
     }),
   ],
 })

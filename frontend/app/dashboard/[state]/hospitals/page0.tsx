@@ -1,5 +1,6 @@
-import { client } from "@/lib/sanity";
+import { client } from "@/sanity/lib/client";
 
+// Define the shape of our Sanity data
 interface Hospital {
   _id: string;
   name: string;
@@ -15,7 +16,7 @@ export const revalidate = 60;
 export default async function HospitalsPage({ params }: { params: Promise<{ state: string }> }) {
   const { state } = await params;
   
-  // GROQ Query
+  // GROQ Query to fetch real data
   const query = `*[_type == "hospital" && state == $state] | order(name asc) {
     _id,
     name,
