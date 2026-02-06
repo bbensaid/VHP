@@ -15,7 +15,7 @@ TASK: Generate a valid JSON payload for the "policyAnalysis" schema.
   "_type": "policyAnalysis",
   "title": "String",
   "slug": { "current": "kebab-case-slug" },
-  "publishedAt": "YYYY-MM-DD",
+  "publishedAt": "YYYY-MM-DDTHH:mm:ssZ",
   "status": "Active",
   "pillar": "Economics" | "Policy" | "Technology",
   "category": "workflow" | "market" | "solvency",

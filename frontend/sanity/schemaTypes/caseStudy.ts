@@ -46,12 +46,7 @@ export default defineType({
     defineField({
       name: 'body',
       title: 'Full Analysis',
-      type: 'array',
-      of: [
-        { type: 'block' },
-        { type: 'code', options: { language: 'json' } },
-        { type: 'image', options: { hotspot: true } }
-      ],
+      type: 'blockContent',
     }),
     defineField({
       name: 'mainImage',

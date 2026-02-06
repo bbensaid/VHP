@@ -2,7 +2,7 @@
 "_type": "policyAnalysis",
 "title": "Remote Patient Monitoring Grant Program: Draft 1.0 Overview",
 "slug": { "current": "remote-patient-monitoring-grant-program" },
-"publishedAt": "2026-02-04",
+"publishedAt": "2026-02-04T09:00:00Z",
 "status": "Active",
 "pillar": "Policy",
 "category": "workflow",
@@ -57,20 +57,7 @@
 "_type": "code",
 "title": "Eligible Device Capabilities",
 "language": "json",
-"code": [
-{
-"Condition": "Congestive Heart Failure (CHF)",
-"Data Requirement": "Blood Pressure & Weight"
-},
-{
-"Condition": "COPD & Asthma",
-"Data Requirement": "Pulse Oximetry / Spirometry"
-},
-{
-"Condition": "Diabetes",
-"Data Requirement": "Blood Glucose Monitoring"
-}
-]
+"code": "[\n  {\n    \"Condition\": \"Congestive Heart Failure (CHF)\",\n    \"Data Requirement\": \"Blood Pressure & Weight\"\n  },\n  {\n    \"Condition\": \"COPD & Asthma\",\n    \"Data Requirement\": \"Pulse Oximetry / Spirometry\"\n  },\n  {\n    \"Condition\": \"Diabetes\",\n    \"Data Requirement\": \"Blood Glucose Monitoring\"\n  }\n]"
 },
 {
 "_type": "block",
@@ -96,7 +83,7 @@
 },
 {
 "_type": "video",
-"url": "[https://www.youtube.com/watch?v=cnNRjlSjWrA](https://www.youtube.com/watch?v=cnNRjlSjWrA)",
+"url": "https://www.youtube.com/watch?v=cnNRjlSjWrA",
 "caption": "How RPM empowers patients and improves outcomes."
 },
 {
