@@ -61,11 +61,7 @@ export default defineType({
     defineField({
       name: 'overview',
       title: 'Full Overview / Syllabus',
-      type: 'array',
-      of: [
-        { type: 'block' },
-        { type: 'code', options: { language: 'json' } }
-      ],
+      type: 'blockContent',
     }),
   ],
 })

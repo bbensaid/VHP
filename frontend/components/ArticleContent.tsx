@@ -81,6 +81,16 @@ const components = {
     normal: ({ children }: any) => (
       <p className="mb-6 text-lg leading-relaxed text-gray-700">{children}</p>
     ),
+    quote: ({ children }: any) => (
+      <blockquote className="border-l-4 border-indigo-500 pl-6 py-2 my-8 italic text-xl text-gray-800 bg-gray-50 rounded-r-lg">
+        {children}
+      </blockquote>
+    ),
+    callout: ({ children }: any) => (
+      <div className="my-8 p-6 bg-indigo-50 border border-indigo-100 rounded-lg text-lg text-indigo-900 font-medium shadow-sm">
+        {children}
+      </div>
+    ),
     blockquote: ({ children }: any) => {
       return (
         <blockquote className="border-l-4 border-indigo-500 pl-6 py-2 my-8 italic text-xl text-gray-800 bg-gray-50 rounded-r-lg">

@@ -28,7 +28,8 @@ export const blockContentType = defineType({
         {title: 'H2', value: 'h2'},
         {title: 'H3', value: 'h3'},
         {title: 'H4', value: 'h4'},
-        {title: 'Quote', value: 'blockquote'},
+        {title: 'Quote', value: 'quote'},
+        {title: 'Callout', value: 'callout'},
       ],
       lists: [{title: 'Bullet', value: 'bullet'}, {title: 'Numbered', value: 'number'}],
       // Marks let you mark up inline text in the block editor.
@@ -68,6 +69,36 @@ export const blockContentType = defineType({
     defineArrayMember({
       type: 'code',
       options: {language: 'json'},
+    }),
+    defineArrayMember({
+      type: 'object',
+      name: 'video',
+      title: 'Video',
+      fields: [
+        {name: 'url', type: 'url', title: 'URL'},
+        {name: 'caption', type: 'string', title: 'Caption'},
+      ],
+      preview: {
+        select: {title: 'caption', subtitle: 'url'},
+        prepare({title, subtitle}) {
+          return {title: title || 'Video', subtitle}
+        },
+      },
+    }),
+    defineArrayMember({
+      type: 'object',
+      name: 'audio',
+      title: 'Audio',
+      fields: [
+        {name: 'title', type: 'string', title: 'Title'},
+        {name: 'summary', type: 'string', title: 'Summary'},
+      ],
+      preview: {
+        select: {title: 'title', subtitle: 'summary'},
+        prepare({title, subtitle}) {
+          return {title: title || 'Audio', subtitle}
+        },
+      },
     }),
   ],
 })

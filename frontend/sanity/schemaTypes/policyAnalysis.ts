@@ -58,30 +58,7 @@ export const policyAnalysisType = defineType({
     defineField({
       name: 'body',
       title: 'Body',
-      type: 'array',
-      of: [
-        {type: 'block'},
-        {type: 'code', options: {language: 'json'}},
-        {type: 'image', options: {hotspot: true}},
-        {
-          name: 'video',
-          title: 'Video',
-          type: 'object',
-          fields: [
-            {name: 'url', type: 'url', title: 'URL'},
-            {name: 'caption', type: 'string', title: 'Caption'}
-          ]
-        },
-        {
-          name: 'audio',
-          title: 'Audio',
-          type: 'object',
-          fields: [
-            {name: 'title', type: 'string', title: 'Title'},
-            {name: 'summary', type: 'string', title: 'Summary'}
-          ]
-        }
-      ]
+      type: 'blockContent',
     }),
   ],
 })
