@@ -52,8 +52,14 @@ export default async function ArticlePageTemplate({
       _key,
       _type == "video" => {
         ...,
-        videoFile { asset->{url} }
+        "url": url, 
+        videoFile { asset->{url, mimeType} },
+        file { asset->{url, mimeType} },
+        video { asset->{url, mimeType} },
+        asset->{url, mimeType}
       },
+      _type == "youtube" => { ..., url },
+      _type == "mux.video" => { ..., url },
       _type == "audio" => {
         ...,
         file { asset->{url} }
@@ -91,13 +97,11 @@ export default async function ArticlePageTemplate({
   const theme = getTheme(article.pillar);
 
   const videoElements =
-    article.body?.filter((block: any) => block._type === "video") || [];
+    article.body?.filter((block: any) => ["video", "youtube", "mux.video"].includes(block._type)) || [];
   const audioElements =
     article.body?.filter((block: any) => block._type === "audio") || [];
   const mainContent =
-    article.body?.filter(
-      (block: any) => block._type !== "video" && block._type !== "audio",
-    ) || [];
+    article.body || [];
 
   return (
     <>

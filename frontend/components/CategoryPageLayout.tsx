@@ -1,165 +1,131 @@
-// components/CategoryPageLayout.tsx
-import React from "react";
 import Link from "next/link";
-import { client } from "@/lib/sanity";
-import VideoBlock from "./VideoBlock";
-import AudioBlock from "./AudioBlock";
+import { client } from "@/sanity/lib/client";
+import VideoBlock from "@/components/VideoBlock";
 
-interface CategoryPageProps {
-  pillar: "Policy" | "Economics" | "Technology";
-  category: string;
-  title: string;
-  description: string;
-  themeColor: string;
-  hoverBg: string;
-  badgeStyle: string;
+interface CategoryPageLayoutProps {
+  // Supports all your existing patterns (params, slug, category, etc.)
+  slug?: string;
+  category?: string;
+  params?: any; 
+  title?: string;
+  description?: string;
+  // We ignore 'pillar' prop requirement so you don't have to add it
+  pillar?: string; 
 }
 
-export default async function CategoryPageLayout({
-  pillar,
-  category,
-  title,
-  description,
-  themeColor,
-  hoverBg,
-  badgeStyle,
-}: CategoryPageProps) {
-  const query = `*[_type == "policyAnalysis" && pillar == "${pillar}" && category == "${category}"] | order(publishedAt desc) {
-    _id, title, summary, publishedAt, slug, status,
-    body[]{
-      _key,
-      _type,
-      url,
-      videoFile { asset->{url} },
-      file { asset->{url} },
-      title,
-      summary,
-      caption
-    }
-  }`;
+const categoryDocQuery = `*[_type == "category" && slug.current == $slug][0] {
+  _id, title, description,
+  "articles": *[_type == "policyAnalysis" && references(^._id)] | order(publishedAt desc) {
+    _id, title, slug, publishedAt, summary, category, pillar
+  },
+  "videos": *[_type == "video" && references(^._id)] | order(publishedAt desc)[0..4] {
+    _id, title, url
+  }
+}`;
 
-  const articles = await client.fetch(query, {}, { next: { revalidate: 0 } });
+const fallbackArticlesQuery = `*[_type == "policyAnalysis" && category match $slug] | order(publishedAt desc) {
+  _id, title, slug, publishedAt, summary, category, pillar
+}`;
+
+const fallbackVideosQuery = `*[_type == "video" && title match $slug] | order(publishedAt desc)[0..4] {
+  _id, title, url
+}`;
+
+export default async function CategoryPageLayout(props: CategoryPageLayoutProps) {
+  // 1. AUTO-RESOLVE SLUG (Handles your existing pages)
+  let resolvedSlug = props.slug || props.category;
+  
+  if (!resolvedSlug && props.params) {
+    // Await params if it's a promise (Next.js 15), otherwise just read it
+    const resolvedParams = props.params instanceof Promise ? await props.params : props.params;
+    resolvedSlug = resolvedParams?.slug;
+  }
+
+  // If we can't find a slug, we can't render.
+  if (!resolvedSlug) return null;
+
+  // 2. FETCH DATA (Try Doc -> Fallback to Tags)
+  let data = await client.fetch(categoryDocQuery, { slug: resolvedSlug });
+  let articles = data?.articles || [];
+  let videos = data?.videos || [];
+
+  if (!data) {
+    articles = await client.fetch(fallbackArticlesQuery, { slug: resolvedSlug });
+    videos = await client.fetch(fallbackVideosQuery, { slug: resolvedSlug });
+    
+    // Auto-generate title if missing
+    const displayTitle = props.title || (resolvedSlug.charAt(0).toUpperCase() + resolvedSlug.slice(1));
+    data = { title: displayTitle, description: props.description || "" };
+  }
+
+  // 3. RENDER
+  const hasContent = articles.length > 0 || videos.length > 0;
+  if (!data && !hasContent) return null; // Fail silently or show 404 handled by parent
 
   return (
-    <>
-      <div className="space-y-12">
-        {/* HEADER SECTION */}
-        <div>
-          <div className="mb-16 border-b border-ui-border pb-8">
-            <span
-              className={`text-sm font-bold ${themeColor} uppercase tracking-wider mb-2 block`}
-            >
-              {pillar} Pillar
-            </span>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-text-heading mb-6">
-              {title}
-            </h1>
-            <p className="text-xl text-text-body leading-relaxed max-w-4xl">
-              {description}
-            </p>
-          </div>
-        </div>
+    <div className="container mx-auto px-4 py-12 font-sans text-slate-800">
+      <header className="mb-12 border-b border-slate-200 pb-8">
+        <h1 className="text-5xl font-black text-slate-900 mb-6 uppercase tracking-tight leading-none">
+          {data.title}
+        </h1>
+        {data.description && (
+          <p className="text-xl text-slate-600 max-w-3xl leading-relaxed">{data.description}</p>
+        )}
+      </header>
 
-        {/* ARTICLE GRID */}
-        <div className="space-y-8">
-          {articles.length === 0 && (
-            <div className="p-10 text-center bg-surface-muted rounded-xl border border-ui-border">
-              <p className="text-text-body mb-4">No analysis available yet.</p>
-              <p className="text-sm text-text-body/60">
-                Run the AI script with pillar: "<strong>{pillar}</strong>" and
-                category: "<strong>{category}</strong>".
-              </p>
-            </div>
-          )}
-
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <main className="lg:col-span-8 space-y-12">
           {articles.map((article: any) => {
-            const videos =
-              article.body?.filter((b: any) => b._type === "video") || [];
-            const audios =
-              article.body?.filter((b: any) => b._type === "audio") || [];
+            // MAGIC FIX: Use the article's OWN pillar to build the link. 
+            // If missing, guess based on the category or default to 'articles'.
+            // This means you DO NOT need to update your page files.
+            const rawPillar = article.pillar || 'articles'; 
+            const linkPath = `/${rawPillar.toLowerCase()}/${article.slug.current}`;
 
             return (
-              // lg:items-stretch ensures the sidebar height equals the content card height
-              <div
-                key={article._id}
-                className="flex flex-col lg:flex-row gap-4 lg:items-stretch"
-              >
-                {/* LEFT SIDEBAR: 
-                  - justify-center: Centers the content vertically (Middle alignment)
-                  - gap-4: Consistent spacing between Video and Audio
-                  - w-32: Fixed narrow width
-              */}
-                <div className="order-2 lg:order-1 flex-none flex flex-col w-32 justify-center gap-4">
-                  {/* VIDEOS */}
-                  <div className="flex flex-col gap-3">
-                    {videos.map((video: any) => (
-                      <div key={video._key} className="w-full shadow-sm">
-                        <VideoBlock value={video} compact={true} />
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* AUDIOS */}
-                  <div className="flex flex-col gap-3">
-                    {audios.map((audio: any) => (
-                      <div key={audio._key} className="w-full">
-                        <AudioBlock value={audio} compact={true} />
-                      </div>
-                    ))}
-                  </div>
+              <article key={article._id} className="group">
+                <Link href={linkPath} className="block">
+                  <h2 className="text-3xl font-bold text-slate-900 mb-3 group-hover:text-indigo-600 transition-colors leading-tight">
+                    {article.title}
+                  </h2>
+                </Link>
+                <div className="flex items-center gap-3 text-sm text-slate-500 mb-3 font-medium">
+                  <time dateTime={article.publishedAt}>
+                    {new Date(article.publishedAt).toLocaleDateString()}
+                  </time>
+                  {article.category && (
+                    <>
+                      <span className="text-slate-300">•</span>
+                      <span className="uppercase tracking-wider text-xs">{article.category}</span>
+                    </>
+                  )}
                 </div>
-
-                {/* RIGHT CONTENT: Article Card */}
-                <div className="order-1 lg:order-2 flex-1 w-full min-w-0">
-                  <div className="group bg-surface border border-ui-border rounded-xl p-6 hover:shadow-md transition-all relative overflow-hidden h-full flex flex-col">
-                    {/* Hover Color Bar */}
-                    <div
-                      className={`absolute left-0 top-0 bottom-0 w-1 ${hoverBg} opacity-0 group-hover:opacity-100 transition-opacity`}
-                    ></div>
-
-                    <div className="flex flex-col gap-4 flex-grow">
-                      {/* Header Row: Date/Status | Link */}
-                      <div className="flex flex-wrap items-center justify-between gap-4 border-b border-ui-border/30 pb-3 mb-1">
-                        {/* Meta */}
-                        <div className="flex items-center gap-3">
-                          <span className="text-xs text-text-body/60 font-mono border border-ui-border px-2 py-1 rounded">
-                            {new Date(article.publishedAt).toLocaleDateString()}
-                          </span>
-                          {article.status && (
-                            <span
-                              className={`px-2 py-1 ${badgeStyle} text-xs font-bold rounded uppercase`}
-                            >
-                              {article.status}
-                            </span>
-                          )}
-                        </div>
-
-                        {/* Link Right */}
-                        <Link
-                          href={`/articles/${article.slug.current}`}
-                          className={`text-xs font-bold ${themeColor} hover:underline uppercase tracking-wide whitespace-nowrap ml-auto`}
-                        >
-                          Read Analysis &rarr;
-                        </Link>
-                      </div>
-
-                      {/* Main Content */}
-                      <div>
-                        <h3 className="text-xl font-bold text-text-heading mb-3">
-                          {article.title}
-                        </h3>
-                        <p className="text-text-body leading-relaxed text-sm">
-                          {article.summary}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <p className="text-slate-600 leading-relaxed text-lg mb-4">
+                  {article.summary}
+                </p>
+                <Link href={linkPath} className="inline-flex items-center text-indigo-600 font-bold hover:underline">
+                  Read Analysis &rarr;
+                </Link>
+              </article>
             );
           })}
-        </div>
+        </main>
+
+        <aside className="lg:col-span-4 space-y-8">
+          <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <h3 className="text-sm font-bold text-slate-900 mb-6 border-b border-slate-200 pb-2 uppercase tracking-widest">
+              Related Media
+            </h3>
+            <div className="space-y-8">
+              {videos.map((video: any) => (
+                <div key={video._id}>
+                  <VideoBlock value={{ url: video.url, caption: video.title }} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </aside>
       </div>
-    </>
+    </div>
   );
 }

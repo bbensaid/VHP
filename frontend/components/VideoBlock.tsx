@@ -1,141 +1,146 @@
-// components/VideoBlock.tsx
 "use client";
-import React, { useState, useRef } from "react";
 
-// Helper to extract YouTube ID
-const getYouTubeId = (url: string) => {
-  if (!url) return null;
-  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
-  const match = url.match(regExp);
-  return match && match[2].length === 11 ? match[2] : null;
-};
+import React from "react";
+import YouTube from "react-youtube";
+import { PlayIcon, FilmIcon } from "@heroicons/react/24/solid";
 
 interface VideoBlockProps {
-  value: any;
+  value: {
+    url?: string;
+    caption?: string;
+    title?: string;
+  };
   compact?: boolean;
 }
 
-const VideoBlock = ({ value, compact }: VideoBlockProps) => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
+export default function VideoBlock({ value, compact }: VideoBlockProps) {
+  const { url, caption, title } = value;
 
-  // 1. Determine Source
-  const uploadedUrl = value.videoFile?.asset?.url;
-  const youtubeUrl = value.url;
-  const youtubeId = youtubeUrl ? getYouTubeId(youtubeUrl) : null;
-  
-  const title = value.title || "Video";
+  if (!url) return null;
 
-  // If no source, return empty or null
-  if (!uploadedUrl && !youtubeId) {
-    if (compact) return <div className="aspect-video bg-gray-100 rounded-md"></div>;
-    return null;
-  }
-
-  // Handle click to play
-  const handlePlay = () => {
-    setIsPlaying(true);
+  // 1. YouTube Identification
+  const getYouTubeId = (url: string) => {
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+    return match && match[2].length === 11 ? match[2] : null;
   };
 
-  // =========================================
-  // COMPACT MODE (Sidebar Thumbnail)
-  // =========================================
+  const youtubeId = getYouTubeId(url);
+
+  // --- COMPACT MODE (Sidebar) ---
   if (compact) {
     return (
-      <div 
-        className="relative aspect-video bg-black rounded-md overflow-hidden shadow-sm cursor-pointer group hover:shadow-md transition-all border border-gray-800"
-        onClick={handlePlay}
-        title={`Play: ${title}`}
-      >
-        {!isPlaying ? (
-          <>
-            {/* THUMBNAIL LOGIC */}
-            {youtubeId ? (
-               /* Case A: YouTube Thumbnail (High Quality) */
-               <img 
-                 src={`https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`}
-                 alt={title}
-                 className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
-               />
-            ) : (
-               /* Case B: Uploaded File Thumbnail (Seek to 0.5s to avoid black start frame) */
-               <video 
-                 src={`${uploadedUrl}#t=0.5`} 
-                 className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
-                 preload="metadata" 
-                 muted 
-                 playsInline
-               />
-            )}
-
-            {/* OVERLAY: Subtle gradient for depth */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60"></div>
-
-            {/* PLAY BUTTON: Small, Bottom-Right */}
-            <div className="absolute bottom-1.5 right-1.5 z-10">
-              <div className="w-7 h-5 bg-red-600 rounded flex items-center justify-center shadow-sm transition-transform group-hover:scale-105 group-hover:bg-red-700">
-                  <svg className="w-3 h-3 text-white fill-current" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-              </div>
-            </div>
-          </>
-        ) : (
-          /* ACTIVE PLAYER */
-          youtubeId ? (
-            <iframe
-              src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0`}
-              title={title}
-              className="w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
+      <div className="group w-full bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-md transition-all cursor-pointer">
+        {/* Thumbnail / Preview Area */}
+        <div className="relative aspect-video bg-slate-900 flex items-center justify-center overflow-hidden">
+          {youtubeId ? (
+            <img 
+              src={`https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`} 
+              alt="Video Thumbnail" 
+              className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
             />
           ) : (
-            <video 
-              src={uploadedUrl} 
-              className="w-full h-full object-contain bg-black" 
-              controls 
-              autoPlay 
-            />
-          )
-        )}
+            <div className="w-full h-full bg-slate-800 flex items-center justify-center">
+               <FilmIcon className="w-8 h-8 text-slate-600" />
+            </div>
+          )}
+          
+          {/* Play Button Overlay */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <PlayIcon className="w-4 h-4 text-indigo-600 ml-0.5" />
+            </div>
+          </div>
+          
+          {/* Link Overlay */}
+          <a 
+            href={url} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="absolute inset-0 z-10"
+            aria-label="Play Video"
+          ></a>
+        </div>
+
+        {/* Caption / Title Area */}
+        <div className="p-2 bg-slate-50 border-t border-slate-100">
+           <div className="flex items-center gap-2 mb-1">
+             <span className="text-[9px] font-black uppercase tracking-wider text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded border border-indigo-100">
+               Video
+             </span>
+           </div>
+           <p className="text-[10px] font-bold text-slate-700 leading-tight line-clamp-2">
+             {caption || title || "Watch Video Briefing"}
+           </p>
+        </div>
       </div>
     );
   }
 
-  // =========================================
-  // STANDARD MODE (Full Article)
-  // =========================================
+  // 2. Render YouTube
+  if (youtubeId) {
+    return (
+      <figure className="my-8 w-full max-w-full">
+        <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black shadow-lg border border-slate-200">
+          <YouTube
+            videoId={youtubeId}
+            className="absolute inset-0 w-full h-full"
+            iframeClassName="w-full h-full"
+            opts={{
+              width: '100%',
+              height: '100%',
+              playerVars: {
+                modestbranding: 1,
+                rel: 0,
+              },
+            }}
+          />
+        </div>
+        {caption && (
+          <figcaption className="mt-3 text-center text-sm text-slate-500 italic font-medium">
+            {caption}
+          </figcaption>
+        )}
+      </figure>
+    );
+  }
+
+  // 3. Render Direct MP4/WebM
+  const isDirectVideo = url.toLowerCase().endsWith(".mp4") || url.toLowerCase().endsWith(".webm");
+  if (isDirectVideo) {
+    return (
+      <figure className="my-8 w-full max-w-full">
+        <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black shadow-lg border border-slate-200">
+          <video 
+            controls 
+            className="absolute inset-0 w-full h-full object-cover" 
+            playsInline
+          >
+            <source src={url} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        {caption && (
+          <figcaption className="mt-3 text-center text-sm text-slate-500 italic font-medium">
+            {caption}
+          </figcaption>
+        )}
+      </figure>
+    );
+  }
+
+  // 4. Fallback for External Links
   return (
-    <div ref={containerRef} className="my-8 rounded-xl overflow-hidden bg-black shadow-lg ring-1 ring-gray-900/5">
-       <div className="relative w-full aspect-video">
-         {uploadedUrl ? (
-           <video 
-              src={uploadedUrl} 
-              className="w-full h-full" 
-              controls
-              preload="metadata"
-           />
-         ) : youtubeId ? (
-           <iframe
-             src={`https://www.youtube.com/embed/${youtubeId}?rel=0`}
-             className="absolute top-0 left-0 w-full h-full border-0"
-             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-             allowFullScreen
-           />
-         ) : (
-           <div className="flex items-center justify-center w-full h-full text-white">
-             Source not found
-           </div>
-         )}
-       </div>
-       {value.caption && (
-        <p className="p-3 text-sm text-gray-400 bg-gray-900 italic text-center border-t border-gray-800">
-          {value.caption}
-        </p>
-       )}
+    <div className="my-6 p-4 bg-slate-50 border border-slate-200 rounded-xl text-center hover:bg-slate-100 transition-colors">
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm font-bold text-slate-700 hover:text-indigo-600 flex items-center justify-center gap-2"
+      >
+        <FilmIcon className="w-5 h-5" />
+        <span>Watch Video Resource</span>
+      </a>
     </div>
   );
-};
-
-export default VideoBlock;
+}

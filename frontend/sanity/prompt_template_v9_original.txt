@@ -9,7 +9,6 @@ TASK: Generate a valid JSON payload for the "policyAnalysis" schema.
 - No conversational text.
 - Do NOT escape quotes inside the Data Table. Provide it as a standard JSON Array.
 - VIDEO URL: Must be a raw string (e.g., "https://..."). Do NOT use Markdown links (e.g., url).
-- Do NOT use "style": "blockquote". Use "style": "quote" for quotes.
 
 *** 2. SCHEMA DEFINITION ***
 {
@@ -38,20 +37,10 @@ TASK: Generate a valid JSON payload for the "policyAnalysis" schema.
     // BLOCK TYPE 3: Quote (Standard)
     {
       "_type": "block",
-      "style": "quote",
+      "style": "blockquote",
       "children": [{
          "_type": "span",
          "text": "The quote text.",
-         "marks": [] 
-      }]
-    },
-    // BLOCK TYPE 3b: Highlight Box (Callout)
-    {
-      "_type": "block",
-      "style": "highlight",
-      "children": [{
-         "_type": "span",
-         "text": "Important takeaway or key insight.",
          "marks": [] 
       }]
     },
