@@ -44,7 +44,7 @@
 },
 {
 "_type": "block",
-"style": "blockquote",
+"style": "quote",
 "children": [
 {
 "_type": "span",

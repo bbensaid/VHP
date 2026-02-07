@@ -29,7 +29,7 @@ export const blockContentType = defineType({
         {title: 'H3', value: 'h3'},
         {title: 'H4', value: 'h4'},
         {title: 'Quote', value: 'quote'},
-        {title: 'Callout', value: 'callout'},
+        {title: 'Highlight', value: 'highlight'},
       ],
       lists: [{title: 'Bullet', value: 'bullet'}, {title: 'Numbered', value: 'number'}],
       // Marks let you mark up inline text in the block editor.
