@@ -9,6 +9,7 @@ import { TooltipProvider } from "@/components/TooltipContext";
 import { TickerProvider } from "@/components/TickerContext";
 import AppShell from "@/components/AppShell";
 import { getTickerData } from "@/lib/ticker";
+import CommandPalette from "@/components/CommandPalette";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <CommandPalette />
         <TooltipProvider>
           <TickerProvider>
             {/* WRAP EVERYTHING */}
