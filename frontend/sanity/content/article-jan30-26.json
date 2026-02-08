@@ -1,0 +1,135 @@
+{
+"_type": "policyAnalysis",
+"title": "End of the Builder Era: Vermont's Strategic Pivot to Shared HIE Services",
+"slug": {
+"current": "end-of-builder-era-vermont-hie-css"
+},
+"publishedAt": "2026-01-29",
+"status": "Active",
+"pillar": "Technology",
+"category": "solvency",
+"impactLevel": "Critical",
+"summary": "The Vermont Health Information Exchange (VHIE) must abandon its custom \"best-of-breed\" architecture in favor of the CRISP Shared Services (CSS) \"HIE in a Box\" model. This pivot addresses the state's healthcare cost crisis by leveraging multi-state economies of scale and redirecting resources from technical maintenance to value-based care.",
+"body": [
+{
+"_type": "block",
+"style": "normal",
+"children": [
+{
+"_type": "span",
+"text": "For the past six years, the Vermont Health Information Exchange (VHIE) has operated on a modular \"best-of-breed\" architecture, integrating components from Verato (MPI), Medicasoft (FHIR Repository), Curious Innovation (Terminology), and Rhapsody (Integration). While effective for initial data liquidity, this approach has become a strategic liability. HIE technology has matured from a differentiator into a commodity. The state's urgent imperative is no longer to build infrastructure but to address the highest cost of care per capita in the nation."
+}
+]
+},
+{
+"_type": "block",
+"style": "h2",
+"children": [
+{
+"_type": "span",
+"text": "The Integration Trap"
+}
+]
+},
+{
+"_type": "block",
+"style": "normal",
+"children": [
+{
+"_type": "span",
+"text": "Maintaining individual contracts and integration points for disparate vendors creates significant overhead and technical fragility. This \"plumbing\" distraction forces leadership to focus on API management and server uptime rather than clinical outcomes. Every upgrade risks breaking the ecosystem, requiring continuous, expensive engineering hours."
+}
+]
+},
+{
+"_type": "block",
+"style": "blockquote",
+"children": [
+{
+"_type": "span",
+"text": "In the current mature market, building your own HIE infrastructure is akin to a hospital building its own MRI machines rather than buying them from Siemens or GE. It is an unnecessary expenditure of effort that yields no competitive advantage in patient care.",
+"marks": [
+"highlight-economics"
+]
+}
+]
+},
+{
+"_type": "block",
+"style": "h2",
+"children": [
+{
+"_type": "span",
+"text": "The Solution: CRISP Shared Services (CSS)"
+}
+]
+},
+{
+"_type": "block",
+"style": "normal",
+"children": [
+{
+"_type": "span",
+"text": "The recommended path is to adopt the CSS \"HIE in a Box\" model, a non-profit support organization serving 9+ states. This shifts VHIE from a \"Builder\" model to a \"Subscriber\" model, leveraging massive economies of scale."
+}
+]
+},
+{
+"_type": "code",
+"title": "Comparison: Modular Architecture vs. CSS Utility Model",
+"language": "json",
+"code": [
+{
+"Feature": "Infrastructure",
+"Current Modular Architecture": "Isolated; Vermont bears 100% of the cost.",
+"CSS HIE in a Box": "Shared; Costs amortized across 9+ states."
+},
+{
+"Feature": "Innovation Cycle",
+"Current Modular Architecture": "Slow; dependent on local budget cycles.",
+"CSS HIE in a Box": "Rapid; Features built for one state are available to all."
+},
+{
+"Feature": "Focus",
+"Current Modular Architecture": "Managing vendors & technology stacks.",
+"CSS HIE in a Box": "Delivering business value & clinical insights."
+},
+{
+"Feature": "Scalability",
+"Current Modular Architecture": "Limited by local hardware/cloud spend.",
+"CSS HIE in a Box": "Enterprise-grade; Leveraging massive economies of scale."
+}
+]
+},
+{
+"_type": "block",
+"style": "h2",
+"children": [
+{
+"_type": "span",
+"text": "Strategic Justification"
+}
+]
+},
+{
+"_type": "block",
+"style": "normal",
+"children": [
+{
+"_type": "span",
+"text": "Shifting to CSS converts volatile CapEx (major upgrades) into predictable OpEx, freeing capital for community health programs. Furthermore, this aligns with CMS and ONC strategies to treat HIEs as health data utilities under TEFCA. The CSS platform already includes advanced modules for claims integration and image exchange, allowing Vermont to deploy capabilities immediately rather than building them from scratch."
+}
+]
+},
+{
+"_type": "video",
+"url": "https://www.youtube.com/watch?v=WWz1KdDiu78",
+"caption": "Explanation of the multi-state partnership model utilized by CRISP Shared Services."
+},
+{
+"_type": "audio",
+"title": "Audio Brief: The Pivot to Procurement",
+"summary": "An overview of the recommendation to cease all build/rebuild RFPs and initiate the immediate migration of Vermont's data assets to the CSS private cloud infrastructure."
+}
+]
+}

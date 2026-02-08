@@ -1,13 +1,36 @@
-import policyAnalysis from './policyAnalysis'
-import definition from './definition'
-import course from './course'
-import instructor from './instructor'
-import webinar from './webinar' // <--- ADD THIS
+import { type SchemaTypeDefinition } from 'sanity'
+import { blockContentType } from './blockContent'
+import { categoryType } from './category'
+import { postType } from './post'
+import { authorType } from './author'
+import { policyAnalysisType } from './policyAnalysis'
+import { hospitalType } from './hospital' // IMPORT ADDED
 import caseStudy from './caseStudy'
+import course from './course'
+import webinar from './webinar'
 import report from './report'
-import ticker from './ticker' 
+import ticker from './ticker'
 import dailyInsight from './dailyInsight'
 import analystNote from './analystNote'
+import instructor from './instructor'
+import definition from './definition'
 
-
-export const schemaTypes = [policyAnalysis, definition, course, instructor, webinar, caseStudy, report, ticker, dailyInsight , analystNote]
+export const schema: { types: SchemaTypeDefinition[] } = {
+  types: [
+    blockContentType, 
+    categoryType, 
+    postType, 
+    authorType, 
+    policyAnalysisType,
+    hospitalType,
+    caseStudy,
+    course,
+    webinar,
+    report,
+    ticker,
+    dailyInsight,
+    analystNote,
+    instructor,
+    definition
+  ],
+}

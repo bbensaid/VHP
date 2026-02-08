@@ -14,6 +14,7 @@ interface NavDropdownProps {
   items: NavItem[];
   colorClass?: string;
   icon?: React.ReactNode; // NEW: Accepts an icon component
+  buttonClassName?: string; // NEW: Allows overriding button styles completely
 }
 
 const NavDropdown: React.FC<NavDropdownProps> = ({
@@ -21,6 +22,7 @@ const NavDropdown: React.FC<NavDropdownProps> = ({
   items,
   colorClass = "text-text-heading",
   icon,
+  buttonClassName,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -44,7 +46,10 @@ const NavDropdown: React.FC<NavDropdownProps> = ({
     >
       {/* TRIGGER BUTTON */}
       <button
-        className={`flex items-center gap-1.5 px-2 py-1.5 text-sm font-extrabold uppercase tracking-wide transition-all duration-200 ${colorClass} hover:opacity-80`}
+        className={
+          buttonClassName ||
+          `flex items-center gap-1.5 px-2 py-1.5 text-sm font-extrabold uppercase tracking-wide transition-all duration-200 rounded-md hover:bg-slate-100 ${colorClass}`
+        }
         aria-expanded={isOpen}
       >
         {/* Render Icon if present */}

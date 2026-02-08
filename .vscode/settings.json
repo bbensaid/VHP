@@ -3,5 +3,8 @@
   "editor.defaultFormatter": "google.geminicodeassist",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "workbench.preferredDarkColorTheme": "Default Light Modern",
-  "workbench.preferredHighContrastColorTheme": "Visual Studio Light"
+  "workbench.preferredHighContrastColorTheme": "Visual Studio Light",
+  "geminicodeassist.agentYoloMode": true,
+  "geminicodeassist.agentDebugMode": true,
+  "geminicodeassist.codeGenerationPaneViewEnabled": true
 }

@@ -46,8 +46,7 @@ export default defineType({
     defineField({
       name: 'body',
       title: 'Full Analysis',
-      type: 'array',
-      of: [{ type: 'block' }],
+      type: 'blockContent',
     }),
     defineField({
       name: 'mainImage',

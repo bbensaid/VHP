@@ -7,12 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // These are your semantic names. Change the HEX here to update the site.
-        policy: "#1D4ED8", // Blue-700
-        economics: "#059669", // Green-600
-        technology: "#4F46E5", // Indigo-600
+        policy: "#1D4ED8",
+        economics: "#059669",
+        technology: "#4F46E5",
       },
     },
   },
-  plugins: [],
+  // ADD THIS SECTION BELOW
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

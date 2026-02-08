@@ -1,7 +1,6 @@
 const fs = require("fs");
 const path = require("path");
 const { createClient } = require("@sanity/client");
-const { v4: uuidv4 } = require("uuid");
 
 // --- 1. CONFIGURATION LOADING ---
 // Manually scans for .env.local to ensure reliability across environments
@@ -49,21 +48,37 @@ const client = createClient({
 
 const CONTENT_DIR = path.join(__dirname, "../sanity/content");
 
+function generateKey() {
+  return Math.random().toString(36).substring(2, 10);
+}
+
 // --- 3. HELPER: Data Sanitization ---
 function sanitizeBlock(block) {
   // Ensure unique keys for Sanity
-  if (!block._key) block._key = uuidv4().substring(0, 8);
+  if (!block._key) block._key = generateKey();
 
   // Convert AI "Clean Arrays" to Sanity "Stringified JSON"
   if (block._type === "code") {
-    if (Array.isArray(block.code)) block.code = JSON.stringify(block.code);
+    if (Array.isArray(block.code)) {
+      console.log(`🔧 Auto-fixing Data Table (Array -> String)`);
+      block.code = JSON.stringify(block.code, null, 2);
+    }
     if (!block.language) block.language = "json";
+  }
+
+  // Sanitize AI-generated video URLs that might be in Markdown format
+  if (block._type === "video" && block.url && block.url.startsWith("[")) {
+    const match = block.url.match(/\((https?:\/\/[^)]+)\)/);
+    if (match && match[1]) {
+      console.log(`🔧 Auto-fixing Video URL (Markdown -> Raw URL)`);
+      block.url = match[1];
+    }
   }
 
   // Recurse for children
   if (block.children && Array.isArray(block.children)) {
     block.children = block.children.map((child) => {
-      if (!child._key) child._key = uuidv4().substring(0, 8);
+      if (!child._key) child._key = generateKey();
       return child;
     });
   }
@@ -79,10 +94,15 @@ async function importDocs() {
     process.exit(1);
   }
 
-  const fullPath = path.join(CONTENT_DIR, targetFile);
+  // Robust Path Handling: Check if user provided full path or just filename
+  let fullPath = path.join(CONTENT_DIR, targetFile);
   if (!fs.existsSync(fullPath)) {
-    console.error(`❌ Error: File not found at ${fullPath}`);
-    process.exit(1);
+    // Try resolving relative to CWD (Current Working Directory)
+    fullPath = path.resolve(process.cwd(), targetFile);
+    if (!fs.existsSync(fullPath)) {
+      console.error(`❌ Error: File not found. Checked:\n  1. ${path.join(CONTENT_DIR, targetFile)}\n  2. ${fullPath}`);
+      process.exit(1);
+    }
   }
 
   console.log(`Processing: ${targetFile}...`);
@@ -104,7 +124,7 @@ async function importDocs() {
 
     // Upload to Sanity
     const res = await client.createOrReplace({
-      _id: `drafts.${doc.slug.current}`,
+      _id: doc.slug.current,
       _type: "policyAnalysis",
       ...doc,
     });
