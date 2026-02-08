@@ -90,7 +90,8 @@ export default function DashboardIndex() {
 
   // FILTER LOGIC
   const filteredStates = useMemo(() => {
-    const allStates = Object.values(rhtProgramData);
+    // Safety check if data is missing
+    const allStates = rhtProgramData ? Object.values(rhtProgramData) : [];
 
     let result = allStates.filter((state) => {
       const matchesSearch = state.stateName
@@ -125,8 +126,9 @@ export default function DashboardIndex() {
 
   // DYNAMIC METRICS
   const metrics = useMemo(() => {
+    const allStates = rhtProgramData ? Object.values(rhtProgramData) : [];
+    
     // 1. Calculate Grand Total (All Data)
-    const allStates = Object.values(rhtProgramData);
     const grandTotal = allStates.reduce((acc, curr) => {
       const val = parseInt(curr.awardAmount.replace(/[^0-9]/g, "")) || 0;
       return acc + val;
@@ -207,10 +209,18 @@ export default function DashboardIndex() {
                   Active Awards
                 </span>
               </div>
-              <div className="text-2xl font-black text-slate-900 animate-in fade-in">
+              {/* HYDRATION FIX APPLIED HERE */}
+              <div 
+                className="text-2xl font-black text-slate-900 animate-in fade-in"
+                suppressHydrationWarning={true}
+              >
                 {formatCompactCurrency(metrics.total)}
               </div>
-              <div className="text-xs text-slate-500">
+              {/* HYDRATION FIX APPLIED HERE */}
+              <div 
+                className="text-xs text-slate-500"
+                suppressHydrationWarning={true}
+              >
                 {metrics.total !== metrics.grandTotal
                   ? `of ${formatCompactCurrency(metrics.grandTotal)} Total`
                   : "Total Program Value"}
@@ -384,9 +394,15 @@ export default function DashboardIndex() {
                       <td className="p-4 pl-6 font-bold text-slate-900">
                         {state.stateName}
                       </td>
-                      <td className="p-4 text-slate-600 font-mono">
+                      
+                      {/* HYDRATION FIX APPLIED HERE */}
+                      <td 
+                        className="p-4 text-slate-600 font-mono"
+                        suppressHydrationWarning={true}
+                      >
                         {formatCompactCurrency(state.awardAmount)}
                       </td>
+
                       <td className="p-4 text-slate-500">
                         <span className="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">
                           {REGION_MAP[state.id] || "Other"}

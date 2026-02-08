@@ -1,162 +1,118 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-
-const ALL_STATES = [
-  { name: "Vermont", code: "VT", score: 92, status: "stable" },
-  { name: "New Hampshire", code: "NH", score: 88, status: "stable" },
-  { name: "Maine", code: "ME", score: 76, status: "warning" },
-  { name: "Massachusetts", code: "MA", score: 95, status: "stable" },
-  { name: "New York", code: "NY", score: 82, status: "stable" },
-  { name: "Rhode Island", code: "RI", score: 65, status: "critical" },
-  { name: "Connecticut", code: "CT", score: 89, status: "stable" },
-];
+import { useState } from "react";
+import { US_STATES_DATA } from "@/lib/data/states";
+import { StateHealthData } from "@/types";
 
 export default function StateMonitor() {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedStates, setSelectedStates] = useState<string[]>(["VT", "NH", "ME"]);
-  const [isMobileOpen, setIsMobileOpen] = useState(false); // <--- ADDED STATE
-  const wrapperRef = useRef<HTMLDivElement>(null);
-  const router = useRouter();
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filter, setFilter] = useState<'All' | 'Critical' | 'Stable'>('All');
 
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (wrapperRef.current && !wrapperRef.current.contains(event.target as Node)) {
-        setIsDropdownOpen(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  // Filter Logic
+  const filteredStates = US_STATES_DATA.filter((state) => {
+    const matchesSearch = state.name.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesFilter = filter === 'All' || state.status === filter;
+    return matchesSearch && matchesFilter;
+  });
 
-  const filteredStates = ALL_STATES.filter(
-    (s) =>
-      s.name.toLowerCase().includes(searchQuery.toLowerCase()) &&
-      !selectedStates.includes(s.code)
+  return (
+    <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col h-[600px]">
+      {/* Header */}
+      <div className="p-4 border-b border-slate-100 bg-slate-50 flex flex-col gap-4">
+        <div className="flex items-center justify-between">
+          <h3 className="font-bold text-slate-800 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+            National Health Pulse
+          </h3>
+          <span className="text-xs font-mono text-slate-400">LIVE FEED</span>
+        </div>
+
+        {/* Search & Filters */}
+        <div className="flex gap-2">
+          <input 
+            type="text" 
+            placeholder="Search state..." 
+            className="flex-1 bg-white border border-slate-200 text-sm rounded-md px-3 py-2 outline-none focus:border-indigo-500 transition-colors"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <select 
+            className="bg-white border border-slate-200 text-sm rounded-md px-2 py-2 outline-none focus:border-indigo-500"
+            value={filter}
+            onChange={(e) => setFilter(e.target.value as any)}
+          >
+            <option value="All">All Status</option>
+            <option value="Critical">Critical</option>
+            <option value="Stable">Stable</option>
+          </select>
+        </div>
+      </div>
+
+      {/* Scrollable List */}
+      <div className="flex-1 overflow-y-auto p-2 space-y-2">
+        {filteredStates.map((state) => (
+          <StateCard key={state.code} state={state} />
+        ))}
+        
+        {filteredStates.length === 0 && (
+          <div className="text-center py-10 text-slate-400 text-sm">
+            No states found matching your criteria.
+          </div>
+        )}
+      </div>
+    </div>
   );
+}
 
-  const watchlistData = ALL_STATES.filter((s) => selectedStates.includes(s.code));
-
-  const addState = (code: string) => {
-    if (!selectedStates.includes(code)) {
-      setSelectedStates([...selectedStates, code]);
-      setSearchQuery("");
-      setIsDropdownOpen(false);
-    }
+// Sub-component for cleaner rendering
+function StateCard({ state }: { state: StateHealthData }) {
+  const statusColors = {
+    Critical: "bg-red-50 text-red-700 border-red-100",
+    Warning: "bg-yellow-50 text-yellow-700 border-yellow-100",
+    Stable: "bg-green-50 text-green-700 border-green-100",
+    Improving: "bg-blue-50 text-blue-700 border-blue-100",
   };
 
-  const removeState = (code: string) => {
-    setSelectedStates(selectedStates.filter((c) => c !== code));
+  const trendIcon = {
+    up: "↑",
+    down: "↓",
+    flat: "→",
   };
 
-  const getScoreColor = (score: number) => {
-    if (score >= 90) return "bg-emerald-500";
-    if (score >= 80) return "bg-blue-500";
-    if (score >= 70) return "bg-yellow-500";
-    return "bg-rose-500";
+  const trendColor = {
+    up: "text-green-600",
+    down: "text-red-600",
+    flat: "text-slate-400",
   };
 
   return (
-    <div className="bg-white border border-slate-200 rounded-lg shadow-sm overflow-hidden" ref={wrapperRef}>
-      
-      {/* HEADER - CLICKABLE ON MOBILE */}
-      <div 
-        className="flex items-center justify-between p-5 bg-white cursor-pointer md:cursor-default"
-        onClick={() => setIsMobileOpen(!isMobileOpen)}
-      >
-        <div className="flex items-center gap-2">
-          <svg className="w-4 h-4 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-          </svg>
-          <h3 className="font-bold text-slate-900 text-sm uppercase tracking-wider">
-            State Monitor
-          </h3>
+    <div className="p-3 rounded-lg border border-slate-100 hover:border-indigo-200 hover:shadow-md transition-all cursor-pointer group bg-white">
+      <div className="flex justify-between items-start mb-2">
+        <div>
+          <h4 className="font-bold text-slate-900">{state.name}</h4>
+          <span className={`text-[10px] uppercase font-bold px-2 py-0.5 rounded-full border ${statusColors[state.status]}`}>
+            {state.status}
+          </span>
         </div>
-        {/* Mobile Indicator */}
-        <span className="md:hidden text-slate-400 font-bold text-lg">
-          {isMobileOpen ? "−" : "+"}
-        </span>
+        <div className="text-right">
+          <div className="text-2xl font-black text-slate-800">{state.score}</div>
+          <div className="text-[10px] text-slate-400 uppercase tracking-wider">HTR Score</div>
+        </div>
       </div>
 
-      {/* CONTENT - COLLAPSIBLE ON MOBILE */}
-      <div className={`px-5 pb-5 ${isMobileOpen ? 'block' : 'hidden'} md:block`}>
-        
-        {/* SEARCH INPUT */}
-        <div className="relative mb-4 z-50">
-          <div 
-            className="flex items-center border border-slate-300 rounded bg-white hover:border-indigo-500 transition-colors cursor-text h-9"
-            onClick={() => setIsDropdownOpen(true)}
-          >
-             <span className="pl-3 text-slate-400 text-xs">🔍</span>
-             <input
-                type="text"
-                placeholder="Add state..."
-                className="w-full text-xs py-2 px-2 focus:outline-none text-slate-700 font-medium bg-transparent placeholder-slate-400"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onFocus={() => setIsDropdownOpen(true)}
-             />
-             <span className="pr-3 text-slate-400 text-[9px] pointer-events-none">▼</span>
-          </div>
-          
-          {/* DROPDOWN MENU */}
-          {isDropdownOpen && (
-            <div className="absolute top-full left-0 w-full bg-white border border-slate-200 shadow-xl rounded-md z-50 max-h-60 overflow-y-auto mt-1">
-              {filteredStates.length > 0 ? (
-                filteredStates.map((state) => (
-                  <div
-                    key={state.code}
-                    className="px-3 py-2 text-xs hover:bg-slate-50 cursor-pointer text-slate-700 flex justify-between items-center border-b border-slate-50 last:border-0"
-                    onClick={() => addState(state.code)}
-                  >
-                    <span className="font-bold">{state.name}</span>
-                    <div className="flex items-center gap-2">
-                        <span className="text-[10px] text-slate-400">{state.score}</span>
-                        <span className={`w-1.5 h-1.5 rounded-full ${getScoreColor(state.score)}`}></span>
-                    </div>
-                  </div>
-                ))
-              ) : (
-                <div className="px-3 py-2 text-xs text-slate-400 italic bg-white">No matching states.</div>
-              )}
-            </div>
-          )}
+      <div className="grid grid-cols-2 gap-2 mt-2 pt-2 border-t border-slate-50 text-xs">
+        <div>
+          <span className="text-slate-500 block">Margin</span>
+          <span className={`font-mono font-medium ${state.hospitalMargin < 0 ? 'text-red-600' : 'text-green-600'}`}>
+            {state.hospitalMargin > 0 ? '+' : ''}{state.hospitalMargin}%
+          </span>
         </div>
-
-        {/* WATCHLIST */}
-        <div className="space-y-2 mb-4 relative z-10">
-            {watchlistData.map((state) => (
-            <div key={state.code} className="flex items-center justify-between bg-slate-50 p-2 rounded border border-slate-200 group">
-                <div className="flex items-center gap-3">
-                    <div className={`w-6 h-6 rounded flex items-center justify-center text-white shadow-sm ${getScoreColor(state.score)}`}>
-                        <span className="text-[9px] font-bold leading-none">{state.code}</span>
-                    </div>
-                    <div>
-                        <h4 className="text-xs font-bold text-slate-800 leading-none mb-0.5">{state.name}</h4>
-                        <p className="text-[9px] text-slate-500 uppercase">{state.status}</p>
-                    </div>
-                </div>
-                <button 
-                    onClick={() => removeState(state.code)}
-                    className="text-slate-300 hover:text-rose-600 transition-colors text-lg px-2 leading-none"
-                    title="Remove"
-                >
-                    ×
-                </button>
-            </div>
-            ))}
+        <div className="text-right">
+          <span className="text-slate-500 block">Trend</span>
+          <span className={`font-bold ${trendColor[state.trend]}`}>
+            {trendIcon[state.trend]} {state.trend === 'up' ? 'Improving' : state.trend === 'down' ? 'Declining' : 'Stable'}
+          </span>
         </div>
-
-        {/* ACTION BUTTON */}
-        <Link 
-            href={`/dashboard/compare?ids=${selectedStates.join(',')}`}
-            className="w-full py-2 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 text-xs font-bold uppercase tracking-wider rounded flex items-center justify-center gap-2 transition-all"
-        >
-            Compare Reports
-        </Link>
       </div>
     </div>
   );

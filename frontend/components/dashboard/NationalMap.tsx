@@ -300,10 +300,6 @@ export function NationalMap({
           zoom={position.zoom}
           center={position.coordinates}
           onMoveEnd={handleMoveEnd}
-          translateExtent={[
-            [-100, -100],
-            [900, 700],
-          ]}
         >
           <Geographies geography={geoUrl}>
             {({ geographies }) => (
