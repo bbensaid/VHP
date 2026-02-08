@@ -1,77 +1,88 @@
-import React from "react";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { rhtProgramData } from "@/lib/data/rht-program";
-import { 
-  BuildingOffice2Icon,
-  CpuChipIcon,
-  ServerStackIcon,
-  SignalIcon,
-  ExclamationTriangleIcon
-} from "@heroicons/react/24/outline";
+import { client } from "@/lib/sanity";
 
-export async function generateStaticParams() {
-  return Object.keys(rhtProgramData).map((slug) => ({
-    state: slug,
-  }));
+interface Hospital {
+  _id: string;
+  name: string;
+  city: string;
+  beds: number;
+  revenue: number;
+  margin: number;
+  staffingStatus: string;
 }
 
-export default async function GenericSystemHealth({ params }: { params: Promise<{ state: string }> }) {
-  const resolvedParams = await params;
-  const stateSlug = resolvedParams.state.toLowerCase();
-  const data = rhtProgramData[stateSlug];
+export const revalidate = 60;
 
-  if (!data) return notFound();
+export default async function HospitalsPage({ params }: { params: Promise<{ state: string }> }) {
+  const { state } = await params;
+  
+  // GROQ Query
+  const query = `*[_type == "hospital" && state == $state] | order(name asc) {
+    _id,
+    name,
+    city,
+    beds,
+    revenue,
+    margin,
+    staffingStatus
+  }`;
 
-  // MOCK DATA GENERATOR
-  const mockHospitals = [
-    { name: `${data.stateName} General`, slug: `${data.stateName.toLowerCase().replace(/\s+/g, '-')}-general`, city: "Capital City", type: "Acute Care", status: "Active", risk: "Low" },
-    { name: `North ${data.stateName} Medical`, slug: `north-${data.stateName.toLowerCase().replace(/\s+/g, '-')}-medical`, city: "Highland", type: "Critical Access", status: "Active", risk: "Medium" },
-    { name: `${data.stateName} Valley Health`, slug: `${data.stateName.toLowerCase().replace(/\s+/g, '-')}-valley`, city: "Riverdale", type: "Critical Access", status: "Warning", risk: "High" },
-  ];
+  const hospitals: Hospital[] = await client.fetch(query, { state });
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-800 pb-20">
-      <div className="max-w-7xl mx-auto px-6 py-10 space-y-10">
-        
-        {/* HEADER */}
-        <div className="bg-white border-l-4 border-indigo-500 p-8 rounded-r-xl shadow-sm">
-           <h1 className="text-3xl font-black text-slate-900">{data.stateName} System Health</h1>
-           <p className="text-slate-500">Operational tracking for the {data.awardAmount} federal investment.</p>
+    <div className="p-8">
+      <div className="flex justify-between items-center mb-8">
+        <div>
+          <h1 className="text-2xl font-bold text-slate-900">Hospital Performance</h1>
+          <p className="text-slate-500">Live financial and operational metrics</p>
         </div>
+        <div className="text-sm text-slate-400">
+          Source: Sanity Live Data • {hospitals.length} Facilities
+        </div>
+      </div>
 
-        {/* REGISTRY TABLE */}
-        <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-           <table className="w-full text-left text-sm">
-              <thead className="bg-slate-50 border-b border-slate-200 text-xs font-bold text-slate-500 uppercase">
-                <tr>
-                  <th className="p-4 pl-6">Facility Name</th>
-                  <th className="p-4">City</th>
-                  <th className="p-4">Status</th>
-                  <th className="p-4 text-right pr-6">Risk</th>
+      <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+        <table className="w-full text-left">
+          <thead className="bg-slate-50 border-b border-slate-200">
+            <tr>
+              <th className="p-4 font-bold text-slate-600 text-sm">Facility</th>
+              <th className="p-4 font-bold text-slate-600 text-sm">Location</th>
+              <th className="p-4 font-bold text-slate-600 text-sm">Beds</th>
+              <th className="p-4 font-bold text-slate-600 text-sm">Revenue</th>
+              <th className="p-4 font-bold text-slate-600 text-sm">Margin</th>
+              <th className="p-4 font-bold text-slate-600 text-sm">Staffing</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-100">
+            {hospitals.length > 0 ? (
+              hospitals.map((h) => (
+                <tr key={h._id} className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 font-bold text-slate-900">{h.name}</td>
+                  <td className="p-4 text-slate-600">{h.city}</td>
+                  <td className="p-4 text-slate-600">{h.beds}</td>
+                  <td className="p-4 text-slate-600">${h.revenue}M</td>
+                  <td className={`p-4 font-bold ${h.margin < 0 ? 'text-red-600' : 'text-green-600'}`}>
+                    {h.margin}%
+                  </td>
+                  <td className="p-4">
+                    <span className={`px-2 py-1 rounded-full text-xs font-bold ${
+                      h.staffingStatus === 'Critical' ? 'bg-red-100 text-red-700' :
+                      h.staffingStatus === 'Strain' ? 'bg-yellow-100 text-yellow-700' :
+                      'bg-green-100 text-green-700'
+                    }`}>
+                      {h.staffingStatus}
+                    </span>
+                  </td>
                 </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100">
-                {mockHospitals.map((hospital, index) => (
-                  <tr key={index} className="hover:bg-slate-50 transition-colors group">
-                    <td className="p-4 pl-6 font-bold text-slate-900">
-                       {/* THIS LINK MUST MATCH THE FOLDER STRUCTURE */}
-                       <Link 
-                         href={`/dashboard/${stateSlug}/hospitals/${hospital.slug}`}
-                         className="flex items-center gap-2 hover:text-indigo-600"
-                       >
-                          <BuildingOffice2Icon className="w-4 h-4 text-slate-400 group-hover:text-indigo-500" />
-                          {hospital.name}
-                       </Link>
-                    </td>
-                    <td className="p-4 text-slate-500">{hospital.city}</td>
-                    <td className="p-4 text-emerald-600 font-bold">{hospital.status}</td>
-                    <td className="p-4 text-right pr-6">{hospital.risk}</td>
-                  </tr>
-                ))}
-              </tbody>
-           </table>
-        </div>
+              ))
+            ) : (
+              <tr>
+                <td colSpan={6} className="p-8 text-center text-slate-400 italic">
+                  No hospital data found for this state in Sanity.
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
       </div>
     </div>
   );

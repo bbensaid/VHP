@@ -1,0 +1,43 @@
+{
+  "_type": "policyAnalysis",
+  "title": "DEBUG: Video Rendering Test",
+  "slug": { "current": "debug-video-test" },
+  "publishedAt": "2023-10-27T12:00:00Z",
+  "status": "Active",
+  "pillar": "Technology",
+  "category": "ai",
+  "impactLevel": "Medium",
+  "summary": "This is a debug article to verify video rendering capabilities.",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [{ "_type": "span", "text": "Test 1: YouTube Video below." }]
+    },
+    {
+      "_type": "video",
+      "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+      "caption": "YouTube Test"
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [{ "_type": "span", "text": "Test 2: Direct MP4 Link below." }]
+    },
+    {
+      "_type": "video",
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "caption": "Direct MP4 Test"
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [{ "_type": "span", "text": "Test 3: Generic Link (Fallback) below." }]
+    },
+    {
+      "_type": "video",
+      "url": "https://vimeo.com/channels/staffpicks/93951774",
+      "caption": "Fallback Link Test"
+    }
+  ]
+}

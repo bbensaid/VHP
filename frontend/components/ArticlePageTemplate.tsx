@@ -52,8 +52,14 @@ export default async function ArticlePageTemplate({
       _key,
       _type == "video" => {
         ...,
-        videoFile { asset->{url} }
+        "url": url, 
+        videoFile { asset->{url, mimeType} },
+        file { asset->{url, mimeType} },
+        video { asset->{url, mimeType} },
+        asset->{url, mimeType}
       },
+      _type == "youtube" => { ..., url },
+      _type == "mux.video" => { ..., url },
       _type == "audio" => {
         ...,
         file { asset->{url} }
@@ -68,7 +74,7 @@ export default async function ArticlePageTemplate({
   const article = await client.fetch(
     query,
     { slug: id },
-    { next: { revalidate: 0 } }
+    { next: { revalidate: 0 } },
   );
 
   if (!article) {
@@ -90,93 +96,98 @@ export default async function ArticlePageTemplate({
 
   const theme = getTheme(article.pillar);
 
-  const videoElements = article.body?.filter((block: any) => block._type === 'video') || [];
-  const audioElements = article.body?.filter((block: any) => block._type === 'audio') || [];
-  const mainContent = article.body?.filter((block: any) => block._type !== 'video' && block._type !== 'audio') || [];
+  const videoElements =
+    article.body?.filter((block: any) => ["video", "youtube", "mux.video"].includes(block._type)) || [];
+  const audioElements =
+    article.body?.filter((block: any) => block._type === "audio") || [];
+  const mainContent =
+    article.body || [];
 
   return (
-    <div className="flex flex-col lg:flex-row gap-8 mt-6">
-      {/* Left Sidebar */}
-      <aside className="order-2 lg:order-1 lg:w-1/4 w-full">
-        <div className="sticky top-24 space-y-6">
-          <div id="video-content" className="scroll-mt-32">
-            {videoElements.map((video: any, index: number) => (
-              <VideoBlock key={video._key} value={video} />
-            ))}
+    <>
+      <div className="flex flex-col lg:flex-row gap-8">
+        {/* Left Sidebar */}
+        <aside className="order-2 lg:order-1 lg:w-1/4 w-full">
+          <div className="sticky top-40 space-y-6">
+            <div id="video-content" className="scroll-mt-32">
+              {videoElements.map((video: any, index: number) => (
+                <VideoBlock key={video._key} value={video} />
+              ))}
+            </div>
+            {videoElements.length > 0 && audioElements.length > 0 && (
+              <hr className="border-gray-200 my-8" />
+            )}
+            <div id="audio-content" className="scroll-mt-32">
+              {audioElements.map((audio: any, index: number) => (
+                <AudioBlock key={audio._key} value={audio} />
+              ))}
+            </div>
           </div>
-          {videoElements.length > 0 && audioElements.length > 0 && (
-            <hr className="border-gray-200 my-8" />
+        </aside>
+
+        {/* Main Content */}
+        <article className="order-1 lg:order-2 w-full lg:w-3/4">
+          <header className="mb-10 border-b border-gray-200 pb-10">
+            <div className="flex items-center gap-3 mb-6">
+              {article.pillar && (
+                <span
+                  className={`px-3 py-1 rounded text-xs font-bold uppercase tracking-wide ${theme.badge}`}
+                >
+                  {article.pillar}
+                </span>
+              )}
+              <span className="text-gray-500 text-sm font-medium">
+                {new Date(article.publishedAt).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </span>
+              {article.status && (
+                <span className="ml-auto text-xs font-mono text-gray-400 border border-gray-200 px-2 py-0.5 rounded">
+                  {article.status}
+                </span>
+              )}
+            </div>
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+              {article.title}
+            </h1>
+
+            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+              {article.summary}
+            </p>
+          </header>
+
+          {article.mainImage?.asset?.url && (
+            <figure className="mb-12">
+              <img
+                src={article.mainImage.asset.url}
+                alt={article.mainImage.alt || article.title}
+                className="w-full h-auto rounded-xl shadow-lg object-cover max-h-[600px]"
+              />
+              {article.mainImage.caption && (
+                <figcaption className="mt-3 text-center text-sm text-gray-500 italic">
+                  {article.mainImage.caption}
+                </figcaption>
+              )}
+            </figure>
           )}
-          <div id="audio-content" className="scroll-mt-32">
-            {audioElements.map((audio: any, index: number) => (
-              <AudioBlock key={audio._key} value={audio} />
-            ))}
-          </div>
-        </div>
-      </aside>
 
-      {/* Main Content */}
-      <article className="order-1 lg:order-2 w-full lg:w-3/4">
-        <header className="mb-10 border-b border-gray-200 pb-10">
-          <div className="flex items-center gap-3 mb-6">
-            {article.pillar && (
-              <span
-                className={`px-3 py-1 rounded text-xs font-bold uppercase tracking-wide ${theme.badge}`}
-              >
-                {article.pillar}
-              </span>
-            )}
-            <span className="text-gray-500 text-sm font-medium">
-              {new Date(article.publishedAt).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </span>
-            {article.status && (
-              <span className="ml-auto text-xs font-mono text-gray-400 border border-gray-200 px-2 py-0.5 rounded">
-                {article.status}
-              </span>
-            )}
+          <div className="prose prose-lg prose-indigo max-w-none">
+            <ArticleContent body={mainContent} />
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
-            {article.title}
-          </h1>
-
-          <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
-            {article.summary}
-          </p>
-        </header>
-
-        {article.mainImage?.asset?.url && (
-          <figure className="mb-12">
-            <img
-              src={article.mainImage.asset.url}
-              alt={article.mainImage.alt || article.title}
-              className="w-full h-auto rounded-xl shadow-lg object-cover max-h-[600px]"
-            />
-            {article.mainImage.caption && (
-              <figcaption className="mt-3 text-center text-sm text-gray-500 italic">
-                {article.mainImage.caption}
-              </figcaption>
-            )}
-          </figure>
-        )}
-
-        <div className="prose prose-lg prose-indigo max-w-none">
-          <ArticleContent body={mainContent} />
-        </div>
-
-        <div className="mt-20 pt-10 border-t border-gray-200">
-          <Link
-            href="/"
-            className="text-gray-500 hover:text-indigo-600 font-bold flex items-center gap-2"
-          >
-            &larr; Back to Intelligence Feed
-          </Link>
-        </div>
-      </article>
-    </div>
+          <div className="mt-20 pt-10 border-t border-gray-200">
+            <Link
+              href="/"
+              className="text-gray-500 hover:text-indigo-600 font-bold flex items-center gap-2"
+            >
+              &larr; Back to Intelligence Feed
+            </Link>
+          </div>
+        </article>
+      </div>
+    </>
   );
 }

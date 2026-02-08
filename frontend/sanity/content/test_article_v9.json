@@ -1,0 +1,57 @@
+{
+  "_type": "policyAnalysis",
+  "title": "The Telehealth Correction: Economic Implications of Expiring Waivers",
+  "slug": { "current": "telehealth-correction-economic-implications" },
+  "publishedAt": "2025-02-15",
+  "status": "Active",
+  "pillar": "Economics",
+  "category": "market",
+  "impactLevel": "High",
+  "summary": "As pandemic-era reimbursement parity waivers expire, the healthcare market faces a sharp correction in virtual care supply. This analysis quantifies the revenue risk for rural providers and the shifting cost burden to patients.",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [{ "_type": "span", "text": "The rapid expansion of telehealth during the public health emergency was underpinned by temporary reimbursement parity. As these waivers sunset, we are witnessing a significant market correction. Providers who capitalized on virtual visits as a primary revenue stream must now pivot to hybrid models or face solvency risks.", "marks": [] }]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{ "_type": "span", "text": "The Reimbursement Cliff", "marks": [] }]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [{ "_type": "span", "text": "CMS has signaled a return to pre-pandemic fee schedules for remote monitoring codes. For rural health clinics (RHCs), this effectively cuts the margin on virtual visits by 40%. The economic implication is a forced consolidation of independent practices into larger health systems that can absorb the administrative overhead of complex billing requirements.", "marks": [] }]
+    },
+    {
+      "_type": "block",
+      "style": "blockquote",
+      "children": [{
+         "_type": "span",
+         "text": "Without parity, telehealth becomes a loss leader—a service patients demand but providers cannot afford to supply.",
+         "marks": [] 
+      }]
+    },
+    {
+      "_type": "code",
+      "title": "Projected Revenue Impact (2025-2026)",
+      "language": "json",
+      "code": [
+        { "Service Line": "Primary Care (Virtual)", "Reimbursement Change": "-15%", "Volume Impact": "-10%" },
+        { "Service Line": "Behavioral Health", "Reimbursement Change": "0% (Protected)", "Volume Impact": "+5%" },
+        { "Service Line": "Remote Patient Monitoring", "Reimbursement Change": "-22%", "Volume Impact": "-35%" }
+      ]
+    },
+    {
+      "_type": "video",
+      "url": "https://www.youtube.com/watch?v=WWz1KdDiu78",
+      "caption": "Analysis of the 2025 Physician Fee Schedule"
+    },
+    {
+      "_type": "audio",
+      "title": "Market Watch: The Telehealth Correction",
+      "summary": "Audio breakdown of the new CMS rules and what they mean for private equity in healthcare."
+    }
+  ]
+}

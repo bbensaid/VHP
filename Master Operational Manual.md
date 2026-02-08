@@ -1,87 +1,71 @@
-This is your **Master Operational Manual**. It covers every step of the VHP (Vermont Health Platform) lifecycle, from generating an idea with AI to interacting with it in the Chat application.
+This is your **Master Operational Manual (v2.0)**. It covers the complete lifecycle of the VHP (Vermont Health Platform), from generating content with AI to publishing it on the live site.
 
-**Prerequisite:** Open your terminal and navigate to your project root:
-
-```bash
-cd ~/Vermont-Health-Platform
-
-```
+**Prerequisites:**
+1.  **Terminal:** Open your terminal and navigate to your project root:
+    ```bash
+    cd ~/Vermont-Health-Platform
+    ```
+2.  **Sanity Token:** Ensure you have a valid API token in `frontend/.env.local` (See **Appendix A** if setting up for the first time).
 
 ---
 
 ### Phase 1: Content Generation (Gemini)
 
-**Goal:** Create a structured JSON article using the latest protocol.
+**Goal:** Generate a valid JSON article using the strict v9 protocol.
 
-**1. The "Golden Key" Prompt**
-You must copy this **entire block** into Gemini for every new article.
+**1. The "Golden Key" Prompt (v9)**
+Copy the **entire block** below into Gemini. This template enforces strict JSON rules to prevent errors.
 
-- **File Location:** `frontend/sanity/prompt_template_v7.txt` (Save this locally for safekeeping).
+*   **Source File:** `frontend/sanity/prompt_template_v9.txt`
 
-````text
-*** SYSTEM INSTRUCTIONS: HTR CONTENT PROTOCOL v7.0 ***
+```text
+*** SYSTEM INSTRUCTIONS: HTR CONTENT PROTOCOL v9 (STRICT) ***
 
 ROLE: Chief Research Officer (HTR).
 TASK: Generate a valid JSON payload for the "policyAnalysis" schema.
 
 *** 1. STRICT OUTPUT RULES ***
-- Output ONLY a single, raw JSON object. No markdown formatting (no ```json).
+- Output ONLY a single, raw JSON object.
+- Do NOT wrap the output in markdown code blocks (no ```json).
 - No conversational text.
 - Do NOT escape quotes inside the Data Table. Provide it as a standard JSON Array.
-- VIDEO RULE: The "url" field MUST be a raw string (e.g., "[https://youtube.com/](https://youtube.com/)..."). Do NOT format it as a Markdown link.
+- VIDEO URL: Must be a raw string (e.g., "https://..."). Do NOT use Markdown links (e.g., url).
 
-*** 2. CATEGORY ENFORCEMENT (Must match Navbar) ***
-Use ONLY these slugs for the 'category' field based on the chosen Pillar:
-
-A. IF PILLAR = "Policy"
-   - "regulation"  (Regulation & Legislation)
-   - "mandates"    (Public Health Mandates)
-   - "global"      (Global & Comparative Policy)
-   - "feasibility" (Policy Feasibility Studies)
-
-B. IF PILLAR = "Economics"
-   - "value"       (Value-Based Care Models)
-   - "market"      (Market & Finance)
-   - "cea"         (Labor & Workforce Strategy)
-   - "investment"  (Healthcare Investment Trends)
-
-C. IF PILLAR = "Technology"
-   - "ai"          (AI & Machine Learning)
-   - "digital"     (Digital Health & Telemedicine)
-   - "security"    (Data Security & Governance)
-   - "workflow"    (Tech-Enabled Workflow)
-
-*** 3. SCHEMA DEFINITION ***
+*** 2. SCHEMA DEFINITION ***
 {
   "_type": "policyAnalysis",
   "title": "String",
   "slug": { "current": "kebab-case-slug" },
-  "publishedAt": "YYYY-MM-DDTHH:mm:ssZ",
+  "publishedAt": "YYYY-MM-DD",
   "status": "Active",
-  "pillar": "Policy" | "Economics" | "Technology",
-  "category": "String (See List Above)",
+  "pillar": "Economics" | "Policy" | "Technology",
+  "category": "workflow" | "market" | "solvency",
   "impactLevel": "Critical" | "High" | "Medium",
   "summary": "2-3 sentence abstract.",
   "body": [
+    // BLOCK TYPE 1: Standard Text
     {
       "_type": "block",
       "style": "normal",
-      "children": [{ "_type": "span", "text": "Paragraph text." }]
+      "children": [{ "_type": "span", "text": "Paragraph text.", "marks": [] }]
     },
+    // BLOCK TYPE 2: Headers (h2 or h3)
     {
       "_type": "block",
       "style": "h2",
-      "children": [{ "_type": "span", "text": "Header Text" }]
+      "children": [{ "_type": "span", "text": "Header Text", "marks": [] }]
     },
+    // BLOCK TYPE 3: Quote (Standard)
     {
       "_type": "block",
       "style": "blockquote",
       "children": [{
          "_type": "span",
          "text": "The quote text.",
-         "marks": ["highlight-economics"]
+         "marks": [] 
       }]
     },
+    // BLOCK TYPE 4: Data Table (clean array)
     {
       "_type": "code",
       "title": "Table Caption",
@@ -91,11 +75,13 @@ C. IF PILLAR = "Technology"
         { "Metric": "Value C", "Result": "Value D" }
       ]
     },
+    // BLOCK TYPE 5: YouTube Video
     {
       "_type": "video",
-      "url": "INSERT_REAL_URL_HERE",
+      "url": "https://www.youtube.com/watch?v=...",
       "caption": "Video description"
     },
+    // BLOCK TYPE 6: Audio Player
     {
       "_type": "audio",
       "title": "Episode Title",
@@ -104,40 +90,34 @@ C. IF PILLAR = "Technology"
   ]
 }
 
-*** TASK PARAMETERS (EDIT THIS PART ONLY) ***
-TARGET LENGTH: [e.g. 2000 Words]
-INSTRUCTION: Expand on every section to meet this depth. Do not summarize; analyze.
-
-TOPIC: [Insert Topic Here]
-PILLAR: [Insert Pillar Here]
-CATEGORY: [Insert Category Slug Here]
-KEY DATA: [Insert Data Points]
-
-````
+*** TASK (EDIT BELOW THIS LINE) ***
+Generate an article for the "Economics" pillar.
+Topic: [Insert Topic]
+Key Data to Include: [Insert Data]
+Tone: Serious, analytical.
+```
 
 **2. Saving the Output**
-
-- Copy the JSON output from Gemini.
-- Create a new file in: `frontend/sanity/content/`.
-- **Naming Convention:** `articleX.json` (e.g., `article10.json`).
-- **Action:** Paste the JSON and save.
+1.  Copy the JSON output from Gemini.
+2.  Create a new file in: `frontend/sanity/content/`.
+3.  **Naming Convention:** `article_name.json` (e.g., `telehealth_report.json`).
+4.  **Action:** Paste the JSON and save.
 
 ---
 
 ### Phase 2: Importing to CMS (Sanity)
 
-**Goal:** Upload the JSON file to the Sanity database.
+**Goal:** Upload the JSON file to the Sanity database. The script will **automatically fix** common AI errors (like Data Table formatting).
 
 **1. The Command**
-Open your terminal (ensure you are in `Vermont-Health-Platform` root):
+Open your terminal in the project root:
 
 ```bash
 # 1. Enter Frontend
 cd frontend
 
-# 2. Run Import (Replace 'article10.json' with your actual filename)
-node scripts/import.js article10.json
-
+# 2. Run Import (Replace 'filename.json' with your actual file)
+node scripts/import.js telehealth_report.json
 ```
 
 **2. Success Indicator**

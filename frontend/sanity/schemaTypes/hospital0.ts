@@ -1,0 +1,1 @@
+// DEPRECATED: Use hospital.ts
