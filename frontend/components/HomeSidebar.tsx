@@ -100,6 +100,7 @@ export default function HomeSidebar({
         <button
           onClick={() => onToggleSection(title)}
           className={`w-full flex items-center justify-between py-3 px-3 my-1 rounded-lg group transition-all duration-200 focus:outline-none border border-slate-200 ${isOpen ? "bg-slate-100 text-slate-900" : "bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900"}`}
+          aria-expanded={isOpen}
         >
           <div className="flex items-center gap-3">
             <div

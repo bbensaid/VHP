@@ -87,7 +87,7 @@ export default function CollapsibleSidebar({
         <div className="flex items-center gap-1">
           <button
             onClick={togglePin}
-            className="p-2 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors"
+            className="p-2 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors flex items-center gap-2"
             title={isPinned ? "Unpin Sidebar" : "Pin Sidebar"}
           >
             {isPinned ? (
@@ -95,6 +95,14 @@ export default function CollapsibleSidebar({
             ) : (
               <PinOutlineIcon className="w-5 h-5" />
             )}
+            {effectiveOpen && (
+                <span className="text-[10px] font-bold uppercase tracking-wider">
+                    {isPinned ? "Unpin" : "Pin"}
+                </span>
+            )}
+            <span className="sr-only">
+              {isPinned ? "Unpin Sidebar" : "Pin Sidebar"}
+            </span>
           </button>
           {effectiveOpen && (
             <button
@@ -105,11 +113,14 @@ export default function CollapsibleSidebar({
               className="p-2 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors flex items-center gap-2"
               title={`${hideLabel} Sidebar`}
             >
+              <span className="sr-only">{hideLabel} Sidebar</span>
+              {isLeft && <span className="text-[10px] font-bold uppercase tracking-wider">{hideLabel}</span>}
               {isLeft ? (
                 <ChevronLeftIcon className="w-4 h-4" />
               ) : (
                 <ChevronRightIcon className="w-4 h-4" />
               )}
+              {!isLeft && <span className="text-[10px] font-bold uppercase tracking-wider">{hideLabel}</span>}
             </button>
           )}
         </div>
