@@ -22,8 +22,10 @@ interface AppShellProps {
 export default function AppShell({ children, tickerData }: AppShellProps) {
   const pathname = usePathname();
   const isHomepage = pathname === "/";
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-  const [isRightSidebarOpen, setIsRightSidebarOpen] = useState(true);
+  const [isLeftSidebarOpen, setLeftSidebarOpen] = useState(true);
+  const [isRightSidebarOpen, setRightSidebarOpen] = useState(true);
+  const [isLeftSidebarPinned, setLeftSidebarPinned] = useState(true);
+  const [isRightSidebarPinned, setRightSidebarPinned] = useState(true);
   const [leftOpenSections, setLeftOpenSections] = useState<string[]>([]);
   const [rightOpenSections, setRightOpenSections] = useState<string[]>([]);
   const { isStripVisible, setStripVisible } = useTicker();
@@ -32,10 +34,12 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 1024) {
-        setIsSidebarOpen(false);
+        setLeftSidebarOpen(false);
+        setLeftSidebarPinned(false);
       }
       if (window.innerWidth < 1280) {
-        setIsRightSidebarOpen(false);
+        setRightSidebarOpen(false);
+        setRightSidebarPinned(false);
       }
     };
     handleResize(); // Check on mount
@@ -80,7 +84,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
 
   const handleSidebarLinkClick = () => {
     if (window.innerWidth < 1024) {
-      setIsSidebarOpen(false);
+      setLeftSidebarOpen(false);
     }
   };
 
@@ -133,8 +137,10 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         {/* LEFT SIDEBAR */}
         <CollapsibleSidebar
           side="left"
-          isOpen={isSidebarOpen}
-          setIsOpen={setIsSidebarOpen}
+          isOpen={isLeftSidebarOpen}
+          setIsOpen={setLeftSidebarOpen}
+          isPinned={isLeftSidebarPinned}
+          setIsPinned={setLeftSidebarPinned}
           stickyTop={sidebarTop}
           expandLabel="Display Sidebar"
           headerContent={
@@ -168,7 +174,9 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
 
         {/* CENTER CONTENT */}
         <div
-          className={`flex-1 min-w-0 transition-all duration-300 ${isSidebarOpen ? "pl-8" : "pl-0"} ${isRightSidebarOpen ? "pr-8" : "pr-0"}`}
+          className={`flex-1 min-w-0 transition-all duration-300 ${
+            isLeftSidebarOpen ? "lg:pl-8" : "pl-0"
+          } ${isRightSidebarOpen ? "lg:pr-8" : "pr-0"}`}
         >
           {children}
         </div>
@@ -177,7 +185,9 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         <CollapsibleSidebar
           side="right"
           isOpen={isRightSidebarOpen}
-          setIsOpen={setIsRightSidebarOpen}
+          setIsOpen={setRightSidebarOpen}
+          isPinned={isRightSidebarPinned}
+          setIsPinned={setRightSidebarPinned}
           stickyTop={sidebarTop}
           expandLabel="Chat with AI Analyst"
           headerContent={
