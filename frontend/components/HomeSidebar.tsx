@@ -11,6 +11,7 @@ import {
   BuildingOfficeIcon,
   FilmIcon,
   ArrowTrendingUpIcon,
+  MinusIcon,
 } from "@heroicons/react/24/outline";
 
 const academyItems = [
@@ -45,7 +46,6 @@ export const ALL_SECTIONS = [
   "Advisory",
   "Multimedia",
   "Trending Topics",
-  "Company",
 ];
 
 interface HomeSidebarProps {
@@ -123,7 +123,7 @@ export default function HomeSidebar({
           className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100 pb-2" : "grid-rows-[0fr] opacity-0"}`}
         >
           <div className="overflow-hidden">
-            <ul className="space-y-1 pl-2 ml-2">
+            <ul className="space-y-1 pl-4 ml-3 border-l border-slate-200">
               {items.map((item) => (
                 <li key={item.href}>
                   <Link
@@ -228,7 +228,7 @@ export default function HomeSidebar({
                 : "opacity-0 max-h-0 py-0 border-transparent pointer-events-none mb-0"
             }`}
           >
-            <ChevronUpIcon className="w-3 h-3 rotate-180" />
+            <MinusIcon className="w-3 h-3" />
             Collapse All
           </button>
         )}

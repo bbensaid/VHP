@@ -12,20 +12,40 @@ interface NavItem {
 interface NavDropdownProps {
   label: string;
   items: NavItem[];
-  colorClass?: string;
-  icon?: React.ReactNode; // NEW: Accepts an icon component
-  buttonClassName?: string; // NEW: Allows overriding button styles completely
+  pillar?: "policy" | "economics" | "technology";
+  icon?: React.ReactNode; 
+  buttonClassName?: string;
 }
 
 const NavDropdown: React.FC<NavDropdownProps> = ({
   label,
   items,
-  colorClass = "text-text-heading",
+  pillar,
   icon,
   buttonClassName,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const pillarStyles = {
+    policy: {
+      text: "text-brand-orange",
+      hover: "hover:text-brand-orange",
+      bg: "bg-brand-orange"
+    },
+    economics: {
+      text: "text-brand-green",
+      hover: "hover:text-brand-green",
+      bg: "bg-brand-green"
+    },
+    technology: {
+      text: "text-brand-indigo",
+      hover: "hover:text-brand-indigo",
+      bg: "bg-brand-indigo"
+    },
+  };
+
+  const theme = pillar ? pillarStyles[pillar] : null;
 
   const handleMouseEnter = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -48,16 +68,12 @@ const NavDropdown: React.FC<NavDropdownProps> = ({
       <button
         className={
           buttonClassName ||
-          `flex items-center gap-1.5 px-2 py-1.5 text-sm font-extrabold uppercase tracking-wide transition-all duration-200 rounded-md hover:bg-slate-100 ${colorClass}`
+          `flex items-center gap-1.5 px-2 py-1.5 text-sm font-extrabold uppercase tracking-wide transition-all duration-200 rounded-md hover:bg-slate-100 ${theme ? theme.text : 'text-text-heading'}`
         }
         aria-expanded={isOpen}
       >
-        {/* Render Icon if present */}
         {icon && <span className="text-lg leading-none">{icon}</span>}
-
         {label}
-
-        {/* Chevron */}
         <svg
           className={`w-3 h-3 transition-transform duration-200 opacity-60 ${
             isOpen ? "rotate-180" : ""
@@ -78,17 +94,13 @@ const NavDropdown: React.FC<NavDropdownProps> = ({
       {/* DROPDOWN MENU */}
       {isOpen && (
         <div className="absolute right-0 top-full mt-1 w-56 bg-white border border-ui-border rounded-lg shadow-xl z-50 animate-in fade-in zoom-in-95 duration-150">
-          {/* If the button has a background color, we use the text color for the top line */}
-          <div
-            className={`h-1 w-full rounded-t-lg bg-current opacity-20`}
-          ></div>
-
+          <div className={`h-1 w-full rounded-t-lg ${theme ? theme.bg : 'bg-current'} opacity-20`}></div>
           <div className="py-2">
             {items.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="block px-4 py-2.5 text-sm text-text-body font-medium hover:bg-surface-muted hover:text-ui-primary transition-colors"
+                className={`block px-4 py-2.5 text-sm text-text-body font-medium hover:bg-surface-muted ${theme ? theme.hover : 'hover:text-ui-primary'} transition-colors`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
