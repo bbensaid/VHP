@@ -3,6 +3,7 @@
 
 import React, { useState, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
 
 interface NavItem {
   href: string;
@@ -26,6 +27,10 @@ const NavDropdown: React.FC<NavDropdownProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const pathname = usePathname();
+
+  // Animate if the current path starts with the pillar's path
+  const isActive = pillar && pathname.startsWith(`/${pillar}`);
 
   const pillarStyles = {
     policy: {
@@ -68,7 +73,7 @@ const NavDropdown: React.FC<NavDropdownProps> = ({
       <button
         className={
           buttonClassName ||
-          `flex items-center gap-1.5 px-2 py-1.5 text-sm font-extrabold uppercase tracking-wide transition-all duration-200 rounded-md hover:bg-slate-100 ${theme ? theme.text : 'text-text-heading'}`
+          `flex items-center gap-1.5 px-2 py-1.5 text-sm font-extrabold uppercase tracking-wide transition-all duration-200 rounded-md hover:bg-slate-100 ${theme ? theme.text : 'text-text-heading'} ${isActive ? 'bg-slate-100' : ''}`
         }
         aria-expanded={isOpen}
       >

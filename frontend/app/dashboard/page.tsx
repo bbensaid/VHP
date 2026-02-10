@@ -1,439 +1,149 @@
 "use client";
 
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { NationalMap } from "@/components/dashboard/NationalMap";
-import { rhtProgramData } from "@/lib/data/rht-program";
+import { performanceIndexData } from "@/lib/data/performance-index-data";
 import {
-  ArrowUpRightIcon,
-  ExclamationCircleIcon,
-  CurrencyDollarIcon,
+  StarIcon,
+  ExclamationTriangleIcon,
+  ChartBarIcon,
   BuildingLibraryIcon,
   FunnelIcon,
   MagnifyingGlassIcon,
   XMarkIcon,
   ChevronUpIcon,
   ChevronDownIcon,
+  InformationCircleIcon,
 } from "@heroicons/react/24/outline";
-import { formatCompactCurrency } from "@/lib/utils";
+import { getScoreColor } from "@/lib/utils";
 
-// REGION MAPPING
 const REGION_MAP: Record<string, string> = {
-  vermont: "Northeast",
-  maine: "Northeast",
-  new_hampshire: "Northeast",
-  massachusetts: "Northeast",
-  connecticut: "Northeast",
-  rhode_island: "Northeast",
-  new_york: "Northeast",
-  pennsylvania: "Northeast",
-  new_jersey: "Northeast",
-  texas: "South",
-  florida: "South",
-  georgia: "South",
-  north_carolina: "South",
-  south_carolina: "South",
-  virginia: "South",
-  alabama: "South",
-  mississippi: "South",
-  louisiana: "South",
-  tennessee: "South",
-  kentucky: "South",
-  arkansas: "South",
-  oklahoma: "South",
-  ohio: "Midwest",
-  michigan: "Midwest",
-  indiana: "Midwest",
-  illinois: "Midwest",
-  wisconsin: "Midwest",
-  minnesota: "Midwest",
-  iowa: "Midwest",
-  missouri: "Midwest",
-  kansas: "Midwest",
-  nebraska: "Midwest",
-  north_dakota: "Midwest",
-  south_dakota: "Midwest",
-  california: "West",
-  washington: "West",
-  oregon: "West",
-  idaho: "West",
-  montana: "West",
-  wyoming: "West",
-  colorado: "West",
-  utah: "West",
-  nevada: "West",
-  arizona: "West",
-  new_mexico: "West",
-  alaska: "West",
-  hawaii: "West",
+  vermont: "Northeast", maine: "Northeast", new_hampshire: "Northeast", massachusetts: "Northeast", connecticut: "Northeast", rhode_island: "Northeast", new_york: "Northeast", pennsylvania: "Northeast", new_jersey: "Northeast", district_of_columbia: "Northeast",
+  texas: "South", florida: "South", georgia: "South", north_carolina: "South", south_carolina: "South", virginia: "South", alabama: "South", mississippi: "South", louisiana: "South", tennessee: "South", kentucky: "South", arkansas: "South", oklahoma: "South",
+  ohio: "Midwest", michigan: "Midwest", indiana: "Midwest", illinois: "Midwest", wisconsin: "Midwest", minnesota: "Midwest", iowa: "Midwest", missouri: "Midwest", kansas: "Midwest", nebraska: "Midwest", north_dakota: "Midwest", south_dakota: "Midwest",
+  california: "West", washington: "West", oregon: "West", idaho: "West", montana: "West", wyoming: "West", colorado: "West", utah: "West", nevada: "West", arizona: "West", new_mexico: "West", alaska: "West", hawaii: "West",
 };
 
 export default function DashboardIndex() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedRegion, setSelectedRegion] = useState("All");
-  const [sortConfig, setSortConfig] = useState<{
-    key: string;
-    direction: "asc" | "desc";
-  } | null>(null);
+  const [sortConfig, setSortConfig] = useState<{ key: string; direction: "asc" | "desc" }>({ key: 'performanceScore', direction: 'desc' });
 
-  const handleSort = (key: string) => {
-    let direction: "asc" | "desc" = "desc";
-    if (
-      sortConfig &&
-      sortConfig.key === key &&
-      sortConfig.direction === "desc"
-    ) {
-      direction = "asc";
-    }
-    setSortConfig({ key, direction });
-  };
-
-  // FILTER LOGIC
-  const filteredStates = useMemo(() => {
-    // Safety check if data is missing
-    const allStates = rhtProgramData ? Object.values(rhtProgramData) : [];
-
-    let result = allStates.filter((state) => {
-      const matchesSearch = state.stateName
-        .toLowerCase()
-        .includes(searchQuery.toLowerCase());
-      const region = REGION_MAP[state.id] || "Other";
-      const matchesRegion =
-        selectedRegion === "All" || region === selectedRegion;
-      return matchesSearch && matchesRegion;
-    });
+  // The table data is now the only part that needs local filtering and sorting.
+  const tableRows = useMemo(() => {
+    let states = Object.values(performanceIndexData).filter(state => 
+        state.stateName.toLowerCase().includes(searchQuery.toLowerCase()) &&
+        (selectedRegion === "All" || (REGION_MAP[state.id] || "Other") === selectedRegion)
+      );
 
     if (sortConfig !== null) {
-      result.sort((a, b) => {
-        if (sortConfig.key === "awardAmount") {
-          const valA = parseInt(a.awardAmount.replace(/[^0-9]/g, "")) || 0;
-          const valB = parseInt(b.awardAmount.replace(/[^0-9]/g, "")) || 0;
-          if (valA < valB) return sortConfig.direction === "asc" ? -1 : 1;
-          if (valA > valB) return sortConfig.direction === "asc" ? 1 : -1;
-          return 0;
+      states.sort((a, b) => {
+        if (sortConfig.key === 'stateName') {
+            return sortConfig.direction === 'asc' ? a.stateName.localeCompare(b.stateName) : b.stateName.localeCompare(a.stateName);
         }
-        if (sortConfig.key === "stateName") {
-          return sortConfig.direction === "asc"
-            ? a.stateName.localeCompare(b.stateName)
-            : b.stateName.localeCompare(a.stateName);
-        }
+        const valA = a.performanceScore || -1;
+        const valB = b.performanceScore || -1;
+        if (valA < valB) return sortConfig.direction === "asc" ? -1 : 1;
+        if (valA > valB) return sortConfig.direction === "asc" ? 1 : -1;
         return 0;
       });
     }
-
-    return result;
+    return states;
   }, [searchQuery, selectedRegion, sortConfig]);
 
-  // DYNAMIC METRICS
   const metrics = useMemo(() => {
-    const allStates = rhtProgramData ? Object.values(rhtProgramData) : [];
-    
-    // 1. Calculate Grand Total (All Data)
-    const grandTotal = allStates.reduce((acc, curr) => {
-      const val = parseInt(curr.awardAmount.replace(/[^0-9]/g, "")) || 0;
-      return acc + val;
-    }, 0);
+    const statesWithScores = tableRows.filter(s => s.performanceScore);
+    const totalScore = statesWithScores.reduce((acc, curr) => acc + (curr.performanceScore || 0), 0);
+    return {
+      averageScore: statesWithScores.length > 0 ? Math.round(totalScore / statesWithScores.length) : 0,
+      leadingCount: statesWithScores.filter((s) => s.status === "Leading").length,
+      atRiskCount: statesWithScores.filter((s) => s.status === "At Risk").length,
+    };
+  }, [tableRows]);
 
-    // 2. Calculate Filtered Total
-    const total = filteredStates.reduce((acc, curr) => {
-      const val = parseInt(curr.awardAmount.replace(/[^0-9]/g, "")) || 0;
-      return acc + val;
-    }, 0);
-
-    const criticalCount = filteredStates.filter(
-      (s) => s.status === "At Risk",
-    ).length;
-    return { total, grandTotal, criticalCount };
-  }, [filteredStates]);
-
-  const watchlist = filteredStates.slice(0, 3);
+  const watchlist = useMemo(() => {
+    return [...Object.values(performanceIndexData)]
+      .sort((a, b) => a.performanceScore - b.performanceScore)
+      .slice(0, 3);
+  }, []);
 
   return (
     <div className="flex-1 min-w-0 font-sans text-slate-800">
-      {/* NATIONAL HUD */}
-      <div className="border-b border-slate-200 sticky top-0 bg-white/95 backdrop-blur z-20 flex items-start">
-        <div className="flex-1 w-full px-6 py-6">
+      <div className="border-b border-slate-200 sticky top-0 bg-white/95 backdrop-blur z-20 px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-6">
-            <div>
-              <h1 className="text-3xl font-black text-slate-900 md:whitespace-nowrap">
-                National Platform
-              </h1>
-              <p className="text-slate-500 mt-1">
-                FY2026 Rural Health Transformation Surveillance
-              </p>
-            </div>
-
-            <div className="flex gap-2 w-full md:w-auto">
-              <div className="relative">
-                <select
-                  value={selectedRegion}
-                  onChange={(e) => setSelectedRegion(e.target.value)}
-                  className="appearance-none bg-slate-50 border border-slate-200 text-sm font-bold text-slate-700 rounded-lg pl-4 pr-10 py-2.5 cursor-pointer hover:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm transition-all"
+            <div className="flex flex-wrap justify-between items-center gap-4">
+              <div>
+                <h1 className="text-3xl font-black text-slate-900">Health System Performance Index</h1>
+                <p className="text-slate-500 mt-1 max-w-2xl">National analysis of value-based care readiness and system transformation.</p>
+              </div>
+              <div className="flex-shrink-0">
+                <Link
+                  href="/about/methodology"
+                  title="Learn how the HTR Performance Index is calculated."
+                  className="inline-flex items-center gap-2 text-sm font-bold text-slate-600 bg-slate-100 border border-slate-200 rounded-lg px-4 py-2 hover:bg-slate-200 hover:border-slate-300 hover:text-slate-800 transition-all"
                 >
-                  <option value="All">All Regions</option>
-                  <option value="Northeast">Northeast</option>
-                  <option value="South">South</option>
-                  <option value="Midwest">Midwest</option>
-                  <option value="West">West</option>
-                </select>
-                <FunnelIcon className="w-4 h-4 text-slate-500 absolute right-3 top-3 pointer-events-none" />
-              </div>
-
-              <div className="relative flex-1 md:w-96">
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search states..."
-                  className="w-full pl-10 pr-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm transition-all placeholder:text-slate-400"
-                />
-                <MagnifyingGlassIcon className="w-4 h-4 text-slate-400 absolute left-3 top-3" />
-                {searchQuery && (
-                  <button
-                    onClick={() => setSearchQuery("")}
-                    className="absolute right-3 top-3 text-slate-400 hover:text-slate-600"
-                  >
-                    <XMarkIcon className="w-4 h-4" />
-                  </button>
-                )}
+                  <InformationCircleIcon className="w-5 h-5" />
+                  <span>Index Methodology</span>
+                </Link>
               </div>
             </div>
+            <div className="flex gap-2 w-full md:w-auto">
+              <div className="relative"><select value={selectedRegion} onChange={(e) => setSelectedRegion(e.target.value)} className="appearance-none bg-slate-50 border border-slate-200 text-sm font-bold text-slate-700 rounded-lg pl-4 pr-10 py-2.5 cursor-pointer hover:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm"><option value="All">All Regions</option><option value="Northeast">Northeast</option><option value="South">South</option><option value="Midwest">Midwest</option><option value="West">West</option></select><FunnelIcon className="w-4 h-4 text-slate-500 absolute right-3 top-3 pointer-events-none" /></div>
+              <div className="relative flex-1 md:w-96"><input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder="Search states..." className="w-full pl-10 pr-4 py-2.5 text-sm bg-slate-50 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm" /><MagnifyingGlassIcon className="w-4 h-4 text-slate-400 absolute left-3 top-3" />{searchQuery && <button onClick={() => setSearchQuery("")} className="absolute right-3 top-3 text-slate-400"><XMarkIcon className="w-4 h-4" /></button>}</div>
+            </div>
           </div>
-
-          {/* LIVE METRICS */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-indigo-50 border border-indigo-100 p-4 rounded-xl transition-all">
-              <div className="flex items-center gap-2 text-indigo-600 mb-1">
-                <CurrencyDollarIcon className="w-4 h-4" />
-                <span className="text-[10px] font-bold uppercase tracking-widest">
-                  Active Awards
-                </span>
-              </div>
-              {/* HYDRATION FIX APPLIED HERE */}
-              <div 
-                className="text-2xl font-black text-slate-900 animate-in fade-in"
-                suppressHydrationWarning={true}
-              >
-                {formatCompactCurrency(metrics.total)}
-              </div>
-              {/* HYDRATION FIX APPLIED HERE */}
-              <div 
-                className="text-xs text-slate-500"
-                suppressHydrationWarning={true}
-              >
-                {metrics.total !== metrics.grandTotal
-                  ? `of ${formatCompactCurrency(metrics.grandTotal)} Total`
-                  : "Total Program Value"}
-              </div>
-            </div>
-            <div className="bg-red-50 border border-red-100 p-4 rounded-xl transition-all">
-              <div className="flex items-center gap-2 text-red-600 mb-1">
-                <ExclamationCircleIcon className="w-4 h-4" />
-                <span className="text-[10px] font-bold uppercase tracking-widest">
-                  System Alerts
-                </span>
-              </div>
-              <div className="text-2xl font-black text-slate-900">
-                {metrics.criticalCount}
-              </div>
-              <div className="text-xs text-slate-500">Requires Attention</div>
-            </div>
-            <div className="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
-              <div className="flex items-center gap-2 text-slate-500 mb-1">
-                <BuildingLibraryIcon className="w-4 h-4" />
-                <span className="text-[10px] font-bold uppercase tracking-widest">
-                  Cohorts Visible
-                </span>
-              </div>
-              <div className="text-2xl font-black text-slate-900">
-                {filteredStates.length}
-              </div>
-              <div className="text-xs text-green-600 flex items-center gap-1">
-                <ArrowUpRightIcon className="w-3 h-3" /> Filter Active
-              </div>
-            </div>
-            <button
-              onClick={() => {
-                setSearchQuery("");
-                setSelectedRegion("All");
-              }}
-              className="bg-white border border-slate-200 p-4 rounded-xl shadow-sm flex flex-col justify-center items-center text-center hover:border-indigo-300 transition-colors cursor-pointer group"
-            >
-              <div className="text-indigo-600 font-bold text-sm group-hover:underline">
-                Reset View
-              </div>
-              <div className="text-[10px] text-slate-400">Clear Filters</div>
-            </button>
+            <div className="bg-indigo-50 border border-indigo-100 p-4 rounded-xl"><div className="flex items-center gap-2 text-indigo-600 mb-1"><ChartBarIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">Avg. Index Score</span></div><div className="text-2xl font-black text-slate-900">{metrics.averageScore}</div><div className="text-xs text-slate-500">Across {tableRows.length} states</div></div>
+            <div className="bg-emerald-50 border border-emerald-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-emerald-600 mb-1"><StarIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">Leading States</span></div><div className="text-2xl font-black text-slate-900">{metrics.leadingCount}</div><div className="text-xs text-slate-500">Score 80+</div></div>
+            <div className="bg-red-50 border border-red-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-red-600 mb-1"><ExclamationTriangleIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">At Risk States</span></div><div className="text-2xl font-black text-slate-900">{metrics.atRiskCount}</div><div className="text-xs text-slate-500">Score &lt;60</div></div>
+            <div className="bg-white border border-slate-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-slate-500 mb-1"><BuildingLibraryIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">States Visible</span></div><div className="text-2xl font-black text-slate-900">{tableRows.length}</div><div className="text-xs text-slate-500">of {Object.keys(performanceIndexData).length} total</div></div>
           </div>
-        </div>
       </div>
-
       <div className="w-full px-6 py-10 space-y-12">
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* 2. THE REACTIVE MAP (WIRED UP) */}
-          <div className="lg:col-span-2 h-full">
-            <NationalMap
-              searchQuery={searchQuery}
-              selectedRegion={selectedRegion}
-            />
-          </div>
-
-          {/* WATCHLIST */}
+          <div className="lg:col-span-2 h-full"><NationalMap data={performanceIndexData} searchQuery={searchQuery} selectedRegion={selectedRegion} /></div>
           <div className="space-y-4">
-            <div className="flex justify-between items-center px-1">
-              <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest">
-                Priority Watchlist
-              </h3>
-              <span className="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full uppercase">
-                Top {watchlist.length} Results
-              </span>
-            </div>
-
-            {watchlist.length > 0 ? (
-              watchlist.map((state) => (
-                <Link
-                  key={state.id}
-                  href={`/dashboard/${state.id}`}
-                  className={`block bg-white p-5 rounded-xl border border-slate-200 border-l-4 shadow-sm hover:shadow-md hover:translate-x-1 transition-all ${
-                    state.status === "At Risk"
-                      ? "border-l-red-500"
-                      : "border-l-amber-400"
-                  }`}
-                >
-                  <div className="flex justify-between items-start mb-2">
-                    <h4 className="font-black text-slate-900">
-                      {state.stateName}
-                    </h4>
-                    <span
-                      className={`text-[10px] font-bold px-2 py-0.5 rounded uppercase ${
-                        state.status === "At Risk"
-                          ? "bg-red-50 text-red-600 border border-red-100"
-                          : "bg-amber-50 text-amber-600 border border-amber-100"
-                      }`}
-                    >
-                      {state.status === "At Risk" ? "CRITICAL" : "WATCH"}
-                    </span>
-                  </div>
-                  <div className="text-xs text-slate-500 mb-3 line-clamp-2">
-                    {state.strategicFocus}
-                  </div>
-                  <div className="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
-                    <div
-                      className={`h-full ${state.status === "At Risk" ? "bg-red-500 w-[42%]" : "bg-amber-400 w-[62%]"}`}
-                    ></div>
-                  </div>
-                </Link>
-              ))
-            ) : (
-              <div className="p-8 text-center bg-slate-50 rounded-xl border border-slate-200 border-dashed">
-                <p className="text-sm text-slate-400 font-bold">
-                  No states match filters
-                </p>
-              </div>
-            )}
+            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest px-1">Priority Watchlist</h3>
+            {watchlist.map((state) => (
+              <Link key={state.id} href={`/dashboard/${state.id}`} className="block bg-white p-5 rounded-xl border border-slate-200 border-l-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all" style={{ borderLeftColor: getScoreColor(state.performanceScore) }}>
+                <div className="flex justify-between items-start mb-2"><h4 className="font-black text-slate-900">{state.stateName}</h4><span className="text-lg font-bold" style={{ color: getScoreColor(state.performanceScore) }}>{state.performanceScore}</span></div>
+                <p className="text-xs text-slate-500 mb-3 line-clamp-2">{state.narrative.summary}</p>
+                <div className="w-full bg-slate-100 h-1.5 rounded-full"><div className="h-full rounded-full" style={{ width: `${state.performanceScore}%`, backgroundColor: getScoreColor(state.performanceScore) }}></div></div>
+              </Link>
+            ))}
           </div>
         </div>
-
-        {/* 3. REGISTRY TABLE */}
-        <div className="w-full bg-slate-50 rounded-xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
-          <div className="px-6 py-4 border-b border-slate-200 bg-white flex justify-between items-center">
-            <div>
-              <h2 className="text-sm font-bold uppercase tracking-widest text-slate-900">
-                National Registry
-              </h2>
-              <p className="text-xs text-slate-500">
-                Showing {filteredStates.length} Cohorts
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white">
+        <div className="w-full bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
+          <div className="px-6 py-4 border-b border-slate-200"><h2 className="text-sm font-bold uppercase tracking-widest text-slate-900">State Performance Registry</h2><p className="text-xs text-slate-500">Showing {tableRows.length} states</p></div>
             <table className="w-full text-left text-sm">
-              <thead className="bg-slate-50 border-b border-slate-200 text-xs font-bold text-slate-500 uppercase tracking-wider">
+              <thead className="bg-slate-50 border-b border-slate-200 text-xs font-bold text-slate-500 uppercase">
                 <tr>
-                  <th
-                    className="p-4 pl-6 cursor-pointer hover:bg-slate-100 transition-colors group select-none"
-                    onClick={() => handleSort("stateName")}
-                  >
-                    <div className="flex items-center gap-1">
-                      State
-                      {sortConfig?.key === "stateName" &&
-                        (sortConfig.direction === "asc" ? (
-                          <ChevronUpIcon className="w-3 h-3 text-indigo-600" />
-                        ) : (
-                          <ChevronDownIcon className="w-3 h-3 text-indigo-600" />
-                        ))}
-                    </div>
-                  </th>
-                  <th
-                    className="p-4 cursor-pointer hover:bg-slate-100 transition-colors group select-none"
-                    onClick={() => handleSort("awardAmount")}
-                  >
-                    <div className="flex items-center gap-1">
-                      RHT Award (FY26)
-                      {sortConfig?.key === "awardAmount" &&
-                        (sortConfig.direction === "asc" ? (
-                          <ChevronUpIcon className="w-3 h-3 text-indigo-600" />
-                        ) : (
-                          <ChevronDownIcon className="w-3 h-3 text-indigo-600" />
-                        ))}
-                    </div>
-                  </th>
+                  <th className="p-4 pl-6 cursor-pointer" onClick={() => handleSort("stateName")}><div className="flex items-center gap-1">State {sortConfig?.key === 'stateName' && (sortConfig.direction === 'asc' ? <ChevronUpIcon className="w-3 h-3" /> : <ChevronDownIcon className="w-3 h-3" />)}</div></th>
+                  <th className="p-4 cursor-pointer" onClick={() => handleSort("performanceScore")}><div className="flex items-center gap-1">Index Score {sortConfig?.key === 'performanceScore' && (sortConfig.direction === 'asc' ? <ChevronUpIcon className="w-3 h-3" /> : <ChevronDownIcon className="w-3 h-3" />)}</div></th>
                   <th className="p-4">Region</th>
-                  <th className="p-4">Strategic Focus</th>
+                  <th className="p-4">Status</th>
                   <th className="p-4 text-right pr-6">Action</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
-                {filteredStates.length > 0 ? (
-                  filteredStates.map((state) => (
-                    <tr
-                      key={state.id}
-                      className="hover:bg-slate-50 transition-colors group"
-                    >
-                      <td className="p-4 pl-6 font-bold text-slate-900">
-                        {state.stateName}
-                      </td>
-                      
-                      {/* HYDRATION FIX APPLIED HERE */}
-                      <td 
-                        className="p-4 text-slate-600 font-mono"
-                        suppressHydrationWarning={true}
-                      >
-                        {formatCompactCurrency(state.awardAmount)}
-                      </td>
-
-                      <td className="p-4 text-slate-500">
-                        <span className="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">
-                          {REGION_MAP[state.id] || "Other"}
-                        </span>
-                      </td>
-                      <td className="p-4 text-slate-500 line-clamp-1">
-                        {state.strategicFocus}
-                      </td>
-                      <td className="p-4 text-right pr-6">
-                        <Link
-                          href={`/dashboard/${state.id}`}
-                          className="text-slate-400 group-hover:text-indigo-600 font-bold text-xs uppercase tracking-wide transition-colors"
-                        >
-                          View Profile &rarr;
-                        </Link>
-                      </td>
-                    </tr>
-                  ))
-                ) : (
-                  <tr>
-                    <td
-                      colSpan={5}
-                      className="p-12 text-center text-slate-400 font-medium"
-                    >
-                      No results found for "{searchQuery}" in {selectedRegion}.
+                {tableRows.map((state) => (
+                  <tr key={state.id} className="hover:bg-slate-50">
+                    <td className="p-4 pl-6 font-bold text-slate-900">{state.stateName}</td>
+                    <td className="p-4 font-mono font-bold" style={{ color: getScoreColor(state.performanceScore) }}>{state.performanceScore || 'N/A'}</td>
+                    <td className="p-4 text-slate-500">{REGION_MAP[state.id] || "Other"}</td>
+                    <td className="p-4">
+                        {state.status ? (
+                            <span className="text-xs font-bold px-2 py-1 rounded-full" style={{ backgroundColor: getScoreColor(state.performanceScore) + '20', color: getScoreColor(state.performanceScore) }}>{state.status}</span>
+                        ) : (
+                            <span className="text-xs font-bold text-slate-400">No Data</span>
+                        )}
                     </td>
+                    <td className="p-4 text-right pr-6"><Link href={`/dashboard/${state.id}`} className="font-bold text-xs text-slate-400 group-hover:text-indigo-600">View Profile &rarr;</Link></td>
                   </tr>
-                )}
+                ))}
               </tbody>
             </table>
-          </div>
         </div>
       </div>
     </div>
