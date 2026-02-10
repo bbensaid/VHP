@@ -188,9 +188,9 @@ const Header = () => {
 
             {/* UPDATED NAV ORDER */}
             <nav className="hidden xl:flex items-center gap-10 ml-20 h-8">
-              <NavDropdown label="POLICY" items={policyItems} />
-              <NavDropdown label="ECONOMICS" items={economicsItems} />
-              <NavDropdown label="TECHNOLOGY" items={technologyItems} />
+              <NavDropdown label="POLICY" items={policyItems} pillar="policy" />
+              <NavDropdown label="ECONOMICS" items={economicsItems} pillar="economics" />
+              <NavDropdown label="TECHNOLOGY" items={technologyItems} pillar="technology" />
             </nav>
           </div>
 

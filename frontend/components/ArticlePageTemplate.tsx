@@ -150,7 +150,7 @@ export default async function ArticlePageTemplate({
               )}
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+            <h1 className={`text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight ${theme.text}`}>
               {article.title}
             </h1>
 
