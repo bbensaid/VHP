@@ -167,7 +167,7 @@ export default function HomeSidebar({
               />
             </div>
             <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
-              Rural Health Transformation
+              State Performance Index
             </span>
           </Link>
           <Link

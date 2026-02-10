@@ -40,6 +40,7 @@ const technologyItems = [
 const companyItems = [
   { href: "/about", label: "About Us" },
   { href: "/mission", label: "Mission & Vision" },
+  { href: "/about/methodology", label: "Our Methodology" },
   { href: "/faq", label: "FAQ" },
   { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact Us" },
