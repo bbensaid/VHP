@@ -1,10 +1,10 @@
+"use client";
+
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 
-export const metadata = {
-  title: "HTR Health System Performance Index Methodology",
-  description: "A detailed explanation of the definition, calculation, and data sources for the HTR Health System Performance Index.",
-};
+
 
 const MetricDetail = ({ pillar, metric, description }: { pillar: string, metric: string, description: string }) => {
     let pillarColor = "text-slate-700";
@@ -22,15 +22,21 @@ const MetricDetail = ({ pillar, metric, description }: { pillar: string, metric:
 }
 
 export default function MethodologyPage() {
+  const searchParams = useSearchParams();
+  const from = searchParams.get('from');
+
+  const backHref = from || "/dashboard";
+  const backText = from ? "Back to State Page" : "Back to the Index Dashboard";
+
   return (
     <div className="bg-white py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           
           <div className="mb-8">
-            <Link href="/dashboard" className="inline-flex items-center text-sm font-bold text-slate-500 hover:text-indigo-600 transition-colors">
+            <Link href={backHref} className="inline-flex items-center text-sm font-bold text-slate-500 hover:text-indigo-600 transition-colors">
               <ArrowLeftIcon className="w-4 h-4 mr-1.5" />
-              Back to the Index Dashboard
+              {backText}
             </Link>
           </div>
 
