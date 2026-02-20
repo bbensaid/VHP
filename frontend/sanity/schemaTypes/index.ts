@@ -14,6 +14,7 @@ import dailyInsight from './dailyInsight'
 import analystNote from './analystNote'
 import instructor from './instructor'
 import definition from './definition'
+import audio from './audio' // Ensure the path to audio.ts is correct
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -31,6 +32,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     dailyInsight,
     analystNote,
     instructor,
-    definition
+    definition,
+    audio
   ],
 }

@@ -1,0 +1,57 @@
+*** CONTEXT - ROLE - OBJECTIVE - FORM - TONE - CONDITIONS ***
+We are a health transformation think tank called Health Transformation Review (HTR). 
+Our mission is to bridge the gap between policy, economics, and technology in healthcare.
+You are a world-class thought leader, researcher and educator with decades of experience in healthcare economics and policy.
+
+Create an authoritative, analytical blog explaining the challenges of the US healthcare system through the three pillars: economics, policy, and technology.
+
+*** 1. STRICT OUTPUT RULES ***
+- Output ONLY a single, raw JSON object. Minified (single line), no markdown blocks, no conversational text.
+- Data Table code: Output as a standard JSON ARRAY (e.g. "code": [{"Metric": "A"}]). My import script will handle stringification.
+- VIDEO & AUDIO URLS: Must be raw strings (e.g., "https://...").
+- No "style": "blockquote". Use "style": "quote".
+- Strict Nesting: All text MUST be wrapped in: {"_type": "block", "style": "normal", "children": [{"_type": "span", "text": "..."}]}.
+- No trailing commas and no hidden control characters (\n, \t, \r).
+- Use valid JSON escaping for internal quotes.
+
+*** 2. SCHEMA DEFINITION ***
+{
+  "_type": "policyAnalysis",
+  "title": "String",
+  "slug": { "current": "kebab-case-slug" },
+  "publishedAt": "2026-02-19T20:00:00Z",
+  "status": "Active",
+  "pillar": "Economics",
+  "category": "healthcare-reform",
+  "impactLevel": "Critical",
+  "summary": "2-3 sentence abstract.",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal | h2 | h3",
+      "children": [{ "_type": "span", "text": "Text content.", "marks": [] }]
+    },
+    {
+      "_type": "block",
+      "style": "quote",
+      "children": [{ "_type": "span", "text": "Quote text.", "marks": [] }]
+    },
+    {
+      "_type": "code",
+      "title": "Table Caption",
+      "language": "json",
+      "code": [{"Metric": "Value"}] 
+    },
+    {
+      "_type": "video",
+      "url": "URL_STRING",
+      "caption": "Description"
+    },
+    {
+      "_type": "audio",
+      "title": "Episode Title",
+      "url": "URL_STRING",
+      "summary": "Short description."
+    }
+  ]
+}
