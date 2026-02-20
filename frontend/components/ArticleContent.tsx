@@ -38,7 +38,6 @@ const ptComponents: PortableTextComponents = {
     },
     video: VideoBlock,
     youtube: VideoBlock,
-    // --- ADDED AUDIO TYPE HANDLER BELOW ---
     audio: ({ value }) => {
       if (!value?.url) return null;
       return (
@@ -52,6 +51,59 @@ const ptComponents: PortableTextComponents = {
             <source src={value.url} type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>
+        </div>
+      );
+    },
+    code: ({ value }) => {
+      let data = value.code;
+      // Handle potential stringification from the import script
+      if (typeof data === 'string') {
+        try {
+          data = JSON.parse(data);
+        } catch (e) {
+          return (
+            <pre className="p-4 bg-slate-900 text-slate-50 rounded-lg overflow-x-auto my-6">
+              <code>{data}</code>
+            </pre>
+          );
+        }
+      }
+
+      if (!Array.isArray(data) || data.length === 0) return null;
+
+      const headers = Object.keys(data[0]);
+
+      return (
+        <div className="my-10 overflow-hidden border border-slate-200 rounded-xl shadow-sm bg-white">
+          {value.title && (
+            <div className="bg-slate-900 text-white px-6 py-3 font-bold text-sm uppercase tracking-widest">
+              {value.title}
+            </div>
+          )}
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="bg-slate-50 border-b border-slate-200">
+                  {headers.map((header) => (
+                    <th key={header} className="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                      {header}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {data.map((row, rowIndex) => (
+                  <tr key={rowIndex} className="hover:bg-slate-50/50 transition-colors">
+                    {headers.map((header) => (
+                      <td key={`${rowIndex}-${header}`} className="px-6 py-4 text-slate-700 font-medium">
+                        {row[header]}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       );
     },
