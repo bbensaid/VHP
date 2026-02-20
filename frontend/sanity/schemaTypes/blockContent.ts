@@ -91,6 +91,7 @@ export const blockContentType = defineType({
       title: 'Audio',
       fields: [
         {name: 'title', type: 'string', title: 'Title'},
+        {name: 'url', type: 'url', title: 'URL'},
         {name: 'summary', type: 'string', title: 'Summary'},
       ],
       preview: {

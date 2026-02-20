@@ -38,6 +38,23 @@ const ptComponents: PortableTextComponents = {
     },
     video: VideoBlock,
     youtube: VideoBlock,
+    // --- ADDED AUDIO TYPE HANDLER BELOW ---
+    audio: ({ value }) => {
+      if (!value?.url) return null;
+      return (
+        <div className="my-10 p-6 bg-slate-50 border border-slate-200 rounded-xl shadow-sm">
+          <div className="flex flex-col gap-2 mb-4">
+            <span className="text-xs font-bold uppercase tracking-widest text-indigo-600">Audio Insight</span>
+            <h4 className="text-xl font-bold text-slate-900">{value.title || "Untitled Podcast"}</h4>
+            {value.summary && <p className="text-slate-600 text-sm italic">{value.summary}</p>}
+          </div>
+          <audio controls className="w-full h-12">
+            <source src={value.url} type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      );
+    },
   },
 };
 
