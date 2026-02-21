@@ -31,7 +31,6 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
                     pathname.includes("/economics/") || 
                     pathname.includes("/technology/");
 
-  // Sidebars should be completely GONE for studio or dedicated chat page
   const hideSidebarsCompletely = isStudio || isChatPage;
 
   const [isLeftSidebarOpen, setLeftSidebarOpen] = useState(true);
@@ -44,11 +43,10 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const { isStripVisible, setStripVisible } = useTicker();
   const [clientTickerData, setClientTickerData] = useState<any>(null);
 
-  // 2. REMOTE CONTROL HANDLER (Listener for Header Events)
+  // 2. REMOTE CONTROL HANDLER (Listen for Header events)
   useEffect(() => {
     const handleToggle = (e: any) => {
       if (e.detail.side === 'left') {
-        // Toggle both state and pin to ensure the header button forces an override
         setLeftSidebarOpen(prev => !prev);
         setLeftSidebarPinned(prev => !prev);
       }
@@ -107,17 +105,13 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
 
   const toggleLeftSection = (section: string) => {
     setLeftOpenSections((prev) =>
-      prev.includes(section)
-        ? prev.filter((s) => s !== section)
-        : [...prev, section],
+      prev.includes(section) ? prev.filter((s) => s !== section) : [...prev, section],
     );
   };
 
   const toggleRightSection = (section: string) => {
     setRightOpenSections((prev) =>
-      prev.includes(section)
-        ? prev.filter((s) => s !== section)
-        : [...prev, section],
+      prev.includes(section) ? prev.filter((s) => s !== section) : [...prev, section],
     );
   };
 
@@ -134,14 +128,13 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
     }
   };
 
-  // 6. STUDIO MODE OVERRIDE (Total Removal)
   if (hideSidebarsCompletely) {
     return <div className="min-h-screen bg-white">{children}</div>;
   }
 
   return (
     <div className="min-h-screen bg-white">
-      {/* 1. Sticky Navigation Bar (Breadcrumbs + Ticker) */}
+      {/* 1. Sticky Navigation Bar */}
       {isStickyBarVisible && (
         <div className="sticky top-28 z-40 h-8 flex justify-center transition-all duration-300 pointer-events-none">
           <div className="container mx-auto px-4 md:px-0 h-full pointer-events-auto">
@@ -155,10 +148,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
               {showTicker && (
                 <div className="flex-1 flex items-center h-full min-w-0 ml-24">
                   <div className="flex-1 min-w-0 h-full">
-                    <TickerStrip
-                      tickerData={activeTickerData}
-                      transparent={true}
-                    />
+                    <TickerStrip tickerData={activeTickerData} transparent={true} />
                   </div>
                   <button
                     onClick={() => setStripVisible(false)}
@@ -185,7 +175,6 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
 
       {/* 2. Main Content Area */}
       <div className="flex flex-col lg:flex-row mt-8 px-4 md:px-0 container mx-auto transition-all relative">
-        {/* LEFT SIDEBAR */}
         <CollapsibleSidebar
           side="left"
           isOpen={isLeftSidebarOpen}
@@ -223,14 +212,10 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           />
         </CollapsibleSidebar>
 
-        {/* CENTER CONTENT */}
-        <main
-          className="flex-1 min-w-0 transition-all duration-300"
-        >
+        <main className={`flex-1 min-w-0 transition-all duration-300 ${isLeftSidebarOpen ? "lg:ml-8" : "ml-0"} ${isRightSidebarOpen ? "lg:mr-8" : "mr-0"}`}>
           {children}
         </main>
 
-        {/* RIGHT SIDEBAR */}
         <CollapsibleSidebar
           side="right"
           isOpen={isRightSidebarOpen}
