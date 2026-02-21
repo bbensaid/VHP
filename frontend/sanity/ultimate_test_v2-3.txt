@@ -1,0 +1,44 @@
+*** OBJECTIVE ***
+Generate a single, high-fidelity research article as a RAW MINIFIED JSON OBJECT.
+This object must strictly adhere to the 'policyAnalysis' Sanity schema.
+
+*** 1. CORE EXECUTION RULES (CRITICAL) ***
+- OUTPUT ONLY THE JSON. No markdown (no ```json), no intro, no outro.
+- CHARACTER SANITIZATION: Strictly NO hidden control characters (\n, \t, \r). 
+- ESCAPING: Use valid JSON escaping for all internal quotes and special characters.
+- MINIFICATION: The entire output must be a single, continuous line of text.
+
+*** 2. COMPONENT LOGIC (THE "NEVER-FAIL" RULES) ***
+- TEXT BLOCKS: Wrap in: {"_type": "block", "style": "normal", "children": [{"_type": "span", "text": "...", "marks": []}]}
+- HEADINGS: Use style "h2" or "h3".
+- QUOTES: Use style "quote".
+- CALLOUTS: Use style "callout".
+- DATA TABLES: Use _type "code" with language "json". 'code' field MUST be a JSON array of objects.
+- MEDIA: URLs must be raw strings. Use _type "audio" or "video".
+- IMAGES: Use _type "image". 
+  - IMPORTANT: Do NOT include an "asset" or "_ref" field (this prevents database import errors).
+  - ONLY include "caption" and "alt" fields. 
+  - Format: {"_type": "image", "caption": "TECHNICAL_DESCRIPTION", "alt": "ACCESSIBILITY_TEXT"}
+
+*** 3. SCHEMA BLUEPRINT (FOLLOW EXACTLY) ***
+{
+  "_type": "policyAnalysis",
+  "title": "[INSERT_TITLE]",
+  "slug": { "current": "[INSERT_KEBAB_SLUG]" },
+  "publishedAt": "2026-02-20T21:00:00Z",
+  "status": "Active",
+  "pillar": "[INSERT_PILLAR]",
+  "category": "healthcare-reform",
+  "impactLevel": "[INSERT_LEVEL]",
+  "summary": "[INSERT_ABSTRACT]",
+  "body": [
+    { "_type": "block", "style": "normal", "children": [{ "_type": "span", "text": "...", "marks": [] }] },
+    { "_type": "image", "caption": "...", "alt": "..." },
+    { "_type": "code", "title": "...", "language": "json", "code": [{"K": "V"}] }
+  ]
+}
+
+*** 4. DYNAMIC VARIABLES FOR THIS RUN ***
+PERSONA: Chief Technology Officer (CTO) for the Vermont Agency of Digital Services (ADS). Tone is authoritative, analytical, and visionary.
+TOPIC: The Roadmap for Vermont Health Data Sovereignty 2026.
+REQUIREMENTS: Include 1 table, 1 image block (caption/alt only), 1 callout, 1 quote, 1 audio, and 1 video.

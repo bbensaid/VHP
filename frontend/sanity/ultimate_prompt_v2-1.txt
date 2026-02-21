@@ -1,0 +1,64 @@
+*** OBJECTIVE ***
+Generate a single, high-fidelity research article as a RAW MINIFIED JSON OBJECT.
+This object must strictly adhere to the 'policyAnalysis' Sanity schema.
+
+*** 1. CORE EXECUTION RULES (CRITICAL) ***
+- OUTPUT ONLY THE JSON. No markdown (no ```json), no intro, no outro.
+- CHARACTER SANITIZATION: Strictly NO hidden control characters (\n, \t, \r). 
+- ESCAPING: Use valid JSON escaping for all internal quotes and special characters.
+- MINIFICATION: The entire output must be a single, continuous line of text.
+
+*** 2. COMPONENT LOGIC (THE "NEVER-FAIL" RULES) ***
+- TEXT BLOCKS: Every text element MUST be wrapped in: 
+  {"_type": "block", "style": "normal", "children": [{"_type": "span", "text": "CONTENT", "marks": []}]}
+- HEADINGS: Use style "h2" or "h3".
+- QUOTES: Use style "quote" for high-impact highlighted text. (Renders with indigo left-border).
+- DATA TABLES: Use _type "code" with language "json". 'code' field MUST be a JSON array of objects.
+- MEDIA: URLs must be raw strings. Use _type "audio" or "video".
+- IMAGES: Use _type "image". The asset field MUST be: {"_type": "reference", "_ref": "REAL_IMAGE_ID"}
+
+*** 3. SCHEMA BLUEPRINT (FOLLOW EXACTLY) ***
+{
+  "_type": "policyAnalysis",
+  "title": "[INSERT_TITLE]",
+  "slug": { "current": "[INSERT_KEBAB_SLUG]" },
+  "publishedAt": "2026-02-20T21:00:00Z",
+  "status": "Active",
+  "pillar": "[INSERT_PILLAR]",
+  "category": "[INSERT_CATEGORY]",
+  "impactLevel": "[INSERT_LEVEL]",
+  "summary": "[INSERT_ABSTRACT]",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [{ "_type": "span", "text": "Standard paragraph text.", "marks": [] }]
+    },
+    {
+      "_type": "block",
+      "style": "quote",
+      "children": [{ "_type": "span", "text": "This is a HIGHLIGHTED CALLOUT/QUOTE box.", "marks": [] }]
+    },
+    {
+      "_type": "image",
+      "asset": { "_type": "reference", "_ref": "image-REPLACE_WITH_REAL_ID-jpg" },
+      "caption": "Description",
+      "alt": "Alt text"
+    },
+    {
+      "_type": "code",
+      "title": "Data Table",
+      "language": "json",
+      "code": [{"Key": "Value"}]
+    },
+    {
+      "_type": "audio",
+      "title": "Briefing",
+      "url": "URL",
+      "summary": "..."
+    }
+  ]
+}
+
+*** 4. DYNAMIC VARIABLES FOR THIS RUN ***
+[USER: INSERT PERSONA, TOPIC, AND SPECIFIC CONTENT REQUIREMENTS HERE]

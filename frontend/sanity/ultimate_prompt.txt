@@ -1,0 +1,54 @@
+*** OBJECTIVE ***
+Generate a single, high-fidelity research article as a RAW MINIFIED JSON OBJECT.
+This object must strictly adhere to the 'policyAnalysis' Sanity schema.
+
+*** 1. CORE EXECUTION RULES (CRITICAL) ***
+- OUTPUT ONLY THE JSON. No markdown (no ```json), no intro, no outro.
+- CHARACTER SANITIZATION: Strictly NO hidden control characters (\n, \t, \r). 
+- ESCAPING: Use valid JSON escaping for all internal quotes and special characters.
+- MINIFICATION: The entire output must be a single, continuous line of text.
+
+*** 2. COMPONENT LOGIC (THE "NEVER-FAIL" RULES) ***
+- TEXT BLOCKS: Every text element MUST be wrapped in: 
+  {"_type": "block", "style": "normal", "children": [{"_type": "span", "text": "CONTENT", "marks": []}]}
+- HEADINGS: Use style "h2" or "h3".
+- QUOTES: Use style "quote". NEVER use "blockquote".
+- DATA TABLES: Use _type "code" with language "json". 
+  - The "code" field MUST be a standard JSON ARRAY of objects.
+  - Example: "code": [{"Metric": "A", "Value": "1"}]
+- MEDIA (AUDIO/VIDEO): If included, URLs must be raw strings. Use _type "audio" or "video" with schema-compliant fields (url, title, summary, caption).
+
+*** 3. SCHEMA BLUEPRINT (FOLLOW EXACTLY) ***
+{
+  "_type": "policyAnalysis",
+  "title": "[INSERT_TITLE]",
+  "slug": { "current": "[INSERT_KEBAB_SLUG]" },
+  "publishedAt": "[INSERT_ISO_TIMESTAMP]",
+  "status": "Active",
+  "pillar": "[INSERT_PILLAR]",
+  "category": "[INSERT_CATEGORY]",
+  "impactLevel": "[INSERT_LEVEL]",
+  "summary": "[INSERT_ABSTRACT]",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [{ "_type": "span", "text": "...", "marks": [] }]
+    },
+    {
+      "_type": "code",
+      "title": "Table Title",
+      "language": "json",
+      "code": [{"Key": "Value"}]
+    },
+    {
+      "_type": "audio",
+      "title": "Briefing",
+      "url": "URL",
+      "summary": "..."
+    }
+  ]
+}
+
+*** 4. DYNAMIC VARIABLES FOR THIS RUN ***
+[USER: INSERT PERSONA, TOPIC, AND SPECIFIC CONTENT REQUIREMENTS HERE]
