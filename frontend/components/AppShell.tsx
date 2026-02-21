@@ -20,17 +20,63 @@ interface AppShellProps {
 }
 
 export default function AppShell({ children, tickerData }: AppShellProps) {
-  const pathname = usePathname();
+  const pathname = usePathname() || "";
+  
+  // 1. ROUTE LOGIC DETERMINATION
   const isHomepage = pathname === "/";
+  const isStudio = pathname.startsWith("/studio");
+  const isChatPage = pathname === "/chat";
+  const isArticle = pathname.startsWith("/articles") || 
+                    pathname.includes("/policy/") || 
+                    pathname.includes("/economics/") || 
+                    pathname.includes("/technology/");
+
+  // Sidebars should be completely GONE for studio or dedicated chat page
+  const hideSidebarsCompletely = isStudio || isChatPage;
+
   const [isLeftSidebarOpen, setLeftSidebarOpen] = useState(true);
   const [isRightSidebarOpen, setRightSidebarOpen] = useState(true);
   const [isLeftSidebarPinned, setLeftSidebarPinned] = useState(true);
   const [isRightSidebarPinned, setRightSidebarPinned] = useState(true);
+  
   const [leftOpenSections, setLeftOpenSections] = useState<string[]>([]);
   const [rightOpenSections, setRightOpenSections] = useState<string[]>([]);
   const { isStripVisible, setStripVisible } = useTicker();
   const [clientTickerData, setClientTickerData] = useState<any>(null);
 
+  // 2. REMOTE CONTROL HANDLER (Listener for Header Events)
+  useEffect(() => {
+    const handleToggle = (e: any) => {
+      if (e.detail.side === 'left') {
+        // Toggle both state and pin to ensure the header button forces an override
+        setLeftSidebarOpen(prev => !prev);
+        setLeftSidebarPinned(prev => !prev);
+      }
+      if (e.detail.side === 'right') {
+        setRightSidebarOpen(prev => !prev);
+        setRightSidebarPinned(prev => !prev);
+      }
+    };
+    window.addEventListener('sidebar-toggle', handleToggle);
+    return () => window.removeEventListener('sidebar-toggle', handleToggle);
+  }, []);
+
+  // 3. AUTO-COLLAPSE ON NAVIGATION
+  useEffect(() => {
+    if (hideSidebarsCompletely || isArticle) {
+      setLeftSidebarOpen(false);
+      setLeftSidebarPinned(false);
+      setRightSidebarOpen(false);
+      setRightSidebarPinned(false);
+    } else if (isHomepage) {
+      setLeftSidebarOpen(true);
+      setLeftSidebarPinned(true);
+      setRightSidebarOpen(true);
+      setRightSidebarPinned(true);
+    }
+  }, [pathname, hideSidebarsCompletely, isArticle, isHomepage]);
+
+  // 4. WINDOW RESIZE HANDLER
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 1024) {
@@ -42,12 +88,12 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         setRightSidebarPinned(false);
       }
     };
-    handleResize(); // Check on mount
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Fallback: Fetch ticker data client-side if not provided prop-side
+  // 5. TICKER DATA FETCHING
   useEffect(() => {
     if (!tickerData && !clientTickerData) {
       fetch("/api/ticker")
@@ -75,18 +121,23 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
     );
   };
 
-  const showBreadcrumbs = true; // Always show breadcrumbs (Home is now visible)
+  const showBreadcrumbs = !isStudio; 
   const hasTickerData = !!activeTickerData;
-  const showTicker = hasTickerData && isStripVisible;
-  const showRestore = hasTickerData && !isStripVisible;
+  const showTicker = hasTickerData && isStripVisible && !isStudio;
+  const showRestore = hasTickerData && !isStripVisible && !isStudio;
   const isStickyBarVisible = showBreadcrumbs || showTicker;
-  const sidebarTop = isStickyBarVisible ? "9rem" : "7rem"; // Header (7rem) + Bar (2rem)
+  const sidebarTop = isStickyBarVisible ? "9rem" : "7rem";
 
   const handleSidebarLinkClick = () => {
     if (window.innerWidth < 1024) {
       setLeftSidebarOpen(false);
     }
   };
+
+  // 6. STUDIO MODE OVERRIDE (Total Removal)
+  if (hideSidebarsCompletely) {
+    return <div className="min-h-screen bg-white">{children}</div>;
+  }
 
   return (
     <div className="min-h-screen bg-white">
@@ -173,13 +224,11 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         </CollapsibleSidebar>
 
         {/* CENTER CONTENT */}
-        <div
-          className={`flex-1 min-w-0 transition-all duration-300 ${
-            isLeftSidebarOpen ? "lg:pl-8" : "pl-0"
-          } ${isRightSidebarOpen ? "lg:pr-8" : "pr-0"}`}
+        <main
+          className="flex-1 min-w-0 transition-all duration-300"
         >
           {children}
-        </div>
+        </main>
 
         {/* RIGHT SIDEBAR */}
         <CollapsibleSidebar
@@ -189,7 +238,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           isPinned={isRightSidebarPinned}
           setIsPinned={setRightSidebarPinned}
           stickyTop={sidebarTop}
-          expandLabel="Chat with AI Analyst"
+          expandLabel="Vitals"
           headerContent={
             <>
               {rightOpenSections.length < RIGHT_SECTIONS.length && (

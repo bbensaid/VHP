@@ -7,9 +7,11 @@ import NavDropdown from "./NavDropdown";
 import {
   Bars3Icon,
   XMarkIcon,
-  ArrowRightIcon,
+  Bars3BottomLeftIcon,
+  Bars3BottomRightIcon,
 } from "@heroicons/react/24/outline";
 import { useTicker } from "@/components/TickerContext";
+import { usePathname } from "next/navigation";
 
 // --- 1. CONTENT CONFIGURATION ---
 
@@ -48,14 +50,23 @@ const companyItems = [
 
 // --- 2. MAIN COMPONENT ---
 const Header = () => {
+  const pathname = usePathname();
+  const isStudio = pathname?.startsWith("/studio");
+
   const [dateString, setDateString] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { isHeaderVisible, setHeaderVisible, isStripVisible, setStripVisible } =
-    useTicker();
+  const { isHeaderVisible, setHeaderVisible } = useTicker();
 
   const [headlines, setHeadlines] = useState<{ text: string; url: string }[]>([
     { text: "Loading Intelligence...", url: "#" },
   ]);
+
+  // HELPER: Sends signal to AppShell.tsx without needing props
+  const triggerToggle = (side: "left" | "right") => {
+    window.dispatchEvent(
+      new CustomEvent("sidebar-toggle", { detail: { side } })
+    );
+  };
 
   useEffect(() => {
     setDateString(
@@ -100,7 +111,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 flex flex-col font-sans shadow-md">
+    <header className="sticky top-0 z-50 flex flex-col font-sans shadow-md bg-white">
       {/* 1. TOP BAR */}
       <div className="bg-slate-900 text-slate-300 text-[11px] font-bold tracking-wider uppercase py-2 border-b border-slate-800 w-full relative z-50">
         <div className="container mx-auto px-4 md:px-8 flex items-center h-full gap-6 lg:gap-8">
@@ -181,26 +192,39 @@ const Header = () => {
 
       {/* 2. MAIN NAV BAR */}
       <div className="bg-white py-2 border-b border-slate-200 w-full relative z-40">
-        <div className="container mx-auto pl-0 pr-0 flex items-center justify-between gap-2 xl:gap-16">
+        <div className="container mx-auto px-4 md:px-8 flex items-center justify-between gap-4">
+          
+          {/* LEFT SIDEBAR TOGGLE */}
+          <div className="w-10 flex-shrink-0">
+            {!isStudio && (
+              <button
+                onClick={() => triggerToggle("left")}
+                className="p-2 text-slate-400 hover:bg-slate-100 rounded-md transition-colors"
+                title="Toggle Navigation"
+              >
+                <Bars3BottomLeftIcon className="w-6 h-6" />
+              </button>
+            )}
+          </div>
+
           <div className="flex items-center gap-6 xl:gap-8 flex-shrink-0">
             <Link href="/" className="z-50 relative">
               <Logo />
             </Link>
 
-            {/* UPDATED NAV ORDER */}
-            <nav className="hidden xl:flex items-center gap-10 ml-20 h-8">
+            <nav className="hidden xl:flex items-center gap-10 ml-10 h-8">
               <NavDropdown label="POLICY" items={policyItems} pillar="policy" />
               <NavDropdown label="ECONOMICS" items={economicsItems} pillar="economics" />
               <NavDropdown label="TECHNOLOGY" items={technologyItems} pillar="technology" />
             </nav>
           </div>
 
-          <div className="hidden md:flex flex-1 pr-4 md:pr-8 xl:pr-0">
+          <div className="hidden md:flex flex-1 max-w-xl">
             <div className="relative w-full">
               <input
                 type="text"
                 placeholder="Search Intelligence Platform..."
-                className="w-full px-4 py-2 pl-10 border border-ui-border rounded-full text-sm bg-slate-50 focus:outline-none focus:ring-2 focus:ring-ui-primary focus:bg-white transition-all shadow-sm"
+                className="w-full px-4 py-2 pl-10 border border-slate-200 rounded-full text-sm bg-slate-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all shadow-sm"
               />
               <svg
                 className="w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
@@ -218,7 +242,20 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-4 flex-shrink-0 xl:hidden pr-4 md:pr-8">
+          {/* RIGHT SIDEBAR TOGGLE */}
+          <div className="w-10 flex-shrink-0 flex justify-end">
+            {!isStudio && (
+              <button
+                onClick={() => triggerToggle("right")}
+                className="p-2 text-slate-400 hover:bg-slate-100 rounded-md transition-colors"
+                title="Toggle Vitals"
+              >
+                <Bars3BottomRightIcon className="w-6 h-6" />
+              </button>
+            )}
+          </div>
+
+          <div className="flex items-center gap-4 flex-shrink-0 xl:hidden">
             <button
               className="p-2 text-slate-800 hover:bg-slate-100 rounded-md transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -249,7 +286,6 @@ const Header = () => {
                 </Link>
               ))}
             </div>
-            {/* ... rest of mobile menu items ... */}
           </div>
         )}
       </div>
