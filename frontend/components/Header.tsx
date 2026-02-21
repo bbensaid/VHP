@@ -52,7 +52,7 @@ const companyItems = [
 const Header = () => {
   const pathname = usePathname();
   const isStudio = pathname?.startsWith("/studio");
-
+  
   const [dateString, setDateString] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { isHeaderVisible, setHeaderVisible } = useTicker();
@@ -61,7 +61,7 @@ const Header = () => {
     { text: "Loading Intelligence...", url: "#" },
   ]);
 
-  // HELPER: Sends signal to AppShell.tsx without needing props
+  // HELPER: Sends signal to AppShell.tsx
   const triggerToggle = (side: "left" | "right") => {
     window.dispatchEvent(
       new CustomEvent("sidebar-toggle", { detail: { side } })
@@ -277,6 +277,34 @@ const Header = () => {
                 POLICY
               </div>
               {policyItems.map((i) => (
+                <Link
+                  key={i.href}
+                  href={i.href}
+                  className="block pl-4 text-sm text-slate-600 py-1"
+                >
+                  {i.label}
+                </Link>
+              ))}
+            </div>
+            <div className="space-y-2">
+              <div className="font-bold text-slate-900 pt-2 border-t border-slate-100 mt-2">
+                ECONOMICS
+              </div>
+              {economicsItems.map((i) => (
+                <Link
+                  key={i.href}
+                  href={i.href}
+                  className="block pl-4 text-sm text-slate-600 py-1"
+                >
+                  {i.label}
+                </Link>
+              ))}
+            </div>
+            <div className="space-y-2">
+              <div className="font-bold text-slate-900 pt-2 border-t border-slate-100 mt-2">
+                TECHNOLOGY
+              </div>
+              {technologyItems.map((i) => (
                 <Link
                   key={i.href}
                   href={i.href}
