@@ -1,1 +1,0 @@
-// DEPRECATED: Merged into index.ts
