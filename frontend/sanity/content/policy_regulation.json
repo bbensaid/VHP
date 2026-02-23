@@ -1,0 +1,43 @@
+{
+  "_type": "policyAnalysis",
+  "title": "The End of the All-Payer Dream: Transitioning to Global Budgets Under Act 167",
+  "slug": { "current": "end-of-all-payer-dream-act-167" },
+  "publishedAt": "2026-02-25T09:00:00Z",
+  "status": "Active",
+  "pillar": "Policy",
+  "category": "regulation",
+  "impactLevel": "Critical",
+  "summary": "Vermont's transition from the All-Payer Model to the AHEAD Global Budget framework represents a fundamental admission: voluntary Value-Based Care cannot outpace Fee-For-Service inflation.",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [{ "_type": "span", "text": "For years, the Vermont All-Payer Accountable Care Organization (ACO) Model was heralded as the gold standard for state-led health reform. However, the 2024 Wyman Report and the subsequent mandates of Act 167 signal a stark policy pivot. The state is acknowledging that voluntary capitation frameworks are insufficient to combat the structural inflation of the Fee-For-Service (FFS) chassis.", "marks": [] }]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{ "_type": "span", "text": "The Regulatory Shift to AHEAD", "marks": [] }]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [{ "_type": "span", "text": "The Centers for Medicare & Medicaid Services (CMS) AHEAD model enforces a rigid Global Budget. Unlike the All-Payer model, which sought to align incentives while keeping the FFS billing infrastructure intact, a Global Budget caps total hospital revenue. This is a profound regulatory shift from 'managing volume' to 'enforcing scarcity.'", "marks": [] }]
+    },
+    {
+      "_type": "block",
+      "style": "quote",
+      "children": [{ "_type": "span", "text": "Policy is the economic architecture of care. A Global Budget legally transforms an MRI from a profit-generating asset into a managed liability.", "marks": [] }]
+    },
+    {
+      "_type": "code",
+      "title": "Policy Framework Comparison: All-Payer vs. AHEAD",
+      "language": "json",
+      "code": [
+        { "Metric": "Reimbursement Base", "All_Payer": "Fee-For-Service with Shared Savings", "AHEAD": "Fixed Prospective Revenue Cap" },
+        { "Metric": "Financial Risk", "All_Payer": "Upside/Downside corridors", "AHEAD": "Total Total Cost of Care (TCOC) Risk" },
+        { "Metric": "Hospital Incentive", "All_Payer": "Increase high-margin service volume", "AHEAD": "Shift care to low-cost community settings" }
+      ]
+    }
+  ]
+}

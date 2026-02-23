@@ -1,0 +1,43 @@
+{
+  "_type": "policyAnalysis",
+  "title": "Capitation Mechanics: Decoupling Rural Solvency from RVU Volume",
+  "slug": { "current": "capitation-mechanics-rvu-volume" },
+  "publishedAt": "2026-02-24T10:30:00Z",
+  "status": "Active",
+  "pillar": "Economics",
+  "category": "value",
+  "impactLevel": "High",
+  "summary": "As the working-age commercial insurance base shrinks, the traditional 'cost-shift' mechanism is bankrupting rural hospitals. Capitation offers the only mathematical exit from the demographic death spiral.",
+  "body": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [{ "_type": "span", "text": "The core pathology of rural healthcare economics is the reliance on the 'Cost Shift.' Hospitals have historically compensated for Medicare and Medicaid underpayments by charging exorbitant rates to commercial payers. With Vermont's working-age population projected to decline by 13% by 2040, the tax base for this cross-subsidization is vanishing.", "marks": [] }]
+    },
+    {
+      "_type": "block",
+      "style": "h2",
+      "children": [{ "_type": "span", "text": "The End of the RVU", "marks": [] }]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [{ "_type": "span", "text": "Value-Based Care (VBC) requires dismantling the Relative Value Unit (RVU) as the primary measure of physician productivity. When hospitals are paid via Capitation (a flat per-member-per-month fee), generating high RVUs through excessive testing destroys operating margins.", "marks": [] }]
+    },
+    {
+      "_type": "code",
+      "title": "The Math of the Demographic Cliff (2025-2040)",
+      "language": "json",
+      "code": [
+        { "Metric": "Population Over Age 65", "Result": "Reaching 30% by 2040" },
+        { "Metric": "Commercial Payer Base", "Result": "-13% Contraction" },
+        { "Metric": "Required Commercial Markup to Break Even", "Result": "+262% over Medicare" }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "quote",
+      "children": [{ "_type": "span", "text": "You cannot balance a system-wide government deficit on the backs of a shrinking commercial middle class. The arithmetic of the cost-shift has failed.", "marks": [] }]
+    }
+  ]
+}

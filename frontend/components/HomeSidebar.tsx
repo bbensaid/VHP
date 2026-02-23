@@ -1,3 +1,4 @@
+// frontend/components/HomeSidebar.tsx
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
@@ -7,14 +8,12 @@ import {
   AcademicCapIcon,
   BriefcaseIcon,
   ChevronUpIcon,
-  ChevronDownIcon,
-  BuildingOfficeIcon,
   FilmIcon,
   ArrowTrendingUpIcon,
-  MinusIcon,
 } from "@heroicons/react/24/outline";
 
-const academyItems = [
+// Preserved content links (kept in the file per your instructions to not lose content)
+export const academyItems = [
   { href: "/education/courses", label: "Executive Masterclasses" },
   { href: "/education/faculty", label: "Faculty & Experts" },
   { href: "/education/webinars", label: "Webinars & Events" },
@@ -22,20 +21,20 @@ const academyItems = [
   { href: "/education/case-studies", label: "Case Studies Library" },
 ];
 
-const advisoryItems = [
+export const advisoryItems = [
   { href: "/advisory/consulting", label: "Strategic Consulting" },
   { href: "/advisory/research", label: "Custom Research Projects" },
   { href: "/advisory/reports", label: "Annual Impact Reports" },
   { href: "/advisory/contact", label: "Hire an Expert" },
 ];
 
-const mediaItems = [
+export const mediaItems = [
   { href: "/media/podcasts", label: "HTR Podcast Network" },
   { href: "/media/videos", label: "Video Briefings" },
   { href: "/media/library", label: "Full Multimedia Library" },
 ];
 
-const trendingItems = [
+export const trendingItems = [
   { href: "/topics/value-based-care", label: "Value-Based Care Models" },
   { href: "/topics/workforce", label: "Clinical Workforce Gaps" },
   { href: "/topics/telehealth", label: "Telehealth Reimbursement" },
@@ -79,71 +78,17 @@ export default function HomeSidebar({
     return () => observer.disconnect();
   }, []);
 
-  const scrollToTop = (e: React.MouseEvent) => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    // Also scroll the sidebar container itself
-    const sidebarContainer = e.currentTarget.closest(".overflow-y-auto");
-    if (sidebarContainer) {
-      sidebarContainer.scrollTo({ top: 0, behavior: "smooth" });
+  const scrollToTop = () => {
+    const scrollContainer = document.querySelector(".overflow-y-auto");
+    if (scrollContainer) {
+      scrollContainer.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
-  const renderPillar = (
-    title: string,
-    icon: React.ReactNode,
-    items: { href: string; label: string }[],
-  ) => {
-    const isOpen = openSections.includes(title);
-
-    return (
-      <div className="border-b border-slate-100 last:border-0">
-        <button
-          onClick={() => onToggleSection(title)}
-          className={`w-full flex items-center justify-between py-3 px-3 my-1 rounded-lg group transition-all duration-200 focus:outline-none border border-slate-200 ${isOpen ? "bg-slate-100 text-slate-900" : "bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900"}`}
-          aria-expanded={isOpen}
-        >
-          <div className="flex items-center gap-3">
-            <div
-              className={`p-1.5 rounded-md transition-colors duration-200 ${isOpen ? "bg-white shadow-sm text-slate-900" : "bg-slate-50 text-slate-400 group-hover:text-slate-600 group-hover:bg-white group-hover:shadow-sm"}`}
-            >
-              <span className="block w-5 h-5 transition-colors duration-200">
-                {icon}
-              </span>
-            </div>
-            <span className="text-xs font-black uppercase tracking-widest transition-colors duration-200">
-              {title}
-            </span>
-          </div>
-          <ChevronDownIcon
-            className={`w-4 h-4 transition-transform duration-200 ease-out text-slate-400 ${isOpen ? "rotate-180 text-slate-600" : "group-hover:text-slate-500"}`}
-          />
-        </button>
-
-        <div
-          className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100 pb-2" : "grid-rows-[0fr] opacity-0"}`}
-        >
-          <div className="overflow-hidden">
-            <ul className="space-y-1 pl-4 ml-3 border-l border-slate-200">
-              {items.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    onClick={onNavigate}
-                    className="block px-3 py-2 text-sm font-medium text-slate-500 hover:text-slate-900 hover:bg-slate-100 rounded-md transition-colors duration-200"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-    );
-  };
-
   return (
-    <aside className="w-full flex flex-col gap-6 min-h-full relative">
+    <aside className="relative flex flex-col h-full min-h-[calc(100vh-4rem)]">
       <div
         ref={topSentinelRef}
         className="absolute top-0 left-0 w-full h-1 pointer-events-none"
@@ -189,51 +134,75 @@ export default function HomeSidebar({
               Case Study: Vermont
             </span>
           </Link>
+
+          {/* NEW BUTTONS EXACTLY MATCHING "CASE STUDY: VERMONT" PARAMETERS */}
+          <div className="mt-6 space-y-2">
+            <Link
+              href="/academy"
+              onClick={onNavigate}
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
+            >
+              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden flex-shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+                <AcademicCapIcon className="w-5 h-5" />
+              </div>
+              <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
+                Academy
+              </span>
+            </Link>
+
+            <Link
+              href="/advisory-hub"
+              onClick={onNavigate}
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
+            >
+              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden flex-shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+                <BriefcaseIcon className="w-5 h-5" />
+              </div>
+              <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
+                Advisory
+              </span>
+            </Link>
+
+            <Link
+              href="/multimedia"
+              onClick={onNavigate}
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
+            >
+              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden flex-shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+                <FilmIcon className="w-5 h-5" />
+              </div>
+              <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
+                Multimedia
+              </span>
+            </Link>
+
+            <Link
+              href="/trending-topics"
+              onClick={onNavigate}
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
+            >
+              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden flex-shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+                <ArrowTrendingUpIcon className="w-5 h-5" />
+              </div>
+              <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
+                Trending Topics
+              </span>
+            </Link>
+          </div>
         </div>
-      </div>
-
-      {/* ACADEMY ACCORDION */}
-      <div className="mt-2">
-        {renderPillar("Academy", <AcademicCapIcon />, academyItems)}
-      </div>
-
-      {/* ADVISORY ACCORDION */}
-      <div className="mt-2">
-        {renderPillar("Advisory", <BriefcaseIcon />, advisoryItems)}
-      </div>
-
-      {/* MULTIMEDIA ACCORDION */}
-      <div className="mt-2">
-        {renderPillar("Multimedia", <FilmIcon />, mediaItems)}
-      </div>
-
-      {/* TRENDING TOPICS ACCORDION */}
-      <div className="mt-2">
-        {renderPillar(
-          "Trending Topics",
-          <ArrowTrendingUpIcon />,
-          trendingItems,
-        )}
       </div>
 
       {/* FOOTER ACTIONS */}
       <div className="sticky bottom-0 bg-white pt-4 pb-6 mt-auto border-t border-slate-100 z-20 -mx-6 px-6 -mb-6">
-        {/* COLLAPSE ALL */}
         {onCollapseAll && (
           <button
             onClick={onCollapseAll}
-            className={`w-full flex items-center justify-center gap-2 rounded-lg bg-white border hover:bg-slate-50 text-slate-500 hover:text-slate-900 transition-all duration-300 text-[10px] font-bold uppercase tracking-wider shadow-sm overflow-hidden ${
-              openSections.length > 0
-                ? "opacity-100 max-h-10 py-2 border-slate-200 mb-3"
-                : "opacity-0 max-h-0 py-0 border-transparent pointer-events-none mb-0"
-            }`}
+            className="w-full flex items-center justify-center gap-2 rounded-lg bg-white border border-slate-200 hover:bg-slate-50 text-slate-600 font-bold text-xs py-2.5 transition-colors mb-3 shadow-sm"
           >
-            <MinusIcon className="w-3 h-3" />
-            Collapse All
+            Collapse All Menus
           </button>
         )}
 
-        {/* BACK TO TOP */}
         <button
           onClick={scrollToTop}
           className={`w-full flex items-center justify-center gap-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-900 transition-all duration-300 text-[10px] font-bold uppercase tracking-wider overflow-hidden ${
