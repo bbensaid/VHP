@@ -1,0 +1,24 @@
+// frontend/app/trending-topics/page.tsx
+import React from "react";
+import TrendingTopicsClientPage from "./TrendingTopicsClientPage";
+
+// FIX: Mapped to the actual existing pages in your app that match these topics
+// instead of the non-existent /topics/ directory.
+import VBCPage from "@/app/economics/value/page";
+import WorkforcePage from "@/app/operations/workforce/page";
+import TelehealthPage from "@/app/technology/digital/page";
+
+export const metadata = {
+  title: "HTR Trending Topics | Pulse of Healthcare",
+  description: "Centralized hub for trending healthcare topics and analysis.",
+};
+
+export default function TrendingTopicsHubPage() {
+  return (
+    <TrendingTopicsClientPage
+      vbcTab={<VBCPage />}
+      workforceTab={<WorkforcePage />}
+      telehealthTab={<TelehealthPage />}
+    />
+  );
+}
