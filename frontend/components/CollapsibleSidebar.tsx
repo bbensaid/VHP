@@ -35,14 +35,14 @@ export default function CollapsibleSidebar({
         />
       )}
 
-      <aside
+      {/* WRAPPER: Handles Width & Sticky Positioning */}
+      <div
         className={`
-          bg-white transition-all duration-300 ease-in-out flex-shrink-0 z-50
-          border-slate-200 flex flex-col overflow-hidden
-          /* MOBILE: Fixed overlay | DESKTOP: Sticky push */
+          transition-all duration-300 ease-in-out flex-shrink-0 z-50
+          flex flex-col
           fixed lg:sticky
-          ${isLeft ? "left-0 border-r" : "right-0 border-l"}
-          ${isOpen ? "w-[85vw] md:w-72 opacity-100 shadow-2xl lg:shadow-none" : "w-0 opacity-0 border-none"}
+          ${isLeft ? "left-0" : "right-0"}
+          ${isOpen ? "w-[85vw] md:w-72" : "w-0"}
         `}
         style={{ 
           top: stickyTop, 
@@ -50,27 +50,45 @@ export default function CollapsibleSidebar({
           maxHeight: `calc(100vh - ${stickyTop})` 
         }}
       >
-        <div className="w-[85vw] md:w-72 h-full flex flex-col relative">
-          {/* Minimal Directional Close Button */}
-          <button
-            onClick={() => setIsOpen(false)}
-            className={`absolute top-2 z-50 p-2 text-slate-400 hover:text-slate-600 transition-colors ${isLeft ? "right-2" : "left-2"}`}
-            title="Collapse Sidebar"
-          >
-            <CloseIcon className="w-5 h-5" />
-          </button>
-
-          {/* Scrollable Content */}
-          <div 
-            className="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200 hover:scrollbar-thumb-slate-300 scrollbar-track-transparent"
-            style={{ direction: isLeft ? "ltr" : "rtl" }}
-          >
-            <div className="px-4 pb-4 pt-0" style={{ direction: "ltr" }}>
-              {children}
+        <div className="w-full h-full relative">
+          {/* ACTUAL SIDEBAR CONTENT */}
+          <aside className={`
+            absolute inset-0 bg-white border-slate-200 flex flex-col overflow-hidden
+            ${isLeft ? "border-r" : "border-l"}
+            ${isOpen ? "opacity-100 shadow-2xl lg:shadow-none" : "opacity-0 border-none"}
+          `}>
+            <div className="w-[85vw] md:w-72 h-full flex flex-col relative">
+              {/* Scrollable Content */}
+              <div 
+                className="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200 hover:scrollbar-thumb-slate-300 scrollbar-track-transparent"
+                style={{ direction: isLeft ? "ltr" : "rtl" }}
+              >
+                <div className="px-4 pb-4 pt-0" style={{ direction: "ltr" }}>
+                  {children}
+                </div>
+              </div>
             </div>
-          </div>
+          </aside>
+
+          {/* FLOATING CLOSE BUTTON - OUTSIDE ON DESKTOP */}
+          {isOpen && (
+            <button
+              onClick={() => setIsOpen(false)}
+              className={`
+                absolute top-0 z-50 p-1 text-slate-400 hover:text-slate-600 transition-colors
+                bg-white border border-slate-200 rounded-full shadow-sm
+                /* Mobile: Inside */
+                ${isLeft ? "right-2" : "left-2"}
+                /* Desktop: On the Line */
+                ${isLeft ? "lg:right-0 lg:left-auto lg:translate-x-1/2" : "lg:left-0 lg:right-auto lg:-translate-x-1/2"}
+              `}
+              title="Collapse Sidebar"
+            >
+              <CloseIcon className="w-4 h-4" />
+            </button>
+          )}
         </div>
-      </aside>
+      </div>
 
       {/* Collapsed State Stub (Desktop) - Now explicitly opens the sidebar on click */}
       {!isOpen && (

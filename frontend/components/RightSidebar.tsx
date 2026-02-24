@@ -293,7 +293,7 @@ export default function RightSidebar({
       onClick={(e) => e.stopPropagation()}
     >
       {/* Dynamic Header */}
-      <div className={`flex justify-between items-center py-3 border-b border-slate-100 bg-white rounded-t-lg z-20 ${isMaximized ? "px-4" : "pl-12 pr-4"}`}>
+      <div className={`flex justify-between items-center py-3 border-b border-slate-100 bg-white rounded-t-lg z-20 ${isMaximized ? "px-4" : "pl-12 lg:px-4"}`}>
         <button
           onClick={() => !isMaximized && setIsChatOpen(!isChatOpen)}
           className={`flex items-center gap-2 focus:outline-none ${!isMaximized ? "cursor-pointer" : "cursor-default"}`}
