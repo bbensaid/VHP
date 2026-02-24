@@ -70,7 +70,7 @@ export function NationalMap({ data, searchQuery = "", selectedRegion = "All" }: 
   if (!position) return null;
 
   return (
-    <div className={isFullscreen ? "fixed inset-0 z- bg-slate-50 flex items-center justify-center p-4" : "w-full mx-auto relative pb-16"}>
+    <div className={isFullscreen ? "fixed inset-0 z-50 bg-slate-50 flex items-center justify-center p-4" : "w-full mx-auto relative pb-4"}>
       {isFullscreen && <button onClick={() => setIsFullscreen(false)} className="absolute top-6 right-6 p-2 bg-white rounded-full shadow-md border" title="Exit Fullscreen"><XMarkIcon className="w-6 h-6" /></button>}
 
       <ComposableMap projection="geoAlbersUsa" viewBox="0 0 800 600" width={800} height={600} style={{ width: "100%", height: "auto" }}>
@@ -160,7 +160,7 @@ export function NationalMap({ data, searchQuery = "", selectedRegion = "All" }: 
         </ZoomableGroup>
       </ComposableMap>
 
-      <div className="absolute bottom-4 left-4 flex gap-2">
+      <div className="absolute top-4 left-4 flex flex-col gap-2 md:flex-row md:bottom-4 md:top-auto md:left-4">
         <button onClick={() => setPosition(p => ({...p, zoom: p.zoom * 1.2}))} className="bg-white p-2 rounded-lg shadow-sm border" title="Zoom In"><PlusIcon className="w-5 h-5" /></button>
         <button onClick={() => setPosition(p => ({...p, zoom: p.zoom / 1.2}))} className="bg-white p-2 rounded-lg shadow-sm border" title="Zoom Out"><MinusIcon className="w-5 h-5" /></button>
         <button onClick={() => setPosition({ coordinates: [-96, 37], zoom: 1 })} className="bg-white p-2 rounded-lg shadow-sm border" title="Reset Zoom"><ArrowPathIcon className="w-5 h-5" /></button>

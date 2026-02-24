@@ -1,4 +1,6 @@
 import { client } from "@/lib/sanity";
+import Link from "next/link";
+import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 
 interface Hospital {
   _id: string;
@@ -29,18 +31,29 @@ export default async function HospitalsPage({ params }: { params: Promise<{ stat
   const hospitals: Hospital[] = await client.fetch(query, { state });
 
   return (
-    <div className="p-8 max-w-7xl mx-auto">
-      <div className="flex justify-between items-center mb-8">
-        <div>
-          <h1 className="text-2xl font-bold text-slate-900">Hospital Performance</h1>
-          <p className="text-slate-500">Live financial and operational metrics</p>
-        </div>
-        <div className="text-sm text-slate-400">
-          Source: Sanity Live Data • {hospitals.length} Facilities
+    <div className="w-full font-sans text-slate-800 flex flex-col pb-20">
+      {/* HEADER CARD */}
+      <div className="bg-white border border-slate-200 rounded-2xl p-8 mb-6 shadow-sm relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50 rounded-bl-full -mr-20 -mt-20 opacity-50 pointer-events-none"></div>
+        
+        <div className="relative z-10">
+          <Link href={`/dashboard/${state}`} className="inline-flex items-center text-sm font-bold text-slate-500 hover:text-indigo-600 transition-colors mb-6">
+            <ArrowLeftIcon className="w-4 h-4 mr-1.5" /> Back to State Profile
+          </Link>
+          
+          <div className="flex flex-col md:flex-row justify-between items-start">
+            <div className="max-w-3xl">
+              <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-3">Hospital Performance</h1>
+              <p className="text-slate-500 text-lg leading-relaxed">Live financial and operational metrics</p>
+            </div>
+            <div className="text-sm text-slate-400 mt-4 md:mt-0">
+              Source: Sanity Live Data • {hospitals.length} Facilities
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden w-full">
+      <div className="w-full bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
         <div className="overflow-x-auto w-full">
           <table className="w-full text-left min-w-[800px]">
             <thead className="bg-slate-50 border-b border-slate-200">
