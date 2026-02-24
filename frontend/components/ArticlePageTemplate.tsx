@@ -105,11 +105,11 @@ export default async function ArticlePageTemplate({
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row gap-8">
+      <div className="flex flex-col lg:flex-row gap-8 max-w-7xl mx-auto px-4 md:px-8 py-12">
         {/* Left Sidebar */}
         <aside className="order-2 lg:order-1 lg:w-1/4 w-full">
-          <div className="sticky top-40 space-y-6">
-            <div id="video-content" className="scroll-mt-32">
+          <div className="sticky space-y-6" style={{ top: "var(--sidebar-top, 10rem)" }}>
+            <div id="video-content" style={{ scrollMarginTop: "var(--sidebar-top, 8rem)" }}>
               {videoElements.map((video: any, index: number) => (
                 <VideoBlock key={video._key} value={video} />
               ))}
@@ -117,7 +117,7 @@ export default async function ArticlePageTemplate({
             {videoElements.length > 0 && audioElements.length > 0 && (
               <hr className="border-gray-200 my-8" />
             )}
-            <div id="audio-content" className="scroll-mt-32">
+            <div id="audio-content" style={{ scrollMarginTop: "var(--sidebar-top, 8rem)" }}>
               {audioElements.map((audio: any, index: number) => (
                 <AudioBlock key={audio._key} value={audio} />
               ))}

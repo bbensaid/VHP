@@ -26,8 +26,9 @@ export async function ArticleEngine({ slug }: ArticleEngineProps) {
   return (
     <article className="min-h-screen bg-white pb-20 font-sans text-slate-800">
       <header className="bg-slate-50 py-12 border-b border-slate-200">
-        <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-          <div className="flex items-center gap-3 mb-6 text-xs font-bold uppercase tracking-widest text-slate-500">
+        <div className="container mx-auto px-4 md:px-8 max-w-7xl">
+          <div className="max-w-3xl mx-auto">
+            <div className="flex items-center gap-3 mb-6 text-xs font-bold uppercase tracking-widest text-slate-500">
             {article.pillar && <span className="text-indigo-600">{article.pillar}</span>}
             {article.category && (
               <>
@@ -46,17 +47,20 @@ export async function ArticleEngine({ slug }: ArticleEngineProps) {
              <time dateTime={article.publishedAt}>
                {new Date(article.publishedAt).toLocaleDateString()}
              </time>
+            </div>
           </div>
         </div>
       </header>
 
-      <div className="container mx-auto px-4 md:px-8 max-w-4xl py-12">
-        {article.body ? (
-          /* THIS IS THE KEY FIX: Delegating rendering to the client component */
-          <ArticleContent body={article.body} />
-        ) : (
-          <p className="text-slate-500 italic">No content available.</p>
-        )}
+      <div className="container mx-auto px-4 md:px-8 max-w-7xl py-12">
+        <div className="max-w-3xl mx-auto prose prose-lg prose-indigo">
+          {article.body ? (
+            /* THIS IS THE KEY FIX: Delegating rendering to the client component */
+            <ArticleContent body={article.body} />
+          ) : (
+            <p className="text-slate-500 italic">No content available.</p>
+          )}
+        </div>
       </div>
     </article>
   );

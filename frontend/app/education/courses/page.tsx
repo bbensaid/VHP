@@ -2,7 +2,6 @@ import React from "react";
 import { client } from "@/lib/sanity";
 import AcademyCard from "@/components/academy/AcademyCard";
 
-// 1. Fetch real data from Sanity
 async function getCourses() {
   const query = `*[_type == "course"] | order(title asc) {
     _id,
@@ -15,15 +14,12 @@ async function getCourses() {
     "slug": slug.current,
     instructors[]->{name}
   }`;
-
-  // Revalidate every 60 seconds
   return client.fetch(query, {}, { next: { revalidate: 60 } });
 }
 
 export default async function CoursesPage() {
   const courses = await getCourses();
 
-  // (Keep your existing helper function exactly as it was)
   const getFilterStyle = (filter: string, index: number) => {
     if (index === 0) return "bg-slate-900 text-white border-slate-900";
     switch (filter) {
@@ -40,9 +36,8 @@ export default async function CoursesPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen pb-20">
-      {/* Header Section (Unchanged) */}
       <div className="bg-white border-b border-gray-200 py-12 md:py-16">
-        <div className="container mx-auto px-4 md:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
             Course Catalog
           </h1>
@@ -50,19 +45,9 @@ export default async function CoursesPage() {
             Browse our library of certifications, masterclasses, and workshops
             tailored for healthcare leadership.
           </p>
-
           <div className="flex flex-wrap gap-3 mt-8">
-            {[
-              "All Programs",
-              "Policy Pillar",
-              "Economics Pillar",
-              "Technology Pillar",
-              "Certifications Only",
-            ].map((filter, i) => (
-              <button
-                key={filter}
-                className={`px-5 py-2 rounded-full text-sm font-bold border transition-all shadow-sm ${getFilterStyle(filter, i)}`}
-              >
+            {["All Programs", "Policy Pillar", "Economics Pillar", "Technology Pillar", "Certifications Only"].map((filter, i) => (
+              <button key={filter} className={`px-5 py-2 rounded-full text-sm font-bold border transition-all shadow-sm ${getFilterStyle(filter, i)}`}>
                 {filter}
               </button>
             ))}
@@ -70,30 +55,19 @@ export default async function CoursesPage() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-8 mt-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Sidebar Filters (Keep your existing sidebar code here) */}
           <div className="hidden lg:block space-y-8">
-            {/* ... (Your existing checkbox filters) ... */}
             <div>
-              <h3 className="font-bold text-gray-900 mb-4 uppercase tracking-wider text-xs">
-                Learning Format
-              </h3>
+              <h3 className="font-bold text-gray-900 mb-4 uppercase tracking-wider text-xs">Learning Format</h3>
               <div className="space-y-2">
-                {/* Placeholder for interactive filters later */}
-                <p className="text-sm text-gray-500">
-                  Filter logic to be implemented
-                </p>
+                <p className="text-sm text-gray-500">Filter logic to be implemented</p>
               </div>
             </div>
           </div>
-
-          {/* Main Grid: NOW DYNAMIC */}
           <div className="lg:col-span-3 space-y-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
-              All Active Programs
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">All Active Programs</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {courses.map((course: any) => (
                 <AcademyCard
                   key={course._id}
@@ -103,9 +77,7 @@ export default async function CoursesPage() {
                   description={course.description}
                   meta={course.meta}
                   price={course.price}
-                  // Pass mapped instructor names or null
                   instructors={course.instructors?.map((i: any) => i.name)}
-                  // Valid link to dynamic page
                   href={`/education/courses/${course.slug}`}
                 />
               ))}

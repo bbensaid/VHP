@@ -1,0 +1,110 @@
+"use client";
+
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { ArrowLeftIcon } from "@heroicons/react/24/outline";
+
+export interface TabConfig {
+  id: string;
+  label: string;
+  icon: React.ReactNode;
+  content: React.ReactNode;
+}
+
+interface HubPageTemplateProps {
+  badgeLabel: string;
+  title: string;
+  subtitle: string;
+  tabs: TabConfig[];
+  backLink?: string;
+  backLabel?: string;
+}
+
+export default function HubPageTemplate({
+  badgeLabel,
+  title,
+  subtitle,
+  tabs,
+  backLink = "/",
+  backLabel = "Back to Home",
+}: HubPageTemplateProps) {
+  // THE FIX: Correctly grabbing the first index  using valid optional chaining
+  const [activeTab, setActiveTab] = useState(tabs?.[0]?.id || "");
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const handleTabChange = (tabId: string) => {
+    if (tabId === activeTab) return;
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setActiveTab(tabId);
+      setIsTransitioning(false);
+    }, 200);
+  };
+
+  return (
+    <div className="w-full font-sans text-slate-800 flex flex-col pb-20">
+      {/* HEADER CARD - Now fully contained, snapping to the AppShell Grid */}
+      <div className="bg-white border border-slate-200 rounded-2xl p-8 mb-6 shadow-sm relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50 rounded-bl-full -mr-20 -mt-20 opacity-50 pointer-events-none"></div>
+        
+        <div className="relative z-10">
+          <Link href={backLink} className="inline-flex items-center text-sm font-bold text-slate-500 hover:text-indigo-600 transition-colors mb-6">
+            <ArrowLeftIcon className="w-4 h-4 mr-1.5" /> {backLabel}
+          </Link>
+          
+          <div className="flex flex-col md:flex-row justify-between items-start">
+            <div className="max-w-3xl">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-indigo-50 text-indigo-700 text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded border border-indigo-100">
+                  {badgeLabel}
+                </span>
+              </div>
+              <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-3">{title}</h1>
+              <p className="text-slate-500 text-lg leading-relaxed">{subtitle}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* TABS NAVIGATION - Sticky below the AppShell Header */}
+      <div className="bg-white border border-slate-200 rounded-xl shadow-sm mb-8 sticky z-30 overflow-hidden" style={{ top: "var(--sidebar-top, 8.5rem)" }}>
+        <nav className="flex overflow-x-auto hide-scrollbar" aria-label="Tabs">
+          {tabs.map((tab) => {
+            const isActive = activeTab === tab.id;
+            return (
+              <button
+                key={tab.id}
+                role="tab"
+                aria-selected={isActive}
+                onClick={() => handleTabChange(tab.id)}
+                className={`flex-1 flex items-center justify-center gap-2 px-6 py-4 text-sm font-bold transition-all whitespace-nowrap border-b-2
+                  ${isActive
+                    ? "border-indigo-600 text-indigo-700 bg-indigo-50/50"
+                    : "border-transparent text-slate-500 hover:text-slate-800 hover:bg-slate-50"
+                  }
+                `}
+              >
+                {tab.icon}
+                {tab.label}
+              </button>
+            );
+          })}
+        </nav>
+      </div>
+
+      {/* TAB CONTENT - The .hub-embedded-view magically neutralizes injected page layouts */}
+      <div className={`w-full transition-opacity duration-200 ease-in-out ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
+        {tabs.map((tab) => (
+          <div
+            key={tab.id}
+            role="tabpanel"
+            hidden={activeTab !== tab.id}
+            className="hub-embedded-view w-full"
+          >
+            {activeTab === tab.id && tab.content}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

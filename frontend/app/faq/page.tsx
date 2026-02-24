@@ -1,9 +1,7 @@
-// app/faq/page.tsx
-
 import React from "react";
 import Link from "next/link";
 
-const FAQPage: React.FC = () => {
+export default function FAQPage() {
   const faqs = [
     {
       category: "Membership & Access",
@@ -43,51 +41,50 @@ const FAQPage: React.FC = () => {
   ];
 
   return (
-    <div className="py-16 px-4 md:px-8 max-w-4xl mx-auto">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-text-heading mb-6">
-          Frequently Asked Questions
-        </h1>
-        <p className="text-xl text-text-body">
-          Everything you need to know about our methodology, membership, and
-          mission.
-        </p>
-      </div>
+    <div className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full font-sans text-slate-800">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
+            Frequently Asked Questions
+          </h1>
+          <p className="text-xl text-slate-600">
+            Everything you need to know about our methodology, membership, and mission.
+          </p>
+        </div>
 
-      <div className="space-y-12">
-        {faqs.map((section, i) => (
-          <div
-            key={i}
-            className="bg-surface border border-ui-border rounded-xl p-8 shadow-sm"
-          >
-            <h2 className="text-2xl font-bold text-ui-primary mb-6 border-b border-ui-border pb-2">
-              {section.category}
-            </h2>
-            <div className="space-y-8">
-              {section.items.map((item, j) => (
-                <div key={j}>
-                  <h3 className="text-lg font-bold text-text-heading mb-2">
-                    {item.q}
-                  </h3>
-                  <p className="text-text-body leading-relaxed">{item.a}</p>
-                </div>
-              ))}
+        <div className="space-y-12">
+          {faqs.map((section, i) => (
+            <div
+              key={i}
+              className="bg-white border border-slate-200 rounded-xl p-8 shadow-sm"
+            >
+              <h2 className="text-2xl font-bold text-indigo-600 mb-6 border-b border-slate-100 pb-2">
+                {section.category}
+              </h2>
+              <div className="space-y-8">
+                {section.items.map((item, j) => (
+                  <div key={j}>
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">
+                      {item.q}
+                    </h3>
+                    <p className="text-slate-600 leading-relaxed">{item.a}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <div className="text-center mt-16">
-        <p className="text-text-body mb-4">Still have questions?</p>
-        <Link
-          href="/advisory/contact"
-          className="text-ui-primary font-bold hover:underline"
-        >
-          Contact Support &rarr;
-        </Link>
+        <div className="text-center mt-16">
+          <p className="text-slate-600 mb-4">Still have questions?</p>
+          <Link
+            href="/advisory/contact"
+            className="text-indigo-600 font-bold hover:underline"
+          >
+            Contact Support →
+          </Link>
+        </div>
       </div>
     </div>
   );
-};
-
-export default FAQPage;
+}

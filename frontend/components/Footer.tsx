@@ -7,7 +7,8 @@ import Logo from "./Logo";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-surface-muted border-t border-ui-border pt-2 pb-2 mt-auto">
-      <div className="container mx-auto px-4 md:px-8">
+      {/* PHASE 1 FIX: Standardized Grid Wrapper */}
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
         {/* Top Section: 4 Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-2">
           {/* Column 1: Brand & Mission */}
@@ -28,7 +29,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Column 2: Pillars (Science Removed) */}
+          {/* Column 2: Pillars */}
           <div>
             <h4 className="font-bold text-text-heading mb-4 uppercase text-xs tracking-wider">
               Core Pillars
@@ -118,7 +119,7 @@ const Footer: React.FC = () => {
         {/* Bottom Section */}
         <div className="border-t border-ui-border pt-2 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-text-body">
           <p>
-            &copy; {new Date().getFullYear()} Health Transformation Review. All
+            © {new Date().getFullYear()} Health Transformation Review. All
             rights reserved.
           </p>
           <div className="flex space-x-6">

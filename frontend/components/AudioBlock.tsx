@@ -1,15 +1,19 @@
 "use client";
 
+import { useState } from "react";
+
 interface AudioBlockProps {
   value: {
     url?: string;
     title?: string;
     caption?: string;
+    summary?: string;
   };
 }
 
 export default function AudioBlock({ value }: AudioBlockProps) {
-  const { url, title, caption } = value;
+  const { url, title, caption, summary } = value;
+  const [isPlaying, setIsPlaying] = useState(false);
 
   if (!url) return null;
 
@@ -20,7 +24,11 @@ export default function AudioBlock({ value }: AudioBlockProps) {
 
   // 2. Render logic
   return (
-    <figure className="w-full max-w-full my-6 first:mt-0 last:mb-0">
+    <figure 
+      className={`w-full max-w-full my-8 first:mt-0 last:mb-0 transition-all duration-500 ease-in-out ${
+        isPlaying ? "sticky top-[var(--sidebar-top,9rem)] z-30 shadow-xl scale-[1.02]" : "relative z-0"
+      }`}
+    >
       <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-slate-300 transition-colors">
         
         {/* Header: Icon + Title (Visible only if title exists) */}
@@ -45,6 +53,13 @@ export default function AudioBlock({ value }: AudioBlockProps) {
           </div>
         )}
 
+        {/* Summary (Restored from inline implementation) */}
+        {summary && (
+          <div className="px-4 pt-4 pb-2 text-sm text-slate-600 italic border-b border-slate-100 bg-white/50">
+            {summary}
+          </div>
+        )}
+
         {/* Player Section */}
         <div className="p-4 bg-slate-50">
           {isEmbed ? (
@@ -62,6 +77,9 @@ export default function AudioBlock({ value }: AudioBlockProps) {
               controls 
               className="w-full h-10 accent-indigo-600"
               src={url}
+              onPlay={() => setIsPlaying(true)}
+              onPause={() => setIsPlaying(false)}
+              onEnded={() => setIsPlaying(false)}
             >
               Your browser does not support the audio element.
             </audio>
