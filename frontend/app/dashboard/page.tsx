@@ -68,39 +68,63 @@ export default function DashboardIndex() {
       .slice(0, 3);
   }, []);
 
+  const handleSort = (key: string) => {
+    setSortConfig((current) => ({
+      key,
+      direction: current.key === key && current.direction === "asc" ? "desc" : "asc",
+    }));
+  };
+
   return (
-    <div className="flex-1 min-w-0 font-sans text-slate-800">
-      <div className="border-b border-slate-200 sticky top-0 bg-white/95 backdrop-blur z-20 px-6 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-6">
-            <div className="flex flex-wrap justify-between items-center gap-4">
-              <div>
-                <h1 className="text-3xl font-black text-slate-900">Health System Performance Index</h1>
-                <p className="text-slate-500 mt-1 max-w-2xl">National analysis of value-based care readiness and system transformation.</p>
-              </div>
-              <div className="flex-shrink-0">
-                <Link
-                  href="/about/methodology"
-                  title="Learn how the HTR Performance Index is calculated."
-                  className="inline-flex items-center gap-2 text-sm font-bold text-slate-600 bg-slate-100 border border-slate-200 rounded-lg px-4 py-2 hover:bg-slate-200 hover:border-slate-300 hover:text-slate-800 transition-all"
-                >
-                  <InformationCircleIcon className="w-5 h-5" />
-                  <span>Index Methodology</span>
-                </Link>
-              </div>
+    <div className="w-full font-sans text-slate-800 flex flex-col pb-20">
+      {/* HEADER CARD */}
+      <div className="bg-white border border-slate-200 rounded-2xl p-8 mb-6 shadow-sm relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50 rounded-bl-full -mr-20 -mt-20 opacity-50 pointer-events-none"></div>
+        
+        <div className="relative z-10">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-6 mb-8">
+            <div className="max-w-3xl">
+              <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-3">Health System Performance Index</h1>
+              <p className="text-slate-500 text-lg leading-relaxed">National analysis of value-based care readiness and system transformation.</p>
             </div>
+            <div className="flex-shrink-0">
+              <Link
+                href="/about/methodology"
+                title="Learn how the HTR Performance Index is calculated."
+                className="inline-flex items-center gap-2 text-xs font-bold text-slate-500 bg-slate-100 border border-slate-200 rounded-lg px-3 py-1.5 hover:bg-slate-200 hover:border-slate-300 hover:text-slate-700 transition-all"
+              >
+                <InformationCircleIcon className="w-4 h-4" />
+                <span>Index Methodology</span>
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-8">
             <div className="flex gap-2 w-full md:w-auto">
-              <div className="relative"><select value={selectedRegion} onChange={(e) => setSelectedRegion(e.target.value)} className="appearance-none bg-slate-50 border border-slate-200 text-sm font-bold text-slate-700 rounded-lg pl-4 pr-10 py-2.5 cursor-pointer hover:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm"><option value="All">All Regions</option><option value="Northeast">Northeast</option><option value="South">South</option><option value="Midwest">Midwest</option><option value="West">West</option></select><FunnelIcon className="w-4 h-4 text-slate-500 absolute right-3 top-3 pointer-events-none" /></div>
-              <div className="relative flex-1 md:w-96"><input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder="Search states..." className="w-full pl-10 pr-4 py-2.5 text-sm bg-slate-50 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm" /><MagnifyingGlassIcon className="w-4 h-4 text-slate-400 absolute left-3 top-3" />{searchQuery && <button onClick={() => setSearchQuery("")} className="absolute right-3 top-3 text-slate-400"><XMarkIcon className="w-4 h-4" /></button>}</div>
+              <div className="relative"><select value={selectedRegion} onChange={(e) => setSelectedRegion(e.target.value)} className="appearance-none bg-slate-50 border border-slate-200 text-sm font-bold text-slate-700 rounded-full pl-4 pr-10 py-2.5 cursor-pointer hover:border-indigo-500 hover:bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm"><option value="All">All Regions</option><option value="Northeast">Northeast</option><option value="South">South</option><option value="Midwest">Midwest</option><option value="West">West</option></select><FunnelIcon className="w-4 h-4 text-slate-500 absolute right-3 top-3 pointer-events-none" /></div>
+              <div className="relative flex-1 md:w-96">
+                <MagnifyingGlassIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                <input 
+                  type="text" 
+                  value={searchQuery} 
+                  onChange={(e) => setSearchQuery(e.target.value)} 
+                  placeholder="Search states..." 
+                  className="w-full pl-10 pr-10 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-full focus:outline-none focus:ring-2 focus:ring-slate-200 focus:border-slate-400 shadow-sm hover:bg-white hover:border-slate-300 transition-all" 
+                />
+                {searchQuery && <button onClick={() => setSearchQuery("")} className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-slate-400 hover:text-slate-600 rounded-full hover:bg-slate-200 transition-colors"><XMarkIcon className="w-4 h-4" /></button>}
+              </div>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="bg-indigo-50 border border-indigo-100 p-4 rounded-xl"><div className="flex items-center gap-2 text-indigo-600 mb-1"><ChartBarIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">Avg. Index Score</span></div><div className="text-2xl font-black text-slate-900">{metrics.averageScore}</div><div className="text-xs text-slate-500">Across {tableRows.length} states</div></div>
+              <div className="bg-emerald-50 border border-emerald-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-emerald-600 mb-1"><StarIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">Leading States</span></div><div className="text-2xl font-black text-slate-900">{metrics.leadingCount}</div><div className="text-xs text-slate-500">Score 80+</div></div>
+              <div className="bg-red-50 border border-red-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-red-600 mb-1"><ExclamationTriangleIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">At Risk States</span></div><div className="text-2xl font-black text-slate-900">{metrics.atRiskCount}</div><div className="text-xs text-slate-500">Score &lt;60</div></div>
+              <div className="bg-white border border-slate-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-slate-500 mb-1"><BuildingLibraryIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">States Visible</span></div><div className="text-2xl font-black text-slate-900">{tableRows.length}</div><div className="text-xs text-slate-500">of {Object.keys(performanceIndexData).length} total</div></div>
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-indigo-50 border border-indigo-100 p-4 rounded-xl"><div className="flex items-center gap-2 text-indigo-600 mb-1"><ChartBarIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">Avg. Index Score</span></div><div className="text-2xl font-black text-slate-900">{metrics.averageScore}</div><div className="text-xs text-slate-500">Across {tableRows.length} states</div></div>
-            <div className="bg-emerald-50 border border-emerald-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-emerald-600 mb-1"><StarIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">Leading States</span></div><div className="text-2xl font-black text-slate-900">{metrics.leadingCount}</div><div className="text-xs text-slate-500">Score 80+</div></div>
-            <div className="bg-red-50 border border-red-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-red-600 mb-1"><ExclamationTriangleIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">At Risk States</span></div><div className="text-2xl font-black text-slate-900">{metrics.atRiskCount}</div><div className="text-xs text-slate-500">Score &lt;60</div></div>
-            <div className="bg-white border border-slate-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-slate-500 mb-1"><BuildingLibraryIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">States Visible</span></div><div className="text-2xl font-black text-slate-900">{tableRows.length}</div><div className="text-xs text-slate-500">of {Object.keys(performanceIndexData).length} total</div></div>
-          </div>
+        </div>
       </div>
-      <div className="w-full px-6 py-10 space-y-12">
+
+      <div className="w-full space-y-12">
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 h-full"><NationalMap data={performanceIndexData} searchQuery={searchQuery} selectedRegion={selectedRegion} /></div>
           <div className="space-y-4">

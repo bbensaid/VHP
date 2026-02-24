@@ -114,7 +114,7 @@ export default async function CategoryPageLayout(props: CategoryPageLayoutProps)
         </main>
 
         {/* RELATED MEDIA SIDEBAR */}
-        <aside className="lg:col-span-4 sticky space-y-8" style={{ top: "var(--sidebar-top, 8rem)" }}>
+        <aside className="lg:col-span-4 sticky space-y-8" style={{ top: "calc(var(--sidebar-top, 8rem) + 1rem)" }}>
           <div className="bg-slate-50 p-6 md:p-8 rounded-2xl border border-slate-200">
             <h3 className="text-sm font-bold text-slate-900 mb-6 border-b border-slate-200 pb-3 uppercase tracking-widest flex items-center gap-2">
               <svg className="w-5 h-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">

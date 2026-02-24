@@ -53,7 +53,7 @@ export default function VideoBlock({ value, compact }: VideoBlockProps) {
 
           {/* Play Button Overlay */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+            <div className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
               <PlayIcon className="w-4 h-4 text-indigo-600 ml-0.5" />
             </div>
           </div>
