@@ -92,6 +92,14 @@ export default function RightSidebar({
   }, []);
 
   useEffect(() => {
+    if ((isChatOpen || isMaximized) && textareaRef.current) {
+      setTimeout(() => {
+        textareaRef.current?.focus();
+      }, 100);
+    }
+  }, [isChatOpen, isMaximized]);
+
+  useEffect(() => {
     if (mounted) {
       localStorage.setItem("htr-chat-history", JSON.stringify(chatMessages));
     }
@@ -100,7 +108,7 @@ export default function RightSidebar({
   const handleInput = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInputValue(e.target.value);
     if (textareaRef.current) {
-      textareaRef.current.style.height = "56px";
+      textareaRef.current.style.height = "100px";
       textareaRef.current.style.height = `${Math.min(textareaRef.current.scrollHeight, 150)}px`;
     }
   };
@@ -171,7 +179,7 @@ export default function RightSidebar({
     setChatMessages((prev) => [...prev, { role: "user", text: userMessage }]);
     setInputValue("");
     if (textareaRef.current) {
-      textareaRef.current.style.height = "56px";
+      textareaRef.current.style.height = "100px";
     }
 
     streamResponse(userMessage);
@@ -281,11 +289,11 @@ export default function RightSidebar({
   const chatInterface = (
     <div
       className={`bg-white border-slate-200 flex flex-col transition-all duration-300 relative
-        ${isMaximized ? "w-full max-w-4xl mx-auto h-[85vh] rounded-2xl shadow-2xl border" : "w-full border-t lg:border-t-0 lg:border-x lg:border-b lg:rounded-xl lg:shadow-xl lg:h-[600px] h-full"}`}
+        ${isMaximized ? "w-full max-w-4xl mx-auto h-[85vh] rounded-2xl shadow-2xl border" : "w-full border rounded-lg shadow-sm h-[calc(100vh-12rem)]"}`}
       onClick={(e) => e.stopPropagation()}
     >
       {/* Dynamic Header */}
-      <div className="flex justify-between items-center px-4 py-3 border-b border-slate-100 bg-white lg:rounded-t-xl z-20">
+      <div className={`flex justify-between items-center py-3 border-b border-slate-100 bg-white rounded-t-lg z-20 ${isMaximized ? "px-4" : "pl-12 pr-4"}`}>
         <button
           onClick={() => !isMaximized && setIsChatOpen(!isChatOpen)}
           className={`flex items-center gap-2 focus:outline-none ${!isMaximized ? "cursor-pointer" : "cursor-default"}`}
@@ -357,7 +365,7 @@ export default function RightSidebar({
 
       {(isChatOpen || isMaximized) && (
         <div
-          className={`mb-4 relative animate-in fade-in slide-in-from-bottom-2 duration-300 ${isMaximized ? "flex-1 min-h-0" : "h-56"}`}
+          className={`relative animate-in fade-in slide-in-from-bottom-2 duration-300 flex-1 min-h-0 flex flex-col overflow-hidden`}
         >
           {showSettings && (
             <div className="absolute inset-0 z-30 bg-white/95 backdrop-blur px-4 py-4 flex flex-col animate-in fade-in">
@@ -427,18 +435,24 @@ export default function RightSidebar({
 
           <div
             ref={chatContainerRef}
-            className="absolute inset-0 overflow-y-auto px-4 pb-2 flex flex-col custom-scrollbar overflow-x-hidden scrollbar-thin scrollbar-thumb-slate-200 hover:scrollbar-thumb-slate-300 scrollbar-track-transparent pt-6"
+            className="flex-1 overflow-y-auto px-4 pb-2 flex flex-col custom-scrollbar overflow-x-hidden scrollbar-thin scrollbar-thumb-slate-200 hover:scrollbar-thumb-slate-300 scrollbar-track-transparent pt-6"
+            style={{ direction: isMaximized ? "ltr" : "rtl", scrollBehavior: "smooth" }}
           >
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-3" style={{ direction: "ltr" }}>
               {chatMessages.map((msg, i) => (
                 <div
                   key={i}
-                  className={`self-${msg.role === "user" ? "end" : "start"} ${
+                  className={`w-full ${
                     msg.role === "user"
-                      ? "bg-slate-100 text-slate-900 rounded-tr-none"
-                      : "bg-slate-100 text-slate-700 border border-slate-200 rounded-tl-none"
-                  } rounded-lg py-2 px-3 text-xs max-w-[90%]`}
+                      ? "bg-slate-100 text-slate-900"
+                      : "bg-slate-100 text-slate-700"
+                  } rounded-lg py-3 px-4 text-xs`}
                 >
+                  <div className="flex items-center gap-2 mb-2 pb-1 border-b border-slate-200/60">
+                    <span className={`font-bold text-[10px] uppercase tracking-wider ${msg.role === 'user' ? 'text-slate-500' : 'text-indigo-600'}`}>
+                      {msg.role === 'user' ? 'You' : 'HTR Analyst'}
+                    </span>
+                  </div>
                   <ReactMarkdown
                     components={{
                       p: ({ node, ...props }) => (
@@ -563,7 +577,7 @@ export default function RightSidebar({
         </div>
       )}
 
-      <div className="relative z-10 mt-auto">
+      <div className="relative z-10 mt-auto px-4 pt-4 pb-6 bg-white border-t border-slate-100 rounded-b-lg">
         <div className="relative flex items-end">
           <textarea
             ref={textareaRef}
@@ -571,8 +585,8 @@ export default function RightSidebar({
             onChange={handleInput}
             onKeyDown={handleKeyDown}
             placeholder="Ask the Analyst..."
-            className="w-full bg-slate-100 border-0 rounded-xl pl-4 pr-16 py-4 text-sm focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all resize-none shadow-inner"
-            style={{ minHeight: "56px", maxHeight: "150px" }}
+            className="w-full bg-slate-100 border-0 rounded-xl pl-4 pr-16 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:bg-white transition-all resize-none shadow-inner"
+            style={{ minHeight: "100px", maxHeight: "200px" }}
             onFocus={() => setIsChatOpen(true)}
           />
           <button

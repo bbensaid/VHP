@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 interface CollapsibleSidebarProps {
   side: "left" | "right";
@@ -23,6 +23,7 @@ export default function CollapsibleSidebar({
   children,
 }: CollapsibleSidebarProps) {
   const isLeft = side === "left";
+  const CloseIcon = isLeft ? ChevronLeftIcon : ChevronRightIcon;
 
   return (
     <>
@@ -49,28 +50,24 @@ export default function CollapsibleSidebar({
           maxHeight: `calc(100vh - ${stickyTop})` 
         }}
       >
-        <div className="w-[85vw] md:w-72 h-full flex flex-col">
-          {/* Header */}
-          <div className="flex items-center justify-between p-4 border-b border-slate-100 flex-shrink-0 min-h-[60px]">
-            <div className="flex items-center gap-4">
-              {headerContent}
-            </div>
-
-            <div className="flex items-center gap-2">
-              {/* Clean, explicit Close Button */}
-              <button
-                onClick={() => setIsOpen(false)}
-                className="p-1.5 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
-                title="Close Sidebar"
-              >
-                <XMarkIcon className="w-5 h-5" />
-              </button>
-            </div>
-          </div>
+        <div className="w-[85vw] md:w-72 h-full flex flex-col relative">
+          {/* Minimal Directional Close Button */}
+          <button
+            onClick={() => setIsOpen(false)}
+            className={`absolute top-2 z-50 p-2 text-slate-400 hover:text-slate-600 transition-colors ${isLeft ? "right-2" : "left-2"}`}
+            title="Collapse Sidebar"
+          >
+            <CloseIcon className="w-5 h-5" />
+          </button>
 
           {/* Scrollable Content */}
-          <div className="flex-1 overflow-y-auto hide-scrollbar p-4">
-            {children}
+          <div 
+            className="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200 hover:scrollbar-thumb-slate-300 scrollbar-track-transparent"
+            style={{ direction: isLeft ? "ltr" : "rtl" }}
+          >
+            <div className="px-4 pb-4 pt-0" style={{ direction: "ltr" }}>
+              {children}
+            </div>
           </div>
         </div>
       </aside>

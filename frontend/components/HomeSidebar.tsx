@@ -88,7 +88,7 @@ export default function HomeSidebar({
   };
 
   return (
-    <aside className="relative flex flex-col h-full min-h-[calc(100vh-4rem)]">
+    <aside className="relative flex flex-col h-full min-h-full">
       <div
         ref={topSentinelRef}
         className="absolute top-0 left-0 w-full h-1 pointer-events-none"
@@ -136,7 +136,7 @@ export default function HomeSidebar({
           </Link>
 
           {/* NEW BUTTONS EXACTLY MATCHING "CASE STUDY: VERMONT" PARAMETERS */}
-          <div className="mt-6 space-y-2">
+          <div className="mt-2 space-y-2">
             <Link
               href="/academy"
               onClick={onNavigate}
@@ -193,7 +193,7 @@ export default function HomeSidebar({
       </div>
 
       {/* FOOTER ACTIONS */}
-      <div className="sticky bottom-0 bg-white pt-4 pb-6 mt-auto border-t border-slate-100 z-20 -mx-6 px-6 -mb-6">
+      <div className="sticky bottom-0 bg-white pt-4 pb-6 mt-auto border-t border-slate-100 z-20 -mx-4 px-4 -mb-4">
         {onCollapseAll && (
           <button
             onClick={onCollapseAll}

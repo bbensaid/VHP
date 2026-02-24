@@ -20,11 +20,15 @@ interface TickerItem {
 interface TickerStripProps {
   tickerData: TickerItem[] | { headlines: TickerItem[] };
   transparent?: boolean;
+  isVisible?: boolean;
+  onToggle?: () => void;
 }
 
 export default function TickerStrip({
   tickerData,
   transparent,
+  isVisible = true,
+  onToggle,
 }: TickerStripProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [selectedItem, setSelectedItem] = useState<TickerItem | null>(null);
@@ -60,14 +64,24 @@ export default function TickerStrip({
         <div
           className={`flex items-center ${transparent ? "bg-transparent" : "bg-slate-100 border-r border-slate-200"} h-full pr-4 pl-0 z-10 relative flex-shrink-0`}
         >
+          {onToggle && (
+            <input
+              type="checkbox"
+              checked={isVisible}
+              onChange={onToggle}
+              className="w-3 h-3 cursor-pointer accent-indigo-500 hover:accent-indigo-400 mr-2"
+              title="Toggle Vitals"
+            />
+          )}
           <div
             className={`w-2 h-2 rounded-full ${
               isVitals ? "bg-emerald-500" : "bg-red-500"
             } animate-pulse mr-2`}
           ></div>
-          <span className="text-[10px] font-black uppercase tracking-widest text-slate-700">
+          <span className="text-[10px] font-black uppercase tracking-widest text-slate-700 cursor-pointer" onClick={onToggle}>
             {isVitals ? "System Vitals" : "Live Wire"}
           </span>
+          {onToggle && <span className="text-slate-300 ml-3">|</span>}
         </div>
 
         {/* Scrolling Content */}
@@ -76,57 +90,63 @@ export default function TickerStrip({
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <div
-            className="flex items-center animate-marquee whitespace-nowrap gap-2"
-            style={{
-              animationPlayState: isHovered ? "paused" : "running",
-            }}
-          >
-            {/* Render items twice for seamless loop */}
-            {[...items, ...items].map((item, i) => (
-              <div
-                key={i}
-                className="flex items-center gap-2 whitespace-nowrap"
-              >
-                {item.label ? (
-                  // RENDER SYSTEM VITAL
-                  <button
-                    onClick={() => setSelectedItem(item)}
-                    className="flex items-center gap-2 hover:bg-slate-100/50 hover:shadow-sm px-2 py-1 rounded transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
-                  >
-                    <span className="font-medium text-slate-500 text-xs">
-                      {item.label}:
-                    </span>
-                    <span
-                      className={`font-bold text-xs ${getTickerColor(
-                        item.status,
-                      )}`}
+          {isVisible ? (
+            <div
+              className="flex items-center animate-marquee whitespace-nowrap gap-2"
+              style={{
+                animationPlayState: isHovered ? "paused" : "running",
+              }}
+            >
+              {/* Render items multiple times to ensure the strip is filled and loops seamlessly */}
+              {[...items, ...items, ...items, ...items].map((item, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-2 whitespace-nowrap"
+                >
+                  {item.label ? (
+                    // RENDER SYSTEM VITAL
+                    <button
+                      onClick={() => setSelectedItem(item)}
+                      className="flex items-center gap-2 hover:bg-slate-100/50 hover:shadow-sm px-2 py-1 rounded transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
                     >
-                      {item.value}
-                    </span>
-                    {item.trend && (
-                      <span className="text-[10px] text-slate-400">
-                        ({item.trend})
+                      <span className="font-medium text-slate-500 text-xs">
+                        {item.label}:
                       </span>
-                    )}
-                  </button>
-                ) : (
-                  // RENDER NEWS HEADLINE
-                  <Link
-                    href={item.url || "#"}
-                    className="flex items-center gap-2 group"
-                  >
-                    <span className="font-bold text-xs text-slate-700 group-hover:text-indigo-600 transition-colors">
-                      {item.text}
-                    </span>
-                    <span className="text-[10px] text-slate-400 group-hover:text-indigo-400">
-                      &rarr;
-                    </span>
-                  </Link>
-                )}
-              </div>
-            ))}
-          </div>
+                      <span
+                        className={`font-bold text-xs ${getTickerColor(
+                          item.status,
+                        )}`}
+                      >
+                        {item.value}
+                      </span>
+                      {item.trend && (
+                        <span className="text-[10px] text-slate-400">
+                          ({item.trend})
+                        </span>
+                      )}
+                    </button>
+                  ) : (
+                    // RENDER NEWS HEADLINE
+                    <Link
+                      href={item.url || "#"}
+                      className="flex items-center gap-2 group"
+                    >
+                      <span className="font-bold text-xs text-slate-700 group-hover:text-indigo-600 transition-colors">
+                        {item.text}
+                      </span>
+                      <span className="text-[10px] text-slate-400 group-hover:text-indigo-400">
+                        &rarr;
+                      </span>
+                    </Link>
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <span className="text-slate-500 text-[10px] font-medium uppercase tracking-wider ml-2">
+              Vitals Paused
+            </span>
+          )}
         </div>
       </div>
 
