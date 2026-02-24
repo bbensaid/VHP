@@ -129,14 +129,14 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         <div className="sticky top-28 z-40 h-8 flex justify-center transition-all duration-300 pointer-events-none">
           <div className="w-full px-4 h-full pointer-events-auto">
             <div className="h-full flex items-center w-full">
-              {/* LEFT COLUMN: Breadcrumbs (Fixed 420px to match Header) */}
-              <div className="flex-shrink-0 flex items-center h-full w-[420px]">
+              {/* LEFT COLUMN: Breadcrumbs (Fixed 500px to match Header) */}
+              <div className="flex-shrink-0 flex items-center h-full w-[500px]">
                 {showBreadcrumbs && <Breadcrumbs />}
               </div>
 
               {showTicker && (
                 <>
-                <div className={`hidden lg:flex flex-1 items-center h-full min-w-0`}>
+                <div className={`hidden lg:flex flex-1 items-center h-full min-w-0 pr-12`}>
                   <div className="flex items-center w-full h-full">
                     <div className="flex-1 min-w-0 h-full">
                       <TickerStrip 

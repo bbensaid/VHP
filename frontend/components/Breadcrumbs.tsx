@@ -1,16 +1,39 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+
+const TAB_LABELS: Record<string, string> = {
+  courses: "Executive Masterclasses",
+  faculty: "Faculty & Experts",
+  webinars: "Webinars & Events",
+  glossary: "Glossary",
+  casestudies: "Case Study Library",
+  vbc: "Value-Based Care Models",
+  workforce: "Clinical Workforce Gaps",
+  telehealth: "Telehealth Reimbursement",
+  consulting: "Strategic Consulting",
+  research: "Custom Research Projects",
+  reports: "Annual Impact Reports",
+  contact: "Hire an Expert",
+  podcasts: "HTR Podcast Network",
+  videos: "Video Briefings",
+  library: "Full Multimedia Library",
+  index: "Performance Index",
+  program: "RHT Program",
+  hospitals: "Hospital View",
+};
 
 export default function Breadcrumbs() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   
   // Don't show on home page
   if (pathname === '/') return null;
 
   // Split path into segments and remove empty strings
   const segments = pathname.split('/').filter(item => item !== '');
+  const activeTab = searchParams.get('tab');
 
   return (
     <nav aria-label="Breadcrumb" className="flex items-center h-full">
@@ -30,7 +53,7 @@ export default function Breadcrumbs() {
           {segments.map((segment, index) => {
             // Build the url for this segment
             const href = `/${segments.slice(0, index + 1).join('/')}`;
-            const isLast = index === segments.length - 1;
+            const isLast = index === segments.length - 1 && !activeTab;
 
             // Format label: "new-hampshire" -> "New Hampshire"
             const label = segment.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
@@ -50,6 +73,16 @@ export default function Breadcrumbs() {
               </li>
             );
           })}
+
+          {/* Active Tab Breadcrumb */}
+          {activeTab && (
+            <li className="flex items-center">
+              <span className="mx-2 text-slate-300">/</span>
+              <span className="font-semibold text-slate-900" aria-current="page">
+                {TAB_LABELS[activeTab] || activeTab.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
+              </span>
+            </li>
+          )}
         </ol>
     </nav>
   );

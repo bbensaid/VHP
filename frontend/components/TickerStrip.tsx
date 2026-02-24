@@ -89,6 +89,7 @@ export default function TickerStrip({
           className="flex-1 overflow-hidden relative h-full flex items-center"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
+          style={{ maskImage: "linear-gradient(to right, black 90%, transparent 100%)", WebkitMaskImage: "linear-gradient(to right, black 90%, transparent 100%)" }}
         >
           {isVisible ? (
             <div

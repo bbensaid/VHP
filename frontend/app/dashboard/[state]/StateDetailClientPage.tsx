@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import {
   ArrowLeftIcon, ChartBarIcon, BookOpenIcon, BoltIcon, BanknotesIcon, BuildingLibraryIcon,
   CheckCircleIcon, ClockIcon, ExclamationCircleIcon, ListBulletIcon, ChevronUpIcon, ChevronDownIcon, InformationCircleIcon
 } from "@heroicons/react/24/outline";
 import { getScoreColor } from "@/lib/utils";
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import type { PerformanceIndexProfile } from "@/lib/data/performance-index-data";
 import type { RHTProfile } from "@/lib/data/rht-program";
 import type { Hospital } from "@/lib/data/hospital-data";
@@ -55,7 +56,28 @@ interface ClientPageProps {
 }
 
 export default function StateDetailClientPage({ indexData, programData, stateSlug }: ClientPageProps) {
-  const [activeTab, setActiveTab] = useState(indexData ? 'index' : 'program');
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const defaultTab = indexData ? 'index' : 'program';
+  const tabFromUrl = searchParams.get('tab');
+  const [activeTab, setActiveTab] = useState(tabFromUrl || defaultTab);
+
+  useEffect(() => {
+    const currentUrlTab = searchParams.get("tab");
+    if (currentUrlTab && currentUrlTab !== activeTab) {
+      setActiveTab(currentUrlTab);
+    }
+  }, [searchParams, activeTab]);
+
+  const handleTabChange = (tab: string) => {
+    setActiveTab(tab);
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("tab", tab);
+    router.push(`${pathname}?${params.toString()}`, { scroll: false });
+  };
+
   const [hospitalSort, setHospitalSort] = useState<{key: keyof Hospital, dir: 'asc'|'desc'}>({key: 'qualityScore', dir: 'desc'});
 
   const stateHospitals = useMemo(() => {
@@ -134,9 +156,9 @@ export default function StateDetailClientPage({ indexData, programData, stateSlu
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <div className="border-b border-slate-300">
           <nav className="-mb-px flex space-x-2" aria-label="Tabs">
-            {indexData && <TabButton isActive={activeTab === 'index'} onClick={() => setActiveTab('index')} icon={<ChartBarIcon className="w-5 h-5"/>} label="Performance Index" />}
-            {programData && <TabButton isActive={activeTab === 'program'} onClick={() => setActiveTab('program')} icon={<ListBulletIcon className="w-5 h-5"/>} label="RHT Program" />}
-            {stateHospitals.length > 0 && <TabButton isActive={activeTab === 'hospitals'} onClick={() => setActiveTab('hospitals')} icon={<BuildingLibraryIcon className="w-5 h-5"/>} label="Hospital View" />}
+            {indexData && <TabButton isActive={activeTab === 'index'} onClick={() => handleTabChange('index')} icon={<ChartBarIcon className="w-5 h-5"/>} label="Performance Index" />}
+            {programData && <TabButton isActive={activeTab === 'program'} onClick={() => handleTabChange('program')} icon={<ListBulletIcon className="w-5 h-5"/>} label="RHT Program" />}
+            {stateHospitals.length > 0 && <TabButton isActive={activeTab === 'hospitals'} onClick={() => handleTabChange('hospitals')} icon={<BuildingLibraryIcon className="w-5 h-5"/>} label="Hospital View" />}
           </nav>
         </div>
 
