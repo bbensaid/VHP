@@ -115,8 +115,8 @@ const Header = () => {
       {/* 1. TOP BAR */}
       <div className="bg-slate-900 text-slate-300 text-[11px] font-bold tracking-wider uppercase py-2 border-b border-slate-800 w-full relative z-50">
         {/* PHASE 1 FIX: Standardized Grid Wrapper */}
-        <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center h-full gap-6 lg:gap-8">
-          <div className="hidden lg:block opacity-80 whitespace-nowrap">
+        <div className="w-full px-4 flex items-center h-full gap-0">
+          <div className="hidden lg:block opacity-80 whitespace-nowrap w-[420px] flex-shrink-0">
             <span>{dateString}</span>
           </div>
           <div className="flex-1 flex items-center overflow-hidden min-w-0">
@@ -194,35 +194,37 @@ const Header = () => {
       {/* 2. MAIN NAV BAR */}
       <div className="bg-white py-2 border-b border-slate-200 w-full relative z-40">
         {/* PHASE 1 FIX: Standardized Grid Wrapper */}
-        <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center justify-between gap-4">
+        <div className="w-full px-4 flex items-center gap-0">
           
-          {/* LEFT SIDEBAR TOGGLE */}
-          <div className="w-10 flex-shrink-0">
-            {!isStudio && (
-              <button
-                onClick={() => triggerToggle("left")}
-                className="p-2 text-slate-400 hover:bg-slate-100 rounded-md transition-colors"
-                title="Toggle Navigation"
-              >
-                <Bars3BottomLeftIcon className="w-6 h-6" />
-              </button>
-            )}
-          </div>
-
-          <div className="flex items-center gap-6 xl:gap-8 flex-shrink-0">
+          {/* LEFT GROUP: Toggle + Logo (Fixed Width 420px to align with Date above) */}
+          <div className="flex items-center gap-4 w-[420px] flex-shrink-0">
+            <div className="w-10 flex-shrink-0">
+              {!isStudio && (
+                <button
+                  onClick={() => triggerToggle("left")}
+                  className="p-2 text-slate-400 hover:bg-slate-100 rounded-md transition-colors"
+                  title="Toggle Navigation"
+                >
+                  <Bars3BottomLeftIcon className="w-6 h-6" />
+                </button>
+              )}
+            </div>
             <Link href="/" className="z-50 relative">
               <Logo />
             </Link>
-
-            {/* UPDATED NAV ORDER */}
-            <nav className="hidden xl:flex items-center gap-10 ml-20 h-8">
-              <NavDropdown label="POLICY" items={policyItems} pillar="policy" />
-              <NavDropdown label="ECONOMICS" items={economicsItems} pillar="economics" />
-              <NavDropdown label="TECHNOLOGY" items={technologyItems} pillar="technology" />
-            </nav>
           </div>
 
-          <div className="hidden md:flex flex-1 pr-4 md:pr-8 xl:pr-0">
+          {/* CENTER: Navigation & Search */}
+          <div className="flex-1 flex items-center justify-between">
+            <div className="flex items-center gap-6 xl:gap-8 flex-shrink-0">
+              <nav className="hidden xl:flex items-center gap-10 h-8">
+                <NavDropdown label="POLICY" items={policyItems} pillar="policy" />
+                <NavDropdown label="ECONOMICS" items={economicsItems} pillar="economics" />
+                <NavDropdown label="TECHNOLOGY" items={technologyItems} pillar="technology" />
+              </nav>
+            </div>
+
+            <div className="hidden md:flex flex-1 px-8 max-w-2xl ml-auto">
             <div className="relative w-full">
               <button
                 onClick={() => {
@@ -251,10 +253,11 @@ const Header = () => {
                 </span>
               </button>
             </div>
+            </div>
           </div>
 
           {/* RIGHT SIDEBAR TOGGLE */}
-          <div className="w-10 flex-shrink-0 flex justify-end">
+          <div className="w-10 flex-shrink-0 flex justify-end ml-4">
             {!isStudio && (
               <button
                 onClick={() => triggerToggle("right")}
