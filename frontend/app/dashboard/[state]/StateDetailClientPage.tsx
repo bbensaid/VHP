@@ -101,10 +101,10 @@ export default function StateDetailClientPage({ indexData, programData, stateSlu
     <button
       onClick={onClick}
       className={`
-        py-3 px-4 inline-flex items-center gap-2 font-bold text-sm transition-colors rounded-t-lg
+        relative py-3 px-6 inline-flex items-center gap-2 font-bold text-sm transition-all rounded-t-xl border-t border-l border-r mr-2
         ${isActive
-          ? 'bg-slate-300 text-slate-900 border-slate-400 border-t border-l border-r'
-          : 'text-slate-500 hover:text-slate-800 hover:bg-slate-100 border-transparent border-t border-l border-r'
+          ? 'bg-slate-100 text-slate-900 border-black z-10 -mb-px'
+          : 'bg-white text-slate-500 hover:text-slate-800 hover:bg-slate-50 border-slate-200 mt-1.5 shadow-sm'
         }
       `}
     >
@@ -155,7 +155,7 @@ export default function StateDetailClientPage({ indexData, programData, stateSlu
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <div className="border-b border-slate-300">
-          <nav className="-mb-px flex space-x-2" aria-label="Tabs">
+          <nav className="-mb-px flex items-end" aria-label="Tabs">
             {indexData && <TabButton isActive={activeTab === 'index'} onClick={() => handleTabChange('index')} icon={<ChartBarIcon className="w-5 h-5"/>} label="Performance Index" />}
             {programData && <TabButton isActive={activeTab === 'program'} onClick={() => handleTabChange('program')} icon={<ListBulletIcon className="w-5 h-5"/>} label="RHT Program" />}
             {stateHospitals.length > 0 && <TabButton isActive={activeTab === 'hospitals'} onClick={() => handleTabChange('hospitals')} icon={<BuildingLibraryIcon className="w-5 h-5"/>} label="Hospital View" />}
