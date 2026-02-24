@@ -116,10 +116,10 @@ const Header = () => {
       <div className="bg-slate-900 text-slate-300 text-[11px] font-bold tracking-wider uppercase py-2 border-b border-slate-800 w-full relative z-50">
         {/* PHASE 1 FIX: Standardized Grid Wrapper */}
         <div className="w-full px-4 flex items-center h-full gap-0">
-          <div className="hidden lg:block opacity-80 whitespace-nowrap w-[420px] flex-shrink-0">
+          <div className="hidden lg:block opacity-80 whitespace-nowrap w-[500px] flex-shrink-0">
             <span>{dateString}</span>
           </div>
-          <div className="flex-1 flex items-center overflow-hidden min-w-0">
+          <div className="flex-1 flex items-center overflow-hidden min-w-0 pr-32">
             <div className="flex items-center gap-2 pr-3 z-10 bg-slate-900 flex-shrink-0">
               <input
                 type="checkbox"
@@ -137,7 +137,10 @@ const Header = () => {
               <span className="text-slate-600">|</span>
             </div>
             {isHeaderVisible ? (
-              <div className="relative overflow-hidden flex-1 h-5 mask-linear-fade animate-in fade-in zoom-in duration-300">
+              <div 
+                className="relative overflow-hidden flex-1 h-5 animate-in fade-in zoom-in duration-300"
+                style={{ maskImage: "linear-gradient(to right, black 90%, transparent 100%)", WebkitMaskImage: "linear-gradient(to right, black 90%, transparent 100%)" }}
+              >
                 <div className="animate-marquee whitespace-nowrap absolute top-0 left-0 flex items-center gap-8 w-max">
                   {headlines.map((item, index) => (
                     <Link
@@ -196,8 +199,8 @@ const Header = () => {
         {/* PHASE 1 FIX: Standardized Grid Wrapper */}
         <div className="w-full px-4 flex items-center gap-0">
           
-          {/* LEFT GROUP: Toggle + Logo (Fixed Width 420px to align with Date above) */}
-          <div className="flex items-center gap-4 w-[420px] flex-shrink-0">
+          {/* LEFT GROUP: Toggle + Logo (Fixed Width 500px to align with Date above) */}
+          <div className="flex items-center gap-4 w-[500px] flex-shrink-0">
             <div className="w-10 flex-shrink-0">
               {!isStudio && (
                 <button
@@ -224,7 +227,7 @@ const Header = () => {
               </nav>
             </div>
 
-            <div className="hidden md:flex flex-1 px-8 max-w-2xl ml-auto">
+            <div className="hidden md:flex flex-1 px-8 max-w-2xl ml-auto lg:mr-[350px]">
             <div className="relative w-full">
               <button
                 onClick={() => {

@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
 export interface TabConfig {
   id: string;
@@ -29,12 +30,32 @@ export default function HubPageTemplate({
   backLabel = "Back to Home",
 }: HubPageTemplateProps) {
   // THE FIX: Correctly grabbing the first index  using valid optional chaining
-  const [activeTab, setActiveTab] = useState(tabs?.[0]?.id || "");
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const defaultTab = tabs?.[0]?.id || "";
+  const tabFromUrl = searchParams.get("tab");
+
+  const [activeTab, setActiveTab] = useState(tabFromUrl || defaultTab);
   const [isTransitioning, setIsTransitioning] = useState(false);
+
+  useEffect(() => {
+    const currentUrlTab = searchParams.get("tab");
+    if (currentUrlTab && currentUrlTab !== activeTab) {
+      setActiveTab(currentUrlTab);
+    } else if (!currentUrlTab && activeTab !== defaultTab) {
+      setActiveTab(defaultTab);
+    }
+  }, [searchParams, activeTab, defaultTab]);
 
   const handleTabChange = (tabId: string) => {
     if (tabId === activeTab) return;
     setIsTransitioning(true);
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("tab", tabId);
+    router.push(`${pathname}?${params.toString()}`, { scroll: false });
+
     setTimeout(() => {
       setActiveTab(tabId);
       setIsTransitioning(false);
