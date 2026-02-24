@@ -12,7 +12,7 @@ export default function StaticPageLayout({
   content,
 }: StaticPageProps) {
   return (
-    <div className="py-24 px-4 md:px-8 max-w-5xl mx-auto">
+    <div className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
       {/* Header Section */}
       <div className="text-center mb-16 border-b border-gray-100 pb-12">
         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">

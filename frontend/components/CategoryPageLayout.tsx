@@ -3,17 +3,15 @@ import { client } from "@/sanity/lib/client";
 import VideoBlock from "@/components/VideoBlock";
 
 interface CategoryPageLayoutProps {
-  // Supports all your existing patterns (params, slug, category, etc.)
   slug?: string;
   category?: string;
   params?: any; 
   title?: string;
   description?: string;
-  // We ignore 'pillar' prop requirement so you don't have to add it
   pillar?: string; 
 }
 
-const categoryDocQuery = `*[_type == "category" && slug.current == $slug][0] {
+const categoryDocQuery = `*[_type == "category" && slug.current == $slug] {
   _id, title, description,
   "articles": *[_type == "policyAnalysis" && references(^._id)] | order(publishedAt desc) {
     _id, title, slug, publishedAt, summary, category, pillar
@@ -32,19 +30,15 @@ const fallbackVideosQuery = `*[_type == "video" && title match $slug] | order(pu
 }`;
 
 export default async function CategoryPageLayout(props: CategoryPageLayoutProps) {
-  // 1. AUTO-RESOLVE SLUG (Handles your existing pages)
   let resolvedSlug = props.slug || props.category;
   
   if (!resolvedSlug && props.params) {
-    // Await params if it's a promise (Next.js 15), otherwise just read it
     const resolvedParams = props.params instanceof Promise ? await props.params : props.params;
     resolvedSlug = resolvedParams?.slug;
   }
 
-  // If we can't find a slug, we can't render.
   if (!resolvedSlug) return null;
 
-  // 2. FETCH DATA (Try Doc -> Fallback to Tags)
   let data = await client.fetch(categoryDocQuery, { slug: resolvedSlug });
   let articles = data?.articles || [];
   let videos = data?.videos || [];
@@ -53,78 +47,97 @@ export default async function CategoryPageLayout(props: CategoryPageLayoutProps)
     articles = await client.fetch(fallbackArticlesQuery, { slug: resolvedSlug });
     videos = await client.fetch(fallbackVideosQuery, { slug: resolvedSlug });
     
-    // Auto-generate title if missing
     const displayTitle = props.title || (resolvedSlug.charAt(0).toUpperCase() + resolvedSlug.slice(1));
     data = { title: displayTitle, description: props.description || "" };
   }
 
-  // 3. RENDER
   const hasContent = articles.length > 0 || videos.length > 0;
-  if (!data && !hasContent) return null; // Fail silently or show 404 handled by parent
+  if (!data && !hasContent) return null; 
 
   return (
-    <div className="container mx-auto px-4 py-12 font-sans text-slate-800">
-      <header className="mb-12 border-b border-slate-200 pb-8">
-        <h1 className="text-5xl font-black text-slate-900 mb-6 uppercase tracking-tight leading-none">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 font-sans text-slate-800">
+      
+      {/* HEADER */}
+      <header className="mb-12 border-b border-slate-200 pb-8 max-w-4xl">
+        <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 uppercase tracking-tight leading-none">
           {data.title}
         </h1>
         {data.description && (
-          <p className="text-xl text-slate-600 max-w-3xl leading-relaxed">{data.description}</p>
+          <p className="text-xl text-slate-600 leading-relaxed">{data.description}</p>
         )}
       </header>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <main className="lg:col-span-8 space-y-12">
-          {articles.map((article: any) => {
-            // MAGIC FIX: Use the article's OWN pillar to build the link. 
-            // If missing, guess based on the category or default to 'articles'.
-            // This means you DO NOT need to update your page files.
-            const rawPillar = article.pillar || 'articles'; 
-            const linkPath = `/${rawPillar.toLowerCase()}/${article.slug.current}`;
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        {/* MAIN ARTICLES COLUMN */}
+        <main className="lg:col-span-8 space-y-8">
+          {articles.length === 0 ? (
+            <div className="p-10 text-center bg-slate-50 rounded-xl border border-dashed border-slate-300 text-slate-500">
+              No analysis found for this category.
+            </div>
+          ) : (
+            articles.map((article: any) => {
+              const rawPillar = article.pillar || 'articles'; 
+              const linkPath = `/${rawPillar.toLowerCase()}/${article.slug.current}`;
 
-            return (
-              <article key={article._id} className="group">
-                <Link href={linkPath} className="block">
-                  <h2 className="text-3xl font-bold text-slate-900 mb-3 group-hover:text-indigo-600 transition-colors leading-tight">
-                    {article.title}
-                  </h2>
-                </Link>
-                <div className="flex items-center gap-3 text-sm text-slate-500 mb-3 font-medium">
-                  <time dateTime={article.publishedAt}>
-                    {new Date(article.publishedAt).toLocaleDateString()}
-                  </time>
-                  {article.category && (
-                    <>
-                      <span className="text-slate-300">•</span>
-                      <span className="uppercase tracking-wider text-xs">{article.category}</span>
-                    </>
-                  )}
-                </div>
-                <p className="text-slate-600 leading-relaxed text-lg mb-4">
-                  {article.summary}
-                </p>
-                <Link href={linkPath} className="inline-flex items-center text-indigo-600 font-bold hover:underline">
-                  Read Analysis &rarr;
-                </Link>
-              </article>
-            );
-          })}
+              return (
+                <article key={article._id} className="group bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-all hover:-translate-y-1">
+                  <div className="flex items-center gap-3 text-xs font-bold text-slate-500 mb-4 uppercase tracking-widest">
+                    <time dateTime={article.publishedAt} className="bg-slate-100 px-2 py-1 rounded">
+                      {new Date(article.publishedAt).toLocaleDateString()}
+                    </time>
+                    {article.category && (
+                      <>
+                        <span className="text-slate-300">•</span>
+                        <span className="text-indigo-600">{article.category}</span>
+                      </>
+                    )}
+                  </div>
+                  
+                  <Link href={linkPath} className="block">
+                    <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4 group-hover:text-indigo-600 transition-colors leading-tight">
+                      {article.title}
+                    </h2>
+                  </Link>
+                  
+                  <p className="text-slate-600 leading-relaxed text-lg mb-6">
+                    {article.summary}
+                  </p>
+                  
+                  <Link href={linkPath} className="inline-flex items-center text-indigo-600 font-bold hover:underline">
+                    Read Analysis →
+                  </Link>
+                </article>
+              );
+            })
+          )}
         </main>
 
-        <aside className="lg:col-span-4 space-y-8">
-          <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-            <h3 className="text-sm font-bold text-slate-900 mb-6 border-b border-slate-200 pb-2 uppercase tracking-widest">
+        {/* RELATED MEDIA SIDEBAR */}
+        <aside className="lg:col-span-4 sticky space-y-8" style={{ top: "var(--sidebar-top, 8rem)" }}>
+          <div className="bg-slate-50 p-6 md:p-8 rounded-2xl border border-slate-200">
+            <h3 className="text-sm font-bold text-slate-900 mb-6 border-b border-slate-200 pb-3 uppercase tracking-widest flex items-center gap-2">
+              <svg className="w-5 h-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
               Related Media
             </h3>
-            <div className="space-y-8">
-              {videos.map((video: any) => (
-                <div key={video._id}>
-                  <VideoBlock value={{ url: video.url, caption: video.title }} />
-                </div>
-              ))}
-            </div>
+            
+            {videos.length === 0 ? (
+               <p className="text-sm text-slate-500 italic">No media available.</p>
+            ) : (
+              <div className="space-y-6">
+                {videos.map((video: any) => (
+                  <div key={video._id} className="bg-white rounded-xl shadow-sm overflow-hidden border border-slate-100">
+                    <VideoBlock value={{ url: video.url, caption: video.title }} compact={true} />
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </aside>
+
       </div>
     </div>
   );

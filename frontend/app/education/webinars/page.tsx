@@ -1,76 +1,67 @@
-// app/education/webinars/page.tsx
 import React from "react";
+import { client } from "@/lib/sanity";
 import AcademyCard from "@/components/academy/AcademyCard";
 
-export default function WebinarsPage() {
+async function getWebinars() {
+  const query = `*[_type == "webinar"] | order(date asc) {
+    _id, title, pillar, description, date, duration, "slug": slug.current
+  }`;
+  return client.fetch(query, {}, { next: { revalidate: 60 } });
+}
+
+export default async function WebinarsPage() {
+  const allWebinars = await getWebinars();
+  const featured = allWebinars.length > 0 ? allWebinars : null;
+  const upcoming = allWebinars.length > 1 ? allWebinars.slice(1) : [];
+
+  const formatDate = (dateString: string) => {
+    return new Date(dateString).toLocaleDateString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+  };
+
   return (
     <div className="bg-white min-h-screen pb-20">
-       <div className="bg-slate-50 border-b border-gray-200 py-16">
-        <div className="container mx-auto px-4 md:px-8 text-center">
-            <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs mb-2 block">Live Intelligence</span>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-                Webinars & Roundtables
-            </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Join live discussions with global leaders. Q&A included in every session.
-            </p>
+      <div className="bg-slate-50 border-b border-gray-200 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs mb-2 block">Live Intelligence</span>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Webinars & Roundtables</h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">Join live discussions with global leaders. Q&A included in every session.</p>
         </div>
-       </div>
+      </div>
 
-       <div className="container mx-auto px-4 md:px-8 -mt-8">
-         <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-xl mb-16 flex flex-col md:flex-row items-center gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8">
+        {featured ? (
+          <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-xl mb-16 flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-2/3">
-                <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold uppercase mb-4 inline-block">
-                    Next Up • Oct 25
-                </span>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                    The Future of Telehealth Reimbursement (2025 Outlook)
-                </h2>
-                <p className="text-gray-600 mb-6">
-                    A critical town-hall style meeting regarding the expiring telehealth waivers and what the new fee schedule means for digital health companies.
-                </p>
-                <div className="flex gap-4">
-                    <button className="px-6 py-3 bg-indigo-600 text-white font-bold rounded hover:bg-indigo-700">
-                        Register Free
-                    </button>
-                    <button className="px-6 py-3 border border-gray-300 font-bold rounded hover:bg-gray-50">
-                        Add to Calendar
-                    </button>
-                </div>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold uppercase inline-block">Next Up</span>
+                <span className="text-sm font-bold text-gray-500">{formatDate(featured.date)}</span>
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">{featured.title}</h2>
+              <p className="text-gray-600 mb-6 text-lg">{featured.description}</p>
+              <div className="flex gap-4">
+                <button className="px-6 py-3 bg-indigo-600 text-white font-bold rounded hover:bg-indigo-700 shadow-md transition-all">Register Free</button>
+                <button className="px-6 py-3 border border-gray-300 font-bold rounded hover:bg-gray-50 text-gray-700">Add to Calendar</button>
+              </div>
             </div>
-            <div className="md:w-1/3 bg-slate-100 h-48 w-full rounded-lg flex items-center justify-center text-gray-400 font-bold">
-                [Event Banner]
-            </div>
-         </div>
+            <div className="md:w-1/3 bg-slate-900 h-48 w-full rounded-lg flex items-center justify-center text-white/20 font-bold text-4xl border border-slate-700">HTR</div>
+          </div>
+        ) : (
+          <div className="bg-white p-12 rounded-xl border border-dashed border-gray-300 text-center mb-12">
+            <p className="text-gray-500 font-bold">No upcoming webinars scheduled.</p>
+          </div>
+        )}
 
-         <h3 className="text-2xl font-bold text-gray-900 mb-6">Upcoming Schedule</h3>
-         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <AcademyCard 
-                type="WEBINAR"
-                pillar="Technology"
-                title="Generative AI in the ER"
-                description="Case study with Mercy Health."
-                meta="Nov 02 • 1:00 PM EST"
-                href="/education/webinars/gen-ai-er"
-            />
-            <AcademyCard 
-                type="WEBINAR"
-                pillar="Policy"
-                title="Antitrust in Healthcare"
-                description="FTC's new stance on mergers."
-                meta="Nov 15 • 3:00 PM EST"
-                href="/education/webinars/antitrust"
-            />
-            <AcademyCard 
-                type="WEBINAR"
-                pillar="Economics"
-                title="The Cost of GLP-1s"
-                description="Employer coverage strategies."
-                meta="Dec 01 • 12:00 PM EST"
-                href="/education/webinars/glp1"
-            />
-         </div>
-       </div>
+        {upcoming.length > 0 && (
+          <>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Upcoming Schedule</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {upcoming.map((webinar: any) => (
+                <AcademyCard key={webinar._id} type="WEBINAR" pillar={webinar.pillar} title={webinar.title} description={webinar.description} meta={formatDate(webinar.date)} price="Free" href={`/education/webinars/${webinar.slug}`} />
+              ))}
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 }

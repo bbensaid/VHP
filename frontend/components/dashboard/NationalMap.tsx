@@ -26,8 +26,8 @@ const getScoreColor = (score?: number): string => {
 };
 
 const stateNameToId = (name: string) => {
-    if (name === 'District of Columbia') return 'district_of_columbia';
-    return name.toLowerCase().replace(/\s+/g, "_");
+  if (name === 'District of Columbia') return 'district_of_columbia';
+  return name.toLowerCase().replace(/\s+/g, "_");
 }
 
 const REGION_MAP: Record<string, string> = {
@@ -70,9 +70,9 @@ export function NationalMap({ data, searchQuery = "", selectedRegion = "All" }: 
   if (!position) return null;
 
   return (
-    <div className={isFullscreen ? "fixed inset-0 z-[5000] bg-slate-50 flex items-center justify-center p-4" : "w-full mx-auto relative pb-16"}>
+    <div className={isFullscreen ? "fixed inset-0 z- bg-slate-50 flex items-center justify-center p-4" : "w-full mx-auto relative pb-16"}>
       {isFullscreen && <button onClick={() => setIsFullscreen(false)} className="absolute top-6 right-6 p-2 bg-white rounded-full shadow-md border" title="Exit Fullscreen"><XMarkIcon className="w-6 h-6" /></button>}
-      
+
       <ComposableMap projection="geoAlbersUsa" viewBox="0 0 800 600" width={800} height={600} style={{ width: "100%", height: "auto" }}>
         <rect x="0" y="0" width="800" height="600" fill="#ffffff" />
         <ZoomableGroup zoom={position.zoom} center={position.coordinates} onMoveEnd={handleMoveEnd}>
@@ -84,13 +84,13 @@ export function NationalMap({ data, searchQuery = "", selectedRegion = "All" }: 
 
               // All filtering logic is now self-contained in this component
               const region = REGION_MAP[stateId] || "Other";
-              const isVisible = 
+              const isVisible =
                 stateName.toLowerCase().includes(searchQuery.toLowerCase()) &&
                 (selectedRegion === "All" || region === selectedRegion);
 
               let fill = "#f1f5f9";      // Inactive / Filtered out: slate-100
               let hoverFill = "#f1f5f9"; // No hover effect for inactive
-              
+
               if (isVisible) {
                 fill = getScoreColor(stateData?.performanceScore);
                 if (stateData) {
@@ -107,8 +107,17 @@ export function NationalMap({ data, searchQuery = "", selectedRegion = "All" }: 
                   onClick={() => { if (stateData && isVisible) router.push(`/dashboard/${stateId}`); }}
                   onMouseEnter={(evt) => {
                     if (isVisible) {
+                      // Boundary calculations to prevent clipping
+                      const tooltipWidth = 180;
+                      const tooltipHeight = 100;
+                      let xPos = evt.clientX + 20;
+                      let yPos = evt.clientY;
+
+                      if (xPos + tooltipWidth > window.innerWidth) xPos = evt.clientX - tooltipWidth - 10;
+                      if (yPos + tooltipHeight > window.innerHeight) yPos = evt.clientY - tooltipHeight;
+
                       setTooltip({
-                        visible: true, x: evt.clientX, y: evt.clientY,
+                        visible: true, x: xPos, y: yPos,
                         content: (
                           <div className="min-w-[150px]">
                             <div className="font-bold text-sm mb-2 border-b pb-1">{stateName}</div>
@@ -125,7 +134,19 @@ export function NationalMap({ data, searchQuery = "", selectedRegion = "All" }: 
                       });
                     }
                   }}
-                  onMouseMove={(evt) => setTooltip(prev => ({ ...prev, x: evt.clientX, y: evt.clientY }))}
+                  onMouseMove={(evt) => {
+                    if (isVisible) {
+                      const tooltipWidth = 180;
+                      const tooltipHeight = 100;
+                      let xPos = evt.clientX + 20;
+                      let yPos = evt.clientY;
+
+                      if (xPos + tooltipWidth > window.innerWidth) xPos = evt.clientX - tooltipWidth - 10;
+                      if (yPos + tooltipHeight > window.innerHeight) yPos = evt.clientY - tooltipHeight;
+                      
+                      setTooltip(prev => ({ ...prev, x: xPos, y: yPos }))
+                    }
+                  }}
                   onMouseLeave={() => setTooltip(prev => ({ ...prev, visible: false }))}
                   style={{
                     default: { fill, stroke: "#ffffff", strokeWidth: 1, outline: "none", transition: "fill 0.2s ease" },
@@ -146,8 +167,8 @@ export function NationalMap({ data, searchQuery = "", selectedRegion = "All" }: 
         <button onClick={() => setIsFullscreen(!isFullscreen)} className="bg-white p-2 rounded-lg shadow-sm border" title="Fullscreen">{isFullscreen ? <ArrowsPointingInIcon className="w-5 h-5" /> : <ArrowsPointingOutIcon className="w-5 h-5" />}</button>
       </div>
 
-      {tooltip.visible && <div className="fixed z-50 bg-white p-3 rounded-xl shadow-lg border pointer-events-none" style={{ left: tooltip.x + 20, top: tooltip.y }} >{tooltip.content}</div>}
-      
+      {tooltip.visible && <div className="fixed z-50 bg-white p-3 rounded-xl shadow-lg border pointer-events-none" style={{ left: tooltip.x, top: tooltip.y }} >{tooltip.content}</div>}
+
       <div className="absolute bottom-4 right-4 w-48 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border text-xs overflow-hidden">
         <button onClick={() => setIsLegendOpen(!isLegendOpen)} className="flex items-center justify-between gap-2 p-2 w-full font-bold text-slate-700">
           <span>Performance Index</span>

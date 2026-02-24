@@ -39,7 +39,7 @@ const AdvisoryPage: React.FC = () => {
   ];
 
   return (
-    <div className="py-16 px-4 md:px-8 max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
       {/* 1. HERO SECTION */}
       <div className="text-center mb-16">
         <h1 className="text-5xl md:text-6xl font-extrabold text-text-heading mb-6 tracking-tight">

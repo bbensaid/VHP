@@ -1,7 +1,6 @@
 /* app/globals.css */
 @import "tailwindcss";
 
-
 @theme {
   /* =========================================
      LAYER 1: BRAND PALETTE (The 5 Pillars)
@@ -28,90 +27,86 @@
   /* =========================================
      LAYER 3: CONTEXTUAL CONTENT (Pillar Mapping)
      ========================================= */
-
-  /* --- Homepage Card Colors --- */
   --color-card-policy: var(--color-brand-orange);
   --color-card-economics: var(--color-brand-green);
   --color-card-tech: var(--color-brand-indigo);
-  --color-card-operations: var(--color-brand-rose); /* New */
-  --color-card-science: var(--color-brand-teal); /* New */
-  --color-card-academy: var(--color-brand-sky);
-  --color-card-advisory: var(--color-brand-violet);
+  --color-card-operations: var(--color-brand-rose); 
+  --color-card-science: var(--color-brand-teal); 
 
-  /* --- Sidebar Title Colors --- */
-  --color-sidebar-policy: var(--color-brand-orange);
-  --color-sidebar-economics: var(--color-brand-green);
-  --color-sidebar-tech: var(--color-brand-indigo);
-  --color-sidebar-operations: var(--color-brand-rose); /* New */
-  --color-sidebar-science: var(--color-brand-teal); /* New */
-
-  --color-sidebar-default: #4b5563;
-
-  /* --- Typography --- */
-  --color-text-heading: #111827;
-  --color-text-body: #4b5563;
-  --color-text-inverse: #ffffff;
-
-  /* --- Surfaces --- */
+  /* =========================================
+     LAYER 4: TYPOGRAPHY & SURFACES
+     ========================================= */
+  --color-text-heading: #111827; 
+  --color-text-body: #4b5563; 
+  --color-text-inverse: #ffffff; 
+  
   --color-surface: #ffffff;
-  --color-surface-muted: #f9fafb;
+  --color-surface-muted: #f8fafc;
 }
 
-/* Base Reset */
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-}
-
-/* Pause on hover */
-.animate-marquee:hover {
-  animation-play-state: paused;
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* ... keep your other global styles ... */
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
+@layer utilities {
+  /* =========================================
+     PHASE 2 FIX: NESTED TAB LAYOUT NEUTRALIZER
+     ========================================= */
+     
+  /* 1. Strip redundant heights and root backgrounds from injected pages */
+  .hub-embedded-view > div {
+    min-height: auto !important;
+    background: transparent !important;
   }
-  100% {
-    transform: translateX(-50%);
+  
+  /* 2. Remove max-w constraints so the inner grid spans the full Hub tab width */
+  .hub-embedded-view .max-w-7xl,
+  .hub-embedded-view .max-w-6xl,
+  .hub-embedded-view .max-w-5xl,
+  .hub-embedded-view .max-w-4xl,
+  .hub-embedded-view .container {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
-}
-
-.animate-marquee {
-  display: flex;
-  width: max-content;
-  /* 1. SLOWED DOWN TO 80s */
-  animation: marquee 80s linear infinite;
-}
-
-/* 2. THE FADE MASK */
-/* This makes the text transparent on the edges so it doesn't hit the label abruptly */
-.mask-linear-fade {
-  mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 100px,
-    black calc(100% - 50px),
-    transparent 100%
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 100px,
-    black calc(100% - 50px),
-    transparent 100%
-  );
+  
+  /* 3. Tame massive vertical paddings from standalone hero headers */
+  .hub-embedded-view .py-12,
+  .hub-embedded-view .py-16,
+  .hub-embedded-view .py-20,
+  .hub-embedded-view .py-24 {
+    padding-top: 1rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  
+  /* 4. Downsize injected H1s to feel like section headers instead of page titles */
+  .hub-embedded-view h1 {
+    font-size: 1.875rem !important; /* text-3xl */
+    line-height: 2.25rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* 5. Neutralize dark hero headers (e.g. ConsultingPage) so they blend into the white tab panel */
+  .hub-embedded-view .bg-slate-900,
+  .hub-embedded-view .bg-blue-900 {
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .hub-embedded-view .bg-slate-900 h1,
+  .hub-embedded-view .bg-blue-900 h1 {
+    color: #111827 !important; /* slate-900 */
+  }
+  .hub-embedded-view .bg-slate-900 p,
+  .hub-embedded-view .bg-blue-900 p {
+    color: #475569 !important; /* slate-600 */
+  }
+  .hub-embedded-view .bg-slate-900 span,
+  .hub-embedded-view .bg-blue-900 span {
+    color: #64748b !important; /* slate-500 */
+  }
+  /* Prevent the text-white override from ruining buttons inside those dark headers */
+  .hub-embedded-view .bg-slate-900 button *,
+  .hub-embedded-view .bg-blue-900 button *,
+  .hub-embedded-view .bg-slate-900 a[class*="bg-"],
+  .hub-embedded-view .bg-blue-900 a[class*="bg-"] {
+    color: #ffffff !important;
+  }
 }

@@ -33,10 +33,9 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
 
   const hideSidebarsCompletely = isStudio || isChatPage;
 
+  // STRICT SINGLE-SOURCE-OF-TRUTH STATE
   const [isLeftSidebarOpen, setLeftSidebarOpen] = useState(true);
   const [isRightSidebarOpen, setRightSidebarOpen] = useState(true);
-  const [isLeftSidebarPinned, setLeftSidebarPinned] = useState(true);
-  const [isRightSidebarPinned, setRightSidebarPinned] = useState(true);
   
   const [leftOpenSections, setLeftOpenSections] = useState<string[]>([]);
   const [rightOpenSections, setRightOpenSections] = useState<string[]>([]);
@@ -48,11 +47,9 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
     const handleToggle = (e: any) => {
       if (e.detail.side === 'left') {
         setLeftSidebarOpen(prev => !prev);
-        setLeftSidebarPinned(prev => !prev);
       }
       if (e.detail.side === 'right') {
         setRightSidebarOpen(prev => !prev);
-        setRightSidebarPinned(prev => !prev);
       }
     };
     window.addEventListener('sidebar-toggle', handleToggle);
@@ -63,14 +60,10 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   useEffect(() => {
     if (hideSidebarsCompletely || isArticle) {
       setLeftSidebarOpen(false);
-      setLeftSidebarPinned(false);
       setRightSidebarOpen(false);
-      setRightSidebarPinned(false);
     } else if (isHomepage) {
       setLeftSidebarOpen(true);
-      setLeftSidebarPinned(true);
       setRightSidebarOpen(true);
-      setRightSidebarPinned(true);
     }
   }, [pathname, hideSidebarsCompletely, isArticle, isHomepage]);
 
@@ -79,11 +72,9 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
     const handleResize = () => {
       if (window.innerWidth < 1024) {
         setLeftSidebarOpen(false);
-        setLeftSidebarPinned(false);
       }
       if (window.innerWidth < 1280) {
         setRightSidebarOpen(false);
-        setRightSidebarPinned(false);
       }
     };
     handleResize();
@@ -137,7 +128,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
       {/* 1. Sticky Navigation Bar */}
       {isStickyBarVisible && (
         <div className="sticky top-28 z-40 h-8 flex justify-center transition-all duration-300 pointer-events-none">
-          <div className="container mx-auto px-4 md:px-0 h-full pointer-events-auto">
+          <div className="w-full px-4 sm:px-6 lg:px-8 h-full pointer-events-auto">
             <div className="h-full flex items-center w-full">
               {showBreadcrumbs && (
                 <div className="flex-shrink-0 flex items-center h-full min-w-[260px]">
@@ -174,13 +165,11 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
       )}
 
       {/* 2. Main Content Area */}
-      <div className="flex flex-col lg:flex-row mt-8 px-4 md:px-0 container mx-auto transition-all relative">
+      <div className="flex flex-col lg:flex-row mt-8 w-full px-4 sm:px-6 lg:px-8 transition-all relative">
         <CollapsibleSidebar
           side="left"
           isOpen={isLeftSidebarOpen}
           setIsOpen={setLeftSidebarOpen}
-          isPinned={isLeftSidebarPinned}
-          setIsPinned={setLeftSidebarPinned}
           stickyTop={sidebarTop}
           expandLabel="Display Sidebar"
           headerContent={
@@ -212,7 +201,11 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           />
         </CollapsibleSidebar>
 
-        <main className={`flex-1 min-w-0 transition-all duration-300 ${isLeftSidebarOpen ? "lg:ml-8" : "ml-0"} ${isRightSidebarOpen ? "lg:mr-8" : "mr-0"}`}>
+        {/* Tighter margins applied here to expand the middle container's room */}
+        <main
+          className={`flex-1 min-w-0 transition-all duration-300 ${isLeftSidebarOpen ? "lg:ml-4" : "ml-0"} ${isRightSidebarOpen ? "lg:mr-4" : "mr-0"}`}
+          style={{ "--sidebar-top": sidebarTop } as React.CSSProperties}
+        >
           {children}
         </main>
 
@@ -220,8 +213,6 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           side="right"
           isOpen={isRightSidebarOpen}
           setIsOpen={setRightSidebarOpen}
-          isPinned={isRightSidebarPinned}
-          setIsPinned={setRightSidebarPinned}
           stickyTop={sidebarTop}
           expandLabel="Vitals"
           headerContent={

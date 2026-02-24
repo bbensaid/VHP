@@ -52,7 +52,7 @@ const companyItems = [
 const Header = () => {
   const pathname = usePathname();
   const isStudio = pathname?.startsWith("/studio");
-  
+
   const [dateString, setDateString] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { isHeaderVisible, setHeaderVisible } = useTicker();
@@ -114,7 +114,8 @@ const Header = () => {
     <header className="sticky top-0 z-50 flex flex-col font-sans shadow-md bg-white">
       {/* 1. TOP BAR */}
       <div className="bg-slate-900 text-slate-300 text-[11px] font-bold tracking-wider uppercase py-2 border-b border-slate-800 w-full relative z-50">
-        <div className="container mx-auto px-4 md:px-8 flex items-center h-full gap-6 lg:gap-8">
+        {/* PHASE 1 FIX: Standardized Grid Wrapper */}
+        <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center h-full gap-6 lg:gap-8">
           <div className="hidden lg:block opacity-80 whitespace-nowrap">
             <span>{dateString}</span>
           </div>
@@ -192,7 +193,8 @@ const Header = () => {
 
       {/* 2. MAIN NAV BAR */}
       <div className="bg-white py-2 border-b border-slate-200 w-full relative z-40">
-        <div className="container mx-auto px-4 md:px-8 flex items-center justify-between gap-4">
+        {/* PHASE 1 FIX: Standardized Grid Wrapper */}
+        <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center justify-between gap-4">
           
           {/* LEFT SIDEBAR TOGGLE */}
           <div className="w-10 flex-shrink-0">
@@ -212,33 +214,42 @@ const Header = () => {
               <Logo />
             </Link>
 
-            <nav className="hidden xl:flex items-center gap-10 ml-10 h-8">
+            {/* UPDATED NAV ORDER */}
+            <nav className="hidden xl:flex items-center gap-10 ml-20 h-8">
               <NavDropdown label="POLICY" items={policyItems} pillar="policy" />
               <NavDropdown label="ECONOMICS" items={economicsItems} pillar="economics" />
               <NavDropdown label="TECHNOLOGY" items={technologyItems} pillar="technology" />
             </nav>
           </div>
 
-          <div className="hidden md:flex flex-1 max-w-xl">
+          <div className="hidden md:flex flex-1 pr-4 md:pr-8 xl:pr-0">
             <div className="relative w-full">
-              <input
-                type="text"
-                placeholder="Search Intelligence Platform..."
-                className="w-full px-4 py-2 pl-10 border border-slate-200 rounded-full text-sm bg-slate-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all shadow-sm"
-              />
-              <svg
-                className="w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+              <button
+                onClick={() => {
+                  window.dispatchEvent(
+                    new KeyboardEvent("keydown", { key: "k", metaKey: true })
+                  );
+                }}
+                className="w-full flex items-center px-4 py-2 border border-slate-200 rounded-full text-sm bg-slate-50 text-slate-400 hover:bg-white hover:border-slate-300 hover:shadow-sm transition-all text-left"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
+                <svg
+                  className="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+                Search Intelligence Platform...
+                <span className="absolute right-3 text-xs font-bold bg-white border border-slate-200 px-2 py-0.5 rounded shadow-sm hidden sm:block">
+                  ⌘K
+                </span>
+              </button>
             </div>
           </div>
 

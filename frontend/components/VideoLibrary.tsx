@@ -80,7 +80,7 @@ export default function VideoLibrary({ allVideos }: { allVideos: any[] }) {
   }, [searchQuery, activeFilters, videosByPillar, pillarOrder]);
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
       <header className="mb-12 border-b border-slate-200 pb-12">
         <h1 className="text-4xl font-black tracking-tight text-slate-900 mb-2 uppercase">
           Video Library
