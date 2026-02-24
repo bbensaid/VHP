@@ -51,14 +51,12 @@ interface HomeSidebarProps {
   openSections: string[];
   onToggleSection: (section: string) => void;
   onNavigate?: () => void;
-  onCollapseAll?: () => void;
 }
 
 export default function HomeSidebar({
   openSections,
   onToggleSection,
   onNavigate,
-  onCollapseAll,
 }: HomeSidebarProps) {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const topSentinelRef = useRef<HTMLDivElement>(null);
@@ -194,15 +192,6 @@ export default function HomeSidebar({
 
       {/* FOOTER ACTIONS */}
       <div className="sticky bottom-0 bg-white pt-4 pb-6 mt-auto border-t border-slate-100 z-20 -mx-4 px-4 -mb-4">
-        {onCollapseAll && (
-          <button
-            onClick={onCollapseAll}
-            className="w-full flex items-center justify-center gap-2 rounded-lg bg-white border border-slate-200 hover:bg-slate-50 text-slate-600 font-bold text-xs py-2.5 transition-colors mb-3 shadow-sm"
-          >
-            Collapse All Menus
-          </button>
-        )}
-
         <button
           onClick={scrollToTop}
           className={`w-full flex items-center justify-center gap-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-900 transition-all duration-300 text-[10px] font-bold uppercase tracking-wider overflow-hidden ${
