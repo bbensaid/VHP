@@ -13,9 +13,8 @@ export default function Breadcrumbs() {
   const segments = pathname.split('/').filter(item => item !== '');
 
   return (
-    <nav aria-label="Breadcrumb" className="w-full bg-white border-b border-slate-100 py-3">
-      <div className="container mx-auto px-4 md:px-8">
-        <ol className="flex items-center space-x-2 text-sm text-slate-500">
+    <nav aria-label="Breadcrumb" className="flex items-center h-full">
+      <ol className="flex items-center space-x-2 text-xs font-medium text-slate-500 bg-white/90 backdrop-blur px-3 py-1.5 rounded-full border border-slate-200 shadow-sm">
           
           {/* Home Link */}
           <li>
@@ -52,7 +51,6 @@ export default function Breadcrumbs() {
             );
           })}
         </ol>
-      </div>
     </nav>
   );
 }

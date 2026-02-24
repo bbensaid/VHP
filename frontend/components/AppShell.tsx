@@ -108,8 +108,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
 
   const showBreadcrumbs = !isStudio; 
   const hasTickerData = !!activeTickerData;
-  const showTicker = hasTickerData && isStripVisible && !isStudio;
-  const showRestore = hasTickerData && !isStripVisible && !isStudio;
+  const showTicker = hasTickerData && !isStudio;
   const isStickyBarVisible = showBreadcrumbs || showTicker;
   const sidebarTop = isStickyBarVisible ? "9rem" : "7rem";
 
@@ -137,27 +136,18 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
               )}
 
               {showTicker && (
-                <div className="flex-1 flex items-center h-full min-w-0 ml-24">
-                  <div className="flex-1 min-w-0 h-full">
-                    <TickerStrip tickerData={activeTickerData} transparent={true} />
+                <div className={`hidden lg:flex flex-1 items-center justify-center h-full min-w-0 ml-16 transition-all duration-300 ${isRightSidebarOpen ? "mr-[19rem]" : ""}`}>
+                  <div className="flex items-center w-full h-full">
+                    <div className="flex-1 min-w-0 h-full">
+                      <TickerStrip 
+                        tickerData={activeTickerData} 
+                        transparent={true} 
+                        isVisible={isStripVisible}
+                        onToggle={() => setStripVisible(!isStripVisible)}
+                      />
+                    </div>
                   </div>
-                  <button
-                    onClick={() => setStripVisible(false)}
-                    className="h-6 w-6 flex items-center justify-center text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors cursor-pointer ml-2 rounded-full border border-slate-200"
-                    title="Dismiss Ticker"
-                  >
-                    <XMarkIcon className="w-3 h-3" />
-                  </button>
                 </div>
-              )}
-
-              {showRestore && (
-                <button
-                  onClick={() => setStripVisible(true)}
-                  className="ml-auto flex items-center gap-2 text-[10px] font-bold text-slate-500 hover:text-indigo-600 uppercase tracking-wider transition-colors bg-white/90 backdrop-blur px-3 py-1 rounded-full border border-slate-200 shadow-sm"
-                >
-                  <ArrowPathIcon className="w-3 h-3" /> Restore Vitals
-                </button>
               )}
             </div>
           </div>
@@ -172,26 +162,6 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           setIsOpen={setLeftSidebarOpen}
           stickyTop={sidebarTop}
           expandLabel="Display Sidebar"
-          headerContent={
-            <>
-              {leftOpenSections.length < HOME_SECTIONS.length && (
-                <button
-                  onClick={() => setLeftOpenSections(HOME_SECTIONS)}
-                  className="text-[10px] font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-wider transition-colors"
-                >
-                  Expand All
-                </button>
-              )}
-              {leftOpenSections.length > 0 && (
-                <button
-                  onClick={() => setLeftOpenSections([])}
-                  className="text-[10px] font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-wider transition-colors"
-                >
-                  Collapse All
-                </button>
-              )}
-            </>
-          }
         >
           <HomeSidebar
             openSections={leftOpenSections}
@@ -215,26 +185,6 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           setIsOpen={setRightSidebarOpen}
           stickyTop={sidebarTop}
           expandLabel="Vitals"
-          headerContent={
-            <>
-              {rightOpenSections.length < RIGHT_SECTIONS.length && (
-                <button
-                  onClick={() => setRightOpenSections(RIGHT_SECTIONS)}
-                  className="text-[10px] font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-wider transition-colors"
-                >
-                  Expand All
-                </button>
-              )}
-              {rightOpenSections.length > 0 && (
-                <button
-                  onClick={() => setRightOpenSections([])}
-                  className="text-[10px] font-bold text-slate-400 hover:text-indigo-600 uppercase tracking-wider transition-colors"
-                >
-                  Collapse All
-                </button>
-              )}
-            </>
-          }
         >
           <RightSidebar
             openSections={rightOpenSections}
