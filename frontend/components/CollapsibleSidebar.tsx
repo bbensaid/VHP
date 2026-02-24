@@ -3,6 +3,9 @@
 import React from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
+const COLLAPSED_WIDTH = "2.5rem";
+const TRANSITION_DURATION = "duration-300";
+
 interface CollapsibleSidebarProps {
   side: "left" | "right";
   isOpen: boolean;
@@ -38,7 +41,7 @@ export default function CollapsibleSidebar({
       {/* WRAPPER: Handles Width & Sticky Positioning */}
       <div
         className={`
-          transition-all duration-300 ease-in-out flex-shrink-0 z-50
+          transition-all ${TRANSITION_DURATION} ease-in-out flex-shrink-0 z-50
           flex flex-col
           fixed lg:sticky
           ${isLeft ? "left-0" : "right-0"}
@@ -53,8 +56,8 @@ export default function CollapsibleSidebar({
         <div className="w-full h-full relative">
           {/* ACTUAL SIDEBAR CONTENT */}
           <aside className={`
-            absolute inset-0 bg-white border-slate-200 flex flex-col overflow-hidden
-            ${isLeft ? "border-r" : "border-l"}
+            absolute inset-0 bg-white border-slate-200 flex flex-col overflow-hidden border-t
+            ${isLeft ? "rounded-tl-xl border-r" : "rounded-tr-xl border-l"}
             ${isOpen ? "opacity-100 shadow-2xl lg:shadow-none" : "opacity-0 border-none"}
           `}>
             <div className="w-[85vw] md:w-72 h-full flex flex-col relative">
@@ -94,11 +97,11 @@ export default function CollapsibleSidebar({
       {!isOpen && (
         <div
           onClick={() => setIsOpen(true)}
-          className={`hidden lg:flex flex-col items-center py-4 border-slate-200 bg-slate-50 cursor-pointer hover:bg-slate-100 transition-colors z-40 fixed lg:sticky ${isLeft ? "left-0 border-r" : "right-0 border-l"}`}
+          className={`hidden lg:flex flex-col items-center py-4 border-slate-200 bg-slate-50 cursor-pointer hover:bg-slate-100 transition-colors z-40 fixed lg:sticky border-t ${isLeft ? "left-0 border-r rounded-tl-xl" : "right-0 border-l rounded-tr-xl"}`}
           style={{
             top: stickyTop,
             height: `calc(100vh - ${stickyTop})`,
-            width: "2.5rem"
+            width: COLLAPSED_WIDTH
           }}
           title={expandLabel}
         >

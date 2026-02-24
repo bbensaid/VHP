@@ -170,7 +170,6 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
             openSections={leftOpenSections}
             onToggleSection={toggleLeftSection}
             onNavigate={handleSidebarLinkClick}
-            onCollapseAll={() => setLeftOpenSections([])}
           />
         </CollapsibleSidebar>
 
@@ -187,7 +186,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           isOpen={isRightSidebarOpen}
           setIsOpen={setRightSidebarOpen}
           stickyTop={sidebarTop}
-          expandLabel="Vitals"
+          expandLabel="Display Sidebar"
         >
           <RightSidebar
             openSections={rightOpenSections}
