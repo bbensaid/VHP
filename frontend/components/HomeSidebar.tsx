@@ -10,6 +10,7 @@ import {
   ChevronUpIcon,
   FilmIcon,
   ArrowTrendingUpIcon,
+  LightBulbIcon,
 } from "@heroicons/react/24/outline";
 
 // Preserved content links (kept in the file per your instructions to not lose content)
@@ -184,6 +185,19 @@ export default function HomeSidebar({
               </div>
               <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
                 Trending Topics
+              </span>
+            </Link>
+
+            <Link
+              href="/hti-dashboard"
+              onClick={onNavigate}
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
+            >
+              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden flex-shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+                <LightBulbIcon className="w-5 h-5" />
+              </div>
+              <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
+                Ideas Lab
               </span>
             </Link>
           </div>

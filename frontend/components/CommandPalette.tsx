@@ -10,7 +10,9 @@ import {
   DocumentTextIcon,
   ArrowRightIcon,
   HomeIcon,
-  MapIcon
+  MapIcon,
+  BeakerIcon,
+  ScaleIcon
 } from "@heroicons/react/24/outline";
 
 // --- CONFIGURATION ---
@@ -30,10 +32,13 @@ const COMMANDS: CommandItem[] = [
   { id: "nav-1", title: "Economics Monitor", category: "Navigation", href: "/economics", icon: ChartBarIcon, shortcut: "E" },
   { id: "nav-2", title: "Policy Analysis", category: "Navigation", href: "/policy", icon: BuildingLibraryIcon, shortcut: "P" },
   { id: "nav-3", title: "Technology Radar", category: "Navigation", href: "/technology", icon: GlobeAmericasIcon, shortcut: "T" },
+  { id: "nav-4", title: "Clinical Intelligence", category: "Navigation", href: "/clinical", icon: BeakerIcon, shortcut: "C" },
+  { id: "nav-5", title: "Health Equity", category: "Navigation", href: "/equity", icon: ScaleIcon, shortcut: "Q" },
   
   // DASHBOARD TOOLS
   { id: "dash-1", title: "National Dashboard", category: "Navigation", href: "/dashboard", icon: MapIcon },
   { id: "dash-2", title: "Investment Tracker", category: "Navigation", href: "/economics/investment", icon: DocumentTextIcon },
+  { id: "dash-3", title: "HTI Simulator", category: "Tool", href: "/hti-dashboard", icon: ChartBarIcon },
   
   // SHORTCUTS (States)
   { id: "st-1", title: "Vermont Profile", category: "State", href: "/dashboard/vermont", icon: ArrowRightIcon },

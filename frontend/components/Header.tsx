@@ -39,6 +39,18 @@ const technologyItems = [
   { href: "/technology/workflow", label: "Tech-Enabled Workflow" },
 ];
 
+const clinicalItems = [
+  { label: "Hospital-at-Home", href: "/clinical/hah" },
+  { label: "Precision Medicine", href: "/clinical/precision" },
+  { label: "Virtual Care Models", href: "/clinical/virtual" }
+];
+
+const equityItems = [
+  { label: "SDOH Integration", href: "/equity/sdoh" },
+  { label: "Algorithmic Bias", href: "/equity/bias" },
+  { label: "Access Disparity", href: "/equity/access" }
+];
+
 const companyItems = [
   { href: "/about", label: "About Us" },
   { href: "/mission", label: "Mission & Vision" },
@@ -224,6 +236,8 @@ const Header = () => {
                 <NavDropdown label="POLICY" items={policyItems} pillar="policy" />
                 <NavDropdown label="ECONOMICS" items={economicsItems} pillar="economics" />
                 <NavDropdown label="TECHNOLOGY" items={technologyItems} pillar="technology" />
+                <NavDropdown label="CLINICAL" items={clinicalItems} pillar="clinical" />
+                <NavDropdown label="EQUITY" items={equityItems} pillar="equity" />
               </nav>
             </div>
 
@@ -322,6 +336,34 @@ const Header = () => {
                 TECHNOLOGY
               </div>
               {technologyItems.map((i) => (
+                <Link
+                  key={i.href}
+                  href={i.href}
+                  className="block pl-4 text-sm text-slate-600 py-1"
+                >
+                  {i.label}
+                </Link>
+              ))}
+            </div>
+            <div className="space-y-2">
+              <div className="font-bold text-slate-900 pt-2 border-t border-slate-100 mt-2">
+                CLINICAL
+              </div>
+              {clinicalItems.map((i) => (
+                <Link
+                  key={i.href}
+                  href={i.href}
+                  className="block pl-4 text-sm text-slate-600 py-1"
+                >
+                  {i.label}
+                </Link>
+              ))}
+            </div>
+            <div className="space-y-2">
+              <div className="font-bold text-slate-900 pt-2 border-t border-slate-100 mt-2">
+                EQUITY
+              </div>
+              {equityItems.map((i) => (
                 <Link
                   key={i.href}
                   href={i.href}
