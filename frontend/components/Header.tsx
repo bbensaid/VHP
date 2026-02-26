@@ -40,15 +40,19 @@ const technologyItems = [
 ];
 
 const clinicalItems = [
+  { label: "Clinical Hub (Overview)", href: "/clinical" },
   { label: "Hospital-at-Home", href: "/clinical/hah" },
   { label: "Precision Medicine", href: "/clinical/precision" },
-  { label: "Virtual Care Models", href: "/clinical/virtual" }
+  { label: "Virtual Care Models", href: "/clinical/virtual" },
+  { label: "Population Health", href: "/clinical/population" }
 ];
 
 const equityItems = [
+  { label: "Equity Hub (Overview)", href: "/equity" },
   { label: "SDOH Integration", href: "/equity/sdoh" },
   { label: "Algorithmic Bias", href: "/equity/bias" },
-  { label: "Access Disparity", href: "/equity/access" }
+  { label: "Access Disparity", href: "/equity/access" },
+  { label: "Community Engagement", href: "/equity/community" }
 ];
 
 const companyItems = [

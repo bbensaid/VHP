@@ -2,20 +2,20 @@ import React from "react";
 
 export default function Page() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12">
-      <div className="mb-8">
+    <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="mb-12">
         <span className="text-sm font-bold text-purple-600 uppercase tracking-wider">
           Equity / Social Data
         </span>
         <h1 className="text-4xl font-black text-slate-900 mt-2 mb-4">
           The Algorithmic Bridge: Integrating SDOH into Clinical Data Streams
         </h1>
-        <p className="text-xl text-slate-600 leading-relaxed">
+        <p className="text-xl text-slate-600 leading-relaxed max-w-3xl">
           A strategic framework for the Vermont ADS to bridge the gap between social services and clinical outcomes by standardizing Z-code data ingestion and geospatial social risk mapping.
         </p>
       </div>
 
-      <div className="prose prose-slate max-w-none">
+      <div className="prose prose-slate max-w-4xl">
         <p>
           As CTO, I recognize that 80% of health outcomes are determined outside the clinical perimeter. Our mission at ADS is to treat social data—housing stability, food security, and transportation access—with the same technical rigor as a laboratory result. By architecting a unified data lake that ingests Z-codes from primary care and matches them with state social service datasets, we can create a high-fidelity 'Social Risk Index' that drives preventive resource allocation before a crisis occurs.
         </p>

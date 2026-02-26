@@ -3,7 +3,7 @@ import React from "react";
 export default function Page() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
-      <div className="mb-8">
+      <div className="mb-12">
         <span className="text-sm font-bold text-rose-600 uppercase tracking-wider">
           Clinical / Telehealth
         </span>
