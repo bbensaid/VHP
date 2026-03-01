@@ -6,6 +6,10 @@ import VideoBlock from "./VideoBlock";
 import AudioBlock from "./AudioBlock";
 import PrintButton from "@/components/PrintButton";
 import ListenButton from "@/components/ListenButton";
+import ShareButton from "@/components/ShareButton";
+import CitationButton from "@/components/CitationButton";
+import SaveToPdfButton from "@/components/SaveToPdfButton";
+import FontSizeToggle from "@/components/FontSizeToggle";
 
 // Helper to style based on Pillar
 const getTheme = (pillar: string) => {
@@ -26,6 +30,8 @@ const getTheme = (pillar: string) => {
       return { badge: "bg-gray-100 text-gray-800", text: "text-gray-800" };
   }
 };
+
+const slugify = (text: string) => text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
 
 export default async function ArticlePageTemplate({
   params,
@@ -121,12 +127,45 @@ export default async function ArticlePageTemplate({
     .join(" ") || "";
   const readText = `${article.title}. ${article.summary}. ${plainTextBody}`;
 
+  // Extract headings for Table of Contents
+  const headings = mainContent
+    .filter((block: any) => block._type === 'block' && ['h2', 'h3'].includes(block.style))
+    .map((block: any) => {
+      const text = block.children?.map((c: any) => c.text).join('') || '';
+      return {
+        text,
+        id: slugify(text),
+        level: block.style
+      };
+    });
+
   return (
     <>
       <div className="flex flex-col lg:flex-row gap-8 max-w-7xl mx-auto px-4 md:px-8 py-12">
         {/* Left Sidebar */}
         <aside className="order-2 lg:order-1 lg:w-1/4 w-full">
           <div className="sticky space-y-6" style={{ top: "calc(var(--sidebar-top, 10rem) + 1rem)" }}>
+            
+            {/* Table of Contents */}
+            {headings.length > 0 && (
+              <div className="p-5 bg-white rounded-xl border border-slate-200 shadow-sm hidden lg:block">
+                <h3 className="font-bold text-slate-900 uppercase tracking-wider text-xs mb-4 border-b border-slate-100 pb-2">
+                  Contents
+                </h3>
+                <nav>
+                  <ul className="space-y-2.5">
+                    {headings.map((heading: any) => (
+                      <li key={heading.id} className={heading.level === 'h3' ? 'pl-3 border-l-2 border-slate-100' : ''}>
+                        <a href={`#${heading.id}`} className={`text-sm block leading-snug transition-colors ${heading.level === 'h3' ? 'text-slate-500 hover:text-indigo-600' : 'text-slate-700 font-medium hover:text-indigo-600'}`}>
+                          {heading.text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </div>
+            )}
+
             <div id="video-content" style={{ scrollMarginTop: "calc(var(--sidebar-top, 8rem) + 1rem)" }}>
               {videoElements.map((video: any, index: number) => (
                 <VideoBlock key={video._key} value={video} />
@@ -144,7 +183,16 @@ export default async function ArticlePageTemplate({
         </aside>
 
         {/* Main Content */}
-        <article className="order-1 lg:order-2 w-full lg:w-3/4">
+        <article id="article-content" className="order-1 lg:order-2 w-full lg:w-3/4">
+          <div className="mb-8" data-html2canvas-ignore="true">
+            <Link
+              href={article.pillar ? `/${article.pillar.toLowerCase()}` : "/"}
+              className="text-sm font-bold text-slate-500 hover:text-indigo-600 flex items-center gap-2 transition-colors"
+            >
+              &larr; Back to {article.pillar || "Intelligence Feed"}
+            </Link>
+          </div>
+
           <header className="mb-10 border-b border-gray-200 pb-10">
             <div className="flex items-center gap-3 mb-6">
               {article.pillar && (
@@ -168,6 +216,10 @@ export default async function ArticlePageTemplate({
                   </span>
                 )}
                 <ListenButton text={readText} />
+                <ShareButton title={article.title} summary={article.summary} />
+                <CitationButton title={article.title} publishedAt={article.publishedAt} />
+                <SaveToPdfButton elementId="article-content" filename={`${id}.pdf`} />
+                <FontSizeToggle targetId="article-body" />
                 <PrintButton />
               </div>
             </div>
@@ -196,15 +248,17 @@ export default async function ArticlePageTemplate({
             </figure>
           )}
 
-          <div className="prose prose-lg prose-indigo max-w-none">
+          <div id="article-body" className="prose prose-lg prose-indigo max-w-none transition-all duration-200">
             <ArticleContent body={mainContent} />
           </div>
 
           {article.relatedArticles && article.relatedArticles.length > 0 && (
-            <div className="mt-16 pt-10 border-t border-gray-200">
+            <div className="mt-16 pt-10 border-t border-gray-200" data-html2canvas-ignore="true">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Related Analysis</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {article.relatedArticles.map((related: any) => {
+                  if (!related.slug?.current) return null;
+
                   const href = related.pillar?.toLowerCase() === "economics" 
                     ? `/economics/${related.slug.current}` 
                     : `/${related.pillar?.toLowerCase() || 'policy'}/analysis/${related.slug.current}`;
@@ -231,12 +285,12 @@ export default async function ArticlePageTemplate({
             </div>
           )}
 
-          <div className="mt-20 pt-10 border-t border-gray-200">
+          <div className="mt-20 pt-10 border-t border-gray-200" data-html2canvas-ignore="true">
             <Link
-              href="/"
+              href={article.pillar ? `/${article.pillar.toLowerCase()}` : "/"}
               className="text-gray-500 hover:text-indigo-600 font-bold flex items-center gap-2"
             >
-              &larr; Back to Intelligence Feed
+              &larr; Back to {article.pillar || "Intelligence Feed"}
             </Link>
           </div>
         </article>
