@@ -1,31 +1,33 @@
 import React from "react";
 import Link from "next/link";
+import HubSubscribeCTA from "@/components/HubSubscribeCTA";
+import LatestHubReports from "@/components/LatestHubReports";
 
 export default function Page() {
   const topics = [
     { 
       label: 'SDOH Integration', href: '/equity/sdoh',
-      description: 'Integrating social determinants data into clinical workflows.',
-      details: ['Z-Code Standardization', 'Community Data Exchange', 'ROI of Social Interventions'],
-      scope: 'Explores the technical and operational challenges of incorporating social data into care delivery. We cover Z-code utilization, the development of Community Information Exchanges (CIE), and the interoperability standards required to share SDOH data between clinical and community-based organizations.'
+      description: 'Addressing social drivers of health outcomes.',
+      details: ['Housing', 'Food Security', 'Transportation'],
+      scope: 'Strategies for integrating Social Determinants of Health (SDOH) data into clinical workflows and reimbursement models.'
     },
     { 
       label: 'Algorithmic Bias', href: '/equity/bias',
-      description: 'Auditing healthcare algorithms for racial, gender, and socioeconomic bias.',
-      details: ['Model Auditing & Fairness', 'Proxy Variable Analysis', 'Ethical AI Frameworks'],
-      scope: 'Investigates the sources of bias in clinical decision support systems and predictive models. We analyze the impact of proxy variables (like cost) on health equity and review frameworks for algorithmic auditing. This section also tracks regulatory guidance on AI fairness in healthcare.'
+      description: 'Ensuring fairness in AI and clinical algorithms.',
+      details: ['AI Ethics', 'Bias Audits', 'Inclusive Data'],
+      scope: 'Investigating bias in healthcare algorithms and AI tools, with a focus on regulatory standards and ethical AI deployment.'
     },
     { 
       label: 'Access Disparity', href: '/equity/access',
-      description: 'Mapping and mitigating barriers to healthcare access.',
-      details: ['Geospatial Analysis', 'Digital Divide', 'Transportation Barriers'],
-      scope: 'Uses geospatial analysis to identify healthcare deserts and access barriers. We examine the impact of hospital closures on rural communities, the digital divide in telehealth adoption, and transportation challenges. Strategies for mobile health units and broadband expansion are also covered.'
+      description: 'Closing gaps in rural and underserved care.',
+      details: ['Rural Health', 'Medicaid Access', 'Safety Net'],
+      scope: 'Analysis of healthcare access barriers in rural and urban underserved communities, including provider shortages and insurance coverage gaps.'
     },
     { 
       label: 'Community Engagement', href: '/equity/community',
-      description: 'Building trust and co-designing health interventions with communities.',
-      details: ['Trust-Building Initiatives', 'Co-Design Methodologies', 'Community Health Workers'],
-      scope: 'Focuses on methodologies for authentic community partnership. We explore the role of Community Health Workers (CHWs), strategies for building trust in marginalized populations, and the practice of co-designing health interventions. This includes measuring the impact of community engagement on health outcomes.'
+      description: 'Building trust and partnerships with local communities.',
+      details: ['CBO Partnerships', 'Health Literacy', 'Trust Building'],
+      scope: 'Best practices for engaging communities in health initiatives, building trust, and partnering with Community-Based Organizations (CBOs).'
     }
   ];
 
@@ -39,7 +41,7 @@ export default function Page() {
           Equity Hub
         </h1>
         <p className="text-xl text-slate-600 max-w-3xl">
-          Addressing systemic disparities through data-driven social determinants of health strategies.
+          Ensuring fair and just opportunities for health across all populations.
         </p>
       </div>
       
@@ -65,6 +67,14 @@ export default function Page() {
           </Link>
         ))}
       </div>
+
+      <LatestHubReports pillar="Equity" colorClass="text-purple-600" />
+
+      <HubSubscribeCTA 
+        pillar="Equity" 
+        bgClass="bg-purple-50" 
+        buttonClass="bg-purple-600 hover:bg-purple-700" 
+      />
     </div>
   );
 }

@@ -259,9 +259,7 @@ export default async function ArticlePageTemplate({
                 {article.relatedArticles.map((related: any) => {
                   if (!related.slug?.current) return null;
 
-                  const href = related.pillar?.toLowerCase() === "economics" 
-                    ? `/economics/${related.slug.current}` 
-                    : `/${related.pillar?.toLowerCase() || 'policy'}/analysis/${related.slug.current}`;
+                  const href = `/${(related.pillar || 'policy').toLowerCase()}/${related.slug.current}`;
                   
                   return (
                     <Link 

@@ -1,31 +1,33 @@
 import React from "react";
 import Link from "next/link";
+import HubSubscribeCTA from "@/components/HubSubscribeCTA";
+import LatestHubReports from "@/components/LatestHubReports";
 
 export default function Page() {
   const topics = [
     { 
       label: 'Hospital-at-Home', href: '/clinical/hah',
-      description: 'Decentralizing acute care delivery through remote monitoring and rapid response logistics.',
-      details: ['Remote Patient Monitoring', 'Logistics & Supply Chain', 'Clinical Protocols'],
-      scope: 'This module covers the operational and clinical frameworks required to implement acute care in the home setting. It includes analysis of CMS waiver requirements, patient safety monitoring protocols, and the logistics of supply chain management for decentralized care delivery. We also examine the economic viability of these models compared to traditional inpatient care.'
+      description: 'Acute care delivery in the home setting.',
+      details: ['CMS Waiver', 'Remote Monitoring', 'Logistics'],
+      scope: 'Examining the clinical and operational expansion of Hospital-at-Home programs, including regulatory waivers and patient safety outcomes.'
     },
     { 
       label: 'Precision Medicine', href: '/clinical/precision',
-      description: 'Leveraging genomic data and biomarkers to tailor therapeutic strategies.',
-      details: ['Genomic Data Integration', 'Biomarker Discovery', 'Targeted Therapeutics'],
-      scope: 'Focuses on the integration of genomic data into clinical workflows. We explore the ethical implications, data storage challenges, and the economic impact of targeted therapies on health system formularies. Key topics include pharmacogenomics and the development of clinical decision support tools for genetic insights.'
+      description: 'Genomics and personalized treatment plans.',
+      details: ['Genomics', 'Targeted Therapies', 'Biomarkers'],
+      scope: 'Updates on the integration of genomic data into clinical practice, advancements in targeted therapies, and the economics of precision medicine.'
     },
     { 
       label: 'Virtual Care Models', href: '/clinical/virtual',
-      description: 'Next-generation synchronous and asynchronous care platforms.',
-      details: ['Tele-ICU & Specialty Consults', 'Asynchronous Communication', 'Platform Interoperability'],
-      scope: 'Examines the evolution of telehealth beyond simple video visits. Topics include asynchronous care platforms, remote physical examinations, and the integration of peripheral devices for comprehensive virtual care. We also analyze reimbursement trends and the shift towards "virtual-first" health plans.'
+      description: 'Hybrid care delivery and virtual nursing.',
+      details: ['Virtual Nursing', 'Asynchronous Care', 'Tele-ICU'],
+      scope: 'Analysis of evolving virtual care models beyond basic telehealth, including virtual nursing units, tele-ICU, and asynchronous specialty consults.'
     },
     { 
       label: 'Population Health', href: '/clinical/population',
-      description: 'Data-driven approaches to improve health outcomes for entire patient populations.',
-      details: ['Risk Stratification', 'Care Gap Analysis', 'Predictive Analytics'],
-      scope: 'Deep dive into the analytics and strategies used to manage the health of defined populations. Includes risk stratification methodologies, care gap analysis, and the use of predictive modeling to prevent adverse events. We also look at the intersection of clinical data and social determinants in population management.'
+      description: 'Managing chronic disease at scale.',
+      details: ['Chronic Care Mgmt', 'Preventive Screenings', 'Risk Stratification'],
+      scope: 'Strategies for managing large patient populations, improving chronic disease outcomes, and implementing effective preventive care programs.'
     }
   ];
 
@@ -33,13 +35,13 @@ export default function Page() {
     <div className="max-w-7xl mx-auto px-6 py-12">
       <div className="mb-12">
         <span className="text-sm font-bold text-rose-600 uppercase tracking-wider">
-          Clinical Intelligence
+          Clinical Innovation
         </span>
         <h1 className="text-4xl font-black text-slate-900 mt-2 mb-4">
           Clinical Hub
         </h1>
         <p className="text-xl text-slate-600 max-w-3xl">
-          Advanced clinical frameworks, care delivery models, and medical intelligence.
+          Advancing care delivery through innovation, precision, and new care models.
         </p>
       </div>
       
@@ -65,6 +67,14 @@ export default function Page() {
           </Link>
         ))}
       </div>
+
+      <LatestHubReports pillar="Clinical" colorClass="text-rose-600" />
+
+      <HubSubscribeCTA 
+        pillar="Clinical" 
+        bgClass="bg-rose-50" 
+        buttonClass="bg-rose-600 hover:bg-rose-700" 
+      />
     </div>
   );
 }

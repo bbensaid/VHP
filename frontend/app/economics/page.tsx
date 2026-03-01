@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import HubSubscribeCTA from "@/components/HubSubscribeCTA";
+import LatestHubReports from "@/components/LatestHubReports";
 
 export default function Page() {
   const topics = [
@@ -65,6 +67,14 @@ export default function Page() {
           </Link>
         ))}
       </div>
+
+      <LatestHubReports pillar="Economics" colorClass="text-emerald-600" />
+
+      <HubSubscribeCTA 
+        pillar="Economics" 
+        bgClass="bg-emerald-50" 
+        buttonClass="bg-emerald-600 hover:bg-emerald-700" 
+      />
     </div>
   );
 }
