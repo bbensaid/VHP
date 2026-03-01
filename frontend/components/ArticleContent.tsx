@@ -11,8 +11,20 @@ function urlFor(source: any) {
   return builder.image(source);
 }
 
+const slugify = (text: string) => text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+
 const ptComponents: PortableTextComponents = {
   block: {
+    h2: ({ children, value }) => {
+      const text = value.children?.map((c: any) => c.text).join('') || '';
+      const id = slugify(text);
+      return <h2 id={id} className="scroll-mt-32">{children}</h2>;
+    },
+    h3: ({ children, value }) => {
+      const text = value.children?.map((c: any) => c.text).join('') || '';
+      const id = slugify(text);
+      return <h3 id={id} className="scroll-mt-32">{children}</h3>;
+    },
     quote: ({ children }) => (
       <blockquote className="border-l-4 border-indigo-600 pl-6 italic text-xl text-slate-700 my-8 bg-slate-50 py-6 pr-6 rounded-r-lg">
         {children}
