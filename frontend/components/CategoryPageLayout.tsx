@@ -34,7 +34,7 @@ export default async function CategoryPageLayout(props: CategoryPageLayoutProps)
   
   if (!resolvedSlug && props.params) {
     const resolvedParams = props.params instanceof Promise ? await props.params : props.params;
-    resolvedSlug = resolvedParams?.slug;
+    resolvedSlug = resolvedParams?.slug || resolvedParams?.category;
   }
 
   if (!resolvedSlug) return null;

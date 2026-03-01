@@ -4,6 +4,8 @@ import { client } from "@/lib/sanity";
 import ArticleContent from "./ArticleContent";
 import VideoBlock from "./VideoBlock";
 import AudioBlock from "./AudioBlock";
+import PrintButton from "@/components/PrintButton";
+import ListenButton from "@/components/ListenButton";
 
 // Helper to style based on Pillar
 const getTheme = (pillar: string) => {
@@ -33,6 +35,7 @@ export default async function ArticlePageTemplate({
   const { id } = await params;
 
   const query = `*[_type == "policyAnalysis" && slug.current == $slug][0]{
+    _id,
     title,
     summary,
     publishedAt,
@@ -68,6 +71,14 @@ export default async function ArticlePageTemplate({
         ...,
         asset->{url}
       }
+    },
+    "relatedArticles": *[_type == "policyAnalysis" && pillar == ^.pillar && _id != ^._id] | order(publishedAt desc)[0...2] {
+      _id,
+      title,
+      slug,
+      publishedAt,
+      pillar,
+      summary
     }
   }`;
 
@@ -102,6 +113,13 @@ export default async function ArticlePageTemplate({
     article.body?.filter((block: any) => block._type === "audio") || [];
   const mainContent =
     article.body || [];
+
+  // Extract plain text for the speech synthesizer
+  const plainTextBody = article.body
+    ?.filter((b: any) => b._type === "block")
+    .map((b: any) => b.children?.map((c: any) => c.text).join(""))
+    .join(" ") || "";
+  const readText = `${article.title}. ${article.summary}. ${plainTextBody}`;
 
   return (
     <>
@@ -143,11 +161,15 @@ export default async function ArticlePageTemplate({
                   day: "numeric",
                 })}
               </span>
-              {article.status && (
-                <span className="ml-auto text-xs font-mono text-gray-400 border border-gray-200 px-2 py-0.5 rounded">
-                  {article.status}
-                </span>
-              )}
+              <div className="ml-auto flex items-center gap-4">
+                {article.status && (
+                  <span className="text-xs font-mono text-gray-400 border border-gray-200 px-2 py-0.5 rounded">
+                    {article.status}
+                  </span>
+                )}
+                <ListenButton text={readText} />
+                <PrintButton />
+              </div>
             </div>
 
             <h1 className={`text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight ${theme.text}`}>
@@ -177,6 +199,37 @@ export default async function ArticlePageTemplate({
           <div className="prose prose-lg prose-indigo max-w-none">
             <ArticleContent body={mainContent} />
           </div>
+
+          {article.relatedArticles && article.relatedArticles.length > 0 && (
+            <div className="mt-16 pt-10 border-t border-gray-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Related Analysis</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {article.relatedArticles.map((related: any) => {
+                  const href = related.pillar?.toLowerCase() === "economics" 
+                    ? `/economics/${related.slug.current}` 
+                    : `/${related.pillar?.toLowerCase() || 'policy'}/analysis/${related.slug.current}`;
+                  
+                  return (
+                    <Link 
+                      key={related._id} 
+                      href={href}
+                      className="group block bg-slate-50 p-6 rounded-xl border border-slate-100 hover:border-indigo-200 hover:shadow-md transition-all"
+                    >
+                      <div className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">
+                        {new Date(related.publishedAt).toLocaleDateString()}
+                      </div>
+                      <h4 className="font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                        {related.title}
+                      </h4>
+                      <p className="text-sm text-slate-600 line-clamp-2">
+                        {related.summary}
+                      </p>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          )}
 
           <div className="mt-20 pt-10 border-t border-gray-200">
             <Link
