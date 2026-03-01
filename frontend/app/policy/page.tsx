@@ -1,31 +1,33 @@
 import React from "react";
 import Link from "next/link";
+import HubSubscribeCTA from "@/components/HubSubscribeCTA";
+import LatestHubReports from "@/components/LatestHubReports";
 
 export default function Page() {
   const topics = [
     { 
       label: 'Regulation & Legislation', href: '/policy/regulation',
-      description: 'Tracking federal rules, state-level mandates, and antitrust enforcement.',
-      details: ['Federal Rule Tracking', 'State-Level Mandates', 'Antitrust Enforcement'],
-      scope: 'Monitors the evolving regulatory landscape at both federal and state levels. We track CMS final rules, FDA guidance, and FTC antitrust actions. This section provides analysis on how legislative changes impact compliance requirements, reimbursement structures, and market competition.'
+      description: 'Tracking federal and state legislative changes affecting healthcare.',
+      details: ['CMS Rules', 'State Bills', 'Compliance'],
+      scope: 'Analysis of new bills, finalized rules from CMS/HHS, and state-level legislative trends impacting provider operations and reimbursement.'
     },
     { 
       label: 'Public Health Mandates', href: '/policy/mandates',
-      description: 'Analyzing vaccination policies, emergency preparedness, and data reporting.',
-      details: ['Vaccination Policies', 'Emergency Preparedness', 'Health Data Reporting'],
-      scope: 'Examines public health policy infrastructure and emergency response frameworks. We analyze data reporting mandates, vaccination requirements, and pandemic preparedness strategies. This includes the intersection of public health authority and individual privacy rights.'
+      description: 'Monitoring executive orders and public health directives.',
+      details: ['Emergency Orders', 'Vaccine Policy', 'Reporting Req.'],
+      scope: 'Coverage of federal and state mandates, including emergency preparedness requirements and public health reporting standards.'
     },
     { 
       label: 'Global & Comparative Policy', href: '/policy/global',
-      description: 'Benchmarking against international health systems and OECD data.',
-      details: ['International Health Systems', 'OECD Benchmark Analysis', 'Cross-Border Health Data'],
-      scope: 'Compares US health policy performance against international benchmarks. We analyze OECD data on cost, access, and outcomes to identify best practices from other health systems. Topics include drug pricing models, universal coverage strategies, and health technology assessment frameworks.'
+      description: 'Insights from international health systems and policy frameworks.',
+      details: ['EU Health Data', 'UK NHS Reforms', 'Global Pharma'],
+      scope: 'Comparative analysis of health policies from the EU, UK, and Asia to identify best practices and potential regulatory shifts in the US.'
     },
     { 
       label: 'Policy Feasibility Studies', href: '/policy/feasibility',
-      description: 'Modeling the economic impact and implementation roadmap for new policies.',
-      details: ['Economic Impact Modeling', 'Stakeholder Analysis', 'Implementation Roadmaps'],
-      scope: 'Provides forward-looking analysis on proposed healthcare policies. We model the potential economic impact, assess stakeholder positions, and develop implementation roadmaps. This section helps organizations anticipate policy shifts and prepare strategic responses.'
+      description: 'Assessing the implementation viability of proposed reforms.',
+      details: ['Impact Analysis', 'Cost-Benefit', 'Stakeholder Review'],
+      scope: 'Deep dives into the operational and financial feasibility of proposed healthcare reforms, including single-payer models and price transparency.'
     }
   ];
 
@@ -39,7 +41,7 @@ export default function Page() {
           Policy Hub
         </h1>
         <p className="text-xl text-slate-600 max-w-3xl">
-          Legislative tracking, regulatory analysis, and public health mandate monitoring.
+          Navigating the complex landscape of healthcare regulation, legislation, and compliance.
         </p>
       </div>
       
@@ -65,6 +67,14 @@ export default function Page() {
           </Link>
         ))}
       </div>
+
+      <LatestHubReports pillar="Policy" colorClass="text-orange-600" />
+
+      <HubSubscribeCTA 
+        pillar="Policy" 
+        bgClass="bg-orange-50" 
+        buttonClass="bg-orange-600 hover:bg-orange-700" 
+      />
     </div>
   );
 }

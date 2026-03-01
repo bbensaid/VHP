@@ -231,9 +231,7 @@ export default function ArticleFeed({ initialArticles, pillar, category, colorCl
         )}
 
         {articles.map((article, index) => {
-          const href = pillar.toLowerCase() === "economics" 
-            ? `/economics/${article.slug.current}` 
-            : `/${pillar.toLowerCase()}/analysis/${article.slug.current}`;
+          const href = `/${pillar.toLowerCase()}/${article.slug.current}`;
           
           const isList = viewMode === 'list';
           const isFeatured = index === 0 && article.impactLevel?.toLowerCase() === "high";

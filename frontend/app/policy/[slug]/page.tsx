@@ -1,6 +1,11 @@
-import { ArticleEngine } from "@/components/templates/ArticleEngine";
+import React from "react";
+import ArticlePageTemplate from "@/components/ArticlePageTemplate";
 
-export default async function PolicyArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function PolicyArticlePage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
-  return <ArticleEngine slug={slug} pillar="policy" />;
+  return <ArticlePageTemplate params={Promise.resolve({ id: slug })} />;
 }

@@ -1,31 +1,33 @@
 import React from "react";
 import Link from "next/link";
+import HubSubscribeCTA from "@/components/HubSubscribeCTA";
+import LatestHubReports from "@/components/LatestHubReports";
 
 export default function Page() {
   const topics = [
     { 
       label: 'AI & Machine Learning', href: '/technology/ai',
-      description: 'Applying AI for clinical decision support and operational automation.',
-      details: ['Clinical Decision Support', 'Operational Automation', 'Generative AI in Healthcare'],
-      scope: 'Explores the transformative potential of Artificial Intelligence in healthcare. We cover the deployment of Large Language Models (LLMs) for documentation, predictive algorithms for clinical risk, and automation of administrative tasks. Key focus areas include model governance, validation, and ROI measurement.'
+      description: 'Applications of AI in diagnostics, operations, and care.',
+      details: ['Generative AI', 'Predictive Analytics', 'NLP'],
+      scope: 'Exploring the transformative potential of artificial intelligence in healthcare, from LLMs in clinical documentation to predictive models for patient risk.'
     },
     { 
       label: 'Digital Health & Telemedicine', href: '/technology/digital',
-      description: 'Analyzing remote monitoring, virtual care, and digital therapeutics (DTx).',
-      details: ['Remote Monitoring Platforms', 'Virtual First Care Models', 'Digital Therapeutics (DTx)'],
-      scope: 'Tracks the maturation of the digital health ecosystem. We analyze the efficacy of Digital Therapeutics (DTx), the scalability of Remote Patient Monitoring (RPM) platforms, and the user experience of virtual care interfaces. This section also covers the integration of patient-generated data into the EHR.'
+      description: 'Remote care platforms and digital therapeutics.',
+      details: ['RPM', 'Telehealth Platforms', 'DTx'],
+      scope: 'Analysis of the digital health ecosystem, including remote patient monitoring trends, virtual care adoption, and the efficacy of digital therapeutics.'
     },
     { 
       label: 'Data Security & Governance', href: '/technology/security',
-      description: 'Focusing on cybersecurity, interoperability (TEFCA), and patient consent.',
-      details: ['Cybersecurity (HIPAA, HITRUST)', 'Data Interoperability (TEFCA)', 'Patient Consent Management'],
-      scope: 'Addresses the critical infrastructure of health data exchange. We examine cybersecurity threats, ransomware resilience, and compliance with HIPAA and HITRUST. A major focus is on the implementation of TEFCA and the Trusted Exchange Framework for nationwide interoperability.'
+      description: 'Cybersecurity, interoperability, and data privacy.',
+      details: ['Cybersecurity', 'HIPAA Compliance', 'Interoperability'],
+      scope: 'Critical updates on healthcare cybersecurity threats, ransomware defense strategies, and the evolving landscape of health data interoperability standards.'
     },
     { 
       label: 'Tech-Enabled Workflow', href: '/technology/workflow',
-      description: 'Optimizing EHRs, ambient intelligence, and robotic process automation.',
-      details: ['EHR Optimization', 'Ambient Clinical Intelligence', 'Robotic Process Automation'],
-      scope: 'Focuses on technology that reduces friction in clinical and operational workflows. We cover ambient listening technologies for documentation, Robotic Process Automation (RPA) for revenue cycle management, and strategies for EHR optimization to reduce clinician burnout.'
+      description: 'Automation and tools to reduce clinical burnout.',
+      details: ['RPA', 'EHR Optimization', 'Clinical Decision Support'],
+      scope: 'Focusing on technologies that streamline hospital operations, optimize EHR usability, and automate administrative tasks to support the workforce.'
     }
   ];
 
@@ -39,7 +41,7 @@ export default function Page() {
           Technology Hub
         </h1>
         <p className="text-xl text-slate-600 max-w-3xl">
-          Digital transformation, AI integration, and interoperability standards.
+          Tracking the digital transformation of healthcare delivery and operations.
         </p>
       </div>
       
@@ -65,6 +67,14 @@ export default function Page() {
           </Link>
         ))}
       </div>
+
+      <LatestHubReports pillar="Technology" colorClass="text-indigo-600" />
+
+      <HubSubscribeCTA 
+        pillar="Technology" 
+        bgClass="bg-indigo-50" 
+        buttonClass="bg-indigo-600 hover:bg-indigo-700" 
+      />
     </div>
   );
 }
