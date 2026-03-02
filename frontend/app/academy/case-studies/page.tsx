@@ -31,7 +31,7 @@ export default async function CaseStudiesPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {cases.map((study: any) => (
             <div key={study._id} className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow flex flex-col">
@@ -42,7 +42,7 @@ export default async function CaseStudiesPage() {
                   <span className="text-gray-400 text-xs font-mono uppercase">{study.clientType}</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  <Link href={`/education/case-studies/${study.slug}`} className="hover:text-indigo-600 transition-colors">{study.title}</Link>
+                  <Link href={`/academy/case-studies/${study.slug}`} className="hover:text-indigo-600 transition-colors">{study.title}</Link>
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">{study.summary}</p>
                 {study.metrics && (
@@ -54,7 +54,7 @@ export default async function CaseStudiesPage() {
                 )}
               </div>
               <div className="bg-gray-50 p-4 border-t border-gray-100 text-right">
-                <Link href={`/education/case-studies/${study.slug}`} className="text-sm font-bold text-indigo-600 hover:underline">Read Full Case Study &rarr;</Link>
+                <Link href={`/academy/case-studies/${study.slug}`} className="text-sm font-bold text-indigo-600 hover:underline">Read Full Case Study &rarr;</Link>
               </div>
             </div>
           ))}

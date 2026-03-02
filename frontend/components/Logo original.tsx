@@ -19,7 +19,7 @@ const Logo: React.FC = () => {
           d="M13 10V3L4 14h7v7l9-11h-7z"
         />
       </svg>
-
+vscode-file://vscode-app/Applications/Windsurf.app/Contents/Resources/vscode-file://vscode-app/Applications/Windsurf.app/Contents/Resources/app/out/vs/workbench/contrib/announcements/browser/media/arena-mode.pngapp/out/vs/workbench/contrib/announcements/browser/media/arena-mode.png
       {/* Text Stacked on 3 Lines */}
       <div className="flex flex-col text-[10px] font-extrabold leading-none tracking-widest text-text-heading uppercase">
         <span>Health</span>
