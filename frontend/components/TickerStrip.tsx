@@ -22,6 +22,9 @@ interface TickerStripProps {
   transparent?: boolean;
   isVisible?: boolean;
   onToggle?: () => void;
+  label?: string;
+  theme?: "light" | "dark";
+  duration?: number;
 }
 
 export default function TickerStrip({
@@ -29,6 +32,9 @@ export default function TickerStrip({
   transparent,
   isVisible = true,
   onToggle,
+  label,
+  theme = "light",
+  duration,
 }: TickerStripProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [selectedItem, setSelectedItem] = useState<TickerItem | null>(null);
@@ -41,6 +47,7 @@ export default function TickerStrip({
   if (!items.length) return null;
 
   const isVitals = Array.isArray(tickerData);
+  const isDark = theme === "dark";
 
   const getTickerColor = (status?: string) => {
     switch (status) {
@@ -51,18 +58,18 @@ export default function TickerStrip({
       case "good":
         return "text-emerald-600";
       default:
-        return "text-slate-900";
+        return isDark ? "text-white" : "text-slate-900";
     }
   };
 
   return (
     <>
       <div
-        className={`w-full ${transparent ? "bg-transparent" : "bg-white"} h-full overflow-hidden flex items-center relative rounded-sm`}
+        className={`w-full ${transparent ? "bg-transparent" : (isDark ? "bg-slate-900" : "bg-white")} h-full overflow-hidden flex items-center relative rounded-sm`}
       >
         {/* Label Badge */}
         <div
-          className={`flex items-center ${transparent ? "bg-transparent" : "bg-slate-100 border-r border-slate-200"} h-full pr-4 pl-0 z-10 relative flex-shrink-0`}
+          className={`flex items-center ${transparent ? "bg-transparent" : (isDark ? "bg-slate-900 border-r border-slate-800" : "bg-slate-100 border-r border-slate-200")} h-full pr-4 pl-0 z-10 relative flex-shrink-0`}
         >
           {onToggle && (
             <input
@@ -78,10 +85,10 @@ export default function TickerStrip({
               isVitals ? "bg-emerald-500" : "bg-red-500"
             } animate-pulse mr-2`}
           ></div>
-          <span className="text-[10px] font-black uppercase tracking-widest text-slate-700 cursor-pointer" onClick={onToggle}>
-            {isVitals ? "System Vitals" : "Live Wire"}
+          <span className={`text-[10px] font-black uppercase tracking-widest ${isDark ? "text-white" : "text-slate-700"} cursor-pointer`} onClick={onToggle}>
+            {label || (isVitals ? "System Vitals" : "Live Wire")}
           </span>
-          {onToggle && <span className="text-slate-300 ml-3">|</span>}
+          {onToggle && <span className={`${isDark ? "text-slate-600" : "text-slate-300"} ml-3`}>|</span>}
         </div>
 
         {/* Scrolling Content */}
@@ -96,6 +103,7 @@ export default function TickerStrip({
               className="flex items-center animate-marquee whitespace-nowrap gap-2"
               style={{
                 animationPlayState: isHovered ? "paused" : "running",
+                animationDuration: `${duration || (isVitals ? 60 : 180)}s`,
               }}
             >
               {/* Render items multiple times to ensure the strip is filled and loops seamlessly */}
@@ -110,7 +118,7 @@ export default function TickerStrip({
                       onClick={() => setSelectedItem(item)}
                       className="flex items-center gap-2 hover:bg-slate-100/50 hover:shadow-sm px-2 py-1 rounded transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
                     >
-                      <span className="font-medium text-slate-500 text-xs">
+                      <span className={`font-medium ${isDark ? "text-slate-400" : "text-slate-500"} text-xs`}>
                         {item.label}:
                       </span>
                       <span
@@ -132,10 +140,10 @@ export default function TickerStrip({
                       href={item.url || "#"}
                       className="flex items-center gap-2 group"
                     >
-                      <span className="font-bold text-xs text-slate-700 group-hover:text-indigo-600 transition-colors">
+                      <span className={`font-bold text-xs ${isDark ? "text-slate-300 group-hover:text-white" : "text-slate-700 group-hover:text-indigo-600"} transition-colors`}>
                         {item.text}
                       </span>
-                      <span className="text-[10px] text-slate-400 group-hover:text-indigo-400">
+                      <span className={`text-[10px] ${isDark ? "text-slate-600" : "text-slate-400"} group-hover:text-indigo-400`}>
                         &rarr;
                       </span>
                     </Link>

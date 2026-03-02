@@ -11,6 +11,7 @@ import {
   Bars3BottomRightIcon,
 } from "@heroicons/react/24/outline";
 import { useTicker } from "@/components/TickerContext";
+import TickerStrip from "@/components/TickerStrip";
 import { usePathname } from "next/navigation";
 
 // --- 1. CONTENT CONFIGURATION ---
@@ -136,59 +137,14 @@ const Header = () => {
             <span>{dateString}</span>
           </div>
           <div className="flex-1 flex items-center overflow-hidden min-w-0 pr-32">
-            <div className="flex items-center gap-2 pr-3 z-10 bg-slate-900 flex-shrink-0">
-              <input
-                type="checkbox"
-                checked={isHeaderVisible}
-                onChange={() => setHeaderVisible(!isHeaderVisible)}
-                className="w-3 h-3 cursor-pointer accent-indigo-500 hover:accent-indigo-400"
-                title="Toggle News Feed"
-              />
-              <span
-                className="text-white font-bold whitespace-nowrap cursor-pointer"
-                onClick={() => setHeaderVisible(!isHeaderVisible)}
-              >
-                DAILY INSIGHT
-              </span>
-              <span className="text-slate-600">|</span>
-            </div>
-            {isHeaderVisible ? (
-              <div 
-                className="relative overflow-hidden flex-1 h-5 animate-in fade-in zoom-in duration-300"
-                style={{ maskImage: "linear-gradient(to right, black 90%, transparent 100%)", WebkitMaskImage: "linear-gradient(to right, black 90%, transparent 100%)" }}
-              >
-                <div className="animate-marquee whitespace-nowrap absolute top-0 left-0 flex items-center gap-8 w-max">
-                  {headlines.map((item, index) => (
-                    <Link
-                      key={index}
-                      href={item.url}
-                      className="flex items-center gap-2 group hover:opacity-80 transition-opacity"
-                    >
-                      <span className="text-white group-hover:text-indigo-400 transition-colors">
-                        {item.text}
-                      </span>
-                      <span className="text-slate-700">///</span>
-                    </Link>
-                  ))}
-                  {headlines.map((item, index) => (
-                    <Link
-                      key={`dup-${index}`}
-                      href={item.url}
-                      className="flex items-center gap-2 group hover:opacity-80 transition-opacity"
-                    >
-                      <span className="text-white group-hover:text-indigo-400 transition-colors">
-                        {item.text}
-                      </span>
-                      <span className="text-slate-700">///</span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ) : (
-              <span className="text-slate-500 text-[10px] font-medium uppercase tracking-wider ml-2">
-                Feed Paused
-              </span>
-            )}
+            <TickerStrip 
+              tickerData={{ headlines }} 
+              isVisible={isHeaderVisible} 
+              onToggle={() => setHeaderVisible(!isHeaderVisible)}
+              label="DAILY INSIGHT"
+              theme="dark"
+              transparent={true}
+            />
           </div>
           <div className="hidden lg:flex items-center gap-6 whitespace-nowrap">
             <NavDropdown
