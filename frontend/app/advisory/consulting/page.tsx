@@ -5,15 +5,15 @@ export default function ConsultingPage() {
   return (
     <div className="bg-white min-h-screen pb-20">
       {/* 1. HERO HEADER */}
-      <div className="bg-slate-900 text-white py-24 border-b border-indigo-900">
+      <div className="bg-slate-50 text-slate-900 py-24 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
-            <span className="text-indigo-400 font-bold uppercase tracking-widest text-xs mb-4 block">
+            <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs mb-4 block">
                 HTR Advisory
             </span>
             <h1 className="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight leading-tight">
                 Strategic Consulting
             </h1>
-            <p className="text-xl text-slate-300 max-w-3xl leading-relaxed">
+            <p className="text-xl text-slate-600 max-w-3xl leading-relaxed">
                 We partner with C-Suite executives to design resilient operational frameworks. 
                 We move beyond theory to implement actionable strategies that protect margins and improve clinical outcomes.
             </p>
@@ -21,7 +21,7 @@ export default function ConsultingPage() {
       </div>
 
       {/* 2. SERVICES GRID */}
-      <div className="container mx-auto px-4 md:px-8 -mt-16 relative z-10">
+      <div className="container mx-auto px-4 md:px-8 mt-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
             
             {/* POLICY: Regulatory Compliance */}

@@ -21,12 +21,19 @@ const Logo: React.FC = () => {
 
 
  
-        <div className="leading-tight">
+     {/*    <div className="leading-tight">
+          <div className="text-xs sm:text-sm font-extrabold text-card-tech">HEALTH</div>
+          <div className="text-xs sm:text-sm font-extrabold text-card-tech">TRANSFORMATION</div>
+          <div className="text-xs sm:text-sm font-extrabold text-card-tech">REVIEW</div>
+        </div>
+      </div> */}
+
+             <div className="leading-tight">
           <div className="text-xs sm:text-sm font-extrabold text-black">HEALTH</div>
           <div className="text-xs sm:text-sm font-extrabold text-black">TRANSFORMATION</div>
           <div className="text-xs sm:text-sm font-extrabold text-black">REVIEW</div>
         </div>
-      </div>
+      </div> 
 
 
 
@@ -46,11 +53,11 @@ const Logo: React.FC = () => {
       <div className="mt-0 w-full hidden sm:block">
         <div className="w-full border-t border-gray-300" />
         <div className="mt-0 text-center text-[10px] font-medium tracking-widest uppercase flex justify-center items-center gap-1">
-          <span className="text-card-policy font-bold">POLICY</span>
+          <span className="text-card-policy font-bold">OPTIMIZING CARE</span>
           <span className="text-gray-400">-</span>
-          <span className="text-card-economics font-bold">ECONOMICS</span>
-          <span className="text-gray-400">-</span>
-          <span className="text-card-tech font-bold">TECHNOLOGY</span>
+          <span className="text-card-economics font-bold">DELIVERY HEALTH</span>
+          {/* <span className="text-gray-400">-</span>
+          <span className="text-card-tech font-bold">TECHNOLOGY</span> */}
         </div>
       </div>
     </div>

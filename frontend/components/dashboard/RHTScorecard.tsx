@@ -25,23 +25,23 @@ export const RHTScorecard: React.FC<RHTScorecardProps> = ({ stateSlug }) => {
   return (
     <div className="space-y-6">
       {/* Header: Funding & Focus */}
-      <div className="bg-slate-900 text-white rounded-xl p-6 shadow-md">
+      <div className="bg-white text-slate-900 rounded-xl p-6 shadow-sm border border-slate-200">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
             <div className="flex items-center gap-2 mb-1 opacity-80">
-              <span className="text-xs font-bold uppercase tracking-wider text-indigo-400">
+              <span className="text-xs font-bold uppercase tracking-wider text-indigo-600">
                 FY26 RHT Program
               </span>
-              <span className="h-1 w-1 bg-slate-500 rounded-full"></span>
-              <span className="text-xs uppercase">{data.stateName} Cohort</span>
+              <span className="h-1 w-1 bg-slate-300 rounded-full"></span>
+              <span className="text-xs uppercase text-slate-500">{data.stateName} Cohort</span>
             </div>
             <h2 className="text-2xl font-black">{data.strategicFocus}</h2>
-            <p className="text-slate-300 text-sm mt-2 max-w-3xl leading-relaxed opacity-90">
+            <p className="text-slate-500 text-sm mt-2 max-w-3xl leading-relaxed">
               {data.description}
             </p>
           </div>
-          <div className="bg-white/10 px-5 py-3 rounded-lg border border-white/10 backdrop-blur-sm min-w-[180px]">
-            <div className="flex items-center gap-2 text-indigo-300 mb-1">
+          <div className="bg-slate-50 px-5 py-3 rounded-lg border border-slate-100 min-w-[180px]">
+            <div className="flex items-center gap-2 text-indigo-600 mb-1">
               <CurrencyDollarIcon className="w-4 h-4" />
               <span className="text-xs font-bold uppercase">Awarded</span>
             </div>
