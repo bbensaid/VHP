@@ -57,7 +57,7 @@ export default function AnalystNote({ data }: { data: NoteData | null }) {
               <span className="text-xs font-semibold text-slate-600">
                 {m.label}
               </span>
-              <span className="text-xs text-slate-400">{m.context}</span>
+              <span className="text-xs text-slate-500">{m.context}</span>
             </div>
             <div className="flex justify-between items-end">
               <span
@@ -82,7 +82,7 @@ export default function AnalystNote({ data }: { data: NoteData | null }) {
           </span>
 
           <div className="flex flex-col items-end gap-1">
-            <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">
+            <span className="text-[9px] font-bold text-slate-600 uppercase tracking-wider">
               30-Day Trend
             </span>
             <svg width={width} height={height} className="overflow-visible">
