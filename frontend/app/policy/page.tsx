@@ -53,7 +53,7 @@ export default function Page() {
               <p className="text-slate-500 text-sm leading-relaxed">{item.description}</p>
             </div>
             <div className="mt-auto pt-4 space-y-2 border-t border-slate-100 mt-4">
-              <h4 className="text-[10px] font-bold uppercase text-slate-400 tracking-wider">Scope Includes</h4>
+              <h4 className="text-[10px] font-bold uppercase text-slate-500 tracking-wider">Scope Includes</h4>
               {item.details.map(detail => (
                 <div key={detail} className="flex items-center gap-2">
                   <span className="text-orange-500 font-bold">✓</span>

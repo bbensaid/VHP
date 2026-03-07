@@ -24,7 +24,7 @@ export default function StateMonitor() {
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
             National Health Pulse
           </h3>
-          <span className="text-xs font-mono text-slate-400">LIVE FEED</span>
+          <span className="text-xs font-mono text-slate-600">LIVE FEED</span>
         </div>
 
         {/* Search & Filters */}
@@ -55,7 +55,7 @@ export default function StateMonitor() {
         ))}
         
         {filteredStates.length === 0 && (
-          <div className="text-center py-10 text-slate-400 text-sm">
+          <div className="text-center py-10 text-slate-600 text-sm">
             No states found matching your criteria.
           </div>
         )}
@@ -82,7 +82,7 @@ function StateCard({ state }: { state: StateHealthData }) {
   const trendColor = {
     up: "text-green-600",
     down: "text-red-600",
-    flat: "text-slate-400",
+    flat: "text-slate-500",
   };
 
   return (
@@ -96,7 +96,7 @@ function StateCard({ state }: { state: StateHealthData }) {
         </div>
         <div className="text-right">
           <div className="text-2xl font-black text-slate-800">{state.score}</div>
-          <div className="text-[10px] text-slate-400 uppercase tracking-wider">HTR Score</div>
+          <div className="text-[10px] text-slate-600 uppercase tracking-wider">HTR Score</div>
         </div>
       </div>
 
