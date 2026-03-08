@@ -26,10 +26,13 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const isHomepage = pathname === "/";
   const isStudio = pathname.startsWith("/studio");
   const isChatPage = pathname === "/chat";
-  const isArticle = pathname.startsWith("/articles") || 
-                    pathname.includes("/policy/") || 
-                    pathname.includes("/economics/") || 
+  const isArticle = pathname.startsWith("/articles") ||
+                    pathname.includes("/policy/") ||
+                    pathname.includes("/economics/") ||
                     pathname.includes("/technology/");
+
+  const isAcademyModule = pathname.startsWith("/academy/modules/") ||
+                           pathname.startsWith("/academy/courses/");
 
   const hideSidebarsCompletely = isStudio || isChatPage;
 
@@ -58,14 +61,14 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
 
   // 3. AUTO-COLLAPSE ON NAVIGATION
   useEffect(() => {
-    if (hideSidebarsCompletely || isArticle) {
+    if (hideSidebarsCompletely || isArticle || isAcademyModule) {
       setLeftSidebarOpen(false);
       setRightSidebarOpen(false);
     } else if (isHomepage) {
       setLeftSidebarOpen(true);
       setRightSidebarOpen(true);
     }
-  }, [pathname, hideSidebarsCompletely, isArticle, isHomepage]);
+  }, [pathname, hideSidebarsCompletely, isArticle, isAcademyModule, isHomepage]);
 
   // 4. WINDOW RESIZE HANDLER
   useEffect(() => {

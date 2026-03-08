@@ -62,7 +62,7 @@ export default async function CourseDetailPage({
     <div className="bg-white min-h-screen pb-20">
       {/* HERO HEADER */}
       <div className="bg-slate-900 text-white py-20">
-        <div className="container mx-auto px-4 md:px-8 max-w-5xl">
+        <div className="max-w-7xl mx-auto px-6 md:px-10">
             <Link href="/education" className="text-slate-400 hover:text-white mb-6 inline-block text-sm font-bold uppercase tracking-wider">
                 &larr; Back to Courses
             </Link>
@@ -74,10 +74,10 @@ export default async function CourseDetailPage({
         </div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-8 max-w-5xl -mt-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 -mt-10 grid grid-cols-1 lg:grid-cols-4 gap-10">
         
         {/* LEFT COLUMN */}
-        <div className="lg:col-span-2 space-y-8">
+        <div className="lg:col-span-3 space-y-8">
             
             {/* OVERVIEW */}
             <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
