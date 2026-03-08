@@ -78,7 +78,7 @@ export default async function CoursesPage() {
                   meta={course.meta}
                   price={course.price}
                   instructors={course.instructors?.map((i: any) => i.name)}
-                  href={`/education/courses/${course.slug}`}
+                  href={`/academy/courses/${course.slug}`}
                 />
               ))}
             </div>

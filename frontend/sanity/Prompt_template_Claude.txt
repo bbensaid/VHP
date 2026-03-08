@@ -1,0 +1,99 @@
+*** OBJECTIVE ***
+Generate a single, high-fidelity research article as a RAW MINIFIED JSON OBJECT.
+This object must strictly adhere to the 'policyAnalysis' Sanity schema.
+
+*** 1. CORE EXECUTION RULES (CRITICAL — DO NOT BREAK THESE) ***
+- OUTPUT ONLY THE JSON. No markdown fences (no ```json), no intro sentence, no outro.
+- CHARACTER SANITIZATION: Strictly NO raw control characters (\n, \t, \r inside strings).
+  Use \u2014 for em dash, \u2019 for right single quote/apostrophe, \u201c/\u201d for curly quotes.
+- ESCAPING: All internal double-quotes must be escaped as \". All backslashes as \\.
+- MINIFICATION: The entire output must be a single, continuous line of text with no line breaks.
+
+*** 2. REQUIRED FIELD VALUES ***
+- "pillar"     : MUST be exactly one of: "Policy" | "Economics" | "Technology" | "Clinical" | "Equity"
+- "category"   : MUST match the subcategory label provided in Section 4 (e.g. "Value-Based Care Models")
+- "status"     : MUST be exactly one of: "Active" | "Proposed" | "In Committee"
+- "impactLevel": MUST be exactly one of: "Critical" | "High" | "Medium"
+- "publishedAt": Use the ISO timestamp provided in Section 4. If none given, use current date in format "2026-01-15T09:00:00Z"
+
+*** 3. BODY COMPONENT RULES (THE "NEVER-FAIL" RULES) ***
+
+CRITICAL: Every item in the "body" array MUST have a unique "_key" field.
+Format: "_key": "blk[sequential_3digit_number]"  e.g. "blk001", "blk002", "blk003"...
+
+MINIMUM BODY REQUIREMENT: Generate AT LEAST 12 body blocks. A research article should include:
+- 1 lead paragraph (normal) — no heading before it; drop the reader directly into the argument
+- 2–4 h2 section headings, each followed by 2–3 normal paragraphs before the next h2
+- 1–2 h3 sub-headings used WITHIN a section to break a complex argument into named parts
+- 1 quote block (a key statistic or expert-level assertion)
+- 1 callout block (a policy implication, alert, or action item)
+- 1 data table (code block with language json)
+- 1 image block (caption + alt only — NO asset or _ref field)
+- Optional: 1 audio or video block if a briefing URL is provided
+
+HEADING HIERARCHY RULES (enforce strictly):
+- Use h2 for MAJOR section breaks only (2–4 per article). Think of these as chapter titles.
+- Use h3 for sub-points WITHIN a section. An h3 must always appear after an h2, never before.
+- NEVER place two h2 blocks back-to-back without at least one normal paragraph between them.
+- NEVER place an h3 immediately after an h2 — always write at least one normal paragraph first.
+- The article must NOT open with a heading. The first block must always be a normal paragraph.
+- Aim for a natural reading rhythm: h2 → paragraph → paragraph → h3 → paragraph → quote/callout → h2...
+
+TEXT BLOCK (normal paragraph):
+{"_key":"blk001","_type":"block","style":"normal","children":[{"_type":"span","text":"Paragraph text here.","marks":[]}]}
+
+TEXT BLOCK with inline formatting (use marks array):
+{"_key":"blk002","_type":"block","style":"normal","children":[{"_type":"span","text":"The ","marks":[]},{"_type":"span","text":"critical finding","marks":["strong"]},{"_type":"span","text":" is that costs rose 14%.","marks":[]}]}
+
+HEADING H2:
+{"_key":"blk003","_type":"block","style":"h2","children":[{"_type":"span","text":"Section Title","marks":[]}]}
+
+HEADING H3:
+{"_key":"blk004","_type":"block","style":"h3","children":[{"_type":"span","text":"Subsection Title","marks":[]}]}
+
+QUOTE (high-impact stat or assertion — renders with indigo left-border):
+{"_key":"blk005","_type":"block","style":"quote","children":[{"_type":"span","text":"The text of the quote or key statistic goes here.","marks":[]}]}
+
+CALLOUT (policy implication or action alert — renders as highlighted box):
+{"_key":"blk006","_type":"block","style":"callout","children":[{"_type":"span","text":"Key implication or action item for executives.","marks":[]}]}
+
+BULLET LIST (use listItem "bullet"):
+{"_key":"blk007","_type":"block","style":"normal","listItem":"bullet","level":1,"children":[{"_type":"span","text":"Bullet point text.","marks":[]}]}
+
+DATA TABLE (MUST be a valid JSON array of flat objects in the code field):
+{"_key":"blk008","_type":"code","title":"Table Title","language":"json","code":[{"Column A":"Value 1","Column B":"Value 2"},{"Column A":"Value 3","Column B":"Value 4"}]}
+
+IMAGE (NO asset field, NO _ref — caption and alt ONLY):
+{"_key":"blk009","_type":"image","caption":"Detailed technical description of what this image would show.","alt":"Accessible description of the image for screen readers."}
+
+AUDIO BRIEFING (only include if a URL is provided in Section 4):
+{"_key":"blk010","_type":"audio","title":"Briefing Title","url":"https://example.com/audio.mp3","summary":"One sentence describing what the listener will hear."}
+
+VIDEO (only include if a URL is provided in Section 4):
+{"_key":"blk011","_type":"video","url":"https://youtube.com/watch?v=EXAMPLE","caption":"Video caption describing content."}
+
+*** 4. SCHEMA BLUEPRINT (FOLLOW EXACTLY) ***
+{
+  "_type": "policyAnalysis",
+  "title": "[INSERT_COMPELLING_TITLE]",
+  "slug": {"current": "[INSERT_URL_SAFE_KEBAB_SLUG]"},
+  "publishedAt": "[INSERT_ISO_TIMESTAMP]",
+  "status": "[Active|Proposed|In Committee]",
+  "pillar": "[Policy|Economics|Technology|Clinical|Equity]",
+  "category": "[INSERT_EXACT_SUBCATEGORY_NAME_FROM_NAV]",
+  "impactLevel": "[Critical|High|Medium]",
+  "summary": "[INSERT_2-3_SENTENCE_ABSTRACT_FOR_EXECUTIVE_AUDIENCE]",
+  "body": [
+    MINIMUM 10 blocks following the rules above
+  ]
+}
+
+*** 5. DYNAMIC VARIABLES FOR THIS RUN ***
+PERSONA:     [INSERT_EXPERT_ROLE_AND_ORGANIZATION — this sets the authoritative voice and depth level]
+PILLAR:      [Policy|Economics|Technology|Clinical|Equity]
+CATEGORY:    [EXACT subcategory name matching the nav — this becomes the "category" field]
+TOPIC:       [1–2 sentence description of the specific issue, angle, or question being analyzed]
+IMPACT:      [Critical|High|Medium]
+STATUS:      [Active|Proposed|In Committee]
+DATE:        [ISO 8601 timestamp e.g. 2026-03-01T09:00:00Z]
+REQUIREMENTS:[Specific content elements to include: data tables, named statistics, geographic scope, named programs/policies, audio/video URLs if available]

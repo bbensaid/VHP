@@ -24,7 +24,15 @@ async function getCourse(slug: string) {
       bio,
       "imageUrl": image.asset->url
     },
-    "category": category->title
+    "category": category->title,
+    "modules": modules[]->{
+      _id,
+      title,
+      moduleNumber,
+      summary,
+      estimatedReadTime,
+      "slug": slug.current
+    } | order(moduleNumber asc)
   }`;
 
   return await client.fetch(query, { slug });
@@ -78,6 +86,35 @@ export default async function CourseDetailPage({
                     {course.overview ? <PortableText value={course.overview} /> : <p>Syllabus coming soon...</p>}
                 </div>
             </div>
+
+            {/* MODULES LIST */}
+            {course.modules && course.modules.length > 0 && (
+              <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                  Course Modules <span className="text-gray-400 font-normal text-lg">({course.modules.length})</span>
+                </h2>
+                <div className="space-y-3">
+                  {course.modules.map((mod: any) => (
+                    <Link
+                      key={mod._id}
+                      href={`/academy/modules/${mod.slug}`}
+                      className="flex gap-4 p-4 border border-gray-100 rounded-lg hover:border-indigo-200 hover:bg-indigo-50 transition-colors group"
+                    >
+                      <div className="w-10 h-10 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                        {mod.moduleNumber}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-bold text-gray-900 group-hover:text-indigo-700 transition-colors">{mod.title}</h3>
+                        <p className="text-sm text-gray-500 mt-1 line-clamp-2">{mod.summary}</p>
+                        {mod.estimatedReadTime && (
+                          <span className="text-xs text-gray-400 mt-1 block">{mod.estimatedReadTime} min read</span>
+                        )}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* INSTRUCTORS - OPTIMIZED */}
             {course.instructors && (

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const fs=require\\(''fs''\\);const data=JSON.parse\\(fs.readFileSync\\(''sanity/content/academy/vbc_fundamentals.json'',''utf8''\\)\\);const pat=/[^a-zA-Z0-9_$\\\\-]/;function find\\(obj,p\\){if\\(typeof obj!==''object''||obj===null\\)return;for\\(const k of Object.keys\\(obj\\)\\){if\\(pat.test\\(k\\)\\)console.log\\(''BAD:'',JSON.stringify\\(k\\),''at'',p\\);find\\(obj[k],p+''.''+k\\);}}find\\(data,''root''\\);\")"
+    ]
+  }
+}
