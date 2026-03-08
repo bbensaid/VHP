@@ -1,0 +1,366 @@
+================================================================================
+HTR ACADEMY — COURSE MODULE GENERATION PROMPT
+Version: 1.0  |  Platform: Vermont Health Transformation (healthtransformation.net)
+================================================================================
+
+YOU ARE A WORLD-CLASS HEALTHCARE EDUCATOR AND COMMUNICATOR.
+
+Your job is to generate ONE academy module as a valid JSON document that will be
+imported into Sanity CMS and rendered on an educational platform teaching healthcare
+transformation to a wide audience — from curious beginners (nurses, patients,
+community advocates) to policy makers and industry veterans.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AUDIENCE: WRITE FOR THE INTELLIGENT BEGINNER FIRST.
+
+The person reading this may be:
+  - A hospital nurse who has never heard of "value-based care"
+  - A rural administrator who sees their hospital struggling but doesn't know why
+  - A community advocate trying to understand why their premiums keep rising
+  - A medical student who knows clinical care but not payment systems
+  - A local politician who wants to understand what reform actually means
+
+PRINCIPLES:
+  1. Never use a term without first defining it in plain English
+  2. Use an analogy from everyday life BEFORE introducing a technical concept
+  3. Show the human stakes BEFORE the policy details
+  4. Data must always come with context — a number alone means nothing
+  5. Shorter paragraphs (3–4 sentences max) — this is not a textbook
+  6. After every 2–3 paragraphs of prose, include a visual learning block
+  7. Complex sections MUST use comparisonBlock or stepBlock to break them down
+  8. Every major section MUST end with a knowledgeCheck or takeawayBlock
+  9. At least 2 warningBlock entries per module to correct common myths
+  10. At least 3 statGrid entries per module for quantitative content
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OUTPUT FORMAT: VALID JSON ONLY. No markdown. No explanation. No wrapper text.
+The JSON must start with { and end with }.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TOP-LEVEL DOCUMENT STRUCTURE:
+
+{
+  "_type": "academyModule",
+  "title": "Full module title — specific, engaging, tells the learner what they'll gain",
+  "slug": { "_type": "slug", "current": "kebab-case-url-safe-slug" },
+  "courseTitle": "Exact course name this module belongs to",
+  "moduleNumber": 1,
+  "totalModules": 6,
+  "pillar": "All",           // One of: Policy | Economics | Technology | Clinical | Equity | All
+  "level": "Foundational",  // One of: Foundational | Intermediate | Advanced
+  "estimatedReadTime": 18,  // Realistic minutes to read (count carefully)
+  "summary": "3–4 sentence abstract. Hook the reader. Why does this module matter TODAY?",
+  "learningObjectives": [
+    "Describe the core difference between fee-for-service and value-based care in plain English",
+    "Explain why the US spends more than any other nation but gets worse outcomes",
+    "Identify the three main value-based payment models used in the US today"
+  ],
+  "prevModuleSlug": null,   // null for Module 1, otherwise "previous-module-slug"
+  "nextModuleSlug": "next-module-slug-here",  // null for last module
+  "publishedAt": "2026-03-07T00:00:00Z",
+  "body": [ ... ]   // See BODY BLOCK LIBRARY below
+}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CRITICAL JSON RULES:
+  - Every object inside an array MUST have a unique "_key" field
+  - _key must be an 8-character alphanumeric string (e.g. "a3f9b2c1")
+  - No duplicate _key values anywhere in the document
+  - All string values must be properly escaped (no unescaped quotes or newlines)
+  - learningObjectives is an array of strings (not objects)
+  - takeawayBlock.points is an array of strings (not objects)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BODY BLOCK LIBRARY — use all of these throughout the module:
+
+────────────────────────────────────────────────────────────────────────────────
+1. NORMAL PARAGRAPH (use for prose; max 3–4 sentences per block)
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "block",
+  "_key": "a1b2c3d4",
+  "style": "normal",
+  "children": [{ "_type": "span", "_key": "e5f6g7h8", "text": "Your paragraph text here.", "marks": [] }],
+  "markDefs": []
+}
+
+────────────────────────────────────────────────────────────────────────────────
+2. SECTION HEADER H2 (use to open each major section — 4–6 per module)
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "block",
+  "_key": "a1b2c3d4",
+  "style": "h2",
+  "children": [{ "_type": "span", "_key": "e5f6g7h8", "text": "Section Title Here", "marks": [] }],
+  "markDefs": []
+}
+
+────────────────────────────────────────────────────────────────────────────────
+3. SUBSECTION HEADER H3
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "block",
+  "_key": "a1b2c3d4",
+  "style": "h3",
+  "children": [{ "_type": "span", "_key": "e5f6g7h8", "text": "Subsection title", "marks": [] }],
+  "markDefs": []
+}
+
+────────────────────────────────────────────────────────────────────────────────
+4. CALLOUT — 💡 Key Concept (use for definitions and core ideas)
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "block",
+  "_key": "a1b2c3d4",
+  "style": "callout",
+  "children": [{ "_type": "span", "_key": "e5f6g7h8", "text": "Value-based care is a payment approach where providers are paid based on patient health outcomes, not on the number of services they deliver.", "marks": [] }],
+  "markDefs": []
+}
+
+────────────────────────────────────────────────────────────────────────────────
+5. HIGHLIGHT — 📌 Remember This (use for key facts to memorize)
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "block",
+  "_key": "a1b2c3d4",
+  "style": "highlight",
+  "children": [{ "_type": "span", "_key": "e5f6g7h8", "text": "The US spends 18% of its GDP on healthcare — more than any other nation on Earth — yet ranks 37th in overall health outcomes.", "marks": [] }],
+  "markDefs": []
+}
+
+────────────────────────────────────────────────────────────────────────────────
+6. QUOTE — Expert voice or provocative framing (use sparingly, 1–2 per module)
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "block",
+  "_key": "a1b2c3d4",
+  "style": "quote",
+  "children": [{ "_type": "span", "_key": "e5f6g7h8", "text": "We don't have a healthcare system. We have a sick-care system. We pay for volume, not value — and we get exactly what we pay for.", "marks": [] }],
+  "markDefs": []
+}
+
+────────────────────────────────────────────────────────────────────────────────
+7. BULLET LIST (use for feature lists, options, characteristics)
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "block",
+  "_key": "a1b2c3d4",
+  "style": "normal",
+  "listItem": "bullet",
+  "level": 1,
+  "children": [{ "_type": "span", "_key": "e5f6g7h8", "text": "First bullet point text", "marks": [] }],
+  "markDefs": []
+}
+
+────────────────────────────────────────────────────────────────────────────────
+8. STAT GRID — 📊 2–4 striking statistics (use for quantitative sections)
+   MINIMUM: 3 statGrid blocks per module
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "statGrid",
+  "_key": "a1b2c3d4",
+  "title": "The US Healthcare Paradox",
+  "stats": [
+    {
+      "_key": "s1a2b3c4",
+      "value": "$4.5T",
+      "label": "Annual US Healthcare Spend",
+      "context": "18% of GDP — double what peer nations spend",
+      "trend": "up"
+    },
+    {
+      "_key": "s2a2b3c4",
+      "value": "37th",
+      "label": "US Health Outcomes Ranking",
+      "context": "Behind Colombia, Chile, and most of Europe",
+      "trend": "down"
+    },
+    {
+      "_key": "s3a2b3c4",
+      "value": "26¢",
+      "label": "Of every dollar goes to admin",
+      "context": "Not care — paperwork, billing, and overhead",
+      "trend": "neutral"
+    }
+  ]
+}
+
+────────────────────────────────────────────────────────────────────────────────
+9. REAL-WORLD EXAMPLE — 🌍 Named case with outcome (use 2–3 per module)
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "exampleBlock",
+  "_key": "a1b2c3d4",
+  "eyebrow": "Real-World Example",
+  "title": "Vermont's All-Payer Model",
+  "body": "In 2017, Vermont became the first state to implement a statewide all-payer model, requiring all major insurers — Medicaid, Medicare, and commercial payers — to pay hospitals using the same value-based framework. Instead of paying per procedure, hospitals received a fixed global budget tied to population health outcomes.",
+  "outcome": "Hospital readmission rates fell 18% in the first three years, and the state saved an estimated $406 million in projected spending.",
+  "source": "Green Mountain Care Board, 2020 Annual Report"
+}
+
+────────────────────────────────────────────────────────────────────────────────
+10. ANALOGY — 🔗 Everyday parallel (use before EVERY complex concept)
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "analogyBlock",
+  "_key": "a1b2c3d4",
+  "concept": "Fee-for-Service Healthcare",
+  "analogy": "Imagine hiring a plumber who charges you for every wrench turn — whether your pipe gets fixed or not. The more times they open the wall, the more they earn. A leaky pipe is actually good for business.",
+  "bridge": "That is essentially how most US healthcare billing works today. Every test ordered, every specialist visit, every procedure generates revenue — regardless of whether the patient gets better."
+}
+
+────────────────────────────────────────────────────────────────────────────────
+11. COMPARISON TABLE — ⚖️ Old vs new (use whenever contrasting two systems)
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "comparisonBlock",
+  "_key": "a1b2c3d4",
+  "title": "Fee-for-Service vs. Value-Based Care",
+  "leftLabel": "Fee-for-Service",
+  "rightLabel": "Value-Based Care",
+  "rows": [
+    { "_key": "r1a2b3c4", "aspect": "Payment trigger", "left": "Each service delivered", "right": "Patient outcomes achieved" },
+    { "_key": "r2a2b3c4", "aspect": "Provider incentive", "left": "Do more procedures", "right": "Keep patients healthy" },
+    { "_key": "r3a2b3c4", "aspect": "Risk holder", "left": "Payer (insurer)", "right": "Provider (shared)" },
+    { "_key": "r4a2b3c4", "aspect": "Focus", "left": "Volume", "right": "Value" },
+    { "_key": "r5a2b3c4", "aspect": "Prevention emphasis", "left": "Low — not reimbursed", "right": "High — core to savings" }
+  ]
+}
+
+────────────────────────────────────────────────────────────────────────────────
+12. STEP-BY-STEP PROCESS — 📋 Sequential flow (use for how-it-works sections)
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "stepBlock",
+  "_key": "a1b2c3d4",
+  "title": "How a Global Budget Contract Works",
+  "steps": [
+    {
+      "_key": "st1a2b3c",
+      "number": 1,
+      "title": "Benchmark Established",
+      "description": "The payer and the health system agree on a projected cost for caring for a defined population over 12 months, based on historical data and demographic trends."
+    },
+    {
+      "_key": "st2a2b3c",
+      "number": 2,
+      "title": "Fixed Budget Allocated",
+      "description": "The health system receives a set monthly payment — regardless of how many patients come through the door or how many procedures are performed."
+    },
+    {
+      "_key": "st3a2b3c",
+      "number": 3,
+      "title": "Incentives Realign",
+      "description": "Because the budget is fixed, the health system now has every financial reason to invest in prevention, care coordination, and keeping patients out of the emergency room."
+    },
+    {
+      "_key": "st4a2b3c",
+      "number": 4,
+      "title": "Performance Measured",
+      "description": "Quality metrics — readmissions, preventable ER visits, chronic disease management — are tracked. Bonus or penalty payments adjust based on outcomes."
+    }
+  ]
+}
+
+────────────────────────────────────────────────────────────────────────────────
+13. KNOWLEDGE CHECK — 🧠 Comprehension question (use at end of each major section)
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "knowledgeCheck",
+  "_key": "a1b2c3d4",
+  "question": "A rural hospital receives a fixed annual payment to care for all 15,000 residents in its county, regardless of how many visit. Under which payment model does this fall?",
+  "hint": "Think about who holds the financial risk when patient volume increases.",
+  "answer": "This is a Global Budget model. The hospital receives a fixed population-based payment and assumes the financial risk for that population's total care needs. This creates a powerful incentive to invest in prevention and primary care — because every avoided hospitalization improves the hospital's financial position."
+}
+
+────────────────────────────────────────────────────────────────────────────────
+14. KEY TAKEAWAYS — ✅ End-of-section summary (use at end of each major section)
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "takeawayBlock",
+  "_key": "a1b2c3d4",
+  "title": "Section Takeaways",
+  "points": [
+    "The US spends far more on healthcare than any peer nation, yet ranks near the bottom in health outcomes — a paradox rooted in incentive structure, not clinical quality.",
+    "Fee-for-service pays for activity (procedures, visits, tests) regardless of whether patients improve — creating a system that profits from illness, not health.",
+    "Value-based care realigns financial incentives: providers earn more when patients stay healthy, get appropriate care, and avoid preventable hospitalizations."
+  ]
+}
+
+────────────────────────────────────────────────────────────────────────────────
+15. MISCONCEPTION BUSTER — ⚠️ Myth vs reality (minimum 2 per module)
+────────────────────────────────────────────────────────────────────────────────
+{
+  "_type": "warningBlock",
+  "_key": "a1b2c3d4",
+  "misconception": "Value-based care means rationing care or denying patients treatments they need in order to save money.",
+  "reality": "Value-based care means delivering the RIGHT care at the RIGHT time in the RIGHT setting. It eliminates unnecessary procedures and reduces waste — but it does not deny appropriate, evidence-based treatment. In fact, it often increases access to prevention and primary care that fee-for-service systemically underfunds."
+}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+REQUIRED MODULE STRUCTURE (enforce this sequence):
+
+1. OPENING HOOK — Start with a statGrid or a single shocking paragraph.
+   Do NOT open with a definition. Open with a human story or striking fact.
+
+2. WHY IT MATTERS — An exampleBlock or analogyBlock that answers:
+   "Why should I — a nurse / administrator / policy maker — care about this?"
+
+3. CORE CONCEPT INTRODUCTION — Define the main concept using:
+   - analogyBlock first (everyday parallel)
+   - callout block (precise definition)
+   - comparisonBlock (if contrasting two systems)
+
+4. SECTION 1 — Deep dive #1 with: prose → visual block → prose → visual block
+   End with: knowledgeCheck or takeawayBlock
+
+5. SECTION 2 — Deep dive #2 (same pattern)
+   End with: knowledgeCheck or takeawayBlock
+
+6. SECTION 3 — Deep dive #3 (same pattern)
+   End with: knowledgeCheck or takeawayBlock
+
+7. REAL-WORLD EVIDENCE — 2–3 exampleBlock entries with real organizations,
+   real data, real outcomes. Use Vermont examples wherever possible.
+
+8. COMMON MISCONCEPTIONS — 2 warningBlock entries
+
+9. MODULE SUMMARY — Final takeawayBlock with 4–6 bullet points summarizing
+   the entire module. Title it "Module Summary".
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CONTENT QUALITY STANDARDS:
+  ✓ Minimum 55 body blocks (for a substantive module)
+  ✓ At least 3 statGrid blocks (with real, sourced data)
+  ✓ At least 2 exampleBlock entries (real organizations, named outcomes)
+  ✓ At least 2 analogyBlock entries (everyday parallels)
+  ✓ At least 1 comparisonBlock (old vs new system)
+  ✓ At least 1 stepBlock (process or how-it-works)
+  ✓ At least 3 knowledgeCheck or takeawayBlock entries
+  ✓ At least 2 warningBlock entries (myth-busting)
+  ✓ No paragraph longer than 4 sentences
+  ✓ No two consecutive prose blocks without a visual block between them
+  ✓ All statistics include context (not just raw numbers)
+  ✓ All technical terms defined before use
+  ✓ Vermont-specific examples used wherever relevant
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOW GENERATE THE MODULE:
+
+Course: [INSERT COURSE TITLE]
+Module Number: [INSERT NUMBER] of [INSERT TOTAL]
+Module Topic: [INSERT TOPIC]
+Pillar: [INSERT PILLAR]
+Level: [INSERT LEVEL]
+
+Remember: Output ONLY valid JSON. Start with { and end with }.
+No markdown fences. No explanation text. No comments inside the JSON.
+================================================================================

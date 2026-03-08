@@ -54,20 +54,44 @@ const MIN_BODY_BLOCKS = 35;
 //   2. `code` blocks where AI emits an array of objects instead of a string.
 //      Sanity attribute names must match /^\$?[a-zA-Z0-9_-]+$/ — human-readable
 //      keys like "Typical U.S. Adoption" are rejected. Serialize to JSON string.
+const rk = () => Math.random().toString(36).slice(2, 10);
+
+// Ensure _key on every item in an array of objects
+function keyed(arr) {
+  if (!Array.isArray(arr)) return arr;
+  return arr.map((item) => ({ ...item, _key: item._key || rk() }));
+}
+
 function sanitizeBody(body) {
   return body.map((block) => {
-    if (!block._key) block._key = Math.random().toString(36).slice(2, 10);
+    if (!block._key) block._key = rk();
 
-    if (block._type === "code" && Array.isArray(block.code)) {
-      block.code = JSON.stringify(block.code, null, 2);
-      if (!block.language) block.language = "json";
-    }
+    switch (block._type) {
+      // Legacy data table: code field as array → stringify to JSON
+      case "code":
+        if (Array.isArray(block.code)) {
+          block.code = JSON.stringify(block.code, null, 2);
+          if (!block.language) block.language = "json";
+        }
+        break;
 
-    if (Array.isArray(block.children)) {
-      block.children = block.children.map((child) => ({
-        ...child,
-        _key: child._key || Math.random().toString(36).slice(2, 10),
-      }));
+      // Standard rich text — ensure child spans have _key
+      case "block":
+        if (Array.isArray(block.children)) {
+          block.children = block.children.map((c) => ({ ...c, _key: c._key || rk() }));
+        }
+        break;
+
+      // Educational block types — ensure nested array items have _key
+      case "statGrid":
+        block.stats = keyed(block.stats);
+        break;
+      case "comparisonBlock":
+        block.rows = keyed(block.rows);
+        break;
+      case "stepBlock":
+        block.steps = keyed(block.steps);
+        break;
     }
 
     return block;

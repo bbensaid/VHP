@@ -1,1 +1,454 @@
-{"_type":"academyModule","title":"Value-Based Care Fundamentals — Module 5: The Clinical and Equity Pillars — Does Value-Based Care Actually Work, and Does It Work for Everyone?","slug":{"current":"vbc-fundamentals-module-5-clinical-equity-pillars"},"publishedAt":"2026-03-07T10:00:00Z","pillar":"Equity","summary":"Module 5, the final module of the HTR Academy Value-Based Care Fundamentals course, examines the two most important questions about value-based care in practice: does it produce better clinical outcomes than fee-for-service, and does it produce those outcomes equitably across racial, ethnic, geographic, and socioeconomic lines? Drawing on the best available clinical evidence from MSSP, BPCI Advanced, and Medicare Advantage programs, and on the growing equity research literature that has examined VBC’s distributional effects, this module provides an honest assessment of where VBC has delivered on its clinical promise, where it has fallen short, and what the specific design features — SDOH risk adjustment, community health worker integration, health equity plan requirements — that are necessary to make VBC work fairly for the populations that need it most.","body":[{"_key":"blk001","_type":"block","style":"normal","children":[{"_type":"span","text":"Everything in this course has been building toward the two questions that ultimately determine whether value-based care is worth pursuing: Does it actually improve clinical outcomes compared to fee-for-service? And does it improve outcomes for everyone, or does it produce better results for patients who are already advantaged and leave behind those who face the greatest barriers to care? These questions matter not just for policy evaluation but for the daily work of every clinician, administrator, and payer operating in a VBC environment. If you are a primary care physician being held accountable for your attributed panel’s diabetes outcomes, you have a direct professional interest in whether the VBC quality metrics you are scored on reflect your clinical decisions or your patients’ zip codes. If you are a hospital CFO considering whether to join an ACO, the clinical evidence on VBC outcome improvement is the strongest argument you can make to your board. And if you are committed to healthcare equity, the research on VBC’s distributional effects is essential reading before you accept the claim that better incentives automatically produce better equity.","marks":[]}]},{"_key":"blk002","_type":"block","style":"h2","children":[{"_type":"span","text":"The Clinical Evidence: What the Research Actually Shows","marks":[]}]},{"_key":"blk003","_type":"block","style":"normal","children":[{"_type":"span","text":"The clinical evidence base for value-based care’s effectiveness has grown substantially since the Medicare Shared Savings Program launched in 2012, and the overall picture is cautiously positive, with important qualifications. The most rigorous evaluations — those using difference-in-differences designs that compare outcome trends in VBC populations against matched fee-for-service comparison populations — consistently find that mature VBC programs produce measurable improvements in a specific set of clinical outcomes: preventable hospital admissions, 30-day readmissions, emergency department utilization for ambulatory-sensitive conditions, and chronic disease monitoring completion rates. The evidence is less consistent for clinical outcome measures that require longer time horizons to detect, such as mortality rates, disease complication rates, and functional status, partly because most VBC evaluation studies lack the follow-up duration to measure these outcomes at adequate statistical power.","marks":[]}]},{"_key":"blk004","_type":"block","style":"normal","children":[{"_type":"span","text":"The most comprehensive evaluation of MSSP clinical outcomes, published by CMS in 2025 using 12 years of program data, found that ACOs in their fifth year or beyond reduced preventable hospital admissions by 8.3% and emergency department visits for ambulatory-sensitive conditions by 11.4% relative to matched fee-for-service beneficiaries, after controlling for demographic and health status differences. These effects were concentrated in the chronic disease categories where effective primary care management has the strongest evidence base: diabetes (14.2% reduction in preventable admissions), congestive heart failure (18.7% reduction), and chronic obstructive pulmonary disease (12.4% reduction). Importantly, the quality improvement was not accompanied by evidence of care withholding: preventive screening completion rates, cancer screening rates, and chronic disease monitoring rates were all higher in mature ACO populations than in fee-for-service comparison groups, suggesting that the outcome improvements reflected better care management, not reduced care access.","marks":[]}]},{"_key":"blk005","_type":"block","style":"quote","children":[{"_type":"span","text":"After twelve years of MSSP data, we can say with reasonable confidence that mature Accountable Care Organizations — those with five or more years of program experience — produce clinically meaningful improvements in the outcomes that matter most for chronically ill Medicare beneficiaries: fewer hospitalizations, fewer avoidable emergency visits, and higher rates of completing the preventive and monitoring services that catch problems early. The honest qualifier is that getting to ‘mature’ requires sustained organizational investment that not every provider can make. — CMS Office of Enterprise Data and Analytics, MSSP 12-Year Evaluation Report, 2025.","marks":[]}]},{"_key":"blk006","_type":"block","style":"h3","children":[{"_type":"span","text":"Where VBC Clinical Evidence Is Strongest — and Where It Is Weakest","marks":[]}]},{"_key":"blk007","_type":"block","style":"normal","children":[{"_type":"span","text":"The clinical evidence for VBC is not uniformly positive across all model types, patient populations, or clinical conditions. Understanding where the evidence is strongest and where it is weakest is essential for clinical and administrative leaders making decisions about VBC model selection and investment. Bundled payment models, as discussed in Module 3, have the strongest clinical evidence for high-volume elective procedures — particularly hip replacement, knee replacement, and cardiac bypass surgery — where the clinical episode is well-defined, the post-acute care pathway is predictable, and the main driver of unnecessary cost (excessive skilled nursing facility utilization) is highly amenable to care coordination intervention. The BPCI Advanced evaluation found consistent quality improvement on 30-day complication rates and 90-day functional outcome scores for major joint replacement episodes, alongside the cost reductions documented in Module 3.","marks":[]}]},{"_key":"blk008","_type":"block","style":"normal","children":[{"_type":"span","text":"The clinical evidence for VBC is weakest for complex multi-morbid patients — those with five or more chronic conditions, significant behavioral health comorbidities, or active substance use disorders — who represent the highest-cost, highest-need population that VBC’s care management resources are most critically needed for. These patients’ care is episodically unpredictable in ways that make both cost benchmarking and outcome attribution extremely difficult. A patient with diabetes, heart failure, chronic kidney disease, severe depression, and housing instability may generate five hospitalizations in one year and zero in the next, not because of anything a care coordinator did or did not do, but because of a housing crisis, a medication supply disruption, or a mental health episode that no clinical intervention could have reliably prevented. VBC quality metrics that attribute these outcome variations to provider performance without adequately accounting for the patient’s social circumstances create accountability measures that do not reflect clinical reality — and that discourage providers from accepting the most vulnerable patients into their panels.","marks":[]}]},{"_key":"blk009","_type":"code","title":"Clinical Evidence Strength by VBC Model Type and Patient Population, Systematic Review Summary 2025","language":"json","code":[{"Model & Population":"ACO / Chronic Disease (Stable, High-Engagement)","Evidence Strength":"Strong","Key Findings":"8-14% reduction in preventable admissions; improved chronic disease monitoring rates","Best Evidence Source":"MSSP 12-Year Evaluation, CMS 2025","Confidence Level":"High"},{"Model & Population":"ACO / Complex Multi-Morbid (5+ conditions)","Evidence Strength":"Mixed","Key Findings":"Modest cost savings; limited quality improvement; high care management intensity required","Best Evidence Source":"Health Affairs Systematic Review 2024","Confidence Level":"Medium"},{"Model & Population":"ACO / Behavioral Health Comorbidity","Evidence Strength":"Weak-Moderate","Key Findings":"Some ED reduction; quality metrics poorly suited to BH population; high attribution churn","Best Evidence Source":"JAMA Psychiatry 2024","Confidence Level":"Low-Medium"},{"Model & Population":"Bundled Payment / Major Joint Replacement","Evidence Strength":"Strong","Key Findings":"$2,100 episode savings; reduced SNF utilization; 30-day complication rates maintained or improved","Best Evidence Source":"BPCI Advanced Evaluation 2024","Confidence Level":"High"},{"Model & Population":"Bundled Payment / Medical Conditions (CHF, COPD)","Evidence Strength":"Moderate","Key Findings":"Episode savings variable; quality improvement less consistent than surgical episodes","Best Evidence Source":"CMMI BPCI Advanced Medical Episode Analysis 2024","Confidence Level":"Medium"},{"Model & Population":"Medicare Advantage / Stable Elderly","Evidence Strength":"Strong","Key Findings":"Consistent preventive care improvement; lower ED utilization; higher patient satisfaction","Best Evidence Source":"Commonwealth Fund MA Benchmark Study 2025","Confidence Level":"High"},{"Model & Population":"Medicare Advantage / Dual-Eligible (Medicare + Medicaid)","Evidence Strength":"Mixed","Key Findings":"Quality metrics often below standalone Medicare; SDOH factors not adequately risk-adjusted","Best Evidence Source":"KFF Dual-Eligible VBC Analysis 2025","Confidence Level":"Medium"}]},{"_key":"blk010","_type":"block","style":"h2","children":[{"_type":"span","text":"The Equity Question: Does VBC Work for Everyone?","marks":[]}]},{"_key":"blk011","_type":"block","style":"normal","children":[{"_type":"span","text":"Value-based care was designed, at least in part, as an equity intervention: by aligning provider incentives with population health outcomes rather than service volume, VBC should theoretically produce better care for underserved populations who have historically received less preventive care, less chronic disease management, and more emergency and crisis-driven care under fee-for-service. The reality is more complicated. The evidence on VBC’s equity effects is genuinely mixed, and in some dimensions genuinely concerning. Three equity problems have been consistently documented in the VBC literature: the panel selection problem, the metric design problem, and the investment allocation problem. Understanding all three is essential for any leader who wants to build VBC programs that advance rather than undermine health equity.","marks":[]}]},{"_key":"blk012","_type":"block","style":"h3","children":[{"_type":"span","text":"The Panel Selection Problem: Who Gets Attributed","marks":[]}]},{"_key":"blk013","_type":"block","style":"normal","children":[{"_type":"span","text":"Under most ACO attribution methodologies, patients are attributed to the primary care physician who delivered the plurality of their primary care visits in the prior year. This attribution approach creates a structural selection problem for equity: providers who serve the most medically and socially complex patients — the patients in greatest need of VBC care management resources — are also the providers whose attributed panels will systematically generate worse performance on standard quality metrics, not because they deliver worse care but because their patients face compounding barriers that are outside clinical control. A primary care physician serving a predominantly low-income, food-insecure, housing-unstable Medicaid population in a rural county will, on average, show worse HbA1c control rates, worse hypertension control rates, and worse preventive screening completion rates than a physician serving a predominantly insured, food-secure, transportation-rich suburban population — even if the rural physician is a dramatically better clinician working dramatically harder to achieve those outcomes for their patients.","marks":[]}]},{"_key":"blk014","_type":"block","style":"normal","children":[{"_type":"span","text":"This dynamic creates a perverse incentive that several research teams have now documented empirically: under VBC quality metric pressure, some providers serving high-complexity, high-social-need populations have responded by reducing their acceptance of new Medicaid patients, reducing their clinical presence in underserved communities, or leaving VBC programs entirely to avoid the quality penalties associated with serving difficult-to-manage populations. A 2024 study in Health Affairs found that ACOs serving the highest quartile of dual-eligible beneficiaries — patients enrolled in both Medicare and Medicaid, who face the most complex social and clinical needs — were 2.3 times more likely to exit MSSP participation within three years than ACOs serving lower proportions of dual-eligible patients, suggesting that the program’s financial structure creates systematic pressure against serving the most vulnerable populations. This is not a marginal finding. It is a fundamental equity design flaw that CMS and program designers must address.","marks":[]}]},{"_key":"blk015","_type":"block","style":"quote","children":[{"_type":"span","text":"A value-based care model that makes it financially rational to avoid serving the sickest, poorest, and most socially complex patients is not a health equity intervention. It is a health equity obstruction wearing the language of reform. Getting the incentives right requires explicit equity design, not just good intentions layered on top of metrics that were designed for a different patient population. — Atul Gawande, The New Yorker, 2024.","marks":[]}]},{"_key":"blk016","_type":"block","style":"h2","children":[{"_type":"span","text":"SDOH Risk Adjustment: The Technical Fix for the Metric Design Problem","marks":[]}]},{"_key":"blk017","_type":"block","style":"normal","children":[{"_type":"span","text":"The metric design problem — the failure of standard VBC quality metrics to account for the social determinants of health that drive a large share of outcome variation — is the most technically solvable of VBC’s equity challenges, and it is receiving significant attention from CMS, researchers, and program designers. Social determinants of health (SDOH) are the non-clinical factors that influence health outcomes: income and wealth, educational attainment, employment and working conditions, food security, housing quality and stability, transportation access, neighborhood safety, and social connectedness. The evidence that SDOH factors account for 30–55% of health outcome variation — compared to the 10–20% typically attributed to clinical care — is now firmly established in the health services research literature. The policy question is not whether SDOH matters but how to incorporate SDOH adjustment into VBC performance measurement in a way that is both technically valid and administratively feasible.","marks":[]}]},{"_key":"blk018","_type":"block","style":"normal","children":[{"_type":"span","text":"CMS made its most significant commitment to SDOH risk adjustment in the 2022 MSSP final rule, which introduced a Health Equity Benchmark Adjustment that increases the spending benchmark for ACOs serving high proportions of patients with low-income subsidy status — a proxy for overall socioeconomic disadvantage — by up to 3.5%. This adjustment acknowledges that high-need populations cost more to manage effectively and reduces the financial penalty for serving them. However, the adjustment is widely considered insufficient by health equity researchers, both because the 3.5% magnitude is smaller than the evidence base on SDOH cost impact suggests is appropriate, and because low-income subsidy status is an imperfect proxy for the full range of social complexity that drives outcome variation. CMS has committed to expanding SDOH risk adjustment methodology in the 2026 MSSP final rule, with proposals to incorporate Area Deprivation Index scores, Z-code utilization rates from EHR screenings, and community health worker encounter data as additional adjustment factors.","marks":[]}]},{"_key":"blk019","_type":"code","title":"Social Determinants of Health: Evidence on Impact on Healthcare Outcomes and Costs, 2024","language":"json","code":[{"SDOH Factor":"Food Insecurity","Prevalence in High-Risk VBC Populations":"34%","Association with Preventable Hospitalization":"2.1x higher risk","Evidence of Clinical Intervention Effectiveness":"CHW food assistance referrals reduce admits 18%","CMS Coverage for Addressing Factor":"Limited (nutrition benefits in some MA plans)"},{"SDOH Factor":"Housing Instability / Homelessness","Prevalence in High-Risk VBC Populations":"18%","Association with Preventable Hospitalization":"4.2x higher risk","Evidence of Clinical Intervention Effectiveness":"Housing-first programs reduce ED visits 40%","CMS Coverage for Addressing Factor":"Limited (AHEAD Model SDOH investment fund)"},{"SDOH Factor":"Transportation Barriers","Prevalence in High-Risk VBC Populations":"29%","Association with Preventable Hospitalization":"1.7x higher risk (missed appointments)","Evidence of Clinical Intervention Effectiveness":"NEMT programs reduce missed appointment rate 31%","CMS Coverage for Addressing Factor":"Required NEMT benefit in Medicaid"},{"SDOH Factor":"Social Isolation / Loneliness","Prevalence in High-Risk VBC Populations":"41%","Association with Preventable Hospitalization":"1.9x higher risk","Evidence of Clinical Intervention Effectiveness":"Community health worker social support reduces admits 14%","CMS Coverage for Addressing Factor":"Emerging (MA supplemental benefits)"},{"SDOH Factor":"Low Health Literacy","Prevalence in High-Risk VBC Populations":"36%","Association with Preventable Hospitalization":"2.4x higher risk (medication non-adherence)","Evidence of Clinical Intervention Effectiveness":"Plain-language education reduces readmissions 22%","CMS Coverage for Addressing Factor":"Included in patient education billing codes"},{"SDOH Factor":"Adverse Childhood Experiences (ACEs)","Prevalence in High-Risk VBC Populations":"48%","Association with Preventable Hospitalization":"3.1x higher risk (multi-morbidity)","Evidence of Clinical Intervention Effectiveness":"Trauma-informed care reduces utilization 15-24%","CMS Coverage for Addressing Factor":"Screening reimbursable; interventions limited"}]},{"_key":"blk020","_type":"block","style":"h2","children":[{"_type":"span","text":"Community Health Workers: The Human Infrastructure for VBC Equity","marks":[]}]},{"_key":"blk021","_type":"block","style":"normal","children":[{"_type":"span","text":"Community health workers — frontline public health workers who are typically members of the communities they serve, with lived experience of the social and health challenges those communities face — are emerging as the most powerful tool available for addressing VBC’s equity gap. Where clinical care coordinators manage disease processes and care transitions, CHWs address the social and environmental factors that determine whether clinical interventions succeed: they connect patients to food assistance programs, navigate housing resources, provide transportation to appointments, offer health literacy education in the patient’s preferred language, and serve as trust-building bridges between healthcare systems and communities that have historically had reason to distrust institutional medicine. The evidence on CHW effectiveness is now robust enough to justify significant investment: a 2024 meta-analysis of 47 randomized controlled trials found that CHW programs targeting high-risk populations produced an average 22% reduction in preventable hospitalizations, a 31% improvement in chronic disease monitoring completion, and a 4.0-to-1 return on investment — the highest ROI of any care management intervention examined in Module 3’s analysis.","marks":[]}]},{"_key":"blk022","_type":"block","style":"normal","children":[{"_type":"span","text":"Despite this evidence base, CHW integration into VBC programs has been slower than the evidence warrants, primarily because of reimbursement barriers. Most fee-for-service billing structures do not include a direct reimbursement pathway for CHW services, requiring VBC organizations to fund CHW positions out of shared savings distributions or organizational grants rather than direct billing revenue. This creates a funding fragility that is the primary barrier to CHW program sustainability — organizations that cannot sustain CHW positions between shared savings payment periods are forced to cycle through workforce disruption that undermines the relationship continuity that makes CHW programs effective. CMS has taken several steps to address this barrier: the 2024 Medicaid CHW Coverage Rule created a federal minimum coverage standard requiring all state Medicaid programs to provide reimbursement for defined CHW services by 2026, and the AHEAD Model’s health equity investment fund provides direct funding for CHW programs in participating states as a condition of model participation. These policy changes are meaningful but still incomplete — the Medicaid rule does not cover Medicare beneficiaries, and the AHEAD funding is geographically limited to eight participating states.","marks":[]}]},{"_key":"blk023","_type":"block","style":"callout","children":[{"_type":"span","text":"Equity Action for VBC Leaders: If your organization does not have an active Community Health Worker program, the CHW ROI evidence and the new Medicaid coverage rule make 2026 the right year to build one. Start with a formal SDOH screening protocol using the Accountable Health Communities screening tool or the PRAPARE instrument for your highest-risk VBC populations, identify the three most prevalent SDOH needs in your community, and hire CHWs with lived experience of those specific needs. Do not hire case managers and call them CHWs. The community trust and cultural competence that makes CHW programs effective cannot be credentialed — it must be lived.","marks":[]}]},{"_key":"blk024","_type":"block","style":"h2","children":[{"_type":"span","text":"Rural and Geographic Equity: The Invisible Disparity","marks":[]}]},{"_key":"blk025","_type":"block","style":"normal","children":[{"_type":"span","text":"Healthcare equity discussions in the United States have historically focused primarily on racial and ethnic disparities, and for important reasons — the evidence of systemic racial inequity in healthcare access, quality, and outcomes is extensive and deeply troubling. But a growing body of research is documenting a parallel geographic equity crisis that receives less policy attention: the systematic disadvantage faced by rural Americans in healthcare access, provider supply, and health outcomes relative to their urban peers. The rural-urban health disparity in the United States is substantial by any measure. Rural Americans have age-adjusted mortality rates 20% higher than urban Americans, a gap that has widened over the past two decades as rural hospital closures and provider shortages have compounded. They are more likely to die from the five leading causes of preventable death — heart disease, cancer, unintentional injury, chronic lower respiratory disease, and stroke — and more likely to have those deaths classified as premature, occurring before age 75.","marks":[]}]},{"_key":"blk026","_type":"block","style":"normal","children":[{"_type":"span","text":"Value-based care has not, to date, served rural populations well. The technology infrastructure barriers documented in Module 4, the financial fragility created by DSH reductions examined in the policy module, and the low benchmark problem that disadvantages already-efficient rural providers in MSSP — together these factors have produced rural VBC participation rates that are dramatically lower than urban rates. As of 2025, only 23% of rural Critical Access Hospital service areas are covered by an MSSP ACO, compared to 71% of urban hospital referral regions. The rural patients who are theoretically the greatest beneficiaries of VBC care management — those living in areas with physician shortages, transportation barriers, and high chronic disease burden — are disproportionately outside the VBC system entirely, receiving care under traditional fee-for-service Medicare with its documented incentive failures and lower preventive care rates.","marks":[]}]},{"_key":"blk027","_type":"block","style":"h2","children":[{"_type":"span","text":"Building an Equity-Centered VBC Program: What It Actually Requires","marks":[]}]},{"_key":"blk028","_type":"block","style":"normal","children":[{"_type":"span","text":"Building a VBC program that genuinely advances health equity rather than simply performing equity in its marketing materials requires design choices that are sometimes in tension with the financial optimization logic that drives most VBC strategy discussions. Equity-centered VBC design requires accepting lower short-term shared savings in exchange for serving populations whose care management needs are higher and whose social circumstances are more complex. It requires investing in CHW infrastructure before the Medicaid reimbursement rule takes effect rather than waiting for guaranteed funding. It requires choosing quality metrics that are SDOH risk-adjusted rather than metrics that produce better scores for your organization by virtue of serving a more socioeconomically advantaged patient population. And it requires building the community relationships and trust that make it possible for underserved populations to engage with care management programs at all — a process that takes years, not months, and cannot be accelerated by technology or financial incentive alone.","marks":[]}]},{"_key":"blk029","_type":"block","style":"normal","listItem":"bullet","level":1,"children":[{"_type":"span","text":"Adopt the CMS Accountable Health Communities screening tool or PRAPARE instrument as a standard clinical workflow for all attributed VBC patients, not just those identified as high-risk by your risk stratification model. SDOH data that is not systematically collected cannot be incorporated into risk adjustment, care planning, or community investment decisions.","marks":[]}]},{"_key":"blk030","_type":"block","style":"normal","listItem":"bullet","level":1,"children":[{"_type":"span","text":"Disaggregate all quality metric performance data by race, ethnicity, income level, and geography before reporting aggregate performance to leadership or payers. Organizations that only examine aggregate quality scores systematically miss equity disparities that are present in the underlying data and that will worsen without targeted intervention.","marks":[]}]},{"_key":"blk031","_type":"block","style":"normal","listItem":"bullet","level":1,"children":[{"_type":"span","text":"Advocate explicitly for SDOH risk adjustment in every VBC contract negotiation with payers and in every public comment submission on CMS rulemaking. The policy change required to fix the metric design problem will not happen without sustained, evidence-based advocacy from providers who are experiencing its consequences directly.","marks":[]}]},{"_key":"blk032","_type":"block","style":"normal","listItem":"bullet","level":1,"children":[{"_type":"span","text":"Audit your attributed panel acceptance practices to determine whether your organization is, consciously or unconsciously, steering away from the most socially complex patients in response to quality metric pressure. If the evidence of panel selection bias in the VBC literature is present in your own data, this requires direct board-level attention and a deliberate corrective strategy.","marks":[]}]},{"_key":"blk033","_type":"block","style":"normal","listItem":"bullet","level":1,"children":[{"_type":"span","text":"Partner with community organizations — food banks, housing nonprofits, legal aid organizations, faith communities — as formal members of your care management team rather than as external referral destinations. The social needs that drive VBC outcome variation are not resolved by a referral form. They require sustained, relationship-based intervention that health systems alone cannot provide.","marks":[]}]},{"_key":"blk034","_type":"block","style":"h2","children":[{"_type":"span","text":"Course Conclusion: What Value-Based Care Can and Cannot Do","marks":[]}]},{"_key":"blk035","_type":"block","style":"normal","children":[{"_type":"span","text":"Across five modules, this course has examined value-based care through every lens that HTR’s analytical framework provides: the economic incentive logic that makes it necessary, the policy architecture that makes it legal and operational, the technology infrastructure that makes it analytically feasible, the clinical evidence that determines whether it actually works, and the equity design requirements that determine whether it works for everyone. The honest conclusion that this evidence supports is nuanced but ultimately optimistic: value-based care, when designed well, implemented with adequate infrastructure, and evaluated with appropriate equity metrics, produces meaningfully better clinical outcomes than fee-for-service at lower total cost. The international comparisons, the MSSP 12-year data, the BPCI Advanced bundled payment evidence, and the mature ACO performance literature all point in the same direction. The fee-for-service system that currently dominates American healthcare is producing the worst outcomes per dollar of any wealthy nation on earth, and the most credible available alternative — paying for health rather than for activity — is demonstrably capable of doing better.","marks":[]}]},{"_key":"blk036","_type":"block","style":"normal","children":[{"_type":"span","text":"What value-based care cannot do, on its own, is eliminate the social determinants of health that account for 30–55% of health outcome variation. It cannot provide affordable housing, food security, safe neighborhoods, or the living wages that are the most powerful health interventions available at the population level. It cannot overcome the legacy of structural racism in American healthcare in a single policy cycle. And it cannot succeed in rural and underserved markets without the capital investment, technology infrastructure, workforce development, and equity design that are currently absent from the policy response at the scale those markets require. These are not arguments against value-based care. They are arguments for building it with sufficient ambition, equity intentionality, and long-term commitment to match the scale of the problem it is trying to solve. The U.S. healthcare system can do better. Value-based care, properly designed and properly resourced, is the most credible available path to doing it.","marks":[]}]},{"_key":"blk037","_type":"block","style":"normal","listItem":"number","level":1,"children":[{"_type":"span","text":"Review the SDOH screening data your organization currently collects, or does not collect, for your attributed VBC populations. If you are not using a validated SDOH screening instrument routinely, establish a plan for implementing one before the end of the current fiscal year. The data collected in the first 12 months will form the baseline for your equity-adjusted quality reporting.","marks":[]}]},{"_key":"blk038","_type":"block","style":"normal","listItem":"number","level":1,"children":[{"_type":"span","text":"Examine your organization’s VBC quality metric performance disaggregated by race, ethnicity, and income level. If you have not done this analysis, request it from your analytics team before your next quality committee meeting. You cannot address equity disparities you have not measured.","marks":[]}]},{"_key":"blk039","_type":"block","style":"normal","listItem":"number","level":1,"children":[{"_type":"span","text":"Identify the three community organizations in your market best positioned to address the most prevalent SDOH needs in your attributed patient population, and schedule introductory conversations about formal care management partnership before the end of this quarter. The relationships that make community health worker and SDOH intervention programs effective take time to build, and they cannot be contracted into existence on a six-month timeline.","marks":[]}]},{"_key":"blk040","_type":"block","style":"normal","listItem":"number","level":1,"children":[{"_type":"span","text":"Review your organization’s VBC contract language with payers for the presence of SDOH risk adjustment provisions. If they are absent, submit a formal request to renegotiate in the next contract cycle. If the payer declines, document this refusal and bring it to your state hospital association for collective advocacy, as this is a systemic issue that requires industry-level response.","marks":[]}]},{"_key":"blk041","_type":"block","style":"callout","children":[{"_type":"span","text":"Course Completion Reflection: You have now completed the HTR Academy Value-Based Care Fundamentals course. You have covered the economic incentive logic of FFS versus VBC, the policy architecture that enables advanced VBC models, the technology infrastructure that VBC requires, the clinical evidence on VBC effectiveness, and the equity design requirements that determine whether VBC works for the populations that need it most. The knowledge in these five modules is not abstract — it is the practical foundation for every VBC strategy decision, contract negotiation, technology investment, and equity commitment your organization will make in the next decade. Use it. Share it with your colleagues. And return to it when the complexity of real-world VBC implementation makes the foundational logic feel distant. The complexity is real. So is the opportunity.","marks":[]}]},{"_key":"blk042","_type":"image","caption":"A comprehensive equity dashboard visualization designed for VBC program monitoring, showing four quadrants of analysis. Top-left: a demographic heat map of attributed patient population overlaid on county-level Area Deprivation Index scores, with ACO care coordinator territory boundaries shown as overlays. Top-right: a bar chart comparing quality metric performance across racial and ethnic subgroups for six key VBC metrics (HbA1c control, hypertension control, colorectal cancer screening, depression screening, 30-day readmission rate, and ED utilization for ambulatory-sensitive conditions), with the population average shown as a reference line. Bottom-left: a scatter plot mapping SDOH screening positivity rate against preventable hospitalization rate for 200 attributed patient zip codes, illustrating the SDOH-utilization correlation. Bottom-right: a trend line showing CHW program enrollment, SDOH intervention completion, and 12-month preventable hospitalization rate for the CHW-enrolled population versus matched non-enrolled controls. Data is illustrative based on MSSP equity benchmark analysis and Accountable Health Communities evaluation data 2025.","alt":"Four-quadrant equity dashboard visualization for VBC program monitoring showing demographic heat map, quality metric performance by race and ethnicity, SDOH-utilization correlation scatter plot, and CHW program outcome trend lines."},{"_key":"blk043","_type":"audio","title":"HTR Academy Podcast: Clinical Evidence and Health Equity in VBC — The Honest Assessment","url":"https://podcast.htr.com/episodes/vbc-fundamentals-module-5-clinical-equity.mp3","summary":"In this 67-minute concluding course episode, HTR Chief Intelligence Officer Dr. Sarah Chen is joined by health equity researcher Dr. Alyssa Bilinski of Brown University School of Public Health and former CMS Chief Medical Officer Dr. Patrick Conway to discuss the full clinical evidence base for VBC, the equity research that documents where VBC has and has not served underserved populations, and what specific design changes — to risk adjustment methodology, attribution rules, CHW reimbursement, and rural VBC infrastructure investment — are necessary to make VBC work equitably at scale. The conversation includes a direct exchange about what the research shows organizations should do differently today, and what policy changes would be required to make equitable VBC the default rather than the exception."},{"_key":"blk044","_type":"video","url":"https://www.youtube.com/watch?v=HTRAcademy2026M5","caption":"This 34-minute HTR Academy video module presents the complete five-module course synthesis as a visual narrative, tracing the journey from the fee-for-service incentive problem through each pillar’s contribution to VBC success or failure, and arriving at a practical equity-centered VBC design framework that integrates all five pillars into a coherent organizational action plan. The video includes a downloadable VBC Organizational Readiness Assessment covering all five pillar dimensions, which learners can use as the basis for a structured board presentation on their organization’s VBC strategy and equity commitments."}],"courseTitle":"Value-Based Care Fundamentals","moduleNumber":5,"totalModules":5,"level":"Intermediate","estimatedReadTime":30,"learningObjectives":["Interpret the MSSP 12-year clinical evidence on preventable admissions, ED utilization, and chronic disease outcomes in mature ACOs.","Identify the three equity design flaws in current VBC programs: panel selection, metric design, and investment allocation problems.","Explain SDOH risk adjustment methodology and why the current CMS Health Equity Benchmark Adjustment is considered insufficient.","Apply the community health worker integration evidence to design an equity-centered care management program.","Construct an organizational equity action plan using the five concrete steps identified in this module."],"prevModuleSlug":"vbc-fundamentals-module-4-technology-pillar"}
+{
+  "_type": "academyModule",
+  "title": "Who Gets Left Behind: Health Equity, Social Determinants, and Building a VBC System That Works for Everyone",
+  "slug": {"_type": "slug", "current": "vbc-equity-m6"},
+  "courseTitle": "Value-Based Care Fundamentals",
+  "moduleNumber": 6,
+  "totalModules": 6,
+  "pillar": "Equity",
+  "level": "Intermediate",
+  "estimatedReadTime": 20,
+  "summary": "Value-based care was designed, in part, as a health equity intervention — rewarding good outcomes rather than high volume should help the patients who need the most help. But the research tells a more complicated story. This module examines where VBC has advanced health equity, where it has undermined it, and what specific design choices — in risk adjustment, community health worker programs, panel selection, and rural policy — are required to build a VBC system that actually works for everyone.",
+  "learningObjectives": [
+    "Define health disparities and social determinants of health using current data",
+    "Explain three structural equity flaws in how most VBC programs are currently designed",
+    "Describe how SDOH risk adjustment works and why the current CMS approach is considered insufficient",
+    "Explain the evidence base for community health workers and the reimbursement barriers they face",
+    "Identify Vermont-specific equity challenges including rural, refugee, and indigenous populations",
+    "Describe what equity-centered VBC design requires beyond good intentions"
+  ],
+  "prevModuleSlug": "vbc-clinical-m5",
+  "nextModuleSlug": null,
+  "publishedAt": "2026-03-08T00:00:00Z",
+  "body": [
+    {
+      "_type": "block",
+      "_key": "m6p001",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s001", "text": "In 2019, a landmark study published in the journal Science made a startling discovery. A widely used commercial algorithm — the kind that decides which patients get enrolled in intensive care management programs — was systematically underestimating the health needs of Black patients. Not by a little. The algorithm assigned Black patients the same risk score as white patients who were, on average, significantly healthier. The practical consequence: Black patients were less likely to be identified for the high-intensity care management they needed.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p002",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s002", "text": "This module is the culmination of the course — and arguably its most important chapter. Value-based care promises to improve health for everyone by aligning incentives with outcomes rather than volume. But a payment reform that perpetuates or amplifies existing health inequities is not a solution. It is a new version of the same problem. Understanding where VBC fails on equity — and how to fix it — is not optional knowledge for healthcare leaders. It is the central challenge of our generation.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6h2a",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m6h2as", "text": "What Health Disparities Actually Look Like", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p003",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s003", "text": "A health disparity is a difference in health outcomes between population groups that is preventable, avoidable, and unjust. It is not just the observation that some groups are sicker than others — it is the recognition that those differences are not random. They reflect systematic disadvantages in access to healthcare, economic stability, education, safe housing, and healthy food.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6cal1",
+      "style": "callout",
+      "children": [{"_type": "span", "_key": "m6cas1", "text": "Health Disparity: A preventable difference in the burden of disease, injury, violence, or opportunity to achieve optimal health between groups defined by race, ethnicity, income, education, disability, geography, or other social characteristics.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "statGrid",
+      "_key": "m6sg01",
+      "title": "Health Disparities in the United States",
+      "stats": [
+        {"_key": "m6st01", "value": "3.5 years", "label": "Black-White Life Expectancy Gap", "context": "Black Americans live 3.5 fewer years on average than white Americans. The gap widened to 6 years during COVID-19 due to disparate mortality rates. Source: CDC National Vital Statistics, 2023.", "trend": "down"},
+        {"_key": "m6st02", "value": "2x", "label": "Maternal Mortality: Black vs. White", "context": "Black women die from pregnancy-related causes at more than twice the rate of white women — even after controlling for income and education. Source: CDC, 2023.", "trend": "down"},
+        {"_key": "m6st03", "value": "20%", "label": "Rural vs. Urban Mortality Gap", "context": "Rural Americans have age-adjusted mortality rates 20% higher than urban Americans — a gap that has widened over the past two decades as rural hospital closures and provider shortages compound. Source: JAMA, 2024.", "trend": "down"}
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "m6p004",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s004", "text": "These disparities are not primarily explained by genetic differences or individual health behaviors. The research literature is clear: the most powerful predictors of health outcomes are social and economic — where you live, what you earn, whether your neighborhood has a grocery store, whether you can take a day off work to see a doctor. These are the social determinants of health.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6h2b",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m6h2bs", "text": "Social Determinants of Health: The 30 to 55 Percent of Outcomes We Rarely Treat", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p005",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s005", "text": "Social determinants of health are the conditions in which people are born, grow, live, work, and age that shape health outcomes. They include: income and wealth, educational attainment, employment quality, food security, housing stability and quality, transportation access, neighborhood safety, and social connectedness. The evidence that SDOH factors account for 30 to 55 percent of health outcome variation — compared to only 10 to 20 percent typically attributed to clinical care — is now firmly established in the research literature.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "analogyBlock",
+      "_key": "m6an01",
+      "concept": "Social determinants versus clinical care",
+      "analogy": "Imagine a leaky pipe in an apartment building. You can hire the best plumber in the city to mop up the water every day — and they will do excellent work. But if you never fix the pipe, the water keeps coming. Clinical care is the mopping. Social determinants are the pipe.",
+      "bridge": "We spend enormous resources on excellent clinical care — the mopping — while chronically under-investing in the conditions that cause people to get sick in the first place. Value-based care, when designed well, starts asking about the pipe: it screens for food insecurity, housing instability, and transportation barriers, and connects patients to resources that address those root causes."
+    },
+    {
+      "_type": "block",
+      "_key": "m6p006",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s006", "text": "The most frequently screened SDOH domains in clinical settings are food insecurity, housing instability, transportation barriers, social isolation, interpersonal violence, and low health literacy. Standardized screening tools — including the Accountable Health Communities tool and the PRAPARE instrument — allow clinical teams to systematically identify SDOH needs during routine visits. But screening alone is insufficient. The critical next step — connecting patients to community resources that address those needs — is where most health systems still struggle.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "statGrid",
+      "_key": "m6sg02",
+      "title": "Social Determinants in VBC Populations",
+      "stats": [
+        {"_key": "m6st04", "value": "34%", "label": "Food Insecurity Prevalence", "context": "34% of high-risk VBC patients screen positive for food insecurity. Food-insecure patients have a 2.1x higher risk of preventable hospitalization. Source: AHRQ, 2024.", "trend": "down"},
+        {"_key": "m6st05", "value": "29%", "label": "Transportation Barriers", "context": "29% of high-risk VBC patients report transportation barriers to care. Missing appointments due to lack of transportation drives medication non-adherence and delayed diagnosis. Source: AHRQ, 2024.", "trend": "neutral"},
+        {"_key": "m6st06", "value": "4.2x", "label": "Housing Instability Risk Multiplier", "context": "Patients experiencing housing instability or homelessness have 4.2x higher risk of preventable hospitalization than stably housed patients. Source: NEJM, 2023.", "trend": "down"}
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "m6h2c",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m6h2cs", "text": "Three Structural Equity Flaws in Current VBC Design", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p007",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s007", "text": "Value-based care was intended to be an equity intervention — aligning incentives with population health outcomes should, in theory, help the patients who need the most help. The reality is more complicated. Three structural equity problems have been consistently documented in the VBC research literature. Understanding all three is essential for any leader who wants to build VBC programs that advance rather than undermine health equity.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "stepBlock",
+      "_key": "m6sp01",
+      "title": "Three Structural Equity Flaws in VBC",
+      "steps": [
+        {"_key": "m6stp1", "number": 1, "title": "The Panel Selection Problem", "description": "Under most ACO attribution rules, providers who serve the most medically and socially complex patients will systematically generate worse performance on standard quality metrics — not because they deliver worse care, but because their patients face compounding barriers outside clinical control. This creates financial pressure to avoid accepting the most vulnerable patients, which is precisely the opposite of what VBC should incentivize."},
+        {"_key": "m6stp2", "number": 2, "title": "The Metric Design Problem", "description": "Standard VBC quality metrics do not adequately account for the social determinants of health that drive 30 to 55 percent of outcome variation. A physician serving a food-insecure, transportation-poor population will show worse HbA1c control rates than a physician serving a food-secure, transportation-rich population — even if the former is a dramatically better clinician. Unadjusted metrics penalize providers for serving high-need populations."},
+        {"_key": "m6stp3", "number": 3, "title": "The Investment Allocation Problem", "description": "The organizations with the greatest ability to invest in care management infrastructure — large health systems, well-capitalized ACOs, urban medical centers — are not the organizations serving the highest-need populations. Rural safety-net providers and Federally Qualified Health Centers serving predominantly low-income and minority populations often lack the capital to build the VBC infrastructure that would most benefit their patients."}
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "m6p008",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s008", "text": "The panel selection problem is the most empirically documented. A 2024 study in Health Affairs found that ACOs serving the highest quartile of dual-eligible beneficiaries — patients enrolled in both Medicare and Medicaid, who face the most complex social and clinical needs — were 2.3 times more likely to exit MSSP within three years than ACOs serving lower proportions of dual-eligible patients. The program's financial structure creates systematic pressure against serving the most vulnerable populations.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6hl01",
+      "style": "highlight",
+      "children": [{"_type": "span", "_key": "m6hls1", "text": "A value-based care model that makes it financially rational to avoid serving the sickest, poorest, and most socially complex patients is not a health equity intervention. It is a health equity obstruction wearing the language of reform. Getting the incentives right requires explicit equity design — not just good intentions layered on top of metrics that were built for a different patient population.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6h2d",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m6h2ds", "text": "SDOH Risk Adjustment: Making the Metrics Fair", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p009",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s009", "text": "The metric design problem — the failure of standard quality metrics to account for social determinants — is the most technically solvable of VBC's equity challenges. SDOH risk adjustment means modifying performance benchmarks to account for the social complexity of the patient population being served, so that providers are compared to peers serving similar populations rather than to the national average.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p010",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s010", "text": "CMS made its most significant commitment to SDOH risk adjustment in the 2022 MSSP final rule, which introduced a Health Equity Benchmark Adjustment that increases spending benchmarks for ACOs serving high proportions of patients with low-income subsidy status. This acknowledges that high-need populations cost more to manage effectively. However, the 3.5 percent adjustment ceiling is widely considered insufficient by health equity researchers — and it uses low-income subsidy status as an imperfect proxy for the full range of social complexity that drives outcome variation.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "comparisonBlock",
+      "_key": "m6cb01",
+      "title": "SDOH Risk Adjustment: Current CMS Approach vs. What Researchers Recommend",
+      "leftLabel": "Current CMS Approach (2026)",
+      "rightLabel": "Researcher-Recommended Approach",
+      "rows": [
+        {"_key": "m6cr01", "aspect": "Primary adjustment factor", "left": "Low-income subsidy status (proxy for poverty)", "right": "Area Deprivation Index + Z-code utilization + CHW encounter data"},
+        {"_key": "m6cr02", "aspect": "Adjustment magnitude", "left": "Up to 3.5% benchmark increase", "right": "8 to 12% adjustment based on SDOH cost impact evidence"},
+        {"_key": "m6cr03", "aspect": "Data source", "left": "Medicare enrollment data (limited)", "right": "EHR SDOH screening data + census social vulnerability index"},
+        {"_key": "m6cr04", "aspect": "Population coverage", "left": "Medicare fee-for-service only", "right": "All payers including Medicaid and commercial"},
+        {"_key": "m6cr05", "aspect": "Equity transparency", "left": "Aggregate performance reporting", "right": "Disaggregated reporting by race, ethnicity, income, and geography required"}
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "m6p011",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s011", "text": "CMS has committed to expanding SDOH risk adjustment methodology in the 2026 MSSP final rule, with proposals to incorporate Area Deprivation Index scores, Z-code utilization rates from EHR screenings, and community health worker encounter data as additional adjustment factors. These changes are meaningful but still incomplete. The policy change required to make VBC metrics truly equitable will require sustained advocacy from providers who are experiencing the consequences of inadequate adjustment directly.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "warningBlock",
+      "_key": "m6wb01",
+      "misconception": "If we improve clinical quality across the board, health disparities will naturally narrow.",
+      "reality": "Research consistently shows that quality improvement programs that do not explicitly target disparities can widen them. When a health system improves its overall diabetes control rates, the improvement is often concentrated among the most engaged, most resource-rich patients — while the most vulnerable patients remain unchanged or worsen. Closing disparities requires measuring them separately, targeting interventions at high-disparity populations, and tracking equity-specific outcomes, not just aggregate averages."
+    },
+    {
+      "_type": "block",
+      "_key": "m6h2e",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m6h2es", "text": "Community Health Workers: The Most Powerful Equity Tool in VBC", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p012",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s012", "text": "Community health workers — frontline public health workers who are typically members of the communities they serve, with lived experience of the social and health challenges those communities face — are emerging as the most powerful equity tool in value-based care. Where clinical care coordinators manage disease processes and care transitions, CHWs address the social and environmental factors that determine whether clinical interventions succeed.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6cal2",
+      "style": "callout",
+      "children": [{"_type": "span", "_key": "m6cas2", "text": "Community Health Worker (CHW): A frontline public health worker who is a trusted member of and has a close understanding of the community being served. CHWs serve as a bridge between health and social services and the communities they serve, reduce cultural and social barriers to care, and provide health education, advocacy, and social support in community settings. They are NOT case managers or care coordinators — the community trust and cultural competence that makes their work effective must be lived, not credentialed.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p013",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s013", "text": "What makes CHWs distinctive — and irreplaceable — is trust. In communities that have historically had reason to distrust institutional medicine, a CHW who grew up in the neighborhood, speaks the language, and has navigated the same systems can accomplish what no clinical protocol can. They connect patients to food assistance programs, navigate housing resources, provide transportation to appointments, and serve as advocates within a healthcare system that can feel foreign and hostile to those who most need it.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "statGrid",
+      "_key": "m6sg03",
+      "title": "The Evidence for Community Health Workers",
+      "stats": [
+        {"_key": "m6st07", "value": "22%", "label": "Reduction in Preventable Hospitalizations", "context": "A 2024 meta-analysis of 47 RCTs found CHW programs targeting high-risk populations produced an average 22% reduction in preventable hospitalizations. Source: AJPH, 2024.", "trend": "up"},
+        {"_key": "m6st08", "value": "4:1", "label": "CHW Return on Investment", "context": "CHW programs consistently show a 4-to-1 return on investment — the highest ROI of any care management intervention type studied. Source: Health Affairs, 2023.", "trend": "up"},
+        {"_key": "m6st09", "value": "31%", "label": "Chronic Disease Monitoring Improvement", "context": "CHW programs targeting high-risk populations show a 31% improvement in chronic disease monitoring completion rates — exceeding care coordinator programs alone. Source: AJPH, 2024.", "trend": "up"}
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "m6p014",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s014", "text": "Despite this evidence base, CHW integration into VBC programs has been slower than warranted, primarily because of reimbursement barriers. Most fee-for-service billing structures do not include a direct reimbursement pathway for CHW services, requiring VBC organizations to fund CHW positions out of shared savings or grants. This creates funding fragility — organizations that cannot sustain CHW positions between shared savings payments cycle through workforce disruption that undermines the relationship continuity that makes CHW programs effective.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p015",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s015", "text": "CMS has taken meaningful steps to address this. The 2024 Medicaid CHW Coverage Rule created a federal minimum standard requiring all state Medicaid programs to provide reimbursement for defined CHW services by 2026. The AHEAD Model's health equity investment fund provides direct CHW program funding in participating states. Vermont, as an AHEAD participant, has an explicit CHW funding stream tied to the All-Payer Model performance requirements.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "exampleBlock",
+      "_key": "m6ex01",
+      "eyebrow": "Real-World Example",
+      "title": "Roots Community Health Center — CHWs as Clinical Infrastructure",
+      "body": "Roots Community Health Center in Oakland, California serves a predominantly Black and low-income patient population. Their CHW program places community health workers in every primary care team. CHWs conduct SDOH screenings, make home visits for high-risk patients, connect patients to food and housing resources, attend medical appointments as patient advocates, and provide health education in culturally relevant formats. CHWs are paid employees with full benefits — not volunteers or contractors — reflecting the organization's commitment to workforce stability.",
+      "outcome": "Roots patients with CHW engagement have 40% lower preventable hospitalization rates than demographically matched patients in the surrounding area, and significantly higher rates of completing preventive screenings. Source: Roots Community Health Center outcome reporting, 2024.",
+      "source": "Roots Community Health Center, UCSF Center for Excellence in Primary Care evaluation, 2024"
+    },
+    {
+      "_type": "block",
+      "_key": "m6h2f",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m6h2fs", "text": "Rural and Geographic Equity: The Invisible Disparity", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p016",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s016", "text": "Healthcare equity discussions in the United States have historically focused primarily on racial and ethnic disparities — and for important reasons. But a parallel geographic equity crisis receives far less policy attention: the systematic disadvantage faced by rural Americans in healthcare access, provider supply, and health outcomes relative to their urban peers.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p017",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s017", "text": "Rural Americans are more likely to die from the five leading causes of preventable death — heart disease, cancer, unintentional injury, chronic lower respiratory disease, and stroke. They have fewer physicians per capita, longer travel distances to care, higher rates of uninsurance, and significantly lower rates of receiving recommended preventive services. And they are, as documented in the Technology module, disproportionately outside the VBC system entirely — receiving care under fee-for-service Medicare with its documented incentive failures.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "statGrid",
+      "_key": "m6sg04",
+      "title": "Rural Health Equity Gaps",
+      "stats": [
+        {"_key": "m6st10", "value": "23%", "label": "Rural CAH Areas in MSSP ACOs", "context": "Only 23% of rural Critical Access Hospital service areas are covered by an MSSP ACO, compared to 71% of urban hospital referral regions. Rural patients are disproportionately in fee-for-service. Source: CMS, 2025.", "trend": "down"},
+        {"_key": "m6st11", "value": "138", "label": "Rural Hospital Closures Since 2010", "context": "138 rural hospitals have closed since 2010, leaving millions of rural Americans further from emergency, obstetric, and inpatient care. Source: Chartis Center for Rural Health, 2025.", "trend": "down"},
+        {"_key": "m6st12", "value": "62%", "label": "Rural Mental Health Provider Shortage", "context": "62% of rural counties have no psychiatrist — forcing rural residents to travel hours for mental health care or go without. Behavioral health comorbidities are a major driver of preventable hospitalizations. Source: HRSA, 2025.", "trend": "down"}
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "m6h2g",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m6h2gs", "text": "Vermont's Equity Landscape: Progress and Persistent Gaps", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p018",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s018", "text": "Vermont's All-Payer Model includes an explicit health equity performance requirement — a condition not present in most VBC programs nationally. The AHEAD Model requires participating states to establish measurable health equity goals and report progress annually. Vermont's current equity focus areas include reducing rural-urban disparities in preventive care rates, improving mental health access in rural counties, and addressing the health needs of Vermont's growing refugee and immigrant populations.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p019",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s019", "text": "Vermont's refugee and immigrant populations — concentrated primarily in Burlington, Winooski, and Rutland — face compounding health equity challenges: language barriers, cultural differences in health-seeking behavior, immigration status concerns, trauma histories from displacement and persecution, and limited familiarity with a healthcare system very different from those in their countries of origin. Vermont's Blueprint for Health has piloted culturally adapted CHW programs for refugee communities, but coverage remains incomplete.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p020",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s020", "text": "Vermont's Abenaki and other indigenous communities face health disparities that reflect both geographic isolation and historical trauma with healthcare institutions. The legacy of forced assimilation, medical experimentation, and involuntary sterilization programs has created well-founded distrust of the healthcare system that no appointment reminder or care coordinator can overcome. Rebuilding trust with indigenous communities requires sustained, community-led engagement over years — not program cycles.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "exampleBlock",
+      "_key": "m6ex02",
+      "eyebrow": "Vermont in Focus",
+      "title": "Vermont Department of Health — Racial and Ethnic Health Equity Dashboard",
+      "body": "Vermont has invested in a public-facing health equity dashboard that disaggregates health outcome data by race, ethnicity, income, and geography — making disparities visible to policymakers, providers, and communities. The dashboard tracks preventable hospitalization rates, chronic disease control metrics, maternal and infant health outcomes, and behavioral health utilization by population group. Vermont is one of only a handful of states with this level of equity data transparency at the state level.",
+      "outcome": "Vermont's equity dashboard has become a policy accountability tool — allowing advocates and legislators to track whether All-Payer Model investments are narrowing identified disparities, and to demand explanations when they are not. Source: Vermont Department of Health, Racial and Ethnic Health Equity Dashboard, 2025.",
+      "source": "Vermont Department of Health, 2025"
+    },
+    {
+      "_type": "warningBlock",
+      "_key": "m6wb02",
+      "misconception": "Our organization serves everyone equally — we do not have health disparities here.",
+      "reality": "Every healthcare organization serves patients with different outcomes based on race, income, and geography. The question is not whether disparities exist — it is whether you have measured them. Organizations that only report aggregate quality performance systematically miss disparities that are present in the underlying data. If you have not disaggregated your quality metrics by race, ethnicity, and income, you do not know your equity performance. You know your average performance."
+    },
+    {
+      "_type": "block",
+      "_key": "m6h2h",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m6h2hs", "text": "AI Bias in Risk Stratification: Technology as an Equity Threat", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p021",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s021", "text": "The 2019 Science study described at the opening of this module identified a mechanism that explains the algorithmic underestimation of Black patients' health needs: the algorithm used healthcare costs as a proxy for health need. Black patients historically had lower healthcare costs — not because they were healthier, but because structural barriers had historically limited their access to care. The algorithm encoded a history of discrimination as a measure of health. The practical consequence: Black patients were significantly less likely to be flagged for high-intensity care management programs.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p022",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s022", "text": "This problem has been replicated for other demographic groups and other algorithm types. As AI-powered risk stratification tools become increasingly central to VBC care management, the equity risk posed by biased training data becomes increasingly urgent. A healthcare organization that deploys an AI risk model without auditing it for demographic performance disparities is potentially using technology to automate discrimination at scale.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6cal3",
+      "style": "callout",
+      "children": [{"_type": "span", "_key": "m6cas3", "text": "Technology Governance Requirement: Any healthcare organization deploying an AI risk stratification tool in a VBC context has an ethical and, increasingly, a legal obligation to audit the tool for demographic performance disparities before deployment. The audit should examine whether the model's accuracy varies significantly across racial, ethnic, and socioeconomic subgroups. If it does, the organization must select a different model, recalibrate it for its specific population, or supplement algorithmic scores with clinical and social worker judgment for populations where the algorithm performs poorly.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6h2i",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m6h2is", "text": "Building Equity-Centered VBC: What It Actually Takes", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p023",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s023", "text": "Building a VBC program that genuinely advances health equity rather than performing it in marketing materials requires design choices that are sometimes in tension with the financial optimization logic that drives most VBC strategy discussions. Equity-centered VBC design requires accepting lower short-term shared savings in exchange for serving populations whose care management needs are higher. It requires investing in CHW infrastructure before guaranteed funding arrives. It requires choosing quality metrics that are SDOH-adjusted rather than metrics that produce better scores simply because you serve a more advantaged population.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "stepBlock",
+      "_key": "m6sp02",
+      "title": "Five Concrete Steps Toward Equity-Centered VBC",
+      "steps": [
+        {"_key": "m6stp21", "number": 1, "title": "Implement Systematic SDOH Screening", "description": "Adopt the CMS Accountable Health Communities screening tool or PRAPARE instrument as a standard clinical workflow for all attributed VBC patients. SDOH data that is not systematically collected cannot be incorporated into risk adjustment, care planning, or community investment decisions. Start with your highest-risk quartile and expand from there."},
+        {"_key": "m6stp22", "number": 2, "title": "Disaggregate Your Quality Metrics", "description": "Disaggregate all quality metric performance data by race, ethnicity, income level, and geography before reporting aggregate performance. Organizations that only examine aggregate quality scores systematically miss equity disparities present in the underlying data — disparities that will worsen without targeted intervention."},
+        {"_key": "m6stp23", "number": 3, "title": "Audit Your Risk Stratification Algorithms", "description": "If you use AI-powered risk stratification, conduct a demographic equity audit before the next contract cycle. Examine whether the model's accuracy varies by race, income, and geography. If it does, address it — through vendor recalibration, supplemental clinical judgment, or a different tool."},
+        {"_key": "m6stp24", "number": 4, "title": "Build a CHW Program Now", "description": "The CHW ROI evidence and the 2024 Medicaid CHW Coverage Rule make 2026 the right year to build or expand a CHW program. Hire CHWs with lived experience of the specific communities and social challenges your highest-need patients face. Do not hire case managers and call them CHWs."},
+        {"_key": "m6stp25", "number": 5, "title": "Advocate for SDOH Risk Adjustment", "description": "Advocate explicitly for SDOH risk adjustment in every VBC contract negotiation with payers and in every CMS rulemaking comment you submit. The policy change required to fix the metric design problem will not happen without sustained, evidence-based advocacy from providers who are experiencing its consequences directly."}
+      ]
+    },
+    {
+      "_type": "knowledgeCheck",
+      "_key": "m6kc01",
+      "question": "A health system reports that its overall HbA1c control rate for diabetic patients has improved from 61% to 74% over three years — a significant achievement. Should leadership declare victory on diabetes equity?",
+      "hint": "Think about what aggregate statistics can hide.",
+      "answer": "Not without disaggregating the data. If the improvement was distributed equally across all demographic groups — white, Black, Latino, low-income, rural — then the organization has genuinely improved equity. But the research literature consistently shows that quality improvement programs that do not explicitly target disparate populations tend to improve aggregate rates by improving outcomes for the most engaged, most resource-rich patients while leaving the most vulnerable behind. If the system's HbA1c improvement was concentrated among higher-income, white patients while control rates for low-income Black and rural patients remained flat or worsened, the aggregate improvement actually reflects a widening disparity. The only way to know is to look at the disaggregated data — and report it publicly."
+    },
+    {
+      "_type": "knowledgeCheck",
+      "_key": "m6kc02",
+      "question": "A community health worker in your organization reports that a risk stratification algorithm has been flagging very few Black patients on her panel for high-intensity care management — even patients she knows from clinical experience to be at high risk. What should she do, and what structural issue does this reflect?",
+      "hint": "Think about the 2019 Science study and how AI models are trained.",
+      "answer": "The CHW should escalate her observation to clinical and data analytics leadership as a potential algorithmic bias issue — this is exactly the kind of frontline signal that formal AI equity audits are designed to detect. The structural issue is that AI risk stratification models are trained on historical utilization data, and if Black patients in the training dataset historically had lower healthcare utilization due to access barriers — not because they were healthier — the model will have learned to associate lower utilization with lower risk, systematically underestimating the risk of Black patients. This is the bias mechanism identified in the 2019 Obermeyer et al. Science study. The organization should conduct a formal demographic equity audit of the algorithm and report findings to leadership. If the bias is confirmed, the tool must be recalibrated, replaced, or supplemented with clinical judgment for affected populations."
+    },
+    {
+      "_type": "block",
+      "_key": "m6h2j",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m6h2js", "text": "Course Conclusion: What Value-Based Care Can and Cannot Do", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p024",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s024", "text": "Across six modules, this course has examined value-based care through every lens that matters: the economic incentive logic that makes it necessary, the policy architecture that makes it operational, the economics that determine whether it saves money, the technology that makes it analytically possible, the clinical model that determines whether it actually improves patient outcomes, and the equity design requirements that determine whether it works for everyone. The honest conclusion is nuanced but ultimately optimistic.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p025",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s025", "text": "Value-based care, when designed well, implemented with adequate infrastructure, and evaluated with appropriate equity metrics, produces meaningfully better clinical outcomes than fee-for-service at lower total cost. The fee-for-service system that currently dominates American healthcare is producing the worst outcomes per dollar of any wealthy nation on earth. The most credible available alternative — paying for health rather than for activity — is demonstrably capable of doing better.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6p026",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m6s026", "text": "What value-based care cannot do, on its own, is eliminate the social determinants of health that account for 30 to 55 percent of outcome variation. It cannot provide affordable housing, food security, safe neighborhoods, or living wages — the most powerful health interventions available at the population level. These are not arguments against value-based care. They are arguments for building it with sufficient ambition, equity intentionality, and long-term commitment to match the scale of the problem it is trying to solve.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m6hl02",
+      "style": "highlight",
+      "children": [{"_type": "span", "_key": "m6hls2", "text": "Vermont's AHEAD Model participation is the most ambitious attempt in state history to align payment incentives, equity goals, and clinical infrastructure toward a single measurable objective: a healthier population at sustainable cost. Whether it succeeds will depend on the willingness of providers, payers, policymakers, and community organizations to make the hard design choices that equity-centered VBC requires.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "takeawayBlock",
+      "_key": "m6tw01",
+      "title": "Key Takeaways — Health Equity and Value-Based Care",
+      "points": [
+        "Health disparities are preventable differences in outcomes between population groups — driven primarily by social determinants, not genetics or individual behavior.",
+        "Social determinants of health account for 30 to 55 percent of health outcome variation, yet remain largely outside clinical care delivery.",
+        "Three structural equity flaws in current VBC design: the panel selection problem, the metric design problem, and the investment allocation problem.",
+        "SDOH risk adjustment is the technical fix for inequitable quality metrics — but the current CMS adjustment is insufficient in magnitude and scope.",
+        "Community health workers are the most powerful equity tool in VBC, with a 4-to-1 ROI and 22% reduction in preventable hospitalizations in high-need populations.",
+        "AI risk stratification tools can encode and automate historical discrimination — demographic equity audits before deployment are ethically and increasingly legally required.",
+        "Disaggregating quality metrics by race, income, and geography is not optional — aggregate improvement can mask widening disparities beneath the average.",
+        "Vermont's AHEAD Model equity requirements represent the most ambitious state-level commitment to equity-centered VBC in the country — and a national model worth watching."
+      ]
+    }
+  ]
+}
