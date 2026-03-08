@@ -34,7 +34,7 @@ export default function Page() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
       <div className="mb-12">
-        <span className="text-sm font-bold text-purple-600 uppercase tracking-wider">
+        <span className="text-sm font-bold text-amber-600 uppercase tracking-wider">
           Health Equity
         </span>
         <h1 className="text-4xl font-black text-slate-900 mt-2 mb-4">
@@ -47,7 +47,7 @@ export default function Page() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {topics.map((item) => (
-          <Link key={item.label} href={item.href} className="flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-purple-200">
+          <Link key={item.label} href={item.href} className="flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-amber-200">
             <div>
               <h3 className="font-bold text-slate-900 text-lg mb-2">{item.label}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">{item.description}</p>
@@ -56,7 +56,7 @@ export default function Page() {
               <h4 className="text-[10px] font-bold uppercase text-slate-500 tracking-wider">Scope Includes</h4>
               {item.details.map(detail => (
                 <div key={detail} className="flex items-center gap-2">
-                  <span className="text-purple-500 font-bold">✓</span>
+                  <span className="text-amber-500 font-bold">✓</span>
                   <span className="text-xs font-medium text-slate-600">{detail}</span>
                 </div>
               ))}
@@ -68,12 +68,12 @@ export default function Page() {
         ))}
       </div>
 
-      <LatestHubReports pillar="Equity" colorClass="text-purple-600" />
+      <LatestHubReports pillar="Equity" colorClass="text-amber-600" />
 
       <HubSubscribeCTA 
         pillar="Equity" 
-        bgClass="bg-purple-50" 
-        buttonClass="bg-purple-600 hover:bg-purple-700" 
+        bgClass="bg-amber-50" 
+        buttonClass="bg-amber-600 hover:bg-amber-700" 
       />
     </div>
   );
