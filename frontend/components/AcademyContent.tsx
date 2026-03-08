@@ -3,6 +3,23 @@
 // components/AcademyContent.tsx
 // Educational PortableText renderer for Academy course modules.
 // Every block type is designed to serve the learner — not the publisher.
+//
+// COLOR SYSTEM — each color family has a semantic purpose:
+//   Indigo  → Core theory & key concepts (understanding)
+//   Teal    → Real-world application & examples (practice)
+//   Violet  → Mental models & analogies (connection)
+//   Amber   → Memory & self-testing (retention)
+//   Emerald → Achievement & synthesis (takeaways)
+//   Rose    → Correction & misconceptions (caution)
+//   Slate   → Neutral structure: process steps, data tables
+//
+// SHAPE SYSTEM — 6 distinct visual patterns:
+//   1. Left-border accent   → Key Concept, Example, Takeaways
+//   2. Floating pill badge  → Remember This
+//   3. Pure typography      → Expert Quote
+//   4. Light-band card      → Analogy, Knowledge Check
+//   5. Structural/Data      → Comparison Table, Step Process
+//   6. Two-tone split       → Misconception / Warning
 
 import { PortableText, PortableTextComponents } from "next-sanity";
 import { client } from "@/sanity/lib/client";
@@ -85,39 +102,38 @@ const components: PortableTextComponents = {
       return <h4 id={slugify(text)} className="scroll-mt-24 text-base font-bold text-slate-800 mt-8 mb-3">{children}</h4>;
     },
 
-    // 💡 Key Concept — full indigo card, impossible to miss
+    // ── Pattern 1: Left-border accent ─────────────────────────────────────────
+    // 💡 Key Concept — indigo left border, no dark header bar
     callout: ({ children }) => (
-      <div className="my-10 rounded-xl overflow-hidden shadow-md border border-indigo-200">
-        <div className="bg-indigo-600 px-5 py-3.5 flex items-center gap-3">
-          <span className="text-xl">💡</span>
-          <span className="text-[10px] font-black text-indigo-100 uppercase tracking-[0.2em]">Key Concept</span>
+      <div className="my-10 border-l-4 border-indigo-500 bg-indigo-50 rounded-r-xl px-6 py-5 shadow-sm">
+        <div className="flex items-center gap-2 mb-3">
+          <span className="text-base leading-none">💡</span>
+          <span className="text-[10px] font-black text-indigo-600 uppercase tracking-[0.2em]">Key Concept</span>
         </div>
-        <div className="bg-indigo-50 px-6 py-5">
-          <div className="text-[16px] text-indigo-950 leading-8 font-medium">{children}</div>
-        </div>
+        <div className="text-[16px] text-indigo-950 leading-8 font-medium">{children}</div>
       </div>
     ),
 
-    // 📌 Remember This — full amber card
+    // ── Pattern 2: Floating pill badge ────────────────────────────────────────
+    // 📌 Remember This — badge floats above card top edge
     highlight: ({ children }) => (
-      <div className="my-10 rounded-xl overflow-hidden shadow-md border border-amber-300">
-        <div className="bg-amber-500 px-5 py-3.5 flex items-center gap-3">
-          <span className="text-xl">📌</span>
-          <span className="text-[10px] font-black text-amber-950 uppercase tracking-[0.2em]">Remember This</span>
+      <div className="my-12 relative pt-5">
+        <div className="absolute -top-3 left-5 inline-flex items-center gap-1.5 bg-amber-400 text-amber-950 text-[10px] font-black uppercase tracking-[0.2em] px-3 py-1.5 rounded-full shadow-sm">
+          <span>📌</span> Remember This
         </div>
-        <div className="bg-amber-50 px-6 py-5">
+        <div className="border border-amber-200 bg-amber-50 rounded-xl px-6 py-5">
           <div className="text-[16px] text-amber-950 leading-8 font-medium">{children}</div>
         </div>
       </div>
     ),
 
-    // Expert voice / reflection — dark, dramatic
+    // ── Pattern 3: Pure typography ────────────────────────────────────────────
+    // Expert voice / reflection — no box, just large italic type
     quote: ({ children }) => (
-      <div className="my-10 bg-slate-800 rounded-xl px-8 py-8 relative overflow-hidden">
-        <span className="absolute -top-3 left-4 text-9xl font-black text-slate-600/40 leading-none select-none">&ldquo;</span>
-        <div className="relative z-10">
-          <p className="text-xl text-slate-100 italic leading-9 font-medium">{children}</p>
-        </div>
+      <div className="my-14 px-4 relative">
+        <span className="absolute -top-6 left-0 text-[7rem] font-black text-slate-200 leading-none select-none pointer-events-none">&ldquo;</span>
+        <p className="relative z-10 text-xl md:text-2xl text-slate-600 italic leading-10 font-medium pl-8">{children}</p>
+        <div className="mt-5 ml-8 h-0.5 w-10 bg-slate-300 rounded-full" />
       </div>
     ),
   },
@@ -248,77 +264,76 @@ const components: PortableTextComponents = {
       );
     },
 
-    // ── 🌍 Real-World Example ───────────────────────────────────────────────────
+    // ── Pattern 1: Left-border accent (teal) ──────────────────────────────────
+    // 🌍 Real-World Example — teal left border, editorial structure
     exampleBlock: ({ value }) => (
-      <div className="my-10 rounded-xl overflow-hidden shadow-md border border-teal-200">
-        <div className="bg-teal-700 px-5 py-3.5 flex items-center gap-3">
-          <span className="text-xl">🌍</span>
-          <span className="text-[10px] font-black text-teal-100 uppercase tracking-[0.2em]">
+      <div className="my-10 border-l-4 border-teal-500 bg-teal-50 rounded-r-xl px-6 py-5 shadow-sm">
+        <div className="flex items-center gap-2 mb-3">
+          <span className="text-base leading-none">🌍</span>
+          <span className="text-[10px] font-black text-teal-600 uppercase tracking-[0.2em]">
             {value.eyebrow || "Real-World Example"}
           </span>
         </div>
-        <div className="bg-teal-50 px-6 py-6 space-y-3">
-          {value.title && (
-            <h4 className="font-black text-teal-900 text-lg leading-snug">{value.title}</h4>
-          )}
-          {value.body && (
-            <p className="text-[16px] text-teal-800 leading-7">{value.body}</p>
-          )}
-          {value.outcome && (
-            <div className="flex items-start gap-2.5 pt-2 border-t border-teal-200 mt-3">
-              <span className="text-emerald-500 font-black text-lg shrink-0 mt-0.5">→</span>
-              <p className="text-sm font-bold text-teal-900 leading-relaxed">{value.outcome}</p>
-            </div>
-          )}
-          {value.source && (
-            <p className="text-xs text-teal-600 italic mt-1">Source: {value.source}</p>
-          )}
-        </div>
+        {value.title && (
+          <h4 className="font-black text-teal-900 text-lg leading-snug mb-2">{value.title}</h4>
+        )}
+        {value.body && (
+          <p className="text-[16px] text-teal-800 leading-7">{value.body}</p>
+        )}
+        {value.outcome && (
+          <div className="flex items-start gap-2.5 mt-4 pt-3 border-t border-teal-200">
+            <span className="text-emerald-500 font-black text-lg shrink-0 mt-0.5">→</span>
+            <p className="text-sm font-bold text-teal-900 leading-relaxed">{value.outcome}</p>
+          </div>
+        )}
+        {value.source && (
+          <p className="text-xs text-teal-600 italic mt-2">Source: {value.source}</p>
+        )}
       </div>
     ),
 
-    // ── 🔗 Analogy ──────────────────────────────────────────────────────────────
+    // ── Pattern 4: Light-band card ────────────────────────────────────────────
+    // 🔗 Analogy — violet tint, inline label, no dark header bar
     analogyBlock: ({ value }) => (
-      <div className="my-10 rounded-xl overflow-hidden shadow-md border border-violet-200">
-        <div className="bg-violet-700 px-5 py-3.5 flex items-center gap-3">
-          <span className="text-xl">🔗</span>
-          <span className="text-[10px] font-black text-violet-100 uppercase tracking-[0.2em]">Analogy</span>
+      <div className="my-10 bg-violet-50 border border-violet-200 rounded-xl px-6 py-5 shadow-sm">
+        <div className="flex items-center gap-2 mb-4">
+          <span className="text-base leading-none">🔗</span>
+          <span className="text-[10px] font-black text-violet-600 uppercase tracking-[0.2em]">Analogy</span>
           {value.concept && (
-            <span className="ml-auto text-xs font-bold text-violet-300 truncate max-w-[200px]">{value.concept}</span>
+            <span className="ml-auto text-xs font-bold text-violet-400 truncate max-w-[200px]">{value.concept}</span>
           )}
         </div>
-        <div className="bg-violet-50 px-6 py-6 space-y-4">
-          {value.analogy && (
-            <p className="text-lg text-violet-900 italic leading-8 font-medium">&ldquo;{value.analogy}&rdquo;</p>
-          )}
-          {value.bridge && (
-            <div className="flex items-start gap-3 pt-3 border-t border-violet-200">
-              <span className="text-violet-400 font-black text-base shrink-0 mt-0.5">↳</span>
-              <p className="text-[15px] text-violet-800 leading-7">{value.bridge}</p>
-            </div>
-          )}
-        </div>
+        {value.analogy && (
+          <p className="text-lg text-violet-900 italic leading-8 font-medium mb-4">&ldquo;{value.analogy}&rdquo;</p>
+        )}
+        {value.bridge && (
+          <div className="flex items-start gap-3 pt-3 border-t border-violet-200">
+            <span className="text-violet-400 font-black text-base shrink-0 mt-0.5">↳</span>
+            <p className="text-[15px] text-violet-800 leading-7">{value.bridge}</p>
+          </div>
+        )}
       </div>
     ),
 
-    // ── ⚖️ Comparison Table ─────────────────────────────────────────────────────
+    // ── Pattern 5: Structural / Data ──────────────────────────────────────────
+    // ⚖️ Comparison Table — lighter title bar, semantic column colors preserved
     comparisonBlock: ({ value }) => {
       const rows: any[] = value.rows || [];
       return (
         <div className="my-10 overflow-hidden rounded-xl shadow-md border border-slate-200">
           {value.title && (
-            <div className="bg-slate-800 px-5 py-3.5 text-center">
-              <span className="text-[10px] font-black text-slate-300 uppercase tracking-[0.2em]">{value.title}</span>
+            <div className="bg-slate-100 px-5 py-3 border-b border-slate-200 text-center">
+              <span className="text-[10px] font-black text-slate-600 uppercase tracking-[0.2em]">{value.title}</span>
             </div>
           )}
           <div className="overflow-x-auto bg-white">
             <table className="w-full border-collapse text-sm">
               <thead>
                 <tr>
-                  <th className="bg-slate-100 px-5 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest text-left w-1/4 border-b-2 border-slate-200">
+                  <th className="bg-slate-50 px-5 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest text-left w-1/4 border-b-2 border-slate-200">
                     Dimension
                   </th>
-                  <th className="bg-rose-600 px-5 py-4 text-[10px] font-black text-white uppercase tracking-widest text-center border-b-2 border-rose-700 w-[37.5%]">
+                  <th className="bg-rose-500 px-5 py-4 text-[10px] font-black text-white uppercase tracking-widest text-center border-b-2 border-rose-600 w-[37.5%]">
                     ✗ {value.leftLabel || "Before"}
                   </th>
                   <th className="bg-emerald-600 px-5 py-4 text-[10px] font-black text-white uppercase tracking-widest text-center border-b-2 border-emerald-700 w-[37.5%]">
@@ -341,15 +356,16 @@ const components: PortableTextComponents = {
       );
     },
 
-    // ── 📋 Step-by-Step Process ─────────────────────────────────────────────────
+    // ── Pattern 5: Structural / Data ──────────────────────────────────────────
+    // 📋 Step-by-Step Process — lighter header, vertical step flow preserved
     stepBlock: ({ value }) => {
       const steps: any[] = value.steps || [];
       return (
         <div className="my-10 bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
           {value.title && (
-            <div className="bg-slate-800 px-6 py-4">
+            <div className="bg-slate-50 border-b border-slate-200 px-6 py-4">
               <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-0.5">Process</p>
-              <p className="font-black text-white text-base">{value.title}</p>
+              <p className="font-black text-slate-800 text-base">{value.title}</p>
             </div>
           )}
           <div className="p-6 space-y-0">
@@ -378,67 +394,68 @@ const components: PortableTextComponents = {
       );
     },
 
-    // ── ❓ Knowledge Check ──────────────────────────────────────────────────────
+    // ── Pattern 4: Light-band card ────────────────────────────────────────────
+    // ❓ Knowledge Check — light amber header band, white body (quiz feel)
     knowledgeCheck: ({ value }) => (
-      <div className="my-10 rounded-xl overflow-hidden shadow-md border border-amber-300">
-        <div className="bg-amber-400 px-5 py-3.5 flex items-center gap-3">
-          <span className="text-xl">🧠</span>
-          <span className="text-[10px] font-black text-amber-900 uppercase tracking-[0.2em]">Knowledge Check</span>
+      <div className="my-10 rounded-xl border border-amber-200 overflow-hidden shadow-sm">
+        <div className="bg-amber-100 px-5 py-2.5 flex items-center gap-2 border-b border-amber-200">
+          <span className="text-base">🧠</span>
+          <span className="text-[10px] font-black text-amber-700 uppercase tracking-[0.2em]">Knowledge Check</span>
         </div>
-        <div className="bg-amber-50 px-6 py-6 space-y-5">
-          <p className="text-[17px] font-bold text-amber-950 leading-7">{value.question}</p>
+        <div className="bg-white px-6 py-6 space-y-5">
+          <p className="text-[17px] font-bold text-slate-800 leading-7">{value.question}</p>
           {value.hint && (
             <p className="text-sm text-amber-700 italic">Hint: {value.hint}</p>
           )}
-          <div className="border-t border-amber-200 pt-5">
+          <div className="border-t border-amber-100 pt-5">
             <p className="text-[10px] font-black text-amber-600 uppercase tracking-[0.2em] mb-2">Answer</p>
-            <p className="text-[16px] text-amber-900 leading-7">{value.answer}</p>
+            <p className="text-[16px] text-slate-700 leading-7">{value.answer}</p>
           </div>
         </div>
       </div>
     ),
 
-    // ── ✅ Key Takeaways ────────────────────────────────────────────────────────
+    // ── Pattern 1: Left-border accent (emerald) ───────────────────────────────
+    // ✅ Key Takeaways — emerald left border, summary list
     takeawayBlock: ({ value }) => {
       const points: string[] = value.points || [];
       return (
-        <div className="my-10 rounded-xl overflow-hidden shadow-md border border-emerald-200">
-          <div className="bg-emerald-700 px-5 py-3.5 flex items-center gap-3">
-            <span className="text-xl">✅</span>
-            <span className="text-[10px] font-black text-emerald-100 uppercase tracking-[0.2em]">
+        <div className="my-10 border-l-4 border-emerald-500 bg-emerald-50 rounded-r-xl px-6 py-5 shadow-sm">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="text-base leading-none">✅</span>
+            <span className="text-[10px] font-black text-emerald-700 uppercase tracking-[0.2em]">
               {value.title || "Key Takeaways"}
             </span>
           </div>
-          <div className="bg-emerald-50 px-6 py-5">
-            <ul className="space-y-3">
-              {points.map((point: string, i: number) => (
-                <li key={i} className="flex gap-3 text-[15px] text-emerald-900 leading-7">
-                  <span className="shrink-0 mt-1 w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[9px] font-black">{i + 1}</span>
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <ul className="space-y-3">
+            {points.map((point: string, i: number) => (
+              <li key={i} className="flex gap-3 text-[15px] text-emerald-900 leading-7">
+                <span className="shrink-0 mt-0.5 w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[9px] font-black">{i + 1}</span>
+                {point}
+              </li>
+            ))}
+          </ul>
         </div>
       );
     },
 
-    // ── ⚠️ Misconception Buster ─────────────────────────────────────────────────
+    // ── Pattern 6: Two-tone split ─────────────────────────────────────────────
+    // ⚠️ Misconception Buster — inline badge, rose/emerald two-tone body
     warningBlock: ({ value }) => (
-      <div className="my-10 rounded-xl overflow-hidden shadow-md border border-slate-300">
-        <div className="bg-rose-600 px-5 py-3.5 flex items-center gap-3">
-          <span className="text-xl">⚠️</span>
-          <span className="text-[10px] font-black text-rose-100 uppercase tracking-[0.2em]">Common Misconception</span>
-        </div>
-        <div className="divide-y divide-slate-200">
-          <div className="bg-rose-50 px-6 py-4 flex gap-3">
+      <div className="my-10 rounded-xl overflow-hidden border border-rose-200 shadow-sm">
+        <div className="bg-rose-50 px-6 py-4">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-base leading-none">⚠️</span>
+            <span className="text-[10px] font-black text-rose-600 uppercase tracking-[0.2em]">Common Misconception</span>
+          </div>
+          <div className="flex gap-3">
             <span className="text-rose-500 font-black text-lg shrink-0 mt-0.5">✗</span>
             <p className="text-[15px] text-rose-900 leading-7 line-through decoration-rose-400">{value.misconception}</p>
           </div>
-          <div className="bg-emerald-50 px-6 py-4 flex gap-3">
-            <span className="text-emerald-600 font-black text-lg shrink-0 mt-0.5">✓</span>
-            <p className="text-[15px] text-emerald-900 font-medium leading-7">{value.reality}</p>
-          </div>
+        </div>
+        <div className="bg-emerald-50 px-6 py-4 border-t border-rose-100 flex gap-3">
+          <span className="text-emerald-600 font-black text-lg shrink-0 mt-0.5">✓</span>
+          <p className="text-[15px] text-emerald-900 font-medium leading-7">{value.reality}</p>
         </div>
       </div>
     ),

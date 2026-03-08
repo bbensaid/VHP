@@ -7,7 +7,7 @@ export default function Page() {
       pillar="Equity"
       title="SDOH Integration"
       description="Addressing social drivers of health outcomes."
-      colorClass="text-purple-700"
+      colorClass="text-amber-700"
       category="SDOH"
     />
   );

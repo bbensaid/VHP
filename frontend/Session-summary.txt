@@ -1,0 +1,18 @@
+Session Summary
+Project: Vermont Health Platform (Health Transformation Review)
+A Next.js 14 app-router site with Sanity CMS backend, deployed at localhost:3000.
+
+Architecture
+frontend/app/layout.tsx — Root layout: wraps everything in Header + AppShell + Footer
+frontend/components/AppShell.tsx — Manages left/right collapsible sidebars; auto-collapses on article/academy module routes
+frontend/components/templates/AcademyModuleEngine.tsx — Server component; fetches module + course sibling data from Sanity
+frontend/components/templates/AcademyModuleLayout.tsx — Client component; renders the full module reader UI (sticky top bar, sidebar module list, content cards, prev/next nav)
+frontend/components/AcademyContent.tsx — PortableText renderer for academy module body; handles all custom block types (statGrid, exampleBlock, comparisonBlock, knowledgeCheck, takeawayBlock, etc.)
+Key Decisions This Session
+Academy module pages at /academy/modules/[slug] use a self-contained layout (their own sticky bar + sidebar), completely separate from the global AppShell sidebars (which auto-collapse on these routes)
+Spacing fix applied: Increased column gap between the module sidebar and main content from 1.5rem → 3.5rem; bumped card spacing from space-y-6 → space-y-8; increased paragraph mb-6 → mb-8 in AcademyContent.tsx
+Current State
+Spacing changes are saved and should be live. User was reviewing the result at localhost:3000/academy/modules/vbc-fundamentals-m1.
+
+Next Steps
+Updating color. More details by user below.

@@ -7,7 +7,7 @@ export default function Page() {
       pillar="Equity"
       title="Algorithmic Bias"
       description="Ensuring fairness in AI and clinical algorithms."
-      colorClass="text-purple-700"
+      colorClass="text-amber-700"
       category="Bias"
     />
   );

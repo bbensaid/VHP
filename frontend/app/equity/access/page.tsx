@@ -7,7 +7,7 @@ export default function Page() {
       pillar="Equity"
       title="Access Disparity"
       description="Closing gaps in rural and underserved care."
-      colorClass="text-purple-700"
+      colorClass="text-amber-700"
       category="Access"
     />
   );
