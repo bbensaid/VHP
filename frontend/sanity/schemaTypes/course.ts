@@ -57,6 +57,14 @@ export default defineType({
       type: 'array',
       of: [{ type: 'reference', to: [{ type: 'instructor' }] }],
     }),
+    // Ordered list of modules that make up this course
+    defineField({
+      name: 'modules',
+      title: 'Course Modules',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'academyModule' }] }],
+      description: 'Link the academyModule documents for this course in order',
+    }),
     // The full syllabus content for the [slug] page
     defineField({
       name: 'overview',

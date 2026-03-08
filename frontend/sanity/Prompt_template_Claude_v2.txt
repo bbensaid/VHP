@@ -1,0 +1,137 @@
+*** OBJECTIVE ***
+Generate a single, high-fidelity, long-form research article as a RAW MINIFIED JSON OBJECT.
+This object must strictly adhere to the 'policyAnalysis' Sanity schema.
+Think of this as a peer-reviewed journal article combined with an executive intelligence brief —
+not a blog post. Depth, specificity, named data, and expert-level argumentation are mandatory.
+
+*** 1. CORE EXECUTION RULES (CRITICAL — DO NOT BREAK THESE) ***
+- OUTPUT ONLY THE JSON. No markdown fences (no ```json), no intro sentence, no outro.
+- CHARACTER SANITIZATION: Strictly NO raw control characters (\n, \t, \r inside strings).
+  Use \u2014 for em dash, \u2019 for right single quote/apostrophe, \u201c/\u201d for curly quotes.
+- ESCAPING: All internal double-quotes must be escaped as \". All backslashes as \\.
+- MINIFICATION: The entire output must be a single, continuous line of text with no line breaks.
+
+*** 2. REQUIRED FIELD VALUES ***
+- "pillar"     : MUST be exactly one of: "Policy" | "Economics" | "Technology" | "Clinical" | "Equity"
+- "category"   : MUST match the subcategory label provided in Section 5 (e.g. "Value-Based Care Models")
+- "status"     : MUST be exactly one of: "Active" | "Proposed" | "In Committee"
+- "impactLevel": MUST be exactly one of: "Critical" | "High" | "Medium"
+- "publishedAt": Use the ISO timestamp provided in Section 5. If none given, use current date in format "2026-01-15T09:00:00Z"
+
+*** 3. LENGTH & DEPTH REQUIREMENTS (NON-NEGOTIABLE) ***
+
+MINIMUM BODY BLOCKS: 35 blocks. Target 40-50 blocks for a full-length article.
+MINIMUM PROSE WORD COUNT: Each normal paragraph must contain AT LEAST 60 words.
+  Do not write short, thin paragraphs. Every paragraph must advance the argument with
+  specific data, named programs, dollar figures, named legislation, or expert-level analysis.
+  A paragraph that could have been written without domain expertise is not acceptable.
+
+REQUIRED CONTENT STRUCTURE — the article must contain ALL of the following:
+  - 1  opening lead paragraph (normal) — sets the crisis, stakes, and scope. No heading before it.
+  - 5-7 h2 section headings, each representing a major chapter of the analysis
+  - 2-3 h3 sub-headings distributed across sections (never immediately after an h2)
+  - 8-12 normal paragraphs of substantive prose — each 60+ words, data-rich
+  - 2  quote blocks — high-impact statistics or authoritative assertions with source context
+  - 2  callout blocks — one policy implication, one executive action item
+  - 2  bullet lists — each with 4-6 items, each item a complete sentence (not a fragment)
+  - 1  numbered list — a step-by-step process, ranked findings, or implementation sequence
+  - 2  data tables — each with at least 4 rows and 3 columns of real, specific data
+  - 1  image block — caption must be a detailed technical description (2-3 sentences)
+  - 1  audio block — MANDATORY. Use a plausible HTR podcast URL and write a substantive summary.
+  - 1  video block — MANDATORY. Use a plausible YouTube URL and write a substantive caption.
+
+DEPTH STANDARDS — every article must include:
+  - At least 6 specific dollar figures, percentages, or quantitative data points
+  - At least 3 named federal programs, legislation, or regulatory rules (e.g. CONNECT Act, CMS AHEAD Model)
+  - At least 2 named geographic examples (states, regions, or specific health systems)
+  - At least 1 forward-looking projection or scenario analysis
+  - A conclusion section (h2: "Executive Takeaway" or similar) with concrete next steps
+
+*** 4. BODY COMPONENT RULES (THE "NEVER-FAIL" RULES) ***
+
+CRITICAL: Every item in the "body" array MUST have a unique "_key" field.
+Format: "_key": "blk[sequential_3digit_number]"  e.g. "blk001", "blk002", "blk003" ... "blk042"
+
+HEADING HIERARCHY RULES (enforce strictly):
+- Use h2 for MAJOR section breaks (5-7 per article). Think of these as chapter titles.
+- Use h3 for sub-points WITHIN a section. An h3 must always appear after an h2, never before.
+- NEVER place two h2 blocks back-to-back without at least two normal paragraphs between them.
+- NEVER place an h3 immediately after an h2 — always write at least one normal paragraph first.
+- The article must NOT open with a heading. The first block must always be a normal paragraph.
+- Natural rhythm: h2 -> paragraph -> paragraph -> h3 -> paragraph -> paragraph -> quote -> h2...
+
+--- BLOCK FORMAT REFERENCE ---
+
+TEXT BLOCK (normal paragraph — minimum 60 words of substantive prose):
+{"_key":"blk001","_type":"block","style":"normal","children":[{"_type":"span","text":"Full paragraph text here. Must be at least 60 words of specific, expert-level analysis with named data, programs, or legislation. Do not write placeholder or thin content.","marks":[]}]}
+
+TEXT BLOCK with inline formatting (use marks array for emphasis):
+{"_key":"blk002","_type":"block","style":"normal","children":[{"_type":"span","text":"The ","marks":[]},{"_type":"span","text":"critical finding","marks":["strong"]},{"_type":"span","text":" is that per-capita administrative costs at Vermont\u2019s critical access hospitals exceeded CMS benchmarks by 400% in FY2025, a gap that no value-based contract adjustment can close without structural consolidation.","marks":[]}]}
+
+HEADING H2:
+{"_key":"blk003","_type":"block","style":"h2","children":[{"_type":"span","text":"Section Title Here","marks":[]}]}
+
+HEADING H3:
+{"_key":"blk004","_type":"block","style":"h3","children":[{"_type":"span","text":"Subsection Title Here","marks":[]}]}
+
+QUOTE (high-impact stat or authoritative assertion — include source context in the text):
+{"_key":"blk005","_type":"block","style":"quote","children":[{"_type":"span","text":"Rural hospitals that have not implemented a certified EHR with bidirectional HIE connectivity by Q4 2026 will be ineligible for the CONNECT Act\u2019s $2.1 billion interoperability incentive pool \u2014 CMS Office of Rural Health Policy, February 2026.","marks":[]}]}
+
+CALLOUT (renders as highlighted action box — must be a complete, actionable insight):
+{"_key":"blk006","_type":"block","style":"callout","children":[{"_type":"span","text":"Executive Action Required: CFOs at Critical Access Hospitals operating below 20 days cash on hand must initiate a formal Act 167 solvency review before July 1, 2026, or risk losing eligibility for the HRSA Rural Hospital Stabilization Grant Program\u2019s second tranche.","marks":[]}]}
+
+BULLET LIST (each item must be a complete sentence, not a fragment — 4-6 items per list):
+{"_key":"blk007","_type":"block","style":"normal","listItem":"bullet","level":1,"children":[{"_type":"span","text":"Complete sentence bullet point with specific data or named program reference.","marks":[]}]}
+
+NUMBERED LIST (use for step-by-step processes, ranked findings, or implementation sequences):
+{"_key":"blk008","_type":"block","style":"normal","listItem":"number","level":1,"children":[{"_type":"span","text":"Step one of the implementation sequence, with specific timing and responsible party named.","marks":[]}]}
+
+DATA TABLE (MUST be a valid JSON array of flat objects — minimum 4 rows, 3 columns, real data):
+{"_key":"blk009","_type":"code","title":"Descriptive Table Title","language":"json","code":[{"Column A":"Value 1","Column B":"Value 2","Column C":"Value 3"},{"Column A":"Value 4","Column B":"Value 5","Column C":"Value 6"},{"Column A":"Value 7","Column B":"Value 8","Column C":"Value 9"},{"Column A":"Value 10","Column B":"Value 11","Column C":"Value 12"}]}
+
+IMAGE (NO asset field, NO _ref — caption and alt ONLY. Caption must be 2-3 sentences describing
+what a real data visualization or diagram for this topic would show):
+{"_key":"blk010","_type":"image","caption":"Detailed 2-3 sentence technical description of what this image would show, including what data it visualizes, what the axes or categories represent, and what the key insight is.","alt":"Accessible one-sentence description of the image for screen readers."}
+
+AUDIO BRIEFING (MANDATORY — always include. Use the AUDIO_URL from Section 6):
+{"_key":"blk011","_type":"audio","title":"HTR Podcast: [Descriptive Episode Title]","url":"https://podcast.htr.com/episodes/[url-safe-episode-slug].mp3","summary":"Substantive 2-sentence description of what the listener will hear, naming the guest, their role, and the specific policy or data question being discussed."}
+
+VIDEO (MANDATORY — always include. Use the VIDEO_URL from Section 6):
+{"_key":"blk012","_type":"video","url":"https://www.youtube.com/watch?v=HTR2026DEMO","caption":"Substantive 2-sentence caption describing what the video covers, who presents, and what the key data or demonstration shows."}
+
+*** 5. SCHEMA BLUEPRINT (FOLLOW EXACTLY) ***
+{
+  "_type": "policyAnalysis",
+  "title": "[INSERT_COMPELLING_TITLE — should read like a Nature or NEJM article title, not a blog post]",
+  "slug": {"current": "[INSERT_URL_SAFE_KEBAB_SLUG]"},
+  "publishedAt": "[INSERT_ISO_TIMESTAMP]",
+  "status": "[Active|Proposed|In Committee]",
+  "pillar": "[Policy|Economics|Technology|Clinical|Equity]",
+  "category": "[INSERT_EXACT_SUBCATEGORY_NAME_FROM_NAV]",
+  "impactLevel": "[Critical|High|Medium]",
+  "summary": "[INSERT_3-4_SENTENCE_ABSTRACT — must include the core finding, the geographic or programmatic scope, the primary data point, and the executive implication. Written for a C-suite healthcare audience.]",
+  "body": [
+    MINIMUM 35 blocks. Target 40-50. Follow all rules above.
+  ]
+}
+
+*** 6. DYNAMIC VARIABLES FOR THIS RUN ***
+PERSONA:     [INSERT_EXPERT_ROLE_AND_ORGANIZATION — sets the authoritative voice, depth, and data sourcing]
+PILLAR:      [Policy|Economics|Technology|Clinical|Equity]
+CATEGORY:    [EXACT subcategory name matching the nav — this becomes the "category" field]
+TOPIC:       [2-3 sentence description of the specific issue, angle, data question, or policy gap being analyzed]
+IMPACT:      [Critical|High|Medium]
+STATUS:      [Active|Proposed|In Committee]
+DATE:        [ISO 8601 timestamp e.g. 2026-03-01T09:00:00Z]
+AUDIO_URL:   [URL for the podcast episode MP3, or use https://podcast.htr.com/episodes/[slug].mp3]
+VIDEO_URL:   [YouTube URL for the associated video briefing, or use https://www.youtube.com/watch?v=HTR2026DEMO]
+REQUIREMENTS:[Specific content mandates: named statistics, named legislation, geographic scope, specific
+               health systems or states, data table subjects, image subject, and any other constraints]
+CONTENT_MODE:[Choose one — controls tone and structure throughout:
+              POLICY_BRIEF   — Expert audience (C-suite, policymakers, analysts). Authoritative, data-dense,
+                               argument-forward. Opens with a crisis or finding. Ends with executive actions.
+              ACADEMY_MODULE — Educational audience (professionals learning a topic). Progressive complexity,
+                               plain-language analogies, defined terms. Opens with a relatable analogy.
+                               Ends with self-assessment questions and key takeaway bullets.
+              RESEARCH_REPORT — Academic/researcher audience. Methods-forward, citations prominent,
+                                hedged conclusions, peer-review tone.]
