@@ -5,11 +5,11 @@
   /* =========================================
      LAYER 1: BRAND PALETTE (The 5 Pillars)
      ========================================= */
-  --color-brand-orange: #c2410c; /* Policy */
+  --color-brand-sky-policy: #0369a1; /* Policy */
   --color-brand-green: #059669; /* Economics */
   --color-brand-indigo: #4f46e5; /* Technology */
   --color-brand-amber: #d97706; /* Equity */
-  --color-brand-rose: #e11d48; /* Clinical */
+  --color-brand-red: #dc2626; /* Clinical */
   --color-brand-teal: #0d9488; /* Science (New) */
   --color-brand-sky: #38bdf8; /* Academy (Lighter) */
   --color-brand-violet: #d946ef; /* Advisory (Changed to Fuchsia) */
@@ -28,10 +28,10 @@
   /* =========================================
      LAYER 3: CONTEXTUAL CONTENT (Pillar Mapping)
      ========================================= */
-  --color-card-policy: var(--color-brand-orange);
+  --color-card-policy: var(--color-brand-sky-policy);
   --color-card-economics: var(--color-brand-green);
   --color-card-tech: var(--color-brand-indigo);
-  --color-card-clinical: var(--color-brand-rose);
+  --color-card-clinical: var(--color-brand-red);
   --color-card-equity: var(--color-brand-amber);
   --color-card-science: var(--color-brand-teal);
 

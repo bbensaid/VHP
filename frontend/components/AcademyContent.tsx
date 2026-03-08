@@ -16,8 +16,8 @@
 // SHAPE SYSTEM — 6 distinct visual patterns:
 //   1. Left-border accent   → Key Concept, Example, Takeaways
 //   2. Floating pill badge  → Remember This
-//   3. Pure typography      → Expert Quote
-//   4. Light-band card      → Analogy, Knowledge Check
+//   3. Pure typography      → Expert Quote, Analogy
+//   4. Light-band card      → Knowledge Check
 //   5. Structural/Data      → Comparison Table, Step Process
 //   6. Two-tone split       → Misconception / Warning
 
@@ -38,12 +38,12 @@ const trendIcon: Record<string, { icon: string; color: string }> = {
   neutral: { icon: "→", color: "text-slate-400"   },
 };
 
-// ── Stat card accent colors — rotate through for visual variety ───────────────
+// ── Stat card accent colors — light tint, dark colored numbers ───────────────
 const statColors = [
-  { bg: "bg-indigo-600",  text: "text-white",       sub: "text-indigo-200" },
-  { bg: "bg-emerald-600", text: "text-white",       sub: "text-emerald-200" },
-  { bg: "bg-amber-500",   text: "text-white",       sub: "text-amber-100"  },
-  { bg: "bg-rose-600",    text: "text-white",       sub: "text-rose-200"   },
+  { bg: "bg-indigo-50",  border: "border-indigo-200",  num: "text-indigo-700",  label: "text-indigo-900",  sub: "text-indigo-500"  },
+  { bg: "bg-emerald-50", border: "border-emerald-200", num: "text-emerald-700", label: "text-emerald-900", sub: "text-emerald-600" },
+  { bg: "bg-amber-50",   border: "border-amber-200",   num: "text-amber-700",   label: "text-amber-900",   sub: "text-amber-600"   },
+  { bg: "bg-rose-50",    border: "border-rose-200",    num: "text-rose-700",    label: "text-rose-900",    sub: "text-rose-500"    },
 ];
 
 const components: PortableTextComponents = {
@@ -80,10 +80,9 @@ const components: PortableTextComponents = {
             <span className="text-[9px] font-black text-slate-400 uppercase tracking-[0.25em] px-2">Section</span>
             <div className="h-px flex-1 bg-slate-200" />
           </div>
-          <h2 id={slugify(text)} className="scroll-mt-24 text-2xl font-black text-slate-900 leading-snug mb-2">
+          <h2 id={slugify(text)} className="scroll-mt-24 text-2xl font-black text-slate-900 leading-snug border-l-4 border-indigo-500 pl-4">
             {children}
           </h2>
-          <div className="h-1 w-12 bg-indigo-500 rounded-full" />
         </div>
       );
     },
@@ -91,8 +90,8 @@ const components: PortableTextComponents = {
     h3: ({ children, value }) => {
       const text = value.children?.map((c: any) => c.text).join("") || "";
       return (
-        <h3 id={slugify(text)} className="scroll-mt-24 flex items-center gap-3 text-sm font-black text-slate-700 uppercase tracking-widest mt-10 mb-4">
-          <span className="w-5 h-0.5 bg-indigo-400 rounded-full shrink-0" />{children}
+        <h3 id={slugify(text)} className="scroll-mt-24 flex items-center gap-2.5 text-sm font-black text-slate-700 uppercase tracking-widest mt-10 mb-4">
+          <span className="w-2.5 h-2.5 bg-indigo-500 rounded-sm shrink-0" />{children}
         </h3>
       );
     },
@@ -247,12 +246,12 @@ const components: PortableTextComponents = {
               const c = statColors[i % statColors.length];
               const trend = stat.trend ? trendIcon[stat.trend] : null;
               return (
-                <div key={i} className={`${c.bg} rounded-2xl p-6 flex flex-col gap-2 shadow-md`}>
-                  <div className={`text-4xl font-black ${c.text} leading-none flex items-start gap-2`}>
+                <div key={i} className={`${c.bg} border ${c.border} rounded-2xl p-6 flex flex-col gap-2`}>
+                  <div className={`text-4xl font-black ${c.num} leading-none flex items-start gap-2`}>
                     {stat.value}
                     {trend && <span className={`text-xl ${trend.color} mt-1`}>{trend.icon}</span>}
                   </div>
-                  <div className={`text-sm font-bold ${c.text} leading-snug`}>{stat.label}</div>
+                  <div className={`text-sm font-bold ${c.label} leading-snug`}>{stat.label}</div>
                   {stat.context && (
                     <div className={`text-xs ${c.sub} leading-relaxed mt-1`}>{stat.context}</div>
                   )}
@@ -292,26 +291,27 @@ const components: PortableTextComponents = {
       </div>
     ),
 
-    // ── Pattern 4: Light-band card ────────────────────────────────────────────
-    // 🔗 Analogy — violet tint, inline label, no dark header bar
+    // ── Pattern 3: Pure typography ────────────────────────────────────────────
+    // 🔗 Analogy — no box, italic pullquote style (distinct from Key Concept)
     analogyBlock: ({ value }) => (
-      <div className="my-10 bg-violet-50 border border-violet-200 rounded-xl px-6 py-5 shadow-sm">
-        <div className="flex items-center gap-2 mb-4">
-          <span className="text-base leading-none">🔗</span>
-          <span className="text-[10px] font-black text-violet-600 uppercase tracking-[0.2em]">Analogy</span>
+      <div className="my-12 pl-8 relative">
+        <span className="absolute -top-4 left-0 text-[5rem] font-black text-slate-200 leading-none select-none pointer-events-none">&ldquo;</span>
+        <div className="flex items-center gap-2 mb-2 relative z-10">
+          <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Analogy</span>
           {value.concept && (
-            <span className="ml-auto text-xs font-bold text-violet-400 truncate max-w-[200px]">{value.concept}</span>
+            <span className="text-xs text-slate-400">— {value.concept}</span>
           )}
         </div>
         {value.analogy && (
-          <p className="text-lg text-violet-900 italic leading-8 font-medium mb-4">&ldquo;{value.analogy}&rdquo;</p>
+          <p className="relative z-10 text-xl text-slate-600 italic leading-9 font-medium mb-3">{value.analogy}</p>
         )}
         {value.bridge && (
-          <div className="flex items-start gap-3 pt-3 border-t border-violet-200">
-            <span className="text-violet-400 font-black text-base shrink-0 mt-0.5">↳</span>
-            <p className="text-[15px] text-violet-800 leading-7">{value.bridge}</p>
+          <div className="flex items-start gap-2 mt-3 pt-3 border-t border-slate-200">
+            <span className="text-slate-400 font-black text-sm shrink-0 mt-0.5">↳</span>
+            <p className="text-[15px] text-slate-600 leading-7">{value.bridge}</p>
           </div>
         )}
+        <div className="mt-4 h-0.5 w-8 bg-slate-200 rounded-full" />
       </div>
     ),
 
