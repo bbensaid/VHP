@@ -24,7 +24,7 @@ export default async function CoursesPage() {
     if (index === 0) return "bg-slate-900 text-white border-slate-900";
     switch (filter) {
       case "Policy Pillar":
-        return "bg-white text-card-policy border-card-policy/30 hover:border-card-policy hover:bg-orange-50";
+        return "bg-white text-card-policy border-card-policy/30 hover:border-card-policy hover:bg-sky-50";
       case "Economics Pillar":
         return "bg-white text-card-economics border-card-economics/30 hover:border-card-economics hover:bg-emerald-50";
       case "Technology Pillar":

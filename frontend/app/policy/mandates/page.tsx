@@ -7,7 +7,7 @@ export default function Page() {
       pillar="Policy"
       title="Public Health Mandates"
       description="Monitoring executive orders and public health directives."
-      colorClass="text-orange-700"
+      colorClass="text-sky-700"
       category="Mandates"
     />
   );

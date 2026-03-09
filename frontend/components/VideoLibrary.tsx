@@ -9,11 +9,11 @@ import { MagnifyingGlassIcon, XMarkIcon } from '@heroicons/react/24/outline';
 const getPillarTheme = (pillar: string | null) => {
   switch (pillar) {
     case "Economics":
-      return { text: "text-brand-green", border: "border-brand-green", bg: "bg-brand-green", hoverBg: "hover:bg-brand-green" };
+      return { text: "text-brand-economics", border: "border-brand-economics", bg: "bg-brand-economics", hoverBg: "hover:bg-brand-economics" };
     case "Policy":
-      return { text: "text-brand-orange", border: "border-brand-orange", bg: "bg-brand-orange", hoverBg: "hover:bg-brand-orange" };
+      return { text: "text-brand-policy", border: "border-brand-policy", bg: "bg-brand-policy", hoverBg: "hover:bg-brand-policy" };
     case "Technology":
-      return { text: "text-brand-indigo", border: "border-brand-indigo", bg: "bg-brand-indigo", hoverBg: "hover:bg-brand-indigo" };
+      return { text: "text-brand-technology", border: "border-brand-technology", bg: "bg-brand-technology", hoverBg: "hover:bg-brand-technology" };
     default:
       return { text: "text-slate-500", border: "border-slate-500", bg: "bg-slate-500", hoverBg: "hover:bg-slate-500" };
   }

@@ -14,7 +14,7 @@ const getCategoryStyle = (type: string, pillar: string) => {
   if (type === "webinar") return "text-rose-700 bg-rose-50 border-rose-200";
   switch (pillar) {
     case "Policy":
-      return "text-orange-700 bg-orange-50 border-orange-200";
+      return "text-sky-700 bg-sky-50 border-sky-200";
     case "Economics":
       return "text-emerald-700 bg-emerald-50 border-emerald-200";
     case "Technology":
@@ -72,9 +72,9 @@ export default function HomeContent({
                 <Link
                   href={
                     item._type === "webinar"
-                      ? `/education/webinars/${item.slug}`
+                      ? `/academy/webinars/${item.slug}`
                       : item._type === "course"
-                        ? `/education/courses/${item.slug}`
+                        ? `/academy/courses/${item.slug}`
                         : `/advisory/reports`
                   }
                   className="text-base font-bold text-slate-800 leading-snug hover:text-indigo-600"

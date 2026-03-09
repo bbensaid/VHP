@@ -37,7 +37,7 @@ export default async function WebinarDetailPage({
         <div className="container mx-auto px-4 md:px-8 max-w-4xl">
           <div className="flex items-center gap-3 mb-6">
             <Link 
-              href="/education/webinars" 
+              href="/academy/webinars" 
               className="text-blue-300 hover:text-white uppercase text-xs font-bold tracking-widest transition-colors"
             >
               Webinars

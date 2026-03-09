@@ -8,7 +8,7 @@ const pillars = [
   {
     label: "Policy",
     href: "/policy",
-    color: "hover:text-orange-400",
+    color: "hover:text-sky-400",
     sub: [
       { label: "Regulation & Legislation", href: "/policy/regulation" },
       { label: "Public Health Mandates", href: "/policy/mandates" },
@@ -41,23 +41,21 @@ const pillars = [
   {
     label: "Clinical",
     href: "/clinical",
-    color: "hover:text-rose-400",
+    color: "hover:text-red-400",
     sub: [
       { label: "Hospital-at-Home", href: "/clinical/hah" },
       { label: "Precision Medicine", href: "/clinical/precision" },
       { label: "Virtual Care Models", href: "/clinical/virtual" },
-      { label: "Population Health", href: "/clinical/population" },
     ],
   },
   {
     label: "Equity",
     href: "/equity",
-    color: "hover:text-violet-400",
+    color: "hover:text-amber-400",
     sub: [
       { label: "SDOH Integration", href: "/equity/sdoh" },
       { label: "Algorithmic Bias", href: "/equity/bias" },
       { label: "Access Disparity", href: "/equity/access" },
-      { label: "Community Engagement", href: "/equity/community" },
     ],
   },
 ];
@@ -67,7 +65,6 @@ const companyLinks = [
   { label: "Mission & Vision", href: "/mission" },
   { label: "Our Methodology", href: "/about/methodology" },
   { label: "FAQ", href: "/faq" },
-  { label: "Careers", href: "/careers" },
   { label: "Contact Us", href: "/advisory/contact" },
 ];
 

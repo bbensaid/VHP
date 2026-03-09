@@ -2,12 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import HomeSidebar, {
-  ALL_SECTIONS as HOME_SECTIONS,
-} from "@/components/HomeSidebar";
-import RightSidebar, {
-  ALL_SECTIONS as RIGHT_SECTIONS,
-} from "@/components/RightSidebar";
+import HomeSidebar from "@/components/HomeSidebar";
+import RightSidebar from "@/components/RightSidebar";
 import CollapsibleSidebar from "@/components/CollapsibleSidebar";
 import TickerStrip from "@/components/TickerStrip";
 import { XMarkIcon, ArrowPathIcon } from "@heroicons/react/24/outline";
@@ -40,8 +36,6 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const [isLeftSidebarOpen, setLeftSidebarOpen] = useState(true);
   const [isRightSidebarOpen, setRightSidebarOpen] = useState(true);
   
-  const [leftOpenSections, setLeftOpenSections] = useState<string[]>([]);
-  const [rightOpenSections, setRightOpenSections] = useState<string[]>([]);
   const { isStripVisible, setStripVisible } = useTicker();
   const [clientTickerData, setClientTickerData] = useState<any>(null);
 
@@ -96,18 +90,6 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   }, [tickerData, clientTickerData]);
 
   const activeTickerData = tickerData || clientTickerData;
-
-  const toggleLeftSection = (section: string) => {
-    setLeftOpenSections((prev) =>
-      prev.includes(section) ? prev.filter((s) => s !== section) : [...prev, section],
-    );
-  };
-
-  const toggleRightSection = (section: string) => {
-    setRightOpenSections((prev) =>
-      prev.includes(section) ? prev.filter((s) => s !== section) : [...prev, section],
-    );
-  };
 
   const showBreadcrumbs = !isStudio; 
   const hasTickerData = !!activeTickerData;
@@ -169,11 +151,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           stickyTop={sidebarTop}
           expandLabel="Display Sidebar"
         >
-          <HomeSidebar
-            openSections={leftOpenSections}
-            onToggleSection={toggleLeftSection}
-            onNavigate={handleSidebarLinkClick}
-          />
+          <HomeSidebar onNavigate={handleSidebarLinkClick} />
         </CollapsibleSidebar>
 
         {/* Tighter margins applied here to expand the middle container's room */}
@@ -191,10 +169,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           stickyTop={sidebarTop}
           expandLabel="Display Sidebar"
         >
-          <RightSidebar
-            openSections={rightOpenSections}
-            onToggleSection={toggleRightSection}
-          />
+          <RightSidebar />
         </CollapsibleSidebar>
       </div>
     </div>

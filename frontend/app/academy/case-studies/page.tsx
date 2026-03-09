@@ -16,7 +16,7 @@ export default async function CaseStudiesPage() {
     switch (pillar) {
       case "Economics": return "text-card-economics bg-emerald-50";
       case "Technology": return "text-card-tech bg-indigo-50";
-      case "Policy": return "text-card-policy bg-orange-50";
+      case "Policy": return "text-card-policy bg-sky-50";
       default: return "text-gray-600 bg-gray-50";
     }
   };

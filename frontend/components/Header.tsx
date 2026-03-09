@@ -45,7 +45,6 @@ const clinicalItems = [
   { label: "Hospital-at-Home", href: "/clinical/hah" },
   { label: "Precision Medicine", href: "/clinical/precision" },
   { label: "Virtual Care Models", href: "/clinical/virtual" },
-  { label: "Population Health", href: "/clinical/population" }
 ];
 
 const equityItems = [
@@ -53,7 +52,6 @@ const equityItems = [
   { label: "SDOH Integration", href: "/equity/sdoh" },
   { label: "Algorithmic Bias", href: "/equity/bias" },
   { label: "Access Disparity", href: "/equity/access" },
-  { label: "Community Engagement", href: "/equity/community" }
 ];
 
 const companyItems = [
@@ -61,8 +59,7 @@ const companyItems = [
   { href: "/mission", label: "Mission & Vision" },
   { href: "/about/methodology", label: "Our Methodology" },
   { href: "/faq", label: "FAQ" },
-  { href: "/careers", label: "Careers" },
-  { href: "/contact", label: "Contact Us" },
+  { href: "/advisory/contact", label: "Contact Us" },
 ];
 
 // --- 2. MAIN COMPONENT ---

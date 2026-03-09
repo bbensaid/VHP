@@ -5,7 +5,7 @@ import TrendingTopicsClientPage from "./TrendingTopicsClientPage";
 // FIX: Mapped to the actual existing pages in your app that match these topics
 // instead of the non-existent /topics/ directory.
 import VBCPage from "@/app/economics/value/page";
-import WorkforcePage from "@/app/operations/workforce/page";
+import WorkforcePage from "@/app/economics/cea/page";
 import TelehealthPage from "@/app/technology/digital/page";
 
 export const metadata = {

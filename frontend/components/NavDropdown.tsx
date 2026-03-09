@@ -34,29 +34,29 @@ const NavDropdown: React.FC<NavDropdownProps> = ({
 
   const pillarStyles = {
     policy: {
-      text: "text-brand-orange",
-      hover: "hover:text-brand-orange",
-      bg: "bg-brand-orange"
+      text: "text-brand-policy",
+      hover: "hover:text-brand-policy",
+      bg: "bg-brand-policy"
     },
     economics: {
-      text: "text-brand-green",
-      hover: "hover:text-brand-green",
-      bg: "bg-brand-green"
+      text: "text-brand-economics",
+      hover: "hover:text-brand-economics",
+      bg: "bg-brand-economics"
     },
     technology: {
-      text: "text-brand-indigo",
-      hover: "hover:text-brand-indigo",
-      bg: "bg-brand-indigo"
+      text: "text-brand-technology",
+      hover: "hover:text-brand-technology",
+      bg: "bg-brand-technology"
     },
     clinical: {
-      text: "text-rose-600",
-      hover: "hover:text-rose-600",
-      bg: "bg-rose-600"
+      text: "text-brand-clinical",
+      hover: "hover:text-brand-clinical",
+      bg: "bg-brand-clinical"
     },
     equity: {
-      text: "text-brand-amber",
-      hover: "hover:text-brand-amber",
-      bg: "bg-brand-amber"
+      text: "text-brand-equity",
+      hover: "hover:text-brand-equity",
+      bg: "bg-brand-equity"
     },
   };
 

@@ -191,7 +191,7 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                     population health.
                   </p>
                   <Link
-                    href="/education/courses"
+                    href="/academy/courses"
                     className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-emerald-700 transition-colors"
                   >
                     Explore Syllabus

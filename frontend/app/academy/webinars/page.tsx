@@ -56,7 +56,7 @@ export default async function WebinarsPage() {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Upcoming Schedule</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {upcoming.map((webinar: any) => (
-                <AcademyCard key={webinar._id} type="WEBINAR" pillar={webinar.pillar} title={webinar.title} description={webinar.description} meta={formatDate(webinar.date)} price="Free" href={`/education/webinars/${webinar.slug}`} />
+                <AcademyCard key={webinar._id} type="WEBINAR" pillar={webinar.pillar} title={webinar.title} description={webinar.description} meta={formatDate(webinar.date)} price="Free" href={`/academy/webinars/${webinar.slug}`} />
               ))}
             </div>
           </>

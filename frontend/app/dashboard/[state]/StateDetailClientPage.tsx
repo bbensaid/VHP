@@ -177,15 +177,15 @@ export default function StateDetailClientPage({ indexData, programData, stateSlu
                 </div>
                 <div className="grid md:grid-cols-1 gap-4">
                   <div>
-                    <div className="flex items-center gap-3 mb-4"><div className="bg-brand-orange/10 p-2.5 rounded-xl"><BookOpenIcon className="w-6 h-6 text-brand-orange" /></div><h3 className="text-lg font-bold text-slate-900">Policy Metrics</h3></div>
+                    <div className="flex items-center gap-3 mb-4"><div className="bg-brand-policy/10 p-2.5 rounded-xl"><BookOpenIcon className="w-6 h-6 text-brand-policy" /></div><h3 className="text-lg font-bold text-slate-900">Policy Metrics</h3></div>
                     <div className="space-y-1"><MetricDisplay label="VBP Adoption" score={indexData.metrics.policy.vbpAdoption} /><MetricDisplay label="Telehealth Policy" score={indexData.metrics.policy.telehealth} /><MetricDisplay label="Scope of Practice" score={indexData.metrics.policy.scopeOfPractice} /></div>
                   </div>
                   <div>
-                    <div className="flex items-center gap-3 mb-4"><div className="bg-brand-green/10 p-2.5 rounded-xl"><BanknotesIcon className="w-6 h-6 text-brand-green" /></div><h3 className="text-lg font-bold text-slate-900">Economics Metrics</h3></div>
+                    <div className="flex items-center gap-3 mb-4"><div className="bg-brand-economics/10 p-2.5 rounded-xl"><BanknotesIcon className="w-6 h-6 text-brand-economics" /></div><h3 className="text-lg font-bold text-slate-900">Economics Metrics</h3></div>
                     <div className="space-y-1"><MetricDisplay label="Low Spending" score={indexData.metrics.economics.spendingPerCapita} /><MetricDisplay label="Workforce" score={indexData.metrics.economics.workforceGaps} /><MetricDisplay label="Coverage Rate" score={indexData.metrics.economics.insuranceCoverage} /></div>
                   </div>
                   <div>
-                    <div className="flex items-center gap-3 mb-4"><div className="bg-brand-indigo/10 p-2.5 rounded-xl"><BoltIcon className="w-6 h-6 text-brand-indigo" /></div><h3 className="text-lg font-bold text-slate-900">Technology Metrics</h3></div>
+                    <div className="flex items-center gap-3 mb-4"><div className="bg-brand-technology/10 p-2.5 rounded-xl"><BoltIcon className="w-6 h-6 text-brand-technology" /></div><h3 className="text-lg font-bold text-slate-900">Technology Metrics</h3></div>
                     <div className="space-y-1"><MetricDisplay label="HIE Adoption" score={indexData.metrics.technology.hieAdoption} /><MetricDisplay label="Broadband Access" score={indexData.metrics.technology.broadbandAccess} /><MetricDisplay label="EHR Adoption" score={indexData.metrics.technology.ehrAdoption} /></div>
                   </div>
                 </div>

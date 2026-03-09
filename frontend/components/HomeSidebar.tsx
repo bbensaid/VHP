@@ -13,52 +13,12 @@ import {
   LightBulbIcon,
 } from "@heroicons/react/24/outline";
 
-// Preserved content links (kept in the file per your instructions to not lose content)
-export const academyItems = [
-  { href: "/education/courses", label: "Executive Masterclasses" },
-  { href: "/education/faculty", label: "Faculty & Experts" },
-  { href: "/education/webinars", label: "Webinars & Events" },
-  { href: "/education/glossary", label: "Glossary" },
-  { href: "/education/case-studies", label: "Case Studies Library" },
-];
-
-export const advisoryItems = [
-  { href: "/advisory/consulting", label: "Strategic Consulting" },
-  { href: "/advisory/research", label: "Custom Research Projects" },
-  { href: "/advisory/reports", label: "Annual Impact Reports" },
-  { href: "/advisory/contact", label: "Hire an Expert" },
-];
-
-export const mediaItems = [
-  { href: "/media/podcasts", label: "HTR Podcast Network" },
-  { href: "/media/videos", label: "Video Briefings" },
-  { href: "/media/library", label: "Full Multimedia Library" },
-];
-
-export const trendingItems = [
-  { href: "/topics/value-based-care", label: "Value-Based Care Models" },
-  { href: "/topics/workforce", label: "Clinical Workforce Gaps" },
-  { href: "/topics/telehealth", label: "Telehealth Reimbursement" },
-];
-
-export const ALL_SECTIONS = [
-  "Academy",
-  "Advisory",
-  "Multimedia",
-  "Trending Topics",
-];
 
 interface HomeSidebarProps {
-  openSections: string[];
-  onToggleSection: (section: string) => void;
   onNavigate?: () => void;
 }
 
-export default function HomeSidebar({
-  openSections,
-  onToggleSection,
-  onNavigate,
-}: HomeSidebarProps) {
+export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const topSentinelRef = useRef<HTMLDivElement>(null);
 

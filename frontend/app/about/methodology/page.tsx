@@ -17,7 +17,7 @@ const MetricDetail = ({
   weight?: string;
 }) => {
   const styles: Record<string, { label: string; bar: string; text: string; bg: string; border: string }> = {
-    Policy:     { label: "Policy",     bar: "bg-orange-500",  text: "text-orange-700",  bg: "bg-orange-50",  border: "border-orange-200" },
+    Policy:     { label: "Policy",     bar: "bg-sky-600",     text: "text-sky-700",    bg: "bg-sky-50",     border: "border-sky-200" },
     Economics:  { label: "Economics",  bar: "bg-emerald-500", text: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" },
     Technology: { label: "Technology", bar: "bg-indigo-500",  text: "text-indigo-700",  bg: "bg-indigo-50",  border: "border-indigo-200" },
     Clinical:   { label: "Clinical",   bar: "bg-rose-500",    text: "text-rose-700",    bg: "bg-rose-50",    border: "border-rose-200" },
@@ -290,8 +290,8 @@ export default function MethodologyPage() {
           <div className="grid md:grid-cols-5 gap-4 mb-10">
             <PillarBlock
               pillar="Policy" weight="30%"
-              barColor="bg-orange-500"
-              textColor="text-orange-700"
+              barColor="bg-sky-600"
+              textColor="text-sky-700"
               metrics={["VBP Adoption", "Telehealth Policy", "Scope of Practice"]}
             />
             <PillarBlock

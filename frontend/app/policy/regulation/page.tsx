@@ -7,7 +7,7 @@ export default function Page() {
       pillar="Policy"
       title="Regulation & Legislation"
       description="Tracking federal and state legislative changes affecting healthcare."
-      colorClass="text-orange-700"
+      colorClass="text-sky-700"
       category="Regulation"
     />
   );

@@ -91,7 +91,7 @@ export default function GlossaryPage() {
   // --- STYLING HELPERS ---
   const getBadgeStyle = (pillar: string) => {
     switch (pillar) {
-      case "Policy": return "bg-orange-50 text-card-policy border-card-policy/20 border";
+      case "Policy": return "bg-sky-50 text-card-policy border-card-policy/20 border";
       case "Economics": return "bg-emerald-50 text-card-economics border-card-economics/20 border";
       case "Technology": return "bg-indigo-50 text-card-tech border-card-tech/20 border";
       default: return "bg-gray-100 text-gray-600 border-gray-200 border";
@@ -102,7 +102,7 @@ export default function GlossaryPage() {
     if (!isSelected) return "bg-white text-gray-500 border-gray-200 hover:border-gray-300";
     
     switch (pillar) {
-      case "Policy": return "bg-orange-50 text-card-policy border-card-policy font-bold ring-1 ring-card-policy/20";
+      case "Policy": return "bg-sky-50 text-card-policy border-card-policy font-bold ring-1 ring-card-policy/20";
       case "Economics": return "bg-emerald-50 text-card-economics border-card-economics font-bold ring-1 ring-card-economics/20";
       case "Technology": return "bg-indigo-50 text-card-tech border-card-tech font-bold ring-1 ring-card-tech/20";
       default: return "bg-gray-900 text-white border-gray-900";
