@@ -7,7 +7,7 @@ export default function Page() {
       pillar="Policy"
       title="Global & Comparative Policy"
       description="Insights from international health systems and policy frameworks."
-      colorClass="text-orange-700"
+      colorClass="text-sky-700"
       category="Global"
     />
   );

@@ -10,7 +10,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 const pillars = [
-  { label: "Policy", color: "text-orange-600", bg: "bg-orange-500", question: "Is it permissible?", href: "/policy" },
+  { label: "Policy", color: "text-sky-700", bg: "bg-sky-600", question: "Is it permissible?", href: "/policy" },
   { label: "Economics", color: "text-emerald-700", bg: "bg-emerald-500", question: "Is it sustainable?", href: "/economics" },
   { label: "Technology", color: "text-indigo-700", bg: "bg-indigo-500", question: "Is it possible?", href: "/technology" },
   { label: "Clinical", color: "text-rose-700", bg: "bg-rose-500", question: "Is it effective?", href: "/clinical" },

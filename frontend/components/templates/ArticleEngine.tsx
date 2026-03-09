@@ -10,7 +10,7 @@ interface ArticleEngineProps {
 
 // Pillar → color mapping (matches the 5-pillar system)
 const pillarStyles: Record<string, { text: string; bg: string; border: string; dot: string; href: string }> = {
-  Policy:     { text: "text-orange-700",  bg: "bg-orange-50",  border: "border-orange-200", dot: "bg-orange-500",  href: "/policy"     },
+  Policy:     { text: "text-sky-700",     bg: "bg-sky-50",     border: "border-sky-200",   dot: "bg-sky-600",    href: "/policy"     },
   Economics:  { text: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200",dot: "bg-emerald-500", href: "/economics"   },
   Technology: { text: "text-indigo-700",  bg: "bg-indigo-50",  border: "border-indigo-200", dot: "bg-indigo-500",  href: "/technology"  },
   Clinical:   { text: "text-rose-700",    bg: "bg-rose-50",    border: "border-rose-200",   dot: "bg-rose-500",    href: "/clinical"    },

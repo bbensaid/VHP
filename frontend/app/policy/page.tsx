@@ -34,7 +34,7 @@ export default function Page() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
       <div className="mb-12">
-        <span className="text-sm font-bold text-orange-600 uppercase tracking-wider">
+        <span className="text-sm font-bold text-sky-700 uppercase tracking-wider">
           Health Policy
         </span>
         <h1 className="text-4xl font-black text-slate-900 mt-2 mb-4">
@@ -47,7 +47,7 @@ export default function Page() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {topics.map((item) => (
-          <Link key={item.label} href={item.href} className="flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-orange-200">
+          <Link key={item.label} href={item.href} className="flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-sky-200">
             <div>
               <h3 className="font-bold text-slate-900 text-lg mb-2">{item.label}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">{item.description}</p>
@@ -56,7 +56,7 @@ export default function Page() {
               <h4 className="text-[10px] font-bold uppercase text-slate-500 tracking-wider">Scope Includes</h4>
               {item.details.map(detail => (
                 <div key={detail} className="flex items-center gap-2">
-                  <span className="text-orange-500 font-bold">✓</span>
+                  <span className="text-sky-600 font-bold">✓</span>
                   <span className="text-xs font-medium text-slate-600">{detail}</span>
                 </div>
               ))}
@@ -68,12 +68,12 @@ export default function Page() {
         ))}
       </div>
 
-      <LatestHubReports pillar="Policy" colorClass="text-orange-600" />
+      <LatestHubReports pillar="Policy" colorClass="text-sky-700" />
 
-      <HubSubscribeCTA 
-        pillar="Policy" 
-        bgClass="bg-orange-50" 
-        buttonClass="bg-orange-600 hover:bg-orange-700" 
+      <HubSubscribeCTA
+        pillar="Policy"
+        bgClass="bg-sky-50"
+        buttonClass="bg-sky-700 hover:bg-sky-800"
       />
     </div>
   );

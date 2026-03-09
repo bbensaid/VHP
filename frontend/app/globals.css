@@ -2,46 +2,34 @@
 @import "tailwindcss";
 
 @theme {
-  /* =========================================
-     LAYER 1: BRAND PALETTE (The 5 Pillars)
-     ========================================= */
-  --color-brand-sky-policy: #0369a1; /* Policy */
-  --color-brand-green: #059669; /* Economics */
-  --color-brand-indigo: #4f46e5; /* Technology */
-  --color-brand-amber: #d97706; /* Equity */
-  --color-brand-red: #dc2626; /* Clinical */
-  --color-brand-teal: #0d9488; /* Science (New) */
-  --color-brand-sky: #38bdf8; /* Academy (Lighter) */
-  --color-brand-violet: #d946ef; /* Advisory (Changed to Fuchsia) */
+  /* ── Pillar brand colors ───────────────────────────────────────────────── */
+  --color-brand-policy: #0369a1;
+  --color-brand-economics: #059669;
+  --color-brand-technology: #4f46e5;
+  --color-brand-equity: #d97706;
+  --color-brand-clinical: #dc2626;
+  --color-brand-academy: #38bdf8;
+  --color-brand-advisory: #d946ef;
 
-  --color-brand-blue: #1d4ed8; /* UI Primary */
-  --color-brand-light: #dbeafe; /* UI Backgrounds */
+  /* ── Card colors (pillar-mapped, used as text-card-* / bg-card-* classes) */
+  --color-card-policy: var(--color-brand-policy);
+  --color-card-economics: var(--color-brand-economics);
+  --color-card-tech: var(--color-brand-technology);
+  --color-card-clinical: var(--color-brand-clinical);
+  --color-card-equity: var(--color-brand-equity);
 
-  /* =========================================
-     LAYER 2: GLOBAL UI (Functional)
-     ========================================= */
-  --color-ui-primary: var(--color-brand-blue);
-  --color-ui-bg-light: var(--color-brand-light);
+  /* ── Global UI ─────────────────────────────────────────────────────────── */
+  --color-ui-primary: #1d4ed8;
+  --color-ui-bg-light: #dbeafe;
   --color-ui-text-on-primary: #ffffff;
   --color-ui-border: #e5e7eb;
 
-  /* =========================================
-     LAYER 3: CONTEXTUAL CONTENT (Pillar Mapping)
-     ========================================= */
-  --color-card-policy: var(--color-brand-sky-policy);
-  --color-card-economics: var(--color-brand-green);
-  --color-card-tech: var(--color-brand-indigo);
-  --color-card-clinical: var(--color-brand-red);
-  --color-card-equity: var(--color-brand-amber);
-  --color-card-science: var(--color-brand-teal);
+  /* ── Typography ────────────────────────────────────────────────────────── */
+  --color-text-heading: #111827;
+  --color-text-body: #4b5563;
+  --color-text-inverse: #ffffff;
 
-  /* =========================================
-     LAYER 4: TYPOGRAPHY & SURFACES
-     ========================================= */
-  --color-text-heading: #111827; 
-  --color-text-body: #4b5563; 
-  --color-text-inverse: #ffffff; 
-  
+  /* ── Surfaces ──────────────────────────────────────────────────────────── */
   --color-surface: #ffffff;
   --color-surface-muted: #f8fafc;
 }
@@ -51,7 +39,7 @@
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
-  
+
   .animate-marquee {
     animation: marquee 180s linear infinite;
   }

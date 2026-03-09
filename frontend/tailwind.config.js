@@ -41,15 +41,9 @@ module.exports = {
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         radius: 'var(--radius)',
-        policy: "#0369a1",
-        economics: "#059669",
-        technology: "#4F46E5",
-        equity: "#d97706",
-        clinical: "#dc2626",
       },
     },
   },
-  // ADD THIS SECTION BELOW
   plugins: [
     require('@tailwindcss/typography'),
   ],

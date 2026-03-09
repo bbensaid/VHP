@@ -5,11 +5,11 @@ const pillars = [
   {
     id: "policy",
     label: "Policy",
-    color: "text-orange-600",
-    bg: "bg-orange-50",
-    border: "border-orange-200",
-    accent: "bg-orange-500",
-    hover: "hover:border-orange-400 hover:bg-orange-50/80",
+    color: "text-sky-700",
+    bg: "bg-sky-50",
+    border: "border-sky-200",
+    accent: "bg-sky-600",
+    hover: "hover:border-sky-400 hover:bg-sky-50/80",
     question: "Is it permissible?",
     href: "/policy",
     description:
@@ -87,7 +87,7 @@ const team = [
     role: "Chief Intelligence Officer",
     focus: "Health Policy & Federal Regulation",
     initials: "SC",
-    color: "bg-orange-100 text-orange-700",
+    color: "bg-sky-100 text-sky-700",
   },
   {
     name: "Marcus Webb",

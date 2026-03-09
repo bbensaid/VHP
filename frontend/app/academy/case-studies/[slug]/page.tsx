@@ -54,7 +54,7 @@ export default async function CaseStudyDetail({
         </div>
         
         <div className="mt-12 text-center">
-             <Link href="/education/case-studies" className="text-indigo-600 font-bold hover:underline">
+             <Link href="/academy/case-studies" className="text-indigo-600 font-bold hover:underline">
                 &larr; Back to Library
              </Link>
         </div>

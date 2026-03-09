@@ -26,7 +26,7 @@ export default function ConsultingPage() {
             
             {/* POLICY: Regulatory Compliance */}
             <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all">
-                <div className="w-12 h-12 bg-orange-100 text-orange-700 rounded-lg flex items-center justify-center text-2xl mb-6 font-bold border border-orange-200">
+                <div className="w-12 h-12 bg-sky-100 text-sky-700 rounded-lg flex items-center justify-center text-2xl mb-6 font-bold border border-sky-200">
                     ⚖️
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Regulatory Compliance</h3>
@@ -35,15 +35,15 @@ export default function ConsultingPage() {
                 </p>
                 <ul className="space-y-3 text-sm text-gray-600 font-medium">
                     <li className="flex gap-3 items-center">
-                        <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
+                        <span className="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
                         No Surprises Act Audit
                     </li>
                     <li className="flex gap-3 items-center">
-                        <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
+                        <span className="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
                         Interoperability Rule Strategy
                     </li>
                     <li className="flex gap-3 items-center">
-                        <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
+                        <span className="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
                         OCR Audit Preparation
                     </li>
                 </ul>

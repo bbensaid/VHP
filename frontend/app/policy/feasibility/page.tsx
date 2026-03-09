@@ -7,7 +7,7 @@ export default function Page() {
       pillar="Policy"
       title="Policy Feasibility Studies"
       description="Assessing the implementation viability of proposed reforms."
-      colorClass="text-orange-700"
+      colorClass="text-sky-700"
       category="Feasibility"
     />
   );

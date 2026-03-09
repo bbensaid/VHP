@@ -5,24 +5,13 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { SparklesIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 
-// ALL_SECTIONS export kept for AppShell compatibility (it imports this symbol).
-export const ALL_SECTIONS: string[] = [];
-
 const SUGGESTED_QUESTIONS = [
   "Summarize the latest RHTP guidelines.",
   "How do global budgets impact rural hospitals?",
   "Explain the workforce gap trends in 2024.",
 ];
 
-interface RightSidebarProps {
-  openSections: string[];
-  onToggleSection: (section: string) => void;
-}
-
-export default function RightSidebar({
-  openSections,
-  onToggleSection,
-}: RightSidebarProps) {
+export default function RightSidebar() {
   const router = useRouter();
 
   const handleQuestionClick = (question: string) => {

@@ -480,8 +480,7 @@ export default function ArticleFeed({
   ) : null;
 
   // ── Render ────────────────────────────────────────────────────────────────
-  // If relatedMedia is provided, use the two-column layout from CategoryPageLayout.
-  // Otherwise fall back to the original full-width feed layout.
+  // Two-column layout when related media is provided, otherwise full-width.
   if (hasRelatedMedia) {
     return (
       <>
