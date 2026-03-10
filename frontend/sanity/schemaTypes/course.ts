@@ -23,7 +23,7 @@ export default defineType({
       title: 'Pillar',
       type: 'string',
       options: {
-        list: ['Policy', 'Economics', 'Technology', 'Operations'],
+        list: ['Policy', 'Economics', 'Technology', 'Clinical', 'Equity'],
       },
     }),
     defineField({

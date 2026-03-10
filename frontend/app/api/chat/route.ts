@@ -1,11 +1,14 @@
 // app/api/chat/route.ts
 //
-// IMPORTANT: This file was previously at components/route.ts which Next.js
-// cannot register as an API route. It must live at app/api/chat/route.ts.
-// No logic has changed — only the file location.
+// RAG-enhanced AI chat. Flow:
+//   1. Embed the user's question (Google text-embedding-004)
+//   2. Retrieve top-5 relevant HTR content chunks from Supabase pgvector
+//   3. Inject retrieved chunks as context into the Gemini prompt
+//   4. Stream the response back to the client
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextResponse } from "next/server";
+import { embedText, searchSimilar, buildContextBlock } from "@/lib/rag";
 
 export async function POST(req: Request) {
   try {
@@ -25,6 +28,35 @@ export async function POST(req: Request) {
       );
     }
 
+    // ── Step 1: Retrieve relevant HTR content ──────────────────────────────
+    let contextBlock = "";
+    try {
+      const queryEmbedding = await embedText(message);
+      const chunks = await searchSimilar(queryEmbedding, {
+        matchThreshold: 0.45,
+        matchCount: 5,
+      });
+      contextBlock = buildContextBlock(chunks);
+    } catch (ragError) {
+      // RAG failure is non-fatal — degrade gracefully to a context-free response
+      console.warn("RAG retrieval failed (degraded mode):", ragError);
+    }
+
+    // ── Step 2: Build the augmented prompt ────────────────────────────────
+    const defaultSystemContext =
+      "You are an expert AI Analyst for the Health Transformation Review (HTR). " +
+      "Your audience consists of healthcare executives, policy makers, and economists. " +
+      "Answer questions thoroughly and professionally, citing specific policies and data where relevant. " +
+      "Focus on policy, economics, and technology implications. " +
+      "When referencing HTR content provided above, cite it by title or source number.";
+
+    const systemContext = systemPrompt || defaultSystemContext;
+
+    const fullPrompt = contextBlock
+      ? `${systemContext}\n\n${contextBlock}\n\nQuestion: ${message}`
+      : `${systemContext}\n\nQuestion: ${message}`;
+
+    // ── Step 3: Stream Gemini response ────────────────────────────────────
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
     const model = genAI.getGenerativeModel({
       model: "gemini-1.5-flash",
@@ -33,14 +65,7 @@ export async function POST(req: Request) {
       },
     });
 
-    const defaultContext =
-      "You are an expert AI Analyst for the Health Transformation Review (HTR). " +
-      "Your audience consists of healthcare executives, policy makers, and economists. " +
-      "Answer questions thoroughly and professionally. " +
-      "Focus on policy, economics, and technology implications.";
-
-    const systemContext = `${systemPrompt || defaultContext}\n\nQuestion: ${message}`;
-    const result = await model.generateContentStream(systemContext);
+    const result = await model.generateContentStream(fullPrompt);
 
     const stream = new ReadableStream({
       async start(controller) {

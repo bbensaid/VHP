@@ -47,7 +47,7 @@ export default function Page() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {topics.map((item) => (
-          <Link key={item.label} href={item.href} className="flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-amber-200">
+          <Link key={item.label} href={item.href} className="flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-amber-400 hover:bg-amber-50/80">
             <div>
               <h3 className="font-bold text-slate-900 text-lg mb-2">{item.label}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">{item.description}</p>

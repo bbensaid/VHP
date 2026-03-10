@@ -1,17 +1,6 @@
+// lib/dashboard-types.ts
+
 export type ScenarioType = 'statusQuo' | 'optimized';
-
-export interface RHTMetric {
-  label: string;
-  value: string;
-  trend?: 'up' | 'down' | 'neutral';
-  status?: 'On Track' | 'Pending' | 'At Risk' | 'Achieved';
-}
-
-export interface RHTInitiative {
-  title: string;
-  description: string;
-  status?: 'Active' | 'Planned' | 'Completed';
-}
 
 export interface HospitalScenario {
   label: string;
@@ -29,15 +18,9 @@ export interface SimulationProfile {
   };
 }
 
-export interface RHTProfile {
-  id: string; 
-  stateName: string;
-  awardAmount: string;
-  strategicFocus: string | string[];
-  metrics: RHTMetric[];
-  initiatives: RHTInitiative[];
-  simulation?: SimulationProfile; 
-}
+// Canonical RHTProfile comes from the data layer
+export type { RHTProfile } from '@/lib/data/rht-program';
+import type { RHTProfile } from '@/lib/data/rht-program';
 
 export interface DashboardContextType {
   selectedStateId: string | null;

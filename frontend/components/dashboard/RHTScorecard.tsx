@@ -1,5 +1,5 @@
 import React from "react";
-import { rhtProgramData } from "@/lib/data/rht-program";
+import type { RHTProfile } from "@/lib/data/rht-program";
 import {
   CurrencyDollarIcon,
   LightBulbIcon,
@@ -8,16 +8,14 @@ import {
 import { formatCompactCurrency } from "@/lib/utils";
 
 interface RHTScorecardProps {
-  stateSlug: string;
+  data: RHTProfile;
 }
 
-export const RHTScorecard: React.FC<RHTScorecardProps> = ({ stateSlug }) => {
-  const data = rhtProgramData[stateSlug.toLowerCase()];
-
+export const RHTScorecard: React.FC<RHTScorecardProps> = ({ data }) => {
   if (!data) {
     return (
       <div className="p-4 border border-red-200 bg-red-50 text-red-700 rounded-lg">
-        RHT Program data not found for state: {stateSlug}
+        RHT Program data not available.
       </div>
     );
   }

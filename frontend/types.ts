@@ -2,9 +2,12 @@
 
 export type ScenarioType = 'statusQuo' | 'optimized';
 
+// Re-export the canonical RHTProfile from the data layer
+export type { RHTProfile } from '@/lib/data/rht-program';
+
 export interface RHTMetric {
   label: string;
-  value: string;
+  value?: string;
   trend?: 'up' | 'down' | 'neutral';
   status?: 'On Track' | 'Pending' | 'At Risk' | 'Achieved';
 }
@@ -18,7 +21,7 @@ export interface RHTInitiative {
 // --- SIMULATION TYPES (Hospital Economics) ---
 export interface HospitalScenario {
   label: string;
-  margin: number;     // e.g., -0.045
+  margin: number;
   revenue: number;
   expenses: number;
   operatingIncome: number;
@@ -32,17 +35,7 @@ export interface SimulationProfile {
   };
 }
 
-export interface RHTProfile {
-  id: string; 
-  stateName: string;
-  awardAmount: string;
-  strategicFocus: string | string[];
-  metrics: RHTMetric[];
-  initiatives: RHTInitiative[];
-  
-  // The "Hero" Simulation Logic
-  simulation?: SimulationProfile; 
-}
+import type { RHTProfile } from '@/lib/data/rht-program';
 
 export interface ProgramContextType {
   selectedStateId: string | null;
@@ -51,4 +44,5 @@ export interface ProgramContextType {
   setSimulationMode: (mode: ScenarioType) => void;
   allStates: Record<string, RHTProfile>;
   selectedStateData: RHTProfile | null;
+  updateStatus?: (id: string, status: string) => void;
 }

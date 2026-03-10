@@ -1,27 +1,29 @@
 import { notFound } from "next/navigation";
-import { performanceIndexData } from "@/lib/data/performance-index-data";
-import { rhtProgramData } from "@/lib/data/rht-program";
+import { getRhtState, getPerformanceIndex, getHospitalsByState } from "@/lib/sanity-dashboard-queries";
 import StateDetailClientPage from "./StateDetailClientPage";
-import React from 'react';
+
+export const revalidate = 3600;
 
 export default async function DynamicStatePage({ params }: { params: Promise<{ state: string }> }) {
-  // Correctly await the params promise
   const resolvedParams = await params;
   const stateSlug = resolvedParams.state.toLowerCase();
-  
-  const indexData = performanceIndexData[stateSlug] || null;
-  const programData = rhtProgramData[stateSlug] || null;
+
+  const [indexData, programData, hospitals] = await Promise.all([
+    getPerformanceIndex(stateSlug),
+    getRhtState(stateSlug),
+    getHospitalsByState(stateSlug),
+  ]);
 
   if (!indexData && !programData) {
     return notFound();
   }
 
-  // Pass all required data, including the slug, to the client component
   return (
-    <StateDetailClientPage 
-      indexData={indexData} 
-      programData={programData} 
+    <StateDetailClientPage
+      indexData={indexData}
+      programData={programData}
       stateSlug={stateSlug}
+      hospitals={hospitals}
     />
   );
 }

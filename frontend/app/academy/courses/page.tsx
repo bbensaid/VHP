@@ -29,6 +29,10 @@ export default async function CoursesPage() {
         return "bg-white text-card-economics border-card-economics/30 hover:border-card-economics hover:bg-emerald-50";
       case "Technology Pillar":
         return "bg-white text-card-tech border-card-tech/30 hover:border-card-tech hover:bg-indigo-50";
+      case "Clinical Pillar":
+        return "bg-white text-brand-clinical border-brand-clinical/30 hover:border-brand-clinical hover:bg-red-50";
+      case "Equity Pillar":
+        return "bg-white text-brand-equity border-brand-equity/30 hover:border-brand-equity hover:bg-amber-50";
       default:
         return "bg-white text-gray-600 border-gray-300 hover:border-gray-400 hover:bg-gray-50";
     }
@@ -46,7 +50,7 @@ export default async function CoursesPage() {
             tailored for healthcare leadership.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            {["All Programs", "Policy Pillar", "Economics Pillar", "Technology Pillar", "Certifications Only"].map((filter, i) => (
+            {["All Programs", "Policy Pillar", "Economics Pillar", "Technology Pillar", "Clinical Pillar", "Equity Pillar", "Certifications Only"].map((filter, i) => (
               <button key={filter} className={`px-5 py-2 rounded-full text-sm font-bold border transition-all shadow-sm ${getFilterStyle(filter, i)}`}>
                 {filter}
               </button>

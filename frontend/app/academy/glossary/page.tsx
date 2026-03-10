@@ -31,7 +31,7 @@ export default function GlossaryPage() {
   const [isLoading, setIsLoading] = useState(true);
 
   const alphabet = Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i));
-  const pillars = ["Policy", "Economics", "Technology"]; // FIXED: Removed Operations
+  const pillars = ["Policy", "Economics", "Technology", "Clinical", "Equity"];
 
   // --- FETCH ---
   useEffect(() => {
@@ -94,6 +94,8 @@ export default function GlossaryPage() {
       case "Policy": return "bg-sky-50 text-card-policy border-card-policy/20 border";
       case "Economics": return "bg-emerald-50 text-card-economics border-card-economics/20 border";
       case "Technology": return "bg-indigo-50 text-card-tech border-card-tech/20 border";
+      case "Clinical": return "bg-red-50 text-brand-clinical border-brand-clinical/20 border";
+      case "Equity": return "bg-amber-50 text-brand-equity border-brand-equity/20 border";
       default: return "bg-gray-100 text-gray-600 border-gray-200 border";
     }
   };
@@ -105,6 +107,8 @@ export default function GlossaryPage() {
       case "Policy": return "bg-sky-50 text-card-policy border-card-policy font-bold ring-1 ring-card-policy/20";
       case "Economics": return "bg-emerald-50 text-card-economics border-card-economics font-bold ring-1 ring-card-economics/20";
       case "Technology": return "bg-indigo-50 text-card-tech border-card-tech font-bold ring-1 ring-card-tech/20";
+      case "Clinical": return "bg-red-50 text-brand-clinical border-brand-clinical font-bold ring-1 ring-brand-clinical/20";
+      case "Equity": return "bg-amber-50 text-brand-equity border-brand-equity font-bold ring-1 ring-brand-equity/20";
       default: return "bg-gray-900 text-white border-gray-900";
     }
   };

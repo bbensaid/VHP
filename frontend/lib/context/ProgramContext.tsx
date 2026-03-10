@@ -1,19 +1,23 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { ProgramContextType, RHTProfile, ScenarioType } from '@/types';
-import { rhtProgramData } from '@/lib/data/rht-program'; 
+import { ProgramContextType, ScenarioType } from '@/types';
+import type { RHTProfile } from '@/lib/data/rht-program';
 
 const ProgramContext = createContext<ProgramContextType | undefined>(undefined);
 
 export function ProgramProvider({ children }: { children: React.ReactNode }) {
   const [selectedStateId, setSelectedStateId] = useState<string | null>(null);
   const [simulationMode, setSimulationMode] = useState<ScenarioType>('statusQuo');
+  const [allStates, setAllStates] = useState<Record<string, RHTProfile>>({});
   const [mounted, setMounted] = useState(false);
 
-  // Hydration fix: Only render after client mount
   useEffect(() => {
     setMounted(true);
+    fetch('/api/rht-states')
+      .then((r) => r.json())
+      .then((data: Record<string, RHTProfile>) => setAllStates(data))
+      .catch(() => {/* graceful degradation — context works, just empty */});
   }, []);
 
   const value: ProgramContextType = {
@@ -21,8 +25,8 @@ export function ProgramProvider({ children }: { children: React.ReactNode }) {
     setSelectedStateId,
     simulationMode,
     setSimulationMode,
-    allStates: rhtProgramData,
-    selectedStateData: selectedStateId ? rhtProgramData[selectedStateId] : null
+    allStates,
+    selectedStateData: selectedStateId ? allStates[selectedStateId] : null,
   };
 
   if (!mounted) {
@@ -43,3 +47,6 @@ export function useProgram() {
   }
   return context;
 }
+
+// Alias used in legacy pages
+export const useProgramContext = useProgram;
