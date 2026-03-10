@@ -1,24 +1,28 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import { DashboardContextType, ScenarioType } from '@/lib/dashboard-types';
-import { rhtAwardsData } from '@/lib/data/rht-awards'; 
+import type { RHTProfile } from '@/lib/dashboard-types';
 
 const DashboardContext = createContext<DashboardContextType | undefined>(undefined);
 
-export function DashboardProvider({ children }: { children: React.ReactNode }) {
+interface DashboardProviderProps {
+  children: React.ReactNode;
+  /** Pre-fetched RHT state data from the server. Falls back to empty object. */
+  initialStates?: Record<string, RHTProfile>;
+}
+
+export function DashboardProvider({ children, initialStates = {} }: DashboardProviderProps) {
   const [selectedStateId, setSelectedStateId] = useState<string | null>(null);
   const [simulationMode, setSimulationMode] = useState<ScenarioType>('statusQuo');
 
-  // We define the value object here.
-  // It is safe to render immediately because we aren't using window/localStorage yet.
   const value: DashboardContextType = {
     selectedStateId,
     setSelectedStateId,
     simulationMode,
     setSimulationMode,
-    allStates: rhtAwardsData,
-    selectedStateData: selectedStateId ? rhtAwardsData[selectedStateId] : null
+    allStates: initialStates,
+    selectedStateData: selectedStateId ? initialStates[selectedStateId] ?? null : null,
   };
 
   return (

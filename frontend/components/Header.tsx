@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Logo from "./Logo";
 import NavDropdown from "./NavDropdown";
 import {
@@ -65,10 +66,14 @@ const companyItems = [
 // --- 2. MAIN COMPONENT ---
 const Header = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const isStudio = pathname?.startsWith("/studio");
 
   const [dateString, setDateString] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchOpen, setSearchOpen] = useState(false);
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const { isHeaderVisible, setHeaderVisible } = useTicker();
 
   const [headlines, setHeadlines] = useState<{ text: string; url: string }[]>([
@@ -123,6 +128,19 @@ const Header = () => {
     }
     fetchTicker();
   }, []);
+
+  useEffect(() => {
+    if (searchOpen) searchInputRef.current?.focus();
+  }, [searchOpen]);
+
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const q = searchQuery.trim();
+    if (!q) return;
+    setSearchOpen(false);
+    setSearchQuery("");
+    router.push(`/search?q=${encodeURIComponent(q)}`);
+  };
 
   return (
     <header className="sticky top-0 z-50 flex flex-col font-sans shadow-md bg-white">
@@ -199,34 +217,37 @@ const Header = () => {
             </div>
 
             <div className="hidden md:flex flex-1 px-8 max-w-2xl ml-auto lg:mr-[350px]">
-            <div className="relative w-full">
-              <button
-                onClick={() => {
-                  window.dispatchEvent(
-                    new KeyboardEvent("keydown", { key: "k", metaKey: true })
-                  );
-                }}
-                className="w-full flex items-center px-4 py-2 border border-slate-200 rounded-full text-sm bg-slate-50 text-slate-400 hover:bg-white hover:border-slate-300 hover:shadow-sm transition-all text-left"
-              >
-                <svg
-                  className="w-4 h-4 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-                Search Intelligence Platform...
-                <span className="absolute right-3 text-xs font-bold bg-white border border-slate-200 px-2 py-0.5 rounded shadow-sm hidden sm:block">
-                  ⌘K
-                </span>
-              </button>
-            </div>
+              <div className="relative w-full">
+                {searchOpen ? (
+                  <form onSubmit={handleSearchSubmit} className="w-full">
+                    <input
+                      ref={searchInputRef}
+                      type="text"
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      onKeyDown={(e) => e.key === "Escape" && setSearchOpen(false)}
+                      placeholder="Search articles, modules, definitions…"
+                      className="w-full px-4 py-2 border border-sky-400 rounded-full text-sm bg-white text-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-300 shadow-sm"
+                    />
+                    <button type="submit" className="absolute right-3 top-1/2 -translate-y-1/2 text-sky-600 text-xs font-bold">
+                      Go
+                    </button>
+                  </form>
+                ) : (
+                  <button
+                    onClick={() => setSearchOpen(true)}
+                    className="w-full flex items-center px-4 py-2 border border-slate-200 rounded-full text-sm bg-slate-50 text-slate-400 hover:bg-white hover:border-slate-300 hover:shadow-sm transition-all text-left"
+                  >
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    Search Intelligence Platform...
+                    <span className="absolute right-3 text-xs font-bold bg-white border border-slate-200 px-2 py-0.5 rounded shadow-sm hidden sm:block">
+                      ⌘K
+                    </span>
+                  </button>
+                )}
+              </div>
             </div>
           </div>
 

@@ -23,7 +23,7 @@ export default defineType({
       title: 'Pillar',
       type: 'string',
       options: {
-        list: ['Policy', 'Economics', 'Technology'],
+        list: ['Policy', 'Economics', 'Technology', 'Clinical', 'Equity'],
       },
       validation: (Rule) => Rule.required(),
     }),

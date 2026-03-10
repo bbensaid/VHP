@@ -28,6 +28,8 @@ export default defineType({
           { title: 'Policy', value: 'Policy' },
           { title: 'Economics', value: 'Economics' },
           { title: 'Technology', value: 'Technology' },
+          { title: 'Clinical', value: 'Clinical' },
+          { title: 'Equity', value: 'Equity' },
         ],
         layout: 'tags',
       },

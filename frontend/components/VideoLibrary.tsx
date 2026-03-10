@@ -14,6 +14,10 @@ const getPillarTheme = (pillar: string | null) => {
       return { text: "text-brand-policy", border: "border-brand-policy", bg: "bg-brand-policy", hoverBg: "hover:bg-brand-policy" };
     case "Technology":
       return { text: "text-brand-technology", border: "border-brand-technology", bg: "bg-brand-technology", hoverBg: "hover:bg-brand-technology" };
+    case "Clinical":
+      return { text: "text-brand-clinical", border: "border-brand-clinical", bg: "bg-brand-clinical", hoverBg: "hover:bg-brand-clinical" };
+    case "Equity":
+      return { text: "text-brand-equity", border: "border-brand-equity", bg: "bg-brand-equity", hoverBg: "hover:bg-brand-equity" };
     default:
       return { text: "text-slate-500", border: "border-slate-500", bg: "bg-slate-500", hoverBg: "hover:bg-slate-500" };
   }
@@ -69,7 +73,7 @@ export default function VideoLibrary({ allVideos }: { allVideos: any[] }) {
     }, {} as Record<string, any[]>);
   }, [allVideos]);
 
-  const pillarOrder = useMemo(() => ['Policy', 'Economics', 'Technology', 'General'].filter(p => videosByPillar[p]), [videosByPillar]);
+  const pillarOrder = useMemo(() => ['Policy', 'Economics', 'Technology', 'Clinical', 'Equity', 'General'].filter(p => videosByPillar[p]), [videosByPillar]);
 
   const categoriesByPillar = useMemo(() => {
     const categories: Record<string, string[]> = {};

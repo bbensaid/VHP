@@ -15,7 +15,7 @@ interface PillarHubProps {
   pillarSlug: string;
   tagline: string;
   description: string;
-  themeColor: "economics" | "policy" | "technology";
+  themeColor: "economics" | "policy" | "technology" | "clinical" | "equity";
   featured: Article | null;
   recent: Article[];
 }
@@ -38,6 +38,7 @@ export function PillarHub({
       indicator: "bg-brand-economics",
       hoverText: "group-hover:text-brand-economics",
       lightBg: "bg-emerald-50",
+      hoverCard: "hover:border-emerald-400 hover:bg-emerald-50/80",
     },
     policy: {
       header: "bg-brand-policy",
@@ -46,6 +47,7 @@ export function PillarHub({
       indicator: "bg-brand-policy",
       hoverText: "group-hover:text-brand-policy",
       lightBg: "bg-sky-50",
+      hoverCard: "hover:border-sky-400 hover:bg-sky-50/80",
     },
     technology: {
       header: "bg-brand-technology",
@@ -54,6 +56,25 @@ export function PillarHub({
       indicator: "bg-brand-technology",
       hoverText: "group-hover:text-brand-technology",
       lightBg: "bg-indigo-50",
+      hoverCard: "hover:border-indigo-400 hover:bg-indigo-50/80",
+    },
+    clinical: {
+      header: "bg-brand-clinical",
+      text: "text-brand-clinical",
+      border: "border-brand-clinical",
+      indicator: "bg-brand-clinical",
+      hoverText: "group-hover:text-brand-clinical",
+      lightBg: "bg-red-50",
+      hoverCard: "hover:border-red-400 hover:bg-red-50/80",
+    },
+    equity: {
+      header: "bg-brand-equity",
+      text: "text-brand-equity",
+      border: "border-brand-equity",
+      indicator: "bg-brand-equity",
+      hoverText: "group-hover:text-brand-equity",
+      lightBg: "bg-amber-50",
+      hoverCard: "hover:border-amber-400 hover:bg-amber-50/80",
     },
   };
 
@@ -82,7 +103,7 @@ export function PillarHub({
       {/* 2. LEAD STORY SECTION */}
       <section className="relative -mt-8 z-10">
         <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col md:flex-row min-h-[400px]">
+          <div className={`bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col md:flex-row min-h-100 transition-colors ${theme.hoverCard}`}>
             
             {/* Main Content (Clickable) */}
             <div className="md:w-3/4 relative group">
@@ -155,7 +176,7 @@ export function PillarHub({
                   <Link 
                     key={article._id} 
                     href={`/${pillarSlug}/${article.slug.current}`} 
-                    className="group block bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-all hover:-translate-y-1"
+                    className={`group block bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-all hover:-translate-y-1 ${theme.hoverCard}`}
                   >
                     <div className="flex justify-between items-start mb-4">
                       <span className={`text-xs font-bold uppercase tracking-wider ${theme.text}`}>

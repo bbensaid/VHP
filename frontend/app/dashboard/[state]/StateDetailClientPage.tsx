@@ -4,14 +4,14 @@ import Link from "next/link";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import {
   ArrowLeftIcon, ChartBarIcon, BookOpenIcon, BoltIcon, BanknotesIcon, BuildingLibraryIcon,
-  CheckCircleIcon, ClockIcon, ExclamationCircleIcon, ListBulletIcon, ChevronUpIcon, ChevronDownIcon, InformationCircleIcon
+  CheckCircleIcon, ClockIcon, ExclamationCircleIcon, ListBulletIcon, ChevronUpIcon, ChevronDownIcon, InformationCircleIcon,
+  HeartIcon, UsersIcon
 } from "@heroicons/react/24/outline";
 import { getScoreColor } from "@/lib/utils";
 import React, { useState, useMemo, useEffect } from "react";
 import type { PerformanceIndexProfile } from "@/lib/data/performance-index-data";
 import type { RHTProfile } from "@/lib/data/rht-program";
-import type { Hospital } from "@/lib/data/hospital-data";
-import { hospitalData } from "@/lib/data/hospital-data";
+import type { SanityHospital } from "@/lib/sanity-dashboard-queries";
 
 // --- CHILD COMPONENTS ---
 
@@ -53,9 +53,10 @@ interface ClientPageProps {
   indexData: PerformanceIndexProfile | null;
   programData: RHTProfile | null;
   stateSlug: string;
+  hospitals: SanityHospital[];
 }
 
-export default function StateDetailClientPage({ indexData, programData, stateSlug }: ClientPageProps) {
+export default function StateDetailClientPage({ indexData, programData, stateSlug, hospitals }: ClientPageProps) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -78,20 +79,19 @@ export default function StateDetailClientPage({ indexData, programData, stateSlu
     router.push(`${pathname}?${params.toString()}`, { scroll: false });
   };
 
-  const [hospitalSort, setHospitalSort] = useState<{key: keyof Hospital, dir: 'asc'|'desc'}>({key: 'qualityScore', dir: 'desc'});
+  const [hospitalSort, setHospitalSort] = useState<{key: keyof SanityHospital, dir: 'asc'|'desc'}>({key: 'qualityScore', dir: 'desc'});
 
   const stateHospitals = useMemo(() => {
-    const hospitals = hospitalData[stateSlug] || [];
     return [...hospitals].sort((a,b) => {
       const valA = a[hospitalSort.key];
       const valB = b[hospitalSort.key];
       if (valA < valB) return hospitalSort.dir === 'asc' ? -1 : 1;
       if (valA > valB) return hospitalSort.dir === 'asc' ? 1 : -1;
       return 0;
-    })
-  }, [stateSlug, hospitalSort]);
+    });
+  }, [hospitals, hospitalSort]);
 
-  const handleHospitalSort = (key: keyof Hospital) => {
+  const handleHospitalSort = (key: keyof SanityHospital) => {
     setHospitalSort(prev => ({ key, dir: prev.key === key && prev.dir === 'desc' ? 'asc' : 'desc'}));
   }
 
@@ -188,6 +188,14 @@ export default function StateDetailClientPage({ indexData, programData, stateSlu
                     <div className="flex items-center gap-3 mb-4"><div className="bg-brand-technology/10 p-2.5 rounded-xl"><BoltIcon className="w-6 h-6 text-brand-technology" /></div><h3 className="text-lg font-bold text-slate-900">Technology Metrics</h3></div>
                     <div className="space-y-1"><MetricDisplay label="HIE Adoption" score={indexData.metrics.technology.hieAdoption} /><MetricDisplay label="Broadband Access" score={indexData.metrics.technology.broadbandAccess} /><MetricDisplay label="EHR Adoption" score={indexData.metrics.technology.ehrAdoption} /></div>
                   </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-4"><div className="bg-brand-clinical/10 p-2.5 rounded-xl"><HeartIcon className="w-6 h-6 text-brand-clinical" /></div><h3 className="text-lg font-bold text-slate-900">Clinical Metrics</h3></div>
+                    <div className="space-y-1"><MetricDisplay label="Preventive Care" score={indexData.metrics.clinical.preventiveCare} /><MetricDisplay label="Readmission Rate" score={indexData.metrics.clinical.readmissionRate} /><MetricDisplay label="Chronic Disease Control" score={indexData.metrics.clinical.chronicDiseaseControl} /></div>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-4"><div className="bg-brand-equity/10 p-2.5 rounded-xl"><UsersIcon className="w-6 h-6 text-brand-equity" /></div><h3 className="text-lg font-bold text-slate-900">Equity Metrics</h3></div>
+                    <div className="space-y-1"><MetricDisplay label="Racial Equity Gap" score={indexData.metrics.equity.racialEquityGap} /><MetricDisplay label="Rural-Urban Gap" score={indexData.metrics.equity.ruralUrbanGap} /><MetricDisplay label="SDOH Integration" score={indexData.metrics.equity.sdohIntegration} /></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -208,7 +216,7 @@ export default function StateDetailClientPage({ indexData, programData, stateSlu
                 <thead className="bg-slate-50 text-xs uppercase text-slate-500">
                   <tr>
                     {Object.entries({name: "Hospital", city: "City", type: "Type", totalDischarges: "Discharges", avgLengthOfStay: "Avg. Stay", qualityScore: "Quality Score"}).map(([key, label]) => (
-                      <th key={key} className="p-3 font-semibold cursor-pointer hover:bg-slate-100" onClick={() => handleHospitalSort(key as keyof Hospital)}>
+                      <th key={key} className="p-3 font-semibold cursor-pointer hover:bg-slate-100" onClick={() => handleHospitalSort(key as keyof SanityHospital)}>
                         <div className="flex items-center gap-1">{label} {hospitalSort.key === key && (hospitalSort.dir === 'asc' ? <ChevronUpIcon className="w-3 h-3" /> : <ChevronDownIcon className="w-3 h-3" />)}</div>
                       </th>
                     ))}
