@@ -111,13 +111,15 @@ export default function ChatPage() {
     abortControllerRef.current = new AbortController();
 
     setIsLoading(true);
+    // Snapshot history before adding the AI placeholder, so Gemini sees clean prior turns
+    const historySnapshot = messages.filter((m) => m.text.trim().length > 0);
     setMessages((prev) => [...prev, { role: "ai", text: "" }]);
 
     try {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: userMessage, temperature, systemPrompt }),
+        body: JSON.stringify({ message: userMessage, temperature, systemPrompt, history: historySnapshot }),
         signal: abortControllerRef.current.signal,
       });
 
