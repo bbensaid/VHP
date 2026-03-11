@@ -1,115 +1,371 @@
-import os
-import logging
-from dotenv import load_dotenv
+"""
+backend/main.py
+───────────────
+HTR AI Brain — FastAPI + LlamaIndex + Gemini
 
-# --- 1. Server Imports (New) ---
+Architecture:
+  - Ingests PDFs from backend/data/ (auto-detects all .pdf files)
+  - Ingests Sanity CMS content via GROQ HTTP API
+  - Builds a VectorStoreIndex persisted to backend/storage/
+  - Serves a streaming /api/chat endpoint with conversation memory
+  - Serves /api/ingest to re-trigger ingestion after new content
+
+Startup behaviour:
+  - If backend/storage/ exists: loads persisted index (fast, ~2s)
+  - If not: builds index from scratch, then persists (slow on first run)
+
+Run:
+  uvicorn main:app --reload --port 8000
+"""
+
+import os
+import asyncio
+import logging
+from typing import Optional, List
+
+import httpx
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
-# --- 2. LlamaIndex Imports (From your code) ---
+from llama_index.core import (
+    VectorStoreIndex,
+    StorageContext,
+    SimpleDirectoryReader,
+    Settings,
+    Document,
+)
+from llama_index.core import load_index_from_storage
+from llama_index.core.memory import ChatMemoryBuffer
+from llama_index.core.llms import ChatMessage, MessageRole
 from llama_index.llms.google_genai import GoogleGenAI
-from llama_index.core import Document, VectorStoreIndex, Settings, SimpleDirectoryReader
-from llama_index.core.node_parser import SentenceSplitter
 from llama_index.embeddings.google_genai import GoogleGenAIEmbedding
 
-# --- 3. Configuration & Secrets ---
+# ── Configuration ─────────────────────────────────────────────────────────────
+
 load_dotenv(override=True)
-api_key = os.getenv("GOOGLE_API_KEY")
 
-if not api_key:
-    raise ValueError("❌ GOOGLE_API_KEY not found. Please create a .env file with your key.")
+GOOGLE_API_KEY    = os.getenv("GOOGLE_API_KEY")
+SANITY_PROJECT_ID = os.getenv("SANITY_PROJECT_ID")
+SANITY_DATASET    = os.getenv("SANITY_DATASET", "production")
+SANITY_API_TOKEN  = os.getenv("SANITY_API_TOKEN")
+SANITY_API_VER    = os.getenv("SANITY_API_VERSION", "2023-10-01")
+FRONTEND_URL      = os.getenv("FRONTEND_URL", "http://localhost:3000")
 
-print(f"🔑 DEBUG: Loaded API Key: {api_key[:10]}... (Server Starting)")
+BASE_DIR    = os.path.dirname(__file__)
+DATA_DIR    = os.path.join(BASE_DIR, "data")
+STORAGE_DIR = os.path.join(BASE_DIR, "storage")
 
-# --- 4. Initialize FastAPI Server ---
-app = FastAPI(title="Vermont Health Brain")
+logging.basicConfig(level=logging.INFO)
+log = logging.getLogger("htr-brain")
 
-# Enable CORS so Next.js (port 3000) can talk to Python (port 8000)
+if not GOOGLE_API_KEY:
+    raise ValueError("GOOGLE_API_KEY is required in backend/.env")
+
+# ── LlamaIndex model settings ─────────────────────────────────────────────────
+
+Settings.llm = GoogleGenAI(
+    model="models/gemini-flash-lite-latest",
+    api_key=GOOGLE_API_KEY,
+)
+Settings.embed_model = GoogleGenAIEmbedding(
+    model="models/text-embedding-004",
+    api_key=GOOGLE_API_KEY,
+)
+
+# ── FastAPI app ────────────────────────────────────────────────────────────────
+
+app = FastAPI(title="HTR AI Brain", version="2.0.0")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[FRONTEND_URL, "http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# --- 5. AI Settings (Your Specific Models) ---
-# LLM: Flash Lite (High quota, low cost)
-Settings.llm = GoogleGenAI(model="models/gemini-flash-lite-latest", api_key=api_key)
+# Global index — built once at startup, replaced by /api/ingest
+_index: Optional[VectorStoreIndex] = None
 
-# Embedding: Text Embedding 004
-Settings.embed_model = GoogleGenAIEmbedding(model="models/text-embedding-004", api_key=api_key)
 
-# Global variable to store the "Brain"
-chat_engine = None
-startup_error = None
+# ── Sanity ingestion ───────────────────────────────────────────────────────────
 
-# --- 6. Data Loading (Runs once on Startup) ---
+# GROQ projections — string::join flattens portable text blocks to plain string.
+SANITY_QUERIES = {
+    "policyAnalysis": """*[_type=="policyAnalysis" && defined(slug.current)]{
+        _id, title, pillar, summary,
+        "bodyText": string::join(body[].children[].text, " ")
+    }""",
+    "post": """*[_type=="post" && defined(slug.current)]{
+        _id, title,
+        "bodyText": string::join(body[].children[].text, " ")
+    }""",
+    "academyModule": """*[_type=="academyModule" && defined(slug.current)]{
+        _id, title, pillar, summary, learningObjectives,
+        "bodyText": string::join(body[].children[].text, " ")
+    }""",
+    "caseStudy": """*[_type=="caseStudy" && defined(slug.current)]{
+        _id, title, pillar, summary,
+        "bodyText": string::join(body[].children[].text, " ")
+    }""",
+    "definition": """*[_type=="definition"]{
+        _id, term, description, pillars
+    }""",
+    "analystNote": """*[_type=="analystNote"]{
+        _id, title, pillar,
+        "bodyText": string::join(body[].children[].text, " ")
+    }""",
+    "webinar": """*[_type=="webinar" && defined(slug.current)]{
+        _id, title, pillar, description
+    }""",
+    "report": """*[_type=="report" && defined(slug.current)]{
+        _id, title, pillar, abstract
+    }""",
+}
+
+
+async def fetch_sanity_content() -> list[Document]:
+    """Fetch all publishable content from Sanity CMS via GROQ HTTP API."""
+    if not SANITY_PROJECT_ID or not SANITY_API_TOKEN:
+        log.warning("Sanity env vars not set — skipping CMS content ingestion")
+        return []
+
+    base_url = (
+        f"https://{SANITY_PROJECT_ID}.api.sanity.io"
+        f"/v{SANITY_API_VER}/data/query/{SANITY_DATASET}"
+    )
+    headers = {"Authorization": f"Bearer {SANITY_API_TOKEN}"}
+    documents: list[Document] = []
+
+    async with httpx.AsyncClient(timeout=30.0) as client:
+        for content_type, query in SANITY_QUERIES.items():
+            try:
+                resp = await client.get(base_url, params={"query": query}, headers=headers)
+                resp.raise_for_status()
+                results = resp.json().get("result", [])
+
+                for doc in results:
+                    parts: list[str] = []
+
+                    title = doc.get("title") or doc.get("term") or ""
+                    if title:
+                        parts.append(title)
+
+                    summary = (
+                        doc.get("summary")
+                        or doc.get("description")
+                        or doc.get("abstract")
+                        or ""
+                    )
+                    if summary:
+                        parts.append(summary)
+
+                    objectives = doc.get("learningObjectives")
+                    if objectives and isinstance(objectives, list):
+                        parts.append(". ".join(objectives))
+
+                    body = doc.get("bodyText") or ""
+                    if body:
+                        parts.append(body)
+
+                    content = "\n\n".join(filter(None, parts)).strip()
+                    if len(content) < 20:
+                        continue
+
+                    pillar = doc.get("pillar")
+                    if not pillar and doc.get("pillars"):
+                        pillar = doc["pillars"][0] if doc["pillars"] else None
+
+                    documents.append(
+                        Document(
+                            text=content[:8000],
+                            metadata={
+                                "source": content_type,
+                                "doc_id": doc["_id"],
+                                "title": title,
+                                "pillar": pillar or "General",
+                            },
+                        )
+                    )
+
+                log.info(f"  ✓ {content_type}: {len(results)} docs")
+
+            except Exception as e:
+                log.error(f"  ✗ {content_type}: {e}")
+
+    return documents
+
+
+async def build_index() -> VectorStoreIndex:
+    """
+    Build a fresh VectorStoreIndex from all sources:
+      1. PDFs in backend/data/   (drop new PDFs here, call /api/ingest)
+      2. Sanity CMS content
+
+    Persists to backend/storage/ — subsequent startups load in ~2s.
+    """
+    documents: list[Document] = []
+
+    # 1. Load PDFs
+    if os.path.exists(DATA_DIR):
+        pdf_files = [f for f in os.listdir(DATA_DIR) if f.lower().endswith(".pdf")]
+        if pdf_files:
+            log.info(f"📄 Loading {len(pdf_files)} PDF(s) from data/...")
+            try:
+                pdf_docs = SimpleDirectoryReader(DATA_DIR).load_data()
+                for doc in pdf_docs:
+                    doc.metadata.setdefault("source", "pdf")
+                    doc.metadata.setdefault("pillar", "General")
+                documents.extend(pdf_docs)
+                log.info(f"  ✓ {len(pdf_docs)} pages loaded from PDFs")
+            except Exception as e:
+                log.error(f"  ✗ PDF loading failed: {e}")
+        else:
+            log.info("  (no PDFs in data/ — add .pdf files and call POST /api/ingest)")
+
+    # 2. Fetch Sanity CMS
+    log.info("🔗 Fetching Sanity CMS content...")
+    sanity_docs = await fetch_sanity_content()
+    documents.extend(sanity_docs)
+    log.info(f"  ✓ {len(sanity_docs)} Sanity documents loaded")
+
+    if not documents:
+        documents = [Document(
+            text="The HTR AI Brain is initializing. No content has been indexed yet.",
+            metadata={"source": "system"},
+        )]
+
+    log.info(f"\n⏳ Embedding {len(documents)} documents (first run takes a few minutes)...")
+    idx = VectorStoreIndex.from_documents(documents, show_progress=True)
+
+    os.makedirs(STORAGE_DIR, exist_ok=True)
+    idx.storage_context.persist(persist_dir=STORAGE_DIR)
+    log.info(f"✅ Index built and persisted to storage/")
+
+    return idx
+
+
+# ── Startup ────────────────────────────────────────────────────────────────────
+
 @app.on_event("startup")
-async def startup_event():
-    global chat_engine, startup_error
-    print("\n🚀 Server starting up... loading data.")
+async def startup():
+    global _index
+    log.info("\n🚀 HTR AI Brain starting...")
 
-    # Define the data path relative to this file
-    current_dir = os.path.dirname(__file__)
-    data_dir = os.path.join(current_dir, "data")
-    
-    # Check if data folder exists
-    if not os.path.exists(data_dir):
-        print(f"⚠️ Warning: Data directory not found at {data_dir}")
-        print("   Using a dummy document so the server doesn't crash.")
-        documents = [Document(text="No PDF files found. Please add PDFs to the data folder.")]
-    else:
-        # Load EVERYTHING in the data folder (Wyman Report + Textbook)
-        print(f"📂 Scanning folder: {data_dir}")
+    docstore_path = os.path.join(STORAGE_DIR, "docstore.json")
+    if os.path.exists(docstore_path):
+        log.info("📦 Loading persisted index from storage/...")
         try:
-            documents = SimpleDirectoryReader(data_dir).load_data()
-            print(f"📄 Loaded {len(documents)} pages/chunks from PDFs.")
+            storage_context = StorageContext.from_defaults(persist_dir=STORAGE_DIR)
+            _index = load_index_from_storage(storage_context)
+            log.info("✅ Index ready. POST /api/ingest to refresh with new content.")
+            return
         except Exception as e:
-            print(f"❌ Error loading PDFs: {e}")
-            documents = [Document(text="Error loading documents.")]
+            log.warning(f"Could not load persisted index ({e}), rebuilding...")
 
-    # Create the Index
-    try:
-        print("⏳ Generating embeddings and index... (this might take a moment)")
-        # We use your SentenceSplitter logic here implicitly via VectorStoreIndex defaults
-        index = VectorStoreIndex.from_documents(documents)
-        chat_engine = index.as_chat_engine(chat_mode="context")
-        print("✅ Index ready! The API is listening.")
-        
-    except Exception as e:
-        startup_error = str(e)
-        print(f"\n❌ Fatal Error during indexing: {e}")
-        if "403" in str(e) or "PERMISSION_DENIED" in str(e):
-            print("🚨 CRITICAL: Your Google API Key is blocked.")
+    _index = await build_index()
 
-# --- 7. The Endpoint (This replaces your While Loop) ---
+
+# ── Request models ─────────────────────────────────────────────────────────────
+
 class ChatRequest(BaseModel):
-    question: str
+    message: str
+    history: Optional[List[dict]] = []
+    temperature: Optional[float] = 0.7
+    systemPrompt: Optional[str] = None
+
+
+# ── Endpoints ──────────────────────────────────────────────────────────────────
 
 @app.post("/api/chat")
-async def chat_endpoint(request: ChatRequest):
+async def chat(request: ChatRequest):
     """
-    Frontend sends: { "question": "What is Act 167?" }
-    Backend replies: { "answer": "Act 167 is..." }
+    RAG-enhanced streaming chat with conversation memory.
+    Payload shape matches the previous TypeScript endpoint — no frontend changes needed.
     """
-    if startup_error:
-        raise HTTPException(status_code=500, detail=f"Startup Error: {startup_error}")
-    if not chat_engine:
-        raise HTTPException(status_code=500, detail="Server is still starting up. Try again in 5 seconds.")
-    
-    try:
-        response = await chat_engine.achat(request.question)
-        return {"answer": str(response)}
-    except Exception as e:
-        print(f"❌ Error generating response: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+    if _index is None:
+        raise HTTPException(status_code=503, detail="Index not ready — try again in a few seconds")
 
-@app.get("/")
-def health_check():
-    return {"status": "ok", "model": "gemini-flash-lite-latest"}
+    # Reconstruct conversation memory from the history array sent by the frontend
+    memory = ChatMemoryBuffer.from_defaults(token_limit=4096)
+    for msg in (request.history or []):
+        role = msg.get("role", "")
+        text = msg.get("text", "").strip()
+        if not text:
+            continue
+        if role == "user":
+            memory.put(ChatMessage(role=MessageRole.USER, content=text))
+        elif role == "ai":
+            memory.put(ChatMessage(role=MessageRole.ASSISTANT, content=text))
+
+    system_prompt = request.systemPrompt or (
+        "You are an expert AI Analyst for the Health Transformation Review (HTR). "
+        "Your audience consists of healthcare executives, policy makers, and economists. "
+        "Answer questions thoroughly and professionally, citing specific policies, data, "
+        "and source documents where relevant. When referencing a document, name it explicitly "
+        "(e.g. 'According to the Wyman Report...' or 'Vermont Act 167 states...'). "
+        "Focus on policy, economics, technology, clinical outcomes, and health equity."
+    )
+
+    chat_engine = _index.as_chat_engine(
+        chat_mode="context",
+        memory=memory,
+        system_prompt=system_prompt,
+        verbose=False,
+    )
+
+    async def generate():
+        try:
+            streaming_response = await chat_engine.astream_chat(request.message)
+            async for token in streaming_response.async_response_gen():
+                yield token
+        except Exception as e:
+            log.error(f"Streaming error: {e}")
+            yield f"\n\n[Error: {e}]"
+
+    return StreamingResponse(generate(), media_type="text/plain; charset=utf-8")
+
+
+@app.post("/api/ingest")
+async def ingest():
+    """
+    Re-index all content (PDFs + Sanity CMS) in the background.
+    Call this after:
+      - Dropping new PDF files into backend/data/
+      - Publishing significant new content in Sanity
+    """
+    global _index
+
+    async def rebuild():
+        global _index
+        log.info("🔄 /api/ingest — rebuilding index in background...")
+        try:
+            _index = await build_index()
+            log.info("✅ Background rebuild complete.")
+        except Exception as e:
+            log.error(f"Background rebuild failed: {e}")
+
+    asyncio.create_task(rebuild())
+    return {
+        "status": "accepted",
+        "message": "Index rebuild started. Watch server logs for progress.",
+    }
+
+
+@app.get("/health")
+def health():
+    return {
+        "status": "ok",
+        "index_ready": _index is not None,
+        "model": "gemini-flash-lite-latest",
+        "embedding_model": "text-embedding-004",
+        "persisted": os.path.exists(os.path.join(STORAGE_DIR, "docstore.json")),
+    }
+
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

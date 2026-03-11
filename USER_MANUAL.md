@@ -3,7 +3,7 @@
 **Platform:** Health Transformation Review (HTR)
 **Version:** 2026 (Five-Pillar Edition)
 **Audience:** Analysts, editorial staff, subscribers, policymakers, healthcare executives
-**Last Updated:** March 2026
+**Last Updated:** March 2026 — Python AI backend, conversation memory, course filters
 
 ---
 
@@ -719,7 +719,7 @@ A: The HTR Performance Index scores are HTR's own composite analytical scores bu
 A: Performance Index metrics update on a rolling basis as new government data releases occur — typically annually for most metrics, quarterly for a few. News ticker data refreshes every 5 minutes. RHT Program data updates when federal program status changes.
 
 **Q: What does the AI Analyst know?**
-A: It has access to all content published on HTR — articles, analyses, academy modules, glossary definitions, case studies, and analyst notes. It does not have real-time internet access, does not know your personal account data, and does not have information from outside the HTR content library.
+A: It has access to all content published on HTR — articles, analyses, academy modules, glossary definitions, case studies, and analyst notes — as well as primary source research documents (including the Wyman Report on rural hospital transformation and Vermont Act 167). It also retains the context of your current conversation, so follow-up questions work naturally. It does not have real-time internet access, does not know your personal account data, and does not have information from outside the HTR knowledge base.
 
 **Q: Why do some At Risk states have large RHT Program awards?**
 A: The federal RHT program specifically targets states that are struggling most and need transformation investment. An At Risk state with large RHT funding is one where the federal government has recognized the crisis and committed to a solution. Whether that investment produces measurable improvement over time is exactly what the Performance Index tracks.
