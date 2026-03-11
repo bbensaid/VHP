@@ -1,6 +1,6 @@
 # Health Transformation Review — Developer Guide
 
-**Version:** 2026-03-10 | **Stack:** Next.js 16 · React 19 · Sanity CMS · Supabase · Gemini 1.5 Flash · Tailwind v4
+**Version:** 2026-03-10 | **Stack:** Next.js 16 · React 19 · Sanity CMS · Supabase · FastAPI · LlamaIndex · Gemini · Tailwind v4
 
 ---
 
@@ -30,6 +30,8 @@
 
 ## 1. Tech Stack
 
+### Frontend (Next.js)
+
 | Layer | Technology | Version | Notes |
 |---|---|---|---|
 | Framework | Next.js | 16.1.6 | App Router (not Pages Router) |
@@ -40,16 +42,28 @@
 | CMS Client | next-sanity | latest | Includes `createClient` + live preview utilities |
 | Database / Auth | Supabase | 2.89.0 | Postgres + pgvector + auth |
 | Supabase SSR | @supabase/ssr | 0.9.0 | Server-side session handling in middleware |
-| AI Model | Google Gemini 1.5 Flash | — | Via `@google/generative-ai` 0.24.1 |
-| Embedding Model | Google text-embedding-004 | — | 768-dim, used for RAG |
 | Maps | react-simple-maps | 1.0.0 | D3-backed SVG US map |
 | Type Safety | TypeScript | 5.x | Strict mode enabled |
 | Language | Node.js | 20.x | Dev and build environment |
+
+### Backend AI Brain (Python)
+
+| Layer | Technology | Version | Notes |
+|---|---|---|---|
+| API Framework | FastAPI | ≥0.111 | Async HTTP server; CORS configured for frontend |
+| ASGI Server | uvicorn | ≥0.30 | Runs FastAPI; `--reload` flag for dev |
+| AI Orchestration | LlamaIndex Core | ≥0.11 | VectorStoreIndex, ChatMemoryBuffer, streaming |
+| LLM | Google Gemini Flash Lite | `gemini-flash-lite-latest` | Via `llama-index-llms-google-genai` |
+| Embedding Model | Google text-embedding-004 | — | 768-dim; via `llama-index-embeddings-google-genai` |
+| PDF Ingestion | LlamaIndex SimpleDirectoryReader | — | Auto-discovers all `.pdf` files in `backend/data/` |
+| HTTP Client | httpx | ≥0.27 | Async Sanity GROQ HTTP API calls |
+| Vector Store | LlamaIndex in-memory + disk | — | Persisted to `backend/storage/` (gitignored) |
 
 **Important version notes:**
 - Next.js reports as `^16.1.6` in package.json — treat as Next.js 15 app router series.
 - Tailwind v4 is a **breaking change** from v3: no `tailwind.config.js` theme extensions for custom colors — all color tokens live in `globals.css` via `@theme`.
 - React 19 RC ships with concurrent features; no `ReactDOM.render()` — use `createRoot()`.
+- The Python backend owns all AI logic. The Next.js `/api/chat` route is a **thin proxy** — it forwards requests to the Python backend and streams responses back. No AI logic lives in TypeScript.
 
 ---
 
@@ -57,13 +71,24 @@
 
 ```
 Vermont-Health-Platform/
+├── backend/                     ← Python AI Brain (FastAPI + LlamaIndex)
+│   ├── main.py                  ← FastAPI server (all AI/RAG logic lives here)
+│   ├── requirements.txt         ← Python dependencies
+│   ├── .env                     ← Backend secrets (gitignored — copy from .env.example)
+│   ├── .env.example             ← Template: GOOGLE_API_KEY, Sanity vars, FRONTEND_URL
+│   ├── data/                    ← Drop PDF files here for ingestion
+│   │   ├── wyman-report.pdf     ← Ingested at startup
+│   │   └── *.pdf                ← Add more PDFs here, then POST /api/ingest
+│   └── storage/                 ← Persisted VectorStoreIndex (gitignored, auto-generated)
+│       ├── docstore.json        ← Presence of this file = fast startup
+│       └── ...                  ← LlamaIndex index files
 ├── frontend/                    ← Next.js application (primary codebase)
 │   ├── app/                     ← App Router pages and API routes
 │   │   ├── layout.tsx           ← Root layout (Header + AppShell + Footer)
 │   │   ├── globals.css          ← SINGLE SOURCE OF TRUTH for all colors (@theme)
 │   │   ├── page.tsx             ← Home page
 │   │   ├── api/
-│   │   │   ├── chat/route.ts    ← RAG-enhanced AI Analyst endpoint
+│   │   │   ├── chat/route.ts    ← Thin proxy → Python backend /api/chat
 │   │   │   ├── digest/route.ts  ← Email digest trigger
 │   │   │   ├── rht-states/route.ts ← RHT state data API
 │   │   │   ├── search/route.ts  ← Full-text search endpoint
@@ -140,18 +165,19 @@ Vermont-Health-Platform/
 │   │       └── useSolvencySimulation.ts ← Hospital solvency simulation hook
 │   ├── sanity/                  ← Sanity Studio configuration
 │   │   ├── schemaTypes/         ← All 21 document schemas (see §9)
+│   │   ├── generate_sanity_content.py ← AI content generator (Gemini)
 │   │   └── ...                  ← Studio desk config, plugins
 │   ├── scripts/                 ← One-off seed and sync scripts (Node/tsx)
 │   │   ├── seed-content.ts      ← Seed initial Sanity content
 │   │   ├── seed-hospitals.ts    ← Seed hospital documents
 │   │   ├── seed-sanity-performance-index.ts ← Seed state performance index
 │   │   ├── seed-sanity-rht.ts   ← Seed RHT state profiles
-│   │   └── sync-embeddings.ts   ← Sync Sanity → Supabase pgvector (RAG)
+│   │   └── sync-embeddings.ts   ← Legacy: Sanity → Supabase pgvector (superseded by Python backend)
 │   ├── middleware.ts             ← Supabase auth guard for /account routes
 │   ├── next.config.ts           ← Next.js config (styled-components compiler)
 │   └── .env.local               ← Environment variables (never commit)
 ├── supabase/
-│   └── setup-rag.sql            ← One-time pgvector setup SQL
+│   └── setup-rag.sql            ← One-time pgvector setup SQL (for Supabase auth; RAG now in Python)
 ├── USER_MANUAL.md               ← End-user documentation
 └── DEVELOPER_GUIDE.md           ← This file
 ```
@@ -160,7 +186,11 @@ Vermont-Health-Platform/
 
 ## 3. Environment Variables
 
-Create `frontend/.env.local` with the following variables. **Never commit this file.**
+There are **two separate** `.env` files — one for the Next.js frontend, one for the Python backend.
+
+### `frontend/.env.local` — Next.js app
+
+Never commit this file.
 
 ```env
 # ─── Sanity CMS ──────────────────────────────────────────────────────────────
@@ -180,30 +210,64 @@ NEXT_PUBLIC_SUPABASE_URL=https://your-project-ref.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 
 # Service role key — server-side only, bypasses Row Level Security.
-# Used by sync-embeddings.ts to write to content_embeddings.
+# Used by sync-embeddings.ts (legacy RAG sync) to write to content_embeddings.
 # NEVER expose to the browser.
 SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 
-# ─── Google AI (Gemini + Embeddings) ─────────────────────────────────────────
-# Used for: AI Analyst chat (Gemini 1.5 Flash) + RAG embeddings (text-embedding-004)
-# Get from: aistudio.google.com → API Keys
+# ─── Google AI (Embeddings — legacy sync script only) ────────────────────────
+# Only needed if running sync-embeddings.ts (the legacy Supabase RAG sync).
+# The AI Analyst chat itself no longer needs this key in the frontend —
+# it proxies all AI calls to the Python backend.
 GEMINI_API_KEY=your-gemini-api-key
+
+# ─── Python AI Backend ───────────────────────────────────────────────────────
+# URL of the running Python FastAPI backend.
+# Default: http://localhost:8000 (used if this var is absent).
+# Set to your production backend URL for deployment.
+PYTHON_BACKEND_URL=http://localhost:8000
+```
+
+### `backend/.env` — Python AI Brain
+
+Copy from `backend/.env.example` and fill in your values. Never commit this file.
+
+```env
+# ─── Google AI ───────────────────────────────────────────────────────────────
+# Powers Gemini LLM (gemini-flash-lite-latest) + embeddings (text-embedding-004)
+# Get from: https://aistudio.google.com/app/apikey
+GOOGLE_API_KEY=your-google-api-key
+
+# ─── Sanity CMS ──────────────────────────────────────────────────────────────
+# The Python backend fetches CMS content directly via GROQ HTTP API.
+# Use a read-only API token (no write permissions needed).
+SANITY_PROJECT_ID=your-project-id
+SANITY_DATASET=production
+SANITY_API_TOKEN=your-read-only-sanity-token
+SANITY_API_VERSION=2023-10-01
+
+# ─── CORS ────────────────────────────────────────────────────────────────────
+FRONTEND_URL=http://localhost:3000
 ```
 
 ### Variable reference table
 
-| Variable | Public? | Used By | Required |
-|---|---|---|---|
-| `NEXT_PUBLIC_SANITY_PROJECT_ID` | Yes | Sanity client, seed scripts | Yes |
-| `NEXT_PUBLIC_SANITY_DATASET` | Yes | Sanity client | Yes (default: `production`) |
-| `NEXT_PUBLIC_SANITY_API_VERSION` | Yes | Sanity client | Yes |
-| `SANITY_API_TOKEN` | No (server) | Seed scripts, sync-embeddings | For seeding only |
-| `NEXT_PUBLIC_SUPABASE_URL` | Yes | Supabase client, middleware, RAG | Yes |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Yes | Supabase browser client, auth | Yes |
-| `SUPABASE_SERVICE_ROLE_KEY` | No (server) | sync-embeddings.ts | For RAG sync only |
-| `GEMINI_API_KEY` | No (server) | `/api/chat/route.ts`, `lib/rag.ts`, sync-embeddings | Yes (for AI/RAG) |
-
-**Note on `GEMINI_API_KEY`:** If omitted from `.env.local`, export it in your shell profile (`export GEMINI_API_KEY=...`) — the sync script uses `dotenv` but also reads from the shell environment. The Next.js dev server must have it in `.env.local` for the chat API to work.
+| Variable | File | Public? | Required | Used By |
+|---|---|---|---|---|
+| `NEXT_PUBLIC_SANITY_PROJECT_ID` | `frontend/.env.local` | Yes | Yes | Sanity client, seed scripts |
+| `NEXT_PUBLIC_SANITY_DATASET` | `frontend/.env.local` | Yes | Yes | Sanity client |
+| `NEXT_PUBLIC_SANITY_API_VERSION` | `frontend/.env.local` | Yes | Yes | Sanity client |
+| `SANITY_API_TOKEN` | `frontend/.env.local` | No | Seeding only | Seed scripts |
+| `NEXT_PUBLIC_SUPABASE_URL` | `frontend/.env.local` | Yes | Yes | Supabase client, middleware |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | `frontend/.env.local` | Yes | Yes | Supabase browser client, auth |
+| `SUPABASE_SERVICE_ROLE_KEY` | `frontend/.env.local` | No | Legacy only | `sync-embeddings.ts` |
+| `GEMINI_API_KEY` | `frontend/.env.local` | No | Legacy only | `sync-embeddings.ts` |
+| `PYTHON_BACKEND_URL` | `frontend/.env.local` | No | Yes | `/api/chat/route.ts` proxy |
+| `GOOGLE_API_KEY` | `backend/.env` | No | Yes | LLM + embeddings in Python backend |
+| `SANITY_PROJECT_ID` | `backend/.env` | No | Yes | Python Sanity ingestion |
+| `SANITY_DATASET` | `backend/.env` | No | Yes | Python Sanity ingestion |
+| `SANITY_API_TOKEN` | `backend/.env` | No | Yes | Python Sanity ingestion |
+| `SANITY_API_VERSION` | `backend/.env` | No | No | Defaults to `2023-10-01` |
+| `FRONTEND_URL` | `backend/.env` | No | No | FastAPI CORS; defaults to `http://localhost:3000` |
 
 ---
 
@@ -212,151 +276,196 @@ GEMINI_API_KEY=your-gemini-api-key
 ### High-level system diagram
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                         Browser (User)                          │
-└───────────────────────────────┬─────────────────────────────────┘
-                                │ HTTP
-                                ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    Next.js 16 App Router                        │
-│                                                                 │
-│  ┌──────────────────┐    ┌──────────────────────────────────┐  │
-│  │  Server Components│    │  Client Components               │  │
-│  │  (page.tsx files) │    │  (StateDetailClientPage, etc.)  │  │
-│  │                   │    │                                  │  │
-│  │  - Fetch Sanity   │    │  - Dashboard tabs & charts       │  │
-│  │  - Fetch static   │    │  - Chat UI                       │  │
-│  │    data           │    │  - Map interactions              │  │
-│  └─────────┬─────────┘    └──────────────────────────────────┘  │
-│            │                                                     │
-│  ┌─────────▼──────────────────────────────────────────────────┐ │
-│  │                    API Routes (app/api/)                    │ │
-│  │  /api/chat  → RAG + Gemini stream                          │ │
-│  │  /api/search → Full-text search                            │ │
-│  │  /api/subscribe → Supabase email list                      │ │
-│  │  /api/digest → Email digest trigger                        │ │
-│  │  /api/rht-states → RHT state data                         │ │
-│  └─────────────────────────────────────────────────────────────┘ │
-└─────────┬──────────────────────────┬──────────────────────────────┘
-          │                          │
-          ▼                          ▼
-┌──────────────────┐      ┌────────────────────────────────────┐
-│   Sanity CMS      │      │           Supabase                 │
-│                   │      │                                    │
-│  - 21 schemas     │      │  ┌─────────────────────────────┐  │
-│  - GROQ queries   │      │  │  content_embeddings table    │  │
-│  - Studio at      │      │  │  (pgvector, 768-dim)         │  │
-│    /studio        │      │  │                              │  │
-│  - Portable Text  │      │  │  match_documents() function  │  │
-│    (block content)│      │  └─────────────────────────────┘  │
-└──────────────────┘      │  ┌─────────────────────────────┐  │
-                           │  │  Auth (email/password)       │  │
-                           │  │  User sessions               │  │
-                           │  └─────────────────────────────┘  │
-                           └────────────────────────────────────┘
++-----------------------------------------------------------------+
+|                         Browser (User)                          |
++-------------------------------+---------------------------------+
+                                | HTTP
+                                v
++-----------------------------------------------------------------+
+|                    Next.js 16 App Router                        |
+|                                                                 |
+|  +------------------+    +----------------------------------+  |
+|  |  Server Components|    |  Client Components               |  |
+|  |  (page.tsx files) |    |  (StateDetailClientPage, etc.)  |  |
+|  |                   |    |                                  |  |
+|  |  - Fetch Sanity   |    |  - Dashboard tabs & charts       |  |
+|  |  - Static data    |    |  - Chat UI (streams tokens)      |  |
+|  |    fallback       |    |  - Map interactions              |  |
+|  +---------+---------+    +----------------------------------+  |
+|            |                                                     |
+|  +---------v--------------------------------------------------+ |
+|  |                    API Routes (app/api/)                    | |
+|  |  /api/chat  --> THIN PROXY --> Python backend               | |
+|  |  /api/search --> Full-text search (Sanity GROQ)             | |
+|  |  /api/subscribe --> Supabase email list                     | |
+|  |  /api/digest --> Email digest trigger                       | |
+|  |  /api/rht-states --> RHT state data                        | |
+|  +----------------------------+-------------------------------+ |
++-------------+------------------+---------------------------------+
+              |                  | HTTP proxy
+              v                  v
++------------------+  +------------------------------------------+
+|   Sanity CMS     |  |    Python AI Brain  (backend/main.py)    |
+|                  |  |                                          |
+|  - 21 schemas    |  |  FastAPI + LlamaIndex                    |
+|  - GROQ queries  |  |                                          |
+|  - Studio at     |  |  +------------------------------------+  |
+|    /studio       |  |  |  VectorStoreIndex (LlamaIndex)      |  |
+|  - Portable Text |  |  |  Persisted to backend/storage/     |  |
++------------------+  |  |                                    |  |
+         ^            |  |  Sources:                          |  |
+         | GROQ HTTP  |  |   - PDFs in backend/data/          |  |
+         +------------+  |   - Sanity CMS (GROQ HTTP API)     |  |
+                      |  +------------------+-----------------+  |
+                      |                     |                     |
+                      |  +------------------v-----------------+  |
+                      |  |  Google Gemini Flash Lite (LLM)    |  |
+                      |  |  Google text-embedding-004         |  |
+                      |  +------------------------------------+  |
+                      +------------------------------------------+
+
++------------------------------------+
+|           Supabase                 |
+|  - Auth (email/password)           |
+|  - User sessions (middleware)      |
+|  - Email subscribers table         |
++------------------------------------+
 ```
 
-### RAG chat flow (detailed)
+### AI chat flow (detailed)
 
 ```
 User types question
-        │
-        ▼
-POST /api/chat
-        │
-        ├─ 1. embedText(question)
-        │        │
-        │        └─ Google text-embedding-004 API
-        │              → 768-dimensional float array
-        │
-        ├─ 2. searchSimilar(embedding, threshold=0.45, count=5)
-        │        │
-        │        └─ Supabase RPC: match_documents()
-        │              → Top-5 content chunks (cosine similarity)
-        │
-        ├─ 3. buildContextBlock(chunks)
-        │        │
-        │        └─ Formats chunks as numbered, cited context string
-        │
-        ├─ 4. Build full prompt:
-        │     systemContext + contextBlock + "Question: " + message
-        │
-        └─ 5. model.generateContentStream(fullPrompt)
-                 │
-                 └─ Gemini 1.5 Flash streaming
-                       → ReadableStream → client
+        |
+        v
+POST /api/chat  (Next.js -- thin proxy only)
+        |
+        |  forwards entire request body + history[] unchanged
+        v
+POST http://localhost:8000/api/chat  (Python FastAPI)
+        |
+        +- 1. Reconstruct ChatMemoryBuffer from history[]
+        |        |
+        |        +- Re-hydrates prior user/assistant turns
+        |              (sent by the frontend on every request)
+        |
+        +- 2. _index.as_chat_engine(chat_mode="context")
+        |        |
+        |        +- LlamaIndex retrieves relevant chunks
+        |              from the persisted VectorStoreIndex
+        |              using text-embedding-004 similarity search
+        |
+        +- 3. astream_chat(message)
+        |        |
+        |        +- Gemini Flash Lite generates response
+        |              with retrieved context injected
+        |
+        +- 4. StreamingResponse --> token-by-token
+                 |
+                 +- Next.js proxy streams tokens back
+                       --> ReadableStream --> browser
 ```
 
-### Content sync flow (offline / scheduled)
+### Index build flow (startup / on-demand)
 
 ```
-Sanity Studio (editor creates content)
-        │
-        ▼
-npx tsx scripts/sync-embeddings.ts
-        │
-        ├─ Fetch all docs from Sanity via GROQ
-        │   (policyAnalysis, post, academyModule, caseStudy,
-        │    definition, analystNote, webinar, report)
-        │
-        ├─ For each doc:
-        │   1. Extract plain text (portableTextToPlain)
-        │   2. Truncate to 8000 chars
-        │   3. embed(text) → Google text-embedding-004
-        │   4. supabase.upsert() → content_embeddings
-        │   5. sleep(1000ms) ← rate-limit compliance
-        │
-        └─ Done: embeddings available for RAG queries
+Backend starts  (or POST /api/ingest called)
+        |
+        +- Check: does backend/storage/docstore.json exist?
+        |   YES --> load persisted index (~2 seconds) --> done
+        |   NO  --> build from scratch:
+        |
+        +- 1. SimpleDirectoryReader(backend/data/)
+        |       --> loads all .pdf files as LlamaIndex Documents
+        |
+        +- 2. fetch_sanity_content()
+        |       --> GROQ HTTP API fetches 8 content types:
+        |         policyAnalysis, post, academyModule, caseStudy,
+        |         definition, analystNote, webinar, report
+        |       --> Flattens Portable Text:
+        |             string::join(body[].children[].text, " ")
+        |
+        +- 3. VectorStoreIndex.from_documents(all_docs)
+        |       --> Embeds every document with text-embedding-004
+        |       --> Builds in-memory similarity index
+        |
+        +- 4. index.storage_context.persist(backend/storage/)
+                --> Fast startup (~2s) on all subsequent runs
 ```
-
 ---
 
 ## 5. Getting Started (Local Dev)
 
 ### Prerequisites
 
-- Node.js 20.x
-- npm or npx (scripts use `npx tsx`)
-- Supabase project with pgvector enabled
+- **Node.js 20.x** + npm (for Next.js frontend)
+- **Python 3.10+** + pip (for Python AI backend)
+- Supabase project (Postgres + auth; pgvector optional — now used for auth only)
 - Sanity project (free tier works)
-- Google AI Studio API key (free tier: 60 req/min)
+- Google AI Studio API key (free tier: 60 req/min for Gemini, 1500 req/day for embeddings)
 
-### Steps
+### Terminal A — Python AI Backend (start first)
 
 ```bash
-# 1. Clone and install
+# 1. Set up Python environment
+cd backend
+python3 -m venv venv          # one time only
+source venv/bin/activate      # macOS/Linux
+# OR: venv\Scripts\activate   # Windows
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Create backend env file
+cp .env.example .env
+# Fill in: GOOGLE_API_KEY, SANITY_PROJECT_ID, SANITY_DATASET, SANITY_API_TOKEN
+
+# 4. Start the AI backend
+uvicorn main:app --reload --port 8000
+
+# First run: builds the LlamaIndex from PDFs + Sanity (~2-5 min depending on content)
+# Subsequent runs: loads persisted index from backend/storage/ (~2 seconds)
+# Health check: http://localhost:8000/health
+```
+
+**Adding PDFs:** Drop any `.pdf` file into `backend/data/`, then call `POST /api/ingest` to rebuild the index with the new content. No code changes needed.
+
+### Terminal B — Next.js Frontend
+
+```bash
+# 1. Install dependencies
 cd frontend
 npm install
 
 # 2. Create environment file
-cp .env.local.example .env.local   # if example exists, else create manually
-# Fill in all variables from §3
+# Create frontend/.env.local with variables from §3
+# Minimum required for local dev:
+#   NEXT_PUBLIC_SANITY_PROJECT_ID, NEXT_PUBLIC_SANITY_DATASET
+#   NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY
+#   PYTHON_BACKEND_URL=http://localhost:8000
 
-# 3. Set up Supabase pgvector (one time only)
-# Open Supabase dashboard → SQL Editor → paste and run:
+# 3. Set up Supabase (one time only)
+# Open Supabase dashboard → SQL Editor → run:
 # supabase/setup-rag.sql
 
 # 4. Start development server
 npm run dev
 # → http://localhost:3000
+# Sanity Studio: http://localhost:3000/studio (embedded, no separate process)
 
-# 5. Start Sanity Studio (runs on same port via /studio route)
-# Studio is embedded in the Next.js app — no separate command needed.
-
-# 6. (Optional) Seed initial content
-cd frontend
+# 5. (Optional) Seed initial content into Sanity
 npx tsx scripts/seed-content.ts
 npx tsx scripts/seed-hospitals.ts
 npx tsx scripts/seed-sanity-rht.ts
 npx tsx scripts/seed-sanity-performance-index.ts
-
-# 7. Sync RAG embeddings
-npx tsx scripts/sync-embeddings.ts
 ```
+
+After seeding Sanity content, call `POST http://localhost:8000/api/ingest` to rebuild the AI index with the new CMS content. The Python backend automatically re-ingests Sanity on every rebuild.
 
 ### Build and lint
 
 ```bash
+cd frontend
 npm run build     # Production build
 npm run start     # Production server
 npm run lint      # ESLint
@@ -800,126 +909,134 @@ Award amounts by state slug. Cross-references `rht-program.ts`.
 
 ## 11. RAG Pipeline (AI Analyst)
 
+The AI Analyst uses a **Python-first architecture** — all RAG, embedding, LLM inference, and conversation memory live in the Python backend (`backend/main.py`). The Next.js layer is a thin HTTP proxy with no AI logic.
+
 ### Components
 
 | File | Role |
 |---|---|
-| `supabase/setup-rag.sql` | One-time DB setup — creates table, indexes, function |
-| `frontend/scripts/sync-embeddings.ts` | Offline sync: Sanity → embeddings → Supabase |
-| `frontend/lib/rag.ts` | Runtime helpers: `embedText`, `searchSimilar`, `buildContextBlock` |
-| `frontend/app/api/chat/route.ts` | Request handler: orchestrates RAG + Gemini streaming |
+| `backend/main.py` | FastAPI server: ingestion, VectorStoreIndex, chat endpoint, streaming |
+| `backend/data/*.pdf` | Source PDFs ingested at startup (drop files here + call /api/ingest) |
+| `backend/storage/` | Persisted LlamaIndex VectorStoreIndex — gitignored, auto-generated |
+| `backend/.env` | Backend secrets: GOOGLE_API_KEY, Sanity vars |
+| `frontend/app/api/chat/route.ts` | Thin proxy only — forwards request, streams response back |
 
-### Database setup
+**Legacy files (kept for reference, no longer used for chat):**
+- `frontend/lib/rag.ts` — TypeScript RAG helpers (Supabase pgvector approach)
+- `frontend/scripts/sync-embeddings.ts` — TypeScript Sanity→Supabase embedding sync
 
-Run `supabase/setup-rag.sql` **once** in the Supabase SQL Editor:
+### Python backend (`backend/main.py`)
 
-```sql
--- Enables pgvector extension
-CREATE EXTENSION IF NOT EXISTS vector;
+#### Startup behaviour
 
--- Table for all content embeddings
-CREATE TABLE content_embeddings (
-  id           UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  content_id   TEXT NOT NULL,        -- Sanity document _id
-  content_type TEXT NOT NULL,        -- schema type name
-  title        TEXT,
-  content      TEXT NOT NULL,        -- plain text that was embedded
-  url          TEXT,                 -- canonical frontend URL
-  pillar       TEXT,                 -- Policy | Economics | ... | null
-  embedding    VECTOR(768),          -- Google text-embedding-004 output
-  created_at   TIMESTAMPTZ DEFAULT NOW(),
-  updated_at   TIMESTAMPTZ DEFAULT NOW()
-);
-
--- Unique index on content_id (enables upsert without duplicates)
-CREATE UNIQUE INDEX content_embeddings_content_id_idx ON content_embeddings (content_id);
-
--- HNSW index for fast cosine-distance ANN search
-CREATE INDEX content_embeddings_hnsw_idx
-  ON content_embeddings
-  USING hnsw (embedding vector_cosine_ops)
-  WITH (m = 16, ef_construction = 64);
-
--- RPC function called by the RAG helper at query time
-CREATE OR REPLACE FUNCTION match_documents(
-  query_embedding VECTOR(768),
-  match_threshold FLOAT DEFAULT 0.5,
-  match_count     INT   DEFAULT 5
-) RETURNS TABLE (id UUID, content_id TEXT, content_type TEXT, title TEXT,
-                 content TEXT, url TEXT, pillar TEXT, similarity FLOAT)
-LANGUAGE SQL STABLE AS $$
-  SELECT id, content_id, content_type, title, content, url, pillar,
-         1 - (embedding <=> query_embedding) AS similarity
-  FROM content_embeddings
-  WHERE 1 - (embedding <=> query_embedding) > match_threshold
-  ORDER BY embedding <=> query_embedding
-  LIMIT match_count;
-$$;
+```python
+# Startup checks for a persisted index first:
+if os.path.exists("backend/storage/docstore.json"):
+    # FAST PATH: load in ~2 seconds
+    storage_context = StorageContext.from_defaults(persist_dir=STORAGE_DIR)
+    _index = load_index_from_storage(storage_context)
+else:
+    # SLOW PATH: build from scratch (~2-5 min first run)
+    _index = await build_index()
 ```
 
-### Sync script
+#### Content sources ingested
 
-Run after content changes in Sanity:
+On build, the index combines:
 
-```bash
-cd frontend
-npx tsx scripts/sync-embeddings.ts
+1. **PDFs** — All `.pdf` files in `backend/data/` via `SimpleDirectoryReader`
+2. **Sanity CMS** — 8 content types fetched via GROQ HTTP API:
+
+| Sanity Type | GROQ projection |
+|---|---|
+| `policyAnalysis` | title, pillar, summary, body (flattened) |
+| `post` | title, body (flattened) |
+| `academyModule` | title, pillar, summary, learningObjectives, body |
+| `caseStudy` | title, pillar, summary, body |
+| `definition` | term, description, pillars |
+| `analystNote` | title, pillar, body |
+| `webinar` | title, pillar, description |
+| `report` | title, pillar, abstract |
+
+Portable Text is flattened using the GROQ expression: `string::join(body[].children[].text, " ")`
+
+Each document is truncated to 8,000 characters before embedding.
+
+#### Chat endpoint internals
+
+```python
+@app.post("/api/chat")
+async def chat(request: ChatRequest):
+    # 1. Rebuild conversation memory from history sent by the frontend
+    memory = ChatMemoryBuffer.from_defaults(token_limit=4096)
+    for msg in request.history:
+        if msg["role"] == "user":
+            memory.put(ChatMessage(role=MessageRole.USER, content=msg["text"]))
+        elif msg["role"] == "ai":
+            memory.put(ChatMessage(role=MessageRole.ASSISTANT, content=msg["text"]))
+
+    # 2. Create context-aware chat engine using the persisted index
+    chat_engine = _index.as_chat_engine(
+        chat_mode="context",   # retrieves relevant chunks per query
+        memory=memory,
+        system_prompt=HTR_ANALYST_PERSONA,
+        verbose=False,
+    )
+
+    # 3. Stream response token-by-token
+    async def generate():
+        streaming_response = await chat_engine.astream_chat(request.message)
+        async for token in streaming_response.async_response_gen():
+            yield token
+
+    return StreamingResponse(generate(), media_type="text/plain; charset=utf-8")
 ```
 
-The script:
-1. Fetches all syncable documents from Sanity via GROQ
-2. Converts Portable Text blocks to plain text
-3. Truncates each to 8,000 characters (Gemini API limit)
-4. Embeds each with `text-embedding-004` (768-dim)
-5. Upserts into `content_embeddings` by `content_id`
-6. Sleeps 1s between embeds to respect rate limits (60 req/min free tier)
+#### Available endpoints
 
-**Content types synced:** `policyAnalysis`, `post`, `academyModule`, `caseStudy`, `definition`, `analystNote`, `webinar`, `report`
+| Method | Endpoint | Description |
+|---|---|---|
+| `POST` | `/api/chat` | RAG-enhanced streaming chat. Body: `{ message, history[], temperature?, systemPrompt? }` |
+| `POST` | `/api/ingest` | Trigger async index rebuild (background task). Call after adding PDFs or publishing Sanity content. |
+| `GET` | `/health` | Returns index status, model names, whether index is persisted. |
 
-### RAG library (`lib/rag.ts`)
+### Next.js proxy (`frontend/app/api/chat/route.ts`)
 
 ```typescript
-// Embed user query
-embedText(text: string): Promise<number[]>
-  // → calls Google text-embedding-004, returns 768-float array
+const PYTHON_BACKEND = process.env.PYTHON_BACKEND_URL || "http://localhost:8000";
 
-// Retrieve similar chunks
-searchSimilar(embedding: number[], options?: {
-  matchThreshold?: number;   // default 0.5; chat uses 0.45 (more permissive)
-  matchCount?: number;       // default 5
-}): Promise<ContentChunk[]>
-  // → calls Supabase RPC match_documents()
-
-// Format chunks into an LLM context string
-buildContextBlock(chunks: ContentChunk[]): string
-  // → numbered list: "[1] 'Title' [Pillar] (url)\n{content truncated to 1200 chars}"
-```
-
-### Chat endpoint (`/api/chat`)
-
-**Request:**
-```json
-{
-  "message": "What is Vermont's telehealth adoption rate?",
-  "temperature": 0.7,       // optional, default 0.7
-  "systemPrompt": "..."     // optional, overrides default HTR analyst persona
+export async function POST(req: Request) {
+  const body = await req.json();
+  const upstream = await fetch(`${PYTHON_BACKEND}/api/chat`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  // Stream the response directly back to the browser
+  return new NextResponse(upstream.body, {
+    headers: { "Content-Type": "text/plain; charset=utf-8" },
+  });
 }
 ```
 
-**Response:** `ReadableStream` (text chunks from Gemini 1.5 Flash)
+The frontend sends `{ message, history[], temperature, systemPrompt }` — the Python backend uses `history[]` to reconstruct the `ChatMemoryBuffer` for each request.
 
-**Graceful degradation:** If embedding or Supabase fails, the endpoint logs a warning and proceeds with no context (Gemini answers from general knowledge only). The endpoint never 500s due to RAG failure alone.
+### Adding PDFs to the knowledge base
+
+1. Drop any `.pdf` file into `backend/data/`
+2. Call `POST http://localhost:8000/api/ingest` (or restart the server)
+3. The backend rebuilds the index in the background — logs show progress
+4. No code changes or restarts of the Next.js app needed
 
 ### Tuning parameters
 
-| Parameter | Current value | Effect of increasing |
-|---|---|---|
-| `matchThreshold` | 0.45 | Higher = fewer but more relevant results |
-| `matchCount` | 5 | More chunks = richer context, larger prompt |
-| `temperature` | 0.7 | Higher = more creative, less reliable |
-| Truncate per chunk | 1,200 chars | More context per source |
-| Text truncation | 8,000 chars | Larger input per embedded doc |
-
+| Parameter | Location | Current | Effect |
+|---|---|---|---|
+| Model | `backend/main.py` | `gemini-flash-lite-latest` | Chat quality vs. latency |
+| Embed model | `backend/main.py` | `text-embedding-004` | 768-dim, fixed |
+| Memory limit | `backend/main.py` | `token_limit=4096` | Longer context = more history retained |
+| Text truncation | `backend/main.py` | 8,000 chars per doc | Larger = richer context, slower embed |
+| Temperature | Request body | `0.7` | Higher = more creative, less reliable |
 ---
 
 ## 12. Dashboard System
@@ -929,10 +1046,16 @@ buildContextBlock(chunks: ContentChunk[]): string
 URL pattern: `/dashboard/[state]` where `state` is a lowercase slug (e.g., `vermont`, `new-york`).
 
 **Server component** (`app/dashboard/[state]/page.tsx`):
-- Imports `rhtProgramData` from `lib/data/rht-program.ts`
-- Imports `performanceIndexData` from `lib/data/performance-index-data.ts`
-- Looks up both by `params.state`
-- Passes to `StateDetailClientPage`
+- Queries Sanity first via `getPerformanceIndex()` and `getRhtState()` (`lib/sanity-dashboard-queries.ts`)
+- If Sanity has no document for this state yet, falls back to static data files (`lib/data/performance-index-data.ts`, `lib/data/rht-program.ts`)
+- If neither source has data → returns 404
+- Passes resolved data to `StateDetailClientPage`
+
+```typescript
+const indexData  = sanityIndex  ?? performanceIndexData[stateSlug] ?? null;
+const programData = sanityProgram ?? rhtProgramData[stateSlug]     ?? null;
+if (!indexData && !programData) return notFound();
+```
 
 **Client component** (`StateDetailClientPage.tsx`):
 - Three tabs: **Performance Index** | **RHT Program** | **Hospital View**
@@ -1075,11 +1198,12 @@ The most important operational script. Run after any significant Sanity content 
 
 ### `POST /api/chat`
 
-RAG-enhanced AI Analyst. See §11 for full details.
+Thin proxy to the Python AI backend. Forwards the full request body and streams the response back. See §11 for full details.
 
-**Body:** `{ message: string, temperature?: number, systemPrompt?: string }`
-**Response:** Streaming text (ReadableStream)
+**Body:** `{ message: string, history?: {role, text}[], temperature?: number, systemPrompt?: string }`
+**Response:** Streaming text (ReadableStream) — tokens from Gemini Flash Lite via LlamaIndex
 **Auth:** None required (public endpoint)
+**Requires:** Python backend running at `PYTHON_BACKEND_URL` (default: `http://localhost:8000`)
 
 ### `GET /api/rht-states`
 
@@ -1297,27 +1421,44 @@ The US map in `DashboardIndexClient.tsx` uses `react-simple-maps` with GeoJSON �
 
 ## 18. Deployment
 
-The application is a standard Next.js app. It deploys to Vercel (recommended) or any Node.js host.
+The system has **two deployable services**: the Next.js frontend and the Python AI backend. Deploy them independently.
 
-### Vercel deployment
+### Frontend — Vercel (recommended)
 
 ```bash
-# Deploy from frontend/ directory
 cd frontend
 npx vercel --prod
 ```
 
-**No `vercel.json` is required** — defaults handle everything.
+**No `vercel.json` required** — defaults handle everything.
 
-Set all environment variables from §3 in the Vercel dashboard under **Settings → Environment Variables**. Mark `GEMINI_API_KEY`, `SANITY_API_TOKEN`, and `SUPABASE_SERVICE_ROLE_KEY` as server-only (not exposed to browser).
+Set all frontend env vars in Vercel → Settings → Environment Variables. Mark `SANITY_API_TOKEN`, `SUPABASE_SERVICE_ROLE_KEY` as server-only. Set `PYTHON_BACKEND_URL` to your production backend URL.
+
+### Python Backend — options
+
+The Python backend is a long-running async process. Recommended hosts:
+
+| Host | Notes |
+|---|---|
+| **Railway** | Easiest — connect repo, set env vars, auto-deploys on push |
+| **Render** | Free tier available; set start command: `uvicorn main:app --host 0.0.0.0 --port $PORT` |
+| **Fly.io** | Good for low-latency; Docker-based |
+| **Local (dev)** | `uvicorn main:app --reload --port 8000` |
+
+**Important for production backend:**
+- The `backend/storage/` directory (persisted index) is gitignored. On first deployment the backend will build the index from scratch — ensure `GOOGLE_API_KEY` and Sanity vars are set before first startup.
+- To persist the index across deploys, mount a persistent volume at `backend/storage/` (Railway and Fly.io both support this). Without a volume, every redeploy rebuilds from scratch.
+- Set `FRONTEND_URL` to your production Next.js domain for correct CORS headers.
 
 ### Pre-deployment checklist
 
-- [ ] All env vars set in Vercel (or host) environment
-- [ ] `supabase/setup-rag.sql` has been run against the production Supabase project
-- [ ] `sync-embeddings.ts` has been run to populate initial RAG content
+- [ ] `frontend/.env.local` vars set in Vercel environment
+- [ ] `PYTHON_BACKEND_URL` set to production backend URL in Vercel
+- [ ] `backend/.env` vars set in backend host environment
+- [ ] `supabase/setup-rag.sql` run against production Supabase project
 - [ ] Sanity dataset is `production` (not a dev dataset)
 - [ ] `npm run build` completes without errors locally
+- [ ] Python backend health check passes: `GET /health` returns `{ index_ready: true }`
 - [ ] No hardcoded `localhost` URLs in components
 
 ### Build notes
@@ -1329,20 +1470,21 @@ npm run start    # Test production build locally
 ```
 
 **Tailwind v4 note:** The beta PostCSS plugin (`@tailwindcss/postcss`) handles CSS compilation at build time. If build fails with CSS errors, ensure `postcss.config.js` contains:
+
 ```javascript
 module.exports = { plugins: { '@tailwindcss/postcss': {} } }
 ```
 
 ### Database migrations
 
-Currently there are no migration files — schema changes to Supabase are applied manually via the SQL editor. Before any production DB change:
+No migration files — Supabase schema changes applied manually via the SQL editor. Before any production DB change:
+
 1. Test in a staging Supabase project
 2. Apply to production
-3. Re-run `sync-embeddings.ts` if the `content_embeddings` schema changed
 
 ### Sanity Studio deployment
 
-The Studio is embedded in the Next.js app at `/studio`. It deploys automatically with the Next.js app. CORS must be configured in Sanity:
+Embedded in the Next.js app at `/studio`. Deploys automatically with the Next.js app. Configure CORS:
 - `sanity.io/manage` → your project → API → CORS Origins
 - Add: `https://your-production-domain.com`
 
@@ -1354,31 +1496,45 @@ The Studio is embedded in the Next.js app at `/studio`. It deploys automatically
 
 | Issue | Status | Notes |
 |---|---|---|
-| Static data not live | Active | `performance-index-data.ts` and `rht-program.ts` are hardcoded. Sanity schemas exist but data pipeline not wired. |
-| `GEMINI_API_KEY` not in default `.env.local` | Active | Must be added manually or via shell export |
+| Python backend not auto-started | Active | Must be started manually alongside `npm run dev`. No process manager yet. |
+| `backend/storage/` not persisted on cloud deploys | Active | Without a mounted volume, every redeploy rebuilds the index from scratch (~2-5 min downtime). |
 | TypeScript `any` types in Sanity queries | Active | GROQ results typed as `any` — `sanity typegen` not run |
 | `react-simple-maps` SSR warning | Active | Map component requires client-side rendering guard |
-| No RAG re-sync automation | Active | `sync-embeddings.ts` must be run manually after content updates |
-| HNSW index on empty table | Fixed | If the table is empty when indexed, it works but warns — populate before indexing if possible |
+| Dashboard static data fallback | Partial | Sanity → static file fallback is wired. Static files are source of truth until Sanity seed scripts are run. |
+| Content generator uses Google SDK directly | Active | `generate_sanity_content.py` uses `google-generativeai` — add to Python venv or run separately |
+
+### Resolved (this session)
+
+| Issue | Resolution |
+|---|---|
+| Academy filter buttons decorative-only | Extracted to `CoursesClient.tsx` with `useState` — filters are now functional |
+| TypeError on `/dashboard/[state]` (`preventiveCare` undefined) | Added clinical/equity to GROQ projection with `coalesce(..., 0)` fallbacks; added fields to Sanity schema |
+| AI chat had no conversation memory | Frontend sends `history[]` on every request; Python backend reconstructs `ChatMemoryBuffer` |
+| AI logic entirely in TypeScript | Python backend (FastAPI + LlamaIndex) now owns all RAG; Next.js is a thin proxy |
+| Pillar hub cards no hover background | Added `hover:bg-{color}-50/80` to all pillar page cards and PillarHub template |
 
 ### Roadmap (prioritized)
 
-1. **Live data pipeline** — Replace static `lib/data/*.ts` files with Sanity GROQ queries pulled server-side. The `sanity-dashboard-queries.ts` file has the GROQ queries ready.
+1. **Python backend process management** — Add a `Procfile` or `docker-compose.yml` so `make dev` starts both Next.js and uvicorn with one command.
 
-2. **Automated RAG sync** — Add a Sanity webhook → Vercel serverless function to trigger `sync-embeddings` logic on content publish.
+2. **Persistent index storage** — Mount a volume at `backend/storage/` in production (Railway/Fly.io) so the index survives redeploys.
 
-3. **Search** — Wire up `/api/search` with Sanity's native search or Algolia. The route file exists but may need GROQ expansion.
+3. **Automated RAG refresh** — Sanity webhook → call `POST /api/ingest` on content publish. No manual trigger needed.
 
-4. **TypeScript strictness** — Run `npx sanity typegen generate` to produce typed GROQ results. Eliminate `any` in API routes and data fetchers.
+4. **Search** — Wire up `/api/search` with Sanity's native search or Algolia. Route file exists; needs GROQ expansion.
 
-5. **Email digest** — Complete `/api/digest` endpoint to generate a weekly summary from recent Sanity content and send to `subscriber` table emails.
+5. **Live data pipeline** — Replace remaining `lib/data/*.ts` static files with Sanity GROQ queries for dashboard data (partially done — fallback wired, Sanity schemas exist).
 
-6. **Auth + personalization** — Extend the account page with saved states, reading history, and personalized content recommendations via Supabase row-level security.
+6. **TypeScript strictness** — `npx sanity typegen generate` for typed GROQ results; eliminate `any` in routes.
 
-7. **Content depth** — Populate all 5 pillar hubs with policyAnalysis documents; add academy modules for Clinical and Equity pillars.
+7. **Email digest** — Complete `/api/digest` endpoint to generate weekly summary from Sanity and send to subscriber list.
 
-8. **Performance** — Enable Sanity CDN (`useCdn: true`) for production reads. Add `stale-while-revalidate` ISR to static-heavy pages.
+8. **Auth + personalization** — Saved states, reading history, personalized recommendations via Supabase RLS.
+
+9. **Content depth** — Populate all 5 pillar hubs; add Clinical and Equity academy modules; more PDFs to `backend/data/`.
+
+10. **Performance** — Sanity CDN (`useCdn: true`) for production reads; ISR for static-heavy pages.
 
 ---
 
-*Last updated: 2026-03-10*
+*Last updated: 2026-03-10 (Python AI backend integration)*

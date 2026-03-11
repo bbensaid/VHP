@@ -9,6 +9,9 @@ venv/
 .env
 .gemini/
 
+# Python AI backend — persisted vector index (large, regenerated on startup)
+backend/storage/
+
 # Node / JS
 node_modules/
 .next/
