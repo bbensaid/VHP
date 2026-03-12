@@ -61,7 +61,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
             title="View the national surveillance map and active state cohorts"
             className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
           >
-            <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden flex-shrink-0">
+            <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0">
               <Image
                 src="/rhtp-icon.png"
                 alt="RHTP Logo"
@@ -80,7 +80,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
             title="Read the detailed case study on Vermont's health reform"
             className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
           >
-            <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden flex-shrink-0">
+            <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0">
               <Image
                 src="/vermont-icon.svg"
                 alt="Vermont Case Study"
@@ -101,7 +101,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
               onClick={onNavigate}
               className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
             >
-              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden flex-shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
                 <AcademicCapIcon className="w-5 h-5" />
               </div>
               <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
@@ -114,7 +114,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
               onClick={onNavigate}
               className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
             >
-              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden flex-shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
                 <BriefcaseIcon className="w-5 h-5" />
               </div>
               <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
@@ -127,7 +127,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
               onClick={onNavigate}
               className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
             >
-              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden flex-shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
                 <FilmIcon className="w-5 h-5" />
               </div>
               <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
@@ -140,7 +140,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
               onClick={onNavigate}
               className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
             >
-              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden flex-shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
                 <ArrowTrendingUpIcon className="w-5 h-5" />
               </div>
               <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
@@ -153,7 +153,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
               onClick={onNavigate}
               className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
             >
-              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden flex-shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
                 <LightBulbIcon className="w-5 h-5" />
               </div>
               <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">

@@ -9,7 +9,7 @@ const Logo: React.FC = () => {
       <div className="flex items-center gap-2">
         
         {/* 2. IMAGE SIZE */}
-        <div className="relative h-12 w-12 sm:h-15 sm:w-15 flex-shrink-0">
+        <div className="relative h-12 w-12 sm:h-15 sm:w-15 shrink-0">
           <Image 
             src="/logo-icon.svg" 
             alt="HTR Logo" 

@@ -66,7 +66,7 @@ const PillarBlock = ({
     <ul className="p-4 space-y-2">
       {metrics.map((m) => (
         <li key={m} className="flex items-center gap-2 text-sm text-slate-700">
-          <span className={`w-1.5 h-1.5 rounded-full ${barColor} flex-shrink-0`} />
+          <span className={`w-1.5 h-1.5 rounded-full ${barColor} shrink-0`} />
           {m}
         </li>
       ))}
@@ -257,7 +257,7 @@ export default function MethodologyPage() {
           {/* Step 1: Pillar Scores */}
           <div className="space-y-4 mb-10">
             <div className="flex gap-4 items-start p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
-              <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center font-black text-slate-700 flex-shrink-0">1</div>
+              <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center font-black text-slate-700 shrink-0">1</div>
               <div className="flex-1">
                 <h3 className="font-bold text-slate-900 mb-2">Pillar Scores</h3>
                 <p className="text-sm text-slate-600 mb-4">
@@ -270,7 +270,7 @@ export default function MethodologyPage() {
             </div>
 
             <div className="flex gap-4 items-start p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
-              <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center font-black text-slate-700 flex-shrink-0">2</div>
+              <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center font-black text-slate-700 shrink-0">2</div>
               <div className="flex-1">
                 <h3 className="font-bold text-slate-900 mb-2">Composite Performance Score</h3>
                 <p className="text-sm text-slate-600 mb-4">
@@ -366,7 +366,7 @@ export default function MethodologyPage() {
               { source: "State Legislative Databases", use: "Telehealth policy, scope of practice law" },
             ].map((d) => (
               <div key={d.source} className="flex gap-3 p-4 bg-slate-50 border border-slate-200 rounded-xl">
-                <span className="text-indigo-600 font-black text-sm flex-shrink-0">→</span>
+                <span className="text-indigo-600 font-black text-sm shrink-0">→</span>
                 <div>
                   <p className="font-bold text-slate-900 text-sm">{d.source}</p>
                   <p className="text-xs text-slate-500 mt-0.5">{d.use}</p>

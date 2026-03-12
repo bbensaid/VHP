@@ -4,7 +4,7 @@
 
 "use client";
 
-import { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import {
   MagnifyingGlassIcon,
@@ -24,7 +24,7 @@ type CommandItem = {
   title: string;
   category: "Navigation" | "State" | "Tool";
   href: string;
-  icon: any;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   shortcut?: string;
 };
 

@@ -69,7 +69,7 @@ export default function TickerStrip({
       >
         {/* Label Badge */}
         <div
-          className={`flex items-center ${transparent ? "bg-transparent" : (isDark ? "bg-slate-900 border-r border-slate-800" : "bg-slate-100 border-r border-slate-200")} h-full pr-4 pl-0 z-10 relative flex-shrink-0`}
+          className={`flex items-center ${transparent ? "bg-transparent" : (isDark ? "bg-slate-900 border-r border-slate-800" : "bg-slate-100 border-r border-slate-200")} h-full pr-4 pl-0 z-10 relative shrink-0`}
         >
           {onToggle && (
             <input

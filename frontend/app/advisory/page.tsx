@@ -1,8 +1,8 @@
+import React from "react";
 // app/advisory/page.tsx
 
 import CommentsSection from "@/components/CommentsSection";
 
-import React from "react";
 import Link from "next/link";
 
 const AdvisoryPage: React.FC = () => {

@@ -1,6 +1,15 @@
-import React from "react";
 import { client } from "@/lib/sanity";
 import AcademyCard from "@/components/academy/AcademyCard";
+
+interface Webinar {
+  _id: string;
+  title: string;
+  pillar?: string;
+  description?: string;
+  date: string;
+  duration?: string;
+  slug: string;
+}
 
 async function getWebinars() {
   const query = `*[_type == "webinar"] | order(date asc) {
@@ -10,8 +19,8 @@ async function getWebinars() {
 }
 
 export default async function WebinarsPage() {
-  const allWebinars = await getWebinars();
-  const featured = allWebinars.length > 0 ? allWebinars : null;
+  const allWebinars: Webinar[] = await getWebinars();
+  const featured = allWebinars.length > 0 ? allWebinars[0] : null;
   const upcoming = allWebinars.length > 1 ? allWebinars.slice(1) : [];
 
   const formatDate = (dateString: string) => {
@@ -55,8 +64,8 @@ export default async function WebinarsPage() {
           <>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Upcoming Schedule</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {upcoming.map((webinar: any) => (
-                <AcademyCard key={webinar._id} type="WEBINAR" pillar={webinar.pillar} title={webinar.title} description={webinar.description} meta={formatDate(webinar.date)} price="Free" href={`/academy/webinars/${webinar.slug}`} />
+              {upcoming.map((webinar) => (
+                <AcademyCard key={webinar._id} type="WEBINAR" pillar={(webinar.pillar ?? "General") as "Policy" | "Economics" | "Technology" | "General"} title={webinar.title} description={webinar.description ?? ""} meta={formatDate(webinar.date)} price="Free" href={`/academy/webinars/${webinar.slug}`} />
               ))}
             </div>
           </>

@@ -1,11 +1,14 @@
 export type Initiative = {
   title: string;
   description: string;
+  status?: "Active" | "Planned" | "Completed";
 };
 
 export type Metric = {
   label: string;
-  status: "Pending" | "In Progress" | "Achieved";
+  value?: string;
+  trend?: "up" | "down" | "neutral";
+  status: "Pending" | "In Progress" | "Achieved" | "On Track" | "At Risk";
   target?: string;
 };
 
@@ -15,9 +18,10 @@ export type RHTProfile = {
   awardAmount: string;
   status?: "Active" | "Pending" | "At Risk";
   strategicFocus: string | string[];
-  description: string;
+  description?: string;
   initiatives: Initiative[];
   metrics: Metric[];
+  simulation?: import('@/lib/dashboard-types').SimulationProfile;
 };
 
 export const rhtProgramData: Record<string, RHTProfile> = {

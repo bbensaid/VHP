@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { client } from "@/lib/sanity";
 import ArticleContent from "./ArticleContent";
@@ -10,6 +9,24 @@ import ShareButton from "@/components/ShareButton";
 import CitationButton from "@/components/CitationButton";
 import SaveToPdfButton from "@/components/SaveToPdfButton";
 import FontSizeToggle from "@/components/FontSizeToggle";
+
+// Minimal Sanity portable-text block shape (full types require sanity typegen)
+interface SanityBlock {
+  _type: string;
+  _key?: string;
+  style?: string;
+  children?: Array<{ text: string }>;
+  [key: string]: unknown;
+}
+
+interface RelatedArticle {
+  _id: string;
+  title: string;
+  summary?: string;
+  publishedAt?: string;
+  pillar?: string;
+  slug?: { current: string };
+}
 
 // Helper to style based on Pillar
 const getTheme = (pillar: string) => {
@@ -114,29 +131,26 @@ export default async function ArticlePageTemplate({
   const theme = getTheme(article.pillar);
 
   const videoElements =
-    article.body?.filter((block: any) => ["video", "youtube", "mux.video"].includes(block._type)) || [];
+    article.body?.filter((block: SanityBlock) => ["video", "youtube", "mux.video"].includes(block._type)) || [];
   const audioElements =
-    article.body?.filter((block: any) => block._type === "audio") || [];
+    article.body?.filter((block: SanityBlock) => block._type === "audio") || [];
   const mainContent =
     article.body || [];
 
   // Extract plain text for the speech synthesizer
-  const plainTextBody = article.body
-    ?.filter((b: any) => b._type === "block")
-    .map((b: any) => b.children?.map((c: any) => c.text).join(""))
+  const plainTextBody = (article.body as SanityBlock[] | null)
+    ?.filter((b) => b._type === "block")
+    .map((b) => b.children?.map((c) => c.text).join(""))
     .join(" ") || "";
   const readText = `${article.title}. ${article.summary}. ${plainTextBody}`;
 
+  interface Heading { text: string; id: string; level: string }
   // Extract headings for Table of Contents
-  const headings = mainContent
-    .filter((block: any) => block._type === 'block' && ['h2', 'h3'].includes(block.style))
-    .map((block: any) => {
-      const text = block.children?.map((c: any) => c.text).join('') || '';
-      return {
-        text,
-        id: slugify(text),
-        level: block.style
-      };
+  const headings: Heading[] = mainContent
+    .filter((block: SanityBlock) => block._type === 'block' && block.style != null && ['h2', 'h3'].includes(block.style))
+    .map((block: SanityBlock) => {
+      const text = block.children?.map((c) => c.text).join('') || '';
+      return { text, id: slugify(text), level: block.style ?? 'h2' };
     });
 
   return (
@@ -154,7 +168,7 @@ export default async function ArticlePageTemplate({
                 </h3>
                 <nav>
                   <ul className="space-y-2.5">
-                    {headings.map((heading: any) => (
+                    {headings.map((heading) => (
                       <li key={heading.id} className={heading.level === 'h3' ? 'pl-3 border-l-2 border-slate-100' : ''}>
                         <a href={`#${heading.id}`} className={`text-sm block leading-snug transition-colors ${heading.level === 'h3' ? 'text-slate-500 hover:text-indigo-600' : 'text-slate-700 font-medium hover:text-indigo-600'}`}>
                           {heading.text}
@@ -167,16 +181,18 @@ export default async function ArticlePageTemplate({
             )}
 
             <div id="video-content" style={{ scrollMarginTop: "calc(var(--sidebar-top, 8rem) + 1rem)" }}>
-              {videoElements.map((video: any, index: number) => (
-                <VideoBlock key={video._key} value={video} />
+              {videoElements.map((video: SanityBlock) => (
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                <VideoBlock key={video._key} value={video as any} />
               ))}
             </div>
             {videoElements.length > 0 && audioElements.length > 0 && (
               <hr className="border-gray-200 my-8" />
             )}
             <div id="audio-content" style={{ scrollMarginTop: "calc(var(--sidebar-top, 8rem) + 1rem)" }}>
-              {audioElements.map((audio: any, index: number) => (
-                <AudioBlock key={audio._key} value={audio} />
+              {audioElements.map((audio: SanityBlock) => (
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                <AudioBlock key={audio._key} value={audio as any} />
               ))}
             </div>
           </div>
@@ -256,7 +272,7 @@ export default async function ArticlePageTemplate({
             <div className="mt-16 pt-10 border-t border-gray-200" data-html2canvas-ignore="true">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Related Analysis</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {article.relatedArticles.map((related: any) => {
+                {article.relatedArticles.map((related: RelatedArticle) => {
                   if (!related.slug?.current) return null;
 
                   const href = `/${(related.pillar || 'policy').toLowerCase()}/${related.slug.current}`;
@@ -268,7 +284,7 @@ export default async function ArticlePageTemplate({
                       className="group block bg-slate-50 p-6 rounded-xl border border-slate-100 hover:border-indigo-200 hover:shadow-md transition-all"
                     >
                       <div className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">
-                        {new Date(related.publishedAt).toLocaleDateString()}
+                        {related.publishedAt ? new Date(related.publishedAt).toLocaleDateString() : ""}
                       </div>
                       <h4 className="font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors">
                         {related.title}

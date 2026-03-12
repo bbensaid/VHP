@@ -1,13 +1,14 @@
 "use client";
 
 import { PortableText, PortableTextComponents } from "next-sanity";
+import type { PortableTextMarkComponentProps, PortableTextBlock } from "@portabletext/react";
 import { client } from "@/sanity/lib/client";
 import imageUrlBuilder from "@sanity/image-url";
 import VideoBlock from "@/components/VideoBlock";
 import AudioBlock from "@/components/AudioBlock";
 
 const builder = imageUrlBuilder(client);
-function urlFor(source: any) {
+function urlFor(source: Parameters<typeof builder.image>[0]) {
   return builder.image(source);
 }
 
@@ -17,21 +18,23 @@ const slugify = (text: string) =>
     .replace(/[^\w\s-]/g, "")
     .replace(/\s+/g, "-");
 
+type MarkProps = PortableTextMarkComponentProps;
+
 // ─── Mark (inline) renderers ────────────────────────────────────────────────
 const marks = {
-  strong: ({ children }: any) => (
+  strong: ({ children }: MarkProps) => (
     <strong className="font-bold text-slate-900">{children}</strong>
   ),
-  em: ({ children }: any) => (
+  em: ({ children }: MarkProps) => (
     <em className="italic text-slate-700">{children}</em>
   ),
-  underline: ({ children }: any) => (
+  underline: ({ children }: MarkProps) => (
     <span className="underline underline-offset-2">{children}</span>
   ),
-  "strike-through": ({ children }: any) => (
+  "strike-through": ({ children }: MarkProps) => (
     <span className="line-through text-slate-400">{children}</span>
   ),
-  link: ({ value, children }: any) => (
+  link: ({ value, children }: PortableTextMarkComponentProps<{ _type: string; href?: string }>) => (
     <a
       href={value?.href}
       target="_blank"
@@ -42,6 +45,8 @@ const marks = {
     </a>
   ),
 };
+
+type BlockValue = PortableTextBlock & { children?: Array<{ text: string }> };
 
 // ─── Full PortableText component map ────────────────────────────────────────
 const ptComponents: PortableTextComponents = {
@@ -55,7 +60,7 @@ const ptComponents: PortableTextComponents = {
 
     // ── Headings ─────────────────────────────────────────────────────────
     h1: ({ children, value }) => {
-      const text = value.children?.map((c: any) => c.text).join("") || "";
+      const text = (value as BlockValue).children?.map((c) => c.text).join("") || "";
       return (
         <h1
           id={slugify(text)}
@@ -67,7 +72,7 @@ const ptComponents: PortableTextComponents = {
     },
 
     h2: ({ children, value }) => {
-      const text = value.children?.map((c: any) => c.text).join("") || "";
+      const text = (value as BlockValue).children?.map((c) => c.text).join("") || "";
       return (
         <h2
           id={slugify(text)}
@@ -79,7 +84,7 @@ const ptComponents: PortableTextComponents = {
     },
 
     h3: ({ children, value }) => {
-      const text = value.children?.map((c: any) => c.text).join("") || "";
+      const text = (value as BlockValue).children?.map((c) => c.text).join("") || "";
       return (
         <h3
           id={slugify(text)}
@@ -91,7 +96,7 @@ const ptComponents: PortableTextComponents = {
     },
 
     h4: ({ children, value }) => {
-      const text = value.children?.map((c: any) => c.text).join("") || "";
+      const text = (value as BlockValue).children?.map((c) => c.text).join("") || "";
       return (
         <h4
           id={slugify(text)}
@@ -124,7 +129,7 @@ const ptComponents: PortableTextComponents = {
     callout: ({ children }) => (
       <div className="my-10 p-6 bg-indigo-50 border border-indigo-200 rounded-xl shadow-sm">
         <div className="flex items-start gap-4">
-          <span className="text-2xl flex-shrink-0 mt-0.5">💡</span>
+          <span className="text-2xl shrink-0 mt-0.5">💡</span>
           <p className="text-base font-semibold text-indigo-900 leading-relaxed">
             {children}
           </p>
@@ -146,13 +151,13 @@ const ptComponents: PortableTextComponents = {
   listItem: {
     bullet: ({ children }) => (
       <li className="flex items-start gap-3 text-lg text-slate-700 leading-relaxed">
-        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0" />
+        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0" />
         <span>{children}</span>
       </li>
     ),
     number: ({ children }) => (
       <li className="flex items-start gap-3 text-lg text-slate-700 leading-relaxed">
-        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-slate-900 text-white text-xs font-black flex items-center justify-center mt-0.5">
+        <span className="shrink-0 w-6 h-6 rounded-full bg-slate-900 text-white text-xs font-black flex items-center justify-center mt-0.5">
           {/* Counter not feasible in inline JSX — number styling via wrapper */}
         </span>
         <span>{children}</span>
@@ -164,12 +169,6 @@ const ptComponents: PortableTextComponents = {
   types: {
     // ── Image ────────────────────────────────────────────────────────────
     image: ({ value }) => {
-      // The GROQ query uses asset->{ _id, _ref, url } to dereference the asset.
-      // After dereferencing, value.asset contains the full asset document.
-      // We support three shapes in priority order:
-      //   1. asset.url  — direct CDN url from the dereferenced asset document
-      //   2. asset._ref — standard reference, passed to urlFor()
-      //   3. asset._id  — also valid for urlFor()
       const assetUrl   = value?.asset?.url;
       const assetRef   = value?.asset?._ref || value?.asset?._id;
       const directUrl  = value?.url || value?.src;
@@ -177,7 +176,6 @@ const ptComponents: PortableTextComponents = {
       let imgSrc: string | null = null;
 
       if (assetUrl) {
-        // Fastest path — asset was dereferenced, URL is available directly
         imgSrc = assetUrl;
       } else if (assetRef) {
         try {
@@ -199,9 +197,6 @@ const ptComponents: PortableTextComponents = {
               loading="lazy"
             />
           ) : (
-            // Placeholder shown when no asset has been attached yet.
-            // To fix: open this article in Sanity Studio → find the image block
-            // in the Body field → click the image icon → upload your PNG/JPG.
             <div className="w-full bg-slate-50 border-2 border-dashed border-slate-200 rounded-2xl py-14 flex flex-col items-center justify-center text-slate-400 gap-3">
               <span className="text-5xl">🖼️</span>
               <div className="text-center">
@@ -244,7 +239,7 @@ const ptComponents: PortableTextComponents = {
         }
       }
       if (!Array.isArray(data) || data.length === 0) return null;
-      const headers = Object.keys(data[0]);
+      const headers = Object.keys(data[0] as Record<string, string>);
       return (
         <div className="my-10 overflow-hidden border border-slate-200 rounded-2xl shadow-sm bg-white">
           {value.title && (
@@ -270,7 +265,7 @@ const ptComponents: PortableTextComponents = {
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
-                {data.map((row: Record<string, string>, rowIndex: number) => (
+                {(data as Record<string, string>[]).map((row, rowIndex) => (
                   <tr key={rowIndex} className="hover:bg-slate-50/70 transition-colors">
                     {headers.map((header) => (
                       <td
@@ -299,7 +294,7 @@ const ptComponents: PortableTextComponents = {
 };
 
 // ─── Main export ────────────────────────────────────────────────────────────
-export default function ArticleContent({ body }: { body: any }) {
+export default function ArticleContent({ body }: { body: PortableTextBlock[] }) {
   return (
     <div className="article-body">
       <PortableText value={body} components={ptComponents} />

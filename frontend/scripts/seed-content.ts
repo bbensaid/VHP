@@ -1289,16 +1289,16 @@ const analystNotes = [
 
 // ── Seeding Functions ─────────────────────────────────────────────────────────
 
-async function seedCollection(name: string, docs: any[]) {
+async function seedCollection(name: string, docs: Record<string, unknown>[]) {
   console.log(`\nSeeding ${docs.length} ${name}…`);
   let succeeded = 0;
   for (const doc of docs) {
     try {
-      await sanity.createOrReplace(doc);
-      console.log(`  ✓ ${doc.title ?? doc.headline ?? doc.term ?? doc._id}`);
+      await sanity.createOrReplace(doc as Parameters<typeof sanity.createOrReplace>[0]);
+      console.log(`  ✓ ${(doc.title ?? doc.headline ?? doc.term ?? doc._id) as string}`);
       succeeded++;
-    } catch (err: any) {
-      console.error(`  ✗ ${doc._id}: ${err.message}`);
+    } catch (err) {
+      console.error(`  ✗ ${doc._id}: ${err instanceof Error ? err.message : String(err)}`);
     }
   }
   console.log(`  ${succeeded}/${docs.length} seeded successfully.`);

@@ -117,12 +117,12 @@ export default function CoursesClient({ courses }: { courses: Course[] }) {
                 {filtered.map((course) => (
                   <AcademyCard
                     key={course._id}
-                    type={course.type}
-                    pillar={course.pillar}
+                    type={(course.type ?? "COURSE") as "CERTIFICATION" | "COURSE" | "WEBINAR"}
+                    pillar={(course.pillar ?? "General") as "Policy" | "Economics" | "Technology" | "General"}
                     title={course.title}
-                    description={course.description}
-                    meta={course.meta}
-                    price={course.price}
+                    description={course.description ?? ""}
+                    meta={course.meta ?? ""}
+                    price={course.price ?? "Free"}
                     instructors={course.instructors?.map((i) => i.name)}
                     href={`/academy/courses/${course.slug}`}
                   />

@@ -1,5 +1,4 @@
 // components/academy/AcademyCard.tsx
-import React from "react";
 import Link from "next/link";
 
 interface AcademyCardProps {

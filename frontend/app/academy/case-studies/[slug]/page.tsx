@@ -1,4 +1,3 @@
-import React from "react";
 import { client } from "@/lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Link from "next/link";

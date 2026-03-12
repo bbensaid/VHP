@@ -88,7 +88,7 @@ export default function DashboardIndexClient({ allStates }: Props) {
               <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-3">Health System Performance Index</h1>
               <p className="text-slate-500 text-lg leading-relaxed">National analysis of value-based care readiness and system transformation.</p>
             </div>
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <Link
                 href="/about/methodology"
                 title="Learn how the HTR Performance Index is calculated."

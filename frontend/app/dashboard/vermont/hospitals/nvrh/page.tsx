@@ -24,7 +24,7 @@ export default function NVRHHeroProfile() {
     setTimeout(() => {
       setSimulationStatus('approved');
       // UPDATE GLOBAL STATE:
-      updateStatus('nvrh', 'stable'); 
+      updateStatus?.('nvrh', 'stable');
     }, 2000);
   };
 
@@ -131,7 +131,17 @@ export default function NVRHHeroProfile() {
 }
 
 // Helper Component for the Cards
-function OptionCard({ id, active, onClick, title, icon, desc, metric, color }: any) {
+interface OptionCardProps {
+  id: ScenarioType;
+  active: ScenarioType;
+  onClick: React.Dispatch<React.SetStateAction<ScenarioType>>;
+  title: string;
+  icon: React.ReactNode;
+  desc: string;
+  metric: string;
+  color: string;
+}
+function OptionCard({ id, active, onClick, title, icon, desc, metric, color }: OptionCardProps) {
   const isActive = active === id;
   return (
     <div onClick={() => onClick(id)} className={`p-6 rounded-xl border-2 cursor-pointer transition-all ${isActive ? 'border-indigo-600 bg-indigo-50 ring-1 ring-indigo-600' : 'border-slate-200 bg-white hover:border-indigo-300'}`}>

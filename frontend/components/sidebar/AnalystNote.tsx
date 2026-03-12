@@ -1,9 +1,8 @@
-import React from "react";
 import Link from "next/link";
 
 interface NoteData {
   headline: string;
-  content: any;
+  content?: unknown;
   author: string;
 }
 
@@ -51,8 +50,8 @@ export default function AnalystNote({ data }: { data: NoteData | null }) {
 
       {/* Content */}
       <div className="space-y-4">
-        {metrics.map((m, i) => (
-          <div key={i}>
+        {metrics.map((m) => (
+          <div key={m.label}>
             <div className="flex justify-between items-baseline mb-1">
               <span className="text-xs font-semibold text-slate-600">
                 {m.label}

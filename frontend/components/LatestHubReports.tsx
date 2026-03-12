@@ -1,15 +1,22 @@
-import React from "react";
 import Link from "next/link";
 import { client } from "@/lib/sanity";
 
-async function getLatest(pillar: string) {
+interface Report {
+  _id: string;
+  title: string;
+  summary?: string;
+  publishedAt?: string;
+  slug: { current: string };
+}
+
+async function getLatest(pillar: string): Promise<Report[]> {
   const query = `*[_type == "policyAnalysis" && pillar == "${pillar}"] | order(publishedAt desc)[0...3] {
     _id, title, summary, publishedAt, slug
   }`;
   return client.fetch(query, {}, { next: { revalidate: 60 } });
 }
 
-export default async function LatestHubReports({ pillar, colorClass }: { pillar: string, colorClass: string }) {
+export default async function LatestHubReports({ pillar, colorClass }: { pillar: string; colorClass: string }) {
   const reports = await getLatest(pillar);
 
   if (!reports || reports.length === 0) return null;
@@ -22,9 +29,9 @@ export default async function LatestHubReports({ pillar, colorClass }: { pillar:
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {reports.map((report: any, index: number) => (
-          <Link 
-            key={report._id} 
+        {reports.map((report, index) => (
+          <Link
+            key={report._id}
             href={`/${pillar.toLowerCase()}/${report.slug.current}`}
             className="group block bg-white p-6 rounded-xl border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all"
           >
@@ -34,7 +41,7 @@ export default async function LatestHubReports({ pillar, colorClass }: { pillar:
               </span>
             )}
             <div className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">
-              {new Date(report.publishedAt).toLocaleDateString()}
+              {report.publishedAt ? new Date(report.publishedAt).toLocaleDateString() : ""}
             </div>
             <h3 className="font-bold text-slate-900 mb-3 group-hover:text-indigo-600 transition-colors leading-snug">
               {report.title}

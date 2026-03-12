@@ -1,5 +1,6 @@
 // components/sidebar/PolicyCalendar.tsx
 import React from "react";
+import Link from "next/link";
 
 const PolicyCalendar: React.FC = () => {
   const events = [
@@ -45,7 +46,7 @@ const PolicyCalendar: React.FC = () => {
             className="flex gap-3 items-start group cursor-pointer"
           >
             {/* Date Box */}
-            <div className="flex flex-col items-center justify-center bg-slate-50 border border-slate-200 rounded w-12 h-12 flex-shrink-0">
+            <div className="flex flex-col items-center justify-center bg-slate-50 border border-slate-200 rounded w-12 h-12 shrink-0">
               <span className="text-[9px] uppercase font-bold text-slate-500">
                 {event.date.split(" ")[0]}
               </span>
@@ -70,12 +71,12 @@ const PolicyCalendar: React.FC = () => {
       </div>
 
       <div className="mt-4 pt-3 border-t border-slate-100 text-center">
-        <a
+        <Link
           href="/policy/calendar"
           className="text-[10px] font-bold text-slate-400 uppercase tracking-widest hover:text-blue-600"
         >
           View Full Calendar →
-        </a>
+        </Link>
       </div>
     </div>
   );

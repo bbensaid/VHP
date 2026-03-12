@@ -39,7 +39,7 @@ export default function StateMonitor() {
           <select 
             className="bg-white border border-slate-200 text-sm rounded-md px-2 py-2 outline-none focus:border-indigo-500"
             value={filter}
-            onChange={(e) => setFilter(e.target.value as any)}
+            onChange={(e) => setFilter(e.target.value as 'All' | 'Critical' | 'Stable')}
           >
             <option value="All">All Status</option>
             <option value="Critical">Critical</option>

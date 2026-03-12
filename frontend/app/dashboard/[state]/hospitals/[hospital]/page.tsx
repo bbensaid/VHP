@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { BuildingOfficeIcon, DocumentMagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { useParams } from "next/navigation";
 

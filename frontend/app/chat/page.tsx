@@ -18,6 +18,7 @@ import {
   ArrowLeftIcon,
 } from "@heroicons/react/24/outline";
 import ReactMarkdown from "react-markdown";
+import BackendStatus from "@/components/BackendStatus";
 
 // ── Constants ────────────────────────────────────────────────────────────────
 
@@ -40,6 +41,7 @@ const DEFAULT_SYSTEM_PROMPT =
 // ── Types ────────────────────────────────────────────────────────────────────
 
 interface Message {
+  id: string;
   role: "user" | "ai";
   text: string;
   feedback?: "up" | "down";
@@ -61,6 +63,13 @@ export default function ChatPage() {
   const abortControllerRef = useRef<AbortController | null>(null);
   const chatContainerRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  // Refs so streamResponse never closes over stale state
+  const messagesRef = useRef(messages);
+  const temperatureRef = useRef(temperature);
+  const systemPromptRef = useRef(systemPrompt);
+  useEffect(() => { messagesRef.current = messages; }, [messages]);
+  useEffect(() => { temperatureRef.current = temperature; }, [temperature]);
+  useEffect(() => { systemPromptRef.current = systemPrompt; }, [systemPrompt]);
 
   // Hydrate from localStorage once
   useEffect(() => {
@@ -96,12 +105,9 @@ export default function ChatPage() {
     if (prefill) {
       sessionStorage.removeItem("htr-prefill-question");
       // Fire the question automatically as if the user clicked it
-      setMessages([{ role: "user", text: prefill }]);
+      setMessages([{ id: crypto.randomUUID(), role: "user", text: prefill }]);
       streamResponse(prefill);
     }
-    // streamResponse is stable across renders (uses only refs/setters) so
-    // the exhaustive-deps warning can be safely suppressed here.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // ── Streaming ──────────────────────────────────────────────────────────────
@@ -112,14 +118,20 @@ export default function ChatPage() {
 
     setIsLoading(true);
     // Snapshot history before adding the AI placeholder, so Gemini sees clean prior turns
-    const historySnapshot = messages.filter((m) => m.text.trim().length > 0);
-    setMessages((prev) => [...prev, { role: "ai", text: "" }]);
+    const historySnapshot = messagesRef.current.filter((m) => m.text.trim().length > 0);
+    const aiMsgId = crypto.randomUUID();
+    setMessages((prev) => [...prev, { id: aiMsgId, role: "ai", text: "" }]);
 
     try {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: userMessage, temperature, systemPrompt, history: historySnapshot }),
+        body: JSON.stringify({
+          message: userMessage,
+          temperature: temperatureRef.current,
+          systemPrompt: systemPromptRef.current,
+          history: historySnapshot,
+        }),
         signal: abortControllerRef.current.signal,
       });
 
@@ -136,19 +148,24 @@ export default function ChatPage() {
         done = doneReading;
         if (value) {
           aiText += decoder.decode(value, { stream: true });
+          // Replace backend error sentinel with a user-friendly message
+          const displayText = aiText.includes("[STREAM_ERROR]")
+            ? aiText.replace("[STREAM_ERROR]", "").trimEnd() +
+              "\n\n*An error occurred generating this response.*"
+            : aiText;
           setMessages((prev) => {
             const updated = [...prev];
-            updated[updated.length - 1] = { role: "ai", text: aiText };
+            updated[updated.length - 1] = { ...updated[updated.length - 1], text: displayText };
             return updated;
           });
         }
       }
-    } catch (error: any) {
-      if (error.name !== "AbortError") {
+    } catch (error) {
+      if (error instanceof Error && error.name !== "AbortError") {
         setMessages((prev) => {
           const updated = [...prev];
           updated[updated.length - 1] = {
-            role: "ai",
+            ...updated[updated.length - 1],
             text: "Sorry, there was an error processing your request. Please try again.",
           };
           return updated;
@@ -164,7 +181,7 @@ export default function ChatPage() {
   const handleSend = () => {
     const trimmed = inputValue.trim();
     if (!trimmed || isLoading) return;
-    setMessages((prev) => [...prev, { role: "user", text: trimmed }]);
+    setMessages((prev) => [...prev, { id: crypto.randomUUID(), role: "user", text: trimmed }]);
     setInputValue("");
     if (textareaRef.current) textareaRef.current.style.height = "auto";
     streamResponse(trimmed);
@@ -254,6 +271,7 @@ export default function ChatPage() {
             <span className="hidden md:inline text-[10px] font-bold uppercase tracking-widest text-slate-500 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
               Beta
             </span>
+            <BackendStatus />
           </div>
         </div>
 
@@ -306,13 +324,13 @@ export default function ChatPage() {
                 workforce trends, or the Vermont RHTP program.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-xl">
-                {SUGGESTED_QUESTIONS.map((q, i) => (
+                {SUGGESTED_QUESTIONS.map((q) => (
                   <button
-                    key={i}
+                    key={q}
                     onClick={() => {
                       setMessages((prev) => [
                         ...prev,
-                        { role: "user", text: q },
+                        { id: crypto.randomUUID(), role: "user", text: q },
                       ]);
                       streamResponse(q);
                     }}
@@ -327,7 +345,7 @@ export default function ChatPage() {
 
           {messages.map((msg, i) => (
             <div
-              key={i}
+              key={msg.id}
               className={`w-full rounded-2xl px-5 py-4 text-sm ${
                 msg.role === "user"
                   ? "bg-slate-800 text-white self-end max-w-[85%] ml-auto"

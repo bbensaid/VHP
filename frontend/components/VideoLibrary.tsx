@@ -1,9 +1,20 @@
 "use client";
 
-import React, { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Link from "next/link";
 import VideoBlock from "@/components/VideoBlock";
 import { MagnifyingGlassIcon, XMarkIcon } from '@heroicons/react/24/outline';
+
+interface Video {
+  _key: string;
+  articleId: string;
+  articleSlug: string;
+  articleTitle?: string;
+  pillar?: string;
+  category?: string;
+  caption?: string;
+  [key: string]: unknown;
+}
 
 // Helper function to get pillar-specific theme classes
 const getPillarTheme = (pillar: string | null) => {
@@ -28,7 +39,7 @@ const getPillarSlug = (pillar: string | null) => {
   return pillar.toLowerCase();
 };
 
-export default function VideoLibrary({ allVideos }: { allVideos: any[] }) {
+export default function VideoLibrary({ allVideos }: { allVideos: Video[] }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');
   const [activeFilters, setActiveFilters] = useState<Record<string, string>>({});
@@ -70,7 +81,7 @@ export default function VideoLibrary({ allVideos }: { allVideos: any[] }) {
       }
       acc[pillarName].push(video);
       return acc;
-    }, {} as Record<string, any[]>);
+    }, {} as Record<string, Video[]>);
   }, [allVideos]);
 
   const pillarOrder = useMemo(() => ['Policy', 'Economics', 'Technology', 'Clinical', 'Equity', 'General'].filter(p => videosByPillar[p]), [videosByPillar]);
@@ -78,7 +89,7 @@ export default function VideoLibrary({ allVideos }: { allVideos: any[] }) {
   const categoriesByPillar = useMemo(() => {
     const categories: Record<string, string[]> = {};
     for (const pillar in videosByPillar) {
-      const pillarCategories = new Set(videosByPillar[pillar].map(v => v.category).filter(Boolean));
+      const pillarCategories = new Set(videosByPillar[pillar].map(v => v.category).filter((c): c is string => Boolean(c)));
       categories[pillar] = ['All', ...Array.from(pillarCategories)];
     }
     return categories;
@@ -92,7 +103,7 @@ export default function VideoLibrary({ allVideos }: { allVideos: any[] }) {
   };
 
   const filteredVideosByPillar = useMemo(() => {
-    const filtered: Record<string, any[]> = {};
+    const filtered: Record<string, Video[]> = {};
     for(const pillarName of pillarOrder) {
       let pillarVideos = videosByPillar[pillarName] || [];
       const pillarFilter = activeFilters[pillarName];
@@ -195,12 +206,12 @@ export default function VideoLibrary({ allVideos }: { allVideos: any[] }) {
                 {videos.length > 0 ? (
                   <>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-                    {videos.map((video: any) => (
+                    {videos.map((video) => (
                       <div key={`${video.articleId}-${video._key}`} className="flex flex-col animate-in fade-in duration-300">
                         <VideoBlock value={video} />
                         <div className="mt-4">
                           <Link 
-                            href={`/${getPillarSlug(video.pillar)}/${video.articleSlug}`}
+                            href={`/${getPillarSlug(video.pillar ?? null)}/${video.articleSlug}`}
                             className="text-base font-bold text-slate-800 hover:text-indigo-700 transition-colors leading-tight"
                           >
                             {video.articleTitle}

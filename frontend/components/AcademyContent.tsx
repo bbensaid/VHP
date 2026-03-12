@@ -22,14 +22,18 @@
 //   6. Two-tone split       → Misconception / Warning
 
 import { PortableText, PortableTextComponents } from "next-sanity";
+import type { PortableTextMarkComponentProps, PortableTextBlock } from "@portabletext/react";
 import { client } from "@/sanity/lib/client";
 import imageUrlBuilder from "@sanity/image-url";
 import VideoBlock from "@/components/VideoBlock";
 import AudioBlock from "@/components/AudioBlock";
 
 const builder = imageUrlBuilder(client);
-const urlFor = (source: any) => builder.image(source);
+const urlFor = (source: Parameters<typeof builder.image>[0]) => builder.image(source);
 const slugify = (t: string) => t.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
+
+type MarkProps = PortableTextMarkComponentProps;
+type BlockValue = PortableTextBlock & { children?: Array<{ text: string }> };
 
 // ── Trend indicators ───────────────────────────────────────────────────────────
 const trendIcon: Record<string, { icon: string; color: string }> = {
@@ -48,11 +52,11 @@ const statColors = [
 
 const components: PortableTextComponents = {
   marks: {
-    strong:           ({ children }) => <strong className="font-bold text-slate-900">{children}</strong>,
-    em:               ({ children }) => <em className="italic text-slate-600">{children}</em>,
-    underline:        ({ children }) => <span className="underline underline-offset-2">{children}</span>,
-    "strike-through": ({ children }) => <span className="line-through text-slate-400">{children}</span>,
-    link: ({ value, children }) => (
+    strong:           ({ children }: MarkProps) => <strong className="font-bold text-slate-900">{children}</strong>,
+    em:               ({ children }: MarkProps) => <em className="italic text-slate-600">{children}</em>,
+    underline:        ({ children }: MarkProps) => <span className="underline underline-offset-2">{children}</span>,
+    "strike-through": ({ children }: MarkProps) => <span className="line-through text-slate-400">{children}</span>,
+    link: ({ value, children }: PortableTextMarkComponentProps<{ _type: string; href?: string }>) => (
       <a href={value?.href} target="_blank" rel="noopener noreferrer"
          className="text-indigo-600 font-semibold underline underline-offset-2 hover:text-indigo-800 transition-colors">
         {children}
@@ -66,13 +70,13 @@ const components: PortableTextComponents = {
     ),
 
     h1: ({ children, value }) => {
-      const text = value.children?.map((c: any) => c.text).join("") || "";
+      const text = (value as BlockValue).children?.map((c) => c.text).join("") || "";
       return <h1 id={slugify(text)} className="scroll-mt-24 text-3xl font-black text-slate-900 mt-14 mb-5 leading-tight">{children}</h1>;
     },
 
     // Section opener — full visual break, feels like a chapter
     h2: ({ children, value }) => {
-      const text = value.children?.map((c: any) => c.text).join("") || "";
+      const text = (value as BlockValue).children?.map((c) => c.text).join("") || "";
       return (
         <div className="mt-16 mb-7">
           <div className="flex items-center gap-3 mb-5">
@@ -88,7 +92,7 @@ const components: PortableTextComponents = {
     },
 
     h3: ({ children, value }) => {
-      const text = value.children?.map((c: any) => c.text).join("") || "";
+      const text = (value as BlockValue).children?.map((c) => c.text).join("") || "";
       return (
         <h3 id={slugify(text)} className="scroll-mt-24 flex items-center gap-2.5 text-sm font-black text-slate-700 uppercase tracking-widest mt-10 mb-4">
           <span className="w-2.5 h-2.5 bg-indigo-500 rounded-sm shrink-0" />{children}
@@ -97,7 +101,7 @@ const components: PortableTextComponents = {
     },
 
     h4: ({ children, value }) => {
-      const text = value.children?.map((c: any) => c.text).join("") || "";
+      const text = (value as BlockValue).children?.map((c) => c.text).join("") || "";
       return <h4 id={slugify(text)} className="scroll-mt-24 text-base font-bold text-slate-800 mt-8 mb-3">{children}</h4>;
     },
 
@@ -234,7 +238,8 @@ const components: PortableTextComponents = {
 
     // ── 📊 Stat Grid ────────────────────────────────────────────────────────────
     statGrid: ({ value }) => {
-      const stats: any[] = value.stats || [];
+      type Stat = { value: string; label: string; context?: string; trend?: string };
+      const stats: Stat[] = value.stats || [];
       if (stats.length === 0) return null;
       return (
         <div className="my-12">
@@ -242,11 +247,11 @@ const components: PortableTextComponents = {
             <p className="text-[11px] font-black text-slate-500 uppercase tracking-[0.2em] mb-4 text-center">{value.title}</p>
           )}
           <div className={`grid gap-4 ${stats.length === 2 ? "grid-cols-2" : stats.length === 3 ? "grid-cols-3" : "grid-cols-2 md:grid-cols-4"}`}>
-            {stats.map((stat: any, i: number) => {
+            {stats.map((stat, i) => {
               const c = statColors[i % statColors.length];
               const trend = stat.trend ? trendIcon[stat.trend] : null;
               return (
-                <div key={i} className={`${c.bg} border ${c.border} rounded-2xl p-6 flex flex-col gap-2`}>
+                <div key={stat.label} className={`${c.bg} border ${c.border} rounded-2xl p-6 flex flex-col gap-2`}>
                   <div className={`text-4xl font-black ${c.num} leading-none flex items-start gap-2`}>
                     {stat.value}
                     {trend && <span className={`text-xl ${trend.color} mt-1`}>{trend.icon}</span>}
@@ -318,7 +323,8 @@ const components: PortableTextComponents = {
     // ── Pattern 5: Structural / Data ──────────────────────────────────────────
     // ⚖️ Comparison Table — lighter title bar, semantic column colors preserved
     comparisonBlock: ({ value }) => {
-      const rows: any[] = value.rows || [];
+      type Row = { aspect: string; left: string; right: string };
+      const rows: Row[] = value.rows || [];
       return (
         <div className="my-10 overflow-hidden rounded-xl shadow-md border border-slate-200">
           {value.title && (
@@ -342,8 +348,8 @@ const components: PortableTextComponents = {
                 </tr>
               </thead>
               <tbody>
-                {rows.map((row: any, i: number) => (
-                  <tr key={i} className={`border-b border-slate-100 ${i % 2 === 1 ? "bg-slate-50/40" : "bg-white"}`}>
+                {rows.map((row, i) => (
+                  <tr key={row.aspect} className={`border-b border-slate-100 ${i % 2 === 1 ? "bg-slate-50/40" : "bg-white"}`}>
                     <td className="px-5 py-4 font-bold text-slate-700 text-xs uppercase tracking-wide">{row.aspect}</td>
                     <td className="px-5 py-4 text-slate-600 text-center bg-rose-50/30">{row.left}</td>
                     <td className="px-5 py-4 text-slate-700 font-medium text-center bg-emerald-50/30">{row.right}</td>
@@ -359,7 +365,8 @@ const components: PortableTextComponents = {
     // ── Pattern 5: Structural / Data ──────────────────────────────────────────
     // 📋 Step-by-Step Process — lighter header, vertical step flow preserved
     stepBlock: ({ value }) => {
-      const steps: any[] = value.steps || [];
+      type Step = { number?: number; title: string; description?: string };
+      const steps: Step[] = value.steps || [];
       return (
         <div className="my-10 bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
           {value.title && (
@@ -369,8 +376,8 @@ const components: PortableTextComponents = {
             </div>
           )}
           <div className="p-6 space-y-0">
-            {steps.map((step: any, i: number) => (
-              <div key={i} className="flex gap-5">
+            {steps.map((step, i) => (
+              <div key={step.title} className="flex gap-5">
                 {/* Vertical connector */}
                 <div className="flex flex-col items-center">
                   <div className="w-9 h-9 rounded-full bg-indigo-600 text-white flex items-center justify-center font-black text-sm shrink-0 shadow-sm">
@@ -428,8 +435,8 @@ const components: PortableTextComponents = {
             </span>
           </div>
           <ul className="space-y-3">
-            {points.map((point: string, i: number) => (
-              <li key={i} className="flex gap-3 text-[15px] text-emerald-900 leading-7">
+            {points.map((point, i) => (
+              <li key={point} className="flex gap-3 text-[15px] text-emerald-900 leading-7">
                 <span className="shrink-0 mt-0.5 w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[9px] font-black">{i + 1}</span>
                 {point}
               </li>
@@ -466,6 +473,6 @@ const components: PortableTextComponents = {
   },
 };
 
-export default function AcademyContent({ body }: { body: any }) {
+export default function AcademyContent({ body }: { body: PortableTextBlock[] }) {
   return <PortableText value={body} components={components} />;
 }

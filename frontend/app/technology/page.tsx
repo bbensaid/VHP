@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import HubSubscribeCTA from "@/components/HubSubscribeCTA";
 import LatestHubReports from "@/components/LatestHubReports";

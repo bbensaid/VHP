@@ -144,7 +144,7 @@ function AccordionItem({ q, a }: { q: string; a: string }) {
           {q}
         </span>
         <ChevronDownIcon
-          className={`w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5 transition-transform duration-200 ${open ? "rotate-180 text-indigo-600" : ""}`}
+          className={`w-5 h-5 text-slate-400 shrink-0 mt-0.5 transition-transform duration-200 ${open ? "rotate-180 text-indigo-600" : ""}`}
         />
       </button>
       {open && (
@@ -194,7 +194,7 @@ export default function FAQPage() {
         <div className="flex flex-col lg:flex-row gap-10">
 
           {/* ── STICKY SIDEBAR ─────────────────────────────────────────── */}
-          <aside className="lg:w-64 flex-shrink-0">
+          <aside className="lg:w-64 shrink-0">
             <div className="sticky top-28">
               <p className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-400 mb-4">
                 Browse by Topic

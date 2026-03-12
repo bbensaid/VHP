@@ -9,7 +9,7 @@ const TRANSITION_DURATION = "duration-300";
 interface CollapsibleSidebarProps {
   side: "left" | "right";
   isOpen: boolean;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsOpen: (isOpen: boolean) => void;
   stickyTop: string;
   expandLabel: string;
   headerContent?: React.ReactNode;
@@ -41,7 +41,7 @@ export default function CollapsibleSidebar({
       {/* WRAPPER: Handles Width & Sticky Positioning */}
       <div
         className={`
-          transition-all ${TRANSITION_DURATION} ease-in-out flex-shrink-0 z-50
+          transition-all ${TRANSITION_DURATION} ease-in-out shrink-0 z-50
           flex flex-col
           fixed lg:sticky
           ${isLeft ? "left-0" : "right-0"}

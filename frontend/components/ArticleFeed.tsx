@@ -20,8 +20,8 @@ import {
 } from "@heroicons/react/24/outline";
 
 const builder = imageUrlBuilder(client);
-function urlFor(source: any) {
-  return builder.image(source);
+function urlFor(source: { asset: { _ref: string } } | null | undefined) {
+  return builder.image(source as Parameters<typeof builder.image>[0]);
 }
 
 interface Article {
@@ -32,7 +32,7 @@ interface Article {
   slug: { current: string };
   status?: string;
   impactLevel?: string;
-  mainImage?: any;
+  mainImage?: { asset: { _ref: string }; alt?: string } | null;
   readTime?: number;
 }
 

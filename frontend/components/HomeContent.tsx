@@ -1,13 +1,27 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
 import HeroCarousel from "@/components/HeroCarousel";
 
+interface LeadStory {
+  title: string;
+  summary?: string;
+  publishedAt?: string;
+  slug?: string;
+  pillar?: string;
+}
+
+interface FeedItem {
+  _id: string;
+  _type: string;
+  title: string;
+  pillar?: string;
+  slug?: string;
+}
+
 interface HomeContentProps {
-  leadStory: any;
-  feed: any;
-  ticker: any;
+  leadStory: LeadStory | null;
+  feed: FeedItem[] | null;
 }
 
 const getCategoryStyle = (type: string, pillar: string) => {
@@ -32,7 +46,6 @@ const getCategoryLabel = (type: string, pillar: string) => {
 export default function HomeContent({
   leadStory,
   feed,
-  ticker,
 }: HomeContentProps) {
   return (
     <>
@@ -56,16 +69,16 @@ export default function HomeContent({
           </Link>
         </div>
         <div className="space-y-4">
-          {feed?.map((item: any, index: number) => (
+          {feed?.map((item) => (
             <div
-              key={index}
+              key={item._id}
               className="flex flex-col md:flex-row md:items-center gap-3 md:gap-6 py-4 border-b border-slate-100 hover:bg-slate-50 transition-colors p-2 rounded -mx-2 group"
             >
-              <div className="flex items-center gap-3 w-40 flex-shrink-0">
+              <div className="flex items-center gap-3 w-40 shrink-0">
                 <span
-                  className={`text-[10px] font-black px-2 py-1 rounded w-16 text-center border ${getCategoryStyle(item._type, item.pillar)}`}
+                  className={`text-[10px] font-black px-2 py-1 rounded w-16 text-center border ${getCategoryStyle(item._type, item.pillar ?? "")}`}
                 >
-                  {getCategoryLabel(item._type, item.pillar)}
+                  {getCategoryLabel(item._type, item.pillar ?? "")}
                 </span>
               </div>
               <div className="flex-grow">

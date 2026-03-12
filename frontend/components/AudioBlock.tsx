@@ -34,7 +34,7 @@ export default function AudioBlock({ value }: AudioBlockProps) {
         {/* Header: Icon + Title (Visible only if title exists) */}
         {title && (
           <div className="flex items-center gap-3 px-4 py-3 border-b border-slate-200 bg-white">
-            <div className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-indigo-50 text-indigo-600">
+            <div className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-indigo-50 text-indigo-600">
               <svg 
                 className="w-4 h-4" 
                 fill="none" 

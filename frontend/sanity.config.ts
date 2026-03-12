@@ -11,8 +11,15 @@ import {codeInput} from '@sanity/code-input'
 
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import {apiVersion, dataset, projectId} from './sanity/env'
-import {schema} from './sanity/schemaTypes'
-import {structure} from './sanity/structure'
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+import {schema as _schema} from './sanity/schemaTypes'
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+import {structure as _structure} from './sanity/structure'
+// Cast to any to avoid type incompatibilities from dual sanity package installations
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const schema = _schema as any;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const structure = _structure as any;
 // import {StudioBlock} from './sanity/components/StudioBlock'
 
 export default defineConfig({

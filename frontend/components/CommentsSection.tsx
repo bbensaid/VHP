@@ -118,7 +118,7 @@ const CommentsSection: React.FC = () => {
         {comments.map((comment) => (
           <div key={comment.id} className="flex gap-4">
             {/* Avatar Placeholder */}
-            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-ui-bg-light flex items-center justify-center text-ui-primary font-bold">
+            <div className="shrink-0 w-10 h-10 rounded-full bg-ui-bg-light flex items-center justify-center text-ui-primary font-bold">
               {comment.author.charAt(0)}
             </div>
 

@@ -20,8 +20,9 @@ async function getVideos() {
     }
   }`;
 
-  const articlesWithVideos = await client.fetch(query);
-  return articlesWithVideos.flatMap((article) => article.videos);
+  const articlesWithVideos: { videos: unknown[] }[] = await client.fetch(query);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return articlesWithVideos.flatMap((article) => article.videos) as any[];
 }
 
 export default async function VideosPage() {

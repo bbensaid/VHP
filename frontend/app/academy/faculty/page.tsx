@@ -1,6 +1,14 @@
-import React from "react";
 import Link from "next/link";
 import { client } from "@/lib/sanity";
+
+interface Person {
+  _id: string;
+  name: string;
+  role?: string;
+  bio?: string;
+  tags?: string[];
+  imageUrl?: string;
+}
 
 async function getFaculty() {
   const query = `*[_type == "instructor"] | order(name asc) {
@@ -28,14 +36,14 @@ export default async function FacultyPage() {
               <p className="text-gray-500">No faculty found. Run the seed script to populate data.</p>
             </div>
           )}
-          {faculty.map((person: any) => (
+          {(faculty as Person[]).map((person) => (
             <div key={person._id} className="flex flex-col sm:flex-row gap-6 p-6 bg-white border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
-              <div className="flex-shrink-0 mx-auto sm:mx-0">
+              <div className="shrink-0 mx-auto sm:mx-0">
                 {person.imageUrl ? (
                   <img src={person.imageUrl} alt={person.name} className="w-32 h-32 rounded-full object-cover border-4 border-indigo-50" />
                 ) : (
                   <div className="w-32 h-32 rounded-full bg-slate-900 flex items-center justify-center text-white text-2xl font-bold border-4 border-indigo-50">
-                    {person.name.split(" ").map((n: string) => n).join("").slice(0,2)}
+                    {person.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
                   </div>
                 )}
               </div>
