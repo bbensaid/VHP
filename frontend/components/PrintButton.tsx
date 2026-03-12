@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { PrinterIcon } from "@heroicons/react/24/outline";
 
 export default function PrintButton() {

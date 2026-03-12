@@ -12,6 +12,7 @@ import {
   Bars3BottomRightIcon,
 } from "@heroicons/react/24/outline";
 import { useTicker } from "@/components/TickerContext";
+import { useSidebar } from "@/components/SidebarContext";
 import TickerStrip from "@/components/TickerStrip";
 import { usePathname } from "next/navigation";
 
@@ -75,17 +76,11 @@ const Header = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const { isHeaderVisible, setHeaderVisible } = useTicker();
+  const { toggleLeft, toggleRight } = useSidebar();
 
   const [headlines, setHeadlines] = useState<{ text: string; url: string }[]>([
     { text: "Loading Intelligence...", url: "#" },
   ]);
-
-  // HELPER: Sends signal to AppShell.tsx
-  const triggerToggle = (side: "left" | "right") => {
-    window.dispatchEvent(
-      new CustomEvent("sidebar-toggle", { detail: { side } })
-    );
-  };
 
   useEffect(() => {
     setDateString(
@@ -148,7 +143,7 @@ const Header = () => {
       <div className="bg-slate-900 text-slate-300 text-[11px] font-bold tracking-wider uppercase py-2 border-b border-slate-800 w-full relative z-50">
         {/* PHASE 1 FIX: Standardized Grid Wrapper */}
         <div className="w-full px-4 flex items-center h-full gap-0">
-          <div className="hidden lg:block opacity-80 whitespace-nowrap w-[500px] flex-shrink-0">
+          <div className="hidden lg:block opacity-80 whitespace-nowrap w-[500px] shrink-0">
             <span>{dateString}</span>
           </div>
           <div className="flex-1 flex items-center overflow-hidden min-w-0 pr-32">
@@ -187,11 +182,11 @@ const Header = () => {
         <div className="w-full px-4 flex items-center gap-0">
           
           {/* LEFT GROUP: Toggle + Logo (Fixed Width 500px to align with Date above) */}
-          <div className="flex items-center gap-4 w-[500px] flex-shrink-0">
-            <div className="w-10 flex-shrink-0">
+          <div className="flex items-center gap-4 w-[500px] shrink-0">
+            <div className="w-10 shrink-0">
               {!isStudio && (
                 <button
-                  onClick={() => triggerToggle("left")}
+                  onClick={toggleLeft}
                   className="p-2 text-slate-400 hover:bg-slate-100 rounded-md transition-colors"
                   title="Toggle Navigation"
                 >
@@ -206,7 +201,7 @@ const Header = () => {
 
           {/* CENTER: Navigation & Search */}
           <div className="flex-1 flex items-center justify-between">
-            <div className="flex items-center gap-6 xl:gap-8 flex-shrink-0">
+            <div className="flex items-center gap-6 xl:gap-8 shrink-0">
               <nav className="hidden xl:flex items-center gap-10 h-8">
                 <NavDropdown label="POLICY" items={policyItems} pillar="policy" />
                 <NavDropdown label="ECONOMICS" items={economicsItems} pillar="economics" />
@@ -252,10 +247,10 @@ const Header = () => {
           </div>
 
           {/* RIGHT SIDEBAR TOGGLE */}
-          <div className="w-10 flex-shrink-0 flex justify-end ml-4">
+          <div className="w-10 shrink-0 flex justify-end ml-4">
             {!isStudio && (
               <button
-                onClick={() => triggerToggle("right")}
+                onClick={toggleRight}
                 className="p-2 text-slate-400 hover:bg-slate-100 rounded-md transition-colors"
                 title="Toggle Vitals"
               >
@@ -264,7 +259,7 @@ const Header = () => {
             )}
           </div>
 
-          <div className="flex items-center gap-4 flex-shrink-0 xl:hidden">
+          <div className="flex items-center gap-4 shrink-0 xl:hidden">
             <button
               className="p-2 text-slate-800 hover:bg-slate-100 rounded-md transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

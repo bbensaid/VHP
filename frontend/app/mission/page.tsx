@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import {
   LightBulbIcon,
@@ -229,10 +228,10 @@ export default function MissionPage() {
               {milestones.map((m, i) => (
                 <div key={m.year} className="relative md:pl-16 flex gap-6 md:gap-0 items-start">
                   {/* Dot */}
-                  <div className="hidden md:flex absolute left-0 w-8 h-8 bg-indigo-600 rounded-full items-center justify-center flex-shrink-0 border-2 border-slate-900">
+                  <div className="hidden md:flex absolute left-0 w-8 h-8 bg-indigo-600 rounded-full items-center justify-center shrink-0 border-2 border-slate-900">
                     <span className="text-[10px] font-black text-white">{i + 1}</span>
                   </div>
-                  <div className="flex-shrink-0 w-16 md:w-auto">
+                  <div className="shrink-0 w-16 md:w-auto">
                     <span className="text-indigo-400 font-black text-lg">{m.year}</span>
                   </div>
                   <div className="flex-1 bg-white/5 border border-white/10 rounded-xl px-6 py-4">

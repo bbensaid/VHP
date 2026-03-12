@@ -1,5 +1,4 @@
 // frontend/app/trending-topics/page.tsx
-import React from "react";
 import TrendingTopicsClientPage from "./TrendingTopicsClientPage";
 
 // FIX: Mapped to the actual existing pages in your app that match these topics

@@ -1,6 +1,15 @@
-import React from "react";
 import { client } from "@/lib/sanity";
 import Link from "next/link";
+
+interface Report {
+  _id: string;
+  title: string;
+  subtitle?: string;
+  publishedAt?: string;
+  accessLevel: string;
+  summary?: string;
+  imageUrl?: string;
+}
 
 async function getReports() {
   const query = `*[_type == "report"] | order(publishedAt desc) {
@@ -34,9 +43,9 @@ export default async function ReportsPage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 space-y-6">
-        {reports.map((report: any) => (
+        {(reports as Report[]).map((report) => (
           <div key={report._id} className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 flex flex-col md:flex-row gap-8 items-start hover:shadow-xl transition-all group">
-            <div className="w-full md:w-48 h-64 flex-shrink-0 rounded-lg overflow-hidden border border-slate-100 bg-slate-50 relative">
+            <div className="w-full md:w-48 h-64 shrink-0 rounded-lg overflow-hidden border border-slate-100 bg-slate-50 relative">
               {report.imageUrl ? (
                 <img src={report.imageUrl} alt={report.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               ) : (
@@ -46,7 +55,7 @@ export default async function ReportsPage() {
                 </div>
               )}
             </div>
-            <div className="flex-grow pt-2">
+            <div className="grow pt-2">
               <div className="flex flex-wrap items-center gap-3 mb-3">
                 <span className={`px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wide border ${getAccessBadge(report.accessLevel)}`}>{report.accessLevel}</span>
                 <span className="text-slate-400 text-xs font-mono uppercase">{report.publishedAt ? new Date(report.publishedAt).getFullYear() + " Edition" : "Draft"}</span>

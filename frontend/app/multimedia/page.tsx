@@ -1,5 +1,4 @@
 // frontend/app/multimedia/page.tsx
-import React from "react";
 import MultimediaClientPage from "./MultimediaClientPage";
 
 // Import the ONLY media component that currently exists in your codebase

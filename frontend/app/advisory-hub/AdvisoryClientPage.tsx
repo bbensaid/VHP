@@ -1,6 +1,6 @@
+import React from "react";
 "use client";
 
-import React from "react";
 import HubPageTemplate from "@/components/templates/HubPageTemplate";
 import { BriefcaseIcon, ChartBarIcon, DocumentTextIcon, UserPlusIcon } from "@heroicons/react/24/outline";
 

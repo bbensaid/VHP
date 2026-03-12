@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 
 const pillars = [
@@ -249,7 +248,7 @@ export default function AboutPage() {
                 },
               ].map((item) => (
                 <div key={item.label} className="flex gap-3 p-3 rounded-lg bg-slate-50 border border-slate-100">
-                  <span className="text-lg flex-shrink-0">{item.icon}</span>
+                  <span className="text-lg shrink-0">{item.icon}</span>
                   <div>
                     <p className="text-sm font-bold text-slate-900">{item.label}</p>
                     <p className="text-xs text-red-600 mt-0.5">{item.sub}</p>
@@ -297,7 +296,7 @@ export default function AboutPage() {
                 <ul className="space-y-1">
                   {p.subcategories.map((cat) => (
                     <li key={cat} className="text-[11px] text-slate-500 flex items-center gap-1.5">
-                      <span className={`w-1 h-1 rounded-full flex-shrink-0 ${p.accent}`} />
+                      <span className={`w-1 h-1 rounded-full shrink-0 ${p.accent}`} />
                       {cat}
                     </li>
                   ))}

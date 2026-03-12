@@ -1,4 +1,3 @@
-import React from "react";
 import HTIDashboard from "@/components/HTIDashboard";
 
 export const metadata = {

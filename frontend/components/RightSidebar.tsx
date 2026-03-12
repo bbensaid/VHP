@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { SparklesIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
@@ -42,9 +41,9 @@ export default function RightSidebar() {
 
           {/* Suggested questions */}
           <div className="flex flex-col gap-2">
-            {SUGGESTED_QUESTIONS.map((q, i) => (
+            {SUGGESTED_QUESTIONS.map((q) => (
               <button
-                key={i}
+                key={q}
                 onClick={() => handleQuestionClick(q)}
                 className="text-left text-xs text-slate-700 hover:text-indigo-700 hover:bg-indigo-50 border border-slate-100 hover:border-indigo-200 rounded-lg px-3 py-2.5 transition-all leading-snug"
               >

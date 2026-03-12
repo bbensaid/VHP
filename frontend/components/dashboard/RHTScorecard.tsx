@@ -71,8 +71,8 @@ export const RHTScorecard: React.FC<RHTScorecardProps> = ({ data }) => {
             </h3>
           </div>
           <div className="divide-y divide-slate-100">
-            {data.initiatives.map((init, i) => (
-              <div key={i} className="p-5 hover:bg-slate-50 transition-colors">
+            {data.initiatives.map((init) => (
+              <div key={init.title} className="p-5 hover:bg-slate-50 transition-colors">
                 <h4 className="font-bold text-slate-900 text-sm mb-1">
                   {init.title}
                 </h4>
@@ -91,8 +91,8 @@ export const RHTScorecard: React.FC<RHTScorecardProps> = ({ data }) => {
             <h3 className="font-bold text-slate-800">Review Metrics</h3>
           </div>
           <div className="p-5 space-y-5">
-            {data.metrics.map((m, i) => (
-              <div key={i} className="relative">
+            {data.metrics.map((m) => (
+              <div key={m.label} className="relative">
                 <div className="flex justify-between items-center mb-1">
                   <span className="text-sm font-medium text-slate-700">
                     {m.label}

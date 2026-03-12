@@ -1,4 +1,3 @@
-import React from "react";
 import { client } from "@/lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Link from "next/link";
@@ -36,6 +35,22 @@ async function getCourse(slug: string) {
   }`;
 
   return await client.fetch(query, { slug });
+}
+
+interface CourseModule {
+  _id: string;
+  title: string;
+  moduleNumber: number;
+  summary?: string;
+  estimatedReadTime?: number;
+  slug: string;
+}
+
+interface Instructor {
+  name: string;
+  role?: string;
+  bio?: string;
+  imageUrl?: string;
 }
 
 export default async function CourseDetailPage({
@@ -94,7 +109,7 @@ export default async function CourseDetailPage({
                   Course Modules <span className="text-gray-400 font-normal text-lg">({course.modules.length})</span>
                 </h2>
                 <div className="space-y-3">
-                  {course.modules.map((mod: any) => (
+                  {(course.modules as CourseModule[]).map((mod) => (
                     <Link
                       key={mod._id}
                       href={`/academy/modules/${mod.slug}`}
@@ -121,9 +136,9 @@ export default async function CourseDetailPage({
                 <div className="mt-12">
                     <h3 className="text-xl font-bold text-gray-900 mb-6">Your Instructors</h3>
                     <div className="grid gap-6">
-                        {course.instructors.map((inst: any) => (
+                        {(course.instructors as Instructor[]).map((inst) => (
                             <div key={inst.name} className="flex gap-4 p-6 bg-slate-50 rounded-xl border border-gray-200">
-                                <div className="relative w-16 h-16 flex-shrink-0">
+                                <div className="relative w-16 h-16 shrink-0">
                                   {inst.imageUrl ? (
                                       <Image 
                                         src={inst.imageUrl} 

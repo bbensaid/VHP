@@ -1,3 +1,4 @@
+import React from "react";
 "use client";
 
 import { useSearchParams, useRouter } from "next/navigation";
@@ -124,7 +125,7 @@ function SearchResults() {
                       )}
                     </div>
                     {r._createdAt && (
-                      <time className="text-xs text-slate-400 whitespace-nowrap flex-shrink-0 mt-1">
+                      <time className="text-xs text-slate-400 whitespace-nowrap shrink-0 mt-1">
                         {new Date(r._createdAt).toLocaleDateString("en-US", {
                           month: "short",
                           day: "numeric",

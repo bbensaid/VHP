@@ -1,4 +1,3 @@
-import React from "react";
 import HubPageTemplate from "@/components/templates/HubPageTemplate";
 import {
   AcademicCapIcon,

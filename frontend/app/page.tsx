@@ -1,4 +1,3 @@
-import React from "react";
 import { client } from "@/lib/sanity";
 import HomeContent from "@/components/HomeContent";
 
@@ -29,7 +28,7 @@ async function getPageData() {
 }
 
 export default async function HomePage() {
-  const { leadStory, feed, ticker } = await getPageData();
+  const { leadStory, feed } = await getPageData();
 
-  return <HomeContent leadStory={leadStory} feed={feed} ticker={ticker} />;
+  return <HomeContent leadStory={leadStory} feed={feed} />;
 }

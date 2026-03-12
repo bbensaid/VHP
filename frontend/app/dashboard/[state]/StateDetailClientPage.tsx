@@ -130,7 +130,7 @@ export default function StateDetailClientPage({ indexData, programData, stateSlu
               {programData && <p className="text-slate-500 text-lg leading-relaxed">RHT Award Amount: <span className="font-bold text-indigo-600">{programData.awardAmount}</span></p>}
             </div>
             
-            <div className="flex-shrink-0 mt-4 md:mt-0 text-left md:text-right">
+            <div className="shrink-0 mt-4 md:mt-0 text-left md:text-right">
               {indexData && (
                 <div>
                   <div className="text-xs font-bold text-slate-400 uppercase tracking-widest">Perf. Index Score</div>

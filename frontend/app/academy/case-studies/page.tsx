@@ -1,6 +1,15 @@
-import React from "react";
 import { client } from "@/lib/sanity";
 import Link from "next/link";
+
+interface CaseStudy {
+  _id: string;
+  title: string;
+  pillar?: string;
+  clientType?: string;
+  summary?: string;
+  metrics?: string[];
+  slug: string;
+}
 
 async function getCaseStudies() {
   const query = `*[_type == "caseStudy"] | order(_createdAt desc) {
@@ -33,12 +42,12 @@ export default async function CaseStudiesPage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {cases.map((study: any) => (
+          {(cases as CaseStudy[]).map((study) => (
             <div key={study._id} className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow flex flex-col">
               <div className="h-2 bg-gray-900 w-full"></div>
-              <div className="p-8 flex-grow">
+              <div className="p-8 grow">
                 <div className="flex justify-between items-start mb-4">
-                  <span className={`px-3 py-1 rounded text-xs font-bold uppercase tracking-wide ${getPillarColor(study.pillar)}`}>{study.pillar}</span>
+                  <span className={`px-3 py-1 rounded text-xs font-bold uppercase tracking-wide ${getPillarColor(study.pillar ?? "")}`}>{study.pillar}</span>
                   <span className="text-gray-400 text-xs font-mono uppercase">{study.clientType}</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -47,8 +56,8 @@ export default async function CaseStudiesPage() {
                 <p className="text-gray-600 mb-6 leading-relaxed">{study.summary}</p>
                 {study.metrics && (
                   <div className="grid grid-cols-2 gap-4 border-t border-gray-100 pt-6">
-                    {study.metrics.map((metric: string, i: number) => (
-                      <div key={i}><span className="block text-lg font-black text-gray-900">{metric}</span></div>
+                    {study.metrics.map((metric) => (
+                      <div key={metric}><span className="block text-lg font-black text-gray-900">{metric}</span></div>
                     ))}
                   </div>
                 )}

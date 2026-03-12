@@ -1,4 +1,3 @@
-import React from "react";
 import ArticlePageTemplate from "@/components/ArticlePageTemplate";
 
 export default async function PolicyArticlePage({

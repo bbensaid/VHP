@@ -2,6 +2,17 @@
 
 export type ScenarioType = 'statusQuo' | 'optimized';
 
+// ── State health data (re-exported from here for consistent imports) ───────────
+export interface StateHealthData {
+  name: string;
+  code: string;
+  status: 'Stable' | 'Critical' | 'Warning' | 'Improving';
+  trend: 'up' | 'down' | 'flat';
+  score: number;
+  hospitalMargin: number;
+  uninsuredRate: number;
+}
+
 // Re-export the canonical RHTProfile from the data layer
 export type { RHTProfile } from '@/lib/data/rht-program';
 

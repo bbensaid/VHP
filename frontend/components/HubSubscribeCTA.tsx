@@ -32,9 +32,9 @@ export default function HubSubscribeCTA({ pillar, bgClass, buttonClass }: HubSub
       setStatus("success");
       setMessage("Thanks for subscribing!");
       setEmail("");
-    } catch (error: any) {
+    } catch (error) {
       setStatus("error");
-      setMessage(error.message);
+      setMessage(error instanceof Error ? error.message : "Subscription failed");
     }
   };
 

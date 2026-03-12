@@ -11,8 +11,16 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 
+interface LeadStory {
+  title: string;
+  summary?: string;
+  publishedAt?: string;
+  slug?: string;
+  pillar?: string;
+}
+
 interface HeroCarouselProps {
-  leadStory: any;
+  leadStory: LeadStory | null;
 }
 
 export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
@@ -84,7 +92,7 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
         {extendedSlides.map((slide, index) => (
           <div
             key={slide.id}
-            className="w-full flex-shrink-0 p-8 md:p-12 min-h-[400px] flex flex-col justify-center relative"
+            className="w-full shrink-0 p-8 md:p-12 min-h-[400px] flex flex-col justify-center relative"
           >
             {/* --- SLIDE 1: LEAD STORY --- */}
             {slide.type === "story" && (

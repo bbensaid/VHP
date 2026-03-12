@@ -1,7 +1,11 @@
 import React from 'react'
 
-export function StudioBlock(props: any) {
-  const {children, value} = props
+interface StudioBlockProps {
+  children?: React.ReactNode;
+  value?: { style?: string };
+}
+
+export function StudioBlock({ children, value }: StudioBlockProps) {
 
   if (!value) {
     return <p>{children}</p>

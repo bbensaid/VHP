@@ -1,4 +1,3 @@
-import React from "react";
 import { formatCompactCurrency } from "@/lib/utils";
 import {
   ArrowDownTrayIcon,
@@ -250,14 +249,14 @@ export default function NVRHHeroProfile() {
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-red-500 mt-1.5 flex-shrink-0"></div>
+                  <div className="w-2 h-2 rounded-full bg-red-500 mt-1.5 shrink-0"></div>
                   <p className="text-xs text-slate-600 italic">
                     "We are terrified of losing the birthing center. It's an
                     hour drive to the next hospital."
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-emerald-500 mt-1.5 flex-shrink-0"></div>
+                  <div className="w-2 h-2 rounded-full bg-emerald-500 mt-1.5 shrink-0"></div>
                   <p className="text-xs text-slate-600 italic">
                     "Supportive of closing the ENT clinic if it keeps the
                     Emergency Room open 24/7."

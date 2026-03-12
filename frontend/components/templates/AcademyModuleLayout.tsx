@@ -6,6 +6,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import type { PortableTextBlock } from "@portabletext/react";
 import AcademyContent from "@/components/AcademyContent";
 
 const levelColors: Record<string, string> = {
@@ -29,7 +30,7 @@ interface Props {
     learningObjectives?: string[];
     prevModuleSlug?: string | null;
     nextModuleSlug?: string | null;
-    body?: any[];
+    body?: PortableTextBlock[];
   };
   courseModules: CourseModule[];
   slug: string;
@@ -181,8 +182,8 @@ export default function AcademyModuleLayout({ module, courseModules, slug }: Pro
                   <span>🎯</span> What You'll Learn
                 </h2>
                 <ul className="space-y-2.5">
-                  {module.learningObjectives.map((obj: string, i: number) => (
-                    <li key={i} className="flex gap-3 text-sm text-indigo-800 leading-relaxed">
+                  {module.learningObjectives.map((obj, i) => (
+                    <li key={obj} className="flex gap-3 text-sm text-indigo-800 leading-relaxed">
                       <span className="shrink-0 mt-0.5 w-5 h-5 rounded-full bg-indigo-200 text-indigo-700 flex items-center justify-center text-[10px] font-black">
                         {i + 1}
                       </span>

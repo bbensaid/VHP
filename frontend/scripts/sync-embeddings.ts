@@ -47,17 +47,28 @@ const embeddingModel = genAI.getGenerativeModel({ model: "text-embedding-004" })
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 /** Extract plain text from Sanity Portable Text blocks. */
-function portableTextToPlain(blocks: any[]): string {
+function portableTextToPlain(blocks: unknown): string {
   if (!Array.isArray(blocks)) return "";
-  return blocks
-    .filter((b) => b._type === "block" && Array.isArray(b.children))
+  type PTBlock = { _type?: string; children?: Array<{ text?: string }> };
+  return (blocks as PTBlock[])
+    .filter((b): b is PTBlock & { children: Array<{ text?: string }> } =>
+      b._type === "block" && Array.isArray(b.children)
+    )
     .map((b) =>
       b.children
-        .filter((span: any) => typeof span.text === "string")
-        .map((span: any) => span.text)
+        .filter((span) => typeof span.text === "string")
+        .map((span) => span.text)
         .join("")
     )
     .join("\n");
+}
+
+/** Safely extract slug.current from an unknown Sanity slug field. */
+function slugCurrent(slug: unknown): string | undefined {
+  if (slug && typeof slug === "object" && "current" in slug) {
+    return (slug as { current?: string }).current;
+  }
+  return undefined;
 }
 
 /** Truncate text to stay within embedding API limits. */
@@ -92,16 +103,16 @@ async function fetchPolicyAnalyses(): Promise<ContentRecord[]> {
       _id, title, slug, pillar, summary, body
     }
   `);
-  return docs.map((d: any) => {
+  return docs.map((d: Record<string, unknown>) => {
     const bodyText = portableTextToPlain(d.body ?? []);
     const content = [d.summary, bodyText].filter(Boolean).join("\n\n");
-    const pillarSlug = (d.pillar ?? "").toLowerCase();
+    const pillarSlug = String(d.pillar ?? "").toLowerCase();
     return {
       content_id: d._id,
       content_type: "policyAnalysis",
       title: d.title ?? null,
       content: truncate(content),
-      url: `/${pillarSlug}/${d.slug?.current}`,
+      url: `/${pillarSlug}/${slugCurrent(d.slug)}`,
       pillar: d.pillar ?? null,
     };
   });
@@ -113,12 +124,12 @@ async function fetchPosts(): Promise<ContentRecord[]> {
       _id, title, slug, body
     }
   `);
-  return docs.map((d: any) => ({
+  return docs.map((d: Record<string, unknown>) => ({
     content_id: d._id,
     content_type: "post",
     title: d.title ?? null,
     content: truncate(portableTextToPlain(d.body ?? [])),
-    url: `/post/${d.slug?.current}`,
+    url: `/post/${slugCurrent(d.slug)}`,
     pillar: null,
   }));
 }
@@ -129,7 +140,7 @@ async function fetchAcademyModules(): Promise<ContentRecord[]> {
       _id, title, slug, pillar, summary, learningObjectives, body
     }
   `);
-  return docs.map((d: any) => {
+  return docs.map((d: Record<string, unknown>) => {
     const objectives = Array.isArray(d.learningObjectives)
       ? d.learningObjectives.join(". ")
       : "";
@@ -142,7 +153,7 @@ async function fetchAcademyModules(): Promise<ContentRecord[]> {
       content_type: "academyModule",
       title: d.title ?? null,
       content: truncate(content),
-      url: `/academy/modules/${d.slug?.current}`,
+      url: `/academy/modules/${slugCurrent(d.slug)}`,
       pillar: d.pillar ?? null,
     };
   });
@@ -154,12 +165,12 @@ async function fetchCaseStudies(): Promise<ContentRecord[]> {
       _id, title, slug, pillar, body
     }
   `);
-  return docs.map((d: any) => ({
+  return docs.map((d: Record<string, unknown>) => ({
     content_id: d._id,
     content_type: "caseStudy",
     title: d.title ?? null,
     content: truncate(portableTextToPlain(d.body ?? [])),
-    url: `/academy/case-studies/${d.slug?.current}`,
+    url: `/academy/case-studies/${slugCurrent(d.slug)}`,
     pillar: d.pillar ?? null,
   }));
 }
@@ -170,7 +181,7 @@ async function fetchDefinitions(): Promise<ContentRecord[]> {
       _id, term, description, pillars
     }
   `);
-  return docs.map((d: any) => ({
+  return docs.map((d: Record<string, unknown>) => ({
     content_id: d._id,
     content_type: "definition",
     title: d.term ?? null,
@@ -186,7 +197,7 @@ async function fetchAnalystNotes(): Promise<ContentRecord[]> {
       _id, title, pillar, body
     }
   `);
-  return docs.map((d: any) => ({
+  return docs.map((d: Record<string, unknown>) => ({
     content_id: d._id,
     content_type: "analystNote",
     title: d.title ?? null,
@@ -202,12 +213,12 @@ async function fetchWebinars(): Promise<ContentRecord[]> {
       _id, title, slug, pillar, description
     }
   `);
-  return docs.map((d: any) => ({
+  return docs.map((d: Record<string, unknown>) => ({
     content_id: d._id,
     content_type: "webinar",
     title: d.title ?? null,
     content: truncate(`${d.title ?? ""}\n${d.description ?? ""}`),
-    url: `/academy/webinars/${d.slug?.current}`,
+    url: `/academy/webinars/${slugCurrent(d.slug)}`,
     pillar: d.pillar ?? null,
   }));
 }
@@ -218,12 +229,12 @@ async function fetchReports(): Promise<ContentRecord[]> {
       _id, title, slug, pillar, abstract
     }
   `);
-  return docs.map((d: any) => ({
+  return docs.map((d: Record<string, unknown>) => ({
     content_id: d._id,
     content_type: "report",
     title: d.title ?? null,
     content: truncate(`${d.title ?? ""}\n${d.abstract ?? ""}`),
-    url: `/report/${d.slug?.current}`,
+    url: `/report/${slugCurrent(d.slug)}`,
     pillar: d.pillar ?? null,
   }));
 }
@@ -280,8 +291,8 @@ async function syncAll() {
 
       // Stay within Gemini free-tier rate limits (~60 req/min)
       await sleep(1000);
-    } catch (err: any) {
-      console.error(`  ✗ ${record.content_id}: ${err.message}`);
+    } catch (err) {
+      console.error(`  ✗ ${record.content_id}: ${err instanceof Error ? err.message : String(err)}`);
       errors++;
       await sleep(2000); // Back off on errors
     }

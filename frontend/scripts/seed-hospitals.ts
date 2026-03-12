@@ -52,8 +52,8 @@ async function main() {
         await sanity.createOrReplace(doc);
         console.log(`  ✓ [${stateSlug}] ${h.name}`);
         succeeded++;
-      } catch (err: any) {
-        console.error(`  ✗ [${stateSlug}] ${h.name}: ${err.message}`);
+      } catch (err) {
+        console.error(`  ✗ [${stateSlug}] ${h.name}: ${err instanceof Error ? err.message : String(err)}`);
       }
     }
   }

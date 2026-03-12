@@ -1,7 +1,16 @@
 {
   "permissions": {
     "allow": [
-      "Bash(node -e \"const fs=require\\(''fs''\\);const data=JSON.parse\\(fs.readFileSync\\(''sanity/content/academy/vbc_fundamentals.json'',''utf8''\\)\\);const pat=/[^a-zA-Z0-9_$\\\\-]/;function find\\(obj,p\\){if\\(typeof obj!==''object''||obj===null\\)return;for\\(const k of Object.keys\\(obj\\)\\){if\\(pat.test\\(k\\)\\)console.log\\(''BAD:'',JSON.stringify\\(k\\),''at'',p\\);find\\(obj[k],p+''.''+k\\);}}find\\(data,''root''\\);\")"
+      "Bash(node -e \"const fs=require\\(''fs''\\);const data=JSON.parse\\(fs.readFileSync\\(''sanity/content/academy/vbc_fundamentals.json'',''utf8''\\)\\);const pat=/[^a-zA-Z0-9_$\\\\-]/;function find\\(obj,p\\){if\\(typeof obj!==''object''||obj===null\\)return;for\\(const k of Object.keys\\(obj\\)\\){if\\(pat.test\\(k\\)\\)console.log\\(''BAD:'',JSON.stringify\\(k\\),''at'',p\\);find\\(obj[k],p+''.''+k\\);}}find\\(data,''root''\\);\")",
+      "Bash(pip list:*)",
+      "Bash(pip3 list:*)",
+      "Bash(source venv/bin/activate)",
+      "Bash(pip3 show:*)",
+      "Bash(python3 -m pip show fastapi pydantic httpx)",
+      "Bash(/Users/baba/Vermont-Health-Platform/backend/venv/bin/pip show:*)",
+      "Bash(grep '\"\"zod\"\"' package.json)",
+      "Bash(grep -E \"\\\\.tsx$\")",
+      "Bash(cat /Users/baba/Vermont-Health-Platform/frontend/app/academy/courses/*/page.tsx)"
     ]
   }
 }
