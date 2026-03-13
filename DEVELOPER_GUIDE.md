@@ -1,6 +1,6 @@
 # Health Transformation Review — Developer Guide
 
-**Version:** 2026-03-10 | **Stack:** Next.js 16 · React 19 · Sanity CMS · Supabase · FastAPI · LlamaIndex · Gemini · Tailwind v4
+**Version:** 2026-03-12 | **Stack:** Next.js 16 · React 19 · Sanity CMS · Supabase · FastAPI · LlamaIndex · Gemini · Tailwind v4
 
 ---
 
@@ -122,6 +122,11 @@ Vermont-Health-Platform/
 │   │   ├── advisory/            ← Advisory hub
 │   │   ├── hti-dashboard/       ← HTI (Health Transformation Index) dashboard
 │   │   ├── trending-topics/     ← Trending topics page
+│   │   ├── mission/             ← Mission+Vision as hero, Core Values and Framework promoted
+│   │   ├── values/              ← Core Values standalone page
+│   │   ├── about/
+│   │   │   └── framework/       ← Five-Question Standard standalone page
+│   │   ├── ahead-model/         ← AHEAD Model CMS federal program page
 │   │   ├── privacy/             ← Privacy policy stub
 │   │   ├── terms/               ← Terms of service stub
 │   │   └── sitemap/             ← Sitemap stub
@@ -501,6 +506,12 @@ All routes use Next.js 14+ App Router with `page.tsx` server components as entry
 | `/account` | `app/account/page.tsx` | Client (protected) |
 | `/login` | `app/login/page.tsx` | Client |
 | `/signup` | `app/signup/page.tsx` | Client |
+| `/mission` | `app/mission/page.tsx` | Server |
+| `/values` | `app/values/page.tsx` | Server |
+| `/about/framework` | `app/about/framework/page.tsx` | Server |
+| `/about/methodology` | `app/about/methodology/page.tsx` | Server |
+| `/ahead-model` | `app/ahead-model/page.tsx` | Server |
+| `/faq` | `app/faq/page.tsx` | Server |
 | `/studio` | Sanity Studio embedded | Studio |
 
 ### Naming conventions
@@ -534,8 +545,11 @@ app/layout.tsx
 `AppShell` automatically collapses both sidebars on:
 - Article routes (`/policy/[slug]`, `/economics/[slug]`, etc.)
 - Academy module routes (`/academy/modules/[slug]`)
+- Academy detail pages (`/academy/courses/[slug]`, `/academy/webinars/[slug]`, `/academy/case-studies/[slug]`)
 
-This gives article pages full-width layout. The sidebars show on hub pages, the home page, and the dashboard.
+This gives focused reading pages full-width layout. The sidebars show on hub pages, the home page, and the dashboard.
+
+**Hero styling convention:** All page heroes use light gray backgrounds (`bg-slate-50 text-slate-900 border-b border-slate-200`). Dark heroes (`bg-slate-900`) are reserved only for brand/editorial pages (`/mission`, `/values`, `/about/framework`). Never add a dark hero to a functional page.
 
 ### Template components (`components/templates/`)
 
@@ -1531,10 +1545,10 @@ Embedded in the Next.js app at `/studio`. Deploys automatically with the Next.js
 
 8. **Auth + personalization** — Saved states, reading history, personalized recommendations via Supabase RLS.
 
-9. **Content depth** — Populate all 5 pillar hubs; add Clinical and Equity academy modules; more PDFs to `backend/data/`.
+9. **Content depth** — Populate all 5 pillar hubs with healthcare transformation focus (rural health content preserved under Federal Programs section); add Clinical and Equity academy modules; more PDFs to `backend/data/`.
 
 10. **Performance** — Sanity CDN (`useCdn: true`) for production reads; ISR for static-heavy pages.
 
 ---
 
-*Last updated: 2026-03-10 (Python AI backend integration)*
+Last updated: 2026-03-12 (De-ruralization, new pages /values /about/framework /ahead-model, hero styling convention, HomeSidebar restructure, FAQ moved to top bar)

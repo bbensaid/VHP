@@ -10,17 +10,17 @@ export default function ResearchPage() {
     <div className="bg-white min-h-screen pb-20">
       
       {/* 1. HERO HEADER */}
-      <div className="bg-slate-900 text-white py-24 border-b border-indigo-900">
+      <div className="bg-slate-50 text-slate-900 py-24 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-center gap-2 mb-4">
-            <span className="bg-indigo-600 text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
+            <span className="bg-indigo-100 text-indigo-700 border border-indigo-200 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
               Advisory Services
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6">
-            Custom Research & <span className="text-indigo-400">Analysis</span>
+            Custom Research & <span className="text-indigo-600">Analysis</span>
           </h1>
-          <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
+          <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
             We deploy our proprietary System Health Index (SHI) framework to answer specific strategic questions for health systems, investors, and state agencies.
           </p>
         </div>

@@ -3,22 +3,22 @@ export default function ContactPage() {
   return (
     <div className="bg-white min-h-screen pb-20">
       {/* 1. HERO HEADER */}
-      <div className="bg-slate-900 text-white py-24 border-b border-indigo-900">
+      <div className="bg-slate-50 text-slate-900 py-24 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl text-center">
-            <span className="text-indigo-400 font-bold uppercase tracking-widest text-xs mb-4 block">
+            <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs mb-4 block">
                 Direct Engagement
             </span>
             <h1 className="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight leading-tight">
                 Hire an Expert
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
                 Whether you need a keynote speaker for your board retreat or a full-time consultant for a transformation project, we have the expertise.
             </p>
         </div>
       </div>
 
       {/* 2. CONTACT FORM & SIDEBAR */}
-      <div className="container mx-auto px-4 md:px-8 -mt-16 relative z-10">
+      <div className="container mx-auto px-4 md:px-8 mt-12">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-8">
             
             {/* LEFT: The Form */}

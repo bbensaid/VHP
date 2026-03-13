@@ -55,47 +55,49 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
       {/* QUICK ACTIONS */}
       <div>
         <div className="space-y-2">
+
+          {/* ── Federal Programs ─────────────────────────────────── */}
+          <p className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400 px-1 pt-1 pb-0.5">
+            Federal Programs
+          </p>
           <Link
             href="/dashboard"
             onClick={onNavigate}
-            title="View the national surveillance map and active state cohorts"
-            className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
+            title="Explore the Rural Health Transformation program — 50-state coverage, global budgets, and CMS data"
+            className="flex items-center gap-3 p-3 rounded-lg bg-blue-50 hover:bg-blue-100 border border-blue-200 transition-colors group shadow-sm hover:shadow-md"
           >
-            <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0">
+            <div className="w-8 h-8 rounded-full bg-white border border-blue-200 flex items-center justify-center overflow-hidden shrink-0">
               <Image
                 src="/rhtp-icon.png"
-                alt="RHTP Logo"
+                alt="Rural Health Transformation"
                 width={32}
                 height={32}
                 className="object-contain w-full h-full"
               />
             </div>
-            <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
-              State Performance Index
+            <span className="text-sm font-bold text-blue-800 group-hover:text-blue-900 leading-tight">
+              Rural Health Transformation
             </span>
           </Link>
           <Link
-            href="/dashboard/vermont"
+            href="/ahead-model"
             onClick={onNavigate}
-            title="Read the detailed case study on Vermont's health reform"
-            className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
+            title="AHEAD Model — CMS all-payer total cost of care model operating in 6 states"
+            className="flex items-center gap-3 p-3 rounded-lg bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-colors group shadow-sm hover:shadow-md"
           >
-            <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0">
-              <Image
-                src="/vermont-icon.svg"
-                alt="Vermont Case Study"
-                width={32}
-                height={32}
-                className="object-contain w-full h-full"
-              />
+            <div className="w-8 h-8 rounded-full bg-white border border-emerald-200 flex items-center justify-center shrink-0 text-emerald-600 font-black text-[11px]">
+              AH
             </div>
-            <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
-              Case Study: Vermont
+            <span className="text-sm font-bold text-emerald-800 group-hover:text-emerald-900 leading-tight">
+              AHEAD Model
             </span>
           </Link>
 
-          {/* NEW BUTTONS EXACTLY MATCHING "CASE STUDY: VERMONT" PARAMETERS */}
-          <div className="mt-2 space-y-2">
+          {/* ── Platform ─────────────────────────────────────────────── */}
+          <p className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400 px-1 pt-3 pb-0.5">
+            Platform
+          </p>
+          <div className="space-y-2">
             <Link
               href="/academy"
               onClick={onNavigate}

@@ -20,9 +20,12 @@ export default async function CaseStudyDetail({
 
   return (
     <div className="bg-white min-h-screen pb-20">
-      <div className="bg-slate-900 text-white py-24">
+      <div className="bg-slate-50 text-slate-900 py-24 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-           <span className="text-indigo-400 font-bold uppercase tracking-widest text-xs mb-4 block">
+           <Link href="/academy/case-studies" className="text-slate-500 hover:text-slate-900 uppercase text-xs font-bold tracking-widest mb-4 inline-block">
+             &larr; Case Studies
+           </Link>
+           <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs mb-4 block">
               Case Study • {study.clientType}
            </span>
            <h1 className="text-4xl md:text-6xl font-extrabold mb-8 leading-tight">
@@ -30,7 +33,7 @@ export default async function CaseStudyDetail({
            </h1>
            <div className="flex flex-wrap gap-4">
               {study.metrics?.map((m: string) => (
-                <span key={m} className="px-4 py-2 bg-white/10 border border-white/20 rounded-lg font-bold text-white">
+                <span key={m} className="px-4 py-2 bg-indigo-50 border border-indigo-200 rounded-lg font-bold text-indigo-800">
                   {m}
                 </span>
               ))}

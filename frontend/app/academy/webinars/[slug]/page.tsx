@@ -32,26 +32,26 @@ export default async function WebinarDetailPage({
   return (
     <div className="min-h-screen bg-white pb-20 font-sans text-slate-800">
       {/* HEADER */}
-      <header className="bg-blue-900 text-white py-16 border-b-4 border-blue-700">
+      <header className="bg-slate-50 text-slate-900 py-16 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl">
           <div className="flex items-center gap-3 mb-6">
-            <Link 
-              href="/academy/webinars" 
-              className="text-blue-300 hover:text-white uppercase text-xs font-bold tracking-widest transition-colors"
+            <Link
+              href="/academy/webinars"
+              className="text-slate-500 hover:text-slate-900 uppercase text-xs font-bold tracking-widest transition-colors"
             >
-              Webinars
+              &larr; Webinars
             </Link>
           </div>
-          
+
           <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6 leading-tight">
             {webinar.title}
           </h1>
-          
-          <p className="text-xl text-blue-100 leading-relaxed">
+
+          <p className="text-xl text-slate-600 leading-relaxed">
             {webinar.summary}
           </p>
 
-          <div className="mt-8 flex items-center gap-4 text-sm text-blue-200 font-medium">
+          <div className="mt-8 flex items-center gap-4 text-sm text-slate-500 font-medium">
             <span>{new Date(webinar.publishedAt).toLocaleDateString()}</span>
           </div>
         </div>

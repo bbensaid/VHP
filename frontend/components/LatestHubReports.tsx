@@ -16,7 +16,17 @@ async function getLatest(pillar: string): Promise<Report[]> {
   return client.fetch(query, {}, { next: { revalidate: 60 } });
 }
 
-export default async function LatestHubReports({ pillar, colorClass }: { pillar: string; colorClass: string }) {
+export default async function LatestHubReports({
+  pillar,
+  colorClass,
+  cardHoverClass = "hover:border-slate-300",
+  titleHoverClass = "group-hover:text-slate-900",
+}: {
+  pillar: string;
+  colorClass: string;
+  cardHoverClass?: string;
+  titleHoverClass?: string;
+}) {
   const reports = await getLatest(pillar);
 
   if (!reports || reports.length === 0) return null;
@@ -24,7 +34,7 @@ export default async function LatestHubReports({ pillar, colorClass }: { pillar:
   return (
     <div className="mb-12 mt-16">
       <div className="flex items-center justify-between mb-6 border-b border-slate-200 pb-2">
-        <h2 className="text-xl font-black text-slate-900 uppercase tracking-tight">
+        <h2 className="text-xl font-black text-slate-900">
           Latest Reports
         </h2>
       </div>
@@ -33,7 +43,7 @@ export default async function LatestHubReports({ pillar, colorClass }: { pillar:
           <Link
             key={report._id}
             href={`/${pillar.toLowerCase()}/${report.slug.current}`}
-            className="group block bg-white p-6 rounded-xl border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all"
+            className={`group block bg-white p-6 rounded-xl border border-slate-200 ${cardHoverClass} hover:shadow-lg transition-all`}
           >
             {index === 0 && (
               <span className="inline-block px-2 py-1 mb-3 text-[10px] font-black uppercase tracking-widest text-white bg-slate-900 rounded shadow-sm">
@@ -43,7 +53,7 @@ export default async function LatestHubReports({ pillar, colorClass }: { pillar:
             <div className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">
               {report.publishedAt ? new Date(report.publishedAt).toLocaleDateString() : ""}
             </div>
-            <h3 className="font-bold text-slate-900 mb-3 group-hover:text-indigo-600 transition-colors leading-snug">
+            <h3 className={`font-bold text-slate-900 mb-3 ${titleHoverClass} transition-colors leading-snug`}>
               {report.title}
             </h3>
             <p className="text-sm text-slate-600 line-clamp-3 mb-4">

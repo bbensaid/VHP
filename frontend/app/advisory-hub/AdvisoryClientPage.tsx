@@ -26,6 +26,8 @@ export default function AdvisoryClientPage(props: AdvisoryClientPageProps) {
       title="HTR Advisory"
       subtitle="Strategic Consulting, Custom Research, Annual Reports, and Direct Engagement"
       tabs={tabs}
+      badgeClass="bg-fuchsia-50 text-fuchsia-700 border border-fuchsia-100"
+      backLinkHoverClass="hover:text-fuchsia-600"
     />
   );
 }

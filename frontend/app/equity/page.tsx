@@ -18,9 +18,9 @@ export default function Page() {
     },
     { 
       label: 'Access Disparity', href: '/equity/access',
-      description: 'Closing gaps in rural and underserved care.',
-      details: ['Rural Health', 'Medicaid Access', 'Safety Net'],
-      scope: 'Analysis of healthcare access barriers in rural and urban underserved communities, including provider shortages and insurance coverage gaps.'
+      description: 'Closing gaps in underserved and under-resourced care.',
+      details: ['Underserved Communities', 'Medicaid Access', 'Safety Net'],
+      scope: 'Analysis of healthcare access barriers across underserved communities — rural, urban, and suburban — including provider shortages, insurance coverage gaps, and geographic isolation.'
     },
     { 
       label: 'Community Engagement', href: '/equity/community',
@@ -33,7 +33,7 @@ export default function Page() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
       <div className="mb-12">
-        <span className="text-sm font-bold text-amber-600 uppercase tracking-wider">
+        <span className="text-sm font-bold text-orange-600 uppercase tracking-wider">
           Health Equity
         </span>
         <h1 className="text-4xl font-black text-slate-900 mt-2 mb-4">
@@ -46,16 +46,16 @@ export default function Page() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {topics.map((item) => (
-          <Link key={item.label} href={item.href} className="flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-amber-400 hover:bg-amber-50/80">
+          <Link key={item.label} href={item.href} className="group flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-orange-400 hover:bg-orange-50/80">
             <div>
-              <h3 className="font-bold text-slate-900 text-lg mb-2">{item.label}</h3>
+              <h3 className="font-bold text-slate-900 text-lg mb-2 group-hover:text-orange-600 transition-colors">{item.label}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">{item.description}</p>
             </div>
-            <div className="mt-auto pt-4 space-y-2 border-t border-slate-100 mt-4">
+            <div className="mt-auto pt-4 space-y-2 border-t border-slate-100">
               <h4 className="text-[10px] font-bold uppercase text-slate-500 tracking-wider">Scope Includes</h4>
               {item.details.map(detail => (
                 <div key={detail} className="flex items-center gap-2">
-                  <span className="text-amber-500 font-bold">✓</span>
+                  <span className="text-orange-500 font-bold">✓</span>
                   <span className="text-xs font-medium text-slate-600">{detail}</span>
                 </div>
               ))}
@@ -67,12 +67,12 @@ export default function Page() {
         ))}
       </div>
 
-      <LatestHubReports pillar="Equity" colorClass="text-amber-600" />
+      <LatestHubReports pillar="Equity" colorClass="text-orange-600" cardHoverClass="hover:border-orange-400 hover:bg-orange-50/80" titleHoverClass="group-hover:text-orange-600" />
 
-      <HubSubscribeCTA 
-        pillar="Equity" 
-        bgClass="bg-amber-50" 
-        buttonClass="bg-amber-600 hover:bg-amber-700" 
+      <HubSubscribeCTA
+        pillar="Equity"
+        bgClass="bg-orange-50"
+        buttonClass="bg-orange-600 hover:bg-orange-700"
       />
     </div>
   );

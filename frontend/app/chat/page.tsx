@@ -23,12 +23,12 @@ import BackendStatus from "@/components/BackendStatus";
 // ── Constants ────────────────────────────────────────────────────────────────
 
 const SUGGESTED_QUESTIONS = [
-  "Summarize the latest RHTP guidelines.",
-  "How do global budgets impact rural hospitals?",
-  "Explain the workforce gap trends in 2024.",
+  "What are the biggest cost drivers in U.S. healthcare today?",
+  "How does value-based care improve patient outcomes?",
+  "What does the evidence say about healthcare workforce shortages?",
   "What are the key provisions of Vermont's Act 167?",
   "Compare fee-for-service vs value-based care economics.",
-  "How does BCBSVT's all-payer model work?",
+  "How do global budgets work in the Rural Health Transformation Program?",
 ];
 
 const DEFAULT_TEMPERATURE = 0.7;

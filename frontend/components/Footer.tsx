@@ -63,6 +63,8 @@ const pillars = [
 const companyLinks = [
   { label: "About HTR", href: "/about" },
   { label: "Mission & Vision", href: "/mission" },
+  { label: "Core Values", href: "/values" },
+  { label: "Our Framework", href: "/about/framework" },
   { label: "Our Methodology", href: "/about/methodology" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact Us", href: "/advisory/contact" },
@@ -93,7 +95,7 @@ const Footer: React.FC = () => {
               <Logo />
             </Link>
             <p className="text-sm text-slate-500 leading-relaxed mb-6 max-w-xs">
-              The cross-disciplinary intelligence platform for rural health system transformation. Five pillars. Fifty states. Zero agenda.
+              The cross-disciplinary intelligence platform for health system transformation. Five pillars. Fifty states. Zero agenda.
             </p>
             {/* Social icons */}
             <div className="flex gap-3">

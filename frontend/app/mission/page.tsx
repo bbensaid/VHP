@@ -9,11 +9,11 @@ import {
 } from "@heroicons/react/24/outline";
 
 const pillars = [
-  { label: "Policy", color: "text-sky-700", bg: "bg-sky-600", question: "Is it permissible?", href: "/policy" },
-  { label: "Economics", color: "text-emerald-700", bg: "bg-emerald-500", question: "Is it sustainable?", href: "/economics" },
-  { label: "Technology", color: "text-indigo-700", bg: "bg-indigo-500", question: "Is it possible?", href: "/technology" },
-  { label: "Clinical", color: "text-rose-700", bg: "bg-rose-500", question: "Is it effective?", href: "/clinical" },
-  { label: "Equity", color: "text-violet-700", bg: "bg-violet-500", question: "Is it just?", href: "/equity" },
+  { label: "Policy", color: "text-sky-700", bg: "bg-sky-600", border: "border-sky-200", question: "Is it permissible?", href: "/policy" },
+  { label: "Economics", color: "text-emerald-700", bg: "bg-emerald-500", border: "border-emerald-200", question: "Is it sustainable?", href: "/economics" },
+  { label: "Technology", color: "text-indigo-700", bg: "bg-indigo-500", border: "border-indigo-200", question: "Is it possible?", href: "/technology" },
+  { label: "Clinical", color: "text-rose-700", bg: "bg-rose-500", border: "border-rose-200", question: "Is it effective?", href: "/clinical" },
+  { label: "Equity", color: "text-violet-700", bg: "bg-violet-500", border: "border-violet-200", question: "Is it just?", href: "/equity" },
 ];
 
 const values = [
@@ -21,6 +21,7 @@ const values = [
     icon: MagnifyingGlassIcon,
     color: "text-indigo-600",
     iconBg: "bg-indigo-50",
+    border: "border-indigo-100",
     title: "Intellectual Rigor",
     body: "Every analysis is grounded in primary sources — CMS filings, legislative text, peer-reviewed evidence, and real financial disclosures. We do not trade in speculation dressed as insight.",
   },
@@ -28,6 +29,7 @@ const values = [
     icon: ShieldCheckIcon,
     color: "text-slate-700",
     iconBg: "bg-slate-100",
+    border: "border-slate-200",
     title: "Editorial Independence",
     body: "No sponsored content. No pharma funding. No technology vendor relationships that influence our assessments. Revenue flows from subscribers, advisory clients, and masterclass participants — never from the industries we cover.",
   },
@@ -35,6 +37,7 @@ const values = [
     icon: LightBulbIcon,
     color: "text-amber-600",
     iconBg: "bg-amber-50",
+    border: "border-amber-100",
     title: "Systemic Thinking",
     body: "A policy that is permissible but economically unsustainable is not a solution. A technology that is possible but clinically ineffective is not progress. We test every insight across all five pillars before it reaches you.",
   },
@@ -42,13 +45,15 @@ const values = [
     icon: HeartIcon,
     color: "text-rose-600",
     iconBg: "bg-rose-50",
+    border: "border-rose-100",
     title: "Community First",
-    body: "Transformation is only meaningful if it improves outcomes for the patients in the zip codes that have historically been left behind. We hold every analysis accountable to the rural communities at the center of our mandate.",
+    body: "Transformation is only meaningful if it improves outcomes for the patients in the communities that have historically been left behind. We hold every analysis accountable to the populations — underserved, underinsured, and underrepresented — at the center of our mandate.",
   },
   {
     icon: UserGroupIcon,
     color: "text-emerald-600",
     iconBg: "bg-emerald-50",
+    border: "border-emerald-100",
     title: "Cross-Disciplinary Collaboration",
     body: "Policymakers, economists, clinicians, technologists, and equity advocates do not naturally speak the same language. HTR is the translation layer — and we hold the five-pillar standard for every piece of intelligence we publish.",
   },
@@ -56,6 +61,7 @@ const values = [
     icon: ChartBarIcon,
     color: "text-violet-600",
     iconBg: "bg-violet-50",
+    border: "border-violet-100",
     title: "Radical Transparency",
     body: "We publish our methodology, our scoring weights, and our data sources. When we revise a position based on new evidence, we say so explicitly. Accountability is non-negotiable at every level of our work.",
   },
@@ -64,17 +70,17 @@ const values = [
 const milestones = [
   { year: "2019", event: "HTR founded with a three-pillar framework: Policy, Economics, Technology." },
   { year: "2021", event: "State Performance Index launched, covering all 50 states with composite scoring across 9 sub-metrics." },
-  { year: "2022", event: "Advisory practice opens; first enterprise intelligence agreements with rural health systems." },
+  { year: "2022", event: "Advisory practice opens; first enterprise intelligence agreements with major health systems and federal program offices." },
   { year: "2024", event: "Clinical and Equity pillars formally added, expanding the framework to five dimensions in response to mounting evidence that clinical and equity gaps required dedicated analytical focus." },
   { year: "2025", event: "HTR Academy launches with Executive Masterclasses. Analyst network expands to a dedicated principal per pillar." },
-  { year: "2026", event: "50-state RHT program coverage complete. Performance Index extended with SDOH and algorithmic bias sub-metrics." },
+  { year: "2026", event: "50-state program coverage complete. Performance Index extended with SDOH, algorithmic bias, and rural transformation sub-metrics." },
 ];
 
 export default function MissionPage() {
   return (
     <div className="bg-white font-sans text-slate-800 min-h-screen">
 
-      {/* ── HERO ─────────────────────────────────────────────────────────── */}
+      {/* ── MISSION & VISION — TRUE HERO ──────────────────────────────────── */}
       <section className="relative bg-slate-900 text-white overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.04]"
@@ -84,76 +90,105 @@ export default function MissionPage() {
             backgroundSize: "48px 48px",
           }}
         />
-        {/* Violet orb */}
-        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-violet-600/10 rounded-full blur-3xl translate-y-1/2 pointer-events-none" />
+        <div className="absolute bottom-0 left-1/4 w-125 h-125 bg-violet-600/10 rounded-full blur-3xl translate-y-1/2 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-100 h-100 bg-indigo-600/10 rounded-full blur-3xl -translate-y-1/3 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-          <div className="max-w-3xl">
-            <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-6 border border-indigo-800 bg-indigo-900/40 px-4 py-1.5 rounded-full">
-              Mission & Vision
-            </span>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[0.9] mb-8">
-              A future where<br />
-              geography does not<br />
-              <span className="text-indigo-400">dictate outcomes.</span>
-            </h1>
-            <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
-              Rural America is not a niche market. It is 46 million people whose health outcomes are determined not by clinical decisions but by structural failures that HTR exists to expose, explain, and help eliminate.
-            </p>
-          </div>
-        </div>
-      </section>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+          <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-10 border border-indigo-800 bg-indigo-900/40 px-4 py-1.5 rounded-full">
+            Mission & Vision
+          </span>
 
-      {/* ── MISSION & VISION ─────────────────────────────────────────────── */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Mission */}
-          <div className="bg-white border border-slate-200 rounded-2xl p-10 md:p-12 shadow-sm relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-1 h-full bg-indigo-500 rounded-l-2xl" />
-            <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
-              Our Mission
-            </span>
-            <p className="text-2xl md:text-3xl font-bold text-slate-900 leading-snug">
-              To accelerate sustainable, value-based rural health transformation by providing the cross-disciplinary intelligence that policymakers, executives, clinicians, and equity advocates need to act with confidence.
-            </p>
-            <div className="mt-8 pt-8 border-t border-slate-100">
-              <p className="text-sm text-slate-500 leading-relaxed">
-                We achieve this through five integrated analytical pillars — Policy, Economics, Technology, Clinical, and Equity — ensuring that no recommendation enters the field having been tested on only one dimension of a structurally complex problem.
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Mission */}
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-10 md:p-12 relative overflow-hidden backdrop-blur-sm">
+              <div className="absolute top-0 left-0 w-1 h-full bg-indigo-500 rounded-l-2xl" />
+              <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-5 block">
+                Our Mission
+              </span>
+              <p className="text-2xl md:text-3xl font-bold text-white leading-snug">
+                To accelerate sustainable, value-based health system transformation by providing the cross-disciplinary intelligence that policymakers, executives, clinicians, and equity advocates need to act with confidence.
               </p>
+              <div className="mt-8 pt-8 border-t border-white/10">
+                <p className="text-slate-400 leading-relaxed text-sm">
+                  We achieve this through five integrated analytical pillars — Policy, Economics, Technology, Clinical, and Equity — ensuring that no recommendation enters the field having been tested on only one dimension of a structurally complex problem.
+                </p>
+              </div>
             </div>
-          </div>
 
-          {/* Vision */}
-          <div className="bg-slate-900 text-white rounded-2xl p-10 md:p-12 relative overflow-hidden">
-            <div className="absolute bottom-0 right-0 w-48 h-48 bg-indigo-600/20 rounded-full blur-2xl pointer-events-none" />
-            <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-4 block">
-              Our Vision
-            </span>
-            <p className="text-2xl md:text-3xl font-bold leading-snug text-white relative z-10">
-              A rural health system that is financially resilient, technologically capable, clinically excellent, and equitable by design — not by exception.
-            </p>
-            <div className="mt-8 pt-8 border-t border-white/10 relative z-10">
-              <p className="text-slate-400 leading-relaxed text-sm">
-                In this future, the Rural Health Transformation Program is no longer a pilot — it is the standard of care. Small community hospitals operate as high-acuity triage hubs, connected seamlessly to centers of excellence. Equity is built into the algorithm, not patched on afterward. And the intelligence required to sustain this system is accessible to every decision-maker who needs it.
+            {/* Vision */}
+            <div className="bg-indigo-600/20 border border-indigo-500/30 rounded-2xl p-10 md:p-12 relative overflow-hidden">
+              <div className="absolute bottom-0 right-0 w-48 h-48 bg-indigo-400/20 rounded-full blur-2xl pointer-events-none" />
+              <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-300 mb-5 block relative z-10">
+                Our Vision
+              </span>
+              <p className="text-2xl md:text-3xl font-bold leading-snug text-white relative z-10">
+                A health system that is financially resilient, technologically capable, clinically excellent, and equitable by design — not by exception.
               </p>
+              <div className="mt-8 pt-8 border-t border-white/10 relative z-10">
+                <p className="text-slate-300 leading-relaxed text-sm">
+                  In this future, value-based care is no longer an experiment — it is the standard. Community hospitals, academic medical centers, and safety-net providers operate as interconnected networks, sharing data and coordinating care seamlessly. Equity is built into every algorithm, not patched on afterward. And the intelligence required to sustain this system is accessible to every decision-maker who needs it.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── THE FIVE PILLARS INTERROGATION ───────────────────────────────── */}
-      <section className="bg-slate-50 border-y border-slate-200 py-20 md:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mb-14">
+      {/* ── CORE VALUES ───────────────────────────────────────────────────── */}
+      <section id="values" className="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-end justify-between mb-14">
+          <div>
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
-              The Five-Question Standard
+              Core Values
             </span>
-            <h2 className="text-4xl font-black tracking-tight text-slate-900 mb-4">
-              Every insight must answer five questions before it reaches you.
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 leading-tight">
+              What we stand for.
             </h2>
-            <p className="text-slate-600 text-lg leading-relaxed">
-              HTR's original three-pillar framework was built on the premise that Policy, Economics, and Technology are the primary levers of health system transformation. After five years of evidence, we know that framework was incomplete. Clinical effectiveness and equity are not downstream considerations — they are foundational.
+            <p className="text-xl text-slate-500 mt-4 max-w-2xl">
+              Six principles that govern every analysis, every recommendation, and every relationship we hold with the people who trust our intelligence.
             </p>
+          </div>
+          <Link
+            href="/values"
+            className="hidden md:inline-flex items-center gap-2 text-sm font-bold text-indigo-600 hover:text-indigo-800 border border-indigo-200 hover:border-indigo-400 px-4 py-2 rounded-lg transition-all whitespace-nowrap"
+          >
+            View full Values page →
+          </Link>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {values.map((v) => (
+            <div key={v.title} className={`bg-white border ${v.border} rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow`}>
+              <div className={`w-12 h-12 ${v.iconBg} rounded-xl flex items-center justify-center mb-5`}>
+                <v.icon className={`w-6 h-6 ${v.color}`} />
+              </div>
+              <h3 className="text-lg font-bold text-slate-900 mb-3">{v.title}</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">{v.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── THE FIVE-QUESTION STANDARD ────────────────────────────────────── */}
+      <section id="framework" className="bg-slate-50 border-y border-slate-200 py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-end justify-between mb-14">
+            <div className="max-w-2xl">
+              <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
+                Our Analytical Framework
+              </span>
+              <h2 className="text-4xl font-black tracking-tight text-slate-900 mb-4">
+                Every insight must answer five questions before it reaches you.
+              </h2>
+              <p className="text-slate-600 text-lg leading-relaxed">
+                HTR's original three-pillar framework was built on the premise that Policy, Economics, and Technology are the primary levers of health system transformation. After five years of evidence, we know that framework was incomplete. Clinical effectiveness and equity are not downstream considerations — they are foundational.
+              </p>
+            </div>
+            <Link
+              href="/about/framework"
+              className="hidden md:inline-flex items-center gap-2 text-sm font-bold text-indigo-600 hover:text-indigo-800 border border-indigo-200 hover:border-indigo-400 px-4 py-2 rounded-lg transition-all whitespace-nowrap"
+            >
+              View full Framework page →
+            </Link>
           </div>
 
           <div className="grid md:grid-cols-5 gap-4">
@@ -161,7 +196,7 @@ export default function MissionPage() {
               <Link
                 key={p.label}
                 href={p.href}
-                className="group block bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
+                className={`group block bg-white rounded-xl border ${p.border} p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-200`}
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className={`w-8 h-8 rounded-full ${p.bg} text-white flex items-center justify-center text-sm font-black`}>
@@ -187,29 +222,6 @@ export default function MissionPage() {
         </div>
       </section>
 
-      {/* ── CORE VALUES ───────────────────────────────────────────────────── */}
-      <section className="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
-            Core Values
-          </span>
-          <h2 className="text-4xl font-black tracking-tight text-slate-900">
-            What we stand for.
-          </h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {values.map((v) => (
-            <div key={v.title} className="bg-white border border-slate-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className={`w-12 h-12 ${v.iconBg} rounded-xl flex items-center justify-center mb-5`}>
-                <v.icon className={`w-6 h-6 ${v.color}`} />
-              </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">{v.title}</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">{v.body}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* ── MILESTONES ────────────────────────────────────────────────────── */}
       <section className="bg-slate-900 text-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -222,12 +234,10 @@ export default function MissionPage() {
             </h2>
           </div>
           <div className="relative">
-            {/* Vertical line */}
             <div className="absolute left-4 top-0 bottom-0 w-px bg-white/10 hidden md:block" />
             <div className="space-y-8">
               {milestones.map((m, i) => (
                 <div key={m.year} className="relative md:pl-16 flex gap-6 md:gap-0 items-start">
-                  {/* Dot */}
                   <div className="hidden md:flex absolute left-0 w-8 h-8 bg-indigo-600 rounded-full items-center justify-center shrink-0 border-2 border-slate-900">
                     <span className="text-[10px] font-black text-white">{i + 1}</span>
                   </div>

@@ -76,20 +76,20 @@ export default async function CourseDetailPage({
   return (
     <div className="bg-white min-h-screen pb-20">
       {/* HERO HEADER */}
-      <div className="bg-slate-900 text-white py-20">
+      <div className="bg-slate-50 text-slate-900 py-20 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
-            <Link href="/education" className="text-slate-400 hover:text-white mb-6 inline-block text-sm font-bold uppercase tracking-wider">
+            <Link href="/academy/courses" className="text-slate-500 hover:text-slate-900 mb-6 inline-block text-sm font-bold uppercase tracking-wider">
                 &larr; Back to Courses
             </Link>
-            <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold uppercase mb-4 ${getCategoryColor(course.category)} bg-opacity-10 border-opacity-20`}>
-                {course.category || "Education"}
+            <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold uppercase mb-4 ${getCategoryColor(course.category)} border`}>
+                {course.category || "Academy"}
             </div>
             <h1 className="text-4xl md:text-5xl font-black mb-6 leading-tight">{course.title}</h1>
-            <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">{course.description}</p>
+            <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">{course.description}</p>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 -mt-10 grid grid-cols-1 lg:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 mt-10 grid grid-cols-1 lg:grid-cols-4 gap-10">
         
         {/* LEFT COLUMN */}
         <div className="lg:col-span-3 space-y-8">
