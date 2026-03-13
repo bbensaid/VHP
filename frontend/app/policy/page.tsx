@@ -46,12 +46,12 @@ export default function Page() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {topics.map((item) => (
-          <Link key={item.label} href={item.href} className="flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-sky-400 hover:bg-sky-50/80">
+          <Link key={item.label} href={item.href} className="group flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-sky-400 hover:bg-sky-50/80">
             <div>
-              <h3 className="font-bold text-slate-900 text-lg mb-2">{item.label}</h3>
+              <h3 className="font-bold text-slate-900 text-lg mb-2 group-hover:text-sky-700 transition-colors">{item.label}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">{item.description}</p>
             </div>
-            <div className="mt-auto pt-4 space-y-2 border-t border-slate-100 mt-4">
+            <div className="mt-auto pt-4 space-y-2 border-t border-slate-100">
               <h4 className="text-[10px] font-bold uppercase text-slate-500 tracking-wider">Scope Includes</h4>
               {item.details.map(detail => (
                 <div key={detail} className="flex items-center gap-2">
@@ -67,7 +67,7 @@ export default function Page() {
         ))}
       </div>
 
-      <LatestHubReports pillar="Policy" colorClass="text-sky-700" />
+      <LatestHubReports pillar="Policy" colorClass="text-sky-700" cardHoverClass="hover:border-sky-400 hover:bg-sky-50/80" titleHoverClass="group-hover:text-sky-700" />
 
       <HubSubscribeCTA
         pillar="Policy"

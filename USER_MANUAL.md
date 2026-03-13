@@ -3,7 +3,7 @@
 **Platform:** Health Transformation Review (HTR)
 **Version:** 2026 (Five-Pillar Edition)
 **Audience:** Analysts, editorial staff, subscribers, policymakers, healthcare executives
-**Last Updated:** March 2026 — Python AI backend, conversation memory, course filters
+**Last Updated:** 2026-03-12 — De-ruralization, new pages (/values, /about/framework, /ahead-model), hero styling, sidebar restructure
 
 ---
 
@@ -36,15 +36,15 @@
 
 ## 1. What Is HTR?
 
-**Health Transformation Review (HTR)** is a cross-disciplinary intelligence platform dedicated to rural health system transformation in the United States. HTR exists to answer a single question: *Why is changing the American rural healthcare system so hard — and what actually works?*
+**Health Transformation Review (HTR)** is a cross-disciplinary intelligence platform dedicated to health system transformation in the United States. HTR exists to answer a single question: *Why is changing the American healthcare system so hard — and what actually works?*
 
-HTR is not a news site. It is not a think tank. It is a structured analytical platform that applies five distinct lenses — Policy, Economics, Technology, Clinical, and Equity — to every problem in rural health. Each piece of intelligence published on HTR has been tested across all five dimensions before it reaches you. A policy that is legally permissible but financially unsustainable is not a solution. A technology that is technically possible but clinically ineffective is not progress.
+HTR is not a news site. It is not a think tank. It is a structured analytical platform that applies five distinct lenses — Policy, Economics, Technology, Clinical, and Equity — to every problem in healthcare. Each piece of intelligence published on HTR has been tested across all five dimensions before it reaches you. A policy that is legally permissible but financially unsustainable is not a solution. A technology that is technically possible but clinically ineffective is not progress.
 
 ### Who uses HTR?
 
 - **Hospital executives and administrators** tracking federal program funding, regulatory changes, and performance benchmarks
 - **State health officials** monitoring performance across peer states
-- **Policy analysts and legislative staff** tracking rural health legislation and regulatory activity
+- **Policy analysts and legislative staff** tracking health legislation and regulatory activity
 - **Healthcare investors and consultants** tracking capital flows, VBC adoption, and market dynamics
 - **Clinical and public health professionals** tracking evidence-based care innovations
 - **Equity advocates and community health leaders** tracking disparity data and SDOH integration
@@ -52,7 +52,7 @@ HTR is not a news site. It is not a think tank. It is a structured analytical pl
 
 ### The core promise
 
-HTR tracks **50 states**, monitors **1,366 Critical Access Hospitals**, and analyzes **$50B+ in RHT program capital**. Every piece of analysis is grounded in primary sources: CMS filings, legislative text, peer-reviewed evidence, and real financial disclosures. HTR does not trade in speculation dressed as insight.
+HTR tracks **50 states**, monitors **6,000+ hospitals and health systems**, and analyzes federal healthcare transformation programs and capital flows across the industry. Every piece of analysis is grounded in primary sources: CMS filings, legislative text, peer-reviewed evidence, and real financial disclosures. HTR does not trade in speculation dressed as insight.
 
 ---
 
@@ -67,13 +67,13 @@ Each pillar asks a different essential question:
 ### Policy — *Is it permissible?*
 **Color:** Sky Blue
 
-Policy analysis tracks the governance frameworks that determine what rural health transformation is *allowed* to be. No health system initiative — no matter how promising clinically or economically — can succeed if it violates federal or state regulatory frameworks, conflicts with payer rules, or lacks legislative authority.
+Policy analysis tracks the governance frameworks that determine what health system transformation is *allowed* to be. No health system initiative — no matter how promising clinically or economically — can succeed if it violates federal or state regulatory frameworks, conflicts with payer rules, or lacks legislative authority.
 
 **What HTR tracks under Policy:**
 - **Regulation & Legislation** — Federal rulemaking (CMS, FDA, FTC), state legislation, scope-of-practice laws, telehealth regulations
 - **Public Health Mandates** — Emergency declarations, public health infrastructure requirements, reporting mandates
 - **Global & Comparative Policy** — What other countries are doing and what the U.S. can learn
-- **Policy Feasibility Studies** — Whether proposed policies can actually be implemented in rural contexts
+- **Policy Feasibility Studies** — Whether proposed policies can actually be implemented across different health system contexts
 
 ---
 
@@ -119,12 +119,12 @@ Clinical analysis bridges the gap between innovation and rural deployment realit
 ### Equity — *Is it just?*
 **Color:** Amber
 
-Equity analysis holds transformation accountable to the communities it is meant to serve. Disparities by race, geography, income, and social circumstance are not marginal concerns — they are the primary challenge of rural health. An innovation that widens disparities while improving average outcomes is not a rural health success.
+Equity analysis holds transformation accountable to the communities it is meant to serve. Disparities by race, geography, income, and social circumstance are not marginal concerns — they are a foundational challenge of health system transformation. An innovation that widens disparities while improving average outcomes is not a success.
 
 **What HTR tracks under Equity:**
 - **SDOH Integration** — Social determinants screening, food and housing insecurity, transportation access in care delivery
 - **Algorithmic Bias** — Bias embedded in clinical AI tools, risk stratification algorithms, prior authorization systems
-- **Access Disparity** — Geographic access deserts (obstetric, primary care, mental health), uninsured/underinsured populations, tribal health
+- **Access Disparity** — Geographic, insurance, linguistic, and cultural barriers to care; uninsured/underinsured populations
 - **Community Engagement** — Community health workers, community benefit requirements, patient advisory councils
 
 ---
@@ -137,7 +137,8 @@ When you first open HTR, you see three main areas:
 The top of every page has a **dark bar** containing:
 - The current date (desktop view)
 - A **live news ticker** scrolling the latest policy, FDA, and CMS headlines
-- A **COMPANY** menu (About, Mission, Advisory)
+- A **FAQ** link (standalone, between the ticker and the COMPANY menu)
+- A **COMPANY** dropdown with: About HTR, Mission & Vision, Core Values, Our Framework, Our Methodology, Contact Us
 - A **Login** link
 - A **Subscribe** button
 
@@ -145,7 +146,7 @@ Below the dark bar is the **main navigation bar** with:
 - The **HTR logo** (returns to homepage)
 - Five pillar dropdowns: **POLICY, ECONOMICS, TECHNOLOGY, CLINICAL, EQUITY**
 - A **search bar** (type to search, or press `Cmd+K` / `Ctrl+K` on Windows)
-- Right-side controls for sidebars
+- Sidebar toggle buttons (left and right edges)
 
 ### The Left Sidebar
 The left sidebar (visible on larger screens) gives you quick-access links to the most-used platform areas. Click the sidebar toggle button (left side of header) to show or hide it.
@@ -680,8 +681,20 @@ Manage your subscription and digest preferences at `/account` after logging in.
 Sidebars are **context-sensitive** — visible on browsing pages, automatically hidden on focused reading pages (articles, academy modules, chat).
 
 ### Left Sidebar — Quick Navigation
-Direct links to the most-used destinations:
-Dashboard, Vermont Case Study, Academy, AI Analyst, Advisory Hub, Trending Topics, Subscribe
+The left sidebar is organized into two sections:
+
+**Federal Programs:**
+
+- Rural Health Transformation Dashboard (`/dashboard`)
+- AHEAD Model (`/ahead-model`)
+
+**Platform:**
+
+- Academy
+- Advisory
+- Multimedia
+- Trending Topics
+- Ideas Lab
 
 ### Right Sidebar — AI Analyst Entry Point
 Three rotating suggested questions. Clicking any opens the AI Analyst with that question pre-filled. **"Open Full Chat"** navigates directly to `/chat`.
@@ -726,6 +739,15 @@ A: The federal RHT program specifically targets states that are struggling most 
 
 **Q: What is a Critical Access Hospital?**
 A: A Medicare designation for rural hospitals with ≤25 beds that are geographically isolated as their community's sole acute care provider. CAHs receive cost-based Medicare reimbursement rather than standard DRG rates to protect their financial viability. There are approximately 1,366 CAHs nationally — they are the backbone of rural acute care and the most financially vulnerable institutions in the health system.
+
+**Q: Where do I find HTR's Core Values?**
+A: Core Values have their own dedicated page at `/values`, also accessible via the COMPANY menu. They are also prominently featured on the Mission page (`/mission`).
+
+**Q: Where is the Five-Question Standard (Our Framework)?**
+A: The Five-Question Standard is on the dedicated page at `/about/framework`, accessible via the COMPANY menu under "Our Framework." It explains how HTR applies all five pillars to every analysis before publication.
+
+**Q: What is the AHEAD Model?**
+A: The AHEAD Model (Advancing All-Payer Health Equity Approaches and Development) is a CMS federal program running through 2034, active in 6 states (CT, HI, MD, MN, NH, VT). See `/ahead-model` for the full program profile.
 
 **Q: How do I report a data error or platform issue?**
 A: Use the contact form at `/advisory/contact`. Include the specific page URL and what you believe is incorrect.

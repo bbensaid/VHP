@@ -32,11 +32,11 @@ export default async function ReportsPage() {
 
   return (
     <div className="bg-white min-h-screen pb-20">
-      <div className="bg-slate-900 text-white py-20 border-b border-indigo-900">
+      <div className="bg-slate-50 text-slate-900 py-20 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-indigo-400 font-bold uppercase tracking-widest text-xs mb-2 block">HTR Intelligence</span>
+          <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs mb-2 block">HTR Intelligence</span>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Annual Impact Reports</h1>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Comprehensive reviews of the macro-trends shaping the healthcare landscape.
           </p>
         </div>

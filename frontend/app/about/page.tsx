@@ -12,7 +12,7 @@ const pillars = [
     question: "Is it permissible?",
     href: "/policy",
     description:
-      "Regulatory intelligence, legislative tracking, and global comparative analysis. We decode the governance frameworks that determine what rural health transformation is allowed to be.",
+      "Regulatory intelligence, legislative tracking, and global comparative analysis. We decode the governance frameworks that determine what health system transformation is allowed to be.",
     subcategories: ["Regulation & Legislation", "Public Health Mandates", "Global & Comparative Policy", "Policy Feasibility Studies"],
   },
   {
@@ -26,7 +26,7 @@ const pillars = [
     question: "Is it sustainable?",
     href: "/economics",
     description:
-      "Value-based care modeling, market dynamics, and workforce investment strategy. We follow capital flows to determine what rural health transformation can actually afford.",
+      "Value-based care modeling, market dynamics, and workforce investment strategy. We follow capital flows to determine what health system transformation can actually afford.",
     subcategories: ["Value-Based Care Models", "Market & Finance", "Labor & Workforce Strategy", "Healthcare Investment Trends"],
   },
   {
@@ -54,7 +54,7 @@ const pillars = [
     question: "Is it effective?",
     href: "/clinical",
     description:
-      "Evidence-based care models, population health strategy, and precision medicine access. We bridge the gap between clinical innovation and rural deployment reality.",
+      "Evidence-based care models, population health strategy, and precision medicine access. We bridge the gap between clinical innovation and real-world deployment at the point of care.",
     subcategories: ["Hospital-at-Home", "Precision Medicine", "Virtual Care Models", "Population Health"],
   },
   {
@@ -75,8 +75,8 @@ const pillars = [
 
 const stats = [
   { value: "50", label: "States Tracked", suffix: "" },
-  { value: "1,366", label: "Critical Access Hospitals Monitored", suffix: "" },
-  { value: "$50B+", label: "RHT Program Capital Analyzed", suffix: "" },
+  { value: "6,000+", label: "Hospitals & Health Systems Monitored", suffix: "" },
+  { value: "$50B+", label: "Federal Health Capital Analyzed", suffix: "" },
   { value: "20", label: "Research Domains Covered", suffix: "" },
 ];
 
@@ -147,7 +147,7 @@ export default function AboutPage() {
               Data and Decision.
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mb-10">
-              HTR is the only cross-disciplinary intelligence platform purpose-built for rural health system transformation. We translate the intersection of five critical domains into actionable intelligence for the executives, policymakers, and clinicians who are doing the work.
+              HTR is the only cross-disciplinary intelligence platform purpose-built for health system transformation. We translate the intersection of five critical domains into actionable intelligence for the executives, policymakers, and clinicians who are doing the work.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -195,14 +195,14 @@ export default function AboutPage() {
             </span>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 leading-tight mb-6">
               Why does a{" "}
-              <span className="text-indigo-600">$50 billion</span>{" "}
-              mandate still produce so little change?
+              <span className="text-indigo-600">$4.5 trillion</span>{" "}
+              industry still produce so little equitable change?
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              The Rural Health Transformation program represents the largest federal investment in rural health infrastructure in a generation. Yet the capital is not reaching patients at the rate it should — because the people who design policy, model economics, and deploy technology are operating in silos.
+              American healthcare commands the world's largest share of GDP — yet outcomes lag peer nations, costs remain unsustainable, and access is still determined more by geography and income than by clinical need. The capital and political will exist. The missing ingredient is coordinated, cross-disciplinary intelligence.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed">
-              HTR exists to close that gap. Our five-pillar framework — Policy, Economics, Technology, Clinical, and Equity — is designed so that no decision is made in isolation. Every insight is stress-tested across all dimensions before it reaches you.
+              HTR exists to close that gap. Our five-pillar framework — Policy, Economics, Technology, Clinical, and Equity — ensures that no decision is made in isolation. Every insight is stress-tested across all dimensions before it reaches you.
             </p>
           </div>
 
@@ -335,12 +335,12 @@ export default function AboutPage() {
             {
               icon: "💹",
               title: "Health Economy Investors",
-              desc: "PE firms, venture capital, health system M&A teams, and community development finance institutions allocating capital into rural health infrastructure.",
+              desc: "PE firms, venture capital, health system M&A teams, and community development finance institutions allocating capital across the healthcare continuum.",
             },
             {
               icon: "🩺",
               title: "Clinical Innovators",
-              desc: "Physicians, nurses, and allied health leaders implementing evidence-based models like Hospital-at-Home, telehealth, and precision medicine in resource-constrained rural settings.",
+              desc: "Physicians, nurses, and allied health leaders implementing evidence-based models like Hospital-at-Home, telehealth, and precision medicine in diverse and resource-varied settings.",
             },
             {
               icon: "🎓",

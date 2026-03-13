@@ -57,10 +57,11 @@ const equityItems = [
 ];
 
 const companyItems = [
-  { href: "/about", label: "About Us" },
+  { href: "/about", label: "About HTR" },
   { href: "/mission", label: "Mission & Vision" },
+  { href: "/values", label: "Core Values" },
+  { href: "/about/framework", label: "Our Framework" },
   { href: "/about/methodology", label: "Our Methodology" },
-  { href: "/faq", label: "FAQ" },
   { href: "/advisory/contact", label: "Contact Us" },
 ];
 
@@ -157,6 +158,10 @@ const Header = () => {
             />
           </div>
           <div className="hidden lg:flex items-center gap-6 whitespace-nowrap">
+            <Link href="/faq" className="hover:text-white transition-colors">
+              FAQ
+            </Link>
+            <div className="h-4 w-px bg-slate-700"></div>
             <NavDropdown
               label="COMPANY"
               items={companyItems}

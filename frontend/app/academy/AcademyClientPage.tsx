@@ -34,6 +34,8 @@ export default function AcademyClientPage(props: AcademyClientPageProps) {
       title="HTR Academy"
       subtitle="Executive Masterclasses, Faculty, Webinars, Glossary, and Case Studies"
       tabs={tabs}
+      badgeClass="bg-sky-50 text-sky-700 border border-sky-100"
+      backLinkHoverClass="hover:text-sky-600"
     />
   );
 }

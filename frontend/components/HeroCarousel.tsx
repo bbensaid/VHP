@@ -170,7 +170,7 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                     </h4>
                     <p className="text-slate-600 leading-relaxed mb-6">
                       Operating expenses have decoupled from patient volume,
-                      creating a structural deficit in rural markets.
+                      creating a structural deficit across health markets nationwide.
                     </p>
                     <Link
                       href="/htr-index"
@@ -211,32 +211,38 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
               </div>
             )}
 
-            {/* --- SLIDE 4: RHTP PROMO --- */}
+            {/* --- SLIDE 4: RHTP CASE STUDY --- */}
             {slide.type === "program" && (
               <div className="w-full h-full flex flex-col md:flex-row items-center gap-10">
                 <div className="flex-1 space-y-6">
-                  <div className="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-black uppercase tracking-widest">
-                    Federal Initiative
+                  <div className="flex items-center gap-2">
+                    <div className="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-black uppercase tracking-widest">
+                      Case Study
+                    </div>
+                    <div className="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold uppercase tracking-widest">
+                      Federal Initiative · CMS
+                    </div>
                   </div>
                   <h2 className="text-4xl font-black text-slate-900">
                     Rural Health Transformation Program
                   </h2>
                   <p className="text-lg text-slate-600">
-                    A CMS-driven framework designed to stabilize rural health
-                    systems through global budgets and regional collaboration.
+                    How a landmark CMS initiative is stabilizing rural safety-net
+                    hospitals through global budgets and regional collaboration —
+                    and what it reveals about scaling value-based care nationwide.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Link
                       href="/dashboard"
                       className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
                     >
-                      View National Map
+                      Explore the Case Study
                     </Link>
                     <button
                       onClick={() => setShowRHTPModal(true)}
                       className="inline-block bg-white text-blue-600 border border-blue-200 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors"
                     >
-                      Learn More
+                      Program Overview
                     </button>
                   </div>
                 </div>
@@ -331,8 +337,13 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
             </button>
             <div className="space-y-6">
               <div>
-                <div className="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-black uppercase tracking-widest mb-4">
-                  Federal Initiative
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-black uppercase tracking-widest">
+                    Case Study
+                  </div>
+                  <div className="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold uppercase tracking-widest">
+                    CMS Federal Initiative
+                  </div>
                 </div>
                 <h2 className="text-3xl font-black text-slate-900">
                   Rural Health Transformation Program (RHTP)

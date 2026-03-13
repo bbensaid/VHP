@@ -19,6 +19,8 @@ interface HubPageTemplateProps {
   tabs: TabConfig[];
   backLink?: string;
   backLabel?: string;
+  badgeClass?: string;
+  backLinkHoverClass?: string;
 }
 
 export default function HubPageTemplate({
@@ -28,6 +30,8 @@ export default function HubPageTemplate({
   tabs,
   backLink = "/",
   backLabel = "Back to Home",
+  badgeClass = "bg-indigo-50 text-indigo-700 border border-indigo-100",
+  backLinkHoverClass = "hover:text-indigo-600",
 }: HubPageTemplateProps) {
   // THE FIX: Correctly grabbing the first index  using valid optional chaining
   const router = useRouter();
@@ -69,14 +73,14 @@ export default function HubPageTemplate({
         <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50 rounded-bl-full -mr-20 -mt-20 opacity-50 pointer-events-none"></div>
         
         <div className="relative z-10">
-          <Link href={backLink} className="inline-flex items-center text-sm font-bold text-slate-500 hover:text-indigo-600 transition-colors mb-6">
+          <Link href={backLink} className={`inline-flex items-center text-sm font-bold text-slate-500 ${backLinkHoverClass} transition-colors mb-6`}>
             <ArrowLeftIcon className="w-4 h-4 mr-1.5" /> {backLabel}
           </Link>
           
           <div className="flex flex-col md:flex-row justify-between items-start">
             <div className="max-w-3xl">
               <div className="flex items-center gap-2 mb-3">
-                <span className="bg-indigo-50 text-indigo-700 text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded border border-indigo-100">
+                <span className={`${badgeClass} text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded`}>
                   {badgeLabel}
                 </span>
               </div>

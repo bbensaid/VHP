@@ -69,9 +69,9 @@ export default function HomeContent({
           </Link>
         </div>
         <div className="space-y-4">
-          {feed?.map((item) => (
+          {feed?.map((item, i) => (
             <div
-              key={item._id}
+              key={item._id ?? i}
               className="flex flex-col md:flex-row md:items-center gap-3 md:gap-6 py-4 border-b border-slate-100 hover:bg-slate-50 transition-colors p-2 rounded -mx-2 group"
             >
               <div className="flex items-center gap-3 w-40 shrink-0">

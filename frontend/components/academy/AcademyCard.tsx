@@ -3,7 +3,7 @@ import Link from "next/link";
 
 interface AcademyCardProps {
   type: "CERTIFICATION" | "COURSE" | "WEBINAR";
-  pillar: "Policy" | "Economics" | "Technology" | "General";
+  pillar: "Policy" | "Economics" | "Technology" | "Clinical" | "Equity" | "General";
   title: string;
   description: string;
   meta: string; // e.g., "6 Weeks • Online" or "Oct 25 • 2:00 PM EST"
@@ -14,10 +14,12 @@ interface AcademyCardProps {
 }
 
 const PILLAR_STYLES = {
-  Policy: { badge: "bg-blue-100 text-blue-800", border: "border-l-blue-500" },
-  Economics: { badge: "bg-emerald-100 text-emerald-800", border: "border-l-emerald-500" },
-  Technology: { badge: "bg-indigo-100 text-indigo-800", border: "border-l-indigo-500" },
-  General: { badge: "bg-slate-100 text-slate-800", border: "border-l-slate-500" },
+  Policy:     { badge: "bg-sky-100 text-sky-800",     border: "border-l-sky-500",     hoverTitle: "group-hover:text-sky-700",     footerBg: "group-hover:bg-sky-50",     footerText: "group-hover:text-sky-700",     arrow: "text-sky-600" },
+  Economics:  { badge: "bg-emerald-100 text-emerald-800", border: "border-l-emerald-500", hoverTitle: "group-hover:text-emerald-700", footerBg: "group-hover:bg-emerald-50", footerText: "group-hover:text-emerald-700", arrow: "text-emerald-600" },
+  Technology: { badge: "bg-indigo-100 text-indigo-800", border: "border-l-indigo-500",  hoverTitle: "group-hover:text-indigo-600", footerBg: "group-hover:bg-indigo-50",  footerText: "group-hover:text-indigo-700", arrow: "text-indigo-600" },
+  Clinical:   { badge: "bg-rose-100 text-rose-800",    border: "border-l-rose-500",    hoverTitle: "group-hover:text-rose-600",    footerBg: "group-hover:bg-rose-50",    footerText: "group-hover:text-rose-700",    arrow: "text-rose-600" },
+  Equity:     { badge: "bg-orange-100 text-orange-800", border: "border-l-orange-500",  hoverTitle: "group-hover:text-orange-600",  footerBg: "group-hover:bg-orange-50",  footerText: "group-hover:text-orange-700",  arrow: "text-orange-600" },
+  General:    { badge: "bg-slate-100 text-slate-800",  border: "border-l-slate-500",   hoverTitle: "group-hover:text-slate-700",   footerBg: "group-hover:bg-slate-50",   footerText: "group-hover:text-slate-700",   arrow: "text-slate-500" },
 };
 
 export default function AcademyCard({
@@ -46,7 +48,7 @@ export default function AcademyCard({
           {price && <span className="text-sm font-bold text-gray-900">{price}</span>}
         </div>
         
-        <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-indigo-600 transition-colors">
+        <h3 className={`text-xl font-bold text-gray-900 mb-3 ${styles.hoverTitle} transition-colors`}>
           {title}
         </h3>
         
@@ -70,11 +72,11 @@ export default function AcademyCard({
       </div>
 
       {/* CTA Footer */}
-      <div className="bg-gray-50 px-6 py-3 border-t border-gray-100 flex justify-between items-center group-hover:bg-indigo-50 transition-colors">
-        <span className="text-xs font-bold text-gray-500 uppercase tracking-widest group-hover:text-indigo-700">
+      <div className={`bg-gray-50 px-6 py-3 border-t border-gray-100 flex justify-between items-center ${styles.footerBg} transition-colors`}>
+        <span className={`text-xs font-bold text-gray-500 uppercase tracking-widest ${styles.footerText}`}>
           View Curriculum
         </span>
-        <span className="text-indigo-600 text-lg group-hover:translate-x-1 transition-transform">
+        <span className={`${styles.arrow} text-lg group-hover:translate-x-1 transition-transform`}>
           &rarr;
         </span>
       </div>
