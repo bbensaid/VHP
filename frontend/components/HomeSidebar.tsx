@@ -11,6 +11,7 @@ import {
   FilmIcon,
   ArrowTrendingUpIcon,
   LightBulbIcon,
+  MapPinIcon,
 } from "@heroicons/react/24/outline";
 
 
@@ -56,45 +57,8 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
       <div>
         <div className="space-y-2">
 
-          {/* ── Federal Programs ─────────────────────────────────── */}
-          <p className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400 px-1 pt-1 pb-0.5">
-            Federal Programs
-          </p>
-          <Link
-            href="/dashboard"
-            onClick={onNavigate}
-            title="Explore the Rural Health Transformation program — 50-state coverage, global budgets, and CMS data"
-            className="flex items-center gap-3 p-3 rounded-lg bg-blue-50 hover:bg-blue-100 border border-blue-200 transition-colors group shadow-sm hover:shadow-md"
-          >
-            <div className="w-8 h-8 rounded-full bg-white border border-blue-200 flex items-center justify-center overflow-hidden shrink-0">
-              <Image
-                src="/rhtp-icon.png"
-                alt="Rural Health Transformation"
-                width={32}
-                height={32}
-                className="object-contain w-full h-full"
-              />
-            </div>
-            <span className="text-sm font-bold text-blue-800 group-hover:text-blue-900 leading-tight">
-              Rural Health Transformation
-            </span>
-          </Link>
-          <Link
-            href="/ahead-model"
-            onClick={onNavigate}
-            title="AHEAD Model — CMS all-payer total cost of care model operating in 6 states"
-            className="flex items-center gap-3 p-3 rounded-lg bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-colors group shadow-sm hover:shadow-md"
-          >
-            <div className="w-8 h-8 rounded-full bg-white border border-emerald-200 flex items-center justify-center shrink-0 text-emerald-600 font-black text-[11px]">
-              AH
-            </div>
-            <span className="text-sm font-bold text-emerald-800 group-hover:text-emerald-900 leading-tight">
-              AHEAD Model
-            </span>
-          </Link>
-
           {/* ── Platform ─────────────────────────────────────────────── */}
-          <p className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400 px-1 pt-3 pb-0.5">
+          <p className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400 px-1 pt-1 pb-0.5">
             Platform
           </p>
           <div className="space-y-2">
@@ -163,6 +127,75 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
               </span>
             </Link>
           </div>
+
+          {/* ── Federal Programs ─────────────────────────────────── */}
+          <p className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400 px-1 pt-3 pb-0.5">
+            Federal Programs
+          </p>
+          <Link
+            href="/dashboard"
+            onClick={onNavigate}
+            title="Explore the Rural Health Transformation program — 50-state coverage, global budgets, and CMS data"
+            className="flex items-center gap-3 p-3 rounded-lg bg-blue-50 hover:bg-blue-100 border border-blue-200 transition-colors group shadow-sm hover:shadow-md"
+          >
+            <div className="w-8 h-8 rounded-full bg-white border border-blue-200 flex items-center justify-center overflow-hidden shrink-0">
+              <Image
+                src="/rhtp-icon.png"
+                alt="Rural Health Transformation"
+                width={32}
+                height={32}
+                className="object-contain w-full h-full"
+              />
+            </div>
+            <span className="text-sm font-bold text-blue-800 group-hover:text-blue-900 leading-tight">
+              Rural Health Transformation
+            </span>
+          </Link>
+          <Link
+            href="/ahead-model"
+            onClick={onNavigate}
+            title="AHEAD Model — CMS all-payer total cost of care model operating in 6 states"
+            className="flex items-center gap-3 p-3 rounded-lg bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-colors group shadow-sm hover:shadow-md"
+          >
+            <div className="w-8 h-8 rounded-full bg-white border border-emerald-200 flex items-center justify-center shrink-0 text-emerald-600 font-black text-[11px]">
+              AH
+            </div>
+            <span className="text-sm font-bold text-emerald-800 group-hover:text-emerald-900 leading-tight">
+              AHEAD Model
+            </span>
+          </Link>
+
+          {/* ── State Initiatives ─────────────────────────────────── */}
+          <p className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400 px-1 pt-3 pb-0.5">
+            State Initiatives
+          </p>
+          <Link
+            href="/vermont-act-167"
+            onClick={onNavigate}
+            title="Vermont Act 167 — Hospital transformation, Oliver Wyman Report, and the future of Vermont healthcare"
+            className="flex items-center gap-3 p-3 rounded-lg bg-violet-50 hover:bg-violet-100 border border-violet-200 transition-colors group shadow-sm hover:shadow-md"
+          >
+            <div className="w-8 h-8 rounded-full bg-white border border-violet-200 flex items-center justify-center shrink-0 text-violet-600 group-hover:text-violet-700 transition-colors">
+              <MapPinIcon className="w-4 h-4" />
+            </div>
+            <span className="text-sm font-bold text-violet-800 group-hover:text-violet-900 leading-tight">
+              Vermont Act 167
+            </span>
+          </Link>
+          <Link
+            href="/california-calaim"
+            onClick={onNavigate}
+            title="CalAIM — California's $6.7B Medi-Cal transformation: whole-person care, housing, and equity"
+            className="flex items-center gap-3 p-3 rounded-lg bg-teal-50 hover:bg-teal-100 border border-teal-200 transition-colors group shadow-sm hover:shadow-md"
+          >
+            <div className="w-8 h-8 rounded-full bg-white border border-teal-200 flex items-center justify-center shrink-0 text-teal-600 font-black text-[11px]">
+              CA
+            </div>
+            <span className="text-sm font-bold text-teal-800 group-hover:text-teal-900 leading-tight">
+              California CalAIM
+            </span>
+          </Link>
+
         </div>
       </div>
 
