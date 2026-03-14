@@ -12,12 +12,29 @@ import {
   ArrowTrendingUpIcon,
   LightBulbIcon,
   MapPinIcon,
+  GlobeAmericasIcon,
 } from "@heroicons/react/24/outline";
 
 
 interface HomeSidebarProps {
   onNavigate?: () => void;
 }
+
+function SectionLabel({ children, bg = "bg-slate-100", border = "border-slate-300" }: { children: React.ReactNode; bg?: string; border?: string }) {
+  return (
+    <div className="px-1 pt-3 pb-1">
+      <span className={`inline-block text-[10px] font-black uppercase tracking-[0.15em] text-slate-800 ${bg} ${border} border rounded-md px-2 py-1`}>
+        {children}
+      </span>
+    </div>
+  );
+}
+
+// Section accent colors
+// Services   → indigo  (border-l-indigo-400, icon text-indigo-500, hover bg-indigo-50)
+// Federal    → sky     (border-l-sky-400,    icon text-sky-500,    hover bg-sky-50)
+// States     → violet  (border-l-violet-400, icon text-violet-500, hover bg-violet-50)
+// Tools      → amber   (border-l-amber-400,  icon text-amber-500,  hover bg-amber-50)
 
 export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -53,21 +70,18 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
         ref={topSentinelRef}
         className="absolute top-0 left-0 w-full h-1 pointer-events-none"
       />
-      {/* QUICK ACTIONS */}
       <div>
         <div className="space-y-2">
 
-          {/* ── Platform ─────────────────────────────────────────────── */}
-          <p className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400 px-1 pt-1 pb-0.5">
-            Platform
-          </p>
+          {/* ── Services (indigo) ──────────────────────────────────────── */}
+          <SectionLabel bg="bg-indigo-100" border="border-indigo-300">Services</SectionLabel>
           <div className="space-y-2">
             <Link
               href="/academy"
               onClick={onNavigate}
-              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-indigo-50 border border-slate-200 border-l-2 border-l-indigo-400 transition-colors group shadow-sm hover:shadow-md"
             >
-              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center overflow-hidden shrink-0 text-indigo-500 group-hover:text-indigo-700 transition-colors">
                 <AcademicCapIcon className="w-5 h-5" />
               </div>
               <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
@@ -78,22 +92,120 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
             <Link
               href="/advisory-hub"
               onClick={onNavigate}
-              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-indigo-50 border border-slate-200 border-l-2 border-l-indigo-400 transition-colors group shadow-sm hover:shadow-md"
             >
-              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center overflow-hidden shrink-0 text-indigo-500 group-hover:text-indigo-700 transition-colors">
                 <BriefcaseIcon className="w-5 h-5" />
               </div>
               <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
                 Advisory
               </span>
             </Link>
+          </div>
+
+          {/* ── Federal Programs (sky) ─────────────────────────────────── */}
+          <SectionLabel bg="bg-sky-100" border="border-sky-300">Federal Programs</SectionLabel>
+          <div className="space-y-2">
+            <Link
+              href="/dashboard"
+              onClick={onNavigate}
+              title="Explore the Rural Health Transformation program — 50-state coverage, global budgets, and CMS data"
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-sky-50 border border-slate-200 border-l-2 border-l-sky-400 transition-colors group shadow-sm hover:shadow-md"
+            >
+              <div className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center overflow-hidden shrink-0">
+                <Image
+                  src="/rhtp-icon.png"
+                  alt="Rural Health Transformation"
+                  width={32}
+                  height={32}
+                  className="object-contain w-full h-full"
+                />
+              </div>
+              <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 leading-tight">
+                Rural Health Transformation
+              </span>
+            </Link>
+            <Link
+              href="/ahead-model"
+              onClick={onNavigate}
+              title="AHEAD Model — CMS all-payer total cost of care model operating in 6 states"
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-sky-50 border border-slate-200 border-l-2 border-l-sky-400 transition-colors group shadow-sm hover:shadow-md"
+            >
+              <div className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0 text-sky-600 group-hover:text-sky-700 transition-colors font-black text-[11px]">
+                AH
+              </div>
+              <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 leading-tight">
+                AHEAD Model
+              </span>
+            </Link>
+          </div>
+
+          {/* ── State Initiatives (violet) ────────────────────────────── */}
+          <SectionLabel bg="bg-violet-100" border="border-violet-300">State Initiatives</SectionLabel>
+          <div className="space-y-2">
+            <Link
+              href="/vermont-act-167"
+              onClick={onNavigate}
+              title="Vermont Act 167 — Hospital transformation, Oliver Wyman Report, and the future of Vermont healthcare"
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-violet-50 border border-slate-200 border-l-2 border-l-violet-400 transition-colors group shadow-sm hover:shadow-md"
+            >
+              <div className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0 text-violet-500 group-hover:text-violet-700 transition-colors">
+                <MapPinIcon className="w-4 h-4" />
+              </div>
+              <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 leading-tight">
+                Vermont Act 167
+              </span>
+            </Link>
+            <Link
+              href="/california-calaim"
+              onClick={onNavigate}
+              title="CalAIM — California's $6.7B Medi-Cal transformation: whole-person care, housing, and equity"
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-violet-50 border border-slate-200 border-l-2 border-l-violet-400 transition-colors group shadow-sm hover:shadow-md"
+            >
+              <div className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0 text-violet-600 group-hover:text-violet-700 transition-colors font-black text-[11px]">
+                CA
+              </div>
+              <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 leading-tight">
+                California CalAIM
+              </span>
+            </Link>
+            <Link
+              href="/states"
+              onClick={onNavigate}
+              title="Explore health reform initiatives across all 50 states — Medicaid waivers, public options, global budgets, and more"
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-violet-50 border border-slate-200 border-l-2 border-l-violet-400 transition-colors group shadow-sm hover:shadow-md"
+            >
+              <div className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0 text-violet-500 group-hover:text-violet-700 transition-colors">
+                <GlobeAmericasIcon className="w-4 h-4" />
+              </div>
+              <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 leading-tight">
+                Other States
+              </span>
+            </Link>
+          </div>
+
+          {/* ── Tools & Resources (amber) ─────────────────────────────── */}
+          <SectionLabel bg="bg-amber-100" border="border-amber-300">Tools &amp; Resources</SectionLabel>
+          <div className="space-y-2">
+            <Link
+              href="/hti-dashboard"
+              onClick={onNavigate}
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-amber-50 border border-slate-200 border-l-2 border-l-amber-400 transition-colors group shadow-sm hover:shadow-md"
+            >
+              <div className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center overflow-hidden shrink-0 text-amber-500 group-hover:text-amber-700 transition-colors">
+                <LightBulbIcon className="w-5 h-5" />
+              </div>
+              <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
+                Research Lab
+              </span>
+            </Link>
 
             <Link
               href="/multimedia"
               onClick={onNavigate}
-              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-amber-50 border border-slate-200 border-l-2 border-l-amber-400 transition-colors group shadow-sm hover:shadow-md"
             >
-              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center overflow-hidden shrink-0 text-amber-500 group-hover:text-amber-700 transition-colors">
                 <FilmIcon className="w-5 h-5" />
               </div>
               <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
@@ -104,97 +216,16 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
             <Link
               href="/trending-topics"
               onClick={onNavigate}
-              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
+              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-amber-50 border border-slate-200 border-l-2 border-l-amber-400 transition-colors group shadow-sm hover:shadow-md"
             >
-              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center overflow-hidden shrink-0 text-amber-500 group-hover:text-amber-700 transition-colors">
                 <ArrowTrendingUpIcon className="w-5 h-5" />
               </div>
               <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
                 Trending Topics
               </span>
             </Link>
-
-            <Link
-              href="/hti-dashboard"
-              onClick={onNavigate}
-              className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-200 transition-colors group shadow-sm hover:shadow-md"
-            >
-              <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center overflow-hidden shrink-0 text-slate-500 group-hover:text-indigo-600 transition-colors">
-                <LightBulbIcon className="w-5 h-5" />
-              </div>
-              <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
-                Ideas Lab
-              </span>
-            </Link>
           </div>
-
-          {/* ── Federal Programs ─────────────────────────────────── */}
-          <p className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400 px-1 pt-3 pb-0.5">
-            Federal Programs
-          </p>
-          <Link
-            href="/dashboard"
-            onClick={onNavigate}
-            title="Explore the Rural Health Transformation program — 50-state coverage, global budgets, and CMS data"
-            className="flex items-center gap-3 p-3 rounded-lg bg-blue-50 hover:bg-blue-100 border border-blue-200 transition-colors group shadow-sm hover:shadow-md"
-          >
-            <div className="w-8 h-8 rounded-full bg-white border border-blue-200 flex items-center justify-center overflow-hidden shrink-0">
-              <Image
-                src="/rhtp-icon.png"
-                alt="Rural Health Transformation"
-                width={32}
-                height={32}
-                className="object-contain w-full h-full"
-              />
-            </div>
-            <span className="text-sm font-bold text-blue-800 group-hover:text-blue-900 leading-tight">
-              Rural Health Transformation
-            </span>
-          </Link>
-          <Link
-            href="/ahead-model"
-            onClick={onNavigate}
-            title="AHEAD Model — CMS all-payer total cost of care model operating in 6 states"
-            className="flex items-center gap-3 p-3 rounded-lg bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-colors group shadow-sm hover:shadow-md"
-          >
-            <div className="w-8 h-8 rounded-full bg-white border border-emerald-200 flex items-center justify-center shrink-0 text-emerald-600 font-black text-[11px]">
-              AH
-            </div>
-            <span className="text-sm font-bold text-emerald-800 group-hover:text-emerald-900 leading-tight">
-              AHEAD Model
-            </span>
-          </Link>
-
-          {/* ── State Initiatives ─────────────────────────────────── */}
-          <p className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400 px-1 pt-3 pb-0.5">
-            State Initiatives
-          </p>
-          <Link
-            href="/vermont-act-167"
-            onClick={onNavigate}
-            title="Vermont Act 167 — Hospital transformation, Oliver Wyman Report, and the future of Vermont healthcare"
-            className="flex items-center gap-3 p-3 rounded-lg bg-violet-50 hover:bg-violet-100 border border-violet-200 transition-colors group shadow-sm hover:shadow-md"
-          >
-            <div className="w-8 h-8 rounded-full bg-white border border-violet-200 flex items-center justify-center shrink-0 text-violet-600 group-hover:text-violet-700 transition-colors">
-              <MapPinIcon className="w-4 h-4" />
-            </div>
-            <span className="text-sm font-bold text-violet-800 group-hover:text-violet-900 leading-tight">
-              Vermont Act 167
-            </span>
-          </Link>
-          <Link
-            href="/california-calaim"
-            onClick={onNavigate}
-            title="CalAIM — California's $6.7B Medi-Cal transformation: whole-person care, housing, and equity"
-            className="flex items-center gap-3 p-3 rounded-lg bg-teal-50 hover:bg-teal-100 border border-teal-200 transition-colors group shadow-sm hover:shadow-md"
-          >
-            <div className="w-8 h-8 rounded-full bg-white border border-teal-200 flex items-center justify-center shrink-0 text-teal-600 font-black text-[11px]">
-              CA
-            </div>
-            <span className="text-sm font-bold text-teal-800 group-hover:text-teal-900 leading-tight">
-              California CalAIM
-            </span>
-          </Link>
 
         </div>
       </div>
