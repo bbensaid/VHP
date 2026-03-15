@@ -54,6 +54,8 @@ interface Props {
   category?: string;
   /** Pass true to show the Related Media sidebar alongside the article feed. */
   showRelatedMedia?: boolean;
+  /** Pass true to suppress the built-in title/description header (use when the parent page provides its own hero). */
+  hideHeader?: boolean;
 }
 
 // ── Component ────────────────────────────────────────────────────────────────
@@ -65,6 +67,7 @@ const CategoryPage: React.FC<Props> = async ({
   colorClass,
   category,
   showRelatedMedia = false,
+  hideHeader = false,
 }) => {
   const [articles, relatedVideos] = await Promise.all([
     getArticles(pillar, category),
@@ -73,18 +76,20 @@ const CategoryPage: React.FC<Props> = async ({
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 font-sans text-slate-800">
-      {/* HEADER */}
-      <div className="mb-16 border-b border-ui-border pb-8 max-w-4xl">
-        <span
-          className={`text-sm font-bold ${colorClass} uppercase tracking-wider mb-3 block`}
-        >
-          {pillar} Intelligence
-        </span>
-        <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
-          {title}
-        </h1>
-        <p className="text-xl text-slate-600 leading-relaxed">{description}</p>
-      </div>
+      {/* HEADER — hidden when parent provides its own hero */}
+      {!hideHeader && (
+        <div className="mb-16 border-b border-ui-border pb-8 max-w-4xl">
+          <span
+            className={`text-sm font-bold ${colorClass} uppercase tracking-wider mb-3 block`}
+          >
+            {pillar} Intelligence
+          </span>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
+            {title}
+          </h1>
+          <p className="text-xl text-slate-600 leading-relaxed">{description}</p>
+        </div>
+      )}
 
       {/* ARTICLE FEED — passes related videos when showRelatedMedia=true */}
       <ArticleFeed

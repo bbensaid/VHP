@@ -22,8 +22,8 @@ interface HomeSidebarProps {
 
 function SectionLabel({ children, bg = "bg-slate-100", border = "border-slate-300" }: { children: React.ReactNode; bg?: string; border?: string }) {
   return (
-    <div className="px-1 pt-3 pb-1">
-      <span className={`inline-block text-[10px] font-black uppercase tracking-[0.15em] text-slate-800 ${bg} ${border} border rounded-md px-2 py-1`}>
+    <div className={`mt-3 mb-1 px-3 py-2 rounded-lg border ${bg} ${border}`}>
+      <span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-700">
         {children}
       </span>
     </div>
@@ -104,7 +104,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
           <SectionLabel bg="bg-amber-100" border="border-amber-300">Tools &amp; Resources</SectionLabel>
           <div className="space-y-2">
             <Link
-              href="/hti-dashboard"
+              href="/research-lab"
               onClick={onNavigate}
               className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-amber-50 border border-slate-200 border-l-2 border-l-amber-400 transition-colors group shadow-sm hover:shadow-md"
             >

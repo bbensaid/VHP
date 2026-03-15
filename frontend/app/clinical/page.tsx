@@ -4,25 +4,31 @@ import LatestHubReports from "@/components/LatestHubReports";
 
 export default function Page() {
   const topics = [
-    { 
+    {
       label: 'Hospital-at-Home', href: '/clinical/hah',
       description: 'Acute care delivery in the home setting.',
       details: ['CMS Waiver', 'Remote Monitoring', 'Logistics'],
       scope: 'Examining the clinical and operational expansion of Hospital-at-Home programs, including regulatory waivers and patient safety outcomes.'
     },
-    { 
+    {
       label: 'Precision Medicine', href: '/clinical/precision',
       description: 'Genomics and personalized treatment plans.',
       details: ['Genomics', 'Targeted Therapies', 'Biomarkers'],
       scope: 'Updates on the integration of genomic data into clinical practice, advancements in targeted therapies, and the economics of precision medicine.'
     },
-    { 
+    {
+      label: 'Genomics & Predictive Medicine', href: '/clinical/genomics',
+      description: 'PGx, germline sequencing, polygenic risk scores, and AI clinical prediction.',
+      details: ['Pharmacogenomics', 'Polygenic Risk Scores', 'AI Early Warning'],
+      scope: 'Deep-dive into pharmacogenomics (CYP2D6, CYP2C19), germline variant classification (ACMG), tumor genomics, and AI-driven deterioration prediction tools.'
+    },
+    {
       label: 'Virtual Care Models', href: '/clinical/virtual',
       description: 'Hybrid care delivery and virtual nursing.',
       details: ['Virtual Nursing', 'Asynchronous Care', 'Tele-ICU'],
       scope: 'Analysis of evolving virtual care models beyond basic telehealth, including virtual nursing units, tele-ICU, and asynchronous specialty consults.'
     },
-    { 
+    {
       label: 'Population Health', href: '/clinical/population',
       description: 'Managing chronic disease at scale.',
       details: ['Chronic Care Mgmt', 'Preventive Screenings', 'Risk Stratification'],
@@ -44,7 +50,7 @@ export default function Page() {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         {topics.map((item) => (
           <Link key={item.label} href={item.href} className="group flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-rose-400 hover:bg-rose-50/80">
             <div>

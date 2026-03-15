@@ -1,13 +1,94 @@
 "use client";
 
 // components/templates/AcademyModuleLayout.tsx
-// Client wrapper that manages sidebar visibility for the module reader.
-// Sidebar is hidden by default — user can reveal it with the toggle button.
+// Client wrapper that manages sidebar visibility, localStorage progress tracking,
+// and inline knowledge-check quizzes for the module reader.
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import type { PortableTextBlock } from "@portabletext/react";
 import AcademyContent from "@/components/AcademyContent";
+import KnowledgeCheck, { type Question } from "@/components/academy/KnowledgeCheck";
+import { useModuleProgress } from "@/hooks/useModuleProgress";
+import { CheckCircle, Clock } from "lucide-react";
+
+// ─── Static demo question bank (keyed by module slug) ────────────────────────
+// In production these would come from Sanity `academyModule.quiz[]` fields.
+const DEMO_QUESTIONS: Record<string, Question[]> = {
+  default: [
+    {
+      id: "q1",
+      question: "Which payment model shifts financial risk from payer to provider for an attributed population?",
+      options: [
+        "Fee-for-service (FFS)",
+        "Global capitation",
+        "Per diem inpatient rate",
+        "Diagnosis-Related Group (DRG) payment",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Global capitation (or global budgeting) assigns a fixed per-member-per-month payment to the provider, who bears full financial risk for the population's total care costs — in contrast to FFS or DRG models where risk stays with the payer.",
+    },
+    {
+      id: "q2",
+      question: "The LACE+ readmission risk tool uses which four components to generate a score?",
+      options: [
+        "Labs, Age, Comorbidities, Ethnicity",
+        "Length of stay, Acuity, Comorbidities, ED visits",
+        "Length of stay, Age, Compliance, ED visits",
+        "Labs, Acuity, Compliance, Ethnicity",
+      ],
+      correctIndex: 1,
+      explanation:
+        "LACE+ stands for: Length of stay (up to 7 pts), Acuity of admission (3 pts if unplanned via ED), Comorbidities (Charlson score, up to 5 pts), and ED visits in the prior 6 months (up to 4 pts). A score ≥10 signals high 30-day readmission risk.",
+    },
+    {
+      id: "q3",
+      question: "Which HEDIS measure tracks the percentage of patients with hypertension whose blood pressure is controlled (<140/90)?",
+      options: [
+        "Glycemic Control in Diabetes (GCD)",
+        "Controlling High Blood Pressure (CBP)",
+        "Appropriate Testing for Pharyngitis (CWP)",
+        "Adult BMI Assessment (ABA)",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Controlling High Blood Pressure (CBP) is the HEDIS measure tracking BP control (<140/90 mmHg) in adults 18–85 with diagnosed hypertension. It is one of the most heavily weighted measures in commercial and Medicaid STAR ratings.",
+    },
+    {
+      id: "q4",
+      question: "In a population health pyramid, which tier represents the smallest share of patients but the greatest share of healthcare costs?",
+      options: [
+        "Tier 1 — Healthy / Low Risk",
+        "Tier 2 — Moderate Risk",
+        "Tier 3 — High Risk",
+        "Tier 4 — Complex / High-Need",
+      ],
+      correctIndex: 3,
+      explanation:
+        "Tier 4 (Complex / High-Need) accounts for only 1–5% of a population but typically generates 25–40% of total healthcare costs due to frequent hospitalization, polypharmacy, and multi-system chronic disease requiring intensive care management.",
+    },
+    {
+      id: "q5",
+      question: "What does 'medical loss ratio' (MLR) represent for a health insurer?",
+      options: [
+        "The percentage of premium revenue spent on clinical care and quality improvement",
+        "The ratio of denied claims to total claims processed",
+        "The insurer's net profit margin after administrative costs",
+        "The percentage of enrolled members who used the ED in a given year",
+      ],
+      correctIndex: 0,
+      explanation:
+        "MLR = (Claims paid + Quality improvement spending) ÷ Premium revenue. The ACA requires individual/small group plans to maintain ≥80% MLR and large group plans ≥85%. Insurers below the threshold must issue rebates to members.",
+    },
+  ],
+};
+
+function getQuestions(slug: string): Question[] {
+  return DEMO_QUESTIONS[slug] ?? DEMO_QUESTIONS.default;
+}
+
+// ─── Types ────────────────────────────────────────────────────────────────────
 
 const levelColors: Record<string, string> = {
   Foundational: "bg-emerald-100 text-emerald-800 border-emerald-200",
@@ -36,12 +117,22 @@ interface Props {
   slug: string;
 }
 
+// ─── Component ────────────────────────────────────────────────────────────────
+
 export default function AcademyModuleLayout({ module, courseModules, slug }: Props) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [showQuiz, setShowQuiz] = useState(false);
+
+  const { progress, markCompleted, markQuizPassed, isSlugCompleted, getCompletedCount } =
+    useModuleProgress(slug);
 
   const total       = courseModules.length;
-  const progressPct = Math.round((module.moduleNumber / total) * 100);
+  const completedCount = getCompletedCount(courseModules.map(m => m.slug));
+  // Progress is based on completed modules, not just current position
+  const progressPct = total > 0 ? Math.round((completedCount / total) * 100) : 0;
   const levelStyle  = levelColors[module.level ?? ""] ?? "bg-slate-100 text-slate-700 border-slate-200";
+
+  const questions = getQuestions(slug);
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
@@ -58,42 +149,46 @@ export default function AcademyModuleLayout({ module, courseModules, slug }: Pro
             ← Courses
           </Link>
 
-          {/* Sidebar toggle — only visible at lg+ */}
+          {/* Sidebar toggle */}
           <button
-            onClick={() => setSidebarOpen((v) => !v)}
+            onClick={() => setSidebarOpen(v => !v)}
             className={`hidden lg:flex items-center gap-1.5 shrink-0 text-xs font-bold px-3 py-1.5 rounded-lg border transition-colors ${
               sidebarOpen
                 ? "bg-indigo-50 border-indigo-200 text-indigo-700 hover:bg-indigo-100"
                 : "bg-slate-50 border-slate-200 text-slate-500 hover:bg-slate-100 hover:text-slate-700"
             }`}
-            aria-label={sidebarOpen ? "Hide module list" : "Show module list"}
           >
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round"
-                d={sidebarOpen
-                  ? "M6 18L18 6M6 6l12 12"
-                  : "M4 6h16M4 12h16M4 18h16"}
+                d={sidebarOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
               />
             </svg>
             {sidebarOpen ? "Hide" : "Modules"}
           </button>
 
-          {/* Progress */}
+          {/* Progress bar */}
           <div className="flex-1 min-w-0">
             <p className="text-xs font-bold text-slate-500 truncate mb-1">{module.courseTitle}</p>
             <div className="flex items-center gap-3">
               <div className="flex-1 h-1.5 bg-slate-200 rounded-full overflow-hidden">
                 <div
-                  className="h-full bg-indigo-500 rounded-full transition-all duration-500"
+                  className="h-full bg-indigo-500 rounded-full transition-all duration-700"
                   style={{ width: `${progressPct}%` }}
                 />
               </div>
               <span className="text-xs font-black text-slate-400 shrink-0">
-                {module.moduleNumber} / {total}
+                {completedCount} / {total} complete
               </span>
             </div>
           </div>
 
+          {/* Completion badge */}
+          {progress.completed && (
+            <div className="flex items-center gap-1.5 bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold px-3 py-1.5 rounded-full shrink-0">
+              <CheckCircle size={12} />
+              Done
+            </div>
+          )}
         </div>
       </div>
 
@@ -103,16 +198,28 @@ export default function AcademyModuleLayout({ module, courseModules, slug }: Pro
 
           {/* ── SIDEBAR ────────────────────────────────────────────────────── */}
           {sidebarOpen && (
-            <aside className="hidden lg:block w-64 shrink-0 sticky top-15">
+            <aside className="hidden lg:block w-64 shrink-0 sticky top-16">
               <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
                 <div className="bg-slate-900 px-4 py-4">
                   <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Course</p>
                   <p className="text-sm font-bold text-white leading-snug">{module.courseTitle}</p>
+                  <div className="mt-3">
+                    <div className="flex justify-between text-[10px] text-slate-500 mb-1">
+                      <span>Progress</span>
+                      <span>{completedCount}/{total}</span>
+                    </div>
+                    <div className="h-1 bg-slate-700 rounded-full overflow-hidden">
+                      <div
+                        className="h-full bg-emerald-500 rounded-full transition-all"
+                        style={{ width: `${progressPct}%` }}
+                      />
+                    </div>
+                  </div>
                 </div>
-                <nav className="py-1 max-h-[calc(100vh-120px)] overflow-y-auto">
-                  {courseModules.map((m) => {
-                    const isCurrent = m.slug === slug;
-                    const isPast    = m.moduleNumber < module.moduleNumber;
+                <nav className="py-1 max-h-[calc(100vh-180px)] overflow-y-auto">
+                  {courseModules.map(m => {
+                    const isCurrent   = m.slug === slug;
+                    const isCompleted = isSlugCompleted(m.slug);
                     return (
                       <Link
                         key={m._id}
@@ -124,11 +231,11 @@ export default function AcademyModuleLayout({ module, courseModules, slug }: Pro
                         }`}
                       >
                         <span className={`mt-0.5 shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[9px] font-black border ${
-                          isCurrent ? "bg-indigo-600 text-white border-indigo-600" :
-                          isPast    ? "bg-emerald-500 text-white border-emerald-500" :
-                                      "bg-white text-slate-400 border-slate-300"
+                          isCurrent   ? "bg-indigo-600 text-white border-indigo-600" :
+                          isCompleted ? "bg-emerald-500 text-white border-emerald-500" :
+                                        "bg-white text-slate-400 border-slate-300"
                         }`}>
-                          {isPast ? "✓" : m.moduleNumber}
+                          {isCompleted && !isCurrent ? "✓" : m.moduleNumber}
                         </span>
                         <span className="leading-snug">{m.title}</span>
                       </Link>
@@ -156,8 +263,14 @@ export default function AcademyModuleLayout({ module, courseModules, slug }: Pro
                   </span>
                 )}
                 {module.estimatedReadTime && (
-                  <span className="text-[10px] font-bold text-slate-400 ml-auto">
-                    ⏱ {module.estimatedReadTime} min read
+                  <span className="text-[10px] font-bold text-slate-400 flex items-center gap-1 ml-auto">
+                    <Clock size={11} />
+                    {module.estimatedReadTime} min read
+                  </span>
+                )}
+                {progress.completed && (
+                  <span className="flex items-center gap-1 text-[10px] font-bold text-emerald-600 bg-emerald-50 border border-emerald-200 rounded-full px-2 py-0.5">
+                    <CheckCircle size={10} /> Completed
                   </span>
                 )}
               </div>
@@ -175,11 +288,11 @@ export default function AcademyModuleLayout({ module, courseModules, slug }: Pro
               )}
             </div>
 
-            {/* 🎯 Learning objectives */}
+            {/* Learning objectives */}
             {module.learningObjectives && module.learningObjectives.length > 0 && (
               <div className="bg-indigo-50 border border-indigo-100 rounded-xl p-6">
                 <h2 className="flex items-center gap-2 text-sm font-black text-indigo-900 uppercase tracking-widest mb-4">
-                  <span>🎯</span> What You'll Learn
+                  <span>🎯</span> What You&apos;ll Learn
                 </h2>
                 <ul className="space-y-2.5">
                   {module.learningObjectives.map((obj, i) => (
@@ -202,6 +315,63 @@ export default function AcademyModuleLayout({ module, courseModules, slug }: Pro
             ) : (
               <div className="bg-white rounded-xl border border-slate-200 p-8 text-slate-400 italic">
                 Content coming soon.
+              </div>
+            )}
+
+            {/* Knowledge Check */}
+            {!showQuiz && !progress.quizPassed && (
+              <div className="bg-indigo-50 border border-indigo-200 rounded-2xl p-6 flex items-center justify-between gap-4">
+                <div>
+                  <h3 className="font-black text-indigo-900 mb-1">Ready to test your understanding?</h3>
+                  <p className="text-sm text-indigo-600">
+                    {questions.length}-question knowledge check · Pass {70}% to mark module complete
+                  </p>
+                </div>
+                <button
+                  onClick={() => setShowQuiz(true)}
+                  className="shrink-0 px-5 py-2.5 bg-indigo-600 text-white rounded-xl text-sm font-bold hover:bg-indigo-700 transition"
+                >
+                  Start Quiz →
+                </button>
+              </div>
+            )}
+
+            {showQuiz && !progress.quizPassed && (
+              <KnowledgeCheck
+                moduleTitle={module.title}
+                questions={questions}
+                onPass={markQuizPassed}
+              />
+            )}
+
+            {progress.quizPassed && (
+              <div className="flex items-center gap-4 bg-emerald-50 border border-emerald-200 rounded-2xl p-6">
+                <div className="w-12 h-12 rounded-full bg-emerald-500 flex items-center justify-center shrink-0">
+                  <CheckCircle size={24} className="text-white" />
+                </div>
+                <div>
+                  <p className="font-black text-emerald-800 text-lg">Module Completed!</p>
+                  <p className="text-emerald-600 text-sm">
+                    You passed the knowledge check for this module.
+                    {progress.completedAt && (
+                      <span className="text-emerald-400 ml-2">
+                        {new Date(progress.completedAt).toLocaleDateString()}
+                      </span>
+                    )}
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* Mark complete without quiz (for content-only modules) */}
+            {!progress.completed && !showQuiz && module.body && (
+              <div className="flex justify-end">
+                <button
+                  onClick={markCompleted}
+                  className="text-xs font-bold text-slate-400 hover:text-emerald-600 border border-slate-200 hover:border-emerald-300 px-4 py-2 rounded-xl transition-colors"
+                >
+                  Mark as read (no quiz)
+                </button>
               </div>
             )}
 
