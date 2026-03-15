@@ -1,6 +1,6 @@
 # Health Transformation Review — Developer Guide
 
-**Version:** 2026-03-12 | **Stack:** Next.js 16 · React 19 · Sanity CMS · Supabase · FastAPI · LlamaIndex · Gemini · Tailwind v4
+**Version:** 2026-03-14 | **Stack:** Next.js 16 · React 19 · Sanity CMS · Supabase · FastAPI · LlamaIndex · Gemini · Tailwind v4
 
 ---
 
@@ -22,9 +22,10 @@
 14. [Scripts Reference](#14-scripts-reference)
 15. [API Routes](#15-api-routes)
 16. [How to Add a New Pillar](#16-how-to-add-a-new-pillar)
-17. [How to Add a New State](#17-how-to-add-a-new-state)
-18. [Deployment](#18-deployment)
-19. [Known Issues & Roadmap](#19-known-issues--roadmap)
+17. [How to Add a New State (Dashboard)](#17-how-to-add-a-new-state-dashboard)
+18. [State Initiatives Feature](#18-state-initiatives-feature)
+19. [Deployment](#19-deployment)
+20. [Known Issues & Roadmap](#20-known-issues--roadmap)
 
 ---
 
@@ -42,8 +43,8 @@
 | CMS Client | next-sanity | latest | Includes `createClient` + live preview utilities |
 | Database / Auth | Supabase | 2.89.0 | Postgres + pgvector + auth |
 | Supabase SSR | @supabase/ssr | 0.9.0 | Server-side session handling in middleware |
-| Maps | react-simple-maps | 1.0.0 | D3-backed SVG US map |
-| Type Safety | TypeScript | 5.x | Strict mode enabled |
+| Maps | react-simple-maps | 1.0.0 | D3-backed SVG US map (dashboard + state initiatives) |
+| Type Safety | TypeScript | 5.x | Strict mode enabled; `tsc --noEmit` exits clean |
 | Language | Node.js | 20.x | Dev and build environment |
 
 ### Backend AI Brain (Python)
@@ -120,28 +121,43 @@ Vermont-Health-Platform/
 │   │   ├── search/              ← Full-text search results
 │   │   ├── chat/                ← AI Analyst standalone chat page
 │   │   ├── advisory/            ← Advisory hub
+│   │   ├── advisory-hub/        ← Advisory hub landing page
 │   │   ├── hti-dashboard/       ← HTI (Health Transformation Index) dashboard
 │   │   ├── trending-topics/     ← Trending topics page
-│   │   ├── mission/             ← Mission+Vision as hero, Core Values and Framework promoted
-│   │   ├── values/              ← Core Values standalone page
+│   │   ├── multimedia/          ← Multimedia content hub
+│   │   ├── mission/             ← Mission + Vision (dark hero — brand editorial page)
+│   │   ├── values/              ← Core Values standalone page (dark hero)
 │   │   ├── about/
-│   │   │   └── framework/       ← Five-Question Standard standalone page
-│   │   ├── ahead-model/         ← AHEAD Model CMS federal program page
-│   │   ├── privacy/             ← Privacy policy stub
-│   │   ├── terms/               ← Terms of service stub
-│   │   └── sitemap/             ← Sitemap stub
+│   │   │   ├── page.tsx         ← About HTR
+│   │   │   ├── framework/       ← Five-Question Standard (dark hero — brand editorial)
+│   │   │   └── methodology/     ← Data methodology documentation
+│   │   ├── ahead-model/         ← AHEAD Model CMS federal program deep-dive
+│   │   ├── vermont-act-167/     ← Vermont Act 167 + Oliver Wyman Report analysis
+│   │   ├── california-calaim/   ← CalAIM — California $6.7B Medi-Cal transformation
+│   │   ├── states/              ← Other States initiatives map + search
+│   │   │   ├── page.tsx         ← Interactive US map, search, state card grid
+│   │   │   └── [state]/page.tsx ← Individual state initiative profile
+│   │   ├── faq/                 ← FAQ page
+│   │   ├── htr-index/           ← HTR Index page
+│   │   ├── privacy/             ← Privacy policy
+│   │   ├── terms/               ← Terms of service
+│   │   └── sitemap/             ← Sitemap
 │   ├── components/              ← Shared React components
 │   │   ├── Header.tsx           ← Top navigation bar
 │   │   ├── Footer.tsx           ← Site footer
 │   │   ├── AppShell.tsx         ← Left/right sidebar shell (auto-collapses)
-│   │   ├── HomeSidebar.tsx      ← Left sidebar (pillar nav links)
+│   │   ├── HomeSidebar.tsx      ← Left sidebar (4 sections: Services / Tools / Federal / States)
 │   │   ├── RightSidebar.tsx     ← Right sidebar (AI chat suggestions)
 │   │   ├── CommandPalette.tsx   ← Cmd+K command palette
 │   │   ├── VideoLibrary.tsx     ← Multi-pillar video library
 │   │   ├── TickerContext.tsx    ← Context provider for news ticker
 │   │   ├── TooltipContext.tsx   ← Tooltip context provider
 │   │   ├── dashboard/           ← Dashboard-specific components
+│   │   │   ├── USAMap.tsx       ← SVG US map for dashboard
+│   │   │   ├── NationalMap.tsx  ← National map component
 │   │   │   └── RHTScorecard.tsx ← RHT program scorecard
+│   │   ├── states/              ← State Initiatives components
+│   │   │   └── StateInitiativesMap.tsx ← react-simple-maps interactive US map
 │   │   └── templates/           ← Full-page template components
 │   │       ├── PillarHub.tsx    ← Template for all 5 pillar hub pages
 │   │       ├── ArticleEngine.tsx ← Template for individual articles
@@ -151,7 +167,7 @@ Vermont-Health-Platform/
 │   ├── lib/                     ← Utilities, data, and service clients
 │   │   ├── sanity.ts            ← Sanity client + urlFor() helper
 │   │   ├── supabase.ts          ← Supabase browser client
-│   │   ├── rag.ts               ← RAG helpers (embed, search, buildContext)
+│   │   ├── rag.ts               ← RAG helpers (legacy — superseded by Python backend)
 │   │   ├── chat.ts              ← Chat client-side utilities
 │   │   ├── ticker.ts            ← Ticker/news data fetcher
 │   │   ├── utils.ts             ← General utility functions
@@ -165,7 +181,8 @@ Vermont-Health-Platform/
 │   │   │   ├── rht-program.ts   ← RHT state profiles + RHTProfile type
 │   │   │   ├── hospital-data.ts ← Hospital reference data
 │   │   │   ├── rht-awards.ts    ← RHT award amounts by state
-│   │   │   └── states.ts        ← State metadata (names, abbreviations)
+│   │   │   ├── states.ts        ← State metadata (names, abbreviations)
+│   │   │   └── state-initiatives-data.ts ← All 50 states + DC initiatives data
 │   │   └── hooks/
 │   │       └── useSolvencySimulation.ts ← Hospital solvency simulation hook
 │   ├── sanity/                  ← Sanity Studio configuration
@@ -177,12 +194,12 @@ Vermont-Health-Platform/
 │   │   ├── seed-hospitals.ts    ← Seed hospital documents
 │   │   ├── seed-sanity-performance-index.ts ← Seed state performance index
 │   │   ├── seed-sanity-rht.ts   ← Seed RHT state profiles
-│   │   └── sync-embeddings.ts   ← Legacy: Sanity → Supabase pgvector (superseded by Python backend)
+│   │   └── sync-embeddings.ts   ← Legacy: Sanity → Supabase pgvector (superseded)
 │   ├── middleware.ts             ← Supabase auth guard for /account routes
 │   ├── next.config.ts           ← Next.js config (styled-components compiler)
 │   └── .env.local               ← Environment variables (never commit)
 ├── supabase/
-│   └── setup-rag.sql            ← One-time pgvector setup SQL (for Supabase auth; RAG now in Python)
+│   └── setup-rag.sql            ← One-time pgvector setup SQL (auth; RAG now in Python)
 ├── USER_MANUAL.md               ← End-user documentation
 └── DEVELOPER_GUIDE.md           ← This file
 ```
@@ -474,6 +491,7 @@ cd frontend
 npm run build     # Production build
 npm run start     # Production server
 npm run lint      # ESLint
+npx tsc --noEmit  # TypeScript check (exits clean)
 ```
 
 ---
@@ -492,6 +510,7 @@ All routes use Next.js 14+ App Router with `page.tsx` server components as entry
 | `/economics` | `app/economics/page.tsx` | Server → PillarHub |
 | `/economics/[slug]` | `app/economics/[slug]/page.tsx` | Server → ArticleEngine |
 | `/technology` | `app/technology/page.tsx` | Server → PillarHub |
+| `/technology/[slug]` | `app/technology/[slug]/page.tsx` | Server → ArticleEngine |
 | `/clinical` | `app/clinical/page.tsx` | Server → PillarHub |
 | `/equity` | `app/equity/page.tsx` | Server → PillarHub |
 | `/academy` | `app/academy/page.tsx` | Server |
@@ -499,6 +518,8 @@ All routes use Next.js 14+ App Router with `page.tsx` server components as entry
 | `/academy/courses/[slug]` | `app/academy/courses/[slug]/page.tsx` | Server |
 | `/academy/webinars/[slug]` | `app/academy/webinars/[slug]/page.tsx` | Server |
 | `/academy/glossary` | `app/academy/glossary/page.tsx` | Client (filter state) |
+| `/academy/faculty` | `app/academy/faculty/page.tsx` | Server |
+| `/academy/case-studies` | `app/academy/case-studies/page.tsx` | Server |
 | `/dashboard` | `app/dashboard/page.tsx` | Server → DashboardIndexClient |
 | `/dashboard/[state]` | `app/dashboard/[state]/page.tsx` | Server → StateDetailClientPage |
 | `/chat` | `app/chat/page.tsx` | Client |
@@ -506,12 +527,27 @@ All routes use Next.js 14+ App Router with `page.tsx` server components as entry
 | `/account` | `app/account/page.tsx` | Client (protected) |
 | `/login` | `app/login/page.tsx` | Client |
 | `/signup` | `app/signup/page.tsx` | Client |
+| `/reset-password` | `app/reset-password/page.tsx` | Client |
+| `/hti-dashboard` | `app/hti-dashboard/page.tsx` | Client |
+| `/trending-topics` | `app/trending-topics/page.tsx` | Client |
+| `/multimedia` | `app/multimedia/page.tsx` | Server |
+| `/advisory` | `app/advisory/page.tsx` | Server |
+| `/advisory-hub` | `app/advisory-hub/page.tsx` | Server |
 | `/mission` | `app/mission/page.tsx` | Server |
 | `/values` | `app/values/page.tsx` | Server |
+| `/about` | `app/about/page.tsx` | Server |
 | `/about/framework` | `app/about/framework/page.tsx` | Server |
 | `/about/methodology` | `app/about/methodology/page.tsx` | Server |
 | `/ahead-model` | `app/ahead-model/page.tsx` | Server |
+| `/vermont-act-167` | `app/vermont-act-167/page.tsx` | Server |
+| `/california-calaim` | `app/california-calaim/page.tsx` | Server |
+| `/states` | `app/states/page.tsx` | Server + Client (map, search) |
+| `/states/[state]` | `app/states/[state]/page.tsx` | Server |
 | `/faq` | `app/faq/page.tsx` | Server |
+| `/subscribe` | `app/subscribe/page.tsx` | Client |
+| `/privacy` | `app/privacy/page.tsx` | Server |
+| `/terms` | `app/terms/page.tsx` | Server |
+| `/sitemap` | `app/sitemap/page.tsx` | Server |
 | `/studio` | Sanity Studio embedded | Studio |
 
 ### Naming conventions
@@ -519,7 +555,7 @@ All routes use Next.js 14+ App Router with `page.tsx` server components as entry
 - **Server components** (`page.tsx`) handle data fetching (Sanity GROQ queries, static data imports).
 - **Client components** (`*Client*.tsx` or `"use client"` directive) handle interactivity — tab switches, map clicks, chat input.
 - **Layout files** (`layout.tsx`) apply shared UI wrappers — the dashboard layout adds a sidebar, the root layout adds Header/AppShell/Footer.
-- Dynamic segments use `[slug]` or `[state]` — state slugs are lowercase (e.g., `vermont`, `new-york`).
+- Dynamic segments use `[slug]` or `[state]` — dashboard state slugs are lowercase with hyphens (e.g., `vermont`, `new-york`); state initiatives IDs use underscores (e.g., `north_carolina`, `district_of_columbia`).
 
 ---
 
@@ -534,7 +570,7 @@ app/layout.tsx
       TickerProvider        ← News ticker data context
         Header              ← Top nav bar (links, auth state, search)
         AppShell            ← Left sidebar + main content + right sidebar
-          HomeSidebar       ← Left: pillar nav links
+          HomeSidebar       ← Left: 4 sections (Services / Tools / Federal / States)
           {children}        ← Page content
           RightSidebar      ← Right: AI chat suggestions
         Footer
@@ -549,7 +585,24 @@ app/layout.tsx
 
 This gives focused reading pages full-width layout. The sidebars show on hub pages, the home page, and the dashboard.
 
-**Hero styling convention:** All page heroes use light gray backgrounds (`bg-slate-50 text-slate-900 border-b border-slate-200`). Dark heroes (`bg-slate-900`) are reserved only for brand/editorial pages (`/mission`, `/values`, `/about/framework`). Never add a dark hero to a functional page.
+**Hero styling convention:** All page heroes use light gray backgrounds (`bg-slate-50 text-slate-900 border-b border-slate-200`). Dark heroes (`bg-slate-900`) are reserved **only** for three brand/editorial pages: `/mission`, `/values`, `/about/framework`. Never add a dark hero to a functional page.
+
+### HomeSidebar — Option 3 Design (current)
+
+`frontend/components/HomeSidebar.tsx` uses the **Option 3** design: white boxes (`bg-white`) with colored `border-l-2` left-border stripes and hover tints. Section headers are colored pill badges rendered by the `SectionLabel` component.
+
+**Four sections (top to bottom):**
+
+| # | Section | Badge | Left Border | Icon / Hover | Links |
+|---|---|---|---|---|---|
+| 1 | **Services** | `bg-indigo-100 border-indigo-300` | `border-l-indigo-400` | `text-indigo-500` / `hover:bg-indigo-50` | Academy (`/academy`), Advisory (`/advisory-hub`) |
+| 2 | **Tools & Resources** | `bg-amber-100 border-amber-300` | `border-l-amber-400` | `text-amber-500` / `hover:bg-amber-50` | Research Lab (`/hti-dashboard`), Multimedia (`/multimedia`), Trending Topics (`/trending-topics`) |
+| 3 | **Federal Programs** | `bg-emerald-100 border-emerald-300` | `border-l-emerald-400` | `text-emerald-600` / `hover:bg-emerald-50` | Rural Health Transformation (`/dashboard`), AHEAD Model (`/ahead-model`) |
+| 4 | **State Initiatives** | `bg-rose-100 border-rose-300` | `border-l-rose-400` | `text-rose-500` / `hover:bg-rose-50` | Vermont Act 167 (`/vermont-act-167`), California CalAIM (`/california-calaim`), Other States (`/states`) |
+
+The sidebar also has a **sticky "Back to Top" button** at the bottom, visible only when the user has scrolled — implemented with `IntersectionObserver` on a sentinel element at the top of the sidebar.
+
+Props: `onNavigate?: () => void` — called on every link click (closes the mobile sidebar overlay).
 
 ### Template components (`components/templates/`)
 
@@ -570,6 +623,12 @@ This gives focused reading pages full-width layout. The sidebars show on hub pag
 - **`RHTScorecard.tsx`** — Renders the RHT metrics grid with color-coded status badges.
 - **`DashboardContext`** (`lib/context/DashboardContext.tsx`) — Provides selected state, scenario mode (statusQuo | optimized), and all-states data to deeply nested dashboard components.
 - **`ProgramContext`** (`lib/context/ProgramContext.tsx`) — Provides RHT program data to the RHT Program tab.
+
+### State Initiatives components
+
+- **`components/states/StateInitiativesMap.tsx`** — `react-simple-maps` SVG US map. Colors states by initiative count (4 tiers). Click navigates to `/states/[stateId]`. Requires `"use client"`.
+- **`app/states/page.tsx`** — Hero, `StateInitiativesMap`, search/region filter bar, state card grid. Consumes `getAllStateInitiatives()` from `lib/data/state-initiatives-data.ts`.
+- **`app/states/[state]/page.tsx`** — Per-state hero with state name, initiative cards with type/status badges, external links to official sources. Calls `getStateInitiatives(stateId)`.
 
 ---
 
@@ -836,7 +895,7 @@ Not a document — a reusable type for portable text fields across all schemas. 
 
 ## 10. Static Data Layer
 
-Static TypeScript data files in `frontend/lib/data/` power the dashboard while Sanity-managed versions are being built out. They are the source of truth for the dashboard currently.
+Static TypeScript data files in `frontend/lib/data/` power the dashboard and state initiatives feature while Sanity-managed versions are being built out. They are the current source of truth for the dashboard.
 
 ### `performance-index-data.ts`
 
@@ -879,7 +938,7 @@ type PerformanceIndexProfile = {
 };
 ```
 
-All 50 states have entries. Scores are on a 0–100 scale (higher = better). The file was updated (2026-03-10) to include all 5 pillar metric groups — earlier it only had policy, economics, and technology.
+All 50 states have entries. Scores are on a 0–100 scale (higher = better). All 5 pillar metric groups are present.
 
 ### `rht-program.ts`
 
@@ -918,6 +977,44 @@ Lookup table mapping state slugs to display names and two-letter abbreviations. 
 ### `rht-awards.ts`
 
 Award amounts by state slug. Cross-references `rht-program.ts`.
+
+### `state-initiatives-data.ts`
+
+**New in 2026-03-14.** All 50 states + DC with health reform initiatives for the State Initiatives feature.
+
+```typescript
+type StateInitiative = {
+  id: string;              // Unique initiative ID
+  title: string;           // Initiative name
+  type: string;            // "Medicaid Waiver" | "State Legislation" | "Federal Program" | etc.
+  status: string;          // "Active" | "Proposed" | "Completed" | "Under Review"
+  description: string;     // Full description paragraph
+  year: number;            // Year enacted or proposed
+  externalUrl: string;     // Official govt/CMS source URL
+};
+
+type StateInitiativesProfile = {
+  id: string;              // name.toLowerCase().replace(/\s+/g, "_") e.g. "north_carolina"
+  stateName: string;
+  abbreviation: string;
+  region: string;          // "Northeast" | "Midwest" | "South" | "West"
+  initiatives: StateInitiative[];
+  internalLink?: string;   // Set for states with dedicated platform pages (VT, CA, MD, ME, MN, PA)
+};
+```
+
+**Key functions exported:**
+- `getAllStateInitiatives(): StateInitiativesProfile[]` — sorted alphabetically
+- `getStateInitiatives(stateId: string): StateInitiativesProfile | null`
+
+**State ID convention:** `stateName.toLowerCase().replace(/\s+/g, "_")`
+- `"Vermont"` → `"vermont"`
+- `"North Carolina"` → `"north_carolina"`
+- `"District of Columbia"` → `"district_of_columbia"`
+
+**Volume:** 130+ total initiatives across all states; 2–4 per state. Every initiative includes an `externalUrl` pointing to official government or CMS sources.
+
+**States with `internalLink`:** Vermont (`/vermont-act-167`), California (`/california-calaim`), and 4 others with dedicated deep-dive pages.
 
 ---
 
@@ -1192,7 +1289,7 @@ Converts `lib/data/rht-program.ts` entries into Sanity `rhtState` documents. Kee
 Converts `lib/data/performance-index-data.ts` entries into Sanity `statePerformanceIndex` documents.
 
 #### `sync-embeddings.ts`
-The most important operational script. Run after any significant Sanity content updates:
+The legacy RAG sync script (superseded by the Python backend for chat, but still useful for Supabase pgvector sync if needed):
 - Fetches all embeddable content types from Sanity
 - Generates 768-dim embeddings via Google text-embedding-004
 - Upserts into Supabase `content_embeddings` table
@@ -1357,7 +1454,7 @@ Import an icon, then add a new `<div>` block mirroring the existing clinical/equ
 ### 10. Navigation — update Header, HomeSidebar, and Footer
 
 - `components/Header.tsx` — add pillar to the nav dropdown
-- `components/HomeSidebar.tsx` — add direct link
+- `components/HomeSidebar.tsx` — add direct link (decide which section it belongs to)
 - `components/Footer.tsx` — add to pillars list
 
 ### 11. Re-run sync after adding Sanity content
@@ -1368,9 +1465,9 @@ npx tsx scripts/sync-embeddings.ts
 
 ---
 
-## 17. How to Add a New State
+## 17. How to Add a New State (Dashboard)
 
-States appear in the dashboard, the US map, and RHT program profiles.
+States appear in the Performance Dashboard, the US map, and RHT program profiles. This section covers the **dashboard** data flow. For the State Initiatives map, see §18.
 
 ### Step 1: Add to `lib/data/states.ts`
 
@@ -1433,7 +1530,116 @@ The US map in `DashboardIndexClient.tsx` uses `react-simple-maps` with GeoJSON �
 
 ---
 
-## 18. Deployment
+## 18. State Initiatives Feature
+
+Built 2026-03-14. Provides a 50-state map and initiative browser separate from the Performance Dashboard.
+
+### Architecture overview
+
+```
+/states                     ← Interactive map + state grid
+  └── /states/[state]       ← Individual state initiative profile
+
+components/states/
+  └── StateInitiativesMap.tsx  ← SVG US map colored by initiative count
+
+lib/data/
+  └── state-initiatives-data.ts ← All data (no Sanity dependency)
+```
+
+### Data structure (`state-initiatives-data.ts`)
+
+The file exports:
+- `stateInitiativesData: StateInitiativesProfile[]` — raw array
+- `getAllStateInitiatives(): StateInitiativesProfile[]` — sorted alphabetically by state name
+- `getStateInitiatives(stateId: string): StateInitiativesProfile | null`
+
+**State ID format:** `stateName.toLowerCase().replace(/\s+/g, "_")`
+
+| State Name | State ID |
+|---|---|
+| Vermont | `vermont` |
+| North Carolina | `north_carolina` |
+| District of Columbia | `district_of_columbia` |
+| New Hampshire | `new_hampshire` |
+
+### Map component (`StateInitiativesMap.tsx`)
+
+- Uses `react-simple-maps` + `ComposableMap` + `Geographies`
+- TopoJSON source: `https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json`
+- Colors states in 4 tiers by initiative count:
+  - 1 initiative: `#fed7aa` (orange-100)
+  - 2 initiatives: `#fb923c` (orange-400)
+  - 3 initiatives: `#ea580c` (orange-600)
+  - 4+ initiatives: `#9a3412` (orange-800)
+- Click → `router.push("/states/${stateId}")`
+- Requires `"use client"` directive
+
+### Map page (`/states/page.tsx`)
+
+Components:
+1. Hero (light gray `bg-slate-50`)
+2. `StateInitiativesMap` (client island)
+3. Search input (`useState` filter)
+4. Region filter buttons (All / Northeast / Midwest / South / West)
+5. State card grid — each card links to `/states/[state]`
+
+### State detail page (`/states/[state]/page.tsx`)
+
+- Server component — calls `getStateInitiatives(params.state)` at render time
+- Returns 404 if state ID not found
+- Hero with state name and abbreviation
+- Initiative cards grid — each card shows:
+  - **Title** (initiative name)
+  - **Type** badge (Medicaid Waiver, State Legislation, Federal Program, etc.)
+  - **Status** badge (Active = green, Proposed = amber, Completed = slate, Under Review = blue)
+  - **Year** enacted/proposed
+  - **Description** paragraph
+  - **View Source** external link → `externalUrl` (official govt/CMS source)
+- States with a dedicated deep-dive page (VT, CA) show a banner linking to the internal page
+
+### States with internal deep-dive pages
+
+| State | State Initiatives URL | Deep-Dive Page |
+|---|---|---|
+| Vermont | `/states/vermont` | `/vermont-act-167` |
+| California | `/states/california` | `/california-calaim` |
+| Maryland | `/states/maryland` | (planned) |
+| Maine | `/states/maine` | (planned) |
+| Minnesota | `/states/minnesota` | (planned) |
+| Pennsylvania | `/states/pennsylvania` | (planned) |
+
+### `/vermont-act-167` deep-dive page
+
+A comprehensive analysis page covering:
+- Vermont Act 167 (2023) — hospital budget reform law
+- Oliver Wyman Report on Vermont hospital transformation
+- All-Payer Model history and context
+- AHEAD Model participation
+- Key policy implications
+
+### `/california-calaim` deep-dive page
+
+A comprehensive analysis page covering:
+- CalAIM (California Advancing and Innovating Medi-Cal) — $6.7B Section 1115 waiver
+- Enhanced Care Management (ECM)
+- Community Supports (housing, food, transportation)
+- Population Health Management (PHM) initiative
+- Equity-centered approach and SDOH integration
+
+### Adding a new state deep-dive page
+
+1. Create `frontend/app/[my-state-name]/page.tsx` with light gray hero
+2. Add entry to `state-initiatives-data.ts`:
+   ```typescript
+   internalLink: "/my-state-name"
+   ```
+3. Add to HomeSidebar `State Initiatives` section in `HomeSidebar.tsx` if it warrants top-level visibility
+4. No other changes needed — `/states/[state]` will automatically show the banner linking to the internal page
+
+---
+
+## 19. Deployment
 
 The system has **two deployable services**: the Next.js frontend and the Python AI backend. Deploy them independently.
 
@@ -1472,8 +1678,10 @@ The Python backend is a long-running async process. Recommended hosts:
 - [ ] `supabase/setup-rag.sql` run against production Supabase project
 - [ ] Sanity dataset is `production` (not a dev dataset)
 - [ ] `npm run build` completes without errors locally
+- [ ] `npx tsc --noEmit` exits clean
 - [ ] Python backend health check passes: `GET /health` returns `{ index_ready: true }`
 - [ ] No hardcoded `localhost` URLs in components
+- [ ] Sanity CORS origin added for production domain
 
 ### Build notes
 
@@ -1504,7 +1712,7 @@ Embedded in the Next.js app at `/studio`. Deploys automatically with the Next.js
 
 ---
 
-## 19. Known Issues & Roadmap
+## 20. Known Issues & Roadmap
 
 ### Known issues
 
@@ -1512,12 +1720,13 @@ Embedded in the Next.js app at `/studio`. Deploys automatically with the Next.js
 |---|---|---|
 | Python backend not auto-started | Active | Must be started manually alongside `npm run dev`. No process manager yet. |
 | `backend/storage/` not persisted on cloud deploys | Active | Without a mounted volume, every redeploy rebuilds the index from scratch (~2-5 min downtime). |
-| TypeScript `any` types in Sanity queries | Active | GROQ results typed as `any` — `sanity typegen` not run |
-| `react-simple-maps` SSR warning | Active | Map component requires client-side rendering guard |
+| TypeScript `any` types in Sanity queries | Active | GROQ results typed as `any` — `sanity typegen` not yet run |
+| `react-simple-maps` SSR warning | Active | Both `StateInitiativesMap` and `DashboardIndexClient` map components require client-side rendering guard — use `"use client"` |
 | Dashboard static data fallback | Partial | Sanity → static file fallback is wired. Static files are source of truth until Sanity seed scripts are run. |
 | Content generator uses Google SDK directly | Active | `generate_sanity_content.py` uses `google-generativeai` — add to Python venv or run separately |
+| State initiatives data is static | Active | `state-initiatives-data.ts` is hand-authored static data — not yet pulled from Sanity or a live API |
 
-### Resolved (this session)
+### Resolved (through 2026-03-14)
 
 | Issue | Resolution |
 |---|---|
@@ -1525,30 +1734,40 @@ Embedded in the Next.js app at `/studio`. Deploys automatically with the Next.js
 | TypeError on `/dashboard/[state]` (`preventiveCare` undefined) | Added clinical/equity to GROQ projection with `coalesce(..., 0)` fallbacks; added fields to Sanity schema |
 | AI chat had no conversation memory | Frontend sends `history[]` on every request; Python backend reconstructs `ChatMemoryBuffer` |
 | AI logic entirely in TypeScript | Python backend (FastAPI + LlamaIndex) now owns all RAG; Next.js is a thin proxy |
-| Pillar hub cards no hover background | Added `hover:bg-{color}-50/80` to all pillar page cards and PillarHub template |
+| Policy pillar incorrectly colored orange | Fixed globally — Policy is now sky blue (#0369a1) across all pages |
+| `/education/*` paths throughout app | All paths updated to `/academy/*` |
+| Operations pillar present | Deleted all operations routes, CSS vars, nav links (2026-03-09) |
+| Dark hero inconsistencies | All functional pages use light gray heroes; dark heroes reserved for /mission, /values, /about/framework |
+| FAQ inside COMPANY dropdown | Moved to standalone link in top bar |
+| HomeSidebar navigation incomplete | Rebuilt with Option 3 design: 4 sections (Services, Tools & Resources, Federal Programs, State Initiatives) |
+| `tsc --noEmit` had type errors | Resolved 2026-03-11; TypeScript build now exits clean |
 
 ### Roadmap (prioritized)
 
-1. **Python backend process management** — Add a `Procfile` or `docker-compose.yml` so `make dev` starts both Next.js and uvicorn with one command.
+1. **Python backend process management** — Add a `Procfile` or `docker-compose.yml` so `make dev` starts both Next.js and uvicorn with one command. Eliminates the two-terminal requirement.
 
-2. **Persistent index storage** — Mount a volume at `backend/storage/` in production (Railway/Fly.io) so the index survives redeploys.
+2. **Persistent index storage** — Mount a volume at `backend/storage/` in production (Railway/Fly.io) so the index survives redeploys. Without this, every deploy triggers a 2-5 minute cold build.
 
-3. **Automated RAG refresh** — Sanity webhook → call `POST /api/ingest` on content publish. No manual trigger needed.
+3. **Automated RAG refresh** — Sanity webhook → call `POST /api/ingest` on content publish. No manual trigger needed. Keeps the AI Analyst current with new editorial content.
 
-4. **Search** — Wire up `/api/search` with Sanity's native search or Algolia. Route file exists; needs GROQ expansion.
+4. **Search** — Wire up `/api/search` with Sanity's native search or Algolia. Route file exists; needs GROQ expansion and frontend results page improvements.
 
-5. **Live data pipeline** — Replace remaining `lib/data/*.ts` static files with Sanity GROQ queries for dashboard data (partially done — fallback wired, Sanity schemas exist).
+5. **State initiatives → Sanity** — Move `state-initiatives-data.ts` into a Sanity schema so editorial staff can manage initiative data without code changes.
 
-6. **TypeScript strictness** — `npx sanity typegen generate` for typed GROQ results; eliminate `any` in routes.
+6. **Live data pipeline** — Replace remaining `lib/data/*.ts` static files with Sanity GROQ queries for dashboard data. Fallback is wired; Sanity schemas exist — just need seeding and GROQ queries.
 
-7. **Email digest** — Complete `/api/digest` endpoint to generate weekly summary from Sanity and send to subscriber list.
+7. **TypeScript strictness** — `npx sanity typegen generate` for typed GROQ results; eliminate remaining `any` in routes.
 
-8. **Auth + personalization** — Saved states, reading history, personalized recommendations via Supabase RLS.
+8. **Email digest** — Complete `/api/digest` endpoint to generate weekly summary from Sanity and send to subscriber list.
 
-9. **Content depth** — Populate all 5 pillar hubs with healthcare transformation focus (rural health content preserved under Federal Programs section); add Clinical and Equity academy modules; more PDFs to `backend/data/`.
+9. **Auth + personalization** — Saved states, reading history, personalized recommendations via Supabase RLS.
 
-10. **Performance** — Sanity CDN (`useCdn: true`) for production reads; ISR for static-heavy pages.
+10. **Content depth** — Populate all 5 pillar hubs with healthcare transformation focus. Add Clinical and Equity academy modules. Add more PDFs to `backend/data/` (CMS program documents, state waiver filings, hospital financial disclosures).
+
+11. **Performance** — Sanity CDN (`useCdn: true`) for production reads; ISR (Incremental Static Regeneration) for static-heavy pages.
+
+12. **State deep-dive pages** — Build dedicated pages for Maryland, Maine, Minnesota, Pennsylvania (all have `internalLink` slots in `state-initiatives-data.ts`).
 
 ---
 
-Last updated: 2026-03-12 (De-ruralization, new pages /values /about/framework /ahead-model, hero styling convention, HomeSidebar restructure, FAQ moved to top bar)
+Last updated: 2026-03-14 — Added State Initiatives feature (/states, /states/[state], /vermont-act-167, /california-calaim), HomeSidebar Option 3 design with 4 sections, updated route map, state-initiatives-data.ts documentation, TypeScript build clean confirmation.
