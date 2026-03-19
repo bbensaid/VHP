@@ -1,14 +1,16 @@
 // app/api/chat/route.ts
 //
 // Thin proxy to the Python AI Brain (backend/main.py).
-// All RAG logic, embeddings, and LLM calls happen in the Python service.
-// This route validates input, then forwards the request and streams the response back.
+// Validates input, forwards the user's Supabase JWT to the Python backend
+// for auth + tier detection, and streams the response back to the browser.
 //
-// Python backend must be running: uvicorn main:app --reload --port 8000
-// Set PYTHON_BACKEND_URL in .env.local for production deployments.
+// Python backend: cd backend && uvicorn main:app --reload --port 8000
+// Set PYTHON_BACKEND_URL in .env.local for production.
 
 import { NextResponse } from "next/server";
 import { z } from "zod";
+import { createSupabaseServerClient } from "@/lib/auth";
+import { rateLimit } from "@/lib/rate-limit";
 
 const PYTHON_BACKEND = process.env.PYTHON_BACKEND_URL || "http://localhost:8000";
 
@@ -26,6 +28,30 @@ const ChatRequestSchema = z.object({
 });
 
 export async function POST(req: Request) {
+  // Get the current user's session token
+  const supabase = await createSupabaseServerClient();
+  const { data: { session } } = await supabase.auth.getSession();
+
+  // Chat requires authentication; return 401 if not logged in
+  if (!session?.access_token) {
+    return NextResponse.json(
+      { error: "Authentication required. Please sign in to use the AI Analyst." },
+      { status: 401 }
+    );
+  }
+
+  // Rate limit: 30 requests per 60 seconds per user
+  const limiter = await rateLimit(`chat:${session.user.id}`, {
+    limit: 30,
+    window: 60_000,
+  });
+  if (!limiter.success) {
+    return NextResponse.json(
+      { error: "Too many requests. Please wait a moment before sending another message." },
+      { status: 429, headers: limiter.headers }
+    );
+  }
+
   let body: unknown;
   try {
     body = await req.json();
@@ -44,13 +70,25 @@ export async function POST(req: Request) {
   try {
     const upstream = await fetch(`${PYTHON_BACKEND}/api/chat`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        // Forward the user's JWT — Python backend validates it and extracts role
+        "Authorization": `Bearer ${session.access_token}`,
+      },
       body: JSON.stringify(parsed.data),
     });
 
     if (!upstream.ok) {
       const detail = await upstream.text();
-      console.error("Python backend error:", detail);
+      console.error("Python backend error:", upstream.status, detail);
+
+      if (upstream.status === 401 || upstream.status === 403) {
+        return NextResponse.json(
+          { error: "Your plan does not include AI Analyst access. Upgrade to Subscriber or higher." },
+          { status: 403 }
+        );
+      }
+
       return NextResponse.json(
         { error: "The AI backend returned an error. Is the Python server running?" },
         { status: upstream.status }

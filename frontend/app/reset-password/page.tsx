@@ -1,85 +1,63 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { supabase } from "@/lib/supabase";
+import { useRouter } from "next/navigation";
+import { createBrowserClient } from "@supabase/ssr";
+
+const supabase = createBrowserClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
 
 export default function ResetPasswordPage() {
-  const [email, setEmail] = useState("");
-  const [sent, setSent] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const router = useRouter();
+  const [password, setPassword] = useState("");
+  const [confirm, setConfirm] = useState("");
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  async function handleReset(e: React.FormEvent) {
     e.preventDefault();
-    setError(null);
+    if (password !== confirm) { setError("Passwords do not match."); return; }
+    if (password.length < 8) { setError("Password must be at least 8 characters."); return; }
     setLoading(true);
-    const { error: authError } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: `${window.location.origin}/reset-password/confirm`,
-    });
-    setLoading(false);
-    if (authError) {
-      setError(authError.message);
-    } else {
-      setSent(true);
-    }
-  };
-
-  if (sent) {
-    return (
-      <div className="min-h-[80vh] flex items-center justify-center py-12 px-4">
-        <div className="max-w-md w-full text-center space-y-4">
-          <div className="text-5xl mb-4">📧</div>
-          <h2 className="text-2xl font-extrabold text-slate-900">Check your email</h2>
-          <p className="text-slate-600">
-            We sent password reset instructions to <strong>{email}</strong>.
-          </p>
-          <Link href="/login" className="inline-block mt-4 text-sm text-sky-700 hover:underline">
-            Back to login
-          </Link>
-        </div>
-      </div>
-    );
+    setError(null);
+    const { error } = await supabase.auth.updateUser({ password });
+    if (error) { setError(error.message); setLoading(false); return; }
+    router.push("/account?reset=success");
   }
 
   return (
-    <div className="min-h-[80vh] flex items-center justify-center py-12 px-4 bg-surface-muted">
-      <div className="max-w-md w-full space-y-8 bg-surface p-10 rounded-xl shadow-lg border border-ui-border">
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-text-heading">Reset your password</h2>
-          <p className="mt-2 text-sm text-text-body">
-            Enter your email and we'll send you a reset link.
-          </p>
+    <div className="min-h-screen bg-slate-50 flex items-center justify-center px-4">
+      <div className="w-full max-w-md">
+        <div className="text-center mb-8">
+          <Link href="/" className="inline-block">
+            <span className="text-2xl font-black text-slate-900">Health Transformation <span className="text-indigo-600">Review</span></span>
+          </Link>
+          <p className="mt-2 text-slate-500 text-sm">Set a new password</p>
         </div>
-
-        {error && (
-          <div className="bg-red-50 border border-red-200 text-red-700 text-sm rounded-lg px-4 py-3">
-            {error}
-          </div>
-        )}
-
-        <form className="space-y-6" onSubmit={handleSubmit}>
-          <input
-            type="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email address"
-            className="w-full px-3 py-3 border border-ui-border rounded-md text-sm focus:outline-none focus:ring-ui-primary focus:border-ui-primary"
-          />
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full py-3 text-sm font-bold text-white bg-slate-900 rounded-md hover:bg-slate-700 transition disabled:opacity-60"
-          >
-            {loading ? "Sending…" : "Send reset link"}
-          </button>
-          <div className="text-center">
-            <Link href="/login" className="text-sm text-slate-500 hover:underline">
-              Back to login
-            </Link>
-          </div>
-        </form>
+        <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
+          <form onSubmit={handleReset} className="space-y-4">
+            {error && <div className="bg-red-50 border border-red-200 text-red-700 text-sm px-4 py-3 rounded-xl">{error}</div>}
+            <div>
+              <label className="block text-sm font-semibold text-slate-700 mb-1.5">New password</label>
+              <input type="password" required value={password} onChange={(e) => setPassword(e.target.value)}
+                className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+                placeholder="Min. 8 characters" />
+            </div>
+            <div>
+              <label className="block text-sm font-semibold text-slate-700 mb-1.5">Confirm new password</label>
+              <input type="password" required value={confirm} onChange={(e) => setConfirm(e.target.value)}
+                className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+                placeholder="Re-enter password" />
+            </div>
+            <button type="submit" disabled={loading}
+              className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-xl text-sm transition-colors disabled:opacity-60">
+              {loading ? "Updating…" : "Update password"}
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

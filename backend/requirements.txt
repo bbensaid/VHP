@@ -1,6 +1,6 @@
 # HTR AI Brain — Python dependencies
 # Install: pip install -r requirements.txt
-# Versions pinned 2026-03-11 — bump deliberately, test after each upgrade.
+# Versions pinned 2026-03-18 — bump deliberately, test after each upgrade.
 
 # Web framework
 fastapi~=0.127.0
@@ -16,11 +16,21 @@ llama-index-llms-google-genai~=0.8.2
 llama-index-embeddings-google-genai~=0.3.1
 llama-index-readers-file~=0.5.5
 
+# Supabase vector store for LlamaIndex (replaces local JSON storage)
+llama-index-vector-stores-supabase~=0.3.0
+
 # PDF parsing (required by SimpleDirectoryReader for .pdf files)
 pypdf~=6.4.0
 
 # HTTP client (for Sanity GROQ API calls)
 httpx~=0.28.0
+
+# Supabase Python client (for JWT verification and DB access)
+supabase~=2.15.0
+
+# JWT verification for Supabase auth tokens
+PyJWT~=2.10.0
+cryptography~=44.0.2
 
 # Google Generative AI (for content generation scripts)
 google-generativeai~=0.5.0
