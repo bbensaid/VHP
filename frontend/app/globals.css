@@ -44,3 +44,19 @@
     animation: marquee 180s linear infinite;
   }
 }
+
+@media print {
+  header, footer, nav, aside {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  a {
+    text-decoration: underline;
+  }
+  @page {
+    margin: 0.75in;
+  }
+}
