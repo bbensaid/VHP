@@ -297,7 +297,7 @@ const Footer: React.FC = () => {
             <Link href="/about/methodology" className="hover:text-slate-300 transition-colors">
               Methodology
             </Link>
-            <Link href="/sitemap" className="hover:text-slate-300 transition-colors">
+            <Link href="/site-map" className="hover:text-slate-300 transition-colors">
               Sitemap
             </Link>
           </div>

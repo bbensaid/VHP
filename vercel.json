@@ -1,0 +1,35 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+
+  "buildCommand": "cd frontend && npm run build",
+  "outputDirectory": "frontend/.next",
+  "installCommand": "cd frontend && npm install",
+  "framework": "nextjs",
+
+  "rewrites": [
+    {
+      "source": "/api/ai/:path*",
+      "destination": "https://your-backend.railway.app/api/:path*"
+    }
+  ],
+
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "https://your-domain.vercel.app" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization" }
+      ]
+    }
+  ],
+
+  "crons": [
+    {
+      "path": "/api/cron/revalidate",
+      "schedule": "0 */6 * * *"
+    }
+  ],
+
+  "regions": ["iad1"]
+}
