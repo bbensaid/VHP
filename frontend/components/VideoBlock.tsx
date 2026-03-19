@@ -2,7 +2,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import YouTube from "react-youtube";
 import { PlayIcon, FilmIcon } from "@heroicons/react/24/solid";
 
 interface VideoBlockProps {
@@ -83,24 +82,18 @@ export default function VideoBlock({ value, compact }: VideoBlockProps) {
     );
   }
 
-  // 2. Render YouTube (Restored UI)
+  // 2. Render YouTube
   if (youtubeId) {
     return (
       <figure className="my-8 w-full max-w-full">
         <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black shadow-lg border border-slate-200">
           {isMounted && (
-            <YouTube
-              videoId={youtubeId}
+            <iframe
+              src={`https://www.youtube.com/embed/${youtubeId}?modestbranding=1&rel=0`}
               className="absolute inset-0 w-full h-full"
-              iframeClassName="w-full h-full"
-              opts={{
-                width: '100%',
-                height: '100%',
-                playerVars: {
-                  modestbranding: 1,
-                  rel: 0,
-                },
-              }}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title={title || caption || "Video"}
             />
           )}
         </div>
