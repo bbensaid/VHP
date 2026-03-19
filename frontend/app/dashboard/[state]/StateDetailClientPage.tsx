@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import Link from "next/link";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import {
@@ -56,7 +57,7 @@ interface ClientPageProps {
   hospitals: SanityHospital[];
 }
 
-export default function StateDetailClientPage({ indexData, programData, stateSlug, hospitals }: ClientPageProps) {
+function StateDetailClientPageInner({ indexData, programData, stateSlug, hospitals }: ClientPageProps) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -240,5 +241,12 @@ export default function StateDetailClientPage({ indexData, programData, stateSlu
         )}
       </div>
     </div>
+  );
+}
+export default function StateDetailClientPage(props: ClientPageProps) {
+  return (
+    <Suspense fallback={null}>
+      <StateDetailClientPageInner {...props} />
+    </Suspense>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
@@ -23,7 +23,7 @@ interface HubPageTemplateProps {
   backLinkHoverClass?: string;
 }
 
-export default function HubPageTemplate({
+function HubPageTemplateInner({
   badgeLabel,
   title,
   subtitle,
@@ -132,5 +132,12 @@ export default function HubPageTemplate({
         ))}
       </div>
     </div>
+  );
+}
+export default function HubPageTemplate(props: HubPageTemplateProps) {
+  return (
+    <Suspense fallback={null}>
+      <HubPageTemplateInner {...props} />
+    </Suspense>
   );
 }

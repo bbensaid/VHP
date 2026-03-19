@@ -4,9 +4,17 @@
  */
 import Stripe from "stripe";
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2026-02-25.clover",
-});
+if (!process.env.STRIPE_SECRET_KEY) {
+  console.warn(
+    "[stripe] STRIPE_SECRET_KEY is not set — Stripe features will be unavailable."
+  );
+}
+
+export const stripe = process.env.STRIPE_SECRET_KEY
+  ? new Stripe(process.env.STRIPE_SECRET_KEY, {
+      apiVersion: "2026-02-25.clover",
+    })
+  : null;
 
 // ─── Plan definitions ─────────────────────────────────────────────────────────
 // Price IDs are set via environment variables so they can differ between

@@ -1,5 +1,6 @@
 'use client';
 
+import { Suspense } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
@@ -24,7 +25,7 @@ const TAB_LABELS: Record<string, string> = {
   hospitals: "Hospital View",
 };
 
-export default function Breadcrumbs() {
+function BreadcrumbsInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   
@@ -85,5 +86,13 @@ export default function Breadcrumbs() {
           )}
         </ol>
     </nav>
+  );
+}
+
+export default function Breadcrumbs() {
+  return (
+    <Suspense fallback={null}>
+      <BreadcrumbsInner />
+    </Suspense>
   );
 }

@@ -40,12 +40,18 @@ export function ProgramProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
+const DEFAULT_PROGRAM_CONTEXT: ProgramContextType = {
+  selectedStateId: null,
+  setSelectedStateId: () => {},
+  simulationMode: 'statusQuo',
+  setSimulationMode: () => {},
+  allStates: {},
+  selectedStateData: null,
+};
+
 export function useProgram() {
   const context = useContext(ProgramContext);
-  if (context === undefined) {
-    throw new Error('useProgram must be used within a ProgramProvider');
-  }
-  return context;
+  return context ?? DEFAULT_PROGRAM_CONTEXT;
 }
 
 // Alias used in legacy pages

@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
@@ -74,7 +75,7 @@ const PillarBlock = ({
   </div>
 );
 
-export default function MethodologyPage() {
+function MethodologyPageInner() {
   const searchParams = useSearchParams();
   const from = searchParams.get("from");
   const backHref = from || "/dashboard";
@@ -391,5 +392,13 @@ export default function MethodologyPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function MethodologyPage() {
+  return (
+    <Suspense fallback={null}>
+      <MethodologyPageInner />
+    </Suspense>
   );
 }

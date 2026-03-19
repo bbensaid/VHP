@@ -4,6 +4,12 @@ import { requireAuth } from "@/lib/auth";
 import { dbAdmin } from "@/lib/db/client";
 
 export async function POST(request: Request) {
+  if (!stripe) {
+    return NextResponse.json(
+      { error: "Stripe is not configured" },
+      { status: 503 }
+    );
+  }
   try {
     const user = await requireAuth();
 

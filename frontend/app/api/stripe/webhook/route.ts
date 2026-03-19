@@ -12,6 +12,13 @@ const PLAN_ROLE_MAP: Record<string, string> = {
 };
 
 export async function POST(request: Request) {
+  if (!stripe) {
+    return NextResponse.json(
+      { error: "Stripe is not configured" },
+      { status: 503 }
+    );
+  }
+
   const body = await request.text();
   const signature = request.headers.get("stripe-signature");
 
@@ -92,8 +99,8 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
 
   if (!userId) return;
 
-  // Retrieve the full subscription
-  const subscription = await stripe.subscriptions.retrieve(
+  // Retrieve the full subscription (stripe is non-null — guarded in POST handler)
+  const subscription = await stripe!.subscriptions.retrieve(
     session.subscription as string
   );
 
