@@ -1,66 +1,174 @@
 "use client";
 
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { SparklesIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import { SparklesIcon, ArrowRightIcon, PaperAirplaneIcon, StopIcon, TrashIcon } from "@heroicons/react/24/outline";
+import ReactMarkdown from "react-markdown";
 
-const SUGGESTED_QUESTIONS = [
-  "What are the biggest cost drivers in U.S. healthcare today?",
-  "How does value-based care improve patient outcomes?",
-  "What does the evidence say about healthcare workforce shortages?",
-];
+interface Message {
+  role: "user" | "ai";
+  text: string;
+}
 
 export default function RightSidebar() {
-  const router = useRouter();
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const abortRef = useRef<AbortController | null>(null);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
+  const messagesRef = useRef(messages);
+  useEffect(() => { messagesRef.current = messages; }, [messages]);
 
-  const handleQuestionClick = (question: string) => {
-    // Store the pre-filled question in sessionStorage so /chat can pick it up
-    // without exposing it in the URL.
-    sessionStorage.setItem("htr-prefill-question", question);
-    router.push("/chat");
+  useEffect(() => {
+    if (messagesContainerRef.current) {
+      messagesContainerRef.current.scrollTop = messagesContainerRef.current.scrollHeight;
+    }
+  }, [messages]);
+
+  const send = async (text: string) => {
+    if (!text.trim() || isLoading) return;
+    if (abortRef.current) abortRef.current.abort();
+    abortRef.current = new AbortController();
+
+    const userMsg: Message = { role: "user", text };
+    setMessages((prev) => [...prev, userMsg]);
+    setInput("");
+    setIsLoading(true);
+
+    const history = messagesRef.current.filter((m) => m.text.trim());
+    setMessages((prev) => [...prev, { role: "ai", text: "" }]);
+
+    try {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: text, history }),
+        signal: abortRef.current.signal,
+      });
+
+      if (!res.ok || !res.body) throw new Error("Error connecting to AI.");
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let done = false;
+      let aiText = "";
+
+      while (!done) {
+        const { value, done: d } = await reader.read();
+        done = d;
+        if (value) {
+          aiText += decoder.decode(value, { stream: true });
+          const display = aiText.includes("[STREAM_ERROR]")
+            ? aiText.replace("[STREAM_ERROR]", "").trimEnd() + "\n\n*Error generating response.*"
+            : aiText;
+          setMessages((prev) => {
+            const updated = [...prev];
+            updated[updated.length - 1] = { role: "ai", text: display };
+            return updated;
+          });
+        }
+      }
+    } catch (err) {
+      if (err instanceof Error && err.name !== "AbortError") {
+        setMessages((prev) => {
+          const updated = [...prev];
+          updated[updated.length - 1] = { role: "ai", text: "Connection error. Please try again." };
+          return updated;
+        });
+      }
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(input); }
   };
 
   return (
-    <aside className="w-full flex flex-col gap-4 pt-4" aria-label="AI Analyst panel">
-      {/* ── Ask a question card ─────────────────────────────────────────────── */}
-      <div className="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+    <aside className="w-full pt-4" aria-label="AI Analyst panel">
+      <div className="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden flex flex-col">
+
         {/* Header */}
-        <div className="flex items-center gap-2 px-4 py-3 border-b border-slate-100 bg-slate-50">
-          <SparklesIcon className="w-4 h-4 text-indigo-500" aria-hidden="true" />
-          <h3 className="text-xs font-black uppercase tracking-widest text-slate-700">
-            AI Analyst
-          </h3>
+        <div className="flex items-center justify-between px-4 py-3 border-b border-slate-100 bg-slate-50">
+          <div className="flex items-center gap-2">
+            <SparklesIcon className="w-4 h-4 text-indigo-500" />
+            <h3 className="text-xs font-black uppercase tracking-widest text-slate-700">AI Analyst</h3>
+          </div>
+          <div className="flex items-center gap-1">
+            {messages.length > 0 && (
+              <button
+                onClick={() => setMessages([])}
+                className="p-1 text-slate-400 hover:text-rose-500 rounded transition-colors"
+                title="Clear"
+              >
+                <TrashIcon className="w-3.5 h-3.5" />
+              </button>
+            )}
+            <Link href="/chat" className="flex items-center gap-1 text-[10px] text-slate-400 hover:text-indigo-600 transition-colors px-1">
+              Full chat <ArrowRightIcon className="w-3 h-3" />
+            </Link>
+          </div>
         </div>
 
-        {/* Body */}
-        <div className="p-4 space-y-3">
-          <p className="text-xs text-slate-600 leading-relaxed">
-            Ask questions about policy, reimbursement models, or workforce
-            trends.
-          </p>
+        {/* Messages */}
+        <div ref={messagesContainerRef} className="flex flex-col gap-3 p-3 overflow-y-auto text-xs" style={{ maxHeight: "calc(100vh - 22rem)" }}>
+          {messages.length === 0 && (
+            <p className="text-slate-400 text-center py-4 leading-relaxed">
+              Ask a quick question without leaving this page.
+            </p>
+          )}
+          {messages.map((msg, i) => (
+            <div key={i} className={msg.role === "user" ? "flex justify-end" : ""}>
+              {msg.role === "user" ? (
+                <div className="bg-indigo-600 text-white rounded-xl rounded-tr-sm px-3 py-2 max-w-[85%] leading-relaxed">
+                  {msg.text}
+                </div>
+              ) : (
+                <div className="border-l-2 border-indigo-200 pl-3 text-slate-700 leading-relaxed">
+                  <ReactMarkdown
+                    components={{
+                      p: ({ node, ...props }) => <p {...props} className="mb-1.5 last:mb-0" />,
+                      ul: ({ node, ...props }) => <ul {...props} className="list-disc pl-4 mb-1.5 space-y-0.5" />,
+                      li: ({ node, ...props }) => <li {...props} />,
+                      strong: ({ node, ...props }) => <strong {...props} className="font-semibold text-slate-900" />,
+                    }}
+                  >
+                    {msg.text || "…"}
+                  </ReactMarkdown>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
 
-          {/* Suggested questions */}
-          <div className="flex flex-col gap-2">
-            {SUGGESTED_QUESTIONS.map((q) => (
-              <button
-                key={q}
-                onClick={() => handleQuestionClick(q)}
-                className="text-left text-xs text-slate-700 hover:text-indigo-700 hover:bg-indigo-50 border border-slate-100 hover:border-indigo-200 rounded-lg px-3 py-2.5 transition-all leading-snug"
-              >
-                {q}
-              </button>
-            ))}
-          </div>
-
-          {/* CTA to full chat page */}
-          <Link
-            href="/chat"
-            className="mt-1 flex items-center justify-center gap-2 w-full py-2.5 bg-slate-900 hover:bg-indigo-700 text-white text-xs font-bold rounded-lg transition-colors shadow-sm"
-          >
-            <SparklesIcon className="w-3.5 h-3.5" aria-hidden="true" />
-            Open Full Chat
-            <ArrowRightIcon className="w-3 h-3 ml-auto opacity-60" aria-hidden="true" />
-          </Link>
+        {/* Input */}
+        <div className="border-t border-slate-100 p-3 flex items-end gap-2">
+          <textarea
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={handleKeyDown}
+            placeholder="Ask a quick question…"
+            rows={1}
+            className="flex-1 text-xs text-slate-900 placeholder:text-slate-400 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-indigo-300 resize-none leading-relaxed"
+            style={{ maxHeight: "80px" }}
+          />
+          {isLoading ? (
+            <button
+              onClick={() => { abortRef.current?.abort(); setIsLoading(false); }}
+              className="flex-shrink-0 p-2 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition-colors"
+            >
+              <StopIcon className="w-3.5 h-3.5" />
+            </button>
+          ) : (
+            <button
+              onClick={() => send(input)}
+              disabled={!input.trim()}
+              className="flex-shrink-0 p-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+            >
+              <PaperAirplaneIcon className="w-3.5 h-3.5" />
+            </button>
+          )}
         </div>
       </div>
     </aside>

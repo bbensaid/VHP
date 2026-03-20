@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { TickerProvider } from "@/components/TickerContext";
 import { SidebarProvider } from "@/components/SidebarContext";
 import AppShell from "@/components/AppShell";
@@ -33,10 +32,9 @@ export default async function RootLayout({
         <CommandPalette />
         <TickerProvider>
           <SidebarProvider>
-            <div className="flex flex-col min-h-screen">
+            <div className="flex flex-col h-screen overflow-hidden">
               <Header />
               <AppShell tickerData={tickerData}>{children}</AppShell>
-              <Footer />
             </div>
           </SidebarProvider>
         </TickerProvider>

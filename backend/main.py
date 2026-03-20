@@ -43,22 +43,29 @@ from llama_index.core import (
 )
 from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core.llms import ChatMessage, MessageRole
-from llama_index.llms.google_genai import GoogleGenAI
-from llama_index.embeddings.google_genai import GoogleGenAIEmbedding
-from llama_index.vector_stores.supabase import SupabaseVectorStore
+from llama_index.llms.groq import Groq as GroqLLM
+from llama_index.embeddings.openai import OpenAIEmbedding
+
+try:
+    from llama_index.vector_stores.postgres import PGVectorStore
+    _PG_VECTOR_AVAILABLE = True
+except ImportError:
+    PGVectorStore = None  # type: ignore
+    _PG_VECTOR_AVAILABLE = False
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
 load_dotenv(override=True)
 
-GOOGLE_API_KEY    = os.getenv("GOOGLE_API_KEY")
+OPENAI_API_KEY    = os.getenv("OPENAI_API_KEY")
 SANITY_PROJECT_ID = os.getenv("SANITY_PROJECT_ID")
 SANITY_DATASET    = os.getenv("SANITY_DATASET", "production")
 SANITY_API_TOKEN  = os.getenv("SANITY_API_TOKEN")
 SANITY_API_VER    = os.getenv("SANITY_API_VERSION", "2023-10-01")
 FRONTEND_URL      = os.getenv("FRONTEND_URL", "http://localhost:3000")
-GEMINI_MODEL      = os.getenv("GEMINI_MODEL", "models/gemini-flash-lite-latest")
-EMBEDDING_MODEL   = os.getenv("EMBEDDING_MODEL", "models/text-embedding-004")
+GROQ_API_KEY      = os.getenv("GROQ_API_KEY")
+GROQ_MODEL        = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+EMBEDDING_MODEL   = "text-embedding-3-small"
 
 # Supabase
 SUPABASE_URL              = os.getenv("SUPABASE_URL") or os.getenv("NEXT_PUBLIC_SUPABASE_URL")
@@ -80,13 +87,15 @@ MAX_SYSTEM_PROMPT_LEN = 800
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("htr-brain")
 
-if not GOOGLE_API_KEY:
-    raise ValueError("GOOGLE_API_KEY is required in backend/.env")
-
 # ── LlamaIndex model settings ─────────────────────────────────────────────────
 
-Settings.llm = GoogleGenAI(model=GEMINI_MODEL, api_key=GOOGLE_API_KEY)
-Settings.embed_model = GoogleGenAIEmbedding(model=EMBEDDING_MODEL, api_key=GOOGLE_API_KEY)
+if not GROQ_API_KEY:
+    raise ValueError("GROQ_API_KEY is required in backend/.env")
+if not OPENAI_API_KEY:
+    raise ValueError("OPENAI_API_KEY is required in backend/.env")
+Settings.llm = GroqLLM(model=GROQ_MODEL, api_key=GROQ_API_KEY)
+Settings.embed_model = OpenAIEmbedding(model=EMBEDDING_MODEL, api_key=OPENAI_API_KEY)
+log.info(f"LLM: Groq {GROQ_MODEL} | Embeddings: OpenAI {EMBEDDING_MODEL}")
 
 # ── Supabase client ───────────────────────────────────────────────────────────
 
@@ -129,16 +138,16 @@ async def get_auth_user(request: Request) -> AuthedUser:
     Then fetch the user's highest role from Supabase.
     Raises 401 if missing/invalid, 403 if role insufficient.
     """
+    if not SUPABASE_JWT_SECRET:
+        # Dev mode: no JWT verification, no token required
+        log.warning("SUPABASE_JWT_SECRET not set — running in dev mode (all requests accepted as subscriber)")
+        return AuthedUser(user_id="dev", email="dev@localhost", role="subscriber")
+
     auth_header = request.headers.get("Authorization", "")
     if not auth_header.startswith("Bearer "):
         raise HTTPException(status_code=401, detail="Missing Authorization header")
 
     token = auth_header.split(" ", 1)[1]
-
-    if not SUPABASE_JWT_SECRET:
-        # Dev mode: skip JWT verification but still require a token
-        log.warning("SUPABASE_JWT_SECRET not set — skipping JWT verification (dev mode)")
-        return AuthedUser(user_id="dev", email="dev@localhost", role="subscriber")
 
     try:
         payload = jwt.decode(
@@ -188,26 +197,26 @@ async def require_subscriber(request: Request) -> AuthedUser:
 SANITY_QUERIES = {
     "policyAnalysis": """*[_type=="policyAnalysis" && defined(slug.current)]{
         _id, title, pillar, summary,
-        "bodyText": string::join(body[].children[].text, " ")
+        "bodyText": pt::text(body)
     }""",
     "post": """*[_type=="post" && defined(slug.current)]{
         _id, title,
-        "bodyText": string::join(body[].children[].text, " ")
+        "bodyText": pt::text(body)
     }""",
     "academyModule": """*[_type=="academyModule" && defined(slug.current)]{
         _id, title, pillar, summary, learningObjectives,
-        "bodyText": string::join(body[].children[].text, " ")
+        "bodyText": pt::text(body)
     }""",
     "caseStudy": """*[_type=="caseStudy" && defined(slug.current)]{
         _id, title, pillar, summary,
-        "bodyText": string::join(body[].children[].text, " ")
+        "bodyText": pt::text(body)
     }""",
     "definition": """*[_type=="definition"]{
         _id, term, description, pillars
     }""",
     "analystNote": """*[_type=="analystNote"]{
         _id, title, pillar,
-        "bodyText": string::join(body[].children[].text, " ")
+        "bodyText": pt::text(body)
     }""",
     "webinar": """*[_type=="webinar" && defined(slug.current)]{
         _id, title, pillar, description
@@ -290,21 +299,24 @@ async def fetch_sanity_content() -> list[Document]:
 
 # ── Index Build ───────────────────────────────────────────────────────────────
 
-def _build_supabase_vector_store() -> Optional[SupabaseVectorStore]:
-    """Create a Supabase-backed vector store if DB URL is configured."""
-    if not SUPABASE_DB_URL:
-        log.warning("SUPABASE_DB_URL not set — using local file storage as fallback")
+def _build_pg_vector_store():
+    """Create a pgvector-backed vector store if DB URL is configured."""
+    if not SUPABASE_DB_URL or not _PG_VECTOR_AVAILABLE:
+        log.warning("PG vector store unavailable — using local file storage as fallback")
         return None
     try:
-        vector_store = SupabaseVectorStore(
-            postgres_connection_string=SUPABASE_DB_URL,
-            collection_name="rag_documents",
-            dimension=768,
+        # asyncpg requires its own URL scheme; derive it from the sync URL
+        async_db_url = SUPABASE_DB_URL.replace("postgresql://", "postgresql+asyncpg://", 1)
+        vector_store = PGVectorStore.from_params(
+            connection_string=SUPABASE_DB_URL,
+            async_connection_string=async_db_url,
+            table_name="rag_documents",
+            embed_dim=1536,  # text-embedding-3-small dimension
         )
-        log.info("✅ Supabase vector store initialized")
+        log.info("✅ PG vector store (Supabase pgvector) initialized")
         return vector_store
     except Exception as e:
-        log.error(f"Could not init Supabase vector store: {e} — falling back to local storage")
+        log.error(f"Could not init PG vector store: {e} — falling back to local storage")
         return None
 
 
@@ -323,15 +335,17 @@ async def build_index() -> VectorStoreIndex:
         pdf_files = [f for f in os.listdir(DATA_DIR) if f.lower().endswith(".pdf")]
         if pdf_files:
             log.info(f"📄 Loading {len(pdf_files)} PDF(s) from data/...")
-            try:
-                pdf_docs = SimpleDirectoryReader(DATA_DIR).load_data()
-                for doc in pdf_docs:
-                    doc.metadata.setdefault("source", "pdf")
-                    doc.metadata.setdefault("pillar", "General")
-                documents.extend(pdf_docs)
-                log.info(f"  ✓ {len(pdf_docs)} pages loaded from PDFs")
-            except Exception as e:
-                log.error(f"  ✗ PDF loading failed: {e}")
+            for pdf_file in pdf_files:
+                pdf_path = os.path.join(DATA_DIR, pdf_file)
+                try:
+                    pdf_docs = SimpleDirectoryReader(input_files=[pdf_path]).load_data()
+                    for doc in pdf_docs:
+                        doc.metadata.setdefault("source", "pdf")
+                        doc.metadata.setdefault("pillar", "General")
+                    documents.extend(pdf_docs)
+                    log.info(f"  ✓ {pdf_file}: {len(pdf_docs)} pages")
+                except Exception as e:
+                    log.error(f"  ✗ {pdf_file} failed: {e}")
 
     # 2. Fetch Sanity CMS
     log.info("🔗 Fetching Sanity CMS content...")
@@ -347,7 +361,7 @@ async def build_index() -> VectorStoreIndex:
 
     log.info(f"\n⏳ Embedding {len(documents)} documents...")
 
-    vector_store = _build_supabase_vector_store()
+    vector_store = _build_pg_vector_store()
 
     if vector_store:
         storage_context = StorageContext.from_defaults(vector_store=vector_store)
@@ -369,7 +383,7 @@ async def build_index() -> VectorStoreIndex:
 
 async def load_index() -> Optional[VectorStoreIndex]:
     """Try to load an existing index from Supabase or local storage."""
-    vector_store = _build_supabase_vector_store()
+    vector_store = _build_pg_vector_store()
 
     if vector_store:
         try:
@@ -545,6 +559,43 @@ async def chat(
     return StreamingResponse(generate(), media_type="text/plain; charset=utf-8")
 
 
+@app.post("/api/suggest")
+async def suggest(request: ChatRequest):
+    """
+    Generate 3 follow-up question suggestions based on conversation history.
+    No auth required — suggestions contain no sensitive data.
+    """
+    history_text = "\n".join(
+        f"{'User' if m.role == 'user' else 'Analyst'}: {m.text[:400]}"
+        for m in (request.history or [])[-6:]  # last 6 turns max
+    )
+    if request.message:
+        history_text += f"\nUser: {request.message[:400]}"
+
+    prompt = (
+        "Based on this health policy conversation, suggest exactly 3 concise follow-up questions "
+        "the user might want to ask next. Return ONLY a JSON array of 3 strings, no other text.\n\n"
+        f"Conversation:\n{history_text}\n\n"
+        "Return format: [\"question 1\", \"question 2\", \"question 3\"]"
+    )
+
+    try:
+        response = await Settings.llm.acomplete(prompt)
+        text = response.text.strip()
+        # Extract JSON array from response
+        start = text.find("[")
+        end = text.rfind("]") + 1
+        if start >= 0 and end > start:
+            import json
+            suggestions = json.loads(text[start:end])
+            if isinstance(suggestions, list):
+                return {"suggestions": suggestions[:3]}
+    except Exception as e:
+        log.warning(f"Suggest error: {e}")
+
+    return {"suggestions": []}
+
+
 @app.post("/api/ingest")
 async def ingest(request: Request):
     """
@@ -582,9 +633,9 @@ def health():
     return {
         "status": "ok",
         "index_ready": _index is not None,
-        "model": GEMINI_MODEL,
+        "model": GROQ_MODEL,
         "embedding_model": EMBEDDING_MODEL,
-        "vector_store": "supabase_pgvector" if SUPABASE_DB_URL else "local_json",
+        "vector_store": "pgvector" if SUPABASE_DB_URL else "local_json",
         "auth_enabled": bool(SUPABASE_JWT_SECRET),
     }
 

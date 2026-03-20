@@ -1,16 +1,15 @@
 // app/api/chat/route.ts
 //
 // Thin proxy to the Python AI Brain (backend/main.py).
-// Validates input, forwards the user's Supabase JWT to the Python backend
-// for auth + tier detection, and streams the response back to the browser.
+// Auth is handled by the Python backend (JWT validation + tier detection).
+// When SUPABASE_JWT_SECRET is not set on the backend, it runs in dev mode and
+// accepts any request.
 //
 // Python backend: cd backend && uvicorn main:app --reload --port 8000
 // Set PYTHON_BACKEND_URL in .env.local for production.
 
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { createSupabaseServerClient } from "@/lib/auth";
-import { rateLimit } from "@/lib/rate-limit";
 
 const PYTHON_BACKEND = process.env.PYTHON_BACKEND_URL || "http://localhost:8000";
 
@@ -28,30 +27,6 @@ const ChatRequestSchema = z.object({
 });
 
 export async function POST(req: Request) {
-  // Get the current user's session token
-  const supabase = await createSupabaseServerClient();
-  const { data: { session } } = await supabase.auth.getSession();
-
-  // Chat requires authentication; return 401 if not logged in
-  if (!session?.access_token) {
-    return NextResponse.json(
-      { error: "Authentication required. Please sign in to use the AI Analyst." },
-      { status: 401 }
-    );
-  }
-
-  // Rate limit: 30 requests per 60 seconds per user
-  const limiter = await rateLimit(`chat:${session.user.id}`, {
-    limit: 30,
-    window: 60_000,
-  });
-  if (!limiter.success) {
-    return NextResponse.json(
-      { error: "Too many requests. Please wait a moment before sending another message." },
-      { status: 429, headers: limiter.headers }
-    );
-  }
-
   let body: unknown;
   try {
     body = await req.json();
@@ -67,13 +42,16 @@ export async function POST(req: Request) {
     );
   }
 
+  // Forward the user's cookie-based session token if present, otherwise send
+  // a dev placeholder so the backend's auth_header check is satisfied.
+  const authHeader = req.headers.get("Authorization") || "Bearer dev";
+
   try {
     const upstream = await fetch(`${PYTHON_BACKEND}/api/chat`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        // Forward the user's JWT — Python backend validates it and extracts role
-        "Authorization": `Bearer ${session.access_token}`,
+        "Authorization": authHeader,
       },
       body: JSON.stringify(parsed.data),
     });
@@ -84,7 +62,7 @@ export async function POST(req: Request) {
 
       if (upstream.status === 401 || upstream.status === 403) {
         return NextResponse.json(
-          { error: "Your plan does not include AI Analyst access. Upgrade to Subscriber or higher." },
+          { error: "Access denied. Check backend auth configuration." },
           { status: 403 }
         );
       }

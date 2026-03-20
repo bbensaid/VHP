@@ -77,7 +77,15 @@ const Header = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const { isHeaderVisible, setHeaderVisible } = useTicker();
-  const { toggleLeft, toggleRight } = useSidebar();
+  const { toggleLeft, toggleRight, setLeftOpen, setRightOpen } = useSidebar();
+  const isChatPage = pathname === "/chat";
+
+  const handleToggleLeft = () => {
+    if (isChatPage) { setLeftOpen(true); router.push("/"); } else { toggleLeft(); }
+  };
+  const handleToggleRight = () => {
+    if (isChatPage) { setRightOpen(true); router.push("/"); } else { toggleRight(); }
+  };
 
   const [headlines, setHeadlines] = useState<{ text: string; url: string }[]>([
     { text: "Loading Intelligence...", url: "#" },
@@ -191,7 +199,7 @@ const Header = () => {
             <div className="w-10 shrink-0">
               {!isStudio && (
                 <button
-                  onClick={toggleLeft}
+                  onClick={handleToggleLeft}
                   className="p-2 text-slate-400 hover:bg-slate-100 rounded-md transition-colors"
                   title="Toggle Navigation"
                 >
@@ -255,7 +263,7 @@ const Header = () => {
           <div className="w-10 shrink-0 flex justify-end ml-4">
             {!isStudio && (
               <button
-                onClick={toggleRight}
+                onClick={handleToggleRight}
                 className="p-2 text-slate-400 hover:bg-slate-100 rounded-md transition-colors"
                 title="Toggle Vitals"
               >

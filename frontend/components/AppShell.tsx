@@ -9,6 +9,7 @@ import TickerStrip from "@/components/TickerStrip";
 import { useTicker } from "@/components/TickerContext";
 import { useSidebar } from "@/components/SidebarContext";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Footer from "@/components/Footer";
 
 interface AppShellProps {
   children: React.ReactNode;
@@ -75,21 +76,21 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const showBreadcrumbs = !isStudio;
   const showTicker = !!activeTickerData && !isStudio;
   const isStickyBarVisible = showBreadcrumbs || showTicker;
-  const sidebarTop = isStickyBarVisible ? "9rem" : "7rem";
+  const sidebarTop = isStickyBarVisible ? "2.5rem" : "0rem";
 
   const handleSidebarLinkClick = () => {
     if (window.innerWidth < 1024) setLeftOpen(false);
   };
 
   if (hideSidebarsCompletely) {
-    return <div className="min-h-screen bg-white">{children}</div>;
+    return <div className="flex-1 min-h-0 overflow-hidden flex flex-col">{children}</div>;
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="flex-1 min-h-0 overflow-y-auto flex flex-col bg-white">
       {/* 1. Sticky Navigation Bar */}
       {isStickyBarVisible && (
-        <div className="sticky top-28 z-40 h-8 flex justify-center transition-all duration-300 pointer-events-none">
+        <div className="sticky top-0 z-40 h-10 flex justify-center transition-all duration-300 pointer-events-none">
           <div className="w-full px-4 h-full pointer-events-auto">
             <div className="h-full flex items-center w-full">
               <div className="shrink-0 flex items-center h-full w-[500px]">
@@ -143,10 +144,13 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           setIsOpen={setRightOpen}
           stickyTop={sidebarTop}
           expandLabel="Display Sidebar"
+          fillHeight={true}
         >
           <RightSidebar />
         </CollapsibleSidebar>
       </div>
+
+      <Footer />
     </div>
   );
 }
