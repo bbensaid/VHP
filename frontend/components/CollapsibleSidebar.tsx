@@ -13,6 +13,7 @@ interface CollapsibleSidebarProps {
   stickyTop: string;
   expandLabel: string;
   headerContent?: React.ReactNode;
+  fillHeight?: boolean;
   children: React.ReactNode;
 }
 
@@ -23,6 +24,7 @@ export default function CollapsibleSidebar({
   stickyTop,
   expandLabel,
   headerContent,
+  fillHeight = false,
   children,
 }: CollapsibleSidebarProps) {
   const isLeft = side === "left";
@@ -47,10 +49,10 @@ export default function CollapsibleSidebar({
           ${isLeft ? "left-0" : "right-0"}
           ${isOpen ? "w-[85vw] md:w-72" : "w-0"}
         `}
-        style={{ 
-          top: stickyTop, 
-          height: `calc(100vh - ${stickyTop})`,
-          maxHeight: `calc(100vh - ${stickyTop})` 
+        style={{
+          top: stickyTop,
+          height: `calc(100vh - ${stickyTop} - 2rem)`,
+          maxHeight: `calc(100vh - ${stickyTop} - 2rem)`
         }}
       >
         <div className="w-full h-full relative">
@@ -61,15 +63,20 @@ export default function CollapsibleSidebar({
             ${isOpen ? "opacity-100 shadow-2xl lg:shadow-none" : "opacity-0 border-none"}
           `}>
             <div className="w-[85vw] md:w-72 h-full flex flex-col relative">
-              {/* Scrollable Content */}
-              <div 
-                className="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200 hover:scrollbar-thumb-slate-300 scrollbar-track-transparent"
-                style={{ direction: isLeft ? "ltr" : "rtl" }}
-              >
-                <div className="px-4 pb-4 pt-0" style={{ direction: "ltr" }}>
+              {fillHeight ? (
+                <div className="flex-1 min-h-0 flex flex-col overflow-hidden px-2 pt-3 pb-4">
                   {children}
                 </div>
-              </div>
+              ) : (
+                <div
+                  className="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200 hover:scrollbar-thumb-slate-300 scrollbar-track-transparent"
+                  style={{ direction: isLeft ? "ltr" : "rtl" }}
+                >
+                  <div className="px-4 pb-4 pt-0" style={{ direction: "ltr" }}>
+                    {children}
+                  </div>
+                </div>
+              )}
             </div>
           </aside>
 
@@ -100,7 +107,7 @@ export default function CollapsibleSidebar({
           className={`hidden lg:flex flex-col items-center py-4 border-slate-200 bg-slate-50 cursor-pointer hover:bg-slate-100 transition-colors z-40 fixed lg:sticky border-t ${isLeft ? "left-0 border-r rounded-tl-xl" : "right-0 border-l rounded-tr-xl"}`}
           style={{
             top: stickyTop,
-            height: `calc(100vh - ${stickyTop})`,
+            height: `calc(100vh - ${stickyTop} - 2rem)`,
             width: COLLAPSED_WIDTH
           }}
           title={expandLabel}

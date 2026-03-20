@@ -175,12 +175,25 @@ npm run dev
 
 ---
 
-## 5. Google Gemini — AI Backend
+## 5. AI APIs — Groq & Google Gemini
 
-The AI Analyst chat feature uses Google's Gemini model. Without this, the chat page
-will not work.
+The AI Analyst uses two APIs: **Groq** for the chat LLM and **Google Gemini** for
+embeddings. Both are required. Both have generous free tiers.
 
-### 5.1 Get a Gemini API Key
+### 5.1 Get a Groq API Key (Chat / LLM)
+
+1. Go to https://console.groq.com and create a free account
+2. Go to **API Keys → Create API Key**
+3. Copy the key
+
+| Variable | Where used |
+|---|---|
+| `GROQ_API_KEY` | `backend/.env` — used by the Python AI backend for chat |
+
+Free tier: 1,000+ requests/day with `llama-3.3-70b-versatile`. More than sufficient
+for a development and early-production platform.
+
+### 5.2 Get a Google Gemini API Key (Embeddings)
 
 1. Go to https://aistudio.google.com/app/apikey
 2. Click **Create API key**
@@ -188,13 +201,15 @@ will not work.
 
 | Variable | Where used |
 |---|---|
-| `GOOGLE_API_KEY` | `backend/.env` — used by the Python AI backend |
+| `GOOGLE_API_KEY` | `backend/.env` — used by the Python AI backend for embeddings |
 
-### 5.2 Check Your Quota
+The embedding model (`gemini-embedding-001`) is only called during index builds, not
+during chat. Free tier: 1,500 requests/day — more than enough for typical re-indexing.
 
-The free Gemini tier has rate limits. If you see errors in the AI chat after heavy
-use, you may have hit your quota. Check at:
-https://aistudio.google.com/app/apikey → "Check quota"
+### 5.3 Check Your Quotas
+
+- Groq: https://console.groq.com → Usage tab
+- Gemini: https://aistudio.google.com → Manage API keys → View quota
 
 ---
 
@@ -213,6 +228,7 @@ cp .env.example .env
 Open `backend/.env` and fill in:
 
 ```env
+GROQ_API_KEY=your_groq_api_key_here
 GOOGLE_API_KEY=your_gemini_api_key_here
 
 SANITY_PROJECT_ID=fxz10xl7
@@ -223,9 +239,13 @@ SANITY_API_VERSION=2023-10-01
 SUPABASE_URL=https://your-project.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=your_service_role_key_here
 SUPABASE_JWT_SECRET=your_jwt_secret_here
+SUPABASE_DB_URL=postgresql://postgres:PASSWORD@db.YOUR-PROJECT-REF.supabase.co:5432/postgres
 
 FRONTEND_URL=http://localhost:3000
 ```
+
+`SUPABASE_DB_URL` is required for pgvector (the AI's vector store). Get it from
+Supabase → Settings → Database → Connection string (URI format).
 
 ### 6.2 Start the Backend
 
@@ -440,12 +460,14 @@ These are the things most likely to break the app without an obvious error messa
 - **Fix:** Open a terminal, `cd backend && uvicorn main:app --reload --port 8000`
 - **Check:** http://localhost:8000/health should return `{"ok": true}`
 
-### ⚠️ Google Gemini Quota
+### ⚠️ Groq / Gemini API Quotas
 
-**Risk level: MEDIUM.**
+**Risk level: LOW–MEDIUM.**
 
-- **Symptom:** AI chat works sometimes but returns errors under heavy use
-- **Fix:** Check quota at https://aistudio.google.com → consider upgrading to paid tier
+- **Groq (chat):** Free tier is generous (1,000+ req/day). If exhausted, chat returns a streaming error.
+  Fix: upgrade at console.groq.com, or switch to a smaller model via the `GROQ_MODEL` env var.
+- **Gemini (embeddings):** Only called during re-indexing, not chat. Free tier: 1,500 req/day.
+  If exhausted mid-index, re-run `/api/ingest` the next day.
 
 ### ⚠️ Stripe Webhook Not Running (Local Dev)
 
@@ -514,7 +536,7 @@ In Supabase → Authentication → URL Configuration:
 | User accounts & login | Supabase Auth | `frontend/.env.local` |
 | Database (roles, subscriptions) | Supabase Postgres | `frontend/.env.local` |
 | Editorial content (articles, modules) | Sanity CMS | `frontend/.env.local` |
-| AI Analyst chat | Python backend + Google Gemini | `backend/.env` |
+| AI Analyst chat | Python backend + Groq (LLM) + Google Gemini (embeddings) | `backend/.env` |
 | Payments & subscriptions | Stripe | `frontend/.env.local` |
 | App hosting (frontend) | Vercel | Vercel dashboard |
 | AI backend hosting | Railway | Railway dashboard |

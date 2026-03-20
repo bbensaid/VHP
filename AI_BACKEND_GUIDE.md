@@ -34,8 +34,9 @@ The underlying technique is called **RAG (Retrieval-Augmented Generation)**:
 2. When a user asks a question, the AI converts that question into the same kind of
    embedding and finds the most similar document chunks.
 
-3. Those chunks are handed to Google Gemini along with the question and the system prompt.
-   Gemini reads the retrieved chunks and writes an answer grounded in them.
+3. Those chunks are handed to the Groq LLM (Llama 3.3 70B) along with the question and
+   the system prompt. The model reads the retrieved chunks and writes an answer grounded
+   in them.
 
 4. The answer streams back to the user word-by-word.
 
@@ -140,9 +141,9 @@ Expected response:
 {
   "status": "ok",
   "index_ready": true,
-  "model": "models/gemini-flash-lite-latest",
-  "embedding_model": "models/text-embedding-004",
-  "vector_store": "supabase_pgvector",
+  "model": "llama-3.3-70b-versatile",
+  "embedding_model": "gemini-embedding-001",
+  "vector_store": "pgvector",
   "auth_enabled": true
 }
 ```
@@ -294,7 +295,7 @@ Response fields:
 |------------------|-------------------------------------------------------------------------|
 | `status`         | Always `"ok"` if the server is running                                  |
 | `index_ready`    | `true` = AI can answer questions. `false` = index is still building.    |
-| `model`          | The Gemini model currently in use                                       |
+| `model`          | The Groq LLM model currently in use                                     |
 | `embedding_model`| The embedding model in use                                              |
 | `vector_store`   | `"supabase_pgvector"` = production. `"local_json"` = fallback mode.     |
 | `auth_enabled`   | `true` if JWT verification is active. `false` = dev mode (no auth).     |
@@ -347,78 +348,68 @@ One line per chat request showing user ID, their role, and message length.
 
 ## 5. Managing Costs
 
-### Google Gemini API Pricing Overview
+### API Cost Overview
 
-Both the chat model and the embedding model are billed through Google AI Studio /
-Google Cloud Vertex AI. Pricing as of early 2026 (verify at ai.google.dev/pricing):
+The AI backend uses two separate API services:
 
-**gemini-flash-lite-latest** (the chat model):
-- Very cheap — designed for high-volume, low-cost use.
-- Billed per million input tokens and per million output tokens.
-- Approximate order of magnitude: $0.01–0.10 per 1,000 conversations depending on
-  message length.
+**Groq API** (the chat / LLM model — `llama-3.3-70b-versatile`):
+- **Free tier:** 1,000+ requests/day, 6,000 tokens/minute. More than enough for a
+  low-to-medium traffic platform.
+- **Paid tier:** Available if you outgrow the free tier. Pricing is per million tokens —
+  very low cost compared to OpenAI or Anthropic.
+- Cost per query on paid tier: fractions of a cent for typical 2,000–6,000 token exchanges.
+- Monitor usage at: https://console.groq.com
 
-**text-embedding-004** (the embedding model):
-- Charged per character/token embedded.
-- Cost is incurred during index builds, not during chat.
-- Re-indexing 300 documents costs approximately $0.01–0.05.
+**Google Gemini API** (the embedding model — `gemini-embedding-001`):
+- **Free tier:** 1,500 requests/day. Sufficient for re-indexing a typical corpus.
+- Cost is incurred **only during index builds**, not during chat.
+- Embeddings are stored in Supabase — re-indexing is only needed when content changes.
+- Re-indexing 300 documents uses ~300–400 API calls (one per chunk), completing within
+  the free daily quota unless the corpus is very large.
+- Monitor usage at: https://aistudio.google.com → Manage API keys → View quota
 
 ### What Drives Cost
 
 **Per-query costs (chat):**
 
-Each question to the AI sends:
+Each question to the AI sends via Groq:
 1. The system prompt (~150–250 tokens)
 2. Retrieved document chunks (~500–1,500 tokens)
 3. Conversation history (up to 4,096 tokens)
 4. The user's message (~50–500 tokens)
 
 Total input per query: roughly 800–6,000 tokens. Output (the answer): 200–1,000 tokens.
-
-At gemini-flash-lite pricing, a platform with 1,000 queries/day would cost well under $5/day.
+On the Groq free tier, this is $0. On the paid tier, negligible cost per query.
 
 **Index-build costs (embedding):**
 
 Only incurred when `build_index()` runs — at first startup, after restart with no cached
-index, or on `/api/ingest`. Each document chunk is embedded once. Frequent re-indexing
-(e.g., running `/api/ingest` every hour) will accumulate cost. Recommended cadence:
-re-index manually after publishing significant content, not on a timer.
-
-### How to Monitor Usage
-
-1. Go to [Google AI Studio](https://aistudio.google.com/) and sign in with the Google
-   account that owns the API key.
-2. Click your profile → "Manage API keys" → select the key in use.
-3. Usage graphs show requests and token counts over time.
-4. For billing alerts, go to [Google Cloud Console](https://console.cloud.google.com/) →
-   Billing → Budgets & Alerts → create a budget with email alert at $10/month.
+index, or on `/api/ingest`. Each document chunk is embedded once and stored in Supabase.
+Recommended cadence: re-index manually after publishing significant content, not on a timer.
 
 ### Rate Limits and What Happens When You Hit Them
 
-Free tier (no billing set up) has low rate limits (~15 requests/minute for flash models).
-Paid tier limits are much higher (~1,000+ requests/minute).
+**Groq rate limits (chat):**
+- Free tier: ~6,000 tokens/minute, 1,000+ requests/day.
+- If hit: Groq returns a 429. The user sees a streaming error or `[STREAM_ERROR]`.
+- No data is lost; the user can retry after a few seconds.
+- To raise limits: upgrade to a paid Groq plan at console.groq.com.
 
-If a rate limit is hit during chat:
-- Gemini returns a 429 error.
-- The user sees a streaming error or a `[STREAM_ERROR]` suffix.
-- No data is lost; the user can retry.
+**Gemini rate limits (embeddings):**
+- Free tier: 1,500 requests/day, 5 requests/second.
+- If hit during indexing: the backend automatically retries with exponential backoff.
+- The build continues but takes longer. You will see `429` in the logs with pauses.
+- For very large corpora (1,000+ chunks), consider spacing out `/api/ingest` calls
+  across multiple days, or enable billing on Google Cloud to raise limits.
 
-If a rate limit is hit during indexing:
-- LlamaIndex automatically retries with exponential backoff.
-- The build continues but takes longer.
-- You will see `429` mentions in the logs with pauses between batches.
+### How to Reduce Cost / Usage If Needed
 
-To avoid hitting limits: ensure billing is enabled on your Google Cloud project,
-which raises limits substantially.
-
-### How to Reduce Cost If Needed
-
-1. **Switch to a smaller model** — The `GEMINI_MODEL` env var controls the chat model.
-   `gemini-flash-lite-latest` is already the cheapest production option. If cost is not
-   a concern and you want better answers, you could try `models/gemini-1.5-flash-latest`.
+1. **Switch Groq model** — The `GROQ_MODEL` env var controls the chat model.
+   `llama-3.3-70b-versatile` is an excellent balance of quality and speed. For a
+   faster/cheaper option, try `llama-3.1-8b-instant`. Set in `backend/.env`.
 
 2. **Reduce history length** — In `backend/main.py`, the `ChatMemoryBuffer` token limit
-   is 4,096. Lowering it reduces input tokens per query. Edit line ~518:
+   is 4,096. Lowering it reduces input tokens per query. Edit the relevant line:
    ```python
    memory = ChatMemoryBuffer.from_defaults(token_limit=2048)
    ```
@@ -427,7 +418,7 @@ which raises limits substantially.
    published new content, not on a schedule.
 
 4. **Limit document length** — Documents are currently truncated at 8,000 characters
-   (line ~280 in `main.py`). Reducing this cuts embedding cost but may lose context.
+   (line ~280 in `main.py`). Reducing this cuts embedding API calls but may lose context.
 
 ---
 
@@ -530,7 +521,8 @@ In your Railway project → service → Variables tab, set all of these:
 
 | Variable                  | Where to get it                                          |
 |---------------------------|----------------------------------------------------------|
-| `GOOGLE_API_KEY`          | Google AI Studio → API Keys                              |
+| `GROQ_API_KEY`            | Groq Console → console.groq.com → API Keys               |
+| `GOOGLE_API_KEY`          | Google AI Studio → aistudio.google.com → API Keys        |
 | `SANITY_PROJECT_ID`       | Sanity dashboard → project settings                      |
 | `SANITY_DATASET`          | Usually `production`                                     |
 | `SANITY_API_TOKEN`        | Sanity dashboard → API → Tokens (read-only is enough)    |
@@ -542,7 +534,7 @@ In your Railway project → service → Variables tab, set all of these:
 | `FRONTEND_URL`            | Your Vercel domain, e.g. `https://htr.vercel.app`        |
 | `INGEST_SECRET`           | A random string you generate (keep it private)           |
 
-Do not set `GEMINI_MODEL` or `EMBEDDING_MODEL` unless you want to override the defaults.
+Do not set `GROQ_MODEL` or `EMBEDDING_MODEL` unless you want to override the defaults.
 
 **To generate a secure `INGEST_SECRET`:**
 
@@ -610,9 +602,10 @@ Railway → service → Settings → Health Check Timeout.
 
 ```
 ValueError: GOOGLE_API_KEY is required in backend/.env
+ValueError: GROQ_API_KEY is required in backend/.env
 ```
 
-Fix: Add `GOOGLE_API_KEY=...` to `backend/.env`.
+Fix: Add the missing key to `backend/.env`. Both `GOOGLE_API_KEY` and `GROQ_API_KEY` are required.
 
 **Check 2 — Missing `.env` file:**
 
@@ -669,14 +662,15 @@ pip install -r requirements.txt
 
 Fix: Generate a new read-only token in Sanity dashboard → API → Tokens. Update `backend/.env`.
 
-**Check 2 — Google API key quota exhausted:**
+**Check 2 — Embedding API quota exhausted:**
 
 ```
-google.api_core.exceptions.ResourceExhausted: 429
+RuntimeError: Gemini embedding quota exceeded
 ```
 
-Fix: Either wait for the quota to reset (usually 1 minute for RPM limits, 24 hours for
-daily limits), or enable billing on your Google Cloud project to raise limits.
+Fix: Wait for the quota to reset (Gemini free tier resets daily). The backend uses
+exponential backoff automatically, but if the full daily quota is gone it will fail.
+Re-run `/api/ingest` the next day, or enable billing on your Google Cloud project.
 
 **Check 3 — Corrupt PDF:**
 
@@ -716,7 +710,7 @@ This is almost always a content problem, not a code problem.
 
 **The AI gives an answer that contradicts your documents (confabulation):**
 
-- Gemini is generating text that sounds plausible but is not grounded in your documents.
+- The LLM is generating text that sounds plausible but is not grounded in your documents.
 - This typically happens when the retrieved chunks do not contain enough relevant context.
 - Mitigation: add more content to `backend/data/` covering that topic more thoroughly.
 - You can also make the system prompt more restrictive: add "If you cannot find the
@@ -745,16 +739,17 @@ curl http://localhost:8000/health
 
 If `index_ready` is `false`, the server is still building the index. Wait.
 
-**Check 2 — Gemini API latency:**
+**Check 2 — Groq API latency or rate limits:**
 
-Google's API occasionally has elevated latency. Check
-[status.cloud.google.com](https://status.cloud.google.com) for incidents.
+Groq occasionally has elevated latency or may throttle requests on the free tier.
+Check https://status.groq.com for incidents. On free tier, if you are hitting token/minute
+limits, responses will queue and appear slow. Upgrade to a paid Groq plan to raise limits.
 
 **Check 3 — Large conversation history:**
 
-Very long conversations (20+ turns) send thousands of tokens of history on every request,
-slowing Gemini down. The `ChatMemoryBuffer` token limit is 4,096 — if conversations
-routinely exceed this, older messages are dropped automatically. This is expected behavior.
+Very long conversations (20+ turns) send thousands of tokens of history on every request.
+The `ChatMemoryBuffer` token limit is 4,096 — if conversations routinely exceed this,
+older messages are dropped automatically. This is expected behavior.
 
 **Check 4 — Railway server under-resourced:**
 

@@ -482,7 +482,7 @@ If the backend crashes immediately on start, the terminal will show a Python tra
 
 **Most likely causes:**
 1. The vector index is being rebuilt from scratch (first startup or after clearing `backend/storage/`). This takes 2–5 minutes.
-2. The Gemini API is responding slowly (upstream latency — not something you can control directly).
+2. The Groq API is responding slowly (upstream latency — not something you can control directly).
 3. The Supabase pgvector query is slow because embeddings are not indexed.
 
 **Fix — Step by step:**
@@ -502,9 +502,9 @@ Go to `http://localhost:8000/health` (local) or your backend's `/health` URL. Lo
 - `"index_ready": true` → index is ready; slowness is upstream latency
 
 *Step 3: If it is consistently slow (index is ready)*
-The Gemini Flash Lite model may be experiencing high latency. Try:
+The Groq LLM may be experiencing high latency. Try:
 - Waiting a few minutes and trying again
-- Checking [Google's API status page](https://status.cloud.google.com/)
+- Checking [Groq's status page](https://status.groq.com)
 
 *Step 4: Add a pgvector index (production)*
 In Supabase SQL Editor, if not already present:
@@ -839,10 +839,10 @@ kill -9 12345
 uvicorn main:app --reload --port 8000
 ```
 
-**`ImportError: cannot import name 'GoogleGenAI' from 'llama_index.llms.google_genai'`**
-The LlamaIndex Google Gemini package is outdated.
+**`ImportError: No module named 'llama_index.llms.groq'`**
+The LlamaIndex Groq package is missing.
 ```bash
-pip install --upgrade llama-index-llms-google-genai llama-index-embeddings-google-genai
+pip install llama-index-llms-groq
 ```
 
 ---
@@ -861,7 +861,7 @@ The `index_ready` field in `/health` stays `false`.
 1. A large number of PDF files in `backend/data/` are being processed.
 2. Sanity GROQ API is slow or timing out during content fetch.
 3. Supabase pgvector upsert is slow because the table has no index.
-4. The Google Embeddings API is being rate-limited, causing retries.
+4. The Gemini Embeddings API is being rate-limited, causing retries.
 
 **Fix — Step by step:**
 
@@ -879,8 +879,8 @@ Add them back once the initial index is built.
 *Step 3: Check for Sanity API errors*
 If the backend log shows Sanity fetch errors or timeouts, check your `SANITY_API_TOKEN` and `SANITY_PROJECT_ID` in `backend/.env`.
 
-*Step 4: Check the Google API quota (if embeddings are failing)*
-See [Section 6.4](#64-google-api-quota-exceeded). Embedding quota exhaustion causes retries that make indexing take forever.
+*Step 4: Check the Gemini embedding quota (if embeddings are failing)*
+See [Section 6.4](#64-api-quota-exceeded). Embedding quota exhaustion causes retries that make indexing take forever.
 
 *Normal build time expectations:*
 - First run with < 5 PDFs and moderate Sanity content: **2–5 minutes**
@@ -917,35 +917,39 @@ The backend processes documents in batches. This is already handled by LlamaInde
 
 ---
 
-### 6.4 Google API quota exceeded
+### 6.4 API quota exceeded
 
-**What you see:** Chat responses fail, or indexing stops with errors in the backend terminal like:
+There are two separate quota pools — Groq (chat) and Gemini (embeddings). Errors look different for each.
+
+**Groq quota exceeded (chat):**
 ```
-google.api_core.exceptions.ResourceExhausted: 429 Quota exceeded for quota metric 'generate_content_request_count'
+groq.RateLimitError: Rate limit reached for llama-3.3-70b-versatile
 ```
-Or the `/health` endpoint shows `index_ready: false` after previously being ready.
+Chat responses will fail with a streaming error. The index is unaffected.
 
-**Most likely causes:**
-1. You hit the Google Gemini API free-tier quota (requests per minute or per day).
-2. A large number of documents were being embedded simultaneously, exhausting the embedding quota.
+*Fix:*
+- Per-minute quota: wait 60 seconds and retry — resets automatically.
+- Per-day quota: wait until midnight UTC or upgrade your Groq plan at https://console.groq.com.
 
-**Fix — Step by step:**
+**Gemini embedding quota exceeded (index build only):**
+```
+RuntimeError: Gemini embedding quota exceeded
+```
+Only happens during `/api/ingest` or first-run index build. Chat is unaffected if the index was previously built.
+
+*Fix — Step by step:*
 
 *Step 1: Wait for the quota to reset*
-Most Google API quotas reset per minute or per day:
-- Per-minute limits reset automatically — wait 60 seconds and retry
-- Per-day limits reset at midnight Pacific Time
+Gemini free tier resets daily. Wait until the next day and re-trigger with:
+```bash
+curl -X POST http://localhost:8000/api/ingest
+```
 
-*Step 2: Check your quota usage in Google Cloud Console*
-1. Go to [console.cloud.google.com](https://console.cloud.google.com) → **APIs & Services** → **Credentials**
-2. Click on your API key → **View usage** or go to **APIs & Services** → **Gemini API** → **Quotas**
-3. You can see current usage vs. limits
+*Step 2: Check your quota usage*
+Go to [Google AI Studio](https://aistudio.google.com) → **Manage API keys** → view quota usage.
 
-*Step 3: Request a quota increase*
-In Google Cloud Console → **APIs & Services** → **Gemini API** → **Quotas**, find the relevant quota (requests per minute), click the pencil/edit icon, and request a higher limit. This is free but requires Google approval (usually instant for modest increases).
-
-*Step 4: Switch to a paid Google Cloud project*
-The free Gemini API tier has strict limits. If you are using an API key from a free project, create a billing-enabled Google Cloud project and generate a new API key from there. Usage-based billing applies, but limits are much higher.
+*Step 3: Enable billing on your Google Cloud project*
+Creates a billing-enabled project, generates a new API key, and updates `GOOGLE_API_KEY` in `backend/.env`. Usage-based billing applies but limits are much higher than the free tier.
 1. Update `GOOGLE_API_KEY` in `backend/.env` with the new key
 2. Restart the backend
 

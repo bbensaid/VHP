@@ -30,7 +30,7 @@ Open your browser and go to:
 ```
 https://your-railway-app.railway.app/api/health
 ```
-You should see a JSON response like `{"status": "ok", "model": "gemini-flash-lite-latest"}`.
+You should see a JSON response like `{"status": "ok", "model": "llama-3.3-70b-versatile"}`.
 If you get an error or a timeout, the Python backend is down. Jump to [AI backend is down](#ai-backend-is-down).
 
 **2. Check Vercel deployment status**
@@ -93,7 +93,8 @@ Count total users. Compare to last month. Note which month crossed 500, 1,000, a
 
 | Service | Where to check |
 |---|---|
-| Google Gemini | https://console.cloud.google.com/billing |
+| Groq (LLM) | https://console.groq.com |
+| Google Gemini (embeddings) | https://console.cloud.google.com/billing |
 | Vercel | https://vercel.com/account/billing |
 | Railway | https://railway.app/account/billing |
 | Supabase | https://supabase.com/dashboard/account/billing |
@@ -157,15 +158,16 @@ A healthy response looks like:
 ```json
 {
   "status": "ok",
-  "model": "gemini-flash-lite-latest",
-  "index_loaded": true,
-  "document_count": 142
+  "model": "llama-3.3-70b-versatile",
+  "index_ready": true,
+  "embedding_model": "gemini-embedding-001",
+  "vector_store": "pgvector"
 }
 ```
 
 What each field means:
 - `status: "ok"` — The FastAPI process is running and responding.
-- `model` — Which Gemini model is active. If this changes unexpectedly, a config variable may have been overwritten.
+- `model` — The Groq LLM model currently in use. If this changes unexpectedly, a config variable may have been overwritten.
 - `index_loaded: true` — The LlamaIndex vector store loaded successfully from `backend/storage/`. If `false`, the AI will not be able to answer questions based on your content — the index needs to be rebuilt (restart the Railway service and watch logs for index-building output).
 - `document_count` — Number of documents indexed. If this drops significantly, the RAG content sync may have failed.
 
@@ -181,7 +183,8 @@ If the endpoint returns a **502 Bad Gateway**, the Railway service is down or st
 | Database size | Supabase → Settings → Database | Approaching 400MB (upgrade before 500MB) |
 | Bandwidth (Vercel) | Vercel → Usage | Approaching 80GB/month |
 | AI chat requests/day | Railway logs (count `/api/chat` POSTs) | Watch for sudden spikes (abuse) |
-| Gemini API errors (429) | Railway logs | Any consistent 429 stream = quota hit |
+| Groq API errors (429) | Railway logs | Any consistent 429 stream = Groq quota hit |
+| Gemini embedding errors (429) | Railway logs | Only during `/api/ingest` — embedding quota hit |
 | Stripe MRR | Stripe → Revenue | Track monthly |
 | Subscription churn rate | Stripe → Subscriptions | >5%/month is a problem |
 | Build time | Vercel → Deployments | >3 minutes = investigate bundle size |
@@ -376,7 +379,7 @@ Row Level Security (RLS) is a database feature that controls which rows a user c
 | Vercel Edge Network | DDoS protection, bot filtering | Automatic, managed by Vercel |
 | Next.js API routes | Per-IP rate limiting (if implemented) | Depends on your `middleware.ts` implementation |
 | Railway / FastAPI | No rate limiting by default | You must add it (see below) |
-| Google Gemini API | Per-minute and per-day quotas | ~60 requests/min (free), configurable on pay-as-you-go |
+| Groq API | Per-minute and per-day quotas | ~6,000 tokens/min free tier; upgrade at console.groq.com |
 | Supabase Auth | Login attempt throttling | Built-in: 30 failed logins triggers a lockout |
 
 **Adding rate limiting to the Python backend (recommended):**
@@ -402,7 +405,7 @@ async def chat(request: Request, ...):
     ...
 ```
 
-This prevents a single user from sending hundreds of AI queries per minute (which would drain your Gemini quota).
+This prevents a single user from sending hundreds of AI queries per minute (which would drain your Groq quota).
 
 ---
 
@@ -516,16 +519,15 @@ Go to: Railway dashboard → your service → **Settings** → **Resource Limits
 
 ---
 
-### Google Gemini
+### Groq (Chat LLM)
 
 **Free tier limits (as of 2026):**
-- `gemini-flash-lite-latest`: 15 requests per minute, 1 million tokens per minute, 1,500 requests per day
-- `gemini-1.5-flash`: 15 RPM, 1 million TPM, 1,500 RPD
+- `llama-3.3-70b-versatile`: 6,000 tokens/minute, 1,000+ requests/day
+- `llama-3.1-8b-instant`: higher throughput, lower quality — fallback option
 
-**How to upgrade to pay-as-you-go:**
-1. Go to: https://console.cloud.google.com/billing
-2. Link a billing account to your project.
-3. Once billing is enabled, rate limits increase dramatically (1,000+ RPM).
+**How to upgrade:**
+Go to https://console.groq.com → Billing → upgrade to a paid plan.
+Paid tier limits are substantially higher and priced per million tokens.
 
 **Cost estimate per 1,000 AI chat queries (approximate, 2026 pricing):**
 
@@ -534,12 +536,22 @@ Assumptions: Average query = 500 input tokens + 300 output tokens = 800 tokens p
 
 | Model | Input cost | Output cost | Est. cost per 1,000 queries |
 |---|---|---|---|
-| `gemini-flash-lite-latest` | $0.075/million tokens | $0.30/million tokens | ~$0.18 |
-| `gemini-1.5-flash` | $0.075/million tokens | $0.30/million tokens | ~$0.18 |
-| `gemini-1.5-pro` | $1.25/million tokens | $5.00/million tokens | ~$2.50 |
+| `llama-3.3-70b-versatile` | ~$0.59/million tokens | ~$0.79/million tokens | ~$0.11 |
+| `llama-3.1-8b-instant` | ~$0.05/million tokens | ~$0.08/million tokens | ~$0.01 |
 
 For early stage (under 1,000 total chat queries per day), the free tier is sufficient.
-At 10,000 queries/day on `gemini-flash-lite`, monthly cost ≈ **$54/month**.
+At 10,000 queries/day, monthly cost on paid Groq ≈ **$33/month** (Llama 3.3 70B).
+
+### Google Gemini (Embeddings Only)
+
+**Free tier limits (as of 2026):**
+- `gemini-embedding-001`: 1,500 requests/day, 5 requests/second
+
+Embeddings are only called during index builds (via `/api/ingest`), not during chat.
+The free tier is sufficient for normal re-indexing cadence.
+
+**How to upgrade:** Enable billing on your Google Cloud project at
+https://console.cloud.google.com/billing — usage-based pricing applies beyond free tier.
 
 ---
 
@@ -574,7 +586,8 @@ All estimates assume typical usage patterns. "Free" means within free tier limit
 | Railway | $0 | $5 free credit covers a small always-on service |
 | Supabase | $0 | Database tiny, MAU minimal |
 | Sanity | $0 | Well within free tier |
-| Google Gemini | $0 | Free tier covers 1,500 queries/day |
+| Groq (LLM) | $0 | Free tier: 1,000+ req/day |
+| Google Gemini (embeddings) | $0 | Free tier covers re-indexing needs |
 | Stripe | $0 + 2.9% + $0.30 per transaction | Only pay when you earn |
 | **Total** | **~$0/month** | |
 
@@ -587,7 +600,7 @@ This stage: focus on building content, onboarding first users, validating produc
 At 1,000 MAU, Supabase free tier is fine (50,000 MAU limit). But you likely have:
 - Paying subscribers generating Stripe revenue
 - A team member or two needing Sanity access
-- Enough AI usage to consider paid Gemini tier for better rate limits
+- Enough AI usage to consider paid Groq tier for higher rate limits
 
 | Service | Cost | Trigger |
 |---|---|---|
@@ -595,7 +608,8 @@ At 1,000 MAU, Supabase free tier is fine (50,000 MAU limit). But you likely have
 | Railway | $5–$20 | Upgrade if memory usage spikes; Hobby plan at $5 |
 | Supabase | $0 | Still within free tier |
 | Sanity | $0 | Still within free tier (if ≤3 editors) |
-| Google Gemini | $0–$10 | Pay-as-you-go if you need higher rate limits; minimal cost at this scale |
+| Groq (LLM) | $0–$10 | Pay-as-you-go if you hit free tier limits; minimal cost at this scale |
+| Google Gemini (embeddings) | $0 | Free tier sufficient for re-indexing |
 | Stripe | 2.9% + $0.30/transaction | Revenue-dependent |
 | **Total** | **~$5–50/month** | |
 
@@ -613,7 +627,8 @@ At this scale, you need reliability guarantees: no paused databases, daily backu
 | Railway | $20–50/month | Dedicated resources, higher RAM for AI backend |
 | Supabase Pro | $25/month | No pausing, daily backups, 8GB storage |
 | Sanity Team | $0–$99/month | Only if you have >3 editors or >10GB assets |
-| Google Gemini | $50–200/month | ~10,000–100,000 queries/month at flash-lite rates |
+| Groq (LLM) | $10–50/month | ~10,000–100,000 queries/month at Llama 3.3 70B rates |
+| Google Gemini (embeddings) | $0–5/month | Pay-as-you-go if frequent large re-indexes |
 | Stripe | 2.9% + $0.30/transaction | Revenue-dependent |
 | **Total** | **~$115–400/month** | |
 
@@ -840,7 +855,8 @@ If users report the site is unreachable or you get a UptimeRobot alert:
 - https://vercel-status.com
 - https://status.supabase.com
 - https://status.railway.app
-- https://status.google.com (for Gemini)
+- https://status.groq.com (for Groq LLM)
+- https://status.google.com (for Gemini embeddings)
 
 If any of these show an incident, you are caught in a third-party outage. Nothing to do except wait and post a status update to users.
 
@@ -895,8 +911,9 @@ Signs: `/chat` page errors, health endpoint unreachable, Railway shows service a
 2. Check Railway logs for the crash reason:
    - `OOMKilled` → out of memory. Increase RAM to 1GB in Settings, restart.
    - `ModuleNotFoundError` → a Python dependency is missing. Check `requirements.txt`, push a fix.
-   - `GOOGLE_API_KEY invalid` → the Gemini API key expired or was rotated without updating Railway env vars. Update the variable in Railway → Settings → Variables, then redeploy.
-   - `Connection refused` from LlamaIndex → likely a transient Gemini API issue. Restart the service and check Gemini status.
+   - `GROQ_API_KEY invalid` → the Groq API key expired or was rotated without updating Railway env vars. Update in Railway → Settings → Variables, then redeploy.
+   - `GOOGLE_API_KEY invalid` → the Gemini embedding key expired. Update in Railway → Settings → Variables, then redeploy.
+   - `Connection refused` from LlamaIndex → likely a transient Groq API issue. Restart the service and check https://status.groq.com.
 3. Restart the service: Railway dashboard → your service → **Restart**.
 4. Watch logs. The service should print `Application startup complete` and then `INFO: Uvicorn running on http://0.0.0.0:8000` within 30 seconds.
 5. Verify with the health endpoint: `https://your-railway-app.railway.app/api/health`
