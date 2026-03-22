@@ -22,6 +22,7 @@ const schema = _schema as any;
 const structure = _structure as any;
 // import {StudioBlock} from './sanity/components/StudioBlock'
 
+
 export default defineConfig({
   basePath: '/studio',
   projectId,
