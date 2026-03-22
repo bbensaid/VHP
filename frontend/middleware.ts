@@ -9,7 +9,7 @@ type Protection =
 
 const PROTECTED_ROUTES: Array<{ prefix: string; protection: Protection }> = [
   { prefix: "/admin",         protection: { type: "role",     role: "admin" } },
-  { prefix: "/advisory-hub", protection: { type: "role",     role: "advisory" } },
+  { prefix: "/advisory-hub", protection: { type: "role",     role: "subscriber" } },
   { prefix: "/dashboard",    protection: { type: "role",     role: "subscriber" } },
   { prefix: "/chat",         protection: { type: "role",     role: "subscriber" } },
   { prefix: "/hti-dashboard",protection: { type: "role",     role: "subscriber" } },
