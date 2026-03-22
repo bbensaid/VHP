@@ -90,7 +90,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
     <div className="flex-1 min-h-0 overflow-y-auto flex flex-col bg-white">
       {/* 1. Sticky Navigation Bar */}
       {isStickyBarVisible && (
-        <div className="sticky top-0 z-40 h-10 flex justify-center transition-all duration-300 pointer-events-none">
+        <div className="sticky top-0 z-50 h-10 flex justify-center transition-all duration-300 pointer-events-none bg-white border-b border-slate-200">
           <div className="w-full px-4 h-full pointer-events-auto">
             <div className="h-full flex items-center w-full">
               <div className="shrink-0 flex items-center h-full w-[500px]">
@@ -120,7 +120,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
       )}
 
       {/* 2. Main Content Area */}
-      <div className="flex flex-col lg:flex-row mt-8 w-full px-4 transition-all relative">
+      <div className="flex flex-col lg:flex-row mt-8 w-full px-4 transition-all relative z-0">
         <CollapsibleSidebar
           side="left"
           isOpen={isLeftOpen}
