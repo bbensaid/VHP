@@ -458,7 +458,7 @@ export default function VermontAct167Page() {
       {/* ── PODCAST ──────────────────────────────────────────────────────────── */}
       <section className="mb-16">
         <SectionHeader label="Audio Analysis" title="HTR Podcast: Unpacking Act 167" />
-        <div className="bg-slate-900 text-white rounded-2xl p-8">
+        <div className="bg-indigo-700 text-white rounded-2xl p-8">
           <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="w-16 h-16 rounded-2xl bg-violet-500 flex items-center justify-center shrink-0">
               <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -661,7 +661,7 @@ export default function VermontAct167Page() {
       {/* ── HTR ANALYSIS ─────────────────────────────────────────────────────── */}
       <section className="mb-12">
         <SectionHeader label="HTR Analysis" title="What This Means for Vermont Healthcare" />
-        <div className="bg-slate-900 text-white rounded-2xl p-8">
+        <div className="bg-indigo-700 text-white rounded-2xl p-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div>
               <div className="text-xs font-black uppercase tracking-widest text-violet-400 mb-2">The Stakes</div>

@@ -49,10 +49,10 @@ export default function AdvisoryPage() {
       </div>
 
       {/* ── FIVE PILLARS BAND ─────────────────────────────────────────────── */}
-      <div className="bg-slate-900 border-b border-slate-800">
+      <div className="bg-indigo-700 border-b border-indigo-800">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl py-4">
           <div className="flex flex-wrap items-center gap-2 justify-center md:justify-start">
-            <span className="text-slate-400 text-xs font-bold uppercase tracking-widest mr-3">5 Pillar Framework:</span>
+            <span className="text-indigo-200 text-xs font-bold uppercase tracking-widest mr-3">5 Pillar Framework:</span>
             {(Object.entries(PILLAR_STYLES) as [keyof typeof PILLAR_STYLES, typeof PILLAR_STYLES[keyof typeof PILLAR_STYLES]][]).map(([key, styles]) => (
               <span key={key} className={`text-xs font-bold px-3 py-1 rounded-full ${styles.bg} ${styles.text} ${styles.border} border`}>
                 {styles.label}
@@ -63,13 +63,13 @@ export default function AdvisoryPage() {
       </div>
 
       {/* ── STATS BAR ─────────────────────────────────────────────────────── */}
-      <div className="bg-slate-900 text-white py-10 border-b border-slate-800">
+      <div className="bg-indigo-700 text-white py-10 border-b border-indigo-800">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
             {ADVISORY_STATS.map((stat) => (
               <div key={stat.label}>
-                <div className="text-4xl font-black text-fuchsia-400 mb-1">{stat.value}</div>
-                <div className="text-slate-400 text-sm font-medium">{stat.label}</div>
+                <div className="text-4xl font-black text-fuchsia-300 mb-1">{stat.value}</div>
+                <div className="text-indigo-200 text-sm font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -178,17 +178,17 @@ export default function AdvisoryPage() {
       </div>
 
       {/* ── CLIENT TYPES ──────────────────────────────────────────────────── */}
-      <div className="bg-slate-900 text-white py-20">
+      <div className="bg-indigo-700 text-white py-20">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-black mb-4">Types of Clients We Serve</h2>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+            <p className="text-xl text-indigo-100 max-w-2xl mx-auto">
               From the bedside to the boardroom to the Capitol — we work across every part of the U.S. healthcare system.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {CLIENT_SEGMENTS.map((client) => (
-              <div key={client.name} className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-fuchsia-600 transition-colors">
+              <div key={client.name} className="bg-indigo-600 rounded-xl p-6 border border-indigo-500 hover:border-fuchsia-400 transition-colors">
                 <div className="text-3xl mb-4">{client.icon}</div>
                 <h3 className="text-lg font-bold text-white mb-2">{client.name}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed">{client.description}</p>

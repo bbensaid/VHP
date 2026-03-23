@@ -29,13 +29,13 @@ function getFilterStyle(filter: string, isActive: boolean) {
   const base = "px-5 py-2 rounded-full text-sm font-bold border transition-all shadow-sm";
   if (isActive) {
     switch (filter) {
-      case "All Programs":      return `${base} bg-slate-900 text-white border-slate-900`;
+      case "All Programs":      return `${base} bg-indigo-600 text-white border-indigo-600`;
       case "Policy Pillar":     return `${base} bg-sky-600 text-white border-sky-600`;
       case "Economics Pillar":  return `${base} bg-emerald-600 text-white border-emerald-600`;
       case "Technology Pillar": return `${base} bg-indigo-600 text-white border-indigo-600`;
       case "Clinical Pillar":   return `${base} bg-brand-clinical text-white border-brand-clinical`;
       case "Equity Pillar":     return `${base} bg-brand-equity text-white border-brand-equity`;
-      default:                  return `${base} bg-slate-900 text-white border-slate-900`;
+      default:                  return `${base} bg-indigo-600 text-white border-indigo-600`;
     }
   }
   switch (filter) {

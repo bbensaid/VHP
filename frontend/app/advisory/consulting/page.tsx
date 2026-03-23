@@ -114,11 +114,11 @@ export default function ConsultingPage() {
 
       {/* ── THE STRATEGIC TRIAD METHODOLOGY ──────────────────────────────── */}
       <div className="container mx-auto px-4 md:px-8 max-w-5xl mt-20">
-        <div className="bg-slate-900 text-white rounded-2xl p-8 md:p-12">
+        <div className="bg-indigo-700 text-white rounded-2xl p-8 md:p-12">
           <h2 className="text-2xl font-bold mb-2">The HTR Strategic Triad</h2>
-          <p className="text-slate-300 mb-8 max-w-3xl">Every strategic recommendation we make is stress-tested across three lenses before it reaches your leadership team. This cross-disciplinary rigor is what separates HTR Advisory from single-pillar consultants.</p>
+          <p className="text-indigo-100 mb-8 max-w-3xl">Every strategic recommendation we make is stress-tested across three lenses before it reaches your leadership team. This cross-disciplinary rigor is what separates HTR Advisory from single-pillar consultants.</p>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-sky-900/50 rounded-xl p-6 border border-sky-800">
+            <div className="bg-indigo-600/40 rounded-xl p-6 border border-indigo-500">
               <div className="text-sky-400 font-black text-lg mb-2">Policy Feasibility</div>
               <p className="text-slate-300 text-sm leading-relaxed">Is the strategy compliant with current and anticipated regulation? Does it survive a change in the regulatory environment? How does it interact with state and federal policy trends?</p>
             </div>
@@ -223,7 +223,7 @@ export default function ConsultingPage() {
         </p>
         <Link
           href="/advisory/contact"
-          className="inline-block px-8 py-4 bg-slate-900 text-white font-bold rounded-lg hover:bg-slate-800 transition-colors shadow-lg"
+          className="inline-block px-8 py-4 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition-colors shadow-lg"
         >
           Request a Proposal
         </Link>

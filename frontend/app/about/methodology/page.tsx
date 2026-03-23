@@ -85,7 +85,7 @@ function MethodologyPageInner() {
     <div className="bg-white font-sans text-slate-800 min-h-screen">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <div className="bg-slate-900 text-white py-20 md:py-28 relative overflow-hidden">
+      <div className="bg-indigo-700 text-white py-20 md:py-28 relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
@@ -378,9 +378,9 @@ function MethodologyPageInner() {
         </section>
 
         {/* ── FOOTER CTA ───────────────────────────────────────────────── */}
-        <div className="bg-slate-900 text-white rounded-2xl p-8 md:p-10 text-center">
+        <div className="bg-indigo-700 text-white rounded-2xl p-8 md:p-10 text-center">
           <h3 className="text-xl font-black mb-3">Explore the Performance Index</h3>
-          <p className="text-slate-400 text-sm mb-6">
+          <p className="text-indigo-100 text-sm mb-6">
             See how every state scores across all five pillars — and drill into sub-metric detail.
           </p>
           <Link

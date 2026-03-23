@@ -81,8 +81,8 @@ export default function ContactPage() {
             </div>
 
             {/* Direct Contact */}
-            <div className="bg-slate-900 text-white p-6 rounded-xl shadow-lg border border-slate-700">
-              <h4 className="text-base font-bold mb-4 border-b border-slate-700 pb-3">Direct Contact</h4>
+            <div className="bg-indigo-700 text-white p-6 rounded-xl shadow-lg border border-indigo-600">
+              <h4 className="text-base font-bold mb-4 border-b border-indigo-600 pb-3">Direct Contact</h4>
               <div className="space-y-4">
                 <div>
                   <p className="text-xs text-slate-400 uppercase font-bold">General Inquiries</p>

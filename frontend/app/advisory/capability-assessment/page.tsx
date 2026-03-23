@@ -62,20 +62,20 @@ export default function CapabilityAssessmentPage() {
 
       {/* ── ORF INTRO ─────────────────────────────────────────────────────── */}
       <div className="container mx-auto px-4 md:px-8 max-w-5xl py-12">
-        <div className="bg-sky-950 text-white rounded-2xl p-8 md:p-12">
+        <div className="bg-indigo-700 text-white rounded-2xl p-8 md:p-12">
           <h2 className="text-2xl font-bold mb-2">The Organizational Readiness Framework (ORF)</h2>
-          <p className="text-sky-200 mb-8 max-w-3xl">
+          <p className="text-indigo-100 mb-8 max-w-3xl">
             HTR&apos;s proprietary ORF scores each of 7 domains on a 1–5 maturity scale, then benchmarks your results against our database of peer health organizations.
             Unlike generic consulting frameworks, ORF is built specifically for the economics, clinical realities, and regulatory complexity of U.S. healthcare.
           </p>
           <div className="grid md:grid-cols-5 gap-4">
             {[1, 2, 3, 4, 5].map((score) => (
-              <div key={score} className="bg-sky-900 rounded-xl p-4 text-center border border-sky-800">
-                <div className="text-3xl font-black text-sky-300 mb-1">{score}</div>
-                <div className="text-sky-200 text-xs font-bold uppercase tracking-wide">
+              <div key={score} className="bg-indigo-600 rounded-xl p-4 text-center border border-indigo-500">
+                <div className="text-3xl font-black text-white mb-1">{score}</div>
+                <div className="text-indigo-100 text-xs font-bold uppercase tracking-wide">
                   {["Initial", "Developing", "Defined", "Managed", "Optimizing"][score - 1]}
                 </div>
-                <p className="text-sky-300 text-xs mt-2 leading-relaxed">
+                <p className="text-indigo-200 text-xs mt-2 leading-relaxed">
                   {["Ad hoc, reactive. No formal processes.", "Some processes defined but inconsistent.", "Standardized processes across the org.", "Measured and controlled. Data-driven.", "Continuous improvement. Industry leader."][score - 1]}
                 </p>
               </div>

@@ -132,35 +132,35 @@ export default function ResearchPage() {
       </div>
 
       {/* ── HOW A RESEARCH ENGAGEMENT WORKS ──────────────────────────────── */}
-      <div className="bg-slate-900 text-white py-16">
+      <div className="bg-indigo-700 text-white py-16">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <h2 className="text-2xl font-bold mb-8">How a Research Engagement Works</h2>
           <div className="grid md:grid-cols-4 gap-6">
             {service.processSteps.map((step) => (
               <div key={step.stepNumber}>
-                <div className="w-10 h-10 rounded-full bg-rose-600 text-white flex items-center justify-center font-black text-lg mb-4">
+                <div className="w-10 h-10 rounded-full bg-rose-500 text-white flex items-center justify-center font-black text-lg mb-4">
                   {step.stepNumber}
                 </div>
-                <div className="text-xs font-bold text-rose-400 uppercase tracking-wide mb-1">{step.duration}</div>
+                <div className="text-xs font-bold text-rose-300 uppercase tracking-wide mb-1">{step.duration}</div>
                 <h3 className="text-base font-bold text-white mb-2">{step.title}</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">{step.description}</p>
+                <p className="text-indigo-100 text-sm leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>
-          <div className="mt-12 bg-slate-800 rounded-xl p-8 border border-slate-700">
+          <div className="mt-12 bg-indigo-800 rounded-xl p-8 border border-indigo-600">
             <h3 className="text-lg font-bold text-white mb-4">What Makes HTR Research Different</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
                 <div className="text-rose-400 font-bold mb-2">Proprietary Data</div>
-                <p className="text-slate-300 text-sm leading-relaxed">Access to HTR&apos;s 5-pillar intelligence database, CMS open data, state all-payer claims, HFMA peer benchmarks, and curated peer-reviewed literature.</p>
+                <p className="text-indigo-100 text-sm leading-relaxed">Access to HTR&apos;s 5-pillar intelligence database, CMS open data, state all-payer claims, HFMA peer benchmarks, and curated peer-reviewed literature.</p>
               </div>
               <div>
                 <div className="text-rose-400 font-bold mb-2">5-Pillar Framework</div>
-                <p className="text-slate-300 text-sm leading-relaxed">Every research question is analyzed through Policy, Economics, Technology, Clinical, and Equity lenses — not just the single dimension the client originally requested.</p>
+                <p className="text-indigo-100 text-sm leading-relaxed">Every research question is analyzed through Policy, Economics, Technology, Clinical, and Equity lenses — not just the single dimension the client originally requested.</p>
               </div>
               <div>
                 <div className="text-rose-400 font-bold mb-2">Non-Partisan Analysis</div>
-                <p className="text-slate-300 text-sm leading-relaxed">No vendor sponsorships. No referral fees. No ideological commitments. Our research reaches the conclusions the data supports — even when that&apos;s inconvenient.</p>
+                <p className="text-indigo-100 text-sm leading-relaxed">No vendor sponsorships. No referral fees. No ideological commitments. Our research reaches the conclusions the data supports — even when that&apos;s inconvenient.</p>
               </div>
             </div>
           </div>
@@ -227,7 +227,7 @@ export default function ResearchPage() {
         </p>
         <Link
           href="/advisory/contact"
-          className="inline-block px-8 py-4 bg-slate-900 text-white font-bold rounded-lg hover:bg-slate-800 transition-colors shadow-lg"
+          className="inline-block px-8 py-4 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition-colors shadow-lg"
         >
           Request a Research Proposal
         </Link>

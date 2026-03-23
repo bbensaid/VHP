@@ -104,10 +104,10 @@ export default function IndependentReviewPage() {
       </div>
 
       {/* ── OUR METHODOLOGY ───────────────────────────────────────────────── */}
-      <div className="bg-slate-900 text-white py-16">
+      <div className="bg-indigo-700 text-white py-16">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <h2 className="text-2xl font-bold mb-8">The HTR Project Health Scorecard</h2>
-          <p className="text-slate-300 mb-8 max-w-3xl">Every Independent Project Review uses our structured Project Health Scorecard — a proprietary assessment tool that evaluates six critical dimensions.</p>
+          <p className="text-indigo-100 mb-8 max-w-3xl">Every Independent Project Review uses our structured Project Health Scorecard — a proprietary assessment tool that evaluates six critical dimensions.</p>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { dimension: "Scope", description: "Is the defined scope of work still achievable? Where has scope expanded without proper change controls?" },
@@ -117,9 +117,9 @@ export default function IndependentReviewPage() {
               { dimension: "Quality", description: "Are deliverables meeting agreed acceptance criteria? Is testing rigorous and documented?" },
               { dimension: "Governance", description: "Is the project appropriately governed? Are escalation paths functioning? Is leadership engaged?" },
             ].map((dim) => (
-              <div key={dim.dimension} className="bg-slate-800 rounded-xl p-6 border border-slate-700">
-                <div className="text-amber-400 font-black text-lg mb-2">{dim.dimension}</div>
-                <p className="text-slate-300 text-sm leading-relaxed">{dim.description}</p>
+              <div key={dim.dimension} className="bg-indigo-600 rounded-xl p-6 border border-indigo-500">
+                <div className="text-amber-300 font-black text-lg mb-2">{dim.dimension}</div>
+                <p className="text-indigo-100 text-sm leading-relaxed">{dim.description}</p>
               </div>
             ))}
           </div>

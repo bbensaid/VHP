@@ -149,7 +149,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 flex flex-col font-sans shadow-md bg-white">
       {/* 1. TOP BAR */}
-      <div className="bg-slate-900 text-slate-300 text-[11px] font-bold tracking-wider uppercase py-2 border-b border-slate-800 w-full relative z-50">
+      <div className="bg-indigo-700 text-indigo-100 text-[11px] font-bold tracking-wider uppercase py-2 border-b border-indigo-800 w-full relative z-50">
         {/* PHASE 1 FIX: Standardized Grid Wrapper */}
         <div className="w-full px-4 flex items-center h-full gap-0">
           <div className="hidden lg:block opacity-80 whitespace-nowrap w-[500px] shrink-0">
@@ -169,19 +169,19 @@ const Header = () => {
             <Link href="/faq" className="hover:text-white transition-colors">
               FAQ
             </Link>
-            <div className="h-4 w-px bg-slate-700"></div>
+            <div className="h-4 w-px bg-indigo-600"></div>
             <NavDropdown
               label="COMPANY"
               items={companyItems}
-              buttonClassName="flex items-center gap-1 text-[11px] font-bold tracking-wider uppercase hover:text-white transition-colors text-slate-300"
+              buttonClassName="flex items-center gap-1 text-[11px] font-bold tracking-wider uppercase hover:text-white transition-colors text-indigo-100"
             />
-            <div className="h-4 w-px bg-slate-700"></div>
+            <div className="h-4 w-px bg-indigo-600"></div>
             <Link href="/login" className="hover:text-white transition-colors">
               Login
             </Link>
             <Link
               href="/subscribe"
-              className="bg-white text-slate-900 px-3 py-0.5 rounded-sm hover:bg-slate-200 transition-colors"
+              className="bg-white text-indigo-700 px-3 py-0.5 rounded-sm hover:bg-indigo-50 transition-colors"
             >
               Subscribe
             </Link>
@@ -190,7 +190,7 @@ const Header = () => {
       </div>
 
       {/* 2. MAIN NAV BAR */}
-      <div className="bg-white py-2 border-b border-slate-200 w-full relative z-40">
+      <div className="bg-white py-2 border-b border-slate-200 w-full relative">
         {/* PHASE 1 FIX: Standardized Grid Wrapper */}
         <div className="w-full px-4 flex items-center gap-0">
           

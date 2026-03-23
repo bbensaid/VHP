@@ -167,7 +167,7 @@ export default function FAQPage() {
     <div className="bg-white font-sans text-slate-800 min-h-screen">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-slate-900 text-white py-20 md:py-28 relative overflow-hidden">
+      <section className="bg-indigo-700 text-white py-20 md:py-28 relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{

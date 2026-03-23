@@ -90,7 +90,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
     <div className="flex-1 min-h-0 overflow-y-auto flex flex-col bg-white">
       {/* 1. Sticky Navigation Bar */}
       {isStickyBarVisible && (
-        <div className="sticky top-0 z-50 h-10 flex justify-center transition-all duration-300 pointer-events-none bg-white border-b border-slate-200">
+        <div className="sticky top-0 z-30 h-10 flex justify-center transition-all duration-300 pointer-events-none bg-white border-b border-slate-200 shadow-[0_4px_8px_-2px_rgba(0,0,0,0.12)]">
           <div className="w-full px-4 h-full pointer-events-auto">
             <div className="h-full flex items-center w-full">
               <div className="shrink-0 flex items-center h-full w-[500px]">

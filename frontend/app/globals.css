@@ -22,16 +22,18 @@
   --color-ui-primary: #1d4ed8;
   --color-ui-bg-light: #dbeafe;
   --color-ui-text-on-primary: #ffffff;
-  --color-ui-border: #e5e7eb;
+  --color-ui-border: #cbd5e1;
 
   /* ── Typography ────────────────────────────────────────────────────────── */
-  --color-text-heading: #111827;
+  --color-text-heading: #334155;
   --color-text-body: #4b5563;
   --color-text-inverse: #ffffff;
 
   /* ── Surfaces ──────────────────────────────────────────────────────────── */
   --color-surface: #ffffff;
   --color-surface-muted: #f8fafc;
+  --color-surface-hero: #eef2ff;
+  --color-surface-dark: #4338ca;
 }
 
 @layer utilities {

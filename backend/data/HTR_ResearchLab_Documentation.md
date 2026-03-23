@@ -1,7 +1,7 @@
 # HTR Research Lab — Complete Technical & Functional Documentation
 
 **Health Transformation Research (HTR)**
-**Version:** 2.0 | **Date:** March 2026 | **Classification:** Internal + Public
+**Version:** 3.0 | **Date:** March 2026 | **Classification:** Internal + Public
 
 ---
 
@@ -46,26 +46,91 @@ No authentication required for base access. Client portal login unlocks saved wo
 ## 2. Architecture & Technology Stack
 
 ### Frontend Framework
-- **Next.js 14+** App Router with Server Components for the page shell
+- **Next.js 14+** App Router with Server Components for page shells
 - All 19 tool components are **Client Components** (`"use client"`)
-- Dynamic imports with `ssr: false` prevent hydration errors for all tools
+- Dynamic imports with `ssr: false` in Client Components only (required by Next.js 16+)
 
-### Component Import Pattern
-```typescript
-// /app/research-lab/page.tsx
-import dynamic from 'next/dynamic'
+### Page Architecture — 6 Separate Sub-Pages
 
-const FHIRLab = dynamic(
-  () => import('@/components/research/FHIRLab'),
-  { ssr: false, loading: () => <LoadingCard name="FHIR Interoperability Lab" /> }
-)
-// Repeated for all 19 components
+The Research Lab is split into a landing hub + 6 independent category pages. **No longer a single scrolling page.**
+
 ```
+/research-lab                          → Landing hub (Server Component, card grid)
+/research-lab/interoperability         → FHIR Lab + Risk Stratification
+/research-lab/payment-models           → APM Design Lab + APM Calculator + CEA Calculator
+/research-lab/population-equity        → Population Health Modeler + Health Equity Studio
+/research-lab/policy-quality           → Policy Simulator + Clinical Quality Optimizer +
+                                         Hospital Financial Scorecard + HTA Studio + Actuarial Lab
+/research-lab/technology-ai            → AI Analytics Lab + Digital Health Lab
+/research-lab/knowledge-workspace      → Evidence Library + Workforce Modeler +
+                                         Innovation Leaderboard + Research Workspace
+```
+
+Each sub-page follows the pattern:
+```
+/research-lab/[category]/
+├── page.tsx              Server Component — exports metadata, renders client
+└── [Category]Client.tsx  Client Component — dynamic imports with ssr:false, renders LabPageShell
+```
+
+### Shared Infrastructure Components
+
+**`/components/research/LabPageShell.tsx`** — Client Component rendered by every sub-page. Provides:
+- Top bar: "← Research Lab" back link + 6 category nav pills (flex-wrap, no horizontal scroll)
+- Light gray page header with icon, title, description
+- Children slot for the tools
+- `LabAdvisoryCTA` — Advisory conversion funnel card (see Section 2a below)
+- Prev/Next category navigation at bottom
+
+Props:
+```typescript
+interface LabPageShellProps {
+  icon: string
+  label: string
+  desc: string
+  accentClass: string       // active nav pill color, e.g. "bg-indigo-600"
+  accentLight: string       // badge color, e.g. "bg-indigo-100 text-indigo-700"
+  currentHref: string       // used to highlight active nav pill + compute prev/next
+  practiceHref: string      // advisory practice page link
+  practiceLabel: string     // advisory practice name
+  practiceIcon: string      // advisory practice emoji
+  advisoryBullets: string[] // 3 bullets for the CTA card
+  toolParam: string         // URL param passed to contact form
+  children: React.ReactNode
+}
+```
+
+**`/components/research/LabAdvisoryCTA.tsx`** — Advisory conversion funnel. Appears at the bottom of every sub-page above the prev/next nav. Contains:
+- Headline: "You just modeled [category]. HTR Advisory can help you implement it."
+- 3 category-specific implementation bullets
+- Primary CTA: "Talk to an HTR Advisor →" → links to `/advisory/contact?from=research-lab&category=X&practice=Y`
+- Secondary link to the specific advisory practice area page
+- 3 quick-stat cards (5 days to proposal, 97% satisfaction, 35+ states)
+
+### Component Import Pattern (in Client Components only)
+```typescript
+// e.g. /app/research-lab/interoperability/InteroperabilityClient.tsx
+'use client'
+import dynamic from 'next/dynamic'
+import LabPageShell from '@/components/research/LabPageShell'
+
+const FHIRLab = dynamic(() => import('@/components/research/FHIRLab'), { ssr: false })
+const RiskStratificationEngine = dynamic(() => import('@/components/research/RiskStratificationEngine'), { ssr: false })
+```
+
+### Advisory → Research Lab Integration (ContactForm)
+`/app/advisory/contact/ContactForm.tsx` reads URL params set by `LabAdvisoryCTA`:
+- `?from=research-lab` — triggers a fuchsia referral banner at top of form
+- `?category=` — shown in the banner ("You came from the Research Lab — Payment Models & VBC")
+- `?practice=` — auto-selects the matching service in the dropdown via `PRACTICE_TO_SERVICE_ID` map
+- Textarea placeholder is customized to prompt user to describe what they were modeling
 
 ### File Locations
 All tool components live in:
 ```
 /frontend/components/research/
+├── LabPageShell.tsx               Shared sub-page shell with nav + Advisory CTA
+├── LabAdvisoryCTA.tsx             Advisory conversion funnel card
 ├── FHIRLab.tsx                    (~1,675 lines, ~79KB)
 ├── RiskStratificationEngine.tsx   (~1,549 lines, ~69KB)
 ├── APMDesignLab.tsx               (~1,895 lines, ~64KB)

@@ -11,7 +11,7 @@ export default function ApproachPage() {
     <div className="bg-white min-h-screen pb-20">
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <div className="bg-slate-900 text-white py-24 border-b border-slate-800">
+      <div className="bg-indigo-700 text-white py-24 border-b border-indigo-800">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <span className="text-fuchsia-400 font-bold uppercase tracking-widest text-xs mb-4 block">HTR Advisory</span>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">How We Work</h1>
@@ -87,7 +87,7 @@ export default function ApproachPage() {
             ].map((stage) => (
               <div key={stage.stage} className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
                 <div className="flex flex-col md:flex-row">
-                  <div className="md:w-32 bg-slate-900 text-white flex items-center justify-center p-6 shrink-0">
+                  <div className="md:w-32 bg-indigo-700 text-white flex items-center justify-center p-6 shrink-0">
                     <span className="text-4xl font-black text-fuchsia-400">{stage.stage}</span>
                   </div>
                   <div className="p-6 md:p-8 flex-1">
@@ -153,7 +153,7 @@ export default function ApproachPage() {
       </div>
 
       {/* ── INDEPENDENCE & QA ─────────────────────────────────────────────── */}
-      <div className="bg-slate-900 text-white py-16">
+      <div className="bg-indigo-700 text-white py-16">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-2 gap-12">
             <div>

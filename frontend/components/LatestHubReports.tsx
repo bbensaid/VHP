@@ -46,7 +46,7 @@ export default async function LatestHubReports({
             className={`group block bg-white p-6 rounded-xl border border-slate-200 ${cardHoverClass} hover:shadow-lg transition-all`}
           >
             {index === 0 && (
-              <span className="inline-block px-2 py-1 mb-3 text-[10px] font-black uppercase tracking-widest text-white bg-slate-900 rounded shadow-sm">
+              <span className="inline-block px-2 py-1 mb-3 text-[10px] font-black uppercase tracking-widest text-white bg-indigo-600 rounded shadow-sm">
                 Featured
               </span>
             )}

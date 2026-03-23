@@ -14,13 +14,13 @@ export default function RegulatoryAdvisoryPage() {
     <div className="bg-white min-h-screen pb-20">
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <div className="bg-slate-900 text-white py-24 border-b border-slate-800">
+      <div className="bg-indigo-700 text-white py-24 border-b border-indigo-800">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-center gap-2 mb-4">
-            <span className="bg-slate-700 text-slate-200 border border-slate-600 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
+            <span className="bg-indigo-600 text-indigo-100 border border-indigo-500 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
               HTR Advisory
             </span>
-            <span className="text-slate-400 text-xs">Policy + All 5 Pillars</span>
+            <span className="text-indigo-200 text-xs">Policy + All 5 Pillars</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
             Regulatory & Legislative <span className="text-fuchsia-400">Advisory</span>
@@ -30,7 +30,7 @@ export default function RegulatoryAdvisoryPage() {
           </p>
           <div className="flex flex-wrap gap-3">
             {service.clientTypes.map((ct) => (
-              <span key={ct} className="bg-slate-800 border border-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">
+              <span key={ct} className="bg-indigo-600 border border-indigo-500 text-indigo-100 text-xs font-semibold px-3 py-1 rounded-full">
                 {ct}
               </span>
             ))}
@@ -119,7 +119,7 @@ export default function RegulatoryAdvisoryPage() {
               </ul>
             </div>
             <div className="md:w-1/2 mt-8 md:mt-0">
-              <div className="bg-slate-900 text-white rounded-2xl p-8">
+              <div className="bg-indigo-700 text-white rounded-2xl p-8">
                 <h3 className="text-lg font-bold mb-4 text-fuchsia-400">Our Testimony Standard</h3>
                 <p className="text-slate-300 text-sm mb-6 leading-relaxed">
                   Every testimony or expert witness engagement includes a rigorous peer review of findings by a second HTR analyst before submission or delivery. We do not testify to positions we cannot defend under cross-examination.
@@ -157,7 +157,7 @@ export default function RegulatoryAdvisoryPage() {
         <div className="grid md:grid-cols-4 gap-6">
           {service.processSteps.map((step) => (
             <div key={step.stepNumber}>
-              <div className="w-10 h-10 rounded-full bg-slate-800 text-white flex items-center justify-center font-black text-lg mb-4">
+              <div className="w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-black text-lg mb-4">
                 {step.stepNumber}
               </div>
               <div className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-1">{step.duration}</div>

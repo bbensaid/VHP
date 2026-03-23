@@ -94,7 +94,7 @@ export default function ValuesPage() {
     <div className="bg-white font-sans text-slate-800 min-h-screen">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative bg-slate-900 text-white overflow-hidden py-24 md:py-32">
+      <section className="relative bg-indigo-700 text-white overflow-hidden py-24 md:py-32">
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
