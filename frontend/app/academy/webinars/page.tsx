@@ -52,7 +52,7 @@ export default async function WebinarsPage() {
                 <button className="px-6 py-3 border border-gray-300 font-bold rounded hover:bg-gray-50 text-gray-700">Add to Calendar</button>
               </div>
             </div>
-            <div className="md:w-1/3 bg-slate-900 h-48 w-full rounded-lg flex items-center justify-center text-white/20 font-bold text-4xl border border-slate-700">HTR</div>
+            <div className="md:w-1/3 bg-indigo-800 h-48 w-full rounded-lg flex items-center justify-center text-white/20 font-bold text-4xl border border-indigo-700">HTR</div>
           </div>
         ) : (
           <div className="bg-white p-12 rounded-xl border border-dashed border-gray-300 text-center mb-12">

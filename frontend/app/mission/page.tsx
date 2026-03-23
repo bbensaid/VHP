@@ -81,7 +81,7 @@ export default function MissionPage() {
     <div className="bg-white font-sans text-slate-800 min-h-screen">
 
       {/* ── MISSION & VISION — TRUE HERO ──────────────────────────────────── */}
-      <section className="relative bg-slate-900 text-white overflow-hidden">
+      <section className="relative bg-indigo-700 text-white overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
@@ -223,7 +223,7 @@ export default function MissionPage() {
       </section>
 
       {/* ── MILESTONES ────────────────────────────────────────────────────── */}
-      <section className="bg-slate-900 text-white py-20 md:py-28">
+      <section className="bg-indigo-700 text-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-14">
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-4 block">

@@ -131,7 +131,7 @@ export default function FrameworkPage() {
     <div className="bg-white font-sans text-slate-800 min-h-screen">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative bg-slate-900 text-white overflow-hidden py-24 md:py-32">
+      <section className="relative bg-indigo-700 text-white overflow-hidden py-24 md:py-32">
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
@@ -144,7 +144,7 @@ export default function FrameworkPage() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-6 border border-indigo-800 bg-indigo-900/40 px-4 py-1.5 rounded-full">
+            <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-indigo-100 mb-6 border border-indigo-500 bg-indigo-600/40 px-4 py-1.5 rounded-full">
               Our Analytical Framework
             </span>
             <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[0.9] mb-8">

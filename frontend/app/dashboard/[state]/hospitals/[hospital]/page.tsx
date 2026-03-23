@@ -36,7 +36,7 @@ export default function GenericHospitalProfile() {
             <p className="text-slate-500 text-sm mb-6">
                 This facility is currently reporting stable operating metrics. No Act 167 simulation or solvency intervention is required at this time.
             </p>
-            <button className="flex items-center justify-center gap-2 w-full bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-bold shadow hover:bg-slate-800 transition-colors">
+            <button className="flex items-center justify-center gap-2 w-full bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-bold shadow hover:bg-indigo-700 transition-colors">
                 <DocumentMagnifyingGlassIcon className="w-4 h-4" />
                 View Standard Filing (PDF)
             </button>

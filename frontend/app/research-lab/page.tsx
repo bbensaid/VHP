@@ -77,7 +77,7 @@ const CATEGORIES = [
     border: 'border-slate-400',
     bg: 'bg-slate-100',
     badge: 'bg-slate-200 text-slate-700',
-    btn: 'bg-slate-700 hover:bg-slate-800',
+    btn: 'bg-slate-500 hover:bg-slate-600',
   },
 ]
 
@@ -100,7 +100,7 @@ export default function ResearchLabPage() {
               Research Lab
             </span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-black text-slate-700 mb-4 leading-tight">
             HTR Research Lab
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl leading-relaxed mb-10">

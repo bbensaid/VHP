@@ -109,7 +109,7 @@ export default function ServicesPage() {
         <div className="overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
           <table className="w-full text-sm">
             <thead>
-              <tr className="bg-slate-900 text-white">
+              <tr className="bg-indigo-700 text-white">
                 <th className="text-left px-5 py-4 font-black">Service</th>
                 <th className="text-left px-4 py-4 font-bold">Duration</th>
                 <th className="text-left px-4 py-4 font-bold">Starting Price</th>
@@ -143,9 +143,9 @@ export default function ServicesPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-        <div className="bg-slate-900 text-white rounded-2xl p-10 md:p-14 text-center">
+        <div className="bg-indigo-700 text-white rounded-2xl p-10 md:p-14 text-center">
           <h2 className="text-3xl font-black mb-4">Not Sure Where to Start?</h2>
-          <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-indigo-100 mb-8 max-w-2xl mx-auto">
             Book a 30-minute no-obligation discovery call. We&apos;ll identify the right service line and scope a proposal — no pressure, no commitment.
           </p>
           <Link

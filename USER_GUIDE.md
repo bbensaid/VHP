@@ -192,10 +192,14 @@ Deep analysis of Vermont's landmark health reform legislation.
 Analysis of California's Medi-Cal transformation initiative.
 
 ### Research Lab (`/research-lab`)
-Includes interactive calculators:
-- **APM Calculator** — Alternative Payment Model financial modeling
-- **CEA Calculator** — Cost-Effectiveness Analysis tool
-- **Hospital Financial Scorecard** — financial performance benchmarking
+Six interactive labs organized by domain. Each lab contains multiple modeling and simulation tools:
+
+- **Payment Models & VBC** (`/research-lab/payment-models`) — Design alternative payment models, episode bundles, global budgets, and shared savings scenarios. Run cost-effectiveness analyses (CEA) and APM financial projections.
+- **Policy & Quality Sciences** (`/research-lab/policy-quality`) — Simulate Medicaid waivers and global budgets, model HEDIS/Star ratings, MIPS scoring, actuarial projections, and hospital financial stress tests.
+- **Population & Equity** (`/research-lab/population-equity`) — Model chronic disease progression, epidemic dynamics, health disparities, SDOH impact, and population-scale intervention ROI.
+- **Technology & AI** (`/research-lab/technology-ai`) — Evaluate AI model performance, audit algorithmic bias, build AI governance frameworks, and model remote patient monitoring and telehealth ROI.
+- **Interoperability & Risk** (`/research-lab/interoperability`) — Build and validate FHIR R4 resources, test CDS Hooks, check ONC compliance, and run HCC v28 risk stratification models.
+- **Knowledge & Workspace** (`/research-lab/knowledge-workspace`) — Access the CEA evidence library, CMMI model tracker, workforce projection models, and innovation leaderboard. Save and manage your active research workspace.
 
 ### HTI Dashboard (`/hti-dashboard`)
 Health Transformation Index timeseries data and charts.

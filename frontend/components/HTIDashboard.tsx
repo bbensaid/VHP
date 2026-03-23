@@ -354,7 +354,7 @@ export default function HTIDashboard() {
             onClick={() => setActiveTab(tab.id as TabId)}
             className={`flex items-center gap-2 px-5 py-3 text-xs font-bold uppercase tracking-wider border-b-2 transition-all ${
               activeTab === tab.id
-                ? "border-emerald-600 text-emerald-600"
+                ? "border-indigo-600 text-indigo-600"
                 : "border-transparent text-slate-400 hover:text-slate-700"
             }`}
           >
@@ -369,7 +369,7 @@ export default function HTIDashboard() {
           {/* Left: Score + Sliders */}
           <div className="lg:col-span-4 space-y-6">
             {/* Composite Score */}
-            <div className="bg-slate-900 rounded-[2rem] p-8 text-white shadow-2xl relative overflow-hidden group">
+            <div className="bg-indigo-900 rounded-[2rem] p-8 text-white shadow-2xl relative overflow-hidden group">
               <div className="relative z-10">
                 <p className="text-emerald-400 font-black text-xs uppercase tracking-[0.2em] mb-3">Composite HTI Score</p>
                 <div className="flex items-baseline gap-3 mb-3">
@@ -385,7 +385,7 @@ export default function HTIDashboard() {
                   {HTI_WEIGHTS.map(w => (
                     <div key={w.id} className="flex items-center gap-2">
                       <span className="text-[10px] text-slate-400 w-28 shrink-0 truncate">{w.label}</span>
-                      <div className="flex-1 h-1.5 bg-slate-700 rounded-full overflow-hidden">
+                      <div className="flex-1 h-1.5 bg-indigo-700 rounded-full overflow-hidden">
                         <div
                           className="h-full rounded-full transition-all duration-500"
                           style={{ width: `${metrics[w.id]}%`, backgroundColor: w.color }}
@@ -528,8 +528,8 @@ export default function HTIDashboard() {
             </div>
 
             {/* HTI Methodology Card */}
-            <div className="bg-slate-900 text-white rounded-2xl p-6">
-              <h4 className="font-bold text-xs uppercase tracking-widest text-slate-400 mb-4">HTI Calculation Methodology</h4>
+            <div className="bg-indigo-900 text-white rounded-2xl p-6">
+              <h4 className="font-bold text-xs uppercase tracking-widest text-indigo-300 mb-4">HTI Calculation Methodology</h4>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {HTI_WEIGHTS.map(w => (
                   <div key={w.id} className="bg-white/10 rounded-xl p-3">

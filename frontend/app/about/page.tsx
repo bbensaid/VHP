@@ -123,7 +123,7 @@ export default function AboutPage() {
     <div className="bg-white font-sans text-slate-800 min-h-screen">
       
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-slate-900 text-white py-24 md:py-32">
+      <section className="relative overflow-hidden bg-indigo-700 text-white py-24 md:py-32">
         {/* Subtle grid texture */}
         <div
           className="absolute inset-0 opacity-[0.04]"
@@ -138,7 +138,7 @@ export default function AboutPage() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-6 border border-indigo-800 bg-indigo-900/40 px-4 py-1.5 rounded-full">
+            <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-indigo-100 mb-6 border border-indigo-500 bg-indigo-600/40 px-4 py-1.5 rounded-full">
               About Health Transformation Review
             </span>
             <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[0.9] mb-8">
@@ -208,8 +208,8 @@ export default function AboutPage() {
 
           {/* Vermont case study card */}
           <div className="bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden">
-            <div className="bg-slate-900 px-6 py-4 flex items-center justify-between">
-              <span className="text-xs font-black uppercase tracking-widest text-slate-300">
+            <div className="bg-indigo-800 px-6 py-4 flex items-center justify-between">
+              <span className="text-xs font-black uppercase tracking-widest text-indigo-200">
                 Case Study — Vermont
               </span>
               <span className="bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded uppercase tracking-wider">
@@ -363,28 +363,28 @@ export default function AboutPage() {
       </section>
 
       {/* ── TEAM ──────────────────────────────────────────────────────────── */}
-      <section className="bg-slate-900 text-white py-20 md:py-28">
+      <section className="bg-slate-50 py-20 md:py-28 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-4 block">
+            <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
               Principal Analysts
             </span>
-            <h2 className="text-4xl font-black tracking-tight">
+            <h2 className="text-4xl font-black tracking-tight text-slate-700">
               One analyst per pillar. Zero silos.
             </h2>
-            <p className="text-slate-400 mt-4 max-w-xl mx-auto">
+            <p className="text-slate-500 mt-4 max-w-xl mx-auto">
               Each domain is led by a dedicated principal analyst — former policymakers, practicing clinicians, and credentialed economists who collaborate to ensure every insight accounts for all five dimensions.
             </p>
           </div>
           <div className="grid md:grid-cols-5 gap-4">
             {team.map((m) => (
-              <div key={m.name} className="bg-white/5 border border-white/10 rounded-xl p-6 text-center hover:bg-white/10 transition-colors">
+              <div key={m.name} className="bg-white border border-slate-200 rounded-xl p-6 text-center hover:shadow-md transition-all">
                 <div className={`w-14 h-14 rounded-full ${m.color} flex items-center justify-center text-xl font-black mx-auto mb-4`}>
                   {m.initials}
                 </div>
-                <h3 className="font-bold text-white text-sm leading-tight mb-1">{m.name}</h3>
-                <p className="text-indigo-400 text-xs font-bold uppercase tracking-wider mb-2">{m.role}</p>
-                <p className="text-slate-400 text-xs leading-relaxed">{m.focus}</p>
+                <h3 className="font-bold text-slate-800 text-sm leading-tight mb-1">{m.name}</h3>
+                <p className="text-indigo-600 text-xs font-bold uppercase tracking-wider mb-2">{m.role}</p>
+                <p className="text-slate-500 text-xs leading-relaxed">{m.focus}</p>
               </div>
             ))}
           </div>
@@ -400,7 +400,7 @@ export default function AboutPage() {
           Start with the State Performance Dashboard, or dive into any of the five pillars. Every page is built for action, not just reading.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Link href="/dashboard" className="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-lg font-bold hover:bg-slate-800 transition-colors">
+          <Link href="/dashboard" className="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-700 transition-colors">
             Launch Dashboard
           </Link>
           <Link href="/subscribe" className="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-700 transition-colors">

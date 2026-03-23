@@ -74,7 +74,7 @@ function ManageBillingButton() {
   return (
     <form action="/api/stripe/portal" method="POST">
       <button type="submit"
-        className="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 rounded-xl text-sm transition-colors">
+        className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-xl text-sm transition-colors">
         Manage Billing
       </button>
     </form>

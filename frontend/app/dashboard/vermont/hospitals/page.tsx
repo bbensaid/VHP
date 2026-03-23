@@ -193,10 +193,10 @@ export default function NVRHHeroProfile() {
           {/* RIGHT: Visualizing the "Cliff" */}
           <div className="space-y-6">
             {/* Cash Flow Widget */}
-            <div className="bg-slate-900 text-white rounded-xl shadow-lg p-6">
+            <div className="bg-indigo-900 text-white rounded-xl shadow-lg p-6">
               <div className="flex justify-between items-center mb-6">
                 <h3 className="font-bold text-lg">Liquidity Forecast</h3>
-                <span className="text-[10px] bg-slate-700 px-2 py-1 rounded text-slate-300">
+                <span className="text-[10px] bg-indigo-700 px-2 py-1 rounded text-indigo-200">
                   Runway: 8 Mo
                 </span>
               </div>

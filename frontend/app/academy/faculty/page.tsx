@@ -42,7 +42,7 @@ export default async function FacultyPage() {
                 {person.imageUrl ? (
                   <img src={person.imageUrl} alt={person.name} className="w-32 h-32 rounded-full object-cover border-4 border-indigo-50" />
                 ) : (
-                  <div className="w-32 h-32 rounded-full bg-slate-900 flex items-center justify-center text-white text-2xl font-bold border-4 border-indigo-50">
+                  <div className="w-32 h-32 rounded-full bg-indigo-600 flex items-center justify-center text-white text-2xl font-bold border-4 border-indigo-50">
                     {person.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
                   </div>
                 )}
@@ -63,12 +63,12 @@ export default async function FacultyPage() {
           ))}
         </div>
 
-        <div className="mt-20 p-10 bg-slate-900 rounded-2xl text-center text-white">
+        <div className="mt-20 p-10 bg-indigo-700 rounded-2xl text-center text-white">
           <h2 className="text-3xl font-bold mb-4">Become a Fellow</h2>
-          <p className="text-slate-300 max-w-2xl mx-auto mb-8">
+          <p className="text-indigo-100 max-w-2xl mx-auto mb-8">
             Are you a recognized expert in your field? HTR Academy is always looking for visiting faculty to lead masterclasses.
           </p>
-          <Link href="/advisory/contact" className="px-6 py-3 bg-white text-slate-900 font-bold rounded hover:bg-slate-200 transition-colors">
+          <Link href="/advisory/contact" className="px-6 py-3 bg-white text-indigo-700 font-bold rounded hover:bg-indigo-50 transition-colors">
             Apply to Teach
           </Link>
         </div>

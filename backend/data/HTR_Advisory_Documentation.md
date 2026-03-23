@@ -1,7 +1,7 @@
 # HTR Advisory Section — Complete Technical & Functional Documentation
 
 **Health Transformation Research (HTR)**
-**Version:** 2.0 | **Date:** March 2026 | **Classification:** Internal + Client-Facing
+**Version:** 3.0 | **Date:** March 2026 | **Classification:** Internal + Client-Facing
 
 ---
 
@@ -12,7 +12,7 @@
 3. [Service Lines — Complete Catalog](#3-service-lines)
 4. [Client Segmentation Model](#4-client-segmentation-model)
 5. [Pricing & Engagement Models](#5-pricing--engagement-models)
-6. [Advisory Hub — 10-Tab Interface](#6-advisory-hub--10-tab-interface)
+6. [Advisory Hub — Card Grid](#6-advisory-hub--card-grid)
 7. [Contact & Intake System](#7-contact--intake-system)
 8. [Technical Architecture](#8-technical-architecture)
 9. [Navigation & Information Architecture](#9-navigation--information-architecture)
@@ -51,33 +51,48 @@ HTR differs from traditional management consulting firms through:
 
 ### URL Structure
 ```
-/advisory                    → Landing page (overview + service catalog)
-/advisory-hub                → 10-tab client portal (deep-dive interface)
-/advisory/consulting         → Strategic consulting service line
-/advisory/research           → Research & analysis service line
-/advisory/it-consulting      → Health IT consulting service line
-/advisory/independent-review → Independent quality review service line
-/advisory/capability-assessment → Organizational capability assessment
-/advisory/financial-audit    → Financial & actuarial audit service line
-/advisory/regulatory         → Regulatory & compliance service line
-/advisory/training           → Training & workforce development service line
-/advisory/approach           → HTR methodology deep-dive
-/advisory/contact            → Engagement intake form
+/advisory                         → Main landing page (hero, 8-service grid, 5-pillar section)
+/advisory-hub                     → Card grid hub — entry point to all 10 service/action areas
+/advisory/consulting              → Strategic consulting service line
+/advisory/research                → Research & analysis service line
+/advisory/it-consulting           → Health IT consulting service line
+/advisory/independent-review      → Independent quality review service line
+/advisory/capability-assessment   → Organizational capability assessment
+/advisory/financial-audit         → Financial & actuarial audit service line
+/advisory/regulatory              → Regulatory & compliance service line
+/advisory/training                → Training & workforce development service line
+/advisory/reports                 → HTR impact reports library
+/advisory/services                → Full services overview
+/advisory/approach                → HTR methodology deep-dive
+/advisory/contact                 → Engagement intake form
 ```
+
+### Advisory Hub Design (v3 — Card Grid)
+
+`/advisory-hub` is a **Server Component card grid** — no tabs, no horizontal scrolling.
+
+- Light gray/white/fuchsia gradient hero (NOT dark/black background)
+- Stats row: 4 key metrics from `ADVISORY_STATS`
+- 10 cards in a **responsive grid** (3-col → 2-col → 1-col), each card has:
+  - Colored left border accent per service
+  - Icon, service name, pillar tags, description
+  - "Explore →" button linking to the individual service page
+- Bottom row: Methodology link, Services Overview link, Book a Discovery Call CTA
+
+**Deleted:** `app/advisory-hub/AdvisoryClientPage.tsx` — the old 10-tab `HubPageTemplate` wrapper no longer exists. The hub is a pure Server Component with no client-side tab state.
 
 ### Component Hierarchy
 ```
-app/advisory/page.tsx                    (Server Component — landing)
-├── app/advisory-hub/page.tsx            (Server Component — hub wrapper)
-│   └── app/advisory-hub/AdvisoryClientPage.tsx  (Client Component — 10 tabs)
-├── app/advisory/consulting/page.tsx     (Server Component)
-├── app/advisory/research/page.tsx       (Server Component)
-├── app/advisory/it-consulting/page.tsx  (Server Component)
-├── app/advisory/independent-review/page.tsx
-├── app/advisory/capability-assessment/page.tsx
-├── app/advisory/financial-audit/page.tsx
-├── app/advisory/regulatory/page.tsx
-├── app/advisory/training/page.tsx
+app/advisory/page.tsx                    (Server Component — main landing)
+app/advisory-hub/page.tsx                (Server Component — card grid hub)
+app/advisory/consulting/page.tsx         (Server Component)
+app/advisory/research/page.tsx           (Server Component)
+app/advisory/it-consulting/page.tsx      (Server Component)
+app/advisory/independent-review/page.tsx (Server Component)
+app/advisory/capability-assessment/page.tsx
+app/advisory/financial-audit/page.tsx
+app/advisory/regulatory/page.tsx
+app/advisory/training/page.tsx
 ├── app/advisory/approach/page.tsx
 └── app/advisory/contact/page.tsx
     └── app/advisory/contact/ContactForm.tsx  (Client Component)
@@ -486,78 +501,65 @@ For organizations not on retainer:
 
 ---
 
-## 6. Advisory Hub — 10-Tab Interface
+## 6. Advisory Hub — Card Grid
 
-Located at `/advisory-hub`, the Advisory Hub (`AdvisoryClientPage.tsx`) provides a comprehensive client portal with 10 functional sections:
+Located at `/advisory-hub`. **Replaced the previous 10-tab horizontal-scrolling interface** (`AdvisoryClientPage.tsx`, now deleted). The hub is a pure Server Component — no client-side state, no tabs, no horizontal overflow.
 
-### Tab 1: Overview
-- Mission statement and value proposition
-- Quick-access navigation to all service lines
-- Featured case study (rotating)
-- Current engagement status (for logged-in clients)
+### Design
+- **Hero:** Light `bg-linear-to-br from-slate-100 via-white to-fuchsia-50` gradient — no dark/black backgrounds
+- **Stats row:** 4 key metrics pulled from `ADVISORY_STATS` (from `advisory-data.ts`)
+- **10 service cards** in a responsive CSS grid (`grid-cols-1 md:grid-cols-2 xl:grid-cols-3`) — wraps naturally, never overflows horizontally
 
-### Tab 2: Services
-- Full service catalog with expandable cards
-- Service-to-client-segment mapping matrix
-- Comparison tool (up to 3 services)
-- "Find My Service" diagnostic questionnaire (5 questions → recommended service)
+### Cards (10 total)
+Each card contains: colored left border, emoji icon, service name, pillar tags, description, and an "Explore →" button.
 
-### Tab 3: Methodology
-- HTR Five-Pillar Framework explanation
-- Engagement workflow diagram (8-step process)
-- Quality assurance standards
-- Independence and ethics standards
-- Certifications and credentials
+| Card | Links To | Accent Color |
+|------|----------|-------------|
+| Strategic Consulting | `/advisory/consulting` | Fuchsia |
+| Custom Research & Analysis | `/advisory/research` | Sky |
+| Health IT Consulting | `/advisory/it-consulting` | Indigo |
+| Independent Review | `/advisory/independent-review` | Emerald |
+| Capability Assessment | `/advisory/capability-assessment` | Amber |
+| Financial & Actuarial Audit | `/advisory/financial-audit` | Green |
+| Regulatory & Compliance | `/advisory/regulatory` | Rose |
+| Training & Development | `/advisory/training` | Violet |
+| Impact Reports | `/advisory/reports` | Slate |
+| Start an Engagement | `/advisory/contact` | Fuchsia (CTA style) |
 
-### Tab 4: Case Studies
-- 12+ anonymized case study summaries
-- Filterable by: industry segment, service line, geography, outcome type
-- Each case study: Challenge, Approach, Results (quantified), Lessons Learned
-- PDF download option for each case study
+### Bottom Actions
+Three links below the grid: "Our Methodology →", "Full Services Overview →", "Book a Discovery Call →"
 
-### Tab 5: Research & Insights
-- Integration with HTR Research Library
-- Policy briefs (downloadable PDFs)
-- Regulatory alerts (last 90 days)
-- HTR original research publications
-- Links to public CMMI model evaluations
-
-### Tab 6: Team
-- Advisor profiles with credentials and specialty areas
-- Team structure (by practice area)
-- Advisory Board member biographies
-- Staff credentialing summary
-
-### Tab 7: Tools & Resources
-- Research Lab integration (embedded tool links)
-- Downloadable templates (assessment frameworks, policy brief templates)
-- Regulatory calendar (key CMS/NCQA/TJC dates)
-- Glossary of health transformation terms (200+ terms)
-
-### Tab 8: Pricing
-- Tier comparison (Essential, Strategic, Enterprise)
-- ROI calculator (inputs: organizational size, service line → estimated value delivered)
-- Engagement timeline estimator
-- "Request a Proposal" CTA
-
-### Tab 9: Client Portal
-- (Logged-in clients only) Secure document repository
-- Project status dashboard
-- Meeting schedule and recordings
-- Deliverable tracker
-- Invoice history
-
-### Tab 10: Contact
-- Embedded intake form (mirrors `/advisory/contact`)
-- Calendar booking widget
-- Advisor availability display
-- Emergency regulatory support request pathway
+### Deleted Components
+- `app/advisory-hub/AdvisoryClientPage.tsx` — removed entirely
+- `HubPageTemplate` is no longer used for advisory (still used by Academy, Trending Topics, Multimedia)
 
 ---
 
 ## 7. Contact & Intake System
 
 Located at `/advisory/contact`, the contact system (`ContactForm.tsx`) is a multi-stage intake form designed to qualify leads and route them to the appropriate service team.
+
+### Research Lab Referral Integration (v3)
+
+`ContactForm.tsx` now reads URL query parameters set by the `LabAdvisoryCTA` component in the Research Lab. When a user clicks "Talk to an HTR Advisor →" from any Research Lab sub-page, three params are passed:
+
+- `?from=research-lab` — triggers a fuchsia banner at the top of the form: "You came from the Research Lab — [category]"
+- `?category=` — the Research Lab category (e.g. "Payment Models & VBC") shown in the banner and used to customize the textarea placeholder
+- `?practice=` — the advisory practice label (e.g. "Strategic Consulting") which auto-selects the matching option in the Service of Interest dropdown via the `PRACTICE_TO_SERVICE_ID` map:
+
+```typescript
+const PRACTICE_TO_SERVICE_ID: Record<string, string> = {
+  "Health IT Consulting":        "it-consulting",
+  "Strategic Consulting":        "consulting",
+  "Regulatory & Compliance":     "regulatory",
+  "Custom Research & Analysis":  "research",
+  "Financial & Actuarial Audit": "financial-audit",
+}
+```
+
+The textarea placeholder is also customized: "I was using the [category] tools in the HTR Research Lab and would like HTR Advisory support to implement what I modeled. Specifically..."
+
+This creates a direct conversion funnel from Research Lab analysis → Advisory engagement.
 
 ### Form Architecture
 
@@ -633,7 +635,7 @@ Form submissions → API route → CRM integration
 ### Performance Considerations
 - All service pages are statically generated at build time (no runtime data fetching)
 - Images served via Next.js Image component with WebP optimization
-- Advisory Hub uses code splitting per tab (lazy loading of tab content)
+- Advisory Hub is a pure Server Component — no JavaScript bundle for the hub page itself
 - Contact form validation runs client-side to minimize server round-trips
 
 ### SEO Configuration
@@ -649,23 +651,14 @@ Each advisory page includes:
 ## 9. Navigation & Information Architecture
 
 ### Primary Navigation (Header)
-The `Header.tsx` component includes:
-- **Advisory** dropdown with links to all 8 service pages + Advisory Hub + Approach + Contact
-- Active state styling for current route
-- Mobile-responsive hamburger menu with full advisory submenu
+The `Header.tsx` main nav contains only the **5 pillars**: POLICY, ECONOMICS, TECHNOLOGY, CLINICAL, EQUITY.
 
-### Advisory Nav Items (from `ADVISORY_NAV_ITEMS`):
-1. Advisory Hub → `/advisory-hub`
-2. Strategic Consulting → `/advisory/consulting`
-3. Research & Analysis → `/advisory/research`
-4. Health IT Consulting → `/advisory/it-consulting`
-5. Independent Review → `/advisory/independent-review`
-6. Capability Assessment → `/advisory/capability-assessment`
-7. Financial Audit → `/advisory/financial-audit`
-8. Regulatory & Compliance → `/advisory/regulatory`
-9. Training & Development → `/advisory/training`
-10. Our Approach → `/advisory/approach`
-11. Contact Us → `/advisory/contact`
+**Advisory is NOT in the main header nav.** It is accessed via the home sidebar. The `ADVISORY_NAV_ITEMS` constant remains in `advisory-data.ts` for potential future use but is not imported or rendered in `Header.tsx`.
+
+### How Users Reach Advisory
+- Home sidebar → Advisory Hub link → `/advisory-hub`
+- Direct URL to any `/advisory/*` service page
+- "Talk to an HTR Advisor →" CTA on Research Lab sub-pages → `/advisory/contact` (pre-filled)
 
 ### Internal Linking Strategy
 - Every service page links to related services ("You might also need...")

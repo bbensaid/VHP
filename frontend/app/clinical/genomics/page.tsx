@@ -244,9 +244,9 @@ function GenomicsContent() {
       </div>
 
       {/* ACMG Variant Classification Framework */}
-      <div className="bg-slate-900 text-white rounded-2xl p-8 mb-10">
+      <div className="bg-indigo-700 text-white rounded-2xl p-8 mb-10">
         <h2 className="text-xl font-bold mb-2">ACMG/AMP Variant Classification Framework</h2>
-        <p className="text-slate-400 text-sm mb-6">Five-tier system for germline variant interpretation — used by all clinical genomics labs</p>
+        <p className="text-indigo-100 text-sm mb-6">Five-tier system for germline variant interpretation — used by all clinical genomics labs</p>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
           {[
             { tier: "1", label: "Pathogenic", abbr: "P", color: "bg-rose-600", desc: "Strong evidence of disease causation. Clinical action warranted.", action: "Report + Act" },

@@ -10,7 +10,7 @@ const MethodologyPage = () => {
   return (
     <div className="bg-white min-h-screen pb-20">
       {/* 1. HERO SECTION */}
-      <div className="bg-slate-900 text-white py-20 border-b border-indigo-900">
+      <div className="bg-indigo-700 text-white py-20 border-b border-indigo-800">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-center gap-2 mb-4">
             <span className="px-2 py-1 rounded text-[10px] font-bold uppercase tracking-widest bg-indigo-600 text-white">
@@ -210,7 +210,7 @@ const MethodologyPage = () => {
               </p>
               <Link
                 href="/advisory/contact"
-                className="block w-full py-3 bg-slate-900 text-white text-center font-bold text-sm rounded hover:opacity-90 transition-opacity"
+                className="block w-full py-3 bg-indigo-600 text-white text-center font-bold text-sm rounded hover:bg-indigo-700 transition-colors"
               >
                 Request Data Access
               </Link>

@@ -100,7 +100,7 @@ export default function SubscribePage() {
           </div>
           <Link
             href="/advisory/contact"
-            className="block w-full py-3 bg-slate-900 text-white font-bold text-center rounded-lg hover:bg-slate-800 transition mb-8"
+            className="block w-full py-3 bg-indigo-600 text-white font-bold text-center rounded-lg hover:bg-indigo-700 transition mb-8"
           >
             Contact Sales
           </Link>

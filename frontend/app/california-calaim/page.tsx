@@ -604,7 +604,7 @@ export default function CaliforniaCalAIMPage() {
       {/* ── HTR ANALYSIS ─────────────────────────────────────────────────────── */}
       <section className="mb-12">
         <SectionHeader label="HTR Analysis" title="What CalAIM Means for U.S. Health Transformation" />
-        <div className="bg-slate-900 text-white rounded-2xl p-8">
+        <div className="bg-indigo-700 text-white rounded-2xl p-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div>
               <div className="text-xs font-black uppercase tracking-widest text-teal-400 mb-2">The Paradigm Shift</div>

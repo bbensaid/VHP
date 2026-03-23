@@ -203,9 +203,9 @@ export function PillarHub({
             
             {/* Right Column: Sticky Sidebar Widget */}
             <div className="lg:w-1/3 sticky w-full" style={{ top: "var(--sidebar-top, 8rem)" }}>
-              <div className="bg-slate-900 text-white p-8 md:p-10 rounded-2xl shadow-xl">
+              <div className="bg-indigo-700 text-white p-8 md:p-10 rounded-2xl shadow-xl">
                 <h3 className="font-bold text-2xl mb-3">HTR {pillarName} Data</h3>
-                <p className="text-slate-400 mb-8 text-base leading-relaxed">
+                <p className="text-indigo-100 mb-8 text-base leading-relaxed">
                   Access the raw datasets and live metrics behind our {pillarName.toLowerCase()} analysis.
                 </p>
                 <Link href="/dashboard" className="block w-full text-center py-4 bg-white/10 hover:bg-white/20 border border-white/10 text-white font-bold rounded-xl transition-colors text-sm uppercase tracking-wide">

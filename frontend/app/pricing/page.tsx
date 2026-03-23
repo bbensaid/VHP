@@ -107,7 +107,7 @@ export default function PricingPage() {
           <button
             onClick={() => setInterval("monthly")}
             className={`text-sm font-bold px-4 py-2 rounded-lg transition-colors ${
-              interval === "monthly" ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-100"
+              interval === "monthly" ? "bg-indigo-600 text-white" : "text-slate-600 hover:bg-slate-100"
             }`}
           >
             Monthly
@@ -115,7 +115,7 @@ export default function PricingPage() {
           <button
             onClick={() => setInterval("yearly")}
             className={`text-sm font-bold px-4 py-2 rounded-lg transition-colors ${
-              interval === "yearly" ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-100"
+              interval === "yearly" ? "bg-indigo-600 text-white" : "text-slate-600 hover:bg-slate-100"
             }`}
           >
             Yearly
@@ -165,7 +165,7 @@ export default function PricingPage() {
                   className={`w-full font-bold py-3 rounded-xl text-sm transition-colors disabled:opacity-60 disabled:cursor-not-allowed ${
                     plan.highlight
                       ? "bg-indigo-600 hover:bg-indigo-700 text-white"
-                      : "bg-slate-900 hover:bg-slate-800 text-white"
+                      : "bg-slate-600 hover:bg-slate-700 text-white"
                   }`}
                 >
                   {loading === plan.id ? "Redirecting…" : `Get ${plan.name}`}

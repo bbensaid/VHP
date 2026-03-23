@@ -127,7 +127,7 @@ export default function AheadModelPage() {
     <div className="bg-white font-sans text-slate-800 min-h-screen">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-slate-900 text-white py-24 md:py-32">
+      <section className="relative overflow-hidden bg-indigo-700 text-white py-24 md:py-32">
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
@@ -363,8 +363,8 @@ export default function AheadModelPage() {
           ))}
         </div>
 
-        <div className="mt-8 bg-slate-900 text-white rounded-xl p-6 md:p-8">
-          <p className="text-[11px] font-black uppercase tracking-widest text-slate-400 mb-3">HTR Analyst Note</p>
+        <div className="mt-8 bg-indigo-700 text-white rounded-xl p-6 md:p-8">
+          <p className="text-[11px] font-black uppercase tracking-widest text-indigo-200 mb-3">HTR Analyst Note</p>
           <p className="text-slate-300 leading-relaxed max-w-4xl">
             Vermont is the only state participating in both AHEAD and the Rural Health Transformation Program — giving it the most complex, and potentially most instructive, multi-program reform environment in the country. Its performance under both frameworks will be a critical data point for CMS as it evaluates whether RHTP and AHEAD are complementary or require alignment.{" "}
             <Link href="/dashboard/vermont" className="text-emerald-400 hover:text-emerald-300 font-bold underline underline-offset-2">
@@ -375,7 +375,7 @@ export default function AheadModelPage() {
       </section>
 
       {/* ── TIMELINE ──────────────────────────────────────────────────────── */}
-      <section className="bg-slate-900 text-white py-20 md:py-28">
+      <section className="bg-indigo-700 text-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-14">
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-emerald-400 mb-4 block">

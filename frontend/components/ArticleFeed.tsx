@@ -360,7 +360,7 @@ export default function ArticleFeed({
                     {new Date(article.publishedAt).toLocaleDateString()}
                   </span>
                   {article.status && (
-                    <span className="px-2 py-1 bg-slate-900 text-white text-[10px] font-bold rounded uppercase tracking-wider">
+                    <span className="px-2 py-1 bg-slate-600 text-white text-[10px] font-bold rounded uppercase tracking-wider">
                       {article.status}
                     </span>
                   )}

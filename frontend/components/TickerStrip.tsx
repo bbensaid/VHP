@@ -65,11 +65,11 @@ export default function TickerStrip({
   return (
     <>
       <div
-        className={`w-full ${transparent ? "bg-transparent" : (isDark ? "bg-slate-900" : "bg-white")} h-full overflow-hidden flex items-center relative rounded-sm`}
+        className={`w-full ${transparent ? "bg-transparent" : (isDark ? "bg-indigo-800" : "bg-white")} h-full overflow-hidden flex items-center relative rounded-sm`}
       >
         {/* Label Badge */}
         <div
-          className={`flex items-center ${transparent ? "bg-transparent" : (isDark ? "bg-slate-900 border-r border-slate-800" : "bg-slate-100 border-r border-slate-200")} h-full pr-4 pl-0 z-10 relative shrink-0`}
+          className={`flex items-center ${transparent ? "bg-transparent" : (isDark ? "bg-indigo-800 border-r border-indigo-700" : "bg-slate-100 border-r border-slate-200")} h-full pr-4 pl-0 z-10 relative shrink-0`}
         >
           {onToggle && (
             <input

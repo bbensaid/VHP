@@ -107,7 +107,7 @@ export default function NVRHHeroProfile() {
                  </span>
               </div>
 
-              <div className="bg-slate-900 text-white rounded-xl shadow-lg p-8">
+              <div className="bg-indigo-900 text-white rounded-xl shadow-lg p-8">
                  <h3 className="font-bold text-xl mb-8">Liquidity Forecast</h3>
                  <div className="relative h-48 flex items-end gap-3 px-2">
                     {projectionData.map((val, i) => {

@@ -107,7 +107,7 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                         {leadStory.pillar || "Analysis"}
                       </span>
                     </div>
-                    <h1 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
+                    <h1 className="text-3xl md:text-5xl font-black text-slate-700 leading-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
                       {leadStory.title}
                     </h1>
                     <p className="text-lg text-slate-600 leading-relaxed mb-8 line-clamp-3 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
@@ -116,7 +116,7 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                     <div className="flex items-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500">
                       <Link
                         href={`/advisory/reports`}
-                        className="bg-slate-900 text-white px-6 py-3 rounded-lg font-bold text-sm hover:bg-indigo-600 transition-colors shadow-lg shadow-indigo-500/20"
+                        className="bg-indigo-600 text-white px-6 py-3 rounded-lg font-bold text-sm hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20"
                       >
                         Read Full Analysis
                       </Link>
@@ -136,7 +136,7 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
               <div className="w-full h-full flex flex-col justify-center">
                 <div className="flex justify-between items-end mb-6">
                   <div>
-                    <h3 className="font-black text-slate-900 text-lg uppercase tracking-tight flex items-center gap-2">
+                    <h3 className="font-black text-slate-700 text-lg uppercase tracking-tight flex items-center gap-2">
                       <span className="text-2xl">📊</span> Visual Insight
                     </h3>
                     <div className="flex items-center gap-2 mt-1">
@@ -165,7 +165,7 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                     </p>
                   </div>
                   <div className="w-full md:w-2/5">
-                    <h4 className="font-bold text-slate-900 text-2xl mb-3">
+                    <h4 className="font-bold text-slate-700 text-2xl mb-3">
                       OpEx vs. Volume
                     </h4>
                     <p className="text-slate-600 leading-relaxed mb-6">
@@ -190,7 +190,7 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                   <div className="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-black uppercase tracking-widest">
                     New Course
                   </div>
-                  <h2 className="text-4xl font-black text-slate-900">
+                  <h2 className="text-4xl font-black text-slate-700">
                     Executive Masterclass: Value-Based Care
                   </h2>
                   <p className="text-lg text-slate-600">
@@ -223,7 +223,7 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                       Federal Initiative · CMS
                     </div>
                   </div>
-                  <h2 className="text-4xl font-black text-slate-900">
+                  <h2 className="text-4xl font-black text-slate-700">
                     Rural Health Transformation Program
                   </h2>
                   <p className="text-lg text-slate-600">

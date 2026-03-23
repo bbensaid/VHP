@@ -204,9 +204,9 @@ function PopulationHealthTools() {
       </div>
 
       {/* ED Super-Utilizer Programs */}
-      <div className="bg-slate-900 text-white rounded-2xl p-8 mb-10">
+      <div className="bg-indigo-700 text-white rounded-2xl p-8 mb-10">
         <h2 className="text-xl font-bold mb-2">ED Super-Utilizer Intervention Framework</h2>
-        <p className="text-slate-400 text-sm mb-6">
+        <p className="text-indigo-100 text-sm mb-6">
           The top 5% of ED users account for 40–60% of all ED visits. Evidence-based intervention pathways:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
