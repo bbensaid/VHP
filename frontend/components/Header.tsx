@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Logo from "./Logo";
 import NavDropdown from "./NavDropdown";
+import DarkModeToggle from "./DarkModeToggle";
 import {
   Bars3Icon,
   XMarkIcon,
@@ -149,16 +150,15 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 flex flex-col font-sans shadow-md bg-white">
       {/* 1. TOP BAR */}
-      <div className="bg-indigo-700 text-indigo-100 text-[11px] font-bold tracking-wider uppercase py-2 border-b border-indigo-800 w-full relative z-50">
-        {/* PHASE 1 FIX: Standardized Grid Wrapper */}
+      <div className="bg-black text-zinc-300 text-[10px] font-bold tracking-wider uppercase py-1 border-b border-neutral-800 w-full relative z-50">
         <div className="w-full px-4 flex items-center h-full gap-0">
-          <div className="hidden lg:block opacity-80 whitespace-nowrap w-[500px] shrink-0">
+          <div className="hidden lg:block opacity-70 whitespace-nowrap w-[500px] shrink-0">
             <span>{dateString}</span>
           </div>
           <div className="flex-1 flex items-center overflow-hidden min-w-0 pr-32">
-            <TickerStrip 
-              tickerData={{ headlines }} 
-              isVisible={isHeaderVisible} 
+            <TickerStrip
+              tickerData={{ headlines }}
+              isVisible={isHeaderVisible}
               onToggle={() => setHeaderVisible(!isHeaderVisible)}
               label="DAILY INSIGHT"
               theme="dark"
@@ -166,22 +166,22 @@ const Header = () => {
             />
           </div>
           <div className="hidden lg:flex items-center gap-6 whitespace-nowrap">
-            <Link href="/faq" className="hover:text-white transition-colors">
+            <Link href="/faq" className="text-white hover:text-zinc-300 transition-colors">
               FAQ
             </Link>
-            <div className="h-4 w-px bg-indigo-600"></div>
+            <div className="h-3 w-px bg-neutral-700"></div>
             <NavDropdown
               label="COMPANY"
               items={companyItems}
-              buttonClassName="flex items-center gap-1 text-[11px] font-bold tracking-wider uppercase hover:text-white transition-colors text-indigo-100"
+              buttonClassName="flex items-center gap-1 text-[10px] font-bold tracking-wider uppercase hover:text-zinc-300 transition-colors text-white"
             />
-            <div className="h-4 w-px bg-indigo-600"></div>
-            <Link href="/login" className="hover:text-white transition-colors">
+            <div className="h-3 w-px bg-neutral-700"></div>
+            <Link href="/login" className="text-white hover:text-zinc-300 transition-colors">
               Login
             </Link>
             <Link
               href="/subscribe"
-              className="bg-white text-indigo-700 px-3 py-0.5 rounded-sm hover:bg-indigo-50 transition-colors"
+              className="bg-white text-black px-3 py-0.5 rounded-sm hover:bg-zinc-100 transition-colors"
             >
               Subscribe
             </Link>
@@ -202,8 +202,9 @@ const Header = () => {
                   onClick={handleToggleLeft}
                   className="p-2 text-slate-400 hover:bg-slate-100 rounded-md transition-colors"
                   title="Toggle Navigation"
+                  aria-label="Toggle navigation sidebar"
                 >
-                  <Bars3BottomLeftIcon className="w-6 h-6" />
+                  <Bars3BottomLeftIcon className="w-6 h-6" aria-hidden="true" />
                 </button>
               )}
             </div>
@@ -259,15 +260,17 @@ const Header = () => {
             </div>
           </div>
 
-          {/* RIGHT SIDEBAR TOGGLE */}
-          <div className="w-10 shrink-0 flex justify-end ml-4">
+          {/* RIGHT CONTROLS: dark mode + sidebar toggle */}
+          <div className="shrink-0 flex items-center gap-1 ml-4">
+            <DarkModeToggle />
             {!isStudio && (
               <button
                 onClick={handleToggleRight}
                 className="p-2 text-slate-400 hover:bg-slate-100 rounded-md transition-colors"
                 title="Toggle Vitals"
+                aria-label="Toggle vitals sidebar"
               >
-                <Bars3BottomRightIcon className="w-6 h-6" />
+                <Bars3BottomRightIcon className="w-6 h-6" aria-hidden="true" />
               </button>
             )}
           </div>
@@ -276,11 +279,14 @@ const Header = () => {
             <button
               className="p-2 text-slate-800 hover:bg-slate-100 rounded-md transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-menu"
             >
               {mobileMenuOpen ? (
-                <XMarkIcon className="w-8 h-8" />
+                <XMarkIcon className="w-8 h-8" aria-hidden="true" />
               ) : (
-                <Bars3Icon className="w-8 h-8" />
+                <Bars3Icon className="w-8 h-8" aria-hidden="true" />
               )}
             </button>
           </div>
@@ -288,7 +294,7 @@ const Header = () => {
 
         {/* MOBILE MENU */}
         {mobileMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-xl py-4 px-4 xl:hidden flex flex-col gap-4 animate-in slide-in-from-top-2 duration-200 max-h-[80vh] overflow-y-auto">
+          <div id="mobile-menu" className="absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-xl py-4 px-4 xl:hidden flex flex-col gap-4 animate-in slide-in-from-top-2 duration-200 max-h-[80vh] overflow-y-auto">
             <div className="space-y-2">
               <div className="font-bold text-slate-900 pt-2 border-t border-slate-100 mt-2">
                 POLICY

@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { createBrowserClient } from "@supabase/ssr";
 
 const supabase = createBrowserClient(
@@ -12,12 +12,26 @@ const supabase = createBrowserClient(
 
 export default function SignupPage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
+  const [refCode, setRefCode] = useState<string | null>(null);
+
+  useEffect(() => {
+    const ref = searchParams.get("ref");
+    if (ref) {
+      setRefCode(ref);
+      // Persist in sessionStorage so the code survives email confirmation redirect
+      sessionStorage.setItem("htr_referral_code", ref);
+    } else {
+      const stored = sessionStorage.getItem("htr_referral_code");
+      if (stored) setRefCode(stored);
+    }
+  }, [searchParams]);
 
   async function handleSignup(e: React.FormEvent) {
     e.preventDefault();
@@ -25,13 +39,36 @@ export default function SignupPage() {
     setLoading(true);
     setError(null);
 
-    const { error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signUp({
       email,
       password,
-      options: { data: { full_name: fullName } },
+      options: { data: { full_name: fullName, referral_code: refCode ?? undefined } },
     });
 
     if (error) { setError(error.message); setLoading(false); return; }
+
+    // Record referral sign-up immediately if we have the user ID
+    if (refCode && data.user) {
+      await supabase.rpc("record_referral_signup", {
+        p_code: refCode,
+        p_referred_id: data.user.id,
+      }).maybeSingle();
+      sessionStorage.removeItem("htr_referral_code");
+    }
+
+    // Register in Loops + fire welcome automation (fire-and-forget)
+    if (data.user) {
+      fetch("/api/loops/welcome", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          userId: data.user.id,
+          firstName: fullName.split(" ")[0] || undefined,
+        }),
+      }).catch(() => {}); // non-fatal
+    }
+
     setSuccess(true);
     setLoading(false);
   }
@@ -100,23 +137,32 @@ export default function SignupPage() {
               <div className="bg-red-50 border border-red-200 text-red-700 text-sm px-4 py-3 rounded-xl">{error}</div>
             )}
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1.5">Full name</label>
-              <input type="text" required value={fullName} onChange={(e) => setFullName(e.target.value)}
+              <label htmlFor="signup-name" className="block text-sm font-semibold text-slate-700 mb-1.5">Full name</label>
+              <input id="signup-name" type="text" required value={fullName} onChange={(e) => setFullName(e.target.value)}
                 className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
-                placeholder="Jane Smith" />
+                placeholder="Jane Smith"
+                autoComplete="name" />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1.5">Email address</label>
-              <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)}
+              <label htmlFor="signup-email" className="block text-sm font-semibold text-slate-700 mb-1.5">Email address</label>
+              <input id="signup-email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)}
                 className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
-                placeholder="you@example.com" />
+                placeholder="you@example.com"
+                autoComplete="email" />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1.5">Password</label>
-              <input type="password" required value={password} onChange={(e) => setPassword(e.target.value)}
+              <label htmlFor="signup-password" className="block text-sm font-semibold text-slate-700 mb-1.5">Password</label>
+              <input id="signup-password" type="password" required value={password} onChange={(e) => setPassword(e.target.value)}
                 className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
-                placeholder="Min. 8 characters" />
+                placeholder="Min. 8 characters"
+                autoComplete="new-password" />
             </div>
+            {refCode && (
+              <div className="flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-xl px-4 py-2 text-xs text-emerald-700">
+                <span className="font-bold">Referral applied:</span>
+                <span className="font-mono">{refCode}</span>
+              </div>
+            )}
             <button type="submit" disabled={loading}
               className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-xl text-sm transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
               {loading ? "Creating account…" : "Create free account"}

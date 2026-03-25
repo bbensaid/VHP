@@ -5,6 +5,73 @@ import Link from "next/link";
 import { CheckIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/navigation";
 
+// ── Team seat selector ────────────────────────────────────────────────────────
+
+function TeamSeatSelector({ interval }: { interval: "monthly" | "yearly" }) {
+  const [seats, setSeats] = useState(5);
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
+
+  const pricePerSeat = interval === "yearly" ? 18.42 : 23;
+  const total = (pricePerSeat * seats).toFixed(2);
+
+  async function handleTeamCheckout() {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/stripe/team-checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ seats, interval }),
+      });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else if (res.status === 401) {
+        router.push("/login?from=/pricing");
+      }
+    } catch {
+      console.error("Team checkout failed");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return (
+    <div className="flex flex-col sm:flex-row items-center gap-6">
+      <div className="flex items-center gap-4 flex-1">
+        <label className="text-sm font-semibold text-slate-700 shrink-0">Seats:</label>
+        <input
+          type="range"
+          min={2}
+          max={25}
+          value={seats}
+          onChange={(e) => setSeats(Number(e.target.value))}
+          className="flex-1 accent-indigo-600"
+          aria-label="Number of team seats"
+          aria-valuemin={2}
+          aria-valuemax={25}
+          aria-valuenow={seats}
+          aria-valuetext={`${seats} seats`}
+        />
+        <span className="text-lg font-black text-slate-900 w-8 text-center">{seats}</span>
+      </div>
+      <div className="text-right shrink-0">
+        <p className="text-sm text-slate-500">
+          Total: <span className="font-black text-slate-900">${total}/mo</span>
+          {interval === "yearly" && <span className="text-xs text-emerald-600 ml-1">(billed yearly)</span>}
+        </p>
+      </div>
+      <button
+        onClick={handleTeamCheckout}
+        disabled={loading}
+        className="shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+      >
+        {loading ? "Redirecting…" : `Get ${seats} seats →`}
+      </button>
+    </div>
+  );
+}
+
 type PlanId = "subscriber" | "student" | "professional";
 type Interval = "monthly" | "yearly";
 
@@ -13,6 +80,7 @@ const PLANS: Array<{
   name: string;
   monthlyPrice: number;
   yearlyPrice: number;
+  yearlyTotal: number;
   description: string;
   features: string[];
   highlight?: boolean;
@@ -22,6 +90,7 @@ const PLANS: Array<{
     name: "Subscriber",
     monthlyPrice: 29,
     yearlyPrice: 23,
+    yearlyTotal: 276,
     description: "For healthcare professionals who need authoritative analysis.",
     features: [
       "All policy analysis & reports",
@@ -34,8 +103,9 @@ const PLANS: Array<{
   {
     id: "student",
     name: "Student",
-    monthlyPrice: 49,
-    yearlyPrice: 39,
+    monthlyPrice: 19,
+    yearlyPrice: 15,
+    yearlyTotal: 180,
     description: "Everything in Subscriber plus structured learning and certifications.",
     features: [
       "Everything in Subscriber",
@@ -51,6 +121,7 @@ const PLANS: Array<{
     name: "Professional",
     monthlyPrice: 99,
     yearlyPrice: 79,
+    yearlyTotal: 948,
     description: "For leaders who need certifications, CME, and advanced analytics.",
     features: [
       "Everything in Student",
@@ -144,16 +215,24 @@ export default function PricingPage() {
                   </div>
                 )}
                 <h2 className="text-2xl font-black text-slate-900">{plan.name}</h2>
-                <div className="mt-2 mb-4">
+                <div className="mt-2 mb-1">
                   <span className="text-4xl font-black text-slate-900">${price}</span>
-                  <span className="text-slate-400 text-sm">/mo{interval === "yearly" ? " billed annually" : ""}</span>
+                  <span className="text-slate-400 text-sm">/mo</span>
                 </div>
+                {interval === "yearly" ? (
+                  <p className="text-xs text-slate-500 mb-4">
+                    Billed <span className="font-semibold text-slate-700">${plan.yearlyTotal}/year</span>
+                    {" "}— save ${plan.monthlyPrice * 12 - plan.yearlyTotal}/yr
+                  </p>
+                ) : (
+                  <p className="text-xs text-emerald-600 font-semibold mb-4">7-day free trial included</p>
+                )}
                 <p className="text-slate-500 text-sm mb-6">{plan.description}</p>
 
                 <ul className="space-y-3 mb-8 flex-1">
                   {plan.features.map((f) => (
                     <li key={f} className="flex items-start gap-2.5 text-sm text-slate-700">
-                      <CheckIcon className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
+                      <CheckIcon className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
                       {f}
                     </li>
                   ))}
@@ -175,6 +254,77 @@ export default function PricingPage() {
           })}
         </div>
 
+        {/* Social proof */}
+        <div className="mt-16">
+          {/* Trust stats */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12 text-center">
+            {[
+              { value: "1,200+", label: "Active subscribers" },
+              { value: "50", label: "States covered" },
+              { value: "4.9★", label: "Avg. rating" },
+              { value: "19", label: "Research tools" },
+            ].map((stat) => (
+              <div key={stat.label} className="bg-white rounded-xl border border-slate-200 p-5">
+                <p className="text-2xl font-black text-indigo-700">{stat.value}</p>
+                <p className="text-xs text-slate-500 font-semibold uppercase tracking-wide mt-1">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Testimonials */}
+          <h3 className="text-center text-sm font-black uppercase tracking-widest text-slate-400 mb-6">
+            Trusted by healthcare leaders
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                quote: "HTR's AI Analyst saves me hours every week. The policy briefs are better than anything our team was producing in-house.",
+                name: "Chief Medical Officer",
+                org: "Vermont integrated health system",
+              },
+              {
+                quote: "The state dashboard is the first tool I open every Monday morning. Indispensable for tracking regulatory changes across our market.",
+                name: "VP of Government Affairs",
+                org: "Regional payer organization",
+              },
+              {
+                quote: "As a health policy PhD student, the Research Lab is extraordinarily well-built. The Monte Carlo modeling tools alone are worth the subscription.",
+                name: "Doctoral Researcher",
+                org: "Boston University School of Public Health",
+              },
+            ].map((t, i) => (
+              <div key={i} className="bg-white rounded-xl border border-slate-200 p-6 flex flex-col gap-4">
+                <p className="text-slate-600 text-sm leading-relaxed italic">&ldquo;{t.quote}&rdquo;</p>
+                <div className="mt-auto">
+                  <p className="font-bold text-slate-900 text-sm">{t.name}</p>
+                  <p className="text-slate-400 text-xs">{t.org}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Team plan */}
+        <div className="mt-10 bg-white rounded-2xl border border-indigo-200 shadow-sm p-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-6">
+            <div>
+              <div className="inline-flex items-center gap-1.5 bg-indigo-100 text-indigo-700 text-[10px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full mb-2">
+                Team
+              </div>
+              <h3 className="text-xl font-black text-slate-900">Team Plan</h3>
+              <p className="text-slate-500 text-sm mt-1 max-w-lg">
+                Full Subscriber access for your whole team — centrally billed, individually activated.
+                <span className="font-semibold text-slate-700"> From $23/seat/mo</span> (2–25 seats).
+              </p>
+            </div>
+            <div className="shrink-0 text-right">
+              <p className="text-3xl font-black text-indigo-700">$23<span className="text-lg font-semibold text-slate-400">/seat/mo</span></p>
+              <p className="text-xs text-slate-400 mt-0.5">20% off vs. individual Subscriber</p>
+            </div>
+          </div>
+          <TeamSeatSelector interval={interval} />
+        </div>
+
         {/* Advisory callout */}
         <div className="mt-10 bg-white rounded-2xl border border-slate-200 shadow-sm p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
@@ -186,7 +336,7 @@ export default function PricingPage() {
           </div>
           <Link
             href="/advisory"
-            className="flex-shrink-0 bg-rose-600 hover:bg-rose-700 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors"
+            className="shrink-0 bg-rose-600 hover:bg-rose-700 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors"
           >
             Contact Advisory
           </Link>

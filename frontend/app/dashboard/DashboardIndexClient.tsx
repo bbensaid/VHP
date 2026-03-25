@@ -2,7 +2,15 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
-import { NationalMap } from "@/components/dashboard/NationalMap";
+import dynamic from "next/dynamic";
+
+const NationalMap = dynamic(
+  () => import("@/components/dashboard/NationalMap").then((m) => m.NationalMap),
+  {
+    ssr: false,
+    loading: () => <div className="animate-pulse bg-slate-200 rounded-xl h-96" />,
+  }
+);
 import type { PerformanceIndexProfile } from "@/lib/data/performance-index-data";
 import {
   StarIcon,
@@ -27,9 +35,33 @@ const REGION_MAP: Record<string, string> = {
 
 interface Props {
   allStates: Record<string, PerformanceIndexProfile>;
+  loading?: boolean;
 }
 
-export default function DashboardIndexClient({ allStates }: Props) {
+export default function DashboardIndexClient({ allStates, loading = false }: Props) {
+  if (loading) {
+    return (
+      <div className="w-full font-sans text-slate-800 flex flex-col pb-20 animate-pulse">
+        {/* Header skeleton */}
+        <div className="bg-white border border-slate-200 rounded-2xl p-8 mb-6 shadow-sm">
+          <div className="h-10 bg-slate-200 rounded-xl w-2/3 mb-4" />
+          <div className="h-5 bg-slate-200 rounded-lg w-1/2 mb-8" />
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <div key={i} className="bg-slate-200 rounded-xl h-24" />
+            ))}
+          </div>
+        </div>
+        {/* State card grid skeleton */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div key={i} className="animate-pulse bg-slate-200 rounded-xl h-24" />
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedRegion, setSelectedRegion] = useState("All");
   const [sortConfig, setSortConfig] = useState<{ key: string; direction: "asc" | "desc" }>({ key: 'performanceScore', direction: 'desc' });
@@ -124,7 +156,7 @@ export default function DashboardIndexClient({ allStates }: Props) {
                 {searchQuery && <button onClick={() => setSearchQuery("")} className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-slate-400 hover:text-slate-600 rounded-full hover:bg-slate-200 transition-colors"><XMarkIcon className="w-4 h-4" /></button>}
               </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
               <div className="bg-indigo-50 border border-indigo-100 p-4 rounded-xl"><div className="flex items-center gap-2 text-indigo-600 mb-1"><ChartBarIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">Avg. Index Score</span></div><div className="text-2xl font-black text-slate-900">{metrics.averageScore}</div><div className="text-xs text-slate-500">Across {tableRows.length} states</div></div>
               <div className="bg-emerald-50 border border-emerald-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-emerald-600 mb-1"><StarIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">Leading States</span></div><div className="text-2xl font-black text-slate-900">{metrics.leadingCount}</div><div className="text-xs text-slate-500">Score 80+</div></div>
               <div className="bg-red-50 border border-red-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-red-600 mb-1"><ExclamationTriangleIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">At Risk States</span></div><div className="text-2xl font-black text-slate-900">{metrics.atRiskCount}</div><div className="text-xs text-slate-500">Score &lt;60</div></div>
@@ -150,6 +182,7 @@ export default function DashboardIndexClient({ allStates }: Props) {
         </div>
         <div className="w-full bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
           <div className="px-6 py-4 border-b border-slate-200"><h2 className="text-sm font-bold uppercase tracking-widest text-slate-900">State Performance Registry</h2><p className="text-xs text-slate-500">Showing {tableRows.length} states</p></div>
+          <div className="overflow-x-auto">
           <table className="w-full text-left text-sm">
             <thead className="bg-slate-50 border-b border-slate-200 text-xs font-bold text-slate-500 uppercase">
               <tr>
@@ -178,6 +211,7 @@ export default function DashboardIndexClient({ allStates }: Props) {
               ))}
             </tbody>
           </table>
+          </div>
         </div>
       </div>
     </div>

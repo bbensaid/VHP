@@ -15,6 +15,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@sanity/client";
+import { loops, TEMPLATE } from "@/lib/loops";
 
 const sanity = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
@@ -97,10 +98,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  if (!process.env.RESEND_API_KEY) {
-    return NextResponse.json({ error: "RESEND_API_KEY not configured" }, { status: 500 });
-  }
-
   try {
     // Fetch active digest subscribers
     const subscribers: { email: string }[] = await sanity.fetch(
@@ -108,24 +105,45 @@ export async function POST(req: NextRequest) {
     );
 
     // Fetch last 5 policy analyses for the digest
-    const articles = await sanity.fetch(
-      `*[_type == "policyAnalysis"] | order(publishedAt desc) [0...5] {
-        title, "slug": slug.current, summary, pillar
-      }`
-    );
+    const articles: { title: string; summary: string; slug: string; pillar: string }[] =
+      await sanity.fetch(
+        `*[_type == "policyAnalysis"] | order(publishedAt desc) [0...5] {
+          title, "slug": slug.current, summary, pillar
+        }`
+      );
 
     if (subscribers.length === 0) {
       return NextResponse.json({ message: "No active subscribers", sent: 0 });
     }
 
-    const subject = `HTR Weekly Digest — ${new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`;
-    const html = buildDigestHtml(articles);
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://healthtransformationreport.com";
+    const dateLabel = new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 
     let sent = 0;
     let errors = 0;
+
     for (const sub of subscribers) {
       try {
-        await sendEmail(sub.email, subject, html);
+        if (TEMPLATE.digest) {
+          // Use Loops transactional template (has open/click tracking + unsubscribe)
+          await loops.sendTransactional(TEMPLATE.digest, sub.email, {
+            date:    dateLabel,
+            article1_title:   articles[0]?.title   ?? "",
+            article1_summary: articles[0]?.summary ?? "",
+            article1_url:     articles[0] ? `${baseUrl}/policy/${articles[0].slug}` : "",
+            article2_title:   articles[1]?.title   ?? "",
+            article2_summary: articles[1]?.summary ?? "",
+            article2_url:     articles[1] ? `${baseUrl}/policy/${articles[1].slug}` : "",
+            article3_title:   articles[2]?.title   ?? "",
+            article3_summary: articles[2]?.summary ?? "",
+            article3_url:     articles[2] ? `${baseUrl}/policy/${articles[2].slug}` : "",
+          });
+        } else {
+          // Fallback: legacy Resend HTML send
+          const subject = `HTR Weekly Digest — ${dateLabel}`;
+          const html = buildDigestHtml(articles);
+          await sendEmail(sub.email, subject, html);
+        }
         sent++;
       } catch {
         errors++;

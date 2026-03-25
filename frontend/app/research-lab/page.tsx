@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { getUser, roleAtLeast } from '@/lib/auth'
+import UpgradePrompt from '@/components/UpgradePrompt'
 
 export const metadata = {
   title: 'HTR Research Lab | Health Transformation Review',
@@ -88,7 +90,11 @@ const STATS = [
   { value: '50', label: 'States Benchmarked' },
 ]
 
-export default function ResearchLabPage() {
+export default async function ResearchLabPage() {
+  const user = await getUser()
+  const isSubscriber = user ? roleAtLeast(user.role, 'subscriber') : false
+  const isAdvisory = user ? roleAtLeast(user.role, 'advisory') : false
+
   return (
     <div className="min-h-screen bg-slate-50">
 
@@ -108,7 +114,7 @@ export default function ResearchLabPage() {
           </p>
 
           {/* Stats row */}
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap gap-3 sm:gap-6">
             {STATS.map(s => (
               <div key={s.label} className="flex flex-col">
                 <span className="text-3xl font-black text-indigo-700">{s.value}</span>
@@ -118,6 +124,28 @@ export default function ResearchLabPage() {
           </div>
         </div>
       </div>
+
+      {/* ── Contextual Upgrade Prompts ── */}
+      {!isSubscriber && (
+        <div className="max-w-6xl mx-auto px-6 pt-8">
+          <UpgradePrompt
+            inline
+            title="Unlock the full Research Lab"
+            description="Subscribe to access all 19 interactive analytical tools — FHIR labs, Monte Carlo models, policy simulators, and more."
+            from="/research-lab"
+          />
+        </div>
+      )}
+      {isSubscriber && !isAdvisory && (
+        <div className="max-w-6xl mx-auto px-6 pt-8">
+          <UpgradePrompt
+            inline
+            title="Upgrade to Advisory for dedicated expert support"
+            description="Advisory members get 1-on-1 analyst sessions, custom model runs, and priority access to new research tools."
+            from="/research-lab"
+          />
+        </div>
+      )}
 
       {/* ── Category Grid ── */}
       <div className="max-w-6xl mx-auto px-6 py-12">

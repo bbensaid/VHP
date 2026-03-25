@@ -73,19 +73,21 @@ function LoginForm() {
               <div className="bg-red-50 border border-red-200 text-red-700 text-sm px-4 py-3 rounded-xl">{error}</div>
             )}
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1.5">Email address</label>
-              <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)}
+              <label htmlFor="login-email" className="block text-sm font-semibold text-slate-700 mb-1.5">Email address</label>
+              <input id="login-email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)}
                 className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition-all"
-                placeholder="you@example.com" />
+                placeholder="you@example.com"
+                autoComplete="email" />
             </div>
             <div>
               <div className="flex items-center justify-between mb-1.5">
-                <label className="block text-sm font-semibold text-slate-700">Password</label>
+                <label htmlFor="login-password" className="block text-sm font-semibold text-slate-700">Password</label>
                 <Link href="/forgot-password" className="text-xs text-indigo-600 hover:text-indigo-800 font-medium">Forgot password?</Link>
               </div>
-              <input type="password" required value={password} onChange={(e) => setPassword(e.target.value)}
+              <input id="login-password" type="password" required value={password} onChange={(e) => setPassword(e.target.value)}
                 className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition-all"
-                placeholder="••••••••" />
+                placeholder="••••••••"
+                autoComplete="current-password" />
             </div>
             <button type="submit" disabled={loading}
               className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-xl text-sm transition-colors disabled:opacity-60 disabled:cursor-not-allowed">

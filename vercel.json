@@ -6,18 +6,10 @@
   "installCommand": "cd frontend && npm install",
   "framework": "nextjs",
 
-  "rewrites": [
-    {
-      "source": "/api/ai/:path*",
-      "destination": "https://your-backend.railway.app/api/:path*"
-    }
-  ],
-
   "headers": [
     {
       "source": "/api/(.*)",
       "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "https://your-domain.vercel.app" },
         { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" },
         { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization" }
       ]
