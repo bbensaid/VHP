@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { client } from "@/lib/sanity";
+import { getUser, roleAtLeast } from "@/lib/auth";
+import UpgradePrompt from "@/components/UpgradePrompt";
 import ArticleContent from "./ArticleContent";
 import VideoBlock from "./VideoBlock";
 import AudioBlock from "./AudioBlock";
@@ -9,6 +11,8 @@ import ShareButton from "@/components/ShareButton";
 import CitationButton from "@/components/CitationButton";
 import SaveToPdfButton from "@/components/SaveToPdfButton";
 import FontSizeToggle from "@/components/FontSizeToggle";
+import BookmarkButton from "@/components/BookmarkButton";
+import EmailCaptureBar from "@/components/EmailCaptureBar";
 
 // Minimal Sanity portable-text block shape (full types require sanity typegen)
 interface SanityBlock {
@@ -130,6 +134,10 @@ export default async function ArticlePageTemplate({
 
   const theme = getTheme(article.pillar);
 
+  // Gate full body behind subscriber+; free/anon users see a 3-paragraph preview
+  const user = await getUser();
+  const canReadFull = user ? roleAtLeast(user.role, "subscriber") : false;
+
   const videoElements =
     article.body?.filter((block: SanityBlock) => ["video", "youtube", "mux.video"].includes(block._type)) || [];
   const audioElements =
@@ -233,6 +241,14 @@ export default async function ArticlePageTemplate({
                 )}
                 <ListenButton text={readText} />
                 <ShareButton title={article.title} summary={article.summary} />
+                <BookmarkButton
+                  sanityId={article._id}
+                  slug={id}
+                  title={article.title}
+                  pillar={article.pillar}
+                  contentType={article._type}
+                  userId={user?.id ?? null}
+                />
                 <CitationButton title={article.title} publishedAt={article.publishedAt} />
                 <SaveToPdfButton elementId="article-content" filename={`${id}.pdf`} />
                 <FontSizeToggle targetId="article-body" />
@@ -264,9 +280,35 @@ export default async function ArticlePageTemplate({
             </figure>
           )}
 
-          <div id="article-body" className="prose prose-lg prose-indigo max-w-none transition-all duration-200">
-            <ArticleContent body={mainContent} />
-          </div>
+          {canReadFull ? (
+            <>
+              <div id="article-body" className="prose prose-lg prose-indigo max-w-none transition-all duration-200">
+                <ArticleContent body={mainContent} />
+              </div>
+              {!user && (
+                <div className="mt-12">
+                  <EmailCaptureBar context={article.pillar?.toLowerCase()} variant="inline" />
+                </div>
+              )}
+            </>
+          ) : (
+            <>
+              {/* Show first 3 content blocks as preview */}
+              <div id="article-body" className="prose prose-lg prose-indigo max-w-none transition-all duration-200 relative">
+                <ArticleContent body={mainContent.slice(0, 3)} />
+                {/* Fade out the preview */}
+                <div className="absolute bottom-0 inset-x-0 h-48 bg-linear-to-t from-white to-transparent pointer-events-none" />
+              </div>
+              <div className="mt-2 py-8">
+                <EmailCaptureBar context={article.pillar?.toLowerCase()} variant="banner" />
+                <UpgradePrompt
+                  title="Read the full analysis"
+                  description="Subscribe to unlock this article and the complete HTR intelligence library — policy analyses, state dashboards, and the AI Analyst."
+                  from={`/articles/${id}`}
+                />
+              </div>
+            </>
+          )}
 
           {article.relatedArticles && article.relatedArticles.length > 0 && (
             <div className="mt-16 pt-10 border-t border-gray-200" data-html2canvas-ignore="true">

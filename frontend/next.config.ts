@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { withSentryConfig } from "@sentry/nextjs";
 
 // Security headers applied to every response
 const securityHeaders = [
@@ -42,7 +43,7 @@ const securityHeaders = [
       //   - Sanity CDN GROQ: {projectId}.apicdn.sanity.io (two-level subdomain)
       //   - jsDelivr CDN: US Atlas TopoJSON for react-simple-maps maps
       //   - Stripe payment API
-      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.supabase.io https://*.api.sanity.io https://*.apicdn.sanity.io https://api.sanity.io https://cdn.jsdelivr.net https://api.stripe.com",
+      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.supabase.io https://*.api.sanity.io https://*.apicdn.sanity.io https://api.sanity.io https://cdn.jsdelivr.net https://api.stripe.com https://*.sentry.io https://o*.ingest.sentry.io",
       // YouTube embeds + Spotify/SoundCloud audio + Stripe Checkout / 3DS
       "frame-src https://www.youtube.com https://open.spotify.com https://w.soundcloud.com https://js.stripe.com https://hooks.stripe.com",
       // Service workers / web workers
@@ -72,4 +73,12 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withSentryConfig(nextConfig, {
+  // Suppress Sentry CLI output during builds
+  silent: true,
+  // Automatically instrument server-side routes
+  widenClientFileUpload: true,
+  // Upload source maps only in CI/production builds
+  disableServerWebpackPlugin: process.env.NODE_ENV !== "production",
+  disableClientWebpackPlugin: process.env.NODE_ENV !== "production",
+});

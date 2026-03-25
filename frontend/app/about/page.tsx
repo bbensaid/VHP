@@ -80,41 +80,75 @@ const stats = [
   { value: "20", label: "Research Domains Covered", suffix: "" },
 ];
 
+// ─── REPLACE WITH REAL TEAM DATA ──────────────────────────────────────────────
+// Update each entry with your actual team members' names, credentials, bios,
+// and LinkedIn URLs. Keep initials, pillar, and color consistent.
+// ──────────────────────────────────────────────────────────────────────────────
 const team = [
   {
     name: "Dr. Sarah Chen",
+    credentials: "MD, MPH | Yale School of Medicine",
     role: "Chief Intelligence Officer",
+    pillar: "Policy",
     focus: "Health Policy & Federal Regulation",
+    bio: "Former CMS policy advisor with 15 years in federal health regulation. Published researcher in ACA implementation and rural health access. Led policy design for three state 1115 waiver programs.",
+    institutions: ["CMS — Office of Policy", "Brookings Health Policy Center"],
     initials: "SC",
     color: "bg-sky-100 text-sky-700",
+    border: "border-sky-200",
+    linkedin: "https://linkedin.com",
   },
   {
     name: "Marcus Webb",
+    credentials: "MBA, CFA | Wharton School",
     role: "Principal Economist",
+    pillar: "Economics",
     focus: "Value-Based Care & Capital Markets",
+    bio: "12 years in health system finance and alternative payment model design. Former healthcare investment analyst covering provider and payer markets. Expert in APM transition modeling and VBC contract structures.",
+    institutions: ["Goldman Sachs — Healthcare IB", "HFMA Advisory Board"],
     initials: "MW",
     color: "bg-emerald-100 text-emerald-700",
+    border: "border-emerald-200",
+    linkedin: "https://linkedin.com",
   },
   {
     name: "Dr. Priya Nair",
+    credentials: "PhD Computer Science | MIT",
     role: "Technology Research Director",
+    pillar: "Technology",
     focus: "AI/ML Systems & Digital Infrastructure",
+    bio: "AI researcher specializing in clinical decision support and algorithmic fairness in healthcare settings. Former research scientist at a major EHR vendor. Advisory board member for ONC health IT initiatives.",
+    institutions: ["MIT CSAIL", "Epic Research — AI Division"],
     initials: "PN",
     color: "bg-indigo-100 text-indigo-700",
+    border: "border-indigo-200",
+    linkedin: "https://linkedin.com",
   },
   {
     name: "James Okafor",
+    credentials: "MSN, RN, FACHE | Johns Hopkins School of Nursing",
     role: "Clinical Affairs Lead",
+    pillar: "Clinical",
     focus: "Evidence-Based Care & Workforce",
+    bio: "Nurse executive with operational leadership across three health systems. Nationally recognized expert in workforce innovation and Hospital-at-Home program design. Fellow of the American College of Healthcare Executives.",
+    institutions: ["Johns Hopkins Hospital — Nursing Leadership", "AHA Clinical Affairs Committee"],
     initials: "JO",
     color: "bg-rose-100 text-rose-700",
+    border: "border-rose-200",
+    linkedin: "https://linkedin.com",
   },
   {
     name: "Dr. Lucia Reyes",
+    credentials: "DrPH, MSW | Harvard T.H. Chan School of Public Health",
     role: "Equity & SDOH Director",
+    pillar: "Equity",
     focus: "Health Disparities & Community Systems",
+    bio: "Public health researcher with a decade of work on structural determinants of health and community-based care models. Former HRSA program officer for underserved community health grants. Published author on algorithmic bias in clinical AI.",
+    institutions: ["HRSA — Bureau of Primary Health Care", "Harvard Population Health Initiative"],
     initials: "LR",
     color: "bg-violet-100 text-violet-700",
+    border: "border-violet-200",
+    linkedin: "https://linkedin.com",
   },
 ];
 
@@ -376,15 +410,54 @@ export default function AboutPage() {
               Each domain is led by a dedicated principal analyst — former policymakers, practicing clinicians, and credentialed economists who collaborate to ensure every insight accounts for all five dimensions.
             </p>
           </div>
-          <div className="grid md:grid-cols-5 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.map((m) => (
-              <div key={m.name} className="bg-white border border-slate-200 rounded-xl p-6 text-center hover:shadow-md transition-all">
-                <div className={`w-14 h-14 rounded-full ${m.color} flex items-center justify-center text-xl font-black mx-auto mb-4`}>
-                  {m.initials}
+              <div
+                key={m.name}
+                className={`bg-white border ${m.border} rounded-xl p-6 hover:shadow-md transition-all flex flex-col`}
+              >
+                {/* Header */}
+                <div className="flex items-start gap-4 mb-4">
+                  <div className={`w-14 h-14 rounded-full ${m.color} flex items-center justify-center text-xl font-black shrink-0`}>
+                    {m.initials}
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="font-bold text-slate-900 leading-tight">{m.name}</h3>
+                    <p className="text-[11px] text-slate-500 mt-0.5">{m.credentials}</p>
+                    <p className="text-xs font-bold text-indigo-600 uppercase tracking-wider mt-1">{m.role}</p>
+                  </div>
                 </div>
-                <h3 className="font-bold text-slate-800 text-sm leading-tight mb-1">{m.name}</h3>
-                <p className="text-indigo-600 text-xs font-bold uppercase tracking-wider mb-2">{m.role}</p>
-                <p className="text-slate-500 text-xs leading-relaxed">{m.focus}</p>
+
+                {/* Bio */}
+                <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-1">{m.bio}</p>
+
+                {/* Prior institutions */}
+                <div className="border-t border-slate-100 pt-4 mb-4">
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Prior Positions</p>
+                  <ul className="space-y-1">
+                    {m.institutions.map((inst) => (
+                      <li key={inst} className="text-xs text-slate-500 flex items-center gap-1.5">
+                        <span className="w-1 h-1 rounded-full bg-slate-300 shrink-0" />
+                        {inst}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Footer */}
+                <div className="flex items-center justify-between">
+                  <span className={`text-[10px] font-black uppercase tracking-widest px-2 py-1 rounded ${m.color}`}>
+                    {m.pillar}
+                  </span>
+                  <a
+                    href={m.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-slate-400 hover:text-indigo-600 transition-colors font-semibold"
+                  >
+                    LinkedIn →
+                  </a>
+                </div>
               </div>
             ))}
           </div>

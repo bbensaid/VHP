@@ -36,8 +36,8 @@ export const PLANS = {
     priceMonthly: process.env.STRIPE_PRICE_STUDENT_MONTHLY!,
     priceYearly: process.env.STRIPE_PRICE_STUDENT_YEARLY!,
     role: "student" as const,
-    monthlyAmount: 4900,   // $49
-    yearlyAmount: 47900,   // $479/yr
+    monthlyAmount: 1900,   // $19
+    yearlyAmount: 18000,   // $180/yr (~$15/mo, ~21% off)
   },
   professional: {
     name: "Professional",
@@ -47,6 +47,17 @@ export const PLANS = {
     role: "professional" as const,
     monthlyAmount: 9900,   // $99
     yearlyAmount: 95900,   // $959/yr
+  },
+  team: {
+    name: "Team",
+    description: "Subscriber-level access for up to 25 seats. Centrally billed, individually activated.",
+    priceMonthly: process.env.STRIPE_PRICE_TEAM_MONTHLY!,   // per-seat price ID
+    priceYearly: process.env.STRIPE_PRICE_TEAM_YEARLY!,
+    role: "subscriber" as const,
+    monthlyAmount: 2300,   // $23/seat/mo (20% off solo subscriber)
+    yearlyAmount: 22100,   // $221/seat/yr (~$18.42/mo)
+    minSeats: 2,
+    maxSeats: 25,
   },
 } as const;
 

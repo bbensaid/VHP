@@ -1,6 +1,9 @@
 /* app/globals.css */
 @import "tailwindcss";
 
+/* Enable class-based dark mode */
+@variant dark (&:is(.dark *));
+
 @theme {
   /* ── Pillar brand colors ───────────────────────────────────────────────── */
   --color-brand-policy: #0369a1;
@@ -34,6 +37,43 @@
   --color-surface-muted: #f8fafc;
   --color-surface-hero: #eef2ff;
   --color-surface-dark: #4338ca;
+}
+
+/* ── Dark mode surface + text overrides ─────────────────────────────────── */
+.dark {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --color-surface:       #0f172a;  /* slate-900 */
+  --color-surface-muted: #1e293b;  /* slate-800 */
+  --color-surface-hero:  #1e1b4b;  /* indigo-950 */
+  --color-surface-dark:  #312e81;  /* indigo-900 */
+
+  /* Text */
+  --color-text-heading: #f1f5f9;   /* slate-100 */
+  --color-text-body:    #94a3b8;   /* slate-400 */
+
+  /* UI */
+  --color-ui-border:    #334155;   /* slate-700 */
+  --color-ui-bg-light:  #1e3a5f;  /* blue-950 */
+}
+
+/* Apply dark-mode background and text to html root */
+.dark body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+/* ── Focus-visible ring — WCAG 2.4.7 ────────────────────────────────────── */
+/* Ensures all keyboard-focused interactive elements have a visible indicator */
+:focus-visible {
+  outline: 2px solid #4f46e5; /* indigo-600 */
+  outline-offset: 2px;
+}
+
+/* Remove default focus ring for mouse users only */
+:focus:not(:focus-visible) {
+  outline: none;
 }
 
 @layer utilities {

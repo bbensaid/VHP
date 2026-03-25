@@ -22,6 +22,29 @@ import {
 import ReactMarkdown from "react-markdown";
 import BackendStatus from "@/components/BackendStatus";
 
+// ── PHI Detection ────────────────────────────────────────────────────────────
+
+function detectPHI(text: string): boolean {
+  // SSN pattern: 123-45-6789
+  if (/\b\d{3}-\d{2}-\d{4}\b/.test(text)) return true;
+
+  // MRN pattern: MRN: 12345 / mrn #98765 / Medical Record 00001
+  if (/\b(MRN|mrn|Medical Record)[:\s#]*\d{4,}\b/.test(text)) return true;
+
+  // DOB or "date of birth" within 100 chars of a full name pattern
+  const dobKeywordMatch = text.match(/\b(DOB|date of birth)\b/i);
+  if (dobKeywordMatch) {
+    const idx = dobKeywordMatch.index ?? 0;
+    const window = text.slice(Math.max(0, idx - 100), idx + 100);
+    if (/\b[A-Z][a-z]+ [A-Z][a-z]+\b/.test(window)) return true;
+  }
+
+  // Full name + date combination within ~80 chars
+  if (/\b[A-Z][a-z]+ [A-Z][a-z]+\b.{0,80}\b\d{1,2}[\/\-]\d{1,2}[\/\-]\d{2,4}\b/.test(text)) return true;
+
+  return false;
+}
+
 // ── Constants ────────────────────────────────────────────────────────────────
 
 
@@ -52,6 +75,7 @@ export default function ChatPage() {
   const [showClearConfirm, setShowClearConfirm] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
   const [suggestions, setSuggestions] = useState<string[]>([]);
+  const [phiError, setPhiError] = useState<string | null>(null);
 
   const abortControllerRef = useRef<AbortController | null>(null);
   const chatContainerRef = useRef<HTMLDivElement>(null);
@@ -164,6 +188,13 @@ export default function ChatPage() {
   const handleSend = () => {
     const trimmed = inputValue.trim();
     if (!trimmed || isLoading) return;
+    if (detectPHI(trimmed)) {
+      setPhiError(
+        "This message may contain patient information (name, SSN, DOB, or MRN). Please remove it before sending — this platform does not support PHI."
+      );
+      return;
+    }
+    setPhiError(null);
     setMessages((prev) => [...prev, { id: crypto.randomUUID(), role: "user", text: trimmed }]);
     setInputValue("");
     if (textareaRef.current) textareaRef.current.style.height = "auto";
@@ -176,6 +207,7 @@ export default function ChatPage() {
 
   const handleInput = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInputValue(e.target.value);
+    if (phiError) setPhiError(null);
     const el = textareaRef.current;
     if (el) { el.style.height = "auto"; el.style.height = `${Math.min(el.scrollHeight, 160)}px`; }
   };
@@ -242,11 +274,11 @@ export default function ChatPage() {
         <div className="flex items-center gap-1">
           {messages.length > 0 && (
             <>
-              <button onClick={handleDownloadTranscript} className="p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors" title="Download transcript">
-                <ArrowDownTrayIcon className="w-4 h-4" />
+              <button onClick={handleDownloadTranscript} className="p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors" title="Download transcript" aria-label="Download transcript">
+                <ArrowDownTrayIcon className="w-4 h-4" aria-hidden="true" />
               </button>
-              <button onClick={() => setShowClearConfirm(true)} className="p-2 text-slate-400 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors" title="Clear conversation">
-                <TrashIcon className="w-4 h-4" />
+              <button onClick={() => setShowClearConfirm(true)} className="p-2 text-slate-400 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors" title="Clear conversation" aria-label="Clear conversation">
+                <TrashIcon className="w-4 h-4" aria-hidden="true" />
               </button>
             </>
           )}
@@ -348,22 +380,26 @@ export default function ChatPage() {
                     </div>
                     {msg.text && (
                       <div className="flex items-center gap-2 mt-3 pt-2 border-t border-slate-100">
-                        <button onClick={() => handleCopy(msg.text, i)} className="text-slate-400 hover:text-slate-600 transition-colors p-1 rounded" title="Copy">
-                          {copiedIndex === i ? <CheckIcon className="w-3.5 h-3.5 text-emerald-500" /> : <ClipboardDocumentIcon className="w-3.5 h-3.5" />}
+                        <button onClick={() => handleCopy(msg.text, i)} className="text-slate-400 hover:text-slate-600 transition-colors p-1 rounded" title="Copy" aria-label={copiedIndex === i ? "Copied" : "Copy message"}>
+                          {copiedIndex === i ? <CheckIcon className="w-3.5 h-3.5 text-emerald-500" aria-hidden="true" /> : <ClipboardDocumentIcon className="w-3.5 h-3.5" aria-hidden="true" />}
                         </button>
                         <button
                           onClick={() => handleFeedback(i, "up")}
                           className={`p-1 rounded transition-colors ${msg.feedback === "up" ? "text-emerald-600 bg-emerald-50" : "text-slate-400 hover:text-emerald-600"}`}
                           title="Helpful"
+                          aria-label="Mark as helpful"
+                          aria-pressed={msg.feedback === "up"}
                         >
-                          <HandThumbUpIcon className="w-3.5 h-3.5" />
+                          <HandThumbUpIcon className="w-3.5 h-3.5" aria-hidden="true" />
                         </button>
                         <button
                           onClick={() => handleFeedback(i, "down")}
                           className={`p-1 rounded transition-colors ${msg.feedback === "down" ? "text-rose-600 bg-rose-50" : "text-slate-400 hover:text-rose-600"}`}
                           title="Not helpful"
+                          aria-label="Mark as not helpful"
+                          aria-pressed={msg.feedback === "down"}
                         >
-                          <HandThumbDownIcon className="w-3.5 h-3.5" />
+                          <HandThumbDownIcon className="w-3.5 h-3.5" aria-hidden="true" />
                         </button>
                         {!isLoading && i === messages.length - 1 && (
                           <button onClick={handleRegenerate} className="flex items-center gap-1 text-xs text-slate-400 hover:text-indigo-600 transition-colors ml-1">
@@ -409,24 +445,35 @@ export default function ChatPage() {
                   aria-label="Chat message input"
                 />
                 {isLoading ? (
-                  <button onClick={handleStop} className="flex-shrink-0 flex items-center gap-1.5 px-3 py-2 bg-rose-600 text-white text-xs font-bold rounded-xl hover:bg-rose-700 transition-colors">
-                    <StopIcon className="w-3.5 h-3.5" />
+                  <button onClick={handleStop} className="shrink-0 flex items-center gap-1.5 px-3 py-2 bg-rose-600 text-white text-xs font-bold rounded-xl hover:bg-rose-700 transition-colors" aria-label="Stop generating">
+                    <StopIcon className="w-3.5 h-3.5" aria-hidden="true" />
                     Stop
                   </button>
                 ) : (
                   <button
                     onClick={handleSend}
                     disabled={!inputValue.trim()}
-                    className="flex-shrink-0 flex items-center gap-1.5 px-3 py-2 bg-indigo-600 text-white text-xs font-bold rounded-xl hover:bg-indigo-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                    className="shrink-0 flex items-center gap-1.5 px-3 py-2 bg-indigo-600 text-white text-xs font-bold rounded-xl hover:bg-indigo-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                    aria-label="Send message"
                   >
-                    <PaperAirplaneIcon className="w-3.5 h-3.5" />
+                    <PaperAirplaneIcon className="w-3.5 h-3.5" aria-hidden="true" />
                     Send
                   </button>
                 )}
               </div>
-              <p className="text-center text-[10px] text-slate-400 mt-2">
-                AI responses may contain errors. Verify clinical or policy information with primary sources.
-              </p>
+              {phiError && (
+                <p className="text-xs text-rose-600 bg-rose-50 border border-rose-200 rounded-xl px-3 py-2 mt-2">
+                  {phiError}
+                </p>
+              )}
+              <div className="flex items-center justify-between mt-2">
+                <p className="text-xs text-slate-400">
+                  Do not submit patient data (names, SSNs, DOBs)
+                </p>
+                <p className="text-center text-[10px] text-slate-400">
+                  AI responses may contain errors. Verify clinical or policy information with primary sources.
+                </p>
+              </div>
             </div>
           </div>
         </main>
@@ -434,11 +481,24 @@ export default function ChatPage() {
 
       {/* ── Clear confirm ────────────────────────────────────────────────────── */}
       {showClearConfirm && (
-        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4" onClick={() => setShowClearConfirm(false)}>
-          <div className="bg-white rounded-2xl shadow-2xl w-full max-w-sm p-6 text-center" onClick={(e) => e.stopPropagation()}>
-            <TrashIcon className="w-8 h-8 text-rose-500 mx-auto mb-3" />
-            <h3 className="font-black text-slate-900 mb-2">Clear conversation?</h3>
-            <p className="text-sm text-slate-600 mb-5">This will delete all messages from your local history.</p>
+        /* Backdrop — pressing Escape or clicking outside closes the dialog */
+        <div
+          role="presentation"
+          className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4"
+          onClick={() => setShowClearConfirm(false)}
+          onKeyDown={(e) => e.key === "Escape" && setShowClearConfirm(false)}
+        >
+          <div
+            role="alertdialog"
+            aria-modal="true"
+            aria-labelledby="clear-dialog-title"
+            aria-describedby="clear-dialog-desc"
+            className="bg-white rounded-2xl shadow-2xl w-full max-w-sm p-6 text-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <TrashIcon className="w-8 h-8 text-rose-500 mx-auto mb-3" aria-hidden="true" />
+            <h3 id="clear-dialog-title" className="font-black text-slate-900 mb-2">Clear conversation?</h3>
+            <p id="clear-dialog-desc" className="text-sm text-slate-600 mb-5">This will delete all messages from your local history.</p>
             <div className="flex gap-3">
               <button onClick={() => setShowClearConfirm(false)} className="flex-1 py-2.5 bg-slate-100 text-slate-700 text-sm font-bold rounded-xl hover:bg-slate-200 transition-colors">
                 Cancel

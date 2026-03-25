@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { stripe } from "@/lib/stripe";
 import { dbAdmin } from "@/lib/db/client";
+import { loops, TEMPLATE } from "@/lib/loops";
 import type Stripe from "stripe";
 
 // Role mapping: Stripe plan_id → Supabase user_role
@@ -134,6 +135,20 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
     { user_id: userId, role },
     { onConflict: "user_id,role" }
   );
+
+  // Loops: upsert contact + fire subscribed event
+  const { data: authUser } = await dbAdmin.auth.admin.getUserById(userId);
+  if (authUser?.user?.email) {
+    await Promise.all([
+      loops.upsertContact({
+        email: authUser.user.email,
+        userId,
+        plan: planId ?? "subscriber",
+        userGroup: role,
+      }),
+      loops.sendEvent(authUser.user.email, "user_subscribed", { plan: planId ?? "subscriber" }),
+    ]);
+  }
 }
 
 async function handleSubscriptionUpdated(sub: Stripe.Subscription) {
@@ -187,6 +202,15 @@ async function handleSubscriptionDeleted(sub: Stripe.Subscription) {
     { user_id: userId, role: "free" },
     { onConflict: "user_id,role" }
   );
+
+  // Loops: update contact plan + fire canceled event (triggers win-back automation)
+  const { data: authUser } = await dbAdmin.auth.admin.getUserById(userId);
+  if (authUser?.user?.email) {
+    await Promise.all([
+      loops.upsertContact({ email: authUser.user.email, userId, plan: "free", userGroup: "free" }),
+      loops.sendEvent(authUser.user.email, "subscription_canceled"),
+    ]);
+  }
 }
 
 async function handlePaymentFailed(invoice: Stripe.Invoice) {
@@ -200,5 +224,14 @@ async function handlePaymentFailed(invoice: Stripe.Invoice) {
   if (data?.user_id) {
     await dbAdmin.from("subscriptions").update({ status: "past_due" })
       .eq("user_id", data.user_id);
+
+    // Loops: trigger dunning automation
+    const { data: authUser } = await dbAdmin.auth.admin.getUserById(data.user_id);
+    if (authUser?.user?.email) {
+      await loops.sendEvent(authUser.user.email, "payment_failed");
+      if (TEMPLATE.paymentFailed) {
+        await loops.sendTransactional(TEMPLATE.paymentFailed, authUser.user.email);
+      }
+    }
   }
 }

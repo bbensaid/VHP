@@ -17,18 +17,25 @@ import {
   MapIcon,
   BeakerIcon,
   ScaleIcon,
+  ChatBubbleLeftRightIcon,
+  UserCircleIcon,
+  CreditCardIcon,
+  BookmarkIcon,
+  ClipboardDocumentListIcon,
+  WrenchScrewdriverIcon,
 } from "@heroicons/react/24/outline";
 
 type CommandItem = {
   id: string;
   title: string;
-  category: "Navigation" | "State" | "Tool";
+  category: "Navigation" | "State" | "Tool" | "Actions" | "Launch Tool";
   href: string;
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   shortcut?: string;
 };
 
 const COMMANDS: CommandItem[] = [
+  // Navigation
   { id: "nav-0", title: "Home", category: "Navigation", href: "/", icon: HomeIcon, shortcut: "H" },
   { id: "nav-1", title: "Economics Monitor", category: "Navigation", href: "/economics", icon: ChartBarIcon, shortcut: "E" },
   { id: "nav-2", title: "Policy Analysis", category: "Navigation", href: "/policy", icon: BuildingLibraryIcon, shortcut: "P" },
@@ -38,10 +45,27 @@ const COMMANDS: CommandItem[] = [
   { id: "dash-1", title: "National Dashboard", category: "Navigation", href: "/dashboard", icon: MapIcon },
   { id: "dash-2", title: "Investment Tracker", category: "Navigation", href: "/economics/investment", icon: DocumentTextIcon },
   { id: "dash-3", title: "HTI Simulator", category: "Tool", href: "/hti-dashboard", icon: ChartBarIcon },
+  { id: "nav-6", title: "Go to AI Analyst", category: "Navigation", href: "/chat", icon: ChatBubbleLeftRightIcon },
+  { id: "nav-7", title: "Go to Research Lab", category: "Navigation", href: "/research-lab", icon: BeakerIcon },
+  { id: "nav-8", title: "Go to State Dashboard", category: "Navigation", href: "/dashboard", icon: MapIcon },
+  { id: "nav-9", title: "Go to Community", category: "Navigation", href: "/community", icon: GlobeAmericasIcon },
+  { id: "nav-10", title: "Go to Account", category: "Navigation", href: "/account", icon: UserCircleIcon },
+  { id: "nav-11", title: "Go to Pricing", category: "Navigation", href: "/pricing", icon: CreditCardIcon },
+  // State
   { id: "st-1", title: "Vermont Profile", category: "State", href: "/dashboard/vermont", icon: ArrowRightIcon },
   { id: "st-2", title: "Texas Profile", category: "State", href: "/dashboard/texas", icon: ArrowRightIcon },
   { id: "st-3", title: "California Profile", category: "State", href: "/dashboard/california", icon: ArrowRightIcon },
   { id: "st-4", title: "New York Profile", category: "State", href: "/dashboard/new_york", icon: ArrowRightIcon },
+  // Actions
+  { id: "act-1", title: "Start new conversation", category: "Actions", href: "/chat", icon: ChatBubbleLeftRightIcon },
+  { id: "act-2", title: "Upgrade plan", category: "Actions", href: "/pricing", icon: CreditCardIcon },
+  { id: "act-3", title: "View saved articles", category: "Actions", href: "/account/bookmarks", icon: BookmarkIcon },
+  { id: "act-4", title: "Take annual survey", category: "Actions", href: "/survey", icon: ClipboardDocumentListIcon },
+  // Launch Tool
+  { id: "tool-1", title: "Open APM Calculator", category: "Launch Tool", href: "/research-lab?tool=apm", icon: WrenchScrewdriverIcon },
+  { id: "tool-2", title: "Open CEA Calculator", category: "Launch Tool", href: "/research-lab?tool=cea", icon: WrenchScrewdriverIcon },
+  { id: "tool-3", title: "Open HCC Scoring", category: "Launch Tool", href: "/research-lab?tool=hcc", icon: WrenchScrewdriverIcon },
+  { id: "tool-4", title: "Open FHIR Lab", category: "Launch Tool", href: "/research-lab?tool=fhir", icon: WrenchScrewdriverIcon },
 ];
 
 export default function CommandPalette() {

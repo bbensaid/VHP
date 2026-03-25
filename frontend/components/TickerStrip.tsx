@@ -69,7 +69,7 @@ export default function TickerStrip({
       >
         {/* Label Badge */}
         <div
-          className={`flex items-center ${transparent ? "bg-transparent" : (isDark ? "bg-indigo-800 border-r border-indigo-700" : "bg-slate-100 border-r border-slate-200")} h-full pr-4 pl-0 z-10 relative shrink-0`}
+          className={`flex items-center ${transparent ? "bg-transparent" : (isDark ? "bg-neutral-900 border-r border-neutral-700" : "bg-slate-100 border-r border-slate-200")} h-full pr-4 pl-0 z-10 relative shrink-0`}
         >
           {onToggle && (
             <input
@@ -88,7 +88,7 @@ export default function TickerStrip({
           <span className={`text-[10px] font-black uppercase tracking-widest ${isDark ? "text-white" : "text-slate-700"} cursor-pointer`} onClick={onToggle}>
             {label || (isVitals ? "System Vitals" : "Live Wire")}
           </span>
-          {onToggle && <span className={`${isDark ? "text-slate-600" : "text-slate-300"} ml-3`}>|</span>}
+          {onToggle && <span className={`${isDark ? "text-neutral-600" : "text-slate-300"} ml-3`}>|</span>}
         </div>
 
         {/* Scrolling Content */}

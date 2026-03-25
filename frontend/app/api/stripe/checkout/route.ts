@@ -64,6 +64,8 @@ export async function POST(request: Request) {
         role: plan.role,
       },
       subscription_data: {
+        // 7-day free trial on monthly plans only
+        ...(interval === "monthly" ? { trial_period_days: 7 } : {}),
         metadata: {
           supabase_user_id: user.id,
           plan_id: planId,

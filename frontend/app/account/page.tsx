@@ -71,9 +71,12 @@ export default async function AccountPage() {
             { href: "/account/profile",      label: "Edit Profile",     desc: "Update name, bio, and organization" },
             { href: "/account/subscription", label: "Subscription",     desc: "View your current plan and usage" },
             { href: "/account/billing",      label: "Billing",          desc: "Manage payment methods and invoices" },
-            { href: "/account/courses",      label: "My Courses",       desc: "Track progress and view certifications" },
-            { href: "/pricing",              label: "Upgrade Plan",     desc: "Unlock premium features and content" },
-            { href: "/chat",                 label: "AI Analyst",       desc: "Ask questions about health policy" },
+            { href: "/account/courses",    label: "My Courses",       desc: "Track progress and view certifications" },
+            { href: "/account/referrals",   label: "Referrals",        desc: "Share HTR and earn free months" },
+            { href: "/account/api-keys",   label: "API Keys",         desc: "Manage developer API credentials" },
+            { href: "/pricing",            label: "Upgrade Plan",     desc: "Unlock premium features and content" },
+            { href: "/chat",               label: "AI Analyst",       desc: "Ask questions about health policy" },
+            { href: "/survey",             label: "Annual Survey",    desc: "Share your perspective on health transformation" },
           ].map((link) => (
             <Link key={link.href} href={link.href}
               className="bg-white rounded-xl border border-slate-200 shadow-sm p-5 hover:border-indigo-300 hover:shadow-md transition-all group">
