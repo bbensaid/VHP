@@ -314,4 +314,84 @@ Set `PYTHON_BACKEND_URL=https://your-actual-backend.railway.app` in the Vercel p
 
 ---
 
+## 8. Act 167 Policy Simulation Engine
+
+**Added:** March 2026 | **Route:** `/vermont-act-167/simulator`
+
+A browser-based policy analysis tool for modeling the implementation scenarios described in the Oliver Wyman "Act 167 Community Engagement: Recommendations" report (August 2024). Full user and technical documentation is in **`ACT167_SIMULATOR_GUIDE.md`** at the project root. This section records only the developer-relevant changes not covered by that guide.
+
+### 8.1 New Files
+
+| File | Purpose |
+| --- | --- |
+| `frontend/app/vermont-act-167/simulator/page.tsx` | Main simulator page — 8-tab interface, all UI components, state management |
+| `frontend/app/vermont-act-167/simulator/data.ts` | All simulation data: 14 hospitals, 18+ recommendations, 14 counties, state benchmarks, pillar scoring |
+| `frontend/app/vermont-act-167/simulator/LeafletMap.tsx` | Leaflet + OpenStreetMap map component — loaded dynamically (`ssr: false`) |
+| `ACT167_SIMULATOR_GUIDE.md` | 2,400-line user guide + technical reference for the simulator |
+
+The main page at `frontend/app/vermont-act-167/page.tsx` was also updated to add navigation links to the simulator (two `Link` elements pointing to `/vermont-act-167/simulator`).
+
+### 8.2 New npm Dependencies
+
+Three packages were added to `frontend/package.json`:
+
+| Package | Version | Purpose |
+| --- | --- | --- |
+| `leaflet` | `^1.9.4` | Core Leaflet map library |
+| `react-leaflet` | `^5.0.0` | React bindings for Leaflet |
+| `@types/leaflet` | (devDep) | TypeScript types for Leaflet |
+
+`d3-geo` (`^3.1.1`) and `@types/d3-geo` were already present and are used by other components; the simulator originally used them for a custom SVG map but that was replaced by Leaflet. The `d3-geo` import was removed from `simulator/page.tsx` — no package removal needed.
+
+### 8.3 Content Security Policy Change (Critical)
+
+**File:** `frontend/next.config.ts`
+
+The `img-src` directive in the CSP header was updated to allow OpenStreetMap tile images. Without this change the Leaflet map renders as a gray rectangle — tiles load but are blocked before display.
+
+**Before:**
+
+```text
+img-src 'self' blob: data: https://cdn.sanity.io https://img.youtube.com
+```
+
+**After:**
+
+```text
+img-src 'self' blob: data: https://cdn.sanity.io https://img.youtube.com https://*.tile.openstreetmap.org
+```
+
+The wildcard covers all three OSM tile subdomains (`a.`, `b.`, `c.tile.openstreetmap.org`). No other CSP directives were changed — OSM tiles are images only, not scripts or fetch targets.
+
+> **Note for deployment:** This CSP change takes effect on next server start. In production (Vercel), it is applied automatically on the next deploy. If you switch tile providers in the future (e.g., Mapbox, Stamen), add their image domain here.
+
+### 8.4 SSR Handling for Leaflet
+
+Leaflet accesses `window` and `document` at import time and cannot run server-side. The `LeafletMap` component is therefore loaded with Next.js dynamic import:
+
+```tsx
+// In simulator/page.tsx
+const LeafletMap = dynamic(() => import("./LeafletMap"), { ssr: false });
+```
+
+`LeafletMap.tsx` itself is marked `"use client"` but that alone is insufficient in App Router — the `dynamic(..., { ssr: false })` wrapper is required to prevent Node.js from evaluating the Leaflet import during SSR. If you refactor this component, keep the dynamic import; removing it will cause a build-time `ReferenceError: window is not defined`.
+
+### 8.5 Simulator Architecture Summary
+
+The simulator is entirely client-side and stateless — no backend calls, no database reads, no authentication required. All data is embedded in `data.ts` as TypeScript constants (synthetic + Wyman Report figures). The tab layout and all inter-component state live in the `Act167SimulatorPage` default export in `page.tsx`.
+
+The geographic map tab (`🗺️ Geographic Map`) uses:
+
+- **OpenStreetMap** tiles via Leaflet (free, no API key)
+- A hard-coded Vermont state border polygon (`VT_BORDER` in `LeafletMap.tsx`) — 33 [lat, lng] coordinate pairs tracing the actual perimeter
+- `CircleMarker` elements for hospitals, sized by bed count and colored by the active analysis layer (urgency / financial health / equity risk / access & travel time)
+- Optional `Polyline` overlay for COE network links (UVMMC hub → spoke hospitals)
+- Optional `Circle` bubbles for HSA population size
+
+### 8.6 Replacing Synthetic Data with Real Data
+
+The simulator currently uses synthetic projections where actual data is unavailable. See **`ACT167_SIMULATOR_GUIDE.md` §20 (Data Ingestion Guide)** for a full inventory of what real data is needed, where to obtain it (GMCB, AHS, Census), and how to update `data.ts`. No backend or API changes are required — data replacement is a `data.ts` edit only.
+
+---
+
 *End of addendum. Merge into respective guides during next documentation pass.*

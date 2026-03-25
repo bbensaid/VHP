@@ -93,7 +93,7 @@ function HubPageTemplateInner({
 
       {/* TABS NAVIGATION - Sticky below the AppShell Header */}
       <div className="sticky z-30 mb-8" style={{ top: "var(--sidebar-top, 8.5rem)" }}>
-        <nav className="flex items-end overflow-x-auto hide-scrollbar border-b border-slate-200 pl-4 bg-white/95 backdrop-blur-sm pt-2" aria-label="Tabs">
+        <nav className="flex flex-wrap items-end border-b border-slate-200 pl-4 bg-white/95 backdrop-blur-sm pt-2" aria-label="Tabs">
           {tabs.map((tab) => {
             const isActive = activeTab === tab.id;
             return (
@@ -103,7 +103,7 @@ function HubPageTemplateInner({
                 aria-selected={isActive}
                 onClick={() => handleTabChange(tab.id)}
                 className={`
-                  relative flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r mr-2
+                  relative flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r mr-2 mb-0
                   ${isActive
                     ? "bg-slate-100 border-black text-slate-900 z-10 -mb-px"
                     : "bg-white border-slate-200 text-slate-500 hover:bg-slate-50 hover:text-slate-700 mt-1.5 shadow-sm"
