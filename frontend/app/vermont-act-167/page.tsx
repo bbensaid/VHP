@@ -694,12 +694,79 @@ export default function VermontAct167Page() {
         </div>
       </section>
 
+      {/* ── SIMULATION LAB ───────────────────────────────────────────────────── */}
+      <section className="mb-12">
+        <SectionHeader label="Policy Simulation Lab" title="Simulate the Recommendations" />
+        <div className="bg-gradient-to-br from-slate-900 via-violet-950 to-indigo-900 rounded-2xl p-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <div className="flex items-center gap-2 mb-4 flex-wrap">
+                <span className="bg-violet-700 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded">
+                  Interactive Tool
+                </span>
+                <span className="bg-amber-700 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded">
+                  Synthetic Data
+                </span>
+              </div>
+              <h3 className="text-2xl font-black text-white mb-3 leading-tight">
+                Act 167 Healthcare Transformation Simulator
+              </h3>
+              <p className="text-slate-300 text-sm leading-relaxed mb-5">
+                Model implementation scenarios for every Oliver Wyman Report recommendation. Analyze the
+                5-pillar impact — policy, technology, financial, equity, and clinical — with interactive
+                controls, hospital-level simulations, equity analysis, and state benchmarks.
+              </p>
+              <div className="grid grid-cols-2 gap-3 mb-6">
+                {[
+                  { n: "14", label: "Hospitals Modeled" },
+                  { n: "14", label: "Recommendations" },
+                  { n: "5", label: "Impact Pillars" },
+                  { n: "8", label: "Analysis Modules" },
+                ].map(({ n, label }) => (
+                  <div key={label} className="bg-white/10 rounded-xl p-3 text-center">
+                    <div className="text-2xl font-black text-white">{n}</div>
+                    <div className="text-[10px] text-violet-300 uppercase tracking-wide">{label}</div>
+                  </div>
+                ))}
+              </div>
+              <Link
+                href="/vermont-act-167/simulator"
+                className="inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-500 text-white font-black text-sm px-6 py-3 rounded-xl transition-all shadow-lg hover:shadow-xl"
+              >
+                Launch Simulation Engine →
+              </Link>
+            </div>
+            <div className="space-y-3">
+              {[
+                { icon: "🎯", title: "Scenario Builder", desc: "Select recommendations and see aggregate 5-pillar impact scores" },
+                { icon: "🏥", title: "Hospital Restructuring Simulator", desc: "Model REH, CACC, or closure options for at-risk hospitals with parameter controls" },
+                { icon: "💰", title: "Financial Modeling Dashboard", desc: "Hospital-by-hospital financial projections, savings waterfall, ROI analysis" },
+                { icon: "⚖️", title: "Equity & Access Analysis", desc: "County-level access scores, vulnerable populations, transportation scenarios" },
+                { icon: "🔗", title: "Technology Roadmap", desc: "VITL, telehealth, EMS broadband implementation timeline and investment" },
+                { icon: "🌎", title: "State Benchmarks", desc: "Maryland, Oregon, Minnesota, and other state transformation models and lessons" },
+              ].map(({ icon, title, desc }) => (
+                <div key={title} className="flex gap-3 bg-white/10 rounded-xl p-3">
+                  <span className="text-xl shrink-0">{icon}</span>
+                  <div>
+                    <div className="text-xs font-black text-white">{title}</div>
+                    <div className="text-[11px] text-slate-400">{desc}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── BOTTOM NAV ───────────────────────────────────────────────────────── */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-slate-200">
         <Link href="/" className="text-sm font-bold text-slate-500 hover:text-slate-900 transition-colors">
           ← Back to Home
         </Link>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap">
+          <Link href="/vermont-act-167/simulator" className="text-sm font-bold text-violet-700 hover:text-violet-900 transition-colors">
+            Simulation Engine →
+          </Link>
           <Link href="/ahead-model" className="text-sm font-bold text-violet-700 hover:text-violet-900 transition-colors">
             AHEAD Model →
           </Link>

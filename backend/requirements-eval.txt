@@ -1,0 +1,13 @@
+# HTR RAG Evaluation — eval-only dependencies
+# These are NOT included in requirements.txt (not needed in production).
+#
+# Install before running the Ragas evaluation suite:
+#   pip install -r requirements-eval.txt
+#
+# Then run:
+#   cd backend
+#   python -m eval.evaluate_rag
+
+ragas~=0.2
+datasets~=2.0
+pandas~=2.0

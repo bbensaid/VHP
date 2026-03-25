@@ -1,5 +1,6 @@
 # Documentation Addendum — Phase 1 Improvements
-### March 2026 | Supplements: DEVELOPER_GUIDE, DATABASE_GUIDE, OPERATIONS_GUIDE, TESTING_AND_DEPLOYMENT_GUIDE
+
+## March 2026 | Supplements: DEVELOPER_GUIDE, DATABASE_GUIDE, OPERATIONS_GUIDE, TESTING_AND_DEPLOYMENT_GUIDE
 
 > This document records everything added or changed during the Phase 1 improvement sprint
 > that is not yet reflected in the existing guides. When those guides are next revised,
@@ -14,10 +15,10 @@
 The following variables are **new** and not listed in `DEVELOPER_GUIDE.md §Environment Variables Reference`.
 
 | Variable | Required | Description |
-|---|---|---|
-| `SANITY_WEBHOOK_SECRET` | Yes (prod) | HMAC-SHA256 secret for verifying incoming Sanity webhook payloads. Set the same value in Sanity → manage.sanity.io → your project → API → Webhooks. |
+| --- | --- | --- |
+| `SANITY_WEBHOOK_SECRET` | Yes (prod) | HMAC-SHA256 secret for verifying incoming Sanity webhook payloads. Set the same value in manage.sanity.io → your project → API → Webhooks. |
 | `LOOPS_API_KEY` | Yes (prod) | API key from app.loops.so → Settings → API. Server-side only — never expose to the browser. |
-| `LOOPS_TEMPLATE_WELCOME` | No | Loops transactional template ID for welcome emails. Leave blank to skip Loops and fall back to legacy HTML send. |
+| `LOOPS_TEMPLATE_WELCOME` | No | Loops transactional template ID for welcome emails. Leave blank to fall back to legacy HTML send. |
 | `LOOPS_TEMPLATE_DIGEST` | No | Template ID for weekly digest emails. |
 | `LOOPS_TEMPLATE_PAYMENT_FAILED` | No | Template ID for failed payment notifications. |
 | `LOOPS_TEMPLATE_TRIAL_ENDING` | No | Template ID for trial-ending reminders. |
@@ -29,7 +30,7 @@ The following variables are **new** and not listed in `DEVELOPER_GUIDE.md §Envi
 
 ### 1.2 Backend (`backend/.env` / Railway Dashboard)
 
-No new backend variables were added. The existing `INGEST_SECRET` variable now also protects the new `GET /api/ingest/status` endpoint (same Bearer token — see §3.2 below).
+No new backend variables were added. The existing `INGEST_SECRET` variable now also protects the new `GET /api/ingest/status` endpoint (same Bearer token — see §3.3 below).
 
 ---
 
@@ -94,17 +95,17 @@ CREATE TABLE bookmarks (
 **RLS:** Full access (SELECT/INSERT/UPDATE/DELETE) scoped to `user_id = auth.uid()`.
 
 **UI entry points:**
+
 - `BookmarkButton` component — rendered in the article action bar on every article page
 - `/account/bookmarks` — the user's saved articles list
 
 ---
 
-### 2.3 `ingest_jobs` (implicit, created by backend)
+### 2.3 `ingest_jobs` (Migration, inline)
 
 Tracks background index rebuild jobs triggered by `POST /api/ingest`. Written by the Python backend using the service role key.
 
 ```sql
--- Created inline by the backend; reproduce manually if needed:
 CREATE TABLE ingest_jobs (
     id            UUID PRIMARY KEY,
     status        TEXT NOT NULL,          -- 'queued' | 'running' | 'completed' | 'failed'
@@ -119,9 +120,25 @@ No RLS is applied — this table is written and read exclusively by the backend 
 
 ---
 
-### 2.4 `role_change_log` (recommended, not yet migrated)
+### 2.4 `role_change_log` (Migration 018)
 
-Described in `PLATFORM_IMPROVEMENT_PLAN.md §3.2`. Not yet applied. When added, this table records every role change with `old_role`, `new_role`, `changed_by`, and `reason` for billing dispute audits. A trigger on `user_roles` auto-populates it.
+Records every change to a user's role for billing dispute audits and security reviews. A trigger on `user_roles` auto-populates it on every role change.
+
+```sql
+CREATE TABLE role_change_log (
+    id          BIGSERIAL PRIMARY KEY,
+    user_id     UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+    old_role    TEXT,
+    new_role    TEXT NOT NULL,
+    changed_by  UUID REFERENCES auth.users(id) ON DELETE SET NULL,
+    changed_at  TIMESTAMPTZ NOT NULL DEFAULT now(),
+    reason      TEXT  -- e.g. 'stripe_webhook', 'admin_override', 'signup_default'
+);
+```
+
+**RLS:** Users can read their own history. Service role sees all.
+
+Migration file: `supabase/migrations/018_role_change_log.sql`
 
 ---
 
@@ -138,6 +155,7 @@ Receives Sanity content-change webhooks and triggers a RAG re-index.
 - **Response:** `200 { received: true }` or `401` if signature invalid
 
 **Setup in Sanity:**
+
 1. Go to manage.sanity.io → your project → API → Webhooks
 2. Add webhook URL: `https://your-domain.vercel.app/api/webhooks/sanity`
 3. Set the secret to match `SANITY_WEBHOOK_SECRET` in your Vercel env
@@ -145,17 +163,17 @@ Receives Sanity content-change webhooks and triggers a RAG re-index.
 
 ---
 
-### 3.2 `POST /api/ingest` (Backend — Python/FastAPI) — **Updated**
+### 3.2 `POST /api/ingest` (Backend — Python/FastAPI) — Updated
 
-Previously undocumented: this endpoint now returns `202 Accepted` immediately and runs the index rebuild asynchronously in the background. It no longer blocks.
+This endpoint now returns `202 Accepted` immediately and runs the index rebuild asynchronously in the background. It no longer blocks.
 
-- **Auth:** `Authorization: Bearer $INGEST_SECRET` (if `INGEST_SECRET` is set; open in dev)
+- **Auth:** `Authorization: Bearer $INGEST_SECRET` (open in dev if unset)
 - **Conflict handling:** Returns `{ status: "already_running" }` if a job is in progress — safe to retry
 - **Response:** `{ status: "accepted", job_id: "<uuid>", message: "..." }`
 
 ---
 
-### 3.3 `GET /api/ingest/status` (Backend — Python/FastAPI) — **New**
+### 3.3 `GET /api/ingest/status` (Backend — Python/FastAPI) — New
 
 Poll the status of the most recent index rebuild job.
 
@@ -165,6 +183,7 @@ Poll the status of the most recent index rebuild job.
 - **Possible status values:** `queued` → `running` → `completed` | `failed`
 
 **Typical polling pattern:**
+
 ```bash
 # Trigger rebuild
 curl -X POST https://your-backend.railway.app/api/ingest \
@@ -184,9 +203,9 @@ curl https://your-backend.railway.app/api/ingest/status \
 The `/api/chat` endpoint now routes to two different engines based on user tier. This is **not yet documented** in `DEVELOPER_GUIDE.md`.
 
 | Tier | Engine | Behavior |
-|---|---|---|
+| --- | --- | --- |
 | `subscriber`, `student` | `ContextChatEngine` | RAG-only. Retrieves context, streams answer. Faster and cheaper. |
-| `professional`, `advisory`, `admin` | `ReActAgent` | Full agentic loop. LLM can call external tools (state data, research lab) before answering. Up to 5 reasoning iterations. |
+| `professional`, `advisory`, `admin` | `ReActAgent` | Full agentic loop. LLM can call external tools before answering. Up to 5 reasoning iterations. |
 
 Tools available to the agentic pipeline are registered in `backend/services/tools.py` as `ALL_TOOLS`.
 
@@ -196,35 +215,36 @@ A prompt injection detector runs on every incoming message and `systemPrompt` fi
 
 ### 4.3 RAG Query Logging
 
-Every chat request (except `user_id == "dev"`) is logged to `rag_query_log` after the response completes. Logged fields include the query, tier, model used, retrieved document IDs and scores, first 500 chars of the response, and latency. This is the primary input for Ragas evaluation (§6 below).
+Every chat request (except `user_id == "dev"`) is logged to `rag_query_log` after the response completes. Logged fields include the query, tier, model used, retrieved document IDs and scores, first 500 chars of the response, and latency. This is the primary input for Ragas evaluation (see §6).
 
 ---
 
 ## 5. Error Monitoring (Sentry)
 
-Sentry is now integrated in both frontend and backend. This is entirely new and not covered in any existing guide.
+Sentry is now integrated in both frontend and backend.
 
 **Frontend:** Configured via `sentry.client.config.ts`, `sentry.server.config.ts`, and `sentry.edge.config.ts`. Source maps are uploaded at build time using `SENTRY_AUTH_TOKEN`. Errors are captured automatically by the Next.js SDK.
 
-**Backend:** Configure via `SENTRY_DSN` environment variable in Railway. Add `sentry-sdk[fastapi]` to `requirements.txt` and call `sentry_sdk.init()` in `main.py` (not yet done — see §7 below).
+**Backend:** `sentry-sdk[fastapi]` is in `requirements.txt`. Initialized in `main.py` using the `SENTRY_DSN` environment variable (set in Railway dashboard). FastAPI and Starlette integrations are registered automatically.
 
 **Triage workflow:**
+
 1. Go to sentry.io → your project → Issues
 2. Filter by `environment:production`
 3. Click any issue to see the full stack trace, user context, and request payload
-4. The `user_id` is attached to each event (set via `sentry_sdk.set_user()` in the auth middleware)
+4. The `user_id` is attached to each event via the auth middleware
 
 ---
 
 ## 6. RAG Evaluation with Ragas
 
-A golden test set and evaluation runner now exist at `backend/eval/evaluate_rag.py`. This is **entirely new** and not documented in `TESTING_AND_DEPLOYMENT_GUIDE.md`.
+A golden test set and evaluation runner now exist at `backend/eval/evaluate_rag.py`.
 
 ### Running an evaluation
 
 ```bash
-# Install eval dependencies (one-time)
-pip install "ragas~=0.2" "datasets~=2.0" pandas
+# Install eval-only dependencies (one-time)
+pip install -r backend/requirements-eval.txt
 
 # Run from the backend directory
 cd backend
@@ -232,6 +252,7 @@ python -m eval.evaluate_rag
 ```
 
 The script:
+
 1. Loads the golden Q&A dataset (defined inline in the file)
 2. Runs each question through the live RAG pipeline
 3. Scores four metrics via Ragas: **faithfulness**, **answer_relevancy**, **context_precision**, **context_recall**
@@ -240,7 +261,7 @@ The script:
 ### Interpreting results
 
 | Metric | Target | Meaning if low |
-|---|---|---|
+| --- | --- | --- |
 | `faithfulness` | > 0.85 | LLM is hallucinating — not sticking to retrieved context |
 | `answer_relevancy` | > 0.80 | Answers are off-topic or vague |
 | `context_precision` | > 0.75 | Retrieved chunks are not relevant to the question |
@@ -251,6 +272,7 @@ The script:
 The golden dataset is defined in `GOLDEN_DATASET` inside `evaluate_rag.py`. It currently has ~12 Q&A pairs. **Target: 50+ pairs** covering all five pillars (Policy, Economics, Technology, Clinical, Equity) before treating eval results as statistically meaningful.
 
 Add entries in this format:
+
 ```python
 {
     "question": "...",
@@ -267,50 +289,28 @@ Add entries in this format:
 
 ---
 
-## 7. Known Gaps Not Yet Addressed
+## 7. Remaining Manual Configuration (Cannot Be Done in Code)
 
-These items were identified but **not implemented** in this phase. Record here to avoid losing them.
+The following items require action in third-party dashboards and cannot be automated.
 
-### 7.1 Backend Sentry SDK Not Initialized
+### 7.1 Loops Email Template IDs
 
-`NEXT_PUBLIC_SENTRY_DSN` is wired into the frontend, but the Python backend does not yet call `sentry_sdk.init()`. To complete Sentry coverage:
+`LOOPS_TEMPLATE_*` variables are intentionally blank in `.env.production.example`. Email flows (welcome, digest, payment failed, trial ending) will silently no-op until these are set.
 
-```python
-# Add to requirements.txt:
-# sentry-sdk[fastapi]~=2.0
+**Steps:**
 
-# Add to backend/main.py (before app creation):
-import sentry_sdk
-sentry_sdk.init(
-    dsn=os.getenv("SENTRY_DSN"),
-    traces_sample_rate=0.1,
-    environment=os.getenv("RAILWAY_ENVIRONMENT", "development"),
-)
-```
+1. Log into app.loops.so → Templates
+2. Create (or duplicate) a transactional template for each flow
+3. Copy each template's ID into your Vercel project environment variables:
+   - `LOOPS_TEMPLATE_WELCOME`
+   - `LOOPS_TEMPLATE_DIGEST`
+   - `LOOPS_TEMPLATE_PAYMENT_FAILED`
+   - `LOOPS_TEMPLATE_TRIAL_ENDING`
+   - `LOOPS_TEMPLATE_SURVEY_RESULTS`
 
-### 7.2 Ragas Dependencies Not in `requirements.txt`
+### 7.2 `PYTHON_BACKEND_URL` in Vercel Dashboard
 
-`ragas`, `datasets`, and `pandas` are needed to run `evaluate_rag.py` but are intentionally excluded from `requirements.txt` (they are eval-only, not production dependencies). Install them locally before running:
-
-```bash
-pip install "ragas~=0.2" "datasets~=2.0" pandas
-```
-
-Consider adding a separate `requirements-eval.txt` to make this self-documenting.
-
-### 7.3 `role_change_log` Migration Not Yet Applied
-
-Migration `017_role_change_log.sql` has not been written or applied. The schema is documented in `PLATFORM_IMPROVEMENT_PLAN.md §3.2` and in §2.4 above. Apply before going to production if billing dispute auditing is required.
-
-### 7.4 Loops Email Template IDs Not Configured
-
-`LOOPS_TEMPLATE_*` variables are blank in `.env.production.example`. Email flows (welcome, digest, payment failed, trial ending) will silently no-op until these are set. Configure templates in the Loops.so template editor, then add the IDs to Vercel project environment variables.
-
-### 7.5 `vercel.json` Domain Placeholders
-
-Two values in `vercel.json` must be updated before go-live:
-- CORS `Access-Control-Allow-Origin` header: replace `https://your-domain.vercel.app` with your actual Vercel URL
-- The `PYTHON_BACKEND_URL` env var in Vercel dashboard (not in `vercel.json`) must be set to the Railway backend URL
+Set `PYTHON_BACKEND_URL=https://your-actual-backend.railway.app` in the Vercel project dashboard (Settings → Environment Variables) before the first production deployment. This is the only remaining placeholder that affects live traffic.
 
 ---
 
