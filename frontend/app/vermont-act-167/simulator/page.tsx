@@ -2195,6 +2195,7 @@ export default function Act167SimulatorPage() {
       backLabel="Vermont Act 167"
       badgeClass="bg-violet-50 text-violet-700 border border-violet-100"
       backLinkHoverClass="hover:text-violet-600"
+      rowBreakAfter={4}
     />
   );
 }

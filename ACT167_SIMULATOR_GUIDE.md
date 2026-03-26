@@ -176,18 +176,25 @@ use of synthetic projections.
 
 ### 2.3 The Tab Navigation Bar
 
-Immediately below the header is a tab bar with eight navigation tabs. Tabs are rendered as
-pill-shaped buttons with a white background and violet text for the active tab, and muted grey
-text for inactive tabs. The tabs are:
+Immediately below the page header is a sticky tab bar with nine navigation tabs. Tabs are
+rendered as raised, browser-tab-style buttons (white background, black top/side borders when
+active, sitting on a bottom border line) using the shared `HubPageTemplate` component. The
+active tab is visually "lifted" off the bottom border. Tabs wrap to a second row on narrower
+screens — there is no horizontal scrolling. The tab selection is synced to the URL query
+parameter (`?tab=scenario`, `?tab=map`, etc.), so tabs are bookmarkable and browser
+back/forward navigation works correctly.
 
-1. **🎯 Scenario Builder** — Select and configure recommendations; see aggregate impact
-2. **🏥 Hospital Simulator** — Deep-dive per-hospital restructuring simulation
-3. **💰 Financial Modeling** — System and hospital-level financial analysis
-4. **⚖️ Equity & Access** — Geographic, demographic, and transportation equity analysis
-5. **🔗 Technology Roadmap** — IT and infrastructure implementation planning
-6. **👩‍⚕️ Workforce Planning** — Staffing, role, and pipeline analysis
-7. **🌎 State Benchmarks** — Comparable state transformation models
-8. **🗺 Implementation Plan** — Phased roadmap, dependencies, "no regrets" moves
+The nine tabs are:
+
+1. **Scenario Builder** — Select and configure recommendations; see aggregate impact
+2. **Hospital Simulator** — Deep-dive per-hospital restructuring simulation
+3. **Financial Modeling** — System and hospital-level financial analysis
+4. **Equity & Access** — Geographic, demographic, and transportation equity analysis
+5. **Geographic Map** — Interactive Leaflet map with real OpenStreetMap basemap
+6. **Technology Roadmap** — IT and infrastructure implementation planning
+7. **Workforce Planning** — Staffing, role, and pipeline analysis
+8. **State Benchmarks** — Comparable state transformation models
+9. **Implementation Plan** — Phased roadmap, dependencies, "no regrets" moves
 
 Clicking any tab immediately renders its content below. The state of your scenario (which
 recommendations are selected) persists across all tabs during your session.
@@ -2064,13 +2071,7 @@ function NewModule({ selectedRecs }: { selectedRecs: Set<string> }) {
 
 The following modules are envisioned for future development:
 
-**Geographic Map Visualization**
-Using the already-installed `react-simple-maps` and `d3-geo` packages (present in `package.json`),
-an interactive Vermont map showing hospital locations, HSA boundaries, population density,
-and route overlays for travel time. This module would require:
-- Vermont GeoJSON boundary files for HSAs and counties (available from TIGER/Line)
-- Hospital coordinates (already in `data.ts`)
-- `ComposableMap`, `Geographies`, `Geography`, and `Marker` components from react-simple-maps
+**Monte Carlo Sensitivity Analysis** *(replacing the previously listed Geographic Map item, which has been implemented)*
 
 **Monte Carlo Sensitivity Analysis**
 Run 10,000 simulations with randomized inputs (operating margin ±20%, savings ±30%, timeline
