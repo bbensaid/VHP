@@ -140,7 +140,7 @@ export default function TickerStrip({
                       href={item.url || "#"}
                       className="flex items-center gap-2 group"
                     >
-                      <span className={`font-bold text-xs ${isDark ? "text-slate-300 group-hover:text-white" : "text-slate-700 group-hover:text-indigo-600"} transition-colors`}>
+                      <span className={`font-bold ${isDark ? "text-slate-300 group-hover:text-white" : "text-slate-700 group-hover:text-indigo-600"} transition-colors`}>
                         {item.text}
                       </span>
                       <span className={`text-[10px] ${isDark ? "text-slate-600" : "text-slate-400"} group-hover:text-indigo-400`}>

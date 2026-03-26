@@ -21,6 +21,7 @@ interface HubPageTemplateProps {
   backLabel?: string;
   badgeClass?: string;
   backLinkHoverClass?: string;
+  rowBreakAfter?: number;
 }
 
 function HubPageTemplateInner({
@@ -32,6 +33,7 @@ function HubPageTemplateInner({
   backLabel = "Back to Home",
   badgeClass = "bg-indigo-50 text-indigo-700 border border-indigo-100",
   backLinkHoverClass = "hover:text-indigo-600",
+  rowBreakAfter,
 }: HubPageTemplateProps) {
   // THE FIX: Correctly grabbing the first index  using valid optional chaining
   const router = useRouter();
@@ -93,10 +95,14 @@ function HubPageTemplateInner({
 
       {/* TABS NAVIGATION - Sticky below the AppShell Header */}
       <div className="sticky z-30 mb-8" style={{ top: "var(--sidebar-top, 8.5rem)" }}>
-        <nav className="flex flex-wrap items-end border-b border-slate-200 pl-4 bg-white/95 backdrop-blur-sm pt-2" aria-label="Tabs">
-          {tabs.map((tab) => {
+        <nav className="flex flex-wrap justify-center items-end border border-slate-200 rounded-t-xl px-2 bg-slate-50/80 backdrop-blur-sm pt-2 gap-y-1" aria-label="Tabs">
+          {tabs.map((tab, index) => {
             const isActive = activeTab === tab.id;
             return (
+              <React.Fragment key={tab.id}>
+                {rowBreakAfter && index === rowBreakAfter && (
+                  <div className="w-full" />
+                )}
               <button
                 key={tab.id}
                 role="tab"
@@ -113,6 +119,7 @@ function HubPageTemplateInner({
                 {tab.icon}
                 {tab.label}
               </button>
+              </React.Fragment>
             );
           })}
         </nav>

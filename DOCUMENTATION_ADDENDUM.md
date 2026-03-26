@@ -388,7 +388,19 @@ The geographic map tab (`🗺️ Geographic Map`) uses:
 - Optional `Polyline` overlay for COE network links (UVMMC hub → spoke hospitals)
 - Optional `Circle` bubbles for HSA population size
 
-### 8.6 Replacing Synthetic Data with Real Data
+### 8.6 HubPageTemplate Integration and Tab Wrapping Fix
+
+The simulator's custom header and tab navigation were replaced with the shared `HubPageTemplate` component (used by Academy and other hub pages) to ensure visual consistency across the platform. This involved:
+
+- **Removing** the dark-gradient custom header and the pill-style tab bar from `simulator/page.tsx`
+- **Adding** imports for `HubPageTemplate`, `useRouter`, and nine Heroicons (one per tab)
+- **Rebuilding** the main component to pass tab content as `React.ReactNode` to `HubPageTemplate`
+- **Using** `router.push("?tab=roadmap", { scroll: false })` for the programmatic "View Implementation Roadmap →" tab switch (previously `setActiveTab("roadmap")`)
+- **Moving** the Select All / Clear / View Roadmap quick-controls into the `ScenarioBuilder` component
+
+`HubPageTemplate` itself was also patched in the same session (`components/templates/HubPageTemplate.tsx`): the tab `<nav>` changed from `overflow-x-auto hide-scrollbar` to `flex-wrap` so tabs wrap to a second row on narrow screens instead of scrolling horizontally. This fix applies globally to all pages using the template (Academy, simulator, etc.).
+
+### 8.7 Replacing Synthetic Data with Real Data
 
 The simulator currently uses synthetic projections where actual data is unavailable. See **`ACT167_SIMULATOR_GUIDE.md` §20 (Data Ingestion Guide)** for a full inventory of what real data is needed, where to obtain it (GMCB, AHS, Census), and how to update `data.ts`. No backend or API changes are required — data replacement is a `data.ts` edit only.
 
