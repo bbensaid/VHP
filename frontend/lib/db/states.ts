@@ -56,13 +56,13 @@ export async function getStateMetrics(
     .from("state_health_metrics")
     .select("*")
     .eq("state_id", stateId)
-    .single();
+    .limit(1);
 
   if (error) {
     console.error(`getStateMetrics(${stateId}):`, error.message);
     return null;
   }
-  return data as StateHealthRow;
+  return (data?.[0] ?? null) as StateHealthRow | null;
 }
 
 /** Compatibility shim: returns data shaped like the old US_STATES_DATA array */
