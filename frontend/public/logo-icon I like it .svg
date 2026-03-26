@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 92">
+  <defs>
+
+    <!--
+      SVG mask technique for true interlocking rings.
+      Each mask blacks-out the filled interior of one ring.
+      Apply mask(i) to ring(i+1) so ring(i) appears in front at their crossing.
+
+      Interlocking spiral (consistent, like chain links):
+        Policy    → in front of Technology
+        Technology → in front of Financial
+        Financial  → in front of Equity
+        Equity     → in front of Clinical
+        Clinical   → in front of Policy
+
+      All 5 rings are identical circles (r=20).
+      Pentagon centers, placement radius 22 from (46,46):
+        0 Policy    (46, 24)  top
+        1 Technology (67, 39)  top-right
+        2 Financial  (59, 64)  bottom-right
+        3 Equity     (33, 64)  bottom-left
+        4 Clinical   (25, 39)  top-left
+
+      Mask radius 25 = ring radius (20) + stroke half-width (2.5) + gap (2.5)
+      This creates a clean ~2px separation gap at every crossing point.
+    -->
+
+    <!-- m0: blacks out Policy ring → applied to Technology ring -->
+    <mask id="m0">
+      <rect width="92" height="92" fill="white"/>
+      <circle cx="46" cy="24" r="25" fill="black"/>
+    </mask>
+
+    <!-- m1: blacks out Technology ring → applied to Financial ring -->
+    <mask id="m1">
+      <rect width="92" height="92" fill="white"/>
+      <circle cx="67" cy="39" r="25" fill="black"/>
+    </mask>
+
+    <!-- m2: blacks out Financial ring → applied to Equity ring -->
+    <mask id="m2">
+      <rect width="92" height="92" fill="white"/>
+      <circle cx="59" cy="64" r="25" fill="black"/>
+    </mask>
+
+    <!-- m3: blacks out Equity ring → applied to Clinical ring -->
+    <mask id="m3">
+      <rect width="92" height="92" fill="white"/>
+      <circle cx="33" cy="64" r="25" fill="black"/>
+    </mask>
+
+    <!-- m4: blacks out Clinical ring → applied to Policy ring -->
+    <mask id="m4">
+      <rect width="92" height="92" fill="white"/>
+      <circle cx="25" cy="39" r="25" fill="black"/>
+    </mask>
+
+  </defs>
+
+  <!-- Policy Alignment — #0369a1 — masked by Clinical (m4) -->
+  <circle cx="46" cy="24" r="20"
+    fill="none" stroke="#0369a1" stroke-width="5"
+    mask="url(#m4)"/>
+
+  <!-- Technology Modernization — #4f46e5 — masked by Policy (m0) -->
+  <circle cx="67" cy="39" r="20"
+    fill="none" stroke="#4f46e5" stroke-width="5"
+    mask="url(#m0)"/>
+
+  <!-- Financial Sustainability — #059669 — masked by Technology (m1) -->
+  <circle cx="59" cy="64" r="20"
+    fill="none" stroke="#059669" stroke-width="5"
+    mask="url(#m1)"/>
+
+  <!-- Equity & Access — #ea580c — masked by Financial (m2) -->
+  <circle cx="33" cy="64" r="20"
+    fill="none" stroke="#ea580c" stroke-width="5"
+    mask="url(#m2)"/>
+
+  <!-- Clinical Quality — #dc2626 — masked by Equity (m3) -->
+  <circle cx="25" cy="39" r="20"
+    fill="none" stroke="#dc2626" stroke-width="5"
+    mask="url(#m3)"/>
+
+</svg>

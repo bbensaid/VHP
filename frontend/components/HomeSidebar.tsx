@@ -14,6 +14,7 @@ import {
   LightBulbIcon,
   MapPinIcon,
   GlobeAmericasIcon,
+  CpuChipIcon,
 } from "@heroicons/react/24/outline";
 
 
@@ -104,6 +105,19 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
               <span className="text-[10px] font-black uppercase tracking-[0.15em] text-amber-700">Tools &amp; Resources</span>
             </div>
             <div className="divide-y divide-amber-100">
+              <Link
+                href="/htr-simulator"
+                onClick={onNavigate}
+                title="HTR Simulator — model health transformation scenarios across policy, technology, financial, equity, and clinical pillars"
+                className={`flex items-center gap-3 px-3 py-3 transition-colors group ${isActive("/htr-simulator") ? "bg-amber-50" : "bg-white hover:bg-amber-50"}`}
+              >
+                <div className="w-8 h-8 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center overflow-hidden shrink-0 text-amber-500 group-hover:text-amber-700 transition-colors">
+                  <CpuChipIcon className="w-5 h-5" />
+                </div>
+                <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
+                  HTR Simulator
+                </span>
+              </Link>
               <Link
                 href="/research-lab"
                 onClick={onNavigate}

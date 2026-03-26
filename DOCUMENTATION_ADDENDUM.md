@@ -406,4 +406,48 @@ The simulator currently uses synthetic projections where actual data is unavaila
 
 ---
 
+---
+
+## 9. HTR Simulator Hub
+
+**Added:** March 2026 | **Route:** `/htr-simulator`
+
+A standalone, top-level hub page that elevates the simulation engine as a major platform feature independent of any single state initiative. Vermont Act 167 is now positioned as a *use case* of the generic HTR Simulator framework rather than its only home.
+
+### 9.1 Architectural Relationship
+
+| Layer | Route | Purpose |
+| --- | --- | --- |
+| **HTR Simulator Hub** | `/htr-simulator` | Generic, educational, framework documentation. Overview, 5-Pillar Framework, Simulation Engine mechanics, Use Cases index, Methodology. No state-specific data. |
+| **Act 167 Use Case** | `/vermont-act-167/simulator` | Vermont-specific simulation. 14 hospitals, 18+ recommendations, VT data, geographic map. Links back to hub. |
+| **CalAIM (planned)** | `/california-calaim/simulator` | California Medi-Cal transformation — Coming Soon. |
+| **Oregon CCO (planned)** | `/oregon-cco/simulator` | Oregon Coordinated Care Organizations — Coming Soon. |
+| **CMS Rural Health (planned)** | `/dashboard/simulator` | Federal rural health transformation — Coming Soon. |
+
+### 9.2 New Files
+
+| File | Purpose |
+| --- | --- |
+| `frontend/app/htr-simulator/page.tsx` | Full 5-tab hub page — all content self-contained, no external data dependencies |
+
+### 9.3 HomeSidebar Change
+
+`frontend/components/HomeSidebar.tsx` was updated to add an **HTR Simulator** entry at the top of the amber **Tools & Resources** card. It uses `CpuChipIcon` from `@heroicons/react/24/outline` (newly imported). The entry links to `/htr-simulator` and includes an active-state highlight consistent with other sidebar items.
+
+### 9.4 HubPageTemplate: `rowBreakAfter` Prop
+
+`frontend/components/templates/HubPageTemplate.tsx` received a new optional prop `rowBreakAfter?: number`. When set, a `w-full` flex break is inserted after the nth tab, forcing a controlled two-row layout. Used by the Act 167 simulator (`rowBreakAfter={4}`) to split its 9 tabs into a 4+5 arrangement. Other pages using `HubPageTemplate` are unaffected (prop defaults to `undefined`).
+
+### 9.5 HTR Simulator Tab Structure
+
+| Tab | Content Summary |
+| --- | --- |
+| **Overview** | What HTR Simulator is, 6 capability cards, who it's for (3 audiences), CTA to Vermont Act 167 |
+| **5-Pillar Framework** | Full explanation of all 5 pillars with scored dimensions and score interpretation guide (0–100 scale) |
+| **Simulation Engine** | 3-stage process (recommendation scoring → scenario aggregation → impact projection), data model, limitations |
+| **Use Cases** | Cards for all 4 configured use cases (1 live, 3 coming soon) plus "propose a use case" CTA |
+| **Methodology** | Scoring dimensions, data sources (CMS, AHA, Census, HIFLD), key assumptions, version note |
+
+---
+
 *End of addendum. Merge into respective guides during next documentation pass.*

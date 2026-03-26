@@ -145,9 +145,13 @@ The simulator is accessible at:
 http://localhost:3000/vermont-act-167/simulator
 ```
 
-In production, this will be at the equivalent live domain path. You can also reach it from the
-Act 167 Overview page (`/vermont-act-167`) by clicking the **"Launch Simulation Engine →"** button
-in the "Policy Simulation Lab" section near the bottom of that page.
+In production, this will be at the equivalent live domain path. You can reach it from three places:
+
+1. **Left sidebar** → Tools & Resources → **HTR Simulator** → Use Cases tab → Vermont Act 167 → "Open Simulator"
+2. **Act 167 Overview page** (`/vermont-act-167`) → click the **"Launch Simulation Engine →"** button in the "Policy Simulation Lab" section near the bottom of that page
+3. **Direct URL** — navigate to `/vermont-act-167/simulator`
+
+> **Context:** This simulator is a use case instance of the platform-wide **HTR Simulator** (`/htr-simulator`). The HTR Simulator hub contains the generic framework documentation — 5-pillar scoring model, methodology, and simulation engine mechanics. This guide covers only the Vermont Act 167-specific configuration. Readers unfamiliar with the simulation framework should start at `/htr-simulator` before using this guide.
 
 ### 2.2 The Header Panel
 
