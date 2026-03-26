@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import {
   AcademicCapIcon,
   BriefcaseIcon,
+  UsersIcon,
   ChevronUpIcon,
   FilmIcon,
   ArrowTrendingUpIcon,
@@ -94,6 +95,18 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                 </div>
                 <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
                   Advisory
+                </span>
+              </Link>
+              <Link
+                href="/connect-hub"
+                onClick={onNavigate}
+                className={`flex items-center gap-3 px-3 py-3 transition-colors group ${isActive("/connect-hub") ? "bg-indigo-50" : "bg-white hover:bg-indigo-50"}`}
+              >
+                <div className="w-8 h-8 rounded-full bg-indigo-50 border border-indigo-200 flex items-center justify-center overflow-hidden shrink-0 text-indigo-500 group-hover:text-indigo-700 transition-colors">
+                  <UsersIcon className="w-5 h-5" />
+                </div>
+                <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
+                  Connect
                 </span>
               </Link>
             </div>

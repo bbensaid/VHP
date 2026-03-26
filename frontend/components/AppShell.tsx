@@ -120,7 +120,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
       )}
 
       {/* 2. Main Content Area */}
-      <div className="flex flex-col lg:flex-row mt-8 w-full px-4 transition-all relative z-0">
+      <div className="flex flex-col lg:flex-row mt-4 w-full px-4 transition-all relative z-0">
         <CollapsibleSidebar
           side="left"
           isOpen={isLeftOpen}
