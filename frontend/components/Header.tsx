@@ -190,7 +190,7 @@ const Header = () => {
       </div>
 
       {/* 2. MAIN NAV BAR */}
-      <div className="bg-white py-2 border-b border-slate-200 w-full relative">
+      <div className="bg-white py-1 border-b border-slate-200 w-full relative">
         {/* PHASE 1 FIX: Standardized Grid Wrapper */}
         <div className="w-full px-4 flex items-center gap-0">
           

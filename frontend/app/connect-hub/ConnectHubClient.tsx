@@ -111,10 +111,10 @@ function PeerCohortsPanel() {
         </div>
         <div className="flex flex-wrap gap-4 text-sm mt-4">
           {[
-            { value: '114', label: 'member organizations' },
-            { value: '7', label: 'active cohorts' },
+            { value: '7', label: 'cohorts available' },
             { value: '4×', label: 'per year, each cohort' },
             { value: 'Chatham House', label: 'rules apply' },
+            { value: 'Open', label: 'accepting applications' },
           ].map(stat => (
             <div key={stat.label} className="flex items-center gap-2 bg-white rounded-lg px-4 py-2 border border-teal-200">
               <span className="text-teal-600 font-black">{stat.value}</span>
@@ -131,7 +131,7 @@ function PeerCohortsPanel() {
               <span className="text-3xl">{c.emoji}</span>
               <div>
                 <h3 className={`font-black text-base ${c.accentText}`}>{c.name}</h3>
-                <span className="text-xs text-slate-500 font-semibold">{c.seats} enrolled</span>
+                <span className="text-xs text-slate-500 font-semibold">{c.seats} capacity</span>
               </div>
             </div>
             <p className="text-slate-600 text-sm leading-relaxed mb-3">{c.description}</p>
@@ -781,9 +781,10 @@ function ForumsPanel() {
         </div>
         <div className="flex flex-wrap gap-4 text-sm mt-4">
           {[
-            { value: '1,305', label: 'total members across circles' },
+            { value: '5', label: 'pillar circles' },
             { value: '48h', label: 'HTR expert response SLA' },
             { value: 'Real names', label: 'only — no anonymous posts' },
+            { value: 'Open', label: 'accepting founding members' },
           ].map(stat => (
             <div key={stat.label} className="flex items-center gap-2 bg-white rounded-lg px-4 py-2 border border-teal-200">
               <span className="text-teal-600 font-black">{stat.value}</span>
@@ -806,10 +807,10 @@ function ForumsPanel() {
                 <p className="text-xs text-slate-500 italic mb-3">{f.topicExample}</p>
                 <div className="flex flex-wrap gap-3">
                   <span className={`text-xs font-bold px-3 py-1 rounded-full ${f.statCls}`}>
-                    {f.members.toLocaleString()} members
+                    Open · founding members
                   </span>
                   <span className="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-600">
-                    {f.recentPosts} posts this month
+                    Named HTR moderator
                   </span>
                 </div>
               </div>
@@ -881,7 +882,7 @@ function AskHTRPanel() {
           {[
             { value: '48h', label: 'response commitment' },
             { value: 'Named', label: 'HTR advisor on every answer' },
-            { value: '247', label: 'questions answered' },
+            { value: 'Public', label: 'Q&A library (launching soon)' },
           ].map(stat => (
             <div key={stat.label} className="flex items-center gap-2 bg-white rounded-lg px-4 py-2 border border-teal-200">
               <span className="text-teal-600 font-black">{stat.value}</span>
@@ -957,10 +958,10 @@ function AskHTRPanel() {
 // ─── Main Export ──────────────────────────────────────────────────────────────
 
 const CONNECT_STATS = [
-  { value: '114', label: 'member organizations' },
   { value: '7', label: 'peer cohorts' },
-  { value: '247', label: 'Q&As answered' },
+  { value: '6', label: 'monthly office hours sessions' },
   { value: '8', label: 'toolkits available' },
+  { value: '5', label: 'pillar circles' },
 ]
 
 export default function ConnectHubClient() {
@@ -968,7 +969,7 @@ export default function ConnectHubClient() {
 
   return (
     <HubPageTemplate
-      badgeLabel="HTR Connect"
+      badgeLabel="HTR Connect · Early Access"
       badgeClass="bg-teal-50 text-teal-700 border border-teal-100"
       title="HTR Connect"
       subtitle={`Peer cohorts, expert office hours, implementation toolkits, and direct access to HTR advisors — ${statsStr}`}

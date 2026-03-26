@@ -9,7 +9,7 @@ const Logo: React.FC = () => {
       <div className="flex items-center gap-2">
         
         {/* 2. IMAGE SIZE */}
-        <div className="relative h-12 w-12 sm:h-15 sm:w-15 shrink-0">
+        <div className="relative h-10 w-10 sm:h-12 sm:w-12 shrink-0">
           <Image 
             src="/logo-icon.svg" 
             alt="HTR Logo" 
@@ -22,16 +22,16 @@ const Logo: React.FC = () => {
 
  
      {/*    <div className="leading-tight">
-          <div className="text-xs sm:text-sm font-extrabold text-card-tech">HEALTH</div>
-          <div className="text-xs sm:text-sm font-extrabold text-card-tech">TRANSFORMATION</div>
-          <div className="text-xs sm:text-sm font-extrabold text-card-tech">REVIEW</div>
+          <div className="text-[10px] sm:text-xs font-extrabold text-card-tech">HEALTH</div>
+          <div className="text-[10px] sm:text-xs font-extrabold text-card-tech">TRANSFORMATION</div>
+          <div className="text-[10px] sm:text-xs font-extrabold text-card-tech">REVIEW</div>
         </div>
       </div> */}
 
              <div className="leading-tight">
-          <div className="text-xs sm:text-sm font-extrabold text-black">HEALTH</div>
-          <div className="text-xs sm:text-sm font-extrabold text-black">TRANSFORMATION</div>
-          <div className="text-xs sm:text-sm font-extrabold text-black">REVIEW</div>
+          <div className="text-[10px] sm:text-xs font-extrabold text-black">HEALTH</div>
+          <div className="text-[10px] sm:text-xs font-extrabold text-black">TRANSFORMATION</div>
+          <div className="text-[10px] sm:text-xs font-extrabold text-black">REVIEW</div>
         </div>
       </div> 
 
@@ -40,9 +40,9 @@ const Logo: React.FC = () => {
 
         {/* 3. THE TEXT 
         <div className="leading-tight">
-          <div className="text-xs sm:text-sm font-extrabold text-card-economics">HEALTH</div>
-          <div className="text-xs sm:text-sm font-extrabold text-card-policy">TRANSFORMATION</div>
-          <div className="text-xs sm:text-sm font-extrabold text-card-tech">REVIEW</div>
+          <div className="text-[10px] sm:text-xs font-extrabold text-card-economics">HEALTH</div>
+          <div className="text-[10px] sm:text-xs font-extrabold text-card-policy">TRANSFORMATION</div>
+          <div className="text-[10px] sm:text-xs font-extrabold text-card-tech">REVIEW</div>
         </div>
       </div>
 */}
@@ -55,11 +55,11 @@ const Logo: React.FC = () => {
         <div className="mt-0 text-center text-[10px] font-medium tracking-widest uppercase flex justify-center items-center gap-1">
           {/* <span className="text-card-economics font-bold">OPTIMIZING CARE</span> */}
     
-          <span className="text-gray-800 font-bold">EDUCATE</span>
-          <span className="text-gray-800">-</span>
-          <span className="text-gray-800 font-bold">ADVISE</span>
-          <span className="text-gray-800">-</span>
-          <span className="text-gray-800 font-bold">SUPPORT</span>
+          <span className="text-gray-400 font-bold">EDUCATE</span>
+          <span className="text-gray-400">-</span>
+          <span className="text-gray-400 font-bold">ADVISE</span>
+          <span className="text-gray-400">-</span>
+          <span className="text-gray-400 font-bold">SUPPORT</span>
         </div>
       </div>
     </div>

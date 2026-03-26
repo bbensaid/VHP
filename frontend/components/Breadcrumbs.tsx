@@ -5,11 +5,13 @@ import { usePathname, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
 const TAB_LABELS: Record<string, string> = {
+  // Academy
   courses: "Executive Masterclasses",
   faculty: "Faculty & Experts",
   webinars: "Webinars & Events",
   glossary: "Glossary",
   casestudies: "Case Study Library",
+  // Advisory
   vbc: "Value-Based Care Models",
   workforce: "Clinical Workforce Gaps",
   telehealth: "Telehealth Reimbursement",
@@ -17,12 +19,21 @@ const TAB_LABELS: Record<string, string> = {
   research: "Custom Research Projects",
   reports: "Annual Impact Reports",
   contact: "Hire an Expert",
+  // Multimedia
   podcasts: "HTR Podcast Network",
   videos: "Video Briefings",
   library: "Full Multimedia Library",
+  // Dashboard
   index: "Performance Index",
   program: "RHT Program",
   hospitals: "Hospital View",
+  // Connect
+  cohorts: "Peer Cohorts",
+  "office-hours": "Office Hours",
+  toolkits: "Toolkits",
+  grants: "Grant Finder",
+  forums: "Pillar Circles",
+  ask: "Ask HTR",
 };
 
 function BreadcrumbsInner() {
