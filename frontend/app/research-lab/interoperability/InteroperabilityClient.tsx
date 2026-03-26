@@ -1,10 +1,11 @@
 'use client'
 
+import { useState } from 'react'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
 
-const FHIRLab = dynamic(() => import('@/components/research/FHIRLab'), { ssr: false })
-const RiskStratificationEngine = dynamic(() => import('@/components/research/RiskStratificationEngine'), { ssr: false })
+const FHIRLab                   = dynamic(() => import('@/components/research/FHIRLab'),                   { ssr: false })
+const RiskStratificationEngine  = dynamic(() => import('@/components/research/RiskStratificationEngine'),  { ssr: false })
 
 function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string; badge: string; desc: string }) {
   return (
@@ -21,7 +22,20 @@ function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string;
   )
 }
 
+const TABS = [
+  {
+    id: 'fhir', icon: '🔌', label: 'FHIR Interoperability Lab', badge: 'Interoperability',
+    desc: 'Build and validate FHIR R4 resources, map clinical terminologies, test CDS Hooks, simulate prior authorization workflows, and check ONC compliance.',
+  },
+  {
+    id: 'risk', icon: '📊', label: 'Risk Stratification Engine', badge: 'Clinical Risk',
+    desc: 'Apply HCC v28 RAF scoring, segment populations by risk tier, build custom risk models, and analyze comorbidity interactions using Elixhauser and Charlson indices.',
+  },
+]
+
 export default function InteroperabilityClient() {
+  const [activeTab, setActiveTab] = useState('fhir')
+
   return (
     <LabPageShell
       icon="🧬"
@@ -40,27 +54,27 @@ export default function InteroperabilityClient() {
         'Build a risk stratification infrastructure that feeds your care management program',
       ]}
     >
-      <div>
-        <ToolHeader
-          icon="🔌"
-          label="FHIR Interoperability Lab"
-          badge="Interoperability"
-          desc="Build and validate FHIR R4 resources, map clinical terminologies, test CDS Hooks, simulate prior authorization workflows, and check ONC compliance."
-        />
-        <FHIRLab />
+      {/* Tab nav */}
+      <div className="flex flex-wrap gap-x-1 border-b border-slate-200 mb-8">
+        {TABS.map(tab => (
+          <button
+            key={tab.id}
+            onClick={() => setActiveTab(tab.id)}
+            className={`flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold border-b-2 -mb-px transition-colors whitespace-nowrap ${
+              activeTab === tab.id
+                ? 'border-indigo-600 text-indigo-700'
+                : 'border-transparent text-slate-500 hover:text-slate-800 hover:border-slate-300'
+            }`}
+          >
+            <span>{tab.icon}</span>
+            <span>{tab.label}</span>
+          </button>
+        ))}
       </div>
 
-      <hr className="border-slate-200" />
-
-      <div>
-        <ToolHeader
-          icon="📊"
-          label="Risk Stratification Engine"
-          badge="Clinical Risk"
-          desc="Apply HCC v28 RAF scoring, segment populations by risk tier, build custom risk models, and analyze comorbidity interactions using Elixhauser and Charlson indices."
-        />
-        <RiskStratificationEngine />
-      </div>
+      {/* Active tool panel */}
+      {activeTab === 'fhir' && <div><ToolHeader icon="🔌" label="FHIR Interoperability Lab"  badge="Interoperability" desc={TABS[0].desc} /><FHIRLab /></div>}
+      {activeTab === 'risk' && <div><ToolHeader icon="📊" label="Risk Stratification Engine" badge="Clinical Risk"    desc={TABS[1].desc} /><RiskStratificationEngine /></div>}
     </LabPageShell>
   )
 }
