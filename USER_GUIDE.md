@@ -75,6 +75,15 @@ The header has two rows:
 
 The left sidebar is a collapsible navigation panel. Toggle it with the icon on the left side of the nav bar. On mobile it overlays the page; on desktop it slides in without obscuring content.
 
+The sidebar is organized into four color-coded cards:
+
+| Card | Color | Links |
+| --- | --- | --- |
+| **Services** | Indigo | Academy, Advisory |
+| **Tools & Resources** | Amber | HTR Simulator, Research Lab, Multimedia, Trending Topics |
+| **Federal Programs** | Emerald | Rural Health Transformation, AHEAD Model |
+| **State Initiatives** | Rose | Vermont Act 167, California CalAIM, Other States |
+
 ### Right Sidebar — Inline AI Chat
 
 The right sidebar contains a compact version of the AI Analyst. You can ask quick questions without leaving your current page. For a full-featured experience, click "Full chat →" to go to `/chat`.
@@ -182,11 +191,29 @@ Each academy module has:
 
 ## Research Tools
 
+### HTR Simulator (`/htr-simulator`)
+
+The HTR Simulator is the platform's policy simulation engine — a multi-pillar decision-support tool for modeling the downstream consequences of healthcare transformation decisions before they are implemented.
+
+**Five tabs:**
+
+- **Overview** — What the simulator is, its six core capabilities, and who it is designed for
+- **5-Pillar Framework** — Full explanation of the scoring model across Policy Alignment, Technology Modernization, Financial Sustainability, Health Equity, and Clinical Quality
+- **Simulation Engine** — How recommendations are scored, aggregated into scenarios, and projected onto institutions and geographies
+- **Use Cases** — Index of configured simulation instances. Vermont Act 167 is the live use case; California CalAIM, Oregon CCO, and CMS Rural Health Transformation are planned
+- **Methodology** — Data sources, scoring assumptions, and limitations
+
+**Relationship to use case pages:** The HTR Simulator hub contains all generic, educational content about the framework. Individual use case pages (e.g., `/vermont-act-167/simulator`) go directly into the simulation with context-specific data — they do not repeat the framework documentation.
+
+Access via: the **HTR Simulator** entry in the left sidebar under Tools & Resources, or directly at `/htr-simulator`.
+
+---
+
 ### AHEAD Model (`/ahead-model`)
 Vermont's All-Payer Claims Database and AHEAD model analysis.
 
 ### Vermont Act 167 (`/vermont-act-167`)
-Deep analysis of Vermont's landmark health reform legislation.
+Deep analysis of Vermont's landmark health reform legislation. Includes the Act 167 Policy Simulation Engine (`/vermont-act-167/simulator`) — a use case instance of the HTR Simulator configured with Vermont-specific hospital data, financial projections, and the Oliver Wyman Report recommendations.
 
 ### California CalAIM (`/california-calaim`)
 Analysis of California's Medi-Cal transformation initiative.
