@@ -148,7 +148,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 flex flex-col font-sans shadow-md bg-white">
+    <header className="sticky top-0 z-50 flex flex-col font-sans bg-white">
       {/* 1. TOP BAR */}
       <div className="bg-black text-zinc-300 text-[10px] font-bold tracking-wider uppercase py-1 border-b border-neutral-800 w-full relative z-50">
         <div className="w-full px-4 flex items-center h-full gap-0">
