@@ -450,4 +450,69 @@ A standalone, top-level hub page that elevates the simulation engine as a major 
 
 ---
 
+## 10. UI Standardisation — Tabs Everywhere
+
+**Updated:** March 2026
+
+All major hub and feature pages now use the same `HubPageTemplate` browser-tab style for navigation. Cards-to-tabs conversions and new components are recorded here.
+
+### 10.1 Tab Style Standard
+
+The platform tab standard is `HubPageTemplate` (`frontend/components/templates/HubPageTemplate.tsx`). All pages that present multiple views must use this component or match its exact button classes:
+
+| State | Classes |
+| --- | --- |
+| Active tab | `bg-slate-100 border-black text-slate-900 z-10 -mb-px rounded-t-xl border-t border-l border-r` |
+| Inactive tab | `bg-white border-slate-200 text-slate-500 hover:bg-slate-50 hover:text-slate-700 mt-1.5 shadow-sm rounded-t-xl border-t border-l border-r` |
+| Nav container | `flex flex-wrap justify-center items-end border border-slate-200 rounded-t-xl px-2 bg-slate-50/80 backdrop-blur-sm pt-2 gap-y-1` |
+| Sticky wrapper | `sticky z-30 mb-8` with `top: var(--sidebar-top, 8.5rem)` |
+
+### 10.2 Research Lab — Unified Two-Level Tab Interface
+
+The Research Lab (`/research-lab`) was rebuilt from a card-grid landing page + 6 separate sub-section pages into a single unified page with a two-level sticky nav.
+
+**Architecture change:**
+
+| Before | After |
+| --- | --- |
+| `/research-lab` — 6 clickable cards → navigate to sub-page | `/research-lab` — full two-level tab experience, no sub-page navigation needed |
+| `/research-lab/[section]` — primary entry point, stacked card tools | `/research-lab/[section]` — still valid for direct linking, uses `LabPageShell` |
+
+**Two-level nav design:**
+
+- **Row 1 — Section tabs**: 6 sections using standard `HubPageTemplate` browser-tab style. Active state synced to URL `?tab=` param for bookmarkability.
+- **Row 2 — Tool pills**: Tool sub-selection using pill/chip style (`rounded-full`, `text-xs`, filled dark on active). Visually subordinate to section tabs — smaller, different shape, different active treatment — to prevent confusion when both rows show an active state simultaneously.
+- Both rows live inside the **same** `<nav>` container with a `<div className="w-full" />` forced break between them, so the `gap-y-1` spacing matches advisory-hub's naturally-wrapped tabs exactly.
+
+**New / changed files:**
+
+| File | Change |
+| --- | --- |
+| `frontend/app/research-lab/ResearchLabHub.tsx` | New — purpose-built component with two-level sticky nav and all 19 dynamic tool imports |
+| `frontend/app/research-lab/page.tsx` | Updated — server component wrapper (auth/upgrade prompts) that renders `ResearchLabHub` |
+| `frontend/components/templates/SubTabView.tsx` | New — reusable secondary tab component matching `HubPageTemplate` button style; available for future nested-tab use cases |
+| `frontend/app/research-lab/ResearchLabTabs.tsx` | **Deleted** — superseded by `ResearchLabHub` |
+
+### 10.3 Advisory Hub — Cards to Tabs
+
+`/advisory-hub` was converted from a 10-card grid to a `HubPageTemplate` page with 9 practice-area tabs.
+
+Each tab panel shows the practice area's description, pillar tags, a link to the full service sub-page, and a "Book a Discovery Call" CTA. The "Start an Engagement" card was removed as a separate card; its CTA is now embedded in every tab panel.
+
+**New / changed files:**
+
+| File | Change |
+| --- | --- |
+| `frontend/app/advisory-hub/AdvisoryHubClient.tsx` | New — `'use client'` component with `HubPageTemplate`, 9 tabs, `ServicePanel` renderer |
+| `frontend/app/advisory-hub/page.tsx` | Updated — thin server wrapper (metadata export) that renders `AdvisoryHubClient` |
+
+### 10.4 Dead Code Removed
+
+| File | Reason |
+| --- | --- |
+| `frontend/lib/data/rht-awards.ts` | 185 lines, zero imports anywhere in the codebase |
+| `frontend/lib/data/states.ts` | Superseded by `frontend/lib/db/states.ts` (Supabase fetcher); confirmed zero active imports |
+
+---
+
 *End of addendum. Merge into respective guides during next documentation pass.*
