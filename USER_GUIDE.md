@@ -219,14 +219,23 @@ Deep analysis of Vermont's landmark health reform legislation. Includes the Act 
 Analysis of California's Medi-Cal transformation initiative.
 
 ### Research Lab (`/research-lab`)
-Six interactive labs organized by domain. Each lab contains multiple modeling and simulation tools:
+19 interactive analytical tools organized into 6 sections, all accessible from a single unified page. No sub-page navigation required — use the two-level tab interface directly on `/research-lab`.
 
-- **Payment Models & VBC** (`/research-lab/payment-models`) — Design alternative payment models, episode bundles, global budgets, and shared savings scenarios. Run cost-effectiveness analyses (CEA) and APM financial projections.
-- **Policy & Quality Sciences** (`/research-lab/policy-quality`) — Simulate Medicaid waivers and global budgets, model HEDIS/Star ratings, MIPS scoring, actuarial projections, and hospital financial stress tests.
-- **Population & Equity** (`/research-lab/population-equity`) — Model chronic disease progression, epidemic dynamics, health disparities, SDOH impact, and population-scale intervention ROI.
-- **Technology & AI** (`/research-lab/technology-ai`) — Evaluate AI model performance, audit algorithmic bias, build AI governance frameworks, and model remote patient monitoring and telehealth ROI.
-- **Interoperability & Risk** (`/research-lab/interoperability`) — Build and validate FHIR R4 resources, test CDS Hooks, check ONC compliance, and run HCC v28 risk stratification models.
-- **Knowledge & Workspace** (`/research-lab/knowledge-workspace`) — Access the CEA evidence library, CMMI model tracker, workforce projection models, and innovation leaderboard. Save and manage your active research workspace.
+**How to navigate:**
+
+- **Row 1 — Section tabs** (browser-tab style): select one of 6 research domains
+- **Row 2 — Tool pills** (pill/chip style): select a specific tool within the active section
+
+| Section | Tools |
+| --- | --- |
+| **Interoperability & Risk** | FHIR Interoperability Lab, Risk Stratification Engine |
+| **Payment Models & VBC** | APM Design Lab, APM Shared Savings Calculator, Cost-Effectiveness Analysis Calculator |
+| **Population & Equity** | Population Health Modeler, Health Equity Studio |
+| **Policy & Quality Sciences** | Policy Simulator, Clinical Quality Optimizer, Hospital Financial Scorecard, HTA Studio, Actuarial Lab |
+| **Technology & AI** | AI Analytics Lab, Digital Health Lab |
+| **Knowledge & Workspace** | Evidence Library, Workforce Modeler, Innovation Leaderboard, Research Workspace |
+
+The section sub-URLs (`/research-lab/policy-quality`, etc.) remain valid for direct linking but the full two-level experience lives at `/research-lab`.
 
 ### HTI Dashboard (`/hti-dashboard`)
 Health Transformation Index timeseries data and charts.
