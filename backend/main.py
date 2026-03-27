@@ -46,6 +46,7 @@ from services.indexing import build_index, load_index
 from routers.chat import router as chat_router, set_index
 from routers.ingest import router as ingest_router
 from routers.api_v1 import router as api_v1_router
+from routers.personalized_learning import router as personalized_learning_router
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("htr-brain")
@@ -89,6 +90,7 @@ except ImportError:
 app.include_router(chat_router)
 app.include_router(ingest_router)
 app.include_router(api_v1_router)
+app.include_router(personalized_learning_router)
 
 # ── Lifecycle ──────────────────────────────────────────────────────────────────
 
