@@ -6,6 +6,7 @@ import {
   ClipboardDocumentListIcon,
   BookOpenIcon,
   MapIcon,
+  SparklesIcon,
 } from "@heroicons/react/24/outline";
 
 // Import sub-pages to render as tab content
@@ -15,6 +16,7 @@ import WebinarsPage from "./webinars/page";
 import GlossaryPage from "./glossary/page";
 import CaseStudiesPage from "./case-studies/page";
 import LearningTracksHub from "@/components/academy/LearningTracksHub";
+import PersonalizedLearningHub from "@/components/academy/PersonalizedLearningHub";
 
 export const metadata = {
   title: "HTR Academy | Intelligence & Masterclasses",
@@ -58,6 +60,12 @@ export default function AcademyHub() {
       label: "Glossary",
       icon: <BookOpenIcon className="w-5 h-5" />,
       content: <GlossaryPage />
+    },
+    {
+      id: "personalized",
+      label: "Personalized Learning",
+      icon: <SparklesIcon className="w-5 h-5" />,
+      content: <PersonalizedLearningHub />
     },
   ];
 

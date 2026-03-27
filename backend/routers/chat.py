@@ -16,7 +16,7 @@ from pydantic import BaseModel, field_validator
 
 from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core.llms import ChatMessage, MessageRole
-from llama_index.core.postprocessor import MetadataReplacementNodePostprocessor
+from llama_index.core.postprocessor import MetadataReplacementPostProcessor as MetadataReplacementNodePostprocessor
 from llama_index.core.schema import QueryBundle, NodeWithScore
 from llama_index.core.chat_engine import ContextChatEngine
 from llama_index.core.agent import ReActAgent

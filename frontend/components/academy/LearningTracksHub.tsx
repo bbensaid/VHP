@@ -1,15 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { CheckCircle, Clock, ChevronDown, ChevronUp, BookOpen, Users, ArrowRight } from "lucide-react";
 import { learningTracks, type LearningTrack } from "@/lib/data/learning-tracks-data";
 import { useModuleProgress } from "@/hooks/useModuleProgress";
 
 // ─── Track Card ───────────────────────────────────────────────────────────────
 
-function TrackCard({ track }: { track: LearningTrack }) {
-  const [expanded, setExpanded] = useState(false);
+function TrackCard({ track, highlighted }: { track: LearningTrack; highlighted?: boolean }) {
+  const [expanded, setExpanded] = useState(highlighted ?? false);
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (highlighted && cardRef.current) {
+      cardRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [highlighted]);
 
   // We need progress for all module slugs in this track
   // Use the first module slug as the hook reference — actual counts via getCompletedCount
@@ -23,7 +31,12 @@ function TrackCard({ track }: { track: LearningTrack }) {
   const totalHours = Math.round(track.totalMinutes / 60 * 10) / 10;
 
   return (
-    <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+    <div
+      ref={cardRef}
+      className={`bg-white rounded-2xl border shadow-sm overflow-hidden hover:shadow-md transition-shadow ${
+        highlighted ? "border-indigo-400 ring-2 ring-indigo-300 ring-offset-2" : "border-slate-200"
+      }`}
+    >
       {/* Header */}
       <div className="p-6 border-b border-slate-100">
         <div className="flex items-start justify-between gap-4">
@@ -176,6 +189,9 @@ function useModuleProgressSafe(slug: string) {
 // ─── Hub Page ─────────────────────────────────────────────────────────────────
 
 export default function LearningTracksHub() {
+  const searchParams = useSearchParams();
+  const highlightedTrackId = searchParams.get("track");
+
   return (
     <div className="min-h-screen bg-slate-50 pb-20">
       {/* Hero */}
@@ -215,7 +231,7 @@ export default function LearningTracksHub() {
       {/* Tracks */}
       <div className="max-w-6xl mx-auto px-6 py-10 space-y-8">
         {learningTracks.map(track => (
-          <TrackCard key={track.id} track={track} />
+          <TrackCard key={track.id} track={track} highlighted={track.id === highlightedTrackId} />
         ))}
       </div>
     </div>

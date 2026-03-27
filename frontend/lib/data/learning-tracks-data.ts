@@ -1,12 +1,13 @@
 /**
- * Learning Tracks — curated module curricula for structured learning paths.
- * Each track groups modules by topic and level. Module slugs map to Sanity
- * academyModule records; description/objectives are used as fallback display
- * content while Sanity is populated.
+ * Learning Tracks — curated module curricula built from real Sanity CMS content.
+ *
+ * IMPORTANT: Every slug here must match an `academyModule` document in Sanity.
+ * The 18 modules currently published fall into three thematic tracks below.
+ * Do NOT add slugs that don't exist in Sanity — the module pages will 404.
  */
 
 export type TrackModule = {
-  slug: string;          // Sanity academyModule slug
+  slug: string;          // Must match Sanity academyModule slug.current
   title: string;
   estimatedMinutes: number;
   level: "Foundational" | "Intermediate" | "Advanced";
@@ -27,303 +28,388 @@ export type LearningTrack = {
 };
 
 export const learningTracks: LearningTrack[] = [
-  // ── TRACK 1: Health Economics Foundations (Novice) ──────────────────────────
+  // ── TRACK 1: Value-Based Care — Foundation to Advanced ──────────────────────
   {
-    id: "health-economics-foundations",
-    title: "Health Economics Foundations",
-    subtitle: "Start here: the essential framework for understanding how money flows in healthcare — from first principles to APM readiness.",
-    icon: "🏛️",
-    badge: "Foundational",
-    badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-300",
-    targetAudience: ["Clinicians entering healthcare leadership", "New healthcare administrators", "Policy analysts and advocates", "Graduate students in health sciences"],
-    totalMinutes: 320,
-    modules: [
-      {
-        slug: "hef-module-01-why-healthcare-costs-so-much",
-        title: "Why Does Healthcare Cost So Much?",
-        estimatedMinutes: 35,
-        level: "Foundational",
-        summary: "Demand inelasticity, information asymmetry, and moral hazard — the three structural forces that make healthcare unlike any other market.",
-        learningObjectives: [
-          "Explain why healthcare demand is price-inelastic compared to other goods",
-          "Describe the principal-agent problem between patients, clinicians, and payers",
-          "Define moral hazard and explain how insurance design influences utilization",
-          "Apply the concept of market failure to justify government intervention in healthcare",
-        ],
-      },
-      {
-        slug: "hef-module-02-who-pays-for-what",
-        title: "Who Pays for What? The Payer Landscape",
-        estimatedMinutes: 40,
-        level: "Foundational",
-        summary: "A complete map of who pays for healthcare in America — commercial insurance, Medicare, Medicaid, self-pay — and how premium dollars become provider payments.",
-        learningObjectives: [
-          "Distinguish between commercial, Medicare, and Medicaid payer types and their beneficiary populations",
-          "Explain actuarial risk, premium-setting, and underwriting in commercial insurance",
-          "Describe cost-sharing mechanisms: deductibles, copays, coinsurance, and out-of-pocket maximums",
-          "Trace the flow of a premium dollar from employer to insurer to hospital",
-        ],
-      },
-      {
-        slug: "hef-module-03-how-hospitals-make-money",
-        title: "How Hospitals Make (and Lose) Money",
-        estimatedMinutes: 45,
-        level: "Foundational",
-        summary: "Revenue cycle basics, case mix index, payer mix, and the operating margin — the financial metrics every healthcare professional should understand.",
-        learningObjectives: [
-          "Define net patient revenue, operating margin, and days cash on hand",
-          "Explain Case Mix Index (CMI) and how DRG-based payment works",
-          "Describe how payer mix (% commercial vs. Medicaid) drives financial sustainability",
-          "Identify how uncompensated care and 340B drug pricing affect hospital economics",
-        ],
-      },
-      {
-        slug: "hef-module-04-medicare-and-medicaid-101",
-        title: "Medicare & Medicaid 101",
-        estimatedMinutes: 40,
-        level: "Foundational",
-        summary: "The eligibility rules, benefit structures, and reimbursement mechanisms for America's two largest public payers — covering 160 million Americans.",
-        learningObjectives: [
-          "Describe Medicare Parts A, B, C (Medicare Advantage), and D with eligibility rules",
-          "Explain fee-for-service Medicare payment rates (IPPS, OPPS, MPFS)",
-          "Define Medicaid eligibility, federal matching (FMAP), and the impact of expansion",
-          "Compare traditional Medicaid managed care vs. fee-for-service delivery",
-        ],
-      },
-      {
-        slug: "hef-module-05-value-based-care-basics",
-        title: "Value-Based Care: From Volume to Value",
-        estimatedMinutes: 45,
-        level: "Foundational",
-        summary: "What APMs are, why CMS created them, and how shared savings programs fundamentally change provider incentives — the pivot point of modern healthcare economics.",
-        learningObjectives: [
-          "Define fee-for-service and explain the volume incentive problem it creates",
-          "Describe the Triple Aim (cost, quality, experience) and its influence on CMS policy",
-          "Explain how Medicare Shared Savings Programs (MSSP) work: benchmark, MSR, shared savings",
-          "Distinguish between one-sided (upside only) and two-sided (full risk) APM tracks",
-        ],
-      },
-      {
-        slug: "hef-module-06-reading-quality-reports",
-        title: "Reading a Quality Report: HEDIS, STARS & CMS Measures",
-        estimatedMinutes: 40,
-        level: "Foundational",
-        summary: "The quality measurement landscape — HEDIS, CMS STAR ratings, MIPS, and CAHPS — decoded so you can interpret performance reports and understand quality incentives.",
-        learningObjectives: [
-          "Describe HEDIS measures and how NCQA compiles health plan report cards",
-          "Explain CMS Medicare Advantage STAR ratings and their financial consequences (bonus payments)",
-          "Define MIPS (Merit-based Incentive Payment System) and its four performance categories",
-          "Read and interpret a hospital Compare quality scorecard",
-        ],
-      },
-      {
-        slug: "hef-module-07-the-policy-cycle-in-healthcare",
-        title: "The Policy Cycle: From Idea to National Rollout",
-        estimatedMinutes: 40,
-        level: "Foundational",
-        summary: "How a CMS Innovation Model goes from a CMMI concept paper to mandatory nationwide implementation — the lifecycle of healthcare payment policy.",
-        learningObjectives: [
-          "Describe the role of CMMI in testing and scaling payment innovations",
-          "Trace the lifecycle of a CMS demo model: concept → pilot → evaluation → scaling",
-          "Explain how Congress authorizes CMS to implement payment model changes",
-          "Identify key regulatory vehicles: proposed rules, final rules, and the Federal Register",
-        ],
-      },
-      {
-        slug: "hef-module-08-health-equity-economics",
-        title: "Health Equity as an Economic Problem",
-        estimatedMinutes: 35,
-        level: "Foundational",
-        summary: "Healthcare disparities are not just a moral failure — they are a trillion-dollar economic inefficiency. Cost-of-disparity analysis and equitable intervention design.",
-        learningObjectives: [
-          "Quantify the economic cost of health disparities in the US (Deloitte/LaVeist estimates)",
-          "Describe Social Determinants of Health (SDOH) and their pathways to clinical outcomes",
-          "Explain risk adjustment methodologies that do — and don't — account for social risk",
-          "Apply cost-effectiveness thinking to interventions targeting health equity gaps",
-        ],
-      },
+    id: "value-based-care-track",
+    title: "Value-Based Care: Foundation to Advanced",
+    subtitle:
+      "From the fundamental paradox of US healthcare spending to the mechanics of ACO contracts, risk adjustment, care management, and technology infrastructure — the complete VBC curriculum.",
+    icon: "💡",
+    badge: "Foundational → Advanced",
+    badgeColor: "bg-indigo-100 text-indigo-800 border-indigo-300",
+    targetAudience: [
+      "Healthcare administrators and executives",
+      "Clinicians entering leadership roles",
+      "Policy analysts and advocates",
+      "ACO program managers and CFOs",
     ],
-  },
-
-  // ── TRACK 2: APM Strategy for Administrators (Intermediate) ─────────────────
-  {
-    id: "apm-strategy-administrators",
-    title: "APM Strategy for Hospital Administrators",
-    subtitle: "The operational and financial mechanics of ACOs, bundles, and global budgets — built for leaders making APM participation decisions.",
-    icon: "💼",
-    badge: "Intermediate",
-    badgeColor: "bg-amber-100 text-amber-800 border-amber-300",
-    targetAudience: ["Hospital CFOs and finance directors", "ACO executives", "Health system strategy officers", "Value-based care program managers"],
-    totalMinutes: 240,
+    totalMinutes: 380,
     modules: [
       {
-        slug: "apm-module-01-aco-financial-mechanics",
-        title: "ACO Financial Mechanics: How Shared Savings Really Work",
-        estimatedMinutes: 45,
-        level: "Intermediate",
-        summary: "Risk corridors, benchmark calculations, minimum savings rates, and quality withholds — the complete financial anatomy of an ACO contract.",
-        learningObjectives: [
-          "Calculate an ACO benchmark using the CMS historical expenditure methodology",
-          "Apply minimum savings rate (MSR) thresholds to determine shared savings eligibility",
-          "Model quality withhold impact on shared savings distribution",
-          "Compare Track 1 (one-sided) vs. MSSP Enhanced (two-sided) financial risk profiles",
-        ],
-      },
-      {
-        slug: "apm-module-02-episode-based-payments",
-        title: "Episode-Based Payments: BPCI-Advanced & CJR",
+        slug: "vbc-fundamentals-m1",
+        title:
+          "Why the Way We Pay for Healthcare Is Breaking the System — And How Paying for Value Could Fix It",
         estimatedMinutes: 40,
-        level: "Intermediate",
-        summary: "How BPCI-Advanced and Comprehensive Joint Replacement (CJR) work — episode target prices, reconciliation, and operational strategies for winning in bundled payment.",
+        level: "Foundational",
+        summary:
+          "The United States spends more on healthcare than any nation on earth — yet ranks 37th in health outcomes. This module explains why that paradox exists, how the fee-for-service payment system created it, and how value-based care offers a fundamentally different path forward.",
         learningObjectives: [
-          "Define an episode of care and explain how CMS calculates episode target prices",
-          "Describe the 90-day post-acute episode structure and included services",
-          "Identify care redesign strategies that reduce post-acute spend: SNF selection, PT optimization",
-          "Model break-even performance and profit margin in a BPCI episode contract",
+          "Explain the US healthcare spending paradox using current data",
+          "Describe how fee-for-service payment works and the perverse incentives it creates",
+          "Define value-based care and distinguish it from fee-for-service",
+          "Identify the four main categories of value-based payment models",
+          "Explain why Vermont is a national leader in the shift to value-based care",
         ],
       },
       {
-        slug: "apm-module-03-global-budgets",
-        title: "Global Budgets: Maryland, Vermont & AHEAD",
-        estimatedMinutes: 40,
-        level: "Intermediate",
-        summary: "The three active global budget programs in the US — what they share, where they diverge, and what their performance data reveals about the model's potential.",
-        learningObjectives: [
-          "Describe the Maryland Total Cost of Care (TCOC) model and its hospital-specific global budget mechanism",
-          "Explain Vermont's ACO model and AHEAD Model mechanics",
-          "Compare global budget approaches: hospital-only vs. total cost of care vs. all-payer",
-          "Analyze Maryland's published outcome data: per capita cost growth vs. national trend",
-        ],
-      },
-      {
-        slug: "apm-module-04-risk-adjustment-deep-dive",
-        title: "Risk Adjustment Deep Dive: HCC Methodology",
-        estimatedMinutes: 45,
-        level: "Intermediate",
-        summary: "How CMS Hierarchical Condition Categories (HCCs) calculate risk scores — coding accuracy, RAF optimization, and why documentation is a financial strategy.",
-        learningObjectives: [
-          "Explain the HCC mapping process: ICD-10 code → HCC → Risk Adjustment Factor (RAF)",
-          "Describe how RAF scores determine per-member-per-month benchmark spending",
-          "Quantify the revenue impact of coding accuracy improvements (typical 3-8% RAF uplift)",
-          "Identify compliant vs. non-compliant RAF optimization strategies",
-        ],
-      },
-      {
-        slug: "apm-module-05-payer-contract-design",
-        title: "Negotiating VBP Payer Contracts",
+        slug: "intro-value-based-care-volume-to-value",
+        title: "Introduction to Value-Based Care: From Volume to Value",
         estimatedMinutes: 35,
-        level: "Intermediate",
-        summary: "Commercial payer VBP contract design — rate benchmarking, quality metrics selection, performance corridors, and common negotiation pitfalls.",
+        level: "Foundational",
+        summary:
+          "This module introduces the conceptual foundations of value-based care, tracing the policy journey from fee-for-service dominance to today's complex mix of payment models. Learners will understand the core trade-offs, key stakeholders, and measurement frameworks that define VBC success.",
         learningObjectives: [
-          "Benchmark commercial reimbursement rates against Medicare rates and regional data (HCCI)",
-          "Design a VBP contract with quality metrics aligned to organizational performance",
-          "Identify unfavorable contract terms: narrow corridors, retrospective benchmarks, skewed attribution",
-          "Apply total cost of care (TCOC) methodology to a commercial payer negotiation",
+          "Explain the core difference between fee-for-service and value-based payment models",
+          "Identify the five primary VBC contract structures used in U.S. healthcare",
+          "Describe how quality measurement and cost efficiency interact in VBC performance",
+          "Evaluate why the shift to value has been slower than projected in the 2010 ACA era",
         ],
       },
       {
-        slug: "apm-module-06-apm-readiness",
-        title: "APM Readiness Assessment Using HTI Metrics",
-        estimatedMinutes: 35,
-        level: "Intermediate",
-        summary: "Using the Health Transformation Index (HTI) framework to assess organizational readiness for APM participation — data infrastructure, culture, and financial capacity.",
-        learningObjectives: [
-          "Apply HTI domain scores to identify organizational strengths and gaps for APM entry",
-          "Conduct a financial readiness assessment: runway, risk tolerance, care management investment",
-          "Build a gap closure roadmap: data infrastructure, care management, physician alignment",
-          "Select the appropriate APM entry point based on risk appetite and capability maturity",
-        ],
-      },
-    ],
-  },
-
-  // ── TRACK 3: Precision Medicine for Clinicians (Intermediate-Advanced) ───────
-  {
-    id: "precision-medicine-clinicians",
-    title: "Precision Medicine for Clinicians",
-    subtitle: "From genomics primer to clinical implementation — the molecular tools reshaping diagnosis, treatment, and prevention.",
-    icon: "🧬",
-    badge: "Intermediate",
-    badgeColor: "bg-rose-100 text-rose-800 border-rose-300",
-    targetAudience: ["Physicians and APPs seeking genomics literacy", "Genetic counselors expanding clinical knowledge", "Oncologists and specialists using NGS panels", "Hospital CMOs and clinical leaders"],
-    totalMinutes: 270,
-    modules: [
-      {
-        slug: "pm-module-01-genomics-primer",
-        title: "Genomics Primer: From Sequence to Clinical Utility",
+        slug: "vbc-fundamentals-module-2-policy-pillar",
+        title:
+          "Value-Based Care Fundamentals — Module 2: The Policy Pillar — Laws, Rules, and the Regulatory Architecture That Makes (or Breaks) Value-Based Care",
         estimatedMinutes: 45,
         level: "Intermediate",
-        summary: "Sequencing technologies (Sanger, NGS, WES, WGS), variant types, and the pathway from raw data to actionable clinical finding — no prior genetics background needed.",
+        summary:
+          "This module explains in plain language how MACRA, the ACA's Innovation Center, and state Medicaid waiver programs create the legal and financial scaffolding for VBC models, identifies the regulatory barriers that slow adoption for rural and safety-net providers, and equips learners to read the policy signals that will shape their organization's VBC strategy through 2030.",
         learningObjectives: [
-          "Distinguish germline vs. somatic variants and their clinical implications",
-          "Describe next-generation sequencing (NGS): library prep, alignment, variant calling",
-          "Apply the ACMG/AMP five-tier variant classification system",
-          "Identify when to order germline testing vs. somatic tumor profiling vs. carrier screening",
+          "Explain MACRA's two-track physician payment architecture and the financial difference between MIPS and Advanced APM participation",
+          "Describe how the 2020 Stark Law and Anti-Kickback VBC exceptions enable ACO-physician financial arrangements",
+          "Identify the policy signals — RFIs, fee schedule proposed rules, model termination notices — that indicate future VBC direction",
+          "Compare state Medicaid VBC adoption using Section 1115 and 1915 waiver frameworks",
+          "Summarize the AHEAD Model's all-payer structure and explain why it is architecturally different from single-payer VBC models",
         ],
       },
       {
-        slug: "pm-module-02-pharmacogenomics-practice",
-        title: "Pharmacogenomics in Practice",
-        estimatedMinutes: 45,
-        level: "Intermediate",
-        summary: "The six highest-impact gene-drug interactions (CYP2D6, CYP2C19, TPMT, SLCO1B1, HLA-B*5701, DPYD) with CPIC-guideline clinical action recommendations.",
-        learningObjectives: [
-          "Identify patients who would benefit from pre-emptive PGx testing",
-          "Apply CPIC guideline recommendations for the top 6 gene-drug pairs",
-          "Explain how PGx results are incorporated into EHR clinical decision support",
-          "Calculate the economic case for PGx implementation in a 10,000-patient panel",
-        ],
-      },
-      {
-        slug: "pm-module-03-polygenic-risk-scores",
-        title: "Polygenic Risk Scores: Science and Application",
-        estimatedMinutes: 40,
-        level: "Intermediate",
-        summary: "How PRS are derived from GWAS studies, their clinical utility for coronary artery disease and breast cancer risk stratification, and their limitations by ancestry.",
-        learningObjectives: [
-          "Describe GWAS methodology and how allele weights are derived for PRS construction",
-          "Apply PRS to cardiovascular risk stratification beyond traditional Framingham scoring",
-          "Explain why PRS perform differently across ancestral populations (LD structure differences)",
-          "Evaluate a PRS clinical utility study using AUC, NRI, and reclassification statistics",
-        ],
-      },
-      {
-        slug: "pm-module-04-oncology-genomics",
-        title: "Oncology Genomics: Targeted Therapy Selection",
+        slug: "vbc-fundamentals-module-3-economics-pillar",
+        title:
+          "Value-Based Care Fundamentals — Module 3: The Economics Pillar — Following the Money in Value-Based Care",
         estimatedMinutes: 50,
-        level: "Advanced",
-        summary: "TMB, MSI, HER2, EGFR, KRAS/NRAS/BRAF, ALK/ROS1 — the tumor biomarkers driving precision oncology treatment decisions and immunotherapy eligibility.",
+        level: "Intermediate",
+        summary:
+          "This module explains how money actually flows in the major VBC contract structures — shared savings, bundled payments, and capitation — and how providers calculate whether a VBC arrangement is financially rational. Learners will leave able to evaluate a VBC contract term sheet and understand the economic case for primary care investment.",
         learningObjectives: [
-          "Interpret a solid tumor NGS panel report (FoundationOne, MSK-IMPACT format)",
-          "Apply TMB and MSI-H status to pembrolizumab eligibility determination",
-          "Identify targeted therapy options for EGFR, ALK, ROS1 in NSCLC",
-          "Describe ctDNA (liquid biopsy) applications: therapy selection, MRD monitoring",
+          "Trace the financial mechanics of a shared savings contract from benchmark calculation through savings distribution",
+          "Compare upside-only and two-sided risk tracks and identify the balance sheet conditions that determine which is appropriate",
+          "Explain why bundled payment savings in major joint replacement come primarily from post-acute care, not the procedure itself",
+          "Model the volume-to-value transition period revenue gap over a five-year planning horizon",
+          "Calculate the return on investment for six categories of care management intervention using CMS benchmark data",
         ],
       },
       {
-        slug: "pm-module-05-genomics-program-economics",
-        title: "Building a Genomics Program: Economics & Operations",
-        estimatedMinutes: 45,
-        level: "Advanced",
-        summary: "Infrastructure, consent, return of results, reimbursement, and the financial model for launching a health system genomics program from the ground up.",
+        slug: "understanding-risk-contracts-and-shared-savings",
+        title: "Understanding Risk Contracts and Shared Savings Models",
+        estimatedMinutes: 40,
+        level: "Intermediate",
+        summary:
+          "A practical deep-dive into benchmark methodology, minimum savings/loss rates, and the progression from one-sided to two-sided risk. Learners develop hands-on skills in analyzing VBC contract terms and calculating shared savings distributions.",
         learningObjectives: [
-          "Design a genomic screening program: population selection, testing logistics, result delivery",
-          "Navigate CMS coverage for hereditary cancer panels (LCD framework, prior auth)",
-          "Build a financial model: volume assumptions, reimbursement rates, lab cost structure",
-          "Establish an incidental findings policy and secondary findings consent framework",
+          "Calculate shared savings distributions under one-sided and two-sided risk models",
+          "Identify the actuarial factors that determine benchmark setting methodology",
+          "Distinguish between upside-only, downside risk, and global capitation risk structures",
+          "Apply minimum savings rate (MSR) and minimum loss rate (MLR) concepts to contract analysis",
         ],
       },
       {
-        slug: "pm-module-06-ai-clinical-prediction",
-        title: "AI Clinical Prediction: Sepsis, Deterioration & Risk Scoring",
+        slug: "care-management-vbc-strategies",
+        title: "Care Management Strategies for VBC Success",
+        estimatedMinutes: 40,
+        level: "Intermediate",
+        summary:
+          "Value-based contracts succeed or fail based on care management execution. This module covers risk stratification, care team design, evidence-based interventions for high-cost patient populations, and financial modeling for care management program investment.",
+        learningObjectives: [
+          "Apply risk stratification frameworks to identify high-impact patient populations",
+          "Design care team structures appropriate for chronic disease management in VBC contexts",
+          "Evaluate the evidence base for high-touch care management interventions",
+          "Measure the ROI of care management programs using total cost of care methodology",
+        ],
+      },
+      {
+        slug: "vbc-fundamentals-module-4-technology-pillar",
+        title:
+          "Value-Based Care Fundamentals — Module 4: The Technology Pillar — Data, AI, and the Digital Infrastructure That Makes VBC Work",
+        estimatedMinutes: 45,
+        level: "Intermediate",
+        summary:
+          "This module explains what interoperable EHRs, health information exchange, and AI-powered risk stratification tools actually do in a VBC context, why 34% of rural Critical Access Hospitals remain technology-unready for advanced VBC participation, and how the federal interoperability agenda is building the data infrastructure that VBC depends upon.",
+        learningObjectives: [
+          "Identify the three technology layers VBC requires and explain why each layer depends on the quality of the layer below it",
+          "Describe what the 21st Century Cures Act's FHIR mandate and information blocking prohibition changed in health IT",
+          "Explain how AI risk stratification improves on claims-based models and why demographic bias auditing is ethically required",
+          "Assess an organization's VBC technology readiness using the rural-urban capability gap framework",
+          "Apply the five-phase technology investment roadmap to prioritize VBC infrastructure investment sequentially",
+        ],
+      },
+      {
+        slug: "vbc-clinical-m5",
+        title:
+          "From Volume to Value at the Bedside: How Value-Based Care Transforms Clinical Practice",
+        estimatedMinutes: 40,
+        level: "Intermediate",
+        summary:
+          "Value-based care is not just a billing change — it reshapes what happens in every exam room, every hospital ward, and every care team huddle. This module explores how the shift from fee-for-service to value changes clinical workflows, team structures, quality measurement, population health management, and care coordination.",
+        learningObjectives: [
+          "Explain how fee-for-service versus value-based payment creates different clinical incentives and workflows",
+          "Identify the four major domains of quality measurement used in VBC contracts",
+          "Define population health management and describe how it works in a primary care setting",
+          "Explain what care coordination involves and why it reduces both cost and harm",
+          "Describe evidence-based interventions that reduce preventable hospitalizations and readmissions",
+          "Identify Vermont-specific clinical programs that operationalize value-based care",
+        ],
+      },
+      {
+        slug: "vbc-equity-m6",
+        title:
+          "Who Gets Left Behind: Health Equity, Social Determinants, and Building a VBC System That Works for Everyone",
         estimatedMinutes: 45,
         level: "Advanced",
-        summary: "Validated AI clinical decision support tools — Epic Sepsis Model, deterioration index, and HCC risk scoring — with implementation evidence and alert fatigue mitigation.",
+        summary:
+          "VBC was designed, in part, as a health equity intervention. But the research tells a more complicated story. This module examines where VBC has advanced health equity, where it has undermined it, and what specific design choices — in risk adjustment, community health worker programs, panel selection, and rural policy — are required to build a VBC system that actually works for everyone.",
         learningObjectives: [
-          "Evaluate AI model performance: AUC, sensitivity, specificity, PPV in clinical context",
-          "Describe the Epic Sepsis Model's features, validation performance, and controversy",
-          "Design an AI alert implementation strategy that minimizes alert fatigue",
-          "Apply population health risk stratification tools to care management program design",
+          "Define health disparities and social determinants of health using current data",
+          "Explain three structural equity flaws in how most VBC programs are currently designed",
+          "Describe how SDOH risk adjustment works and why the current CMS approach is considered insufficient",
+          "Explain the evidence base for community health workers and the reimbursement barriers they face",
+          "Identify Vermont-specific equity challenges including rural, refugee, and indigenous populations",
+          "Describe what equity-centered VBC design requires beyond good intentions",
+        ],
+      },
+    ],
+  },
+
+  // ── TRACK 2: Precision Medicine — Foundation to Advanced ────────────────────
+  {
+    id: "precision-medicine-track",
+    title: "Precision Medicine: From Revolution to Bedside",
+    subtitle:
+      "From the genomics primer that started the revolution to clinical implementation, regulatory frameworks, economics of targeted therapies, AI in genomics, and equity challenges — the complete precision medicine curriculum.",
+    icon: "🧬",
+    badge: "Foundational → Advanced",
+    badgeColor: "bg-rose-100 text-rose-800 border-rose-300",
+    targetAudience: [
+      "Physicians and advanced practice providers",
+      "Clinical informaticists and CMIOs",
+      "Health system strategists and executives",
+      "Oncologists and specialists using genomic panels",
+    ],
+    totalMinutes: 255,
+    modules: [
+      {
+        slug: "precision-medicine-m1",
+        title:
+          "From One-Size-Fits-All to You: The Precision Medicine Revolution",
+        estimatedMinutes: 40,
+        level: "Foundational",
+        summary:
+          "For most of medical history, doctors treated patients based on what worked for the average person. Precision medicine rewrites that logic: instead of fitting the patient to the treatment, it fits the treatment to the patient. This module traces the scientific breakthroughs, falling costs, and policy milestones that made precision medicine possible.",
+        learningObjectives: [
+          "Define precision medicine and distinguish it from traditional population-based treatment approaches",
+          "Explain why individual genetic variation matters clinically and how it affects drug response",
+          "Describe the cost trajectory of genome sequencing and why falling costs changed everything",
+          "Identify the key historical milestones that enabled the precision medicine era",
+          "Name and explain the four pillars of precision medicine: genomics, environment, lifestyle, and clinical data",
+          "Explain pharmacogenomics as a near-term, practical application of precision medicine",
+          "Connect precision medicine principles to value-based care goals and Vermont's health system context",
+        ],
+      },
+      {
+        slug: "precision-medicine-m2-policy",
+        title:
+          "Who Writes the Rules: The Regulatory and Legal Framework for Precision Medicine",
+        estimatedMinutes: 45,
+        level: "Intermediate",
+        summary:
+          "Precision medicine's clinical promise operates inside a dense web of federal and state rules governing which tests can be offered, who can perform them, how results are protected, and who pays. This module maps the key regulatory actors and frameworks shaping precision medicine in 2026, with specific attention to Vermont's policy context.",
+        learningObjectives: [
+          "Distinguish between FDA-approved in vitro diagnostic tests and laboratory-developed tests (LDTs), and explain the regulatory implications of each",
+          "Describe CLIA certification requirements and their relevance to genomic laboratory quality",
+          "Explain what GINA protects, which contexts it covers, and its critical gap in life and disability insurance",
+          "Identify how HIPAA applies to genomic data and what 'de-identification' means in a genomic context",
+          "Summarize the key precision medicine provisions of the 21st Century Cures Act",
+          "Explain the CMS MolDx program and how Local Coverage Determinations govern genomic test reimbursement",
+          "Describe the FDA's Breakthrough Device designation and how it applies to genomic diagnostics",
+          "Explain the FDA's evolving regulatory posture toward Direct-to-Consumer genetic testing, using 23andMe as a case study",
+          "Describe Vermont-specific genetic privacy statutes and how they extend beyond federal protections",
+        ],
+      },
+      {
+        slug: "precision-medicine-m3-economics",
+        title:
+          "The Billion-Dollar Molecule: Economics of Precision Medicine",
+        estimatedMinutes: 40,
+        level: "Intermediate",
+        summary:
+          "Precision medicine drugs carry price tags that shock patients and payers alike — some gene therapies now exceed $3 million per treatment. This module unpacks why targeted therapies cost so much, whether the economics actually justify the price, and how payers and manufacturers are experimenting with radical new payment models including outcomes-based contracts.",
+        learningObjectives: [
+          "Explain the cost trajectory of genome sequencing and why it matters economically",
+          "Describe the key drivers behind the high prices of targeted therapies and gene therapies",
+          "Distinguish value-based pricing from traditional drug pricing and give a real-world example",
+          "Articulate the economic argument for precision medicine in terms of avoided waste and downstream savings",
+          "Identify the major insurance coverage barriers that create a gap between clinical promise and patient access",
+          "Explain how outcomes-based contracts between payers and manufacturers work",
+          "Describe the economics of companion diagnostics and health technology assessment for genomic tests",
+        ],
+      },
+      {
+        slug: "precision-medicine-m4-technology",
+        title:
+          "The Genomic Stack: Sequencing, AI, and the Digital Infrastructure of Precision Medicine",
+        estimatedMinutes: 45,
+        level: "Intermediate",
+        summary:
+          "Modern precision medicine runs on a technology stack that most clinicians have never fully seen: from the sequencing machines that read DNA to the AI algorithms that interpret billions of data points, to the EHR integrations that surface results at the point of care. This module maps that stack from end to end — demystifying the biology, the computation, and the information infrastructure.",
+        learningObjectives: [
+          "Distinguish the major types of genomic sequencing and explain when each is clinically appropriate",
+          "Describe how next-generation sequencing converts biological tissue into actionable variant data",
+          "Explain the bioinformatics pipeline from raw sequencing reads to clinical interpretation",
+          "Define variant classification categories and explain why variants of uncertain significance present a clinical challenge",
+          "Describe how AI and machine learning are applied to genomic data analysis, including polygenic risk scores",
+          "Explain the challenges of integrating genomic data into EHR systems and the role of standards like FHIR Genomics",
+          "Identify the specific technology gaps that limit precision medicine access in rural and resource-limited settings",
+        ],
+      },
+      {
+        slug: "precision-medicine-m5-clinical",
+        title:
+          "From Mutation to Medicine: How Precision Medicine Is Changing Clinical Practice",
+        estimatedMinutes: 45,
+        level: "Advanced",
+        summary:
+          "Precision medicine is no longer a research concept — it is reshaping the clinical encounter in oncology, primary care, and rare disease diagnosis. This module traces how tumor profiling, pharmacogenomics, and whole-exome sequencing are moving from academic medical centers into everyday practice, and what that means for clinical decision support and genetic counseling.",
+        learningObjectives: [
+          "Explain how tumor profiling and targeted therapies differ from traditional chemotherapy",
+          "Identify the key pharmacogenomic gene-drug pairs relevant to primary care prescribing",
+          "Describe how whole-exome sequencing is shortening the diagnostic odyssey for rare disease patients",
+          "Explain the role of genetic counselors in pre-test and post-test communication",
+          "Recognize how newborn screening programs represent population-level precision medicine",
+          "Understand liquid biopsy as a tool for cancer monitoring and treatment response",
+        ],
+      },
+      {
+        slug: "precision-medicine-m6-equity",
+        title:
+          "The Diversity Deficit: Why Precision Medicine Must Work for Everyone",
+        estimatedMinutes: 40,
+        level: "Advanced",
+        summary:
+          "Precision medicine's promise is undermined by a fundamental problem: the genomic databases that power it are built overwhelmingly from people of European ancestry. This is not just an ethical concern — it is a scientific validity problem that produces less accurate polygenic risk scores, higher rates of ambiguous genetic findings, and systematically worse care for non-European patients.",
+        learningObjectives: [
+          "Explain why the lack of diversity in genomic databases is a scientific validity problem, not just an ethical concern",
+          "Describe how polygenic risk scores perform differently across ancestry groups and why this matters clinically",
+          "Identify the historical events that created legitimate distrust of genomic research among marginalized communities",
+          "Explain the principles of indigenous data sovereignty and the CARE principles",
+          "Describe what the NIH All of Us program is attempting to accomplish and its key design choices",
+          "Identify the economic, geographic, and structural barriers that limit precision medicine access for Vermont's underserved populations",
+        ],
+      },
+    ],
+  },
+
+  // ── TRACK 3: Health Equity in Practice ──────────────────────────────────────
+  {
+    id: "health-equity-track",
+    title: "Health Equity in Practice",
+    subtitle:
+      "From defining equity and mapping social determinants to building clinical SDOH integration programs, designing equitable VBC systems, and measuring organizational accountability — a rigorous, actionable curriculum.",
+    icon: "⚖️",
+    badge: "Foundational → Advanced",
+    badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-300",
+    targetAudience: [
+      "Population health managers and care coordinators",
+      "Community health workers and social service navigators",
+      "Health system equity officers and DEI leaders",
+      "Clinicians integrating SDOH into care workflows",
+    ],
+    totalMinutes: 205,
+    modules: [
+      {
+        slug: "defining-health-equity-concepts-frameworks-measurement",
+        title:
+          "Defining Health Equity: Concepts, Frameworks, and Measurement",
+        estimatedMinutes: 35,
+        level: "Foundational",
+        summary:
+          "Health equity is both a moral imperative and an operational challenge for healthcare organizations. This module establishes the conceptual foundations — distinguishing equality from equity, mapping the social determinants of health, and connecting theory to measurement frameworks used by CMS, NCQA, and leading health systems.",
+        learningObjectives: [
+          "Distinguish between health equality, equity, and justice as policy frameworks",
+          "Identify the primary social determinants of health and their relative contribution to population health outcomes",
+          "Apply the Robert Wood Johnson Foundation's County Health Rankings model to local data",
+          "Evaluate how CMS and NCQA measure health equity in value-based care programs",
+        ],
+      },
+      {
+        slug: "social-determinants-of-health-clinical-integration",
+        title:
+          "Social Determinants of Health: Clinical Integration and Community Partnerships",
+        estimatedMinutes: 40,
+        level: "Intermediate",
+        summary:
+          "This module moves from theory to implementation: how health systems screen for social needs, build closed-loop referral pathways, partner with community-based organizations, and measure the impact of social intervention on health outcomes.",
+        learningObjectives: [
+          "Implement an SDOH screening protocol using validated instruments (PRAPARE, AHC-HRSN)",
+          "Design closed-loop referral processes connecting clinical SDOH identification to community resources",
+          "Evaluate community benefit investment decisions using a health equity lens",
+          "Build a community health worker program integrated with clinical care teams",
+        ],
+      },
+      {
+        slug: "vbc-equity-m6",
+        title:
+          "Who Gets Left Behind: Health Equity, Social Determinants, and Building a VBC System That Works for Everyone",
+        estimatedMinutes: 45,
+        level: "Intermediate",
+        summary:
+          "VBC was designed, in part, as a health equity intervention. But the research tells a more complicated story. This module examines where VBC has advanced health equity, where it has undermined it, and what specific design choices in risk adjustment, community health worker programs, panel selection, and rural policy are required to build a VBC system that actually works for everyone.",
+        learningObjectives: [
+          "Define health disparities and social determinants of health using current data",
+          "Explain three structural equity flaws in how most VBC programs are currently designed",
+          "Describe how SDOH risk adjustment works and why the current CMS approach is considered insufficient",
+          "Explain the evidence base for community health workers and the reimbursement barriers they face",
+          "Identify Vermont-specific equity challenges including rural, refugee, and indigenous populations",
+          "Describe what equity-centered VBC design requires beyond good intentions",
+        ],
+      },
+      {
+        slug: "precision-medicine-m6-equity",
+        title:
+          "The Diversity Deficit: Why Precision Medicine Must Work for Everyone",
+        estimatedMinutes: 40,
+        level: "Advanced",
+        summary:
+          "The genomic databases that power precision medicine are built overwhelmingly from people of European ancestry — a scientific validity problem that produces less accurate risk scores and systematically worse care for non-European patients. This module examines the structural causes of genomic inequity, the historical trauma that makes diverse research participation difficult, and what equitable precision medicine actually requires.",
+        learningObjectives: [
+          "Explain why the lack of diversity in genomic databases is a scientific validity problem, not just an ethical concern",
+          "Describe how polygenic risk scores perform differently across ancestry groups and why this matters clinically",
+          "Identify the historical events that created legitimate distrust of genomic research among marginalized communities",
+          "Explain the principles of indigenous data sovereignty and the CARE principles",
+          "Describe what the NIH All of Us program is attempting to accomplish and its key design choices",
+          "Identify the economic, geographic, and structural barriers that limit precision medicine access for Vermont's underserved populations",
+        ],
+      },
+      {
+        slug: "building-health-equity-programs-roi-measurement",
+        title:
+          "Building Health Equity Programs: ROI, Accountability, and Organizational Change",
+        estimatedMinutes: 45,
+        level: "Advanced",
+        summary:
+          "This advanced module addresses the organizational challenge of building durable health equity programs — making the financial case, establishing accountability structures, measuring disparities rigorously, and managing the institutional dynamics of equity-focused change.",
+        learningObjectives: [
+          "Develop a health equity program business case using total cost of care and quality improvement methodology",
+          "Design governance structures that sustain organizational accountability for equity outcomes",
+          "Apply disparity measurement techniques to identify priority populations and gaps",
+          "Navigate the political and cultural dynamics of health equity program implementation",
         ],
       },
     ],
