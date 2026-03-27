@@ -15,7 +15,7 @@
  *  • Multiple saved paths — create, continue, or archive
  */
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import {
   SparklesIcon,
   ChevronRightIcon,
@@ -35,6 +35,9 @@ import {
   ChatBubbleLeftRightIcon,
   QuestionMarkCircleIcon,
   XMarkIcon,
+  PlayIcon,
+  PauseIcon,
+  SpeakerWaveIcon,
 } from "@heroicons/react/24/outline";
 import { CheckCircleIcon as CheckCircleSolid } from "@heroicons/react/24/solid";
 
@@ -761,6 +764,165 @@ function resolveAcademyLink(
   return { href: link, label: "Explore Related Content in HTR Academy" };
 }
 
+// ─── Audio Player ─────────────────────────────────────────────────────────────
+// Uses Web Audio API (decodeAudioData on raw ArrayBuffer) — avoids all
+// URL safety / blob: / data: restrictions that affect HTMLMediaElement in
+// Next.js Turbopack dev and certain CSP environments.
+
+type AudioStatus = "idle" | "loading" | "playing" | "paused" | "error";
+
+function AudioPlayer({ text }: { text: string }) {
+  const [status,   setStatus]   = useState<AudioStatus>("idle");
+  const [progress, setProgress] = useState(0);
+
+  const ctxRef     = useRef<AudioContext | null>(null);
+  const bufRef     = useRef<AudioBuffer | null>(null);
+  const srcRef     = useRef<AudioBufferSourceNode | null>(null);
+  const startRef   = useRef(0);   // ctx.currentTime when current segment started
+  const offsetRef  = useRef(0);   // seconds into buffer where we're playing from
+  const endedRef   = useRef(false); // true when we stopped manually (not natural end)
+  const rafRef     = useRef(0);
+
+  useEffect(() => {
+    return () => {
+      cancelAnimationFrame(rafRef.current);
+      endedRef.current = true;
+      try { srcRef.current?.stop(); } catch {}
+      ctxRef.current?.close();
+    };
+  }, []);
+
+  const tick = useCallback(() => {
+    if (!ctxRef.current || !bufRef.current) return;
+    const elapsed = ctxRef.current.currentTime - startRef.current + offsetRef.current;
+    setProgress(Math.min((elapsed / bufRef.current.duration) * 100, 100));
+    rafRef.current = requestAnimationFrame(tick);
+  }, []);
+
+  const playFrom = useCallback((offset: number) => {
+    const ctx = ctxRef.current!;
+    const buf = bufRef.current!;
+    endedRef.current = false;
+
+    const src = ctx.createBufferSource();
+    src.buffer = buf;
+    src.connect(ctx.destination);
+    src.onended = () => {
+      if (!endedRef.current) {
+        cancelAnimationFrame(rafRef.current);
+        setStatus("idle");
+        setProgress(0);
+        offsetRef.current = 0;
+      }
+    };
+    src.start(0, offset);
+    srcRef.current  = src;
+    startRef.current  = ctx.currentTime;
+    offsetRef.current = offset;
+    rafRef.current = requestAnimationFrame(tick);
+  }, [tick]);
+
+  const handleClick = async () => {
+    if (status === "playing") {
+      endedRef.current = true;
+      cancelAnimationFrame(rafRef.current);
+      offsetRef.current = ctxRef.current!.currentTime - startRef.current + offsetRef.current;
+      try { srcRef.current?.stop(); } catch {}
+      setStatus("paused");
+      return;
+    }
+    if (status === "paused") {
+      playFrom(offsetRef.current);
+      setStatus("playing");
+      return;
+    }
+
+    // idle — fetch from OpenAI TTS then decode
+    setStatus("loading");
+    try {
+      const res = await fetch("/api/personalized-learning/audio", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: "Bearer dev" },
+        body: JSON.stringify({ text, voice: "nova" }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+      const arrayBuffer = await res.arrayBuffer();
+      const ctx = new AudioContext();
+      ctxRef.current = ctx;
+      bufRef.current = await ctx.decodeAudioData(arrayBuffer);
+      offsetRef.current = 0;
+      playFrom(0);
+      setStatus("playing");
+    } catch (err) {
+      console.error("[AudioPlayer]", err);
+      setStatus("error");
+    }
+  };
+
+  const handleStop = () => {
+    endedRef.current = true;
+    cancelAnimationFrame(rafRef.current);
+    try { srcRef.current?.stop(); } catch {}
+    setStatus("idle");
+    setProgress(0);
+    offsetRef.current = 0;
+  };
+
+  if (status === "error") {
+    return (
+      <div className="flex items-center gap-2 text-xs text-red-500 py-1">
+        <SpeakerWaveIcon className="w-3.5 h-3.5" />
+        Audio unavailable
+      </div>
+    );
+  }
+
+  const isPlaying = status === "playing";
+  const isLoading = status === "loading";
+
+  return (
+    <div className="flex items-center gap-3 px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl">
+      <button
+        onClick={handleClick}
+        disabled={isLoading}
+        className="shrink-0 w-8 h-8 flex items-center justify-center bg-indigo-600 text-white rounded-full hover:bg-indigo-700 disabled:opacity-50 transition-colors"
+        title={isPlaying ? "Pause" : status === "paused" ? "Resume" : "Listen to this reading"}
+      >
+        {isLoading ? (
+          <div className="w-3.5 h-3.5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+        ) : isPlaying ? (
+          <PauseIcon className="w-3.5 h-3.5" />
+        ) : (
+          <PlayIcon className="w-3.5 h-3.5" />
+        )}
+      </button>
+      <div className="flex-1 min-w-0">
+        <div className="flex items-center justify-between mb-1.5">
+          <span className="text-[10px] font-black uppercase tracking-wider text-slate-500">
+            {isLoading ? "Generating audio…" : isPlaying ? "Now playing" : status === "paused" ? "Paused" : "Listen to this reading"}
+          </span>
+          <span className="text-[10px] text-slate-400 flex items-center gap-1">
+            <SpeakerWaveIcon className="w-3 h-3" />
+            AI Voice · Nova
+          </span>
+        </div>
+        <div className="h-1 bg-slate-200 rounded-full overflow-hidden">
+          <div
+            className="h-full bg-indigo-500 rounded-full transition-all duration-150"
+            style={{ width: `${progress}%` }}
+          />
+        </div>
+      </div>
+      {(isPlaying || status === "paused") && (
+        <button onClick={handleStop} className="shrink-0 text-slate-400 hover:text-red-500 transition-colors" title="Stop">
+          <XMarkIcon className="w-4 h-4" />
+        </button>
+      )}
+    </div>
+  );
+}
+
 // ─── Path Item Card ────────────────────────────────────────────────────────────
 
 function PathItemCard({
@@ -835,6 +997,11 @@ function PathItemCard({
         <div className="border-t border-slate-100 px-5 py-5 space-y-5">
           {/* Description */}
           <p className="text-sm text-slate-600 leading-relaxed">{item.description}</p>
+
+          {/* Audio player — available on reading and case study items */}
+          {item.content && (item.type === "reading" || item.type === "case_study") && (
+            <AudioPlayer text={item.content} />
+          )}
 
           {/* Main content */}
           {item.content && (

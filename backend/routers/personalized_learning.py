@@ -16,9 +16,10 @@ import httpx
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, field_validator
 
+from fastapi.responses import Response as FastAPIResponse
 from services.auth import AuthedUser, require_subscriber
 from config import (
-    GROQ_API_KEY, MODEL_SUBSCRIBER,
+    GROQ_API_KEY, MODEL_SUBSCRIBER, OPENAI_API_KEY,
     SANITY_PROJECT_ID, SANITY_DATASET, SANITY_API_TOKEN, SANITY_API_VER,
 )
 from llama_index.llms.groq import Groq as GroqLLM
@@ -586,3 +587,56 @@ async def generate_learning_path(
     except Exception as e:
         log.error(f"Learning path generation error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+
+# ── Text-to-Speech ──────────────────────────────────────────────────────────────
+
+_ALLOWED_VOICES = {"alloy", "echo", "fable", "onyx", "nova", "shimmer"}
+
+class TTSRequest(BaseModel):
+    text: str
+    voice: str = "nova"
+
+    @field_validator("text")
+    @classmethod
+    def truncate_text(cls, v: str) -> str:
+        return v.strip()[:4096]
+
+    @field_validator("voice")
+    @classmethod
+    def validate_voice(cls, v: str) -> str:
+        return v if v in _ALLOWED_VOICES else "nova"
+
+
+@router.post("/api/personalized-learning/tts")
+async def text_to_speech(
+    body: TTSRequest,
+    _user: AuthedUser = Depends(require_subscriber),
+):
+    """
+    Convert learning item text to speech using OpenAI TTS.
+    Returns raw MP3 audio bytes. Subscriber-gated.
+    """
+    if not OPENAI_API_KEY:
+        raise HTTPException(503, "TTS not configured — OPENAI_API_KEY missing")
+
+    async with httpx.AsyncClient(timeout=30.0) as client:
+        resp = await client.post(
+            "https://api.openai.com/v1/audio/speech",
+            headers={
+                "Authorization": f"Bearer {OPENAI_API_KEY}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": "tts-1-hd",
+                "input": body.text,
+                "voice": body.voice,
+                "response_format": "mp3",
+            },
+        )
+
+    if resp.status_code != 200:
+        log.error(f"OpenAI TTS error {resp.status_code}: {resp.text[:200]}")
+        raise HTTPException(500, "TTS generation failed")
+
+    return FastAPIResponse(content=resp.content, media_type="audio/mpeg")
