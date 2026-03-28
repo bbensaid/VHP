@@ -1,7 +1,7 @@
 // frontend/components/HomeSidebar.tsx
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -21,11 +21,8 @@ import {
   SparklesIcon,
   TableCellsIcon,
   BookmarkIcon,
+  ChevronDownIcon,
 } from "@heroicons/react/24/outline";
-
-const L2_WIDTH = 240;
-const L3_WIDTH = 220;
-const PANEL_GAP = 6;
 
 interface HomeSidebarProps {
   onNavigate?: () => void;
@@ -173,104 +170,208 @@ const SECTIONS: Section[] = [
   },
 ];
 
+// ─── ROUTE → SECTION/PILLAR HELPERS ──────────────────────────────────────────
+function getSectionForPath(path: string): string | null {
+  const intelligencePrefixes = ["/policy", "/economics", "/technology", "/clinical", "/equity"];
+  if (intelligencePrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "intelligence";
+  if (path === "/academy" || path.startsWith("/academy/")) return "learn";
+  const analyzePrefixes = ["/research-lab", "/htr-simulator", "/hti-dashboard", "/multimedia", "/trending-topics"];
+  if (analyzePrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "analyze";
+  const statesPrefixes = ["/vermont-act-167", "/california-calaim", "/states", "/dashboard", "/ahead-model"];
+  if (statesPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "states";
+  const advisoryPrefixes = ["/advisory", "/connect-hub", "/community"];
+  if (advisoryPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "advisory";
+  return null;
+}
+
+function getPillarForPath(path: string): string | null {
+  if (path === "/policy" || path.startsWith("/policy/")) return "policy";
+  if (path === "/economics" || path.startsWith("/economics/")) return "economics";
+  if (path === "/technology" || path.startsWith("/technology/")) return "technology";
+  if (path === "/clinical" || path.startsWith("/clinical/")) return "clinical";
+  if (path === "/equity" || path.startsWith("/equity/")) return "equity";
+  return null;
+}
+
 // ─── COMPONENT ────────────────────────────────────────────────────────────────
 export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
   const pathname = usePathname();
-  const sidebarRef = useRef<HTMLDivElement>(null);
 
-  const [activeSection, setActiveSection] = useState<string | null>(null);
-  const [activePillar, setActivePillar] = useState<string | null>(null);
-  const [sidebarRight, setSidebarRight] = useState(296);
-  const [l2Top, setL2Top] = useState(0);
-  const [l3Top, setL3Top] = useState(0);
+  // Arrays of open IDs — multiple sections and pillars can be open at once.
+  const [expandedSections, setExpandedSections] = useState<string[]>(() => {
+    const s = getSectionForPath(pathname);
+    return s ? [s] : [];
+  });
+  const [expandedPillars, setExpandedPillars] = useState<string[]>(() => {
+    const p = getPillarForPath(pathname);
+    return p ? [p] : [];
+  });
 
-  const isActive = (href: string) =>
-    pathname === href || pathname.startsWith(href + "/");
+  // Exact match only — never color a parent route just because a child is active
+  const isActive = (href: string) => pathname === href;
 
-  // Close on route change
+  // On route change: ADD the new section/pillar if not already present.
+  // Never remove — the user controls collapse manually by clicking again.
   useEffect(() => {
-    setActiveSection(null);
-    setActivePillar(null);
+    const section = getSectionForPath(pathname);
+    const pillar = getPillarForPath(pathname);
+    if (section) setExpandedSections((prev) => prev.includes(section) ? prev : [...prev, section]);
+    if (pillar)  setExpandedPillars((prev)  => prev.includes(pillar)  ? prev : [...prev, pillar]);
   }, [pathname]);
 
-  // Measure sidebar right edge dynamically (accounts for sticky/fixed positioning)
-  useEffect(() => {
-    const measure = () => {
-      if (sidebarRef.current) {
-        const rect = sidebarRef.current.getBoundingClientRect();
-        // +16 compensates for CollapsibleSidebar's px-4 right padding
-        setSidebarRight(rect.right + 16);
-      }
-    };
-    measure();
-    window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
-  }, []);
-
-  // Close panels when clicking outside HomeSidebar's DOM tree
-  useEffect(() => {
-    if (!activeSection) return;
-    const handler = (e: MouseEvent) => {
-      if (!sidebarRef.current?.contains(e.target as Node)) {
-        setActiveSection(null);
-        setActivePillar(null);
-      }
-    };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, [activeSection]);
-
-  const close = () => {
-    setActiveSection(null);
-    setActivePillar(null);
+  // ── Click handlers — toggle one ID without touching the others ────────────
+  const handleSectionClick = (sectionId: string) => {
+    setExpandedSections((prev) =>
+      prev.includes(sectionId) ? prev.filter((id) => id !== sectionId) : [...prev, sectionId]
+    );
   };
 
-  const handleSectionClick = (sectionId: string, e: React.MouseEvent) => {
-    if (activeSection === sectionId) { close(); return; }
-    const top = (e.currentTarget as HTMLElement).getBoundingClientRect().top;
-    setL2Top(top);
-    setActiveSection(sectionId);
-    setActivePillar(null);
+  const handlePillarClick = (pillarId: string) => {
+    setExpandedPillars((prev) =>
+      prev.includes(pillarId) ? prev.filter((id) => id !== pillarId) : [...prev, pillarId]
+    );
   };
-
-  const handlePillarClick = (pillarId: string, e: React.MouseEvent) => {
-    if (activePillar === pillarId) { setActivePillar(null); return; }
-    const top = (e.currentTarget as HTMLElement).getBoundingClientRect().top;
-    setL3Top(top);
-    setActivePillar(pillarId);
-  };
-
-  const activeSectionData = SECTIONS.find(s => s.id === activeSection);
-  const activePillarData = pillars.find(p => p.id === activePillar);
 
   return (
-    <div ref={sidebarRef} className="pt-2">
+    <div className="pt-2">
 
       {/* ── L1: Section list ─────────────────────────────────────────── */}
       <div className="space-y-1.5">
         {SECTIONS.map((section) => {
-          const isOpen = activeSection === section.id;
+          const isOpen = expandedSections.includes(section.id);
+          const sectionData = section;
+
           return (
-            <button
-              key={section.id}
-              onClick={(e) => handleSectionClick(section.id, e)}
-              className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 border-l-4 ${section.borderAccent} transition-colors text-left ${
-                isOpen ? section.headerBg : `bg-white ${section.hoverBg}`
-              }`}
-            >
-              <span className={`text-[10px] font-black uppercase tracking-[0.15em] ${section.headerColor}`}>
-                {section.label}
-              </span>
-              <ChevronRightIcon
-                className={`w-3 h-3 transition-transform duration-150 ${
-                  isOpen ? `${section.headerColor} rotate-90` : "text-slate-400"
-                }`}
-              />
-            </button>
+            <div key={section.id}>
+              {/* L1 button */}
+              <button
+                onClick={() => handleSectionClick(section.id)}
+                className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 border-l-4 ${sectionData.borderAccent} transition-colors text-left ${isOpen ? sectionData.headerBg : `bg-white ${sectionData.hoverBg}`}`}
+              >
+                <span className={`text-[10px] font-black uppercase tracking-[0.15em] ${sectionData.headerColor}`}>
+                  {section.label}
+                </span>
+                <ChevronDownIcon
+                  className={`w-3 h-3 transition-transform duration-200 ${
+                    isOpen ? `${sectionData.headerColor} rotate-0` : "text-slate-400 -rotate-90"
+                  }`}
+                />
+              </button>
+
+              {/* L2 accordion — expands inline, pushes siblings down */}
+              {isOpen && (
+                <div className="mt-1 rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+
+                  {/* ── INTELLIGENCE: pillar list ─────────────────────── */}
+                  {sectionData.isPillars && (
+                    <div className="divide-y divide-slate-100">
+                      {pillars.map((pillar) => {
+                        const pillarOpen = expandedPillars.includes(pillar.id);
+                        return (
+                          <div key={pillar.id}>
+                            {/* Pillar row */}
+                            <button
+                              onClick={() => handlePillarClick(pillar.id)}
+                              className="w-full flex items-center justify-between px-3 py-2.5 transition-colors text-left bg-white hover:bg-slate-50"
+                            >
+                              <div className="flex items-center gap-2.5">
+                                <span className={`w-2 h-2 rounded-full shrink-0 ${pillar.dot}`} />
+                                <span className={`text-sm font-bold ${pillar.accent}`}>
+                                  {pillar.label}
+                                </span>
+                              </div>
+                              <ChevronDownIcon
+                                className={`w-3 h-3 shrink-0 transition-transform duration-200 ${
+                                  pillarOpen ? `${pillar.accent} rotate-0` : "text-slate-300 -rotate-90"
+                                }`}
+                              />
+                            </button>
+
+                            {/* L3 accordion — pillar sub-items */}
+                            {pillarOpen && (
+                              <div className="border-t border-slate-100 bg-slate-50/60">
+                                {/* Pillar overview link */}
+                                <Link
+                                  href={pillar.href}
+                                  onClick={onNavigate}
+                                  className={`flex items-center gap-2.5 px-4 py-2 border-b border-slate-100 group ${
+                                    isActive(pillar.href) ? "bg-slate-100" : "hover:bg-slate-100"
+                                  }`}
+                                >
+                                  <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${pillar.dot}`} />
+                                  <span className={`text-[10px] font-black uppercase tracking-[0.15em] ${pillar.accent} group-hover:underline`}>
+                                    {pillar.label} Overview
+                                  </span>
+                                </Link>
+                                {/* Sub-items */}
+                                <div className="divide-y divide-slate-100">
+                                  {pillar.items.map((item) => (
+                                    <Link
+                                      key={item.href}
+                                      href={item.href}
+                                      onClick={onNavigate}
+                                      className={`flex items-center gap-2.5 px-5 py-2.5 transition-colors group ${
+                                        isActive(item.href) ? "bg-slate-100" : "hover:bg-slate-100"
+                                      }`}
+                                    >
+                                      <ChevronRightIcon className="w-3 h-3 text-slate-300 shrink-0" />
+                                      <span className={`text-sm font-bold leading-tight group-hover:text-slate-900 ${
+                                        isActive(item.href) ? "text-slate-900" : "text-slate-700"
+                                      }`}>
+                                        {item.label}
+                                      </span>
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+
+                  {/* ── ALL OTHER SECTIONS: flat item list ───────────── */}
+                  {!sectionData.isPillars && sectionData.items && (
+                    <div className={`divide-y ${sectionData.divideColor}`}>
+                      {sectionData.items.map((item) => {
+                        const Icon = item.icon;
+                        return (
+                          <Link
+                            key={`${item.href}-${item.label}`}
+                            href={item.href}
+                            onClick={onNavigate}
+                            className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
+                              isActive(item.href)
+                                ? sectionData.activeItemBg
+                                : `bg-white ${sectionData.hoverBg}`
+                            }`}
+                          >
+                            {Icon && (
+                              <Icon className={`w-4 h-4 shrink-0 ${sectionData.headerColor}`} />
+                            )}
+                            <div className="min-w-0">
+                              <span className={`text-sm font-bold block leading-tight group-hover:text-slate-900 ${
+                                isActive(item.href) ? "text-slate-900" : "text-slate-700"
+                              }`}>
+                                {item.label}
+                              </span>
+                              {item.desc && (
+                                <span className="text-[10px] text-slate-400">{item.desc}</span>
+                              )}
+                            </div>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
           );
         })}
 
-        {/* My Library — direct link, no flyout */}
+        {/* My Library — direct link, no sub-items */}
         <Link
           href="/saved"
           onClick={onNavigate}
@@ -284,127 +385,6 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
           <BookmarkIcon className="w-3.5 h-3.5 text-slate-400" />
         </Link>
       </div>
-
-      {/* ── L2: Flyout panel ─────────────────────────────────────────── */}
-      {activeSection && activeSectionData && (
-        <div
-          className="fixed z-50 bg-white border border-slate-200 shadow-2xl rounded-xl overflow-hidden"
-          style={{
-            left: sidebarRight + PANEL_GAP,
-            top: l2Top,
-            width: L2_WIDTH,
-            maxHeight: `calc(100vh - ${l2Top}px - 16px)`,
-            overflowY: "auto",
-          }}
-        >
-          {/* Panel header */}
-          <div className={`px-3 py-2 border-b border-slate-100 ${activeSectionData.headerBg} sticky top-0`}>
-            <span className={`text-[10px] font-black uppercase tracking-[0.15em] ${activeSectionData.headerColor}`}>
-              {activeSectionData.label}
-            </span>
-          </div>
-
-          {/* INTELLIGENCE — pillar list with right-chevron for L3 */}
-          {activeSectionData.isPillars && (
-            <div className="divide-y divide-slate-100">
-              {pillars.map((pillar) => (
-                <button
-                  key={pillar.id}
-                  onClick={(e) => handlePillarClick(pillar.id, e)}
-                  className={`w-full flex items-center justify-between px-3 py-2.5 transition-colors text-left ${
-                    activePillar === pillar.id ? "bg-slate-50" : "hover:bg-slate-50"
-                  }`}
-                >
-                  <div className="flex items-center gap-2.5">
-                    <span className={`w-2 h-2 rounded-full shrink-0 ${pillar.dot}`} />
-                    <span className="text-sm font-bold text-slate-700">{pillar.label}</span>
-                  </div>
-                  <ChevronRightIcon
-                    className={`w-3 h-3 shrink-0 transition-colors ${
-                      activePillar === pillar.id ? pillar.accent : "text-slate-300"
-                    }`}
-                  />
-                </button>
-              ))}
-            </div>
-          )}
-
-          {/* All other sections — flat item list */}
-          {!activeSectionData.isPillars && activeSectionData.items && (
-            <div className={`divide-y ${activeSectionData.divideColor}`}>
-              {activeSectionData.items.map((item) => {
-                const Icon = item.icon;
-                return (
-                  <Link
-                    key={`${item.href}-${item.label}`}
-                    href={item.href}
-                    onClick={() => { close(); onNavigate?.(); }}
-                    className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                      isActive(item.href)
-                        ? activeSectionData.activeItemBg
-                        : `bg-white ${activeSectionData.hoverBg}`
-                    }`}
-                  >
-                    {Icon && (
-                      <Icon className={`w-4 h-4 shrink-0 ${activeSectionData.headerColor}`} />
-                    )}
-                    <div className="min-w-0">
-                      <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 block leading-tight">
-                        {item.label}
-                      </span>
-                      {item.desc && (
-                        <span className="text-[10px] text-slate-400">{item.desc}</span>
-                      )}
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* ── L3: Pillar sub-items flyout (INTELLIGENCE only) ──────────── */}
-      {activePillarData && (
-        <div
-          className="fixed z-50 bg-white border border-slate-200 shadow-2xl rounded-xl overflow-hidden"
-          style={{
-            left: sidebarRight + PANEL_GAP + L2_WIDTH + PANEL_GAP,
-            top: l3Top,
-            width: L3_WIDTH,
-            maxHeight: `calc(100vh - ${l3Top}px - 16px)`,
-          }}
-        >
-          {/* Header links to pillar overview page */}
-          <Link
-            href={activePillarData.href}
-            onClick={() => { close(); onNavigate?.(); }}
-            className="flex items-center gap-2.5 px-3 py-2.5 border-b border-slate-100 bg-slate-50 group"
-          >
-            <span className={`w-2 h-2 rounded-full shrink-0 ${activePillarData.dot}`} />
-            <span className={`text-[10px] font-black uppercase tracking-[0.15em] ${activePillarData.accent} group-hover:underline`}>
-              {activePillarData.label} Overview
-            </span>
-          </Link>
-          <div className="divide-y divide-slate-100">
-            {activePillarData.items.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => { close(); onNavigate?.(); }}
-                className={`flex items-center gap-2.5 px-3 py-2.5 transition-colors group ${
-                  isActive(item.href) ? "bg-slate-50" : "hover:bg-slate-50"
-                }`}
-              >
-                <ChevronRightIcon className="w-3 h-3 text-slate-300 shrink-0" />
-                <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 leading-tight">
-                  {item.label}
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
     </div>
   );
 }

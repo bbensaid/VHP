@@ -17,22 +17,12 @@ export default async function ResearchLabPage() {
     <div className="min-h-screen bg-slate-50">
       {!isSubscriber && (
         <div className="max-w-6xl mx-auto px-6 pt-8">
-          <UpgradePrompt
-            inline
-            title="Unlock the full Research Lab"
-            description="Subscribe to access all 19 interactive analytical tools — FHIR labs, Monte Carlo models, policy simulators, and more."
-            from="/research-lab"
-          />
+          <UpgradePrompt required="subscriber" feature="Research Lab" />
         </div>
       )}
       {isSubscriber && !isAdvisory && (
         <div className="max-w-6xl mx-auto px-6 pt-8">
-          <UpgradePrompt
-            inline
-            title="Upgrade to Advisory for dedicated expert support"
-            description="Advisory members get 1-on-1 analyst sessions, custom model runs, and priority access to new research tools."
-            from="/research-lab"
-          />
+          <UpgradePrompt required="advisory" feature="Research Lab Expert Support" />
         </div>
       )}
 
