@@ -67,6 +67,34 @@ export default function Page() {
         ))}
       </div>
 
+      {/* ── RELATED TOOLS & DATA ─────────────────────────────────── */}
+      <div className="mt-16 mb-12">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="h-px flex-1 bg-slate-200" />
+          <span className="text-[11px] font-black uppercase tracking-widest text-slate-400 whitespace-nowrap">
+            Tools &amp; Data for Policy
+          </span>
+          <div className="h-px flex-1 bg-slate-200" />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            { href: "/research-lab/policy-quality", emoji: "🧪", title: "Policy Quality Lab", desc: "Interactive policy impact models & feasibility analysis tools" },
+            { href: "/htr-simulator", emoji: "⚙️", title: "HTR Simulator", desc: "Score policy alignment in your transformation scenario" },
+            { href: "/vermont-act-167", emoji: "📋", title: "Vermont Act 167", desc: "Live case study: hospital transformation legislation in action" },
+            { href: "/california-calaim", emoji: "🌎", title: "California CalAIM", desc: "Policy-driven $6.7B Medi-Cal transformation analysis" },
+          ].map((tool) => (
+            <Link key={tool.href} href={tool.href} className="group flex flex-col gap-2 p-4 rounded-xl border-2 border-sky-100 hover:border-sky-300 hover:bg-sky-50 transition-all">
+              <div className="flex items-center gap-2">
+                <span className="text-xl leading-none">{tool.emoji}</span>
+                <span className="text-sm font-bold text-slate-800 group-hover:text-sky-700 leading-tight">{tool.title}</span>
+              </div>
+              <p className="text-xs text-slate-500 leading-relaxed">{tool.desc}</p>
+              <span className="text-xs font-bold text-sky-600 group-hover:text-sky-800 mt-auto">Explore →</span>
+            </Link>
+          ))}
+        </div>
+      </div>
+
       <LatestHubReports pillar="Policy" colorClass="text-sky-700" cardHoverClass="hover:border-sky-400 hover:bg-sky-50/80" titleHoverClass="group-hover:text-sky-700" />
 
       <HubSubscribeCTA

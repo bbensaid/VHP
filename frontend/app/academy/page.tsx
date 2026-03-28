@@ -26,6 +26,12 @@ export const metadata = {
 export default function AcademyHub() {
   const tabs = [
     {
+      id: "personalized",
+      label: "Personalized Learning",
+      icon: <SparklesIcon className="w-5 h-5" />,
+      content: <PersonalizedLearningHub />
+    },
+    {
       id: "tracks",
       label: "Learning Tracks",
       icon: <MapIcon className="w-5 h-5" />,
@@ -36,12 +42,6 @@ export default function AcademyHub() {
       label: "Courses",
       icon: <AcademicCapIcon className="w-5 h-5" />,
       content: <CoursesPage />
-    },
-    {
-      id: "faculty",
-      label: "Faculty",
-      icon: <UserGroupIcon className="w-5 h-5" />,
-      content: <FacultyPage />
     },
     {
       id: "webinars",
@@ -62,10 +62,10 @@ export default function AcademyHub() {
       content: <GlossaryPage />
     },
     {
-      id: "personalized",
-      label: "Personalized Learning",
-      icon: <SparklesIcon className="w-5 h-5" />,
-      content: <PersonalizedLearningHub />
+      id: "faculty",
+      label: "Faculty",
+      icon: <UserGroupIcon className="w-5 h-5" />,
+      content: <FacultyPage />
     },
   ];
 

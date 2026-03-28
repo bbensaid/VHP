@@ -67,6 +67,34 @@ export default function Page() {
         ))}
       </div>
 
+      {/* ── RELATED TOOLS & DATA ─────────────────────────────────── */}
+      <div className="mt-16 mb-12">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="h-px flex-1 bg-slate-200" />
+          <span className="text-[11px] font-black uppercase tracking-widest text-slate-400 whitespace-nowrap">
+            Tools &amp; Data for Equity
+          </span>
+          <div className="h-px flex-1 bg-slate-200" />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            { href: "/research-lab/population-equity", emoji: "⚖️", title: "Population & Equity Lab", desc: "SDOH mapping, disparity analysis & community health needs assessment tools" },
+            { href: "/htr-simulator", emoji: "⚙️", title: "HTR Simulator", desc: "Score health equity performance in your transformation scenario" },
+            { href: "/vermont-act-167", emoji: "📋", title: "Vermont Act 167", desc: "Equity provisions in hospital transformation — a live state case study" },
+            { href: "/california-calaim", emoji: "🌎", title: "California CalAIM", desc: "Whole-person care & equity-focused Medi-Cal transformation model" },
+          ].map((tool) => (
+            <Link key={tool.href} href={tool.href} className="group flex flex-col gap-2 p-4 rounded-xl border-2 border-orange-100 hover:border-orange-300 hover:bg-orange-50 transition-all">
+              <div className="flex items-center gap-2">
+                <span className="text-xl leading-none">{tool.emoji}</span>
+                <span className="text-sm font-bold text-slate-800 group-hover:text-orange-700 leading-tight">{tool.title}</span>
+              </div>
+              <p className="text-xs text-slate-500 leading-relaxed">{tool.desc}</p>
+              <span className="text-xs font-bold text-orange-600 group-hover:text-orange-800 mt-auto">Explore →</span>
+            </Link>
+          ))}
+        </div>
+      </div>
+
       <LatestHubReports pillar="Equity" colorClass="text-orange-600" cardHoverClass="hover:border-orange-400 hover:bg-orange-50/80" titleHoverClass="group-hover:text-orange-600" />
 
       <HubSubscribeCTA
