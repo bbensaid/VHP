@@ -2,15 +2,12 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   AcademicCapIcon,
   BriefcaseIcon,
   UsersIcon,
-  ChevronUpIcon,
-  ChevronDownIcon,
   ChevronRightIcon,
   FilmIcon,
   ArrowTrendingUpIcon,
@@ -23,24 +20,22 @@ import {
   DocumentTextIcon,
   SparklesIcon,
   TableCellsIcon,
+  BookmarkIcon,
 } from "@heroicons/react/24/outline";
+
+const L2_WIDTH = 240;
+const L3_WIDTH = 220;
+const PANEL_GAP = 6;
 
 interface HomeSidebarProps {
   onNavigate?: () => void;
 }
 
-const pillarData = [
+// ─── INTELLIGENCE PILLARS ─────────────────────────────────────────────────────
+const pillars = [
   {
-    id: "policy",
-    label: "Policy",
-    href: "/policy",
-    dot: "bg-sky-500",
-    activeText: "text-sky-700",
-    activeBg: "bg-sky-50",
-    hoverBg: "hover:bg-sky-50",
-    subHover: "hover:bg-sky-50 hover:text-sky-800",
-    activeSubBg: "bg-sky-50",
-    activeSubText: "text-sky-700 font-bold",
+    id: "policy", label: "Policy", href: "/policy",
+    dot: "bg-sky-500", accent: "text-sky-700",
     items: [
       { href: "/policy/regulation", label: "Regulation & Legislation" },
       { href: "/policy/mandates", label: "Public Health Mandates" },
@@ -49,16 +44,8 @@ const pillarData = [
     ],
   },
   {
-    id: "economics",
-    label: "Economics",
-    href: "/economics",
-    dot: "bg-emerald-500",
-    activeText: "text-emerald-700",
-    activeBg: "bg-emerald-50",
-    hoverBg: "hover:bg-emerald-50",
-    subHover: "hover:bg-emerald-50 hover:text-emerald-800",
-    activeSubBg: "bg-emerald-50",
-    activeSubText: "text-emerald-700 font-bold",
+    id: "economics", label: "Economics", href: "/economics",
+    dot: "bg-emerald-500", accent: "text-emerald-700",
     items: [
       { href: "/economics/value", label: "Value-Based Care Models" },
       { href: "/economics/market", label: "Market & Finance" },
@@ -67,16 +54,8 @@ const pillarData = [
     ],
   },
   {
-    id: "technology",
-    label: "Technology",
-    href: "/technology",
-    dot: "bg-indigo-500",
-    activeText: "text-indigo-700",
-    activeBg: "bg-indigo-50",
-    hoverBg: "hover:bg-indigo-50",
-    subHover: "hover:bg-indigo-50 hover:text-indigo-800",
-    activeSubBg: "bg-indigo-50",
-    activeSubText: "text-indigo-700 font-bold",
+    id: "technology", label: "Technology", href: "/technology",
+    dot: "bg-indigo-500", accent: "text-indigo-700",
     items: [
       { href: "/technology/ai", label: "AI & Machine Learning" },
       { href: "/technology/digital", label: "Digital Health & Telemedicine" },
@@ -85,16 +64,8 @@ const pillarData = [
     ],
   },
   {
-    id: "clinical",
-    label: "Clinical",
-    href: "/clinical",
-    dot: "bg-red-500",
-    activeText: "text-red-700",
-    activeBg: "bg-red-50",
-    hoverBg: "hover:bg-red-50",
-    subHover: "hover:bg-red-50 hover:text-red-800",
-    activeSubBg: "bg-red-50",
-    activeSubText: "text-red-700 font-bold",
+    id: "clinical", label: "Clinical", href: "/clinical",
+    dot: "bg-red-500", accent: "text-red-700",
     items: [
       { href: "/clinical/hah", label: "Hospital-at-Home" },
       { href: "/clinical/precision", label: "Precision Medicine" },
@@ -102,16 +73,8 @@ const pillarData = [
     ],
   },
   {
-    id: "equity",
-    label: "Equity",
-    href: "/equity",
-    dot: "bg-amber-500",
-    activeText: "text-amber-700",
-    activeBg: "bg-amber-50",
-    hoverBg: "hover:bg-amber-50",
-    subHover: "hover:bg-amber-50 hover:text-amber-800",
-    activeSubBg: "bg-amber-50",
-    activeSubText: "text-amber-700 font-bold",
+    id: "equity", label: "Equity", href: "/equity",
+    dot: "bg-amber-500", accent: "text-amber-700",
     items: [
       { href: "/equity/sdoh", label: "SDOH Integration" },
       { href: "/equity/bias", label: "Algorithmic Bias" },
@@ -120,497 +83,328 @@ const pillarData = [
   },
 ];
 
+// ─── SECTION DATA ─────────────────────────────────────────────────────────────
+type SectionItem = {
+  href: string;
+  label: string;
+  icon?: React.ComponentType<{ className?: string }>;
+  desc?: string;
+};
+
+type Section = {
+  id: string;
+  label: string;
+  headerColor: string;
+  headerBg: string;
+  borderAccent: string;
+  hoverBg: string;
+  divideColor: string;
+  activeItemBg: string;
+  isPillars?: boolean;
+  items?: SectionItem[];
+};
+
+const SECTIONS: Section[] = [
+  {
+    id: "intelligence", label: "Intelligence",
+    headerColor: "text-slate-600", headerBg: "bg-slate-100",
+    borderAccent: "border-l-slate-500", hoverBg: "hover:bg-slate-50",
+    divideColor: "divide-slate-100", activeItemBg: "bg-slate-50",
+    isPillars: true,
+  },
+  {
+    id: "learn", label: "Learn",
+    headerColor: "text-sky-700", headerBg: "bg-sky-50",
+    borderAccent: "border-l-sky-500", hoverBg: "hover:bg-sky-50",
+    divideColor: "divide-sky-100", activeItemBg: "bg-sky-50",
+    items: [
+      { href: "/academy", label: "Academy Hub", icon: AcademicCapIcon },
+      { href: "/academy", label: "Personalized Learning", icon: SparklesIcon, desc: "AI-powered paths" },
+      { href: "/academy/tracks", label: "Learning Tracks", icon: TableCellsIcon },
+      { href: "/academy/courses", label: "Courses", icon: BookOpenIcon },
+      { href: "/academy/webinars", label: "Webinars", icon: PresentationChartLineIcon },
+      { href: "/academy/case-studies", label: "Case Studies", icon: DocumentTextIcon },
+      { href: "/academy/glossary", label: "Glossary", icon: BookOpenIcon },
+    ],
+  },
+  {
+    id: "analyze", label: "Analyze & Tools",
+    headerColor: "text-amber-700", headerBg: "bg-amber-50",
+    borderAccent: "border-l-amber-500", hoverBg: "hover:bg-amber-50",
+    divideColor: "divide-amber-100", activeItemBg: "bg-amber-50",
+    items: [
+      { href: "/research-lab", label: "Research Lab", icon: BeakerIcon, desc: "19 interactive tools" },
+      { href: "/htr-simulator", label: "HTR Simulator", icon: CpuChipIcon, desc: "5-pillar scenario modeler" },
+      { href: "/hti-dashboard", label: "HTI Dashboard", icon: DocumentTextIcon },
+      { href: "/multimedia", label: "Multimedia", icon: FilmIcon },
+      { href: "/trending-topics", label: "Trending Topics", icon: ArrowTrendingUpIcon },
+    ],
+  },
+  {
+    id: "states", label: "States & Programs",
+    headerColor: "text-rose-700", headerBg: "bg-rose-50",
+    borderAccent: "border-l-rose-500", hoverBg: "hover:bg-rose-50",
+    divideColor: "divide-rose-100", activeItemBg: "bg-rose-50",
+    items: [
+      { href: "/vermont-act-167", label: "Vermont Act 167", icon: MapPinIcon },
+      { href: "/california-calaim", label: "California CalAIM", icon: MapPinIcon },
+      { href: "/states", label: "All States Explorer", icon: GlobeAmericasIcon },
+      { href: "/dashboard", label: "50-State Dashboard", icon: TableCellsIcon, desc: "Rural Health Transformation" },
+      { href: "/ahead-model", label: "AHEAD Model", icon: DocumentTextIcon, desc: "All-payer cost of care" },
+    ],
+  },
+  {
+    id: "advisory", label: "Advisory & Services",
+    headerColor: "text-indigo-700", headerBg: "bg-indigo-50",
+    borderAccent: "border-l-indigo-500", hoverBg: "hover:bg-indigo-50",
+    divideColor: "divide-indigo-100", activeItemBg: "bg-indigo-50",
+    items: [
+      { href: "/advisory", label: "Advisory Hub", icon: BriefcaseIcon },
+      { href: "/advisory/consulting", label: "Strategic Consulting", icon: BriefcaseIcon },
+      { href: "/advisory/research", label: "Custom Research", icon: BeakerIcon },
+      { href: "/advisory/financial-audit", label: "Financial Audit", icon: DocumentTextIcon },
+      { href: "/advisory/regulatory", label: "Regulatory Counsel", icon: BookOpenIcon },
+      { href: "/advisory/it-consulting", label: "IT Consulting", icon: CpuChipIcon },
+      { href: "/advisory/training", label: "Training & Education", icon: AcademicCapIcon },
+      { href: "/advisory/independent-review", label: "Independent Review", icon: DocumentTextIcon },
+      { href: "/connect-hub", label: "Connect Hub", icon: UsersIcon },
+      { href: "/community", label: "Community", icon: UsersIcon },
+    ],
+  },
+];
+
+// ─── COMPONENT ────────────────────────────────────────────────────────────────
 export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
   const pathname = usePathname();
-  const [showBackToTop, setShowBackToTop] = useState(false);
-  const topSentinelRef = useRef<HTMLDivElement>(null);
+  const sidebarRef = useRef<HTMLDivElement>(null);
 
-  // Which pillar accordions are expanded
-  const [expandedPillars, setExpandedPillars] = useState<Set<string>>(
-    new Set<string>()
-  );
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [activePillar, setActivePillar] = useState<string | null>(null);
+  const [sidebarRight, setSidebarRight] = useState(296);
+  const [l2Top, setL2Top] = useState(0);
+  const [l3Top, setL3Top] = useState(0);
 
   const isActive = (href: string) =>
     pathname === href || pathname.startsWith(href + "/");
 
-  // Auto-expand the active pillar on route change
+  // Close on route change
   useEffect(() => {
-    const activePillar = pillarData.find((p) =>
-      pathname.startsWith(`/${p.id}`)
-    );
-    if (activePillar) {
-      setExpandedPillars((prev) => {
-        const next = new Set(prev);
-        next.add(activePillar.id);
-        return next;
-      });
-    }
+    setActiveSection(null);
+    setActivePillar(null);
   }, [pathname]);
 
+  // Measure sidebar right edge dynamically (accounts for sticky/fixed positioning)
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => setShowBackToTop(!entry.isIntersecting),
-      { threshold: 0 }
-    );
-    if (topSentinelRef.current) observer.observe(topSentinelRef.current);
-    return () => observer.disconnect();
+    const measure = () => {
+      if (sidebarRef.current) {
+        const rect = sidebarRef.current.getBoundingClientRect();
+        // +16 compensates for CollapsibleSidebar's px-4 right padding
+        setSidebarRight(rect.right + 16);
+      }
+    };
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
   }, []);
 
-  const scrollToTop = () => {
-    const scrollContainer = document.querySelector(".overflow-y-auto");
-    if (scrollContainer) {
-      scrollContainer.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+  // Close panels when clicking outside HomeSidebar's DOM tree
+  useEffect(() => {
+    if (!activeSection) return;
+    const handler = (e: MouseEvent) => {
+      if (!sidebarRef.current?.contains(e.target as Node)) {
+        setActiveSection(null);
+        setActivePillar(null);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, [activeSection]);
+
+  const close = () => {
+    setActiveSection(null);
+    setActivePillar(null);
   };
 
-  const togglePillar = (id: string) => {
-    setExpandedPillars((prev) => {
-      const next = new Set(prev);
-      if (next.has(id)) next.delete(id);
-      else next.add(id);
-      return next;
-    });
+  const handleSectionClick = (sectionId: string, e: React.MouseEvent) => {
+    if (activeSection === sectionId) { close(); return; }
+    const top = (e.currentTarget as HTMLElement).getBoundingClientRect().top;
+    setL2Top(top);
+    setActiveSection(sectionId);
+    setActivePillar(null);
   };
+
+  const handlePillarClick = (pillarId: string, e: React.MouseEvent) => {
+    if (activePillar === pillarId) { setActivePillar(null); return; }
+    const top = (e.currentTarget as HTMLElement).getBoundingClientRect().top;
+    setL3Top(top);
+    setActivePillar(pillarId);
+  };
+
+  const activeSectionData = SECTIONS.find(s => s.id === activeSection);
+  const activePillarData = pillars.find(p => p.id === activePillar);
 
   return (
-    <aside className="relative flex flex-col h-full min-h-full">
-      <div
-        ref={topSentinelRef}
-        className="absolute top-0 left-0 w-full h-1 pointer-events-none"
-      />
-      <div>
-        <div className="space-y-3">
+    <div ref={sidebarRef} className="pt-2">
 
-          {/* ── INTELLIGENCE ─────────────────────────────────────────── */}
-          <div className="rounded-xl overflow-hidden border border-slate-200 border-l-4 border-l-slate-500 shadow-sm">
-            <div className="bg-slate-100 px-3 py-2 border-b border-slate-200">
-              <span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-600">
-                Intelligence
+      {/* ── L1: Section list ─────────────────────────────────────────── */}
+      <div className="space-y-1.5">
+        {SECTIONS.map((section) => {
+          const isOpen = activeSection === section.id;
+          return (
+            <button
+              key={section.id}
+              onClick={(e) => handleSectionClick(section.id, e)}
+              className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 border-l-4 ${section.borderAccent} transition-colors text-left ${
+                isOpen ? section.headerBg : `bg-white ${section.hoverBg}`
+              }`}
+            >
+              <span className={`text-[10px] font-black uppercase tracking-[0.15em] ${section.headerColor}`}>
+                {section.label}
               </span>
-            </div>
-            <div className="divide-y divide-slate-100">
-              {pillarData.map((pillar) => {
-                const isExpanded = expandedPillars.has(pillar.id);
-                const isPillarActive = pathname.startsWith(`/${pillar.id}`);
-                return (
-                  <div key={pillar.id}>
-                    {/* Pillar row */}
-                    <div
-                      className={`flex items-center transition-colors ${
-                        isPillarActive ? pillar.activeBg : "bg-white"
-                      } ${!isPillarActive ? pillar.hoverBg : ""}`}
-                    >
-                      <Link
-                        href={pillar.href}
-                        onClick={onNavigate}
-                        className="flex items-center gap-3 px-3 py-2.5 flex-1 min-w-0"
-                      >
-                        <span
-                          className={`w-2.5 h-2.5 rounded-full shrink-0 ${pillar.dot}`}
-                        />
-                        <span
-                          className={`text-sm font-bold ${
-                            isPillarActive
-                              ? pillar.activeText
-                              : "text-slate-700"
-                          }`}
-                        >
-                          {pillar.label}
-                        </span>
-                      </Link>
-                      <button
-                        onClick={() => togglePillar(pillar.id)}
-                        className="px-3 py-2.5 text-slate-400 hover:text-slate-600 transition-colors shrink-0"
-                        aria-label={`${isExpanded ? "Collapse" : "Expand"} ${pillar.label}`}
-                      >
-                        <ChevronDownIcon
-                          className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                            isExpanded ? "rotate-180" : ""
-                          }`}
-                        />
-                      </button>
-                    </div>
+              <ChevronRightIcon
+                className={`w-3 h-3 transition-transform duration-150 ${
+                  isOpen ? `${section.headerColor} rotate-90` : "text-slate-400"
+                }`}
+              />
+            </button>
+          );
+        })}
 
-                    {/* Subcategories accordion */}
-                    {isExpanded && (
-                      <div className="border-t border-slate-100">
-                        {pillar.items.map((item) => (
-                          <Link
-                            key={item.href}
-                            href={item.href}
-                            onClick={onNavigate}
-                            className={`flex items-center gap-2 pl-7 pr-3 py-2 text-xs transition-colors ${
-                              isActive(item.href)
-                                ? `${pillar.activeSubBg} ${pillar.activeSubText}`
-                                : `text-slate-500 bg-slate-50 ${pillar.subHover}`
-                            }`}
-                          >
-                            <ChevronRightIcon className="w-2.5 h-2.5 shrink-0 opacity-40" />
-                            {item.label}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
+        {/* My Library — direct link, no flyout */}
+        <Link
+          href="/saved"
+          onClick={onNavigate}
+          className={`flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 border-l-4 border-l-slate-400 transition-colors ${
+            isActive("/saved") ? "bg-slate-100" : "bg-white hover:bg-slate-50"
+          }`}
+        >
+          <span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-500">
+            My Library
+          </span>
+          <BookmarkIcon className="w-3.5 h-3.5 text-slate-400" />
+        </Link>
+      </div>
+
+      {/* ── L2: Flyout panel ─────────────────────────────────────────── */}
+      {activeSection && activeSectionData && (
+        <div
+          className="fixed z-50 bg-white border border-slate-200 shadow-2xl rounded-xl overflow-hidden"
+          style={{
+            left: sidebarRight + PANEL_GAP,
+            top: l2Top,
+            width: L2_WIDTH,
+            maxHeight: `calc(100vh - ${l2Top}px - 16px)`,
+            overflowY: "auto",
+          }}
+        >
+          {/* Panel header */}
+          <div className={`px-3 py-2 border-b border-slate-100 ${activeSectionData.headerBg} sticky top-0`}>
+            <span className={`text-[10px] font-black uppercase tracking-[0.15em] ${activeSectionData.headerColor}`}>
+              {activeSectionData.label}
+            </span>
+          </div>
+
+          {/* INTELLIGENCE — pillar list with right-chevron for L3 */}
+          {activeSectionData.isPillars && (
+            <div className="divide-y divide-slate-100">
+              {pillars.map((pillar) => (
+                <button
+                  key={pillar.id}
+                  onClick={(e) => handlePillarClick(pillar.id, e)}
+                  className={`w-full flex items-center justify-between px-3 py-2.5 transition-colors text-left ${
+                    activePillar === pillar.id ? "bg-slate-50" : "hover:bg-slate-50"
+                  }`}
+                >
+                  <div className="flex items-center gap-2.5">
+                    <span className={`w-2 h-2 rounded-full shrink-0 ${pillar.dot}`} />
+                    <span className="text-sm font-bold text-slate-700">{pillar.label}</span>
                   </div>
+                  <ChevronRightIcon
+                    className={`w-3 h-3 shrink-0 transition-colors ${
+                      activePillar === pillar.id ? pillar.accent : "text-slate-300"
+                    }`}
+                  />
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* All other sections — flat item list */}
+          {!activeSectionData.isPillars && activeSectionData.items && (
+            <div className={`divide-y ${activeSectionData.divideColor}`}>
+              {activeSectionData.items.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <Link
+                    key={`${item.href}-${item.label}`}
+                    href={item.href}
+                    onClick={() => { close(); onNavigate?.(); }}
+                    className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
+                      isActive(item.href)
+                        ? activeSectionData.activeItemBg
+                        : `bg-white ${activeSectionData.hoverBg}`
+                    }`}
+                  >
+                    {Icon && (
+                      <Icon className={`w-4 h-4 shrink-0 ${activeSectionData.headerColor}`} />
+                    )}
+                    <div className="min-w-0">
+                      <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 block leading-tight">
+                        {item.label}
+                      </span>
+                      {item.desc && (
+                        <span className="text-[10px] text-slate-400">{item.desc}</span>
+                      )}
+                    </div>
+                  </Link>
                 );
               })}
             </div>
-          </div>
-
-          {/* ── LEARN ────────────────────────────────────────────────── */}
-          <div className="rounded-xl overflow-hidden border border-sky-200 border-l-4 border-l-sky-500 shadow-sm">
-            <div className="bg-sky-50 px-3 py-2 border-b border-sky-200">
-              <span className="text-[10px] font-black uppercase tracking-[0.15em] text-sky-700">
-                Learn
-              </span>
-            </div>
-            <div className="divide-y divide-sky-100">
-              <Link
-                href="/academy"
-                onClick={onNavigate}
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  pathname === "/academy"
-                    ? "bg-sky-50"
-                    : "bg-white hover:bg-sky-50"
-                }`}
-              >
-                <AcademicCapIcon className="w-4 h-4 text-sky-500 shrink-0" />
-                <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
-                  Academy Hub
-                </span>
-              </Link>
-              <Link
-                href="/academy"
-                onClick={onNavigate}
-                className="flex items-center gap-3 px-3 py-2.5 transition-colors group bg-white hover:bg-sky-50"
-              >
-                <SparklesIcon className="w-4 h-4 text-sky-400 shrink-0" />
-                <div>
-                  <span className="text-sm font-medium text-slate-600 group-hover:text-slate-900 block leading-tight">
-                    Personalized Learning
-                  </span>
-                  <span className="text-[10px] text-slate-400">
-                    AI-powered paths
-                  </span>
-                </div>
-              </Link>
-              <Link
-                href="/academy/tracks"
-                onClick={onNavigate}
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/academy/tracks")
-                    ? "bg-sky-50"
-                    : "bg-white hover:bg-sky-50"
-                }`}
-              >
-                <TableCellsIcon className="w-4 h-4 text-sky-400 shrink-0" />
-                <span className="text-sm font-medium text-slate-600 group-hover:text-slate-900">
-                  Learning Tracks
-                </span>
-              </Link>
-              <Link
-                href="/academy/courses"
-                onClick={onNavigate}
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/academy/courses")
-                    ? "bg-sky-50"
-                    : "bg-white hover:bg-sky-50"
-                }`}
-              >
-                <BookOpenIcon className="w-4 h-4 text-sky-400 shrink-0" />
-                <span className="text-sm font-medium text-slate-600 group-hover:text-slate-900">
-                  Courses
-                </span>
-              </Link>
-              <Link
-                href="/academy/webinars"
-                onClick={onNavigate}
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/academy/webinars")
-                    ? "bg-sky-50"
-                    : "bg-white hover:bg-sky-50"
-                }`}
-              >
-                <PresentationChartLineIcon className="w-4 h-4 text-sky-400 shrink-0" />
-                <span className="text-sm font-medium text-slate-600 group-hover:text-slate-900">
-                  Webinars
-                </span>
-              </Link>
-              <Link
-                href="/academy/case-studies"
-                onClick={onNavigate}
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/academy/case-studies")
-                    ? "bg-sky-50"
-                    : "bg-white hover:bg-sky-50"
-                }`}
-              >
-                <DocumentTextIcon className="w-4 h-4 text-sky-400 shrink-0" />
-                <span className="text-sm font-medium text-slate-600 group-hover:text-slate-900">
-                  Case Studies
-                </span>
-              </Link>
-              <Link
-                href="/academy/glossary"
-                onClick={onNavigate}
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/academy/glossary")
-                    ? "bg-sky-50"
-                    : "bg-white hover:bg-sky-50"
-                }`}
-              >
-                <BookOpenIcon className="w-4 h-4 text-sky-300 shrink-0" />
-                <span className="text-sm font-medium text-slate-600 group-hover:text-slate-900">
-                  Glossary
-                </span>
-              </Link>
-            </div>
-          </div>
-
-          {/* ── ANALYZE & TOOLS ──────────────────────────────────────── */}
-          <div className="rounded-xl overflow-hidden border border-amber-200 border-l-4 border-l-amber-500 shadow-sm">
-            <div className="bg-amber-50 px-3 py-2 border-b border-amber-200">
-              <span className="text-[10px] font-black uppercase tracking-[0.15em] text-amber-700">
-                Analyze &amp; Tools
-              </span>
-            </div>
-            <div className="divide-y divide-amber-100">
-              <Link
-                href="/research-lab"
-                onClick={onNavigate}
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/research-lab")
-                    ? "bg-amber-50"
-                    : "bg-white hover:bg-amber-50"
-                }`}
-              >
-                <BeakerIcon className="w-4 h-4 text-amber-500 shrink-0" />
-                <div>
-                  <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 block leading-tight">
-                    Research Lab
-                  </span>
-                  <span className="text-[10px] text-slate-400">
-                    19 interactive tools
-                  </span>
-                </div>
-              </Link>
-              <Link
-                href="/htr-simulator"
-                onClick={onNavigate}
-                title="HTR Simulator — model health transformation scenarios across all 5 pillars"
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/htr-simulator")
-                    ? "bg-amber-50"
-                    : "bg-white hover:bg-amber-50"
-                }`}
-              >
-                <CpuChipIcon className="w-4 h-4 text-amber-500 shrink-0" />
-                <div>
-                  <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 block leading-tight">
-                    HTR Simulator
-                  </span>
-                  <span className="text-[10px] text-slate-400">
-                    5-pillar scenario modeler
-                  </span>
-                </div>
-              </Link>
-              <Link
-                href="/dashboard"
-                onClick={onNavigate}
-                title="50-State Dashboard — Rural Health Transformation program data"
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/dashboard")
-                    ? "bg-amber-50"
-                    : "bg-white hover:bg-amber-50"
-                }`}
-              >
-                <div className="w-4 h-4 shrink-0 flex items-center justify-center">
-                  <Image
-                    src="/rhtp-icon.png"
-                    alt=""
-                    width={16}
-                    height={16}
-                    className="object-contain"
-                  />
-                </div>
-                <div>
-                  <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 block leading-tight">
-                    50-State Dashboard
-                  </span>
-                  <span className="text-[10px] text-slate-400">
-                    Rural Health Transformation
-                  </span>
-                </div>
-              </Link>
-              <Link
-                href="/ahead-model"
-                onClick={onNavigate}
-                title="AHEAD Model — CMS all-payer total cost of care model"
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/ahead-model")
-                    ? "bg-amber-50"
-                    : "bg-white hover:bg-amber-50"
-                }`}
-              >
-                <div className="w-4 h-4 rounded bg-emerald-100 text-emerald-700 text-[9px] font-black flex items-center justify-center shrink-0">
-                  AH
-                </div>
-                <div>
-                  <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 block leading-tight">
-                    AHEAD Model
-                  </span>
-                  <span className="text-[10px] text-slate-400">
-                    All-payer cost of care
-                  </span>
-                </div>
-              </Link>
-              <Link
-                href="/multimedia"
-                onClick={onNavigate}
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/multimedia")
-                    ? "bg-amber-50"
-                    : "bg-white hover:bg-amber-50"
-                }`}
-              >
-                <FilmIcon className="w-4 h-4 text-amber-400 shrink-0" />
-                <span className="text-sm font-medium text-slate-600 group-hover:text-slate-900">
-                  Multimedia
-                </span>
-              </Link>
-              <Link
-                href="/trending-topics"
-                onClick={onNavigate}
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/trending-topics")
-                    ? "bg-amber-50"
-                    : "bg-white hover:bg-amber-50"
-                }`}
-              >
-                <ArrowTrendingUpIcon className="w-4 h-4 text-amber-400 shrink-0" />
-                <span className="text-sm font-medium text-slate-600 group-hover:text-slate-900">
-                  Trending Topics
-                </span>
-              </Link>
-            </div>
-          </div>
-
-          {/* ── STATE INITIATIVES ────────────────────────────────────── */}
-          <div className="rounded-xl overflow-hidden border border-rose-200 border-l-4 border-l-rose-500 shadow-sm">
-            <div className="bg-rose-50 px-3 py-2 border-b border-rose-200">
-              <span className="text-[10px] font-black uppercase tracking-[0.15em] text-rose-700">
-                State Initiatives
-              </span>
-            </div>
-            <div className="divide-y divide-rose-100">
-              <Link
-                href="/vermont-act-167"
-                onClick={onNavigate}
-                title="Vermont Act 167 — Hospital transformation & Oliver Wyman Report"
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/vermont-act-167")
-                    ? "bg-rose-50"
-                    : "bg-white hover:bg-rose-50"
-                }`}
-              >
-                <MapPinIcon className="w-4 h-4 text-rose-500 shrink-0" />
-                <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 leading-tight">
-                  Vermont Act 167
-                </span>
-              </Link>
-              <Link
-                href="/california-calaim"
-                onClick={onNavigate}
-                title="CalAIM — California's $6.7B Medi-Cal transformation"
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/california-calaim")
-                    ? "bg-rose-50"
-                    : "bg-white hover:bg-rose-50"
-                }`}
-              >
-                <div className="w-4 h-4 rounded bg-rose-100 text-rose-700 text-[9px] font-black flex items-center justify-center shrink-0">
-                  CA
-                </div>
-                <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 leading-tight">
-                  California CalAIM
-                </span>
-              </Link>
-              <Link
-                href="/states"
-                onClick={onNavigate}
-                title="Explore health reform initiatives across all 50 states"
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/states")
-                    ? "bg-rose-50"
-                    : "bg-white hover:bg-rose-50"
-                }`}
-              >
-                <GlobeAmericasIcon className="w-4 h-4 text-rose-400 shrink-0" />
-                <span className="text-sm font-medium text-slate-600 group-hover:text-slate-900 leading-tight">
-                  All States Explorer
-                </span>
-              </Link>
-            </div>
-          </div>
-
-          {/* ── ADVISORY & SERVICES ──────────────────────────────────── */}
-          <div className="rounded-xl overflow-hidden border border-indigo-200 border-l-4 border-l-indigo-500 shadow-sm">
-            <div className="bg-indigo-50 px-3 py-2 border-b border-indigo-200">
-              <span className="text-[10px] font-black uppercase tracking-[0.15em] text-indigo-700">
-                Advisory &amp; Services
-              </span>
-            </div>
-            <div className="divide-y divide-indigo-100">
-              <Link
-                href="/advisory"
-                onClick={onNavigate}
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/advisory") || isActive("/advisory-hub")
-                    ? "bg-indigo-50"
-                    : "bg-white hover:bg-indigo-50"
-                }`}
-              >
-                <BriefcaseIcon className="w-4 h-4 text-indigo-500 shrink-0" />
-                <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
-                  Advisory Hub
-                </span>
-              </Link>
-              <Link
-                href="/connect-hub"
-                onClick={onNavigate}
-                className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
-                  isActive("/connect-hub")
-                    ? "bg-indigo-50"
-                    : "bg-white hover:bg-indigo-50"
-                }`}
-              >
-                <UsersIcon className="w-4 h-4 text-indigo-500 shrink-0" />
-                <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900">
-                  Connect Hub
-                </span>
-              </Link>
-            </div>
-          </div>
-
+          )}
         </div>
-      </div>
+      )}
 
-      {/* FOOTER ACTIONS */}
-      <div className="sticky bottom-0 bg-white pt-4 pb-6 mt-auto border-t border-slate-100 z-20 -mx-4 px-4 -mb-4">
-        <button
-          onClick={scrollToTop}
-          className={`w-full flex items-center justify-center gap-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-900 transition-all duration-300 text-[10px] font-bold uppercase tracking-wider overflow-hidden ${
-            showBackToTop
-              ? "opacity-100 max-h-10 py-2"
-              : "opacity-0 max-h-0 py-0 pointer-events-none"
-          }`}
+      {/* ── L3: Pillar sub-items flyout (INTELLIGENCE only) ──────────── */}
+      {activePillarData && (
+        <div
+          className="fixed z-50 bg-white border border-slate-200 shadow-2xl rounded-xl overflow-hidden"
+          style={{
+            left: sidebarRight + PANEL_GAP + L2_WIDTH + PANEL_GAP,
+            top: l3Top,
+            width: L3_WIDTH,
+            maxHeight: `calc(100vh - ${l3Top}px - 16px)`,
+          }}
         >
-          <ChevronUpIcon className="w-3 h-3" />
-          Back to Top
-        </button>
-      </div>
-    </aside>
+          {/* Header links to pillar overview page */}
+          <Link
+            href={activePillarData.href}
+            onClick={() => { close(); onNavigate?.(); }}
+            className="flex items-center gap-2.5 px-3 py-2.5 border-b border-slate-100 bg-slate-50 group"
+          >
+            <span className={`w-2 h-2 rounded-full shrink-0 ${activePillarData.dot}`} />
+            <span className={`text-[10px] font-black uppercase tracking-[0.15em] ${activePillarData.accent} group-hover:underline`}>
+              {activePillarData.label} Overview
+            </span>
+          </Link>
+          <div className="divide-y divide-slate-100">
+            {activePillarData.items.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => { close(); onNavigate?.(); }}
+                className={`flex items-center gap-2.5 px-3 py-2.5 transition-colors group ${
+                  isActive(item.href) ? "bg-slate-50" : "hover:bg-slate-50"
+                }`}
+              >
+                <ChevronRightIcon className="w-3 h-3 text-slate-300 shrink-0" />
+                <span className="text-sm font-bold text-slate-700 group-hover:text-slate-900 leading-tight">
+                  {item.label}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
   );
 }

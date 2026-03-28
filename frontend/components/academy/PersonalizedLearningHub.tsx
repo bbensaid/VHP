@@ -224,7 +224,7 @@ const defaultPrefs: LearningPreferences = {
   custom_goal: "",
 };
 
-// ─── LocalStorage helpers ─────────────────────────────────────────────────────
+// ─── Storage helpers (localStorage + Supabase sync) ──────────────────────────
 
 function loadPaths(): SavedPath[] {
   if (typeof window === "undefined") return [];
@@ -238,7 +238,29 @@ function loadPaths(): SavedPath[] {
 
 function savePaths(paths: SavedPath[]): void {
   if (typeof window === "undefined") return;
+  // Always write to localStorage immediately (no network latency)
   localStorage.setItem(STORAGE_KEY, JSON.stringify(paths));
+  // Async sync to Supabase — fire and forget (failures are silent; localStorage is source of truth for session)
+  fetch("/api/learning-paths", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ paths }),
+  }).catch(() => {/* offline or unauthenticated — localStorage already saved */});
+}
+
+/** Load paths from server and merge with local state, preferring server data. */
+async function syncPathsFromServer(): Promise<SavedPath[] | null> {
+  try {
+    const res = await fetch("/api/learning-paths");
+    if (!res.ok) return null;
+    const { paths } = await res.json() as { paths: SavedPath[] };
+    if (!Array.isArray(paths) || paths.length === 0) return null;
+    // Write server data back to localStorage so it survives offline
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(paths));
+    return paths;
+  } catch {
+    return null;
+  }
 }
 
 function calcProgress(path: SavedPath): number {
@@ -1508,9 +1530,17 @@ export default function PersonalizedLearningHub() {
 
   const TOTAL_STEPS = 5;
 
-  // Load saved paths from localStorage on mount
+  // Load saved paths: localStorage first (instant), then sync from server (cross-device)
   useEffect(() => {
-    setPaths(loadPaths());
+    // Immediately set from localStorage so UI is responsive
+    const local = loadPaths();
+    if (local.length > 0) setPaths(local);
+    // Then fetch from server — if server has more recent data, replace local
+    syncPathsFromServer().then((serverPaths) => {
+      if (serverPaths && serverPaths.length > 0) {
+        setPaths(serverPaths);
+      }
+    });
   }, []);
 
   const activePath = paths.find((p) => p.id === activePathId) ?? null;

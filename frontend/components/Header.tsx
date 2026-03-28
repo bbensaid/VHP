@@ -42,10 +42,10 @@ const pillars = [
     hoverBg: "hover:bg-sky-50",
     desc: "Regulation, mandates & global health law",
     items: [
-      { href: "/policy/regulation", label: "Regulation & Legislation" },
-      { href: "/policy/mandates", label: "Public Health Mandates" },
-      { href: "/policy/global", label: "Global & Comparative Policy" },
-      { href: "/policy/feasibility", label: "Policy Feasibility Studies" },
+      { href: "/policy/regulation", label: "Regulation & Legislation", desc: "Federal & state rule-making analysis" },
+      { href: "/policy/mandates", label: "Public Health Mandates", desc: "Coverage requirements & enforcement" },
+      { href: "/policy/global", label: "Global & Comparative Policy", desc: "International health system benchmarks" },
+      { href: "/policy/feasibility", label: "Policy Feasibility Studies", desc: "Implementation viability assessments" },
     ],
   },
   {
@@ -58,10 +58,10 @@ const pillars = [
     hoverBg: "hover:bg-emerald-50",
     desc: "Value-based care, markets & investment",
     items: [
-      { href: "/economics/value", label: "Value-Based Care Models" },
-      { href: "/economics/market", label: "Market & Finance" },
-      { href: "/economics/cea", label: "Labor & Workforce Strategy" },
-      { href: "/economics/investment", label: "Healthcare Investment Trends" },
+      { href: "/economics/value", label: "Value-Based Care Models", desc: "APMs, bundled payments & outcomes" },
+      { href: "/economics/market", label: "Market & Finance", desc: "Payer dynamics & cost structures" },
+      { href: "/economics/cea", label: "Labor & Workforce Strategy", desc: "Staffing trends & compensation analysis" },
+      { href: "/economics/investment", label: "Healthcare Investment Trends", desc: "M&A, PE activity & capital flows" },
     ],
   },
   {
@@ -74,10 +74,10 @@ const pillars = [
     hoverBg: "hover:bg-indigo-50",
     desc: "AI, digital health & data governance",
     items: [
-      { href: "/technology/ai", label: "AI & Machine Learning" },
-      { href: "/technology/digital", label: "Digital Health & Telemedicine" },
-      { href: "/technology/security", label: "Data Security & Governance" },
-      { href: "/technology/workflow", label: "Tech-Enabled Workflow" },
+      { href: "/technology/ai", label: "AI & Machine Learning", desc: "Clinical AI, NLP & decision support" },
+      { href: "/technology/digital", label: "Digital Health & Telemedicine", desc: "RPM, virtual care & app ecosystems" },
+      { href: "/technology/security", label: "Data Security & Governance", desc: "HIPAA, interoperability & trust frameworks" },
+      { href: "/technology/workflow", label: "Tech-Enabled Workflow", desc: "Automation & operational efficiency" },
     ],
   },
   {
@@ -90,9 +90,9 @@ const pillars = [
     hoverBg: "hover:bg-red-50",
     desc: "Hospital-at-home, precision & virtual care",
     items: [
-      { href: "/clinical/hah", label: "Hospital-at-Home" },
-      { href: "/clinical/precision", label: "Precision Medicine" },
-      { href: "/clinical/virtual", label: "Virtual Care Models" },
+      { href: "/clinical/hah", label: "Hospital-at-Home", desc: "Acute care delivery outside hospital walls" },
+      { href: "/clinical/precision", label: "Precision Medicine", desc: "Genomics, biomarkers & targeted therapy" },
+      { href: "/clinical/virtual", label: "Virtual Care Models", desc: "Asynchronous & synchronous care design" },
     ],
   },
   {
@@ -105,55 +105,62 @@ const pillars = [
     hoverBg: "hover:bg-amber-50",
     desc: "SDOH, algorithmic bias & access disparity",
     items: [
-      { href: "/equity/sdoh", label: "SDOH Integration" },
-      { href: "/equity/bias", label: "Algorithmic Bias" },
-      { href: "/equity/access", label: "Access Disparity" },
+      { href: "/equity/sdoh", label: "SDOH Integration", desc: "Social drivers embedded in care models" },
+      { href: "/equity/bias", label: "Algorithmic Bias", desc: "Fairness audits & model accountability" },
+      { href: "/equity/access", label: "Access Disparity", desc: "Rural, racial & economic access gaps" },
     ],
   },
 ];
 
-type MegaMenuType = "intelligence" | "learn" | "analyze" | "advise" | null;
+type MegaMenuType = "intelligence" | "learn" | "analyze" | "states" | "advise" | null;
 
 // ─── MEGA-MENU PANELS ────────────────────────────────────────────────────────
 
 function IntelligencePanel({ onClose }: { onClose: () => void }) {
   return (
     <div className="max-w-screen-xl mx-auto px-6 py-6">
-      <div className="grid grid-cols-5 gap-4">
+      <div className="grid grid-cols-5 gap-8">
         {pillars.map((p) => (
-          <div key={p.id} className="min-w-0">
-            <Link
-              href={p.href}
-              onClick={onClose}
-              className={`flex items-center gap-2 mb-2 group`}
-            >
-              <span className={`w-2.5 h-2.5 rounded-full ${p.dot} shrink-0`} />
-              <span className={`text-sm font-black uppercase tracking-wide ${p.accent} group-hover:underline`}>
+          <div key={p.id}>
+            {/* Section header — same style as LEARN/ANALYZE/ADVISE */}
+            <div className="flex items-center gap-1.5 mb-3">
+              <span className={`w-2 h-2 rounded-full ${p.dot} shrink-0`} />
+              <p className="text-xs font-black uppercase tracking-widest text-slate-400">
                 {p.label}
-              </span>
-            </Link>
-            <p className="text-[11px] text-slate-400 mb-3 leading-snug pl-4">
-              {p.desc}
-            </p>
-            <ul className="space-y-0.5 pl-4">
+              </p>
+            </div>
+            <div className="space-y-1">
+              {/* Pillar overview — first item links to pillar root */}
+              <Link
+                href={p.href}
+                onClick={onClose}
+                className={`flex flex-col px-3 py-2.5 rounded-lg ${p.hoverBg} transition-colors group`}
+              >
+                <span className={`text-sm font-bold text-slate-800 group-hover:${p.accent}`}>
+                  {p.label} Overview
+                </span>
+                <span className="text-xs text-slate-400 mt-0.5">{p.desc}</span>
+              </Link>
+              {/* Sub-items */}
               {p.items.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    onClick={onClose}
-                    className={`flex items-center gap-1.5 text-xs text-slate-600 py-1 px-1 rounded ${p.hoverBg} hover:text-slate-900 transition-colors`}
-                  >
-                    <ChevronRightIcon className="w-2.5 h-2.5 opacity-40 shrink-0" />
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={onClose}
+                  className={`flex flex-col px-3 py-2.5 rounded-lg ${p.hoverBg} transition-colors group`}
+                >
+                  <span className={`text-sm font-bold text-slate-800 group-hover:${p.accent}`}>
                     {item.label}
-                  </Link>
-                </li>
+                  </span>
+                  <span className="text-xs text-slate-400 mt-0.5">{item.desc}</span>
+                </Link>
               ))}
-            </ul>
+            </div>
           </div>
         ))}
       </div>
       <div className="mt-5 pt-4 border-t border-slate-100 flex items-center gap-6">
-        <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">
+        <span className="text-xs font-black uppercase tracking-widest text-slate-400">
           Quick Access
         </span>
         {[
@@ -181,7 +188,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
       <div className="grid grid-cols-3 gap-8">
         {/* Start Here */}
         <div>
-          <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
             Start Here
           </p>
           <div className="space-y-1">
@@ -226,7 +233,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
 
         {/* Browse by Format */}
         <div>
-          <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
             Browse by Format
           </p>
           <div className="space-y-1">
@@ -239,12 +246,12 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
                 key={item.href}
                 href={item.href}
                 onClick={onClose}
-                className="flex flex-col px-3 py-2 rounded-lg hover:bg-sky-50 transition-colors group"
+                className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-sky-50 transition-colors group"
               >
-                <span className="text-sm font-medium text-slate-700 group-hover:text-sky-700">
+                <span className="text-sm font-bold text-slate-800 group-hover:text-sky-700">
                   {item.label}
                 </span>
-                <span className="text-xs text-slate-400">{item.desc}</span>
+                <span className="text-xs text-slate-400 mt-0.5">{item.desc}</span>
               </Link>
             ))}
           </div>
@@ -252,7 +259,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
 
         {/* Reference */}
         <div>
-          <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
             Reference
           </p>
           <div className="space-y-1">
@@ -305,7 +312,7 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
       <div className="grid grid-cols-3 gap-8">
         {/* Interactive Tools */}
         <div>
-          <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
             Interactive Tools
           </p>
           <div className="space-y-1">
@@ -348,36 +355,12 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
           </div>
         </div>
 
-        {/* Data & Dashboards */}
+        {/* Data & Signals */}
         <div>
-          <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">
-            Data &amp; Dashboards
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+            Data &amp; Signals
           </p>
           <div className="space-y-1">
-            <Link
-              href="/dashboard"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-emerald-700">
-                50-State RHTP Dashboard
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                Rural hospital performance index
-              </span>
-            </Link>
-            <Link
-              href="/ahead-model"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-emerald-700">
-                AHEAD Model
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                All-payer total cost of care (6 states)
-              </span>
-            </Link>
             <Link
               href="/trending-topics"
               onClick={onClose}
@@ -393,10 +376,39 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
           </div>
         </div>
 
-        {/* State Programs */}
+        {/* Media & Reference */}
         <div>
-          <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">
-            State Programs
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+            Media &amp; Reference
+          </p>
+          <div className="space-y-1">
+            <Link
+              href="/multimedia"
+              onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
+            >
+              <span className="text-sm font-bold text-slate-800 group-hover:text-amber-700">
+                Multimedia
+              </span>
+              <span className="text-xs text-slate-400 mt-0.5">
+                Videos, presentations &amp; infographics
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function StatesPanel({ onClose }: { onClose: () => void }) {
+  return (
+    <div className="px-6 py-6">
+      <div className="grid grid-cols-2 gap-8" style={{ minWidth: "480px" }}>
+        {/* State Initiatives */}
+        <div>
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+            State Initiatives
           </p>
           <div className="space-y-1">
             <Link
@@ -408,7 +420,7 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
                 Vermont Act 167
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
-                Hospital transformation & Oliver Wyman Report
+                Hospital transformation &amp; Oliver Wyman Report
               </span>
             </Link>
             <Link
@@ -437,6 +449,38 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
             </Link>
           </div>
         </div>
+        {/* Dashboards & Models */}
+        <div>
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+            Dashboards &amp; Models
+          </p>
+          <div className="space-y-1">
+            <Link
+              href="/dashboard"
+              onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
+            >
+              <span className="text-sm font-bold text-slate-800 group-hover:text-rose-700">
+                50-State RHTP Dashboard
+              </span>
+              <span className="text-xs text-slate-400 mt-0.5">
+                Rural hospital performance index
+              </span>
+            </Link>
+            <Link
+              href="/ahead-model"
+              onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
+            >
+              <span className="text-sm font-bold text-slate-800 group-hover:text-rose-700">
+                AHEAD Model
+              </span>
+              <span className="text-xs text-slate-400 mt-0.5">
+                All-payer total cost of care (6 states)
+              </span>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -448,7 +492,7 @@ function AdvisePanel({ onClose }: { onClose: () => void }) {
       <div className="grid grid-cols-3 gap-8">
         {/* Advisory Services */}
         <div className="col-span-2">
-          <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
             Advisory Services
           </p>
           <div className="grid grid-cols-2 gap-1">
@@ -466,12 +510,12 @@ function AdvisePanel({ onClose }: { onClose: () => void }) {
                 key={item.href}
                 href={item.href}
                 onClick={onClose}
-                className="flex flex-col px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors group"
+                className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-slate-50 transition-colors group"
               >
-                <span className="text-sm font-medium text-slate-700 group-hover:text-indigo-700">
+                <span className="text-sm font-bold text-slate-800 group-hover:text-indigo-700">
                   {item.label}
                 </span>
-                <span className="text-xs text-slate-400">{item.desc}</span>
+                <span className="text-xs text-slate-400 mt-0.5">{item.desc}</span>
               </Link>
             ))}
           </div>
@@ -479,7 +523,7 @@ function AdvisePanel({ onClose }: { onClose: () => void }) {
 
         {/* Connect & Community */}
         <div>
-          <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
             Connect &amp; Community
           </p>
           <div className="space-y-1">
@@ -591,7 +635,7 @@ const Header = () => {
     e.preventDefault();
     const q = searchQuery.trim();
     if (!q) return;
-    setSearchOpen(false);
+    setMobileMenuOpen(false);
     setSearchQuery("");
     router.push(`/search?q=${encodeURIComponent(q)}`);
   };
@@ -611,21 +655,25 @@ const Header = () => {
 
   const megaMenuItems: { type: MegaMenuType; label: string; activeCheck: string }[] = [
     { type: "intelligence", label: "INTELLIGENCE", activeCheck: "/policy,/economics,/technology,/clinical,/equity" },
-    { type: "learn", label: "LEARN", activeCheck: "/academy,/multimedia" },
-    { type: "analyze", label: "ANALYZE", activeCheck: "/research-lab,/htr-simulator,/dashboard,/ahead-model,/states,/vermont-act-167,/california-calaim" },
-    { type: "advise", label: "ADVISE", activeCheck: "/advisory,/advisory-hub,/connect-hub,/community" },
+    { type: "learn", label: "LEARN", activeCheck: "/academy" },
+    { type: "analyze", label: "ANALYZE & TOOLS", activeCheck: "/research-lab,/htr-simulator,/hti-dashboard,/trending-topics,/multimedia" },
+    { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/california-calaim,/dashboard,/ahead-model" },
+    { type: "advise", label: "ADVISE", activeCheck: "/advisory,/connect-hub,/community" },
   ];
 
   const isMenuActive = (activeCheck: string) =>
-    activeCheck.split(",").some((p) => pathname.startsWith(p.trim()));
+    activeCheck.split(",").some((p) => {
+      const path = p.trim();
+      return path && (pathname === path || pathname.startsWith(path + "/"));
+    });
 
   return (
     <header className="sticky top-0 z-50 flex flex-col font-sans bg-white">
       {/* 1. TOP BAR */}
       <div className="bg-black text-zinc-300 text-[10px] font-bold tracking-wider uppercase py-1 border-b border-neutral-800 w-full relative z-50">
         <div className="w-full px-4 flex items-center h-full gap-0">
-          <div className="hidden lg:block opacity-70 whitespace-nowrap shrink-0 mr-6">
-            <span>{dateString}</span>
+          <div className="w-85 shrink-0 flex items-center">
+            <span className="hidden lg:block opacity-70 whitespace-nowrap">{dateString}</span>
           </div>
           <div className="flex-1 flex items-center overflow-hidden min-w-0 pr-32">
             <TickerStrip
@@ -665,8 +713,8 @@ const Header = () => {
       <div className="bg-white py-1 border-b border-slate-200 w-full relative">
         <div className="w-full px-4 flex items-center gap-0">
 
-          {/* LEFT: Toggle + Logo */}
-          <div className="flex items-center gap-3 shrink-0 mr-4">
+          {/* LEFT: Toggle + Logo — w-125 matches AppShell breadcrumbs spacer for column alignment */}
+          <div className="w-125 shrink-0 flex items-center gap-3">
             {!isStudio && (
               <button
                 onClick={handleToggleLeft}
@@ -682,29 +730,55 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* NAV: Mega-menu buttons */}
-          <nav className="hidden xl:flex items-center gap-1 h-8 shrink-0 mr-4 ml-10">
+          {/* NAV: Mega-menu buttons — starts at same x as SYSTEM VITALS in AppShell sticky bar */}
+          <nav className="hidden xl:flex items-center gap-6 h-8 shrink-0 mr-4 -ml-40">
             {megaMenuItems.map(({ type, label, activeCheck }) => {
               const active = isMenuActive(activeCheck);
               const isOpen = activeMegaMenu === type;
               return (
-                <button
-                  key={type}
-                  onMouseEnter={() => openMegaMenu(type)}
-                  onMouseLeave={closeMegaMenu}
-                  onClick={() => setActiveMegaMenu(isOpen ? null : type)}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-extrabold uppercase tracking-wide rounded-md transition-all duration-150 ${
-                    active || isOpen
-                      ? "bg-slate-100 text-slate-900"
-                      : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-                  }`}
-                  aria-expanded={isOpen}
-                >
-                  {label}
-                  <ChevronDownIcon
-                    className={`w-3 h-3 opacity-60 transition-transform duration-150 ${isOpen ? "rotate-180" : ""}`}
-                  />
-                </button>
+                <div key={type} className="relative">
+                  <button
+                    onMouseEnter={() => openMegaMenu(type)}
+                    onMouseLeave={closeMegaMenu}
+                    onClick={() => setActiveMegaMenu(isOpen ? null : type)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Escape") setActiveMegaMenu(null);
+                      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setActiveMegaMenu(isOpen ? null : type); }
+                    }}
+                    className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-extrabold uppercase tracking-wide rounded-md transition-all duration-150 ${
+                      isOpen
+                        ? "bg-slate-100 text-slate-900"
+                        : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                    }`}
+                    aria-expanded={isOpen}
+                    aria-haspopup="true"
+                    aria-controls={`megamenu-${type}`}
+                  >
+                    {label}
+                    <ChevronDownIcon
+                      className={`w-3 h-3 opacity-60 transition-transform duration-150 ${isOpen ? "rotate-180" : ""}`}
+                      aria-hidden="true"
+                    />
+                  </button>
+                  {/* Panel drops down aligned to this button's left edge */}
+                  {isOpen && (
+                    <div
+                      id={`megamenu-${type}`}
+                      role="region"
+                      aria-label={`${type} navigation`}
+                      className="absolute top-full left-0 z-50 mt-1 bg-white border border-slate-200 shadow-2xl rounded-xl w-auto min-w-max"
+                      onMouseEnter={cancelClose}
+                      onMouseLeave={closeMegaMenu}
+                      onKeyDown={(e) => { if (e.key === "Escape") setActiveMegaMenu(null); }}
+                    >
+                      {type === "intelligence" && <IntelligencePanel onClose={() => setActiveMegaMenu(null)} />}
+                      {type === "learn" && <LearnPanel onClose={() => setActiveMegaMenu(null)} />}
+                      {type === "analyze" && <AnalyzePanel onClose={() => setActiveMegaMenu(null)} />}
+                      {type === "states" && <StatesPanel onClose={() => setActiveMegaMenu(null)} />}
+                      {type === "advise" && <AdvisePanel onClose={() => setActiveMegaMenu(null)} />}
+                    </div>
+                  )}
+                </div>
               );
             })}
           </nav>
@@ -737,8 +811,8 @@ const Header = () => {
             </div>
           </form>
 
-          {/* RIGHT: Dark mode + Right sidebar + Mobile hamburger */}
-          <div className="shrink-0 flex items-center gap-1 ml-4">
+          {/* RIGHT: w-87.5 mirrors AppShell right spacer — search flex-1 ends at same x as tickers */}
+          <div className="w-87.5 shrink-0 flex items-center justify-end gap-1">
             <DarkModeToggle />
             {!isStudio && (
               <button
@@ -750,45 +824,55 @@ const Header = () => {
                 <Bars3BottomRightIcon className="w-6 h-6" aria-hidden="true" />
               </button>
             )}
-          </div>
-
-          <div className="flex items-center gap-4 shrink-0 xl:hidden">
-            <button
-              className="p-2 text-slate-800 hover:bg-slate-100 rounded-md transition-colors"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
-              aria-expanded={mobileMenuOpen}
-              aria-controls="mobile-menu"
-            >
-              {mobileMenuOpen ? (
-                <XMarkIcon className="w-8 h-8" aria-hidden="true" />
-              ) : (
-                <Bars3Icon className="w-8 h-8" aria-hidden="true" />
-              )}
-            </button>
+            <div className="xl:hidden">
+              <button
+                className="p-2 text-slate-800 hover:bg-slate-100 rounded-md transition-colors"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={mobileMenuOpen}
+                aria-controls="mobile-menu"
+              >
+                {mobileMenuOpen ? (
+                  <XMarkIcon className="w-8 h-8" aria-hidden="true" />
+                ) : (
+                  <Bars3Icon className="w-8 h-8" aria-hidden="true" />
+                )}
+              </button>
+            </div>
           </div>
         </div>
-
-        {/* MEGA-MENU PANEL — rendered inside sticky nav, positioned absolutely below */}
-        {activeMegaMenu && (
-          <div
-            className="absolute top-full left-0 right-0 z-50 bg-white border-b border-slate-200 shadow-2xl animate-in fade-in slide-in-from-top-1 duration-150"
-            onMouseEnter={cancelClose}
-            onMouseLeave={closeMegaMenu}
-          >
-            {activeMegaMenu === "intelligence" && <IntelligencePanel onClose={() => setActiveMegaMenu(null)} />}
-            {activeMegaMenu === "learn" && <LearnPanel onClose={() => setActiveMegaMenu(null)} />}
-            {activeMegaMenu === "analyze" && <AnalyzePanel onClose={() => setActiveMegaMenu(null)} />}
-            {activeMegaMenu === "advise" && <AdvisePanel onClose={() => setActiveMegaMenu(null)} />}
-          </div>
-        )}
 
         {/* MOBILE MENU */}
         {mobileMenuOpen && (
           <div
             id="mobile-menu"
-            className="absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-xl xl:hidden flex flex-col animate-in slide-in-from-top-2 duration-200 max-h-[80vh] overflow-y-auto"
+            className="absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-xl xl:hidden flex flex-col animate-in slide-in-from-top-2 duration-200 max-h-[85vh] overflow-y-auto"
           >
+            {/* Mobile Search */}
+            <div className="px-4 py-3 border-b border-slate-100 bg-slate-50">
+              <form onSubmit={handleSearchSubmit} className="flex gap-2">
+                <div className="relative flex-1">
+                  <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Search articles, modules, definitions…"
+                    className="w-full pl-9 pr-3 py-2.5 border border-slate-200 rounded-lg text-sm bg-white text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-400"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  disabled={!searchQuery.trim()}
+                  className="text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 px-4 py-2.5 rounded-lg transition-colors shrink-0"
+                >
+                  Go
+                </button>
+              </form>
+            </div>
+
             {/* Mobile section headers */}
             {[
               {
@@ -875,6 +959,33 @@ const Header = () => {
                 )}
               </div>
             ))}
+
+            {/* Mobile Auth + Quick Links */}
+            <div className="border-t border-slate-200 bg-slate-50 px-4 py-4 flex flex-col gap-3">
+              <div className="flex gap-2">
+                <Link
+                  href="/login"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex-1 text-center border border-slate-300 text-slate-700 text-sm font-bold py-2.5 rounded-lg hover:bg-white transition-colors"
+                >
+                  Log In
+                </Link>
+                <Link
+                  href="/subscribe"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex-1 text-center bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold py-2.5 rounded-lg transition-colors"
+                >
+                  Subscribe
+                </Link>
+              </div>
+              <div className="flex items-center justify-center gap-4 text-xs text-slate-400">
+                <Link href="/faq" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600">FAQ</Link>
+                <span>·</span>
+                <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600">About</Link>
+                <span>·</span>
+                <Link href="/advisory/contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600">Contact</Link>
+              </div>
+            </div>
           </div>
         )}
       </div>

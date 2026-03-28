@@ -15,10 +15,9 @@ export default async function DashboardIndex() {
       {!isSubscriber && (
         <div className="max-w-7xl mx-auto px-4 pt-6">
           <UpgradePrompt
-            inline
-            title="Unlock full state dashboard access"
-            description="Subscribe to drill into all 50 state performance profiles, trend charts, and the AI Analyst — starting at $19/mo."
-            from="/dashboard"
+            required="subscriber"
+            feature="Full state dashboard access"
+            compact
           />
         </div>
       )}

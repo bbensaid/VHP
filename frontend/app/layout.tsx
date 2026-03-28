@@ -10,6 +10,7 @@ import { SidebarProvider } from "@/components/SidebarContext";
 import AppShell from "@/components/AppShell";
 import { getTickerData } from "@/lib/ticker";
 import CommandPalette from "@/components/CommandPalette";
+import OnboardingModal from "@/components/OnboardingModal";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import WebVitalsReporter from "@/components/WebVitalsReporter";
@@ -42,6 +43,7 @@ export default async function RootLayout({
             Skip to main content
           </a>
           <CommandPalette />
+          <OnboardingModal />
           <TickerProvider>
             <SidebarProvider>
               <div className="flex flex-col h-screen overflow-hidden">

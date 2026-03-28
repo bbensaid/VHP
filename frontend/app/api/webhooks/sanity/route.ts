@@ -5,6 +5,7 @@
  */
 import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
+import { revalidateTag } from "next/cache";
 
 const SANITY_WEBHOOK_SECRET = process.env.SANITY_WEBHOOK_SECRET;
 const BACKEND_URL = process.env.PYTHON_BACKEND_URL;
@@ -26,6 +27,18 @@ export async function POST(req: NextRequest) {
     if (receivedSig !== expectedSig) {
       return NextResponse.json({ error: "Invalid signature" }, { status: 401 });
     }
+  }
+
+  // Revalidate Next.js cache tags — busts all cached Sanity queries immediately
+  try {
+    const payload = JSON.parse(body) as { _type?: string };
+    const docType = payload._type;
+    // Revalidate the specific document type tag + the global sanity tag
+    if (docType) revalidateTag(docType);
+    revalidateTag("sanity");
+  } catch {
+    // Non-JSON body or missing _type — revalidate everything
+    revalidateTag("sanity");
   }
 
   // Trigger backend RAG re-ingestion

@@ -1,6 +1,8 @@
 import { client } from "@/lib/sanity";
 import HomeContent from "@/components/HomeContent";
 
+export const revalidate = 120; // Fallback ISR: revalidate every 2 minutes (webhook busts sooner)
+
 async function getPageData() {
   const query = `{
     "leadStory": *[_type == "report"] | order(publishedAt desc)[0]{
@@ -18,7 +20,7 @@ async function getPageData() {
     }
   }`;
 
-  const data = await client.fetch(query, {}, { next: { revalidate: 60 } });
+  const data = await client.fetch(query, {}, { next: { revalidate: 120, tags: ["report", "course", "webinar", "ticker", "analystNote"] } });
   return {
     leadStory: data.leadStory,
     feed: data.feed,

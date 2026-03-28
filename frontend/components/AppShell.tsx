@@ -83,7 +83,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         <div className="sticky top-0 z-30 h-10 flex justify-center transition-all duration-300 pointer-events-none bg-white border-b border-slate-200 shadow-[0_4px_8px_-2px_rgba(0,0,0,0.12)]">
           <div className="w-full px-4 h-full pointer-events-auto">
             <div className="h-full flex items-center w-full">
-              <div className="shrink-0 flex items-center h-full w-125">
+              <div className="shrink-0 flex items-center h-full w-85">
                 {showBreadcrumbs && <Breadcrumbs />}
               </div>
 
@@ -144,7 +144,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
       {!isRightOpen && (
         <button
           onClick={() => setRightOpen(true)}
-          className="hidden lg:flex fixed bottom-6 right-6 z-40 items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm font-bold"
+          className="flex fixed bottom-6 right-4 lg:right-6 z-40 items-center gap-2 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm font-bold"
           aria-label="Open AI Analyst"
         >
           <SparklesIcon className="w-4 h-4" />

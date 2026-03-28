@@ -121,6 +121,43 @@ export default function AdvisoryPage() {
         </div>
       </div>
 
+      {/* ── HTR MEMBER PLATFORM BENEFITS ─────────────────────────────────── */}
+      <div className="bg-slate-950 py-16">
+        <div className="container mx-auto px-4 md:px-8 max-w-6xl">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="max-w-xl">
+              <span className="text-xs font-black text-fuchsia-400 uppercase tracking-widest block mb-3">For HTR Platform Members</span>
+              <h2 className="text-3xl font-black text-white mb-4">Advisory Tier Unlocks the Full Platform</h2>
+              <p className="text-slate-400 leading-relaxed mb-6">
+                HTR Advisory clients receive full platform access alongside their engagement — including the most powerful AI model and exclusive intelligence tools.
+              </p>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { label: "Claude Sonnet 4.6", desc: "Most powerful AI — Anthropic's latest" },
+                  { label: "Agentic AI Tools", desc: "Tool-use, web search, data retrieval" },
+                  { label: "Priority Intelligence", desc: "Pre-publication briefings & reports" },
+                  { label: "Research Lab", desc: "Full access to all 19 tools" },
+                ].map((item) => (
+                  <div key={item.label} className="bg-slate-900 border border-slate-800 rounded-lg px-4 py-3">
+                    <p className="text-sm font-bold text-fuchsia-300">{item.label}</p>
+                    <p className="text-xs text-slate-500 mt-0.5">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="shrink-0">
+              <Link
+                href="/advisory/contact"
+                className="inline-block px-8 py-4 bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-black text-lg rounded-xl transition-colors shadow-lg"
+              >
+                Upgrade to Advisory →
+              </Link>
+              <p className="text-xs text-slate-500 text-center mt-3">Already a subscriber? Your history transfers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* ── THE 5-PILLAR ADVANTAGE ────────────────────────────────────────── */}
       <div className="bg-slate-50 py-20 border-y border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl">
