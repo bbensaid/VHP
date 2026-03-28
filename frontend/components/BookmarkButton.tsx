@@ -1,55 +1,75 @@
 "use client";
-import { useState } from "react";
-import { createBrowserClient } from "@supabase/ssr";
 
-interface Props {
+import { useState } from "react";
+import { BookmarkIcon } from "@heroicons/react/24/outline";
+import { BookmarkIcon as BookmarkSolid } from "@heroicons/react/24/solid";
+
+interface BookmarkButtonProps {
   sanityId: string;
   slug: string;
   title: string;
   pillar?: string;
   contentType?: string;
-  userId: string | null;
+  initialSaved?: boolean;
+  size?: "sm" | "md";
+  className?: string;
 }
 
-export default function BookmarkButton({ sanityId, slug, title, pillar, contentType, userId }: Props) {
-  const [bookmarked, setBookmarked] = useState(false);
-  const [loading, setLoading] = useState(false);
+export default function BookmarkButton({
+  sanityId,
+  slug,
+  title,
+  pillar,
+  contentType,
+  initialSaved = false,
+  size = "sm",
+  className = "",
+}: BookmarkButtonProps) {
+  const [saved, setSaved] = useState(initialSaved);
+  const [pending, setPending] = useState(false);
 
-  const supabase = createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  );
+  const iconClass = size === "sm" ? "w-4 h-4" : "w-5 h-5";
 
-  async function toggle() {
-    if (!userId) {
-      window.location.href = "/login?from=" + encodeURIComponent(window.location.pathname);
-      return;
+  const toggle = async () => {
+    if (pending) return;
+    setPending(true);
+    const next = !saved;
+    setSaved(next); // optimistic
+
+    try {
+      if (next) {
+        await fetch("/api/bookmarks", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ sanity_id: sanityId, slug, title, pillar, content_type: contentType }),
+        });
+      } else {
+        await fetch(`/api/bookmarks?id=${encodeURIComponent(sanityId)}`, { method: "DELETE" });
+      }
+    } catch {
+      setSaved(!next); // revert on failure
+    } finally {
+      setPending(false);
     }
-    setLoading(true);
-    if (bookmarked) {
-      await supabase.from("bookmarks").delete().match({ user_id: userId, sanity_id: sanityId });
-      setBookmarked(false);
-    } else {
-      await supabase.from("bookmarks").upsert({ user_id: userId, sanity_id: sanityId, slug, title, pillar, content_type: contentType });
-      setBookmarked(true);
-    }
-    setLoading(false);
-  }
+  };
 
   return (
     <button
-      onClick={toggle}
-      disabled={loading}
-      aria-label={bookmarked ? "Remove bookmark" : "Bookmark this article"}
-      aria-pressed={bookmarked}
-      className={`flex items-center gap-1.5 text-sm font-semibold px-3 py-1.5 rounded-lg transition-colors ${
-        bookmarked ? "bg-indigo-100 text-indigo-700" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-      }`}
+      onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggle(); }}
+      aria-label={saved ? "Remove bookmark" : "Save to reading list"}
+      aria-pressed={saved}
+      title={saved ? "Saved — click to remove" : "Save to reading list"}
+      disabled={pending}
+      className={`transition-colors disabled:opacity-50 ${
+        saved
+          ? "text-indigo-600 hover:text-indigo-800"
+          : "text-slate-300 hover:text-slate-500"
+      } ${className}`}
     >
-      <svg className="w-4 h-4" aria-hidden="true" fill={bookmarked ? "currentColor" : "none"} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-      </svg>
-      {bookmarked ? "Saved" : "Save"}
+      {saved
+        ? <BookmarkSolid className={iconClass} />
+        : <BookmarkIcon className={iconClass} />
+      }
     </button>
   );
 }

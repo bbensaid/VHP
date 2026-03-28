@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import HeroCarousel from "@/components/HeroCarousel";
+import BookmarkButton from "@/components/BookmarkButton";
 
 interface LeadStory {
   title: string;
@@ -340,6 +341,14 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
                     {item.title}
                   </Link>
                 </div>
+                <BookmarkButton
+                  sanityId={item._id}
+                  slug={item.slug ?? ""}
+                  title={item.title}
+                  pillar={item.pillar}
+                  contentType={item._type}
+                  className="shrink-0 opacity-0 group-hover:opacity-100 focus:opacity-100"
+                />
               </div>
             ))
           ) : (

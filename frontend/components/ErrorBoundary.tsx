@@ -49,15 +49,29 @@ export class ErrorBoundary extends React.Component<Props, State> {
           <h3 className="font-bold text-slate-800 mb-1">
             {this.props.section ? `${this.props.section} failed to load` : "Something went wrong"}
           </h3>
-          <p className="text-sm text-slate-500 mb-4">
+          <p className="text-sm text-slate-500 mb-1">
             This section encountered an unexpected error. The issue has been reported.
           </p>
-          <button
-            onClick={() => this.setState({ hasError: false, error: null })}
-            className="text-sm font-semibold text-indigo-600 hover:text-indigo-700"
-          >
-            Try again
-          </button>
+          {process.env.NODE_ENV === "development" && this.state.error && (
+            <p className="text-xs text-red-500 font-mono bg-red-50 rounded px-2 py-1 mb-3 max-w-sm text-left wrap-break-word">
+              {this.state.error.message}
+            </p>
+          )}
+          <div className="flex items-center gap-3 mt-3">
+            <button
+              onClick={() => this.setState({ hasError: false, error: null })}
+              className="text-sm font-semibold text-indigo-600 hover:text-indigo-700"
+            >
+              Try again
+            </button>
+            <span className="text-slate-300">·</span>
+            <button
+              onClick={() => window.location.reload()}
+              className="text-sm text-slate-500 hover:text-slate-700"
+            >
+              Reload page
+            </button>
+          </div>
         </div>
       );
     }
