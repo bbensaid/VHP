@@ -47,7 +47,8 @@ export async function getRhtProfile(
     .from("rht_state_profiles")
     .select("*")
     .eq("state_id", stateId)
-    .single();
+    .limit(1)
+    .maybeSingle();
 
   if (error) {
     console.error(`getRhtProfile(${stateId}):`, error.message);

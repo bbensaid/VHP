@@ -10,6 +10,7 @@ import { useTicker } from "@/components/TickerContext";
 import { useSidebar } from "@/components/SidebarContext";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
+import { SparklesIcon } from "@heroicons/react/24/outline";
 
 interface AppShellProps {
   children: React.ReactNode;
@@ -20,17 +21,8 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const pathname = usePathname() || "";
 
   // 1. ROUTE LOGIC
-  const isHomepage = pathname === "/";
   const isStudio = pathname.startsWith("/studio");
   const isChatPage = pathname === "/chat";
-  const isArticle =
-    pathname.startsWith("/articles") ||
-    pathname.includes("/policy/") ||
-    pathname.includes("/economics/") ||
-    pathname.includes("/technology/");
-  const isAcademyModule =
-    pathname.startsWith("/academy/modules/") ||
-    pathname.startsWith("/academy/courses/");
   const hideSidebarsCompletely = isStudio || isChatPage;
 
   // 2. SIDEBAR STATE from Context (shared with Header)
@@ -39,16 +31,14 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const { isStripVisible, setStripVisible } = useTicker();
   const [clientTickerData, setClientTickerData] = useState<unknown>(null);
 
-  // 3. AUTO-COLLAPSE ON NAVIGATION
+  // 3. AUTO-COLLAPSE — only for pages that need full width (studio, chat)
+  //    All other pages: sidebar persists in whatever state the user set it.
   useEffect(() => {
-    if (hideSidebarsCompletely || isArticle || isAcademyModule) {
+    if (hideSidebarsCompletely) {
       setLeftOpen(false);
       setRightOpen(false);
-    } else if (isHomepage) {
-      setLeftOpen(true);
-      setRightOpen(true);
     }
-  }, [pathname, hideSidebarsCompletely, isArticle, isAcademyModule, isHomepage, setLeftOpen, setRightOpen]);
+  }, [pathname, hideSidebarsCompletely, setLeftOpen, setRightOpen]);
 
   // 4. WINDOW RESIZE HANDLER
   useEffect(() => {
@@ -93,7 +83,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         <div className="sticky top-0 z-30 h-10 flex justify-center transition-all duration-300 pointer-events-none bg-white border-b border-slate-200 shadow-[0_4px_8px_-2px_rgba(0,0,0,0.12)]">
           <div className="w-full px-4 h-full pointer-events-auto">
             <div className="h-full flex items-center w-full">
-              <div className="shrink-0 flex items-center h-full w-[500px]">
+              <div className="shrink-0 flex items-center h-full w-125">
                 {showBreadcrumbs && <Breadcrumbs />}
               </div>
 
@@ -126,7 +116,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           isOpen={isLeftOpen}
           setIsOpen={setLeftOpen}
           stickyTop={sidebarTop}
-          expandLabel="Display Sidebar"
+          expandLabel="Navigation"
         >
           <HomeSidebar onNavigate={handleSidebarLinkClick} />
         </CollapsibleSidebar>
@@ -143,12 +133,24 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           isOpen={isRightOpen}
           setIsOpen={setRightOpen}
           stickyTop={sidebarTop}
-          expandLabel="Display Sidebar"
+          expandLabel="AI Analyst"
           fillHeight={true}
         >
           <RightSidebar />
         </CollapsibleSidebar>
       </div>
+
+      {/* 3. Floating "Ask AI" button — visible on desktop when right sidebar is closed */}
+      {!isRightOpen && (
+        <button
+          onClick={() => setRightOpen(true)}
+          className="hidden lg:flex fixed bottom-6 right-6 z-40 items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm font-bold"
+          aria-label="Open AI Analyst"
+        >
+          <SparklesIcon className="w-4 h-4" />
+          Ask AI
+        </button>
+      )}
 
       <Footer />
     </div>

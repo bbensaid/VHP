@@ -6,10 +6,13 @@ import Link from 'next/link';
 
 const TAB_LABELS: Record<string, string> = {
   // Academy
+  personalized: "Personalized Learning",
+  tracks: "Learning Tracks",
   courses: "Executive Masterclasses",
   faculty: "Faculty & Experts",
   webinars: "Webinars & Events",
   glossary: "Glossary",
+  "case-studies": "Case Study Library",
   casestudies: "Case Study Library",
   // Advisory
   vbc: "Value-Based Care Models",
