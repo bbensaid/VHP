@@ -515,4 +515,49 @@ Each tab panel shows the practice area's description, pillar tags, a link to the
 
 ---
 
+## 11. Sidebar Accordion Redesign & Option A Navigation
+
+**Updated:** March 2026
+
+### 11.1 Sidebar Structure
+
+The left sidebar (`HomeSidebar.tsx`) was restructured from color-coded cards into six named sections with an **inline accordion** pattern. The sections are:
+
+| Section | Contents |
+| --- | --- |
+| **Intelligence** | All 5 pillars (Policy, Economics, Technology, Clinical, Equity), each expandable to subcategories |
+| **Learn** | Personalized Learning, Learning Tracks, Courses, Webinars, Case Studies, Glossary, Faculty |
+| **Analyze & Tools** | 6 Research Lab sections, HTR Simulator, HTI Dashboard, Multimedia, Trending Topics |
+| **States & Programs** | Vermont Act 167, California CalAIM, All States Explorer, AHEAD Model |
+| **Advisory & Services** | Advisory Hub, Connect Hub |
+| **My Library** | Bookmarks and saved content |
+
+### 11.2 Accordion Behavior
+
+- **Inline expansion**: Clicking a section header expands it downward in place — no navigation, no overlay.
+- **Multi-open**: Multiple sections and pillars can be open simultaneously. Opening one section does not close another.
+- **Items**: Each nav item shows a label and icon only. No description text.
+- **State**: Managed by `expandedSections` (which sections are open) and `expandedPillars` (which pillar subcategory groups within Intelligence are open), both in `HomeSidebar.tsx`.
+
+### 11.3 Option A Navigation Pattern
+
+All navigation lives in the sidebar. Top-level section pages (`/academy`, `/research-lab`, `/htr-simulator`) are **flat content pages**, not tabbed hubs. The sidebar's Learn and Analyze sections provide direct links to each sub-section route, making the section landing pages purely informational.
+
+| Page | Pattern | Navigation entry point |
+| --- | --- | --- |
+| `/academy` | Flat content page | Sidebar → Learn → individual section links |
+| `/research-lab` | Content page (6 lab descriptions) | Sidebar → Analyze & Tools → individual lab section links |
+| `/htr-simulator` | Flat scrollable content page | Sidebar → Analyze & Tools → HTR Simulator |
+| `/research-lab/[section]` | Tool page with raised folder-tab UI | Direct from sidebar or from `/research-lab` |
+
+### 11.4 Research Lab Section Pages
+
+The individual research lab section pages (`/research-lab/[section]`) retain their existing tool-selection UI: **raised folder tabs** (not underline tabs, not `HubPageTemplate` browser tabs). This is a distinct visual treatment from the platform's standard tab style — it intentionally looks like a folder/file metaphor to distinguish tool selection from page navigation.
+
+### 11.5 Previous Sidebar Structure (Removed)
+
+The previous sidebar used four color-coded cards (Services/Indigo, Tools & Resources/Amber, Federal Programs/Emerald, State Initiatives/Rose). This structure has been replaced by the six-section accordion described above. References to these card names in older documentation are stale.
+
+---
+
 *End of addendum. Merge into respective guides during next documentation pass.*

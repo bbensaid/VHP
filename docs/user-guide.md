@@ -80,17 +80,18 @@ The white bar below contains the primary navigation:
 
 ### Left Sidebar
 
-The left sidebar is persistent across all pages. It provides quick access to the entire platform organized into five sections:
+The left sidebar is persistent across all pages. It provides quick access to the entire platform organized into six sections with an **inline accordion** — clicking a section or pillar header expands it downward in place without navigating away. Multiple sections and pillars can be open simultaneously. Items show a label and icon only (no descriptions).
 
-| Section | Color | Contents |
-|---|---|---|
-| **Intelligence** | Slate | All 5 pillars, each expandable to show subcategories |
-| **Learn** | Sky Blue | Academy Hub, Personalized Learning, Tracks, Courses, Webinars, Case Studies, Glossary |
-| **Analyze & Tools** | Amber | Research Lab, HTR Simulator, 50-State Dashboard, AHEAD Model, Multimedia, Trending |
-| **State Initiatives** | Rose | Vermont Act 167, California CalAIM, All States Explorer |
-| **Advisory & Services** | Indigo | Advisory Hub, Connect Hub |
+| Section | Contents |
+|---|---|
+| **Intelligence** | All 5 pillars, each expandable to show subcategories |
+| **Learn** | Personalized Learning, Learning Tracks, Courses, Webinars, Case Studies, Glossary, Faculty (all direct `/academy/*` routes) |
+| **Analyze & Tools** | 6 Research Lab sections, HTR Simulator, HTI Dashboard, Multimedia, Trending Topics |
+| **States & Programs** | Vermont Act 167, California CalAIM, All States Explorer, AHEAD Model |
+| **Advisory & Services** | Advisory Hub, Connect Hub |
+| **My Library** | Bookmarks and saved content |
 
-Click any pillar name to navigate to its hub. Click the **chevron (›)** next to a pillar to expand its subcategories inline without navigating away.
+Click any section header to expand it. Click any pillar within Intelligence to expand its subcategories. Multiple sections and pillars stay open simultaneously.
 
 ### Right Sidebar
 
@@ -203,19 +204,19 @@ Click **Load More Intelligence** at the bottom of the feed to fetch additional i
 
 The Academy is the platform's learning hub for executive education, structured courses, expert faculty, and AI-powered personalized curriculum.
 
-### Tab Structure
+### Navigation
 
-When you land on `/academy`, you'll see seven tabs:
+The `/academy` page is a content-only landing page describing what the Academy offers. Navigation to individual Academy sections is done via the left sidebar's **Learn** section — each entry links directly to its `/academy/*` route. There are no tabs on the `/academy` page itself.
 
-| Tab | Description |
+| Section | URL |
 |---|---|
-| **Personalized Learning** | AI wizard that builds a custom multi-week curriculum for your role and goals |
-| **Learning Tracks** | Structured multi-course programs grouped by theme |
-| **Courses** | Individual in-depth courses with modules |
-| **Webinars** | Live and recorded expert sessions |
-| **Case Studies** | Real-world healthcare transformation stories |
-| **Glossary** | Healthcare terminology A–Z |
-| **Faculty** | Directory of expert instructors and advisors |
+| **Personalized Learning** | `/academy/personalized-learning` |
+| **Learning Tracks** | `/academy/tracks` |
+| **Courses** | `/academy/courses` |
+| **Webinars** | `/academy/webinars` |
+| **Case Studies** | `/academy/case-studies` |
+| **Glossary** | `/academy/glossary` |
+| **Faculty** | `/academy/faculty` |
 
 ### Personalized Learning (AI-Powered)
 
@@ -303,7 +304,7 @@ Each tool accepts inputs relevant to your organization or scenario (e.g., patien
 
 **URL**: `/htr-simulator`
 
-The HTR Simulator is a five-pillar scenario modeler that scores a healthcare transformation strategy across all five dimensions simultaneously.
+The HTR Simulator is a five-pillar scenario modeler that scores a healthcare transformation strategy across all five dimensions simultaneously. The `/htr-simulator` page is a **flat, scrollable content page** — there are no tabs. All content (framework overview, scoring model, use cases, methodology) is presented on a single scrollable page.
 
 ### How It Works
 
@@ -469,9 +470,13 @@ Advisory and Admin users have access to an AI **agent** that can use tools durin
 - **Ask follow-ups**: The AI maintains conversation context within a session
 - **Use "Ask AI" inline**: When reading a pillar page or report, open the right sidebar and ask follow-up questions without leaving the page
 
+### Expand to Full Chat
+
+In the right sidebar, click the **expand button** (four-arrows-out icon, `ArrowsPointingOutIcon`) to open the full `/chat` page.
+
 ### Full Chat Page
 
-Navigate to `/chat` for a full-screen chat experience with more display space. The full chat page disables the sidebars to maximize the chat area.
+Navigate to `/chat` for a full-screen chat experience with more display space. The full chat page disables the sidebars to maximize the chat area. **Save** and **Clear** buttons are always visible in the chat header. To collapse back to the right sidebar and return to the previous page, click the **collapse button** (four-arrows-in icon, `ArrowsPointingInIcon`) in the header.
 
 ---
 

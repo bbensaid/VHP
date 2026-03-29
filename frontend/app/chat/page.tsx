@@ -260,7 +260,7 @@ export default function ChatPage() {
     <div className="h-full flex flex-col bg-slate-50">
 
       {/* ── Header ─────────────────────────────────────────────────────────── */}
-      <header className="shrink-0 z-20 bg-white border-b border-slate-200 px-4 md:px-6 pt-4 pb-3 flex items-center justify-between">
+      <header className="shrink-0 z-(--z-sticky) bg-white border-b border-slate-200 px-4 md:px-6 pt-4 pb-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1">
             <button
@@ -404,12 +404,12 @@ export default function ChatPage() {
                     </div>
                     {msg.text && (
                       <div className="flex items-center gap-2 mt-3 pt-2 border-t border-slate-100">
-                        <button onClick={() => handleCopy(msg.text, i)} className="text-slate-400 hover:text-slate-600 transition-colors p-1 rounded" title="Copy" aria-label={copiedIndex === i ? "Copied" : "Copy message"}>
+                        <button onClick={() => handleCopy(msg.text, i)} className="text-slate-400 hover:text-slate-600 transition-colors p-2 rounded" title="Copy" aria-label={copiedIndex === i ? "Copied" : "Copy message"}>
                           {copiedIndex === i ? <CheckIcon className="w-3.5 h-3.5 text-emerald-500" aria-hidden="true" /> : <ClipboardDocumentIcon className="w-3.5 h-3.5" aria-hidden="true" />}
                         </button>
                         <button
                           onClick={() => handleFeedback(i, "up")}
-                          className={`p-1 rounded transition-colors ${msg.feedback === "up" ? "text-emerald-600 bg-emerald-50" : "text-slate-400 hover:text-emerald-600"}`}
+                          className={`p-2 rounded transition-colors ${msg.feedback === "up" ? "text-emerald-600 bg-emerald-50" : "text-slate-400 hover:text-emerald-600"}`}
                           title="Helpful"
                           aria-label="Mark as helpful"
                           aria-pressed={msg.feedback === "up"}
@@ -418,7 +418,7 @@ export default function ChatPage() {
                         </button>
                         <button
                           onClick={() => handleFeedback(i, "down")}
-                          className={`p-1 rounded transition-colors ${msg.feedback === "down" ? "text-rose-600 bg-rose-50" : "text-slate-400 hover:text-rose-600"}`}
+                          className={`p-2 rounded transition-colors ${msg.feedback === "down" ? "text-rose-600 bg-rose-50" : "text-slate-400 hover:text-rose-600"}`}
                           title="Not helpful"
                           aria-label="Mark as not helpful"
                           aria-pressed={msg.feedback === "down"}
@@ -464,8 +464,7 @@ export default function ChatPage() {
                   onKeyDown={handleKeyDown}
                   placeholder="Ask the Analyst… (Enter to send, Shift+Enter for new line)"
                   rows={1}
-                  className="flex-1 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none resize-none leading-relaxed"
-                  style={{ maxHeight: "160px" }}
+                  className="flex-1 max-h-40 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none resize-none leading-relaxed"
                   aria-label="Chat message input"
                 />
                 {isLoading ? (
@@ -508,7 +507,7 @@ export default function ChatPage() {
         /* Backdrop — pressing Escape or clicking outside closes the dialog */
         <div
           role="presentation"
-          className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4"
+          className="fixed inset-0 z-(--z-modal) bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4"
           onClick={() => setShowClearConfirm(false)}
           onKeyDown={(e) => e.key === "Escape" && setShowClearConfirm(false)}
         >

@@ -5,6 +5,31 @@
 @variant dark (&:is(.dark *));
 
 @theme {
+  /* ── Z-index scale — use these instead of arbitrary z-[n] values ────────
+     z-sticky   20  sticky bars (breadcrumbs, sub-nav)
+     z-dropdown 30  dropdowns, mega-menus
+     z-overlay  40  mobile backdrop dimmer, floating buttons
+     z-sidebar  50  sidebars, main header
+     z-modal    60  modals, command palette, onboarding
+     z-toast    70  toast notifications (always on top)
+  ─────────────────────────────────────────────────────────────────────── */
+  --z-sticky:   20;
+  --z-dropdown: 30;
+  --z-overlay:  40;
+  --z-sidebar:  50;
+  --z-modal:    60;
+  --z-toast:    70;
+
+  /* ── Layout dimensions ──────────────────────────────────────────────────
+     Single source of truth for structural widths/heights.
+     Components reference these so a sidebar-width change propagates everywhere.
+  ─────────────────────────────────────────────────────────────────────── */
+  --sidebar-width:          18rem;   /* 288px — CollapsibleSidebar open width  */
+  --sidebar-stub-width:     2.5rem;  /* 40px  — CollapsibleSidebar closed stub */
+  --sticky-bar-height:      2.5rem;  /* 40px  — AppShell breadcrumb/ticker bar */
+  --sidebar-bottom-gap:     2rem;    /* 32px  — breathing room at viewport bottom */
+  --touch-target-min:       2.75rem; /* 44px  — WCAG minimum touch target size  */
+
   /* ── Pillar brand colors ───────────────────────────────────────────────── */
   --color-brand-policy: #0369a1;
   --color-brand-economics: #059669;

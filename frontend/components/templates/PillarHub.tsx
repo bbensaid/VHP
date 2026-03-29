@@ -202,7 +202,7 @@ export function PillarHub({
             </div>
             
             {/* Right Column: Sticky Sidebar Widget */}
-            <div className="lg:w-1/3 sticky w-full" style={{ top: "var(--sidebar-top, 8rem)" }}>
+            <div className="lg:w-1/3 sticky w-full" style={{ top: "var(--sidebar-top, var(--sticky-bar-height, 2.5rem))" }}>
               <div className="bg-indigo-700 text-white p-8 md:p-10 rounded-2xl shadow-xl">
                 <h3 className="font-bold text-2xl mb-3">HTR {pillarName} Data</h3>
                 <p className="text-indigo-100 mb-8 text-base leading-relaxed">

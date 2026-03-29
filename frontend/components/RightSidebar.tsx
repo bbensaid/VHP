@@ -124,20 +124,20 @@ export default function RightSidebar() {
             {messages.length > 0 && (
               <button
                 onClick={() => setMessages([])}
-                className="p-1 text-slate-400 hover:text-rose-500 rounded transition-colors"
+                className="p-2.5 text-slate-400 hover:text-rose-500 rounded transition-colors"
                 title="Clear"
               >
                 <TrashIcon className="w-3.5 h-3.5" />
               </button>
             )}
-            <Link href="/chat" className="p-1 text-slate-400 hover:text-indigo-600 rounded transition-colors" title="Expand to full view">
+            <Link href="/chat" className="p-2.5 text-slate-400 hover:text-indigo-600 rounded transition-colors" title="Expand to full view">
               <ArrowsPointingOutIcon className="w-3.5 h-3.5" />
             </Link>
           </div>
         </div>
 
         {/* Messages */}
-        <div ref={messagesContainerRef} className="flex flex-col gap-3 p-3 overflow-y-auto text-xs" style={{ maxHeight: "calc(100vh - 22rem)" }}>
+        <div ref={messagesContainerRef} className="flex-1 min-h-0 flex flex-col gap-3 p-3 overflow-y-auto text-xs">
           {messages.length === 0 && (
             <p className="text-slate-400 text-center py-4 leading-relaxed">
               Ask a quick question without leaving this page.
@@ -202,8 +202,7 @@ export default function RightSidebar() {
             placeholder="Ask a quick question…"
             aria-label="Message to AI Analyst"
             rows={1}
-            className="flex-1 text-xs text-slate-900 placeholder:text-slate-400 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-indigo-300 resize-none leading-relaxed"
-            style={{ maxHeight: "80px" }}
+            className="flex-1 max-h-20 text-xs text-slate-900 placeholder:text-slate-400 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-indigo-300 resize-none leading-relaxed"
           />
           {isLoading ? (
             <button

@@ -251,7 +251,7 @@ function ResearchLabHubInner() {
       </div>
 
       {/* ── Sticky nav — BOTH rows in ONE container ────────────────────── */}
-      <div className="sticky z-30 mb-8" style={{ top: 'var(--sidebar-top, 8.5rem)' }}>
+      <div className="sticky z-30 mb-8" style={{ top: 'var(--sidebar-top, var(--sticky-bar-height, 2.5rem))' }}>
         <nav
           className="flex flex-wrap justify-center items-end border border-slate-200 rounded-t-xl px-2 bg-slate-50/80 backdrop-blur-sm pt-2 gap-y-1"
           aria-label="Research Lab navigation"

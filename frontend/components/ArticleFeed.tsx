@@ -435,7 +435,7 @@ export default function ArticleFeed({
   const relatedMediaSidebar = hasRelatedMedia ? (
     <aside
       className="lg:col-span-4 sticky space-y-8"
-      style={{ top: "calc(var(--sidebar-top, 8rem) + 1rem)" }}
+      style={{ top: "calc(var(--sidebar-top, var(--sticky-bar-height, 2.5rem)) + 1rem)" }}
       aria-label="Related media"
     >
       <div className="bg-slate-50 p-6 md:p-8 rounded-2xl border border-slate-200">

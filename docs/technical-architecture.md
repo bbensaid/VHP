@@ -124,7 +124,7 @@ Vermont-Health-Platform/
 ├── frontend/                     # Next.js application
 │   ├── app/                      # App Router pages and API routes
 │   │   ├── (auth)/               # Login, signup, password reset
-│   │   ├── academy/              # Learning hub + all sub-tabs
+│   │   ├── academy/              # Learning center content page + sub-section pages
 │   │   ├── advisory/             # Advisory services
 │   │   ├── advisory-hub/         # Alternative advisory entry point
 │   │   ├── ahead-model/          # AHEAD CMS model
@@ -143,7 +143,7 @@ Vermont-Health-Platform/
 │   │   │   └── [state]/          # Dynamic state profiles
 │   │   ├── economics/            # Economics pillar
 │   │   ├── equity/               # Equity pillar
-│   │   ├── htr-simulator/        # 5-pillar scenario modeler
+│   │   ├── htr-simulator/        # Flat scrollable content page (framework overview, no tabs)
 │   │   ├── hti-dashboard/        # HTI metrics dashboard
 │   │   ├── multimedia/           # Video and media library
 │   │   ├── policy/               # Policy pillar
@@ -987,10 +987,10 @@ Every chat query is logged to `rag_query_log`:
 |---|---|---|---|
 | Homepage | `app/page.tsx` + `HomeContent.tsx` | Server + Client | Sanity data server-side, filters client-side |
 | Policy Hub | `app/policy/page.tsx` | Server | Static + LatestHubReports |
-| Academy | `app/academy/page.tsx` | Server | Tabs rendered via HubPageTemplate |
+| Academy | `app/academy/page.tsx` | Server | Flat content page — no tabs; section nav in sidebar |
 | Personalized Learning | `components/academy/PersonalizedLearningHub.tsx` | Client | localStorage, API calls, audio |
 | Research Lab | `app/research-lab/page.tsx` | Server (gated) | Role check → ResearchLabHub client component |
-| HTR Simulator | `app/htr-simulator/page.tsx` | Client | 5-pillar form state |
+| HTR Simulator | `app/htr-simulator/page.tsx` | Client | Flat scrollable content page — no tabs |
 | Dashboard | `app/dashboard/page.tsx` | Server + Client | Map visualization |
 | State Profile | `app/dashboard/[state]/page.tsx` | Server | Dynamic segment, Supabase fetch |
 | Chat | `app/chat/page.tsx` | Client | Full-screen, no sidebars |
@@ -1001,7 +1001,7 @@ Every chat query is logged to `rag_query_log`:
 |---|---|---|
 | `Header.tsx` | Navigation, search, mega-menus, ticker | `activeMegaMenu`, `searchQuery`, sidebar context |
 | `AppShell.tsx` | Content area layout, sidebar orchestration | `isLeftOpen`, `isRightOpen`, floating Ask AI |
-| `HomeSidebar.tsx` | Left nav (persistent, context-aware) | `expandedPillars` accordion state |
+| `HomeSidebar.tsx` | Left nav (persistent, context-aware) | Inline accordion — `expandedSections` + `expandedPillars` state; multiple sections/pillars open simultaneously |
 | `CollapsibleSidebar.tsx` | Animated sidebar wrapper | `isOpen`, `side`, `stickyTop` |
 | `RightSidebar.tsx` | AI Analyst chat panel | `messages[]`, `isLoading`, streaming reader |
 | `Breadcrumbs.tsx` | Current location trail | `pathname`, `searchParams` (tab labels) |

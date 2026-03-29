@@ -75,18 +75,20 @@ The header has two rows:
 
 The left sidebar is a collapsible navigation panel. Toggle it with the icon on the left side of the nav bar. On mobile it overlays the page; on desktop it slides in without obscuring content.
 
-The sidebar is organized into four color-coded cards:
+The sidebar is organized into six sections with an inline accordion — clicking a section or pillar header expands it downward in place. Multiple sections and pillars can be open simultaneously. Items show a label and icon only (no descriptions).
 
-| Card | Color | Links |
-| --- | --- | --- |
-| **Services** | Indigo | Academy, Advisory |
-| **Tools & Resources** | Amber | HTR Simulator, Research Lab, Multimedia, Trending Topics |
-| **Federal Programs** | Emerald | Rural Health Transformation, AHEAD Model |
-| **State Initiatives** | Rose | Vermont Act 167, California CalAIM, Other States |
+| Section | Contents |
+| --- | --- |
+| **Intelligence** | Five pillars (Policy, Economics, Technology, Clinical, Equity), each expandable to show subcategories |
+| **Learn** | Personalized Learning, Learning Tracks, Courses, Webinars, Case Studies, Glossary, Faculty (all direct `/academy/*` routes) |
+| **Analyze & Tools** | 6 Research Lab sections, HTR Simulator, HTI Dashboard, Multimedia, Trending Topics |
+| **States & Programs** | Vermont Act 167, California CalAIM, All States Explorer, AHEAD Model |
+| **Advisory & Services** | Advisory Hub, Connect Hub |
+| **My Library** | Bookmarks and saved content |
 
 ### Right Sidebar — Inline AI Chat
 
-The right sidebar contains a compact version of the AI Analyst. You can ask quick questions without leaving your current page. For a full-featured experience, click "Full chat →" to go to `/chat`.
+The right sidebar contains a compact version of the AI Analyst. You can ask quick questions without leaving your current page. For a full-featured experience, click the **expand button** (four-arrows-out icon, `ArrowsPointingOutIcon`) to open the full `/chat` page.
 
 - Type your question and press Enter (or Shift+Enter for a new line)
 - Press Stop to interrupt a long response
@@ -138,7 +140,8 @@ The knowledge base includes:
 - Click **Download transcript** to save the conversation as a text file
 - After each response, **follow-up question suggestions** appear in the left panel — click any to continue the conversation
 - Conversation history is saved in your browser's local storage and survives page reloads
-- Click **Clear** (trash icon) to erase history
+- **Save** and **Clear** buttons are always visible in the chat header
+- To return to the previous page with the right sidebar open, click the **collapse button** (four-arrows-in icon, `ArrowsPointingInIcon`) in the header
 
 ### Prefilling a Question
 
@@ -165,10 +168,11 @@ The `/states` page lists all states with their RHT program profiles, award amoun
 
 ## HTR Academy
 
-The Academy (`/academy`) is available to **Student** plan members and above.
+The Academy (`/academy`) is available to **Student** plan members and above. The `/academy` page is a content-only landing page — navigation to individual Academy sections is done via the left sidebar's **Learn** section, not through tabs on the page itself.
 
 ### What's in the Academy
 
+- **Personalized Learning** (`/academy/personalized-learning`) — AI wizard that builds a custom multi-week curriculum
 - **Courses** (`/academy/courses`) — structured multi-module learning programs
 - **Modules** (`/academy/modules/[slug]`) — individual learning units with objectives, body content, and knowledge checks
 - **Case Studies** (`/academy/case-studies`) — real-world healthcare transformation examples
@@ -195,7 +199,9 @@ Each academy module has:
 
 The HTR Simulator is the platform's policy simulation engine — a multi-pillar decision-support tool for modeling the downstream consequences of healthcare transformation decisions before they are implemented.
 
-**Five tabs:**
+The `/htr-simulator` page is a flat, scrollable content page covering the simulator's Overview, 5-Pillar Framework, Simulation Engine mechanics, Use Cases index, and Methodology. There are no tabs — all content scrolls on a single page.
+
+**Content areas (scrollable sections):**
 
 - **Overview** — What the simulator is, its six core capabilities, and who it is designed for
 - **5-Pillar Framework** — Full explanation of the scoring model across Policy Alignment, Technology Modernization, Financial Sustainability, Health Equity, and Clinical Quality
@@ -203,9 +209,9 @@ The HTR Simulator is the platform's policy simulation engine — a multi-pillar 
 - **Use Cases** — Index of configured simulation instances. Vermont Act 167 is the live use case; California CalAIM, Oregon CCO, and CMS Rural Health Transformation are planned
 - **Methodology** — Data sources, scoring assumptions, and limitations
 
-**Relationship to use case pages:** The HTR Simulator hub contains all generic, educational content about the framework. Individual use case pages (e.g., `/vermont-act-167/simulator`) go directly into the simulation with context-specific data — they do not repeat the framework documentation.
+**Relationship to use case pages:** The HTR Simulator page contains all generic, educational content about the framework. Individual use case pages (e.g., `/vermont-act-167/simulator`) go directly into the simulation with context-specific data — they do not repeat the framework documentation.
 
-Access via: the **HTR Simulator** entry in the left sidebar under Tools & Resources, or directly at `/htr-simulator`.
+Access via: the **HTR Simulator** entry in the left sidebar under Analyze & Tools, or directly at `/htr-simulator`.
 
 ---
 
@@ -219,12 +225,12 @@ Deep analysis of Vermont's landmark health reform legislation. Includes the Act 
 Analysis of California's Medi-Cal transformation initiative.
 
 ### Research Lab (`/research-lab`)
-19 interactive analytical tools organized into 6 sections, all accessible from a single unified page. No sub-page navigation required — use the two-level tab interface directly on `/research-lab`.
+19 interactive analytical tools organized into 6 sections. The `/research-lab` page is a content page describing the six lab sections; individual section pages (`/research-lab/[section]`) contain the interactive tools and use a raised folder-tab UI to select among tools within a section.
 
 **How to navigate:**
 
-- **Row 1 — Section tabs** (browser-tab style): select one of 6 research domains
-- **Row 2 — Tool pills** (pill/chip style): select a specific tool within the active section
+- Access a section directly from the left sidebar under Analyze & Tools, or navigate to `/research-lab/[section]`
+- Within a section page, use the **raised folder tabs** at the top to select a specific tool
 
 | Section | Tools |
 | --- | --- |
