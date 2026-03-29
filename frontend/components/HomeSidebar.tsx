@@ -8,7 +8,6 @@ import {
   AcademicCapIcon,
   BriefcaseIcon,
   UsersIcon,
-  ChevronRightIcon,
   FilmIcon,
   ArrowTrendingUpIcon,
   MapPinIcon,
@@ -32,7 +31,7 @@ interface HomeSidebarProps {
 const pillars = [
   {
     id: "policy", label: "Policy", href: "/policy",
-    dot: "bg-sky-500", accent: "text-sky-700",
+    dot: "bg-sky-500", accent: "text-sky-700", rail: "border-l-sky-400",
     items: [
       { href: "/policy/regulation", label: "Regulation & Legislation" },
       { href: "/policy/mandates", label: "Public Health Mandates" },
@@ -42,7 +41,7 @@ const pillars = [
   },
   {
     id: "economics", label: "Economics", href: "/economics",
-    dot: "bg-emerald-500", accent: "text-emerald-700",
+    dot: "bg-emerald-500", accent: "text-emerald-700", rail: "border-l-emerald-400",
     items: [
       { href: "/economics/value", label: "Value-Based Care Models" },
       { href: "/economics/market", label: "Market & Finance" },
@@ -52,7 +51,7 @@ const pillars = [
   },
   {
     id: "technology", label: "Technology", href: "/technology",
-    dot: "bg-indigo-500", accent: "text-indigo-700",
+    dot: "bg-indigo-500", accent: "text-indigo-700", rail: "border-l-indigo-400",
     items: [
       { href: "/technology/ai", label: "AI & Machine Learning" },
       { href: "/technology/digital", label: "Digital Health & Telemedicine" },
@@ -62,7 +61,7 @@ const pillars = [
   },
   {
     id: "clinical", label: "Clinical", href: "/clinical",
-    dot: "bg-red-500", accent: "text-red-700",
+    dot: "bg-red-500", accent: "text-red-700", rail: "border-l-red-400",
     items: [
       { href: "/clinical/hah", label: "Hospital-at-Home" },
       { href: "/clinical/precision", label: "Precision Medicine" },
@@ -71,7 +70,7 @@ const pillars = [
   },
   {
     id: "equity", label: "Equity", href: "/equity",
-    dot: "bg-amber-500", accent: "text-amber-700",
+    dot: "bg-amber-500", accent: "text-amber-700", rail: "border-l-amber-400",
     items: [
       { href: "/equity/sdoh", label: "SDOH Integration" },
       { href: "/equity/bias", label: "Algorithmic Bias" },
@@ -115,13 +114,13 @@ const SECTIONS: Section[] = [
     borderAccent: "border-l-sky-500", hoverBg: "hover:bg-sky-50",
     divideColor: "divide-sky-100", activeItemBg: "bg-sky-50",
     items: [
-      { href: "/academy", label: "Academy Hub", icon: AcademicCapIcon },
-      { href: "/academy", label: "Personalized Learning", icon: SparklesIcon, desc: "AI-powered paths" },
-      { href: "/academy/tracks", label: "Learning Tracks", icon: TableCellsIcon },
-      { href: "/academy/courses", label: "Courses", icon: BookOpenIcon },
-      { href: "/academy/webinars", label: "Webinars", icon: PresentationChartLineIcon },
-      { href: "/academy/case-studies", label: "Case Studies", icon: DocumentTextIcon },
-      { href: "/academy/glossary", label: "Glossary", icon: BookOpenIcon },
+      { href: "/academy/personalized-learning", label: "Personalized Learning", icon: SparklesIcon },
+      { href: "/academy/tracks",                label: "Learning Tracks",        icon: TableCellsIcon },
+      { href: "/academy/courses",               label: "Courses",                icon: BookOpenIcon },
+      { href: "/academy/webinars",              label: "Webinars",               icon: PresentationChartLineIcon },
+      { href: "/academy/case-studies",          label: "Case Studies",           icon: DocumentTextIcon },
+      { href: "/academy/glossary",              label: "Glossary",               icon: BookOpenIcon },
+      { href: "/academy/faculty",               label: "Faculty",                icon: UsersIcon },
     ],
   },
   {
@@ -130,11 +129,16 @@ const SECTIONS: Section[] = [
     borderAccent: "border-l-amber-500", hoverBg: "hover:bg-amber-50",
     divideColor: "divide-amber-100", activeItemBg: "bg-amber-50",
     items: [
-      { href: "/research-lab", label: "Research Lab", icon: BeakerIcon, desc: "19 interactive tools" },
-      { href: "/htr-simulator", label: "HTR Simulator", icon: CpuChipIcon, desc: "5-pillar scenario modeler" },
-      { href: "/hti-dashboard", label: "HTI Dashboard", icon: DocumentTextIcon },
-      { href: "/multimedia", label: "Multimedia", icon: FilmIcon },
-      { href: "/trending-topics", label: "Trending Topics", icon: ArrowTrendingUpIcon },
+      { href: "/research-lab/interoperability",    label: "Interoperability & Risk",   icon: BeakerIcon },
+      { href: "/research-lab/payment-models",      label: "Payment Models & VBC",      icon: DocumentTextIcon },
+      { href: "/research-lab/population-equity",   label: "Population & Equity",       icon: UsersIcon },
+      { href: "/research-lab/policy-quality",      label: "Policy & Quality Sciences", icon: DocumentTextIcon },
+      { href: "/research-lab/technology-ai",       label: "Technology & AI",           icon: CpuChipIcon },
+      { href: "/research-lab/knowledge-workspace", label: "Knowledge & Workspace",     icon: BookOpenIcon },
+      { href: "/htr-simulator",                    label: "HTR Simulator",             icon: CpuChipIcon },
+      { href: "/hti-dashboard",                    label: "HTI Dashboard",             icon: DocumentTextIcon },
+      { href: "/multimedia",                       label: "Multimedia",                icon: FilmIcon },
+      { href: "/trending-topics",                  label: "Trending Topics",           icon: ArrowTrendingUpIcon },
     ],
   },
   {
@@ -143,11 +147,11 @@ const SECTIONS: Section[] = [
     borderAccent: "border-l-rose-500", hoverBg: "hover:bg-rose-50",
     divideColor: "divide-rose-100", activeItemBg: "bg-rose-50",
     items: [
-      { href: "/vermont-act-167", label: "Vermont Act 167", icon: MapPinIcon },
-      { href: "/california-calaim", label: "California CalAIM", icon: MapPinIcon },
-      { href: "/states", label: "All States Explorer", icon: GlobeAmericasIcon },
-      { href: "/dashboard", label: "50-State Dashboard", icon: TableCellsIcon, desc: "Rural Health Transformation" },
-      { href: "/ahead-model", label: "AHEAD Model", icon: DocumentTextIcon, desc: "All-payer cost of care" },
+      { href: "/vermont-act-167",   label: "Vermont Act 167",    icon: MapPinIcon },
+      { href: "/california-calaim", label: "California CalAIM",  icon: MapPinIcon },
+      { href: "/states",            label: "All States Explorer", icon: GlobeAmericasIcon },
+      { href: "/dashboard",         label: "50-State Dashboard", icon: TableCellsIcon },
+      { href: "/ahead-model",       label: "AHEAD Model",        icon: DocumentTextIcon },
     ],
   },
   {
@@ -156,16 +160,16 @@ const SECTIONS: Section[] = [
     borderAccent: "border-l-indigo-500", hoverBg: "hover:bg-indigo-50",
     divideColor: "divide-indigo-100", activeItemBg: "bg-indigo-50",
     items: [
-      { href: "/advisory", label: "Advisory Hub", icon: BriefcaseIcon },
-      { href: "/advisory/consulting", label: "Strategic Consulting", icon: BriefcaseIcon },
-      { href: "/advisory/research", label: "Custom Research", icon: BeakerIcon },
-      { href: "/advisory/financial-audit", label: "Financial Audit", icon: DocumentTextIcon },
-      { href: "/advisory/regulatory", label: "Regulatory Counsel", icon: BookOpenIcon },
-      { href: "/advisory/it-consulting", label: "IT Consulting", icon: CpuChipIcon },
-      { href: "/advisory/training", label: "Training & Education", icon: AcademicCapIcon },
-      { href: "/advisory/independent-review", label: "Independent Review", icon: DocumentTextIcon },
-      { href: "/connect-hub", label: "Connect Hub", icon: UsersIcon },
-      { href: "/community", label: "Community", icon: UsersIcon },
+      { href: "/advisory",                    label: "Advisory Hub",          icon: BriefcaseIcon },
+      { href: "/advisory/consulting",         label: "Strategic Consulting",  icon: BriefcaseIcon },
+      { href: "/advisory/research",           label: "Custom Research",       icon: BeakerIcon },
+      { href: "/advisory/financial-audit",    label: "Financial Audit",       icon: DocumentTextIcon },
+      { href: "/advisory/regulatory",         label: "Regulatory Counsel",    icon: BookOpenIcon },
+      { href: "/advisory/it-consulting",      label: "IT Consulting",         icon: CpuChipIcon },
+      { href: "/advisory/training",           label: "Training & Education",  icon: AcademicCapIcon },
+      { href: "/advisory/independent-review", label: "Independent Review",    icon: DocumentTextIcon },
+      { href: "/connect-hub",                 label: "Connect Hub",           icon: UsersIcon },
+      { href: "/community",                   label: "Community",             icon: UsersIcon },
     ],
   },
 ];
@@ -258,25 +262,26 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                 />
               </button>
 
-              {/* L2 accordion — expands inline, pushes siblings down */}
+              {/* ── L2 accordion: section-colored left rail + tinted bg ── */}
               {isOpen && (
-                <div className="mt-1 rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+                <div className={`mt-1 border-l-4 ${sectionData.borderAccent} bg-slate-50 rounded-r-lg overflow-hidden`}>
 
                   {/* ── INTELLIGENCE: pillar list ─────────────────────── */}
                   {sectionData.isPillars && (
-                    <div className="divide-y divide-slate-100">
+                    <div className="divide-y divide-slate-100/80">
                       {pillars.map((pillar) => {
                         const pillarOpen = expandedPillars.includes(pillar.id);
                         return (
                           <div key={pillar.id}>
-                            {/* Pillar row */}
+
+                            {/* Pillar row — L2 typography: 13px semibold colored */}
                             <button
                               onClick={() => handlePillarClick(pillar.id)}
-                              className="w-full flex items-center justify-between px-3 py-2.5 transition-colors text-left bg-white hover:bg-slate-50"
+                              className="w-full flex items-center justify-between px-3 py-2 transition-colors text-left hover:bg-white/70"
                             >
-                              <div className="flex items-center gap-2.5">
+                              <div className="flex items-center gap-2">
                                 <span className={`w-2 h-2 rounded-full shrink-0 ${pillar.dot}`} />
-                                <span className={`text-sm font-bold ${pillar.accent}`}>
+                                <span className={`text-[13px] font-semibold ${pillar.accent}`}>
                                   {pillar.label}
                                 </span>
                               </div>
@@ -287,36 +292,36 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                               />
                             </button>
 
-                            {/* L3 accordion — pillar sub-items */}
+                            {/* L3: pillar-colored rail + white bg + smaller muted text */}
                             {pillarOpen && (
-                              <div className="border-t border-slate-100 bg-slate-50/60">
+                              <div className={`border-l-2 ${pillar.rail} ml-3 bg-white`}>
                                 {/* Pillar overview link */}
                                 <Link
                                   href={pillar.href}
                                   onClick={onNavigate}
-                                  className={`flex items-center gap-2.5 px-4 py-2 border-b border-slate-100 group ${
-                                    isActive(pillar.href) ? "bg-slate-100" : "hover:bg-slate-100"
+                                  className={`flex items-center gap-2 pl-3 pr-2 py-1.5 border-b border-slate-100 group ${
+                                    isActive(pillar.href) ? "bg-slate-50" : "hover:bg-slate-50"
                                   }`}
                                 >
-                                  <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${pillar.dot}`} />
-                                  <span className={`text-[10px] font-black uppercase tracking-[0.15em] ${pillar.accent} group-hover:underline`}>
+                                  <span className={`text-[10px] font-bold uppercase tracking-widest ${pillar.accent} group-hover:underline`}>
                                     {pillar.label} Overview
                                   </span>
                                 </Link>
-                                {/* Sub-items */}
-                                <div className="divide-y divide-slate-100">
+                                {/* Sub-items — L3 typography: 11px normal muted */}
+                                <div className="divide-y divide-slate-50">
                                   {pillar.items.map((item) => (
                                     <Link
                                       key={item.href}
                                       href={item.href}
                                       onClick={onNavigate}
-                                      className={`flex items-center gap-2.5 px-5 py-2.5 transition-colors group ${
-                                        isActive(item.href) ? "bg-slate-100" : "hover:bg-slate-100"
+                                      className={`flex items-center pl-3 pr-2 py-2 transition-colors group ${
+                                        isActive(item.href) ? "bg-slate-100" : "hover:bg-slate-50"
                                       }`}
                                     >
-                                      <ChevronRightIcon className="w-3 h-3 text-slate-300 shrink-0" />
-                                      <span className={`text-sm font-bold leading-tight group-hover:text-slate-900 ${
-                                        isActive(item.href) ? "text-slate-900" : "text-slate-700"
+                                      <span className={`text-[11px] leading-snug transition-colors ${
+                                        isActive(item.href)
+                                          ? `font-semibold ${pillar.accent}`
+                                          : "font-normal text-slate-500 group-hover:text-slate-700"
                                       }`}>
                                         {item.label}
                                       </span>
@@ -341,18 +346,20 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                             key={`${item.href}-${item.label}`}
                             href={item.href}
                             onClick={onNavigate}
-                            className={`flex items-center gap-3 px-3 py-2.5 transition-colors group ${
+                            className={`flex items-center gap-2.5 px-3 py-2 transition-colors group ${
                               isActive(item.href)
                                 ? sectionData.activeItemBg
-                                : `bg-white ${sectionData.hoverBg}`
+                                : `bg-slate-50 ${sectionData.hoverBg}`
                             }`}
                           >
                             {Icon && (
-                              <Icon className={`w-4 h-4 shrink-0 ${sectionData.headerColor}`} />
+                              <Icon className={`w-3.5 h-3.5 shrink-0 ${sectionData.headerColor} opacity-70`} />
                             )}
                             <div className="min-w-0">
-                              <span className={`text-sm font-bold block leading-tight group-hover:text-slate-900 ${
-                                isActive(item.href) ? "text-slate-900" : "text-slate-700"
+                              <span className={`text-[13px] font-semibold block leading-snug transition-colors ${
+                                isActive(item.href)
+                                  ? sectionData.headerColor
+                                  : "text-slate-600 group-hover:text-slate-900"
                               }`}>
                                 {item.label}
                               </span>
