@@ -159,7 +159,7 @@ function StateDetailClientPageInner({ indexData, programData, stateSlug, hospita
       </div>
 
       {/* TABS NAVIGATION - Sticky below the AppShell Header */}
-      <div className="sticky z-30 mb-8" style={{ top: "var(--sidebar-top, 8.5rem)" }}>
+      <div className="sticky z-30 mb-8" style={{ top: "var(--sidebar-top, var(--sticky-bar-height, 2.5rem))" }}>
         <nav className="flex items-end overflow-x-auto hide-scrollbar border-b border-slate-200 pl-4 bg-white/95 backdrop-blur-sm pt-2" aria-label="Tabs">
           {indexData && <TabButton isActive={activeTab === 'index'} onClick={() => handleTabChange('index')} icon={<ChartBarIcon className="w-5 h-5"/>} label="Performance Index" />}
           {programData && <TabButton isActive={activeTab === 'program'} onClick={() => handleTabChange('program')} icon={<ListBulletIcon className="w-5 h-5"/>} label="RHT Program" />}

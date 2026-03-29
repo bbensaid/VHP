@@ -12,6 +12,10 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
 import { SparklesIcon } from "@heroicons/react/24/outline";
 
+// Named breakpoints matching Tailwind's lg / xl thresholds
+const BREAKPOINT_LG = 1024;
+const BREAKPOINT_XL = 1280;
+
 interface AppShellProps {
   children: React.ReactNode;
   tickerData?: unknown;
@@ -40,13 +44,13 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
     }
   }, [pathname, hideSidebarsCompletely, setLeftOpen, setRightOpen]);
 
-  // 4. WINDOW RESIZE HANDLER
+  // 4. WINDOW RESIZE HANDLER — only fires on actual resize, not on mount.
+  //    User controls initial state; sidebars start open per SidebarContext defaults.
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 1024) setLeftOpen(false);
-      if (window.innerWidth < 1280) setRightOpen(false);
+      if (window.innerWidth < BREAKPOINT_LG) setLeftOpen(false);
+      if (window.innerWidth < BREAKPOINT_XL) setRightOpen(false);
     };
-    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [setLeftOpen, setRightOpen]);
@@ -66,10 +70,10 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const showBreadcrumbs = !isStudio;
   const showTicker = !!activeTickerData && !isStudio;
   const isStickyBarVisible = showBreadcrumbs || showTicker;
-  const sidebarTop = isStickyBarVisible ? "2.5rem" : "0rem";
+  const sidebarTop = isStickyBarVisible ? "2.5rem" : "0rem"; // 2.5rem = --sticky-bar-height
 
   const handleSidebarLinkClick = () => {
-    if (window.innerWidth < 1024) setLeftOpen(false);
+    if (window.innerWidth < BREAKPOINT_LG) setLeftOpen(false);
   };
 
   if (hideSidebarsCompletely) {
@@ -80,7 +84,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
     <div className="flex-1 min-h-0 overflow-y-auto flex flex-col bg-white">
       {/* 1. Sticky Navigation Bar */}
       {isStickyBarVisible && (
-        <div className="sticky top-0 z-30 h-10 flex justify-center transition-all duration-300 pointer-events-none bg-white border-b border-slate-200 shadow-[0_4px_8px_-2px_rgba(0,0,0,0.12)]">
+        <div className="sticky top-0 z-(--z-sticky) h-10 flex justify-center transition-all duration-300 pointer-events-none bg-white border-b border-slate-200 shadow-[0_4px_8px_-2px_rgba(0,0,0,0.12)]">
           <div className="w-full px-4 h-full pointer-events-auto">
             <div className="h-full flex items-center w-full">
               <div className="shrink-0 flex items-center h-full w-85">
@@ -144,7 +148,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
       {!isRightOpen && (
         <button
           onClick={() => setRightOpen(true)}
-          className="flex fixed bottom-6 right-4 lg:right-6 z-40 items-center gap-2 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm font-bold"
+          className="flex fixed bottom-6 right-4 lg:right-6 z-(--z-overlay) items-center gap-2 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm font-bold"
           aria-label="Open AI Analyst"
         >
           <SparklesIcon className="w-4 h-4" />

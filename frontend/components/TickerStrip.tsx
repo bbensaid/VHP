@@ -163,7 +163,7 @@ export default function TickerStrip({
       {selectedItem &&
         createPortal(
           <div
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 animate-in fade-in duration-200"
+            className="fixed inset-0 z-(--z-modal) flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 animate-in fade-in duration-200"
             onClick={() => setSelectedItem(null)}
           >
             <div

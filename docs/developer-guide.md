@@ -669,6 +669,14 @@ export default function MyNewHub() {
 }
 ```
 
+> **Important**: `HubPageTemplate` is for sub-feature hubs and tool pages — **not** for top-level section landing pages. The following top-level pages are flat content pages, not tab hubs:
+>
+> - `/academy` — content-only landing page; Academy section navigation lives in the sidebar's Learn section
+> - `/research-lab` — content page describing the six lab sections; interactive tools live at `/research-lab/[section]`
+> - `/htr-simulator` — flat scrollable content page; the five content areas scroll on a single page with no tabs
+>
+> If you need to restructure one of these pages, build a scrollable content page rather than reaching for `HubPageTemplate`.
+
 ---
 
 ## 8. Adding New Pillar Subcategories
