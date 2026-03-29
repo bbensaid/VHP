@@ -2,6 +2,8 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useSidebar } from "@/components/SidebarContext";
 import {
   SparklesIcon,
   PaperAirplaneIcon,
@@ -14,6 +16,7 @@ import {
   HandThumbUpIcon,
   HandThumbDownIcon,
   ArrowLeftIcon,
+  ArrowsPointingInIcon,
   BookOpenIcon,
   DocumentTextIcon,
   AcademicCapIcon,
@@ -68,6 +71,8 @@ interface Message {
 // ── Component ────────────────────────────────────────────────────────────────
 
 export default function ChatPage() {
+  const router = useRouter();
+  const { setRightOpen } = useSidebar();
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -257,10 +262,19 @@ export default function ChatPage() {
       {/* ── Header ─────────────────────────────────────────────────────────── */}
       <header className="shrink-0 z-20 bg-white border-b border-slate-200 px-4 md:px-6 pt-4 pb-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-indigo-600 transition-colors font-medium">
-            <ArrowLeftIcon className="w-4 h-4" />
-            <span className="hidden sm:inline">Home</span>
-          </Link>
+          <div className="flex items-center gap-1">
+            <button
+              onClick={() => { setRightOpen(true); router.back(); }}
+              className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-indigo-600 transition-colors font-medium p-1.5 rounded-lg hover:bg-slate-100"
+              title="Collapse to sidebar"
+            >
+              <ArrowsPointingInIcon className="w-4 h-4" />
+            </button>
+            <Link href="/" className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-indigo-600 transition-colors font-medium p-1.5 rounded-lg hover:bg-slate-100">
+              <ArrowLeftIcon className="w-4 h-4" />
+              <span className="hidden sm:inline">Home</span>
+            </Link>
+          </div>
           <span className="text-slate-300">|</span>
           <div className="flex items-center gap-2">
             <SparklesIcon className="w-5 h-5 text-indigo-600" />
@@ -272,16 +286,26 @@ export default function ChatPage() {
           </div>
         </div>
         <div className="flex items-center gap-1">
-          {messages.length > 0 && (
-            <>
-              <button onClick={handleDownloadTranscript} className="p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors" title="Download transcript" aria-label="Download transcript">
-                <ArrowDownTrayIcon className="w-4 h-4" aria-hidden="true" />
-              </button>
-              <button onClick={() => setShowClearConfirm(true)} className="p-2 text-slate-400 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors" title="Clear conversation" aria-label="Clear conversation">
-                <TrashIcon className="w-4 h-4" aria-hidden="true" />
-              </button>
-            </>
-          )}
+          <button
+            onClick={handleDownloadTranscript}
+            disabled={messages.length === 0}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-500 hover:text-slate-800 hover:bg-slate-100 rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+            title="Download transcript"
+            aria-label="Download transcript"
+          >
+            <ArrowDownTrayIcon className="w-4 h-4" aria-hidden="true" />
+            <span className="hidden sm:inline">Save</span>
+          </button>
+          <button
+            onClick={() => setShowClearConfirm(true)}
+            disabled={messages.length === 0}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-500 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+            title="Clear conversation"
+            aria-label="Clear conversation"
+          >
+            <TrashIcon className="w-4 h-4" aria-hidden="true" />
+            <span className="hidden sm:inline">Clear</span>
+          </button>
         </div>
       </header>
 
