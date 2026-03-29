@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { SparklesIcon, ArrowRightIcon, PaperAirplaneIcon, StopIcon, TrashIcon, ArrowPathIcon, ExclamationTriangleIcon } from "@heroicons/react/24/outline";
+import { SparklesIcon, ArrowsPointingOutIcon, PaperAirplaneIcon, StopIcon, TrashIcon, ArrowPathIcon, ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import ReactMarkdown from "react-markdown";
 
 interface Message {
@@ -130,8 +130,8 @@ export default function RightSidebar() {
                 <TrashIcon className="w-3.5 h-3.5" />
               </button>
             )}
-            <Link href="/chat" className="flex items-center gap-1 text-[10px] text-slate-400 hover:text-indigo-600 transition-colors px-1">
-              Full chat <ArrowRightIcon className="w-3 h-3" />
+            <Link href="/chat" className="p-1 text-slate-400 hover:text-indigo-600 rounded transition-colors" title="Expand to full view">
+              <ArrowsPointingOutIcon className="w-3.5 h-3.5" />
             </Link>
           </div>
         </div>
