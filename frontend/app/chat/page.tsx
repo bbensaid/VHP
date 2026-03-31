@@ -257,28 +257,28 @@ export default function ChatPage() {
   // ── Render ─────────────────────────────────────────────────────────────────
 
   return (
-    <div className="h-full flex flex-col bg-slate-50">
+    <div className="h-full flex flex-col bg-slate-50 dark:bg-slate-950">
 
       {/* ── Header ─────────────────────────────────────────────────────────── */}
-      <header className="shrink-0 z-(--z-sticky) bg-white border-b border-slate-200 px-4 md:px-6 pt-4 pb-3 flex items-center justify-between">
+      <header className="shrink-0 z-(--z-sticky) bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 px-4 md:px-6 pt-4 pb-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1">
             <button
               onClick={() => { setRightOpen(true); router.back(); }}
-              className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-indigo-600 transition-colors font-medium p-1.5 rounded-lg hover:bg-slate-100"
+              className="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-600 transition-colors font-medium p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
               title="Collapse to sidebar"
             >
               <ArrowsPointingInIcon className="w-4 h-4" />
             </button>
-            <Link href="/" className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-indigo-600 transition-colors font-medium p-1.5 rounded-lg hover:bg-slate-100">
+            <Link href="/" className="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-600 transition-colors font-medium p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
               <ArrowLeftIcon className="w-4 h-4" />
               <span className="hidden sm:inline">Home</span>
             </Link>
           </div>
-          <span className="text-slate-300">|</span>
+          <span className="text-slate-300 dark:text-slate-600">|</span>
           <div className="flex items-center gap-2">
             <SparklesIcon className="w-5 h-5 text-indigo-600" />
-            <span className="font-black text-slate-900 tracking-tight">HTR AI Analyst</span>
+            <span className="font-black text-slate-900 dark:text-slate-100 tracking-tight">HTR AI Analyst</span>
             <span className="text-[10px] font-bold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">
               Beta
             </span>
@@ -289,7 +289,7 @@ export default function ChatPage() {
           <button
             onClick={handleDownloadTranscript}
             disabled={messages.length === 0}
-            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-500 hover:text-slate-800 hover:bg-slate-100 rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
             title="Download transcript"
             aria-label="Download transcript"
           >
@@ -299,7 +299,7 @@ export default function ChatPage() {
           <button
             onClick={() => setShowClearConfirm(true)}
             disabled={messages.length === 0}
-            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-500 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/30 rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
             title="Clear conversation"
             aria-label="Clear conversation"
           >
@@ -313,20 +313,20 @@ export default function ChatPage() {
       <div className="flex-1 flex overflow-hidden min-h-0">
 
         {/* ── Left panel ───────────────────────────────────────────────────── */}
-        <aside className="hidden lg:flex flex-col w-72 xl:w-80 border-r border-slate-200 bg-white overflow-y-auto">
+        <aside className="hidden lg:flex flex-col w-72 xl:w-80 border-r border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 overflow-y-auto">
 
           {/* Dynamic follow-up suggestions */}
           <div className="p-5 flex-1">
             {suggestions.length > 0 ? (
               <>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3">Follow-up Questions</p>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">Follow-up Questions</p>
                 <div className="space-y-2">
                   {suggestions.map((q, i) => (
                     <button
                       key={i}
                       onClick={() => askQuestion(q)}
                       disabled={isLoading}
-                      className="w-full text-left text-xs text-slate-600 hover:text-indigo-700 hover:bg-indigo-50 rounded-lg px-3 py-2.5 transition-colors leading-snug border border-slate-100 hover:border-indigo-200 disabled:opacity-40"
+                      className="w-full text-left text-xs text-slate-600 dark:text-slate-400 hover:text-indigo-700 hover:bg-indigo-50 dark:hover:bg-indigo-950/30 rounded-lg px-3 py-2.5 transition-colors leading-snug border border-slate-100 dark:border-slate-700 hover:border-indigo-200 dark:hover:border-indigo-700 disabled:opacity-40"
                     >
                       {q}
                     </button>
@@ -334,18 +334,18 @@ export default function ChatPage() {
                 </div>
               </>
             ) : (
-              <p className="text-xs text-slate-400 text-center mt-8 leading-relaxed">
+              <p className="text-xs text-slate-400 dark:text-slate-500 text-center mt-8 leading-relaxed">
                 Follow-up questions will appear here after your first message.
               </p>
             )}
           </div>
 
           {/* Context links */}
-          <div className="p-5 border-t border-slate-100">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3">Related Pages</p>
+          <div className="p-5 border-t border-slate-100 dark:border-slate-700">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">Related Pages</p>
             <div className="space-y-1">
               {CONTEXT_LINKS.map(({ label, href, icon: Icon }) => (
-                <Link key={href} href={href} className="flex items-center gap-2 text-xs text-slate-600 hover:text-indigo-700 hover:bg-indigo-50 rounded-lg px-3 py-2 transition-colors">
+                <Link key={href} href={href} className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 hover:text-indigo-700 hover:bg-indigo-50 dark:hover:bg-indigo-950/30 rounded-lg px-3 py-2 transition-colors">
                   <Icon className="w-3.5 h-3.5 flex-shrink-0" />
                   {label}
                 </Link>
@@ -365,8 +365,8 @@ export default function ChatPage() {
                 <div className="w-14 h-14 bg-indigo-50 border border-indigo-100 rounded-2xl flex items-center justify-center mb-5">
                   <SparklesIcon className="w-7 h-7 text-indigo-500" />
                 </div>
-                <h2 className="text-xl font-black text-slate-900 tracking-tight mb-2">HTR AI Analyst</h2>
-                <p className="text-sm text-slate-500 max-w-sm mb-8">
+                <h2 className="text-xl font-black text-slate-900 dark:text-slate-100 tracking-tight mb-2">HTR AI Analyst</h2>
+                <p className="text-sm text-slate-500 dark:text-slate-400 max-w-sm mb-8">
                   Ask anything about health policy, economics, or the programs indexed in the knowledge base.
                 </p>
               </div>
@@ -379,37 +379,37 @@ export default function ChatPage() {
                     {msg.text}
                   </div>
                 ) : (
-                  <div className="border-l-4 border-indigo-200 pl-5 pr-2">
+                  <div className="border-l-4 border-indigo-200 dark:border-indigo-700 pl-5 pr-2">
                     <div className="flex items-center gap-2 mb-2">
                       <SparklesIcon className="w-3.5 h-3.5 text-indigo-500 flex-shrink-0" />
                       <span className="text-[10px] font-black uppercase tracking-widest text-indigo-600">HTR Analyst</span>
                     </div>
-                    <div className="text-sm text-slate-800 leading-relaxed">
+                    <div className="text-sm text-slate-800 dark:text-slate-200 leading-relaxed">
                       <ReactMarkdown
                         components={{
                           p: ({ node, ...props }) => <p {...props} className="mb-3 last:mb-0 leading-relaxed" />,
                           ul: ({ node, ...props }) => <ul {...props} className="list-disc pl-5 mb-3 space-y-1" />,
                           ol: ({ node, ...props }) => <ol {...props} className="list-decimal pl-5 mb-3 space-y-1" />,
                           li: ({ node, ...props }) => <li {...props} className="leading-relaxed" />,
-                          strong: ({ node, ...props }) => <strong {...props} className="font-semibold text-slate-900" />,
+                          strong: ({ node, ...props }) => <strong {...props} className="font-semibold text-slate-900 dark:text-slate-100" />,
                           a: ({ node, ...props }) => <a {...props} className="text-indigo-600 hover:underline" target="_blank" rel="noopener noreferrer" />,
-                          h2: ({ node, ...props }) => <h2 {...props} className="text-base font-bold text-slate-900 mt-5 mb-2" />,
-                          h3: ({ node, ...props }) => <h3 {...props} className="text-sm font-bold text-slate-900 mt-4 mb-1" />,
-                          blockquote: ({ node, ...props }) => <blockquote {...props} className="border-l-4 border-slate-200 pl-4 italic text-slate-600 my-3" />,
-                          code: ({ node, ...props }) => <code {...props} className="bg-slate-100 text-slate-800 text-xs px-1.5 py-0.5 rounded font-mono" />,
+                          h2: ({ node, ...props }) => <h2 {...props} className="text-base font-bold text-slate-900 dark:text-slate-100 mt-5 mb-2" />,
+                          h3: ({ node, ...props }) => <h3 {...props} className="text-sm font-bold text-slate-900 dark:text-slate-100 mt-4 mb-1" />,
+                          blockquote: ({ node, ...props }) => <blockquote {...props} className="border-l-4 border-slate-200 dark:border-slate-600 pl-4 italic text-slate-600 dark:text-slate-400 my-3" />,
+                          code: ({ node, ...props }) => <code {...props} className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs px-1.5 py-0.5 rounded font-mono" />,
                         }}
                       >
                         {msg.text}
                       </ReactMarkdown>
                     </div>
                     {msg.text && (
-                      <div className="flex items-center gap-2 mt-3 pt-2 border-t border-slate-100">
-                        <button onClick={() => handleCopy(msg.text, i)} className="text-slate-400 hover:text-slate-600 transition-colors p-2 rounded" title="Copy" aria-label={copiedIndex === i ? "Copied" : "Copy message"}>
+                      <div className="flex items-center gap-2 mt-3 pt-2 border-t border-slate-100 dark:border-slate-700">
+                        <button onClick={() => handleCopy(msg.text, i)} className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors p-2 rounded" title="Copy" aria-label={copiedIndex === i ? "Copied" : "Copy message"}>
                           {copiedIndex === i ? <CheckIcon className="w-3.5 h-3.5 text-emerald-500" aria-hidden="true" /> : <ClipboardDocumentIcon className="w-3.5 h-3.5" aria-hidden="true" />}
                         </button>
                         <button
                           onClick={() => handleFeedback(i, "up")}
-                          className={`p-2 rounded transition-colors ${msg.feedback === "up" ? "text-emerald-600 bg-emerald-50" : "text-slate-400 hover:text-emerald-600"}`}
+                          className={`p-2 rounded transition-colors ${msg.feedback === "up" ? "text-emerald-600 bg-emerald-50 dark:bg-emerald-950/30" : "text-slate-400 hover:text-emerald-600"}`}
                           title="Helpful"
                           aria-label="Mark as helpful"
                           aria-pressed={msg.feedback === "up"}
@@ -418,7 +418,7 @@ export default function ChatPage() {
                         </button>
                         <button
                           onClick={() => handleFeedback(i, "down")}
-                          className={`p-2 rounded transition-colors ${msg.feedback === "down" ? "text-rose-600 bg-rose-50" : "text-slate-400 hover:text-rose-600"}`}
+                          className={`p-2 rounded transition-colors ${msg.feedback === "down" ? "text-rose-600 bg-rose-50 dark:bg-rose-950/30" : "text-slate-400 hover:text-rose-600"}`}
                           title="Not helpful"
                           aria-label="Mark as not helpful"
                           aria-pressed={msg.feedback === "down"}
@@ -426,7 +426,7 @@ export default function ChatPage() {
                           <HandThumbDownIcon className="w-3.5 h-3.5" aria-hidden="true" />
                         </button>
                         {!isLoading && i === messages.length - 1 && (
-                          <button onClick={handleRegenerate} className="flex items-center gap-1 text-xs text-slate-400 hover:text-indigo-600 transition-colors ml-1">
+                          <button onClick={handleRegenerate} className="flex items-center gap-1 text-xs text-slate-400 dark:text-slate-500 hover:text-indigo-600 transition-colors ml-1">
                             <ArrowPathIcon className="w-3.5 h-3.5" />
                             Regenerate
                           </button>
@@ -454,9 +454,9 @@ export default function ChatPage() {
           </div>
 
           {/* ── Input bar ────────────────────────────────────────────────────── */}
-          <div className="border-t border-slate-200 bg-white px-4 md:px-8 py-4">
+          <div className="border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 md:px-8 py-4">
             <div className="max-w-3xl mx-auto">
-              <div className="flex items-end gap-3 bg-slate-50 border border-slate-200 rounded-2xl px-4 py-3 focus-within:border-indigo-300 focus-within:bg-white transition-colors">
+              <div className="flex items-end gap-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl px-4 py-3 focus-within:border-indigo-300 dark:focus-within:border-indigo-600 focus-within:bg-white dark:focus-within:bg-slate-800 transition-colors">
                 <textarea
                   ref={textareaRef}
                   value={inputValue}
@@ -464,7 +464,7 @@ export default function ChatPage() {
                   onKeyDown={handleKeyDown}
                   placeholder="Ask the Analyst… (Enter to send, Shift+Enter for new line)"
                   rows={1}
-                  className="flex-1 max-h-40 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none resize-none leading-relaxed"
+                  className="flex-1 max-h-40 bg-transparent text-sm text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none resize-none leading-relaxed"
                   aria-label="Chat message input"
                 />
                 {isLoading ? (
@@ -490,10 +490,10 @@ export default function ChatPage() {
                 </p>
               )}
               <div className="flex items-center justify-between mt-2">
-                <p className="text-xs text-slate-400">
+                <p className="text-xs text-slate-400 dark:text-slate-500">
                   Do not submit patient data (names, SSNs, DOBs)
                 </p>
-                <p className="text-center text-[10px] text-slate-400">
+                <p className="text-center text-[10px] text-slate-400 dark:text-slate-500">
                   AI responses may contain errors. Verify clinical or policy information with primary sources.
                 </p>
               </div>
@@ -516,14 +516,14 @@ export default function ChatPage() {
             aria-modal="true"
             aria-labelledby="clear-dialog-title"
             aria-describedby="clear-dialog-desc"
-            className="bg-white rounded-2xl shadow-2xl w-full max-w-sm p-6 text-center"
+            className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-full max-w-sm p-6 text-center"
             onClick={(e) => e.stopPropagation()}
           >
             <TrashIcon className="w-8 h-8 text-rose-500 mx-auto mb-3" aria-hidden="true" />
-            <h3 id="clear-dialog-title" className="font-black text-slate-900 mb-2">Clear conversation?</h3>
-            <p id="clear-dialog-desc" className="text-sm text-slate-600 mb-5">This will delete all messages from your local history.</p>
+            <h3 id="clear-dialog-title" className="font-black text-slate-900 dark:text-slate-100 mb-2">Clear conversation?</h3>
+            <p id="clear-dialog-desc" className="text-sm text-slate-600 dark:text-slate-400 mb-5">This will delete all messages from your local history.</p>
             <div className="flex gap-3">
-              <button onClick={() => setShowClearConfirm(false)} className="flex-1 py-2.5 bg-slate-100 text-slate-700 text-sm font-bold rounded-xl hover:bg-slate-200 transition-colors">
+              <button onClick={() => setShowClearConfirm(false)} className="flex-1 py-2.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 text-sm font-bold rounded-xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
                 Cancel
               </button>
               <button

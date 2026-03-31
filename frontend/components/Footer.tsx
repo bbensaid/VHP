@@ -81,20 +81,20 @@ const platformLinks = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-100 text-slate-600 mt-auto">
+    <footer className="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 mt-auto">
       
       {/* ── MAIN FOOTER ─────────────────────────────────────────────────── */}
       <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10">
 
         {/* Top row: Brand + Newsletter */}
-        <div className="grid lg:grid-cols-4 gap-10 mb-12 pb-12 border-b border-slate-200">
+        <div className="grid lg:grid-cols-4 gap-10 mb-12 pb-12 border-b border-slate-200 dark:border-slate-700">
           
           {/* Brand block */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-5">
               <Logo />
             </Link>
-            <p className="text-sm text-slate-500 leading-relaxed mb-6 max-w-xs">
+            <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-6 max-w-xs">
               The cross-disciplinary intelligence platform for health system transformation. Five pillars. Fifty states. Zero agenda.
             </p>
             {/* Social icons */}
@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
                   key={s.id}
                   href={s.href}
                   aria-label={s.label}
-                  className="w-9 h-9 bg-white border border-slate-200 rounded-lg flex items-center justify-center text-[11px] font-black text-slate-600 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all"
+                  className="w-9 h-9 bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-lg flex items-center justify-center text-[11px] font-black text-slate-600 dark:text-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all"
                 >
                   {s.id}
                 </a>
@@ -118,17 +118,17 @@ const Footer: React.FC = () => {
 
           {/* Newsletter */}
           <div className="lg:col-span-1 lg:col-start-4">
-            <h4 className="text-slate-900 font-black text-sm uppercase tracking-widest mb-4">
+            <h4 className="text-slate-900 dark:text-slate-100 font-black text-sm uppercase tracking-widest mb-4">
               Stay Ahead
             </h4>
-            <p className="text-sm text-slate-500 mb-5 leading-relaxed">
+            <p className="text-sm text-slate-500 dark:text-slate-400 mb-5 leading-relaxed">
               Weekly briefings on the five metrics that matter most. No fluff. No sponsored content.
             </p>
             <div className="flex flex-col gap-2">
               <input
                 type="email"
                 placeholder="Work Email"
-                className="w-full px-4 py-2.5 text-sm bg-white border border-slate-200 rounded-lg text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                className="w-full px-4 py-2.5 text-sm bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-lg text-slate-800 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
               />
               <button className="w-full px-4 py-2.5 bg-indigo-600 text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition-colors">
                 Subscribe Free
@@ -141,8 +141,8 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Five Pillars Grid */}
-        <div className="mb-12 pb-12 border-b border-slate-200">
-          <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 mb-6">
+        <div className="mb-12 pb-12 border-b border-slate-200 dark:border-slate-700">
+          <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 dark:text-slate-400 mb-6">
             Intelligence Pillars
           </h4>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -150,7 +150,7 @@ const Footer: React.FC = () => {
               <div key={p.label}>
                 <Link
                   href={p.href}
-                  className={`block text-sm font-black text-slate-800 mb-3 transition-colors ${p.color}`}
+                  className={`block text-sm font-black text-slate-800 dark:text-slate-200 mb-3 transition-colors ${p.color}`}
                 >
                   {p.label} →
                 </Link>
@@ -159,7 +159,7 @@ const Footer: React.FC = () => {
                     <li key={s.label}>
                       <Link
                         href={s.href}
-                        className="text-xs text-slate-500 hover:text-slate-800 transition-colors leading-relaxed"
+                        className="text-xs text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors leading-relaxed"
                       >
                         {s.label}
                       </Link>
@@ -176,7 +176,7 @@ const Footer: React.FC = () => {
 
           {/* Company */}
           <div>
-            <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 mb-4">
+            <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 dark:text-slate-400 mb-4">
               Company
             </h4>
             <ul className="space-y-2.5">
@@ -184,7 +184,7 @@ const Footer: React.FC = () => {
                 <li key={l.label}>
                   <Link
                     href={l.href}
-                    className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
+                    className="text-sm text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors"
                   >
                     {l.label}
                   </Link>
@@ -195,7 +195,7 @@ const Footer: React.FC = () => {
 
           {/* Platform */}
           <div>
-            <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 mb-4">
+            <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 dark:text-slate-400 mb-4">
               Platform
             </h4>
             <ul className="space-y-2.5">
@@ -203,7 +203,7 @@ const Footer: React.FC = () => {
                 <li key={l.label}>
                   <Link
                     href={l.href}
-                    className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
+                    className="text-sm text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors"
                   >
                     {l.label}
                   </Link>
@@ -214,7 +214,7 @@ const Footer: React.FC = () => {
 
           {/* Advisory */}
           <div>
-            <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 mb-4">
+            <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 dark:text-slate-400 mb-4">
               Advisory
             </h4>
             <ul className="space-y-2.5">
@@ -227,7 +227,7 @@ const Footer: React.FC = () => {
                 <li key={l.label}>
                   <Link
                     href={l.href}
-                    className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
+                    className="text-sm text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors"
                   >
                     {l.label}
                   </Link>
@@ -238,39 +238,39 @@ const Footer: React.FC = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 mb-4">
+            <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 dark:text-slate-400 mb-4">
               Get in Touch
             </h4>
             <div className="space-y-3 text-sm">
               <div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-600 mb-0.5">
+                <p className="text-[10px] font-black uppercase tracking-widest text-slate-600 dark:text-slate-400 mb-0.5">
                   General Inquiries
                 </p>
-                <a href="mailto:hello@htr.com" className="text-slate-600 hover:text-slate-900 transition-colors">
+                <a href="mailto:hello@htr.com" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
                   hello@htr.com
                 </a>
               </div>
               <div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-600 mb-0.5">
+                <p className="text-[10px] font-black uppercase tracking-widest text-slate-600 dark:text-slate-400 mb-0.5">
                   Advisory
                 </p>
-                <a href="mailto:advisory@htr.com" className="text-slate-600 hover:text-slate-900 transition-colors">
+                <a href="mailto:advisory@htr.com" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
                   advisory@htr.com
                 </a>
               </div>
               <div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-600 mb-0.5">
+                <p className="text-[10px] font-black uppercase tracking-widest text-slate-600 dark:text-slate-400 mb-0.5">
                   Media & Press
                 </p>
-                <a href="mailto:press@htr.com" className="text-slate-600 hover:text-slate-900 transition-colors">
+                <a href="mailto:press@htr.com" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
                   press@htr.com
                 </a>
               </div>
               <div className="pt-2">
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-600 mb-1.5">
+                <p className="text-[10px] font-black uppercase tracking-widest text-slate-600 dark:text-slate-400 mb-1.5">
                   Offices
                 </p>
-                <p className="text-xs text-slate-500 leading-relaxed">
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                   Burlington, VT — Washington, DC
                 </p>
               </div>
@@ -279,25 +279,25 @@ const Footer: React.FC = () => {
         </div>
 
         {/* ── BOTTOM BAR ──────────────────────────────────────────────── */}
-        <div className="border-t border-slate-200 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <div className="border-t border-slate-200 dark:border-slate-700 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
           <div className="flex items-center gap-3">
             <p>© {new Date().getFullYear()} Health Transformation Review. All rights reserved.</p>
             <span className="hidden md:inline text-slate-400">·</span>
-            <p className="hidden md:block text-slate-500">
+            <p className="hidden md:block text-slate-500 dark:text-slate-400">
               Non-partisan. Independent. Evidence-driven.
             </p>
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-1 justify-center">
-            <Link href="/privacy" className="hover:text-slate-900 transition-colors">
+            <Link href="/privacy" className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-slate-900 transition-colors">
+            <Link href="/terms" className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
               Terms of Service
             </Link>
-            <Link href="/about/methodology" className="hover:text-slate-900 transition-colors">
+            <Link href="/about/methodology" className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
               Methodology
             </Link>
-            <Link href="/site-map" className="hover:text-slate-900 transition-colors">
+            <Link href="/site-map" className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
               Sitemap
             </Link>
           </div>

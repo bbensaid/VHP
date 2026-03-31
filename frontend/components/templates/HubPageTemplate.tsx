@@ -69,13 +69,13 @@ function HubPageTemplateInner({
   };
 
   return (
-    <div className="w-full font-sans text-slate-800 flex flex-col pb-20">
+    <div className="w-full font-sans text-slate-800 dark:text-slate-100 flex flex-col pb-20">
       {/* HEADER CARD - Now fully contained, snapping to the AppShell Grid */}
-      <div className="bg-white border border-slate-200 rounded-2xl p-8 mb-6 shadow-sm relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50 rounded-bl-full -mr-20 -mt-20 opacity-50 pointer-events-none"></div>
+      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 mb-6 shadow-sm relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50 dark:bg-indigo-950/20 rounded-bl-full -mr-20 -mt-20 opacity-50 pointer-events-none"></div>
         
         <div className="relative z-10">
-          <Link href={backLink} className={`inline-flex items-center text-sm font-bold text-slate-500 ${backLinkHoverClass} transition-colors mb-6`}>
+          <Link href={backLink} className={`inline-flex items-center text-sm font-bold text-slate-500 dark:text-slate-400 ${backLinkHoverClass} transition-colors mb-6`}>
             <ArrowLeftIcon className="w-4 h-4 mr-1.5" /> {backLabel}
           </Link>
           
@@ -86,8 +86,8 @@ function HubPageTemplateInner({
                   {badgeLabel}
                 </span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-3">{title}</h1>
-              <p className="text-slate-500 text-lg leading-relaxed">{subtitle}</p>
+              <h1 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-slate-100 tracking-tight mb-3">{title}</h1>
+              <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">{subtitle}</p>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ function HubPageTemplateInner({
 
       {/* TABS NAVIGATION - Sticky below the AppShell Header */}
       <div className="sticky z-30 mb-8" style={{ top: "var(--sidebar-top, var(--sticky-bar-height, 2.5rem))" }}>
-        <nav className="flex flex-wrap justify-center items-end border border-slate-200 rounded-t-xl px-2 bg-slate-50/80 backdrop-blur-sm pt-2 gap-y-1" aria-label="Tabs">
+        <nav className="flex flex-wrap justify-center items-end border border-slate-200 dark:border-slate-700 rounded-t-xl px-2 bg-slate-50/80 dark:bg-slate-800/80 backdrop-blur-sm pt-2 gap-y-1" aria-label="Tabs">
           {tabs.map((tab, index) => {
             const isActive = activeTab === tab.id;
             return (
@@ -111,8 +111,8 @@ function HubPageTemplateInner({
                 className={`
                   relative flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r mr-2 mb-0
                   ${isActive
-                    ? "bg-slate-100 border-black text-slate-900 z-10 -mb-px"
-                    : "bg-white border-slate-200 text-slate-500 hover:bg-slate-50 hover:text-slate-700 mt-1.5 shadow-sm"
+                    ? "bg-slate-100 dark:bg-slate-700 border-black dark:border-slate-500 text-slate-900 dark:text-slate-100 z-10 -mb-px"
+                    : "bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-700 dark:hover:text-slate-200 mt-1.5 shadow-sm"
                   }
                 `}
               >

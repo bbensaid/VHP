@@ -223,7 +223,7 @@ export default function ArticleFeed({
         <select
           value={impactLevel}
           onChange={handleImpactChange}
-          className="appearance-none w-full sm:w-48 pl-10 pr-8 py-2 border border-slate-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent shadow-sm bg-white text-slate-700 cursor-pointer"
+          className="appearance-none w-full sm:w-48 pl-10 pr-8 py-2 border border-slate-200 dark:border-slate-700 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent shadow-sm bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 cursor-pointer"
         >
           <option value="">All Impact Levels</option>
           <option value="High">High Impact</option>
@@ -239,7 +239,7 @@ export default function ArticleFeed({
         <select
           value={sortOrder}
           onChange={handleSortChange}
-          className="appearance-none w-full sm:w-40 pl-10 pr-8 py-2 border border-slate-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent shadow-sm bg-white text-slate-700 cursor-pointer"
+          className="appearance-none w-full sm:w-40 pl-10 pr-8 py-2 border border-slate-200 dark:border-slate-700 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent shadow-sm bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 cursor-pointer"
         >
           <option value="desc">Newest First</option>
           <option value="asc">Oldest First</option>
@@ -248,13 +248,13 @@ export default function ArticleFeed({
       </div>
 
       {/* View mode toggle */}
-      <div className="flex bg-slate-100 p-1 rounded-full border border-slate-200 items-center h-[38px]">
+      <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-full border border-slate-200 dark:border-slate-700 items-center h-[38px]">
         <button
           onClick={() => setViewMode("grid")}
           className={`p-1.5 rounded-full transition-all ${
             viewMode === "grid"
-              ? "bg-white shadow-sm text-indigo-600"
-              : "text-slate-500 hover:text-slate-700"
+              ? "bg-white dark:bg-slate-700 shadow-sm text-indigo-600"
+              : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
           }`}
           title="Grid View"
         >
@@ -264,8 +264,8 @@ export default function ArticleFeed({
           onClick={() => setViewMode("list")}
           className={`p-1.5 rounded-full transition-all ${
             viewMode === "list"
-              ? "bg-white shadow-sm text-indigo-600"
-              : "text-slate-500 hover:text-slate-700"
+              ? "bg-white dark:bg-slate-700 shadow-sm text-indigo-600"
+              : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
           }`}
           title="List View"
         >
@@ -280,7 +280,7 @@ export default function ArticleFeed({
           placeholder="Search titles..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-10 pr-10 py-2 border border-slate-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent shadow-sm"
+          className="w-full pl-10 pr-10 py-2 border border-slate-200 dark:border-slate-700 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent shadow-sm bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500"
         />
         <MagnifyingGlassIcon className="w-4 h-4 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2" />
         {(searchQuery || impactLevel || sortOrder !== "desc") && (
@@ -307,11 +307,11 @@ export default function ArticleFeed({
         }
       >
         {articles.length === 0 && (
-          <div className="col-span-full p-10 text-center bg-slate-50 rounded-xl border border-dashed border-slate-300">
-            <p className="text-slate-700 font-medium mb-2">
+          <div className="col-span-full p-10 text-center bg-slate-50 dark:bg-slate-800 rounded-xl border border-dashed border-slate-300 dark:border-slate-600">
+            <p className="text-slate-700 dark:text-slate-200 font-medium mb-2">
               No analysis found for this category yet.
             </p>
-            <p className="text-sm text-slate-600">
+            <p className="text-sm text-slate-600 dark:text-slate-400">
               Content is populated from the &ldquo;{pillar}&rdquo; pillar in
               Sanity.
             </p>
@@ -328,7 +328,7 @@ export default function ArticleFeed({
             <Link
               href={href}
               key={article._id}
-              className={`group bg-white border border-slate-200 rounded-2xl hover:shadow-xl transition-all hover:-translate-y-1 relative overflow-hidden ${
+              className={`group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl hover:shadow-xl transition-all hover:-translate-y-1 relative overflow-hidden ${
                 isList
                   ? "flex flex-col md:flex-row"
                   : "flex flex-col h-full p-8"
@@ -356,7 +356,7 @@ export default function ArticleFeed({
                       Featured
                     </span>
                   )}
-                  <span className="text-xs text-slate-600 font-bold uppercase tracking-widest border border-slate-200 bg-slate-50 px-2 py-1 rounded">
+                  <span className="text-xs text-slate-600 dark:text-slate-400 font-bold uppercase tracking-widest border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-2 py-1 rounded">
                     {new Date(article.publishedAt).toLocaleDateString()}
                   </span>
                   {article.status && (
@@ -380,15 +380,15 @@ export default function ArticleFeed({
                     </span>
                   )}
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4 leading-snug group-hover:text-indigo-600 transition-colors">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 leading-snug group-hover:text-indigo-600 transition-colors">
                   {article.title}
                 </h3>
-                <p className="text-slate-700 leading-relaxed mb-8">
+                <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-8">
                   {article.summary}
                 </p>
               </div>
 
-              <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between">
+              <div className="mt-auto pt-6 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between">
                 <span
                   className={`text-sm font-bold ${colorClass} group-hover:underline flex items-center gap-1`}
                 >
@@ -398,7 +398,7 @@ export default function ArticleFeed({
                   onClick={(e) =>
                     handleShare(e, article.slug.current, article._id)
                   }
-                  className="p-2 text-slate-500 hover:text-indigo-600 hover:bg-slate-50 rounded-full transition-all relative z-10"
+                  className="p-2 text-slate-500 dark:text-slate-400 hover:text-indigo-600 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-full transition-all relative z-10"
                   title="Copy Link to Clipboard"
                 >
                   {copiedId === article._id ? (
@@ -420,8 +420,8 @@ export default function ArticleFeed({
             disabled={loading}
             className={`px-8 py-3 rounded-full font-bold text-sm transition-all ${
               loading
-                ? "bg-slate-100 text-slate-500 cursor-not-allowed"
-                : "bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300 shadow-sm hover:shadow"
+                ? "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 cursor-not-allowed"
+                : "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-600 shadow-sm hover:shadow"
             }`}
           >
             {loading ? "Loading..." : "Load More Analysis"}
@@ -438,8 +438,8 @@ export default function ArticleFeed({
       style={{ top: "calc(var(--sidebar-top, var(--sticky-bar-height, 2.5rem)) + 1rem)" }}
       aria-label="Related media"
     >
-      <div className="bg-slate-50 p-6 md:p-8 rounded-2xl border border-slate-200">
-        <h3 className="text-sm font-bold text-slate-900 mb-6 border-b border-slate-200 pb-3 uppercase tracking-widest flex items-center gap-2">
+      <div className="bg-slate-50 dark:bg-slate-800 p-6 md:p-8 rounded-2xl border border-slate-200 dark:border-slate-700">
+        <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100 mb-6 border-b border-slate-200 dark:border-slate-700 pb-3 uppercase tracking-widest flex items-center gap-2">
           <svg
             className="w-5 h-5 text-indigo-500"
             fill="none"
@@ -466,7 +466,7 @@ export default function ArticleFeed({
           {relatedMedia!.map((video) => (
             <div
               key={video._id}
-              className="bg-white rounded-xl shadow-sm overflow-hidden border border-slate-100"
+              className="bg-white dark:bg-slate-900 rounded-xl shadow-sm overflow-hidden border border-slate-100 dark:border-slate-700"
             >
               <VideoBlock
                 value={{ url: video.url, caption: video.title }}

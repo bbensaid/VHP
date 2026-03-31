@@ -52,7 +52,7 @@ function BreadcrumbsInner() {
 
   return (
     <nav aria-label="Breadcrumb" className="flex items-center h-full">
-      <ol className="flex items-center space-x-2 text-xs font-medium text-slate-500 bg-white/90 backdrop-blur px-3 py-1.5 rounded-full border border-slate-200 shadow-sm">
+      <ol className="flex items-center space-x-2 text-xs font-medium text-slate-500 dark:text-slate-400 bg-white/90 dark:bg-slate-900/90 backdrop-blur px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 shadow-sm">
           
           {/* Home Link */}
           <li>
@@ -77,11 +77,11 @@ function BreadcrumbsInner() {
               <li key={href} className="flex items-center">
                 <span className="mx-2 text-slate-300">/</span>
                 {isLast ? (
-                  <span className="font-semibold text-slate-900" aria-current="page">
+                  <span className="font-semibold text-slate-900 dark:text-slate-100" aria-current="page">
                     {label}
                   </span>
                 ) : (
-                  <Link href={href} className="hover:text-slate-900 transition-colors">
+                  <Link href={href} className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
                     {label}
                   </Link>
                 )}
@@ -93,7 +93,7 @@ function BreadcrumbsInner() {
           {activeTab && (
             <li className="flex items-center">
               <span className="mx-2 text-slate-300">/</span>
-              <span className="font-semibold text-slate-900" aria-current="page">
+              <span className="font-semibold text-slate-900 dark:text-slate-100" aria-current="page">
                 {TAB_LABELS[activeTab] || activeTab.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
               </span>
             </li>

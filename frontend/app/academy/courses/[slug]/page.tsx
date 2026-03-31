@@ -169,9 +169,12 @@ export default async function CourseDetailPage({
                 <div className="text-3xl font-black text-gray-900 mb-2">${course.price}</div>
                 <div className="text-gray-500 text-sm mb-6">One-time payment • Lifetime access</div>
                 
-                <button className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-lg mb-4 transition-colors text-lg shadow-md hover:shadow-lg">
+                <Link
+                  href={`/pricing?from=/academy/courses/${course.slug}`}
+                  className="block w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-lg mb-4 transition-colors text-lg shadow-md hover:shadow-lg text-center"
+                >
                     Enroll Now
-                </button>
+                </Link>
                 
                 <div className="space-y-4 pt-6 border-t border-gray-100">
                     <div className="flex items-center justify-between text-sm">
