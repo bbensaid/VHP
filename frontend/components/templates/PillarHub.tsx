@@ -81,7 +81,7 @@ export function PillarHub({
   const theme = styles[themeColor];
 
   return (
-    <div className="min-h-screen bg-white pb-20 font-sans text-slate-800">
+    <div className="min-h-screen bg-white dark:bg-slate-900 pb-20 font-sans text-slate-800 dark:text-slate-100">
       
       {/* 1. HERO HEADER - Snaps to Global Grid */}
       <header className={`${theme.header} text-white py-16 border-b-4 border-black/10`}>
@@ -103,7 +103,7 @@ export function PillarHub({
       {/* 2. LEAD STORY SECTION */}
       <section className="relative -mt-8 z-10">
         <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className={`bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col md:flex-row min-h-100 transition-colors ${theme.hoverCard}`}>
+          <div className={`bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col md:flex-row min-h-100 transition-colors ${theme.hoverCard}`}>
             
             {/* Main Content (Clickable) */}
             <div className="md:w-3/4 relative group">
@@ -116,16 +116,16 @@ export function PillarHub({
                     <span className={`${theme.indicator} text-white text-xs font-bold uppercase px-3 py-1 rounded-full`}>
                       Deep Dive
                     </span>
-                    <span className="text-slate-500 text-sm font-bold uppercase tracking-wider">
+                    <span className="text-slate-500 dark:text-slate-400 text-sm font-bold uppercase tracking-wider">
                       {featured.category || "Analysis"}
                     </span>
                   </div>
                   
-                  <h2 className={`text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight transition-colors ${theme.hoverText}`}>
+                  <h2 className={`text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-6 leading-tight transition-colors ${theme.hoverText}`}>
                     {featured.title}
                   </h2>
                   
-                  <p className="text-lg text-slate-600 mb-8 leading-relaxed line-clamp-3 md:line-clamp-4">
+                  <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed line-clamp-3 md:line-clamp-4">
                     {featured.summary}
                   </p>
                   
@@ -134,24 +134,24 @@ export function PillarHub({
                   </span>
                 </Link>
               ) : (
-                <div className="p-8 md:p-12 flex items-center justify-center h-full text-slate-400">
+                <div className="p-8 md:p-12 flex items-center justify-center h-full text-slate-400 dark:text-slate-500">
                   <p>No active reports available.</p>
                 </div>
               )}
             </div>
 
             {/* Impact Sidebar */}
-            <div className={`md:w-1/4 ${theme.lightBg} p-8 md:p-10 border-l border-slate-100 flex flex-col justify-center`}>
-              <h4 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Impact Level</h4>
+            <div className={`md:w-1/4 ${theme.lightBg} dark:bg-slate-800 p-8 md:p-10 border-l border-slate-100 dark:border-slate-700 flex flex-col justify-center`}>
+              <h4 className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-3">Impact Level</h4>
               <div className="flex items-center gap-3">
                 <div className={`w-5 h-5 rounded-full shadow-sm ${featured?.impactLevel === 'Critical' ? 'bg-red-500 animate-pulse' : 'bg-yellow-500'}`}></div>
-                <span className="text-2xl font-bold text-slate-800">{featured?.impactLevel || "N/A"}</span>
+                <span className="text-2xl font-bold text-slate-800 dark:text-slate-100">{featured?.impactLevel || "N/A"}</span>
               </div>
               
               {featured && (
-                <div className="mt-8 pt-8 border-t border-slate-200/50">
-                  <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Published</p>
-                  <p className="text-slate-700 font-medium">{new Date(featured.publishedAt).toLocaleDateString()}</p>
+                <div className="mt-8 pt-8 border-t border-slate-200/50 dark:border-slate-700/50">
+                  <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-1">Published</p>
+                  <p className="text-slate-700 dark:text-slate-300 font-medium">{new Date(featured.publishedAt).toLocaleDateString()}</p>
                 </div>
               )}
             </div>
@@ -166,7 +166,7 @@ export function PillarHub({
             
             {/* Left Column: Recent Briefs */}
             <div className="lg:w-2/3">
-              <h3 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-8 flex items-center gap-3">
                 <span className={`w-1.5 h-8 rounded-full ${theme.indicator}`}></span> 
                 Recent Briefs
               </h3>
@@ -176,25 +176,25 @@ export function PillarHub({
                   <Link 
                     key={article._id} 
                     href={`/${pillarSlug}/${article.slug.current}`} 
-                    className={`group block bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-all hover:-translate-y-1 ${theme.hoverCard}`}
+                    className={`group block bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 hover:shadow-lg transition-all hover:-translate-y-1 ${theme.hoverCard}`}
                   >
                     <div className="flex justify-between items-start mb-4">
                       <span className={`text-xs font-bold uppercase tracking-wider ${theme.text}`}>
                         {article.category}
                       </span>
-                      <span className="text-xs bg-slate-50 border border-slate-100 px-2 py-1 rounded text-slate-500 font-medium">
+                      <span className="text-xs bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 px-2 py-1 rounded text-slate-500 dark:text-slate-400 font-medium">
                         {new Date(article.publishedAt).toLocaleDateString()}
                       </span>
                     </div>
-                    <h4 className={`text-2xl font-bold text-slate-900 mb-3 transition-colors leading-snug ${theme.hoverText}`}>
+                    <h4 className={`text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3 transition-colors leading-snug ${theme.hoverText}`}>
                       {article.title}
                     </h4>
-                    <p className="text-slate-600 line-clamp-2 text-lg">
+                    <p className="text-slate-600 dark:text-slate-300 line-clamp-2 text-lg">
                       {article.summary}
                     </p>
                   </Link>
                 )) : (
-                  <div className="p-12 text-center bg-slate-50 rounded-xl border border-dashed border-slate-300 text-slate-500">
+                  <div className="p-12 text-center bg-slate-50 dark:bg-slate-800 rounded-xl border border-dashed border-slate-300 dark:border-slate-600 text-slate-500 dark:text-slate-400">
                     No recent briefs available.
                   </div>
                 )}

@@ -65,11 +65,11 @@ export default function TickerStrip({
   return (
     <>
       <div
-        className={`w-full ${transparent ? "bg-transparent" : (isDark ? "bg-indigo-800" : "bg-white")} h-full overflow-hidden flex items-center relative rounded-sm`}
+        className={`w-full ${transparent ? "bg-transparent" : (isDark ? "bg-indigo-800" : "bg-white dark:bg-slate-800")} h-full overflow-hidden flex items-center relative rounded-sm`}
       >
         {/* Label Badge */}
         <div
-          className={`flex items-center ${transparent ? "bg-transparent" : (isDark ? "bg-neutral-900 border-r border-neutral-700" : "bg-slate-100 border-r border-slate-200")} h-full pr-4 pl-0 z-10 relative shrink-0`}
+          className={`flex items-center ${transparent ? "bg-transparent" : (isDark ? "bg-neutral-900 border-r border-neutral-700" : "bg-slate-100 dark:bg-slate-700 border-r border-slate-200 dark:border-slate-600")} h-full pr-4 pl-0 z-10 relative shrink-0`}
         >
           {onToggle && (
             <input
@@ -85,7 +85,7 @@ export default function TickerStrip({
               isVitals ? "bg-emerald-500" : "bg-red-500"
             } animate-pulse mr-2`}
           ></div>
-          <span className={`text-[10px] font-black uppercase tracking-widest ${isDark ? "text-white" : "text-slate-700"} cursor-pointer`} onClick={onToggle}>
+          <span className={`text-[10px] font-black uppercase tracking-widest ${isDark ? "text-white" : "text-slate-700 dark:text-slate-300"} cursor-pointer`} onClick={onToggle}>
             {label || (isVitals ? "System Vitals" : "Live Wire")}
           </span>
           {onToggle && <span className={`${isDark ? "text-neutral-600" : "text-slate-300"} ml-3`}>|</span>}
@@ -118,7 +118,7 @@ export default function TickerStrip({
                       onClick={() => setSelectedItem(item)}
                       className="flex items-center gap-2 hover:bg-slate-100/50 hover:shadow-sm px-2 py-1 rounded transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
                     >
-                      <span className={`font-medium ${isDark ? "text-slate-400" : "text-slate-500"} text-xs`}>
+                      <span className={`font-medium ${isDark ? "text-slate-400" : "text-slate-500 dark:text-slate-400"} text-xs`}>
                         {item.label}:
                       </span>
                       <span
@@ -140,7 +140,7 @@ export default function TickerStrip({
                       href={item.url || "#"}
                       className="flex items-center gap-2 group"
                     >
-                      <span className={`font-bold ${isDark ? "text-slate-300 group-hover:text-white" : "text-slate-700 group-hover:text-indigo-600"} transition-colors`}>
+                      <span className={`font-bold ${isDark ? "text-slate-300 group-hover:text-white" : "text-slate-700 dark:text-slate-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400"} transition-colors`}>
                         {item.text}
                       </span>
                       <span className={`text-[10px] ${isDark ? "text-slate-600" : "text-slate-400"} group-hover:text-indigo-400`}>
@@ -152,7 +152,7 @@ export default function TickerStrip({
               ))}
             </div>
           ) : (
-            <span className="text-slate-500 text-[10px] font-medium uppercase tracking-wider ml-2">
+            <span className="text-slate-500 dark:text-slate-400 text-[10px] font-medium uppercase tracking-wider ml-2">
               Vitals Paused
             </span>
           )}
@@ -167,21 +167,21 @@ export default function TickerStrip({
             onClick={() => setSelectedItem(null)}
           >
             <div
-              className="bg-white rounded-xl shadow-2xl max-w-sm w-full p-6 relative border border-slate-200"
+              className="bg-white dark:bg-slate-900 rounded-xl shadow-2xl max-w-sm w-full p-6 relative border border-slate-200 dark:border-slate-700"
               onClick={(e) => e.stopPropagation()}
             >
               <button
                 onClick={() => setSelectedItem(null)}
-                className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors"
+                className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
               >
                 <XMarkIcon className="w-5 h-5" />
               </button>
 
               <div className="mb-4">
-                <span className="text-xs font-bold uppercase tracking-widest text-slate-500 block mb-1">
+                <span className="text-xs font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 block mb-1">
                   System Vital
                 </span>
-                <h3 className="text-xl font-black text-slate-900">
+                <h3 className="text-xl font-black text-slate-900 dark:text-slate-100">
                   {selectedItem.label}
                 </h3>
               </div>
@@ -195,13 +195,13 @@ export default function TickerStrip({
                   {selectedItem.value}
                 </div>
                 {selectedItem.trend && (
-                  <div className="px-2 py-1 bg-slate-100 rounded text-xs font-bold text-slate-600 uppercase">
+                  <div className="px-2 py-1 bg-slate-100 dark:bg-slate-700 rounded text-xs font-bold text-slate-600 dark:text-slate-300 uppercase">
                     {selectedItem.trend}
                   </div>
                 )}
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-4 border border-slate-100 text-sm text-slate-600 leading-relaxed">
+              <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-4 border border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
                 <p>
                   Detailed analytics and historical data for{" "}
                   <strong>{selectedItem.label}</strong> would appear here. This
@@ -217,10 +217,10 @@ export default function TickerStrip({
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-100 flex justify-end">
+              <div className="mt-6 pt-4 border-t border-slate-100 dark:border-slate-700 flex justify-end">
                 <button
                   onClick={() => setSelectedItem(null)}
-                  className="text-sm font-bold text-slate-900 hover:text-indigo-600"
+                  className="text-sm font-bold text-slate-900 dark:text-slate-100 hover:text-indigo-600 dark:hover:text-indigo-400"
                 >
                   Close View
                 </button>

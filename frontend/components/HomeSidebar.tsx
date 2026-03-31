@@ -250,7 +250,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
               {/* L1 button */}
               <button
                 onClick={() => handleSectionClick(section.id)}
-                className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 border-l-4 ${sectionData.borderAccent} transition-colors text-left ${isOpen ? sectionData.headerBg : `bg-white ${sectionData.hoverBg}`}`}
+                className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 border-l-4 ${sectionData.borderAccent} transition-colors text-left ${isOpen ? sectionData.headerBg : `bg-white dark:bg-slate-800 ${sectionData.hoverBg}`}`}
               >
                 <span className={`text-[10px] font-black uppercase tracking-[0.15em] ${sectionData.headerColor}`}>
                   {section.label}
@@ -264,11 +264,11 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
 
               {/* ── L2 accordion: section-colored left rail + tinted bg ── */}
               {isOpen && (
-                <div className={`mt-1 border-l-4 ${sectionData.borderAccent} bg-slate-50 rounded-r-lg overflow-hidden`}>
+                <div className={`mt-1 border-l-4 ${sectionData.borderAccent} bg-slate-50 dark:bg-slate-800/60 rounded-r-lg overflow-hidden`}>
 
                   {/* ── INTELLIGENCE: pillar list ─────────────────────── */}
                   {sectionData.isPillars && (
-                    <div className="divide-y divide-slate-100/80">
+                    <div className="divide-y divide-slate-100/80 dark:divide-slate-700/50">
                       {pillars.map((pillar) => {
                         const pillarOpen = expandedPillars.includes(pillar.id);
                         return (
@@ -277,7 +277,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                             {/* Pillar row — L2 typography: 13px semibold colored */}
                             <button
                               onClick={() => handlePillarClick(pillar.id)}
-                              className="w-full flex items-center justify-between px-3 py-2 transition-colors text-left hover:bg-white/70"
+                              className="w-full flex items-center justify-between px-3 py-2 transition-colors text-left hover:bg-white/70 dark:hover:bg-slate-700/50"
                             >
                               <div className="flex items-center gap-2">
                                 <span className={`w-2 h-2 rounded-full shrink-0 ${pillar.dot}`} />
@@ -287,20 +287,20 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                               </div>
                               <ChevronDownIcon
                                 className={`w-3 h-3 shrink-0 transition-transform duration-200 ${
-                                  pillarOpen ? `${pillar.accent} rotate-0` : "text-slate-300 -rotate-90"
+                                  pillarOpen ? `${pillar.accent} rotate-0` : "text-slate-300 dark:text-slate-600 -rotate-90"
                                 }`}
                               />
                             </button>
 
                             {/* L3: pillar-colored rail + white bg + smaller muted text */}
                             {pillarOpen && (
-                              <div className={`border-l-2 ${pillar.rail} ml-3 bg-white`}>
+                              <div className={`border-l-2 ${pillar.rail} ml-3 bg-white dark:bg-slate-900`}>
                                 {/* Pillar overview link */}
                                 <Link
                                   href={pillar.href}
                                   onClick={onNavigate}
-                                  className={`flex items-center gap-2 pl-3 pr-2 py-1.5 border-b border-slate-100 group ${
-                                    isActive(pillar.href) ? "bg-slate-50" : "hover:bg-slate-50"
+                                  className={`flex items-center gap-2 pl-3 pr-2 py-1.5 border-b border-slate-100 dark:border-slate-700 group ${
+                                    isActive(pillar.href) ? "bg-slate-50 dark:bg-slate-800" : "hover:bg-slate-50 dark:hover:bg-slate-800"
                                   }`}
                                 >
                                   <span className={`text-[10px] font-bold uppercase tracking-widest ${pillar.accent} group-hover:underline`}>
@@ -308,20 +308,20 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                                   </span>
                                 </Link>
                                 {/* Sub-items — L3 typography: 11px normal muted */}
-                                <div className="divide-y divide-slate-50">
+                                <div className="divide-y divide-slate-50 dark:divide-slate-700/50">
                                   {pillar.items.map((item) => (
                                     <Link
                                       key={item.href}
                                       href={item.href}
                                       onClick={onNavigate}
                                       className={`flex items-center pl-3 pr-2 py-2 transition-colors group ${
-                                        isActive(item.href) ? "bg-slate-100" : "hover:bg-slate-50"
+                                        isActive(item.href) ? "bg-slate-100 dark:bg-slate-700" : "hover:bg-slate-50 dark:hover:bg-slate-800"
                                       }`}
                                     >
                                       <span className={`text-[11px] leading-snug transition-colors ${
                                         isActive(item.href)
                                           ? `font-semibold ${pillar.accent}`
-                                          : "font-normal text-slate-500 group-hover:text-slate-700"
+                                          : "font-normal text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200"
                                       }`}>
                                         {item.label}
                                       </span>
@@ -349,7 +349,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                             className={`flex items-center gap-2.5 px-3 py-2 transition-colors group ${
                               isActive(item.href)
                                 ? sectionData.activeItemBg
-                                : `bg-slate-50 ${sectionData.hoverBg}`
+                                : `bg-slate-50 dark:bg-slate-800/60 ${sectionData.hoverBg}`
                             }`}
                           >
                             {Icon && (
@@ -359,12 +359,12 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                               <span className={`text-[13px] font-semibold block leading-snug transition-colors ${
                                 isActive(item.href)
                                   ? sectionData.headerColor
-                                  : "text-slate-600 group-hover:text-slate-900"
+                                  : "text-slate-600 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-slate-100"
                               }`}>
                                 {item.label}
                               </span>
                               {item.desc && (
-                                <span className="text-[10px] text-slate-400">{item.desc}</span>
+                                <span className="text-[10px] text-slate-400 dark:text-slate-500">{item.desc}</span>
                               )}
                             </div>
                           </Link>
@@ -382,14 +382,14 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
         <Link
           href="/saved"
           onClick={onNavigate}
-          className={`flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 border-l-4 border-l-slate-400 transition-colors ${
-            isActive("/saved") ? "bg-slate-100" : "bg-white hover:bg-slate-50"
+          className={`flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 border-l-4 border-l-slate-400 transition-colors ${
+            isActive("/saved") ? "bg-slate-100 dark:bg-slate-700" : "bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700"
           }`}
         >
-          <span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-500">
+          <span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-500 dark:text-slate-400">
             My Library
           </span>
-          <BookmarkIcon className="w-3.5 h-3.5 text-slate-400" />
+          <BookmarkIcon className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500" />
         </Link>
       </div>
     </div>

@@ -136,10 +136,10 @@ function IntelligencePanel({ onClose }: { onClose: () => void }) {
                 onClick={onClose}
                 className={`flex flex-col px-3 py-2.5 rounded-lg ${p.hoverBg} transition-colors group`}
               >
-                <span className={`text-sm font-bold text-slate-800 group-hover:${p.accent}`}>
+                <span className={`text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:${p.accent}`}>
                   {p.label} Overview
                 </span>
-                <span className="text-xs text-slate-400 mt-0.5">{p.desc}</span>
+                <span className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{p.desc}</span>
               </Link>
               {/* Sub-items */}
               {p.items.map((item) => (
@@ -149,18 +149,18 @@ function IntelligencePanel({ onClose }: { onClose: () => void }) {
                   onClick={onClose}
                   className={`flex flex-col px-3 py-2.5 rounded-lg ${p.hoverBg} transition-colors group`}
                 >
-                  <span className={`text-sm font-bold text-slate-800 group-hover:${p.accent}`}>
+                  <span className={`text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:${p.accent}`}>
                     {item.label}
                   </span>
-                  <span className="text-xs text-slate-400 mt-0.5">{item.desc}</span>
+                  <span className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{item.desc}</span>
                 </Link>
               ))}
             </div>
           </div>
         ))}
       </div>
-      <div className="mt-5 pt-4 border-t border-slate-100 flex items-center gap-6">
-        <span className="text-xs font-black uppercase tracking-widest text-slate-400">
+      <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-700 flex items-center gap-6">
+        <span className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500">
           Quick Access
         </span>
         {[
@@ -188,7 +188,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
       <div className="grid grid-cols-3 gap-8">
         {/* Start Here */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
             Start Here
           </p>
           <div className="space-y-1">
@@ -197,7 +197,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-sky-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-sky-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-700">
                 Academy Hub
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -209,7 +209,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-sky-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-sky-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-700">
                 Personalized Learning
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -221,7 +221,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-sky-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-sky-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-700">
                 Learning Tracks
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -233,7 +233,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
 
         {/* Browse by Format */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
             Browse by Format
           </p>
           <div className="space-y-1">
@@ -248,10 +248,10 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
                 onClick={onClose}
                 className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-sky-50 transition-colors group"
               >
-                <span className="text-sm font-bold text-slate-800 group-hover:text-sky-700">
+                <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-700">
                   {item.label}
                 </span>
-                <span className="text-xs text-slate-400 mt-0.5">{item.desc}</span>
+                <span className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{item.desc}</span>
               </Link>
             ))}
           </div>
@@ -259,7 +259,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
 
         {/* Reference */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
             Reference
           </p>
           <div className="space-y-1">
@@ -268,7 +268,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-sky-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-sky-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-700">
                 Glossary
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -280,7 +280,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-sky-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-sky-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-700">
                 Faculty
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -292,7 +292,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-sky-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-sky-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-700">
                 Multimedia Library
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -312,7 +312,7 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
       <div className="grid grid-cols-3 gap-8">
         {/* Interactive Tools */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
             Interactive Tools
           </p>
           <div className="space-y-1">
@@ -321,7 +321,7 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-amber-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
                 Research Lab
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -333,7 +333,7 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-amber-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
                 HTR Simulator
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -345,7 +345,7 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-amber-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
                 HTI Dashboard
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -357,7 +357,7 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
 
         {/* Data & Signals */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
             Data &amp; Signals
           </p>
           <div className="space-y-1">
@@ -366,7 +366,7 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-emerald-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-emerald-700">
                 Trending Topics
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -378,7 +378,7 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
 
         {/* Media & Reference */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
             Media &amp; Reference
           </p>
           <div className="space-y-1">
@@ -387,7 +387,7 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-amber-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
                 Multimedia
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -407,7 +407,7 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
       <div className="grid grid-cols-2 gap-8" style={{ minWidth: "480px" }}>
         {/* State Initiatives */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
             State Initiatives
           </p>
           <div className="space-y-1">
@@ -416,7 +416,7 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-rose-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
                 Vermont Act 167
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -428,7 +428,7 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-rose-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
                 California CalAIM
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -440,7 +440,7 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-rose-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
                 All States Explorer
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -451,7 +451,7 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
         </div>
         {/* Dashboards & Models */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
             Dashboards &amp; Models
           </p>
           <div className="space-y-1">
@@ -460,7 +460,7 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-rose-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
                 50-State RHTP Dashboard
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -472,7 +472,7 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-rose-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
                 AHEAD Model
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -492,7 +492,7 @@ function AdvisePanel({ onClose }: { onClose: () => void }) {
       <div className="grid grid-cols-3 gap-8">
         {/* Advisory Services */}
         <div className="col-span-2">
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
             Advisory Services
           </p>
           <div className="grid grid-cols-2 gap-1">
@@ -512,10 +512,10 @@ function AdvisePanel({ onClose }: { onClose: () => void }) {
                 onClick={onClose}
                 className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-slate-50 transition-colors group"
               >
-                <span className="text-sm font-bold text-slate-800 group-hover:text-indigo-700">
+                <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-indigo-700">
                   {item.label}
                 </span>
-                <span className="text-xs text-slate-400 mt-0.5">{item.desc}</span>
+                <span className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{item.desc}</span>
               </Link>
             ))}
           </div>
@@ -523,7 +523,7 @@ function AdvisePanel({ onClose }: { onClose: () => void }) {
 
         {/* Connect & Community */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
             Connect &amp; Community
           </p>
           <div className="space-y-1">
@@ -532,7 +532,7 @@ function AdvisePanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-indigo-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-indigo-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-indigo-700">
                 Connect Hub
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -544,7 +544,7 @@ function AdvisePanel({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-indigo-50 transition-colors group"
             >
-              <span className="text-sm font-bold text-slate-800 group-hover:text-indigo-700">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-indigo-700">
                 Community
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
@@ -668,7 +668,7 @@ const Header = () => {
     });
 
   return (
-    <header className="sticky top-0 z-50 flex flex-col font-sans bg-white">
+    <header className="sticky top-0 z-50 flex flex-col font-sans bg-white dark:bg-slate-900">
       {/* 1. TOP BAR */}
       <div className="bg-black text-zinc-300 text-[10px] font-bold tracking-wider uppercase py-1 border-b border-neutral-800 w-full relative z-50">
         <div className="w-full px-4 flex items-center h-full gap-0">
@@ -710,7 +710,7 @@ const Header = () => {
       </div>
 
       {/* 2. MAIN NAV BAR */}
-      <div className="bg-white py-1 border-b border-slate-200 w-full relative">
+      <div className="bg-white dark:bg-slate-900 py-1 border-b border-slate-200 dark:border-slate-700 w-full relative">
         <div className="w-full px-4 flex items-center gap-0">
 
           {/* LEFT: Toggle + Logo — w-125 matches AppShell breadcrumbs spacer for column alignment */}
@@ -747,8 +747,8 @@ const Header = () => {
                     }}
                     className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-extrabold uppercase tracking-wide rounded-md transition-all duration-150 ${
                       isOpen
-                        ? "bg-slate-100 text-slate-900"
-                        : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                        ? "bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-slate-100"
+                        : "text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-slate-100"
                     }`}
                     aria-expanded={isOpen}
                     aria-haspopup="true"
@@ -766,7 +766,7 @@ const Header = () => {
                       id={`megamenu-${type}`}
                       role="region"
                       aria-label={`${type} navigation`}
-                      className="absolute top-full left-0 z-50 mt-1 bg-white border border-slate-200 shadow-2xl rounded-xl w-auto min-w-max"
+                      className="absolute top-full left-0 z-50 mt-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-2xl rounded-xl w-auto min-w-max"
                       onMouseEnter={cancelClose}
                       onMouseLeave={closeMegaMenu}
                       onKeyDown={(e) => { if (e.key === "Escape") setActiveMegaMenu(null); }}
@@ -796,10 +796,10 @@ const Header = () => {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyDown={(e) => e.key === "Escape" && setSearchQuery("")}
                 placeholder="Search articles, modules, definitions…"
-                className="w-full pl-9 pr-24 py-2 border border-slate-200 rounded-lg text-sm bg-slate-50 text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-400 focus:bg-white transition-all"
+                className="w-full pl-9 pr-24 py-2 border border-slate-200 dark:border-slate-700 rounded-lg text-sm bg-slate-50 dark:bg-slate-800 text-slate-800 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-400 focus:bg-white dark:focus:bg-slate-700 transition-all"
               />
               <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
-                <span className="text-[10px] font-bold bg-white border border-slate-200 px-1.5 py-0.5 rounded text-slate-400 hidden lg:block">⌘K</span>
+                <span className="text-[10px] font-bold bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 px-1.5 py-0.5 rounded text-slate-400 dark:text-slate-500 hidden lg:block">⌘K</span>
                 <button
                   type="submit"
                   disabled={!searchQuery.trim()}
@@ -846,10 +846,10 @@ const Header = () => {
         {mobileMenuOpen && (
           <div
             id="mobile-menu"
-            className="absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-xl xl:hidden flex flex-col animate-in slide-in-from-top-2 duration-200 max-h-[85vh] overflow-y-auto"
+            className="absolute top-full left-0 w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 shadow-xl xl:hidden flex flex-col animate-in slide-in-from-top-2 duration-200 max-h-[85vh] overflow-y-auto"
           >
             {/* Mobile Search */}
-            <div className="px-4 py-3 border-b border-slate-100 bg-slate-50">
+            <div className="px-4 py-3 border-b border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-800">
               <form onSubmit={handleSearchSubmit} className="flex gap-2">
                 <div className="relative flex-1">
                   <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -860,7 +860,7 @@ const Header = () => {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="Search articles, modules, definitions…"
-                    className="w-full pl-9 pr-3 py-2.5 border border-slate-200 rounded-lg text-sm bg-white text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-400"
+                    className="w-full pl-9 pr-3 py-2.5 border border-slate-200 dark:border-slate-600 rounded-lg text-sm bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-400"
                   />
                 </div>
                 <button
@@ -920,12 +920,12 @@ const Header = () => {
                 ],
               },
             ].map((section) => (
-              <div key={section.key} className="border-b border-slate-100 last:border-0">
+              <div key={section.key} className="border-b border-slate-100 dark:border-slate-700 last:border-0">
                 <button
                   onClick={() =>
                     setMobileSection(mobileSection === section.key ? null : section.key)
                   }
-                  className="w-full flex items-center justify-between px-4 py-3 font-black text-sm text-slate-800 uppercase tracking-wider bg-slate-50 hover:bg-slate-100 transition-colors"
+                  className="w-full flex items-center justify-between px-4 py-3 font-black text-sm text-slate-800 dark:text-slate-100 uppercase tracking-wider bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
                 >
                   {section.label}
                   <ChevronDownIcon
@@ -939,7 +939,7 @@ const Header = () => {
                         <Link
                           href={child.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block px-6 py-2 text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-slate-900"
+                          className="block px-6 py-2 text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-slate-100"
                         >
                           {child.label}
                         </Link>
@@ -948,7 +948,7 @@ const Header = () => {
                             key={sub.href}
                             href={sub.href}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="block pl-10 pr-4 py-1.5 text-xs text-slate-500 hover:bg-slate-50 hover:text-slate-700"
+                            className="block pl-10 pr-4 py-1.5 text-xs text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-700 dark:hover:text-slate-200"
                           >
                             {sub.label}
                           </Link>
@@ -961,12 +961,12 @@ const Header = () => {
             ))}
 
             {/* Mobile Auth + Quick Links */}
-            <div className="border-t border-slate-200 bg-slate-50 px-4 py-4 flex flex-col gap-3">
+            <div className="border-t border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-4 py-4 flex flex-col gap-3">
               <div className="flex gap-2">
                 <Link
                   href="/login"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex-1 text-center border border-slate-300 text-slate-700 text-sm font-bold py-2.5 rounded-lg hover:bg-white transition-colors"
+                  className="flex-1 text-center border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 text-sm font-bold py-2.5 rounded-lg hover:bg-white dark:hover:bg-slate-700 transition-colors"
                 >
                   Log In
                 </Link>
@@ -978,7 +978,7 @@ const Header = () => {
                   Subscribe
                 </Link>
               </div>
-              <div className="flex items-center justify-center gap-4 text-xs text-slate-400">
+              <div className="flex items-center justify-center gap-4 text-xs text-slate-400 dark:text-slate-500">
                 <Link href="/faq" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600">FAQ</Link>
                 <span>·</span>
                 <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600">About</Link>

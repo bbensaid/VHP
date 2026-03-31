@@ -134,16 +134,16 @@ export default function CommandPalette() {
       />
 
       {/* Modal */}
-      <div className="relative w-full max-w-2xl bg-white rounded-xl shadow-2xl overflow-hidden ring-1 ring-slate-900/5 flex flex-col animate-in fade-in zoom-in-95 duration-100">
+      <div className="relative w-full max-w-2xl bg-white dark:bg-slate-900 rounded-xl shadow-2xl overflow-hidden ring-1 ring-slate-900/5 dark:ring-slate-700/50 flex flex-col animate-in fade-in zoom-in-95 duration-100">
         {/* Input */}
-        <div className="flex items-center border-b border-slate-100 px-4 py-3 bg-white">
+        <div className="flex items-center border-b border-slate-100 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-900">
           <MagnifyingGlassIcon
             className="w-5 h-5 text-slate-500 mr-3"
             aria-hidden="true"
           />
           <input
             type="text"
-            className="flex-1 bg-transparent text-lg text-slate-800 placeholder:text-slate-500 focus:outline-none"
+            className="flex-1 bg-transparent text-lg text-slate-800 dark:text-slate-100 placeholder:text-slate-500 dark:placeholder:text-slate-600 focus:outline-none"
             placeholder="Type a command or search…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
@@ -152,18 +152,18 @@ export default function CommandPalette() {
           />
           <button
             onClick={() => setIsOpen(false)}
-            className="p-1 hover:bg-slate-100 rounded text-slate-600 transition-colors"
+            className="p-1 hover:bg-slate-100 dark:hover:bg-slate-700 rounded text-slate-600 dark:text-slate-400 transition-colors"
             aria-label="Close command palette"
           >
             {/* ESC badge — on a slate-100 background, text-slate-700 gives ~8.5:1 */}
-            <span className="text-[10px] font-bold px-1.5 py-0.5 bg-slate-100 rounded border border-slate-200 text-slate-700">
+            <span className="text-[10px] font-bold px-1.5 py-0.5 bg-slate-100 dark:bg-slate-700 rounded border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-300">
               ESC
             </span>
           </button>
         </div>
 
         {/* List */}
-        <div className="max-h-[60vh] overflow-y-auto py-2 bg-slate-50/50">
+        <div className="max-h-[60vh] overflow-y-auto py-2 bg-slate-50/50 dark:bg-slate-800/50">
           {filteredCommands.length > 0 ? (
             <div className="px-2 space-y-1">
               {filteredCommands.map((command, index) => {
@@ -178,16 +178,16 @@ export default function CommandPalette() {
                     aria-selected={active}
                     className={`flex items-center justify-between px-3 py-3 rounded-lg cursor-pointer transition-all ${
                       active
-                        ? "bg-white shadow-sm ring-1 ring-slate-200 text-indigo-700"
-                        : "text-slate-700 hover:bg-slate-100/50"
+                        ? "bg-white dark:bg-slate-700 shadow-sm ring-1 ring-slate-200 dark:ring-slate-600 text-indigo-700 dark:text-indigo-400"
+                        : "text-slate-700 dark:text-slate-200 hover:bg-slate-100/50 dark:hover:bg-slate-700/50"
                     }`}
                   >
                     <div className="flex items-center gap-3">
                       <div
                         className={`p-1.5 rounded-md ${
                           active
-                            ? "bg-indigo-50 text-indigo-600"
-                            : "bg-white text-slate-500 border border-slate-100"
+                            ? "bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400"
+                            : "bg-white dark:bg-slate-700 text-slate-500 dark:text-slate-400 border border-slate-100 dark:border-slate-600"
                         }`}
                       >
                         <Icon className="w-5 h-5" aria-hidden="true" />
@@ -203,7 +203,7 @@ export default function CommandPalette() {
                          * "State" badge on white bg.
                          * text-slate-600 on white = ~5.9:1 ✓ WCAG AA
                          */
-                        <span className="text-[10px] uppercase font-bold text-slate-600 bg-white border border-slate-200 px-1.5 py-0.5 rounded">
+                        <span className="text-[10px] uppercase font-bold text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 px-1.5 py-0.5 rounded">
                           State
                         </span>
                       )}
@@ -219,7 +219,7 @@ export default function CommandPalette() {
               })}
             </div>
           ) : (
-            <div className="py-12 text-center text-slate-600">
+            <div className="py-12 text-center text-slate-600 dark:text-slate-400">
               <p>No results found for &ldquo;{query}&rdquo;</p>
             </div>
           )}
@@ -228,7 +228,7 @@ export default function CommandPalette() {
         {/* Footer
             text-slate-600 on white = ~5.9:1 ✓ WCAG AA (was text-slate-400 ~2.9:1 ✗)
         */}
-        <div className="bg-white px-4 py-2 text-[10px] text-slate-600 border-t border-slate-100 flex justify-between shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.02)]">
+        <div className="bg-white dark:bg-slate-900 px-4 py-2 text-[10px] text-slate-600 dark:text-slate-400 border-t border-slate-100 dark:border-slate-700 flex justify-between shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.02)]">
           <div className="flex gap-4">
             <span><strong>↑↓</strong> to navigate</span>
             <span><strong>Enter</strong> to select</span>

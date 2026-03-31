@@ -141,8 +141,8 @@ function SectionTabBtn({ active, onClick, children }: {
         relative flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold
         transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r mr-2 mb-0
         ${active
-          ? 'bg-slate-100 border-black text-slate-900 z-10 -mb-px'
-          : 'bg-white border-slate-200 text-slate-500 hover:bg-slate-50 hover:text-slate-700 mt-1.5 shadow-sm'
+          ? 'bg-slate-100 dark:bg-slate-700 border-black dark:border-slate-500 text-slate-900 dark:text-slate-100 z-10 -mb-px'
+          : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-700 dark:hover:text-slate-200 mt-1.5 shadow-sm'
         }
       `}
     >
@@ -166,8 +166,8 @@ function ToolPillBtn({ active, onClick, children }: {
         flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold
         border transition-all whitespace-nowrap
         ${active
-          ? 'bg-slate-800 text-white border-slate-800 shadow-sm'
-          : 'bg-white text-slate-500 border-slate-300 hover:border-slate-400 hover:text-slate-700'
+          ? 'bg-slate-800 dark:bg-slate-200 text-white dark:text-slate-900 border-slate-800 dark:border-slate-200 shadow-sm'
+          : 'bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-300 dark:border-slate-600 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-700 dark:hover:text-slate-200'
         }
       `}
     >
@@ -220,15 +220,15 @@ function ResearchLabHubInner() {
   const activeTool    = activeSection.tools.find(t => t.id === activeToolId) ?? activeSection.tools[0]
 
   return (
-    <div className="w-full font-sans text-slate-800 flex flex-col pb-20">
+    <div className="w-full font-sans text-slate-800 dark:text-slate-100 flex flex-col pb-20">
 
       {/* ── Header card (matches HubPageTemplate exactly) ─────────────── */}
-      <div className="bg-white border border-slate-200 rounded-2xl p-8 mb-6 shadow-sm relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50 rounded-bl-full -mr-20 -mt-20 opacity-50 pointer-events-none" />
+      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 mb-6 shadow-sm relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50 dark:bg-indigo-950/20 rounded-bl-full -mr-20 -mt-20 opacity-50 pointer-events-none" />
         <div className="relative z-10">
           <Link
             href="/"
-            className="inline-flex items-center text-sm font-bold text-slate-500 hover:text-indigo-600 transition-colors mb-6"
+            className="inline-flex items-center text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-indigo-600 transition-colors mb-6"
           >
             <ArrowLeftIcon className="w-4 h-4 mr-1.5" /> Back to Home
           </Link>
@@ -239,10 +239,10 @@ function ResearchLabHubInner() {
                   Research Lab
                 </span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-3">
+              <h1 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-slate-100 tracking-tight mb-3">
                 HTR Research Lab
               </h1>
-              <p className="text-slate-500 text-lg leading-relaxed">
+              <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">
                 19 interactive analytical tools spanning every dimension of health system transformation — from FHIR interoperability to Monte Carlo health economic modeling.
               </p>
             </div>
@@ -253,7 +253,7 @@ function ResearchLabHubInner() {
       {/* ── Sticky nav — BOTH rows in ONE container ────────────────────── */}
       <div className="sticky z-30 mb-8" style={{ top: 'var(--sidebar-top, var(--sticky-bar-height, 2.5rem))' }}>
         <nav
-          className="flex flex-wrap justify-center items-end border border-slate-200 rounded-t-xl px-2 bg-slate-50/80 backdrop-blur-sm pt-2 gap-y-1"
+          className="flex flex-wrap justify-center items-end border border-slate-200 dark:border-slate-700 rounded-t-xl px-2 bg-slate-50/80 dark:bg-slate-800/80 backdrop-blur-sm pt-2 gap-y-1"
           aria-label="Research Lab navigation"
         >
           {/* Row 1: Section tabs — browser-tab style */}
@@ -291,12 +291,12 @@ function ResearchLabHubInner() {
           <div className="mb-6">
             <div className="flex flex-wrap items-center gap-2 mb-1">
               <span className="text-2xl">{activeTool.icon}</span>
-              <h2 className="text-xl font-black text-slate-900">{activeTool.label}</h2>
+              <h2 className="text-xl font-black text-slate-900 dark:text-slate-100">{activeTool.label}</h2>
               <span className={`text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full border ${activeTool.badgeCls}`}>
                 {activeTool.badge}
               </span>
             </div>
-            <p className="text-sm text-slate-500 leading-relaxed ml-9">{activeTool.desc}</p>
+            <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed ml-9">{activeTool.desc}</p>
           </div>
 
           <ActiveTool sectionId={activeSectionId} toolId={activeToolId} />

@@ -57,7 +57,7 @@ app = FastAPI(title="HTR AI Brain", version="4.2.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[FRONTEND_URL, "http://localhost:3000"],
+    allow_origins=list({FRONTEND_URL, "http://localhost:3000"}),
     allow_credentials=True,
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type", "Authorization", "X-HTR-API-Key"],
@@ -96,7 +96,7 @@ app.include_router(personalized_learning_router)
 
 @app.on_event("startup")
 async def startup():
-    log.info("\n🚀 HTR AI Brain v4.1 starting...")
+    log.info("\n🚀 HTR AI Brain v4.2.0 starting...")
     init_global_settings()
 
     # Warm up FlashRank in background so first request isn't slow

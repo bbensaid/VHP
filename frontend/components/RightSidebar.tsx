@@ -111,14 +111,14 @@ export default function RightSidebar() {
   };
 
   return (
-    <aside className="w-full pt-4" aria-label="AI Analyst panel">
-      <div className="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden flex flex-col">
+    <aside className="w-full h-full flex flex-col" aria-label="AI Analyst panel">
+      <div className="flex-1 min-h-0 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm overflow-hidden flex flex-col">
 
         {/* Header */}
-        <div className="flex items-center justify-between px-4 py-3 border-b border-slate-100 bg-slate-50">
+        <div className="flex items-center justify-between px-4 py-3 border-b border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-800">
           <div className="flex items-center gap-2">
             <SparklesIcon className="w-4 h-4 text-indigo-500" />
-            <h3 className="text-xs font-black uppercase tracking-widest text-slate-700">AI Analyst</h3>
+            <h3 className="text-xs font-black uppercase tracking-widest text-slate-700 dark:text-slate-200">AI Analyst</h3>
           </div>
           <div className="flex items-center gap-1">
             {messages.length > 0 && (
@@ -139,7 +139,7 @@ export default function RightSidebar() {
         {/* Messages */}
         <div ref={messagesContainerRef} className="flex-1 min-h-0 flex flex-col gap-3 p-3 overflow-y-auto text-xs">
           {messages.length === 0 && (
-            <p className="text-slate-400 text-center py-4 leading-relaxed">
+            <p className="text-slate-400 dark:text-slate-500 text-center py-4 leading-relaxed">
               Ask a quick question without leaving this page.
             </p>
           )}
@@ -150,16 +150,16 @@ export default function RightSidebar() {
                   {msg.text}
                 </div>
               ) : msg.isError ? (
-                <div className="border-l-2 border-rose-300 bg-rose-50 rounded-r-lg pl-3 pr-3 py-2.5 text-slate-700 leading-relaxed">
+                <div className="border-l-2 border-rose-300 bg-rose-50 dark:bg-rose-950/30 rounded-r-lg pl-3 pr-3 py-2.5 text-slate-700 dark:text-slate-200 leading-relaxed">
                   <div className="flex items-start gap-1.5 mb-1.5">
                     <ExclamationTriangleIcon className="w-3.5 h-3.5 text-rose-500 mt-0.5 shrink-0" />
                     <span className="text-[10px] font-black uppercase tracking-wider text-rose-500">Error</span>
                   </div>
                   <ReactMarkdown
                     components={{
-                      p: ({ node, ...props }) => <p {...props} className="mb-1.5 last:mb-0 text-slate-600" />,
-                      strong: ({ node, ...props }) => <strong {...props} className="font-bold text-slate-800" />,
-                      code: ({ node, ...props }) => <code {...props} className="block bg-slate-100 rounded px-2 py-1 text-[10px] font-mono text-slate-700 mt-1 whitespace-pre-wrap" />,
+                      p: ({ node, ...props }) => <p {...props} className="mb-1.5 last:mb-0 text-slate-600 dark:text-slate-300" />,
+                      strong: ({ node, ...props }) => <strong {...props} className="font-bold text-slate-800 dark:text-slate-100" />,
+                      code: ({ node, ...props }) => <code {...props} className="block bg-slate-100 dark:bg-slate-700 rounded px-2 py-1 text-[10px] font-mono text-slate-700 dark:text-slate-200 mt-1 whitespace-pre-wrap" />,
                       a: ({ node, ...props }) => <a {...props} className="text-indigo-600 underline" />,
                     }}
                   >
@@ -176,13 +176,13 @@ export default function RightSidebar() {
                   )}
                 </div>
               ) : (
-                <div className="border-l-2 border-indigo-200 pl-3 text-slate-700 leading-relaxed">
+                <div className="border-l-2 border-indigo-200 dark:border-indigo-700 pl-3 text-slate-700 dark:text-slate-200 leading-relaxed">
                   <ReactMarkdown
                     components={{
                       p: ({ node, ...props }) => <p {...props} className="mb-1.5 last:mb-0" />,
                       ul: ({ node, ...props }) => <ul {...props} className="list-disc pl-4 mb-1.5 space-y-0.5" />,
                       li: ({ node, ...props }) => <li {...props} />,
-                      strong: ({ node, ...props }) => <strong {...props} className="font-semibold text-slate-900" />,
+                      strong: ({ node, ...props }) => <strong {...props} className="font-semibold text-slate-900 dark:text-slate-100" />,
                     }}
                   >
                     {msg.text || "…"}
@@ -194,7 +194,7 @@ export default function RightSidebar() {
         </div>
 
         {/* Input */}
-        <div className="border-t border-slate-100 p-3 flex items-end gap-2">
+        <div className="border-t border-slate-100 dark:border-slate-700 p-3 flex items-end gap-2">
           <textarea
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -202,7 +202,7 @@ export default function RightSidebar() {
             placeholder="Ask a quick question…"
             aria-label="Message to AI Analyst"
             rows={1}
-            className="flex-1 max-h-20 text-xs text-slate-900 placeholder:text-slate-400 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-indigo-300 resize-none leading-relaxed"
+            className="flex-1 max-h-20 text-xs text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-600 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-3 py-2 focus:outline-none focus:border-indigo-300 dark:focus:border-indigo-600 resize-none leading-relaxed"
           />
           {isLoading ? (
             <button

@@ -2,6 +2,25 @@ import { createServerClient } from "@supabase/ssr";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+// ─── Simple in-process rate limiter for /verify/* ────────────────────────────
+// 20 requests per IP per 60-second window. Resets on cold start (acceptable
+// for a low-traffic route where the main concern is bulk scraping/brute-force).
+const VERIFY_RATE_LIMIT = 20;
+const VERIFY_WINDOW_MS  = 60_000;
+const verifyHits = new Map<string, { count: number; resetAt: number }>();
+
+function checkVerifyRateLimit(ip: string): boolean {
+  const now  = Date.now();
+  const rec  = verifyHits.get(ip);
+  if (!rec || now > rec.resetAt) {
+    verifyHits.set(ip, { count: 1, resetAt: now + VERIFY_WINDOW_MS });
+    return true;
+  }
+  if (rec.count >= VERIFY_RATE_LIMIT) return false;
+  rec.count++;
+  return true;
+}
+
 // ─── Route protection config ──────────────────────────────────────────────────
 type Protection =
   | { type: "authOnly" }
@@ -21,6 +40,19 @@ const AUTH_ROUTES = ["/login", "/signup"];
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  // Rate-limit the public certificate verify endpoint
+  if (pathname.startsWith("/verify/")) {
+    const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim()
+      ?? request.headers.get("x-real-ip")
+      ?? "unknown";
+    if (!checkVerifyRateLimit(ip)) {
+      return new NextResponse("Too Many Requests", {
+        status: 429,
+        headers: { "Retry-After": "60" },
+      });
+    }
+  }
 
   const response = NextResponse.next({
     request: { headers: request.headers },
