@@ -27,6 +27,8 @@ HTR (Health Transformation Review) is an intelligence and analytics platform for
 | [Testing & Deployment](testing-and-deployment.md) | Engineers · Operators | End-to-end testing, staging, deployment runbook |
 | [Personalized Learning](personalized-learning.md) | Engineers · Product | Technical deep-dive on the AI curriculum generation feature |
 | [HTR Connect](HTR-Connect.md) | Engineers · Product | HTR Connect community feature — architecture and implementation |
+| [Deployment Guide](deployment-guide.md) | Engineers · DevOps | Step-by-step deployment for all 8 services: Supabase, Railway, Vercel, Stripe, Sanity, Groq, OpenAI, Sentry |
+| [Act 167 Simulator Guide](act167-simulator-guide.md) | VT analysts · Developers | Vermont Act 167 simulation tool — usage, calculations, methodology |
 
 ---
 
