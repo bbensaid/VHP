@@ -11,26 +11,50 @@ import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowLeftIcon } from '@heroicons/react/24/outline'
 import dynamic from 'next/dynamic'
+import ErrorBoundary from '@/components/ErrorBoundary'
 
-/* ── Lazy-load all 19 tools ─────────────────────────────────────────────── */
-const FHIRLab                    = dynamic(() => import('@/components/research/FHIRLab'),                    { ssr: false })
-const RiskStratificationEngine   = dynamic(() => import('@/components/research/RiskStratificationEngine'),   { ssr: false })
-const APMDesignLab               = dynamic(() => import('@/components/research/APMDesignLab'),               { ssr: false })
-const APMCalculator              = dynamic(() => import('@/components/research/APMCalculator'),              { ssr: false })
-const CEACalculator              = dynamic(() => import('@/components/research/CEACalculator'),              { ssr: false })
-const PopulationHealthModeler    = dynamic(() => import('@/components/research/PopulationHealthModeler'),    { ssr: false })
-const HealthEquityStudio         = dynamic(() => import('@/components/research/HealthEquityStudio'),         { ssr: false })
-const PolicySimulator            = dynamic(() => import('@/components/research/PolicySimulator'),            { ssr: false })
-const ClinicalQualityOptimizer   = dynamic(() => import('@/components/research/ClinicalQualityOptimizer'),   { ssr: false })
-const HospitalFinancialScorecard = dynamic(() => import('@/components/research/HospitalFinancialScorecard'), { ssr: false })
-const HTAStudio                  = dynamic(() => import('@/components/research/HTAStudio'),                  { ssr: false })
-const ActuarialLab               = dynamic(() => import('@/components/research/ActuarialLab'),               { ssr: false })
-const AIAnalyticsLab             = dynamic(() => import('@/components/research/AIAnalyticsLab'),             { ssr: false })
-const DigitalHealthLab           = dynamic(() => import('@/components/research/DigitalHealthLab'),           { ssr: false })
-const EvidenceLibrary            = dynamic(() => import('@/components/research/EvidenceLibrary'),            { ssr: false })
-const WorkforceModeler           = dynamic(() => import('@/components/research/WorkforceModeler'),           { ssr: false })
-const InnovationLeaderboard      = dynamic(() => import('@/components/research/InnovationLeaderboard'),      { ssr: false })
-const ResearchWorkspace          = dynamic(() => import('@/components/research/ResearchWorkspace'),          { ssr: false })
+/* ── Tool loading skeleton ──────────────────────────────────────────────── */
+function ToolSkeleton() {
+  return (
+    <div className="w-full animate-pulse space-y-4 p-6">
+      <div className="h-6 bg-slate-100 rounded-lg w-1/3" />
+      <div className="h-4 bg-slate-100 rounded w-2/3" />
+      <div className="grid grid-cols-3 gap-4 mt-6">
+        {[1, 2, 3].map(i => (
+          <div key={i} className="h-28 bg-slate-100 rounded-xl" />
+        ))}
+      </div>
+      <div className="h-48 bg-slate-100 rounded-2xl mt-4" />
+    </div>
+  )
+}
+
+const loadOpts = (label: string) => ({
+  ssr: false,
+  loading: () => <ToolSkeleton />,
+  // Webpack magic comment: group chart-heavy tools into named chunks
+  // so they share vendor splitting with chart.js / recharts
+} as const)
+
+/* ── Lazy-load all 19 tools with loading skeletons ──────────────────────── */
+const FHIRLab                    = dynamic(() => import(/* webpackChunkName: "tool-fhir" */        '@/components/research/FHIRLab'),                    { ...loadOpts('FHIR'), ssr: false })
+const RiskStratificationEngine   = dynamic(() => import(/* webpackChunkName: "tool-risk" */        '@/components/research/RiskStratificationEngine'),   { ...loadOpts('Risk'), ssr: false })
+const APMDesignLab               = dynamic(() => import(/* webpackChunkName: "tool-apm" */         '@/components/research/APMDesignLab'),               { ...loadOpts('APM'), ssr: false })
+const APMCalculator              = dynamic(() => import(/* webpackChunkName: "tool-apm" */         '@/components/research/APMCalculator'),              { ...loadOpts('APMCalc'), ssr: false })
+const CEACalculator              = dynamic(() => import(/* webpackChunkName: "tool-econ" */        '@/components/research/CEACalculator'),              { ...loadOpts('CEA'), ssr: false })
+const PopulationHealthModeler    = dynamic(() => import(/* webpackChunkName: "tool-pop" */         '@/components/research/PopulationHealthModeler'),    { ...loadOpts('Pop'), ssr: false })
+const HealthEquityStudio         = dynamic(() => import(/* webpackChunkName: "tool-equity" */      '@/components/research/HealthEquityStudio'),         { ...loadOpts('Equity'), ssr: false })
+const PolicySimulator            = dynamic(() => import(/* webpackChunkName: "tool-policy" */      '@/components/research/PolicySimulator'),            { ...loadOpts('Policy'), ssr: false })
+const ClinicalQualityOptimizer   = dynamic(() => import(/* webpackChunkName: "tool-clinical" */    '@/components/research/ClinicalQualityOptimizer'),   { ...loadOpts('CQO'), ssr: false })
+const HospitalFinancialScorecard = dynamic(() => import(/* webpackChunkName: "tool-finance" */     '@/components/research/HospitalFinancialScorecard'), { ...loadOpts('Finance'), ssr: false })
+const HTAStudio                  = dynamic(() => import(/* webpackChunkName: "tool-hta" */         '@/components/research/HTAStudio'),                  { ...loadOpts('HTA'), ssr: false })
+const ActuarialLab               = dynamic(() => import(/* webpackChunkName: "tool-actuarial" */   '@/components/research/ActuarialLab'),               { ...loadOpts('Actuarial'), ssr: false })
+const AIAnalyticsLab             = dynamic(() => import(/* webpackChunkName: "tool-ai" */          '@/components/research/AIAnalyticsLab'),             { ...loadOpts('AI'), ssr: false })
+const DigitalHealthLab           = dynamic(() => import(/* webpackChunkName: "tool-digital" */     '@/components/research/DigitalHealthLab'),           { ...loadOpts('Digital'), ssr: false })
+const EvidenceLibrary            = dynamic(() => import(/* webpackChunkName: "tool-evidence" */    '@/components/research/EvidenceLibrary'),            { ...loadOpts('Evidence'), ssr: false })
+const WorkforceModeler           = dynamic(() => import(/* webpackChunkName: "tool-workforce" */   '@/components/research/WorkforceModeler'),           { ...loadOpts('Workforce'), ssr: false })
+const InnovationLeaderboard      = dynamic(() => import(/* webpackChunkName: "tool-innovation" */  '@/components/research/InnovationLeaderboard'),      { ...loadOpts('Innovation'), ssr: false })
+const ResearchWorkspace          = dynamic(() => import(/* webpackChunkName: "tool-workspace" */   '@/components/research/ResearchWorkspace'),          { ...loadOpts('Workspace'), ssr: false })
 
 /* ── Data model ─────────────────────────────────────────────────────────── */
 interface Tool {
@@ -299,7 +323,9 @@ function ResearchLabHubInner() {
             <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed ml-9">{activeTool.desc}</p>
           </div>
 
-          <ActiveTool sectionId={activeSectionId} toolId={activeToolId} />
+          <ErrorBoundary section={activeTool.label} key={`${activeSectionId}/${activeToolId}`}>
+            <ActiveTool sectionId={activeSectionId} toolId={activeToolId} />
+          </ErrorBoundary>
         </div>
       </div>
 

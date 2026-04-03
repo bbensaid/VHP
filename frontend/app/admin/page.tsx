@@ -1,6 +1,7 @@
 // app/admin/page.tsx — Admin Dashboard
 // Requires admin role. Shows user stats, content metrics, ingest status.
 
+import React from "react";
 import Link from "next/link";
 import { requireRole } from "@/lib/auth";
 import { dbAdmin } from "@/lib/db/client";
@@ -183,8 +184,9 @@ export default async function AdminDashboard() {
           <h2 className="text-sm font-black uppercase tracking-widest text-slate-500 mb-4">Admin Tools</h2>
           <div className="space-y-1">
             {[
-              { href: "/admin/role-changes", label: "Role Change Audit Log", icon: DocumentTextIcon },
               { href: "/admin/users", label: "User Management", icon: UsersIcon },
+              { href: "/admin/analytics", label: "AI & Content Analytics", icon: ChartBarIcon },
+              { href: "/admin/role-changes", label: "Role Change Audit Log", icon: DocumentTextIcon },
               { href: "/admin/ingest", label: "Ingest Monitor", icon: ArrowPathIcon },
               { href: "/studio", label: "Content CMS (Sanity)", icon: DocumentTextIcon },
             ].map(({ href, label, icon: Icon }) => (

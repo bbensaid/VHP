@@ -14,6 +14,7 @@ function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const redirectTo = searchParams.get("from") ?? "/account";
+  const isTimeout = searchParams.get("timeout") === "1";
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -48,6 +49,13 @@ function LoginForm() {
           </Link>
           <p className="mt-2 text-slate-500 text-sm">Sign in to your account</p>
         </div>
+
+        {isTimeout && (
+          <div className="mb-6 flex items-center gap-3 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-sm text-amber-800">
+            <span className="text-amber-500 shrink-0">⚠</span>
+            Your session expired due to inactivity. Please sign in again.
+          </div>
+        )}
 
         <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
           <button

@@ -4,13 +4,13 @@
 // Client wrapper that manages sidebar visibility, localStorage progress tracking,
 // and inline knowledge-check quizzes for the module reader.
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import type { PortableTextBlock } from "@portabletext/react";
 import AcademyContent from "@/components/AcademyContent";
 import KnowledgeCheck, { type Question } from "@/components/academy/KnowledgeCheck";
 import { useModuleProgress } from "@/hooks/useModuleProgress";
-import { CheckCircle, Clock } from "lucide-react";
+import { CheckCircle, Clock, Award } from "lucide-react";
 
 // ─── Static demo question bank (keyed by module slug) ────────────────────────
 // In production these would come from Sanity `academyModule.quiz[]` fields.
@@ -122,6 +122,8 @@ interface Props {
 export default function AcademyModuleLayout({ module, courseModules, slug }: Props) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [showQuiz, setShowQuiz] = useState(false);
+  const [certHash, setCertHash] = useState<string | null>(null);
+  const certIssuedRef = useRef(false);
 
   const { progress, markCompleted, markQuizPassed, isSlugCompleted, getCompletedCount } =
     useModuleProgress(slug);
@@ -131,6 +133,28 @@ export default function AcademyModuleLayout({ module, courseModules, slug }: Pro
   // Progress is based on completed modules, not just current position
   const progressPct = total > 0 ? Math.round((completedCount / total) * 100) : 0;
   const levelStyle  = levelColors[module.level ?? ""] ?? "bg-slate-100 text-slate-700 border-slate-200";
+
+  const isLastModule = !module.nextModuleSlug;
+  const courseSlug = courseModules[0]?.slug
+    ? module.courseTitle.toLowerCase().replace(/\s+/g, "-")
+    : slug;
+
+  // Issue certificate when last module is completed (quiz passed or marked read)
+  useEffect(() => {
+    if (!isLastModule) return;
+    if (!progress.completed) return;
+    if (certIssuedRef.current) return;
+    certIssuedRef.current = true;
+
+    fetch("/api/academy/certificates", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ courseSlug, courseTitle: module.courseTitle }),
+    })
+      .then((res) => res.json())
+      .then((data) => { if (data.hash) setCertHash(data.hash); })
+      .catch(() => {/* non-fatal */});
+  }, [isLastModule, progress.completed, courseSlug, module.courseTitle]);
 
   const questions = getQuestions(slug);
 
@@ -402,6 +426,30 @@ export default function AcademyModuleLayout({ module, courseModules, slug }: Pro
                 </Link>
               )}
             </div>
+
+            {/* Certificate earned — shown on last module completion */}
+            {certHash && (
+              <div className="flex flex-col sm:flex-row items-center gap-5 bg-linear-to-br from-indigo-50 to-emerald-50 border border-indigo-200 rounded-2xl p-6 mb-8">
+                <div className="w-14 h-14 rounded-full bg-indigo-600 flex items-center justify-center shrink-0 shadow-md">
+                  <Award size={28} className="text-white" />
+                </div>
+                <div className="flex-1 text-center sm:text-left">
+                  <p className="font-black text-slate-900 text-lg mb-0.5">Certificate Earned!</p>
+                  <p className="text-slate-500 text-sm">
+                    You completed <span className="font-bold text-slate-700">{module.courseTitle}</span>.
+                    Your certificate has been issued.
+                  </p>
+                </div>
+                <a
+                  href={`/verify/${certHash}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="shrink-0 px-5 py-2.5 bg-indigo-600 text-white rounded-xl text-sm font-bold hover:bg-indigo-700 transition-colors shadow-sm"
+                >
+                  View Certificate →
+                </a>
+              </div>
+            )}
 
           </main>
         </div>

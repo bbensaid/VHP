@@ -21,6 +21,8 @@ import {
   TableCellsIcon,
   BookmarkIcon,
   ChevronDownIcon,
+  BoltIcon,
+  BanknotesIcon,
 } from "@heroicons/react/24/outline";
 
 interface HomeSidebarProps {
@@ -137,6 +139,8 @@ const SECTIONS: Section[] = [
       { href: "/research-lab/knowledge-workspace", label: "Knowledge & Workspace",     icon: BookOpenIcon },
       { href: "/htr-simulator",                    label: "HTR Simulator",             icon: CpuChipIcon },
       { href: "/hti-dashboard",                    label: "HTI Dashboard",             icon: DocumentTextIcon },
+      { href: "/the-wire",                          label: "The Wire",                  icon: BoltIcon },
+      { href: "/investment-tracker",               label: "Investment Tracker",         icon: BanknotesIcon },
       { href: "/multimedia",                       label: "Multimedia",                icon: FilmIcon },
       { href: "/trending-topics",                  label: "Trending Topics",           icon: ArrowTrendingUpIcon },
     ],
@@ -169,6 +173,8 @@ const SECTIONS: Section[] = [
       { href: "/advisory/training",           label: "Training & Education",  icon: AcademicCapIcon },
       { href: "/advisory/independent-review", label: "Independent Review",    icon: DocumentTextIcon },
       { href: "/connect-hub",                 label: "Connect Hub",           icon: UsersIcon },
+      { href: "/connect",                     label: "HTR Connect",           icon: UsersIcon },
+      { href: "/connect/directory",           label: "Member Directory",      icon: UsersIcon },
       { href: "/community",                   label: "Community",             icon: UsersIcon },
     ],
   },
@@ -183,7 +189,7 @@ function getSectionForPath(path: string): string | null {
   if (analyzePrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "analyze";
   const statesPrefixes = ["/vermont-act-167", "/california-calaim", "/states", "/dashboard", "/ahead-model"];
   if (statesPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "states";
-  const advisoryPrefixes = ["/advisory", "/connect-hub", "/community"];
+  const advisoryPrefixes = ["/advisory", "/connect-hub", "/connect", "/community"];
   if (advisoryPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "advisory";
   return null;
 }

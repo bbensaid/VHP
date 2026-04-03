@@ -5,7 +5,7 @@ import { ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon } from "@heroicons/rea
 
 const SIDEBAR_WIDTH = "18rem";       // 288px — matches --sidebar-width token
 const SIDEBAR_STUB_WIDTH = "2.5rem"; // 40px  — matches --sidebar-stub-width token
-const SIDEBAR_BOTTOM_GAP = "2rem";   // 32px  — matches --sidebar-bottom-gap token
+const SIDEBAR_BOTTOM_GAP = "7rem";   // bottom breathing room
 const TRANSITION_DURATION = "duration-300";
 
 interface CollapsibleSidebarProps {
@@ -50,8 +50,9 @@ export default function CollapsibleSidebar({
       {/* Mobile overlay background */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-slate-900/50 z-(--z-overlay) lg:hidden"
+          className="fixed inset-0 bg-slate-900/50 z-(--z-overlay) lg:hidden touch-none"
           onClick={() => setIsOpen(false)}
+          aria-hidden="true"
         />
       )}
 
@@ -66,7 +67,7 @@ export default function CollapsibleSidebar({
         `}
         style={{
           top: stickyTop,
-          height: sidebarHeight,
+          minHeight: "30vh",
           maxHeight: sidebarHeight,
         }}
       >

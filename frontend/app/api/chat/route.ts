@@ -19,11 +19,14 @@ const HistoryMessageSchema = z.object({
   text: z.string().max(4000),
 });
 
+const VALID_PILLARS = ["Policy", "Economics", "Technology", "Clinical", "Equity"] as const;
+
 const ChatRequestSchema = z.object({
   message: z.string().min(1).max(2000),
   history: z.array(HistoryMessageSchema).max(100).optional().default([]),
   temperature: z.number().min(0).max(1).optional().default(0.7),
   systemPrompt: z.string().max(800).optional(),
+  pillar: z.enum(VALID_PILLARS).optional(),
 });
 
 export async function POST(req: Request) {

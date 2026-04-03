@@ -21,6 +21,57 @@ function checkVerifyRateLimit(ip: string): boolean {
   return true;
 }
 
+// ─── Role cache cookie (HMAC-SHA256 signed) ───────────────────────────────────
+// Eliminates the `SELECT role FROM user_roles` round-trip on every protected
+// route request. Cookie is signed with MIDDLEWARE_ROLE_SECRET so it cannot be
+// forged. Falls back to DB lookup if the env var is not set or signature fails.
+//
+// Cookie format: base64(userId:role:exp) + "." + base64url(HMAC-SHA256 signature)
+// TTL: 1 hour. On role change, the next DB lookup overwrites the cookie.
+
+const ROLE_CACHE_TTL_MS = 60 * 60 * 1000; // 1 hour
+const ROLE_CACHE_COOKIE = "htr_rc";
+
+async function getHmacKey(secret: string): Promise<CryptoKey> {
+  return crypto.subtle.importKey(
+    "raw",
+    new TextEncoder().encode(secret),
+    { name: "HMAC", hash: "SHA-256" },
+    false,
+    ["sign", "verify"]
+  );
+}
+
+function b64(buf: ArrayBuffer): string {
+  return btoa(String.fromCharCode(...new Uint8Array(buf)));
+}
+
+async function signRoleCache(userId: string, role: string, exp: number, secret: string): Promise<string> {
+  const payload = `${userId}:${role}:${exp}`;
+  const key = await getHmacKey(secret);
+  const sig = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(payload));
+  return `${btoa(payload)}.${b64(sig)}`;
+}
+
+async function readRoleCache(cookie: string, userId: string, secret: string): Promise<string | null> {
+  try {
+    const dot = cookie.indexOf(".");
+    if (dot === -1) return null;
+    const encodedPayload = cookie.slice(0, dot);
+    const encodedSig = cookie.slice(dot + 1);
+    const payload = atob(encodedPayload);
+    const [uid, role, expStr] = payload.split(":");
+    if (uid !== userId) return null;
+    if (Date.now() > parseInt(expStr, 10)) return null;
+    const key = await getHmacKey(secret);
+    const sigBytes = Uint8Array.from(atob(encodedSig), (c) => c.charCodeAt(0));
+    const valid = await crypto.subtle.verify("HMAC", key, sigBytes, new TextEncoder().encode(payload));
+    return valid ? role : null;
+  } catch {
+    return null;
+  }
+}
+
 // ─── Route protection config ──────────────────────────────────────────────────
 type Protection =
   | { type: "authOnly" }
@@ -35,6 +86,8 @@ const PROTECTED_ROUTES: Array<{ prefix: string; protection: Protection }> = [
   { prefix: "/account",      protection: { type: "authOnly"              } },
   { prefix: "/onboarding",   protection: { type: "authOnly"              } },
 ];
+
+const HIERARCHY = ["free", "subscriber", "student", "professional", "advisory", "admin"];
 
 const AUTH_ROUTES = ["/login", "/signup"];
 
@@ -91,19 +144,51 @@ export async function middleware(request: NextRequest) {
   }
 
   if (match.protection.type === "role") {
-    const { data: roles } = await supabase
-      .from("user_roles")
-      .select("role")
-      .eq("user_id", user.id);
-
-    const HIERARCHY = ["free", "subscriber", "student", "professional", "advisory", "admin"];
     const requiredIdx = HIERARCHY.indexOf(match.protection.role);
+    const roleSecret = process.env.MIDDLEWARE_ROLE_SECRET;
 
-    const hasAccess = (roles ?? []).some(
-      (r: { role: string }) => HIERARCHY.indexOf(r.role) >= requiredIdx
-    );
+    // Try cache first
+    let cachedRole: string | null = null;
+    if (roleSecret) {
+      const cached = request.cookies.get(ROLE_CACHE_COOKIE)?.value;
+      if (cached) {
+        cachedRole = await readRoleCache(cached, user.id, roleSecret);
+      }
+    }
 
-    if (!hasAccess) {
+    let userRoleIdx = -1;
+
+    if (cachedRole !== null) {
+      // Cache hit — no DB round-trip
+      userRoleIdx = HIERARCHY.indexOf(cachedRole);
+    } else {
+      // Cache miss — query DB
+      const { data: roles } = await supabase
+        .from("user_roles")
+        .select("role")
+        .eq("user_id", user.id);
+
+      const bestRole = (roles ?? [])
+        .map((r: { role: string }) => HIERARCHY.indexOf(r.role))
+        .reduce((a: number, b: number) => Math.max(a, b), -1);
+      userRoleIdx = bestRole;
+      const roleName = bestRole >= 0 ? HIERARCHY[bestRole] : "free";
+
+      // Write cache cookie
+      if (roleSecret) {
+        const exp = Date.now() + ROLE_CACHE_TTL_MS;
+        const signed = await signRoleCache(user.id, roleName, exp, roleSecret);
+        response.cookies.set(ROLE_CACHE_COOKIE, signed, {
+          httpOnly: true,
+          sameSite: "lax",
+          secure: process.env.NODE_ENV === "production",
+          maxAge: ROLE_CACHE_TTL_MS / 1000,
+          path: "/",
+        });
+      }
+    }
+
+    if (userRoleIdx < requiredIdx) {
       const upgradeUrl = new URL("/upgrade", request.url);
       upgradeUrl.searchParams.set("from", pathname);
       return NextResponse.redirect(upgradeUrl);

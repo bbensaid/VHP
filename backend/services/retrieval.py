@@ -6,7 +6,7 @@ Hybrid BM25+vector retrieval with FlashRank re-ranking.
 
 import json
 import logging
-from typing import List
+from typing import List, Optional
 
 from llama_index.core import Settings
 from llama_index.core.retrievers import BaseRetriever
@@ -24,22 +24,33 @@ class HybridRetriever(BaseRetriever):
       - Dense: cosine ANN on pgvector embeddings
       - Sparse: BM25 via PostgreSQL tsvector + ts_rank_cd
       - Merged: Reciprocal Rank Fusion (RRF)
+      - Optional: filter_pillar narrows results to one intelligence pillar
     """
 
-    def __init__(self, supabase: SupabaseClient, top_k: int = 20):
-        self._sb    = supabase
-        self._top_k = top_k
+    def __init__(
+        self,
+        supabase: SupabaseClient,
+        top_k: int = 20,
+        filter_pillar: Optional[str] = None,
+    ):
+        self._sb           = supabase
+        self._top_k        = top_k
+        self._filter_pillar = filter_pillar
         super().__init__()
 
     def _retrieve(self, query_bundle: QueryBundle) -> List[NodeWithScore]:
         query = query_bundle.query_str
         try:
             embedding = Settings.embed_model.get_text_embedding(query)
-            result    = self._sb.rpc("hybrid_search_rag", {
+            rpc_args: dict = {
                 "query_text":      query,
                 "query_embedding": embedding,
                 "match_count":     self._top_k,
-            }).execute()
+            }
+            if self._filter_pillar:
+                rpc_args["filter_pillar"] = self._filter_pillar
+
+            result = self._sb.rpc("hybrid_search_rag", rpc_args).execute()
 
             nodes: List[NodeWithScore] = []
             for row in (result.data or []):
@@ -95,3 +106,26 @@ def rerank_nodes(query: str, nodes: List[NodeWithScore], top_k: int = 5) -> List
     except Exception as e:
         log.warning(f"Re-ranking failed: {e}")
         return nodes[:top_k]
+
+
+def extract_citations(nodes: List[NodeWithScore]) -> List[dict]:
+    """
+    Extract unique, non-empty source citations from retrieved nodes.
+    Returns list of {title, url, pillar, source_type} dicts, deduped by title.
+    """
+    seen: set = set()
+    citations: List[dict] = []
+    for n in nodes:
+        meta  = n.node.metadata or {}
+        title = (meta.get("title") or "").strip()
+        url   = (meta.get("url") or "").strip()
+        if not title or title in seen:
+            continue
+        seen.add(title)
+        citations.append({
+            "title":       title,
+            "url":         url or None,
+            "pillar":      (meta.get("pillar") or "").strip() or None,
+            "source_type": (meta.get("source_type") or "").strip() or None,
+        })
+    return citations
