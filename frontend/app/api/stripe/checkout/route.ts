@@ -13,9 +13,10 @@ export async function POST(request: Request) {
   try {
     const user = await requireAuth();
     const body = await request.json();
-    const { planId, interval = "monthly" } = body as {
+    const { planId, interval = "monthly", from } = body as {
       planId: PlanId;
       interval: "monthly" | "yearly";
+      from?: string;
     };
 
     const plan = PLANS[planId];
@@ -56,12 +57,15 @@ export async function POST(request: Request) {
       payment_method_types: ["card"],
       mode: "subscription",
       line_items: [{ price: priceId, quantity: 1 }],
-      success_url: `${origin}/account/subscription?success=true`,
+      success_url: from
+        ? `${origin}/account/subscription?success=true&from=${encodeURIComponent(from)}`
+        : `${origin}/account/subscription?success=true`,
       cancel_url: `${origin}/pricing?canceled=true`,
       metadata: {
         supabase_user_id: user.id,
         plan_id: planId,
         role: plan.role,
+        ...(from ? { from } : {}),
       },
       subscription_data: {
         // 7-day free trial on monthly plans only

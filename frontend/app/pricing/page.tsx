@@ -138,13 +138,19 @@ export default function PricingPage() {
   const [interval, setInterval] = useState<Interval>("monthly");
   const [loading, setLoading] = useState<string | null>(null);
 
+  // Read ?from= param set by "Enroll Now" links on course pages
+  const searchParams = typeof window !== "undefined"
+    ? new URLSearchParams(window.location.search)
+    : null;
+  const fromParam = searchParams?.get("from") ?? null;
+
   async function handleSubscribe(planId: PlanId) {
     setLoading(planId);
     try {
       const res = await fetch("/api/stripe/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ planId, interval }),
+        body: JSON.stringify({ planId, interval, from: fromParam }),
       });
       const data = await res.json();
       if (data.url) {

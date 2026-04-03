@@ -25,12 +25,15 @@ from llama_index.llms.groq import Groq as GroqLLM
 from services.auth import AuthedUser, require_subscriber
 from services.db import get_supabase
 from services.llm import get_llm_for_role, get_ranker
-from services.retrieval import HybridRetriever, StaticNodeRetriever, rerank_nodes
+from services.retrieval import HybridRetriever, StaticNodeRetriever, rerank_nodes, extract_citations
 from services.tools import ALL_TOOLS
 from config import MODEL_FREE, GROQ_API_KEY, MAX_SYSTEM_PROMPT_LEN
 
 # Roles that get the full agentic (ReAct) pipeline
 AGENTIC_ROLES = {"professional", "advisory", "admin"}
+
+# Valid intelligence pillars
+VALID_PILLARS = {"policy", "economics", "technology", "clinical", "equity"}
 
 log = logging.getLogger("htr-brain")
 router = APIRouter()
@@ -72,6 +75,7 @@ class ChatRequest(BaseModel):
     temperature:     Optional[float] = 0.7
     systemPrompt:    Optional[str]   = None
     conversation_id: Optional[str]   = None
+    pillar:          Optional[str]   = None  # active intelligence pillar for filtered retrieval
 
     @field_validator("message")
     @classmethod
@@ -97,6 +101,15 @@ class ChatRequest(BaseModel):
         if v is None:
             return 0.7
         return max(0.0, min(1.0, v))
+
+    @field_validator("pillar")
+    @classmethod
+    def validate_pillar(cls, v: Optional[str]) -> Optional[str]:
+        if v is None:
+            return v
+        if v.strip().lower() not in VALID_PILLARS:
+            return None  # silently ignore unknown pillars
+        return v.strip().lower().capitalize()
 
 
 # ── System prompts ─────────────────────────────────────────────────────────────
@@ -137,7 +150,6 @@ def _detect_prompt_injection(text: str) -> bool:
 
 
 def _get_system_prompt(user: AuthedUser, client_prompt: Optional[str]) -> str:
-    # Never use a client-supplied prompt that looks like a prompt injection attempt
     if client_prompt and _detect_prompt_injection(client_prompt):
         client_prompt = None
     if client_prompt:
@@ -145,6 +157,93 @@ def _get_system_prompt(user: AuthedUser, client_prompt: Optional[str]) -> str:
     if user.role in ("advisory", "admin"):
         return ADVISORY_SYSTEM_PROMPT
     return BASE_SYSTEM_PROMPT
+
+
+# ── Structured output intent detection ────────────────────────────────────────
+
+_STRUCTURED_PATTERNS = (
+    # Comparison requests
+    ("compare", "comparison", "versus", " vs ", "difference between", "how does.*differ",
+     "side.by.side", "contrast"),
+    # Table/list requests
+    ("table", "list ", "bullet", "summarize.*into", "break.*down", "step.by.step",
+     "enumerate", "outline the", "key points", "pros and cons"),
+)
+
+_COMPARISON_PHRASES = _STRUCTURED_PATTERNS[0]
+_LIST_PHRASES       = _STRUCTURED_PATTERNS[1]
+
+_STRUCTURED_SYSTEM_ADDENDUM = (
+    "\n\nFORMAT INSTRUCTION: The user is requesting a structured response. "
+    "Use Markdown formatting: headers (##/###), bullet lists (- item), "
+    "and comparison tables (| Col | Col |) where appropriate. "
+    "Organize information clearly with visible hierarchy."
+)
+
+_COMPARISON_SYSTEM_ADDENDUM = (
+    "\n\nFORMAT INSTRUCTION: The user is requesting a comparison. "
+    "Present your answer as a Markdown comparison table where applicable "
+    "(| Dimension | Option A | Option B |), followed by a brief narrative summary. "
+    "Label each column clearly."
+)
+
+
+def _detect_structured_intent(message: str) -> Optional[str]:
+    """
+    Returns 'comparison', 'list', or None based on query patterns.
+    Used to inject format instructions into the system prompt.
+    """
+    lower = message.lower()
+    if any(p in lower for p in _COMPARISON_PHRASES if " " in p) or \
+       any(__import__("re").search(p, lower) for p in _COMPARISON_PHRASES if "." in p):
+        return "comparison"
+    if any(p in lower for p in _LIST_PHRASES if " " in p) or \
+       any(__import__("re").search(p, lower) for p in _LIST_PHRASES if "." in p):
+        return "list"
+    return None
+
+
+# ── Query rewriting ────────────────────────────────────────────────────────────
+
+async def _rewrite_query(
+    message: str,
+    history: List[HistoryMessage],
+) -> str:
+    """
+    Rewrite a follow-up question into a standalone retrieval query using a fast LLM.
+    Incorporates recent conversation history so retrieval doesn't miss context.
+    Falls back to the raw message if rewriting fails or there's no prior history.
+    """
+    if len(history) < 2:
+        return message
+
+    snippet = "\n".join(
+        f"{'User' if m.role == 'user' else 'Analyst'}: {m.text[:300]}"
+        for m in history[-6:]
+    )
+
+    prompt = (
+        "You are a search query optimizer for a healthcare policy knowledge base.\n"
+        "Given the conversation history and the latest user question, rewrite the "
+        "question into a concise, self-contained search query (1-2 sentences max) "
+        "that captures all necessary context for document retrieval. "
+        "Return ONLY the rewritten query — no explanation, no quotation marks.\n\n"
+        f"Conversation history:\n{snippet}\n\n"
+        f"Latest question: {message}\n\n"
+        "Rewritten search query:"
+    )
+
+    try:
+        fast_llm = GroqLLM(model=MODEL_FREE, api_key=GROQ_API_KEY)
+        response = await fast_llm.acomplete(prompt)
+        rewritten = response.text.strip().strip('"\'')
+        if rewritten and len(rewritten) > 5:
+            log.debug(f"Query rewrite: '{message[:60]}' → '{rewritten[:80]}'")
+            return rewritten
+    except Exception as e:
+        log.warning(f"Query rewrite failed (non-fatal): {e}")
+
+    return message
 
 
 # ── Conversation persistence ───────────────────────────────────────────────────
@@ -191,16 +290,18 @@ async def chat(
     RAG-enhanced streaming chat with JWT auth and tier-aware model routing.
 
     Pipeline:
-      1. Hybrid BM25+vector retrieval via Supabase RPC (top-20)
-      2. Sentence window expansion (±3 sentences)
-      3. FlashRank cross-encoder re-ranking (top-5)
-      4. ContextChatEngine streams with tier-appropriate LLM
+      1. Query rewriting — fast LLM generates standalone query from history + message
+      2. Hybrid BM25+vector retrieval via Supabase RPC (top-20), optional pillar filter
+      3. Sentence window expansion (±3 sentences)
+      4. FlashRank cross-encoder re-ranking (top-5)
+      5. ContextChatEngine or ReActAgent streams with tier-appropriate LLM
+      6. Citations appended as [CITATIONS]...[/CITATIONS] sentinel after the stream
     """
     index = get_index()
     if index is None:
         raise HTTPException(status_code=503, detail="Index not ready — try again in a few seconds")
 
-    log.info(f"Chat: user={user.user_id} role={user.role} msg_len={len(request.message)}")
+    log.info(f"Chat: user={user.user_id} role={user.role} msg_len={len(request.message)} pillar={request.pillar}")
 
     # System prompt leak guard
     if _detect_prompt_injection(request.message):
@@ -208,6 +309,7 @@ async def chat(
             yield "I'm not able to share my configuration or instructions. How can I help you with healthcare policy analysis?"
         return StreamingResponse(_blocked(), media_type="text/plain; charset=utf-8")
 
+    # Build conversation memory
     memory = ChatMemoryBuffer.from_defaults(token_limit=4096)
     for msg in (request.history or []):
         if not msg.text:
@@ -215,14 +317,36 @@ async def chat(
         role = MessageRole.USER if msg.role == "user" else MessageRole.ASSISTANT
         memory.put(ChatMessage(role=role, content=msg.text))
 
-    system_prompt = _get_system_prompt(user, request.systemPrompt)
-    query_bundle  = QueryBundle(query_str=request.message)
+    base_system_prompt = _get_system_prompt(user, request.systemPrompt)
+
+    # Inject structured output instructions based on query intent
+    structured_intent = _detect_structured_intent(request.message)
+    if structured_intent == "comparison":
+        system_prompt = base_system_prompt + _COMPARISON_SYSTEM_ADDENDUM
+    elif structured_intent == "list":
+        system_prompt = base_system_prompt + _STRUCTURED_SYSTEM_ADDENDUM
+    else:
+        system_prompt = base_system_prompt
+
+    # Rewrite query to incorporate conversation context (fast, non-blocking on failure)
+    retrieval_query = await _rewrite_query(request.message, request.history or [])
+    query_bundle    = QueryBundle(query_str=retrieval_query)
 
     supabase = get_supabase()
     nodes: List[NodeWithScore] = []
 
     if supabase:
+        nodes = HybridRetriever(
+            supabase=supabase,
+            top_k=20,
+            filter_pillar=request.pillar,
+        ).retrieve(query_bundle)
+
+    # If pillar-filtered retrieval returned too few results, retry without filter
+    if request.pillar and len(nodes) < 3 and supabase:
+        log.info(f"Pillar '{request.pillar}' returned {len(nodes)} nodes — retrying without filter")
         nodes = HybridRetriever(supabase=supabase, top_k=20).retrieve(query_bundle)
+
     if not nodes:
         log.info("Falling back to vector-only retrieval")
         nodes = index.as_retriever(similarity_top_k=20).retrieve(query_bundle)
@@ -231,13 +355,13 @@ async def chat(
         target_metadata_key="window"
     ).postprocess_nodes(nodes, query_bundle=query_bundle)
 
-    nodes = rerank_nodes(request.message, nodes, top_k=5)
+    nodes = rerank_nodes(retrieval_query, nodes, top_k=5)
+
+    # Extract citations from top nodes before streaming
+    citations = extract_citations(nodes)
 
     tier_llm = get_llm_for_role(user.role)
 
-    # Professional/Advisory/Admin tiers get the full agentic ReAct pipeline:
-    # the LLM can decide to call state data or research lab tools before answering.
-    # Subscriber/Student use the lighter ContextChatEngine (RAG-only, faster).
     use_agent = user.role in AGENTIC_ROLES
 
     if use_agent:
@@ -274,6 +398,11 @@ async def chat(
             yield "\n\n[STREAM_ERROR]"
             return
 
+        # Append structured citations sentinel — parsed and stripped by the frontend
+        if citations:
+            citations_json = json.dumps(citations, ensure_ascii=False)
+            yield f"\n\n[CITATIONS]{citations_json}[/CITATIONS]"
+
         if supabase and user.user_id != "dev":
             assistant_text = "".join(full_response)
             latency_ms = int((time.monotonic() - _start_ts) * 1000)
@@ -286,20 +415,19 @@ async def chat(
                 assistant_message=assistant_text,
             ))
 
-            # RAG query log for evaluation/observability
             try:
                 doc_ids    = [n.node.node_id for n in nodes[:10]]
                 doc_scores = [round(float(n.score or 0), 4) for n in nodes[:10]]
                 supabase.table("rag_query_log").insert({
-                    "user_id":          user.user_id,
-                    "query":            request.message,
-                    "role":             user.role,
-                    "model_used":       getattr(tier_llm, "model", str(type(tier_llm).__name__)),
-                    "retrieved_doc_ids":  doc_ids,
-                    "retrieved_scores":   doc_scores,
-                    "response_preview": assistant_text[:500],
-                    "latency_ms":       latency_ms,
-                    "was_zero_result":  len(nodes) == 0,
+                    "user_id":           user.user_id,
+                    "query":             request.message,
+                    "role":              user.role,
+                    "model_used":        getattr(tier_llm, "model", str(type(tier_llm).__name__)),
+                    "retrieved_doc_ids": doc_ids,
+                    "retrieved_scores":  doc_scores,
+                    "response_preview":  assistant_text[:500],
+                    "latency_ms":        latency_ms,
+                    "was_zero_result":   len(nodes) == 0,
                 }).execute()
             except Exception as log_err:
                 log.debug(f"RAG log write failed (non-fatal): {log_err}")

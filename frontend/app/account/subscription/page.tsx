@@ -1,9 +1,15 @@
 import { requireAuth } from "@/lib/auth";
 import { dbAdmin } from "@/lib/db/client";
 import Link from "next/link";
+import EnrollRedirect from "./EnrollRedirect";
 
-export default async function SubscriptionPage() {
+export default async function SubscriptionPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ success?: string; from?: string }>;
+}) {
   const user = await requireAuth();
+  const { success, from } = await searchParams;
 
   const { data: sub } = await dbAdmin
     .from("subscriptions")
@@ -31,6 +37,17 @@ export default async function SubscriptionPage() {
           <Link href="/account" className="text-sm text-slate-500 hover:text-indigo-600">← Back to Account</Link>
           <h1 className="text-2xl font-black text-slate-900 mt-3">Subscription</h1>
         </div>
+
+        {success === "true" && (
+          <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 mb-6 flex items-start gap-4">
+            <div className="shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 text-xl">✓</div>
+            <div className="flex-1">
+              <p className="font-black text-emerald-800 text-lg">You&apos;re subscribed!</p>
+              <p className="text-emerald-700 text-sm mt-1">Your subscription is now active. Welcome to HTR.</p>
+              {from && <EnrollRedirect from={from} />}
+            </div>
+          </div>
+        )}
 
         <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 space-y-6">
           <div className="flex items-center justify-between">

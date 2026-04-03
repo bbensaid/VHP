@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { createBrowserClient } from "@supabase/ssr";
 
 interface ApiKey {
   id: string;
@@ -19,21 +18,7 @@ interface Props {
   userId: string;
 }
 
-function generateApiKey(): string {
-  const bytes = new Uint8Array(20);
-  crypto.getRandomValues(bytes);
-  const hex = Array.from(bytes).map(b => b.toString(16).padStart(2, "0")).join("");
-  return `htr_${hex}`;
-}
-
-async function sha256hex(text: string): Promise<string> {
-  const encoded = new TextEncoder().encode(text);
-  const hashBuffer = await crypto.subtle.digest("SHA-256", encoded);
-  const hashArray = Array.from(new Uint8Array(hashBuffer));
-  return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
-}
-
-export default function ApiKeysClient({ initialKeys, userId }: Props) {
+export default function ApiKeysClient({ initialKeys }: Props) {
   const [keys, setKeys] = useState<ApiKey[]>(initialKeys.filter(k => !k.revoked_at));
   const [newName, setNewName] = useState("");
   const [newTier, setNewTier] = useState<"researcher" | "enterprise">("researcher");
@@ -41,56 +26,74 @@ export default function ApiKeysClient({ initialKeys, userId }: Props) {
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
-
-  const supabase = createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  );
+  const [revoking, setRevoking] = useState<string | null>(null);
+  const [rotating, setRotating] = useState<string | null>(null);
 
   async function createKey(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
 
-    const rawKey = generateApiKey();
-    const keyHash = await sha256hex(rawKey);
-    const keyPrefix = rawKey.substring(0, 12); // "htr_" + 8 chars
-
     startTransition(async () => {
-      const { data, error: insertError } = await supabase
-        .from("api_keys")
-        .insert({
-          user_id: userId,
-          name: newName.trim(),
-          key_prefix: keyPrefix,
-          key_hash: keyHash,
-          tier: newTier,
-        })
-        .select("id, name, key_prefix, tier, requests_today, last_used_at, created_at, revoked_at")
-        .single();
+      const res = await fetch("/api/keys/create", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: newName.trim(), tier: newTier }),
+      });
 
-      if (insertError) {
-        setError(insertError.message);
+      const json = await res.json();
+      if (!res.ok) {
+        setError(json.error ?? "Failed to create key");
         return;
       }
-      if (data) {
-        setKeys(prev => [data, ...prev]);
-        setJustCreated(rawKey);
-        setNewName("");
-      }
+
+      setKeys(prev => [json.record, ...prev]);
+      setJustCreated(json.key);
+      setNewName("");
     });
   }
 
   async function revokeKey(id: string) {
-    const { error: updateError } = await supabase
-      .from("api_keys")
-      .update({ revoked_at: new Date().toISOString() })
-      .eq("id", id);
+    setRevoking(id);
+    setError(null);
 
-    if (updateError) {
-      setError(updateError.message);
+    const res = await fetch("/api/keys/revoke", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ keyId: id }),
+    });
+
+    setRevoking(null);
+
+    if (!res.ok) {
+      const json = await res.json();
+      setError(json.error ?? "Failed to revoke key");
       return;
     }
+
     setKeys(prev => prev.filter(k => k.id !== id));
+  }
+
+  async function rotateKey(id: string) {
+    setRotating(id);
+    setError(null);
+
+    const res = await fetch("/api/keys/rotate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ keyId: id }),
+    });
+
+    setRotating(null);
+
+    const json = await res.json();
+    if (!res.ok) {
+      setError(json.error ?? "Failed to rotate key");
+      return;
+    }
+
+    // Replace old key with new record, show new raw key
+    setKeys(prev => [json.record, ...prev.filter(k => k.id !== id)]);
+    setJustCreated(json.key);
   }
 
   async function copyKey(text: string) {
@@ -122,7 +125,7 @@ export default function ApiKeysClient({ initialKeys, userId }: Props) {
             onClick={() => setJustCreated(null)}
             className="mt-3 text-xs text-emerald-700 hover:text-emerald-900 underline"
           >
-            I've saved it, dismiss
+            I&apos;ve saved it, dismiss
           </button>
         </div>
       )}
@@ -187,13 +190,25 @@ export default function ApiKeysClient({ initialKeys, userId }: Props) {
                     {key.last_used_at && ` · Last used ${new Date(key.last_used_at).toLocaleDateString()}`}
                   </p>
                 </div>
-                <button
-                  onClick={() => revokeKey(key.id)}
-                  className="shrink-0 text-xs font-bold text-rose-600 hover:text-rose-800 border border-rose-200 rounded-lg px-3 py-1.5 hover:bg-rose-50 transition-colors"
-                  aria-label={`Revoke key "${key.name}"`}
-                >
-                  Revoke
-                </button>
+                <div className="flex items-center gap-2 shrink-0">
+                  <button
+                    onClick={() => rotateKey(key.id)}
+                    disabled={rotating === key.id || revoking === key.id}
+                    className="text-xs font-bold text-amber-600 hover:text-amber-800 border border-amber-200 rounded-lg px-3 py-1.5 hover:bg-amber-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    aria-label={`Rotate key "${key.name}"`}
+                    title="Generate a new key — old key stays valid for 24 hours"
+                  >
+                    {rotating === key.id ? "Rotating…" : "Rotate"}
+                  </button>
+                  <button
+                    onClick={() => revokeKey(key.id)}
+                    disabled={revoking === key.id || rotating === key.id}
+                    className="text-xs font-bold text-rose-600 hover:text-rose-800 border border-rose-200 rounded-lg px-3 py-1.5 hover:bg-rose-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    aria-label={`Revoke key "${key.name}"`}
+                  >
+                    {revoking === key.id ? "Revoking…" : "Revoke"}
+                  </button>
+                </div>
               </li>
             ))}
           </ul>

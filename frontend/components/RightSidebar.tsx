@@ -2,14 +2,55 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { SparklesIcon, ArrowsPointingOutIcon, PaperAirplaneIcon, StopIcon, TrashIcon, ArrowPathIcon, ExclamationTriangleIcon } from "@heroicons/react/24/outline";
+import { usePathname } from "next/navigation";
+import { SparklesIcon, ArrowsPointingOutIcon, PaperAirplaneIcon, StopIcon, TrashIcon, ArrowPathIcon, ExclamationTriangleIcon, BookOpenIcon } from "@heroicons/react/24/outline";
 import ReactMarkdown from "react-markdown";
+
+interface Citation {
+  title: string;
+  url: string | null;
+  pillar: string | null;
+  source_type: string | null;
+}
 
 interface Message {
   role: "user" | "ai";
   text: string;
+  citations?: Citation[];
   isError?: boolean;
   retryText?: string;
+}
+
+// Detect which intelligence pillar the user is currently on
+const PILLAR_PREFIXES: Record<string, string> = {
+  "/policy":    "Policy",
+  "/economics": "Economics",
+  "/technology":"Technology",
+  "/clinical":  "Clinical",
+  "/equity":    "Equity",
+};
+
+function getPillarFromPath(path: string): string | undefined {
+  for (const [prefix, label] of Object.entries(PILLAR_PREFIXES)) {
+    if (path.startsWith(prefix)) return label;
+  }
+  return undefined;
+}
+
+// Parse [CITATIONS]...[/CITATIONS] sentinel out of streamed text
+function parseCitations(raw: string): { text: string; citations: Citation[] } {
+  const start = raw.indexOf("[CITATIONS]");
+  const end   = raw.indexOf("[/CITATIONS]");
+  if (start === -1 || end === -1) return { text: raw, citations: [] };
+
+  const jsonStr = raw.slice(start + "[CITATIONS]".length, end);
+  const text    = raw.slice(0, start).trimEnd();
+  try {
+    const citations = JSON.parse(jsonStr) as Citation[];
+    return { text, citations: Array.isArray(citations) ? citations : [] };
+  } catch {
+    return { text, citations: [] };
+  }
 }
 
 function classifyError(status: number | null, message: string): string {
@@ -40,6 +81,9 @@ export default function RightSidebar() {
   const messagesRef = useRef(messages);
   useEffect(() => { messagesRef.current = messages; }, [messages]);
 
+  const pathname = usePathname() ?? "";
+  const activePillar = getPillarFromPath(pathname);
+
   useEffect(() => {
     if (messagesContainerRef.current) {
       messagesContainerRef.current.scrollTop = messagesContainerRef.current.scrollHeight;
@@ -60,10 +104,13 @@ export default function RightSidebar() {
     setMessages((prev) => [...prev, { role: "ai", text: "" }]);
 
     try {
+      const body: Record<string, unknown> = { message: text, history };
+      if (activePillar) body.pillar = activePillar;
+
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: text, history }),
+        body: JSON.stringify(body),
         signal: abortRef.current.signal,
       });
 
@@ -81,16 +128,32 @@ export default function RightSidebar() {
         done = d;
         if (value) {
           aiText += decoder.decode(value, { stream: true });
-          const display = aiText.includes("[STREAM_ERROR]")
+          const hasError = aiText.includes("[STREAM_ERROR]");
+          const displayRaw = hasError
             ? aiText.replace("[STREAM_ERROR]", "").trimEnd() + "\n\n*Error generating response.*"
             : aiText;
+          // Strip citation sentinel from live display — only show it when stream ends
+          const { text: displayText } = parseCitations(displayRaw);
           setMessages((prev) => {
             const updated = [...prev];
-            updated[updated.length - 1] = { role: "ai", text: display };
+            updated[updated.length - 1] = { role: "ai", text: displayText };
             return updated;
           });
         }
       }
+
+      // Final parse — extract and attach citations
+      const { text: finalText, citations } = parseCitations(aiText);
+      setMessages((prev) => {
+        const updated = [...prev];
+        updated[updated.length - 1] = {
+          role: "ai",
+          text: finalText,
+          citations: citations.length > 0 ? citations : undefined,
+        };
+        return updated;
+      });
+
     } catch (err) {
       if (err instanceof Error && err.name !== "AbortError") {
         const status = (err as Error & { status?: number }).status ?? null;
@@ -104,7 +167,7 @@ export default function RightSidebar() {
     } finally {
       setIsLoading(false);
     }
-  }, [isLoading]);
+  }, [isLoading, activePillar]);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(input); }
@@ -112,13 +175,18 @@ export default function RightSidebar() {
 
   return (
     <aside className="w-full h-full flex flex-col" aria-label="AI Analyst panel">
-      <div className="flex-1 min-h-0 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm overflow-hidden flex flex-col">
+      <div className="flex-1 min-h-0 bg-white dark:bg-slate-900 flex flex-col overflow-hidden">
 
         {/* Header */}
         <div className="flex items-center justify-between px-4 py-3 border-b border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-800">
           <div className="flex items-center gap-2">
             <SparklesIcon className="w-4 h-4 text-indigo-500" />
             <h3 className="text-xs font-black uppercase tracking-widest text-slate-700 dark:text-slate-200">AI Analyst</h3>
+            {activePillar && (
+              <span className="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/40 px-1.5 py-0.5 rounded-full">
+                {activePillar}
+              </span>
+            )}
           </div>
           <div className="flex items-center gap-1">
             {messages.length > 0 && (
@@ -137,10 +205,15 @@ export default function RightSidebar() {
         </div>
 
         {/* Messages */}
-        <div ref={messagesContainerRef} className="flex-1 min-h-0 flex flex-col gap-3 p-3 overflow-y-auto text-xs">
+        <div
+          ref={messagesContainerRef}
+          className="flex-1 min-h-0 flex flex-col gap-3 p-3 overflow-y-auto text-xs"
+        >
           {messages.length === 0 && (
             <p className="text-slate-400 dark:text-slate-500 text-center py-4 leading-relaxed">
-              Ask a quick question without leaving this page.
+              {activePillar
+                ? `Ask about ${activePillar} topics — answers are filtered to this pillar.`
+                : "Ask a quick question without leaving this page."}
             </p>
           )}
           {messages.map((msg, i) => (
@@ -187,6 +260,35 @@ export default function RightSidebar() {
                   >
                     {msg.text || "…"}
                   </ReactMarkdown>
+
+                  {/* Source citations */}
+                  {msg.citations && msg.citations.length > 0 && (
+                    <div className="mt-2.5 pt-2 border-t border-indigo-100 dark:border-indigo-900">
+                      <div className="flex items-center gap-1 mb-1.5">
+                        <BookOpenIcon className="w-3 h-3 text-slate-400" />
+                        <span className="text-[10px] font-black uppercase tracking-wider text-slate-400">Sources</span>
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        {msg.citations.map((c, ci) => (
+                          <div key={ci} className="flex items-start gap-1.5">
+                            <span className="shrink-0 text-[9px] font-black text-indigo-400 mt-0.5">{ci + 1}</span>
+                            {c.url ? (
+                              <a
+                                href={c.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[10px] text-indigo-600 dark:text-indigo-400 hover:underline leading-snug"
+                              >
+                                {c.title}
+                              </a>
+                            ) : (
+                              <span className="text-[10px] text-slate-500 dark:text-slate-400 leading-snug">{c.title}</span>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
@@ -194,7 +296,7 @@ export default function RightSidebar() {
         </div>
 
         {/* Input */}
-        <div className="border-t border-slate-100 dark:border-slate-700 p-3 flex items-end gap-2">
+        <div className="shrink-0 border-t border-slate-100 dark:border-slate-700 p-3 flex items-end gap-2">
           <textarea
             value={input}
             onChange={(e) => setInput(e.target.value)}

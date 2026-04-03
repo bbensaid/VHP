@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import LabAdvisoryCTA from './LabAdvisoryCTA'
+import ToolErrorBoundary from './ToolErrorBoundary'
 
 const NAV = [
   { href: '/research-lab/interoperability', icon: '🧬', short: 'Interoperability' },
@@ -85,7 +86,9 @@ export default function LabPageShell({
 
       {/* ── Tools ── */}
       <div className="max-w-6xl mx-auto px-6 py-10 space-y-10">
-        {children}
+        <ToolErrorBoundary toolName={label}>
+          {children}
+        </ToolErrorBoundary>
       </div>
 
       {/* ── Advisory CTA ── */}

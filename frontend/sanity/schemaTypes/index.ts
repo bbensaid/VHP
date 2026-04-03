@@ -19,6 +19,7 @@ import audio       from './audio'
 import rhtState from './rhtState'
 import statePerformanceIndex from './statePerformanceIndex'
 import subscriber from './subscriber'
+import investmentDeal from './investmentDeal'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -42,5 +43,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     rhtState,
     statePerformanceIndex,
     subscriber,
+    investmentDeal,
   ],
 }

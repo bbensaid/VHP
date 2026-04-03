@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo, useCallback } from "react";
+import React, { useState, useMemo, useCallback, useEffect } from "react";
 import { Radar, Line, Bar } from "react-chartjs-2";
 import {
   Target, TrendingUp, Info, Activity, Zap, ArrowUpRight,
@@ -157,6 +157,35 @@ export default function HTIDashboard() {
   // ── Clinical tab state ──
   const [clinicalState, setClinicalState] = useState<string>("vermont");
 
+  // ── Real data from Supabase (overlays on trend chart) ──
+  const [realScores, setRealScores] = useState<Record<string, QuarterlySnapshot[]>>({});
+
+  useEffect(() => {
+    fetch("/api/hti-scores")
+      .then(r => r.json())
+      .then(json => {
+        if (!json.scores?.length) return;
+        // Group rows by state_id and convert to QuarterlySnapshot format
+        const grouped: Record<string, QuarterlySnapshot[]> = {};
+        for (const row of json.scores) {
+          const sid = row.state_id as string;
+          if (!grouped[sid]) grouped[sid] = [];
+          grouped[sid].push({
+            quarter:    row.quarter,
+            composite:  row.composite ?? calcComposite({ digital: row.digital ?? 0, vbc: row.vbc ?? 0, equity: row.equity ?? 0, outcomes: row.outcomes ?? 0, experience: row.experience ?? 0, workforce: row.workforce ?? 0 }),
+            digital:    row.digital    ?? 0,
+            vbc:        row.vbc        ?? 0,
+            equity:     row.equity     ?? 0,
+            outcomes:   row.outcomes   ?? 0,
+            experience: row.experience ?? 0,
+            workforce:  row.workforce  ?? 0,
+          });
+        }
+        setRealScores(grouped);
+      })
+      .catch(() => {/* silent — static data remains active */});
+  }, []);
+
   const composite = useMemo(() => calcComposite(metrics), [metrics]);
 
   // Radar chart data
@@ -200,6 +229,7 @@ export default function HTIDashboard() {
   const trendData = useMemo(() => {
     const stateObj = stateTimeSeries.find(s => s.stateId === trendState);
     if (!stateObj) return null;
+    const stateRealSnapshots = realScores[trendState] ?? [];
 
     const stateValues = stateObj.snapshots.map(q =>
       trendDomain === "composite" ? q.composite : q[trendDomain as keyof QuarterlySnapshot] as number
@@ -250,9 +280,25 @@ export default function HTIDashboard() {
           fill: false,
           tension: 0.3,
         },
+        ...(stateRealSnapshots.length > 0 ? [{
+          label: "Real Data (CMS/ONC)",
+          data: allLabels.map(q => {
+            const snap = stateRealSnapshots.find(s => s.quarter === q);
+            if (!snap) return null;
+            return trendDomain === "composite" ? snap.composite : snap[trendDomain as keyof QuarterlySnapshot] as number;
+          }),
+          borderColor: "#f59e0b",
+          backgroundColor: "rgba(245,158,11,0.15)",
+          borderWidth: 2,
+          pointRadius: 6,
+          pointStyle: "circle" as const,
+          fill: false,
+          tension: 0,
+          spanGaps: false,
+        }] : []),
       ],
     };
-  }, [trendState, trendDomain, showProjection]);
+  }, [trendState, trendDomain, showProjection, realScores]);
 
   // Compare chart data
   const compareData = useMemo(() => {
@@ -599,18 +645,26 @@ export default function HTIDashboard() {
                   </h3>
                   <p className="text-sm text-slate-400 mt-1">Q1 2023 – Q1 2025{showProjection ? " + 4-quarter linear projection" : ""}</p>
                 </div>
-                {(() => {
-                  const vel = getTrendVelocity(trendState);
-                  return (
-                    <div className={`flex items-center gap-2 px-4 py-2 rounded-xl font-bold text-sm border ${vel >= 0 ? "bg-emerald-50 text-emerald-700 border-emerald-200" : "bg-rose-50 text-rose-700 border-rose-200"}`}>
-                      {vel >= 0 ? <TrendingUp size={16} /> : <TrendingDown size={16} />}
-                      {vel >= 0 ? "+" : ""}{vel} pts over 9 quarters
+                <div className="flex items-center gap-2">
+                  {realScores[trendState]?.length > 0 && (
+                    <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-50 text-amber-700 border border-amber-200">
+                      <CheckCircle size={13} />
+                      Real Data
                     </div>
-                  );
-                })()}
+                  )}
+                  {(() => {
+                    const vel = getTrendVelocity(trendState);
+                    return (
+                      <div className={`flex items-center gap-2 px-4 py-2 rounded-xl font-bold text-sm border ${vel >= 0 ? "bg-emerald-50 text-emerald-700 border-emerald-200" : "bg-rose-50 text-rose-700 border-rose-200"}`}>
+                        {vel >= 0 ? <TrendingUp size={16} /> : <TrendingDown size={16} />}
+                        {vel >= 0 ? "+" : ""}{vel} pts over 9 quarters
+                      </div>
+                    );
+                  })()}
+                </div>
               </div>
               <div className="h-[380px]">
-                <Line
+                {trendData && <Line
                   data={trendData}
                   options={{
                     maintainAspectRatio: false,

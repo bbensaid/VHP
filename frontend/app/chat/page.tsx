@@ -61,11 +61,33 @@ const CONTEXT_LINKS = [
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
+interface Citation {
+  title: string;
+  url: string | null;
+  pillar: string | null;
+  source_type: string | null;
+}
+
 interface Message {
   id: string;
   role: "user" | "ai";
   text: string;
+  citations?: Citation[];
   feedback?: "up" | "down";
+}
+
+function parseCitations(raw: string): { text: string; citations: Citation[] } {
+  const start = raw.indexOf("[CITATIONS]");
+  const end   = raw.indexOf("[/CITATIONS]");
+  if (start === -1 || end === -1) return { text: raw, citations: [] };
+  const jsonStr = raw.slice(start + "[CITATIONS]".length, end);
+  const text    = raw.slice(0, start).trimEnd();
+  try {
+    const citations = JSON.parse(jsonStr) as Citation[];
+    return { text, citations: Array.isArray(citations) ? citations : [] };
+  } catch {
+    return { text, citations: [] };
+  }
 }
 
 // ── Component ────────────────────────────────────────────────────────────────
@@ -151,15 +173,32 @@ export default function ChatPage() {
         done = doneReading;
         if (value) {
           aiText += decoder.decode(value, { stream: true });
-          const displayText = aiText.includes("[STREAM_ERROR]")
+          const hasError = aiText.includes("[STREAM_ERROR]");
+          const rawDisplay = hasError
             ? aiText.replace("[STREAM_ERROR]", "").trimEnd() + "\n\n*An error occurred generating this response.*"
             : aiText;
+          // Strip citation sentinel while streaming — only show when complete
+          const { text: displayText } = parseCitations(rawDisplay);
           setMessages((prev) => {
             const updated = [...prev];
             updated[updated.length - 1] = { ...updated[updated.length - 1], text: displayText };
             return updated;
           });
         }
+      }
+
+      // Final parse — attach citations to the last message
+      const { text: finalText, citations } = parseCitations(aiText);
+      if (citations.length > 0) {
+        setMessages((prev) => {
+          const updated = [...prev];
+          updated[updated.length - 1] = {
+            ...updated[updated.length - 1],
+            text: finalText,
+            citations,
+          };
+          return updated;
+        });
       }
     } catch (error) {
       if (error instanceof Error && error.name !== "AbortError") {
@@ -402,6 +441,33 @@ export default function ChatPage() {
                         {msg.text}
                       </ReactMarkdown>
                     </div>
+                    {/* Source citations */}
+                    {msg.citations && msg.citations.length > 0 && (
+                      <div className="mt-4 pt-3 border-t border-indigo-100 dark:border-indigo-900">
+                        <p className="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">
+                          <BookOpenIcon className="w-3 h-3" />
+                          Sources
+                        </p>
+                        <div className="space-y-1">
+                          {msg.citations.map((c, ci) => (
+                            <div key={ci} className="flex items-start gap-2">
+                              <span className="shrink-0 text-[10px] font-black text-indigo-400 mt-0.5 w-4">{ci + 1}.</span>
+                              {c.url ? (
+                                <a href={c.url} target="_blank" rel="noopener noreferrer" className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline leading-snug">
+                                  {c.title}
+                                </a>
+                              ) : (
+                                <span className="text-xs text-slate-500 dark:text-slate-400 leading-snug">{c.title}</span>
+                              )}
+                              {c.pillar && (
+                                <span className="shrink-0 text-[9px] font-bold text-slate-400 bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded-full">{c.pillar}</span>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
                     {msg.text && (
                       <div className="flex items-center gap-2 mt-3 pt-2 border-t border-slate-100 dark:border-slate-700">
                         <button onClick={() => handleCopy(msg.text, i)} className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors p-2 rounded" title="Copy" aria-label={copiedIndex === i ? "Copied" : "Copy message"}>

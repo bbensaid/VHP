@@ -14,6 +14,7 @@ import OnboardingModal from "@/components/OnboardingModal";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import WebVitalsReporter from "@/components/WebVitalsReporter";
+import SessionTimeout from "@/components/SessionTimeout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +43,7 @@ export default async function RootLayout({
           >
             Skip to main content
           </a>
+          <SessionTimeout />
           <CommandPalette />
           <OnboardingModal />
           <TickerProvider>

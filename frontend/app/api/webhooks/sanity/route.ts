@@ -1,57 +1,40 @@
 /**
- * POST /api/webhooks/sanity
- * Receives Sanity content change events and triggers RAG re-ingestion.
- * Verifies the Sanity webhook signature (HMAC-SHA256).
+ * frontend/app/api/webhooks/sanity/route.ts
+ * Receives Sanity GROQ-webhook POST and forwards it to the backend incremental ingest endpoint.
+ *
+ * Sanity webhook config:
+ *   URL: https://<your-domain>/api/webhooks/sanity
+ *   Secret: same value as INGEST_SECRET in backend/.env
+ *   Filter: _type in ["policyAnalysis","post","academyModule","caseStudy","definition","analystNote","webinar","report"]
  */
-import { NextRequest, NextResponse } from "next/server";
-import crypto from "crypto";
-import { revalidateTag } from "next/cache";
 
-const SANITY_WEBHOOK_SECRET = process.env.SANITY_WEBHOOK_SECRET;
-const BACKEND_URL = process.env.PYTHON_BACKEND_URL;
-const INGEST_SECRET = process.env.INGEST_SECRET;
+import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
   const body = await req.text();
-  const signature = req.headers.get("sanity-webhook-signature");
+  const backendUrl = process.env.BACKEND_URL ?? "http://localhost:8000";
 
-  if (SANITY_WEBHOOK_SECRET && signature) {
-    // Sanity signs with HMAC-SHA256; signature is "t=<timestamp>,v1=<hex>"
-    const [tPart, v1Part] = signature.split(",");
-    const timestamp = tPart?.replace("t=", "");
-    const receivedSig = v1Part?.replace("v1=", "");
-    const expectedSig = crypto
-      .createHmac("sha256", SANITY_WEBHOOK_SECRET)
-      .update(`${timestamp}.${body}`)
-      .digest("hex");
-    if (receivedSig !== expectedSig) {
-      return NextResponse.json({ error: "Invalid signature" }, { status: 401 });
-    }
-  }
-
-  // Revalidate Next.js cache tags — busts all cached Sanity queries immediately
   try {
-    const payload = JSON.parse(body) as { _type?: string };
-    const docType = payload._type;
-    // Revalidate the specific document type tag + the global sanity tag
-    if (docType) revalidateTag(docType);
-    revalidateTag("sanity");
-  } catch {
-    // Non-JSON body or missing _type — revalidate everything
-    revalidateTag("sanity");
-  }
+    const res = await fetch(`${backendUrl}/api/ingest/webhook`, {
+      method: "POST",
+      headers: {
+        "Content-Type":       "application/json",
+        "X-Sanity-Signature": req.headers.get("x-sanity-signature") ?? "",
+        "Authorization":      `Bearer ${process.env.INGEST_SECRET ?? ""}`,
+      },
+      body,
+    });
 
-  // Trigger backend RAG re-ingestion
-  if (BACKEND_URL && INGEST_SECRET) {
-    try {
-      await fetch(`${BACKEND_URL}/api/ingest`, {
-        method: "POST",
-        headers: { Authorization: `Bearer ${INGEST_SECRET}` },
-      });
-    } catch (e) {
-      console.error("[sanity-webhook] Failed to trigger ingest:", e);
+    if (!res.ok) {
+      const text = await res.text();
+      console.error("Backend webhook rejected:", res.status, text);
+      return NextResponse.json({ error: "Backend rejected" }, { status: res.status });
     }
-  }
 
-  return NextResponse.json({ received: true });
+    return NextResponse.json({ ok: true });
+  } catch (err) {
+    console.error("Sanity webhook forward failed:", err);
+    // Return 200 to prevent Sanity from retrying during transient backend downtime
+    return NextResponse.json({ ok: true, note: "backend_unavailable" });
+  }
 }
