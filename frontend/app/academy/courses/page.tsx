@@ -20,18 +20,23 @@ export default async function CoursesPage() {
   const courses = await getCourses();
 
   return (
-    <div className="bg-gray-50 min-h-screen pb-20">
-      <div className="bg-white border-b border-gray-200 py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+    <div className="bg-white min-h-screen pb-20">
+      <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">
+        <div className="bg-slate-50 border border-slate-200 rounded-2xl px-8 py-10 mb-10">
+          <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
+            Academy · Courses
+          </span>
+          <h1 className="text-4xl font-black text-slate-900 mb-3">
             Course Catalog
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl">
+          <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
             Browse our library of certifications, masterclasses, and workshops
             tailored for healthcare leadership.
           </p>
-          <CoursesClient courses={courses} />
         </div>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <CoursesClient courses={courses} />
       </div>
     </div>
   );

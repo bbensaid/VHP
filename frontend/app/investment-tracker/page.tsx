@@ -38,12 +38,15 @@ export default async function InvestmentTrackerPage() {
   });
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <div className="mb-8">
-        <h1 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-1">
+    <div className="max-w-4xl mx-auto px-4 pt-8 pb-8">
+      <div className="bg-slate-50 border border-slate-200 rounded-2xl px-8 py-10 mb-8">
+        <span className="inline-block text-xs font-black uppercase tracking-widest text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-full px-3 py-1 mb-4">
+          Analyze &amp; Tools
+        </span>
+        <h1 className="text-4xl font-black text-slate-900 dark:text-slate-100 mb-3">
           Investment Tracker
         </h1>
-        <p className="text-sm text-slate-500 dark:text-slate-400">
+        <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed">
           M&amp;A, venture capital, private equity, and strategic partnerships shaping healthcare.
         </p>
       </div>

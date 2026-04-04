@@ -388,7 +388,7 @@ export default function HTIDashboard() {
       </div>
 
       {/* ── Tab Nav ── */}
-      <div className="flex gap-1 border-b border-slate-200 -mt-2">
+      <nav className="flex flex-wrap items-end border border-slate-200 rounded-t-xl px-2 bg-slate-50/80 pt-2 gap-y-1 -mt-2">
         {[
           { id: "simulation", label: "Simulation Engine",   icon: <Zap size={14} /> },
           { id: "trends",     label: "Trend Analysis",      icon: <TrendingUp size={14} /> },
@@ -398,16 +398,16 @@ export default function HTIDashboard() {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id as TabId)}
-            className={`flex items-center gap-2 px-5 py-3 text-xs font-bold uppercase tracking-wider border-b-2 transition-all ${
+            className={`relative flex items-center gap-2 px-5 py-3 text-xs font-bold uppercase tracking-wider transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r mr-2 mb-0 ${
               activeTab === tab.id
-                ? "border-indigo-600 text-indigo-600"
-                : "border-transparent text-slate-400 hover:text-slate-700"
+                ? "bg-slate-100 border-black text-slate-900 z-10 -mb-px"
+                : "bg-white border-slate-200 text-slate-400 hover:bg-slate-50 hover:text-slate-700 mt-1.5 shadow-sm"
             }`}
           >
             {tab.icon} {tab.label}
           </button>
         ))}
-      </div>
+      </nav>
 
       {/* ── TAB: SIMULATION ─────────────────────────────────────────────────── */}
       {activeTab === "simulation" && (
