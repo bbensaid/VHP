@@ -54,20 +54,20 @@ export default function ContactForm() {
         </h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <label className="block">
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Full Name <span className="text-red-500">*</span></span>
-            <input type="text" required className="mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:outline-none" placeholder="Dr. Jane Doe" />
+            <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Full Name <span className="text-red-500">*</span></span>
+            <input type="text" required className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none" placeholder="Dr. Jane Doe" />
           </label>
           <label className="block">
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Work Email <span className="text-red-500">*</span></span>
-            <input type="email" required className="mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:outline-none" placeholder="jane@healthsystem.org" />
+            <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Work Email <span className="text-red-500">*</span></span>
+            <input type="email" required className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none" placeholder="jane@healthsystem.org" />
           </label>
           <label className="block">
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Title / Role <span className="text-red-500">*</span></span>
-            <input type="text" required className="mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:outline-none" placeholder="Chief Information Officer" />
+            <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Title / Role <span className="text-red-500">*</span></span>
+            <input type="text" required className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none" placeholder="Chief Information Officer" />
           </label>
           <label className="block">
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Phone <span className="text-slate-400 text-xs font-normal">(optional)</span></span>
-            <input type="tel" className="mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:outline-none" placeholder="+1 (802) 555-0100" />
+            <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Phone <span className="text-slate-400 text-xs font-normal">(optional)</span></span>
+            <input type="tel" className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none" placeholder="+1 (802) 555-0100" />
           </label>
         </div>
       </div>
@@ -79,13 +79,13 @@ export default function ContactForm() {
         </h4>
         <div className="space-y-5">
           <label className="block">
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Organization Name <span className="text-red-500">*</span></span>
-            <input type="text" required className="mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:outline-none" placeholder="Mercy Regional Health System" />
+            <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Organization Name <span className="text-red-500">*</span></span>
+            <input type="text" required className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none" placeholder="Mercy Regional Health System" />
           </label>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <label className="block">
-              <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Organization Type <span className="text-red-500">*</span></span>
-              <select required className="mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:outline-none">
+              <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Organization Type <span className="text-red-500">*</span></span>
+              <select required className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                 <option value="">Select type...</option>
                 <option>Health System / IDN</option>
                 <option>Independent Hospital</option>
@@ -100,8 +100,8 @@ export default function ContactForm() {
               </select>
             </label>
             <label className="block">
-              <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Approximate Annual Revenue</span>
-              <select className="mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:outline-none">
+              <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Approximate Annual Revenue</span>
+              <select className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                 <option value="">Select range...</option>
                 <option>Under $50M</option>
                 <option>$50M – $250M</option>
@@ -122,12 +122,12 @@ export default function ContactForm() {
         </h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <label className="block">
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Service of Interest <span className="text-red-500">*</span></span>
+            <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Service of Interest <span className="text-red-500">*</span></span>
             <select
               required
               value={selectedService}
               onChange={(e) => setSelectedService(e.target.value)}
-              className="mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:outline-none"
+              className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
             >
               <option value="">Select a service...</option>
               {ADVISORY_SERVICES.map((s) => (
@@ -137,16 +137,16 @@ export default function ContactForm() {
             </select>
           </label>
           <label className="block">
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Preferred Engagement Format</span>
-            <select className="mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:outline-none">
+            <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Preferred Engagement Format</span>
+            <select className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
               <option>Remote / Virtual</option>
               <option>On-Site</option>
               <option>Hybrid (Remote + On-Site)</option>
             </select>
           </label>
           <label className="block">
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Estimated Project Timeline</span>
-            <select className="mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:outline-none">
+            <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Estimated Project Timeline</span>
+            <select className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
               <option>ASAP (within 30 days)</option>
               <option>1 – 3 Months</option>
               <option>3 – 6 Months</option>
@@ -154,8 +154,8 @@ export default function ContactForm() {
             </select>
           </label>
           <label className="block">
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Budget Tier</span>
-            <select className="mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:outline-none">
+            <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Budget Tier</span>
+            <select className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
               <option>Under $25,000</option>
               <option>$25,000 – $75,000</option>
               <option>$75,000 – $250,000</option>
@@ -175,7 +175,7 @@ export default function ContactForm() {
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <label className="block">
-              <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Team Size for Training</span>
+              <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Team Size for Training</span>
               <select className="mt-2 block w-full px-4 py-3 bg-white border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none">
                 <option>1 – 10 participants</option>
                 <option>10 – 25 participants</option>
@@ -185,7 +185,7 @@ export default function ContactForm() {
               </select>
             </label>
             <label className="block">
-              <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Preferred Training Format</span>
+              <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Preferred Training Format</span>
               <select className="mt-2 block w-full px-4 py-3 bg-white border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none">
                 <option>On-Site Workshop</option>
                 <option>Virtual Cohort</option>
@@ -205,7 +205,7 @@ export default function ContactForm() {
         </h4>
         <div className="space-y-5">
           <div>
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wide block mb-3">Urgency</span>
+            <span className="text-sm font-bold text-slate-700 uppercase tracking-wide block mb-3">Urgency</span>
             <div className="flex flex-wrap gap-4">
               {[
                 { value: "routine", label: "Routine", desc: "No immediate deadline" },
@@ -213,7 +213,7 @@ export default function ContactForm() {
                 { value: "critical", label: "Critical / Emergency", desc: "Immediate response needed" },
               ].map((opt) => (
                 <label key={opt.value} className="flex items-center gap-3 cursor-pointer">
-                  <input type="radio" name="urgency" value={opt.value} defaultChecked={opt.value === "routine"} className="accent-fuchsia-600 w-4 h-4" />
+                  <input type="radio" name="urgency" value={opt.value} defaultChecked={opt.value === "routine"} className="accent-indigo-600 w-4 h-4" />
                   <span>
                     <span className="text-sm font-bold text-slate-900">{opt.label}</span>
                     <span className="text-xs text-slate-400 block">{opt.desc}</span>
@@ -223,11 +223,11 @@ export default function ContactForm() {
             </div>
           </div>
           <label className="block">
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Describe Your Challenge <span className="text-red-500">*</span></span>
+            <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">Describe Your Challenge <span className="text-red-500">*</span></span>
             <textarea
               required
               rows={6}
-              className="mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:outline-none"
+              className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
               placeholder={fromLab
                 ? `I was using the ${labCategory} tools in the HTR Research Lab and would like HTR Advisory support to implement what I modeled. Specifically...`
                 : "Tell us about the specific challenge, initiative, or strategic question you need support with. The more context you provide, the more tailored our response will be."
@@ -235,8 +235,8 @@ export default function ContactForm() {
             />
           </label>
           <label className="block">
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">How Did You Hear About HTR Advisory?</span>
-            <select className="mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:outline-none">
+            <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">How Did You Hear About HTR Advisory?</span>
+            <select className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
               <option value="">Select...</option>
               <option>HTR Intelligence Platform (htr.com)</option>
               <option>Referral from a colleague</option>
@@ -256,7 +256,7 @@ export default function ContactForm() {
       >
         Submit Engagement Request
       </button>
-      <p className="text-center text-xs text-gray-400">
+      <p className="text-center text-xs text-slate-400">
         All inquiries are handled confidentially. We respond within 48 business hours.
       </p>
     </form>

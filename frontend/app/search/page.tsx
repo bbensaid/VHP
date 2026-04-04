@@ -20,11 +20,11 @@ const TYPE_META: Record<string, { color: string; bg: string; border: string }> =
 };
 
 const PILLAR_COLORS: Record<string, string> = {
-  policy:     "bg-sky-100 text-sky-700 border-sky-300",
-  economics:  "bg-emerald-100 text-emerald-700 border-emerald-300",
-  technology: "bg-indigo-100 text-indigo-700 border-indigo-300",
-  clinical:   "bg-red-100 text-red-700 border-red-300",
-  equity:     "bg-amber-100 text-amber-700 border-amber-300",
+  policy:     "bg-sky-50 text-sky-700 border-sky-200",
+  economics:  "bg-emerald-50 text-emerald-700 border-emerald-200",
+  technology: "bg-indigo-50 text-indigo-700 border-indigo-200",
+  clinical:   "bg-red-50 text-red-700 border-red-200",
+  equity:     "bg-amber-50 text-amber-700 border-amber-200",
 };
 
 const SUGGESTED = [
@@ -121,7 +121,7 @@ function SearchResults() {
               onChange={(e) => setInputValue(e.target.value)}
               placeholder="Search articles, modules, definitions…"
               autoFocus
-              className="w-full pl-12 pr-28 py-4 text-lg border border-slate-200 rounded-xl shadow-sm bg-white focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent"
+              className="w-full pl-12 pr-28 py-4 text-lg border border-slate-200 rounded-lg shadow-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
             />
             <button
               type="submit"
@@ -229,7 +229,7 @@ function SearchResults() {
                 <div className="flex flex-wrap gap-1.5 mb-2">
                   <button
                     onClick={() => setTypeFilter("all")}
-                    className={`px-2.5 py-1 text-xs font-bold rounded-full border transition-colors ${typeFilter === "all" ? "bg-slate-800 text-white border-slate-800" : "bg-white text-slate-500 border-slate-200 hover:bg-slate-100"}`}
+                    className={`px-2.5 py-1 text-xs font-bold rounded-full border transition-colors ${typeFilter === "all" ? "bg-indigo-600 text-white border-indigo-600" : "bg-white text-slate-500 border-slate-200 hover:bg-slate-100"}`}
                   >
                     All types
                   </button>
@@ -276,7 +276,7 @@ function SearchResults() {
                     >
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 mb-1.5 flex-wrap">
-                          <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border ${meta ? `${meta.bg} ${meta.color} ${meta.border}` : "bg-slate-100 text-slate-600 border-slate-200"}`}>
+                          <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border ${meta ? `${meta.bg} ${meta.color} ${meta.border}` : "bg-slate-100 text-slate-600 border-slate-200"}`}>
                             {r.label}
                           </span>
                           {r.pillar && (

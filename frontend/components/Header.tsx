@@ -287,18 +287,6 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
                 Meet our expert instructors
               </span>
             </Link>
-            <Link
-              href="/multimedia"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-sky-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-700">
-                Multimedia Library
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                Videos, presentations & infographics
-              </span>
-            </Link>
           </div>
         </div>
       </div>
@@ -371,6 +359,30 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
                 Real-time intelligence signals
+              </span>
+            </Link>
+            <Link
+              href="/the-wire"
+              onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors group"
+            >
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-emerald-700">
+                The Wire
+              </span>
+              <span className="text-xs text-slate-400 mt-0.5">
+                Live health industry news feed
+              </span>
+            </Link>
+            <Link
+              href="/investment-tracker"
+              onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors group"
+            >
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-emerald-700">
+                Investment Tracker
+              </span>
+              <span className="text-xs text-slate-400 mt-0.5">
+                M&amp;A, PE &amp; capital flow monitoring
               </span>
             </Link>
           </div>
@@ -656,9 +668,9 @@ const Header = () => {
   const megaMenuItems: { type: MegaMenuType; label: string; activeCheck: string }[] = [
     { type: "intelligence", label: "INTELLIGENCE", activeCheck: "/policy,/economics,/technology,/clinical,/equity" },
     { type: "learn", label: "LEARN", activeCheck: "/academy" },
-    { type: "analyze", label: "ANALYZE & TOOLS", activeCheck: "/research-lab,/htr-simulator,/hti-dashboard,/trending-topics,/multimedia" },
+    { type: "analyze", label: "ANALYZE & TOOLS", activeCheck: "/research-lab,/htr-simulator,/hti-dashboard,/trending-topics,/multimedia,/the-wire,/investment-tracker" },
     { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/california-calaim,/dashboard,/ahead-model" },
-    { type: "advise", label: "ADVISE", activeCheck: "/advisory,/connect-hub,/community" },
+    { type: "advise", label: "ADVISORY & SERVICES", activeCheck: "/advisory,/connect-hub,/connect,/community" },
   ];
 
   const isMenuActive = (activeCheck: string) =>
@@ -888,30 +900,42 @@ const Header = () => {
                 key: "learn",
                 label: "LEARN",
                 children: [
-                  { label: "Academy Hub", href: "/academy", sub: [] },
+                  { label: "Personalized Learning", href: "/academy/personalized-learning", sub: [] },
                   { label: "Learning Tracks", href: "/academy/tracks", sub: [] },
                   { label: "Courses", href: "/academy/courses", sub: [] },
                   { label: "Webinars", href: "/academy/webinars", sub: [] },
                   { label: "Case Studies", href: "/academy/case-studies", sub: [] },
                   { label: "Glossary", href: "/academy/glossary", sub: [] },
+                  { label: "Faculty", href: "/academy/faculty", sub: [] },
                 ],
               },
               {
                 key: "analyze",
-                label: "ANALYZE",
+                label: "ANALYZE & TOOLS",
                 children: [
                   { label: "Research Lab", href: "/research-lab", sub: [] },
                   { label: "HTR Simulator", href: "/htr-simulator", sub: [] },
-                  { label: "50-State Dashboard", href: "/dashboard", sub: [] },
-                  { label: "AHEAD Model", href: "/ahead-model", sub: [] },
+                  { label: "HTI Dashboard", href: "/hti-dashboard", sub: [] },
+                  { label: "The Wire", href: "/the-wire", sub: [] },
+                  { label: "Investment Tracker", href: "/investment-tracker", sub: [] },
+                  { label: "Trending Topics", href: "/trending-topics", sub: [] },
+                  { label: "Multimedia", href: "/multimedia", sub: [] },
+                ],
+              },
+              {
+                key: "states",
+                label: "STATES & PROGRAMS",
+                children: [
                   { label: "Vermont Act 167", href: "/vermont-act-167", sub: [] },
                   { label: "California CalAIM", href: "/california-calaim", sub: [] },
-                  { label: "All States", href: "/states", sub: [] },
+                  { label: "All States Explorer", href: "/states", sub: [] },
+                  { label: "50-State Dashboard", href: "/dashboard", sub: [] },
+                  { label: "AHEAD Model", href: "/ahead-model", sub: [] },
                 ],
               },
               {
                 key: "advise",
-                label: "ADVISE",
+                label: "ADVISORY & SERVICES",
                 children: [
                   { label: "Advisory Hub", href: "/advisory", sub: [] },
                   { label: "Strategic Consulting", href: "/advisory/consulting", sub: [] },
