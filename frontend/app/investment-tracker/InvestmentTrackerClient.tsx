@@ -28,12 +28,12 @@ const DEAL_TYPE_LABELS: Record<string, string> = {
 };
 
 const DEAL_TYPE_COLORS: Record<string, string> = {
-  ma:          "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300",
-  vc:          "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
-  pe:          "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
-  ipo:         "bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300",
-  partnership: "bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300",
-  debt:        "bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300",
+  ma:          "bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300",
+  vc:          "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
+  pe:          "bg-amber-50 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
+  ipo:         "bg-violet-50 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300",
+  partnership: "bg-sky-50 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300",
+  debt:        "bg-rose-50 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300",
 };
 
 const STATUS_COLORS: Record<string, string> = {
@@ -103,20 +103,20 @@ export default function InvestmentTrackerClient({ deals }: { deals: Deal[] }) {
               placeholder="Search deals, companies…"
               value={search}
               onChange={e => setSearch(e.target.value)}
-              className="w-full pl-9 pr-3 py-2 text-sm bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:border-indigo-300 text-slate-900 dark:text-slate-100 placeholder:text-slate-400"
+              className="w-full pl-9 pr-3 py-2 text-sm bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-slate-900 dark:text-slate-100 placeholder:text-slate-400"
             />
           </div>
 
           {/* Deal type */}
           <select value={dealType} onChange={e => setDealType(e.target.value)}
-            className="text-xs font-bold px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 focus:outline-none focus:border-indigo-300">
+            className="text-xs font-bold px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
             <option value="all">All types</option>
             {ALL_DEAL_TYPES.map(t => <option key={t} value={t}>{DEAL_TYPE_LABELS[t]}</option>)}
           </select>
 
           {/* Status */}
           <select value={status} onChange={e => setStatus(e.target.value)}
-            className="text-xs font-bold px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 focus:outline-none focus:border-indigo-300">
+            className="text-xs font-bold px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
             <option value="all">All statuses</option>
             {ALL_STATUSES.map(s => <option key={s} value={s} className="capitalize">{s.charAt(0).toUpperCase() + s.slice(1)}</option>)}
           </select>
@@ -124,7 +124,7 @@ export default function InvestmentTrackerClient({ deals }: { deals: Deal[] }) {
           {/* Pillar */}
           {pillars.length > 0 && (
             <select value={pillar} onChange={e => setPillar(e.target.value)}
-              className="text-xs font-bold px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 focus:outline-none focus:border-indigo-300">
+              className="text-xs font-bold px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
               <option value="all">All pillars</option>
               {pillars.map(p => <option key={p} value={p}>{p}</option>)}
             </select>
@@ -138,7 +138,7 @@ export default function InvestmentTrackerClient({ deals }: { deals: Deal[] }) {
               placeholder="Min value (M)"
               value={minValue}
               onChange={e => setMinValue(e.target.value)}
-              className="pl-6 pr-3 py-2 w-36 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:border-indigo-300 text-slate-900 dark:text-slate-100 placeholder:text-slate-400"
+              className="pl-6 pr-3 py-2 w-36 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-slate-900 dark:text-slate-100 placeholder:text-slate-400"
             />
           </div>
         </div>

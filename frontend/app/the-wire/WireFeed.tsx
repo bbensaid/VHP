@@ -26,12 +26,12 @@ const SOURCE_FILTERS = [
 ];
 
 const SOURCE_COLORS: Record<string, string> = {
-  policy:   "bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300",
-  stat:     "bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300",
-  fda:      "bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300",
-  cms:      "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
-  tech:     "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300",
-  industry: "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
+  policy:   "bg-sky-50 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300",
+  stat:     "bg-violet-50 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300",
+  fda:      "bg-rose-50 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300",
+  cms:      "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
+  tech:     "bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300",
+  industry: "bg-amber-50 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
 };
 
 function timeAgo(iso: string | null): string {
@@ -109,7 +109,7 @@ export default function WireFeed({
               onClick={() => setActiveFilter(f.key)}
               className={`px-3 py-1.5 rounded-full text-xs font-bold transition-colors ${
                 activeFilter === f.key
-                  ? "bg-slate-800 dark:bg-slate-200 text-white dark:text-slate-900"
+                  ? "bg-indigo-600 text-white"
                   : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700"
               }`}
             >

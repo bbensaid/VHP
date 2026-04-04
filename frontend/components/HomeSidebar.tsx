@@ -23,6 +23,7 @@ import {
   ChevronDownIcon,
   BoltIcon,
   BanknotesIcon,
+  LightBulbIcon,
 } from "@heroicons/react/24/outline";
 
 interface HomeSidebarProps {
@@ -92,8 +93,10 @@ type SectionItem = {
 type Section = {
   id: string;
   label: string;
+  icon: React.ComponentType<{ className?: string }>;
   headerColor: string;
   headerBg: string;
+  collapsedBg: string;
   borderAccent: string;
   hoverBg: string;
   divideColor: string;
@@ -105,16 +108,18 @@ type Section = {
 const SECTIONS: Section[] = [
   {
     id: "intelligence", label: "Intelligence",
-    headerColor: "text-slate-600", headerBg: "bg-slate-100",
-    borderAccent: "border-l-slate-500", hoverBg: "hover:bg-slate-50",
-    divideColor: "divide-slate-100", activeItemBg: "bg-slate-50",
+    icon: LightBulbIcon,
+    headerColor: "text-slate-600", headerBg: "bg-slate-100", collapsedBg: "bg-slate-50",
+    borderAccent: "border-l-slate-500", hoverBg: "hover:bg-slate-100",
+    divideColor: "divide-slate-100", activeItemBg: "bg-slate-100",
     isPillars: true,
   },
   {
     id: "learn", label: "Learn",
-    headerColor: "text-sky-700", headerBg: "bg-sky-50",
-    borderAccent: "border-l-sky-500", hoverBg: "hover:bg-sky-50",
-    divideColor: "divide-sky-100", activeItemBg: "bg-sky-50",
+    icon: AcademicCapIcon,
+    headerColor: "text-sky-700", headerBg: "bg-sky-100", collapsedBg: "bg-sky-50/70",
+    borderAccent: "border-l-sky-500", hoverBg: "hover:bg-sky-100",
+    divideColor: "divide-sky-100", activeItemBg: "bg-sky-100",
     items: [
       { href: "/academy/personalized-learning", label: "Personalized Learning", icon: SparklesIcon },
       { href: "/academy/tracks",                label: "Learning Tracks",        icon: TableCellsIcon },
@@ -127,9 +132,10 @@ const SECTIONS: Section[] = [
   },
   {
     id: "analyze", label: "Analyze & Tools",
-    headerColor: "text-amber-700", headerBg: "bg-amber-50",
-    borderAccent: "border-l-amber-500", hoverBg: "hover:bg-amber-50",
-    divideColor: "divide-amber-100", activeItemBg: "bg-amber-50",
+    icon: BeakerIcon,
+    headerColor: "text-amber-700", headerBg: "bg-amber-100", collapsedBg: "bg-amber-50/70",
+    borderAccent: "border-l-amber-500", hoverBg: "hover:bg-amber-100",
+    divideColor: "divide-amber-100", activeItemBg: "bg-amber-100",
     items: [
       { href: "/research-lab/interoperability",    label: "Interoperability & Risk",   icon: BeakerIcon },
       { href: "/research-lab/payment-models",      label: "Payment Models & VBC",      icon: DocumentTextIcon },
@@ -147,9 +153,10 @@ const SECTIONS: Section[] = [
   },
   {
     id: "states", label: "States & Programs",
-    headerColor: "text-rose-700", headerBg: "bg-rose-50",
-    borderAccent: "border-l-rose-500", hoverBg: "hover:bg-rose-50",
-    divideColor: "divide-rose-100", activeItemBg: "bg-rose-50",
+    icon: MapPinIcon,
+    headerColor: "text-rose-700", headerBg: "bg-rose-100", collapsedBg: "bg-rose-50/70",
+    borderAccent: "border-l-rose-500", hoverBg: "hover:bg-rose-100",
+    divideColor: "divide-rose-100", activeItemBg: "bg-rose-100",
     items: [
       { href: "/vermont-act-167",   label: "Vermont Act 167",    icon: MapPinIcon },
       { href: "/california-calaim", label: "California CalAIM",  icon: MapPinIcon },
@@ -160,9 +167,10 @@ const SECTIONS: Section[] = [
   },
   {
     id: "advisory", label: "Advisory & Services",
-    headerColor: "text-indigo-700", headerBg: "bg-indigo-50",
-    borderAccent: "border-l-indigo-500", hoverBg: "hover:bg-indigo-50",
-    divideColor: "divide-indigo-100", activeItemBg: "bg-indigo-50",
+    icon: BriefcaseIcon,
+    headerColor: "text-indigo-700", headerBg: "bg-indigo-100", collapsedBg: "bg-indigo-50/70",
+    borderAccent: "border-l-indigo-500", hoverBg: "hover:bg-indigo-100",
+    divideColor: "divide-indigo-100", activeItemBg: "bg-indigo-100",
     items: [
       { href: "/advisory",                    label: "Advisory Hub",          icon: BriefcaseIcon },
       { href: "/advisory/consulting",         label: "Strategic Consulting",  icon: BriefcaseIcon },
@@ -221,7 +229,6 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
   const isActive = (href: string) => pathname === href;
 
   // On route change: ADD the new section/pillar if not already present.
-  // Never remove — the user controls collapse manually by clicking again.
   useEffect(() => {
     const section = getSectionForPath(pathname);
     const pillar = getPillarForPath(pathname);
@@ -229,7 +236,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
     if (pillar)  setExpandedPillars((prev)  => prev.includes(pillar)  ? prev : [...prev, pillar]);
   }, [pathname]);
 
-  // ── Click handlers — toggle one ID without touching the others ────────────
+  // ── Click handlers ────────────────────────────────────────────────────────
   const handleSectionClick = (sectionId: string) => {
     setExpandedSections((prev) =>
       prev.includes(sectionId) ? prev.filter((id) => id !== sectionId) : [...prev, sectionId]
@@ -242,52 +249,77 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
     );
   };
 
+  const handleCollapseAll = () => {
+    setExpandedSections([]);
+    setExpandedPillars([]);
+  };
+
+  const hasAnythingOpen = expandedSections.length > 0;
+
   return (
     <div className="pt-2">
 
-      {/* ── L1: Section list ─────────────────────────────────────────── */}
-      <div className="space-y-1.5">
+      {/* ── Collapse All ────────────────────────────────────────────────── */}
+      {hasAnythingOpen && (
+        <div className="flex justify-end mb-2 px-1">
+          <button
+            onClick={handleCollapseAll}
+            className="flex items-center gap-1 px-2 py-0.5 rounded text-[10px] text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors"
+          >
+            <ChevronDownIcon className="w-3 h-3 rotate-180" />
+            Collapse all
+          </button>
+        </div>
+      )}
+
+      {/* ── L1: Section list ─────────────────────────────────────────────── */}
+      <div className="space-y-3">
         {SECTIONS.map((section) => {
           const isOpen = expandedSections.includes(section.id);
-          const sectionData = section;
+          const SectionIcon = section.icon;
 
           return (
             <div key={section.id}>
-              {/* L1 button */}
+              {/* L1 header button */}
               <button
                 onClick={() => handleSectionClick(section.id)}
-                className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 border-l-4 ${sectionData.borderAccent} transition-colors text-left ${isOpen ? sectionData.headerBg : `bg-white dark:bg-slate-800 ${sectionData.hoverBg}`}`}
+                className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 border-l-4 ${section.borderAccent} transition-colors text-left ${
+                  isOpen ? section.headerBg : `${section.collapsedBg} dark:bg-slate-800 ${section.hoverBg}`
+                }`}
               >
-                <span className={`text-[10px] font-black uppercase tracking-[0.15em] ${sectionData.headerColor}`}>
-                  {section.label}
+                <span className="flex items-center gap-2">
+                  <SectionIcon className={`w-4 h-4 shrink-0 ${section.headerColor}`} />
+                  <span className={`text-[11px] font-black uppercase tracking-[0.13em] ${section.headerColor}`}>
+                    {section.label}
+                  </span>
                 </span>
                 <ChevronDownIcon
-                  className={`w-3 h-3 transition-transform duration-200 ${
-                    isOpen ? `${sectionData.headerColor} rotate-0` : "text-slate-400 -rotate-90"
+                  className={`w-3.5 h-3.5 shrink-0 transition-transform duration-200 ${
+                    isOpen ? `${section.headerColor} rotate-0` : "text-slate-400 -rotate-90"
                   }`}
                 />
               </button>
 
-              {/* ── L2 accordion: section-colored left rail + tinted bg ── */}
+              {/* ── L2 drawer: indented + colored rail ───────────────────── */}
               {isOpen && (
-                <div className={`mt-1 border-l-4 ${sectionData.borderAccent} bg-slate-50 dark:bg-slate-800/60 rounded-r-lg overflow-hidden`}>
+                <div className={`mt-1.5 ml-2 border-l-4 ${section.borderAccent} bg-white dark:bg-slate-800/60 rounded-r-xl rounded-b-xl overflow-hidden shadow-sm`}>
 
-                  {/* ── INTELLIGENCE: pillar list ─────────────────────── */}
-                  {sectionData.isPillars && (
-                    <div className="divide-y divide-slate-100/80 dark:divide-slate-700/50">
+                  {/* ── INTELLIGENCE: nested pillar accordion ──────────── */}
+                  {section.isPillars && (
+                    <div className="divide-y divide-slate-100/80 dark:divide-slate-700/50 py-1">
                       {pillars.map((pillar) => {
                         const pillarOpen = expandedPillars.includes(pillar.id);
                         return (
                           <div key={pillar.id}>
 
-                            {/* Pillar row — L2 typography: 13px semibold colored */}
+                            {/* L2 pillar button */}
                             <button
                               onClick={() => handlePillarClick(pillar.id)}
-                              className="w-full flex items-center justify-between px-3 py-2 transition-colors text-left hover:bg-white/70 dark:hover:bg-slate-700/50"
+                              className="w-full flex items-center justify-between pl-5 pr-3 py-2.5 transition-colors text-left hover:bg-slate-50 dark:hover:bg-slate-700/50"
                             >
-                              <div className="flex items-center gap-2">
+                              <div className="flex items-center gap-2.5">
                                 <span className={`w-2 h-2 rounded-full shrink-0 ${pillar.dot}`} />
-                                <span className={`text-[13px] font-semibold ${pillar.accent}`}>
+                                <span className={`text-[12px] font-bold ${pillar.accent}`}>
                                   {pillar.label}
                                 </span>
                               </div>
@@ -298,30 +330,30 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                               />
                             </button>
 
-                            {/* L3: pillar-colored rail + white bg + smaller muted text */}
+                            {/* L3: pillar sub-items, indented further */}
                             {pillarOpen && (
-                              <div className={`border-l-2 ${pillar.rail} ml-3 bg-white dark:bg-slate-900`}>
+                              <div className={`ml-5 border-l-2 ${pillar.rail} bg-slate-50/80 dark:bg-slate-900 mb-1`}>
                                 {/* Pillar overview link */}
                                 <Link
                                   href={pillar.href}
                                   onClick={onNavigate}
-                                  className={`flex items-center gap-2 pl-3 pr-2 py-1.5 border-b border-slate-100 dark:border-slate-700 group ${
-                                    isActive(pillar.href) ? "bg-slate-50 dark:bg-slate-800" : "hover:bg-slate-50 dark:hover:bg-slate-800"
+                                  className={`flex items-center pl-4 pr-2 py-1.5 border-b border-slate-100 dark:border-slate-700 group ${
+                                    isActive(pillar.href) ? "bg-slate-100 dark:bg-slate-800" : "hover:bg-white dark:hover:bg-slate-800"
                                   }`}
                                 >
                                   <span className={`text-[10px] font-bold uppercase tracking-widest ${pillar.accent} group-hover:underline`}>
                                     {pillar.label} Overview
                                   </span>
                                 </Link>
-                                {/* Sub-items — L3 typography: 11px normal muted */}
-                                <div className="divide-y divide-slate-50 dark:divide-slate-700/50">
+                                {/* L3 sub-items */}
+                                <div className="divide-y divide-slate-100/60 dark:divide-slate-700/50">
                                   {pillar.items.map((item) => (
                                     <Link
                                       key={item.href}
                                       href={item.href}
                                       onClick={onNavigate}
-                                      className={`flex items-center pl-3 pr-2 py-2 transition-colors group ${
-                                        isActive(item.href) ? "bg-slate-100 dark:bg-slate-700" : "hover:bg-slate-50 dark:hover:bg-slate-800"
+                                      className={`flex items-center pl-4 pr-2 py-2 transition-colors group ${
+                                        isActive(item.href) ? "bg-slate-100 dark:bg-slate-700" : "hover:bg-white dark:hover:bg-slate-800"
                                       }`}
                                     >
                                       <span className={`text-[11px] leading-snug transition-colors ${
@@ -342,37 +374,32 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                     </div>
                   )}
 
-                  {/* ── ALL OTHER SECTIONS: flat item list ───────────── */}
-                  {!sectionData.isPillars && sectionData.items && (
-                    <div className={`divide-y ${sectionData.divideColor}`}>
-                      {sectionData.items.map((item) => {
+                  {/* ── ALL OTHER SECTIONS: flat item list ────────────── */}
+                  {!section.isPillars && section.items && (
+                    <div className={`divide-y ${section.divideColor} py-1`}>
+                      {section.items.map((item) => {
                         const Icon = item.icon;
                         return (
                           <Link
                             key={`${item.href}-${item.label}`}
                             href={item.href}
                             onClick={onNavigate}
-                            className={`flex items-center gap-2.5 px-3 py-2 transition-colors group ${
+                            className={`flex items-center gap-2.5 pl-5 pr-3 py-2 transition-colors group ${
                               isActive(item.href)
-                                ? sectionData.activeItemBg
-                                : `bg-slate-50 dark:bg-slate-800/60 ${sectionData.hoverBg}`
+                                ? section.activeItemBg
+                                : `bg-white dark:bg-slate-800/60 ${section.hoverBg}`
                             }`}
                           >
                             {Icon && (
-                              <Icon className={`w-3.5 h-3.5 shrink-0 ${sectionData.headerColor} opacity-70`} />
+                              <Icon className={`w-3.5 h-3.5 shrink-0 ${section.headerColor} opacity-60`} />
                             )}
-                            <div className="min-w-0">
-                              <span className={`text-[13px] font-semibold block leading-snug transition-colors ${
-                                isActive(item.href)
-                                  ? sectionData.headerColor
-                                  : "text-slate-600 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-slate-100"
-                              }`}>
-                                {item.label}
-                              </span>
-                              {item.desc && (
-                                <span className="text-[10px] text-slate-400 dark:text-slate-500">{item.desc}</span>
-                              )}
-                            </div>
+                            <span className={`text-[13px] font-medium leading-snug transition-colors ${
+                              isActive(item.href)
+                                ? `font-semibold ${section.headerColor}`
+                                : "text-slate-600 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-slate-100"
+                            }`}>
+                              {item.label}
+                            </span>
                           </Link>
                         );
                       })}
@@ -389,13 +416,15 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
           href="/saved"
           onClick={onNavigate}
           className={`flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 border-l-4 border-l-slate-400 transition-colors ${
-            isActive("/saved") ? "bg-slate-100 dark:bg-slate-700" : "bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700"
+            isActive("/saved") ? "bg-slate-100 dark:bg-slate-700" : "bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700"
           }`}
         >
-          <span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-500 dark:text-slate-400">
-            My Library
+          <span className="flex items-center gap-2">
+            <BookmarkIcon className="w-4 h-4 shrink-0 text-slate-500 dark:text-slate-400" />
+            <span className="text-[11px] font-black uppercase tracking-[0.13em] text-slate-500 dark:text-slate-400">
+              My Library
+            </span>
           </span>
-          <BookmarkIcon className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500" />
         </Link>
       </div>
     </div>

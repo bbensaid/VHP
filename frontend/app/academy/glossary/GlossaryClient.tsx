@@ -19,19 +19,19 @@ function getBadgeStyle(pillar: string) {
     case "Technology": return "bg-indigo-50 text-card-tech border-card-tech/20 border";
     case "Clinical": return "bg-red-50 text-brand-clinical border-brand-clinical/20 border";
     case "Equity": return "bg-amber-50 text-brand-equity border-brand-equity/20 border";
-    default: return "bg-gray-100 text-gray-600 border-gray-200 border";
+    default: return "bg-slate-100 text-slate-600 border-slate-200 border";
   }
 }
 
 function getPillarButtonStyle(pillar: string, isSelected: boolean) {
-  if (!isSelected) return "bg-white text-gray-500 border-gray-200 hover:border-gray-300";
+  if (!isSelected) return "bg-white text-slate-500 border-slate-200 hover:border-slate-300";
   switch (pillar) {
     case "Policy": return "bg-sky-50 text-card-policy border-card-policy font-bold ring-1 ring-card-policy/20";
     case "Economics": return "bg-emerald-50 text-card-economics border-card-economics font-bold ring-1 ring-card-economics/20";
     case "Technology": return "bg-indigo-50 text-card-tech border-card-tech font-bold ring-1 ring-card-tech/20";
     case "Clinical": return "bg-red-50 text-brand-clinical border-brand-clinical font-bold ring-1 ring-brand-clinical/20";
     case "Equity": return "bg-amber-50 text-brand-equity border-brand-equity font-bold ring-1 ring-brand-equity/20";
-    default: return "bg-gray-900 text-white border-gray-900";
+    default: return "bg-slate-900 text-white border-slate-900";
   }
 }
 
@@ -76,7 +76,7 @@ export default function GlossaryClient({ allTerms }: { allTerms: GlossaryTerm[] 
   return (
     <div className="min-h-screen bg-white pb-20">
       {/* HEADER */}
-      <div className="bg-slate-50 border-b border-gray-200 py-16">
+      <div className="bg-slate-50 border-b border-slate-200 py-16">
         <div className="container mx-auto px-4 md:px-8 text-center max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
             Health Transformation Glossary
@@ -87,7 +87,7 @@ export default function GlossaryClient({ allTerms }: { allTerms: GlossaryTerm[] 
           <div className="relative max-w-xl mx-auto">
             <input
               type="text"
-              className="block w-full px-6 py-4 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm text-lg"
+              className="block w-full px-6 py-4 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm text-lg"
               placeholder="Search terms..."
               value={searchTerm}
               onChange={(e) => {
@@ -124,7 +124,7 @@ export default function GlossaryClient({ allTerms }: { allTerms: GlossaryTerm[] 
         </div>
 
         {/* ALPHABET NAV */}
-        <div className="flex flex-wrap justify-center gap-2 mb-16 border-t border-gray-100 pt-8">
+        <div className="flex flex-wrap justify-center gap-2 mb-16 border-t border-slate-100 pt-8">
           {alphabet.map((letter) => {
             const hasTerms = filteredTerms.some((t) => t.term.charAt(0).toUpperCase() === letter);
             const globallyAvailable = allTerms.some((t) => t.term.charAt(0).toUpperCase() === letter);
@@ -150,8 +150,8 @@ export default function GlossaryClient({ allTerms }: { allTerms: GlossaryTerm[] 
         {/* GLOSSARY CARDS */}
         <div className="space-y-12">
           {filteredTerms.length === 0 ? (
-            <div className="text-center py-20 bg-gray-50 rounded-xl border border-dashed border-gray-300">
-              <p className="text-gray-500 text-lg">No terms found matching your filters.</p>
+            <div className="text-center py-20 bg-slate-50 rounded-xl border border-dashed border-slate-300">
+              <p className="text-slate-500 text-lg">No terms found matching your filters.</p>
               <button
                 onClick={() => {
                   setSearchTerm("");
@@ -177,7 +177,7 @@ export default function GlossaryClient({ allTerms }: { allTerms: GlossaryTerm[] 
                     {groupedTerms[letter].map((item) => (
                       <div
                         key={item._id}
-                        className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-md transition-shadow"
+                        className="bg-white p-6 rounded-xl border border-slate-200 hover:shadow-md transition-shadow"
                       >
                         <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-2">
                           <h3 className="text-xl font-bold text-slate-900">{item.term}</h3>
@@ -185,7 +185,7 @@ export default function GlossaryClient({ allTerms }: { allTerms: GlossaryTerm[] 
                             {item.pillars?.map((pillar) => (
                               <span
                                 key={pillar}
-                                className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-widest ${getBadgeStyle(pillar)}`}
+                                className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-widest ${getBadgeStyle(pillar)}`}
                               >
                                 {pillar}
                               </span>
