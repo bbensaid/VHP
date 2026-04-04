@@ -1,5 +1,6 @@
 import { BoltIcon } from "@heroicons/react/24/outline";
 import WireFeed from "./WireFeed";
+import { getUser } from "@/lib/auth";
 
 export const revalidate = 900; // 15 minutes
 
@@ -23,7 +24,10 @@ async function getWireItems(): Promise<{ items: WireItem[]; fetched_at: string }
 }
 
 export default async function TheWirePage() {
-  const { items, fetched_at } = await getWireItems();
+  const [{ items, fetched_at }, user] = await Promise.all([
+    getWireItems(),
+    getUser(),
+  ]);
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
@@ -46,7 +50,7 @@ export default async function TheWirePage() {
 
       {/* Feed */}
       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm p-6">
-        <WireFeed initialItems={items} fetchedAt={fetched_at} />
+        <WireFeed initialItems={items} fetchedAt={fetched_at} currentUserId={user?.id} />
       </div>
     </div>
   );

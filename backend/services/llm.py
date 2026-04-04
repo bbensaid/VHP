@@ -17,6 +17,7 @@ from llama_index.core import Settings
 from llama_index.core.llms import LLM, CompletionResponse, CompletionResponseGen
 from llama_index.core.llms import ChatMessage, ChatResponse, ChatResponseGen, ChatResponseAsyncGen
 from llama_index.llms.groq import Groq as GroqLLM
+from llama_index.llms.openai import OpenAI as OpenAILLM
 from llama_index.embeddings.openai import OpenAIEmbedding
 
 from config import (
@@ -190,31 +191,41 @@ def get_llm_for_role(role: str) -> LLM:
     Return an LLM (wrapped in FallbackLLM) for the user's subscription tier:
 
       free / student       → llama-3.1-8b-instant  (Groq)
-                             fallback: none (already the cheapest)
+                             fallback: gpt-4o-mini  (OpenAI, if Groq fully down)
 
       subscriber           → llama-3.3-70b-versatile (Groq)
-                             fallback: llama-3.1-8b-instant
+                             fallback: llama-3.1-8b-instant → gpt-4o-mini
 
       advisory / admin     → claude-sonnet-4-6 (Anthropic)
-                             fallback: llama-3.3-70b-versatile → llama-3.1-8b-instant
+                             fallback: llama-3.3-70b-versatile → gpt-4o-mini
     """
     fast_llm = GroqLLM(model=MODEL_FREE, api_key=GROQ_API_KEY)
     sub_llm  = GroqLLM(model=MODEL_SUBSCRIBER, api_key=GROQ_API_KEY)
 
+    # OpenAI last-resort fallback (only when OPENAI_API_KEY is set)
+    openai_fallback: list[LLM] = []
+    if OPENAI_API_KEY:
+        try:
+            openai_fallback = [OpenAILLM(model="gpt-4o-mini", api_key=OPENAI_API_KEY)]
+        except Exception:
+            pass
+
     if role in ("advisory", "admin"):
         if _ANTHROPIC_AVAILABLE and ANTHROPIC_API_KEY and AnthropicLLM is not None:
-            log.info(f"Model routing: role={role} → {MODEL_ADVISORY} (Anthropic) w/ Groq fallback")
+            log.info(f"Model routing: role={role} → {MODEL_ADVISORY} (Anthropic) w/ Groq+OpenAI fallback")
             primary = AnthropicLLM(model=MODEL_ADVISORY, api_key=ANTHROPIC_API_KEY)
-            return FallbackLLM(primary=primary, fallbacks=[sub_llm, fast_llm])
+            return FallbackLLM(primary=primary, fallbacks=[sub_llm, fast_llm] + openai_fallback)
         log.warning(f"Model routing: advisory role but Anthropic unavailable — using {MODEL_SUBSCRIBER}")
 
     if role in ("free", "student"):
-        log.info(f"Model routing: role={role} → {MODEL_FREE} (Groq)")
-        return fast_llm  # No fallback needed for the cheapest model
+        log.info(f"Model routing: role={role} → {MODEL_FREE} (Groq) w/ OpenAI fallback")
+        if openai_fallback:
+            return FallbackLLM(primary=fast_llm, fallbacks=openai_fallback)
+        return fast_llm
 
-    # subscriber / professional + advisory fallback
-    log.info(f"Model routing: role={role} → {MODEL_SUBSCRIBER} (Groq) w/ fast fallback")
-    return FallbackLLM(primary=sub_llm, fallbacks=[fast_llm])
+    # subscriber / professional
+    log.info(f"Model routing: role={role} → {MODEL_SUBSCRIBER} (Groq) w/ fast+OpenAI fallback")
+    return FallbackLLM(primary=sub_llm, fallbacks=[fast_llm] + openai_fallback)
 
 
 # ── FlashRank re-ranker (lazy init) ───────────────────────────────────────────
