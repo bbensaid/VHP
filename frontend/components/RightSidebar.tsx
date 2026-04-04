@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SparklesIcon, ArrowsPointingOutIcon, PaperAirplaneIcon, StopIcon, TrashIcon, ArrowPathIcon, ExclamationTriangleIcon, BookOpenIcon } from "@heroicons/react/24/outline";
+import { SparklesIcon, ArrowsPointingOutIcon, PaperAirplaneIcon, StopIcon, TrashIcon, ArrowPathIcon, ExclamationTriangleIcon, BookOpenIcon, HandThumbUpIcon, HandThumbDownIcon } from "@heroicons/react/24/outline";
 import ReactMarkdown from "react-markdown";
 
 interface Citation {
@@ -19,6 +19,8 @@ interface Message {
   citations?: Citation[];
   isError?: boolean;
   retryText?: string;
+  id?: string;
+  feedback?: "up" | "down";
 }
 
 // Detect which intelligence pillar the user is currently on
@@ -84,6 +86,22 @@ export default function RightSidebar() {
   const pathname = usePathname() ?? "";
   const activePillar = getPillarFromPath(pathname);
 
+  const handleFeedback = useCallback((msgId: string, type: "up" | "down", query: string, response: string) => {
+    setMessages((prev) => {
+      const updated = prev.map((m) => {
+        if (m.id !== msgId) return m;
+        const newRating = m.feedback === type ? undefined : type;
+        fetch("/api/feedback", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ messageId: msgId, rating: newRating ?? null, query, response, pillar: activePillar }),
+        }).catch(() => {});
+        return { ...m, feedback: newRating };
+      });
+      return updated;
+    });
+  }, [activePillar]);
+
   useEffect(() => {
     if (messagesContainerRef.current) {
       messagesContainerRef.current.scrollTop = messagesContainerRef.current.scrollHeight;
@@ -101,7 +119,8 @@ export default function RightSidebar() {
     setIsLoading(true);
 
     const history = messagesRef.current.filter((m) => m.text.trim() && !m.isError);
-    setMessages((prev) => [...prev, { role: "ai", text: "" }]);
+    const aiMsgId = crypto.randomUUID();
+    setMessages((prev) => [...prev, { role: "ai", text: "", id: aiMsgId }]);
 
     try {
       const body: Record<string, unknown> = { message: text, history };
@@ -149,6 +168,7 @@ export default function RightSidebar() {
         updated[updated.length - 1] = {
           role: "ai",
           text: finalText,
+          id: aiMsgId,
           citations: citations.length > 0 ? citations : undefined,
         };
         return updated;
@@ -287,6 +307,28 @@ export default function RightSidebar() {
                           </div>
                         ))}
                       </div>
+                    </div>
+                  )}
+
+                  {/* Feedback buttons — only on complete (non-empty) messages */}
+                  {msg.id && msg.text && (
+                    <div className="flex items-center gap-1 mt-2">
+                      <button
+                        onClick={() => handleFeedback(msg.id!, "up", messages[i - 1]?.text ?? "", msg.text)}
+                        className={`p-1 rounded transition-colors ${msg.feedback === "up" ? "text-emerald-600 bg-emerald-50 dark:bg-emerald-950/30" : "text-slate-300 hover:text-emerald-500"}`}
+                        title="Helpful"
+                        aria-pressed={msg.feedback === "up"}
+                      >
+                        <HandThumbUpIcon className="w-3 h-3" />
+                      </button>
+                      <button
+                        onClick={() => handleFeedback(msg.id!, "down", messages[i - 1]?.text ?? "", msg.text)}
+                        className={`p-1 rounded transition-colors ${msg.feedback === "down" ? "text-rose-600 bg-rose-50 dark:bg-rose-950/30" : "text-slate-300 hover:text-rose-500"}`}
+                        title="Not helpful"
+                        aria-pressed={msg.feedback === "down"}
+                      >
+                        <HandThumbDownIcon className="w-3 h-3" />
+                      </button>
                     </div>
                   )}
                 </div>

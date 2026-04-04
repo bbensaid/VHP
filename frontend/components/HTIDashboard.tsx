@@ -688,7 +688,7 @@ export default function HTIDashboard() {
                     },
                     interaction: { mode: "index", intersect: false },
                   }}
-                />
+                />}
               </div>
             </div>
           )}

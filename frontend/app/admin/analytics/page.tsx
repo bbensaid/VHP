@@ -12,7 +12,7 @@ async function getAiStats() {
   // Last 30 days from rag_query_stats view
   const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
 
-  const [statsRes, recentRes, zeroRes, topQueriesRes, certRes] = await Promise.allSettled([
+  const [statsRes, recentRes, zeroRes, topQueriesRes, certRes, feedbackRes] = await Promise.allSettled([
     // Aggregate stats
     dbAdmin
       .from("rag_query_log")
@@ -41,6 +41,11 @@ async function getAiStats() {
     dbAdmin
       .from("certifications")
       .select("id", { count: "exact", head: true }),
+    // Feedback stats (last 30 days)
+    dbAdmin
+      .from("rag_feedback")
+      .select("rating")
+      .gte("created_at", thirtyDaysAgo),
   ]);
 
   const allRows = statsRes.status === "fulfilled" ? (statsRes.value.data ?? []) : [];
@@ -69,6 +74,13 @@ async function getAiStats() {
 
   const certCount = certRes.status === "fulfilled" ? (certRes.value.count ?? 0) : 0;
 
+  const feedbackRows = feedbackRes.status === "fulfilled" ? (feedbackRes.value.data ?? []) : [];
+  const thumbsUp   = feedbackRows.filter((r) => r.rating === "up").length;
+  const thumbsDown = feedbackRows.filter((r) => r.rating === "down").length;
+  const satisfactionRate = (thumbsUp + thumbsDown) > 0
+    ? Math.round((thumbsUp / (thumbsUp + thumbsDown)) * 100)
+    : null;
+
   return {
     totalQueries,
     zeroResultCount,
@@ -78,6 +90,9 @@ async function getAiStats() {
     zeroQueries,
     topQueries,
     certCount,
+    thumbsUp,
+    thumbsDown,
+    satisfactionRate,
   };
 }
 
@@ -122,7 +137,7 @@ export default async function AdminAnalyticsPage() {
           <BoltIcon className="w-4 h-4 text-indigo-500" />
           <h2 className="text-sm font-black uppercase tracking-widest text-slate-500">AI Quality</h2>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
           <MetricCard label="Total AI Queries" value={stats.totalQueries} color="indigo" />
           <MetricCard
             label="Zero-Result Rate"
@@ -134,6 +149,12 @@ export default async function AdminAnalyticsPage() {
             label="Avg Latency"
             value={stats.avgLatency > 0 ? `${stats.avgLatency}ms` : "—"}
             color={stats.avgLatency > 5000 ? "rose" : "emerald"}
+          />
+          <MetricCard
+            label="Answer Quality"
+            value={stats.satisfactionRate !== null ? `${stats.satisfactionRate}%` : "—"}
+            sub={stats.satisfactionRate !== null ? `👍 ${stats.thumbsUp} · 👎 ${stats.thumbsDown}` : "No ratings yet"}
+            color={stats.satisfactionRate !== null && stats.satisfactionRate < 60 ? "rose" : "emerald"}
           />
           <MetricCard
             label="Certificates Issued"

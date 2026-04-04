@@ -271,9 +271,25 @@ export default function ChatPage() {
   };
 
   const handleFeedback = (index: number, type: "up" | "down") => {
-    setMessages((prev) =>
-      prev.map((msg, i) => i === index ? { ...msg, feedback: msg.feedback === type ? undefined : type } : msg)
-    );
+    setMessages((prev) => {
+      const updated = prev.map((msg, i) => {
+        if (i !== index) return msg;
+        const newRating = msg.feedback === type ? undefined : type;
+        // Persist to DB (fire and forget — UI already updated optimistically)
+        fetch("/api/feedback", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            messageId: msg.id,
+            rating:    newRating ?? null,
+            query:     prev[index - 1]?.text ?? "",
+            response:  msg.text,
+          }),
+        }).catch(() => {}); // Silent — feedback loss is acceptable
+        return { ...msg, feedback: newRating };
+      });
+      return updated;
+    });
   };
 
   const handleDownloadTranscript = () => {

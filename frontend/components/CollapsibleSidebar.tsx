@@ -50,8 +50,8 @@ export default function CollapsibleSidebar({
       {/* Mobile overlay background */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-slate-900/50 z-(--z-overlay) lg:hidden touch-none"
-          onClick={() => setIsOpen(false)}
+          className="fixed inset-0 bg-slate-900/50 z-(--z-overlay) lg:hidden"
+          onPointerDown={() => setIsOpen(false)}
           aria-hidden="true"
         />
       )}

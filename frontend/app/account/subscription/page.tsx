@@ -49,6 +49,26 @@ export default async function SubscriptionPage({
           </div>
         )}
 
+        {sub?.status === "past_due" && (
+          <div className="bg-amber-50 border border-amber-300 rounded-2xl p-5 mb-6 flex items-start gap-4">
+            <div className="shrink-0 w-9 h-9 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 text-lg">!</div>
+            <div className="flex-1">
+              <p className="font-black text-amber-800">Payment failed</p>
+              <p className="text-amber-700 text-sm mt-1">
+                We couldn&apos;t charge your payment method. Your access will be suspended unless you update your billing details.
+              </p>
+              <form action="/api/stripe/portal" method="POST" className="mt-3">
+                <button
+                  type="submit"
+                  className="text-sm font-bold bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg transition-colors"
+                >
+                  Update Payment Method →
+                </button>
+              </form>
+            </div>
+          </div>
+        )}
+
         <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 space-y-6">
           <div className="flex items-center justify-between">
             <div>

@@ -185,6 +185,7 @@ export default async function AdminDashboard() {
           <div className="space-y-1">
             {[
               { href: "/admin/users", label: "User Management", icon: UsersIcon },
+              { href: "/admin/revenue", label: "Revenue Dashboard", icon: ChartBarIcon },
               { href: "/admin/analytics", label: "AI & Content Analytics", icon: ChartBarIcon },
               { href: "/admin/role-changes", label: "Role Change Audit Log", icon: DocumentTextIcon },
               { href: "/admin/ingest", label: "Ingest Monitor", icon: ArrowPathIcon },

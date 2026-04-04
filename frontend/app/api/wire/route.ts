@@ -20,6 +20,7 @@ interface WireItem {
 }
 
 const SOURCES = [
+  // Policy & health system news
   {
     url: "https://kffhealthnews.org/feed/",
     label: "KFF Health News",
@@ -30,25 +31,41 @@ const SOURCES = [
     url: "https://www.statnews.com/feed/",
     label: "STAT News",
     source: "stat",
-    limit: 8,
-  },
-  {
-    url: "https://news.google.com/rss/search?q=FDA+approval+OR+FDA+regulation+OR+FDA+warning+when:3d&hl=en-US&gl=US&ceid=US:en",
-    label: "FDA",
-    source: "fda",
     limit: 6,
   },
+  // Federal regulatory feeds (official RSS — stable, no scraping)
   {
-    url: "https://news.google.com/rss/search?q=CMS.gov+Medicare+Medicaid+payment+rule+OR+CMS+final+rule+when:3d&hl=en-US&gl=US&ceid=US:en",
+    url: "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=centers-for-medicare-medicaid-services&conditions%5Btype%5D%5B%5D=Rule&conditions%5Btype%5D%5B%5D=Proposed+Rule",
     label: "CMS",
     source: "cms",
     limit: 6,
   },
   {
-    url: "https://news.google.com/rss/search?q=healthcare+AI+OR+health+tech+digital+health+when:2d&hl=en-US&gl=US&ceid=US:en",
+    url: "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=food-and-drug-administration&conditions%5Btype%5D%5B%5D=Rule&conditions%5Btype%5D%5B%5D=Notice",
+    label: "FDA",
+    source: "fda",
+    limit: 6,
+  },
+  // Health technology & digital health
+  {
+    url: "https://www.healthcareitnews.com/rss.xml",
     label: "Health Tech",
     source: "tech",
     limit: 6,
+  },
+  // Health economics & policy
+  {
+    url: "https://www.healthaffairs.org/rss/site_1/16.xml",
+    label: "Health Affairs",
+    source: "policy",
+    limit: 5,
+  },
+  // Modern Healthcare — operations & business
+  {
+    url: "https://www.modernhealthcare.com/section/rss",
+    label: "Modern Healthcare",
+    source: "industry",
+    limit: 5,
   },
 ];
 
@@ -74,9 +91,10 @@ function parseItems(xmlText: string, source: string, label: string, limit: numbe
       .replace(/&amp;/g, "&")
       .replace(/&#039;/g, "'")
       .replace(/&quot;/g, '"')
-      .replace(/\s*-\s*Google News.*/, "")
-      .replace(/\s*-\s*KFF Health News.*/, "")
-      .replace(/\s*\|\s*STAT.*/, "")
+      .replace(/\s*-\s*KFF Health News\s*$/, "")
+      .replace(/\s*\|\s*STAT\s*$/, "")
+      .replace(/\s*-\s*Health Affairs\s*$/, "")
+      .replace(/\s*-\s*Modern Healthcare\s*$/, "")
       .trim();
 
     return [{
