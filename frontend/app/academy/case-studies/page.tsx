@@ -32,15 +32,17 @@ export default async function CaseStudiesPage() {
 
   return (
     <div className="bg-white min-h-screen pb-20">
-      <div className="bg-slate-50 border-b border-gray-200 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs mb-2 block">Impact Library</span>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Transformation in Action</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">Real-world examples of how we apply policy, economics, and technology to solve systemic problems.</p>
+      <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">
+        <div className="bg-slate-50 border border-slate-200 rounded-2xl px-8 py-10 mb-10">
+          <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
+            Impact Library
+          </span>
+          <h1 className="text-4xl font-black text-slate-900 mb-3">Transformation in Action</h1>
+          <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">Real-world examples of how we apply policy, economics, and technology to solve systemic problems.</p>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {(cases as CaseStudy[]).map((study) => (
             <div key={study._id} className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow flex flex-col">

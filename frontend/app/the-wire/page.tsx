@@ -30,12 +30,15 @@ export default async function TheWirePage() {
   ]);
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
-      {/* Header */}
-      <div className="mb-8">
+    <div className="max-w-3xl mx-auto px-4 pt-8 pb-8">
+      {/* Hero */}
+      <div className="bg-slate-50 border border-slate-200 rounded-2xl px-6 py-8 mb-8">
+        <span className="inline-block text-xs font-black uppercase tracking-widest text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 mb-4">
+          Live Intelligence
+        </span>
         <div className="flex items-center gap-2 mb-2">
           <BoltIcon className="w-5 h-5 text-amber-500" />
-          <h1 className="text-2xl font-black tracking-tight text-slate-900 dark:text-slate-50">
+          <h1 className="text-4xl font-black tracking-tight text-slate-900 dark:text-slate-50">
             The Wire
           </h1>
           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-rose-100 dark:bg-rose-900/40 text-rose-600 dark:text-rose-400 text-[10px] font-black uppercase tracking-wider">
@@ -43,7 +46,7 @@ export default async function TheWirePage() {
             Live
           </span>
         </div>
-        <p className="text-sm text-slate-500 dark:text-slate-400">
+        <p className="text-slate-600 dark:text-slate-400">
           Real-time healthcare news aggregated from leading policy, regulatory, and clinical sources.
         </p>
       </div>

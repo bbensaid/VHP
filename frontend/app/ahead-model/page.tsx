@@ -127,24 +127,16 @@ export default function AheadModelPage() {
     <div className="bg-white font-sans text-slate-800 min-h-screen">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-indigo-700 text-white py-24 md:py-32">
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-emerald-600/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" />
+      <section className="relative bg-slate-950 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-linear-to-br from-indigo-900/30 via-slate-950 to-emerald-900/20 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-5xl mx-auto px-6 py-20 z-10">
           <div className="max-w-4xl">
             <div className="flex items-center gap-3 mb-6">
-              <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-emerald-400 border border-emerald-800 bg-emerald-900/40 px-4 py-1.5 rounded-full">
+              <span className="text-[10px] font-black uppercase tracking-widest text-emerald-400">
                 Federal Program
               </span>
-              <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-slate-400 border border-slate-700 bg-slate-800/60 px-4 py-1.5 rounded-full">
+              <span className="text-slate-500 text-sm">
                 CMS Innovation Center · CMMI
               </span>
             </div>

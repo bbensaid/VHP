@@ -17,7 +17,7 @@ export default function AdvisoryPage() {
         <div className="absolute inset-0 bg-linear-to-br from-fuchsia-900/30 via-slate-950 to-indigo-900/20 pointer-events-none" />
         <div className="container mx-auto px-4 md:px-8 max-w-6xl py-28 md:py-36 relative z-10">
           <div className="flex items-center gap-3 mb-6">
-            <span className="bg-fuchsia-600 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full">
+            <span className="text-[10px] font-black uppercase tracking-widest text-fuchsia-400">
               HTR Advisory
             </span>
             <span className="text-slate-400 text-sm">Burlington, VT · Washington, DC</span>

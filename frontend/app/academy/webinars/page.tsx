@@ -29,15 +29,17 @@ export default async function WebinarsPage() {
 
   return (
     <div className="bg-white min-h-screen pb-20">
-      <div className="bg-slate-50 border-b border-gray-200 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs mb-2 block">Live Intelligence</span>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Webinars & Roundtables</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">Join live discussions with global leaders. Q&A included in every session.</p>
+      <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">
+        <div className="bg-slate-50 border border-slate-200 rounded-2xl px-8 py-10 mb-10">
+          <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
+            Live Intelligence
+          </span>
+          <h1 className="text-4xl font-black text-slate-900 mb-3">Webinars &amp; Roundtables</h1>
+          <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">Join live discussions with global leaders. Q&amp;A included in every session.</p>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         {featured ? (
           <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-xl mb-16 flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-2/3">
