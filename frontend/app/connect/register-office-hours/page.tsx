@@ -2,7 +2,7 @@ import ConnectEarlyAccess from '@/components/connect/ConnectEarlyAccess'
 
 export const metadata = {
   title: 'Register for Office Hours | HTR Connect',
-  description: 'Register for HTR Connect expert office hours — monthly open-access sessions with HTR faculty and senior advisors across all Five Pillars.',
+  description: 'Register for HTR Connect expert office hours — monthly open-access sessions with HTR faculty and senior advisors across all Six Pillars.',
 }
 
 export default function RegisterOfficeHoursPage() {
@@ -10,7 +10,7 @@ export default function RegisterOfficeHoursPage() {
     <ConnectEarlyAccess
       icon="📅"
       title="Office Hours Registration"
-      subtitle="Reserve your spot in an upcoming HTR expert session. No agenda required — bring any question across the Five Pillars."
+      subtitle="Reserve your spot in an upcoming HTR expert session. No agenda required — bring any question across the Six Pillars."
       features={[
         {
           icon: '🎤',
@@ -30,7 +30,7 @@ export default function RegisterOfficeHoursPage() {
         {
           icon: '📋',
           title: 'Five-Pillar Schedule',
-          description: 'Six sessions monthly, each anchored to one of the Five Pillars (Policy, Economics, Technology, Clinical, Equity) plus one open cross-pillar session every other week.',
+          description: 'Six sessions monthly, each anchored to one of the Six Pillars (Policy, Economics, Technology, Clinical, Equity) plus one open cross-pillar session every other week.',
         },
       ]}
       steps={[

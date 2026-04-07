@@ -22,6 +22,7 @@ const FILTERS = [
   "Technology Pillar",
   "Clinical Pillar",
   "Equity Pillar",
+  "Operations Pillar",
   "Certifications Only",
 ];
 
@@ -35,6 +36,7 @@ function getFilterStyle(filter: string, isActive: boolean) {
       case "Technology Pillar": return `${base} bg-indigo-600 text-white border-indigo-600`;
       case "Clinical Pillar":   return `${base} bg-brand-clinical text-white border-brand-clinical`;
       case "Equity Pillar":     return `${base} bg-brand-equity text-white border-brand-equity`;
+      case "Operations Pillar": return `${base} bg-teal-600 text-white border-teal-600`;
       default:                  return `${base} bg-indigo-600 text-white border-indigo-600`;
     }
   }
@@ -43,7 +45,8 @@ function getFilterStyle(filter: string, isActive: boolean) {
     case "Economics Pillar":  return `${base} bg-white text-card-economics border-card-economics/30 hover:border-emerald-400 hover:bg-emerald-50`;
     case "Technology Pillar": return `${base} bg-white text-card-tech border-card-tech/30 hover:border-indigo-400 hover:bg-indigo-50`;
     case "Clinical Pillar":   return `${base} bg-white text-brand-clinical border-brand-clinical/30 hover:border-brand-clinical hover:bg-red-50`;
-    case "Equity Pillar":     return `${base} bg-white text-brand-equity border-brand-equity/30 hover:border-brand-equity hover:bg-amber-50`;
+    case "Equity Pillar":     return `${base} bg-white text-brand-equity border-brand-equity/30 hover:border-brand-equity hover:bg-violet-50`;
+    case "Operations Pillar": return `${base} bg-white text-teal-700 border-teal-300 hover:border-teal-500 hover:bg-teal-50`;
     default:                  return `${base} bg-white text-gray-600 border-gray-300 hover:border-gray-400 hover:bg-gray-50`;
   }
 }
@@ -56,6 +59,7 @@ function matchesFilter(course: Course, filter: string): boolean {
     case "Technology Pillar": return course.pillar === "Technology";
     case "Clinical Pillar":   return course.pillar === "Clinical";
     case "Equity Pillar":     return course.pillar === "Equity";
+    case "Operations Pillar": return course.pillar === "Operations";
     case "Certifications Only": return course.type === "CERTIFICATION";
     default:                  return true;
   }

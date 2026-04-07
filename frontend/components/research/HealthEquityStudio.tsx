@@ -1234,8 +1234,8 @@ function EquityICER() {
               </p>
               <p className="text-xs text-gray-400 mt-0.5">per QALY gained (unadjusted)</p>
             </div>
-            <div className="bg-orange-50 rounded-xl border border-orange-200 p-4">
-              <p className="text-xs text-orange-700 font-medium">Equity-Weighted ICER</p>
+            <div className="bg-violet-50 rounded-xl border border-violet-200 p-4">
+              <p className="text-xs text-violet-700 font-medium">Equity-Weighted ICER</p>
               <p className={`text-3xl font-extrabold mt-1 ${icerColor(Math.abs(results.equityICER))}`}>
                 {results.equityICER < 0 ? "Dominant" : fmtUSD(results.equityICER)}
               </p>

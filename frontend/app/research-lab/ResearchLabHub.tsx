@@ -92,8 +92,8 @@ const SECTIONS: Section[] = [
   {
     id: 'population-equity', icon: '👥', label: 'Population & Equity',
     tools: [
-      { id: 'population', icon: '🌍', label: 'Population Health Modeler', badge: 'Population Health', badgeCls: 'bg-amber-100 text-amber-700 border-amber-200', desc: 'Run Markov chain disease progression models for 5 conditions, simulate SIR epidemic dynamics, model preventable hospitalizations, and calculate intervention ROI.' },
-      { id: 'equity',     icon: '⚖️', label: 'Health Equity Studio',       badge: 'Health Equity',    badgeCls: 'bg-amber-100 text-amber-700 border-amber-200', desc: 'Analyze racial/ethnic disparities across 10 outcomes, map geographic access gaps, score SDOH burden, and compute equity-weighted ICER using the HEROI metric.' },
+      { id: 'population', icon: '🌍', label: 'Population Health Modeler', badge: 'Population Health', badgeCls: 'bg-violet-100 text-violet-700 border-violet-200', desc: 'Run Markov chain disease progression models for 5 conditions, simulate SIR epidemic dynamics, model preventable hospitalizations, and calculate intervention ROI.' },
+      { id: 'equity',     icon: '⚖️', label: 'Health Equity Studio',       badge: 'Health Equity',    badgeCls: 'bg-violet-100 text-violet-700 border-violet-200', desc: 'Analyze racial/ethnic disparities across 10 outcomes, map geographic access gaps, score SDOH burden, and compute equity-weighted ICER using the HEROI metric.' },
     ],
   },
   {

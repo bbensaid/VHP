@@ -71,7 +71,7 @@ export default function AcademyHub() {
             <p className="text-slate-600 text-sm leading-relaxed">
               Real-world analyses of what worked, what failed, and why — across APM implementations,
               state waiver programs, AI deployments, and equity initiatives. The Glossary provides
-              authoritative definitions across all five pillars.
+              authoritative definitions across all six pillars.
             </p>
           </div>
         </div>

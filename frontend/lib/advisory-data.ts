@@ -17,7 +17,7 @@ export interface PricingTier {
   highlight?: boolean;
 }
 
-export type Pillar = "policy" | "economics" | "technology" | "clinical" | "equity";
+export type Pillar = "policy" | "economics" | "technology" | "clinical" | "equity" | "operations";
 
 export interface AdvisoryService {
   id: string;
@@ -56,7 +56,8 @@ export const PILLAR_STYLES: Record<Pillar, { bg: string; text: string; border: s
   economics:  { bg: "bg-emerald-100",text: "text-emerald-700",border: "border-emerald-200",label: "Economics" },
   technology: { bg: "bg-indigo-100", text: "text-indigo-700", border: "border-indigo-200", label: "Technology" },
   clinical:   { bg: "bg-red-100",    text: "text-red-700",    border: "border-red-200",    label: "Clinical" },
-  equity:     { bg: "bg-amber-100",  text: "text-amber-700",  border: "border-amber-200",  label: "Equity" },
+  equity:     { bg: "bg-violet-100", text: "text-violet-700", border: "border-violet-200", label: "Equity" },
+  operations: { bg: "bg-teal-100",   text: "text-teal-700",   border: "border-teal-200",   label: "Operations" },
 };
 
 // ─── ADVISORY STATS BAR ──────────────────────────────────────────────────────
@@ -65,7 +66,7 @@ export const ADVISORY_STATS: AdvisoryStat[] = [
   { value: "$2.4B+",label: "Client Spend Advised" },
   { value: "8",     label: "Service Lines" },
   { value: "94%",   label: "Client Retention Rate" },
-  { value: "5",     label: "Pillars of Expertise" },
+  { value: "6",     label: "Pillars of Expertise" },
 ];
 
 // ─── CLIENT SEGMENTS ─────────────────────────────────────────────────────────

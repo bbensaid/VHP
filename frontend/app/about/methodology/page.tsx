@@ -23,6 +23,7 @@ const MetricDetail = ({
     Technology: { label: "Technology", bar: "bg-indigo-500",  text: "text-indigo-700",  bg: "bg-indigo-50",  border: "border-indigo-200" },
     Clinical:   { label: "Clinical",   bar: "bg-rose-500",    text: "text-rose-700",    bg: "bg-rose-50",    border: "border-rose-200" },
     Equity:     { label: "Equity",     bar: "bg-violet-500",  text: "text-violet-700",  bg: "bg-violet-50",  border: "border-violet-200" },
+    Operations: { label: "Operations", bar: "bg-teal-500",  text: "text-teal-700",  bg: "bg-teal-50",  border: "border-teal-200" },
   };
   const s = styles[pillar] ?? styles["Policy"];
 
@@ -113,7 +114,7 @@ function MethodologyPageInner() {
             <span className="text-indigo-400">Performance Index</span>
           </h1>
           <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
-            A proprietary composite metric — built across five pillars and fifteen sub-metrics — designed to provide a standardized, cross-dimensional measure of each state&rsquo;s healthcare system performance and readiness for transformation.
+            A proprietary composite metric — built across six pillars and eighteen sub-metrics — designed to provide a standardized, cross-dimensional measure of each state&rsquo;s healthcare system performance and readiness for transformation.
           </p>
         </div>
       </div>
@@ -127,11 +128,11 @@ function MethodologyPageInner() {
             <h2 className="text-2xl md:text-3xl font-black text-slate-900">Framework Overview</h2>
           </div>
           <p className="text-slate-600 leading-relaxed text-lg mb-6">
-            The HTR Performance Index was originally built on three pillars in 2021. In 2024, following a formal evidence review, we expanded the framework to five pillars — adding Clinical and Equity as standalone dimensions. The Index now reflects fifteen sub-metrics across those pillars, each normalized to a 0–100 scale where a higher score is always better.
+            The HTR Performance Index was originally built on three pillars in 2021. In 2024, following a formal evidence review, we expanded the framework to five pillars — adding Clinical and Equity as standalone dimensions. In 2026, we expanded to six pillars — adding Operations to capture the administrative and execution infrastructure that determines whether transformation actually lands. The Index now reflects eighteen sub-metrics across those pillars, each normalized to a 0–100 scale where a higher score is always better.
           </p>
           <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-6">
             <p className="text-indigo-900 font-semibold text-sm leading-relaxed">
-              <strong>Why five pillars?</strong> The original three-pillar model treated clinical effectiveness and equity as outputs of Policy, Economics, and Technology decisions. Five years of implementation data proved this assumption wrong. Clinical access patterns and equity failures operate as independent structural variables with their own measurement requirements. They are now tracked as first-class inputs, not derivative outcomes.
+              <strong>Why six pillars?</strong> The original three-pillar model treated clinical effectiveness, equity, and operational execution as outputs of Policy, Economics, and Technology decisions. Implementation data proved this wrong. Clinical access patterns, equity failures, and operational bottlenecks each operate as independent structural variables with their own measurement requirements. They are now tracked as first-class inputs, not derivative outcomes. Operations — covering revenue cycle performance, workforce readiness, and administrative cost burden — was added in 2026 after consistent evidence that well-designed transformations were failing at the execution layer.
             </p>
           </div>
         </section>
@@ -143,7 +144,7 @@ function MethodologyPageInner() {
             <h2 className="text-2xl md:text-3xl font-black text-slate-900">Input Data &amp; Sub-Metrics</h2>
           </div>
           <p className="text-slate-600 leading-relaxed mb-8">
-            Fifteen sub-metrics are calculated from primary government data sources — CMS, HRSA, FCC, CDC, and state-level filings — and normalized to a 0–100 scale. Each pillar contributes three metrics to the composite score.
+            Eighteen sub-metrics are calculated from primary government data sources — CMS, HRSA, FCC, CDC, HFMA, and state-level filings — and normalized to a 0–100 scale. Each pillar contributes three metrics to the composite score.
           </p>
           <div className="space-y-4">
             {/* Policy */}
@@ -241,6 +242,25 @@ function MethodologyPageInner() {
               description="Measures documented evidence of algorithmic bias in risk stratification tools deployed in the state, sourced from HHS Office for Civil Rights reports and peer-reviewed audits. Higher scores indicate lower documented bias."
               weight="0.05"
             />
+            {/* Operations */}
+            <MetricDetail
+              pillar="Operations"
+              metric="Administrative Cost Ratio"
+              description="Administrative expenditures as a percentage of total health spending in the state, benchmarked against national average. Lower administrative overhead relative to peer states scores higher — reflecting a leaner, more execution-ready system."
+              weight="0.05"
+            />
+            <MetricDetail
+              pillar="Operations"
+              metric="Revenue Cycle Performance Index"
+              description="Composite of clean claim submission rate, claims denial rate, and days in accounts receivable across the state's major health systems. Sources: CMS cost reports and HFMA benchmark data. Higher scores indicate lower friction in payer-provider payment workflows."
+              weight="0.05"
+            />
+            <MetricDetail
+              pillar="Operations"
+              metric="Workforce Operational Readiness"
+              description="Composite of clinical staff vacancy rates, turnover rates, and credentialing cycle times across key workforce categories. Sourced from HRSA workforce data and ACHE operational surveys. Higher scores indicate a more stable and administratively capable workforce."
+              weight="0.05"
+            />
           </div>
         </section>
 
@@ -275,34 +295,40 @@ function MethodologyPageInner() {
               <div className="flex-1">
                 <h3 className="font-bold text-slate-900 mb-2">Composite Performance Score</h3>
                 <p className="text-sm text-slate-600 mb-4">
-                  The final score is a weighted average of five pillar scores. Policy and Economics carry the greatest weight as the foundational structural drivers. Technology, Clinical, and Equity carry equal secondary weights reflecting their operational role:
+                  The final score is a weighted average of six pillar scores. Policy and Economics carry the greatest weight as the foundational structural drivers. Operations, Technology, and Clinical carry equal secondary weights. Equity carries a baseline weight scheduled to increase as data coverage improves:
                 </p>
                 <code className="block bg-slate-50 border border-slate-200 rounded-lg p-4 text-sm font-mono text-slate-800">
-                  Score = (Policy × 0.30) + (Economics × 0.30) + (Technology × 0.15) + (Clinical × 0.15) + (Equity × 0.10)
+                  Score = (Policy × 0.25) + (Economics × 0.25) + (Operations × 0.15) + (Technology × 0.10) + (Clinical × 0.15) + (Equity × 0.10)
                 </code>
                 <p className="text-xs text-slate-400 mt-3 italic">
-                  Note: Equity weight is scheduled for review in the 2027 Index version as SDOH and algorithmic bias data quality improves across states. We expect to increase Equity weighting to 0.15 as data coverage reaches ≥90% of states.
+                  Note: Operations weight was introduced at 0.15 in the 2026 Index version. Equity weight is scheduled for review in the 2027 Index version as SDOH and algorithmic bias data quality improves across states. We expect to increase Equity weighting to 0.15 as data coverage reaches ≥90% of states, with a corresponding reduction in Technology weighting.
                 </p>
               </div>
             </div>
           </div>
 
           {/* Pillar Weight Grid */}
-          <div className="grid md:grid-cols-5 gap-4 mb-10">
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
             <PillarBlock
-              pillar="Policy" weight="30%"
+              pillar="Policy" weight="25%"
               barColor="bg-sky-600"
               textColor="text-sky-700"
               metrics={["VBP Adoption", "Telehealth Policy", "Scope of Practice"]}
             />
             <PillarBlock
-              pillar="Economics" weight="30%"
+              pillar="Economics" weight="25%"
               barColor="bg-emerald-500"
               textColor="text-emerald-700"
               metrics={["Per-Capita Efficiency", "Workforce Availability", "Insurance Coverage"]}
             />
             <PillarBlock
-              pillar="Technology" weight="15%"
+              pillar="Operations" weight="15%"
+              barColor="bg-teal-500"
+              textColor="text-teal-700"
+              metrics={["Admin Cost Ratio", "Revenue Cycle Performance", "Workforce Readiness"]}
+            />
+            <PillarBlock
+              pillar="Technology" weight="10%"
               barColor="bg-indigo-500"
               textColor="text-indigo-700"
               metrics={["HIE Maturity", "Broadband Access", "EHR Adoption"]}
@@ -333,7 +359,7 @@ function MethodologyPageInner() {
           </p>
           <div className="space-y-3">
             {[
-              { range: "80–100", label: "Leading", desc: "National leaders with strong cross-pillar performance. States setting replication-worthy standards in at least three of the five dimensions.", borderColor: "border-emerald-500", bg: "bg-emerald-50", titleColor: "text-emerald-800", bodyColor: "text-emerald-700" },
+              { range: "80–100", label: "Leading", desc: "National leaders with strong cross-pillar performance. States setting replication-worthy standards in at least four of the six dimensions.", borderColor: "border-emerald-500", bg: "bg-emerald-50", titleColor: "text-emerald-800", bodyColor: "text-emerald-700" },
               { range: "70–79", label: "Improving", desc: "States with solid structural foundations and measurable positive momentum. Typically strong in Policy and Economics with Technology and Clinical gains in progress.", borderColor: "border-green-500", bg: "bg-green-50", titleColor: "text-green-800", bodyColor: "text-green-700" },
               { range: "60–69", label: "Stable", desc: "Mixed performance across pillars — typically strong in one or two dimensions and structurally lagging in others. At risk of slipping to At Risk without targeted intervention.", borderColor: "border-yellow-500", bg: "bg-yellow-50", titleColor: "text-yellow-800", bodyColor: "text-yellow-700" },
               { range: "< 60", label: "At Risk", desc: "States facing significant structural deficits across multiple pillars. Typically characterized by persistent equity gaps, workforce shortages, or operating margin crises that undermine cross-pillar gains.", borderColor: "border-red-500", bg: "bg-red-50", titleColor: "text-red-800", bodyColor: "text-red-700" },
@@ -365,6 +391,8 @@ function MethodologyPageInner() {
               { source: "HHS Office for Civil Rights", use: "Algorithmic bias documentation" },
               { source: "CMS Cost Reports", use: "Hospital operational viability metrics" },
               { source: "State Legislative Databases", use: "Telehealth policy, scope of practice law" },
+              { source: "HFMA Benchmark Data", use: "Revenue cycle performance, clean claim rates, days in AR" },
+              { source: "ACHE & MGMA Operational Surveys", use: "Workforce vacancy, turnover, and credentialing cycle times" },
             ].map((d) => (
               <div key={d.source} className="flex gap-3 p-4 bg-slate-50 border border-slate-200 rounded-xl">
                 <span className="text-indigo-600 font-black text-sm shrink-0">→</span>
@@ -381,7 +409,7 @@ function MethodologyPageInner() {
         <div className="bg-indigo-700 text-white rounded-2xl p-8 md:p-10 text-center">
           <h3 className="text-xl font-black mb-3">Explore the Performance Index</h3>
           <p className="text-indigo-100 text-sm mb-6">
-            See how every state scores across all five pillars — and drill into sub-metric detail.
+            See how every state scores across all six pillars — and drill into sub-metric detail.
           </p>
           <Link
             href="/dashboard"

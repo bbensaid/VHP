@@ -99,15 +99,32 @@ const pillars = [
     id: "equity",
     label: "Equity",
     href: "/equity",
-    color: "amber",
-    dot: "bg-amber-500",
-    accent: "text-amber-700",
-    hoverBg: "hover:bg-amber-50",
+    color: "violet",
+    dot: "bg-violet-500",
+    accent: "text-violet-700",
+    hoverBg: "hover:bg-violet-50",
     desc: "SDOH, algorithmic bias & access disparity",
     items: [
       { href: "/equity/sdoh", label: "SDOH Integration", desc: "Social drivers embedded in care models" },
       { href: "/equity/bias", label: "Algorithmic Bias", desc: "Fairness audits & model accountability" },
       { href: "/equity/access", label: "Access Disparity", desc: "Rural, racial & economic access gaps" },
+    ],
+  },
+  {
+    id: "operations",
+    label: "Operations",
+    href: "/operations",
+    color: "teal",
+    dot: "bg-teal-500",
+    accent: "text-teal-700",
+    hoverBg: "hover:bg-teal-50",
+    desc: "Revenue cycle, workforce, compliance & supply chain",
+    items: [
+      { href: "/operations/revenue-cycle", label: "Revenue Cycle Management", desc: "Billing, coding, claims & denial management" },
+      { href: "/operations/workforce", label: "Workforce & Human Capital", desc: "Staffing, credentialing & labor strategy" },
+      { href: "/operations/compliance", label: "Quality, Compliance & Risk", desc: "Accreditation, HIPAA & patient safety" },
+      { href: "/operations/supply-chain", label: "Supply Chain & Infrastructure", desc: "Procurement, logistics & facilities" },
+      { href: "/operations/payer-network", label: "Payer & Network Operations", desc: "Utilization management & network contracting" },
     ],
   },
 ];
@@ -119,13 +136,13 @@ type MegaMenuType = "intelligence" | "learn" | "analyze" | "states" | "advise" |
 function IntelligencePanel({ onClose }: { onClose: () => void }) {
   return (
     <div className="max-w-screen-xl mx-auto px-6 py-6">
-      <div className="grid grid-cols-5 gap-8">
+      <div className="grid grid-cols-6 gap-6">
         {pillars.map((p) => (
           <div key={p.id}>
             {/* Section header — same style as LEARN/ANALYZE/ADVISE */}
             <div className="flex items-center gap-1.5 mb-3">
               <span className={`w-2 h-2 rounded-full ${p.dot} shrink-0`} />
-              <p className="text-xs font-black uppercase tracking-widest text-slate-400">
+              <p className={`text-xs font-black uppercase tracking-widest ${p.accent}`}>
                 {p.label}
               </p>
             </div>
@@ -325,7 +342,7 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
                 HTR Simulator
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
-                5-pillar transformation scenario modeler
+                6-pillar transformation scenario modeler
               </span>
             </Link>
             <Link
@@ -338,6 +355,30 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
                 Health Transformation Index metrics
+              </span>
+            </Link>
+            <Link
+              href="/transformation-friction-index"
+              onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
+            >
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
+                Friction Index
+              </span>
+              <span className="text-xs text-slate-400 mt-0.5">
+                Policy complexity vs. operational readiness score
+              </span>
+            </Link>
+            <Link
+              href="/impact-simulation"
+              onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
+            >
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
+                Impact Simulation
+              </span>
+              <span className="text-xs text-slate-400 mt-0.5">
+                Cross-pillar scenario modeling before you spend
               </span>
             </Link>
           </div>
@@ -666,9 +707,9 @@ const Header = () => {
   };
 
   const megaMenuItems: { type: MegaMenuType; label: string; activeCheck: string }[] = [
-    { type: "intelligence", label: "INTELLIGENCE", activeCheck: "/policy,/economics,/technology,/clinical,/equity" },
     { type: "learn", label: "LEARN", activeCheck: "/academy" },
     { type: "analyze", label: "ANALYZE & TOOLS", activeCheck: "/research-lab,/htr-simulator,/hti-dashboard,/trending-topics,/multimedia,/the-wire,/investment-tracker" },
+    { type: "intelligence", label: "INTELLIGENCE", activeCheck: "/policy,/economics,/technology,/clinical,/equity" },
     { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/california-calaim,/dashboard,/ahead-model" },
     { type: "advise", label: "ADVISORY & SERVICES", activeCheck: "/advisory,/connect-hub,/connect,/community" },
   ];
@@ -888,15 +929,6 @@ const Header = () => {
             {/* Mobile section headers */}
             {[
               {
-                key: "intelligence",
-                label: "INTELLIGENCE",
-                children: pillars.map((p) => ({
-                  label: p.label,
-                  href: p.href,
-                  sub: p.items,
-                })),
-              },
-              {
                 key: "learn",
                 label: "LEARN",
                 children: [
@@ -921,6 +953,15 @@ const Header = () => {
                   { label: "Trending Topics", href: "/trending-topics", sub: [] },
                   { label: "Multimedia", href: "/multimedia", sub: [] },
                 ],
+              },
+              {
+                key: "intelligence",
+                label: "INTELLIGENCE",
+                children: pillars.map((p) => ({
+                  label: p.label,
+                  href: p.href,
+                  sub: p.items,
+                })),
               },
               {
                 key: "states",

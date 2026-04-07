@@ -8,13 +8,14 @@ interface ArticleEngineProps {
   pillar?: string;
 }
 
-// Pillar → color mapping (matches the 5-pillar system)
+// Pillar → color mapping (matches the 6-pillar system)
 const pillarStyles: Record<string, { text: string; bg: string; border: string; dot: string; href: string }> = {
-  Policy:     { text: "text-sky-700",     bg: "bg-sky-50",     border: "border-sky-200",   dot: "bg-sky-600",    href: "/policy"     },
-  Economics:  { text: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200",dot: "bg-emerald-500", href: "/economics"   },
-  Technology: { text: "text-indigo-700",  bg: "bg-indigo-50",  border: "border-indigo-200", dot: "bg-indigo-500",  href: "/technology"  },
-  Clinical:   { text: "text-rose-700",    bg: "bg-rose-50",    border: "border-rose-200",   dot: "bg-rose-500",    href: "/clinical"    },
-  Equity:     { text: "text-violet-700",  bg: "bg-violet-50",  border: "border-violet-200", dot: "bg-violet-500",  href: "/equity"      },
+  Policy:     { text: "text-sky-700",     bg: "bg-sky-50",     border: "border-sky-200",    dot: "bg-sky-600",     href: "/policy"      },
+  Economics:  { text: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200", dot: "bg-emerald-500", href: "/economics"   },
+  Technology: { text: "text-indigo-700",  bg: "bg-indigo-50",  border: "border-indigo-200",  dot: "bg-indigo-500",  href: "/technology"  },
+  Clinical:   { text: "text-rose-700",    bg: "bg-rose-50",    border: "border-rose-200",    dot: "bg-rose-500",    href: "/clinical"    },
+  Equity:     { text: "text-violet-700",  bg: "bg-violet-50",  border: "border-violet-200",  dot: "bg-violet-500",  href: "/equity"      },
+  Operations: { text: "text-teal-700",    bg: "bg-teal-50",    border: "border-teal-200",    dot: "bg-teal-500",    href: "/operations"  },
 };
 
 const impactColors: Record<string, string> = {

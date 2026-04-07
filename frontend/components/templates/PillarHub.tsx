@@ -73,8 +73,8 @@ export function PillarHub({
       border: "border-brand-equity",
       indicator: "bg-brand-equity",
       hoverText: "group-hover:text-brand-equity",
-      lightBg: "bg-orange-50",
-      hoverCard: "hover:border-orange-400 hover:bg-orange-50/80",
+      lightBg: "bg-violet-50",
+      hoverCard: "hover:border-violet-400 hover:bg-violet-50/80",
     },
   };
 
