@@ -29,7 +29,8 @@ const PILLAR_PREFIXES: Record<string, string> = {
   "/economics": "Economics",
   "/technology":"Technology",
   "/clinical":  "Clinical",
-  "/equity":    "Equity",
+  "/equity":      "Equity",
+  "/operations":  "Operations",
 };
 
 function getPillarFromPath(path: string): string | undefined {

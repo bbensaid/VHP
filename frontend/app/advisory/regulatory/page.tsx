@@ -20,7 +20,7 @@ export default function RegulatoryAdvisoryPage() {
             <span className="bg-indigo-600 text-indigo-100 border border-indigo-500 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
               HTR Advisory
             </span>
-            <span className="text-indigo-200 text-xs">Policy + All 5 Pillars</span>
+            <span className="text-indigo-200 text-xs">Policy + All 6 Pillars</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
             Regulatory & Legislative <span className="text-fuchsia-400">Advisory</span>
@@ -196,7 +196,7 @@ export default function RegulatoryAdvisoryPage() {
         <div className="bg-linear-to-r from-fuchsia-600 to-slate-800 text-white rounded-2xl p-10 md:p-14 text-center shadow-2xl">
           <h2 className="text-3xl font-black mb-4">Shape Policy That Works in Practice</h2>
           <p className="text-lg text-fuchsia-100 mb-8 max-w-2xl mx-auto">
-            Good policy is grounded in clinical reality, economic feasibility, and equity impact across all five pillars. HTR Advisory brings all three lenses to every regulatory engagement.
+            Good policy is grounded in clinical reality, economic feasibility, and equity impact across all six pillars. HTR Advisory brings all three lenses to every regulatory engagement.
           </p>
           <Link
             href="/advisory/contact"

@@ -4,7 +4,7 @@ import { ADVISORY_SERVICES, PILLAR_STYLES } from "@/lib/advisory-data";
 export const metadata = {
   title: "HTR Advisory | Custom Research & Analysis",
   description:
-    "Bespoke healthcare intelligence across all 5 pillars. Market feasibility studies, policy impact modeling, competitive landscape analysis, workforce research, technology vendor evaluation, and equity needs assessments.",
+    "Bespoke healthcare intelligence across all 6 pillars. Market feasibility studies, policy impact modeling, competitive landscape analysis, workforce research, technology vendor evaluation, and equity needs assessments.",
 };
 
 const service = ADVISORY_SERVICES.find((s) => s.id === "research")!;
@@ -56,7 +56,7 @@ const CAPABILITIES = [
     pillar: "clinical" as const,
     icon: "🏥",
     title: "Clinical Program ROI Analysis",
-    description: "Measure and project the financial and clinical return of specific clinical programs — from Hospital-at-Home to precision medicine — using HTR's 5-pillar impact framework.",
+    description: "Measure and project the financial and clinical return of specific clinical programs — from Hospital-at-Home to precision medicine — using HTR's 6-pillar impact framework.",
     examples: ["Hospital-at-Home program financial model", "Precision medicine program ROI", "Virtual care expansion business case", "Chronic disease management program analysis"],
   },
   {
@@ -79,13 +79,13 @@ export default function ResearchPage() {
             <span className="bg-rose-100 text-rose-700 border border-rose-200 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
               Advisory Services
             </span>
-            <span className="text-slate-400 text-xs">All 5 Pillars</span>
+            <span className="text-slate-400 text-xs">All 6 Pillars</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6">
             Custom Research & <span className="text-rose-600">Analysis</span>
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl leading-relaxed mb-8">
-            We deploy the HTR 5-pillar intelligence framework to answer specific strategic questions for health systems, investors, government agencies, and academic institutions. Commission bespoke analysis on any healthcare question — from &quot;The Economics of CRISPR in Rural Hospitals&quot; to &quot;State-Level Telehealth Policy Forecasts.&quot;
+            We deploy the HTR 6-pillar intelligence framework to answer specific strategic questions for health systems, investors, government agencies, and academic institutions. Commission bespoke analysis on any healthcare question — from &quot;The Economics of CRISPR in Rural Hospitals&quot; to &quot;State-Level Telehealth Policy Forecasts.&quot;
           </p>
           <div className="flex flex-wrap gap-2">
             {service.pillars.map((p) => (
@@ -152,11 +152,11 @@ export default function ResearchPage() {
             <div className="grid md:grid-cols-3 gap-6">
               <div>
                 <div className="text-rose-400 font-bold mb-2">Proprietary Data</div>
-                <p className="text-indigo-100 text-sm leading-relaxed">Access to HTR&apos;s 5-pillar intelligence database, CMS open data, state all-payer claims, HFMA peer benchmarks, and curated peer-reviewed literature.</p>
+                <p className="text-indigo-100 text-sm leading-relaxed">Access to HTR&apos;s 6-pillar intelligence database, CMS open data, state all-payer claims, HFMA peer benchmarks, and curated peer-reviewed literature.</p>
               </div>
               <div>
-                <div className="text-rose-400 font-bold mb-2">5-Pillar Framework</div>
-                <p className="text-indigo-100 text-sm leading-relaxed">Every research question is analyzed through Policy, Economics, Technology, Clinical, and Equity lenses — not just the single dimension the client originally requested.</p>
+                <div className="text-rose-400 font-bold mb-2">6-Pillar Framework</div>
+                <p className="text-indigo-100 text-sm leading-relaxed">Every research question is analyzed through Policy, Economics, Technology, Clinical, Equity, and Operations lenses — not just the single dimension the client originally requested.</p>
               </div>
               <div>
                 <div className="text-rose-400 font-bold mb-2">Non-Partisan Analysis</div>

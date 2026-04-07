@@ -5,7 +5,7 @@ import { ADVISORY_SERVICES, ADVISORY_STATS, CLIENT_SEGMENTS, PILLAR_STYLES } fro
 export const metadata = {
   title: "HTR Advisory | Healthcare Strategy Consulting",
   description:
-    "World-class healthcare advisory services across all 5 pillars: Policy, Economics, Technology, Clinical, and Equity. Strategic consulting, IT project advisory, financial auditing, regulatory counsel, and executive training.",
+    "World-class healthcare advisory services across all 6 pillars: Policy, Economics, Technology, Clinical, Equity, and Operations. Strategic consulting, IT project advisory, financial auditing, regulatory counsel, and executive training.",
 };
 
 export default function AdvisoryPage() {
@@ -26,7 +26,7 @@ export default function AdvisoryPage() {
             Healthcare Strategy at Every Level of the Enterprise
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl leading-relaxed mb-4">
-            The convergence of <strong className="text-sky-400">Policy</strong>, <strong className="text-emerald-400">Economics</strong>, <strong className="text-indigo-400">Technology</strong>, <strong className="text-red-400">Clinical</strong>, and <strong className="text-amber-400">Equity</strong> creates complexity that generalist consultants cannot navigate.
+            The convergence of <strong className="text-sky-400">Policy</strong>, <strong className="text-emerald-400">Economics</strong>, <strong className="text-indigo-400">Technology</strong>, <strong className="text-red-400">Clinical</strong>, and <strong className="text-violet-400">Equity</strong> creates complexity that generalist consultants cannot navigate.
           </p>
           <p className="text-xl text-slate-300 max-w-3xl leading-relaxed mb-10">
             <strong className="text-white">HTR Advisory</strong> deploys cross-disciplinary expertise grounded in <em>daily intelligence research</em> — not periodic benchmarks. We compete with McKinsey, Deloitte, and Oliver Wyman on insight quality. We beat them on speed, independence, and depth of domain knowledge.
@@ -48,11 +48,11 @@ export default function AdvisoryPage() {
         </div>
       </div>
 
-      {/* ── FIVE PILLARS BAND ─────────────────────────────────────────────── */}
+      {/* ── SIX PILLARS BAND ─────────────────────────────────────────────── */}
       <div className="bg-indigo-700 border-b border-indigo-800">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl py-4">
           <div className="flex flex-wrap items-center gap-2 justify-center md:justify-start">
-            <span className="text-indigo-200 text-xs font-bold uppercase tracking-widest mr-3">5 Pillar Framework:</span>
+            <span className="text-indigo-200 text-xs font-bold uppercase tracking-widest mr-3">6 Pillar Framework:</span>
             {(Object.entries(PILLAR_STYLES) as [keyof typeof PILLAR_STYLES, typeof PILLAR_STYLES[keyof typeof PILLAR_STYLES]][]).map(([key, styles]) => (
               <span key={key} className={`text-xs font-bold px-3 py-1 rounded-full ${styles.bg} ${styles.text} ${styles.border} border`}>
                 {styles.label}
@@ -82,7 +82,7 @@ export default function AdvisoryPage() {
           <span className="text-xs font-black text-fuchsia-600 uppercase tracking-widest block mb-3">Our Services</span>
           <h2 className="text-4xl font-black text-slate-900 mb-4">Eight Practice Areas. One Integrated Framework.</h2>
           <p className="text-xl text-slate-500 max-w-3xl mx-auto">
-            Every HTR Advisory engagement draws from the full 5-pillar framework — because healthcare problems never respect disciplinary boundaries.
+            Every HTR Advisory engagement draws from the full 6-pillar framework — because healthcare problems never respect disciplinary boundaries.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -158,13 +158,13 @@ export default function AdvisoryPage() {
         </div>
       </div>
 
-      {/* ── THE 5-PILLAR ADVANTAGE ────────────────────────────────────────── */}
+      {/* ── THE 6-PILLAR ADVANTAGE ────────────────────────────────────────── */}
       <div className="bg-slate-50 py-20 border-y border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl">
           <div className="text-center mb-14">
-            <h2 className="text-4xl font-black text-slate-900 mb-4">The HTR 5-Pillar Advantage</h2>
+            <h2 className="text-4xl font-black text-slate-900 mb-4">The HTR 6-Pillar Advantage</h2>
             <p className="text-xl text-slate-500 max-w-3xl mx-auto">
-              Every recommendation we make is stress-tested against all five dimensions of healthcare transformation. Siloed expertise creates blind spots. We eliminate them.
+              Every recommendation we make is stress-tested against all six dimensions of healthcare transformation. Siloed expertise creates blind spots. We eliminate them.
             </p>
           </div>
           <div className="grid md:grid-cols-5 gap-6">

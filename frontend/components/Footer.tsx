@@ -51,11 +51,23 @@ const pillars = [
   {
     label: "Equity",
     href: "/equity",
-    color: "hover:text-amber-400",
+    color: "hover:text-violet-400",
     sub: [
       { label: "SDOH Integration", href: "/equity/sdoh" },
       { label: "Algorithmic Bias", href: "/equity/bias" },
       { label: "Access Disparity", href: "/equity/access" },
+    ],
+  },
+  {
+    label: "Operations",
+    href: "/operations",
+    color: "hover:text-teal-400",
+    sub: [
+      { label: "Revenue Cycle Management", href: "/operations/revenue-cycle" },
+      { label: "Workforce & Human Capital", href: "/operations/workforce" },
+      { label: "Quality, Compliance & Risk", href: "/operations/compliance" },
+      { label: "Supply Chain & Infrastructure", href: "/operations/supply-chain" },
+      { label: "Payer & Network Operations", href: "/operations/payer-network" },
     ],
   },
 ];
@@ -95,7 +107,7 @@ const Footer: React.FC = () => {
               <Logo />
             </Link>
             <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-6 max-w-xs">
-              The cross-disciplinary intelligence platform for health system transformation. Five pillars. Fifty states. Zero agenda.
+              The cross-disciplinary intelligence platform for health system transformation. Six pillars. Fifty states. Zero agenda.
             </p>
             {/* Social icons */}
             <div className="flex gap-3">
@@ -140,7 +152,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Five Pillars Grid */}
+        {/* Six Pillars Grid */}
         <div className="mb-12 pb-12 border-b border-slate-200 dark:border-slate-700">
           <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 dark:text-slate-400 mb-6">
             Intelligence Pillars

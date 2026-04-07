@@ -103,6 +103,22 @@ const PILLARS = [
       "Patient experience and satisfaction",
     ],
   },
+  {
+    id: "operations",
+    label: "Operational Readiness",
+    color: "teal",
+    icon: <Square3Stack3DIcon className="w-6 h-6" />,
+    tagline: "Revenue Cycle, Workforce & Administrative Infrastructure",
+    description:
+      "Assesses whether the administrative and operational infrastructure of participating institutions can actually execute the proposed transformation. A strategy that outpaces operational capacity will stall — regardless of how strong it scores on policy, financial, or clinical dimensions.",
+    dimensions: [
+      "Revenue cycle readiness for new payment models",
+      "Workforce staffing levels, vacancy rates, and credentialing capacity",
+      "Compliance and accreditation infrastructure",
+      "Supply chain resilience and procurement flexibility",
+      "Payer-provider administrative friction and prior auth burden",
+    ],
+  },
 ];
 
 // ─── Use cases ────────────────────────────────────────────────────────────────
@@ -117,13 +133,13 @@ const USE_CASES = [
     status: "live",
     description:
       "Models the 18+ recommendations from the Oliver Wyman Report for restructuring Vermont's hospital network — including Centers of Excellence consolidation, global budgeting, telehealth expansion, and rural access preservation.",
-    pillars: ["policy", "technology", "financial", "equity", "clinical"],
+    pillars: ["policy", "technology", "financial", "equity", "clinical", "operations"],
     href: "/vermont-act-167/simulator",
     color: "violet",
     stats: [
       { label: "Hospitals Modeled", value: "14" },
       { label: "Recommendations", value: "18+" },
-      { label: "Pillars Scored", value: "5" },
+      { label: "Pillars Scored", value: "6" },
     ],
   },
   {
@@ -185,19 +201,21 @@ const USE_CASES = [
 // ─── Color helpers ─────────────────────────────────────────────────────────────
 
 const pillarColorMap: Record<string, string> = {
-  violet: "bg-violet-50 text-violet-700 border-violet-200",
-  blue:   "bg-blue-50 text-blue-700 border-blue-200",
-  emerald:"bg-emerald-50 text-emerald-700 border-emerald-200",
-  rose:   "bg-rose-50 text-rose-700 border-rose-200",
-  amber:  "bg-amber-50 text-amber-700 border-amber-200",
+  violet:  "bg-violet-50 text-violet-700 border-violet-200",
+  blue:    "bg-blue-50 text-blue-700 border-blue-200",
+  emerald: "bg-emerald-50 text-emerald-700 border-emerald-200",
+  rose:    "bg-rose-50 text-rose-700 border-rose-200",
+  amber:   "bg-amber-50 text-amber-700 border-amber-200",
+  teal:    "bg-teal-50 text-teal-700 border-teal-200",
 };
 
 const cardAccentMap: Record<string, string> = {
-  violet: "border-l-violet-400 bg-violet-50/30",
-  blue:   "border-l-blue-400 bg-blue-50/30",
-  emerald:"border-l-emerald-400 bg-emerald-50/30",
-  rose:   "border-l-rose-400 bg-rose-50/30",
-  amber:  "border-l-amber-400 bg-amber-50/30",
+  violet:  "border-l-violet-400 bg-violet-50/30",
+  blue:    "border-l-blue-400 bg-blue-50/30",
+  emerald: "border-l-emerald-400 bg-emerald-50/30",
+  rose:    "border-l-rose-400 bg-rose-50/30",
+  amber:   "border-l-amber-400 bg-amber-50/30",
+  teal:    "border-l-teal-400 bg-teal-50/30",
 };
 
 const pillarsById: Record<string, typeof PILLARS[0]> = Object.fromEntries(
@@ -221,7 +239,7 @@ export default function HTRSimulatorPage() {
           </h1>
           <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
             Model the multi-pillar impact of any combination of healthcare transformation decisions
-            before implementation — across policy, technology, financial, equity, and clinical dimensions.
+            before implementation — across policy, technology, financial, equity, clinical, and operational dimensions.
           </p>
           <div className="mt-8">
             <Link
@@ -249,7 +267,7 @@ export default function HTRSimulatorPage() {
               {
                 icon: <BeakerIcon className="w-5 h-5" />,
                 title: "Scenario Modeling",
-                body: "Build custom transformation scenarios by selecting any combination of policy recommendations. The simulator instantly scores the combined impact across all five pillars.",
+                body: "Build custom transformation scenarios by selecting any combination of policy recommendations. The simulator instantly scores the combined impact across all six pillars.",
               },
               {
                 icon: <CurrencyDollarIcon className="w-5 h-5" />,
@@ -290,14 +308,14 @@ export default function HTRSimulatorPage() {
           </div>
         </section>
 
-        {/* 5-Pillar Framework */}
+        {/* 6-Pillar Framework */}
         <section>
           <div className="flex items-center gap-3 mb-2">
             <Square3Stack3DIcon className="w-6 h-6 text-violet-600" />
-            <h2 className="text-2xl font-black text-slate-900">The 5-Pillar Scoring Framework</h2>
+            <h2 className="text-2xl font-black text-slate-900">The 6-Pillar Scoring Framework</h2>
           </div>
           <p className="text-slate-500 mb-8 max-w-2xl">
-            Every transformation scenario is evaluated across five independent pillars. Each pillar
+            Every transformation scenario is evaluated across six independent pillars. Each pillar
             receives a score from 0–100 based on the recommendations selected, their implementation
             complexity, and expected impact.
           </p>
@@ -372,7 +390,7 @@ export default function HTRSimulatorPage() {
               {
                 step: "01",
                 title: "Recommendation Scoring",
-                body: "Each recommendation is pre-scored across all five pillars by domain experts. Scores reflect expected impact magnitude, implementation complexity, and risk — anchored to published evidence and comparable transformation programs.",
+                body: "Each recommendation is pre-scored across all six pillars by domain experts. Scores reflect expected impact magnitude, implementation complexity, and risk — anchored to published evidence and comparable transformation programs.",
                 color: "violet",
               },
               {

@@ -2,7 +2,7 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "google.geminicodeassist",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "workbench.preferredDarkColorTheme": "Default Light Modern",
+  "workbench.preferredDarkColorTheme": "Light Modern",
   "workbench.preferredHighContrastColorTheme": "Visual Studio Light",
   "geminicodeassist.agentYoloMode": true,
   "geminicodeassist.agentDebugMode": true,

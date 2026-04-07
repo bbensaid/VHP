@@ -4,7 +4,7 @@ import { ADVISORY_SERVICES, PILLAR_STYLES } from "@/lib/advisory-data";
 export const metadata = {
   title: "Training & Executive Education | HTR Advisory",
   description:
-    "Healthcare-specific professional development across all 5 pillars. From Health IT PM fundamentals to AI leadership frameworks, revenue cycle excellence, and regulatory literacy for executives.",
+    "Healthcare-specific professional development across all 6 pillars. From Health IT PM fundamentals to AI leadership frameworks, revenue cycle excellence, and regulatory literacy for executives.",
 };
 
 const service = ADVISORY_SERVICES.find((s) => s.id === "training")!;
@@ -70,8 +70,8 @@ const PROGRAMS = [
     title: "Custom Executive Curriculum",
     duration: "Tailored",
     audience: "Leadership Teams, Board Members, Any Audience",
-    pillars: ["policy" as const, "economics" as const, "technology" as const, "clinical" as const, "equity" as const],
-    description: "We design bespoke education programs combining modules from across all five pillars, tailored to your organization's specific challenges, strategic priorities, and audience level.",
+    pillars: ["policy" as const, "economics" as const, "technology" as const, "clinical" as const, "equity" as const, "operations" as const],
+    description: "We design bespoke education programs combining modules from across all six pillars, tailored to your organization's specific challenges, strategic priorities, and audience level.",
     topics: ["Fully customized to your agenda", "Combines any program topics", "Real case studies from your context", "Pre/post assessment tools", "Executive coaching integration", "Multi-session cohort design available"],
   },
 ];
@@ -87,13 +87,13 @@ export default function TrainingPage() {
             <span className="bg-purple-100 text-purple-700 border border-purple-200 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
               HTR Advisory
             </span>
-            <span className="text-slate-400 text-xs">All 5 Pillars</span>
+            <span className="text-slate-400 text-xs">All 6 Pillars</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
             Training & Executive <span className="text-purple-600">Education</span>
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl leading-relaxed mb-8">
-            Healthcare-specific professional development that bridges the gap between policy awareness and operational execution. Built on the same frameworks we use in live engagements. Taught by <strong>practitioners, not academics</strong> — across all five pillars.
+            Healthcare-specific professional development that bridges the gap between policy awareness and operational execution. Built on the same frameworks we use in live engagements. Taught by <strong>practitioners, not academics</strong> — across all six pillars.
           </p>
           <div className="flex flex-wrap gap-3">
             {service.clientTypes.map((ct) => (

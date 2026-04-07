@@ -73,11 +73,22 @@ const pillars = [
   },
   {
     id: "equity", label: "Equity", href: "/equity",
-    dot: "bg-amber-500", accent: "text-amber-700", rail: "border-l-amber-400",
+    dot: "bg-violet-500", accent: "text-violet-700", rail: "border-l-violet-400",
     items: [
       { href: "/equity/sdoh", label: "SDOH Integration" },
       { href: "/equity/bias", label: "Algorithmic Bias" },
       { href: "/equity/access", label: "Access Disparity" },
+    ],
+  },
+  {
+    id: "operations", label: "Operations", href: "/operations",
+    dot: "bg-teal-500", accent: "text-teal-700", rail: "border-l-teal-400",
+    items: [
+      { href: "/operations/revenue-cycle", label: "Revenue Cycle Management" },
+      { href: "/operations/workforce", label: "Workforce & Human Capital" },
+      { href: "/operations/compliance", label: "Quality, Compliance & Risk" },
+      { href: "/operations/supply-chain", label: "Supply Chain & Infrastructure" },
+      { href: "/operations/payer-network", label: "Payer & Network Operations" },
     ],
   },
 ];
@@ -107,18 +118,10 @@ type Section = {
 
 const SECTIONS: Section[] = [
   {
-    id: "intelligence", label: "Intelligence",
-    icon: LightBulbIcon,
-    headerColor: "text-slate-600", headerBg: "bg-slate-100", collapsedBg: "bg-slate-50",
-    borderAccent: "border-l-slate-500", hoverBg: "hover:bg-slate-100",
-    divideColor: "divide-slate-100", activeItemBg: "bg-slate-100",
-    isPillars: true,
-  },
-  {
     id: "learn", label: "Learn",
     icon: AcademicCapIcon,
     headerColor: "text-sky-700", headerBg: "bg-sky-100", collapsedBg: "bg-sky-50/70",
-    borderAccent: "border-l-sky-500", hoverBg: "hover:bg-sky-100",
+    borderAccent: "border-sky-500", hoverBg: "hover:bg-sky-100",
     divideColor: "divide-sky-100", activeItemBg: "bg-sky-100",
     items: [
       { href: "/academy/personalized-learning", label: "Personalized Learning", icon: SparklesIcon },
@@ -134,7 +137,7 @@ const SECTIONS: Section[] = [
     id: "analyze", label: "Analyze & Tools",
     icon: BeakerIcon,
     headerColor: "text-amber-700", headerBg: "bg-amber-100", collapsedBg: "bg-amber-50/70",
-    borderAccent: "border-l-amber-500", hoverBg: "hover:bg-amber-100",
+    borderAccent: "border-amber-500", hoverBg: "hover:bg-amber-100",
     divideColor: "divide-amber-100", activeItemBg: "bg-amber-100",
     items: [
       { href: "/research-lab/interoperability",    label: "Interoperability & Risk",   icon: BeakerIcon },
@@ -147,15 +150,25 @@ const SECTIONS: Section[] = [
       { href: "/hti-dashboard",                    label: "HTI Dashboard",             icon: DocumentTextIcon },
       { href: "/the-wire",                          label: "The Wire",                  icon: BoltIcon },
       { href: "/investment-tracker",               label: "Investment Tracker",         icon: BanknotesIcon },
+      { href: "/transformation-friction-index",    label: "Friction Index",             icon: BeakerIcon },
+      { href: "/impact-simulation",                label: "Impact Simulation",          icon: SparklesIcon },
       { href: "/multimedia",                       label: "Multimedia",                icon: FilmIcon },
       { href: "/trending-topics",                  label: "Trending Topics",           icon: ArrowTrendingUpIcon },
     ],
   },
   {
+    id: "intelligence", label: "Intelligence",
+    icon: LightBulbIcon,
+    headerColor: "text-slate-600", headerBg: "bg-slate-100", collapsedBg: "bg-slate-50",
+    borderAccent: "border-slate-500", hoverBg: "hover:bg-slate-100",
+    divideColor: "divide-slate-100", activeItemBg: "bg-slate-100",
+    isPillars: true,
+  },
+  {
     id: "states", label: "States & Programs",
     icon: MapPinIcon,
     headerColor: "text-rose-700", headerBg: "bg-rose-100", collapsedBg: "bg-rose-50/70",
-    borderAccent: "border-l-rose-500", hoverBg: "hover:bg-rose-100",
+    borderAccent: "border-rose-500", hoverBg: "hover:bg-rose-100",
     divideColor: "divide-rose-100", activeItemBg: "bg-rose-100",
     items: [
       { href: "/vermont-act-167",   label: "Vermont Act 167",    icon: MapPinIcon },
@@ -169,7 +182,7 @@ const SECTIONS: Section[] = [
     id: "advisory", label: "Advisory & Services",
     icon: BriefcaseIcon,
     headerColor: "text-indigo-700", headerBg: "bg-indigo-100", collapsedBg: "bg-indigo-50/70",
-    borderAccent: "border-l-indigo-500", hoverBg: "hover:bg-indigo-100",
+    borderAccent: "border-indigo-500", hoverBg: "hover:bg-indigo-100",
     divideColor: "divide-indigo-100", activeItemBg: "bg-indigo-100",
     items: [
       { href: "/advisory",                    label: "Advisory Hub",          icon: BriefcaseIcon },
@@ -190,10 +203,10 @@ const SECTIONS: Section[] = [
 
 // ─── ROUTE → SECTION/PILLAR HELPERS ──────────────────────────────────────────
 function getSectionForPath(path: string): string | null {
-  const intelligencePrefixes = ["/policy", "/economics", "/technology", "/clinical", "/equity"];
+  const intelligencePrefixes = ["/policy", "/economics", "/technology", "/clinical", "/equity", "/operations"];
   if (intelligencePrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "intelligence";
   if (path === "/academy" || path.startsWith("/academy/")) return "learn";
-  const analyzePrefixes = ["/research-lab", "/htr-simulator", "/hti-dashboard", "/multimedia", "/trending-topics"];
+  const analyzePrefixes = ["/research-lab", "/htr-simulator", "/hti-dashboard", "/multimedia", "/trending-topics", "/transformation-friction-index", "/impact-simulation"];
   if (analyzePrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "analyze";
   const statesPrefixes = ["/vermont-act-167", "/california-calaim", "/states", "/dashboard", "/ahead-model"];
   if (statesPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "states";
@@ -208,6 +221,7 @@ function getPillarForPath(path: string): string | null {
   if (path === "/technology" || path.startsWith("/technology/")) return "technology";
   if (path === "/clinical" || path.startsWith("/clinical/")) return "clinical";
   if (path === "/equity" || path.startsWith("/equity/")) return "equity";
+  if (path === "/operations" || path.startsWith("/operations/")) return "operations";
   return null;
 }
 
@@ -283,7 +297,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
               {/* L1 header button */}
               <button
                 onClick={() => handleSectionClick(section.id)}
-                className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 border-l-4 ${section.borderAccent} transition-colors text-left ${
+                className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl border-4 ${section.borderAccent} transition-colors text-left ${
                   isOpen ? section.headerBg : `${section.collapsedBg} dark:bg-slate-800 ${section.hoverBg}`
                 }`}
               >
@@ -415,7 +429,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
         <Link
           href="/saved"
           onClick={onNavigate}
-          className={`flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 border-l-4 border-l-slate-400 transition-colors ${
+          className={`flex items-center justify-between px-3 py-2.5 rounded-xl border-4 border-slate-400 transition-colors ${
             isActive("/saved") ? "bg-slate-100 dark:bg-slate-700" : "bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700"
           }`}
         >

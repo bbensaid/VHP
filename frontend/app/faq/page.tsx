@@ -28,20 +28,20 @@ const faqs = [
     ],
   },
   {
-    category: "The Five Pillars",
+    category: "The Six Pillars",
     icon: "🏛️",
     items: [
       {
-        q: "Why did HTR expand from three pillars to five?",
-        a: "The original HTR framework covered Policy, Economics, and Technology — the three structural levers most visible in federal and state transformation programs. After five years of implementation data, it became clear that Clinical effectiveness and Equity operate as independent structural variables. A health system can achieve strong policy scores and solid economics while delivering clinically ineffective care in inequitable patterns. Clinical and Equity are now first-class pillars with their own sub-metrics, weighting, and dedicated principal analysts.",
+        q: "Why did HTR expand from three pillars to six?",
+        a: "The original HTR framework covered Policy, Economics, and Technology — the three structural levers most visible in federal and state transformation programs. After five years of implementation data, it became clear that Clinical effectiveness, Equity, and Operations each operate as independent structural variables. A health system can achieve strong policy scores and solid economics while delivering clinically ineffective care in inequitable patterns — or failing entirely at the operational execution layer. Clinical, Equity, and Operations are now first-class pillars with their own sub-metrics, weighting, and dedicated principal analysts.",
       },
       {
-        q: "What are the five pillars and their guiding questions?",
-        a: "Policy ('Is it permissible?') — Regulation, legislation, and governance. Economics ('Is it sustainable?') — Value-based care, workforce investment, and market dynamics. Technology ('Is it possible?') — AI, digital health, and infrastructure. Clinical ('Is it effective?') — Evidence-based care models and population health. Equity ('Is it just?') — SDOH integration, algorithmic bias, and access disparity.",
+        q: "What are the six pillars and their guiding questions?",
+        a: "Policy ('Is it permissible?') — Regulation, legislation, and governance. Economics ('Is it sustainable?') — Value-based care, workforce investment, and market dynamics. Technology ('Is it possible?') — AI, digital health, and infrastructure. Clinical ('Is it effective?') — Evidence-based care models and population health. Equity ('Is it just?') — SDOH integration, algorithmic bias, and access disparity. Operations ('Is it executable?') — Revenue cycle, workforce capacity, compliance infrastructure, and supply chain readiness.",
       },
       {
-        q: "Does HTR cover all five pillars equally in its content library?",
-        a: "Our goal is full coverage across all five pillars. Policy and Economics have the deepest historical archives. Technology coverage expanded significantly in 2024 with AI deployment content. Clinical and Equity pillars launched in 2024 and now have dedicated research pipelines. As of 2026, all five pillars have dedicated principal analysts and quarterly deep-dive publication schedules.",
+        q: "Does HTR cover all six pillars equally in its content library?",
+        a: "Our goal is full coverage across all six pillars. Policy and Economics have the deepest historical archives. Technology coverage expanded significantly in 2024 with AI deployment content. Clinical and Equity pillars launched in 2024 and now have dedicated research pipelines. Operations was added as the sixth pillar in 2026, with coverage focused on revenue cycle, workforce capacity, and administrative infrastructure. As of 2026, all six pillars have dedicated principal analysts and quarterly deep-dive publication schedules.",
       },
       {
         q: "How does the Equity pillar differ from existing diversity reporting?",

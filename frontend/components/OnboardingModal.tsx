@@ -11,7 +11,7 @@ const PILLARS = [
   { id: "economics", label: "Economics", dot: "bg-emerald-500", desc: "Value-based care & markets" },
   { id: "technology", label: "Technology", dot: "bg-indigo-500", desc: "AI, digital health & data" },
   { id: "clinical", label: "Clinical", dot: "bg-red-500", desc: "Hospital care & delivery" },
-  { id: "equity", label: "Equity", dot: "bg-amber-500", desc: "SDOH & access disparity" },
+  { id: "equity", label: "Equity", dot: "bg-violet-500", desc: "SDOH & access disparity" },
 ];
 
 const ROLES = [
