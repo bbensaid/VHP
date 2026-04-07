@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Logo from "./Logo";
 import DarkModeToggle from "./DarkModeToggle";
-import { isPillarPath } from "./PillarSidebar";
 import NavDropdown from "./NavDropdown";
 import {
   Bars3Icon,
