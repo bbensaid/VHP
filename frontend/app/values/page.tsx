@@ -44,9 +44,9 @@ const values = [
     accentLight: "bg-amber-50",
     number: "03",
     title: "Systemic Thinking",
-    body: "A policy that is permissible but economically unsustainable is not a solution. A technology that is possible but clinically ineffective is not progress. We test every insight across all five pillars before it reaches you.",
-    detail: "This is the core discipline that separates HTR from conventional health policy or business analysis. A recommendation that optimizes for one dimension — cost, or quality, or equity — while creating new failures in another is not a recommendation we will publish. Every insight must survive interrogation across Policy, Economics, Technology, Clinical, and Equity before it leaves our desk.",
-    standard: "Five-pillar stress test on every analysis",
+    body: "A policy that is permissible but economically unsustainable is not a solution. A technology that is possible but operationally undeliverable is not progress. We test every insight across all six pillars before it reaches you.",
+    detail: "This is the core discipline that separates HTR from conventional health policy or business analysis. A recommendation that optimizes for one dimension — cost, or quality, or equity — while creating new failures in another is not a recommendation we will publish. Every insight must survive interrogation across Policy, Economics, Technology, Clinical, Equity, and Operations before it leaves our desk.",
+    standard: "Six-pillar stress test on every analysis",
   },
   {
     icon: HeartIcon,
@@ -70,8 +70,8 @@ const values = [
     accentLight: "bg-emerald-50",
     number: "05",
     title: "Cross-Disciplinary Collaboration",
-    body: "Policymakers, economists, clinicians, technologists, and equity advocates do not naturally speak the same language. HTR is the translation layer — and we hold the five-pillar standard for every piece of intelligence we publish.",
-    detail: "Our editorial structure is explicitly cross-functional. Before any analysis is published, it is reviewed by analysts from at least two adjacent disciplines. A technology piece is reviewed by our Economics and Clinical leads. A policy analysis passes through our Equity and Technology desks. This is not a formality — it is the mechanism by which we catch the blind spots that siloed thinking invariably produces.",
+    body: "Policymakers, economists, clinicians, technologists, equity advocates, and operations executives do not naturally speak the same language. HTR is the translation layer — and we hold the six-pillar standard for every piece of intelligence we publish.",
+    detail: "Our editorial structure is explicitly cross-functional. Before any analysis is published, it is reviewed by analysts from at least two adjacent disciplines. A technology piece is reviewed by our Economics, Clinical, and Operations leads. A policy analysis passes through our Equity, Operations, and Technology desks. This is not a formality — it is the mechanism by which we catch the blind spots that siloed thinking invariably produces.",
     standard: "Multi-pillar review before publication",
   },
   {
@@ -210,7 +210,7 @@ export default function ValuesPage() {
           Values inform methodology. Methodology produces intelligence.
         </h2>
         <p className="text-lg text-slate-500 mb-8 max-w-xl mx-auto">
-          Understand how our values are operationalized in the five-question framework we apply to every analysis.
+          Understand how our values are operationalized in the six-question framework we apply to every analysis.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link href="/about/framework" className="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-700 transition-colors">

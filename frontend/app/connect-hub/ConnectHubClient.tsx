@@ -228,7 +228,7 @@ const OFFICE_HOURS = [
     title: 'Open HTR Expert Session',
     frequency: 'Every other Monday · 4:00–5:00 PM ET',
     description:
-      'No fixed topic — bring any question across all five pillars. Two HTR senior advisors on every call. Recorded and distributed to registered participants.',
+      'No fixed topic — bring any question across all six pillars. Two HTR senior advisors on every call. Recorded and distributed to registered participants.',
     audience: 'All Connect members — no restriction by role or org type',
     pillarCls: 'bg-slate-200 text-slate-700',
   },

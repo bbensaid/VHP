@@ -57,9 +57,9 @@ const Logo: React.FC = () => {
     
           <span className="text-gray-400 font-bold">EDUCATE</span>
           <span className="text-gray-400">-</span>
-          <span className="text-gray-400 font-bold">ADVISE</span>
+          <span className="text-gray-400 font-bold">ANALYZE</span>
           <span className="text-gray-400">-</span>
-          <span className="text-gray-400 font-bold">SUPPORT</span>
+          <span className="text-gray-400 font-bold">ADVISE</span>
         </div>
       </div>
     </div>

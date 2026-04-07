@@ -535,7 +535,7 @@ function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }) {
 
           {/* Equity */}
           <InfoCard variant={outcomes.transferRisk > 60 ? "warn" : "default"}>
-            <div className="text-[10px] font-black uppercase tracking-widest text-amber-700 mb-2">Equity & Access</div>
+            <div className="text-[10px] font-black uppercase tracking-widest text-violet-700 mb-2">Equity & Access</div>
             <div className={`text-2xl font-black mb-0.5 ${outcomes.mitigatedEquityRisk > 50 ? "text-red-600" : outcomes.mitigatedEquityRisk > 30 ? "text-amber-600" : "text-emerald-600"}`}>
               {Math.round(outcomes.mitigatedEquityRisk)}
             </div>
@@ -959,7 +959,7 @@ function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) {
                     <div className="text-[10px] text-slate-400">{rec.pillars.equity.headline.slice(0, 70)}…</div>
                   </div>
                   <div className="shrink-0">
-                    <PillarGauge score={rec.pillars.equity.score} direction={rec.pillars.equity.direction} label="" color="text-amber-700" />
+                    <PillarGauge score={rec.pillars.equity.score} direction={rec.pillars.equity.direction} label="" color="text-violet-700" />
                   </div>
                 </div>
               ))}

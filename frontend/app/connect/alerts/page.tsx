@@ -20,7 +20,7 @@ export default function AlertsPage() {
         {
           icon: '🎯',
           title: 'Pillar-Filtered Alerts',
-          description: 'Choose which of the Five Pillars (Policy, Economics, Technology, Clinical, Equity) are relevant to your organization. You only receive alerts for opportunities in your selected areas.',
+          description: 'Choose which of the Six Pillars (Policy, Economics, Technology, Clinical, Equity, Operations) are relevant to your organization. You only receive alerts for opportunities in your selected areas.',
         },
         {
           icon: '🏥',
@@ -37,7 +37,7 @@ export default function AlertsPage() {
         {
           step: 1,
           title: 'Email your preferences',
-          description: 'Email connect@htr.com with: your organization name, organization type, which Five Pillars are relevant, and your preferred alert frequency (immediate, weekly digest, or monthly digest).',
+          description: 'Email connect@htr.com with: your organization name, organization type, which Six Pillars are relevant, and your preferred alert frequency (immediate, weekly digest, or monthly digest).',
         },
         {
           step: 2,

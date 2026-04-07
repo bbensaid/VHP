@@ -14,6 +14,7 @@ const pillars = [
   { label: "Technology", color: "text-indigo-700", bg: "bg-indigo-500", border: "border-indigo-200", question: "Is it possible?", href: "/technology" },
   { label: "Clinical", color: "text-rose-700", bg: "bg-rose-500", border: "border-rose-200", question: "Is it effective?", href: "/clinical" },
   { label: "Equity", color: "text-violet-700", bg: "bg-violet-500", border: "border-violet-200", question: "Is it just?", href: "/equity" },
+  { label: "Operations", color: "text-teal-700", bg: "bg-teal-500", border: "border-teal-200", question: "Is it executable?", href: "/operations" },
 ];
 
 const values = [
@@ -39,7 +40,7 @@ const values = [
     iconBg: "bg-amber-50",
     border: "border-amber-100",
     title: "Systemic Thinking",
-    body: "A policy that is permissible but economically unsustainable is not a solution. A technology that is possible but clinically ineffective is not progress. We test every insight across all five pillars before it reaches you.",
+    body: "A policy that is permissible but economically unsustainable is not a solution. A technology that is possible but clinically ineffective is not progress. We test every insight across all six pillars before it reaches you.",
   },
   {
     icon: HeartIcon,
@@ -73,7 +74,7 @@ const milestones = [
   { year: "2022", event: "Advisory practice opens; first enterprise intelligence agreements with major health systems and federal program offices." },
   { year: "2024", event: "Clinical and Equity pillars formally added, expanding the framework to five dimensions in response to mounting evidence that clinical and equity gaps required dedicated analytical focus." },
   { year: "2025", event: "HTR Academy launches with Executive Masterclasses. Analyst network expands to a dedicated principal per pillar." },
-  { year: "2026", event: "50-state program coverage complete. Performance Index extended with SDOH, algorithmic bias, and rural transformation sub-metrics." },
+  { year: "2026", event: "Operations pillar formally added as the sixth dimension — recognizing that the $1 trillion administrative infrastructure of US healthcare is not a backdrop to transformation but a primary determinant of whether it succeeds or fails. Performance Index extended with administrative cost ratio, revenue cycle performance, and workforce operational readiness sub-metrics." },
 ];
 
 export default function MissionPage() {
@@ -110,7 +111,7 @@ export default function MissionPage() {
               </p>
               <div className="mt-8 pt-8 border-t border-white/10">
                 <p className="text-slate-400 leading-relaxed text-sm">
-                  We achieve this through five integrated analytical pillars — Policy, Economics, Technology, Clinical, and Equity — ensuring that no recommendation enters the field having been tested on only one dimension of a structurally complex problem.
+                  We achieve this through six integrated analytical pillars — Policy, Economics, Technology, Clinical, Equity, and Operations — ensuring that no recommendation enters the field having been tested on only one dimension of a structurally complex problem.
                 </p>
               </div>
             </div>
@@ -122,7 +123,7 @@ export default function MissionPage() {
                 Our Vision
               </span>
               <p className="text-2xl md:text-3xl font-bold leading-snug text-white relative z-10">
-                A health system that is financially resilient, technologically capable, clinically excellent, and equitable by design — not by exception.
+                A health system that is financially resilient, technologically capable, clinically excellent, operationally disciplined, and equitable by design — not by exception.
               </p>
               <div className="mt-8 pt-8 border-t border-white/10 relative z-10">
                 <p className="text-slate-300 leading-relaxed text-sm">
@@ -177,10 +178,10 @@ export default function MissionPage() {
                 Our Analytical Framework
               </span>
               <h2 className="text-4xl font-black tracking-tight text-slate-900 mb-4">
-                Every insight must answer five questions before it reaches you.
+                Every insight must answer six questions before it reaches you.
               </h2>
               <p className="text-slate-600 text-lg leading-relaxed">
-                HTR's original three-pillar framework was built on the premise that Policy, Economics, and Technology are the primary levers of health system transformation. After five years of evidence, we know that framework was incomplete. Clinical effectiveness and equity are not downstream considerations — they are foundational.
+                HTR's original three-pillar framework was built on the premise that Policy, Economics, and Technology are the primary levers of health system transformation. After five years of evidence, we know that framework was incomplete. Clinical effectiveness, equity, and operational execution are not downstream considerations — they are foundational.
               </p>
             </div>
             <Link
@@ -191,7 +192,7 @@ export default function MissionPage() {
             </Link>
           </div>
 
-          <div className="grid md:grid-cols-5 gap-4">
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
             {pillars.map((p, i) => (
               <Link
                 key={p.label}
@@ -216,7 +217,7 @@ export default function MissionPage() {
 
           <div className="mt-8 bg-white border border-indigo-100 rounded-xl p-6 md:p-8 text-center">
             <p className="text-slate-600 text-base max-w-3xl mx-auto leading-relaxed">
-              A policy intervention that passes question one but fails questions three, four, and five is not a solution — it is a well-intentioned mistake waiting to be made. HTR&rsquo;s editorial standard requires that every analysis we publish has been interrogated across all five dimensions.
+              A policy intervention that passes question one but fails questions three, four, five, or six is not a solution — it is a well-intentioned mistake waiting to be made. HTR&rsquo;s editorial standard requires that every analysis we publish has been interrogated across all six dimensions.
             </p>
           </div>
         </div>
@@ -230,7 +231,7 @@ export default function MissionPage() {
               Our Journey
             </span>
             <h2 className="text-4xl font-black tracking-tight">
-              From three pillars to five. The evolution of HTR.
+              From three pillars to six. The evolution of HTR.
             </h2>
           </div>
           <div className="relative">

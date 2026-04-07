@@ -13,7 +13,7 @@ interface NavItem {
 interface NavDropdownProps {
   label: string;
   items: NavItem[];
-  pillar?: "policy" | "economics" | "technology" | "clinical" | "equity";
+  pillar?: "policy" | "economics" | "technology" | "clinical" | "equity" | "operations";
   icon?: React.ReactNode; 
   buttonClassName?: string;
 }
@@ -57,6 +57,11 @@ const NavDropdown: React.FC<NavDropdownProps> = ({
       text: "text-brand-equity",
       hover: "hover:text-brand-equity",
       bg: "bg-brand-equity"
+    },
+    operations: {
+      text: "text-teal-700",
+      hover: "hover:text-teal-700",
+      bg: "bg-teal-600"
     },
   };
 

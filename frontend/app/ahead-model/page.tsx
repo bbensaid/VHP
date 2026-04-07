@@ -405,7 +405,7 @@ export default function AheadModelPage() {
             HTR Analysis
           </span>
           <h2 className="text-4xl font-black tracking-tight text-slate-900 mb-4">
-            What AHEAD means across the five pillars.
+            What AHEAD means across the six pillars.
           </h2>
         </div>
         <div className="grid md:grid-cols-5 gap-4">
