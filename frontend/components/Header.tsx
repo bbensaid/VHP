@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Logo from "./Logo";
 import DarkModeToggle from "./DarkModeToggle";
+import { isPillarPath } from "./PillarSidebar";
 import NavDropdown from "./NavDropdown";
 import {
   Bars3Icon,
@@ -637,6 +638,7 @@ const Header = () => {
   const { isHeaderVisible, setHeaderVisible } = useTicker();
   const { toggleLeft, toggleRight, setLeftOpen, setRightOpen } = useSidebar();
   const isChatPage = pathname === "/chat";
+  const showLeftToggle = !isStudio;
 
   const handleToggleLeft = () => {
     if (isChatPage) { setLeftOpen(true); router.push("/"); } else { toggleLeft(); }
@@ -768,7 +770,7 @@ const Header = () => {
 
           {/* LEFT: Toggle + Logo — w-125 matches AppShell breadcrumbs spacer for column alignment */}
           <div className="w-125 shrink-0 flex items-center gap-3">
-            {!isStudio && (
+            {showLeftToggle && (
               <button
                 onClick={handleToggleLeft}
                 className="p-2 text-slate-400 hover:bg-slate-100 rounded-md transition-colors"

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import PillarSidebar, { getPillarFromPath, getPillarLabel } from "@/components/PillarSidebar";
 import HomeSidebar from "@/components/HomeSidebar";
 import RightSidebar from "@/components/RightSidebar";
 import CollapsibleSidebar from "@/components/CollapsibleSidebar";
@@ -28,6 +29,8 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const isStudio = pathname.startsWith("/studio");
   const isChatPage = pathname === "/chat";
   const hideSidebarsCompletely = isStudio || isChatPage;
+  const pillarId = getPillarFromPath(pathname);
+  const isPillarPage = !!pillarId;
 
   // 2. SIDEBAR STATE from Context (shared with Header)
   const { isLeftOpen, isRightOpen, setLeftOpen, setRightOpen } = useSidebar();
@@ -72,10 +75,6 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const isStickyBarVisible = showBreadcrumbs || showTicker;
   const sidebarTop = isStickyBarVisible ? "2.5rem" : "0rem"; // 2.5rem = --sticky-bar-height
 
-  const handleSidebarLinkClick = () => {
-    if (window.innerWidth < BREAKPOINT_LG) setLeftOpen(false);
-  };
-
   if (hideSidebarsCompletely) {
     return <div className="flex-1 min-h-0 overflow-hidden flex flex-col">{children}</div>;
   }
@@ -115,14 +114,18 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
 
       {/* 2. Main Content Area */}
       <div className="flex flex-col lg:flex-row mt-4 w-full px-4 transition-all relative z-0">
+        {/* Left sidebar — PillarSidebar on pillar pages, HomeSidebar everywhere else */}
         <CollapsibleSidebar
           side="left"
           isOpen={isLeftOpen}
           setIsOpen={setLeftOpen}
           stickyTop={sidebarTop}
-          expandLabel="Navigation"
+          expandLabel={isPillarPage ? getPillarLabel(pathname) : "Navigation"}
         >
-          <HomeSidebar onNavigate={handleSidebarLinkClick} />
+          {isPillarPage
+            ? <PillarSidebar />
+            : <HomeSidebar onNavigate={() => { if (window.innerWidth < BREAKPOINT_LG) setLeftOpen(false); }} />
+          }
         </CollapsibleSidebar>
 
         <main
