@@ -30,7 +30,7 @@ export default function CapabilityAssessmentPage() {
             <span className="bg-sky-100 text-sky-700 border border-sky-200 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
               HTR Advisory
             </span>
-            <span className="text-slate-400 text-xs">All 5 Pillars</span>
+            <span className="text-slate-400 text-xs">All 6 Pillars</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
             Capability & Maturity <span className="text-sky-600">Assessments</span>

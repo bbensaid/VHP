@@ -96,6 +96,26 @@ const pillars = [
     ],
     blindspot: "An algorithm that produces accurate predictions on average may produce systematically biased predictions for specific racial, ethnic, or income-defined subgroups. Equity analysis is not a final-step diversity review — it is a foundational requirement that shapes how interventions are designed from the start.",
   },
+  {
+    number: "06",
+    label: "Operations",
+    question: "Is it executable?",
+    color: "text-teal-700",
+    border: "border-teal-200",
+    bg: "bg-teal-50",
+    accent: "bg-teal-600",
+    accentText: "text-teal-600",
+    href: "/operations",
+    why: "The history of healthcare transformation is not only littered with good ideas that failed due to funding or politics — it is equally filled with well-funded, politically supported initiatives that collapsed under the weight of operational reality. Revenue cycles broke. Workforce systems couldn't absorb the change. Supply chains weren't resilient enough. HTR's Operations pillar asks whether the administrative and operational infrastructure of a health system can actually execute the transformation being proposed.",
+    what: [
+      "Revenue cycle: billing integrity, claims management, prior authorization burden, denial rate analysis",
+      "Workforce operations: staffing models, credentialing pipelines, scheduling systems, vacancy and turnover",
+      "Compliance & quality: accreditation readiness, regulatory audit management, patient safety infrastructure",
+      "Supply chain: pharmaceutical procurement, device logistics, GPO strategy, inventory resilience",
+      "Payer operations: utilization management, network adequacy, contract administration, member services",
+    ],
+    blindspot: "A transformation that requires 200 additional FTEs in a market where nursing vacancy rates exceed 20% is not a transformation — it is a plan waiting to fail. Operations analysis is the ground-truth check on every strategy that looks elegant on a whiteboard but depends on administrative infrastructure that does not yet exist.",
+  },
 ];
 
 const failureModes = [
@@ -120,9 +140,14 @@ const failureModes = [
     pillars: ["Policy ✓", "Economics ✓", "Clinical ✓", "Equity ✗"],
   },
   {
+    title: "The Operational Cliff",
+    desc: "A transformation is approved, funded, and technologically enabled — then stalls because the revenue cycle cannot support the new payment model, staff cannot be credentialed fast enough, and supply chain disruptions delay launch by 18 months.",
+    pillars: ["Policy ✓", "Economics ✓", "Technology ✓", "Clinical ✓", "Equity ✓", "Operations ✗"],
+  },
+  {
     title: "The Complete Failure",
-    desc: "All five pillars are interrogated. The intervention fails on equity and economics. It is not published as a recommendation. This is the framework working as intended.",
-    pillars: ["Policy ✓", "Economics ✗", "Technology ✓", "Clinical ✓", "Equity ✗"],
+    desc: "All six pillars are interrogated. The intervention fails on equity, economics, and operational readiness. It is not published as a recommendation. This is the framework working as intended.",
+    pillars: ["Policy ✓", "Economics ✗", "Technology ✓", "Clinical ✓", "Equity ✗", "Operations ✗"],
   },
 ];
 
@@ -148,11 +173,11 @@ export default function FrameworkPage() {
               Our Analytical Framework
             </span>
             <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[0.9] mb-8">
-              Five questions.<br />
+              Six questions.<br />
               <span className="text-indigo-400">Zero shortcuts.</span>
             </h1>
             <p className="text-xl text-slate-300 max-w-2xl leading-relaxed mb-6">
-              Every analysis HTR publishes must survive interrogation across five dimensions before it reaches you. A recommendation that passes four out of five is not published — because four out of five is how healthcare gets it wrong.
+              Every analysis HTR publishes must survive interrogation across six dimensions before it reaches you. A recommendation that passes five out of six is not published — because five out of six is how healthcare gets it wrong.
             </p>
             <p className="text-slate-400 max-w-2xl leading-relaxed">
               This is not an editorial checklist. It is the architectural logic of HTR — the structure that makes cross-disciplinary intelligence possible and the mechanism that catches the blind spots that siloed analysis invariably produces.
@@ -161,7 +186,7 @@ export default function FrameworkPage() {
         </div>
       </section>
 
-      {/* ── THE FIVE PILLARS ──────────────────────────────────────────────── */}
+      {/* ── THE SIX PILLARS ──────────────────────────────────────────────── */}
       <section className="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-10">
           {pillars.map((p) => (
@@ -223,7 +248,7 @@ export default function FrameworkPage() {
               The failure modes the framework prevents.
             </h2>
             <p className="text-xl text-slate-500 max-w-3xl">
-              These are not hypothetical scenarios. They are the recurring failure patterns that have defined American healthcare transformation for the past 30 years — and that the five-question standard is specifically designed to catch before they become policy.
+              These are not hypothetical scenarios. They are the recurring failure patterns that have defined American healthcare transformation for the past 30 years — and that the six-question standard is specifically designed to catch before they become policy.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -257,7 +282,7 @@ export default function FrameworkPage() {
           See the framework applied.
         </h2>
         <p className="text-lg text-slate-500 mb-8 max-w-xl mx-auto">
-          Browse our pillar hubs to see how Policy, Economics, Technology, Clinical, and Equity intersect on the issues shaping healthcare today.
+          Browse our pillar hubs to see how Policy, Economics, Technology, Clinical, Equity, and Operations intersect on the issues shaping healthcare today.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
           {[
@@ -266,6 +291,7 @@ export default function FrameworkPage() {
             { label: "Technology", href: "/technology", color: "bg-indigo-600" },
             { label: "Clinical", href: "/clinical", color: "bg-rose-600" },
             { label: "Equity", href: "/equity", color: "bg-violet-600" },
+          { label: "Operations", href: "/operations", color: "bg-teal-600" },
           ].map((p) => (
             <Link
               key={p.label}

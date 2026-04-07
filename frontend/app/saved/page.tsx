@@ -18,7 +18,8 @@ const PILLAR_STYLES: Record<string, string> = {
   economics: "text-emerald-700 bg-emerald-50 border-emerald-200",
   technology: "text-indigo-700 bg-indigo-50 border-indigo-200",
   clinical: "text-red-700 bg-red-50 border-red-200",
-  equity: "text-amber-700 bg-amber-50 border-amber-200",
+  equity: "text-violet-700 bg-violet-50 border-violet-200",
+  operations: "text-teal-700 bg-teal-50 border-teal-200",
 };
 
 export default async function SavedPage() {

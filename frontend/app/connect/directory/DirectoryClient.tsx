@@ -19,14 +19,15 @@ const ORG_TYPE_LABELS: Record<string, string> = {
   other:         "Other",
 };
 
-const PILLAR_OPTIONS = ["policy", "economics", "technology", "clinical", "equity"];
+const PILLAR_OPTIONS = ["policy", "economics", "technology", "clinical", "equity", "operations"];
 
 const PILLAR_COLORS: Record<string, string> = {
   policy:     "bg-sky-100 text-sky-700",
   economics:  "bg-emerald-100 text-emerald-700",
   technology: "bg-indigo-100 text-indigo-700",
   clinical:   "bg-rose-100 text-rose-700",
-  equity:     "bg-orange-100 text-orange-700",
+  equity:     "bg-violet-100 text-violet-700",
+  operations: "bg-teal-100 text-teal-700",
 };
 
 interface Profile {

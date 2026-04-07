@@ -34,7 +34,8 @@ const PILLAR_FILTERS = [
   { id: "economics", label: "Economics", color: "bg-emerald-100 text-emerald-700 border-emerald-200 hover:bg-emerald-200" },
   { id: "technology", label: "Technology", color: "bg-indigo-100 text-indigo-700 border-indigo-200 hover:bg-indigo-200" },
   { id: "clinical", label: "Clinical", color: "bg-red-100 text-red-700 border-red-200 hover:bg-red-200" },
-  { id: "equity", label: "Equity", color: "bg-amber-100 text-amber-700 border-amber-200 hover:bg-amber-200" },
+  { id: "equity", label: "Equity", color: "bg-violet-100 text-violet-700 border-violet-200 hover:bg-violet-200" },
+  { id: "operations", label: "Operations", color: "bg-teal-100 text-teal-700 border-teal-200 hover:bg-teal-200" },
 ];
 
 const TYPE_FILTERS = [
@@ -54,7 +55,8 @@ const getBadgeStyle = (type: string, pillar: string) => {
     case "economics": return "text-emerald-700 bg-emerald-50 border-emerald-200";
     case "technology": return "text-indigo-700 bg-indigo-50 border-indigo-200";
     case "clinical": return "text-red-700 bg-red-50 border-red-200";
-    case "equity": return "text-amber-700 bg-amber-50 border-amber-200";
+    case "equity": return "text-violet-700 bg-violet-50 border-violet-200";
+    case "operations": return "text-teal-700 bg-teal-50 border-teal-200";
     default: return "text-slate-700 bg-slate-50 border-slate-200";
   }
 };
@@ -87,7 +89,7 @@ const CAPABILITIES = [
     href: "/htr-simulator",
     emoji: "⚙️",
     title: "HTR Simulator",
-    desc: "Score your health transformation strategy across all 5 pillars with our scenario modeler.",
+    desc: "Score your health transformation strategy across all 6 pillars with our scenario modeler.",
     accent: "border-indigo-200 hover:border-indigo-400 hover:bg-indigo-50",
     tag: "Interactive",
     tagColor: "bg-indigo-100 text-indigo-700",
@@ -221,7 +223,7 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
               href: "/policy",
               emoji: "🔍",
               label: "Explore Intelligence",
-              desc: "Browse the 5-pillar knowledge base",
+              desc: "Browse the 6-pillar knowledge base",
               bg: "bg-slate-50 hover:bg-slate-100 border-slate-200 hover:border-slate-300",
             },
             {

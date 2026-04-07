@@ -95,7 +95,7 @@ export default function Page() {
         </div>
       </div>
 
-      <LatestHubReports pillar="Equity" colorClass="text-orange-600" cardHoverClass="hover:border-orange-400 hover:bg-orange-50/80" titleHoverClass="group-hover:text-orange-600" />
+      <LatestHubReports pillar="Equity" colorClass="text-violet-600" cardHoverClass="hover:border-violet-400 hover:bg-violet-50/80" titleHoverClass="group-hover:text-violet-600" />
 
       <HubSubscribeCTA
         pillar="Equity"

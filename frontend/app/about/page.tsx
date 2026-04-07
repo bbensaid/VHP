@@ -71,6 +71,20 @@ const pillars = [
       "SDOH integration, algorithmic bias, and access disparity analysis. We hold transformation accountable to the communities it is meant to serve.",
     subcategories: ["SDOH Integration", "Algorithmic Bias", "Access Disparity", "Community Engagement"],
   },
+  {
+    id: "operations",
+    label: "Operations",
+    color: "text-teal-700",
+    bg: "bg-teal-50",
+    border: "border-teal-200",
+    accent: "bg-teal-500",
+    hover: "hover:border-teal-400 hover:bg-teal-50/80",
+    question: "Is it executable?",
+    href: "/operations",
+    description:
+      "Revenue cycle management, workforce operations, compliance, supply chain, and payer-provider dynamics. We test whether the administrative infrastructure can actually carry the transformation.",
+    subcategories: ["Revenue Cycle Management", "Workforce & Human Capital", "Quality, Compliance & Risk", "Supply Chain & Infrastructure"],
+  },
 ];
 
 const stats = [
@@ -150,6 +164,19 @@ const team = [
     border: "border-violet-200",
     linkedin: "https://linkedin.com",
   },
+  {
+    name: "Robert Callahan",
+    credentials: "MHA, FHFMA | Georgetown University",
+    role: "Operations Intelligence Lead",
+    pillar: "Operations",
+    focus: "Revenue Cycle, Workforce & Health System Administration",
+    bio: "25-year veteran of health system operations across revenue cycle, supply chain, and workforce management. Former COO of a 12-hospital regional system and HFMA national faculty member. Expert in administrative cost reduction and operational readiness assessments for value-based care transitions.",
+    institutions: ["HFMA — National Faculty", "American College of Healthcare Executives"],
+    initials: "RC",
+    color: "bg-teal-100 text-teal-700",
+    border: "border-teal-200",
+    linkedin: "https://linkedin.com",
+  },
 ];
 
 export default function AboutPage() {
@@ -181,7 +208,7 @@ export default function AboutPage() {
               Data and Decision.
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mb-10">
-              HTR is the only cross-disciplinary intelligence platform purpose-built for health system transformation. We translate the intersection of five critical domains into actionable intelligence for the executives, policymakers, and clinicians who are doing the work.
+              HTR is the only cross-disciplinary intelligence platform purpose-built for health system transformation. We translate the intersection of six critical domains into actionable intelligence for the executives, policymakers, and clinicians who are doing the work.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -236,7 +263,7 @@ export default function AboutPage() {
               American healthcare commands the world's largest share of GDP — yet outcomes lag peer nations, costs remain unsustainable, and access is still determined more by geography and income than by clinical need. The capital and political will exist. The missing ingredient is coordinated, cross-disciplinary intelligence.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed">
-              HTR exists to close that gap. Our five-pillar framework — Policy, Economics, Technology, Clinical, and Equity — ensures that no decision is made in isolation. Every insight is stress-tested across all dimensions before it reaches you.
+              HTR exists to close that gap. Our six-pillar framework — Policy, Economics, Technology, Clinical, Equity, and Operations — ensures that no decision is made in isolation. Every insight is stress-tested across all dimensions before it reaches you.
             </p>
           </div>
 
@@ -280,6 +307,11 @@ export default function AboutPage() {
                   sub: "SDOH data missing from 67% of high-risk patient records",
                   icon: "⚖️",
                 },
+                {
+                  label: "Operations were never stress-tested",
+                  sub: "Revenue cycle couldn't support new payment models; 18-month implementation delay",
+                  icon: "⚙️",
+                },
               ].map((item) => (
                 <div key={item.label} className="flex gap-3 p-3 rounded-lg bg-slate-50 border border-slate-100">
                   <span className="text-lg shrink-0">{item.icon}</span>
@@ -294,7 +326,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── 5 PILLARS ─────────────────────────────────────────────────────── */}
+      {/* ── 6 PILLARS ─────────────────────────────────────────────────────── */}
       <section className="bg-slate-50 border-y border-slate-200 py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
@@ -302,14 +334,14 @@ export default function AboutPage() {
               Our Intelligence Framework
             </span>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-4">
-              Five Pillars. One Framework.
+              Six Pillars. One Framework.
             </h2>
             <p className="text-xl text-slate-500 max-w-2xl mx-auto">
-              Where the original model analyzed three dimensions, HTR's evolved framework asks five essential questions — because transformation that ignores clinical evidence or equity is incomplete.
+              Where the original model analyzed three dimensions, HTR's evolved framework asks six essential questions — because transformation that ignores clinical evidence, equity, or operational reality is incomplete.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-5 gap-4">
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
             {pillars.map((p) => (
               <Link
                 key={p.id}
@@ -407,7 +439,7 @@ export default function AboutPage() {
               One analyst per pillar. Zero silos.
             </h2>
             <p className="text-slate-500 mt-4 max-w-xl mx-auto">
-              Each domain is led by a dedicated principal analyst — former policymakers, practicing clinicians, and credentialed economists who collaborate to ensure every insight accounts for all five dimensions.
+              Each domain is led by a dedicated principal analyst — former policymakers, practicing clinicians, credentialed economists, and health operations executives who collaborate to ensure every insight accounts for all six dimensions.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -470,7 +502,7 @@ export default function AboutPage() {
           The intelligence you need is already here.
         </h2>
         <p className="text-lg text-slate-500 mb-8 max-w-xl mx-auto">
-          Start with the State Performance Dashboard, or dive into any of the five pillars. Every page is built for action, not just reading.
+          Start with the State Performance Dashboard, or dive into any of the six pillars. Every page is built for action, not just reading.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link href="/dashboard" className="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-700 transition-colors">

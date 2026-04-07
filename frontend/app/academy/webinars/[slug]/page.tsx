@@ -34,7 +34,7 @@ const pillarColors: Record<string, string> = {
   Economics:  "bg-emerald-100 text-emerald-700 border-emerald-300",
   Technology: "bg-indigo-100 text-indigo-700 border-indigo-300",
   Clinical:   "bg-rose-100 text-rose-700 border-rose-300",
-  Equity:     "bg-orange-100 text-orange-700 border-orange-300",
+  Equity:     "bg-violet-100 text-violet-700 border-violet-300",
   Academy:    "bg-sky-100 text-sky-700 border-sky-300",
 };
 

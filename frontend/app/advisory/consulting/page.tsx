@@ -4,7 +4,7 @@ import { ADVISORY_SERVICES, PILLAR_STYLES } from "@/lib/advisory-data";
 export const metadata = {
   title: "Strategic Consulting | HTR Advisory",
   description:
-    "Partner with HTR Advisory's C-suite consulting practice. Strategic frameworks across all 5 pillars: regulatory compliance, value-based care, digital transformation, clinical operations, health equity, and M&A.",
+    "Partner with HTR Advisory's C-suite consulting practice. Strategic frameworks across all 6 pillars: regulatory compliance, value-based care, digital transformation, clinical operations, health equity, operational execution, and M&A.",
 };
 
 const service = ADVISORY_SERVICES.find((s) => s.id === "consulting")!;
@@ -64,13 +64,13 @@ export default function ConsultingPage() {
           <div className="flex items-center gap-2 mb-4">
             <span className="text-fuchsia-600 font-bold uppercase tracking-widest text-xs">HTR Advisory</span>
             <span className="text-slate-400">·</span>
-            <span className="text-slate-500 text-xs">Spanning All 5 Pillars</span>
+            <span className="text-slate-500 text-xs">Spanning All 6 Pillars</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight leading-tight">
             Strategic Consulting
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl leading-relaxed mb-8">
-            We partner with C-suite executives to design resilient operational frameworks spanning all five pillars of healthcare transformation: Policy, Economics, Technology, Clinical, and Equity. We move beyond theory to implement actionable strategies that protect margins, improve clinical outcomes, and advance health equity — simultaneously.
+            We partner with C-suite executives to design resilient operational frameworks spanning all six pillars of healthcare transformation: Policy, Economics, Technology, Clinical, Equity, and Operations. We move beyond theory to implement actionable strategies that protect margins, improve clinical outcomes, and advance health equity — simultaneously.
           </p>
           <div className="flex flex-wrap gap-2">
             {service.pillars.map((p) => (
@@ -181,7 +181,7 @@ export default function ConsultingPage() {
                 A 600-bed integrated delivery network in the Northeast had just completed a $280M Epic implementation — on time, over budget, and with clinical adoption rates at 34% after 90 days. Claim denials had spiked 22%, and physician satisfaction scores dropped to the 12th percentile.
               </p>
               <p className="text-slate-700 text-sm leading-relaxed mb-4">
-                HTR Advisory was engaged on Day 97 post-go-live. We conducted a full 5-pillar diagnostic: the root cause was not the technology. It was a mismatch between Epic&apos;s workflow design and the clinical operations model, compounded by inadequate front-end revenue cycle training.
+                HTR Advisory was engaged on Day 97 post-go-live. We conducted a full 6-pillar diagnostic: the root cause was not the technology. It was a mismatch between Epic&apos;s workflow design and the clinical operations model, compounded by inadequate front-end revenue cycle training.
               </p>
               <p className="text-slate-700 text-sm leading-relaxed">
                 Within 180 days of engagement, denial rates returned to baseline, physician adoption reached 78%, and the health system recovered $14.2M in previously denied claims through a targeted appeals program.
