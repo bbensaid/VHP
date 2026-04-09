@@ -80,6 +80,7 @@ export default withSentryConfig(nextConfig, {
   // Automatically instrument server-side routes
   widenClientFileUpload: true,
   // Upload source maps only in CI/production builds
-  disableServerWebpackPlugin: process.env.NODE_ENV !== "production",
-  disableClientWebpackPlugin: process.env.NODE_ENV !== "production",
+  sourcemaps: {
+    disable: process.env.NODE_ENV !== "production",
+  },
 });

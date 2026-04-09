@@ -158,6 +158,7 @@ const SliderInput = ({
   min,
   max,
   step = 1,
+  prefix,
   suffix,
 }: {
   value: number;
@@ -165,6 +166,7 @@ const SliderInput = ({
   min: number;
   max: number;
   step?: number;
+  prefix?: string;
   suffix?: string;
 }) => (
   <div className="flex items-center gap-3">
@@ -178,7 +180,7 @@ const SliderInput = ({
       className="flex-1 accent-cyan-500"
     />
     <span className="text-cyan-300 font-bold text-sm w-16 text-right">
-      {value}
+      {prefix}{value}
       {suffix}
     </span>
   </div>
