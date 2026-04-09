@@ -424,14 +424,14 @@ function PredictiveComparator() {
                 <tr key={row.label} className="border-b border-slate-100 hover:bg-slate-50">
                   <td className="px-4 py-2.5 text-slate-600 font-medium">{row.label}</td>
                   {metrics.map((met, i) => {
-                    const val = (met as never)[row.key];
+                    const val = (met as Record<string, unknown>)[row.key];
                     const best =
                       row.key === "fn" || row.key === "fp" || row.key === "alertBurdenPerShift"
-                        ? val === Math.min(...metrics.map((x) => (x as never)[row.key]))
-                        : val === Math.max(...metrics.map((x) => (x as never)[row.key]));
+                        ? val === Math.min(...metrics.map((x) => (x as Record<string, unknown>)[row.key] as number))
+                        : val === Math.max(...metrics.map((x) => (x as Record<string, unknown>)[row.key] as number));
                     return (
                       <td key={i} className={`px-4 py-2.5 text-center font-medium ${best ? "text-green-700 bg-green-50" : "text-slate-700"}`}>
-                        {typeof val === "number" ? val.toLocaleString() : val}
+                        {typeof val === "number" ? val.toLocaleString() : String(val)}
                         {best && <span className="ml-1 text-green-500 text-xs">★</span>}
                       </td>
                     );
@@ -863,7 +863,7 @@ function BiasDetector() {
                     { cond: metrics.demParity !== "pass", text: "Re-sample training data to balance demographic parity (oversampling underrepresented groups)" },
                     { cond: metrics.eqOpp !== "pass", text: "Apply post-processing threshold calibration per subgroup to equalize recall" },
                     { cond: metrics.predParity !== "pass", text: "Use in-processing fairness constraints (e.g., Adversarial Debiasing, Reductions)" },
-                    { cond: inputs.proxiesCount >= 1, text: "Remove or decorrelate proxy variables; conduct feature importance audit by group" },
+                    { cond: Object.values(inputs.proxies).filter(Boolean).length >= 1, text: "Remove or decorrelate proxy variables; conduct feature importance audit by group" },
                     { cond: inputs.historicalBias, text: "Use counterfactual fairness methods; consult domain experts on historically biased outcomes" },
                     { cond: inputs.labelBias, text: "Explore alternative labels less subject to historical bias (e.g., need-based vs. utilization-based)" },
                     { cond: true, text: "Establish prospective disparity monitoring dashboard with quarterly reviews" },
