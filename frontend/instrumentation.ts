@@ -31,7 +31,7 @@ export async function register() {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (performance as any).measure = function (...args: any[]) {
       try {
-        return orig(...args);
+        return (orig as (...a: unknown[]) => unknown)(...args);
       } catch (e: unknown) {
         const msg = e instanceof Error ? e.message : String(e);
         if (msg.includes("negative") || msg.includes("time stamp")) {
