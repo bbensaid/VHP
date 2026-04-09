@@ -4,5 +4,22 @@
   "buildCommand": "cd frontend && npm run build",
   "outputDirectory": "frontend/.next",
   "framework": "nextjs",
-  "regions": ["iad1"]
+  "regions": ["iad1"],
+
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization" }
+      ]
+    }
+  ],
+
+  "crons": [
+    {
+      "path": "/api/cron/revalidate",
+      "schedule": "0 0 * * *"
+    }
+  ]
 }
