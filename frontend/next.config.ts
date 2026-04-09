@@ -58,14 +58,6 @@ const nextConfig: NextConfig = {
     styledComponents: true,
   },
 
-  // Tell Turbopack that this directory is the workspace root.
-  // Without this, Next.js 16 (Turbopack) walks up the directory tree,
-  // finds the sanity/ sub-lockfile, and incorrectly sets the workspace
-  // root to the parent of frontend/ — breaking all module resolution.
-  turbopack: {
-    root: __dirname,
-  },
-
   async headers() {
     return [
       {
