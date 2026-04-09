@@ -128,11 +128,11 @@ function MethodologyPageInner() {
             <h2 className="text-2xl md:text-3xl font-black text-slate-900">Framework Overview</h2>
           </div>
           <p className="text-slate-600 leading-relaxed text-lg mb-6">
-            The HTR Performance Index was originally built on three pillars in 2021. In 2024, following a formal evidence review, we expanded the framework to five pillars — adding Clinical and Equity as standalone dimensions. In 2026, we expanded to six pillars — adding Operations to capture the administrative and execution infrastructure that determines whether transformation actually lands. The Index now reflects eighteen sub-metrics across those pillars, each normalized to a 0–100 scale where a higher score is always better.
+The HTR Performance Index scores health system transformation readiness across six pillars: Policy, Economics, Technology, Clinical, Equity, and Operations. Each pillar addresses a distinct structural variable that determines whether a proposed transformation is permissible, sustainable, possible, effective, just, and executable. The Index reflects eighteen sub-metrics across those six pillars, each normalized to a 0–100 scale where a higher score is always better.
           </p>
           <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-6">
             <p className="text-indigo-900 font-semibold text-sm leading-relaxed">
-              <strong>Why six pillars?</strong> The original three-pillar model treated clinical effectiveness, equity, and operational execution as outputs of Policy, Economics, and Technology decisions. Implementation data proved this wrong. Clinical access patterns, equity failures, and operational bottlenecks each operate as independent structural variables with their own measurement requirements. They are now tracked as first-class inputs, not derivative outcomes. Operations — covering revenue cycle performance, workforce readiness, and administrative cost burden — was added in 2026 after consistent evidence that well-designed transformations were failing at the execution layer.
+              <strong>Why six pillars?</strong> Policy, Economics, and Technology determine whether a transformation is authorized, funded, and infrastructurally possible. Clinical, Equity, and Operations determine whether it actually works, for whom, and whether the institution can execute it at scale. All six are co-equal structural variables. An analysis that answers only three of the six questions is incomplete — regardless of which three.
             </p>
           </div>
         </section>

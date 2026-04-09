@@ -244,7 +244,7 @@ function OfficeHoursPanel() {
             <h2 className="text-2xl font-black text-teal-700 mb-1">Expert Office Hours</h2>
             <p className="text-slate-600 leading-relaxed max-w-3xl">
               Open-access sessions with HTR faculty and senior advisors — no engagement required, no
-              agenda to submit in advance. Ask anything. Sessions are organized by the Five-Pillar
+              agenda to submit in advance. Ask anything. Sessions are organized by the Six-Pillar
               Framework with a rotating monthly schedule. All sessions are recorded; recordings are
               available to registered Connect members for 90 days.
             </p>
@@ -772,7 +772,7 @@ function ForumsPanel() {
           <div>
             <h2 className="text-2xl font-black text-teal-700 mb-1">Pillar Circles</h2>
             <p className="text-slate-600 leading-relaxed max-w-3xl">
-              Asynchronous discussion forums organized by the Five-Pillar Framework — moderated by
+              Asynchronous discussion forums organized by the Six-Pillar Framework — moderated by
               HTR faculty and senior advisors. Each circle maintains a topic focus and a minimum
               standard for discourse. An HTR expert responds to questions within 48 hours. Anonymous
               posting is not permitted; members engage under their professional identity.

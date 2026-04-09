@@ -56,7 +56,7 @@ const values = [
     iconBg: "bg-emerald-50",
     border: "border-emerald-100",
     title: "Cross-Disciplinary Collaboration",
-    body: "Policymakers, economists, clinicians, technologists, and equity advocates do not naturally speak the same language. HTR is the translation layer — and we hold the five-pillar standard for every piece of intelligence we publish.",
+    body: "Policymakers, economists, clinicians, technologists, and equity advocates do not naturally speak the same language. HTR is the translation layer — and we hold the six-pillar standard for every piece of intelligence we publish.",
   },
   {
     icon: ChartBarIcon,
@@ -69,12 +69,12 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2019", event: "HTR founded with a three-pillar framework: Policy, Economics, Technology." },
+  { year: "2019", event: "HTR founded. Intelligence platform built on the conviction that health system transformation requires cross-disciplinary analysis — not siloed expertise." },
   { year: "2021", event: "State Performance Index launched, covering all 50 states with composite scoring across 9 sub-metrics." },
   { year: "2022", event: "Advisory practice opens; first enterprise intelligence agreements with major health systems and federal program offices." },
-  { year: "2024", event: "Clinical and Equity pillars formally added, expanding the framework to five dimensions in response to mounting evidence that clinical and equity gaps required dedicated analytical focus." },
+  { year: "2024", event: "Clinical and Equity pillars added as first-class analytical dimensions — each with dedicated sub-metrics, weighting, and a named principal analyst." },
   { year: "2025", event: "HTR Academy launches with Executive Masterclasses. Analyst network expands to a dedicated principal per pillar." },
-  { year: "2026", event: "Operations pillar formally added as the sixth dimension — recognizing that the $1 trillion administrative infrastructure of US healthcare is not a backdrop to transformation but a primary determinant of whether it succeeds or fails. Performance Index extended with administrative cost ratio, revenue cycle performance, and workforce operational readiness sub-metrics." },
+  { year: "2026", event: "Operations added as the sixth pillar — recognizing that the $1 trillion administrative infrastructure of US healthcare is not a backdrop to transformation but a primary determinant of whether it succeeds or fails. Performance Index extended with administrative cost ratio, revenue cycle performance, and workforce operational readiness sub-metrics." },
 ];
 
 export default function MissionPage() {
@@ -181,7 +181,7 @@ export default function MissionPage() {
                 Every insight must answer six questions before it reaches you.
               </h2>
               <p className="text-slate-600 text-lg leading-relaxed">
-                HTR's original three-pillar framework was built on the premise that Policy, Economics, and Technology are the primary levers of health system transformation. After five years of evidence, we know that framework was incomplete. Clinical effectiveness, equity, and operational execution are not downstream considerations — they are foundational.
+                Six questions. Every analysis. No exceptions. HTR's framework treats Policy, Economics, Technology, Clinical, Equity, and Operations as co-equal structural variables — because health system transformation fails when any one of them is ignored.
               </p>
             </div>
             <Link
@@ -231,7 +231,7 @@ export default function MissionPage() {
               Our Journey
             </span>
             <h2 className="text-4xl font-black tracking-tight">
-              From three pillars to six. The evolution of HTR.
+              The evolution of HTR.
             </h2>
           </div>
           <div className="relative">
