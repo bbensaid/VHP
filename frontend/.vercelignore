@@ -1,0 +1,8 @@
+# Exclude Sanity Studio (separate project, deploys via `sanity deploy`)
+sanity/
+
+# Exclude local Next.js build artifacts
+.next/
+
+# Exclude test/debug files
+*.test.*
