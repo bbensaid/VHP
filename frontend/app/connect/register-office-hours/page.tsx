@@ -29,8 +29,8 @@ export default function RegisterOfficeHoursPage() {
         },
         {
           icon: '📋',
-          title: 'Five-Pillar Schedule',
-          description: 'Six sessions monthly, each anchored to one of the Six Pillars (Policy, Economics, Technology, Clinical, Equity) plus one open cross-pillar session every other week.',
+          title: 'Six-Pillar Schedule',
+          description: 'Six sessions monthly, each anchored to one of the Six Pillars (Policy, Economics, Technology, Clinical, Equity, Operations) plus one open cross-pillar session every other week.',
         },
       ]}
       steps={[

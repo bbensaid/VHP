@@ -32,8 +32,8 @@ const faqs = [
     icon: "🏛️",
     items: [
       {
-        q: "Why did HTR expand from three pillars to six?",
-        a: "The original HTR framework covered Policy, Economics, and Technology — the three structural levers most visible in federal and state transformation programs. After five years of implementation data, it became clear that Clinical effectiveness, Equity, and Operations each operate as independent structural variables. A health system can achieve strong policy scores and solid economics while delivering clinically ineffective care in inequitable patterns — or failing entirely at the operational execution layer. Clinical, Equity, and Operations are now first-class pillars with their own sub-metrics, weighting, and dedicated principal analysts.",
+        q: "Why does HTR use six pillars instead of fewer?",
+        a: "Because health system transformation fails along six distinct structural fault lines — not three. Policy determines what is permissible. Economics determines what is sustainable. Technology determines what is possible. Clinical determines what is effective. Equity determines who actually benefits. Operations determines whether it can be executed at scale. A transformation analysis that skips any of these six questions is not incomplete — it is dangerous. Each pillar has its own sub-metrics, weighting, and dedicated principal analyst.",
       },
       {
         q: "What are the six pillars and their guiding questions?",
@@ -41,7 +41,7 @@ const faqs = [
       },
       {
         q: "Does HTR cover all six pillars equally in its content library?",
-        a: "Our goal is full coverage across all six pillars. Policy and Economics have the deepest historical archives. Technology coverage expanded significantly in 2024 with AI deployment content. Clinical and Equity pillars launched in 2024 and now have dedicated research pipelines. Operations was added as the sixth pillar in 2026, with coverage focused on revenue cycle, workforce capacity, and administrative infrastructure. As of 2026, all six pillars have dedicated principal analysts and quarterly deep-dive publication schedules.",
+        a: "Our goal is full coverage across all six pillars. Policy and Economics have the deepest content archives. Technology coverage is extensive, with particular depth in AI deployment and digital health. Clinical and Equity have dedicated research pipelines producing quarterly deep-dive reports. Operations coverage focuses on revenue cycle performance, workforce capacity, compliance infrastructure, and supply chain readiness. All six pillars have dedicated principal analysts and quarterly publication schedules.",
       },
       {
         q: "How does the Equity pillar differ from existing diversity reporting?",
@@ -89,7 +89,7 @@ const faqs = [
       },
       {
         q: "Does HTR publish political viewpoints?",
-        a: "No. HTR analysis is non-partisan by design. Our editorial standard requires that policy analysis presents the evidence — including evidence that challenges prevailing political positions from any direction — without advocacy. We cover CMS rulemaking, state legislation, and federal appropriations purely through the lens of their measurable impact on the five pillar dimensions.",
+        a: "No. HTR analysis is non-partisan by design. Our editorial standard requires that policy analysis presents the evidence — including evidence that challenges prevailing political positions from any direction — without advocacy. We cover CMS rulemaking, state legislation, and federal appropriations purely through the lens of their measurable impact on the six pillar dimensions.",
       },
     ],
   },
@@ -185,7 +185,7 @@ export default function FAQPage() {
             <span className="text-indigo-400">Questions</span>
           </h1>
           <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
-            Everything you need to know about our methodology, the five-pillar framework, membership tiers, and how to engage our advisory team.
+            Everything you need to know about our methodology, the six-pillar framework, membership tiers, and how to engage our advisory team.
           </p>
         </div>
       </section>

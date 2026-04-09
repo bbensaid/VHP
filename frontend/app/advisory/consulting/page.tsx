@@ -49,7 +49,7 @@ const SIX_SERVICE_CARDS = [
     pillar: "economics" as const,
     icon: "🤝",
     title: "M&A Integration Strategy",
-    description: "Cultural and technical roadmap design for hospital system consolidation, medical group acquisition, and post-merger integration — across all five pillar dimensions simultaneously.",
+    description: "Cultural and technical roadmap design for hospital system consolidation, medical group acquisition, and post-merger integration — across all six pillar dimensions simultaneously.",
     bullets: ["Multi-Pillar Operational Due Diligence", "Technology Stack Rationalization", "Clinical Governance Design", "Culture Integration Playbook"],
   },
 ];

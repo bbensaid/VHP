@@ -168,7 +168,7 @@ export default function OperationsPage() {
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl font-black tracking-tight text-slate-900 mb-4">
-          See how Operations connects to the other five pillars of the HTR framework.
+          See how Operations connects to the other five pillars.
         </h2>
         <p className="text-lg text-slate-500 mb-8 max-w-xl mx-auto">
           No transformation analysis is complete until operational executability is confirmed.

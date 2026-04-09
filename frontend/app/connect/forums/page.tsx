@@ -2,7 +2,7 @@ import ConnectEarlyAccess from '@/components/connect/ConnectEarlyAccess'
 
 export const metadata = {
   title: 'Join a Pillar Circle | HTR Connect',
-  description: 'Join an HTR Connect Pillar Circle — moderated asynchronous discussion forums organized by the Five-Pillar Framework, with HTR expert responses within 48 hours.',
+  description: 'Join an HTR Connect Pillar Circle — moderated asynchronous discussion forums organized by the Six-Pillar Framework, with HTR expert responses within 48 hours.',
 }
 
 export default function ForumsPage() {
@@ -10,7 +10,7 @@ export default function ForumsPage() {
     <ConnectEarlyAccess
       icon="💬"
       title="Join a Pillar Circle"
-      subtitle="Five moderated discussion forums — one per pillar — where healthcare leaders exchange questions, analysis, and experience. Every question answered by a named HTR expert within 48 hours."
+      subtitle="Six moderated discussion forums — one per pillar — where healthcare leaders exchange questions, analysis, and experience. Every question answered by a named HTR expert within 48 hours."
       features={[
         {
           icon: '⚖️',
@@ -36,6 +36,11 @@ export default function ForumsPage() {
           icon: '🌍',
           title: 'Health Equity Circle',
           description: 'SDOH screening and response, CMS health equity measures, disparity data analysis, community benefit strategy, language access, and DEI in clinical settings.',
+        },
+        {
+          icon: '⚙️',
+          title: 'Operations Circle',
+          description: 'Revenue cycle management, workforce capacity planning, compliance infrastructure, payer network operations, and supply chain strategy for health system transformation.',
         },
       ]}
       steps={[

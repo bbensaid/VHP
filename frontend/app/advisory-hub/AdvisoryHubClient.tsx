@@ -10,7 +10,7 @@ const SERVICES = [
     href: '/advisory/consulting',
     icon: '💼',
     label: 'Strategic Consulting',
-    desc: 'C-suite strategy across regulatory compliance, value-based care design, digital transformation, clinical operations, and M&A integration. We work directly with CEOs, CMOs, CFOs, and boards to turn Five-Pillar analysis into actionable organizational decisions.',
+    desc: 'C-suite strategy across regulatory compliance, value-based care design, digital transformation, clinical operations, and M&A integration. We work directly with CEOs, CMOs, CFOs, and boards to turn Six-Pillar analysis into actionable organizational decisions.',
     pillars: ['Policy', 'Economics', 'Clinical'],
     accentBg: 'bg-fuchsia-50',
     accentBorder: 'border-fuchsia-200',
@@ -182,7 +182,7 @@ export default function AdvisoryHubClient() {
       badgeLabel="HTR Advisory"
       badgeClass="bg-fuchsia-50 text-fuchsia-700 border border-fuchsia-100"
       title="HTR Advisory"
-      subtitle={`8 practice areas anchored in the Five-Pillar Framework — ${statsStr}`}
+      subtitle={`8 practice areas anchored in the Six-Pillar Framework — ${statsStr}`}
       backLink="/advisory"
       backLabel="← Advisory"
       backLinkHoverClass="hover:text-fuchsia-600"
