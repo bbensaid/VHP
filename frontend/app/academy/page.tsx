@@ -30,8 +30,8 @@ export default function AcademyHub() {
       <div className="max-w-5xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-black text-slate-900 mb-2">What the Academy Covers</h2>
         <p className="text-slate-500 mb-10 max-w-2xl">
-          Every program is anchored in the HTR Five-Pillar Framework — Policy, Economics, Technology,
-          Clinical, and Equity. Content is produced by practitioners and updated as the landscape shifts.
+          Every program is anchored in the HTR Six-Pillar Framework — Policy, Economics, Technology,
+          Clinical, Equity, and Operations. Content is produced by practitioners and updated as the landscape shifts.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">
