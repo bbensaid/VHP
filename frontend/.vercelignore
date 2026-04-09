@@ -1,5 +1,6 @@
 # Exclude Sanity Studio (separate project, deploys via `sanity deploy`)
-sanity/
+# Leading slash anchors to the project root so it won't match app/api/webhooks/sanity/
+/sanity/
 
 # Exclude local Next.js build artifacts
 .next/
