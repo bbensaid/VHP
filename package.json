@@ -1,0 +1,5 @@
+{
+  "name": "vermont-health-platform",
+  "private": true,
+  "workspaces": ["frontend"]
+}
