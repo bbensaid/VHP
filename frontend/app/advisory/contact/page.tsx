@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Link from "next/link";
 import ContactForm from "./ContactForm";
 
@@ -34,7 +35,7 @@ export default function ContactPage() {
           <div className="bg-white p-8 md:p-12 rounded-xl shadow-xl border border-gray-200 md:w-2/3">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Submit an Inquiry</h3>
             <p className="text-slate-500 text-sm mb-8">Complete all required fields (*). The more detail you provide, the better we can scope your engagement.</p>
-            <ContactForm />
+            <Suspense><ContactForm /></Suspense>
           </div>
 
           {/* RIGHT: Trust Signals + Contact Info */}
