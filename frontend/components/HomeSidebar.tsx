@@ -297,13 +297,13 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
               {/* L1 header button */}
               <button
                 onClick={() => handleSectionClick(section.id)}
-                className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl border-4 ${section.borderAccent} transition-colors text-left ${
+                className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl border ${section.borderAccent} transition-colors text-left ${
                   isOpen ? section.headerBg : `${section.collapsedBg} dark:bg-slate-800 ${section.hoverBg}`
                 }`}
               >
                 <span className="flex items-center gap-2">
                   <SectionIcon className={`w-4 h-4 shrink-0 ${section.headerColor}`} />
-                  <span className={`text-[11px] font-black uppercase tracking-[0.13em] ${section.headerColor}`}>
+                  <span className={`text-[11px] font-semibold uppercase tracking-[0.13em] ${section.headerColor}`}>
                     {section.label}
                   </span>
                 </span>
@@ -429,13 +429,13 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
         <Link
           href="/saved"
           onClick={onNavigate}
-          className={`flex items-center justify-between px-3 py-2.5 rounded-xl border-4 border-slate-400 transition-colors ${
+          className={`flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-300 transition-colors ${
             isActive("/saved") ? "bg-slate-100 dark:bg-slate-700" : "bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700"
           }`}
         >
           <span className="flex items-center gap-2">
             <BookmarkIcon className="w-4 h-4 shrink-0 text-slate-500 dark:text-slate-400" />
-            <span className="text-[11px] font-black uppercase tracking-[0.13em] text-slate-500 dark:text-slate-400">
+            <span className="text-[11px] font-semibold uppercase tracking-[0.13em] text-slate-500 dark:text-slate-400">
               My Library
             </span>
           </span>
