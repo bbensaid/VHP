@@ -73,7 +73,7 @@ export default function ResearchPage() {
     <div className="bg-white min-h-screen pb-20">
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <div className="bg-slate-50 text-slate-900 py-24 border-b border-slate-200">
+      <div className="bg-slate-50 text-slate-900 py-8 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-center gap-2 mb-4">
             <span className="bg-rose-100 text-rose-700 border border-rose-200 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
@@ -81,10 +81,10 @@ export default function ResearchPage() {
             </span>
             <span className="text-slate-400 text-xs">All 6 Pillars</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6">
             Custom Research & <span className="text-rose-600">Analysis</span>
           </h1>
-          <p className="text-xl text-slate-600 max-w-2xl leading-relaxed mb-8">
+          <p className="text-base text-slate-600 max-w-2xl leading-relaxed mb-8">
             We deploy the HTR 6-pillar intelligence framework to answer specific strategic questions for health systems, investors, government agencies, and academic institutions. Commission bespoke analysis on any healthcare question — from &quot;The Economics of CRISPR in Rural Hospitals&quot; to &quot;State-Level Telehealth Policy Forecasts.&quot;
           </p>
           <div className="flex flex-wrap gap-2">

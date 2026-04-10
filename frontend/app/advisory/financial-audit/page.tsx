@@ -14,7 +14,7 @@ export default function FinancialAuditPage() {
     <div className="bg-white min-h-screen pb-20">
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <div className="bg-slate-50 text-slate-900 py-24 border-b border-slate-200">
+      <div className="bg-slate-50 text-slate-900 py-8 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-center gap-2 mb-4">
             <span className="bg-emerald-100 text-emerald-700 border border-emerald-200 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
@@ -22,10 +22,10 @@ export default function FinancialAuditPage() {
             </span>
             <span className="text-slate-400 text-xs">Economics Pillar</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 leading-tight">
             Financial Auditing & <span className="text-emerald-600">Revenue Cycle</span>
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl leading-relaxed mb-8">
+          <p className="text-base text-slate-600 max-w-3xl leading-relaxed mb-8">
             Unlike traditional financial audits focused on GAAP compliance, HTR Advisory targets the <strong>economic leakage points unique to healthcare</strong> — denial rates, payer mix optimization, coding accuracy, cost-per-episode analysis, and staffing efficiency. We find the revenue you&apos;re leaving on the table.
           </p>
           <div className="flex flex-wrap gap-3">

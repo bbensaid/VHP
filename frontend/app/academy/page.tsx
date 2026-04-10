@@ -9,20 +9,12 @@ export default function AcademyHub() {
   return (
     <div className="min-h-screen bg-white">
 
-      {/* Hero */}
-      <div className="bg-slate-950 text-white">
-        <div className="max-w-5xl mx-auto px-6 py-20">
-          <span className="text-[10px] font-black uppercase tracking-widest text-sky-400 block mb-4">
-            HTR Academy
-          </span>
-          <h1 className="text-5xl font-black tracking-tight mb-5 leading-tight">
-            Intelligence &amp; Masterclasses
-          </h1>
-          <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
-            Executive education built for healthcare leaders who need to understand policy, economics,
-            technology, clinical transformation, and equity — not as separate disciplines, but as one
-            integrated system.
-          </p>
+      {/* Page header */}
+      <div className="bg-slate-950 text-white border-b border-slate-800">
+        <div className="max-w-5xl mx-auto px-6 py-4">
+          <span className="text-[10px] font-semibold uppercase tracking-widest text-sky-400 block mb-0.5">HTR Academy</span>
+          <h1 className="text-xl font-bold tracking-tight">Intelligence &amp; Masterclasses</h1>
+          <p className="text-sm text-slate-400 mt-0.5 max-w-2xl">Executive education for healthcare leaders — policy, economics, technology, clinical, equity, and operations as one integrated system.</p>
         </div>
       </div>
 

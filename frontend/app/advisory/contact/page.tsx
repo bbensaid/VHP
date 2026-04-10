@@ -13,15 +13,15 @@ export default function ContactPage() {
     <div className="bg-white min-h-screen pb-20">
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <div className="bg-slate-50 text-slate-900 py-20 border-b border-slate-200">
+      <div className="bg-slate-50 text-slate-900 py-8 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl text-center">
           <span className="text-fuchsia-600 font-bold uppercase tracking-widest text-xs mb-4 block">
             Start an Engagement
           </span>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight leading-tight">
+          <h1 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight leading-tight">
             Let&apos;s Talk About Your Challenge
           </h1>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Whether you need a 2-week policy brief or a 12-month transformation advisory — tell us what you&apos;re facing and we&apos;ll scope the right engagement.
           </p>
         </div>

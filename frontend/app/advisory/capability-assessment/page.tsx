@@ -24,7 +24,7 @@ export default function CapabilityAssessmentPage() {
     <div className="bg-white min-h-screen pb-20">
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <div className="bg-slate-50 text-slate-900 py-24 border-b border-slate-200">
+      <div className="bg-slate-50 text-slate-900 py-8 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-center gap-2 mb-4">
             <span className="bg-sky-100 text-sky-700 border border-sky-200 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
@@ -32,10 +32,10 @@ export default function CapabilityAssessmentPage() {
             </span>
             <span className="text-slate-400 text-xs">All 6 Pillars</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 leading-tight">
             Capability & Maturity <span className="text-sky-600">Assessments</span>
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl leading-relaxed mb-8">
+          <p className="text-base text-slate-600 max-w-3xl leading-relaxed mb-8">
             Before embarking on transformation, organizations need an honest answer to one question: <strong>&quot;Are we ready?&quot;</strong> HTR Advisory&apos;s proprietary <strong>Organizational Readiness Framework (ORF)</strong> benchmarks your maturity across 7 domains using a national peer comparison database — so you know exactly where you stand.
           </p>
           <div className="flex flex-wrap gap-3">

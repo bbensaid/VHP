@@ -81,7 +81,7 @@ export default function TrainingPage() {
     <div className="bg-white min-h-screen pb-20">
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <div className="bg-slate-50 text-slate-900 py-24 border-b border-slate-200">
+      <div className="bg-slate-50 text-slate-900 py-8 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-center gap-2 mb-4">
             <span className="bg-purple-100 text-purple-700 border border-purple-200 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
@@ -89,10 +89,10 @@ export default function TrainingPage() {
             </span>
             <span className="text-slate-400 text-xs">All 6 Pillars</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 leading-tight">
             Training & Executive <span className="text-purple-600">Education</span>
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl leading-relaxed mb-8">
+          <p className="text-base text-slate-600 max-w-3xl leading-relaxed mb-8">
             Healthcare-specific professional development that bridges the gap between policy awareness and operational execution. Built on the same frameworks we use in live engagements. Taught by <strong>practitioners, not academics</strong> — across all six pillars.
           </p>
           <div className="flex flex-wrap gap-3">

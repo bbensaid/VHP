@@ -184,7 +184,7 @@ export default function AboutPage() {
     <div className="bg-white font-sans text-slate-800 min-h-screen">
       
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-indigo-700 text-white py-24 md:py-32">
+      <section className="relative overflow-hidden bg-indigo-700 text-white py-10 md:py-14">
         {/* Subtle grid texture */}
         <div
           className="absolute inset-0 opacity-[0.04]"
@@ -202,12 +202,10 @@ export default function AboutPage() {
             <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-indigo-100 mb-6 border border-indigo-500 bg-indigo-600/40 px-4 py-1.5 rounded-full">
               About Health Transformation Review
             </span>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[0.9] mb-8">
-              The Intelligence<br />
-              <span className="text-indigo-400">Layer</span> Between<br />
-              Data and Decision.
+            <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight mb-6">
+              The Intelligence <span className="text-indigo-400">Layer</span> Between Data and Decision.
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mb-10">
+            <p className="text-base text-slate-300 leading-relaxed max-w-2xl mb-6">
               HTR is the only cross-disciplinary intelligence platform purpose-built for health system transformation. We translate the intersection of six critical domains into actionable intelligence for the executives, policymakers, and clinicians who are doing the work.
             </p>
             <div className="flex flex-wrap gap-4">

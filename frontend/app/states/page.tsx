@@ -41,35 +41,30 @@ export default function StatesPage() {
   return (
     <div className="w-full font-sans text-slate-800 flex flex-col pb-20">
 
-      {/* ── Hero ─────────────────────────────────────────────────────── */}
-      <div className="bg-slate-50 border-b border-slate-200 py-16 px-8 mb-8">
-        <div className="max-w-5xl mx-auto">
-          <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 border border-indigo-200 text-xs font-bold px-3 py-1.5 rounded-full mb-4">
-            <MapPinIcon className="w-3.5 h-3.5" />
-            State Health Initiatives
+      {/* ── Page Header ──────────────────────────────────────────────── */}
+      <div className="bg-slate-50 border-b border-slate-200 py-4 px-8 mb-8">
+        <div className="max-w-5xl mx-auto flex items-center justify-between flex-wrap gap-4">
+          <div>
+            <div className="inline-flex items-center gap-1.5 bg-indigo-100 text-indigo-700 border border-indigo-200 text-xs font-semibold px-2.5 py-1 rounded-full mb-1.5">
+              <MapPinIcon className="w-3 h-3" />
+              State Health Initiatives
+            </div>
+            <h1 className="text-2xl font-bold text-slate-900 tracking-tight">State-by-State Health Reform</h1>
           </div>
-          <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-4">
-            State-by-State Health Reform
-          </h1>
-          <p className="text-slate-600 text-lg leading-relaxed max-w-3xl">
-            Every state is experimenting with how to deliver, finance, and improve health care. Explore
-            Medicaid waivers, public options, global budgets, behavioral health integration, and other
-            landmark initiatives across all 50 states.
-          </p>
-          <div className="flex gap-6 mt-8 text-sm">
+          <div className="flex gap-6 text-sm shrink-0">
             <div>
-              <span className="text-3xl font-black text-indigo-600">{allStates.length}</span>
-              <span className="block text-slate-500 text-xs font-semibold uppercase tracking-wide mt-0.5">States Tracked</span>
+              <span className="text-2xl font-black text-indigo-600">{allStates.length}</span>
+              <span className="block text-slate-500 text-xs font-semibold uppercase tracking-wide mt-0.5">States</span>
             </div>
             <div className="w-px bg-slate-200" />
             <div>
-              <span className="text-3xl font-black text-indigo-600">{totalInitiatives}</span>
-              <span className="block text-slate-500 text-xs font-semibold uppercase tracking-wide mt-0.5">Active Initiatives</span>
+              <span className="text-2xl font-black text-indigo-600">{totalInitiatives}</span>
+              <span className="block text-slate-500 text-xs font-semibold uppercase tracking-wide mt-0.5">Initiatives</span>
             </div>
             <div className="w-px bg-slate-200" />
             <div>
-              <span className="text-3xl font-black text-indigo-600">4</span>
-              <span className="block text-slate-500 text-xs font-semibold uppercase tracking-wide mt-0.5">Regions Covered</span>
+              <span className="text-2xl font-black text-indigo-600">4</span>
+              <span className="block text-slate-500 text-xs font-semibold uppercase tracking-wide mt-0.5">Regions</span>
             </div>
           </div>
         </div>

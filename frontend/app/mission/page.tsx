@@ -94,7 +94,7 @@ export default function MissionPage() {
         <div className="absolute bottom-0 left-1/4 w-125 h-125 bg-violet-600/10 rounded-full blur-3xl translate-y-1/2 pointer-events-none" />
         <div className="absolute top-0 right-0 w-100 h-100 bg-indigo-600/10 rounded-full blur-3xl -translate-y-1/3 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
           <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-10 border border-indigo-800 bg-indigo-900/40 px-4 py-1.5 rounded-full">
             Mission & Vision
           </span>

@@ -37,34 +37,12 @@ export default function OperationsPage() {
   return (
     <div className="bg-white font-sans text-slate-800 min-h-screen">
 
-      {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative bg-teal-700 text-white overflow-hidden py-24 md:py-32">
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)",
-            backgroundSize: "48px 48px",
-          }}
-        />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-teal-600/10 rounded-full blur-3xl -translate-y-1/3 pointer-events-none" />
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-teal-200 mb-6 border border-teal-500 bg-teal-600/40 px-4 py-1.5 rounded-full">
-              Intelligence Pillar 06
-            </span>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[0.9] mb-8">
-              Operations<br />
-              <span className="text-teal-300">Intelligence</span>
-            </h1>
-            <p className="text-xl text-teal-100 leading-relaxed max-w-2xl mb-6">
-              The $1 trillion administrative infrastructure of US healthcare is not a backdrop to transformation — it is a primary determinant of whether transformation succeeds or fails.
-            </p>
-            <p className="text-lg text-teal-200 leading-relaxed max-w-2xl">
-              HTR's Operations pillar asks the question every strategy ignores: <strong className="text-white">"Is it executable?"</strong> Revenue cycles, workforce systems, supply chains, compliance infrastructure, and payer operations are the machinery that carries or kills every policy reform and clinical innovation.
-            </p>
-          </div>
+      {/* ── PAGE HEADER ──────────────────────────────────────────────────── */}
+      <section className="bg-teal-700 text-white py-4 border-b border-teal-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="text-[10px] font-semibold uppercase tracking-widest text-teal-300 block mb-0.5">Intelligence Pillar 06</span>
+          <h1 className="text-xl font-bold tracking-tight uppercase">Operations Intelligence</h1>
+          <p className="text-sm text-teal-200/80 mt-0.5 max-w-2xl">The machinery that carries or kills every policy reform — revenue cycles, workforce systems, supply chains, compliance, and payer operations.</p>
         </div>
       </section>
 

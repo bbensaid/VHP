@@ -12,11 +12,11 @@ export default function ServicesPage() {
     <div className="bg-white min-h-screen pb-20">
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <div className="bg-slate-50 text-slate-900 py-20 border-b border-slate-200">
+      <div className="bg-slate-50 text-slate-900 py-8 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <span className="text-fuchsia-600 font-bold uppercase tracking-widest text-xs mb-3 block">HTR Advisory</span>
-          <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">All Services</h1>
-          <p className="text-xl text-slate-600 max-w-3xl leading-relaxed">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-4">All Services</h1>
+          <p className="text-base text-slate-600 max-w-3xl leading-relaxed">
             Eight practice areas spanning all six HTR pillars. Every service is grounded in the same daily intelligence research that powers the HTR platform — applied to your specific strategic challenge.
           </p>
         </div>

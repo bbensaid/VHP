@@ -83,25 +83,22 @@ export function PillarHub({
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900 pb-20 font-sans text-slate-800 dark:text-slate-100">
       
-      {/* 1. HERO HEADER - Snaps to Global Grid */}
-      <header className={`${theme.header} text-white py-16 border-b-4 border-black/10`}>
+      {/* 1. PAGE HEADER */}
+      <header className={`${theme.header} text-white py-4 border-b border-black/10`}>
         <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-4 uppercase">
+          <div className="max-w-3xl">
+            <h1 className="text-xl font-bold tracking-tight uppercase mb-0.5">
               {pillarName}
             </h1>
-            <p className="text-xl md:text-2xl font-medium text-white/90 tracking-wide mb-6">
+            <p className="text-sm text-white/70 leading-snug">
               {tagline}
-            </p>
-            <p className="text-lg text-white/80 leading-relaxed">
-              {description}
             </p>
           </div>
         </div>
       </header>
 
       {/* 2. LEAD STORY SECTION */}
-      <section className="relative -mt-8 z-10">
+      <section className="relative z-10">
         <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className={`bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col md:flex-row min-h-100 transition-colors ${theme.hoverCard}`}>
             
