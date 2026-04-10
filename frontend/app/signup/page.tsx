@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { Suspense, useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { createBrowserClient } from "@supabase/ssr";
@@ -11,6 +11,10 @@ const supabase = createBrowserClient(
 );
 
 export default function SignupPage() {
+  return <Suspense><SignupForm /></Suspense>;
+}
+
+function SignupForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [fullName, setFullName] = useState("");

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import LearningTracksHub from "@/components/academy/LearningTracksHub";
 
 export const metadata = {
@@ -7,5 +8,9 @@ export const metadata = {
 };
 
 export default function LearningTracksPage() {
-  return <LearningTracksHub />;
+  return (
+    <Suspense>
+      <LearningTracksHub />
+    </Suspense>
+  );
 }
