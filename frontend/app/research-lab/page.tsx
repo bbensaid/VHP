@@ -15,20 +15,12 @@ export default async function ResearchLabPage() {
   return (
     <div className="min-h-screen bg-white">
 
-      {/* Hero */}
-      <div className="bg-slate-950 text-white">
-        <div className="max-w-5xl mx-auto px-6 py-20">
-          <span className="text-[10px] font-black uppercase tracking-widest text-amber-400 block mb-4">
-            HTR Research Lab
-          </span>
-          <h1 className="text-5xl font-black tracking-tight mb-5 leading-tight">
-            19 Interactive Analytical Tools
-          </h1>
-          <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
-            The most comprehensive health transformation research environment available — spanning
-            interoperability, payment innovation, population health, policy sciences, AI governance,
-            and workforce strategy.
-          </p>
+      {/* Page header */}
+      <div className="bg-slate-950 text-white border-b border-slate-800">
+        <div className="max-w-5xl mx-auto px-6 py-4">
+          <span className="text-[10px] font-semibold uppercase tracking-widest text-amber-400 block mb-0.5">HTR Research Lab</span>
+          <h1 className="text-xl font-bold tracking-tight">19 Interactive Analytical Tools</h1>
+          <p className="text-sm text-slate-400 mt-0.5 max-w-2xl">Interoperability, payment innovation, population health, policy sciences, AI governance, and workforce strategy.</p>
         </div>
       </div>
 

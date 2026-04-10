@@ -14,7 +14,7 @@ export default function ITConsultingPage() {
     <div className="bg-white min-h-screen pb-20">
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <div className="bg-slate-50 text-slate-900 py-24 border-b border-slate-200">
+      <div className="bg-slate-50 text-slate-900 py-8 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-center gap-2 mb-4">
             <span className="bg-indigo-100 text-indigo-700 border border-indigo-200 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
@@ -22,10 +22,10 @@ export default function ITConsultingPage() {
             </span>
             <span className="text-slate-400 text-xs">Technology Pillar</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 leading-tight">
             Health IT Project <span className="text-indigo-600">Consulting</span>
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl leading-relaxed mb-8">
+          <p className="text-base text-slate-600 max-w-3xl leading-relaxed mb-8">
             End-to-end advisory for EHR implementations, interoperability programs, AI adoption, and digital health transformation.
             We serve as your <strong>owner&apos;s representative</strong> — protecting your investment against vendor over-promise, scope creep, and go-live failures.
           </p>

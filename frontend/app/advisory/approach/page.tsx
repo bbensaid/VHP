@@ -11,11 +11,11 @@ export default function ApproachPage() {
     <div className="bg-white min-h-screen pb-20">
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <div className="bg-indigo-700 text-white py-24 border-b border-indigo-800">
+      <div className="bg-indigo-700 text-white py-8 border-b border-indigo-800">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <span className="text-fuchsia-400 font-bold uppercase tracking-widest text-xs mb-4 block">HTR Advisory</span>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">How We Work</h1>
-          <p className="text-xl text-slate-300 max-w-3xl leading-relaxed">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 leading-tight">How We Work</h1>
+          <p className="text-base text-slate-300 max-w-3xl leading-relaxed">
             The best consulting advice in the world is worthless if you can&apos;t trust the process that produced it. HTR Advisory operates on a single principle: <strong className="text-white">Evidence-First, Practitioner-Led</strong> — and complete transparency about how we get to our conclusions.
           </p>
         </div>

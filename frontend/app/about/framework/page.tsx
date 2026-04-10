@@ -156,7 +156,7 @@ export default function FrameworkPage() {
     <div className="bg-white font-sans text-slate-800 min-h-screen">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative bg-indigo-700 text-white overflow-hidden py-24 md:py-32">
+      <section className="relative bg-indigo-700 text-white overflow-hidden py-10 md:py-14">
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
@@ -172,14 +172,13 @@ export default function FrameworkPage() {
             <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-indigo-100 mb-6 border border-indigo-500 bg-indigo-600/40 px-4 py-1.5 rounded-full">
               Our Analytical Framework
             </span>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[0.9] mb-8">
-              Six questions.<br />
-              <span className="text-indigo-400">Zero shortcuts.</span>
+            <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight mb-5">
+              Six questions. <span className="text-indigo-400">Zero shortcuts.</span>
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl leading-relaxed mb-6">
+            <p className="text-base text-slate-300 max-w-2xl leading-relaxed mb-4">
               Every analysis HTR publishes must survive interrogation across six dimensions before it reaches you. A recommendation that passes five out of six is not published — because five out of six is how healthcare gets it wrong.
             </p>
-            <p className="text-slate-400 max-w-2xl leading-relaxed">
+            <p className="text-sm text-slate-400 max-w-2xl leading-relaxed">
               This is not an editorial checklist. It is the architectural logic of HTR — the structure that makes cross-disciplinary intelligence possible and the mechanism that catches the blind spots that siloed analysis invariably produces.
             </p>
           </div>

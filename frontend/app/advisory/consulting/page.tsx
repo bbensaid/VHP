@@ -59,17 +59,17 @@ export default function ConsultingPage() {
     <div className="bg-white min-h-screen pb-20">
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <div className="bg-slate-50 text-slate-900 py-24 border-b border-slate-200">
+      <div className="bg-slate-50 text-slate-900 py-8 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-center gap-2 mb-4">
             <span className="text-fuchsia-600 font-bold uppercase tracking-widest text-xs">HTR Advisory</span>
             <span className="text-slate-400">·</span>
             <span className="text-slate-500 text-xs">Spanning All 6 Pillars</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight leading-tight">
+          <h1 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight leading-tight">
             Strategic Consulting
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl leading-relaxed mb-8">
+          <p className="text-base text-slate-600 max-w-3xl leading-relaxed mb-8">
             We partner with C-suite executives to design resilient operational frameworks spanning all six pillars of healthcare transformation: Policy, Economics, Technology, Clinical, Equity, and Operations. We move beyond theory to implement actionable strategies that protect margins, improve clinical outcomes, and advance health equity — simultaneously.
           </p>
           <div className="flex flex-wrap gap-2">

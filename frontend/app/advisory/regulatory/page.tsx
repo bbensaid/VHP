@@ -14,7 +14,7 @@ export default function RegulatoryAdvisoryPage() {
     <div className="bg-white min-h-screen pb-20">
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <div className="bg-indigo-700 text-white py-24 border-b border-indigo-800">
+      <div className="bg-indigo-700 text-white py-8 border-b border-indigo-800">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-center gap-2 mb-4">
             <span className="bg-indigo-600 text-indigo-100 border border-indigo-500 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
@@ -22,10 +22,10 @@ export default function RegulatoryAdvisoryPage() {
             </span>
             <span className="text-indigo-200 text-xs">Policy + All 6 Pillars</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 leading-tight">
             Regulatory & Legislative <span className="text-fuchsia-400">Advisory</span>
           </h1>
-          <p className="text-xl text-slate-300 max-w-3xl leading-relaxed mb-8">
+          <p className="text-base text-slate-300 max-w-3xl leading-relaxed mb-8">
             Advising government regulators, legislative staff, and public health agencies on the <strong className="text-white">design, implementation, and evaluation of health policy</strong>. We translate complex clinical, technological, and economic realities into actionable regulatory frameworks — grounded in daily research, not periodic benchmarks.
           </p>
           <div className="flex flex-wrap gap-3">

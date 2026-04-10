@@ -15,20 +15,20 @@ export default function AdvisoryPage() {
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <div className="relative bg-slate-950 text-white overflow-hidden">
         <div className="absolute inset-0 bg-linear-to-br from-fuchsia-900/30 via-slate-950 to-indigo-900/20 pointer-events-none" />
-        <div className="container mx-auto px-4 md:px-8 max-w-6xl py-28 md:py-36 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 max-w-6xl py-12 md:py-16 relative z-10">
           <div className="flex items-center gap-3 mb-6">
             <span className="text-[10px] font-black uppercase tracking-widest text-fuchsia-400">
               HTR Advisory
             </span>
             <span className="text-slate-400 text-sm">Burlington, VT · Washington, DC</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-8 leading-tight max-w-4xl">
+          <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6 leading-tight max-w-4xl">
             Healthcare Strategy at Every Level of the Enterprise
           </h1>
-          <p className="text-xl text-slate-300 max-w-3xl leading-relaxed mb-4">
+          <p className="text-base text-slate-300 max-w-3xl leading-relaxed mb-3">
             The convergence of <strong className="text-sky-400">Policy</strong>, <strong className="text-emerald-400">Economics</strong>, <strong className="text-indigo-400">Technology</strong>, <strong className="text-red-400">Clinical</strong>, and <strong className="text-violet-400">Equity</strong> creates complexity that generalist consultants cannot navigate.
           </p>
-          <p className="text-xl text-slate-300 max-w-3xl leading-relaxed mb-10">
+          <p className="text-base text-slate-300 max-w-3xl leading-relaxed mb-6">
             <strong className="text-white">HTR Advisory</strong> deploys cross-disciplinary expertise grounded in <em>daily intelligence research</em> — not periodic benchmarks. We compete with McKinsey, Deloitte, and Oliver Wyman on insight quality. We beat them on speed, independence, and depth of domain knowledge.
           </p>
           <div className="flex flex-wrap gap-4">
