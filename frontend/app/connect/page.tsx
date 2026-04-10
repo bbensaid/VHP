@@ -19,7 +19,7 @@ const CONNECT_FEATURES = [
     href:        '/connect/forums',
     emoji:       '💬',
     title:       'Pillar Circles',
-    description: 'Five moderated discussion forums — one per pillar — where members exchange questions, analysis, and experience with expert facilitation.',
+    description: 'Six moderated discussion forums — one per pillar — where members exchange questions, analysis, and experience with expert facilitation.',
     badge:       'Moderated',
     badgeCls:    'bg-indigo-100 text-indigo-700',
   },

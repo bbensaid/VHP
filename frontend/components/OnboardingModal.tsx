@@ -110,7 +110,7 @@ export default function OnboardingModal() {
               </div>
               <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-3">Welcome to HTR</h2>
               <p className="text-slate-500 dark:text-slate-400 mb-6 leading-relaxed">
-                Health Transformation Review is your intelligence platform for understanding and navigating U.S. healthcare reform across five dimensions.
+                Health Transformation Review is your intelligence platform for understanding and navigating U.S. healthcare reform across six dimensions.
               </p>
               <div className="grid grid-cols-2 gap-3 mb-6 text-left">
                 {[

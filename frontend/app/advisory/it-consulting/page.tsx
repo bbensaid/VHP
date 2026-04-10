@@ -132,7 +132,7 @@ export default function ITConsultingPage() {
           <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all">
             <div className="w-10 h-10 bg-indigo-100 text-indigo-700 rounded-lg flex items-center justify-center text-xl mb-4 border border-indigo-200">🤖</div>
             <h3 className="text-lg font-bold text-slate-900 mb-2">AI Governance & Adoption</h3>
-            <p className="text-slate-600 text-sm mb-4">Governance frameworks for clinical AI tools, vendor evaluation, bias monitoring, and responsible deployment across all five clinical and equity dimensions.</p>
+            <p className="text-slate-600 text-sm mb-4">Governance frameworks for clinical AI tools, vendor evaluation, bias monitoring, and responsible deployment across all six HTR pillar dimensions.</p>
             <ul className="space-y-1.5 text-xs text-slate-600 font-medium">
               <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>AI Governance Charter</li>
               <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>Algorithmic Bias Assessment</li>

@@ -17,7 +17,7 @@ export default function ServicesPage() {
           <span className="text-fuchsia-600 font-bold uppercase tracking-widest text-xs mb-3 block">HTR Advisory</span>
           <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">All Services</h1>
           <p className="text-xl text-slate-600 max-w-3xl leading-relaxed">
-            Eight practice areas spanning all five HTR pillars. Every service is grounded in the same daily intelligence research that powers the HTR platform — applied to your specific strategic challenge.
+            Eight practice areas spanning all six HTR pillars. Every service is grounded in the same daily intelligence research that powers the HTR platform — applied to your specific strategic challenge.
           </p>
         </div>
       </div>

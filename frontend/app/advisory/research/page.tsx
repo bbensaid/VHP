@@ -100,7 +100,7 @@ export default function ResearchPage() {
       {/* ── RESEARCH CAPABILITIES ─────────────────────────────────────────── */}
       <div className="container mx-auto px-4 md:px-8 py-16 max-w-5xl">
         <h2 className="text-2xl font-bold text-slate-900 mb-2">Research Capabilities</h2>
-        <p className="text-slate-500 mb-8">Eight research practice areas spanning all five HTR pillars.</p>
+        <p className="text-slate-500 mb-8">Eight research practice areas spanning all six HTR pillars.</p>
         <div className="grid md:grid-cols-2 gap-6">
           {CAPABILITIES.map((cap) => (
             <div key={cap.title} className="p-8 border border-slate-200 rounded-xl hover:border-rose-400 hover:shadow-lg transition-all bg-white">

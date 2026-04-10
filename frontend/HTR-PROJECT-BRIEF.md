@@ -27,14 +27,14 @@
 ## Content Types in Sanity
 | Type | Used For |
 |---|---|
-| `policyAnalysis` | Pillar articles (Policy/Economics/Technology/Clinical/Equity) |
+| `policyAnalysis` | Pillar articles (Policy/Economics/Technology/Clinical/Equity/Operations) |
 | `academyModule` | HTR Academy course modules |
 | `course` | Course listing pages (existing) |
 | `caseStudy`, `webinar`, `report` | Other academy content (existing) |
 
-## The 5 HTR Pillars
-Policy · Economics · Technology · Clinical · Equity
-Pillar colors: Policy=orange, Economics=emerald, Technology=indigo, Clinical=rose, Equity=violet
+## The 6 HTR Pillars
+Policy · Economics · Technology · Clinical · Equity · Operations
+Pillar colors: Policy=orange, Economics=emerald, Technology=indigo, Clinical=rose, Equity=violet, Operations=teal
 
 ## Article Generation
 - Prompt: `ultimate_prompt_v3.txt` (in outputs/htr-content/)
@@ -50,7 +50,7 @@ Pillar colors: Policy=orange, Economics=emerald, Technology=indigo, Clinical=ros
 - ArticleContent.tsx has explicit Tailwind classes on all block styles (no prose wrapper dependency)
 - ArticleEngine.tsx uses `{ cache: "no-store" }` to bypass CDN cache after publishing
 - Academy modules use separate `academyModule` schema with courseTitle, moduleNumber, learningObjectives, prevModuleSlug/nextModuleSlug navigation fields
-- policyAnalysis schema has all 5 pillars in dropdown (was only 3 — fixed)
+- policyAnalysis schema has all 6 pillars in dropdown (was only 3 — fixed, Operations added later)
 
 ## Content Generated So Far
 - 20 policyAnalysis articles (all pillars, in outputs/htr-content/articles/)
