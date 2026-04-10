@@ -242,7 +242,7 @@ export default function FrameworkPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-14">
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
-              Why Four Out of Five Is Not Enough
+              Why Five Out of Six Is Not Enough
             </span>
             <h2 className="text-4xl font-black tracking-tight text-slate-900 mb-4">
               The failure modes the framework prevents.

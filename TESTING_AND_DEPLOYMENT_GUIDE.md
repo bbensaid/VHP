@@ -41,9 +41,9 @@ The HTR platform exists to give healthcare leaders — hospital executives, stat
 
 ---
 
-## 1.2 The Five Pillars — Explained Simply
+## 1.2 The Six Pillars — Explained Simply
 
-The five pillars are the five structural forces that determine whether a healthcare system is transforming toward sustainability or drifting toward fragility. Think of them as five lenses through which to analyze any healthcare situation.
+The six pillars are the six structural forces that determine whether a healthcare system is transforming toward sustainability or drifting toward fragility. Think of them as six lenses through which to analyze any healthcare situation.
 
 ### Pillar 1: Policy
 *What the rules allow and require.*
@@ -126,6 +126,22 @@ Equity carries a 20% weight in the HTI — equal to Digital Maturity and Clinica
 - **Health equity** — the state in which every person has a fair and just opportunity to achieve their highest level of health. Not equality (same for everyone) but equity (what each person needs)
 - **Disparities** — measurable differences in health outcomes between population groups (racial, economic, geographic) that are not explained by clinical factors
 - **CHW** (Community Health Worker) — a trained community member who bridges clinical care and community resources, often the most effective intervention for SDOH integration
+
+---
+
+### Pillar 6: Operations
+*Whether transformation is executable.*
+
+Operations is the pillar that makes all other pillars real. A health system can have perfect policy conditions, solid economics, advanced technology, strong clinical outcomes, and equity ambitions — and still fail if the operational infrastructure cannot execute. Revenue cycle integrity, workforce capacity, supply chain resilience, payer network management, and compliance infrastructure determine whether strategic intent becomes operational reality.
+
+Operations was added as the sixth pillar because the most common cause of healthcare transformation failure is not strategic error — it is operational drag. Organizations that cannot staff care models, cannot collect revenue reliably, or cannot manage regulatory complexity will not sustain transformation regardless of policy conditions.
+
+**What this means for content quality:** Operations articles should connect operational capabilities to transformation outcomes. Not "revenue cycle is important" but "organizations in the top quartile of clean claim rate (≥97%) show 14-point higher VBC contract performance scores, suggesting operational execution is a necessary precondition for value-based care sustainability."
+
+**Key terms to know:**
+- **Revenue cycle** — the end-to-end process of capturing, coding, submitting, and collecting payment for clinical services. Breakdowns here directly threaten operating margin
+- **Workforce planning** — the systematic process of projecting staffing needs against projected care volumes, accounting for turnover, credentialing timelines, and emerging care model requirements
+- **Payer mix** — the distribution of patients across payment sources (Medicare, Medicaid, commercial, self-pay), which drives both revenue levels and administrative complexity
 
 ---
 
@@ -510,7 +526,7 @@ Before generating any content, understand what you're aiming for. Use these stan
 - Good: "A 2023 JAMA study of Brigham and Women's Hospital's Acute Care for Elders at Home program showed 30-day readmission rates of 8.6% compared to 15.4% for matched inpatient controls (p<0.001)."
 
 **Standard 3: Explicit pillar connections**
-Every piece of content should clearly connect to one or more of the five pillars. A policy analysis about CMS rulemaking affects Policy (obviously) but may also affect Economics (payment rates) and Technology (prior authorization reform). Good content makes these connections explicit.
+Every piece of content should clearly connect to one or more of the six pillars. A policy analysis about CMS rulemaking affects Policy (obviously) but may also affect Economics (payment rates) and Technology (prior authorization reform). Good content makes these connections explicit.
 
 **Standard 4: Actionable for the audience**
 The audience is healthcare executives and policymakers. Content should tell them what to *do* or *think about differently*, not just what is happening. The question to ask: "So what?" A CFO reading this should know whether this changes her organization's financial planning.
@@ -537,12 +553,12 @@ Requirements:
 - Cite specific legislation, rule numbers, or regulatory documents by name
 - Include at least three specific data points (dollar amounts, percentages, dates)
 - Explain what this policy change means for: (1) hospital operators, (2) payers, (3) patients
-- Connect explicitly to at least two of the five pillars: Policy, Economics, Technology, Clinical, Equity
+- Connect explicitly to at least two of the six pillars: Policy, Economics, Technology, Clinical, Equity, Operations
 - End with a "What to Watch" section: one paragraph on the 2–3 leading indicators that will reveal whether this policy achieves its stated goals
 - Write for an audience of experienced healthcare leaders who do not need basic terms defined
 - Tone: analytical, direct, no hype
 
-Pillar: [Policy / Economics / Technology / Clinical / Equity]
+Pillar: [Policy / Economics / Technology / Clinical / Equity / Operations]
 Subcategory: [e.g., Regulation & Legislation / Value-Based Care Models / AI & Machine Learning / etc.]
 Impact Level: [Critical / High / Medium]
 ```
@@ -578,7 +594,7 @@ Learning Objectives (write 3–4 starting with action verbs):
 - "Explain the relationship between..."
 - "Identify..."
 
-Pillar: [one of the five pillars]
+Pillar: [one of the six pillars]
 Level: Foundational
 Estimated Read Time: 8–12 minutes
 ```
@@ -602,7 +618,7 @@ Structure:
 5. Lessons Learned (3–5 bullets): What other organizations can take from this.
    What worked, what was harder than expected, what preconditions were necessary.
 
-Pillar connection: Explicitly name which of the five pillars this case study illustrates
+Pillar connection: Explicitly name which of the six pillars this case study illustrates
 and how they interact.
 
 Do not fabricate data. If you are uncertain of specific numbers, write "[VERIFY: estimated X]"
@@ -622,7 +638,7 @@ Requirements:
 - Optional third sentence: Give one concrete example or contrast with a related term
 - Maximum 120 words total
 - Avoid using the term being defined in the definition itself
-- Tag with relevant pillars: [list which of the five pillars this term belongs to]
+- Tag with relevant pillars: [list which of the six pillars this term belongs to]
 ```
 
 ### Template E: Analyst Note (The Signal)
@@ -688,7 +704,7 @@ Open `http://localhost:3000/studio`
 
    **Slug** — Auto-generates from the title. Click "Generate" if it doesn't. Clean it up if the auto-version is ugly. The slug becomes the URL: `/policy/[slug]`
 
-   **Pillar** — Select from: Policy, Economics, Technology, Clinical, Equity. Use the dominant pillar even if multiple apply.
+   **Pillar** — Select from: Policy, Economics, Technology, Clinical, Equity, Operations. Use the dominant pillar even if multiple apply.
 
    **Subcategory** — Select the most specific fit from the dropdown. This determines how the article is sorted and filtered.
 
@@ -791,7 +807,7 @@ The platform has six roles in ascending order of access:
 | Role | Who Has It | What They Can Access |
 |------|-----------|---------------------|
 | `free` | Any registered user with no subscription | Public content, limited navigation |
-| `subscriber` | $29/month or $276/year | Full article library, AI Analyst, all five pillars |
+| `subscriber` | $29/month or $276/year | Full article library, AI Analyst, all six pillars |
 | `student` | $49/month or $468/year | Everything in Subscriber + academy modules and certifications |
 | `professional` | $99/month or $948/year | Everything in Student + HTI Dashboard, deep analytics |
 | `advisory` | Custom/contact | Everything in Professional + deeper AI Analyst mode, custom research |
@@ -1476,7 +1492,7 @@ This is why hospital CFOs are deeply risk-averse about transformation timelines.
 Complete every item before starting deployment.
 
 **Content:**
-- [ ] At least 5 published Policy Analysis articles (one per pillar)
+- [ ] At least 6 published Policy Analysis articles (one per pillar)
 - [ ] At least one complete course (3+ modules) in the Academy
 - [ ] At least 10 glossary definitions covering core terms
 - [ ] At least 2 Analyst Notes active in The Signal
@@ -1766,7 +1782,7 @@ Before going public, do one complete content pass:
 
 5. **Test the glossary.** Search for 10 terms. Do they all appear? Are the definitions clear, accurate, and appropriately concise?
 
-6. **Test navigation.** Click through every item in the main navigation header. Do all five pillar dropdowns lead to populated content pages?
+6. **Test navigation.** Click through every item in the main navigation header. Do all six pillar dropdowns lead to populated content pages?
 
 ---
 

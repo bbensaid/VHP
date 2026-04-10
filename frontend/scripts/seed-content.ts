@@ -2,8 +2,8 @@
 /**
  * scripts/seed-content.ts
  *
- * Seeds editorial content across all five pillars:
- *   - policyAnalysis  (5 per pillar = 25 total)
+ * Seeds editorial content across all six pillars:
+ *   - policyAnalysis  (5 per pillar = 30 total)
  *   - academyModule   (2 courses × 3 modules = 6 modules)
  *   - definition      (30 glossary terms)
  *   - caseStudy       (5 total)

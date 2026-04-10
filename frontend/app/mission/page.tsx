@@ -169,7 +169,7 @@ export default function MissionPage() {
         </div>
       </section>
 
-      {/* ── THE FIVE-QUESTION STANDARD ────────────────────────────────────── */}
+      {/* ── THE SIX-QUESTION STANDARD ─────────────────────────────────────── */}
       <section id="framework" className="bg-slate-50 border-y border-slate-200 py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-14">
