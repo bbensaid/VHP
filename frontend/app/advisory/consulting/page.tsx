@@ -85,7 +85,7 @@ export default function ConsultingPage() {
       {/* ── 6 SERVICE AREAS ───────────────────────────────────────────────── */}
       <div className="container mx-auto px-4 md:px-8 mt-12 max-w-5xl">
         <h2 className="text-2xl font-bold text-slate-900 mb-2">Six Consulting Practice Areas</h2>
-        <p className="text-slate-500 mb-8">Each practice area is anchored to one or more of the five HTR pillars — and every engagement draws connections across all five.</p>
+        <p className="text-slate-500 mb-8">Each practice area is anchored to one or more of the six HTR pillars — and every engagement draws connections across all six.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {SIX_SERVICE_CARDS.map((card) => (
             <div key={card.title} className="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all">
