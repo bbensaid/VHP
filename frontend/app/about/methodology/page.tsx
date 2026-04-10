@@ -86,7 +86,7 @@ function MethodologyPageInner() {
     <div className="bg-white font-sans text-slate-800 min-h-screen">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <div className="bg-indigo-700 text-white py-20 md:py-28 relative overflow-hidden">
+      <div className="bg-indigo-700 text-white py-10 md:py-14 relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
@@ -109,9 +109,8 @@ function MethodologyPageInner() {
           <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-5 block">
             Our Methodology
           </span>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-6">
-            The HTR Health System<br />
-            <span className="text-indigo-400">Performance Index</span>
+          <h1 className="text-3xl md:text-4xl font-black tracking-tight leading-tight mb-5">
+            The HTR Health System <span className="text-indigo-400">Performance Index</span>
           </h1>
           <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
             A proprietary composite metric — built across six pillars and eighteen sub-metrics — designed to provide a standardized, cross-dimensional measure of each state&rsquo;s healthcare system performance and readiness for transformation.
