@@ -14,7 +14,7 @@ export default function IndependentReviewPage() {
     <div className="bg-white min-h-screen pb-20">
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <div className="bg-slate-50 text-slate-900 py-24 border-b border-slate-200">
+      <div className="bg-slate-50 text-slate-900 py-8 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-center gap-2 mb-4">
             <span className="bg-amber-100 text-amber-700 border border-amber-200 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
@@ -22,10 +22,10 @@ export default function IndependentReviewPage() {
             </span>
             <span className="text-slate-400 text-xs">Independent Assessment</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 leading-tight">
             Independent <span className="text-amber-600">Project Reviews</span>
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl leading-relaxed mb-8">
+          <p className="text-base text-slate-600 max-w-3xl leading-relaxed mb-8">
             When a project is over budget, behind schedule, or producing unexpected outcomes, you need a voice with <strong>no incentive to minimize findings.</strong> HTR Advisory conducts forensic-grade assessments of in-progress or recently completed healthcare transformation initiatives — and delivers a clear path forward.
           </p>
           <div className="flex flex-wrap gap-3">
