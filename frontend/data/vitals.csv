@@ -1,0 +1,23 @@
+type,label,value,trend,status
+vital,VT Health Index,42/100,-2.4% YoY,critical
+vital,Hospital Margins,-4.1%,DOWN,warning
+vital,Workforce Gap,"1,240 FTEs",RISING,warning
+vital,ER Wait Time (VT Avg),4.2 hrs,+12% YoY,warning
+vital,ICU Occupancy (VT),87%,↑ 3pts,critical
+vital,Medicaid Enrollment,22.4%,Stable,neutral
+vital,30-Day Readmit Rate,14.8%,-0.3pts,good
+vital,VBC Contract Adoption,38%,+6pts YoY,good
+bed,UVM Medical Center,47 avail,of 562 beds,
+bed,Rutland Regional MC,28 avail,of 188 beds,
+bed,Central Vermont MC,19 avail,of 122 beds,
+bed,Southwestern VT MC,22 avail,of 99 beds,
+bed,Brattleboro Memorial,18 avail,of 61 beds,
+bed,Northwestern Medical Center,21 avail,of 70 beds,
+bed,Copley Hospital,7 avail,of 25 beds,
+bed,Gifford Medical Center,8 avail,of 24 beds,
+bed,Grace Cottage Hospital,3 avail,of 19 beds,
+bed,Mt. Ascutney Hospital,6 avail,of 25 beds,
+bed,Northeastern VT Regional,3 avail,of 25 beds,
+bed,North Country Hospital,9 avail,of 25 beds,
+bed,Porter Medical Center,7 avail,of 25 beds,
+bed,Springfield Hospital,4 avail,of 35 beds,
