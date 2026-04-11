@@ -27,13 +27,16 @@ from services.db import get_supabase
 from services.llm import get_llm_for_role, get_ranker
 from services.retrieval import HybridRetriever, StaticNodeRetriever, rerank_nodes, extract_citations
 from services.tools import ALL_TOOLS
-from config import MODEL_FREE, GROQ_API_KEY, MAX_SYSTEM_PROMPT_LEN
+from config import MODEL_FREE, MODEL_SUBSCRIBER, GROQ_API_KEY, MAX_SYSTEM_PROMPT_LEN
 
 # Roles that get the full agentic (ReAct) pipeline
 AGENTIC_ROLES = {"professional", "advisory", "admin"}
 
 # Valid intelligence pillars
 VALID_PILLARS = {"policy", "economics", "technology", "clinical", "equity"}
+
+# Pillar tag used on all Medicaid eligibility chunks (set by medicaid_parser.py)
+MEDICAID_PILLAR = "Medicaid Eligibility"
 
 log = logging.getLogger("htr-brain")
 router = APIRouter()
@@ -123,6 +126,30 @@ BASE_SYSTEM_PROMPT = (
     "Focus on policy, economics, technology, clinical outcomes, and health equity."
 )
 
+MEDICAID_ELIGIBILITY_SYSTEM_PROMPT = (
+    "You are a Vermont Medicaid eligibility specialist. "
+    "Your role is to help Vermont residents understand whether they may qualify for "
+    "Medicaid or related health coverage programs based on official Vermont state rules. "
+    "You have access to the full text of Vermont's Health Benefits Eligibility and "
+    "Enrollment (HBEE) rules, 2026 income thresholds, Choices for Care long-term care "
+    "regulations, and federal 42 CFR Part 435.\n\n"
+    "When answering eligibility questions:\n"
+    "1. Cite the specific rule part and section (e.g. 'HBEE Part 2, Section 2.3') "
+    "when making eligibility determinations.\n"
+    "2. Walk through the eligibility criteria step by step — category, residency, "
+    "income, and any program-specific requirements.\n"
+    "3. Use the 2026 income charts to give specific dollar thresholds based on "
+    "household size when income is relevant.\n"
+    "4. If the user's situation is ambiguous, ask the clarifying questions needed "
+    "(age, household size, income, citizenship status, disability status, etc.) "
+    "before giving a determination.\n"
+    "5. Always close with: 'This is general information based on Vermont state rules. "
+    "For a formal eligibility determination, apply at Vermont Health Connect "
+    "(healthconnect.vermont.gov) or call 1-800-250-8427.'\n"
+    "6. Never fabricate rule sections or income numbers — only use what the retrieved "
+    "documents contain."
+)
+
 ADVISORY_SYSTEM_PROMPT = (
     BASE_SYSTEM_PROMPT
     + " You are speaking with an ADVISORY-tier client — a senior healthcare leader or "
@@ -186,6 +213,61 @@ _COMPARISON_SYSTEM_ADDENDUM = (
     "(| Dimension | Option A | Option B |), followed by a brief narrative summary. "
     "Label each column clearly."
 )
+
+
+# ── Medicaid eligibility intent detection ─────────────────────────────────────
+
+_MEDICAID_KEYWORDS = {
+    # Program names
+    "medicaid", "dr. dynasaur", "dr dynasaur", "vhap", "mabd", "magi",
+    "choices for care", "vpharm", "green mountain care", "catamount",
+    "vermont health connect", "healthconnect",
+    # Eligibility concepts
+    "eligible", "eligibility", "qualify", "qualification", "qualify for",
+    "covered", "coverage", "enroll", "enrollment", "apply for health",
+    "health insurance", "health coverage", "health benefits",
+    # Income / financial
+    "income limit", "income threshold", "fpl", "federal poverty",
+    "protected income", "pil chart", "household size",
+    # Program-specific
+    "long-term care", "nursing home", "ltc medicaid", "spend down",
+    "asset limit", "resource limit", "katie beckett",
+    # Vermont-specific
+    "hbee", "dvha", "aca", "affordable care act",
+}
+
+_MEDICAID_QUESTION_PHRASES = (
+    "am i eligible", "do i qualify", "can i get", "can i apply",
+    "how do i apply", "how to apply", "how to enroll",
+    "what are the requirements", "income limit", "income threshold",
+    "who qualifies", "who is eligible", "do i need",
+    "will i qualify", "would i qualify", "would i be eligible",
+)
+
+
+def _detect_medicaid_intent(message: str) -> bool:
+    """Return True if the message is asking about Vermont Medicaid eligibility."""
+    lower = message.lower()
+    # Direct phrase match
+    if any(phrase in lower for phrase in _MEDICAID_QUESTION_PHRASES):
+        return True
+    # Keyword match — require at least one Medicaid-domain keyword
+    return any(kw in lower for kw in _MEDICAID_KEYWORDS)
+
+
+def _get_llm_for_medicaid(user: "AuthedUser"):
+    """
+    For Medicaid eligibility queries, ensure a minimum model quality regardless of tier.
+    Free/student → bumped to subscriber model (70B).
+    Advisory/admin → stays on Claude (handled by standard routing).
+    """
+    if user.role in ("free", "student"):
+        from llama_index.llms.groq import Groq as GroqLLM
+        from services.llm import FallbackLLM
+        sub_llm  = GroqLLM(model=MODEL_SUBSCRIBER, api_key=GROQ_API_KEY)
+        fast_llm = GroqLLM(model=MODEL_FREE,        api_key=GROQ_API_KEY)
+        return FallbackLLM(primary=sub_llm, fallbacks=[fast_llm])
+    return get_llm_for_role(user.role)
 
 
 def _detect_structured_intent(message: str) -> Optional[str]:
@@ -301,7 +383,13 @@ async def chat(
     if index is None:
         raise HTTPException(status_code=503, detail="Index not ready — try again in a few seconds")
 
-    log.info(f"Chat: user={user.user_id} role={user.role} msg_len={len(request.message)} pillar={request.pillar}")
+    # Detect Medicaid eligibility intent before anything else
+    is_medicaid_query = _detect_medicaid_intent(request.message)
+
+    log.info(
+        f"Chat: user={user.user_id} role={user.role} msg_len={len(request.message)} "
+        f"pillar={request.pillar} medicaid={is_medicaid_query}"
+    )
 
     # System prompt leak guard
     if _detect_prompt_injection(request.message):
@@ -317,16 +405,19 @@ async def chat(
         role = MessageRole.USER if msg.role == "user" else MessageRole.ASSISTANT
         memory.put(ChatMessage(role=role, content=msg.text))
 
-    base_system_prompt = _get_system_prompt(user, request.systemPrompt)
-
-    # Inject structured output instructions based on query intent
-    structured_intent = _detect_structured_intent(request.message)
-    if structured_intent == "comparison":
-        system_prompt = base_system_prompt + _COMPARISON_SYSTEM_ADDENDUM
-    elif structured_intent == "list":
-        system_prompt = base_system_prompt + _STRUCTURED_SYSTEM_ADDENDUM
+    # ── System prompt assembly ─────────────────────────────────────────────────
+    if is_medicaid_query:
+        # Medicaid eligibility queries get their own specialized prompt
+        system_prompt = MEDICAID_ELIGIBILITY_SYSTEM_PROMPT
     else:
-        system_prompt = base_system_prompt
+        base_system_prompt = _get_system_prompt(user, request.systemPrompt)
+        structured_intent = _detect_structured_intent(request.message)
+        if structured_intent == "comparison":
+            system_prompt = base_system_prompt + _COMPARISON_SYSTEM_ADDENDUM
+        elif structured_intent == "list":
+            system_prompt = base_system_prompt + _STRUCTURED_SYSTEM_ADDENDUM
+        else:
+            system_prompt = base_system_prompt
 
     # Rewrite query to incorporate conversation context (fast, non-blocking on failure)
     retrieval_query = await _rewrite_query(request.message, request.history or [])
@@ -335,32 +426,58 @@ async def chat(
     supabase = get_supabase()
     nodes: List[NodeWithScore] = []
 
-    if supabase:
-        nodes = HybridRetriever(
-            supabase=supabase,
-            top_k=20,
-            filter_pillar=request.pillar,
-        ).retrieve(query_bundle)
+    if is_medicaid_query:
+        # ── Medicaid-scoped retrieval ──────────────────────────────────────────
+        # Step 1: Retrieve only from Medicaid eligibility documents (top-25)
+        if supabase:
+            nodes = HybridRetriever(
+                supabase=supabase,
+                top_k=25,
+                filter_pillar=MEDICAID_PILLAR,
+            ).retrieve(query_bundle)
+            log.info(f"  Medicaid retrieval: {len(nodes)} nodes with pillar filter")
 
-    # If pillar-filtered retrieval returned too few results, retry without filter
-    if request.pillar and len(nodes) < 3 and supabase:
-        log.info(f"Pillar '{request.pillar}' returned {len(nodes)} nodes — retrying without filter")
-        nodes = HybridRetriever(supabase=supabase, top_k=20).retrieve(query_bundle)
+        # Step 2: If scoped retrieval returned too few, fall back to broader index
+        if len(nodes) < 3:
+            log.info("  Medicaid scoped retrieval thin — retrying without pillar filter")
+            if supabase:
+                nodes = HybridRetriever(supabase=supabase, top_k=25).retrieve(query_bundle)
+            if not nodes:
+                nodes = index.as_retriever(similarity_top_k=25).retrieve(query_bundle)
 
-    if not nodes:
-        log.info("Falling back to vector-only retrieval")
-        nodes = index.as_retriever(similarity_top_k=20).retrieve(query_bundle)
+        # Step 3: Rerank to top-8 (more context needed for eligibility reasoning)
+        nodes = rerank_nodes(retrieval_query, nodes, top_k=8)
 
-    nodes = MetadataReplacementNodePostprocessor(
-        target_metadata_key="window"
-    ).postprocess_nodes(nodes, query_bundle=query_bundle)
+    else:
+        # ── Standard retrieval ─────────────────────────────────────────────────
+        if supabase:
+            nodes = HybridRetriever(
+                supabase=supabase,
+                top_k=20,
+                filter_pillar=request.pillar,
+            ).retrieve(query_bundle)
 
-    nodes = rerank_nodes(retrieval_query, nodes, top_k=5)
+        # If pillar-filtered retrieval returned too few results, retry without filter
+        if request.pillar and len(nodes) < 3 and supabase:
+            log.info(f"Pillar '{request.pillar}' returned {len(nodes)} nodes — retrying without filter")
+            nodes = HybridRetriever(supabase=supabase, top_k=20).retrieve(query_bundle)
+
+        if not nodes:
+            log.info("Falling back to vector-only retrieval")
+            nodes = index.as_retriever(similarity_top_k=20).retrieve(query_bundle)
+
+        nodes = MetadataReplacementNodePostprocessor(
+            target_metadata_key="window"
+        ).postprocess_nodes(nodes, query_bundle=query_bundle)
+
+        nodes = rerank_nodes(retrieval_query, nodes, top_k=5)
 
     # Extract citations from top nodes before streaming
     citations = extract_citations(nodes)
 
-    tier_llm = get_llm_for_role(user.role)
+    # ── LLM selection ──────────────────────────────────────────────────────────
+    # Medicaid eligibility queries require better reasoning — bump free/student tier
+    tier_llm = _get_llm_for_medicaid(user) if is_medicaid_query else get_llm_for_role(user.role)
 
     use_agent = user.role in AGENTIC_ROLES
 
