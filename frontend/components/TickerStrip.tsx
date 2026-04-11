@@ -104,7 +104,7 @@ export default function TickerStrip({
               className="flex items-center animate-marquee whitespace-nowrap gap-2"
               style={{
                 animationPlayState: isHovered ? "paused" : "running",
-                animationDuration: `${duration || (isVitals ? 180 : 300)}s`,
+                animationDuration: `${duration || (isVitals ? 600 : 600)}s`,
               }}
             >
               {/* Render items multiple times to ensure the strip is filled and loops seamlessly */}
