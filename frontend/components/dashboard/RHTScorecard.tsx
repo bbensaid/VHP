@@ -76,7 +76,7 @@ export const RHTScorecard: React.FC<RHTScorecardProps> = ({ data }) => {
                 <h4 className="font-bold text-slate-900 text-sm mb-1">
                   {init.title}
                 </h4>
-                <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+                <p className="ty-body text-slate-600 leading-relaxed">
                   {init.description}
                 </p>
               </div>

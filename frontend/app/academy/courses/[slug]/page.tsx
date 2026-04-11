@@ -84,8 +84,8 @@ export default async function CourseDetailPage({
             <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold uppercase mb-4 ${getCategoryColor(course.category)} border`}>
                 {course.category || "Academy"}
             </div>
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-black mb-6 leading-tight">{course.title}</h1>
-            <p className="text-base md:text-lg text-slate-600 max-w-2xl leading-relaxed">{course.description}</p>
+            <h1 className="ty-h1 font-black mb-6 leading-tight">{course.title}</h1>
+            <p className="ty-hero text-slate-600 max-w-2xl leading-relaxed">{course.description}</p>
         </div>
       </div>
 
@@ -134,7 +134,7 @@ export default async function CourseDetailPage({
             {/* INSTRUCTORS - OPTIMIZED */}
             {course.instructors && (
                 <div className="mt-12">
-                    <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-6">Your Instructors</h3>
+                    <h3 className="ty-h3 font-bold text-slate-900 mb-6">Your Instructors</h3>
                     <div className="grid gap-6">
                         {(course.instructors as Instructor[]).map((inst) => (
                             <div key={inst.name} className="flex gap-4 p-6 bg-slate-50 rounded-xl border border-gray-200">

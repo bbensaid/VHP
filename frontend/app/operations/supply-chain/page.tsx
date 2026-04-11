@@ -11,11 +11,11 @@ export default function SupplyChainPage() {
           <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-teal-200 mb-5 border border-teal-500 bg-teal-600/40 px-4 py-1.5 rounded-full">
             Operations · Supply Chain & Infrastructure
           </span>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight leading-tight mb-6">
+          <h1 className="ty-h1 font-black tracking-tight leading-tight mb-6">
             Supply Chain &<br />
             <span className="text-teal-300">Infrastructure</span>
           </h1>
-          <p className="text-base md:text-lg text-teal-100 max-w-2xl leading-relaxed">
+          <p className="text-base md:ty-hero text-teal-100 max-w-2xl leading-relaxed">
             Pharmaceutical procurement, medical device logistics, GPO strategy, facilities management, and capital equipment planning. The physical and logistical foundation that either supports or limits care delivery at scale.
           </p>
         </div>
@@ -48,11 +48,11 @@ export default function SupplyChainPage() {
             <div className="bg-teal-50 border border-teal-200 rounded-xl p-6">
               <p className="text-[11px] font-black uppercase tracking-widest text-teal-600 mb-2">The COVID Lesson</p>
               <p className="text-lg font-black text-slate-900 mb-2">Supply chain is a patient safety variable</p>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed">The pandemic exposed what health system operations experts had long known: supply chain fragility is not an efficiency problem — it is a patient safety and care continuity problem. Transformation strategies that expand care delivery footprints without assessing supply chain capacity are building on an untested foundation.</p>
+              <p className="ty-body text-slate-600 leading-relaxed">The pandemic exposed what health system operations experts had long known: supply chain fragility is not an efficiency problem — it is a patient safety and care continuity problem. Transformation strategies that expand care delivery footprints without assessing supply chain capacity are building on an untested foundation.</p>
             </div>
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
               <p className="text-[11px] font-black uppercase tracking-widest text-slate-500 mb-2">The Expansion Risk</p>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed">Hospital-at-Home, telehealth expansion, and community health worker programs all require supply chain extensions beyond traditional hospital walls. HTR analyzes whether existing logistics infrastructure can support the expanded footprint of proposed care models.</p>
+              <p className="ty-body text-slate-600 leading-relaxed">Hospital-at-Home, telehealth expansion, and community health worker programs all require supply chain extensions beyond traditional hospital walls. HTR analyzes whether existing logistics infrastructure can support the expanded footprint of proposed care models.</p>
             </div>
           </div>
         </div>

@@ -32,10 +32,10 @@ export default function CapabilityAssessmentPage() {
             </span>
             <span className="text-slate-400 text-xs">All 6 Pillars</span>
           </div>
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 leading-tight">
+          <h1 className="ty-h1 font-bold tracking-tight mb-6 leading-tight">
             Capability & Maturity <span className="text-sky-600">Assessments</span>
           </h1>
-          <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed mb-8">
+          <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed mb-8">
             Before embarking on transformation, organizations need an honest answer to one question: <strong>&quot;Are we ready?&quot;</strong> HTR Advisory&apos;s proprietary <strong>Organizational Readiness Framework (ORF)</strong> benchmarks your maturity across 7 domains using a national peer comparison database — so you know exactly where you stand.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -101,7 +101,7 @@ export default function CapabilityAssessmentPage() {
                     {PILLAR_STYLES[d.pillar].label}
                   </span>
                 </div>
-                <p className="text-slate-600 text-sm md:text-base leading-relaxed">{d.description}</p>
+                <p className="text-slate-600 ty-body leading-relaxed">{d.description}</p>
               </div>
             </div>
           ))}
@@ -139,7 +139,7 @@ export default function CapabilityAssessmentPage() {
               </div>
               <div className="text-xs font-bold text-sky-600 uppercase tracking-wide mb-1">{step.duration}</div>
               <h3 className="text-base font-bold text-slate-900 mb-2">{step.title}</h3>
-              <p className="text-slate-600 text-sm md:text-base leading-relaxed">{step.description}</p>
+              <p className="text-slate-600 ty-body leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
@@ -152,9 +152,9 @@ export default function CapabilityAssessmentPage() {
           {service.tiers.map((tier) => (
             <div key={tier.name} className={`p-8 rounded-xl border-2 ${tier.highlight ? "border-sky-600 bg-sky-50 shadow-xl" : "border-slate-200 bg-white shadow-sm"}`}>
               {tier.highlight && <div className="text-xs font-black text-sky-700 uppercase tracking-widest mb-3">Most Comprehensive</div>}
-              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
+              <h3 className="ty-h3 font-bold text-slate-900 mb-1">{tier.name}</h3>
               <div className="text-2xl font-black text-sky-600 mb-3">{tier.price}</div>
-              <p className="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">{tier.description}</p>
+              <p className="text-slate-600 ty-body mb-6 leading-relaxed">{tier.description}</p>
               <ul className="space-y-2">
                 {tier.includes.map((item) => (
                   <li key={item} className="flex gap-2 items-start text-sm text-slate-700">
@@ -172,7 +172,7 @@ export default function CapabilityAssessmentPage() {
       <div className="container mx-auto px-4 md:px-8 max-w-4xl">
         <div className="bg-linear-to-r from-fuchsia-600 to-sky-600 text-white rounded-2xl p-10 md:p-14 text-center shadow-2xl">
           <h2 className="text-3xl font-black mb-4">Know Your Readiness Before You Commit</h2>
-          <p className="text-lg text-fuchsia-100 mb-8 max-w-2xl mx-auto">
+          <p className="ty-hero text-fuchsia-100 mb-8 max-w-2xl mx-auto">
             Transformation investments fail when organizations overestimate their capabilities. The ORF assessment gives leadership an honest, benchmarked baseline — before the project kicks off.
           </p>
           <Link

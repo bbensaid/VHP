@@ -38,7 +38,7 @@ export default async function TheWirePage() {
         </span>
         <div className="flex items-center gap-2 mb-2">
           <BoltIcon className="w-5 h-5 text-amber-500" />
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 dark:text-slate-50">
+          <h1 className="ty-h1 font-black tracking-tight text-slate-900 dark:text-slate-50">
             The Wire
           </h1>
           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-rose-100 dark:bg-rose-900/40 text-rose-600 dark:text-rose-400 text-[10px] font-black uppercase tracking-wider">

@@ -1719,7 +1719,7 @@ export default function ClinicalQualityOptimizer() {
               <Activity className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h1 className="text-xl md:text-2xl font-black text-slate-900 leading-tight">
+              <h1 className="ty-h2 font-black text-slate-900 leading-tight">
                 Clinical Quality & Value Optimizer
               </h1>
               <p className="text-xs text-violet-600 font-medium">

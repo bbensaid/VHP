@@ -270,7 +270,7 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
         {/* Header + filters */}
         <div className="mb-4 border-b border-slate-200 pb-3">
           <div className="flex items-center justify-between mb-3">
-            <h2 className="text-lg md:text-xl font-black text-slate-900 uppercase tracking-tight">
+            <h2 className="ty-h3 font-black text-slate-900 uppercase tracking-tight">
               The Wire{" "}
               <span className="text-slate-400 font-normal normal-case ml-2 text-base">
                 Real-time Intelligence
@@ -373,7 +373,7 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
       {/* PLATFORM CAPABILITIES */}
       <section className="mb-12">
         <div className="flex items-center justify-between mb-5 border-b border-slate-200 pb-2">
-          <h2 className="text-lg md:text-xl font-black text-slate-900 uppercase tracking-tight">
+          <h2 className="ty-h3 font-black text-slate-900 uppercase tracking-tight">
             What&apos;s on the Platform{" "}
             <span className="text-slate-400 font-normal normal-case ml-2 text-base">
               Tools, data &amp; programs
@@ -412,7 +412,7 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
       {/* TRENDING BY PILLAR */}
       <section className="mb-10">
         <div className="flex items-center justify-between mb-5 border-b border-slate-200 pb-2">
-          <h2 className="text-lg md:text-xl font-black text-slate-900 uppercase tracking-tight">
+          <h2 className="ty-h3 font-black text-slate-900 uppercase tracking-tight">
             Trending by Pillar{" "}
             <span className="text-slate-400 font-normal normal-case ml-2 text-base">
               Today&apos;s top signal per domain

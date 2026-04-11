@@ -15,8 +15,8 @@ export default function ServicesPage() {
       <div className="bg-slate-50 text-slate-900 py-8 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <span className="text-fuchsia-600 font-bold uppercase tracking-widest text-xs mb-3 block">HTR Advisory</span>
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-4">All Services</h1>
-          <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
+          <h1 className="ty-h1 font-bold tracking-tight mb-4">All Services</h1>
+          <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">
             Eight practice areas spanning all six HTR pillars. Every service is grounded in the same daily intelligence research that powers the HTR platform — applied to your specific strategic challenge.
           </p>
         </div>
@@ -145,7 +145,7 @@ export default function ServicesPage() {
       <div className="container mx-auto px-4 md:px-8 max-w-4xl">
         <div className="bg-indigo-700 text-white rounded-2xl p-10 md:p-14 text-center">
           <h2 className="text-3xl font-black mb-4">Not Sure Where to Start?</h2>
-          <p className="text-lg text-indigo-100 mb-8 max-w-2xl mx-auto">
+          <p className="ty-hero text-indigo-100 mb-8 max-w-2xl mx-auto">
             Book a 30-minute no-obligation discovery call. We&apos;ll identify the right service line and scope a proposal — no pressure, no commitment.
           </p>
           <Link

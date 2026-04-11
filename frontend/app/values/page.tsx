@@ -111,11 +111,11 @@ export default function ValuesPage() {
             <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-6 border border-indigo-800 bg-indigo-900/40 px-4 py-1.5 rounded-full">
               Core Values
             </span>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-[0.9] mb-8">
+            <h1 className="ty-h1-xl font-black tracking-tight leading-[0.9] mb-8">
               What we<br />
               <span className="text-indigo-400">stand for.</span>
             </h1>
-            <p className="text-base md:text-lg text-slate-300 max-w-2xl leading-relaxed">
+            <p className="ty-hero text-slate-300 max-w-2xl leading-relaxed">
               Six principles that govern every analysis, every recommendation, and every relationship we hold with the people who trust our intelligence. These are not aspirations — they are operating standards, each with a measurable commitment attached.
             </p>
           </div>
@@ -134,7 +134,7 @@ export default function ValuesPage() {
                 </div>
                 <div>
                   <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">{v.number}</span>
-                  <h3 className="text-lg md:text-xl font-black text-slate-900 leading-tight">{v.title}</h3>
+                  <h3 className="ty-h3 font-black text-slate-900 leading-tight">{v.title}</h3>
                 </div>
               </div>
               {/* Card body */}
@@ -161,13 +161,13 @@ export default function ValuesPage() {
               <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
                 Why This Matters
               </span>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-6">
+              <h2 className="ty-h1 font-black tracking-tight text-slate-900 mb-6">
                 Values without accountability are marketing.
               </h2>
-              <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-5">
+              <p className="ty-hero text-slate-600 leading-relaxed mb-5">
                 The healthcare intelligence market is saturated with analysis that is funded by, shaped by, or distributed through the very industries it purports to evaluate. Vendor-sponsored research, industry-funded think tanks, and conference-circuit consensus masquerade as independent insight.
               </p>
-              <p className="text-base md:text-lg text-slate-600 leading-relaxed">
+              <p className="ty-hero text-slate-600 leading-relaxed">
                 HTR was built as a structural corrective to that problem. Our values are not a brand positioning exercise — they are the operational architecture of a business model that is deliberately designed to produce intelligence that the industry cannot buy, suppress, or spin.
               </p>
             </div>
@@ -206,10 +206,10 @@ export default function ValuesPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-4">
+        <h2 className="ty-h1 font-black tracking-tight text-slate-900 mb-4">
           Values inform methodology. Methodology produces intelligence.
         </h2>
-        <p className="text-base md:text-lg text-slate-500 mb-8 max-w-xl mx-auto">
+        <p className="ty-hero text-slate-500 mb-8 max-w-xl mx-auto">
           Understand how our values are operationalized in the six-question framework we apply to every analysis.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">

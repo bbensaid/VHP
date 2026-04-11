@@ -7,8 +7,8 @@ function DigitalHealthHero() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-indigo-700 bg-indigo-50 border border-indigo-200 rounded-full px-3 py-1 mb-4">
           Technology · Digital Health
         </span>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">Digital Health & Telemedicine</h1>
-        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <h1 className="ty-h1 font-black text-slate-900 mb-3">Digital Health & Telemedicine</h1>
+        <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">
           The digital health ecosystem — remote patient monitoring, virtual care platforms, digital therapeutics,
           wearables, and the evidence base for what actually improves outcomes.
         </p>
@@ -25,7 +25,7 @@ function DigitalHealthBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">💰</span>
           <div>
-            <h2 className="text-lg md:text-xl font-bold text-slate-900">Digital Health Funding Landscape</h2>
+            <h2 className="ty-h3 font-bold text-slate-900">Digital Health Funding Landscape</h2>
             <p className="text-sm text-slate-500">VC/PE investment by sector and year — Rock Health + CB Insights data</p>
           </div>
         </div>

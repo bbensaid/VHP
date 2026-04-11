@@ -53,7 +53,7 @@ function TrackCard({ track, highlighted }: { track: LearningTrack; highlighted?:
                   </span>
                 )}
               </div>
-              <h2 className="text-lg md:text-xl font-black text-slate-900 mb-1">{track.title}</h2>
+              <h2 className="ty-h3 font-black text-slate-900 mb-1">{track.title}</h2>
               <p className="text-sm text-slate-500 leading-relaxed max-w-xl">{track.subtitle}</p>
             </div>
           </div>
@@ -205,8 +205,8 @@ export default function LearningTracksHub() {
           <span className="inline-block text-xs font-black uppercase tracking-widest text-indigo-600 bg-indigo-50 border border-indigo-200 rounded-full px-3 py-1 mb-4">
             Structured Learning Paths
           </span>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-4">Learning Tracks</h1>
-          <p className="text-base md:text-lg text-slate-600 max-w-2xl leading-relaxed">
+          <h1 className="ty-h1 font-black text-slate-900 mb-4">Learning Tracks</h1>
+          <p className="ty-hero text-slate-600 max-w-2xl leading-relaxed">
             Curated module sequences that take you from first principles to expert-level proficiency.
             Progress is saved automatically — resume any module where you left off.
           </p>

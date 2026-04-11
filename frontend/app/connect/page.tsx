@@ -83,7 +83,7 @@ export default function ConnectPage() {
           <div className="inline-flex items-center gap-2 bg-violet-100 text-violet-700 text-xs font-bold px-3 py-1 rounded-full mb-4">
             <span>👥</span> Subscriber Network
           </div>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-3">
+          <h1 className="ty-h1 font-black text-slate-900 tracking-tight mb-3">
             HTR Connect
           </h1>
           <p className="text-slate-500 text-lg leading-relaxed max-w-2xl">

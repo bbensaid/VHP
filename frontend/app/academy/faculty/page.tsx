@@ -24,7 +24,7 @@ export default async function FacultyPage() {
     <div className="bg-white min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-4">Learn from the Architects</h1>
+          <h1 className="ty-h1 font-black text-slate-900 mb-4">Learn from the Architects</h1>
           <p className="text-base text-slate-600">
             HTR Academy courses are taught by the people who wrote the policies, built the technologies, and managed the budgets.
           </p>

@@ -34,8 +34,8 @@ export default async function WebinarsPage() {
           <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
             Live Intelligence
           </span>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">Webinars &amp; Roundtables</h1>
-          <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">Join live discussions with global leaders. Q&amp;A included in every session.</p>
+          <h1 className="ty-h1 font-black text-slate-900 mb-3">Webinars &amp; Roundtables</h1>
+          <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">Join live discussions with global leaders. Q&amp;A included in every session.</p>
         </div>
       </div>
 
@@ -47,8 +47,8 @@ export default async function WebinarsPage() {
                 <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold uppercase inline-block">Next Up</span>
                 <span className="text-sm font-bold text-slate-500">{formatDate(featured.date)}</span>
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">{featured.title}</h2>
-              <p className="text-slate-600 mb-6 text-lg">{featured.description}</p>
+              <h2 className="ty-h1 font-bold text-slate-900 mb-4">{featured.title}</h2>
+              <p className="ty-hero text-slate-600 mb-6">{featured.description}</p>
               <div className="flex gap-4">
                 <button className="px-6 py-3 bg-indigo-600 text-white font-bold rounded hover:bg-indigo-700 shadow-md transition-all">Register Free</button>
                 <button className="px-6 py-3 border border-gray-300 font-bold rounded hover:bg-gray-50 text-slate-700">Add to Calendar</button>

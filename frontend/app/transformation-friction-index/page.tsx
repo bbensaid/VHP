@@ -90,11 +90,11 @@ export default function TransformationFrictionIndexPage() {
           <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-amber-400 mb-6 border border-amber-700 bg-amber-900/30 px-4 py-1.5 rounded-full">
             Analyze & Tools · Predictive Strategy
           </span>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-black tracking-tight leading-tight mb-6">
+          <h1 className="ty-h1-xl font-black tracking-tight leading-tight mb-6">
             Transformation<br />
             <span className="text-amber-400">Friction Index</span>
           </h1>
-          <p className="text-base md:text-lg text-slate-300 max-w-2xl leading-relaxed mb-4">
+          <p className="ty-hero text-slate-300 max-w-2xl leading-relaxed mb-4">
             A composite score that weighs the complexity of a proposed transformation against the operational and structural readiness of the health infrastructure it must run through.
           </p>
           <p className="text-slate-400 max-w-2xl leading-relaxed">
@@ -113,10 +113,10 @@ export default function TransformationFrictionIndexPage() {
           <span className="text-[11px] font-black tracking-[0.2em] uppercase text-amber-600 mb-4 block">
             What the Index Measures
           </span>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-4">
+          <h2 className="ty-h1 font-black tracking-tight text-slate-900 mb-4">
             Six friction dimensions. One composite score.
           </h2>
-          <p className="text-base md:text-lg text-slate-500 max-w-3xl">
+          <p className="ty-hero text-slate-500 max-w-3xl">
             Each pillar of the HTR framework contributes a distinct friction dimension. The composite score surfaces where a transformation will encounter the most resistance — and which dimensions represent the binding constraints.
           </p>
         </div>
@@ -158,7 +158,7 @@ export default function TransformationFrictionIndexPage() {
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-amber-600 mb-4 block">
               Interpreting the Score
             </span>
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-black tracking-tight text-slate-900">
+            <h2 className="ty-h2 font-black tracking-tight text-slate-900">
               Friction is directional intelligence, not a verdict.
             </h2>
           </div>
@@ -204,10 +204,10 @@ export default function TransformationFrictionIndexPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-black tracking-tight text-slate-900 mb-4">
+        <h2 className="ty-h2 font-black tracking-tight text-slate-900 mb-4">
           Use the HTR Simulator while the Friction Index is in development.
         </h2>
-        <p className="text-base md:text-lg text-slate-500 mb-8 max-w-xl mx-auto">
+        <p className="ty-hero text-slate-500 mb-8 max-w-xl mx-auto">
           The HTR Simulator applies the six-pillar scoring framework to specific transformation scenarios today.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">

@@ -5,7 +5,7 @@ export default function SubscribePage() {
     <div className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full font-sans text-slate-800">
       {/* Hero */}
       <div className="text-center mb-16">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-6 tracking-tight">
+        <h1 className="ty-h1 font-black text-slate-900 mb-6 tracking-tight">
           Choose Your Intelligence Level
         </h1>
         <p className="text-base text-slate-600 max-w-2xl mx-auto">
@@ -18,12 +18,12 @@ export default function SubscribePage() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 max-w-6xl mx-auto">
         {/* Tier 1: Free */}
         <div className="p-8 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-md transition">
-          <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Observer</h3>
-          <p className="text-slate-600 text-sm md:text-base mb-6">
+          <h3 className="ty-h3 font-bold text-slate-900 mb-2">Observer</h3>
+          <p className="text-slate-600 ty-body mb-6">
             Essential news & public policy briefs.
           </p>
           <div className="mb-6">
-            <span className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900">$0</span>
+            <span className="ty-h1 font-black text-slate-900">$0</span>
             <span className="text-slate-500">/month</span>
           </div>
           <button className="w-full py-3 border-2 border-slate-200 font-bold text-slate-700 rounded-lg hover:bg-slate-50 transition mb-8">
@@ -51,11 +51,11 @@ export default function SubscribePage() {
             Most Popular
           </div>
           <h3 className="text-xl font-bold text-indigo-600 mb-2">Strategist</h3>
-          <p className="text-slate-600 text-sm md:text-base mb-6">
+          <p className="text-slate-600 ty-body mb-6">
             Deep dives, data models & education.
           </p>
           <div className="mb-6">
-            <span className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900">$49</span>
+            <span className="ty-h1 font-black text-slate-900">$49</span>
             <span className="text-slate-500">/month</span>
           </div>
           <button className="w-full py-3 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition mb-8 shadow-md">
@@ -87,14 +87,14 @@ export default function SubscribePage() {
 
         {/* Tier 3: Enterprise */}
         <div className="p-8 bg-slate-50 border border-slate-200 rounded-2xl shadow-sm">
-          <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">
+          <h3 className="ty-h3 font-bold text-slate-900 mb-2">
             Enterprise
           </h3>
-          <p className="text-slate-600 text-sm md:text-base mb-6">
+          <p className="text-slate-600 ty-body mb-6">
             For strategy teams & health systems.
           </p>
           <div className="mb-6">
-            <span className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900">
+            <span className="ty-h1 font-black text-slate-900">
               Custom
             </span>
           </div>

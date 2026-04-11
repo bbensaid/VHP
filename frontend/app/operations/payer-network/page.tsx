@@ -11,11 +11,11 @@ export default function PayerNetworkPage() {
           <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-teal-200 mb-5 border border-teal-500 bg-teal-600/40 px-4 py-1.5 rounded-full">
             Operations · Payer & Network Operations
           </span>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight leading-tight mb-6">
+          <h1 className="ty-h1 font-black tracking-tight leading-tight mb-6">
             Payer & Network<br />
             <span className="text-teal-300">Operations</span>
           </h1>
-          <p className="text-base md:text-lg text-teal-100 max-w-2xl leading-relaxed">
+          <p className="text-base md:ty-hero text-teal-100 max-w-2xl leading-relaxed">
             Utilization management, prior authorization, network adequacy, contract administration, member services, and underwriting. The operational infrastructure of health insurance — and the friction interface between payers and providers.
           </p>
         </div>
@@ -48,11 +48,11 @@ export default function PayerNetworkPage() {
             <div className="bg-teal-50 border border-teal-200 rounded-xl p-6">
               <p className="text-[11px] font-black uppercase tracking-widest text-teal-600 mb-2">The Friction Dimension</p>
               <p className="text-3xl font-black text-slate-900 mb-2">1,000+</p>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed">Insurance companies in the US, each with its own policies, forms, and filing requirements. The administrative burden created by this fragmentation consumes an estimated $265B annually in provider-side administrative costs alone.</p>
+              <p className="ty-body text-slate-600 leading-relaxed">Insurance companies in the US, each with its own policies, forms, and filing requirements. The administrative burden created by this fragmentation consumes an estimated $265B annually in provider-side administrative costs alone.</p>
             </div>
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
               <p className="text-[11px] font-black uppercase tracking-widest text-slate-500 mb-2">The VBC Intersection</p>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed">Value-based care transitions require payer operations to shift from high-volume transactional processing to risk-bearing relationship management. Payers without the operational infrastructure for population health management, shared savings accounting, and risk adjustment cannot be effective VBC partners.</p>
+              <p className="ty-body text-slate-600 leading-relaxed">Value-based care transitions require payer operations to shift from high-volume transactional processing to risk-bearing relationship management. Payers without the operational infrastructure for population health management, shared savings accounting, and risk adjustment cannot be effective VBC partners.</p>
             </div>
           </div>
         </div>

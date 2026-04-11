@@ -34,7 +34,7 @@ export default async function LatestHubReports({
   return (
     <div className="mb-12 mt-16">
       <div className="flex items-center justify-between mb-6 border-b border-slate-200 pb-2">
-        <h2 className="text-lg md:text-xl font-black text-slate-900">
+        <h2 className="ty-h3 font-black text-slate-900">
           Latest Reports
         </h2>
       </div>
@@ -56,7 +56,7 @@ export default async function LatestHubReports({
             <h3 className={`font-bold text-slate-900 mb-3 ${titleHoverClass} transition-colors leading-snug`}>
               {report.title}
             </h3>
-            <p className="text-sm md:text-base text-slate-600 line-clamp-3 mb-4">
+            <p className="ty-body text-slate-600 line-clamp-3 mb-4">
               {report.summary}
             </p>
             <div className={`text-xs font-bold ${colorClass} flex items-center gap-1`}>

@@ -41,7 +41,7 @@ const MetricDetail = ({
         )}
       </div>
       <dt className="text-base font-bold text-slate-900">{metric}</dt>
-      <dd className="mt-1 text-sm md:text-base text-slate-600 leading-relaxed">{description}</dd>
+      <dd className="mt-1 ty-body text-slate-600 leading-relaxed">{description}</dd>
     </div>
   );
 };
@@ -109,10 +109,10 @@ function MethodologyPageInner() {
           <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-5 block">
             Our Methodology
           </span>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight leading-tight mb-5">
+          <h1 className="ty-h1 font-black tracking-tight leading-tight mb-5">
             The HTR Health System <span className="text-indigo-400">Performance Index</span>
           </h1>
-          <p className="text-base md:text-lg text-slate-300 max-w-2xl leading-relaxed">
+          <p className="ty-hero text-slate-300 max-w-2xl leading-relaxed">
             A proprietary composite metric — built across six pillars and eighteen sub-metrics — designed to provide a standardized, cross-dimensional measure of each state&rsquo;s healthcare system performance and readiness for transformation.
           </p>
         </div>
@@ -124,9 +124,9 @@ function MethodologyPageInner() {
         <section>
           <div className="flex items-center gap-3 mb-4">
             <div className="w-8 h-8 bg-indigo-600 text-white rounded-lg flex items-center justify-center font-black text-sm">1</div>
-            <h2 className="text-2xl md:text-3xl font-black text-slate-900">Framework Overview</h2>
+            <h2 className="ty-h1 font-black text-slate-900">Framework Overview</h2>
           </div>
-          <p className="text-slate-600 text-base md:text-lg leading-relaxed mb-6">
+          <p className="text-slate-600 ty-hero leading-relaxed mb-6">
 The HTR Performance Index scores health system transformation readiness across six pillars: Policy, Economics, Technology, Clinical, Equity, and Operations. Each pillar addresses a distinct structural variable that determines whether a proposed transformation is permissible, sustainable, possible, effective, just, and executable. The Index reflects eighteen sub-metrics across those six pillars, each normalized to a 0–100 scale where a higher score is always better.
           </p>
           <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-6">
@@ -140,7 +140,7 @@ The HTR Performance Index scores health system transformation readiness across s
         <section>
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-8 bg-indigo-600 text-white rounded-lg flex items-center justify-center font-black text-sm">2</div>
-            <h2 className="text-2xl md:text-3xl font-black text-slate-900">Input Data &amp; Sub-Metrics</h2>
+            <h2 className="ty-h1 font-black text-slate-900">Input Data &amp; Sub-Metrics</h2>
           </div>
           <p className="text-slate-600 leading-relaxed mb-8">
             Eighteen sub-metrics are calculated from primary government data sources — CMS, HRSA, FCC, CDC, HFMA, and state-level filings — and normalized to a 0–100 scale. Each pillar contributes three metrics to the composite score.
@@ -267,7 +267,7 @@ The HTR Performance Index scores health system transformation readiness across s
         <section>
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-8 bg-indigo-600 text-white rounded-lg flex items-center justify-center font-black text-sm">3</div>
-            <h2 className="text-2xl md:text-3xl font-black text-slate-900">Calculation Methodology</h2>
+            <h2 className="ty-h1 font-black text-slate-900">Calculation Methodology</h2>
           </div>
 
           <p className="text-slate-600 leading-relaxed mb-8">
@@ -280,7 +280,7 @@ The HTR Performance Index scores health system transformation readiness across s
               <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center font-black text-slate-700 shrink-0">1</div>
               <div className="flex-1">
                 <h3 className="font-bold text-slate-900 mb-2">Pillar Scores</h3>
-                <p className="text-sm md:text-base text-slate-600 mb-4">
+                <p className="ty-body text-slate-600 mb-4">
                   Each pillar score is the simple average of its three normalized sub-metrics:
                 </p>
                 <code className="block bg-slate-50 border border-slate-200 rounded-lg p-4 text-sm font-mono text-slate-800">
@@ -293,7 +293,7 @@ The HTR Performance Index scores health system transformation readiness across s
               <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center font-black text-slate-700 shrink-0">2</div>
               <div className="flex-1">
                 <h3 className="font-bold text-slate-900 mb-2">Composite Performance Score</h3>
-                <p className="text-sm md:text-base text-slate-600 mb-4">
+                <p className="ty-body text-slate-600 mb-4">
                   The final score is a weighted average of six pillar scores. Policy and Economics carry the greatest weight as the foundational structural drivers. Operations, Technology, and Clinical carry equal secondary weights. Equity carries a baseline weight scheduled to increase as data coverage improves:
                 </p>
                 <code className="block bg-slate-50 border border-slate-200 rounded-lg p-4 text-sm font-mono text-slate-800">
@@ -351,7 +351,7 @@ The HTR Performance Index scores health system transformation readiness across s
         <section>
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-8 bg-indigo-600 text-white rounded-lg flex items-center justify-center font-black text-sm">4</div>
-            <h2 className="text-2xl md:text-3xl font-black text-slate-900">Output &amp; Interpretation</h2>
+            <h2 className="ty-h1 font-black text-slate-900">Output &amp; Interpretation</h2>
           </div>
           <p className="text-slate-600 leading-relaxed mb-6">
             The Index produces a quantitative score and a qualitative status tier for rapid executive interpretation. Status tiers are designed to communicate urgency, not to rank states against each other — two states with identical scores may face entirely different structural challenges.
@@ -378,7 +378,7 @@ The HTR Performance Index scores health system transformation readiness across s
         <section>
           <div className="flex items-center gap-3 mb-6">
             <div className="w-8 h-8 bg-indigo-600 text-white rounded-lg flex items-center justify-center font-black text-sm">5</div>
-            <h2 className="text-2xl md:text-3xl font-black text-slate-900">Primary Data Sources</h2>
+            <h2 className="ty-h1 font-black text-slate-900">Primary Data Sources</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-4">
             {[

@@ -32,7 +32,7 @@ export default function LabAdvisoryCTA({
               From Analysis to Action
             </span>
           </div>
-          <h3 className="text-lg md:text-xl font-black text-slate-900 mb-2">
+          <h3 className="ty-h3 font-black text-slate-900 mb-2">
             You just modeled <span className="text-fuchsia-700">{category}</span>.<br />
             HTR Advisory can help you implement it.
           </h3>

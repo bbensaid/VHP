@@ -118,11 +118,11 @@ export function PillarHub({
                     </span>
                   </div>
                   
-                  <h2 className={`text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-6 leading-tight transition-colors ${theme.hoverText}`}>
+                  <h2 className={`ty-h1-xl font-bold text-slate-900 dark:text-slate-100 mb-6 leading-tight transition-colors ${theme.hoverText}`}>
                     {featured.title}
                   </h2>
                   
-                  <p className="text-base md:text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed line-clamp-3 md:line-clamp-4">
+                  <p className="ty-hero text-slate-600 dark:text-slate-300 mb-8 leading-relaxed line-clamp-3 md:line-clamp-4">
                     {featured.summary}
                   </p>
                   
@@ -186,7 +186,7 @@ export function PillarHub({
                     <h4 className={`text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3 transition-colors leading-snug ${theme.hoverText}`}>
                       {article.title}
                     </h4>
-                    <p className="text-slate-600 dark:text-slate-300 line-clamp-2 text-lg">
+                    <p className="ty-hero text-slate-600 dark:text-slate-300 line-clamp-2">
                       {article.summary}
                     </p>
                   </Link>

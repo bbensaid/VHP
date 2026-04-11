@@ -84,7 +84,7 @@ const CategoryPage: React.FC<Props> = async ({
           >
             {pillar} Intelligence
           </span>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-6 tracking-tight">
+          <h1 className="ty-h1 font-black text-slate-900 mb-6 tracking-tight">
             {title}
           </h1>
           <p className="text-base text-slate-600 leading-relaxed">{description}</p>

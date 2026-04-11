@@ -92,7 +92,7 @@ export default async function SurveyResultsPage() {
       <div className="bg-linear-to-br from-indigo-900 to-indigo-700 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
           <p className="text-indigo-300 text-sm font-semibold uppercase tracking-widest mb-3">Annual Research</p>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black mb-3">
+          <h1 className="ty-h1 font-black mb-3">
             {current?.title ?? "State of Healthcare Transformation"}
           </h1>
           <p className="text-indigo-200 text-lg">

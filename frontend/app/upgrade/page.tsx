@@ -11,7 +11,7 @@ export default async function UpgradePage() {
         <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
           <LockClosedIcon className="w-8 h-8 text-indigo-600" />
         </div>
-        <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-slate-900 mb-3">
+        <h1 className="ty-h2 font-black text-slate-900 mb-3">
           Upgrade to access this feature
         </h1>
         <p className="text-slate-500 mb-8">

@@ -35,8 +35,8 @@ export default async function ReportsPage() {
       <div className="bg-slate-50 text-slate-900 py-20 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs mb-2 block">HTR Intelligence</span>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black mb-6 tracking-tight">Annual Impact Reports</h1>
-          <p className="text-base md:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          <h1 className="ty-h1 font-black mb-6 tracking-tight">Annual Impact Reports</h1>
+          <p className="ty-hero text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Comprehensive reviews of the macro-trends shaping the healthcare landscape.
           </p>
         </div>

@@ -89,10 +89,10 @@ export default function TrainingPage() {
             </span>
             <span className="text-slate-400 text-xs">All 6 Pillars</span>
           </div>
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 leading-tight">
+          <h1 className="ty-h1 font-bold tracking-tight mb-6 leading-tight">
             Training & Executive <span className="text-purple-600">Education</span>
           </h1>
-          <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed mb-8">
+          <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed mb-8">
             Healthcare-specific professional development that bridges the gap between policy awareness and operational execution. Built on the same frameworks we use in live engagements. Taught by <strong>practitioners, not academics</strong> — across all six pillars.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -130,7 +130,7 @@ export default function TrainingPage() {
             <div key={format.title} className="bg-purple-50 border border-purple-200 rounded-xl p-6 text-center">
               <div className="text-3xl mb-3">{format.icon}</div>
               <h3 className="font-bold text-slate-900 mb-2">{format.title}</h3>
-              <p className="text-slate-600 text-sm md:text-base leading-relaxed">{format.desc}</p>
+              <p className="text-slate-600 ty-body leading-relaxed">{format.desc}</p>
             </div>
           ))}
         </div>
@@ -153,9 +153,9 @@ export default function TrainingPage() {
                       </span>
                     ))}
                   </div>
-                  <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">{program.title}</h3>
+                  <h3 className="ty-h3 font-bold text-slate-900 mb-1">{program.title}</h3>
                   <p className="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-3">For: {program.audience}</p>
-                  <p className="text-slate-600 text-sm md:text-base leading-relaxed">{program.description}</p>
+                  <p className="text-slate-600 ty-body leading-relaxed">{program.description}</p>
                 </div>
                 <div className="md:w-1/3 mt-4 md:mt-0">
                   <p className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Topics Covered</p>
@@ -181,9 +181,9 @@ export default function TrainingPage() {
           {service.tiers.map((tier) => (
             <div key={tier.name} className={`p-8 rounded-xl border-2 ${tier.highlight ? "border-purple-600 bg-purple-50 shadow-xl" : "border-slate-200 bg-white shadow-sm"}`}>
               {tier.highlight && <div className="text-xs font-black text-purple-700 uppercase tracking-widest mb-3">Most Popular</div>}
-              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
+              <h3 className="ty-h3 font-bold text-slate-900 mb-1">{tier.name}</h3>
               <div className="text-2xl font-black text-purple-600 mb-3">{tier.price}</div>
-              <p className="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">{tier.description}</p>
+              <p className="text-slate-600 ty-body mb-6 leading-relaxed">{tier.description}</p>
               <ul className="space-y-2">
                 {tier.includes.map((item) => (
                   <li key={item} className="flex gap-2 items-start text-sm text-slate-700">
@@ -201,7 +201,7 @@ export default function TrainingPage() {
       <div className="container mx-auto px-4 md:px-8 max-w-4xl">
         <div className="bg-linear-to-r from-fuchsia-600 to-purple-600 text-white rounded-2xl p-10 md:p-14 text-center shadow-2xl">
           <h2 className="text-3xl font-black mb-4">Invest in Your Team&apos;s Healthcare Intelligence</h2>
-          <p className="text-lg text-fuchsia-100 mb-8 max-w-2xl mx-auto">
+          <p className="ty-hero text-fuchsia-100 mb-8 max-w-2xl mx-auto">
             The most expensive mistake in healthcare transformation is having the strategy without the team capability to execute it. Let&apos;s close that gap.
           </p>
           <Link
