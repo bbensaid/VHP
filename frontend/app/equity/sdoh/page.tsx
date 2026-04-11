@@ -7,8 +7,8 @@ function SDOHHero() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-orange-600 bg-orange-50 border border-orange-200 rounded-full px-3 py-1 mb-4">
           Equity · SDOH Integration
         </span>
-        <h1 className="text-4xl font-black text-slate-900 mb-3">Social Determinants of Health</h1>
-        <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">Social Determinants of Health</h1>
+        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
           Addressing the non-medical factors driving 80% of health outcomes — housing, food security,
           transportation, economic stability, and the clinical workflows and payment models to act on them.
         </p>
@@ -25,7 +25,7 @@ function SDOHBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">📋</span>
           <div>
-            <h2 className="text-xl font-bold text-slate-900">SDOH Screening Domains & Prevalence</h2>
+            <h2 className="text-lg md:text-xl font-bold text-slate-900">SDOH Screening Domains & Prevalence</h2>
             <p className="text-sm text-slate-500">PRAPARE / AHC HRSN screener domains with typical positive screening rates in safety-net settings</p>
           </div>
         </div>
@@ -155,7 +155,7 @@ function SDOHBody() {
 
       {/* Payment Models for SDOH */}
       <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-10">
-        <h2 className="text-xl font-bold text-slate-900 mb-2">Payment & Policy Framework for SDOH Action</h2>
+        <h2 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Payment & Policy Framework for SDOH Action</h2>
         <p className="text-slate-500 text-sm mb-6">How payers and CMS are funding social care integration</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[

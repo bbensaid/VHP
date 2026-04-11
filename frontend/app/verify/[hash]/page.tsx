@@ -89,7 +89,7 @@ export default async function VerifyCertPage({ params }: Props) {
           {/* Body */}
           <div className="px-8 py-8 text-center">
             <p className="text-slate-500 text-sm mb-2">This certifies that</p>
-            <h1 className="text-3xl font-black text-slate-900 mb-3">{holderName}</h1>
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-slate-900 mb-3">{holderName}</h1>
             <p className="text-slate-500 text-sm mb-2">has successfully completed</p>
             <p className="text-xl font-black text-indigo-700 mb-6">{cert.cert_name}</p>
 

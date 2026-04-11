@@ -25,7 +25,7 @@ export default function ITConsultingPage() {
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 leading-tight">
             Health IT Project <span className="text-indigo-600">Consulting</span>
           </h1>
-          <p className="text-base text-slate-600 max-w-3xl leading-relaxed mb-8">
+          <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed mb-8">
             End-to-end advisory for EHR implementations, interoperability programs, AI adoption, and digital health transformation.
             We serve as your <strong>owner&apos;s representative</strong> — protecting your investment against vendor over-promise, scope creep, and go-live failures.
           </p>
@@ -99,7 +99,7 @@ export default function ITConsultingPage() {
               </div>
               <div className="text-xs font-bold text-indigo-600 uppercase tracking-wide mb-1">{step.duration}</div>
               <h3 className="text-base font-bold text-slate-900 mb-2">{step.title}</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">{step.description}</p>
+              <p className="text-slate-600 text-sm md:text-base leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
@@ -112,7 +112,7 @@ export default function ITConsultingPage() {
           <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all">
             <div className="w-10 h-10 bg-indigo-100 text-indigo-700 rounded-lg flex items-center justify-center text-xl mb-4 border border-indigo-200">🏥</div>
             <h3 className="text-lg font-bold text-slate-900 mb-2">EHR Selection & Implementation</h3>
-            <p className="text-slate-600 text-sm mb-4">Vendor-neutral scoring, contract negotiation support, and implementation oversight for Epic, Oracle Health, Meditech, and athenahealth.</p>
+            <p className="text-slate-600 text-sm md:text-base mb-4">Vendor-neutral scoring, contract negotiation support, and implementation oversight for Epic, Oracle Health, Meditech, and athenahealth.</p>
             <ul className="space-y-1.5 text-xs text-slate-600 font-medium">
               <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>RFP Development & Scoring</li>
               <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>Contract Red-Line Review</li>
@@ -122,7 +122,7 @@ export default function ITConsultingPage() {
           <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all">
             <div className="w-10 h-10 bg-indigo-100 text-indigo-700 rounded-lg flex items-center justify-center text-xl mb-4 border border-indigo-200">🔗</div>
             <h3 className="text-lg font-bold text-slate-900 mb-2">Interoperability & FHIR</h3>
-            <p className="text-slate-600 text-sm mb-4">Architecture and strategy for ONC compliance, CMS interoperability rules, and FHIR R4 API implementations across payer and provider systems.</p>
+            <p className="text-slate-600 text-sm md:text-base mb-4">Architecture and strategy for ONC compliance, CMS interoperability rules, and FHIR R4 API implementations across payer and provider systems.</p>
             <ul className="space-y-1.5 text-xs text-slate-600 font-medium">
               <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>FHIR API Architecture</li>
               <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>ONC / CMS Compliance Roadmap</li>
@@ -132,7 +132,7 @@ export default function ITConsultingPage() {
           <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all">
             <div className="w-10 h-10 bg-indigo-100 text-indigo-700 rounded-lg flex items-center justify-center text-xl mb-4 border border-indigo-200">🤖</div>
             <h3 className="text-lg font-bold text-slate-900 mb-2">AI Governance & Adoption</h3>
-            <p className="text-slate-600 text-sm mb-4">Governance frameworks for clinical AI tools, vendor evaluation, bias monitoring, and responsible deployment across all six HTR pillar dimensions.</p>
+            <p className="text-slate-600 text-sm md:text-base mb-4">Governance frameworks for clinical AI tools, vendor evaluation, bias monitoring, and responsible deployment across all six HTR pillar dimensions.</p>
             <ul className="space-y-1.5 text-xs text-slate-600 font-medium">
               <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>AI Governance Charter</li>
               <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>Algorithmic Bias Assessment</li>
@@ -149,9 +149,9 @@ export default function ITConsultingPage() {
           {service.tiers.map((tier) => (
             <div key={tier.name} className={`p-8 rounded-xl border-2 ${tier.highlight ? "border-indigo-600 bg-indigo-50 shadow-xl" : "border-slate-200 bg-white shadow-sm"}`}>
               {tier.highlight && <div className="text-xs font-black text-indigo-700 uppercase tracking-widest mb-3">Most Popular</div>}
-              <h3 className="text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
               <div className="text-2xl font-black text-indigo-600 mb-3">{tier.price}</div>
-              <p className="text-slate-600 text-sm mb-6 leading-relaxed">{tier.description}</p>
+              <p className="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">{tier.description}</p>
               <ul className="space-y-2">
                 {tier.includes.map((item) => (
                   <li key={item} className="flex gap-2 items-start text-sm text-slate-700">

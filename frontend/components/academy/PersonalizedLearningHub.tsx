@@ -1018,7 +1018,7 @@ function PathItemCard({
       {expanded && (
         <div className="border-t border-slate-100 px-5 py-5 space-y-5">
           {/* Description */}
-          <p className="text-sm text-slate-600 leading-relaxed">{item.description}</p>
+          <p className="text-sm md:text-base text-slate-600 leading-relaxed">{item.description}</p>
 
           {/* Audio player — available on reading and case study items */}
           {item.content && (item.type === "reading" || item.type === "case_study") && (
@@ -1268,7 +1268,7 @@ function PathViewer({
 
         {/* Path description */}
         <div className="bg-white rounded-xl border border-slate-200 p-5 mb-6">
-          <p className="text-sm text-slate-600 leading-relaxed">{savedPath.path.description}</p>
+          <p className="text-sm md:text-base text-slate-600 leading-relaxed">{savedPath.path.description}</p>
           {savedPath.path.key_skills && savedPath.path.key_skills.length > 0 && (
             <div className="flex flex-wrap gap-2 mt-3">
               {savedPath.path.key_skills.map((s) => (
@@ -1315,7 +1315,7 @@ function PathViewer({
           return (
             <div>
               <div className="mb-5">
-                <h2 className="text-xl font-black text-slate-900">{week.theme}</h2>
+                <h2 className="text-lg md:text-xl font-black text-slate-900">{week.theme}</h2>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {week.focus_areas.map((fa) => (
                     <span key={fa} className="px-2.5 py-1 bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-semibold rounded-full">
@@ -1720,10 +1720,10 @@ export default function PersonalizedLearningHub() {
             <SparklesIcon className="w-3.5 h-3.5" />
             AI-Powered
           </span>
-          <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-4">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-4">
             Personalized Learning
           </h1>
-          <p className="text-xl text-slate-600 max-w-2xl leading-relaxed mb-8">
+          <p className="text-base md:text-lg text-slate-600 max-w-2xl leading-relaxed mb-8">
             Tell us who you are and what you want to achieve — our AI builds a custom healthcare transformation curriculum just for you, with progress that persists across sessions.
           </p>
 

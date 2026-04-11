@@ -46,19 +46,19 @@ export default function AcademyCard({
           <span className={`px-2.5 py-1 rounded text-[10px] font-bold uppercase tracking-wider ${styles.badge}`}>
             {pillar} • {type}
           </span>
-          {price && <span className="text-sm font-bold text-gray-900">{price}</span>}
+          {price && <span className="text-sm font-bold text-slate-900">{price}</span>}
         </div>
         
-        <h3 className={`text-xl font-bold text-gray-900 mb-3 ${styles.hoverTitle} transition-colors`}>
+        <h3 className={`text-lg md:text-xl font-bold text-slate-900 mb-3 ${styles.hoverTitle} transition-colors`}>
           {title}
         </h3>
         
-        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+        <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
           {description}
         </p>
 
         {/* Meta Info Row */}
-        <div className="flex items-center gap-4 text-xs text-gray-500 font-medium border-t border-gray-100 pt-4">
+        <div className="flex items-center gap-4 text-xs text-slate-500 font-medium border-t border-gray-100 pt-4">
           <span className="flex items-center gap-1">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             {meta}
@@ -74,7 +74,7 @@ export default function AcademyCard({
 
       {/* CTA Footer */}
       <div className={`bg-gray-50 px-6 py-3 border-t border-gray-100 flex justify-between items-center ${styles.footerBg} transition-colors`}>
-        <span className={`text-xs font-bold text-gray-500 uppercase tracking-widest ${styles.footerText}`}>
+        <span className={`text-xs font-bold text-slate-500 uppercase tracking-widest ${styles.footerText}`}>
           View Curriculum
         </span>
         <span className={`${styles.arrow} text-lg group-hover:translate-x-1 transition-transform`}>

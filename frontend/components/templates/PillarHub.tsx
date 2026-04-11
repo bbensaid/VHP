@@ -122,7 +122,7 @@ export function PillarHub({
                     {featured.title}
                   </h2>
                   
-                  <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed line-clamp-3 md:line-clamp-4">
+                  <p className="text-base md:text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed line-clamp-3 md:line-clamp-4">
                     {featured.summary}
                   </p>
                   

@@ -45,7 +45,7 @@ export default async function CommunityPage() {
       {/* Hero */}
       <div className="bg-linear-to-br from-indigo-900 to-indigo-700 text-white py-14 px-4">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl font-black mb-3">HTR Community</h1>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black mb-3">HTR Community</h1>
           <p className="text-indigo-200 max-w-xl text-lg">
             Connect with healthcare executives, policy professionals, and researchers. Share insights, ask questions, and shape the future of health system transformation.
           </p>

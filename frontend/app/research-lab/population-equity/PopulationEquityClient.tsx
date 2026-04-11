@@ -12,7 +12,7 @@ function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string;
     <div className="mb-4">
       <div className="flex flex-wrap items-center gap-2 mb-1">
         <span className="text-2xl">{icon}</span>
-        <h2 className="text-xl font-black text-slate-900">{label}</h2>
+        <h2 className="text-lg md:text-xl font-black text-slate-900">{label}</h2>
         <span className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-700 border border-amber-200">
           {badge}
         </span>

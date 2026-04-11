@@ -7,8 +7,8 @@ function FeasibilityHero() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
           Policy · Feasibility Studies
         </span>
-        <h1 className="text-4xl font-black text-slate-900 mb-3">Policy Feasibility Studies</h1>
-        <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">Policy Feasibility Studies</h1>
+        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
           Rigorous analysis of proposed healthcare reforms — political viability, economic impact,
           implementation complexity, and the realistic pathways from proposal to legislation to effect.
         </p>
@@ -25,7 +25,7 @@ function FeasibilityBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">📐</span>
           <div>
-            <h2 className="text-xl font-bold text-slate-900">Healthcare Reform Feasibility Scorecard</h2>
+            <h2 className="text-lg md:text-xl font-bold text-slate-900">Healthcare Reform Feasibility Scorecard</h2>
             <p className="text-sm text-slate-500">Major proposed reforms scored on political viability, economic impact, and implementation complexity (1–10 scale)</p>
           </div>
         </div>
@@ -158,7 +158,7 @@ function FeasibilityBody() {
 
       {/* Reform Continuum */}
       <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-10">
-        <h2 className="text-xl font-bold text-slate-900 mb-2">Reform Continuum: From Incremental to Systemic</h2>
+        <h2 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Reform Continuum: From Incremental to Systemic</h2>
         <p className="text-slate-500 text-sm mb-6">Mapping the spectrum of US healthcare reform proposals by ambition and implementation horizon</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[

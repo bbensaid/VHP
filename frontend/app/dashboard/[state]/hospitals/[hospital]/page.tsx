@@ -32,7 +32,7 @@ export default function GenericHospitalProfile() {
             <div className="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-6 text-slate-400">
                 <BuildingOfficeIcon className="w-8 h-8" />
             </div>
-            <h2 className="text-xl font-bold text-slate-900 mb-2">No Active Intervention</h2>
+            <h2 className="text-lg md:text-xl font-bold text-slate-900 mb-2">No Active Intervention</h2>
             <p className="text-slate-500 text-sm mb-6">
                 This facility is currently reporting stable operating metrics. No Act 167 simulation or solvency intervention is required at this time.
             </p>

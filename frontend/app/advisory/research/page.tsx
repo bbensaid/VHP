@@ -84,7 +84,7 @@ export default function ResearchPage() {
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6">
             Custom Research & <span className="text-rose-600">Analysis</span>
           </h1>
-          <p className="text-base text-slate-600 max-w-2xl leading-relaxed mb-8">
+          <p className="text-base md:text-lg text-slate-600 max-w-2xl leading-relaxed mb-8">
             We deploy the HTR 6-pillar intelligence framework to answer specific strategic questions for health systems, investors, government agencies, and academic institutions. Commission bespoke analysis on any healthcare question — from &quot;The Economics of CRISPR in Rural Hospitals&quot; to &quot;State-Level Telehealth Policy Forecasts.&quot;
           </p>
           <div className="flex flex-wrap gap-2">
@@ -112,8 +112,8 @@ export default function ResearchPage() {
                   {PILLAR_STYLES[cap.pillar].label}
                 </span>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">{cap.title}</h3>
-              <p className="text-slate-600 text-sm mb-4 leading-relaxed">{cap.description}</p>
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">{cap.title}</h3>
+              <p className="text-slate-600 text-sm md:text-base mb-4 leading-relaxed">{cap.description}</p>
               <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Example Deliverables</p>
               <ul className="space-y-1.5">
                 {cap.examples.map((ex) => (
@@ -203,9 +203,9 @@ export default function ResearchPage() {
           {service.tiers.map((tier) => (
             <div key={tier.name} className={`p-8 rounded-xl border-2 ${tier.highlight ? "border-rose-500 bg-rose-50 shadow-xl" : "border-slate-200 bg-white shadow-sm"}`}>
               {tier.highlight && <div className="text-xs font-black text-rose-700 uppercase tracking-widest mb-3">Most Comprehensive</div>}
-              <h3 className="text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
               <div className="text-2xl font-black text-rose-600 mb-3">{tier.price}</div>
-              <p className="text-slate-600 text-sm mb-6 leading-relaxed">{tier.description}</p>
+              <p className="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">{tier.description}</p>
               <ul className="space-y-2">
                 {tier.includes.map((item) => (
                   <li key={item} className="flex gap-2 items-start text-sm text-slate-700">
@@ -221,8 +221,8 @@ export default function ResearchPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <div className="container mx-auto px-4 md:px-8 max-w-4xl mt-8 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Commission Your Research</h2>
-        <p className="text-xl text-gray-600 mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Commission Your Research</h2>
+        <p className="text-base md:text-lg text-slate-600 mb-8">
           Submit an inquiry describing your research question and we&apos;ll scope a proposal within 5 business days.
         </p>
         <Link

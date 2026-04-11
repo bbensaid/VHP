@@ -107,10 +107,10 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                         {leadStory.pillar || "Analysis"}
                       </span>
                     </div>
-                    <h1 className="text-3xl md:text-5xl font-black text-slate-700 leading-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-700 leading-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
                       {leadStory.title}
                     </h1>
-                    <p className="text-lg text-slate-600 leading-relaxed mb-8 line-clamp-3 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
+                    <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-8 line-clamp-3 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
                       {leadStory.summary}
                     </p>
                     <div className="flex items-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500">
@@ -190,10 +190,10 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                   <div className="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-black uppercase tracking-widest">
                     New Course
                   </div>
-                  <h2 className="text-4xl font-black text-slate-700">
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-700">
                     Executive Masterclass: Value-Based Care
                   </h2>
-                  <p className="text-lg text-slate-600">
+                  <p className="text-base md:text-lg text-slate-600">
                     Join 500+ healthcare leaders in our flagship certification
                     program. Learn the economics of risk adjustment and
                     population health.
@@ -223,10 +223,10 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                       Federal Initiative · CMS
                     </div>
                   </div>
-                  <h2 className="text-4xl font-black text-slate-700">
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-700">
                     Rural Health Transformation Program
                   </h2>
-                  <p className="text-lg text-slate-600">
+                  <p className="text-base md:text-lg text-slate-600">
                     How a landmark CMS initiative is stabilizing rural safety-net
                     hospitals through global budgets and regional collaboration —
                     and what it reveals about scaling value-based care nationwide.
@@ -350,12 +350,12 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                 </h2>
               </div>
               <div className="prose prose-slate">
-                <p className="text-lg text-slate-600 leading-relaxed">
+                <p className="text-base md:text-lg text-slate-600 leading-relaxed">
                   The Rural Health Transformation Program (RHTP) is a landmark
                   CMS initiative designed to stabilize the rural safety net
                   through global budgeting and care delivery reform.
                 </p>
-                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-2">
+                <h3 className="text-lg md:text-xl font-bold text-slate-900 mt-6 mb-2">
                   Key Program Pillars
                 </h3>
                 <ul className="list-disc pl-5 space-y-2 text-slate-600">

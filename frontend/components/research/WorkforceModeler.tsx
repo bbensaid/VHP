@@ -542,10 +542,10 @@ function Slider({
   return (
     <div className="space-y-1">
       <div className="flex justify-between items-center">
-        <label className="text-xs text-gray-600 font-medium flex items-center gap-1">
+        <label className="text-xs text-slate-600 font-medium flex items-center gap-1">
           {label}
           {info && (
-            <span title={info} className="cursor-help text-gray-400">
+            <span title={info} className="cursor-help text-slate-400">
               <Info size={11} />
             </span>
           )}
@@ -607,17 +607,17 @@ function MetricBox({
     green: "text-green-700",
     red: "text-red-700",
     amber: "text-amber-700",
-    neutral: "text-gray-900",
+    neutral: "text-slate-900",
     orange: "text-orange-700",
   }[color];
 
   return (
     <div className="bg-white rounded-lg border border-gray-200 p-3 flex flex-col gap-0.5">
-      <p className="text-xs text-gray-500 leading-tight">{label}</p>
+      <p className="text-xs text-slate-500 leading-tight">{label}</p>
       <p className={`${large ? "text-xl" : "text-base"} font-bold ${valueColor}`}>
         {value}
       </p>
-      {sub && <p className="text-xs text-gray-400">{sub}</p>}
+      {sub && <p className="text-xs text-slate-400">{sub}</p>}
     </div>
   );
 }
@@ -747,7 +747,7 @@ function PhysicianSupplyTab() {
         <SectionCard title="Specialty & Geography">
           <div className="space-y-3">
             <div>
-              <label className="text-xs text-gray-600 font-medium block mb-1">
+              <label className="text-xs text-slate-600 font-medium block mb-1">
                 Specialty
               </label>
               <select
@@ -761,7 +761,7 @@ function PhysicianSupplyTab() {
               </select>
             </div>
             <div>
-              <label className="text-xs text-gray-600 font-medium block mb-1">
+              <label className="text-xs text-slate-600 font-medium block mb-1">
                 Geographic Scope
               </label>
               <div className="flex flex-wrap gap-1.5">
@@ -772,7 +772,7 @@ function PhysicianSupplyTab() {
                     className={`text-xs px-2.5 py-1 rounded-full border font-medium transition-colors ${
                       geoScope === g
                         ? "bg-orange-500 text-white border-orange-500"
-                        : "bg-white text-gray-600 border-gray-300 hover:border-orange-300"
+                        : "bg-white text-slate-600 border-gray-300 hover:border-orange-300"
                     }`}
                   >
                     {g}
@@ -892,14 +892,14 @@ function PhysicianSupplyTab() {
                 className={`w-full flex items-center justify-between text-sm px-3 py-2 rounded-lg border transition-colors ${
                   interventions[key]
                     ? "bg-orange-500 text-white border-orange-500"
-                    : "bg-white text-gray-700 border-gray-300 hover:border-orange-300"
+                    : "bg-white text-slate-700 border-gray-300 hover:border-orange-300"
                 }`}
               >
                 <span className="text-left font-medium">{label}</span>
                 {interventions[key] ? (
                   <CheckCircle size={16} />
                 ) : (
-                  <XCircle size={16} className="text-gray-400" />
+                  <XCircle size={16} className="text-slate-400" />
                 )}
               </button>
             ))}
@@ -932,13 +932,13 @@ function PhysicianSupplyTab() {
           <table className="w-full text-xs">
             <thead>
               <tr className="border-b border-gray-200">
-                <th className="text-left py-2 pr-3 text-gray-500 font-semibold">Year</th>
-                <th className="text-right py-2 px-2 text-gray-500 font-semibold">Supply (Base)</th>
-                <th className="text-right py-2 px-2 text-gray-500 font-semibold">Supply (Policy)</th>
-                <th className="text-right py-2 px-2 text-gray-500 font-semibold">Demand</th>
+                <th className="text-left py-2 pr-3 text-slate-500 font-semibold">Year</th>
+                <th className="text-right py-2 px-2 text-slate-500 font-semibold">Supply (Base)</th>
+                <th className="text-right py-2 px-2 text-slate-500 font-semibold">Supply (Policy)</th>
+                <th className="text-right py-2 px-2 text-slate-500 font-semibold">Demand</th>
                 <th className="text-right py-2 px-2 text-orange-600 font-semibold">Gap (Base)</th>
                 <th className="text-right py-2 px-2 text-orange-600 font-semibold">Gap (Policy)</th>
-                <th className="text-right py-2 px-2 text-gray-500 font-semibold">Gap%</th>
+                <th className="text-right py-2 px-2 text-slate-500 font-semibold">Gap%</th>
               </tr>
             </thead>
             <tbody>
@@ -947,16 +947,16 @@ function PhysicianSupplyTab() {
                   key={row.year}
                   className={`border-b border-gray-100 ${row.year === 10 ? "bg-orange-50 font-bold" : ""}`}
                 >
-                  <td className="py-1.5 pr-3 text-gray-700">
+                  <td className="py-1.5 pr-3 text-slate-700">
                     {row.year === 0 ? "Baseline" : `+${row.year}`}
                   </td>
-                  <td className="py-1.5 px-2 text-right text-gray-700">
+                  <td className="py-1.5 px-2 text-right text-slate-700">
                     {fmt(row.baseSupply)}
                   </td>
                   <td className="py-1.5 px-2 text-right text-blue-700">
                     {fmt(row.interventionSupply)}
                   </td>
-                  <td className="py-1.5 px-2 text-right text-gray-700">
+                  <td className="py-1.5 px-2 text-right text-slate-700">
                     {fmt(row.baseDemand)}
                   </td>
                   <td
@@ -1117,7 +1117,7 @@ function NurseStaffingTab() {
               className={`text-sm px-3 py-1.5 rounded-lg border font-medium transition-colors ${
                 unitType === u
                   ? "bg-orange-500 text-white border-orange-500"
-                  : "bg-white text-gray-700 border-gray-300 hover:border-orange-300"
+                  : "bg-white text-slate-700 border-gray-300 hover:border-orange-300"
               }`}
             >
               {u}
@@ -1216,7 +1216,7 @@ function NurseStaffingTab() {
 
       {/* Quality Impact Panel */}
       <SectionCard title="Quality Outcome Correlation (Evidence-Based)" accent>
-        <p className="text-xs text-gray-500 mb-3">
+        <p className="text-xs text-slate-500 mb-3">
           Current ratio ({params.currentRatio}:1) vs proposed mandate (
           {params.mandatedRatio}:1) — each extra patient beyond safe ratio:
         </p>
@@ -1265,8 +1265,8 @@ function NurseStaffingTab() {
               >
                 {m.value > 0 ? `-${m.value}%` : "—"}
               </p>
-              <p className="text-xs text-gray-500">{m.label}</p>
-              <p className="text-xs text-gray-400">{m.unit}</p>
+              <p className="text-xs text-slate-500">{m.label}</p>
+              <p className="text-xs text-slate-400">{m.unit}</p>
             </div>
           ))}
         </div>
@@ -1417,7 +1417,7 @@ function TurnoverROITab() {
         <SectionCard title="Role Configuration">
           <div className="space-y-3">
             <div>
-              <label className="text-xs text-gray-600 font-medium block mb-1">
+              <label className="text-xs text-slate-600 font-medium block mb-1">
                 Role Type
               </label>
               <div className="flex flex-wrap gap-1.5">
@@ -1428,14 +1428,14 @@ function TurnoverROITab() {
                     className={`text-xs px-2.5 py-1 rounded-full border font-medium transition-colors ${
                       role === r
                         ? "bg-orange-500 text-white border-orange-500"
-                        : "bg-white text-gray-600 border-gray-300 hover:border-orange-300"
+                        : "bg-white text-slate-600 border-gray-300 hover:border-orange-300"
                     }`}
                   >
                     {r}
                   </button>
                 ))}
               </div>
-              <p className="text-xs text-gray-400 mt-1">
+              <p className="text-xs text-slate-400 mt-1">
                 Benchmark: {ROLE_DEFAULTS[role].benchmark}
               </p>
             </div>
@@ -1580,7 +1580,7 @@ function TurnoverROITab() {
       <SectionCard title="Retention Program ROI Analysis" accent>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
-            <label className="text-xs text-gray-600 font-medium block mb-1">
+            <label className="text-xs text-slate-600 font-medium block mb-1">
               Retention Intervention
             </label>
             <select
@@ -1592,7 +1592,7 @@ function TurnoverROITab() {
                 <option key={p}>{p}</option>
               ))}
             </select>
-            <div className="mt-2 bg-white rounded-lg border border-orange-200 p-2 text-xs text-gray-600">
+            <div className="mt-2 bg-white rounded-lg border border-orange-200 p-2 text-xs text-slate-600">
               <p>
                 <span className="font-semibold">Est. cost/employee/yr:</span>{" "}
                 {fmtDollars(RETENTION_PROGRAMS[retentionProgram].costPerEmployee)}
@@ -1613,7 +1613,7 @@ function TurnoverROITab() {
               unit="%"
               onChange={setProgramCoverage}
             />
-            <p className="text-xs text-gray-500 mt-1">
+            <p className="text-xs text-slate-500 mt-1">
               Covering {fmt(roiResults.coveredEmployees)} of {fmt(orgSize)} FTE
             </p>
           </div>
@@ -1652,7 +1652,7 @@ function TurnoverROITab() {
 
         <div className="mt-3 flex items-center gap-2 bg-white rounded-lg border border-orange-200 px-4 py-3">
           <RefreshCw size={16} className="text-orange-500" />
-          <p className="text-sm text-gray-700">
+          <p className="text-sm text-slate-700">
             <span className="font-semibold text-orange-700">Break-even:</span>{" "}
             {roiResults.breakEvenMonths > 0
               ? `${roiResults.breakEvenMonths.toFixed(1)} months`
@@ -1805,7 +1805,7 @@ function RuralWorkforceTab() {
               className={`text-xs px-3 py-1.5 rounded-lg border font-medium transition-colors ${
                 selectedState === s
                   ? "bg-orange-500 text-white border-orange-500"
-                  : "bg-white text-gray-600 border-gray-300 hover:border-orange-300"
+                  : "bg-white text-slate-600 border-gray-300 hover:border-orange-300"
               }`}
             >
               {s}
@@ -1936,12 +1936,12 @@ function RuralWorkforceTab() {
         }`}
       >
         <div className="text-center shrink-0">
-          <p className="text-3xl font-black text-gray-900">{hpsaScore}</p>
-          <p className="text-xs font-semibold text-gray-500">HPSA Score</p>
+          <p className="text-3xl font-black text-slate-900">{hpsaScore}</p>
+          <p className="text-xs font-semibold text-slate-500">HPSA Score</p>
         </div>
         <div>
           <div className="flex items-center gap-2 mb-1">
-            <p className="text-sm font-bold text-gray-800">
+            <p className="text-sm font-bold text-slate-800">
               Shortage Severity: {hpsaRisk}
             </p>
             <Pill
@@ -1949,12 +1949,12 @@ function RuralWorkforceTab() {
               color={hpsaColor === "red" ? "red" : hpsaColor === "amber" ? "amber" : "green"}
             />
           </div>
-          <p className="text-xs text-gray-600">
+          <p className="text-xs text-slate-600">
             Score calculated from provider-to-population ratio, poverty/uninsured
             rate, rural proportion, and hospital closure pressure. HRSA designates
             areas scoring ≥8 as HPSAs eligible for federal funding and J-1 waivers.
           </p>
-          <p className="text-xs text-gray-500 mt-1">
+          <p className="text-xs text-slate-500 mt-1">
             HPSA designations in {selectedState}:{" "}
             <span className="font-semibold">
               {stateData.hpsaDesignations} areas
@@ -1991,15 +1991,15 @@ function RuralWorkforceTab() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <p
-                    className={`text-sm font-semibold leading-tight ${active ? "text-orange-700" : "text-gray-800"}`}
+                    className={`text-sm font-semibold leading-tight ${active ? "text-orange-700" : "text-slate-800"}`}
                   >
                     {intv.label}
                   </p>
-                  <p className="text-xs text-gray-500 mt-0.5">
+                  <p className="text-xs text-slate-500 mt-0.5">
                     {intv.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mt-1.5">
-                    <span className="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">
+                    <span className="text-xs bg-gray-100 text-slate-600 px-1.5 py-0.5 rounded">
                       {intv.costLow === 0
                         ? "No cost"
                         : intv.costLow === intv.costHigh
@@ -2093,8 +2093,8 @@ function RuralWorkforceTab() {
         </div>
       ) : (
         <div className="bg-gray-50 border border-dashed border-gray-300 rounded-xl p-6 text-center">
-          <MapPin size={24} className="text-gray-400 mx-auto mb-2" />
-          <p className="text-sm text-gray-500">
+          <MapPin size={24} className="text-slate-400 mx-auto mb-2" />
+          <p className="text-sm text-slate-500">
             Select one or more interventions above to model their combined impact.
           </p>
         </div>
@@ -2170,7 +2170,7 @@ export default function WorkforceModeler() {
                 className={`flex items-center gap-1.5 px-4 py-3.5 text-sm font-medium border-b-2 whitespace-nowrap transition-colors ${
                   activeTab === tab.id
                     ? "border-orange-500 text-orange-600"
-                    : "border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-300"
+                    : "border-transparent text-slate-500 hover:text-slate-800 hover:border-gray-300"
                 }`}
               >
                 {tab.icon}

@@ -375,7 +375,7 @@ function Pill({ children, color = "amber" }: { children: React.ReactNode; color?
     amber: "bg-amber-100 text-amber-800",
     red:   "bg-red-100 text-red-800",
     green: "bg-emerald-100 text-emerald-800",
-    gray:  "bg-gray-100 text-gray-600",
+    gray:  "bg-gray-100 text-slate-600",
     blue:  "bg-sky-100 text-sky-800",
     orange:"bg-orange-100 text-orange-800",
   };
@@ -484,7 +484,7 @@ function DisparityCalculator() {
             <option key={i} value={i}>{o.label}</option>
           ))}
         </select>
-        <p className="mt-1 text-xs text-gray-400">National benchmark (White non-Hispanic): {fmt(outcome.baselineWhite, 1)} {outcome.unit}</p>
+        <p className="mt-1 text-xs text-slate-400">National benchmark (White non-Hispanic): {fmt(outcome.baselineWhite, 1)} {outcome.unit}</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -498,10 +498,10 @@ function DisparityCalculator() {
               return (
                 <div key={key}>
                   <div className="flex items-center justify-between mb-0.5">
-                    <span className="text-xs font-medium text-gray-700 w-44 truncate">{g.label}</span>
+                    <span className="text-xs font-medium text-slate-700 w-44 truncate">{g.label}</span>
                     <div className="flex items-center gap-1.5">
                       {barPill(g.ratio)}
-                      <span className="text-xs text-gray-500">{fmt(outcome.baselineWhite * g.ratio, 1)}</span>
+                      <span className="text-xs text-slate-500">{fmt(outcome.baselineWhite * g.ratio, 1)}</span>
                     </div>
                   </div>
                   <div className="h-4 bg-gray-100 rounded-full overflow-hidden">
@@ -514,7 +514,7 @@ function DisparityCalculator() {
               );
             })}
           </div>
-          <p className="mt-3 text-xs text-gray-400 italic">Bar length proportional to disparity ratio relative to highest group.</p>
+          <p className="mt-3 text-xs text-slate-400 italic">Bar length proportional to disparity ratio relative to highest group.</p>
         </div>
 
         {/* Population composition sliders */}
@@ -524,7 +524,7 @@ function DisparityCalculator() {
             const label = outcome.groups[key].label;
             return (
               <div key={key} className="mb-2">
-                <div className="flex justify-between text-xs text-gray-600 mb-0.5">
+                <div className="flex justify-between text-xs text-slate-600 mb-0.5">
                   <span className="truncate w-44">{label}</span>
                   <span className="font-semibold text-amber-700">{pop[key]}%</span>
                 </div>
@@ -567,15 +567,15 @@ function DisparityCalculator() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
           <div>
             <p className="text-2xl font-bold text-emerald-700">{fmt(results.livesSaved, 0)}</p>
-            <p className="text-xs text-gray-600 mt-0.5">Excess events prevented<br />(per 100K population)</p>
+            <p className="text-xs text-slate-600 mt-0.5">Excess events prevented<br />(per 100K population)</p>
           </div>
           <div>
             <p className="text-2xl font-bold text-emerald-700">{fmtUSD(results.costSavings)}</p>
-            <p className="text-xs text-gray-600 mt-0.5">Annual cost savings<br />(per 100K population)</p>
+            <p className="text-xs text-slate-600 mt-0.5">Annual cost savings<br />(per 100K population)</p>
           </div>
           <div>
             <p className="text-2xl font-bold text-emerald-700">{fmtUSD(results.costSavings / 100)}</p>
-            <p className="text-xs text-gray-600 mt-0.5">Per-capita savings<br />(per 100K population)</p>
+            <p className="text-xs text-slate-600 mt-0.5">Per-capita savings<br />(per 100K population)</p>
           </div>
         </div>
       </div>
@@ -592,7 +592,7 @@ function DisparityCalculator() {
         </button>
         {showDecomp && (
           <div className="mt-4 space-y-3">
-            <p className="text-xs text-gray-500">Adjust estimated % of disparity attributable to each factor (must sum to 100%).</p>
+            <p className="text-xs text-slate-500">Adjust estimated % of disparity attributable to each factor (must sum to 100%).</p>
             {(["income", "insurance", "access", "quality", "structural"] as const).map((factor) => {
               const labels: Record<string, string> = {
                 income: "Income / Socioeconomic",
@@ -608,7 +608,7 @@ function DisparityCalculator() {
               const val = activeDecomp[factor];
               return (
                 <div key={factor}>
-                  <div className="flex justify-between text-xs text-gray-700 mb-0.5">
+                  <div className="flex justify-between text-xs text-slate-700 mb-0.5">
                     <span>{labels[factor]}</span>
                     <span className="font-semibold">{val}%</span>
                   </div>
@@ -689,7 +689,7 @@ function GeoAccessAnalyzer() {
     const color = score >= 75 ? "bg-emerald-500" : score >= 50 ? "bg-amber-400" : score >= 30 ? "bg-orange-500" : "bg-red-500";
     return (
       <div>
-        <div className="flex justify-between text-xs text-gray-600 mb-1">
+        <div className="flex justify-between text-xs text-slate-600 mb-1">
           <span>{label}</span>
           <span className="font-bold">{fmt(score, 0)}/100</span>
         </div>
@@ -726,7 +726,7 @@ function GeoAccessAnalyzer() {
                 className={`w-full text-left text-sm px-3 py-1.5 rounded-lg transition-colors ${
                   urbanKey === u.value
                     ? "bg-amber-500 text-white font-semibold"
-                    : "hover:bg-amber-50 text-gray-700"
+                    : "hover:bg-amber-50 text-slate-700"
                 }`}
               >
                 {u.label}
@@ -744,7 +744,7 @@ function GeoAccessAnalyzer() {
                 className={`w-full text-left text-sm px-3 py-1.5 rounded-lg transition-colors ${
                   serviceKey === s.value
                     ? "bg-amber-500 text-white font-semibold"
-                    : "hover:bg-amber-50 text-gray-700"
+                    : "hover:bg-amber-50 text-slate-700"
                 }`}
               >
                 {s.label}
@@ -786,7 +786,7 @@ function GeoAccessAnalyzer() {
       {/* Intervention modeler */}
       <div className="bg-white rounded-xl border border-amber-100 p-4 shadow-sm">
         <SectionLabel>Intervention Modeler</SectionLabel>
-        <p className="text-xs text-gray-400 mb-3">Select interventions to model access improvement. Gains are additive up to 100.</p>
+        <p className="text-xs text-slate-400 mb-3">Select interventions to model access improvement. Gains are additive up to 100.</p>
         <div className="space-y-2">
           {INTERVENTIONS.map((iv, i) => {
             const active = activeInterventions.includes(i);
@@ -798,13 +798,13 @@ function GeoAccessAnalyzer() {
                 className={`w-full flex items-center justify-between text-sm px-3 py-2 rounded-lg border transition-colors ${
                   active
                     ? "bg-amber-100 border-amber-400 text-amber-900 font-semibold"
-                    : "bg-gray-50 border-gray-200 text-gray-700 hover:bg-amber-50"
+                    : "bg-gray-50 border-gray-200 text-slate-700 hover:bg-amber-50"
                 }`}
               >
                 <span>{iv.label}</span>
                 <div className="flex items-center gap-3 text-xs">
                   <span className="text-emerald-600 font-bold">+{iv.minGain}–{iv.maxGain}% access</span>
-                  <span className="text-gray-400">{fmtUSD(iv.costPerPct)}/ppt</span>
+                  <span className="text-slate-400">{fmtUSD(iv.costPerPct)}/ppt</span>
                   {active && <CheckCircle size={13} className="text-amber-600" />}
                 </div>
               </button>
@@ -834,17 +834,17 @@ function GeoAccessAnalyzer() {
                 key={uk}
                 className={`flex-1 rounded-lg p-2 text-center transition-all ${hpsaBg[intensity]} ${isActive ? "ring-2 ring-amber-500" : ""}`}
               >
-                <p className="text-xs font-semibold text-gray-800 leading-tight">
+                <p className="text-xs font-semibold text-slate-800 leading-tight">
                   {URBAN_RURAL_TYPES.find((u) => u.value === uk)?.label.split(" ")[0]}
                 </p>
-                <p className="text-xs text-gray-700 mt-0.5">{hpsaBgLabel[intensity]}</p>
+                <p className="text-xs text-slate-700 mt-0.5">{hpsaBgLabel[intensity]}</p>
               </div>
             );
           })}
         </div>
         <div className="flex gap-3 mt-2 justify-end">
           {hpsaBg.map((c, i) => (
-            <div key={i} className="flex items-center gap-1 text-xs text-gray-500">
+            <div key={i} className="flex items-center gap-1 text-xs text-slate-500">
               <div className={`w-3 h-3 rounded-full ${c}`} />
               {hpsaBgLabel[i]}
             </div>
@@ -937,7 +937,7 @@ function SDOHComposite() {
                 const isGood = ind.higherIsBetter ? local >= ind.national : local <= ind.national;
                 return (
                   <div key={ind.id} className="flex items-center gap-2">
-                    <span className="text-xs text-gray-600 w-36 truncate">{ind.label}</span>
+                    <span className="text-xs text-slate-600 w-36 truncate">{ind.label}</span>
                     <input
                       type="number"
                       className="w-20 border border-amber-200 rounded px-2 py-1 text-xs focus:outline-none focus:ring-1 focus:ring-amber-400 text-right"
@@ -945,7 +945,7 @@ function SDOHComposite() {
                       step={ind.unit === "per 100K" || ind.unit === "pop:provider" ? 10 : 0.1}
                       onChange={(e) => setValues((p) => ({ ...p, [ind.id]: parseFloat(e.target.value) || 0 }))}
                     />
-                    <span className="text-xs text-gray-400 w-20">{ind.unit}</span>
+                    <span className="text-xs text-slate-400 w-20">{ind.unit}</span>
                     <span className={`text-xs font-semibold ml-auto ${isGood ? "text-emerald-600" : "text-red-600"}`}>
                       {isGood ? "▲" : "▼"} Natl: {ind.national}
                     </span>
@@ -963,7 +963,7 @@ function SDOHComposite() {
         <div className="flex items-end gap-4 mb-3">
           <div>
             <p className={`text-5xl font-extrabold ${scoreColor(sdohScore)}`}>{fmt(sdohScore, 0)}</p>
-            <p className="text-sm text-gray-500">/100 — {scoreLabel(sdohScore)}</p>
+            <p className="text-sm text-slate-500">/100 — {scoreLabel(sdohScore)}</p>
           </div>
           <div className="flex-1">
             <div className="h-6 bg-gray-100 rounded-full overflow-hidden">
@@ -972,7 +972,7 @@ function SDOHComposite() {
                 style={{ width: `${sdohScore}%` }}
               />
             </div>
-            <div className="flex justify-between text-xs text-gray-400 mt-0.5">
+            <div className="flex justify-between text-xs text-slate-400 mt-0.5">
               <span>0 (Severe deprivation)</span>
               <span>100 (Optimal)</span>
             </div>
@@ -1001,7 +1001,7 @@ function SDOHComposite() {
         <SectionLabel>SDOH Intervention ROI Calculator</SectionLabel>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
           <div>
-            <label className="text-xs text-gray-600 font-medium block mb-1">Intervention</label>
+            <label className="text-xs text-slate-600 font-medium block mb-1">Intervention</label>
             <select
               className="w-full border border-amber-200 rounded-lg px-2 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
               value={interventionIdx}
@@ -1011,10 +1011,10 @@ function SDOHComposite() {
                 <option key={i} value={i}>{iv.label}</option>
               ))}
             </select>
-            <p className="text-xs text-gray-400 mt-1">Cost/person: {fmtUSD(intervention.costPerPerson)}</p>
+            <p className="text-xs text-slate-400 mt-1">Cost/person: {fmtUSD(intervention.costPerPerson)}</p>
           </div>
           <div>
-            <label className="text-xs text-gray-600 font-medium block mb-1">Population Size</label>
+            <label className="text-xs text-slate-600 font-medium block mb-1">Population Size</label>
             <input
               type="number" min={1000} step={1000}
               className="w-full border border-amber-200 rounded-lg px-2 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
@@ -1023,14 +1023,14 @@ function SDOHComposite() {
             />
           </div>
           <div>
-            <label className="text-xs text-gray-600 font-medium block mb-1">Coverage: {coveragePct}%</label>
+            <label className="text-xs text-slate-600 font-medium block mb-1">Coverage: {coveragePct}%</label>
             <input
               type="range" min={5} max={100} step={5}
               className="w-full accent-amber-500 mt-2"
               value={coveragePct}
               onChange={(e) => setCoveragePct(Number(e.target.value))}
             />
-            <p className="text-xs text-gray-400">{fmt(roiResults.coveredPop, 0)} people served</p>
+            <p className="text-xs text-slate-400">{fmt(roiResults.coveredPop, 0)} people served</p>
           </div>
         </div>
 
@@ -1046,7 +1046,7 @@ function SDOHComposite() {
                 ? roiResults.socialROI >= 1 ? "bg-emerald-50 border-emerald-200" : "bg-red-50 border-red-200"
                 : "bg-amber-50 border-amber-200"
             }`}>
-              <p className="text-xs text-gray-500 font-medium">{r.label}</p>
+              <p className="text-xs text-slate-500 font-medium">{r.label}</p>
               <p className={`text-xl font-bold mt-1 ${
                 r.label === "Social ROI"
                   ? roiResults.socialROI >= 1 ? "text-emerald-700" : "text-red-700"
@@ -1132,16 +1132,16 @@ function EquityICER() {
   }) {
     return (
       <div>
-        <label className="text-xs text-gray-600 font-medium block mb-1">{label}</label>
+        <label className="text-xs text-slate-600 font-medium block mb-1">{label}</label>
         <div className="flex items-center border border-amber-200 rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-amber-400">
-          {prefix && <span className="px-2 text-xs text-gray-400 bg-amber-50 border-r border-amber-200">{prefix}</span>}
+          {prefix && <span className="px-2 text-xs text-slate-400 bg-amber-50 border-r border-amber-200">{prefix}</span>}
           <input
             type="number" step={step}
             className="flex-1 px-2 py-2 text-sm focus:outline-none"
             value={value}
             onChange={(e) => onChange(parseFloat(e.target.value) || 0)}
           />
-          {suffix && <span className="px-2 text-xs text-gray-400 bg-amber-50 border-l border-amber-200">{suffix}</span>}
+          {suffix && <span className="px-2 text-xs text-slate-400 bg-amber-50 border-l border-amber-200">{suffix}</span>}
         </div>
       </div>
     );
@@ -1168,7 +1168,7 @@ function EquityICER() {
           ))}
           <button
             onClick={() => setExampleIdx(-1)}
-            className="text-xs px-3 py-1.5 rounded-full border border-gray-200 text-gray-500 hover:bg-gray-50"
+            className="text-xs px-3 py-1.5 rounded-full border border-gray-200 text-slate-500 hover:bg-gray-50"
           >
             Clear / Custom
           </button>
@@ -1188,7 +1188,7 @@ function EquityICER() {
         <div className="bg-white rounded-xl border border-amber-100 p-4 shadow-sm space-y-3">
           <SectionLabel>Equity Adjustment</SectionLabel>
           <div>
-            <label className="text-xs text-gray-600 font-medium block mb-1">
+            <label className="text-xs text-slate-600 font-medium block mb-1">
               Population Disadvantage Level: <span className="text-amber-700 font-bold">{disadvantage.toFixed(1)}</span>
               {" "}(1 = average, 3 = severely disadvantaged)
             </label>
@@ -1200,7 +1200,7 @@ function EquityICER() {
             />
           </div>
           <div>
-            <label className="text-xs text-gray-600 font-medium block mb-1">Equity Weight</label>
+            <label className="text-xs text-slate-600 font-medium block mb-1">Equity Weight</label>
             <div className="grid grid-cols-2 gap-1.5">
               {EQUITY_WEIGHTS.map((w, i) => (
                 <button
@@ -1209,14 +1209,14 @@ function EquityICER() {
                   className={`text-xs px-2 py-1.5 rounded-lg border transition-colors ${
                     equityWeightIdx === i
                       ? "bg-amber-500 text-white border-amber-500 font-semibold"
-                      : "border-amber-200 text-gray-700 hover:bg-amber-50"
+                      : "border-amber-200 text-slate-700 hover:bg-amber-50"
                   }`}
                 >
                   {w.label}
                 </button>
               ))}
             </div>
-            <p className="text-xs text-gray-400 mt-2 italic">
+            <p className="text-xs text-slate-400 mt-2 italic">
               Equity weighting gives extra value to health gains in disadvantaged populations, effectively lowering the ICER threshold requirement.
             </p>
           </div>
@@ -1232,14 +1232,14 @@ function EquityICER() {
               <p className={`text-3xl font-extrabold mt-1 ${icerColor(Math.abs(results.standardICER))}`}>
                 {results.standardICER < 0 ? "Dominant" : fmtUSD(results.standardICER)}
               </p>
-              <p className="text-xs text-gray-400 mt-0.5">per QALY gained (unadjusted)</p>
+              <p className="text-xs text-slate-400 mt-0.5">per QALY gained (unadjusted)</p>
             </div>
             <div className="bg-violet-50 rounded-xl border border-violet-200 p-4">
               <p className="text-xs text-violet-700 font-medium">Equity-Weighted ICER</p>
               <p className={`text-3xl font-extrabold mt-1 ${icerColor(Math.abs(results.equityICER))}`}>
                 {results.equityICER < 0 ? "Dominant" : fmtUSD(results.equityICER)}
               </p>
-              <p className="text-xs text-gray-400 mt-0.5">
+              <p className="text-xs text-slate-400 mt-0.5">
                 {EQUITY_WEIGHTS[equityWeightIdx].label} · disadv. {disadvantage.toFixed(1)}×
               </p>
             </div>
@@ -1248,7 +1248,7 @@ function EquityICER() {
               <p className={`text-3xl font-extrabold mt-1 ${results.heroi >= 1 ? "text-emerald-700" : "text-red-700"}`}>
                 {fmt(results.heroi, 2)}×
               </p>
-              <p className="text-xs text-gray-400 mt-0.5">(Fin. savings + social value) / program cost</p>
+              <p className="text-xs text-slate-400 mt-0.5">(Fin. savings + social value) / program cost</p>
             </div>
           </div>
 
@@ -1265,16 +1265,16 @@ function EquityICER() {
           {/* Threshold crossings */}
           <div className="bg-white rounded-xl border border-amber-100 p-4 shadow-sm">
             <SectionLabel>Cost-Effectiveness Threshold Analysis</SectionLabel>
-            <p className="text-xs text-gray-400 mb-3">
+            <p className="text-xs text-slate-400 mb-3">
               At which equity weight multiplier does the intervention cross each threshold?
             </p>
             <div className="space-y-2">
               {results.crossings.map((c) => (
                 <div key={c.label} className="flex items-center gap-3 text-sm">
                   <span className={`w-28 font-semibold ${c.color}`}>{c.label}</span>
-                  <span className="text-gray-400 text-xs">{fmtUSD(c.value)}/QALY</span>
+                  <span className="text-slate-400 text-xs">{fmtUSD(c.value)}/QALY</span>
                   <div className="flex-1 h-0.5 bg-gray-100" />
-                  <span className="text-xs text-gray-500">Needs ≥ {c.minMult}× weight</span>
+                  <span className="text-xs text-slate-500">Needs ≥ {c.minMult}× weight</span>
                   <Pill color={
                     parseFloat(c.minMult) <= EQUITY_WEIGHTS[equityWeightIdx].multiplier ? "green" : "gray"
                   }>
@@ -1337,7 +1337,7 @@ export default function HealthEquityStudio() {
                 className={`flex items-center gap-2 px-4 py-3.5 text-sm font-medium border-b-2 whitespace-nowrap transition-colors ${
                   active
                     ? "border-amber-500 text-amber-700"
-                    : "border-transparent text-gray-500 hover:text-amber-600 hover:border-amber-200"
+                    : "border-transparent text-slate-500 hover:text-amber-600 hover:border-amber-200"
                 }`}
               >
                 <Icon size={15} />
@@ -1399,7 +1399,7 @@ export default function HealthEquityStudio() {
 
       {/* Footer */}
       <div className="max-w-6xl mx-auto px-4 sm:px-8 pb-8">
-        <p className="text-center text-xs text-gray-400">
+        <p className="text-center text-xs text-slate-400">
           Health Equity Analysis Studio — For research and policy planning use only. Not a substitute for primary data analysis or clinical guidance.
         </p>
       </div>

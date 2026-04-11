@@ -307,7 +307,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                   <span className={`w-7 h-7 rounded-lg ${section.headerBg} flex items-center justify-center shrink-0`}>
                     <SectionIcon className={`w-4 h-4 ${section.headerColor}`} />
                   </span>
-                  <span className={`text-[12px] font-medium tracking-wide ${isOpen ? section.headerColor : "text-slate-600 dark:text-slate-300"}`}>
+                  <span className={`text-[13px] font-semibold tracking-wide ${isOpen ? section.headerColor : "text-slate-600 dark:text-slate-300"}`}>
                     {section.label}
                   </span>
                 </span>
@@ -337,7 +337,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                             >
                               <div className="flex items-center gap-2.5">
                                 <span className={`w-2 h-2 rounded-full shrink-0 ${pillar.dot}`} />
-                                <span className={`text-[12px] font-bold ${pillar.accent}`}>
+                                <span className={`text-[12px] font-medium ${pillar.accent}`}>
                                   {pillar.label}
                                 </span>
                               </div>
@@ -411,10 +411,10 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                             {Icon && (
                               <Icon className={`w-3.5 h-3.5 shrink-0 ${section.headerColor} opacity-60`} />
                             )}
-                            <span className={`text-[13px] font-medium leading-snug transition-colors ${
+                            <span className={`text-[12px] leading-snug transition-colors ${
                               isActive(item.href)
-                                ? `font-semibold ${section.headerColor}`
-                                : "text-slate-600 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-slate-100"
+                                ? `font-medium ${section.headerColor}`
+                                : "font-normal text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200"
                             }`}>
                               {item.label}
                             </span>
@@ -441,7 +441,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
             <span className="w-7 h-7 rounded-lg bg-slate-100 dark:bg-slate-700 flex items-center justify-center shrink-0">
               <BookmarkIcon className="w-4 h-4 text-slate-500 dark:text-slate-400" />
             </span>
-            <span className="text-[12px] font-medium tracking-wide text-slate-600 dark:text-slate-300">
+            <span className="text-[13px] font-semibold tracking-wide text-slate-600 dark:text-slate-300">
               My Library
             </span>
           </span>

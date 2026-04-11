@@ -176,7 +176,7 @@ export default function SurveyForm({ editionId, userId }: Props) {
         {/* Step 1: Profile */}
         {step === 0 && (
           <>
-            <h2 className="text-xl font-black text-slate-900">About You</h2>
+            <h2 className="text-lg md:text-xl font-black text-slate-900">About You</h2>
 
             <div>
               <label htmlFor="respondent-role" className="block text-sm font-bold text-slate-700 mb-2">
@@ -247,7 +247,7 @@ export default function SurveyForm({ editionId, userId }: Props) {
         {/* Step 2: Transformation */}
         {step === 1 && (
           <>
-            <h2 className="text-xl font-black text-slate-900">Transformation Readiness</h2>
+            <h2 className="text-lg md:text-xl font-black text-slate-900">Transformation Readiness</h2>
 
             <ScaleInput
               id="readiness"
@@ -293,7 +293,7 @@ export default function SurveyForm({ editionId, userId }: Props) {
         {/* Step 3: Technology */}
         {step === 2 && (
           <>
-            <h2 className="text-xl font-black text-slate-900">Technology & Digital Health</h2>
+            <h2 className="text-lg md:text-xl font-black text-slate-900">Technology & Digital Health</h2>
             <p className="text-sm text-slate-500">Rate from 1 (very low) to 5 (very high).</p>
 
             <ScaleInput
@@ -320,7 +320,7 @@ export default function SurveyForm({ editionId, userId }: Props) {
         {/* Step 4: Policy */}
         {step === 3 && (
           <>
-            <h2 className="text-xl font-black text-slate-900">Policy Priorities</h2>
+            <h2 className="text-lg md:text-xl font-black text-slate-900">Policy Priorities</h2>
 
             <div>
               <label htmlFor="federal-priority" className="block text-sm font-bold text-slate-700 mb-2">

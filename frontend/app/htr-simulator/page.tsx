@@ -234,10 +234,10 @@ export default function HTRSimulatorPage() {
           <span className="text-[10px] font-black uppercase tracking-widest text-violet-400 block mb-4">
             HTR Simulator · Beta
           </span>
-          <h1 className="text-5xl font-black tracking-tight mb-5 leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight mb-5 leading-tight">
             Health Transformation Roadmap Simulator
           </h1>
-          <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg text-slate-300 max-w-2xl leading-relaxed">
             Model the multi-pillar impact of any combination of healthcare transformation decisions
             before implementation — across policy, technology, financial, equity, clinical, and operational dimensions.
           </p>
@@ -301,7 +301,7 @@ export default function HTRSimulatorPage() {
                 </div>
                 <div>
                   <div className="font-bold text-slate-900 mb-1">{item.title}</div>
-                  <div className="text-sm text-slate-600 leading-relaxed">{item.body}</div>
+                  <div className="text-sm md:text-base text-slate-600 leading-relaxed">{item.body}</div>
                 </div>
               </div>
             ))}
@@ -409,7 +409,7 @@ export default function HTRSimulatorPage() {
               <div key={s.step} className="bg-white border border-slate-200 rounded-2xl p-6">
                 <div className={`text-3xl font-black mb-3 text-${s.color}-300`}>{s.step}</div>
                 <div className="font-black text-slate-900 text-lg mb-2">{s.title}</div>
-                <p className="text-slate-600 text-sm leading-relaxed">{s.body}</p>
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed">{s.body}</p>
               </div>
             ))}
           </div>
@@ -466,9 +466,9 @@ export default function HTRSimulatorPage() {
                             </span>
                           )}
                         </div>
-                        <h3 className="text-xl font-black text-slate-900">{uc.name}</h3>
+                        <h3 className="text-lg md:text-xl font-black text-slate-900">{uc.name}</h3>
                         <div className="text-sm font-bold text-slate-500 mb-3">{uc.subtitle}</div>
-                        <p className="text-slate-600 text-sm leading-relaxed mb-4">{uc.description}</p>
+                        <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">{uc.description}</p>
                         <div className="flex flex-wrap gap-4 mb-4">
                           {uc.stats.map(stat => (
                             <div key={stat.label}>

@@ -150,7 +150,7 @@ export default function UpgradePrompt({ required, feature, compact = false }: Up
         <Icon className={`w-8 h-8 ${config.color}`} />
       </div>
 
-      <h3 className="text-xl font-black text-slate-900 mb-2">
+      <h3 className="text-lg md:text-xl font-black text-slate-900 mb-2">
         {feature ? `${feature} is a ${config.label} Feature` : config.headline}
       </h3>
       <p className="text-sm text-slate-500 mb-6 leading-relaxed">{config.subline}</p>

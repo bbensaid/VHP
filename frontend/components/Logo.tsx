@@ -55,11 +55,11 @@ const Logo: React.FC = () => {
         <div className="mt-0 text-center text-[10px] font-medium tracking-widest uppercase flex justify-center items-center gap-1">
           {/* <span className="text-card-economics font-bold">OPTIMIZING CARE</span> */}
     
-          <span className="text-gray-400 font-bold">EDUCATE</span>
-          <span className="text-gray-400">-</span>
-          <span className="text-gray-400 font-bold">ANALYZE</span>
-          <span className="text-gray-400">-</span>
-          <span className="text-gray-400 font-bold">ADVISE</span>
+          <span className="text-slate-400 font-bold">EDUCATE</span>
+          <span className="text-slate-400">-</span>
+          <span className="text-slate-400 font-bold">ANALYZE</span>
+          <span className="text-slate-400">-</span>
+          <span className="text-slate-400 font-bold">ADVISE</span>
         </div>
       </div>
     </div>

@@ -69,7 +69,7 @@ export default function ConsultingPage() {
           <h1 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight leading-tight">
             Strategic Consulting
           </h1>
-          <p className="text-base text-slate-600 max-w-3xl leading-relaxed mb-8">
+          <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed mb-8">
             We partner with C-suite executives to design resilient operational frameworks spanning all six pillars of healthcare transformation: Policy, Economics, Technology, Clinical, Equity, and Operations. We move beyond theory to implement actionable strategies that protect margins, improve clinical outcomes, and advance health equity — simultaneously.
           </p>
           <div className="flex flex-wrap gap-2">
@@ -97,11 +97,11 @@ export default function ConsultingPage() {
                   {PILLAR_STYLES[card.pillar].label} Pillar
                 </span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{card.title}</h3>
-              <p className="text-gray-600 mb-5 leading-relaxed text-sm">{card.description}</p>
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">{card.title}</h3>
+              <p className="text-slate-600 text-sm md:text-base mb-5 leading-relaxed">{card.description}</p>
               <ul className="space-y-2.5">
                 {card.bullets.map((bullet) => (
-                  <li key={bullet} className="flex gap-3 items-center text-sm text-gray-600 font-medium">
+                  <li key={bullet} className="flex gap-3 items-center text-sm text-slate-600 font-medium">
                     <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${PILLAR_STYLES[card.pillar].text.replace("text-", "bg-")}`}></span>
                     {bullet}
                   </li>
@@ -140,20 +140,20 @@ export default function ConsultingPage() {
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-slate-50 border border-slate-200 rounded-xl p-8">
             <div className="text-3xl mb-4">📋</div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Project-Based</h3>
-            <p className="text-slate-600 text-sm mb-4 leading-relaxed">Defined scope, deliverables, and timeline. Ideal for discrete strategic questions — entering a new market, responding to a regulatory change, evaluating an acquisition.</p>
+            <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Project-Based</h3>
+            <p className="text-slate-600 text-sm md:text-base mb-4 leading-relaxed">Defined scope, deliverables, and timeline. Ideal for discrete strategic questions — entering a new market, responding to a regulatory change, evaluating an acquisition.</p>
             <p className="text-fuchsia-600 font-bold text-sm">3–6 month typical duration</p>
           </div>
           <div className="bg-fuchsia-50 border-2 border-fuchsia-300 rounded-xl p-8 shadow-lg">
             <div className="text-3xl mb-4">🔄</div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Advisory Retainer</h3>
-            <p className="text-slate-600 text-sm mb-4 leading-relaxed">Ongoing access to a dedicated principal advisor on a monthly or quarterly retainer. Ideal for organizations navigating continuous regulatory change or major multi-year transformation.</p>
+            <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Advisory Retainer</h3>
+            <p className="text-slate-600 text-sm md:text-base mb-4 leading-relaxed">Ongoing access to a dedicated principal advisor on a monthly or quarterly retainer. Ideal for organizations navigating continuous regulatory change or major multi-year transformation.</p>
             <p className="text-fuchsia-600 font-bold text-sm">Monthly or quarterly commitment</p>
           </div>
           <div className="bg-slate-50 border border-slate-200 rounded-xl p-8">
             <div className="text-3xl mb-4">🧑‍💼</div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Expert Embed</h3>
-            <p className="text-slate-600 text-sm mb-4 leading-relaxed">A fractional HTR principal embedded part-time in your leadership team — attending strategy sessions, joining board meetings, and serving as an on-call strategic resource.</p>
+            <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Expert Embed</h3>
+            <p className="text-slate-600 text-sm md:text-base mb-4 leading-relaxed">A fractional HTR principal embedded part-time in your leadership team — attending strategy sessions, joining board meetings, and serving as an on-call strategic resource.</p>
             <p className="text-fuchsia-600 font-bold text-sm">Flexible time commitment</p>
           </div>
         </div>
@@ -199,9 +199,9 @@ export default function ConsultingPage() {
           {service.tiers.map((tier) => (
             <div key={tier.name} className={`p-8 rounded-xl border-2 ${tier.highlight ? "border-fuchsia-600 bg-fuchsia-50 shadow-xl" : "border-slate-200 bg-white shadow-sm"}`}>
               {tier.highlight && <div className="text-xs font-black text-fuchsia-700 uppercase tracking-widest mb-3">Most Popular</div>}
-              <h3 className="text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
               <div className="text-2xl font-black text-fuchsia-600 mb-3">{tier.price}</div>
-              <p className="text-slate-600 text-sm mb-6 leading-relaxed">{tier.description}</p>
+              <p className="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">{tier.description}</p>
               <ul className="space-y-2">
                 {tier.includes.map((item) => (
                   <li key={item} className="flex gap-2 items-start text-sm text-slate-700">
@@ -217,8 +217,8 @@ export default function ConsultingPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <div className="container mx-auto px-4 md:px-8 max-w-4xl mt-16 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to optimize your organization?</h2>
-        <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Ready to optimize your organization?</h2>
+        <p className="text-base md:text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
           Engagements begin with a no-obligation discovery call. We scope the project in 5 business days and have a proposal in your inbox within 10.
         </p>
         <Link

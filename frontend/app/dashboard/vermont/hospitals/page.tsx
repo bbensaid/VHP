@@ -26,7 +26,7 @@ export default function NVRHHeroProfile() {
                   ID: VT-NVRH-001
                 </span>
               </div>
-              <h1 className="text-3xl font-black text-slate-900">
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-slate-900">
                 Northeastern Vermont Regional
               </h1>
               <p className="text-slate-500">

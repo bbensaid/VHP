@@ -427,7 +427,7 @@ function renderStarIcons(stars: number) {
       {[1, 2, 3, 4, 5].map((i) => (
         <Star
           key={i}
-          className={`w-3.5 h-3.5 ${i <= full ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}`}
+          className={`w-3.5 h-3.5 ${i <= full ? "fill-yellow-400 text-yellow-400" : "text-slate-300"}`}
         />
       ))}
     </span>
@@ -562,7 +562,7 @@ function HedisTab() {
                   <span className="inline-block bg-violet-100 text-violet-700 text-xs font-bold px-2 py-0.5 rounded">
                     {r.code}
                   </span>
-                  <span className="text-sm font-semibold text-gray-800 truncate">{r.name}</span>
+                  <span className="text-sm font-semibold text-slate-800 truncate">{r.name}</span>
                 </div>
               </div>
               {/* Stars */}
@@ -571,7 +571,7 @@ function HedisTab() {
                 <span className={`text-xs font-bold ml-1 ${starColor(r.stars)}`}>{r.stars}★</span>
               </div>
               {/* Benchmarks */}
-              <div className="hidden md:flex gap-4 text-xs text-gray-500">
+              <div className="hidden md:flex gap-4 text-xs text-slate-500">
                 <span>50th: {r.p50}%</span>
                 <span>90th: {r.p90}%</span>
                 <span className={`font-semibold ${r.gap90 > 0 ? "text-orange-600" : "text-green-600"}`}>
@@ -589,7 +589,7 @@ function HedisTab() {
             {/* Slider row */}
             <div className="px-4 pb-3 border-t border-violet-50">
               <div className="flex items-center gap-3 mt-2">
-                <span className="text-xs text-gray-500 w-24 flex-shrink-0">Current: {r.cur}%</span>
+                <span className="text-xs text-slate-500 w-24 flex-shrink-0">Current: {r.cur}%</span>
                 <input
                   type="range"
                   min={0}
@@ -598,7 +598,7 @@ function HedisTab() {
                   onChange={(e) => setPerf(r.id, Number(e.target.value))}
                   className="flex-1 accent-violet-600 h-1.5"
                 />
-                <span className="text-xs text-gray-400 w-16 text-right flex-shrink-0">
+                <span className="text-xs text-slate-400 w-16 text-right flex-shrink-0">
                   {r.cur >= r.p90 ? (
                     <span className="text-green-600 font-semibold">Above 90th</span>
                   ) : r.cur >= r.p50 ? (
@@ -628,7 +628,7 @@ function HedisTab() {
                   style={{ width: `${r.cur}%` }}
                 />
               </div>
-              <div className="flex justify-between text-[10px] text-gray-400 mt-0.5">
+              <div className="flex justify-between text-[10px] text-slate-400 mt-0.5">
                 <span>0%</span>
                 <span className="text-yellow-600">50th: {r.p50}%</span>
                 <span className="text-green-600">90th: {r.p90}%</span>
@@ -644,7 +644,7 @@ function HedisTab() {
                 </div>
                 <ul className="space-y-1">
                   {r.strategies.map((s, i) => (
-                    <li key={i} className="flex items-start gap-2 text-xs text-gray-700">
+                    <li key={i} className="flex items-start gap-2 text-xs text-slate-700">
                       <CheckCircle className="w-3.5 h-3.5 text-violet-500 mt-0.5 flex-shrink-0" />
                       {s}
                     </li>
@@ -785,14 +785,14 @@ function StarsTab() {
           <div className="space-y-2">
             {domainResults.map((d) => (
               <div key={d.id} className="flex items-center gap-3">
-                <span className="text-xs text-gray-600 w-44 flex-shrink-0 truncate">{d.name}</span>
+                <span className="text-xs text-slate-600 w-44 flex-shrink-0 truncate">{d.name}</span>
                 <div className="flex-1 bg-gray-100 rounded-full h-2">
                   <div
                     className={`h-2 rounded-full transition-all ${colorMap[d.color]}`}
                     style={{ width: `${(d.domainStars / 5) * 100}%` }}
                   />
                 </div>
-                <span className="text-xs font-bold text-gray-700 w-10 text-right">
+                <span className="text-xs font-bold text-slate-700 w-10 text-right">
                   {d.domainStars.toFixed(2)}★
                 </span>
               </div>
@@ -830,12 +830,12 @@ function StarsTab() {
                   : "border-gray-200 bg-gray-50"
               }`}
             >
-              <div className="text-xs font-bold text-gray-500 mb-1">{s.stars}★ Stars</div>
-              <div className="text-sm font-bold text-gray-800">
+              <div className="text-xs font-bold text-slate-500 mb-1">{s.stars}★ Stars</div>
+              <div className="text-sm font-bold text-slate-800">
                 ${(s.rev / 1e6).toFixed(1)}M
               </div>
               <div className="text-xs text-violet-600 font-semibold">+{s.bonus.toFixed(0)}% bonus</div>
-              <div className={`text-xs mt-1 font-semibold ${s.rev > currentRevenue ? "text-green-600" : "text-gray-400"}`}>
+              <div className={`text-xs mt-1 font-semibold ${s.rev > currentRevenue ? "text-green-600" : "text-slate-400"}`}>
                 {s.rev > currentRevenue
                   ? `+$${((s.rev - currentRevenue) / 1e6).toFixed(1)}M vs current`
                   : "Current tier"}
@@ -856,12 +856,12 @@ function StarsTab() {
               <span className={`text-xs font-bold px-2 py-0.5 rounded text-white ${colorMap[domain.color]}`}>
                 Domain {domain.id}
               </span>
-              <span className="text-sm font-bold text-gray-800 flex-1 text-left">{domain.name}</span>
-              <span className="text-sm font-bold text-gray-700">{domain.domainStars.toFixed(2)}★</span>
+              <span className="text-sm font-bold text-slate-800 flex-1 text-left">{domain.name}</span>
+              <span className="text-sm font-bold text-slate-700">{domain.domainStars.toFixed(2)}★</span>
               {expandedDomain === domain.id ? (
-                <ChevronUp className="w-4 h-4 text-gray-500" />
+                <ChevronUp className="w-4 h-4 text-slate-500" />
               ) : (
-                <ChevronDown className="w-4 h-4 text-gray-500" />
+                <ChevronDown className="w-4 h-4 text-slate-500" />
               )}
             </button>
             {expandedDomain === domain.id && (
@@ -869,16 +869,16 @@ function StarsTab() {
                 {domain.measureStars.map((m) => (
                   <div key={m.id} className="flex flex-col sm:flex-row sm:items-center gap-2">
                     <div className="flex-1 min-w-0">
-                      <div className="text-xs font-semibold text-gray-700 truncate">{m.name}</div>
+                      <div className="text-xs font-semibold text-slate-700 truncate">{m.name}</div>
                       <div className="flex items-center gap-1 mt-0.5">
                         {renderStarIcons(m.stars)}
-                        <span className="text-xs text-gray-500 ml-1">
+                        <span className="text-xs text-slate-500 ml-1">
                           ({m.stars}★) — Cut points: {m.cutPoints.join(" / ")}
                         </span>
                       </div>
                     </div>
                     <div className="flex items-center gap-2 flex-shrink-0">
-                      <span className="text-xs text-gray-500 w-16 text-right">Value: {m.val}</span>
+                      <span className="text-xs text-slate-500 w-16 text-right">Value: {m.val}</span>
                       <input
                         type="range"
                         min={0}
@@ -909,8 +909,8 @@ function StarsTab() {
                   {i + 1}
                 </span>
                 <div className="flex-1 min-w-0">
-                  <div className="text-xs font-semibold text-gray-700 truncate">{s.measure}</div>
-                  <div className="text-xs text-gray-500">{s.domain}</div>
+                  <div className="text-xs font-semibold text-slate-700 truncate">{s.measure}</div>
+                  <div className="text-xs text-slate-500">{s.domain}</div>
                 </div>
                 <div className="text-xs text-right flex-shrink-0">
                   <div className="text-orange-600 font-semibold">Current: {s.current}</div>
@@ -1124,13 +1124,13 @@ function QPPTab() {
                 : "bg-white border-violet-100"
             }`}
           >
-            <div className={`text-xs font-semibold mb-1 ${s.color === "gradient" ? "text-violet-200" : "text-gray-500"}`}>
+            <div className={`text-xs font-semibold mb-1 ${s.color === "gradient" ? "text-violet-200" : "text-slate-500"}`}>
               {s.label}
             </div>
             <div className={`text-2xl font-black ${s.color === "gradient" ? "text-white" : "text-violet-700"}`}>
               {s.score.toFixed(0)}
             </div>
-            <div className={`text-xs ${s.color === "gradient" ? "text-violet-200" : "text-gray-400"}`}>/ 100</div>
+            <div className={`text-xs ${s.color === "gradient" ? "text-violet-200" : "text-slate-400"}`}>/ 100</div>
             {s.color !== "gradient" && (
               <div className="mt-1 bg-gray-100 rounded-full h-1">
                 <div
@@ -1150,8 +1150,8 @@ function QPPTab() {
         }`}
       >
         <div className="flex-1">
-          <div className="text-sm font-bold text-gray-700">MIPS Payment Adjustment</div>
-          <div className="text-xs text-gray-500 mt-0.5">
+          <div className="text-sm font-bold text-slate-700">MIPS Payment Adjustment</div>
+          <div className="text-xs text-slate-500 mt-0.5">
             {compositeScore >= 75
               ? "Exceptional Performance — eligible for additional bonus"
               : compositeScore >= 45
@@ -1170,7 +1170,7 @@ function QPPTab() {
           </div>
         </div>
         <div className="text-right min-w-[140px]">
-          <label className="text-xs font-semibold text-gray-600">
+          <label className="text-xs font-semibold text-slate-600">
             Part B Volume: ${(partBVolume / 1e6).toFixed(1)}M
           </label>
           <input
@@ -1193,7 +1193,7 @@ function QPPTab() {
             {MIPS_QUALITY_MEASURES.map((m) => (
               <div key={m.id}>
                 <div className="flex justify-between text-xs mb-1">
-                  <span className="text-gray-700 font-medium">{m.name}</span>
+                  <span className="text-slate-700 font-medium">{m.name}</span>
                   <span className="text-violet-700 font-semibold">{qmRates[m.id]}%</span>
                 </div>
                 <input
@@ -1204,9 +1204,9 @@ function QPPTab() {
                   onChange={(e) => setQmRates((p) => ({ ...p, [m.id]: Number(e.target.value) }))}
                   className="w-full accent-violet-600 h-1.5"
                 />
-                <div className="flex justify-between text-[10px] text-gray-400">
+                <div className="flex justify-between text-[10px] text-slate-400">
                   <span>Decile {Math.floor(qmRates[m.id] / 10)}</span>
-                  <span className="text-gray-400 italic">{m.specialty}</span>
+                  <span className="text-slate-400 italic">{m.specialty}</span>
                 </div>
               </div>
             ))}
@@ -1228,7 +1228,7 @@ function QPPTab() {
                   className="w-3.5 h-3.5 accent-violet-600"
                   disabled={m.required && !!piEnabled[m.id]}
                 />
-                <span className="text-xs text-gray-700 flex-1">{m.name}</span>
+                <span className="text-xs text-slate-700 flex-1">{m.name}</span>
                 {m.required && (
                   <span className="text-[10px] font-bold text-red-500 bg-red-50 px-1.5 py-0.5 rounded">Required</span>
                 )}
@@ -1249,7 +1249,7 @@ function QPPTab() {
               onChange={(e) => setCostPercentile(Number(e.target.value))}
               className="w-full accent-violet-600 h-1.5"
             />
-            <div className="flex justify-between text-[10px] text-gray-400 mt-0.5">
+            <div className="flex justify-between text-[10px] text-slate-400 mt-0.5">
               <span>0th (lowest cost)</span>
               <span>100th (highest cost)</span>
             </div>
@@ -1261,7 +1261,7 @@ function QPPTab() {
       <div className="bg-white rounded-xl border border-violet-100 p-4">
         <h3 className="text-xs font-bold text-violet-700 mb-1">
           Improvement Activities — Score: {iaScore.toFixed(0)}/100
-          <span className="text-gray-400 font-normal ml-2">
+          <span className="text-slate-400 font-normal ml-2">
             ({[...selectedIA].reduce((s, id) => {
               const a = IMPROVEMENT_ACTIVITIES.find((x) => x.id === id);
               return s + (a?.points || 0);
@@ -1277,10 +1277,10 @@ function QPPTab() {
                 onChange={() => toggleIA(act.id)}
                 className="w-3.5 h-3.5 accent-violet-600"
               />
-              <span className="text-xs text-gray-700 flex-1">{act.name}</span>
+              <span className="text-xs text-slate-700 flex-1">{act.name}</span>
               <span
                 className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${
-                  act.points === 20 ? "bg-violet-100 text-violet-700" : "bg-gray-100 text-gray-600"
+                  act.points === 20 ? "bg-violet-100 text-violet-700" : "bg-gray-100 text-slate-600"
                 }`}
               >
                 {act.points}pts
@@ -1419,7 +1419,7 @@ function P4PTab() {
               onChange={(e) => setTimeline(Number(e.target.value))}
               className="w-full accent-violet-600 mt-2"
             />
-            <div className="flex justify-between text-[10px] text-gray-400">
+            <div className="flex justify-between text-[10px] text-slate-400">
               <span>6mo</span><span>18mo</span><span>36mo</span>
             </div>
           </div>
@@ -1446,7 +1446,7 @@ function P4PTab() {
                   onChange={() => toggleMeasure(m.id)}
                   className="w-4 h-4 accent-violet-600"
                 />
-                <span className="text-xs font-semibold text-gray-800">{m.name}</span>
+                <span className="text-xs font-semibold text-slate-800">{m.name}</span>
                 <span className="ml-auto text-[10px] text-violet-600 font-semibold">
                   ${m.baseBonus.toLocaleString()}/1% per 1K members
                 </span>
@@ -1454,7 +1454,7 @@ function P4PTab() {
               {selectedMeasures.has(m.id) && (
                 <div className="grid grid-cols-2 gap-3">
                   <div>
-                    <div className="text-[10px] text-gray-500 mb-0.5">Current: {currentPerf[m.id]}%</div>
+                    <div className="text-[10px] text-slate-500 mb-0.5">Current: {currentPerf[m.id]}%</div>
                     <input
                       type="range"
                       min={0}
@@ -1467,7 +1467,7 @@ function P4PTab() {
                     />
                   </div>
                   <div>
-                    <div className="text-[10px] text-gray-500 mb-0.5">Target: {targetPerf[m.id]}%</div>
+                    <div className="text-[10px] text-slate-500 mb-0.5">Target: {targetPerf[m.id]}%</div>
                     <input
                       type="range"
                       min={0}
@@ -1542,7 +1542,7 @@ function P4PTab() {
             ].map((f) => (
               <div key={f.label}>
                 <div className="flex justify-between text-xs mb-1">
-                  <span className="text-gray-600 font-medium">{f.label}</span>
+                  <span className="text-slate-600 font-medium">{f.label}</span>
                   <span className="text-red-600 font-semibold">{f.format(f.value)}</span>
                 </div>
                 <input
@@ -1597,7 +1597,7 @@ function P4PTab() {
             ].map((f) => (
               <div key={f.label}>
                 <div className="flex justify-between text-xs mb-1">
-                  <span className="text-gray-600 font-medium">{f.label}</span>
+                  <span className="text-slate-600 font-medium">{f.label}</span>
                   <span className="text-green-600 font-semibold">${f.value.toLocaleString()}</span>
                 </div>
                 <input
@@ -1615,7 +1615,7 @@ function P4PTab() {
               <div className="text-xs font-bold text-green-700 mb-1">VBC Quality Bonus Revenue</div>
               <div className="text-xs text-green-600 font-semibold">
                 ${revenue.perMeasureRevenue.toLocaleString(undefined, { maximumFractionDigits: 0 })}
-                <span className="font-normal text-gray-500 ml-1">
+                <span className="font-normal text-slate-500 ml-1">
                   from {selectedMeasuresList.length} measures over {timeline} months
                 </span>
               </div>
@@ -1719,7 +1719,7 @@ export default function ClinicalQualityOptimizer() {
               <Activity className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h1 className="text-xl md:text-2xl font-black text-gray-900 leading-tight">
+              <h1 className="text-xl md:text-2xl font-black text-slate-900 leading-tight">
                 Clinical Quality & Value Optimizer
               </h1>
               <p className="text-xs text-violet-600 font-medium">

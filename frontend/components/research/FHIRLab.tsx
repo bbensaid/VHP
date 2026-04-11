@@ -507,9 +507,9 @@ function BuilderTab() {
   }, [generated]);
 
   const inputCls =
-    "w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400";
+    "w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400";
   const selectCls =
-    "w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400";
+    "w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400";
   const labelCls = "block text-xs font-medium text-indigo-700 mb-1";
 
   function renderFields() {
@@ -789,7 +789,7 @@ function BuilderTab() {
         <div className="flex-1">
           <label className="block text-sm font-medium text-indigo-700 mb-1">FHIR Resource Type</label>
           <select
-            className="rounded-lg border border-indigo-300 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="rounded-lg border border-indigo-300 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             value={resourceType}
             onChange={(e) => { setResourceType(e.target.value as ResourceType); setFields({}); setGenerated(""); }}
           >
@@ -836,7 +836,7 @@ function BuilderTab() {
       {generated && (
         <div className="relative rounded-xl overflow-hidden border border-gray-700">
           <div className="flex items-center justify-between bg-gray-800 px-4 py-2">
-            <span className="text-xs font-mono text-gray-400">FHIR R4 — {resourceType}</span>
+            <span className="text-xs font-mono text-slate-400">FHIR R4 — {resourceType}</span>
             <span className="text-xs text-indigo-400">application/fhir+json</span>
           </div>
           <div className="overflow-auto max-h-96 bg-gray-900 p-4">
@@ -909,9 +909,9 @@ function MapperTab() {
         <div>
           <label className="block text-xs font-medium text-indigo-700 mb-1">Search Term or Code</label>
           <div className="relative">
-            <Search className="absolute left-3 top-2.5 w-4 h-4 text-gray-400" />
+            <Search className="absolute left-3 top-2.5 w-4 h-4 text-slate-400" />
             <input
-              className="w-full rounded-lg border border-indigo-200 bg-white pl-9 pr-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              className="w-full rounded-lg border border-indigo-200 bg-white pl-9 pr-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               placeholder="diabetes, I10, sepsis…"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -921,7 +921,7 @@ function MapperTab() {
         <div>
           <label className="block text-xs font-medium text-indigo-700 mb-1">Source Terminology</label>
           <select
-            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             value={source}
             onChange={(e) => setSource(e.target.value as SourceTerminology)}
           >
@@ -933,7 +933,7 @@ function MapperTab() {
         <div>
           <label className="block text-xs font-medium text-indigo-700 mb-1">Target Terminology</label>
           <select
-            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             value={target}
             onChange={(e) => setTarget(e.target.value as TargetTerminology)}
           >
@@ -944,7 +944,7 @@ function MapperTab() {
         </div>
       </div>
 
-      <div className="text-xs text-gray-500 flex items-center gap-2">
+      <div className="text-xs text-slate-500 flex items-center gap-2">
         <Info className="w-3.5 h-3.5 text-indigo-400" />
         Showing {results.length} of {TERMINOLOGY_MAPPINGS.length} mappings
         {source !== "ICD-10" && (
@@ -983,18 +983,18 @@ function MapperTab() {
                 const td = getTargetData(m);
                 return (
                   <tr key={m.term} className="hover:bg-indigo-50/40 transition-colors">
-                    <td className="px-4 py-3 font-medium text-gray-800">{m.term}</td>
+                    <td className="px-4 py-3 font-medium text-slate-800">{m.term}</td>
                     <td className="px-4 py-3">
-                      <span className="font-mono text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded">{m.icd10.code}</span>
+                      <span className="font-mono text-xs bg-gray-100 text-slate-700 px-2 py-0.5 rounded">{m.icd10.code}</span>
                     </td>
                     <td className="px-4 py-3">
                       {td ? (
                         <span className="font-mono text-xs bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded">{td.code}</span>
                       ) : (
-                        <span className="text-xs text-gray-400 italic">No LOINC mapping</span>
+                        <span className="text-xs text-slate-400 italic">No LOINC mapping</span>
                       )}
                     </td>
-                    <td className="px-4 py-3 text-xs text-gray-600 max-w-xs truncate">
+                    <td className="px-4 py-3 text-xs text-slate-600 max-w-xs truncate">
                       {td ? td.display : "—"}
                     </td>
                     <td className="px-4 py-3 text-xs text-indigo-500 font-mono truncate max-w-xs">
@@ -1073,7 +1073,7 @@ function CDSTab() {
         <div>
           <label className="block text-xs font-medium text-indigo-700 mb-1">Hook Type</label>
           <select
-            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             value={hookType}
             onChange={(e) => setHookType(e.target.value as HookType)}
           >
@@ -1085,7 +1085,7 @@ function CDSTab() {
         <div>
           <label className="block text-xs font-medium text-indigo-700 mb-1">Scenario</label>
           <select
-            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             value={scenarioId}
             onChange={(e) => { setScenarioId(e.target.value); setFiredCards(null); }}
           >
@@ -1097,7 +1097,7 @@ function CDSTab() {
         <div>
           <label className="block text-xs font-medium text-indigo-700 mb-1">Patient ID</label>
           <input
-            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             value={patientId}
             onChange={(e) => setPatientId(e.target.value)}
           />
@@ -1105,7 +1105,7 @@ function CDSTab() {
         <div>
           <label className="block text-xs font-medium text-indigo-700 mb-1">User Role</label>
           <select
-            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             value={userRole}
             onChange={(e) => setUserRole(e.target.value)}
           >
@@ -1118,7 +1118,7 @@ function CDSTab() {
         <div>
           <label className="block text-xs font-medium text-indigo-700 mb-1">Encounter ID</label>
           <input
-            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             value={encounterId}
             onChange={(e) => setEncounterId(e.target.value)}
           />
@@ -1145,7 +1145,7 @@ function CDSTab() {
 
       {showPayload && (
         <div className="rounded-xl overflow-hidden border border-gray-700">
-          <div className="bg-gray-800 px-4 py-2 text-xs font-mono text-gray-400">CDS Hooks Request Payload</div>
+          <div className="bg-gray-800 px-4 py-2 text-xs font-mono text-slate-400">CDS Hooks Request Payload</div>
           <div className="overflow-auto max-h-60 bg-gray-900 p-4">
             <pre className="text-xs font-mono leading-relaxed" dangerouslySetInnerHTML={{ __html: syntaxColorJson(payload) }} />
           </div>
@@ -1169,11 +1169,11 @@ function CDSTab() {
                 <div className="flex items-start justify-between gap-3 mb-3">
                   <div className="flex items-start gap-2">
                     {cfg.icon}
-                    <p className="font-semibold text-gray-800 text-sm">{card.summary}</p>
+                    <p className="font-semibold text-slate-800 text-sm">{card.summary}</p>
                   </div>
                   <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${cfg.badge}`}>{cfg.label}</span>
                 </div>
-                <p className="text-sm text-gray-600 mb-4 leading-relaxed">{card.detail}</p>
+                <p className="text-sm md:text-base text-slate-600 mb-4 leading-relaxed">{card.detail}</p>
                 <div className="flex flex-wrap gap-2">
                   {card.suggestions.map((sug) => (
                     <button
@@ -1182,7 +1182,7 @@ function CDSTab() {
                       className={`text-xs rounded-lg px-3 py-1.5 border font-medium transition-colors ${
                         activeSuggestion === sug.uuid
                           ? "bg-indigo-600 text-white border-indigo-600"
-                          : "bg-white border-gray-300 text-gray-700 hover:bg-indigo-50 hover:border-indigo-300"
+                          : "bg-white border-gray-300 text-slate-700 hover:bg-indigo-50 hover:border-indigo-300"
                       }`}
                     >
                       {activeSuggestion === sug.uuid && <CheckCircle className="w-3 h-3 inline mr-1" />}
@@ -1190,7 +1190,7 @@ function CDSTab() {
                     </button>
                   ))}
                 </div>
-                <p className="mt-3 text-xs text-gray-400">Source: {card.source.label}</p>
+                <p className="mt-3 text-xs text-slate-400">Source: {card.source.label}</p>
               </div>
             );
           })}
@@ -1267,7 +1267,7 @@ function PriorAuthTab() {
         <div>
           <label className="block text-xs font-medium text-indigo-700 mb-1">Insurance Plan</label>
           <select
-            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             value={plan}
             onChange={(e) => setPlan(e.target.value)}
           >
@@ -1277,7 +1277,7 @@ function PriorAuthTab() {
         <div>
           <label className="block text-xs font-medium text-indigo-700 mb-1">Procedure / Service</label>
           <select
-            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             value={service}
             onChange={(e) => setService(e.target.value)}
           >
@@ -1287,7 +1287,7 @@ function PriorAuthTab() {
         <div>
           <label className="block text-xs font-medium text-indigo-700 mb-1">Primary Diagnosis (ICD-10)</label>
           <input
-            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             value={diagnosis}
             onChange={(e) => setDiagnosis(e.target.value)}
           />
@@ -1296,7 +1296,7 @@ function PriorAuthTab() {
           <label className="block text-xs font-medium text-indigo-700 mb-1">Requested Service Date</label>
           <input
             type="date"
-            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             value={serviceDate}
             onChange={(e) => setServiceDate(e.target.value)}
           />
@@ -1304,7 +1304,7 @@ function PriorAuthTab() {
         <div>
           <label className="block text-xs font-medium text-indigo-700 mb-1">Ordering Provider NPI</label>
           <input
-            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             value={npi}
             onChange={(e) => setNpi(e.target.value)}
           />
@@ -1338,7 +1338,7 @@ function PriorAuthTab() {
                     className={`w-9 h-9 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${
                       active
                         ? "border-indigo-500 bg-indigo-500 text-white"
-                        : "border-gray-300 bg-white text-gray-400"
+                        : "border-gray-300 bg-white text-slate-400"
                     } ${current && submitting ? "animate-pulse" : ""}`}
                   >
                     {active && !current ? (
@@ -1347,7 +1347,7 @@ function PriorAuthTab() {
                       <span className="text-xs font-bold">{i + 1}</span>
                     )}
                   </div>
-                  <span className={`mt-2 text-xs font-medium ${active ? "text-indigo-700" : "text-gray-400"}`}>
+                  <span className={`mt-2 text-xs font-medium ${active ? "text-indigo-700" : "text-slate-400"}`}>
                     {step.label}
                   </span>
                 </div>
@@ -1357,27 +1357,27 @@ function PriorAuthTab() {
 
           {/* Summary row */}
           <div className="rounded-xl border border-indigo-100 bg-indigo-50 p-4 grid grid-cols-3 gap-3 text-sm">
-            <div><span className="text-xs text-gray-500">Plan</span><p className="font-medium text-gray-800 truncate">{plan}</p></div>
-            <div><span className="text-xs text-gray-500">Service</span><p className="font-medium text-gray-800">{selectedService?.code} — {selectedService?.label}</p></div>
-            <div><span className="text-xs text-gray-500">NPI</span><p className="font-mono font-medium text-gray-800">{npi}</p></div>
+            <div><span className="text-xs text-slate-500">Plan</span><p className="font-medium text-slate-800 truncate">{plan}</p></div>
+            <div><span className="text-xs text-slate-500">Service</span><p className="font-medium text-slate-800">{selectedService?.code} — {selectedService?.label}</p></div>
+            <div><span className="text-xs text-slate-500">NPI</span><p className="font-mono font-medium text-slate-800">{npi}</p></div>
           </div>
 
           {/* Decision */}
           {status === "decided" && decision && (
             <div className={`rounded-xl border p-5 ${decisionConfig[decision].color}`}>
               <div className="flex items-center justify-between mb-3">
-                <p className="font-bold text-gray-800">{decisionConfig[decision].title}</p>
+                <p className="font-bold text-slate-800">{decisionConfig[decision].title}</p>
                 <span className={`text-xs font-semibold px-3 py-1 rounded-full uppercase ${decisionConfig[decision].badge}`}>
                   {decision}
                 </span>
               </div>
-              <p className="text-sm text-gray-700 leading-relaxed">{decisionConfig[decision].body}</p>
+              <p className="text-sm text-slate-700 leading-relaxed">{decisionConfig[decision].body}</p>
               {decision === "denied" && (
                 <div className="mt-4 flex gap-2">
                   <button className="text-xs rounded-lg px-3 py-1.5 bg-white border border-red-300 text-red-700 font-medium hover:bg-red-50">
                     Initiate Appeal
                   </button>
-                  <button className="text-xs rounded-lg px-3 py-1.5 bg-white border border-gray-300 text-gray-700 font-medium hover:bg-gray-50">
+                  <button className="text-xs rounded-lg px-3 py-1.5 bg-white border border-gray-300 text-slate-700 font-medium hover:bg-gray-50">
                     Request P2P Review
                   </button>
                 </div>
@@ -1463,11 +1463,11 @@ function ComplianceTab() {
       <div className="rounded-xl border border-indigo-100 bg-gradient-to-r from-indigo-50 to-blue-50 p-5 flex items-center gap-6">
         <div className="text-center min-w-24">
           <p className={`text-5xl font-bold ${scoreColor}`}>{score}<span className="text-2xl">%</span></p>
-          <p className="text-xs text-gray-500 mt-1">Compliance Score</p>
+          <p className="text-xs text-slate-500 mt-1">Compliance Score</p>
         </div>
         <div className="flex-1 space-y-2">
           <div className="flex items-center justify-between mb-1">
-            <span className="text-sm font-medium text-gray-700">{compliantCount} of {total} requirements met</span>
+            <span className="text-sm font-medium text-slate-700">{compliantCount} of {total} requirements met</span>
             <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${statusBadge}`}>{statusLabel}</span>
           </div>
           <div className="h-3 w-full bg-gray-200 rounded-full overflow-hidden">
@@ -1479,7 +1479,7 @@ function ComplianceTab() {
           <div className="grid grid-cols-3 gap-2 mt-3">
             {Object.entries(categories).map(([cat, data]) => (
               <div key={cat} className="text-xs bg-white rounded-lg px-2 py-1.5 border border-indigo-100">
-                <p className="font-medium text-gray-700 truncate">{cat}</p>
+                <p className="font-medium text-slate-700 truncate">{cat}</p>
                 <p className={`font-bold ${data.compliant === data.total ? "text-green-600" : data.compliant > 0 ? "text-amber-600" : "text-red-500"}`}>
                   {data.compliant}/{data.total}
                 </p>
@@ -1506,20 +1506,20 @@ function ComplianceTab() {
               {checks[item.id] ? (
                 <ToggleRight className="w-7 h-7 text-green-500" />
               ) : (
-                <ToggleLeft className="w-7 h-7 text-gray-400" />
+                <ToggleLeft className="w-7 h-7 text-slate-400" />
               )}
             </button>
             <div className="flex-1 min-w-0">
-              <p className={`text-sm font-medium ${checks[item.id] ? "text-green-800" : "text-gray-700"}`}>
+              <p className={`text-sm font-medium ${checks[item.id] ? "text-green-800" : "text-slate-700"}`}>
                 {item.label}
               </p>
-              <p className="text-xs text-gray-400">{item.category}</p>
+              <p className="text-xs text-slate-400">{item.category}</p>
             </div>
             <div className="flex-shrink-0">
               {checks[item.id] ? (
                 <CheckCircle className="w-4 h-4 text-green-500" />
               ) : (
-                <XCircle className="w-4 h-4 text-gray-300" />
+                <XCircle className="w-4 h-4 text-slate-300" />
               )}
             </div>
           </div>
@@ -1559,7 +1559,7 @@ function ComplianceTab() {
 
             {gaps.length > 0 && (
               <div>
-                <p className="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-1">
+                <p className="text-sm font-semibold text-slate-700 mb-2 flex items-center gap-1">
                   <AlertTriangle className="w-4 h-4 text-amber-500" /> Compliance Gaps & Recommended Actions
                 </p>
                 <div className="space-y-2">
@@ -1569,8 +1569,8 @@ function ComplianceTab() {
                         {i + 1}
                       </span>
                       <div>
-                        <p className="text-gray-800 font-medium">{gap.label}</p>
-                        <p className="text-xs text-gray-500 mt-0.5">{recommendations[gap.id]}</p>
+                        <p className="text-slate-800 font-medium">{gap.label}</p>
+                        <p className="text-xs text-slate-500 mt-0.5">{recommendations[gap.id]}</p>
                       </div>
                     </div>
                   ))}
@@ -1586,7 +1586,7 @@ function ComplianceTab() {
               </div>
             )}
 
-            <p className="text-xs text-gray-400 border-t border-gray-100 pt-3">
+            <p className="text-xs text-slate-400 border-t border-gray-100 pt-3">
               This report is generated for informational and educational purposes. Consult your compliance officer and legal counsel for official certification requirements. Vermont Health Platform Research Lab — 2026.
             </p>
           </div>
@@ -1621,11 +1621,11 @@ export default function FHIRLab() {
               <FlaskConical className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900 leading-tight">FHIR &amp; Interoperability Lab</h1>
+              <h1 className="text-2xl font-bold text-slate-900 leading-tight">FHIR &amp; Interoperability Lab</h1>
               <p className="text-sm text-indigo-600 font-medium">Interactive Sandbox — Vermont Health Platform Research</p>
             </div>
           </div>
-          <p className="text-sm text-gray-500 max-w-3xl mt-2">
+          <p className="text-sm text-slate-500 max-w-3xl mt-2">
             Explore FHIR R4 resource construction, cross-terminology mapping, CDS Hooks simulation, prior authorization workflows, and ONC HTI-1 compliance assessment. All data is generated locally for educational purposes.
           </p>
         </div>
@@ -1639,7 +1639,7 @@ export default function FHIRLab() {
               className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium transition-all duration-150 ${
                 activeTab === tab.id
                   ? "bg-indigo-600 text-white shadow-md shadow-indigo-200"
-                  : "bg-white border border-indigo-100 text-gray-600 hover:bg-indigo-50 hover:text-indigo-700"
+                  : "bg-white border border-indigo-100 text-slate-600 hover:bg-indigo-50 hover:text-indigo-700"
               }`}
             >
               {tab.icon}
@@ -1652,8 +1652,8 @@ export default function FHIRLab() {
         <div className="flex items-center gap-2 mb-5 text-xs text-indigo-600 bg-indigo-50 border border-indigo-100 rounded-lg px-4 py-2">
           <Activity className="w-3.5 h-3.5" />
           <span className="font-medium">{TABS.find((t) => t.id === activeTab)?.label}</span>
-          <span className="text-gray-400">—</span>
-          <span className="text-gray-500">{TABS.find((t) => t.id === activeTab)?.desc}</span>
+          <span className="text-slate-400">—</span>
+          <span className="text-slate-500">{TABS.find((t) => t.id === activeTab)?.desc}</span>
         </div>
 
         {/* Tab Content */}
@@ -1666,7 +1666,7 @@ export default function FHIRLab() {
         </div>
 
         {/* Footer */}
-        <p className="text-center text-xs text-gray-400 mt-6">
+        <p className="text-center text-xs text-slate-400 mt-6">
           Vermont Health Platform — FHIR &amp; Interoperability Lab &mdash; Educational use only. Not for clinical decision-making. FHIR® is a registered trademark of HL7.
         </p>
       </div>
