@@ -78,7 +78,7 @@ export default async function HospitalsPage({ params }: { params: Promise<{ stat
           </Link>
           <div className="flex flex-col md:flex-row justify-between items-start">
             <div className="max-w-3xl">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-3">
+              <h1 className="ty-h1 font-black text-slate-900 tracking-tight mb-3">
                 Hospital Performance
               </h1>
               <p className="text-slate-500 text-lg leading-relaxed">

@@ -420,7 +420,7 @@ export default function ChatPage() {
                 <div className="w-14 h-14 bg-indigo-50 border border-indigo-100 rounded-2xl flex items-center justify-center mb-5">
                   <SparklesIcon className="w-7 h-7 text-indigo-500" />
                 </div>
-                <h2 className="text-lg md:text-xl font-black text-slate-900 dark:text-slate-100 tracking-tight mb-2">HTR AI Analyst</h2>
+                <h2 className="ty-h3 font-black text-slate-900 dark:text-slate-100 tracking-tight mb-2">HTR AI Analyst</h2>
                 <p className="text-sm text-slate-500 dark:text-slate-400 max-w-sm mb-8">
                   Ask anything about health policy, economics, or the programs indexed in the knowledge base.
                 </p>

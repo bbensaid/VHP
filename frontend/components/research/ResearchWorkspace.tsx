@@ -1767,7 +1767,7 @@ function ResearchNotes() {
                 </div>
                 <h3 className="text-sm font-semibold text-slate-800">{n.title}</h3>
                 {n.content && (
-                  <p className="text-sm md:text-base text-slate-600 mt-1 leading-relaxed">{n.content}</p>
+                  <p className="ty-body text-slate-600 mt-1 leading-relaxed">{n.content}</p>
                 )}
                 {n.tags.length > 0 && (
                   <div className="flex flex-wrap gap-1 mt-2">

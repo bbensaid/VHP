@@ -80,7 +80,7 @@ export default async function ResearchLabPage() {
                 <span className="text-2xl">{lab.icon}</span>
                 <h3 className="font-black text-slate-900">{lab.label}</h3>
               </div>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-3">{lab.desc}</p>
+              <p className="ty-body text-slate-600 leading-relaxed mb-3">{lab.desc}</p>
               <p className="text-[11px] font-semibold text-slate-400">{lab.tools}</p>
             </div>
           ))}

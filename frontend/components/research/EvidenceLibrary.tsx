@@ -711,7 +711,7 @@ function CMMITracker() {
                     <Info className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
                     <div>
                       <div className="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-1.5">Key Lesson Learned</div>
-                      <p className="text-sm md:text-base text-slate-600 leading-relaxed">{model.lesson}</p>
+                      <p className="ty-body text-slate-600 leading-relaxed">{model.lesson}</p>
                     </div>
                   </div>
                   {model.status === "Active" && (
@@ -829,7 +829,7 @@ function PolicyBriefLibrary() {
                 </div>
 
                 {/* Abstract */}
-                <p className="text-sm md:text-base text-slate-600 leading-relaxed">{brief.abstract}</p>
+                <p className="ty-body text-slate-600 leading-relaxed">{brief.abstract}</p>
 
                 {/* Toggle */}
                 <button
@@ -847,7 +847,7 @@ function PolicyBriefLibrary() {
                 <div className="border-t border-indigo-100 bg-slate-50 px-5 py-4">
                   <div className="prose prose-sm max-w-none">
                     {brief.body.split("\n\n").map((para, i) => (
-                      <p key={i} className="text-sm md:text-base text-slate-600 leading-relaxed mb-3 last:mb-0">
+                      <p key={i} className="ty-body text-slate-600 leading-relaxed mb-3 last:mb-0">
                         {para}
                       </p>
                     ))}

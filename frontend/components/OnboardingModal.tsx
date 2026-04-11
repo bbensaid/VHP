@@ -134,7 +134,7 @@ export default function OnboardingModal() {
           {/* STEP: Role */}
           {step === "role" && (
             <div>
-              <h2 className="text-lg md:text-xl font-black text-slate-900 dark:text-slate-100 mb-1">What best describes you?</h2>
+              <h2 className="ty-h3 font-black text-slate-900 dark:text-slate-100 mb-1">What best describes you?</h2>
               <p className="text-sm text-slate-400 dark:text-slate-500 mb-5">We&apos;ll tailor your experience to your role.</p>
               <div className="grid grid-cols-2 gap-2">
                 {ROLES.map((role) => (
@@ -160,7 +160,7 @@ export default function OnboardingModal() {
           {/* STEP: Pillars */}
           {step === "pillars" && (
             <div>
-              <h2 className="text-lg md:text-xl font-black text-slate-900 dark:text-slate-100 mb-1">Choose your focus areas</h2>
+              <h2 className="ty-h3 font-black text-slate-900 dark:text-slate-100 mb-1">Choose your focus areas</h2>
               <p className="text-sm text-slate-400 dark:text-slate-500 mb-5">Select one or more pillars to personalize your feed.</p>
               <div className="space-y-2">
                 {PILLARS.map((pillar) => {

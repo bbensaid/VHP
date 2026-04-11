@@ -202,10 +202,10 @@ export default function AboutPage() {
             <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-indigo-100 mb-6 border border-indigo-500 bg-indigo-600/40 px-4 py-1.5 rounded-full">
               About Health Transformation Review
             </span>
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight leading-tight mb-6">
+            <h1 className="ty-h1 font-black tracking-tight leading-tight mb-6">
               The Intelligence <span className="text-indigo-400">Layer</span> Between Data and Decision.
             </h1>
-            <p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mb-6">
+            <p className="ty-hero text-slate-300 leading-relaxed max-w-2xl mb-6">
               HTR is the only cross-disciplinary intelligence platform purpose-built for health system transformation. We translate the intersection of six critical domains into actionable intelligence for the executives, policymakers, and clinicians who are doing the work.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -233,7 +233,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:divide-x divide-slate-200">
             {stats.map((s) => (
               <div key={s.label} className="text-center px-4 first:pl-0 last:pr-0">
-                <div className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight">
+                <div className="ty-h1 font-black text-slate-900 tracking-tight">
                   {s.value}
                 </div>
                 <div className="text-xs text-slate-500 font-bold uppercase tracking-widest mt-1">
@@ -252,15 +252,15 @@ export default function AboutPage() {
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
               The Translation Problem
             </span>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 leading-tight mb-6">
+            <h2 className="ty-h1 font-black tracking-tight text-slate-900 leading-tight mb-6">
               Why does a{" "}
               <span className="text-indigo-600">$4.5 trillion</span>{" "}
               industry still produce so little equitable change?
             </h2>
-            <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-6">
+            <p className="ty-hero text-slate-600 leading-relaxed mb-6">
               American healthcare commands the world's largest share of GDP — yet outcomes lag peer nations, costs remain unsustainable, and access is still determined more by geography and income than by clinical need. The capital and political will exist. The missing ingredient is coordinated, cross-disciplinary intelligence.
             </p>
-            <p className="text-base md:text-lg text-slate-600 leading-relaxed">
+            <p className="ty-hero text-slate-600 leading-relaxed">
               HTR exists to close that gap. Our six-pillar framework — Policy, Economics, Technology, Clinical, Equity, and Operations — ensures that no decision is made in isolation. Every insight is stress-tested across all dimensions before it reaches you.
             </p>
           </div>
@@ -331,10 +331,10 @@ export default function AboutPage() {
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
               Our Intelligence Framework
             </span>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-4">
+            <h2 className="ty-h1 font-black tracking-tight text-slate-900 mb-4">
               Six Pillars. One Framework.
             </h2>
-            <p className="text-base md:text-lg text-slate-500 max-w-2xl mx-auto">
+            <p className="ty-hero text-slate-500 max-w-2xl mx-auto">
               Where the original model analyzed three dimensions, HTR's evolved framework asks six essential questions — because transformation that ignores clinical evidence, equity, or operational reality is incomplete.
             </p>
           </div>
@@ -380,7 +380,7 @@ export default function AboutPage() {
           <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
             Our Audience
           </span>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900">
+          <h2 className="ty-h1 font-black tracking-tight text-slate-900">
             Built for the people doing the work.
           </h2>
         </div>
@@ -420,7 +420,7 @@ export default function AboutPage() {
             <div key={a.title} className="p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
               <span className="text-3xl mb-4 block">{a.icon}</span>
               <h3 className="text-lg font-bold text-slate-900 mb-2">{a.title}</h3>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed">{a.desc}</p>
+              <p className="ty-body text-slate-600 leading-relaxed">{a.desc}</p>
             </div>
           ))}
         </div>
@@ -433,7 +433,7 @@ export default function AboutPage() {
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
               Principal Analysts
             </span>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-700">
+            <h2 className="ty-h1 font-black tracking-tight text-slate-700">
               One analyst per pillar. Zero silos.
             </h2>
             <p className="text-slate-500 mt-4 max-w-xl mx-auto">
@@ -459,7 +459,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Bio */}
-                <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-4 flex-1">{m.bio}</p>
+                <p className="ty-body text-slate-600 leading-relaxed mb-4 flex-1">{m.bio}</p>
 
                 {/* Prior institutions */}
                 <div className="border-t border-slate-100 pt-4 mb-4">
@@ -496,10 +496,10 @@ export default function AboutPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-4">
+        <h2 className="ty-h1 font-black tracking-tight text-slate-900 mb-4">
           The intelligence you need is already here.
         </h2>
-        <p className="text-base md:text-lg text-slate-500 mb-8 max-w-xl mx-auto">
+        <p className="ty-hero text-slate-500 mb-8 max-w-xl mx-auto">
           Start with the State Performance Dashboard, or dive into any of the six pillars. Every page is built for action, not just reading.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">

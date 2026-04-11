@@ -18,7 +18,7 @@ export default function ContactPage() {
           <span className="text-fuchsia-600 font-bold uppercase tracking-widest text-xs mb-4 block">
             Start an Engagement
           </span>
-          <h1 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight leading-tight">
+          <h1 className="ty-h1 font-bold mb-3 tracking-tight leading-tight">
             Let&apos;s Talk About Your Challenge
           </h1>
           <p className="text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
@@ -72,7 +72,7 @@ export default function ContactPage() {
             {/* Pricing Guide */}
             <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
               <h4 className="text-base font-bold text-slate-900 mb-3">Not Sure Which Service?</h4>
-              <p className="text-slate-600 text-sm md:text-base mb-4">View our full services catalog with pricing guidance and comparison matrix.</p>
+              <p className="text-slate-600 ty-body mb-4">View our full services catalog with pricing guidance and comparison matrix.</p>
               <Link
                 href="/advisory/services"
                 className="block w-full text-center py-2.5 border-2 border-fuchsia-600 text-fuchsia-600 font-bold text-sm rounded-lg hover:bg-fuchsia-50 transition-colors"

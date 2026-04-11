@@ -31,7 +31,7 @@ const MetricDisplay = ({ label, score }: { label: string, score: number }) => (
 const InitiativeCard = ({ title, description }: { title: string, description: string }) => (
   <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-5 h-full shadow-sm">
     <h4 className="font-bold text-slate-800 dark:text-slate-100 text-base mb-1">{title}</h4>
-    <p className="text-sm md:text-base text-slate-600 dark:text-slate-400 leading-relaxed">{description}</p>
+    <p className="ty-body text-slate-600 dark:text-slate-400 leading-relaxed">{description}</p>
   </div>
 );
 
@@ -127,7 +127,7 @@ function StateDetailClientPageInner({ indexData, programData, stateSlug, hospita
           
           <div className="flex flex-col md:flex-row justify-between items-start">
             <div className="max-w-3xl">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 dark:text-slate-100 tracking-tight mb-3">{programData?.stateName || indexData?.stateName}</h1>
+              <h1 className="ty-h1 font-black text-slate-900 dark:text-slate-100 tracking-tight mb-3">{programData?.stateName || indexData?.stateName}</h1>
               {programData && <p className="text-slate-500 text-lg leading-relaxed">RHT Award Amount: <span className="font-bold text-indigo-600">{programData.awardAmount}</span></p>}
             </div>
             
@@ -173,7 +173,7 @@ function StateDetailClientPageInner({ indexData, programData, stateSlug, hospita
             <div className="grid lg:grid-cols-3 gap-8 items-start">
               <div className="lg:col-span-2 space-y-8">
                 <div>
-                  <h3 className="text-lg md:text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">{indexData.narrative.title}</h3>
+                  <h3 className="ty-h3 font-bold text-slate-900 dark:text-slate-100 mb-2">{indexData.narrative.title}</h3>
                   <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{indexData.narrative.summary}</p>
                 </div>
                 <div className="grid md:grid-cols-1 gap-4">

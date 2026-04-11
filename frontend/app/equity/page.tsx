@@ -36,10 +36,10 @@ export default function Page() {
         <span className="text-sm font-bold text-orange-600 uppercase tracking-wider">
           Health Equity
         </span>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mt-2 mb-4">
+        <h1 className="ty-h1 font-black text-slate-900 mt-2 mb-4">
           Equity Hub
         </h1>
-        <p className="text-base md:text-lg text-slate-600 max-w-3xl">
+        <p className="ty-hero text-slate-600 max-w-3xl">
           Ensuring fair and just opportunities for health across all populations.
         </p>
       </div>

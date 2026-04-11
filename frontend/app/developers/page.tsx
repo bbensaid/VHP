@@ -76,7 +76,7 @@ export default function DevelopersPage() {
       <div className="bg-linear-to-br from-slate-900 to-slate-700 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <p className="text-slate-400 text-sm font-semibold uppercase tracking-widest mb-3">Developer API</p>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black mb-4">HTR Data API</h1>
+          <h1 className="ty-h1 font-black mb-4">HTR Data API</h1>
           <p className="text-slate-300 text-lg max-w-2xl mb-6">
             Programmatic access to the HTR Performance Index, state health metrics, and annual survey results. Authenticated with API keys, returns structured JSON.
           </p>
@@ -101,7 +101,7 @@ export default function DevelopersPage() {
 
         {/* Auth */}
         <section>
-          <h2 className="text-lg md:text-xl font-black text-slate-900 mb-4">Authentication</h2>
+          <h2 className="ty-h3 font-black text-slate-900 mb-4">Authentication</h2>
           <div className="bg-white border border-slate-200 rounded-2xl p-6 space-y-4">
             <p className="text-slate-600 text-sm">
               All API requests must include your key in the <code className="bg-slate-100 px-1.5 py-0.5 rounded text-slate-800 font-mono text-xs">X-HTR-API-Key</code> request header.
@@ -119,7 +119,7 @@ export default function DevelopersPage() {
 
         {/* Rate limits */}
         <section>
-          <h2 className="text-lg md:text-xl font-black text-slate-900 mb-4">Rate Limits</h2>
+          <h2 className="ty-h3 font-black text-slate-900 mb-4">Rate Limits</h2>
           <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
             <table className="w-full text-sm">
               <thead>
@@ -148,7 +148,7 @@ export default function DevelopersPage() {
 
         {/* Endpoints */}
         <section id="endpoints">
-          <h2 className="text-lg md:text-xl font-black text-slate-900 mb-6">Endpoints</h2>
+          <h2 className="ty-h3 font-black text-slate-900 mb-6">Endpoints</h2>
           <p className="text-slate-500 text-sm mb-6">
             Base URL: <code className="bg-slate-100 px-1.5 py-0.5 rounded text-slate-800 font-mono text-xs">{BASE}</code>
           </p>
@@ -162,7 +162,7 @@ export default function DevelopersPage() {
                   <code className="font-mono text-slate-800 text-sm font-semibold">{ep.path}</code>
                 </div>
                 <div className="px-5 py-4">
-                  <p className="text-sm md:text-base text-slate-600 mb-4">{ep.description}</p>
+                  <p className="ty-body text-slate-600 mb-4">{ep.description}</p>
                   <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Example response</p>
                   <div className="bg-slate-900 rounded-xl p-4 overflow-x-auto">
                     <pre className="text-slate-300 text-xs font-mono whitespace-pre">{ep.response}</pre>
@@ -175,7 +175,7 @@ export default function DevelopersPage() {
 
         {/* Errors */}
         <section>
-          <h2 className="text-lg md:text-xl font-black text-slate-900 mb-4">Error codes</h2>
+          <h2 className="ty-h3 font-black text-slate-900 mb-4">Error codes</h2>
           <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
             <table className="w-full text-sm">
               <thead>

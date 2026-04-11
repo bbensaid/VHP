@@ -51,7 +51,7 @@ export default function ForgotPasswordPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
-              <p className="text-sm md:text-base text-slate-600 mb-4">Enter the email associated with your account and we&apos;ll send you a reset link.</p>
+              <p className="ty-body text-slate-600 mb-4">Enter the email associated with your account and we&apos;ll send you a reset link.</p>
               {error && <div className="bg-red-50 border border-red-200 text-red-700 text-sm px-4 py-3 rounded-xl">{error}</div>}
               <div>
                 <label className="block text-sm font-semibold text-slate-700 mb-1.5">Email address</label>

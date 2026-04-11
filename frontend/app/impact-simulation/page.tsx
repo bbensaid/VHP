@@ -75,21 +75,21 @@ export default function ImpactSimulationPage() {
             <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
               <p className="text-[11px] font-black uppercase tracking-widest text-violet-600 mb-3">The Problem It Solves</p>
               <p className="font-black text-slate-900 text-lg mb-3">Decisions made in one pillar create consequences in five others.</p>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+              <p className="ty-body text-slate-600 leading-relaxed">
                 A payment model change is an Economics decision — but it creates operational friction, clinical workflow disruption, equity implications, technology requirements, and regulatory dependencies. Impact Simulation makes those downstream effects visible before commitment.
               </p>
             </div>
             <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
               <p className="text-[11px] font-black uppercase tracking-widest text-violet-600 mb-3">How It Works</p>
               <p className="font-black text-slate-900 text-lg mb-3">Select a change. See it propagate.</p>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+              <p className="ty-body text-slate-600 leading-relaxed">
                 Select a proposed intervention — a policy change, economic model shift, care delivery innovation, or technology deployment. The simulation maps its first, second, and third-order effects across all six pillars, surfacing the interactions and trade-offs that siloed analysis misses.
               </p>
             </div>
             <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
               <p className="text-[11px] font-black uppercase tracking-widest text-violet-600 mb-3">What It Produces</p>
               <p className="font-black text-slate-900 text-lg mb-3">A pre-commitment intelligence brief.</p>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+              <p className="ty-body text-slate-600 leading-relaxed">
                 A structured cross-pillar impact map showing which pillars are positively affected, which face new stress, which represent binding constraints, and what pre-conditions would need to be met for the intervention to succeed across all six dimensions.
               </p>
             </div>
@@ -103,10 +103,10 @@ export default function ImpactSimulationPage() {
           <span className="text-[11px] font-black tracking-[0.2em] uppercase text-violet-600 mb-4 block">
             Simulation Scenario Types
           </span>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-4">
+          <h2 className="ty-h1 font-black tracking-tight text-slate-900 mb-4">
             Any transformation. Modeled across all six pillars.
           </h2>
-          <p className="text-base md:text-lg text-slate-500 max-w-3xl">
+          <p className="ty-hero text-slate-500 max-w-3xl">
             Impact Simulation is designed for the full range of strategic decisions facing health system leaders, policymakers, and investors.
           </p>
         </div>
@@ -114,7 +114,7 @@ export default function ImpactSimulationPage() {
           {scenarios.map((s) => (
             <div key={s.label} className={`border rounded-xl p-6 ${s.color.split(" ").slice(1).join(" ")} bg-white shadow-sm`}>
               <h3 className={`font-black text-base mb-3 ${s.color.split(" ")[2]}`}>{s.label}</h3>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-4">{s.desc}</p>
+              <p className="ty-body text-slate-600 leading-relaxed mb-4">{s.desc}</p>
               <div className="flex flex-wrap gap-1.5">
                 {s.pillarsAffected.map((p) => (
                   <span key={p} className={`text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded ${pillarColors[p]}`}>
@@ -133,7 +133,7 @@ export default function ImpactSimulationPage() {
           <h2 className="text-3xl font-black tracking-tight text-slate-900 mb-4">
             In the meantime — use the tools that are live today.
           </h2>
-          <p className="text-base md:text-lg text-slate-500 mb-8 max-w-xl mx-auto">
+          <p className="ty-hero text-slate-500 mb-8 max-w-xl mx-auto">
             The HTR Simulator models specific transformation scenarios with full six-pillar scoring. The Friction Index framework is available for analytical use now.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">

@@ -135,7 +135,7 @@ const components: PortableTextComponents = {
     quote: ({ children }) => (
       <div className="my-14 px-4 relative">
         <span className="absolute -top-6 left-0 text-[7rem] font-black text-slate-200 leading-none select-none pointer-events-none">&ldquo;</span>
-        <p className="relative z-10 text-xl md:text-2xl text-slate-600 italic leading-10 font-medium pl-8">{children}</p>
+        <p className="relative z-10 ty-h2 text-slate-600 italic leading-10 font-medium pl-8">{children}</p>
         <div className="mt-5 ml-8 h-0.5 w-10 bg-slate-300 rounded-full" />
       </div>
     ),
@@ -308,7 +308,7 @@ const components: PortableTextComponents = {
           )}
         </div>
         {value.analogy && (
-          <p className="relative z-10 text-base md:text-lg text-slate-600 italic leading-9 font-medium mb-3">{value.analogy}</p>
+          <p className="relative z-10 ty-hero text-slate-600 italic leading-9 font-medium mb-3">{value.analogy}</p>
         )}
         {value.bridge && (
           <div className="flex items-start gap-2 mt-3 pt-3 border-t border-slate-200">

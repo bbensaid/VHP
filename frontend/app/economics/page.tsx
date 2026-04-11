@@ -36,10 +36,10 @@ export default function Page() {
         <span className="text-sm font-bold text-emerald-600 uppercase tracking-wider">
           Health Economics
         </span>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mt-2 mb-4">
+        <h1 className="ty-h1 font-black text-slate-900 mt-2 mb-4">
           Economics Hub
         </h1>
-        <p className="text-base md:text-lg text-slate-600 max-w-3xl">
+        <p className="ty-hero text-slate-600 max-w-3xl">
           Analyzing the financial drivers of healthcare transformation, from value-based care to market consolidation.
         </p>
       </div>

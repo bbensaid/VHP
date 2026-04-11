@@ -14,7 +14,7 @@ export default function ArticlePaywall({ previewText, title, from }: { previewTe
         <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-transparent to-white pointer-events-none" />
         <div className="bg-white border border-indigo-200 rounded-2xl p-8 text-center shadow-sm mt-4">
           <p className="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2">Members Only</p>
-          <h3 className="text-lg md:text-xl font-black text-slate-900 mb-2">Continue reading: {title}</h3>
+          <h3 className="ty-h3 font-black text-slate-900 mb-2">Continue reading: {title}</h3>
           <p className="text-slate-500 text-sm mb-6">
             This analysis continues with key findings available to HTR subscribers.
             Join thousands of healthcare leaders reading the full analysis.

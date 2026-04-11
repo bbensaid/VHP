@@ -7,10 +7,10 @@ function ValueBasedCareHero() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-full px-3 py-1 mb-4">
           Economics · Value-Based Care
         </span>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">
+        <h1 className="ty-h1 font-black text-slate-900 mb-3">
           Value-Based Care Models
         </h1>
-        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">
           The financial mechanics of shifting from fee-for-service to outcomes-based reimbursement —
           APM structure, risk adjustment methodology, shared savings calculations, and what it takes to win in downside risk.
         </p>
@@ -27,7 +27,7 @@ function ValueBasedCareBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">📋</span>
           <div>
-            <h2 className="text-lg md:text-xl font-bold text-slate-900">CMS APM Model Comparison</h2>
+            <h2 className="ty-h3 font-bold text-slate-900">CMS APM Model Comparison</h2>
             <p className="text-sm text-slate-500">Key financial parameters across major CMS value-based payment models</p>
           </div>
         </div>
@@ -223,7 +223,7 @@ function ValueBasedCareBody() {
 
       {/* Strategic Framework */}
       <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-10">
-        <h2 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Total Cost of Care Strategy Framework</h2>
+        <h2 className="ty-h3 font-bold text-slate-900 mb-2">Total Cost of Care Strategy Framework</h2>
         <p className="text-slate-500 text-sm mb-6">The operational levers that drive ACO and VBC financial performance</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
