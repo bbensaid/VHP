@@ -34,6 +34,9 @@ from config import (
     SUPABASE_URL,
     SUPABASE_SERVICE_ROLE_KEY,
 )
+from services.medicaid_parser import parse_medicaid_directory
+
+MEDICAID_DIR = DATA_DIR / "medicaid_eligibility"
 
 try:
     from llama_index.vector_stores.postgres import PGVectorStore
@@ -190,29 +193,58 @@ def _save_embed_cache(cache: dict) -> None:
 
 async def build_index() -> VectorStoreIndex:
     """
-    Build a VectorStoreIndex from all sources using semantic chunking.
-    Documents are chunked with SentenceWindowNodeParser (±3 sentence window).
+    Build a VectorStoreIndex from all sources.
+
+    Two separate node pipelines are used:
+      - Medicaid eligibility docs: section-aware chunks from medicaid_parser.py.
+        These are already chunked at rule/section boundaries — do NOT re-chunk with
+        SentenceWindowNodeParser (that would split conditional logic across chunks).
+      - General PDFs + Sanity CMS: SentenceWindowNodeParser (±3 sentence window),
+        same as before.
+
     Static PDFs are cached by SHA-256 hash — already-embedded files are skipped.
     """
-    documents: List[Document] = []
+    general_documents: List[Document] = []
     embed_cache = _load_embed_cache()
     cached_pdf_hits = 0
 
-    # 1. Load PDFs (with embedding cache)
+    # 1a. Load Medicaid eligibility PDFs — section-aware chunking, no sentence windowing
+    medicaid_nodes = []
+    if MEDICAID_DIR.exists():
+        medicaid_pdf_files = sorted(MEDICAID_DIR.glob("*.pdf"))
+        log.info(f"📋 Loading {len(medicaid_pdf_files)} Medicaid eligibility PDF(s) from data/medicaid_eligibility/...")
+        try:
+            from llama_index.core.schema import TextNode
+            medicaid_docs = parse_medicaid_directory(MEDICAID_DIR)
+            # Convert Documents directly to TextNodes (skip SentenceWindowNodeParser)
+            for doc in medicaid_docs:
+                medicaid_nodes.append(TextNode(
+                    text=doc.text,
+                    metadata=doc.metadata,
+                ))
+            log.info(f"  ✓ Medicaid parser: {len(medicaid_docs)} section chunks → {len(medicaid_nodes)} nodes (no re-chunking)")
+        except Exception as e:
+            log.error(f"  ✗ Medicaid directory parse failed: {e}")
+    else:
+        log.info("ℹ️  No data/medicaid_eligibility/ directory found — skipping")
+
+    # 1b. Load general PDFs from data/ root (excluding the medicaid_eligibility subfolder)
     if DATA_DIR.exists():
-        pdf_files = [f for f in DATA_DIR.iterdir() if f.suffix.lower() == ".pdf"]
+        pdf_files = [
+            f for f in DATA_DIR.iterdir()
+            if f.suffix.lower() == ".pdf" and f.is_file()
+        ]
         if pdf_files:
-            log.info(f"📄 Loading {len(pdf_files)} PDF(s) from data/...")
+            log.info(f"📄 Loading {len(pdf_files)} general PDF(s) from data/...")
             for pdf_path in pdf_files:
                 try:
                     file_hash = _file_sha256(pdf_path)
                     if file_hash in embed_cache:
-                        # Reconstruct Document objects from cache
                         cached_docs = [
                             Document(text=d["text"], metadata=d["metadata"])
                             for d in embed_cache[file_hash]
                         ]
-                        documents.extend(cached_docs)
+                        general_documents.extend(cached_docs)
                         cached_pdf_hits += 1
                         log.info(f"  ✓ {pdf_path.name}: {len(cached_docs)} pages (from cache)")
                         continue
@@ -220,9 +252,9 @@ async def build_index() -> VectorStoreIndex:
                     pdf_docs = SimpleDirectoryReader(input_files=[str(pdf_path)]).load_data()
                     for doc in pdf_docs:
                         doc.metadata.setdefault("source", "pdf")
+                        doc.metadata.setdefault("source_type", "general")
                         doc.metadata.setdefault("pillar", "General")
-                    documents.extend(pdf_docs)
-                    # Store in cache
+                    general_documents.extend(pdf_docs)
                     embed_cache[file_hash] = [
                         {"text": doc.text, "metadata": doc.metadata} for doc in pdf_docs
                     ]
@@ -237,36 +269,64 @@ async def build_index() -> VectorStoreIndex:
     # 2. Fetch Sanity CMS
     log.info("🔗 Fetching Sanity CMS content...")
     sanity_docs = await fetch_sanity_content()
-    documents.extend(sanity_docs)
+    general_documents.extend(sanity_docs)
     log.info(f"  ✓ {len(sanity_docs)} Sanity documents loaded")
 
-    if not documents:
-        documents = [Document(
+    if not general_documents and not medicaid_nodes:
+        general_documents = [Document(
             text="The HTR AI Brain is initializing. No content has been indexed yet.",
             metadata={"source": "system"},
         )]
 
-    # 3. Semantic chunking
-    log.info(f"⏳ Chunking {len(documents)} documents with SentenceWindowNodeParser...")
+    # 3. Sentence-window chunking for general docs only
+    log.info(f"⏳ Chunking {len(general_documents)} general documents with SentenceWindowNodeParser...")
     parser = SentenceWindowNodeParser.from_defaults(
         window_size=3,
         window_metadata_key="window",
         original_text_metadata_key="original_text",
     )
-    nodes = parser.get_nodes_from_documents(documents)
-    log.info(f"📝 {len(documents)} docs → {len(nodes)} sentence-window nodes")
+    general_nodes = parser.get_nodes_from_documents(general_documents) if general_documents else []
+    log.info(f"📝 {len(general_documents)} general docs → {len(general_nodes)} sentence-window nodes")
+
+    # Combine: Medicaid section nodes + general sentence-window nodes
+    all_nodes = medicaid_nodes + general_nodes
+    log.info(f"📦 Total nodes to embed: {len(all_nodes)} ({len(medicaid_nodes)} medicaid + {len(general_nodes)} general)")
+
+    # Safety pass: strip NUL bytes (PostgreSQL rejects them) and truncate oversized nodes.
+    # NUL bytes can come from any PDF parser or window metadata.
+    # ~30,000 chars ≈ 7,500 tokens — safely under OpenAI's 8192-token embedding limit.
+    _EMBED_MAX_CHARS = 30_000
+    nul_count = 0
+    oversized_count = 0
+    for n in all_nodes:
+        # Strip NUL bytes from text
+        if "\x00" in n.text:
+            n.text = n.text.replace("\x00", "")
+            nul_count += 1
+        # Strip NUL bytes from all metadata string values
+        for k, v in list(n.metadata.items()):
+            if isinstance(v, str) and "\x00" in v:
+                n.metadata[k] = v.replace("\x00", "")
+        # Truncate if still too long
+        if len(n.text) > _EMBED_MAX_CHARS:
+            n.text = n.text[:_EMBED_MAX_CHARS]
+            oversized_count += 1
+    if nul_count:
+        log.warning(f"⚠️  Stripped NUL bytes from {nul_count} node(s)")
+    if oversized_count:
+        log.warning(f"⚠️  Truncated {oversized_count} oversized node(s) to {_EMBED_MAX_CHARS} chars")
 
     # 4. Embed and store
-    log.info(f"⏳ Embedding {len(nodes)} nodes...")
+    log.info(f"⏳ Embedding {len(all_nodes)} nodes...")
     vector_store = _build_pg_vector_store()
 
     if vector_store:
         storage_context = StorageContext.from_defaults(vector_store=vector_store)
-        index = VectorStoreIndex(nodes, storage_context=storage_context, show_progress=True)
+        index = VectorStoreIndex(all_nodes, storage_context=storage_context, show_progress=True)
     else:
         STORAGE_DIR.mkdir(parents=True, exist_ok=True)
         storage_context = StorageContext.from_defaults(persist_dir=str(STORAGE_DIR))
-        index = VectorStoreIndex(nodes, storage_context=storage_context, show_progress=True)
+        index = VectorStoreIndex(all_nodes, storage_context=storage_context, show_progress=True)
         index.storage_context.persist(persist_dir=str(STORAGE_DIR))
 
     log.info("✅ Index built and stored.")
