@@ -53,21 +53,21 @@ export default function OperationsPage() {
             <div className="bg-white border border-teal-200 rounded-xl p-6 shadow-sm">
               <p className="text-[11px] font-black uppercase tracking-widest text-teal-500 mb-3">The Pillar Question</p>
               <p className="text-2xl font-black text-slate-900 italic">"Is it executable?"</p>
-              <p className="text-sm text-slate-600 mt-3 leading-relaxed">
+              <p className="text-sm md:text-base text-slate-600 mt-3 leading-relaxed">
                 A transformation that is legally permissible, economically funded, technologically capable, clinically proven, and equitably designed still fails if the operational infrastructure cannot carry it.
               </p>
             </div>
             <div className="bg-white border border-teal-200 rounded-xl p-6 shadow-sm">
               <p className="text-[11px] font-black uppercase tracking-widest text-teal-500 mb-3">The Scale</p>
               <p className="text-3xl font-black text-slate-900">$1 Trillion</p>
-              <p className="text-sm text-slate-600 mt-2 leading-relaxed">
+              <p className="text-sm md:text-base text-slate-600 mt-2 leading-relaxed">
                 Estimated annual US healthcare administrative spend — 25% of total healthcare expenditure. The single largest operational cost driver and the most underanalyzed lever for transformation.
               </p>
             </div>
             <div className="bg-white border border-teal-200 rounded-xl p-6 shadow-sm">
               <p className="text-[11px] font-black uppercase tracking-widest text-teal-500 mb-3">The Blind Spot</p>
               <p className="text-lg font-black text-slate-900 leading-tight">Strategy without operational ground-truth</p>
-              <p className="text-sm text-slate-600 mt-2 leading-relaxed">
+              <p className="text-sm md:text-base text-slate-600 mt-2 leading-relaxed">
                 Most healthcare transformation analysis stops at policy, economics, and clinical evidence. HTR's Operations pillar is the ground-truth check that catches the execution failures before they become headline stories.
               </p>
             </div>
@@ -81,10 +81,10 @@ export default function OperationsPage() {
           <span className="text-[11px] font-black tracking-[0.2em] uppercase text-teal-600 mb-4 block">
             Five Operational Domains
           </span>
-          <h2 className="text-4xl font-black tracking-tight text-slate-900 mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-4">
             Where transformation either lands or breaks.
           </h2>
-          <p className="text-xl text-slate-500 max-w-3xl">
+          <p className="text-base md:text-lg text-slate-500 max-w-3xl">
             Each domain represents a distinct operational system with its own professional standards, data infrastructure, and failure modes. Weakness in any one can undermine strength across all others.
           </p>
         </div>
@@ -100,7 +100,7 @@ export default function OperationsPage() {
                 <h3 className="font-black text-slate-900 text-lg group-hover:text-teal-700 transition-colors">
                   {s.label}
                 </h3>
-                <p className="text-sm text-slate-600 mt-1 leading-relaxed">{s.desc}</p>
+                <p className="text-sm md:text-base text-slate-600 mt-1 leading-relaxed">{s.desc}</p>
               </div>
               <span className="text-teal-400 group-hover:text-teal-600 text-lg font-bold shrink-0 self-center transition-colors">→</span>
             </Link>
@@ -116,13 +116,13 @@ export default function OperationsPage() {
               <span className="text-[11px] font-black tracking-[0.2em] uppercase text-teal-600 mb-4 block">
                 Why Operations Belongs in the Framework
               </span>
-              <h2 className="text-4xl font-black tracking-tight text-slate-900 mb-6">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-6">
                 The execution layer has been the missing analysis.
               </h2>
-              <p className="text-lg text-slate-600 leading-relaxed mb-5">
+              <p className="text-base text-slate-600 leading-relaxed mb-5">
                 For decades, healthcare transformation analysis focused on policy frameworks, economic models, and clinical evidence — treating operations as an implementation detail. The evidence of 30 years of failed transformations proves otherwise.
               </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
+              <p className="text-base text-slate-600 leading-relaxed">
                 Revenue cycles that cannot adapt to new payment models. Credentialing systems that cannot onboard the workforce a reform requires. Supply chains that break under the procurement demands of a new care model. These are not implementation problems — they are foundational analytical failures that occur when operations are not included from the beginning.
               </p>
             </div>
@@ -135,7 +135,7 @@ export default function OperationsPage() {
               ].map((item) => (
                 <div key={item.label} className="bg-white border border-slate-200 rounded-xl p-5 flex gap-4 items-start">
                   <span className={`text-2xl font-black ${item.color} shrink-0`}>{item.stat}</span>
-                  <p className="text-sm text-slate-600 leading-relaxed">{item.label}</p>
+                  <p className="text-sm md:text-base text-slate-600 leading-relaxed">{item.label}</p>
                 </div>
               ))}
             </div>
@@ -145,10 +145,10 @@ export default function OperationsPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl font-black tracking-tight text-slate-900 mb-4">
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-black tracking-tight text-slate-900 mb-4">
           See how Operations connects to the other five pillars.
         </h2>
-        <p className="text-lg text-slate-500 mb-8 max-w-xl mx-auto">
+        <p className="text-base md:text-lg text-slate-500 mb-8 max-w-xl mx-auto">
           No transformation analysis is complete until operational executability is confirmed.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">

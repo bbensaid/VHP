@@ -35,7 +35,7 @@ export default function CapabilityAssessmentPage() {
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 leading-tight">
             Capability & Maturity <span className="text-sky-600">Assessments</span>
           </h1>
-          <p className="text-base text-slate-600 max-w-3xl leading-relaxed mb-8">
+          <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed mb-8">
             Before embarking on transformation, organizations need an honest answer to one question: <strong>&quot;Are we ready?&quot;</strong> HTR Advisory&apos;s proprietary <strong>Organizational Readiness Framework (ORF)</strong> benchmarks your maturity across 7 domains using a national peer comparison database — so you know exactly where you stand.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -101,7 +101,7 @@ export default function CapabilityAssessmentPage() {
                     {PILLAR_STYLES[d.pillar].label}
                   </span>
                 </div>
-                <p className="text-slate-600 text-sm leading-relaxed">{d.description}</p>
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed">{d.description}</p>
               </div>
             </div>
           ))}
@@ -139,7 +139,7 @@ export default function CapabilityAssessmentPage() {
               </div>
               <div className="text-xs font-bold text-sky-600 uppercase tracking-wide mb-1">{step.duration}</div>
               <h3 className="text-base font-bold text-slate-900 mb-2">{step.title}</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">{step.description}</p>
+              <p className="text-slate-600 text-sm md:text-base leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
@@ -152,9 +152,9 @@ export default function CapabilityAssessmentPage() {
           {service.tiers.map((tier) => (
             <div key={tier.name} className={`p-8 rounded-xl border-2 ${tier.highlight ? "border-sky-600 bg-sky-50 shadow-xl" : "border-slate-200 bg-white shadow-sm"}`}>
               {tier.highlight && <div className="text-xs font-black text-sky-700 uppercase tracking-widest mb-3">Most Comprehensive</div>}
-              <h3 className="text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
               <div className="text-2xl font-black text-sky-600 mb-3">{tier.price}</div>
-              <p className="text-slate-600 text-sm mb-6 leading-relaxed">{tier.description}</p>
+              <p className="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">{tier.description}</p>
               <ul className="space-y-2">
                 {tier.includes.map((item) => (
                   <li key={item} className="flex gap-2 items-start text-sm text-slate-700">

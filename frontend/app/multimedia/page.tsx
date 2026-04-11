@@ -8,7 +8,7 @@ import VideosPage from "@/app/media/videos/page";
 const PodcastsPlaceholder = () => (
   <div className="flex flex-col items-center justify-center p-24 text-center bg-slate-50/50">
     <span className="text-4xl mb-4">🎙️</span>
-    <h3 className="text-xl font-bold text-slate-800 mb-2">HTR Podcast Network</h3>
+    <h3 className="text-lg md:text-xl font-bold text-slate-800 mb-2">HTR Podcast Network</h3>
     <p className="text-slate-500 max-w-md mx-auto">
       Podcast episodes are currently being migrated to the new unified platform. Check back soon.
     </p>
@@ -18,7 +18,7 @@ const PodcastsPlaceholder = () => (
 const LibraryPlaceholder = () => (
   <div className="flex flex-col items-center justify-center p-24 text-center bg-slate-50/50">
     <span className="text-4xl mb-4">📚</span>
-    <h3 className="text-xl font-bold text-slate-800 mb-2">Full Multimedia Library</h3>
+    <h3 className="text-lg md:text-xl font-bold text-slate-800 mb-2">Full Multimedia Library</h3>
     <p className="text-slate-500 max-w-md mx-auto">
       The comprehensive media archive is under construction. Please use the Video Briefings tab in the meantime.
     </p>

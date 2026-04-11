@@ -56,17 +56,17 @@ export default function RegulatoryAdvisoryPage() {
           <div className="bg-sky-50 border border-sky-200 rounded-xl p-6">
             <div className="text-sky-700 text-2xl mb-3">📋</div>
             <h3 className="font-bold text-slate-900 mb-2">Evidence-Based Rulemaking</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">We synthesize peer-reviewed evidence, state-level case studies, and proprietary data to build the evidentiary foundation regulators need to withstand legal challenge.</p>
+            <p className="text-slate-600 text-sm md:text-base leading-relaxed">We synthesize peer-reviewed evidence, state-level case studies, and proprietary data to build the evidentiary foundation regulators need to withstand legal challenge.</p>
           </div>
           <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6">
             <div className="text-emerald-700 text-2xl mb-3">💡</div>
             <h3 className="font-bold text-slate-900 mb-2">Practitioner Perspective</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">Unlike academia, our analysts work with health systems and payers daily. We know which policy designs work in practice — and which create unintended operational consequences.</p>
+            <p className="text-slate-600 text-sm md:text-base leading-relaxed">Unlike academia, our analysts work with health systems and payers daily. We know which policy designs work in practice — and which create unintended operational consequences.</p>
           </div>
           <div className="bg-red-50 border border-red-200 rounded-xl p-6">
             <div className="text-red-700 text-2xl mb-3">⚡</div>
             <h3 className="font-bold text-slate-900 mb-2">Rapid Turnaround</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">Legislation moves at the speed of politics. We staff dedicated analyst teams for time-sensitive rulemaking support — policy briefs in 2 weeks, not 6 months.</p>
+            <p className="text-slate-600 text-sm md:text-base leading-relaxed">Legislation moves at the speed of politics. We staff dedicated analyst teams for time-sensitive rulemaking support — policy briefs in 2 weeks, not 6 months.</p>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@ export default function RegulatoryAdvisoryPage() {
                 </span>
               </div>
               <h3 className="font-bold text-slate-900 mb-2">{area.title}</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">{area.desc}</p>
+              <p className="text-slate-600 text-sm md:text-base leading-relaxed">{area.desc}</p>
             </div>
           ))}
         </div>
@@ -162,7 +162,7 @@ export default function RegulatoryAdvisoryPage() {
               </div>
               <div className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-1">{step.duration}</div>
               <h3 className="text-base font-bold text-slate-900 mb-2">{step.title}</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">{step.description}</p>
+              <p className="text-slate-600 text-sm md:text-base leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
@@ -175,9 +175,9 @@ export default function RegulatoryAdvisoryPage() {
           {service.tiers.map((tier) => (
             <div key={tier.name} className={`p-8 rounded-xl border-2 ${tier.highlight ? "border-slate-800 bg-slate-50 shadow-xl" : "border-slate-200 bg-white shadow-sm"}`}>
               {tier.highlight && <div className="text-xs font-black text-slate-700 uppercase tracking-widest mb-3">Most Comprehensive</div>}
-              <h3 className="text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
               <div className="text-2xl font-black text-slate-700 mb-3">{tier.price}</div>
-              <p className="text-slate-600 text-sm mb-6 leading-relaxed">{tier.description}</p>
+              <p className="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">{tier.description}</p>
               <ul className="space-y-2">
                 {tier.includes.map((item) => (
                   <li key={item} className="flex gap-2 items-start text-sm text-slate-700">

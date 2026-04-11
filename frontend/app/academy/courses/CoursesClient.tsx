@@ -47,7 +47,7 @@ function getFilterStyle(filter: string, isActive: boolean) {
     case "Clinical Pillar":   return `${base} bg-white text-brand-clinical border-brand-clinical/30 hover:border-brand-clinical hover:bg-red-50`;
     case "Equity Pillar":     return `${base} bg-white text-brand-equity border-brand-equity/30 hover:border-brand-equity hover:bg-violet-50`;
     case "Operations Pillar": return `${base} bg-white text-teal-700 border-teal-300 hover:border-teal-500 hover:bg-teal-50`;
-    default:                  return `${base} bg-white text-gray-600 border-gray-300 hover:border-gray-400 hover:bg-gray-50`;
+    default:                  return `${base} bg-white text-slate-600 border-gray-300 hover:border-gray-400 hover:bg-gray-50`;
   }
 }
 
@@ -90,9 +90,9 @@ export default function CoursesClient({ courses }: { courses: Course[] }) {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           <div className="hidden lg:block space-y-8">
             <div>
-              <h3 className="font-bold text-gray-900 mb-4 uppercase tracking-wider text-xs">Learning Format</h3>
+              <h3 className="font-bold text-slate-900 mb-4 uppercase tracking-wider text-xs">Learning Format</h3>
               <div className="space-y-2">
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-slate-500">
                   {filtered.length === 0
                     ? "No programs match this filter."
                     : `${filtered.length} program${filtered.length === 1 ? "" : "s"} found`}
@@ -102,7 +102,7 @@ export default function CoursesClient({ courses }: { courses: Course[] }) {
           </div>
 
           <div className="lg:col-span-3 space-y-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-slate-900 mb-6">
               {activeFilter === "All Programs" ? "All Active Programs" : activeFilter}
             </h2>
 

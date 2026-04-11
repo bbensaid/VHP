@@ -140,17 +140,17 @@ export default function AheadModelPage() {
                 CMS Innovation Center · CMMI
               </span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-[0.95] mb-6">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-black tracking-tight leading-[0.95] mb-6">
               AHEAD Model
               <br />
               <span className="text-emerald-400">Advancing All-Payer</span>
               <br />
               Health Equity & Reform
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mb-4">
+            <p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-3xl mb-4">
               The most ambitious payment reform model in CMS history. AHEAD holds states accountable for bending the total cost of care curve across all payers — Medicare, Medicaid, and commercial — while requiring measurable progress on health equity as a condition of financial success.
             </p>
-            <p className="text-base text-slate-400 leading-relaxed max-w-3xl mb-10">
+            <p className="text-base md:text-lg text-slate-400 leading-relaxed max-w-3xl mb-10">
               Six states. One decade. The framework that could define the next era of American healthcare financing.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -178,7 +178,7 @@ export default function AheadModelPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:divide-x divide-slate-200">
             {stats.map((s) => (
               <div key={s.label} className="text-center px-4 first:pl-0 last:pr-0">
-                <div className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight">
                   {s.value}
                 </div>
                 <div className="text-xs text-slate-500 font-bold uppercase tracking-widest mt-1">
@@ -197,16 +197,16 @@ export default function AheadModelPage() {
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-emerald-600 mb-4 block">
               The Big Picture
             </span>
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 leading-tight mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 leading-tight mb-6">
               Why AHEAD is different from every model before it.
             </h2>
-            <p className="text-lg text-slate-600 leading-relaxed mb-5">
+            <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-5">
               Every previous CMS payment model operated within a single payer silo — typically Medicare. The result was predictable: health systems would reform their Medicare contracts while shifting costs to commercial payers. Total spending continued rising even as Medicare metrics improved.
             </p>
-            <p className="text-lg text-slate-600 leading-relaxed mb-5">
+            <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-5">
               AHEAD closes that loophole by holding states accountable for <em>total</em> cost of care — across all payers simultaneously. A state cannot succeed by shifting costs. It must actually reduce the growth rate of healthcare spending for the entire population.
             </p>
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-base md:text-lg text-slate-600 leading-relaxed">
               Simultaneously, AHEAD makes health equity a financial performance dimension for the first time. States that fail to demonstrate measurable progress on their Health Equity Benchmarks cannot achieve full financial success under the model — regardless of their cost trajectory.
             </p>
           </div>
@@ -279,10 +279,10 @@ export default function AheadModelPage() {
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-emerald-600 mb-4 block">
               Program Architecture
             </span>
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-4">
               Four interdependent pillars.
             </h2>
-            <p className="text-xl text-slate-500 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-slate-500 max-w-2xl mx-auto">
               AHEAD is not a collection of independent initiatives. Its four components are designed to reinforce each other — eliminating the partial-reform loopholes that undermined previous payment models.
             </p>
           </div>
@@ -296,7 +296,7 @@ export default function AheadModelPage() {
                   </div>
                   <h3 className={`text-xl font-black ${p.color} leading-tight pt-1`}>{p.title}</h3>
                 </div>
-                <p className="text-slate-600 leading-relaxed mb-4 text-sm">{p.body}</p>
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">{p.body}</p>
                 <div className={`${p.bg} border ${p.border} rounded-lg p-4`}>
                   <p className="text-[11px] font-black uppercase tracking-wider text-slate-500 mb-1">Why it matters</p>
                   <p className="text-sm text-slate-700 leading-relaxed font-medium">{p.impact}</p>
@@ -313,10 +313,10 @@ export default function AheadModelPage() {
           <span className="text-[11px] font-black tracking-[0.2em] uppercase text-emerald-600 mb-4 block">
             State Profiles
           </span>
-          <h2 className="text-4xl font-black tracking-tight text-slate-900 mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-4">
             Six states. One shared framework.
           </h2>
-          <p className="text-xl text-slate-500 max-w-3xl">
+          <p className="text-base md:text-lg text-slate-500 max-w-3xl">
             Each state enters AHEAD with a unique health system context, payer mix, and equity challenge — but all operate under the same TCOC accountability structure and Health Equity Benchmark requirement.
           </p>
         </div>
@@ -348,7 +348,7 @@ export default function AheadModelPage() {
                 </div>
                 <div>
                   <p className="text-[11px] font-black uppercase tracking-widest text-slate-400 mb-1.5">Equity Benchmark</p>
-                  <p className="text-sm text-slate-600 leading-relaxed">{state.equity}</p>
+                  <p className="text-sm md:text-base text-slate-600 leading-relaxed">{state.equity}</p>
                 </div>
               </div>
             </div>
@@ -373,7 +373,7 @@ export default function AheadModelPage() {
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-emerald-400 mb-4 block">
               Model Timeline
             </span>
-            <h2 className="text-4xl font-black tracking-tight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight">
               From concept to nationwide potential: the AHEAD decade.
             </h2>
           </div>
@@ -404,7 +404,7 @@ export default function AheadModelPage() {
           <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
             HTR Analysis
           </span>
-          <h2 className="text-4xl font-black tracking-tight text-slate-900 mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-4">
             What AHEAD means across the six pillars.
           </h2>
         </div>
@@ -463,7 +463,7 @@ export default function AheadModelPage() {
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="bg-emerald-700 text-white py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight mb-4">
             Track AHEAD as it unfolds.
           </h2>
           <p className="text-emerald-200 text-lg mb-8 max-w-2xl mx-auto">

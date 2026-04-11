@@ -46,7 +46,7 @@ export default function SitemapPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-24">
       <div className="mb-12 border-b border-slate-200 pb-8">
-        <h1 className="text-4xl font-black text-slate-900 mb-2">Sitemap</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-2">Sitemap</h1>
         <p className="text-slate-500">All pages on the Health Transformation Review platform.</p>
       </div>
       <div className="grid sm:grid-cols-2 gap-10">

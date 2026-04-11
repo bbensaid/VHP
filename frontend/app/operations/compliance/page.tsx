@@ -11,11 +11,11 @@ export default function CompliancePage() {
           <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-teal-200 mb-5 border border-teal-500 bg-teal-600/40 px-4 py-1.5 rounded-full">
             Operations · Quality, Compliance & Risk
           </span>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-6">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight leading-tight mb-6">
             Quality, Compliance<br />
             <span className="text-teal-300">& Risk</span>
           </h1>
-          <p className="text-xl text-teal-100 max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg text-teal-100 max-w-2xl leading-relaxed">
             Accreditation, regulatory compliance, patient safety infrastructure, and quality management systems. The operational foundation that determines whether a health system can meet the standards transformation demands.
           </p>
         </div>
@@ -48,11 +48,11 @@ export default function CompliancePage() {
             <div className="bg-teal-50 border border-teal-200 rounded-xl p-6">
               <p className="text-[11px] font-black uppercase tracking-widest text-teal-600 mb-2">Why This Is an Operations Question</p>
               <p className="text-lg font-black text-slate-900 mb-2">Compliance is not legal — it is operational</p>
-              <p className="text-sm text-slate-600 leading-relaxed">The rules are set by Policy. The legal exposure is analyzed by Risk. But whether the organization has the staff, systems, and culture to actually comply — day in, day out, at scale — is an Operations question.</p>
+              <p className="text-sm md:text-base text-slate-600 leading-relaxed">The rules are set by Policy. The legal exposure is analyzed by Risk. But whether the organization has the staff, systems, and culture to actually comply — day in, day out, at scale — is an Operations question.</p>
             </div>
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
               <p className="text-[11px] font-black uppercase tracking-widest text-slate-500 mb-2">The Transformation Intersection</p>
-              <p className="text-sm text-slate-600 leading-relaxed">Every new care model, payment arrangement, and technology deployment carries a compliance surface. Organizations with weak compliance infrastructure cannot safely absorb rapid change — creating an operational ceiling on transformation speed.</p>
+              <p className="text-sm md:text-base text-slate-600 leading-relaxed">Every new care model, payment arrangement, and technology deployment carries a compliance surface. Organizations with weak compliance infrastructure cannot safely absorb rapid change — creating an operational ceiling on transformation speed.</p>
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@ export default function AdvisoryPage() {
             </span>
             <span className="text-slate-400 text-sm">Burlington, VT · Washington, DC</span>
           </div>
-          <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6 leading-tight max-w-4xl">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight mb-6 leading-tight max-w-4xl">
             Healthcare Strategy at Every Level of the Enterprise
           </h1>
           <p className="text-base text-slate-300 max-w-3xl leading-relaxed mb-3">
@@ -68,7 +68,7 @@ export default function AdvisoryPage() {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
             {ADVISORY_STATS.map((stat) => (
               <div key={stat.label}>
-                <div className="text-4xl font-black text-fuchsia-300 mb-1">{stat.value}</div>
+                <div className="text-2xl md:text-3xl lg:text-4xl font-black text-fuchsia-300 mb-1">{stat.value}</div>
                 <div className="text-indigo-200 text-sm font-medium">{stat.label}</div>
               </div>
             ))}
@@ -80,8 +80,8 @@ export default function AdvisoryPage() {
       <div className="container mx-auto px-4 md:px-8 max-w-6xl py-20">
         <div className="text-center mb-14">
           <span className="text-xs font-black text-fuchsia-600 uppercase tracking-widest block mb-3">Our Services</span>
-          <h2 className="text-4xl font-black text-slate-900 mb-4">Eight Practice Areas. One Integrated Framework.</h2>
-          <p className="text-xl text-slate-500 max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-4">Eight Practice Areas. One Integrated Framework.</h2>
+          <p className="text-base md:text-lg text-slate-500 max-w-3xl mx-auto">
             Every HTR Advisory engagement draws from the full 6-pillar framework — because healthcare problems never respect disciplinary boundaries.
           </p>
         </div>
@@ -162,8 +162,8 @@ export default function AdvisoryPage() {
       <div className="bg-slate-50 py-20 border-y border-slate-200">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl">
           <div className="text-center mb-14">
-            <h2 className="text-4xl font-black text-slate-900 mb-4">The HTR 6-Pillar Advantage</h2>
-            <p className="text-xl text-slate-500 max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-4">The HTR 6-Pillar Advantage</h2>
+            <p className="text-base md:text-lg text-slate-500 max-w-3xl mx-auto">
               Every recommendation we make is stress-tested against all six dimensions of healthcare transformation. Siloed expertise creates blind spots. We eliminate them.
             </p>
           </div>
@@ -177,7 +177,7 @@ export default function AdvisoryPage() {
             ].map((item) => (
               <div key={item.pillar} className={`rounded-xl p-6 border-2 ${PILLAR_STYLES[item.pillar].bg} ${PILLAR_STYLES[item.pillar].border}`}>
                 <div className={`text-lg font-black mb-3 ${PILLAR_STYLES[item.pillar].text}`}>{item.title}</div>
-                <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -187,8 +187,8 @@ export default function AdvisoryPage() {
       {/* ── HOW WE WORK ───────────────────────────────────────────────────── */}
       <div className="container mx-auto px-4 md:px-8 max-w-6xl py-20">
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-black text-slate-900 mb-4">How We Work</h2>
-          <p className="text-xl text-slate-500 max-w-2xl mx-auto">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-4">How We Work</h2>
+          <p className="text-base md:text-lg text-slate-500 max-w-2xl mx-auto">
             A structured, transparent engagement model designed around your timeline and decision-making process.
           </p>
         </div>
@@ -202,7 +202,7 @@ export default function AdvisoryPage() {
             <div key={item.step} className="relative">
               <div className="text-6xl font-black text-slate-100 mb-4 leading-none">{item.step}</div>
               <div className="text-xs font-bold text-fuchsia-600 uppercase tracking-widest mb-2">{item.duration}</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">{item.title}</h3>
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">{item.title}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
             </div>
           ))}
@@ -218,8 +218,8 @@ export default function AdvisoryPage() {
       <div className="bg-indigo-700 text-white py-20">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl">
           <div className="text-center mb-14">
-            <h2 className="text-4xl font-black mb-4">Types of Clients We Serve</h2>
-            <p className="text-xl text-indigo-100 max-w-2xl mx-auto">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black mb-4">Types of Clients We Serve</h2>
+            <p className="text-base md:text-lg text-indigo-100 max-w-2xl mx-auto">
               From the bedside to the boardroom to the Capitol — we work across every part of the U.S. healthcare system.
             </p>
           </div>
@@ -238,30 +238,30 @@ export default function AdvisoryPage() {
       {/* ── WHY HTR VS BIG CONSULTING ─────────────────────────────────────── */}
       <div className="container mx-auto px-4 md:px-8 max-w-6xl py-20">
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-black text-slate-900 mb-4">Why HTR Advisory vs. The Big Firms</h2>
-          <p className="text-xl text-slate-500 max-w-2xl mx-auto">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-4">Why HTR Advisory vs. The Big Firms</h2>
+          <p className="text-base md:text-lg text-slate-500 max-w-2xl mx-auto">
             McKinsey, Deloitte, and Oliver Wyman offer brand recognition. We offer something rarer: embedded expertise, non-partisan analysis, and speed.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-linear-to-b from-fuchsia-50 to-white border-2 border-fuchsia-200 rounded-xl p-8">
             <div className="text-4xl mb-4">📡</div>
-            <h3 className="text-xl font-bold text-slate-900 mb-3">Embedded Intelligence</h3>
-            <p className="text-slate-600 leading-relaxed text-sm">
+            <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">Embedded Intelligence</h3>
+            <p className="text-slate-600 text-sm md:text-base leading-relaxed">
               Our advisors publish daily intelligence on the same topics we consult on. When CMS releases a final rule, we&apos;ve already modeled the impact — before you even book the discovery call. Big firms catch up weeks later.
             </p>
           </div>
           <div className="bg-linear-to-b from-fuchsia-50 to-white border-2 border-fuchsia-200 rounded-xl p-8">
             <div className="text-4xl mb-4">⚖️</div>
-            <h3 className="text-xl font-bold text-slate-900 mb-3">Non-Partisan Framework</h3>
-            <p className="text-slate-600 leading-relaxed text-sm">
+            <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">Non-Partisan Framework</h3>
+            <p className="text-slate-600 text-sm md:text-base leading-relaxed">
               We have no vendor relationships, no preferred referral partners, and no political donors. Our only incentive is the quality of the outcome for your organization. We tell you the truth, even when it&apos;s uncomfortable.
             </p>
           </div>
           <div className="bg-linear-to-b from-fuchsia-50 to-white border-2 border-fuchsia-200 rounded-xl p-8">
             <div className="text-4xl mb-4">⚡</div>
-            <h3 className="text-xl font-bold text-slate-900 mb-3">Speed to Insight</h3>
-            <p className="text-slate-600 leading-relaxed text-sm">
+            <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">Speed to Insight</h3>
+            <p className="text-slate-600 text-sm md:text-base leading-relaxed">
               Healthcare decisions don&apos;t wait for a 6-month engagement. We deliver rapid policy briefs in 2 weeks, project assessments in 4 weeks, and financial reviews in 6 weeks — without cutting corners on rigor.
             </p>
           </div>
@@ -271,7 +271,7 @@ export default function AdvisoryPage() {
       {/* ── FINAL CTA ─────────────────────────────────────────────────────── */}
       <div className="bg-linear-to-r from-fuchsia-700 via-indigo-700 to-slate-900 py-24">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-black mb-6">Ready to Engage?</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black mb-6">Ready to Engage?</h2>
           <p className="text-xl text-fuchsia-200 mb-10 max-w-2xl mx-auto leading-relaxed">
             Schedule a no-obligation discovery call with a principal advisor. We&apos;ll identify the right service line, scope a proposal, and have a plan in front of you within 5 business days.
           </p>

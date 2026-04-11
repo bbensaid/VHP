@@ -365,7 +365,7 @@ export default function HTIDashboard() {
             <span className="bg-emerald-600 text-white text-[10px] font-black px-2 py-0.5 rounded uppercase">Strategic Tool</span>
             <span className="text-slate-400 text-xs font-medium tracking-tight">Q1 2025 Audit Cycle</span>
           </div>
-          <h1 className="text-4xl font-black text-slate-900 tracking-tight flex items-center gap-3">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight flex items-center gap-3">
             HTI <span className="text-emerald-600 font-light tracking-normal">Engine</span>
           </h1>
           <p className="text-slate-500 mt-2 max-w-2xl text-lg font-medium leading-snug">
