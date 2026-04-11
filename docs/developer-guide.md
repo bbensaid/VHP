@@ -19,6 +19,8 @@
 10. [Database Migrations](#10-database-migrations)
 11. [Deployment](#11-deployment)
 12. [Troubleshooting](#12-troubleshooting)
+13. [Adding a New Third-Party Service — CSP Checklist](#13-adding-a-new-third-party-service--csp-checklist)
+14. [Platform Amendment Convention](#14-platform-amendment-convention)
 
 ---
 
@@ -1139,3 +1141,128 @@ Dark mode state is managed by `ThemeProvider`. If it resets on refresh, check th
 ### Left sidebar not staying open between pages
 
 The sidebar now persists its state across all pages (this was changed intentionally). If it's not persisting, check that `SidebarContext` is initialized with `isLeftOpen: true` as the default and that `AppShell` is not overriding it. The auto-collapse only fires for `/studio` and `/chat`.
+
+---
+
+## 13. Adding a New Third-Party Service — CSP Checklist
+
+Every external service the frontend communicates with must be explicitly permitted in the Content Security Policy (CSP) defined in `frontend/next.config.ts`. If a new service is added without updating the CSP, requests will be silently blocked in production (Vercel enforces strict CSP; browsers silently fail cross-origin requests that violate it). The error will look like a network error or a blank component — not a clear CSP violation message.
+
+### Step-by-step
+
+**1. Identify what type of resource the new service provides:**
+
+| Resource type | CSP directive to update |
+| --- | --- |
+| API / data fetch (XHR, fetch, WebSocket) | `connect-src` |
+| JavaScript file loaded via `<script>` | `script-src` |
+| CSS file loaded via `<link>` | `style-src` |
+| Image / icon CDN | `img-src` |
+| Font file | `font-src` |
+| `<iframe>` embed | `frame-src` |
+| Web worker | `worker-src` |
+
+**2. Determine the exact origin(s):**
+
+Most services use a single origin (e.g. `https://api.example.com`). Some use wildcards (e.g. `https://*.example.com`). Check the service's documentation for the exact URLs your code calls. Note that CSP wildcards only match **one subdomain level** — `*.example.com` permits `api.example.com` but NOT `project.api.example.com`.
+
+**3. Add to `next.config.ts`:**
+
+```typescript
+// In the securityHeaders array, find the Content-Security-Policy entry.
+// Add the new origin to the appropriate directive in the join() array.
+
+"connect-src 'self' ... https://api.newservice.com",
+// or
+"frame-src ... https://embed.newservice.com",
+```
+
+**4. Add a comment explaining why:**
+
+Each directive in `next.config.ts` already has inline comments (e.g., `// jsDelivr CDN: US Atlas TopoJSON for react-simple-maps maps`). Add a similar one-line comment for the new entry so future developers understand why it is there.
+
+**5. Test locally and on a Vercel preview deploy:**
+
+CSP is applied by `next.config.ts` headers, which are active both locally (`npm run dev`) and on Vercel. Open the browser DevTools Console and Network tabs and verify no CSP violations appear.
+
+### Common mistakes
+
+| Mistake | Result |
+|---------|--------|
+| Adding `*.example.com` when the actual host is `project.api.example.com` | Still blocked — wildcard only covers one level |
+| Updating `connect-src` for a service that also loads a `<script>` tag | Script still blocked — `script-src` is separate |
+| Adding the origin to `next.config.ts` but not redeploying to Vercel | Old CSP still served until next deployment |
+| Using `https://` prefix for a WebSocket connection | Use `wss://` for WebSocket, `https://` for REST — both may be needed for the same host (e.g. Supabase uses both) |
+
+---
+
+## 14. Platform Amendment Convention
+
+The `docs/` folder uses a **versioned amendment** system. Rather than editing core documents like `deployment-guide.md` or `developer-guide.md` for every change, significant platform updates are recorded as standalone amendment files that supplement the existing docs.
+
+### Naming
+
+```text
+docs/platform-amendment-v4.X.0.md
+```
+
+Increment the minor version (the `X`) for each new amendment. The current sequence:
+
+| Version | Topic |
+|---------|-------|
+| v4.3.0 | *(see file)* |
+| v4.4.0 | *(see file)* |
+| v4.5.0 | *(see file)* |
+| v4.6.0 | *(see file)* |
+| v4.7.0 | *(see file)* |
+| v4.8.0 | Ticker CSV data source, hero reduction, HomeSidebar redesign |
+| v4.9.0 | Vercel deployment sprint — monorepo config, dependency resolution, TS errors |
+| v4.10.0 | Navigation architecture, six pillars design system, RightSidebar layout constraints |
+
+### When to write an amendment (vs editing an existing doc)
+
+**Write an amendment when:**
+
+- A significant feature, architectural decision, or non-obvious behavior was added or changed
+- You fixed something that broke and the fix is non-obvious (so future developers don't undo it)
+- A debugging sprint produced hard-won knowledge that should outlive the chat session
+
+**Edit an existing doc when:**
+
+- Correcting a factual error in an existing section
+- Updating version numbers, route names, or env var names that changed
+
+### Amendment file structure
+
+```markdown
+# Platform Amendment — Version 4.X.0
+# Vermont Health Platform (HTR)
+
+**Type:** Amendment to Platform Documentation (supplements v4.Y.0 and all prior amendments)
+**Version:** 4.X.0
+**Date:** [Month Year]
+**Classification:** Internal
+**Scope:** One sentence describing what this amendment covers.
+
+---
+
+## Table of Contents
+
+1. [Section One](#1-section-one)
+2. [Section Two](#2-section-two)
+
+---
+
+## 1. Section One
+
+...content...
+```
+
+### Writing guidelines
+
+- **Lead with what changed and why** — not a narrative of what happened during implementation
+- **Use tables** for before/after comparisons, token registries, and checklist items
+- **Include exact file paths and code snippets** for anything a developer would need to replicate or maintain
+- **Do not duplicate** what is already covered in an existing doc — reference the existing doc instead
+- **End with a Known Issues section** if any open items or follow-up work exists
+- State the relationship to the previous amendment in the `**Type:**` header line

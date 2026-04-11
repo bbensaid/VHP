@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { createPortal } from "react-dom";
 import { XMarkIcon } from "@heroicons/react/24/outline";
@@ -11,6 +11,7 @@ interface TickerItem {
   value?: string;
   trend?: string;
   status?: string;
+  type?: "vital" | "bed";
 
   // News Headlines fields
   text?: string;
@@ -103,7 +104,7 @@ export default function TickerStrip({
               className="flex items-center animate-marquee whitespace-nowrap gap-2"
               style={{
                 animationPlayState: isHovered ? "paused" : "running",
-                animationDuration: `${duration || (isVitals ? 60 : 180)}s`,
+                animationDuration: `${duration || (isVitals ? 180 : 300)}s`,
               }}
             >
               {/* Render items multiple times to ensure the strip is filled and loops seamlessly */}
@@ -113,11 +114,16 @@ export default function TickerStrip({
                   className="flex items-center gap-2 whitespace-nowrap"
                 >
                   {item.label ? (
-                    // RENDER SYSTEM VITAL
+                    // RENDER SYSTEM VITAL or BED AVAILABILITY
                     <button
                       onClick={() => setSelectedItem(item)}
                       className="flex items-center gap-2 hover:bg-slate-100/50 hover:shadow-sm px-2 py-1 rounded transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
                     >
+                      {item.type === "bed" && (
+                        <span className="text-[9px] font-black uppercase tracking-widest bg-teal-100 text-teal-700 px-1.5 py-0.5 rounded">
+                          🏥
+                        </span>
+                      )}
                       <span className={`font-medium ${isDark ? "text-slate-400" : "text-slate-500 dark:text-slate-400"} text-xs`}>
                         {item.label}:
                       </span>
@@ -179,7 +185,7 @@ export default function TickerStrip({
 
               <div className="mb-4">
                 <span className="text-xs font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 block mb-1">
-                  System Vital
+                  {selectedItem.type === "bed" ? "Vermont Hospital · Bed Availability" : "System Vital"}
                 </span>
                 <h3 className="text-xl font-black text-slate-900 dark:text-slate-100">
                   {selectedItem.label}
@@ -202,19 +208,27 @@ export default function TickerStrip({
               </div>
 
               <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-4 border border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                <p>
-                  Detailed analytics and historical data for{" "}
-                  <strong>{selectedItem.label}</strong> would appear here. This
-                  metric is currently flagged as{" "}
-                  <span
-                    className={`font-bold uppercase ${getTickerColor(
-                      selectedItem.status,
-                    )}`}
-                  >
-                    {selectedItem.status || "Normal"}
-                  </span>
-                  .
-                </p>
+                {selectedItem.type === "bed" ? (
+                  <p>
+                    <strong>{selectedItem.label}</strong> currently has{" "}
+                    <strong className={getTickerColor(selectedItem.status)}>{selectedItem.value}</strong>
+                    {selectedItem.trend ? ` (${selectedItem.trend})` : ""}. Capacity status is flagged{" "}
+                    <span className={`font-bold uppercase ${getTickerColor(selectedItem.status)}`}>
+                      {selectedItem.status || "normal"}
+                    </span>
+                    . Data sourced from <em>data/vitals.csv</em> — replace with live ADT feed for real-time updates.
+                  </p>
+                ) : (
+                  <p>
+                    Detailed analytics and historical data for{" "}
+                    <strong>{selectedItem.label}</strong> would appear here. This
+                    metric is currently flagged as{" "}
+                    <span className={`font-bold uppercase ${getTickerColor(selectedItem.status)}`}>
+                      {selectedItem.status || "Normal"}
+                    </span>
+                    .
+                  </p>
+                )}
               </div>
 
               <div className="mt-6 pt-4 border-t border-slate-100 dark:border-slate-700 flex justify-end">
