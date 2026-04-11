@@ -84,8 +84,8 @@ export default async function CourseDetailPage({
             <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold uppercase mb-4 ${getCategoryColor(course.category)} border`}>
                 {course.category || "Academy"}
             </div>
-            <h1 className="text-4xl md:text-5xl font-black mb-6 leading-tight">{course.title}</h1>
-            <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">{course.description}</p>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-black mb-6 leading-tight">{course.title}</h1>
+            <p className="text-base md:text-lg text-slate-600 max-w-2xl leading-relaxed">{course.description}</p>
         </div>
       </div>
 
@@ -96,8 +96,8 @@ export default async function CourseDetailPage({
             
             {/* OVERVIEW */}
             <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Course Overview</h2>
-                <div className="prose prose-lg text-gray-600">
+                <h2 className="text-2xl font-bold text-slate-900 mb-6">Course Overview</h2>
+                <div className="prose prose-lg text-slate-600">
                     {course.overview ? <PortableText value={course.overview} /> : <p>Syllabus coming soon...</p>}
                 </div>
             </div>
@@ -105,8 +105,8 @@ export default async function CourseDetailPage({
             {/* MODULES LIST */}
             {course.modules && course.modules.length > 0 && (
               <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Course Modules <span className="text-gray-400 font-normal text-lg">({course.modules.length})</span>
+                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                  Course Modules <span className="text-slate-400 font-normal text-lg">({course.modules.length})</span>
                 </h2>
                 <div className="space-y-3">
                   {(course.modules as CourseModule[]).map((mod) => (
@@ -119,10 +119,10 @@ export default async function CourseDetailPage({
                         {mod.moduleNumber}
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h3 className="font-bold text-gray-900 group-hover:text-indigo-700 transition-colors">{mod.title}</h3>
-                        <p className="text-sm text-gray-500 mt-1 line-clamp-2">{mod.summary}</p>
+                        <h3 className="font-bold text-slate-900 group-hover:text-indigo-700 transition-colors">{mod.title}</h3>
+                        <p className="text-sm text-slate-500 mt-1 line-clamp-2">{mod.summary}</p>
                         {mod.estimatedReadTime && (
-                          <span className="text-xs text-gray-400 mt-1 block">{mod.estimatedReadTime} min read</span>
+                          <span className="text-xs text-slate-400 mt-1 block">{mod.estimatedReadTime} min read</span>
                         )}
                       </div>
                     </Link>
@@ -134,7 +134,7 @@ export default async function CourseDetailPage({
             {/* INSTRUCTORS - OPTIMIZED */}
             {course.instructors && (
                 <div className="mt-12">
-                    <h3 className="text-xl font-bold text-gray-900 mb-6">Your Instructors</h3>
+                    <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-6">Your Instructors</h3>
                     <div className="grid gap-6">
                         {(course.instructors as Instructor[]).map((inst) => (
                             <div key={inst.name} className="flex gap-4 p-6 bg-slate-50 rounded-xl border border-gray-200">
@@ -152,9 +152,9 @@ export default async function CourseDetailPage({
                                   )}
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-gray-900 text-lg">{inst.name}</h4>
+                                    <h4 className="font-bold text-slate-900 text-lg">{inst.name}</h4>
                                     <p className="text-indigo-600 text-xs font-bold uppercase mb-2">{inst.role}</p>
-                                    <p className="text-sm text-gray-600">{inst.bio}</p>
+                                    <p className="text-sm text-slate-600">{inst.bio}</p>
                                 </div>
                             </div>
                         ))}
@@ -166,8 +166,8 @@ export default async function CourseDetailPage({
         {/* RIGHT COLUMN (Sidebar) */}
         <div className="lg:col-span-1">
             <div className="bg-white p-6 rounded-xl shadow-xl border border-gray-200 sticky top-24">
-                <div className="text-3xl font-black text-gray-900 mb-2">${course.price}</div>
-                <div className="text-gray-500 text-sm mb-6">One-time payment • Lifetime access</div>
+                <div className="text-3xl font-black text-slate-900 mb-2">${course.price}</div>
+                <div className="text-slate-500 text-sm mb-6">One-time payment • Lifetime access</div>
                 
                 <Link
                   href={`/pricing?from=/academy/courses/${course.slug}`}
@@ -178,22 +178,22 @@ export default async function CourseDetailPage({
                 
                 <div className="space-y-4 pt-6 border-t border-gray-100">
                     <div className="flex items-center justify-between text-sm">
-                        <span className="text-gray-500">Level</span>
-                        <span className="font-bold text-gray-900">{course.level}</span>
+                        <span className="text-slate-500">Level</span>
+                        <span className="font-bold text-slate-900">{course.level}</span>
                     </div>
                     <div className="flex items-center justify-between text-sm">
-                        <span className="text-gray-500">Duration</span>
-                        <span className="font-bold text-gray-900">{course.duration}</span>
+                        <span className="text-slate-500">Duration</span>
+                        <span className="font-bold text-slate-900">{course.duration}</span>
                     </div>
                     <div className="flex items-center justify-between text-sm">
-                        <span className="text-gray-500">Start Date</span>
-                        <span className="font-bold text-gray-900">
+                        <span className="text-slate-500">Start Date</span>
+                        <span className="font-bold text-slate-900">
                              {course.startDate ? new Date(course.startDate).toLocaleDateString() : "On Demand"}
                         </span>
                     </div>
                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-gray-500">Format</span>
-                        <span className="font-bold text-gray-900">{course.format}</span>
+                        <span className="text-slate-500">Format</span>
+                        <span className="font-bold text-slate-900">{course.format}</span>
                     </div>
                 </div>
             </div>

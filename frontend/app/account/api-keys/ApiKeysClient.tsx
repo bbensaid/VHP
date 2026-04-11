@@ -217,7 +217,7 @@ export default function ApiKeysClient({ initialKeys }: Props) {
 
       {/* Rate limits info */}
       <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-xs text-slate-500 space-y-1">
-        <p className="font-bold text-slate-700 text-sm mb-2">Rate limits</p>
+        <p className="font-bold text-slate-700 text-sm md:text-base mb-2">Rate limits</p>
         <p>• <strong>Researcher</strong> — 1,000 requests per day (resets midnight UTC)</p>
         <p>• <strong>Enterprise</strong> — Unlimited (contact us for SLA)</p>
         <p>• All requests must include the <code className="font-mono bg-slate-100 px-1 rounded">X-HTR-API-Key</code> header</p>

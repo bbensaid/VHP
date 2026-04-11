@@ -80,10 +80,10 @@ export default function GlossaryClient({ allTerms }: { allTerms: GlossaryTerm[] 
       {/* HEADER */}
       <div className="bg-slate-50 border-b border-slate-200 py-16">
         <div className="container mx-auto px-4 md:px-8 text-center max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-6">
             Health Transformation Glossary
           </h1>
-          <p className="text-xl text-slate-600 mb-8">
+          <p className="text-base md:text-lg text-slate-600 mb-8">
             Decoding the lexicon of healthcare transformation.
           </p>
           <div className="relative max-w-xl mx-auto">
@@ -182,7 +182,7 @@ export default function GlossaryClient({ allTerms }: { allTerms: GlossaryTerm[] 
                         className="bg-white p-6 rounded-xl border border-slate-200 hover:shadow-md transition-shadow"
                       >
                         <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-2">
-                          <h3 className="text-xl font-bold text-slate-900">{item.term}</h3>
+                          <h3 className="text-lg md:text-xl font-bold text-slate-900">{item.term}</h3>
                           <div className="flex flex-wrap gap-2">
                             {item.pillars?.map((pillar) => (
                               <span
@@ -194,7 +194,7 @@ export default function GlossaryClient({ allTerms }: { allTerms: GlossaryTerm[] 
                             ))}
                           </div>
                         </div>
-                        <p className="text-slate-600 leading-relaxed text-lg">{item.description}</p>
+                        <p className="text-slate-600 text-base md:text-lg leading-relaxed">{item.description}</p>
                       </div>
                     ))}
                   </div>

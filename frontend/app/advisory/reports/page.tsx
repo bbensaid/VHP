@@ -26,7 +26,7 @@ export default async function ReportsPage() {
       case "Public": return "bg-green-100 text-green-800 border-green-200";
       case "Client Only": return "bg-slate-100 text-slate-800 border-slate-200";
       case "Enterprise": return "bg-indigo-100 text-indigo-800 border-indigo-200";
-      default: return "bg-gray-100 text-gray-800";
+      default: return "bg-gray-100 text-slate-800";
     }
   };
 
@@ -35,8 +35,8 @@ export default async function ReportsPage() {
       <div className="bg-slate-50 text-slate-900 py-20 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs mb-2 block">HTR Intelligence</span>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Annual Impact Reports</h1>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black mb-6 tracking-tight">Annual Impact Reports</h1>
+          <p className="text-base md:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Comprehensive reviews of the macro-trends shaping the healthcare landscape.
           </p>
         </div>
@@ -60,9 +60,9 @@ export default async function ReportsPage() {
                 <span className={`px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wide border ${getAccessBadge(report.accessLevel)}`}>{report.accessLevel}</span>
                 <span className="text-slate-400 text-xs font-mono uppercase">{report.publishedAt ? new Date(report.publishedAt).getFullYear() + " Edition" : "Draft"}</span>
               </div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">{report.title}</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors">{report.title}</h2>
               <p className="text-lg text-indigo-900/60 font-medium mb-4">{report.subtitle}</p>
-              <p className="text-gray-600 mb-6 leading-relaxed max-w-4xl">{report.summary}</p>
+              <p className="text-slate-600 mb-6 leading-relaxed max-w-4xl">{report.summary}</p>
               <div className="border-t border-gray-100 pt-6">
                 {report.accessLevel === "Public" ? (
                   <button className="px-6 py-2 bg-indigo-600 text-white font-bold rounded hover:bg-indigo-700 transition-colors shadow-sm w-full sm:w-auto">Download Free PDF</button>

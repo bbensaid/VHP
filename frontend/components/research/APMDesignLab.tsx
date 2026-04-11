@@ -60,8 +60,8 @@ function Label({
 }) {
   return (
     <div className="mb-1">
-      <span className="text-gray-300 text-sm font-medium">{children}</span>
-      {sub && <span className="ml-2 text-gray-500 text-xs">{sub}</span>}
+      <span className="text-slate-300 text-sm font-medium">{children}</span>
+      {sub && <span className="ml-2 text-slate-500 text-xs">{sub}</span>}
     </div>
   );
 }
@@ -102,7 +102,7 @@ function SliderField({
         onChange={(e) => onChange(Number(e.target.value))}
         className="w-full h-1.5 bg-gray-700 rounded-full appearance-none cursor-pointer accent-emerald-500"
       />
-      <div className="flex justify-between text-gray-600 text-xs mt-0.5">
+      <div className="flex justify-between text-slate-600 text-xs mt-0.5">
         <span>{min}</span>
         <span>{max}</span>
       </div>
@@ -127,7 +127,7 @@ function SelectField({
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full bg-gray-800 border border-gray-600 text-gray-200 text-sm rounded-lg px-3 py-2 focus:outline-none focus:border-emerald-500"
+        className="w-full bg-gray-800 border border-gray-600 text-slate-200 text-sm rounded-lg px-3 py-2 focus:outline-none focus:border-emerald-500"
       >
         {options.map((o) => (
           <option key={o.value} value={o.value}>
@@ -154,17 +154,17 @@ function StatBox({
 }) {
   const color =
     neutral
-      ? "text-gray-200"
+      ? "text-slate-200"
       : positive === true
       ? "text-emerald-400"
       : "text-red-400";
   return (
     <div className="bg-gray-800 border border-gray-700 rounded-lg p-4">
-      <div className="text-gray-400 text-xs uppercase tracking-wide mb-1">
+      <div className="text-slate-400 text-xs uppercase tracking-wide mb-1">
         {label}
       </div>
       <div className={`text-xl font-bold font-mono ${color}`}>{value}</div>
-      {sub && <div className="text-gray-500 text-xs mt-1">{sub}</div>}
+      {sub && <div className="text-slate-500 text-xs mt-1">{sub}</div>}
     </div>
   );
 }
@@ -204,7 +204,7 @@ function ViabilityBadge({
           Model Viability: {cfg.label}
         </span>
       </div>
-      <p className="text-gray-300 text-sm">{reason}</p>
+      <p className="text-slate-300 text-sm">{reason}</p>
     </div>
   );
 }
@@ -612,7 +612,7 @@ function APMArchitectureDesigner() {
 
           {/* Waterfall Chart */}
           <div className="mb-5">
-            <h4 className="text-gray-400 text-xs uppercase tracking-wide mb-3">
+            <h4 className="text-slate-400 text-xs uppercase tracking-wide mb-3">
               Financial Waterfall
             </h4>
             <div className="space-y-2">
@@ -632,7 +632,7 @@ function APMArchitectureDesigner() {
                     : "bg-yellow-500";
                 return (
                   <div key={i}>
-                    <div className="flex justify-between text-xs text-gray-400 mb-0.5">
+                    <div className="flex justify-between text-xs text-slate-400 mb-0.5">
                       <span>{step.label}</span>
                       <span
                         className={
@@ -707,10 +707,10 @@ function APMArchitectureDesigner() {
                   <AlertTriangle className="w-4 h-4 text-yellow-400 mt-0.5 shrink-0" />
                 )}
                 <div>
-                  <div className="text-gray-200 text-sm font-medium">
+                  <div className="text-slate-200 text-sm font-medium">
                     {flag.label}
                   </div>
-                  <div className="text-gray-400 text-xs">{flag.note}</div>
+                  <div className="text-slate-400 text-xs">{flag.note}</div>
                 </div>
               </div>
             ))}
@@ -901,7 +901,7 @@ function EpisodeDesigner() {
                   className={`flex-1 py-2 rounded-lg text-sm font-medium transition-colors ${
                     duration === d
                       ? "bg-emerald-600 text-white"
-                      : "bg-gray-800 text-gray-400 hover:bg-gray-700"
+                      : "bg-gray-800 text-slate-400 hover:bg-gray-700"
                   }`}
                 >
                   {d}d
@@ -924,8 +924,8 @@ function EpisodeDesigner() {
                     onChange={() => toggleService(s.id)}
                     className="accent-emerald-500"
                   />
-                  <span className="text-gray-300 text-xs">{s.label}</span>
-                  <span className="text-gray-500 text-xs ml-auto">
+                  <span className="text-slate-300 text-xs">{s.label}</span>
+                  <span className="text-slate-500 text-xs ml-auto">
                     {(s.pct * 100).toFixed(0)}%
                   </span>
                 </label>
@@ -984,7 +984,7 @@ function EpisodeDesigner() {
                 onChange={(v) => setPhysicianPct(Math.min(v, 100 - hospitalPct))}
                 display={`${Math.min(physicianPct, 100 - hospitalPct)}%`}
               />
-              <div className="flex justify-between text-xs text-gray-400 bg-gray-800 rounded-lg px-3 py-2">
+              <div className="flex justify-between text-xs text-slate-400 bg-gray-800 rounded-lg px-3 py-2">
                 <span>Reinvestment (auto)</span>
                 <span className="text-emerald-400 font-mono">
                   {results.reinvestPct}%
@@ -1048,7 +1048,7 @@ function EpisodeDesigner() {
                   },
                 ].map((row) => (
                   <div key={row.label} className="flex items-center gap-3">
-                    <span className="text-gray-300 text-sm w-28">{row.label}</span>
+                    <span className="text-slate-300 text-sm w-28">{row.label}</span>
                     <div className="flex-1 bg-gray-800 rounded-full h-2.5">
                       <div
                         className="bg-emerald-500 h-2.5 rounded-full"
@@ -1070,7 +1070,7 @@ function EpisodeDesigner() {
                   Loss Sharing Triggered
                 </span>
               </div>
-              <p className="text-gray-300 text-sm">
+              <p className="text-slate-300 text-sm">
                 Episodes exceeded target by{" "}
                 <span className="text-red-400 font-mono">
                   {fmtUSD(Math.abs(results.variance))}
@@ -1093,11 +1093,11 @@ function EpisodeDesigner() {
                   : 0;
               return (
                 <div key={s.label}>
-                  <div className="flex justify-between text-xs text-gray-400 mb-0.5">
+                  <div className="flex justify-between text-xs text-slate-400 mb-0.5">
                     <span>{s.label}</span>
-                    <span className="text-gray-200">
+                    <span className="text-slate-200">
                       {fmtUSD(s.amount)}{" "}
-                      <span className="text-gray-500">
+                      <span className="text-slate-500">
                         ({(s.pct * 100).toFixed(0)}%)
                       </span>
                     </span>
@@ -1271,7 +1271,7 @@ function GlobalBudgetSimulator() {
                 }`}
               />
             </button>
-            <span className="text-gray-300 text-sm">
+            <span className="text-slate-300 text-sm">
               Apply SDOH Investment Offset
             </span>
           </div>
@@ -1288,14 +1288,14 @@ function GlobalBudgetSimulator() {
           )}
           <div className="bg-gray-800 rounded-lg p-3">
             <div className="flex justify-between text-sm">
-              <span className="text-gray-400">Composite Unconstrained Trend</span>
+              <span className="text-slate-400">Composite Unconstrained Trend</span>
               <span className="text-yellow-400 font-mono">
                 {results.compositeTrend.toFixed(2)}%
               </span>
             </div>
             {applySDOH && (
               <div className="flex justify-between text-sm mt-1">
-                <span className="text-gray-400">Effective Trend (post-SDOH)</span>
+                <span className="text-slate-400">Effective Trend (post-SDOH)</span>
                 <span className="text-emerald-400 font-mono">
                   {results.effectiveTrend.toFixed(2)}%
                 </span>
@@ -1323,7 +1323,7 @@ function GlobalBudgetSimulator() {
                   }`}
                 >
                   <div className="flex justify-between items-center mb-3">
-                    <span className="text-gray-200 font-bold text-sm">
+                    <span className="text-slate-200 font-bold text-sm">
                       {yr.year}
                     </span>
                     {isUnsustainable && (
@@ -1341,32 +1341,32 @@ function GlobalBudgetSimulator() {
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-xs mb-3">
                     <div>
-                      <div className="text-gray-500">Capped Budget</div>
+                      <div className="text-slate-500">Capped Budget</div>
                       <div className="text-emerald-400 font-mono">
                         {fmtUSD(yr.cappedBudget)}
                       </div>
                     </div>
                     <div>
-                      <div className="text-gray-500">Unconstrained Spend</div>
+                      <div className="text-slate-500">Unconstrained Spend</div>
                       <div className="text-yellow-400 font-mono">
                         {fmtUSD(yr.unconstrainedSpend)}
                       </div>
                     </div>
                     <div>
-                      <div className="text-gray-500">Cumulative Savings</div>
-                      <div className="text-gray-200 font-mono">
+                      <div className="text-slate-500">Cumulative Savings</div>
+                      <div className="text-slate-200 font-mono">
                         {fmtUSD(yr.cumulativeSavings)}
                       </div>
                     </div>
                     <div>
-                      <div className="text-gray-500">Required Efficiency</div>
+                      <div className="text-slate-500">Required Efficiency</div>
                       <div
                         className={`font-mono ${
                           isUnsustainable
                             ? "text-red-400"
                             : isWarning
                             ? "text-yellow-400"
-                            : "text-gray-200"
+                            : "text-slate-200"
                         }`}
                       >
                         {yr.requiredEfficiency.toFixed(1)}%
@@ -1376,7 +1376,7 @@ function GlobalBudgetSimulator() {
                   {/* Glide path bars */}
                   <div className="space-y-1.5">
                     <div>
-                      <div className="text-gray-500 text-xs mb-0.5">
+                      <div className="text-slate-500 text-xs mb-0.5">
                         Budget Cap
                       </div>
                       <div className="w-full bg-gray-900 rounded-full h-2">
@@ -1389,7 +1389,7 @@ function GlobalBudgetSimulator() {
                       </div>
                     </div>
                     <div>
-                      <div className="text-gray-500 text-xs mb-0.5">
+                      <div className="text-slate-500 text-xs mb-0.5">
                         Unconstrained
                       </div>
                       <div className="w-full bg-gray-900 rounded-full h-2">
@@ -1435,7 +1435,7 @@ function GlobalBudgetSimulator() {
                   <div className="text-red-400 text-sm font-bold mb-1">
                     Feasibility Warning
                   </div>
-                  <p className="text-gray-300 text-xs">
+                  <p className="text-slate-300 text-xs">
                     Year 5 requires{" "}
                     {results.projection[4].requiredEfficiency.toFixed(1)}%
                     efficiency improvement. Research suggests health systems can
@@ -1694,19 +1694,19 @@ function BenchmarkComparison() {
                   </div>
                   <div className="space-y-2 text-xs">
                     <div className="flex justify-between">
-                      <span className="text-gray-400">Benchmark PMPM</span>
-                      <span className="text-gray-200 font-mono">
+                      <span className="text-slate-400">Benchmark PMPM</span>
+                      <span className="text-slate-200 font-mono">
                         ${method.benchmarkPMPM.toFixed(2)}
                       </span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-400">Total Benchmark</span>
-                      <span className="text-gray-200 font-mono">
+                      <span className="text-slate-400">Total Benchmark</span>
+                      <span className="text-slate-200 font-mono">
                         {fmtUSD(method.totalBenchmark)}
                       </span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-400">Gross Savings</span>
+                      <span className="text-slate-400">Gross Savings</span>
                       <span
                         className={`font-mono ${
                           method.grossSavings >= 0
@@ -1718,7 +1718,7 @@ function BenchmarkComparison() {
                       </span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-400">Net Position</span>
+                      <span className="text-slate-400">Net Position</span>
                       <span
                         className={`font-mono ${
                           method.grossSavingsPct >= 0
@@ -1730,7 +1730,7 @@ function BenchmarkComparison() {
                       </span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-gray-400">MSR Met</span>
+                      <span className="text-slate-400">MSR Met</span>
                       <span>
                         {method.msrMet ? (
                           <CheckCircle className="w-4 h-4 text-emerald-400 inline" />
@@ -1740,7 +1740,7 @@ function BenchmarkComparison() {
                       </span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-400">Shared Savings</span>
+                      <span className="text-slate-400">Shared Savings</span>
                       <span
                         className={`font-mono font-bold ${colors.text}`}
                       >
@@ -1770,7 +1770,7 @@ function BenchmarkComparison() {
                 <h4 className="text-emerald-400 font-bold text-sm mb-2">
                   Methodology Recommendation
                 </h4>
-                <p className="text-gray-300 text-sm">{results.recommendation}</p>
+                <p className="text-slate-300 text-sm">{results.recommendation}</p>
                 <div className="mt-3 flex items-center gap-2">
                   <ArrowRight className="w-4 h-4 text-emerald-400" />
                   <span className="text-emerald-300 text-sm font-medium">
@@ -1789,10 +1789,10 @@ function BenchmarkComparison() {
 
           {/* Actual Spend Reference */}
           <div className="bg-gray-800 border border-gray-700 rounded-xl p-4">
-            <div className="text-gray-400 text-xs uppercase tracking-wide mb-2">
+            <div className="text-slate-400 text-xs uppercase tracking-wide mb-2">
               Actual Total Spending (All Methods)
             </div>
-            <div className="text-2xl font-bold font-mono text-gray-200">
+            <div className="text-2xl font-bold font-mono text-slate-200">
               {fmtUSD(results.totalActual)}
             </div>
           </div>
@@ -1832,7 +1832,7 @@ export default function APMDesignLab() {
   const [activeTab, setActiveTab] = useState("architect");
 
   return (
-    <div className="bg-gray-950 text-gray-100 rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
+    <div className="bg-gray-950 text-slate-100 rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
       {/* Header */}
       <div className="bg-gradient-to-r from-gray-900 to-gray-950 border-b border-gray-800 px-6 py-5">
         <div className="flex items-center gap-3 mb-1">
@@ -1842,7 +1842,7 @@ export default function APMDesignLab() {
             Advanced
           </span>
         </div>
-        <p className="text-gray-400 text-sm">
+        <p className="text-slate-400 text-sm">
           Design, model, and stress-test Alternative Payment Model structures
           with real financial logic
         </p>
@@ -1861,7 +1861,7 @@ export default function APMDesignLab() {
                 className={`flex items-center gap-2 px-5 py-3.5 text-sm font-medium border-b-2 transition-colors whitespace-nowrap ${
                   isActive
                     ? "border-emerald-500 text-emerald-400 bg-gray-950/50"
-                    : "border-transparent text-gray-400 hover:text-gray-200 hover:bg-gray-800/50"
+                    : "border-transparent text-slate-400 hover:text-slate-200 hover:bg-gray-800/50"
                 }`}
               >
                 <Icon className="w-4 h-4" />
@@ -1883,7 +1883,7 @@ export default function APMDesignLab() {
 
       {/* Footer */}
       <div className="border-t border-gray-800 px-6 py-3 bg-gray-900/50">
-        <p className="text-gray-600 text-xs">
+        <p className="text-slate-600 text-xs">
           APM Design Lab — All calculations are illustrative and for analytical
           purposes only. Financial projections depend on actual contract terms,
           risk corridors, and CMS regulatory guidance.

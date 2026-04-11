@@ -45,7 +45,7 @@ export default function ConnectEarlyAccess({
             HTR Connect · Early Access
           </span>
           <div className="text-6xl mb-4">{icon}</div>
-          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">{title}</h1>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black mb-4 tracking-tight">{title}</h1>
           <p className="text-lg text-teal-100 max-w-2xl mx-auto leading-relaxed">{subtitle}</p>
         </div>
       </div>
@@ -59,14 +59,14 @@ export default function ConnectEarlyAccess({
 
             {/* What you get */}
             <div>
-              <h2 className="text-xl font-black text-slate-900 mb-5">What This Gives You</h2>
+              <h2 className="text-lg md:text-xl font-black text-slate-900 mb-5">What This Gives You</h2>
               <div className="space-y-4">
                 {features.map((f, i) => (
                   <div key={i} className="flex items-start gap-4 p-4 rounded-xl border border-slate-100 bg-slate-50">
                     <span className="text-2xl shrink-0">{f.icon}</span>
                     <div>
                       <h3 className="font-black text-slate-900 text-sm mb-0.5">{f.title}</h3>
-                      <p className="text-slate-600 text-sm leading-relaxed">{f.description}</p>
+                      <p className="text-slate-600 text-sm md:text-base leading-relaxed">{f.description}</p>
                     </div>
                   </div>
                 ))}
@@ -75,7 +75,7 @@ export default function ConnectEarlyAccess({
 
             {/* How it works */}
             <div>
-              <h2 className="text-xl font-black text-slate-900 mb-5">How It Works</h2>
+              <h2 className="text-lg md:text-xl font-black text-slate-900 mb-5">How It Works</h2>
               <div className="space-y-4">
                 {steps.map((s) => (
                   <div key={s.step} className="flex gap-4">
@@ -84,7 +84,7 @@ export default function ConnectEarlyAccess({
                     </div>
                     <div>
                       <h3 className="font-black text-slate-900 text-sm mb-0.5">{s.title}</h3>
-                      <p className="text-slate-600 text-sm leading-relaxed">{s.description}</p>
+                      <p className="text-slate-600 text-sm md:text-base leading-relaxed">{s.description}</p>
                     </div>
                   </div>
                 ))}

@@ -65,7 +65,7 @@ export default async function StateInitiativesPage({ params }: PageProps) {
                   {profile.stateAbbr}
                 </span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-4">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-4">
                 {profile.stateName}
               </h1>
               <p className="text-slate-600 text-base leading-relaxed max-w-2xl">{profile.summary}</p>
@@ -121,7 +121,7 @@ export default async function StateInitiativesPage({ params }: PageProps) {
               </div>
             </div>
 
-            <p className="text-sm text-slate-600 leading-relaxed mb-4">{initiative.description}</p>
+            <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-4">{initiative.description}</p>
 
             {/* Tags */}
             {initiative.tags.length > 0 && (

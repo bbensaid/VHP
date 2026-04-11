@@ -308,7 +308,7 @@ const components: PortableTextComponents = {
           )}
         </div>
         {value.analogy && (
-          <p className="relative z-10 text-xl text-slate-600 italic leading-9 font-medium mb-3">{value.analogy}</p>
+          <p className="relative z-10 text-base md:text-lg text-slate-600 italic leading-9 font-medium mb-3">{value.analogy}</p>
         )}
         {value.bridge && (
           <div className="flex items-start gap-2 mt-3 pt-3 border-t border-slate-200">

@@ -34,8 +34,8 @@ export default async function WebinarsPage() {
           <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
             Live Intelligence
           </span>
-          <h1 className="text-4xl font-black text-slate-900 mb-3">Webinars &amp; Roundtables</h1>
-          <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">Join live discussions with global leaders. Q&amp;A included in every session.</p>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">Webinars &amp; Roundtables</h1>
+          <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">Join live discussions with global leaders. Q&amp;A included in every session.</p>
         </div>
       </div>
 
@@ -45,26 +45,26 @@ export default async function WebinarsPage() {
             <div className="md:w-2/3">
               <div className="flex items-center gap-3 mb-4">
                 <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold uppercase inline-block">Next Up</span>
-                <span className="text-sm font-bold text-gray-500">{formatDate(featured.date)}</span>
+                <span className="text-sm font-bold text-slate-500">{formatDate(featured.date)}</span>
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">{featured.title}</h2>
-              <p className="text-gray-600 mb-6 text-lg">{featured.description}</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">{featured.title}</h2>
+              <p className="text-slate-600 mb-6 text-lg">{featured.description}</p>
               <div className="flex gap-4">
                 <button className="px-6 py-3 bg-indigo-600 text-white font-bold rounded hover:bg-indigo-700 shadow-md transition-all">Register Free</button>
-                <button className="px-6 py-3 border border-gray-300 font-bold rounded hover:bg-gray-50 text-gray-700">Add to Calendar</button>
+                <button className="px-6 py-3 border border-gray-300 font-bold rounded hover:bg-gray-50 text-slate-700">Add to Calendar</button>
               </div>
             </div>
             <div className="md:w-1/3 bg-indigo-800 h-48 w-full rounded-lg flex items-center justify-center text-white/20 font-bold text-4xl border border-indigo-700">HTR</div>
           </div>
         ) : (
           <div className="bg-white p-12 rounded-xl border border-dashed border-gray-300 text-center mb-12">
-            <p className="text-gray-500 font-bold">No upcoming webinars scheduled.</p>
+            <p className="text-slate-500 font-bold">No upcoming webinars scheduled.</p>
           </div>
         )}
 
         {upcoming.length > 0 && (
           <>
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Upcoming Schedule</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mb-6">Upcoming Schedule</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {upcoming.map((webinar) => (
                 <AcademyCard key={webinar._id} type="WEBINAR" pillar={(webinar.pillar ?? "General") as "Policy" | "Economics" | "Technology" | "General"} title={webinar.title} description={webinar.description ?? ""} meta={formatDate(webinar.date)} price="Free" href={`/academy/webinars/${webinar.slug}`} />

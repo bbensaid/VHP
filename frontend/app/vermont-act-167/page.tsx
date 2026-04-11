@@ -90,10 +90,10 @@ export default function VermontAct167Page() {
             Enacted 2022
           </span>
         </div>
-        <h1 className="text-4xl font-black text-slate-900 mb-4 leading-tight">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-4 leading-tight">
           Vermont Act 167
         </h1>
-        <p className="text-xl text-slate-600 leading-relaxed max-w-3xl mb-6">
+        <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-3xl mb-6">
           Vermont's landmark hospital transformation law directing a comprehensive overhaul of
           the state's healthcare delivery system — including an all-payer model agreement
           with the federal government and value-based payment reform across all 14 Vermont hospitals.
@@ -120,12 +120,12 @@ export default function VermontAct167Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <div className="bg-white border border-slate-200 rounded-xl p-6">
             <h3 className="font-bold text-slate-900 mb-3">The Law</h3>
-            <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-4">
               Formally titled <em>"An Act Relating to Health Care Reform Initiatives, Data Collection,
               and Access to Home- and Community-Based Services,"</em> Act 167 was enacted in 2022
               (originating as S.285) and signed by Governor Phil Scott.
             </p>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <p className="text-sm md:text-base text-slate-600 leading-relaxed">
               It represents Vermont's most ambitious statutory framework for hospital transformation
               since the original All-Payer ACO Model, and directly underpins the state's entry into
               the federal <Link href="/ahead-model" className="text-violet-700 hover:text-violet-900 underline underline-offset-2">AHEAD Model</Link>.
@@ -133,7 +133,7 @@ export default function VermontAct167Page() {
           </div>
           <div className="bg-white border border-slate-200 rounded-xl p-6">
             <h3 className="font-bold text-slate-900 mb-3">Core Directives</h3>
-            <ul className="space-y-2 text-sm text-slate-600">
+            <ul className="space-y-2 text-sm md:text-base text-slate-600">
               {[
                 "Direct the Agency of Human Services (AHS) to negotiate a new All-Payer Model agreement with CMS",
                 "Direct the Green Mountain Care Board (GMCB) to develop value-based payment models for all Vermont hospitals",
@@ -191,13 +191,13 @@ export default function VermontAct167Page() {
               <h3 className="text-lg font-bold text-slate-900 mb-3">
                 Act 167 Community Engagement: Recommendations
               </h3>
-              <p className="text-sm text-slate-600 leading-relaxed mb-4">
+              <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-4">
                 Commissioned by the Green Mountain Care Board under a fixed-price $1,050,000 contract
                 (August 2023 – September 2024), this 144-page study — led by <strong>Bruce Hamory, MD</strong>,
                 a physician-consultant and partner at <strong>Oliver Wyman Group</strong> — represents the
                 most comprehensive external assessment of Vermont's hospital system ever undertaken.
               </p>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm md:text-base text-slate-600 leading-relaxed">
                 The report synthesized data from two rounds of community engagement involving hundreds
                 of interviews, public meetings across the state, and thousands of Vermonters — patients,
                 nurses, physicians, hospital administrators, and community advocates.
@@ -384,12 +384,12 @@ export default function VermontAct167Page() {
           </div>
           <div className="bg-white border border-slate-200 rounded-xl p-5">
             <h4 className="font-bold text-slate-900 mb-3">Oliver Wyman's Response</h4>
-            <p className="text-sm text-slate-600 leading-relaxed mb-3">
+            <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-3">
               On October 23, 2024, Bruce Hamory and Oliver Wyman publicly acknowledged and apologized
               for some data errors but maintained that the overall conclusions of the report remain valid
               and unchanged.
             </p>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <p className="text-sm md:text-base text-slate-600 leading-relaxed">
               GMCB Chair Owen Foster framed the report's recommendations as "options," not mandates,
               emphasizing that the board would work collaboratively with hospitals on the path forward.
             </p>
@@ -403,7 +403,7 @@ export default function VermontAct167Page() {
 
         <div className="bg-slate-50 border border-slate-200 rounded-xl p-5">
           <h4 className="font-bold text-slate-900 mb-2">Gifford's Position</h4>
-          <p className="text-sm text-slate-600 leading-relaxed">
+          <p className="text-sm md:text-base text-slate-600 leading-relaxed">
             Gifford Medical Center held a public community forum citing "broken trust" with the consultant
             and announced its intent to fight for its current service lines — particularly its birthing center —
             which Oliver Wyman had recommended for closure or consolidation.

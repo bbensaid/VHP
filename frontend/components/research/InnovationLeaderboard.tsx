@@ -281,7 +281,7 @@ function scoreBg(score: number): string {
 
 function MedalIcon({ rank }: { rank: number }) {
   if (rank === 1) return <Trophy className="w-5 h-5 text-yellow-400" />;
-  if (rank === 2) return <Medal className="w-5 h-5 text-gray-300" />;
+  if (rank === 2) return <Medal className="w-5 h-5 text-slate-300" />;
   if (rank === 3) return <Medal className="w-5 h-5 text-amber-600" />;
   return <span className="w-5 h-5 inline-flex items-center justify-center text-xs font-bold text-fuchsia-300">{rank}</span>;
 }
@@ -289,7 +289,7 @@ function MedalIcon({ rank }: { rank: number }) {
 function TrendArrow({ val }: { val: number }) {
   if (val > 0.5)  return <TrendingUp  className="w-4 h-4 text-emerald-400 inline" />;
   if (val < -0.1) return <TrendingDown className="w-4 h-4 text-red-400 inline" />;
-  return <Minus className="w-4 h-4 text-gray-400 inline" />;
+  return <Minus className="w-4 h-4 text-slate-400 inline" />;
 }
 
 function ScoreBar({ score, avg, color }: { score: number; avg: number; color: string }) {
@@ -431,24 +431,24 @@ function StateRankings() {
                       <span className="inline-block w-7 text-center text-xs bg-fuchsia-900/60 rounded px-1 mr-1.5 text-fuchsia-300">{s.abbr}</span>
                       {s.state}
                     </td>
-                    <td className="px-3 py-2.5 text-gray-400">{s.region}</td>
+                    <td className="px-3 py-2.5 text-slate-400">{s.region}</td>
                     <td className="px-3 py-2.5">
                       <span className={`font-bold text-base ${scoreColor(s.composite)}`}>{s.composite}</span>
                     </td>
-                    <td className="px-3 py-2.5 text-gray-300">{s.digitalMaturity}</td>
-                    <td className="px-3 py-2.5 text-gray-300">{s.valueBased}</td>
-                    <td className="px-3 py-2.5 text-gray-300">{s.sdohEquity}</td>
-                    <td className="px-3 py-2.5 text-gray-300">{s.clinicalExcellence}</td>
-                    <td className="px-3 py-2.5 text-gray-300">{s.patientExperience}</td>
-                    <td className="px-3 py-2.5 text-gray-300">{s.workforceWellness}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{s.digitalMaturity}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{s.valueBased}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{s.sdohEquity}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{s.clinicalExcellence}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{s.patientExperience}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{s.workforceWellness}</td>
                     <td className="px-3 py-2.5 text-emerald-400 text-xs font-medium">{top}</td>
                     <td className="px-3 py-2.5 text-orange-400 text-xs font-medium">{weakest}</td>
                     <td className="px-3 py-2.5">
-                      <span className={`text-xs font-semibold ${s.yearOverYear > 0 ? "text-emerald-400" : s.yearOverYear < 0 ? "text-red-400" : "text-gray-400"}`}>
+                      <span className={`text-xs font-semibold ${s.yearOverYear > 0 ? "text-emerald-400" : s.yearOverYear < 0 ? "text-red-400" : "text-slate-400"}`}>
                         {s.yearOverYear > 0 ? "+" : ""}{s.yearOverYear.toFixed(1)}
                       </span>
                     </td>
-                    <td className="px-3 py-2.5 text-gray-500">
+                    <td className="px-3 py-2.5 text-slate-500">
                       {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                     </td>
                   </tr>
@@ -466,14 +466,14 @@ function StateRankings() {
                           ].map(d => (
                             <div key={d.label}>
                               <div className="flex justify-between text-xs mb-1">
-                                <span className="text-gray-400">{d.label}</span>
-                                <span className={scoreColor(d.val)}>{d.val} <span className="text-gray-500">/ avg {d.avg}</span></span>
+                                <span className="text-slate-400">{d.label}</span>
+                                <span className={scoreColor(d.val)}>{d.val} <span className="text-slate-500">/ avg {d.avg}</span></span>
                               </div>
                               <ScoreBar score={d.val} avg={d.avg} color={scoreBg(d.val)} />
                             </div>
                           ))}
                         </div>
-                        <p className="text-xs text-gray-500 mt-3">White marker = national average. Weights: Digital 20%, VBC 15%, SDOH 20%, Clinical 20%, Patient Exp. 15%, Workforce 10%.</p>
+                        <p className="text-xs text-slate-500 mt-3">White marker = national average. Weights: Digital 20%, VBC 15%, SDOH 20%, Clinical 20%, Patient Exp. 15%, Workforce 10%.</p>
                       </td>
                     </tr>
                   )}
@@ -483,7 +483,7 @@ function StateRankings() {
           </tbody>
         </table>
       </div>
-      <p className="text-xs text-gray-500">Showing {filtered.length} of {STATES.length} states. | Last Updated: Q1 2025</p>
+      <p className="text-xs text-slate-500">Showing {filtered.length} of {STATES.length} states. | Last Updated: Q1 2025</p>
     </div>
   );
 }
@@ -596,25 +596,25 @@ function HospitalRankings() {
                   >
                     <td className="px-3 py-2.5"><MedalIcon rank={h.rank} /></td>
                     <td className="px-3 py-2.5 font-semibold text-white">{h.name}</td>
-                    <td className="px-3 py-2.5 text-gray-400">{h.state}</td>
+                    <td className="px-3 py-2.5 text-slate-400">{h.state}</td>
                     <td className="px-3 py-2.5">
                       <span className={`text-xs px-2 py-0.5 rounded-full ${typeBadgeColor[h.type]}`}>{h.type}</span>
                     </td>
                     <td className="px-3 py-2.5">
                       <span className={`font-bold text-base ${scoreColor(h.maturity)}`}>{h.maturity}</span>
                     </td>
-                    <td className="px-3 py-2.5 text-gray-300">{h.revenueRisk}%</td>
-                    <td className="px-3 py-2.5 text-gray-300">{h.acoApm}</td>
-                    <td className="px-3 py-2.5 text-gray-300">{h.qualityPerf}</td>
-                    <td className="px-3 py-2.5 text-gray-300">{h.dataAnalytics}</td>
-                    <td className="px-3 py-2.5 text-gray-300">{h.patientEngagement}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{h.revenueRisk}%</td>
+                    <td className="px-3 py-2.5 text-slate-300">{h.acoApm}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{h.qualityPerf}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{h.dataAnalytics}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{h.patientEngagement}</td>
                     <td className="px-3 py-2.5">
                       <TrendArrow val={h.trend} />
-                      <span className={`ml-1 text-xs ${h.trend > 0.5 ? "text-emerald-400" : h.trend < -0.1 ? "text-red-400" : "text-gray-400"}`}>
+                      <span className={`ml-1 text-xs ${h.trend > 0.5 ? "text-emerald-400" : h.trend < -0.1 ? "text-red-400" : "text-slate-400"}`}>
                         {h.trend > 0 ? "+" : ""}{h.trend.toFixed(1)}
                       </span>
                     </td>
-                    <td className="px-3 py-2.5 text-gray-500">
+                    <td className="px-3 py-2.5 text-slate-500">
                       {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                     </td>
                   </tr>
@@ -631,14 +631,14 @@ function HospitalRankings() {
                           ].map(d => (
                             <div key={d.label}>
                               <div className="flex justify-between text-xs mb-1">
-                                <span className="text-gray-400">{d.label}</span>
-                                <span className={scoreColor(d.val)}>{d.val} <span className="text-gray-500">/ avg {d.avg}</span></span>
+                                <span className="text-slate-400">{d.label}</span>
+                                <span className={scoreColor(d.val)}>{d.val} <span className="text-slate-500">/ avg {d.avg}</span></span>
                               </div>
                               <ScoreBar score={d.val} avg={d.avg} color={scoreBg(d.val)} />
                             </div>
                           ))}
                         </div>
-                        <p className="text-xs text-gray-500 mt-3">White marker = peer average. VBC Maturity Index assesses transition from fee-for-service to value-based models across 5 dimensions.</p>
+                        <p className="text-xs text-slate-500 mt-3">White marker = peer average. VBC Maturity Index assesses transition from fee-for-service to value-based models across 5 dimensions.</p>
                       </td>
                     </tr>
                   )}
@@ -648,7 +648,7 @@ function HospitalRankings() {
           </tbody>
         </table>
       </div>
-      <p className="text-xs text-gray-500">Showing {filtered.length} of {HOSPITALS.length} health systems. | Last Updated: Q1 2025</p>
+      <p className="text-xs text-slate-500">Showing {filtered.length} of {HOSPITALS.length} health systems. | Last Updated: Q1 2025</p>
     </div>
   );
 }
@@ -772,18 +772,18 @@ function PayerRankings() {
                     <td className="px-3 py-2.5">
                       <span className={`font-bold text-base ${scoreColor(p.innovationScore)}`}>{p.innovationScore}</span>
                     </td>
-                    <td className="px-3 py-2.5 text-gray-300">{p.apmPaymentPct}%</td>
-                    <td className="px-3 py-2.5 text-gray-300">{p.apmModelTypes}/10</td>
-                    <td className="px-3 py-2.5 text-gray-300">{p.qualityMetrics}</td>
-                    <td className="px-3 py-2.5 text-gray-300">{p.sdohInvestment}</td>
-                    <td className="px-3 py-2.5 text-gray-300">{p.dataSharing}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{p.apmPaymentPct}%</td>
+                    <td className="px-3 py-2.5 text-slate-300">{p.apmModelTypes}/10</td>
+                    <td className="px-3 py-2.5 text-slate-300">{p.qualityMetrics}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{p.sdohInvestment}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{p.dataSharing}</td>
                     <td className="px-3 py-2.5">
                       <TrendArrow val={p.trend} />
-                      <span className={`ml-1 text-xs ${p.trend > 0.5 ? "text-emerald-400" : p.trend < -0.1 ? "text-red-400" : "text-gray-400"}`}>
+                      <span className={`ml-1 text-xs ${p.trend > 0.5 ? "text-emerald-400" : p.trend < -0.1 ? "text-red-400" : "text-slate-400"}`}>
                         {p.trend > 0 ? "+" : ""}{p.trend.toFixed(1)}
                       </span>
                     </td>
-                    <td className="px-3 py-2.5 text-gray-500">
+                    <td className="px-3 py-2.5 text-slate-500">
                       {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                     </td>
                   </tr>
@@ -800,14 +800,14 @@ function PayerRankings() {
                           ].map(d => (
                             <div key={d.label}>
                               <div className="flex justify-between text-xs mb-1">
-                                <span className="text-gray-400">{d.label}</span>
-                                <span className={scoreColor(d.val)}>{d.label.includes("APM Model") ? `${p.apmModelTypes}/10` : d.val} <span className="text-gray-500">/ avg {d.label.includes("APM Model") ? `${PAYER_AVG.apmModelTypes}/10` : d.avg}</span></span>
+                                <span className="text-slate-400">{d.label}</span>
+                                <span className={scoreColor(d.val)}>{d.label.includes("APM Model") ? `${p.apmModelTypes}/10` : d.val} <span className="text-slate-500">/ avg {d.label.includes("APM Model") ? `${PAYER_AVG.apmModelTypes}/10` : d.avg}</span></span>
                               </div>
                               <ScoreBar score={d.val} avg={d.avg} color={scoreBg(d.val)} />
                             </div>
                           ))}
                         </div>
-                        <p className="text-xs text-gray-500 mt-3">White marker = peer average. Innovation Index measures aggressiveness of APM portfolio and commitment to value-based payment reform.</p>
+                        <p className="text-xs text-slate-500 mt-3">White marker = peer average. Innovation Index measures aggressiveness of APM portfolio and commitment to value-based payment reform.</p>
                       </td>
                     </tr>
                   )}
@@ -817,7 +817,7 @@ function PayerRankings() {
           </tbody>
         </table>
       </div>
-      <p className="text-xs text-gray-500">Showing {filtered.length} of {PAYERS.length} payers. | Last Updated: Q1 2025</p>
+      <p className="text-xs text-slate-500">Showing {filtered.length} of {PAYERS.length} payers. | Last Updated: Q1 2025</p>
     </div>
   );
 }
@@ -868,18 +868,18 @@ export default function InnovationLeaderboard() {
                 </div>
                 <h1 className="text-2xl font-bold text-white">Innovation Leaderboard &amp; Benchmarks</h1>
               </div>
-              <p className="text-gray-400 text-sm max-w-2xl">
+              <p className="text-slate-400 text-sm max-w-2xl">
                 Comprehensive rankings of healthcare transformation performance across states, health systems, and payers.
                 Data reflects 2024 performance with Q1 2025 updates.
               </p>
             </div>
-            <div className="flex items-center gap-3 text-xs text-gray-400">
+            <div className="flex items-center gap-3 text-xs text-slate-400">
               <span className="px-2.5 py-1 rounded-full bg-fuchsia-900/40 border border-fuchsia-700/30 text-fuchsia-300">
                 Last Updated: Q1 2025
               </span>
               <button
                 onClick={() => setShowMethodology(v => !v)}
-                className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-gray-800 border border-gray-700/40 text-gray-400 hover:text-white transition-colors"
+                className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-gray-800 border border-gray-700/40 text-slate-400 hover:text-white transition-colors"
               >
                 <Info className="w-3.5 h-3.5" /> Methodology
               </button>
@@ -888,7 +888,7 @@ export default function InnovationLeaderboard() {
 
           {/* Methodology panel */}
           {showMethodology && (
-            <div className="mt-4 p-4 bg-gray-900/80 rounded-xl border border-fuchsia-800/30 text-sm text-gray-300 leading-relaxed">
+            <div className="mt-4 p-4 bg-gray-900/80 rounded-xl border border-fuchsia-800/30 text-sm text-slate-300 leading-relaxed">
               <p className="font-semibold text-fuchsia-300 mb-2">Scoring Methodology</p>
               <p className="mb-2">
                 <strong className="text-white">State HTI Composite:</strong> Weighted average of six domain scores (0–100 each):
@@ -919,7 +919,7 @@ export default function InnovationLeaderboard() {
               <div key={c.label} className="flex items-center gap-3 bg-gray-900/60 rounded-xl px-4 py-3 border border-fuchsia-800/20">
                 <div className="p-1.5 bg-fuchsia-900/40 rounded-lg">{c.icon}</div>
                 <div className="min-w-0">
-                  <p className="text-xs text-gray-500 mb-0.5">{c.label}</p>
+                  <p className="text-xs text-slate-500 mb-0.5">{c.label}</p>
                   <p className="text-sm font-semibold text-white truncate">{c.val}</p>
                 </div>
                 <div className="ml-auto">
@@ -942,7 +942,7 @@ export default function InnovationLeaderboard() {
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all ${
                 activeTab === tab.id
                   ? "bg-fuchsia-700 text-white shadow-lg shadow-fuchsia-900/40"
-                  : "bg-gray-800/60 text-gray-400 hover:text-white hover:bg-gray-800 border border-gray-700/40"
+                  : "bg-gray-800/60 text-slate-400 hover:text-white hover:bg-gray-800 border border-gray-700/40"
               }`}
             >
               {tab.icon}
@@ -952,7 +952,7 @@ export default function InnovationLeaderboard() {
         </div>
 
         {/* Tab description */}
-        <div className="flex items-center gap-2 mb-4 text-xs text-gray-400">
+        <div className="flex items-center gap-2 mb-4 text-xs text-slate-400">
           <BarChart2 className="w-3.5 h-3.5 text-fuchsia-400" />
           {TABS.find(t => t.id === activeTab)?.description}
         </div>

@@ -187,7 +187,7 @@ export default function TickerStrip({
                 <span className="text-xs font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 block mb-1">
                   {selectedItem.type === "bed" ? "Vermont Hospital · Bed Availability" : "System Vital"}
                 </span>
-                <h3 className="text-xl font-black text-slate-900 dark:text-slate-100">
+                <h3 className="text-lg md:text-xl font-black text-slate-900 dark:text-slate-100">
                   {selectedItem.label}
                 </h3>
               </div>
@@ -207,7 +207,7 @@ export default function TickerStrip({
                 )}
               </div>
 
-              <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-4 border border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-4 border border-slate-100 dark:border-slate-700 text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
                 {selectedItem.type === "bed" ? (
                   <p>
                     <strong>{selectedItem.label}</strong> currently has{" "}

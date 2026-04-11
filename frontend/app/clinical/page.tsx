@@ -42,10 +42,10 @@ export default function Page() {
         <span className="text-sm font-bold text-rose-600 uppercase tracking-wider">
           Clinical Innovation
         </span>
-        <h1 className="text-4xl font-black text-slate-900 mt-2 mb-4">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mt-2 mb-4">
           Clinical Hub
         </h1>
-        <p className="text-xl text-slate-600 max-w-3xl">
+        <p className="text-base md:text-lg text-slate-600 max-w-3xl">
           Advancing care delivery through innovation, precision, and new care models.
         </p>
       </div>
@@ -54,7 +54,7 @@ export default function Page() {
         {topics.map((item) => (
           <Link key={item.label} href={item.href} className="group flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-rose-400 hover:bg-rose-50/80">
             <div>
-              <h3 className="font-bold text-slate-900 text-lg mb-2 group-hover:text-rose-600 transition-colors">{item.label}</h3>
+              <h3 className="font-bold text-slate-900 text-base mb-2 group-hover:text-rose-600 transition-colors">{item.label}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">{item.description}</p>
             </div>
             <div className="mt-auto pt-4 space-y-2 border-t border-slate-100">

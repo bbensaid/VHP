@@ -402,7 +402,7 @@ function SelectRow({
 }) {
   return (
     <div className="mb-4">
-      <label className="block text-sm text-slate-600 mb-1">{label}</label>
+      <label className="block text-sm md:text-base text-slate-600 mb-1">{label}</label>
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
@@ -1477,7 +1477,7 @@ function ExpansionTab() {
             onChange={setPrimaryState}
           />
           <div>
-            <label className="block text-sm text-slate-600 mb-1">
+            <label className="block text-sm md:text-base text-slate-600 mb-1">
               Expansion Type
             </label>
             <div className="flex gap-2">
@@ -1767,7 +1767,7 @@ function TransparencyTab() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
             <div className="mb-4">
-              <label className="block text-sm text-slate-600 mb-1">
+              <label className="block text-sm md:text-base text-slate-600 mb-1">
                 Hospital / Health System Name
               </label>
               <input
@@ -1907,7 +1907,7 @@ function TransparencyTab() {
               format={(v) => v.toLocaleString()}
             />
             <div className="mb-4">
-              <label className="block text-sm text-slate-600 mb-2">
+              <label className="block text-sm md:text-base text-slate-600 mb-2">
                 Current Setting
               </label>
               <div className="grid grid-cols-3 gap-2">
@@ -2170,7 +2170,7 @@ export default function PolicySimulator() {
               <Activity size={22} />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-slate-900 leading-tight">
+              <h1 className="text-lg md:text-xl font-bold text-slate-900 leading-tight">
                 Medicaid & State Health Policy Simulator
               </h1>
               <p className="text-sm text-slate-500 mt-0.5">

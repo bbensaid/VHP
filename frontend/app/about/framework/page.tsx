@@ -172,10 +172,10 @@ export default function FrameworkPage() {
             <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-indigo-100 mb-6 border border-indigo-500 bg-indigo-600/40 px-4 py-1.5 rounded-full">
               Our Analytical Framework
             </span>
-            <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight mb-5">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight leading-tight mb-5">
               Six questions. <span className="text-indigo-400">Zero shortcuts.</span>
             </h1>
-            <p className="text-base text-slate-300 max-w-2xl leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-slate-300 max-w-2xl leading-relaxed mb-4">
               Every analysis HTR publishes must survive interrogation across six dimensions before it reaches you. A recommendation that passes five out of six is not published — because five out of six is how healthcare gets it wrong.
             </p>
             <p className="text-sm text-slate-400 max-w-2xl leading-relaxed">
@@ -243,10 +243,10 @@ export default function FrameworkPage() {
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
               Why Five Out of Six Is Not Enough
             </span>
-            <h2 className="text-4xl font-black tracking-tight text-slate-900 mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-4">
               The failure modes the framework prevents.
             </h2>
-            <p className="text-xl text-slate-500 max-w-3xl">
+            <p className="text-base md:text-lg text-slate-500 max-w-3xl">
               These are not hypothetical scenarios. They are the recurring failure patterns that have defined American healthcare transformation for the past 30 years — and that the six-question standard is specifically designed to catch before they become policy.
             </p>
           </div>
@@ -254,7 +254,7 @@ export default function FrameworkPage() {
             {failureModes.map((f) => (
               <div key={f.title} className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
                 <h3 className="font-black text-slate-900 text-base mb-3">{f.title}</h3>
-                <p className="text-sm text-slate-600 leading-relaxed mb-4">{f.desc}</p>
+                <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-4">{f.desc}</p>
                 <div className="flex flex-wrap gap-2">
                   {f.pillars.map((tag) => (
                     <span
@@ -277,10 +277,10 @@ export default function FrameworkPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-black tracking-tight text-slate-900 mb-4">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-4">
           See the framework applied.
         </h2>
-        <p className="text-lg text-slate-500 mb-8 max-w-xl mx-auto">
+        <p className="text-base md:text-lg text-slate-500 mb-8 max-w-xl mx-auto">
           Browse our pillar hubs to see how Policy, Economics, Technology, Clinical, Equity, and Operations intersect on the issues shaping healthcare today.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">

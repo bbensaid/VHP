@@ -134,7 +134,7 @@ function PeerCohortsPanel() {
                 <span className="text-xs text-slate-500 font-semibold">{c.seats} capacity</span>
               </div>
             </div>
-            <p className="text-slate-600 text-sm leading-relaxed mb-3">{c.description}</p>
+            <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-3">{c.description}</p>
             <div className="text-xs text-slate-500 font-semibold border-t border-slate-200 pt-2">
               {c.schedule}
             </div>
@@ -145,7 +145,7 @@ function PeerCohortsPanel() {
       <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
         <div className="flex-1">
           <h3 className="font-black text-slate-900 text-lg mb-1">Apply for Cohort Membership</h3>
-          <p className="text-slate-600 text-sm leading-relaxed">
+          <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Cohorts maintain 10–25 members per group to preserve candor. New applications are
             reviewed each quarter. HTR reserves the right to decline competing organizations within
             the same cohort.
@@ -279,7 +279,7 @@ function OfficeHoursPanel() {
                   </span>
                 </div>
                 <p className="text-xs font-bold text-teal-700 mb-2">{s.frequency}</p>
-                <p className="text-slate-600 text-sm leading-relaxed mb-2">{s.description}</p>
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-2">{s.description}</p>
                 <p className="text-xs text-slate-500">
                   <span className="font-semibold">Best for:</span> {s.audience}
                 </p>
@@ -464,7 +464,7 @@ function ToolkitsPanel() {
                 </div>
               </div>
             </div>
-            <p className="text-slate-600 text-sm leading-relaxed mb-3">{t.description}</p>
+            <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-3">{t.description}</p>
             <Link
               href="/connect/toolkits"
               className={`inline-flex items-center gap-1.5 text-xs font-black ${t.accentText} hover:underline`}
@@ -478,7 +478,7 @@ function ToolkitsPanel() {
       <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
         <div className="flex-1">
           <h3 className="font-black text-slate-900 text-lg mb-1">Need a Custom Toolkit?</h3>
-          <p className="text-slate-600 text-sm leading-relaxed">
+          <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             HTR can develop organization-specific toolkits grounded in your data, contract
             structures, and operating environment. Custom toolkit development is scoped as a
             lightweight advisory engagement.
@@ -638,7 +638,7 @@ function GrantFinderPanel() {
                   </span>
                 </div>
                 <p className="text-xs font-semibold text-slate-500 mb-3">{g.agency}</p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm text-slate-600 mb-3">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm md:text-base text-slate-600 mb-3">
                   <div>
                     <span className="font-bold text-slate-700 block text-xs uppercase tracking-wide mb-0.5">Amount</span>
                     {g.amount}
@@ -671,7 +671,7 @@ function GrantFinderPanel() {
       <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
         <div className="flex-1">
           <h3 className="font-black text-slate-900 text-lg mb-1">Subscribe to Funding Alerts</h3>
-          <p className="text-slate-600 text-sm leading-relaxed">
+          <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Receive email notifications when new funding opportunities are added that match your
             organization type and pillar interests. HTR also offers grant application support as a
             scoped advisory engagement.
@@ -803,7 +803,7 @@ function ForumsPanel() {
               </div>
               <div className="flex-1">
                 <h3 className={`font-black text-lg ${f.accentText} mb-1`}>{f.name}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed mb-3">{f.description}</p>
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-3">{f.description}</p>
                 <p className="text-xs text-slate-500 italic mb-3">{f.topicExample}</p>
                 <div className="flex flex-wrap gap-3">
                   <span className={`text-xs font-bold px-3 py-1 rounded-full ${f.statCls}`}>
@@ -894,7 +894,7 @@ function AskHTRPanel() {
 
       <div className="bg-white border-2 border-teal-200 rounded-2xl p-6">
         <h3 className="font-black text-slate-900 text-lg mb-2">Submit a Question</h3>
-        <p className="text-slate-600 text-sm mb-4">
+        <p className="text-slate-600 text-sm md:text-base mb-4">
           Questions can be submitted by Connect members. If your question involves confidential
           organizational data, mark it as private — it will be answered but not added to the public
           library.
