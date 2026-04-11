@@ -79,7 +79,7 @@ export default function LabPageShell({
               Research Lab
             </span>
             <h1 className="text-3xl font-black text-slate-900 mb-2">{label}</h1>
-            <p className="text-slate-500 text-sm max-w-2xl leading-relaxed">{desc}</p>
+            <p className="text-slate-500 text-sm md:text-base max-w-2xl leading-relaxed">{desc}</p>
           </div>
         </div>
       </div>

@@ -87,13 +87,13 @@ export default function CaliforniaCalAIMPage() {
             $6.7B Federal Investment
           </span>
         </div>
-        <h1 className="text-4xl font-black text-slate-900 mb-2 leading-tight">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-2 leading-tight">
           CalAIM
         </h1>
         <p className="text-lg font-bold text-teal-700 mb-4">
           California Advancing and Innovating Medi-Cal
         </p>
-        <p className="text-xl text-slate-600 leading-relaxed max-w-3xl mb-6">
+        <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-3xl mb-6">
           The most ambitious Medicaid transformation in California history — a whole-person care
           model that dismantles the wall between medical and social services, directing the largest
           state Medicaid program in the nation to address housing, nutrition, behavioral health,
@@ -138,13 +138,13 @@ export default function CaliforniaCalAIMPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <div className="bg-white border border-slate-200 rounded-xl p-6">
             <h3 className="font-bold text-slate-900 mb-3">The Problem CalAIM Addresses</h3>
-            <p className="text-sm text-slate-600 leading-relaxed mb-3">
+            <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-3">
               For decades, California's Medi-Cal program paid for sick care but could not pay for
               the conditions that make people sick in the first place. A person experiencing
               homelessness could receive an ER visit but not a housing navigation service. A patient
               with diabetes could get insulin but not a meal delivery program.
             </p>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <p className="text-sm md:text-base text-slate-600 leading-relaxed">
               CalAIM breaks that wall. For the first time in California's Medicaid history, managed
               care plans can now pay for <strong>non-medical services</strong> — housing, nutrition,
               transportation, environmental modifications, and more — as covered Medi-Cal benefits
@@ -153,13 +153,13 @@ export default function CaliforniaCalAIMPage() {
           </div>
           <div className="bg-white border border-slate-200 rounded-xl p-6">
             <h3 className="font-bold text-slate-900 mb-3">What Came Before: Whole Person Care</h3>
-            <p className="text-sm text-slate-600 leading-relaxed mb-3">
+            <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-3">
               CalAIM builds directly on California's 2016–2022{" "}
               <strong>Whole Person Care (WPC) pilots</strong> — county-run programs that demonstrated
               that integrated medical, behavioral, and social services for people experiencing
               homelessness reduced ER visits, hospitalizations, and costs.
             </p>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <p className="text-sm md:text-base text-slate-600 leading-relaxed">
               WPC's success across 25 counties gave DHCS and Governor Newsom the evidence base to
               take the model statewide — and to negotiate the $6.7B federal investment with CMS
               that makes CalAIM possible at scale.
@@ -481,7 +481,7 @@ export default function CaliforniaCalAIMPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div>
               <div className="text-xs font-black uppercase tracking-widest text-teal-600 mb-2">Scale as Signal</div>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm md:text-base text-slate-600 leading-relaxed">
                 California accounts for roughly <strong>1 in 7 Medicaid enrollees nationwide</strong>.
                 What DHCS tests at scale in Medi-Cal becomes the template that other states — and CMS —
                 use to design the next generation of Medicaid policy. CalAIM's Community Supports model
@@ -490,7 +490,7 @@ export default function CaliforniaCalAIMPage() {
             </div>
             <div>
               <div className="text-xs font-black uppercase tracking-widest text-teal-600 mb-2">Justice-Involved Precedent</div>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm md:text-base text-slate-600 leading-relaxed">
                 California's 90-day pre-release Medi-Cal benefit was the <strong>first CMS ever
                 approved for any state</strong>. Since California's approval in 2022, CMS has opened
                 this authority to all states as part of Medicaid's broader "reentry" policy — a direct
@@ -499,7 +499,7 @@ export default function CaliforniaCalAIMPage() {
             </div>
             <div>
               <div className="text-xs font-black uppercase tracking-widest text-teal-600 mb-2">Housing as Healthcare</div>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm md:text-base text-slate-600 leading-relaxed">
                 CalAIM's authorization for Medicaid to fund housing deposits and navigation services
                 marked a <strong>philosophical turning point</strong> in American health policy — the
                 federal acknowledgment that stable housing is a medical intervention. CMS's approval

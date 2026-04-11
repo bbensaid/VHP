@@ -20,11 +20,11 @@ const MethodologyPage = () => {
               Updated Q4 2025
             </span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-black tracking-tight mb-6 leading-tight">
             The HTR System Health Index{" "}
             <span className="text-indigo-500">(SHI)</span>
           </h1>
-          <p className="text-xl text-slate-300 max-w-3xl leading-relaxed">
+          <p className="text-base md:text-lg text-slate-300 max-w-3xl leading-relaxed">
             Moving beyond stock prices to measure what matters: The structural
             sustainability of the American healthcare economy. A composite index
             of friction, flow, and access.

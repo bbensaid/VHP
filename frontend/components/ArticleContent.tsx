@@ -55,7 +55,7 @@ const ptComponents: PortableTextComponents = {
   block: {
     // ── Body paragraphs ──────────────────────────────────────────────────
     normal: ({ children }) => (
-      <p className="text-lg text-slate-700 leading-relaxed mb-6">{children}</p>
+      <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">{children}</p>
     ),
 
     // ── Headings ─────────────────────────────────────────────────────────
@@ -64,7 +64,7 @@ const ptComponents: PortableTextComponents = {
       return (
         <h1
           id={slugify(text)}
-          className="scroll-mt-32 text-4xl md:text-5xl font-black tracking-tight text-slate-900 mt-14 mb-6 leading-tight"
+          className="scroll-mt-32 text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mt-14 mb-6 leading-tight"
         >
           {children}
         </h1>
@@ -88,7 +88,7 @@ const ptComponents: PortableTextComponents = {
       return (
         <h3
           id={slugify(text)}
-          className="scroll-mt-32 text-xl font-bold text-slate-900 mt-10 mb-3 leading-snug"
+          className="scroll-mt-32 text-lg md:text-xl font-bold text-slate-900 mt-10 mb-3 leading-snug"
         >
           {children}
         </h3>
@@ -150,13 +150,13 @@ const ptComponents: PortableTextComponents = {
 
   listItem: {
     bullet: ({ children }) => (
-      <li className="flex items-start gap-3 text-lg text-slate-700 leading-relaxed">
+      <li className="flex items-start gap-3 text-base md:text-lg text-slate-700 leading-relaxed">
         <span className="mt-2 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0" />
         <span>{children}</span>
       </li>
     ),
     number: ({ children }) => (
-      <li className="flex items-start gap-3 text-lg text-slate-700 leading-relaxed">
+      <li className="flex items-start gap-3 text-base md:text-lg text-slate-700 leading-relaxed">
         <span className="shrink-0 w-6 h-6 rounded-full bg-slate-900 text-white text-xs font-black flex items-center justify-center mt-0.5">
           {/* Counter not feasible in inline JSX — number styling via wrapper */}
         </span>

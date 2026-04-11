@@ -10,8 +10,8 @@ function PopulationHealthTools() {
         <span className="inline-block text-xs font-bold uppercase tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full px-3 py-1 mb-4">
           Clinical · Population Health
         </span>
-        <h1 className="text-4xl font-black text-slate-900 mb-3">Population Health Management</h1>
-        <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">Population Health Management</h1>
+        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
           Evidence-based strategies for managing chronic disease at scale, improving preventive care
           delivery, and applying risk stratification to drive measurable population outcomes.
         </p>
@@ -77,7 +77,7 @@ function PopulationHealthTools() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">📋</span>
           <div>
-            <h2 className="text-xl font-bold text-slate-900">Key HEDIS Measures — Quick Reference</h2>
+            <h2 className="text-lg md:text-xl font-bold text-slate-900">Key HEDIS Measures — Quick Reference</h2>
             <p className="text-sm text-slate-500">NCQA Healthcare Effectiveness Data & Information Set — population health benchmarks</p>
           </div>
         </div>

@@ -7,8 +7,8 @@ function AIMLHero() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-indigo-700 bg-indigo-50 border border-indigo-200 rounded-full px-3 py-1 mb-4">
           Technology · AI & Machine Learning
         </span>
-        <h1 className="text-4xl font-black text-slate-900 mb-3">AI & Machine Learning in Healthcare</h1>
-        <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">AI & Machine Learning in Healthcare</h1>
+        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
           From generative AI in clinical documentation to FDA-cleared diagnostic algorithms — the practical landscape
           of healthcare AI: what&apos;s proven, what&apos;s hype, and what&apos;s coming next.
         </p>
@@ -25,7 +25,7 @@ function AIMLBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">✅</span>
           <div>
-            <h2 className="text-xl font-bold text-slate-900">Selected FDA-Cleared AI Devices</h2>
+            <h2 className="text-lg md:text-xl font-bold text-slate-900">Selected FDA-Cleared AI Devices</h2>
             <p className="text-sm text-slate-500">High-impact AI/ML-enabled devices with FDA 510(k) clearance or PMA approval</p>
           </div>
         </div>
@@ -211,7 +211,7 @@ function AIMLBody() {
 
       {/* Governance Framework */}
       <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-10">
-        <h2 className="text-xl font-bold text-slate-900 mb-2">AI Governance Framework for Health Systems</h2>
+        <h2 className="text-lg md:text-xl font-bold text-slate-900 mb-2">AI Governance Framework for Health Systems</h2>
         <p className="text-slate-500 text-sm mb-6">What boards and CMOs must demand before deploying clinical AI</p>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {[

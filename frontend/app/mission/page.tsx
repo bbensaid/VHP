@@ -142,10 +142,10 @@ export default function MissionPage() {
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
               Core Values
             </span>
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 leading-tight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 leading-tight">
               What we stand for.
             </h2>
-            <p className="text-xl text-slate-500 mt-4 max-w-2xl">
+            <p className="text-base md:text-lg text-slate-500 mt-4 max-w-2xl">
               Six principles that govern every analysis, every recommendation, and every relationship we hold with the people who trust our intelligence.
             </p>
           </div>
@@ -163,7 +163,7 @@ export default function MissionPage() {
                 <v.icon className={`w-6 h-6 ${v.color}`} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">{v.title}</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">{v.body}</p>
+              <p className="text-sm md:text-base text-slate-600 leading-relaxed">{v.body}</p>
             </div>
           ))}
         </div>
@@ -177,10 +177,10 @@ export default function MissionPage() {
               <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
                 Our Analytical Framework
               </span>
-              <h2 className="text-4xl font-black tracking-tight text-slate-900 mb-4">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-4">
                 Every insight must answer six questions before it reaches you.
               </h2>
-              <p className="text-slate-600 text-lg leading-relaxed">
+              <p className="text-slate-600 text-base md:text-lg leading-relaxed">
                 Six questions. Every analysis. No exceptions. HTR's framework treats Policy, Economics, Technology, Clinical, Equity, and Operations as co-equal structural variables — because health system transformation fails when any one of them is ignored.
               </p>
             </div>
@@ -230,7 +230,7 @@ export default function MissionPage() {
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-4 block">
               Our Journey
             </span>
-            <h2 className="text-4xl font-black tracking-tight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight">
               The evolution of HTR.
             </h2>
           </div>
@@ -264,7 +264,7 @@ export default function MissionPage() {
             }}
           />
           <div className="relative z-10">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black mb-4">
               The mission begins with intelligence.
             </h2>
             <p className="text-indigo-200 text-lg mb-8 max-w-xl mx-auto">

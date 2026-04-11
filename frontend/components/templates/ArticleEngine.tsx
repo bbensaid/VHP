@@ -119,13 +119,13 @@ export async function ArticleEngine({ slug }: ArticleEngineProps) {
             </div>
 
             {/* Title */}
-            <h1 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900 leading-tight mb-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 leading-tight mb-6">
               {article.title}
             </h1>
 
             {/* Summary / Abstract */}
             {article.summary && (
-              <p className="text-xl text-slate-600 leading-relaxed border-l-4 border-slate-200 pl-5">
+              <p className="text-base md:text-lg text-slate-600 leading-relaxed border-l-4 border-slate-200 pl-5">
                 {article.summary}
               </p>
             )}

@@ -36,10 +36,10 @@ export default function Page() {
         <span className="text-sm font-bold text-sky-700 uppercase tracking-wider">
           Health Policy
         </span>
-        <h1 className="text-4xl font-black text-slate-900 mt-2 mb-4">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mt-2 mb-4">
           Policy Hub
         </h1>
-        <p className="text-xl text-slate-600 max-w-3xl">
+        <p className="text-base md:text-lg text-slate-600 max-w-3xl">
           Navigating the complex landscape of healthcare regulation, legislation, and compliance.
         </p>
       </div>
@@ -48,7 +48,7 @@ export default function Page() {
         {topics.map((item) => (
           <Link key={item.label} href={item.href} className="group flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-sky-400 hover:bg-sky-50/80">
             <div>
-              <h3 className="font-bold text-slate-900 text-lg mb-2 group-hover:text-sky-700 transition-colors">{item.label}</h3>
+              <h3 className="font-bold text-slate-900 text-base mb-2 group-hover:text-sky-700 transition-colors">{item.label}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">{item.description}</p>
             </div>
             <div className="mt-auto pt-4 space-y-2 border-t border-slate-100">

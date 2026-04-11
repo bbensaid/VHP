@@ -7,8 +7,8 @@ function SecurityHero() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-indigo-700 bg-indigo-50 border border-indigo-200 rounded-full px-3 py-1 mb-4">
           Technology · Data Security & Governance
         </span>
-        <h1 className="text-4xl font-black text-slate-900 mb-3">Data Security & Governance</h1>
-        <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">Data Security & Governance</h1>
+        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
           Healthcare cybersecurity threats, ransomware defense, HIPAA enforcement, interoperability mandates,
           and the data governance frameworks needed to protect patients and enable innovation simultaneously.
         </p>
@@ -25,7 +25,7 @@ function SecurityBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">⚠️</span>
           <div>
-            <h2 className="text-xl font-bold text-slate-900">Major Healthcare Data Breaches (2022–2024)</h2>
+            <h2 className="text-lg md:text-xl font-bold text-slate-900">Major Healthcare Data Breaches (2022–2024)</h2>
             <p className="text-sm text-slate-500">Significant breaches by records exposed and financial impact</p>
           </div>
         </div>
@@ -156,7 +156,7 @@ function SecurityBody() {
 
       {/* Defense Controls */}
       <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-10">
-        <h2 className="text-xl font-bold text-slate-900 mb-2">Critical Security Controls for Healthcare</h2>
+        <h2 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Critical Security Controls for Healthcare</h2>
         <p className="text-slate-500 text-sm mb-6">CIS Controls v8 priority implementation for health systems</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[

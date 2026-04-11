@@ -127,10 +127,10 @@ export default function VideoLibrary({ allVideos }: { allVideos: Video[] }) {
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
       <header className="mb-12 border-b border-slate-200 pb-12">
-        <h1 className="text-4xl font-black tracking-tight text-slate-900 mb-2 uppercase">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-2 uppercase">
           Video Library
         </h1>
-        <p className="text-xl text-slate-600 max-w-3xl">
+        <p className="text-base md:text-lg text-slate-600 max-w-3xl">
           An interactive archive of all video briefings. Use the search below or filter by category within each pillar.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 items-start sm:items-center">

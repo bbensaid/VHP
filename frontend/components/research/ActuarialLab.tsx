@@ -122,7 +122,7 @@ function Slider({
   return (
     <div className="mb-3">
       <div className="flex justify-between items-center mb-1">
-        <label className="text-xs font-medium text-gray-600">{label}</label>
+        <label className="text-xs font-medium text-slate-600">{label}</label>
         <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">
           {prefix}{fmt(value, step < 1 ? 1 : 0)}{suffix}
         </span>
@@ -136,7 +136,7 @@ function Slider({
         onChange={(e) => onChange(Number(e.target.value))}
         className="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-emerald-600"
       />
-      <div className="flex justify-between text-[10px] text-gray-400 mt-0.5">
+      <div className="flex justify-between text-[10px] text-slate-400 mt-0.5">
         <span>{prefix}{fmt(min, 0)}{suffix}</span>
         <span>{prefix}{fmt(max, 0)}{suffix}</span>
       </div>
@@ -170,8 +170,8 @@ function Toggle({
         />
       </button>
       <div>
-        <div className="text-sm font-medium text-gray-700">{label}</div>
-        {description && <div className="text-xs text-gray-500">{description}</div>}
+        <div className="text-sm font-medium text-slate-700">{label}</div>
+        {description && <div className="text-xs text-slate-500">{description}</div>}
       </div>
     </div>
   );
@@ -302,20 +302,20 @@ function AVCalculator() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Inputs */}
         <div className="bg-white rounded-xl border border-gray-200 p-5">
-          <h3 className="text-base font-semibold text-gray-800 mb-4 flex items-center gap-2">
+          <h3 className="text-base font-semibold text-slate-800 mb-4 flex items-center gap-2">
             <Calculator className="w-4 h-4 text-emerald-600" />
             Benefit Design Inputs
           </h3>
 
           <div className="space-y-1">
-            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Medical Cost Sharing</p>
+            <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Medical Cost Sharing</p>
             <Slider label="Annual Deductible" value={inputs.deductible} min={0} max={8700} step={100} prefix="$" onChange={(v) => set("deductible", v)} />
             <Slider label="Out-of-Pocket Maximum" value={inputs.oopMax} min={500} max={9100} step={100} prefix="$" onChange={(v) => set("oopMax", v)} />
             <Slider label="Coinsurance (after deductible)" value={inputs.coinsurance} min={0} max={50} suffix="%" onChange={(v) => set("coinsurance", v)} />
           </div>
 
           <div className="mt-4 space-y-1">
-            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Copayments</p>
+            <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Copayments</p>
             <Slider label="Primary Care Visit" value={inputs.pcpCopay} min={0} max={75} prefix="$" onChange={(v) => set("pcpCopay", v)} />
             <Slider label="Specialist Visit" value={inputs.specialistCopay} min={0} max={150} prefix="$" onChange={(v) => set("specialistCopay", v)} />
             <Slider label="Emergency Room" value={inputs.erCopay} min={0} max={500} step={25} prefix="$" onChange={(v) => set("erCopay", v)} />
@@ -323,7 +323,7 @@ function AVCalculator() {
           </div>
 
           <div className="mt-4 space-y-1">
-            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Pharmacy Benefits</p>
+            <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Pharmacy Benefits</p>
             <Slider label="Generic Drug Copay" value={inputs.genericDrugCopay} min={0} max={30} prefix="$" onChange={(v) => set("genericDrugCopay", v)} />
             <Slider label="Preferred Brand Copay" value={inputs.preferredBrandCopay} min={0} max={75} prefix="$" onChange={(v) => set("preferredBrandCopay", v)} />
             <Slider label="Non-Preferred Brand Copay" value={inputs.nonPreferredBrandCopay} min={0} max={150} prefix="$" onChange={(v) => set("nonPreferredBrandCopay", v)} />
@@ -345,7 +345,7 @@ function AVCalculator() {
         <div className="space-y-4">
           {/* AV Gauge */}
           <div className="bg-white rounded-xl border border-gray-200 p-5">
-            <h3 className="text-base font-semibold text-gray-800 mb-4">Actuarial Value Result</h3>
+            <h3 className="text-base font-semibold text-slate-800 mb-4">Actuarial Value Result</h3>
 
             {/* Big AV number */}
             <div className="text-center mb-6">
@@ -386,7 +386,7 @@ function AVCalculator() {
                 style={{ left: `${Math.max(0, Math.min(100, result.av - 45))}%` }}
               />
             </div>
-            <div className="flex justify-between text-[10px] text-gray-400">
+            <div className="flex justify-between text-[10px] text-slate-400">
               <span>45%</span>
               <span>56% Bronze</span>
               <span>68% Silver</span>
@@ -425,7 +425,7 @@ function AVCalculator() {
 
           {/* ACA Metallic Tier Reference */}
           <div className="bg-gray-50 rounded-xl border border-gray-200 p-4">
-            <h4 className="text-sm font-semibold text-gray-700 mb-3">ACA Metallic Tier Targets</h4>
+            <h4 className="text-sm font-semibold text-slate-700 mb-3">ACA Metallic Tier Targets</h4>
             <div className="space-y-2">
               {[
                 { tier: "Bronze", target: 60, color: "bg-amber-400", range: "56-68%" },
@@ -435,14 +435,14 @@ function AVCalculator() {
               ].map((t) => (
                 <div key={t.tier} className="flex items-center gap-2">
                   <div className={`w-3 h-3 rounded-sm flex-none ${t.color}`} />
-                  <span className="text-xs font-medium text-gray-700 w-16">{t.tier}</span>
+                  <span className="text-xs font-medium text-slate-700 w-16">{t.tier}</span>
                   <div className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
                     <div
                       className={`h-full ${t.color} rounded-full`}
                       style={{ width: `${t.target}%` }}
                     />
                   </div>
-                  <span className="text-xs text-gray-500 w-20 text-right">{t.range}</span>
+                  <span className="text-xs text-slate-500 w-20 text-right">{t.range}</span>
                 </div>
               ))}
             </div>
@@ -565,13 +565,13 @@ function PremiumRating() {
         {/* Inputs column */}
         <div className="lg:col-span-1 space-y-4">
           <div className="bg-white rounded-xl border border-gray-200 p-5">
-            <h3 className="text-base font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <h3 className="text-base font-semibold text-slate-800 mb-4 flex items-center gap-2">
               <BarChart2 className="w-4 h-4 text-emerald-600" />
               Rate Development Inputs
             </h3>
 
             <div className="mb-3">
-              <label className="text-xs font-medium text-gray-600 block mb-1">Service Area (State)</label>
+              <label className="text-xs font-medium text-slate-600 block mb-1">Service Area (State)</label>
               <select
                 value={inputs.state}
                 onChange={(e) => set("state", e.target.value)}
@@ -582,7 +582,7 @@ function PremiumRating() {
             </div>
 
             <div className="mb-3">
-              <label className="text-xs font-medium text-gray-600 block mb-1">Plan Type</label>
+              <label className="text-xs font-medium text-slate-600 block mb-1">Plan Type</label>
               <select
                 value={inputs.planType}
                 onChange={(e) => set("planType", e.target.value)}
@@ -593,7 +593,7 @@ function PremiumRating() {
             </div>
 
             <div className="mb-3">
-              <label className="text-xs font-medium text-gray-600 block mb-1">Rating Methodology</label>
+              <label className="text-xs font-medium text-slate-600 block mb-1">Rating Methodology</label>
               <select className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
                 <option>Community Rating (single rate)</option>
                 <option>Modified Community (age-rated)</option>
@@ -631,23 +631,23 @@ function PremiumRating() {
         <div className="lg:col-span-2 space-y-4">
           {/* Age band table */}
           <div className="bg-white rounded-xl border border-gray-200 p-5">
-            <h3 className="text-base font-semibold text-gray-800 mb-4">Premium by Age Band (ACA 3:1 Ratio)</h3>
+            <h3 className="text-base font-semibold text-slate-800 mb-4">Premium by Age Band (ACA 3:1 Ratio)</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-gray-200">
-                    <th className="text-left text-xs text-gray-500 font-medium pb-2">Age Band</th>
-                    <th className="text-right text-xs text-gray-500 font-medium pb-2">Rating Factor</th>
-                    <th className="text-right text-xs text-gray-500 font-medium pb-2">Non-Tobacco PMPM</th>
-                    <th className="text-right text-xs text-gray-500 font-medium pb-2">Tobacco PMPM</th>
-                    <th className="text-right text-xs text-gray-500 font-medium pb-2">Member Months</th>
+                    <th className="text-left text-xs text-slate-500 font-medium pb-2">Age Band</th>
+                    <th className="text-right text-xs text-slate-500 font-medium pb-2">Rating Factor</th>
+                    <th className="text-right text-xs text-slate-500 font-medium pb-2">Non-Tobacco PMPM</th>
+                    <th className="text-right text-xs text-slate-500 font-medium pb-2">Tobacco PMPM</th>
+                    <th className="text-right text-xs text-slate-500 font-medium pb-2">Member Months</th>
                   </tr>
                 </thead>
                 <tbody>
                   {result.premiumByBand.map((band, i) => (
                     <tr key={band.label} className="border-b border-gray-50 hover:bg-gray-50">
-                      <td className="py-2 font-medium text-gray-700">{band.label}</td>
-                      <td className="text-right text-gray-600">{band.factor.toFixed(3)}</td>
+                      <td className="py-2 font-medium text-slate-700">{band.label}</td>
+                      <td className="text-right text-slate-600">{band.factor.toFixed(3)}</td>
                       <td className="text-right font-semibold text-emerald-700">{fmtDollar(band.premium, 2)}</td>
                       <td className="text-right text-amber-700">
                         {inputs.tobaccoSurcharge > 0 ? fmtDollar(band.premiumTobacco, 2) : "—"}
@@ -672,7 +672,7 @@ function PremiumRating() {
                     <td colSpan={2} className="py-2 font-semibold text-emerald-800 text-sm">Weighted Average</td>
                     <td className="text-right font-bold text-emerald-800 text-sm">{fmtDollar(result.weightedAvgPremium, 2)}</td>
                     <td />
-                    <td className="text-right text-xs text-gray-500">{fmt(result.totalMM)} MM</td>
+                    <td className="text-right text-xs text-slate-500">{fmt(result.totalMM)} MM</td>
                   </tr>
                 </tfoot>
               </table>
@@ -681,7 +681,7 @@ function PremiumRating() {
 
           {/* Premium build-up */}
           <div className="bg-white rounded-xl border border-gray-200 p-5">
-            <h3 className="text-base font-semibold text-gray-800 mb-4">Premium Build-Up (PMPM)</h3>
+            <h3 className="text-base font-semibold text-slate-800 mb-4">Premium Build-Up (PMPM)</h3>
             <div className="space-y-2">
               {[
                 { label: "Expected Claims", value: inputs.expectedClaimsPMPM, color: "bg-emerald-500", pct: (inputs.expectedClaimsPMPM / result.basePMPM) * 100 },
@@ -689,15 +689,15 @@ function PremiumRating() {
                 { label: "Profit Margin", value: result.profitPMPM, color: "bg-purple-400", pct: (inputs.profitMargin / 100) * 100 / (1 / (inputs.targetMLR / 100)) },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-3">
-                  <div className="text-xs text-gray-600 w-36">{item.label}</div>
+                  <div className="text-xs text-slate-600 w-36">{item.label}</div>
                   <div className="flex-1 h-5 bg-gray-100 rounded-full overflow-hidden">
                     <div className={`h-full ${item.color} rounded-full`} style={{ width: `${Math.min(100, item.pct)}%` }} />
                   </div>
-                  <div className="text-xs font-semibold text-gray-800 w-20 text-right">{fmtDollar(item.value, 2)}</div>
+                  <div className="text-xs font-semibold text-slate-800 w-20 text-right">{fmtDollar(item.value, 2)}</div>
                 </div>
               ))}
               <div className="border-t border-gray-200 pt-2 flex justify-between items-center">
-                <span className="text-sm font-bold text-gray-800">Total Base Premium PMPM</span>
+                <span className="text-sm font-bold text-slate-800">Total Base Premium PMPM</span>
                 <span className="text-lg font-black text-emerald-700">{fmtDollar(result.basePMPM, 2)}</span>
               </div>
             </div>
@@ -832,7 +832,7 @@ function AdverseSelection() {
         {/* Inputs */}
         <div className="space-y-4">
           <div className="bg-white rounded-xl border border-gray-200 p-5">
-            <h3 className="text-base font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <h3 className="text-base font-semibold text-slate-800 mb-4 flex items-center gap-2">
               <Users className="w-4 h-4 text-emerald-600" />
               Market Conditions
             </h3>
@@ -841,7 +841,7 @@ function AdverseSelection() {
             <Slider label="Avg Health Status Score" value={inputs.avgHealthScore} min={0.5} max={2.0} step={0.05} onChange={(v) => set("avgHealthScore", v)} />
 
             <div className="mb-3">
-              <label className="text-xs font-medium text-gray-600 block mb-1">Risk Adjustment Program</label>
+              <label className="text-xs font-medium text-slate-600 block mb-1">Risk Adjustment Program</label>
               <select
                 value={inputs.riskAdjustment}
                 onChange={(e) => set("riskAdjustment", e.target.value)}
@@ -855,13 +855,13 @@ function AdverseSelection() {
           </div>
 
           <div className="bg-white rounded-xl border border-gray-200 p-5">
-            <h3 className="text-base font-semibold text-gray-800 mb-4">Premium Dynamics</h3>
+            <h3 className="text-base font-semibold text-slate-800 mb-4">Premium Dynamics</h3>
             <Slider label="Year 1 Premium Increase" value={inputs.year1Increase} min={0} max={50} suffix="%" onChange={(v) => set("year1Increase", v)} />
             <Slider label="Healthy Exit Rate per 10% Increase" value={inputs.exitRatePer10} min={1} max={20} suffix="%" onChange={(v) => set("exitRatePer10", v)} />
           </div>
 
           <div className="bg-white rounded-xl border border-gray-200 p-5">
-            <h3 className="text-base font-semibold text-gray-800 mb-3">Stabilization Interventions</h3>
+            <h3 className="text-base font-semibold text-slate-800 mb-3">Stabilization Interventions</h3>
             <Toggle label="Individual Mandate" value={inputs.mandate} onChange={(v) => set("mandate", v)} description="Reduces exit rate by ~30%" />
             <Toggle label="Risk Corridors" value={inputs.riskCorridors} onChange={(v) => set("riskCorridors", v)} description="Limits insurer losses, stabilizes premiums" />
             <Toggle label="Reinsurance Program" value={inputs.reinsurance} onChange={(v) => set("reinsurance", v)} description="Covers high-cost outliers, reduces premium trend" />
@@ -895,17 +895,17 @@ function AdverseSelection() {
 
           {/* 5-year table */}
           <div className="bg-white rounded-xl border border-gray-200 p-5">
-            <h3 className="text-base font-semibold text-gray-800 mb-4">5-Year Risk Pool Simulation</h3>
+            <h3 className="text-base font-semibold text-slate-800 mb-4">5-Year Risk Pool Simulation</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-gray-200">
-                    <th className="text-left text-xs text-gray-500 font-medium pb-2">Year</th>
-                    <th className="text-right text-xs text-gray-500 font-medium pb-2">Insured Rate</th>
-                    <th className="text-right text-xs text-gray-500 font-medium pb-2">Health Score</th>
-                    <th className="text-right text-xs text-gray-500 font-medium pb-2">Premium PMPM</th>
-                    <th className="text-right text-xs text-gray-500 font-medium pb-2">Premium Δ</th>
-                    <th className="text-center text-xs text-gray-500 font-medium pb-2">Status</th>
+                    <th className="text-left text-xs text-slate-500 font-medium pb-2">Year</th>
+                    <th className="text-right text-xs text-slate-500 font-medium pb-2">Insured Rate</th>
+                    <th className="text-right text-xs text-slate-500 font-medium pb-2">Health Score</th>
+                    <th className="text-right text-xs text-slate-500 font-medium pb-2">Premium PMPM</th>
+                    <th className="text-right text-xs text-slate-500 font-medium pb-2">Premium Δ</th>
+                    <th className="text-center text-xs text-slate-500 font-medium pb-2">Status</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -914,14 +914,14 @@ function AdverseSelection() {
                       key={row.year}
                       className={`border-b border-gray-50 ${row.deathSpiral ? "bg-red-50" : "hover:bg-gray-50"}`}
                     >
-                      <td className="py-2.5 font-semibold text-gray-700">Year {row.year}</td>
+                      <td className="py-2.5 font-semibold text-slate-700">Year {row.year}</td>
                       <td className={`text-right font-medium ${row.insuredRate < 40 ? "text-red-700" : row.insuredRate < 60 ? "text-amber-700" : "text-emerald-700"}`}>
                         {fmtPct(row.insuredRate, 1)}
                       </td>
                       <td className={`text-right ${row.healthScore > 1.5 ? "text-red-700" : row.healthScore > 1.2 ? "text-amber-700" : "text-emerald-700"}`}>
                         {row.healthScore.toFixed(2)}
                       </td>
-                      <td className="text-right font-semibold text-gray-800">{fmtDollar(row.premium)}</td>
+                      <td className="text-right font-semibold text-slate-800">{fmtDollar(row.premium)}</td>
                       <td className={`text-right ${row.premiumIncrease > 20 ? "text-red-700" : row.premiumIncrease > 10 ? "text-amber-700" : "text-emerald-700"}`}>
                         {row.year > 0 ? "+" + fmtPct(row.premiumIncrease, 1) : "—"}
                       </td>
@@ -929,7 +929,7 @@ function AdverseSelection() {
                         {row.deathSpiral ? (
                           <span className="text-xs bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded-full">SPIRAL</span>
                         ) : row.year === 0 ? (
-                          <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">Baseline</span>
+                          <span className="text-xs bg-gray-100 text-slate-600 px-2 py-0.5 rounded-full">Baseline</span>
                         ) : (
                           <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">Stable</span>
                         )}
@@ -943,11 +943,11 @@ function AdverseSelection() {
 
           {/* Visual trend bars */}
           <div className="bg-white rounded-xl border border-gray-200 p-5">
-            <h3 className="text-base font-semibold text-gray-800 mb-4">Premium Trend (Year-over-Year)</h3>
+            <h3 className="text-base font-semibold text-slate-800 mb-4">Premium Trend (Year-over-Year)</h3>
             <div className="space-y-2">
               {simulation.slice(1).map((row) => (
                 <div key={row.year} className="flex items-center gap-3">
-                  <span className="text-xs text-gray-500 w-12">Year {row.year}</span>
+                  <span className="text-xs text-slate-500 w-12">Year {row.year}</span>
                   <div className="flex-1 h-6 bg-gray-100 rounded overflow-hidden">
                     <div
                       className={`h-full rounded transition-all ${row.premiumIncrease > 20 ? "bg-red-500" : row.premiumIncrease > 10 ? "bg-amber-400" : "bg-emerald-500"}`}
@@ -987,8 +987,8 @@ function IRASec({ title, children }: { title: string; children: React.ReactNode 
         onClick={() => setOpen((o) => !o)}
         className="w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 transition-colors"
       >
-        <h3 className="text-base font-semibold text-gray-800">{title}</h3>
-        {open ? <ChevronUp className="w-4 h-4 text-gray-500" /> : <ChevronDown className="w-4 h-4 text-gray-500" />}
+        <h3 className="text-base font-semibold text-slate-800">{title}</h3>
+        {open ? <ChevronUp className="w-4 h-4 text-slate-500" /> : <ChevronDown className="w-4 h-4 text-slate-500" />}
       </button>
       {open && <div className="px-5 pb-5 border-t border-gray-100">{children}</div>}
     </div>
@@ -1097,7 +1097,7 @@ function MedicareDrugPricing() {
       <IRASec title="Section A — Medicare Negotiation & Maximum Fair Price (MFP)">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-4">
           <div>
-            <label className="text-xs font-medium text-gray-600 block mb-1">Select Drug (2026 Negotiation List)</label>
+            <label className="text-xs font-medium text-slate-600 block mb-1">Select Drug (2026 Negotiation List)</label>
             <select
               value={selectedDrugIdx}
               onChange={(e) => { setSelectedDrugIdx(Number(e.target.value)); setCustomMedicareSpending(null); }}
@@ -1109,20 +1109,20 @@ function MedicareDrugPricing() {
             {/* Drug price comparison */}
             <div className="bg-gray-50 rounded-xl p-4 space-y-3">
               <div className="flex justify-between items-center">
-                <span className="text-sm text-gray-600">Current List Price (annual)</span>
-                <span className="font-bold text-gray-800">{fmtDollar(drug.currentListPrice, 0)}</span>
+                <span className="text-sm text-slate-600">Current List Price (annual)</span>
+                <span className="font-bold text-slate-800">{fmtDollar(drug.currentListPrice, 0)}</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-sm text-gray-600">Maximum Fair Price (MFP)</span>
+                <span className="text-sm text-slate-600">Maximum Fair Price (MFP)</span>
                 <span className="font-bold text-emerald-700">{fmtDollar(mfp, 0)}</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-sm text-gray-600">MFP Discount</span>
+                <span className="text-sm text-slate-600">MFP Discount</span>
                 <span className="font-bold text-emerald-800">{fmtPct(drug.mfpReduction * 100, 0)} off list price</span>
               </div>
               <div className="h-px bg-gray-200" />
               <div>
-                <div className="flex justify-between text-xs text-gray-500 mb-1">
+                <div className="flex justify-between text-xs text-slate-500 mb-1">
                   <span>List Price</span>
                   <span>MFP</span>
                 </div>
@@ -1136,7 +1136,7 @@ function MedicareDrugPricing() {
                     style={{ left: `${drug.mfpReduction * 100}%`, right: 0 }}
                   />
                 </div>
-                <div className="flex justify-between text-[10px] text-gray-400 mt-0.5">
+                <div className="flex justify-between text-[10px] text-slate-400 mt-0.5">
                   <span>{fmtPct(drug.mfpReduction * 100, 0)} saved</span>
                   <span>{fmtPct((1 - drug.mfpReduction) * 100, 0)} of list price</span>
                 </div>
@@ -1175,7 +1175,7 @@ function MedicareDrugPricing() {
             <Slider label="Annual Drug Costs (total allowed)" value={patientAnnualDrugCost} min={0} max={30000} step={500} prefix="$" onChange={setPatientAnnualDrugCost} />
 
             <div className="mb-4">
-              <label className="text-xs font-medium text-gray-600 block mb-1">Income Level (Low-Income Subsidy)</label>
+              <label className="text-xs font-medium text-slate-600 block mb-1">Income Level (Low-Income Subsidy)</label>
               <div className="flex gap-2">
                 {(["low", "mid", "high"] as const).map((lvl) => (
                   <button
@@ -1184,14 +1184,14 @@ function MedicareDrugPricing() {
                     className={`flex-1 py-2 text-xs font-medium rounded-lg capitalize transition-colors ${
                       patientIncomeLevel === lvl
                         ? "bg-emerald-600 text-white"
-                        : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                        : "bg-gray-100 text-slate-600 hover:bg-gray-200"
                     }`}
                   >
                     {lvl === "low" ? "Low (LIS)" : lvl === "mid" ? "Middle" : "High"}
                   </button>
                 ))}
               </div>
-              <div className="text-xs text-gray-500 mt-1">
+              <div className="text-xs text-slate-500 mt-1">
                 {patientIncomeLevel === "low" ? "Low-Income Subsidy: 85% OOP reduction" :
                  patientIncomeLevel === "mid" ? "Partial subsidy: 30% OOP reduction" :
                  "No subsidy — full cost sharing"}
@@ -1200,25 +1200,25 @@ function MedicareDrugPricing() {
 
             {/* Spending phase visualization */}
             <div className="bg-gray-50 rounded-xl p-4">
-              <div className="text-xs font-semibold text-gray-700 mb-3">Spending Phase Comparison</div>
+              <div className="text-xs font-semibold text-slate-700 mb-3">Spending Phase Comparison</div>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
-                  <span className="text-xs w-16 text-gray-500">Old 2024</span>
+                  <span className="text-xs w-16 text-slate-500">Old 2024</span>
                   <div className={`flex-1 px-2 py-1 rounded text-xs font-medium text-center ${
                     partDOOP.oldPhase.includes("Catastrophic") ? "bg-red-100 text-red-700" :
                     partDOOP.oldPhase.includes("Donut") ? "bg-amber-100 text-amber-700" :
                     partDOOP.oldPhase.includes("Initial") ? "bg-blue-100 text-blue-700" :
-                    "bg-gray-200 text-gray-600"
+                    "bg-gray-200 text-slate-600"
                   }`}>
                     {partDOOP.oldPhase}
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-xs w-16 text-gray-500">New 2025</span>
+                  <span className="text-xs w-16 text-slate-500">New 2025</span>
                   <div className={`flex-1 px-2 py-1 rounded text-xs font-medium text-center ${
                     partDOOP.newPhase.includes("Catastrophic") ? "bg-purple-100 text-purple-700" :
                     partDOOP.newPhase.includes("Initial") ? "bg-emerald-100 text-emerald-700" :
-                    "bg-gray-200 text-gray-600"
+                    "bg-gray-200 text-slate-600"
                   }`}>
                     {partDOOP.newPhase}
                   </div>
@@ -1239,7 +1239,7 @@ function MedicareDrugPricing() {
 
             {/* Structure comparison chart */}
             <div className="bg-gray-50 rounded-xl p-4">
-              <div className="text-xs font-semibold text-gray-700 mb-3">Part D Structure Comparison</div>
+              <div className="text-xs font-semibold text-slate-700 mb-3">Part D Structure Comparison</div>
               <div className="space-y-2 text-xs">
                 {[
                   { phase: "Deductible", old: "$545", new: "$590", change: "Slight increase" },
@@ -1249,10 +1249,10 @@ function MedicareDrugPricing() {
                   { phase: "OOP Max", old: "No cap (unlimited)", new: "$2,000 hard cap", change: "Key protection" },
                 ].map((row) => (
                   <div key={row.phase} className="grid grid-cols-4 gap-1 items-center">
-                    <div className="text-gray-600 font-medium">{row.phase}</div>
+                    <div className="text-slate-600 font-medium">{row.phase}</div>
                     <div className="text-red-600 bg-red-50 rounded px-1 py-0.5 text-center">{row.old}</div>
                     <div className="text-emerald-700 bg-emerald-50 rounded px-1 py-0.5 text-center">{row.new}</div>
-                    <div className="text-gray-500 text-[10px]">{row.change}</div>
+                    <div className="text-slate-500 text-[10px]">{row.change}</div>
                   </div>
                 ))}
               </div>
@@ -1266,7 +1266,7 @@ function MedicareDrugPricing() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-4">
           <div>
             <div className="mb-3">
-              <label className="text-xs font-medium text-gray-600 block mb-1">Drug Name</label>
+              <label className="text-xs font-medium text-slate-600 block mb-1">Drug Name</label>
               <input
                 type="text"
                 value={inflDrugName}
@@ -1296,19 +1296,19 @@ function MedicareDrugPricing() {
             {inflationRebate && (
               <div className="bg-gray-50 rounded-xl p-4 mt-3 space-y-2">
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">2021 Reference Price</span>
+                  <span className="text-slate-600">2021 Reference Price</span>
                   <span className="font-bold">{fmtDollar(launch2021, 0)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">CPI-Adjusted Allowed Price</span>
+                  <span className="text-slate-600">CPI-Adjusted Allowed Price</span>
                   <span className="font-bold text-blue-700">{fmtDollar(inflationRebate.allowedPrice, 0)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">Assumed CPI Increase</span>
+                  <span className="text-slate-600">Assumed CPI Increase</span>
                   <span className="font-medium">{fmtPct((CPI_2021_TO_NOW - 1) * 100, 0)} (2021-2026)</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">Current List Price</span>
+                  <span className="text-slate-600">Current List Price</span>
                   <span className={`font-bold ${currentPrice > inflationRebate.allowedPrice ? "text-red-600" : "text-emerald-600"}`}>
                     {fmtDollar(currentPrice, 0)}
                   </span>
@@ -1350,8 +1350,8 @@ function MedicareDrugPricing() {
                   </div>
                 )}
 
-                <div className="bg-gray-50 rounded-xl p-4 text-xs text-gray-600 space-y-1">
-                  <div className="font-semibold text-gray-700 mb-2">IRA Inflation Rebate Mechanics</div>
+                <div className="bg-gray-50 rounded-xl p-4 text-xs text-slate-600 space-y-1">
+                  <div className="font-semibold text-slate-700 mb-2">IRA Inflation Rebate Mechanics</div>
                   <div>• Applies to drugs covered under Medicare Parts B and D</div>
                   <div>• Measured against 2021 benchmark prices (or year of first sale)</div>
                   <div>• Excess price increase above CPI-U triggers mandatory rebate to CMS</div>
@@ -1427,10 +1427,10 @@ export default function ActuarialLab() {
                 className={`flex items-center gap-2 px-4 py-4 text-sm font-medium whitespace-nowrap border-b-2 transition-colors ${
                   activeTab === tab.id
                     ? "border-emerald-600 text-emerald-700 bg-emerald-50/50"
-                    : "border-transparent text-gray-600 hover:text-gray-800 hover:border-gray-300"
+                    : "border-transparent text-slate-600 hover:text-slate-800 hover:border-gray-300"
                 }`}
               >
-                <span className={activeTab === tab.id ? "text-emerald-600" : "text-gray-400"}>
+                <span className={activeTab === tab.id ? "text-emerald-600" : "text-slate-400"}>
                   {tab.icon}
                 </span>
                 <span>{tab.label}</span>
@@ -1442,7 +1442,7 @@ export default function ActuarialLab() {
 
       {/* Tab description */}
       <div className="max-w-7xl mx-auto px-6 py-3">
-        <div className="text-sm text-gray-500 flex items-center gap-2">
+        <div className="text-sm text-slate-500 flex items-center gap-2">
           <TrendingUp className="w-4 h-4 text-emerald-500" />
           {TABS.find((t) => t.id === activeTab)?.desc}
         </div>
@@ -1458,7 +1458,7 @@ export default function ActuarialLab() {
 
       {/* Footer */}
       <div className="border-t border-gray-200 bg-white px-6 py-4 mt-8">
-        <div className="max-w-7xl mx-auto text-xs text-gray-400 text-center">
+        <div className="max-w-7xl mx-auto text-xs text-slate-400 text-center">
           Actuarial & Insurance Design Lab — Vermont Health Platform. For analytical and educational purposes. Calculations are simplified models;
           consult a credentialed actuary (ASA/FSA) for regulatory filings. AV calculations use a simplified algorithm, not the CMS ACTUARIAL VALUE CALCULATOR.
         </div>

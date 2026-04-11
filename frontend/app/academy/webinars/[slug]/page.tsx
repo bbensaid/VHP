@@ -75,11 +75,11 @@ export default async function WebinarDetailPage({
             </span>
           </div>
 
-          <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight mb-5">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight leading-tight mb-5">
             {webinar.title}
           </h1>
 
-          <p className="text-xl text-slate-600 leading-relaxed max-w-3xl">
+          <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-3xl">
             {webinar.summary}
           </p>
 

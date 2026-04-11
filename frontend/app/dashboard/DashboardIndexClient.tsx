@@ -117,7 +117,7 @@ export default function DashboardIndexClient({ allStates, loading = false }: Pro
         <div className="relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-start gap-6 mb-8">
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-3">Health System Performance Index</h1>
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-3">Health System Performance Index</h1>
               <p className="text-slate-500 text-lg leading-relaxed">National analysis of value-based care readiness and system transformation.</p>
             </div>
             <div className="shrink-0">

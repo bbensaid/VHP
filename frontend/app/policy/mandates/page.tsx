@@ -7,8 +7,8 @@ function MandatesHero() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
           Policy · Public Health Mandates
         </span>
-        <h1 className="text-4xl font-black text-slate-900 mb-3">Public Health Mandates</h1>
-        <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">Public Health Mandates</h1>
+        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
           Federal and state mandates shaping healthcare operations — vaccine policies, emergency preparedness
           requirements, staffing standards, and compliance frameworks with enforcement teeth.
         </p>
@@ -25,7 +25,7 @@ function MandatesBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">⚖️</span>
           <div>
-            <h2 className="text-xl font-bold text-slate-900">Active Federal Healthcare Mandates</h2>
+            <h2 className="text-lg md:text-xl font-bold text-slate-900">Active Federal Healthcare Mandates</h2>
             <p className="text-sm text-slate-500">Key compliance requirements with enforcement mechanisms and penalty structures</p>
           </div>
         </div>
@@ -160,7 +160,7 @@ function MandatesBody() {
 
       {/* Compliance Readiness */}
       <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-10">
-        <h2 className="text-xl font-bold text-slate-900 mb-2">Compliance Readiness Framework</h2>
+        <h2 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Compliance Readiness Framework</h2>
         <p className="text-slate-500 text-sm mb-6">How healthcare organizations should structure mandate compliance programs</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[

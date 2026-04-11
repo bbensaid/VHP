@@ -86,8 +86,8 @@ function HubPageTemplateInner({
                   {badgeLabel}
                 </span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-slate-100 tracking-tight mb-3">{title}</h1>
-              <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">{subtitle}</p>
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 dark:text-slate-100 tracking-tight mb-3">{title}</h1>
+              <p className="text-slate-500 dark:text-slate-400 text-base md:text-lg leading-relaxed">{subtitle}</p>
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@ function HubPageTemplateInner({
                 aria-selected={isActive}
                 onClick={() => handleTabChange(tab.id)}
                 className={`
-                  relative flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r mr-2 mb-0
+                  relative flex items-center justify-center gap-2 px-4 py-2.5 text-xs md:text-sm font-bold transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r mr-2 mb-0
                   ${isActive
                     ? "bg-slate-100 dark:bg-slate-700 border-black dark:border-slate-500 text-slate-900 dark:text-slate-100 z-10 -mb-px"
                     : "bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-700 dark:hover:text-slate-200 mt-1.5 shadow-sm"

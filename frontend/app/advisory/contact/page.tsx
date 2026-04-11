@@ -33,7 +33,7 @@ export default function ContactPage() {
 
           {/* LEFT: The Form */}
           <div className="bg-white p-8 md:p-12 rounded-xl shadow-xl border border-gray-200 md:w-2/3">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Submit an Inquiry</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mb-2">Submit an Inquiry</h3>
             <p className="text-slate-500 text-sm mb-8">Complete all required fields (*). The more detail you provide, the better we can scope your engagement.</p>
             <Suspense><ContactForm /></Suspense>
           </div>
@@ -71,8 +71,8 @@ export default function ContactPage() {
 
             {/* Pricing Guide */}
             <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
-              <h4 className="text-base font-bold text-gray-900 mb-3">Not Sure Which Service?</h4>
-              <p className="text-gray-600 text-sm mb-4">View our full services catalog with pricing guidance and comparison matrix.</p>
+              <h4 className="text-base font-bold text-slate-900 mb-3">Not Sure Which Service?</h4>
+              <p className="text-slate-600 text-sm md:text-base mb-4">View our full services catalog with pricing guidance and comparison matrix.</p>
               <Link
                 href="/advisory/services"
                 className="block w-full text-center py-2.5 border-2 border-fuchsia-600 text-fuchsia-600 font-bold text-sm rounded-lg hover:bg-fuchsia-50 transition-colors"
@@ -106,15 +106,15 @@ export default function ContactPage() {
 
             {/* Office Locations */}
             <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
-              <h4 className="text-base font-bold text-gray-900 mb-4 border-b border-gray-100 pb-3">Our Offices</h4>
+              <h4 className="text-base font-bold text-slate-900 mb-4 border-b border-gray-100 pb-3">Our Offices</h4>
               <div className="space-y-4">
                 <div>
-                  <p className="font-bold text-gray-900 text-sm">Burlington, VT</p>
-                  <p className="text-gray-500 text-xs mt-0.5">120 St. Paul Street<br />Burlington, VT 05401</p>
+                  <p className="font-bold text-slate-900 text-sm">Burlington, VT</p>
+                  <p className="text-slate-500 text-xs mt-0.5">120 St. Paul Street<br />Burlington, VT 05401</p>
                 </div>
                 <div>
-                  <p className="font-bold text-gray-900 text-sm">Washington, DC</p>
-                  <p className="text-gray-500 text-xs mt-0.5">1400 K Street NW<br />Washington, DC 20005</p>
+                  <p className="font-bold text-slate-900 text-sm">Washington, DC</p>
+                  <p className="text-slate-500 text-xs mt-0.5">1400 K Street NW<br />Washington, DC 20005</p>
                 </div>
               </div>
               <p className="text-xs text-slate-400 mt-4">Remote engagements served nationwide.</p>

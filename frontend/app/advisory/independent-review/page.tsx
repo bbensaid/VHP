@@ -25,7 +25,7 @@ export default function IndependentReviewPage() {
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 leading-tight">
             Independent <span className="text-amber-600">Project Reviews</span>
           </h1>
-          <p className="text-base text-slate-600 max-w-3xl leading-relaxed mb-8">
+          <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed mb-8">
             When a project is over budget, behind schedule, or producing unexpected outcomes, you need a voice with <strong>no incentive to minimize findings.</strong> HTR Advisory conducts forensic-grade assessments of in-progress or recently completed healthcare transformation initiatives — and delivers a clear path forward.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -66,7 +66,7 @@ export default function IndependentReviewPage() {
               <span className="text-2xl shrink-0">{item.icon}</span>
               <div>
                 <h3 className="font-bold text-slate-900 mb-1">{item.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -97,7 +97,7 @@ export default function IndependentReviewPage() {
               </div>
               <div className="text-xs font-bold text-amber-600 uppercase tracking-wide mb-1">{step.duration}</div>
               <h3 className="text-base font-bold text-slate-900 mb-2">{step.title}</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">{step.description}</p>
+              <p className="text-slate-600 text-sm md:text-base leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
@@ -133,9 +133,9 @@ export default function IndependentReviewPage() {
           {service.tiers.map((tier) => (
             <div key={tier.name} className={`p-8 rounded-xl border-2 ${tier.highlight ? "border-amber-500 bg-amber-50 shadow-xl" : "border-slate-200 bg-white shadow-sm"}`}>
               {tier.highlight && <div className="text-xs font-black text-amber-700 uppercase tracking-widest mb-3">Most Common</div>}
-              <h3 className="text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">{tier.name}</h3>
               <div className="text-2xl font-black text-amber-600 mb-3">{tier.price}</div>
-              <p className="text-slate-600 text-sm mb-6 leading-relaxed">{tier.description}</p>
+              <p className="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">{tier.description}</p>
               <ul className="space-y-2">
                 {tier.includes.map((item) => (
                   <li key={item} className="flex gap-2 items-start text-sm text-slate-700">
