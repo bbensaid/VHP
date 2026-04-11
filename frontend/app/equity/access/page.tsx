@@ -7,8 +7,8 @@ function AccessDisparityHero() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-orange-600 bg-orange-50 border border-orange-200 rounded-full px-3 py-1 mb-4">
           Equity · Access Disparity
         </span>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">Access Disparity & Health Equity</h1>
-        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <h1 className="ty-h1 font-black text-slate-900 mb-3">Access Disparity & Health Equity</h1>
+        <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">
           Closing the care access gap across rural, urban safety-net, and underinsured populations —
           provider shortages, Medicaid coverage expansion, FQHC models, and the policy levers that move the needle.
         </p>
@@ -25,7 +25,7 @@ function AccessDisparityBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">📉</span>
           <div>
-            <h2 className="text-lg md:text-xl font-bold text-slate-900">Health Outcome Disparities by Race/Ethnicity</h2>
+            <h2 className="ty-h3 font-bold text-slate-900">Health Outcome Disparities by Race/Ethnicity</h2>
             <p className="text-sm text-slate-500">Key outcome metrics vs. white non-Hispanic baseline (CDC / KFF / AHRQ data)</p>
           </div>
         </div>
@@ -156,7 +156,7 @@ function AccessDisparityBody() {
 
       {/* Policy Solutions */}
       <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-10">
-        <h2 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Evidence-Based Equity Interventions</h2>
+        <h2 className="ty-h3 font-bold text-slate-900 mb-2">Evidence-Based Equity Interventions</h2>
         <p className="text-slate-500 text-sm mb-6">Interventions with rigorous evidence of reducing health disparities</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[

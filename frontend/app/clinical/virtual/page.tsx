@@ -7,10 +7,10 @@ function VirtualCareHero() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full px-3 py-1 mb-4">
           Clinical · Virtual Care
         </span>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">
+        <h1 className="ty-h1 font-black text-slate-900 mb-3">
           Virtual Care Models
         </h1>
-        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">
           Beyond basic telehealth — virtual nursing units, tele-ICU command centers, asynchronous
           specialty consults, and hybrid care architectures transforming care delivery economics.
         </p>
@@ -27,7 +27,7 @@ function VirtualCareBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">🖥️</span>
           <div>
-            <h2 className="text-lg md:text-xl font-bold text-slate-900">Virtual Care Platform Comparison</h2>
+            <h2 className="ty-h3 font-bold text-slate-900">Virtual Care Platform Comparison</h2>
             <p className="text-sm text-slate-500">Leading enterprise telehealth and virtual nursing platforms</p>
           </div>
         </div>
@@ -214,7 +214,7 @@ function VirtualCareBody() {
 
       {/* Future State */}
       <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-10">
-        <h2 className="text-lg md:text-xl font-bold text-slate-900 mb-2">The Virtual Care Maturity Curve</h2>
+        <h2 className="ty-h3 font-bold text-slate-900 mb-2">The Virtual Care Maturity Curve</h2>
         <p className="text-slate-500 text-sm mb-6">Where health systems are on the virtual care journey — and where the frontier is</p>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {[

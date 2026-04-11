@@ -7,8 +7,8 @@ function AlgorithmicBiasHero() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-orange-600 bg-orange-50 border border-orange-200 rounded-full px-3 py-1 mb-4">
           Equity · Algorithmic Bias
         </span>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">Algorithmic Bias in Healthcare</h1>
-        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <h1 className="ty-h1 font-black text-slate-900 mb-3">Algorithmic Bias in Healthcare</h1>
+        <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">
           How bias enters clinical algorithms, risk scores, and AI systems — documented harms, regulatory
           responses, audit methodologies, and the practical steps to build more equitable healthcare AI.
         </p>
@@ -25,7 +25,7 @@ function AlgorithmicBiasBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">🔬</span>
           <div>
-            <h2 className="text-lg md:text-xl font-bold text-slate-900">Race-Corrected Clinical Formulas — Status Tracker</h2>
+            <h2 className="ty-h3 font-bold text-slate-900">Race-Corrected Clinical Formulas — Status Tracker</h2>
             <p className="text-sm text-slate-500">Algorithms that used race as a variable and their current status in clinical guidelines</p>
           </div>
         </div>
@@ -155,7 +155,7 @@ function AlgorithmicBiasBody() {
 
       {/* Equity AI Framework */}
       <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-10">
-        <h2 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Equitable AI Deployment Framework</h2>
+        <h2 className="ty-h3 font-bold text-slate-900 mb-2">Equitable AI Deployment Framework</h2>
         <p className="text-slate-500 text-sm mb-6">What health systems must do before, during, and after deploying clinical AI</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[

@@ -119,13 +119,13 @@ export async function ArticleEngine({ slug }: ArticleEngineProps) {
             </div>
 
             {/* Title */}
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 leading-tight mb-6">
+            <h1 className="ty-h1 font-black tracking-tight text-slate-900 leading-tight mb-6">
               {article.title}
             </h1>
 
             {/* Summary / Abstract */}
             {article.summary && (
-              <p className="text-base md:text-lg text-slate-600 leading-relaxed border-l-4 border-slate-200 pl-5">
+              <p className="ty-hero text-slate-600 leading-relaxed border-l-4 border-slate-200 pl-5">
                 {article.summary}
               </p>
             )}
@@ -139,7 +139,7 @@ export async function ArticleEngine({ slug }: ArticleEngineProps) {
           {article.body ? (
             <ArticleContent body={article.body} />
           ) : (
-            <p className="text-slate-400 italic text-lg">
+            <p className="ty-hero text-slate-400 italic">
               No body content has been added yet.
             </p>
           )}

@@ -42,10 +42,10 @@ export default function Page() {
         <span className="text-sm font-bold text-rose-600 uppercase tracking-wider">
           Clinical Innovation
         </span>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mt-2 mb-4">
+        <h1 className="ty-h1 font-black text-slate-900 mt-2 mb-4">
           Clinical Hub
         </h1>
-        <p className="text-base md:text-lg text-slate-600 max-w-3xl">
+        <p className="ty-hero text-slate-600 max-w-3xl">
           Advancing care delivery through innovation, precision, and new care models.
         </p>
       </div>

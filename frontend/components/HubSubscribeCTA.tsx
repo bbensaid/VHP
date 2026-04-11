@@ -43,7 +43,7 @@ export default function HubSubscribeCTA({ pillar, bgClass, buttonClass }: HubSub
       <h3 className="text-2xl font-black text-slate-900 mb-4">
         Stay Ahead in {pillar}
       </h3>
-      <p className="text-base md:text-lg text-slate-700 mb-8 max-w-2xl mx-auto">
+      <p className="ty-hero text-slate-700 mb-8 max-w-2xl mx-auto">
         Get weekly briefings on the metrics that matter. No fluff, just intelligence.
       </p>
       

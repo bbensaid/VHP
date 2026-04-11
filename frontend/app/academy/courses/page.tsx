@@ -26,10 +26,10 @@ export default async function CoursesPage() {
           <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
             Academy · Courses
           </span>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">
+          <h1 className="ty-h1 font-black text-slate-900 mb-3">
             Course Catalog
           </h1>
-          <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
+          <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">
             Browse our library of certifications, masterclasses, and workshops
             tailored for healthcare leadership.
           </p>

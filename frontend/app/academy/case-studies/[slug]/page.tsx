@@ -28,7 +28,7 @@ export default async function CaseStudyDetail({
            <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs mb-4 block">
               Case Study • {study.clientType}
            </span>
-           <h1 className="text-2xl md:text-3xl lg:text-4xl font-black mb-8 leading-tight">
+           <h1 className="ty-h1 font-black mb-8 leading-tight">
              {study.title}
            </h1>
            <div className="flex flex-wrap gap-4">
@@ -44,7 +44,7 @@ export default async function CaseStudyDetail({
       <div className="container mx-auto px-4 md:px-8 max-w-3xl py-12">
         <div className="prose prose-lg prose-indigo mx-auto">
           <h2 className="text-2xl font-bold text-slate-900 mb-4">Executive Summary</h2>
-          <p className="text-base md:text-lg text-slate-600 mb-12 leading-relaxed border-l-4 border-indigo-600 pl-6 italic">
+          <p className="ty-hero text-slate-600 mb-12 leading-relaxed border-l-4 border-indigo-600 pl-6 italic">
             {study.summary}
           </p>
           <hr className="my-12 border-gray-200" />
