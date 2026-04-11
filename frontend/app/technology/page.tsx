@@ -36,10 +36,10 @@ export default function Page() {
         <span className="text-sm font-bold text-indigo-600 uppercase tracking-wider">
           Health Technology
         </span>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mt-2 mb-4">
+        <h1 className="ty-h1 font-black text-slate-900 mt-2 mb-4">
           Technology Hub
         </h1>
-        <p className="text-base md:text-lg text-slate-600 max-w-3xl">
+        <p className="ty-hero text-slate-600 max-w-3xl">
           Tracking the digital transformation of healthcare delivery and operations.
         </p>
       </div>

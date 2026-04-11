@@ -1173,7 +1173,7 @@ function CDSTab() {
                   </div>
                   <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${cfg.badge}`}>{cfg.label}</span>
                 </div>
-                <p className="text-sm md:text-base text-slate-600 mb-4 leading-relaxed">{card.detail}</p>
+                <p className="ty-body text-slate-600 mb-4 leading-relaxed">{card.detail}</p>
                 <div className="flex flex-wrap gap-2">
                   {card.suggestions.map((sug) => (
                     <button

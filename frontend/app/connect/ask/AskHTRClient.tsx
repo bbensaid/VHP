@@ -169,7 +169,7 @@ function SubmitForm() {
             onChange={e => setIsPrivate(e.target.checked)}
             className="mt-0.5 w-4 h-4 rounded border-slate-300 text-teal-600 focus:ring-teal-300"
           />
-          <span className="text-sm md:text-base text-slate-600 leading-relaxed">
+          <span className="ty-body text-slate-600 leading-relaxed">
             <span className="font-bold text-slate-800">Mark as private</span> — my question will be answered but not added to the public Q&amp;A library. Use this if your question involves confidential organizational data.
           </span>
         </label>
@@ -205,8 +205,8 @@ export default function AskHTRClient() {
             HTR Connect
           </span>
           <div className="text-6xl mb-4">❓</div>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black mb-4 tracking-tight">Ask HTR</h1>
-          <p className="text-lg text-teal-100 max-w-2xl mx-auto leading-relaxed">
+          <h1 className="ty-h1 font-black mb-4 tracking-tight">Ask HTR</h1>
+          <p className="ty-hero text-teal-100 max-w-2xl mx-auto leading-relaxed">
             Submit any question on healthcare transformation. A named HTR advisor responds within 48 business hours — not a chatbot, not a junior analyst.
           </p>
 

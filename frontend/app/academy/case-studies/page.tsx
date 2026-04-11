@@ -37,8 +37,8 @@ export default async function CaseStudiesPage() {
           <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
             Impact Library
           </span>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">Transformation in Action</h1>
-          <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">Real-world examples of how we apply policy, economics, and technology to solve systemic problems.</p>
+          <h1 className="ty-h1 font-black text-slate-900 mb-3">Transformation in Action</h1>
+          <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">Real-world examples of how we apply policy, economics, and technology to solve systemic problems.</p>
         </div>
       </div>
 

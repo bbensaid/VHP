@@ -49,11 +49,11 @@ export default function AcademyCard({
           {price && <span className="text-sm font-bold text-slate-900">{price}</span>}
         </div>
         
-        <h3 className={`text-lg md:text-xl font-bold text-slate-900 mb-3 ${styles.hoverTitle} transition-colors`}>
+        <h3 className={`ty-h3 font-bold text-slate-900 mb-3 ${styles.hoverTitle} transition-colors`}>
           {title}
         </h3>
         
-        <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
+        <p className="text-slate-600 ty-body leading-relaxed mb-4">
           {description}
         </p>
 

@@ -11,11 +11,11 @@ export default function WorkforcePage() {
           <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-teal-200 mb-5 border border-teal-500 bg-teal-600/40 px-4 py-1.5 rounded-full">
             Operations · Workforce & Human Capital
           </span>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-black tracking-tight leading-tight mb-6">
+          <h1 className="ty-h1-xl font-black tracking-tight leading-tight mb-6">
             Workforce &<br />
             <span className="text-teal-300">Human Capital</span>
           </h1>
-          <p className="text-base md:text-lg text-teal-100 max-w-2xl leading-relaxed">
+          <p className="text-base md:ty-hero text-teal-100 max-w-2xl leading-relaxed">
             Every transformation requires people who can execute it. Vacancy rates, credentialing timelines, staffing models, and labor relations are not HR metrics — they are transformation viability signals.
           </p>
         </div>
@@ -48,12 +48,12 @@ export default function WorkforcePage() {
             <div className="bg-teal-50 border border-teal-200 rounded-xl p-6">
               <p className="text-[11px] font-black uppercase tracking-widest text-teal-600 mb-2">The Execution Ceiling</p>
               <p className="text-3xl font-black text-slate-900 mb-2">20%+</p>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed">Nursing vacancy rates in many rural and safety-net markets. A transformation that assumes full workforce capacity to implement new models will fail before it launches in high-vacancy markets.</p>
+              <p className="ty-body text-slate-600 leading-relaxed">Nursing vacancy rates in many rural and safety-net markets. A transformation that assumes full workforce capacity to implement new models will fail before it launches in high-vacancy markets.</p>
             </div>
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
               <p className="text-[11px] font-black uppercase tracking-widest text-slate-500 mb-2">HTR Index Metric</p>
               <p className="font-black text-slate-900 mb-1">Workforce Operational Readiness</p>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed">Composite of clinical staff vacancy rates, turnover, and credentialing cycle times. Sourced from HRSA workforce data and ACHE operational surveys. Weight: 0.05 in the HTR Performance Index.</p>
+              <p className="ty-body text-slate-600 leading-relaxed">Composite of clinical staff vacancy rates, turnover, and credentialing cycle times. Sourced from HRSA workforce data and ACHE operational surveys. Weight: 0.05 in the HTR Performance Index.</p>
             </div>
           </div>
         </div>

@@ -37,7 +37,7 @@ export default async function AccountPage() {
           </div>
           <div className="flex-1">
             <div className="flex items-center gap-3 flex-wrap">
-              <h2 className="text-lg md:text-xl font-black text-slate-900">{user.fullName ?? "No name set"}</h2>
+              <h2 className="ty-h3 font-black text-slate-900">{user.fullName ?? "No name set"}</h2>
               <span className={`text-xs font-bold uppercase px-2.5 py-1 rounded-full ${roleBadge[user.role] ?? roleBadge.free}`}>
                 {user.role}
               </span>

@@ -263,7 +263,7 @@ function ResearchLabHubInner() {
                   Research Lab
                 </span>
               </div>
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 dark:text-slate-100 tracking-tight mb-3">
+              <h1 className="ty-h1 font-black text-slate-900 dark:text-slate-100 tracking-tight mb-3">
                 HTR Research Lab
               </h1>
               <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">
@@ -315,7 +315,7 @@ function ResearchLabHubInner() {
           <div className="mb-6">
             <div className="flex flex-wrap items-center gap-2 mb-1">
               <span className="text-2xl">{activeTool.icon}</span>
-              <h2 className="text-lg md:text-xl font-black text-slate-900 dark:text-slate-100">{activeTool.label}</h2>
+              <h2 className="ty-h3 font-black text-slate-900 dark:text-slate-100">{activeTool.label}</h2>
               <span className={`text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full border ${activeTool.badgeCls}`}>
                 {activeTool.badge}
               </span>

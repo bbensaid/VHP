@@ -101,6 +101,26 @@
   outline: none;
 }
 
+/* ── Typography scale — single source of truth ───────────────────────────
+   Change a scale here → it updates everywhere in the app.
+   Font weight, color, and spacing are always set per-usage alongside.
+
+   ty-h1    = page headings          (2xl → 3xl → 4xl)
+   ty-h1-xl = large marketing heroes (2xl → 4xl → 5xl)
+   ty-h2    = section headings       (xl  → 2xl → 3xl)
+   ty-h3    = card/sub headings      (lg  → xl)
+   ty-hero  = hero/page descriptions (base → lg)
+   ty-body  = card body paragraphs   (sm  → base)
+────────────────────────────────────────────────────────────────────────── */
+@layer components {
+  .ty-h1    { @apply text-2xl md:text-3xl lg:text-4xl; }
+  .ty-h1-xl { @apply text-2xl md:text-4xl lg:text-5xl; }
+  .ty-h2    { @apply text-xl md:text-2xl lg:text-3xl; }
+  .ty-h3    { @apply text-lg md:text-xl; }
+  .ty-hero  { @apply text-base md:text-lg; }
+  .ty-body  { @apply text-sm md:text-base; }
+}
+
 @layer utilities {
   @keyframes marquee {
     0% { transform: translateX(0); }

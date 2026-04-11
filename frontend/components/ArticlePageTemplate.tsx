@@ -118,7 +118,7 @@ export default async function ArticlePageTemplate({
   if (!article) {
     return (
       <div className="max-w-3xl mx-auto py-20 px-8 text-center">
-        <h1 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-slate-100">Article Not Found</h1>
+        <h1 className="ty-h1 font-bold text-slate-900 dark:text-slate-100">Article Not Found</h1>
         <p className="mt-2 text-slate-600 dark:text-slate-400">
           The requested analysis could not be retrieved.
         </p>
@@ -255,11 +255,11 @@ export default async function ArticlePageTemplate({
               </div>
             </div>
 
-            <h1 className={`text-2xl md:text-3xl lg:text-4xl font-black mb-6 leading-tight ${theme.text}`}>
+            <h1 className={`ty-h1 font-black mb-6 leading-tight ${theme.text}`}>
               {article.title}
             </h1>
 
-            <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p className="ty-h2 text-slate-600 dark:text-slate-300 leading-relaxed">
               {article.summary}
             </p>
           </header>
@@ -329,7 +329,7 @@ export default async function ArticlePageTemplate({
                       <h4 className="font-bold text-slate-900 dark:text-slate-100 mb-2 group-hover:text-indigo-600 transition-colors">
                         {related.title}
                       </h4>
-                      <p className="text-sm md:text-base text-slate-600 dark:text-slate-400 line-clamp-2">
+                      <p className="ty-body text-slate-600 dark:text-slate-400 line-clamp-2">
                         {related.summary}
                       </p>
                     </Link>

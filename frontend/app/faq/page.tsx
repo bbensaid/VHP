@@ -149,7 +149,7 @@ function AccordionItem({ q, a }: { q: string; a: string }) {
       </button>
       {open && (
         <div className="pb-5 pr-8">
-          <p className="text-slate-600 text-sm md:text-base leading-relaxed">{a}</p>
+          <p className="text-slate-600 ty-body leading-relaxed">{a}</p>
         </div>
       )}
     </div>
@@ -180,11 +180,11 @@ export default function FAQPage() {
           <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-5 block">
             FAQ
           </span>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-black tracking-tight mb-6">
+          <h1 className="ty-h1-xl font-black tracking-tight mb-6">
             Frequently Asked<br />
             <span className="text-indigo-400">Questions</span>
           </h1>
-          <p className="text-base md:text-lg text-slate-300 max-w-2xl leading-relaxed">
+          <p className="ty-hero text-slate-300 max-w-2xl leading-relaxed">
             Everything you need to know about our methodology, the six-pillar framework, membership tiers, and how to engage our advisory team.
           </p>
         </div>
@@ -261,7 +261,7 @@ export default function FAQPage() {
               >
                 <div className="bg-slate-50 border-b border-slate-200 px-8 py-5 flex items-center gap-3">
                   <span className="text-2xl">{section.icon}</span>
-                  <h2 className="text-lg md:text-xl font-black text-slate-900">
+                  <h2 className="ty-h3 font-black text-slate-900">
                     {section.category}
                   </h2>
                   <span className="ml-auto text-xs font-bold text-slate-400 border border-slate-200 bg-white px-2 py-0.5 rounded">

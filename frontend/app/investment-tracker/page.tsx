@@ -43,10 +43,10 @@ export default async function InvestmentTrackerPage() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-full px-3 py-1 mb-4">
           Analyze &amp; Tools
         </span>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 dark:text-slate-100 mb-3">
+        <h1 className="ty-h1 font-black text-slate-900 dark:text-slate-100 mb-3">
           Investment Tracker
         </h1>
-        <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed">
+        <p className="ty-hero text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed">
           M&amp;A, venture capital, private equity, and strategic partnerships shaping healthcare.
         </p>
       </div>

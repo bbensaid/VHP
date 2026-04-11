@@ -210,7 +210,7 @@ export default function InvestmentTrackerClient({ deals }: { deals: Deal[] }) {
                 {isOpen && (
                   <div className="border-t border-slate-100 dark:border-slate-800 px-5 py-4 space-y-3">
                     {deal.summary && (
-                      <p className="text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed">{deal.summary}</p>
+                      <p className="ty-body text-slate-600 dark:text-slate-300 leading-relaxed">{deal.summary}</p>
                     )}
                     {deal.analystNote && (
                       <div className="bg-indigo-50 dark:bg-indigo-950/30 border-l-2 border-indigo-300 dark:border-indigo-600 pl-3 py-2 rounded-r-lg">

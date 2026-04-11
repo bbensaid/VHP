@@ -7,8 +7,8 @@ function WorkflowHero() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-indigo-700 bg-indigo-50 border border-indigo-200 rounded-full px-3 py-1 mb-4">
           Technology · Tech-Enabled Workflow
         </span>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">Tech-Enabled Workflow</h1>
-        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <h1 className="ty-h1 font-black text-slate-900 mb-3">Tech-Enabled Workflow</h1>
+        <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">
           EHR optimization, robotic process automation, clinical decision support, and the technology stack
           that reduces administrative burden while enabling clinical teams to work at the top of their license.
         </p>
@@ -25,7 +25,7 @@ function WorkflowBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">💹</span>
           <div>
-            <h2 className="text-lg md:text-xl font-bold text-slate-900">Workflow Automation ROI Reference</h2>
+            <h2 className="ty-h3 font-bold text-slate-900">Workflow Automation ROI Reference</h2>
             <p className="text-sm text-slate-500">Expected financial impact by automation initiative — 500-bed health system baseline</p>
           </div>
         </div>

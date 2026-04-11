@@ -9,10 +9,10 @@ function GenomicsContent() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full px-3 py-1 mb-4">
           Clinical · Genomics & Precision Medicine
         </span>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">
+        <h1 className="ty-h1 font-black text-slate-900 mb-3">
           Genomics & Predictive Medicine
         </h1>
-        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">
           From germline sequencing and pharmacogenomics to polygenic risk scores and AI-driven
           clinical decision support — the molecular frontier of preventive and personalized care.
         </p>
@@ -114,7 +114,7 @@ function GenomicsContent() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">💊</span>
           <div>
-            <h2 className="text-lg md:text-xl font-bold text-slate-900">Pharmacogenomics Quick Reference</h2>
+            <h2 className="ty-h3 font-bold text-slate-900">Pharmacogenomics Quick Reference</h2>
             <p className="text-sm text-slate-500">High-impact gene-drug interactions with clinical action recommendations (CPIC Guidelines)</p>
           </div>
         </div>

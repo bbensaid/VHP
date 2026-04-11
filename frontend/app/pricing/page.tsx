@@ -172,10 +172,10 @@ export default function PricingPage() {
         <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 border border-indigo-200 text-xs font-black uppercase tracking-widest px-4 py-2 rounded-full mb-6">
           Pricing
         </div>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-4">
+        <h1 className="ty-h1 font-black text-slate-900 tracking-tight mb-4">
           Invest in your healthcare intelligence
         </h1>
-        <p className="text-slate-600 max-w-xl mx-auto text-lg">
+        <p className="ty-hero text-slate-600 max-w-xl mx-auto">
           From deep policy analysis to professional certifications — choose the plan that fits your role.
         </p>
 
@@ -300,7 +300,7 @@ export default function PricingPage() {
               },
             ].map((t, i) => (
               <div key={i} className="bg-white rounded-xl border border-slate-200 p-6 flex flex-col gap-4">
-                <p className="text-slate-600 text-sm md:text-base leading-relaxed italic">&ldquo;{t.quote}&rdquo;</p>
+                <p className="text-slate-600 ty-body leading-relaxed italic">&ldquo;{t.quote}&rdquo;</p>
                 <div className="mt-auto">
                   <p className="font-bold text-slate-900 text-sm">{t.name}</p>
                   <p className="text-slate-400 text-xs">{t.org}</p>
@@ -317,7 +317,7 @@ export default function PricingPage() {
               <div className="inline-flex items-center gap-1.5 bg-indigo-100 text-indigo-700 text-[10px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full mb-2">
                 Team
               </div>
-              <h3 className="text-lg md:text-xl font-black text-slate-900">Team Plan</h3>
+              <h3 className="ty-h3 font-black text-slate-900">Team Plan</h3>
               <p className="text-slate-500 text-sm mt-1 max-w-lg">
                 Full Subscriber access for your whole team — centrally billed, individually activated.
                 <span className="font-semibold text-slate-700"> From $23/seat/mo</span> (2–25 seats).
@@ -334,7 +334,7 @@ export default function PricingPage() {
         {/* Advisory callout */}
         <div className="mt-10 bg-white rounded-2xl border border-slate-200 shadow-sm p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
-            <h3 className="text-lg md:text-xl font-black text-slate-900">Advisory</h3>
+            <h3 className="ty-h3 font-black text-slate-900">Advisory</h3>
             <p className="text-slate-500 text-sm mt-1 max-w-lg">
               For health system leaders, payers, and policy organizations that need a dedicated analyst partner.
               Custom contracts, exclusive reports, and direct access to our advisory team.

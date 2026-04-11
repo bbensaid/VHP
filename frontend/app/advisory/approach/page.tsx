@@ -14,7 +14,7 @@ export default function ApproachPage() {
       <div className="bg-indigo-700 text-white py-8 border-b border-indigo-800">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <span className="text-fuchsia-400 font-bold uppercase tracking-widest text-xs mb-4 block">HTR Advisory</span>
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 leading-tight">How We Work</h1>
+          <h1 className="ty-h1 font-bold tracking-tight mb-6 leading-tight">How We Work</h1>
           <p className="text-base text-slate-300 max-w-3xl leading-relaxed">
             The best consulting advice in the world is worthless if you can&apos;t trust the process that produced it. HTR Advisory operates on a single principle: <strong className="text-white">Evidence-First, Practitioner-Led</strong> — and complete transparency about how we get to our conclusions.
           </p>
@@ -26,18 +26,18 @@ export default function ApproachPage() {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="text-center">
             <div className="text-5xl mb-4">🔬</div>
-            <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">Evidence-First</h3>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed">Every recommendation traces to a specific piece of evidence — a CMS rule, a clinical trial, a financial model, a peer-reviewed study. We show our work, and we welcome challenges to our conclusions.</p>
+            <h3 className="ty-h3 font-bold text-slate-900 mb-3">Evidence-First</h3>
+            <p className="text-slate-600 ty-body leading-relaxed">Every recommendation traces to a specific piece of evidence — a CMS rule, a clinical trial, a financial model, a peer-reviewed study. We show our work, and we welcome challenges to our conclusions.</p>
           </div>
           <div className="text-center">
             <div className="text-5xl mb-4">🧑‍⚕️</div>
-            <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">Practitioner-Led</h3>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed">HTR advisors have direct operational experience in the domains they consult on — former hospital executives, health economists, clinical informaticists, and policy analysts with government service. Not just researchers.</p>
+            <h3 className="ty-h3 font-bold text-slate-900 mb-3">Practitioner-Led</h3>
+            <p className="text-slate-600 ty-body leading-relaxed">HTR advisors have direct operational experience in the domains they consult on — former hospital executives, health economists, clinical informaticists, and policy analysts with government service. Not just researchers.</p>
           </div>
           <div className="text-center">
             <div className="text-5xl mb-4">⚖️</div>
-            <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">Completely Independent</h3>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed">We have no vendor relationships, no referral arrangements, no political affiliations, and no preferred products. Our only commercial interest is your engagement fee — which means our only incentive is producing advice that actually works.</p>
+            <h3 className="ty-h3 font-bold text-slate-900 mb-3">Completely Independent</h3>
+            <p className="text-slate-600 ty-body leading-relaxed">We have no vendor relationships, no referral arrangements, no political affiliations, and no preferred products. Our only commercial interest is your engagement fee — which means our only incentive is producing advice that actually works.</p>
           </div>
         </div>
       </div>
@@ -88,14 +88,14 @@ export default function ApproachPage() {
               <div key={stage.stage} className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
                 <div className="flex flex-col md:flex-row">
                   <div className="md:w-32 bg-indigo-700 text-white flex items-center justify-center p-6 shrink-0">
-                    <span className="text-2xl md:text-3xl lg:text-4xl font-black text-fuchsia-400">{stage.stage}</span>
+                    <span className="ty-h1 font-black text-fuchsia-400">{stage.stage}</span>
                   </div>
                   <div className="p-6 md:p-8 flex-1">
                     <div className="flex flex-wrap items-center gap-3 mb-2">
-                      <h3 className="text-lg md:text-xl font-bold text-slate-900">{stage.title}</h3>
+                      <h3 className="ty-h3 font-bold text-slate-900">{stage.title}</h3>
                       <span className="text-xs font-bold text-slate-400 bg-slate-100 px-2 py-1 rounded-full">{stage.duration}</span>
                     </div>
-                    <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">{stage.desc}</p>
+                    <p className="text-slate-600 ty-body leading-relaxed mb-4">{stage.desc}</p>
                     <div>
                       <p className="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Outputs</p>
                       <div className="flex flex-wrap gap-2">
@@ -121,8 +121,8 @@ export default function ApproachPage() {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white border-2 border-fuchsia-200 rounded-xl p-8">
             <div className="text-4xl mb-4">👤</div>
-            <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Principal Advisor</h3>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">Leads every engagement. 15+ years of operational or policy experience in the relevant domain. Named at proposal stage and does not change without client notification and approval.</p>
+            <h3 className="ty-h3 font-bold text-slate-900 mb-2">Principal Advisor</h3>
+            <p className="text-slate-600 ty-body leading-relaxed mb-4">Leads every engagement. 15+ years of operational or policy experience in the relevant domain. Named at proposal stage and does not change without client notification and approval.</p>
             <ul className="space-y-1.5 text-xs text-slate-500">
               <li className="flex gap-2"><span className="text-fuchsia-600 shrink-0">✓</span>Primary client relationship owner</li>
               <li className="flex gap-2"><span className="text-fuchsia-600 shrink-0">✓</span>Signs off on all findings</li>
@@ -131,8 +131,8 @@ export default function ApproachPage() {
           </div>
           <div className="bg-white border-2 border-slate-200 rounded-xl p-8">
             <div className="text-4xl mb-4">📊</div>
-            <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Research Analyst</h3>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">Conducts the day-to-day analysis, literature review, financial modeling, and data work. Typically a specialist in one or two HTR pillars with deep quantitative skills.</p>
+            <h3 className="ty-h3 font-bold text-slate-900 mb-2">Research Analyst</h3>
+            <p className="text-slate-600 ty-body leading-relaxed mb-4">Conducts the day-to-day analysis, literature review, financial modeling, and data work. Typically a specialist in one or two HTR pillars with deep quantitative skills.</p>
             <ul className="space-y-1.5 text-xs text-slate-500">
               <li className="flex gap-2"><span className="text-slate-400 shrink-0">✓</span>Quantitative modeling & data analysis</li>
               <li className="flex gap-2"><span className="text-slate-400 shrink-0">✓</span>Literature review & evidence synthesis</li>
@@ -141,8 +141,8 @@ export default function ApproachPage() {
           </div>
           <div className="bg-white border-2 border-slate-200 rounded-xl p-8">
             <div className="text-4xl mb-4">🧠</div>
-            <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Domain Expert</h3>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">Called in for specialized input — clinical workflows, regulatory interpretation, financial modeling validation, or equity framework application. Drawn from HTR&apos;s network of former policymakers, clinicians, and economists.</p>
+            <h3 className="ty-h3 font-bold text-slate-900 mb-2">Domain Expert</h3>
+            <p className="text-slate-600 ty-body leading-relaxed mb-4">Called in for specialized input — clinical workflows, regulatory interpretation, financial modeling validation, or equity framework application. Drawn from HTR&apos;s network of former policymakers, clinicians, and economists.</p>
             <ul className="space-y-1.5 text-xs text-slate-500">
               <li className="flex gap-2"><span className="text-slate-400 shrink-0">✓</span>Engaged as needed, not billed as padding</li>
               <li className="flex gap-2"><span className="text-slate-400 shrink-0">✓</span>Identified by name in engagement design</li>
@@ -226,7 +226,7 @@ export default function ApproachPage() {
       <div className="container mx-auto px-4 md:px-8 max-w-4xl">
         <div className="bg-linear-to-r from-fuchsia-600 to-slate-800 text-white rounded-2xl p-10 md:p-14 text-center shadow-2xl">
           <h2 className="text-3xl font-black mb-4">Ready to Work Together?</h2>
-          <p className="text-lg text-fuchsia-100 mb-8 max-w-2xl mx-auto">
+          <p className="ty-hero text-fuchsia-100 mb-8 max-w-2xl mx-auto">
             Start with a 30-minute discovery call. No commitment, no sales pitch — just a structured conversation about your challenge and whether HTR Advisory is the right partner.
           </p>
           <Link

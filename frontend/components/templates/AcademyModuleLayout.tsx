@@ -302,7 +302,7 @@ export default function AcademyModuleLayout({ module, courseModules, slug }: Pro
               <p className="text-xs font-black text-indigo-500 uppercase tracking-widest mb-2">
                 Module {module.moduleNumber}{module.totalModules ? ` of ${module.totalModules}` : ""}
               </p>
-              <h1 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-5">
+              <h1 className="ty-h1 font-black text-slate-900 leading-tight mb-5">
                 {module.title}
               </h1>
               {module.summary && (

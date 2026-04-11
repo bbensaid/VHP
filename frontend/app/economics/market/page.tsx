@@ -7,10 +7,10 @@ function MarketFinanceHero() {
         <span className="inline-block text-xs font-black uppercase tracking-widest text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-full px-3 py-1 mb-4">
           Economics · Market & Finance
         </span>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 mb-3">
+        <h1 className="ty-h1 font-black text-slate-900 mb-3">
           Healthcare Market & Finance
         </h1>
-        <p className="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed">
+        <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">
           Hospital financial health, market consolidation, M&A activity, payer-provider dynamics,
           and the capital flows reshaping healthcare ownership — from PE roll-ups to public market valuations.
         </p>
@@ -27,7 +27,7 @@ function MarketFinanceBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">🏥</span>
           <div>
-            <h2 className="text-lg md:text-xl font-bold text-slate-900">Hospital Financial Health Benchmarks</h2>
+            <h2 className="ty-h3 font-bold text-slate-900">Hospital Financial Health Benchmarks</h2>
             <p className="text-sm text-slate-500">Key ratios used by bond rating agencies and analysts to assess financial stability</p>
           </div>
         </div>
@@ -112,7 +112,7 @@ function MarketFinanceBody() {
               { specialty: "Anesthesiology", pct: 55, color: "bg-rose-500" },
             ].map((row) => (
               <div key={row.specialty}>
-                <div className="flex justify-between text-sm md:text-base text-slate-700 mb-1">
+                <div className="flex justify-between ty-body text-slate-700 mb-1">
                   <span>{row.specialty}</span>
                   <span className="font-bold">{row.pct}%</span>
                 </div>
@@ -219,7 +219,7 @@ function MarketFinanceBody() {
 
       {/* Market Outlook */}
       <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-10">
-        <h2 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Healthcare Market Forces — 2024–2026 Outlook</h2>
+        <h2 className="ty-h3 font-bold text-slate-900 mb-2">Healthcare Market Forces — 2024–2026 Outlook</h2>
         <p className="text-slate-500 text-sm mb-6">Structural trends shaping healthcare economics over the near term</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[

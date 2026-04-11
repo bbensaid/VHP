@@ -11,11 +11,11 @@ export default function RevenueCyclePage() {
           <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-teal-200 mb-5 border border-teal-500 bg-teal-600/40 px-4 py-1.5 rounded-full">
             Operations · Revenue Cycle Management
           </span>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight leading-tight mb-6">
+          <h1 className="ty-h1 font-black tracking-tight leading-tight mb-6">
             Revenue Cycle<br />
             <span className="text-teal-300">Management</span>
           </h1>
-          <p className="text-base md:text-lg text-teal-100 max-w-2xl leading-relaxed">
+          <p className="text-base md:ty-hero text-teal-100 max-w-2xl leading-relaxed">
             The end-to-end financial process from patient encounter to payment collection. Where administrative complexity either compounds or collapses the economics of care delivery.
           </p>
         </div>
@@ -48,12 +48,12 @@ export default function RevenueCyclePage() {
             <div className="bg-teal-50 border border-teal-200 rounded-xl p-6">
               <p className="text-[11px] font-black uppercase tracking-widest text-teal-600 mb-2">The Scale of the Problem</p>
               <p className="text-3xl font-black text-slate-900 mb-2">$935B</p>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed">Estimated annual waste in US healthcare attributable to administrative complexity and billing inefficiency, per JAMA estimates. Revenue cycle dysfunction is the single largest non-clinical cost driver in American healthcare.</p>
+              <p className="ty-body text-slate-600 leading-relaxed">Estimated annual waste in US healthcare attributable to administrative complexity and billing inefficiency, per JAMA estimates. Revenue cycle dysfunction is the single largest non-clinical cost driver in American healthcare.</p>
             </div>
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
               <p className="text-[11px] font-black uppercase tracking-widest text-slate-500 mb-2">HTR Index Metric</p>
               <p className="font-black text-slate-900 mb-1">Revenue Cycle Performance Index</p>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed">Composite of clean claim rate, denial rate, and days in AR across the state's major health systems. Weight: 0.05 in the HTR Performance Index.</p>
+              <p className="ty-body text-slate-600 leading-relaxed">Composite of clean claim rate, denial rate, and days in AR across the state's major health systems. Weight: 0.05 in the HTR Performance Index.</p>
             </div>
           </div>
         </div>

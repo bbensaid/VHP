@@ -106,7 +106,7 @@ export default function MissionPage() {
               <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-5 block">
                 Our Mission
               </span>
-              <p className="text-2xl md:text-3xl font-bold text-white leading-snug">
+              <p className="ty-h1 font-bold text-white leading-snug">
                 To accelerate sustainable, value-based health system transformation by providing the cross-disciplinary intelligence that policymakers, executives, clinicians, and equity advocates need to act with confidence.
               </p>
               <div className="mt-8 pt-8 border-t border-white/10">
@@ -122,7 +122,7 @@ export default function MissionPage() {
               <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-300 mb-5 block relative z-10">
                 Our Vision
               </span>
-              <p className="text-2xl md:text-3xl font-bold leading-snug text-white relative z-10">
+              <p className="ty-h1 font-bold leading-snug text-white relative z-10">
                 A health system that is financially resilient, technologically capable, clinically excellent, operationally disciplined, and equitable by design — not by exception.
               </p>
               <div className="mt-8 pt-8 border-t border-white/10 relative z-10">
@@ -142,10 +142,10 @@ export default function MissionPage() {
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
               Core Values
             </span>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 leading-tight">
+            <h2 className="ty-h1 font-black tracking-tight text-slate-900 leading-tight">
               What we stand for.
             </h2>
-            <p className="text-base md:text-lg text-slate-500 mt-4 max-w-2xl">
+            <p className="ty-hero text-slate-500 mt-4 max-w-2xl">
               Six principles that govern every analysis, every recommendation, and every relationship we hold with the people who trust our intelligence.
             </p>
           </div>
@@ -163,7 +163,7 @@ export default function MissionPage() {
                 <v.icon className={`w-6 h-6 ${v.color}`} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">{v.title}</h3>
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed">{v.body}</p>
+              <p className="ty-body text-slate-600 leading-relaxed">{v.body}</p>
             </div>
           ))}
         </div>
@@ -177,10 +177,10 @@ export default function MissionPage() {
               <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
                 Our Analytical Framework
               </span>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-4">
+              <h2 className="ty-h1 font-black tracking-tight text-slate-900 mb-4">
                 Every insight must answer six questions before it reaches you.
               </h2>
-              <p className="text-slate-600 text-base md:text-lg leading-relaxed">
+              <p className="text-slate-600 ty-hero leading-relaxed">
                 Six questions. Every analysis. No exceptions. HTR's framework treats Policy, Economics, Technology, Clinical, Equity, and Operations as co-equal structural variables — because health system transformation fails when any one of them is ignored.
               </p>
             </div>
@@ -230,7 +230,7 @@ export default function MissionPage() {
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-4 block">
               Our Journey
             </span>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight">
+            <h2 className="ty-h1 font-black tracking-tight">
               The evolution of HTR.
             </h2>
           </div>
@@ -264,7 +264,7 @@ export default function MissionPage() {
             }}
           />
           <div className="relative z-10">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black mb-4">
+            <h2 className="ty-h1 font-black mb-4">
               The mission begins with intelligence.
             </h2>
             <p className="text-indigo-200 text-lg mb-8 max-w-xl mx-auto">

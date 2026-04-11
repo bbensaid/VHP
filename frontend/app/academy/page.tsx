@@ -31,7 +31,7 @@ export default function AcademyHub() {
             <h3 className="text-sm font-black uppercase tracking-widest text-sky-700 mb-3">
               Personalized Learning
             </h3>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed">
+            <p className="text-slate-600 ty-body leading-relaxed">
               An AI-powered engine that builds a custom learning path based on your role, knowledge gaps,
               and goals. Updated dynamically as you progress and as new content is published.
             </p>
@@ -40,7 +40,7 @@ export default function AcademyHub() {
             <h3 className="text-sm font-black uppercase tracking-widest text-sky-700 mb-3">
               Learning Tracks
             </h3>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed">
+            <p className="text-slate-600 ty-body leading-relaxed">
               Structured multi-course sequences designed for specific roles — health economists, compliance
               officers, CMOs, policy analysts, and technology leaders. Each track culminates in a
               verifiable credential.
@@ -50,7 +50,7 @@ export default function AcademyHub() {
             <h3 className="text-sm font-black uppercase tracking-widest text-sky-700 mb-3">
               Courses &amp; Webinars
             </h3>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed">
+            <p className="text-slate-600 ty-body leading-relaxed">
               Deep-dive modules on specific topics — from CMS rule interpretation to FHIR implementation
               to value-based contract design. Webinars bring in domain experts for live Q&amp;A and
               recorded sessions available on demand.
@@ -60,7 +60,7 @@ export default function AcademyHub() {
             <h3 className="text-sm font-black uppercase tracking-widest text-sky-700 mb-3">
               Case Studies &amp; Glossary
             </h3>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed">
+            <p className="text-slate-600 ty-body leading-relaxed">
               Real-world analyses of what worked, what failed, and why — across APM implementations,
               state waiver programs, AI deployments, and equity initiatives. The Glossary provides
               authoritative definitions across all six pillars.

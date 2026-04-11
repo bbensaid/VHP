@@ -86,8 +86,8 @@ function HubPageTemplateInner({
                   {badgeLabel}
                 </span>
               </div>
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 dark:text-slate-100 tracking-tight mb-3">{title}</h1>
-              <p className="text-slate-500 dark:text-slate-400 text-base md:text-lg leading-relaxed">{subtitle}</p>
+              <h1 className="ty-h1 font-black text-slate-900 dark:text-slate-100 tracking-tight mb-3">{title}</h1>
+              <p className="text-slate-500 dark:text-slate-400 ty-hero leading-relaxed">{subtitle}</p>
             </div>
           </div>
         </div>
