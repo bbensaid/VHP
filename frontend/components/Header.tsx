@@ -293,6 +293,18 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
               </span>
             </Link>
             <Link
+              href="/academy/medicaid"
+              onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
+            >
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
+                Medicaid Learning Center
+              </span>
+              <span className="text-xs text-slate-400 mt-0.5">
+                Vermont Medicaid courses, webinars &amp; glossary
+              </span>
+            </Link>
+            <Link
               href="/academy/faculty"
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-sky-50 transition-colors group"
@@ -343,6 +355,18 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
                 6-pillar transformation scenario modeler
+              </span>
+            </Link>
+            <Link
+              href="/medicaid-eligibility-simulator"
+              onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
+            >
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
+                Medicaid Eligibility Simulator
+              </span>
+              <span className="text-xs text-slate-400 mt-0.5">
+                Vermont Medicaid screening tool — 5 steps
               </span>
             </Link>
             <Link
@@ -464,6 +488,18 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
             State Initiatives
           </p>
           <div className="space-y-1">
+            <Link
+              href="/vermont-medicaid"
+              onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
+            >
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
+                Vermont Medicaid
+              </span>
+              <span className="text-xs text-slate-400 mt-0.5">
+                Programs, eligibility &amp; enrollment guide
+              </span>
+            </Link>
             <Link
               href="/vermont-act-167"
               onClick={onClose}
