@@ -1,8 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { SparklesIcon, ArrowsPointingOutIcon, PaperAirplaneIcon, StopIcon, TrashIcon, ArrowPathIcon, ExclamationTriangleIcon, BookOpenIcon, HandThumbUpIcon, HandThumbDownIcon } from "@heroicons/react/24/outline";
 import ReactMarkdown from "react-markdown";
 
@@ -85,7 +84,28 @@ export default function RightSidebar() {
   useEffect(() => { messagesRef.current = messages; }, [messages]);
 
   const pathname = usePathname() ?? "";
+  const router = useRouter();
   const activePillar = getPillarFromPath(pathname);
+
+  // On mount: restore conversation from localStorage (written by /chat page on every change,
+  // and by handleExpand below). This means minimize → back → sidebar shows same conversation.
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("htr-chat-history");
+      if (saved) {
+        const parsed = JSON.parse(saved) as Message[];
+        if (Array.isArray(parsed) && parsed.length > 0) setMessages(parsed);
+      }
+    } catch { /* ignore */ }
+  }, []);
+
+  const handleExpand = useCallback(() => {
+    // Sync current sidebar conversation to localStorage so /chat picks it up
+    try {
+      localStorage.setItem("htr-chat-history", JSON.stringify(messages));
+    } catch { /* ignore */ }
+    router.push("/chat");
+  }, [messages, router]);
 
   const handleFeedback = useCallback((msgId: string, type: "up" | "down", query: string, response: string) => {
     setMessages((prev) => {
@@ -219,9 +239,9 @@ export default function RightSidebar() {
                 <TrashIcon className="w-3.5 h-3.5" />
               </button>
             )}
-            <Link href="/chat" className="p-2.5 text-slate-400 hover:text-indigo-600 rounded transition-colors" title="Expand to full view">
+            <button onClick={handleExpand} className="p-2.5 text-slate-400 hover:text-indigo-600 rounded transition-colors" title="Expand to full view">
               <ArrowsPointingOutIcon className="w-3.5 h-3.5" />
-            </Link>
+            </button>
           </div>
         </div>
 
@@ -231,11 +251,38 @@ export default function RightSidebar() {
           className="flex-1 min-h-0 flex flex-col gap-3 p-3 overflow-y-auto text-xs"
         >
           {messages.length === 0 && (
-            <p className="text-slate-400 dark:text-slate-500 text-center py-4 leading-relaxed">
-              {activePillar
-                ? `Ask about ${activePillar} topics — answers are filtered to this pillar.`
-                : "Ask a quick question without leaving this page."}
-            </p>
+            <div className="flex flex-col gap-3 py-2">
+              <p className="text-slate-400 dark:text-slate-500 text-center leading-relaxed text-[11px]">
+                {activePillar
+                  ? `Ask about ${activePillar} topics — answers are filtered to this pillar.`
+                  : "Ask a quick question without leaving this page."}
+              </p>
+
+              {/* Medicaid quick-prompt chips */}
+              <div className="mt-1">
+                <p className="text-[9px] font-black uppercase tracking-widest text-slate-300 dark:text-slate-600 mb-2 text-center">
+                  Vermont Medicaid — Try asking:
+                </p>
+                <div className="flex flex-col gap-1.5">
+                  {[
+                    "Am I eligible for Vermont Medicaid?",
+                    "What does Dr. Dynasaur cover?",
+                    "What are the 2026 income limits?",
+                    "How do I apply for Choices for Care?",
+                    "What's the difference between MAGI and non-MAGI?",
+                    "Can I have Medicare and Medicaid at the same time?",
+                  ].map((prompt) => (
+                    <button
+                      key={prompt}
+                      onClick={() => send(prompt)}
+                      className="w-full text-left text-[11px] text-slate-600 dark:text-slate-300 bg-slate-50 dark:bg-slate-800 hover:bg-rose-50 dark:hover:bg-rose-950/30 hover:text-rose-700 dark:hover:text-rose-300 border border-slate-200 dark:border-slate-700 hover:border-rose-200 dark:hover:border-rose-800 rounded-lg px-3 py-2 transition-all leading-snug"
+                    >
+                      {prompt}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
           )}
           {messages.map((msg, i) => (
             <div key={i} className={msg.role === "user" ? "flex justify-end" : ""}>
