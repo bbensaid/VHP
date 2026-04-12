@@ -73,7 +73,13 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const sidebarTop = isStickyBarVisible ? "2.5rem" : "0rem"; // 2.5rem = --sticky-bar-height
 
   if (hideSidebarsCompletely) {
-    return <div className="flex-1 min-h-0 overflow-hidden flex flex-col">{children}</div>;
+    // [&>main] passes the height constraint through the <main id="main-content"> wrapper
+    // in layout.tsx so h-full on the chat page resolves to the actual viewport height.
+    return (
+      <div className="flex-1 min-h-0 overflow-hidden flex flex-col [&>main]:flex-1 [&>main]:min-h-0 [&>main]:flex [&>main]:flex-col">
+        {children}
+      </div>
+    );
   }
 
   return (

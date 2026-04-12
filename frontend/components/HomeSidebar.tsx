@@ -130,6 +130,7 @@ const SECTIONS: Section[] = [
       { href: "/academy/webinars",              label: "Webinars",               icon: PresentationChartLineIcon },
       { href: "/academy/case-studies",          label: "Case Studies",           icon: DocumentTextIcon },
       { href: "/academy/glossary",              label: "Glossary",               icon: BookOpenIcon },
+      { href: "/academy/medicaid",              label: "Medicaid Learning Center", icon: DocumentTextIcon },
       { href: "/academy/faculty",               label: "Faculty",                icon: UsersIcon },
     ],
   },
@@ -147,6 +148,7 @@ const SECTIONS: Section[] = [
       { href: "/research-lab/technology-ai",       label: "Technology & AI",           icon: CpuChipIcon },
       { href: "/research-lab/knowledge-workspace", label: "Knowledge & Workspace",     icon: BookOpenIcon },
       { href: "/htr-simulator",                    label: "HTR Simulator",             icon: CpuChipIcon },
+      { href: "/medicaid-eligibility-simulator",   label: "Medicaid Eligibility",       icon: DocumentTextIcon },
       { href: "/hti-dashboard",                    label: "HTI Dashboard",             icon: DocumentTextIcon },
       { href: "/the-wire",                          label: "The Wire",                  icon: BoltIcon },
       { href: "/investment-tracker",               label: "Investment Tracker",         icon: BanknotesIcon },
@@ -171,6 +173,7 @@ const SECTIONS: Section[] = [
     borderAccent: "border-rose-500", hoverBg: "hover:bg-rose-100",
     divideColor: "divide-rose-100", activeItemBg: "bg-rose-100",
     items: [
+      { href: "/vermont-medicaid",    label: "Vermont Medicaid",   icon: DocumentTextIcon },
       { href: "/vermont-act-167",   label: "Vermont Act 167",    icon: MapPinIcon },
       { href: "/california-calaim", label: "California CalAIM",  icon: MapPinIcon },
       { href: "/states",            label: "All States Explorer", icon: GlobeAmericasIcon },
@@ -206,9 +209,9 @@ function getSectionForPath(path: string): string | null {
   const intelligencePrefixes = ["/policy", "/economics", "/technology", "/clinical", "/equity", "/operations"];
   if (intelligencePrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "intelligence";
   if (path === "/academy" || path.startsWith("/academy/")) return "learn";
-  const analyzePrefixes = ["/research-lab", "/htr-simulator", "/hti-dashboard", "/multimedia", "/trending-topics", "/transformation-friction-index", "/impact-simulation"];
+  const analyzePrefixes = ["/research-lab", "/htr-simulator", "/medicaid-eligibility-simulator", "/hti-dashboard", "/multimedia", "/trending-topics", "/transformation-friction-index", "/impact-simulation"];
   if (analyzePrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "analyze";
-  const statesPrefixes = ["/vermont-act-167", "/california-calaim", "/states", "/dashboard", "/ahead-model"];
+  const statesPrefixes = ["/vermont-medicaid", "/vermont-act-167", "/california-calaim", "/states", "/dashboard", "/ahead-model"];
   if (statesPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "states";
   const advisoryPrefixes = ["/advisory", "/connect-hub", "/connect", "/community"];
   if (advisoryPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "advisory";

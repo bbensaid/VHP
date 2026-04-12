@@ -1,8 +1,8 @@
 # AI & RAG Guide — Vermont Health Platform (HTR)
 
 **Audience:** AI/ML engineers, backend developers.
-**Version:** 4.2.0
-**Stack:** LlamaIndex · Groq (Llama 3.3-70b) · OpenAI Embeddings · FlashRank · pgvector
+**Version:** 4.3.0
+**Stack:** LlamaIndex · Groq (Llama 3.3-70b) · Anthropic (Claude Sonnet 4.6) · OpenAI Embeddings · FlashRank · pgvector · pdfplumber
 
 ---
 
@@ -11,48 +11,52 @@
 1. [Overview](#1-overview)
 2. [Architecture](#2-architecture)
 3. [Document Ingestion Pipeline](#3-document-ingestion-pipeline)
-4. [Embedding Model](#4-embedding-model)
-5. [Vector Store (pgvector)](#5-vector-store-pgvector)
-6. [Hybrid Retrieval](#6-hybrid-retrieval)
-7. [Re-ranking](#7-re-ranking)
-8. [LLM Routing](#8-llm-routing)
-9. [Chat API](#9-chat-api)
-10. [Personalized Learning Generation](#10-personalized-learning-generation)
-11. [Extending the Pipeline](#11-extending-the-pipeline)
-12. [Monitoring & Debugging](#12-monitoring--debugging)
+4. [Medicaid Eligibility RAG Subsystem](#4-medicaid-eligibility-rag-subsystem)
+5. [Embedding Model](#5-embedding-model)
+6. [Vector Store (pgvector)](#6-vector-store-pgvector)
+7. [Hybrid Retrieval](#7-hybrid-retrieval)
+8. [Re-ranking](#8-re-ranking)
+9. [LLM Routing](#9-llm-routing)
+10. [Chat API](#10-chat-api)
+11. [Personalized Learning Generation](#11-personalized-learning-generation)
+12. [Extending the Pipeline](#12-extending-the-pipeline)
+13. [Monitoring & Debugging](#13-monitoring--debugging)
 
 ---
 
 ## 1. Overview
 
-The HTR AI Analyst is a Retrieval-Augmented Generation (RAG) system that answers questions about U.S. healthcare transformation by grounding responses in the platform's curated knowledge base. It combines:
+The HTR AI Analyst is a Retrieval-Augmented Generation (RAG) system that answers questions about U.S. healthcare transformation and Vermont Medicaid eligibility by grounding responses in a curated knowledge base. It combines:
 
 - **Hybrid retrieval** — BM25 keyword search merged with dense vector similarity via Reciprocal Rank Fusion (RRF)
 - **Cross-encoder re-ranking** — FlashRank (`ms-marco-MiniLM-L-12-v2`) re-scores retrieved chunks before passing to the LLM
-- **Role-based LLM routing** — Subscriber/Student users get Groq Llama 3.3-70b; Professional/Advisory users get Claude Sonnet 4.6 for higher-quality responses
-- **Sentence window expansion** — Retrieved chunks are expanded ±3 sentences to provide richer context
+- **Role-based LLM routing** — Free/Student users get Groq Llama 3.1-8b; Subscriber/Professional users get Llama 3.3-70b; Advisory/Admin users get Claude Sonnet 4.6
+- **Dual ingestion pipeline** — General content uses sentence-window chunking; Medicaid eligibility documents use a specialized section-aware parser
+- **Medicaid intent detection** — Queries about Vermont Medicaid eligibility are automatically routed to a scoped retrieval path backed by 23 official Vermont state documents
 - **Streaming responses** — All chat responses stream token-by-token back to the browser
 
 ---
 
 ## 2. Architecture
 
+### General Query Path
+
 ```text
 User query (browser)
   │
   ▼
 POST /api/chat (Next.js API route)
-  │  Validates schema (zod), checks auth cookie
+  │  Validates schema, checks auth cookie
   │
   ▼
 POST /api/chat (FastAPI — Railway)
-  │  1. Verify JWT (Supabase JWT secret, HS256)
-  │  2. Decode user ID + role from claims
-  │  3. Select LLM model based on role
+  │  1. Verify JWT (Supabase HS256)
+  │  2. Decode user ID + role
+  │  3. Detect Medicaid eligibility intent → route to Medicaid path if yes
   │
   ▼
 Embed query
-  │  OpenAI text-embedding-3-small → 768-dim vector
+  │  OpenAI text-embedding-3-small → 1536-dim vector
   │
   ▼
 Hybrid search (Supabase RPC: hybrid_search_rag)
@@ -64,19 +68,45 @@ Sentence window expansion
   │  Each chunk → window of ±3 sentences from source node
   │
   ▼
-FlashRank re-ranking
-  │  ms-marco-MiniLM-L-12-v2 cross-encoder → top-5 chunks
+FlashRank re-ranking → top-5 chunks
   │
   ▼
-Build prompt
-  │  System prompt + context chunks + conversation history
+Build prompt (BASE_SYSTEM_PROMPT + context + history)
   │
   ▼
-LLM (Groq Llama 3.3-70b OR Claude Sonnet 4.6)
-  │  Streams tokens
+LLM (tier-appropriate model) → streams tokens → browser
+```
+
+### Medicaid Eligibility Query Path
+
+```text
+User query contains Medicaid intent keywords
   │
   ▼
-Stream response → browser
+POST /api/chat (FastAPI)
+  │  _detect_medicaid_intent() → True
+  │  Model floor: free/student bumped to Llama 3.3-70b
+  │
+  ▼
+Embed query → 1536-dim vector
+  │
+  ▼
+Hybrid search with pillar filter: "Medicaid Eligibility"
+  │  Scoped to medicaid_eligibility chunks only → top-25
+  │  Fallback: unfiltered search if < 3 results
+  │
+  ▼
+FlashRank re-ranking → top-8 chunks
+  │  (More chunks than general path — eligibility answers
+  │   require multiple rule sections to reason correctly)
+  │
+  ▼
+Build prompt (MEDICAID_ELIGIBILITY_SYSTEM_PROMPT + context + history)
+  │  Specialized prompt: step-by-step eligibility reasoning,
+  │  mandatory rule citation, mandatory VHC disclaimer
+  │
+  ▼
+LLM → streams tokens → browser
 ```
 
 ---
@@ -85,12 +115,53 @@ Stream response → browser
 
 ### Source Documents
 
-The knowledge base is built from two source types:
+The knowledge base is built from three source types:
 
-| Source | Content | Format |
-| --- | --- | --- |
-| Sanity CMS | Policy analyses, blog posts, academy modules, case studies, definitions | Portable Text → plain text |
-| Static PDFs | Technical reports, white papers, government documents | PDF → extracted text |
+| Source | Location | Content | Chunking Strategy |
+|---|---|---|---|
+| Sanity CMS | — | Policy analyses, blog posts, academy modules, case studies, definitions | SentenceWindowNodeParser (±3 sentences) |
+| General PDFs | `backend/data/*.pdf` | Technical reports, white papers, government documents | SentenceWindowNodeParser (±3 sentences) |
+| Medicaid Eligibility PDFs | `backend/data/medicaid_eligibility/*.pdf` | Vermont Medicaid rules, income charts, federal regulations | Section-aware chunking (see Section 4) |
+
+### Dual Pipeline in `build_index()`
+
+The ingestion pipeline has two separate node paths. Medicaid documents **must not** be processed by `SentenceWindowNodeParser` — that parser splits content at sentence boundaries, which destroys the conditional if/then logic in regulatory text (e.g., "IF age ≥ 65 AND income ≤ X THEN eligible for MABD" split across 3 chunks loses the eligibility logic). Instead, Medicaid docs go directly to `TextNode` objects after section-aware chunking.
+
+```python
+async def build_index():
+    # ── Path A: Medicaid eligibility docs (specialized parser) ──────────────
+    medicaid_nodes = []
+    if MEDICAID_DIR.exists():
+        medicaid_docs = parse_medicaid_directory(MEDICAID_DIR)
+        for doc in medicaid_docs:
+            medicaid_nodes.append(TextNode(
+                text=doc.text,
+                metadata=doc.metadata,   # includes source_type, program_type, part, section_heading
+            ))
+
+    # ── Path B: General PDFs + Sanity CMS (sentence window) ─────────────────
+    general_documents = []
+    # ... load PDFs with SimpleDirectoryReader + fetch Sanity content ...
+
+    parser = SentenceWindowNodeParser.from_defaults(
+        window_size=3,
+        window_metadata_key="window",
+        original_text_metadata_key="original_text",
+    )
+    general_nodes = parser.get_nodes_from_documents(general_documents)
+
+    # ── Safety pass (applied to ALL nodes before embedding) ─────────────────
+    # PostgreSQL rejects NUL bytes; OpenAI embeddings reject inputs > 8192 tokens.
+    for n in all_nodes:
+        n.text = n.text.replace("\x00", "")            # strip NUL bytes
+        if len(n.text) > 30_000:
+            n.text = n.text[:30_000]                   # ~7500 tokens, safely under limit
+
+    # ── Embed + store ────────────────────────────────────────────────────────
+    all_nodes = medicaid_nodes + general_nodes
+    index = VectorStoreIndex(all_nodes, storage_context=storage_context)
+    return index
+```
 
 ### Sanity GROQ Queries
 
@@ -102,78 +173,35 @@ SANITY_QUERIES = {
         _id, title, pillar, summary,
         "bodyText": pt::text(body)
     }""",
-    "post": """*[_type=="post" && defined(slug.current)]{
-        _id, title,
-        "bodyText": pt::text(body)
+    "post":           """*[_type=="post" && defined(slug.current)]{
+        _id, title, "bodyText": pt::text(body)
     }""",
-    "academyModule": """*[_type=="academyModule" && defined(slug.current)]{
+    "academyModule":  """*[_type=="academyModule" && defined(slug.current)]{
         _id, title, pillar, summary, learningObjectives,
         "bodyText": pt::text(body)
     }""",
-    "caseStudy": """*[_type=="caseStudy" && defined(slug.current)]{
-        _id, title, pillar, summary,
-        "bodyText": pt::text(body)
+    "caseStudy":      """*[_type=="caseStudy" && defined(slug.current)]{
+        _id, title, pillar, summary, "bodyText": pt::text(body)
     }""",
-    "definition": """*[_type=="definition"]{
+    "definition":     """*[_type=="definition"]{
         _id, term, description, pillars
+    }""",
+    "analystNote":    """*[_type=="analystNote"]{
+        _id, title, pillar, "bodyText": pt::text(body)
+    }""",
+    "webinar":        """*[_type=="webinar" && defined(slug.current)]{
+        _id, title, pillar, description
+    }""",
+    "report":         """*[_type=="report" && defined(slug.current)]{
+        _id, title, pillar, abstract
     }""",
 }
 ```
 
-### Chunking Strategy — Sentence Window
-
-Documents are chunked using LlamaIndex's `SentenceWindowNodeParser`:
-
-```python
-from llama_index.core.node_parser import SentenceWindowNodeParser
-
-parser = SentenceWindowNodeParser.from_defaults(
-    window_size=3,          # ±3 sentences around the anchor sentence
-    window_metadata_key="window",
-    original_text_metadata_key="original_text",
-)
-```
-
-Each chunk is a single sentence (the anchor). At retrieval time, the ±3 sentence window is expanded to provide richer context. This balances precision at retrieval with contextual richness at generation.
-
-### Ingestion Flow
-
-```python
-# Simplified from backend/services/indexing.py
-
-async def build_index():
-    # 1. Fetch Sanity content
-    documents = await fetch_sanity_content()
-
-    # 2. Load static PDFs from backend/data/
-    pdf_docs = SimpleDirectoryReader(DATA_DIR).load_data()
-    documents.extend(pdf_docs)
-
-    # 3. Parse into sentence-window nodes
-    parser = SentenceWindowNodeParser.from_defaults(window_size=3)
-    nodes = parser.get_nodes_from_documents(documents)
-
-    # 4. Embed + store in pgvector
-    if SUPABASE_DB_URL:
-        vector_store = PGVectorStore.from_params(
-            database_url=SUPABASE_DB_URL,
-            table_name="rag_documents",
-            embed_dim=768,
-        )
-        storage_context = StorageContext.from_defaults(vector_store=vector_store)
-    else:
-        storage_context = StorageContext.from_defaults()  # local JSON fallback
-
-    index = VectorStoreIndex(nodes, storage_context=storage_context)
-    return index
-```
-
 ### Triggering Re-ingestion
 
-Ingestion is triggered automatically by Sanity webhooks when content is published. Manual triggers are available:
-
 ```bash
-# Manual trigger via API
+# Manual trigger
 curl -X POST https://your-backend.railway.app/api/ingest \
   -H "Authorization: Bearer YOUR_INGEST_SECRET"
 
@@ -182,18 +210,213 @@ curl https://your-backend.railway.app/api/ingest/status \
   -H "Authorization: Bearer YOUR_INGEST_SECRET"
 ```
 
-From the admin dashboard, the "Trigger Ingest" button on the `/admin/ingest` page sends the same request.
+Ingestion is also triggered automatically by Sanity webhooks on content publish. The admin dashboard `/admin/ingest` has a "Trigger Ingest" button that calls the same endpoint.
 
 ---
 
-## 4. Embedding Model
+## 4. Medicaid Eligibility RAG Subsystem
+
+### Why a Specialized Subsystem
+
+Vermont Medicaid eligibility documents have structural properties that defeat standard PDF parsers and sentence-window chunkers:
+
+| Problem | Standard RAG failure | Our solution |
+|---|---|---|
+| **Tables** (income charts, FPL thresholds) | `pypdf` outputs garbled text with misaligned columns | `pdfplumber` extracts tables as structured markdown |
+| **Conditional logic** ("IF age AND income THEN eligible") | Sentence-window splits conditions across chunks | Section-aware chunking keeps rules intact |
+| **Multi-column layouts** | `pypdf` reads columns in wrong order | `pdfplumber` respects reading order |
+| **Regulatory hierarchy** (Part → Section → Subsection) | Lost in flat sentence chunks | Section headings detected and preserved as metadata |
+| **Cross-references** ("see Part 3, Section 4.2") | No context to resolve them | The combined HBEE PDF is indexed as a single source |
+
+### Document Collection
+
+23 PDF documents are stored in `backend/data/medicaid_eligibility/`. The collection was assembled from official Vermont state government sources and the GPO (Government Printing Office) for federal rules.
+
+| File | Source | Content |
+|---|---|---|
+| `HBEE-Combined-All-Parts-Dec2025.pdf` | humanservices.vermont.gov | All 8 HBEE parts combined (Dec 2025) — primary reference |
+| `HBEE-Part-1-General-Provisions-and-Definitions.pdf` | humanservices.vermont.gov | Definitions, general provisions |
+| `HBEE-Part-2-Eligibility-Standards.pdf` | humanservices.vermont.gov | Eligibility groups (Medicaid, Dr. Dynasaur, VHAP, etc.) |
+| `HBEE-Part-3-Nonfinancial-Eligibility-Requirements.pdf` | humanservices.vermont.gov | Residency, citizenship, immigration status |
+| `HBEE-Part-4-Special-Rules-for-Medicaid-LTC.pdf` | humanservices.vermont.gov | Long-term care Medicaid rules |
+| `HBEE-Part-5-Financial-Methodologies.pdf` | humanservices.vermont.gov | Income/asset calculation rules |
+| `HBEE-Part-6-Adopted-Rule-16-099.pdf` | humanservices.vermont.gov | 2016 rule adoption |
+| `HBEE-Part-7-Eligibility-and-Enrollment-Procedures.pdf` | humanservices.vermont.gov | Application & enrollment process |
+| `HBEE-Part-8-Adopted-Scrubbed.pdf` | humanservices.vermont.gov | Most recent amendments |
+| `MABD-PIL-Income-Chart-2026.pdf` | dvha.vermont.gov | MABD Protected Income Level chart (2026) |
+| `MAGI-Income-Methodology.pdf` | dvha.vermont.gov | MAGI calculation methodology |
+| `Standards-Change-Healthcare-2026.pdf` | dvha.vermont.gov | 2026 income standard changes |
+| `2026-MCA-FPL-Chart.pdf` | healthconnect.vermont.gov | FPL chart for Medicaid/CHIP (2026) |
+| `2026-MCA-PIL-FPL-Disregard-Chart.pdf` | healthconnect.vermont.gov | PIL/FPL disregard chart (2026) |
+| `2026-Eligibility-Income-Thresholds-QHP.pdf` | healthconnect.vermont.gov | QHP subsidy income thresholds (2026) |
+| `Health-Program-Eligibility-Tables.pdf` | dvha.vermont.gov | All programs at a glance |
+| `VPharm-Income-Guidelines-2026.pdf` | dvha.vermont.gov | Vermont pharmacy program income limits |
+| `MABD-NewApplicants-Attestation-Verification.pdf` | dvha.vermont.gov | Required verification documents |
+| `Vermont-Medicaid-General-Provider-Manual.pdf` | vtmedicaid.com | Provider coverage and billing rules |
+| `Choices-for-Care-Regulations.pdf` | asd.vermont.gov | Full long-term care Medicaid regulations |
+| `Choices-for-Care-Eligibility-At-A-Glance.pdf` | asd.vermont.gov | LTC eligibility quick reference |
+| `Choices-for-Care-Options-At-A-Glance.pdf` | asd.vermont.gov | LTC program options summary |
+| `42-CFR-Part-435-Medicaid-Eligibility.pdf` | govinfo.gov (GPO) | Federal CFR Title 42 Part 435 |
+
+**Total:** 23 PDFs → **1,246 section chunks** after parsing.
+
+### The Medicaid Parser (`backend/services/medicaid_parser.py`)
+
+The parser uses `pdfplumber` instead of `pypdf` and applies section-aware chunking.
+
+**Table extraction:**
+
+```python
+def _table_to_markdown(table: list) -> str:
+    """Convert a pdfplumber table (list of rows) to markdown."""
+    rows = [[clean(str(cell or "")).strip() for cell in row] for row in table]
+    rows = [r for r in rows if any(c for c in r)]
+    header    = "| " + " | ".join(rows[0]) + " |"
+    separator = "| " + " | ".join(["---"] * len(rows[0])) + " |"
+    body      = "\n".join("| " + " | ".join(r) + " |" for r in rows[1:])
+    return "\n".join([header, separator, body])
+```
+
+Tables are kept as intact markdown chunks so the LLM receives structured income data (e.g., household size → income threshold) rather than garbled text.
+
+**Section heading detection:**
+
+```python
+_HEADING_PATTERNS = [
+    re.compile(r"^(Part\s+\d+)", re.IGNORECASE),
+    re.compile(r"^(Section\s+[\d.]+)", re.IGNORECASE),
+    re.compile(r"^(\d{1,2}\.\d{1,2}(?:\.\d{1,2})?)\s+\S"),   # 2.3 or 2.3.1
+    re.compile(r"^([A-Z][A-Z\s]{3,50})$"),                     # ALL-CAPS headings
+    re.compile(r"^(CHAPTER\s+\d+|SUBCHAPTER\s+\w+)", re.IGNORECASE),
+]
+```
+
+When a heading is detected, the current section is flushed as a chunk and a new section begins. Oversized sections are split at paragraph boundaries (never mid-sentence).
+
+**Chunk metadata:**
+
+Every Medicaid chunk carries metadata that enables scoped retrieval and accurate citations:
+
+```python
+{
+    "source":          "pdf",
+    "source_type":     "medicaid_eligibility",   # used for pillar filter
+    "program_type":    "HBEE Rules",             # inferred from filename/content
+    "part":            "Part 2",                 # HBEE part number when determinable
+    "section_heading": "2.3 Eligibility for...", # nearest detected heading
+    "page_num":        14,
+    "file_name":       "HBEE-Part-2-Eligibility-Standards.pdf",
+    "pillar":          "Medicaid Eligibility",   # used by HybridRetriever filter
+}
+```
+
+**Program type inference** — automatically assigned based on filename and early-page content:
+
+| Keyword | Assigned `program_type` |
+|---|---|
+| `choices`, `long-term`, `ltc` | Long-Term Care / Choices for Care |
+| `magi` | MAGI Medicaid |
+| `mabd` | MABD Medicaid |
+| `vpharm` | VPharm |
+| `provider` | Provider Rules |
+| `42-cfr`, `cfr` | Federal Rules (42 CFR 435) |
+| `fpl`, `threshold` | Income Thresholds |
+| `hbee`, `health benefits` | HBEE Rules |
+
+**Parse results by program type:**
+
+| Program Type | Chunks |
+|---|---|
+| HBEE Rules | 974 |
+| MAGI Medicaid | 118 |
+| Long-Term Care / Choices for Care | 43 |
+| Federal Rules (42 CFR 435) | 41 |
+| Provider Rules | 28 |
+| MABD Medicaid | 23 |
+| Vermont Medicaid / VPharm / Income Thresholds | 19 |
+| **Total** | **1,246** |
+
+### Medicaid Intent Detection (`routers/chat.py`)
+
+The chat endpoint detects Medicaid eligibility intent before retrieval using a two-pass check:
+
+```python
+_MEDICAID_KEYWORDS = {
+    # Program names
+    "medicaid", "dr. dynasaur", "vhap", "mabd", "magi",
+    "choices for care", "vpharm", "vermont health connect",
+    # Eligibility concepts
+    "eligible", "eligibility", "qualify", "enroll", "enrollment",
+    "health insurance", "health coverage", "health benefits",
+    # Financial
+    "income limit", "income threshold", "fpl", "federal poverty",
+    "protected income", "pil chart", "household size",
+    # Program-specific
+    "long-term care", "nursing home", "ltc medicaid", "spend down",
+    # Vermont-specific
+    "hbee", "dvha", "affordable care act",
+    ...
+}
+
+_MEDICAID_QUESTION_PHRASES = (
+    "am i eligible", "do i qualify", "can i get", "how do i apply",
+    "what are the requirements", "who qualifies", "will i qualify", ...
+)
+
+def _detect_medicaid_intent(message: str) -> bool:
+    lower = message.lower()
+    if any(phrase in lower for phrase in _MEDICAID_QUESTION_PHRASES):
+        return True
+    return any(kw in lower for kw in _MEDICAID_KEYWORDS)
+```
+
+When `_detect_medicaid_intent()` returns `True`:
+1. Retrieval is scoped to `pillar="Medicaid Eligibility"` with `top_k=25`
+2. Re-ranking returns `top_k=8` (vs. 5 for general queries)
+3. System prompt switches to `MEDICAID_ELIGIBILITY_SYSTEM_PROMPT`
+4. Free/student users are bumped to Llama 3.3-70b (eligibility reasoning requires the larger model)
+
+### Medicaid System Prompt
+
+```python
+MEDICAID_ELIGIBILITY_SYSTEM_PROMPT = (
+    "You are a Vermont Medicaid eligibility specialist. "
+    "Your role is to help Vermont residents understand whether they may qualify for "
+    "Medicaid or related health coverage programs based on official Vermont state rules. "
+    ...
+    "When answering eligibility questions:\n"
+    "1. Cite the specific rule part and section (e.g. 'HBEE Part 2, Section 2.3').\n"
+    "2. Walk through eligibility criteria step by step — category, residency, "
+    "income, and program-specific requirements.\n"
+    "3. Use the 2026 income charts to give specific dollar thresholds by household size.\n"
+    "4. Ask clarifying questions if the user's situation is ambiguous.\n"
+    "5. Always close with: 'This is general information based on Vermont state rules. "
+    "For a formal eligibility determination, apply at Vermont Health Connect "
+    "(healthconnect.vermont.gov) or call 1-800-250-8427.'\n"
+    "6. Never fabricate rule sections or income numbers."
+)
+```
+
+The mandatory Vermont Health Connect disclaimer (item 5) is required on every eligibility response. The system prompt enforces it — it is not optional and must not be removed.
+
+### Re-ingesting Medicaid Documents
+
+To add a new Medicaid document:
+1. Place the PDF in `backend/data/medicaid_eligibility/`
+2. Trigger a full re-ingest: `POST /api/ingest`
+
+The parser will automatically detect the program type from the filename and content. To update an existing document, replace the file and re-ingest.
+
+---
+
+## 5. Embedding Model
 
 | Setting | Value |
-| --- | --- |
+|---|---|
 | Provider | OpenAI |
 | Model | `text-embedding-3-small` |
-| Dimensions | 768 |
-| Max tokens | 8,191 |
+| Dimensions | **1536** |
+| Max tokens | 8,192 |
 | Cost | ~$0.02 / million tokens |
 
 Configured in `backend/services/llm.py`:
@@ -201,21 +424,21 @@ Configured in `backend/services/llm.py`:
 ```python
 from llama_index.embeddings.openai import OpenAIEmbedding
 
-embed_model = OpenAIEmbedding(
+Settings.embed_model = OpenAIEmbedding(
     model="text-embedding-3-small",
-    dimensions=768,
     api_key=OPENAI_API_KEY,
 )
-Settings.embed_model = embed_model
 ```
 
-The same model is used for both ingestion (document embedding) and retrieval (query embedding), ensuring the vector space is consistent.
+> **Note:** The pgvector table is configured with `embed_dim=1536`. If you change the embedding model, you must drop and recreate the `rag_documents` table with the correct dimension.
+
+The same model is used for both ingestion and retrieval, ensuring vector space consistency.
 
 ---
 
-## 5. Vector Store (pgvector)
+## 6. Vector Store (pgvector)
 
-Embeddings are stored in Supabase PostgreSQL using the `pgvector` extension. The `rag_documents` table holds chunked text alongside 768-dimensional embedding vectors.
+Embeddings are stored in Supabase PostgreSQL using the `pgvector` extension. The `rag_documents` table holds chunked text alongside 1536-dimensional embedding vectors.
 
 ### Storage Configuration
 
@@ -223,20 +446,14 @@ Embeddings are stored in Supabase PostgreSQL using the `pgvector` extension. The
 from llama_index.vector_stores.postgres import PGVectorStore
 
 vector_store = PGVectorStore.from_params(
-    database_url=SUPABASE_DB_URL,
+    connection_string=SUPABASE_DB_URL,
+    async_connection_string=SUPABASE_DB_URL.replace("postgresql://", "postgresql+asyncpg://"),
     table_name="rag_documents",
-    embed_dim=768,
-    hnsw_kwargs={
-        "hnsw_m": 16,
-        "hnsw_ef_construction": 64,
-        "hnsw_ef_search": 40,
-    }
+    embed_dim=1536,
 )
 ```
 
 ### HNSW Index
-
-The Hierarchical Navigable Small World (HNSW) index enables sub-millisecond approximate nearest-neighbor (ANN) search:
 
 ```sql
 CREATE INDEX idx_rag_embedding
@@ -246,121 +463,110 @@ CREATE INDEX idx_rag_embedding
 ```
 
 - `m = 16` — graph branching factor. Higher values increase recall but slow index construction.
-- `ef_construction = 64` — search width during build. Higher values improve accuracy.
+- `ef_construction = 64` — search width during build.
 - `ef_search` — set at query time; controls accuracy vs. latency tradeoff.
 
 ### Fallback — Local JSON Storage
 
-If `SUPABASE_DB_URL` is not set, the index falls back to LlamaIndex's local JSON vector store in `backend/storage/`. This is suitable for development without a Supabase instance.
+If `SUPABASE_DB_URL` is not set, the index falls back to LlamaIndex's local JSON vector store in `backend/storage/`. Suitable for development without Supabase.
 
 ---
 
-## 6. Hybrid Retrieval
+## 7. Hybrid Retrieval
 
-The `HybridRetriever` class in `backend/services/retrieval.py` calls the `hybrid_search_rag` Supabase RPC, which combines two retrieval methods:
+The `HybridRetriever` class in `backend/services/retrieval.py` calls the `hybrid_search_rag` Supabase RPC.
 
 ### Dense Retrieval (Vector)
 
-Computes cosine similarity between the query embedding and all stored document embeddings using the HNSW index. Fast (sub-10ms for typical corpus sizes). Good at semantic similarity — finds conceptually related content even when keywords differ.
+Cosine similarity between query embedding and stored document embeddings via HNSW index. Good at semantic similarity — finds related content even when exact keywords differ.
 
 ### Sparse Retrieval (BM25)
 
-Uses PostgreSQL's built-in full-text search: `to_tsvector` for indexing, `plainto_tsquery` for query parsing, and `ts_rank` for scoring. Good at exact keyword matching. Required for proper nouns, acronyms, and technical terms (e.g., "FHIR", "AHEAD model", "APM").
+PostgreSQL full-text search: `to_tsvector` for indexing, `plainto_tsquery` for parsing, `ts_rank` for scoring. Good at exact keyword matching — required for proper nouns, acronyms, and legal terms (e.g., "MABD", "PIL chart", "HBEE Part 5").
 
 ### Reciprocal Rank Fusion
-
-Both result lists are merged using RRF with `k=60`:
 
 ```
 RRF score = (dense_weight / (60 + dense_rank)) + (sparse_weight / (60 + sparse_rank))
 ```
 
-Default weights: `dense=0.6`, `sparse=0.4`. Adjust in `hybrid_search_rag` SQL function if retrieval quality needs tuning.
+Default weights: `dense=0.6`, `sparse=0.4`.
 
-### Retrieval Parameters
+### Retrieval Parameters by Query Type
 
-| Parameter | Default | Purpose |
-| --- | --- | --- |
-| `top_k` | 20 | Chunks returned by hybrid search before re-ranking |
-| Final chunks | 5 | Chunks passed to LLM after re-ranking |
-| `window_size` | 3 | Sentence window expansion (±3 sentences) |
+| Parameter | General queries | Medicaid eligibility queries |
+|---|---|---|
+| `top_k` (before rerank) | 20 | 25 |
+| Final chunks (after rerank) | 5 | 8 |
+| Pillar filter | From request (optional) | `"Medicaid Eligibility"` (forced) |
+| Sentence window expansion | Yes (±3 sentences) | No (section chunks used as-is) |
+| Fallback if < 3 results | Unfiltered search | Unfiltered search |
+
+The higher `top_k` and final chunk count for Medicaid queries is intentional: an eligibility determination typically requires combining income thresholds (from one chunk), residency rules (another), program category definitions (another), and procedural requirements (another). Passing only 5 chunks to the LLM risks omitting a critical rule.
 
 ---
 
-## 7. Re-ranking
+## 8. Re-ranking
 
-After hybrid retrieval returns 20 candidates, FlashRank applies cross-encoder re-ranking to select the top 5 most relevant chunks.
+After hybrid retrieval, FlashRank applies cross-encoder re-ranking to select the top chunks.
 
 ### FlashRank Configuration
 
 ```python
-# backend/services/llm.py
-from flashrank import Ranker, RerankRequest
+from flashrank import Ranker
 
-_ranker: Ranker | None = None
-
-def get_ranker() -> Ranker | None:
-    global _ranker
-    if _ranker is None:
-        try:
-            _ranker = Ranker(model_name="ms-marco-MiniLM-L-12-v2")
-        except Exception as e:
-            log.warning(f"FlashRank not available: {e}")
-    return _ranker
+_ranker = Ranker(
+    model_name="ms-marco-MiniLM-L-12-v2",
+    cache_dir="/tmp/flashrank"
+)
 ```
 
-Model: `ms-marco-MiniLM-L-12-v2` — a cross-encoder fine-tuned on MS MARCO passage ranking. It scores (query, passage) pairs directly rather than comparing embeddings, which gives significantly better ranking quality.
+Model: `ms-marco-MiniLM-L-12-v2` — a cross-encoder fine-tuned on MS MARCO passage ranking. Scores (query, passage) pairs directly rather than comparing embeddings, giving significantly better ranking quality than bi-encoder retrieval alone.
 
 The model downloads to `/tmp/flashrank` on first use (~100MB). Subsequent startups reuse the cached model.
 
-### Re-ranking Function
-
-```python
-# backend/services/retrieval.py
-def rerank_nodes(query: str, nodes: List[NodeWithScore], top_k: int = 5) -> List[NodeWithScore]:
-    ranker = get_ranker()
-    if ranker is None or not nodes:
-        return nodes[:top_k]
-
-    passages = [{"id": i, "text": n.node.get_content()} for i, n in enumerate(nodes)]
-    request = RerankRequest(query=query, passages=passages)
-    results = ranker.rerank(request)
-
-    reranked = []
-    for r in results[:top_k]:
-        original = nodes[r["id"]]
-        reranked.append(NodeWithScore(node=original.node, score=r["score"]))
-    return reranked
-```
-
 ---
 
-## 8. LLM Routing
+## 9. LLM Routing
 
-The model used for generation is determined by the user's role. This is resolved in `backend/services/auth.py` when the JWT is decoded.
+### Base Routing (all queries)
 
-| Role | Model | Characteristics |
-| --- | --- | --- |
-| `free` | Groq Llama 3.1-8b | Fastest, lower quality |
-| `subscriber` / `student` | Groq Llama 3.3-70b | High quality, low latency |
-| `professional` / `advisory` | Claude Sonnet 4.6 | Highest quality, longer context |
-| `admin` | Groq Llama 3.3-70b | Same as subscriber |
+| Role | Model | Notes |
+|---|---|---|
+| `free` / `student` | Groq Llama 3.1-8b-instant | Fastest, lower quality |
+| `subscriber` / `professional` | Groq Llama 3.3-70b-versatile | High quality, low latency |
+| `advisory` / `admin` | Claude Sonnet 4.6 (Anthropic) | Highest quality, longest context |
 
-Configuration in `backend/config.py`:
+### Medicaid Eligibility Override
+
+When `_detect_medicaid_intent()` is `True`, free/student users are promoted to Llama 3.3-70b for that query only. Advisory/admin users remain on Claude Sonnet 4.6.
 
 ```python
-MODEL_FREE       = "llama-3.1-8b-instant"    # Groq
-MODEL_SUBSCRIBER = "llama-3.3-70b-versatile"  # Groq
-MODEL_ADVISORY   = "claude-sonnet-4-6"        # Anthropic
+def _get_llm_for_medicaid(user: AuthedUser):
+    if user.role in ("free", "student"):
+        # Bump up — eligibility reasoning requires the larger model
+        return FallbackLLM(
+            primary=GroqLLM(model=MODEL_SUBSCRIBER),
+            fallbacks=[GroqLLM(model=MODEL_FREE)],
+        )
+    return get_llm_for_role(user.role)
 ```
+
+### Fallback Chain
+
+Each model is wrapped in `FallbackLLM`, which catches retryable errors (429, 5xx, rate limit) and tries the next model in the chain:
+
+- Advisory/Admin: Claude Sonnet 4.6 → Llama 3.3-70b → Llama 3.1-8b → GPT-4o-mini
+- Subscriber: Llama 3.3-70b → Llama 3.1-8b → GPT-4o-mini
+- Free/Student: Llama 3.1-8b → GPT-4o-mini
 
 ### Dev Bypass
 
-When `SUPABASE_JWT_SECRET` is not set in the backend environment, all requests are treated as `role="subscriber"` (Llama 3.3-70b). This allows local development without a valid JWT.
+When `SUPABASE_JWT_SECRET` is not set, all requests are treated as `role="subscriber"` (Llama 3.3-70b). This allows local development without a valid JWT.
 
 ---
 
-## 9. Chat API
+## 10. Chat API
 
 ### Endpoint
 
@@ -374,32 +580,60 @@ Rate: 30/min per IP (slowapi)
 
 ```python
 class ChatRequest(BaseModel):
-    message:      str             # max 2000 chars
-    history:      list[dict]      # max 100 items, each {role, text}, max 4000 chars/item
-    temperature:  float = 0.7     # 0.0–1.0
-    systemPrompt: str = ""        # max 800 chars; appended to default system prompt
+    message:         str            # max 2000 chars
+    history:         list[dict]     # [{role, text}], max 4000 chars/item
+    temperature:     float = 0.7    # 0.0–1.0
+    systemPrompt:    str | None     # max 800 chars; overrides default system prompt
+    conversation_id: str | None     # for conversation persistence
+    pillar:          str | None     # policy|economics|technology|clinical|equity
 ```
 
 ### Response
 
-`text/plain` stream. The frontend reads the stream with `ReadableStream` and appends tokens to the UI as they arrive.
+`text/plain` stream. Citations are appended after the response text as a sentinel:
 
-### System Prompt
+```
+[CITATIONS][{"title":"...","url":"...","pillar":"...","source_type":"..."},...][/CITATIONS]
+```
 
-Defined in `routers/chat.py`:
+The frontend strips the sentinel and renders citations separately below the response.
+
+### System Prompts
+
+Three system prompts are in use:
+
+**`BASE_SYSTEM_PROMPT`** — used for general healthcare policy questions (subscriber/professional role without Medicaid intent):
+
+```
+You are an expert AI Analyst for the Health Transformation Review (HTR).
+Your audience consists of healthcare executives, policy makers, and economists.
+Answer questions thoroughly and professionally, citing specific policies, data,
+and source documents where relevant...
+```
+
+**`ADVISORY_SYSTEM_PROMPT`** — `BASE_SYSTEM_PROMPT` extended with deeper strategic analysis instructions for advisory/admin users without Medicaid intent.
+
+**`MEDICAID_ELIGIBILITY_SYSTEM_PROMPT`** — replaces the base prompt entirely for any query with Medicaid intent. See Section 4 for the full prompt text.
+
+### Query Rewriting
+
+For follow-up questions, a fast LLM (Llama 3.1-8b) rewrites the question into a standalone retrieval query incorporating conversation history, before the query is embedded and sent to the vector store:
 
 ```python
-SYSTEM_PROMPT = """You are the HTR AI Analyst — an expert in U.S. healthcare
-transformation across policy, economics, technology, clinical innovation, and
-health equity.
-
-Answer questions using ONLY the provided context. If the context does not
-contain enough information to fully answer, say so clearly.
-
-Cite your sources when possible. Format responses with clear headings and
-bullet points where appropriate. Keep responses focused and actionable.
-"""
+async def _rewrite_query(message: str, history: list) -> str:
+    # Uses the last 6 messages as context
+    # Returns a self-contained query string optimized for retrieval
+    ...
 ```
+
+Falls back to the raw message if rewriting fails or there is no prior history.
+
+### Structured Output Detection
+
+The chat endpoint detects comparison and list requests and appends format instructions to the system prompt:
+
+- Comparison phrases ("compare", "versus", "difference between") → inject markdown table format instruction
+- List phrases ("list", "summarize into", "step-by-step") → inject bullet/header format instruction
 
 ### Follow-up Suggestions
 
@@ -407,17 +641,17 @@ bullet points where appropriate. Keep responses focused and actionable.
 POST /api/suggest
 Auth: optional
 Rate: 60/min per IP
-Body: { "topic": "string" }
+Body: { "message": "...", "history": [...] }
 Response: { "suggestions": ["string", "string", "string"] }
 ```
 
-Returns 3 contextual follow-up question suggestions displayed below each AI response in the chat UI.
+Returns 3 contextual follow-up question suggestions displayed below each AI response.
 
 ---
 
-## 10. Personalized Learning Generation
+## 11. Personalized Learning Generation
 
-The Personalized Learning feature (`/academy/personalized-learning`) generates a multi-week structured learning curriculum using a separate LLM call, not the RAG pipeline.
+The Personalized Learning feature (`/academy/personalized-learning`) generates a multi-week structured learning curriculum using a direct LLM call — it does not use the RAG pipeline.
 
 ### Endpoint
 
@@ -430,17 +664,17 @@ Auth: Bearer JWT
 
 ```python
 class LearningPathRequest(BaseModel):
-    role:                str
-    topics:              list[str]
-    difficulty:          Literal["foundational", "intermediate", "advanced"]
-    weekly_hours:        str       # e.g. "3-5"
-    goals:               str
-    format_preferences:  list[str] = []
+    role:               str
+    topics:             list[str]
+    difficulty:         Literal["foundational", "intermediate", "advanced"]
+    weekly_hours:       str         # e.g. "3-5"
+    goals:              str
+    format_preferences: list[str] = []
 ```
 
 ### Generation Strategy
 
-The backend constructs a detailed system prompt instructing the LLM to generate a JSON curriculum with structured weeks, items, and knowledge checks. The curriculum is returned as structured JSON and stored in `user_learning_paths`.
+The backend constructs a detailed system prompt instructing the LLM to return a JSON curriculum with structured weeks, items, and knowledge checks. The curriculum is stored in `user_learning_paths`.
 
 ### Text-to-Speech
 
@@ -451,13 +685,29 @@ Body: { "text": "...", "voice": "alloy|echo|fable|onyx|nova|shimmer" }
 Response: audio/mpeg (streaming MP3)
 ```
 
-Uses OpenAI TTS API (`tts-1` model). The frontend plays the audio directly in the browser.
+Uses OpenAI TTS API (`tts-1` model).
 
 ---
 
-## 11. Extending the Pipeline
+## 12. Extending the Pipeline
 
-### Adding a New Content Type to the Index
+### Adding a General PDF to the Knowledge Base
+
+Place a PDF in `backend/data/` (not in a subdirectory). The `SimpleDirectoryReader` picks up all files in the root `data/` directory on next ingest. Re-ingest to index.
+
+Chunks will be tagged `source_type: "general"` and processed through `SentenceWindowNodeParser`.
+
+### Adding a Medicaid Eligibility Document
+
+Place a PDF in `backend/data/medicaid_eligibility/`. The medicaid parser will:
+1. Auto-detect the program type from the filename
+2. Extract tables as markdown
+3. Chunk at section boundaries
+4. Tag with `pillar: "Medicaid Eligibility"` for scoped retrieval
+
+Re-ingest to index. No code changes needed for standard Vermont state government PDFs.
+
+### Adding a New Sanity Content Type
 
 In `backend/services/indexing.py`, add a GROQ query to `SANITY_QUERIES`:
 
@@ -468,46 +718,51 @@ SANITY_QUERIES["myNewType"] = """*[_type=="myNewType" && defined(slug.current)]{
 }"""
 ```
 
-After adding, trigger a re-ingest. The new content type will be chunked and embedded automatically.
-
-### Adding a Static Document
-
-Place a PDF or text file in `backend/data/`. The `SimpleDirectoryReader` ingests all files in this directory on each rebuild. Re-ingest to index the new file.
+Trigger a re-ingest to index.
 
 ### Changing Retrieval Parameters
 
-Adjust `top_k` in the `HybridRetriever` constructor and the final `top_k` in `rerank_nodes()`:
+For general queries, adjust in `routers/chat.py`:
 
 ```python
-# In routers/chat.py
-retriever = HybridRetriever(supabase=sb, top_k=30)  # retrieve more candidates
-nodes = rerank_nodes(query, nodes, top_k=8)           # pass more to LLM
+nodes = HybridRetriever(supabase=supabase, top_k=30).retrieve(query_bundle)
+nodes = rerank_nodes(retrieval_query, nodes, top_k=8)
+```
+
+For Medicaid queries, adjust the `is_medicaid_query` branch:
+
+```python
+nodes = HybridRetriever(supabase=supabase, top_k=30, filter_pillar=MEDICAID_PILLAR).retrieve(query_bundle)
+nodes = rerank_nodes(retrieval_query, nodes, top_k=10)
 ```
 
 ### Changing RRF Weights
 
-Edit the `dense_weight` and `sparse_weight` variables inside the `hybrid_search_rag` SQL function in Supabase. Increase `sparse_weight` if users frequently query by exact terms; increase `dense_weight` for more conceptual/semantic questions.
+Edit the `dense_weight` and `sparse_weight` variables inside the `hybrid_search_rag` SQL function in Supabase. Increase `sparse_weight` for legal/regulatory queries (exact term matching matters more); increase `dense_weight` for conceptual/semantic questions.
 
 ### Adding an Agentic Tool
 
-Define a tool in `backend/services/tools.py` and register it with the ReAct agent in `routers/chat.py`:
+Define a tool in `backend/services/tools.py`:
 
 ```python
 from llama_index.core.tools import FunctionTool
 
-def query_state_rank(state: str) -> str:
-    """Returns the Performance Index rank for a given U.S. state."""
-    # fetch from Supabase state_performance_index
+def get_medicaid_income_limit(household_size: int, program: str) -> str:
+    """Returns the 2026 income limit for a given household size and program."""
     ...
 
-query_state_rank_fn = FunctionTool.from_defaults(fn=query_state_rank)
+tool = FunctionTool.from_defaults(fn=get_medicaid_income_limit)
 ```
 
-Tools let the agent perform database lookups, calculations, or API calls instead of relying solely on the vector index.
+Register in `ALL_TOOLS` in `tools.py`. Tools are only available to `AGENTIC_ROLES` (professional, advisory, admin).
+
+### Updating Medicaid Intent Keywords
+
+The keyword list in `routers/chat.py` (`_MEDICAID_KEYWORDS` and `_MEDICAID_QUESTION_PHRASES`) is a plain Python set/tuple — no model retraining needed. Add terms and restart the backend.
 
 ---
 
-## 12. Monitoring & Debugging
+## 13. Monitoring & Debugging
 
 ### Health Check
 
@@ -534,33 +789,33 @@ Returns:
 
 ### Query Log
 
-Every AI Analyst query is logged to `rag_query_log` in Supabase. The admin dashboard at `/admin/ingest` shows recent queries with latency, model used, and whether retrieval returned zero results (`was_zero_result`).
+Every AI Analyst query is logged to `rag_query_log` in Supabase with: user ID, query text, role, model used, retrieved doc IDs and scores, response preview, latency, and `was_zero_result` flag.
 
-Zero-result queries indicate that no chunks scored above the similarity threshold. Common causes:
-
-- Query is about a topic not in the knowledge base
-- Misspelling or unusual terminology (try spelling out acronyms)
-- Content published but not yet re-ingested
+Zero-result queries indicate no chunks scored above the similarity threshold. For Medicaid queries this is rare (1,246 chunks cover the full Vermont ruleset). For general queries, common causes are: topic not in knowledge base, unusual terminology, or content published but not yet re-ingested.
 
 ### Debug Logging
 
-The backend logs retrieval details at `INFO` level:
+The backend logs the Medicaid intent flag on every request:
 
 ```text
-2026-03-15 10:23:11 INFO htr-brain: Hybrid search returned 18 nodes
-2026-03-15 10:23:11 INFO htr-brain: FlashRank re-ranked to top 5
-2026-03-15 10:23:11 INFO htr-brain: Streaming response via llama-3.3-70b-versatile
-2026-03-15 10:23:12 INFO htr-brain: Chat complete — 842ms
+Chat: user=abc role=subscriber msg_len=62 pillar=None medicaid=True
+  Medicaid retrieval: 23 nodes with pillar filter
 ```
 
-Set `LOG_LEVEL=DEBUG` in the backend `.env` for verbose retrieval scoring output.
+Set `LOG_LEVEL=DEBUG` for verbose retrieval scoring output.
 
 ### Common Issues
 
-**"Index not ready"** — The startup build or load failed. Check Railway logs for the error. Common causes: missing `SUPABASE_DB_URL`, pgvector extension not enabled, or `OPENAI_API_KEY` invalid (embedding fails during build).
+**"Index not ready"** — Startup build or load failed. Check Railway logs. Common causes: missing `SUPABASE_DB_URL`, pgvector not enabled, or invalid `OPENAI_API_KEY`.
 
-**High latency (>3s)** — FlashRank may be downloading its model on first startup (one-time ~100MB download). Check `/tmp/flashrank` for the cached model. If latency persists, check `rag_query_log.latency_ms` to identify whether the bottleneck is embedding, retrieval, re-ranking, or LLM generation.
+**Input bar missing on `/chat` page** — Height chain broken. The AppShell wrapper for chat uses `[&>main]:flex-1 [&>main]:min-h-0 [&>main]:flex [&>main]:flex-col` to pass height through the `<main>` wrapper in `layout.tsx`. If you restructure `layout.tsx`, verify this chain is intact.
 
-**Poor answer quality** — Check `was_zero_result` in the query log. If zero results, add more content to the knowledge base and re-ingest. If results are returned but answers are poor, review the `retrieved_doc_ids` to see what context was passed to the LLM.
+**Medicaid answers not citing rule sections** — The `MEDICAID_ELIGIBILITY_SYSTEM_PROMPT` instructs the LLM to cite sections. If citations are missing, check that `_detect_medicaid_intent()` is returning `True` for the query (visible in logs as `medicaid=True`). If it returns `False`, add the relevant keyword to `_MEDICAID_KEYWORDS`.
 
-**JWT validation errors** — Verify `SUPABASE_JWT_SECRET` in the backend `.env` exactly matches Supabase → Project Settings → API → JWT Secret. The secret is used to verify HS256 signatures.
+**Income numbers in Medicaid answers are wrong** — The 2026 income charts are in `MABD-PIL-Income-Chart-2026.pdf`, `2026-MCA-FPL-Chart.pdf`, and related files. Verify these parsed correctly by checking that table chunks appear in the vector store with `source_type="medicaid_eligibility"`. Re-ingest if needed.
+
+**High latency (>3s)** — FlashRank downloads its model on first startup (~100MB, one-time). Check `rag_query_log.latency_ms` to identify whether the bottleneck is embedding, retrieval, re-ranking, or LLM generation.
+
+**NUL byte errors in PostgreSQL** — The safety pass in `build_index()` strips NUL bytes (`\x00`) from all node text and metadata before embedding. If you see `ValueError: A string literal cannot contain NUL characters` in Railway logs, a new PDF may have introduced binary artifacts. The fix is already in place in `indexing.py` — re-triggering the ingest should resolve it.
+
+**JWT validation errors** — Verify `SUPABASE_JWT_SECRET` in the backend `.env` exactly matches Supabase → Project Settings → API → JWT Secret (HS256).
