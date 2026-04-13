@@ -147,7 +147,7 @@ const Footer: React.FC = () => {
               </button>
             </div>
             <p className="text-[11px] text-slate-500 mt-3">
-              Join 15,000+ healthcare executives. Unsubscribe anytime.
+              Join xxx+ healthcare executives. Unsubscribe anytime.
             </p>
           </div>
         </div>
@@ -157,7 +157,7 @@ const Footer: React.FC = () => {
           <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 dark:text-slate-400 mb-6">
             Intelligence Pillars
           </h4>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {pillars.map((p) => (
               <div key={p.label}>
                 <Link
@@ -283,7 +283,7 @@ const Footer: React.FC = () => {
                   Offices
                 </p>
                 <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-                  Burlington, VT — Washington, DC
+                  Burlington, VT — San Francisco, CA
                 </p>
               </div>
             </div>
