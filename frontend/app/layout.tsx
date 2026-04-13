@@ -10,12 +10,12 @@ import { SidebarProvider } from "@/components/SidebarContext";
 import AppShell from "@/components/AppShell";
 import { getTickerData } from "@/lib/ticker";
 import CommandPalette from "@/components/CommandPalette";
-import OnboardingModal from "@/components/OnboardingModal";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import WebVitalsReporter from "@/components/WebVitalsReporter";
 import SessionTimeout from "@/components/SessionTimeout";
 import MvpWatermark from "@/components/MvpWatermark";
+import { cookies } from "next/headers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +30,20 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const cookieStore = await cookies();
+  const betaGranted = cookieStore.get("htr_beta")?.value === "granted";
+
+  // Before beta access is granted, render nothing but the gate page itself.
+  if (!betaGranted) {
+    return (
+      <html lang="en">
+        <body className={`${inter.className} antialiased`}>
+          {children}
+        </body>
+      </html>
+    );
+  }
+
   const tickerData = await getTickerData();
 
   return (
@@ -47,7 +61,6 @@ export default async function RootLayout({
           </a>
           <SessionTimeout />
           <CommandPalette />
-          <OnboardingModal />
           <TickerProvider>
             <SidebarProvider>
               <div className="flex flex-col h-screen overflow-hidden">
