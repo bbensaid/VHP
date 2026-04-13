@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ShieldCheckIcon, ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 
-export default function BetaGatePage() {
+function BetaGateContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const redirectTo = searchParams.get("from") || "/";
@@ -132,5 +132,13 @@ export default function BetaGatePage() {
         </p>
       </div>
     </div>
+  );
+}
+
+export default function BetaGatePage() {
+  return (
+    <Suspense>
+      <BetaGateContent />
+    </Suspense>
   );
 }
