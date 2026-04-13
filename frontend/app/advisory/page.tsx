@@ -20,7 +20,7 @@ export default function AdvisoryPage() {
             <span className="text-[10px] font-black uppercase tracking-widest text-fuchsia-400">
               HTR Advisory
             </span>
-            <span className="text-slate-400 text-sm">Burlington, VT · Washington, DC</span>
+            <span className="text-slate-400 text-sm">Burlington, VT · San Francisco, CA</span>
           </div>
           <h1 className="ty-h1 font-black tracking-tight mb-6 leading-tight max-w-4xl">
             Healthcare Strategy at Every Level of the Enterprise
@@ -29,7 +29,7 @@ export default function AdvisoryPage() {
             The convergence of <strong className="text-sky-400">Policy</strong>, <strong className="text-emerald-400">Economics</strong>, <strong className="text-indigo-400">Technology</strong>, <strong className="text-red-400">Clinical</strong>, and <strong className="text-violet-400">Equity</strong> creates complexity that generalist consultants cannot navigate.
           </p>
           <p className="text-base text-slate-300 max-w-3xl leading-relaxed mb-6">
-            <strong className="text-white">HTR Advisory</strong> deploys cross-disciplinary expertise grounded in <em>daily intelligence research</em> — not periodic benchmarks. We compete with McKinsey, Deloitte, and Oliver Wyman on insight quality. We beat them on speed, independence, and depth of domain knowledge.
+            <strong className="text-white">HTR Advisory</strong> deploys cross-disciplinary expertise grounded in <em>daily intelligence research</em> — not periodic benchmarks. We compete with Competitor #1, Competitor #2, and Competitor #3 on insight quality. We beat them on speed, independence, and depth of domain knowledge.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -240,7 +240,7 @@ export default function AdvisoryPage() {
         <div className="text-center mb-14">
           <h2 className="ty-h1 font-black text-slate-900 mb-4">Why HTR Advisory vs. The Big Firms</h2>
           <p className="ty-hero text-slate-500 max-w-2xl mx-auto">
-            McKinsey, Deloitte, and Oliver Wyman offer brand recognition. We offer something rarer: embedded expertise, non-partisan analysis, and speed.
+            Competitor #1, Competitor #2, and Competitor #3 offer brand recognition. We offer something rarer: embedded expertise, non-partisan analysis, and speed.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
@@ -289,7 +289,7 @@ export default function AdvisoryPage() {
               View All Services
             </Link>
           </div>
-          <p className="mt-6 text-fuchsia-300 text-sm">Burlington, VT · Washington, DC · Remote engagements worldwide</p>
+          <p className="mt-6 text-fuchsia-300 text-sm">Burlington, VT · San Francisco, CA · Remote engagements worldwide</p>
         </div>
       </div>
     </div>
