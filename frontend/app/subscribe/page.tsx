@@ -142,8 +142,8 @@ export default function SubscribePage() {
             className="h-12 w-auto"
           />
           <img
-            src="https://via.placeholder.com/150x50/E5E7EB/111827?text=McKinsey+%26+Co"
-            alt="McKinsey & Co"
+            src="https://via.placeholder.com/150x50/E5E7EB/111827?text=Competitor+%231"
+            alt="Competitor #1"
             className="h-12 w-auto"
           />
           <img

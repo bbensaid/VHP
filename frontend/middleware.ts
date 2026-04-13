@@ -91,8 +91,26 @@ const HIERARCHY = ["free", "subscriber", "student", "professional", "advisory", 
 
 const AUTH_ROUTES = ["/login", "/signup"];
 
+const BETA_COOKIE = "htr_beta";
+
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  // ── Beta gate — block all page navigation until access code entered ──────────
+  // Exemptions: the gate page itself, all API routes (auth/data still works),
+  // the studio, and static assets (handled by matcher config).
+  const betaExempt =
+    pathname.startsWith("/beta") ||
+    pathname.startsWith("/api/") ||
+    pathname.startsWith("/studio");
+
+  if (!betaExempt && !request.cookies.get(BETA_COOKIE)?.value) {
+    const gateUrl = new URL("/beta", request.url);
+    // Preserve the intended destination so we can redirect back after entry
+    if (pathname !== "/") gateUrl.searchParams.set("from", pathname);
+    return NextResponse.redirect(gateUrl);
+  }
+  // ────────────────────────────────────────────────────────────────────────────
 
   // Rate-limit the public certificate verify endpoint
   if (pathname.startsWith("/verify/")) {

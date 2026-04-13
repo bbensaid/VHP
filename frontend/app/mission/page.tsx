@@ -68,14 +68,6 @@ const values = [
   },
 ];
 
-const milestones = [
-  { year: "2019", event: "HTR founded. Intelligence platform built on the conviction that health system transformation requires cross-disciplinary analysis — not siloed expertise." },
-  { year: "2021", event: "State Performance Index launched, covering all 50 states with composite scoring across 9 sub-metrics." },
-  { year: "2022", event: "Advisory practice opens; first enterprise intelligence agreements with major health systems and federal program offices." },
-  { year: "2024", event: "Clinical and Equity pillars added as first-class analytical dimensions — each with dedicated sub-metrics, weighting, and a named principal analyst." },
-  { year: "2025", event: "HTR Academy launches with Executive Masterclasses. Analyst network expands to a dedicated principal per pillar." },
-  { year: "2026", event: "Operations added as the sixth pillar — recognizing that the $1 trillion administrative infrastructure of US healthcare is not a backdrop to transformation but a primary determinant of whether it succeeds or fails. Performance Index extended with administrative cost ratio, revenue cycle performance, and workforce operational readiness sub-metrics." },
-];
 
 export default function MissionPage() {
   return (
@@ -219,38 +211,6 @@ export default function MissionPage() {
             <p className="text-slate-600 text-base max-w-3xl mx-auto leading-relaxed">
               A policy intervention that passes question one but fails questions three, four, five, or six is not a solution — it is a well-intentioned mistake waiting to be made. HTR&rsquo;s editorial standard requires that every analysis we publish has been interrogated across all six dimensions.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── MILESTONES ────────────────────────────────────────────────────── */}
-      <section className="bg-indigo-700 text-white py-20 md:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mb-14">
-            <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-4 block">
-              Our Journey
-            </span>
-            <h2 className="ty-h1 font-black tracking-tight">
-              The evolution of HTR.
-            </h2>
-          </div>
-          <div className="relative">
-            <div className="absolute left-4 top-0 bottom-0 w-px bg-white/10 hidden md:block" />
-            <div className="space-y-8">
-              {milestones.map((m, i) => (
-                <div key={m.year} className="relative md:pl-16 flex gap-6 md:gap-0 items-start">
-                  <div className="hidden md:flex absolute left-0 w-8 h-8 bg-indigo-600 rounded-full items-center justify-center shrink-0 border-2 border-slate-900">
-                    <span className="text-[10px] font-black text-white">{i + 1}</span>
-                  </div>
-                  <div className="shrink-0 w-16 md:w-auto">
-                    <span className="text-indigo-400 font-black text-lg">{m.year}</span>
-                  </div>
-                  <div className="flex-1 bg-white/5 border border-white/10 rounded-xl px-6 py-4">
-                    <p className="text-slate-300 text-sm leading-relaxed">{m.event}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>

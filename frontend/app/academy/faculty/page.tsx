@@ -36,19 +36,17 @@ export default async function FacultyPage() {
               <p className="text-slate-500">No faculty found. Run the seed script to populate data.</p>
             </div>
           )}
-          {(faculty as Person[]).map((person) => (
+          {(faculty as Person[]).map((person, idx) => {
+            const anonName = `Faculty #${idx + 1}`;
+            return (
             <div key={person._id} className="flex flex-col sm:flex-row gap-6 p-6 bg-white border border-slate-200 rounded-xl hover:shadow-lg transition-shadow">
               <div className="shrink-0 mx-auto sm:mx-0">
-                {person.imageUrl ? (
-                  <img src={person.imageUrl} alt={person.name} className="w-32 h-32 rounded-full object-cover border-4 border-indigo-50" />
-                ) : (
-                  <div className="w-32 h-32 rounded-full bg-indigo-600 flex items-center justify-center text-white text-2xl font-bold border-4 border-indigo-50">
-                    {person.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
-                  </div>
-                )}
+                <div className="w-32 h-32 rounded-full bg-indigo-600 flex items-center justify-center text-white text-2xl font-bold border-4 border-indigo-50">
+                  F{idx + 1}
+                </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-slate-900">{person.name}</h3>
+                <h3 className="text-2xl font-bold text-slate-900">{anonName}</h3>
                 <p className="text-indigo-600 font-bold mb-3 uppercase text-xs tracking-wider">{person.role || "Instructor"}</p>
                 <p className="text-slate-600 mb-4 leading-relaxed">{person.bio}</p>
                 {person.tags && (
@@ -60,7 +58,7 @@ export default async function FacultyPage() {
                 )}
               </div>
             </div>
-          ))}
+          )})}
         </div>
 
         <div className="mt-20 p-10 bg-indigo-700 rounded-2xl text-center text-white">
