@@ -353,35 +353,6 @@ function saveFeedback(data: Record<string, FeedbackEntry>) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 }
 
-function buildExport(
-  sections: Section[],
-  feedback: Record<string, FeedbackEntry>
-): string {
-  const lines: string[] = [
-    "HTR Beta Tester Feedback",
-    `Exported: ${new Date().toLocaleString()}`,
-    "=".repeat(60),
-  ];
-  for (const section of sections) {
-    const rated = section.pages.filter((p) => feedback[p.href]);
-    if (rated.length === 0) continue;
-    lines.push(`\n## ${section.emoji} ${section.title}`);
-    for (const page of section.pages) {
-      const entry = feedback[page.href];
-      if (!entry) continue;
-      const r = RATINGS.find((r) => r.value === entry.rating)!;
-      lines.push(`  ${r.emoji} ${page.label} (${page.href})`);
-      if (entry.note) lines.push(`     Note: ${entry.note}`);
-    }
-  }
-  const total = Object.keys(feedback).length;
-  const works  = Object.values(feedback).filter((f) => f.rating === "works").length;
-  const issues = Object.values(feedback).filter((f) => f.rating === "issues").length;
-  const broken = Object.values(feedback).filter((f) => f.rating === "broken").length;
-  lines.push("\n" + "=".repeat(60));
-  lines.push(`Summary: ${total} rated · ✅ ${works} works · ⚠️ ${issues} issues · ❌ ${broken} broken`);
-  return lines.join("\n");
-}
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
@@ -487,17 +458,23 @@ function PageCard({ page, entry, onRate, onNote }: PageCardProps) {
 
 // ─── Main page ────────────────────────────────────────────────────────────────
 
+type SendState = "idle" | "sending" | "sent" | "error";
+
 export default function TesterPage() {
   const [feedback, setFeedback] = useState<Record<string, FeedbackEntry>>({});
   const [filter, setFilter]     = useState("");
   const [openSections, setOpenSections] = useState<Record<string, boolean>>(
     Object.fromEntries(SECTIONS.map((s) => [s.id, true]))
   );
-  const [copied, setCopied] = useState(false);
+  const [testerName, setTesterName] = useState("");
+  const [sendState, setSendState]   = useState<SendState>("idle");
+  const [showNamePrompt, setShowNamePrompt] = useState(false);
 
-  // Load from localStorage on mount
+  // Load from localStorage on mount (including saved tester name)
   useEffect(() => {
     setFeedback(loadFeedback());
+    const saved = localStorage.getItem("htr_tester_name");
+    if (saved) setTesterName(saved);
   }, []);
 
   const handleRate = useCallback((href: string, rating: Rating) => {
@@ -522,12 +499,23 @@ export default function TesterPage() {
     setFeedback({});
   };
 
-  const handleExport = () => {
-    const text = buildExport(SECTIONS, feedback);
-    navigator.clipboard.writeText(text).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2500);
-    });
+  const handleSend = async () => {
+    if (!testerName.trim()) { setShowNamePrompt(true); return; }
+    setSendState("sending");
+    try {
+      const res = await fetch("/api/tester-report", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ testerName: testerName.trim(), feedback }),
+      });
+      if (!res.ok) throw new Error("send failed");
+      localStorage.setItem("htr_tester_name", testerName.trim());
+      setSendState("sent");
+      setTimeout(() => setSendState("idle"), 4000);
+    } catch {
+      setSendState("error");
+      setTimeout(() => setSendState("idle"), 4000);
+    }
   };
 
   // Stats
@@ -570,19 +558,47 @@ export default function TesterPage() {
             <div className="flex items-center gap-2 flex-wrap">
               <button onClick={expandAll}   className="text-xs px-3 py-1.5 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-600 font-semibold transition-colors">Expand all</button>
               <button onClick={collapseAll} className="text-xs px-3 py-1.5 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-600 font-semibold transition-colors">Collapse all</button>
-              <button
-                onClick={handleExport}
-                disabled={rated === 0}
-                className="text-xs px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 disabled:bg-slate-200 disabled:text-slate-400 text-white font-bold transition-colors"
-              >
-                {copied ? "✓ Copied!" : "📋 Export feedback"}
-              </button>
               {rated > 0 && (
                 <button onClick={handleClearAll} className="text-xs px-3 py-1.5 rounded-lg border border-red-200 hover:bg-red-50 text-red-500 font-semibold transition-colors">
                   Clear all
                 </button>
               )}
             </div>
+          </div>
+
+          {/* Name + Send row */}
+          <div className="flex items-center gap-2 flex-wrap">
+            <div className="relative flex-1 min-w-[180px] max-w-xs">
+              <input
+                type="text"
+                value={testerName}
+                onChange={(e) => { setTesterName(e.target.value); setShowNamePrompt(false); }}
+                placeholder="Your name (required to submit)"
+                className={`w-full px-3 py-2 text-sm border rounded-xl focus:outline-none focus:border-indigo-400 bg-white ${showNamePrompt ? "border-red-400 placeholder:text-red-400" : "border-slate-300"}`}
+              />
+              {showNamePrompt && (
+                <p className="absolute -bottom-4 left-0 text-[10px] text-red-500 font-semibold">Please enter your name first</p>
+              )}
+            </div>
+            <button
+              onClick={handleSend}
+              disabled={rated === 0 || sendState === "sending"}
+              className={`text-xs px-4 py-2 rounded-xl font-bold transition-colors whitespace-nowrap ${
+                sendState === "sent"    ? "bg-emerald-600 text-white" :
+                sendState === "error"   ? "bg-red-600 text-white" :
+                sendState === "sending" ? "bg-indigo-400 text-white cursor-wait" :
+                rated === 0             ? "bg-slate-200 text-slate-400 cursor-not-allowed" :
+                                          "bg-indigo-600 hover:bg-indigo-700 text-white"
+              }`}
+            >
+              {sendState === "sending" ? "Sending…" :
+               sendState === "sent"    ? "✓ Report sent!" :
+               sendState === "error"   ? "✗ Failed — try again" :
+               "📧 Submit feedback report"}
+            </button>
+            {sendState === "sent" && (
+              <span className="text-xs text-emerald-600 font-semibold">Delivered to the HTR team</span>
+            )}
           </div>
 
           {/* Progress bar + stats */}
@@ -616,7 +632,7 @@ export default function TesterPage() {
         <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-4 text-sm text-indigo-800 leading-relaxed">
           <strong>How to use:</strong> Click a page link to open it in a new tab. Come back here and rate it{" "}
           <strong>✅ Works · ⚠️ Issues · ❌ Broken</strong>. Add a note for anything that needs attention.
-          Ratings auto-save in your browser. When done, hit <strong>Export feedback</strong> to copy a summary to your clipboard and paste it wherever.
+          Ratings auto-save in your browser. When done, enter your name above and hit <strong>Submit feedback report</strong> — your scores and notes will be emailed directly to the HTR team as a formatted report.
         </div>
       </div>
 
