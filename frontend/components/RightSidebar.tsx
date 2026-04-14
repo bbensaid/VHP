@@ -386,32 +386,41 @@ export default function RightSidebar() {
         </div>
 
         {/* Input */}
-        <div className="shrink-0 border-t border-slate-100 dark:border-slate-700 p-3 flex items-end gap-2">
-          <textarea
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={handleKeyDown}
-            placeholder="Ask a quick question…"
-            aria-label="Message to AI Analyst"
-            rows={1}
-            className="flex-1 max-h-20 text-xs text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-600 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-3 py-2 focus:outline-none focus:border-indigo-300 dark:focus:border-indigo-600 resize-none leading-relaxed"
-          />
-          {isLoading ? (
+        <div className="shrink-0 border-t border-slate-100 dark:border-slate-700 p-3">
+          <div className="relative">
+            <textarea
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder="Ask a quick question…"
+              aria-label="Message to AI Analyst"
+              rows={6}
+              className="w-full min-h-[7.5rem] max-h-[7.5rem] text-xs text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-600 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-3 pt-2 pb-9 focus:outline-none focus:border-indigo-300 dark:focus:border-indigo-600 resize-none leading-relaxed"
+            />
             <button
-              onClick={() => { abortRef.current?.abort(); setIsLoading(false); }}
-              className="shrink-0 p-2 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition-colors"
+              onClick={handleExpand}
+              className="absolute top-2 right-2 p-1 text-slate-400 hover:text-indigo-600 transition-colors"
+              title="Expand to full view"
             >
-              <StopIcon className="w-3.5 h-3.5" />
+              <ArrowsPointingOutIcon className="w-3.5 h-3.5" />
             </button>
-          ) : (
-            <button
-              onClick={() => send(input)}
-              disabled={!input.trim()}
-              className="shrink-0 p-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-            >
-              <PaperAirplaneIcon className="w-3.5 h-3.5" />
-            </button>
-          )}
+            {isLoading ? (
+              <button
+                onClick={() => { abortRef.current?.abort(); setIsLoading(false); }}
+                className="absolute bottom-2 right-2 p-1.5 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition-colors"
+              >
+                <StopIcon className="w-3.5 h-3.5" />
+              </button>
+            ) : (
+              <button
+                onClick={() => send(input)}
+                disabled={!input.trim()}
+                className="absolute bottom-2 right-2 p-1.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                <PaperAirplaneIcon className="w-3.5 h-3.5" />
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </aside>

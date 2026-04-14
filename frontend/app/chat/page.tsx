@@ -537,48 +537,52 @@ export default function ChatPage() {
 
           {/* ── Input bar ────────────────────────────────────────────────────── */}
           <div className="shrink-0 border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 md:px-8 py-4">
-            <div className="max-w-3xl mx-auto">
-              <div className="flex items-end gap-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl px-4 py-3 focus-within:border-indigo-300 dark:focus-within:border-indigo-600 focus-within:bg-white dark:focus-within:bg-slate-800 transition-colors">
-                <textarea
-                  ref={textareaRef}
-                  value={inputValue}
-                  onChange={handleInput}
-                  onKeyDown={handleKeyDown}
-                  placeholder="Ask the Analyst… (Enter to send, Shift+Enter for new line)"
-                  rows={1}
-                  className="flex-1 max-h-40 bg-transparent text-sm text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none resize-none leading-relaxed"
-                  aria-label="Chat message input"
-                />
-                {isLoading ? (
-                  <button onClick={handleStop} className="shrink-0 flex items-center gap-1.5 px-3 py-2 bg-rose-600 text-white text-xs font-bold rounded-xl hover:bg-rose-700 transition-colors" aria-label="Stop generating">
-                    <StopIcon className="w-3.5 h-3.5" aria-hidden="true" />
-                    Stop
-                  </button>
-                ) : (
-                  <button
-                    onClick={handleSend}
-                    disabled={!inputValue.trim()}
-                    className="shrink-0 flex items-center gap-1.5 px-3 py-2 bg-indigo-600 text-white text-xs font-bold rounded-xl hover:bg-indigo-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-                    aria-label="Send message"
-                  >
-                    <PaperAirplaneIcon className="w-3.5 h-3.5" aria-hidden="true" />
-                    Send
-                  </button>
-                )}
-              </div>
-              {phiError && (
-                <p className="text-xs text-rose-600 bg-rose-50 border border-rose-200 rounded-xl px-3 py-2 mt-2">
-                  {phiError}
-                </p>
+            <div className="relative bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl focus-within:border-indigo-300 dark:focus-within:border-indigo-600 focus-within:bg-white dark:focus-within:bg-slate-800 transition-colors">
+              <textarea
+                ref={textareaRef}
+                value={inputValue}
+                onChange={handleInput}
+                onKeyDown={handleKeyDown}
+                placeholder="Ask the Analyst… (Enter to send, Shift+Enter for new line)"
+                rows={6}
+                className="w-full min-h-[7.5rem] max-h-[7.5rem] bg-transparent text-sm text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none resize-none leading-relaxed px-4 pt-2 pb-10 pr-10"
+                aria-label="Chat message input"
+              />
+              <button
+                onClick={() => { setRightOpen(true); router.back(); }}
+                className="absolute top-2 right-2 p-1.5 text-slate-400 hover:text-indigo-600 transition-colors"
+                title="Collapse to sidebar"
+                aria-label="Collapse to sidebar"
+              >
+                <ArrowsPointingInIcon className="w-3.5 h-3.5" aria-hidden="true" />
+              </button>
+              {isLoading ? (
+                <button onClick={handleStop} className="absolute bottom-2 right-2 p-1.5 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition-colors" aria-label="Stop generating">
+                  <StopIcon className="w-3.5 h-3.5" aria-hidden="true" />
+                </button>
+              ) : (
+                <button
+                  onClick={handleSend}
+                  disabled={!inputValue.trim()}
+                  className="absolute bottom-2 right-2 p-1.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                  aria-label="Send message"
+                >
+                  <PaperAirplaneIcon className="w-3.5 h-3.5" aria-hidden="true" />
+                </button>
               )}
-              <div className="flex items-center justify-between mt-2">
-                <p className="text-xs text-slate-400 dark:text-slate-500">
-                  Do not submit patient data (names, SSNs, DOBs)
-                </p>
-                <p className="text-center text-[10px] text-slate-400 dark:text-slate-500">
-                  AI responses may contain errors. Verify clinical or policy information with primary sources.
-                </p>
-              </div>
+            </div>
+            {phiError && (
+              <p className="text-xs text-rose-600 bg-rose-50 border border-rose-200 rounded-xl px-3 py-2 mt-2">
+                {phiError}
+              </p>
+            )}
+            <div className="flex items-center justify-between mt-2">
+              <p className="text-xs text-slate-400 dark:text-slate-500">
+                Do not submit patient data (names, SSNs, DOBs)
+              </p>
+              <p className="text-center text-[10px] text-slate-400 dark:text-slate-500">
+                AI responses may contain errors. Verify clinical or policy information with primary sources.
+              </p>
             </div>
           </div>
         </main>
