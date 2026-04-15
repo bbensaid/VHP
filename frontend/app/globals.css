@@ -53,8 +53,8 @@
   --color-ui-border: #cbd5e1;
 
   /* ── Typography ────────────────────────────────────────────────────────── */
-  --color-text-heading: #334155;
-  --color-text-body: #4b5563;
+  --color-text-heading: #1e293b;
+  --color-text-body: #374151;
   --color-text-inverse: #ffffff;
 
   /* ── Surfaces ──────────────────────────────────────────────────────────── */
@@ -76,7 +76,7 @@
 
   /* Text */
   --color-text-heading: #f1f5f9;   /* slate-100 */
-  --color-text-body:    #94a3b8;   /* slate-400 */
+  --color-text-body:    #cbd5e1;   /* slate-300 */
 
   /* UI */
   --color-ui-border:    #334155;   /* slate-700 */

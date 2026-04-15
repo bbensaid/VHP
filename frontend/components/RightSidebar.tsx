@@ -248,7 +248,7 @@ export default function RightSidebar() {
         {/* Messages */}
         <div
           ref={messagesContainerRef}
-          className="flex-1 min-h-0 flex flex-col gap-3 p-3 overflow-y-auto text-xs"
+          className="flex-1 min-h-0 flex flex-col gap-3 py-3 pr-3 overflow-y-auto text-xs"
         >
           {messages.length === 0 && (
             <div className="flex flex-col gap-3 py-2">
@@ -386,7 +386,7 @@ export default function RightSidebar() {
         </div>
 
         {/* Input */}
-        <div className="shrink-0 border-t border-slate-100 dark:border-slate-700 p-3">
+        <div className="shrink-0 border-t border-slate-100 dark:border-slate-700 pt-3 pb-3 pr-3">
           <div className="relative">
             <textarea
               value={input}
@@ -395,7 +395,7 @@ export default function RightSidebar() {
               placeholder="Ask a quick question…"
               aria-label="Message to AI Analyst"
               rows={6}
-              className="w-full min-h-[7.5rem] max-h-[7.5rem] text-xs text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-600 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-3 pt-2 pb-9 focus:outline-none focus:border-indigo-300 dark:focus:border-indigo-600 resize-none leading-relaxed"
+              className="w-full min-h-[7.5rem] max-h-[7.5rem] text-xs text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-600 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-r-lg px-3 pt-2 pb-9 focus:outline-none focus:border-indigo-300 dark:focus:border-indigo-600 resize-none leading-relaxed border-l-0"
             />
             <button
               onClick={handleExpand}
