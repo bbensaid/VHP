@@ -33,8 +33,12 @@ const TABS = [
   },
 ]
 
-export default function InteroperabilityClient() {
-  const [activeTab, setActiveTab] = useState('fhir')
+const VALID_TABS = ['fhir', 'risk']
+
+export default function InteroperabilityClient({ initialTab }: { initialTab?: string }) {
+  const [activeTab, setActiveTab] = useState(
+    VALID_TABS.includes(initialTab ?? '') ? initialTab! : 'fhir'
+  )
 
   return (
     <LabPageShell

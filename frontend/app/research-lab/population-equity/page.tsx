@@ -5,6 +5,10 @@ export const metadata = {
   description: 'Model chronic disease progression, epidemic dynamics, health disparities, SDOH impact, and population-scale intervention ROI.',
 }
 
-export default function PopulationEquityPage() {
-  return <PopulationEquityClient />
+export default function PopulationEquityPage({
+  searchParams,
+}: {
+  searchParams: { tab?: string }
+}) {
+  return <PopulationEquityClient initialTab={searchParams.tab} />
 }

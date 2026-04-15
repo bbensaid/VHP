@@ -38,8 +38,12 @@ const TABS = [
   },
 ]
 
-export default function PaymentModelsClient() {
-  const [activeTab, setActiveTab] = useState('apm-design')
+const VALID_TABS = ['apm-design', 'apm-calc', 'cea']
+
+export default function PaymentModelsClient({ initialTab }: { initialTab?: string }) {
+  const [activeTab, setActiveTab] = useState(
+    VALID_TABS.includes(initialTab ?? '') ? initialTab! : 'apm-design'
+  )
 
   return (
     <LabPageShell
