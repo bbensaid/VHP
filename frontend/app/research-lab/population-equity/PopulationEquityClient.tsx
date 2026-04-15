@@ -33,8 +33,12 @@ const TABS = [
   },
 ]
 
-export default function PopulationEquityClient() {
-  const [activeTab, setActiveTab] = useState('population')
+const VALID_TABS = ['population', 'equity']
+
+export default function PopulationEquityClient({ initialTab }: { initialTab?: string }) {
+  const [activeTab, setActiveTab] = useState(
+    VALID_TABS.includes(initialTab ?? '') ? initialTab! : 'population'
+  )
 
   return (
     <LabPageShell

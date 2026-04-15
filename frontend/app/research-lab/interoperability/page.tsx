@@ -5,6 +5,10 @@ export const metadata = {
   description: 'Build FHIR R4 resources, test CDS Hooks, validate ONC compliance, and run HCC v28 risk stratification models.',
 }
 
-export default function InteroperabilityPage() {
-  return <InteroperabilityClient />
+export default function InteroperabilityPage({
+  searchParams,
+}: {
+  searchParams: { tab?: string }
+}) {
+  return <InteroperabilityClient initialTab={searchParams.tab} />
 }
