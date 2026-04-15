@@ -47,8 +47,8 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
-<WebVitalsReporter />
+      <body className={`${inter.className} subpixel-antialiased`}>
+        <WebVitalsReporter />
         <ThemeProvider>
           {/* Skip navigation — visible on focus for keyboard users (WCAG 2.4.1) */}
           <a

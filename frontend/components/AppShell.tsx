@@ -128,7 +128,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         </CollapsibleSidebar>
 
         <main
-          className={`flex-1 min-w-0 transition-all duration-300 ${isLeftOpen ? "lg:ml-4" : "ml-0"} ${isRightOpen ? "lg:mr-4" : "mr-0"}`}
+          className={`flex-1 min-w-0 transition-all duration-300 ${isLeftOpen ? "lg:ml-4" : "lg:pl-6"} ${isRightOpen ? "lg:mr-4" : "lg:pr-6"}`}
           style={{ "--sidebar-top": sidebarTop } as React.CSSProperties}
         >
           {children}
