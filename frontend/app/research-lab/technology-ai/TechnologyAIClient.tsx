@@ -33,8 +33,12 @@ const TABS = [
   },
 ]
 
-export default function TechnologyAIClient() {
-  const [activeTab, setActiveTab] = useState('ai')
+const VALID_TABS = ['ai', 'digital']
+
+export default function TechnologyAIClient({ initialTab }: { initialTab?: string }) {
+  const [activeTab, setActiveTab] = useState(
+    VALID_TABS.includes(initialTab ?? '') ? initialTab! : 'ai'
+  )
 
   return (
     <LabPageShell

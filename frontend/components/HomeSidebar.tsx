@@ -23,82 +23,27 @@ import {
   ChevronDownIcon,
   BoltIcon,
   BanknotesIcon,
-  LightBulbIcon,
+  BuildingLibraryIcon,
+  HeartIcon,
+  ScaleIcon,
+  WrenchScrewdriverIcon,
+  Cog6ToothIcon,
 } from "@heroicons/react/24/outline";
 
 interface HomeSidebarProps {
   onNavigate?: () => void;
 }
 
-// ─── INTELLIGENCE PILLARS ─────────────────────────────────────────────────────
-const pillars = [
-  {
-    id: "policy", label: "Policy", href: "/policy",
-    dot: "bg-sky-500", accent: "text-sky-700", rail: "border-l-sky-400",
-    items: [
-      { href: "/policy/regulation", label: "Regulation & Legislation" },
-      { href: "/policy/mandates", label: "Public Health Mandates" },
-      { href: "/policy/global", label: "Global & Comparative Policy" },
-      { href: "/policy/feasibility", label: "Policy Feasibility Studies" },
-    ],
-  },
-  {
-    id: "economics", label: "Economics", href: "/economics",
-    dot: "bg-emerald-500", accent: "text-emerald-700", rail: "border-l-emerald-400",
-    items: [
-      { href: "/economics/value", label: "Value-Based Care Models" },
-      { href: "/economics/market", label: "Market & Finance" },
-      { href: "/economics/cea", label: "Labor & Workforce Strategy" },
-      { href: "/economics/investment", label: "Healthcare Investment Trends" },
-    ],
-  },
-  {
-    id: "technology", label: "Technology", href: "/technology",
-    dot: "bg-indigo-500", accent: "text-indigo-700", rail: "border-l-indigo-400",
-    items: [
-      { href: "/technology/ai", label: "AI & Machine Learning" },
-      { href: "/technology/digital", label: "Digital Health & Telemedicine" },
-      { href: "/technology/security", label: "Data Security & Governance" },
-      { href: "/technology/workflow", label: "Tech-Enabled Workflow" },
-    ],
-  },
-  {
-    id: "clinical", label: "Clinical", href: "/clinical",
-    dot: "bg-red-500", accent: "text-red-700", rail: "border-l-red-400",
-    items: [
-      { href: "/clinical/hah", label: "Hospital-at-Home" },
-      { href: "/clinical/precision", label: "Precision Medicine" },
-      { href: "/clinical/virtual", label: "Virtual Care Models" },
-    ],
-  },
-  {
-    id: "equity", label: "Equity", href: "/equity",
-    dot: "bg-violet-500", accent: "text-violet-700", rail: "border-l-violet-400",
-    items: [
-      { href: "/equity/sdoh", label: "SDOH Integration" },
-      { href: "/equity/bias", label: "Algorithmic Bias" },
-      { href: "/equity/access", label: "Access Disparity" },
-    ],
-  },
-  {
-    id: "operations", label: "Operations", href: "/operations",
-    dot: "bg-teal-500", accent: "text-teal-700", rail: "border-l-teal-400",
-    items: [
-      { href: "/operations/revenue-cycle", label: "Revenue Cycle Management" },
-      { href: "/operations/workforce", label: "Workforce & Human Capital" },
-      { href: "/operations/compliance", label: "Quality, Compliance & Risk" },
-      { href: "/operations/supply-chain", label: "Supply Chain & Infrastructure" },
-      { href: "/operations/payer-network", label: "Payer & Network Operations" },
-    ],
-  },
-];
-
-// ─── SECTION DATA ─────────────────────────────────────────────────────────────
-type SectionItem = {
+// ─── TYPES ────────────────────────────────────────────────────────────────────
+type RegularItem = {
   href: string;
   label: string;
   icon?: React.ComponentType<{ className?: string }>;
-  desc?: string;
+};
+
+type PillarItem = {
+  href: string;
+  label: string;
 };
 
 type Section = {
@@ -107,86 +52,216 @@ type Section = {
   icon: React.ComponentType<{ className?: string }>;
   headerColor: string;
   headerBg: string;
-  collapsedBg: string;
   borderAccent: string;
   hoverBg: string;
   divideColor: string;
   activeItemBg: string;
-  isPillars?: boolean;
-  items?: SectionItem[];
+  // pillar sections — show intelligence content + research lab tools
+  isPillarSection?: boolean;
+  overviewHref?: string;
+  intelligenceItems?: PillarItem[];
+  labItems?: PillarItem[];
+  // regular sections — flat item list
+  items?: RegularItem[];
 };
 
+// ─── SECTIONS ─────────────────────────────────────────────────────────────────
 const SECTIONS: Section[] = [
+
+  // ── PILLAR 1: POLICY ───────────────────────────────────────────────────────
   {
-    id: "learn", label: "Learn",
-    icon: AcademicCapIcon,
-    headerColor: "text-sky-700", headerBg: "bg-sky-100", collapsedBg: "bg-sky-50/70",
-    borderAccent: "border-sky-500", hoverBg: "hover:bg-sky-100",
+    id: "policy", label: "Policy",
+    icon: BuildingLibraryIcon,
+    headerColor: "text-sky-700", headerBg: "bg-sky-100",
+    borderAccent: "border-sky-400", hoverBg: "hover:bg-sky-50",
     divideColor: "divide-sky-100", activeItemBg: "bg-sky-100",
-    items: [
-      { href: "/academy/personalized-learning", label: "Personalized Learning", icon: SparklesIcon },
-      { href: "/academy/tracks",                label: "Learning Tracks",        icon: TableCellsIcon },
-      { href: "/academy/courses",               label: "Courses",                icon: BookOpenIcon },
-      { href: "/academy/webinars",              label: "Webinars",               icon: PresentationChartLineIcon },
-      { href: "/academy/case-studies",          label: "Case Studies",           icon: DocumentTextIcon },
-      { href: "/academy/glossary",              label: "Glossary",               icon: BookOpenIcon },
-      { href: "/academy/medicaid",              label: "Medicaid Learning Center", icon: DocumentTextIcon },
-      { href: "/academy/faculty",               label: "Faculty",                icon: UsersIcon },
+    isPillarSection: true,
+    overviewHref: "/policy",
+    intelligenceItems: [
+      { href: "/policy/regulation",  label: "Regulation & Legislation" },
+      { href: "/policy/mandates",    label: "Public Health Mandates" },
+      { href: "/policy/global",      label: "Global & Comparative Policy" },
+      { href: "/policy/feasibility", label: "Policy Feasibility Studies" },
+    ],
+    labItems: [
+      { href: "/research-lab/policy-quality?tab=policy",           label: "Policy Simulator" },
+      { href: "/research-lab/knowledge-workspace?tab=leaderboard", label: "Innovation Leaderboard" },
     ],
   },
+
+  // ── PILLAR 2: ECONOMICS ────────────────────────────────────────────────────
   {
-    id: "analyze", label: "Analyze & Tools",
-    icon: BeakerIcon,
-    headerColor: "text-amber-700", headerBg: "bg-amber-100", collapsedBg: "bg-amber-50/70",
-    borderAccent: "border-amber-500", hoverBg: "hover:bg-amber-100",
-    divideColor: "divide-amber-100", activeItemBg: "bg-amber-100",
-    items: [
-      { href: "/research-lab/interoperability",    label: "Interoperability & Risk",   icon: BeakerIcon },
-      { href: "/research-lab/payment-models",      label: "Payment Models & VBC",      icon: DocumentTextIcon },
-      { href: "/research-lab/population-equity",   label: "Population & Equity",       icon: UsersIcon },
-      { href: "/research-lab/policy-quality",      label: "Policy & Quality Sciences", icon: DocumentTextIcon },
-      { href: "/research-lab/technology-ai",       label: "Technology & AI",           icon: CpuChipIcon },
-      { href: "/research-lab/knowledge-workspace", label: "Knowledge & Workspace",     icon: BookOpenIcon },
-      { href: "/htr-simulator",                    label: "HTR Simulator",             icon: CpuChipIcon },
-      { href: "/medicaid-eligibility-simulator",   label: "Medicaid Eligibility",       icon: DocumentTextIcon },
-      { href: "/hti-dashboard",                    label: "HTI Dashboard",             icon: DocumentTextIcon },
-      { href: "/the-wire",                          label: "The Wire",                  icon: BoltIcon },
-      { href: "/investment-tracker",               label: "Investment Tracker",         icon: BanknotesIcon },
-      { href: "/transformation-friction-index",    label: "Friction Index",             icon: BeakerIcon },
-      { href: "/impact-simulation",                label: "Impact Simulation",          icon: SparklesIcon },
-      { href: "/multimedia",                       label: "Multimedia",                icon: FilmIcon },
-      { href: "/trending-topics",                  label: "Trending Topics",           icon: ArrowTrendingUpIcon },
+    id: "economics", label: "Economics",
+    icon: BanknotesIcon,
+    headerColor: "text-emerald-700", headerBg: "bg-emerald-100",
+    borderAccent: "border-emerald-400", hoverBg: "hover:bg-emerald-50",
+    divideColor: "divide-emerald-100", activeItemBg: "bg-emerald-100",
+    isPillarSection: true,
+    overviewHref: "/economics",
+    intelligenceItems: [
+      { href: "/economics/value",      label: "Value-Based Care Models" },
+      { href: "/economics/market",     label: "Market & Finance" },
+      { href: "/economics/cea",        label: "Labor & Workforce Strategy" },
+      { href: "/economics/investment", label: "Healthcare Investment Trends" },
+    ],
+    labItems: [
+      { href: "/research-lab/payment-models?tab=apm-design",  label: "APM Design Lab" },
+      { href: "/research-lab/payment-models?tab=apm-calc",    label: "Shared Savings Calculator" },
+      { href: "/research-lab/payment-models?tab=cea",         label: "CEA Calculator" },
+      { href: "/research-lab/policy-quality?tab=scorecard",   label: "Hospital Financial Scorecard" },
+      { href: "/research-lab/policy-quality?tab=hta",         label: "HTA Studio" },
+      { href: "/research-lab/policy-quality?tab=actuarial",   label: "Actuarial Lab" },
     ],
   },
+
+  // ── PILLAR 3: TECHNOLOGY ───────────────────────────────────────────────────
   {
-    id: "intelligence", label: "Intelligence",
-    icon: LightBulbIcon,
-    headerColor: "text-slate-600", headerBg: "bg-slate-100", collapsedBg: "bg-slate-50",
-    borderAccent: "border-slate-500", hoverBg: "hover:bg-slate-100",
-    divideColor: "divide-slate-100", activeItemBg: "bg-slate-100",
-    isPillars: true,
+    id: "technology", label: "Technology",
+    icon: CpuChipIcon,
+    headerColor: "text-indigo-700", headerBg: "bg-indigo-100",
+    borderAccent: "border-indigo-400", hoverBg: "hover:bg-indigo-50",
+    divideColor: "divide-indigo-100", activeItemBg: "bg-indigo-100",
+    isPillarSection: true,
+    overviewHref: "/technology",
+    intelligenceItems: [
+      { href: "/technology/ai",       label: "AI & Machine Learning" },
+      { href: "/technology/digital",  label: "Digital Health & Telemedicine" },
+      { href: "/technology/security", label: "Data Security & Governance" },
+      { href: "/technology/workflow", label: "Tech-Enabled Workflow" },
+    ],
+    labItems: [
+      { href: "/research-lab/interoperability?tab=fhir", label: "FHIR Interoperability Lab" },
+      { href: "/research-lab/technology-ai?tab=ai",      label: "AI Analytics Lab" },
+      { href: "/research-lab/technology-ai?tab=digital", label: "Digital Health Lab" },
+    ],
   },
+
+  // ── PILLAR 4: CLINICAL ─────────────────────────────────────────────────────
+  {
+    id: "clinical", label: "Clinical",
+    icon: HeartIcon,
+    headerColor: "text-red-700", headerBg: "bg-red-100",
+    borderAccent: "border-red-400", hoverBg: "hover:bg-red-50",
+    divideColor: "divide-red-100", activeItemBg: "bg-red-100",
+    isPillarSection: true,
+    overviewHref: "/clinical",
+    intelligenceItems: [
+      { href: "/clinical/hah",       label: "Hospital-at-Home" },
+      { href: "/clinical/precision", label: "Precision Medicine" },
+      { href: "/clinical/virtual",   label: "Virtual Care Models" },
+    ],
+    labItems: [
+      { href: "/research-lab/interoperability?tab=risk",        label: "Risk Stratification Engine" },
+      { href: "/research-lab/policy-quality?tab=quality",       label: "Clinical Quality Optimizer" },
+      { href: "/research-lab/knowledge-workspace?tab=workforce", label: "Workforce Modeler" },
+    ],
+  },
+
+  // ── PILLAR 5: EQUITY ───────────────────────────────────────────────────────
+  {
+    id: "equity", label: "Equity",
+    icon: ScaleIcon,
+    headerColor: "text-violet-700", headerBg: "bg-violet-100",
+    borderAccent: "border-violet-400", hoverBg: "hover:bg-violet-50",
+    divideColor: "divide-violet-100", activeItemBg: "bg-violet-100",
+    isPillarSection: true,
+    overviewHref: "/equity",
+    intelligenceItems: [
+      { href: "/equity/sdoh",   label: "SDOH Integration" },
+      { href: "/equity/bias",   label: "Algorithmic Bias" },
+      { href: "/equity/access", label: "Access Disparity" },
+    ],
+    labItems: [
+      { href: "/research-lab/population-equity?tab=population", label: "Population Health Modeler" },
+      { href: "/research-lab/population-equity?tab=equity",     label: "Health Equity Studio" },
+    ],
+  },
+
+  // ── PILLAR 6: OPERATIONS ───────────────────────────────────────────────────
+  {
+    id: "operations", label: "Operations",
+    icon: Cog6ToothIcon,
+    headerColor: "text-teal-700", headerBg: "bg-teal-100",
+    borderAccent: "border-teal-400", hoverBg: "hover:bg-teal-50",
+    divideColor: "divide-teal-100", activeItemBg: "bg-teal-100",
+    isPillarSection: true,
+    overviewHref: "/operations",
+    intelligenceItems: [
+      { href: "/operations/revenue-cycle", label: "Revenue Cycle Management" },
+      { href: "/operations/workforce",     label: "Workforce & Human Capital" },
+      { href: "/operations/compliance",    label: "Quality, Compliance & Risk" },
+      { href: "/operations/supply-chain",  label: "Supply Chain & Infrastructure" },
+      { href: "/operations/payer-network", label: "Payer & Network Operations" },
+    ],
+    labItems: [
+      { href: "/research-lab/knowledge-workspace?tab=evidence",  label: "Evidence Library" },
+      { href: "/research-lab/knowledge-workspace?tab=workspace", label: "Research Workspace" },
+    ],
+  },
+
+  // ── STATES & PROGRAMS ──────────────────────────────────────────────────────
   {
     id: "states", label: "States & Programs",
     icon: MapPinIcon,
-    headerColor: "text-rose-700", headerBg: "bg-rose-100", collapsedBg: "bg-rose-50/70",
-    borderAccent: "border-rose-500", hoverBg: "hover:bg-rose-100",
+    headerColor: "text-rose-700", headerBg: "bg-rose-100",
+    borderAccent: "border-rose-400", hoverBg: "hover:bg-rose-50",
     divideColor: "divide-rose-100", activeItemBg: "bg-rose-100",
     items: [
-      { href: "/vermont-medicaid",    label: "Vermont Medicaid",   icon: DocumentTextIcon },
-      { href: "/vermont-act-167",   label: "Vermont Act 167",    icon: MapPinIcon },
-      { href: "/california-calaim", label: "California CalAIM",  icon: MapPinIcon },
-      { href: "/states",            label: "All States Explorer", icon: GlobeAmericasIcon },
-      { href: "/dashboard",         label: "50-State Dashboard", icon: TableCellsIcon },
-      { href: "/ahead-model",       label: "AHEAD Model",        icon: DocumentTextIcon },
+      { href: "/vermont-medicaid",    label: "Vermont Medicaid",    icon: DocumentTextIcon },
+      { href: "/vermont-act-167",     label: "Vermont Act 167",     icon: MapPinIcon },
+      { href: "/california-calaim",   label: "California CalAIM",   icon: MapPinIcon },
+      { href: "/states",              label: "All States Explorer", icon: GlobeAmericasIcon },
+      { href: "/dashboard",           label: "50-State Dashboard",  icon: TableCellsIcon },
+      { href: "/ahead-model",         label: "AHEAD Model",         icon: DocumentTextIcon },
     ],
   },
+
+  // ── TOOLS (standalone cross-domain utilities) ──────────────────────────────
+  {
+    id: "tools", label: "Tools",
+    icon: WrenchScrewdriverIcon,
+    headerColor: "text-amber-700", headerBg: "bg-amber-100",
+    borderAccent: "border-amber-400", hoverBg: "hover:bg-amber-50",
+    divideColor: "divide-amber-100", activeItemBg: "bg-amber-100",
+    items: [
+      { href: "/htr-simulator",                  label: "HTR Simulator",          icon: CpuChipIcon },
+      { href: "/medicaid-eligibility-simulator", label: "Medicaid Eligibility",    icon: DocumentTextIcon },
+      { href: "/hti-dashboard",                  label: "HTI Dashboard",          icon: TableCellsIcon },
+      { href: "/the-wire",                       label: "The Wire",               icon: BoltIcon },
+      { href: "/investment-tracker",             label: "Investment Tracker",      icon: BanknotesIcon },
+      { href: "/transformation-friction-index",  label: "Friction Index",          icon: BeakerIcon },
+      { href: "/impact-simulation",              label: "Impact Simulation",       icon: SparklesIcon },
+      { href: "/multimedia",                     label: "Multimedia",             icon: FilmIcon },
+      { href: "/trending-topics",                label: "Trending Topics",        icon: ArrowTrendingUpIcon },
+    ],
+  },
+
+  // ── ACADEMY ────────────────────────────────────────────────────────────────
+  {
+    id: "learn", label: "Academy",
+    icon: AcademicCapIcon,
+    headerColor: "text-blue-700", headerBg: "bg-blue-100",
+    borderAccent: "border-blue-400", hoverBg: "hover:bg-blue-50",
+    divideColor: "divide-blue-100", activeItemBg: "bg-blue-100",
+    items: [
+      { href: "/academy/personalized-learning", label: "Personalized Learning",   icon: SparklesIcon },
+      { href: "/academy/tracks",                label: "Learning Tracks",          icon: TableCellsIcon },
+      { href: "/academy/courses",               label: "Courses",                  icon: BookOpenIcon },
+      { href: "/academy/webinars",              label: "Webinars",                 icon: PresentationChartLineIcon },
+      { href: "/academy/case-studies",          label: "Case Studies",             icon: DocumentTextIcon },
+      { href: "/academy/glossary",              label: "Glossary",                 icon: BookOpenIcon },
+      { href: "/academy/medicaid",              label: "Medicaid Learning Center", icon: DocumentTextIcon },
+      { href: "/academy/faculty",               label: "Faculty",                  icon: UsersIcon },
+    ],
+  },
+
+  // ── ADVISORY & SERVICES ────────────────────────────────────────────────────
   {
     id: "advisory", label: "Advisory & Services",
     icon: BriefcaseIcon,
-    headerColor: "text-indigo-700", headerBg: "bg-indigo-100", collapsedBg: "bg-indigo-50/70",
-    borderAccent: "border-indigo-500", hoverBg: "hover:bg-indigo-100",
-    divideColor: "divide-indigo-100", activeItemBg: "bg-indigo-100",
+    headerColor: "text-slate-700", headerBg: "bg-slate-100",
+    borderAccent: "border-slate-400", hoverBg: "hover:bg-slate-50",
+    divideColor: "divide-slate-100", activeItemBg: "bg-slate-100",
     items: [
       { href: "/advisory",                    label: "Advisory Hub",          icon: BriefcaseIcon },
       { href: "/advisory/consulting",         label: "Strategic Consulting",  icon: BriefcaseIcon },
@@ -204,27 +279,34 @@ const SECTIONS: Section[] = [
   },
 ];
 
-// ─── ROUTE → SECTION/PILLAR HELPERS ──────────────────────────────────────────
+// ─── ROUTE → SECTION HELPER ───────────────────────────────────────────────────
 function getSectionForPath(path: string): string | null {
-  const intelligencePrefixes = ["/policy", "/economics", "/technology", "/clinical", "/equity", "/operations"];
-  if (intelligencePrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "intelligence";
+  if (path === "/policy"     || path.startsWith("/policy/"))     return "policy";
+  if (path === "/economics"  || path.startsWith("/economics/"))  return "economics";
+  if (path === "/technology" || path.startsWith("/technology/")) return "technology";
+  if (path === "/clinical"   || path.startsWith("/clinical/"))   return "clinical";
+  if (path === "/equity"     || path.startsWith("/equity/"))     return "equity";
+  if (path === "/operations" || path.startsWith("/operations/")) return "operations";
+
+  // Research lab pages → open their primary pillar
+  if (path === "/research-lab/policy-quality")      return "policy";
+  if (path === "/research-lab/payment-models")      return "economics";
+  if (path === "/research-lab/interoperability")    return "technology";
+  if (path === "/research-lab/technology-ai")       return "technology";
+  if (path === "/research-lab/population-equity")   return "equity";
+  if (path === "/research-lab/knowledge-workspace") return "operations";
+
   if (path === "/academy" || path.startsWith("/academy/")) return "learn";
-  const analyzePrefixes = ["/research-lab", "/htr-simulator", "/medicaid-eligibility-simulator", "/hti-dashboard", "/multimedia", "/trending-topics", "/transformation-friction-index", "/impact-simulation"];
-  if (analyzePrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "analyze";
+
   const statesPrefixes = ["/vermont-medicaid", "/vermont-act-167", "/california-calaim", "/states", "/dashboard", "/ahead-model"];
   if (statesPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "states";
+
+  const toolsPrefixes = ["/htr-simulator", "/medicaid-eligibility-simulator", "/hti-dashboard", "/the-wire", "/investment-tracker", "/transformation-friction-index", "/impact-simulation", "/multimedia", "/trending-topics"];
+  if (toolsPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "tools";
+
   const advisoryPrefixes = ["/advisory", "/connect-hub", "/connect", "/community"];
   if (advisoryPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "advisory";
-  return null;
-}
 
-function getPillarForPath(path: string): string | null {
-  if (path === "/policy" || path.startsWith("/policy/")) return "policy";
-  if (path === "/economics" || path.startsWith("/economics/")) return "economics";
-  if (path === "/technology" || path.startsWith("/technology/")) return "technology";
-  if (path === "/clinical" || path.startsWith("/clinical/")) return "clinical";
-  if (path === "/equity" || path.startsWith("/equity/")) return "equity";
-  if (path === "/operations" || path.startsWith("/operations/")) return "operations";
   return null;
 }
 
@@ -232,51 +314,40 @@ function getPillarForPath(path: string): string | null {
 export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
   const pathname = usePathname();
 
-  // Arrays of open IDs — multiple sections and pillars can be open at once.
   const [expandedSections, setExpandedSections] = useState<string[]>(() => {
     const s = getSectionForPath(pathname);
     return s ? [s] : [];
   });
-  const [expandedPillars, setExpandedPillars] = useState<string[]>(() => {
-    const p = getPillarForPath(pathname);
-    return p ? [p] : [];
-  });
 
-  // Exact match only — never color a parent route just because a child is active
   const isActive = (href: string) => pathname === href;
+  // For lab items: match on path only (ignores ?tab=X query param)
+  const isLabActive = (href: string) => pathname === href.split("?")[0];
 
-  // On route change: ADD the new section/pillar if not already present.
   useEffect(() => {
     const section = getSectionForPath(pathname);
-    const pillar = getPillarForPath(pathname);
-    if (section) setExpandedSections((prev) => prev.includes(section) ? prev : [...prev, section]);
-    if (pillar)  setExpandedPillars((prev)  => prev.includes(pillar)  ? prev : [...prev, pillar]);
+    if (section) {
+      setExpandedSections((prev) =>
+        prev.includes(section) ? prev : [...prev, section]
+      );
+    }
   }, [pathname]);
 
-  // ── Click handlers ────────────────────────────────────────────────────────
   const handleSectionClick = (sectionId: string) => {
     setExpandedSections((prev) =>
-      prev.includes(sectionId) ? prev.filter((id) => id !== sectionId) : [...prev, sectionId]
+      prev.includes(sectionId)
+        ? prev.filter((id) => id !== sectionId)
+        : [...prev, sectionId]
     );
   };
 
-  const handlePillarClick = (pillarId: string) => {
-    setExpandedPillars((prev) =>
-      prev.includes(pillarId) ? prev.filter((id) => id !== pillarId) : [...prev, pillarId]
-    );
-  };
-
-  const handleCollapseAll = () => {
-    setExpandedSections([]);
-    setExpandedPillars([]);
-  };
+  const handleCollapseAll = () => setExpandedSections([]);
 
   const hasAnythingOpen = expandedSections.length > 0;
 
   return (
     <div className="pt-2">
 
-      {/* ── Collapse All ────────────────────────────────────────────────── */}
+      {/* ── Collapse All ──────────────────────────────────────────────────── */}
       {hasAnythingOpen && (
         <div className="flex justify-end mb-2 px-1">
           <button
@@ -289,15 +360,15 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
         </div>
       )}
 
-      {/* ── L1: Section list ─────────────────────────────────────────────── */}
-      <div className="space-y-3">
+      {/* ── Section list ──────────────────────────────────────────────────── */}
+      <div className="space-y-1.5">
         {SECTIONS.map((section) => {
           const isOpen = expandedSections.includes(section.id);
           const SectionIcon = section.icon;
 
           return (
             <div key={section.id}>
-              {/* L1 header button */}
+              {/* L1 header */}
               <button
                 onClick={() => handleSectionClick(section.id)}
                 className={`w-full flex items-center justify-between px-2 py-2 rounded-xl transition-colors text-left ${
@@ -310,7 +381,9 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                   <span className={`w-7 h-7 rounded-lg ${section.headerBg} flex items-center justify-center shrink-0`}>
                     <SectionIcon className={`w-4 h-4 ${section.headerColor}`} />
                   </span>
-                  <span className={`text-[13px] font-semibold tracking-wide ${isOpen ? section.headerColor : "text-slate-600 dark:text-slate-300"}`}>
+                  <span className={`text-[13px] font-semibold tracking-wide ${
+                    isOpen ? section.headerColor : "text-slate-600 dark:text-slate-300"
+                  }`}>
                     {section.label}
                   </span>
                 </span>
@@ -321,82 +394,91 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                 />
               </button>
 
-              {/* ── L2 drawer: indented + colored rail ───────────────────── */}
+              {/* L2 drawer */}
               {isOpen && (
                 <div className={`mt-1 ml-2 border-l-2 ${section.borderAccent} bg-white dark:bg-slate-800/60 rounded-r-xl rounded-b-xl overflow-hidden shadow-sm`}>
 
-                  {/* ── INTELLIGENCE: nested pillar accordion ──────────── */}
-                  {section.isPillars && (
-                    <div className="divide-y divide-slate-100/80 dark:divide-slate-700/50 py-1">
-                      {pillars.map((pillar) => {
-                        const pillarOpen = expandedPillars.includes(pillar.id);
-                        return (
-                          <div key={pillar.id}>
+                  {/* ── PILLAR SECTION: intelligence + lab tools ────────── */}
+                  {section.isPillarSection && (
+                    <div>
+                      {/* Overview link */}
+                      <Link
+                        href={section.overviewHref!}
+                        onClick={onNavigate}
+                        className={`flex items-center pl-4 pr-3 py-2 border-b ${section.divideColor} group ${
+                          isActive(section.overviewHref!)
+                            ? section.activeItemBg
+                            : `bg-white dark:bg-slate-800/60 ${section.hoverBg}`
+                        }`}
+                      >
+                        <span className={`text-[10px] font-black uppercase tracking-widest ${section.headerColor}`}>
+                          {section.label} Overview
+                        </span>
+                      </Link>
 
-                            {/* L2 pillar button */}
-                            <button
-                              onClick={() => handlePillarClick(pillar.id)}
-                              className="w-full flex items-center justify-between pl-5 pr-3 py-2.5 transition-colors text-left hover:bg-slate-50 dark:hover:bg-slate-700/50"
-                            >
-                              <div className="flex items-center gap-2.5">
-                                <span className={`w-2 h-2 rounded-full shrink-0 ${pillar.dot}`} />
-                                <span className={`text-[12px] font-medium ${pillar.accent}`}>
-                                  {pillar.label}
-                                </span>
-                              </div>
-                              <ChevronDownIcon
-                                className={`w-3 h-3 shrink-0 transition-transform duration-200 ${
-                                  pillarOpen ? `${pillar.accent} rotate-0` : "text-slate-300 dark:text-slate-600 -rotate-90"
-                                }`}
-                              />
-                            </button>
+                      {/* Intelligence sub-section */}
+                      <div className="px-4 pt-2 pb-0.5">
+                        <span className="text-[9px] font-bold uppercase tracking-widest text-slate-400">
+                          Intelligence
+                        </span>
+                      </div>
+                      <div className={`divide-y ${section.divideColor}`}>
+                        {section.intelligenceItems!.map((item) => (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            onClick={onNavigate}
+                            className={`flex items-center pl-5 pr-3 py-1.5 transition-colors group ${
+                              isActive(item.href)
+                                ? section.activeItemBg
+                                : `bg-white dark:bg-slate-800/60 ${section.hoverBg}`
+                            }`}
+                          >
+                            <span className={`text-[11px] leading-snug transition-colors ${
+                              isActive(item.href)
+                                ? `font-medium ${section.headerColor}`
+                                : "font-normal text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200"
+                            }`}>
+                              {item.label}
+                            </span>
+                          </Link>
+                        ))}
+                      </div>
 
-                            {/* L3: pillar sub-items, indented further */}
-                            {pillarOpen && (
-                              <div className={`ml-5 border-l-2 ${pillar.rail} bg-slate-50/80 dark:bg-slate-900 mb-1`}>
-                                {/* Pillar overview link */}
-                                <Link
-                                  href={pillar.href}
-                                  onClick={onNavigate}
-                                  className={`flex items-center pl-4 pr-2 py-1.5 border-b border-slate-100 dark:border-slate-700 group ${
-                                    isActive(pillar.href) ? "bg-slate-100 dark:bg-slate-800" : "hover:bg-white dark:hover:bg-slate-800"
-                                  }`}
-                                >
-                                  <span className={`text-[10px] font-bold uppercase tracking-widest ${pillar.accent} group-hover:underline`}>
-                                    {pillar.label} Overview
-                                  </span>
-                                </Link>
-                                {/* L3 sub-items */}
-                                <div className="divide-y divide-slate-100/60 dark:divide-slate-700/50">
-                                  {pillar.items.map((item) => (
-                                    <Link
-                                      key={item.href}
-                                      href={item.href}
-                                      onClick={onNavigate}
-                                      className={`flex items-center pl-4 pr-2 py-2 transition-colors group ${
-                                        isActive(item.href) ? "bg-slate-100 dark:bg-slate-700" : "hover:bg-white dark:hover:bg-slate-800"
-                                      }`}
-                                    >
-                                      <span className={`text-[11px] leading-snug transition-colors ${
-                                        isActive(item.href)
-                                          ? `font-semibold ${pillar.accent}`
-                                          : "font-normal text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200"
-                                      }`}>
-                                        {item.label}
-                                      </span>
-                                    </Link>
-                                  ))}
-                                </div>
-                              </div>
-                            )}
-                          </div>
-                        );
-                      })}
+                      {/* Research Lab sub-section */}
+                      <div className={`px-4 pt-2 pb-0.5 mt-1 border-t ${section.divideColor}`}>
+                        <span className="text-[9px] font-bold uppercase tracking-widest text-slate-400">
+                          Research Lab
+                        </span>
+                      </div>
+                      <div className={`divide-y ${section.divideColor} pb-1`}>
+                        {section.labItems!.map((item) => (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            onClick={onNavigate}
+                            className={`flex items-center gap-2 pl-5 pr-3 py-1.5 transition-colors group ${
+                              isLabActive(item.href)
+                                ? section.activeItemBg
+                                : `bg-white dark:bg-slate-800/60 ${section.hoverBg}`
+                            }`}
+                          >
+                            <BeakerIcon className={`w-3 h-3 shrink-0 ${section.headerColor} opacity-40`} />
+                            <span className={`text-[11px] leading-snug transition-colors ${
+                              isLabActive(item.href)
+                                ? `font-medium ${section.headerColor}`
+                                : "font-normal text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200"
+                            }`}>
+                              {item.label}
+                            </span>
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   )}
 
-                  {/* ── ALL OTHER SECTIONS: flat item list ────────────── */}
-                  {!section.isPillars && section.items && (
+                  {/* ── REGULAR SECTION: flat item list ─────────────────── */}
+                  {!section.isPillarSection && section.items && (
                     <div className={`divide-y ${section.divideColor} py-1`}>
                       {section.items.map((item) => {
                         const Icon = item.icon;
@@ -426,6 +508,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                       })}
                     </div>
                   )}
+
                 </div>
               )}
             </div>
@@ -437,7 +520,9 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
           href="/saved"
           onClick={onNavigate}
           className={`flex items-center justify-between px-2 py-2 rounded-xl transition-colors ${
-            isActive("/saved") ? "bg-slate-100 dark:bg-slate-700" : "hover:bg-slate-100 dark:hover:bg-slate-700"
+            isActive("/saved")
+              ? "bg-slate-100 dark:bg-slate-700"
+              : "hover:bg-slate-100 dark:hover:bg-slate-700"
           }`}
         >
           <span className="flex items-center gap-2.5">

@@ -5,6 +5,10 @@ export const metadata = {
   description: 'Design alternative payment models, episode bundles, global budgets, shared savings scenarios, and cost-effectiveness analyses.',
 }
 
-export default function PaymentModelsPage() {
-  return <PaymentModelsClient />
+export default function PaymentModelsPage({
+  searchParams,
+}: {
+  searchParams: { tab?: string }
+}) {
+  return <PaymentModelsClient initialTab={searchParams.tab} />
 }
