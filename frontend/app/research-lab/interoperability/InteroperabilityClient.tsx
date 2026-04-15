@@ -43,15 +43,15 @@ export default function InteroperabilityClient({ initialTab }: { initialTab?: st
   return (
     <LabPageShell
       icon="🧬"
-      label="Interoperability & Risk"
-      desc="Build spec-compliant FHIR R4 resources, test CDS Hooks workflows, simulate prior authorization, validate ONC compliance, and run HCC v28 risk stratification models."
+      label="Technology & Clinical Tools"
+      desc="FHIR Interoperability Lab (Technology pillar) — validate FHIR R4 resources, test CDS Hooks, check ONC compliance. Risk Stratification Engine (Clinical pillar) — apply HCC v28 RAF scoring and segment populations by clinical complexity."
       accentClass="bg-indigo-600"
       accentLight="bg-indigo-100 text-indigo-700"
       currentHref="/research-lab/interoperability"
       practiceHref="/advisory/it-consulting"
       practiceLabel="Health IT Consulting"
       practiceIcon="💻"
-      toolParam="Interoperability & Risk"
+      toolParam="Technology & Clinical Tools"
       advisoryBullets={[
         'Design and implement your FHIR R4 interoperability roadmap end-to-end',
         'Remediate ONC information blocking compliance gaps before an audit finds them',
