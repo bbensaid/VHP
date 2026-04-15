@@ -17,6 +17,7 @@ export type TrackModule = {
 
 export type LearningTrack = {
   id: string;
+  pillarId: "policy" | "economics" | "technology" | "clinical" | "equity" | "operations";
   title: string;
   subtitle: string;
   icon: string;
@@ -24,6 +25,7 @@ export type LearningTrack = {
   badgeColor: string;
   targetAudience: string[];
   totalMinutes: number;
+  comingSoon?: boolean;
   modules: TrackModule[];
 };
 
@@ -31,6 +33,7 @@ export const learningTracks: LearningTrack[] = [
   // ── TRACK 1: Value-Based Care — Foundation to Advanced ──────────────────────
   {
     id: "value-based-care-track",
+    pillarId: "economics",
     title: "Value-Based Care: Foundation to Advanced",
     subtitle:
       "From the fundamental paradox of US healthcare spending to the mechanics of ACO contracts, risk adjustment, care management, and technology infrastructure — the complete VBC curriculum.",
@@ -191,6 +194,7 @@ export const learningTracks: LearningTrack[] = [
   // ── TRACK 2: Precision Medicine — Foundation to Advanced ────────────────────
   {
     id: "precision-medicine-track",
+    pillarId: "clinical",
     title: "Precision Medicine: From Revolution to Bedside",
     subtitle:
       "From the genomics primer that started the revolution to clinical implementation, regulatory frameworks, economics of targeted therapies, AI in genomics, and equity challenges — the complete precision medicine curriculum.",
@@ -319,6 +323,7 @@ export const learningTracks: LearningTrack[] = [
   // ── TRACK 3: Health Equity in Practice ──────────────────────────────────────
   {
     id: "health-equity-track",
+    pillarId: "equity",
     title: "Health Equity in Practice",
     subtitle:
       "From defining equity and mapping social determinants to building clinical SDOH integration programs, designing equitable VBC systems, and measuring organizational accountability — a rigorous, actionable curriculum.",
@@ -413,6 +418,68 @@ export const learningTracks: LearningTrack[] = [
         ],
       },
     ],
+  },
+  // ── TRACK 4: Health Policy & Regulatory Architecture (coming soon) ──────────
+  {
+    id: "policy-track",
+    pillarId: "policy",
+    title: "Health Policy & Regulatory Architecture",
+    subtitle:
+      "From federal rulemaking cycles and Medicaid waiver design to state innovation programs and global comparative policy — the complete curriculum for healthcare policy professionals.",
+    icon: "🏛️",
+    badge: "Foundational → Advanced",
+    badgeColor: "bg-sky-100 text-sky-800 border-sky-300",
+    targetAudience: [
+      "Health policy analysts and advocates",
+      "State Medicaid directors and program managers",
+      "Government affairs professionals",
+      "Health system regulatory and compliance leaders",
+    ],
+    totalMinutes: 0,
+    comingSoon: true,
+    modules: [],
+  },
+
+  // ── TRACK 5: Health Technology & Digital Infrastructure (coming soon) ────────
+  {
+    id: "technology-track",
+    pillarId: "technology",
+    title: "Health Technology & Digital Infrastructure",
+    subtitle:
+      "From FHIR standards and interoperability mandates to AI governance, algorithmic bias, and digital health ROI — the complete curriculum for health technology leaders.",
+    icon: "💻",
+    badge: "Foundational → Advanced",
+    badgeColor: "bg-indigo-100 text-indigo-800 border-indigo-300",
+    targetAudience: [
+      "Chief Information and Technology Officers",
+      "Health IT architects and engineers",
+      "Digital health program managers",
+      "Clinical informaticists and CMIOs",
+    ],
+    totalMinutes: 0,
+    comingSoon: true,
+    modules: [],
+  },
+
+  // ── TRACK 6: Healthcare Operations & Revenue Cycle (coming soon) ─────────────
+  {
+    id: "operations-track",
+    pillarId: "operations",
+    title: "Healthcare Operations & Revenue Cycle",
+    subtitle:
+      "From revenue cycle mechanics and denial management to workforce stability, supply chain resilience, and payer network strategy — the complete operational leadership curriculum.",
+    icon: "⚙️",
+    badge: "Foundational → Advanced",
+    badgeColor: "bg-teal-100 text-teal-800 border-teal-300",
+    targetAudience: [
+      "CFOs and revenue cycle leaders",
+      "Hospital operations and COO roles",
+      "Workforce and human capital directors",
+      "Payer contracting and network managers",
+    ],
+    totalMinutes: 0,
+    comingSoon: true,
+    modules: [],
   },
 ];
 

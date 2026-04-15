@@ -14,7 +14,6 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import WebVitalsReporter from "@/components/WebVitalsReporter";
 import SessionTimeout from "@/components/SessionTimeout";
-import MvpWatermark from "@/components/MvpWatermark";
 import { cookies } from "next/headers";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -49,8 +48,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
-        <MvpWatermark />
-        <WebVitalsReporter />
+<WebVitalsReporter />
         <ThemeProvider>
           {/* Skip navigation — visible on focus for keyboard users (WCAG 2.4.1) */}
           <a

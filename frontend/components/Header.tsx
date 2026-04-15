@@ -129,7 +129,7 @@ const pillars = [
   },
 ];
 
-type MegaMenuType = "intelligence" | "learn" | "analyze" | "states" | "advise" | null;
+type MegaMenuType = "intelligence" | "learn" | "tools" | "states" | "advise" | null;
 
 // ─── MEGA-MENU PANELS ────────────────────────────────────────────────────────
 
@@ -323,88 +323,28 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
   );
 }
 
-function AnalyzePanel({ onClose }: { onClose: () => void }) {
+function ToolsPanel({ onClose }: { onClose: () => void }) {
   return (
     <div className="max-w-screen-xl mx-auto px-6 py-6">
       <div className="grid grid-cols-3 gap-8">
-        {/* Interactive Tools */}
+        {/* Simulators */}
         <div>
           <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-            Interactive Tools
+            Simulators
           </p>
           <div className="space-y-1">
-            <Link
-              href="/research-lab"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
-                Research Lab
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                19 interactive analytical tools
-              </span>
-            </Link>
-            <Link
-              href="/htr-simulator"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
-                HTR Simulator
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                6-pillar transformation scenario modeler
-              </span>
-            </Link>
-            <Link
-              href="/medicaid-eligibility-simulator"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
-                Medicaid Eligibility Simulator
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                Vermont Medicaid screening tool — 5 steps
-              </span>
-            </Link>
-            <Link
-              href="/hti-dashboard"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
-                HTI Dashboard
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                Health Transformation Index metrics
-              </span>
-            </Link>
-            <Link
-              href="/transformation-friction-index"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
-                Friction Index
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                Policy complexity vs. operational readiness score
-              </span>
-            </Link>
-            <Link
-              href="/impact-simulation"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
-                Impact Simulation
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                Cross-pillar scenario modeling before you spend
-              </span>
-            </Link>
+            {[
+              { href: "/htr-simulator", label: "HTR Simulator", desc: "6-pillar transformation scenario modeler" },
+              { href: "/medicaid-eligibility-simulator", label: "Medicaid Eligibility", desc: "Vermont Medicaid screening — 5 steps" },
+              { href: "/impact-simulation", label: "Impact Simulation", desc: "Cross-pillar scenario modeling" },
+              { href: "/transformation-friction-index", label: "Friction Index", desc: "Policy complexity vs. operational readiness" },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} onClick={onClose}
+                className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group">
+                <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">{item.label}</span>
+                <span className="text-xs text-slate-400 mt-0.5">{item.desc}</span>
+              </Link>
+            ))}
           </div>
         </div>
 
@@ -414,62 +354,39 @@ function AnalyzePanel({ onClose }: { onClose: () => void }) {
             Data &amp; Signals
           </p>
           <div className="space-y-1">
-            <Link
-              href="/trending-topics"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-emerald-700">
-                Trending Topics
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                Real-time intelligence signals
-              </span>
-            </Link>
-            <Link
-              href="/the-wire"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-emerald-700">
-                The Wire
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                Live health industry news feed
-              </span>
-            </Link>
-            <Link
-              href="/investment-tracker"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-emerald-700">
-                Investment Tracker
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                M&amp;A, PE &amp; capital flow monitoring
-              </span>
-            </Link>
+            {[
+              { href: "/trending-topics", label: "Trending Topics", desc: "Real-time intelligence signals" },
+              { href: "/the-wire", label: "The Wire", desc: "Live health industry news feed" },
+              { href: "/investment-tracker", label: "Investment Tracker", desc: "M&A, PE & capital flow monitoring" },
+              { href: "/hti-dashboard", label: "HTI Dashboard", desc: "Health Transformation Index metrics" },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} onClick={onClose}
+                className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors group">
+                <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-emerald-700">{item.label}</span>
+                <span className="text-xs text-slate-400 mt-0.5">{item.desc}</span>
+              </Link>
+            ))}
           </div>
         </div>
 
-        {/* Media & Reference */}
+        {/* Media */}
         <div>
           <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-            Media &amp; Reference
+            Media
           </p>
           <div className="space-y-1">
-            <Link
-              href="/multimedia"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">
-                Multimedia
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                Videos, presentations &amp; infographics
-              </span>
+            <Link href="/multimedia" onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">Multimedia</span>
+              <span className="text-xs text-slate-400 mt-0.5">Videos, presentations &amp; infographics</span>
+            </Link>
+          </div>
+          <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-700">
+            <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Research Lab</p>
+            <Link href="/research-lab" onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group">
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">All 19 Lab Tools</span>
+              <span className="text-xs text-slate-400 mt-0.5">Browse the full analytical tool directory</span>
             </Link>
           </div>
         </div>
@@ -744,10 +661,10 @@ const Header = () => {
   };
 
   const megaMenuItems: { type: MegaMenuType; label: string; activeCheck: string }[] = [
-    { type: "learn", label: "LEARN", activeCheck: "/academy" },
-    { type: "analyze", label: "ANALYZE & TOOLS", activeCheck: "/research-lab,/htr-simulator,/hti-dashboard,/trending-topics,/multimedia,/the-wire,/investment-tracker" },
-    { type: "intelligence", label: "INTELLIGENCE", activeCheck: "/policy,/economics,/technology,/clinical,/equity" },
-    { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/california-calaim,/dashboard,/ahead-model" },
+    { type: "intelligence", label: "INTELLIGENCE", activeCheck: "/policy,/economics,/technology,/clinical,/equity,/operations,/research-lab" },
+    { type: "learn", label: "ACADEMY", activeCheck: "/academy" },
+    { type: "tools", label: "TOOLS", activeCheck: "/htr-simulator,/hti-dashboard,/trending-topics,/multimedia,/the-wire,/investment-tracker,/medicaid-eligibility-simulator,/transformation-friction-index,/impact-simulation" },
+    { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/california-calaim,/dashboard,/ahead-model,/vermont-medicaid" },
     { type: "advise", label: "ADVISORY & SERVICES", activeCheck: "/advisory,/connect-hub,/connect,/community" },
   ];
 
@@ -863,7 +780,7 @@ const Header = () => {
                     >
                       {type === "intelligence" && <IntelligencePanel onClose={() => setActiveMegaMenu(null)} />}
                       {type === "learn" && <LearnPanel onClose={() => setActiveMegaMenu(null)} />}
-                      {type === "analyze" && <AnalyzePanel onClose={() => setActiveMegaMenu(null)} />}
+                      {type === "tools" && <ToolsPanel onClose={() => setActiveMegaMenu(null)} />}
                       {type === "states" && <StatesPanel onClose={() => setActiveMegaMenu(null)} />}
                       {type === "advise" && <AdvisePanel onClose={() => setActiveMegaMenu(null)} />}
                     </div>
@@ -979,16 +896,19 @@ const Header = () => {
                 ],
               },
               {
-                key: "analyze",
-                label: "ANALYZE & TOOLS",
+                key: "tools",
+                label: "TOOLS",
                 children: [
-                  { label: "Research Lab", href: "/research-lab", sub: [] },
                   { label: "HTR Simulator", href: "/htr-simulator", sub: [] },
+                  { label: "Medicaid Eligibility", href: "/medicaid-eligibility-simulator", sub: [] },
+                  { label: "Impact Simulation", href: "/impact-simulation", sub: [] },
+                  { label: "Friction Index", href: "/transformation-friction-index", sub: [] },
                   { label: "HTI Dashboard", href: "/hti-dashboard", sub: [] },
                   { label: "The Wire", href: "/the-wire", sub: [] },
                   { label: "Investment Tracker", href: "/investment-tracker", sub: [] },
                   { label: "Trending Topics", href: "/trending-topics", sub: [] },
                   { label: "Multimedia", href: "/multimedia", sub: [] },
+                  { label: "All 19 Lab Tools", href: "/research-lab", sub: [] },
                 ],
               },
               {
