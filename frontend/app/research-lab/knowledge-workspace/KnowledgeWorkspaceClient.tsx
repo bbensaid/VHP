@@ -43,8 +43,12 @@ const TABS = [
   },
 ]
 
-export default function KnowledgeWorkspaceClient() {
-  const [activeTab, setActiveTab] = useState('evidence')
+const VALID_TABS = ['evidence', 'workforce', 'leaderboard', 'workspace']
+
+export default function KnowledgeWorkspaceClient({ initialTab }: { initialTab?: string }) {
+  const [activeTab, setActiveTab] = useState(
+    VALID_TABS.includes(initialTab ?? '') ? initialTab! : 'evidence'
+  )
 
   return (
     <LabPageShell

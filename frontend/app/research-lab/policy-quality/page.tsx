@@ -5,6 +5,10 @@ export const metadata = {
   description: 'Simulate Medicaid waivers, global budgets, HEDIS/Star ratings, MIPS, actuarial models, and hospital financial stress tests.',
 }
 
-export default function PolicyQualityPage() {
-  return <PolicyQualityClient />
+export default function PolicyQualityPage({
+  searchParams,
+}: {
+  searchParams: { tab?: string }
+}) {
+  return <PolicyQualityClient initialTab={searchParams.tab} />
 }

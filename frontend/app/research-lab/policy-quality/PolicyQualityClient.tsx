@@ -48,8 +48,12 @@ const TABS = [
   },
 ]
 
-export default function PolicyQualityClient() {
-  const [activeTab, setActiveTab] = useState('policy')
+const VALID_TABS = ['policy', 'quality', 'scorecard', 'hta', 'actuarial']
+
+export default function PolicyQualityClient({ initialTab }: { initialTab?: string }) {
+  const [activeTab, setActiveTab] = useState(
+    VALID_TABS.includes(initialTab ?? '') ? initialTab! : 'policy'
+  )
 
   return (
     <LabPageShell
