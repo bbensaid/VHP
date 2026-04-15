@@ -58,15 +58,15 @@ export default function PolicyQualityClient({ initialTab }: { initialTab?: strin
   return (
     <LabPageShell
       icon="📋"
-      label="Policy & Quality Sciences"
-      desc="Simulate 1115 Medicaid waivers, model global budgets, optimize HEDIS/Star/MIPS performance, run actuarial scenarios, and stress-test hospital financials."
+      label="Policy, Economics & Clinical Tools"
+      desc="Policy Simulator (Policy pillar) · Clinical Quality Optimizer (Clinical pillar) · Hospital Financial Scorecard, HTA Studio & Actuarial Lab (Economics pillar). Five tools spanning three domains on one page."
       accentClass="bg-sky-600"
       accentLight="bg-sky-100 text-sky-700"
       currentHref="/research-lab/policy-quality"
       practiceHref="/advisory/regulatory"
       practiceLabel="Regulatory & Compliance"
       practiceIcon="⚖️"
-      toolParam="Policy & Quality Sciences"
+      toolParam="Policy, Economics & Clinical Tools"
       advisoryBullets={[
         'Draft and file your 1115 waiver application with CMS using your modeled impact projections',
         'Build a 12-month HEDIS and Star Ratings improvement playbook tied to actual revenue impact',

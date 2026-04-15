@@ -186,11 +186,55 @@ function useModuleProgressSafe(slug: string) {
   return useModuleProgress(slug);
 }
 
+// ─── Coming-Soon Track Card ───────────────────────────────────────────────────
+
+const PILLAR_COLORS: Record<string, { badge: string; dot: string }> = {
+  policy:     { badge: "bg-sky-100 text-sky-700 border-sky-200",         dot: "bg-sky-500" },
+  economics:  { badge: "bg-emerald-100 text-emerald-700 border-emerald-200", dot: "bg-emerald-500" },
+  technology: { badge: "bg-indigo-100 text-indigo-700 border-indigo-200", dot: "bg-indigo-500" },
+  clinical:   { badge: "bg-red-100 text-red-700 border-red-200",          dot: "bg-red-500" },
+  equity:     { badge: "bg-violet-100 text-violet-700 border-violet-200", dot: "bg-violet-500" },
+  operations: { badge: "bg-teal-100 text-teal-700 border-teal-200",       dot: "bg-teal-500" },
+};
+
+function ComingSoonTrackCard({ track }: { track: LearningTrack }) {
+  const colors = PILLAR_COLORS[track.pillarId] ?? { badge: "bg-slate-100 text-slate-600 border-slate-200", dot: "bg-slate-400" };
+  return (
+    <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden opacity-75">
+      <div className="p-6">
+        <div className="flex items-start gap-4">
+          <span className="text-4xl leading-none mt-1 grayscale">{track.icon}</span>
+          <div className="flex-1">
+            <div className="flex flex-wrap items-center gap-2 mb-2">
+              <span className={`text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full border ${colors.badge}`}>
+                {track.pillarId.charAt(0).toUpperCase() + track.pillarId.slice(1)} Pillar
+              </span>
+              <span className="text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full border bg-slate-100 text-slate-500 border-slate-200">
+                Coming Soon
+              </span>
+            </div>
+            <h2 className="ty-h3 font-black text-slate-700 mb-1">{track.title}</h2>
+            <p className="text-sm text-slate-400 leading-relaxed max-w-xl">{track.subtitle}</p>
+            <div className="flex flex-wrap gap-3 mt-3 text-xs text-slate-400">
+              {track.targetAudience.slice(0, 2).map(a => (
+                <span key={a} className="flex items-center gap-1"><span className={`w-1.5 h-1.5 rounded-full ${colors.dot}`} />{a}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ─── Hub Page ─────────────────────────────────────────────────────────────────
 
 export default function LearningTracksHub() {
   const searchParams = useSearchParams();
   const highlightedTrackId = searchParams.get("track");
+
+  const availableTracks = learningTracks.filter(t => !t.comingSoon);
+  const comingSoonTracks = learningTracks.filter(t => t.comingSoon);
 
   return (
     <div className="min-h-screen bg-slate-50 pb-20">
@@ -228,12 +272,24 @@ export default function LearningTracksHub() {
         </div>
       </div>
 
-      {/* Tracks */}
+      {/* Available tracks */}
       <div className="max-w-6xl mx-auto px-6 py-10 space-y-8">
-        {learningTracks.map(track => (
+        {availableTracks.map(track => (
           <TrackCard key={track.id} track={track} highlighted={track.id === highlightedTrackId} />
         ))}
       </div>
+
+      {/* Coming-soon tracks */}
+      {comingSoonTracks.length > 0 && (
+        <div className="max-w-6xl mx-auto px-6 pb-10">
+          <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">Coming Soon</h2>
+          <div className="space-y-4">
+            {comingSoonTracks.map(track => (
+              <ComingSoonTrackCard key={track.id} track={track} />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

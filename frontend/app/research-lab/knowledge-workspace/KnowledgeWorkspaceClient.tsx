@@ -53,8 +53,8 @@ export default function KnowledgeWorkspaceClient({ initialTab }: { initialTab?: 
   return (
     <LabPageShell
       icon="📚"
-      label="Knowledge & Workspace"
-      desc="Access 25 CEA studies, track 20 CMMI innovation models, project workforce supply and demand, benchmark all 50 states, and manage your research scenarios with export."
+      label="Operations, Policy & Clinical Tools"
+      desc="Evidence Library & Research Workspace (Operations pillar) · Innovation Leaderboard (Policy pillar) · Workforce Modeler (Clinical pillar). Four tools spanning three domains on one page."
       accentClass="bg-slate-700"
       accentLight="bg-slate-200 text-slate-700"
       currentHref="/research-lab/knowledge-workspace"
