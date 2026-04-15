@@ -56,6 +56,7 @@ type Section = {
   hoverBg: string;
   divideColor: string;
   activeItemBg: string;
+  dot: string;
   // pillar sections — show intelligence content + research lab tools
   isPillarSection?: boolean;
   overviewHref?: string;
@@ -72,6 +73,7 @@ const SECTIONS: Section[] = [
   {
     id: "policy", label: "Policy",
     icon: BuildingLibraryIcon,
+    dot: "bg-sky-500",
     headerColor: "text-sky-700", headerBg: "bg-sky-100",
     borderAccent: "border-sky-400", hoverBg: "hover:bg-sky-50",
     divideColor: "divide-sky-100", activeItemBg: "bg-sky-100",
@@ -93,6 +95,7 @@ const SECTIONS: Section[] = [
   {
     id: "economics", label: "Economics",
     icon: BanknotesIcon,
+    dot: "bg-emerald-500",
     headerColor: "text-emerald-700", headerBg: "bg-emerald-100",
     borderAccent: "border-emerald-400", hoverBg: "hover:bg-emerald-50",
     divideColor: "divide-emerald-100", activeItemBg: "bg-emerald-100",
@@ -118,6 +121,7 @@ const SECTIONS: Section[] = [
   {
     id: "technology", label: "Technology",
     icon: CpuChipIcon,
+    dot: "bg-indigo-500",
     headerColor: "text-indigo-700", headerBg: "bg-indigo-100",
     borderAccent: "border-indigo-400", hoverBg: "hover:bg-indigo-50",
     divideColor: "divide-indigo-100", activeItemBg: "bg-indigo-100",
@@ -140,6 +144,7 @@ const SECTIONS: Section[] = [
   {
     id: "clinical", label: "Clinical",
     icon: HeartIcon,
+    dot: "bg-red-500",
     headerColor: "text-red-700", headerBg: "bg-red-100",
     borderAccent: "border-red-400", hoverBg: "hover:bg-red-50",
     divideColor: "divide-red-100", activeItemBg: "bg-red-100",
@@ -151,8 +156,8 @@ const SECTIONS: Section[] = [
       { href: "/clinical/virtual",   label: "Virtual Care Models" },
     ],
     labItems: [
-      { href: "/research-lab/interoperability?tab=risk",        label: "Risk Stratification Engine" },
-      { href: "/research-lab/policy-quality?tab=quality",       label: "Clinical Quality Optimizer" },
+      { href: "/research-lab/interoperability?tab=risk",         label: "Risk Stratification Engine" },
+      { href: "/research-lab/policy-quality?tab=quality",        label: "Clinical Quality Optimizer" },
       { href: "/research-lab/knowledge-workspace?tab=workforce", label: "Workforce Modeler" },
     ],
   },
@@ -161,6 +166,7 @@ const SECTIONS: Section[] = [
   {
     id: "equity", label: "Equity",
     icon: ScaleIcon,
+    dot: "bg-violet-500",
     headerColor: "text-violet-700", headerBg: "bg-violet-100",
     borderAccent: "border-violet-400", hoverBg: "hover:bg-violet-50",
     divideColor: "divide-violet-100", activeItemBg: "bg-violet-100",
@@ -181,6 +187,7 @@ const SECTIONS: Section[] = [
   {
     id: "operations", label: "Operations",
     icon: Cog6ToothIcon,
+    dot: "bg-teal-500",
     headerColor: "text-teal-700", headerBg: "bg-teal-100",
     borderAccent: "border-teal-400", hoverBg: "hover:bg-teal-50",
     divideColor: "divide-teal-100", activeItemBg: "bg-teal-100",
@@ -203,8 +210,9 @@ const SECTIONS: Section[] = [
   {
     id: "states", label: "States & Programs",
     icon: MapPinIcon,
+    dot: "bg-rose-500",
     headerColor: "text-rose-700", headerBg: "bg-rose-100",
-    borderAccent: "border-rose-400", hoverBg: "hover:bg-rose-50",
+    borderAccent: "border-rose-500", hoverBg: "hover:bg-rose-100",
     divideColor: "divide-rose-100", activeItemBg: "bg-rose-100",
     items: [
       { href: "/vermont-medicaid",    label: "Vermont Medicaid",    icon: DocumentTextIcon },
@@ -216,23 +224,24 @@ const SECTIONS: Section[] = [
     ],
   },
 
-  // ── TOOLS (standalone cross-domain utilities) ──────────────────────────────
+  // ── TOOLS ─────────────────────────────────────────────────────────────────
   {
     id: "tools", label: "Tools",
     icon: WrenchScrewdriverIcon,
+    dot: "bg-amber-500",
     headerColor: "text-amber-700", headerBg: "bg-amber-100",
-    borderAccent: "border-amber-400", hoverBg: "hover:bg-amber-50",
+    borderAccent: "border-amber-500", hoverBg: "hover:bg-amber-100",
     divideColor: "divide-amber-100", activeItemBg: "bg-amber-100",
     items: [
-      { href: "/htr-simulator",                  label: "HTR Simulator",          icon: CpuChipIcon },
-      { href: "/medicaid-eligibility-simulator", label: "Medicaid Eligibility",    icon: DocumentTextIcon },
-      { href: "/hti-dashboard",                  label: "HTI Dashboard",          icon: TableCellsIcon },
-      { href: "/the-wire",                       label: "The Wire",               icon: BoltIcon },
-      { href: "/investment-tracker",             label: "Investment Tracker",      icon: BanknotesIcon },
-      { href: "/transformation-friction-index",  label: "Friction Index",          icon: BeakerIcon },
-      { href: "/impact-simulation",              label: "Impact Simulation",       icon: SparklesIcon },
-      { href: "/multimedia",                     label: "Multimedia",             icon: FilmIcon },
-      { href: "/trending-topics",                label: "Trending Topics",        icon: ArrowTrendingUpIcon },
+      { href: "/htr-simulator",                  label: "HTR Simulator",       icon: CpuChipIcon },
+      { href: "/medicaid-eligibility-simulator", label: "Medicaid Eligibility", icon: DocumentTextIcon },
+      { href: "/hti-dashboard",                  label: "HTI Dashboard",       icon: TableCellsIcon },
+      { href: "/the-wire",                       label: "The Wire",            icon: BoltIcon },
+      { href: "/investment-tracker",             label: "Investment Tracker",   icon: BanknotesIcon },
+      { href: "/transformation-friction-index",  label: "Friction Index",       icon: BeakerIcon },
+      { href: "/impact-simulation",              label: "Impact Simulation",    icon: SparklesIcon },
+      { href: "/multimedia",                     label: "Multimedia",          icon: FilmIcon },
+      { href: "/trending-topics",                label: "Trending Topics",     icon: ArrowTrendingUpIcon },
     ],
   },
 
@@ -240,9 +249,10 @@ const SECTIONS: Section[] = [
   {
     id: "learn", label: "Academy",
     icon: AcademicCapIcon,
-    headerColor: "text-blue-700", headerBg: "bg-blue-100",
-    borderAccent: "border-blue-400", hoverBg: "hover:bg-blue-50",
-    divideColor: "divide-blue-100", activeItemBg: "bg-blue-100",
+    dot: "bg-sky-500",
+    headerColor: "text-sky-700", headerBg: "bg-sky-100",
+    borderAccent: "border-sky-500", hoverBg: "hover:bg-sky-100",
+    divideColor: "divide-sky-100", activeItemBg: "bg-sky-100",
     items: [
       { href: "/academy/personalized-learning", label: "Personalized Learning",   icon: SparklesIcon },
       { href: "/academy/tracks",                label: "Learning Tracks",          icon: TableCellsIcon },
@@ -259,9 +269,10 @@ const SECTIONS: Section[] = [
   {
     id: "advisory", label: "Advisory & Services",
     icon: BriefcaseIcon,
-    headerColor: "text-slate-700", headerBg: "bg-slate-100",
-    borderAccent: "border-slate-400", hoverBg: "hover:bg-slate-50",
-    divideColor: "divide-slate-100", activeItemBg: "bg-slate-100",
+    dot: "bg-indigo-500",
+    headerColor: "text-indigo-700", headerBg: "bg-indigo-100",
+    borderAccent: "border-indigo-500", hoverBg: "hover:bg-indigo-100",
+    divideColor: "divide-indigo-100", activeItemBg: "bg-indigo-100",
     items: [
       { href: "/advisory",                    label: "Advisory Hub",          icon: BriefcaseIcon },
       { href: "/advisory/consulting",         label: "Strategic Consulting",  icon: BriefcaseIcon },
@@ -288,7 +299,6 @@ function getSectionForPath(path: string): string | null {
   if (path === "/equity"     || path.startsWith("/equity/"))     return "equity";
   if (path === "/operations" || path.startsWith("/operations/")) return "operations";
 
-  // Research lab pages → open their primary pillar
   if (path === "/research-lab/policy-quality")      return "policy";
   if (path === "/research-lab/payment-models")      return "economics";
   if (path === "/research-lab/interoperability")    return "technology";
@@ -319,8 +329,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
     return s ? [s] : [];
   });
 
-  const isActive = (href: string) => pathname === href;
-  // For lab items: match on path only (ignores ?tab=X query param)
+  const isActive  = (href: string) => pathname === href;
   const isLabActive = (href: string) => pathname === href.split("?")[0];
 
   useEffect(() => {
@@ -361,83 +370,98 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
       )}
 
       {/* ── Section list ──────────────────────────────────────────────────── */}
-      <div className="space-y-1.5">
+      <div className="space-y-3">
         {SECTIONS.map((section) => {
           const isOpen = expandedSections.includes(section.id);
           const SectionIcon = section.icon;
 
           return (
             <div key={section.id}>
-              {/* L1 header */}
-              <button
-                onClick={() => handleSectionClick(section.id)}
-                className={`w-full flex items-center justify-between px-2 py-2 rounded-xl transition-colors text-left ${
-                  isOpen
-                    ? `${section.headerBg} dark:bg-slate-800`
-                    : "hover:bg-slate-100 dark:hover:bg-slate-800"
-                }`}
-              >
-                <span className="flex items-center gap-2.5">
-                  <span className={`w-7 h-7 rounded-lg ${section.headerBg} flex items-center justify-center shrink-0`}>
-                    <SectionIcon className={`w-4 h-4 ${section.headerColor}`} />
-                  </span>
-                  <span className={`text-[13px] font-semibold tracking-wide ${
-                    isOpen ? section.headerColor : "text-slate-600 dark:text-slate-300"
-                  }`}>
-                    {section.label}
-                  </span>
-                </span>
-                <ChevronDownIcon
-                  className={`w-3.5 h-3.5 shrink-0 transition-transform duration-200 ${
-                    isOpen ? `${section.headerColor} rotate-0` : "text-slate-400 -rotate-90"
+
+              {/* L1 header — pillar: label is a Link, chevron is a toggle button */}
+              {section.isPillarSection ? (
+                <div className={`flex items-center justify-between px-2 py-2 rounded-xl transition-colors ${
+                  isOpen ? `${section.headerBg} dark:bg-slate-800` : "hover:bg-slate-100 dark:hover:bg-slate-800"
+                }`}>
+                  <Link
+                    href={section.overviewHref!}
+                    onClick={() => {
+                      if (!expandedSections.includes(section.id)) handleSectionClick(section.id);
+                      onNavigate?.();
+                    }}
+                    className="flex items-center gap-2.5 flex-1 min-w-0"
+                  >
+                    <span className={`w-7 h-7 rounded-lg ${section.headerBg} flex items-center justify-center shrink-0`}>
+                      <SectionIcon className={`w-4 h-4 ${section.headerColor}`} />
+                    </span>
+                    <span className={`text-[13px] font-semibold tracking-wide ${
+                      isOpen ? section.headerColor : "text-slate-600 dark:text-slate-300"
+                    }`}>
+                      {section.label}
+                    </span>
+                  </Link>
+                  <button
+                    onClick={() => handleSectionClick(section.id)}
+                    className="p-1 rounded-lg hover:bg-black/5 transition-colors shrink-0"
+                    aria-label={isOpen ? "Collapse" : "Expand"}
+                  >
+                    <ChevronDownIcon className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                      isOpen ? `${section.headerColor} rotate-0` : "text-slate-400 -rotate-90"
+                    }`} />
+                  </button>
+                </div>
+              ) : (
+                /* L1 header — regular section: whole header is a toggle button */
+                <button
+                  onClick={() => handleSectionClick(section.id)}
+                  className={`w-full flex items-center justify-between px-2 py-2 rounded-xl transition-colors text-left ${
+                    isOpen
+                      ? `${section.headerBg} dark:bg-slate-800`
+                      : "hover:bg-slate-100 dark:hover:bg-slate-800"
                   }`}
-                />
-              </button>
+                >
+                  <span className="flex items-center gap-2.5">
+                    <span className={`w-7 h-7 rounded-lg ${section.headerBg} flex items-center justify-center shrink-0`}>
+                      <SectionIcon className={`w-4 h-4 ${section.headerColor}`} />
+                    </span>
+                    <span className={`text-[13px] font-semibold tracking-wide ${
+                      isOpen ? section.headerColor : "text-slate-600 dark:text-slate-300"
+                    }`}>
+                      {section.label}
+                    </span>
+                  </span>
+                  <ChevronDownIcon className={`w-3.5 h-3.5 shrink-0 transition-transform duration-200 ${
+                    isOpen ? `${section.headerColor} rotate-0` : "text-slate-400 -rotate-90"
+                  }`} />
+                </button>
+              )}
 
               {/* L2 drawer */}
               {isOpen && (
                 <div className={`mt-1 ml-2 border-l-2 ${section.borderAccent} bg-white dark:bg-slate-800/60 rounded-r-xl rounded-b-xl overflow-hidden shadow-sm`}>
 
-                  {/* ── PILLAR SECTION: intelligence + lab tools ────────── */}
+                  {/* ── PILLAR SECTION: intelligence items + lab items ── */}
                   {section.isPillarSection && (
                     <div>
-                      {/* Overview link */}
-                      <Link
-                        href={section.overviewHref!}
-                        onClick={onNavigate}
-                        className={`flex items-center pl-4 pr-3 py-2 border-b ${section.divideColor} group ${
-                          isActive(section.overviewHref!)
-                            ? section.activeItemBg
-                            : `bg-white dark:bg-slate-800/60 ${section.hoverBg}`
-                        }`}
-                      >
-                        <span className={`text-[10px] font-black uppercase tracking-widest ${section.headerColor}`}>
-                          {section.label} Overview
-                        </span>
-                      </Link>
 
-                      {/* Intelligence sub-section */}
-                      <div className="px-4 pt-2 pb-0.5">
-                        <span className="text-[9px] font-bold uppercase tracking-widest text-slate-400">
-                          Intelligence
-                        </span>
-                      </div>
-                      <div className={`divide-y ${section.divideColor}`}>
+                      {/* Intelligence items */}
+                      <div className="divide-y divide-slate-100 dark:divide-slate-700/50 py-1">
                         {section.intelligenceItems!.map((item) => (
                           <Link
                             key={item.href}
                             href={item.href}
                             onClick={onNavigate}
-                            className={`flex items-center pl-5 pr-3 py-1.5 transition-colors group ${
+                            className={`flex items-center gap-2.5 pl-5 pr-3 py-2 transition-colors group ${
                               isActive(item.href)
                                 ? section.activeItemBg
                                 : `bg-white dark:bg-slate-800/60 ${section.hoverBg}`
                             }`}
                           >
-                            <span className={`text-[11px] leading-snug transition-colors ${
+                            <span className={`w-2 h-2 rounded-full shrink-0 ${section.dot}`} />
+                            <span className={`text-[12px] leading-snug transition-colors ${
                               isActive(item.href)
-                                ? `font-medium ${section.headerColor}`
-                                : "font-normal text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200"
+                                ? `font-semibold ${section.headerColor}`
+                                : "font-normal text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white"
                             }`}>
                               {item.label}
                             </span>
@@ -445,34 +469,37 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                         ))}
                       </div>
 
-                      {/* Research Lab sub-section */}
-                      <div className={`px-4 pt-2 pb-0.5 mt-1 border-t ${section.divideColor}`}>
-                        <span className="text-[9px] font-bold uppercase tracking-widest text-slate-400">
-                          Research Lab
-                        </span>
-                      </div>
-                      <div className={`divide-y ${section.divideColor} pb-1`}>
-                        {section.labItems!.map((item) => (
-                          <Link
-                            key={item.href}
-                            href={item.href}
-                            onClick={onNavigate}
-                            className={`flex items-center gap-2 pl-5 pr-3 py-1.5 transition-colors group ${
-                              isLabActive(item.href)
-                                ? section.activeItemBg
-                                : `bg-white dark:bg-slate-800/60 ${section.hoverBg}`
-                            }`}
-                          >
-                            <BeakerIcon className={`w-3 h-3 shrink-0 ${section.headerColor} opacity-40`} />
-                            <span className={`text-[11px] leading-snug transition-colors ${
-                              isLabActive(item.href)
-                                ? `font-medium ${section.headerColor}`
-                                : "font-normal text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200"
-                            }`}>
-                              {item.label}
-                            </span>
-                          </Link>
-                        ))}
+                      {/* Research Lab — distinct banded section */}
+                      <div className={`border-t-2 ${section.borderAccent} bg-slate-50 dark:bg-slate-900/60`}>
+                        <div className="flex items-center gap-1.5 pl-5 pr-3 pt-2 pb-1">
+                          <BeakerIcon className={`w-3 h-3 shrink-0 ${section.headerColor}`} />
+                          <span className={`text-[10px] font-black uppercase tracking-widest ${section.headerColor}`}>
+                            Research Lab
+                          </span>
+                        </div>
+                        <div className="divide-y divide-slate-200 dark:divide-slate-700/50 pb-2">
+                          {section.labItems!.map((item) => (
+                            <Link
+                              key={item.href}
+                              href={item.href}
+                              onClick={onNavigate}
+                              className={`flex items-center gap-2.5 pl-6 pr-3 py-2 transition-colors group ${
+                                isLabActive(item.href)
+                                  ? section.activeItemBg
+                                  : `bg-slate-50 dark:bg-slate-900/60 ${section.hoverBg}`
+                              }`}
+                            >
+                              <span className={`w-1.5 h-1.5 rounded-sm shrink-0 ${section.dot} opacity-60`} />
+                              <span className={`text-[12px] leading-snug transition-colors ${
+                                isLabActive(item.href)
+                                  ? `font-semibold ${section.headerColor}`
+                                  : `font-normal text-slate-600 dark:text-slate-400 group-hover:${section.headerColor} dark:group-hover:text-slate-200`
+                              }`}>
+                                {item.label}
+                              </span>
+                            </Link>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   )}
