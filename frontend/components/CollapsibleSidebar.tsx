@@ -80,7 +80,7 @@ export default function CollapsibleSidebar({
           `}>
             <div className="w-[85vw] md:w-72 h-full flex flex-col relative">
               {fillHeight ? (
-                <div className="flex-1 min-h-0 flex flex-col overflow-hidden px-2 pt-3 pb-4">
+                <div className="flex-1 min-h-0 flex flex-col overflow-hidden">
                   {children}
                 </div>
               ) : (
