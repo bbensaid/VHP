@@ -1,6 +1,8 @@
 # TRANSFORMING AMERICAN HEALTHCARE
+
 ## Part V: The Path Forward
-### Chapters 16–17
+
+### Chapters 16–17 — Updated April 2026, v1.1.0
 
 ---
 
