@@ -10,6 +10,8 @@ The preceding chapters described what healthcare transformation requires: the po
 
 Health Transformation Review's platform includes 19 interactive research tools, a structured learning academy, and an AI-powered analyst powered by retrieval-augmented generation (RAG). Each is described in this section as both a practical instrument and an educational framework for the underlying methodologies.
 
+**Platform Navigation Architecture (v1.1.0):** The HTR platform is organized around a domain-first navigation model. The six pillars — Policy, Economics, Technology, Clinical, Equity, and Operations — are the primary entry points into the platform. Each pillar section contains two sub-groups: *Intelligence* (analytical content, briefings, and reports for that domain) and *Research Lab* (the interactive tools that apply to that domain). A separate *Tools* section provides direct access to nine cross-domain standalone utilities. This architecture eliminates the prior separation between intelligence content and analytical tools, placing each tool alongside the intelligence content it supports.
+
 ---
 
 # CHAPTER 13: Interactive Analytics — The Research Lab's 19 Tools
@@ -18,40 +20,49 @@ Health Transformation Review's platform includes 19 interactive research tools, 
 
 The Research Lab is built on a specific premise: the difference between knowing a concept and being able to apply it is practice with realistic data and feedback. A textbook can describe the mathematics of an MSSP shared savings calculation. A calculator that lets an analyst enter their specific population's data and see the resulting shared savings — varying assumptions, seeing sensitivity ranges, understanding break-even scenarios — builds a different kind of competency.
 
-Each of the 19 Research Lab tools is designed as a bridge between conceptual knowledge and applied decision-making. They are organized into six thematic sections:
+Each of the 19 Research Lab tools is designed as a bridge between conceptual knowledge and applied decision-making. In the platform's domain-first architecture, tools are accessed through their primary pillar section — the sidebar entry for each pillar exposes its Research Lab tools directly below its intelligence content. The Research Lab hub at `/research-lab` provides an overview of all 19 tools organized by pillar for users who want a cross-pillar view.
 
 ```
-RESEARCH LAB STRUCTURE
+RESEARCH LAB — DOMAIN-FIRST ORGANIZATION (v1.1.0)
 ══════════════════════════════════════════════════════════════
-Section 1: INTEROPERABILITY & RISK
-   Tool 1: FHIR Interoperability Lab
-   Tool 2: Risk Stratification Engine
+POLICY PILLAR
+   Research Lab tools:
+   → Policy Simulator                (via Policy sidebar)
+   → Innovation Leaderboard          (via Policy sidebar)
 
-Section 2: PAYMENT MODELS & VBC
-   Tool 3: APM Design Lab
-   Tool 4: APM Shared Savings Calculator
-   Tool 5: Cost-Effectiveness Analysis Calculator
+ECONOMICS PILLAR
+   Research Lab tools:
+   → APM Design Lab                  (via Economics sidebar)
+   → APM Shared Savings Calculator   (via Economics sidebar)
+   → CEA Calculator                  (via Economics sidebar)
+   → Hospital Financial Scorecard    (via Economics sidebar)
+   → HTA Studio                      (via Economics sidebar)
+   → Actuarial Lab                   (via Economics sidebar)
 
-Section 3: POPULATION & EQUITY
-   Tool 6: Population Health Modeler
-   Tool 7: Health Equity Studio
+TECHNOLOGY PILLAR
+   Research Lab tools:
+   → FHIR Interoperability Lab       (via Technology sidebar)
+   → AI Analytics Lab                (via Technology sidebar)
+   → Digital Health Lab              (via Technology sidebar)
 
-Section 4: POLICY & QUALITY SCIENCES
-   Tool 8:  Policy Simulator
-   Tool 9:  Clinical Quality Optimizer
-   Tool 10: Hospital Financial Scorecard
-   Tool 11: HTA Studio
-   Tool 12: Actuarial Lab
+CLINICAL PILLAR
+   Research Lab tools:
+   → Risk Stratification Engine      (via Clinical sidebar)
+   → Clinical Quality Optimizer      (via Clinical sidebar)
+   → Workforce Modeler               (via Clinical sidebar)
 
-Section 5: TECHNOLOGY & AI
-   Tool 13: AI Analytics Lab
-   Tool 14: Digital Health Lab
+EQUITY PILLAR
+   Research Lab tools:
+   → Population Health Modeler       (via Equity sidebar)
+   → Health Equity Studio            (via Equity sidebar)
 
-Section 6: KNOWLEDGE & WORKSPACE
-   Tool 15: Evidence Library
-   Tool 16: Workforce Modeler
-   Tool 17: Innovation Leaderboard
-   Tool 18: Research Workspace
+OPERATIONS PILLAR
+   Research Lab tools:
+   → Evidence Library                (via Operations sidebar)
+   → Research Workspace              (via Operations sidebar)
+══════════════════════════════════════════════════════════════
+Total: 19 tools across 6 pillar domains.
+Deep-link URL format: /research-lab/[page]?tab=[tool-id]
 ══════════════════════════════════════════════════════════════
 ```
 
@@ -863,7 +874,10 @@ Supplementary content:
 
 ## The Six Learning Tracks
 
-### Track 1: Policy Analyst Track
+**Track availability (v1.1.0):** Three tracks are currently live on the platform — Health Economist, Clinical Leader, and Health Equity. Three tracks are in production and will be released in Q2–Q3 2026 — Policy Analyst, Technology Strategist, and Operations Leader. All six are documented here in their complete form.
+
+### Track 1: Policy Analyst Track *(Coming Q2 2026)*
+
 **Audience:** Policy analysts, government affairs professionals, Medicaid agency staff
 **Duration:** ~10 hours
 **Core competencies:**
@@ -882,7 +896,8 @@ Supplementary content:
 
 ---
 
-### Track 2: Health Economist Track
+### Track 2: Health Economist Track *(Live)*
+
 **Audience:** Health economists, financial analysts, actuaries, managed care executives
 **Duration:** ~12 hours
 **Core competencies:**
@@ -902,7 +917,8 @@ Supplementary content:
 
 ---
 
-### Track 3: Clinical Leader Track
+### Track 3: Clinical Leader Track *(Live)*
+
 **Audience:** CMOs, medical directors, quality improvement officers, clinical informaticists
 **Duration:** ~10 hours
 **Core competencies:**
@@ -921,7 +937,8 @@ Supplementary content:
 
 ---
 
-### Track 4: Technology Strategist Track
+### Track 4: Technology Strategist Track *(Coming Q3 2026)*
+
 **Audience:** CIOs, health IT directors, digital health product managers, interoperability engineers
 **Duration:** ~12 hours
 **Core competencies:**
@@ -940,7 +957,8 @@ Supplementary content:
 
 ---
 
-### Track 5: Health Equity Track
+### Track 5: Health Equity Track *(Live)*
+
 **Audience:** Equity officers, community health workers, SDOH program managers, population health analysts
 **Duration:** ~10 hours
 **Core competencies:**
@@ -960,7 +978,8 @@ Supplementary content:
 
 ---
 
-### Track 6: Operations Leader Track
+### Track 6: Operations Leader Track *(Coming Q2 2026)*
+
 **Audience:** COOs, revenue cycle directors, supply chain managers, compliance officers
 **Duration:** ~10 hours
 **Core competencies:**
@@ -1064,7 +1083,7 @@ The HTR Academy Glossary provides definitions for 200+ healthcare transformation
 
 ## Personalized Learning: AI-Generated Curricula
 
-The Academy's Personalized Learning feature represents the convergence of the HTR platform's AI capabilities with its educational content. Rather than selecting from a menu of pre-built tracks, a learner describes their role, knowledge gaps, and learning goals, and the AI generates a custom multi-week curriculum drawing from across the full Academy content library.
+The Academy's Personalized Learning feature lives at its own dedicated page (`/academy/personalized-learning`) and represents the convergence of the HTR platform's AI capabilities with its educational content. Rather than selecting from a menu of pre-built tracks, a learner describes their role, knowledge gaps, and learning goals, and the AI generates a custom multi-week curriculum drawing from across the full Academy content library.
 
 **The onboarding form captures:**
 
@@ -1149,6 +1168,8 @@ The HTR AI Analyst is designed to answer complex, multi-dimensional healthcare t
 3. Generating a grounded, cited response that is accurate to the retrieved evidence
 
 This is **Retrieval-Augmented Generation (RAG)** — the combination of information retrieval and language model generation that produces answers that are both fluent (generated by a language model) and accurate (grounded in retrieved evidence rather than model memorization).
+
+**Analyst access points (v1.1.0):** The AI Analyst is available in two modes. The *sidebar widget* appears as a collapsible right-side panel on every platform page — edge-to-edge within the panel, with no wasted margin, giving maximum width to the chat interface without navigating away from the content being read. The *full-screen view* at `/chat` provides an expanded workspace for longer analytical sessions. Both modes share conversation history and sync automatically; expanding from the sidebar to the full view preserves the conversation in progress.
 
 ---
 
