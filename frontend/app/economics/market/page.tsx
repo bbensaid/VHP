@@ -22,7 +22,7 @@ function MarketFinanceHero() {
 function MarketFinanceBody() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-0 pb-12">
-      {/* Hospital Financial Scorecard */}
+      {/* Hospital Financial Stress Test */}
       <div className="bg-white rounded-2xl border border-slate-200 p-8 mb-10">
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">🏥</span>

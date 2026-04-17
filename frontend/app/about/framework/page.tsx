@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SixPillarFrameworkMap from "@/components/SixPillarFrameworkMap";
 
 const pillars = [
   {
@@ -155,34 +156,24 @@ export default function FrameworkPage() {
   return (
     <div className="bg-white font-sans text-slate-800 min-h-screen">
 
-      {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative bg-indigo-700 text-white overflow-hidden py-10 md:py-14">
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)",
-            backgroundSize: "48px 48px",
-          }}
-        />
-        <div className="absolute top-0 right-0 w-125 h-125 bg-indigo-600/10 rounded-full blur-3xl -translate-y-1/3 pointer-events-none" />
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-indigo-100 mb-6 border border-indigo-500 bg-indigo-600/40 px-4 py-1.5 rounded-full">
-              Our Analytical Framework
-            </span>
-            <h1 className="ty-h1 font-black tracking-tight leading-tight mb-5">
-              Six questions. <span className="text-indigo-400">Zero shortcuts.</span>
-            </h1>
-            <p className="ty-hero text-slate-300 max-w-2xl leading-relaxed mb-4">
-              Every analysis HTR publishes must survive interrogation across six dimensions before it reaches you. A recommendation that passes five out of six is not published — because five out of six is how healthcare gets it wrong.
-            </p>
-            <p className="text-sm text-slate-400 max-w-2xl leading-relaxed">
-              This is not an editorial checklist. It is the architectural logic of HTR — the structure that makes cross-disciplinary intelligence possible and the mechanism that catches the blind spots that siloed analysis invariably produces.
-            </p>
-          </div>
+      {/* ── PAGE HEADER ──────────────────────────────────────────────────── */}
+      <section className="bg-slate-50 border-b border-slate-200 py-5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-400 block mb-0.5">
+            Our Analytical Framework
+          </span>
+          <h1 className="text-xl font-bold tracking-tight text-slate-900">
+            Six questions. Zero shortcuts.
+          </h1>
+          <p className="text-sm text-slate-500 mt-1 max-w-2xl leading-relaxed">
+            Every analysis must survive all six pillars. A recommendation that passes five out of six is not published — click any pillar to trace its dependencies.
+          </p>
         </div>
+      </section>
+
+      {/* ── INTERACTIVE DEPENDENCY MAP ───────────────────────────────────── */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <SixPillarFrameworkMap />
       </section>
 
       {/* ── THE SIX PILLARS ──────────────────────────────────────────────── */}
@@ -301,7 +292,7 @@ export default function FrameworkPage() {
             </Link>
           ))}
         </div>
-        <div className="mt-8 flex gap-4 justify-center">
+        <div className="mt-8 flex flex-wrap gap-4 justify-center">
           <Link href="/values" className="text-sm font-bold text-indigo-600 hover:text-indigo-800 underline underline-offset-2">
             Our Core Values
           </Link>
@@ -312,6 +303,10 @@ export default function FrameworkPage() {
           <span className="text-slate-300">·</span>
           <Link href="/mission" className="text-sm font-bold text-indigo-600 hover:text-indigo-800 underline underline-offset-2">
             Mission & Vision
+          </Link>
+          <span className="text-slate-300">·</span>
+          <Link href="/htr-simulator" className="text-sm font-bold text-indigo-600 hover:text-indigo-800 underline underline-offset-2">
+            HTR Simulator
           </Link>
         </div>
       </section>

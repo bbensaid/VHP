@@ -134,6 +134,21 @@ The HTR Performance Index scores health system transformation readiness across s
               <strong>Why six pillars?</strong> Policy, Economics, and Technology determine whether a transformation is authorized, funded, and infrastructurally possible. Clinical, Equity, and Operations determine whether it actually works, for whom, and whether the institution can execute it at scale. All six are co-equal structural variables. An analysis that answers only three of the six questions is incomplete — regardless of which three.
             </p>
           </div>
+          <Link
+            href="/about/framework"
+            className="mt-5 flex items-center justify-between gap-4 px-5 py-4 rounded-xl border-2 border-indigo-200 bg-white hover:border-indigo-400 hover:bg-indigo-50 transition-all group"
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-2xl leading-none">🕸️</span>
+              <div>
+                <p className="text-sm font-black text-indigo-700">See how the six pillars interrelate</p>
+                <p className="text-xs text-slate-500">Interactive dependency map — click any pillar to trace its connections</p>
+              </div>
+            </div>
+            <span className="text-sm font-bold text-indigo-600 group-hover:text-indigo-800 whitespace-nowrap">
+              Open Map →
+            </span>
+          </Link>
         </section>
 
         {/* ── INPUT METRICS ────────────────────────────────────────────── */}
