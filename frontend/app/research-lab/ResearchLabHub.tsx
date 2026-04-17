@@ -36,7 +36,7 @@ const loadOpts = (label: string) => ({
   // so they share vendor splitting with chart.js / recharts
 } as const)
 
-/* ── Lazy-load all 19 tools with loading skeletons ──────────────────────── */
+/* ── Lazy-load all 21 tools with loading skeletons ──────────────────────── */
 const FHIRLab                    = dynamic(() => import(/* webpackChunkName: "tool-fhir" */        '@/components/research/FHIRLab'),                    { ...loadOpts('FHIR'), ssr: false })
 const RiskStratificationEngine   = dynamic(() => import(/* webpackChunkName: "tool-risk" */        '@/components/research/RiskStratificationEngine'),   { ...loadOpts('Risk'), ssr: false })
 const APMDesignLab               = dynamic(() => import(/* webpackChunkName: "tool-apm" */         '@/components/research/APMDesignLab'),               { ...loadOpts('APM'), ssr: false })
@@ -55,6 +55,8 @@ const EvidenceLibrary            = dynamic(() => import(/* webpackChunkName: "to
 const WorkforceModeler           = dynamic(() => import(/* webpackChunkName: "tool-workforce" */   '@/components/research/WorkforceModeler'),           { ...loadOpts('Workforce'), ssr: false })
 const InnovationLeaderboard      = dynamic(() => import(/* webpackChunkName: "tool-innovation" */  '@/components/research/InnovationLeaderboard'),      { ...loadOpts('Innovation'), ssr: false })
 const ResearchWorkspace          = dynamic(() => import(/* webpackChunkName: "tool-workspace" */   '@/components/research/ResearchWorkspace'),          { ...loadOpts('Workspace'), ssr: false })
+const VBCReadinessAssessment     = dynamic(() => import(/* webpackChunkName: "tool-readiness" */   '@/components/research/VBCReadinessAssessment'),     { ...loadOpts('Readiness'), ssr: false })
+const TransformationScorecard    = dynamic(() => import(/* webpackChunkName: "tool-scorecard" */   '@/components/research/TransformationScorecard'),    { ...loadOpts('Scorecard'), ssr: false })
 
 /* ── Data model ─────────────────────────────────────────────────────────── */
 interface Tool {
@@ -101,7 +103,7 @@ const SECTIONS: Section[] = [
     tools: [
       { id: 'policy',    icon: '🏛️', label: 'Policy Simulator',             badge: 'Health Policy',              badgeCls: 'bg-sky-100 text-sky-700 border-sky-200', desc: 'Model 1115 waiver types across 6 state scenarios, design Vermont-style global budgets, simulate Medicaid expansion impact, and analyze price transparency policies.' },
       { id: 'quality',   icon: '🎯', label: 'Clinical Quality Optimizer',   badge: 'Quality Improvement',        badgeCls: 'bg-sky-100 text-sky-700 border-sky-200', desc: 'Simulate 15 HEDIS measures with NCQA benchmarks, predict CMS Star Ratings across 32 sub-measures, optimize MIPS composite scores, and calculate P4P ROI.' },
-      { id: 'scorecard', icon: '🏥', label: 'Hospital Financial Scorecard', badge: 'Hospital Finance',            badgeCls: 'bg-sky-100 text-sky-700 border-sky-200', desc: 'Stress-test hospital financials against payer mix shifts, Medicaid rate cuts, and volume changes. Benchmarks against CAH, Rural PPS, and Urban Tertiary peers.' },
+      { id: 'scorecard', icon: '🏥', label: 'Hospital Financial Stress Test', badge: 'Hospital Finance',            badgeCls: 'bg-sky-100 text-sky-700 border-sky-200', desc: 'Stress-test hospital financials against payer mix shifts, Medicaid rate cuts, and volume changes. Benchmarks against CAH, Rural PPS, and Urban Tertiary peers.' },
       { id: 'hta',       icon: '🔎', label: 'HTA Studio',                   badge: 'Health Technology Assessment',badgeCls: 'bg-sky-100 text-sky-700 border-sky-200', desc: 'Build budget impact models, run MCDA with 8 criteria, and execute real Monte Carlo PSA with 1,000 stochastic iterations using Beta, Log-normal, and Gamma distributions.' },
       { id: 'actuarial', icon: '📉', label: 'Actuarial Lab',                badge: 'Actuarial Science',           badgeCls: 'bg-sky-100 text-sky-700 border-sky-200', desc: 'Calculate ACA actuarial value, develop premium rates across 3 methodologies, model adverse selection death spirals, and analyze IRA 2022 drug pricing impacts.' },
     ],
@@ -109,17 +111,19 @@ const SECTIONS: Section[] = [
   {
     id: 'technology-ai', icon: '🤖', label: 'Technology & AI',
     tools: [
-      { id: 'ai',      icon: '🤖', label: 'AI Analytics Lab',   badge: 'Artificial Intelligence', badgeCls: 'bg-violet-100 text-violet-700 border-violet-200', desc: 'Compare predictive model performance, detect algorithmic bias with Demographic Parity and Equal Opportunity metrics, build AI governance frameworks, and calculate AI ROI.' },
+      { id: 'ai',      icon: '🤖', label: 'AI Clinical Governance Lab',   badge: 'Artificial Intelligence', badgeCls: 'bg-violet-100 text-violet-700 border-violet-200', desc: 'Compare predictive model performance, detect algorithmic bias with Demographic Parity and Equal Opportunity metrics, build AI governance frameworks, and calculate AI ROI.' },
       { id: 'digital', icon: '📱', label: 'Digital Health Lab',  badge: 'Digital Health',          badgeCls: 'bg-violet-100 text-violet-700 border-violet-200', desc: 'Calculate RPM ROI using CMS CPT codes (99453–99458), model telehealth utilization under CMS policy scenarios, compare patient engagement platforms, and optimize EHR interoperability.' },
     ],
   },
   {
     id: 'knowledge-workspace', icon: '📚', label: 'Knowledge & Workspace',
     tools: [
-      { id: 'evidence',    icon: '📖',  label: 'Evidence Library',       badge: 'Research',     badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Search 25 landmark CEA/CUA studies, track 20 CMMI innovation models with full lesson-learned summaries, and browse 15 HTR policy briefs.' },
-      { id: 'workforce',   icon: '👨‍⚕️', label: 'Workforce Modeler',       badge: 'Workforce',    badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Project physician supply and demand across 12 specialties over 10 years, simulate nurse staffing ratio impacts, calculate turnover costs, and model rural incentive programs.' },
-      { id: 'leaderboard', icon: '🏆',  label: 'Innovation Leaderboard',  badge: 'Benchmarking', badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Rank all 50 states on a composite health transformation index, score 30 major health systems on VBC maturity, and compare 20 payers on innovation leadership.' },
-      { id: 'workspace',   icon: '🗂️',  label: 'Research Workspace',      badge: 'Workspace',    badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Save and compare analysis scenarios, build structured reports from templates, manage citations in AMA/APA format, and export findings as Markdown or text.' },
+      { id: 'scorecard',   icon: '🎯',  label: 'Transformation Scorecard', badge: 'Executive',      badgeCls: 'bg-teal-100 text-teal-700 border-teal-200', desc: 'Executive six-pillar scorecard — self-score Policy, Economics, Technology, Clinical, Equity, and Operations with Vermont AHEAD statutory milestones integrated.' },
+      { id: 'readiness',   icon: '📊',  label: 'VBC Readiness Assessment', badge: 'Transformation', badgeCls: 'bg-emerald-100 text-emerald-700 border-emerald-200', desc: '30-dimension, 6-domain assessment producing an organizational readiness score and prioritized gap analysis for value-based care transformation. Vermont AHEAD, CAH, and advanced system presets included.' },
+      { id: 'evidence',    icon: '📖',  label: 'Evidence Library',         badge: 'Research',     badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Search 25 landmark CEA/CUA studies, track 20 CMMI innovation models with full lesson-learned summaries, and browse 15 HTR policy briefs.' },
+      { id: 'workforce',   icon: '👨‍⚕️', label: 'Workforce Modeler',         badge: 'Workforce',    badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Project physician supply and demand across 12 specialties over 10 years, simulate nurse staffing ratio impacts, calculate turnover costs, and model rural incentive programs.' },
+      { id: 'leaderboard', icon: '🏆',  label: 'Innovation Leaderboard',   badge: 'Benchmarking', badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Rank all 50 states on a composite health transformation index, score 30 major health systems on VBC maturity, and compare 20 payers on innovation leadership.' },
+      { id: 'workspace',   icon: '🗂️',  label: 'Research Workspace',       badge: 'Workspace',    badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Save and compare analysis scenarios, build structured reports from templates, manage citations in AMA/APA format, and export findings as Markdown or text.' },
     ],
   },
 ]
@@ -142,6 +146,8 @@ function ActiveTool({ sectionId, toolId }: { sectionId: string; toolId: string }
     case 'policy-quality/actuarial':       return <ActuarialLab />
     case 'technology-ai/ai':               return <AIAnalyticsLab />
     case 'technology-ai/digital':          return <DigitalHealthLab />
+    case 'knowledge-workspace/scorecard':  return <TransformationScorecard />
+    case 'knowledge-workspace/readiness':  return <VBCReadinessAssessment />
     case 'knowledge-workspace/evidence':   return <EvidenceLibrary />
     case 'knowledge-workspace/workforce':  return <WorkforceModeler />
     case 'knowledge-workspace/leaderboard':return <InnovationLeaderboard />
@@ -267,7 +273,7 @@ function ResearchLabHubInner() {
                 HTR Research Lab
               </h1>
               <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">
-                19 interactive analytical tools spanning every dimension of health system transformation — from FHIR interoperability to Monte Carlo health economic modeling.
+                21 interactive analytical tools spanning every dimension of health system transformation — from FHIR interoperability to six-pillar transformation scorecard.
               </p>
             </div>
           </div>

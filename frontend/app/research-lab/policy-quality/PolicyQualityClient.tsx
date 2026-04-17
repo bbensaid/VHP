@@ -35,7 +35,7 @@ const TABS = [
     desc: 'Simulate 15 HEDIS measures with NCQA benchmarks, predict CMS Star Ratings across 32 sub-measures, optimize MIPS composite scores, and calculate P4P ROI.',
   },
   {
-    id: 'scorecard', icon: '🏥', label: 'Hospital Financial Scorecard', badge: 'Hospital Finance',
+    id: 'scorecard', icon: '🏥', label: 'Hospital Financial Stress Test', badge: 'Hospital Finance',
     desc: 'Stress-test hospital financials against payer mix shifts, Medicaid rate cuts, and volume changes. Benchmarks against CAH, Rural PPS, and Urban Tertiary peers.',
   },
   {
@@ -59,7 +59,7 @@ export default function PolicyQualityClient({ initialTab }: { initialTab?: strin
     <LabPageShell
       icon="📋"
       label="Policy, Economics & Clinical Tools"
-      desc="Policy Simulator (Policy pillar) · Clinical Quality Optimizer (Clinical pillar) · Hospital Financial Scorecard, HTA Studio & Actuarial Lab (Economics pillar). Five tools spanning three domains on one page."
+      desc="Policy Simulator (Policy pillar) · Clinical Quality Optimizer (Clinical pillar) · Hospital Financial Stress Test, HTA Studio & Actuarial Lab (Economics pillar). Five tools spanning three domains on one page."
       accentClass="bg-sky-600"
       accentLight="bg-sky-100 text-sky-700"
       currentHref="/research-lab/policy-quality"
@@ -94,7 +94,7 @@ export default function PolicyQualityClient({ initialTab }: { initialTab?: strin
       {/* Active tool panel */}
       {activeTab === 'policy'    && <div><ToolHeader icon="🏛️" label="Policy Simulator"            badge="Health Policy"              desc={TABS[0].desc} /><PolicySimulator /></div>}
       {activeTab === 'quality'   && <div><ToolHeader icon="🎯" label="Clinical Quality Optimizer"  badge="Quality Improvement"        desc={TABS[1].desc} /><ClinicalQualityOptimizer /></div>}
-      {activeTab === 'scorecard' && <div><ToolHeader icon="🏥" label="Hospital Financial Scorecard" badge="Hospital Finance"            desc={TABS[2].desc} /><HospitalFinancialScorecard /></div>}
+      {activeTab === 'scorecard' && <div><ToolHeader icon="🏥" label="Hospital Financial Stress Test" badge="Hospital Finance"            desc={TABS[2].desc} /><HospitalFinancialScorecard /></div>}
       {activeTab === 'hta'       && <div><ToolHeader icon="🔎" label="HTA Studio"                  badge="Health Technology Assessment" desc={TABS[3].desc} /><HTAStudio /></div>}
       {activeTab === 'actuarial' && <div><ToolHeader icon="📉" label="Actuarial Lab"               badge="Actuarial Science"           desc={TABS[4].desc} /><ActuarialLab /></div>}
     </LabPageShell>

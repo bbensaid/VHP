@@ -24,7 +24,7 @@ function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string;
 
 const TABS = [
   {
-    id: 'ai', icon: '🤖', label: 'AI Analytics Lab', badge: 'Artificial Intelligence',
+    id: 'ai', icon: '🤖', label: 'AI Clinical Governance Lab', badge: 'Artificial Intelligence',
     desc: 'Compare predictive model performance, detect algorithmic bias with Demographic Parity and Equal Opportunity metrics, build AI governance frameworks, and calculate AI ROI with build vs. buy analysis.',
   },
   {
@@ -77,7 +77,7 @@ export default function TechnologyAIClient({ initialTab }: { initialTab?: string
       </nav>
 
       {/* Active tool panel */}
-      {activeTab === 'ai'      && <div><ToolHeader icon="🤖" label="AI Analytics Lab"   badge="Artificial Intelligence" desc={TABS[0].desc} /><AIAnalyticsLab /></div>}
+      {activeTab === 'ai'      && <div><ToolHeader icon="🤖" label="AI Clinical Governance Lab"   badge="Artificial Intelligence" desc={TABS[0].desc} /><AIAnalyticsLab /></div>}
       {activeTab === 'digital' && <div><ToolHeader icon="📱" label="Digital Health Lab"  badge="Digital Health"         desc={TABS[1].desc} /><DigitalHealthLab /></div>}
     </LabPageShell>
   )
