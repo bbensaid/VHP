@@ -36,7 +36,7 @@ const ROLE_HIGHLIGHTS: Record<string, { icon: React.ElementType; label: string; 
   admin: [
     { icon: ChartBarIcon,     label: "State performance dashboard", href: "/dashboard" },
     { icon: SparklesIcon,     label: "Ask the AI Analyst",          href: "/chat" },
-    { icon: BeakerIcon,       label: "Hospital Financial Scorecard",href: "/research-lab/policy-quality" },
+    { icon: BeakerIcon,       label: "Hospital Financial Stress Test",href: "/research-lab/policy-quality" },
   ],
   policy: [
     { icon: DocumentTextIcon, label: "Policy analysis library",     href: "/policy" },

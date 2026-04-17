@@ -8,6 +8,8 @@ const EvidenceLibrary      = dynamic(() => import('@/components/research/Evidenc
 const WorkforceModeler     = dynamic(() => import('@/components/research/WorkforceModeler'),     { ssr: false })
 const InnovationLeaderboard = dynamic(() => import('@/components/research/InnovationLeaderboard'), { ssr: false })
 const ResearchWorkspace    = dynamic(() => import('@/components/research/ResearchWorkspace'),    { ssr: false })
+const VBCReadinessAssessment = dynamic(() => import('@/components/research/VBCReadinessAssessment'), { ssr: false })
+const TransformationScorecard = dynamic(() => import('@/components/research/TransformationScorecard'), { ssr: false })
 
 function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string; badge: string; desc: string }) {
   return (
@@ -38,12 +40,20 @@ const TABS = [
     desc: 'Rank all 50 states on a composite health transformation index, score 30 major health systems on VBC maturity, and compare 20 payers on innovation leadership.',
   },
   {
+    id: 'scorecard', icon: '🎯', label: 'Transformation Scorecard', badge: 'Executive',
+    desc: 'Six-pillar executive scorecard — score your organization on Policy, Economics, Technology, Clinical, Equity, and Operations with Vermont AHEAD milestone tracking integrated.',
+  },
+  {
+    id: 'readiness', icon: '📊', label: 'VBC Readiness Assessment', badge: 'Transformation',
+    desc: '30-dimension assessment across 6 domains — Strategy, Data & Analytics, Clinical, Finance, Technology, and Equity — producing a readiness score and prioritized gap analysis for value-based care transformation.',
+  },
+  {
     id: 'workspace', icon: '🗂️', label: 'Research Workspace', badge: 'Workspace',
     desc: 'Save and compare analysis scenarios, build structured reports from templates, manage citations in AMA/APA format, and export findings as Markdown or text.',
   },
 ]
 
-const VALID_TABS = ['evidence', 'workforce', 'leaderboard', 'workspace']
+const VALID_TABS = ['evidence', 'workforce', 'leaderboard', 'scorecard', 'readiness', 'workspace']
 
 export default function KnowledgeWorkspaceClient({ initialTab }: { initialTab?: string }) {
   const [activeTab, setActiveTab] = useState(
@@ -54,7 +64,7 @@ export default function KnowledgeWorkspaceClient({ initialTab }: { initialTab?: 
     <LabPageShell
       icon="📚"
       label="Operations, Policy & Clinical Tools"
-      desc="Evidence Library & Research Workspace (Operations pillar) · Innovation Leaderboard (Policy pillar) · Workforce Modeler (Clinical pillar). Four tools spanning three domains on one page."
+      desc="Evidence Library & Research Workspace (Operations pillar) · Innovation Leaderboard (Policy pillar) · Workforce Modeler (Clinical pillar) · VBC Readiness Assessment (Cross-pillar). Five tools spanning four domains on one page."
       accentClass="bg-slate-700"
       accentLight="bg-slate-200 text-slate-700"
       currentHref="/research-lab/knowledge-workspace"
@@ -87,10 +97,12 @@ export default function KnowledgeWorkspaceClient({ initialTab }: { initialTab?: 
       </nav>
 
       {/* Active tool panel */}
-      {activeTab === 'evidence'    && <div><ToolHeader icon="📖"  label="Evidence Library"       badge="Research"     desc={TABS[0].desc} /><EvidenceLibrary /></div>}
-      {activeTab === 'workforce'   && <div><ToolHeader icon="👨‍⚕️" label="Workforce Modeler"       badge="Workforce"    desc={TABS[1].desc} /><WorkforceModeler /></div>}
-      {activeTab === 'leaderboard' && <div><ToolHeader icon="🏆"  label="Innovation Leaderboard"  badge="Benchmarking" desc={TABS[2].desc} /><InnovationLeaderboard /></div>}
-      {activeTab === 'workspace'   && <div><ToolHeader icon="🗂️"  label="Research Workspace"      badge="Workspace"    desc={TABS[3].desc} /><ResearchWorkspace /></div>}
+      {activeTab === 'evidence'    && <div><ToolHeader icon="📖"  label="Evidence Library"            badge="Research"      desc={TABS[0].desc} /><EvidenceLibrary /></div>}
+      {activeTab === 'workforce'   && <div><ToolHeader icon="👨‍⚕️" label="Workforce Modeler"            badge="Workforce"     desc={TABS[1].desc} /><WorkforceModeler /></div>}
+      {activeTab === 'leaderboard' && <div><ToolHeader icon="🏆"  label="Innovation Leaderboard"      badge="Benchmarking"  desc={TABS[2].desc} /><InnovationLeaderboard /></div>}
+      {activeTab === 'scorecard'   && <div><ToolHeader icon="🎯"  label="Transformation Scorecard"    badge="Executive"     desc={TABS[3].desc} /><TransformationScorecard /></div>}
+      {activeTab === 'readiness'   && <div><ToolHeader icon="📊"  label="VBC Readiness Assessment"    badge="Transformation" desc={TABS[4].desc} /><VBCReadinessAssessment /></div>}
+      {activeTab === 'workspace'   && <div><ToolHeader icon="🗂️"  label="Research Workspace"          badge="Workspace"     desc={TABS[5].desc} /><ResearchWorkspace /></div>}
     </LabPageShell>
   )
 }

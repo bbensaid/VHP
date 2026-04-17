@@ -80,9 +80,9 @@ const CAPABILITIES = [
     href: "/research-lab",
     emoji: "🧪",
     title: "Research Lab",
-    desc: "19 interactive analytical tools — payment models, policy quality, population equity, and more.",
+    desc: "21 interactive analytical tools — payment models, policy quality, population equity, and more.",
     accent: "border-amber-200 hover:border-amber-400 hover:bg-amber-50",
-    tag: "19 tools",
+    tag: "21 tools",
     tagColor: "bg-amber-100 text-amber-700",
   },
   {
@@ -120,6 +120,15 @@ const CAPABILITIES = [
     accent: "border-rose-200 hover:border-rose-400 hover:bg-rose-50",
     tag: "State Program",
     tagColor: "bg-rose-100 text-rose-700",
+  },
+  {
+    href: "/about/framework",
+    emoji: "🕸️",
+    title: "Six-Pillar Framework Map",
+    desc: "Interactive dependency map showing how Policy, Economics, Technology, Clinical, Equity, and Operations interrelate.",
+    accent: "border-indigo-200 hover:border-indigo-400 hover:bg-indigo-50",
+    tag: "Interactive",
+    tagColor: "bg-indigo-100 text-indigo-700",
   },
   {
     href: "/advisory-hub",

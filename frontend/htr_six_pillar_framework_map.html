@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>HTR Six-Pillar Framework Map</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f9fafb;display:flex;justify-content:center;padding:2rem 1rem}
+.outer{background:#fff;border-radius:16px;border:1px solid #e5e7eb;padding:2rem 1.5rem 1.5rem;color:#1a1a2e;width:100%;max-width:860px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.1em;color:#6b7280;text-transform:uppercase;margin-bottom:.5rem}
+.headline{font-size:24px;font-weight:800;line-height:1.25;color:#111827;margin-bottom:.5rem}
+.sub{font-size:14px;color:#6b7280;line-height:1.5;margin-bottom:1.5rem;max-width:580px}
+.diagram-wrap{position:relative;width:100%;aspect-ratio:16/9;min-height:320px;max-height:480px}
+svg.main{position:absolute;inset:0;width:100%;height:100%}
+.pcard{cursor:pointer;transition:filter .15s,transform .15s}
+.pcard:hover{filter:brightness(.95)}
+.pcard:hover rect{transform-origin:center;transform:scale(1.04)}
+.pcard.faded{opacity:.2}
+.edge-line{transition:opacity .25s,stroke-width .25s}
+.edge-line.active{opacity:1!important;stroke-width:2.5!important}
+.edge-line.faded{opacity:.04!important}
+.detail{margin-top:1.25rem;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;background:#fff}
+.detail-header{display:flex;align-items:center;gap:10px;padding:.85rem 1.1rem;border-bottom:1px solid #f3f4f6}
+.detail-num{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0}
+.detail-title{font-size:15px;font-weight:700}
+.detail-q{font-size:12px;font-weight:500;margin-left:auto;padding:3px 10px;border-radius:20px;white-space:nowrap}
+.detail-desc{padding:.85rem 1.1rem;font-size:13px;color:#374151;line-height:1.6;border-bottom:1px solid #f3f4f6}
+.dep-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.dep-cell{padding:.75rem 1.1rem;border-bottom:1px solid #f3f4f6;border-right:1px solid #f3f4f6}
+.dep-cell:nth-child(2n){border-right:none}
+.dep-cell:nth-last-child(-n+2){border-bottom:none}
+.dep-type{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:1px 7px;border-radius:20px;margin-bottom:4px}
+.dep-target{font-size:12px;font-weight:600;color:#111827;margin-bottom:2px}
+.dep-label{font-size:12px;font-weight:600;color:#374151;margin-bottom:3px}
+.dep-text{font-size:11px;color:#6b7280;line-height:1.45}
+.empty{padding:2rem;text-align:center;font-size:13px;color:#9ca3af}
+.hint{font-size:11px;color:#9ca3af;text-align:center;margin-top:.6rem}
+.legend{display:flex;gap:1.25rem;flex-wrap:wrap;margin-top:1rem;padding:.75rem 1rem;background:#f9fafb;border-radius:8px;border:1px solid #f3f4f6}
+.leg-item{display:flex;align-items:center;gap:6px;font-size:11px;color:#6b7280}
+.leg-line{width:24px;height:2px;flex-shrink:0}
+.leg-dash{width:24px;height:2px;flex-shrink:0;background:repeating-linear-gradient(90deg,#6b7280 0,#6b7280 4px,transparent 4px,transparent 7px)}
+@media(max-width:520px){.dep-grid{grid-template-columns:1fr}.dep-cell{border-right:none}.legend{gap:.75rem}}
+</style>
+</head>
+<body>
+<div class="outer">
+  <div class="eyebrow">Our analytical framework</div>
+  <div class="headline">How the six pillars interrelate</div>
+  <div class="sub">Each pillar enables, constrains, or depends on the others. Remove any one and the system fails. Click a pillar to trace its dependencies.</div>
+
+  <div class="diagram-wrap">
+    <svg class="main" id="svg" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <marker id="mh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+          <path d="M1.5 1.5L8.5 5L1.5 8.5" fill="none" stroke="context-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <g id="hub">
+        <circle cx="400" cy="225" r="52" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+        <circle cx="400" cy="225" r="44" fill="#fff" stroke="#f3f4f6" stroke-width="1"/>
+        <text x="400" y="216" text-anchor="middle" dominant-baseline="central" style="font-size:11px;font-weight:700;fill:#374151;letter-spacing:.02em">SYSTEM</text>
+        <text x="400" y="232" text-anchor="middle" dominant-baseline="central" style="font-size:11px;font-weight:700;fill:#374151;letter-spacing:.02em">OUTCOMES</text>
+        <text x="400" y="248" text-anchor="middle" dominant-baseline="central" style="font-size:9px;fill:#9ca3af">all 6 required</text>
+      </g>
+      <g id="edges"></g>
+      <g id="cards"></g>
+    </svg>
+  </div>
+
+  <div class="legend">
+    <div class="leg-item"><div class="leg-line" style="background:#10b981"></div> enables</div>
+    <div class="leg-item"><div class="leg-line" style="background:#3b82f6"></div> drives</div>
+    <div class="leg-item"><div class="leg-line" style="background:#f59e0b"></div> requires</div>
+    <div class="leg-item"><div class="leg-dash"></div> constrains</div>
+  </div>
+
+  <div class="detail" id="detail">
+    <div class="empty">Click a pillar to see its dependency relationships</div>
+  </div>
+  <p class="hint">Click the same pillar again to deselect</p>
+</div>
+
+<script>
+const P = [
+  { id:'policy',   n:1, label:'Policy',    q:'"Is it permissible?"',  color:'#3b82f6', light:'#eff6ff', border:'#bfdbfe', angle:270, desc:'Mandatory architecture that converts voluntary reform into structural change. Acts 167 and 68 are the enabling instruments — without statutory authority, no other pillar can reach its potential.' },
+  { id:'econ',     n:2, label:'Economics', q:'"Is it sustainable?"',  color:'#10b981', light:'#ecfdf5', border:'#a7f3d0', angle:330, desc:'Changes the financial logic of every clinical and operational decision. Global budgets make population health management financially rational. RBP breaks the premium inflation chain.' },
+  { id:'tech',     n:3, label:'Technology',q:'"Is it possible?"',     color:'#8b5cf6', light:'#f5f3ff', border:'#ddd6fe', angle:30,  desc:'The data substrate that makes every other pillar manageable. VHCURES, FHIR APIs, and the CIN analytics platform are the operational backbone of population health management.' },
+  { id:'clinical', n:4, label:'Clinical',  q:'"Is it effective?"',    color:'#ef4444', light:'#fef2f2', border:'#fecaca', angle:90,  desc:'Care delivery redesign is the mechanism through which payment reform delivers results. Vermont\'s Blueprint proves the 5.8:1 ROI from primary care investment.' },
+  { id:'equity',   n:5, label:'Equity',    q:'"Is it just?"',         color:'#a855f7', light:'#faf5ff', border:'#e9d5ff', angle:150, desc:'A cross-cutting constraint on every pillar decision. Any payment design, care model, or technology investment must be evaluated for equity impact. Not a separate program — a lens.' },
+  { id:'ops',      n:6, label:'Operations',q:'"Is it executable?"',   color:'#f59e0b', light:'#fffbeb', border:'#fde68a', angle:210, desc:'Where transformation succeeds or stays a document. Statutory mandates and clinical models both fail if AHS lacks organizational capacity, project management, and execution discipline.' },
+];
+
+const DEPS = [
+  { from:'policy', to:'econ',     type:'enables',    color:'#10b981', label:'Mandatory authority',     text:'Act 68 forces RBP (FY2027) and global budgets (FY2028). Without statutory force, highest-cost actors opt out — voluntary reform failed for a decade.' },
+  { from:'policy', to:'ops',      type:'requires',   color:'#f59e0b', label:'Statutory deadlines',     text:'Act 68\'s December 2028 Strategic Plan deadline forces AHS to build execution capacity. Without external accountability, transformation stays aspirational.' },
+  { from:'policy', to:'equity',   type:'enables',    color:'#10b981', label:'Equity mandates',         text:'Acts 167 and 68 embed equity goals into the accountability framework. Policy explicitly requires equity measurement and reporting.' },
+  { from:'econ',   to:'clinical', type:'drives',     color:'#3b82f6', label:'Payment incentives',      text:'Under global budgets, preventing hospitalizations saves money. Blueprint\'s 5.8:1 ROI only matters when the payer captures the savings — economics makes clinical redesign rational.' },
+  { from:'econ',   to:'tech',     type:'requires',   color:'#8b5cf6', label:'VBC data needs',          text:'Attribution, benchmarks, shared savings, TCOC — all require VHCURES data. Vermont\'s AHEAD global budgets cannot function without the AHS-GMCB analytics vendor.' },
+  { from:'econ',   to:'equity',   type:'requires',   color:'#a855f7', label:'Social risk adjustment',  text:'VBC contracts ignoring social risk penalize high-SDOH providers. AHEAD global budget design must include social risk adjustment or the equity pillar collapses.' },
+  { from:'tech',   to:'econ',     type:'enables',    color:'#10b981', label:'Analytics for VBC',       text:'VHCURES population analytics make APM financial modeling possible. Without TCOC data, benchmarks are wrong and organizations cannot manage to their global budget.' },
+  { from:'tech',   to:'equity',   type:'enables',    color:'#10b981', label:'Disparity measurement',   text:'Stratified HEDIS and HEROI scoring require disaggregated VHCURES data. Vermont\'s race/ethnicity data gaps directly limit the equity pillar\'s analytical power.' },
+  { from:'tech',   to:'clinical', type:'enables',    color:'#10b981', label:'Population health mgmt',  text:'Risk stratification, care gap ID, SDOH screening — all require data infrastructure. Blueprint\'s clinical registry and AI scribe productivity are technology-pillar products.' },
+  { from:'clinical',to:'ops',     type:'requires',   color:'#f59e0b', label:'Care model execution',    text:'Blueprint PCMHs, CoCM, CCBHC — every clinical redesign requires workforce deployment, credentialing, admin infrastructure. Without operations, a care model is a diagram.' },
+  { from:'clinical',to:'equity',  type:'enables',    color:'#10b981', label:'Access expansion',        text:'Blueprint + CCBHC expansion is the primary mechanism for closing geographic access gaps. Essex County\'s 8% uninsurance is partly a primary care access problem.' },
+  { from:'ops',    to:'policy',   type:'enables',    color:'#3b82f6', label:'Implementation feedback', text:'AHS monthly transformation reports feed back into policy. GMCB\'s RBP methodology is shaped by hospital financial data from the operations layer.' },
+  { from:'ops',    to:'tech',     type:'requires',   color:'#8b5cf6', label:'Workforce operates infra', text:'CIN analytics, VHCURES reporting, FHIR compliance — all require IT and admin staff. Technology infrastructure is only as functional as the operations workforce running it.' },
+  { from:'equity', to:'policy',   type:'constrains', color:'#6b7280', label:'Equity accountability',   text:'Any policy change — RBP methodology, global budget design, COE assignments — must be evaluated for equity impact. Equity is a constraint on policy design, not an afterthought.' },
+  { from:'equity', to:'clinical', type:'constrains', color:'#6b7280', label:'Clinical audit',          text:'Implicit bias, cultural competence, language access — equity constrains how clinical care is delivered. Blueprint\'s HRSN screening is driven by equity\'s requirement to reach disadvantaged populations.' },
+];
+
+const TMAP = {
+  enables:   { bg:'#dcfce7', color:'#15803d' },
+  drives:    { bg:'#dbeafe', color:'#1d4ed8' },
+  requires:  { bg:'#fef9c3', color:'#a16207' },
+  constrains:{ bg:'#f3f4f6', color:'#4b5563' },
+};
+
+const CX=400, CY=225, RAD=160, CW=108, CH=58;
+
+function pos(p){ const r=(p.angle-90)*Math.PI/180; return {x:CX+RAD*Math.cos(r),y:CY+RAD*Math.sin(r)}; }
+
+function edgePts(fp,tp){
+  const a=pos(fp),b=pos(tp);
+  const dx=b.x-a.x,dy=b.y-a.y,len=Math.sqrt(dx*dx+dy*dy);
+  const ux=dx/len,uy=dy/len;
+  return {x1:a.x+ux*(CW/2+3),y1:a.y+uy*(CH/2+3),x2:b.x-ux*(CW/2+10),y2:b.y-uy*(CH/2+10)};
+}
+
+function spokePts(p){
+  const c=pos(p);
+  const dx=CX-c.x,dy=CY-c.y,len=Math.sqrt(dx*dx+dy*dy);
+  const ux=dx/len,uy=dy/len;
+  return {x1:c.x+ux*(CW/2+3),y1:c.y+uy*(CH/2+3),x2:CX-ux*56,y2:CY-uy*56};
+}
+
+let sel=null;
+const svg=document.getElementById('svg');
+const edgeG=document.getElementById('edges');
+const cardG=document.getElementById('cards');
+
+function mkEl(tag,attrs={}){
+  const el=document.createElementNS('http://www.w3.org/2000/svg',tag);
+  Object.entries(attrs).forEach(([k,v])=>el.setAttribute(k,v));
+  return el;
+}
+
+P.forEach(p=>{
+  const sp=spokePts(p);
+  const line=mkEl('line',{x1:sp.x1,y1:sp.y1,x2:sp.x2,y2:sp.y2,stroke:'#d1d5db','stroke-width':'1','marker-end':'url(#mh)',class:'edge-line spoke','data-pid':p.id});
+  edgeG.appendChild(line);
+});
+
+DEPS.forEach((d)=>{
+  const fp=P.find(x=>x.id===d.from),tp=P.find(x=>x.id===d.to);
+  const ep=edgePts(fp,tp);
+  const mx=(ep.x1+ep.x2)/2,my=(ep.y1+ep.y2)/2;
+  const dx=ep.x2-ep.x1,dy=ep.y2-ep.y1;
+  const nx=-dy,ny=dx,nl=Math.sqrt(nx*nx+ny*ny);
+  const qx=mx+(nx/nl)*26,qy=my+(ny/nl)*26;
+  const dash=d.type==='constrains'?'3 3':'none';
+  const path=mkEl('path',{d:`M${ep.x1},${ep.y1} Q${qx},${qy} ${ep.x2},${ep.y2}`,fill:'none',stroke:d.color,'stroke-width':'1.5','stroke-dasharray':dash,'marker-end':'url(#mh)',class:'edge-line dep-edge',opacity:'0.22','data-from':d.from,'data-to':d.to});
+  edgeG.appendChild(path);
+});
+
+P.forEach(p=>{
+  const c=pos(p);
+  const gw=document.createElementNS('http://www.w3.org/2000/svg','g');
+  gw.setAttribute('class','pcard');
+  gw.setAttribute('data-id',p.id);
+  gw.setAttribute('tabindex','0');
+  gw.setAttribute('role','button');
+  gw.setAttribute('aria-label',`${p.label} pillar`);
+  const bx=c.x-CW/2,by=c.y-CH/2;
+  const rect=mkEl('rect',{x:bx,y:by,width:CW,height:CH,rx:'10',fill:p.light,stroke:p.border,'stroke-width':'1.5'});
+  const circ=mkEl('circle',{cx:bx+18,cy:by+18,r:'11',fill:p.color});
+  const num=mkEl('text',{x:bx+18,y:by+18,'text-anchor':'middle','dominant-baseline':'central',style:'font-size:11px;font-weight:700;fill:#fff'});
+  num.textContent=p.n;
+  const lbl=mkEl('text',{x:c.x,y:by+20,'text-anchor':'middle','dominant-baseline':'central',style:`font-size:12px;font-weight:700;fill:${p.color}`});
+  lbl.textContent=p.label;
+  const ql=mkEl('text',{x:c.x,y:by+38,'text-anchor':'middle','dominant-baseline':'central',style:'font-size:9.5px;fill:#6b7280'});
+  ql.textContent=p.q;
+  gw.appendChild(rect);gw.appendChild(circ);gw.appendChild(num);gw.appendChild(lbl);gw.appendChild(ql);
+  gw.addEventListener('click',()=>select(p.id));
+  gw.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); select(p.id); } });
+  cardG.appendChild(gw);
+});
+
+function select(id){
+  if(sel===id){ sel=null; resetAll(); return; }
+  sel=id;
+  const relevant=new Set([id]);
+  DEPS.forEach(d=>{ if(d.from===id||d.to===id){ relevant.add(d.from); relevant.add(d.to); } });
+  document.querySelectorAll('.pcard').forEach(el=>{
+    const pid=el.dataset.id;
+    el.classList.toggle('faded',!relevant.has(pid));
+  });
+  document.querySelectorAll('.edge-line.dep-edge').forEach(el=>{
+    const lit=el.dataset.from===id||el.dataset.to===id;
+    el.classList.toggle('active',lit);
+    el.classList.toggle('faded',!lit);
+  });
+  document.querySelectorAll('.edge-line.spoke').forEach(el=>{
+    const pid=el.dataset.pid;
+    el.classList.toggle('active',pid===id);
+    el.classList.toggle('faded',pid!==id);
+  });
+  renderDetail(id);
+}
+
+function resetAll(){
+  document.querySelectorAll('.pcard').forEach(el=>el.classList.remove('faded'));
+  document.querySelectorAll('.edge-line').forEach(el=>el.classList.remove('active','faded'));
+  document.getElementById('detail').innerHTML='<div class="empty">Click a pillar to see its dependency relationships</div>';
+}
+
+function renderDetail(id){
+  const p=P.find(x=>x.id===id);
+  const myDeps=DEPS.filter(d=>d.from===id||d.to===id);
+  const depHTML=myDeps.map(d=>{
+    const isOut=d.from===id;
+    const other=P.find(x=>x.id===(isOut?d.to:d.from));
+    const tm=TMAP[d.type];
+    return `<div class="dep-cell">
+      <span class="dep-type" style="background:${tm.bg};color:${tm.color}">${d.type}</span>
+      <div class="dep-target" style="color:${other.color}">${isOut?'→':'←'} ${other.label}</div>
+      <div class="dep-label">${d.label}</div>
+      <div class="dep-text">${d.text}</div>
+    </div>`;
+  }).join('');
+  document.getElementById('detail').innerHTML=`
+    <div class="detail-header">
+      <div class="detail-num" style="background:${p.color}">${p.n}</div>
+      <div class="detail-title" style="color:${p.color}">${p.label}</div>
+      <div class="detail-q" style="background:${p.light};color:${p.color}">${p.q}</div>
+    </div>
+    <div class="detail-desc">${p.desc}</div>
+    <div class="dep-grid">${depHTML}</div>`;
+}
+</script>
+</body>
+</html>

@@ -397,12 +397,48 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 // ══════════════════════════════════════════════════════════════════════════════
 // TAB 1 — Racial & Ethnic Disparity Calculator
+// ─── VERMONT EQUITY PRESETS ───────────────────────────────────────────────────
+const VERMONT_EQUITY_PRESETS = [
+  {
+    id: "vt_statewide",
+    label: "Vermont Statewide Demographics",
+    badge: "AHEAD Equity Benchmark Baseline",
+    pop: { white: 94, black: 1, hispanic: 2, asian: 2, aian: 1 },
+  },
+  {
+    id: "vt_burlington",
+    label: "Burlington / Chittenden County",
+    badge: "Urban Center · Most Diverse",
+    pop: { white: 88, black: 3, hispanic: 4, asian: 4, aian: 1 },
+  },
+  {
+    id: "vt_northeast_kingdom",
+    label: "Northeast Kingdom (Rural)",
+    badge: "High Poverty · CAH Service Area",
+    pop: { white: 96, black: 1, hispanic: 2, asian: 1, aian: 0 },
+  },
+  {
+    id: "national_avg",
+    label: "National Average (Benchmark)",
+    badge: "CDC / AHRQ Reference Population",
+    pop: { white: 60, black: 13, hispanic: 19, asian: 6, aian: 2 },
+  },
+];
+
 // ══════════════════════════════════════════════════════════════════════════════
 function DisparityCalculator() {
   const [outcomeIdx, setOutcomeIdx] = useState(0);
-  const [pop, setPop] = useState({ white: 60, black: 13, hispanic: 19, asian: 6, aian: 2 });
+  const [pop, setPop] = useState({ white: 94, black: 1, hispanic: 2, asian: 2, aian: 1 });
+  const [activeEquityPreset, setActiveEquityPreset] = useState<string>("vt_statewide");
   const [decomp, setDecomp] = useState<Record<string, number>>({});
   const [showDecomp, setShowDecomp] = useState(false);
+
+  function loadEquityPreset(id: string) {
+    const p = VERMONT_EQUITY_PRESETS.find(x => x.id === id);
+    if (!p) return;
+    setActiveEquityPreset(id);
+    setPop(p.pop);
+  }
 
   const outcome = HEALTH_OUTCOMES[outcomeIdx];
 
@@ -472,6 +508,27 @@ function DisparityCalculator() {
 
   return (
     <div className="space-y-6">
+      {/* Vermont Presets */}
+      <div className="bg-violet-50 border border-violet-200 rounded-xl p-4">
+        <p className="text-[10px] font-black uppercase tracking-widest text-violet-700 mb-3">Vermont & Comparison Populations</p>
+        <div className="grid grid-cols-2 gap-1.5">
+          {VERMONT_EQUITY_PRESETS.map(p => (
+            <button
+              key={p.id}
+              onClick={() => loadEquityPreset(p.id)}
+              className={`text-left px-3 py-2.5 rounded-lg border text-xs transition-all ${
+                activeEquityPreset === p.id
+                  ? "bg-violet-600 border-violet-700 text-white font-bold"
+                  : "bg-white border-violet-200 text-slate-700 hover:border-violet-400 hover:bg-violet-50"
+              }`}
+            >
+              <div className="font-bold leading-tight">{p.label}</div>
+              <div className={`text-[10px] mt-0.5 ${activeEquityPreset === p.id ? "text-violet-100" : "text-slate-400"}`}>{p.badge}</div>
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* Outcome selector */}
       <div className="bg-white rounded-xl border border-amber-100 p-4 shadow-sm">
         <SectionLabel>Select Health Outcome</SectionLabel>

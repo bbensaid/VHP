@@ -5,6 +5,90 @@ import { CheckCircle, AlertTriangle, XCircle, TrendingDown } from "lucide-react"
 
 type PeerGroup = "cah" | "rural_pps" | "urban_community" | "urban_tertiary";
 
+// ─── VERMONT PRESET SCENARIOS ─────────────────────────────────────────────────
+const VERMONT_PRESETS = [
+  {
+    id: "nvrh",
+    label: "NVRH — Northeastern VT Regional",
+    badge: "CAH · Act 68 Target",
+    peerGroup: "cah" as PeerGroup,
+    totalRevenue: 48_200_000,
+    operatingExpense: 47_600_000,
+    cashOnHand: 5_800_000,
+    annualDebtService: 1_200_000,
+    currentAssets: 8_100_000,
+    currentLiabilities: 4_300_000,
+    laborCost: 25_100_000,
+    medicaidCutPct: 0,
+    volumeChangePct: 0,
+    travelNurseIncreasePct: 0,
+  },
+  {
+    id: "gifford",
+    label: "Gifford Medical Center",
+    badge: "CAH · Rural",
+    peerGroup: "cah" as PeerGroup,
+    totalRevenue: 58_500_000,
+    operatingExpense: 57_200_000,
+    cashOnHand: 7_200_000,
+    annualDebtService: 1_500_000,
+    currentAssets: 9_800_000,
+    currentLiabilities: 5_100_000,
+    laborCost: 29_800_000,
+    medicaidCutPct: 0,
+    volumeChangePct: 0,
+    travelNurseIncreasePct: 0,
+  },
+  {
+    id: "cvmc",
+    label: "Central VT Medical Center",
+    badge: "Rural PPS · Non-CAH",
+    peerGroup: "rural_pps" as PeerGroup,
+    totalRevenue: 185_000_000,
+    operatingExpense: 182_500_000,
+    cashOnHand: 28_000_000,
+    annualDebtService: 6_200_000,
+    currentAssets: 42_000_000,
+    currentLiabilities: 21_000_000,
+    laborCost: 91_000_000,
+    medicaidCutPct: 0,
+    volumeChangePct: 0,
+    travelNurseIncreasePct: 0,
+  },
+  {
+    id: "act68_rbp",
+    label: "Act 68 RBP Scenario (FY2027)",
+    badge: "Stress Test · RBP at Medicare +15%",
+    peerGroup: "cah" as PeerGroup,
+    totalRevenue: 48_200_000,
+    operatingExpense: 47_600_000,
+    cashOnHand: 5_800_000,
+    annualDebtService: 1_200_000,
+    currentAssets: 8_100_000,
+    currentLiabilities: 4_300_000,
+    laborCost: 25_100_000,
+    medicaidCutPct: 0,
+    volumeChangePct: -8,   // RBP compression: commercial revenue at Medicare +15%
+    travelNurseIncreasePct: 0,
+  },
+  {
+    id: "hr1_cliff",
+    label: "H.R. 1 Medicaid Cliff (Post-2030)",
+    badge: "Stress Test · $911B Cuts",
+    peerGroup: "cah" as PeerGroup,
+    totalRevenue: 48_200_000,
+    operatingExpense: 47_600_000,
+    cashOnHand: 5_800_000,
+    annualDebtService: 1_200_000,
+    currentAssets: 8_100_000,
+    currentLiabilities: 4_300_000,
+    laborCost: 25_100_000,
+    medicaidCutPct: 12,
+    volumeChangePct: -5,
+    travelNurseIncreasePct: 15,
+  },
+];
+
 const PEER_BENCHMARKS: Record<PeerGroup, {
   label: string;
   operatingMargin: number;
@@ -70,20 +154,38 @@ function fmtUSD(n: number) {
 
 export default function HospitalFinancialScorecard() {
   const [peerGroup, setPeerGroup] = useState<PeerGroup>("cah");
+  const [activePreset, setActivePreset] = useState<string | null>(null);
 
   // Base financials
-  const [totalRevenue,    setTotalRevenue]    = useState(48_000_000);
-  const [operatingExpense, setOperatingExpense] = useState(47_400_000);
+  const [totalRevenue,    setTotalRevenue]    = useState(48_200_000);
+  const [operatingExpense, setOperatingExpense] = useState(47_600_000);
   const [cashOnHand,      setCashOnHand]      = useState(5_800_000);
   const [annualDebtService, setAnnualDebtService] = useState(1_200_000);
-  const [currentAssets,   setCurrentAssets]   = useState(8_200_000);
-  const [currentLiabilities, setCurrentLiabilities] = useState(4_100_000);
-  const [laborCost,       setLaborCost]       = useState(24_000_000);
+  const [currentAssets,   setCurrentAssets]   = useState(8_100_000);
+  const [currentLiabilities, setCurrentLiabilities] = useState(4_300_000);
+  const [laborCost,       setLaborCost]       = useState(25_100_000);
 
   // Stress test parameters
   const [medicaidCutPct, setMedicaidCutPct] = useState(0);
   const [volumeChangePct, setVolumeChangePct] = useState(0);
   const [travelNurseIncreasePct, setTravelNurseIncreasePct] = useState(0);
+
+  function loadPreset(id: string) {
+    const p = VERMONT_PRESETS.find(x => x.id === id);
+    if (!p) return;
+    setActivePreset(id);
+    setPeerGroup(p.peerGroup);
+    setTotalRevenue(p.totalRevenue);
+    setOperatingExpense(p.operatingExpense);
+    setCashOnHand(p.cashOnHand);
+    setAnnualDebtService(p.annualDebtService);
+    setCurrentAssets(p.currentAssets);
+    setCurrentLiabilities(p.currentLiabilities);
+    setLaborCost(p.laborCost);
+    setMedicaidCutPct(p.medicaidCutPct);
+    setVolumeChangePct(p.volumeChangePct);
+    setTravelNurseIncreasePct(p.travelNurseIncreasePct);
+  }
 
   const bench = PEER_BENCHMARKS[peerGroup];
 
@@ -130,6 +232,28 @@ export default function HospitalFinancialScorecard() {
 
         {/* ── INPUTS ── */}
         <div className="lg:col-span-2 p-6 space-y-5">
+
+          {/* Vermont Presets */}
+          <div className="bg-sky-50 border border-sky-200 rounded-xl p-4">
+            <p className="text-[10px] font-black uppercase tracking-widest text-sky-700 mb-3">Vermont Scenarios</p>
+            <div className="space-y-1.5">
+              {VERMONT_PRESETS.map(p => (
+                <button
+                  key={p.id}
+                  onClick={() => loadPreset(p.id)}
+                  className={`w-full text-left px-3 py-2.5 rounded-lg border text-xs transition-all ${
+                    activePreset === p.id
+                      ? "bg-sky-600 border-sky-700 text-white font-bold"
+                      : "bg-white border-sky-200 text-slate-700 hover:border-sky-400 hover:bg-sky-50"
+                  }`}
+                >
+                  <div className="font-bold">{p.label}</div>
+                  <div className={`text-[10px] mt-0.5 ${activePreset === p.id ? "text-sky-100" : "text-slate-400"}`}>{p.badge}</div>
+                </button>
+              ))}
+            </div>
+          </div>
+
           <div>
             <label className="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Peer Group</label>
             <div className="grid grid-cols-1 gap-2">

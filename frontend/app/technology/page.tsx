@@ -81,7 +81,7 @@ export default function Page() {
             { href: "/research-lab/technology-ai", emoji: "🤖", title: "Technology & AI Lab", desc: "Interactive models for AI adoption, ROI analysis & workflow automation" },
             { href: "/research-lab/interoperability", emoji: "🔗", title: "Interoperability Lab", desc: "FHIR implementation tools, API testing & data standards analysis" },
             { href: "/htr-simulator", emoji: "⚙️", title: "HTR Simulator", desc: "Score technology modernization in your transformation scenario" },
-            { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "All 19 analytical tools including digital health & security models" },
+            { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "All 21 analytical tools including digital health & security models" },
           ].map((tool) => (
             <Link key={tool.href} href={tool.href} className="group flex flex-col gap-2 p-4 rounded-xl border-2 border-indigo-100 hover:border-indigo-300 hover:bg-indigo-50 transition-all">
               <div className="flex items-center gap-2">
