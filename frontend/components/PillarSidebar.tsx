@@ -45,7 +45,7 @@ const PILLAR_CONFIG: Record<string, {
       { href: "/research-lab/payment-models?tab=apm-design",  label: "APM Design Lab" },
       { href: "/research-lab/payment-models?tab=apm-calc",    label: "Shared Savings Calculator" },
       { href: "/research-lab/payment-models?tab=cea",         label: "CEA Calculator" },
-      { href: "/research-lab/policy-quality?tab=scorecard",   label: "Hospital Financial Scorecard" },
+      { href: "/research-lab/policy-quality?tab=scorecard",   label: "Hospital Financial Stress Test" },
       { href: "/research-lab/policy-quality?tab=hta",         label: "HTA Studio" },
       { href: "/research-lab/policy-quality?tab=actuarial",   label: "Actuarial Lab" },
     ],
@@ -62,7 +62,7 @@ const PILLAR_CONFIG: Record<string, {
     ],
     labItems: [
       { href: "/research-lab/interoperability?tab=fhir", label: "FHIR Interoperability Lab" },
-      { href: "/research-lab/technology-ai?tab=ai",      label: "AI Analytics Lab" },
+      { href: "/research-lab/technology-ai?tab=ai",      label: "AI Clinical Governance Lab" },
       { href: "/research-lab/technology-ai?tab=digital", label: "Digital Health Lab" },
     ],
   },
@@ -107,6 +107,8 @@ const PILLAR_CONFIG: Record<string, {
       { href: "/operations/payer-network", label: "Payer & Network Operations" },
     ],
     labItems: [
+      { href: "/research-lab/knowledge-workspace?tab=scorecard", label: "Transformation Scorecard" },
+      { href: "/research-lab/knowledge-workspace?tab=readiness", label: "VBC Readiness Assessment" },
       { href: "/research-lab/knowledge-workspace?tab=evidence",  label: "Evidence Library" },
       { href: "/research-lab/knowledge-workspace?tab=workspace", label: "Research Workspace" },
     ],
@@ -221,6 +223,17 @@ export default function PillarSidebar() {
             );
           })}
         </div>
+      </div>
+
+      {/* ── Framework Map ─────────────────────────────────────────────────── */}
+      <div className="border-t border-slate-200 pt-4 mt-2">
+        <Link
+          href="/about/framework"
+          className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm bg-indigo-50 border border-indigo-100 text-indigo-700 hover:bg-indigo-100 hover:border-indigo-300 transition-colors font-semibold"
+        >
+          <span className="text-base leading-none">🕸️</span>
+          Six-Pillar Dependency Map
+        </Link>
       </div>
 
     </div>

@@ -111,7 +111,7 @@ const SECTIONS: Section[] = [
       { href: "/research-lab/payment-models?tab=apm-design",  label: "APM Design Lab" },
       { href: "/research-lab/payment-models?tab=apm-calc",    label: "Shared Savings Calculator" },
       { href: "/research-lab/payment-models?tab=cea",         label: "CEA Calculator" },
-      { href: "/research-lab/policy-quality?tab=scorecard",   label: "Hospital Financial Scorecard" },
+      { href: "/research-lab/policy-quality?tab=scorecard",   label: "Hospital Financial Stress Test" },
       { href: "/research-lab/policy-quality?tab=hta",         label: "HTA Studio" },
       { href: "/research-lab/policy-quality?tab=actuarial",   label: "Actuarial Lab" },
     ],
@@ -135,7 +135,7 @@ const SECTIONS: Section[] = [
     ],
     labItems: [
       { href: "/research-lab/interoperability?tab=fhir", label: "FHIR Interoperability Lab" },
-      { href: "/research-lab/technology-ai?tab=ai",      label: "AI Analytics Lab" },
+      { href: "/research-lab/technology-ai?tab=ai",      label: "AI Clinical Governance Lab" },
       { href: "/research-lab/technology-ai?tab=digital", label: "Digital Health Lab" },
     ],
   },
@@ -201,6 +201,8 @@ const SECTIONS: Section[] = [
       { href: "/operations/payer-network", label: "Payer & Network Operations" },
     ],
     labItems: [
+      { href: "/research-lab/knowledge-workspace?tab=scorecard", label: "Transformation Scorecard" },
+      { href: "/research-lab/knowledge-workspace?tab=readiness", label: "VBC Readiness Assessment" },
       { href: "/research-lab/knowledge-workspace?tab=evidence",  label: "Evidence Library" },
       { href: "/research-lab/knowledge-workspace?tab=workspace", label: "Research Workspace" },
     ],
@@ -216,11 +218,13 @@ const SECTIONS: Section[] = [
     divideColor: "divide-rose-100", activeItemBg: "bg-rose-100",
     items: [
       { href: "/vermont-medicaid",    label: "Vermont Medicaid",    icon: DocumentTextIcon },
-      { href: "/vermont-act-167",     label: "Vermont Act 167",     icon: MapPinIcon },
-      { href: "/california-calaim",   label: "California CalAIM",   icon: MapPinIcon },
+      { href: "/vermont-act-167",     label: "Vermont Act 167 (2022)", icon: MapPinIcon },
+      { href: "/vermont-act-68",      label: "Vermont Act 68 (2025)", icon: MapPinIcon },
+      { href: "/vermont-rht-program", label: "Vermont RHT Program",  icon: DocumentTextIcon },
+      { href: "/ahead-model",         label: "AHEAD Model",         icon: DocumentTextIcon },
       { href: "/states",              label: "All States Explorer", icon: GlobeAmericasIcon },
       { href: "/dashboard",           label: "50-State Dashboard",  icon: TableCellsIcon },
-      { href: "/ahead-model",         label: "AHEAD Model",         icon: DocumentTextIcon },
+      { href: "/california-calaim",   label: "California CalAIM",   icon: MapPinIcon },
     ],
   },
 
@@ -233,6 +237,7 @@ const SECTIONS: Section[] = [
     borderAccent: "border-amber-500", hoverBg: "hover:bg-amber-100",
     divideColor: "divide-amber-100", activeItemBg: "bg-amber-100",
     items: [
+      { href: "/about/framework",                label: "Six-Pillar Map",       icon: BeakerIcon },
       { href: "/htr-simulator",                  label: "HTR Simulator",       icon: CpuChipIcon },
       { href: "/medicaid-eligibility-simulator", label: "Medicaid Eligibility", icon: DocumentTextIcon },
       { href: "/hti-dashboard",                  label: "HTI Dashboard",       icon: TableCellsIcon },
@@ -308,7 +313,7 @@ function getSectionForPath(path: string): string | null {
 
   if (path === "/academy" || path.startsWith("/academy/")) return "learn";
 
-  const statesPrefixes = ["/vermont-medicaid", "/vermont-act-167", "/california-calaim", "/states", "/dashboard", "/ahead-model"];
+  const statesPrefixes = ["/vermont-medicaid", "/vermont-act-167", "/vermont-act-68", "/vermont-rht-program", "/california-calaim", "/states", "/dashboard", "/ahead-model"];
   if (statesPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "states";
 
   const toolsPrefixes = ["/htr-simulator", "/medicaid-eligibility-simulator", "/hti-dashboard", "/the-wire", "/investment-tracker", "/transformation-friction-index", "/impact-simulation", "/multimedia", "/trending-topics"];

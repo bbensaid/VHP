@@ -87,7 +87,7 @@ export default function Page() {
             { href: "/research-lab/population-equity", emoji: "👥", title: "Population & Equity Lab", desc: "Risk stratification models, chronic care analytics & equity dashboards" },
             { href: "/htr-simulator", emoji: "⚙️", title: "HTR Simulator", desc: "Score clinical quality & outcomes in your transformation scenario" },
             { href: "/dashboard", emoji: "🗺️", title: "50-State Dashboard", desc: "Hospital-level clinical performance data across all RHTP participants" },
-            { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "All 19 tools including clinical decision support & care model analysis" },
+            { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "All 21 tools including clinical decision support & care model analysis" },
           ].map((tool) => (
             <Link key={tool.href} href={tool.href} className="group flex flex-col gap-2 p-4 rounded-xl border-2 border-rose-100 hover:border-rose-300 hover:bg-rose-50 transition-all">
               <div className="flex items-center gap-2">

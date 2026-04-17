@@ -56,6 +56,54 @@ const APM_MODELS = [
   },
 ];
 
+// ─── VERMONT PRESET SCENARIOS ─────────────────────────────────────────────────
+const VERMONT_APM_PRESETS = [
+  {
+    id: "ahead_fy28",
+    label: "Vermont AHEAD Global Budget (FY2028)",
+    badge: "All-payer · Mandatory",
+    modelIdx: 2, // ACO REACH (closest to global budget full risk)
+    attributedLives: 52_000,
+    benchmarkPMPM: 1_040,
+    actualSpendPct: 96.5,
+    qualityScore: 88,
+    adminCostPMPM: 22,
+  },
+  {
+    id: "blueprint_aco",
+    label: "Vermont Blueprint ACO (Current)",
+    badge: "Medicare · All-Payer",
+    modelIdx: 1, // MSSP Enhanced
+    attributedLives: 28_000,
+    benchmarkPMPM: 980,
+    actualSpendPct: 97.2,
+    qualityScore: 82,
+    adminCostPMPM: 16,
+  },
+  {
+    id: "medicaid_aco",
+    label: "Vermont Medicaid ACO",
+    badge: "Medicaid · DVHA",
+    modelIdx: 2, // ACO REACH (full risk analog)
+    attributedLives: 185_000,
+    benchmarkPMPM: 620,
+    actualSpendPct: 98.1,
+    qualityScore: 78,
+    adminCostPMPM: 14,
+  },
+  {
+    id: "rural_hospital_cah",
+    label: "Small Rural Hospital (CAH AHEAD Participant)",
+    badge: "CAH · Act 68 Exempt from Global Budget",
+    modelIdx: 0, // MSSP Track 1
+    attributedLives: 4_200,
+    benchmarkPMPM: 1_120,
+    actualSpendPct: 95.8,
+    qualityScore: 80,
+    adminCostPMPM: 28,
+  },
+];
+
 function fmt(n: number, dec = 0) {
   return n.toLocaleString("en-US", { maximumFractionDigits: dec });
 }
@@ -65,12 +113,25 @@ function fmtUSD(n: number) {
 }
 
 export default function APMCalculator() {
+  const [activePreset, setActivePreset] = useState<string | null>(null);
   const [modelIdx, setModelIdx] = useState(0);
   const [attributedLives, setAttributedLives] = useState(8000);
   const [benchmarkPMPM, setBenchmarkPMPM] = useState(1050);
   const [actualSpendPct, setActualSpendPct] = useState(96); // % of benchmark (96 = 4% savings)
   const [qualityScore, setQualityScore] = useState(85);    // 0-100
   const [adminCostPMPM, setAdminCostPMPM] = useState(18);
+
+  function loadPreset(id: string) {
+    const p = VERMONT_APM_PRESETS.find(x => x.id === id);
+    if (!p) return;
+    setActivePreset(id);
+    setModelIdx(p.modelIdx);
+    setAttributedLives(p.attributedLives);
+    setBenchmarkPMPM(p.benchmarkPMPM);
+    setActualSpendPct(p.actualSpendPct);
+    setQualityScore(p.qualityScore);
+    setAdminCostPMPM(p.adminCostPMPM);
+  }
 
   // Custom model params
   const [customMSR, setCustomMSR] = useState(1.0);
@@ -145,6 +206,28 @@ export default function APMCalculator() {
 
         {/* ── INPUTS ── */}
         <div className="lg:col-span-2 p-6 space-y-5">
+
+          {/* Vermont Presets */}
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+            <p className="text-[10px] font-black uppercase tracking-widest text-emerald-700 mb-3">Vermont Scenarios</p>
+            <div className="space-y-1.5">
+              {VERMONT_APM_PRESETS.map(p => (
+                <button
+                  key={p.id}
+                  onClick={() => loadPreset(p.id)}
+                  className={`w-full text-left px-3 py-2.5 rounded-lg border text-xs transition-all ${
+                    activePreset === p.id
+                      ? "bg-emerald-600 border-emerald-700 text-white font-bold"
+                      : "bg-white border-emerald-200 text-slate-700 hover:border-emerald-400 hover:bg-emerald-50"
+                  }`}
+                >
+                  <div className="font-bold">{p.label}</div>
+                  <div className={`text-[10px] mt-0.5 ${activePreset === p.id ? "text-emerald-100" : "text-slate-400"}`}>{p.badge}</div>
+                </button>
+              ))}
+            </div>
+          </div>
+
           {/* Model Selector */}
           <div>
             <label className="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">APM Model</label>

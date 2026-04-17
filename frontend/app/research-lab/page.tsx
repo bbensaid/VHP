@@ -4,7 +4,7 @@ import UpgradePrompt from "@/components/UpgradePrompt";
 
 export const metadata = {
   title: "HTR Research Lab | Health Transformation Review",
-  description: "19 interactive analytical tools organized by the six-pillar framework: Policy, Economics, Technology, Clinical, Equity, and Operations.",
+  description: "21 interactive analytical tools organized by the six-pillar framework: Policy, Economics, Technology, Clinical, Equity, and Operations.",
 };
 
 const PILLAR_LABS: {
@@ -29,7 +29,7 @@ const PILLAR_LABS: {
       { label: "APM Design Lab", desc: "Design novel APMs — episode bundles, global budgets, benchmark waterfalls.", href: "/research-lab/payment-models?tab=apm-design" },
       { label: "Shared Savings Calculator", desc: "Model MSSP, ACO REACH, and global budget shared savings scenarios.", href: "/research-lab/payment-models?tab=apm-calc" },
       { label: "CEA Calculator", desc: "Calculate cost per QALY, NNT, and break-even timeline for any intervention.", href: "/research-lab/payment-models?tab=cea" },
-      { label: "Hospital Financial Scorecard", desc: "Stress-test hospital financials against payer mix and rate changes.", href: "/research-lab/policy-quality?tab=scorecard" },
+      { label: "Hospital Financial Stress Test", desc: "Stress-test hospital financials against payer mix, Medicaid cuts, and global budget scenarios.", href: "/research-lab/policy-quality?tab=scorecard" },
       { label: "HTA Studio", desc: "Build budget impact models and run Monte Carlo PSA with 1,000 iterations.", href: "/research-lab/policy-quality?tab=hta" },
       { label: "Actuarial Lab", desc: "Calculate ACA actuarial value, model adverse selection, and IRA drug pricing.", href: "/research-lab/policy-quality?tab=actuarial" },
     ],
@@ -38,7 +38,7 @@ const PILLAR_LABS: {
     id: "technology", label: "Technology", color: "text-indigo-700", bg: "bg-indigo-50", border: "border-indigo-200", dot: "bg-indigo-500",
     tools: [
       { label: "FHIR Interoperability Lab", desc: "Build and validate FHIR R4 resources, test CDS Hooks, check ONC compliance.", href: "/research-lab/interoperability?tab=fhir" },
-      { label: "AI Analytics Lab", desc: "Compare predictive models, detect algorithmic bias, build AI governance frameworks.", href: "/research-lab/technology-ai?tab=ai" },
+      { label: "AI Clinical Governance Lab", desc: "Compare predictive models, detect algorithmic bias, build AI governance frameworks.", href: "/research-lab/technology-ai?tab=ai" },
       { label: "Digital Health Lab", desc: "Calculate RPM ROI, model telehealth utilization, optimize EHR interoperability.", href: "/research-lab/technology-ai?tab=digital" },
     ],
   },
@@ -60,6 +60,8 @@ const PILLAR_LABS: {
   {
     id: "operations", label: "Operations", color: "text-teal-700", bg: "bg-teal-50", border: "border-teal-200", dot: "bg-teal-500",
     tools: [
+      { label: "Transformation Scorecard", desc: "Executive six-pillar dashboard — score Policy, Economics, Technology, Clinical, Equity, and Operations with Vermont AHEAD milestone tracking.", href: "/research-lab/knowledge-workspace?tab=scorecard" },
+      { label: "VBC Readiness Assessment", desc: "30-dimension, 6-domain self-assessment producing a readiness score and prioritized gap analysis for value-based care transformation. Vermont AHEAD presets included.", href: "/research-lab/knowledge-workspace?tab=readiness" },
       { label: "Evidence Library", desc: "Search 25 landmark CEA/CUA studies and 20 CMMI innovation model summaries.", href: "/research-lab/knowledge-workspace?tab=evidence" },
       { label: "Research Workspace", desc: "Save scenarios, build structured reports, manage citations, and export findings.", href: "/research-lab/knowledge-workspace?tab=workspace" },
     ],
@@ -78,7 +80,7 @@ export default async function ResearchLabPage() {
       <div className="bg-slate-950 text-white border-b border-slate-800">
         <div className="max-w-5xl mx-auto px-6 py-4">
           <span className="text-[10px] font-semibold uppercase tracking-widest text-amber-400 block mb-0.5">HTR Research Lab</span>
-          <h1 className="text-xl font-bold tracking-tight">19 Analytical Tools — Organized by Domain</h1>
+          <h1 className="text-xl font-bold tracking-tight">21 Analytical Tools — Organized by Domain</h1>
           <p className="text-sm text-slate-400 mt-0.5 max-w-2xl">
             Every tool is assigned to one of the six pillars. Access tools directly from their pillar section in the sidebar, or browse the full directory below.
           </p>

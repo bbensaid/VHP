@@ -539,6 +539,21 @@ export default function HTRSimulatorPage() {
             Grounded in structured decision analysis, health policy research, and lessons from comparable
             transformation programs across the United States.
           </p>
+          <Link
+            href="/about/framework"
+            className="flex items-center justify-between gap-4 px-5 py-4 mb-6 rounded-xl border-2 border-violet-200 bg-violet-50 hover:border-violet-400 hover:bg-violet-100 transition-all group"
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-2xl leading-none">🕸️</span>
+              <div>
+                <p className="text-sm font-black text-violet-700">Six-Pillar Dependency Map</p>
+                <p className="text-xs text-slate-500">See how each pillar enables, constrains, or drives the others — the structural logic behind the Simulator&rsquo;s scoring model</p>
+              </div>
+            </div>
+            <span className="text-sm font-bold text-violet-600 group-hover:text-violet-800 whitespace-nowrap">
+              View Map →
+            </span>
+          </Link>
 
           <div className="bg-white border border-slate-200 rounded-2xl p-6 mb-6">
             <h3 className="text-lg font-black text-slate-900 mb-4">Recommendation Scoring</h3>
