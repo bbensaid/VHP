@@ -1,9 +1,0 @@
-I have everything I need. Here is the complete style specification extracted from the book:
-
-Font: Garamond, 10.5pt (sz=21), color 1a1a1a
-Body spacing: before=60 twips, lineRule=auto (single), justified
-H1: Calibri, 18pt (sz=36), bold, color 1b3a6b, before=480, after=60
-H2: Calibri, 12pt (sz=24), bold, color 2457a4, before=300, after=80
-H3: Calibri, 11pt (sz=22), bold, color 1a1a1a, before=200, after=60
-Page: 7" × 10" (10080 × 14400 twips), margins top/bottom=1260, left=1440, right=1080
-Table text: sz=21, color 1a1a1a
