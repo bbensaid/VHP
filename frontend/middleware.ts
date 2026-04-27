@@ -93,6 +93,9 @@ const AUTH_ROUTES = ["/login", "/signup"];
 
 const BETA_COOKIE = "htr_beta";
 
+// Set this to 'true' to allow testers to browse the entire app without signing in.
+const BYPASS_AUTH = true;
+
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
@@ -155,11 +158,13 @@ export async function middleware(request: NextRequest) {
   const match = PROTECTED_ROUTES.find((r) => pathname.startsWith(r.prefix));
   if (!match) return response;
 
-  if (!user) {
+  if (!user && !BYPASS_AUTH) {
     const loginUrl = new URL("/login", request.url);
     loginUrl.searchParams.set("from", pathname);
     return NextResponse.redirect(loginUrl);
   }
+
+  if (BYPASS_AUTH) return response;
 
   if (match.protection.type === "role") {
     const requiredIdx = HIERARCHY.indexOf(match.protection.role);

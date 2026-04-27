@@ -96,10 +96,10 @@ const Footer: React.FC = () => {
     <footer className="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 mt-auto">
       
       {/* ── MAIN FOOTER ─────────────────────────────────────────────────── */}
-      <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-8">
 
         {/* Top row: Brand + Newsletter */}
-        <div className="grid lg:grid-cols-4 gap-10 mb-12 pb-12 border-b border-slate-200 dark:border-slate-700">
+        <div className="grid lg:grid-cols-4 gap-10 mb-8 pb-8 border-b border-slate-200 dark:border-slate-700">
           
           {/* Brand block */}
           <div className="lg:col-span-1">
@@ -153,8 +153,8 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Six Pillars Grid */}
-        <div className="mb-12 pb-12 border-b border-slate-200 dark:border-slate-700">
-          <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 dark:text-slate-400 mb-6">
+        <div className="mb-8 pb-8 border-b border-slate-200 dark:border-slate-700">
+          <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 dark:text-slate-400 mb-4">
             Intelligence Pillars
           </h4>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -184,7 +184,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Company + Platform columns */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
 
           {/* Company */}
           <div>
