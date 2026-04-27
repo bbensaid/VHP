@@ -183,7 +183,7 @@ function IntelligencePanel({ onClose }: { onClose: () => void }) {
         {[
           { href: "/trending-topics", label: "Trending Topics" },
           { href: "/advisory/reports", label: "Latest Reports" },
-          { href: "/search", label: "Search Intelligence" },
+          { href: "/search", label: "Search Pillars" },
         ].map((link) => (
           <Link
             key={link.href}
@@ -661,7 +661,7 @@ const Header = () => {
   };
 
   const megaMenuItems: { type: MegaMenuType; label: string; activeCheck: string }[] = [
-    { type: "intelligence", label: "INTELLIGENCE", activeCheck: "/policy,/economics,/technology,/clinical,/equity,/operations,/research-lab" },
+    { type: "intelligence", label: "PILLARS", activeCheck: "/policy,/economics,/technology,/clinical,/equity,/operations,/research-lab" },
     { type: "learn", label: "ACADEMY", activeCheck: "/academy" },
     { type: "tools", label: "TOOLS", activeCheck: "/htr-simulator,/hti-dashboard,/trending-topics,/multimedia,/the-wire,/investment-tracker,/medicaid-eligibility-simulator,/transformation-friction-index,/impact-simulation" },
     { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/california-calaim,/dashboard,/ahead-model,/vermont-medicaid" },
@@ -690,6 +690,7 @@ const Header = () => {
               label="DAILY INSIGHT"
               theme="dark"
               transparent={true}
+              duration={300}
             />
           </div>
           <div className="hidden lg:flex items-center gap-6 whitespace-nowrap">
@@ -913,7 +914,7 @@ const Header = () => {
               },
               {
                 key: "intelligence",
-                label: "INTELLIGENCE",
+                label: "PILLARS",
                 children: pillars.map((p) => ({
                   label: p.label,
                   href: p.href,
