@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import {
   AcademicCapIcon,
   BriefcaseIcon,
@@ -208,23 +208,23 @@ const SECTIONS: Section[] = [
     ],
   },
 
-  // ── STATES & PROGRAMS ──────────────────────────────────────────────────────
+  // ── ACADEMY ────────────────────────────────────────────────────────────────
   {
-    id: "states", label: "States & Programs",
-    icon: MapPinIcon,
-    dot: "bg-rose-500",
-    headerColor: "text-rose-700", headerBg: "bg-rose-100",
-    borderAccent: "border-rose-500", hoverBg: "hover:bg-rose-100",
-    divideColor: "divide-rose-100", activeItemBg: "bg-rose-100",
+    id: "learn", label: "Academy",
+    icon: AcademicCapIcon,
+    dot: "bg-sky-500",
+    headerColor: "text-sky-700", headerBg: "bg-sky-100",
+    borderAccent: "border-sky-500", hoverBg: "hover:bg-sky-100",
+    divideColor: "divide-sky-100", activeItemBg: "bg-sky-100",
     items: [
-      { href: "/vermont-medicaid",    label: "Vermont Medicaid",    icon: DocumentTextIcon },
-      { href: "/vermont-act-167",     label: "Vermont Act 167 (2022)", icon: MapPinIcon },
-      { href: "/vermont-act-68",      label: "Vermont Act 68 (2025)", icon: MapPinIcon },
-      { href: "/vermont-rht-program", label: "Vermont RHT Program",  icon: DocumentTextIcon },
-      { href: "/ahead-model",         label: "AHEAD Model",         icon: DocumentTextIcon },
-      { href: "/states",              label: "All States Explorer", icon: GlobeAmericasIcon },
-      { href: "/dashboard",           label: "50-State Dashboard",  icon: TableCellsIcon },
-      { href: "/california-calaim",   label: "California CalAIM",   icon: MapPinIcon },
+      { href: "/academy/personalized-learning", label: "Personalized Learning",   icon: SparklesIcon },
+      { href: "/academy/tracks",                label: "Learning Tracks",          icon: TableCellsIcon },
+      { href: "/academy/courses",               label: "Courses",                  icon: BookOpenIcon },
+      { href: "/academy/webinars",              label: "Webinars",                 icon: PresentationChartLineIcon },
+      { href: "/academy/case-studies",          label: "Case Studies",             icon: DocumentTextIcon },
+      { href: "/academy/glossary",              label: "Glossary",                 icon: BookOpenIcon },
+      { href: "/academy/medicaid",              label: "Medicaid Learning Center", icon: DocumentTextIcon },
+      { href: "/academy/faculty",               label: "Faculty",                  icon: UsersIcon },
     ],
   },
 
@@ -250,23 +250,23 @@ const SECTIONS: Section[] = [
     ],
   },
 
-  // ── ACADEMY ────────────────────────────────────────────────────────────────
+  // ── STATES & PROGRAMS ──────────────────────────────────────────────────────
   {
-    id: "learn", label: "Academy",
-    icon: AcademicCapIcon,
-    dot: "bg-sky-500",
-    headerColor: "text-sky-700", headerBg: "bg-sky-100",
-    borderAccent: "border-sky-500", hoverBg: "hover:bg-sky-100",
-    divideColor: "divide-sky-100", activeItemBg: "bg-sky-100",
+    id: "states", label: "States & Programs",
+    icon: MapPinIcon,
+    dot: "bg-rose-500",
+    headerColor: "text-rose-700", headerBg: "bg-rose-100",
+    borderAccent: "border-rose-500", hoverBg: "hover:bg-rose-100",
+    divideColor: "divide-rose-100", activeItemBg: "bg-rose-100",
     items: [
-      { href: "/academy/personalized-learning", label: "Personalized Learning",   icon: SparklesIcon },
-      { href: "/academy/tracks",                label: "Learning Tracks",          icon: TableCellsIcon },
-      { href: "/academy/courses",               label: "Courses",                  icon: BookOpenIcon },
-      { href: "/academy/webinars",              label: "Webinars",                 icon: PresentationChartLineIcon },
-      { href: "/academy/case-studies",          label: "Case Studies",             icon: DocumentTextIcon },
-      { href: "/academy/glossary",              label: "Glossary",                 icon: BookOpenIcon },
-      { href: "/academy/medicaid",              label: "Medicaid Learning Center", icon: DocumentTextIcon },
-      { href: "/academy/faculty",               label: "Faculty",                  icon: UsersIcon },
+      { href: "/vermont-medicaid",    label: "Vermont Medicaid",    icon: DocumentTextIcon },
+      { href: "/vermont-act-167",     label: "Vermont Act 167 (2022)", icon: MapPinIcon },
+      { href: "/vermont-act-68",      label: "Vermont Act 68 (2025)", icon: MapPinIcon },
+      { href: "/vermont-rht-program", label: "Vermont RHT Program",  icon: DocumentTextIcon },
+      { href: "/ahead-model",         label: "AHEAD Model",         icon: DocumentTextIcon },
+      { href: "/states",              label: "All States Explorer", icon: GlobeAmericasIcon },
+      { href: "/dashboard",           label: "50-State Dashboard",  icon: TableCellsIcon },
+      { href: "/california-calaim",   label: "California CalAIM",   icon: MapPinIcon },
     ],
   },
 
@@ -296,7 +296,7 @@ const SECTIONS: Section[] = [
 ];
 
 // ─── ROUTE → SECTION HELPER ───────────────────────────────────────────────────
-function getSectionForPath(path: string): string | null {
+function getSectionForPath(path: string, searchParams: URLSearchParams | null): string | null {
   if (path === "/policy"     || path.startsWith("/policy/"))     return "policy";
   if (path === "/economics"  || path.startsWith("/economics/"))  return "economics";
   if (path === "/technology" || path.startsWith("/technology/")) return "technology";
@@ -309,7 +309,10 @@ function getSectionForPath(path: string): string | null {
   if (path === "/research-lab/interoperability")    return "technology";
   if (path === "/research-lab/technology-ai")       return "technology";
   if (path === "/research-lab/population-equity")   return "equity";
-  if (path === "/research-lab/knowledge-workspace") return "operations";
+  if (path === "/research-lab/knowledge-workspace") {
+    if (searchParams?.get("tab") === "leaderboard") return "policy";
+    return "operations";
+  }
 
   if (path === "/academy" || path.startsWith("/academy/")) return "learn";
 
@@ -328,23 +331,32 @@ function getSectionForPath(path: string): string | null {
 // ─── COMPONENT ────────────────────────────────────────────────────────────────
 export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   const [expandedSections, setExpandedSections] = useState<string[]>(() => {
-    const s = getSectionForPath(pathname);
+    const s = getSectionForPath(pathname, searchParams);
     return s ? [s] : [];
   });
 
   const isActive  = (href: string) => pathname === href;
-  const isLabActive = (href: string) => pathname === href.split("?")[0];
+
+  const isLabActive = (href: string) => {
+    const [path, query] = href.split("?");
+    if (pathname !== path) return false;
+    if (!query) return true;
+    // Strict check: current search params must contain the key/value pairs in the href
+    const expectedParams = new URLSearchParams(query);
+    return Array.from(expectedParams.entries()).every(([k, v]) => searchParams.get(k) === v);
+  };
 
   useEffect(() => {
-    const section = getSectionForPath(pathname);
+    const section = getSectionForPath(pathname, searchParams);
     if (section) {
       setExpandedSections((prev) =>
         prev.includes(section) ? prev : [...prev, section]
       );
     }
-  }, [pathname]);
+  }, [pathname, searchParams]);
 
   const handleSectionClick = (sectionId: string) => {
     setExpandedSections((prev) =>
