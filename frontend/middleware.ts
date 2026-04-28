@@ -175,7 +175,7 @@ export async function middleware(request: NextRequest) {
     if (roleSecret) {
       const cached = request.cookies.get(ROLE_CACHE_COOKIE)?.value;
       if (cached) {
-        cachedRole = await readRoleCache(cached, user.id, roleSecret);
+        cachedRole = await readRoleCache(cached, user!.id, roleSecret);
       }
     }
 

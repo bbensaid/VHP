@@ -235,7 +235,7 @@ export default function VBCReadinessAssessment() {
     const domainResults = DOMAINS.map(domain => {
       const dimScores = domain.dimensions.map(d => scores[d.id] ?? null);
       const answered = dimScores.filter(s => s !== null);
-      const avg = answered.length > 0 ? answered.reduce((a, b) => a + (b as number), 0) / answered.length : 0;
+      const avg = answered.length > 0 ? answered.reduce<number>((a, b) => a + (b as number), 0) / answered.length : 0;
       const pct = (avg / 4) * 100;
       return { domain, avg, pct, answered: answered.length, total: domain.dimensions.length };
     });
