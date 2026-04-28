@@ -189,7 +189,7 @@ export async function middleware(request: NextRequest) {
       const { data: roles } = await supabase
         .from("user_roles")
         .select("role")
-        .eq("user_id", user.id);
+        .eq("user_id", user!.id);
 
       const bestRole = (roles ?? [])
         .map((r: { role: string }) => HIERARCHY.indexOf(r.role))
