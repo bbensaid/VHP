@@ -61,13 +61,15 @@ export default async function RootLayout({
           <CommandPalette />
           <TickerProvider>
             <SidebarProvider>
-              <div className="flex flex-col h-screen overflow-hidden">
+              <div className="flex flex-col h-screen">
                 <Header />
-                <AppShell tickerData={tickerData}>
-                  <main id="main-content">
-                    <ErrorBoundary section="Page">{children}</ErrorBoundary>
-                  </main>
-                </AppShell>
+                <div className="flex-1 min-h-0 overflow-y-auto">
+                  <AppShell tickerData={tickerData}>
+                    <main id="main-content">
+                      <ErrorBoundary section="Page">{children}</ErrorBoundary>
+                    </main>
+                  </AppShell>
+                </div>
               </div>
             </SidebarProvider>
           </TickerProvider>
