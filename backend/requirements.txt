@@ -34,7 +34,7 @@ supabase~=2.15.0
 
 # JWT verification for Supabase auth tokens
 PyJWT~=2.10.0
-cryptography~=44.0.2
+cryptography~=46.0.5
 
 # Re-ranking (cross-encoder, no GPU required)
 flashrank~=0.2.9
