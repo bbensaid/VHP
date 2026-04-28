@@ -37,7 +37,7 @@ PyJWT~=2.10.0
 cryptography~=44.0.2
 
 # Re-ranking (cross-encoder, no GPU required)
-flashrank~=0.2.9
+flashrank~=0.2.10
 
 # Error monitoring
 sentry-sdk[fastapi]~=2.0
