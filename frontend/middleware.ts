@@ -200,7 +200,7 @@ export async function middleware(request: NextRequest) {
       // Write cache cookie
       if (roleSecret) {
         const exp = Date.now() + ROLE_CACHE_TTL_MS;
-        const signed = await signRoleCache(user.id, roleName, exp, roleSecret);
+        const signed = await signRoleCache(user!.id, roleName, exp, roleSecret);
         response.cookies.set(ROLE_CACHE_COOKIE, signed, {
           httpOnly: true,
           sameSite: "lax",
