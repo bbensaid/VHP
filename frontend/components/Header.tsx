@@ -385,7 +385,7 @@ function ToolsPanel({ onClose }: { onClose: () => void }) {
             <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Research Lab</p>
             <Link href="/research-lab" onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group">
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">All 19 Lab Tools</span>
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">All 20 Lab Tools</span>
               <span className="text-xs text-slate-400 mt-0.5">Browse the full analytical tool directory</span>
             </Link>
           </div>
@@ -909,7 +909,7 @@ const Header = () => {
                   { label: "Investment Tracker", href: "/investment-tracker", sub: [] },
                   { label: "Trending Topics", href: "/trending-topics", sub: [] },
                   { label: "Multimedia", href: "/multimedia", sub: [] },
-                  { label: "All 19 Lab Tools", href: "/research-lab", sub: [] },
+                  { label: "All 20 Lab Tools", href: "/research-lab", sub: [] },
                 ],
               },
               {
