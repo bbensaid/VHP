@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { VT_HOSPITALS, totalAvail, totalBeds } from "@/lib/data/system-vitals-data";
 
 export interface TickerItem {
   label: string;
@@ -78,14 +79,35 @@ function parseCSV(content: string): TickerItem[] {
     .filter((item) => item.label && item.value);
 }
 
+// ─── Bed rows derived from the shared hospital data (always in sync) ──────────
+function bedRowsFromHospitalData(): TickerItem[] {
+  return VT_HOSPITALS.map((h) => {
+    const avail = totalAvail(h);
+    const total = totalBeds(h);
+    const pct = total > 0 ? avail / total : 0;
+    const status = pct < 0.10 ? "critical" : pct < 0.25 ? "warning" : "good";
+    return {
+      type: "bed" as const,
+      label: h.name,
+      value: `${avail} avail`,
+      trend: `of ${total} beds`,
+      status,
+    };
+  });
+}
+
 // ─── Main export ──────────────────────────────────────────────────────────────
 export async function getTickerData(): Promise<TickerItem[]> {
-  // 1. CSV spreadsheet (primary source — edit data/vitals.csv to update)
+  // 1. CSV spreadsheet — only the non-bed vital rows are read from here.
+  //    Bed rows are always generated from VT_HOSPITALS (single source of truth).
   try {
     const csvPath = path.join(process.cwd(), "data", "vitals.csv");
     const content = fs.readFileSync(csvPath, "utf-8");
     const items = parseCSV(content);
-    if (items.length > 0) return items;
+    if (items.length > 0) {
+      const vitals = items.filter((i) => i.type !== "bed");
+      return [...vitals, ...bedRowsFromHospitalData()];
+    }
   } catch {
     // CSV not present or unreadable — fall through
   }
