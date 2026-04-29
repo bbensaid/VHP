@@ -430,6 +430,18 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
               </span>
             </Link>
             <Link
+              href="/system-vitals"
+              onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
+            >
+              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
+                System Vitals
+              </span>
+              <span className="text-xs text-slate-400 mt-0.5">
+                Bed capacity &amp; interfacility transfer routing
+              </span>
+            </Link>
+            <Link
               href="/california-calaim"
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
@@ -664,7 +676,7 @@ const Header = () => {
     { type: "intelligence", label: "PILLARS", activeCheck: "/policy,/economics,/technology,/clinical,/equity,/operations,/research-lab" },
     { type: "learn", label: "ACADEMY", activeCheck: "/academy" },
     { type: "tools", label: "TOOLS", activeCheck: "/htr-simulator,/hti-dashboard,/trending-topics,/multimedia,/the-wire,/investment-tracker,/medicaid-eligibility-simulator,/transformation-friction-index,/impact-simulation" },
-    { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/california-calaim,/dashboard,/ahead-model,/vermont-medicaid" },
+    { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/california-calaim,/dashboard,/ahead-model,/vermont-medicaid,/system-vitals" },
     { type: "advise", label: "ADVISORY & SERVICES", activeCheck: "/advisory,/connect-hub,/connect,/community" },
   ];
 
@@ -926,6 +938,7 @@ const Header = () => {
                 label: "STATES & PROGRAMS",
                 children: [
                   { label: "Vermont Act 167", href: "/vermont-act-167", sub: [] },
+                  { label: "System Vitals", href: "/system-vitals", sub: [] },
                   { label: "California CalAIM", href: "/california-calaim", sub: [] },
                   { label: "All States Explorer", href: "/states", sub: [] },
                   { label: "50-State Dashboard", href: "/dashboard", sub: [] },
