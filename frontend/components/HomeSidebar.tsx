@@ -263,6 +263,7 @@ const SECTIONS: Section[] = [
       { href: "/vermont-act-167",     label: "Vermont Act 167 (2022)", icon: MapPinIcon },
       { href: "/vermont-act-68",      label: "Vermont Act 68 (2025)", icon: MapPinIcon },
       { href: "/vermont-rht-program", label: "Vermont RHT Program",  icon: DocumentTextIcon },
+      { href: "/system-vitals",       label: "System Vitals",        icon: TableCellsIcon },
       { href: "/ahead-model",         label: "AHEAD Model",         icon: DocumentTextIcon },
       { href: "/states",              label: "All States Explorer", icon: GlobeAmericasIcon },
       { href: "/dashboard",           label: "50-State Dashboard",  icon: TableCellsIcon },
@@ -316,7 +317,7 @@ function getSectionForPath(path: string, searchParams: URLSearchParams | null): 
 
   if (path === "/academy" || path.startsWith("/academy/")) return "learn";
 
-  const statesPrefixes = ["/vermont-medicaid", "/vermont-act-167", "/vermont-act-68", "/vermont-rht-program", "/california-calaim", "/states", "/dashboard", "/ahead-model"];
+  const statesPrefixes = ["/vermont-medicaid", "/vermont-act-167", "/vermont-act-68", "/vermont-rht-program", "/california-calaim", "/states", "/dashboard", "/ahead-model", "/system-vitals"];
   if (statesPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "states";
 
   const toolsPrefixes = ["/htr-simulator", "/medicaid-eligibility-simulator", "/hti-dashboard", "/the-wire", "/investment-tracker", "/transformation-friction-index", "/impact-simulation", "/multimedia", "/trending-topics"];
