@@ -4,7 +4,7 @@ import UpgradePrompt from "@/components/UpgradePrompt";
 
 export const metadata = {
   title: "HTR Research Lab | Health Transformation Review",
-  description: "21 interactive analytical tools organized by the six-pillar framework: Policy, Economics, Technology, Clinical, Equity, and Operations.",
+  description: "20 interactive analytical tools organized by the six-pillar framework: Policy, Economics, Technology, Clinical, Equity, and Operations.",
 };
 
 const PILLAR_LABS: {
@@ -77,25 +77,16 @@ export default async function ResearchLabPage() {
     <div className="min-h-screen bg-white">
 
       {/* Page header */}
-      <div className="bg-slate-950 text-white border-b border-slate-800">
-        <div className="max-w-5xl mx-auto px-6 py-4">
-          <span className="text-[10px] font-semibold uppercase tracking-widest text-amber-400 block mb-0.5">HTR Research Lab</span>
-          <h1 className="text-xl font-bold tracking-tight">21 Analytical Tools — Organized by Domain</h1>
-          <p className="text-sm text-slate-400 mt-0.5 max-w-2xl">
+      <div className="bg-slate-950 text-white">
+        <div className="max-w-5xl mx-auto px-6 py-20">
+          <span className="text-[10px] font-black uppercase tracking-widest text-amber-400 block mb-4">HTR Research Lab</span>
+          <h1 className="ty-h1-xl font-black tracking-tight mb-5 leading-tight">20 Analytical Tools — Organized by Domain</h1>
+          <p className="ty-hero text-slate-300 max-w-2xl leading-relaxed">
             Every tool is assigned to one of the six pillars. Access tools directly from their pillar section in the sidebar, or browse the full directory below.
           </p>
         </div>
       </div>
 
-      {/* Upgrade prompts */}
-      {(!isSubscriber || (isSubscriber && !isAdvisory)) && (
-        <div className="max-w-5xl mx-auto px-6 pt-10">
-          {!isSubscriber && <UpgradePrompt required="subscriber" feature="Research Lab" />}
-          {isSubscriber && !isAdvisory && (
-            <UpgradePrompt required="advisory" feature="Research Lab Expert Support" compact />
-          )}
-        </div>
-      )}
 
       {/* Tools by pillar */}
       <div className="max-w-5xl mx-auto px-6 py-16 space-y-10">
