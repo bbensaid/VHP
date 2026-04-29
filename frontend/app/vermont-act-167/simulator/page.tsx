@@ -369,16 +369,25 @@ function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }) {
     const speedFactor = timelineAggressiveness / 100;
 
     const baseEquityRisk = hospital.noCarPct * 0.8 + (hospital.avgTravelToNextHospitalMin / 62) * 40;
-    const mitigatedEquityRisk = baseEquityRisk * (1 - transportFactor * 0.65 - teleFactor * 0.2);
+    // Aggressive speed increases equity risk (rushed transitions stress vulnerable populations)
+    const speedEquityPenalty = (speedFactor - 0.5) * 0.15; // +7.5% risk at max speed, -7.5% at min
+    const mitigatedEquityRisk = baseEquityRisk * (1 - transportFactor * 0.65 - teleFactor * 0.2 + speedEquityPenalty);
 
-    const financialImprovement = {
+    const baseFinancialImprovement = {
       reh: 0.58, cacc: 0.50, "cacc-mh": 0.56, close: 0.75,
     }[restructuringOption];
+
+    // Faster implementation captures savings sooner (+8% at max speed) but slower allows
+    // better community preparation (penalty at very aggressive speeds due to transition costs)
+    const speedFinancialBonus = speedFactor * 0.08 - (speedFactor > 0.7 ? (speedFactor - 0.7) * 0.1 : 0);
+    const financialImprovement = Math.min(0.95, baseFinancialImprovement + speedFinancialBonus);
 
     const newLoss = hospital.annualLossM * (1 - financialImprovement);
     const transfersPerYear = hospital.annualAdmissions;
     const avgTransferMin = hospital.avgTravelToNextHospitalMin;
-    const transferRisk = (avgTransferMin / 60) * (1 - transportFactor * 0.7) * 100;
+    // Aggressive speed increases transfer risk (less preparation time for care transitions)
+    const speedTransferPenalty = (speedFactor - 0.5) * 0.12;
+    const transferRisk = Math.min(100, (avgTransferMin / 60) * (1 - transportFactor * 0.7) * 100 * (1 + speedTransferPenalty));
     const implementationMonths = Math.round(18 * (1 - speedFactor * 0.4));
 
     const psychiatricBeds = restructuringOption === "cacc-mh" ? Math.floor(hospital.beds * 0.72) : restructuringOption === "reh" ? Math.floor(hospital.beds * 0.15) : 0;
@@ -501,7 +510,8 @@ function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }) {
           <InfoCard variant="default">
             <div className="text-[10px] font-black uppercase tracking-widest text-violet-700 mb-2">Policy</div>
             <div className="space-y-2">
-              <HBar value={7} max={10} color="bg-violet-500" label="Regulatory Complexity" sublabel="7/10" />
+              {/* Faster timelines increase regulatory complexity (more approvals needed in less time) */}
+              <HBar value={Math.round(5 + timelineAggressiveness * 0.05)} max={10} color="bg-violet-500" label="Regulatory Complexity" sublabel={`${Math.round(5 + timelineAggressiveness * 0.05)}/10`} />
               <div className="text-[10px] text-slate-500 leading-relaxed">
                 <strong>Key actions:</strong> CMS REH designation, GMCB budget renegotiation, CON amendment, transfer agreement with {hospital.avgTravelToNextHospitalMin}min regional center
               </div>
@@ -697,8 +707,8 @@ function FinancialModeling({ selectedRecs }: { selectedRecs: Set<string> }) {
             <div className="space-y-3">
               {HOSPITALS.sort((a, b) => a.operatingMarginPct - b.operatingMarginPct).map((h) => (
                 <div key={h.id} className="flex items-center gap-3">
-                  <div className="w-32 text-xs font-bold text-slate-700 text-right">{h.shortName}</div>
-                  <div className="flex-1">
+                  <div className="w-12 text-xs font-bold text-slate-700 text-right shrink-0">{h.shortName}</div>
+                  <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
                       <div className="flex-1 h-3 bg-slate-100 rounded-full overflow-hidden relative">
                         {h.operatingMarginPct < 0 ? (
@@ -714,12 +724,12 @@ function FinancialModeling({ selectedRecs }: { selectedRecs: Set<string> }) {
                         )}
                         <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-slate-400" />
                       </div>
-                      <span className={`text-xs font-bold w-12 ${h.operatingMarginPct < 0 ? "text-red-600" : "text-emerald-600"}`}>
+                      <span className={`text-xs font-bold w-12 shrink-0 ${h.operatingMarginPct < 0 ? "text-red-600" : "text-emerald-600"}`}>
                         {h.operatingMarginPct.toFixed(1)}%
                       </span>
                     </div>
                   </div>
-                  <UrgencyBadge urgency={h.urgency} />
+                  <div className="w-36 shrink-0"><UrgencyBadge urgency={h.urgency} /></div>
                 </div>
               ))}
             </div>
