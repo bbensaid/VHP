@@ -435,10 +435,10 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
             >
               <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
-                System Vitals
+                Bed Capacity &amp; Transfer
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
-                Bed capacity &amp; interfacility transfer routing
+                Real-time bed availability &amp; interfacility routing
               </span>
             </Link>
             <Link
@@ -938,7 +938,7 @@ const Header = () => {
                 label: "STATES & PROGRAMS",
                 children: [
                   { label: "Vermont Act 167", href: "/vermont-act-167", sub: [] },
-                  { label: "System Vitals", href: "/system-vitals", sub: [] },
+                  { label: "Bed Capacity & Transfer", href: "/system-vitals", sub: [] },
                   { label: "California CalAIM", href: "/california-calaim", sub: [] },
                   { label: "All States Explorer", href: "/states", sub: [] },
                   { label: "50-State Dashboard", href: "/dashboard", sub: [] },
