@@ -7,6 +7,7 @@ import {
   VT_HOSPITALS as HOSPITALS,
   REPAT_PATIENTS,
   totalAvail,
+  totalBeds,
   type VTHospital as Hospital,
   type BedKey,
 } from "@/lib/data/system-vitals-data";
@@ -70,11 +71,13 @@ function bedColor(avail: number, total: number) {
   return "#E24B4A";
 }
 
-// Returns chip bg/text classes based on availability count
-function chipStyle(avail: number): { bg: string; text: string; border: string } {
-  if (avail > 15) return { bg: "bg-[#EAF3DE]", text: "text-[#2A5A0A]", border: "border-[#B8DFA0]" };
-  if (avail > 5)  return { bg: "bg-[#FEF3C7]", text: "text-[#854F0B]", border: "border-[#FAC775]" };
-  return              { bg: "bg-[#FCEBEB]", text: "text-[#A32D2D]", border: "border-[#F5B5B5]" };
+// Returns chip bg/text classes — uses same percentage thresholds as lib/ticker.ts
+// so page chips and global sticky strip always match in color
+function chipStyle(avail: number, total: number): { bg: string; text: string; border: string } {
+  const pct = total > 0 ? avail / total : 0;
+  if (pct >= 0.25) return { bg: "bg-[#EAF3DE]", text: "text-[#2A5A0A]", border: "border-[#B8DFA0]" };
+  if (pct >= 0.10) return { bg: "bg-[#FEF3C7]", text: "text-[#854F0B]", border: "border-[#FAC775]" };
+  return                  { bg: "bg-[#FCEBEB]", text: "text-[#A32D2D]", border: "border-[#F5B5B5]" };
 }
 
 const STATUS_STYLES = {
@@ -651,10 +654,10 @@ function RepatriationQueue({ algo, onAlgoChange }: { algo: RepatAlgoId; onAlgoCh
 // ─── TICKER BAR (Fix #1) ──────────────────────────────────────────────────────
 
 function TickerBar() {
-  // Fix #1: all 14 hospitals, colored background chips
   const chips = HOSPITALS.map((h) => {
     const avail = totalAvail(h);
-    const style = chipStyle(avail);
+    const total = totalBeds(h);
+    const style = chipStyle(avail, total);
     return { short: h.short, avail, style };
   });
   return (
@@ -699,8 +702,8 @@ export default function SystemVitalsPage() {
               Live Capacity · Synthetic Data
             </span>
           </div>
-          <h1 className="text-3xl font-black text-slate-900 dark:text-slate-100 mb-3">System Vitals</h1>
-          <p className="text-slate-600 dark:text-slate-400 max-w-2xl text-sm font-medium leading-relaxed">
+          <h1 className="text-3xl font-black text-slate-900 dark:text-slate-100 mb-3">Bed Capacity &amp; Transfer</h1>
+          <p className="text-slate-600 dark:text-slate-400 text-sm font-medium leading-relaxed">
             Bed capacity, interfacility transfer routing, and repatriation queue for Vermont&apos;s 14-hospital network.
             Identify capacity pressure, find the best receiving hospital for a transfer, and manage patients
             ready to return to their home facility.
