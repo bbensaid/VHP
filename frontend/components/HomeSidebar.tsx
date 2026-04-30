@@ -263,7 +263,7 @@ const SECTIONS: Section[] = [
       { href: "/vermont-act-167",     label: "Vermont Act 167 (2022)", icon: MapPinIcon },
       { href: "/vermont-act-68",      label: "Vermont Act 68 (2025)", icon: MapPinIcon },
       { href: "/vermont-rht-program", label: "Vermont RHT Program",  icon: DocumentTextIcon },
-      { href: "/system-vitals",       label: "System Vitals",        icon: TableCellsIcon },
+      { href: "/system-vitals",       label: "Bed Capacity & Transfer", icon: TableCellsIcon },
       { href: "/ahead-model",         label: "AHEAD Model",         icon: DocumentTextIcon },
       { href: "/states",              label: "All States Explorer", icon: GlobeAmericasIcon },
       { href: "/dashboard",           label: "50-State Dashboard",  icon: TableCellsIcon },
