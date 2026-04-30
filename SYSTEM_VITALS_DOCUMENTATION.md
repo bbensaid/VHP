@@ -1,9 +1,9 @@
-# System Vitals — Complete Reference Documentation
+# System Vitals — Complete Technical Reference
 
-**Vermont Health Platform · HTR**  
-**Feature:** Bed Capacity & Interfacility Transfer Dashboard  
-**Route:** `/system-vitals`  
-**Status:** Live · Synthetic Data (demo mode)  
+**Vermont Health Platform · HTR**
+**Feature:** Bed Capacity, Transfer Routing & Repatriation Dashboard
+**Route:** `/system-vitals`
+**Status:** Live · Synthetic Data (demo mode)
 **Last Updated:** April 29, 2026
 
 ---
@@ -15,13 +15,14 @@
 3. [Architecture Overview](#3-architecture-overview)
 4. [Data Layer](#4-data-layer)
 5. [Component Reference](#5-component-reference)
-6. [Scoring & Algorithms](#6-scoring--algorithms)
-7. [Navigation & Routing Integration](#7-navigation--routing-integration)
-8. [Data Consistency Architecture](#8-data-consistency-architecture)
-9. [How to Update Bed Data](#9-how-to-update-bed-data)
-10. [Relationship to the Act 167 Simulator](#10-relationship-to-the-act-167-simulator)
-11. [Roadmap: From Synthetic to Live Data](#11-roadmap-from-synthetic-to-live-data)
-12. [File Map](#12-file-map)
+6. [Algorithm System](#6-algorithm-system)
+7. [Drive-Time Matrix](#7-drive-time-matrix)
+8. [Navigation & Routing Integration](#8-navigation--routing-integration)
+9. [Data Consistency Architecture](#9-data-consistency-architecture)
+10. [How to Update Data](#10-how-to-update-data)
+11. [Relationship to the Act 167 Simulator](#11-relationship-to-the-act-167-simulator)
+12. [Roadmap: From Synthetic to Live Data](#12-roadmap-from-synthetic-to-live-data)
+13. [File Map](#13-file-map)
 
 ---
 
@@ -30,10 +31,10 @@
 System Vitals is an operational situational-awareness tool for Vermont's 14-hospital network. It gives transfer coordinators, hospital administrators, and policy analysts a real-time (or near-real-time) view of three critical questions:
 
 1. **Where is there capacity?** — Which hospitals have open beds, by unit type?
-2. **Where should I send a patient?** — Given a sending hospital, acuity level, and specialty need, which receiving hospital is the best match right now?
-3. **Who can go home?** — Which patients at tertiary centers are past their target length of stay and have a bed confirmed at their home hospital?
+2. **Where should I send a patient?** — Given a sending hospital, acuity level, and specialty need, which receiving hospital is the best match right now — and by which ranking logic?
+3. **Who can go home?** — Which patients at tertiary centers are past their target length of stay and have a bed confirmed at their home hospital — and in what order should they be prioritized?
 
-The feature covers Vermont's full continuum of hospital types: two tertiary centers (UVMMC, Dartmouth-Hitchcock), three regional hospitals (CVMC, SVMC, RRMC), and nine critical access hospitals (Northeastern VT Regional, North Country, Porter Medical, Springfield, Gifford, Mt. Ascutney, Brattleboro Memorial, Grace Cottage, and Copley).
+The feature covers Vermont's full continuum: two tertiary centers (UVMMC, Dartmouth-Hitchcock), three regional hospitals (CVMC, SVMC, RRMC), and nine critical access hospitals.
 
 ---
 
@@ -41,194 +42,202 @@ The feature covers Vermont's full continuum of hospital types: two tertiary cent
 
 ### Getting There
 
-Navigate to **States & Programs → System Vitals** in the left sidebar, or via the **STATES & PROGRAMS** menu in the top navigation bar.
-
-The breadcrumb path reads: **Home / System Vitals**
+Navigate to **States & Programs → System Vitals** in the left sidebar, or via the **STATES & PROGRAMS** menu in the top navigation bar. Breadcrumb: **Home / System Vitals**.
 
 ---
 
-### The Ticker Bar (top of page)
+### The Ticker Bar (top of the System Vitals panel)
 
-The first thing you see inside the System Vitals panel is a row of colored chips — one per hospital (first 8 shown):
+A row of colored chips — one per hospital (first 8 shown):
 
 ```
 ● UVMMC: 17 avail   ● DHMC: 30 avail   ● CVMC: 32 avail  ...
 ```
 
-**Color coding:**
-| Color | Meaning | Threshold |
-|-------|---------|-----------|
-| Green | Healthy availability | > 15 beds available (total across all units) |
-| Amber | Moderate pressure | 6–15 beds |
-| Red | Critically constrained | ≤ 5 beds |
+Color is based on **total available beds across all unit types**:
 
-These numbers are the **sum of all available beds across all unit types** (ICU + Med-surg + Behavioral + SNF) for that hospital. They are computed from the same data source as the capacity grid — they will always match.
+| Color | Threshold | Meaning |
+|-------|-----------|---------|
+| Green | > 15 avail | Healthy |
+| Amber | 6–15 avail | Moderate pressure |
+| Red | ≤ 5 avail | Critically constrained |
+
+These numbers are computed from the same data source as the capacity grid — they always match.
 
 ---
 
 ### Tab 1: Capacity Grid
 
-The capacity grid shows a card for every hospital in the network.
+Shows a card for every hospital. No algorithm selector on this tab — it is a pure display of current census data.
 
-**Each card contains:**
-- Hospital name, type (Tertiary / Regional / Critical), and county
-- One bar per unit type showing: `available / total` and a color-coded fill
-- An overall status badge (Capacity available / Capacity limited / Near capacity)
+**Each card shows:**
+- Hospital name, type (Tertiary / Regional / Critical), county
+- One bar per unit type: `available / total` with color-coded fill
+- An overall status badge
 
-**Unit types tracked:**
-| Code | Full name | Notes |
-|------|-----------|-------|
-| ICU | Intensive Care Unit | Critical care beds |
-| Med-surg | Medical-Surgical | General acute care |
-| Behav. | Behavioral Health | Psychiatric & substance use |
-| SNF/step-down | Skilled Nursing / Step-down | Post-acute, sub-acute |
+**Unit types:**
 
-Not every hospital has every unit type. If a hospital has 0 total beds of a type (e.g., Grace Cottage has no ICU), that row is omitted from the card.
+| Code | Full name |
+|------|-----------|
+| ICU | Intensive Care Unit |
+| Med-surg | Medical-Surgical |
+| Behav. | Behavioral Health |
+| SNF/step-down | Skilled Nursing / Step-down |
 
-**Bar color rules:**
-| Color | Available % of total | Meaning |
-|-------|---------------------|---------|
+If a hospital has 0 total beds of a type, that row is omitted from the card.
+
+**Bar color thresholds:**
+
+| Color | Available % | Meaning |
+|-------|-------------|---------|
 | Green `#639922` | > 20% | Available |
 | Amber `#BA7517` | 5–20% | Limited |
 | Red `#E24B4A` | < 5% | Critical |
 | Gray `#B4B2A9` | 0 total beds | Unit not present |
 
-**Overall status badge** reflects the *worst* unit, not the average. If ICU is at 3% but med-surg is fine, the badge shows "Near capacity."
+**Overall status badge** reflects the *worst* unit (most conservative signal).
 
-**Filtering & sorting:**
-- Filter by hospital type: All / Critical access only / Regional only / Tertiary only
-- Sort by: Name (A–Z) / Most available (descending total avail) / Highest stress (ascending total avail)
+**Filters & sort:**
+- Filter: All / Critical access only / Regional only / Tertiary only
+- Sort: Name (A–Z) / Most available / Highest stress
 
-**Selecting a hospital:**
-Click any card to expand a **detail pane** below the grid showing:
-- Total tracked beds (all unit types combined)
-- Available now (same as ticker chip)
-- Occupancy % (occupied / total)
-- Pending discharge estimate (30% of available, synthetic)
-- Specialties on staff
-- Transfer center status
+**Clicking a card** expands a detail pane showing total beds, available now, occupancy %, pending discharge estimate (synthetic: 30% of available), specialties on staff, and transfer center status.
 
-Click the same card again to collapse the detail pane.
-
-**Surge banner:**
-When UVMMC ICU has ≤ 2 beds available, a yellow warning banner appears at the top of the capacity grid: *"⚠ Surge alert: UVMMC ICU at 97% capacity. Transfers may be delayed."*
+**Surge banner** appears when UVMMC ICU has ≤ 2 beds available.
 
 ---
 
 ### Tab 2: Transfer Routing
 
-Use this tab when you need to transfer a patient and want to know the best receiving hospital.
+Use this tab to find the best receiving hospital for a specific patient transfer.
 
-**Inputs:**
-| Field | Options | What it does |
-|-------|---------|-------------|
-| Sending hospital | Any of the 14 hospitals | Excluded from results |
-| Acuity level | ICU / Med-surg / Behavioral / SNF | Filters to hospitals with ≥1 bed of that type; weights bed availability score |
-| Specialty needed | Any / Cardiac / Neurology-stroke / Orthopedics / Psychiatry / Pediatrics / Oncology | Affects specialty match score |
-| Transport available | Ground / Air / Either | Recorded but not yet used in scoring (roadmap item) |
+#### The Algorithm Selector
 
-Press **Find best match ↗** to run the scoring algorithm.
+At the top of the Transfer Routing tab is the **Ranking Algorithm** selector — a dropdown with a description line that explains exactly what each algorithm prioritizes:
 
-**Results:**
-Up to 4 hospitals are returned, ranked #1–#4. Each result shows:
+| Algorithm | What it prioritizes | Best for |
+|-----------|--------------------|---------:|
+| **Best overall match** | Balanced: bed availability + specialty + hospital tier + transfer center | General use, uncertain situation |
+| **Specialty first** | Specialty match weighted ~2× above bed availability | Complex/subspecialty cases |
+| **Closest available bed** | Drive-time proximity to the sending hospital | Time-sensitive, stable transfers |
+| **Most available capacity** | Highest open-bed percentage in the requested unit | System-wide surge, need a reliable bed fast |
+| **Conserve tertiary capacity** | Prefers regional/critical over tertiary; penalizes tertiary placement | Step-down patients who don't need tertiary resources |
+
+The selected algorithm name appears as an italic label ("Ranked by: Specialty first") next to the results header, so users always know which logic produced the list they are reading.
+
+#### Transfer Inputs
+
+| Field | Options |
+|-------|---------|
+| Sending hospital | Any of the 14 hospitals (excluded from results) |
+| Acuity level | ICU / Med-surg / Behavioral / SNF |
+| Specialty needed | Any / Cardiac / Neurology-stroke / Orthopedics / Psychiatry / Pediatrics / Oncology |
+| Transport available | Ground / Air / Either (displayed; not yet factored into scoring) |
+
+Press **Find best match ↗** to run the selected algorithm.
+
+#### Results
+
+Up to 4 hospitals returned, ranked #1–#4. Each result shows:
 - Rank badge (green=1st, blue=2nd, gray=3rd/4th)
 - Hospital name and county
-- Match tags (blue highlight = positive factor, gray = neutral/negative)
-- Match score (0–100)
-
-**Match tags shown:**
-- `N [acuity] beds` — number of beds of the requested type available
-- Specialty name — whether the hospital has that specialty on staff
-- `transfer center` or `direct admit` — whether an official transfer center is active
-- Hospital type (tertiary / regional / critical)
-
-If no hospitals have any beds of the requested acuity, a fallback message suggests out-of-state transfer or air transport to a tertiary center.
+- **Match tags** — blue = positive factor, gray = neutral/negative:
+  - `N [acuity] beds` — beds available of requested type
+  - Specialty name or `no [specialty]`
+  - `transfer center` or `direct admit`
+  - Hospital type (tertiary / regional / critical)
+  - `~N min drive` — estimated drive time from sending hospital (blue if < 60 min)
+- **Match score** (0–100, scale varies by algorithm)
 
 ---
 
 ### Tab 3: Repatriation Queue
 
-This tab shows patients currently at a tertiary center (UVMMC or Dartmouth-Hitchcock) who are past their target length of stay and clinically ready to return to their home hospital.
+Shows patients currently at a tertiary center who are past their clinical target length of stay and ready to return to their home hospital.
 
-**Filter:**
-- All tertiary centers
-- UVMMC only
-- Dartmouth-Hitchcock only
+#### The Algorithm Selector
 
-**Sort:** Automatic — sorted by days over target (most over-target at the top).
+The Repatriation Queue has its own dedicated algorithm selector — separate from the Transfer Routing selector because the ranking context is different:
 
-**Each patient row shows:**
-- Patient initials avatar
+| Algorithm | What it prioritizes | Best for |
+|-----------|--------------------|---------:|
+| **Most overdue first** | Days past clinical target LOS | Clearing the most urgent LOS backlog |
+| **Bed-confirmed first** | Patients whose home hospital already has a bed available | Completing transfers that are logistically ready now |
+| **Shortest transfer distance** | Patients whose home hospital is geographically closest | Minimizing transport burden |
+| **Combined priority score** | Weighs days overdue + bed availability + proximity together | Balanced queue management |
+
+Each patient row shows:
 - Name, age, diagnosis
-- Current location → home hospital, acuity type, specialty
-- LOS: actual days vs. target days, and how many days over
+- Current location → home hospital, acuity, specialty
+- LOS vs. target, days over target
+- Estimated drive time to home hospital
 - Current blocker (reason for delay)
-- Home hospital bed availability in the required unit type (green = bed available, red = no bed)
+- Home hospital bed availability in the required unit (green = available, red = none)
 
-**Initiating a transfer:**
-If a bed is available at the home hospital, the "Initiate transfer" button is active (blue). Clicking it shows a two-step confirm dialog. Click **Confirm** to trigger the coordination workflow (currently shows a confirmation alert; production wire-up TBD).
-
-If no bed is available, the button reads "No bed available" and is disabled.
+**"Initiate transfer"** button is active (blue) only when a bed is available. Clicking opens a two-step confirm dialog.
 
 ---
 
 ### The Global Sticky Ticker Strip
 
-At the very top of every page in the HTR platform (the thin strip just below the main nav bar), hospital bed availability chips scroll alongside system vitals like ICU occupancy and enrollment rates. These bed numbers come from the **same data source** as the System Vitals capacity grid — they are always identical.
+The thin strip at the top of every HTR page shows bed availability chips for Vermont hospitals. These numbers come from the **same data source** as the System Vitals capacity grid — they are always identical.
 
 ---
 
 ## 3. Architecture Overview
 
 ```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                        HTR Platform (Next.js 14)                        │
-│                                                                         │
-│  app/layout.tsx  ──── getTickerData() ──────────────────────────────┐  │
-│       │                    │                                         │  │
-│       │             lib/ticker.ts                                    │  │
-│       │                    │                                         │  │
-│       │         ┌──────────┴──────────────────┐                     │  │
-│       │         │  data/vitals.csv             │                     │  │
-│       │         │  (vital rows only:           │                     │  │
-│       │         │   health index, margins,     │                     │  │
-│       │         │   enrollment, etc.)          │                     │  │
-│       │         └──────────────────────────────┘                     │  │
-│       │                    │                                         │  │
-│       │         ┌──────────┴──────────────────┐                     │  │
-│       │         │  lib/data/system-vitals-     │ ◄── SINGLE SOURCE  │  │
-│       │         │  data.ts                     │     OF TRUTH       │  │
-│       │         │  (VT_HOSPITALS, bed counts)  │                     │  │
-│       │         └──────────────────────────────┘                     │  │
-│       │                    │                                         │  │
-│       ▼                    ▼                                         │  │
-│  AppShell ◄── tickerData ──┘                                        │  │
-│       │                                                              │  │
-│       ├── Header.tsx (top nav, mega-menus)                           │  │
-│       ├── HomeSidebar.tsx (left nav, States & Programs)              │  │
-│       ├── TickerStrip (sticky bar, shows bed chips + vital stats)    │  │
-│       └── app/system-vitals/page.tsx                                 │  │
-│               │                                                      │  │
-│               ├── imports VT_HOSPITALS from system-vitals-data.ts    │  │
-│               │                                                      │  │
-│               ├── TickerBar (page-level chips, same data)            │  │
-│               ├── CapacityGrid (hospital cards with bed bars)        │  │
-│               ├── TransferRouting (scoring engine)                   │  │
-│               └── RepatriationQueue (LOS-over-target patients)       │  │
-└─────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────┐
+│                       HTR Platform (Next.js 14)                      │
+│                                                                      │
+│  app/layout.tsx ──── getTickerData() ──────────────────────────┐    │
+│                           │                                    │    │
+│                    lib/ticker.ts                               │    │
+│                           │                                    │    │
+│              ┌────────────┴──────────────────┐                │    │
+│              │  data/vitals.csv               │                │    │
+│              │  (vital rows: health index,    │                │    │
+│              │   margins, enrollment, etc.)   │                │    │
+│              └───────────────────────────────┘                │    │
+│                           │                                    │    │
+│              ┌────────────┴──────────────────┐                │    │
+│              │  lib/data/system-vitals-       │ ◄─ SINGLE     │    │
+│              │  data.ts                       │    SOURCE     │    │
+│              │  (VT_HOSPITALS, bed counts)    │    OF TRUTH   │    │
+│              └───────────────────────────────┘                │    │
+│                           │                                    │    │
+│                    AppShell ◄── tickerData ────────────────────┘    │
+│                           │                                         │
+│           ┌───────────────┼──────────────────┐                     │
+│           │               │                  │                     │
+│    Header.tsx      HomeSidebar.tsx      TickerStrip                 │
+│    (mega-menu)     (left nav)           (sticky bar)                │
+│                                                                     │
+│           app/system-vitals/page.tsx                                │
+│                    │                                                │
+│           ┌────────┼────────────────────────┐                      │
+│           │        │                        │                      │
+│     TickerBar  CapacityGrid         ┌───────┴────────┐            │
+│    (8 chips)   (14 hosp cards)      │                │            │
+│                                TransferRouting  RepatQueue        │
+│                                     │                │            │
+│                              AlgoSelector      AlgoSelector       │
+│                              (5 algorithms)    (4 algorithms)     │
+│                                     │                │            │
+│                              scoreTransfer()  scoreRepat()        │
+│                              DRIVE_TIME matrix  DRIVE_TIME matrix │
+└──────────────────────────────────────────────────────────────────┘
 ```
 
-**Key principle:** There is exactly one copy of hospital bed data in the codebase. Everything that displays a bed number reads from `lib/data/system-vitals-data.ts`. The CSV file (`data/vitals.csv`) supplies only the non-bed vital statistics rows.
+**Key principle:** One copy of hospital bed data. Everything reads from `lib/data/system-vitals-data.ts`. Algorithms run entirely client-side — no API calls.
 
 ---
 
 ## 4. Data Layer
 
-### Primary Data File
+### Primary File: `frontend/lib/data/system-vitals-data.ts`
 
-**`frontend/lib/data/system-vitals-data.ts`**
-
-This is the only file you need to edit to change bed availability numbers.
+This is the **only** file to edit when changing bed availability numbers.
 
 #### Types
 
@@ -236,8 +245,8 @@ This is the only file you need to edit to change bed availability numbers.
 type BedKey = "icu" | "medsurg" | "behavioral" | "snf";
 
 interface BedCounts {
-  total: number;   // licensed/tracked beds in this unit
-  avail: number;   // currently available (unoccupied and ready)
+  total: number;  // licensed/tracked beds in this unit
+  avail: number;  // currently available (unoccupied and ready)
 }
 
 interface VTHospital {
@@ -253,362 +262,379 @@ interface VTHospital {
 
 interface RepatPatient {
   id: string;
-  name: string;            // anonymized, e.g. "Patient A"
+  name: string;       // anonymized, e.g. "Patient A"
   age: number;
-  dx: string;              // diagnosis
-  at: string;              // current facility (short name: "UVMMC" or "DHMC")
-  home: string;            // home hospital short name
-  los: number;             // actual length of stay (days)
-  target_los: number;      // clinical target LOS (days)
-  days_over: number;       // los - target_los
-  acuity: BedKey;          // what bed type is needed at home hospital
-  specialty: string;       // specialty for continuity of care
-  blocker: string;         // current reason for delay
+  dx: string;         // diagnosis
+  at: string;         // current facility short name: "UVMMC" or "DHMC"
+  home: string;       // home hospital short name (must match VTHospital.short or substring of name)
+  los: number;        // actual length of stay (days)
+  target_los: number; // clinical target LOS
+  days_over: number;  // los - target_los
+  acuity: BedKey;     // bed type needed at home hospital
+  specialty: string;
+  blocker: string;    // current coordination blocker
 }
 ```
 
-#### Exported constants and functions
+#### Exports
 
 | Export | Type | Description |
 |--------|------|-------------|
 | `VT_HOSPITALS` | `VTHospital[]` | All 14 Vermont hospitals with bed data |
 | `REPAT_PATIENTS` | `RepatPatient[]` | 6 synthetic repatriation-ready patients |
-| `totalAvail(h)` | `(VTHospital) → number` | Sum of avail across all bed types |
-| `totalBeds(h)` | `(VTHospital) → number` | Sum of total across all bed types |
+| `totalAvail(h)` | `(VTHospital) → number` | Sum of `avail` across all bed types |
+| `totalBeds(h)` | `(VTHospital) → number` | Sum of `total` across all bed types |
 
 ---
 
-### Secondary Data File
+### Secondary File: `frontend/data/vitals.csv`
 
-**`frontend/data/vitals.csv`**
+Two row types:
 
-Contains two categories of rows:
-
-**`type: vital`** rows — manually maintained statistics that appear in the global ticker strip (VT Health Index, Hospital Margins, Workforce Gap, ICU Occupancy, etc.). Edit this file to update those numbers.
-
-**`type: bed`** rows — **no longer the source of truth**. These rows exist in the CSV only as documentation. The `lib/ticker.ts` reader strips out all `type: bed` rows from the CSV and replaces them at runtime with rows computed from `VT_HOSPITALS`. Do not edit bed rows in the CSV — they will be ignored.
+- **`type: vital`** — manually maintained stats for the global ticker (health index, margins, workforce gap, etc.). Edit freely.
+- **`type: bed`** — **ignored at runtime**. The ticker engine strips these out and replaces them with rows computed from `VT_HOSPITALS`. Do not edit bed rows in the CSV.
 
 ---
 
-### Tertiary Data Reference
+### Tertiary Reference: `frontend/app/vermont-act-167/simulator/data.ts`
 
-**`frontend/app/vermont-act-167/simulator/data.ts`**
-
-This file has a *different* `Hospital` interface with `beds: number` (total licensed beds, e.g. 562 for UVMMC). This is the Act 167 simulator's financial/policy modeling dataset. It is intentionally separate:
-
-- The simulator uses licensed bed counts for financial stress-testing (revenue, margin, cost-per-bed calculations)
-- System Vitals uses tracked operational bed availability (available vs. occupied, by unit type)
-
-**Do not merge these two datasets.** They serve different purposes and will diverge further as the platform evolves.
+A separate `Hospital` interface with `beds: number` (total licensed beds, e.g. 562 for UVMMC) used by the Act 167 financial/policy simulator. **Do not merge with System Vitals data** — they serve different purposes.
 
 ---
 
 ## 5. Component Reference
 
 ### `SystemVitalsPage` (default export)
-**File:** `app/system-vitals/page.tsx`  
-**Directive:** `"use client"` — fully client-side rendered  
-**State:** `activeTab: "capacity" | "transfer" | "repat"`
 
-The root page component. Renders:
-1. The hero header card (title, subtitle, back link to Act 167, Live Capacity badge)
-2. The `TickerBar`
-3. Three tab buttons
-4. The active tab panel
+**State:**
+| State variable | Type | Default | Purpose |
+|----------------|------|---------|---------|
+| `activeTab` | `"capacity" \| "transfer" \| "repat"` | `"capacity"` | Active tab |
+| `transferAlgo` | `TransferAlgoId` | `"balanced"` | Shared transfer ranking algorithm |
+| `repatAlgo` | `RepatAlgoId` | `"days_over"` | Shared repatriation sort algorithm |
+
+The algorithm state lives at the page level and is passed down as props. This means algorithm selection persists when switching tabs and returning.
 
 ---
 
-### `TickerBar`
-**File:** `app/system-vitals/page.tsx`  
-**Props:** none  
-**Data:** `HOSPITALS.slice(0, 8)` — first 8 hospitals from `VT_HOSPITALS`
+### `AlgoSelector<T>`
 
-Renders a row of colored chips, one per hospital, showing `short: N avail`. Color is based on total available beds (not percentage):
+Generic algorithm selector widget, used by both Transfer Routing and Repatriation Queue.
 
+**Props:**
+```typescript
+{
+  algos: AlgoDef<T>[];      // list of algorithm definitions
+  value: T;                 // currently selected algorithm id
+  onChange: (v: T) => void; // callback when user changes selection
+}
 ```
-> 15 total avail → green
-6–15             → amber
-≤ 5              → red
-```
 
-This is a **different threshold** from the per-unit bar colors, which use percentage. The ticker chip is an at-a-glance summary; the bar is a detailed diagnostic.
-
----
-
-### `CapacityGrid`
-**File:** `app/system-vitals/page.tsx`  
-**State:** `filter`, `sort`, `selected` (hospital id or null)
-
-Renders filter/sort controls, legend, surge banner (conditional), a responsive grid of `HospCard` components, and a `DetailPane` when a hospital is selected.
-
----
-
-### `HospCard`
-**File:** `app/system-vitals/page.tsx`  
-**Props:** `h: Hospital`, `selected: boolean`, `onClick: () => void`
-
-Renders a single hospital tile. Blue border when selected. Calls `overallStatus(h)` to determine badge color.
-
----
-
-### `DetailPane`
-**File:** `app/system-vitals/page.tsx`  
-**Props:** `h: Hospital`
-
-Expanded detail shown below the grid when a card is selected. Four metric cards:
-- Total beds (sum of all `h.beds[k].total`)
-- Available now (calls `totalAvail(h)`)
-- Occupancy % = `(total - avail) / total * 100`
-- Pending discharge = `Math.round(avail * 0.3)` (synthetic estimate)
+**Renders:**
+- `"RANKING ALGORITHM"` label
+- `<select>` with one `<option>` per algorithm
+- Description paragraph below the select, updating live as selection changes
 
 ---
 
 ### `TransferRouting`
-**File:** `app/system-vitals/page.tsx`  
+
+**Props:** `{ algo: TransferAlgoId; onAlgoChange: (v: TransferAlgoId) => void }`
+
 **State:** `fromId`, `acuity`, `specialty`, `results`
 
-The scoring engine lives in the `runTransfer()` function. See [Section 6](#6-scoring--algorithms) for the algorithm. Results are stored in component state — no API call is made. All scoring is client-side.
+Calls `scoreTransfer()` on button click. Results stored in component state — no API call.
 
 ---
 
 ### `RepatriationQueue`
-**File:** `app/system-vitals/page.tsx`  
-**State:** `filter` (facility), `confirmId` (patient id awaiting confirmation)
 
-Filters `REPAT_PATIENTS` by current facility, sorts by `days_over` descending. For each patient, looks up the home hospital in `HOSPITALS` to get live bed availability for the required `acuity` type — this is what makes the "No bed available" / "Initiate transfer" state dynamic.
+**Props:** `{ algo: RepatAlgoId; onAlgoChange: (v: RepatAlgoId) => void }`
+
+**State:** `filter` (facility), `confirmId`
+
+Calls `scoreRepat()` on every render (no button — re-sorts live as algorithm changes). For each patient, looks up the home hospital in `HOSPITALS` to get current bed availability in the required `acuity` type.
 
 ---
 
-## 6. Scoring & Algorithms
+### `CapacityGrid`
 
-### Transfer Match Score (0–100)
+No algorithm selector. State: `filter`, `sort`, `selected`. Purely displays `VT_HOSPITALS` data.
 
-Run when the user clicks "Find best match ↗" in the Transfer Routing tab.
+---
+
+### `HospCard` / `DetailPane` / `TickerBar`
+
+Pure display components — no algorithm involvement.
+
+---
+
+## 6. Algorithm System
+
+### Algorithm Type Definitions
+
+```typescript
+type TransferAlgoId =
+  | "balanced"          // Best overall match
+  | "specialty_first"   // Specialty first
+  | "closest"           // Closest available bed
+  | "capacity_first"    // Most available capacity
+  | "conserve_tertiary";// Conserve tertiary capacity
+
+type RepatAlgoId =
+  | "days_over"         // Most overdue first
+  | "home_bed_ready"    // Bed-confirmed first
+  | "closest_home"      // Shortest transfer distance
+  | "combined";         // Combined priority score
+```
+
+---
+
+### Transfer Scoring — `scoreTransfer()`
+
+```
+scoreTransfer(candidates, fromId, acuity, specialty, algo) → ScoredHospital[]
+```
 
 **Step 1 — Filter candidates:**
-- Remove the sending hospital
+- Remove the sending hospital (`h.id === fromId`)
 - Remove any hospital with 0 available beds of the requested acuity type
 
-**Step 2 — Score each candidate:**
-
-| Component | Max points | Formula |
-|-----------|-----------|---------|
-| Bed availability | 40 | `(avail / total) * 40` — proportional to how full the unit is |
-| Specialty match | 35 | +35 if hospital has the requested specialty (or has `"any"`, or request is `"any"`) |
-| Hospital tier | 15 | +15 for tertiary, +10 for regional, +0 for critical |
-| Transfer center | 10 | +10 if `transfer_center === true` |
-
-**Step 3 — Return top 4**, sorted by score descending.
-
-**Score interpretation:**
-- **75–100**: Strong match — bed available, specialty matched, transfer infrastructure present
-- **50–74**: Good match — most factors aligned, minor gaps
-- **25–49**: Partial match — bed available but specialty or infrastructure limitations
-- **< 25**: Weak match — bed technically available but significant capability gaps
-
-### Overall Status (per hospital card)
-
-Takes the **minimum percentage** across all unit types with `total > 0`:
-
+**Step 2 — Compute per-hospital variables:**
 ```
-minPct = min(avail/total for each unit where total > 0)
-
-minPct > 0.20  →  "Capacity available"  (green)
-minPct > 0.05  →  "Capacity limited"    (amber)
-minPct ≤ 0.05  →  "Near capacity"       (red)
+bedAvail = h.beds[acuity].avail
+bedTotal = h.beds[acuity].total
+bedPct   = bedAvail / bedTotal
+hasSpec  = (specialty === "any") OR (h.specialties includes specialty) OR (h.specialties includes "any")
+driveMin = getDriveTime(fromId, h.id)  // from DRIVE_TIME matrix
 ```
 
-This is deliberately conservative — a hospital with one unit at 3% shows red even if all other units are fine.
+**Step 3 — Score by algorithm:**
 
-### Ticker Strip Status (global, in `lib/ticker.ts`)
+| Algorithm | Formula |
+|-----------|---------|
+| `balanced` | `bedPct×40` + `hasSpec?35:0` + `tier(15/10/0)` + `tc?10:0` |
+| `specialty_first` | `hasSpec?60:0` + `bedPct×25` + `tier(10/5/0)` + `tc?5:0` |
+| `closest` | `max(0, 100-(driveMin/180)×100)×0.7` + `hasbed?20:0` + `hasSpec?10:0` |
+| `capacity_first` | `bedPct×70` + `hasSpec?20:0` + `tc?10:0` |
+| `conserve_tertiary` | `type==critical?30 : type==regional?20 : 0` + `bedPct×40` + `hasSpec?20:0` + `tc?10:0` |
 
+Where `tier` = 15 for tertiary, 10 for regional, 0 for critical. `tc` = `transfer_center`.
+
+**Step 4:** Sort descending, return top 4.
+
+**Returned type:**
+```typescript
+type ScoredHospital = Hospital & {
+  score: number;
+  hasSpec: boolean;
+  bedAvail: number;
+  bedTotal: number;
+  driveMin: number;   // always included, shown as match tag
+};
 ```
-pct = avail / total (across all units)
-
-pct < 0.10   →  status: "critical"
-pct < 0.25   →  status: "warning"
-pct ≥ 0.25   →  status: "good"
-```
-
-Note: This uses stricter thresholds than the card's overall status because the ticker strip is a coarser view.
 
 ---
 
-## 7. Navigation & Routing Integration
+### Repatriation Scoring — `scoreRepat()`
 
-System Vitals is wired into three navigation surfaces:
+```
+scoreRepat(patients, algo) → RepatPatient[]
+```
+
+**Per-patient variables computed internally:**
+```
+homeH    = HOSPITALS.find(h => h.short === p.home || h.name.includes(p.home))
+bedAvail = homeH ? homeH.beds[p.acuity].avail : 0
+tertId   = p.at === "UVMMC" ? "uvmmc" : "dhmc"
+homeId   = homeH?.id ?? ""
+driveMin = getDriveTime(tertId, homeId)
+```
+
+**Scoring by algorithm:**
+
+| Algorithm | Formula |
+|-----------|---------|
+| `days_over` | `p.days_over × 10` |
+| `home_bed_ready` | `bedAvail > 0 ? 100 + p.days_over : 0` |
+| `closest_home` | `max(0, 200 - driveMin)` |
+| `combined` | `(p.days_over × 20) + (bedAvail > 0 ? 40 : 0) + max(0, 40 - driveMin/5)` |
+
+Returns patients sorted descending by score. The `_score` property is stripped before return — only `RepatPatient` fields are exposed.
+
+---
+
+### Score Interpretation
+
+**Transfer match score** — scale varies by algorithm:
+- `balanced`, `specialty_first`: max ~100. Score of 75+ = strong match.
+- `closest`: max ~100 (dominated by proximity). Score of 70+ = within ~45 min.
+- `capacity_first`: max 100. Score of 60+ = unit is >85% open.
+- `conserve_tertiary`: max ~100. High score = regional/critical with available bed.
+
+**Repatriation score** is used only for sort order. The absolute number is not displayed to users — only the resulting queue order matters.
+
+---
+
+## 7. Drive-Time Matrix
+
+`DRIVE_TIME` is a hardcoded record in `page.tsx` based on approximate Vermont road travel times in minutes. It is symmetric — only one direction is stored per pair; `getDriveTime(a, b)` checks both `DRIVE_TIME[a][b]` and `DRIVE_TIME[b][a]`, returning 120 as a conservative default if neither is found.
+
+**Key distances (minutes):**
+
+| From | To | Min |
+|------|----|-----|
+| UVMMC | CVMC | 40 |
+| UVMMC | RRMC | 65 |
+| UVMMC | Copley | 55 |
+| UVMMC | Porter MC | 35 |
+| UVMMC | DHMC | 105 |
+| UVMMC | NVRH | 95 |
+| DHMC | Springfield | 50 |
+| DHMC | Mt. Ascutney | 40 |
+| RRMC | Springfield | 60 |
+| Brattleboro | Grace Cottage | 20 |
+
+**To update:** Edit the `DRIVE_TIME` constant at the top of `app/system-vitals/page.tsx`. The matrix is used by both the `closest` transfer algorithm and the `closest_home` / `combined` repatriation algorithms.
+
+**Production path:** Replace with a call to VTRANS or Google Maps Distance Matrix API, keyed by hospital lat/lng from the Act 167 simulator's `data.ts`.
+
+---
+
+## 8. Navigation & Routing Integration
 
 ### Left Sidebar (`HomeSidebar.tsx`)
 
-Located under **States & Programs**, between "Vermont RHT Program" and "AHEAD Model."
-
+Under **States & Programs**, between "Vermont RHT Program" and "AHEAD Model":
 ```typescript
 { href: "/system-vitals", label: "System Vitals", icon: TableCellsIcon }
 ```
 
-The route `/system-vitals` is included in `statesPrefixes`, so navigating to the page auto-expands the States & Programs accordion in the sidebar.
+`/system-vitals` is in `statesPrefixes` — navigating to the page auto-expands the States & Programs accordion.
 
-### Header Mega-Menu (`Header.tsx`)
+### Header (`Header.tsx`)
 
-**Desktop:** Appears in the `StatesPanel` dropdown under **STATES & PROGRAMS**, between "Vermont Act 167" and "California CalAIM."
-
-**Mobile:** Appears in the STATES & PROGRAMS accordion in the mobile hamburger menu.
-
-The `activeCheck` string for the STATES & PROGRAMS mega-menu button includes `/system-vitals`, so the button highlights when you're on this page.
-
-### Active State Detection
-
-```typescript
-// HomeSidebar.tsx — getSectionForPath()
-const statesPrefixes = [
-  "/vermont-medicaid", "/vermont-act-167", "/vermont-act-68",
-  "/vermont-rht-program", "/california-calaim", "/states",
-  "/dashboard", "/ahead-model", "/system-vitals"  // ← added
-];
-```
+- **Desktop mega-menu:** In `StatesPanel`, between "Vermont Act 167" and "California CalAIM"
+- **Mobile menu:** In the STATES & PROGRAMS accordion
+- **Active highlight:** `/system-vitals` in the `activeCheck` string for the STATES & PROGRAMS button
 
 ---
 
-## 8. Data Consistency Architecture
-
-This is the critical architectural decision made during the build.
+## 9. Data Consistency Architecture
 
 ### The Problem
 
-The global ticker strip (visible on every page) and the System Vitals capacity grid both display bed availability numbers. When they read from different data sources, they show different numbers — a trust-destroying inconsistency for clinical users.
+The global sticky ticker strip and the System Vitals capacity grid both display bed availability. When they read from different sources they show different numbers — a trust-destroying inconsistency for clinical users.
 
-### The Solution: Single Source, Computed Derivation
+### The Solution
 
 ```
-lib/data/system-vitals-data.ts (VT_HOSPITALS)
+lib/data/system-vitals-data.ts  (VT_HOSPITALS)
          │
          ├──► app/system-vitals/page.tsx
-         │         ├── TickerBar (page-level chips)
-         │         ├── CapacityGrid (hospital cards)
-         │         ├── DetailPane (expanded metrics)
-         │         └── RepatriationQueue (home bed availability check)
+         │         ├── TickerBar       (page chips)
+         │         ├── CapacityGrid    (hospital cards)
+         │         ├── DetailPane      (expanded metrics)
+         │         ├── TransferRouting (scoreTransfer + DRIVE_TIME)
+         │         └── RepatQueue      (scoreRepat + home bed check)
          │
          └──► lib/ticker.ts → bedRowsFromHospitalData()
                    └── AppShell → TickerStrip (global sticky bar)
 ```
 
-The `getTickerData()` function in `lib/ticker.ts`:
-1. Reads `data/vitals.csv` and keeps only `type: vital` rows
+`getTickerData()` in `lib/ticker.ts`:
+1. Reads `data/vitals.csv`, keeps only `type: vital` rows
 2. Calls `bedRowsFromHospitalData()` which imports `VT_HOSPITALS` and computes bed rows dynamically
-3. Returns the two sets concatenated
+3. Returns both concatenated
 
-**Result:** It is architecturally impossible for the global ticker and the capacity grid to show different bed numbers. They are computed from the same array at the same point in time.
-
-### What the CSV Still Does
-
-`data/vitals.csv` remains the source for all non-bed vitals (health index, margins, workforce gap, ER wait times, ICU occupancy percentage, Medicaid enrollment, readmission rate, VBC adoption). Edit those rows freely — they don't interact with the hospital bed data.
+**Result:** Architecturally impossible for the global ticker and the capacity grid to show different numbers.
 
 ---
 
-## 9. How to Update Bed Data
+## 10. How to Update Data
 
-### To update bed availability numbers
+### Bed availability numbers
+Edit `frontend/lib/data/system-vitals-data.ts` — the `VT_HOSPITALS` array. Change the `avail` field for the relevant hospital and bed type. Save — the change propagates to the capacity grid, page ticker, transfer scoring, repatriation queue bed checks, and the global sticky strip simultaneously.
 
-Edit **`frontend/lib/data/system-vitals-data.ts`** — the `VT_HOSPITALS` array.
+### Vital statistics (non-bed)
+Edit `frontend/data/vitals.csv` — `type: vital` rows only. Restart dev server to pick up changes.
 
-Find the hospital by `id` and update the `avail` value for the relevant bed type:
+### Drive-time estimates
+Edit the `DRIVE_TIME` constant at the top of `app/system-vitals/page.tsx`.
 
-```typescript
-{ id: "uvmmc", ...
-  beds: {
-    icu:        { total: 32, avail: 1 },   // ← change avail here
-    medsurg:    { total: 180, avail: 12 },
-    behavioral: { total: 24, avail: 4 },
-    snf:        { total: 0, avail: 0 },
-  },
-  ...
-}
-```
+### Add a hospital
+Add to `VT_HOSPITALS` in `system-vitals-data.ts`. Add its row(s) to `DRIVE_TIME` in `page.tsx`.
 
-**After saving this file:**
-- The capacity grid cards update automatically on next page load
-- The page-level ticker bar updates automatically
-- The global sticky strip ticker updates automatically (it recomputes from `VT_HOSPITALS` on every server render)
-- You do NOT need to touch `data/vitals.csv`
+### Add a repatriation patient
+Add to `REPAT_PATIENTS` in `system-vitals-data.ts`. The `at` field must be `"UVMMC"` or `"DHMC"`. The `home` field must match `VTHospital.short` or a substring of `VTHospital.name`.
 
-### To add a hospital
+### Add a new transfer algorithm
+1. Add the id to `TransferAlgoId` union type in `page.tsx`
+2. Add a `AlgoDef` entry to `TRANSFER_ALGOS` array (id, label, description)
+3. Add a scoring branch in `scoreTransfer()` for the new id
+4. Done — the `AlgoSelector` renders it automatically
 
-Add a new object to `VT_HOSPITALS` following the existing schema. For critical access hospitals with no ICU, set `icu: { total: 0, avail: 0 }`.
-
-### To add a repatriation patient
-
-Add a new object to `REPAT_PATIENTS`. The `at` field must be either `"UVMMC"` or `"DHMC"` (these are the filter values in the UI). The `home` field must match either the `short` property or a substring of the `name` property of an entry in `VT_HOSPITALS` (used for the bed availability lookup).
-
-### To update vital statistics (non-bed)
-
-Edit **`frontend/data/vitals.csv`** — the `type: vital` rows only. Do not edit or add `type: bed` rows; they are ignored at runtime.
+### Add a new repatriation algorithm
+Same pattern: add to `RepatAlgoId`, `REPAT_ALGOS`, and `scoreRepat()`.
 
 ---
 
-## 10. Relationship to the Act 167 Simulator
-
-Vermont Act 167 (2022) mandated transformation of the Vermont hospital system. The HTR platform has two features that model this:
+## 11. Relationship to the Act 167 Simulator
 
 | Feature | Purpose | Data used |
 |---------|---------|-----------|
-| **Act 167 Simulator** | Policy & financial scenario modeling — what happens if hospitals merge, consolidate services, or change payment models | `app/vermont-act-167/simulator/data.ts` — `beds: 562` (licensed bed count), financial metrics, Oliver Wyman recommendations |
-| **System Vitals** | Operational situational awareness — what is available right now, who can be transferred, who can go home | `lib/data/system-vitals-data.ts` — `{icu, medsurg, behavioral, snf}` with `{total, avail}` breakdowns |
+| **Act 167 Simulator** | Policy & financial scenario modeling | `simulator/data.ts` — `beds: 562` (licensed), financial metrics, Oliver Wyman recommendations |
+| **System Vitals** | Operational situational awareness + transfer decision support | `system-vitals-data.ts` — `{icu, medsurg, behavioral, snf}` with `{total, avail}` |
 
-The Act 167 simulator's hospital `beds` count (e.g., 562 for UVMMC) represents all licensed beds including those not tracked by unit type in System Vitals. These two datasets should remain separate. When real data integration happens, both will be wired to live sources independently.
-
----
-
-## 11. Roadmap: From Synthetic to Live Data
-
-Current state: all numbers are synthetic (demo/illustrative). Here is the path to live data:
-
-### Phase 1 — Manual refresh (near-term)
-Replace the static `VT_HOSPITALS` array with a database-backed query. The schema maps cleanly to a SQL table with columns: `hospital_id`, `bed_type`, `total`, `avail`, `as_of_timestamp`. A nightly or 4-hour refresh cycle from hospital ADT (admission/discharge/transfer) systems populates the table.
-
-```typescript
-// lib/data/system-vitals-data.ts evolves to:
-export async function getVTHospitals(): Promise<VTHospital[]> {
-  return db.query(`SELECT * FROM hospital_beds WHERE as_of = (SELECT MAX(as_of) FROM hospital_beds)`);
-}
-```
-
-### Phase 2 — HL7 ADT feed integration
-Vermont Information Technology Leaders (VITL), the state HIE, can provide HL7 v2 ADT messages (A01 Admit, A02 Transfer, A03 Discharge) from participating hospitals. An ingestion service processes these events to maintain a live bed census. UVMMC and DHMC already participate in VITL.
-
-### Phase 3 — Real-time push
-Vermont's Blueprint for Health infrastructure supports FHIR R4. The System Vitals data layer can subscribe to FHIR Location resources (which model bed availability) via a WebSocket or Server-Sent Events stream, enabling sub-minute updates without page refresh.
-
-### Transport scoring enhancement
-The transport field in Transfer Routing currently does not affect scores. Phase 1 enhancement: add drive-time matrix between hospitals (ground transport) and helicopter range polygons (air transport) to filter and weight results by transport feasibility.
+Keep these datasets separate. They will be wired to different live data sources when production integration occurs.
 
 ---
 
-## 12. File Map
+## 12. Roadmap: From Synthetic to Live Data
+
+### Phase 1 — Current (Demonstration)
+Static `VT_HOSPITALS` array. All algorithms fully functional. Drive-time matrix hardcoded.
+
+### Phase 2 — Database-backed (3–6 months)
+Replace static array with PostgreSQL query. Schema: `hospital_beds(hospital_id, bed_type, total, avail, updated_at)`. `page.tsx` becomes a server component that fetches and passes props to existing client components. No UI changes required.
+
+### Phase 3 — VITL HL7 ADT feed (6–18 months)
+Connect to Vermont Information Technology Leaders HIE. HL7 v2 ADT messages (A01/A02/A03) update the bed table in real time with ~15–30 min latency.
+
+### Phase 4 — FHIR R4 real-time (18+ months)
+Subscribe to FHIR `Location` resources via Server-Sent Events. Sub-5-minute latency. Enable transport field in transfer scoring via VTRANS routing API.
+
+---
+
+## 13. File Map
 
 ```
 Vermont-Health-Platform/
 ├── frontend/
 │   ├── app/
 │   │   └── system-vitals/
-│   │       └── page.tsx                    ← Main page (all UI components)
+│   │       └── page.tsx                 ← All UI + algorithm logic + DRIVE_TIME matrix
 │   │
 │   ├── components/
-│   │   ├── Header.tsx                      ← System Vitals added to mega-menu + mobile menu
-│   │   ├── HomeSidebar.tsx                 ← System Vitals added to States & Programs
-│   │   ├── AppShell.tsx                    ← Passes tickerData to TickerStrip
-│   │   └── TickerStrip.tsx                 ← Renders bed chips in global sticky bar
+│   │   ├── Header.tsx                   ← System Vitals in mega-menu + mobile menu
+│   │   ├── HomeSidebar.tsx              ← System Vitals in States & Programs
+│   │   ├── AppShell.tsx                 ← Passes tickerData to TickerStrip
+│   │   └── TickerStrip.tsx              ← Renders bed chips in global sticky bar
 │   │
 │   ├── lib/
 │   │   ├── data/
-│   │   │   └── system-vitals-data.ts       ← SINGLE SOURCE OF TRUTH for bed data
-│   │   └── ticker.ts                       ← Computes global ticker from VT_HOSPITALS
+│   │   │   └── system-vitals-data.ts    ← SINGLE SOURCE OF TRUTH for bed data
+│   │   └── ticker.ts                    ← Computes global ticker from VT_HOSPITALS
 │   │
 │   └── data/
-│       └── vitals.csv                      ← Non-bed vital statistics only
+│       └── vitals.csv                   ← Non-bed vital statistics only
 │
-└── htr_bed_capacity_transfer_dashboard.html ← Original HTML reference implementation
+├── SYSTEM_VITALS_DOCUMENTATION.md       ← This file
+├── SYSTEM_VITALS_WHITEPAPER.md          ← Stakeholder white paper
+└── htr_bed_capacity_transfer_dashboard.html  ← Original HTML reference
 ```
 
 ---
 
-*This document describes the system as of April 29, 2026. All bed availability numbers are synthetic and for demonstration purposes only. No patient data is real.*
+*All bed availability and patient data are synthetic. No actual patient information is used or displayed.*
+*Vermont Health Platform · April 29, 2026*
