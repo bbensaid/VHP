@@ -80,7 +80,7 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
 
   return (
     <div
-      className="relative w-full overflow-hidden rounded-2xl bg-slate-50 border border-slate-200 shadow-sm group mb-10"
+      className="relative w-full overflow-hidden rounded-2xl bg-slate-50 border border-slate-200 shadow-sm group mb-6 md:mb-10"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -92,14 +92,14 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
         {extendedSlides.map((slide, index) => (
           <div
             key={slide.id}
-            className="w-full shrink-0 p-8 md:p-12 min-h-[400px] flex flex-col justify-center relative"
+            className="w-full shrink-0 p-5 md:p-8 lg:p-12 min-h-[200px] md:min-h-[400px] flex flex-col justify-center relative"
           >
             {/* --- SLIDE 1: LEAD STORY --- */}
             {slide.type === "story" && (
               <div className="max-w-3xl">
                 {leadStory ? (
                   <>
-                    <div className="flex items-center gap-3 mb-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
+                    <div className="flex items-center gap-3 mb-2 md:mb-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
                       <span className="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-widest text-white bg-indigo-600 shadow-sm">
                         Deep Dive
                       </span>
@@ -107,20 +107,20 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                         {leadStory.pillar || "Analysis"}
                       </span>
                     </div>
-                    <h1 className="ty-h1 font-black text-slate-700 leading-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
+                    <h1 className="ty-h1 font-black text-slate-700 leading-tight mb-2 md:mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200 line-clamp-2 md:line-clamp-none">
                       {leadStory.title}
                     </h1>
-                    <p className="ty-hero text-slate-600 leading-relaxed mb-8 line-clamp-3 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
+                    <p className="hidden md:block ty-hero text-slate-600 leading-relaxed mb-8 line-clamp-3 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
                       {leadStory.summary}
                     </p>
-                    <div className="flex items-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500">
+                    <div className="flex items-center gap-3 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500 mt-3 md:mt-0">
                       <Link
                         href={`/advisory/reports`}
-                        className="bg-indigo-600 text-white px-6 py-3 rounded-lg font-bold text-sm hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20"
+                        className="bg-indigo-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-bold text-sm hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20"
                       >
                         Read Full Analysis
                       </Link>
-                      <span className="text-xs font-bold text-slate-400">
+                      <span className="hidden sm:block text-xs font-bold text-slate-400">
                         By HTR Intelligence
                       </span>
                     </div>
@@ -134,41 +134,37 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
             {/* --- SLIDE 2: VISUAL INSIGHT (Existing Card) --- */}
             {slide.type === "visual" && (
               <div className="w-full h-full flex flex-col justify-center">
-                <div className="flex justify-between items-end mb-6">
+                <div className="flex justify-between items-end mb-3 md:mb-6">
                   <div>
-                    <h3 className="font-black text-slate-700 text-lg uppercase tracking-tight flex items-center gap-2">
-                      <span className="text-2xl">📊</span> Visual Insight
+                    <h3 className="font-black text-slate-700 text-base md:text-lg uppercase tracking-tight flex items-center gap-2">
+                      <span className="text-xl md:text-2xl">📊</span> Visual Insight
                     </h3>
-                    <div className="flex items-center gap-2 mt-1">
-                      <p className="text-sm text-slate-500">
-                        Data Source: HTR Proprietary Index • Q4 2025
-                      </p>
-                    </div>
+                    <p className="hidden sm:block text-sm text-slate-500 mt-1">
+                      Data Source: HTR Proprietary Index • Q4 2025
+                    </p>
                   </div>
                 </div>
-                <div className="flex flex-col md:flex-row gap-8 items-center">
-                  <div className="w-full md:w-3/5 h-64 bg-white rounded-xl border border-slate-200 shadow-sm flex items-center justify-center relative overflow-hidden group/chart cursor-pointer">
+                <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center">
+                  <div className="w-full md:w-3/5 h-28 md:h-64 bg-white rounded-xl border border-slate-200 shadow-sm flex items-center justify-center relative overflow-hidden group/chart cursor-pointer">
                     <Link
                       href="/htr-index"
                       className="absolute inset-0 z-10"
                       aria-label="View HTR Index"
                     ></Link>
-                    <div className="flex items-end gap-2 h-32 opacity-80 group-hover/chart:scale-105 transition-transform duration-500">
-                      <div className="w-6 h-12 bg-indigo-200 rounded-t-sm"></div>
-                      <div className="w-6 h-16 bg-indigo-300 rounded-t-sm"></div>
-                      <div className="w-6 h-24 bg-indigo-400 rounded-t-sm"></div>
-                      <div className="w-6 h-32 bg-indigo-600 rounded-t-sm"></div>
-                      <div className="w-6 h-28 bg-indigo-500 rounded-t-sm"></div>
+                    <div className="flex items-end gap-2 h-16 md:h-32 opacity-80 group-hover/chart:scale-105 transition-transform duration-500">
+                      <div className="w-4 md:w-6 h-8 md:h-12 bg-indigo-200 rounded-t-sm"></div>
+                      <div className="w-4 md:w-6 h-10 md:h-16 bg-indigo-300 rounded-t-sm"></div>
+                      <div className="w-4 md:w-6 h-12 md:h-24 bg-indigo-400 rounded-t-sm"></div>
+                      <div className="w-4 md:w-6 h-16 md:h-32 bg-indigo-600 rounded-t-sm"></div>
+                      <div className="w-4 md:w-6 h-14 md:h-28 bg-indigo-500 rounded-t-sm"></div>
                     </div>
-                    <p className="absolute bottom-3 right-3 text-[10px] text-slate-400 font-mono">
-                      FIG 1.2
-                    </p>
+                    <p className="absolute bottom-2 right-2 text-[10px] text-slate-400 font-mono">FIG 1.2</p>
                   </div>
                   <div className="w-full md:w-2/5">
-                    <h4 className="font-bold text-slate-700 text-2xl mb-3">
+                    <h4 className="font-bold text-slate-700 text-base md:text-2xl mb-1 md:mb-3">
                       OpEx vs. Volume
                     </h4>
-                    <p className="text-slate-600 leading-relaxed mb-6">
+                    <p className="hidden md:block text-slate-600 leading-relaxed mb-6">
                       Operating expenses have decoupled from patient volume,
                       creating a structural deficit across health markets nationwide.
                     </p>
@@ -185,68 +181,68 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
 
             {/* --- SLIDE 3: ACADEMY PROMO --- */}
             {slide.type === "promo" && (
-              <div className="w-full h-full flex flex-col md:flex-row items-center gap-10">
-                <div className="flex-1 space-y-6">
+              <div className="w-full h-full flex flex-row items-center gap-4 md:gap-10">
+                <div className="flex-1 space-y-2 md:space-y-6">
                   <div className="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-black uppercase tracking-widest">
                     New Course
                   </div>
-                  <h2 className="ty-h1 font-black text-slate-700">
+                  <h2 className="ty-h1 font-black text-slate-700 line-clamp-2 md:line-clamp-none">
                     Executive Masterclass: Value-Based Care
                   </h2>
-                  <p className="ty-hero text-slate-600">
+                  <p className="hidden md:block ty-hero text-slate-600">
                     Join 500+ healthcare leaders in our flagship certification
                     program. Learn the economics of risk adjustment and
                     population health.
                   </p>
                   <Link
                     href="/academy/courses"
-                    className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-emerald-700 transition-colors"
+                    className="inline-block bg-emerald-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-bold text-sm hover:bg-emerald-700 transition-colors"
                   >
                     Explore Syllabus
                   </Link>
                 </div>
-                <div className="w-full md:w-1/3 aspect-square bg-emerald-50 rounded-full flex items-center justify-center border-4 border-emerald-100">
-                  <span className="text-6xl">🎓</span>
+                <div className="w-16 h-16 md:w-1/3 md:aspect-square shrink-0 bg-emerald-50 rounded-full flex items-center justify-center border-4 border-emerald-100">
+                  <span className="text-3xl md:text-6xl">🎓</span>
                 </div>
               </div>
             )}
 
             {/* --- SLIDE 4: RHTP CASE STUDY --- */}
             {slide.type === "program" && (
-              <div className="w-full h-full flex flex-col md:flex-row items-center gap-10">
-                <div className="flex-1 space-y-6">
-                  <div className="flex items-center gap-2">
+              <div className="w-full h-full flex flex-row items-center gap-4 md:gap-10">
+                <div className="flex-1 space-y-2 md:space-y-6">
+                  <div className="flex items-center gap-2 flex-wrap">
                     <div className="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-black uppercase tracking-widest">
                       Case Study
                     </div>
-                    <div className="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold uppercase tracking-widest">
+                    <div className="hidden sm:inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold uppercase tracking-widest">
                       Federal Initiative · CMS
                     </div>
                   </div>
-                  <h2 className="ty-h1 font-black text-slate-700">
+                  <h2 className="ty-h1 font-black text-slate-700 line-clamp-2 md:line-clamp-none">
                     Rural Health Transformation Program
                   </h2>
-                  <p className="ty-hero text-slate-600">
+                  <p className="hidden md:block ty-hero text-slate-600">
                     How a landmark CMS initiative is stabilizing rural safety-net
                     hospitals through global budgets and regional collaboration —
                     and what it reveals about scaling value-based care nationwide.
                   </p>
-                  <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-wrap gap-2 md:gap-4">
                     <Link
                       href="/dashboard"
-                      className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
+                      className="inline-block bg-blue-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-bold text-sm hover:bg-blue-700 transition-colors"
                     >
                       Explore the Case Study
                     </Link>
                     <button
                       onClick={() => setShowRHTPModal(true)}
-                      className="inline-block bg-white text-blue-600 border border-blue-200 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+                      className="hidden sm:inline-block bg-white text-blue-600 border border-blue-200 px-4 py-2 md:px-6 md:py-3 rounded-lg font-bold text-sm hover:bg-blue-50 transition-colors"
                     >
                       Program Overview
                     </button>
                   </div>
                 </div>
-                <div className="w-full md:w-1/4 aspect-square bg-white rounded-full flex items-center justify-center border-4 border-white shadow-xl p-9">
+                <div className="w-16 h-16 md:w-1/4 md:aspect-square shrink-0 bg-white rounded-full flex items-center justify-center border-4 border-white shadow-xl p-2 md:p-9">
                   <Image
                     src="/rhtp-icon.png"
                     alt="RHTP Logo"
@@ -262,41 +258,36 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
       </div>
 
       {/* CONTROLS */}
-      <div className="absolute bottom-6 right-8 flex items-center gap-4 z-20">
+      <div className="absolute bottom-3 md:bottom-6 right-3 md:right-8 flex items-center gap-2 md:gap-4 z-20">
         {/* Pagination Dots */}
-        <div className="flex gap-2 mr-4">
-          {slides.map(
-            (
-              _,
-              idx // Use original slides for dots
-            ) => (
-              <button
-                key={idx}
-                onClick={() => setCurrentIndex(idx)}
-                className={`h-1.5 rounded-full transition-all duration-300 ${
-                  currentIndex === idx ||
-                  (currentIndex === slides.length && idx === 0)
-                    ? "w-8 bg-indigo-600"
-                    : "w-2 bg-slate-300 hover:bg-slate-400"
-                }`}
-              />
-            )
-          )}
+        <div className="flex gap-1.5 md:gap-2 mr-2 md:mr-4">
+          {slides.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentIndex(idx)}
+              className={`h-1.5 rounded-full transition-all duration-300 ${
+                currentIndex === idx ||
+                (currentIndex === slides.length && idx === 0)
+                  ? "w-5 md:w-8 bg-indigo-600"
+                  : "w-1.5 md:w-2 bg-slate-300 hover:bg-slate-400"
+              }`}
+            />
+          ))}
         </div>
 
         {/* Arrows */}
-        <div className="flex gap-2">
+        <div className="flex gap-1.5 md:gap-2">
           <button
             onClick={prevSlide}
-            className="p-2 rounded-full bg-white/80 backdrop-blur border border-slate-200 hover:bg-white hover:border-indigo-300 transition-all text-slate-600 hover:text-indigo-600"
+            className="p-1.5 md:p-2 rounded-full bg-white/80 backdrop-blur border border-slate-200 hover:bg-white hover:border-indigo-300 transition-all text-slate-600 hover:text-indigo-600"
           >
-            <ChevronLeftIcon className="w-5 h-5" />
+            <ChevronLeftIcon className="w-4 h-4 md:w-5 md:h-5" />
           </button>
           <button
             onClick={nextSlide}
-            className="p-2 rounded-full bg-white/80 backdrop-blur border border-slate-200 hover:bg-white hover:border-indigo-300 transition-all text-slate-600 hover:text-indigo-600"
+            className="p-1.5 md:p-2 rounded-full bg-white/80 backdrop-blur border border-slate-200 hover:bg-white hover:border-indigo-300 transition-all text-slate-600 hover:text-indigo-600"
           >
-            <ChevronRightIcon className="w-5 h-5" />
+            <ChevronRightIcon className="w-4 h-4 md:w-5 md:h-5" />
           </button>
         </div>
       </div>

@@ -10,6 +10,7 @@ import { useTicker } from "@/components/TickerContext";
 import { useSidebar } from "@/components/SidebarContext";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
+import BottomNav from "@/components/BottomNav";
 import { SparklesIcon } from "@heroicons/react/24/outline";
 
 // Named breakpoints matching Tailwind's lg / xl thresholds
@@ -116,7 +117,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
       )}
 
       {/* 2. Main Content Area */}
-      <div className="flex flex-col lg:flex-row mt-4 w-full px-4 transition-all relative z-0">
+      <div className="flex flex-col lg:flex-row mt-3 md:mt-4 w-full px-3 md:px-4 transition-all relative z-0 pb-20 lg:pb-0">
         <CollapsibleSidebar
           side="left"
           isOpen={isLeftOpen}
@@ -146,17 +147,20 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         </CollapsibleSidebar>
       </div>
 
-      {/* 3. Floating "Ask AI" button — visible on desktop when right sidebar is closed */}
+      {/* 3. Floating "Ask AI" button — desktop only, hidden on mobile (BottomNav handles it) */}
       {!isRightOpen && (
         <button
           onClick={() => setRightOpen(true)}
-          className="flex fixed bottom-6 right-4 lg:right-6 z-(--z-overlay) items-center gap-2 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm font-bold"
+          className="hidden lg:flex fixed bottom-6 right-6 z-(--z-overlay) items-center gap-2 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm font-bold"
           aria-label="Open AI Analyst"
         >
           <SparklesIcon className="w-4 h-4" />
           Ask AI
         </button>
       )}
+
+      {/* 4. Bottom navigation — mobile only */}
+      <BottomNav />
 
       <Footer />
     </div>
