@@ -222,11 +222,11 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
       <HeroCarousel leadStory={leadStory} />
 
       {/* QUICK START — 4 intent-based action cards */}
-      <section className="mb-10">
+      <section className="mb-8 md:mb-10">
         <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">
           What would you like to do?
         </p>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-3">
           {[
             {
               href: "/policy",
@@ -260,15 +260,15 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
             <Link
               key={card.href}
               href={card.href}
-              className={`group flex flex-col gap-1.5 p-4 rounded-xl border-2 transition-all duration-150 ${card.bg}`}
+              className={`group flex flex-col gap-1 md:gap-1.5 p-3 md:p-4 rounded-xl border-2 transition-all duration-150 ${card.bg}`}
             >
               <div className="flex items-center gap-2">
-                <span className="text-xl leading-none">{card.emoji}</span>
-                <span className="text-base font-black text-slate-800 group-hover:text-slate-900 leading-tight">
+                <span className="text-lg md:text-xl leading-none">{card.emoji}</span>
+                <span className="text-sm md:text-base font-black text-slate-800 group-hover:text-slate-900 leading-tight">
                   {card.label}
                 </span>
               </div>
-              <p className="text-sm text-slate-500 leading-snug">{card.desc}</p>
+              <p className="text-xs md:text-sm text-slate-500 leading-snug hidden sm:block">{card.desc}</p>
             </Link>
           ))}
         </div>
@@ -335,19 +335,29 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
             filteredFeed.map((item, i) => (
               <div
                 key={item._id ?? i}
-                className="flex flex-col md:flex-row md:items-center gap-3 md:gap-6 py-4 border-b border-slate-100 hover:bg-slate-50 transition-colors px-2 rounded -mx-2 group"
+                className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 py-3 md:py-4 border-b border-slate-100 hover:bg-slate-50 transition-colors px-2 rounded -mx-2 group"
               >
-                <div className="flex items-center gap-3 w-32 shrink-0">
+                <div className="flex items-center justify-between md:justify-start gap-3 md:w-32 md:shrink-0">
                   <span
-                    className={`text-[10px] font-black px-2 py-1 rounded w-full text-center border ${getBadgeStyle(item._type, item.pillar ?? "")}`}
+                    className={`text-[10px] font-black px-2 py-1 rounded md:w-full text-center border ${getBadgeStyle(item._type, item.pillar ?? "")}`}
                   >
                     {getBadgeLabel(item._type, item.pillar ?? "")}
                   </span>
+                  {/* Bookmark always visible on mobile, hover-reveal on desktop */}
+                  <div className="md:hidden">
+                    <BookmarkButton
+                      sanityId={item._id}
+                      slug={item.slug ?? ""}
+                      title={item.title}
+                      pillar={item.pillar}
+                      contentType={item._type}
+                    />
+                  </div>
                 </div>
                 <div className="grow">
                   <Link
                     href={getItemHref(item)}
-                    className="text-base font-bold text-slate-800 leading-snug hover:text-indigo-600 transition-colors"
+                    className="text-sm md:text-base font-bold text-slate-800 leading-snug hover:text-indigo-600 transition-colors"
                   >
                     {item.title}
                   </Link>
@@ -358,7 +368,7 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
                   title={item.title}
                   pillar={item.pillar}
                   contentType={item._type}
-                  className="shrink-0 opacity-0 group-hover:opacity-100 focus:opacity-100"
+                  className="hidden md:block shrink-0 opacity-0 group-hover:opacity-100 focus:opacity-100"
                 />
               </div>
             ))
@@ -420,26 +430,27 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
 
       {/* TRENDING BY PILLAR */}
       <section className="mb-10">
-        <div className="flex items-center justify-between mb-5 border-b border-slate-200 pb-2">
+        <div className="flex items-center justify-between mb-4 md:mb-5 border-b border-slate-200 pb-2">
           <h2 className="ty-h3 font-black text-slate-900 uppercase tracking-tight">
             Trending by Pillar{" "}
-            <span className="text-slate-400 font-normal normal-case ml-2 text-base">
+            <span className="hidden sm:inline text-slate-400 font-normal normal-case ml-2 text-base">
               Today&apos;s top signal per domain
             </span>
           </h2>
           <Link
             href="/trending-topics"
-            className="text-xs font-bold text-slate-500 hover:text-indigo-600 transition-colors"
+            className="text-xs font-bold text-slate-500 hover:text-indigo-600 transition-colors shrink-0 ml-2"
           >
             All Trends →
           </Link>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+        {/* Mobile: horizontal scroll strip; sm+: grid */}
+        <div className="flex gap-3 overflow-x-auto pb-2 sm:pb-0 sm:grid sm:grid-cols-2 lg:grid-cols-5 snap-x snap-mandatory scrollbar-none">
           {TRENDING_PILLARS.map((p) => (
             <Link
               key={p.id}
               href={p.href}
-              className={`group flex flex-col gap-2 p-3 rounded-xl ring-1 transition-all duration-150 ${p.bg} ${p.ring}`}
+              className={`group flex flex-col gap-2 p-3 rounded-xl ring-1 transition-all duration-150 shrink-0 w-52 sm:w-auto snap-start ${p.bg} ${p.ring}`}
             >
               <div className="flex items-center gap-2">
                 <span className={`w-2 h-2 rounded-full ${p.dot} shrink-0`} />

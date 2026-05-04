@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import { ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
+import { ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const SIDEBAR_WIDTH = "18rem";       // 288px — matches --sidebar-width token
 const SIDEBAR_STUB_WIDTH = "2.5rem"; // 40px  — matches --sidebar-stub-width token
@@ -79,6 +79,20 @@ export default function CollapsibleSidebar({
             ${isOpen ? "opacity-100 shadow-2xl lg:shadow-none" : "opacity-0 border-none"}
           `}>
             <div className="w-[85vw] md:w-72 h-full flex flex-col relative">
+              {/* Mobile-only sidebar header with close button */}
+              <div className="lg:hidden flex items-center justify-between px-4 py-3 border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 shrink-0">
+                <span className="text-xs font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                  {isLeft ? "Navigation" : "AI Analyst"}
+                </span>
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center gap-1 px-2 py-1.5 rounded-md text-slate-500 hover:text-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors text-xs font-bold min-h-11"
+                  aria-label="Close sidebar"
+                >
+                  <XMarkIcon className="w-5 h-5" />
+                  Close
+                </button>
+              </div>
               {fillHeight ? (
                 <div className="flex-1 min-h-0 flex flex-col overflow-hidden">
                   {children}

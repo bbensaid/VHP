@@ -687,9 +687,9 @@ const Header = () => {
     });
 
   return (
-    <header className="sticky top-0 z-50 flex flex-col font-sans bg-white dark:bg-slate-900">
-      {/* 1. TOP BAR */}
-      <div className="bg-black text-zinc-300 text-[10px] font-bold tracking-wider uppercase py-1 border-b border-neutral-800 w-full relative z-50">
+    <header className="sticky top-0 z-50 flex flex-col font-sans bg-white dark:bg-slate-900" style={{ paddingTop: "env(safe-area-inset-top)" }}>
+      {/* 1. TOP BAR — hidden on mobile, visible lg+ */}
+      <div className="hidden lg:block bg-black text-zinc-300 text-[10px] font-bold tracking-wider uppercase py-1 border-b border-neutral-800 w-full relative z-50">
         <div className="w-full px-4 flex items-center h-full gap-0">
           <div className="w-85 shrink-0 flex items-center">
             <span className="hidden lg:block opacity-70 whitespace-nowrap">{dateString}</span>
@@ -734,15 +734,16 @@ const Header = () => {
         <div className="w-full px-4 flex items-center gap-0">
 
           {/* LEFT: Toggle + Logo — w-125 matches AppShell breadcrumbs spacer for column alignment */}
-          <div className="w-125 shrink-0 flex items-center gap-3">
+          <div className="w-125 shrink-0 flex items-center gap-2 md:gap-3">
             {showLeftToggle && (
               <button
                 onClick={handleToggleLeft}
-                className="p-2 text-slate-400 hover:bg-slate-100 rounded-md transition-colors"
+                className="flex items-center gap-1.5 px-2 py-2 md:p-2 text-slate-600 hover:bg-slate-100 rounded-md transition-colors min-w-[44px] min-h-[44px] justify-center"
                 title="Toggle Navigation"
                 aria-label="Toggle navigation sidebar"
               >
-                <Bars3BottomLeftIcon className="w-6 h-6" aria-hidden="true" />
+                <Bars3BottomLeftIcon className="w-6 h-6 shrink-0" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-wide xl:hidden hidden sm:inline">Menu</span>
               </button>
             )}
             <Link href="/" className="z-50 relative">
@@ -846,16 +847,22 @@ const Header = () => {
             )}
             <div className="xl:hidden">
               <button
-                className="p-2 text-slate-800 hover:bg-slate-100 rounded-md transition-colors"
+                className="flex items-center gap-1.5 px-3 py-2 min-h-[44px] text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition-colors font-bold text-xs uppercase tracking-wide border border-slate-200 dark:border-slate-700"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
                 aria-expanded={mobileMenuOpen}
                 aria-controls="mobile-menu"
               >
                 {mobileMenuOpen ? (
-                  <XMarkIcon className="w-8 h-8" aria-hidden="true" />
+                  <>
+                    <XMarkIcon className="w-5 h-5" aria-hidden="true" />
+                    <span className="hidden sm:inline">Close</span>
+                  </>
                 ) : (
-                  <Bars3Icon className="w-8 h-8" aria-hidden="true" />
+                  <>
+                    <Bars3Icon className="w-5 h-5" aria-hidden="true" />
+                    <span className="hidden sm:inline">All Topics</span>
+                  </>
                 )}
               </button>
             </div>
@@ -866,10 +873,10 @@ const Header = () => {
         {mobileMenuOpen && (
           <div
             id="mobile-menu"
-            className="absolute top-full left-0 w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 shadow-xl xl:hidden flex flex-col animate-in slide-in-from-top-2 duration-200 max-h-[85vh] overflow-y-auto"
+            className="absolute top-full left-0 w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 shadow-xl xl:hidden flex flex-col animate-in slide-in-from-top-2 duration-200 max-h-[80vh] overflow-y-auto"
           >
-            {/* Mobile Search */}
-            <div className="px-4 py-3 border-b border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-800">
+            {/* Mobile Search — pinned at top */}
+            <div className="px-4 py-3 border-b-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 sticky top-0 z-10">
               <form onSubmit={handleSearchSubmit} className="flex gap-2">
                 <div className="relative flex-1">
                   <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -880,24 +887,25 @@ const Header = () => {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="Search articles, modules, definitions…"
-                    className="w-full pl-9 pr-3 py-2.5 border border-slate-200 dark:border-slate-600 rounded-lg text-sm bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-400"
+                    className="w-full pl-9 pr-3 py-3 border border-slate-200 dark:border-slate-600 rounded-lg text-sm bg-slate-50 dark:bg-slate-700 text-slate-800 dark:text-slate-100 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-400"
                   />
                 </div>
                 <button
                   type="submit"
                   disabled={!searchQuery.trim()}
-                  className="text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 px-4 py-2.5 rounded-lg transition-colors shrink-0"
+                  className="text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 px-5 py-3 rounded-lg transition-colors shrink-0 min-h-[48px]"
                 >
                   Go
                 </button>
               </form>
             </div>
 
-            {/* Mobile section headers */}
+            {/* Mobile section accordions */}
             {[
               {
                 key: "learn",
-                label: "LEARN",
+                label: "Academy & Learning",
+                emoji: "🎓",
                 children: [
                   { label: "Personalized Learning", href: "/academy/personalized-learning", sub: [] },
                   { label: "Learning Tracks", href: "/academy/tracks", sub: [] },
@@ -910,7 +918,8 @@ const Header = () => {
               },
               {
                 key: "tools",
-                label: "TOOLS",
+                label: "Tools & Data",
+                emoji: "🧪",
                 children: [
                   { label: "HTR Simulator", href: "/htr-simulator", sub: [] },
                   { label: "Medicaid Eligibility", href: "/medicaid-eligibility-simulator", sub: [] },
@@ -921,12 +930,13 @@ const Header = () => {
                   { label: "Investment Tracker", href: "/investment-tracker", sub: [] },
                   { label: "Trending Topics", href: "/trending-topics", sub: [] },
                   { label: "Multimedia", href: "/multimedia", sub: [] },
-                  { label: "All 20 Lab Tools", href: "/research-lab", sub: [] },
+                  { label: "All Research Lab Tools", href: "/research-lab", sub: [] },
                 ],
               },
               {
                 key: "intelligence",
-                label: "PILLARS",
+                label: "Pillars of Intelligence",
+                emoji: "📚",
                 children: pillars.map((p) => ({
                   label: p.label,
                   href: p.href,
@@ -935,7 +945,8 @@ const Header = () => {
               },
               {
                 key: "states",
-                label: "STATES & PROGRAMS",
+                label: "States & Programs",
+                emoji: "🗺️",
                 children: [
                   { label: "Vermont Act 167", href: "/vermont-act-167", sub: [] },
                   { label: "Bed Capacity & Transfer", href: "/system-vitals", sub: [] },
@@ -947,7 +958,8 @@ const Header = () => {
               },
               {
                 key: "advise",
-                label: "ADVISORY & SERVICES",
+                label: "Advisory & Services",
+                emoji: "💼",
                 children: [
                   { label: "Advisory Hub", href: "/advisory", sub: [] },
                   { label: "Strategic Consulting", href: "/advisory/consulting", sub: [] },
@@ -956,26 +968,27 @@ const Header = () => {
                 ],
               },
             ].map((section) => (
-              <div key={section.key} className="border-b border-slate-100 dark:border-slate-700 last:border-0">
+              <div key={section.key} className="border-b border-slate-100 dark:border-slate-700">
                 <button
-                  onClick={() =>
-                    setMobileSection(mobileSection === section.key ? null : section.key)
-                  }
-                  className="w-full flex items-center justify-between px-4 py-3 font-black text-sm text-slate-800 dark:text-slate-100 uppercase tracking-wider bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+                  onClick={() => setMobileSection(mobileSection === section.key ? null : section.key)}
+                  className="w-full flex items-center justify-between px-4 py-4 min-h-[56px] font-bold text-base text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
                 >
-                  {section.label}
+                  <span className="flex items-center gap-3">
+                    <span className="text-xl leading-none">{section.emoji}</span>
+                    {section.label}
+                  </span>
                   <ChevronDownIcon
-                    className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${mobileSection === section.key ? "rotate-180" : ""}`}
+                    className={`w-5 h-5 text-slate-400 transition-transform duration-200 shrink-0 ${mobileSection === section.key ? "rotate-180" : ""}`}
                   />
                 </button>
                 {mobileSection === section.key && (
-                  <div className="py-2">
+                  <div className="bg-slate-50 dark:bg-slate-800 border-t border-slate-100 dark:border-slate-700">
                     {section.children.map((child) => (
                       <div key={child.href}>
                         <Link
                           href={child.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block px-6 py-2 text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-slate-100"
+                          className="flex items-center px-6 py-3.5 min-h-[48px] text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors border-b border-slate-100 dark:border-slate-700 last:border-0"
                         >
                           {child.label}
                         </Link>
@@ -984,8 +997,9 @@ const Header = () => {
                             key={sub.href}
                             href={sub.href}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="block pl-10 pr-4 py-1.5 text-xs text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-700 dark:hover:text-slate-200"
+                            className="flex items-center pl-10 pr-4 py-3 min-h-[44px] text-sm text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-slate-800 dark:hover:text-slate-200 transition-colors border-b border-slate-100 dark:border-slate-700 last:border-0"
                           >
+                            <ChevronRightIcon className="w-3 h-3 mr-2 shrink-0 text-slate-300" />
                             {sub.label}
                           </Link>
                         ))}
@@ -996,30 +1010,30 @@ const Header = () => {
               </div>
             ))}
 
-            {/* Mobile Auth + Quick Links */}
-            <div className="border-t border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-4 py-4 flex flex-col gap-3">
-              <div className="flex gap-2">
+            {/* Mobile Auth buttons */}
+            <div className="bg-slate-50 dark:bg-slate-800 px-4 py-4 flex flex-col gap-3">
+              <div className="flex gap-3">
                 <Link
                   href="/login"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex-1 text-center border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 text-sm font-bold py-2.5 rounded-lg hover:bg-white dark:hover:bg-slate-700 transition-colors"
+                  className="flex-1 text-center border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 text-sm font-bold py-3 rounded-xl hover:bg-white dark:hover:bg-slate-700 transition-colors min-h-[48px] flex items-center justify-center"
                 >
                   Log In
                 </Link>
                 <Link
                   href="/subscribe"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex-1 text-center bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold py-2.5 rounded-lg transition-colors"
+                  className="flex-1 text-center bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold py-3 rounded-xl transition-colors min-h-[48px] flex items-center justify-center"
                 >
                   Subscribe
                 </Link>
               </div>
-              <div className="flex items-center justify-center gap-4 text-xs text-slate-400 dark:text-slate-500">
-                <Link href="/faq" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600">FAQ</Link>
+              <div className="flex items-center justify-center gap-5 text-xs text-slate-400 dark:text-slate-500 pt-1">
+                <Link href="/faq" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600 dark:hover:text-slate-300">FAQ</Link>
                 <span>·</span>
-                <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600">About</Link>
+                <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600 dark:hover:text-slate-300">About</Link>
                 <span>·</span>
-                <Link href="/advisory/contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600">Contact</Link>
+                <Link href="/advisory/contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600 dark:hover:text-slate-300">Contact</Link>
               </div>
             </div>
           </div>

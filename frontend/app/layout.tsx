@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   title: "Health Transformation Review",
   description:
     "Policy, Economics, and Technology at the Nexus of Healthcare Reform.",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    viewportFit: "cover",
+  },
 };
 
 export default async function RootLayout({
