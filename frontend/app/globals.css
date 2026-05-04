@@ -89,6 +89,27 @@
   color: #f1f5f9;
 }
 
+/* ── Prevent horizontal overflow on mobile ───────────────────────────────── */
+html, body {
+  overflow-x: hidden;
+  /* Smooth scroll for anchor navigation */
+  scroll-behavior: smooth;
+}
+
+/* ── Minimum touch target for all interactive elements (WCAG 2.5.5) ──────── */
+button, a, [role="button"] {
+  min-height: var(--touch-target-min);
+}
+
+/* ── Hide scrollbar on horizontal scroll strips (mobile pillar row) ──────── */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
 /* ── Focus-visible ring — WCAG 2.4.7 ────────────────────────────────────── */
 /* Ensures all keyboard-focused interactive elements have a visible indicator */
 :focus-visible {
