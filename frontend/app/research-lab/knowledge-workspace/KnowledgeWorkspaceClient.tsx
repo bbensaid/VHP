@@ -1,13 +1,13 @@
 'use client'
 
-import { useState } from 'react'
+import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
 
-const EvidenceLibrary      = dynamic(() => import('@/components/research/EvidenceLibrary'),      { ssr: false })
-const WorkforceModeler     = dynamic(() => import('@/components/research/WorkforceModeler'),     { ssr: false })
-const InnovationLeaderboard = dynamic(() => import('@/components/research/InnovationLeaderboard'), { ssr: false })
-const ResearchWorkspace    = dynamic(() => import('@/components/research/ResearchWorkspace'),    { ssr: false })
+const EvidenceLibrary        = dynamic(() => import('@/components/research/EvidenceLibrary'),        { ssr: false })
+const WorkforceModeler       = dynamic(() => import('@/components/research/WorkforceModeler'),       { ssr: false })
+const InnovationLeaderboard  = dynamic(() => import('@/components/research/InnovationLeaderboard'),  { ssr: false })
+const ResearchWorkspace      = dynamic(() => import('@/components/research/ResearchWorkspace'),      { ssr: false })
 const VBCReadinessAssessment = dynamic(() => import('@/components/research/VBCReadinessAssessment'), { ssr: false })
 const TransformationScorecard = dynamic(() => import('@/components/research/TransformationScorecard'), { ssr: false })
 
@@ -53,12 +53,21 @@ const TABS = [
   },
 ]
 
-const VALID_TABS = ['evidence', 'workforce', 'leaderboard', 'scorecard', 'readiness', 'workspace']
+const VALID_TABS = TABS.map(t => t.id)
+const DEFAULT_TAB = 'evidence'
 
-export default function KnowledgeWorkspaceClient({ initialTab }: { initialTab?: string }) {
-  const [activeTab, setActiveTab] = useState(
-    VALID_TABS.includes(initialTab ?? '') ? initialTab! : 'evidence'
-  )
+export default function KnowledgeWorkspaceClient() {
+  const searchParams = useSearchParams()
+  const router = useRouter()
+  const pathname = usePathname()
+  const rawTab = searchParams.get('tab') ?? ''
+  const activeTab = VALID_TABS.includes(rawTab) ? rawTab : DEFAULT_TAB
+
+  function setTab(id: string) {
+    const params = new URLSearchParams(searchParams.toString())
+    params.set('tab', id)
+    router.push(`${pathname}?${params.toString()}`)
+  }
 
   return (
     <LabPageShell
@@ -78,12 +87,11 @@ export default function KnowledgeWorkspaceClient({ initialTab }: { initialTab?: 
         'Turn your workforce gap analysis into a funded recruitment and retention strategy with real implementation support',
       ]}
     >
-      {/* Tab nav */}
       <nav className="flex flex-wrap items-end border border-slate-200 rounded-t-xl px-2 bg-slate-50/80 backdrop-blur-sm pt-2 gap-y-1 mb-8">
         {TABS.map(tab => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => setTab(tab.id)}
             className={`relative flex items-center gap-2 px-5 py-2.5 text-sm font-bold transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r mr-1 ${
               activeTab === tab.id
                 ? 'bg-slate-100 border-slate-800 text-slate-900 z-10 -mb-px'
@@ -96,13 +104,12 @@ export default function KnowledgeWorkspaceClient({ initialTab }: { initialTab?: 
         ))}
       </nav>
 
-      {/* Active tool panel */}
-      {activeTab === 'evidence'    && <div><ToolHeader icon="📖"  label="Evidence Library"            badge="Research"      desc={TABS[0].desc} /><EvidenceLibrary /></div>}
-      {activeTab === 'workforce'   && <div><ToolHeader icon="👨‍⚕️" label="Workforce Modeler"            badge="Workforce"     desc={TABS[1].desc} /><WorkforceModeler /></div>}
-      {activeTab === 'leaderboard' && <div><ToolHeader icon="🏆"  label="Innovation Leaderboard"      badge="Benchmarking"  desc={TABS[2].desc} /><InnovationLeaderboard /></div>}
-      {activeTab === 'scorecard'   && <div><ToolHeader icon="🎯"  label="Transformation Scorecard"    badge="Executive"     desc={TABS[3].desc} /><TransformationScorecard /></div>}
-      {activeTab === 'readiness'   && <div><ToolHeader icon="📊"  label="VBC Readiness Assessment"    badge="Transformation" desc={TABS[4].desc} /><VBCReadinessAssessment /></div>}
-      {activeTab === 'workspace'   && <div><ToolHeader icon="🗂️"  label="Research Workspace"          badge="Workspace"     desc={TABS[5].desc} /><ResearchWorkspace /></div>}
+      {activeTab === 'evidence'    && <div><ToolHeader icon="📖"  label="Evidence Library"         badge="Research"       desc={TABS[0].desc} /><EvidenceLibrary /></div>}
+      {activeTab === 'workforce'   && <div><ToolHeader icon="👨‍⚕️" label="Workforce Modeler"         badge="Workforce"      desc={TABS[1].desc} /><WorkforceModeler /></div>}
+      {activeTab === 'leaderboard' && <div><ToolHeader icon="🏆"  label="Innovation Leaderboard"   badge="Benchmarking"   desc={TABS[2].desc} /><InnovationLeaderboard /></div>}
+      {activeTab === 'scorecard'   && <div><ToolHeader icon="🎯"  label="Transformation Scorecard" badge="Executive"      desc={TABS[3].desc} /><TransformationScorecard /></div>}
+      {activeTab === 'readiness'   && <div><ToolHeader icon="📊"  label="VBC Readiness Assessment" badge="Transformation" desc={TABS[4].desc} /><VBCReadinessAssessment /></div>}
+      {activeTab === 'workspace'   && <div><ToolHeader icon="🗂️"  label="Research Workspace"       badge="Workspace"      desc={TABS[5].desc} /><ResearchWorkspace /></div>}
     </LabPageShell>
   )
 }

@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import ConnectHubClient from './ConnectHubClient'
 
 export const metadata = {
@@ -9,7 +10,7 @@ export const metadata = {
 export default function ConnectHubPage() {
   return (
     <div className="min-h-screen bg-slate-50 p-6">
-      <ConnectHubClient />
+      <Suspense><ConnectHubClient /></Suspense>
     </div>
   )
 }

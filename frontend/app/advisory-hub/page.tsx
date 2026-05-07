@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import AdvisoryHubClient from './AdvisoryHubClient'
 
 export const metadata = {
@@ -9,7 +10,7 @@ export const metadata = {
 export default function AdvisoryHubPage() {
   return (
     <div className="min-h-screen bg-slate-50 p-6">
-      <AdvisoryHubClient />
+      <Suspense><AdvisoryHubClient /></Suspense>
     </div>
   )
 }

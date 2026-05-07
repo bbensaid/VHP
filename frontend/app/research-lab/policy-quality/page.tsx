@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import PolicyQualityClient from './PolicyQualityClient'
 
 export const metadata = {
@@ -5,10 +6,10 @@ export const metadata = {
   description: 'Simulate Medicaid waivers, global budgets, HEDIS/Star ratings, MIPS, actuarial models, and hospital financial stress tests.',
 }
 
-export default function PolicyQualityPage({
-  searchParams,
-}: {
-  searchParams: { tab?: string }
-}) {
-  return <PolicyQualityClient initialTab={searchParams.tab} />
+export default function PolicyQualityPage() {
+  return (
+    <Suspense>
+      <PolicyQualityClient />
+    </Suspense>
+  )
 }

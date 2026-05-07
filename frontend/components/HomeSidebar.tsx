@@ -87,6 +87,8 @@ const SECTIONS: Section[] = [
     ],
     labItems: [
       { href: "/research-lab/policy-quality?tab=policy",           label: "Policy Simulator" },
+      { href: "/research-lab/policy-quality?tab=medicaid-wr",      label: "Work Requirements Calculator" },
+      { href: "/research-lab/policy-quality?tab=hr1-cliff",        label: "H.R. 1 Cliff Scenario" },
       { href: "/research-lab/knowledge-workspace?tab=leaderboard", label: "Innovation Leaderboard" },
     ],
   },
@@ -108,9 +110,10 @@ const SECTIONS: Section[] = [
       { href: "/economics/investment", label: "Healthcare Investment Trends" },
     ],
     labItems: [
-      { href: "/research-lab/payment-models?tab=apm-design",  label: "APM Design Lab" },
+      { href: "/research-lab/payment-models?tab=apm-design",   label: "APM Design Lab" },
       { href: "/research-lab/payment-models?tab=apm-calc",    label: "Shared Savings Calculator" },
       { href: "/research-lab/payment-models?tab=cea",         label: "CEA Calculator" },
+      { href: "/research-lab/payment-models?tab=gb-transition", label: "Global Budget Transition Modeler" },
       { href: "/research-lab/policy-quality?tab=scorecard",   label: "Hospital Financial Stress Test" },
       { href: "/research-lab/policy-quality?tab=hta",         label: "HTA Studio" },
       { href: "/research-lab/policy-quality?tab=actuarial",   label: "Actuarial Lab" },
@@ -261,13 +264,16 @@ const SECTIONS: Section[] = [
     items: [
       { href: "/vermont-medicaid",    label: "Vermont Medicaid",    icon: DocumentTextIcon },
       { href: "/vermont-act-167",     label: "Vermont Act 167 (2022)", icon: MapPinIcon },
-      { href: "/vermont-act-68",      label: "Vermont Act 68 (2025)", icon: MapPinIcon },
+      { href: "/vermont-act-68",          label: "Vermont Act 68 (2025)",     icon: MapPinIcon },
+      { href: "/vermont-act-68/simulator", label: "Act 68 Simulator",           icon: TableCellsIcon },
       { href: "/vermont-rht-program", label: "Vermont RHT Program",  icon: DocumentTextIcon },
       { href: "/system-vitals",       label: "Bed Capacity & Transfer", icon: TableCellsIcon },
       { href: "/ahead-model",         label: "AHEAD Model",         icon: DocumentTextIcon },
       { href: "/states",              label: "All States Explorer", icon: GlobeAmericasIcon },
       { href: "/dashboard",           label: "50-State Dashboard",  icon: TableCellsIcon },
       { href: "/california-calaim",   label: "California CalAIM",   icon: MapPinIcon },
+      { href: "/oregon-cco",          label: "Oregon CCO 3.0",       icon: MapPinIcon },
+      { href: "/dashboard/simulator", label: "CMS Rural Health Transformation", icon: TableCellsIcon },
     ],
   },
 
@@ -317,7 +323,7 @@ function getSectionForPath(path: string, searchParams: URLSearchParams | null): 
 
   if (path === "/academy" || path.startsWith("/academy/")) return "learn";
 
-  const statesPrefixes = ["/vermont-medicaid", "/vermont-act-167", "/vermont-act-68", "/vermont-rht-program", "/california-calaim", "/states", "/dashboard", "/ahead-model", "/system-vitals"];
+  const statesPrefixes = ["/vermont-medicaid", "/vermont-act-167", "/vermont-act-68", "/vermont-rht-program", "/california-calaim", "/oregon-cco", "/states", "/dashboard", "/ahead-model", "/system-vitals"];
   if (statesPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "states";
 
   const toolsPrefixes = ["/htr-simulator", "/medicaid-eligibility-simulator", "/hti-dashboard", "/the-wire", "/investment-tracker", "/transformation-friction-index", "/impact-simulation", "/multimedia", "/trending-topics"];
