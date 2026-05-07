@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import InteroperabilityClient from './InteroperabilityClient'
 
 export const metadata = {
@@ -5,10 +6,10 @@ export const metadata = {
   description: 'Build FHIR R4 resources, test CDS Hooks, validate ONC compliance, and run HCC v28 risk stratification models.',
 }
 
-export default function InteroperabilityPage({
-  searchParams,
-}: {
-  searchParams: { tab?: string }
-}) {
-  return <InteroperabilityClient initialTab={searchParams.tab} />
+export default function InteroperabilityPage() {
+  return (
+    <Suspense>
+      <InteroperabilityClient />
+    </Suspense>
+  )
 }

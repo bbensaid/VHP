@@ -1,4 +1,5 @@
 // frontend/app/trending-topics/page.tsx
+import { Suspense } from "react";
 import TrendingTopicsClientPage from "./TrendingTopicsClientPage";
 
 // FIX: Mapped to the actual existing pages in your app that match these topics
@@ -14,10 +15,12 @@ export const metadata = {
 
 export default function TrendingTopicsHubPage() {
   return (
-    <TrendingTopicsClientPage
-      vbcTab={<VBCPage />}
-      workforceTab={<WorkforcePage />}
-      telehealthTab={<TelehealthPage />}
-    />
+    <Suspense>
+      <TrendingTopicsClientPage
+        vbcTab={<VBCPage />}
+        workforceTab={<WorkforcePage />}
+        telehealthTab={<TelehealthPage />}
+      />
+    </Suspense>
   );
 }

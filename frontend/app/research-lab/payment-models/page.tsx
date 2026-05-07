@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import PaymentModelsClient from './PaymentModelsClient'
 
 export const metadata = {
@@ -5,10 +6,10 @@ export const metadata = {
   description: 'Design alternative payment models, episode bundles, global budgets, shared savings scenarios, and cost-effectiveness analyses.',
 }
 
-export default function PaymentModelsPage({
-  searchParams,
-}: {
-  searchParams: { tab?: string }
-}) {
-  return <PaymentModelsClient initialTab={searchParams.tab} />
+export default function PaymentModelsPage() {
+  return (
+    <Suspense>
+      <PaymentModelsClient />
+    </Suspense>
+  )
 }

@@ -1,4 +1,5 @@
 // frontend/app/multimedia/page.tsx
+import { Suspense } from "react";
 import MultimediaClientPage from "./MultimediaClientPage";
 
 // Import the ONLY media component that currently exists in your codebase
@@ -32,10 +33,12 @@ export const metadata = {
 
 export default function MultimediaHubPage() {
   return (
-    <MultimediaClientPage
-      podcastsTab={<PodcastsPlaceholder />}
-      videosTab={<VideosPage />}
-      libraryTab={<LibraryPlaceholder />}
-    />
+    <Suspense>
+      <MultimediaClientPage
+        podcastsTab={<PodcastsPlaceholder />}
+        videosTab={<VideosPage />}
+        libraryTab={<LibraryPlaceholder />}
+      />
+    </Suspense>
   );
 }
