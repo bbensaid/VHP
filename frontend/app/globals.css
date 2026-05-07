@@ -96,8 +96,11 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* ── Minimum touch target for all interactive elements (WCAG 2.5.5) ──────── */
-button, a, [role="button"] {
+/* ── Minimum touch target for buttons only (WCAG 2.5.5) ─────────────────────
+   Applying min-height to all <a> tags breaks inline text links and nav items.
+   Touch target size for links is handled per-component via padding/py classes.
+─────────────────────────────────────────────────────────────────────────── */
+button {
   min-height: var(--touch-target-min);
 }
 

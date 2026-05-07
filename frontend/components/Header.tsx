@@ -730,7 +730,7 @@ const Header = () => {
       </div>
 
       {/* 2. MAIN NAV BAR */}
-      <div className="bg-white dark:bg-slate-900 py-1 border-b border-slate-200 dark:border-slate-700 w-full relative">
+      <div className="bg-white dark:bg-slate-900 py-1 border-b border-slate-200 dark:border-slate-700 w-full">
         <div className="w-full px-4 flex items-center gap-0">
 
           {/* LEFT: Toggle + Logo — w-125 matches AppShell breadcrumbs spacer for column alignment */}
@@ -869,11 +869,11 @@ const Header = () => {
           </div>
         </div>
 
-        {/* MOBILE MENU */}
+        {/* MOBILE MENU — rendered in-flow inside the sticky header so it pushes page content down */}
         {mobileMenuOpen && (
           <div
             id="mobile-menu"
-            className="absolute top-full left-0 w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 shadow-xl xl:hidden flex flex-col animate-in slide-in-from-top-2 duration-200 max-h-[80vh] overflow-y-auto"
+            className="w-full bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 xl:hidden flex flex-col animate-in slide-in-from-top-2 duration-200 max-h-[75vh] overflow-y-auto shadow-lg"
           >
             {/* Mobile Search — pinned at top */}
             <div className="px-4 py-3 border-b-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 sticky top-0 z-10">
