@@ -148,7 +148,7 @@ const USE_CASES = [
     subtitle: "Medi-Cal Transformation",
     state: "California",
     stateCode: "CA",
-    status: "coming-soon",
+    status: "live",
     description:
       "CalAIM — California's $6.7B Medi-Cal transformation — introduces whole-person care, enhanced care management, community supports, and population health management across 58 counties.",
     pillars: ["policy", "financial", "equity", "clinical"],
@@ -166,7 +166,7 @@ const USE_CASES = [
     subtitle: "Coordinated Care Organizations",
     state: "Oregon",
     stateCode: "OR",
-    status: "coming-soon",
+    status: "live",
     description:
       "Oregon's third-generation Coordinated Care Organizations model — integrating physical, behavioral, and oral health under global budgets with strong equity accountability and community advisory boards.",
     pillars: ["policy", "financial", "equity", "clinical"],
@@ -184,7 +184,7 @@ const USE_CASES = [
     subtitle: "Federal Rural Health Initiative",
     state: "National",
     stateCode: "US",
-    status: "coming-soon",
+    status: "live",
     description:
       "Models CMS's Rural Health Transformation Program — global budget demonstrations, essential hospital designations, and payment reforms across 50-state rural and critical access hospital networks.",
     pillars: ["policy", "technology", "financial", "equity"],

@@ -107,7 +107,7 @@ export async function middleware(request: NextRequest) {
     pathname.startsWith("/api/") ||
     pathname.startsWith("/studio");
 
-  if (!betaExempt && !request.cookies.get(BETA_COOKIE)?.value) {
+  if (!BYPASS_AUTH && !betaExempt && !request.cookies.get(BETA_COOKIE)?.value) {
     const gateUrl = new URL("/beta", request.url);
     // Preserve the intended destination so we can redirect back after entry
     if (pathname !== "/") gateUrl.searchParams.set("from", pathname);

@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { getRhtState, getPerformanceIndex, getHospitalsByState } from "@/lib/sanity-dashboard-queries";
 import { getStateMetrics, type StateHealthRow } from "@/lib/db/states";
 import { getRhtProfile, type RhtProfileRow } from "@/lib/db/rht-profiles";
@@ -113,11 +114,13 @@ export default async function DynamicStatePage({
   if (!indexData && !programData) return notFound();
 
   return (
-    <StateDetailClientPage
-      indexData={indexData}
-      programData={programData}
-      stateSlug={stateSlug}
-      hospitals={hospitals}
-    />
+    <Suspense>
+      <StateDetailClientPage
+        indexData={indexData}
+        programData={programData}
+        stateSlug={stateSlug}
+        hospitals={hospitals}
+      />
+    </Suspense>
   );
 }

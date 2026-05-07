@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
 
@@ -33,12 +33,21 @@ const TABS = [
   },
 ]
 
-const VALID_TABS = ['ai', 'digital']
+const VALID_TABS = TABS.map(t => t.id)
+const DEFAULT_TAB = 'ai'
 
-export default function TechnologyAIClient({ initialTab }: { initialTab?: string }) {
-  const [activeTab, setActiveTab] = useState(
-    VALID_TABS.includes(initialTab ?? '') ? initialTab! : 'ai'
-  )
+export default function TechnologyAIClient() {
+  const searchParams = useSearchParams()
+  const router = useRouter()
+  const pathname = usePathname()
+  const rawTab = searchParams.get('tab') ?? ''
+  const activeTab = VALID_TABS.includes(rawTab) ? rawTab : DEFAULT_TAB
+
+  function setTab(id: string) {
+    const params = new URLSearchParams(searchParams.toString())
+    params.set('tab', id)
+    router.push(`${pathname}?${params.toString()}`)
+  }
 
   return (
     <LabPageShell
@@ -58,12 +67,11 @@ export default function TechnologyAIClient({ initialTab }: { initialTab?: string
         'Design an RPM or telehealth program that maximizes CMS reimbursement from day one',
       ]}
     >
-      {/* Tab nav */}
       <nav className="flex flex-wrap items-end border border-slate-200 rounded-t-xl px-2 bg-slate-50/80 backdrop-blur-sm pt-2 gap-y-1 mb-8">
         {TABS.map(tab => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => setTab(tab.id)}
             className={`relative flex items-center gap-2 px-5 py-2.5 text-sm font-bold transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r mr-1 ${
               activeTab === tab.id
                 ? 'bg-slate-100 border-slate-800 text-slate-900 z-10 -mb-px'
@@ -76,9 +84,8 @@ export default function TechnologyAIClient({ initialTab }: { initialTab?: string
         ))}
       </nav>
 
-      {/* Active tool panel */}
-      {activeTab === 'ai'      && <div><ToolHeader icon="🤖" label="AI Clinical Governance Lab"   badge="Artificial Intelligence" desc={TABS[0].desc} /><AIAnalyticsLab /></div>}
-      {activeTab === 'digital' && <div><ToolHeader icon="📱" label="Digital Health Lab"  badge="Digital Health"         desc={TABS[1].desc} /><DigitalHealthLab /></div>}
+      {activeTab === 'ai'      && <div><ToolHeader icon="🤖" label="AI Clinical Governance Lab" badge="Artificial Intelligence" desc={TABS[0].desc} /><AIAnalyticsLab /></div>}
+      {activeTab === 'digital' && <div><ToolHeader icon="📱" label="Digital Health Lab"         badge="Digital Health"         desc={TABS[1].desc} /><DigitalHealthLab /></div>}
     </LabPageShell>
   )
 }
