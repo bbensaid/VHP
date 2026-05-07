@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import TechnologyAIClient from './TechnologyAIClient'
 
 export const metadata = {
@@ -5,10 +6,10 @@ export const metadata = {
   description: 'Evaluate AI model performance, audit algorithmic bias, build governance frameworks, and model RPM and telehealth ROI.',
 }
 
-export default function TechnologyAIPage({
-  searchParams,
-}: {
-  searchParams: { tab?: string }
-}) {
-  return <TechnologyAIClient initialTab={searchParams.tab} />
+export default function TechnologyAIPage() {
+  return (
+    <Suspense>
+      <TechnologyAIClient />
+    </Suspense>
+  )
 }

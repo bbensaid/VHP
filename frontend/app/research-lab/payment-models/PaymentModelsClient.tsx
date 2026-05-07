@@ -1,12 +1,13 @@
 'use client'
 
-import { useState } from 'react'
+import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
 
-const APMDesignLab   = dynamic(() => import('@/components/research/APMDesignLab'),   { ssr: false })
-const APMCalculator  = dynamic(() => import('@/components/research/APMCalculator'),  { ssr: false })
-const CEACalculator  = dynamic(() => import('@/components/research/CEACalculator'),  { ssr: false })
+const APMDesignLab                = dynamic(() => import('@/components/research/APMDesignLab'),                { ssr: false })
+const APMCalculator               = dynamic(() => import('@/components/research/APMCalculator'),               { ssr: false })
+const CEACalculator               = dynamic(() => import('@/components/research/CEACalculator'),               { ssr: false })
+const GlobalBudgetTransitionModeler = dynamic(() => import('@/components/research/GlobalBudgetTransitionModeler'), { ssr: false })
 
 function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string; badge: string; desc: string }) {
   return (
@@ -36,20 +37,33 @@ const TABS = [
     id: 'cea', icon: '⚗️', label: 'Cost-Effectiveness Analysis Calculator', badge: 'Health Economics',
     desc: 'Calculate cost per QALY, NNT, and break-even timeline for any clinical intervention. Compare against ICER, NICE, and CMS willingness-to-pay thresholds.',
   },
+  {
+    id: 'gb-transition', icon: '📊', label: 'Global Budget Transition Modeler', badge: 'Global Budget',
+    desc: 'Model the revenue trajectory of transitioning from FFS to a global budget over 3–7 years. Projects operating margin, admin savings, utilization impact, and risk corridor exposure by organization type.',
+  },
 ]
 
-const VALID_TABS = ['apm-design', 'apm-calc', 'cea']
+const VALID_TABS = ['apm-design', 'apm-calc', 'cea', 'gb-transition']
+const DEFAULT_TAB = 'apm-design'
 
-export default function PaymentModelsClient({ initialTab }: { initialTab?: string }) {
-  const [activeTab, setActiveTab] = useState(
-    VALID_TABS.includes(initialTab ?? '') ? initialTab! : 'apm-design'
-  )
+export default function PaymentModelsClient() {
+  const searchParams = useSearchParams()
+  const router = useRouter()
+  const pathname = usePathname()
+  const rawTab = searchParams.get('tab') ?? ''
+  const activeTab = VALID_TABS.includes(rawTab) ? rawTab : DEFAULT_TAB
+
+  function setTab(id: string) {
+    const params = new URLSearchParams(searchParams.toString())
+    params.set('tab', id)
+    router.push(`${pathname}?${params.toString()}`)
+  }
 
   return (
     <LabPageShell
       icon="💰"
       label="Payment Models & VBC"
-      desc="Design alternative payment models from the ground up — configure episode bundles, global budgets, benchmark methodologies, and model cost-effectiveness thresholds."
+      desc="Design alternative payment models from the ground up — configure episode bundles, global budgets, benchmark methodologies, model cost-effectiveness thresholds, and project your global budget transition trajectory."
       accentClass="bg-emerald-600"
       accentLight="bg-emerald-100 text-emerald-700"
       currentHref="/research-lab/payment-models"
@@ -68,7 +82,7 @@ export default function PaymentModelsClient({ initialTab }: { initialTab?: strin
         {TABS.map(tab => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => setTab(tab.id)}
             className={`relative flex items-center gap-2 px-5 py-2.5 text-sm font-bold transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r mr-1 ${
               activeTab === tab.id
                 ? 'bg-slate-100 border-slate-800 text-slate-900 z-10 -mb-px'
@@ -82,9 +96,10 @@ export default function PaymentModelsClient({ initialTab }: { initialTab?: strin
       </nav>
 
       {/* Active tool panel */}
-      {activeTab === 'apm-design' && <div><ToolHeader icon="🏗️" label="APM Design Lab"                     badge="Payment Innovation" desc={TABS[0].desc} /><APMDesignLab /></div>}
-      {activeTab === 'apm-calc'   && <div><ToolHeader icon="📈" label="APM Shared Savings Calculator"      badge="Value-Based Care"   desc={TABS[1].desc} /><APMCalculator /></div>}
-      {activeTab === 'cea'        && <div><ToolHeader icon="⚗️" label="Cost-Effectiveness Analysis Calculator" badge="Health Economics" desc={TABS[2].desc} /><CEACalculator /></div>}
+      {activeTab === 'apm-design'   && <div><ToolHeader icon="🏗️" label="APM Design Lab"                        badge="Payment Innovation" desc={TABS[0].desc} /><APMDesignLab /></div>}
+      {activeTab === 'apm-calc'     && <div><ToolHeader icon="📈" label="APM Shared Savings Calculator"         badge="Value-Based Care"   desc={TABS[1].desc} /><APMCalculator /></div>}
+      {activeTab === 'cea'          && <div><ToolHeader icon="⚗️" label="Cost-Effectiveness Analysis Calculator" badge="Health Economics"   desc={TABS[2].desc} /><CEACalculator /></div>}
+      {activeTab === 'gb-transition' && <div><ToolHeader icon="📊" label="Global Budget Transition Modeler"      badge="Global Budget"      desc={TABS[3].desc} /><GlobalBudgetTransitionModeler /></div>}
     </LabPageShell>
   )
 }

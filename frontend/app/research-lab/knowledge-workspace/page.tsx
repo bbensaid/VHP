@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import KnowledgeWorkspaceClient from './KnowledgeWorkspaceClient'
 
 export const metadata = {
@@ -5,10 +6,10 @@ export const metadata = {
   description: 'Access the CEA evidence library, CMMI model tracker, workforce models, innovation leaderboard, and your research workspace.',
 }
 
-export default function KnowledgeWorkspacePage({
-  searchParams,
-}: {
-  searchParams: { tab?: string }
-}) {
-  return <KnowledgeWorkspaceClient initialTab={searchParams.tab} />
+export default function KnowledgeWorkspacePage() {
+  return (
+    <Suspense>
+      <KnowledgeWorkspaceClient />
+    </Suspense>
+  )
 }

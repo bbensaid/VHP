@@ -1,14 +1,16 @@
 'use client'
 
-import { useState } from 'react'
+import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
 
-const PolicySimulator         = dynamic(() => import('@/components/research/PolicySimulator'),          { ssr: false })
-const ClinicalQualityOptimizer = dynamic(() => import('@/components/research/ClinicalQualityOptimizer'), { ssr: false })
-const HospitalFinancialScorecard = dynamic(() => import('@/components/research/HospitalFinancialScorecard'), { ssr: false })
-const HTAStudio               = dynamic(() => import('@/components/research/HTAStudio'),                { ssr: false })
-const ActuarialLab            = dynamic(() => import('@/components/research/ActuarialLab'),             { ssr: false })
+const PolicySimulator                    = dynamic(() => import('@/components/research/PolicySimulator'),                    { ssr: false })
+const ClinicalQualityOptimizer           = dynamic(() => import('@/components/research/ClinicalQualityOptimizer'),           { ssr: false })
+const HospitalFinancialScorecard         = dynamic(() => import('@/components/research/HospitalFinancialScorecard'),         { ssr: false })
+const HTAStudio                          = dynamic(() => import('@/components/research/HTAStudio'),                          { ssr: false })
+const ActuarialLab                       = dynamic(() => import('@/components/research/ActuarialLab'),                       { ssr: false })
+const MedicaidWorkRequirementsCalculator = dynamic(() => import('@/components/research/MedicaidWorkRequirementsCalculator'), { ssr: false })
+const HR1CliffScenario                   = dynamic(() => import('@/components/research/HR1CliffScenario'),                   { ssr: false })
 
 function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string; badge: string; desc: string }) {
   return (
@@ -46,20 +48,38 @@ const TABS = [
     id: 'actuarial', icon: '📉', label: 'Actuarial Lab', badge: 'Actuarial Science',
     desc: 'Calculate ACA actuarial value, develop premium rates across 3 methodologies, model adverse selection death spirals, and analyze IRA 2022 drug pricing impacts.',
   },
+  {
+    id: 'medicaid-wr', icon: '📋', label: 'Work Requirements Calculator', badge: 'H.R. 1 · Medicaid',
+    desc: 'Model projected coverage loss, administrative burden, and hospital revenue impact from H.R. 1 Medicaid work requirements across 10 states with three impact scenarios.',
+  },
+  {
+    id: 'hr1-cliff', icon: '📉', label: 'H.R. 1 Cliff Scenario', badge: 'Federal Legislation',
+    desc: 'Model the post-2030 Medicaid cliff — when one-time RHT investment capital expires while H.R. 1 Medicaid cuts take permanent effect. Project hospital revenue trajectory by state.',
+  },
 ]
 
-const VALID_TABS = ['policy', 'quality', 'scorecard', 'hta', 'actuarial']
+const VALID_TABS = TABS.map(t => t.id)
+const DEFAULT_TAB = 'policy'
 
-export default function PolicyQualityClient({ initialTab }: { initialTab?: string }) {
-  const [activeTab, setActiveTab] = useState(
-    VALID_TABS.includes(initialTab ?? '') ? initialTab! : 'policy'
-  )
+export default function PolicyQualityClient() {
+  const searchParams = useSearchParams()
+  const router = useRouter()
+  const pathname = usePathname()
+
+  const rawTab = searchParams.get('tab') ?? ''
+  const activeTab = VALID_TABS.includes(rawTab) ? rawTab : DEFAULT_TAB
+
+  function setTab(id: string) {
+    const params = new URLSearchParams(searchParams.toString())
+    params.set('tab', id)
+    router.push(`${pathname}?${params.toString()}`)
+  }
 
   return (
     <LabPageShell
       icon="📋"
       label="Policy, Economics & Clinical Tools"
-      desc="Policy Simulator (Policy pillar) · Clinical Quality Optimizer (Clinical pillar) · Hospital Financial Stress Test, HTA Studio & Actuarial Lab (Economics pillar). Five tools spanning three domains on one page."
+      desc="Policy Simulator · Clinical Quality Optimizer · Hospital Financial Stress Test · HTA Studio · Actuarial Lab · Medicaid Work Requirements Calculator · H.R. 1 Cliff Scenario. Seven tools spanning Policy, Economics, and Clinical domains."
       accentClass="bg-sky-600"
       accentLight="bg-sky-100 text-sky-700"
       currentHref="/research-lab/policy-quality"
@@ -78,7 +98,7 @@ export default function PolicyQualityClient({ initialTab }: { initialTab?: strin
         {TABS.map(tab => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => setTab(tab.id)}
             className={`relative flex items-center gap-2 px-5 py-2.5 text-sm font-bold transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r mr-1 ${
               activeTab === tab.id
                 ? 'bg-slate-100 border-slate-800 text-slate-900 z-10 -mb-px'
@@ -92,11 +112,13 @@ export default function PolicyQualityClient({ initialTab }: { initialTab?: strin
       </nav>
 
       {/* Active tool panel */}
-      {activeTab === 'policy'    && <div><ToolHeader icon="🏛️" label="Policy Simulator"            badge="Health Policy"              desc={TABS[0].desc} /><PolicySimulator /></div>}
-      {activeTab === 'quality'   && <div><ToolHeader icon="🎯" label="Clinical Quality Optimizer"  badge="Quality Improvement"        desc={TABS[1].desc} /><ClinicalQualityOptimizer /></div>}
-      {activeTab === 'scorecard' && <div><ToolHeader icon="🏥" label="Hospital Financial Stress Test" badge="Hospital Finance"            desc={TABS[2].desc} /><HospitalFinancialScorecard /></div>}
-      {activeTab === 'hta'       && <div><ToolHeader icon="🔎" label="HTA Studio"                  badge="Health Technology Assessment" desc={TABS[3].desc} /><HTAStudio /></div>}
-      {activeTab === 'actuarial' && <div><ToolHeader icon="📉" label="Actuarial Lab"               badge="Actuarial Science"           desc={TABS[4].desc} /><ActuarialLab /></div>}
+      {activeTab === 'policy'      && <div><ToolHeader icon="🏛️" label="Policy Simulator"                    badge="Health Policy"              desc={TABS[0].desc} /><PolicySimulator /></div>}
+      {activeTab === 'quality'     && <div><ToolHeader icon="🎯" label="Clinical Quality Optimizer"          badge="Quality Improvement"        desc={TABS[1].desc} /><ClinicalQualityOptimizer /></div>}
+      {activeTab === 'scorecard'   && <div><ToolHeader icon="🏥" label="Hospital Financial Stress Test"      badge="Hospital Finance"            desc={TABS[2].desc} /><HospitalFinancialScorecard /></div>}
+      {activeTab === 'hta'         && <div><ToolHeader icon="🔎" label="HTA Studio"                          badge="Health Technology Assessment" desc={TABS[3].desc} /><HTAStudio /></div>}
+      {activeTab === 'actuarial'   && <div><ToolHeader icon="📉" label="Actuarial Lab"                       badge="Actuarial Science"           desc={TABS[4].desc} /><ActuarialLab /></div>}
+      {activeTab === 'medicaid-wr' && <div><ToolHeader icon="📋" label="Work Requirements Calculator"        badge="H.R. 1 · Medicaid"           desc={TABS[5].desc} /><MedicaidWorkRequirementsCalculator /></div>}
+      {activeTab === 'hr1-cliff'   && <div><ToolHeader icon="📉" label="H.R. 1 Cliff Scenario"               badge="Federal Legislation"         desc={TABS[6].desc} /><HR1CliffScenario /></div>}
     </LabPageShell>
   )
 }
