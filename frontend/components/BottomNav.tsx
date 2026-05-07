@@ -34,7 +34,7 @@ export default function BottomNav() {
 
   return (
     <nav
-      className="lg:hidden fixed bottom-0 left-0 right-0 z-[45] bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 flex items-stretch"
+      className="md:hidden fixed bottom-0 left-0 right-0 z-[45] bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 flex items-stretch"
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
       aria-label="Bottom navigation"
     >

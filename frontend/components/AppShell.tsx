@@ -117,7 +117,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
       )}
 
       {/* 2. Main Content Area */}
-      <div className="flex flex-col lg:flex-row mt-3 md:mt-4 w-full px-3 md:px-4 transition-all relative z-0 pb-20 lg:pb-0">
+      <div className="flex flex-col lg:flex-row mt-3 md:mt-4 w-full px-3 md:px-4 transition-all relative z-0 pb-20 md:pb-0">
         <CollapsibleSidebar
           side="left"
           isOpen={isLeftOpen}
@@ -147,11 +147,11 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         </CollapsibleSidebar>
       </div>
 
-      {/* 3. Floating "Ask AI" button — desktop only, hidden on mobile (BottomNav handles it) */}
+      {/* 3. Floating "Ask AI" button — tablet+ only, hidden on phone (BottomNav handles it) */}
       {!isRightOpen && (
         <button
           onClick={() => setRightOpen(true)}
-          className="hidden lg:flex fixed bottom-6 right-6 z-(--z-overlay) items-center gap-2 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm font-bold"
+          className="hidden md:flex fixed bottom-6 right-6 z-(--z-overlay) items-center gap-2 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm font-bold"
           aria-label="Open AI Analyst"
         >
           <SparklesIcon className="w-4 h-4" />
