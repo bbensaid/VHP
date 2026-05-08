@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
+import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import HomeSidebar from "@/components/HomeSidebar";
-import RightSidebar from "@/components/RightSidebar";
+const RightSidebar = dynamic(() => import("@/components/RightSidebar"), { ssr: false });
 import CollapsibleSidebar from "@/components/CollapsibleSidebar";
 import TickerStrip from "@/components/TickerStrip";
 import { useTicker } from "@/components/TickerContext";
@@ -34,7 +35,6 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const { isLeftOpen, isRightOpen, setLeftOpen, setRightOpen } = useSidebar();
 
   const { isStripVisible, setStripVisible } = useTicker();
-  const [clientTickerData, setClientTickerData] = useState<unknown>(null);
 
   // 3. AUTO-COLLAPSE — only for pages that need full width (studio, chat)
   //    All other pages: sidebar persists in whatever state the user set it.
@@ -56,17 +56,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
     return () => window.removeEventListener("resize", handleResize);
   }, [setLeftOpen, setRightOpen]);
 
-  // 5. TICKER DATA FETCHING (fallback if SSR data not passed)
-  useEffect(() => {
-    if (!tickerData && !clientTickerData) {
-      fetch("/api/ticker")
-        .then((res) => res.json())
-        .then((data) => setClientTickerData(data))
-        .catch((err) => console.error("Failed to load ticker", err));
-    }
-  }, [tickerData, clientTickerData]);
-
-  const activeTickerData = tickerData || clientTickerData;
+  const activeTickerData = tickerData;
 
   const showBreadcrumbs = !isStudio;
   const showTicker = !!activeTickerData && !isStudio;
@@ -129,7 +119,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         </CollapsibleSidebar>
 
         <main
-          className={`flex-1 min-w-0 transition-all duration-300 ${isLeftOpen ? "lg:ml-4" : "lg:pl-6"} ${isRightOpen ? "lg:mr-4" : "lg:pr-6"}`}
+          className={`flex-1 min-w-0 min-h-screen transition-all duration-300 ${isLeftOpen ? "lg:ml-4" : "lg:pl-6"} ${isRightOpen ? "lg:mr-4" : "lg:pr-6"}`}
           style={{ "--sidebar-top": sidebarTop } as React.CSSProperties}
         >
           {children}
@@ -143,7 +133,9 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
           expandLabel="AI Analyst"
           fillHeight={true}
         >
-          <RightSidebar />
+          <Suspense fallback={null}>
+            <RightSidebar />
+          </Suspense>
         </CollapsibleSidebar>
       </div>
 

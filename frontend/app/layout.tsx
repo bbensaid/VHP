@@ -1,20 +1,17 @@
 import React from "react";
-// app/layout.tsx
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { cookies } from "next/headers";
 import Header from "@/components/Header";
 import { TickerProvider } from "@/components/TickerContext";
 import { SidebarProvider } from "@/components/SidebarContext";
 import AppShell from "@/components/AppShell";
 import { getTickerData } from "@/lib/ticker";
-import CommandPalette from "@/components/CommandPalette";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import WebVitalsReporter from "@/components/WebVitalsReporter";
-import SessionTimeout from "@/components/SessionTimeout";
-import { cookies } from "next/headers";
+import ClientOnlyShell from "@/components/ClientOnlyShell";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -62,8 +59,7 @@ export default async function RootLayout({
           >
             Skip to main content
           </a>
-          <SessionTimeout />
-          <CommandPalette />
+          <ClientOnlyShell />
           <TickerProvider>
             <SidebarProvider>
               <div className="flex flex-col h-screen">
