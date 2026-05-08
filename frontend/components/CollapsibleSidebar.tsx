@@ -103,7 +103,7 @@ export default function CollapsibleSidebar({
                   className="flex-1 min-h-0 overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200 hover:scrollbar-thumb-slate-300 scrollbar-track-transparent"
                   style={{ direction: isLeft ? "ltr" : "rtl" }}
                 >
-                  <div className="px-4 pb-4 pt-0" style={{ direction: "ltr" }}>
+                  <div className="px-4 pb-24 pt-0" style={{ direction: "ltr" }}>
                     {children}
                   </div>
                 </div>

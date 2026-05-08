@@ -9,26 +9,35 @@ export default function BackendStatus() {
 
   useEffect(() => {
     let cancelled = false;
+    let interval: ReturnType<typeof setInterval> | null = null;
 
     async function check() {
       try {
         const res = await fetch("/api/health");
         const data = await res.json();
         if (cancelled) return;
-        if (!data.ok) setStatus("offline");
-        else if (!data.indexReady) setStatus("indexing");
-        else setStatus("online");
+        if (!data.ok) {
+          setStatus("offline");
+          if (interval) { clearInterval(interval); interval = null; }
+        } else if (!data.indexReady) {
+          setStatus("indexing");
+          if (!interval) interval = setInterval(check, 10_000);
+        } else {
+          setStatus("online");
+          if (interval) { clearInterval(interval); interval = null; }
+        }
       } catch {
-        if (!cancelled) setStatus("offline");
+        if (!cancelled) {
+          setStatus("offline");
+          if (interval) { clearInterval(interval); interval = null; }
+        }
       }
     }
 
     check();
-    // Re-check every 30s
-    const interval = setInterval(check, 30_000);
     return () => {
       cancelled = true;
-      clearInterval(interval);
+      if (interval) clearInterval(interval);
     };
   }, []);
 

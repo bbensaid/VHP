@@ -336,9 +336,23 @@ function getSectionForPath(path: string, searchParams: URLSearchParams | null): 
 }
 
 // ─── COMPONENT ────────────────────────────────────────────────────────────────
+const SETUP_SEQUENCE = "setup";
+
 export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [showSetup, setShowSetup] = useState(false);
+
+  useEffect(() => {
+    let typed = "";
+    const handler = (e: KeyboardEvent) => {
+      typed += e.key.toLowerCase();
+      if (typed.length > SETUP_SEQUENCE.length) typed = typed.slice(-SETUP_SEQUENCE.length);
+      if (typed === SETUP_SEQUENCE) setShowSetup(true);
+    };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, []);
 
   const [expandedSections, setExpandedSections] = useState<string[]>(() => {
     const s = getSectionForPath(pathname, searchParams);
@@ -585,6 +599,28 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
             </span>
           </span>
         </Link>
+
+        {showSetup && (
+          <>
+            <div className="border-t border-slate-200 dark:border-slate-700 my-2" />
+            <Link
+              href="/setup"
+              onClick={onNavigate}
+              className={`flex items-center px-2 py-2 rounded-xl transition-colors ${
+                isActive("/setup") ? "bg-amber-100" : "hover:bg-amber-50"
+              }`}
+            >
+              <span className="flex items-center gap-2.5">
+                <span className="w-7 h-7 rounded-lg bg-amber-100 flex items-center justify-center shrink-0">
+                  <span className="text-sm">⚙️</span>
+                </span>
+                <span className="text-[13px] font-semibold tracking-wide text-amber-700">
+                  Setup
+                </span>
+              </span>
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );

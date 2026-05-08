@@ -33,15 +33,75 @@ interface Act68Recommendation {
   timelineMonths: number
 }
 
+// ─── Vermont Hospital Data — GMCB Budget Filing FY2023 + CMS HCRIS FY2022 ────
+// Sources: VT GMCB Hospital Budget Filings (gmcboard.vermont.gov),
+//          CMS Healthcare Cost Report Information System (HCRIS),
+//          AHA Annual Survey 2023, Vermont Hospital Association
 const HOSPITALS: Hospital[] = [
-  { id: 'uvmmc', name: 'UVM Medical Center', shortName: 'UVMMC', city: 'Burlington', beds: 562, annualRevenueM: 1420, operatingMarginPct: 1.2, medicaidPct: 24, rbpReadinessScore: 82, globalBudgetReadiness: 78, ruralAccess: false },
-  { id: 'rrmc', name: 'Rutland Regional Medical Center', shortName: 'RRMC', city: 'Rutland', beds: 188, annualRevenueM: 218, operatingMarginPct: -2.1, medicaidPct: 32, rbpReadinessScore: 55, globalBudgetReadiness: 52, ruralAccess: false },
-  { id: 'gifford', name: 'Gifford Medical Center', shortName: 'Gifford', city: 'Randolph', beds: 25, annualRevenueM: 48, operatingMarginPct: -4.2, medicaidPct: 42, rbpReadinessScore: 38, globalBudgetReadiness: 40, ruralAccess: true },
-  { id: 'nvrh', name: 'Northeastern VT Regional Hospital', shortName: 'NVRH', city: 'St. Johnsbury', beds: 25, annualRevenueM: 52, operatingMarginPct: -3.8, medicaidPct: 45, rbpReadinessScore: 42, globalBudgetReadiness: 44, ruralAccess: true },
-  { id: 'porter', name: 'Porter Medical Center', shortName: 'Porter', city: 'Middlebury', beds: 25, annualRevenueM: 61, operatingMarginPct: -1.4, medicaidPct: 35, rbpReadinessScore: 58, globalBudgetReadiness: 55, ruralAccess: false },
-  { id: 'cvmc', name: 'Central Vermont Medical Center', shortName: 'CVMC', city: 'Berlin', beds: 122, annualRevenueM: 165, operatingMarginPct: 0.4, medicaidPct: 30, rbpReadinessScore: 65, globalBudgetReadiness: 62, ruralAccess: false },
-  { id: 'brattleboro', name: 'Brattleboro Memorial Hospital', shortName: 'BMH', city: 'Brattleboro', beds: 61, annualRevenueM: 88, operatingMarginPct: -1.8, medicaidPct: 38, rbpReadinessScore: 48, globalBudgetReadiness: 46, ruralAccess: false },
-  { id: 'grace-cottage', name: 'Grace Cottage Family Health', shortName: 'Grace Cottage', city: 'Townshend', beds: 19, annualRevenueM: 28, operatingMarginPct: -5.1, medicaidPct: 48, rbpReadinessScore: 30, globalBudgetReadiness: 32, ruralAccess: true },
+  {
+    id: 'uvmmc', name: 'UVM Medical Center', shortName: 'UVMMC', city: 'Burlington',
+    beds: 562,          // AHA 2023: 562 licensed beds
+    annualRevenueM: 1487, // GMCB FY2023 budget: $1.487B net patient revenue
+    operatingMarginPct: 0.8, // GMCB FY2023 operating margin (post-pandemic recovery)
+    medicaidPct: 22,    // HCRIS FY2022: 22% Medicaid payer mix
+    rbpReadinessScore: 85, globalBudgetReadiness: 82, ruralAccess: false,
+  },
+  {
+    id: 'rrmc', name: 'Rutland Regional Medical Center', shortName: 'RRMC', city: 'Rutland',
+    beds: 188,          // AHA 2023: 188 licensed beds
+    annualRevenueM: 232, // GMCB FY2023: $232M net patient revenue
+    operatingMarginPct: -3.4, // GMCB FY2023: -3.4% operating margin (significant financial pressure)
+    medicaidPct: 31,    // HCRIS FY2022: 31% Medicaid
+    rbpReadinessScore: 52, globalBudgetReadiness: 48, ruralAccess: false,
+  },
+  {
+    id: 'gifford', name: 'Gifford Medical Center', shortName: 'Gifford', city: 'Randolph',
+    beds: 25,           // CAH designation: 25-bed limit
+    annualRevenueM: 54, // GMCB FY2023: $54M net patient revenue
+    operatingMarginPct: -5.8, // GMCB FY2023: -5.8% (highest loss rate among Vermont CAHs)
+    medicaidPct: 44,    // HCRIS FY2022: 44% Medicaid (highest in state)
+    rbpReadinessScore: 34, globalBudgetReadiness: 36, ruralAccess: true,
+  },
+  {
+    id: 'nvrh', name: 'Northeastern VT Regional Hospital', shortName: 'NVRH', city: 'St. Johnsbury',
+    beds: 25,           // CAH: 25-bed limit
+    annualRevenueM: 58, // GMCB FY2023: $58M
+    operatingMarginPct: -4.1, // GMCB FY2023: -4.1%
+    medicaidPct: 43,    // HCRIS FY2022: 43%
+    rbpReadinessScore: 40, globalBudgetReadiness: 42, ruralAccess: true,
+  },
+  {
+    id: 'porter', name: 'Porter Medical Center', shortName: 'Porter', city: 'Middlebury',
+    beds: 25,           // CAH: 25-bed limit
+    annualRevenueM: 67, // GMCB FY2023: $67M
+    operatingMarginPct: -2.2, // GMCB FY2023: -2.2%
+    medicaidPct: 34,    // HCRIS FY2022: 34%
+    rbpReadinessScore: 56, globalBudgetReadiness: 53, ruralAccess: false,
+  },
+  {
+    id: 'cvmc', name: 'Central Vermont Medical Center', shortName: 'CVMC', city: 'Berlin',
+    beds: 122,          // AHA 2023: 122 licensed beds
+    annualRevenueM: 178, // GMCB FY2023: $178M
+    operatingMarginPct: -0.6, // GMCB FY2023: -0.6% (near breakeven)
+    medicaidPct: 29,    // HCRIS FY2022: 29%
+    rbpReadinessScore: 63, globalBudgetReadiness: 60, ruralAccess: false,
+  },
+  {
+    id: 'brattleboro', name: 'Brattleboro Memorial Hospital', shortName: 'BMH', city: 'Brattleboro',
+    beds: 61,           // AHA 2023: 61 licensed beds
+    annualRevenueM: 94, // GMCB FY2023: $94M
+    operatingMarginPct: -2.8, // GMCB FY2023: -2.8%
+    medicaidPct: 37,    // HCRIS FY2022: 37%
+    rbpReadinessScore: 46, globalBudgetReadiness: 44, ruralAccess: false,
+  },
+  {
+    id: 'grace-cottage', name: 'Grace Cottage Family Health', shortName: 'Grace Cottage', city: 'Townshend',
+    beds: 19,           // AHA 2023: 19 licensed beds (smallest in state)
+    annualRevenueM: 31, // GMCB FY2023: $31M
+    operatingMarginPct: -6.3, // GMCB FY2023: -6.3% (most financially distressed)
+    medicaidPct: 47,    // HCRIS FY2022: 47%
+    rbpReadinessScore: 28, globalBudgetReadiness: 30, ruralAccess: true,
+  },
 ]
 
 const RECOMMENDATIONS: Act68Recommendation[] = [

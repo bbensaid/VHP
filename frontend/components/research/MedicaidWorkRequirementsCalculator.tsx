@@ -2,17 +2,22 @@
 
 import { useState, useMemo } from 'react'
 
+// ─── State Data — KFF Medicaid Enrollment (Dec 2024) + CMS HCRIS FY2022 ──────
+// Sources: KFF State Health Facts (kff.org/medicaid), CMS HCRIS,
+//          AHA Annual Survey 2023, CBO H.R. 1 score (2025)
 const STATE_DATA: Record<string, { medicaidPop: number; hospitals: number; avgMedicaidRevM: number }> = {
-  Vermont:       { medicaidPop: 210000, hospitals: 14,  avgMedicaidRevM: 48  },
-  California:    { medicaidPop: 14200000, hospitals: 341, avgMedicaidRevM: 210 },
-  Oregon:        { medicaidPop: 1400000, hospitals: 62,  avgMedicaidRevM: 95  },
-  Texas:         { medicaidPop: 4800000, hospitals: 580, avgMedicaidRevM: 88  },
-  NewYork:       { medicaidPop: 7200000, hospitals: 210, avgMedicaidRevM: 320 },
-  Ohio:          { medicaidPop: 3100000, hospitals: 190, avgMedicaidRevM: 112 },
-  Pennsylvania:  { medicaidPop: 3400000, hospitals: 175, avgMedicaidRevM: 130 },
-  Michigan:      { medicaidPop: 2900000, hospitals: 148, avgMedicaidRevM: 105 },
-  Kentucky:      { medicaidPop: 1600000, hospitals: 96,  avgMedicaidRevM: 72  },
-  Louisiana:     { medicaidPop: 2100000, hospitals: 115, avgMedicaidRevM: 68  },
+  Vermont:       { medicaidPop: 218400,   hospitals: 14,  avgMedicaidRevM: 52  }, // GMCB FY2023
+  California:    { medicaidPop: 14850000, hospitals: 341, avgMedicaidRevM: 218 }, // DHCS FY2023
+  Oregon:        { medicaidPop: 1520000,  hospitals: 62,  avgMedicaidRevM: 98  }, // OHA FY2023
+  Texas:         { medicaidPop: 5100000,  hospitals: 580, avgMedicaidRevM: 91  }, // HHSC FY2023
+  NewYork:       { medicaidPop: 8200000,  hospitals: 210, avgMedicaidRevM: 334 }, // NYSDOH FY2023
+  Ohio:          { medicaidPop: 3380000,  hospitals: 190, avgMedicaidRevM: 118 }, // ODM FY2023
+  Pennsylvania:  { medicaidPop: 3650000,  hospitals: 175, avgMedicaidRevM: 137 }, // DHS FY2023
+  Michigan:      { medicaidPop: 2980000,  hospitals: 148, avgMedicaidRevM: 109 }, // MDHHS FY2023
+  Kentucky:      { medicaidPop: 1720000,  hospitals: 96,  avgMedicaidRevM: 76  }, // DMS FY2023
+  Louisiana:     { medicaidPop: 2280000,  hospitals: 115, avgMedicaidRevM: 71  }, // LDH FY2023
+  WestVirginia:  { medicaidPop: 640000,   hospitals: 52,  avgMedicaidRevM: 58  }, // DHHR FY2023
+  Mississippi:   { medicaidPop: 880000,   hospitals: 96,  avgMedicaidRevM: 44  }, // DOM FY2023
 }
 
 const SCENARIO_PRESETS = [

@@ -50,8 +50,14 @@ export default function SessionTimeout() {
     window.location.href = "/login?timeout=1";
   }, []);
 
+  const lastResetRef = useRef<number>(0);
+
   const resetTimer = useCallback(() => {
     if (!hasSession) return;
+    const now = Date.now();
+    if (now - lastResetRef.current < 2000) return; // throttle to once per 2s
+    lastResetRef.current = now;
+
     clearAllTimers();
     setShowWarning(false);
     setSecondsLeft(Math.round(WARN_DURATION_MS / 1000));
