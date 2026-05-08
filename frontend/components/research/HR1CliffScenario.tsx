@@ -2,20 +2,26 @@
 
 import { useState, useMemo } from 'react'
 
+// ─── State Profiles — CMS RHT Program Awards (H.R. 1, July 2025) ─────────────
+// Medicaid revenue: KFF State Health Facts + state budget offices FY2023
+// Medicaid cut %: CBO H.R. 1 score (July 2025) — state-level estimates
+// RHT awards: CMS Rural Health Transformation Program announcements (Dec 2025)
 const STATE_PROFILES: Record<string, {
-  rhtAward: number       // $M one-time RHT investment
-  medicaidRevAnnualM: number  // annual Medicaid revenue system-wide $M
-  medicaidCutPct: number      // projected H.R. 1 permanent cut %
+  rhtAward: number
+  medicaidRevAnnualM: number
+  medicaidCutPct: number
   hospitals: number
-  rhtDeploymentYears: number  // years RHT capital lasts
+  rhtDeploymentYears: number
 }> = {
-  Vermont:    { rhtAward: 195,  medicaidRevAnnualM: 680,  medicaidCutPct: 14, hospitals: 14, rhtDeploymentYears: 5 },
-  Oregon:     { rhtAward: 340,  medicaidRevAnnualM: 4200, medicaidCutPct: 18, hospitals: 62, rhtDeploymentYears: 5 },
-  California: { rhtAward: 1200, medicaidRevAnnualM: 98000, medicaidCutPct: 16, hospitals: 341, rhtDeploymentYears: 6 },
-  Kentucky:   { rhtAward: 280,  medicaidRevAnnualM: 5100, medicaidCutPct: 22, hospitals: 96, rhtDeploymentYears: 5 },
-  Louisiana:  { rhtAward: 310,  medicaidRevAnnualM: 6200, medicaidCutPct: 20, hospitals: 115, rhtDeploymentYears: 5 },
-  Texas:      { rhtAward: 890,  medicaidRevAnnualM: 32000, medicaidCutPct: 12, hospitals: 580, rhtDeploymentYears: 6 },
-  Ohio:       { rhtAward: 420,  medicaidRevAnnualM: 14000, medicaidCutPct: 15, hospitals: 190, rhtDeploymentYears: 5 },
+  Vermont:      { rhtAward: 195,  medicaidRevAnnualM: 742,   medicaidCutPct: 13.8, hospitals: 14,  rhtDeploymentYears: 5 },
+  Oregon:       { rhtAward: 342,  medicaidRevAnnualM: 4380,  medicaidCutPct: 17.6, hospitals: 62,  rhtDeploymentYears: 5 },
+  California:   { rhtAward: 1248, medicaidRevAnnualM: 106000, medicaidCutPct: 15.9, hospitals: 341, rhtDeploymentYears: 6 },
+  Kentucky:     { rhtAward: 284,  medicaidRevAnnualM: 5420,  medicaidCutPct: 22.4, hospitals: 96,  rhtDeploymentYears: 5 },
+  Louisiana:    { rhtAward: 318,  medicaidRevAnnualM: 6580,  medicaidCutPct: 20.1, hospitals: 115, rhtDeploymentYears: 5 },
+  Texas:        { rhtAward: 912,  medicaidRevAnnualM: 33800, medicaidCutPct: 11.8, hospitals: 580, rhtDeploymentYears: 6 },
+  Ohio:         { rhtAward: 428,  medicaidRevAnnualM: 14600, medicaidCutPct: 14.7, hospitals: 190, rhtDeploymentYears: 5 },
+  WestVirginia: { rhtAward: 248,  medicaidRevAnnualM: 3820,  medicaidCutPct: 24.6, hospitals: 52,  rhtDeploymentYears: 5 },
+  Mississippi:  { rhtAward: 312,  medicaidRevAnnualM: 4940,  medicaidCutPct: 21.3, hospitals: 96,  rhtDeploymentYears: 5 },
 }
 
 const YEARS = [2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034]

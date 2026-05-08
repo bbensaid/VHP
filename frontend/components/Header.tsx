@@ -599,7 +599,7 @@ const Header = () => {
   const [activeMegaMenu, setActiveMegaMenu] = useState<MegaMenuType>(null);
   const megaMenuTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
-  const { isHeaderVisible, setHeaderVisible } = useTicker();
+  const { isHeaderVisible, setHeaderVisible, headlines } = useTicker();
   const { toggleLeft, toggleRight, setLeftOpen, setRightOpen } = useSidebar();
   const isChatPage = pathname === "/chat";
   const showLeftToggle = !isStudio;
@@ -611,10 +611,6 @@ const Header = () => {
     if (isChatPage) { setRightOpen(true); router.push("/"); } else { toggleRight(); }
   };
 
-  const [headlines, setHeadlines] = useState<{ text: string; url: string }[]>([
-    { text: "Loading Intelligence...", url: "#" },
-  ]);
-
   useEffect(() => {
     setDateString(
       new Date().toLocaleDateString("en-US", {
@@ -624,24 +620,6 @@ const Header = () => {
         day: "numeric",
       })
     );
-
-    async function fetchTicker() {
-      try {
-        const res = await fetch("/api/ticker");
-        if (!res.ok) throw new Error("API failed");
-        const data = await res.json();
-        if (data.headlines && Array.isArray(data.headlines) && data.headlines.length > 0) {
-          setHeadlines(data.headlines);
-        }
-      } catch {
-        setHeadlines([
-          { text: "INSOLVENCY ALERT: NVRH projects $75M Deficit", url: "/dashboard/vermont/nvrh" },
-          { text: "MARKET MOVER: Medicare Advantage Denials Rise 12%", url: "/economics/market" },
-          { text: "STATE PROFILE: Vermont Rated CRITICAL (42/100)", url: "/dashboard/vermont" },
-        ]);
-      }
-    }
-    fetchTicker();
   }, []);
 
   // Close mega menu on navigation

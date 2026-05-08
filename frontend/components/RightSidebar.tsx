@@ -81,7 +81,14 @@ export default function RightSidebar() {
   const abortRef = useRef<AbortController | null>(null);
   const messagesContainerRef = useRef<HTMLDivElement>(null);
   const messagesRef = useRef(messages);
-  useEffect(() => { messagesRef.current = messages; }, [messages]);
+  const lsTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => {
+    messagesRef.current = messages;
+    if (lsTimerRef.current) clearTimeout(lsTimerRef.current);
+    lsTimerRef.current = setTimeout(() => {
+      try { localStorage.setItem("htr-chat-history", JSON.stringify(messages)); } catch { /* ignore */ }
+    }, 500);
+  }, [messages]);
 
   const pathname = usePathname() ?? "";
   const router = useRouter();
@@ -100,10 +107,7 @@ export default function RightSidebar() {
   }, []);
 
   const handleExpand = useCallback(() => {
-    // Sync current sidebar conversation to localStorage so /chat picks it up
-    try {
-      localStorage.setItem("htr-chat-history", JSON.stringify(messages));
-    } catch { /* ignore */ }
+    try { localStorage.setItem("htr-chat-history", JSON.stringify(messages)); } catch { /* ignore */ }
     router.push("/chat");
   }, [messages, router]);
 
