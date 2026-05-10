@@ -150,6 +150,7 @@ export default function RightSidebar() {
     try {
       const body: Record<string, unknown> = { message: text, history };
       if (activePillar) body.pillar = activePillar;
+      try { body.userRole = localStorage.getItem("htr-user-role") ?? "all"; } catch { body.userRole = "all"; }
 
       const res = await fetch("/api/chat", {
         method: "POST",
