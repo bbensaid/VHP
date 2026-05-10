@@ -72,13 +72,28 @@ class HistoryMessage(BaseModel):
         return v.strip()[:4000]
 
 
+VALID_USER_ROLES = {"executive", "policy", "clinician", "economist", "tech", "compliance", "researcher", "investor", "all"}
+
+USER_ROLE_LABELS = {
+    "executive":  "a Hospital / Health System Executive",
+    "policy":     "a Policy Analyst or Government Official",
+    "clinician":  "a Clinician (MD, NP, or PA)",
+    "economist":  "a Health Economist or Actuary",
+    "tech":       "a Health Tech Professional",
+    "compliance": "a Medicaid or Compliance Officer",
+    "researcher": "a Student or Researcher",
+    "investor":   "an Investor or Consultant",
+    "all":        None,
+}
+
 class ChatRequest(BaseModel):
     message:         str
     history:         Optional[List[HistoryMessage]] = []
     temperature:     Optional[float] = 0.7
     systemPrompt:    Optional[str]   = None
     conversation_id: Optional[str]   = None
-    pillar:          Optional[str]   = None  # active intelligence pillar for filtered retrieval
+    pillar:          Optional[str]   = None
+    userRole:        Optional[str]   = None
 
     @field_validator("message")
     @classmethod
@@ -460,12 +475,24 @@ async def chat(
         role = MessageRole.USER if msg.role == "user" else MessageRole.ASSISTANT
         memory.put(ChatMessage(role=role, content=msg.text))
 
+    # ── User role context ──────────────────────────────────────────────────────
+    user_role_label = None
+    if request.userRole and request.userRole in VALID_USER_ROLES:
+        user_role_label = USER_ROLE_LABELS.get(request.userRole)
+
     # ── System prompt assembly ─────────────────────────────────────────────────
     if is_medicaid_query:
-        # Medicaid eligibility queries get their own specialized prompt
         system_prompt = MEDICAID_ELIGIBILITY_SYSTEM_PROMPT
     else:
         base_system_prompt = _get_system_prompt(user, request.systemPrompt)
+        # Inject user role into system prompt so AI tailors depth and tool suggestions
+        if user_role_label:
+            base_system_prompt = (
+                f"You are speaking with {user_role_label}. "
+                f"Tailor your response depth, terminology, and tool recommendations accordingly. "
+                f"When suggesting HTR Lab tools, prioritize those most relevant to this role.\n\n"
+                + base_system_prompt
+            )
         structured_intent = _detect_structured_intent(request.message)
         if structured_intent == "comparison":
             system_prompt = base_system_prompt + _COMPARISON_SYSTEM_ADDENDUM
