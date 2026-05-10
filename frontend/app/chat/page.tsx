@@ -48,16 +48,76 @@ function detectPHI(text: string): boolean {
   return false;
 }
 
-// ── Constants ────────────────────────────────────────────────────────────────
+// ── Role-specific starter cards ───────────────────────────────────────────────
 
+const ROLE_STARTERS: Record<string, { prompt: string; label: string; color: string }[]> = {
+  executive: [
+    { prompt: "What happens to our revenue if Medicaid cuts 10% in Vermont?", label: "Model Medicaid cut impact", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
+    { prompt: "How ready is our organization for value-based care contracts?", label: "Assess VBC readiness", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
+    { prompt: "What does Vermont's AHEAD model mean for our health system?", label: "Understand AHEAD model", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
+    { prompt: "Show me the best tools to model our hospital's financial stress scenarios", label: "Financial stress testing", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
+  ],
+  policy: [
+    { prompt: "What are the most critical federal Medicaid policy changes I need to track right now?", label: "Federal Medicaid updates", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
+    { prompt: "Walk me through Vermont Act 167 and what it requires from providers", label: "Vermont Act 167 breakdown", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
+    { prompt: "Model the coverage loss impact of H.R. 1 work requirements in Vermont", label: "H.R. 1 impact modeling", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
+    { prompt: "What tools can I use to simulate 1115 waiver scenarios?", label: "Waiver scenario simulation", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
+  ],
+  clinician: [
+    { prompt: "What's the latest evidence on hospital-at-home programs and reimbursement?", label: "Hospital-at-home evidence", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
+    { prompt: "How can I improve my organization's HEDIS scores and CMS Star Ratings?", label: "Quality score improvement", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
+    { prompt: "What tools help me stratify patient risk and identify high-need populations?", label: "Risk stratification tools", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
+    { prompt: "How does SDOH integration improve clinical outcomes in Vermont?", label: "SDOH & health equity", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
+  ],
+  economist: [
+    { prompt: "Calculate cost-effectiveness for a hospital-at-home program — what's the cost per QALY?", label: "CEA calculation", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
+    { prompt: "Design an APM with shared savings for a Vermont ACO", label: "APM design & modeling", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
+    { prompt: "Model the revenue trajectory during a global budget transition", label: "Global budget transition", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
+    { prompt: "What are the actuarial risks of Vermont's AHEAD model for payers?", label: "Actuarial risk analysis", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
+  ],
+  tech: [
+    { prompt: "How do I build a FHIR R4 compliant patient summary and test it against ONC requirements?", label: "FHIR compliance check", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
+    { prompt: "What's the ROI model for a remote patient monitoring program?", label: "RPM ROI modeling", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
+    { prompt: "How do I detect algorithmic bias in a clinical AI model?", label: "AI bias detection", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
+    { prompt: "What are the key cybersecurity requirements for health systems under HIPAA?", label: "Security & compliance", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
+  ],
+  compliance: [
+    { prompt: "Am I eligible for Vermont Medicaid? Walk me through the criteria.", label: "Medicaid eligibility check", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
+    { prompt: "What are the key compliance deadlines and requirements under Vermont Act 167?", label: "Act 167 compliance", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
+    { prompt: "What changed in Vermont Medicaid rules for 2026?", label: "2026 Medicaid updates", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
+    { prompt: "Show me tools to track Vermont AHEAD milestone compliance", label: "AHEAD milestone tracking", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
+  ],
+  researcher: [
+    { prompt: "Where should I start learning about value-based care and health transformation?", label: "Learning path", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
+    { prompt: "What are the landmark cost-effectiveness studies in healthcare I should know?", label: "Key CEA studies", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
+    { prompt: "Explain the Vermont AHEAD model and how it differs from traditional Medicaid", label: "AHEAD model explained", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
+    { prompt: "What simulation tools can I use for a research project on health transformation?", label: "Research tools", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
+  ],
+  investor: [
+    { prompt: "What are the biggest M&A and PE trends in healthcare right now?", label: "M&A & PE trends", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
+    { prompt: "Which health systems are most financially stressed and why?", label: "Financial stress analysis", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
+    { prompt: "How do I benchmark a health system's VBC readiness before acquisition?", label: "Pre-acquisition benchmarking", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
+    { prompt: "Rank all 50 states on health transformation activity and innovation", label: "50-state innovation ranking", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
+  ],
+  all: [
+    { prompt: "What tools does this platform have for modeling health policy scenarios?", label: "Explore platform tools", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
+    { prompt: "Give me an overview of Vermont's health transformation initiatives", label: "Vermont health reform", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
+    { prompt: "Am I eligible for Vermont Medicaid?", label: "Medicaid eligibility", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
+    { prompt: "What are the biggest trends in US healthcare right now?", label: "Healthcare trends", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
+  ],
+};
 
-const CONTEXT_LINKS = [
-  { label: "Vermont Act 167", href: "/vermont-act-167", icon: DocumentTextIcon },
-  { label: "AHEAD Model", href: "/ahead-model", icon: ChartBarIcon },
-  { label: "California CalAIM", href: "/california-calaim", icon: DocumentTextIcon },
-  { label: "Academy Modules", href: "/academy", icon: AcademicCapIcon },
-  { label: "Policy Analysis", href: "/policy", icon: BookOpenIcon },
-];
+const ROLE_LABELS: Record<string, string> = {
+  executive: "Hospital / Health System Executive",
+  policy: "Policy Analyst",
+  clinician: "Clinician",
+  economist: "Health Economist",
+  tech: "Health Tech Professional",
+  compliance: "Medicaid / Compliance Officer",
+  researcher: "Student / Researcher",
+  investor: "Investor / Consultant",
+  all: "Healthcare Professional",
+};
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -103,6 +163,7 @@ export default function ChatPage() {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [phiError, setPhiError] = useState<string | null>(null);
+  const [userRole, setUserRole] = useState<string>("all");
 
   const abortControllerRef = useRef<AbortController | null>(null);
   const chatContainerRef = useRef<HTMLDivElement>(null);
@@ -113,12 +174,13 @@ export default function ChatPage() {
   useEffect(() => {
     setMounted(true);
     try {
-      // If a role greeting was set by /welcome, show it as the first AI message
+      const role = localStorage.getItem("htr-user-role") ?? "all";
+      setUserRole(role);
+      // If a role greeting was set by /welcome, clear history so cards show first
       const greeting = localStorage.getItem("htr-chat-greeting");
       if (greeting) {
         localStorage.removeItem("htr-chat-greeting");
         localStorage.removeItem("htr-chat-history");
-        setMessages([{ id: crypto.randomUUID(), role: "ai", text: greeting }]);
         return;
       }
       const saved = localStorage.getItem("htr-chat-history");
@@ -389,14 +451,43 @@ export default function ChatPage() {
           <div ref={chatContainerRef} className="flex-1 overflow-y-auto min-h-0 px-4 md:px-8 py-6 space-y-6">
 
             {messages.length === 0 && !isLoading && (
-              <div className="flex flex-col items-center justify-center h-full py-20 text-center">
-                <div className="w-14 h-14 bg-indigo-50 border border-indigo-100 rounded-2xl flex items-center justify-center mb-5">
-                  <SparklesIcon className="w-7 h-7 text-indigo-500" />
+              <div className="flex flex-col items-center justify-center h-full max-w-3xl mx-auto px-4 py-10">
+                {/* Header */}
+                <div className="text-center mb-8">
+                  <div className="w-14 h-14 bg-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <SparklesIcon className="w-7 h-7 text-white" />
+                  </div>
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 tracking-tight mb-2">
+                    HTR AI Analyst
+                  </h2>
+                  <p className="text-sm text-slate-500 dark:text-slate-400">
+                    {userRole && userRole !== "all"
+                      ? `Personalized for ${ROLE_LABELS[userRole] ?? "you"} — pick a topic or ask your own question`
+                      : "Ask anything about health policy, economics, or transformation"}
+                  </p>
                 </div>
-                <h2 className="ty-h3 font-black text-slate-900 dark:text-slate-100 tracking-tight mb-2">HTR AI Analyst</h2>
-                <p className="text-sm text-slate-500 dark:text-slate-400 max-w-sm mb-8">
-                  Ask anything about health policy, economics, or the programs indexed in the knowledge base.
-                </p>
+
+                {/* Starter cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full mb-6">
+                  {(ROLE_STARTERS[userRole] ?? ROLE_STARTERS["all"]).map((card, i) => (
+                    <button
+                      key={i}
+                      onClick={() => askQuestion(card.prompt)}
+                      className={`flex flex-col gap-2 p-4 rounded-xl border-2 text-left transition-all shadow-sm hover:shadow-md ${card.color}`}
+                    >
+                      <span className="text-xs font-black uppercase tracking-widest opacity-60">{card.label}</span>
+                      <span className="text-sm font-medium leading-snug">{card.prompt}</span>
+                    </button>
+                  ))}
+                </div>
+
+                {/* Change role link */}
+                <Link
+                  href="/welcome"
+                  className="text-xs text-slate-400 hover:text-indigo-600 underline underline-offset-2 transition-colors"
+                >
+                  {userRole && userRole !== "all" ? "Change my role" : "Personalize for my role"}
+                </Link>
               </div>
             )}
 
