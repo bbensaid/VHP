@@ -11,6 +11,9 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 
+// Allow up to 60 seconds for the streaming response (backend retrieval can be slow)
+export const maxDuration = 60;
+
 const PYTHON_BACKEND = process.env.PYTHON_BACKEND_URL || "http://localhost:8000";
 
 const HistoryMessageSchema = z.object({
