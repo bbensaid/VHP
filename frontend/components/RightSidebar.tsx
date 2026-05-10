@@ -328,10 +328,28 @@ export default function RightSidebar() {
                 <div className="border-l-2 border-indigo-200 dark:border-indigo-700 pl-3 text-slate-700 dark:text-slate-200 leading-relaxed">
                   <ReactMarkdown
                     components={{
-                      p: ({ node, ...props }) => <p {...props} className="mb-1.5 last:mb-0" />,
+                      p: ({ node, children, ...props }) => {
+                        const text = String(children);
+                        if (text.includes("TRY IT IN THE HTR LAB")) {
+                          return (
+                            <p {...props} className="mb-1.5 mt-2 px-2 py-1.5 bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-700 rounded-lg font-bold text-indigo-700 dark:text-indigo-300">
+                              {children}
+                            </p>
+                          );
+                        }
+                        return <p {...props} className="mb-1.5 last:mb-0">{children}</p>;
+                      },
                       ul: ({ node, ...props }) => <ul {...props} className="list-disc pl-4 mb-1.5 space-y-0.5" />,
                       li: ({ node, ...props }) => <li {...props} />,
                       strong: ({ node, ...props }) => <strong {...props} className="font-semibold text-slate-900 dark:text-slate-100" />,
+                      a: ({ node, ...props }) => (
+                        <a
+                          {...props}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-indigo-600 dark:text-indigo-400 underline hover:text-indigo-800 dark:hover:text-indigo-200 break-all"
+                        />
+                      ),
                     }}
                   >
                     {msg.text || "…"}
