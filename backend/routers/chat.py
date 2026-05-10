@@ -118,12 +118,24 @@ class ChatRequest(BaseModel):
 # ── System prompts ─────────────────────────────────────────────────────────────
 
 BASE_SYSTEM_PROMPT = (
-    "You are an expert AI Analyst for the Health Transformation Review (HTR). "
+    "You are an expert AI Analyst for the Health Transformation Review (HTR), a comprehensive "
+    "healthcare intelligence platform at healthtransformationreview.org. "
     "Your audience consists of healthcare executives, policy makers, and economists. "
     "Answer questions thoroughly and professionally, citing specific policies, data, "
     "and source documents where relevant. When referencing a document, name it explicitly "
     "(e.g. 'According to the Wyman Report...' or 'Vermont Act 167 states...'). "
-    "Focus on policy, economics, technology, clinical outcomes, and health equity."
+    "Focus on policy, economics, technology, clinical outcomes, and health equity.\n\n"
+    "PLATFORM TOOLS — when a question is well served by one of these, mention it naturally "
+    "at the end of your response as a suggestion (use the full URL):\n"
+    "- Medicaid Eligibility Simulator: https://healthtransformationreview.org/medicaid-eligibility-simulator — screen Vermont Medicaid eligibility interactively\n"
+    "- HTR Simulator: https://healthtransformationreview.org/htr-simulator — model health transformation scenarios across all six pillars\n"
+    "- Vermont Act 167 Simulator: https://healthtransformationreview.org/vermont-act-167/simulator — model Act 167 reform impacts\n"
+    "- VBC Readiness Assessment: https://healthtransformationreview.org/research-lab?tab=operations — assess value-based care readiness\n"
+    "- Hospital Financial Stress Test: https://healthtransformationreview.org/research-lab?tab=economics — model hospital financial scenarios\n"
+    "- Health Equity Studio: https://healthtransformationreview.org/research-lab?tab=equity — analyze health equity and SDOH data\n"
+    "- HTI Dashboard: https://healthtransformationreview.org/hti-dashboard — Health Transformation Index metrics\n"
+    "- Personalized Learning: https://healthtransformationreview.org/academy/personalized-learning — custom learning paths by role\n"
+    "Only suggest a tool when it is genuinely relevant — do not force it into every response."
 )
 
 MEDICAID_ELIGIBILITY_SYSTEM_PROMPT = (
@@ -143,10 +155,13 @@ MEDICAID_ELIGIBILITY_SYSTEM_PROMPT = (
     "4. If the user's situation is ambiguous, ask the clarifying questions needed "
     "(age, household size, income, citizenship status, disability status, etc.) "
     "before giving a determination.\n"
-    "5. Always close with: 'This is general information based on Vermont state rules. "
+    "5. After walking through eligibility, always suggest the platform's interactive tool: "
+    "'You can also screen your eligibility step-by-step using our Medicaid Eligibility Simulator "
+    "at https://healthtransformationreview.org/medicaid-eligibility-simulator'\n"
+    "6. Always close with: 'This is general information based on Vermont state rules. "
     "For a formal eligibility determination, apply at Vermont Health Connect "
     "(healthconnect.vermont.gov) or call 1-800-250-8427.'\n"
-    "6. Never fabricate rule sections or income numbers — only use what the retrieved "
+    "7. Never fabricate rule sections or income numbers — only use what the retrieved "
     "documents contain."
 )
 
@@ -419,91 +434,91 @@ async def chat(
         else:
             system_prompt = base_system_prompt
 
-    # Rewrite query to incorporate conversation context (fast, non-blocking on failure)
-    retrieval_query = await _rewrite_query(request.message, request.history or [])
-    query_bundle    = QueryBundle(query_str=retrieval_query)
+    import time
 
     supabase = get_supabase()
-    nodes: List[NodeWithScore] = []
-
-    if is_medicaid_query:
-        # ── Medicaid-scoped retrieval ──────────────────────────────────────────
-        # Step 1: Retrieve only from Medicaid eligibility documents (top-25)
-        if supabase:
-            nodes = HybridRetriever(
-                supabase=supabase,
-                top_k=25,
-                filter_pillar=MEDICAID_PILLAR,
-            ).retrieve(query_bundle)
-            log.info(f"  Medicaid retrieval: {len(nodes)} nodes with pillar filter")
-
-        # Step 2: If scoped retrieval returned too few, fall back to broader index
-        if len(nodes) < 3:
-            log.info("  Medicaid scoped retrieval thin — retrying without pillar filter")
-            if supabase:
-                nodes = HybridRetriever(supabase=supabase, top_k=25).retrieve(query_bundle)
-            if not nodes:
-                nodes = index.as_retriever(similarity_top_k=25).retrieve(query_bundle)
-
-        # Step 3: Rerank to top-8 (more context needed for eligibility reasoning)
-        nodes = rerank_nodes(retrieval_query, nodes, top_k=8)
-
-    else:
-        # ── Standard retrieval ─────────────────────────────────────────────────
-        if supabase:
-            nodes = HybridRetriever(
-                supabase=supabase,
-                top_k=20,
-                filter_pillar=request.pillar,
-            ).retrieve(query_bundle)
-
-        # If pillar-filtered retrieval returned too few results, retry without filter
-        if request.pillar and len(nodes) < 3 and supabase:
-            log.info(f"Pillar '{request.pillar}' returned {len(nodes)} nodes — retrying without filter")
-            nodes = HybridRetriever(supabase=supabase, top_k=20).retrieve(query_bundle)
-
-        if not nodes:
-            log.info("Falling back to vector-only retrieval")
-            nodes = index.as_retriever(similarity_top_k=20).retrieve(query_bundle)
-
-        nodes = MetadataReplacementNodePostprocessor(
-            target_metadata_key="window"
-        ).postprocess_nodes(nodes, query_bundle=query_bundle)
-
-        nodes = rerank_nodes(retrieval_query, nodes, top_k=5)
-
-    # Extract citations from top nodes before streaming
-    citations = extract_citations(nodes)
-
-    # ── LLM selection ──────────────────────────────────────────────────────────
-    # Medicaid eligibility queries require better reasoning — bump free/student tier
-    tier_llm = _get_llm_for_medicaid(user) if is_medicaid_query else get_llm_for_role(user.role)
-
-    use_agent = user.role in AGENTIC_ROLES
-
-    if use_agent:
-        engine = ReActAgent.from_tools(
-            tools=ALL_TOOLS,
-            llm=tier_llm,
-            memory=memory,
-            system_prompt=system_prompt,
-            max_iterations=5,
-            verbose=False,
-        )
-    else:
-        engine = ContextChatEngine.from_defaults(
-            retriever=StaticNodeRetriever(nodes),
-            memory=memory,
-            llm=tier_llm,
-            system_prompt=system_prompt,
-            verbose=False,
-        )
-
-    import time
-    _start_ts = time.monotonic()
 
     async def generate():
-        yield ""  # Immediate keepalive to survive cold-start timeouts
+        # Yield a keepalive space immediately so the HTTP response starts streaming
+        # before the retrieval pipeline runs. Without this the browser (and the
+        # Next.js proxy) sees no bytes for ~30 s and times out.
+        yield " "
+
+        _start_ts = time.monotonic()
+
+        # ── Query rewriting ────────────────────────────────────────────────────
+        retrieval_query = await _rewrite_query(request.message, request.history or [])
+        query_bundle    = QueryBundle(query_str=retrieval_query)
+
+        nodes: List[NodeWithScore] = []
+
+        if is_medicaid_query:
+            # ── Medicaid-scoped retrieval ──────────────────────────────────────
+            if supabase:
+                nodes = HybridRetriever(
+                    supabase=supabase,
+                    top_k=25,
+                    filter_pillar=MEDICAID_PILLAR,
+                ).retrieve(query_bundle)
+                log.info(f"  Medicaid retrieval: {len(nodes)} nodes with pillar filter")
+
+            if len(nodes) < 3:
+                log.info("  Medicaid scoped retrieval thin — retrying without pillar filter")
+                if supabase:
+                    nodes = HybridRetriever(supabase=supabase, top_k=25).retrieve(query_bundle)
+                if not nodes:
+                    nodes = index.as_retriever(similarity_top_k=25).retrieve(query_bundle)
+
+            nodes = rerank_nodes(retrieval_query, nodes, top_k=8)
+
+        else:
+            # ── Standard retrieval ─────────────────────────────────────────────
+            if supabase:
+                nodes = HybridRetriever(
+                    supabase=supabase,
+                    top_k=20,
+                    filter_pillar=request.pillar,
+                ).retrieve(query_bundle)
+
+            if request.pillar and len(nodes) < 3 and supabase:
+                log.info(f"Pillar '{request.pillar}' returned {len(nodes)} nodes — retrying without filter")
+                nodes = HybridRetriever(supabase=supabase, top_k=20).retrieve(query_bundle)
+
+            if not nodes:
+                log.info("Falling back to vector-only retrieval")
+                nodes = index.as_retriever(similarity_top_k=20).retrieve(query_bundle)
+
+            nodes = MetadataReplacementNodePostprocessor(
+                target_metadata_key="window"
+            ).postprocess_nodes(nodes, query_bundle=query_bundle)
+
+            nodes = rerank_nodes(retrieval_query, nodes, top_k=5)
+
+        citations = extract_citations(nodes)
+
+        # ── LLM + engine setup ─────────────────────────────────────────────────
+        tier_llm = _get_llm_for_medicaid(user) if is_medicaid_query else get_llm_for_role(user.role)
+        use_agent = user.role in AGENTIC_ROLES
+
+        if use_agent:
+            engine = ReActAgent.from_tools(
+                tools=ALL_TOOLS,
+                llm=tier_llm,
+                memory=memory,
+                system_prompt=system_prompt,
+                max_iterations=5,
+                verbose=False,
+            )
+        else:
+            engine = ContextChatEngine.from_defaults(
+                retriever=StaticNodeRetriever(nodes),
+                memory=memory,
+                llm=tier_llm,
+                system_prompt=system_prompt,
+                verbose=False,
+            )
+
+        # ── Stream LLM response ────────────────────────────────────────────────
         full_response = []
         try:
             streaming_response = await engine.astream_chat(request.message)
@@ -515,7 +530,6 @@ async def chat(
             yield "\n\n[STREAM_ERROR]"
             return
 
-        # Append structured citations sentinel — parsed and stripped by the frontend
         if citations:
             citations_json = json.dumps(citations, ensure_ascii=False)
             yield f"\n\n[CITATIONS]{citations_json}[/CITATIONS]"
