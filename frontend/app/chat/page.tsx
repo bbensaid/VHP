@@ -164,6 +164,7 @@ export default function ChatPage() {
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [phiError, setPhiError] = useState<string | null>(null);
   const [userRole, setUserRole] = useState<string>("all");
+  const [dynamicCards, setDynamicCards] = useState<{ title: string; pillar: string; type: string; prompt: string; href: string }[] | null>(null);
 
   const abortControllerRef = useRef<AbortController | null>(null);
   const chatContainerRef = useRef<HTMLDivElement>(null);
@@ -176,6 +177,13 @@ export default function ChatPage() {
     try {
       const role = localStorage.getItem("htr-user-role") ?? "all";
       setUserRole(role);
+
+      // Fetch dynamic Sanity cards for this role
+      fetch(`/api/role-content?role=${role}`)
+        .then((r) => r.json())
+        .then((data) => { if (data.cards?.length) setDynamicCards(data.cards); })
+        .catch(() => {}); // fall back to static on error
+
       // If a role greeting was set by /welcome, clear history so cards show first
       const greeting = localStorage.getItem("htr-chat-greeting");
       if (greeting) {
@@ -467,18 +475,38 @@ export default function ChatPage() {
                   </p>
                 </div>
 
-                {/* Starter cards */}
+                {/* Starter cards — dynamic from Sanity, fallback to static */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full mb-6">
-                  {(ROLE_STARTERS[userRole] ?? ROLE_STARTERS["all"]).map((card, i) => (
-                    <button
-                      key={i}
-                      onClick={() => askQuestion(card.prompt)}
-                      className={`flex flex-col gap-2 p-4 rounded-xl border-2 text-left transition-all shadow-sm hover:shadow-md ${card.color}`}
-                    >
-                      <span className="text-xs font-black uppercase tracking-widest opacity-60">{card.label}</span>
-                      <span className="text-sm font-medium leading-snug">{card.prompt}</span>
-                    </button>
-                  ))}
+                  {dynamicCards
+                    ? dynamicCards.map((card, i) => {
+                        const colors = [
+                          "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-900",
+                          "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-900",
+                          "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-900",
+                          "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-900",
+                        ];
+                        return (
+                          <button
+                            key={i}
+                            onClick={() => askQuestion(card.prompt)}
+                            className={`flex flex-col gap-2 p-4 rounded-xl border-2 text-left transition-all shadow-sm hover:shadow-md ${colors[i % colors.length]}`}
+                          >
+                            <span className="text-xs font-black uppercase tracking-widest opacity-50">{card.pillar} · {card.type === "policyAnalysis" ? "Analysis" : card.type === "caseStudy" ? "Case Study" : "Article"}</span>
+                            <span className="text-sm font-semibold leading-snug">{card.title}</span>
+                          </button>
+                        );
+                      })
+                    : (ROLE_STARTERS[userRole] ?? ROLE_STARTERS["all"]).map((card, i) => (
+                        <button
+                          key={i}
+                          onClick={() => askQuestion(card.prompt)}
+                          className={`flex flex-col gap-2 p-4 rounded-xl border-2 text-left transition-all shadow-sm hover:shadow-md ${card.color}`}
+                        >
+                          <span className="text-xs font-black uppercase tracking-widest opacity-60">{card.label}</span>
+                          <span className="text-sm font-medium leading-snug">{card.prompt}</span>
+                        </button>
+                      ))
+                  }
                 </div>
 
                 {/* Change role link */}
