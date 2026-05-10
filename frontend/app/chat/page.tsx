@@ -167,12 +167,15 @@ export default function ChatPage() {
       const decoder = new TextDecoder();
       let done = false;
       let aiText = "";
+      let isFirstChunk = true;
 
       while (!done) {
         const { value, done: doneReading } = await reader.read();
         done = doneReading;
         if (value) {
-          aiText += decoder.decode(value, { stream: true });
+          let chunk = decoder.decode(value, { stream: true });
+          if (isFirstChunk) { chunk = chunk.trimStart(); isFirstChunk = false; }
+          aiText += chunk;
           const hasError = aiText.includes("[STREAM_ERROR]");
           const rawDisplay = hasError
             ? aiText.replace("[STREAM_ERROR]", "").trimEnd() + "\n\n*An error occurred generating this response.*"
