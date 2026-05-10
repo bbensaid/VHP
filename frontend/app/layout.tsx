@@ -12,6 +12,7 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import WebVitalsReporter from "@/components/WebVitalsReporter";
 import ClientOnlyShell from "@/components/ClientOnlyShell";
+import WelcomeRedirect from "@/components/WelcomeRedirect";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,6 +61,7 @@ export default async function RootLayout({
             Skip to main content
           </a>
           <ClientOnlyShell />
+          <WelcomeRedirect />
           <TickerProvider>
             <SidebarProvider>
               <div className="flex flex-col h-screen">
