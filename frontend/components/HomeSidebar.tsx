@@ -267,7 +267,7 @@ const SECTIONS: Section[] = [
       { href: "/vermont-act-68",          label: "Vermont Act 68 (2025)",     icon: MapPinIcon },
       { href: "/vermont-act-68/simulator", label: "Act 68 Simulator",           icon: TableCellsIcon },
       { href: "/vermont-rht-program", label: "Vermont RHT Program",  icon: DocumentTextIcon },
-      { href: "/system-vitals",       label: "Bed Capacity & Transfer", icon: TableCellsIcon },
+      { href: "/bed-capacity",          label: "Bed Capacity & Transfer", icon: TableCellsIcon },
       { href: "/ahead-model",         label: "AHEAD Model",         icon: DocumentTextIcon },
       { href: "/states",              label: "All States Explorer", icon: GlobeAmericasIcon },
       { href: "/dashboard",           label: "50-State Dashboard",  icon: TableCellsIcon },
@@ -323,7 +323,7 @@ function getSectionForPath(path: string, searchParams: URLSearchParams | null): 
 
   if (path === "/academy" || path.startsWith("/academy/")) return "learn";
 
-  const statesPrefixes = ["/vermont-medicaid", "/vermont-act-167", "/vermont-act-68", "/vermont-rht-program", "/california-calaim", "/oregon-cco", "/states", "/dashboard", "/ahead-model", "/system-vitals"];
+  const statesPrefixes = ["/vermont-medicaid", "/vermont-act-167", "/vermont-act-68", "/vermont-rht-program", "/california-calaim", "/oregon-cco", "/states", "/dashboard", "/ahead-model", "/bed-capacity"];
   if (statesPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "states";
 
   const toolsPrefixes = ["/htr-simulator", "/medicaid-eligibility-simulator", "/hti-dashboard", "/the-wire", "/investment-tracker", "/transformation-friction-index", "/impact-simulation", "/multimedia", "/trending-topics"];
