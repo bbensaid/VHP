@@ -379,52 +379,10 @@ export default function ChatPage() {
         </div>
       </header>
 
-      {/* ── Body: two-column layout ─────────────────────────────────────────── */}
+      {/* ── Body ────────────────────────────────────────────────────────────── */}
       <div className="flex-1 flex overflow-hidden min-h-0">
 
-        {/* ── Left panel ───────────────────────────────────────────────────── */}
-        <aside className="hidden lg:flex flex-col w-72 xl:w-80 border-r border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 overflow-y-auto">
-
-          {/* Dynamic follow-up suggestions */}
-          <div className="p-5 flex-1">
-            {suggestions.length > 0 ? (
-              <>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">Follow-up Questions</p>
-                <div className="space-y-2">
-                  {suggestions.map((q, i) => (
-                    <button
-                      key={i}
-                      onClick={() => askQuestion(q)}
-                      disabled={isLoading}
-                      className="w-full text-left text-xs text-slate-600 dark:text-slate-400 hover:text-indigo-700 hover:bg-indigo-50 dark:hover:bg-indigo-950/30 rounded-lg px-3 py-2.5 transition-colors leading-snug border border-slate-100 dark:border-slate-700 hover:border-indigo-200 dark:hover:border-indigo-700 disabled:opacity-40"
-                    >
-                      {q}
-                    </button>
-                  ))}
-                </div>
-              </>
-            ) : (
-              <p className="text-xs text-slate-400 dark:text-slate-500 text-center mt-8 leading-relaxed">
-                Follow-up questions will appear here after your first message.
-              </p>
-            )}
-          </div>
-
-          {/* Context links */}
-          <div className="p-5 border-t border-slate-100 dark:border-slate-700">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">Related Pages</p>
-            <div className="space-y-1">
-              {CONTEXT_LINKS.map(({ label, href, icon: Icon }) => (
-                <Link key={href} href={href} className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 hover:text-indigo-700 hover:bg-indigo-50 dark:hover:bg-indigo-950/30 rounded-lg px-3 py-2 transition-colors">
-                  <Icon className="w-3.5 h-3.5 flex-shrink-0" />
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </aside>
-
-        {/* ── Right panel: chat ─────────────────────────────────────────────── */}
+        {/* ── Chat: full width ─────────────────────────────────────────────── */}
         <main className="flex-1 flex flex-col min-w-0 min-h-0">
 
           {/* Message area */}
