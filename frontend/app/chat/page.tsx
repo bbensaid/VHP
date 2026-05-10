@@ -446,8 +446,8 @@ export default function ChatPage() {
                       <ReactMarkdown
                         components={{
                           p: ({ node, children, ...props }) => {
-                            const text = String(children);
-                            if (text.includes("TRY IT IN THE HTR LAB")) {
+                            const raw = node?.children?.map((c: any) => c.value || "").join("") ?? "";
+                            if (raw.includes("TRY IT IN THE HTR LAB")) {
                               return (
                                 <p {...props} className="mb-3 mt-3 leading-relaxed text-slate-700 dark:text-slate-200">
                                   <span className="font-black text-emerald-600 dark:text-emerald-400">🔬 TRY IT IN THE HTR LAB: </span>
