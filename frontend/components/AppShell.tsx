@@ -29,7 +29,8 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   // 1. ROUTE LOGIC
   const isStudio = pathname.startsWith("/studio");
   const isChatPage = pathname === "/chat";
-  const hideSidebarsCompletely = isStudio || isChatPage;
+  const isWelcomePage = pathname === "/welcome";
+  const hideSidebarsCompletely = isStudio || isChatPage || isWelcomePage;
 
   // 2. SIDEBAR STATE from Context (shared with Header)
   const { isLeftOpen, isRightOpen, setLeftOpen, setRightOpen } = useSidebar();
