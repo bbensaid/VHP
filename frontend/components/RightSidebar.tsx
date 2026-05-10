@@ -332,7 +332,8 @@ export default function RightSidebar() {
                         const text = String(children);
                         if (text.includes("TRY IT IN THE HTR LAB")) {
                           return (
-                            <p {...props} className="mb-1.5 mt-2 px-2 py-1.5 bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-700 rounded-lg font-bold text-indigo-700 dark:text-indigo-300">
+                            <p {...props} className="mb-1.5 mt-2 text-slate-700 dark:text-slate-200">
+                              <span className="font-black text-emerald-600 dark:text-emerald-400">🔬 TRY IT IN THE HTR LAB: </span>
                               {children}
                             </p>
                           );
