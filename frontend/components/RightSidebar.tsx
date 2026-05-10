@@ -166,12 +166,16 @@ export default function RightSidebar() {
       const decoder = new TextDecoder();
       let done = false;
       let aiText = "";
+      let isFirstChunk = true;
 
       while (!done) {
         const { value, done: d } = await reader.read();
         done = d;
         if (value) {
-          aiText += decoder.decode(value, { stream: true });
+          let chunk = decoder.decode(value, { stream: true });
+          // Strip the leading keepalive space the backend sends before retrieval
+          if (isFirstChunk) { chunk = chunk.trimStart(); isFirstChunk = false; }
+          aiText += chunk;
           const hasError = aiText.includes("[STREAM_ERROR]");
           const displayRaw = hasError
             ? aiText.replace("[STREAM_ERROR]", "").trimEnd() + "\n\n*Error generating response.*"
