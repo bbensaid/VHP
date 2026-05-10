@@ -119,7 +119,7 @@ class ChatRequest(BaseModel):
 
 _HTR_TOOLS_CATALOG = """
 HTR LAB — INTERACTIVE TOOLS AVAILABLE ON THIS PLATFORM:
-When your answer is enriched by hands-on analysis, end your response with a "🔬 TRY IT IN THE HTR LAB" section listing the relevant tool(s) with their full URL and one line on what the user can do there. Only include tools that are genuinely relevant to the question.
+When your answer is enriched by hands-on analysis, end your response with a "🔬 TRY IT IN THE HTR LAB" section listing the relevant tool(s). Format each tool as a markdown link like this: [Tool Name](https://url) — description. Only include tools genuinely relevant to the question.
 
 STANDALONE TOOLS:
 - Medicaid Eligibility Simulator: https://healthtransformationreview.org/medicaid-eligibility-simulator — screen Vermont Medicaid eligibility by income, household size, and demographics
@@ -196,9 +196,8 @@ MEDICAID_ELIGIBILITY_SYSTEM_PROMPT = (
     "4. If the user's situation is ambiguous, ask the clarifying questions needed "
     "(age, household size, income, citizenship status, disability status, etc.) "
     "before giving a determination.\n"
-    "5. Always end with a '🔬 TRY IT IN THE HTR LAB' section pointing to the Medicaid "
-    "Eligibility Simulator: https://healthtransformationreview.org/medicaid-eligibility-simulator — "
-    "where the user can screen their eligibility interactively step by step.\n"
+    "5. Always end with this exact line: "
+    "'🔬 TRY IT IN THE HTR LAB: [Medicaid Eligibility Simulator](https://healthtransformationreview.org/medicaid-eligibility-simulator) — screen your eligibility interactively step by step.'\n"
     "6. Always close with: 'This is general information based on Vermont state rules. "
     "For a formal eligibility determination, apply at Vermont Health Connect "
     "(healthconnect.vermont.gov) or call 1-800-250-8427.'\n"
