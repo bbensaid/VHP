@@ -445,7 +445,17 @@ export default function ChatPage() {
                     <div className="text-sm text-slate-800 dark:text-slate-200 leading-relaxed">
                       <ReactMarkdown
                         components={{
-                          p: ({ node, ...props }) => <p {...props} className="mb-3 last:mb-0 leading-relaxed" />,
+                          p: ({ node, children, ...props }) => {
+                            const text = String(children);
+                            if (text.includes("TRY IT IN THE HTR LAB")) {
+                              return (
+                                <p {...props} className="mb-3 mt-3 px-3 py-2 bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-700 rounded-lg font-bold text-indigo-700 dark:text-indigo-300 leading-relaxed">
+                                  {children}
+                                </p>
+                              );
+                            }
+                            return <p {...props} className="mb-3 last:mb-0 leading-relaxed">{children}</p>;
+                          },
                           ul: ({ node, ...props }) => <ul {...props} className="list-disc pl-5 mb-3 space-y-1" />,
                           ol: ({ node, ...props }) => <ol {...props} className="list-decimal pl-5 mb-3 space-y-1" />,
                           li: ({ node, ...props }) => <li {...props} className="leading-relaxed" />,
