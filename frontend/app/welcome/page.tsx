@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 const ROLES = [
@@ -22,16 +23,34 @@ const ROLE_GREETINGS: Record<string, string> = {
   compliance: "Welcome. I see you're a Medicaid / Compliance Officer. What do you need — Vermont Medicaid eligibility rules, Act 167 compliance, regulatory updates, or something else?",
   researcher: "Welcome. I see you're a Student or Researcher. What are you studying — health policy, economics, technology, clinical outcomes, or something else?",
   investor:   "Welcome. I see you're an Investor or Consultant. What are you analyzing — market trends, M&A activity, financial benchmarks, or something else?",
-  all:        "Welcome to Health Transformation Review. This platform covers policy, economics, technology, clinical innovation, health equity, and operations. What are you looking for today?",
 };
 
 export default function WelcomePage() {
   const router = useRouter();
+  const [skipExpanded, setSkipExpanded] = useState(false);
+
+  function goStandardNav() {
+    try {
+      localStorage.setItem("htr-user-role", "all");
+      localStorage.removeItem("htr-chat-greeting");
+      localStorage.removeItem("htr-chat-history");
+    } catch { /* ignore */ }
+    router.push("/");
+  }
+
+  function goAIChat() {
+    try {
+      localStorage.setItem("htr-user-role", "all");
+      localStorage.removeItem("htr-chat-greeting");
+      localStorage.removeItem("htr-chat-history");
+    } catch { /* ignore */ }
+    router.push("/chat");
+  }
 
   function pick(roleId: string) {
     try {
       localStorage.setItem("htr-user-role", roleId);
-      localStorage.setItem("htr-chat-greeting", ROLE_GREETINGS[roleId] ?? ROLE_GREETINGS["all"]);
+      localStorage.setItem("htr-chat-greeting", ROLE_GREETINGS[roleId]);
       localStorage.removeItem("htr-chat-history");
     } catch { /* ignore */ }
     router.push("/chat");
@@ -61,23 +80,70 @@ export default function WelcomePage() {
         </p>
       </div>
 
-      {/* Skip tile — first, different background */}
+      {/* Skip section */}
       <div className="w-full max-w-3xl mb-2">
-        <button
-          onClick={() => pick("all")}
-          className="w-full flex items-center gap-3 px-5 py-4 bg-slate-100 dark:bg-slate-700 border-2 border-slate-300 dark:border-slate-600 hover:border-slate-400 dark:hover:border-slate-500 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-xl text-left transition-all group shadow-sm"
-        >
-          <span className="text-2xl">🌐</span>
-          <div>
-            <span className="text-sm font-black text-slate-600 dark:text-slate-300 group-hover:text-slate-800 dark:group-hover:text-white leading-snug">
-              Skip — Show Me Everything
-            </span>
-            <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">Browse the full platform without personalization</p>
+        {!skipExpanded ? (
+          /* Collapsed: single "Skip" button */
+          <button
+            onClick={() => setSkipExpanded(true)}
+            className="w-full flex items-center gap-3 px-5 py-4 bg-linear-to-r from-teal-50 to-cyan-50 dark:from-teal-900/30 dark:to-cyan-900/30 border-2 border-teal-300 dark:border-teal-600 hover:border-teal-400 dark:hover:border-teal-500 hover:from-teal-100 hover:to-cyan-100 dark:hover:from-teal-900/50 dark:hover:to-cyan-900/50 rounded-xl text-left transition-all group shadow-sm"
+          >
+            <span className="text-2xl">🌐</span>
+            <div>
+              <span className="text-sm font-black text-teal-700 dark:text-teal-300 group-hover:text-teal-800 dark:group-hover:text-teal-200 leading-snug">
+                Skip — Show Me Everything
+              </span>
+              <p className="text-xs text-teal-500 dark:text-teal-400 mt-0.5">Browse the full platform without personalization</p>
+            </div>
+          </button>
+        ) : (
+          /* Expanded: choose navigation style */
+          <div className="border-2 border-teal-300 dark:border-teal-600 rounded-xl overflow-hidden shadow-sm">
+            <div className="px-5 py-3 bg-linear-to-r from-teal-50 to-cyan-50 dark:from-teal-900/30 dark:to-cyan-900/30 flex items-center gap-3 border-b border-teal-200 dark:border-teal-700">
+              <span className="text-xl">🌐</span>
+              <span className="text-sm font-black text-teal-700 dark:text-teal-300">
+                How would you like to explore?
+              </span>
+              <button
+                onClick={() => setSkipExpanded(false)}
+                className="ml-auto text-xs text-teal-400 hover:text-teal-600 dark:hover:text-teal-200 transition-colors"
+              >
+                ✕
+              </button>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-teal-100 dark:divide-teal-800 bg-white dark:bg-slate-900">
+              {/* Option A: Standard nav */}
+              <button
+                onClick={goStandardNav}
+                className="flex flex-col gap-2 px-6 py-5 text-left hover:bg-amber-50 dark:hover:bg-amber-900/20 transition-colors group"
+              >
+                <span className="text-2xl">🗺️</span>
+                <span className="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-teal-700 dark:group-hover:text-teal-300">
+                  Browse with navbar & sidebar
+                </span>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                  Navigate the platform the traditional way — use the top navbar and left sidebar to explore pillars, tools, and programs at your own pace.
+                </p>
+              </button>
+              {/* Option B: AI chatbox with full grid */}
+              <button
+                onClick={goAIChat}
+                className="flex flex-col gap-2 px-6 py-5 text-left hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors group"
+              >
+                <span className="text-2xl">✨</span>
+                <span className="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-indigo-700 dark:group-hover:text-indigo-300">
+                  Explore through the AI chatbox
+                </span>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                  Get a full map of every pillar, tool, and topic as clickable cards — then dive in by asking the AI anything about what you find.
+                </p>
+              </button>
+            </div>
           </div>
-        </button>
+        )}
       </div>
 
-      {/* Role grid */}
+      {/* Role grid — selecting a role always uses the AI chatbox */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 w-full max-w-3xl">
         {ROLES.map((role) => (
           <button
