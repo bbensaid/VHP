@@ -38,18 +38,18 @@ export default function WelcomePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-indigo-50 dark:from-slate-950 dark:to-indigo-950 flex flex-col items-center justify-center px-4 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-indigo-50 dark:from-slate-950 dark:to-indigo-950 flex flex-col items-center justify-center px-4 py-4">
 
       {/* Logo */}
-      <div className="mb-8 text-center">
+      <div className="mb-3 text-center">
         <span className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">
           Health Transformation Review
         </span>
       </div>
 
       {/* Message */}
-      <div className="max-w-xl text-center mb-10">
-        <h1 className="text-3xl font-black text-slate-900 dark:text-white mb-4 leading-tight">
+      <div className="max-w-xl text-center mb-5">
+        <h1 className="text-2xl font-black text-slate-900 dark:text-white mb-3 leading-tight">
           This platform has a lot to offer.<br />
           <span className="text-indigo-600 dark:text-indigo-400">Let's show you what matters most to you.</span>
         </h1>
@@ -62,7 +62,7 @@ export default function WelcomePage() {
       </div>
 
       {/* Skip tile — first, different background */}
-      <div className="w-full max-w-3xl mb-3">
+      <div className="w-full max-w-3xl mb-2">
         <button
           onClick={() => pick("all")}
           className="w-full flex items-center gap-3 px-5 py-4 bg-slate-100 dark:bg-slate-700 border-2 border-slate-300 dark:border-slate-600 hover:border-slate-400 dark:hover:border-slate-500 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-xl text-left transition-all group shadow-sm"
