@@ -18,9 +18,15 @@ import {
   ArrowLeftIcon,
   ArrowsPointingInIcon,
   BookOpenIcon,
-  DocumentTextIcon,
   AcademicCapIcon,
-  ChartBarIcon,
+  BuildingLibraryIcon,
+  BanknotesIcon,
+  CpuChipIcon,
+  HeartIcon,
+  ScaleIcon,
+  Cog6ToothIcon,
+  WrenchScrewdriverIcon,
+  MapPinIcon,
 } from "@heroicons/react/24/outline";
 import ReactMarkdown from "react-markdown";
 import BackendStatus from "@/components/BackendStatus";
@@ -47,6 +53,154 @@ function detectPHI(text: string): boolean {
 
   return false;
 }
+
+// ── Full platform topic grid (shown when user chose "Skip — Show me everything") ──
+
+const ALL_PLATFORM_SECTIONS = [
+  {
+    label: "Policy",
+    color: "bg-sky-50 border-sky-200 text-sky-800 hover:bg-sky-100",
+    headerColor: "text-sky-700",
+    icon: BuildingLibraryIcon,
+    topics: [
+      { label: "Regulation & Legislation",    prompt: "What are the most important health regulations and legislation I should know about?" },
+      { label: "Public Health Mandates",       prompt: "What federal and state public health mandates are shaping healthcare delivery right now?" },
+      { label: "Global & Comparative Policy",  prompt: "How does US health policy compare to other countries on key outcomes?" },
+      { label: "Policy Feasibility Studies",   prompt: "What methodologies are used for health policy feasibility analysis?" },
+      { label: "Policy Simulator",             prompt: "How can I use the platform's policy simulator to model healthcare scenarios?" },
+      { label: "Work Requirements Calculator", prompt: "What is the estimated coverage impact of Medicaid work requirements in Vermont?" },
+      { label: "H.R. 1 Cliff Scenario",        prompt: "Explain the H.R. 1 cliff scenario and its impact on Medicaid coverage" },
+      { label: "Innovation Leaderboard",       prompt: "Which states are leading in health transformation and innovation?" },
+    ],
+  },
+  {
+    label: "Economics",
+    color: "bg-emerald-50 border-emerald-200 text-emerald-800 hover:bg-emerald-100",
+    headerColor: "text-emerald-700",
+    icon: BanknotesIcon,
+    topics: [
+      { label: "Value-Based Care Models",        prompt: "What are the leading value-based care models and how do they differ?" },
+      { label: "Market & Finance",               prompt: "What are the key financial trends shaping healthcare markets right now?" },
+      { label: "Labor & Workforce Strategy",     prompt: "What workforce economics strategies are most effective for health systems?" },
+      { label: "Healthcare Investment Trends",   prompt: "Where is investment flowing in healthcare and why?" },
+      { label: "APM Design Lab",                 prompt: "How do I design an alternative payment model for a Vermont ACO?" },
+      { label: "Shared Savings Calculator",      prompt: "How does shared savings work in an ACO and how is it calculated?" },
+      { label: "CEA Calculator",                 prompt: "How do I calculate cost-effectiveness (cost per QALY) for a health intervention?" },
+      { label: "Global Budget Transition",       prompt: "Model the revenue trajectory for a health system transitioning to a global budget" },
+      { label: "Hospital Financial Stress Test", prompt: "Which Vermont hospitals are most financially stressed and why?" },
+      { label: "HTA Studio",                     prompt: "What is Health Technology Assessment and how is it used in coverage decisions?" },
+      { label: "Actuarial Lab",                  prompt: "What are the actuarial risks in Vermont's AHEAD model for payers?" },
+    ],
+  },
+  {
+    label: "Technology",
+    color: "bg-indigo-50 border-indigo-200 text-indigo-800 hover:bg-indigo-100",
+    headerColor: "text-indigo-700",
+    icon: CpuChipIcon,
+    topics: [
+      { label: "AI & Machine Learning",          prompt: "How is AI being used in healthcare and what are the governance requirements?" },
+      { label: "Digital Health & Telemedicine",  prompt: "What are the latest developments in digital health and telemedicine reimbursement?" },
+      { label: "Data Security & Governance",     prompt: "What are the HIPAA cybersecurity requirements for health systems?" },
+      { label: "Tech-Enabled Workflow",          prompt: "How is technology transforming clinical and operational workflows in health systems?" },
+      { label: "FHIR Interoperability Lab",      prompt: "How do I build a FHIR R4 compliant patient summary and test it against ONC requirements?" },
+      { label: "AI Clinical Governance Lab",     prompt: "How do I detect and mitigate algorithmic bias in a clinical AI model?" },
+      { label: "Digital Health Lab",             prompt: "What is the ROI model for a remote patient monitoring program?" },
+    ],
+  },
+  {
+    label: "Clinical",
+    color: "bg-rose-50 border-rose-200 text-rose-800 hover:bg-rose-100",
+    headerColor: "text-rose-700",
+    icon: HeartIcon,
+    topics: [
+      { label: "Hospital-at-Home",          prompt: "What's the latest evidence on hospital-at-home programs and reimbursement?" },
+      { label: "Precision Medicine",        prompt: "How is precision medicine changing treatment protocols and what are the cost implications?" },
+      { label: "Virtual Care Models",       prompt: "What are the most effective virtual care delivery models and their outcomes?" },
+      { label: "Risk Stratification",       prompt: "What tools help stratify patient risk and identify high-need populations?" },
+      { label: "Clinical Quality Optimizer",prompt: "How can I improve HEDIS scores and CMS Star Ratings?" },
+      { label: "Workforce Modeler",         prompt: "What workforce strategies address clinical staffing shortages in Vermont?" },
+    ],
+  },
+  {
+    label: "Equity",
+    color: "bg-violet-50 border-violet-200 text-violet-800 hover:bg-violet-100",
+    headerColor: "text-violet-700",
+    icon: ScaleIcon,
+    topics: [
+      { label: "SDOH Integration",          prompt: "How does SDOH integration improve clinical outcomes and reduce costs?" },
+      { label: "Algorithmic Bias",          prompt: "What are the main sources of algorithmic bias in healthcare AI and how are they addressed?" },
+      { label: "Access Disparity",          prompt: "What are the biggest health access disparities in Vermont and nationally?" },
+      { label: "Population Health Modeler", prompt: "How do I model population health interventions and their equity impact?" },
+      { label: "Health Equity Studio",      prompt: "What metrics should I track to measure health equity progress in my organization?" },
+    ],
+  },
+  {
+    label: "Operations",
+    color: "bg-teal-50 border-teal-200 text-teal-800 hover:bg-teal-100",
+    headerColor: "text-teal-700",
+    icon: Cog6ToothIcon,
+    topics: [
+      { label: "Revenue Cycle Management",     prompt: "What are the best revenue cycle management strategies for health systems in 2026?" },
+      { label: "Workforce & Human Capital",    prompt: "What are effective workforce retention and human capital strategies in healthcare?" },
+      { label: "Quality, Compliance & Risk",   prompt: "What are the key compliance and risk management priorities for health systems?" },
+      { label: "Supply Chain & Infrastructure",prompt: "How are health systems modernizing supply chain and infrastructure post-pandemic?" },
+      { label: "Payer & Network Operations",   prompt: "What are the key payer negotiation and network strategy trends?" },
+      { label: "Transformation Scorecard",     prompt: "How do I assess my organization's overall health transformation readiness?" },
+      { label: "VBC Readiness Assessment",     prompt: "How ready is a typical health system for value-based care contracts?" },
+      { label: "Evidence Library",             prompt: "What are the strongest evidence-based interventions for healthcare transformation?" },
+    ],
+  },
+  {
+    label: "Tools & Simulations",
+    color: "bg-amber-50 border-amber-200 text-amber-800 hover:bg-amber-100",
+    headerColor: "text-amber-700",
+    icon: WrenchScrewdriverIcon,
+    topics: [
+      { label: "HTR Simulator",            prompt: "What can the HTR Simulator model and how do I use it?" },
+      { label: "Medicaid Eligibility",     prompt: "Am I eligible for Vermont Medicaid? Walk me through the criteria." },
+      { label: "HTI Dashboard",            prompt: "What does the Health Transformation Index measure and how are states ranked?" },
+      { label: "The Wire",                 prompt: "What are the most important healthcare news stories and signals right now?" },
+      { label: "Investment Tracker",       prompt: "What are the biggest healthcare investment deals and trends this year?" },
+      { label: "Friction Index",           prompt: "What is the Health Transformation Friction Index and which states have the most friction?" },
+      { label: "Impact Simulation",        prompt: "How do I simulate the impact of a specific health policy change?" },
+      { label: "Trending Topics",          prompt: "What are the most discussed topics in health transformation right now?" },
+    ],
+  },
+  {
+    label: "States & Programs",
+    color: "bg-orange-50 border-orange-200 text-orange-800 hover:bg-orange-100",
+    headerColor: "text-orange-700",
+    icon: MapPinIcon,
+    topics: [
+      { label: "Vermont Medicaid",           prompt: "Give me an overview of Vermont Medicaid — eligibility, benefits, and recent changes." },
+      { label: "Vermont Act 167",            prompt: "Walk me through Vermont Act 167 and what it requires from providers." },
+      { label: "Vermont Act 68 (2025)",      prompt: "What does Vermont Act 68 of 2025 change for health policy?" },
+      { label: "Vermont AHEAD Model",        prompt: "What is Vermont's AHEAD model and how does it differ from traditional Medicaid?" },
+      { label: "Vermont RHT Program",        prompt: "What is Vermont's Rural Health Transformation Program?" },
+      { label: "Bed Capacity & Transfer",    prompt: "What is Vermont's current hospital bed capacity situation and how are transfers managed?" },
+      { label: "All States Explorer",        prompt: "Compare Vermont to neighboring states on health transformation metrics." },
+      { label: "50-State Dashboard",         prompt: "Rank all 50 states on health transformation activity and innovation." },
+      { label: "California CalAIM",          prompt: "What is California's CalAIM initiative and what can other states learn from it?" },
+      { label: "Oregon CCO 3.0",             prompt: "What is Oregon's CCO 3.0 model and how does it differ from traditional Medicaid managed care?" },
+      { label: "CMS Rural Health",           prompt: "What is the CMS Rural Health Transformation program and who qualifies?" },
+    ],
+  },
+  {
+    label: "Academy & Learning",
+    color: "bg-sky-50 border-sky-200 text-sky-800 hover:bg-sky-100",
+    headerColor: "text-sky-700",
+    icon: AcademicCapIcon,
+    topics: [
+      { label: "Personalized Learning Path", prompt: "Where should I start learning about value-based care and health transformation?" },
+      { label: "Learning Tracks",            prompt: "What structured learning tracks does the platform offer?" },
+      { label: "Courses",                    prompt: "What courses are available on health economics, policy, and transformation?" },
+      { label: "Webinars",                   prompt: "What webinars are available on health transformation topics?" },
+      { label: "Case Studies",               prompt: "What are the most instructive healthcare transformation case studies?" },
+      { label: "Medicaid Learning Center",   prompt: "Where can I learn the basics of how Medicaid works and its policy landscape?" },
+      { label: "Key CEA Studies",            prompt: "What are the landmark cost-effectiveness studies in healthcare I should know?" },
+    ],
+  },
+];
 
 // ── Role-specific starter cards ───────────────────────────────────────────────
 
@@ -99,12 +253,6 @@ const ROLE_STARTERS: Record<string, { prompt: string; label: string; color: stri
     { prompt: "How do I benchmark a health system's VBC readiness before acquisition?", label: "Pre-acquisition benchmarking", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
     { prompt: "Rank all 50 states on health transformation activity and innovation", label: "50-state innovation ranking", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
   ],
-  all: [
-    { prompt: "What tools does this platform have for modeling health policy scenarios?", label: "Explore platform tools", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
-    { prompt: "Give me an overview of Vermont's health transformation initiatives", label: "Vermont health reform", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
-    { prompt: "Am I eligible for Vermont Medicaid?", label: "Medicaid eligibility", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
-    { prompt: "What are the biggest trends in US healthcare right now?", label: "Healthcare trends", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
-  ],
 };
 
 const ROLE_LABELS: Record<string, string> = {
@@ -116,7 +264,6 @@ const ROLE_LABELS: Record<string, string> = {
   compliance: "Medicaid / Compliance Officer",
   researcher: "Student / Researcher",
   investor: "Investor / Consultant",
-  all: "Healthcare Professional",
 };
 
 // ── Types ────────────────────────────────────────────────────────────────────
@@ -161,7 +308,6 @@ export default function ChatPage() {
   const [mounted, setMounted] = useState(false);
   const [showClearConfirm, setShowClearConfirm] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
-  const [suggestions, setSuggestions] = useState<string[]>([]);
   const [phiError, setPhiError] = useState<string | null>(null);
   const [userRole, setUserRole] = useState<string>("all");
   const [dynamicCards, setDynamicCards] = useState<{ title: string; pillar: string; type: string; prompt: string; href: string }[] | null>(null);
@@ -296,19 +442,6 @@ export default function ChatPage() {
       }
     } finally {
       setIsLoading(false);
-      // Fetch follow-up suggestions after response completes
-      try {
-        const currentMessages = messagesRef.current.filter((m) => m.text.trim().length > 0);
-        const res = await fetch("/api/suggest", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ message: userMessage, history: currentMessages }),
-        });
-        if (res.ok) {
-          const data = await res.json();
-          if (Array.isArray(data.suggestions)) setSuggestions(data.suggestions);
-        }
-      } catch { /* suggestions are non-critical */ }
     }
   };
 
@@ -402,19 +535,10 @@ export default function ChatPage() {
       {/* ── Header ─────────────────────────────────────────────────────────── */}
       <header className="shrink-0 z-(--z-sticky) bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 px-4 md:px-6 pt-4 pb-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="flex items-center gap-1">
-            <button
-              onClick={() => { setRightOpen(true); router.back(); }}
-              className="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-600 transition-colors font-medium p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
-              title="Collapse to sidebar"
-            >
-              <ArrowsPointingInIcon className="w-4 h-4" />
-            </button>
-            <Link href="/" className="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-600 transition-colors font-medium p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
-              <ArrowLeftIcon className="w-4 h-4" />
-              <span className="hidden sm:inline">Home</span>
-            </Link>
-          </div>
+          <Link href="/" className="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-600 transition-colors font-medium p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
+            <ArrowLeftIcon className="w-4 h-4" />
+            <span className="hidden sm:inline">Home</span>
+          </Link>
           <span className="text-slate-300 dark:text-slate-600">|</span>
           <div className="flex items-center gap-2">
             <SparklesIcon className="w-5 h-5 text-indigo-600" />
@@ -446,6 +570,15 @@ export default function ChatPage() {
             <TrashIcon className="w-4 h-4" aria-hidden="true" />
             <span className="hidden sm:inline">Clear</span>
           </button>
+          <button
+            onClick={() => { setRightOpen(true); router.back(); }}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-indigo-600 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
+            title="Collapse to sidebar"
+            aria-label="Collapse to sidebar"
+          >
+            <ArrowsPointingInIcon className="w-4 h-4" aria-hidden="true" />
+            <span className="hidden sm:inline">Collapse</span>
+          </button>
         </div>
       </header>
 
@@ -459,64 +592,108 @@ export default function ChatPage() {
           <div ref={chatContainerRef} className="flex-1 overflow-y-auto min-h-0 px-4 md:px-8 py-6 space-y-6">
 
             {messages.length === 0 && !isLoading && (
-              <div className="flex flex-col items-center justify-center h-full max-w-3xl mx-auto px-4 py-10">
-                {/* Header */}
-                <div className="text-center mb-8">
-                  <div className="w-14 h-14 bg-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <SparklesIcon className="w-7 h-7 text-white" />
+              userRole === "all" ? (
+                /* ── Full platform grid for "Skip" users ── */
+                <div className="w-full px-4 md:px-6 py-6">
+                  {/* Header */}
+                  <div className="text-center mb-6">
+                    <div className="w-12 h-12 bg-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
+                      <SparklesIcon className="w-6 h-6 text-white" />
+                    </div>
+                    <h2 className="text-xl font-black text-slate-900 dark:text-slate-100 tracking-tight mb-1">
+                      HTR AI Analyst
+                    </h2>
+                    <p className="text-xs text-slate-500 dark:text-slate-400">
+                      Pick any topic to start — or type your own question below. Want personalized suggestions?{" "}
+                      <Link href="/welcome" className="text-indigo-600 hover:underline underline-offset-2">Tell us your role</Link>.
+                    </p>
                   </div>
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 tracking-tight mb-2">
-                    HTR AI Analyst
-                  </h2>
-                  <p className="text-sm text-slate-500 dark:text-slate-400">
-                    {userRole && userRole !== "all"
-                      ? `Personalized for ${ROLE_LABELS[userRole] ?? "you"} — pick a topic or ask your own question`
-                      : "Ask anything about health policy, economics, or transformation"}
-                  </p>
-                </div>
 
-                {/* Starter cards — dynamic from Sanity, fallback to static */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full mb-6">
-                  {dynamicCards
-                    ? dynamicCards.map((card, i) => {
-                        const colors = [
-                          "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-900",
-                          "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-900",
-                          "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-900",
-                          "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-900",
-                        ];
-                        return (
+                  {/* Responsive 2-col grid on md+, 3-col on xl+ — each section is a card */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                    {ALL_PLATFORM_SECTIONS.map((section) => {
+                      const SectionIcon = section.icon;
+                      return (
+                        <div key={section.label} className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-4 shadow-sm">
+                          <div className="flex items-center gap-2 mb-3">
+                            <SectionIcon className={`w-4 h-4 shrink-0 ${section.headerColor}`} />
+                            <span className={`text-[11px] font-black uppercase tracking-widest ${section.headerColor}`}>
+                              {section.label}
+                            </span>
+                          </div>
+                          <div className="flex flex-wrap gap-1.5">
+                            {section.topics.map((topic, i) => (
+                              <button
+                                key={i}
+                                onClick={() => askQuestion(topic.prompt)}
+                                className={`px-2.5 py-1 rounded-md border text-[11px] font-semibold transition-all ${section.color}`}
+                              >
+                                {topic.label}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ) : (
+                /* ── Role-personalized 4-card view ── */
+                <div className="flex flex-col items-center justify-center h-full max-w-3xl mx-auto px-4 py-10">
+                  <div className="text-center mb-8">
+                    <div className="w-14 h-14 bg-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <SparklesIcon className="w-7 h-7 text-white" />
+                    </div>
+                    <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 tracking-tight mb-2">
+                      HTR AI Analyst
+                    </h2>
+                    <p className="text-sm text-slate-500 dark:text-slate-400">
+                      Personalized for {ROLE_LABELS[userRole] ?? "you"} — pick a topic or ask your own question
+                    </p>
+                  </div>
+
+                  {/* Starter cards — dynamic from Sanity, fallback to static */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full mb-6">
+                    {dynamicCards
+                      ? dynamicCards.map((card, i) => {
+                          const colors = [
+                            "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-900",
+                            "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-900",
+                            "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-900",
+                            "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-900",
+                          ];
+                          return (
+                            <button
+                              key={i}
+                              onClick={() => askQuestion(card.prompt)}
+                              className={`flex flex-col gap-2 p-4 rounded-xl border-2 text-left transition-all shadow-sm hover:shadow-md ${colors[i % colors.length]}`}
+                            >
+                              <span className="text-xs font-black uppercase tracking-widest opacity-50">{card.pillar} · {card.type === "policyAnalysis" ? "Analysis" : card.type === "caseStudy" ? "Case Study" : "Article"}</span>
+                              <span className="text-sm font-semibold leading-snug">{card.title}</span>
+                            </button>
+                          );
+                        })
+                      : (ROLE_STARTERS[userRole] ?? ROLE_STARTERS["all"]).map((card, i) => (
                           <button
                             key={i}
                             onClick={() => askQuestion(card.prompt)}
-                            className={`flex flex-col gap-2 p-4 rounded-xl border-2 text-left transition-all shadow-sm hover:shadow-md ${colors[i % colors.length]}`}
+                            className={`flex flex-col gap-2 p-4 rounded-xl border-2 text-left transition-all shadow-sm hover:shadow-md ${card.color}`}
                           >
-                            <span className="text-xs font-black uppercase tracking-widest opacity-50">{card.pillar} · {card.type === "policyAnalysis" ? "Analysis" : card.type === "caseStudy" ? "Case Study" : "Article"}</span>
-                            <span className="text-sm font-semibold leading-snug">{card.title}</span>
+                            <span className="text-xs font-black uppercase tracking-widest opacity-60">{card.label}</span>
+                            <span className="text-sm font-medium leading-snug">{card.prompt}</span>
                           </button>
-                        );
-                      })
-                    : (ROLE_STARTERS[userRole] ?? ROLE_STARTERS["all"]).map((card, i) => (
-                        <button
-                          key={i}
-                          onClick={() => askQuestion(card.prompt)}
-                          className={`flex flex-col gap-2 p-4 rounded-xl border-2 text-left transition-all shadow-sm hover:shadow-md ${card.color}`}
-                        >
-                          <span className="text-xs font-black uppercase tracking-widest opacity-60">{card.label}</span>
-                          <span className="text-sm font-medium leading-snug">{card.prompt}</span>
-                        </button>
-                      ))
-                  }
-                </div>
+                        ))
+                    }
+                  </div>
 
-                {/* Change role link */}
-                <Link
-                  href="/welcome"
-                  className="text-xs text-slate-400 hover:text-indigo-600 underline underline-offset-2 transition-colors"
-                >
-                  {userRole && userRole !== "all" ? "Change my role" : "Personalize for my role"}
-                </Link>
-              </div>
+                  <Link
+                    href="/welcome"
+                    className="text-xs text-slate-400 hover:text-indigo-600 underline underline-offset-2 transition-colors"
+                  >
+                    Change my role
+                  </Link>
+                </div>
+              )
             )}
 
             {messages.map((msg, i) => (
@@ -537,10 +714,11 @@ export default function ChatPage() {
                           p: ({ node, children, ...props }) => {
                             const raw = node?.children?.map((c: any) => c.value || "").join("") ?? "";
                             if (raw.includes("TRY IT IN THE HTR LAB")) {
+                              const stripped = raw.replace(/^.*?TRY IT IN THE HTR LAB[:\s]*/i, "").trim();
                               return (
                                 <p {...props} className="mb-3 mt-3 leading-relaxed text-slate-700 dark:text-slate-200">
                                   <span className="font-black text-emerald-600 dark:text-emerald-400">🔬 TRY IT IN THE HTR LAB: </span>
-                                  {children}
+                                  {stripped}
                                 </p>
                               );
                             }
@@ -651,18 +829,22 @@ export default function ChatPage() {
                 className="w-full min-h-[7.5rem] max-h-[7.5rem] bg-transparent text-sm text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none resize-none leading-relaxed px-4 pt-2 pb-10 pr-10"
                 aria-label="Chat message input"
               />
-              <button
-                onClick={() => { setRightOpen(true); router.back(); }}
-                className="absolute top-2 right-2 p-1.5 text-slate-400 hover:text-indigo-600 transition-colors"
-                title="Collapse to sidebar"
-                aria-label="Collapse to sidebar"
-              >
-                <ArrowsPointingInIcon className="w-3.5 h-3.5" aria-hidden="true" />
-              </button>
               {isLoading ? (
-                <button onClick={handleStop} className="absolute bottom-2 right-2 p-1.5 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition-colors" aria-label="Stop generating">
-                  <StopIcon className="w-3.5 h-3.5" aria-hidden="true" />
-                </button>
+                /* Animated thinking indicator — three pulsing dots, no alarming red */
+                <div className="absolute bottom-2 right-2 flex items-center gap-2 pr-1">
+                  <div className="flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
+                    <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
+                    <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+                  </div>
+                  <button
+                    onClick={handleStop}
+                    className="text-[10px] font-bold text-slate-400 hover:text-rose-500 transition-colors px-1.5 py-0.5 rounded hover:bg-rose-50 dark:hover:bg-rose-950/30"
+                    aria-label="Stop generating"
+                  >
+                    Stop
+                  </button>
+                </div>
               ) : (
                 <button
                   onClick={handleSend}
