@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
-const SKIP_PATHS = ["/welcome", "/start", "/beta", "/login", "/signup", "/studio"];
+const SKIP_PATHS = ["/welcome", "/chat", "/beta", "/login", "/signup", "/studio"];
 
 export default function WelcomeRedirect() {
   const router = useRouter();

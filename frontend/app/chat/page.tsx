@@ -113,6 +113,14 @@ export default function ChatPage() {
   useEffect(() => {
     setMounted(true);
     try {
+      // If a role greeting was set by /welcome, show it as the first AI message
+      const greeting = localStorage.getItem("htr-chat-greeting");
+      if (greeting) {
+        localStorage.removeItem("htr-chat-greeting");
+        localStorage.removeItem("htr-chat-history");
+        setMessages([{ id: crypto.randomUUID(), role: "ai", text: greeting }]);
+        return;
+      }
       const saved = localStorage.getItem("htr-chat-history");
       if (saved) setMessages(JSON.parse(saved));
     } catch { /* ignore */ }
@@ -153,7 +161,11 @@ export default function ChatPage() {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: userMessage, history: historySnapshot }),
+        body: JSON.stringify({
+          message: userMessage,
+          history: historySnapshot,
+          userRole: (() => { try { return localStorage.getItem("htr-user-role") ?? "all"; } catch { return "all"; } })(),
+        }),
         signal: abortControllerRef.current.signal,
       });
 
