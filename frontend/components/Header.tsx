@@ -602,6 +602,7 @@ const Header = () => {
   const { isHeaderVisible, setHeaderVisible, headlines } = useTicker();
   const { toggleLeft, toggleRight, setLeftOpen, setRightOpen } = useSidebar();
   const isChatPage = pathname === "/chat";
+  const isWelcomePage = pathname === "/welcome";
   const showLeftToggle = !isStudio;
 
   const handleToggleLeft = () => {
@@ -663,6 +664,8 @@ const Header = () => {
       const path = p.trim();
       return path && (pathname === path || pathname.startsWith(path + "/"));
     });
+
+  if (isWelcomePage) return null;
 
   return (
     <header className="sticky top-0 z-50 flex flex-col font-sans bg-white dark:bg-slate-900" style={{ paddingTop: "env(safe-area-inset-top)" }}>
