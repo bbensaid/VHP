@@ -28,6 +28,13 @@ from services.llm import get_llm_for_role, get_ranker
 from services.retrieval import HybridRetriever, StaticNodeRetriever, rerank_nodes, extract_citations
 from services.tools import ALL_TOOLS
 from config import MODEL_FREE, MODEL_SUBSCRIBER, GROQ_API_KEY, MAX_SYSTEM_PROMPT_LEN
+from platform_catalog import HTR_TOOLS_CATALOG_TEXT, BASE_URL
+from services.catalog_search import (
+    find_relevant_tools_semantic,
+    format_tool_hint,
+    find_tools_for_query,
+    build_guaranteed_lab_section,
+)
 
 # Roles that get the full agentic (ReAct) pipeline
 AGENTIC_ROLES = {"professional", "advisory", "admin"}
@@ -131,54 +138,8 @@ class ChatRequest(BaseModel):
 
 
 # ── System prompts ─────────────────────────────────────────────────────────────
-
-_HTR_TOOLS_CATALOG = """
-HTR LAB — INTERACTIVE TOOLS AVAILABLE ON THIS PLATFORM:
-When your answer is enriched by hands-on analysis, end your response with a "🔬 TRY IT IN THE HTR LAB" section listing the relevant tool(s). Format each tool as a markdown link like this: [Tool Name](https://url) — description. Only include tools genuinely relevant to the question.
-
-STANDALONE TOOLS:
-- Medicaid Eligibility Simulator: https://healthtransformationreview.org/medicaid-eligibility-simulator — screen Vermont Medicaid eligibility by income, household size, and demographics
-- HTR Simulator: https://healthtransformationreview.org/htr-simulator — model transformation readiness across all six pillars
-- Impact Simulation: https://healthtransformationreview.org/impact-simulation — model cross-pillar impact of payment, care delivery, technology, workforce, equity, and policy changes
-- HTI Dashboard: https://healthtransformationreview.org/hti-dashboard — interactive Health Transformation Index scoring engine
-- Transformation Friction Index: https://healthtransformationreview.org/transformation-friction-index — quantify implementation barriers across all six pillars
-- Investment Tracker: https://healthtransformationreview.org/investment-tracker — track M&A, VC, PE, and strategic partnerships by sector and geography
-- Vermont Act 68 Simulator: https://healthtransformationreview.org/vermont-act-68/simulator — model Vermont Act 68 (2025) health transformation timeline
-- CMS Rural Health Transformation Simulator: https://healthtransformationreview.org/dashboard/simulator — model multi-pillar impact of the $50B CMS Rural Health Transformation Program
-- Personalized Learning Path: https://healthtransformationreview.org/academy/personalized-learning — AI-generated learning path tailored to your role and goals
-
-RESEARCH LAB — POLICY & QUALITY:
-- Policy Simulator: https://healthtransformationreview.org/research-lab/policy-quality?tab=policy — model 1115 waivers, global budgets, Medicaid expansion scenarios
-- Medicaid Work Requirements Calculator: https://healthtransformationreview.org/research-lab/policy-quality?tab=medicaid-wr — model coverage loss and hospital revenue impact from H.R. 1 work requirements
-- H.R. 1 Cliff Scenario: https://healthtransformationreview.org/research-lab/policy-quality?tab=hr1-cliff — model post-2030 Medicaid cliff by state
-- Clinical Quality Optimizer: https://healthtransformationreview.org/research-lab/policy-quality?tab=quality — simulate HEDIS measures, CMS Star Ratings, MIPS scores
-- Hospital Financial Stress Test: https://healthtransformationreview.org/research-lab/policy-quality?tab=scorecard — stress-test hospital financials against payer mix and Medicaid cuts
-- HTA Studio: https://healthtransformationreview.org/research-lab/policy-quality?tab=hta — build budget impact models and run Monte Carlo simulations
-- Actuarial Lab: https://healthtransformationreview.org/research-lab/policy-quality?tab=actuarial — calculate ACA actuarial value, model adverse selection, IRA drug pricing
-
-RESEARCH LAB — PAYMENT MODELS:
-- APM Design Lab: https://healthtransformationreview.org/research-lab/payment-models?tab=apm-design — design episode bundles, global budgets, benchmark waterfalls
-- APM Shared Savings Calculator: https://healthtransformationreview.org/research-lab/payment-models?tab=apm-calc — model shared savings under MSSP, ACO REACH, global budgets
-- Cost-Effectiveness Analysis Calculator: https://healthtransformationreview.org/research-lab/payment-models?tab=cea — calculate cost per QALY, NNT, break-even timelines
-- Global Budget Transition Modeler: https://healthtransformationreview.org/research-lab/payment-models?tab=gb-transition — model revenue and margin during FFS-to-global-budget transition
-
-RESEARCH LAB — POPULATION & EQUITY:
-- Population Health Modeler: https://healthtransformationreview.org/research-lab/population-equity?tab=population — run Markov disease progression models and intervention ROI
-- Health Equity Studio: https://healthtransformationreview.org/research-lab/population-equity?tab=equity — analyze racial/ethnic disparities, geographic access gaps, equity-weighted ICER
-
-RESEARCH LAB — TECHNOLOGY & AI:
-- AI Clinical Governance Lab: https://healthtransformationreview.org/research-lab/technology-ai?tab=ai — compare predictive models, detect algorithmic bias, build governance frameworks
-- Digital Health Lab: https://healthtransformationreview.org/research-lab/technology-ai?tab=digital — calculate RPM ROI, model telehealth utilization, optimize EHR interoperability
-- FHIR Interoperability Lab: https://healthtransformationreview.org/research-lab/interoperability?tab=fhir — build and validate FHIR R4 resources, test CDS Hooks, check ONC compliance
-- Risk Stratification Engine: https://healthtransformationreview.org/research-lab/interoperability?tab=risk — apply HCC v28 RAF scoring and segment populations by clinical complexity
-
-RESEARCH LAB — KNOWLEDGE & WORKFORCE:
-- VBC Readiness Assessment: https://healthtransformationreview.org/research-lab/knowledge-workspace?tab=readiness — 30-dimension assessment across 6 domains with gap analysis
-- Transformation Scorecard: https://healthtransformationreview.org/research-lab/knowledge-workspace?tab=scorecard — six-pillar executive scorecard with Vermont AHEAD milestone tracking
-- Workforce Modeler: https://healthtransformationreview.org/research-lab/knowledge-workspace?tab=workforce — project physician and nursing supply/demand across 12 specialties
-- Innovation Leaderboard: https://healthtransformationreview.org/research-lab/knowledge-workspace?tab=leaderboard — rank all 50 states on health transformation activity
-- Evidence Library: https://healthtransformationreview.org/research-lab/knowledge-workspace?tab=evidence — search 25+ landmark CEA/CUA studies and 20 CMMI innovation models
-"""
+# _HTR_TOOLS_CATALOG is no longer a hand-written string.
+# It is auto-generated from platform_catalog.py — edit that file to add/change tools.
 
 BASE_SYSTEM_PROMPT = (
     "You are an expert AI Analyst for the Health Transformation Review (HTR), a comprehensive "
@@ -186,29 +147,42 @@ BASE_SYSTEM_PROMPT = (
     "Your audience consists of healthcare executives, policy makers, and economists. "
     "You are a knowledgeable expert first, and a document retriever second.\n\n"
 
-    "ANSWERING APPROACH — follow this strictly:\n"
-    "1. DETECT whether the question is GENERAL or VERMONT-SPECIFIC.\n"
-    "   - GENERAL: broad healthcare topics (hospital capacity, VBC, APM design, telehealth, "
-    "workforce, AI in healthcare, payment models, etc.) that apply nationally or globally.\n"
-    "   - VERMONT-SPECIFIC: questions explicitly about Vermont programs, laws, or data "
-    "(Act 167, Act 68, AHEAD model, Vermont Medicaid, specific Vermont hospitals, etc.).\n\n"
-    "2. For GENERAL questions:\n"
-    "   - Answer from your expert knowledge first — give a thorough, authoritative response "
-    "that would satisfy any healthcare executive or policy expert nationally.\n"
-    "   - Then, if retrieved documents contain relevant Vermont-specific examples or data, "
-    "add a brief 'Vermont Context' section at the end citing those documents.\n"
-    "   - Do NOT build your entire answer around a single retrieved document or local example.\n"
-    "   - Do NOT treat a Vermont hospital presentation as the definitive answer to a national question.\n\n"
-    "3. For VERMONT-SPECIFIC questions:\n"
-    "   - Ground your answer in the retrieved documents — cite rule sections, report names, "
-    "and specific data points explicitly.\n"
-    "   - Accuracy over breadth — if the documents don't cover something, say so.\n\n"
-    "4. NEVER fabricate statistics, rule sections, or citations. If you don't know something "
-    "with confidence, say so and point the user to a relevant HTR tool or resource.\n\n"
+    "ANSWERING APPROACH — follow this strictly:\n\n"
+
+    "STEP 1 — CLASSIFY the question:\n"
+    "   - VERMONT-FOCUSED: the question mentions Vermont, a Vermont hospital, Vermont law, "
+    "a Vermont program, or Vermont data — even if the topic is broad (e.g. 'What is Vermont's "
+    "hospital bed capacity?' is VERMONT-FOCUSED, not general).\n"
+    "   - NATIONAL/GENERAL: the question makes no reference to Vermont and applies broadly.\n\n"
+
+    "STEP 2 — Answer accordingly:\n"
+    "   A. For VERMONT-FOCUSED questions:\n"
+    "      - Answer the question directly and specifically using retrieved documents and expert knowledge.\n"
+    "      - Do NOT add a 'Vermont Context' section — the entire answer is already Vermont-focused. "
+    "Adding such a section to a Vermont question is redundant and looks foolish.\n"
+    "      - Cite specific data points, report names, or rule sections from the documents when available.\n"
+    "      - If the documents don't fully cover something, say so clearly.\n\n"
+    "   B. For NATIONAL/GENERAL questions:\n"
+    "      - Answer from expert knowledge first — give a thorough, authoritative national response.\n"
+    "      - Do NOT build the entire answer around a single Vermont hospital document.\n"
+    "      - ONLY add a 'Vermont Context' section if the retrieved documents contain genuinely "
+    "relevant Vermont-specific data that adds value a national reader wouldn't otherwise have. "
+    "If the question has no Vermont angle at all, skip the Vermont Context entirely.\n\n"
+
+    "STEP 3 — Tool recommendations:\n"
+    "   - Before recommending tools, scan the FULL platform catalog below.\n"
+    "   - Always prefer the MOST SPECIFIC entry. If a dedicated page exists for the exact topic "
+    "(e.g. Bed Capacity & Transfer for bed/transfer questions, Vermont AHEAD Model for AHEAD questions), "
+    "recommend that FIRST — do not substitute a generic tool.\n"
+    "   - Only recommend tools genuinely useful for this specific question. Never pad the list.\n\n"
+
+    "STEP 4 — Never fabricate statistics, rule sections, or citations. If you don't know "
+    "something with confidence, say so and point to a relevant HTR tool or resource.\n\n"
+
     "You also serve as a guide to the HTR platform itself. If a user asks what tools are "
     "available, how to use a simulator, or what they can do on the platform, answer "
-    "directly and guide them to the right URL.\n"
-    + _HTR_TOOLS_CATALOG
+    "directly and guide them to the right URL. The relevant tools will be provided to you "
+    "at the top of this prompt — use them when recommending platform resources.\n"
 )
 
 MEDICAID_ELIGIBILITY_SYSTEM_PROMPT = (
@@ -522,6 +496,19 @@ async def chat(
 
     supabase = get_supabase()
 
+    # Resolve guaranteed lab tools and semantic hint BEFORE entering the async generator.
+    # Both do local imports / closure assignments that break inside async generator frames.
+    _guaranteed_tools = find_tools_for_query(request.message, top_k=3) if not is_medicaid_query else []
+
+    # Prepend semantic tool hint to system prompt here — not inside generate() —
+    # because reassigning a closure variable inside an async generator triggers
+    # UnboundLocalError in Python.
+    if not is_medicaid_query:
+        _matched_tools = find_relevant_tools_semantic(request.message, top_k=4)
+        _tool_hint = format_tool_hint(_matched_tools)
+        if _tool_hint:
+            system_prompt = _tool_hint + system_prompt
+
     async def generate():
         # Yield a keepalive space immediately so the HTTP response starts streaming
         # before the retrieval pipeline runs. Without this the browser (and the
@@ -613,6 +600,25 @@ async def chat(
             log.error(f"Streaming error for user {user.user_id}: {e}")
             yield "\n\n[STREAM_ERROR]"
             return
+
+        # ── Deterministic HTR LAB section ──────────────────────────────────────
+        # Strip whatever HTR LAB section the LLM produced (it may be wrong or incomplete)
+        # and replace it with the catalog-matched tools. This runs as code — the LLM
+        # cannot omit or override it.
+        if _guaranteed_tools:
+            full_text = "".join(full_response)
+            lab_marker = "🔬 TRY IT IN THE HTR LAB"
+            if lab_marker in full_text:
+                # LLM produced a lab section — strip it, we'll replace it
+                cut = full_text.find(lab_marker)
+                # Yield a marker so the frontend knows to erase back to here
+                # (We use a simple sentinel the frontend already knows: overwrite via stream)
+                # Since we can't retract already-streamed tokens, we yield a correction sentinel
+                # that the frontend strips, then yield the correct section.
+                yield "\n\n[STRIP_LAB]"
+            lab_section = build_guaranteed_lab_section(_guaranteed_tools)
+            yield lab_section
+            full_response.append(lab_section)
 
         if citations:
             citations_json = json.dumps(citations, ensure_ascii=False)
