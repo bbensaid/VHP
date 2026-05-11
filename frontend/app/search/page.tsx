@@ -2,10 +2,11 @@
 
 import React from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import { useEffect, useState, useCallback, Suspense } from "react";
+import { useEffect, useState, useCallback, useRef, Suspense } from "react";
 import Link from "next/link";
 import { MagnifyingGlassIcon, BookmarkIcon } from "@heroicons/react/24/outline";
 import BookmarkButton from "@/components/BookmarkButton";
+import { useVoice } from "@/components/VoiceContext";
 
 // ─── Type config ─────────────────────────────────────────────────────────────
 
@@ -64,6 +65,17 @@ function SearchResults() {
   const [typeFilter, setTypeFilter] = useState("all");
   const [pillarFilter, setPillarFilter] = useState("all");
 
+  const inputRef = useRef<HTMLInputElement>(null);
+  const voice = useVoice();
+
+  // Consume voice injection — fills search box and focuses it
+  useEffect(() => {
+    if (!voice.pendingInjection) return;
+    setInputValue(voice.pendingInjection);
+    voice.clearInjection();
+    inputRef.current?.focus();
+  }, [voice.pendingInjection, voice]);
+
   const runSearch = useCallback(async (q: string) => {
     if (!q || q.length < 2) return;
     setLoading(true);
@@ -117,6 +129,7 @@ function SearchResults() {
           <div className="relative">
             <MagnifyingGlassIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none" />
             <input
+              ref={inputRef}
               type="text"
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}

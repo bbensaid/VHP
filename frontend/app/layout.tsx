@@ -13,6 +13,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import WebVitalsReporter from "@/components/WebVitalsReporter";
 import ClientOnlyShell from "@/components/ClientOnlyShell";
 import WelcomeRedirect from "@/components/WelcomeRedirect";
+import { VoiceProvider } from "@/components/VoiceContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,10 +61,11 @@ export default async function RootLayout({
           >
             Skip to main content
           </a>
-          <ClientOnlyShell />
           <WelcomeRedirect />
           <TickerProvider>
             <SidebarProvider>
+              <VoiceProvider>
+              <ClientOnlyShell />
               <div className="flex flex-col h-screen">
                 <Header />
                 <div className="flex-1 min-h-0 overflow-y-auto">
@@ -74,6 +76,7 @@ export default async function RootLayout({
                   </AppShell>
                 </div>
               </div>
+              </VoiceProvider>
             </SidebarProvider>
           </TickerProvider>
         </ThemeProvider>

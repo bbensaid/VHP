@@ -28,7 +28,7 @@ import {
   BookOpenIcon,
 } from "@heroicons/react/24/outline";
 
-type CommandItem = {
+export type CommandItem = {
   id: string;
   title: string;
   category: "Navigation" | "State" | "Tool" | "Actions" | "Launch Tool";
@@ -50,7 +50,7 @@ type SanityGlossary = {
   description?: string;
 };
 
-const COMMANDS: CommandItem[] = [
+export const COMMANDS: CommandItem[] = [
   // Navigation
   { id: "nav-0", title: "Home", category: "Navigation", href: "/", icon: HomeIcon, shortcut: "H" },
   { id: "nav-1", title: "Economics Monitor", category: "Navigation", href: "/economics", icon: ChartBarIcon, shortcut: "E" },

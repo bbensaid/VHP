@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { SpeakerWaveIcon, StopIcon, PauseIcon } from "@heroicons/react/24/outline";
+import { useVoice } from "@/components/VoiceContext";
 
 export default function ListenButton({ text }: { text: string }) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -9,12 +10,12 @@ export default function ListenButton({ text }: { text: string }) {
   const [isSupported, setIsSupported] = useState(false);
   const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
 
+  const voice = useVoice();
+
   useEffect(() => {
     if (typeof window !== "undefined" && "speechSynthesis" in window) {
       setIsSupported(true);
     }
-    
-    // Cleanup on unmount
     return () => {
       if (typeof window !== "undefined" && "speechSynthesis" in window) {
         window.speechSynthesis.cancel();
@@ -22,8 +23,24 @@ export default function ListenButton({ text }: { text: string }) {
     };
   }, []);
 
+  // When voice TTS starts speaking, pause article reading so they don't overlap.
+  // When voice TTS finishes, resume if we were playing.
+  useEffect(() => {
+    if (!isSupported) return;
+    if (voice.isSpeaking && isPlaying && !isPaused) {
+      window.speechSynthesis.pause();
+      setIsPaused(true);
+      setIsPlaying(false);
+    }
+  }, [voice.isSpeaking, isPlaying, isPaused, isSupported]);
+
   const togglePlay = () => {
     if (!isSupported) return;
+
+    // If voice TTS is currently speaking, stop it first before starting article read
+    if (voice.isSpeaking) {
+      voice.stopSpeaking();
+    }
 
     if (isPlaying && !isPaused) {
       window.speechSynthesis.pause();
@@ -35,7 +52,7 @@ export default function ListenButton({ text }: { text: string }) {
       setIsPlaying(true);
     } else {
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.rate = 0.9; // Slightly slower for better comprehension
+      utterance.rate = 0.9;
       utterance.onend = () => {
         setIsPlaying(false);
         setIsPaused(false);

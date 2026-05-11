@@ -18,6 +18,8 @@ import { useTicker } from "@/components/TickerContext";
 import { useSidebar } from "@/components/SidebarContext";
 import TickerStrip from "@/components/TickerStrip";
 import { usePathname } from "next/navigation";
+import { MicrophoneIcon } from "@heroicons/react/24/outline";
+import { useVoice } from "@/components/VoiceContext";
 
 // ─── COMPANY DROPDOWN (top bar) ─────────────────────────────────────────────
 const companyItems = [
@@ -592,6 +594,8 @@ const Header = () => {
   const router = useRouter();
   const isStudio = pathname?.startsWith("/studio");
 
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
   const [dateString, setDateString] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSection, setMobileSection] = useState<string | null>(null);
@@ -601,7 +605,18 @@ const Header = () => {
   const searchInputRef = useRef<HTMLInputElement>(null);
   const { isHeaderVisible, setHeaderVisible, headlines } = useTicker();
   const { toggleLeft, toggleRight, setLeftOpen, setRightOpen } = useSidebar();
+  const voice = useVoice();
   const isChatPage = pathname === "/chat";
+
+  // Inject voice transcript into header search — skip /chat (handled there)
+  // and /search (the search page has its own input that handles injection directly)
+  useEffect(() => {
+    if (!voice.pendingInjection) return;
+    if (pathname === "/chat" || pathname === "/search") return;
+    setSearchQuery(voice.pendingInjection);
+    voice.clearInjection();
+    setTimeout(() => searchInputRef.current?.focus(), 50);
+  }, [voice.pendingInjection, pathname, voice]);
   const isWelcomePage = pathname === "/welcome";
   const showLeftToggle = !isStudio;
 
@@ -802,6 +817,16 @@ const Header = () => {
               />
               <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
                 <span className="text-[10px] font-bold bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 px-1.5 py-0.5 rounded text-slate-400 dark:text-slate-500 hidden lg:block">⌘K</span>
+                {mounted && voice.isSupported && (
+                  <button
+                    type="button"
+                    onClick={voice.toggleListening}
+                    title={voice.isListening ? "Stop voice input (Cmd+Shift+V)" : "Voice search (Cmd+Shift+V)"}
+                    className={`p-1 rounded transition-colors ${voice.isListening ? "text-rose-500 animate-pulse" : "text-slate-400 hover:text-indigo-600"}`}
+                  >
+                    <MicrophoneIcon className="w-4 h-4" />
+                  </button>
+                )}
                 <button
                   type="submit"
                   disabled={!searchQuery.trim()}

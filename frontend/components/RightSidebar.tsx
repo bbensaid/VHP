@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { useVoice } from "@/components/VoiceContext";
 import { SparklesIcon, ArrowsPointingOutIcon, PaperAirplaneIcon, StopIcon, TrashIcon, ArrowPathIcon, ExclamationTriangleIcon, BookOpenIcon, HandThumbUpIcon, HandThumbDownIcon } from "@heroicons/react/24/outline";
 import ReactMarkdown from "react-markdown";
 
@@ -93,6 +94,18 @@ export default function RightSidebar() {
   const pathname = usePathname() ?? "";
   const router = useRouter();
   const activePillar = getPillarFromPath(pathname);
+  const voice = useVoice();
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  // Inject voice transcript into this textarea
+  useEffect(() => {
+    if (!voice.pendingInjection) return;
+    // Only consume if we're not on /chat (chat page handles it there)
+    if (pathname === "/chat") return;
+    setInput(voice.pendingInjection);
+    voice.clearInjection();
+    textareaRef.current?.focus();
+  }, [voice.pendingInjection, pathname, voice]);
 
   // On mount: restore conversation from localStorage (written by /chat page on every change,
   // and by handleExpand below). This means minimize → back → sidebar shows same conversation.
@@ -203,6 +216,7 @@ export default function RightSidebar() {
         };
         return updated;
       });
+      voice.speakText(finalText);
 
     } catch (err) {
       if (err instanceof Error && err.name !== "AbortError") {
@@ -298,6 +312,12 @@ export default function RightSidebar() {
               {msg.role === "user" ? (
                 <div className="bg-indigo-600 text-white rounded-xl rounded-tr-sm px-3 py-2 max-w-[85%] leading-relaxed">
                   {msg.text}
+                </div>
+              ) : msg.role === "ai" && !msg.text && isLoading ? (
+                <div className="border-l-2 border-indigo-200 dark:border-indigo-700 pl-3 py-1 flex items-center gap-1">
+                  <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce [animation-delay:0ms]" />
+                  <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce [animation-delay:150ms]" />
+                  <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce [animation-delay:300ms]" />
                 </div>
               ) : msg.isError ? (
                 <div className="border-l-2 border-rose-300 bg-rose-50 dark:bg-rose-950/30 rounded-r-lg pl-3 pr-3 py-2.5 text-slate-700 dark:text-slate-200 leading-relaxed">
@@ -417,6 +437,7 @@ export default function RightSidebar() {
         <div className="shrink-0 border-t border-slate-100 dark:border-slate-700 pt-3 pb-3 pr-3">
           <div className="relative">
             <textarea
+              ref={textareaRef}
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
@@ -435,7 +456,8 @@ export default function RightSidebar() {
             {isLoading ? (
               <button
                 onClick={() => { abortRef.current?.abort(); setIsLoading(false); }}
-                className="absolute bottom-2 right-2 p-1.5 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition-colors"
+                className="absolute bottom-2 right-2 p-1.5 bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-400 rounded-lg hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors"
+                title="Stop generating"
               >
                 <StopIcon className="w-3.5 h-3.5" />
               </button>

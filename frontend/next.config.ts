@@ -10,7 +10,7 @@ const securityHeaders = [
   // Referrer policy — sends origin only on cross-origin requests
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
   // Disable sensitive browser features
-  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+  { key: "Permissions-Policy", value: "camera=(), microphone=(self), geolocation=()" },
   // HSTS — 2 year max-age, enforce on subdomains (production only; ignored over HTTP)
   {
     key: "Strict-Transport-Security",
