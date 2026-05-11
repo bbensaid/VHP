@@ -47,6 +47,7 @@ from routers.chat import router as chat_router, set_index
 from routers.ingest import router as ingest_router
 from routers.api_v1 import router as api_v1_router
 from routers.personalized_learning import router as personalized_learning_router
+from services.catalog_search import build_catalog_index
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("htr-brain")
@@ -110,6 +111,10 @@ async def startup():
         log.info("No existing index found — building from scratch...")
         index = await build_index()
         set_index(index)
+
+    # Build semantic catalog index — must run after init_global_settings()
+    # so Settings.embed_model is already initialised
+    await build_catalog_index()
 
 
 @app.on_event("shutdown")
