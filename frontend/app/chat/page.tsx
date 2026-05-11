@@ -404,6 +404,17 @@ export default function ChatPage() {
           let chunk = decoder.decode(value, { stream: true });
           if (isFirstChunk) { chunk = chunk.trimStart(); isFirstChunk = false; }
           aiText += chunk;
+
+          // [STRIP_LAB]: backend is replacing the LLM's HTR LAB section with the
+          // correct catalog-matched one. Strip everything from the LAB marker onward,
+          // then discard the sentinel itself so the correct section streams in clean.
+          if (aiText.includes("[STRIP_LAB]")) {
+            const labMarker = "🔬 TRY IT IN THE HTR LAB";
+            const stripAt = aiText.indexOf(labMarker);
+            aiText = (stripAt >= 0 ? aiText.slice(0, stripAt) : aiText)
+              .replace("[STRIP_LAB]", "").trimEnd();
+          }
+
           const hasError = aiText.includes("[STREAM_ERROR]");
           const rawDisplay = hasError
             ? aiText.replace("[STREAM_ERROR]", "").trimEnd() + "\n\n*An error occurred generating this response.*"
@@ -802,15 +813,27 @@ export default function ChatPage() {
             ))}
 
             {isLoading && (
-              <div className="border-l-4 border-indigo-200 pl-5">
+              <div className="border-l-4 border-indigo-400 pl-5 py-2">
                 <div className="flex items-center gap-2 mb-3">
-                  <SparklesIcon className="w-3.5 h-3.5 text-indigo-500" />
+                  <SparklesIcon className="w-4 h-4 text-indigo-500 animate-pulse" />
                   <span className="text-[10px] font-black uppercase tracking-widest text-indigo-600">HTR Analyst</span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <div className="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
-                  <div className="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
-                  <div className="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+                <div className="flex items-center gap-3">
+                  {/* Larger, faster dots */}
+                  <div className="flex items-center gap-1.5">
+                    <div className="w-3 h-3 bg-indigo-500 rounded-full animate-bounce" style={{ animationDelay: "0ms", animationDuration: "0.7s" }} />
+                    <div className="w-3 h-3 bg-indigo-400 rounded-full animate-bounce" style={{ animationDelay: "150ms", animationDuration: "0.7s" }} />
+                    <div className="w-3 h-3 bg-indigo-300 rounded-full animate-bounce" style={{ animationDelay: "300ms", animationDuration: "0.7s" }} />
+                  </div>
+                  <span className="text-sm font-semibold text-indigo-600 dark:text-indigo-400 animate-pulse">
+                    Analyzing — please wait…
+                  </span>
+                  <button
+                    onClick={handleStop}
+                    className="ml-2 text-xs font-bold text-slate-400 hover:text-rose-500 border border-slate-200 dark:border-slate-600 hover:border-rose-300 px-2.5 py-1 rounded-lg transition-colors"
+                  >
+                    Stop
+                  </button>
                 </div>
               </div>
             )}
@@ -830,16 +853,15 @@ export default function ChatPage() {
                 aria-label="Chat message input"
               />
               {isLoading ? (
-                /* Animated thinking indicator — three pulsing dots, no alarming red */
                 <div className="absolute bottom-2 right-2 flex items-center gap-2 pr-1">
                   <div className="flex items-center gap-1">
-                    <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
-                    <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
-                    <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full animate-bounce" style={{ animationDelay: "0ms", animationDuration: "0.7s" }} />
+                    <span className="w-2 h-2 bg-indigo-400 rounded-full animate-bounce" style={{ animationDelay: "150ms", animationDuration: "0.7s" }} />
+                    <span className="w-2 h-2 bg-indigo-300 rounded-full animate-bounce" style={{ animationDelay: "300ms", animationDuration: "0.7s" }} />
                   </div>
                   <button
                     onClick={handleStop}
-                    className="text-[10px] font-bold text-slate-400 hover:text-rose-500 transition-colors px-1.5 py-0.5 rounded hover:bg-rose-50 dark:hover:bg-rose-950/30"
+                    className="text-[10px] font-bold text-slate-400 hover:text-rose-500 border border-slate-200 dark:border-slate-600 hover:border-rose-300 transition-colors px-2 py-0.5 rounded-md"
                     aria-label="Stop generating"
                   >
                     Stop
