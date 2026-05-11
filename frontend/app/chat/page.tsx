@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useSidebar } from "@/components/SidebarContext";
+import { useVoice } from "@/components/VoiceContext";
 import {
   SparklesIcon,
   PaperAirplaneIcon,
@@ -302,6 +303,7 @@ function parseCitations(raw: string): { text: string; citations: Citation[] } {
 export default function ChatPage() {
   const router = useRouter();
   const { setRightOpen } = useSidebar();
+  const voice = useVoice();
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -317,6 +319,18 @@ export default function ChatPage() {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const messagesRef = useRef(messages);
   useEffect(() => { messagesRef.current = messages; }, [messages]);
+
+  // Inject voice transcript into chat textarea
+  useEffect(() => {
+    if (!voice.pendingInjection) return;
+    setInputValue(voice.pendingInjection);
+    voice.clearInjection();
+    if (textareaRef.current) {
+      textareaRef.current.focus();
+      textareaRef.current.style.height = "auto";
+      textareaRef.current.style.height = `${Math.min(textareaRef.current.scrollHeight, 160)}px`;
+    }
+  }, [voice.pendingInjection, voice]);
 
   useEffect(() => {
     setMounted(true);
@@ -442,6 +456,7 @@ export default function ChatPage() {
           return updated;
         });
       }
+      voice.speakText(finalText);
     } catch (error) {
       if (error instanceof Error && error.name !== "AbortError") {
         const msg = error.message || "Sorry, there was an error. Please try again.";
