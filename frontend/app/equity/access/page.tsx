@@ -1,5 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Access Disparity & Health Equity | HTR Equity",
+  description: "Analysis of healthcare access gaps across rural, racial, and economic dimensions — network adequacy, transportation barriers, language access, and policy interventions.",
+};
+
 function AccessDisparityHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">

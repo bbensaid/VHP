@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
+export const metadata = {
+  title: "Vermont Act 167 (2022) | HTR States",
+  description: "Analysis of Vermont's Act 167 — the 2022 health care affordability law establishing the Green Mountain Care Board's expanded authority over hospital and insurance spending.",
+};
+
 // ── External link helper ──────────────────────────────────────────────────────
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (

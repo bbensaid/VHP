@@ -1,6 +1,11 @@
 import Link from "next/link";
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Hospital-at-Home | HTR Clinical",
+  description: "Acute care delivery outside hospital walls — clinical models, CMS waiver programs, reimbursement design, and implementation strategy for hospital-at-home programs.",
+};
+
 function HospitalAtHomeHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">

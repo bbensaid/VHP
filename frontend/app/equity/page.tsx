@@ -2,6 +2,11 @@ import Link from "next/link";
 import HubSubscribeCTA from "@/components/HubSubscribeCTA";
 import LatestHubReports from "@/components/LatestHubReports";
 
+export const metadata = {
+  title: "Equity | Health Transformation Review",
+  description: "Health equity intelligence covering social determinants of health, algorithmic bias in clinical AI, and access disparities across rural, racial, and economic dimensions.",
+};
+
 export default function Page() {
   const topics = [
     { 

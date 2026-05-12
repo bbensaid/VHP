@@ -1,5 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Social Determinants of Health | HTR Equity",
+  description: "SDOH screening and response programs, Z-code documentation, community health needs assessments, and embedding social drivers into value-based care contracts.",
+};
+
 function SDOHHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">

@@ -1,6 +1,11 @@
 import { client } from "@/lib/sanity";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Annual Impact Reports | HTR Advisory",
+  description: "HTR's annual intelligence and impact reports — comprehensive analysis of health system transformation progress, policy shifts, and market dynamics across the Six Pillars.",
+};
+
 interface Report {
   _id: string;
   title: string;

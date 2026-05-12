@@ -239,7 +239,7 @@ const SECTIONS: Section[] = [
       { label: "Connect → Toolkits", href: "/connect/toolkits", note: "Downloadable toolkits" },
       { label: "Connect → Apply (membership)", href: "/connect/apply", note: "Apply for membership tier" },
       { label: "Connect → Office Hours", href: "/connect/register-office-hours", note: "Register for office hours" },
-      { label: "Connect Hub (legacy)", href: "/connect-hub", note: "Legacy connect hub" },
+      { label: "Connect Hub (redirects → /connect)", href: "/connect-hub", note: "Redirects to /connect" },
     ],
   },
   {

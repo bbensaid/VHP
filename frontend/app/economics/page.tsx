@@ -2,6 +2,11 @@ import Link from "next/link";
 import HubSubscribeCTA from "@/components/HubSubscribeCTA";
 import LatestHubReports from "@/components/LatestHubReports";
 
+export const metadata = {
+  title: "Economics | Health Transformation Review",
+  description: "Healthcare economics intelligence covering value-based care models, market and finance dynamics, labor and workforce strategy, and healthcare investment trends.",
+};
+
 export default function Page() {
   const topics = [
     { 

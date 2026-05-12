@@ -1,4 +1,9 @@
 import Link from "next/link";
+
+export const metadata = {
+  title: "Our Values | HTR",
+  description: "The principles that guide HTR's research, analysis, and advisory work — independence, rigor, speed, and an uncompromising commitment to accuracy.",
+};
 import {
   LightBulbIcon,
   UserGroupIcon,
