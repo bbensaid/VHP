@@ -1,6 +1,11 @@
 import { client } from "@/lib/sanity";
 import HomeContent from "@/components/HomeContent";
 
+export const metadata = {
+  title: "Health Transformation Review | HTR",
+  description: "The intelligence platform for healthcare transformation leaders. Six-pillar analysis covering Policy, Economics, Technology, Clinical, Equity, and Operations.",
+};
+
 export const revalidate = 120; // Fallback ISR: revalidate every 2 minutes (webhook busts sooner)
 
 async function getPageData() {

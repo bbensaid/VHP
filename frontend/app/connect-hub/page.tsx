@@ -1,16 +1,10 @@
-import { Suspense } from 'react'
-import ConnectHubClient from './ConnectHubClient'
+import { redirect } from 'next/navigation'
 
-export const metadata = {
-  title: 'HTR Connect | Peer Cohorts, Office Hours & Implementation Support',
-  description:
-    'Peer cohorts by organization type, expert office hours across the Six Pillars, implementation toolkits, grant finder, pillar circles, and direct Q&A with HTR advisors.',
-}
-
-export default function ConnectHubPage() {
-  return (
-    <div className="min-h-screen bg-slate-50 p-6">
-      <Suspense><ConnectHubClient /></Suspense>
-    </div>
-  )
+export default function ConnectHubRedirect({
+  searchParams,
+}: {
+  searchParams: { tab?: string }
+}) {
+  const tab = searchParams?.tab
+  redirect(tab ? `/connect?tab=${tab}` : '/connect')
 }

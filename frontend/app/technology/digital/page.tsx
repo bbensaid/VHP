@@ -1,5 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Digital Health & Telemedicine | HTR Technology",
+  description: "Analysis of digital health platforms, telehealth regulation and reimbursement, asynchronous and synchronous care models, and RPM program design.",
+};
+
 function DigitalHealthHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">

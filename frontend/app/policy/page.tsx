@@ -2,6 +2,11 @@ import Link from "next/link";
 import HubSubscribeCTA from "@/components/HubSubscribeCTA";
 import LatestHubReports from "@/components/LatestHubReports";
 
+export const metadata = {
+  title: "Policy | Health Transformation Review",
+  description: "Healthcare policy analysis covering federal regulation, public health mandates, global comparative policy, and feasibility studies — grounded in the HTR Six-Pillar Framework.",
+};
+
 // ─── H.R. 1 POLICY TRACKER ────────────────────────────────────────────────────
 const HR1_PROVISIONS = [
   {

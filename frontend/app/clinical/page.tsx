@@ -2,6 +2,11 @@ import Link from "next/link";
 import HubSubscribeCTA from "@/components/HubSubscribeCTA";
 import LatestHubReports from "@/components/LatestHubReports";
 
+export const metadata = {
+  title: "Clinical | Health Transformation Review",
+  description: "Clinical transformation intelligence covering hospital-at-home, precision medicine, virtual care models, genomics, and population health management.",
+};
+
 export default function Page() {
   const topics = [
     {

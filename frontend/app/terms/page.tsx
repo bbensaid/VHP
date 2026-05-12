@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Terms of Service | HTR",
+  description: "Terms of service governing use of the Health Transformation Review platform, including subscriber access, content licensing, and acceptable use.",
+};
+
 export default function TermsPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-24">

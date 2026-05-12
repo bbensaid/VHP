@@ -1,5 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Data Security & Governance | HTR Technology",
+  description: "Healthcare data security, HIPAA compliance, ONC information blocking, cybersecurity frameworks, and health data governance strategy for health systems and plans.",
+};
+
 function SecurityHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">

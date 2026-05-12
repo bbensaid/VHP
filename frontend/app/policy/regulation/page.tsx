@@ -1,5 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Regulation & Legislation | HTR Policy",
+  description: "Analysis of federal and state healthcare regulation, CMS rule-making, ONC compliance, and legislative strategy for health system leaders.",
+};
+
 function RegulationHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">

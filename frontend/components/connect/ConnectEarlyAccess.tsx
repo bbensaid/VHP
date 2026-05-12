@@ -121,7 +121,7 @@ export default function ConnectEarlyAccess({
                 Explore all six Connect services while this feature is being built.
               </p>
               <Link
-                href={`/connect-hub?tab=${backTab}`}
+                href={`/connect?tab=${backTab}`}
                 className="block w-full text-center py-2.5 border-2 border-teal-600 text-teal-600 font-black text-sm rounded-lg hover:bg-teal-50 transition-colors"
               >
                 ← {backLabel}

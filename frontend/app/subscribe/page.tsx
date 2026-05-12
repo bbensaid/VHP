@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Subscribe | HTR",
+  description: "Join Health Transformation Review — subscriber access to the full intelligence platform, research lab tools, academy courses, and expert advisory network.",
+};
+
 export default function SubscribePage() {
   return (
     <div className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full font-sans text-slate-800">

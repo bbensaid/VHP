@@ -1,5 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "AI & Machine Learning in Healthcare | HTR Technology",
+  description: "Clinical AI governance, machine learning applications, algorithm accountability, and the regulatory and ethical frameworks shaping AI deployment in health systems.",
+};
+
 function AIMLHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">

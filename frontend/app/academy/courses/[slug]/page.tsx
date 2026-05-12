@@ -98,7 +98,17 @@ export default async function CourseDetailPage({
             <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">Course Overview</h2>
                 <div className="prose prose-lg text-slate-600">
-                    {course.overview ? <PortableText value={course.overview} /> : <p>Syllabus coming soon...</p>}
+                    {course.overview ? (
+                      <PortableText value={course.overview} />
+                    ) : (
+                      <div className="flex flex-col items-center py-8 text-center">
+                        <span className="text-3xl mb-3">📋</span>
+                        <p className="font-bold text-slate-700 mb-1">Full course overview coming soon</p>
+                        <p className="text-slate-500 text-sm max-w-md">
+                          This course is being finalized. Enrollment is open — module content and the full syllabus will be published before the start date.
+                        </p>
+                      </div>
+                    )}
                 </div>
             </div>
 

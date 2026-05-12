@@ -1,6 +1,11 @@
 import { client } from "@/lib/sanity";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Case Studies | HTR Academy",
+  description: "In-depth case studies on health system transformation — real initiatives, real outcomes, and the decisions behind them across the Six-Pillar Framework.",
+};
+
 interface CaseStudy {
   _id: string;
   title: string;

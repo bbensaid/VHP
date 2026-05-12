@@ -1,11 +1,16 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Revenue Cycle Management | HTR Operations",
+  description: "Revenue cycle optimization — denial management, coding accuracy, prior authorization workflows, and RCM technology strategy for health systems and medical groups.",
+};
+
 export default function RevenueCyclePage() {
   return (
     <div className="bg-white font-sans text-slate-800 min-h-screen">
       <section className="relative bg-teal-700 text-white overflow-hidden py-20 md:py-28">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link href="/operations" className="inline-flex items-center text-sm font-bold text-teal-300 hover:text-white mb-8 block transition-colors">
+          <Link href="/operations" className="inline-flex items-center text-sm font-bold text-teal-300 hover:text-white mb-8 transition-colors">
             ← Operations Overview
           </Link>
           <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-teal-200 mb-5 border border-teal-500 bg-teal-600/40 px-4 py-1.5 rounded-full">
