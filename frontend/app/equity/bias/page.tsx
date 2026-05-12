@@ -1,5 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Algorithmic Bias in Healthcare | HTR Equity",
+  description: "Fairness audits for clinical algorithms, bias detection in predictive models, ONC algorithm transparency rules, and accountability frameworks for AI in healthcare.",
+};
+
 function AlgorithmicBiasHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">

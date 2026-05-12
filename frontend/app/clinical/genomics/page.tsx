@@ -1,6 +1,11 @@
 import Link from "next/link";
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Genomics & Predictive Medicine | HTR Clinical",
+  description: "Pharmacogenomics, germline sequencing, polygenic risk scores, and AI-driven deterioration prediction — the science and clinical implementation of predictive medicine.",
+};
+
 function GenomicsContent() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">

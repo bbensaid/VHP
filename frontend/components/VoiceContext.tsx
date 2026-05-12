@@ -59,7 +59,7 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
     sidebar,
     pathname,
     wantListening: false,
-    recognition: null as SpeechRecognition | null,
+    recognition: null as InstanceType<typeof window.SpeechRecognition> | null,
     setIsListening,
     setTranscript,
     setIsSpeaking,
@@ -138,9 +138,10 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
   // ── Recognition lifecycle ─────────────────────────────────────────────────
 
   function startRecognition() {
+    type SR = new () => InstanceType<typeof window.SpeechRecognition>;
     const SR =
-      (window as Window & { SpeechRecognition?: typeof SpeechRecognition }).SpeechRecognition ??
-      (window as Window & { webkitSpeechRecognition?: typeof SpeechRecognition }).webkitSpeechRecognition;
+      (window as Window & { SpeechRecognition?: SR }).SpeechRecognition ??
+      (window as Window & { webkitSpeechRecognition?: SR }).webkitSpeechRecognition;
     if (!SR) return;
 
     if (bag.current.recognition) {
@@ -154,7 +155,7 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
     rec.lang            = "en-US";
     rec.maxAlternatives = 1;
 
-    rec.onresult = (e: SpeechRecognitionEvent) => {
+    rec.onresult = (e: Event & { resultIndex: number; results: SpeechRecognitionResultList }) => {
       let interim = "", final = "";
       for (let i = e.resultIndex; i < e.results.length; i++) {
         if (e.results[i].isFinal) final   += e.results[i][0].transcript;
@@ -164,7 +165,7 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
       if (final) { bag.current.setTranscript(""); handleFinal(final); }
     };
 
-    rec.onerror = (e: SpeechRecognitionErrorEvent) => {
+    rec.onerror = (e: Event & { error: string }) => {
       if (e.error === "not-allowed" || e.error === "service-not-allowed") {
         bag.current.wantListening = false;
         bag.current.setIsListening(false);

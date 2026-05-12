@@ -1,6 +1,11 @@
 import { client } from "@/lib/sanity";
 import CoursesClient from "./CoursesClient";
 
+export const metadata = {
+  title: "Courses | HTR Academy",
+  description: "Structured online courses on healthcare transformation — policy, economics, technology, clinical innovation, equity, and operations. Taught by practitioners, not academics.",
+};
+
 async function getCourses() {
   const query = `*[_type == "course"] | order(title asc) {
     _id,

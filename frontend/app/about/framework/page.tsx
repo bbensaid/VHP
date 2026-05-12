@@ -1,6 +1,11 @@
 import Link from "next/link";
 import SixPillarFrameworkMap from "@/components/SixPillarFrameworkMap";
 
+export const metadata = {
+  title: "Six-Pillar Framework | HTR",
+  description: "The HTR Six-Pillar Framework maps the interdependencies between Policy, Economics, Technology, Clinical, Equity, and Operations in health system transformation.",
+};
+
 const pillars = [
   {
     number: "01",

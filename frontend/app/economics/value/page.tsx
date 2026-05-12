@@ -1,5 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Value-Based Care Models | HTR Economics",
+  description: "Analysis of APMs, bundled payments, shared savings, MSSP, ACO REACH, and the full spectrum of value-based care contract structures and outcomes models.",
+};
+
 function ValueBasedCareHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">

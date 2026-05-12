@@ -1,5 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Tech-Enabled Workflow | HTR Technology",
+  description: "Clinical and administrative workflow automation, EHR optimization, prior authorization technology, and AI-assisted care coordination across health system operations.",
+};
+
 function WorkflowHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">

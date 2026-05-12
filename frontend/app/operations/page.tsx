@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Operations | Health Transformation Review",
+  description: "Healthcare operations intelligence covering revenue cycle management, workforce strategy, quality and compliance, supply chain, and payer network operations.",
+};
+
 const subpages = [
   {
     href: "/operations/revenue-cycle",

@@ -1,6 +1,11 @@
 import { getAllPerformanceIndexes } from "@/lib/sanity-dashboard-queries";
 import { getUser, roleAtLeast } from "@/lib/auth";
 import UpgradePrompt from "@/components/UpgradePrompt";
+
+export const metadata = {
+  title: "50-State Dashboard | HTR",
+  description: "State-by-state healthcare performance dashboard — compare Medicaid, hospital, and health system transformation metrics across all 50 states.",
+};
 import DashboardIndexClient from "./DashboardIndexClient";
 import Link from "next/link";
 

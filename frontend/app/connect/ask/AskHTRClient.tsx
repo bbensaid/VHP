@@ -298,10 +298,10 @@ export default function AskHTRClient() {
               <div className="bg-white border border-slate-200 rounded-xl p-5">
                 <h4 className="font-black text-slate-900 text-sm mb-1">Back to Connect</h4>
                 <Link
-                  href="/connect-hub?tab=ask"
+                  href="/connect?tab=ask"
                   className="block w-full text-center py-2 border border-slate-200 text-slate-600 font-semibold text-xs rounded-lg hover:bg-slate-50 transition-colors mt-3"
                 >
-                  ← Connect Hub
+                  ← HTR Connect
                 </Link>
               </div>
             </div>
@@ -327,9 +327,12 @@ export default function AskHTRClient() {
 
             <div className="bg-teal-50 border-2 border-teal-200 rounded-2xl p-8 text-center">
               <div className="text-4xl mb-3">📚</div>
-              <h3 className="font-black text-teal-800 text-xl mb-2">Full Library Coming Soon</h3>
+              <h3 className="font-black text-teal-800 text-xl mb-2">Searchable Q&amp;A Library</h3>
               <p className="text-teal-700 text-sm max-w-lg mx-auto mb-6 leading-relaxed">
-                The complete searchable Q&A library with all 247 answered questions, pillar filters, and keyword search is in active development. The three questions above are a representative sample.
+                The full library — 247 answered questions with pillar filters and keyword search —
+                launches with the Connect membership program. The three questions above are a
+                representative sample of the depth and format. Submit your own question now and
+                receive a named expert response within 48 business hours.
               </p>
               <Link
                 href="/connect/ask"

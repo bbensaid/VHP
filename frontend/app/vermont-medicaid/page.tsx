@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
+export const metadata = {
+  title: "Vermont Medicaid | HTR States",
+  description: "Vermont Medicaid program analysis — eligibility, managed care structure, Global Commitment waiver, GMCB oversight, and the state's path toward an all-payer model.",
+};
+
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {

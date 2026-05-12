@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "About HTR | Health Transformation Review",
+  description: "HTR is an independent intelligence platform for healthcare transformation leaders — grounded in the Six-Pillar Framework of Policy, Economics, Technology, Clinical, Equity, and Operations.",
+};
+
 const pillars = [
   {
     id: "policy",

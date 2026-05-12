@@ -121,10 +121,13 @@ export default async function WebinarDetailPage({
             </div>
           ) : (
             <div className="aspect-video bg-linear-to-br from-indigo-900 to-slate-900 rounded-2xl flex items-center justify-center shadow-xl">
-              <div className="text-center text-white">
-                <div className="text-5xl mb-3">🎥</div>
-                <p className="font-bold text-lg">Video Coming Soon</p>
-                <p className="text-slate-400 text-sm mt-1">Register below to be notified when the recording is available.</p>
+              <div className="text-center text-white px-8 max-w-lg">
+                <div className="text-5xl mb-4">🎥</div>
+                <p className="font-black text-xl mb-2">Recording Not Yet Available</p>
+                <p className="text-slate-300 text-sm leading-relaxed">
+                  This webinar has not yet taken place, or the recording is being processed.
+                  Register below and you will receive access as soon as it is published.
+                </p>
               </div>
             </div>
           )}

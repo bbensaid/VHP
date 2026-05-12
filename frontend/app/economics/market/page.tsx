@@ -1,5 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Market & Finance | HTR Economics",
+  description: "Healthcare market dynamics, payer-provider financial relationships, cost structure analysis, MLR management, and the economics of health system consolidation.",
+};
+
 function MarketFinanceHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">

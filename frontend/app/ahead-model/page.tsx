@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "AHEAD Model | HTR States",
+  description: "CMS AHEAD Model analysis — state-based total cost of care model participation, global budget design, multi-payer alignment, and performance across participating states.",
+};
+
 const participatingStates = [
   {
     name: "Connecticut",

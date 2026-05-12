@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { client } from "@/lib/sanity";
 
+export const metadata = {
+  title: "Faculty | HTR Academy",
+  description: "HTR Academy instructors — the policymakers, health system executives, actuaries, and researchers who wrote the policies and built the systems they now teach.",
+};
+
 interface Person {
   _id: string;
   name: string;
