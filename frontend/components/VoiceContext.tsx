@@ -59,7 +59,8 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
     sidebar,
     pathname,
     wantListening: false,
-    recognition: null as InstanceType<typeof window.SpeechRecognition> | null,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    recognition: null as any,
     setIsListening,
     setTranscript,
     setIsSpeaking,
@@ -138,10 +139,10 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
   // ── Recognition lifecycle ─────────────────────────────────────────────────
 
   function startRecognition() {
-    type SR = new () => InstanceType<typeof window.SpeechRecognition>;
-    const SR =
-      (window as Window & { SpeechRecognition?: SR }).SpeechRecognition ??
-      (window as Window & { webkitSpeechRecognition?: SR }).webkitSpeechRecognition;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const SR: any =
+      (window as any).SpeechRecognition ??
+      (window as any).webkitSpeechRecognition;
     if (!SR) return;
 
     if (bag.current.recognition) {
