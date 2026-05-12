@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
+export const metadata = {
+  title: "California CalAIM | HTR States",
+  description: "California's CalAIM initiative — Enhanced Care Management, Community Supports, Medi-Cal transformation, and lessons for other states pursuing whole-person care models.",
+};
+
 // ── Shared UI helpers ─────────────────────────────────────────────────────────
 
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {

@@ -1,6 +1,11 @@
 import Link from "next/link";
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Population Health Management | HTR Clinical",
+  description: "Evidence-based strategies for managing chronic disease at scale — risk stratification, preventive care optimization, care management programs, and population health analytics.",
+};
+
 // Rich population health tools embedded above the article feed
 function PopulationHealthTools() {
   return (

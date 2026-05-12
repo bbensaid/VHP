@@ -1,6 +1,11 @@
 import { client } from "@/lib/sanity";
 import GlossaryClient from "./GlossaryClient";
 
+export const metadata = {
+  title: "Glossary | HTR Academy",
+  description: "Searchable definitions for healthcare transformation terminology — policy, economics, clinical, technology, equity, and operations terms used across the HTR platform.",
+};
+
 export const revalidate = 3600; // re-fetch at most once per hour
 
 type GlossaryTerm = {

@@ -2,6 +2,11 @@ import { BoltIcon } from "@heroicons/react/24/outline";
 import WireFeed from "./WireFeed";
 import { getUser } from "@/lib/auth";
 
+export const metadata = {
+  title: "The Wire | HTR Live Intelligence",
+  description: "Real-time healthcare news aggregated from leading policy, regulatory, and clinical sources — updated continuously throughout the day.",
+};
+
 export const revalidate = 900; // 15 minutes
 
 interface WireItem {

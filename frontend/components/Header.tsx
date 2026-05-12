@@ -90,11 +90,13 @@ const pillars = [
     dot: "bg-red-500",
     accent: "text-red-700",
     hoverBg: "hover:bg-red-50",
-    desc: "Hospital-at-home, precision & virtual care",
+    desc: "Hospital-at-home, precision, virtual care, genomics & population health",
     items: [
       { href: "/clinical/hah", label: "Hospital-at-Home", desc: "Acute care delivery outside hospital walls" },
       { href: "/clinical/precision", label: "Precision Medicine", desc: "Genomics, biomarkers & targeted therapy" },
       { href: "/clinical/virtual", label: "Virtual Care Models", desc: "Asynchronous & synchronous care design" },
+      { href: "/clinical/genomics", label: "Genomics & Predictive Medicine", desc: "Pharmacogenomics, polygenic risk scores & AI early warning" },
+      { href: "/clinical/population", label: "Population Health Management", desc: "Chronic disease at scale, risk stratification & preventive care" },
     ],
   },
   {
@@ -548,12 +550,12 @@ function AdvisePanel({ onClose }: { onClose: () => void }) {
           </p>
           <div className="space-y-1">
             <Link
-              href="/connect-hub"
+              href="/connect"
               onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-indigo-50 transition-colors group"
             >
               <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-indigo-700">
-                Connect Hub
+                HTR Connect
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
                 Networking & peer connections
@@ -671,7 +673,7 @@ const Header = () => {
     { type: "learn", label: "ACADEMY", activeCheck: "/academy" },
     { type: "tools", label: "TOOLS", activeCheck: "/htr-simulator,/hti-dashboard,/trending-topics,/multimedia,/the-wire,/investment-tracker,/medicaid-eligibility-simulator,/transformation-friction-index,/impact-simulation" },
     { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/california-calaim,/dashboard,/ahead-model,/vermont-medicaid,/bed-capacity" },
-    { type: "advise", label: "ADVISORY & SERVICES", activeCheck: "/advisory,/connect-hub,/connect,/community" },
+    { type: "advise", label: "ADVISORY & SERVICES", activeCheck: "/advisory,/connect,/community" },
   ];
 
   const isMenuActive = (activeCheck: string) =>
@@ -970,7 +972,7 @@ const Header = () => {
                   { label: "Advisory Hub", href: "/advisory", sub: [] },
                   { label: "Strategic Consulting", href: "/advisory/consulting", sub: [] },
                   { label: "Custom Research", href: "/advisory/research", sub: [] },
-                  { label: "Connect Hub", href: "/connect-hub", sub: [] },
+                  { label: "HTR Connect", href: "/connect", sub: [] },
                 ],
               },
             ].map((section) => (

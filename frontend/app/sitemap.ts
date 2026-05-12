@@ -51,7 +51,7 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
 
   // Advisory & tools
   { path: "/advisory",            priority: 0.8, changeFrequency: "monthly" },
-  { path: "/advisory-hub",        priority: 0.8, changeFrequency: "monthly" },
+  { path: "/connect",             priority: 0.8, changeFrequency: "monthly" },
   { path: "/advisory/reports",    priority: 0.7, changeFrequency: "weekly" },
   { path: "/advisory/research",   priority: 0.7, changeFrequency: "weekly" },
   { path: "/advisory/consulting", priority: 0.7, changeFrequency: "monthly" },

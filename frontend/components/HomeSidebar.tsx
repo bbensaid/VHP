@@ -154,9 +154,11 @@ const SECTIONS: Section[] = [
     isPillarSection: true,
     overviewHref: "/clinical",
     intelligenceItems: [
-      { href: "/clinical/hah",       label: "Hospital-at-Home" },
-      { href: "/clinical/precision", label: "Precision Medicine" },
-      { href: "/clinical/virtual",   label: "Virtual Care Models" },
+      { href: "/clinical/hah",        label: "Hospital-at-Home" },
+      { href: "/clinical/precision",  label: "Precision Medicine" },
+      { href: "/clinical/virtual",    label: "Virtual Care Models" },
+      { href: "/clinical/genomics",   label: "Genomics & Predictive Medicine" },
+      { href: "/clinical/population", label: "Population Health Management" },
     ],
     labItems: [
       { href: "/research-lab/interoperability?tab=risk",         label: "Risk Stratification Engine" },
@@ -294,7 +296,6 @@ const SECTIONS: Section[] = [
       { href: "/advisory/it-consulting",      label: "IT Consulting",         icon: CpuChipIcon },
       { href: "/advisory/training",           label: "Training & Education",  icon: AcademicCapIcon },
       { href: "/advisory/independent-review", label: "Independent Review",    icon: DocumentTextIcon },
-      { href: "/connect-hub",                 label: "Connect Hub",           icon: UsersIcon },
       { href: "/connect",                     label: "HTR Connect",           icon: UsersIcon },
       { href: "/connect/directory",           label: "Member Directory",      icon: UsersIcon },
       { href: "/community",                   label: "Community",             icon: UsersIcon },
@@ -329,7 +330,7 @@ function getSectionForPath(path: string, searchParams: URLSearchParams | null): 
   const toolsPrefixes = ["/htr-simulator", "/medicaid-eligibility-simulator", "/hti-dashboard", "/the-wire", "/investment-tracker", "/transformation-friction-index", "/impact-simulation", "/multimedia", "/trending-topics"];
   if (toolsPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "tools";
 
-  const advisoryPrefixes = ["/advisory", "/connect-hub", "/connect", "/community"];
+  const advisoryPrefixes = ["/advisory", "/connect", "/community"];
   if (advisoryPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "advisory";
 
   return null;

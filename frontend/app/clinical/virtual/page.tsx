@@ -1,5 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Virtual Care Models | HTR Clinical",
+  description: "Design and implementation of virtual care programs — synchronous and asynchronous telehealth, hybrid care models, reimbursement optimization, and patient engagement.",
+};
+
 function VirtualCareHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">

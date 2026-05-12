@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Privacy Policy | HTR",
+  description: "HTR's privacy policy — how we collect, use, and protect your data as a subscriber or visitor to the Health Transformation Review platform.",
+};
+
 export default function PrivacyPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-24">

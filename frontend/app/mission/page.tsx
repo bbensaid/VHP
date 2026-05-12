@@ -1,4 +1,9 @@
 import Link from "next/link";
+
+export const metadata = {
+  title: "Our Mission | HTR",
+  description: "HTR's mission is to equip healthcare leaders with the independent intelligence needed to navigate the most complex transformation in the history of American healthcare.",
+};
 import {
   LightBulbIcon,
   UserGroupIcon,

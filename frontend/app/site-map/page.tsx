@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Site Map | HTR",
+  description: "Complete directory of all pages, tools, and resources available on the Health Transformation Review platform.",
+};
+
 const sections = [
   {
     title: "Intelligence Pillars",

@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
+export const metadata = {
+  title: "Medicaid Learning Center | HTR Academy",
+  description: "Dedicated learning hub for Medicaid policy, financing, managed care, 1115 waivers, and state-specific Medicaid transformation — built for Medicaid directors and health plan leaders.",
+};
+
 // ── Card components ───────────────────────────────────────────────────────────
 
 function CourseCard({

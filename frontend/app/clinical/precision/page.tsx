@@ -1,5 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 
+export const metadata = {
+  title: "Precision Medicine | HTR Clinical",
+  description: "Precision medicine strategy covering genomics, biomarker-driven treatment, targeted therapies, and the integration of molecular diagnostics into clinical care pathways.",
+};
+
 function PrecisionMedicineHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">
