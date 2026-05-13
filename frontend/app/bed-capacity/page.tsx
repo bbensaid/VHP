@@ -467,8 +467,9 @@ function TransferConfirmPanel({ patientName, onDone }: { patientName: string; on
   const [contacted, setContacted] = useState<Set<number>>(new Set());
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center p-4 pt-16 sm:pt-4 bg-black/40 backdrop-blur-sm overflow-y-auto">
-      <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-full max-w-lg border border-slate-200 dark:border-slate-700 overflow-hidden my-auto">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/40 backdrop-blur-sm">
+      <div className="flex min-h-full items-center justify-center p-4 py-24">
+      <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-full max-w-lg border border-slate-200 dark:border-slate-700 overflow-hidden">
         {/* Header */}
         <div className="bg-indigo-600 px-5 py-4 flex items-start justify-between">
           <div>
@@ -533,6 +534,7 @@ function TransferConfirmPanel({ patientName, onDone }: { patientName: string; on
             Close — transfer log saved
           </button>
         </div>
+      </div>
       </div>
     </div>
   );
