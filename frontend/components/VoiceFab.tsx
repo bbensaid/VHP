@@ -6,11 +6,12 @@ import { MicrophoneIcon, StopIcon, SpeakerWaveIcon } from "@heroicons/react/24/o
 import { useVoice } from "@/components/VoiceContext";
 
 export default function VoiceFab() {
-  const { isListening, isSpeaking, isSupported, transcript, toggleListening, stopSpeaking } =
+  const { isListening, isSpeaking, isSupported, fabHidden, transcript, toggleListening, stopSpeaking } =
     useVoice();
   const pathname = usePathname() ?? "";
 
   if (pathname.startsWith("/studio")) return null;
+  if (fabHidden) return null;
 
   const handleClick = () => {
     if (isSpeaking) { stopSpeaking(); return; }
@@ -30,7 +31,7 @@ export default function VoiceFab() {
     : isListening
     ? "Listening… click to stop"
     : isSupported
-    ? "Voice off — click to start  (⌘⇧V)"
+    ? "Voice off — click to start  (⌘⇧V)  hide: ⌘⇧H"
     : "Checking mic support…";
 
   return (
