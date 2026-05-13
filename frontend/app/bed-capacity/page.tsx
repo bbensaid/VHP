@@ -304,10 +304,13 @@ const RANK_STYLES: Record<number, string> = {
 };
 
 function TransferRouting({ algo, onAlgoChange }: { algo: TransferAlgoId; onAlgoChange: (v: TransferAlgoId) => void }) {
-  const [fromId,    setFromId]    = useState(HOSPITALS[0].id);
-  const [acuity,    setAcuity]    = useState<BedKey>("medsurg");
-  const [specialty, setSpecialty] = useState("any");
-  const [results,   setResults]   = useState<ScoredHospital[] | null>(null);
+  const [fromId,       setFromId]       = useState(HOSPITALS[0].id);
+  const [acuity,       setAcuity]       = useState<BedKey>("medsurg");
+  const [specialty,    setSpecialty]    = useState("any");
+  const [results,      setResults]      = useState<ScoredHospital[] | null>(null);
+  const [confirmIdx,   setConfirmIdx]   = useState<number | null>(null);
+  const [showPanel,    setShowPanel]    = useState(false);
+  const [panelHospital,setPanelHospital]= useState("");
 
   function runTransfer() {
     const candidates = HOSPITALS.filter((h) => h.id !== fromId && h.beds[acuity].avail >= 1);
@@ -319,6 +322,7 @@ function TransferRouting({ algo, onAlgoChange }: { algo: TransferAlgoId; onAlgoC
 
   return (
     <div>
+      {showPanel && <TransferConfirmPanel patientName={`transfer to ${panelHospital}`} onDone={() => setShowPanel(false)} />}
       <AlgoSelector algos={TRANSFER_ALGOS} value={algo} onChange={onAlgoChange} />
 
       {/* Form card */}
@@ -413,9 +417,31 @@ function TransferRouting({ algo, onAlgoChange }: { algo: TransferAlgoId; onAlgoC
                       ))}
                     </div>
                   </div>
-                  <div className="text-right shrink-0">
-                    <div className={`text-xl font-black ${i === 0 ? "text-[#185FA5]" : "text-slate-800 dark:text-slate-100"}`}>{h.score}</div>
-                    <div className="text-[11px] font-medium text-slate-600 dark:text-slate-400">match score</div>
+                  <div className="shrink-0 flex flex-col items-end gap-1.5">
+                    <div className="text-right">
+                      <div className={`text-xl font-black ${i === 0 ? "text-[#185FA5]" : "text-slate-800 dark:text-slate-100"}`}>{h.score}</div>
+                      <div className="text-[11px] font-medium text-slate-600 dark:text-slate-400">match score</div>
+                    </div>
+                    {confirmIdx === i ? (
+                      <div className="flex flex-col gap-1.5 items-end">
+                        <span className="text-[11px] font-semibold text-slate-600 dark:text-slate-400">Confirm?</span>
+                        <div className="flex gap-1.5">
+                          <button onClick={() => setConfirmIdx(null)}
+                            className="text-xs font-bold px-2.5 py-1.5 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-50">
+                            Cancel
+                          </button>
+                          <button onClick={() => { setPanelHospital(h.name); setConfirmIdx(null); setShowPanel(true); }}
+                            className="text-xs font-bold px-2.5 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition-colors">
+                            Confirm
+                          </button>
+                        </div>
+                      </div>
+                    ) : (
+                      <button onClick={() => setConfirmIdx(i)}
+                        className="text-xs font-bold px-3 py-2 border border-indigo-300 dark:border-indigo-700 rounded-lg text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-900/30 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-colors whitespace-nowrap">
+                        Initiate transfer
+                      </button>
+                    )}
                   </div>
                 </div>
               );
@@ -441,8 +467,8 @@ function TransferConfirmPanel({ patientName, onDone }: { patientName: string; on
   const [contacted, setContacted] = useState<Set<number>>(new Set());
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm">
-      <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-full max-w-lg border border-slate-200 dark:border-slate-700 overflow-hidden">
+    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center p-4 pt-16 sm:pt-4 bg-black/40 backdrop-blur-sm overflow-y-auto">
+      <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-full max-w-lg border border-slate-200 dark:border-slate-700 overflow-hidden my-auto">
         {/* Header */}
         <div className="bg-indigo-600 px-5 py-4 flex items-start justify-between">
           <div>
