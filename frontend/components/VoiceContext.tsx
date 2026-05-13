@@ -212,8 +212,8 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     function handler(e: KeyboardEvent) {
       if (!(e.metaKey || e.ctrlKey) || !e.shiftKey) return;
-      if (e.key === "v") { e.preventDefault(); toggleListening(); }
-      if (e.key === "h") { e.preventDefault(); setFabHidden(h => !h); }
+      if (e.key === "v" || e.key === "V") { e.preventDefault(); toggleListening(); }
+      if (e.key === "h" || e.key === "H") { e.preventDefault(); setFabHidden(h => !h); }
     }
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
