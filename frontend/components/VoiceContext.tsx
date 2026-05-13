@@ -18,9 +18,11 @@ interface VoiceContextType {
   isListening: boolean;
   isSpeaking: boolean;
   isSupported: boolean;
+  fabHidden: boolean;
   transcript: string;
   pendingInjection: string | null;
   toggleListening: () => void;
+  toggleFabHidden: () => void;
   clearInjection: () => void;
   speakText: (text: string) => void;
   stopSpeaking: () => void;
@@ -45,6 +47,7 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
   const [isListening, setIsListening] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isSupported, setIsSupported] = useState(false);
+  const [fabHidden, setFabHidden] = useState(false);
   const [transcript, setTranscript] = useState("");
   const [pendingInjection, setPendingInjection] = useState<string | null>(null);
 
@@ -203,13 +206,14 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
     }
   }
 
-  // Keyboard shortcut: ⌘⇧V / Ctrl⇧V
+  function toggleFabHidden() { setFabHidden(h => !h); }
+
+  // Keyboard shortcuts: ⌘⇧V toggle mic, ⌘⇧H hide/show FAB
   useEffect(() => {
     function handler(e: KeyboardEvent) {
-      if (e.key === "v" && (e.metaKey || e.ctrlKey) && e.shiftKey) {
-        e.preventDefault();
-        toggleListening();
-      }
+      if (!(e.metaKey || e.ctrlKey) || !e.shiftKey) return;
+      if (e.key === "v") { e.preventDefault(); toggleListening(); }
+      if (e.key === "h") { e.preventDefault(); setFabHidden(h => !h); }
     }
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
@@ -220,8 +224,8 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
 
   return (
     <VoiceContext.Provider value={{
-      isListening, isSpeaking, isSupported, transcript, pendingInjection,
-      toggleListening, clearInjection, speakText, stopSpeaking,
+      isListening, isSpeaking, isSupported, fabHidden, transcript, pendingInjection,
+      toggleListening, toggleFabHidden, clearInjection, speakText, stopSpeaking,
     }}>
       {children}
     </VoiceContext.Provider>
