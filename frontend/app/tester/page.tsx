@@ -206,11 +206,11 @@ const SECTIONS: Section[] = [
   },
   {
     id: "advisory",
-    title: "Advisory Services",
+    title: "Pro-Bono Advisory Services",
     emoji: "🤝",
     color: "bg-sky-700",
     pages: [
-      { label: "Advisory — Hub", href: "/advisory", note: "Advisory services overview" },
+      { label: "Advisory — Hub", href: "/advisory", note: "Pro-bono advisory services overview" },
       { label: "Advisory → Services Menu", href: "/advisory/services", note: "Full services list" },
       { label: "Advisory → Consulting", href: "/advisory/consulting", note: "Consulting engagement model" },
       { label: "Advisory → Financial Audit", href: "/advisory/financial-audit", note: "Financial health audit service" },
