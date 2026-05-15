@@ -25,7 +25,7 @@ from llama_index.llms.groq import Groq as GroqLLM
 from services.auth import AuthedUser, require_subscriber
 from services.db import get_supabase
 from services.llm import get_llm_for_role, get_ranker
-from services.retrieval import HybridRetriever, StaticNodeRetriever, rerank_nodes, extract_citations
+from services.retrieval import HybridRetriever, StaticNodeRetriever, rerank_nodes, extract_citations, boost_vermont_nodes
 from services.tools import ALL_TOOLS
 from config import MODEL_FREE, MODEL_SUBSCRIBER, GROQ_API_KEY, MAX_SYSTEM_PROMPT_LEN
 from platform_catalog import HTR_TOOLS_CATALOG_TEXT, BASE_URL
@@ -144,45 +144,50 @@ class ChatRequest(BaseModel):
 BASE_SYSTEM_PROMPT = (
     "You are an expert AI Analyst for the Health Transformation Review (HTR), a comprehensive "
     "healthcare intelligence platform at healthtransformationreview.org. "
-    "Your audience consists of healthcare executives, policy makers, and economists. "
-    "You are a knowledgeable expert first, and a document retriever second.\n\n"
+    "Your audience includes healthcare executives, AHS policy makers, hospital leaders, "
+    "clinicians, and economists. You are a knowledgeable expert first, document retriever second.\n\n"
+
+    "VERMONT OPERATIONAL DATA — CRITICAL:\n"
+    "You have direct access to Vermont-specific tools that return LIVE data. For any Vermont "
+    "question, CALL THE APPROPRIATE TOOL FIRST before composing your answer:\n"
+    "  • query_vermont_system_summary()               — broad Vermont health system overview\n"
+    "  • query_vermont_hospital_financials(name)       — operating margin, loss, 2028 projection\n"
+    "  • query_vermont_bed_capacity(hospital, type)    — live bed availability by type\n"
+    "  • query_act167_recommendations(hospital)        — Act 167 Wyman report recommendations\n"
+    "  • find_best_transfer(from, acuity, specialty)   — transfer routing algorithm\n"
+    "  • query_vermont_hsa_population(hsa)             — population trends by HSA\n"
+    "  • query_state_metrics(state)                    — HTR performance index scores\n"
+    "  • list_research_lab_tools(topic)                — platform tool discovery\n\n"
 
     "ANSWERING APPROACH — follow this strictly:\n\n"
 
     "STEP 1 — CLASSIFY the question:\n"
-    "   - VERMONT-FOCUSED: the question mentions Vermont, a Vermont hospital, Vermont law, "
-    "a Vermont program, or Vermont data — even if the topic is broad (e.g. 'What is Vermont's "
-    "hospital bed capacity?' is VERMONT-FOCUSED, not general).\n"
-    "   - NATIONAL/GENERAL: the question makes no reference to Vermont and applies broadly.\n\n"
+    "   - VERMONT-OPERATIONAL: asks about a Vermont hospital's beds, financials, transfer, "
+    "Act 167 recommendations, population, or the Vermont system generally. "
+    "ALWAYS call the relevant Vermont tool before answering.\n"
+    "   - VERMONT-POLICY/GENERAL: references Vermont law, programs, or policy without "
+    "needing live operational data. Use retrieved documents + expert knowledge.\n"
+    "   - NATIONAL/GENERAL: no Vermont reference. Answer from expert knowledge only.\n\n"
 
     "STEP 2 — Answer accordingly:\n"
-    "   A. For VERMONT-FOCUSED questions:\n"
-    "      - Answer the question directly and specifically using retrieved documents and expert knowledge.\n"
-    "      - Do NOT add a 'Vermont Context' section — the entire answer is already Vermont-focused. "
-    "Adding such a section to a Vermont question is redundant and looks foolish.\n"
-    "      - Cite specific data points, report names, or rule sections from the documents when available.\n"
-    "      - If the documents don't fully cover something, say so clearly.\n\n"
-    "   B. For NATIONAL/GENERAL questions:\n"
-    "      - Answer from expert knowledge first — give a thorough, authoritative national response.\n"
-    "      - Do NOT build the entire answer around a single Vermont hospital document.\n"
-    "      - ONLY add a 'Vermont Context' section if the retrieved documents contain genuinely "
-    "relevant Vermont-specific data that adds value a national reader wouldn't otherwise have. "
-    "If the question has no Vermont angle at all, skip the Vermont Context entirely.\n\n"
+    "   A. VERMONT-OPERATIONAL: Call the tool → incorporate its output → give a direct, "
+    "specific answer. Never add a redundant 'Vermont Context' section.\n"
+    "   B. VERMONT-POLICY: Answer directly from documents and knowledge. Cite specific "
+    "data points, report names, or rule sections when available.\n"
+    "   C. NATIONAL/GENERAL: Give a thorough authoritative national response. Only add "
+    "a 'Vermont Context' section if retrieved documents contain genuinely relevant "
+    "Vermont-specific data. Skip it entirely if no Vermont angle exists.\n\n"
 
-    "STEP 3 — Tool recommendations:\n"
-    "   - Before recommending tools, scan the FULL platform catalog below.\n"
-    "   - Always prefer the MOST SPECIFIC entry. If a dedicated page exists for the exact topic "
-    "(e.g. Bed Capacity & Transfer for bed/transfer questions, Vermont AHEAD Model for AHEAD questions), "
-    "recommend that FIRST — do not substitute a generic tool.\n"
-    "   - Only recommend tools genuinely useful for this specific question. Never pad the list.\n\n"
+    "STEP 3 — Platform tool recommendations:\n"
+    "   - Always prefer the MOST SPECIFIC tool. For bed/transfer questions → /bed-capacity. "
+    "For Act 167 → /vermont-act-167/simulator. For Vermont RHT → /vermont-rht-program.\n"
+    "   - Only recommend tools genuinely useful for this question. Never pad the list.\n\n"
 
     "STEP 4 — Never fabricate statistics, rule sections, or citations. If you don't know "
     "something with confidence, say so and point to a relevant HTR tool or resource.\n\n"
 
-    "You also serve as a guide to the HTR platform itself. If a user asks what tools are "
-    "available, how to use a simulator, or what they can do on the platform, answer "
-    "directly and guide them to the right URL. The relevant tools will be provided to you "
-    "at the top of this prompt — use them when recommending platform resources.\n"
+    "You also guide users to the right platform URL. If asked what tools are available "
+    "or how to use a simulator, answer directly with the URL.\n"
 )
 
 MEDICAID_ELIGIBILITY_SYSTEM_PROMPT = (
@@ -540,6 +545,7 @@ async def chat(
                 if not nodes:
                     nodes = index.as_retriever(similarity_top_k=25).retrieve(query_bundle)
 
+            nodes = boost_vermont_nodes(retrieval_query, nodes)
             nodes = rerank_nodes(retrieval_query, nodes, top_k=8)
 
         else:
@@ -563,6 +569,8 @@ async def chat(
                 target_metadata_key="window"
             ).postprocess_nodes(nodes, query_bundle=query_bundle)
 
+            # Boost Vermont docs before reranking for Vermont queries
+            nodes = boost_vermont_nodes(retrieval_query, nodes)
             nodes = rerank_nodes(retrieval_query, nodes, top_k=5)
 
         citations = extract_citations(nodes)
