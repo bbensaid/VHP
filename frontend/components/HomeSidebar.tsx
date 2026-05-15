@@ -279,9 +279,9 @@ const SECTIONS: Section[] = [
     ],
   },
 
-  // ── ADVISORY & SERVICES ────────────────────────────────────────────────────
+  // ── PRO-BONO ADVISORY & SERVICES ──────────────────────────────────────────
   {
-    id: "advisory", label: "Advisory & Services",
+    id: "advisory", label: "Pro-Bono Advisory & Services",
     icon: BriefcaseIcon,
     dot: "bg-indigo-500",
     headerColor: "text-indigo-700", headerBg: "bg-indigo-100",

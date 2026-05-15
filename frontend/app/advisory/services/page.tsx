@@ -2,9 +2,9 @@ import Link from "next/link";
 import { ADVISORY_SERVICES, PILLAR_STYLES } from "@/lib/advisory-data";
 
 export const metadata = {
-  title: "All Advisory Services | HTR Advisory",
+  title: "All Pro-Bono Advisory Services | HTR Advisory",
   description:
-    "Complete catalog of HTR Advisory services: strategic consulting, custom research, IT project consulting, independent reviews, capability assessments, financial auditing, regulatory advisory, and training.",
+    "Complete catalog of HTR pro-bono advisory services: strategic consulting, custom research, IT project consulting, independent reviews, capability assessments, financial auditing, regulatory advisory, and training.",
 };
 
 export default function ServicesPage() {

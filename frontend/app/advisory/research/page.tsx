@@ -77,7 +77,7 @@ export default function ResearchPage() {
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-center gap-2 mb-4">
             <span className="bg-rose-100 text-rose-700 border border-rose-200 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">
-              Advisory Services
+              Pro-Bono Advisory Services
             </span>
             <span className="text-slate-400 text-xs">All 6 Pillars</span>
           </div>
