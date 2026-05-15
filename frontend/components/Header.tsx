@@ -512,10 +512,10 @@ function AdvisePanel({ onClose }: { onClose: () => void }) {
   return (
     <div className="max-w-screen-xl mx-auto px-6 py-6">
       <div className="grid grid-cols-3 gap-8">
-        {/* Advisory Services */}
+        {/* Pro-Bono Advisory Services */}
         <div className="col-span-2">
           <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-            Advisory Services
+            Pro-Bono Advisory Services
           </p>
           <div className="grid grid-cols-2 gap-1">
             {[
@@ -673,7 +673,7 @@ const Header = () => {
     { type: "learn", label: "ACADEMY", activeCheck: "/academy" },
     { type: "tools", label: "TOOLS", activeCheck: "/htr-simulator,/hti-dashboard,/trending-topics,/multimedia,/the-wire,/investment-tracker,/medicaid-eligibility-simulator,/transformation-friction-index,/impact-simulation" },
     { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/california-calaim,/dashboard,/ahead-model,/vermont-medicaid,/bed-capacity" },
-    { type: "advise", label: "ADVISORY & SERVICES", activeCheck: "/advisory,/connect,/community" },
+    { type: "advise", label: "PRO-BONO ADVISORY & SERVICES", activeCheck: "/advisory,/connect,/community" },
   ];
 
   const isMenuActive = (activeCheck: string) =>
@@ -966,7 +966,7 @@ const Header = () => {
               },
               {
                 key: "advise",
-                label: "Advisory & Services",
+                label: "Pro-Bono Advisory & Services",
                 emoji: "💼",
                 children: [
                   { label: "Advisory Hub", href: "/advisory", sub: [] },
