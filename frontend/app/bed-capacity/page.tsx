@@ -1,8 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
-import { ArrowLeftIcon, CheckCircleIcon, PhoneIcon, TruckIcon, ClipboardDocumentListIcon, UserGroupIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  ArrowLeftIcon, CheckCircleIcon, PhoneIcon, TruckIcon,
+  ClipboardDocumentListIcon, UserGroupIcon, XMarkIcon,
+  BellAlertIcon, ArrowPathIcon, PencilSquareIcon,
+  FlagIcon, ExclamationTriangleIcon, CheckIcon,
+} from "@heroicons/react/24/outline";
 import {
   VT_HOSPITALS as HOSPITALS,
   REPAT_PATIENTS,
@@ -11,6 +16,405 @@ import {
   type VTHospital as Hospital,
   type BedKey,
 } from "@/lib/data/system-vitals-data";
+
+// ─── LIVE DATA TYPES ──────────────────────────────────────────────────────────
+
+interface LiveBedRow {
+  hospital_id: string;
+  icu_total?: number; icu_avail?: number;
+  medsurg_total?: number; medsurg_avail?: number;
+  behavioral_total?: number; behavioral_avail?: number;
+  snf_total?: number; snf_avail?: number;
+  source?: "live" | "baseline";
+  updated_at?: string;
+  updated_by?: string;
+  notes?: string;
+}
+
+interface CapacityAlert {
+  hospital_id: string;
+  hospital_name?: string;
+  bed_type: string;
+  avail: number;
+  total: number;
+  pct: number;
+  severity: "critical" | "warning";
+  message: string;
+}
+
+interface TransferLogEntry {
+  id?: string;
+  from_hospital: string;
+  to_hospital: string;
+  patient_label: string;
+  acuity: string;
+  specialty?: string;
+  status: string;
+  notes?: string;
+  created_at?: string;
+}
+
+interface FlagEntry {
+  id?: string;
+  hospital_id?: string;
+  category: string;
+  title: string;
+  description: string;
+  severity: string;
+  status: string;
+  assigned_to?: string;
+  created_at?: string;
+}
+
+const BACKEND = process.env.NEXT_PUBLIC_BACKEND_URL ?? "http://localhost:8000";
+
+async function apiFetch(path: string, opts?: RequestInit) {
+  const token = typeof window !== "undefined" ? localStorage.getItem("sb-access-token") : null;
+  return fetch(`${BACKEND}${path}`, {
+    ...opts,
+    headers: {
+      "Content-Type": "application/json",
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
+      ...(opts?.headers ?? {}),
+    },
+  });
+}
+
+// ─── LIVE DATA HOOK ───────────────────────────────────────────────────────────
+
+function useLiveBedData(refreshIntervalMs = 120_000) {
+  const [liveData, setLiveData] = useState<Record<string, LiveBedRow>>({});
+  const [alerts, setAlerts] = useState<CapacityAlert[]>([]);
+  const [lastRefresh, setLastRefresh] = useState<Date | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  const refresh = useCallback(async () => {
+    setLoading(true);
+    try {
+      const [bedsRes, alertsRes] = await Promise.allSettled([
+        apiFetch("/api/vermont/bed-capacity"),
+        apiFetch("/api/vermont/alerts"),
+      ]);
+      if (bedsRes.status === "fulfilled" && bedsRes.value.ok) {
+        const json = await bedsRes.value.json();
+        const map: Record<string, LiveBedRow> = {};
+        for (const row of (json.hospitals ?? [])) {
+          map[row.hospital_id] = row;
+        }
+        setLiveData(map);
+      }
+      if (alertsRes.status === "fulfilled" && alertsRes.value.ok) {
+        const json = await alertsRes.value.json();
+        setAlerts(json.alerts ?? []);
+      }
+      setLastRefresh(new Date());
+    } catch {
+      // silently fall back to static data
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    refresh();
+    const id = setInterval(refresh, refreshIntervalMs);
+    return () => clearInterval(id);
+  }, [refresh, refreshIntervalMs]);
+
+  return { liveData, alerts, lastRefresh, loading, refresh };
+}
+
+// Merge a static Hospital with live data overrides
+function mergeLive(h: Hospital, live: Record<string, LiveBedRow>): Hospital {
+  const row = live[h.id];
+  if (!row) return h;
+  return {
+    ...h,
+    beds: {
+      icu:        { total: row.icu_total ?? h.beds.icu.total,               avail: row.icu_avail ?? h.beds.icu.avail },
+      medsurg:    { total: row.medsurg_total ?? h.beds.medsurg.total,       avail: row.medsurg_avail ?? h.beds.medsurg.avail },
+      behavioral: { total: row.behavioral_total ?? h.beds.behavioral.total, avail: row.behavioral_avail ?? h.beds.behavioral.avail },
+      snf:        { total: row.snf_total ?? h.beds.snf.total,               avail: row.snf_avail ?? h.beds.snf.avail },
+    },
+  };
+}
+
+// ─── ALERT BANNER ─────────────────────────────────────────────────────────────
+
+function AlertBanner({ alerts, onDismiss }: { alerts: CapacityAlert[]; onDismiss: () => void }) {
+  if (alerts.length === 0) return null;
+  const critical = alerts.filter((a) => a.severity === "critical");
+  const warnings = alerts.filter((a) => a.severity === "warning");
+  return (
+    <div className={`rounded-xl border px-4 py-3 mb-4 flex items-start gap-3 ${
+      critical.length > 0
+        ? "bg-red-50 border-red-200 dark:bg-red-950/30 dark:border-red-800"
+        : "bg-amber-50 border-amber-200 dark:bg-amber-950/30 dark:border-amber-800"
+    }`}>
+      <BellAlertIcon className={`w-5 h-5 mt-0.5 shrink-0 ${critical.length > 0 ? "text-red-600" : "text-amber-600"}`} />
+      <div className="flex-1 min-w-0">
+        <p className={`text-sm font-bold ${critical.length > 0 ? "text-red-800 dark:text-red-300" : "text-amber-800 dark:text-amber-300"}`}>
+          {critical.length > 0
+            ? `${critical.length} Critical capacity alert${critical.length > 1 ? "s" : ""}`
+            : `${warnings.length} Capacity warning${warnings.length > 1 ? "s" : ""}`}
+        </p>
+        <ul className="mt-1 space-y-0.5">
+          {alerts.slice(0, 3).map((a, i) => (
+            <li key={i} className="text-xs text-slate-700 dark:text-slate-300 truncate">{a.message}</li>
+          ))}
+          {alerts.length > 3 && (
+            <li className="text-xs text-slate-500">+{alerts.length - 3} more alerts</li>
+          )}
+        </ul>
+      </div>
+      <button onClick={onDismiss} className="shrink-0 text-slate-400 hover:text-slate-600 transition-colors">
+        <XMarkIcon className="w-4 h-4" />
+      </button>
+    </div>
+  );
+}
+
+// ─── BED UPDATE PANEL ─────────────────────────────────────────────────────────
+
+function BedUpdatePanel({ hospitalId, hospitalName, currentBeds, onClose, onSaved }: {
+  hospitalId: string;
+  hospitalName: string;
+  currentBeds: Hospital["beds"];
+  onClose: () => void;
+  onSaved: () => void;
+}) {
+  const [vals, setVals] = useState({
+    icu_avail:        currentBeds.icu.avail,
+    icu_total:        currentBeds.icu.total,
+    medsurg_avail:    currentBeds.medsurg.avail,
+    medsurg_total:    currentBeds.medsurg.total,
+    behavioral_avail: currentBeds.behavioral.avail,
+    behavioral_total: currentBeds.behavioral.total,
+    snf_avail:        currentBeds.snf.avail,
+    snf_total:        currentBeds.snf.total,
+    notes: "",
+  });
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function save() {
+    setSaving(true);
+    setError(null);
+    try {
+      const res = await apiFetch(`/api/vermont/bed-capacity/${hospitalId}`, {
+        method: "PATCH",
+        body: JSON.stringify(vals),
+      });
+      if (!res.ok) throw new Error(await res.text());
+      onSaved();
+      onClose();
+    } catch (e: unknown) {
+      setError(e instanceof Error ? e.message : "Save failed");
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  const bedTypes: Array<{ key: "icu" | "medsurg" | "behavioral" | "snf"; label: string }> = [
+    { key: "icu", label: "ICU" },
+    { key: "medsurg", label: "Med/Surg" },
+    { key: "behavioral", label: "Behavioral" },
+    { key: "snf", label: "SNF" },
+  ];
+
+  return (
+    <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4">
+      <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-full max-w-md border border-slate-200 dark:border-slate-700">
+        <div className="bg-indigo-600 px-5 py-4 rounded-t-2xl flex items-center justify-between">
+          <div>
+            <p className="text-xs font-black uppercase tracking-widest text-indigo-200">Update bed counts</p>
+            <h3 className="text-white font-black text-base leading-tight">{hospitalName}</h3>
+          </div>
+          <button onClick={onClose} className="text-indigo-200 hover:text-white"><XMarkIcon className="w-5 h-5" /></button>
+        </div>
+        <div className="p-5 space-y-4">
+          {bedTypes.map(({ key, label }) => {
+            if (currentBeds[key].total === 0 && vals[`${key}_total`] === 0) return null;
+            return (
+              <div key={key} className="grid grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs font-bold text-slate-600 mb-1">{label} — Available</label>
+                  <input type="number" min={0} max={vals[`${key}_total` as keyof typeof vals] as number}
+                    value={vals[`${key}_avail` as keyof typeof vals] as number}
+                    onChange={(e) => setVals((v) => ({ ...v, [`${key}_avail`]: Number(e.target.value) }))}
+                    className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-3 py-1.5 text-sm font-semibold bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-slate-600 mb-1">{label} — Total</label>
+                  <input type="number" min={0}
+                    value={vals[`${key}_total` as keyof typeof vals] as number}
+                    onChange={(e) => setVals((v) => ({ ...v, [`${key}_total`]: Number(e.target.value) }))}
+                    className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-3 py-1.5 text-sm font-semibold bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                </div>
+              </div>
+            );
+          })}
+          <div>
+            <label className="block text-xs font-bold text-slate-600 mb-1">Notes (optional)</label>
+            <input type="text" placeholder="e.g. 2 ICU beds on hold pending transfer"
+              value={vals.notes}
+              onChange={(e) => setVals((v) => ({ ...v, notes: e.target.value }))}
+              className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-3 py-1.5 text-sm bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+          {error && <p className="text-xs text-red-600 font-medium">{error}</p>}
+        </div>
+        <div className="px-5 pb-5 flex gap-3">
+          <button onClick={onClose} className="flex-1 py-2 text-sm font-bold border border-slate-300 dark:border-slate-600 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+            Cancel
+          </button>
+          <button onClick={save} disabled={saving}
+            className="flex-1 py-2 text-sm font-bold bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl transition-colors disabled:opacity-60">
+            {saving ? "Saving…" : "Save update"}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── FLAG PANEL ───────────────────────────────────────────────────────────────
+
+function FlagPanel({ hospitalId, hospitalName, onClose, onSaved }: {
+  hospitalId: string;
+  hospitalName: string;
+  onClose: () => void;
+  onSaved: () => void;
+}) {
+  const [form, setForm] = useState({ category: "capacity", title: "", description: "", severity: "medium" });
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function save() {
+    if (!form.title.trim()) { setError("Title is required."); return; }
+    setSaving(true);
+    setError(null);
+    try {
+      const res = await apiFetch("/api/vermont/flags", {
+        method: "POST",
+        body: JSON.stringify({ ...form, hospital_id: hospitalId }),
+      });
+      if (!res.ok) throw new Error(await res.text());
+      onSaved();
+      onClose();
+    } catch (e: unknown) {
+      setError(e instanceof Error ? e.message : "Save failed");
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4">
+      <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-full max-w-md border border-slate-200 dark:border-slate-700">
+        <div className="bg-amber-600 px-5 py-4 rounded-t-2xl flex items-center justify-between">
+          <div>
+            <p className="text-xs font-black uppercase tracking-widest text-amber-100">Flag for AHS review</p>
+            <h3 className="text-white font-black text-base">{hospitalName}</h3>
+          </div>
+          <button onClick={onClose} className="text-amber-200 hover:text-white"><XMarkIcon className="w-5 h-5" /></button>
+        </div>
+        <div className="p-5 space-y-4">
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label className="block text-xs font-bold text-slate-600 mb-1">Category</label>
+              <select value={form.category} onChange={(e) => setForm((f) => ({ ...f, category: e.target.value }))}
+                className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-3 py-1.5 text-sm bg-white dark:bg-slate-800">
+                {["capacity", "financial", "staffing", "transfer", "other"].map((c) => (
+                  <option key={c} value={c}>{c.charAt(0).toUpperCase() + c.slice(1)}</option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className="block text-xs font-bold text-slate-600 mb-1">Severity</label>
+              <select value={form.severity} onChange={(e) => setForm((f) => ({ ...f, severity: e.target.value }))}
+                className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-3 py-1.5 text-sm bg-white dark:bg-slate-800">
+                {["low", "medium", "high", "critical"].map((s) => (
+                  <option key={s} value={s}>{s.charAt(0).toUpperCase() + s.slice(1)}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+          <div>
+            <label className="block text-xs font-bold text-slate-600 mb-1">Title</label>
+            <input type="text" placeholder="e.g. ICU at zero — transfers needed"
+              value={form.title} onChange={(e) => setForm((f) => ({ ...f, title: e.target.value }))}
+              className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-3 py-1.5 text-sm bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500" />
+          </div>
+          <div>
+            <label className="block text-xs font-bold text-slate-600 mb-1">Description</label>
+            <textarea rows={3} placeholder="Describe the issue and any immediate actions taken…"
+              value={form.description} onChange={(e) => setForm((f) => ({ ...f, description: e.target.value }))}
+              className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-3 py-1.5 text-sm bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 resize-none" />
+          </div>
+          {error && <p className="text-xs text-red-600 font-medium">{error}</p>}
+        </div>
+        <div className="px-5 pb-5 flex gap-3">
+          <button onClick={onClose} className="flex-1 py-2 text-sm font-bold border border-slate-300 dark:border-slate-600 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">Cancel</button>
+          <button onClick={save} disabled={saving}
+            className="flex-1 py-2 text-sm font-bold bg-amber-600 hover:bg-amber-700 text-white rounded-xl transition-colors disabled:opacity-60">
+            {saving ? "Submitting…" : "Submit flag"}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── TRANSFER LOG TRAY ────────────────────────────────────────────────────────
+
+function TransferLogTray({ onClose }: { onClose: () => void }) {
+  const [logs, setLogs] = useState<TransferLogEntry[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    apiFetch("/api/vermont/transfer-log?limit=20")
+      .then((r) => r.json())
+      .then((j) => setLogs(j.transfers ?? []))
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, []);
+
+  return (
+    <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-end sm:items-center justify-center p-4">
+      <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-full max-w-lg border border-slate-200 dark:border-slate-700 max-h-[80vh] flex flex-col">
+        <div className="flex items-center justify-between p-5 border-b border-slate-100 dark:border-slate-700">
+          <h3 className="font-black text-slate-900 dark:text-slate-100">Recent Transfer Log</h3>
+          <button onClick={onClose} className="text-slate-400 hover:text-slate-600"><XMarkIcon className="w-5 h-5" /></button>
+        </div>
+        <div className="overflow-y-auto flex-1 p-4 space-y-2">
+          {loading && <p className="text-sm text-slate-500 text-center py-8">Loading…</p>}
+          {!loading && logs.length === 0 && <p className="text-sm text-slate-500 text-center py-8">No transfer logs yet.</p>}
+          {logs.map((log, i) => (
+            <div key={i} className="border border-slate-200 dark:border-slate-700 rounded-xl p-3">
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-xs font-black text-slate-900 dark:text-slate-100">{log.patient_label}</span>
+                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                  log.status === "completed" ? "bg-green-100 text-green-700" :
+                  log.status === "confirmed" ? "bg-blue-100 text-blue-700" :
+                  log.status === "cancelled" ? "bg-red-100 text-red-700" :
+                  "bg-amber-100 text-amber-700"
+                }`}>{log.status}</span>
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">
+                {log.from_hospital.toUpperCase()} → {log.to_hospital.toUpperCase()} · {log.acuity.toUpperCase()}
+                {log.specialty ? ` / ${log.specialty}` : ""}
+              </p>
+              {log.notes && <p className="text-xs text-slate-500 mt-1 italic">{log.notes}</p>}
+              {log.created_at && (
+                <p className="text-[10px] text-slate-400 mt-1">{new Date(log.created_at).toLocaleString()}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 // ─── DRIVE-TIME MATRIX (minutes, approximate Vermont geography) ───────────────
 const DRIVE_TIME: Record<string, Record<string, number>> = {
@@ -710,55 +1114,247 @@ const TABS: { id: Tab; label: string; icon: string }[] = [
   { id: "repat",    label: "Repatriation queue", icon: "🏠" },
 ];
 
+// ─── LIVE-AWARE TICKER ───────────────────────────────────────────────────────
+
+function LiveTickerBar({ liveData }: { liveData: Record<string, LiveBedRow> }) {
+  const chips = HOSPITALS.map((h) => {
+    const merged = mergeLive(h, liveData);
+    const avail = totalAvail(merged);
+    const total = totalBeds(merged);
+    const style = chipStyle(avail, total);
+    return { short: h.short, avail, style };
+  });
+  return (
+    <div className="flex gap-1.5 flex-wrap pb-3.5 border-b border-slate-200 dark:border-slate-700">
+      {chips.map((c) => (
+        <div key={c.short}
+          className={`flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-full border ${c.style.bg} ${c.style.border} ${c.style.text}`}>
+          {c.short}: <span className="font-black">{c.avail}</span> avail
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// ─── LIVE-AWARE CAPACITY GRID ─────────────────────────────────────────────────
+
+function LiveCapacityGrid({ liveData, onUpdate, onFlag }: {
+  liveData: Record<string, LiveBedRow>;
+  onUpdate: (h: Hospital) => void;
+  onFlag: (h: Hospital) => void;
+}) {
+  const [filter,   setFilter]   = useState("all");
+  const [sort,     setSort]     = useState("name");
+  const [selected, setSelected] = useState<string | null>(null);
+
+  const mergedHospitals = HOSPITALS.map((h) => mergeLive(h, liveData));
+  const uvmmc = mergedHospitals.find((h) => h.id === "uvmmc")!;
+  const showSurge = uvmmc.beds.icu.avail <= 2;
+
+  let hosps = [...mergedHospitals];
+  if (filter !== "all") hosps = hosps.filter((h) => h.type === filter);
+  if (sort === "avail")       hosps.sort((a, b) => totalAvail(b) - totalAvail(a));
+  else if (sort === "stress") hosps.sort((a, b) => totalAvail(a) - totalAvail(b));
+  else                        hosps.sort((a, b) => a.name.localeCompare(b.name));
+
+  const selectedHosp = selected ? mergedHospitals.find((h) => h.id === selected) : null;
+  const isLive = (id: string) => id in liveData && liveData[id]?.source === "live";
+
+  return (
+    <div>
+      {showSurge && (
+        <div className="bg-[#FAEEDA] border border-[#FAC775] rounded-lg px-3 py-2 text-xs font-semibold text-[#854F0B] mb-3.5">
+          ⚠ Surge alert: UVMMC ICU at 97% capacity. Transfers may be delayed.
+        </div>
+      )}
+      <div className="flex items-center gap-2 mb-3 flex-wrap">
+        <span className={LABEL_SM}>Filter:</span>
+        <select value={filter} onChange={(e) => { setFilter(e.target.value); setSelected(null); }}
+          className="text-xs font-semibold px-2 py-1 border border-slate-300 dark:border-slate-600 rounded-md bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200">
+          <option value="all">All hospitals</option>
+          <option value="critical">Critical access only</option>
+          <option value="regional">Regional only</option>
+          <option value="tertiary">Tertiary only</option>
+        </select>
+        <select value={sort} onChange={(e) => setSort(e.target.value)}
+          className="text-xs font-semibold px-2 py-1 border border-slate-300 dark:border-slate-600 rounded-md bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200">
+          <option value="name">Sort: name</option>
+          <option value="avail">Sort: most available</option>
+          <option value="stress">Sort: highest stress</option>
+        </select>
+      </div>
+      {/* Legend */}
+      <div className="flex gap-4 mb-3 flex-wrap">
+        {[
+          { bg: "bg-[#EAF3DE]", border: "border-[#B8DFA0]", text: "text-[#2A5A0A]", label: "Available (>20%)" },
+          { bg: "bg-[#FEF3C7]", border: "border-[#FAC775]",  text: "text-[#854F0B]", label: "Limited (5–20%)" },
+          { bg: "bg-[#FCEBEB]", border: "border-[#F5B5B5]",  text: "text-[#A32D2D]", label: "Critical (<5%)" },
+        ].map((l) => (
+          <div key={l.label} className={`flex items-center gap-1.5 text-[11px] font-semibold px-2 py-0.5 rounded-full border ${l.bg} ${l.border} ${l.text}`}>
+            {l.label}
+          </div>
+        ))}
+      </div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2.5">
+        {hosps.map((h) => (
+          <div key={h.id} className="relative group">
+            <HospCard h={h} selected={selected === h.id}
+              onClick={() => setSelected(selected === h.id ? null : h.id)} />
+            {isLive(h.id) && (
+              <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-green-500 ring-2 ring-white dark:ring-slate-900" title="Live data" />
+            )}
+            {/* Action buttons appear on hover */}
+            <div className="absolute bottom-1.5 right-1.5 hidden group-hover:flex gap-1">
+              <button onClick={(e) => { e.stopPropagation(); onUpdate(h); }}
+                title="Update bed counts"
+                className="w-6 h-6 rounded-md bg-indigo-600 hover:bg-indigo-700 text-white flex items-center justify-center transition-colors">
+                <PencilSquareIcon className="w-3.5 h-3.5" />
+              </button>
+              <button onClick={(e) => { e.stopPropagation(); onFlag(h); }}
+                title="Flag for AHS review"
+                className="w-6 h-6 rounded-md bg-amber-500 hover:bg-amber-600 text-white flex items-center justify-center transition-colors">
+                <FlagIcon className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+      {selectedHosp && <DetailPane h={selectedHosp} />}
+    </div>
+  );
+}
+
+// ─── MAIN PAGE ────────────────────────────────────────────────────────────────
+
 export default function SystemVitalsPage() {
   const [activeTab,    setActiveTab]    = useState<Tab>("capacity");
   const [transferAlgo, setTransferAlgo] = useState<TransferAlgoId>("balanced");
   const [repatAlgo,    setRepatAlgo]    = useState<RepatAlgoId>("days_over");
 
+  // Live data
+  const { liveData, alerts, lastRefresh, loading, refresh } = useLiveBedData(120_000);
+  const [alertsDismissed, setAlertsDismissed] = useState(false);
+
+  // Panels
+  const [updateTarget, setUpdateTarget] = useState<Hospital | null>(null);
+  const [flagTarget,   setFlagTarget]   = useState<Hospital | null>(null);
+  const [showLogTray,  setShowLogTray]  = useState(false);
+  const [savedToast,   setSavedToast]   = useState<string | null>(null);
+
+  function showToast(msg: string) {
+    setSavedToast(msg);
+    setTimeout(() => setSavedToast(null), 3000);
+  }
+
+  const visibleAlerts = alertsDismissed ? [] : alerts;
+
   return (
     <div className="w-full font-sans text-slate-800 dark:text-slate-100 flex flex-col pb-20">
+
+      {/* Toast */}
+      {savedToast && (
+        <div className="fixed top-4 right-4 z-[100] bg-green-600 text-white text-sm font-bold px-4 py-2.5 rounded-xl shadow-lg flex items-center gap-2">
+          <CheckIcon className="w-4 h-4" /> {savedToast}
+        </div>
+      )}
+
+      {/* Modals */}
+      {updateTarget && (
+        <BedUpdatePanel
+          hospitalId={updateTarget.id}
+          hospitalName={updateTarget.name}
+          currentBeds={mergeLive(updateTarget, liveData).beds}
+          onClose={() => setUpdateTarget(null)}
+          onSaved={() => { refresh(); showToast(`${updateTarget.name} updated`); }}
+        />
+      )}
+      {flagTarget && (
+        <FlagPanel
+          hospitalId={flagTarget.id}
+          hospitalName={flagTarget.name}
+          onClose={() => setFlagTarget(null)}
+          onSaved={() => showToast("Flag submitted to AHS review queue")}
+        />
+      )}
+      {showLogTray && <TransferLogTray onClose={() => setShowLogTray(false)} />}
+
       {/* Page header */}
-      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 mb-6 shadow-sm relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-red-50 dark:bg-red-950/20 rounded-bl-full -mr-20 -mt-20 opacity-50 pointer-events-none" />
+      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 sm:p-8 mb-4 shadow-sm relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-48 h-48 sm:w-64 sm:h-64 bg-red-50 dark:bg-red-950/20 rounded-bl-full -mr-16 -mt-16 sm:-mr-20 sm:-mt-20 opacity-50 pointer-events-none" />
         <div className="relative z-10">
           <Link href="/vermont-act-167"
-            className="inline-flex items-center text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-red-600 transition-colors mb-6">
+            className="inline-flex items-center text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-red-600 transition-colors mb-4 sm:mb-6">
             <ArrowLeftIcon className="w-4 h-4 mr-1.5" /> Vermont Act 167
           </Link>
-          <div className="inline-flex items-center gap-2 mb-4">
-            <span className="text-[11px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full bg-red-50 text-red-700 border border-red-100">
-              Live Capacity · Synthetic Data
+          <div className="flex flex-wrap items-center gap-2 mb-3">
+            <span className={`text-[11px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full border ${
+              loading
+                ? "bg-slate-50 text-slate-500 border-slate-200"
+                : Object.keys(liveData).length > 0
+                  ? "bg-green-50 text-green-700 border-green-200"
+                  : "bg-amber-50 text-amber-700 border-amber-200"
+            }`}>
+              {loading ? "Refreshing…" : Object.keys(liveData).length > 0 ? "🟢 Live data" : "⚠ Baseline data"}
             </span>
+            {lastRefresh && (
+              <span className="text-[11px] text-slate-400 font-medium">
+                Updated {lastRefresh.toLocaleTimeString()}
+              </span>
+            )}
+            <button onClick={refresh} disabled={loading}
+              className="inline-flex items-center gap-1 text-[11px] font-bold text-slate-500 hover:text-indigo-600 transition-colors disabled:opacity-40">
+              <ArrowPathIcon className={`w-3.5 h-3.5 ${loading ? "animate-spin" : ""}`} />
+              Refresh
+            </button>
           </div>
-          <h1 className="text-3xl font-black text-slate-900 dark:text-slate-100 mb-3">Bed Capacity &amp; Transfer</h1>
-          <p className="text-slate-600 dark:text-slate-400 text-sm font-medium leading-relaxed">
-            Bed capacity, interfacility transfer routing, and repatriation queue for Vermont&apos;s 14-hospital network.
-            Identify capacity pressure, find the best receiving hospital for a transfer, and manage patients
-            ready to return to their home facility.
+          <h1 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-slate-100 mb-2 sm:mb-3">
+            Bed Capacity &amp; Transfer
+          </h1>
+          <p className="text-slate-600 dark:text-slate-400 text-sm font-medium leading-relaxed max-w-2xl">
+            Bed capacity, interfacility transfer routing, and repatriation queue for Vermont&apos;s
+            14-hospital network. Hover any hospital card to update counts or flag for AHS review.
           </p>
+          {/* Action bar */}
+          <div className="flex flex-wrap gap-2 mt-4">
+            <button onClick={() => setShowLogTray(true)}
+              className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:border-indigo-400 hover:text-indigo-600 transition-colors">
+              <ClipboardDocumentListIcon className="w-4 h-4" /> Transfer log
+            </button>
+            {alerts.length > 0 && !alertsDismissed && (
+              <button onClick={() => setAlertsDismissed(false)}
+                className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg border border-red-200 bg-red-50 text-red-700 hover:bg-red-100 transition-colors">
+                <BellAlertIcon className="w-4 h-4" />
+                {alerts.length} alert{alerts.length > 1 ? "s" : ""}
+              </button>
+            )}
+          </div>
         </div>
       </div>
 
+      {/* Alert banner */}
+      <AlertBanner alerts={visibleAlerts} onDismiss={() => setAlertsDismissed(true)} />
+
       {/* Main panel */}
       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl shadow-sm overflow-hidden">
-        <div className="p-5 pb-0">
-          <TickerBar />
+        <div className="p-4 sm:p-5 pb-0">
+          <LiveTickerBar liveData={liveData} />
         </div>
 
-        {/* Fix #2: Raised tabs matching HubPageTemplate pattern */}
-        <div className="px-5 pt-4">
-          <nav className="flex items-end border border-slate-200 dark:border-slate-700 rounded-t-xl px-2 bg-slate-50/80 dark:bg-slate-800/80 backdrop-blur-sm pt-2 gap-x-1">
+        {/* Tabs */}
+        <div className="px-4 sm:px-5 pt-4">
+          <nav className="flex items-end border border-slate-200 dark:border-slate-700 rounded-t-xl px-2 bg-slate-50/80 dark:bg-slate-800/80 backdrop-blur-sm pt-2 gap-x-1 overflow-x-auto">
             {TABS.map((t) => {
               const isActive = activeTab === t.id;
               return (
                 <button key={t.id} onClick={() => setActiveTab(t.id)}
-                  className={`relative flex items-center gap-2 px-4 py-2.5 text-xs font-bold transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r
+                  className={`relative flex items-center gap-2 px-3 sm:px-4 py-2.5 text-xs font-bold transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r shrink-0
                     ${isActive
                       ? "bg-white dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-slate-100 z-10 -mb-px shadow-sm"
                       : "bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-700 hover:text-slate-700 dark:hover:text-slate-200 mt-1.5"
                     }`}>
                   <span>{t.icon}</span>
-                  {t.label}
+                  <span className="hidden sm:inline">{t.label}</span>
+                  <span className="sm:hidden">{t.label.split(" ")[0]}</span>
                 </button>
               );
             })}
@@ -766,11 +1362,26 @@ export default function SystemVitalsPage() {
         </div>
 
         {/* Tab content */}
-        <div className="p-5 border-t border-slate-200 dark:border-slate-700">
-          {activeTab === "capacity" && <CapacityGrid />}
+        <div className="p-4 sm:p-5 border-t border-slate-200 dark:border-slate-700">
+          {activeTab === "capacity" && (
+            <LiveCapacityGrid
+              liveData={liveData}
+              onUpdate={(h) => setUpdateTarget(h)}
+              onFlag={(h) => setFlagTarget(h)}
+            />
+          )}
           {activeTab === "transfer" && <TransferRouting algo={transferAlgo} onAlgoChange={setTransferAlgo} />}
           {activeTab === "repat"    && <RepatriationQueue algo={repatAlgo} onAlgoChange={setRepatAlgo} />}
         </div>
+      </div>
+
+      {/* Legend for live indicator */}
+      <div className="mt-3 flex items-center gap-3 text-[11px] text-slate-400 font-medium px-1">
+        <span className="flex items-center gap-1.5">
+          <span className="w-2 h-2 rounded-full bg-green-500 ring-2 ring-white dark:ring-slate-900" />
+          Live data from Supabase
+        </span>
+        <span>Hover hospital card to update or flag</span>
       </div>
     </div>
   );

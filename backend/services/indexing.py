@@ -229,6 +229,82 @@ async def build_index() -> VectorStoreIndex:
         log.info("ℹ️  No data/medicaid_eligibility/ directory found — skipping")
 
     # 1b. Load general PDFs from data/ root (excluding the medicaid_eligibility subfolder)
+    #
+    # Vermont-specific PDFs get enriched metadata so the retriever can surface them
+    # preferentially for Vermont-focused queries. The tagging is keyed on filename.
+    _VT_PDF_METADATA: dict[str, dict] = {
+        "wyman_report.pdf": {
+            "pillar": "Vermont / Act 167",
+            "source_type": "vermont_policy",
+            "jurisdiction": "Vermont",
+            "report": "Oliver Wyman Act 167 Community Engagement Recommendations",
+            "year": "2024",
+            "tags": "act167,vermont,hospital,restructuring,gmcb,ahs,wyman,financials,coe,hsa,ems,transfer,beds",
+        },
+        "act167 as enacted.pdf": {
+            "pillar": "Vermont / Act 167",
+            "source_type": "vermont_legislation",
+            "jurisdiction": "Vermont",
+            "report": "Vermont Act 167 (2022) — As Enacted",
+            "year": "2022",
+            "tags": "act167,vermont,legislation,gmcb,ahs,hospital,sustainability",
+        },
+        "act068 act summary.pdf": {
+            "pillar": "Vermont / Act 68",
+            "source_type": "vermont_legislation",
+            "jurisdiction": "Vermont",
+            "report": "Vermont Act 68 Summary",
+            "tags": "act68,vermont,legislation,medicaid",
+        },
+        "htr_vermont_act167_advisory.pdf": {
+            "pillar": "Vermont / Act 167",
+            "source_type": "vermont_advisory",
+            "jurisdiction": "Vermont",
+            "report": "HTR Vermont Act 167 Advisory",
+            "tags": "act167,vermont,advisory,hospital,transformation",
+        },
+        "vermonts-rural-health-transformation-(rht)-program-application-activity-details-12052025.pdf": {
+            "pillar": "Vermont / RHT",
+            "source_type": "vermont_program",
+            "jurisdiction": "Vermont",
+            "report": "Vermont Rural Health Transformation Program Application",
+            "tags": "rht,vermont,rural,transformation,ahead,tcoc",
+        },
+        "vermont rht budget narrative updated 01-30-26.pdf": {
+            "pillar": "Vermont / RHT",
+            "source_type": "vermont_program",
+            "jurisdiction": "Vermont",
+            "report": "Vermont RHT Budget Narrative 2026",
+            "tags": "rht,vermont,rural,budget,transformation",
+        },
+        "rhtp 11-12-2025 (1).pdf": {
+            "pillar": "Rural Health",
+            "source_type": "national_policy",
+            "report": "Rural Health Transformation Program — CMS",
+            "tags": "rhtp,rural,cms,transformation,ahead,national",
+        },
+        "rhtp-50-state-spotlight_final.pdf": {
+            "pillar": "Rural Health",
+            "source_type": "national_policy",
+            "report": "RHTP 50-State Spotlight",
+            "tags": "rhtp,rural,states,transformation,cms",
+        },
+        "rht-program-state-provided-abstracts (1).pdf": {
+            "pillar": "Rural Health",
+            "source_type": "national_policy",
+            "report": "RHTP State Abstracts",
+            "tags": "rhtp,rural,states,transformation",
+        },
+    }
+
+    def _get_pdf_metadata(pdf_path: Path) -> dict:
+        """Return enriched metadata for known Vermont/policy PDFs, generic otherwise."""
+        fname_lower = pdf_path.name.lower()
+        for key, meta in _VT_PDF_METADATA.items():
+            if key in fname_lower:
+                return {**meta, "source": "pdf", "filename": pdf_path.name}
+        return {"source": "pdf", "source_type": "general", "pillar": "General", "filename": pdf_path.name}
+
     if DATA_DIR.exists():
         pdf_files = [
             f for f in DATA_DIR.iterdir()
@@ -239,26 +315,27 @@ async def build_index() -> VectorStoreIndex:
             for pdf_path in pdf_files:
                 try:
                     file_hash = _file_sha256(pdf_path)
+                    enriched_meta = _get_pdf_metadata(pdf_path)
+
                     if file_hash in embed_cache:
                         cached_docs = [
-                            Document(text=d["text"], metadata=d["metadata"])
+                            Document(text=d["text"], metadata={**d["metadata"], **enriched_meta})
                             for d in embed_cache[file_hash]
                         ]
                         general_documents.extend(cached_docs)
                         cached_pdf_hits += 1
-                        log.info(f"  ✓ {pdf_path.name}: {len(cached_docs)} pages (from cache)")
+                        log.info(f"  ✓ {pdf_path.name}: {len(cached_docs)} pages (cache) [{enriched_meta.get('pillar')}]")
                         continue
 
                     pdf_docs = SimpleDirectoryReader(input_files=[str(pdf_path)]).load_data()
                     for doc in pdf_docs:
-                        doc.metadata.setdefault("source", "pdf")
-                        doc.metadata.setdefault("source_type", "general")
-                        doc.metadata.setdefault("pillar", "General")
+                        for k, v in enriched_meta.items():
+                            doc.metadata[k] = v
                     general_documents.extend(pdf_docs)
                     embed_cache[file_hash] = [
                         {"text": doc.text, "metadata": doc.metadata} for doc in pdf_docs
                     ]
-                    log.info(f"  ✓ {pdf_path.name}: {len(pdf_docs)} pages (newly loaded)")
+                    log.info(f"  ✓ {pdf_path.name}: {len(pdf_docs)} pages [{enriched_meta.get('pillar')}]")
                 except Exception as e:
                     log.error(f"  ✗ {pdf_path.name} failed: {e}")
 

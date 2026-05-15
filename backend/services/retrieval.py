@@ -87,6 +87,51 @@ class StaticNodeRetriever(BaseRetriever):
         return self._nodes
 
 
+_VT_QUERY_SIGNALS = (
+    "vermont", "act 167", "act167", "wyman", "gmcb", "gifford", "uvmmc", "nvrh", "nch",
+    "north country", "grace cottage", "springfield hospital", "brattleboro", "copley",
+    "rutland", "cvmc", "rrmc", "svmc", "nmc", "porter", "ascutney", "ahead model",
+    "rht program", "hsa", "hospital service area", "coe", "center of excellence",
+)
+
+_VT_PILLAR_TAGS = {"Vermont / Act 167", "Vermont / RHT", "Vermont / Act 68", "vermont_policy",
+                   "vermont_legislation", "vermont_program", "vermont_advisory"}
+
+
+def _is_vermont_query(query: str) -> bool:
+    q = query.lower()
+    return any(sig in q for sig in _VT_QUERY_SIGNALS)
+
+
+def boost_vermont_nodes(query: str, nodes: List[NodeWithScore]) -> List[NodeWithScore]:
+    """
+    For Vermont-focused queries, apply a score boost to nodes from Vermont-specific
+    documents (Wyman report, Act 167, RHT, etc.) so they rank above generic content.
+    Non-Vermont queries are unaffected.
+    """
+    if not _is_vermont_query(query):
+        return nodes
+
+    boosted = []
+    for n in nodes:
+        meta   = n.node.metadata or {}
+        pillar = (meta.get("pillar") or "").strip()
+        stype  = (meta.get("source_type") or "").strip()
+        tags   = (meta.get("tags") or "").lower()
+        is_vt  = (
+            pillar in _VT_PILLAR_TAGS
+            or stype in _VT_PILLAR_TAGS
+            or "vermont" in pillar.lower()
+            or "vermont" in stype.lower()
+            or "vermont" in tags
+        )
+        boost = 0.25 if is_vt else 0.0
+        boosted.append(NodeWithScore(node=n.node, score=n.score + boost))
+
+    boosted.sort(key=lambda x: -x.score)
+    return boosted
+
+
 def rerank_nodes(query: str, nodes: List[NodeWithScore], top_k: int = 5) -> List[NodeWithScore]:
     """
     Re-rank nodes using FlashRank cross-encoder (ms-marco-MiniLM-L-12-v2).

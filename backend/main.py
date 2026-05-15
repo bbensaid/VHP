@@ -47,6 +47,7 @@ from routers.chat import router as chat_router, set_index
 from routers.ingest import router as ingest_router
 from routers.api_v1 import router as api_v1_router
 from routers.personalized_learning import router as personalized_learning_router
+from routers.vermont_ops import router as vermont_ops_router
 from services.catalog_search import build_catalog_index
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
@@ -60,7 +61,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=list({FRONTEND_URL, "http://localhost:3000"}),
     allow_credentials=True,
-    allow_methods=["GET", "POST"],
+    allow_methods=["GET", "POST", "PATCH"],
     allow_headers=["Content-Type", "Authorization", "X-HTR-API-Key"],
 )
 
@@ -92,6 +93,7 @@ app.include_router(chat_router)
 app.include_router(ingest_router)
 app.include_router(api_v1_router)
 app.include_router(personalized_learning_router)
+app.include_router(vermont_ops_router, prefix="/api")
 
 # ── Lifecycle ──────────────────────────────────────────────────────────────────
 

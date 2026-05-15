@@ -71,7 +71,7 @@ function HubPageTemplateInner({
   return (
     <div className="w-full font-sans text-slate-800 dark:text-slate-100 flex flex-col pb-20">
       {/* HEADER CARD - Now fully contained, snapping to the AppShell Grid */}
-      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 mb-6 shadow-sm relative overflow-hidden">
+      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 sm:p-8 mb-4 sm:mb-6 shadow-sm relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50 dark:bg-indigo-950/20 rounded-bl-full -mr-20 -mt-20 opacity-50 pointer-events-none"></div>
         
         <div className="relative z-10">
@@ -95,7 +95,33 @@ function HubPageTemplateInner({
 
       {/* TABS NAVIGATION - Sticky below the AppShell Header */}
       <div className="sticky z-30 mb-8" style={{ top: "var(--sidebar-top, var(--sticky-bar-height, 2.5rem))" }}>
-        <nav className="flex flex-wrap justify-center items-end border border-slate-200 dark:border-slate-700 rounded-t-xl px-2 bg-slate-50/80 dark:bg-slate-800/80 backdrop-blur-sm pt-2 gap-y-1" aria-label="Tabs">
+        {/* Mobile: horizontal scroll. Desktop: wrap with rowBreakAfter support */}
+        <div className="block md:hidden overflow-x-auto border border-slate-200 dark:border-slate-700 rounded-t-xl bg-slate-50/80 dark:bg-slate-800/80 backdrop-blur-sm">
+          <nav className="flex items-end px-2 pt-2 gap-x-1 w-max min-w-full" aria-label="Tabs">
+            {tabs.map((tab) => {
+              const isActive = activeTab === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  role="tab"
+                  aria-selected={isActive}
+                  onClick={() => handleTabChange(tab.id)}
+                  className={`
+                    relative flex items-center gap-1.5 px-3 py-2 text-xs font-bold transition-all whitespace-nowrap rounded-t-xl border-t border-l border-r shrink-0
+                    ${isActive
+                      ? "bg-white dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-slate-100 z-10 -mb-px shadow-sm"
+                      : "bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 mt-1"
+                    }
+                  `}
+                >
+                  {tab.icon}
+                  <span>{tab.label}</span>
+                </button>
+              );
+            })}
+          </nav>
+        </div>
+        <nav className="hidden md:flex flex-wrap justify-center items-end border border-slate-200 dark:border-slate-700 rounded-t-xl px-2 bg-slate-50/80 dark:bg-slate-800/80 backdrop-blur-sm pt-2 gap-y-1" aria-label="Tabs">
           {tabs.map((tab, index) => {
             const isActive = activeTab === tab.id;
             return (
