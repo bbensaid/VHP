@@ -21,7 +21,7 @@ const sections = [
     links: [
       { label: "State Performance Index", href: "/dashboard" },
       { label: "HTR Academy", href: "/academy" },
-      { label: "Advisory Services", href: "/advisory" },
+      { label: "Pro-Bono Advisory Services", href: "/advisory" },
       { label: "Multimedia", href: "/multimedia" },
       { label: "Trending Topics", href: "/trending-topics" },
       { label: "AI Analyst", href: "/chat" },
