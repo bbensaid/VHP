@@ -6,12 +6,13 @@ import ToolErrorBoundary from './ToolErrorBoundary'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
 
 const NAV = [
-  { href: '/research-lab/interoperability', icon: '🧬', short: 'Interoperability' },
-  { href: '/research-lab/payment-models',   icon: '💰', short: 'Payment Models' },
-  { href: '/research-lab/population-equity',icon: '👥', short: 'Population & Equity' },
-  { href: '/research-lab/policy-quality',   icon: '📋', short: 'Policy & Quality' },
-  { href: '/research-lab/technology-ai',    icon: '🤖', short: 'Technology & AI' },
-  { href: '/research-lab/knowledge-workspace', icon: '📚', short: 'Knowledge' },
+  { href: '/research-lab/interoperability',     icon: '🧬', short: 'Interoperability' },
+  { href: '/research-lab/payment-models',       icon: '💰', short: 'Payment Models' },
+  { href: '/research-lab/population-equity',    icon: '👥', short: 'Population & Equity' },
+  { href: '/research-lab/policy-quality',       icon: '📋', short: 'Policy & Quality' },
+  { href: '/research-lab/technology-ai',        icon: '🤖', short: 'Technology & AI' },
+  { href: '/research-lab/vbc-clinical-quality', icon: '🏥', short: 'VBC & Quality' },
+  { href: '/research-lab/knowledge-workspace',  icon: '📚', short: 'Knowledge' },
 ]
 
 interface LabPageShellProps {

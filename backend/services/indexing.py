@@ -49,19 +49,19 @@ log = logging.getLogger("htr-brain")
 
 SANITY_QUERIES = {
     "policyAnalysis": """*[_type=="policyAnalysis" && defined(slug.current)]{
-        _id, title, pillar, summary,
+        _id, title, pillar, summary, "slug": slug.current,
         "bodyText": pt::text(body)
     }""",
     "post": """*[_type=="post" && defined(slug.current)]{
-        _id, title,
+        _id, title, "slug": slug.current,
         "bodyText": pt::text(body)
     }""",
     "academyModule": """*[_type=="academyModule" && defined(slug.current)]{
-        _id, title, pillar, summary, learningObjectives,
+        _id, title, pillar, summary, learningObjectives, "slug": slug.current,
         "bodyText": pt::text(body)
     }""",
     "caseStudy": """*[_type=="caseStudy" && defined(slug.current)]{
-        _id, title, pillar, summary,
+        _id, title, pillar, summary, "slug": slug.current,
         "bodyText": pt::text(body)
     }""",
     "definition": """*[_type=="definition"]{
@@ -72,10 +72,10 @@ SANITY_QUERIES = {
         "bodyText": pt::text(body)
     }""",
     "webinar": """*[_type=="webinar" && defined(slug.current)]{
-        _id, title, pillar, description
+        _id, title, pillar, description, "slug": slug.current
     }""",
     "report": """*[_type=="report" && defined(slug.current)]{
-        _id, title, pillar, abstract
+        _id, title, pillar, abstract, "slug": slug.current
     }""",
 }
 
@@ -128,13 +128,16 @@ async def fetch_sanity_content() -> List[Document]:
                 if not pillar and doc.get("pillars"):
                     pillar = doc["pillars"][0] if doc["pillars"] else None
 
+                slug = doc.get("slug") or ""
                 documents.append(Document(
                     text=content,
                     metadata={
-                        "source": content_type,
-                        "doc_id": doc["_id"],
-                        "title":  title,
-                        "pillar": pillar or "General",
+                        "source":      content_type,
+                        "source_type": content_type,
+                        "doc_id":      doc["_id"],
+                        "title":       title,
+                        "pillar":      pillar or "General",
+                        "slug":        slug,
                     },
                 ))
             log.info(f"  ✓ {content_type}: {len(results)} docs")

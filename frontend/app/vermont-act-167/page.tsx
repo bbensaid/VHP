@@ -276,17 +276,31 @@ export default function VermontAct167Page() {
           <h3 className="font-bold text-slate-900 mb-4">Most At-Risk Hospitals</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {[
-              { name: "Grace Cottage Hospital", location: "Townshend" },
-              { name: "Gifford Medical Center", location: "Randolph" },
-              { name: "North Country Hospital", location: "Newport" },
-              { name: "Springfield Hospital", location: "Springfield" },
+              { name: "Grace Cottage Hospital", location: "Townshend", slug: "grace-cottage" },
+              { name: "Gifford Medical Center", location: "Randolph", slug: "gifford" },
+              { name: "North Country Hospital", location: "Newport", slug: "north-country" },
+              { name: "Springfield Hospital", location: "Springfield", slug: "springfield" },
             ].map((h) => (
-              <div key={h.name} className="bg-rose-50 border border-rose-100 rounded-lg p-3 text-center">
+              <Link
+                key={h.name}
+                href={`/vermont-act-167/hospitals/${h.slug}`}
+                className="block bg-rose-50 border border-rose-100 rounded-lg p-3 text-center hover:border-rose-300 hover:shadow-sm transition-all"
+              >
                 <div className="text-xs font-bold text-rose-800 leading-snug mb-1">{h.name}</div>
                 <div className="text-[10px] text-rose-500 font-medium">{h.location}, VT</div>
-              </div>
+                <div className="text-[10px] text-violet-600 font-bold mt-1.5">View profile →</div>
+              </Link>
             ))}
           </div>
+        </div>
+
+        <div className="mb-8 flex gap-3">
+          <Link
+            href="/dashboard/vermont/hospitals"
+            className="inline-flex items-center gap-1.5 text-sm font-bold text-violet-700 border border-violet-200 bg-violet-50 px-4 py-2 rounded-lg hover:bg-violet-100 transition-colors"
+          >
+            View All 14 Hospitals & Compare →
+          </Link>
         </div>
 
         {/* Key recommendations */}
