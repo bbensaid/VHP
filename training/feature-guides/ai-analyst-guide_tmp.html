@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ai-analyst-guide.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="file:///Users/baba/Vermont-Health-Platform/'\\'" type="text/css"><link rel="stylesheet" href="file://\\" type="text/css">
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="feature-guide-ai-analyst">Feature Guide: AI Analyst</h1>
+<p><strong>Health Transformation Review (HTR) Platform</strong></p>
+<hr>
+<h2 id="what-is-the-ai-analyst">What Is the AI Analyst?</h2>
+<p>The AI Analyst is HTR's built-in research assistant, powered by Anthropic Claude. It is trained on HTR's full content library and uses Retrieval-Augmented Generation (RAG) to answer questions with references to actual HTR content, state data, and healthcare intelligence.</p>
+<p>It is available in two forms:</p>
+<ul>
+<li><strong>Right sidebar widget</strong> — a compact chat panel visible on most platform pages</li>
+<li><strong>Full-page chat</strong> — at <code>/chat</code>, maximized for deep research sessions</li>
+</ul>
+<hr>
+<h2 id="accessing-the-ai-analyst">Accessing the AI Analyst</h2>
+<h3 id="option-a-right-sidebar">Option A: Right Sidebar</h3>
+<p>The AI Analyst appears as a collapsible panel on the right side of most pages. Click the panel header or the chat icon to expand it. When open, you can ask questions without leaving your current page.</p>
+<h3 id="option-b-full-page-chat-chat">Option B: Full-Page Chat (<code>/chat</code>)</h3>
+<p>Navigate to <code>/chat</code> for the full-screen AI experience. This is the recommended mode for extended research sessions. Subscriber access required.</p>
+<h3 id="option-c-from-the-welcome-page">Option C: From the Welcome Page</h3>
+<p>When you select a role at <code>/welcome</code>, you are taken directly to <code>/chat</code> with a personalized greeting pre-loaded for your role.</p>
+<hr>
+<h2 id="how-it-works">How It Works</h2>
+<ol>
+<li>You type a question in plain language</li>
+<li>The AI searches HTR's content library, state data, and platform knowledge</li>
+<li>It returns a response grounded in HTR's content — not generic internet results</li>
+<li>Responses include references and can link you to relevant platform pages</li>
+</ol>
+<p>The AI <strong>knows the platform</strong> — it can navigate you to specific tools, pages, and data.</p>
+<hr>
+<h2 id="what-you-can-ask">What You Can Ask</h2>
+<h3 id="research-questions">Research Questions</h3>
+<ul>
+<li><em>&quot;What is the evidence on hospital-at-home programs for reducing readmissions?&quot;</em></li>
+<li><em>&quot;Compare Vermont Act 167 and Act 68 for a rural health system.&quot;</em></li>
+<li><em>&quot;What are the key risks in transitioning to a global hospital budget?&quot;</em></li>
+</ul>
+<h3 id="platform-navigation">Platform Navigation</h3>
+<ul>
+<li><em>&quot;Where can I find the APM design tools?&quot;</em></li>
+<li><em>&quot;Show me the state dashboard for Vermont.&quot;</em></li>
+<li><em>&quot;What tools does HTR have for Medicaid modeling?&quot;</em></li>
+</ul>
+<h3 id="data-and-analysis">Data and Analysis</h3>
+<ul>
+<li><em>&quot;What is Vermont's current Medicaid enrollment?&quot;</em></li>
+<li><em>&quot;How does Maryland's global budget compare to Vermont's AHEAD Model?&quot;</em></li>
+<li><em>&quot;What are typical shared savings rates under MSSP ACO Track 1?&quot;</em></li>
+</ul>
+<h3 id="drafting-support">Drafting Support</h3>
+<ul>
+<li><em>&quot;Draft a one-page brief on the H.R. 1 Medicaid cliff for a hospital board.&quot;</em></li>
+<li><em>&quot;Summarize the key compliance requirements of Vermont Act 167 in bullet points.&quot;</em></li>
+<li><em>&quot;Write a plain-language explanation of cost-effectiveness analysis for a non-economist.&quot;</em></li>
+</ul>
+<hr>
+<h2 id="role-personalized-starter-cards">Role-Personalized Starter Cards</h2>
+<p>When you set your role at <code>/welcome</code>, the AI's first message and available starter cards are personalized to your work. Each role gets a different set of suggested questions designed to surface the content most relevant to that profession.</p>
+<p>You can always switch roles by returning to <code>/welcome</code>.</p>
+<hr>
+<h2 id="tips-for-better-results">Tips for Better Results</h2>
+<table>
+<thead>
+<tr>
+<th>Tip</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Be specific about your context</td>
+<td><em>&quot;For a 150-bed critical access hospital in Vermont...&quot;</em></td>
+</tr>
+<tr>
+<td>State your goal</td>
+<td><em>&quot;I need to present this to a hospital board — keep it accessible&quot;</em></td>
+</tr>
+<tr>
+<td>Ask for format</td>
+<td><em>&quot;Give me this as a numbered list&quot;</em> or <em>&quot;In plain language&quot;</em></td>
+</tr>
+<tr>
+<td>Follow up</td>
+<td>Ask clarifying questions to go deeper on any point</td>
+</tr>
+<tr>
+<td>Ask for navigation</td>
+<td><em>&quot;Where on HTR can I find more detail on this?&quot;</em></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="limitations">Limitations</h2>
+<ul>
+<li>The AI draws from HTR's content library — for very recent breaking news (last 24–48 hours), also check <strong>The Wire</strong> (<code>/the-wire</code>)</li>
+<li>For legal or clinical decisions, use HTR as a starting point and consult qualified professionals</li>
+<li>Chat history persists within a session; it resets when you reload or clear it</li>
+</ul>
+<hr>
+<h2 id="voice-mode">Voice Mode</h2>
+<p>The AI Analyst works with HTR's Voice system. Press <strong>⌘⇧V</strong> (Mac) or use the microphone button to switch to voice input. The AI responds in audio when voice is active.</p>
+<p>See the <a href="./voice-guide.md">Voice Feature Guide</a> for full details.</p>
+<hr>
+<h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enter</code></td>
+<td>Send message</td>
+</tr>
+<tr>
+<td><code>Shift + Enter</code></td>
+<td>New line in message</td>
+</tr>
+<tr>
+<td><code>⌘⇧V</code></td>
+<td>Toggle voice input</td>
+</tr>
+<tr>
+<td><code>Esc</code></td>
+<td>Collapse sidebar chat</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>Last updated: May 2026 | Health Transformation Review</em></p>
+
+</body>
+</html>
