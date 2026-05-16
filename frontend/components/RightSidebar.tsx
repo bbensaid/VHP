@@ -281,30 +281,6 @@ export default function RightSidebar() {
                   : "Ask a quick question without leaving this page."}
               </p>
 
-              {/* Medicaid quick-prompt chips */}
-              <div className="mt-1">
-                <p className="text-[9px] font-black uppercase tracking-widest text-slate-300 dark:text-slate-600 mb-2 text-center">
-                  Vermont Medicaid — Try asking:
-                </p>
-                <div className="flex flex-col gap-1.5">
-                  {[
-                    "Am I eligible for Vermont Medicaid?",
-                    "What does Dr. Dynasaur cover?",
-                    "What are the 2026 income limits?",
-                    "How do I apply for Choices for Care?",
-                    "What's the difference between MAGI and non-MAGI?",
-                    "Can I have Medicare and Medicaid at the same time?",
-                  ].map((prompt) => (
-                    <button
-                      key={prompt}
-                      onClick={() => send(prompt)}
-                      className="w-full text-left text-[11px] text-slate-600 dark:text-slate-300 bg-slate-50 dark:bg-slate-800 hover:bg-rose-50 dark:hover:bg-rose-950/30 hover:text-rose-700 dark:hover:text-rose-300 border border-slate-200 dark:border-slate-700 hover:border-rose-200 dark:hover:border-rose-800 rounded-lg px-3 py-2 transition-all leading-snug"
-                    >
-                      {prompt}
-                    </button>
-                  ))}
-                </div>
-              </div>
             </div>
           )}
           {messages.map((msg, i) => (
