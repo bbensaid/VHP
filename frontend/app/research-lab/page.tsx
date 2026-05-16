@@ -138,6 +138,9 @@ export default async function ResearchLabPage() {
               { role: "Health Economists", desc: "Model cost-effectiveness, shared savings, and actuarial risk with domain-matched tools under the Economics pillar." },
               { role: "Policy Analysts", desc: "Simulate waiver impacts, benchmark HEDIS performance, and stress-test regulatory assumptions under the Policy pillar." },
               { role: "Technology Leaders", desc: "Validate FHIR implementations, govern AI models, and assess digital health readiness under the Technology pillar." },
+              { role: "Clinical Quality Managers", desc: "Analyze HEDIS measure gaps, 30-day readmissions, and avoidable ED visits against synthetic Vermont patient panels. Calculate VBC shared savings from quality improvement." },
+              { role: "Medicaid Program Staff", desc: "Walk through VCCI risk stratification — CDPS scoring, composite score calculation, SDOH screening, and tier assignment with synthetic Vermont Medicaid member scenarios." },
+              { role: "VBC Care Management Directors", desc: "Decompose total cost of care, identify high vs. low value services, manage A1C and blood pressure panels, and apply HCC risk adjustment to ACO performance analysis." },
             ].map((item) => (
               <div key={item.role} className="bg-white rounded-xl border border-slate-200 p-6">
                 <h3 className="font-black text-slate-900 mb-2">{item.role}</h3>

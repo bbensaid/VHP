@@ -10,7 +10,37 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="bg-white min-h-screen pb-20">
+    <div className="bg-white min-h-screen pb-20 relative">
+
+      {/* ── WATERMARK ─────────────────────────────────────────────────────── */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none fixed inset-0 z-40 flex items-center justify-center overflow-hidden"
+        style={{ transform: "rotate(-30deg)" }}
+      >
+        <div className="text-center select-none">
+          <p
+            className="font-black uppercase tracking-widest text-slate-300 whitespace-nowrap"
+            style={{ fontSize: "clamp(1.2rem, 3.5vw, 3rem)", lineHeight: 1.2 }}
+          >
+            Future Offering
+          </p>
+          <p
+            className="font-black uppercase tracking-widest text-slate-300 whitespace-nowrap"
+            style={{ fontSize: "clamp(0.85rem, 2.2vw, 1.8rem)", lineHeight: 1.4 }}
+          >
+            Pending Availability of Qualified Volunteers
+          </p>
+        </div>
+      </div>
+
+      {/* ── AVAILABILITY BANNER ───────────────────────────────────────────── */}
+      <div className="bg-amber-50 border-b-2 border-amber-300 py-3 px-4 text-center">
+        <p className="text-sm font-bold text-amber-800">
+          ⏳ Future Offering — Pending Availability of Qualified Volunteers.{" "}
+          <span className="font-normal text-amber-700">This advisory service is not yet active. Submissions are recorded but cannot be acted upon until volunteer advisors are onboarded.</span>
+        </p>
+      </div>
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <div className="bg-slate-50 text-slate-900 py-8 border-b border-slate-200">
@@ -41,43 +71,43 @@ export default function ContactPage() {
           {/* RIGHT: Trust Signals + Contact Info */}
           <div className="md:w-1/3 space-y-5">
 
-            {/* Response Time */}
-            <div className="bg-fuchsia-600 text-white p-6 rounded-xl shadow-lg">
-              <h4 className="text-lg font-bold mb-4 border-b border-fuchsia-500 pb-3">What Happens Next</h4>
+            {/* Future offering status */}
+            <div className="bg-amber-600 text-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-lg font-bold mb-4 border-b border-amber-500 pb-3">Program Status</h4>
               <div className="space-y-4">
                 <div className="flex gap-3">
-                  <span className="w-6 h-6 rounded-full bg-white text-fuchsia-700 flex items-center justify-center text-xs font-black shrink-0">1</span>
+                  <span className="w-6 h-6 rounded-full bg-white text-amber-700 flex items-center justify-center text-xs font-black shrink-0">⏳</span>
                   <div>
-                    <p className="text-sm font-bold">Within 48 hours</p>
-                    <p className="text-fuchsia-200 text-xs">A principal advisor reviews your inquiry and responds with initial thoughts.</p>
+                    <p className="text-sm font-bold">Future Offering</p>
+                    <p className="text-amber-100 text-xs">This advisory program is not yet active. We are in the process of onboarding qualified volunteer advisors before accepting engagements.</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
-                  <span className="w-6 h-6 rounded-full bg-white text-fuchsia-700 flex items-center justify-center text-xs font-black shrink-0">2</span>
+                  <span className="w-6 h-6 rounded-full bg-white text-amber-700 flex items-center justify-center text-xs font-black shrink-0">📋</span>
                   <div>
-                    <p className="text-sm font-bold">Discovery Call (30 min)</p>
-                    <p className="text-fuchsia-200 text-xs">We schedule a no-obligation call to understand the scope and recommend the right service line.</p>
+                    <p className="text-sm font-bold">Inquiries Recorded</p>
+                    <p className="text-amber-100 text-xs">Submissions are logged and will be reviewed once the program launches. You will be contacted when advisors become available for your area of need.</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
-                  <span className="w-6 h-6 rounded-full bg-white text-fuchsia-700 flex items-center justify-center text-xs font-black shrink-0">3</span>
+                  <span className="w-6 h-6 rounded-full bg-white text-amber-700 flex items-center justify-center text-xs font-black shrink-0">✉️</span>
                   <div>
-                    <p className="text-sm font-bold">Proposal Within 5 Days</p>
-                    <p className="text-fuchsia-200 text-xs">We deliver a scoped proposal with team, timeline, deliverables, and pricing for your review.</p>
+                    <p className="text-sm font-bold">Stay Informed</p>
+                    <p className="text-amber-100 text-xs">Subscribe to HTR updates to be notified when the advisory program officially launches and begins accepting engagements.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Pricing Guide */}
+            {/* Services preview */}
             <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
-              <h4 className="text-base font-bold text-slate-900 mb-3">Not Sure Which Service?</h4>
-              <p className="text-slate-600 ty-body mb-4">View our full services catalog with pricing guidance and comparison matrix.</p>
+              <h4 className="text-base font-bold text-slate-900 mb-3">Explore What We Plan to Offer</h4>
+              <p className="text-slate-600 ty-body mb-4">Browse the full services catalog to understand the scope of advisory support we are building toward.</p>
               <Link
                 href="/advisory/services"
                 className="block w-full text-center py-2.5 border-2 border-fuchsia-600 text-fuchsia-600 font-bold text-sm rounded-lg hover:bg-fuchsia-50 transition-colors"
               >
-                View All Services & Pricing →
+                View Services Overview →
               </Link>
             </div>
 
