@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import LabAdvisoryCTA from './LabAdvisoryCTA'
 import ToolErrorBoundary from './ToolErrorBoundary'
+import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
 
 const NAV = [
   { href: '/research-lab/interoperability', icon: '🧬', short: 'Interoperability' },
@@ -74,10 +75,20 @@ export default function LabPageShell({
       <div className="bg-linear-to-br from-slate-100 via-white to-slate-50 border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-6 py-10 flex items-start gap-4">
           <span className="text-5xl">{icon}</span>
-          <div>
-            <span className={`inline-block text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full mb-2 ${accentLight}`}>
-              Research Lab
-            </span>
+          <div className="flex-1 min-w-0">
+            <div className="flex flex-wrap items-center gap-2 mb-2">
+              <span className={`inline-block text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full ${accentLight}`}>
+                Research Lab
+              </span>
+              <Link
+                href="/academy/getting-started/research-lab"
+                className="inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-600 border border-indigo-100 hover:bg-indigo-100 transition-colors"
+                title="Open the Research Lab guide in Getting Started"
+              >
+                <QuestionMarkCircleIcon className="w-3 h-3" />
+                How to use this lab
+              </Link>
+            </div>
             <h1 className="text-3xl font-black text-slate-900 mb-2">{label}</h1>
             <p className="text-slate-500 ty-body max-w-2xl leading-relaxed">{desc}</p>
           </div>
