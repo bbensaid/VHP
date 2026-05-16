@@ -36,12 +36,8 @@ export default function OnboardingModal() {
   const [selectedPillars, setSelectedPillars] = useState<string[]>([]);
 
   useEffect(() => {
-    const completed = localStorage.getItem(STORAGE_KEY);
-    if (!completed) {
-      // Small delay so the page loads first
-      const t = setTimeout(() => setIsOpen(true), 1200);
-      return () => clearTimeout(t);
-    }
+    // Disabled — set as completed so it never shows
+    localStorage.setItem(STORAGE_KEY, "dismissed");
   }, []);
 
   const complete = () => {
