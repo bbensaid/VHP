@@ -101,6 +101,14 @@ class ChatRequest(BaseModel):
     conversation_id: Optional[str]   = None
     pillar:          Optional[str]   = None
     userRole:        Optional[str]   = None
+    pageContext:     Optional[str]   = None
+
+    @field_validator("pageContext")
+    @classmethod
+    def validate_page_context(cls, v: Optional[str]) -> Optional[str]:
+        if v is None:
+            return v
+        return v.strip()[:300]
 
     @field_validator("message")
     @classmethod
@@ -513,6 +521,16 @@ async def chat(
         _tool_hint = format_tool_hint(_matched_tools)
         if _tool_hint:
             system_prompt = _tool_hint + system_prompt
+
+    # Inject current page context so the AI knows where the user is browsing
+    if request.pageContext and not is_medicaid_query:
+        system_prompt = (
+            f"CURRENT PAGE CONTEXT: The user is currently viewing: {request.pageContext}. "
+            f"Prioritize information relevant to this context in your response. "
+            f"If the question is directly about the entity or topic on this page, "
+            f"lead with that specific information before broadening your answer.\n\n"
+            + system_prompt
+        )
 
     async def generate():
         # Yield a keepalive space immediately so the HTTP response starts streaming
