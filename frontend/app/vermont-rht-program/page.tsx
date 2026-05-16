@@ -381,6 +381,9 @@ export default function VermontRHTProgramPage() {
             { href: "/vermont-act-68", label: "Vermont Act 68 (2025)", desc: "The mandatory transformation framework that RHT capital is designed to execute.", color: "border-rose-200 hover:border-rose-400" },
             { href: "/ahead-model", label: "AHEAD Model", desc: "Vermont's federal all-payer global budget — the Medicare partner to Act 68's state mandate.", color: "border-sky-200 hover:border-sky-400" },
             { href: "/vermont-act-167", label: "Vermont Act 167 (2022)", desc: "The enabling framework that initiated Vermont's reform cascade.", color: "border-violet-200 hover:border-violet-400" },
+            { href: "/vermont-vcci", label: "Vermont VCCI", desc: "RHT investment directly funds VCCI care management infrastructure — the intensive case management program for Vermont's top 5% highest-cost Medicaid members.", color: "border-teal-200 hover:border-teal-400" },
+            { href: "/vermont-blueprint", label: "Blueprint for Health", desc: "RHT capital funds Community Health Team expansion and Mental Health Integration — the Blueprint programs that receive VCCI medium-risk referrals.", color: "border-emerald-200 hover:border-emerald-400" },
+            { href: "/vermont-legislative-resources", label: "Legislative Reports Library", desc: "AHS Act 68 monthly transformation reports track RHT investment milestones and performance against transformation benchmarks.", color: "border-indigo-200 hover:border-indigo-400" },
           ].map((p) => (
             <Link key={p.href} href={p.href} className={`group block bg-white border rounded-xl p-5 transition-all hover:shadow-md ${p.color}`}>
               <h4 className="font-bold text-slate-900 text-sm mb-1 group-hover:text-teal-700 transition-colors">{p.label}</h4>
