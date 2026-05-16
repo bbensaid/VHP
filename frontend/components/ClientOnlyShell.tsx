@@ -6,7 +6,6 @@ const CommandPalette  = dynamic(() => import("@/components/CommandPalette"),  { 
 const SessionTimeout  = dynamic(() => import("@/components/SessionTimeout"),  { ssr: false });
 const VoiceFab        = dynamic(() => import("@/components/VoiceFab"),        { ssr: false });
 const OnboardingModal = dynamic(() => import("@/components/OnboardingModal"), { ssr: false });
-const PlatformTour    = dynamic(() => import("@/components/PlatformTour"),    { ssr: false });
 
 export default function ClientOnlyShell() {
   return (
@@ -15,7 +14,6 @@ export default function ClientOnlyShell() {
       <SessionTimeout />
       <VoiceFab />
       <OnboardingModal />
-      <PlatformTour />
     </>
   );
 }
