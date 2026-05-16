@@ -615,6 +615,34 @@ function FinancialModeling({ selectedRecs }: { selectedRecs: Set<string> }) {
   const [projectionYear, setProjectionYear] = useState(5);
   const [assumedInflation, setAssumedInflation] = useState(5);
 
+  const handleExportCSV = () => {
+    const rows: string[][] = [
+      ["Hospital", "Short Name", "City", "HSA", "Beds", "ICU Beds", "Annual Admissions", "Annual ED Visits",
+       "Operating Margin (%)", "Annual Loss ($M)", "Projected 2028 Loss ($M)", "FTEs", "Pop Over 65 (%)",
+       "Low Income (%)", "Avg Travel to Next Hospital (min)", "Urgency"],
+    ];
+    for (const h of HOSPITALS) {
+      rows.push([
+        h.name, h.shortName, h.city, h.hsa,
+        String(h.beds), String(h.icuBeds),
+        String(h.annualAdmissions), String(h.annualEDVisits),
+        String(h.operatingMarginPct), String(h.annualLossM),
+        String(h.projectedLoss2028M), String(h.fteCount),
+        String(h.popOver65Pct), String(h.lowIncomePct),
+        String(h.avgTravelToNextHospitalMin), h.urgency,
+      ]);
+    }
+    rows.push([], ["Exported", new Date().toISOString(), `Projection: ${projectionYear}yr`, `Inflation: ${assumedInflation}%/yr`]);
+    const csv = rows.map(r => r.map(c => `"${c}"`).join(",")).join("\n");
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement("a");
+    a.href     = url;
+    a.download = `act167-hospital-financials-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
   const activeRecs = RECOMMENDATIONS.filter((r) => selectedRecs.has(r.id));
 
   const hospitalFinancials = useMemo(() => {
@@ -663,12 +691,21 @@ function FinancialModeling({ selectedRecs }: { selectedRecs: Set<string> }) {
   return (
     <div className="space-y-6">
       {/* View Toggle */}
-      <div className="flex gap-2 flex-wrap">
-        {(["system", "hospital", "waterfall"] as const).map((v) => (
-          <TabBtn key={v} active={view === v} onClick={() => setView(v)}>
-            {v === "system" ? "📊 System Overview" : v === "hospital" ? "🏥 Hospital-by-Hospital" : "💧 Savings Waterfall"}
-          </TabBtn>
-        ))}
+      <div className="flex items-center justify-between gap-2 flex-wrap">
+        <div className="flex gap-2 flex-wrap">
+          {(["system", "hospital", "waterfall"] as const).map((v) => (
+            <TabBtn key={v} active={view === v} onClick={() => setView(v)}>
+              {v === "system" ? "📊 System Overview" : v === "hospital" ? "🏥 Hospital-by-Hospital" : "💧 Savings Waterfall"}
+            </TabBtn>
+          ))}
+        </div>
+        <button
+          onClick={handleExportCSV}
+          className="flex items-center gap-1.5 text-xs font-bold text-violet-700 border border-violet-200 px-3 py-1.5 rounded-lg hover:bg-violet-50 transition-colors"
+          title="Export hospital financial data as CSV"
+        >
+          ↓ Export CSV
+        </button>
       </div>
 
       {/* Parameter Controls */}

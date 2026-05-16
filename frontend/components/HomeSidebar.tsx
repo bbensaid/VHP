@@ -137,9 +137,10 @@ const SECTIONS: Section[] = [
       { href: "/technology/workflow", label: "Tech-Enabled Workflow" },
     ],
     labItems: [
-      { href: "/research-lab/interoperability?tab=fhir", label: "FHIR Interoperability Lab" },
-      { href: "/research-lab/technology-ai?tab=ai",      label: "AI Clinical Governance Lab" },
-      { href: "/research-lab/technology-ai?tab=digital", label: "Digital Health Lab" },
+      { href: "/research-lab/interoperability?tab=fhir",          label: "FHIR Interoperability Lab" },
+      { href: "/research-lab/vbc-clinical-quality?tab=hl7",       label: "Clinical Data Exchange Lab" },
+      { href: "/research-lab/technology-ai?tab=ai",               label: "AI Clinical Governance Lab" },
+      { href: "/research-lab/technology-ai?tab=digital",          label: "Digital Health Lab" },
     ],
   },
 
@@ -161,9 +162,12 @@ const SECTIONS: Section[] = [
       { href: "/clinical/population", label: "Population Health Management" },
     ],
     labItems: [
-      { href: "/research-lab/interoperability?tab=risk",         label: "Risk Stratification Engine" },
-      { href: "/research-lab/policy-quality?tab=quality",        label: "Clinical Quality Optimizer" },
-      { href: "/research-lab/knowledge-workspace?tab=workforce", label: "Workforce Modeler" },
+      { href: "/research-lab/interoperability?tab=risk",             label: "Risk Stratification Engine" },
+      { href: "/research-lab/vbc-clinical-quality?tab=risk",         label: "Risk Stratification Methodology" },
+      { href: "/research-lab/vbc-clinical-quality?tab=quality",      label: "VBC Quality Measures" },
+      { href: "/research-lab/vbc-clinical-quality?tab=value",        label: "High vs. Low Value Care" },
+      { href: "/research-lab/policy-quality?tab=quality",            label: "Clinical Quality Optimizer" },
+      { href: "/research-lab/knowledge-workspace?tab=workforce",     label: "Workforce Modeler" },
     ],
   },
 
@@ -265,7 +269,8 @@ const SECTIONS: Section[] = [
     divideColor: "divide-rose-100", activeItemBg: "bg-rose-100",
     items: [
       { href: "/vermont-medicaid",    label: "Vermont Medicaid",    icon: DocumentTextIcon },
-      { href: "/vermont-act-167",     label: "Vermont Act 167 (2022)", icon: MapPinIcon },
+      { href: "/vermont-act-167",              label: "Vermont Act 167 (2022)",    icon: MapPinIcon },
+      { href: "/dashboard/vermont/hospitals", label: "VT Hospital Profiles",       icon: TableCellsIcon },
       { href: "/vermont-act-68",          label: "Vermont Act 68 (2025)",     icon: MapPinIcon },
       { href: "/vermont-act-68/simulator", label: "Act 68 Simulator",           icon: TableCellsIcon },
       { href: "/vermont-rht-program", label: "Vermont RHT Program",  icon: DocumentTextIcon },
@@ -317,6 +322,11 @@ function getSectionForPath(path: string, searchParams: URLSearchParams | null): 
   if (path === "/research-lab/interoperability")    return "technology";
   if (path === "/research-lab/technology-ai")       return "technology";
   if (path === "/research-lab/population-equity")   return "equity";
+  if (path === "/research-lab/vbc-clinical-quality") {
+    const t = searchParams?.get("tab");
+    if (t === "hl7") return "technology";
+    return "clinical";
+  }
   if (path === "/research-lab/knowledge-workspace") {
     if (searchParams?.get("tab") === "leaderboard") return "policy";
     return "operations";

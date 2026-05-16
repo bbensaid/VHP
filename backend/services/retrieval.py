@@ -153,24 +153,51 @@ def rerank_nodes(query: str, nodes: List[NodeWithScore], top_k: int = 5) -> List
         return nodes[:top_k]
 
 
+_PLATFORM_BASE = "https://healthtransformationreview.org"
+
+# Maps Sanity content_type → platform URL prefix
+_SOURCE_TYPE_URL_MAP = {
+    "post":           "/policy",          # articles live under pillar paths
+    "policyAnalysis": "/policy",
+    "academyModule":  "/academy/modules",
+    "caseStudy":      "/academy/case-studies",
+    "webinar":        "/academy/webinars",
+    "report":         "/research-lab/policy-analysis",
+}
+
+
+def _resolve_citation_url(meta: dict) -> str | None:
+    """Resolve an internal platform URL from node metadata, falling back to stored url."""
+    stored_url = (meta.get("url") or "").strip()
+    slug        = (meta.get("slug") or "").strip()
+    source_type = (meta.get("source_type") or meta.get("source") or "").strip()
+
+    if slug and source_type in _SOURCE_TYPE_URL_MAP:
+        prefix = _SOURCE_TYPE_URL_MAP[source_type]
+        return f"{prefix}/{slug}"
+
+    # Fall back to whatever URL was stored at index time (static nodes, PDFs, etc.)
+    return stored_url or None
+
+
 def extract_citations(nodes: List[NodeWithScore]) -> List[dict]:
     """
     Extract unique, non-empty source citations from retrieved nodes.
     Returns list of {title, url, pillar, source_type} dicts, deduped by title.
+    Internal platform content gets resolved to relative platform URLs.
     """
     seen: set = set()
     citations: List[dict] = []
     for n in nodes:
         meta  = n.node.metadata or {}
         title = (meta.get("title") or "").strip()
-        url   = (meta.get("url") or "").strip()
         if not title or title in seen:
             continue
         seen.add(title)
         citations.append({
             "title":       title,
-            "url":         url or None,
+            "url":         _resolve_citation_url(meta),
             "pillar":      (meta.get("pillar") or "").strip() or None,
-            "source_type": (meta.get("source_type") or "").strip() or None,
+            "source_type": (meta.get("source_type") or meta.get("source") or "").strip() or None,
         })
     return citations

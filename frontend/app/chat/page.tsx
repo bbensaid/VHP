@@ -395,6 +395,7 @@ export default function ChatPage() {
           message: userMessage,
           history: historySnapshot,
           userRole: (() => { try { return localStorage.getItem("htr-user-role") ?? "all"; } catch { return "all"; } })(),
+          pageContext: "Full-screen AI Analyst chat — no specific page context",
         }),
         signal: abortControllerRef.current.signal,
       });
@@ -776,9 +777,15 @@ export default function ChatPage() {
                             <div key={ci} className="flex items-start gap-2">
                               <span className="shrink-0 text-[10px] font-black text-indigo-400 mt-0.5 w-4">{ci + 1}.</span>
                               {c.url ? (
-                                <a href={c.url} target="_blank" rel="noopener noreferrer" className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline leading-snug">
-                                  {c.title}
-                                </a>
+                                c.url.startsWith("/") ? (
+                                  <Link href={c.url} className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline leading-snug">
+                                    {c.title}
+                                  </Link>
+                                ) : (
+                                  <a href={c.url} target="_blank" rel="noopener noreferrer" className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline leading-snug">
+                                    {c.title}
+                                  </a>
+                                )
                               ) : (
                                 <span className="text-xs text-slate-500 dark:text-slate-400 leading-snug">{c.title}</span>
                               )}
