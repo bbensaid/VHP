@@ -39,6 +39,7 @@ type RegularItem = {
   href: string;
   label: string;
   icon?: React.ComponentType<{ className?: string }>;
+  groupLabel?: string; // when set, renders a divider + mini-header before this item
 };
 
 type PillarItem = {
@@ -182,9 +183,10 @@ const SECTIONS: Section[] = [
     isPillarSection: true,
     overviewHref: "/equity",
     intelligenceItems: [
-      { href: "/equity/sdoh",   label: "SDOH Integration" },
-      { href: "/equity/bias",   label: "Algorithmic Bias" },
-      { href: "/equity/access", label: "Access Disparity" },
+      { href: "/equity/sdoh",        label: "SDOH Integration" },
+      { href: "/vermont-sdoh",       label: "Vermont SDOH & Social Services" },
+      { href: "/equity/bias",        label: "Algorithmic Bias" },
+      { href: "/equity/access",      label: "Access Disparity" },
     ],
     labItems: [
       { href: "/research-lab/population-equity?tab=population", label: "Population Health Modeler" },
@@ -268,19 +270,29 @@ const SECTIONS: Section[] = [
     borderAccent: "border-rose-500", hoverBg: "hover:bg-rose-100",
     divideColor: "divide-rose-100", activeItemBg: "bg-rose-100",
     items: [
-      { href: "/vermont-medicaid",    label: "Vermont Medicaid",    icon: DocumentTextIcon },
-      { href: "/vermont-act-167",              label: "Vermont Act 167 (2022)",    icon: MapPinIcon },
-      { href: "/dashboard/vermont/hospitals", label: "VT Hospital Profiles",       icon: TableCellsIcon },
-      { href: "/vermont-act-68",          label: "Vermont Act 68 (2025)",     icon: MapPinIcon },
-      { href: "/vermont-act-68/simulator", label: "Act 68 Simulator",           icon: TableCellsIcon },
-      { href: "/vermont-rht-program", label: "Vermont RHT Program",  icon: DocumentTextIcon },
-      { href: "/bed-capacity",          label: "Bed Capacity & Transfer", icon: TableCellsIcon },
-      { href: "/ahead-model",         label: "AHEAD Model",         icon: DocumentTextIcon },
-      { href: "/states",              label: "All States Explorer", icon: GlobeAmericasIcon },
-      { href: "/dashboard",           label: "50-State Dashboard",  icon: TableCellsIcon },
-      { href: "/california-calaim",   label: "California CalAIM",   icon: MapPinIcon },
-      { href: "/oregon-cco",          label: "Oregon CCO 3.0",       icon: MapPinIcon },
-      { href: "/dashboard/simulator", label: "CMS Rural Health Transformation", icon: TableCellsIcon },
+      // Vermont Programs
+      { href: "/vermont-medicaid",               label: "Vermont Medicaid",               icon: DocumentTextIcon,        groupLabel: "Vermont Programs" },
+      { href: "/vermont-blueprint",              label: "Blueprint for Health",           icon: HeartIcon },
+      { href: "/vermont-vcci",                   label: "Vermont VCCI",                   icon: HeartIcon },
+      { href: "/vermont-sash",                   label: "SASH Program",                   icon: HeartIcon },
+      { href: "/vermont-designated-agencies",    label: "Designated Agencies (MH/SUD)",   icon: UsersIcon },
+      { href: "/vermont-sdoh",                   label: "SDOH & Social Services",         icon: UsersIcon },
+      { href: "/vermont-act-167",                label: "Vermont Act 167 (2022)",          icon: MapPinIcon },
+      { href: "/vermont-act-68",                 label: "Vermont Act 68 (2025)",           icon: MapPinIcon },
+      { href: "/vermont-act-68/simulator",       label: "Act 68 Simulator",               icon: TableCellsIcon },
+      { href: "/ahead-model",                    label: "AHEAD Model",                    icon: DocumentTextIcon },
+      { href: "/vermont-rht-program",            label: "RHT Program ($195M)",            icon: DocumentTextIcon },
+      { href: "/dashboard/vermont/hospitals",    label: "VT Hospital Profiles",           icon: TableCellsIcon },
+      { href: "/bed-capacity",                   label: "Bed Capacity & Transfer",        icon: TableCellsIcon },
+      { href: "/vermont-legislative-resources",          label: "Legislative Reports Library",    icon: BookOpenIcon },
+      { href: "/research-lab/vbc-clinical-quality?tab=risk",    label: "VCCI Risk Stratification Lab",   icon: BeakerIcon },
+      { href: "/research-lab/vbc-clinical-quality?tab=quality", label: "VBC Quality Measures Lab",       icon: BeakerIcon },
+      // Other States & Federal Programs
+      { href: "/california-calaim",              label: "California CalAIM",              icon: MapPinIcon,              groupLabel: "Other States & Federal" },
+      { href: "/oregon-cco",                     label: "Oregon CCO 3.0",                  icon: MapPinIcon },
+      { href: "/states",                         label: "All States Explorer",            icon: GlobeAmericasIcon },
+      { href: "/dashboard",                      label: "50-State Dashboard",             icon: TableCellsIcon },
+      { href: "/dashboard/simulator",            label: "CMS Rural Transformation",       icon: TableCellsIcon },
     ],
   },
 
@@ -334,7 +346,7 @@ function getSectionForPath(path: string, searchParams: URLSearchParams | null): 
 
   if (path === "/academy" || path.startsWith("/academy/")) return "learn";
 
-  const statesPrefixes = ["/vermont-medicaid", "/vermont-act-167", "/vermont-act-68", "/vermont-rht-program", "/california-calaim", "/oregon-cco", "/states", "/dashboard", "/ahead-model", "/bed-capacity"];
+  const statesPrefixes = ["/vermont-medicaid", "/vermont-blueprint", "/vermont-vcci", "/vermont-sash", "/vermont-sdoh", "/vermont-designated-agencies", "/vermont-legislative-resources", "/vermont-act-167", "/vermont-act-68", "/vermont-rht-program", "/california-calaim", "/oregon-cco", "/states", "/dashboard", "/ahead-model", "/bed-capacity"];
   if (statesPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "states";
 
   const toolsPrefixes = ["/htr-simulator", "/medicaid-eligibility-simulator", "/hti-dashboard", "/the-wire", "/investment-tracker", "/transformation-friction-index", "/impact-simulation", "/multimedia", "/trending-topics"];
@@ -555,31 +567,40 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
 
                   {/* ── REGULAR SECTION: flat item list ─────────────────── */}
                   {!section.isPillarSection && section.items && (
-                    <div className={`divide-y ${section.divideColor} py-1`}>
+                    <div className="py-1">
                       {section.items.map((item) => {
                         const Icon = item.icon;
                         return (
-                          <Link
-                            key={`${item.href}-${item.label}`}
-                            href={item.href}
-                            onClick={onNavigate}
-                            className={`flex items-center gap-2.5 pl-5 pr-3 py-2 transition-colors group ${
-                              isActive(item.href)
-                                ? section.activeItemBg
-                                : `bg-white dark:bg-slate-800/60 ${section.hoverBg}`
-                            }`}
-                          >
-                            {Icon && (
-                              <Icon className={`w-3.5 h-3.5 shrink-0 ${section.headerColor} opacity-60`} />
+                          <div key={`${item.href}-${item.label}`}>
+                            {/* Optional group divider + label */}
+                            {item.groupLabel && (
+                              <div className={`flex items-center gap-2 pl-5 pr-3 pt-3 pb-1 border-t ${section.divideColor} mt-1`}>
+                                <span className={`text-[9px] font-black uppercase tracking-widest ${section.headerColor} opacity-70`}>
+                                  {item.groupLabel}
+                                </span>
+                              </div>
                             )}
-                            <span className={`text-[12px] leading-snug transition-colors ${
-                              isActive(item.href)
-                                ? `font-medium ${section.headerColor}`
-                                : "font-normal text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200"
-                            }`}>
-                              {item.label}
-                            </span>
-                          </Link>
+                            <Link
+                              href={item.href}
+                              onClick={onNavigate}
+                              className={`flex items-center gap-2.5 pl-5 pr-3 py-1.5 transition-colors group ${
+                                isActive(item.href)
+                                  ? section.activeItemBg
+                                  : `bg-white dark:bg-slate-800/60 ${section.hoverBg}`
+                              }`}
+                            >
+                              {Icon && (
+                                <Icon className={`w-3.5 h-3.5 shrink-0 ${section.headerColor} opacity-60`} />
+                              )}
+                              <span className={`text-[12px] leading-snug transition-colors ${
+                                isActive(item.href)
+                                  ? `font-medium ${section.headerColor}`
+                                  : "font-normal text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200"
+                              }`}>
+                                {item.label}
+                              </span>
+                            </Link>
+                          </div>
                         );
                       })}
                     </div>
