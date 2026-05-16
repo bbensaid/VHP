@@ -33,6 +33,7 @@ const ChatRequestSchema = z.object({
   systemPrompt: z.string().max(800).optional(),
   pillar: z.enum(VALID_PILLARS).optional(),
   userRole: z.enum(VALID_USER_ROLES).optional(),
+  pageContext: z.string().max(300).optional(),
 });
 
 export async function POST(req: Request) {

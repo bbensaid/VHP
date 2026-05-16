@@ -188,6 +188,34 @@ export default function HTIDashboard() {
 
   const composite = useMemo(() => calcComposite(metrics), [metrics]);
 
+  const handleExportCSV = useCallback(() => {
+    const rows: string[][] = [
+      ["Domain", "Weight", "Score", "Weighted Contribution"],
+    ];
+    for (const w of HTI_WEIGHTS) {
+      const score = metrics[w.id] ?? 0;
+      rows.push([
+        w.label,
+        `${(w.weight * 100).toFixed(0)}%`,
+        score.toFixed(1),
+        (score * w.weight).toFixed(2),
+      ]);
+    }
+    rows.push(["", "", "", ""]);
+    rows.push(["Composite HTI Score", "", composite.toFixed(1), ""]);
+    rows.push(["Level", "", level, ""]);
+    rows.push(["Exported", "", new Date().toISOString(), ""]);
+
+    const csv = rows.map(r => r.map(c => `"${c}"`).join(",")).join("\n");
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement("a");
+    a.href     = url;
+    a.download = `hti-scores-${level}-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  }, [metrics, composite, level]);
+
   // Radar chart data
   const radarData = useMemo(() => ({
     labels: HTI_WEIGHTS.map(m => m.label),
@@ -517,8 +545,12 @@ export default function HTIDashboard() {
                   <h3 className="font-black text-slate-900 text-lg uppercase tracking-tight">Maturity Radar</h3>
                   <p className="text-xs text-slate-400 mt-0.5">vs. National Average · vs. National Excellence Benchmark</p>
                 </div>
-                <button className="text-xs font-bold text-emerald-600 border border-emerald-100 px-4 py-2 rounded-xl hover:bg-emerald-50 transition-all flex items-center gap-2">
-                  <Download size={13} /> Export
+                <button
+                  onClick={handleExportCSV}
+                  className="text-xs font-bold text-emerald-600 border border-emerald-100 px-4 py-2 rounded-xl hover:bg-emerald-50 transition-all flex items-center gap-2"
+                  title="Export current simulation scores as CSV"
+                >
+                  <Download size={13} /> Export CSV
                 </button>
               </div>
               <div className="w-full max-w-xl h-[420px]">

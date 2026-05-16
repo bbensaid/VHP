@@ -34,10 +34,15 @@ export async function register() {
         return (orig as (...a: unknown[]) => unknown)(...args);
       } catch (e: unknown) {
         const msg = e instanceof Error ? e.message : String(e);
-        if (msg.includes("negative") || msg.includes("time stamp")) {
-          // Suppress — this is React's profiler reacting to an aborted render.
-          // The component render still completes (or calls notFound()) correctly;
-          // only the DevTools timing measurement is discarded.
+        // Suppress React profiler errors caused by notFound() or redirect() aborting
+        // an in-progress render — the mark start timestamp ends up after the measure
+        // end timestamp, producing a "negative time stamp" DOMException. This is
+        // harmless: the page/component handled the abort correctly.
+        if (
+          msg.includes("negative") ||
+          msg.includes("time stamp") ||
+          msg.includes("cannot have a negative")
+        ) {
           return;
         }
         throw e;

@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CLINICAL_DATA_VBC_DOCUMENTATION.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="file:///Users/baba/Vermont-Health-Platform/'\\'" type="text/css"><link rel="stylesheet" href="file://\\" type="text/css">
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="vbc--clinical-quality-lab--complete-technical-and-user-documentation">VBC &amp; Clinical Quality Lab — Complete Technical and User Documentation</h1>
+<p><strong>Delivered:</strong> May 16, 2026<br>
+<strong>Platform:</strong> Health Transformation Review (HTR)<br>
+<strong>Route:</strong> <code>/research-lab/vbc-clinical-quality</code><br>
+<strong>Status:</strong> Production-ready, TypeScript clean, Next.js build passing</p>
+<hr>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#1-overview">Overview — What Was Built and Why</a></li>
+<li><a href="#2-architecture">Architecture — How It All Fits Together</a></li>
+<li><a href="#3-synthetic-patient-dataset">The Synthetic Patient Dataset</a></li>
+<li><a href="#4-clinical-data-exchange-lab">Tab 1 — Clinical Data Exchange Lab (HL7, FHIR, USCDI)</a></li>
+<li><a href="#5-vbc-quality-measures-dashboard">Tab 2 — VBC Quality Measures Dashboard (HEDIS, Readmissions, Avoidable ED)</a></li>
+<li><a href="#6-high-vs-low-value-care-analysis">Tab 3 — High vs. Low Value Care Analysis</a></li>
+<li><a href="#7-risk-stratification-methodology">Tab 4 — Risk Stratification Methodology</a></li>
+<li><a href="#8-vermont-vcci-scenario">Tab 4 Sub-Feature — Vermont VCCI Scenario</a></li>
+<li><a href="#9-vcci-dataset">The VCCI Dataset in Detail</a></li>
+<li><a href="#10-navigation-and-integration">Navigation and Integration Changes</a></li>
+<li><a href="#11-file-inventory">File Inventory</a></li>
+<li><a href="#12-glossary">Glossary of Key Terms</a></li>
+</ol>
+<hr>
+<h2 id="1-overview">1. Overview</h2>
+<h3 id="what-problem-does-this-solve">What Problem Does This Solve?</h3>
+<p>Before today, the platform's Technology and Clinical pillars had solid policy and economic content but lacked <strong>practical, scenario-based clinical data</strong>. A user could read about FHIR interoperability or HEDIS measures in the abstract, but could not see a real example of:</p>
+<ul>
+<li>What a Vermont patient's HL7 message actually looks like segment by segment</li>
+<li>How a HEDIS quality gap is identified and closed for a specific patient</li>
+<li>How a risk score is calculated from a patient's diagnoses, step by step</li>
+<li>What the Vermont VCCI program actually does to identify and manage high-risk Medicaid members</li>
+</ul>
+<p>The new <strong>VBC &amp; Clinical Quality Lab</strong> fills that gap entirely. It is built around <strong>8 detailed synthetic Vermont patient profiles</strong> and <strong>3 dedicated Vermont VCCI Medicaid patient scenarios</strong>, all with realistic clinical data, HL7 messages, FHIR resources, HEDIS status, encounter histories, medication lists, SDOH flags, and risk scores.</p>
+<h3 id="who-is-this-for">Who Is This For?</h3>
+<table>
+<thead>
+<tr>
+<th>Audience</th>
+<th>What They Get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Health IT professionals</strong></td>
+<td>Annotated HL7 v2 message anatomy, FHIR R4 resource structure, USCDI data elements, HL7↔FHIR side-by-side comparison</td>
+</tr>
+<tr>
+<td><strong>Quality managers / HEDIS analysts</strong></td>
+<td>Patient-level HEDIS gap identification, numerator/denominator definitions, closing actions, panel-level rates</td>
+</tr>
+<tr>
+<td><strong>VBC/ACO leaders</strong></td>
+<td>30-day readmission analysis, avoidable ED classification, A1C/BP panel management with shared savings math</td>
+</tr>
+<tr>
+<td><strong>Clinical leaders</strong></td>
+<td>Choosing Wisely low-value care scan, Total Cost of Care decomposition, care gap identification</td>
+</tr>
+<tr>
+<td><strong>Medicaid program staff / DVHA</strong></td>
+<td>Full Vermont VCCI risk stratification walkthrough, CDPS score calculation, composite scoring, SDOH screening data</td>
+</tr>
+<tr>
+<td><strong>Students and newcomers</strong></td>
+<td>Every concept is explained from first principles — no prior knowledge of HL7, FHIR, HEDIS, or risk adjustment assumed</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="2-architecture">2. Architecture</h2>
+<h3 id="how-the-components-connect">How the Components Connect</h3>
+<pre class="hljs"><code><div>/research-lab/vbc-clinical-quality          ← New route
+├── VBCClinicalQualityClient.tsx            ← Shell: tab routing + LabPageShell wrapper
+│
+├── Tab: hl7       → HL7FHIRExplorer.tsx    ← Clinical data exchange
+├── Tab: quality   → VBCQualityDashboard.tsx ← HEDIS, readmissions, avoidable ED
+├── Tab: value     → HighLowValueCare.tsx   ← High vs. low value care
+└── Tab: risk      → RiskStratificationMethodology.tsx
+                        └── Sub-tab: vcci  → VCCIScenario.tsx  ← VCCI program
+</div></code></pre>
+<h3 id="data-layer">Data Layer</h3>
+<pre class="hljs"><code><div>lib/syntheticPatients.ts     ← 8 Vermont patient profiles (945 lines)
+                                Used by: HL7FHIRExplorer, VBCQualityDashboard,
+                                         HighLowValueCare, RiskStratificationMethodology
+
+lib/vcciScenarioData.ts      ← 3 VCCI Medicaid patients + providers + hospitals (650 lines)
+                                Used by: VCCIScenario
+</div></code></pre>
+<h3 id="technical-choices">Technical Choices</h3>
+<ul>
+<li>All components are <strong><code>&quot;use client&quot;</code></strong> with <code>dynamic()</code> imports (<code>ssr: false</code>) — they render in the browser only, which is appropriate for interactive calculators with no SEO content</li>
+<li>The VCCI component is lazy-loaded via <code>dynamic()</code> inside <code>RiskStratificationMethodology</code> to keep the base bundle small</li>
+<li>All data is <strong>static TypeScript</strong> — no API calls, no database reads. This means the tools are fast, work offline, and have no dependency on backend availability</li>
+<li>URL state is managed via <code>?tab=</code> query params (consistent with all other Research Lab sections), so links to specific tabs are shareable and bookmarkable</li>
+<li>The lab is added to the Research Lab navigation bar (<code>LabPageShell.tsx</code>) so users can move between labs using the top nav</li>
+</ul>
+<hr>
+<h2 id="3-synthetic-patient-dataset">3. Synthetic Patient Dataset</h2>
+<p><strong>File:</strong> <code>lib/syntheticPatients.ts</code></p>
+<h3 id="what-it-is">What It Is</h3>
+<p>A TypeScript data file containing 8 complete synthetic Vermont patient profiles. Every patient is fictional but clinically accurate — diagnoses, medications, lab values, and encounter patterns are all realistic and internally consistent. The scenarios were designed to represent the real patient complexity seen in Vermont's Medicaid and Medicare populations.</p>
+<h3 id="why-synthetic-data-instead-of-real-data">Why Synthetic Data Instead of Real Data</h3>
+<p>Real patient data cannot be used in a platform without a BAA (Business Associate Agreement), IRB approval, and de-identification certification. Synthetic data that is clinically realistic — but contains no real individuals — achieves the same educational and analytical purpose while being fully compliant.</p>
+<h3 id="what-each-patient-profile-contains">What Each Patient Profile Contains</h3>
+<p>Every patient object contains <strong>15 categories of data</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Demographics</strong></td>
+<td>Name, age, DOB, sex, county, town, payer (Medicare/Medicaid/Commercial), member ID</td>
+</tr>
+<tr>
+<td><strong>Risk scores</strong></td>
+<td>HCC RAF score (CMS v28), Charlson Comorbidity Index score, risk tier (low/rising/high/very-high)</td>
+</tr>
+<tr>
+<td><strong>HCC detail</strong></td>
+<td>Each HCC code number, label, mapped ICD-10 codes, CMS coefficient, plain-English description</td>
+</tr>
+<tr>
+<td><strong>Diagnoses</strong></td>
+<td>ICD-10 code, display name, HCC code, HCC weight, SNOMED CT code</td>
+</tr>
+<tr>
+<td><strong>Medications</strong></td>
+<td>RxNorm code, drug name, dose, frequency, adherence status</td>
+</tr>
+<tr>
+<td><strong>Lab results</strong></td>
+<td>LOINC code, display name, value, units, date, interpretation (normal/abnormal/critical)</td>
+</tr>
+<tr>
+<td><strong>Encounters</strong></td>
+<td>Type (inpatient/ED/office/SNF/telehealth), dates, principal diagnosis, DRG, CPT codes, cost, avoidable flag, root cause</td>
+</tr>
+<tr>
+<td><strong>HEDIS status</strong></td>
+<td>Per-measure status: in denominator, in numerator, gap description, closing action</td>
+</tr>
+<tr>
+<td><strong>HL7 v2 ADT message</strong></td>
+<td>Full annotated ADT^A01 (admission) or ADT^A04 (outpatient registration) message</td>
+</tr>
+<tr>
+<td><strong>HL7 v2 ORU message</strong></td>
+<td>Full annotated ORU^R01 (lab results) message (where applicable)</td>
+</tr>
+<tr>
+<td><strong>FHIR R4 Bundle</strong></td>
+<td>Patient, Encounter, Condition, Observation, and MedicationRequest resources</td>
+</tr>
+<tr>
+<td><strong>SDOH flags</strong></td>
+<td>Plain-English social determinant flags (housing, food, transportation, isolation)</td>
+</tr>
+<tr>
+<td><strong>Total cost PMPY</strong></td>
+<td>Annual per-member-per-year cost</td>
+</tr>
+<tr>
+<td><strong>Scenario title</strong></td>
+<td>Short clinical scenario label for UI display</td>
+</tr>
+<tr>
+<td><strong>Key learning</strong></td>
+<td>2–3 sentence educational takeaway connecting the patient's data to VBC concepts</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-eight-patients">The Eight Patients</h3>
+<hr>
+<p><strong>Patient 1 — Elaine Morrison, 67F, Orange County, Medicare</strong><br>
+<em>Scenario: T2DM Readmission &amp; HEDIS Gap</em></p>
+<p>Elaine has uncontrolled Type 2 diabetes (HbA1c 9.2%), chronic systolic heart failure, morbid obesity, and essential hypertension. She was admitted for diabetic ketoacidosis in September 2025 and readmitted 28 days later — a preventable 30-day readmission. She has had three additional avoidable ED visits for hyperglycemia and CHF fluid overload. She is out of the HEDIS CDC numerator on HbA1c control, blood pressure control, eye exam, and statin therapy. Her RAF score is 1.82 — 82% above the Medicare average.</p>
+<p><strong>What Elaine Teaches:</strong></p>
+<ul>
+<li>How a 30-day readmission is defined and attributed (CMS RSRR methodology)</li>
+<li>How HEDIS CDC measure gaps stack up on a single patient</li>
+<li>Why insulin cost and non-adherence translate directly to ED visits and hospitalizations</li>
+<li>How HL7 ADT and ORU messages carry the clinical data that feeds HEDIS calculation</li>
+</ul>
+<hr>
+<p><strong>Patient 2 — Marcus Webb, 72M, Chittenden County, Medicare</strong><br>
+<em>Scenario: CHF Avoidable ED &amp; Blood Pressure Uncontrolled</em></p>
+<p>Marcus has chronic diastolic heart failure, paroxysmal atrial fibrillation, peripheral artery disease, and stage 3 CKD. His blood pressure is 158/94 despite three antihypertensives — out of the HEDIS CBP numerator. He has had two avoidable ED visits for CHF fluid overload, both driven by lack of remote patient monitoring (RPM). He has no home weight scale. His RAF score is 1.64.</p>
+<p><strong>What Marcus Teaches:</strong></p>
+<ul>
+<li>How RPM can prevent CHF decompensation and the $4,800/year in avoidable ED spend it represents</li>
+<li>What the HEDIS CBP (Controlling High Blood Pressure) measure requires and why Marcus fails it</li>
+<li>How multiple HCC codes interact to produce a RAF score (CHF + AFib + PVD + CKD)</li>
+<li>The AHRQ PQI-8 classification for CHF-related avoidable admissions</li>
+</ul>
+<hr>
+<p><strong>Patient 3 — Dorothy Lafleur, 58F, Windham County, Medicaid</strong><br>
+<em>Scenario: A1C Controlled But Quality Gaps Persist</em></p>
+<p>Dorothy has T2DM with CKD Stage 4. Her HbA1c is 7.6% — controlled, in the HEDIS numerator. But she has missed her annual urine albumin-to-creatinine ratio (UACR) test required for the HEDIS Kidney Health Evaluation measure. She also has a pattern of repeated routine urinalysis orders that flag as low-value per Choosing Wisely guidance. Her CKD is aggressively managed on an SGLT2 inhibitor (dapagliflozin).</p>
+<p><strong>What Dorothy Teaches:</strong></p>
+<ul>
+<li>Why HEDIS compliance requires more than just A1C control — multiple sub-measures exist</li>
+<li>What the UACR test is and why it matters for diabetic kidney disease monitoring</li>
+<li>How Choosing Wisely flags identify low-value care that doesn't constitute fraud but wastes resources</li>
+<li>How CKD Stage 4 maps to CDPS RENAL_H category and HCC 136</li>
+</ul>
+<hr>
+<p><strong>Patient 4 — James Bouchard, 81M, Franklin County, Medicare</strong><br>
+<em>Scenario: COPD Exacerbations &amp; Choosing Wisely Flags</em></p>
+<p>James has severe COPD, comorbid CHF, and severe protein-calorie malnutrition — the last having the highest HCC coefficient (0.455) in his profile, often undercoded in practice. He has had four COPD-related ED visits in 12 months, all classifiable as AHRQ PQI-5 ambulatory care-sensitive. He has received six chest X-rays in the measurement year despite stable COPD — flagged as low-value imaging per American College of Physicians Choosing Wisely guidance (Grade A evidence).</p>
+<p><strong>What James Teaches:</strong></p>
+<ul>
+<li>How AHRQ Prevention Quality Indicators (PQIs) classify COPD admissions as ambulatory care-sensitive</li>
+<li>Why protein-calorie malnutrition carries a higher HCC weight than heart failure or diabetes</li>
+<li>How Choosing Wisely CPT-code-based scanning works in practice</li>
+<li>The financial cost of COPD exacerbation prevention failure (~$10,800 in avoidable ED spend over 12 months)</li>
+</ul>
+<hr>
+<p><strong>Patient 5 — Sarah Thibodeau, 45F, Rutland County, Medicaid</strong><br>
+<em>Scenario: MDD Hospitalization &amp; Follow-Up Failure</em></p>
+<p>Sarah was hospitalized for major depressive disorder (MDD) and discharged September 27. Her first follow-up appointment was October 5 — 8 days post-discharge, missing the HEDIS FUH 7-day window by a single day. She fails three HEDIS measures: FUH-7, Controlling High Blood Pressure, and Antidepressant Medication Management (AMM). Multiple SDOH factors — housing instability, trauma history, childcare barriers — compound her clinical complexity.</p>
+<p><strong>What Sarah Teaches:</strong></p>
+<ul>
+<li>The exact definition of the HEDIS FUH-7 measure and how a one-day miss triggers a gap</li>
+<li>How discharge planning failures directly translate to HEDIS measure failures</li>
+<li>Why behavioral health and primary care fragmentation creates compounding quality gaps</li>
+<li>How SDOH factors are coded in both HL7 OBX segments and FHIR Observation resources</li>
+</ul>
+<hr>
+<p><strong>Patient 6 — Robert Arsenault, 63M, Washington County, Commercial</strong><br>
+<em>Scenario: A1C Trending to Control After Pharmacist MTM</em></p>
+<p>Robert is an MTM success story. His HbA1c has improved from 9.1% (May 2024) to 7.4% (November 2025) over 18 months following pharmacist-led medication reconciliation and adherence coaching. He is now IN the HEDIS CDC-HbA1c numerator, IN the MAH (Medication Adherence) numerator, and on an appropriate statin. He still has one gap: no dilated eye exam in the measurement year.</p>
+<p><strong>What Robert Teaches:</strong></p>
+<ul>
+<li>What a positive VBC outcome trajectory looks like in clinical data</li>
+<li>How PDC (proportion of days covered) is calculated and used for HEDIS MAH measures</li>
+<li>The dollar value of moving a patient from uncontrolled to controlled T2DM in a VBC contract</li>
+<li>What the A1C trend chart view in the platform shows over 4 time points</li>
+</ul>
+<hr>
+<p><strong>Patient 7 — Maria Gonzalez, 55F, Lamoille County, Medicaid</strong><br>
+<em>Scenario: Hypertension Controlled via RPM + SDOH Support</em></p>
+<p>Maria is a Vermont AHEAD RPM success case. Her blood pressure dropped from 162/98 (November 2024) to 124/76 (November 2025) after enrollment in a remote blood pressure monitoring program. SDOH screening identified food insecurity and housing instability — addressing these was essential to medication adherence. Spanish is her primary language (FHIR Patient.communication coded with BCP-47 <code>es</code>).</p>
+<p><strong>What Maria Teaches:</strong></p>
+<ul>
+<li>The ROI calculation for RPM: $480/year program cost vs. $4,200/year in avoidable utilization</li>
+<li>How SDOH data is encoded in FHIR resources (LOINC-coded Observations, Z-code Conditions)</li>
+<li>How language preference flows through both FHIR Patient resource and HL7 PID segment</li>
+<li>What the Controlling High Blood Pressure (CBP) HEDIS measure requires</li>
+</ul>
+<hr>
+<p><strong>Patient 8 — William Desrochers, 78M, Essex County, Medicare</strong><br>
+<em>Scenario: Heart Failure Hospitalization &amp; SNF Overutilization</em></p>
+<p>William is the highest-cost patient in the panel at $68,400/year. He has systolic CHF, longstanding persistent AFib, severe protein-calorie malnutrition, atherosclerosis, CKD Stage 3, and T2DM. His RAF score is 2.14. His care story: index CHF hospitalization → 21-day SNF stay → two additional ED visits including a 30-day readmission. SNF/post-acute spend is 38% of his TCOC — the highest modifiable cost category.</p>
+<p><strong>What William Teaches:</strong></p>
+<ul>
+<li>How to decompose TCOC into service categories and identify modifiable vs. fixed spend</li>
+<li>Why SNF utilization is a primary target for VBC cost reduction</li>
+<li>How NT-proBNP (a heart failure biomarker, LOINC 33762-6) signals severity and appears in HL7 ORU</li>
+<li>The CMS RSRR methodology for 30-day readmission attribution and risk adjustment</li>
+</ul>
+<hr>
+<h3 id="panel-summary-statistics-exported-as-panel_summary">Panel Summary Statistics (Exported as <code>PANEL_SUMMARY</code>)</h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total patients</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Average cost PMPY</td>
+<td>~$31,000</td>
+</tr>
+<tr>
+<td>Average HCC RAF score</td>
+<td>1.33</td>
+</tr>
+<tr>
+<td>Average Charlson score</td>
+<td>4.4</td>
+</tr>
+<tr>
+<td>Very High risk tier</td>
+<td>4 patients</td>
+</tr>
+<tr>
+<td>High risk tier</td>
+<td>1 patient</td>
+</tr>
+<tr>
+<td>Rising risk tier</td>
+<td>3 patients</td>
+</tr>
+<tr>
+<td>Avoidable ED visits</td>
+<td>11</td>
+</tr>
+<tr>
+<td>30-day readmissions</td>
+<td>2</td>
+</tr>
+<tr>
+<td>HEDIS gaps</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Payer mix</td>
+<td>4 Medicare, 3 Medicaid, 1 Commercial</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="4-clinical-data-exchange-lab">4. Clinical Data Exchange Lab</h2>
+<p><strong>File:</strong> <code>components/research/HL7FHIRExplorer.tsx</code><br>
+<strong>Route:</strong> <code>/research-lab/vbc-clinical-quality?tab=hl7</code><br>
+<strong>Access from:</strong> Technology pillar sidebar → &quot;Clinical Data Exchange Lab&quot;</p>
+<h3 id="what-it-is-1">What It Is</h3>
+<p>An interactive explorer that shows clinical data in the two dominant healthcare messaging standards — HL7 v2 (the legacy standard used in most hospital ADT and lab systems today) and FHIR R4 (the modern standard mandated by the ONC 21st Century Cures Act). It also includes a complete browser of the United States Core Data for Interoperability (USCDI) data element registry.</p>
+<h3 id="why-these-two-standards-exist-side-by-side">Why These Two Standards Exist Side by Side</h3>
+<p><strong>Background for non-technical users:</strong> Healthcare data has historically been trapped inside individual hospital and clinic systems that don't talk to each other. Two competing approaches have emerged to solve this:</p>
+<ul>
+<li><strong>HL7 v2</strong> (released 1987, still dominant): A pipe-delimited text format that most hospitals use for real-time feeds of admissions, discharges, lab results, and orders. Think of it as a fax machine format that works — everywhere, reliably, but with limited structure.</li>
+<li><strong>FHIR R4</strong> (released 2019, rapidly growing): A modern REST API and JSON format that treats every clinical concept as a discrete, queryable resource. Think of it as a well-structured database that any authorized app can read and write.</li>
+</ul>
+<p>Most real-world health IT work involves translating between both. This tool shows exactly what that looks like.</p>
+<h3 id="tab-1-hl7-v2-explorer">Tab 1: HL7 v2 Explorer</h3>
+<p><strong>How to use it:</strong></p>
+<ol>
+<li>Select any of the 8 patient scenarios using the patient selector cards at the top</li>
+<li>The patient's ADT (admission/registration) message appears below, broken into individual segments</li>
+<li>Click any segment row to expand it</li>
+<li>Each expansion shows:
+<ul>
+<li>A plain-English explanation of what the segment means and why it matters for VBC</li>
+<li>The raw pipe-delimited data in a monospace terminal view</li>
+<li>Field-by-field annotations (e.g., &quot;MSH-9: ADT^A01 = this is an Admit event, not a discharge or transfer&quot;)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Segments covered:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Segment</th>
+<th>Full Name</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MSH</strong></td>
+<td>Message Header</td>
+<td>The &quot;envelope&quot; — who sent the message, when, what type of event it represents</td>
+</tr>
+<tr>
+<td><strong>EVN</strong></td>
+<td>Event Type</td>
+<td>Records the timestamp of the clinical event itself (separate from when the message was sent)</td>
+</tr>
+<tr>
+<td><strong>PID</strong></td>
+<td>Patient Identification</td>
+<td>Core demographics: name, DOB, MRN, address. The #1 source of patient matching challenges in HIE</td>
+</tr>
+<tr>
+<td><strong>PV1</strong></td>
+<td>Patient Visit</td>
+<td>Inpatient vs. outpatient vs. ED designation; attending physician NPI; financial class (Medicare/Medicaid/Commercial)</td>
+</tr>
+<tr>
+<td><strong>DG1</strong></td>
+<td>Diagnosis</td>
+<td><strong>Critical for VBC</strong>: Each ICD-10 diagnosis in a separate DG1 segment. These map to HCC codes for risk adjustment. Missing DG1 = missing RAF weight.</td>
+</tr>
+<tr>
+<td><strong>OBR</strong></td>
+<td>Observation Request</td>
+<td>The lab order that generated results — links OBX results back to the ordering provider</td>
+</tr>
+<tr>
+<td><strong>OBX</strong></td>
+<td>Observation Result</td>
+<td><strong>Critical for HEDIS</strong>: Each lab result with its LOINC code. If the LOINC code is wrong or absent, HEDIS calculators cannot use the result even if the value is correct.</td>
+</tr>
+<tr>
+<td><strong>AL1</strong></td>
+<td>Allergy</td>
+<td>Known allergies — critical for medication safety; maps to FHIR AllergyIntolerance</td>
+</tr>
+<tr>
+<td><strong>PR1</strong></td>
+<td>Procedure</td>
+<td>Clinical procedures performed; CPT codes here feed quality measure calculation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The ORU^R01 (Lab Results) sub-section:</strong><br>
+For patients with lab data (Elaine, Marcus, others), a second message section shows the ORU^R01 lab results message. This is the message type that carries HbA1c, blood pressure readings, and other HEDIS-relevant lab results from the Lab Information System (LIS) to the EHR and HIE. The key educational point: the LOINC code in OBX-3 is what HEDIS calculation engines search for. Without the correct LOINC code, a perfect lab result is invisible to quality measurement.</p>
+<h3 id="tab-2-fhir-r4-bundle">Tab 2: FHIR R4 Bundle</h3>
+<p><strong>How to use it:</strong></p>
+<ol>
+<li>Select a patient (same selector as HL7 tab — patient persists across tabs)</li>
+<li>The patient's FHIR R4 Bundle is displayed as an expandable tree</li>
+<li>Each Bundle.entry (one FHIR resource) appears as a card showing the resource type</li>
+<li>Click any card to expand it — reveals the full JSON with interactive collapsed/expanded nodes</li>
+<li>A plain-English description of each resource type appears at the top of each expanded card</li>
+</ol>
+<p><strong>FHIR Resources Included Per Patient:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>What It Represents</th>
+<th>HEDIS/VBC Relevance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Patient</strong></td>
+<td>Demographics, language, address</td>
+<td>USCDI-required elements; patient matching; SDOH county analysis</td>
+</tr>
+<tr>
+<td><strong>Encounter</strong></td>
+<td>Hospital or clinic visit</td>
+<td>Determines encounter type for HEDIS denominator inclusion</td>
+</tr>
+<tr>
+<td><strong>Condition</strong></td>
+<td>Active diagnoses</td>
+<td>Maps to ICD-10 → HCC → RAF score; primary source for risk adjustment</td>
+</tr>
+<tr>
+<td><strong>Observation</strong></td>
+<td>Lab results, vital signs, screening scores</td>
+<td>Numerator data for HEDIS (HbA1c, BP, PHQ-9); must have LOINC code</td>
+</tr>
+<tr>
+<td><strong>MedicationRequest</strong></td>
+<td>Active prescriptions</td>
+<td>Source for HEDIS medication adherence (PDC calculation)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interactive JSON viewer features:</strong></p>
+<ul>
+<li>Triangles (▼/▶) expand/collapse nested objects and arrays</li>
+<li>String values in red; codes in green monospace; numbers in blue</li>
+<li>Depth-limited auto-expansion (first 2 levels open by default, deeper levels collapsed)</li>
+</ul>
+<h3 id="tab-3-hl7--fhir-bridge">Tab 3: HL7 ↔ FHIR Bridge</h3>
+<p><strong>How to use it:</strong></p>
+<ol>
+<li>Select a patient</li>
+<li>The same clinical event is shown in both formats simultaneously — HL7 v2 on the left, FHIR R4 on the right</li>
+<li>A banner at the top explains the clinical context of the event being shown</li>
+<li>Both sides are independently expandable</li>
+</ol>
+<p><strong>Why This Matters:</strong><br>
+In real-world Vermont healthcare infrastructure, data flows from HL7-generating hospital ADT systems through the Vermont Health Information Exchange (VITL) to downstream FHIR-consuming applications (patient portals, payer APIs, ACO analytics platforms). A Health IT professional must understand both formats. This side-by-side view makes the mapping explicit:</p>
+<ul>
+<li>HL7 PID-3 (Patient Identifier) = FHIR Patient.identifier</li>
+<li>HL7 DG1-3 (Diagnosis Code) = FHIR Condition.code</li>
+<li>HL7 OBX-3/5 (Lab Code + Value) = FHIR Observation.code + valueQuantity</li>
+<li>HL7 PV1-2 (Patient Class) = FHIR Encounter.class</li>
+</ul>
+<h3 id="tab-4-uscdi-data-elements-browser">Tab 4: USCDI Data Elements Browser</h3>
+<p><strong>What USCDI Is (for non-technical users):</strong><br>
+USCDI stands for United States Core Data for Interoperability. It is a list, published by the federal government (ONC), of health data elements that every EHR system must be able to share. Think of it as the minimum vocabulary that all healthcare software must speak. If a data element is in USCDI, any certified EHR must be able to send and receive it. If it's not in USCDI, there's no federal mandate to share it.</p>
+<p><strong>Three versions are included:</strong> v1 (2020, foundational), v2 (2022, added functional status, diagnostic imaging), v3 (2023, added SDOH goals, encounter disposition, SDOH assessment)</p>
+<p><strong>How to use the browser:</strong></p>
+<ol>
+<li>Search by any text: data class name, element name, FHIR resource type, LOINC/SNOMED code, or display name</li>
+<li>Filter by USCDI version (v1, v2, v3, or all)</li>
+<li>Click any data class to expand it — shows all elements in that class with four columns:
+<ul>
+<li><strong>Data element</strong> — what the data is</li>
+<li><strong>FHIR resource</strong> — which FHIR resource carries this element</li>
+<li><strong>Terminology system</strong> — which coding standard (LOINC, SNOMED, ICD-10, RxNorm, CVX, etc.)</li>
+<li><strong>Example code + display</strong> — a concrete example from the synthetic dataset</li>
+</ul>
+</li>
+</ol>
+<p><strong>37 USCDI elements are documented</strong>, spanning these data classes: Allergies, Assessment/Plan, Care Team, Clinical Notes (5 note types), Diagnostic Imaging, Encounter Information, Functional Status, Goals, Health Concerns, Immunizations, Laboratory, Medications, Patient Demographics (6 elements), Problems, Procedures, Provenance, Smoking Status, Social Determinants of Health, Unique Device Identifiers, and Vital Signs (5 measurements).</p>
+<hr>
+<h2 id="5-vbc-quality-measures-dashboard">5. VBC Quality Measures Dashboard</h2>
+<p><strong>File:</strong> <code>components/research/VBCQualityDashboard.tsx</code><br>
+<strong>Route:</strong> <code>/research-lab/vbc-clinical-quality?tab=quality</code><br>
+<strong>Access from:</strong> Clinical pillar sidebar → &quot;VBC Quality Measures&quot;</p>
+<h3 id="what-it-is-2">What It Is</h3>
+<p>A three-section quality measurement dashboard that applies real quality measurement logic to the synthetic patient panel. Unlike generic HEDIS calculators that show theoretical rates, this tool shows exactly which patients are in or out of each measure's numerator and why, then extends to 30-day readmission analysis and avoidable ED classification.</p>
+<h3 id="background-what-quality-measurement-means-in-vbc-for-new-users">Background: What Quality Measurement Means in VBC (for new users)</h3>
+<p>In a value-based care contract, healthcare organizations are paid not just for services delivered but for how well they manage their patient population's health. Quality measures are the scorecards. The most widely used quality measurement framework in the United States is <strong>HEDIS</strong> — Healthcare Effectiveness Data and Information Set — published by the National Committee for Quality Assurance (NCQA).</p>
+<p>Every HEDIS measure has:</p>
+<ul>
+<li>A <strong>denominator</strong> — the population of patients who should receive this care (e.g., &quot;all adults aged 18–75 with Type 2 diabetes&quot;)</li>
+<li>A <strong>numerator</strong> — the subset who actually received it (e.g., &quot;those who had a HbA1c &lt; 8% in the measurement year&quot;)</li>
+<li>A <strong>rate</strong> — numerator ÷ denominator, expressed as a percentage (e.g., &quot;64% of diabetic patients had controlled A1C&quot;)</li>
+</ul>
+<p>In Vermont AHEAD, HEDIS rates feed directly into the quality performance score that determines how much shared savings an ACO receives.</p>
+<h3 id="sub-tab-1-hedis-panel-view">Sub-Tab 1: HEDIS Panel View</h3>
+<p><strong>14 HEDIS measures are tracked</strong> across the 8-patient panel:</p>
+<table>
+<thead>
+<tr>
+<th>Measure Code</th>
+<th>Full Name</th>
+<th>Clinical Area</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CDC-HbA1c</td>
+<td>Diabetes Care — A1C Control (&lt;8%)</td>
+<td>Diabetes</td>
+</tr>
+<tr>
+<td>CDC-Test</td>
+<td>Diabetes Care — A1C Testing</td>
+<td>Diabetes</td>
+</tr>
+<tr>
+<td>CDC-Eye</td>
+<td>Diabetes Care — Eye Exam</td>
+<td>Diabetes</td>
+</tr>
+<tr>
+<td>CDC-KE</td>
+<td>Diabetes Care — Kidney Health Evaluation</td>
+<td>Diabetes</td>
+</tr>
+<tr>
+<td>CBP</td>
+<td>Controlling High Blood Pressure</td>
+<td>Cardiovascular</td>
+</tr>
+<tr>
+<td>FUH-7</td>
+<td>Follow-Up After Hospitalization (Mental Illness) — 7 day</td>
+<td>Behavioral Health</td>
+</tr>
+<tr>
+<td>FUH-30</td>
+<td>Follow-Up After Hospitalization (Mental Illness) — 30 day</td>
+<td>Behavioral Health</td>
+</tr>
+<tr>
+<td>AMM</td>
+<td>Antidepressant Medication Management</td>
+<td>Behavioral Health</td>
+</tr>
+<tr>
+<td>SPD</td>
+<td>Statin Therapy — Patients with Diabetes</td>
+<td>Cardiovascular/Diabetes</td>
+</tr>
+<tr>
+<td>SPC</td>
+<td>Statin Use — Cardiovascular Disease</td>
+<td>Cardiovascular</td>
+</tr>
+<tr>
+<td>MAH</td>
+<td>Medication Adherence — Diabetes (PDC ≥80%)</td>
+<td>Medication</td>
+</tr>
+<tr>
+<td>PCE</td>
+<td>COPD Exacerbation — Systemic Corticosteroid</td>
+<td>Pulmonary</td>
+</tr>
+<tr>
+<td>PCE-BD</td>
+<td>COPD Exacerbation — Bronchodilator</td>
+<td>Pulmonary</td>
+</tr>
+<tr>
+<td>FLU</td>
+<td>Annual Influenza Vaccination</td>
+<td>Preventive</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How to Use the Measure Summary Grid:</strong></p>
+<ul>
+<li>14 colored tiles appear at the top, each showing the measure code, full name, panel rate percentage, and a colored bar (green ≥70%, amber 50–70%, red &lt;50%)</li>
+<li>Click any tile to open a <strong>detailed measure panel</strong> below the grid</li>
+<li>The detail panel shows: full name, domain, numerator definition, denominator definition, data source (what codes to look for), Vermont AHEAD context, and the LOINC or ICD-10 codes used for numerator capture</li>
+<li>Below the measure detail is a <strong>patient-level table</strong> showing which patients are in the denominator, whether they meet the numerator, the specific gap description, and the recommended closing action</li>
+</ul>
+<p><strong>The full-panel grid at the bottom:</strong><br>
+A cross-tab matrix showing every patient × every measure with green checkmarks (in numerator) or red X marks (gap) or &quot;N/A&quot; (not in denominator). This lets you see at a glance which patients have the most gaps and which measures have the worst panel rates.</p>
+<p><strong>Key HEDIS concepts explained in the tool:</strong></p>
+<ul>
+<li>
+<p><strong>PDC (Proportion of Days Covered):</strong> For medication adherence measures, this is the percentage of days in a measurement period during which a patient had medication available. Calculated from pharmacy claims. PDC ≥80% = in the numerator. PDC &lt;80% = gap. Example: if a patient has a 90-day supply every 100 days, their PDC is 90%.</p>
+</li>
+<li>
+<p><strong>Data sources for HEDIS:</strong> The tool shows for each measure whether data comes from claims (CPT codes, DRG codes), lab data (LOINC codes via EHR or HIE), pharmacy claims (RxNorm codes), or hybrid sources. This matters because data that exists clinically but isn't coded correctly is invisible to HEDIS calculation.</p>
+</li>
+<li>
+<p><strong>Vermont AHEAD context:</strong> Each measure has a Vermont-specific note explaining how it relates to the AHEAD global budget model, which measures are weighted most heavily, and where Vermont has historically underperformed.</p>
+</li>
+</ul>
+<h3 id="sub-tab-2-30-day-readmission-analyzer">Sub-Tab 2: 30-Day Readmission Analyzer</h3>
+<p><strong>Background for new users:</strong><br>
+A &quot;30-day readmission&quot; happens when a patient is discharged from a hospital and then admitted again within 30 days. CMS (the federal Medicare agency) penalizes hospitals with high readmission rates under the Hospital Readmissions Reduction Program (HRRP). In a VBC contract, the ACO is at financial risk for excess readmissions because they represent care failures that drive up total costs.</p>
+<p><strong>What the CMS RSRR methodology means:</strong><br>
+RSRR stands for Readmission Standardized Rate Ratio. It compares how many readmissions a hospital actually had (observed) to how many CMS expected, given the patient population's risk level (expected). A ratio above 1.0 means more readmissions than expected — penalty territory. The risk adjustment uses HCC diagnoses present at the index admission.</p>
+<p><strong>What the tool shows:</strong></p>
+<p>Panel summary statistics:</p>
+<ul>
+<li>Total index admissions in the panel</li>
+<li>Number of 30-day readmissions</li>
+<li>Panel readmission rate (%)</li>
+<li>Number of potentially preventable readmissions</li>
+</ul>
+<p>For each readmission, an expandable record shows:</p>
+<ul>
+<li>The <strong>index admission</strong> (the original hospitalization): admit date, discharge date, principal diagnosis, DRG code and description, cost</li>
+<li>The <strong>readmission event</strong>: admit date, days since discharge, principal diagnosis, cost</li>
+<li><strong>Root cause analysis</strong>: what failure of care management, medication adherence, or follow-up led to the readmission</li>
+<li><strong>Risk adjustment context</strong>: the patient's RAF score, what CMS expects for a patient at that risk level, and how the actual cost compares</li>
+</ul>
+<p><strong>The two readmissions in the panel:</strong></p>
+<ol>
+<li>
+<p><em>Elaine Morrison:</em> CHF discharge May 8 → DKA admission June 2 = 25 days. Root cause: insulin non-adherence, no post-discharge follow-up appointment, food insecurity preventing medication access.</p>
+</li>
+<li>
+<p><em>William Desrochers:</em> CHF discharge September 22 → CHF readmission November 18. Root cause: 21-day SNF stay without home health transition, no transition care management (TCM) visit within 7 days of SNF discharge.</p>
+</li>
+</ol>
+<p><strong>The full encounter table:</strong><br>
+At the bottom, every inpatient, ED, and SNF encounter across all 8 patients is listed chronologically with type, facility, dates, principal diagnosis, cost, and flags (Readmit / Avoidable).</p>
+<h3 id="sub-tab-3-avoidable-ed-visit-tracker">Sub-Tab 3: Avoidable ED Visit Tracker</h3>
+<p><strong>Background for new users:</strong><br>
+Not every ED visit is medically necessary. The Agency for Healthcare Research and Quality (AHRQ) published the <strong>Prevention Quality Indicators (PQIs)</strong> — a list of conditions where good outpatient primary care management can prevent hospitalization or ED visits. These are called &quot;ambulatory care-sensitive conditions&quot; (ACSCs). An ED visit for a PQI condition is considered &quot;potentially avoidable&quot; — meaning better outpatient care could have prevented it.</p>
+<p><strong>ACSC conditions covered in the platform:</strong></p>
+<table>
+<thead>
+<tr>
+<th>ICD-10</th>
+<th>Condition</th>
+<th>AHRQ PQI</th>
+<th>Why It's Avoidable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>J44.1, J44.0</td>
+<td>COPD Exacerbation</td>
+<td>PQI-05</td>
+<td>Written action plans, rescue medications, and pulmonary rehab prevent most acute exacerbations</td>
+</tr>
+<tr>
+<td>I50.32, I50.22, I50.9</td>
+<td>Heart Failure</td>
+<td>PQI-08</td>
+<td>Daily weight monitoring (RPM), medication titration, and fluid management prevent decompensation</td>
+</tr>
+<tr>
+<td>E11.65</td>
+<td>Uncontrolled T2DM</td>
+<td>PQI-01/03</td>
+<td>Pharmacist MTM, CGM, and dietary support maintain glycemic control</td>
+</tr>
+<tr>
+<td>I10</td>
+<td>Hypertension</td>
+<td>PQI-07</td>
+<td>Outpatient medication management and RPM control blood pressure without hospitalization</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What the tool shows:</strong></p>
+<p>Four summary statistics: total ED visits, avoidable visits, avoidable rate (%), avoidable cost ($)</p>
+<p>For each avoidable visit, an expandable record shows:</p>
+<ul>
+<li>Patient name, age, payer</li>
+<li>Visit date and cost</li>
+<li>ACSC classification (which PQI applies)</li>
+<li>AHRQ description of why the condition is ambulatory-care-sensitive</li>
+<li>Root cause specific to this visit (what failure of care management led to the ED visit)</li>
+</ul>
+<p><strong>Panel findings:</strong> 11 of the panel's ED visits are classified as avoidable, representing $22,800 in potentially avoidable spending. The majority involve COPD (James Bouchard, 4 visits, $10,800) and CHF/T2DM (Elaine Morrison, 3 visits, $6,700; Marcus Webb, 2 visits, $4,800).</p>
+<hr>
+<h2 id="6-high-vs-low-value-care-analysis">6. High vs. Low Value Care Analysis</h2>
+<p><strong>File:</strong> <code>components/research/HighLowValueCare.tsx</code><br>
+<strong>Route:</strong> <code>/research-lab/vbc-clinical-quality?tab=value</code><br>
+<strong>Access from:</strong> Clinical pillar sidebar → &quot;High vs. Low Value Care&quot;</p>
+<h3 id="what-it-is-3">What It Is</h3>
+<p>A three-section tool that quantifies what value-based care organizations actually do every day: identify where money is well spent (high-value care that prevents illness) vs. poorly spent (low-value care that adds cost without clinical benefit), and demonstrate the financial impact of closing care management gaps.</p>
+<h3 id="sub-tab-1-a1c--bp-panel-management">Sub-Tab 1: A1C &amp; BP Panel Management</h3>
+<p><strong>Background for new users:</strong><br>
+&quot;Panel management&quot; is how primary care practices — and by extension, ACOs — manage the health of their entire attributed patient population, not just the patients who come in for appointments. The goal is to proactively identify patients whose chronic conditions are not well controlled and intervene before they need the ED or hospital.</p>
+<p><strong>Two metric views are available (toggle button at top):</strong></p>
+<p><strong>A1C View (Diabetes Panel):</strong><br>
+Shows all patients with Type 2 diabetes in the panel. For each patient:</p>
+<ul>
+<li>Latest HbA1c value with color coding (green &lt;8%, amber 8–9%, red ≥9%)</li>
+<li>Control status (Controlled / Uncontrolled)</li>
+<li>Trend direction (Improving / Worsening / Stable) based on sequential values</li>
+<li>A1C history: up to 4 time-point values shown as color-coded mini-tiles, oldest to newest — so you can see trajectory at a glance</li>
+<li>VBC opportunity dollar estimate: for uncontrolled patients, the estimated annual shared savings value of achieving control</li>
+</ul>
+<p>The shared savings math is explained in a dark banner:</p>
+<ol>
+<li><strong>HEDIS quality score:</strong> Each 1% improvement in CDC-HbA1c rate boosts the ACO's AHEAD quality score, which is weighted 1.5× in the composite</li>
+<li><strong>Utilization avoidance:</strong> Uncontrolled T2DM (A1C &gt;9%) generates ~3× more ED visits and ~2× more hospitalizations vs. controlled — moving to controlled reduces TCOC by $1,200–$3,400/patient/year</li>
+<li><strong>RAF trajectory:</strong> Persistently uncontrolled T2DM progresses to complications, moving from HCC 19 (coefficient 0.105) to HCC 18 (coefficient 0.302) — higher score, but actual costs increase faster than the benchmark</li>
+</ol>
+<p><strong>BP View (Hypertension Panel):</strong><br>
+Same format for hypertensive patients — latest BP reading, control status (&lt;140/90 threshold for HEDIS CBP), trend, and closing action. Highlights Maria Gonzalez's RPM success: 162/98 → 124/76 after remote monitoring enrollment, with the full RPM ROI calculation displayed.</p>
+<p><strong>Intervention recommendations panel:</strong><br>
+Below the table, for each uncontrolled patient, a panel lists: current A1C or BP value, RAF score, risk tier, open HEDIS gaps, and SDOH barriers. This is the workflow a care manager would use to prioritize outreach.</p>
+<h3 id="sub-tab-2-choosing-wisely-scan">Sub-Tab 2: Choosing Wisely Scan</h3>
+<p><strong>Background for new users:</strong><br>
+<strong>Choosing Wisely</strong> is a program run by the ABIM Foundation (American Board of Internal Medicine Foundation) in which medical specialty societies publish lists of tests and treatments that are commonly ordered but — according to evidence — provide little or no benefit to patients in specific situations, or where the risks outweigh the benefits. These are called &quot;low-value care&quot; services. They are not fraudulent billing — they are well-intentioned clinical orders that evidence says should be reduced.</p>
+<p><strong>Why this matters in VBC:</strong><br>
+In a value-based care contract, the ACO is accountable for total cost of care. Low-value services add cost without improving outcomes. Identifying Choosing Wisely patterns in claims data is one of the highest-ROI activities an ACO analytics team can do.</p>
+<p><strong>5 Choosing Wisely recommendations are implemented:</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Recommendation</th>
+<th>Sponsoring Society</th>
+<th>Evidence Grade</th>
+<th>Est. Waste/Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CW-001</td>
+<td>No routine chest X-rays in stable COPD</td>
+<td>American College of Physicians</td>
+<td>A</td>
+<td>$140</td>
+</tr>
+<tr>
+<td>CW-002</td>
+<td>No routine urinalysis in asymptomatic adults</td>
+<td>American Academy of Family Physicians</td>
+<td>B</td>
+<td>$35</td>
+</tr>
+<tr>
+<td>CW-003</td>
+<td>No repeat HbA1c more than every 3 months in stable, at-goal T2DM</td>
+<td>American Diabetes Association</td>
+<td>B</td>
+<td>$45</td>
+</tr>
+<tr>
+<td>CW-004</td>
+<td>No routine CT for non-specific chest pain in low-risk patients</td>
+<td>American College of Emergency Physicians</td>
+<td>A</td>
+<td>$1,200</td>
+</tr>
+<tr>
+<td>CW-005</td>
+<td>No antibiotics for upper respiratory infections without confirmed bacterial etiology</td>
+<td>American Academy of Family Physicians</td>
+<td>A</td>
+<td>$65</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How the scan works:</strong><br>
+For each recommendation, the tool checks whether any patient in the panel has:</p>
+<ul>
+<li>The trigger diagnosis (ICD-10 code) AND</li>
+<li>The flagged CPT code in the same or a related encounter</li>
+</ul>
+<p>Where a match is found, the flag card shows: the recommendation text, grade, sponsoring society, matched CPT codes, matched diagnoses, estimated waste per event, and the specific patient(s) affected with their encounter dates and costs.</p>
+<p><strong>Panel findings:</strong></p>
+<ul>
+<li>James Bouchard (COPD): 6 chest X-rays in 12 months → $840 potentially low-value imaging</li>
+<li>Dorothy Lafleur (T2DM/CKD): 4 repeated urinalysis orders → $140 potentially low-value testing</li>
+<li>Total panel potential waste: ~$980</li>
+</ul>
+<h3 id="sub-tab-3-total-cost-of-care-decomposition">Sub-Tab 3: Total Cost of Care Decomposition</h3>
+<p><strong>Background for new users:</strong><br>
+&quot;Total Cost of Care&quot; (TCOC) is the sum of all healthcare spending for an attributed patient over a year — inpatient, outpatient, ED, pharmacy, skilled nursing, labs, everything. In Vermont AHEAD, the ACO receives a global budget based on expected TCOC for its attributed population. If actual TCOC is below budget, the ACO keeps a share of the savings. Understanding where TCOC comes from is the first step to managing it.</p>
+<p><strong>How to use the tool:</strong></p>
+<ol>
+<li>Select any of the 8 patients using the name buttons at the top (each shows first name + annual cost in thousands)</li>
+<li>The patient's cost is decomposed into a horizontal waterfall bar chart showing each service category as a proportional bar</li>
+<li>Color coding indicates modifiability: red (inpatient), orange (SNF/post-acute), amber (ED) are highly modifiable; green (office) and blue (telehealth) are low/fixed</li>
+</ol>
+<p><strong>Service categories:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Color</th>
+<th>Modifiability</th>
+<th>Primary VBC Levers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inpatient</td>
+<td>Red</td>
+<td>Partially modifiable</td>
+<td>Care management, readmission prevention, bundled payments</td>
+</tr>
+<tr>
+<td>SNF/Post-Acute</td>
+<td>Orange</td>
+<td>Highly modifiable</td>
+<td>Preferred SNF networks, standardized discharge criteria, TCM</td>
+</tr>
+<tr>
+<td>Emergency Department</td>
+<td>Amber</td>
+<td>Highly modifiable</td>
+<td>RPM, care management triggers, PCMH access</td>
+</tr>
+<tr>
+<td>Outpatient/Office</td>
+<td>Green</td>
+<td>Fixed/low</td>
+<td>Invest here to reduce the above categories</td>
+</tr>
+<tr>
+<td>Telehealth</td>
+<td>Blue</td>
+<td>Fixed/low</td>
+<td>Low-cost access, increases adherence</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Modifiable vs. fixed split:</strong><br>
+Below the waterfall, the tool calculates the total modifiable spend (inpatient + SNF + ED) vs. fixed spend and displays both with explanatory notes.</p>
+<p><strong>Vermont AHEAD benchmarking:</strong><br>
+A three-cell panel at the bottom shows:</p>
+<ol>
+<li>Panel average PMPY across all 8 patients</li>
+<li>How this patient compares to the panel average (above/below %)</li>
+<li>Expected TCOC for this patient based on RAF-adjusted CMS benchmark (RAF score × $18,400 base rate)</li>
+</ol>
+<p><strong>William Desrochers (highest cost) breakdown:</strong></p>
+<ul>
+<li>Inpatient: $22,400 (33%)</li>
+<li>SNF/Post-Acute: $26,000 (38%)</li>
+<li>ED visits: $7,900 (12%)</li>
+<li>Office/other: ~$12,100 (17%)</li>
+<li>76% of his TCOC is in highly modifiable categories</li>
+</ul>
+<hr>
+<h2 id="7-risk-stratification-methodology">7. Risk Stratification Methodology</h2>
+<p><strong>File:</strong> <code>components/research/RiskStratificationMethodology.tsx</code><br>
+<strong>Route:</strong> <code>/research-lab/vbc-clinical-quality?tab=risk</code><br>
+<strong>Access from:</strong> Clinical pillar sidebar → &quot;Risk Stratification Methodology&quot;</p>
+<h3 id="what-risk-stratification-means-for-new-users">What Risk Stratification Means (for new users)</h3>
+<p>&quot;Risk stratification&quot; means sorting a patient population into groups based on how sick they are and how much healthcare they are likely to use. The purpose is not to discriminate — it is to make sure that sicker patients who need more intensive support actually receive it, while resources are not wasted on patients who are doing well.</p>
+<p>In value-based care, risk stratification is critical for two reasons:</p>
+<ol>
+<li><strong>Care management targeting:</strong> You can't give every patient the same level of care management. Risk scores identify who needs a dedicated case manager, who needs a phone check-in, and who just needs their annual preventive visit.</li>
+<li><strong>Payment adjustment:</strong> Risk scores are used to adjust how much an ACO gets paid. If your population is sicker than average, you get paid more (higher expected TCOC). If your population is healthier, you get paid less. This prevents gaming by ensuring providers aren't rewarded just for enrolling healthy patients.</li>
+</ol>
+<h3 id="sub-tab-1-hcc-walkthrough">Sub-Tab 1: HCC Walkthrough</h3>
+<p><strong>What HCC Is:</strong><br>
+HCC stands for Hierarchical Condition Category. It is the risk adjustment model used by CMS for all Medicare payment. Every ICD-10 diagnosis maps to either an HCC category (with a published dollar weight called a &quot;coefficient&quot;) or no HCC. A patient's RAF (Risk Adjustment Factor) score is calculated by adding up the demographic baseline factor plus the coefficients of all applicable HCCs.</p>
+<p><strong>RAF = 1.0</strong> means this patient is expected to cost exactly the average Medicare beneficiary.<br>
+<strong>RAF = 1.82</strong> (Elaine Morrison) means 82% more than average.<br>
+<strong>RAF = 2.14</strong> (William Desrochers) means 114% more than average.</p>
+<p><strong>5 key hierarchy rules are explained and illustrated:</strong></p>
+<ol>
+<li>
+<p><strong>HCC 18 supersedes HCC 19:</strong> When a patient has both &quot;Diabetes with Complications&quot; (HCC 18) and &quot;Diabetes without Complications&quot; (HCC 19) coded, only HCC 18 counts. The hierarchy prevents double-counting the same condition at two severity levels.</p>
+</li>
+<li>
+<p><strong>Disease interaction coefficients:</strong> CMS v28 adds an extra coefficient when certain high-cost combinations co-occur. CHF + COPD together generates an interaction coefficient of 0.139 on top of the individual weights — because the combination is known to cost even more than the two conditions separately.</p>
+</li>
+<li>
+<p><strong>Malnutrition is the highest-weighted single HCC:</strong> HCC 21 (Protein-Calorie Malnutrition) has a coefficient of 0.455 — higher than CHF (0.331), COPD (0.346), or T2DM with complications (0.302). It is chronically undercoded because clinicians focus on the primary diagnosis.</p>
+</li>
+<li>
+<p><strong>Demographic baseline is always added:</strong> Even a patient with no chronic conditions has a RAF &gt; 0 based on age and sex. Female 65–69 = 0.378; Male 75–79 = 0.562. Disease coefficients add on top of this.</p>
+</li>
+<li>
+<p><strong>Enrollment type multipliers:</strong> CMS applies different models for community-dwelling, institutional (nursing home), and new-enrollee populations. Vermont AHEAD uses the community model.</p>
+</li>
+</ol>
+<p><strong>Patient-level RAF walkthrough:</strong><br>
+Select any of the 8 patients. The tool shows:</p>
+<ul>
+<li>Step 1: Demographic factor (age + sex baseline)</li>
+<li>Steps 2–N: Each HCC with its code, label, mapped ICD-10 codes, and coefficient (expandable for plain-English explanation)</li>
+<li>Sum: Calculated total RAF with breakdown</li>
+<li>Interpretation: What the RAF score means in dollar terms (expected PMPY = RAF × $18,400 base rate) and how it compares to actual PMPY</li>
+</ul>
+<h3 id="sub-tab-2-population-tiers">Sub-Tab 2: Population Tiers</h3>
+<p>A visual risk stratification pyramid showing all 8 patients distributed across 4 tiers:</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>RAF Range</th>
+<th>Population %</th>
+<th>Cost Share</th>
+<th>Intervention</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Very High</td>
+<td>≥1.5</td>
+<td>5–10%</td>
+<td>40–50%</td>
+<td>Intensive case management, care coordinator, monthly outreach, 30-day TCM post-discharge</td>
+</tr>
+<tr>
+<td>High</td>
+<td>1.0–1.49</td>
+<td>10–15%</td>
+<td>25–35%</td>
+<td>Care management, quarterly outreach, HEDIS gap closure, RPM enrollment</td>
+</tr>
+<tr>
+<td>Rising</td>
+<td>0.5–0.99</td>
+<td>20–30%</td>
+<td>15–20%</td>
+<td>Annual wellness, SDOH screening, preventive care gap closure, medication adherence support</td>
+</tr>
+<tr>
+<td>Low</td>
+<td>&lt;0.5</td>
+<td>50–60%</td>
+<td>5–10%</td>
+<td>Standard preventive care, telehealth convenience access</td>
+</tr>
+</tbody>
+</table>
+<p>The pyramid visualization shows tier width proportional to population share. Each tier card lists the patients in that tier with their RAF scores and annual costs.</p>
+<h3 id="sub-tab-3-algorithm-comparison">Sub-Tab 3: Algorithm Comparison</h3>
+<p><strong>5 risk adjustment algorithms are compared side by side:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>Owner</th>
+<th>Public?</th>
+<th>Used For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CMS HCC v28</td>
+<td>CMS</td>
+<td>Yes — fully public</td>
+<td>Medicare ACOs, MSSP, ACO REACH, Vermont AHEAD Medicare</td>
+</tr>
+<tr>
+<td>Johns Hopkins ACG</td>
+<td>Johns Hopkins Bloomberg</td>
+<td>No — licensed</td>
+<td>Some Medicaid programs, employer plans; requires JHU license</td>
+</tr>
+<tr>
+<td>CDPS</td>
+<td>UC San Diego</td>
+<td>Partial</td>
+<td>Medicaid risk adjustment; used in Vermont for Medicaid benchmarking</td>
+</tr>
+<tr>
+<td>Charlson Comorbidity Index</td>
+<td>Weill Cornell (public domain)</td>
+<td>Yes</td>
+<td>Clinical research, hospitalization risk prediction, surgical risk</td>
+</tr>
+<tr>
+<td>Elixhauser Comorbidity Index</td>
+<td>AHRQ (public domain)</td>
+<td>Yes</td>
+<td>Inpatient outcomes research, readmission prediction</td>
+</tr>
+</tbody>
+</table>
+<p>For each algorithm, the comparison card shows: owner, public/proprietary status, primary use, input data required, output unit/format, strengths, limitations, and Vermont AHEAD-specific context.</p>
+<p><strong>Important note on Johns Hopkins ACG:</strong><br>
+The platform explains clearly and accurately that the Johns Hopkins ACG system is proprietary and licensed — the algorithm cannot be authentically implemented without a license from Johns Hopkins University. The platform explains the conceptual methodology (ADGs → Major ADGs → ACG cells → RUB scores) based on published academic literature, while being transparent that the actual weights require a license. This is the most honest and educationally appropriate approach.</p>
+<h3 id="sub-tab-4-vermont-vcci-scenario">Sub-Tab 4: Vermont VCCI Scenario</h3>
+<p>This is the most comprehensive sub-tab. It is documented fully in Section 8.</p>
+<hr>
+<h2 id="8-vermont-vcci-scenario">8. Vermont VCCI Scenario</h2>
+<p><strong>File:</strong> <code>components/research/VCCIScenario.tsx</code><br>
+<strong>Route:</strong> <code>/research-lab/vbc-clinical-quality?tab=risk</code> then select &quot;Vermont VCCI Scenario&quot; tab<br>
+<strong>Data file:</strong> <code>lib/vcciScenarioData.ts</code></p>
+<h3 id="what-vcci-is-for-new-users">What VCCI Is (For New Users)</h3>
+<p><strong>VCCI</strong> stands for <strong>Vermont Chronic Care Initiative</strong>. It is a program run by the <strong>Department of Vermont Health Access (DVHA)</strong> — Vermont's Medicaid agency — under the authority of Vermont's <strong>Global Commitment to Health 1115 Medicaid Waiver</strong>.</p>
+<p>Think of VCCI as Vermont Medicaid's intensive care management program for its sickest and most expensive members. Vermont has about 230,000 Medicaid members. The sickest 5% of those members account for roughly 39% of all Medicaid spending. VCCI identifies those members, assigns them a dedicated case manager, builds a shared care plan with their clinical team, and helps address both medical needs and social barriers (housing, food, transportation, mental health, substance use).</p>
+<p><strong>VCCI is voluntary.</strong> Members who qualify must consent to enrollment. The case management is free to them. The program's value is in reducing preventable hospitalizations, ED visits, and care fragmentation for people who otherwise navigate a complex healthcare system alone.</p>
+<p><strong>How it connects to Vermont AHEAD:</strong><br>
+VCCI does not operate in isolation. It is one layer in Vermont's stacked care management infrastructure:</p>
+<ul>
+<li><strong>Blueprint for Health Community Health Teams (CHTs):</strong> Handle medium-risk Medicaid members; community-based, less intensive</li>
+<li><strong>VCCI:</strong> Handle high- and very-high-risk Medicaid members; dedicated case manager, intensive, telephonic or in-person</li>
+<li><strong>Vermont AHEAD ACO care management:</strong> Handle high-risk attributed Medicare/commercial members</li>
+<li>These three programs share tools, care plan formats, and referral processes — enabling warm handoffs as patients move between coverage types</li>
+</ul>
+<h3 id="how-vcci-identifies-members-the-three-step-process">How VCCI Identifies Members (The Three-Step Process)</h3>
+<p><strong>Step 1 — Identification:</strong><br>
+DVHA runs monthly predictive analytics on all Medicaid claims. The algorithm flags members in the top 5–15% by predicted cost, based on: prior utilization (ED visits, hospitalizations, readmissions), chronic condition burden (using CDPS categories), polypharmacy, and high predictability of future complications. Referrals also arrive from PCPs, hospitals, emergency departments, Community Health Teams, social workers, and self-referral.</p>
+<p><strong>Step 2 — Scoring and Tier Assignment:</strong><br>
+A multi-domain composite score (0–100) is calculated. Then a telephonic screening call adds SDOH data (housing, food security, substance use, mental health, IPV) — this SDOH dimension was added in October 2018 after research showed social factors drive utilization as much as clinical factors. The final score + CDPS score + cost percentile determine the risk tier.</p>
+<p><strong>Step 3 — Enrollment and Care Management:</strong></p>
+<ul>
+<li>Very High / High → VCCI intensive case management</li>
+<li>Medium → Blueprint CHT referral (not VCCI direct)</li>
+<li>Low → Standard Medicaid preventive outreach</li>
+</ul>
+<h3 id="the-vcci-composite-score--detailed-breakdown">The VCCI Composite Score — Detailed Breakdown</h3>
+<p>The composite score (0–100) has four weighted domains:</p>
+<table>
+<thead>
+<tr>
+<th>Domain</th>
+<th>Weight</th>
+<th>Max Points</th>
+<th>What It Measures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Utilization</td>
+<td>35%</td>
+<td>35</td>
+<td>ED visits (3+ = 12 pts), inpatient admissions (2+ = 10 pts), 30-day readmission (8 pts), SNF use (5 pts)</td>
+</tr>
+<tr>
+<td>Chronic Burden (CDPS)</td>
+<td>30%</td>
+<td>30</td>
+<td>Very High CDPS category (12 pts), 2+ High categories (10 pts), polypharmacy ≥7 meds (8 pts), 3+ CDPS categories (7 pts)</td>
+</tr>
+<tr>
+<td>SDOH Vulnerability</td>
+<td>20%</td>
+<td>20</td>
+<td>Housing instability (6 pts), food insecurity (4 pts), active SUD (4 pts), MH crisis (4 pts), IPV screen (2 pts), rural access barrier (6 pts)</td>
+</tr>
+<tr>
+<td>Care Gaps</td>
+<td>15%</td>
+<td>15</td>
+<td>No PCP visit 6 months (5 pts), PDC &lt;60% ≥2 meds (5 pts), HEDIS gap (3–5 pts), transport barrier (2–5 pts)</td>
+</tr>
+</tbody>
+</table>
+<p>In addition to the scored domains, two <strong>eligibility gates</strong> must be passed (they don't add points but are required):</p>
+<ul>
+<li><strong>Primary gate:</strong> Top 5% cost (95th percentile or above)</li>
+<li><strong>Secondary gate:</strong> CDPS score ≥2.0 (for members who are high-risk but not yet in the top cost percentile)</li>
+</ul>
+<p><strong>Risk tier thresholds:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>CDPS</th>
+<th>Cost %tile</th>
+<th>Tier</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>≥80</td>
+<td>≥3.5</td>
+<td>≥95th</td>
+<td>Very High</td>
+<td>VCCI intensive — dedicated case manager, shared care plan, monthly touchpoints, eco-mapping</td>
+</tr>
+<tr>
+<td>60–79</td>
+<td>≥2.0</td>
+<td>≥80th</td>
+<td>High</td>
+<td>VCCI intensive — bi-monthly touchpoints, community resource navigation</td>
+</tr>
+<tr>
+<td>35–59</td>
+<td>≥1.0</td>
+<td>≥60th</td>
+<td>Medium</td>
+<td>Blueprint CHT referral — re-evaluate for VCCI in 90 days</td>
+</tr>
+<tr>
+<td>&lt;35</td>
+<td>&lt;1.0</td>
+<td>&lt;60th</td>
+<td>Low</td>
+<td>Standard Medicaid preventive outreach</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-cdps-is-detailed-explanation">What CDPS Is (Detailed Explanation)</h3>
+<p><strong>CDPS (Chronic Illness and Disability Payment System)</strong> was developed at the University of California San Diego by Richard Kronick and colleagues, originally published in 1996 and regularly updated. It is Medicaid's counterpart to Medicare's HCC model.</p>
+<p><strong>The core difference from HCC:</strong></p>
+<ul>
+<li>HCC maps ICD-10 diagnoses to 115 condition categories, each with one coefficient</li>
+<li>CDPS maps ICD-10 diagnoses to ~20 body-system categories, each with severity sub-levels (Very High, High, Medium, Low)</li>
+<li>CDPS was designed specifically for the Medicaid population — it weights mental health and substance use disorders more heavily than HCC, because those conditions are far more prevalent and cost-driving in Medicaid than in Medicare</li>
+</ul>
+<p><strong>CDPS categories relevant to the Vermont population:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Category Code</th>
+<th>Label</th>
+<th>Weight</th>
+<th>Typical Diagnoses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CARD_VH</td>
+<td>Cardiovascular — Very High</td>
+<td>4.62</td>
+<td>I50.x (CHF), I21-22 (AMI)</td>
+</tr>
+<tr>
+<td>CARD_H</td>
+<td>Cardiovascular — High</td>
+<td>2.31</td>
+<td>I25.x (CAD), I48.x (AFib)</td>
+</tr>
+<tr>
+<td>PULM_H</td>
+<td>Pulmonary — High</td>
+<td>1.94</td>
+<td>J44.x (COPD), J45.x (Asthma)</td>
+</tr>
+<tr>
+<td>DIAB_H</td>
+<td>Diabetes — High</td>
+<td>1.72</td>
+<td>E11.6x, E11.4x (T2DM with complications)</td>
+</tr>
+<tr>
+<td>SUD_H</td>
+<td>Substance Use — High</td>
+<td>1.88</td>
+<td>F10.2x, F11.2x (Alcohol/Opioid Use Disorder)</td>
+</tr>
+<tr>
+<td>MH_H</td>
+<td>Mental Health — High</td>
+<td>2.07</td>
+<td>F31.x (Bipolar), F33.x (MDD severe), F20.x (Schizophrenia)</td>
+</tr>
+<tr>
+<td>RENAL_H</td>
+<td>Renal — High</td>
+<td>2.18</td>
+<td>N18.4-6 (CKD Stage 4-5, ESRD)</td>
+</tr>
+<tr>
+<td>CANCER</td>
+<td>Cancer</td>
+<td>2.96</td>
+<td>C18.x, C34.x, C50.x, C61.x</td>
+</tr>
+<tr>
+<td>HIV</td>
+<td>HIV/AIDS</td>
+<td>3.84</td>
+<td>B20.x, B24.x</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How CDPS score is calculated:</strong><br>
+<code>CDPS Score = Demographic Baseline Factor + Sum of applicable CDPS category weights</code></p>
+<p>A score of 1.0 = average Medicaid member cost. A score of 4.84 (Raymond Forcier, Very High tier) means expected to cost 484% of the average Medicaid member.</p>
+<p><strong>CDPS vs. HCC comparison (important for dual-eligible patients):</strong><br>
+Dual-eligible patients (enrolled in both Medicare and Medicaid) have TWO risk scores calculated under two different models:</p>
+<ul>
+<li><strong>HCC RAF</strong> calculated from Medicare claims → used for Medicare payment</li>
+<li><strong>CDPS score</strong> calculated from Medicaid claims → used for Medicaid payment</li>
+</ul>
+<p>Both scores can be seen side by side for Linda Beaupre in the VCCI scenario (HCC RAF 1.38 + CDPS 2.94).</p>
+<h3 id="the-three-vcci-patient-scenarios">The Three VCCI Patient Scenarios</h3>
+<hr>
+<p><strong>Patient 1 — Raymond Forcier, 54M, Rutland County, SSI Medicaid</strong><br>
+<em>Composite Score: 90/100 | CDPS: 4.84 | Risk Tier: Very High | VCCI Enrolled</em><br>
+<em>Annual Cost: $58,400 (97th percentile)</em></p>
+<p>Raymond is the archetypal VCCI Very High patient. He has:</p>
+<ul>
+<li>Chronic systolic CHF (uncontrolled — NT-proBNP 3,840 pg/mL)</li>
+<li>Uncontrolled T2DM (A1C 9.8%)</li>
+<li>Opioid use disorder (OUD) on buprenorphine/naloxone (MOUD)</li>
+<li>Moderate recurrent major depressive disorder (PHQ-9 = 14)</li>
+<li>Essential hypertension (BP 158/96)</li>
+<li>CKD Stage 3</li>
+</ul>
+<p><strong>Utilization in 12 months:</strong> 3 inpatient admissions (2 for CHF, 1 for DKA), 6 ED visits (CHF, hyperglycemia, psychiatric crisis), 1 office visit. The DKA admission was a 25-day readmission from the prior CHF discharge.</p>
+<p><strong>Medications:</strong> 7 active medications including buprenorphine/naloxone, furosemide, carvedilol, lisinopril, metformin, insulin glargine, and sertraline. Adherence PDC is below 0.60 for insulin (0.48), furosemide (0.62), and carvedilol (0.58) — three medications below the adherence threshold. Two drug interaction flags are noted (metformin + CKD eGFR &lt;45; furosemide + hypokalemia risk in CKD).</p>
+<p><strong>SDOH flags:</strong> Housing instability (8 months unstably housed), food insecurity (food shelf 3–4 days/week, not enrolled in SNAP), transportation barrier (30% appointment miss rate), social isolation (estranged from family due to prior OUD), active SUD (AUDIT-C = 8), financial strain (SSI $914/month, insulin rationing).</p>
+<p><strong>VCCI goals:</strong> Housing stabilization, CHF self-management competency, A1C reduction to &lt;8%, MOUD adherence maintenance, ED visit reduction.</p>
+<p><strong>Outcome (6 months post-enrollment):</strong> A1C 9.8% → 8.4%. Zero ED visits in 3 months post-enrollment vs. 3 in prior 3 months. Housing stabilized via emergency bridge voucher. MOUD adherence &gt;95%.</p>
+<p><strong>FHIR CarePlan status:</strong> Active. Activities include pharmacist MTM (monthly, 3 months), daily home weight RPM with 3-lb alert threshold, housing navigation, MOUD adherence support.</p>
+<p><strong>HL7 Referral message type:</strong> REF^I12 from DVHA Analytics to VCCI case management unit.</p>
+<hr>
+<p><strong>Patient 2 — Linda Beaupre, 61F, Caledonia County, ABD Medicaid + Medicare Dual</strong><br>
+<em>Composite Score: 74/100 | CDPS: 2.94 | HCC RAF: 1.38 | Risk Tier: High | VCCI Enrollment Pending</em><br>
+<em>Annual Cost: $31,200 (88th percentile)</em></p>
+<p>Linda illustrates the rural access dimension of VCCI. She is a dual Medicare/Medicaid enrollee in Vermont's Northeast Kingdom — one of the most rural and medically underserved regions in the state. She has:</p>
+<ul>
+<li>COPD with acute exacerbation (3 hospitalizations in 12 months, all at Northeastern Vermont Regional Hospital — a Critical Access Hospital with 25 beds)</li>
+<li>T2DM without complications (A1C controlled at 7.4%)</li>
+<li>Moderate recurrent major depression (PHQ-9 = 12)</li>
+<li>Essential hypertension (controlled, BP 132/80)</li>
+<li>50 pack-year smoking history</li>
+</ul>
+<p><strong>Key VCCI scoring distinction:</strong> Linda does NOT have a CDPS Very High condition — her highest category is PULM_H (1.94). She qualifies for VCCI via the secondary pathway (CDPS 2.94 ≥ 2.0 threshold) rather than the primary top-5% cost gate (she's at 88th percentile, below the 95th percentile primary gate).</p>
+<p><strong>Rural access barriers captured:</strong> Poor broadband (&lt;10 Mbps — insufficient for stable video telehealth), no vehicle (public transit 2 days/week in St. Johnsbury only), lives alone since husband passed in 2022. VCCI approach: telephonic-only care management.</p>
+<p><strong>HEDIS gap:</strong> No written COPD action plan — fails HEDIS PCE-BD bronchodilator measure.</p>
+<p><strong>FHIR CarePlan status:</strong> Draft (pending enrollment after telephonic screening).</p>
+<p><strong>Dual-eligible scoring:</strong><br>
+This patient demonstrates why dual eligibles require both CDPS and HCC calculation. Her HCC RAF of 1.38 (Medicare model) reflects COPD + MDD + T2DM in a 61-year-old. Her CDPS of 2.94 (Medicaid model) reflects the same conditions weighted differently for a Medicaid-enrolled population. Vermont AHEAD must calculate both to understand her total cost across both payer streams.</p>
+<hr>
+<p><strong>Patient 3 — Darnell Washington, 38M, Chittenden County, MAGI Medicaid</strong><br>
+<em>Composite Score: 48/100 | CDPS: 1.44 | Risk Tier: Medium | CHT Referral Only (Not VCCI)</em><br>
+<em>Annual Cost: $12,800 (72nd percentile)</em></p>
+<p>Darnell is deliberately included to illustrate the <strong>VCCI tier boundary</strong>. He is a 38-year-old in early recovery from alcohol use disorder, with generalized anxiety and hypertension. He has had 2 ED visits in 12 months for AUD relapse. His cost percentile (72nd) is below the VCCI primary gate (95th), and his CDPS (1.44) is below the secondary gate (2.0). He scores 48/100 — below the High threshold of 60.</p>
+<p><strong>Result: CHT referral, NOT VCCI enrollment.</strong><br>
+Darnell is referred to the Blueprint for Health Community Health Team in Burlington for SUD peer recovery support and SNAP enrollment assistance. The platform displays this with an explicit note: &quot;NOT eligible for VCCI intensive case management (score 48, CDPS 1.44, 72nd percentile). Referring to Blueprint CHT Burlington.&quot;</p>
+<p><strong>Why Darnell Is Included:</strong><br>
+Understanding what does NOT qualify for VCCI is as important as understanding what does. The Medium tier and CHT referral pathway are explicitly documented here so users understand the program's targeting logic.</p>
+<h3 id="the-7-vcci-scenario-sub-views">The 7 VCCI Scenario Sub-Views</h3>
+<p>For each of the three VCCI patients, 7 views are available:</p>
+<p><strong>1. VCCI Program Overview</strong><br>
+A static educational panel (same across all patients) covering:</p>
+<ul>
+<li>The 3-step identification → scoring → enrollment process</li>
+<li>Risk tier threshold table</li>
+<li>VCCI's relationship to Blueprint CHT and Vermont AHEAD ACO</li>
+<li>How CDPS (Medicaid) and HCC (Medicare) are Vermont's two parallel risk models</li>
+</ul>
+<p><strong>2. CDPS Score</strong><br>
+Step-by-step CDPS calculation:</p>
+<ul>
+<li>Step 1: Demographic baseline factor (age + sex + enrollment category)</li>
+<li>Steps 2–N: Each CDPS category present, expandable to show the ICD-10 code, category label, CDPS weight, control status, most recent lab value, and (for dual eligibles) the equivalent HCC code and weight for comparison</li>
+<li>Sum: Calculated total with interpretation</li>
+<li>A callout box explains what the CDPS score means for VCCI eligibility and what the expected annual cost is at that score level</li>
+</ul>
+<p><strong>3. Composite Score</strong><br>
+Domain-by-domain breakdown of the 0–100 composite score:</p>
+<ul>
+<li>Visual score bar with threshold markers at 35 (Medium), 60 (High), 80 (Very High)</li>
+<li>Each domain accordion expands to show every scoring criterion, whether it triggered, how many points it earned, and the specific evidence (encounter date, test result, screen finding) that triggered it</li>
+<li>Eligibility gate section (non-scored but required): top-5% cost gate and CDPS threshold gate</li>
+<li>Tier decision panel with recommended VCCI action</li>
+</ul>
+<p><strong>4. SDOH Screening</strong><br>
+All SDOH items shown as flagged (red) or clear (green):</p>
+<ul>
+<li>Each flagged item includes the HL7 OBX segment that encodes it (e.g., <code>OBX|1|CWE|71802-3^Housing status^LN||LA30190-5^Homeless^LN</code>)</li>
+<li>Each flagged item also includes the FHIR Observation resource reference (e.g., <code>Observation: LOINC 71802-3 = Housing status → LA30190-5 (Homeless)</code>)</li>
+<li>A scoring grid at the bottom (dark background) shows how each SDOH flag maps to VCCI Domain 3 points, with the LOINC code for each screening instrument</li>
+</ul>
+<p><strong>5. HL7 / FHIR Referral</strong><br>
+Two sub-views toggle:</p>
+<p><em>HL7 v2 REF^I12 view:</em> The complete VCCI referral message. REF^I12 is the HL7 message type specifically for patient referrals to care management programs — distinct from ADT (admissions) and ORU (labs). Segments include MSH, RF1 (referral information), PID, PV1, DG1 (multiple diagnosis segments), IN1/IN2 (insurance including dual-eligible Medicare), and multiple OBX segments carrying VCCI-specific scores (composite score, risk tier, CDPS, HCC RAF, AUDIT-C, PHQ-9, housing screen).</p>
+<p><em>FHIR R4 CarePlan view:</em> The full FHIR CarePlan resource as formatted JSON, showing status (active for Raymond, draft for Linda), goals, planned activities, care team references, and enrollment notes. Under ONC 21st Century Cures Act, care plans must be shareable via patient access APIs — VCCI care plans are required to be accessible through Vermont's Medicaid FHIR API.</p>
+<p><strong>6. Encounter History</strong><br>
+Timeline of all encounters sorted by date (newest first):</p>
+<ul>
+<li>Type badge (inpatient in red, ED in amber, office in green)</li>
+<li>VCCI flag for avoidable encounters with root cause explanation</li>
+<li>DRG code where applicable</li>
+<li>Length of stay</li>
+<li>Cost</li>
+</ul>
+<p><strong>7. Care Team</strong><br>
+Provider cards for all team members with NPI, role, organization, and FHIR reference:</p>
+<ul>
+<li>PCP: Dr. Amara Osei — Rutland Regional Medical Associates</li>
+<li>VCCI Case Manager: Sandra Bilodeau, RN, CCM — DVHA/VCCI</li>
+<li>Cardiologist: Dr. Kenji Tanaka — UVM Medical Center Heart Center</li>
+<li>Social Worker/LICSW: Maria Santos — Rutland Mental Health Services</li>
+<li>Nephrologist: Dr. Priya Nair — Dartmouth-Hitchcock Kidney Center</li>
+<li>Clinical Pharmacist (MTM): Tom Guerette, PharmD — Community Pharmacy Rutland</li>
+</ul>
+<p>Hospital cards with type, county, bed count, Critical Access Hospital flag, and FHIR Organization reference:</p>
+<ul>
+<li>Rutland Regional Medical Center (188 beds, Rutland County, Acute Care)</li>
+<li>UVM Medical Center (562 beds, Chittenden County, Academic Medical Center)</li>
+<li>Northeastern Vermont Regional Hospital (25 beds, Caledonia County, Critical Access)</li>
+<li>Southwestern Vermont Medical Center (99 beds, Bennington County, Acute Care)</li>
+</ul>
+<p>VCCI enrollment status panel: eligible, enrolled, enrollment date, risk tier, composite score, CDPS, cost percentile — all at a glance.</p>
+<hr>
+<h2 id="9-vcci-dataset">9. VCCI Dataset</h2>
+<p><strong>File:</strong> <code>lib/vcciScenarioData.ts</code></p>
+<p>This file exports the following data structures used by <code>VCCIScenario.tsx</code>:</p>
+<h3 id="interfaces-typescript-types">Interfaces (TypeScript Types)</h3>
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>VCCIProvider</code></td>
+<td>Provider: NPI, name, role, organization, phone, FHIR reference</td>
+</tr>
+<tr>
+<td><code>VCCIHospital</code></td>
+<td>Hospital: ID, name, county, type, Critical Access flag, beds, FHIR ref</td>
+</tr>
+<tr>
+<td><code>VCCIScoreDomain</code></td>
+<td>One scoring domain: label, max points, weight, criteria array, earned points</td>
+</tr>
+<tr>
+<td><code>VCCISDOHItem</code></td>
+<td>One SDOH item: domain, flag, detail, HL7 OBX segment, FHIR resource reference</td>
+</tr>
+<tr>
+<td><code>VCCIChronicCondition</code></td>
+<td>One condition: ICD-10, CDPS category, CDPS weight, HCC code, HCC weight, control status, LOINC, latest value</td>
+</tr>
+<tr>
+<td><code>VCCIEncounter</code></td>
+<td>One encounter: date, type, facility, diagnosis, DRG, cost, LOS, avoidable flag</td>
+</tr>
+<tr>
+<td><code>VCCIMedication</code></td>
+<td>One medication: RxNorm, name, class, prescriber, PDC, drug interaction flag</td>
+</tr>
+<tr>
+<td><code>VCCIPatient</code></td>
+<td>Complete patient: all of the above plus demographics, risk scores, HL7 message, FHIR care plan, scenario narrative, VCCI goals, outcomes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cdps-category-reference-table">CDPS Category Reference Table</h3>
+<p>The file contains a <code>CDPS_CATEGORIES</code> constant with 15 CDPS categories, each with label, approximate relative weight (based on published UCSD/Kronick methodology), and the ICD-10 code prefixes that map to each category.</p>
+<h3 id="risk-tier-threshold-constants">Risk Tier Threshold Constants</h3>
+<p><code>VCCI_TIER_THRESHOLDS</code> exports the four tier definitions with their minimum composite score, minimum CDPS score, minimum cost percentile, and the full VCCI action description for each tier.</p>
+<h3 id="exported-constants">Exported Constants</h3>
+<ul>
+<li><code>VCCI_PATIENTS</code> — array of 3 VCCIPatient objects</li>
+<li><code>VCCI_PROVIDERS</code> — array of 6 VCCIProvider objects</li>
+<li><code>VCCI_HOSPITALS</code> — array of 4 VCCIHospital objects</li>
+<li><code>VCCI_TIER_THRESHOLDS</code> — tier threshold configuration</li>
+<li><code>CDPS_CATEGORIES</code> — CDPS category reference data</li>
+</ul>
+<hr>
+<h2 id="10-navigation-and-integration-changes">10. Navigation and Integration Changes</h2>
+<h3 id="files-modified-not-created">Files Modified (Not Created)</h3>
+<p><strong><code>components/research/LabPageShell.tsx</code></strong><br>
+The top navigation bar shown inside every Research Lab page was updated. The new lab <code>/research-lab/vbc-clinical-quality</code> was added to the <code>NAV</code> array, so users can click &quot;VBC &amp; Quality&quot; in the between-lab navigation strip to jump directly to the new lab from any other lab.</p>
+<p><strong><code>app/research-lab/page.tsx</code></strong><br>
+The Research Lab index page was updated in two ways:</p>
+<ol>
+<li>The tool count in the page headline was updated from &quot;20&quot; to &quot;24&quot; (reflecting 4 new tools added)</li>
+<li>Four new tool cards were added:
+<ul>
+<li>Under <strong>Technology pillar:</strong> &quot;Clinical Data Exchange Lab&quot; linking to <code>?tab=hl7</code></li>
+<li>Under <strong>Clinical pillar:</strong> &quot;Risk Stratification Methodology,&quot; &quot;VBC Quality Measures,&quot; and &quot;High vs. Low Value Care&quot; linking to their respective tabs</li>
+</ul>
+</li>
+</ol>
+<p><strong><code>components/HomeSidebar.tsx</code></strong><br>
+The left navigation sidebar was updated with new links:</p>
+<ul>
+<li>Under <strong>Technology pillar → Lab Tools section:</strong> &quot;Clinical Data Exchange Lab&quot; (<code>/research-lab/vbc-clinical-quality?tab=hl7</code>)</li>
+<li>Under <strong>Clinical pillar → Lab Tools section:</strong> &quot;Risk Stratification Methodology&quot; (<code>?tab=risk</code>), &quot;VBC Quality Measures&quot; (<code>?tab=quality</code>), &quot;High vs. Low Value Care&quot; (<code>?tab=value</code>)</li>
+</ul>
+<p>The active-pillar detection function was also updated: when a user navigates to <code>/research-lab/vbc-clinical-quality?tab=hl7</code>, the Technology pillar is highlighted in the sidebar. All other tabs at that route highlight the Clinical pillar.</p>
+<hr>
+<h2 id="11-file-inventory">11. File Inventory</h2>
+<h3 id="new-files-created">New Files Created</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Type</th>
+<th>Lines</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lib/syntheticPatients.ts</code></td>
+<td>Data</td>
+<td>945</td>
+<td>8 Vermont patient profiles, USCDI elements, Choosing Wisely flags, panel summary</td>
+</tr>
+<tr>
+<td><code>lib/vcciScenarioData.ts</code></td>
+<td>Data</td>
+<td>650</td>
+<td>VCCI patients, providers, hospitals, CDPS categories, tier thresholds</td>
+</tr>
+<tr>
+<td><code>components/research/HL7FHIRExplorer.tsx</code></td>
+<td>Component</td>
+<td>506</td>
+<td>HL7 segment viewer, FHIR resource explorer, HL7↔FHIR bridge, USCDI browser</td>
+</tr>
+<tr>
+<td><code>components/research/VBCQualityDashboard.tsx</code></td>
+<td>Component</td>
+<td>582</td>
+<td>HEDIS panel, 30-day readmission, avoidable ED</td>
+</tr>
+<tr>
+<td><code>components/research/HighLowValueCare.tsx</code></td>
+<td>Component</td>
+<td>482</td>
+<td>A1C/BP panel, Choosing Wisely, TCOC decomposition</td>
+</tr>
+<tr>
+<td><code>components/research/RiskStratificationMethodology.tsx</code></td>
+<td>Component</td>
+<td>452</td>
+<td>HCC walkthrough, population tiers, algorithm comparison, VCCI tab</td>
+</tr>
+<tr>
+<td><code>components/research/VCCIScenario.tsx</code></td>
+<td>Component</td>
+<td>785</td>
+<td>Full VCCI scenario with 7 sub-views</td>
+</tr>
+<tr>
+<td><code>app/research-lab/vbc-clinical-quality/VBCClinicalQualityClient.tsx</code></td>
+<td>Client shell</td>
+<td>90</td>
+<td>Tab routing + LabPageShell wrapper</td>
+</tr>
+<tr>
+<td><code>app/research-lab/vbc-clinical-quality/page.tsx</code></td>
+<td>Page</td>
+<td>15</td>
+<td>Next.js route entry point with metadata</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total new code:</strong> 4,402 lines across 7 data/component files + 2 page files</p>
+<h3 id="modified-files">Modified Files</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What Changed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>components/research/LabPageShell.tsx</code></td>
+<td>Added VBC &amp; Quality to NAV array</td>
+</tr>
+<tr>
+<td><code>app/research-lab/page.tsx</code></td>
+<td>Updated tool count (20→24), added 4 tool cards</td>
+</tr>
+<tr>
+<td><code>components/HomeSidebar.tsx</code></td>
+<td>Added 4 new lab links, updated active-pillar detection</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="12-glossary-of-key-terms">12. Glossary of Key Terms</h2>
+<p>This glossary covers every technical term used in the new tools, in plain English.</p>
+<p><strong>ACG (Adjusted Clinical Groups):</strong> A proprietary risk stratification system from Johns Hopkins University that predicts future healthcare costs by grouping diagnoses into condition categories. Requires a license from JHU to implement.</p>
+<p><strong>ACO (Accountable Care Organization):</strong> A group of hospitals, doctors, and other providers who work together to give coordinated, high-quality care to patients. In VBC, ACOs are paid based on total cost of care and quality outcomes for their attributed population.</p>
+<p><strong>ACSC (Ambulatory Care-Sensitive Condition):</strong> A health condition where good outpatient care can prevent hospitalization or emergency visits. COPD, CHF, diabetes, and hypertension are examples. High ACSC admission rates indicate gaps in primary care.</p>
+<p><strong>ADT Message (HL7):</strong> Admission, Discharge, Transfer. The most common type of HL7 v2 message. ADT^A01 = patient admitted; ADT^A03 = patient discharged; ADT^A04 = patient registered as outpatient.</p>
+<p><strong>AHEAD Model:</strong> Vermont's All-Payer Accountable Care Organization (ACO) Model. A CMS-approved statewide value-based care model where Medicare, Medicaid, and commercial payers all participate together in a global budget. Vermont is the only state with this type of all-payer model.</p>
+<p><strong>AUDIT-C:</strong> A 3-question alcohol screening tool. Scores 0–12; ≥4 in men or ≥3 in women indicates hazardous drinking. LOINC code: 75626-2.</p>
+<p><strong>Bundle (FHIR):</strong> A FHIR resource that groups multiple other resources together. A Bundle of type &quot;collection&quot; or &quot;transaction&quot; is commonly used to represent a patient's complete clinical record at a point in time.</p>
+<p><strong>CDPS (Chronic Illness and Disability Payment System):</strong> Medicaid's risk adjustment model, developed at UC San Diego. Maps ICD-10 diagnoses to condition categories with severity levels, producing a score that predicts Medicaid cost relative to the average member (score 1.0 = average).</p>
+<p><strong>CMS:</strong> Centers for Medicare &amp; Medicaid Services. The federal agency that runs Medicare and co-administers Medicaid with states.</p>
+<p><strong>DG1 (HL7 segment):</strong> Diagnosis Information. Each DG1 segment carries one ICD-10 diagnosis code. In HL7 v2 ADT messages, DG1 segments are the source of diagnosis data that feeds HCC risk adjustment.</p>
+<p><strong>DRG (Diagnosis-Related Group):</strong> A classification system used to group hospital inpatient cases with similar clinical profiles and expected resource use. Medicare pays a fixed amount per DRG regardless of how long the patient stays. DRG 291 = Heart failure and shock with MCC.</p>
+<p><strong>DVHA (Department of Vermont Health Access):</strong> Vermont's Medicaid agency. Administers Vermont Medicaid, VCCI, and participates in the AHEAD global budget model.</p>
+<p><strong>eGFR (Estimated Glomerular Filtration Rate):</strong> A blood test that measures how well the kidneys are filtering. LOINC 62238-1 (CKD-EPI method). Used to stage CKD and guide medication dosing.</p>
+<p><strong>FHIR (Fast Healthcare Interoperability Resources):</strong> The modern healthcare data exchange standard, published by HL7 International. Uses REST APIs and JSON. Required by ONC's 21st Century Cures Act for patient access portals and payer-to-payer data exchange.</p>
+<p><strong>HEDIS (Healthcare Effectiveness Data and Information Set):</strong> The primary quality measurement framework for health plans, ACOs, and VBC programs in the US. Published by NCQA. Contains ~90 measures across effectiveness of care, access, utilization, and health plan management domains.</p>
+<p><strong>HCC (Hierarchical Condition Category):</strong> CMS's risk adjustment model for Medicare. Maps ICD-10 diagnoses to categories with dollar-weight coefficients. RAF score = demographic baseline + sum of applicable HCC coefficients.</p>
+<p><strong>HL7 v2:</strong> Health Level Seven version 2. The dominant real-time clinical messaging standard used in hospitals. Pipe-delimited text format. Used for ADT events, lab results (ORU), orders, referrals, and more.</p>
+<p><strong>ICD-10-CM:</strong> International Classification of Diseases, 10th Revision, Clinical Modification. The standard diagnosis coding system used in the US for all clinical billing and quality reporting. Example: E11.65 = Type 2 diabetes mellitus with hyperglycemia.</p>
+<p><strong>IPV (Intimate Partner Violence):</strong> A component of SDOH screening in VCCI. The HITS screening tool (Hurt, Insult, Threaten, Scream) is used. LOINC: 96842-0.</p>
+<p><strong>LOINC (Logical Observation Identifiers Names and Codes):</strong> A universal coding system for laboratory tests, clinical measurements, and survey instruments. Maintained by Regenstrief Institute. Example: LOINC 4548-4 = Hemoglobin A1c. Used in OBX segments and FHIR Observation resources.</p>
+<p><strong>MAGI Medicaid:</strong> Modified Adjusted Gross Income — the income-based Medicaid eligibility category created by the ACA. Most working-age adults qualify for Medicaid under this category.</p>
+<p><strong>MOUD (Medications for Opioid Use Disorder):</strong> FDA-approved medications used to treat opioid addiction, including buprenorphine/naloxone (Suboxone), methadone, and naltrexone.</p>
+<p><strong>MSH (HL7 segment):</strong> Message Header. The first segment of every HL7 v2 message. Contains sender, receiver, message type, timestamp, and version.</p>
+<p><strong>NT-proBNP:</strong> A protein released by the heart when it is under stress. Elevated levels indicate heart failure severity. LOINC: 33762-6. Normal &lt;300 pg/mL; acute HF typically &gt;900 pg/mL.</p>
+<p><strong>OBX (HL7 segment):</strong> Observation Result. Each OBX segment carries one lab result or clinical observation with its LOINC code, value, units, and interpretation flag.</p>
+<p><strong>ONC (Office of the National Coordinator for Health Information Technology):</strong> The federal agency responsible for health IT policy, including EHR certification, interoperability standards (FHIR, USCDI), and information blocking rules.</p>
+<p><strong>ORU^R01 (HL7):</strong> Observation Result Unsolicited — Report. The HL7 v2 message type used to transmit lab results from the laboratory system to the ordering EHR and health information exchange.</p>
+<p><strong>PDC (Proportion of Days Covered):</strong> A pharmacy adherence metric. PDC = days of medication supply / total days in measurement period. PDC ≥80% is the standard threshold for HEDIS medication adherence measures.</p>
+<p><strong>PHQ-9:</strong> Patient Health Questionnaire — 9 item depression severity scale. Scores 0–27. 5–9 = mild; 10–14 = moderate; 15–19 = moderately severe; 20–27 = severe. LOINC: 55757-9.</p>
+<p><strong>PID (HL7 segment):</strong> Patient Identification. Contains patient demographics: name, DOB, sex, address, MRN. The primary source of patient identity data in HL7 messages.</p>
+<p><strong>PQI (Prevention Quality Indicator):</strong> AHRQ's set of indicators that use hospital inpatient data to identify quality of care for ambulatory conditions. PQI rates are used in VBC to track avoidable hospitalizations.</p>
+<p><strong>PV1 (HL7 segment):</strong> Patient Visit. Identifies the type of encounter (inpatient, outpatient, emergency), the location, and the attending physician. Financial class in PV1 determines payer-specific workflows.</p>
+<p><strong>RAF (Risk Adjustment Factor):</strong> The CMS HCC score. A value of 1.0 = average expected Medicare cost. Used as a multiplier on the base payment rate to set per-patient payment benchmarks.</p>
+<p><strong>REF^I12 (HL7):</strong> Patient Referral message type. Used to transmit referrals to care management programs, specialists, or other providers. The I12 event code = original referral. Used by DVHA for VCCI referrals.</p>
+<p><strong>RPM (Remote Patient Monitoring):</strong> Technology that collects patient vital signs or other health data outside the clinic — typically at home — and transmits it to clinical teams. CPT 99453 (setup), 99457 (monthly monitoring). Used for CHF weight monitoring, blood pressure management, glucose monitoring.</p>
+<p><strong>RxNorm:</strong> A standardized medication coding system maintained by the National Library of Medicine. Used in FHIR MedicationRequest resources and HL7 RXO/RXE segments. Example: RxNorm 860975 = Metformin 1000 MG Oral Tablet.</p>
+<p><strong>SDOH (Social Determinants of Health):</strong> Non-medical factors that influence health outcomes — housing, food security, transportation, social isolation, education, income, discrimination. Coded in FHIR as Observations (LOINC-coded screening tools) and Conditions (Z-codes in ICD-10).</p>
+<p><strong>SNOMED CT (Systematized Nomenclature of Medicine — Clinical Terms):</strong> A comprehensive clinical terminology used in FHIR Condition, Procedure, and Observation resources. Example: SNOMED 44054006 = Diabetes mellitus type 2.</p>
+<p><strong>SSI Medicaid:</strong> Supplemental Security Income — Medicaid eligibility for individuals who are elderly, blind, or disabled and have very low income. SSI Medicaid members tend to have higher chronic condition burden than MAGI Medicaid members.</p>
+<p><strong>TCOC (Total Cost of Care):</strong> The sum of all healthcare spending for an attributed patient or population over a defined period — inpatient, outpatient, ED, pharmacy, labs, SNF, home health, DME. The global budget metric in Vermont AHEAD.</p>
+<p><strong>UACR (Urine Albumin-to-Creatinine Ratio):</strong> A urine test that detects kidney damage in people with diabetes. Required annually for the HEDIS CDC Kidney Health Evaluation measure. LOINC: 14959-1. Values &gt;30 mg/g indicate early kidney disease.</p>
+<p><strong>USCDI (United States Core Data for Interoperability):</strong> A federal government standard defining the minimum set of health data classes and elements that certified EHR systems must be able to exchange. Currently at version 3. Mandated under the ONC 21st Century Cures Act.</p>
+<p><strong>VCCI (Vermont Chronic Care Initiative):</strong> Vermont Medicaid's intensive case management program for high-risk, high-cost Medicaid members. Administered by DVHA under the Global Commitment to Health 1115 waiver. Uses a composite risk score to identify and tier members into Low/Medium/High/Very High care management intensity.</p>
+<p><strong>VBC (Value-Based Care):</strong> A healthcare payment and delivery model where providers are paid based on the quality of care they deliver and the health outcomes they achieve, rather than the volume of services. Contrasts with fee-for-service, where every service generates a separate payment.</p>
+<p><strong>VITL (Vermont Information Technology Leaders):</strong> Vermont's Health Information Exchange operator. Operates the Vermont HIE (VHIE) that connects hospitals, clinics, labs, and payers for real-time clinical data sharing.</p>
+<hr>
+<p><em>Documentation prepared May 16, 2026. Covers all new tools delivered in the VBC &amp; Clinical Quality Lab build session.</em></p>
+
+</body>
+</html>

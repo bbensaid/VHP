@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
 import { useVoice } from "@/components/VoiceContext";
 import { SparklesIcon, ArrowsPointingOutIcon, PaperAirplaneIcon, StopIcon, TrashIcon, ArrowPathIcon, ExclamationTriangleIcon, BookOpenIcon, HandThumbUpIcon, HandThumbDownIcon } from "@heroicons/react/24/outline";
 import ReactMarkdown from "react-markdown";
@@ -37,6 +38,74 @@ function getPillarFromPath(path: string): string | undefined {
   for (const [prefix, label] of Object.entries(PILLAR_PREFIXES)) {
     if (path.startsWith(prefix)) return label;
   }
+  return undefined;
+}
+
+// Build a human-readable page context string from the current pathname
+function getPageContext(path: string): string | undefined {
+  if (!path || path === "/") return undefined;
+
+  // Hospital detail pages: /dashboard/vermont/hospitals/nvrh
+  const hospitalMatch = path.match(/\/dashboard\/([^/]+)\/hospitals\/([^/]+)/);
+  if (hospitalMatch) {
+    const state = hospitalMatch[1].replace(/-/g, " ");
+    const hospital = hospitalMatch[2].replace(/-/g, " ");
+    return `Hospital detail page for "${hospital}" in ${state}`;
+  }
+
+  // State dashboard: /dashboard/vermont
+  const stateDashMatch = path.match(/\/dashboard\/([^/]+)$/);
+  if (stateDashMatch) {
+    const state = stateDashMatch[1].replace(/-/g, " ");
+    return `State health dashboard for ${state}`;
+  }
+
+  // Vermont Act 167 hospital profiles
+  const act167HospitalMatch = path.match(/\/vermont-act-167\/hospitals\/([^/]+)/);
+  if (act167HospitalMatch) {
+    const hospitalSlug = act167HospitalMatch[1].replace(/-/g, " ");
+    return `Vermont Act 167 hospital profile for ${hospitalSlug}`;
+  }
+
+  // Vermont Act 167 simulator
+  if (path.startsWith("/vermont-act-167/simulator")) return "Vermont Act 167 Healthcare Transformation Simulator";
+  if (path.startsWith("/vermont-act-167")) return "Vermont Act 167 — hospital transformation law and Oliver Wyman Report";
+
+  // Vermont programs
+  if (path.startsWith("/vermont-act-68")) return "Vermont Act 68 — healthcare cost containment";
+  if (path.startsWith("/vermont-rht-program")) return "Vermont Rural Health Transformation Program";
+  if (path.startsWith("/vermont-medicaid")) return "Vermont Medicaid program";
+  if (path.startsWith("/ahead-model")) return "AHEAD Model — federal all-payer health equity initiative";
+  if (path.startsWith("/california-calaim")) return "California CalAIM — Medi-Cal transformation initiative";
+
+  // Research lab
+  const labMatch = path.match(/\/research-lab\/([^/?]+)/);
+  if (labMatch) {
+    const tool = labMatch[1].replace(/-/g, " ");
+    return `Research Lab — ${tool} tool`;
+  }
+
+  // Pillar pages
+  const pillar = getPillarFromPath(path);
+  if (pillar) {
+    const sub = path.split("/").filter(Boolean).slice(1).join(" > ");
+    return sub ? `${pillar} pillar — ${sub.replace(/-/g, " ")}` : `${pillar} pillar overview`;
+  }
+
+  // Academy
+  if (path.startsWith("/academy")) {
+    const sub = path.replace("/academy", "").replace(/\//g, " ").trim().replace(/-/g, " ");
+    return sub ? `Academy — ${sub}` : "Academy learning hub";
+  }
+
+  // HTI Dashboard
+  if (path.startsWith("/hti-dashboard")) return "Health Transformation Index (HTI) Dashboard";
+  if (path.startsWith("/bed-capacity")) return "Vermont Hospital Bed Capacity & Transfer Tool";
+  if (path.startsWith("/impact-simulation")) return "Health System Impact Simulation";
+
+  // Search
+  if (path.startsWith("/search")) return "Platform search";
+
   return undefined;
 }
 
@@ -163,6 +232,8 @@ export default function RightSidebar() {
     try {
       const body: Record<string, unknown> = { message: text, history };
       if (activePillar) body.pillar = activePillar;
+      const pageCtx = getPageContext(pathname);
+      if (pageCtx) body.pageContext = pageCtx;
       try { body.userRole = localStorage.getItem("htr-user-role") ?? "all"; } catch { body.userRole = "all"; }
 
       const res = await fetch("/api/chat", {
@@ -365,14 +436,23 @@ export default function RightSidebar() {
                           <div key={ci} className="flex items-start gap-1.5">
                             <span className="shrink-0 text-[9px] font-black text-indigo-400 mt-0.5">{ci + 1}</span>
                             {c.url ? (
-                              <a
-                                href={c.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-[10px] text-indigo-600 dark:text-indigo-400 hover:underline leading-snug"
-                              >
-                                {c.title}
-                              </a>
+                              c.url.startsWith("/") ? (
+                                <Link
+                                  href={c.url}
+                                  className="text-[10px] text-indigo-600 dark:text-indigo-400 hover:underline leading-snug"
+                                >
+                                  {c.title}
+                                </Link>
+                              ) : (
+                                <a
+                                  href={c.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-[10px] text-indigo-600 dark:text-indigo-400 hover:underline leading-snug"
+                                >
+                                  {c.title}
+                                </a>
+                              )
                             ) : (
                               <span className="text-[10px] text-slate-500 dark:text-slate-400 leading-snug">{c.title}</span>
                             )}

@@ -4,7 +4,7 @@ import UpgradePrompt from "@/components/UpgradePrompt";
 
 export const metadata = {
   title: "HTR Research Lab | Health Transformation Review",
-  description: "20 interactive analytical tools organized by the six-pillar framework: Policy, Economics, Technology, Clinical, Equity, and Operations.",
+  description: "24 interactive analytical tools organized by the six-pillar framework: Policy, Economics, Technology, Clinical, Equity, and Operations.",
 };
 
 const PILLAR_LABS: {
@@ -38,6 +38,7 @@ const PILLAR_LABS: {
     id: "technology", label: "Technology", color: "text-indigo-700", bg: "bg-indigo-50", border: "border-indigo-200", dot: "bg-indigo-500",
     tools: [
       { label: "FHIR Interoperability Lab", desc: "Build and validate FHIR R4 resources, test CDS Hooks, check ONC compliance.", href: "/research-lab/interoperability?tab=fhir" },
+      { label: "Clinical Data Exchange Lab", desc: "Annotated HL7 v2 messages (ADT/ORU), FHIR R4 bundles, HL7↔FHIR bridge, and USCDI v3 data element browser — anchored to 8 Vermont patient scenarios.", href: "/research-lab/vbc-clinical-quality?tab=hl7" },
       { label: "AI Clinical Governance Lab", desc: "Compare predictive models, detect algorithmic bias, build AI governance frameworks.", href: "/research-lab/technology-ai?tab=ai" },
       { label: "Digital Health Lab", desc: "Calculate RPM ROI, model telehealth utilization, optimize EHR interoperability.", href: "/research-lab/technology-ai?tab=digital" },
     ],
@@ -46,6 +47,9 @@ const PILLAR_LABS: {
     id: "clinical", label: "Clinical", color: "text-red-700", bg: "bg-red-50", border: "border-red-200", dot: "bg-red-500",
     tools: [
       { label: "Risk Stratification Engine", desc: "Apply HCC v28 RAF scoring and segment populations by clinical complexity.", href: "/research-lab/interoperability?tab=risk" },
+      { label: "Risk Stratification Methodology", desc: "Step-by-step HCC v28 RAF calculation per patient, population tier pyramid, and comparison of HCC vs. ACG vs. CDPS vs. Charlson algorithms.", href: "/research-lab/vbc-clinical-quality?tab=risk" },
+      { label: "VBC Quality Measures", desc: "HEDIS panel with numerator/denominator logic, 30-day readmission (CMS RSRR), and AHRQ PQI avoidable ED analysis — 8 Vermont patient scenarios.", href: "/research-lab/vbc-clinical-quality?tab=quality" },
+      { label: "High vs. Low Value Care", desc: "A1C/BP panel management with VBC savings calculations, Choosing Wisely scan, and TCOC decomposition by service category.", href: "/research-lab/vbc-clinical-quality?tab=value" },
       { label: "Clinical Quality Optimizer", desc: "Simulate HEDIS measures, predict CMS Star Ratings, optimize MIPS scores.", href: "/research-lab/policy-quality?tab=quality" },
       { label: "Workforce Modeler", desc: "Project physician and nursing supply/demand across 12 specialties over 10 years.", href: "/research-lab/knowledge-workspace?tab=workforce" },
     ],
@@ -80,7 +84,7 @@ export default async function ResearchLabPage() {
       <div className="bg-slate-950 text-white">
         <div className="max-w-5xl mx-auto px-6 py-20">
           <span className="text-[10px] font-black uppercase tracking-widest text-amber-400 block mb-4">HTR Research Lab</span>
-          <h1 className="ty-h1-xl font-black tracking-tight mb-5 leading-tight">20 Analytical Tools — Organized by Domain</h1>
+          <h1 className="ty-h1-xl font-black tracking-tight mb-5 leading-tight">24 Analytical Tools — Organized by Domain</h1>
           <p className="ty-hero text-slate-300 max-w-2xl leading-relaxed">
             Every tool is assigned to one of the six pillars. Access tools directly from their pillar section in the sidebar, or browse the full directory below.
           </p>
