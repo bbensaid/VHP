@@ -400,6 +400,30 @@ export default function VermontMedicaidPage() {
         </div>
       </div>
 
+      {/* ── VERMONT MEDICAID PROGRAMS ECOSYSTEM ──────────────────────────── */}
+      <div className="mb-8">
+        <div className="flex items-center gap-3 mb-5">
+          <div className="h-px flex-1 bg-slate-200" />
+          <span className="text-[11px] font-black uppercase tracking-widest text-rose-600 whitespace-nowrap">Vermont Medicaid Programs</span>
+          <div className="h-px flex-1 bg-slate-200" />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            { href: "/vermont-vcci",                label: "Vermont VCCI",                  desc: "Chronic Care Initiative — intensive case management for Vermont's highest-cost Medicaid members. Top 5% of members = ~39% of Medicaid spend.", color: "border-rose-200 hover:bg-rose-50 hover:border-rose-400", text: "text-rose-700" },
+            { href: "/vermont-blueprint",           label: "Blueprint for Health",           desc: "Primary care backbone for Vermont Medicaid — 128 PCMH practices, Community Health Teams, and the Mental Health Integration initiative.", color: "border-emerald-200 hover:bg-emerald-50 hover:border-emerald-400", text: "text-emerald-700" },
+            { href: "/vermont-sash",                label: "SASH Program",                   desc: "Support and Services at Home — housing-based care coordination for 13,000+ Vermont seniors on Medicare. Reduces Medicaid and Medicare spend.", color: "border-teal-200 hover:bg-teal-50 hover:border-teal-400", text: "text-teal-700" },
+            { href: "/vermont-designated-agencies", label: "Designated Agencies (MH/SUD)",   desc: "Vermont's 11 regional DAs provide all community mental health, SUD treatment, and developmental disability services under Medicaid contract.", color: "border-violet-200 hover:bg-violet-50 hover:border-violet-400", text: "text-violet-700" },
+            { href: "/vermont-sdoh",                label: "SDOH & Social Services",          desc: "Vermont's social determinants infrastructure — 2-1-1, Community Action Agencies, food shelves, housing programs. The backbone of VCCI and Blueprint SDOH navigation.", color: "border-orange-200 hover:bg-orange-50 hover:border-orange-400", text: "text-orange-700" },
+            { href: "/vermont-legislative-resources", label: "Legislative Reports Library",  desc: "DVHA VCCI reports, Blueprint annual reports, AHS Act 68 monthly updates, GMCB hospital budget decisions — all official Vermont Medicaid documents.", color: "border-slate-200 hover:bg-slate-50 hover:border-slate-400", text: "text-slate-700" },
+          ].map(item => (
+            <Link key={item.href} href={item.href} className={`block border rounded-xl p-4 transition-all ${item.color}`}>
+              <p className={`font-black text-sm mb-1 ${item.text}`}>{item.label}</p>
+              <p className="text-xs text-slate-600 leading-relaxed">{item.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </div>
+
       {/* ── CTA STRIP ────────────────────────────────────────────────────── */}
       <div className="bg-slate-950 rounded-2xl p-8 text-white">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

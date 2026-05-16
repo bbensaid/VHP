@@ -777,6 +777,39 @@ export default function VermontAct167Page() {
         </div>
       </section>
 
+      {/* ── LEGISLATIVE REPORTS & GMCB RESOURCES ─────────────────────────────── */}
+      <div className="pt-8 border-t border-slate-200">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="h-px flex-1 bg-slate-200" />
+          <span className="text-[11px] font-black uppercase tracking-widest text-violet-600 whitespace-nowrap">Official Reports & GMCB Resources</span>
+          <div className="h-px flex-1 bg-slate-200" />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-4">
+          {[
+            { href: "https://legislature.vermont.gov/assets/Legislative-Reports/GMCB-2024-Annual-Report-Final-revised-01.16.2025A.pdf", label: "GMCB 2024 Annual Report", desc: "Filed Jan 15, 2025 — hospital budgets, ACO reviews, CON decisions, Act 167 status" },
+            { href: "https://gmcboard.vermont.gov/hospitalsustainability", label: "GMCB Act 167 Sustainability Hub", desc: "Oliver Wyman report, community engagement process, and implementation updates" },
+            { href: "https://gmcboard.vermont.gov/hospital-budget-review", label: "GMCB Hospital Budget Review Portal", desc: "All hospital budget submissions, decisions, and public hearing materials" },
+            { href: "https://gmcboard.vermont.gov/sites/gmcb/files/documents/Press%20Release%20-%20Green%20Mountain%20Care%20Board%20Announces%20FY2025%20Hospital%20Budget%20Decisions%20and%20Enforcement%20of%20FY2023%20Hospital%20Budgets%20-%2009.13.2024.pdf", label: "FY2025 Budget Decisions (Sep 2024)", desc: "Press release announcing FY2025 hospital budget decisions and FY2023 enforcement" },
+            { href: "https://legislature.vermont.gov/Documents/2026/Workgroups/House%20Health%20Care/Orientation/W~Owen%20Foster~Green%20Mountain%20Care%20Board%20Overview~2-6-2025.pdf", label: "GMCB House Committee Testimony (Feb 2025)", desc: "GMCB overview and Act 167 implementation status presented to the House Health Care Committee" },
+            { href: "https://humanservices.vermont.gov/press-release/statement-ahs-secretary-jenney-samuelson-next-steps-oliver-wyman-health-care-reform", label: "AHS Secretary Statement on Oliver Wyman Report", desc: "AHS Secretary Samuelson's response and next steps following the Act 167 hospital sustainability report" },
+          ].map(r => (
+            <a key={r.href} href={r.href} target="_blank" rel="noopener noreferrer"
+              className="flex items-start gap-3 p-4 bg-white border border-slate-200 rounded-xl hover:border-violet-300 hover:shadow-sm transition-all group">
+              <ArrowTopRightOnSquareIcon className="w-4 h-4 text-violet-500 shrink-0 mt-0.5" />
+              <div>
+                <p className="font-bold text-slate-800 group-hover:text-violet-700 text-xs transition-colors leading-snug">{r.label}</p>
+                <p className="text-[11px] text-slate-500 mt-0.5 leading-relaxed">{r.desc}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+        <div className="text-center">
+          <Link href="/vermont-legislative-resources" className="text-sm font-bold text-violet-700 hover:text-violet-900 transition-colors">
+            View Full Vermont Legislative Resources Library →
+          </Link>
+        </div>
+      </div>
+
       {/* ── BOTTOM NAV ───────────────────────────────────────────────────────── */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-slate-200">
         <Link href="/" className="text-sm font-bold text-slate-500 hover:text-slate-900 transition-colors">

@@ -470,6 +470,41 @@ export default function VermontAct68Page() {
         </div>
       </section>
 
+      {/* ── LEGISLATIVE REPORTS & AHS RESOURCES ──────────────────────────────── */}
+      <section>
+        <SectionHeader label="Official Reports" title="Act 68 Legislative Reports & AHS Testimony" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+          {[
+            { href: "https://legislature.vermont.gov/assets/Legislative-Reports/Aug-2025_Act-68-HC-System-Transformation-Report-from-AHS.pdf", label: "AHS Act 68 Transformation Report — August 2025", desc: "Monthly legislative report on Health Care System Transformation progress filed by AHS under Act 68" },
+            { href: "https://ljfo.vermont.gov/assets/Meetings/Health-Reform-Oversight-Committee/2025-12-04/Dec-2025_Act-68-HC-System-Transformation-Report-from-AHS.pdf", label: "AHS Act 68 Transformation Report — December 2025", desc: "Most recent monthly report — hospital planning, primary care access, and DVHA program updates" },
+            { href: "https://legislature.vermont.gov/Documents/2026/Workgroups/House%20Health%20Care/Health%20Care%20Reform/W~Brendan%20Krause~Vermont%27s%20Health%20Care%20Reform%20Efforts%20~1-31-2025.pdf", label: "Vermont Health Care Reform Efforts — House Testimony (Jan 2025)", desc: "AHS testimony to House Health Care Committee covering Act 68, AHEAD, Blueprint, and VCCI status" },
+            { href: "https://healthcarereform.vermont.gov/health-care-transformation", label: "AHS Health Care Transformation Portal", desc: "Official AHS Office of Health Care Reform — all policy initiatives, program summaries, and reports" },
+            { href: "https://humanservices.vermont.gov/our-work/reports", label: "AHS All Legislative Reports Archive", desc: "Complete AHS statutory reports library — all programs including Act 68, Medicaid, Blueprint, VCCI" },
+            { href: "/vermont-legislative-resources", label: "Vermont Legislative Resources Library (HTR)", desc: "Full HTR library of Vermont health reform documents — GMCB, AHS, Blueprint, VCCI, House testimony" },
+          ].map(r => (
+            r.href.startsWith("http") ? (
+              <a key={r.href} href={r.href} target="_blank" rel="noopener noreferrer"
+                className="flex items-start gap-3 p-4 bg-white border border-slate-200 rounded-xl hover:border-rose-300 hover:shadow-sm transition-all group">
+                <ArrowTopRightOnSquareIcon className="w-4 h-4 text-rose-500 shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-bold text-slate-800 group-hover:text-rose-700 text-xs transition-colors leading-snug">{r.label}</p>
+                  <p className="text-[11px] text-slate-500 mt-0.5 leading-relaxed">{r.desc}</p>
+                </div>
+              </a>
+            ) : (
+              <Link key={r.href} href={r.href}
+                className="flex items-start gap-3 p-4 bg-rose-50 border border-rose-200 rounded-xl hover:border-rose-400 hover:shadow-sm transition-all group">
+                <ArrowTopRightOnSquareIcon className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-bold text-rose-800 group-hover:text-rose-900 text-xs transition-colors leading-snug">{r.label}</p>
+                  <p className="text-[11px] text-rose-600 mt-0.5 leading-relaxed">{r.desc}</p>
+                </div>
+              </Link>
+            )
+          ))}
+        </div>
+      </section>
+
       {/* ── RELATED PAGES ─────────────────────────────────────────────────── */}
       <section>
         <SectionHeader label="Related" title="Continue Your Research" />

@@ -137,64 +137,92 @@ type MegaMenuType = "intelligence" | "learn" | "tools" | "states" | "advise" | n
 
 // ─── MEGA-MENU PANELS ────────────────────────────────────────────────────────
 
+// Per-pillar Research Lab tool links shown in the Intelligence mega-menu
+const PILLAR_LAB_LINKS: Record<string, { href: string; label: string }[]> = {
+  policy: [
+    { href: "/research-lab/policy-quality?tab=policy",      label: "Policy Simulator" },
+    { href: "/research-lab/policy-quality?tab=hr1-cliff",   label: "H.R. 1 Cliff Scenario" },
+  ],
+  economics: [
+    { href: "/research-lab/payment-models?tab=apm-design",  label: "APM Design Lab" },
+    { href: "/research-lab/payment-models?tab=cea",         label: "CEA Calculator" },
+    { href: "/research-lab/payment-models?tab=gb-transition", label: "Global Budget Modeler" },
+  ],
+  technology: [
+    { href: "/research-lab/interoperability?tab=fhir",      label: "FHIR Interoperability Lab" },
+    { href: "/research-lab/vbc-clinical-quality?tab=hl7",   label: "Clinical Data Exchange Lab" },
+    { href: "/research-lab/technology-ai?tab=ai",           label: "AI Clinical Governance Lab" },
+  ],
+  clinical: [
+    { href: "/research-lab/vbc-clinical-quality?tab=risk",    label: "Risk Stratification Methodology" },
+    { href: "/research-lab/vbc-clinical-quality?tab=quality", label: "VBC Quality Measures" },
+    { href: "/research-lab/vbc-clinical-quality?tab=value",   label: "High vs. Low Value Care" },
+  ],
+  equity: [
+    { href: "/research-lab/population-equity?tab=population", label: "Population Health Modeler" },
+    { href: "/research-lab/population-equity?tab=equity",     label: "Health Equity Studio" },
+  ],
+  operations: [
+    { href: "/research-lab/knowledge-workspace?tab=readiness", label: "VBC Readiness Assessment" },
+    { href: "/research-lab/knowledge-workspace?tab=scorecard", label: "Transformation Scorecard" },
+  ],
+};
+
 function IntelligencePanel({ onClose }: { onClose: () => void }) {
   return (
     <div className="max-w-screen-xl mx-auto px-6 py-6">
-      <div className="grid grid-cols-6 gap-6">
-        {pillars.map((p) => (
-          <div key={p.id}>
-            {/* Section header — same style as LEARN/ANALYZE/ADVISE */}
-            <div className="flex items-center gap-1.5 mb-3">
-              <span className={`w-2 h-2 rounded-full ${p.dot} shrink-0`} />
-              <p className={`text-xs font-black uppercase tracking-widest ${p.accent}`}>
-                {p.label}
-              </p>
-            </div>
-            <div className="space-y-1">
-              {/* Pillar overview — first item links to pillar root */}
-              <Link
-                href={p.href}
-                onClick={onClose}
-                className={`flex flex-col px-3 py-2.5 rounded-lg ${p.hoverBg} transition-colors group`}
-              >
-                <span className={`text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:${p.accent}`}>
-                  {p.label} Overview
-                </span>
-                <span className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{p.desc}</span>
-              </Link>
-              {/* Sub-items */}
-              {p.items.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={onClose}
-                  className={`flex flex-col px-3 py-2.5 rounded-lg ${p.hoverBg} transition-colors group`}
-                >
-                  <span className={`text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:${p.accent}`}>
-                    {item.label}
-                  </span>
-                  <span className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{item.desc}</span>
+      <div className="grid grid-cols-6 gap-5">
+        {pillars.map((p) => {
+          const labLinks = PILLAR_LAB_LINKS[p.id] ?? [];
+          return (
+            <div key={p.id}>
+              <div className="flex items-center gap-1.5 mb-3">
+                <span className={`w-2 h-2 rounded-full ${p.dot} shrink-0`} />
+                <p className={`text-xs font-black uppercase tracking-widest ${p.accent}`}>{p.label}</p>
+              </div>
+              <div className="space-y-0.5">
+                {/* Pillar overview */}
+                <Link href={p.href} onClick={onClose}
+                  className={`flex flex-col px-3 py-2 rounded-lg ${p.hoverBg} transition-colors group`}>
+                  <span className={`text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:${p.accent}`}>{p.label} Overview</span>
+                  <span className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{p.desc}</span>
                 </Link>
-              ))}
+                {/* Intelligence sub-items */}
+                {p.items.map((item) => (
+                  <Link key={item.href} href={item.href} onClick={onClose}
+                    className={`flex flex-col px-3 py-2 rounded-lg ${p.hoverBg} transition-colors group`}>
+                    <span className={`text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:${p.accent}`}>{item.label}</span>
+                    <span className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{item.desc}</span>
+                  </Link>
+                ))}
+                {/* Research Lab divider + tools */}
+                {labLinks.length > 0 && (
+                  <div className="pt-2 mt-1 border-t border-slate-100 dark:border-slate-700">
+                    <p className={`text-[9px] font-black uppercase tracking-widest ${p.accent} opacity-70 px-3 mb-1`}>Lab Tools</p>
+                    {labLinks.map((lab) => (
+                      <Link key={lab.href} href={lab.href} onClick={onClose}
+                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg ${p.hoverBg} transition-colors group`}>
+                        <span className={`w-1 h-1 rounded-full ${p.dot} shrink-0 opacity-50`} />
+                        <span className={`text-xs font-medium text-slate-600 dark:text-slate-400 group-hover:${p.accent}`}>{lab.label}</span>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
-      <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-700 flex items-center gap-6">
-        <span className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500">
-          Quick Access
-        </span>
+      <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-700 flex items-center gap-6">
+        <span className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500">Quick Access</span>
         {[
           { href: "/trending-topics", label: "Trending Topics" },
           { href: "/advisory/reports", label: "Latest Reports" },
+          { href: "/research-lab", label: "All 24 Lab Tools" },
           { href: "/search", label: "Search Pillars" },
         ].map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            onClick={onClose}
-            className="text-xs font-bold text-indigo-600 hover:text-indigo-800 hover:underline transition-colors"
-          >
+          <Link key={link.href} href={link.href} onClick={onClose}
+            className="text-xs font-bold text-indigo-600 hover:text-indigo-800 hover:underline transition-colors">
             {link.label} →
           </Link>
         ))}
@@ -387,11 +415,19 @@ function ToolsPanel({ onClose }: { onClose: () => void }) {
           </div>
           <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-700">
             <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Research Lab</p>
-            <Link href="/research-lab" onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group">
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">All 20 Lab Tools</span>
-              <span className="text-xs text-slate-400 mt-0.5">Browse the full analytical tool directory</span>
-            </Link>
+            {[
+              { href: "/research-lab", label: "All 24 Lab Tools", desc: "Browse the full analytical tool directory" },
+              { href: "/research-lab/vbc-clinical-quality?tab=hl7", label: "Clinical Data Exchange Lab", desc: "HL7 v2, FHIR R4, USCDI — 8 Vermont patient scenarios" },
+              { href: "/research-lab/vbc-clinical-quality?tab=quality", label: "VBC Quality Measures", desc: "HEDIS, 30-day readmissions, avoidable ED" },
+              { href: "/research-lab/vbc-clinical-quality?tab=value", label: "High vs. Low Value Care", desc: "A1C/BP panel mgmt, Choosing Wisely, TCOC" },
+              { href: "/research-lab/vbc-clinical-quality?tab=risk", label: "Risk Stratification Methodology", desc: "HCC walkthrough, CDPS, VCCI scoring, algorithm comparison" },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} onClick={onClose}
+                className="flex flex-col px-3 py-2 rounded-lg hover:bg-amber-50 transition-colors group mb-0.5">
+                <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-700">{item.label}</span>
+                <span className="text-xs text-slate-400 mt-0.5">{item.desc}</span>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
@@ -400,109 +436,76 @@ function ToolsPanel({ onClose }: { onClose: () => void }) {
 }
 
 function StatesPanel({ onClose }: { onClose: () => void }) {
+  const linkCls = "flex flex-col px-2 py-1.5 rounded-lg hover:bg-rose-50 transition-colors group";
+  const titleCls = "text-xs font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700";
+  const descCls = "text-[10px] text-slate-400 dark:text-slate-500 mt-0.5 leading-snug";
   return (
-    <div className="px-6 py-6">
-      <div className="grid grid-cols-2 gap-8" style={{ minWidth: "480px" }}>
-        {/* State Initiatives */}
+    <div className="px-4 py-5">
+      <div className="grid grid-cols-3 gap-6" style={{ width: "min(860px, 90vw)" }}>
+
+        {/* Vermont Programs */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-            State Initiatives
-          </p>
-          <div className="space-y-1">
-            <Link
-              href="/vermont-medicaid"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
-                Vermont Medicaid
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                Programs, eligibility &amp; enrollment guide
-              </span>
-            </Link>
-            <Link
-              href="/vermont-act-167"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
-                Vermont Act 167
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                Hospital transformation &amp; Oliver Wyman Report
-              </span>
-            </Link>
-            <Link
-              href="/bed-capacity"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
-                Bed Capacity &amp; Transfer
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                Real-time bed availability &amp; interfacility routing
-              </span>
-            </Link>
-            <Link
-              href="/california-calaim"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
-                California CalAIM
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                $6.7B Medi-Cal transformation
-              </span>
-            </Link>
-            <Link
-              href="/states"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
-                All States Explorer
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                50-state health reform map
-              </span>
-            </Link>
+          <p className="text-xs font-black uppercase tracking-widest text-rose-600 mb-3">Vermont Programs</p>
+          <div className="space-y-0.5">
+            {[
+              { href: "/vermont-medicaid",             label: "Vermont Medicaid",              desc: "Programs, eligibility & enrollment guide" },
+              { href: "/vermont-blueprint",            label: "Blueprint for Health",           desc: "128 PCMHs, Community Health Teams, Mental Health Integration — Vermont's primary care backbone" },
+              { href: "/vermont-vcci",                 label: "Vermont VCCI",                    desc: "Chronic Care Initiative — intensive case management for Vermont's top 5% highest-cost Medicaid members" },
+              { href: "/vermont-rht-program",          label: "Vermont RHT Program",            desc: "$195M federal Rural Health Transformation award — financing Vermont's Act 68 agenda" },
+              { href: "/vermont-sash",                 label: "SASH Program",                   desc: "Support and Services at Home — housing-based care coordination for 13,000+ Vermont seniors" },
+              { href: "/vermont-designated-agencies",  label: "Designated Agencies (MH/SUD)",   desc: "Vermont's 11 regional non-profit Designated Agencies providing community mental health & SUD services" },
+              { href: "/vermont-sdoh",                 label: "SDOH & Social Services",          desc: "Vermont's 8 SDOH domains, 2-1-1 Vermont, community action agencies — with clinical program connections" },
+              { href: "/vermont-act-167",              label: "Vermont Act 167 (2022)",          desc: "Hospital transformation & Oliver Wyman analysis" },
+              { href: "/vermont-act-68",               label: "Vermont Act 68 (2025)",           desc: "Next-generation VBC legislation & global budget reform" },
+              { href: "/vermont-act-68/simulator",     label: "Act 68 Simulator",               desc: "Model Act 68 financial scenarios for Vermont hospitals" },
+              { href: "/ahead-model",                  label: "AHEAD Model",                    desc: "All-payer total cost of care model — 6 states" },
+              { href: "/dashboard/vermont/hospitals",  label: "Vermont Hospital Profiles",      desc: "Financial & quality profiles for Vermont hospitals" },
+              { href: "/bed-capacity",                 label: "Bed Capacity & Transfer",        desc: "Real-time bed availability & interfacility routing" },
+              { href: "/vermont-legislative-resources", label: "Legislative Reports Library",   desc: "GMCB reports, AHS Act 68 monthly updates, Blueprint annual reports, House committee testimony" },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} onClick={onClose} className={linkCls}>
+                <span className={titleCls}>{item.label}</span>
+                <span className={descCls}>{item.desc}</span>
+              </Link>
+            ))}
           </div>
         </div>
-        {/* Dashboards & Models */}
+
+        {/* Other State Models */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-            Dashboards &amp; Models
-          </p>
-          <div className="space-y-1">
-            <Link
-              href="/dashboard"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
-                50-State RHTP Dashboard
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                Rural hospital performance index
-              </span>
-            </Link>
-            <Link
-              href="/ahead-model"
-              onClick={onClose}
-              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group"
-            >
-              <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700">
-                AHEAD Model
-              </span>
-              <span className="text-xs text-slate-400 mt-0.5">
-                All-payer total cost of care (6 states)
-              </span>
-            </Link>
+          <p className="text-xs font-black uppercase tracking-widest text-rose-600 mb-3">Other State Models</p>
+          <div className="space-y-0.5">
+            {[
+              { href: "/california-calaim",   label: "California CalAIM",              desc: "$6.7B Medi-Cal transformation — SDOH, justice re-entry, Enhanced Care Mgmt" },
+              { href: "/oregon-cco",          label: "Oregon CCO 3.0",                  desc: "Coordinated Care Organizations — Medicaid global budget model" },
+              { href: "/states",              label: "All States Explorer",             desc: "50-state health reform initiatives map" },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} onClick={onClose} className={linkCls}>
+                <span className={titleCls}>{item.label}</span>
+                <span className={descCls}>{item.desc}</span>
+              </Link>
+            ))}
           </div>
         </div>
+
+        {/* Dashboards & Simulators */}
+        <div>
+          <p className="text-xs font-black uppercase tracking-widest text-rose-600 mb-3">Dashboards & Simulators</p>
+          <div className="space-y-0.5">
+            {[
+              { href: "/dashboard",           label: "50-State RHTP Dashboard",        desc: "Rural hospital performance index — national view" },
+              { href: "/dashboard/simulator", label: "CMS Rural Health Transformation", desc: "Model CMS rural health transformation scenarios" },
+              { href: "/research-lab/vbc-clinical-quality?tab=risk", label: "VCCI Risk Stratification Lab", desc: "CDPS scoring, composite risk tiers & Vermont VCCI patient scenarios" },
+              { href: "/research-lab/vbc-clinical-quality?tab=quality", label: "VBC Quality Measures Lab",  desc: "HEDIS, 30-day readmissions & avoidable ED for Vermont populations" },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} onClick={onClose} className={linkCls}>
+                <span className={titleCls}>{item.label}</span>
+                <span className={descCls}>{item.desc}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+
       </div>
     </div>
   );
@@ -672,7 +675,7 @@ const Header = () => {
     { type: "intelligence", label: "PILLARS", activeCheck: "/policy,/economics,/technology,/clinical,/equity,/operations,/research-lab" },
     { type: "learn", label: "ACADEMY", activeCheck: "/academy" },
     { type: "tools", label: "TOOLS", activeCheck: "/htr-simulator,/hti-dashboard,/trending-topics,/multimedia,/the-wire,/investment-tracker,/medicaid-eligibility-simulator,/transformation-friction-index,/impact-simulation" },
-    { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/california-calaim,/dashboard,/ahead-model,/vermont-medicaid,/bed-capacity" },
+    { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/vermont-act-68,/vermont-medicaid,/vermont-rht-program,/vermont-blueprint,/vermont-vcci,/vermont-sash,/vermont-sdoh,/vermont-designated-agencies,/vermont-legislative-resources,/california-calaim,/oregon-cco,/dashboard,/ahead-model,/bed-capacity" },
     { type: "advise", label: "PRO-BONO ADVISORY & SERVICES", activeCheck: "/advisory,/connect,/community" },
   ];
 
@@ -779,13 +782,17 @@ const Header = () => {
                       aria-hidden="true"
                     />
                   </button>
-                  {/* Panel drops down aligned to this button's left edge */}
+                  {/* Wide panels (states, intelligence) anchor to right side to avoid viewport overflow */}
                   {isOpen && (
                     <div
                       id={`megamenu-${type}`}
                       role="region"
                       aria-label={`${type} navigation`}
-                      className="absolute top-full left-0 z-50 mt-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-2xl rounded-xl w-auto min-w-max"
+                      className={`absolute top-full z-50 mt-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-2xl rounded-xl overflow-y-auto max-h-[80vh] ${
+                        type === "states" || type === "intelligence"
+                          ? "right-0 left-auto"
+                          : "left-0"
+                      } w-auto min-w-max max-w-[95vw]`}
                       onMouseEnter={cancelClose}
                       onMouseLeave={closeMegaMenu}
                       onKeyDown={(e) => { if (e.key === "Escape") setActiveMegaMenu(null); }}
@@ -938,7 +945,11 @@ const Header = () => {
                   { label: "Investment Tracker", href: "/investment-tracker", sub: [] },
                   { label: "Trending Topics", href: "/trending-topics", sub: [] },
                   { label: "Multimedia", href: "/multimedia", sub: [] },
-                  { label: "All Research Lab Tools", href: "/research-lab", sub: [] },
+                  { label: "All 24 Research Lab Tools", href: "/research-lab", sub: [] },
+                  { label: "Clinical Data Exchange Lab", href: "/research-lab/vbc-clinical-quality?tab=hl7", sub: [] },
+                  { label: "Risk Stratification Methodology", href: "/research-lab/vbc-clinical-quality?tab=risk", sub: [] },
+                  { label: "VBC Quality Measures", href: "/research-lab/vbc-clinical-quality?tab=quality", sub: [] },
+                  { label: "High vs. Low Value Care", href: "/research-lab/vbc-clinical-quality?tab=value", sub: [] },
                 ],
               },
               {
@@ -956,12 +967,25 @@ const Header = () => {
                 label: "States & Programs",
                 emoji: "🗺️",
                 children: [
-                  { label: "Vermont Act 167", href: "/vermont-act-167", sub: [] },
+                  { label: "Vermont Medicaid", href: "/vermont-medicaid", sub: [] },
+                  { label: "Blueprint for Health", href: "/vermont-blueprint", sub: [] },
+                  { label: "Vermont VCCI", href: "/vermont-vcci", sub: [] },
+                  { label: "Vermont RHT Program ($195M)", href: "/vermont-rht-program", sub: [] },
+                  { label: "SASH Program", href: "/vermont-sash", sub: [] },
+                  { label: "Designated Agencies (MH/SUD)", href: "/vermont-designated-agencies", sub: [] },
+                  { label: "SDOH & Social Services", href: "/vermont-sdoh", sub: [] },
+                  { label: "Vermont Act 167 (2022)", href: "/vermont-act-167", sub: [] },
+                  { label: "Vermont Act 68 (2025)", href: "/vermont-act-68", sub: [] },
+                  { label: "Act 68 Simulator", href: "/vermont-act-68/simulator", sub: [] },
+                  { label: "AHEAD Model", href: "/ahead-model", sub: [] },
+                  { label: "Vermont Hospital Profiles", href: "/dashboard/vermont/hospitals", sub: [] },
                   { label: "Bed Capacity & Transfer", href: "/bed-capacity", sub: [] },
+                  { label: "Legislative Reports Library", href: "/vermont-legislative-resources", sub: [] },
                   { label: "California CalAIM", href: "/california-calaim", sub: [] },
+                  { label: "Oregon CCO 3.0", href: "/oregon-cco", sub: [] },
                   { label: "All States Explorer", href: "/states", sub: [] },
                   { label: "50-State Dashboard", href: "/dashboard", sub: [] },
-                  { label: "AHEAD Model", href: "/ahead-model", sub: [] },
+                  { label: "CMS Rural Health Transformation", href: "/dashboard/simulator", sub: [] },
                 ],
               },
               {
