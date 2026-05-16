@@ -298,7 +298,7 @@ const SECTIONS: Section[] = [
 
   // ── PRO-BONO ADVISORY & SERVICES ──────────────────────────────────────────
   {
-    id: "advisory", label: "Pro-Bono Advisory & Services",
+    id: "advisory", label: "Advisory & Services",
     icon: BriefcaseIcon,
     dot: "bg-indigo-500",
     headerColor: "text-indigo-700", headerBg: "bg-indigo-100",
@@ -431,71 +431,64 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
       )}
 
       {/* ── Section list ──────────────────────────────────────────────────── */}
-      <div className="space-y-3">
+      <div>
         {SECTIONS.map((section) => {
           const isOpen = expandedSections.includes(section.id);
           const SectionIcon = section.icon;
 
           return (
-            <div key={section.id}>
+            <div key={section.id} className="mb-0.5">
 
               {/* L1 header — pillar: label is a Link, chevron is a toggle button */}
-              {section.isPillarSection ? (
-                <div className={`flex items-center justify-between px-2 py-2 rounded-xl transition-colors ${
-                  isOpen ? `${section.headerBg} dark:bg-slate-800` : "hover:bg-slate-100 dark:hover:bg-slate-800"
-                }`}>
+              {/* Single unified row — same markup for both pillar and regular sections */}
+              <div className={`flex items-center px-2 h-8 rounded-xl transition-colors ${
+                isOpen ? `${section.headerBg} dark:bg-slate-800` : "hover:bg-slate-100 dark:hover:bg-slate-800"
+              }`}>
+                {/* Clickable label area */}
+                {section.isPillarSection ? (
                   <Link
                     href={section.overviewHref!}
                     onClick={() => {
                       if (!expandedSections.includes(section.id)) handleSectionClick(section.id);
                       onNavigate?.();
                     }}
-                    className="flex items-center gap-2.5 flex-1 min-w-0"
+                    className="flex items-center gap-2 flex-1 min-w-0"
                   >
-                    <span className={`w-7 h-7 rounded-lg ${section.headerBg} flex items-center justify-center shrink-0`}>
-                      <SectionIcon className={`w-4 h-4 ${section.headerColor}`} />
+                    <span className={`w-5 h-5 rounded-md ${section.headerBg} flex items-center justify-center shrink-0`}>
+                      <SectionIcon className={`w-3 h-3 ${section.headerColor}`} />
                     </span>
-                    <span className={`text-[13px] font-semibold tracking-wide ${
+                    <span className={`text-[13px] font-semibold tracking-wide truncate ${
                       isOpen ? section.headerColor : "text-slate-600 dark:text-slate-300"
                     }`}>
                       {section.label}
                     </span>
                   </Link>
+                ) : (
                   <button
                     onClick={() => handleSectionClick(section.id)}
-                    className="p-1 rounded-lg hover:bg-black/5 transition-colors shrink-0"
-                    aria-label={isOpen ? "Collapse" : "Expand"}
+                    className="flex items-center gap-2 flex-1 min-w-0 text-left"
                   >
-                    <ChevronDownIcon className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                      isOpen ? `${section.headerColor} rotate-0` : "text-slate-400 -rotate-90"
-                    }`} />
-                  </button>
-                </div>
-              ) : (
-                /* L1 header — regular section: whole header is a toggle button */
-                <button
-                  onClick={() => handleSectionClick(section.id)}
-                  className={`w-full flex items-center justify-between px-2 py-2 rounded-xl transition-colors text-left ${
-                    isOpen
-                      ? `${section.headerBg} dark:bg-slate-800`
-                      : "hover:bg-slate-100 dark:hover:bg-slate-800"
-                  }`}
-                >
-                  <span className="flex items-center gap-2.5">
-                    <span className={`w-7 h-7 rounded-lg ${section.headerBg} flex items-center justify-center shrink-0`}>
-                      <SectionIcon className={`w-4 h-4 ${section.headerColor}`} />
+                    <span className={`w-5 h-5 rounded-md ${section.headerBg} flex items-center justify-center shrink-0`}>
+                      <SectionIcon className={`w-3 h-3 ${section.headerColor}`} />
                     </span>
-                    <span className={`text-[13px] font-semibold tracking-wide ${
+                    <span className={`text-[13px] font-semibold tracking-wide truncate ${
                       isOpen ? section.headerColor : "text-slate-600 dark:text-slate-300"
                     }`}>
                       {section.label}
                     </span>
-                  </span>
-                  <ChevronDownIcon className={`w-3.5 h-3.5 shrink-0 transition-transform duration-200 ${
+                  </button>
+                )}
+                {/* Chevron toggle — same for both */}
+                <button
+                  onClick={() => handleSectionClick(section.id)}
+                  className="shrink-0 ml-1"
+                  aria-label={isOpen ? "Collapse" : "Expand"}
+                >
+                  <ChevronDownIcon className={`w-3.5 h-3.5 transition-transform duration-200 ${
                     isOpen ? `${section.headerColor} rotate-0` : "text-slate-400 -rotate-90"
                   }`} />
                 </button>
-              )}
+              </div>
 
               {/* L2 drawer */}
               {isOpen && (
@@ -616,15 +609,15 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
         <Link
           href="/saved"
           onClick={onNavigate}
-          className={`flex items-center justify-between px-2 py-2 rounded-xl transition-colors ${
+          className={`flex items-center px-2 h-8 rounded-xl transition-colors ${
             isActive("/saved")
               ? "bg-slate-100 dark:bg-slate-700"
               : "hover:bg-slate-100 dark:hover:bg-slate-700"
           }`}
         >
-          <span className="flex items-center gap-2.5">
-            <span className="w-7 h-7 rounded-lg bg-slate-100 dark:bg-slate-700 flex items-center justify-center shrink-0">
-              <BookmarkIcon className="w-4 h-4 text-slate-500 dark:text-slate-400" />
+          <span className="flex items-center gap-2">
+            <span className="w-5 h-5 rounded-md bg-slate-100 dark:bg-slate-700 flex items-center justify-center shrink-0">
+              <BookmarkIcon className="w-3 h-3 text-slate-500 dark:text-slate-400" />
             </span>
             <span className="text-[13px] font-semibold tracking-wide text-slate-600 dark:text-slate-300">
               My Library
@@ -638,13 +631,13 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
             <Link
               href="/setup"
               onClick={onNavigate}
-              className={`flex items-center px-2 py-2 rounded-xl transition-colors ${
+              className={`flex items-center px-2 h-8 rounded-xl transition-colors ${
                 isActive("/setup") ? "bg-amber-100" : "hover:bg-amber-50"
               }`}
             >
-              <span className="flex items-center gap-2.5">
-                <span className="w-7 h-7 rounded-lg bg-amber-100 flex items-center justify-center shrink-0">
-                  <span className="text-sm">⚙️</span>
+              <span className="flex items-center gap-2">
+                <span className="w-5 h-5 rounded-md bg-amber-100 flex items-center justify-center shrink-0">
+                  <span className="text-[10px]">⚙️</span>
                 </span>
                 <span className="text-[13px] font-semibold tracking-wide text-amber-700">
                   Setup
