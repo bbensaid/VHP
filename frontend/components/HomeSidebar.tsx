@@ -417,6 +417,33 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
   return (
     <div className="pt-2">
 
+      {/* ── The Book — pinned high-visibility entry ────────────────────── */}
+      <div className="mb-2 px-1">
+        <Link
+          href="/book"
+          onClick={onNavigate}
+          className={`flex items-center gap-2 px-2 h-9 rounded-xl transition-colors border ${
+            isActive("/book")
+              ? "bg-indigo-100 border-indigo-200"
+              : "bg-gradient-to-r from-indigo-50 to-slate-50 border-indigo-100 hover:border-indigo-300 hover:bg-indigo-50"
+          }`}
+        >
+          <span className="w-5 h-5 rounded-md bg-indigo-600 flex items-center justify-center shrink-0">
+            <BookOpenIcon className="w-3 h-3 text-white" />
+          </span>
+          <span className={`text-[13px] font-semibold tracking-wide truncate flex-1 ${
+            isActive("/book") ? "text-indigo-700" : "text-indigo-700"
+          }`}>
+            The Book
+          </span>
+          <span className="text-[9px] font-black uppercase tracking-widest text-indigo-400 shrink-0">
+            New
+          </span>
+        </Link>
+      </div>
+
+      <div className="mb-2 border-t border-slate-100" />
+
       {/* ── Collapse All ──────────────────────────────────────────────────── */}
       {hasAnythingOpen && (
         <div className="flex justify-end mb-2 px-1">

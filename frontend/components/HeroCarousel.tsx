@@ -32,6 +32,7 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
   // Define our slides configuration
   const slides = [
     { id: "lead", type: "story" },
+    { id: "book", type: "book" },
     { id: "visual", type: "visual" },
     { id: "academy", type: "promo" },
     { id: "rhtp", type: "program" },
@@ -131,7 +132,52 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
               </div>
             )}
 
-            {/* --- SLIDE 2: VISUAL INSIGHT (Existing Card) --- */}
+            {/* --- SLIDE 2: THE BOOK --- */}
+            {slide.type === "book" && (
+              <div className="w-full h-full flex flex-row items-center gap-6 md:gap-12">
+                {/* Book cover visual */}
+                <div className="shrink-0 w-20 h-28 md:w-36 md:h-52 rounded-lg md:rounded-xl shadow-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 border border-white/10 flex flex-col items-center justify-center p-3 md:p-5 relative overflow-hidden">
+                  <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)", backgroundSize: "8px 8px" }} />
+                  <div className="relative text-center">
+                    <div className="text-white/40 text-[8px] md:text-[10px] font-black uppercase tracking-widest mb-1 md:mb-2">HTR</div>
+                    <div className="text-white text-[9px] md:text-xs font-black leading-tight mb-2 md:mb-3">
+                      Transforming<br />American<br />Healthcare
+                    </div>
+                    <div className="w-full h-px bg-white/20 mb-1 md:mb-2" />
+                    <div className="text-white/50 text-[7px] md:text-[9px] leading-tight">A Six-Pillar Framework</div>
+                  </div>
+                </div>
+
+                {/* Text content */}
+                <div className="flex-1 space-y-2 md:space-y-4">
+                  <div className="inline-block px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 text-xs font-black uppercase tracking-widest">
+                    The Book
+                  </div>
+                  <h2 className="ty-h1 font-black text-slate-700 line-clamp-2 md:line-clamp-none leading-tight">
+                    Transforming American Healthcare
+                  </h2>
+                  <p className="hidden md:block ty-hero text-slate-600 leading-relaxed">
+                    The intellectual foundation of this platform. 20 chapters, 6 pillars, 15 dependency relationships — and Vermont as the primary teaching case for national healthcare transformation.
+                  </p>
+                  <div className="flex flex-wrap gap-2 md:gap-3 pt-1">
+                    <Link
+                      href="/book"
+                      className="inline-block bg-indigo-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-bold text-sm hover:bg-indigo-700 transition-colors"
+                    >
+                      Explore the Book
+                    </Link>
+                    <Link
+                      href="/about/framework"
+                      className="hidden sm:inline-block bg-white text-slate-700 border border-slate-200 px-4 py-2 md:px-6 md:py-3 rounded-lg font-bold text-sm hover:bg-slate-50 transition-colors"
+                    >
+                      Six-Pillar Framework
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* --- SLIDE 3: VISUAL INSIGHT (Existing Card) --- */}
             {slide.type === "visual" && (
               <div className="w-full h-full flex flex-col justify-center">
                 <div className="flex justify-between items-end mb-3 md:mb-6">
