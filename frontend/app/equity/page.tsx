@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HubSubscribeCTA from "@/components/HubSubscribeCTA";
 import LatestHubReports from "@/components/LatestHubReports";
+import FromTheBook from "@/components/FromTheBook";
 
 export const metadata = {
   title: "Equity | Health Transformation Review",
@@ -48,7 +49,14 @@ export default function Page() {
           Ensuring fair and just opportunities for health across all populations.
         </p>
       </div>
-      
+
+      <FromTheBook
+        chapter="Chapters 12 & 13"
+        chapterTitle="The Equity Pillar — Closing Gaps, Not Just Averaging Them"
+        excerpt="Chapter 12 treats SDOH as a structural variable, not a downstream filter — covering Vermont's 8 SDOH domains, algorithmic bias in clinical AI, and rural access disparity. Chapter 13 operationalizes equity measurement through HEDIS stratification, the HEROI Index, and SDOH screening at scale."
+        href="/book#chapters"
+      />
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {topics.map((item) => (
           <Link key={item.label} href={item.href} className="group flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-orange-400 hover:bg-orange-50/80">

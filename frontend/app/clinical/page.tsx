@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HubSubscribeCTA from "@/components/HubSubscribeCTA";
 import LatestHubReports from "@/components/LatestHubReports";
+import FromTheBook from "@/components/FromTheBook";
 
 export const metadata = {
   title: "Clinical | Health Transformation Review",
@@ -54,7 +55,14 @@ export default function Page() {
           Advancing care delivery through innovation, precision, and new care models.
         </p>
       </div>
-      
+
+      <FromTheBook
+        chapter="Chapters 10 & 11"
+        chapterTitle="The Clinical Pillar — Redesigning Care Delivery for a Transformed System"
+        excerpt="Chapter 10 covers Vermont's Blueprint for Health (15 years of evidence), the behavioral health crisis architecture, Collaborative Care Model, and the PACE/long-term care gap. Chapter 11 provides the PCMH transformation playbook, HEDIS improvement methodology, and the Vermont clinical transformation toolkit."
+        href="/book#chapters"
+      />
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         {topics.map((item) => (
           <Link key={item.label} href={item.href} className="group flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-rose-400 hover:bg-rose-50/80">
