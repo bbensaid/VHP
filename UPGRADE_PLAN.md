@@ -1,9 +1,12 @@
 # Vermont Health Platform — Codebase Audit & Upgrade Plan
 
 **Prepared:** 2026-05-18
+**Revised:** 2026-05-18 (after user answers to Section 9 questions)
 **Reviewer:** Claude (Opus 4.7)
 **Scope:** Full audit of the frontend Next.js app, Python AI backend, supporting infra, and integration with the HTR Book v28.
 **Repo root:** `/Users/baba/Vermont-Health-Platform`
+
+> **Revision note:** User confirmed (1) audience is national + Vermont equally, (2) monetization is parked, (3) backend autonomy decision deferred, (4) the book changes often, (5) Personalized Learning role is open. Sections 6 and 9 below have been updated to reflect those answers — the most consequential change is **promoting the taxonomy refactor (was Phase 2.1) to Phase 1** because the book changes often, and the current hand-maintained chapter-to-platform map will bleed time on every book revision.
 
 ---
 
@@ -198,24 +201,34 @@ Then `HomeSidebar`, `Header`, `/book`, all pillar pages, the `FromTheBook` callo
 
 Each phase is independently shippable. Skip phases if you disagree — they're sequenced by ROI, not necessity.
 
-### Phase 1 — **Stabilise** (1 week, no new features)
-Goal: Make the platform safe to iterate on without regressions.
+### Phase 1 — **Stabilise + Taxonomy** (1.5–2 weeks)
+
+Goal: Make the platform safe to iterate on, **and** build the single source of truth for the book-to-platform map (promoted from Phase 2.1 because the book changes often).
 
 - [ ] **1.1** Commit / discard pending git changes. Get to a clean working tree.
-- [ ] **1.2** Gate `BYPASS_AUTH` behind env var. Test that role-gated routes redirect when bypass is off.
+- [ ] **1.2** Gate `BYPASS_AUTH` behind env var (`NEXT_PUBLIC_ALLOW_AUTH_BYPASS`). Test that role-gated routes redirect when bypass is off. Keep `true` for beta; failsafe `false` default.
 - [ ] **1.3** Add `.gitignore` for `tsconfig.tsbuildinfo`, `.next/`, `repomix-output.txt`, `dist/`. Remove from repo.
 - [ ] **1.4** Move loose `.txt` / `.docx` / `.json` notes to `frontend/docs/` or `archive/`.
-- [ ] **1.5** Wire `BackendStatus` into header as a tiny dot indicator. Show "AI offline" when `/api/health` reports `indexReady: false`.
+- [ ] **1.5** Wire `BackendStatus` into header as a tiny dot indicator. Show "AI offline" when `/api/health` reports `indexReady: false`. (Backend autonomy decision is deferred — this addresses the symptom.)
 - [ ] **1.6** Add ESLint `no-explicit-any` warning (not error) and start chipping at the count.
 - [ ] **1.7** Add a smoke-test step in `package.json` using `next build` as the gate. (Real tests come in Phase 2.)
 - [ ] **1.8** Document the beta gate flow and `htr_beta` cookie in `frontend/docs/auth.md`.
+- [ ] **1.9 — TAXONOMY (PROMOTED FROM PHASE 2):** Create `lib/taxonomy/`:
+  - `pillars.ts` — 6 pillars, ids, colors, icons, accents
+  - `chapters.ts` — 20 chapters with `num`, `title`, `pillar`, `desc`, `platformLinks` (by tool id, not by hard-coded href)
+  - `tools.ts` — every Research Lab tool + simulator with `id`, `label`, `href`, `pillar`, `chapter(s)`, `status`
+  - `programs.ts` — Vermont, Oregon, California program pages
+- [ ] **1.10** Migrate `app/book/page.tsx` (666 lines) to read from `lib/taxonomy/`. Should drop to ~150 lines.
+- [ ] **1.11** Migrate the six pillar pages and `FromTheBook` callouts to read from `lib/taxonomy/chapters.ts`. One edit to a chapter = one file change.
+- [ ] **1.12** Migrate `HomeSidebar.tsx` and `Header.tsx` mega-menu to consume `lib/taxonomy/`. Two nav systems, one source.
 
-**Deliverable:** A clean repo, a visible AI status, no accidental auth bypasses, no stale junk.
+**Deliverable:** Clean repo, visible AI status, no accidental auth bypasses, **and** every book update is a one-file change in `lib/taxonomy/chapters.ts`.
 
-### Phase 2 — **Refactor the foundation** (2–3 weeks)
-Goal: Reduce duplication and start unifying content sources.
+### Phase 2 — **Refactor the heavy components** (2 weeks)
 
-- [ ] **2.1** Create `lib/taxonomy/` with `pillars.ts`, `tools.ts`, `chapters.ts`, `programs.ts`. Migrate `HomeSidebar`, `Header`, `/book`, and all 6 pillar pages to consume it.
+Goal: Reduce file size and duplication in the research tools and pillar shells.
+
+- [ ] **2.1** Build a `<PillarOverview pillar="clinical" />` component that all 6 pillar pages render from `lib/taxonomy/pillars.ts` + `lib/data/pillar-topics.ts`. Each pillar page becomes ~10 lines.
 - [ ] **2.2** Split the top 5 largest research components. Each gets: a thin shell page, sub-tab components, and a sibling `*.data.ts` file for constants/copy. Target: nothing over 800 lines.
 - [ ] **2.3** Split `vermont-act-167/simulator/page.tsx` (2,248 lines) into a hub + tab routes.
 - [ ] **2.4** Introduce `lib/data/pillar-topics.ts` — each pillar's topic cards, scope blurbs, related tools.
