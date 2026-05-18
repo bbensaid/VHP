@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getUser, roleAtLeast } from "@/lib/auth";
 import UpgradePrompt from "@/components/UpgradePrompt";
+import FromTheBook from "@/components/FromTheBook";
 
 export const metadata = {
   title: "HTR Research Lab | Health Transformation Review",
@@ -94,6 +95,13 @@ export default async function ResearchLabPage() {
 
       {/* Tools by pillar */}
       <div className="max-w-5xl mx-auto px-6 py-16 space-y-10">
+        <FromTheBook
+          chapter="Chapters 1–20"
+          chapterTitle="Every Research Lab Tool Has a Chapter"
+          excerpt="The Research Lab is the interactive counterpart to the book. The APM Design Lab maps to Chapter 8–9 (Economics). The Risk Stratification Engine maps to Chapters 11 & 13. The Policy Simulator maps to Chapters 4–5. Appendix G of the book provides the complete chapter-to-tool mapping."
+          href="/book"
+        />
+
         <h2 className="text-2xl font-black text-slate-900">Tools by Domain</h2>
 
         {PILLAR_LABS.map((pillar) => (

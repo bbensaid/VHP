@@ -137,95 +137,37 @@ type MegaMenuType = "intelligence" | "learn" | "tools" | "states" | "advise" | n
 
 // ─── MEGA-MENU PANELS ────────────────────────────────────────────────────────
 
-// Per-pillar Research Lab tool links shown in the Intelligence mega-menu
-const PILLAR_LAB_LINKS: Record<string, { href: string; label: string }[]> = {
-  policy: [
-    { href: "/research-lab/policy-quality?tab=policy",      label: "Policy Simulator" },
-    { href: "/research-lab/policy-quality?tab=hr1-cliff",   label: "H.R. 1 Cliff Scenario" },
-  ],
-  economics: [
-    { href: "/research-lab/payment-models?tab=apm-design",  label: "APM Design Lab" },
-    { href: "/research-lab/payment-models?tab=cea",         label: "CEA Calculator" },
-    { href: "/research-lab/payment-models?tab=gb-transition", label: "Global Budget Modeler" },
-  ],
-  technology: [
-    { href: "/research-lab/interoperability?tab=fhir",      label: "FHIR Interoperability Lab" },
-    { href: "/research-lab/vbc-clinical-quality?tab=hl7",   label: "Clinical Data Exchange Lab" },
-    { href: "/research-lab/technology-ai?tab=ai",           label: "AI Clinical Governance Lab" },
-  ],
-  clinical: [
-    { href: "/research-lab/vbc-clinical-quality?tab=risk",    label: "Risk Stratification Methodology" },
-    { href: "/research-lab/vbc-clinical-quality?tab=quality", label: "VBC Quality Measures" },
-    { href: "/research-lab/vbc-clinical-quality?tab=value",   label: "High vs. Low Value Care" },
-  ],
-  equity: [
-    { href: "/research-lab/population-equity?tab=population", label: "Population Health Modeler" },
-    { href: "/research-lab/population-equity?tab=equity",     label: "Health Equity Studio" },
-  ],
-  operations: [
-    { href: "/research-lab/knowledge-workspace?tab=readiness", label: "VBC Readiness Assessment" },
-    { href: "/research-lab/knowledge-workspace?tab=scorecard", label: "Transformation Scorecard" },
-  ],
-};
 
 function IntelligencePanel({ onClose }: { onClose: () => void }) {
   return (
-    <div className="max-w-screen-xl mx-auto px-6 py-6">
-      <div className="grid grid-cols-6 gap-5">
+    <div className="px-8 py-6">
+      <div className="grid grid-cols-6 gap-6" style={{ width: "min(1200px, 92vw)" }}>
         {pillars.map((p) => {
-          const labLinks = PILLAR_LAB_LINKS[p.id] ?? [];
           return (
             <div key={p.id}>
-              <div className="flex items-center gap-1.5 mb-3">
+              <div className="flex items-center gap-1.5 mb-4">
                 <span className={`w-2 h-2 rounded-full ${p.dot} shrink-0`} />
                 <p className={`text-xs font-black uppercase tracking-widest ${p.accent}`}>{p.label}</p>
               </div>
-              <div className="space-y-0.5">
+              <div className="space-y-1">
                 {/* Pillar overview */}
                 <Link href={p.href} onClick={onClose}
-                  className={`flex flex-col px-3 py-2 rounded-lg ${p.hoverBg} transition-colors group`}>
+                  className={`flex flex-col px-3 py-2.5 rounded-lg ${p.hoverBg} transition-colors group`}>
                   <span className={`text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:${p.accent}`}>{p.label} Overview</span>
                   <span className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{p.desc}</span>
                 </Link>
                 {/* Intelligence sub-items */}
                 {p.items.map((item) => (
                   <Link key={item.href} href={item.href} onClick={onClose}
-                    className={`flex flex-col px-3 py-2 rounded-lg ${p.hoverBg} transition-colors group`}>
+                    className={`flex flex-col px-3 py-2.5 rounded-lg ${p.hoverBg} transition-colors group`}>
                     <span className={`text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:${p.accent}`}>{item.label}</span>
                     <span className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{item.desc}</span>
                   </Link>
                 ))}
-                {/* Research Lab divider + tools */}
-                {labLinks.length > 0 && (
-                  <div className="pt-2 mt-1 border-t border-slate-100 dark:border-slate-700">
-                    <p className={`text-[9px] font-black uppercase tracking-widest ${p.accent} opacity-70 px-3 mb-1`}>Lab Tools</p>
-                    {labLinks.map((lab) => (
-                      <Link key={lab.href} href={lab.href} onClick={onClose}
-                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg ${p.hoverBg} transition-colors group`}>
-                        <span className={`w-1 h-1 rounded-full ${p.dot} shrink-0 opacity-50`} />
-                        <span className={`text-xs font-medium text-slate-600 dark:text-slate-400 group-hover:${p.accent}`}>{lab.label}</span>
-                      </Link>
-                    ))}
-                  </div>
-                )}
               </div>
             </div>
           );
         })}
-      </div>
-      <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-700 flex items-center gap-6">
-        <span className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500">Quick Access</span>
-        {[
-          { href: "/trending-topics", label: "Trending Topics" },
-          { href: "/advisory/reports", label: "Latest Reports" },
-          { href: "/research-lab", label: "All 24 Lab Tools" },
-          { href: "/search", label: "Search Pillars" },
-        ].map((link) => (
-          <Link key={link.href} href={link.href} onClick={onClose}
-            className="text-xs font-bold text-indigo-600 hover:text-indigo-800 hover:underline transition-colors">
-            {link.label} →
-          </Link>
-        ))}
       </div>
     </div>
   );
@@ -233,11 +175,11 @@ function IntelligencePanel({ onClose }: { onClose: () => void }) {
 
 function LearnPanel({ onClose }: { onClose: () => void }) {
   return (
-    <div className="max-w-screen-xl mx-auto px-6 py-6">
+    <div className="max-w-7xl mx-auto px-6 py-6">
       <div className="grid grid-cols-3 gap-8">
         {/* Start Here */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-rose-600 mb-3">
             Start Here
           </p>
           <div className="space-y-1">
@@ -282,7 +224,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
 
         {/* Browse by Format */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-rose-600 mb-3">
             Browse by Format
           </p>
           <div className="space-y-1">
@@ -308,10 +250,23 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
 
         {/* Reference */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-rose-600 mb-3">
             Reference
           </p>
           <div className="space-y-1">
+            <Link
+              href="/book"
+              onClick={onClose}
+              className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-indigo-50 transition-colors group border border-indigo-100 bg-indigo-50/50"
+            >
+              <span className="flex items-center gap-1.5 text-sm font-bold text-indigo-800 dark:text-indigo-300 group-hover:text-indigo-900">
+                <span className="text-base">📖</span>
+                The Book
+              </span>
+              <span className="text-xs text-slate-400 mt-0.5">
+                <em>Transforming American Healthcare</em> — 20 chapters, 6 pillars
+              </span>
+            </Link>
             <Link
               href="/academy/glossary"
               onClick={onClose}
@@ -356,14 +311,15 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
 }
 
 function ToolsPanel({ onClose }: { onClose: () => void }) {
+  const hdr = "text-xs font-black uppercase tracking-widest text-rose-600 mb-3";
+  const sec = "mt-5 pt-4 border-t border-slate-100 dark:border-slate-700";
   return (
-    <div className="max-w-screen-xl mx-auto px-6 py-6">
+    <div className="max-w-7xl mx-auto px-6 py-6">
       <div className="grid grid-cols-3 gap-8">
+
         {/* Simulators */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-            Simulators
-          </p>
+          <p className={hdr}>Simulators</p>
           <div className="space-y-1">
             {[
               { href: "/htr-simulator", label: "HTR Simulator", desc: "6-pillar transformation scenario modeler" },
@@ -382,9 +338,7 @@ function ToolsPanel({ onClose }: { onClose: () => void }) {
 
         {/* Data & Signals */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-            Data &amp; Signals
-          </p>
+          <p className={hdr}>Data &amp; Signals</p>
           <div className="space-y-1">
             {[
               { href: "/trending-topics", label: "Trending Topics", desc: "Real-time intelligence signals" },
@@ -401,11 +355,9 @@ function ToolsPanel({ onClose }: { onClose: () => void }) {
           </div>
         </div>
 
-        {/* Media */}
+        {/* Media + Research Lab */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-            Media
-          </p>
+          <p className={hdr}>Media</p>
           <div className="space-y-1">
             <Link href="/multimedia" onClick={onClose}
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-amber-50 transition-colors group">
@@ -413,8 +365,8 @@ function ToolsPanel({ onClose }: { onClose: () => void }) {
               <span className="text-xs text-slate-400 mt-0.5">Videos, presentations &amp; infographics</span>
             </Link>
           </div>
-          <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-700">
-            <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Research Lab</p>
+          <div className={sec}>
+            <p className={hdr}>Research Lab</p>
             {[
               { href: "/research-lab", label: "All 24 Lab Tools", desc: "Browse the full analytical tool directory" },
               { href: "/research-lab/vbc-clinical-quality?tab=hl7", label: "Clinical Data Exchange Lab", desc: "HL7 v2, FHIR R4, USCDI — 8 Vermont patient scenarios" },
@@ -430,39 +382,46 @@ function ToolsPanel({ onClose }: { onClose: () => void }) {
             ))}
           </div>
         </div>
+
       </div>
     </div>
   );
 }
 
 function StatesPanel({ onClose }: { onClose: () => void }) {
-  const linkCls = "flex flex-col px-2 py-1.5 rounded-lg hover:bg-rose-50 transition-colors group";
-  const titleCls = "text-xs font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700";
-  const descCls = "text-[10px] text-slate-400 dark:text-slate-500 mt-0.5 leading-snug";
-  return (
-    <div className="px-4 py-5">
-      <div className="grid grid-cols-3 gap-6" style={{ width: "min(860px, 90vw)" }}>
+  const linkCls = "flex flex-col px-3 py-2.5 rounded-lg hover:bg-rose-50 transition-colors group";
+  const titleCls = "text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-rose-700";
+  const descCls = "text-xs text-slate-400 dark:text-slate-500 mt-0.5 leading-snug";
+  const hdr = "text-xs font-black uppercase tracking-widest text-rose-600 mb-3";
+  const sec = "mt-5 pt-4 border-t border-slate-100 dark:border-slate-700";
 
-        {/* Vermont Programs */}
+  const vtPrograms = [
+    { href: "/vermont-medicaid",             label: "Vermont Medicaid",              desc: "Programs, eligibility & enrollment guide" },
+    { href: "/vermont-blueprint",            label: "Blueprint for Health",           desc: "128 PCMHs, Community Health Teams, Mental Health Integration — Vermont's primary care backbone" },
+    { href: "/vermont-vcci",                 label: "Vermont VCCI",                   desc: "Chronic Care Initiative — intensive case management for Vermont's top 5% highest-cost Medicaid members" },
+    { href: "/vermont-rht-program",          label: "Vermont RHT Program",            desc: "$195M federal Rural Health Transformation award — financing Vermont's Act 68 agenda" },
+    { href: "/vermont-sash",                 label: "SASH Program",                   desc: "Support and Services at Home — housing-based care coordination for 13,000+ Vermont seniors" },
+    { href: "/vermont-designated-agencies",  label: "Designated Agencies (MH/SUD)",   desc: "Vermont's 11 regional non-profit Designated Agencies providing community mental health & SUD services" },
+    { href: "/vermont-sdoh",                 label: "SDOH & Social Services",         desc: "Vermont's 8 SDOH domains, 2-1-1 Vermont, community action agencies — with clinical program connections" },
+    { href: "/vermont-act-167",              label: "Vermont Act 167 (2022)",          desc: "Hospital transformation & Oliver Wyman analysis" },
+    { href: "/vermont-act-68",               label: "Vermont Act 68 (2025)",           desc: "Next-generation VBC legislation & global budget reform" },
+    { href: "/vermont-act-68/simulator",     label: "Act 68 Simulator",               desc: "Model Act 68 financial scenarios for Vermont hospitals" },
+    { href: "/ahead-model",                  label: "AHEAD Model",                    desc: "All-payer total cost of care model — 6 states" },
+    { href: "/dashboard/vermont/hospitals",  label: "Vermont Hospital Profiles",      desc: "Financial & quality profiles for Vermont hospitals" },
+    { href: "/bed-capacity",                 label: "Bed Capacity & Transfer",        desc: "Real-time bed availability & interfacility routing" },
+    { href: "/vermont-legislative-resources", label: "Legislative Reports Library",   desc: "GMCB reports, AHS Act 68 monthly updates, Blueprint annual reports, House committee testimony" },
+  ];
+  const half = Math.ceil(vtPrograms.length / 2);
+
+  return (
+    <div className="max-w-7xl mx-auto px-6 py-6">
+      <div className="grid grid-cols-3 gap-8">
+
+        {/* Col 1: Vermont Programs — first half */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-rose-600 mb-3">Vermont Programs</p>
+          <p className={hdr}>Vermont Programs</p>
           <div className="space-y-0.5">
-            {[
-              { href: "/vermont-medicaid",             label: "Vermont Medicaid",              desc: "Programs, eligibility & enrollment guide" },
-              { href: "/vermont-blueprint",            label: "Blueprint for Health",           desc: "128 PCMHs, Community Health Teams, Mental Health Integration — Vermont's primary care backbone" },
-              { href: "/vermont-vcci",                 label: "Vermont VCCI",                    desc: "Chronic Care Initiative — intensive case management for Vermont's top 5% highest-cost Medicaid members" },
-              { href: "/vermont-rht-program",          label: "Vermont RHT Program",            desc: "$195M federal Rural Health Transformation award — financing Vermont's Act 68 agenda" },
-              { href: "/vermont-sash",                 label: "SASH Program",                   desc: "Support and Services at Home — housing-based care coordination for 13,000+ Vermont seniors" },
-              { href: "/vermont-designated-agencies",  label: "Designated Agencies (MH/SUD)",   desc: "Vermont's 11 regional non-profit Designated Agencies providing community mental health & SUD services" },
-              { href: "/vermont-sdoh",                 label: "SDOH & Social Services",          desc: "Vermont's 8 SDOH domains, 2-1-1 Vermont, community action agencies — with clinical program connections" },
-              { href: "/vermont-act-167",              label: "Vermont Act 167 (2022)",          desc: "Hospital transformation & Oliver Wyman analysis" },
-              { href: "/vermont-act-68",               label: "Vermont Act 68 (2025)",           desc: "Next-generation VBC legislation & global budget reform" },
-              { href: "/vermont-act-68/simulator",     label: "Act 68 Simulator",               desc: "Model Act 68 financial scenarios for Vermont hospitals" },
-              { href: "/ahead-model",                  label: "AHEAD Model",                    desc: "All-payer total cost of care model — 6 states" },
-              { href: "/dashboard/vermont/hospitals",  label: "Vermont Hospital Profiles",      desc: "Financial & quality profiles for Vermont hospitals" },
-              { href: "/bed-capacity",                 label: "Bed Capacity & Transfer",        desc: "Real-time bed availability & interfacility routing" },
-              { href: "/vermont-legislative-resources", label: "Legislative Reports Library",   desc: "GMCB reports, AHS Act 68 monthly updates, Blueprint annual reports, House committee testimony" },
-            ].map((item) => (
+            {vtPrograms.slice(0, half).map((item) => (
               <Link key={item.href} href={item.href} onClick={onClose} className={linkCls}>
                 <span className={titleCls}>{item.label}</span>
                 <span className={descCls}>{item.desc}</span>
@@ -471,9 +430,22 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
           </div>
         </div>
 
-        {/* Other State Models */}
+        {/* Col 2: Vermont Programs — second half (continuation) */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-rose-600 mb-3">Other State Models</p>
+          <p className={hdr} aria-hidden="true">&nbsp;</p>
+          <div className="space-y-0.5">
+            {vtPrograms.slice(half).map((item) => (
+              <Link key={item.href} href={item.href} onClick={onClose} className={linkCls}>
+                <span className={titleCls}>{item.label}</span>
+                <span className={descCls}>{item.desc}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Col 3: Other State Models → Dashboards & Simulators */}
+        <div>
+          <p className={hdr}>Other State Models</p>
           <div className="space-y-0.5">
             {[
               { href: "/california-calaim",   label: "California CalAIM",              desc: "$6.7B Medi-Cal transformation — SDOH, justice re-entry, Enhanced Care Mgmt" },
@@ -486,23 +458,21 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
               </Link>
             ))}
           </div>
-        </div>
-
-        {/* Dashboards & Simulators */}
-        <div>
-          <p className="text-xs font-black uppercase tracking-widest text-rose-600 mb-3">Dashboards & Simulators</p>
-          <div className="space-y-0.5">
-            {[
-              { href: "/dashboard",           label: "50-State RHTP Dashboard",        desc: "Rural hospital performance index — national view" },
-              { href: "/dashboard/simulator", label: "CMS Rural Health Transformation", desc: "Model CMS rural health transformation scenarios" },
-              { href: "/research-lab/vbc-clinical-quality?tab=risk", label: "VCCI Risk Stratification Lab", desc: "CDPS scoring, composite risk tiers & Vermont VCCI patient scenarios" },
-              { href: "/research-lab/vbc-clinical-quality?tab=quality", label: "VBC Quality Measures Lab",  desc: "HEDIS, 30-day readmissions & avoidable ED for Vermont populations" },
-            ].map((item) => (
-              <Link key={item.href} href={item.href} onClick={onClose} className={linkCls}>
-                <span className={titleCls}>{item.label}</span>
-                <span className={descCls}>{item.desc}</span>
-              </Link>
-            ))}
+          <div className={sec}>
+            <p className={hdr}>Dashboards &amp; Simulators</p>
+            <div className="space-y-0.5">
+              {[
+                { href: "/dashboard",           label: "50-State RHTP Dashboard",        desc: "Rural hospital performance index — national view" },
+                { href: "/dashboard/simulator", label: "CMS Rural Health Transformation", desc: "Model CMS rural health transformation scenarios" },
+                { href: "/research-lab/vbc-clinical-quality?tab=risk", label: "VCCI Risk Stratification Lab", desc: "CDPS scoring, composite risk tiers & Vermont VCCI patient scenarios" },
+                { href: "/research-lab/vbc-clinical-quality?tab=quality", label: "VBC Quality Measures Lab",  desc: "HEDIS, 30-day readmissions & avoidable ED for Vermont populations" },
+              ].map((item) => (
+                <Link key={item.href} href={item.href} onClick={onClose} className={linkCls}>
+                  <span className={titleCls}>{item.label}</span>
+                  <span className={descCls}>{item.desc}</span>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -513,11 +483,11 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
 
 function AdvisePanel({ onClose }: { onClose: () => void }) {
   return (
-    <div className="max-w-screen-xl mx-auto px-6 py-6">
+    <div className="max-w-7xl mx-auto px-6 py-6">
       <div className="grid grid-cols-3 gap-8">
         {/* Pro-Bono Advisory Services */}
         <div className="col-span-2">
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-rose-600 mb-3">
             Pro-Bono Advisory Services
           </p>
           <div className="grid grid-cols-2 gap-1">
@@ -548,7 +518,7 @@ function AdvisePanel({ onClose }: { onClose: () => void }) {
 
         {/* Connect & Community */}
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+          <p className="text-xs font-black uppercase tracking-widest text-rose-600 mb-3">
             Connect &amp; Community
           </p>
           <div className="space-y-1">
@@ -707,6 +677,11 @@ const Header = () => {
             />
           </div>
           <div className="hidden lg:flex items-center gap-6 whitespace-nowrap">
+            <Link href="/book" className="flex items-center gap-1.5 text-white hover:text-zinc-300 transition-colors font-bold">
+              <span className="text-[10px]">📖</span>
+              THE BOOK
+            </Link>
+            <div className="h-3 w-px bg-neutral-700" />
             <Link href="/faq" className="text-white hover:text-zinc-300 transition-colors">
               FAQ
             </Link>
@@ -732,14 +707,14 @@ const Header = () => {
 
       {/* 2. MAIN NAV BAR */}
       <div className="bg-white dark:bg-slate-900 py-1 border-b border-slate-200 dark:border-slate-700 w-full">
-        <div className="w-full px-4 flex items-center gap-0">
+        <div className="w-full px-4 flex items-center gap-0 relative">
 
           {/* LEFT: Toggle + Logo — w-125 matches AppShell breadcrumbs spacer for column alignment */}
           <div className="w-125 shrink-0 flex items-center gap-2 md:gap-3">
             {showLeftToggle && (
               <button
                 onClick={handleToggleLeft}
-                className="flex items-center gap-1.5 px-2 py-2 md:p-2 text-slate-600 hover:bg-slate-100 rounded-md transition-colors min-w-[44px] min-h-[44px] justify-center"
+                className="flex items-center gap-1.5 px-2 py-2 md:p-2 text-slate-600 hover:bg-slate-100 rounded-md transition-colors min-w-11 min-h-11 justify-center"
                 title="Toggle Navigation"
                 aria-label="Toggle navigation sidebar"
               >
@@ -752,11 +727,14 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* NAV: Mega-menu buttons — starts at same x as SYSTEM VITALS in AppShell sticky bar */}
+          {/* NAV: Mega-menu buttons */}
           <nav className="hidden xl:flex items-center gap-6 h-8 shrink-0 mr-4 -ml-40">
             {megaMenuItems.map(({ type, label, activeCheck }) => {
               const active = isMenuActive(activeCheck);
               const isOpen = activeMegaMenu === type;
+              // Wide panels (states, intelligence) are rendered outside the button's relative div
+              // via the sibling portal below — only narrow panels render here
+              const renderInline = type !== "states" && type !== "intelligence";
               return (
                 <div key={type} className="relative">
                   <button
@@ -782,25 +760,19 @@ const Header = () => {
                       aria-hidden="true"
                     />
                   </button>
-                  {/* Wide panels (states, intelligence) anchor to right side to avoid viewport overflow */}
-                  {isOpen && (
+                  {/* Inline panels: learn, tools, advise — anchor left of button */}
+                  {isOpen && renderInline && (
                     <div
                       id={`megamenu-${type}`}
                       role="region"
                       aria-label={`${type} navigation`}
-                      className={`absolute top-full z-50 mt-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-2xl rounded-xl overflow-y-auto max-h-[80vh] ${
-                        type === "states" || type === "intelligence"
-                          ? "right-0 left-auto"
-                          : "left-0"
-                      } w-auto min-w-max max-w-[95vw]`}
+                      className="absolute top-full left-0 z-50 mt-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-2xl rounded-xl overflow-y-auto max-h-[80vh] w-auto min-w-max max-w-[95vw]"
                       onMouseEnter={cancelClose}
                       onMouseLeave={closeMegaMenu}
                       onKeyDown={(e) => { if (e.key === "Escape") setActiveMegaMenu(null); }}
                     >
-                      {type === "intelligence" && <IntelligencePanel onClose={() => setActiveMegaMenu(null)} />}
                       {type === "learn" && <LearnPanel onClose={() => setActiveMegaMenu(null)} />}
                       {type === "tools" && <ToolsPanel onClose={() => setActiveMegaMenu(null)} />}
-                      {type === "states" && <StatesPanel onClose={() => setActiveMegaMenu(null)} />}
                       {type === "advise" && <AdvisePanel onClose={() => setActiveMegaMenu(null)} />}
                     </div>
                   )}
@@ -808,6 +780,24 @@ const Header = () => {
               );
             })}
           </nav>
+
+          {/* Wide mega-menu panels — rendered from the full-width row so they can anchor left/right correctly */}
+          {(activeMegaMenu === "states" || activeMegaMenu === "intelligence") && (
+            <div
+              id={`megamenu-${activeMegaMenu}`}
+              role="region"
+              aria-label={`${activeMegaMenu} navigation`}
+              className={`absolute top-full z-50 mt-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-2xl rounded-xl overflow-y-auto max-h-[80vh] w-auto min-w-max max-w-[95vw] ${
+                "left-0"
+              }`}
+              onMouseEnter={cancelClose}
+              onMouseLeave={closeMegaMenu}
+              onKeyDown={(e) => { if (e.key === "Escape") setActiveMegaMenu(null); }}
+            >
+              {activeMegaMenu === "intelligence" && <IntelligencePanel onClose={() => setActiveMegaMenu(null)} />}
+              {activeMegaMenu === "states" && <StatesPanel onClose={() => setActiveMegaMenu(null)} />}
+            </div>
+          )}
 
           {/* SEARCH: fills all remaining space */}
           <form onSubmit={handleSearchSubmit} className="hidden md:flex flex-1 min-w-0">
@@ -862,7 +852,7 @@ const Header = () => {
             )}
             <div className="xl:hidden">
               <button
-                className="flex items-center gap-1.5 px-3 py-2 min-h-[44px] text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition-colors font-bold text-xs uppercase tracking-wide border border-slate-200 dark:border-slate-700"
+                className="flex items-center gap-1.5 px-3 py-2 min-h-11 text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition-colors font-bold text-xs uppercase tracking-wide border border-slate-200 dark:border-slate-700"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
                 aria-expanded={mobileMenuOpen}
@@ -908,7 +898,7 @@ const Header = () => {
                 <button
                   type="submit"
                   disabled={!searchQuery.trim()}
-                  className="text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 px-5 py-3 rounded-lg transition-colors shrink-0 min-h-[48px]"
+                  className="text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 px-5 py-3 rounded-lg transition-colors shrink-0 min-h-12"
                 >
                   Go
                 </button>
@@ -922,6 +912,7 @@ const Header = () => {
                 label: "Academy & Learning",
                 emoji: "🎓",
                 children: [
+                  { label: "📖 The Book — Transforming American Healthcare", href: "/book", sub: [] },
                   { label: "Personalized Learning", href: "/academy/personalized-learning", sub: [] },
                   { label: "Learning Tracks", href: "/academy/tracks", sub: [] },
                   { label: "Courses", href: "/academy/courses", sub: [] },
@@ -1003,7 +994,7 @@ const Header = () => {
               <div key={section.key} className="border-b border-slate-100 dark:border-slate-700">
                 <button
                   onClick={() => setMobileSection(mobileSection === section.key ? null : section.key)}
-                  className="w-full flex items-center justify-between px-4 py-4 min-h-[56px] font-bold text-base text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                  className="w-full flex items-center justify-between px-4 py-4 min-h-14 font-bold text-base text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
                 >
                   <span className="flex items-center gap-3">
                     <span className="text-xl leading-none">{section.emoji}</span>
@@ -1020,7 +1011,7 @@ const Header = () => {
                         <Link
                           href={child.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="flex items-center px-6 py-3.5 min-h-[48px] text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors border-b border-slate-100 dark:border-slate-700 last:border-0"
+                          className="flex items-center px-6 py-3.5 min-h-12 text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors border-b border-slate-100 dark:border-slate-700 last:border-0"
                         >
                           {child.label}
                         </Link>
@@ -1029,7 +1020,7 @@ const Header = () => {
                             key={sub.href}
                             href={sub.href}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="flex items-center pl-10 pr-4 py-3 min-h-[44px] text-sm text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-slate-800 dark:hover:text-slate-200 transition-colors border-b border-slate-100 dark:border-slate-700 last:border-0"
+                            className="flex items-center pl-10 pr-4 py-3 min-h-11 text-sm text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-slate-800 dark:hover:text-slate-200 transition-colors border-b border-slate-100 dark:border-slate-700 last:border-0"
                           >
                             <ChevronRightIcon className="w-3 h-3 mr-2 shrink-0 text-slate-300" />
                             {sub.label}
@@ -1048,14 +1039,14 @@ const Header = () => {
                 <Link
                   href="/login"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex-1 text-center border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 text-sm font-bold py-3 rounded-xl hover:bg-white dark:hover:bg-slate-700 transition-colors min-h-[48px] flex items-center justify-center"
+                  className="flex-1 text-center border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 text-sm font-bold py-3 rounded-xl hover:bg-white dark:hover:bg-slate-700 transition-colors min-h-12 flex items-center justify-center"
                 >
                   Log In
                 </Link>
                 <Link
                   href="/subscribe"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex-1 text-center bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold py-3 rounded-xl transition-colors min-h-[48px] flex items-center justify-center"
+                  className="flex-1 text-center bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold py-3 rounded-xl transition-colors min-h-12 flex items-center justify-center"
                 >
                   Subscribe
                 </Link>

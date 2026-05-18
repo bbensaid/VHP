@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HubSubscribeCTA from "@/components/HubSubscribeCTA";
 import LatestHubReports from "@/components/LatestHubReports";
+import FromTheBook from "@/components/FromTheBook";
 
 export const metadata = {
   title: "Economics | Health Transformation Review",
@@ -48,7 +49,14 @@ export default function Page() {
           Analyzing the financial drivers of healthcare transformation, from value-based care to market consolidation.
         </p>
       </div>
-      
+
+      <FromTheBook
+        chapter="Chapters 8 & 9"
+        chapterTitle="The Economics Pillar — Global Budgets, Reference-Based Pricing, and Financial Reform"
+        excerpt="Chapter 8 dissects Vermont's four attempts at global budgets, Maryland's decade of evidence, and how the AHEAD Model integrates with Act 68's mandate. Chapter 9 provides the VBC financial modeling toolkit: shared savings, APM readiness, and the 65-item contract review checklist."
+        href="/book#chapters"
+      />
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {topics.map((item) => (
           <Link key={item.label} href={item.href} className="group flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-emerald-400 hover:bg-emerald-50/80">
