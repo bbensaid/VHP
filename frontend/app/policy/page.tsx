@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HubSubscribeCTA from "@/components/HubSubscribeCTA";
 import LatestHubReports from "@/components/LatestHubReports";
+import FromTheBook from "@/components/FromTheBook";
 
 export const metadata = {
   title: "Policy | Health Transformation Review",
@@ -105,7 +106,14 @@ export default function Page() {
           Navigating the complex landscape of healthcare regulation, legislation, and compliance.
         </p>
       </div>
-      
+
+      <FromTheBook
+        chapter="Chapters 4 & 5"
+        chapterTitle="The Policy Pillar — Legislative Architecture for Structural Reform"
+        excerpt="Vermont's Acts 167 and 68 are examined as the definitive case study in how policy creates the mandatory architecture for transformation. Chapter 4 decodes the Oliver Wyman blueprint; Chapter 5 covers CMMI models, 1115 waivers, and the H.R. 1 federal policy landscape."
+        href="/book#chapters"
+      />
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {topics.map((item) => (
           <Link key={item.label} href={item.href} className="group flex flex-col p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 hover:border-sky-400 hover:bg-sky-50/80">
