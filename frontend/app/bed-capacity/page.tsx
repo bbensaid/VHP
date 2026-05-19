@@ -167,7 +167,11 @@ function AlertBanner({ alerts, onDismiss }: { alerts: CapacityAlert[]; onDismiss
           )}
         </ul>
       </div>
-      <button onClick={onDismiss} className="shrink-0 text-slate-400 hover:text-slate-600 transition-colors">
+      <button
+        onClick={onDismiss}
+        aria-label="Dismiss notice"
+        className="shrink-0 text-slate-400 hover:text-slate-600 transition-colors"
+      >
         <XMarkIcon className="w-4 h-4" />
       </button>
     </div>
@@ -230,7 +234,13 @@ function BedUpdatePanel({ hospitalId, hospitalName, currentBeds, onClose, onSave
             <p className="text-xs font-black uppercase tracking-widest text-indigo-200">Update bed counts</p>
             <h3 className="text-white font-black text-base leading-tight">{hospitalName}</h3>
           </div>
-          <button onClick={onClose} className="text-indigo-200 hover:text-white"><XMarkIcon className="w-5 h-5" /></button>
+          <button
+            onClick={onClose}
+            aria-label="Close dialog"
+            className="text-indigo-200 hover:text-white"
+          >
+            <XMarkIcon className="w-5 h-5" />
+          </button>
         </div>
         <div className="p-5 space-y-4">
           {bedTypes.map(({ key, label }) => {

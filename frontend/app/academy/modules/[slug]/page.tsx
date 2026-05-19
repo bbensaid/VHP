@@ -23,21 +23,21 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
 
-  const module = await client.fetch(
+  const mod = await client.fetch(
     `*[_type == "academyModule" && slug.current == $slug][0]{
       title, summary, courseTitle, moduleNumber
     }`,
     { slug }
   );
 
-  if (!module) return { title: "Module Not Found" };
+  if (!mod) return { title: "Module Not Found" };
 
   return {
-    title: `${module.title} | HTR Academy`,
-    description: module.summary,
+    title: `${mod.title} | HTR Academy`,
+    description: mod.summary,
     openGraph: {
-      title: module.title,
-      description: module.summary,
+      title: mod.title,
+      description: mod.summary,
       type: "article",
     },
   };
