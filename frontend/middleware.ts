@@ -93,8 +93,20 @@ const AUTH_ROUTES = ["/login", "/signup"];
 
 const BETA_COOKIE = "htr_beta";
 
-// Set this to 'true' to allow testers to browse the entire app without signing in.
-const BYPASS_AUTH = true;
+// Allow testers to browse the entire app without signing in.
+// Gated behind ALLOW_AUTH_BYPASS so production can never accidentally inherit
+// a dev/beta setting. Default is FALSE — must be explicitly opted-in via env.
+//
+// During beta: set ALLOW_AUTH_BYPASS=true in Vercel/host env.
+// At GA: remove or set to false. The HIERARCHY-based role checks below resume.
+const BYPASS_AUTH = process.env.ALLOW_AUTH_BYPASS === "true";
+
+if (BYPASS_AUTH && process.env.NODE_ENV === "production") {
+  console.warn(
+    "[middleware] ⚠️ ALLOW_AUTH_BYPASS=true in PRODUCTION — role-gated routes are open. " +
+    "Unset this env var when leaving beta."
+  );
+}
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;

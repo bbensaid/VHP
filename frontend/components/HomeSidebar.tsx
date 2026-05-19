@@ -29,6 +29,15 @@ import {
   WrenchScrewdriverIcon,
   Cog6ToothIcon,
 } from "@heroicons/react/24/outline";
+import {
+  PILLARS,
+  PROGRAMS,
+  PROGRAM_GROUPS,
+  getTool,
+  type Pillar,
+  type PillarId,
+  type Program,
+} from "@/lib/taxonomy";
 
 interface HomeSidebarProps {
   onNavigate?: () => void;
@@ -67,94 +76,59 @@ type Section = {
   items?: RegularItem[];
 };
 
-// ─── SECTIONS ─────────────────────────────────────────────────────────────────
-const SECTIONS: Section[] = [
+// ─── PILLAR-SECTION CONFIG ────────────────────────────────────────────────────
+// View-local choices: which icon each pillar uses in this nav, the topic
+// sub-pages to surface (intelligence hub anchors), and the curated list of
+// Research Lab tools to expose for that pillar. The pillar identity, colors,
+// and accent classes come from lib/taxonomy/pillars.ts. The lab tool details
+// (label, href) come from lib/taxonomy/tools.ts via id lookup.
 
-  // ── PILLAR 1: POLICY ───────────────────────────────────────────────────────
-  {
-    id: "policy", label: "Policy",
-    icon: BuildingLibraryIcon,
-    dot: "bg-sky-500",
-    headerColor: "text-sky-700", headerBg: "bg-sky-100",
-    borderAccent: "border-sky-400", hoverBg: "hover:bg-sky-50",
-    divideColor: "divide-sky-100", activeItemBg: "bg-sky-100",
-    isPillarSection: true,
-    overviewHref: "/policy",
+const PILLAR_ICON: Record<PillarId, React.ComponentType<{ className?: string }>> = {
+  policy: BuildingLibraryIcon,
+  economics: BanknotesIcon,
+  technology: CpuChipIcon,
+  clinical: HeartIcon,
+  equity: ScaleIcon,
+  operations: Cog6ToothIcon,
+};
+
+interface PillarSidebarConfig {
+  intelligenceItems: PillarItem[];
+  labToolIds: string[];
+}
+
+const PILLAR_CONFIG: Record<PillarId, PillarSidebarConfig> = {
+  policy: {
     intelligenceItems: [
       { href: "/policy/regulation",  label: "Regulation & Legislation" },
       { href: "/policy/mandates",    label: "Public Health Mandates" },
       { href: "/policy/global",      label: "Global & Comparative Policy" },
       { href: "/policy/feasibility", label: "Policy Feasibility Studies" },
     ],
-    labItems: [
-      { href: "/research-lab/policy-quality?tab=policy",           label: "Policy Simulator" },
-      { href: "/research-lab/policy-quality?tab=medicaid-wr",      label: "Work Requirements Calculator" },
-      { href: "/research-lab/policy-quality?tab=hr1-cliff",        label: "H.R. 1 Cliff Scenario" },
-      { href: "/research-lab/knowledge-workspace?tab=leaderboard", label: "Innovation Leaderboard" },
-    ],
+    labToolIds: ["policy-simulator", "medicaid-wr-calculator", "hr1-cliff", "innovation-leaderboard"],
   },
-
-  // ── PILLAR 2: ECONOMICS ────────────────────────────────────────────────────
-  {
-    id: "economics", label: "Economics",
-    icon: BanknotesIcon,
-    dot: "bg-emerald-500",
-    headerColor: "text-emerald-700", headerBg: "bg-emerald-100",
-    borderAccent: "border-emerald-400", hoverBg: "hover:bg-emerald-50",
-    divideColor: "divide-emerald-100", activeItemBg: "bg-emerald-100",
-    isPillarSection: true,
-    overviewHref: "/economics",
+  economics: {
     intelligenceItems: [
       { href: "/economics/value",      label: "Value-Based Care Models" },
       { href: "/economics/market",     label: "Market & Finance" },
       { href: "/economics/cea",        label: "Labor & Workforce Strategy" },
       { href: "/economics/investment", label: "Healthcare Investment Trends" },
     ],
-    labItems: [
-      { href: "/research-lab/payment-models?tab=apm-design",   label: "APM Design Lab" },
-      { href: "/research-lab/payment-models?tab=apm-calc",    label: "Shared Savings Calculator" },
-      { href: "/research-lab/payment-models?tab=cea",         label: "CEA Calculator" },
-      { href: "/research-lab/payment-models?tab=gb-transition", label: "Global Budget Transition Modeler" },
-      { href: "/research-lab/policy-quality?tab=scorecard",   label: "Hospital Financial Stress Test" },
-      { href: "/research-lab/policy-quality?tab=hta",         label: "HTA Studio" },
-      { href: "/research-lab/policy-quality?tab=actuarial",   label: "Actuarial Lab" },
+    labToolIds: [
+      "apm-design-lab", "shared-savings-calc", "cea-calculator", "global-budget-modeler",
+      "hospital-stress-test", "hta-studio", "actuarial-lab",
     ],
   },
-
-  // ── PILLAR 3: TECHNOLOGY ───────────────────────────────────────────────────
-  {
-    id: "technology", label: "Technology",
-    icon: CpuChipIcon,
-    dot: "bg-indigo-500",
-    headerColor: "text-indigo-700", headerBg: "bg-indigo-100",
-    borderAccent: "border-indigo-400", hoverBg: "hover:bg-indigo-50",
-    divideColor: "divide-indigo-100", activeItemBg: "bg-indigo-100",
-    isPillarSection: true,
-    overviewHref: "/technology",
+  technology: {
     intelligenceItems: [
       { href: "/technology/ai",       label: "AI & Machine Learning" },
       { href: "/technology/digital",  label: "Digital Health & Telemedicine" },
       { href: "/technology/security", label: "Data Security & Governance" },
       { href: "/technology/workflow", label: "Tech-Enabled Workflow" },
     ],
-    labItems: [
-      { href: "/research-lab/interoperability?tab=fhir",          label: "FHIR Interoperability Lab" },
-      { href: "/research-lab/vbc-clinical-quality?tab=hl7",       label: "Clinical Data Exchange Lab" },
-      { href: "/research-lab/technology-ai?tab=ai",               label: "AI Clinical Governance Lab" },
-      { href: "/research-lab/technology-ai?tab=digital",          label: "Digital Health Lab" },
-    ],
+    labToolIds: ["fhir-lab", "clinical-data-exchange", "ai-governance-lab", "digital-health-lab"],
   },
-
-  // ── PILLAR 4: CLINICAL ─────────────────────────────────────────────────────
-  {
-    id: "clinical", label: "Clinical",
-    icon: HeartIcon,
-    dot: "bg-red-500",
-    headerColor: "text-red-700", headerBg: "bg-red-100",
-    borderAccent: "border-red-400", hoverBg: "hover:bg-red-50",
-    divideColor: "divide-red-100", activeItemBg: "bg-red-100",
-    isPillarSection: true,
-    overviewHref: "/clinical",
+  clinical: {
     intelligenceItems: [
       { href: "/clinical/hah",        label: "Hospital-at-Home" },
       { href: "/clinical/precision",  label: "Precision Medicine" },
@@ -162,48 +136,21 @@ const SECTIONS: Section[] = [
       { href: "/clinical/genomics",   label: "Genomics & Predictive Medicine" },
       { href: "/clinical/population", label: "Population Health Management" },
     ],
-    labItems: [
-      { href: "/research-lab/interoperability?tab=risk",             label: "Risk Stratification Engine" },
-      { href: "/research-lab/vbc-clinical-quality?tab=risk",         label: "Risk Stratification Methodology" },
-      { href: "/research-lab/vbc-clinical-quality?tab=quality",      label: "VBC Quality Measures" },
-      { href: "/research-lab/vbc-clinical-quality?tab=value",        label: "High vs. Low Value Care" },
-      { href: "/research-lab/policy-quality?tab=quality",            label: "Clinical Quality Optimizer" },
-      { href: "/research-lab/knowledge-workspace?tab=workforce",     label: "Workforce Modeler" },
+    labToolIds: [
+      "risk-stratification-engine", "risk-stratification-methodology",
+      "vbc-quality-measures", "high-low-value-care", "clinical-quality-optimizer", "workforce-modeler",
     ],
   },
-
-  // ── PILLAR 5: EQUITY ───────────────────────────────────────────────────────
-  {
-    id: "equity", label: "Equity",
-    icon: ScaleIcon,
-    dot: "bg-violet-500",
-    headerColor: "text-violet-700", headerBg: "bg-violet-100",
-    borderAccent: "border-violet-400", hoverBg: "hover:bg-violet-50",
-    divideColor: "divide-violet-100", activeItemBg: "bg-violet-100",
-    isPillarSection: true,
-    overviewHref: "/equity",
+  equity: {
     intelligenceItems: [
-      { href: "/equity/sdoh",        label: "SDOH Integration" },
-      { href: "/vermont-sdoh",       label: "Vermont SDOH & Social Services" },
-      { href: "/equity/bias",        label: "Algorithmic Bias" },
-      { href: "/equity/access",      label: "Access Disparity" },
+      { href: "/equity/sdoh",   label: "SDOH Integration" },
+      { href: "/vermont-sdoh",  label: "Vermont SDOH & Social Services" },
+      { href: "/equity/bias",   label: "Algorithmic Bias" },
+      { href: "/equity/access", label: "Access Disparity" },
     ],
-    labItems: [
-      { href: "/research-lab/population-equity?tab=population", label: "Population Health Modeler" },
-      { href: "/research-lab/population-equity?tab=equity",     label: "Health Equity Studio" },
-    ],
+    labToolIds: ["population-modeler", "equity-studio"],
   },
-
-  // ── PILLAR 6: OPERATIONS ───────────────────────────────────────────────────
-  {
-    id: "operations", label: "Operations",
-    icon: Cog6ToothIcon,
-    dot: "bg-teal-500",
-    headerColor: "text-teal-700", headerBg: "bg-teal-100",
-    borderAccent: "border-teal-400", hoverBg: "hover:bg-teal-50",
-    divideColor: "divide-teal-100", activeItemBg: "bg-teal-100",
-    isPillarSection: true,
-    overviewHref: "/operations",
+  operations: {
     intelligenceItems: [
       { href: "/operations/revenue-cycle", label: "Revenue Cycle Management" },
       { href: "/operations/workforce",     label: "Workforce & Human Capital" },
@@ -211,13 +158,98 @@ const SECTIONS: Section[] = [
       { href: "/operations/supply-chain",  label: "Supply Chain & Infrastructure" },
       { href: "/operations/payer-network", label: "Payer & Network Operations" },
     ],
-    labItems: [
-      { href: "/research-lab/knowledge-workspace?tab=scorecard", label: "Transformation Scorecard" },
-      { href: "/research-lab/knowledge-workspace?tab=readiness", label: "VBC Readiness Assessment" },
-      { href: "/research-lab/knowledge-workspace?tab=evidence",  label: "Evidence Library" },
-      { href: "/research-lab/knowledge-workspace?tab=workspace", label: "Research Workspace" },
-    ],
+    labToolIds: ["transformation-scorecard", "vbc-readiness", "evidence-library", "research-workspace"],
   },
+};
+
+function buildPillarSection(pillar: Pillar): Section {
+  const cfg = PILLAR_CONFIG[pillar.id];
+  return {
+    id: pillar.id, label: pillar.label,
+    icon: PILLAR_ICON[pillar.id],
+    dot: pillar.classes.dot,
+    headerColor: pillar.classes.headerColor, headerBg: pillar.classes.headerBg,
+    borderAccent: pillar.classes.borderAccent, hoverBg: pillar.classes.hoverBg,
+    divideColor: pillar.classes.divideColor, activeItemBg: pillar.classes.activeItemBg,
+    isPillarSection: true,
+    overviewHref: pillar.href,
+    intelligenceItems: cfg.intelligenceItems,
+    labItems: cfg.labToolIds.map((id) => {
+      const t = getTool(id);
+      return { href: t.href, label: t.label };
+    }),
+  };
+}
+
+// ─── PROGRAM ICON MAP (view-local) ────────────────────────────────────────────
+// Programs come from lib/taxonomy/programs.ts; the sidebar chooses an icon per
+// program based on what it represents.
+
+const PROGRAM_ICON: Record<string, React.ComponentType<{ className?: string }>> = {
+  "vermont-medicaid":            DocumentTextIcon,
+  "vermont-blueprint":           HeartIcon,
+  "vermont-vcci":                HeartIcon,
+  "vermont-sash":                HeartIcon,
+  "vermont-designated-agencies": UsersIcon,
+  "vermont-sdoh":                UsersIcon,
+  "vermont-act-167":             MapPinIcon,
+  "vermont-act-68":              MapPinIcon,
+  "vermont-act-68-simulator":    TableCellsIcon,
+  "ahead-model":                 DocumentTextIcon,
+  "vermont-rht-program":         DocumentTextIcon,
+  "vermont-hospital-profiles":   TableCellsIcon,
+  "bed-capacity":                TableCellsIcon,
+  "vermont-legislative-resources": BookOpenIcon,
+  "california-calaim":           MapPinIcon,
+  "oregon-cco":                  MapPinIcon,
+  "states-explorer":             GlobeAmericasIcon,
+  "fifty-state-dashboard":       TableCellsIcon,
+  "cms-rural-simulator":         TableCellsIcon,
+};
+
+function buildProgramsSection(): Section {
+  // Two curated VCCI lab tools live inside States & Programs as direct
+  // shortcuts — they're labs, but they're Vermont-specific so they appear here.
+  const vcciLabTools = ["risk-stratification-methodology", "vbc-quality-measures"].map((id) => {
+    const t = getTool(id);
+    return { href: t.href, label: id === "risk-stratification-methodology" ? "VCCI Risk Stratification Lab" : "VBC Quality Measures Lab", icon: BeakerIcon };
+  });
+
+  const items: RegularItem[] = [];
+  PROGRAM_GROUPS.forEach((group) => {
+    const groupPrograms = PROGRAMS.filter((p) => p.group === group);
+    groupPrograms.forEach((p, i) => {
+      items.push({
+        href: p.href,
+        label: p.label,
+        icon: PROGRAM_ICON[p.id] ?? MapPinIcon,
+        // groupLabel renders a divider + mini-header before the item; only the
+        // first item of each group gets one.
+        groupLabel: i === 0 ? group : undefined,
+      });
+    });
+    // After Vermont Programs, insert two VCCI lab shortcuts (Vermont-flavored
+    // research lab tools that practitioners reach for from this menu).
+    if (group === "Vermont Programs") {
+      vcciLabTools.forEach((t) => items.push(t));
+    }
+  });
+
+  return {
+    id: "states", label: "States & Programs",
+    icon: MapPinIcon,
+    dot: "bg-rose-500",
+    headerColor: "text-rose-700", headerBg: "bg-rose-100",
+    borderAccent: "border-rose-500", hoverBg: "hover:bg-rose-100",
+    divideColor: "divide-rose-100", activeItemBg: "bg-rose-100",
+    items,
+  };
+}
+
+// ─── SECTIONS ─────────────────────────────────────────────────────────────────
+const SECTIONS: Section[] = [
+  // Pillar sections — generated from taxonomy
+  ...PILLARS.map(buildPillarSection),
 
   // ── ACADEMY ────────────────────────────────────────────────────────────────
   {
@@ -261,40 +293,8 @@ const SECTIONS: Section[] = [
     ],
   },
 
-  // ── STATES & PROGRAMS ──────────────────────────────────────────────────────
-  {
-    id: "states", label: "States & Programs",
-    icon: MapPinIcon,
-    dot: "bg-rose-500",
-    headerColor: "text-rose-700", headerBg: "bg-rose-100",
-    borderAccent: "border-rose-500", hoverBg: "hover:bg-rose-100",
-    divideColor: "divide-rose-100", activeItemBg: "bg-rose-100",
-    items: [
-      // Vermont Programs
-      { href: "/vermont-medicaid",               label: "Vermont Medicaid",               icon: DocumentTextIcon,        groupLabel: "Vermont Programs" },
-      { href: "/vermont-blueprint",              label: "Blueprint for Health",           icon: HeartIcon },
-      { href: "/vermont-vcci",                   label: "Vermont VCCI",                   icon: HeartIcon },
-      { href: "/vermont-sash",                   label: "SASH Program",                   icon: HeartIcon },
-      { href: "/vermont-designated-agencies",    label: "Designated Agencies (MH/SUD)",   icon: UsersIcon },
-      { href: "/vermont-sdoh",                   label: "SDOH & Social Services",         icon: UsersIcon },
-      { href: "/vermont-act-167",                label: "Vermont Act 167 (2022)",          icon: MapPinIcon },
-      { href: "/vermont-act-68",                 label: "Vermont Act 68 (2025)",           icon: MapPinIcon },
-      { href: "/vermont-act-68/simulator",       label: "Act 68 Simulator",               icon: TableCellsIcon },
-      { href: "/ahead-model",                    label: "AHEAD Model",                    icon: DocumentTextIcon },
-      { href: "/vermont-rht-program",            label: "RHT Program ($195M)",            icon: DocumentTextIcon },
-      { href: "/dashboard/vermont/hospitals",    label: "VT Hospital Profiles",           icon: TableCellsIcon },
-      { href: "/bed-capacity",                   label: "Bed Capacity & Transfer",        icon: TableCellsIcon },
-      { href: "/vermont-legislative-resources",          label: "Legislative Reports Library",    icon: BookOpenIcon },
-      { href: "/research-lab/vbc-clinical-quality?tab=risk",    label: "VCCI Risk Stratification Lab",   icon: BeakerIcon },
-      { href: "/research-lab/vbc-clinical-quality?tab=quality", label: "VBC Quality Measures Lab",       icon: BeakerIcon },
-      // Other States & Federal Programs
-      { href: "/california-calaim",              label: "California CalAIM",              icon: MapPinIcon,              groupLabel: "Other States & Federal" },
-      { href: "/oregon-cco",                     label: "Oregon CCO 3.0",                  icon: MapPinIcon },
-      { href: "/states",                         label: "All States Explorer",            icon: GlobeAmericasIcon },
-      { href: "/dashboard",                      label: "50-State Dashboard",             icon: TableCellsIcon },
-      { href: "/dashboard/simulator",            label: "CMS Rural Transformation",       icon: TableCellsIcon },
-    ],
-  },
+  // ── STATES & PROGRAMS — generated from taxonomy ────────────────────────────
+  buildProgramsSection(),
 
   // ── PRO-BONO ADVISORY & SERVICES ──────────────────────────────────────────
   {
@@ -346,7 +346,9 @@ function getSectionForPath(path: string, searchParams: URLSearchParams | null): 
 
   if (path === "/academy" || path.startsWith("/academy/")) return "learn";
 
-  const statesPrefixes = ["/vermont-medicaid", "/vermont-blueprint", "/vermont-vcci", "/vermont-sash", "/vermont-sdoh", "/vermont-designated-agencies", "/vermont-legislative-resources", "/vermont-act-167", "/vermont-act-68", "/vermont-rht-program", "/california-calaim", "/oregon-cco", "/states", "/dashboard", "/ahead-model", "/bed-capacity"];
+  // Program prefixes derived from the taxonomy — adding a program in
+  // lib/taxonomy/programs.ts automatically updates this match.
+  const statesPrefixes = PROGRAMS.map((p) => p.href.split("?")[0]);
   if (statesPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "states";
 
   const toolsPrefixes = ["/htr-simulator", "/medicaid-eligibility-simulator", "/hti-dashboard", "/the-wire", "/investment-tracker", "/transformation-friction-index", "/impact-simulation", "/multimedia", "/trending-topics"];
