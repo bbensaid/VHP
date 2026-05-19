@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createBrowserClient } from "@supabase/ssr";
 
@@ -142,9 +143,9 @@ export default function NewThreadForm({ categories, defaultCategory, userId }: P
       </div>
 
       <div className="flex items-center justify-between pt-1">
-        <a href="/community" className="text-sm text-slate-500 hover:text-slate-700 transition-colors">
+        <Link href="/community" className="text-sm text-slate-500 hover:text-slate-700 transition-colors">
           Cancel
-        </a>
+        </Link>
         <button
           type="submit"
           disabled={isPending || title.trim().length < 5 || body.trim().length < 10 || !categoryId}

@@ -71,6 +71,7 @@ export default function AudioBlock({ value }: AudioBlockProps) {
               allow="encrypted-media"
               className="rounded-lg shadow-sm"
               loading="lazy"
+              title={title || caption || (isSpotify ? "Spotify audio player" : "SoundCloud audio player")}
             ></iframe>
           ) : (
             <audio 

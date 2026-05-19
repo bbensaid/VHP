@@ -34,14 +34,14 @@ async function getCourseModules(courseTitle: string) {
 }
 
 export default async function AcademyModuleEngine({ slug }: { slug: string }) {
-  const module = await getModule(slug);
-  if (!module) return notFound();
+  const mod = await getModule(slug);
+  if (!mod) return notFound();
 
-  const courseModules = await getCourseModules(module.courseTitle);
+  const courseModules = await getCourseModules(mod.courseTitle);
 
   return (
     <AcademyModuleLayout
-      module={module}
+      module={mod}
       courseModules={courseModules}
       slug={slug}
     />
