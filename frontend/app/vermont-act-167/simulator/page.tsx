@@ -8,9 +8,9 @@
  * already external before this refactor).
  */
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import HubPageTemplate from "@/components/templates/HubPageTemplate";
 import {
   AdjustmentsHorizontalIcon,
@@ -24,6 +24,7 @@ import {
   ClipboardDocumentListIcon,
 } from "@heroicons/react/24/outline";
 import { RECOMMENDATIONS } from "./data";
+import ShareScenarioButton from "./ShareScenarioButton";
 import { ScenarioBuilder } from "./tabs/scenario";
 import { HospitalDeepDive } from "./tabs/hospital";
 import { FinancialModeling } from "./tabs/financial";
@@ -52,7 +53,20 @@ function Footer() {
 
 export default function Act167SimulatorPage() {
   const router = useRouter();
-  const [selectedRecs, setSelectedRecs] = useState<Set<string>>(new Set());
+  const searchParams = useSearchParams();
+
+  // Initial state comes from ?recs=R1,R2,…  Only known recommendation IDs are
+  // accepted, so a bookmarked URL stays robust to recommendation rename/removal.
+  const initialRecs = useRef<Set<string>>(
+    (() => {
+      const raw = searchParams?.get("recs");
+      if (!raw) return new Set<string>();
+      const known = new Set(RECOMMENDATIONS.map((r) => r.id));
+      const ids = raw.split(",").map((s) => s.trim()).filter((s) => known.has(s));
+      return new Set<string>(ids);
+    })()
+  );
+  const [selectedRecs, setSelectedRecs] = useState<Set<string>>(initialRecs.current);
 
   const toggleRec = useCallback((id: string) => {
     setSelectedRecs((prev) => {
@@ -65,6 +79,27 @@ export default function Act167SimulatorPage() {
   const selectAll = useCallback(() => setSelectedRecs(new Set(RECOMMENDATIONS.map((r) => r.id))), []);
   const clearAll  = useCallback(() => setSelectedRecs(new Set()), []);
   const goRoadmap = useCallback(() => router.push("?tab=roadmap", { scroll: false }), [router]);
+
+  // Sync selectedRecs → URL so the current page is shareable. We use
+  // router.replace to avoid filling the history stack with intermediate
+  // states, and we debounce slightly so rapid clicks coalesce.
+  const lastUrlRef = useRef<string>("");
+  useEffect(() => {
+    const handle = setTimeout(() => {
+      const sorted = Array.from(selectedRecs).sort();
+      const tab = searchParams?.get("tab");
+      const params = new URLSearchParams();
+      if (sorted.length > 0) params.set("recs", sorted.join(","));
+      if (tab) params.set("tab", tab);
+      const next = params.toString() ? `?${params.toString()}` : window.location.pathname;
+      if (next !== lastUrlRef.current) {
+        lastUrlRef.current = next;
+        router.replace(next, { scroll: false });
+      }
+    }, 200);
+    return () => clearTimeout(handle);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedRecs]);
 
   const tabs = [
     {
@@ -89,16 +124,24 @@ export default function Act167SimulatorPage() {
   ];
 
   return (
-    <HubPageTemplate
-      badgeLabel="Policy Simulation Engine · Beta — Synthetic Data"
-      title="Act 167 Transformation Simulator"
-      subtitle={`Analyze implementation scenarios for the Oliver Wyman Report's ${RECOMMENDATIONS.length} recommendations. Model the 5-pillar impact — policy, technology, financial, equity, and clinical — for any combination of actions.`}
-      tabs={tabs}
-      backLink="/vermont-act-167"
-      backLabel="Vermont Act 167"
-      badgeClass="bg-violet-50 text-violet-700 border border-violet-100"
-      backLinkHoverClass="hover:text-violet-600"
-      rowBreakAfter={4}
-    />
+    <>
+      <HubPageTemplate
+        badgeLabel="Policy Simulation Engine · Beta — Synthetic Data"
+        title="Act 167 Transformation Simulator"
+        subtitle={`Analyze implementation scenarios for the Oliver Wyman Report's ${RECOMMENDATIONS.length} recommendations. Model the 5-pillar impact — policy, technology, financial, equity, and clinical — for any combination of actions.`}
+        tabs={tabs}
+        backLink="/vermont-act-167"
+        backLabel="Vermont Act 167"
+        badgeClass="bg-violet-50 text-violet-700 border border-violet-100"
+        backLinkHoverClass="hover:text-violet-600"
+        rowBreakAfter={4}
+      />
+      {/* Floating share button — appears once at least one rec is selected. */}
+      {selectedRecs.size > 0 && (
+        <div className="fixed bottom-6 right-6 z-40">
+          <ShareScenarioButton />
+        </div>
+      )}
+    </>
   );
 }
