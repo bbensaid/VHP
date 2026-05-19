@@ -1,0 +1,65 @@
+Chapter 14. The Operations Pillar. Executing Hospital System Transformation.
+
+The Operations pillar is the execution backbone. We have said throughout the book that most transformation efforts fail in operations. Chapter 14 develops the structural argument for why operations matters so much and what operational transformation requires. Chapter 15 develops the operational practice in detail.
+
+The chapter is organized around five elements. Revenue cycle management under global budgets. Hierarchical condition category coding accuracy as a financial lever. Workforce strategy and credentialing. Supply chain and compliance. And the cultural transformation that operations requires.
+
+Element one. Revenue cycle management under global budgets.
+
+The revenue cycle is the operational process by which a healthcare organization gets paid for the care it delivers. The revenue cycle includes patient registration, eligibility verification, charge capture, coding, claim submission, denial management, payment posting, and accounts receivable management.
+
+Under fee-for-service, the revenue cycle is organized around individual claims. Each claim must be coded accurately, submitted timely, and followed through any denial process. The operational sophistication of the revenue cycle directly determines the organization's financial performance under fee-for-service.
+
+Under global budgets, the revenue cycle is structurally different. The total amount paid to the hospital is determined by the budget, not by claim volume. The revenue cycle is no longer about maximizing the count of approved claims. It is about ensuring that the hospital is operating within its budget allocation, that variances are detected early, and that performance against the budget is tracked accurately.
+
+The transition from a fee-for-service revenue cycle to a global-budget revenue cycle is a fundamental operational redesign. The systems must be reconfigured. The staff must be retrained. The performance metrics must be reset. The reporting infrastructure must be rebuilt.
+
+Most hospital chief financial officers, in two thousand twenty-six, have not redesigned their revenue cycles for global budgets, because most hospitals are not yet operating under global budgets. Vermont's hospitals are exceptions. The Vermont hospital revenue cycle redesign is happening now, alongside the Act 68 implementation timeline.
+
+The structural lesson is that revenue cycle redesign is one of the largest and most time-consuming operational tasks in the global budget transition. States considering comparable transitions should plan multi-year revenue cycle redesign timelines, and should plan substantial investment in the redesign work.
+
+Element two. Hierarchical condition category coding accuracy.
+
+Hierarchical condition categories, often abbreviated HCC, are a risk-adjustment classification system used by Medicare Advantage and increasingly by other risk-adjusted payment models. HCC coding accuracy directly affects payment levels. A patient whose HCC coding accurately reflects the patient's chronic conditions produces appropriate payment. A patient whose HCC coding under-reflects the patient's conditions produces inadequate payment.
+
+HCC coding is an operational discipline. The clinicians must document chronic conditions accurately and completely. The coders must capture the documented conditions accurately. The systems must support both the documentation and the coding. The quality assurance processes must verify both.
+
+Under fee-for-service, HCC coding accuracy is operationally important but not financially critical. Under risk-adjusted payment, HCC coding accuracy is financially critical. A hospital that under-codes its risk-adjusted patients will receive payment levels that do not reflect the actual clinical complexity of its panel. The hospital will lose money on patients it could have managed financially.
+
+The transition to risk-adjusted payment makes HCC coding accuracy a strategic priority. The investment in coding infrastructure, in clinician documentation training, and in coding quality assurance produces direct financial returns. The platform's research lab includes specific tools for HCC coding accuracy assessment.
+
+The structural lesson is that what looks like a back-office function under fee-for-service becomes a strategic financial lever under risk-adjusted payment. The operations pillar work includes recognizing the strategic lever and investing accordingly.
+
+Element three. Workforce strategy and credentialing.
+
+We have mentioned workforce throughout the book. Here we address it specifically as an Operations pillar concern.
+
+Workforce strategy under transformation is structurally different from workforce strategy under steady-state operations. Transformation requires new clinical models that require new clinical roles that require new credentialing pipelines that require new education programs. The workforce strategy must address all of these in parallel.
+
+The new clinical roles under transformation include behavioral health care managers in Collaborative Care Model practices, community health workers in social determinants integration, registered nurses in case management roles, and licensed clinical social workers in care coordination roles.
+
+The credentialing pipelines for these roles vary by state. Vermont's licensing framework supports most of these roles, but the workforce supply is constrained, particularly in rural areas. Credentialing reform, scope-of-practice reform, and licensure compact participation are the policy levers that can expand workforce supply.
+
+The education programs that produce these workforces operate at multiple levels. Community colleges produce community health workers and medical assistants. Universities produce registered nurses and licensed clinical social workers. Graduate programs produce nurse practitioners and physician assistants. Each level requires investment, partnership, and pipeline management.
+
+Vermont's transformation strategy includes workforce strategy across all of these levels. The Rural Health Transformation Program includes workforce investment. The Blueprint includes workforce support for its Community Health Teams. The Designated Agencies include workforce strategy for behavioral health. The work is not centrally coordinated as well as it should be. The Agency of Human Services restructuring, discussed in Chapter 20, contemplates better workforce coordination.
+
+The structural lesson is that workforce strategy is the longest-lead operational investment in transformation. The workforce that the system needs five years from now must be in training now. The investment cannot be deferred.
+
+Element four. Supply chain and compliance.
+
+Supply chain management in healthcare addresses pharmaceutical procurement, medical device logistics, group purchasing organization strategy, inventory resilience, and capital equipment planning. Compliance management addresses accreditation readiness, HIPAA compliance, regulatory audit management, and patient safety systems.
+
+Both supply chain and compliance are operational disciplines that look the same under fee-for-service and under value-based payment, but operate under different incentives. Under fee-for-service, supply chain optimization is a cost-center discipline. Under value-based payment, supply chain optimization is part of total cost of care management. Under fee-for-service, compliance is a regulatory necessity. Under value-based payment, compliance failures produce both regulatory penalty and reputational risk that affects contract performance.
+
+The transition to value-based payment elevates both supply chain and compliance from operational support functions to strategic capabilities. The investment in both must follow.
+
+Element five. Cultural transformation.
+
+The Operations pillar is, in the end, a cultural pillar as much as a technical pillar. The systems, processes, and analytics matter. The people who run them matter more. Transformation requires sustained cultural work across the organization.
+
+The cultural work includes leadership alignment, clinician engagement, board commitment, and ongoing communication about why the changes are happening and how they fit into the strategy. The cultural work is not a one-time act. It is an ongoing operational discipline.
+
+Vermont hospitals that are succeeding in the transition tend to have sustained leadership focus on the cultural work. Vermont hospitals that are struggling tend to have under-invested in it. The pattern is consistent and is, in our experience, the most reliable predictor of operational transformation success.
+
+In Chapter 15, we examine the Operations pillar in operational practice. We walk through thirty operational levers for cost reduction, an HCC coding walkthrough, denial management strategy, and the administrative cost gap that global budgets must close.
