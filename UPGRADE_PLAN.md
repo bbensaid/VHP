@@ -349,3 +349,21 @@ DECIDE — commit or discard:
 | **Total** | **9.0** | **5.5** |
 
 End of audit.
+
+---
+
+## Addendum — Pre-existing bugs surfaced by re-enabling ESLint (Phase 2.8)
+
+Phase 2.8 fixed the ESLint config (was broken before) and surfaced 16 errors that had been hidden by the broken lint. They're not introduced by Phase 2 work — they predate it. Listing here so they don't get forgotten.
+
+| Rule | Count | File(s) | Severity |
+|---|---:|---|---|
+| `react-hooks/rules-of-hooks` | 7 | `app/dashboard/DashboardIndexClient.tsx` (6), `components/academy/LearningTracksHub.tsx` (1) | 🔴 Real bug — hook called conditionally / inside callback |
+| `@typescript-eslint/no-unused-expressions` | 5 | various | 🟡 Likely safe but worth fixing |
+| `@next/next/no-html-link-for-pages` | 2 | various | 🟠 Use `<Link>` instead of `<a>` for internal routes |
+| `@next/next/no-assign-module-variable` | 2 | `components/templates/AcademyModuleEngine.tsx` | 🟠 Conflicts with module scope |
+| `@typescript-eslint/no-unused-vars` | 1 | one site | 🟡 Cleanup |
+
+Plus 340 warnings, mostly `@typescript-eslint/no-explicit-any` from before Phase 1's rule downgrade. None block the build.
+
+**Recommendation:** Fix the 7 rules-of-hooks errors in a dedicated commit. The others can be cleaned up incrementally.
