@@ -542,6 +542,8 @@ export default function ImpactSimulationPage() {
     const d: Record<string, number | string> = {};
     for (const inp of scenario.inputs) d[inp.id] = inp.default;
     return d;
+    // `scenario.inputs` is fixed by `scenario.id` via SCENARIOS.find.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scenario.id]);
 
   const [values, setValues] = useState<Record<string, number | string>>(defaultValues);
