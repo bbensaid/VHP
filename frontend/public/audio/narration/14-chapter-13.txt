@@ -1,0 +1,61 @@
+Chapter 13. The Equity Pillar in Practice. HEDIS Equity Measurement, HEROI, and Social Determinants Screening.
+
+Chapter 12 argued that equity is a structural variable, not a downstream filter. Chapter 13 examines what that looks like operationally. We address four operational topics. HEDIS equity stratification. The Health Equity Return on Investment Index, called HEROI, which the book introduces. Social determinants of health screening at scale. And Vermont's equity measurement framework.
+
+Topic one. HEDIS equity stratification.
+
+We described HEDIS in Chapter 11 as the principal quality measurement framework used by American health plans. Standard HEDIS reporting produces aggregate measures, such as the percentage of diabetic patients with a hemoglobin A-one-C below eight, or the percentage of pediatric patients with completed immunizations.
+
+HEDIS equity stratification reports the same measures, separately, by race, ethnicity, sex, and other demographic dimensions. The stratification reveals disparities that aggregate measures hide.
+
+The stratification looks simple. The operations are not simple. The race and ethnicity data must be collected reliably. The data must be standardized across reporting periods. The sample sizes within strata must be large enough to support reliable measurement. The reporting infrastructure must support the additional analytic complexity.
+
+The National Committee for Quality Assurance has been advancing HEDIS equity stratification over the past several years. The federal Centers for Medicare and Medicaid Services has been advancing equity reporting in Medicaid programs. State Medicaid agencies are moving at different rates. Vermont is among the more advanced state Medicaid programs in this respect, though the work is not yet complete.
+
+The structural significance of HEDIS equity stratification is that it makes disparities visible at the level where operational decisions are made. A primary care practice that sees its aggregate quality measures will not see the disparate outcomes within its panel. A primary care practice that sees its stratified quality measures will see the disparities and can act on them.
+
+Topic two. The Health Equity Return on Investment Index, HEROI.
+
+The Health Equity Return on Investment Index, which we are calling HEROI, is the book's term for explicitly costing the equity case. The premise is that equity investments produce returns. The returns may be clinical, financial, or social. The returns are often diffuse, long-term, and difficult to capture under conventional return-on-investment accounting. HEROI is the operational framework for capturing them.
+
+HEROI has four dimensions. Clinical impact, measured as reduction in disparate outcomes. Financial impact, measured as reduction in disparate utilization and cost. Social impact, measured as improvement in social determinants of health outcomes. Sustainability, measured as the durability of the investment's effects over time.
+
+Each of the four dimensions has specific measurement approaches. The clinical impact dimension uses HEDIS equity stratification. The financial impact dimension uses claims-based total cost of care analysis stratified by demographic dimension. The social impact dimension uses social determinants screening outcome tracking. The sustainability dimension uses longitudinal analysis of program effects.
+
+HEROI is structurally important because it provides a defensible analytical framework for equity investment decisions. Without such a framework, equity investments are either accepted as a matter of value or rejected as a matter of cost. With such a framework, equity investments are evaluated on the same evidentiary basis as other operational investments.
+
+The platform's Health Equity Studio, in the research lab, supports HEROI calculation. The Studio is designed for state Medicaid agencies, managed care organizations, and health system leadership making real equity investment decisions.
+
+Topic three. Social determinants of health screening at scale.
+
+We discussed the conceptual logic of social determinants screening in Chapter 12. Here we discuss the operational reality.
+
+Social determinants screening at scale is a workflow design problem. The screening must be brief enough to fit into clinical workflow. The screening must produce structured data. The structured data must connect to operational referral pathways. The patient's responses must be private enough that the patient is willing to disclose accurately.
+
+The most common screening instruments are the PHQ-nine for depression, the AUDIT-C for alcohol use, and the Accountable Health Communities Health-Related Social Needs Screening Tool, often abbreviated as AHC HRSN, for broader social needs. Each instrument has specific clinical evidence supporting its use. Each is brief enough for routine clinical workflow.
+
+The operational challenge is what happens after the screening. A positive screen is only useful if there is a workflow to act on it. A depression-positive PHQ-nine produces a follow-up workflow within the Collaborative Care Model. A food-insecurity-positive AHC HRSN produces a follow-up workflow connecting the patient to two-one-one Vermont, food banks, and Supplemental Nutrition Assistance Program enrollment. A housing-instability-positive AHC HRSN produces a follow-up workflow connecting the patient to housing services.
+
+The follow-up workflows are infrastructure. Without infrastructure, the screening produces data without action. The screening becomes a documentation exercise. The patient learns that disclosure produces no help. Disclosure declines. The screening's accuracy declines.
+
+Vermont's primary care practices, supported by the Blueprint, have been building the follow-up infrastructure for years. The work is genuinely operational. The Community Health Teams provide the staffing. The two-one-one Vermont platform provides the referral target inventory. The Designated Agencies provide the behavioral health connection. The Multi-Disciplinary Team model provides the integration mechanism.
+
+The structural lesson is that social determinants screening is operationally meaningful only when it is part of an integrated operational system. The screening alone is not the work. The system around the screening is the work.
+
+Topic four. Vermont's equity measurement framework.
+
+Vermont has been building, over several years, a coherent equity measurement framework that applies across state programs. The framework integrates HEDIS equity stratification, total cost of care analysis, social determinants outcome tracking, and qualitative engagement with affected communities.
+
+The framework is not yet complete. The data integration is uneven. The community engagement is improving but underdeveloped in some Vermont communities. The qualitative analytic capacity is limited. The framework is, in its current state, the most operationally serious state-level equity measurement framework currently operating, while also being substantially less mature than its designers would wish.
+
+The framework rests on several specific instruments. The VHCURES all-payer claims database, stratified for equity analysis. The Green Mountain Care Board's quality reporting, with equity stratification. The Department of Health's population health surveillance, integrated with clinical data. The Department of Vermont Health Access's VCCI program data, integrated with Medicaid eligibility data. The Agency of Human Services Act 68 implementation reporting, which includes equity reporting requirements.
+
+The structural lesson is that equity measurement requires integrated infrastructure. The integration is operationally complex. The integration is institutionally complex. The integration is, in Vermont and in every other state, the principal bottleneck in moving from equity as rhetoric to equity as operational practice.
+
+A note on the politics of equity measurement.
+
+Equity measurement is politically contested in ways that other forms of quality measurement are not. The collection of race and ethnicity data is, for reasons that include both legitimate privacy concerns and contested political values, more contested than the collection of comparable demographic data in other domains. The reporting of disparate outcomes by race and ethnicity is more contested than the reporting of comparable outcome variation by other dimensions.
+
+The book's view is that the politics of equity measurement is real and is not going away. The operational discipline of equity work must include the political discipline of explaining why the measurement matters, what is being done with the data, how the data is protected, and what the community-level benefit of the measurement is. Without sustained political work, the operational work cannot proceed.
+
+We have now completed the Equity pillar. In Chapter 14, we turn to the Operations pillar. We examine revenue cycle management under global budgets, hierarchical condition category coding accuracy as a financial lever, workforce strategy and credentialing, and supply chain and compliance in a transformed system.

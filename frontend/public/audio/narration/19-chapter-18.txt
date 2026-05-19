@@ -1,0 +1,53 @@
+Chapter 18. Political Sustainability. Protecting Transformation Across Election Cycles.
+
+Transformation is multi-year work. Multi-year work requires sustained political support. Sustained political support requires deliberate work to build and maintain. Chapter 18 addresses the political dimension of transformation directly.
+
+The chapter is organized around four themes. Coalition strategy. Evidence production. Institutional anchors. And the specific federal-state interface risks that any state-level transformation must navigate.
+
+Theme one. Coalition strategy.
+
+Healthcare transformation requires a coalition. The coalition includes state government, hospital leadership, primary care leadership, behavioral health leadership, social services leadership, payer leadership, organized labor, advocacy organizations, academic institutions, and the patient and community voices that the transformation is intended to serve. No single member of this coalition can drive transformation on its own. The coalition must work in concert.
+
+Building the coalition is the principal political work of transformation's early stages. The work includes shared diagnostic exercises, joint articulation of objectives, mutual accommodation of differing priorities, and the construction of governance structures that give each coalition member voice without giving any veto. Vermont's coalition was built over multiple years prior to the enactment of Acts 167 and 68. The coalition was not assembled in a single moment. It was assembled through sustained relationship-building, supported by deliberate diagnostic and analytic work, with the Oliver Wyman Blueprint as one of the consolidating products.
+
+Maintaining the coalition is the principal political work of transformation's middle stages. The work includes continued engagement, transparent communication about progress and setbacks, accommodation of evolving member priorities, and the construction of operational achievements that the coalition can collectively claim. Coalitions that are not actively maintained will fragment. The fragmentation will not be visible until a critical decision point arrives, at which time the coalition will have already failed.
+
+Evolving the coalition is the principal political work of transformation's later stages. As the transformation matures, new constituencies become important. New issues arise. The original coalition members may shift their priorities. The transformation strategy must accommodate these shifts without losing its structural coherence.
+
+The book's view is that coalition work is the most under-resourced element of most state-level transformation efforts. Technical work attracts funding and staff. Political work is often left to whoever has time. The states that are succeeding in transformation are those that have made coalition work a priority equal to the technical work.
+
+Theme two. Evidence production.
+
+Political support depends on evidence. The evidence that supports transformation must be produced, communicated, and contested within the political process. The evidence is not self-explanatory. It must be interpreted in ways that connect to the priorities of the political audience.
+
+Evidence production includes routine measurement, formal evaluation, comparative analysis, and the operational work of converting data into narrative. Each of these is a specific organizational capability. The state Medicaid agency must be able to produce routine performance measurement. The state university or contracted evaluator must be able to produce defensible formal evaluation. The state agency analysts must be able to produce comparative analysis. And someone, somewhere in the coalition, must be able to translate the data into stories that political audiences understand.
+
+Vermont's evidence production is structurally embedded. The Green Mountain Care Board produces annual hospital financial reports. The Agency of Human Services produces monthly Act 68 implementation updates. The Department of Vermont Health Access produces ongoing VCCI program evaluations. The University of Vermont produces independent evaluations of specific transformation elements. The Blueprint produces its own annual evaluation reports.
+
+The aggregate effect is that Vermont's transformation has, by design, a strong evidence base from which to defend its political support. The states that lack comparable evidence production capacity will struggle to defend their transformation strategies through political transitions.
+
+Theme three. Institutional anchors.
+
+Institutional anchors are the organizations and structures that hold transformation in place across political transitions. Anchors are not the same as champions. Champions are individuals who advocate for transformation. Anchors are institutions that institutionalize the work.
+
+Vermont's institutional anchors include the Green Mountain Care Board, established by Act forty-eight of two thousand eleven and operationalized over the years since. The Agency of Human Services restructuring, discussed in Chapter 20. The Department of Vermont Health Access. The University of Vermont Medical Center and its broader health system. The Vermont Department of Health. The Blueprint for Health and its statewide infrastructure. The Designated Agency system. Each of these institutions exists with statutory authority and operational continuity that survives gubernatorial and legislative transitions.
+
+The structural significance of institutional anchors is that they convert episodic political support into durable operational reality. A new governor cannot, by executive action, dismantle the Green Mountain Care Board. A new legislative majority cannot, in a single session, undo Act 68. The institutional structure provides resistance to short-term political pressure for retreat from long-term work.
+
+The Vermont structure is unusual in its institutional completeness. Many states attempting transformation have weaker institutional anchors. The states with weaker anchors are more vulnerable to political reversal. The states with stronger anchors are more resilient.
+
+Theme four. Federal-state interface risks.
+
+We have noted throughout the book that state-level transformation depends on continued federal cooperation. The federal AHEAD model. The section 1115 Medicaid waivers. The federal certified community behavioral health clinic funding. The federal Rural Health Transformation Program. Each of these is a federal commitment that the state cannot guarantee.
+
+The political sustainability of state-level transformation includes the management of federal-state interface risks. The management includes diversified federal relationships. Maintained communication with federal agencies across administrations. Coalition-building with other state-level transformation efforts to support federal-level continuity. And contingency planning for federal disruption.
+
+The recent enactment of H.R. 1, with its Medicaid work requirements and provider tax restrictions, is the most consequential federal-state interface disruption in recent state Medicaid history. Vermont's exposure to H.R. 1 is moderate. Vermont's transformation strategy was designed before H.R. 1 was final. The strategic adjustments that H.R. 1 requires are still being worked out. The political sustainability of Vermont's transformation, looking forward, depends in significant part on how Vermont navigates the H.R. 1 environment.
+
+A note on political risk management.
+
+Political risk management for transformation is itself an operational discipline. The discipline includes scenario planning, contingency planning, coalition maintenance, evidence production, and the deliberate cultivation of institutional anchors. None of this is glamorous work. All of it is necessary work.
+
+The states that have done this work successfully include, in addition to Vermont, Oregon and Maryland. Each has built institutional structures that have survived multiple political transitions. The states that have not done this work successfully include several that launched ambitious transformation efforts in the two thousand tens and reversed them within a few years of political change. The pattern is consistent. Political risk management is the difference between durable transformation and ephemeral transformation.
+
+In Chapter 19, we turn to the question of how to manage transformation as a portfolio. We apply Project Management Institute discipline to system transformation, examining risk registers, dependency tracking, milestone gates, and the transformation portfolio office.

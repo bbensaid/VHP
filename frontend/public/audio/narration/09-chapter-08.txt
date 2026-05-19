@@ -1,0 +1,61 @@
+Chapter 8. The Economics Pillar. Global Budgets, Reference-Based Pricing, and Financial Reform.
+
+The Economics pillar is the payment and financing model. It is the question of who pays whom for what, on what condition. We have argued throughout the book that the structural problem of American healthcare is, at the deepest level, an economics problem. The fee-for-service payment model rewards volume of services rendered, regardless of value produced. Volume-based payment produces the system we currently have. Value-based payment is what transformation requires. Chapter 8 develops the structural argument for the payment transition.
+
+The chapter is organized around five elements. The fee-for-service trap. Vermont's four attempts at global budgets. Maryland's decade of evidence. The AHEAD model integration with Act 68. And hospital financial modeling under the transition.
+
+Element one. The fee-for-service trap.
+
+Fee-for-service is the payment model in which providers are paid for each service rendered, on a per-unit basis. A primary care visit produces a payment. A laboratory test produces a payment. An imaging study produces a payment. A surgical procedure produces a payment. A hospital admission produces a payment. The more services rendered, the more revenue produced.
+
+The fee-for-service model has a particular structural problem. It systematically discourages prevention, care coordination, and avoidance of unnecessary care. A clinician who keeps a patient out of the hospital reduces the clinician's revenue. A hospital that reduces avoidable readmissions reduces the hospital's revenue. A health system that prevents a chronic disease complication forgoes the revenue that the complication would have generated.
+
+This is not a moral failing of providers. Providers are operating in the payment model the system has constructed. The structural problem is the model, not the providers. To change provider behavior at scale, the model must change.
+
+The transition out of fee-for-service has been attempted many times in American healthcare reform. Health maintenance organizations in the nineteen seventies and nineteen eighties. Medicare's per-discharge payment system, called diagnosis-related groups, beginning in the nineteen eighties. Capitation experiments in the nineteen nineties. Accountable care organizations under the Affordable Care Act. Bundled payments. Shared savings. Value-based purchasing programs. Each of these efforts produced some change. None of them produced the structural shift that transformation requires.
+
+The book's view is that the partial successes of prior payment reform efforts have, paradoxically, made full reform harder. The system has learned to accommodate partial reform without changing its underlying logic. Hospitals have learned to optimize against accountable care organization metrics without redesigning around them. Payers have learned to deploy value-based purchasing as a margin enhancement strategy rather than as a system change strategy. The partial reforms produced sophisticated workarounds rather than structural change.
+
+Element two. Vermont's four attempts at global budgets.
+
+Vermont has attempted global budget reform four times.
+
+The first attempt was the Multi-Payer Advanced Primary Care Practice initiative beginning in two thousand ten. The initiative aligned multiple payers around a primary care payment redesign for Blueprint for Health practices. It was a partial reform. It improved primary care economics. It did not address the hospital sector.
+
+The second attempt was the all-payer model beginning in two thousand seventeen. The all-payer model was a federal demonstration project that aligned Medicare, Medicaid, and commercial payers behind the OneCare Vermont accountable care organization. The Economics pillar was advanced. The Technology and Operations pillars were not ready. The result was failure cascade. OneCare's losses accumulated. By two thousand twenty-four, OneCare was being wound down.
+
+The third attempt was the Act 167 diagnostic and the Oliver Wyman Blueprint that followed. This was not an attempt to implement global budgets. It was an attempt to lay the analytical foundation for a future attempt. The diagnostic surfaced the structural failures of the prior attempts and proposed a state-level architecture that could succeed.
+
+The fourth attempt is Act 68 of two thousand twenty-five. Act 68 establishes mandatory hospital global budgets, reference-based pricing infrastructure, and integration with the federal AHEAD model. Act 68 is structurally different from the prior three attempts. It is mandatory. It is statutorily permanent. It is sequenced to follow the Technology pillar work of Act 62. It includes the Operations pillar work funded by the Rural Health Transformation Program. It is, in framework terms, the first attempt that has been sequenced correctly.
+
+We will know whether Act 68 succeeds by approximately two thousand thirty. The book makes the case that, on framework grounds, Act 68 has the highest probability of any state-level reform attempt in recent American history. We will see.
+
+Element three. Maryland's decade of evidence.
+
+Maryland operates the only long-running state-level hospital global budget regime in the United States. The Maryland Health Services Cost Review Commission, established in nineteen seventy-one, sets hospital rates under state regulatory authority. The current generation of Maryland global hospital budgeting began in two thousand fourteen. The accumulated decade of evidence is the strongest empirical case currently available for hospital global budgets as a payment reform strategy.
+
+The Maryland evidence base supports several conclusions. First, hospital global budgets are operationally feasible at scale. The argument that global budgets cannot work because the operational complexity is too high is empirically wrong. Maryland is a worked counter-example. Second, hospital global budgets can produce real cost reductions while maintaining quality. The Maryland data shows per-capita Medicare cost growth substantially below the national trend, with quality metrics that meet or exceed national benchmarks. Third, hospital global budgets shift the operational focus of hospitals in productive ways. Hospitals under global budgets invest more in care coordination, in transitions of care, and in community-based services. Hospitals not under global budgets invest more in volume generation.
+
+Maryland is not Vermont. Maryland's hospital sector is larger, more urban, and more academically oriented than Vermont's. Maryland's regulatory authority predates the current generation of state Medicaid agencies. The Maryland evidence does not translate directly to Vermont. But the Maryland evidence supports the structural feasibility of what Vermont is attempting.
+
+Element four. The AHEAD model integration with Act 68.
+
+The federal AHEAD model brings Medicare into Vermont's all-payer alignment under Act 68. Without Medicare, Vermont's global budget regime would cover only Medicaid and commercial insurance. Medicare covers the population segment that drives the majority of Vermont hospital admissions. A global budget regime that excludes Medicare cannot reach a majority of hospital revenue.
+
+The AHEAD integration is, in framework terms, the federal Policy pillar action that activates the full reach of Vermont's Economics pillar reform. Without AHEAD, Act 68 would have substantially less impact. With AHEAD, Act 68 covers the population segments that matter most to hospital financial reality.
+
+The strategic significance is that Vermont's transformation depends on continued federal cooperation. The Vermont political system, by itself, cannot guarantee AHEAD continuation. The risk is real and is discussed further in Chapter 18.
+
+Element five. Hospital financial modeling under the transition.
+
+The transition from fee-for-service to global budgets is, for individual hospitals, an existential financial transition. A hospital that has optimized its operations around volume of services rendered cannot survive a payment regime that pays for value of outcomes produced. The hospital must redesign its operations. The redesign takes time. The redesign costs money. The hospital must finance the redesign while continuing to operate.
+
+The book's view is that hospital financial modeling for the global budget transition is the single most underdeveloped element of most state-level transformation strategies. The model must address operating margin during the transition period. Capital availability for required investment. Workforce strategy for the new operating regime. Revenue cycle redesign for the new payment model. Service line decisions for the new financial logic.
+
+The platform's Hospital Financial Stress Test, available in the research lab, supports this modeling. It is designed for hospital chief financial officers, board finance committees, and state regulatory analysts who need to assess hospital financial viability under specific transition scenarios.
+
+A note on the Green Mountain Care Board.
+
+Vermont's Green Mountain Care Board, established by Act 48 of two thousand eleven, is the regulatory body responsible for hospital rate review, health insurance rate review, and oversight of major elements of Vermont's transformation strategy. The Green Mountain Care Board is, in framework terms, the regulatory infrastructure that Vermont built before launching Act 68. States considering comparable transformations would be well advised to build comparable regulatory infrastructure first. The capacity to implement global budgets at the state level depends on having a state agency with the analytical, legal, and operational capability to execute the implementation.
+
+In Chapter 9, we examine the Economics pillar in operational practice. We walk through shared savings calculations, risk stratification as the economic engine of value-based care, the six domains of value-based care readiness, and the sixty-five-item value-based care contract review checklist that has become the most-used operational artifact from the entire book.
