@@ -39,35 +39,15 @@ interface Props {
 }
 
 export default function DashboardIndexClient({ allStates, loading = false }: Props) {
-  if (loading) {
-    return (
-      <div className="w-full font-sans text-slate-800 flex flex-col pb-20 animate-pulse">
-        {/* Header skeleton */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-8 mb-6 shadow-sm">
-          <div className="h-10 bg-slate-200 rounded-xl w-2/3 mb-4" />
-          <div className="h-5 bg-slate-200 rounded-lg w-1/2 mb-8" />
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {Array.from({ length: 4 }).map((_, i) => (
-              <div key={i} className="bg-slate-200 rounded-xl h-24" />
-            ))}
-          </div>
-        </div>
-        {/* State card grid skeleton */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {Array.from({ length: 6 }).map((_, i) => (
-            <div key={i} className="animate-pulse bg-slate-200 rounded-xl h-24" />
-          ))}
-        </div>
-      </div>
-    );
-  }
-
+  // All hooks must run on every render. Early returns (e.g. the loading
+  // skeleton) come AFTER all hooks. Without this discipline, React's hook
+  // ordering invariant is violated and rules-of-hooks fires.
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedRegion, setSelectedRegion] = useState("All");
   const [sortConfig, setSortConfig] = useState<{ key: string; direction: "asc" | "desc" }>({ key: 'performanceScore', direction: 'desc' });
 
   const tableRows = useMemo(() => {
-    let states = Object.values(allStates).filter(state =>
+    const states = Object.values(allStates).filter(state =>
       state.stateName.toLowerCase().includes(searchQuery.toLowerCase()) &&
       (selectedRegion === "All" || (REGION_MAP[state.id] || "Other") === selectedRegion)
     );
@@ -99,6 +79,28 @@ export default function DashboardIndexClient({ allStates, loading = false }: Pro
       .sort((a, b) => a.performanceScore - b.performanceScore)
       .slice(0, 3);
   }, [allStates]);
+
+  // Loading skeleton — after all hooks, never before.
+  if (loading) {
+    return (
+      <div className="w-full font-sans text-slate-800 flex flex-col pb-20 animate-pulse">
+        <div className="bg-white border border-slate-200 rounded-2xl p-8 mb-6 shadow-sm">
+          <div className="h-10 bg-slate-200 rounded-xl w-2/3 mb-4" />
+          <div className="h-5 bg-slate-200 rounded-lg w-1/2 mb-8" />
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <div key={i} className="bg-slate-200 rounded-xl h-24" />
+            ))}
+          </div>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div key={i} className="animate-pulse bg-slate-200 rounded-xl h-24" />
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   const handleSort = (key: string) => {
     setSortConfig((current) => ({

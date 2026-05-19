@@ -94,7 +94,7 @@ function HCCCalculator() {
   const toggle = useCallback((id: string) => {
     setSelected((prev) => {
       const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
+      if (next.has(id)) next.delete(id); else next.add(id);
       return next;
     });
   }, []);
@@ -102,7 +102,7 @@ function HCCCalculator() {
   const toggleCat = useCallback((cat: string) => {
     setExpandedCats((prev) => {
       const next = new Set(prev);
-      next.has(cat) ? next.delete(cat) : next.add(cat);
+      if (next.has(cat)) next.delete(cat); else next.add(cat);
       return next;
     });
   }, []);
@@ -1140,7 +1140,7 @@ function ComorbidityVisualizer() {
   const toggleElix = (id: string) => {
     setElixSelected((prev) => {
       const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
+      if (next.has(id)) next.delete(id); else next.add(id);
       return next;
     });
   };
@@ -1148,7 +1148,7 @@ function ComorbidityVisualizer() {
   const toggleCharlson = (id: string) => {
     setCharlsonSelected((prev) => {
       const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
+      if (next.has(id)) next.delete(id); else next.add(id);
       return next;
     });
   };

@@ -19,9 +19,11 @@ function TrackCard({ track, highlighted }: { track: LearningTrack; highlighted?:
     }
   }, [highlighted]);
 
-  // We need progress for all module slugs in this track
-  // Use the first module slug as the hook reference — actual counts via getCompletedCount
-  const { getCompletedCount } = useModuleProgress(track.modules[0]?.slug ?? "");
+  // useModuleProgress holds the whole completion store keyed by module slug.
+  // Both helpers (getCompletedCount, isSlugCompleted) read against that store,
+  // so a single hook call at component top covers every module in the track.
+  // Calling another hook inside the .map() below would violate rules-of-hooks.
+  const { getCompletedCount, isSlugCompleted } = useModuleProgress(track.modules[0]?.slug ?? "");
   const completedCount = getCompletedCount(track.modules.map(m => m.slug));
   const totalModules   = track.modules.length;
   const progressPct    = totalModules > 0 ? Math.round((completedCount / totalModules) * 100) : 0;
@@ -106,7 +108,6 @@ function TrackCard({ track, highlighted }: { track: LearningTrack; highlighted?:
         {expanded && (
           <div className="border-t border-slate-100">
             {track.modules.map((mod, i) => {
-              const { isSlugCompleted } = useModuleProgressSafe(mod.slug);
               const isDone = isSlugCompleted(mod.slug);
               const levelColors: Record<string, string> = {
                 Foundational: "bg-emerald-100 text-emerald-700",
@@ -181,10 +182,6 @@ function TrackCard({ track, highlighted }: { track: LearningTrack; highlighted?:
   );
 }
 
-// Lightweight hook wrapper for per-module status inside the loop
-function useModuleProgressSafe(slug: string) {
-  return useModuleProgress(slug);
-}
 
 // ─── Coming-Soon Track Card ───────────────────────────────────────────────────
 
