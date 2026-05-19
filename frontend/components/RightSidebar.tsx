@@ -7,12 +7,7 @@ import { useVoice } from "@/components/VoiceContext";
 import { SparklesIcon, ArrowsPointingOutIcon, PaperAirplaneIcon, StopIcon, TrashIcon, ArrowPathIcon, ExclamationTriangleIcon, BookOpenIcon, HandThumbUpIcon, HandThumbDownIcon } from "@heroicons/react/24/outline";
 import ReactMarkdown from "react-markdown";
 
-interface Citation {
-  title: string;
-  url: string | null;
-  pillar: string | null;
-  source_type: string | null;
-}
+import { consumeChatStream, type Citation } from "@/lib/ai/stream";
 
 interface Message {
   role: "user" | "ai";
@@ -107,22 +102,6 @@ function getPageContext(path: string): string | undefined {
   if (path.startsWith("/search")) return "Platform search";
 
   return undefined;
-}
-
-// Parse [CITATIONS]...[/CITATIONS] sentinel out of streamed text
-function parseCitations(raw: string): { text: string; citations: Citation[] } {
-  const start = raw.indexOf("[CITATIONS]");
-  const end   = raw.indexOf("[/CITATIONS]");
-  if (start === -1 || end === -1) return { text: raw, citations: [] };
-
-  const jsonStr = raw.slice(start + "[CITATIONS]".length, end);
-  const text    = raw.slice(0, start).trimEnd();
-  try {
-    const citations = JSON.parse(jsonStr) as Citation[];
-    return { text, citations: Array.isArray(citations) ? citations : [] };
-  } catch {
-    return { text, citations: [] };
-  }
 }
 
 function classifyError(status: number | null, message: string): string {
@@ -247,43 +226,30 @@ export default function RightSidebar() {
         throw Object.assign(new Error("HTTP error"), { status: res.status });
       }
 
-      const reader = res.body.getReader();
-      const decoder = new TextDecoder();
-      let done = false;
-      let aiText = "";
-      let isFirstChunk = true;
+      let finalText = "";
+      let finalCitations: Citation[] | undefined;
 
-      while (!done) {
-        const { value, done: d } = await reader.read();
-        done = d;
-        if (value) {
-          let chunk = decoder.decode(value, { stream: true });
-          // Strip the leading keepalive space the backend sends before retrieval
-          if (isFirstChunk) { chunk = chunk.trimStart(); isFirstChunk = false; }
-          aiText += chunk;
-          const hasError = aiText.includes("[STREAM_ERROR]");
-          const displayRaw = hasError
-            ? aiText.replace("[STREAM_ERROR]", "").trimEnd() + "\n\n*Error generating response.*"
-            : aiText;
-          // Strip citation sentinel from live display — only show it when stream ends
-          const { text: displayText } = parseCitations(displayRaw);
-          setMessages((prev) => {
-            const updated = [...prev];
-            updated[updated.length - 1] = { role: "ai", text: displayText };
-            return updated;
-          });
-        }
+      // consumeChatStream handles both the legacy [CITATIONS]…[/CITATIONS]
+      // sentinel format AND the forward-looking NDJSON format. The backend
+      // can switch over without any client change.
+      for await (const evt of consumeChatStream(res)) {
+        finalText = evt.text;
+        if (evt.citations) finalCitations = evt.citations;
+        setMessages((prev) => {
+          const updated = [...prev];
+          updated[updated.length - 1] = { role: "ai", text: evt.text };
+          return updated;
+        });
       }
 
-      // Final parse — extract and attach citations
-      const { text: finalText, citations } = parseCitations(aiText);
+      // Attach the message id + citations on the final update.
       setMessages((prev) => {
         const updated = [...prev];
         updated[updated.length - 1] = {
           role: "ai",
           text: finalText,
           id: aiMsgId,
-          citations: citations.length > 0 ? citations : undefined,
+          citations: finalCitations,
         };
         return updated;
       });

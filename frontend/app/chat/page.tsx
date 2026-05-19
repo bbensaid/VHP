@@ -269,12 +269,7 @@ const ROLE_LABELS: Record<string, string> = {
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
-interface Citation {
-  title: string;
-  url: string | null;
-  pillar: string | null;
-  source_type: string | null;
-}
+import { consumeChatStream, type Citation } from "@/lib/ai/stream";
 
 interface Message {
   id: string;
@@ -284,18 +279,18 @@ interface Message {
   feedback?: "up" | "down";
 }
 
-function parseCitations(raw: string): { text: string; citations: Citation[] } {
-  const start = raw.indexOf("[CITATIONS]");
-  const end   = raw.indexOf("[/CITATIONS]");
-  if (start === -1 || end === -1) return { text: raw, citations: [] };
-  const jsonStr = raw.slice(start + "[CITATIONS]".length, end);
-  const text    = raw.slice(0, start).trimEnd();
-  try {
-    const citations = JSON.parse(jsonStr) as Citation[];
-    return { text, citations: Array.isArray(citations) ? citations : [] };
-  } catch {
-    return { text, citations: [] };
-  }
+/**
+ * Chat-page-specific post-processing. The backend may emit a `[STRIP_LAB]`
+ * sentinel to signal that the LLM's "TRY IT IN THE HTR LAB" prose section
+ * should be discarded and replaced with a catalog-matched section that
+ * follows. We strip the LAB block lazily so it disappears from the visible
+ * stream as soon as the sentinel is seen.
+ */
+function applyStripLab(text: string): string {
+  if (!text.includes("[STRIP_LAB]")) return text;
+  const labMarker = "🔬 TRY IT IN THE HTR LAB";
+  const stripAt = text.indexOf(labMarker);
+  return (stripAt >= 0 ? text.slice(0, stripAt) : text).replace("[STRIP_LAB]", "").trimEnd();
 }
 
 // ── Component ────────────────────────────────────────────────────────────────
@@ -406,54 +401,26 @@ export default function ChatPage() {
       }
       if (!res.body) throw new Error("No response body");
 
-      const reader = res.body.getReader();
-      const decoder = new TextDecoder();
-      let done = false;
-      let aiText = "";
-      let isFirstChunk = true;
+      let finalText = "";
+      let finalCitations: Citation[] | undefined;
 
-      while (!done) {
-        const { value, done: doneReading } = await reader.read();
-        done = doneReading;
-        if (value) {
-          let chunk = decoder.decode(value, { stream: true });
-          if (isFirstChunk) { chunk = chunk.trimStart(); isFirstChunk = false; }
-          aiText += chunk;
-
-          // [STRIP_LAB]: backend is replacing the LLM's HTR LAB section with the
-          // correct catalog-matched one. Strip everything from the LAB marker onward,
-          // then discard the sentinel itself so the correct section streams in clean.
-          if (aiText.includes("[STRIP_LAB]")) {
-            const labMarker = "🔬 TRY IT IN THE HTR LAB";
-            const stripAt = aiText.indexOf(labMarker);
-            aiText = (stripAt >= 0 ? aiText.slice(0, stripAt) : aiText)
-              .replace("[STRIP_LAB]", "").trimEnd();
-          }
-
-          const hasError = aiText.includes("[STREAM_ERROR]");
-          const rawDisplay = hasError
-            ? aiText.replace("[STREAM_ERROR]", "").trimEnd() + "\n\n*An error occurred generating this response.*"
-            : aiText;
-          // Strip citation sentinel while streaming — only show when complete
-          const { text: displayText } = parseCitations(rawDisplay);
-          setMessages((prev) => {
-            const updated = [...prev];
-            updated[updated.length - 1] = { ...updated[updated.length - 1], text: displayText };
-            return updated;
-          });
-        }
-      }
-
-      // Final parse — attach citations to the last message
-      const { text: finalText, citations } = parseCitations(aiText);
-      if (citations.length > 0) {
+      // Single helper handles both the legacy [CITATIONS] sentinel format and
+      // NDJSON when the backend opts in.
+      for await (const evt of consumeChatStream(res)) {
+        const display = applyStripLab(evt.text);
+        finalText = display;
+        if (evt.citations) finalCitations = evt.citations;
         setMessages((prev) => {
           const updated = [...prev];
-          updated[updated.length - 1] = {
-            ...updated[updated.length - 1],
-            text: finalText,
-            citations,
-          };
+          updated[updated.length - 1] = { ...updated[updated.length - 1], text: display };
+          return updated;
+        });
+      }
+
+      if (finalCitations) {
+        setMessages((prev) => {
+          const updated = [...prev];
+          updated[updated.length - 1] = { ...updated[updated.length - 1], text: finalText, citations: finalCitations };
           return updated;
         });
       }
