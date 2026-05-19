@@ -380,6 +380,10 @@ const P4P_MEASURES: P4PMeasure[] = [
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
+// Measures whose direction is inverted (lower = better, e.g. complaints).
+// Hoisted to module scope so the domain memo has a stable dependency.
+const INVERT_IDS = new Set(["ca1", "ha3"]);
+
 function starsFromCutPoints(value: number, cutPoints: [number, number, number, number], invert = false): number {
   if (invert) {
     // Lower is better (e.g., complaints)
@@ -673,14 +677,11 @@ function StarsTab() {
   const setPerf = (id: string, val: number) =>
     setPerformances((p) => ({ ...p, [id]: val }));
 
-  // Invert for complaints domain
-  const invertIds = new Set(["ca1", "ha3"]);
-
   const domainResults = useMemo(() => {
     return STAR_DOMAINS.map((domain) => {
       const measureStars = domain.measures.map((m) => {
         const val = performances[m.id] ?? m.cutPoints[1];
-        const stars = starsFromCutPoints(val, m.cutPoints, invertIds.has(m.id));
+        const stars = starsFromCutPoints(val, m.cutPoints, INVERT_IDS.has(m.id));
         return { ...m, val, stars };
       });
       const totalW = measureStars.reduce((s, m) => s + m.weight, 0);
@@ -1351,7 +1352,7 @@ function P4PTab() {
       readmissionSavings * years +
       commercialP4PPool * years;
     return { perMeasureRevenue, totalRevenue };
-  }, [selectedMeasuresList, currentPerf, targetPerf, memberCount, timeline, starRevenueLift, readmissionSavings, commercialP4PPool, vbcBonusRate]);
+  }, [selectedMeasuresList, currentPerf, targetPerf, memberCount, timeline, starRevenueLift, readmissionSavings, commercialP4PPool]);
 
   const roi = useMemo(() => {
     const net = revenue.totalRevenue - costs.total;

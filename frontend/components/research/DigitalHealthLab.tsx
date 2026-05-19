@@ -322,7 +322,6 @@ function RPMCalculator() {
       cpt99458,
     };
   }, [
-    condition,
     patients,
     hospRate,
     edRate,
@@ -636,7 +635,7 @@ function TelehealthModeler() {
       travelCostSaved,
       newPatientsReached,
     };
-  }, [specialty, monthlyVisits, adoptionRate, substitutionRate, parity, travelMiles, waitTimeSaved, inPersonNoShow, teleNoShow, cmsRestrict, spec]);
+  }, [monthlyVisits, adoptionRate, substitutionRate, parity, travelMiles, waitTimeSaved, inPersonNoShow, teleNoShow, cmsRestrict, spec]);
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

@@ -23,6 +23,10 @@ function formatAPA(c: Citation) {
   return `${c.author} (${c.year}). ${c.title}. *${c.journal}*, ${c.volumeIssue}.${doi}`;
 }
 
+// Static lookup; hoisted to module scope so the filter memo below has a
+// stable dependency.
+const PRIORITY_ORDER: Record<NotePriority, number> = { High: 0, Medium: 1, Low: 2 };
+
 export function ResearchNotes() {
   const [notes, setNotes] = useLocalStorage<ResearchNote[]>("rw:notes", SAMPLE_NOTES);
   const [citations, setCitations] = useLocalStorage<Citation[]>("rw:citations", []);
@@ -104,8 +108,6 @@ export function ResearchNotes() {
     navigator.clipboard.writeText(text).then(() => showToast("Citations copied"));
   }, [citations, citFormat, showToast]);
 
-  const priorityOrder: Record<NotePriority, number> = { High: 0, Medium: 1, Low: 2 };
-
   const filteredNotes = useMemo(() => {
     let out = notes;
     if (filterCat !== "All") out = out.filter((n) => n.category === filterCat);
@@ -118,7 +120,7 @@ export function ResearchNotes() {
           n.tags.some((t) => t.toLowerCase().includes(search.toLowerCase()))
       );
     return [...out].sort((a, b) => {
-      if (sortBy === "priority") return priorityOrder[a.priority] - priorityOrder[b.priority];
+      if (sortBy === "priority") return PRIORITY_ORDER[a.priority] - PRIORITY_ORDER[b.priority];
       if (sortBy === "category") return a.category.localeCompare(b.category);
       return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
     });

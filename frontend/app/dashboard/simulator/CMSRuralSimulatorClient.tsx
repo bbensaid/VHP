@@ -102,6 +102,9 @@ export default function CMSRuralSimulatorClient() {
         k, Math.round(selected.reduce((s, r) => s + r.pillarScores[k], 0) / selected.length)
       ])
     ) as Record<PillarKey, number>
+    // `selected` is derived from `selectedRecs` on every render — depending
+    // on `selectedRecs` is equivalent.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedRecs])
 
   const totalCostM = selected.reduce((s, r) => s + r.annualCostM, 0)

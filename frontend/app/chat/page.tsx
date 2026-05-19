@@ -369,6 +369,10 @@ export default function ChatPage() {
       setMessages([{ id: crypto.randomUUID(), role: "user", text: prefill }]);
       streamResponse(prefill);
     }
+    // Mount-only: we consume the sessionStorage prefill exactly once. Adding
+    // streamResponse to deps would re-fire on every render (the function is
+    // recreated each render).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // ── Streaming ──────────────────────────────────────────────────────────────

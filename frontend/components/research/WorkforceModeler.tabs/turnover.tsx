@@ -128,7 +128,7 @@ export function TurnoverROITab() {
       annualTurnovers,
       totalAnnualCost,
     };
-  }, [role, orgSize, roleParams]);
+  }, [orgSize, roleParams]);
 
   const roiResults = useMemo(() => {
     const prog = RETENTION_PROGRAMS[retentionProgram];

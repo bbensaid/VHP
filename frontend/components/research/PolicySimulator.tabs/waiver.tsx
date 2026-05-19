@@ -108,6 +108,9 @@ export function WaiverTab() {
       approvalScore,
       baseSpend,
     };
+    // `waiverInfo` is derived from `waiverType` via WAIVER_TYPES.find. Depending
+    // on `waiverType` covers it.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     stateData,
     waiverType,

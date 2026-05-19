@@ -11,11 +11,12 @@ import { Badge, InfoCard, PillarGauge, MetricCard, TabBtn } from "../atoms";
 // TAB 4: EQUITY & ACCESS ANALYSIS
 // ─────────────────────────────────────────────────────────────────────────────
 
+// Static; hoisted to module scope so countyData's memo has a stable dependency.
+const TRANSPORT_MULTIPLIERS = { baseline: 1.0, enhanced: 0.65, full: 0.35 };
+
 export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) {
   const [view, setView] = useState<"county" | "population" | "transport">("county");
   const [transportScenario, setTransportScenario] = useState<"baseline" | "enhanced" | "full">("baseline");
-
-  const transportMultipliers = { baseline: 1.0, enhanced: 0.65, full: 0.35 };
 
   const countyData = useMemo(() => {
     return COUNTY_DATA.map((c) => {
@@ -24,7 +25,7 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
       );
       const hospital = HOSPITALS.find((h) => h.id === c.primaryHospital);
       const adjustedTravelTime = c.travelTimeToHospitalMin * (hasHospitalRec && hospital?.urgency === "urgent" ? 1.6 : 1);
-      const accessScore = Math.max(0, 100 - (c.noVehiclePct * 1.5) - (c.belowPovertyPct * 0.8) - (adjustedTravelTime * 0.4) * transportMultipliers[transportScenario]);
+      const accessScore = Math.max(0, 100 - (c.noVehiclePct * 1.5) - (c.belowPovertyPct * 0.8) - (adjustedTravelTime * 0.4) * TRANSPORT_MULTIPLIERS[transportScenario]);
       return { ...c, adjustedTravelTime, accessScore, hasHospitalRec, hospital };
     });
   }, [selectedRecs, transportScenario]);

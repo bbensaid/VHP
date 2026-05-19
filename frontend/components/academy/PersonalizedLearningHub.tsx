@@ -1480,19 +1480,23 @@ function PathListCard({
 
 // ─── Loading State ─────────────────────────────────────────────────────────────
 
+// Hoisted so the interval effect doesn't see a fresh array reference each
+// render.
+const GENERATING_STEPS = [
+  "Analyzing your profile and goals…",
+  "Mapping topics to HTR pillars…",
+  "Designing your weekly curriculum…",
+  "Generating learning content…",
+  "Creating knowledge checks…",
+  "Finalizing your personalized path…",
+];
+
 function GeneratingState() {
-  const steps = [
-    "Analyzing your profile and goals…",
-    "Mapping topics to HTR pillars…",
-    "Designing your weekly curriculum…",
-    "Generating learning content…",
-    "Creating knowledge checks…",
-    "Finalizing your personalized path…",
-  ];
+  const steps = GENERATING_STEPS;
   const [step, setStep] = useState(0);
 
   useEffect(() => {
-    const id = setInterval(() => setStep((s) => (s + 1) % steps.length), 3200);
+    const id = setInterval(() => setStep((s) => (s + 1) % GENERATING_STEPS.length), 3200);
     return () => clearInterval(id);
   }, []);
 
