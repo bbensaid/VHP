@@ -30,10 +30,6 @@ jobs:
 
       - name: Lint
         run: npm run lint
-        # Non-blocking: the lint config was fixed in Phase 2.8 and surfaced
-        # 16 pre-existing errors (mostly react-hooks/rules-of-hooks bugs).
-        # Once those are cleaned up, drop this `continue-on-error` line.
-        continue-on-error: true
 
       - name: Type check
         run: npx tsc --noEmit

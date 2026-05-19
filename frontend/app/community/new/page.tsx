@@ -1,6 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import Link from "next/link";
 import type { Metadata } from "next";
 import NewThreadForm from "./NewThreadForm";
 
@@ -33,7 +34,7 @@ export default async function NewThreadPage({ searchParams }: Props) {
     <div className="min-h-screen bg-slate-50">
       <div className="max-w-2xl mx-auto px-4 py-10">
         <nav className="text-sm text-slate-500 mb-6" aria-label="Breadcrumb">
-          <a href="/community" className="hover:text-indigo-600 transition-colors">Community</a>
+          <Link href="/community" className="hover:text-indigo-600 transition-colors">Community</Link>
           <span className="mx-2">›</span>
           <span className="text-slate-800 font-medium">New Discussion</span>
         </nav>
