@@ -6,8 +6,11 @@
     "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "lint:strict": "eslint . --ext .ts,.tsx,.js,.jsx --max-warnings 0",
     "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "test:e2e:install": "playwright install --with-deps chromium",
     "smoke": "npm run typecheck && npm run lint && npm run build"
   },
   "dependencies": {
