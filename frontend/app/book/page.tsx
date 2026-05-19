@@ -19,6 +19,12 @@ import {
   PILLARS,
   type PillarId,
 } from "@/lib/taxonomy";
+import { getAllTracks } from "@/lib/narration";
+
+// Map chapter.num -> reader-mode slug. Built once at module load.
+const CHAPTER_SLUGS: Record<string, string> = Object.fromEntries(
+  getAllTracks().map((t) => [t.id, t.slug])
+);
 
 export const metadata = {
   title: "The Book | Transforming American Healthcare — HTR",
@@ -148,10 +154,10 @@ export default function BookPage() {
               <ArrowDownTrayIcon className="w-4 h-4" />
               Download PDF
             </a>
-            <a href="/HTR_Book_v28_Final2.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-white/20 transition-colors">
+            <Link href="/read/preface" className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-white/20 transition-colors">
               <BookOpenIcon className="w-4 h-4" />
               Read Online
-            </a>
+            </Link>
             <Link href="/book/listen" className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-white/20 transition-colors">
               <SpeakerWaveIcon className="w-4 h-4" />
               Listen
@@ -277,11 +283,23 @@ export default function BookPage() {
                               )}
                             </div>
                             <h3 className="text-sm font-black text-slate-800 leading-snug mb-2">
-                              {ch.title}
+                              <Link
+                                href={`/read/${CHAPTER_SLUGS[ch.num] ?? ""}`}
+                                className="hover:text-indigo-700 hover:underline transition-colors"
+                              >
+                                {ch.title}
+                              </Link>
                             </h3>
                             <p className="text-xs text-slate-500 leading-relaxed">
                               {ch.desc}
                             </p>
+                            <Link
+                              href={`/read/${CHAPTER_SLUGS[ch.num] ?? ""}`}
+                              className="inline-flex items-center gap-1 mt-2 text-[10px] font-bold text-indigo-600 hover:text-indigo-800"
+                            >
+                              Read this chapter
+                              <ArrowRightIcon className="w-2.5 h-2.5" />
+                            </Link>
                           </div>
 
                           {/* Right: platform links */}

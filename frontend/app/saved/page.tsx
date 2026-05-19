@@ -91,6 +91,8 @@ export default async function SavedPage() {
                     ? `/${item.pillar}/${item.slug}`
                     : item.content_type === "caseStudy"
                     ? `/academy/case-studies/${item.slug}`
+                    : item.content_type === "chapter"
+                    ? `/read/${item.slug}`
                     : `/${item.slug}`;
 
                   return (
