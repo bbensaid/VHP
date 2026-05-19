@@ -154,6 +154,10 @@ export default function CalAIMSimulatorClient() {
     return Object.fromEntries(
       keys.map(k => [k, Math.round(selected.reduce((s, r) => s + r.pillarScores[k], 0) / selected.length)])
     ) as Record<PillarKey, number>
+    // `selected` is recomputed each render from `selectedRecs`, so depending
+    // on `selectedRecs` is equivalent to depending on `selected`. Lint can't
+    // trace through the derivation.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedRecs])
 
   const totalCostM = selected.reduce((s, r) => s + r.annualCostM, 0)

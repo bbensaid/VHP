@@ -233,6 +233,8 @@ export function PhysicianSupplyTab() {
     }
 
     return rows;
+    // `geoMult` is derived from `geoScope` via GEO_SCOPE_MULTIPLIERS lookup.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [specialty, geoScope, supplyParams, popGrowthRate, agingFactor, telemedicineOffset, scopeExpansion, interventions]);
 
   const yr10Base = projection[10];
