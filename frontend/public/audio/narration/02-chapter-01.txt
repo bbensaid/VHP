@@ -1,0 +1,57 @@
+Chapter 1. The Six-Pillar Framework.
+
+In the introduction, we identified six pillars of healthcare transformation. Policy. Economics. Technology. Clinical. Equity. Operations. We claimed there are fifteen dependency relationships between them, and that transformation requires moving all six together. In this chapter, we develop both claims in detail.
+
+Let us begin with the math of fifteen dependencies. Six pillars produce six times five divided by two equals fifteen pairwise relationships. Every pillar has exactly five neighbors. Every relationship can be specified as a direction of dependency. Pillar A depends on pillar B means that progress in pillar A is bounded by the readiness of pillar B. If pillar B is weak, pillar A cannot advance, no matter how much effort is poured into pillar A directly.
+
+Some dependencies are obvious. Some are less obvious. Some are bidirectional. We will map all fifteen here, briefly, with one example of how each failure mode plays out.
+
+Policy and Economics. Policy creates the legal authority for new payment models, including section 1115 Medicaid waivers, the all-payer model, and Vermont's Act 68 global budget regime. Economics, in turn, shapes which policy levers are politically feasible. Cut this dependency, and reforms cannot get off the ground. Witness the four decades of failed federal attempts to enact a public option.
+
+Policy and Technology. Policy authorizes the existence and governance of health information exchanges, data privacy frameworks, and interoperability mandates. Technology is what makes policy enforceable. Vermont's Act 62 reorganized health information exchange governance precisely because the existing structure could not support the technology demands of Act 68.
+
+Policy and Clinical. Policy defines scope of practice, telehealth eligibility, hospital licensure, accreditation requirements, and reimbursement rules that determine what clinical models are operationally viable. The Collaborative Care Model is a clinical innovation, but it required Centers for Medicare and Medicaid Services billing codes before it could spread beyond academic pilots.
+
+Policy and Equity. Policy can mandate equity reporting, prohibit discrimination, and direct investment toward underserved populations. Without policy authority, equity reduces to good intentions. Section fifteen fifty-seven of the Affordable Care Act, on nondiscrimination, is the most important federal equity policy lever currently active.
+
+Policy and Operations. Policy sets compliance and accreditation requirements that shape the day-to-day work of revenue cycle teams, coding teams, and quality assurance teams. The transition to MIPS reporting, to value-based purchasing programs, and to bundled-payment models are all examples of policy reaching directly into hospital operations.
+
+Economics and Technology. You cannot pay for value if you cannot measure value. You cannot risk-adjust without claims data. You cannot benchmark hospital performance without a cost-reporting infrastructure. Maryland's hospital global budget program works because Maryland has the Health Services Cost Review Commission and decades of cost data. Vermont's earlier global-budget attempts foundered partly because the technology was not ready.
+
+Economics and Clinical. Payment design shapes care design. Under fee-for-service, prevention is a cost. Under capitation or global budgets, prevention is an investment. The clinical pillar can only adopt prevention seriously once the economics align. Vermont's Blueprint for Health works because the Blueprint payment structure pays primary care practices a per-member-per-month payment, not just visit fees.
+
+Economics and Equity. Equity-blind payment models entrench inequity. Risk-adjustment methodologies that fail to account for social determinants of health systematically underpay safety-net providers. Health Equity Return on Investment, called HEROI, is the book's term for explicitly costing the equity case.
+
+Economics and Operations. Revenue cycle, denial management, coding accuracy, and contract administration are all downstream of the payment model. The hospital that has not redesigned its revenue cycle for value-based payment cannot survive value-based payment. We return to this in Chapter 14.
+
+Technology and Clinical. Risk stratification, clinical decision support, telehealth, remote patient monitoring, and population health analytics all require technology infrastructure that most provider organizations did not have in two thousand ten and many still do not have in two thousand twenty-six. Vermont's VCCI program is the worked example we will examine in Chapter 10.
+
+Technology and Equity. Clinical algorithms encode bias. Bias audits require data. SDOH integration requires data exchange. The technology pillar either supports the equity pillar, or it actively undermines it.
+
+Technology and Operations. The electronic health record is, for most clinicians, the principal source of operational friction in their day. Bad technology operations make every other transformation initiative harder. Good technology operations make every other transformation initiative easier.
+
+Clinical and Equity. The clinical care model either treats equity as a design constraint or it doesn't. If it doesn't, every clinical workflow will eventually reproduce the disparities embedded in the upstream system. The Vermont SASH program, which we will discuss in Chapter 10, is a clinical model designed with equity as a primary input rather than a downstream measurement.
+
+Clinical and Operations. The most carefully designed clinical model fails if the operations cannot execute it. Workflow design, staffing, supply chain, and credentialing are all operational concerns that shape clinical reality.
+
+Equity and Operations. Equity programs require operational infrastructure. SDOH screening at scale requires intake redesign. Community partnerships require contract administration. Translation services require credentialing. Equity without operations is rhetorical.
+
+That is fifteen dependency relationships. Each can be drawn as an arrow. Each can fail in characteristic ways. Each is sourced and footnoted in the appendix.
+
+The reason the fifteen-dependency map matters is what we call the failure cascade. A failure cascade occurs when a gap in one pillar produces compounding failures across the other five. Consider a state that tries to implement value-based payment without first building the technology pillar. The Economics pillar pushes payment redesign onto provider organizations, but providers cannot measure value without data, so they cannot manage their patients, so quality declines, so equity outcomes worsen, so the operations of the payer-provider relationship break down, and the policy authority that enabled the payment redesign is politically weakened by the visible failure. One missing pillar, five compounding consequences.
+
+Vermont's two thousand seventeen accountable care organization experiment, called OneCare Vermont, is a worked example of failure cascade. We will return to it in detail in Chapter 2.
+
+The fifteen-dependency map has a second use beyond predicting failure. It is also a prioritization tool. If you are a state agency, a health system, or a policymaker, and you are deciding where to invest the next dollar, the dependency map tells you which pillar is currently load-bearing for your strategy. Address that pillar first. Otherwise, your downstream investments will produce smaller-than-expected returns.
+
+Vermont has been deliberate about this. The sequencing argument in Chapter 2 is that Vermont's transformation strategy, as embodied in Acts 167 and 68, has followed the dependency map in roughly the correct order. Diagnostic policy first, in Act 167. Technology and operational infrastructure second, in Act 62 and the rural health transformation program. Mandatory global-budget economics third, in Act 68. Clinical model redesign fourth, in the Blueprint, the VCCI program, and the SASH program. Equity throughout. Operations as a continuous constraint.
+
+This is not perfect. The book is not claiming Vermont has done everything right. It is claiming that Vermont has done more right than most, that the sequence has been more thoughtful than most, and that the operational specificity of the Vermont approach makes it the most teachable case currently available.
+
+The remainder of the book proceeds pillar by pillar. Each pillar gets two chapters. The first chapter develops the structural argument. The second chapter develops the operational implementation. Vermont appears throughout. Other states, especially Oregon and California, appear comparatively in Chapter 17.
+
+A reader who absorbs this chapter has the analytical apparatus to read the rest of the book. The dependency map is the instrument. The six pillars are the parts. The fifteen relationships are how the parts connect. The failure cascade is what happens when the parts do not connect. The Vermont Thread is the case study we will use to test all of it.
+
+In Chapter 2, we apply the framework to the question of execution sequence. We argue that the order in which the pillars are addressed is not a matter of preference or convenience, but a matter of structural causality. We use Vermont's earlier accountable care organization experiment as a worked autopsy of what happens when sequencing is wrong.
+
+We turn to that now.

@@ -9,6 +9,7 @@ import {
   Cog6ToothIcon,
   ArrowRightIcon,
   ArrowDownTrayIcon,
+  SpeakerWaveIcon,
 } from "@heroicons/react/24/outline";
 import {
   CHAPTERS,
@@ -102,6 +103,12 @@ export default function BookPage() {
       {/* HERO ─────────────────────────────────────────────────────────────── */}
       <div className="relative rounded-2xl overflow-hidden bg-linear-to-br from-slate-900 via-slate-800 to-indigo-900 text-white p-8 md:p-14 mb-12 shadow-2xl">
         <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: "repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)", backgroundSize: "12px 12px" }} />
+
+        {/* Floating cover thumbnail (md+ only — doesn't compete with title on mobile) */}
+        <div className="hidden md:block absolute top-8 right-8 lg:top-10 lg:right-12 w-32 lg:w-40 rotate-3 shadow-2xl shadow-black/40 ring-1 ring-white/10 rounded-md overflow-hidden">
+          <img src="/book-cover.svg" alt="Transforming American Healthcare — book cover" className="w-full h-auto block" />
+        </div>
+
         <div className="relative">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-black uppercase tracking-widest text-white/80">
@@ -145,6 +152,10 @@ export default function BookPage() {
               <BookOpenIcon className="w-4 h-4" />
               Read Online
             </a>
+            <Link href="/book/listen" className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-white/20 transition-colors">
+              <SpeakerWaveIcon className="w-4 h-4" />
+              Listen
+            </Link>
             <Link href="#chapters" className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-white/20 transition-colors">
               Browse Chapters
               <ArrowRightIcon className="w-4 h-4" />

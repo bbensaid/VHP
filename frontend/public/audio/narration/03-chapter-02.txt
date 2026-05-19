@@ -1,0 +1,49 @@
+Chapter 2. The Execution Sequence. Why Order Is Not Optional.
+
+In Chapter 1, we mapped the fifteen dependency relationships between the six pillars. In this chapter, we draw the consequence. Because the pillars depend on each other, the order in which they are developed is not a matter of preference. It is a matter of structural causality. Get the order wrong, and the reform fails.
+
+The argument can be summarized in one sentence. Policy enables Technology, which enables Economics, which enables Clinical, which enables Equity, which is then operationalized by Operations throughout. Each link in that chain is a load-bearing dependency. Skip a link, and what follows collapses.
+
+This chapter develops the argument in three stages. First, we walk through why each link in the sequence is causal. Second, we examine Vermont's OneCare accountable care organization, which failed in two thousand twenty-four, as a worked autopsy of sequencing failure. Third, we extract three principles for execution that we will return to throughout the book.
+
+Stage one. Why the sequence is causal.
+
+Policy first. Policy is what creates the legal authority to do anything else. State agencies cannot collect mandatory data without legal authority. They cannot impose hospital budgets without legal authority. They cannot require interoperability without legal authority. Section 1115 Medicaid waivers exist only because Congress authorized them in the Social Security Act amendments of nineteen sixty-five. Vermont's Act 62 reorganized health information exchange governance because the prior arrangement could not bear the demands placed on it. Without policy first, the other pillars are running on borrowed authority, which is to say no authority at all.
+
+Technology second. Technology is what makes everything else measurable. Value-based payment requires the ability to measure value. Risk adjustment requires the ability to characterize risk. Population health management requires the ability to identify the population. Quality measurement requires comparable data. Equity tracking requires stratified outcomes data. None of these are possible without a working all-payer claims database, a working health information exchange, working electronic health records, and working interoperability standards. The state that tries to launch value-based payment without first building the technology pillar will find that providers cannot do what is asked of them, even when they want to.
+
+Economics third. Once you have legal authority and you have measurement, you can change the payment model. You can introduce shared savings. You can introduce reference-based pricing. You can introduce hospital global budgets. You can re-allocate risk. The Economics pillar is what creates the incentive alignment that the Clinical pillar then responds to. Skip this step, and the clinical models that depend on aligned incentives will not be financially viable.
+
+Clinical fourth. Once incentives are aligned, the clinical pillar can be redesigned around prevention, care coordination, behavioral health integration, population health management, and risk stratification. Without aligned incentives, these clinical models exist only as pilots, demonstrations, or academic exercises. Vermont's Blueprint for Health, which we will examine in Chapter 10, is a clinical model that survives because the Blueprint payment structure supports it.
+
+Equity throughout. Equity is not the fifth step in a linear sequence. Equity is a design constraint that applies at every step. Policy must be equity-conscious. Technology must be equity-conscious. Economics must be equity-conscious. Clinical must be equity-conscious. We highlight Equity as a separate pillar because it is so often treated as a downstream filter to be applied after the system is built. The book argues that this is a structural error.
+
+Operations as continuous constraint. Operations is not a stage in the sequence either. Operations is the constraint that everything else runs into when it touches a real organization on a real day. Operations is where the revenue cycle either supports value-based payment or undermines it. Operations is where workforce strategy either supports new clinical models or sabotages them. Operations is, in a real organizational sense, where transformation either lives or dies.
+
+Stage two. The OneCare Vermont autopsy.
+
+In two thousand seventeen, Vermont launched OneCare Vermont, an accountable care organization that aspired to operate as the implementation arm of the state's all-payer model. The all-payer model was a federal demonstration project, approved by the Centers for Medicare and Medicaid Services, that gave Vermont the regulatory authority to align Medicare, Medicaid, and commercial insurance payments under a single accountable care structure. The ambition was enormous. The implementation was difficult. The result, by two thousand twenty-four, was financial losses in the multiple hundreds of millions of dollars, and a wind-down of the OneCare structure.
+
+OneCare did not fail because the people running it were incompetent. It did not fail because the underlying idea was wrong. It failed because the Economics pillar was pushed forward before the Technology pillar was ready. Specifically, the data infrastructure required to operate at the level of risk assumed by OneCare was not yet in place. Risk stratification was incomplete. Care coordination across the participating providers depended on data sharing that was, in practice, slow and incomplete. Hospital cost reporting was uneven. Quality measurement was inconsistent. Each of these gaps was, by itself, manageable. Cumulatively, they made the Economics pillar's demands operationally impossible to meet.
+
+The lesson the book draws from OneCare is not that accountable care organizations are bad. It is that the sequencing was wrong. Vermont was attempting to operate an accountable care organization at full scale before the supporting technology was capable of sustaining it. Vermont's two thousand twenty-five Act 68 strategy reflects the lesson learned. Act 68 deliberately builds the technology pillar, through Act 62, before fully turning on the Economics pillar through mandatory global budgets. The sequence has been corrected.
+
+We will return to OneCare in more detail in Chapter 8, when we discuss the Economics pillar in practice. For now, the relevant point is that OneCare is a documented case of failure cascade caused by sequencing error. It is the most expensive and most public American example of why sequencing matters.
+
+Stage three. Three principles for execution.
+
+Principle one. The critical path. The critical path is the sequence of dependencies that must all complete before the next major milestone can be reached. In healthcare transformation, the critical path generally runs through policy authority, technology infrastructure, and payment-model design. Identify the critical path. Protect it. Sequence everything else around it.
+
+Principle two. Parallel work. Not everything has to be done sequentially. Many things can be done in parallel, as long as they do not block the critical path. Workforce development. Stakeholder engagement. Equity-impact analysis. Communications strategy. These can be advanced in parallel with the critical path. Identifying what can run in parallel is half the discipline of transformation portfolio management. We return to this in Chapter 19.
+
+Principle three. Equity as a design constraint. We have said this several times. We will say it again. Equity is a design constraint that applies at every step of the sequence, not a downstream filter applied at the end. Building a system that achieves equity downstream by adjusting an inequitable upstream design is far more expensive, and far less effective, than designing for equity at every step.
+
+A note on the politics of sequencing. The argument for sequencing is structural. The politics of sequencing is harder. Political windows for reform are short. The political pressure is always to skip ahead, to announce visible accomplishments, to declare success before the underlying work is done. The discipline of sequencing requires sustained political support over multiple election cycles. We discuss this in Chapter 18 on political sustainability. For now, observe that Vermont's Acts 167 and 68, separated by three years, with sustained gubernatorial and legislative support, are a rare political achievement, not a routine one.
+
+A second note. Sequencing is not the same as gating. We are not arguing that the entire technology pillar must be completed before any economics work begins. We are arguing that the load-bearing technology elements must be sufficient before the economics elements that depend on them are turned on. The distinction matters. A state that waits for technology perfection will wait forever. A state that turns on economics before the load-bearing technology is in place will produce a failure cascade.
+
+In Chapter 3, we apply the sequencing argument to the operational reality of Vermont's current transformation timeline. We walk through what is happening, what is scheduled, what is at risk, and what the next eighteen months will reveal about whether the sequence is holding.
+
+The framework, at this point, is set. Six pillars. Fifteen dependencies. A causal sequence. A worked failure case. Three principles. Vermont as the running example.
+
+We turn now to implementation.

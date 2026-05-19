@@ -1,0 +1,53 @@
+Chapter 6. The Technology Pillar. Data Infrastructure for a Transformed Health System.
+
+In Chapter 1 we said Technology is the data infrastructure that makes everything else measurable. In Chapter 2 we said the Technology pillar must precede the Economics pillar in the execution sequence, because you cannot pay for value if you cannot measure value. In this chapter, we develop the Technology pillar in detail.
+
+The chapter is organized around five elements. Vermont's all-payer claims database, called VHCURES. Vermont's health information exchange, operating under Act 62 governance. The interoperability standards that connect everything, principally FHIR. The Clinically Integrated Network architecture. And the governance framework for artificial intelligence in clinical care.
+
+Element one. VHCURES, the Vermont Healthcare Claims Uniform Reporting and Evaluation System.
+
+An all-payer claims database is, in concept, simple. It is a centralized data repository that collects health insurance claims from all payers operating in a state, including commercial insurers, Medicare, and Medicaid. The database enables population-level analysis of cost, utilization, quality, and equity across the entire health system, regardless of which payer covered any individual claim.
+
+Vermont's VHCURES is one of the older and more mature all-payer claims databases in the country. It is operated under state regulatory authority, supported by federal Medicare data integration, and made available to state agencies, researchers, and contracted analytic partners under privacy-protective protocols. VHCURES is the principal evidence base for everything we say about Vermont health system performance in the rest of this book.
+
+The structural importance of VHCURES extends beyond the individual analyses it supports. VHCURES is the data foundation on which Vermont's hospital global budget regime depends. Without claims-level data across all payers, the global budget cannot be defined defensibly, the performance of the global budget cannot be measured, and the financial integrity of the regime cannot be verified.
+
+States that lack a mature all-payer claims database cannot implement a credible global budget regime. Several states have attempted to build such databases and abandoned the effort for political or operational reasons. The states currently leading on payment reform are, with very few exceptions, the states that have invested in claims-data infrastructure.
+
+Element two. The Vermont Information Technology Leaders organization, known as VITL, and the Act 62 governance restructure.
+
+A health information exchange, sometimes called an HIE, is the operational counterpart to an all-payer claims database. Where the claims database holds retrospective billing data, the health information exchange moves clinical data across organizations in something approaching real time. Lab results. Hospital admissions. Discharge summaries. Medication histories. The clinical data that allows one care team to know what another care team did, when seconds and minutes matter.
+
+VITL was founded in two thousand five and has operated as Vermont's primary health information exchange for two decades. Over those decades, the operational requirements of a state-level health information exchange have grown substantially. The original VITL architecture was designed for a smaller and less ambitious use case than the one Vermont's transformation now requires.
+
+Act 62 of two thousand twenty-four was the legislative restructuring of Vermont's health information exchange governance. Act 62 clarified the relationships between the state, the existing VITL organization, the hospitals and primary care practices that depend on health information exchange, and the technology vendors that participate in the ecosystem. Act 62 is in framework terms, a Policy pillar action that authorizes a Technology pillar restructure required by the Economics pillar work of Act 68.
+
+The structural lesson of Act 62 is that Technology infrastructure is, in significant part, a governance question. The legal and operational frameworks under which technology is built and operated determine what that technology can support. Bad governance produces bad technology, no matter how good the engineers are. Good governance is the precondition for good technology.
+
+Element three. FHIR interoperability.
+
+FHIR is the acronym for Fast Healthcare Interoperability Resources, a healthcare data exchange standard developed under HL7 International. FHIR is the current generation interoperability standard for healthcare. It is structured around web-native protocols, supports modern application programming interfaces, and is the foundation of the federal interoperability rule-making that has been advancing through the Office of the National Coordinator for Health Information Technology over the past several years.
+
+The structural importance of FHIR is that it is, for the first time in the history of American health information technology, a single standard that all major systems are converging toward. Electronic health record vendors. Health information exchanges. Payer systems. State data systems. Federal data systems. The convergence is not complete. The convergence is unevenly implemented. But the convergence is real and is structurally different from the historical fragmentation of healthcare data exchange.
+
+The implication for transformation is that the operational cost of data exchange is falling. Five years ago, custom-integrating two health information systems was a six-figure project. Today, the same integration is a configuration exercise. The cost curve matters. Cheaper data exchange enables population health management programs, risk stratification programs, and equity reporting programs that were operationally impossible at the higher cost.
+
+Element four. The Clinically Integrated Network architecture.
+
+A Clinically Integrated Network, often abbreviated CIN, is an organizational structure that allows independent providers to collaborate operationally and contractually while preserving their independent legal identity. The Federal Trade Commission and Department of Justice antitrust guidance recognizes Clinically Integrated Networks as a permissible form of provider collaboration when specific criteria are met.
+
+Vermont's transformation strategy contemplates the development of a Clinically Integrated Network architecture that connects rural hospitals, the Federally Qualified Health Centers, the Designated Agencies that provide community behavioral health services, and the primary care practices participating in the Blueprint for Health. The Clinically Integrated Network is the organizational form that translates the global budget regime of Act 68 into operational reality at the provider level.
+
+The Rural Health Transformation Program funding, including Vermont's one hundred and ninety-five million dollar award, is significantly directed toward Clinically Integrated Network development. This is a Technology pillar investment but it is also an Operations pillar investment, and it depends on the Policy pillar authority that Act 68 establishes.
+
+Element five. Artificial intelligence governance.
+
+We are now in a period when artificial intelligence is being introduced into clinical care at a rate that exceeds the rate at which the governance frameworks for that introduction are maturing. The Technology pillar must include a coherent governance approach to artificial intelligence, not as a side concern but as a central concern.
+
+The book's view is that artificial intelligence governance must address three questions. First, validation. How do we know the artificial intelligence model performs as advertised on the population to which it will be applied. Second, deployment. How is the model integrated into clinical workflow without introducing alert fatigue, automation bias, or workflow disruption. Third, monitoring. How do we know, on an ongoing basis, that the model continues to perform, that the model has not drifted, and that the model has not produced disparate outcomes by race, ethnicity, or other protected characteristic.
+
+Vermont's Technology pillar work explicitly contemplates artificial intelligence governance at the state regulatory level. The Green Mountain Care Board has authority that touches on artificial intelligence governance in hospital operations. The Agency of Human Services has authority that touches on artificial intelligence in clinical care delivery. The federal Office for Civil Rights has authority over discriminatory uses of artificial intelligence in health care. The governance terrain is, as of two thousand twenty-six, still being mapped.
+
+The book argues that getting artificial intelligence governance right requires moving before the risks crystallize, not after. The cost of getting governance right preemptively is high. The cost of getting governance right reactively, after a high-visibility incident, is higher.
+
+In Chapter 7, we turn to the Technology pillar in practice. We examine the operational deployment of artificial intelligence scribes, remote patient monitoring, telehealth, and diagnostic artificial intelligence. We walk through the artificial intelligence clinical governance lifecycle in detail. And we address the operational reality of alert fatigue and clinical decision support effectiveness.

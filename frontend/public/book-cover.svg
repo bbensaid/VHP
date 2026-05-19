@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Transforming American Healthcare — book cover, programmatic SVG.
+  6:9 aspect ratio (1200×1800), suitable for printed book covers and e-book
+  thumbnails. Six-pillar color motif uses the platform's pillar palette.
+
+  Embedded fonts: none — uses system fonts via font-family fallback chain.
+  When rendered to PNG for distribution, do so on a machine with the desired
+  display fonts available (recommended: Inter or similar geometric sans).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1800" width="1200" height="1800">
+  <defs>
+    <!-- Deep nightfall gradient — matches platform hero treatment -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+
+    <!-- Subtle vignette overlay -->
+    <radialGradient id="vignette" cx="0.5" cy="0.3" r="0.9">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.55"/>
+    </radialGradient>
+
+    <!-- Single-pillar gradient generator (slight metallic sheen) -->
+    <linearGradient id="pillarSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="pillarEmerald" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6ee7b7" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="pillarIndigo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a5b4fc" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#4338ca" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="pillarRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fca5a5" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#b91c1c" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="pillarViolet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="pillarTeal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5eead4" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Connecting node glow -->
+    <radialGradient id="nodeGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1800" fill="url(#bg)"/>
+
+  <!-- Texture: subtle diagonal lines suggesting structure (architecture) -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <g>
+      <line x1="0" y1="0" x2="1200" y2="1800"/>
+      <line x1="120" y1="0" x2="1320" y2="1800"/>
+      <line x1="240" y1="0" x2="1440" y2="1800"/>
+      <line x1="360" y1="0" x2="1560" y2="1800"/>
+      <line x1="480" y1="0" x2="1680" y2="1800"/>
+      <line x1="600" y1="0" x2="1800" y2="1800"/>
+      <line x1="-120" y1="0" x2="1080" y2="1800"/>
+      <line x1="-240" y1="0" x2="960" y2="1800"/>
+      <line x1="-360" y1="0" x2="840" y2="1800"/>
+      <line x1="-480" y1="0" x2="720" y2="1800"/>
+      <line x1="-600" y1="0" x2="600" y2="1800"/>
+    </g>
+  </g>
+
+  <!-- Top eyebrow tag -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', system-ui, sans-serif">
+    <text x="100" y="170" font-size="22" font-weight="800" letter-spacing="6" fill="#a5b4fc" text-transform="uppercase">
+      HEALTH TRANSFORMATION REVIEW
+    </text>
+    <text x="100" y="210" font-size="14" font-weight="700" letter-spacing="4" fill="#94a3b8">
+      VERMONT • UNITED STATES • 2026
+    </text>
+  </g>
+
+  <!-- Title block -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', system-ui, sans-serif" fill="#ffffff">
+    <text x="100" y="430" font-size="118" font-weight="900" letter-spacing="-3">
+      Transforming
+    </text>
+    <text x="100" y="560" font-size="118" font-weight="900" letter-spacing="-3">
+      American
+    </text>
+    <text x="100" y="690" font-size="118" font-weight="900" letter-spacing="-3">
+      Healthcare
+    </text>
+  </g>
+
+  <!-- Subtitle -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', system-ui, sans-serif">
+    <text x="100" y="780" font-size="34" font-weight="500" fill="#cbd5e1" font-style="italic">
+      A Six-Pillar Framework for System Transformation
+    </text>
+  </g>
+
+  <!-- Six pillars motif - the central visual -->
+  <!-- Six vertical bars, each a pillar color, joined by a horizontal beam at top -->
+  <!-- Pillar geometry: 6 columns, each 110px wide, 36px gap, centered horizontally -->
+  <g transform="translate(140, 920)">
+    <!-- Connecting beam at the top — represents 'must move together' -->
+    <rect x="0" y="-12" width="920" height="6" fill="#ffffff" opacity="0.55"/>
+
+    <!-- Beam glow nodes at each pillar top -->
+    <g>
+      <circle cx="55"  cy="-9" r="22" fill="url(#nodeGlow)"/>
+      <circle cx="201" cy="-9" r="22" fill="url(#nodeGlow)"/>
+      <circle cx="347" cy="-9" r="22" fill="url(#nodeGlow)"/>
+      <circle cx="493" cy="-9" r="22" fill="url(#nodeGlow)"/>
+      <circle cx="639" cy="-9" r="22" fill="url(#nodeGlow)"/>
+      <circle cx="785" cy="-9" r="22" fill="url(#nodeGlow)"/>
+    </g>
+
+    <!-- Six pillar columns -->
+    <rect x="0"   y="0" width="110" height="380" rx="6" fill="url(#pillarSky)"/>
+    <rect x="146" y="0" width="110" height="380" rx="6" fill="url(#pillarEmerald)"/>
+    <rect x="292" y="0" width="110" height="380" rx="6" fill="url(#pillarIndigo)"/>
+    <rect x="438" y="0" width="110" height="380" rx="6" fill="url(#pillarRed)"/>
+    <rect x="584" y="0" width="110" height="380" rx="6" fill="url(#pillarViolet)"/>
+    <rect x="730" y="0" width="110" height="380" rx="6" fill="url(#pillarTeal)"/>
+
+    <!-- Pillar labels rendered vertically up each column -->
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', system-ui, sans-serif" font-size="22" font-weight="900" letter-spacing="4" fill="#0f172a" opacity="0.85">
+      <text transform="translate(55, 360) rotate(-90)" text-anchor="start">POLICY</text>
+      <text transform="translate(201, 360) rotate(-90)" text-anchor="start">ECONOMICS</text>
+      <text transform="translate(347, 360) rotate(-90)" text-anchor="start">TECHNOLOGY</text>
+      <text transform="translate(493, 360) rotate(-90)" text-anchor="start">CLINICAL</text>
+      <text transform="translate(639, 360) rotate(-90)" text-anchor="start">EQUITY</text>
+      <text transform="translate(785, 360) rotate(-90)" text-anchor="start">OPERATIONS</text>
+    </g>
+
+    <!-- Base plinth -->
+    <rect x="-20" y="380" width="960" height="14" rx="2" fill="#ffffff" opacity="0.4"/>
+  </g>
+
+  <!-- Vermont thread — small accent line representing the running case -->
+  <g transform="translate(100, 1380)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', system-ui, sans-serif"
+          font-size="18" font-weight="700" letter-spacing="6" fill="#fca5a5">
+      THE VERMONT THREAD
+    </text>
+    <line x1="0" y1="14" x2="280" y2="14" stroke="#fca5a5" stroke-width="2" opacity="0.6"/>
+  </g>
+
+  <!-- Author / publisher block at bottom -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', system-ui, sans-serif"
+     transform="translate(100, 1560)">
+    <text font-size="32" font-weight="900" fill="#ffffff" letter-spacing="-1">
+      THE HEALTH TRANSFORMATION REVIEW
+    </text>
+    <text y="50" font-size="20" font-weight="500" fill="#94a3b8" letter-spacing="1">
+      Vermont as the National Teaching Case · Edition 28 · 2026
+    </text>
+  </g>
+
+  <!-- Edition badge — top right -->
+  <g transform="translate(1000, 130)">
+    <circle cx="60" cy="60" r="68" fill="#0f172a" stroke="#a5b4fc" stroke-width="2"/>
+    <text x="60" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif"
+          font-size="11" font-weight="800" letter-spacing="3" fill="#a5b4fc" text-anchor="middle">
+      EDITION
+    </text>
+    <text x="60" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif"
+          font-size="44" font-weight="900" fill="#ffffff" text-anchor="middle">
+      28
+    </text>
+  </g>
+
+  <!-- Vignette overlay - applied last so it sits on top of everything else -->
+  <rect width="1200" height="1800" fill="url(#vignette)"/>
+</svg>
