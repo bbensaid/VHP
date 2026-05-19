@@ -1,0 +1,53 @@
+Chapter 5. The Policy Pillar in Practice. CMMI Models, Waiver Strategy, and the Federal-State Interface.
+
+Chapter 4 made the structural argument for Policy. Chapter 5 examines the operational practice. We will walk through the current federal innovation model landscape, the section 1115 Medicaid waiver process, the prior authorization reform agenda under H.R. 1, and the strategic implications of all of these for state-level transformation efforts.
+
+We begin with the federal innovation model landscape.
+
+The Centers for Medicare and Medicaid Innovation, known as CMMI, was created by the Affordable Care Act in two thousand ten with statutory authority to design, test, and scale alternative payment models. Over the years since, CMMI has produced dozens of models, most of which were modest in scope and limited in impact. A small number have been operationally consequential.
+
+The current CMMI model portfolio, as of two thousand twenty-six, includes several relevant designs.
+
+The Achieving Healthcare Efficiency through Accountable Design model, known as AHEAD, is the most relevant to Vermont. AHEAD brings Medicare into state-level all-payer alignment. Vermont's Act 68 was, in part, designed around AHEAD participation. AHEAD has been adopted by six states. Vermont, with its mandatory state-level architecture, is the most complete AHEAD implementation in the country. AHEAD is, in framework terms, the federal Policy pillar action that enables the state-level Economics pillar reach of Act 68.
+
+The Accountable Care Organization Realizing Equity, Access, and Community Health model, known as ACO REACH, is the current generation of Medicare accountable care organization design. ACO REACH replaces earlier generations of Medicare ACO models with a structure that emphasizes equity, health-related social needs, and underserved population participation. ACO REACH has had uneven adoption nationally.
+
+The Transforming Episode Accountability Model, known as TEAM, is a mandatory bundled-payment model for selected acute episodes. TEAM is the most recent example of CMMI moving from voluntary to mandatory model design, a shift that has structural significance for the future of federal payment reform.
+
+The Making Care Primary model is a primary care transformation initiative that brings federal payment alignment to primary care practice transformation along the lines of patient-centered medical home redesign. Vermont's Blueprint for Health predates Making Care Primary and operates parallel to it.
+
+The States Advancing All-Payer Health Equity model is a federal initiative to support state-level all-payer equity work. It is structurally aligned with the equity work that Vermont, Oregon, and California are doing inside their respective state architectures.
+
+These five models, taken together, represent the current federal innovation portfolio. Each is operationally complex. Each requires participating states or organizations to make multi-year commitments. Each is subject to ongoing political risk. The aggregate effect is that federal payment innovation is, in two thousand twenty-six, more available than at any prior point in the history of CMMI, while remaining narrower and more conditional than what state-level transformation efforts actually need.
+
+The book's view is that federal innovation models are necessary but insufficient. They provide the legal scaffolding for state-level work. They do not, by themselves, produce transformation. State-level architectures, such as Vermont's, are required to fill in what federal models cannot.
+
+We turn now to section 1115 waivers.
+
+Section 1115 of the Social Security Act authorizes the Secretary of Health and Human Services to waive otherwise binding Medicaid requirements for the purpose of supporting demonstration projects that promote the objectives of the Medicaid program. In practice, section 1115 waivers are the principal mechanism by which state Medicaid programs depart from the standard federal Medicaid framework.
+
+The architecture of section 1115 waivers is built around a concept called budget neutrality. Federal regulation requires that a section 1115 waiver not cost the federal government more, over its lifetime, than what the federal government would have spent under the standard Medicaid framework. Budget neutrality is structurally important and practically complicated. The accounting is contested. The baselines are contested. The duration matters. The downside risk allocation matters.
+
+States that have developed sophisticated section 1115 strategies tend to be states that have developed sophisticated state Medicaid agency capacity. California's CalAIM is the largest example currently operating. Oregon's Coordinated Care Organization model is the longest-running. Vermont's Medicaid program uses section 1115 authority to support several elements of its transformation strategy.
+
+The strategic implication for state-level reformers is that section 1115 capacity matters. A state Medicaid agency that cannot manage the analytical, legal, and operational complexity of section 1115 will be unable to access the most important federal-state flexibility mechanism currently available. Investment in state Medicaid agency capacity is, in framework terms, an Operations pillar investment that determines the practical reach of state-level Policy and Economics pillar work.
+
+We turn now to prior authorization reform under H.R. 1.
+
+H.R. 1, signed into law in July two thousand twenty-five, was a substantial federal Medicaid reform. The signature provisions were the Medicaid work requirements for adults aged nineteen through fifty-five, the restrictions on state provider tax mechanisms, and the multi-year reductions in federal Medicaid matching. The Congressional Budget Office estimated coverage loss in the range of twelve to eighteen million Americans over ten years.
+
+H.R. 1 also contained, in addition to the headline provisions, a meaningful prior authorization reform component. Federal law now requires Medicaid programs to publish prior authorization decision timelines, to provide electronic prior authorization mechanisms, and to maintain standards for clinical evidence review. These reforms, while less politically prominent than the work requirements, are operationally significant. They reduce the administrative burden of Medicaid prior authorization for participating providers, accelerate decision turnaround, and constrain certain abusive prior authorization practices that had developed over preceding decades.
+
+The strategic implication is that H.R. 1 is, on balance, a complicated piece of legislation for state reformers. The work requirements impose substantial administrative burden, produce coverage loss even among individuals who remain eligible, and create operational risk for state Medicaid programs. The provider tax restrictions constrain state Medicaid financing in significant ways. At the same time, the prior authorization reforms produce real operational benefits. State reformers must navigate the legislation strategically, neither dismissing it as unmanageable nor minimizing the genuine constraints it imposes.
+
+A note on Vermont's H.R. 1 exposure. Vermont's Medicaid program enrolls a relatively small number of adults aged nineteen through fifty-five without dependents who would be subject to work requirements. Vermont's exposure to the work requirements is, in absolute terms, modest compared to states with larger Medicaid expansion populations. The provider tax restrictions, however, affect Vermont's hospital supplemental payment programs in ways that interact with Act 68's implementation timeline. The post-two thousand thirty Medicaid funding cliff is the largest single risk to Vermont's transformation strategy. We discuss this in Chapter 18.
+
+We turn now to the federal-state interface as a strategic question.
+
+Every state-level transformation effort sits inside a federal policy environment that the state cannot directly control. The federal environment provides the regulatory framework, the funding streams, the demonstration authorities, and the constraints that bound state action. A change in federal political control can reverse, constrain, or accelerate state-level work in ways that the state's own political process cannot offset.
+
+Vermont's transformation strategy has been developed under two assumptions. First, that the AHEAD model will continue through its scheduled timeline. Second, that Vermont's section 1115 waivers will be renewed. Both assumptions are reasonable. Neither is guaranteed. A reasonable state-level strategy must include contingency planning for federal disruption.
+
+A note on state-to-state policy learning. Vermont, Oregon, and California are doing different things inside different federal envelopes. Each is producing evidence that the others can learn from. The book argues, in Chapter 17, that the cross-state learning agenda is structurally important. The platform's All States Explorer and the fifty-state dashboard are designed to support this learning.
+
+We have now completed the Policy pillar. In Chapter 6, we turn to Technology.

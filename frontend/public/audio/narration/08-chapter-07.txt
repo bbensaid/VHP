@@ -1,0 +1,63 @@
+Chapter 7. The Technology Pillar in Practice. FHIR, AI Governance, and Clinical Decision Support.
+
+Chapter 6 made the structural argument for Technology. Chapter 7 examines what actually happens when the technology is deployed into clinical operations. The Technology pillar tends to look simple in policy documents and complicated in real hospitals. This chapter is about what complicates it.
+
+We organize the chapter around five operational topics. FHIR implementation reality. Artificial intelligence scribe technology. Remote patient monitoring and telehealth. Diagnostic artificial intelligence. And the artificial intelligence clinical governance lifecycle.
+
+Topic one. FHIR implementation reality.
+
+In Chapter 6 we described FHIR as the converging interoperability standard. That is true at the level of standards bodies and federal rulemaking. The reality on the ground is more uneven. Different electronic health record vendors implement FHIR with different completeness. Different versions of the standard remain in use across different systems. Different organizations have different operational maturity in deploying FHIR-based integrations.
+
+The practical implication is that FHIR is a precondition for transformation but is not, by itself, transformation. A state-level health information exchange that has adopted FHIR is structurally better positioned than one that has not. A hospital electronic health record that exposes FHIR endpoints is structurally better positioned than one that does not. But the conversion from structurally better positioned to operationally functioning requires sustained engineering investment that most organizations have under-budgeted.
+
+The lesson for transformation strategy is that FHIR adoption is a beginning, not an end. The platform's FHIR Interoperability Lab, available in the research lab section, allows organizations to assess their current FHIR maturity and to identify the specific operational gaps that block higher-value uses of the standard.
+
+Topic two. Artificial intelligence scribe technology.
+
+Artificial intelligence scribe technology is the use of large language models to listen to clinical encounters and generate structured clinical documentation in real time, without requiring the clinician to type. The technology has matured rapidly. Major electronic health record vendors now offer integrated artificial intelligence scribe products. Independent vendors offer alternatives. Several major health systems have deployed artificial intelligence scribes at scale and report substantial reductions in clinician documentation time, with corresponding reductions in burnout and improvement in clinician satisfaction.
+
+The operational lessons from the early deployments are several. First, artificial intelligence scribe technology is not a finished product. It requires ongoing model adjustment, prompt engineering, and quality assurance. Second, clinical workflow must be redesigned around the technology, not simply extended. Clinicians who try to use artificial intelligence scribes as a translation of the prior documentation workflow tend to report mixed experiences. Clinicians who redesign their workflow around the technology tend to report stronger benefits. Third, the data privacy and governance questions are real. Audio of clinical encounters is among the most sensitive data the system handles. Vendor contracts, audit trails, and patient consent mechanisms matter.
+
+The Vermont transformation strategy includes investment in artificial intelligence scribe technology as part of the Rural Health Transformation Program funding. The investment is targeted at rural hospitals and primary care practices where clinician documentation burden is highest and clinician burnout is most acute. The investment is, in framework terms, a Technology pillar action serving Clinical pillar goals.
+
+Topic three. Remote patient monitoring and telehealth.
+
+Remote patient monitoring is the use of devices to collect physiological data from patients outside the clinical setting. Blood pressure cuffs that transmit readings to clinical teams. Glucose monitors. Pulse oximeters. Wearable devices that track heart rate, sleep, and activity. The technology has matured. The clinical evidence base for remote patient monitoring in chronic disease management is now substantial.
+
+Telehealth is the broader practice of clinical care delivered through video, telephone, or asynchronous messaging rather than in-person encounters. The pandemic-era expansion of telehealth produced operational and regulatory adaptations that are now being consolidated into ongoing practice. Vermont's transformation strategy assumes substantial use of telehealth, particularly in rural areas where in-person access is geographically constrained.
+
+The operational issues with both remote patient monitoring and telehealth are similar. Reimbursement parity with in-person care, which determines financial viability. Workflow integration, which determines clinical effectiveness. Patient access to the necessary technology and connectivity. Equity considerations, since the populations that most need access to telehealth are often the populations with the least reliable broadband and device access.
+
+The Vermont Rural Health Transformation Program funds broadband infrastructure in rural Vermont precisely because telehealth and remote patient monitoring cannot deliver their potential without reliable connectivity. The investment is a Technology pillar investment that is also implicitly an Equity pillar investment.
+
+Topic four. Diagnostic artificial intelligence.
+
+Diagnostic artificial intelligence is the use of machine learning models to assist clinicians with diagnostic decisions. Image-based diagnostic artificial intelligence in radiology, pathology, and dermatology has matured substantially. Algorithmic risk stratification for patient deterioration is now common in hospital settings. Diagnostic decision support in primary care is an active area of development.
+
+The structural question with diagnostic artificial intelligence is not whether to use it. The structural question is how to govern it. Diagnostic artificial intelligence introduces risks that older clinical decision support tools did not. Models can drift. Models can perform differently on populations than they were trained on. Models can encode biases that produce disparate diagnostic outcomes by race, ethnicity, or other protected characteristic. Models can produce automation bias in clinicians, who may stop second-guessing the model even when the model is wrong.
+
+We address governance in the next topic.
+
+Topic five. The artificial intelligence clinical governance lifecycle.
+
+The book argues that responsible artificial intelligence in clinical care requires a four-stage governance lifecycle. The four stages are validation, deployment, monitoring, and retirement.
+
+Validation. Before an artificial intelligence model is deployed clinically, it must be validated on the population to which it will be applied. Validation includes performance metrics, equity audits, and clinical workflow assessment. Validation is not a one-time act. Validation must be repeated as the model is updated, as the population shifts, and as the clinical context changes.
+
+Deployment. When an artificial intelligence model is deployed clinically, the deployment must include workflow design, clinician training, alert tuning, and a defined plan for handling model outputs. Deployment is the stage at which alert fatigue is either prevented or generated. We will return to alert fatigue.
+
+Monitoring. Once an artificial intelligence model is operating clinically, ongoing monitoring is required to detect model drift, performance degradation, and emerging disparate outcomes. Monitoring includes automated metrics, periodic re-validation, and a process for human review of edge cases. Monitoring is the stage that most organizations under-invest in.
+
+Retirement. Eventually, every artificial intelligence model must be retired or replaced. The model that was state of the art three years ago may be obsolete now. The clinical context may have changed. The population may have changed. The retirement decision is structurally important and is often delayed for institutional reasons that have nothing to do with clinical evidence.
+
+The platform's AI Clinical Governance Lab, available in the research lab, walks through this lifecycle in operational detail. The lab is structured for procurement teams, governance committees, and clinical informatics leaders who are making real artificial intelligence governance decisions.
+
+A note on alert fatigue and clinical decision support effectiveness.
+
+Clinical decision support is the broader category that includes artificial intelligence-based decision support. Clinical decision support has been deployed in American hospitals for decades. The accumulated experience is mixed. Well-designed clinical decision support reduces clinical errors, improves adherence to evidence-based practice, and supports population health management. Poorly designed clinical decision support produces alert fatigue, automation bias, and clinician burnout.
+
+The difference between well-designed and poorly designed clinical decision support is workflow integration. A clinical decision support alert that interrupts a clinician at the wrong moment, with the wrong information, with the wrong action available, is worse than no alert at all. A clinical decision support alert that arrives at the right moment, with the right information, with the right action available, is genuinely useful.
+
+The work of getting clinical decision support right is operational work. It requires clinicians, informaticists, workflow designers, and quality assurance staff working together over time. It is not a technology procurement decision. It is an ongoing operational discipline.
+
+In Chapter 8, we turn to the Economics pillar. We examine the fee-for-service trap, Vermont's four attempts at global budgets, Maryland's decade of evidence, and the financial architecture of Act 68.

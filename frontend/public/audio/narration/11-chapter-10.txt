@@ -1,0 +1,57 @@
+Chapter 10. The Clinical Pillar. Redesigning Care Delivery for a Transformed System.
+
+The Clinical pillar is the care delivery model itself. It is what actually happens between a clinician and a patient, or between a care team and a population. Chapter 10 develops the structural argument for clinical redesign. Chapter 11 develops the operational practice.
+
+Vermont's Clinical pillar is, in two thousand twenty-six, the most operationally mature in the United States. The chapter is organized around five elements of that maturity. The Blueprint for Health. The Vermont Chronic Care Initiative, called VCCI. The Support and Services at Home program, called SASH. The eleven Designated Agencies. And the three-layer behavioral health architecture.
+
+Element one. The Blueprint for Health.
+
+Vermont's Blueprint for Health is a statewide primary care transformation program that has been operating continuously since two thousand eight. Eighteen years of evidence. One hundred and twenty-eight Patient-Centered Medical Home practices participating. Community Health Teams operating in every Vermont community. A Multi-Disciplinary Team model that brings together clinical, behavioral health, and social services providers around shared patient populations.
+
+The structural significance of the Blueprint is that it is the longest-running statewide primary care transformation in the country. The Blueprint predates the Affordable Care Act. It predates the federal patient-centered medical home recognition program. It predates most of the academic literature that the Blueprint is now cited in. The Blueprint is, in framework terms, the Clinical pillar infrastructure that Vermont built first, before it had the Economics pillar reforms to support it. The Blueprint is what made Vermont's later Economics pillar reforms even conceivable.
+
+The Blueprint's operational architecture has four elements. First, recognition standards for participating primary care practices, aligned with national patient-centered medical home recognition but adapted for Vermont. Second, Community Health Teams that operate in every Vermont community, providing care coordination, behavioral health integration, and social services navigation. Third, a Multi-Disciplinary Team model that brings together clinical and non-clinical disciplines around shared patient populations. Fourth, a payment structure that supports the model financially through per-member-per-month payments to participating practices.
+
+The Blueprint is the clinical infrastructure that makes the rest of Vermont's transformation operationally possible. Without the Blueprint, the Vermont Chronic Care Initiative would have no primary care home to work with. Without the Blueprint, the SASH program would have no clinical anchor. Without the Blueprint, the Designated Agencies would have no integration partners.
+
+Element two. The Vermont Chronic Care Initiative.
+
+The Vermont Chronic Care Initiative, called VCCI, is operated by the Department of Vermont Health Access as the primary care management program for Vermont's highest-risk Medicaid members. VCCI targets the top five to fifteen percent of Medicaid members by predicted cost and clinical complexity. The program provides dedicated case management by registered nurses and licensed social workers.
+
+VCCI uses a multi-domain risk stratification methodology. The domains are utilization patterns, including emergency department visits, inpatient admissions, and thirty-day readmissions. Chronic condition burden, measured through the Chronic Disability Payment System, which is a Medicaid-specific diagnostic cost group classification system. Social determinants of health vulnerability scores, covering housing instability, food insecurity, substance use disorder treatment gaps, mental health crises, and transportation barriers. And care access gaps, including medication adherence below sixty percent on high-priority drugs, HEDIS quality gaps, and absence of a primary care visit in six months.
+
+Members meeting the Very High threshold receive intensive case management. A dedicated case manager as the member's single point of contact. A shared care plan developed collaboratively with the member's primary care physician and specialists. Eco-mapping of the member's support network. Multi-disciplinary care team conferences. Medication reconciliation and adherence coaching. Social services navigation through two-one-one Vermont and community action agencies. A thirty-day transition care management protocol following every hospitalization or skilled nursing facility discharge.
+
+VCCI is the operational implementation of the risk-stratification logic that we described in Chapter 9 in economic terms. The five percent of patients who drive fifty percent of cost are, in Vermont, the VCCI population. The intensive case management that VCCI provides is the operational answer to the question of how to manage that population proactively, rather than reacting to crises after they occur.
+
+The clinical evidence for VCCI is strong. Vermont state agency evaluations have documented reductions in hospitalization, reductions in emergency department visits, and reductions in total per-member-per-year cost for VCCI participants compared to matched controls. The strength of the evidence is one of the reasons Vermont's Clinical pillar is treated as a national reference model.
+
+Element three. The Support and Services at Home program.
+
+The Support and Services at Home program, called SASH, is Vermont's most operationally mature response to the aging-population care imperative. SASH is not, technically, a clinical program. It is a housing-based program that deploys health teams inside affordable housing communities to serve older Vermonters and people with disabilities who are on Medicare.
+
+SASH operates in more than two hundred affordable housing communities across all fourteen Vermont counties, serving more than thirteen thousand participants. Each participating housing community is assigned a part-time wellness nurse and a full-time SASH coordinator. The nurse and coordinator conduct individualized health assessments, build care plans, provide one-on-one chronic disease coaching, coordinate care transitions, screen for social determinants of health barriers, and connect residents to community resources including two-one-one Vermont, meals programs, transportation assistance, and benefits enrollment.
+
+The clinical and financial evidence for SASH is documented and substantial. Commonwealth Fund and Center for Health Care Strategies evaluations demonstrate that SASH participants have lower rates of hospitalization, fewer emergency department visits, lower per-member-per-year Medicare spending, and delayed nursing home placement compared to matched controls in similar affordable housing without SASH.
+
+The structural significance of SASH is that it is the proof of concept for the care-where-people-live model that global budget incentives require. Under fee-for-service payment, the SASH model's value is invisible. SASH prevents the hospitalizations that generate fee-for-service revenue. Under a global budget, avoided hospitalization is the explicit objective. SASH is therefore not just a social services program. It is a clinical delivery strategy aligned with Vermont's payment reform architecture in a way that few other programs are.
+
+Element four. The eleven Designated Agencies.
+
+Vermont's behavioral health infrastructure is anchored by eleven Designated Agencies. The Designated Agencies are regionally designated non-profit organizations under contract with the Vermont Department of Mental Health and the Department of Disabilities, Aging, and Independent Living. They deliver community-based mental health, substance use disorder, and developmental disability services across defined geographic catchment areas covering every county in Vermont.
+
+The Designated Agencies include the Howard Center, serving Chittenden County and greater Burlington. Washington County Mental Health Services, serving the Montpelier-Barre area. Northeast Kingdom Human Services, covering the three-county Northeast Kingdom which is Vermont's most rural and underserved region. And eight other agencies covering the remaining counties.
+
+Each Designated Agency operates crisis services, outpatient mental health, community rehabilitation, emergency designated receiving facilities, and community developmental disability services under a statutory service obligation that cannot be refused based on ability to pay.
+
+The structural significance of the Designated Agencies is that they are the primary mechanism for ensuring access to behavioral health services in the communities where crisis, chronic mental illness, and complex substance use disorder intersect with poverty, rural geography, and housing instability. The Blueprint's Community Health Teams and the Designated Agencies' crisis infrastructure are the two institutional anchors that keep high-complexity, high-cost behavioral health patients connected to community-based care rather than cycling through emergency departments and inpatient psychiatric units.
+
+Vermont's transformation agenda under Acts 167 and 68 depends on the financial and operational sustainability of the Designated Agencies. Several Designated Agencies operate with thin margins, limited ability to recruit and retain behavioral health clinicians in a tight rural workforce market, and Medicaid rate structures that do not fully cover the cost of the mandated service obligation. The Agency of Human Services restructuring process, which we discuss in Chapter 20, must address Designated Agency sustainability explicitly.
+
+Element five. The three-layer behavioral health architecture.
+
+Vermont is building a three-layer architecture for behavioral health. Layer one is primary care behavioral health integration through the Collaborative Care Model, embedded in Blueprint practices. Layer two is community behavioral health through the Designated Agencies, providing outpatient mental health and substance use disorder services and crisis stabilization. Layer three is certified community behavioral health clinic services and inpatient psychiatric care for the most acute presentations.
+
+The architecture is structurally important because it answers, at the system level, the question of where each level of behavioral health complexity should be managed. Most behavioral health crises should not require emergency department visits. Most behavioral health treatment should not require inpatient psychiatric admission. The three-layer architecture is designed to keep patients at the lowest level of acuity consistent with their needs.
+
+In Chapter 11, we examine the Clinical pillar in operational practice, including the patient-centered medical home transformation playbook, the HEDIS improvement methodology, and the operational deployment of the Collaborative Care Model.
