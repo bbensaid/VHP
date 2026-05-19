@@ -140,9 +140,14 @@ export default function APMCalculator() {
   const [customQW, setCustomQW] = useState(2);
 
   const model = APM_MODELS[modelIdx];
-  const effectiveModel = modelIdx === APM_MODELS.length - 1
-    ? { ...model, msr: customMSR / 100, sharingRate: customSharing / 100, lossShare: customLoss / 100, qualityWithhold: customQW / 100 }
-    : model;
+  // Wrapped in useMemo so the results memo below sees a stable reference unless
+  // a model parameter actually changed. Without this, `effectiveModel` is a new
+  // object on every render and the downstream memo recomputes unconditionally.
+  const effectiveModel = useMemo(() => {
+    return modelIdx === APM_MODELS.length - 1
+      ? { ...model, msr: customMSR / 100, sharingRate: customSharing / 100, lossShare: customLoss / 100, qualityWithhold: customQW / 100 }
+      : model;
+  }, [model, modelIdx, customMSR, customSharing, customLoss, customQW]);
 
   const results = useMemo(() => {
     const annualBenchmark = attributedLives * benchmarkPMPM * 12;

@@ -7,26 +7,27 @@ interface FontSizeToggleProps {
   targetId: string;
 }
 
+// Explicit map ensures Tailwind scanner picks up these classes. Hoisted to
+// module scope so the effect's dependency list stays stable.
+const SIZE_CLASSES = {
+  base: "prose-base",
+  lg: "prose-lg",
+  xl: "prose-xl",
+} as const;
+
 export default function FontSizeToggle({ targetId }: FontSizeToggleProps) {
   // Default matches the server-rendered 'prose-lg'
   const [currentSize, setCurrentSize] = useState<"base" | "lg" | "xl">("lg");
-
-  // Explicit map ensures Tailwind scanner picks up these classes
-  const sizeClasses = {
-    base: "prose-base",
-    lg: "prose-lg",
-    xl: "prose-xl"
-  };
 
   useEffect(() => {
     const element = document.getElementById(targetId);
     if (!element) return;
 
     // Clean up all managed classes to prevent conflicts
-    Object.values(sizeClasses).forEach(cls => element.classList.remove(cls));
-    
+    Object.values(SIZE_CLASSES).forEach(cls => element.classList.remove(cls));
+
     // Apply current size
-    element.classList.add(sizeClasses[currentSize]);
+    element.classList.add(SIZE_CLASSES[currentSize]);
   }, [currentSize, targetId]);
 
   const toggleSize = () => {
