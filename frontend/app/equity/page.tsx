@@ -1,7 +1,7 @@
 import Link from "next/link";
 import HubSubscribeCTA from "@/components/HubSubscribeCTA";
 import LatestHubReports from "@/components/LatestHubReports";
-import FromTheBook from "@/components/FromTheBook";
+import FromTheBookForPillar from "@/components/FromTheBookForPillar";
 
 export const metadata = {
   title: "Equity | Health Transformation Review",
@@ -50,12 +50,7 @@ export default function Page() {
         </p>
       </div>
 
-      <FromTheBook
-        chapter="Chapters 12 & 13"
-        chapterTitle="The Equity Pillar — Closing Gaps, Not Just Averaging Them"
-        excerpt="Chapter 12 treats SDOH as a structural variable, not a downstream filter — covering Vermont's 8 SDOH domains, algorithmic bias in clinical AI, and rural access disparity. Chapter 13 operationalizes equity measurement through HEDIS stratification, the HEROI Index, and SDOH screening at scale."
-        href="/book#chapters"
-      />
+      <FromTheBookForPillar pillarId="equity" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {topics.map((item) => (

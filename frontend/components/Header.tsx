@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Logo from "./Logo";
 import DarkModeToggle from "./DarkModeToggle";
+import BackendStatus from "./BackendStatus";
 import NavDropdown from "./NavDropdown";
 import {
   Bars3Icon,
@@ -33,105 +34,71 @@ const companyItems = [
 
 // ─── MEGA-MENU DATA ──────────────────────────────────────────────────────────
 
-const pillars = [
-  {
-    id: "policy",
-    label: "Policy",
-    href: "/policy",
-    color: "sky",
-    dot: "bg-sky-500",
-    accent: "text-sky-700",
-    hoverBg: "hover:bg-sky-50",
-    desc: "Regulation, mandates & global health law",
-    items: [
-      { href: "/policy/regulation", label: "Regulation & Legislation", desc: "Federal & state rule-making analysis" },
-      { href: "/policy/mandates", label: "Public Health Mandates", desc: "Coverage requirements & enforcement" },
-      { href: "/policy/global", label: "Global & Comparative Policy", desc: "International health system benchmarks" },
-      { href: "/policy/feasibility", label: "Policy Feasibility Studies", desc: "Implementation viability assessments" },
-    ],
-  },
-  {
-    id: "economics",
-    label: "Economics",
-    href: "/economics",
-    color: "emerald",
-    dot: "bg-emerald-500",
-    accent: "text-emerald-700",
-    hoverBg: "hover:bg-emerald-50",
-    desc: "Value-based care, markets & investment",
-    items: [
-      { href: "/economics/value", label: "Value-Based Care Models", desc: "APMs, bundled payments & outcomes" },
-      { href: "/economics/market", label: "Market & Finance", desc: "Payer dynamics & cost structures" },
-      { href: "/economics/cea", label: "Labor & Workforce Strategy", desc: "Staffing trends & compensation analysis" },
-      { href: "/economics/investment", label: "Healthcare Investment Trends", desc: "M&A, PE activity & capital flows" },
-    ],
-  },
-  {
-    id: "technology",
-    label: "Technology",
-    href: "/technology",
-    color: "indigo",
-    dot: "bg-indigo-500",
-    accent: "text-indigo-700",
-    hoverBg: "hover:bg-indigo-50",
-    desc: "AI, digital health & data governance",
-    items: [
-      { href: "/technology/ai", label: "AI & Machine Learning", desc: "Clinical AI, NLP & decision support" },
-      { href: "/technology/digital", label: "Digital Health & Telemedicine", desc: "RPM, virtual care & app ecosystems" },
-      { href: "/technology/security", label: "Data Security & Governance", desc: "HIPAA, interoperability & trust frameworks" },
-      { href: "/technology/workflow", label: "Tech-Enabled Workflow", desc: "Automation & operational efficiency" },
-    ],
-  },
-  {
-    id: "clinical",
-    label: "Clinical",
-    href: "/clinical",
-    color: "red",
-    dot: "bg-red-500",
-    accent: "text-red-700",
-    hoverBg: "hover:bg-red-50",
-    desc: "Hospital-at-home, precision, virtual care, genomics & population health",
-    items: [
-      { href: "/clinical/hah", label: "Hospital-at-Home", desc: "Acute care delivery outside hospital walls" },
-      { href: "/clinical/precision", label: "Precision Medicine", desc: "Genomics, biomarkers & targeted therapy" },
-      { href: "/clinical/virtual", label: "Virtual Care Models", desc: "Asynchronous & synchronous care design" },
-      { href: "/clinical/genomics", label: "Genomics & Predictive Medicine", desc: "Pharmacogenomics, polygenic risk scores & AI early warning" },
-      { href: "/clinical/population", label: "Population Health Management", desc: "Chronic disease at scale, risk stratification & preventive care" },
-    ],
-  },
-  {
-    id: "equity",
-    label: "Equity",
-    href: "/equity",
-    color: "violet",
-    dot: "bg-violet-500",
-    accent: "text-violet-700",
-    hoverBg: "hover:bg-violet-50",
-    desc: "SDOH, algorithmic bias & access disparity",
-    items: [
-      { href: "/equity/sdoh", label: "SDOH Integration", desc: "Social drivers embedded in care models" },
-      { href: "/equity/bias", label: "Algorithmic Bias", desc: "Fairness audits & model accountability" },
-      { href: "/equity/access", label: "Access Disparity", desc: "Rural, racial & economic access gaps" },
-    ],
-  },
-  {
-    id: "operations",
-    label: "Operations",
-    href: "/operations",
-    color: "teal",
-    dot: "bg-teal-500",
-    accent: "text-teal-700",
-    hoverBg: "hover:bg-teal-50",
-    desc: "Revenue cycle, workforce, compliance & supply chain",
-    items: [
-      { href: "/operations/revenue-cycle", label: "Revenue Cycle Management", desc: "Billing, coding, claims & denial management" },
-      { href: "/operations/workforce", label: "Workforce & Human Capital", desc: "Staffing, credentialing & labor strategy" },
-      { href: "/operations/compliance", label: "Quality, Compliance & Risk", desc: "Accreditation, HIPAA & patient safety" },
-      { href: "/operations/supply-chain", label: "Supply Chain & Infrastructure", desc: "Procurement, logistics & facilities" },
-      { href: "/operations/payer-network", label: "Payer & Network Operations", desc: "Utilization management & network contracting" },
-    ],
-  },
-];
+import { PILLARS, type PillarId } from "@/lib/taxonomy";
+
+// Header mega-menu items are more verbose than the sidebar (they carry a `desc`
+// per item). Pillar identity comes from taxonomy; per-item descriptions are
+// header-specific copy.
+
+interface MegaMenuItem {
+  href: string;
+  label: string;
+  desc: string;
+}
+
+const PILLAR_MENU_ITEMS: Record<PillarId, MegaMenuItem[]> = {
+  policy: [
+    { href: "/policy/regulation", label: "Regulation & Legislation", desc: "Federal & state rule-making analysis" },
+    { href: "/policy/mandates", label: "Public Health Mandates", desc: "Coverage requirements & enforcement" },
+    { href: "/policy/global", label: "Global & Comparative Policy", desc: "International health system benchmarks" },
+    { href: "/policy/feasibility", label: "Policy Feasibility Studies", desc: "Implementation viability assessments" },
+  ],
+  economics: [
+    { href: "/economics/value", label: "Value-Based Care Models", desc: "APMs, bundled payments & outcomes" },
+    { href: "/economics/market", label: "Market & Finance", desc: "Payer dynamics & cost structures" },
+    { href: "/economics/cea", label: "Labor & Workforce Strategy", desc: "Staffing trends & compensation analysis" },
+    { href: "/economics/investment", label: "Healthcare Investment Trends", desc: "M&A, PE activity & capital flows" },
+  ],
+  technology: [
+    { href: "/technology/ai", label: "AI & Machine Learning", desc: "Clinical AI, NLP & decision support" },
+    { href: "/technology/digital", label: "Digital Health & Telemedicine", desc: "RPM, virtual care & app ecosystems" },
+    { href: "/technology/security", label: "Data Security & Governance", desc: "HIPAA, interoperability & trust frameworks" },
+    { href: "/technology/workflow", label: "Tech-Enabled Workflow", desc: "Automation & operational efficiency" },
+  ],
+  clinical: [
+    { href: "/clinical/hah", label: "Hospital-at-Home", desc: "Acute care delivery outside hospital walls" },
+    { href: "/clinical/precision", label: "Precision Medicine", desc: "Genomics, biomarkers & targeted therapy" },
+    { href: "/clinical/virtual", label: "Virtual Care Models", desc: "Asynchronous & synchronous care design" },
+    { href: "/clinical/genomics", label: "Genomics & Predictive Medicine", desc: "Pharmacogenomics, polygenic risk scores & AI early warning" },
+    { href: "/clinical/population", label: "Population Health Management", desc: "Chronic disease at scale, risk stratification & preventive care" },
+  ],
+  equity: [
+    { href: "/equity/sdoh", label: "SDOH Integration", desc: "Social drivers embedded in care models" },
+    { href: "/equity/bias", label: "Algorithmic Bias", desc: "Fairness audits & model accountability" },
+    { href: "/equity/access", label: "Access Disparity", desc: "Rural, racial & economic access gaps" },
+  ],
+  operations: [
+    { href: "/operations/revenue-cycle", label: "Revenue Cycle Management", desc: "Billing, coding, claims & denial management" },
+    { href: "/operations/workforce", label: "Workforce & Human Capital", desc: "Staffing, credentialing & labor strategy" },
+    { href: "/operations/compliance", label: "Quality, Compliance & Risk", desc: "Accreditation, HIPAA & patient safety" },
+    { href: "/operations/supply-chain", label: "Supply Chain & Infrastructure", desc: "Procurement, logistics & facilities" },
+    { href: "/operations/payer-network", label: "Payer & Network Operations", desc: "Utilization management & network contracting" },
+  ],
+};
+
+// Generated from PILLARS — same shape as the previous hand-written array so the
+// IntelligencePanel render below works unchanged.
+const pillars = PILLARS.map((p) => ({
+  id: p.id,
+  label: p.label,
+  href: p.href,
+  color: p.color,
+  dot: p.classes.dot,
+  accent: p.classes.headerColor,
+  hoverBg: p.classes.hoverBg,
+  desc: p.desc,
+  items: PILLAR_MENU_ITEMS[p.id],
+}));
 
 type MegaMenuType = "intelligence" | "learn" | "tools" | "states" | "advise" | null;
 
@@ -838,7 +805,10 @@ const Header = () => {
           </form>
 
           {/* RIGHT: w-87.5 mirrors AppShell right spacer — search flex-1 ends at same x as tickers */}
-          <div className="w-87.5 shrink-0 flex items-center justify-end gap-1">
+          <div className="w-87.5 shrink-0 flex items-center justify-end gap-2">
+            <span className="hidden md:inline-flex">
+              <BackendStatus />
+            </span>
             <DarkModeToggle />
             {!isStudio && (
               <button

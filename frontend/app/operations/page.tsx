@@ -1,5 +1,5 @@
 import Link from "next/link";
-import FromTheBook from "@/components/FromTheBook";
+import FromTheBookForPillar from "@/components/FromTheBookForPillar";
 
 export const metadata = {
   title: "Operations | Health Transformation Review",
@@ -54,12 +54,7 @@ export default function OperationsPage() {
 
       {/* ── FROM THE BOOK ─────────────────────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
-        <FromTheBook
-          chapter="Chapters 14 & 15"
-          chapterTitle="The Operations Pillar — Executing Hospital System Transformation"
-          excerpt="Chapter 14 covers revenue cycle management under global budgets, HCC coding accuracy as a financial lever, workforce strategy, and supply chain in a transformed system. Chapter 15 provides 30 operational levers for cost reduction, HCC coding walkthroughs, denial management, and closing the administrative cost gap."
-          href="/book#chapters"
-        />
+        <FromTheBookForPillar pillarId="operations" />
       </section>
 
       {/* ── THE QUESTION ──────────────────────────────────────────────────── */}

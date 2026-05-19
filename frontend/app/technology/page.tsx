@@ -1,7 +1,7 @@
 import Link from "next/link";
 import HubSubscribeCTA from "@/components/HubSubscribeCTA";
 import LatestHubReports from "@/components/LatestHubReports";
-import FromTheBook from "@/components/FromTheBook";
+import FromTheBookForPillar from "@/components/FromTheBookForPillar";
 
 export const metadata = {
   title: "Technology | Health Transformation Review",
@@ -50,12 +50,7 @@ export default function Page() {
         </p>
       </div>
 
-      <FromTheBook
-        chapter="Chapters 6 & 7"
-        chapterTitle="The Technology Pillar — Data Infrastructure for a Transformed Health System"
-        excerpt="Chapter 6 covers VHCURES, Vermont's HIE governance shift (Act 62), FHIR compliance, and AI governance before the risk arrives. Chapter 7 goes into implementation: AI scribe, remote patient monitoring, clinical decision support, and the AI Clinical Governance Lifecycle."
-        href="/book#chapters"
-      />
+      <FromTheBookForPillar pillarId="technology" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {topics.map((item) => (
