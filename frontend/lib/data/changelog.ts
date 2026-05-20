@@ -24,6 +24,27 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: readonly ChangelogEntry[] = [
   {
+    version: "Backlog cleanup — types, bundles, decisions",
+    date: "2026-05-19",
+    summary:
+      "Final pre-launch sweep: every `any` removed from app code, bundle budget enforced in CI, mobile audit clean, and the three deferred decisions are now documented with recommendations.",
+    changes: {
+      added: [
+        "scripts/check-bundle-size.sh — CI-blocking guardrail against bundle growth",
+        "frontend/docs/deferred-decisions.md — recommendations for monetization, backend autonomy, and Personalized Learning's role",
+        "Dynamic import for StateInitiativesMap on /states (saves ~150 KB on first paint)",
+      ],
+      fixed: [
+        "Replaced 8 `any` usages with proper types (SanityCard interface, SpeechRecognition typed window cast, react-markdown mdast narrowing)",
+        "react-simple-maps + d3-geo no longer load eagerly on /states",
+      ],
+      infra: [
+        "ESLint no-unused-vars now respects underscore-prefixed names (290 warnings, down from 339)",
+        "npm run smoke now includes bundle:check; CI runs it after Build",
+      ],
+    },
+  },
+  {
     version: "Phase 4 — Launch readiness",
     date: "2026-05-19",
     summary:

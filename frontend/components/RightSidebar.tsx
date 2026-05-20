@@ -363,7 +363,9 @@ export default function RightSidebar() {
                   <ReactMarkdown
                     components={{
                       p: ({ node, children, ...props }) => {
-                        const raw = node?.children?.map((c: any) => c.value || "").join("") ?? "";
+                        const raw = node?.children
+                          ?.map((c) => (typeof c === "object" && c !== null && "value" in c ? String((c as { value?: unknown }).value ?? "") : ""))
+                          .join("") ?? "";
                         if (raw.includes("TRY IT IN THE HTR LAB")) {
                           return (
                             <p {...props} className="mb-1.5 mt-2 text-slate-700 dark:text-slate-200">

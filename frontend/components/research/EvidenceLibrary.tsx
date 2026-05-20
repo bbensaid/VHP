@@ -353,7 +353,7 @@ function CEADatabase() {
   }
 
   const filtered = useMemo(() => {
-    let list = CEA_STUDIES.filter((s) => {
+    const list = CEA_STUDIES.filter((s) => {
       const q = query.toLowerCase();
       if (q && ![s.title, s.intervention, s.journal, s.condition].some((f) => f.toLowerCase().includes(q))) return false;
       if (condition !== "All" && s.condition !== condition) return false;

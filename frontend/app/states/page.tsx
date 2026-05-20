@@ -3,8 +3,15 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
-import { StateInitiativesMap } from "@/components/states/StateInitiativesMap";
+import dynamic from "next/dynamic";
 import { getAllStateInitiatives, STATE_INITIATIVES } from "@/lib/data/state-initiatives-data";
+
+// react-simple-maps + d3-geo are ~150 KB combined. Load on demand so the
+// /states page above-the-fold renders without waiting on the map.
+const StateInitiativesMap = dynamic(
+  () => import("@/components/states/StateInitiativesMap").then((m) => m.StateInitiativesMap),
+  { ssr: false, loading: () => <div className="h-96 bg-slate-100 rounded-xl animate-pulse" /> }
+);
 import {
   MagnifyingGlassIcon,
   XMarkIcon,

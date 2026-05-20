@@ -52,7 +52,7 @@ export async function GET() {
               const linkMatch = block.match(/<link>(.*?)<\/link>/);
 
               if (titleMatch && titleMatch[1] && linkMatch && linkMatch[1]) {
-                let cleanTitle = titleMatch[1]
+                const cleanTitle = titleMatch[1]
                   .replace(/<!\[CDATA\[(.*?)\]\]>/, "$1")
                   .replace(/&amp;/g, "&")
                   .replace(/&#039;/g, "'")
