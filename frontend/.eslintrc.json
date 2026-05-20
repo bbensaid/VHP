@@ -16,7 +16,16 @@
     "@next/next/no-img-element": "warn",
     "react-hooks/exhaustive-deps": "warn",
     "prefer-const": "warn",
-    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_",
+        "destructuredArrayIgnorePattern": "^_",
+        "ignoreRestSiblings": true
+      }
+    ],
     "@typescript-eslint/no-empty-object-type": "warn"
   }
 }

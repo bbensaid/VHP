@@ -710,7 +710,11 @@ export default function ChatPage() {
                       <ReactMarkdown
                         components={{
                           p: ({ node, children, ...props }) => {
-                            const raw = node?.children?.map((c: any) => c.value || "").join("") ?? "";
+                            // mdast children are heterogeneous (text | element |
+                            // doctype). Read .value defensively rather than asserting any.
+                            const raw = node?.children
+                              ?.map((c) => (typeof c === "object" && c !== null && "value" in c ? String((c as { value?: unknown }).value ?? "") : ""))
+                              .join("") ?? "";
                             if (raw.includes("TRY IT IN THE HTR LAB")) {
                               const stripped = raw.replace(/^.*?TRY IT IN THE HTR LAB[:\s]*/i, "").trim();
                               return (
