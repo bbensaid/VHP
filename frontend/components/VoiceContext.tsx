@@ -142,10 +142,15 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
   // ── Recognition lifecycle ─────────────────────────────────────────────────
 
   function startRecognition() {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const SR: any =
-      (window as any).SpeechRecognition ??
-      (window as any).webkitSpeechRecognition;
+    // SpeechRecognition is prefixed in some browsers. lib.dom only exposes
+    // `webkitSpeechRecognition` on Window; we widen the type via a typed
+    // window cast that still avoids `any`. @types/dom-speech-recognition
+    // (devDep) provides the SpeechRecognition constructor type.
+    const w = window as Window & {
+      SpeechRecognition?: typeof SpeechRecognition;
+      webkitSpeechRecognition?: typeof SpeechRecognition;
+    };
+    const SR = w.SpeechRecognition ?? w.webkitSpeechRecognition;
     if (!SR) return;
 
     if (bag.current.recognition) {

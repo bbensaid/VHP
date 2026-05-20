@@ -47,6 +47,9 @@ jobs:
           # Skip Sentry source map upload in CI
           SENTRY_AUTH_TOKEN: ""
 
+      - name: Bundle size budget
+        run: npm run bundle:check
+
   # ── E2E smoke tests (Playwright) ─────────────────────────────────────────────
   e2e:
     name: Frontend (Playwright smoke)

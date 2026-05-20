@@ -52,7 +52,7 @@ function sampleGamma(mean: number, sd: number): number {
   const d = k - 1 / 3;
   const c = 1 / Math.sqrt(9 * d);
   for (;;) {
-    let x = sampleNormal(0, 1);
+    const x = sampleNormal(0, 1);
     let v = 1 + c * x;
     if (v <= 0) continue;
     v = v * v * v;
