@@ -1046,7 +1046,7 @@ function MedicareDrugPricing() {
 
     // NEW structure (2025+)
     const newDeductible = Math.min(cost, 590); // 2025
-    let newRemaining = cost - newDeductible;
+    const newRemaining = cost - newDeductible;
 
     const newInitialPhaseLimit = 2000 - newDeductible;
     const newInitialOOP = Math.min(newRemaining, newInitialPhaseLimit) * 0.25;

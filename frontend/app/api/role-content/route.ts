@@ -61,8 +61,8 @@ export async function GET(req: Request) {
     ]);
 
     // Pick 2 recent + 2 random from older
-    const recentPicked = (recent as any[]).slice(0, 2);
-    const olderShuffled = shuffleArray(older as any[]);
+    const recentPicked = (recent as SanityCard[]).slice(0, 2);
+    const olderShuffled = shuffleArray(older as SanityCard[]);
     const olderPicked = olderShuffled.slice(0, 2);
 
     // If not enough recent, fill from older
@@ -75,7 +75,7 @@ export async function GET(req: Request) {
     }
 
     // Build card objects
-    const cards = combined.map((item: any) => ({
+    const cards = combined.map((item) => ({
       title: item.title,
       pillar: item.pillar,
       type: item._type,
@@ -104,7 +104,18 @@ function getLabel(role: string): string {
   return labels[role] ?? "healthcare professional";
 }
 
-function buildHref(item: any): string {
+// Minimal shape of the Sanity documents this route queries. The GROQ query
+// above projects exactly these fields; anything else on the source document
+// is irrelevant to this endpoint.
+interface SanityCard {
+  _type: string;
+  _createdAt?: string;
+  title?: string;
+  slug?: string;
+  pillar?: string;
+}
+
+function buildHref(item: SanityCard): string {
   const slug = item.slug ?? "";
   switch (item._type) {
     case "policyAnalysis": return `/policy/${slug}`;
