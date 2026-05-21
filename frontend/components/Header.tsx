@@ -114,7 +114,7 @@ function IntelligencePanel({ onClose }: { onClose: () => void }) {
             <div key={p.id}>
               <div className="flex items-center gap-1.5 mb-4">
                 <span className={`w-2 h-2 rounded-full ${p.dot} shrink-0`} />
-                <p className={`text-xs font-black uppercase tracking-widest ${p.accent}`}>{p.label}</p>
+                <p className="text-xs font-black uppercase tracking-widest text-rose-600">{p.label}</p>
               </div>
               <div className="space-y-1">
                 {/* Pillar overview */}
