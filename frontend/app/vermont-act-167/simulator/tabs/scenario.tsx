@@ -6,7 +6,8 @@ import {
   CATEGORY_LABELS, CATEGORY_COLORS,
   type Recommendation, type PillarKey,
 } from "../data";
-import { Badge, InfoCard, PillarGauge } from "../atoms";
+import { Badge, PillarGauge } from "../atoms";
+import { StickyOutputPanel } from "@/components/StickyOutputPanel";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // TAB 1: SCENARIO BUILDER
@@ -61,45 +62,49 @@ export function ScenarioBuilder({ selected, onToggle, onSelectAll, onClearAll, o
         </div>
       </div>
 
-      {/* Impact Summary — fixed to the bottom of the viewport so it remains
-          visible as the user scrolls through the recommendation checklist.
-          Bottom padding above (pb-72/64) reserves space so content isn't
-          hidden behind it. */}
-      {selected.size > 0 && (
-        <div className="fixed bottom-0 left-0 right-0 z-30 px-2 sm:px-4 pb-2 sm:pb-4 pointer-events-none">
-          <div className="max-w-7xl mx-auto pointer-events-auto">
-            <InfoCard variant="info">
-              <div className="flex items-start justify-between mb-3">
-                <div>
-                  <div className="text-xs font-black uppercase tracking-widest text-blue-700 mb-1">Scenario Impact Summary</div>
-                  <p className="text-sm text-slate-600">{selected.size} recommendation{selected.size !== 1 ? "s" : ""} selected</p>
-                </div>
-                <div className="grid grid-cols-2 gap-3 text-right">
-                  <div>
-                    <div className="text-xl font-black text-emerald-700">${totals.totalSavings}M</div>
-                    <div className="text-[10px] text-slate-500 uppercase tracking-wide">Est. Annual Savings</div>
-                  </div>
-                  <div>
-                    <div className="text-xl font-black text-amber-700">${totals.totalInvestment}M</div>
-                    <div className="text-[10px] text-slate-500 uppercase tracking-wide">Total Investment</div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex gap-4 sm:gap-6 flex-wrap justify-center">
-                {PILLARS.map(({ key, label, color }) => (
-                  <PillarGauge
-                    key={key}
-                    score={totals.pillars[key]}
-                    direction={totals.pillars[key] >= 70 ? "positive" : totals.pillars[key] >= 45 ? "mixed" : "negative"}
-                    label={label.split(" ")[0]}
-                    color={color}
-                  />
-                ))}
-              </div>
-            </InfoCard>
+      {/* Impact Summary — pinned to the viewport via StickyOutputPanel so it
+          stays visible while the user scrolls the recommendation checklist. */}
+      <StickyOutputPanel
+        mode="bottom-collapsible"
+        show={selected.size > 0}
+        defaultCollapsed={false}
+        compactSummary={
+          <span className="flex items-center gap-3 flex-wrap">
+            <span className="text-xs font-black uppercase tracking-widest text-blue-700">Scenario Impact</span>
+            <span className="text-slate-600">{selected.size} selected</span>
+            <span className="text-emerald-700 font-black">${totals.totalSavings}M savings</span>
+            <span className="text-amber-700 font-black">${totals.totalInvestment}M invest</span>
+          </span>
+        }
+      >
+        <div className="flex items-start justify-between mb-3">
+          <div>
+            <div className="text-xs font-black uppercase tracking-widest text-blue-700 mb-1">Scenario Impact Summary</div>
+            <p className="text-sm text-slate-600">{selected.size} recommendation{selected.size !== 1 ? "s" : ""} selected</p>
+          </div>
+          <div className="grid grid-cols-2 gap-3 text-right">
+            <div>
+              <div className="text-xl font-black text-emerald-700">${totals.totalSavings}M</div>
+              <div className="text-[10px] text-slate-500 uppercase tracking-wide">Est. Annual Savings</div>
+            </div>
+            <div>
+              <div className="text-xl font-black text-amber-700">${totals.totalInvestment}M</div>
+              <div className="text-[10px] text-slate-500 uppercase tracking-wide">Total Investment</div>
+            </div>
           </div>
         </div>
-      )}
+        <div className="flex gap-4 sm:gap-6 flex-wrap justify-center">
+          {PILLARS.map(({ key, label, color }) => (
+            <PillarGauge
+              key={key}
+              score={totals.pillars[key]}
+              direction={totals.pillars[key] >= 70 ? "positive" : totals.pillars[key] >= 45 ? "mixed" : "negative"}
+              label={label.split(" ")[0]}
+              color={color}
+            />
+          ))}
+        </div>
+      </StickyOutputPanel>
 
       {/* Recommendation Checklist */}
       {categories.map((cat) => {

@@ -1,13 +1,15 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
-import { PlayIcon, PauseIcon, ArrowDownTrayIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import { PlayIcon, PauseIcon, ArrowDownTrayIcon, ChevronRightIcon, SpeakerWaveIcon, SpeakerXMarkIcon } from "@heroicons/react/24/solid";
 import { DocumentTextIcon } from "@heroicons/react/24/outline";
 import type { NarrationTrack } from "@/app/book/listen/page";
 
 interface Props {
   tracks: NarrationTrack[];
 }
+
+const SPEEDS = [0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0, 1.05, 1.1, 1.15] as const;
 
 export default function BookListenPlayer({ tracks }: Props) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -16,6 +18,24 @@ export default function BookListenPlayer({ tracks }: Props) {
   const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(0);
   const [audioMissing, setAudioMissing] = useState(false);
+  const [speed, setSpeed] = useState<number>(0.85);
+  const [volume, setVolume] = useState<number>(1);
+  const [muted, setMuted] = useState<boolean>(false);
+
+  // Apply the speed whenever it changes (or the active track reloads).
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio) audio.playbackRate = speed;
+  }, [speed, activeId]);
+
+  // Apply volume / mute.
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio) {
+      audio.volume = volume;
+      audio.muted = muted;
+    }
+  }, [volume, muted, activeId]);
 
   const active = tracks.find((t) => t.id === activeId) ?? tracks[0];
 
@@ -93,38 +113,45 @@ export default function BookListenPlayer({ tracks }: Props) {
   const numLabel = /^\d+$/.test(active.num) ? `Chapter ${active.num}` : active.num;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-5 gap-6 lg:gap-8">
       {/* Track list */}
-      <aside className="md:col-span-1">
-        <h2 className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">
+      <aside className="md:col-span-2">
+        <h2 className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">
           Tracks
         </h2>
         <ul className="space-y-1">
           {tracks.map((t) => {
             const isActive = t.id === activeId;
-            const nLabel = /^\d+$/.test(t.num) ? `Ch ${t.num}` : t.num;
+            // Short labels for the chapter list — full names are shown in the
+            // detail pane on the right. "INTRODUCTION" → "INTRO" so the
+            // letter-spaced uppercase label fits the fixed-width slot.
+            const nLabel = /^\d+$/.test(t.num)
+              ? `Ch ${t.num}`
+              : t.num === "Introduction"
+              ? "Intro"
+              : t.num;
             return (
               <li key={t.id}>
                 <button
                   onClick={() => setActiveId(t.id)}
-                  className={`w-full text-left px-3 py-2 rounded-lg transition-colors group ${
+                  className={`w-full text-left px-3 py-2.5 rounded-lg transition-colors group ${
                     isActive
                       ? "bg-indigo-100 border border-indigo-200"
                       : "hover:bg-slate-100 border border-transparent"
                   }`}
                 >
-                  <div className="flex items-center gap-2">
-                    <span className={`text-[9px] font-black uppercase tracking-widest shrink-0 w-12 ${
+                  <div className="flex items-start gap-3">
+                    <span className={`text-[10px] font-black uppercase tracking-wider shrink-0 w-20 pt-0.5 ${
                       isActive ? "text-indigo-600" : "text-slate-400"
                     }`}>
                       {nLabel}
                     </span>
-                    <span className={`text-xs font-semibold leading-snug truncate flex-1 ${
+                    <span className={`text-sm font-semibold leading-snug flex-1 min-w-0 wrap-break-word ${
                       isActive ? "text-indigo-900" : "text-slate-700"
                     }`}>
                       {t.title}
                     </span>
-                    {isActive && <ChevronRightIcon className="w-3 h-3 text-indigo-500 shrink-0" />}
+                    {isActive && <ChevronRightIcon className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />}
                   </div>
                 </button>
               </li>
@@ -134,7 +161,7 @@ export default function BookListenPlayer({ tracks }: Props) {
       </aside>
 
       {/* Player + active track detail */}
-      <section className="md:col-span-2">
+      <section className="md:col-span-3">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <p className="text-[10px] font-black uppercase tracking-widest text-indigo-500 mb-1">
             {numLabel}
@@ -149,7 +176,18 @@ export default function BookListenPlayer({ tracks }: Props) {
           {/* Player */}
           <div className="bg-slate-50 rounded-xl border border-slate-200 p-4">
             <audio ref={audioRef} preload="metadata" />
+
+            {/* Row 1: transport controls + scrubber */}
             <div className="flex items-center gap-3">
+              <button
+                onClick={() => seek(Math.max(0, progress - 15))}
+                disabled={audioMissing || !duration}
+                className="text-slate-500 hover:text-indigo-700 disabled:text-slate-300 disabled:cursor-not-allowed text-xs font-bold px-2 py-1"
+                aria-label="Skip back 15 seconds"
+                title="Skip back 15s"
+              >
+                ⏪ 15s
+              </button>
               <button
                 onClick={togglePlay}
                 disabled={audioMissing}
@@ -157,6 +195,15 @@ export default function BookListenPlayer({ tracks }: Props) {
                 aria-label={isPlaying ? "Pause" : "Play"}
               >
                 {isPlaying ? <PauseIcon className="w-5 h-5" /> : <PlayIcon className="w-5 h-5 ml-0.5" />}
+              </button>
+              <button
+                onClick={() => seek(Math.min(duration, progress + 15))}
+                disabled={audioMissing || !duration}
+                className="text-slate-500 hover:text-indigo-700 disabled:text-slate-300 disabled:cursor-not-allowed text-xs font-bold px-2 py-1"
+                aria-label="Skip forward 15 seconds"
+                title="Skip forward 15s"
+              >
+                15s ⏩
               </button>
               <div className="flex-1 min-w-0">
                 <input
@@ -168,6 +215,7 @@ export default function BookListenPlayer({ tracks }: Props) {
                   onChange={(e) => seek(Number(e.target.value))}
                   disabled={!duration}
                   className="w-full accent-indigo-600"
+                  aria-label="Seek"
                 />
                 <div className="flex justify-between text-[10px] font-mono text-slate-500 mt-1">
                   <span>{fmt(progress)}</span>
@@ -176,9 +224,55 @@ export default function BookListenPlayer({ tracks }: Props) {
               </div>
             </div>
 
+            {/* Row 2: speed dropdown + volume */}
+            <div className="flex items-center justify-between gap-4 mt-3 pt-3 border-t border-slate-200">
+              <label className="flex items-center gap-2">
+                <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">
+                  Speed
+                </span>
+                <select
+                  value={speed}
+                  onChange={(e) => setSpeed(Number(e.target.value))}
+                  className="text-xs font-bold text-slate-700 bg-white border border-slate-200 rounded px-2 py-1 hover:border-indigo-300 focus:outline-none focus:border-indigo-500"
+                  aria-label="Playback speed"
+                >
+                  {SPEEDS.map((s) => (
+                    <option key={s} value={s}>{s}×</option>
+                  ))}
+                </select>
+              </label>
+
+              <div className="flex items-center gap-2 flex-1 max-w-45">
+                <button
+                  onClick={() => setMuted((m) => !m)}
+                  className="text-slate-500 hover:text-indigo-700"
+                  aria-label={muted ? "Unmute" : "Mute"}
+                  title={muted ? "Unmute" : "Mute"}
+                >
+                  {muted || volume === 0
+                    ? <SpeakerXMarkIcon className="w-4 h-4" />
+                    : <SpeakerWaveIcon className="w-4 h-4" />}
+                </button>
+                <input
+                  type="range"
+                  min={0}
+                  max={1}
+                  step={0.05}
+                  value={muted ? 0 : volume}
+                  onChange={(e) => {
+                    const v = Number(e.target.value);
+                    setVolume(v);
+                    if (v > 0 && muted) setMuted(false);
+                  }}
+                  className="flex-1 accent-indigo-600"
+                  aria-label="Volume"
+                />
+              </div>
+            </div>
+
             {audioMissing && (
               <p className="text-[11px] text-amber-700 bg-amber-50 border border-amber-200 rounded-md px-3 py-2 mt-3 leading-snug">
-                Audio file not yet generated for this track. Run <code className="font-mono text-[10px]">scripts/generate-narration-audio.sh</code> on a Mac to produce the audio. The transcript is available below.
+                Audio file not yet generated for this track. Run <code className="font-mono text-[10px]">scripts/generate-narration-piper.sh</code> to produce high-quality narration with Piper TTS. The transcript is available below.
               </p>
             )}
           </div>
@@ -206,7 +300,7 @@ export default function BookListenPlayer({ tracks }: Props) {
         </div>
 
         <p className="text-[10px] text-slate-400 mt-4 leading-relaxed">
-          Audio narration generated via macOS text-to-speech as a starting point. For production-quality narration, regenerate using ElevenLabs, OpenAI TTS, or a comparable engine against the same transcript files.
+          Audio narration generated locally with Piper TTS (MIT). Free, open-source, and runs entirely on your machine — no API keys, no cloud, no rate limits.
         </p>
       </section>
     </div>

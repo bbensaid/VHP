@@ -6,6 +6,7 @@ import {
   type Hospital, type Recommendation,
 } from "../data";
 import { InfoCard, HBar, MetricCard, UrgencyBadge, TabBtn } from "../atoms";
+import { StickyOutputPanel } from "@/components/StickyOutputPanel";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // TAB 3: FINANCIAL MODELING
@@ -90,7 +91,7 @@ export function FinancialModeling({ selectedRecs }: { selectedRecs: Set<string> 
   const maxSavings = Math.max(...waterfallItems.map((i) => i.savings));
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-72 md:pb-64">
       {/* View Toggle */}
       <div className="flex items-center justify-between gap-2 flex-wrap">
         <div className="flex gap-2 flex-wrap">
@@ -129,16 +130,32 @@ export function FinancialModeling({ selectedRecs }: { selectedRecs: Set<string> 
         </div>
       </div>
 
+      {/* Sticky financial summary — pinned so the impact stays visible as
+          the user scrolls through the hospital trajectory bars. */}
+      <StickyOutputPanel
+        mode="bottom-collapsible"
+        show={view === "system"}
+        defaultCollapsed={false}
+        compactSummary={
+          <span className="flex items-center gap-3 flex-wrap text-[11px]">
+            <span className="font-black uppercase tracking-widest text-blue-700">Financial Summary</span>
+            <span className="text-red-600">Loss ${systemTotals.totalCurrentLoss.toFixed(0)}M</span>
+            <span className="text-emerald-700">Savings ${systemTotals.totalAnnualSavings.toFixed(0)}M</span>
+            <span className={systemTotals.roi > 0 ? "text-emerald-700" : "text-rose-600"}>ROI {systemTotals.roi.toFixed(0)}%</span>
+          </span>
+        }
+      >
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <MetricCard value={`$${systemTotals.totalCurrentLoss.toFixed(0)}M`} label="Current Annual Loss" sublabel="All 14 hospitals" color="text-red-600" />
+          <MetricCard value={`$${systemTotals.totalProjectedLoss2028.toFixed(0)}M`} label="Projected 2028 Loss" sublabel={`Baseline at ${assumedInflation}% growth`} color="text-red-700" />
+          <MetricCard value={`$${systemTotals.totalAnnualSavings.toFixed(0)}M`} label="Potential Annual Savings" sublabel={`${selectedRecs.size > 0 ? selectedRecs.size + " selected recs" : "All recommendations"}`} color="text-emerald-600" />
+          <MetricCard value={`${systemTotals.roi.toFixed(0)}%`} label={`${projectionYear}-Year ROI`} sublabel={`$${systemTotals.totalInvestment.toFixed(0)}M investment`} color={systemTotals.roi > 0 ? "text-emerald-600" : "text-rose-600"} />
+        </div>
+      </StickyOutputPanel>
+
       {/* System Overview */}
       {view === "system" && (
         <div className="space-y-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            <MetricCard value={`$${systemTotals.totalCurrentLoss.toFixed(0)}M`} label="Current Annual Loss" sublabel="All 14 hospitals" color="text-red-600" />
-            <MetricCard value={`$${systemTotals.totalProjectedLoss2028.toFixed(0)}M`} label="Projected 2028 Loss" sublabel={`Baseline at ${assumedInflation}% growth`} color="text-red-700" />
-            <MetricCard value={`$${systemTotals.totalAnnualSavings.toFixed(0)}M`} label="Potential Annual Savings" sublabel={`${selectedRecs.size > 0 ? selectedRecs.size + " selected recs" : "All recommendations"}`} color="text-emerald-600" />
-            <MetricCard value={`${systemTotals.roi.toFixed(0)}%`} label={`${projectionYear}-Year ROI`} sublabel={`$${systemTotals.totalInvestment.toFixed(0)}M investment`} color={systemTotals.roi > 0 ? "text-emerald-600" : "text-rose-600"} />
-          </div>
-
           {/* System Financial Health Bars */}
           <InfoCard>
             <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">Hospital System Financial Trajectory</div>
