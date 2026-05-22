@@ -495,23 +495,14 @@ export default function VermontAct167Page() {
                 An in-depth analysis of Act 167, the Oliver Wyman Report's findings, the data controversy,
                 and what Vermont's hospital transformation means for patients, providers, and policymakers.
               </p>
-              {/*
-                ── PODCAST LINK PLACEHOLDER ──
-                Replace the href below with your actual podcast URL.
-                Example formats:
-                  Spotify: https://open.spotify.com/episode/...
-                  Apple:   https://podcasts.apple.com/...
-                  Substack: https://yourname.substack.com/p/...
-              */}
-              <a
-                href="#podcast-link-placeholder"
-                className="inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-500 text-white font-bold text-sm px-5 py-2.5 rounded-lg transition-colors"
+              <audio
+                controls
+                preload="metadata"
+                className="w-full max-w-2xl h-10 accent-violet-500"
+                src="/audio/Vermont_s_Five_Year_Race_Against_Hospital_Insolvency.m4a"
               >
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 3a9 9 0 100 18A9 9 0 0012 3zm-1.5 5.25l6 3.75-6 3.75V8.25z" />
-                </svg>
-                Listen to the Episode
-              </a>
+                Your browser does not support the audio element.
+              </audio>
             </div>
           </div>
         </div>

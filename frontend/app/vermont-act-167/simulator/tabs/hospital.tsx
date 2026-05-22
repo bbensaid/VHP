@@ -7,6 +7,7 @@ import {
   type Hospital,
 } from "../data";
 import { Badge, InfoCard, PillarGauge, HBar, UrgencyBadge } from "../atoms";
+import { StickyOutputPanel } from "@/components/StickyOutputPanel";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // TAB 2: HOSPITAL DEEP DIVE
@@ -64,7 +65,7 @@ export function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }
   const affectedRecs = RECOMMENDATIONS.filter((r) => r.sourceHospitals.includes(selectedHospital));
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-72 md:pb-64">
       {/* Hospital Selector */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
         {HOSPITALS.filter((h) => h.urgency === "urgent" || h.urgency === "major").map((h) => (
@@ -168,8 +169,23 @@ export function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }
         </div>
       </div>
 
-      {/* Simulation Outputs */}
-      <div>
+      {/* Simulation Outputs — pinned to viewport so the live 5-pillar
+          analysis remains visible as the user scrolls through the
+          recommendations list below. */}
+      <StickyOutputPanel
+        mode="bottom-collapsible"
+        defaultCollapsed={false}
+        compactSummary={
+          <span className="flex items-center gap-3 flex-wrap text-[11px]">
+            <span className="font-black uppercase tracking-widest text-slate-700">5-Pillar Analysis</span>
+            <span className="text-violet-700">Policy {Math.round(5 + timelineAggressiveness * 0.05)}/10</span>
+            <span className="text-blue-700">Tech {telehealthScope}%</span>
+            <span className="text-emerald-700">Financial {Math.round(outcomes.financialImprovement * 100)}%</span>
+            <span className={outcomes.mitigatedEquityRisk > 50 ? "text-red-600" : outcomes.mitigatedEquityRisk > 30 ? "text-amber-600" : "text-emerald-600"}>Equity {Math.round(outcomes.mitigatedEquityRisk)}</span>
+            <span className="text-rose-700">Clinical {Math.max(0, Math.round(100 - outcomes.transferRisk))}</span>
+          </span>
+        }
+      >
         <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">Simulation Outputs — 5-Pillar Analysis</div>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
           {/* Policy */}
@@ -239,7 +255,7 @@ export function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }
             </div>
           </InfoCard>
         </div>
-      </div>
+      </StickyOutputPanel>
 
       {/* Relevant Recommendations */}
       {affectedRecs.length > 0 && (
