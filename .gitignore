@@ -9,6 +9,10 @@ venv/
 .env
 .gemini/
 
+# Piper TTS (local venv + downloaded voice models, ~160MB)
+.piper-venv/
+.piper-voices/
+
 # Python AI backend — persisted vector index (large, regenerated on startup)
 backend/storage/
 

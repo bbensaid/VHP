@@ -2,6 +2,7 @@
 
 import { RECOMMENDATIONS } from "../data";
 import { Badge, InfoCard, MetricCard } from "../atoms";
+import { StickyOutputPanel } from "@/components/StickyOutputPanel";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // TAB 8: IMPLEMENTATION ROADMAP
@@ -81,13 +82,29 @@ export function ImplementationRoadmap({ selectedRecs }: { selectedRecs: Set<stri
   ];
 
   return (
-    <div className="space-y-6">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <MetricCard value={`${activeRecs.length}`} label="Active Recommendations" sublabel="In roadmap" color="text-violet-700" />
-        <MetricCard value="4 phases" label="Implementation Horizon" sublabel="2025–2029" />
-        <MetricCard value="$133M" label="Total Investment" sublabel="All pillars, all recs" color="text-amber-700" />
-        <MetricCard value="$199M" label="Annual Savings Target" sublabel="Full implementation" color="text-emerald-700" />
-      </div>
+    <div className="space-y-6 pb-72 md:pb-64">
+      {/* Sticky implementation summary — pinned so phase counts stay visible
+          as the user scrolls through the long phase blocks below. */}
+      <StickyOutputPanel
+        mode="bottom-collapsible"
+        defaultCollapsed={true}
+        compactSummary={
+          <span className="flex items-center gap-3 flex-wrap text-[11px]">
+            <span className="font-black uppercase tracking-widest text-violet-700">Roadmap</span>
+            <span className="text-violet-700">{activeRecs.length} recs</span>
+            <span className="text-slate-600">4 phases · 2025–2029</span>
+            <span className="text-amber-700">$133M invest</span>
+            <span className="text-emerald-700">$199M/yr savings</span>
+          </span>
+        }
+      >
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <MetricCard value={`${activeRecs.length}`} label="Active Recommendations" sublabel="In roadmap" color="text-violet-700" />
+          <MetricCard value="4 phases" label="Implementation Horizon" sublabel="2025–2029" />
+          <MetricCard value="$133M" label="Total Investment" sublabel="All pillars, all recs" color="text-amber-700" />
+          <MetricCard value="$199M" label="Annual Savings Target" sublabel="Full implementation" color="text-emerald-700" />
+        </div>
+      </StickyOutputPanel>
 
       {/* Phase Timelines */}
       <div className="space-y-4">

@@ -6,6 +6,7 @@ import {
   type Recommendation,
 } from "../data";
 import { Badge, InfoCard, PillarGauge, MetricCard, TabBtn } from "../atoms";
+import { StickyOutputPanel } from "@/components/StickyOutputPanel";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // TAB 4: EQUITY & ACCESS ANALYSIS
@@ -35,8 +36,15 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
     return atRisk.reduce((s, h) => s + h.populationHSA, 0);
   }, []);
 
+  const equitySummary = useMemo(() => {
+    const highRisk = countyData.filter((c) => c.accessScore < 50).length;
+    const moderate = countyData.filter((c) => c.accessScore >= 50 && c.accessScore < 70).length;
+    const avgScore = Math.round(countyData.reduce((s, c) => s + c.accessScore, 0) / (countyData.length || 1));
+    return { highRisk, moderate, avgScore };
+  }, [countyData]);
+
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-72 md:pb-64">
       {/* View Toggle */}
       <div className="flex gap-2 flex-wrap">
         {(["county", "population", "transport"] as const).map((v) => (
@@ -53,6 +61,29 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
         <MetricCard value="30%" label="Age 65+ Avg" sublabel="At-risk hospital HSAs" color="text-orange-600" />
         <MetricCard value="52 min" label="Max Distance" sublabel="Grace Cottage → BMH" color="text-red-600" />
       </div>
+
+      {/* Sticky equity summary — derived from the live county scores so it
+          reflects the chosen transport scenario as the user scrolls. */}
+      <StickyOutputPanel
+        mode="bottom-collapsible"
+        defaultCollapsed={true}
+        compactSummary={
+          <span className="flex items-center gap-3 flex-wrap text-[11px]">
+            <span className="font-black uppercase tracking-widest text-violet-700">Equity Summary</span>
+            <span className="text-slate-600">Scenario: <strong>{transportScenario}</strong></span>
+            <span className="text-red-600">{equitySummary.highRisk} high-risk counties</span>
+            <span className="text-amber-600">{equitySummary.moderate} moderate</span>
+            <span className={equitySummary.avgScore < 50 ? "text-red-600" : equitySummary.avgScore < 70 ? "text-amber-600" : "text-emerald-700"}>Avg access {equitySummary.avgScore}/100</span>
+          </span>
+        }
+      >
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <MetricCard value={String(equitySummary.highRisk)} label="High-Risk Counties" sublabel="Access score < 50" color="text-red-600" />
+          <MetricCard value={String(equitySummary.moderate)} label="Moderate-Risk Counties" sublabel="Score 50–69" color="text-amber-600" />
+          <MetricCard value={String(equitySummary.avgScore)} label="Avg Access Score" sublabel={`Transport scenario: ${transportScenario}`} color={equitySummary.avgScore < 50 ? "text-red-600" : equitySummary.avgScore < 70 ? "text-amber-600" : "text-emerald-700"} />
+          <MetricCard value={atRiskPopulation.toLocaleString()} label="Population at Risk" sublabel="HSA total" color="text-rose-600" />
+        </div>
+      </StickyOutputPanel>
 
       {/* County View */}
       {view === "county" && (

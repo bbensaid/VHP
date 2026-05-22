@@ -12,6 +12,7 @@ import {
   ScaleIcon,
   UsersIcon,
 } from '@heroicons/react/24/outline'
+import { StickyOutputPanel } from '@/components/StickyOutputPanel'
 
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 
@@ -394,7 +395,7 @@ export default function CalAIMSimulatorClient() {
         )}
 
         {/* Footer links */}
-        <div className="mt-12 pt-8 border-t border-slate-200 flex flex-wrap gap-3">
+        <div className="mt-12 pt-8 border-t border-slate-200 flex flex-wrap gap-3 pb-72 md:pb-64">
           <Link href="/california-calaim" className="flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 bg-blue-50 border border-blue-200 px-3 py-1.5 rounded-lg transition-colors">
             California CalAIM Overview <ArrowTopRightOnSquareIcon className="w-3.5 h-3.5" />
           </Link>
@@ -406,6 +407,48 @@ export default function CalAIMSimulatorClient() {
           </Link>
         </div>
       </div>
+
+      {/* Sticky scenario summary — pinned so impact stays visible as the
+          user scrolls through initiatives, plans, or the timeline. */}
+      <StickyOutputPanel
+        mode="bottom-collapsible"
+        show={selected.length > 0}
+        defaultCollapsed={true}
+        compactSummary={
+          <span className="flex items-center gap-3 flex-wrap text-[11px]">
+            <span className="font-black uppercase tracking-widest text-blue-700">CalAIM Impact</span>
+            <span className="text-slate-600">{selected.length} initiatives</span>
+            <span className="text-rose-700">Cost ${totalCostM}M</span>
+            <span className="text-emerald-700">Savings ${totalSavingsM}M</span>
+            <span className={netM >= 0 ? 'text-emerald-700' : 'text-rose-700'}>Net {netM >= 0 ? '+' : ''}${netM}M</span>
+            <span className="text-amber-700">Complexity {avgComplexity}/100</span>
+          </span>
+        }
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
+            <h3 className="text-xs font-black uppercase tracking-wider text-slate-500 mb-3">Pillar Scores</h3>
+            <div className="grid grid-cols-4 gap-2">
+              {PILLARS.map(p => (
+                <div key={p.key} className="flex flex-col items-center gap-1">
+                  <ScoreGauge score={pillarScores[p.key]} color={p.color} />
+                  <span className={`text-[10px] font-bold text-center leading-tight ${p.color}`}>{p.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-white border border-slate-200 rounded-xl p-4 space-y-2 text-sm">
+            <h3 className="text-xs font-black uppercase tracking-wider text-slate-500 mb-2">Financial Summary</h3>
+            <div className="flex justify-between"><span className="text-slate-600">Annual Cost</span><span className="font-black text-rose-700">${totalCostM}M</span></div>
+            <div className="flex justify-between"><span className="text-slate-600">Annual Savings</span><span className="font-black text-emerald-700">${totalSavingsM}M</span></div>
+            <div className="border-t border-slate-100 pt-2 flex justify-between">
+              <span className="font-bold text-slate-700">Net Impact</span>
+              <span className={`font-black ${netM >= 0 ? 'text-emerald-700' : 'text-rose-700'}`}>{netM >= 0 ? '+' : ''}${netM}M</span>
+            </div>
+            <div className="flex justify-between"><span className="text-slate-600">Full Implementation</span><span className="font-bold text-slate-700">{maxTimeline} mo</span></div>
+          </div>
+        </div>
+      </StickyOutputPanel>
     </div>
   )
 }
