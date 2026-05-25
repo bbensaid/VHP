@@ -1,5 +1,5 @@
 // lib/advisory-data.ts
-// Single source of truth for all Pro-Bono Advisory service content.
+// Single source of truth for all Future Advisory service content.
 // Drives: landing page grid, services catalog, hub tabs, contact form, header nav.
 
 export interface EngagementStep {
@@ -79,7 +79,7 @@ export const CLIENT_SEGMENTS: ClientSegment[] = [
   { name: "Academic Medical Centers",      icon: "🎓", description: "Research hospitals and university health systems balancing clinical mission, education, research, and financial sustainability." },
 ];
 
-// ─── 8 PRO-BONO ADVISORY SERVICES ────────────────────────────────────────────
+// ─── 8 FUTURE ADVISORY SERVICES ──────────────────────────────────────────────
 export const ADVISORY_SERVICES: AdvisoryService[] = [
   // ── 1. STRATEGIC CONSULTING ──────────────────────────────────────────────
   {

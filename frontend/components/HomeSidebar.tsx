@@ -296,9 +296,9 @@ const SECTIONS: Section[] = [
   // ── STATES & PROGRAMS — generated from taxonomy ────────────────────────────
   buildProgramsSection(),
 
-  // ── PRO-BONO ADVISORY & SERVICES ──────────────────────────────────────────
+  // ── FUTURE ADVISORY SERVICES ──────────────────────────────────────────────
   {
-    id: "advisory", label: "Advisory & Services",
+    id: "advisory", label: "Future Advisory Services",
     icon: BriefcaseIcon,
     dot: "bg-indigo-500",
     headerColor: "text-indigo-700", headerBg: "bg-indigo-100",
@@ -371,6 +371,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
   useEffect(() => {
     let typed = "";
     const handler = (e: KeyboardEvent) => {
+      if (!e.key || e.key.length !== 1) return;
       typed += e.key.toLowerCase();
       if (typed.length > SETUP_SEQUENCE.length) typed = typed.slice(-SETUP_SEQUENCE.length);
       if (typed === SETUP_SEQUENCE) setShowSetup(true);
@@ -636,10 +637,10 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
 
         {/* My Library — direct link, no sub-items */}
         <Link
-          href="/saved"
+          href="/library"
           onClick={onNavigate}
           className={`flex items-center px-2 h-8 rounded-xl transition-colors ${
-            isActive("/saved")
+            isActive("/library")
               ? "bg-slate-100 dark:bg-slate-700"
               : "hover:bg-slate-100 dark:hover:bg-slate-700"
           }`}

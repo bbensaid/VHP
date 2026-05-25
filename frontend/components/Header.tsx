@@ -452,10 +452,10 @@ function AdvisePanel({ onClose }: { onClose: () => void }) {
   return (
     <div className="max-w-7xl mx-auto px-6 py-6">
       <div className="grid grid-cols-3 gap-8">
-        {/* Pro-Bono Advisory Services */}
+        {/* Future Advisory Services */}
         <div className="col-span-2">
           <p className="text-xs font-black uppercase tracking-widest text-rose-600 mb-3">
-            Pro-Bono Advisory Services
+            Future Advisory Services
           </p>
           <div className="grid grid-cols-2 gap-1">
             {[
@@ -613,7 +613,7 @@ const Header = () => {
     { type: "learn", label: "ACADEMY", activeCheck: "/academy" },
     { type: "tools", label: "TOOLS", activeCheck: "/htr-simulator,/hti-dashboard,/trending-topics,/multimedia,/the-wire,/investment-tracker,/medicaid-eligibility-simulator,/transformation-friction-index,/impact-simulation" },
     { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/vermont-act-68,/vermont-medicaid,/vermont-rht-program,/vermont-blueprint,/vermont-vcci,/vermont-sash,/vermont-sdoh,/vermont-designated-agencies,/vermont-legislative-resources,/california-calaim,/oregon-cco,/dashboard,/ahead-model,/bed-capacity" },
-    { type: "advise", label: "PRO-BONO ADVISORY & SERVICES", activeCheck: "/advisory,/connect,/community" },
+    { type: "advise", label: "FUTURE ADVISORY SERVICES", activeCheck: "/advisory,/connect,/community" },
   ];
 
   const isMenuActive = (activeCheck: string) =>
@@ -951,7 +951,7 @@ const Header = () => {
               },
               {
                 key: "advise",
-                label: "Pro-Bono Advisory & Services",
+                label: "Future Advisory Services",
                 emoji: "💼",
                 children: [
                   { label: "Advisory Hub", href: "/advisory", sub: [] },

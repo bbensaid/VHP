@@ -133,8 +133,8 @@ const CAPABILITIES = [
   {
     href: "/advisory-hub",
     emoji: "💼",
-    title: "Pro-Bono Advisory Services",
-    desc: "Pro-bono strategic consulting, custom research, financial audit, regulatory counsel, and executive training.",
+    title: "Future Advisory Services",
+    desc: "Strategic consulting, custom research, financial audit, regulatory counsel, and executive training.",
     accent: "border-slate-200 hover:border-slate-400 hover:bg-slate-50",
     tag: "Premium",
     tagColor: "bg-slate-100 text-slate-600",
