@@ -77,7 +77,7 @@ const faqs = [
     items: [
       {
         q: "Is HTR funded by pharmaceutical companies, technology vendors, or health lobbies?",
-        a: "No. HTR maintains strict editorial independence. Revenue is derived solely from subscriptions and academy masterclass enrollment. Our advisory services are offered on a pro-bono basis. We do not accept sponsored content, vendor-funded research, or affiliate arrangements that could influence our assessments. Our advisory engagements are disclosed when relevant to content.",
+        a: "No. HTR maintains strict editorial independence. Revenue is derived solely from subscriptions and academy masterclass enrollment. We do not accept sponsored content, vendor-funded research, or affiliate arrangements that could influence our assessments. Our advisory engagements are disclosed when relevant to content.",
       },
       {
         q: "How do you source your data?",
@@ -94,7 +94,7 @@ const faqs = [
     ],
   },
   {
-    category: "Pro-Bono Advisory Services",
+    category: "Future Advisory Services",
     icon: "🤝",
     items: [
       {
