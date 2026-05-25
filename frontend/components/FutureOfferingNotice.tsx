@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-const BANNER_TEXT = "Future Offering — Pending Availability of Qualified Volunteers";
+const BANNER_TEXT = "Future Offering — Planned for Launch in Jan' 2028.";
 const BANNER_SUB  = "Pages below are previews. Nothing is active yet.";
 
 /**
