@@ -12,7 +12,8 @@
     "test:e2e": "playwright test",
     "test:e2e:install": "playwright install --with-deps chromium",
     "bundle:check": "./scripts/check-bundle-size.sh",
-    "smoke": "npm run typecheck && npm run lint && npm run build && npm run bundle:check"
+    "smoke": "npm run typecheck && npm run lint && npm run build && npm run bundle:check",
+    "seed:courses": "node scripts/seed-courses.mjs"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
