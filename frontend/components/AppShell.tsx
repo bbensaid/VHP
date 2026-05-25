@@ -30,6 +30,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const isStudio = pathname.startsWith("/studio");
   const isChatPage = pathname === "/chat";
   const isWelcomePage = pathname === "/welcome";
+  const isCoursePage = pathname.startsWith("/academy/tracks/");
   const hideSidebarsCompletely = isStudio || isChatPage || isWelcomePage;
 
   // 2. SIDEBAR STATE from Context (shared with Header)
@@ -37,14 +38,13 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
 
   const { isStripVisible, setStripVisible } = useTicker();
 
-  // 3. AUTO-COLLAPSE — only for pages that need full width (studio, chat)
-  //    All other pages: sidebar persists in whatever state the user set it.
+  // 3. AUTO-COLLAPSE — studio/chat hide sidebars entirely; course pages collapse them by default.
   useEffect(() => {
-    if (hideSidebarsCompletely) {
+    if (hideSidebarsCompletely || isCoursePage) {
       setLeftOpen(false);
       setRightOpen(false);
     }
-  }, [pathname, hideSidebarsCompletely, setLeftOpen, setRightOpen]);
+  }, [pathname, hideSidebarsCompletely, isCoursePage, setLeftOpen, setRightOpen]);
 
   // 4. WINDOW RESIZE HANDLER — only fires on actual resize, not on mount.
   //    User controls initial state; sidebars start open per SidebarContext defaults.
@@ -65,8 +65,6 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const sidebarTop = isStickyBarVisible ? "2.5rem" : "0rem"; // 2.5rem = --sticky-bar-height
 
   if (hideSidebarsCompletely) {
-    // [&>main] passes the height constraint through the <main id="main-content"> wrapper
-    // in layout.tsx so h-full on the chat page resolves to the actual viewport height.
     return (
       <div className="flex-1 min-h-0 overflow-hidden flex flex-col [&>main]:flex-1 [&>main]:min-h-0 [&>main]:flex [&>main]:flex-col">
         {children}
