@@ -550,6 +550,17 @@ const Header = () => {
   const voice = useVoice();
   const isChatPage = pathname === "/chat";
 
+  // Publish header height as a CSS variable so course pages can fill the remaining viewport exactly.
+  useEffect(() => {
+    const el = document.querySelector("header");
+    if (!el) return;
+    const update = () => document.documentElement.style.setProperty("--header-height", `${el.offsetHeight}px`);
+    update();
+    const obs = new ResizeObserver(update);
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
   // Inject voice transcript into header search — skip /chat (handled there)
   // and /search (the search page has its own input that handles injection directly)
   useEffect(() => {

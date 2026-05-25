@@ -1,0 +1,83 @@
+"use client";
+
+import { CheckCircle2, Clock } from "lucide-react";
+import type { LessonWithProgress } from "@/types/course";
+import { PillarBadge } from "./PillarBadge";
+import { ContentBlockRenderer } from "./ContentBlockRenderer";
+import { LessonQuiz } from "./LessonQuiz";
+
+interface LessonViewProps {
+  lesson: LessonWithProgress;
+  onMarkComplete: (lessonId: string) => void;
+  onQuizPass: (lessonId: string, score: number) => void;
+  onAudioUpload?: (lessonId: string, file: File, slotKey: string) => Promise<string>;
+}
+
+export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload }: LessonViewProps) {
+  const isCompleted = lesson.progress?.status === "completed";
+
+  return (
+    <article className="max-w-2xl mx-auto space-y-8 pb-12 font-sans">
+      <header className="space-y-3 pt-2">
+        <PillarBadge pillar={lesson.pillar} />
+        <h1 className="text-2xl font-semibold text-slate-900 leading-snug">{lesson.title}</h1>
+        <div className="flex items-center gap-4 text-sm text-slate-500">
+          <span className="flex items-center gap-1.5">
+            <Clock className="w-4 h-4" />
+            {lesson.estimatedMinutes} min
+          </span>
+          {isCompleted && (
+            <span className="flex items-center gap-1.5 text-emerald-700">
+              <CheckCircle2 className="w-4 h-4" />
+              Completed
+            </span>
+          )}
+        </div>
+        <p className="text-base text-slate-600 leading-relaxed">{lesson.summary}</p>
+      </header>
+
+      {lesson.objectives.length > 0 && (
+        <section aria-label="Learning objectives" className="bg-slate-50 border border-slate-200 rounded-lg p-5 space-y-3">
+          <h2 className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Learning objectives</h2>
+          <ul className="space-y-2.5">
+            {lesson.objectives.map((obj) => (
+              <li key={obj.id} className="flex items-start gap-2.5 text-sm">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                <span className="text-slate-700 leading-relaxed">{obj.text}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <div className="space-y-8">
+        {lesson.contentBlocks.map((block, i) => (
+          <ContentBlockRenderer
+            key={i}
+            block={block}
+            lessonId={lesson.id}
+            onAudioUpload={onAudioUpload ? (file, key) => onAudioUpload(lesson.id, file, key) : undefined}
+          />
+        ))}
+      </div>
+
+      {lesson.quiz && (
+        <section aria-label="Knowledge check">
+          <LessonQuiz quiz={lesson.quiz} onPass={(score) => onQuizPass(lesson.id, score)} />
+        </section>
+      )}
+
+      {!isCompleted && (
+        <div className="pt-2">
+          <button
+            onClick={() => onMarkComplete(lesson.id)}
+            className="flex items-center gap-2 px-5 py-2.5 bg-emerald-600 text-white text-base font-medium rounded-lg hover:bg-emerald-700 transition-colors"
+          >
+            <CheckCircle2 className="w-4 h-4" />
+            Mark lesson complete
+          </button>
+        </div>
+      )}
+    </article>
+  );
+}
