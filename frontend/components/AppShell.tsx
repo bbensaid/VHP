@@ -73,7 +73,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   }
 
   return (
-    <div className="flex-1 bg-white dark:bg-slate-900 flex flex-col">
+    <div className={`bg-white dark:bg-slate-900 flex flex-col ${isCoursePage ? "h-full overflow-hidden" : "flex-1"}`}>
       {/* 1. Sticky Navigation Bar */}
       {isStickyBarVisible && (
         <div className="sticky top-0 z-(--z-sticky) h-10 flex justify-center transition-all duration-300 pointer-events-none bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 shadow-[0_4px_8px_-2px_rgba(0,0,0,0.12)]">
@@ -106,7 +106,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
       )}
 
       {/* 2. Main Content Area */}
-      <div className="flex flex-col lg:flex-row mt-3 md:mt-4 w-full px-3 md:px-4 transition-all relative z-0 pb-20 md:pb-0">
+      <div className={`flex flex-col lg:flex-row w-full transition-all relative z-0 ${isCoursePage ? "flex-1 min-h-0 overflow-hidden" : "mt-3 md:mt-4 px-3 md:px-4 pb-20 md:pb-0"}`}>
         <CollapsibleSidebar
           side="left"
           isOpen={isLeftOpen}
@@ -118,7 +118,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         </CollapsibleSidebar>
 
         <main
-          className={`flex-1 min-w-0 min-h-screen transition-all duration-300 ${isLeftOpen ? "lg:ml-4" : "lg:pl-6"} ${isRightOpen ? "lg:mr-4" : "lg:pr-6"}`}
+          className={`flex-1 min-w-0 transition-all duration-300 ${isCoursePage ? "min-h-0 overflow-hidden" : "min-h-screen"} ${isLeftOpen ? "lg:ml-4" : isCoursePage ? "" : "lg:pl-6"} ${isRightOpen ? "lg:mr-4" : isCoursePage ? "" : "lg:pr-6"}`}
           style={{ "--sidebar-top": sidebarTop } as React.CSSProperties}
         >
           {children}
