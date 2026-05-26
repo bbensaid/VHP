@@ -2512,7 +2512,9 @@
           }
         ]
       }
-    ]
+    ],
+    "pillar": "policy",
+    "level": "foundational"
   },
   {
     "id": "course_value_based_care",
@@ -4645,7 +4647,9 @@
           }
         ]
       }
-    ]
+    ],
+    "pillar": "economics",
+    "level": "intermediate"
   },
   {
     "id": "course_health_equity",
@@ -6684,7 +6688,9 @@
           }
         ]
       }
-    ]
+    ],
+    "pillar": "equity",
+    "level": "foundational"
   },
   {
     "id": "course_ai_healthcare",
@@ -8944,6 +8950,8 @@
           }
         ]
       }
-    ]
+    ],
+    "pillar": "technology",
+    "level": "intermediate"
   }
 ]
