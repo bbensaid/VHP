@@ -1,6 +1,7 @@
 import type { Pillar } from "@/types/course";
 
 const PILLAR_CONFIG: Record<Pillar, { label: string; className: string }> = {
+  general:    { label: "Introduction",      className: "bg-slate-50 text-slate-700 border border-slate-200" },
   policy:     { label: "Policy Pillar",     className: "bg-blue-50 text-blue-800 border border-blue-200" },
   technology: { label: "Technology Pillar", className: "bg-emerald-50 text-emerald-800 border border-emerald-200" },
   economics:  { label: "Economics Pillar",  className: "bg-amber-50 text-amber-800 border border-amber-200" },

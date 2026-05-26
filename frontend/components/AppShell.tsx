@@ -59,7 +59,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
 
   const activeTickerData = tickerData;
 
-  const showBreadcrumbs = !isStudio;
+  const showBreadcrumbs = !isStudio && !isCoursePage;
   const showTicker = !!activeTickerData && !isStudio;
   const isStickyBarVisible = showBreadcrumbs || showTicker;
   const sidebarTop = isStickyBarVisible ? "2.5rem" : "0rem"; // 2.5rem = --sticky-bar-height

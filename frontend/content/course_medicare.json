@@ -1,0 +1,687 @@
+{
+  "id": "course-medicare",
+  "slug": "medicare-fundamentals",
+  "title": "Medicare Fundamentals",
+  "subtitle": "Parts A, B, C, and D — coverage, payment, and the shift to value-based Medicare",
+  "description": "A comprehensive guide to the Medicare program — its structure, financing, coverage rules, and evolution toward value-based payment. Learn how Medicare Parts A through D work, how providers are paid, how Medicare Advantage differs from traditional Medicare, and how federal innovation models are reshaping incentives.",
+  "pillar": "policy",
+  "level": "foundational",
+  "estimatedHours": 8,
+  "thumbnailUrl": null,
+  "tracks": [
+    {
+      "id": "track-mcare-overview",
+      "slug": "medicare-overview",
+      "title": "Medicare: Structure and Eligibility",
+      "pillar": "policy",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "lesson-mcare-001",
+          "slug": "medicare-history-structure",
+          "title": "Medicare: History, Structure, and Enrollment",
+          "pillar": "policy",
+          "order": 1,
+          "estimatedMinutes": 20,
+          "summary": "Medicare is the federal health insurance program for Americans 65 and older, certain disabled individuals, and people with End-Stage Renal Disease. This lesson covers how Medicare was created, how it's structured, and who is eligible.",
+          "objectives": [
+            {"id": "obj-mcare-001-1", "text": "Describe the historical origins and intent of the Medicare program"},
+            {"id": "obj-mcare-001-2", "text": "Identify the four parts of Medicare and what each covers"},
+            {"id": "obj-mcare-001-3", "text": "Explain the eligibility criteria for Medicare enrollment"}
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "Medicare was signed into law by President Lyndon B. Johnson on July 30, 1965 — the same day as Medicaid. It was created to solve a specific problem: private insurers were refusing to cover or were charging prohibitive premiums to older Americans, leaving most seniors uninsured. Today, Medicare covers approximately 67 million Americans and accounts for nearly 20% of national health spending."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "The Four Parts of Medicare"
+            },
+            {
+              "type": "text",
+              "body": "**Part A — Hospital Insurance.** Covers inpatient hospital care, skilled nursing facility (SNF) care following a hospital stay, hospice, and some home health. Most beneficiaries pay no premium for Part A (they paid into Medicare via payroll taxes during their working years).\n\n**Part B — Medical Insurance.** Covers outpatient services, physician visits, preventive care, durable medical equipment, and outpatient drugs administered in medical settings. Part B requires a monthly premium ($174.70 in 2024 for most beneficiaries).\n\n**Part C — Medicare Advantage (MA).** An alternative to traditional Medicare delivered by private insurance plans. MA plans must cover at minimum everything Parts A and B cover, and most include Part D drug coverage. Plans receive risk-adjusted capitation payments from CMS and often offer additional benefits.\n\n**Part D — Prescription Drug Coverage.** Voluntary outpatient prescription drug benefit delivered by private plans. Beneficiaries pay premiums, deductibles, and copays, with the federal government subsidizing a substantial portion of costs."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Eligibility"
+            },
+            {
+              "type": "text",
+              "body": "Medicare eligibility is not solely age-based:\n\n**Age 65+.** U.S. citizens and permanent residents who have worked 40 quarters (10 years) paying Medicare taxes are entitled to premium-free Part A at 65. Those with fewer quarters can buy in.\n\n**Disability.** Individuals who have received Social Security Disability Insurance (SSDI) for 24 months become automatically enrolled in Medicare Parts A and B.\n\n**End-Stage Renal Disease (ESRD).** Individuals of any age with ESRD requiring dialysis or a kidney transplant qualify for Medicare.\n\n**Amyotrophic Lateral Sclerosis (ALS).** ALS patients receive Medicare immediately upon receiving SSDI, without the standard 24-month wait."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "title": "Medicare vs. Medicaid",
+              "body": "Medicare is federally funded and administered, covering primarily the elderly and disabled regardless of income. Medicaid is jointly federal-state funded, covering primarily low-income individuals. Many low-income Medicare beneficiaries are 'dual eligible' — covered by both programs simultaneously."
+            }
+          ],
+          "quiz": {
+            "id": "quiz-mcare-001",
+            "questions": [
+              {
+                "id": "q-mcare-001-1",
+                "text": "Which part of Medicare covers inpatient hospital stays?",
+                "options": [
+                  {"id": "a", "text": "Part A"},
+                  {"id": "b", "text": "Part B"},
+                  {"id": "c", "text": "Part C"},
+                  {"id": "d", "text": "Part D"}
+                ],
+                "correctId": "a",
+                "explanation": "Medicare Part A covers inpatient hospital care, skilled nursing facilities, hospice, and some home health services."
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson-mcare-002",
+          "slug": "medicare-financing",
+          "title": "How Medicare Is Financed",
+          "pillar": "economics",
+          "order": 2,
+          "estimatedMinutes": 18,
+          "summary": "Medicare is financed through a combination of payroll taxes, premiums, and general federal revenues. Understanding Medicare's financing structure reveals why the program faces long-term fiscal pressures and why payment reform matters.",
+          "objectives": [
+            {"id": "obj-mcare-002-1", "text": "Explain the three primary sources of Medicare financing"},
+            {"id": "obj-mcare-002-2", "text": "Distinguish between the Part A Trust Fund and the Supplementary Medical Insurance Trust Fund"},
+            {"id": "obj-mcare-002-3", "text": "Describe the long-term fiscal pressures facing the Medicare program"}
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "Medicare's financing structure reflects its origin as a social insurance program — workers pay in during their careers and draw benefits in retirement. But the math has gotten harder as the population ages."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Funding Sources"
+            },
+            {
+              "type": "text",
+              "body": "**Part A — Hospital Insurance Trust Fund** is financed primarily by the Medicare payroll tax: 1.45% on wages paid by employers and 1.45% by employees (2.9% combined). High earners pay an additional 0.9% on income above $200,000 (individual) or $250,000 (joint). When more Medicare taxes are collected than Part A spends, the surplus goes into the HI Trust Fund. When the reverse is true, the Trust Fund draws down.\n\n**Parts B and D — Supplementary Medical Insurance (SMI) Trust Fund** is funded differently. SMI receives general federal revenues (about 74%) and beneficiary premiums (about 26%). Unlike the HI Trust Fund, the SMI Trust Fund is always solvent — it's funded by appropriations, so Congress simply funds it annually.\n\n**Medicare Advantage.** The federal government pays MA plans a risk-adjusted per-member-per-month capitation rate, drawing from both the HI and SMI Trust Funds depending on what services are covered."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Long-Term Fiscal Pressures"
+            },
+            {
+              "type": "text",
+              "body": "The HI Trust Fund has faced projected insolvency repeatedly — most recently projected to be depleted in 2036 (2024 Trustees Report). Depletion doesn't mean Medicare ends; it means the Trust Fund could only pay about 89 cents per dollar of benefits from incoming payroll taxes.\n\nThe underlying demographic pressure is stark: in 1965, there were approximately 4 workers per Medicare beneficiary. By 2030, there will be fewer than 2.5. The baby boom generation, now retiring at 10,000 people per day, is the primary driver of this shift.\n\nThis fiscal pressure is a key reason why CMS has invested heavily in delivery system reform — ACOs, value-based contracts, and payment model innovation — to slow the rate of cost growth."
+            }
+          ],
+          "quiz": null
+        },
+        {
+          "id": "lesson-mcare-003",
+          "slug": "medicare-coverage-benefits",
+          "title": "Medicare Coverage: What's Covered, What's Not",
+          "pillar": "policy",
+          "order": 3,
+          "estimatedMinutes": 22,
+          "summary": "Traditional Medicare has significant coverage gaps — no dental, vision, or hearing coverage, and substantial cost-sharing that can expose beneficiaries to catastrophic out-of-pocket costs. Understanding these gaps explains the Medigap and Medicare Advantage markets.",
+          "objectives": [
+            {"id": "obj-mcare-003-1", "text": "Identify the major Part A and Part B cost-sharing requirements"},
+            {"id": "obj-mcare-003-2", "text": "Explain what Medicare does NOT cover and why this matters"},
+            {"id": "obj-mcare-003-3", "text": "Describe how Medigap (Medicare Supplement) insurance fills coverage gaps"}
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "Traditional Medicare is not comprehensive insurance — it was designed as a safety net, not a full-coverage plan. Beneficiaries face substantial cost-sharing and significant coverage exclusions."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Part A Cost-Sharing"
+            },
+            {
+              "type": "text",
+              "body": "**Inpatient hospital deductible:** $1,632 per benefit period in 2024 (not annually — per hospital episode, which resets after 60 days out of the hospital).\n\n**Coinsurance:**\n- Days 1–60: $0 coinsurance after deductible\n- Days 61–90: $408/day coinsurance\n- Days 91+: $816/day (lifetime reserve days)\n- After 150 days: 100% on beneficiary\n\n**Skilled Nursing Facility:**\n- Days 1–20: $0 coinsurance (following qualifying 3-night hospital stay)\n- Days 21–100: $204/day\n- Day 101+: 100% on beneficiary"
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Part B Cost-Sharing"
+            },
+            {
+              "type": "text",
+              "body": "**Annual deductible:** $240 in 2024.\n\n**Coinsurance:** 20% of the Medicare-approved amount for most services — with no out-of-pocket maximum. A catastrophic illness can result in unbounded 20% coinsurance under traditional Medicare.\n\n**Premium:** $174.70/month in 2024 (higher for high-income beneficiaries under IRMAA)."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "What Medicare Doesn't Cover"
+            },
+            {
+              "type": "text",
+              "body": "Traditional Medicare has notable exclusions:\n\n- **Dental care** — routine exams, cleanings, fillings, dentures\n- **Vision care** — routine eye exams, eyeglasses\n- **Hearing aids** — a major gap for elderly beneficiaries\n- **Long-term care** — Medicare covers only skilled nursing care following a qualifying hospital stay; custodial (nursing home) care is not covered\n- **Cosmetic procedures**\n- **Most care outside the U.S.**\n\nThese gaps are a primary driver of Medicare Advantage enrollment growth — most MA plans include dental, vision, and hearing benefits that traditional Medicare excludes."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Medigap Insurance"
+            },
+            {
+              "type": "text",
+              "body": "**Medigap** (Medicare Supplement) policies are standardized supplemental insurance plans sold by private insurers that fill Traditional Medicare's cost-sharing gaps. Ten standardized plans (A through N) are offered. The most popular plans (G and N) cover the Part B deductible and most coinsurance, effectively giving beneficiaries near-comprehensive coverage with a predictable premium.\n\nApproximately 23% of traditional Medicare beneficiaries have Medigap coverage. Medigap is not compatible with Medicare Advantage — beneficiaries must choose one model or the other."
+            }
+          ],
+          "quiz": null
+        }
+      ]
+    },
+    {
+      "id": "track-mcare-payment",
+      "slug": "medicare-payment-systems",
+      "title": "Medicare Payment Systems",
+      "pillar": "economics",
+      "order": 2,
+      "lessons": [
+        {
+          "id": "lesson-mcare-004",
+          "slug": "inpatient-pps-drg",
+          "title": "Inpatient Payment: DRGs and the Prospective Payment System",
+          "pillar": "economics",
+          "order": 1,
+          "estimatedMinutes": 23,
+          "summary": "Medicare's inpatient Prospective Payment System (IPPS), introduced in 1983, fundamentally transformed how hospitals are paid — shifting from retrospective cost-based reimbursement to fixed payments based on Diagnosis-Related Groups (DRGs). Understanding DRGs is essential for anyone working in hospital finance or health policy.",
+          "objectives": [
+            {"id": "obj-mcare-004-1", "text": "Explain why CMS moved to prospective payment in 1983 and what problem it solved"},
+            {"id": "obj-mcare-004-2", "text": "Describe how DRGs work and what determines the DRG payment rate"},
+            {"id": "obj-mcare-004-3", "text": "Identify the major add-on payments and adjustments to the base DRG rate"}
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "Before 1983, Medicare paid hospitals on a retrospective, cost-based system — whatever it cost to care for a patient, Medicare reimbursed it (with limits). This created perverse incentives: hospitals had no reason to be efficient, and longer stays meant more revenue. Medicare spending grew at 17% annually in the early 1980s, threatening the program's solvency."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "The IPPS and DRG System"
+            },
+            {
+              "type": "text",
+              "body": "The **Inpatient Prospective Payment System (IPPS)**, introduced in 1983, replaced cost-based reimbursement with fixed payments determined *before* the patient is admitted, based on the patient's diagnosis.\n\nThe unit of payment is the **Diagnosis-Related Group (DRG)** — a classification of clinically similar patients that are expected to require similar hospital resources. CMS currently uses Medicare Severity DRGs (MS-DRGs), which have approximately 760 groups. Each MS-DRG has a **relative weight** that reflects how resource-intensive that group is compared to the average.\n\n**Payment formula:**\n\nBase DRG Payment = MS-DRG Relative Weight × Hospital Base Rate\n\nThe **hospital base rate** is set by CMS annually and adjusted for:\n- **Wage index** — labor costs vary significantly by market (high in NYC, lower in rural Vermont)\n- **Teaching status** — academic medical centers receive Graduate Medical Education (GME) add-ons\n- **Disproportionate Share Hospital (DSH)** adjustments for safety-net hospitals serving high proportions of Medicaid/uninsured patients"
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Add-On Payments"
+            },
+            {
+              "type": "text",
+              "body": "The base DRG rate is adjusted for several factors:\n\n**Outlier payments.** When a patient's costs dramatically exceed the DRG payment (a 'cost outlier'), CMS pays an additional amount. This protects hospitals from catastrophic losses on extremely complex cases.\n\n**Transfer adjustments.** When a patient is transferred to another acute care hospital before the full geometric mean length of stay, the transferring hospital receives a per-diem rate rather than the full DRG payment.\n\n**Complication and Comorbidity (CC/MCC) levels.** MS-DRGs differentiate by whether a case has a Major Complication/Comorbidity (MCC), a Complication/Comorbidity (CC), or neither — creating three tiers for most DRG categories. Accurate clinical documentation and coding is critical for capturing appropriate CC/MCC designations."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "title": "Clinical Documentation Integrity (CDI)",
+              "body": "Hospitals employ clinical documentation integrity specialists to review records and query physicians when documentation doesn't capture the full complexity of a patient's condition. Under-documented cases may fall into lower MS-DRG tiers, costing hospitals significant revenue. CDI programs typically generate $2–5 in revenue for every $1 invested."
+            }
+          ],
+          "quiz": {
+            "id": "quiz-mcare-004",
+            "questions": [
+              {
+                "id": "q-mcare-004-1",
+                "text": "Which of the following describes how the Prospective Payment System changed Medicare hospital payments?",
+                "options": [
+                  {"id": "a", "text": "Medicare began paying hospitals based on actual costs after discharge"},
+                  {"id": "b", "text": "Medicare began paying fixed amounts based on diagnosis before care is delivered"},
+                  {"id": "c", "text": "Medicare contracted with hospitals for bundled annual rates"},
+                  {"id": "d", "text": "Medicare shifted all hospital payments to capitation"}
+                ],
+                "correctId": "b",
+                "explanation": "The PPS/DRG system pays hospitals a fixed, diagnosis-based rate set prospectively — before care is delivered — incentivizing efficiency because the payment is the same regardless of actual costs."
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson-mcare-005",
+          "slug": "physician-payment-fee-schedule",
+          "title": "Physician Payment: The Medicare Fee Schedule and RBRVS",
+          "pillar": "economics",
+          "order": 2,
+          "estimatedMinutes": 22,
+          "summary": "Medicare pays physicians using a fee schedule based on Relative Value Units (RVUs) under the Resource-Based Relative Value Scale (RBRVS). Understanding how RVUs are calculated and how the Conversion Factor is set explains the systematic undervaluation of primary care relative to specialty procedures.",
+          "objectives": [
+            {"id": "obj-mcare-005-1", "text": "Describe how RBRVS and RVUs determine physician payment rates"},
+            {"id": "obj-mcare-005-2", "text": "Explain why procedural specialties earn more than primary care under the fee schedule"},
+            {"id": "obj-mcare-005-3", "text": "Describe MACRA and the Quality Payment Program's role in physician payment reform"}
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "Before 1992, Medicare paid physicians based on 'usual, customary, and reasonable' charges — whatever physicians billed, Medicare largely paid. This rewarded proceduralists who could bill high and often and failed to reward cognitive services like evaluation and management. RBRVS was designed to rationalize physician payment."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "RBRVS and Relative Value Units"
+            },
+            {
+              "type": "text",
+              "body": "The **Resource-Based Relative Value Scale (RBRVS)** assigns each physician service a number of **Relative Value Units (RVUs)** based on:\n\n1. **Physician work RVUs** — time, skill, intensity, and mental effort required\n2. **Practice expense RVUs** — overhead costs (staff, equipment, supplies)\n3. **Malpractice RVUs** — professional liability insurance costs\n\nAll three components are adjusted for **geographic practice cost indices (GPCI)** that reflect local cost-of-living and market differences.\n\n**Medicare Payment = (Work RVU × Work GPCI + PE RVU × PE GPCI + MP RVU × MP GPCI) × Conversion Factor**\n\nThe **Conversion Factor (CF)** is set by CMS annually and translates RVUs into dollars. In 2024, the CF is approximately $32.74 per RVU."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "The Primary Care Disadvantage"
+            },
+            {
+              "type": "text",
+              "body": "A systemic critique of RBRVS is that it undervalues primary care. Procedure-based services — colonoscopies, surgeries, imaging — generate more RVUs per hour of physician time than evaluation and management (E&M) services like office visits. A cardiologist performing a procedure earns 5–10x the hourly rate of a primary care physician.\n\nThe result: severe primary care shortages in the U.S. while procedure-based specialties are adequately or over-supplied in many markets. Various payment reform efforts — value-based payment, chronic care management codes, advanced primary care add-ons — have tried to address this imbalance."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "MACRA and the Quality Payment Program"
+            },
+            {
+              "type": "text",
+              "body": "The **Medicare Access and CHIP Reauthorization Act (MACRA)** of 2015 replaced the Sustainable Growth Rate (SGR) formula — which threatened deep physician payment cuts annually — with a new framework: the **Quality Payment Program (QPP)**.\n\nQPP offers two tracks:\n\n**MIPS (Merit-Based Incentive Payment System)** — traditional Medicare billing with performance-based adjustments. Physicians score on quality, cost, improvement activities, and promoting interoperability. High scorers receive bonuses; low scorers receive reductions.\n\n**APM (Advanced Alternative Payment Model) track** — physicians who participate substantially in CMS-approved alternative payment models (ACOs with risk, bundled payments, PCMHs) receive a 5% bonus and exemption from MIPS."
+            }
+          ],
+          "quiz": null
+        },
+        {
+          "id": "lesson-mcare-006",
+          "slug": "post-acute-care-payment",
+          "title": "Post-Acute Care Payment: SNF, Home Health, and PDPM",
+          "pillar": "economics",
+          "order": 3,
+          "estimatedMinutes": 20,
+          "summary": "Post-acute care — skilled nursing facilities, home health agencies, inpatient rehabilitation, and long-term acute care hospitals — accounts for 15-20% of Medicare spending. CMS has significantly reformed post-acute payment to reward outcomes over volume.",
+          "objectives": [
+            {"id": "obj-mcare-006-1", "text": "Describe the Medicare SNF benefit and its 3-night qualifying stay requirement"},
+            {"id": "obj-mcare-006-2", "text": "Explain the Patient Driven Payment Model (PDPM) and why it replaced RUG-IV"},
+            {"id": "obj-mcare-006-3", "text": "Identify quality reporting requirements for post-acute providers"}
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "Post-acute care (PAC) is the care patients receive after an acute hospital stay to continue recovery. The Medicare PAC continuum includes skilled nursing facilities (SNFs), inpatient rehabilitation facilities (IRFs), long-term acute care hospitals (LTACHs), and home health agencies (HHAs)."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "SNF Benefit and Coverage"
+            },
+            {
+              "type": "text",
+              "body": "Medicare covers SNF care under Part A following a **qualifying inpatient hospital stay of at least 3 consecutive days** (not counting the discharge day). The patient must require skilled care — nursing, physical therapy, occupational therapy, speech-language pathology.\n\n**Coverage duration:**\n- Days 1–20: Fully covered\n- Days 21–100: $204/day coinsurance (2024)\n- Day 101+: No coverage (Medicaid or private pay)\n\nA Medicare SNF stay is opened per 'benefit period' — patients regain their full 100-day benefit after being out of a hospital or SNF for 60 consecutive days."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "PDPM: The SNF Payment Revolution"
+            },
+            {
+              "type": "text",
+              "body": "Before October 2019, Medicare paid SNFs using the **RUG-IV (Resource Utilization Group)** system, which linked payment directly to the volume of therapy minutes provided. This created a well-documented incentive to over-deliver therapy — not because patients needed it, but because it drove revenue.\n\nThe **Patient Driven Payment Model (PDPM)** replaced RUG-IV. PDPM calculates per-diem payment based on the patient's clinical characteristics — diagnoses, functional status, and cognitive impairment — rather than the volume of services delivered. Payment is case-mix adjusted and designed to align with actual patient needs. PDPM eliminated the therapy minute treadmill."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Home Health Payment"
+            },
+            {
+              "type": "text",
+              "body": "Medicare home health is paid under the **Patient-Driven Groupings Model (PDGM)**, also effective 2020. PDGM moved from 60-day episodic payments (with therapy volume incentives) to 30-day payment periods grouped by:\n\n- Clinical grouping (primary diagnosis)\n- Functional level\n- Admission source and timing (community vs. institutional; early vs. late)\n- Comorbidity adjustment\n\nLike PDPM for SNFs, PDGM removed therapy visit volume as a payment driver, replacing it with clinical characteristics."
+            }
+          ],
+          "quiz": null
+        }
+      ]
+    },
+    {
+      "id": "track-mcare-advantage",
+      "slug": "medicare-advantage",
+      "title": "Medicare Advantage: The Private Option",
+      "pillar": "policy",
+      "order": 3,
+      "lessons": [
+        {
+          "id": "lesson-mcare-007",
+          "slug": "medicare-advantage-overview",
+          "title": "Medicare Advantage: Structure and Growth",
+          "pillar": "policy",
+          "order": 1,
+          "estimatedMinutes": 22,
+          "summary": "Medicare Advantage (Part C) now covers more than 50% of Medicare beneficiaries and is the fastest-growing segment of the Medicare market. Understanding how MA works — risk adjustment, benchmarks, bidding, and star ratings — is essential for anyone in health insurance, hospital finance, or health policy.",
+          "objectives": [
+            {"id": "obj-mcare-007-1", "text": "Explain how CMS pays Medicare Advantage plans"},
+            {"id": "obj-mcare-007-2", "text": "Describe how MA risk adjustment works under HCC coding"},
+            {"id": "obj-mcare-007-3", "text": "Identify the key differences between Medicare Advantage and Traditional Medicare from a beneficiary perspective"}
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "Medicare Advantage crossed the 50% enrollment threshold in 2023 — for the first time, more Medicare beneficiaries are enrolled in private MA plans than traditional Medicare. This shift has profound implications for hospitals, physicians, and payers across the country."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "How CMS Pays MA Plans"
+            },
+            {
+              "type": "text",
+              "body": "CMS pays MA plans a monthly **capitation rate** — a fixed dollar amount per enrolled beneficiary — adjusted for each beneficiary's health status. The payment process:\n\n1. **County benchmark.** CMS establishes a county-level benchmark based on fee-for-service Medicare spending in that area (adjusted for local costs).\n\n2. **Plan bid.** MA plans submit a bid reflecting their projected cost to cover Part A/B benefits for an average enrollee. Plans bid below, at, or above the benchmark.\n\n3. **Rebate.** Plans that bid below the benchmark retain a share of the difference (the 'rebate') which must be spent on supplemental benefits (dental, vision, hearing, fitness).\n\n4. **Risk adjustment.** The final payment is adjusted upward or downward based on each enrollee's **HCC risk score** — capturing expected costs based on diagnosed conditions. A member with multiple chronic conditions receives a higher risk-adjusted payment than a healthy 67-year-old."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "HCC Risk Adjustment and Upcoding Concerns"
+            },
+            {
+              "type": "text",
+              "body": "Risk adjustment creates strong incentives for plans to identify and document all diagnoses — a practice called 'risk adjustment optimization' or, more critically, 'upcoding.' When plans conduct chart reviews and in-home health assessments specifically to find diagnoses that increase HCC scores (without necessarily treating those conditions), critics argue this inflates federal payments without improving care.\n\nCMS has implemented enhanced auditing and is developing new approaches (VBID, targeted probe-and-educate) to address risk score accuracy. Congressional scrutiny of MA overpayments — estimated at $88 billion over 10 years by MedPAC — continues."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Star Ratings"
+            },
+            {
+              "type": "text",
+              "body": "CMS's **Star Rating system** rates MA plans from 1 to 5 stars on quality and performance measures across five domains:\n\n1. Staying healthy (preventive screenings, vaccines)\n2. Managing chronic conditions (diabetes, hypertension, medication adherence)\n3. Member experience (CAHPS surveys)\n4. Member complaints and changes (appeals, grievances, enrollment stability)\n5. Health plan administration\n\nPlans with 4+ stars receive a **quality bonus** — up to 5% additional payment — and qualify for enhanced marketing opportunities. The Star Rating system is a powerful quality lever and a key differentiator in the MA market."
+            }
+          ],
+          "quiz": {
+            "id": "quiz-mcare-007",
+            "questions": [
+              {
+                "id": "q-mcare-007-1",
+                "text": "What happens when a Medicare Advantage plan bids below the county benchmark?",
+                "options": [
+                  {"id": "a", "text": "The plan must refund the difference to CMS"},
+                  {"id": "b", "text": "The plan retains a portion of the difference as a rebate, which must be used for supplemental benefits"},
+                  {"id": "c", "text": "CMS adjusts the plan's star rating upward"},
+                  {"id": "d", "text": "Beneficiaries receive lower cost-sharing"}
+                ],
+                "correctId": "b",
+                "explanation": "When MA plans bid below the county benchmark, they retain a portion of the difference as a rebate that must be reinvested in supplemental benefits like dental, vision, and hearing."
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson-mcare-008",
+          "slug": "medicare-advantage-market-dynamics",
+          "title": "MA Market Dynamics: Special Needs Plans and D-SNPs",
+          "pillar": "policy",
+          "order": 2,
+          "estimatedMinutes": 18,
+          "summary": "Special Needs Plans (SNPs) are a specialized type of Medicare Advantage plan designed for specific populations — dually eligible beneficiaries, institutionalized individuals, and those with severe chronic conditions. D-SNPs for dual eligibles are the fastest-growing segment of the SNP market.",
+          "objectives": [
+            {"id": "obj-mcare-008-1", "text": "Describe the three types of Special Needs Plans"},
+            {"id": "obj-mcare-008-2", "text": "Explain the coverage and coordination advantages of D-SNPs for dual eligible beneficiaries"},
+            {"id": "obj-mcare-008-3", "text": "Identify the financial alignment opportunity in D-SNPs under FIDE and HIDE SNP models"}
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "**Special Needs Plans (SNPs)** are MA plans authorized to exclusively enroll (or disproportionately enroll) beneficiaries with specific health or social needs. Congress created SNPs in 2003 to allow tailored benefit design for high-need populations."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "The Three SNP Types"
+            },
+            {
+              "type": "text",
+              "body": "**Dual Eligible SNPs (D-SNPs)** serve beneficiaries who have both Medicare and Medicaid — approximately 12 million Americans. D-SNPs coordinate Medicare and Medicaid benefits, reducing the fragmentation that plagues dual eligible beneficiaries.\n\n**Chronic Condition SNPs (C-SNPs)** serve beneficiaries with specific chronic conditions — diabetes, CHF, ESRD, dementia, HIV/AIDS. C-SNPs design specialized benefit structures and care management around the targeted condition.\n\n**Institutional SNPs (I-SNPs)** serve beneficiaries who live in or require care at the level of a nursing facility. I-SNPs enable MA plans to coordinate with long-term care facilities and cover the nursing home population."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "D-SNPs: The Dual Eligible Opportunity"
+            },
+            {
+              "type": "text",
+              "body": "Dual eligible beneficiaries are among the highest-need, highest-cost people in the healthcare system — 15% of Medicaid enrollees account for 34% of Medicaid spending. They have on average 7 chronic conditions, high rates of behavioral health and SDOH needs, and historically fragmented care across Medicare and Medicaid silos.\n\n**Fully Integrated Dual Eligible SNPs (FIDE SNPs)** hold Medicare and Medicaid risk under a single contract — truly integrating benefits. These plans have the financial alignment to invest in care management that reduces costs across both payers.\n\n**Highly Integrated Dual Eligible SNPs (HIDE SNPs)** have a lower level of integration — they coordinate benefits but may not hold both payer risks.\n\nCMS is pushing toward greater integration through the **Medicare-Medicaid Integration Program** and state-based agreements, recognizing that integrated financing is essential for improving care for dually eligible beneficiaries."
+            }
+          ],
+          "quiz": null
+        }
+      ]
+    },
+    {
+      "id": "track-mcare-vbp",
+      "slug": "medicare-value-based-programs",
+      "title": "Medicare Value-Based Programs",
+      "pillar": "policy",
+      "order": 4,
+      "lessons": [
+        {
+          "id": "lesson-mcare-009",
+          "slug": "hospital-vbp-hrrp-hacrp",
+          "title": "Hospital Value-Based Programs: VBP, HRRP, and HACRP",
+          "pillar": "economics",
+          "order": 1,
+          "estimatedMinutes": 22,
+          "summary": "CMS runs three major value-based programs for hospitals under traditional Medicare: the Hospital Value-Based Purchasing Program (VBP), the Hospital Readmissions Reduction Program (HRRP), and the Hospital-Acquired Condition Reduction Program (HACRP). Together, they tie approximately 6% of DRG payments to quality performance.",
+          "objectives": [
+            {"id": "obj-mcare-009-1", "text": "Describe how the Hospital VBP Program adjusts DRG payments based on quality"},
+            {"id": "obj-mcare-009-2", "text": "Explain the conditions targeted by HRRP and the magnitude of potential penalties"},
+            {"id": "obj-mcare-009-3", "text": "Identify the hospital-acquired conditions measured by HACRP"}
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "The Affordable Care Act of 2010 introduced three mandatory value-based purchasing programs for hospitals that participate in Medicare — creating financial consequences for quality performance rather than simply paying for volume."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Hospital Value-Based Purchasing (VBP) Program"
+            },
+            {
+              "type": "text",
+              "body": "VBP withholds 2% of all DRG payments and redistributes them based on hospital quality scores across four domains:\n\n1. **Clinical outcomes** — mortality rates for AMI, HF, pneumonia, COPD, CABG; PSI-90 (patient safety composite)\n2. **Safety** — healthcare-associated infections (CLABSI, CAUTI, MRSA, CDI)\n3. **Person and Community Engagement** — HCAHPS patient experience survey scores\n4. **Efficiency and Cost Reduction** — Medicare spending per beneficiary\n\nHospitals that score above average receive bonuses; those below average receive net reductions. Budget-neutral design means total dollars redistributed equal total dollars withheld."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Hospital Readmissions Reduction Program (HRRP)"
+            },
+            {
+              "type": "text",
+              "body": "HRRP penalizes hospitals with excess 30-day readmission rates for six conditions: **AMI, HF, pneumonia, COPD, hip/knee replacement, and CABG.** Maximum penalty is 3% of all Medicare DRG payments — a significant financial exposure for high-readmission hospitals.\n\nHRRP has been controversial. Critics argue it has worsened patient outcomes in some cases (patients diverted from admission when they needed hospitalization) and disproportionately penalizes safety-net hospitals that serve higher-risk, sicker populations. A 2022 adjustment stratifies hospitals by the proportion of dual-eligible patients they serve, partially addressing the equity critique."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Hospital-Acquired Condition Reduction Program (HACRP)"
+            },
+            {
+              "type": "text",
+              "body": "HACRP imposes a **1% payment reduction** on the lowest-performing quartile of hospitals for hospital-acquired conditions, including:\n\n- Central line-associated bloodstream infections (CLABSI)\n- Catheter-associated urinary tract infections (CAUTI)\n- Surgical site infections (SSI)\n- Methicillin-resistant Staphylococcus aureus (MRSA) bacteremia\n- Clostridium difficile infections (CDI)\n- Patient Safety Indicator composite (PSI-90)\n\nUnlike VBP (which sets absolute and improvement thresholds), HACRP always penalizes the bottom 25% regardless of absolute performance — creating persistent pressure even as overall rates improve."
+            }
+          ],
+          "quiz": null
+        },
+        {
+          "id": "lesson-mcare-010",
+          "slug": "mssp-aco-overview",
+          "title": "Medicare Shared Savings Program and ACOs",
+          "pillar": "economics",
+          "order": 2,
+          "estimatedMinutes": 24,
+          "summary": "The Medicare Shared Savings Program (MSSP) is the largest federal ACO program, currently covering over 10 million Medicare beneficiaries. This lesson covers how MSSP works, the pathway from upside-only to two-sided risk, and what makes ACOs financially successful.",
+          "objectives": [
+            {"id": "obj-mcare-010-1", "text": "Explain the basic structure of the MSSP and how shared savings is calculated"},
+            {"id": "obj-mcare-010-2", "text": "Describe the difference between one-sided (savings only) and two-sided (risk-sharing) tracks"},
+            {"id": "obj-mcare-010-3", "text": "Identify the capabilities that distinguish high-performing MSSP ACOs"}
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "The **Medicare Shared Savings Program (MSSP)** was created by the ACA in 2010 as the primary vehicle for physician- and health system-led accountable care in Medicare. ACOs in MSSP agree to be accountable for the quality and cost of care for an attributed Medicare fee-for-service population."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "How Shared Savings Works"
+            },
+            {
+              "type": "text",
+              "body": "**Benchmark.** CMS establishes each ACO's financial benchmark — the expected level of spending for its attributed population, based on historical FFS spending adjusted for risk score changes and trended forward.\n\n**Performance year spending.** At the end of the year, CMS calculates actual per-beneficiary spending for the ACO's attributed population.\n\n**Savings or losses.** If actual spending is below benchmark by more than the minimum savings rate (MSR — typically 2–3.5%), the ACO qualifies for shared savings. If above benchmark by more than the minimum loss rate (MLR), the ACO owes shared losses (in two-sided risk tracks).\n\n**Quality gating.** Shared savings are contingent on quality performance. ACOs that don't meet quality thresholds receive reduced savings percentages."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Risk Tracks"
+            },
+            {
+              "type": "text",
+              "body": "Under the current MSSP framework (post-2019 Pathways to Success rule), there is one primary track:\n\n**BASIC track** — Levels A through E, progressing from lower to higher risk and higher savings percentages. Levels A and B are upside-only (share savings, no risk of losses). Levels C–E have limited downside risk. New ACOs typically start in Levels A or B.\n\n**ENHANCED track** — Full two-sided risk with the highest savings percentage (75%). ACOs on this track bear substantial downside risk but earn the largest share of generated savings. Only high-confidence ACOs with strong care management capabilities take this path.\n\nCMS's goal is to migrate ACOs up to higher-risk tracks over time, achieving the financial alignment necessary for true population health investment."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "What Drives MSSP Success"
+            },
+            {
+              "type": "text",
+              "body": "Research on consistently high-performing MSSP ACOs identifies common characteristics:\n\n- **Physician leadership and alignment.** Physicians who understand and commit to population health goals\n- **Network discipline.** Directing referrals to high-quality, cost-efficient specialists and post-acute providers\n- **Post-acute care strategy.** Strong SNF partnerships and aggressive transition care programs\n- **Data infrastructure.** Real-time claims analytics and care gap reporting\n- **Care management investment.** Proportional investment in high-risk patient care management\n- **Low baseline spending.** ACOs that start with lower-than-average spending generate savings more easily against the benchmark"
+            }
+          ],
+          "quiz": {
+            "id": "quiz-mcare-010",
+            "questions": [
+              {
+                "id": "q-mcare-010-1",
+                "text": "In MSSP, what is required for an ACO to receive shared savings?",
+                "options": [
+                  {"id": "a", "text": "The ACO must enroll more than 10,000 beneficiaries"},
+                  {"id": "b", "text": "Actual spending must be below the benchmark by more than the minimum savings rate AND quality thresholds must be met"},
+                  {"id": "c", "text": "The ACO must be on the ENHANCED track"},
+                  {"id": "d", "text": "Readmission rates must fall below the national average"}
+                ],
+                "correctId": "b",
+                "explanation": "MSSP shared savings are generated when actual spending falls below the benchmark by more than the minimum savings rate. Savings are then gated and adjusted by quality performance — ACOs that don't meet quality thresholds earn reduced or no savings."
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson-mcare-011",
+          "slug": "bundled-payments-and-innovation",
+          "title": "Bundled Payments and CMS Innovation Center Models",
+          "pillar": "economics",
+          "order": 3,
+          "estimatedMinutes": 20,
+          "summary": "Beyond ACOs, CMS tests a range of alternative payment models through the Center for Medicare and Medicaid Innovation (CMMI) — including bundled payments for episodes of care, primary care transformation models, and specialty care models. This lesson maps the innovation landscape.",
+          "objectives": [
+            {"id": "obj-mcare-011-1", "text": "Explain how bundled payment models work and their incentive structure"},
+            {"id": "obj-mcare-011-2", "text": "Identify major CMMI models currently in operation"},
+            {"id": "obj-mcare-011-3", "text": "Describe the strategic considerations for providers evaluating CMMI participation"}
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "The **Center for Medicare and Medicaid Innovation (CMMI)**, created by the ACA, is authorized to test and scale new payment and delivery models. CMMI has tested over 50 models since 2011, with authority to scale models that reduce costs and maintain or improve quality without Congressional action."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Bundled Payment Models"
+            },
+            {
+              "type": "text",
+              "body": "**Bundled Payments for Care Improvement Advanced (BPCI-A)** — CMS pays a retrospective fixed price for an entire episode of care (e.g., hip replacement, pneumonia, CHF hospitalization) including the index hospitalization and 90 days of post-acute care. Participants who keep episode spending below the target price earn the difference; those who exceed it owe the difference.\n\nBPCI-A creates strong incentives to manage post-acute care — SNF choice, home health over SNF where appropriate, and post-discharge care management.\n\n**Mandatory models** — CMS has authority to mandate participation for certain hospitals in certain markets (geographically randomized). The Bundled Payment for Care Improvement model for joint replacements (CJR) was an example of a partially mandatory model."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Primary Care and Advanced APMs"
+            },
+            {
+              "type": "text",
+              "body": "**Comprehensive Primary Care Plus (CPC+)** was a major CMS primary care transformation model that provided per-member-per-month care management fees and shared savings to practices investing in population health capabilities. It demonstrated that practices with enhanced payment can meaningfully invest in care management.\n\n**ACO REACH (Realizing Equity, Access, and Community Health)** — The successor to the Global and Professional Direct Contracting model. REACH ACOs take on prospective attribution and meaningful downside risk, with enhanced benchmarking adjustments for health equity.\n\n**Primary Care First (PCF)** — A payment model that rewards primary care practices for high-quality, person-centered care through a population-based payment, a risk-adjusted revenue-based payment, and an advanced primary care model participation payment."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "title": "CMMI Strategic Direction",
+              "body": "In 2021, CMMI published a 'Strategy Refresh' committing to have 100% of Medicare and most Medicaid beneficiaries in accountable care relationships by 2030. The Biden and subsequent CMS leadership has pushed accelerated ACO enrollment and more ambitious risk timelines — signaling the direction of Medicare payment reform."
+            }
+          ],
+          "quiz": null
+        }
+      ]
+    },
+    {
+      "id": "track-mcare-part-d",
+      "slug": "medicare-part-d",
+      "title": "Medicare Part D: Drug Coverage",
+      "pillar": "policy",
+      "order": 5,
+      "lessons": [
+        {
+          "id": "lesson-mcare-012",
+          "slug": "part-d-structure-formulary",
+          "title": "Part D: Structure, Formularies, and the IRA Drug Reforms",
+          "pillar": "policy",
+          "order": 1,
+          "estimatedMinutes": 22,
+          "summary": "Medicare Part D is the voluntary outpatient prescription drug benefit, delivered by private plans and subsidized by the federal government. The Inflation Reduction Act of 2022 made the most significant Part D reforms since the benefit was created — including direct Medicare drug price negotiation and a $2,000 out-of-pocket cap.",
+          "objectives": [
+            {"id": "obj-mcare-012-1", "text": "Explain the structure of Part D coverage including formularies and cost-sharing tiers"},
+            {"id": "obj-mcare-012-2", "text": "Describe what the Inflation Reduction Act changed about Part D"},
+            {"id": "obj-mcare-012-3", "text": "Explain how the Medicare Drug Price Negotiation Program works"}
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "Medicare Part D was created by the Medicare Modernization Act (MMA) of 2003 and became effective in January 2006. It introduced voluntary prescription drug coverage to Medicare for the first time — an enormous policy change that affected virtually every Medicare beneficiary."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Part D Basics"
+            },
+            {
+              "type": "text",
+              "body": "**Voluntary participation.** Medicare beneficiaries can enroll in a stand-alone Prescription Drug Plan (PDP) for traditional Medicare or receive Part D as part of Medicare Advantage (MA-PD). Beneficiaries who go without creditable drug coverage for 63+ days face late enrollment penalties.\n\n**Formularies.** Each Part D plan maintains a formulary — a list of covered drugs organized into tiers, typically:\n- Tier 1: Preferred generics (lowest cost-sharing)\n- Tier 2: Non-preferred generics\n- Tier 3: Preferred brand-name drugs\n- Tier 4: Non-preferred brand-name drugs\n- Tier 5: Specialty drugs (highest cost-sharing)\n\nFormularies must cover at least two drugs in every drug category/class and all drugs in six 'protected' classes: antidepressants, antipsychotics, anticonvulsants, immunosuppressants, antiretrovirals, and antineoplastics."
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Inflation Reduction Act Reforms (IRA 2022)"
+            },
+            {
+              "type": "text",
+              "body": "The IRA made transformational changes to Part D:\n\n**$2,000 out-of-pocket cap.** Beginning in 2025, Medicare beneficiaries face a $2,000 annual cap on out-of-pocket prescription drug costs — eliminating the 'catastrophic' phase where patients previously had unlimited cost exposure.\n\n**Insulin cap.** Insulin costs capped at $35/month for Part D enrollees (effective 2023).\n\n**Vaccines.** All ACIP-recommended vaccines covered at $0 cost-sharing.\n\n**Drug price negotiation.** For the first time in Medicare's history, CMS is authorized to negotiate prices directly with pharmaceutical manufacturers for selected high-expenditure drugs. The first 10 drugs were selected in 2023; negotiated prices take effect in 2026. CMS has authority to expand to 20+ drugs annually.\n\nThe IRA drug reforms represent the largest change to Part D since its creation and are expected to generate $98 billion in net Medicare savings over 10 years."
+            }
+          ],
+          "quiz": {
+            "id": "quiz-mcare-012",
+            "questions": [
+              {
+                "id": "q-mcare-012-1",
+                "text": "What major change did the Inflation Reduction Act make to Medicare Part D cost-sharing?",
+                "options": [
+                  {"id": "a", "text": "It eliminated the Part D premium for low-income beneficiaries"},
+                  {"id": "b", "text": "It established a $2,000 annual out-of-pocket cap for prescription drugs"},
+                  {"id": "c", "text": "It required all brand-name drugs to be covered at Tier 1"},
+                  {"id": "d", "text": "It made Part D enrollment mandatory for all Medicare beneficiaries"}
+                ],
+                "correctId": "b",
+                "explanation": "The Inflation Reduction Act established a $2,000 annual out-of-pocket cap for Part D beginning in 2025, eliminating the previously unlimited catastrophic drug cost exposure for Medicare beneficiaries."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

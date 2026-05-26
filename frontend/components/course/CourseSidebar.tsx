@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { CheckCircle2, Circle, ChevronDown } from "lucide-react";
 import type { TrackWithProgress, Pillar } from "@/types/course";
 import { CourseProgressBar } from "./CourseProgressBar";
 
 const PILLAR_DOT: Record<Pillar, string> = {
+  general:    "bg-slate-400",
   policy:     "bg-blue-600",
   technology: "bg-emerald-600",
   economics:  "bg-amber-600",
@@ -23,6 +24,7 @@ interface CourseSidebarProps {
   progressPercent: number;
   completedLessons: number;
   totalLessons: number;
+  completedIds: Set<string>;
 }
 
 export function CourseSidebar({
@@ -33,10 +35,27 @@ export function CourseSidebar({
   progressPercent,
   completedLessons,
   totalLessons,
+  completedIds,
 }: CourseSidebarProps) {
-  const [openTrackIds, setOpenTrackIds] = useState<Set<string>>(
-    new Set([tracks[0]?.id])
+  const trackOfCurrentLesson = tracks.find((t) =>
+    t.lessons.some((l) => l.id === currentLessonId)
   );
+
+  const [openTrackIds, setOpenTrackIds] = useState<Set<string>>(
+    new Set([trackOfCurrentLesson?.id ?? tracks[0]?.id])
+  );
+
+  // When the current lesson changes, ensure its track is expanded.
+  useEffect(() => {
+    if (trackOfCurrentLesson) {
+      setOpenTrackIds((prev) => {
+        if (prev.has(trackOfCurrentLesson.id)) return prev;
+        const next = new Set(prev);
+        next.add(trackOfCurrentLesson.id);
+        return next;
+      });
+    }
+  }, [trackOfCurrentLesson]);
 
   function toggleTrack(trackId: string) {
     setOpenTrackIds((prev) => {
@@ -63,8 +82,7 @@ export function CourseSidebar({
       <nav className="flex-1 overflow-y-auto py-2" aria-label="Course navigation">
         {tracks.map((track) => {
           const isOpen = openTrackIds.has(track.id);
-          const trackDone =
-            (track.progress?.completedLessonIds.length ?? 0) === track.lessons.length;
+          const trackDone = track.lessons.every((l) => completedIds.has(l.id));
 
           return (
             <div key={track.id}>
@@ -83,11 +101,12 @@ export function CourseSidebar({
                 <ul role="list">
                   {track.lessons.map((lesson) => {
                     const isActive = lesson.id === currentLessonId;
-                    const isDone = lesson.progress?.status === "completed";
+                    const isDone = completedIds.has(lesson.id);
                     return (
                       <li key={lesson.id}>
                         <button
                           onClick={() => onSelectLesson(lesson.id)}
+                          ref={isActive ? (el) => el?.scrollIntoView({ block: "nearest" }) : null}
                           className={`flex items-center gap-2 w-full pl-9 pr-4 py-2 text-sm transition-colors text-left ${
                             isActive
                               ? "bg-white text-slate-900 font-semibold"
