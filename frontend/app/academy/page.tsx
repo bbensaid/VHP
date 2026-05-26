@@ -91,13 +91,21 @@ export default function AcademyHub() {
       {/* CTA */}
       <div className="max-w-5xl mx-auto px-6 py-16 text-center">
         <h2 className="text-2xl font-black text-slate-900 mb-3">Ready to start?</h2>
-        <p className="text-slate-500 mb-6">Use the sidebar to navigate to a specific section, or begin with a personalized path.</p>
-        <Link
-          href="/academy/personalized-learning"
-          className="inline-block px-8 py-3 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-xl transition-colors"
-        >
-          Start Personalized Learning →
-        </Link>
+        <p className="text-slate-500 mb-6">Begin with a personalized path, or browse the full course library.</p>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <Link
+            href="/academy/personalized-learning"
+            className="inline-block px-8 py-3 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-xl transition-colors"
+          >
+            Start Personalized Learning →
+          </Link>
+          <Link
+            href="/academy/tracks"
+            className="inline-block px-8 py-3 border border-slate-200 hover:bg-slate-50 text-slate-700 font-bold rounded-xl transition-colors"
+          >
+            Browse All Courses →
+          </Link>
+        </div>
       </div>
 
     </div>

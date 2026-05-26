@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useCallback, useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Trophy, BookOpen, ArrowLeft } from "lucide-react";
+import Link from "next/link";
 import type { CourseWithProgress } from "@/types/course";
 import { CourseSidebar } from "./CourseSidebar";
 import { LessonView } from "./LessonView";
@@ -25,6 +26,7 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
 
   const [currentLesson, setCurrentLesson] = useState(initialLesson);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+  const [courseComplete, setCourseComplete] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Track completed lessons locally so progress updates instantly on click.
@@ -65,6 +67,8 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
       if (hasNext) {
         setCurrentLesson(allLessons[currentIndex + 1]);
         scrollToTop();
+      } else {
+        setCourseComplete(true);
       }
     },
     [onProgressUpdate, hasNext, allLessons, currentIndex, scrollToTop]
@@ -116,6 +120,62 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
       </div>
 
       <div className="flex flex-col flex-1 overflow-hidden min-w-0">
+        {courseComplete ? (
+          /* ── Course Completion Screen ───────────────────────────────── */
+          <div className="flex-1 overflow-y-auto flex flex-col items-center justify-center px-6 py-12 bg-linear-to-b from-white to-sky-50">
+            <div className="max-w-lg w-full text-center space-y-6">
+              <div className="flex justify-center">
+                <div className="w-20 h-20 rounded-full bg-sky-100 flex items-center justify-center">
+                  <Trophy className="w-10 h-10 text-sky-600" />
+                </div>
+              </div>
+              <div>
+                <p className="text-xs font-black uppercase tracking-widest text-sky-600 mb-2">Course Complete</p>
+                <h1 className="text-2xl font-black text-slate-900 mb-3">{course.title}</h1>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  You&apos;ve completed all {totalLessons} lessons. Great work advancing your healthcare knowledge.
+                </p>
+              </div>
+
+              <div className="flex items-center justify-center gap-8 py-4 border-y border-slate-200">
+                <div className="text-center">
+                  <p className="text-2xl font-black text-slate-900">{totalLessons}</p>
+                  <p className="text-xs text-slate-500 uppercase tracking-wide">Lessons</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-2xl font-black text-slate-900">{course.tracks.length}</p>
+                  <p className="text-xs text-slate-500 uppercase tracking-wide">Tracks</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-2xl font-black text-sky-600">100%</p>
+                  <p className="text-xs text-slate-500 uppercase tracking-wide">Complete</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Link
+                  href="/academy/tracks"
+                  className="flex items-center justify-center gap-2 px-5 py-2.5 bg-sky-600 text-white rounded-xl font-bold hover:bg-sky-700 transition-colors text-sm"
+                >
+                  <BookOpen className="w-4 h-4" />
+                  Browse More Courses
+                </Link>
+                <button
+                  onClick={() => {
+                    setCourseComplete(false);
+                    setCurrentLesson(allLessons[0]);
+                    scrollToTop();
+                  }}
+                  className="flex items-center justify-center gap-2 px-5 py-2.5 border border-slate-200 text-slate-700 rounded-xl font-bold hover:bg-slate-50 transition-colors text-sm"
+                >
+                  <ArrowLeft className="w-4 h-4" />
+                  Review Course
+                </button>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <>
         {/* Top bar */}
         <div className="flex items-center gap-3 px-4 md:px-6 py-3 border-b border-slate-200 bg-white">
           {/* Mobile menu toggle */}
@@ -163,6 +223,8 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
             <span className="hidden sm:inline">Next</span> <ChevronRight className="w-4 h-4" />
           </button>
         </div>
+          </>
+        )}
       </div>
     </div>
   );
