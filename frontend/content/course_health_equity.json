@@ -2035,5 +2035,7 @@
         }
       ]
     }
-  ]
+  ],
+  "pillar": "equity",
+  "level": "foundational"
 }
