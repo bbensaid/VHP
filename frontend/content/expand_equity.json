@@ -1,0 +1,508 @@
+{
+  "course_slug": "health-equity-sdoh",
+  "expansions": {
+
+    "equity-foundations": [
+      {
+        "id": "lesson_eq_global",
+        "pillar": "equity",
+        "order": 3,
+        "slug": "global-health-equity-comparison",
+        "title": "The US in Global Context: Why We Spend More and Get Less",
+        "summary": "How the US compares to peer nations on health outcomes — life expectancy, maternal mortality, infant mortality — despite spending twice as much, and what drives the gap.",
+        "estimatedMinutes": 16,
+        "isPublished": true,
+        "tags": ["global comparison", "OECD", "life expectancy", "maternal mortality", "spending"],
+        "relatedLessonIds": ["lesson_eq_definitions"],
+        "objectives": [
+          { "id": "obj_gl1", "text": "Compare US health outcomes to peer OECD nations on key indicators" },
+          { "id": "obj_gl2", "text": "Explain why the US spends more per capita but achieves worse outcomes" },
+          { "id": "obj_gl3", "text": "Identify which US populations drive the worst outcome gaps" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "The paradox: most spending, worst outcomes",
+            "body": "The United States spends approximately $12,500 per person per year on health care — more than twice the average of other high-income OECD nations. Yet the US ranks last or near-last among OECD countries on life expectancy, maternal mortality, infant mortality, and chronic disease burden.\n\nThis is not primarily a question of health care quality for those who access it — US care for insured patients with good access is among the best in the world. It is a question of who gets access, and the profound health consequences of leaving tens of millions of people uninsured, underinsured, or under-resourced."
+          },
+          {
+            "type": "key_stat",
+            "stats": [
+              { "value": "$12,555", "label": "US per capita health spending (2022) — highest in the world", "source": "OECD" },
+              { "value": "77.5 yrs", "label": "US life expectancy (2022) — below all peer nations", "source": "CDC/OECD" },
+              { "value": "22.3", "label": "US maternal mortality per 100,000 — 3x higher than UK, France, Canada", "source": "CDC" },
+              { "value": "5.4", "label": "US infant mortality per 1,000 — highest among comparable nations", "source": "OECD" }
+            ]
+          },
+          {
+            "type": "callout",
+            "variant": "info",
+            "heading": "The American Health Disadvantage is not uniform",
+            "body": "A 2013 National Academies study ('Shorter Lives, Poorer Health') found that the US health disadvantage is concentrated in specific populations: uninsured, low-income, Black and Hispanic Americans drive most of the gap with peer nations. White, college-educated, insured Americans have health outcomes roughly comparable to their counterparts in other countries. The overall US underperformance is a story of who is left behind."
+          },
+          {
+            "type": "video",
+            "mediaType": "youtube",
+            "videoId": "qSjGouBmo0M",
+            "caption": "Why is US healthcare so expensive? — Vox explainer (~8 min)",
+            "durationSeconds": 480
+          }
+        ],
+        "quiz": {
+          "id": "quiz_global",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_gl1",
+              "type": "single_choice",
+              "question": "According to the 2013 National Academies 'Shorter Lives, Poorer Health' study, the US health disadvantage is primarily concentrated in which groups?",
+              "points": 1,
+              "explanation": "The study found the disadvantage concentrated in uninsured, low-income, and racial/ethnic minority Americans — white, college-educated, insured Americans have outcomes comparable to peer nations.",
+              "options": [
+                { "id": "opt_gl1a", "text": "All Americans, uniformly across income and racial groups", "isCorrect": false },
+                { "id": "opt_gl1b", "text": "Uninsured, low-income, and racial/ethnic minority populations", "isCorrect": true },
+                { "id": "opt_gl1c", "text": "Primarily elderly Americans above age 75", "isCorrect": false },
+                { "id": "opt_gl1d", "text": "Rural Americans regardless of income or insurance", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+
+    "social-determinants": [
+      {
+        "id": "lesson_eq_housing_health",
+        "pillar": "equity",
+        "order": 3,
+        "slug": "housing-as-health-care",
+        "title": "Housing as Health Care: Homelessness, Eviction & the Medical Costs",
+        "summary": "The evidence linking housing instability to health outcomes, what happens medically when people lose housing, and how health systems are beginning to pay for housing as a health intervention.",
+        "estimatedMinutes": 17,
+        "isPublished": true,
+        "tags": ["housing", "homelessness", "eviction", "SDOH", "housing-first"],
+        "relatedLessonIds": ["lesson_eq_sdoh_evidence"],
+        "objectives": [
+          { "id": "obj_hh1", "text": "Describe the health consequences of housing instability and homelessness" },
+          { "id": "obj_hh2", "text": "Explain the Housing First model and the evidence for its effectiveness" },
+          { "id": "obj_hh3", "text": "Describe how Medicaid and ACO models are beginning to pay for housing-related services" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "Housing is health care",
+            "body": "Housing instability — eviction risk, overcrowding, unsafe conditions, or outright homelessness — is one of the strongest predictors of poor health outcomes. People experiencing homelessness have life expectancies 20–25 years shorter than housed people. They use emergency departments at rates 5–10 times higher than the general population, are hospitalized more frequently, and have dramatically higher rates of mental illness, substance use, and communicable disease.\n\nFor health systems operating in value-based contracts, chronically unhoused patients are often the highest-cost, hardest-to-manage members of the population. Housing instability is not a social problem on the side — it is a primary driver of health care costs."
+          },
+          {
+            "type": "concepts_grid",
+            "heading": "Housing interventions with health evidence",
+            "items": [
+              { "icon": "ti-home", "title": "Housing First", "body": "Provides permanent housing to chronically homeless people immediately, without requiring sobriety or treatment compliance first. Strong RCT evidence: higher housing retention, comparable or better health outcomes than treatment-first models." },
+              { "icon": "ti-user-heart", "title": "Medical respite", "body": "Short-term residential care for medically ill people experiencing homelessness who don't require hospital level care. Reduces inappropriate ED use and readmissions." },
+              { "icon": "ti-coins", "title": "Medicaid housing supports", "body": "CMS now allows Medicaid to pay for tenancy support services, housing navigation, and transitional rent for high-need populations through 1115 waivers." },
+              { "icon": "ti-building-community", "title": "Health system investment", "body": "Some health systems (Kaiser, Dignity Health, Boston Medical Center) have invested directly in affordable housing — treating it as a population health investment that reduces their most expensive utilization." }
+            ]
+          },
+          {
+            "type": "key_stat",
+            "stats": [
+              { "value": "20-25 yrs", "label": "Shorter life expectancy for people experiencing chronic homelessness", "source": "JAMA" },
+              { "value": "5-10x", "label": "Higher ED use rate for unhoused vs. housed individuals", "source": "Health Affairs" },
+              { "value": "$30,000+", "label": "Annual Medicaid cost for a chronically homeless individual", "source": "RWJF" },
+              { "value": "$10,000", "label": "Annual cost of supportive housing per person — fraction of health system savings", "source": "Corporation for Supportive Housing" }
+            ]
+          }
+        ],
+        "quiz": {
+          "id": "quiz_housing",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_hh1",
+              "type": "single_choice",
+              "question": "What is the core principle of the Housing First model?",
+              "points": 1,
+              "explanation": "Housing First provides permanent housing immediately without requiring sobriety, treatment, or compliance as a precondition — based on evidence that stable housing enables better treatment engagement than treatment-first approaches.",
+              "options": [
+                { "id": "opt_hh1a", "text": "Housing is provided after 90 days of sobriety and compliance with treatment", "isCorrect": false },
+                { "id": "opt_hh1b", "text": "Permanent housing is provided immediately, without preconditions like sobriety", "isCorrect": true },
+                { "id": "opt_hh1c", "text": "Temporary shelter is provided while treatment is initiated, then housing follows", "isCorrect": false },
+                { "id": "opt_hh1d", "text": "Housing vouchers are provided but placement requires employment", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "lesson_eq_food_security",
+        "pillar": "equity",
+        "order": 4,
+        "slug": "food-insecurity-clinical-interventions",
+        "title": "Food Insecurity & Health: From Screening to Prescription",
+        "summary": "The health consequences of food insecurity, how clinical teams screen and respond, and the growing produce prescription and medically tailored meal programs in value-based care.",
+        "estimatedMinutes": 15,
+        "isPublished": true,
+        "tags": ["food insecurity", "SNAP", "produce prescription", "medically tailored meals", "nutrition"],
+        "relatedLessonIds": ["lesson_eq_sdoh_evidence", "lesson_eq_screening"],
+        "objectives": [
+          { "id": "obj_fi1", "text": "Describe the health consequences of food insecurity beyond hunger" },
+          { "id": "obj_fi2", "text": "Explain produce prescription and medically tailored meal programs and their evidence" },
+          { "id": "obj_fi3", "text": "Describe SNAP's role in food security and its limitations as a health intervention" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "Food insecurity is a clinical issue",
+            "body": "Food insecurity — limited or uncertain access to adequate food — affects approximately 44 million Americans, including 13 million children. For clinicians, food insecurity is not just a social problem: it is directly linked to uncontrolled diabetes (food-insecure patients have 27% higher A1c), hypertension, depression, and hospital readmissions.\n\nA diabetic patient who cannot afford or access fresh vegetables, whole grains, and lean protein cannot manage their blood sugar regardless of how good their medication is. Food is medicine — and clinicians are increasingly recognizing that prescriptions for metformin need to be paired with access to food."
+          },
+          {
+            "type": "concepts_grid",
+            "heading": "Food-as-medicine interventions with evidence",
+            "items": [
+              { "icon": "ti-leaf", "title": "Produce prescriptions", "body": "Clinicians write 'prescriptions' redeemable at farmers markets or grocery stores for fresh produce. RCTs show A1c reductions of 0.6–1.0% in food-insecure diabetic patients." },
+              { "icon": "ti-soup", "title": "Medically tailored meals", "body": "Home-delivered meals designed by registered dietitians for specific conditions (diabetes, CHF, renal disease, HIV). Strong evidence: 50% reduction in hospitalizations in some studies." },
+              { "icon": "ti-building-store", "title": "Food pharmacy", "body": "Grocery-store-style areas within clinical settings where food-insecure patients can 'shop' for free healthy food. Pioneer sites: Boston Medical Center, Geisinger." },
+              { "icon": "ti-coin", "title": "SNAP enrollment", "body": "Clinical teams screen for SNAP eligibility and connect patients. Supplemental Nutrition Assistance Program covers ~$200/month in food for eligible individuals — but only 82% of eligible people are enrolled." }
+            ]
+          },
+          {
+            "type": "key_stat",
+            "stats": [
+              { "value": "44M", "label": "Americans experiencing food insecurity", "source": "USDA 2023" },
+              { "value": "27%", "label": "Higher A1c in food-insecure vs. food-secure diabetic patients", "source": "Diabetes Care" },
+              { "value": "50%", "label": "Reduction in hospitalizations with medically tailored meals in some studies", "source": "JAMA IM" },
+              { "value": "18%", "label": "Of eligible people not enrolled in SNAP", "source": "USDA" }
+            ]
+          }
+        ],
+        "quiz": {
+          "id": "quiz_food",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_fi1",
+              "type": "single_choice",
+              "question": "What have clinical trials found about produce prescription programs for food-insecure diabetic patients?",
+              "points": 1,
+              "explanation": "RCTs of produce prescription programs show A1c reductions of 0.6–1.0% in food-insecure diabetic patients — clinically meaningful reductions comparable to adding a medication.",
+              "options": [
+                { "id": "opt_fi1a", "text": "No clinical impact — A1c is not affected by diet alone", "isCorrect": false },
+                { "id": "opt_fi1b", "text": "A1c reductions of 0.6–1.0% — comparable to adding a medication", "isCorrect": true },
+                { "id": "opt_fi1c", "text": "Improved patient satisfaction but no measurable A1c change", "isCorrect": false },
+                { "id": "opt_fi1d", "text": "Reductions only in patients who were already adherent to their medications", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+
+    "disparity-data": [
+      {
+        "id": "lesson_eq_action_data",
+        "pillar": "equity",
+        "order": 2,
+        "slug": "from-data-to-action",
+        "title": "From Disparity Data to Equity Action Plans",
+        "summary": "Once you have stratified disparity data, what do you do with it? Building equity action plans, setting improvement targets, designing targeted interventions, and measuring progress.",
+        "estimatedMinutes": 16,
+        "isPublished": true,
+        "tags": ["equity action plan", "quality improvement", "targeted interventions", "disparity reduction"],
+        "relatedLessonIds": ["lesson_eq_real_data"],
+        "objectives": [
+          { "id": "obj_da1", "text": "Describe the structure of an equity action plan" },
+          { "id": "obj_da2", "text": "Explain how to select targeted interventions for identified disparity gaps" },
+          { "id": "obj_da3", "text": "Identify how health systems can set measurable equity improvement targets" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "Data is necessary but not sufficient",
+            "body": "Health systems that successfully reduce disparities share a common pattern: they move rapidly from data (showing the gap exists) to action (designing and deploying targeted interventions) to accountability (tracking progress and tying leadership goals to equity outcomes).\n\nThe systems that stall are those that use data collection as a destination rather than a starting point — producing beautiful dashboards of disparity without organizational commitment to close them."
+          },
+          {
+            "type": "timeline",
+            "heading": "Equity action cycle",
+            "items": [
+              { "year": "Step 1", "title": "Identify the gap", "body": "Stratify a key quality measure (e.g., postpartum follow-up) by race/ethnicity. Quantify the gap between highest and lowest performing groups.", "pillar": "equity" },
+              { "year": "Step 2", "title": "Understand the root cause", "body": "Disaggregate further: Is the gap in scheduling? No-show rates? Appointment availability? Provider distribution? Root cause determines the right intervention.", "pillar": "equity" },
+              { "year": "Step 3", "title": "Design the intervention", "body": "Evidence-based options: CHW outreach to the gap population, language concordant appointment scheduling, reminder calls in preferred language, same-day appointments.", "pillar": "equity" },
+              { "year": "Step 4", "title": "Set the target", "body": "Specific, measurable, time-bound: 'Reduce the Black-white postpartum follow-up gap from 18 points to 8 points within 18 months.'", "pillar": "equity" },
+              { "year": "Step 5", "title": "Measure and iterate", "body": "Monthly tracking against target. If the gap is not closing, revisit root cause analysis. Treat disparity reduction like any quality improvement project.", "pillar": "equity" }
+            ]
+          },
+          {
+            "type": "callout",
+            "variant": "tip",
+            "heading": "Tie leadership goals to equity outcomes",
+            "body": "Health systems that make measurable progress on equity consistently tie senior leader performance goals — and compensation — to equity metrics. When the CEO's and CMO's annual reviews include a measurable equity goal, the organization allocates resources, attention, and accountability to closing it. Systems that treat equity as a values statement without accountability rarely make measurable progress."
+          }
+        ],
+        "quiz": {
+          "id": "quiz_action_data",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_da1",
+              "type": "single_choice",
+              "question": "What is the most important factor that distinguishes health systems making measurable equity progress from those that stall?",
+              "points": 1,
+              "explanation": "Research on high-performing equity health systems consistently finds that tying leadership performance and compensation to equity metrics is the key driver of organizational change — not just having data.",
+              "options": [
+                { "id": "opt_da1a", "text": "Having the most sophisticated data dashboards and analytics infrastructure", "isCorrect": false },
+                { "id": "opt_da1b", "text": "Tying senior leadership goals and compensation to measurable equity outcomes", "isCorrect": true },
+                { "id": "opt_da1c", "text": "Receiving extra CMS funding designated for equity improvement", "isCorrect": false },
+                { "id": "opt_da1d", "text": "Having a majority-minority patient population that creates urgency", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+
+    "algorithmic-bias": [
+      {
+        "id": "lesson_eq_pulse_oximetry",
+        "pillar": "equity",
+        "order": 2,
+        "slug": "pulse-oximetry-racial-bias",
+        "title": "Pulse Oximetry & Hidden Bias in Medical Devices",
+        "summary": "How pulse oximeters were found to overestimate oxygen saturation in patients with darker skin — causing delayed COVID treatment — and what it reveals about device development and equity.",
+        "estimatedMinutes": 15,
+        "isPublished": true,
+        "tags": ["pulse oximetry", "medical devices", "skin color", "COVID", "FDA"],
+        "relatedLessonIds": ["lesson_eq_algo_bias"],
+        "objectives": [
+          { "id": "obj_po1", "text": "Explain how pulse oximetry bias was identified and its clinical consequences" },
+          { "id": "obj_po2", "text": "Describe how the bias was introduced through device development and validation" },
+          { "id": "obj_po3", "text": "Explain FDA's response and the broader lesson for medical device equity" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "A trusted device that wasn't equally accurate",
+            "body": "Pulse oximeters — the small clip devices that measure blood oxygen saturation — have been ubiquitous in clinical care for decades. During COVID-19, they were essential: the decision to admit a patient or discharge them often hinged on a single SpO2 reading.\n\nIn 2020–2021, multiple studies published in NEJM and other leading journals found that pulse oximeters were significantly less accurate in patients with darker skin tones — overestimating oxygen saturation by 2–3 percentage points. This meant that Black and Hispanic patients with dangerously low oxygen levels appeared to be within normal range, leading to delayed treatment and worse outcomes.\n\nThis was not a COVID-era discovery — the bias had been documented in the 1980s and 1990s, but the clinical and regulatory systems failed to act on it."
+          },
+          {
+            "type": "callout",
+            "variant": "warning",
+            "heading": "Why the bias exists — and was ignored",
+            "body": "Pulse oximeters work by shining light through the finger and measuring absorption at two wavelengths. Melanin in the skin absorbs light at these wavelengths, interfering with the measurement. Device manufacturers validated their devices predominantly on lighter-skinned subjects — a common pattern in medical device and clinical trial populations. Despite early research flagging the disparity, the FDA did not require manufacturers to validate accuracy across skin tones until 2024."
+          },
+          {
+            "type": "key_stat",
+            "stats": [
+              { "value": "3x", "label": "Higher rate of occult hypoxemia in Black patients missed by pulse oximetry vs. white patients", "source": "NEJM 2020" },
+              { "value": "2–3 pts", "label": "Average SpO2 overestimation in patients with darker skin tones", "source": "NEJM 2020" },
+              { "value": "2024", "label": "Year FDA first required manufacturers to validate pulse oximeters across skin tones", "source": "FDA" }
+            ]
+          }
+        ],
+        "quiz": {
+          "id": "quiz_pulse_ox",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_po1",
+              "type": "single_choice",
+              "question": "Why do standard pulse oximeters tend to overestimate oxygen saturation in patients with darker skin?",
+              "points": 1,
+              "explanation": "Melanin absorbs light at the same wavelengths pulse oximeters use to measure oxygen saturation, interfering with the measurement and producing falsely high readings in patients with more melanin.",
+              "options": [
+                { "id": "opt_po1a", "text": "Dark skin reflects more light, causing the device to read higher values", "isCorrect": false },
+                { "id": "opt_po1b", "text": "Melanin absorbs light at the measurement wavelengths, interfering with accuracy", "isCorrect": true },
+                { "id": "opt_po1c", "text": "The bias is not in the device but in how clinicians interpret readings", "isCorrect": false },
+                { "id": "opt_po1d", "text": "Patients with darker skin have inherently higher baseline oxygen saturation", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+
+    "cms-equity-requirements": [
+      {
+        "id": "lesson_eq_clas",
+        "pillar": "equity",
+        "order": 2,
+        "slug": "clas-standards-language-access",
+        "title": "CLAS Standards & Language Access: Legal Requirements & Best Practices",
+        "summary": "The National CLAS Standards, the legal right to language access under Section 1557, and what health systems must do to serve patients with limited English proficiency.",
+        "estimatedMinutes": 15,
+        "isPublished": true,
+        "tags": ["CLAS", "language access", "LEP", "interpreter", "Section 1557"],
+        "relatedLessonIds": ["lesson_eq_cms_policy"],
+        "objectives": [
+          { "id": "obj_clas1", "text": "Describe the National CLAS Standards and their structure" },
+          { "id": "obj_clas2", "text": "Explain the legal obligations for language access under Section 1557" },
+          { "id": "obj_clas3", "text": "Identify best practices for providing language access beyond legal minimums" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "Language is a social determinant of health",
+            "body": "Approximately 25 million Americans have limited English proficiency (LEP). These patients are less likely to receive preventive care, more likely to experience medication errors, less likely to understand discharge instructions, and more likely to be readmitted. Language barriers have been linked to worse patient safety outcomes across multiple studies.\n\nFederal law (Section 1557 of the ACA, Title VI of the Civil Rights Act) requires health care organizations receiving federal funding to provide meaningful access to patients with LEP — at no cost to the patient. This means qualified interpreters, not family members or staff who happen to speak the language."
+          },
+          {
+            "type": "concepts_grid",
+            "heading": "The National CLAS Standards — key principals",
+            "items": [
+              { "icon": "ti-language", "title": "Language services", "body": "Provide language assistance to patients with LEP at all points of contact — clinical care, registration, billing, patient education. At no cost to the patient." },
+              { "icon": "ti-user-heart", "title": "Culturally competent care", "body": "Integrate cultural and linguistic responsiveness into governance, leadership, and workforce. Train staff in cultural humility." },
+              { "icon": "ti-users", "title": "Diverse workforce", "body": "Recruit, retain, and promote diverse staff and leadership that reflects the communities served." },
+              { "icon": "ti-megaphone", "title": "Community engagement", "body": "Partner with communities served, especially underserved, to design and evaluate services." }
+            ]
+          },
+          {
+            "type": "callout",
+            "variant": "warning",
+            "heading": "Family interpreters: convenient but dangerous",
+            "body": "Using family members, friends, or untrained bilingual staff as interpreters is a legal and safety risk. Family members may filter information (especially around bad news or sensitive topics), lack medical vocabulary, misinterpret clinical terms, and create privacy violations. Section 1557 requires qualified interpreters — professional in-person, telephone, or video remote interpreting. The convenience of using a patient's child as an interpreter does not outweigh these risks."
+          }
+        ],
+        "quiz": {
+          "id": "quiz_clas",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_clas1",
+              "type": "single_choice",
+              "question": "Under Section 1557 and the CLAS Standards, can a health system use a patient's family member as an interpreter to meet language access requirements?",
+              "points": 1,
+              "explanation": "Family members are generally not acceptable as interpreters under federal law — they may filter information, lack medical vocabulary, and create privacy risks. Qualified interpreters (in-person, telephone, or video) are required.",
+              "options": [
+                { "id": "opt_clas1a", "text": "Yes, if the patient signs a waiver agreeing to use a family member", "isCorrect": false },
+                { "id": "opt_clas1b", "text": "No, qualified interpreters are required — family members are generally not acceptable", "isCorrect": true },
+                { "id": "opt_clas1c", "text": "Yes, if no professional interpreter is available within 30 minutes", "isCorrect": false },
+                { "id": "opt_clas1d", "text": "Yes, for routine appointments but not for consent or discharge conversations", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+
+    "community-action": [
+      {
+        "id": "lesson_eq_cross_sector",
+        "pillar": "equity",
+        "order": 2,
+        "slug": "cross-sector-partnerships",
+        "title": "Cross-Sector Partnerships: Health Systems & Community Organizations",
+        "summary": "How health systems, community organizations, housing agencies, schools, and food systems are building partnerships to address upstream determinants of health at scale.",
+        "estimatedMinutes": 16,
+        "isPublished": true,
+        "tags": ["cross-sector", "partnership", "anchor institution", "community benefit", "IRS 501r"],
+        "relatedLessonIds": ["lesson_eq_chw"],
+        "objectives": [
+          { "id": "obj_cs1", "text": "Describe the 'anchor institution' role for health systems in community health" },
+          { "id": "obj_cs2", "text": "Explain IRS community benefit requirements for nonprofit hospitals" },
+          { "id": "obj_cs3", "text": "Identify examples of successful cross-sector partnerships and their outcomes" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "Hospitals as anchor institutions",
+            "body": "Large health systems are often among the biggest employers in their communities — with massive purchasing power, real estate holdings, and investment portfolios. The 'anchor institution' concept asks: can health systems use these economic levers to benefit their communities, not just their patients?\n\nExamples: Kaiser Permanente has committed $200M to affordable housing. Boston Medical Center runs a food pantry, farm, and kitchen that produces medically tailored meals. Cleveland Clinic's Evergreen Cooperative uses procurement to create jobs in underserved neighborhoods. These are not charity — they are strategic investments in the social determinants of health that drive the system's highest-cost patients."
+          },
+          {
+            "type": "concepts_grid",
+            "heading": "Mechanisms for health system community investment",
+            "items": [
+              { "icon": "ti-briefcase", "title": "Procurement", "body": "Directing purchasing toward local, minority-owned businesses. Creates jobs and local economic circulation in high-need communities." },
+              { "icon": "ti-coin", "title": "Investment", "body": "Mission-aligned investing in affordable housing, community development financial institutions (CDFIs), and social enterprises." },
+              { "icon": "ti-school", "title": "Workforce pipeline", "body": "Partnering with local schools and community colleges to create health career pathways for residents of communities the system serves." },
+              { "icon": "ti-building-community", "title": "Community health needs", "body": "IRS Section 501(r) requires nonprofit hospitals to conduct a Community Health Needs Assessment every 3 years and develop an implementation strategy. A mechanism for structured community investment." }
+            ]
+          },
+          {
+            "type": "callout",
+            "variant": "info",
+            "heading": "Community benefit: $129B annually — but poorly tracked",
+            "body": "Nonprofit hospitals claimed $129B in community benefit spending in 2019 — mostly charity care and Medicaid shortfall. Critics argue that little of this reaches the social determinants investments that would most reduce community health disparities. The IRS requires community benefit reporting but allows wide flexibility in what counts. CMS and advocacy groups are pushing for requirements that a meaningful share of community benefit target measurable social determinants."
+          }
+        ],
+        "quiz": {
+          "id": "quiz_cross_sector",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_cs1",
+              "type": "single_choice",
+              "question": "What is the IRS Section 501(r) requirement for nonprofit hospitals related to community health?",
+              "points": 1,
+              "explanation": "Section 501(r) requires nonprofit hospitals to conduct a Community Health Needs Assessment every 3 years and develop an implementation strategy addressing identified needs — as a condition of their tax-exempt status.",
+              "options": [
+                { "id": "opt_cs1a", "text": "Nonprofit hospitals must spend at least 10% of revenue on charity care", "isCorrect": false },
+                { "id": "opt_cs1b", "text": "Nonprofit hospitals must conduct a Community Health Needs Assessment every 3 years", "isCorrect": true },
+                { "id": "opt_cs1c", "text": "Nonprofit hospitals must partner with at least one community health center", "isCorrect": false },
+                { "id": "opt_cs1d", "text": "Nonprofit hospitals must report patient race and ethnicity data to CMS", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "lesson_eq_racial_healing",
+        "pillar": "equity",
+        "order": 3,
+        "slug": "organizational-equity-transformation",
+        "title": "Organizational Equity Transformation: From Policy to Culture",
+        "summary": "What it takes to move health equity from a strategic initiative to an organizational culture — governance, leadership accountability, staff training, and the long arc of institutional change.",
+        "estimatedMinutes": 14,
+        "isPublished": true,
+        "tags": ["organizational change", "equity transformation", "governance", "leadership", "culture"],
+        "relatedLessonIds": ["lesson_eq_chw"],
+        "objectives": [
+          { "id": "obj_ot1", "text": "Identify the governance structures that support health equity transformation" },
+          { "id": "obj_ot2", "text": "Explain what 'equity-centered leadership' means in practice" },
+          { "id": "obj_ot3", "text": "Describe why training alone is insufficient for organizational equity change" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "Training is not transformation",
+            "body": "Many health systems have invested in implicit bias training, diversity workshops, and equity awareness programs. These have value — but research consistently shows that training alone does not change organizational behavior or patient outcomes. Systems that achieve meaningful equity improvement do so through structural change: governance accountability, resource allocation, process redesign, and data-driven feedback loops.\n\nThe most effective equity transformations combine awareness (helping staff understand the problem) with structural change (redesigning processes so equitable outcomes are the default, not the exception)."
+          },
+          {
+            "type": "concepts_grid",
+            "heading": "Elements of organizational equity transformation",
+            "items": [
+              { "icon": "ti-building", "title": "Governance", "body": "Board-level equity committee with authority and budget. Board receives stratified quality and access data regularly. Equity metrics in CEO and senior leader scorecards." },
+              { "icon": "ti-chart-bar", "title": "Data accountability", "body": "Publicly reported equity metrics. Department-level disparity dashboards. Leaders see their unit's equity data alongside financial and clinical quality data." },
+              { "icon": "ti-coins", "title": "Resource allocation", "body": "Dedicated equity improvement budget. Resources directed disproportionately toward identified gap areas. Community benefit investments tied to CHNA priorities." },
+              { "icon": "ti-users", "title": "Workforce diversity", "body": "Hiring practices, retention programs, and leadership development for staff from underrepresented communities. Representative workforce at every level, not just entry-level." }
+            ]
+          }
+        ],
+        "quiz": {
+          "id": "quiz_org_equity",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_ot1",
+              "type": "single_choice",
+              "question": "What does research show about the effectiveness of implicit bias training alone as an equity intervention?",
+              "points": 1,
+              "explanation": "Research consistently shows that training alone does not change organizational behavior or patient outcomes. Structural changes — governance accountability, process redesign, data feedback — are required for measurable improvement.",
+              "options": [
+                { "id": "opt_ot1a", "text": "Implicit bias training alone consistently reduces racial disparities in care within 6 months", "isCorrect": false },
+                { "id": "opt_ot1b", "text": "Training alone does not change behavior or outcomes — structural changes are required", "isCorrect": true },
+                { "id": "opt_ot1c", "text": "Training is effective if delivered annually but loses effectiveness when done more frequently", "isCorrect": false },
+                { "id": "opt_ot1d", "text": "Training effectiveness depends primarily on whether it is delivered by an internal or external trainer", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

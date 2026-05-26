@@ -1,0 +1,556 @@
+{
+  "course_slug": "value-based-care",
+  "expansions": {
+
+    "fee-for-service-problem": [
+      {
+        "id": "lesson_vbc_rvu",
+        "pillar": "economics",
+        "order": 2,
+        "slug": "relative-value-units",
+        "title": "RVUs: How Physician Payment Works — and Why It Favors Procedures",
+        "summary": "The Resource-Based Relative Value Scale, how RVUs translate to physician pay, why cognitive primary care is systematically undervalued, and CMS efforts to rebalance.",
+        "estimatedMinutes": 17,
+        "isPublished": true,
+        "tags": ["RVU", "RBRVS", "physician payment", "primary care", "specialty"],
+        "relatedLessonIds": ["lesson_vbc_ffs_origins"],
+        "objectives": [
+          { "id": "obj_rvu1", "text": "Explain how the RBRVS and RVU system determine physician payment in Medicare" },
+          { "id": "obj_rvu2", "text": "Describe why the RVU system systematically undervalues cognitive primary care relative to procedures" },
+          { "id": "obj_rvu3", "text": "Explain the role of the AMA RVS Update Committee (RUC) in setting RVU values" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "One number drives most of physician pay",
+            "body": "Medicare pays physicians based on the Resource-Based Relative Value Scale (RBRVS). Every covered service has a Relative Value Unit (RVU) value — a number representing the relative resource intensity of that service. Multiply the RVU by the national conversion factor (~$33 in 2024) and you get the Medicare payment.\n\nA 99213 (brief office visit) is worth about 1.3 RVUs → ~$43. A 99214 (moderate office visit) is 1.92 RVUs → ~$63. A knee arthroscopy is 10+ RVUs → $340+. A primary care physician seeing 20 patients per day at 1–2 RVUs each earns less than a surgeon doing three procedures."
+          },
+          {
+            "type": "callout",
+            "variant": "warning",
+            "heading": "The RUC: specialty-dominated valuation",
+            "body": "RVU values are recommended by the AMA/Specialty Society Relative Value Scale Update Committee (RUC) — a 29-member body historically dominated by specialists. Primary care has consistently argued the RUC undervalues cognitive work (thinking, coordinating, managing complexity) and overvalues procedural skills. MedPAC has repeatedly found that primary care RVUs are too low, contributing to the primary care–specialty income gap of more than $100,000 annually."
+          },
+          {
+            "type": "key_stat",
+            "stats": [
+              { "value": "$100K+", "label": "Annual income gap between primary care and specialist physicians", "source": "AAMC" },
+              { "value": "~$33", "label": "Medicare conversion factor per RVU (2024)", "source": "CMS" },
+              { "value": "6%", "label": "Of US health spending goes to primary care", "source": "RWJF" },
+              { "value": "35%", "label": "Of medical school graduates choosing primary care specialties", "source": "AAMC" }
+            ]
+          }
+        ],
+        "quiz": {
+          "id": "quiz_rvu",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_rvu1",
+              "type": "single_choice",
+              "question": "What is the main criticism of the AMA RUC's role in setting Medicare RVU values?",
+              "points": 1,
+              "explanation": "The RUC is dominated by specialists, who set RVU values through a consensus process that has historically undervalued cognitive primary care work relative to procedures.",
+              "options": [
+                { "id": "opt_rvu1a", "text": "The RUC sets values too high, making Medicare spending unsustainable", "isCorrect": false },
+                { "id": "opt_rvu1b", "text": "The RUC is specialty-dominated and has systematically undervalued cognitive primary care", "isCorrect": true },
+                { "id": "opt_rvu1c", "text": "The RUC excludes hospitals and only represents office-based physicians", "isCorrect": false },
+                { "id": "opt_rvu1d", "text": "The RUC sets RVU values without CMS review or approval", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "lesson_vbc_mips",
+        "pillar": "economics",
+        "order": 3,
+        "slug": "mips-merit-based-incentive",
+        "title": "MIPS: The Merit-Based Incentive Payment System",
+        "summary": "How MIPS adjusts Medicare physician payment based on quality, cost, clinical improvement activities, and promoting interoperability — and why many argue it's not true value-based care.",
+        "estimatedMinutes": 16,
+        "isPublished": true,
+        "tags": ["MIPS", "MACRA", "physician payment", "quality", "cost"],
+        "relatedLessonIds": ["lesson_vbc_ffs_origins"],
+        "objectives": [
+          { "id": "obj_mips1", "text": "Describe the four performance categories in MIPS and their weights" },
+          { "id": "obj_mips2", "text": "Explain how MIPS payment adjustments work" },
+          { "id": "obj_mips3", "text": "Articulate why critics argue MIPS fails to deliver true value-based care transformation" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "MACRA and the end of the SGR",
+            "body": "The Medicare Access and CHIP Reauthorization Act (MACRA, 2015) repealed the sustainable growth rate (SGR) formula — which had created annual payment cliff-hangers for a decade — and replaced it with two pathways: the Merit-Based Incentive Payment System (MIPS) and Advanced APMs.\n\nMIPS adjusts physician Medicare payments based on composite performance. A physician scoring above the performance threshold earns a positive adjustment (up to +9%); below threshold earns a negative adjustment (up to -9%). Most physicians participate in MIPS rather than an Advanced APM."
+          },
+          {
+            "type": "concepts_grid",
+            "heading": "MIPS four performance categories",
+            "items": [
+              { "icon": "ti-chart-bar", "title": "Quality (30%)", "body": "Reports on 6 quality measures selected from a menu. Compared to national benchmarks. Most measures can be gamed by selecting easy ones." },
+              { "icon": "ti-coin", "title": "Cost (30%)", "body": "CMS calculates total resource use and episode costs from claims — physician doesn't report, CMS attributes. Higher weight added in recent years." },
+              { "icon": "ti-heart-rate-monitor", "title": "Improvement Activities (15%)", "body": "Activities like care coordination, beneficiary engagement, patient safety. Checked off rather than measured — widely criticized as box-checking." },
+              { "icon": "ti-wifi", "title": "Promoting Interoperability (25%)", "body": "Use of certified EHR technology, e-prescribing, patient access APIs. Rewards EHR adoption and usage." }
+            ]
+          },
+          {
+            "type": "callout",
+            "variant": "warning",
+            "heading": "Why MIPS isn't really value-based care",
+            "body": "MIPS adjusts payment at the margins (±9%) on top of the existing FFS rate — it doesn't change the fundamental incentive structure. A physician who sees more patients still earns more. MedPAC, CMS's own advisory body, recommended repealing MIPS and replacing it with population-based payment models. In 2023, MedPAC called MIPS a 'check-the-box exercise' that doesn't meaningfully change care delivery."
+          }
+        ],
+        "quiz": {
+          "id": "quiz_mips",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_mips1",
+              "type": "single_choice",
+              "question": "What is the maximum positive payment adjustment a physician can receive under MIPS?",
+              "points": 1,
+              "explanation": "MIPS payment adjustments range from -9% (lowest performers) to +9% (highest performers), applied to a physician's Medicare payments for the performance year.",
+              "options": [
+                { "id": "opt_mips1a", "text": "+25%", "isCorrect": false },
+                { "id": "opt_mips1b", "text": "+9%", "isCorrect": true },
+                { "id": "opt_mips1c", "text": "+15%", "isCorrect": false },
+                { "id": "opt_mips1d", "text": "+5%", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+
+    "accountable-care-organizations": [
+      {
+        "id": "lesson_vbc_aco_medicaid",
+        "pillar": "economics",
+        "order": 3,
+        "slug": "aco-medicaid-commercial",
+        "title": "ACOs Beyond Medicare: Medicaid and Commercial ACOs",
+        "summary": "How ACO models have expanded into Medicaid and commercial markets — state-based ACO programs, multi-payer ACOs, and the structural differences from Medicare ACOs.",
+        "estimatedMinutes": 15,
+        "isPublished": true,
+        "tags": ["Medicaid ACO", "commercial ACO", "multi-payer", "state ACO programs"],
+        "relatedLessonIds": ["lesson_vbc_aco_basics"],
+        "objectives": [
+          { "id": "obj_maco1", "text": "Describe how state Medicaid ACO programs differ from Medicare MSSP" },
+          { "id": "obj_maco2", "text": "Explain the multi-payer ACO model and its advantages" },
+          { "id": "obj_maco3", "text": "Identify Vermont's OneCare and Oregon's CCO as leading state ACO models" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "ACOs expanded beyond Medicare",
+            "body": "The MSSP ACO model was designed for traditional Medicare. But states and commercial payers have developed their own ACO-like models for Medicaid and commercial populations. The structure varies more widely — some use global budgets, some use shared savings, some are voluntary while others are mandatory for enrolled populations."
+          },
+          {
+            "type": "concepts_grid",
+            "heading": "State ACO models: leading examples",
+            "items": [
+              { "icon": "ti-leaf", "title": "Vermont — OneCare", "body": "Statewide ACO with global budget covering Medicare, Medicaid, and commercial lives. Participates in AHEAD model. Physicians choose to attribute patients." },
+              { "icon": "ti-map", "title": "Oregon — CCOs", "body": "Coordinated Care Organizations. Medicaid-only. Regional entities covering all Medicaid services including behavioral health and LTSS with global budget accountability." },
+              { "icon": "ti-building", "title": "Massachusetts — ACO model", "body": "MassHealth (Medicaid) ACO program. Accountable Care Partnership Plans and Primary Care ACO tracks. Among the largest and most evaluated Medicaid ACO programs." },
+              { "icon": "ti-star", "title": "North Carolina — Tailored Plans", "body": "Medicaid managed care with behavioral health ACO integration. Addresses social needs through community health workers and NCCARE360 referral platform." }
+            ]
+          },
+          {
+            "type": "callout",
+            "variant": "info",
+            "heading": "Multi-payer alignment: why it matters",
+            "body": "A primary care practice participating in a Medicare ACO, a Medicaid ACO, and a commercial ACO simultaneously faces different attribution methodologies, different benchmarks, different quality measures, and different payment timelines from each. Multi-payer alignment — aligning these programs so one set of incentives points in the same direction — is the goal of models like AHEAD and Vermont's all-payer approach."
+          }
+        ],
+        "quiz": {
+          "id": "quiz_aco_medicaid",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_maco1",
+              "type": "single_choice",
+              "question": "What does 'multi-payer alignment' mean in the ACO context?",
+              "points": 1,
+              "explanation": "Multi-payer alignment means coordinating ACO-type incentives across Medicare, Medicaid, and commercial payers so that providers receive consistent signals about quality and cost — rather than conflicting requirements from each payer.",
+              "options": [
+                { "id": "opt_maco1a", "text": "Multiple ACOs working together in the same geographic area", "isCorrect": false },
+                { "id": "opt_maco1b", "text": "Coordinating incentives across Medicare, Medicaid, and commercial payers toward the same goals", "isCorrect": true },
+                { "id": "opt_maco1c", "text": "ACOs that accept patients from multiple states", "isCorrect": false },
+                { "id": "opt_maco1d", "text": "Aligning physician and hospital payment within a single ACO", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+
+    "bundled-payments": [
+      {
+        "id": "lesson_vbc_bundle_evidence",
+        "pillar": "economics",
+        "order": 2,
+        "slug": "bundled-payment-evidence",
+        "title": "Bundled Payment Evidence: What the Research Shows",
+        "summary": "The evidence on bundled payment performance across conditions — where bundles have saved money, improved quality, and reduced disparities, and where they have failed.",
+        "estimatedMinutes": 15,
+        "isPublished": true,
+        "tags": ["bundled payment", "evidence", "BPCI", "orthopedic", "cardiac"],
+        "relatedLessonIds": ["lesson_vbc_bundled"],
+        "objectives": [
+          { "id": "obj_bpe1", "text": "Summarize the evidence on BPCI savings across major clinical episode types" },
+          { "id": "obj_bpe2", "text": "Explain the equity concerns with bundled payment programs" },
+          { "id": "obj_bpe3", "text": "Identify the conditions best and least suited for bundled payment models" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "The strongest evidence: major joint replacement",
+            "body": "The most robust evidence for bundled payment savings comes from major joint replacement (hip and knee arthroplasty). Studies of BPCI and its predecessor programs show consistent savings of 5–10% on total episode costs, primarily through reduced post-acute spending and lower readmission rates.\n\nSuccessful joint replacement bundle participants share common features: they established preferred post-acute networks with aligned SNFs, implemented discharge criteria that shifted appropriate patients to home health instead of SNF, and hired care navigators who tracked patients through the 90-day window."
+          },
+          {
+            "type": "callout",
+            "variant": "warning",
+            "heading": "Equity concern: who avoids complex patients?",
+            "body": "A persistent equity critique of bundled payments: providers facing episode cost risk have financial incentives to avoid complex, high-cost patients — those with more comorbidities, lower income, or who live in areas with fewer post-acute options. Studies have found evidence of patient selection in cardiac and orthopedic bundles. CMS has tried to address this through risk adjustment, but critics argue it is insufficient."
+          },
+          {
+            "type": "comparison_table",
+            "heading": "Bundle performance by episode type",
+            "leftLabel": "Episode",
+            "rightLabel": "Evidence of savings / challenges",
+            "rows": [
+              { "label": "Major joint replacement", "left": "Strong: 5–10% savings, post-acute reduction", "right": "Best-evidenced bundle type; risk of SNF avoidance" },
+              { "label": "Cardiac surgery (CABG/valve)", "left": "Moderate: 3–6% savings", "right": "High clinical complexity; difficult post-acute management" },
+              { "label": "Hip fracture", "left": "Mixed: savings in some studies, not others", "right": "High-acuity population; equity concerns" },
+              { "label": "COPD / pneumonia", "left": "Limited: modest savings in select sites", "right": "High variation in presentation; readmission risk" },
+              { "label": "Chemotherapy", "left": "Early stage: promising but small studies", "right": "Clinical variation, equity in cancer care a concern" }
+            ]
+          }
+        ],
+        "quiz": {
+          "id": "quiz_bundle_evidence",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_bpe1",
+              "type": "single_choice",
+              "question": "For which episode type is the evidence for bundled payment savings strongest?",
+              "points": 1,
+              "explanation": "Major joint replacement (hip and knee arthroplasty) has the most consistent evidence for bundled payment savings — typically 5–10% episode cost reduction — driven primarily by reduced post-acute spending.",
+              "options": [
+                { "id": "opt_bpe1a", "text": "COPD exacerbations", "isCorrect": false },
+                { "id": "opt_bpe1b", "text": "Major joint replacement (hip and knee)", "isCorrect": true },
+                { "id": "opt_bpe1c", "text": "Chemotherapy administration", "isCorrect": false },
+                { "id": "opt_bpe1d", "text": "Pneumonia hospitalizations", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "lesson_vbc_oncology",
+        "pillar": "economics",
+        "order": 3,
+        "slug": "oncology-care-model",
+        "title": "The Oncology Care Model: VBC in Cancer Care",
+        "summary": "CMS's Oncology Care Model (OCM) and its successor Enhancing Oncology Model (EOM) — how episode-based payment has been applied to cancer chemotherapy and the evidence on performance.",
+        "estimatedMinutes": 15,
+        "isPublished": true,
+        "tags": ["oncology", "OCM", "EOM", "cancer", "chemotherapy bundle"],
+        "relatedLessonIds": ["lesson_vbc_bundled"],
+        "objectives": [
+          { "id": "obj_ocm1", "text": "Describe the Oncology Care Model's payment structure" },
+          { "id": "obj_ocm2", "text": "Explain the equity concerns specific to VBC in oncology" },
+          { "id": "obj_ocm3", "text": "Summarize what the OCM evidence showed about savings and quality" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "Applying episode payment to cancer",
+            "body": "Cancer care is among the most expensive areas of US healthcare — and among the most difficult to apply episode-based payment models to. Treatment courses vary enormously, clinical pathways are rapidly evolving, and drug costs have been exploding.\n\nThe Oncology Care Model (OCM, 2016–2022) covered 6-month episodes anchored by chemotherapy initiation. Practices received a $160/month per-beneficiary-per-month payment for care management, plus shared savings or losses against a benchmark. 187 practices participated at peak."
+          },
+          {
+            "type": "callout",
+            "variant": "info",
+            "heading": "OCM results: minimal savings, quality improvement",
+            "body": "The final OCM evaluation found minimal net savings to Medicare — about 0.2% of episode costs in the best-performing cohort. However, quality improvements were meaningful: participating practices showed higher hospice use, fewer ED visits, and better symptom documentation. The successor Enhancing Oncology Model (EOM, 2023–) focuses on a smaller set of high-cost cancers with a modified payment approach."
+          },
+          {
+            "type": "concepts_grid",
+            "heading": "Equity in oncology VBC",
+            "items": [
+              { "icon": "ti-scale", "title": "Patient selection risk", "body": "Practices may avoid enrolling complex patients with more comorbidities or limited social support who are more likely to generate losses." },
+              { "icon": "ti-map-pin", "title": "Geography", "body": "Rural practices lack post-acute partners and palliative care resources that urban practices can leverage to control episode costs." },
+              { "icon": "ti-skin", "title": "Racial disparities", "body": "Black cancer patients have historically received less aggressive treatment. VBP models that reward cost reduction must ensure they don't reinforce undertreatment." },
+              { "icon": "ti-pill", "title": "Drug costs", "body": "Cancer drug prices have risen 10–15% annually. Episode benchmarks can be overwhelmed by new drug approvals mid-performance period." }
+            ]
+          }
+        ],
+        "quiz": {
+          "id": "quiz_ocm",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_ocm1",
+              "type": "single_choice",
+              "question": "What was the main finding from the CMS Oncology Care Model final evaluation?",
+              "points": 1,
+              "explanation": "The OCM showed minimal net savings to Medicare (about 0.2% of episode costs) but meaningful quality improvements — higher hospice use, fewer ED visits.",
+              "options": [
+                { "id": "opt_ocm1a", "text": "Large savings of 8–10% on episode costs across all cancer types", "isCorrect": false },
+                { "id": "opt_ocm1b", "text": "Minimal net savings but meaningful quality improvements including higher hospice use", "isCorrect": true },
+                { "id": "opt_ocm1c", "text": "The model failed entirely and was terminated early due to losses", "isCorrect": false },
+                { "id": "opt_ocm1d", "text": "Savings were achieved only in practices with hospital ownership", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+
+    "quality-measures": [
+      {
+        "id": "lesson_vbc_prom",
+        "pillar": "clinical",
+        "order": 2,
+        "slug": "patient-reported-outcomes",
+        "title": "Patient-Reported Outcomes: Measuring What Patients Care About",
+        "summary": "The shift from clinician-measured to patient-reported outcomes (PROs), the PROMIS framework, CMS's use of PROs in VBC programs, and the implementation challenges.",
+        "estimatedMinutes": 16,
+        "isPublished": true,
+        "tags": ["PROM", "PRO", "PROMIS", "patient outcomes", "quality measurement"],
+        "relatedLessonIds": ["lesson_vbc_quality"],
+        "objectives": [
+          { "id": "obj_pro1", "text": "Explain what patient-reported outcomes are and why they matter for quality measurement" },
+          { "id": "obj_pro2", "text": "Describe the PROMIS measurement framework and its advantages" },
+          { "id": "obj_pro3", "text": "Identify how CMS is incorporating PROs into value-based care programs" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "What the patient experiences matters most",
+            "body": "Most quality measures capture process (did we do the recommended thing?) or intermediate outcome (did the patient's A1c improve?). Rarely do they ask: how does the patient feel? Can they do what they want to do? Is their pain tolerable? These patient-reported outcomes (PROs) capture the dimensions of health that patients care about most — and that don't appear in clinical records.\n\nPROs are collected via validated questionnaires asking patients directly about their symptoms, function, and quality of life. They are distinct from satisfaction surveys (CAHPS) — PROs measure health states, not opinions about care."
+          },
+          {
+            "type": "concepts_grid",
+            "heading": "Key PRO frameworks",
+            "items": [
+              { "icon": "ti-chart-bar", "title": "PROMIS", "body": "Patient-Reported Outcomes Measurement Information System. NIH-funded standardized measures across physical function, fatigue, pain, depression, anxiety, social functioning. Calibrated by item response theory — adaptive short-form versions available." },
+              { "icon": "ti-heart-rate-monitor", "title": "KOOS/HOOS", "body": "Knee Injury and Osteoarthritis Outcome Score / Hip disability and Osteoarthritis Outcome Score. Condition-specific PROs used in orthopedic bundles and joint replacement episodes." },
+              { "icon": "ti-stethoscope", "title": "ICHOM sets", "body": "International Consortium for Health Outcomes Measurement. Condition-specific standard outcome sets developed with patient input — used globally to enable comparison across health systems." }
+            ]
+          },
+          {
+            "type": "callout",
+            "variant": "info",
+            "heading": "CMS's move toward PROs",
+            "body": "CMS has begun incorporating PROs into several programs: joint replacement bundles require functional outcome reporting, MIPS has PRO-based quality measures, and the ACO PC Flex model incorporates patient experience measures. The challenge: collecting PROs at scale requires patient portal infrastructure, engagement, and support for patients with limited digital access."
+          }
+        ],
+        "quiz": {
+          "id": "quiz_prom",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_pro1",
+              "type": "single_choice",
+              "question": "What distinguishes patient-reported outcomes (PROs) from patient satisfaction surveys like CAHPS?",
+              "points": 1,
+              "explanation": "PROs measure health states — symptoms, function, quality of life as experienced by the patient. CAHPS measures patient experience and satisfaction with care delivery, not health status.",
+              "options": [
+                { "id": "opt_pro1a", "text": "PROs are collected by physicians; CAHPS is self-reported by patients", "isCorrect": false },
+                { "id": "opt_pro1b", "text": "PROs measure health states (pain, function); CAHPS measures opinions about care delivery", "isCorrect": true },
+                { "id": "opt_pro1c", "text": "PROs are used for research only; CAHPS is used for payment", "isCorrect": false },
+                { "id": "opt_pro1d", "text": "PROs are required for all Medicare patients; CAHPS is optional", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+
+    "risk-adjustment": [
+      {
+        "id": "lesson_vbc_sdoh_ra",
+        "pillar": "economics",
+        "order": 2,
+        "slug": "social-risk-adjustment",
+        "title": "Social Risk in Risk Adjustment: Should We Adjust for Poverty?",
+        "summary": "The contested question of whether to include social risk factors in clinical quality risk adjustment — arguments on both sides and the NASEM recommendations.",
+        "estimatedMinutes": 15,
+        "isPublished": true,
+        "tags": ["social risk", "risk adjustment", "equity", "NASEM", "quality measures"],
+        "relatedLessonIds": ["lesson_vbc_risk_adj"],
+        "objectives": [
+          { "id": "obj_sra1", "text": "Explain the argument for including social risk factors in quality measure risk adjustment" },
+          { "id": "obj_sra2", "text": "Explain the argument against adjusting for social risk" },
+          { "id": "obj_sra3", "text": "Summarize the NASEM recommendations on social risk adjustment" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "The core tension",
+            "body": "Risk adjustment corrects for clinical complexity so that providers caring for sicker patients aren't unfairly penalized on quality or cost measures. The question: should social risk factors — poverty, housing instability, limited English proficiency — be adjusted for in the same way?\n\nProviders argue yes: safety-net hospitals and practices caring for high-poverty populations face structural barriers to quality outcomes that have nothing to do with the quality of their care. Adjusting for social risk levels the playing field.\n\nEquity advocates argue no: adjusting for poverty sets lower quality expectations for poor patients — essentially accepting worse care for the disadvantaged. The goal should be to close gaps, not to hide them."
+          },
+          {
+            "type": "comparison_table",
+            "heading": "Arguments for and against social risk adjustment",
+            "leftLabel": "For adjustment",
+            "rightLabel": "Against adjustment",
+            "rows": [
+              { "label": "Fairness", "left": "Providers caring for high-social-risk patients face barriers beyond their control", "right": "Adjustment accepts lower quality expectations for poor patients" },
+              { "label": "Access", "left": "Without adjustment, providers may avoid high-risk populations to protect scores", "right": "Incentives to improve social determinants may be reduced if gaps are adjusted away" },
+              { "label": "Accountability", "left": "Penalizing safety-net providers unfairly may close them, harming access further", "right": "Accountability requires measuring actual outcomes without excusing poor performance" }
+            ]
+          },
+          {
+            "type": "callout",
+            "variant": "tip",
+            "heading": "NASEM's 2017 recommendation: stratify, don't adjust",
+            "body": "The National Academies of Sciences, Engineering, and Medicine (NASEM) recommended stratifying quality measure results by social risk — reporting performance separately for high and low social risk patients — rather than adjusting measures to reduce apparent gaps. This preserves accountability for all providers while revealing where disparities exist. CMS has moved toward this approach."
+          }
+        ],
+        "quiz": {
+          "id": "quiz_social_ra",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_sra1",
+              "type": "single_choice",
+              "question": "What did NASEM recommend for handling social risk in quality measurement?",
+              "points": 1,
+              "explanation": "NASEM recommended stratifying quality measure results by social risk — reporting separately for high and low social risk patients — rather than adjusting measures to hide gaps.",
+              "options": [
+                { "id": "opt_sra1a", "text": "Adjust all quality measures for social risk factors in addition to clinical risk", "isCorrect": false },
+                { "id": "opt_sra1b", "text": "Stratify results by social risk to reveal disparities while preserving accountability", "isCorrect": true },
+                { "id": "opt_sra1c", "text": "Exclude safety-net providers from quality measurement programs entirely", "isCorrect": false },
+                { "id": "opt_sra1d", "text": "Give safety-net providers bonus payments without quality measurement requirements", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+
+    "star-ratings": [
+      {
+        "id": "lesson_vbc_stars_equity",
+        "pillar": "clinical",
+        "order": 2,
+        "slug": "star-ratings-equity-critique",
+        "title": "Star Ratings & Equity: The Low-Income Subsidy Problem",
+        "summary": "Why Medicare Advantage plans serving high proportions of low-income and dual eligible members consistently score lower on Star Ratings — and what CMS is doing about it.",
+        "estimatedMinutes": 14,
+        "isPublished": true,
+        "tags": ["Star Ratings", "equity", "LIS", "dual eligible", "HEI"],
+        "relatedLessonIds": ["lesson_vbc_star_ratings"],
+        "objectives": [
+          { "id": "obj_se1", "text": "Explain why plans serving LIS/dual eligible populations score lower on Star Ratings" },
+          { "id": "obj_se2", "text": "Describe the criticism that Stars penalizes safety-net MA plans" },
+          { "id": "obj_se3", "text": "Explain how the Health Equity Index attempts to address this" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "Stars and the equity penalty",
+            "body": "Research consistently shows that Medicare Advantage plans serving higher proportions of Low-Income Subsidy (LIS) beneficiaries and dual eligibles score lower on Star Ratings — even after controlling for plan characteristics. This creates a troubling dynamic: plans that choose to serve the most vulnerable populations are financially penalized through lower star ratings and loss of the 5% quality bonus.\n\nAnalyses by MedPAC, CMS, and academic researchers find that 20–30% of the variance in star ratings is explained by the socioeconomic composition of a plan's enrollment — not by actual quality of care delivered."
+          },
+          {
+            "type": "callout",
+            "variant": "info",
+            "heading": "The Health Equity Index: CMS's response",
+            "body": "Starting with 2027 Star Ratings, CMS is implementing the Health Equity Index (HEI) — a reward measure that gives plans additional credit for achieving better quality outcomes for their LIS/dual eligible and/or disability members. Plans with smaller quality gaps between vulnerable and non-vulnerable members earn HEI credit. This inverts the old incentive: rather than penalizing plans for serving difficult populations, HEI rewards plans that actually close gaps within those populations."
+          }
+        ],
+        "quiz": {
+          "id": "quiz_stars_equity",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_se1",
+              "type": "single_choice",
+              "question": "What is the equity concern with the current Medicare Advantage Star Ratings system?",
+              "points": 1,
+              "explanation": "Plans serving high proportions of low-income and dual eligible members consistently score lower on Stars, losing the quality bonus — which may discourage plans from serving these populations.",
+              "options": [
+                { "id": "opt_se1a", "text": "Plans that serve rural populations are excluded from Star Ratings", "isCorrect": false },
+                { "id": "opt_se1b", "text": "Plans serving high proportions of low-income/dual eligible members score lower, potentially discouraging service to vulnerable populations", "isCorrect": true },
+                { "id": "opt_se1c", "text": "Star Ratings do not include measures relevant to the diseases most common in low-income populations", "isCorrect": false },
+                { "id": "opt_se1d", "text": "Low-income beneficiaries cannot compare plans on Medicare.gov", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+
+    "future-of-vbc": [
+      {
+        "id": "lesson_vbc_global_budget",
+        "pillar": "economics",
+        "order": 2,
+        "slug": "global-budgets-hospital-finance",
+        "title": "Global Budgets for Hospitals: Maryland & Beyond",
+        "summary": "How global hospital budgets set annual spending targets that decouple hospital revenue from volume — the Maryland Model, Vermont, and the evidence on cost and quality.",
+        "estimatedMinutes": 16,
+        "isPublished": true,
+        "tags": ["global budget", "Maryland", "hospital finance", "volume decoupling", "HSCRC"],
+        "relatedLessonIds": ["lesson_vbc_future"],
+        "objectives": [
+          { "id": "obj_gb1", "text": "Explain what a global budget is and how it differs from capitation or fee-for-service" },
+          { "id": "obj_gb2", "text": "Describe Maryland's all-payer hospital global budget model and its results" },
+          { "id": "obj_gb3", "text": "Explain how global budgets change hospital incentives around volume and prevention" }
+        ],
+        "contentBlocks": [
+          {
+            "type": "text",
+            "heading": "The hospital volume problem",
+            "body": "In fee-for-service, hospitals earn revenue when patients are admitted. They lose revenue when patients avoid hospitalization — through better primary care, prevention, or care management. Global budgets fundamentally change this: a hospital receives a fixed annual budget regardless of how many patients it admits. If it can keep patients healthy and out of the hospital, it keeps the budget. If volume rises above target, it must absorb the additional cost.\n\nThis is the most complete form of hospital payment reform — aligning hospital financial incentives with population health for the first time."
+          },
+          {
+            "type": "text",
+            "heading": "Maryland: the only all-payer global budget state",
+            "body": "Maryland has had a unique hospital payment system since 1977. The Health Services Cost Review Commission (HSCRC) sets hospital rates for all payers — Medicare, Medicaid, and commercial — under a federal waiver. In 2014, Maryland entered the Total Cost of Care Model, adding a population-level global budget for Medicare spending across all care settings.\n\nResults after 5 years: Maryland hospitals generated $1.2B in Medicare savings, achieved lower per-capita cost growth than national trends, and showed quality improvements — particularly in preventable hospitalizations and readmissions. Vermont's AHEAD model, which Vermont entered in 2024, is modeled partly on Maryland's approach."
+          },
+          {
+            "type": "key_stat",
+            "stats": [
+              { "value": "$1.2B", "label": "Medicare savings generated by Maryland hospitals 2014–2019", "source": "CMS" },
+              { "value": "1977", "label": "Year Maryland established its all-payer hospital rate system", "source": "HSCRC" },
+              { "value": "2024", "label": "Year Vermont entered the AHEAD model with global budget elements", "source": "CMS" },
+              { "value": "15%", "label": "Reduction in preventable hospitalizations in Maryland model areas", "source": "NEJM" }
+            ]
+          }
+        ],
+        "quiz": {
+          "id": "quiz_global_budget",
+          "passingScore": 75,
+          "shuffleOptions": true,
+          "questions": [
+            {
+              "id": "q_gb1",
+              "type": "single_choice",
+              "question": "How does a global hospital budget change a hospital's financial incentive compared to fee-for-service?",
+              "points": 1,
+              "explanation": "Global budgets give hospitals a fixed annual amount regardless of volume. This means hospitals keep more of the budget if they prevent hospitalizations — directly aligning financial incentives with population health.",
+              "options": [
+                { "id": "opt_gb1a", "text": "Hospitals earn more when they perform more procedures within the budget", "isCorrect": false },
+                { "id": "opt_gb1b", "text": "Hospitals receive a fixed budget regardless of volume — so preventing admissions improves their margin", "isCorrect": true },
+                { "id": "opt_gb1c", "text": "Hospitals are paid a higher per-case rate in exchange for accepting a volume cap", "isCorrect": false },
+                { "id": "opt_gb1d", "text": "The global budget replaces Medicaid payment but not Medicare or commercial", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,2260 @@
+{
+  "id": "course_ai_healthcare",
+  "slug": "ai-machine-learning-healthcare",
+  "title": "AI & Machine Learning in Healthcare",
+  "subtitle": "Predictive analytics, clinical decision support, LLMs, FDA regulation, algorithmic bias, and responsible implementation",
+  "description": "A practical, rigorous introduction to artificial intelligence and machine learning in healthcare. Covers the fundamentals of ML, predictive analytics in clinical settings, natural language processing and LLMs in clinical notes, clinical decision support systems, FDA regulation of AI/ML-based devices, algorithmic bias, and a framework for responsible implementation. Designed for health professionals who need to evaluate, deploy, and govern AI tools \u2014 not just use them.",
+  "targetAudience": [
+    "Clinical informatics and digital health staff",
+    "Quality and analytics teams",
+    "Clinical leadership evaluating AI tools",
+    "Health IT and data science staff",
+    "Policy and compliance staff",
+    "Physicians and nurses encountering AI at the bedside"
+  ],
+  "prerequisites": [],
+  "estimatedHours": 12,
+  "isPublished": true,
+  "version": "1.0.0",
+  "createdAt": "2026-05-25T00:00:00Z",
+  "updatedAt": "2026-05-25T00:00:00Z",
+  "tracks": [
+    {
+      "id": "track_ai_fundamentals",
+      "courseId": "course_ai_healthcare",
+      "pillar": "technology",
+      "order": 1,
+      "slug": "ai-ml-fundamentals",
+      "title": "AI & ML Fundamentals for Clinicians",
+      "description": "The core concepts of machine learning \u2014 supervised, unsupervised, deep learning \u2014 explained for healthcare professionals without a data science background.",
+      "icon": "ti-cpu",
+      "targetAudience": [
+        "All staff"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_ai_concepts",
+          "trackId": "track_ai_fundamentals",
+          "pillar": "technology",
+          "order": 1,
+          "slug": "ai-ml-core-concepts",
+          "title": "How Machine Learning Works: A Non-Technical Primer",
+          "summary": "The difference between AI, ML, and deep learning; how supervised learning works; what training data is; and why 'the algorithm learned it' is not a sufficient explanation.",
+          "estimatedMinutes": 20,
+          "isPublished": true,
+          "tags": [
+            "machine learning",
+            "AI basics",
+            "supervised learning",
+            "training data",
+            "deep learning"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_ai1",
+              "text": "Explain the difference between AI, machine learning, and deep learning"
+            },
+            {
+              "id": "obj_ai2",
+              "text": "Describe how supervised learning works at a conceptual level"
+            },
+            {
+              "id": "obj_ai3",
+              "text": "Explain what training data is and why its quality determines model quality"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "AI is a broad term \u2014 here's how to navigate it",
+              "body": "Artificial intelligence (AI) refers broadly to machines performing tasks that would typically require human intelligence. Machine learning (ML) is a subset of AI: instead of being explicitly programmed with rules, ML systems learn patterns from data. Deep learning is a subset of ML that uses neural networks with many layers \u2014 it powers the most impressive recent advances in image recognition, language understanding, and clinical prediction.\n\nIn health care, when someone says 'AI,' they usually mean one of three things: a predictive model (will this patient be readmitted?), a computer vision tool (does this chest X-ray show pneumonia?), or a language model (summarize this clinical note)."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "The three main ML paradigms",
+              "items": [
+                {
+                  "icon": "ti-tag",
+                  "title": "Supervised learning",
+                  "body": "The model learns from labeled examples \u2014 inputs paired with correct outputs. Train on 10,000 labeled chest X-rays; the model learns to classify new ones. Most clinical AI is supervised."
+                },
+                {
+                  "icon": "ti-topology-ring",
+                  "title": "Unsupervised learning",
+                  "body": "The model finds patterns in unlabeled data \u2014 clustering similar patients together, detecting anomalies. Used in patient stratification and cohort discovery."
+                },
+                {
+                  "icon": "ti-trophy",
+                  "title": "Reinforcement learning",
+                  "body": "The model learns by trial and error, receiving rewards for good decisions. Used in robotic surgery, treatment protocol optimization, and dosing algorithms."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Training data: the model's foundation",
+              "body": "A supervised learning model is only as good as its training data. The model learns the relationship between inputs (e.g., lab values, vital signs, demographics) and outputs (e.g., sepsis in next 6 hours: yes/no) from historical examples.\n\nIf the training data reflects historical biases \u2014 for example, if underdiagnosis of a condition in Black patients means fewer true positives in the training set \u2014 the model will learn those biases. If training data comes from one hospital system, the model may not generalize to different patient populations, clinical workflows, or EHR documentation styles.\n\nThis is why 'the algorithm was trained on millions of records' is not sufficient assurance of quality \u2014 the question is what was in those records."
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "Correlation is not causation \u2014 and AI doesn't know the difference",
+              "body": "ML models find statistical patterns. They have no understanding of mechanism, no concept of causality, and no ability to reason about novel situations. A model trained to predict sepsis might learn that low blood pressure correlates with sepsis \u2014 but it might also learn that certain nursing documentation patterns correlate, because nurses document more thoroughly for sicker patients. Both patterns predict sepsis, but only one is clinically meaningful. This is why human oversight remains essential."
+            },
+            {
+              "type": "video",
+              "mediaType": "youtube",
+              "videoId": "ukzFI9rgwfU",
+              "caption": "Machine learning in medicine \u2014 MIT overview (~10 min)",
+              "durationSeconds": 600
+            }
+          ],
+          "quiz": {
+            "id": "quiz_ai_concepts",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_ai1",
+                "type": "single_choice",
+                "question": "A hospital trains a sepsis prediction model on 5 years of its own EHR data. Which of the following is the strongest concern about deploying this model at a different hospital?",
+                "points": 1,
+                "explanation": "Models trained on one institution's data may not generalize to others due to differences in patient populations, documentation practices, and clinical workflows \u2014 a problem called distribution shift.",
+                "options": [
+                  {
+                    "id": "opt_ai1a",
+                    "text": "The model will be too expensive to license from the original hospital",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ai1b",
+                    "text": "The model may not generalize due to differences in patient populations and documentation practices",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_ai1c",
+                    "text": "The model requires the same EHR vendor as the training institution",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ai1d",
+                    "text": "The model will predict outcomes that were only relevant 5 years ago",
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "id": "q_ai2",
+                "type": "single_choice",
+                "question": "What is 'supervised learning'?",
+                "points": 1,
+                "options": [
+                  {
+                    "id": "opt_ai2a",
+                    "text": "Learning that requires a human supervisor to approve each model prediction",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ai2b",
+                    "text": "Learning from labeled examples \u2014 inputs paired with correct outputs",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_ai2c",
+                    "text": "Learning performed under regulatory supervision by the FDA",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ai2d",
+                    "text": "Learning from unlabeled data to find hidden patterns",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_ai_metrics",
+          "trackId": "track_ai_fundamentals",
+          "pillar": "technology",
+          "order": 2,
+          "slug": "ai-performance-metrics",
+          "title": "Reading AI Performance Metrics: Sensitivity, Specificity & AUC",
+          "summary": "The performance metrics used to evaluate clinical AI \u2014 sensitivity, specificity, PPV, NPV, AUC-ROC \u2014 and why the right metric depends on the clinical use case.",
+          "estimatedMinutes": 18,
+          "isPublished": true,
+          "tags": [
+            "sensitivity",
+            "specificity",
+            "AUC",
+            "PPV",
+            "NPV",
+            "performance metrics"
+          ],
+          "relatedLessonIds": [
+            "lesson_ai_concepts"
+          ],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_am1",
+              "text": "Define sensitivity, specificity, PPV, and NPV in clinical AI context"
+            },
+            {
+              "id": "obj_am2",
+              "text": "Explain the sensitivity-specificity tradeoff and when each matters more"
+            },
+            {
+              "id": "obj_am3",
+              "text": "Interpret an AUC-ROC score and its limitations"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Why '95% accurate' tells you almost nothing",
+              "body": "A vendor claims their sepsis model is '95% accurate.' What does that mean? If only 5% of patients get sepsis, a model that always predicts 'no sepsis' achieves 95% accuracy \u2014 while being completely useless. Accuracy alone is meaningless. Clinical AI must be evaluated on metrics that reflect the cost of errors in the specific clinical context."
+            },
+            {
+              "type": "comparison_table",
+              "heading": "The core performance metrics",
+              "leftLabel": "Metric",
+              "rightLabel": "What it measures / When it matters most",
+              "rows": [
+                {
+                  "label": "Sensitivity (recall)",
+                  "left": "% of true positives correctly identified",
+                  "right": "When missing a case is dangerous \u2014 sepsis, cancer screening. High sensitivity = few false negatives."
+                },
+                {
+                  "label": "Specificity",
+                  "left": "% of true negatives correctly identified",
+                  "right": "When false alarms cause harm \u2014 alert fatigue, unnecessary procedures. High specificity = few false positives."
+                },
+                {
+                  "label": "PPV (precision)",
+                  "left": "% of positive predictions that are actually positive",
+                  "right": "How actionable is a positive alert? Depends heavily on prevalence."
+                },
+                {
+                  "label": "NPV",
+                  "left": "% of negative predictions that are actually negative",
+                  "right": "How confident can you be when the model says no disease?"
+                },
+                {
+                  "label": "AUC-ROC",
+                  "left": "Overall discriminative ability across all thresholds",
+                  "right": "Useful for comparing models; insensitive to class imbalance. Values: 0.5 = chance; 0.9+ = excellent."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "Prevalence changes everything",
+              "body": "A test with 90% sensitivity and 90% specificity sounds excellent. But in a population where only 1% have the disease (low prevalence), the PPV is only about 8% \u2014 meaning 92% of positive results are false alarms. The same test in a high-risk population (20% prevalence) has PPV ~70%. Always ask: what is the base rate of the condition this model predicts in my patient population?"
+            }
+          ],
+          "quiz": {
+            "id": "quiz_ai_metrics",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_am1",
+                "type": "single_choice",
+                "question": "A sepsis prediction model has high sensitivity but low specificity. What is the primary clinical risk of deploying it?",
+                "points": 1,
+                "explanation": "Low specificity means many false positives \u2014 many patients flagged as having sepsis who don't. In practice, this causes alert fatigue: clinicians start ignoring alerts because most are wrong.",
+                "options": [
+                  {
+                    "id": "opt_am1a",
+                    "text": "Many sepsis cases will be missed",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_am1b",
+                    "text": "Alert fatigue \u2014 too many false alarms causing clinicians to ignore alerts",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_am1c",
+                    "text": "The model will perform poorly on non-sepsis diagnoses",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_am1d",
+                    "text": "The model will be biased against elderly patients",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_ai_dl_imaging",
+          "pillar": "technology",
+          "order": 3,
+          "slug": "deep-learning-medical-imaging",
+          "title": "Deep Learning in Medical Imaging: Radiology, Pathology & Ophthalmology",
+          "summary": "How convolutional neural networks work in medical imaging, the landmark studies in radiology and pathology AI, and the evidence on diagnostic accuracy vs. clinicians.",
+          "estimatedMinutes": 19,
+          "isPublished": true,
+          "tags": [
+            "deep learning",
+            "CNN",
+            "radiology",
+            "pathology",
+            "ophthalmology",
+            "imaging AI"
+          ],
+          "relatedLessonIds": [
+            "lesson_ai_concepts"
+          ],
+          "objectives": [
+            {
+              "id": "obj_dl1",
+              "text": "Explain how convolutional neural networks process medical images"
+            },
+            {
+              "id": "obj_dl2",
+              "text": "Describe landmark imaging AI studies in radiology, pathology, and ophthalmology"
+            },
+            {
+              "id": "obj_dl3",
+              "text": "Evaluate AI vs. clinician accuracy claims critically"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Why images are where AI excels",
+              "body": "Medical images \u2014 X-rays, CT scans, pathology slides, fundus photographs \u2014 are where deep learning has demonstrated the most striking clinical results. Unlike structured data (labs, vitals) that requires feature engineering, images can be fed directly into convolutional neural networks (CNNs), which learn to extract relevant features automatically.\n\nThe CNN's core operation: filters scan across the image at multiple scales, detecting edges, textures, and shapes at increasing levels of abstraction. Early layers detect simple features (lines, blobs); deeper layers detect complex patterns (the irregular border of a malignant mass, the drusen deposits of diabetic macular edema)."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Landmark imaging AI results by specialty",
+              "items": [
+                {
+                  "icon": "ti-lungs",
+                  "title": "Chest X-ray (radiology)",
+                  "body": "CheXNet (Stanford 2017): CNN diagnosed 14 chest conditions from chest X-rays at or above radiologist accuracy. Followed by Google's study of chest X-rays for tuberculosis in low-resource settings."
+                },
+                {
+                  "icon": "ti-eye",
+                  "title": "Diabetic retinopathy",
+                  "body": "Google (2016): CNN detected diabetic retinopathy from fundus photos at or above ophthalmologist level, with ~90% sensitivity/specificity. FDA cleared for autonomous use \u2014 no ophthalmologist required."
+                },
+                {
+                  "icon": "ti-microscope",
+                  "title": "Pathology (cancer)",
+                  "body": "Google and Memorial Sloan Kettering: CNNs detect breast cancer metastases in lymph node slides at higher accuracy than pathologists. Also strong results in prostate, colon, and lung cancer."
+                },
+                {
+                  "icon": "ti-heart",
+                  "title": "Cardiac imaging",
+                  "body": "EchoNet (Stanford): CNN estimates ejection fraction from echocardiograms with cardiologist-level accuracy. Enables automated screening of cardiac function at scale."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "AI vs. clinician comparisons: read the fine print",
+              "body": "Headlines announcing 'AI outperforms doctors' require careful reading. Key questions: (1) What is the AI compared to \u2014 a single radiologist, or a consensus of specialists? (2) Was the test set independent, or from the same institution as training? (3) Was the AI deployed in real workflow, or evaluated on curated images? (4) What happened to performance on subgroups? Studies that show AI matching single clinicians on curated test sets often show degraded performance in real-world deployment."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_dl_imaging",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_dl1",
+                "type": "single_choice",
+                "question": "What is the most important question to ask when a study claims an imaging AI 'outperforms' clinicians?",
+                "points": 1,
+                "explanation": "The comparison group matters enormously. AI may outperform a single junior clinician but not a panel of subspecialists. The test dataset quality, independence from training data, and real-world validation all determine whether the claim is meaningful.",
+                "options": [
+                  {
+                    "id": "opt_dl1a",
+                    "text": "What hardware was used to run the AI model?",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_dl1b",
+                    "text": "Who was the AI compared to, and was the test set independent from training data?",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_dl1c",
+                    "text": "What journal published the study?",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_dl1d",
+                    "text": "What was the sample size of the training dataset?",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_ai_predictive",
+      "courseId": "course_ai_healthcare",
+      "pillar": "technology",
+      "order": 2,
+      "slug": "predictive-analytics",
+      "title": "Predictive Analytics in Clinical Practice",
+      "description": "Readmission prediction, sepsis early warning, deterioration models, and the evidence on whether these tools actually improve outcomes.",
+      "icon": "ti-chart-line",
+      "targetAudience": [
+        "Clinical staff",
+        "Informatics teams",
+        "Quality staff"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_ai_readmission",
+          "trackId": "track_ai_predictive",
+          "pillar": "technology",
+          "order": 1,
+          "slug": "readmission-prediction",
+          "title": "Readmission Prediction: The LACE Score, ML Models & What the Evidence Shows",
+          "summary": "The history and evidence on 30-day readmission prediction, from the LACE index to ML models, and the honest answer about whether prediction actually reduces readmissions.",
+          "estimatedMinutes": 18,
+          "isPublished": true,
+          "tags": [
+            "readmission",
+            "LACE",
+            "prediction",
+            "30-day",
+            "HRRP"
+          ],
+          "relatedLessonIds": [
+            "lesson_ai_sepsis"
+          ],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_rp1",
+              "text": "Describe how readmission prediction models work and what inputs they use"
+            },
+            {
+              "id": "obj_rp2",
+              "text": "Summarize the evidence on whether ML readmission models outperform simpler tools"
+            },
+            {
+              "id": "obj_rp3",
+              "text": "Explain the gap between prediction accuracy and intervention effectiveness"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The readmission problem and the HRRP",
+              "body": "Hospital readmissions within 30 days are costly ($26B/year in Medicare) and often preventable. The Hospital Readmissions Reduction Program (HRRP), created by the ACA, penalizes hospitals with above-expected readmission rates for heart failure, pneumonia, hip/knee replacement, CABG, COPD, and MI. This created a strong financial incentive to identify and intervene with high-risk patients before discharge.\n\nReadmission prediction was one of the first widespread applications of ML in clinical care. The LACE index (Length of stay, Acuity of admission, Charlson Comorbidity Index score, Emergency visits in past 6 months) was an early validated tool. ML models came later, promising to improve accuracy."
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "The prediction-intervention gap",
+              "body": "A landmark 2019 JAMA study found that despite being an excellent predictor of readmission, a widely deployed ML model from a major EHR vendor did not improve patient outcomes \u2014 because hospitals lacked effective interventions to deploy after a high-risk alert. Prediction without effective intervention is just an expensive alert system. The hard problem is not prediction; it's what you do after."
+            },
+            {
+              "type": "text",
+              "heading": "What high-performing readmission programs actually do",
+              "body": "The hospitals that have most reduced readmissions are not the ones with the best prediction models. They are the ones with: dedicated transition care nurses who call patients within 48 hours of discharge, partnerships with home health agencies, pharmacists who reconcile medications, and post-discharge clinic slots. Prediction identifies who needs those services \u2014 but the services must actually exist."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_readmission",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_rp1",
+                "type": "single_choice",
+                "question": "What does the 'prediction-intervention gap' mean in the context of readmission prediction?",
+                "points": 1,
+                "explanation": "Even accurate prediction models don't reduce readmissions unless there are effective interventions available to deploy for high-risk patients \u2014 a problem consistently found in readmission research.",
+                "options": [
+                  {
+                    "id": "opt_rp1a",
+                    "text": "Prediction models work better for some diagnoses than others",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_rp1b",
+                    "text": "Accurate prediction does not reduce readmissions unless effective interventions are available and deployed",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_rp1c",
+                    "text": "Predictions made at admission are less accurate than those made at discharge",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_rp1d",
+                    "text": "ML models predict better than simpler tools but are harder to implement",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_ai_sepsis",
+          "trackId": "track_ai_predictive",
+          "pillar": "technology",
+          "order": 2,
+          "slug": "sepsis-early-warning",
+          "title": "Sepsis Early Warning Systems: Evidence & Alert Fatigue",
+          "summary": "The landscape of sepsis prediction tools (Epic Sepsis Model, SOFA, qSOFA), the landmark Johns Hopkins study exposing the Epic model, and the alert fatigue problem.",
+          "estimatedMinutes": 18,
+          "isPublished": true,
+          "tags": [
+            "sepsis",
+            "Epic Sepsis Model",
+            "alert fatigue",
+            "early warning",
+            "SOFA"
+          ],
+          "relatedLessonIds": [
+            "lesson_ai_readmission"
+          ],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_sw1",
+              "text": "Describe the Epic Sepsis Model and the Johns Hopkins JAMA study findings"
+            },
+            {
+              "id": "obj_sw2",
+              "text": "Explain what alert fatigue is and its consequences for patient safety"
+            },
+            {
+              "id": "obj_sw3",
+              "text": "Identify design principles that reduce alert fatigue"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Sepsis prediction at scale",
+              "body": "Sepsis \u2014 dysregulated host response to infection leading to life-threatening organ dysfunction \u2014 is one of the most time-sensitive conditions in medicine. An hour's delay in treatment increases mortality. This makes it an attractive target for AI early warning.\n\nEpic Systems, the dominant EHR vendor, built a proprietary Sepsis Model (ESM) into its system, deployed at hundreds of hospitals. Clinicians receive alerts when a patient's ESM score exceeds a threshold."
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "The Johns Hopkins finding",
+              "body": "A 2021 JAMA Internal Medicine study from Johns Hopkins evaluated the Epic Sepsis Model prospectively in their system. Results: the model had poor sensitivity (63%) and poor specificity \u2014 for every true sepsis case flagged, there were many false alarms. The model missed 1 in 3 sepsis cases and generated so many false alerts that clinicians learned to discount them. The study concluded the ESM performed no better than simpler clinical scoring tools and contributed to alert fatigue."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Alert fatigue: causes and consequences",
+              "items": [
+                {
+                  "icon": "ti-bell-off",
+                  "title": "What it is",
+                  "body": "When clinicians receive so many alerts \u2014 mostly false or non-actionable \u2014 that they begin ignoring or overriding them routinely."
+                },
+                {
+                  "icon": "ti-percentage",
+                  "title": "Scale",
+                  "body": "Studies show 50\u201390% of clinical alerts are overridden or ignored. Physicians receive 63\u2013100+ alerts per day in high-acuity settings."
+                },
+                {
+                  "icon": "ti-alert-triangle",
+                  "title": "Safety risk",
+                  "body": "When real critical alerts are buried among dozens of false ones, clinicians may miss the one that matters. Alert fatigue has been linked to preventable patient harm."
+                },
+                {
+                  "icon": "ti-tools",
+                  "title": "Solutions",
+                  "body": "Alert optimization: reduce alert volume by raising thresholds, removing low-value alerts, adding specificity to triggers, and presenting alerts with actionable options."
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_sepsis",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_sw1",
+                "type": "single_choice",
+                "question": "What did the 2021 Johns Hopkins JAMA study find about the Epic Sepsis Model?",
+                "points": 1,
+                "explanation": "The study found the Epic Sepsis Model had poor sensitivity (missing 1 in 3 sepsis cases), generated many false positives, contributed to alert fatigue, and performed no better than simpler clinical scoring tools.",
+                "options": [
+                  {
+                    "id": "opt_sw1a",
+                    "text": "The model successfully reduced sepsis mortality at Johns Hopkins by 20%",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_sw1b",
+                    "text": "The model had poor sensitivity and specificity, contributed to alert fatigue, and performed no better than simpler tools",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_sw1c",
+                    "text": "The model worked well for ICU patients but poorly for ward patients",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_sw1d",
+                    "text": "Epic's model was found to be biased against elderly patients",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_ai_deterioration",
+          "pillar": "technology",
+          "order": 3,
+          "slug": "inpatient-deterioration-models",
+          "title": "Inpatient Deterioration Models: NEWS, eCART & Real-Time ML",
+          "summary": "How clinical deterioration is detected in inpatient settings \u2014 from traditional vital sign scoring (NEWS, MEWS) to ML-based deterioration models \u2014 and the alert fatigue tradeoffs.",
+          "estimatedMinutes": 16,
+          "isPublished": true,
+          "tags": [
+            "deterioration",
+            "NEWS",
+            "eCART",
+            "early warning",
+            "inpatient"
+          ],
+          "relatedLessonIds": [
+            "lesson_ai_sepsis"
+          ],
+          "objectives": [
+            {
+              "id": "obj_det1",
+              "text": "Describe traditional early warning scores (NEWS, MEWS) and how they are calculated"
+            },
+            {
+              "id": "obj_det2",
+              "text": "Explain how ML-based deterioration models differ from rule-based scoring"
+            },
+            {
+              "id": "obj_det3",
+              "text": "Describe the evidence on ML deterioration models' clinical impact"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The clinical deterioration problem",
+              "body": "Approximately 200,000 hospital patients experience preventable in-hospital cardiac arrest annually in the US. Many of these events are preceded by hours of physiologic deterioration that is visible in vital signs and other clinical data \u2014 if someone is looking. Early warning systems aim to detect that deterioration before irreversible harm occurs.\n\nTraditional early warning scores (NEWS, MEWS, CURB-65) use simple point systems: add points for abnormal vital signs, reach a threshold, trigger an alert or rapid response. They are transparent and easy to explain, but static \u2014 they can't learn from your specific institution's patient population or outcome patterns."
+            },
+            {
+              "type": "comparison_table",
+              "heading": "Traditional scores vs. ML deterioration models",
+              "leftLabel": "Traditional (NEWS/MEWS)",
+              "rightLabel": "ML-based (eCART, WAVE, etc.)",
+              "rows": [
+                {
+                  "label": "Input data",
+                  "left": "Vital signs only",
+                  "right": "Vitals + labs + medications + notes + nursing documentation"
+                },
+                {
+                  "label": "Learning",
+                  "left": "Static \u2014 fixed point values",
+                  "right": "Trained on institutional data, can be retrained"
+                },
+                {
+                  "label": "Transparency",
+                  "left": "Fully explainable \u2014 clinicians understand the score",
+                  "right": "Black box \u2014 clinicians may not understand why alert fired"
+                },
+                {
+                  "label": "Performance",
+                  "left": "AUC ~0.70\u20130.75 for cardiac arrest prediction",
+                  "right": "AUC ~0.85\u20130.90 in training/validation studies"
+                },
+                {
+                  "label": "Real-world impact",
+                  "left": "Mixed \u2014 rapid response teams reduce arrest rates when systems are well-designed",
+                  "right": "Limited RCT evidence; some studies show alert fatigue outweighs benefit"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "eCART: the best-studied ML deterioration model",
+              "body": "The electronic Cardiac Arrest Risk Triage (eCART) model, developed at the University of Chicago, uses 30+ variables from the EHR to predict cardiac arrest and ICU transfer within 24 hours. Prospective studies show AUC 0.86 \u2014 substantially better than NEWS alone. But real-world deployment studies found that alert frequency determined clinical impact: sites that fired alerts too frequently saw alert fatigue; those with carefully calibrated thresholds saw RRT activation improvements."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_deterioration",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_det1",
+                "type": "single_choice",
+                "question": "What is the primary advantage of ML-based deterioration models over traditional early warning scores like NEWS?",
+                "points": 1,
+                "explanation": "ML models can incorporate many more input variables \u2014 labs, medications, nursing documentation \u2014 and learn from institutional data, achieving higher discriminative accuracy than simple vital sign scoring systems.",
+                "options": [
+                  {
+                    "id": "opt_det1a",
+                    "text": "They are more transparent and easier for bedside nurses to understand",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_det1b",
+                    "text": "They incorporate more data types and learn from institutional patterns, achieving higher AUC",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_det1c",
+                    "text": "They require less IT infrastructure to deploy than rule-based systems",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_det1d",
+                    "text": "They have been proven to reduce mortality in RCTs across multiple hospital systems",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_ai_pop_health",
+          "pillar": "technology",
+          "order": 4,
+          "slug": "ai-population-health",
+          "title": "AI for Population Health: Risk Stratification & Care Gap Identification",
+          "summary": "How analytics platforms use ML to stratify patient populations, identify rising-risk patients before crisis, and target care management resources efficiently.",
+          "estimatedMinutes": 17,
+          "isPublished": true,
+          "tags": [
+            "population health",
+            "risk stratification",
+            "care gaps",
+            "analytics",
+            "rising risk"
+          ],
+          "relatedLessonIds": [
+            "lesson_ai_readmission"
+          ],
+          "objectives": [
+            {
+              "id": "obj_ph1",
+              "text": "Explain how risk stratification models identify rising-risk patients"
+            },
+            {
+              "id": "obj_ph2",
+              "text": "Describe the difference between retrospective and prospective risk models"
+            },
+            {
+              "id": "obj_ph3",
+              "text": "Identify the major population health analytics platforms and their approaches"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The population health challenge",
+              "body": "ACOs and value-based care organizations are accountable for the total cost of care for attributed populations \u2014 often 10,000\u2013100,000 patients. They cannot intensively manage every patient; resources are finite. The goal of population health analytics is to identify which patients need what intensity of care management, and to deliver the right intervention at the right time.\n\nRisk stratification models classify patients by predicted future cost and utilization: high risk (top 1\u20135%, very high expected cost), rising risk (next 10\u201315%, trending toward high cost and most actionable), and low risk (stable, managed through primary care). The rising-risk segment is the highest-value target for proactive intervention."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "What population health models predict",
+              "items": [
+                {
+                  "icon": "ti-coin",
+                  "title": "Future cost",
+                  "body": "Predict which patients will generate the highest total spend in the next 12 months. Used to allocate care management resources and identify members for outreach."
+                },
+                {
+                  "icon": "ti-building-hospital",
+                  "title": "Hospitalization risk",
+                  "body": "Predict likelihood of hospitalization or ED visit in the next 30\u201390 days. Enables proactive outreach before the crisis event."
+                },
+                {
+                  "icon": "ti-heart-rate-monitor",
+                  "title": "Care gap identification",
+                  "body": "Identify patients overdue for preventive services (colonoscopy, mammogram, A1c, blood pressure check). Enables targeted outreach to improve quality measure rates."
+                },
+                {
+                  "icon": "ti-pill",
+                  "title": "Adherence risk",
+                  "body": "Predict which patients are likely to be non-adherent to medications based on pharmacy fill data, prior patterns, and social factors."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "Actionability over accuracy",
+              "body": "The most predictive population health model is not always the most useful. A model that accurately predicts the highest-cost 1% of patients (who have advanced cancer, ESRD on dialysis, or end-stage HF) may identify patients for whom intensive care management can't change the trajectory. High-performing ACOs focus on the 'rising risk' segment \u2014 patients who are trending toward high cost but are still early enough to benefit from intervention. Actionability, not raw predictive accuracy, is the right optimization target."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_pop_health",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_ph1",
+                "type": "single_choice",
+                "question": "Why do high-performing ACOs often focus care management resources on 'rising-risk' patients rather than the highest-risk tier?",
+                "points": 1,
+                "explanation": "The highest-risk patients (advanced terminal illness, end-stage disease) often cannot benefit from care management intervention. Rising-risk patients are still in a window where proactive intervention can change trajectory \u2014 making them the highest-value target.",
+                "options": [
+                  {
+                    "id": "opt_ph1a",
+                    "text": "Rising-risk patients are less expensive to manage per case",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ph1b",
+                    "text": "Rising-risk patients are still in a window where proactive intervention can change trajectory",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_ph1c",
+                    "text": "CMS requires ACOs to focus on rising-risk patients under MSSP rules",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ph1d",
+                    "text": "Highest-risk patients prefer not to be enrolled in care management programs",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_ai_nlp",
+      "courseId": "course_ai_healthcare",
+      "pillar": "technology",
+      "order": 3,
+      "slug": "nlp-llm-clinical",
+      "title": "NLP & LLMs in Clinical Care",
+      "description": "How natural language processing works in clinical contexts, the rise of large language models (LLMs) in healthcare, and the evidence and risks of ambient clinical documentation.",
+      "icon": "ti-file-text",
+      "targetAudience": [
+        "Clinical staff",
+        "Informatics teams",
+        "Health IT leadership"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_ai_llm",
+          "trackId": "track_ai_nlp",
+          "pillar": "technology",
+          "order": 1,
+          "slug": "llm-clinical-notes",
+          "title": "LLMs in Healthcare: Ambient Documentation, Summarization & Hallucination",
+          "summary": "How LLMs (like GPT-4 and clinical variants) are being used for ambient documentation, clinical note summarization, patient messaging, and the critical risk of hallucination.",
+          "estimatedMinutes": 20,
+          "isPublished": true,
+          "tags": [
+            "LLM",
+            "GPT",
+            "ambient documentation",
+            "hallucination",
+            "clinical notes"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_ll1",
+              "text": "Explain what large language models are and how they generate text"
+            },
+            {
+              "id": "obj_ll2",
+              "text": "Describe the clinical use cases for LLMs and their evidence base"
+            },
+            {
+              "id": "obj_ll3",
+              "text": "Explain what hallucination is and why it is a patient safety issue in clinical LLM applications"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "LLMs: pattern completion at massive scale",
+              "body": "Large language models (LLMs) like GPT-4, Claude, and their clinical variants (Med-PaLM, NYUTron) are trained on vast corpora of text to predict the next token in a sequence. They are not retrieving facts from a database \u2014 they are generating statistically likely continuations of text.\n\nThis makes them remarkably capable at tasks that look like language understanding: summarizing text, drafting responses, extracting information from notes, answering questions. It also makes them capable of generating plausible-sounding but false content \u2014 a phenomenon called hallucination."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Clinical LLM use cases (with evidence status)",
+              "items": [
+                {
+                  "icon": "ti-microphone",
+                  "title": "Ambient documentation",
+                  "body": "LLM listens to clinical encounter, generates draft SOAP note. Evidence: 70%+ of physicians report time savings. Risk: hallucination of clinical details not spoken."
+                },
+                {
+                  "icon": "ti-file-description",
+                  "title": "Discharge summary",
+                  "body": "Summarize hospital course from structured and unstructured EHR data. Promising for reducing documentation burden. Requires robust validation workflow."
+                },
+                {
+                  "icon": "ti-message",
+                  "title": "Patient message drafting",
+                  "body": "LLM drafts responses to patient portal messages for physician review. Early evidence: reduces response time, physician-reviewed before sending reduces risk."
+                },
+                {
+                  "icon": "ti-search",
+                  "title": "Chart review / abstraction",
+                  "body": "Extract clinical data from unstructured notes at scale \u2014 for quality reporting, research, or pre-authorization. Risk: misextraction in dense clinical text."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "Hallucination: the clinical safety issue",
+              "body": "LLMs hallucinate \u2014 they generate confident-sounding text that is factually false. In an ambient documentation context: a physician discusses a patient's medication list but the LLM generates a drug dose that was never stated. In a discharge summary: the LLM includes a diagnosis that was considered but ruled out. In a Q&A context: the LLM cites a clinical guideline that doesn't exist.\n\nHallucination rates vary by task and model but are never zero. Every clinical LLM deployment must have: (1) a clinician review step before information enters the clinical record, (2) clear disclosure to patients that AI was involved, and (3) monitoring for hallucination rates in production."
+            },
+            {
+              "type": "audio_slot",
+              "label": "Physician using ambient documentation: real-world experience",
+              "hint": "Interview a physician who has been using an AI ambient documentation tool (like Nuance DAX, Abridge, or similar) for at least 3 months \u2014 what works, what doesn't, what they've had to correct, and how it has changed their workflow. Recommended: 8\u201310 minutes."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_llm",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_ll1",
+                "type": "single_choice",
+                "question": "What is 'hallucination' in the context of large language models?",
+                "points": 1,
+                "explanation": "Hallucination refers to LLMs generating confident-sounding text that is factually false \u2014 not due to intentional deception, but because LLMs generate statistically probable text rather than retrieving verified facts.",
+                "options": [
+                  {
+                    "id": "opt_ll1a",
+                    "text": "When the LLM generates text that is politically biased",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ll1b",
+                    "text": "When the LLM generates confident-sounding but factually false content",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_ll1c",
+                    "text": "When the LLM fails to understand medical terminology",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ll1d",
+                    "text": "When the LLM produces text that plagiarizes clinical guidelines",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_ai_nlp_notes",
+          "pillar": "technology",
+          "order": 2,
+          "slug": "nlp-clinical-notes-extraction",
+          "title": "NLP for Clinical Notes: Information Extraction & Coding",
+          "summary": "How traditional NLP (before LLMs) works on clinical text \u2014 named entity recognition, relation extraction, ICD coding automation, and the uses in quality measurement and research.",
+          "estimatedMinutes": 16,
+          "isPublished": true,
+          "tags": [
+            "NLP",
+            "named entity recognition",
+            "ICD coding",
+            "clinical text",
+            "information extraction"
+          ],
+          "relatedLessonIds": [
+            "lesson_ai_llm"
+          ],
+          "objectives": [
+            {
+              "id": "obj_nlp1",
+              "text": "Explain named entity recognition (NER) and its application to clinical notes"
+            },
+            {
+              "id": "obj_nlp2",
+              "text": "Describe how NLP is used for automated ICD coding and quality measure abstraction"
+            },
+            {
+              "id": "obj_nlp3",
+              "text": "Compare traditional NLP approaches to LLM-based approaches for clinical text"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The unstructured data problem",
+              "body": "80% of clinical data lives in unstructured text \u2014 physician notes, nursing documentation, radiology reports, discharge summaries. Structured data (diagnoses, labs, medications) captures what the EHR was designed to capture; notes capture the nuance, context, reasoning, and clinical judgment that structured fields cannot.\n\nTraditional NLP approaches extract structured information from this text using statistical models trained to recognize entities (diseases, medications, symptoms) and their relationships (drug X treats condition Y; finding Z is not present). These approaches are faster, more predictable, and more auditable than LLMs for high-stakes extraction tasks."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "NLP tasks in clinical informatics",
+              "items": [
+                {
+                  "icon": "ti-tag",
+                  "title": "Named entity recognition",
+                  "body": "Identifying clinical concepts in text: 'The patient has type 2 diabetes mellitus, hypertension, and chronic kidney disease stage 3.' NER extracts and normalizes these to standard codes."
+                },
+                {
+                  "icon": "ti-file-text",
+                  "title": "ICD-10 coding",
+                  "body": "Automated coding from clinical notes. Reduces coder burden, improves consistency. AI-assisted coding (not fully automated) is increasingly standard in large health systems."
+                },
+                {
+                  "icon": "ti-chart-bar",
+                  "title": "Quality measure abstraction",
+                  "body": "Extracting quality measure data from notes at scale \u2014 identifying smoking status, BMI, depression screening results, advance directive documentation."
+                },
+                {
+                  "icon": "ti-search",
+                  "title": "Adverse event detection",
+                  "body": "Scanning notes for safety signals \u2014 fall mentions, medication errors, hospital-acquired conditions \u2014 at population scale for patient safety surveillance."
+                }
+              ]
+            },
+            {
+              "type": "comparison_table",
+              "heading": "Traditional NLP vs. LLMs for clinical text",
+              "leftLabel": "Traditional NLP (BERT-style, rule-based)",
+              "rightLabel": "LLMs (GPT-4, Claude, etc.)",
+              "rows": [
+                {
+                  "label": "Speed",
+                  "left": "Fast \u2014 can process millions of notes",
+                  "right": "Slower \u2014 expensive at scale"
+                },
+                {
+                  "label": "Consistency",
+                  "left": "Highly consistent \u2014 same input \u2192 same output",
+                  "right": "Can vary across runs (temperature > 0)"
+                },
+                {
+                  "label": "Transparency",
+                  "left": "More auditable for specific extraction tasks",
+                  "right": "Less auditable \u2014 harder to trace why output was generated"
+                },
+                {
+                  "label": "Flexibility",
+                  "left": "Requires retraining for new tasks",
+                  "right": "Flexible \u2014 can handle novel tasks with prompting"
+                },
+                {
+                  "label": "Hallucination",
+                  "left": "Can misclassify but doesn't fabricate",
+                  "right": "Can generate plausible but false extractions"
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_nlp_notes",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_nlp1",
+                "type": "single_choice",
+                "question": "For high-volume, high-stakes clinical text extraction (like automated ICD coding), why might traditional NLP models be preferred over LLMs?",
+                "points": 1,
+                "explanation": "Traditional NLP is faster, more consistent, more auditable, and less prone to hallucination than LLMs for structured extraction tasks \u2014 important qualities for high-stakes, high-volume applications like coding.",
+                "options": [
+                  {
+                    "id": "opt_nlp1a",
+                    "text": "Traditional NLP is always more accurate than LLMs on clinical text",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_nlp1b",
+                    "text": "Traditional NLP is faster, more consistent, and less likely to fabricate content",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_nlp1c",
+                    "text": "LLMs cannot process clinical notes \u2014 they only work on consumer language",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_nlp1d",
+                    "text": "Traditional NLP is cheaper to develop but not to run at scale",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_ai_cds",
+      "courseId": "course_ai_healthcare",
+      "pillar": "technology",
+      "order": 4,
+      "slug": "clinical-decision-support",
+      "title": "Clinical Decision Support",
+      "description": "The landscape of clinical decision support systems (CDSS), the difference between rule-based and ML-based CDS, the 21st Century Cures Act CDS provisions, and evidence on CDSS effectiveness.",
+      "icon": "ti-stethoscope",
+      "targetAudience": [
+        "Clinical informatics",
+        "Physicians",
+        "Quality and patient safety staff"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_ai_cds",
+          "trackId": "track_ai_cds",
+          "pillar": "technology",
+          "order": 1,
+          "slug": "clinical-decision-support-systems",
+          "title": "Clinical Decision Support: From Drug Alerts to ML-Powered Recommendations",
+          "summary": "The spectrum of CDSS from simple drug-drug interaction alerts to ML-powered diagnostic support, what works, what doesn't, and the 21st Century Cures Act's CDS provisions.",
+          "estimatedMinutes": 19,
+          "isPublished": true,
+          "tags": [
+            "CDS",
+            "CDSS",
+            "drug interactions",
+            "diagnostic support",
+            "21st Century Cures"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_cd1",
+              "text": "Describe the spectrum of CDSS from rule-based to ML-powered"
+            },
+            {
+              "id": "obj_cd2",
+              "text": "Identify CDSS types with the strongest evidence for improving outcomes"
+            },
+            {
+              "id": "obj_cd3",
+              "text": "Explain the 21st Century Cures Act's treatment of clinical decision support software"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "CDS has been in EHRs for decades",
+              "body": "Clinical decision support is not new. Drug-drug interaction alerts, allergy warnings, dosing calculators, and order sets are all forms of CDS that have been in EHRs since the 1990s. The problem: most of them are wrong most of the time \u2014 not because the underlying clinical logic is wrong, but because alert thresholds are set too low, generating constant warnings for interactions that are rarely clinically significant.\n\nThe result is the same as with sepsis alerts: clinicians learn to click through. Studies show physicians override 90%+ of drug-drug interaction alerts. The signal is lost in noise."
+            },
+            {
+              "type": "comparison_table",
+              "heading": "The CDS spectrum",
+              "leftLabel": "Rule-based CDS",
+              "rightLabel": "ML-based CDS",
+              "rows": [
+                {
+                  "label": "How it works",
+                  "left": "If-then logic written by humans (e.g., 'if penicillin allergy + amoxicillin order \u2192 alert')",
+                  "right": "Statistical model trained on data finds patterns and makes recommendations"
+                },
+                {
+                  "label": "Transparency",
+                  "left": "Fully transparent \u2014 rule is inspectable",
+                  "right": "Often a 'black box' \u2014 model internals may not be interpretable"
+                },
+                {
+                  "label": "Adaptability",
+                  "left": "Static \u2014 must be manually updated",
+                  "right": "Can be retrained as new data arrives"
+                },
+                {
+                  "label": "Use cases",
+                  "left": "Drug interactions, dosing, contraindications, preventive care reminders",
+                  "right": "Sepsis prediction, deterioration alerts, diagnostic support, care gap identification"
+                },
+                {
+                  "label": "Evidence",
+                  "left": "Strong for some (dosing, preventive care); poor for others (drug interaction alerts)",
+                  "right": "Mixed \u2014 some tools improve outcomes; many fail to demonstrate benefit in practice"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "21st Century Cures Act: CDS as a software device?",
+              "body": "The 21st Century Cures Act created a new regulatory category distinguishing 'clinical decision support software' that is FDA-regulated (Software as a Medical Device, or SaMD) from CDS that is not. Key distinction: CDS that requires clinician review and judgment before action is NOT a medical device (not FDA-regulated). CDS that acts autonomously or overrides clinician judgment may be regulated. This distinction is critical for understanding which AI tools require FDA clearance."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_cds",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_cd1",
+                "type": "single_choice",
+                "question": "Under the 21st Century Cures Act framework, when does clinical decision support software become a regulated medical device?",
+                "points": 1,
+                "explanation": "CDS that requires clinician review and judgment is not regulated as a medical device. CDS that acts autonomously or overrides clinician judgment may be regulated as Software as a Medical Device (SaMD).",
+                "options": [
+                  {
+                    "id": "opt_cd1a",
+                    "text": "When it is used in an inpatient setting rather than outpatient",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cd1b",
+                    "text": "When it acts autonomously or overrides clinician judgment, rather than supporting it",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_cd1c",
+                    "text": "When it is sold commercially, as opposed to built internally by a health system",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cd1d",
+                    "text": "When it uses ML rather than rule-based logic",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_ai_cds_evidence",
+          "pillar": "technology",
+          "order": 2,
+          "slug": "cds-evidence-best-practices",
+          "title": "CDS That Works: Evidence-Based Design Principles",
+          "summary": "What the evidence shows about which CDSS features improve outcomes \u2014 the 'five rights' of CDS, the importance of workflow integration, and why override rates matter.",
+          "estimatedMinutes": 15,
+          "isPublished": true,
+          "tags": [
+            "CDS design",
+            "five rights",
+            "alert design",
+            "workflow",
+            "override rates"
+          ],
+          "relatedLessonIds": [
+            "lesson_ai_cds"
+          ],
+          "objectives": [
+            {
+              "id": "obj_cde1",
+              "text": "Apply the 'five rights' of CDS to evaluate a clinical alert design"
+            },
+            {
+              "id": "obj_cde2",
+              "text": "Explain the importance of workflow integration in CDS effectiveness"
+            },
+            {
+              "id": "obj_cde3",
+              "text": "Describe what alert override rates reveal about CDS quality"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The five rights of clinical decision support",
+              "body": "The Office of the National Coordinator's Health IT Policy Committee developed the 'Five Rights' framework for effective CDS: the right information, to the right person, in the right format, through the right channel, at the right time.\n\nThis framework captures why most clinical alerts fail: they deliver the right information (technically correct clinical logic) to the wrong person (the ordering physician, not the pharmacist who should review it), in the wrong format (disruptive modal alert instead of a background recommendation), through the wrong channel (EHR, when the workflow is verbal), at the wrong time (after the order is entered instead of during ordering)."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "The Five Rights of CDS applied",
+              "items": [
+                {
+                  "icon": "ti-file-text",
+                  "title": "Right information",
+                  "body": "Evidence-based, clinically current. Alert content must be maintained as evidence evolves \u2014 outdated CDS is worse than no CDS."
+                },
+                {
+                  "icon": "ti-user",
+                  "title": "Right person",
+                  "body": "Who can act on this information? A drug interaction alert firing for a nurse who cannot change an order without physician approval wastes attention."
+                },
+                {
+                  "icon": "ti-layout",
+                  "title": "Right format",
+                  "body": "Passive suggestion (infobutton), active notification, or hard stop? Match the level of interruption to the severity and urgency of the issue."
+                },
+                {
+                  "icon": "ti-wifi",
+                  "title": "Right channel",
+                  "body": "In-workflow (at time of ordering), at-a-glance (dashboard), or asynchronous (inbox message). Channel choice determines whether the CDS is seen and actionable."
+                },
+                {
+                  "icon": "ti-clock",
+                  "title": "Right time",
+                  "body": "CDS fired before an order is finalized is 10x more effective than the same alert firing after the order is submitted. Timing determines whether the clinician can still act."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "Override rates: what they tell you",
+              "body": "A CDS alert with a 90% override rate is almost certainly misconfigured. Clinicians override alerts when they are wrong (false positives), irrelevant (doesn't apply to this patient's situation), or trust-eroding (have been overriding alerts for years). Rather than accepting override rates as a proxy for poor physician compliance, treat high override rates as a signal that the alert design needs to be fixed. The goal is alerts with 40\u201370% action rates \u2014 fired less frequently, but on cases that warrant action."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_cds_evidence",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_cde1",
+                "type": "single_choice",
+                "question": "According to the 'Five Rights' of CDS, which factor is most important for maximizing alert action rates?",
+                "points": 1,
+                "explanation": "Timing is among the most critical \u2014 CDS delivered at the point of ordering (before the order is finalized) is far more likely to change behavior than the same alert delivered after the order is placed, when changing it requires additional steps.",
+                "options": [
+                  {
+                    "id": "opt_cde1a",
+                    "text": "The technical accuracy of the clinical evidence underlying the alert",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cde1b",
+                    "text": "Delivering the alert at the right time \u2014 before the order is finalized rather than after",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_cde1c",
+                    "text": "The visual design of the alert modal window",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cde1d",
+                    "text": "Whether the alert is approved by the medical informatics committee",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_ai_fda",
+      "courseId": "course_ai_healthcare",
+      "pillar": "technology",
+      "order": 5,
+      "slug": "fda-regulation-ai",
+      "title": "FDA Regulation of AI/ML in Healthcare",
+      "description": "How the FDA regulates AI/ML-based medical devices, the SaMD framework, predicate devices, and the challenge of regulating continuously learning algorithms.",
+      "icon": "ti-shield",
+      "targetAudience": [
+        "Health IT",
+        "Compliance",
+        "Medical device and digital health staff"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_ai_fda",
+          "trackId": "track_ai_fda",
+          "pillar": "technology",
+          "order": 1,
+          "slug": "fda-ai-regulation",
+          "title": "FDA & AI: SaMD, 510(k), and the Regulation of Learning Algorithms",
+          "summary": "How the FDA classifies and reviews AI/ML-based software as medical devices, the 510(k) pathway, De Novo classification, and the evolving framework for AI that continuously learns.",
+          "estimatedMinutes": 19,
+          "isPublished": true,
+          "tags": [
+            "FDA",
+            "SaMD",
+            "510k",
+            "medical device",
+            "AI regulation"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_fd1",
+              "text": "Explain what Software as a Medical Device (SaMD) is and when FDA regulation applies"
+            },
+            {
+              "id": "obj_fd2",
+              "text": "Describe the 510(k) and De Novo pathways for AI/ML medical devices"
+            },
+            {
+              "id": "obj_fd3",
+              "text": "Explain the unique regulatory challenge posed by continuously learning AI algorithms"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "When is AI a medical device?",
+              "body": "The FDA regulates software that meets the definition of a medical device: intended for use in diagnosis, cure, mitigation, treatment, or prevention of disease, or to affect the structure or function of the body.\n\nSoftware that performs these functions is called Software as a Medical Device (SaMD). An AI algorithm that analyzes a chest X-ray and outputs 'no pneumonia detected' or 'possible malignancy \u2014 clinical review recommended' is a medical device. The software that schedules appointments or encrypts data is not.\n\nAs of 2024, the FDA has cleared or approved over 700 AI/ML-based medical devices \u2014 the vast majority in radiology, cardiology, and ophthalmology."
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "700+",
+                  "label": "AI/ML-based medical devices cleared or approved by FDA (through 2024)",
+                  "source": "FDA"
+                },
+                {
+                  "value": "75%",
+                  "label": "Of cleared AI devices are in radiology",
+                  "source": "FDA"
+                },
+                {
+                  "value": "510(k)",
+                  "label": "Most common review pathway \u2014 requires showing substantial equivalence to a predicate device",
+                  "source": "FDA"
+                },
+                {
+                  "value": "2019",
+                  "label": "Year FDA released its action plan for AI/ML-based SaMD",
+                  "source": "FDA"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "The continuously learning algorithm problem",
+              "body": "Traditional medical devices are static \u2014 they don't change after approval. AI algorithms can be designed to continuously learn from new data, which means the algorithm you approve today may be different from the algorithm deployed a year later.\n\nFDA's current framework (Predetermined Change Control Plan) requires manufacturers to pre-specify what kinds of changes the algorithm may make to itself, and what monitoring will ensure it remains safe and effective. This is an evolving regulatory area \u2014 the rules are being written as technology advances."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "FDA review pathways for AI devices",
+              "items": [
+                {
+                  "icon": "ti-file-check",
+                  "title": "510(k) Clearance",
+                  "body": "Most AI devices use this path. Manufacturer shows 'substantial equivalence' to a legally marketed predicate device. Risk-based \u2014 Class II devices."
+                },
+                {
+                  "icon": "ti-star-half",
+                  "title": "De Novo",
+                  "body": "For novel low-to-moderate risk devices with no predicate. Creates new classification and can become a predicate for future 510(k)s."
+                },
+                {
+                  "icon": "ti-certificate",
+                  "title": "PMA (Premarket Approval)",
+                  "body": "Highest scrutiny. Required for Class III (highest risk) devices. Rare for AI \u2014 most AI tools are Class II."
+                },
+                {
+                  "icon": "ti-refresh",
+                  "title": "PCCP",
+                  "body": "Predetermined Change Control Plan \u2014 manufacturer pre-specifies algorithm change types; FDA approves plan upfront rather than reviewing each change."
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_fda",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_fd1",
+                "type": "single_choice",
+                "question": "Why do continuously learning AI algorithms pose a unique regulatory challenge for the FDA?",
+                "points": 1,
+                "explanation": "The FDA typically approves a fixed device. If an AI algorithm changes itself through ongoing learning, the approved version and the deployed version may diverge \u2014 requiring new frameworks like the PCCP to manage algorithm evolution safely.",
+                "options": [
+                  {
+                    "id": "opt_fd1a",
+                    "text": "They are too complex for FDA reviewers who lack ML expertise",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_fd1b",
+                    "text": "The algorithm may change after approval, making the approved version different from what's deployed",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_fd1c",
+                    "text": "They require more clinical trials than static algorithms",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_fd1d",
+                    "text": "Continuously learning algorithms cannot be patented, creating IP challenges",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_ai_fda_cases",
+          "pillar": "technology",
+          "order": 2,
+          "slug": "fda-cleared-ai-case-studies",
+          "title": "FDA-Cleared AI Devices: Case Studies in Radiology & Cardiology",
+          "summary": "Real-world case studies of FDA-cleared AI medical devices \u2014 chest X-ray triage tools, stroke detection, diabetic retinopathy screening \u2014 and what their market adoption reveals about real-world performance vs. regulatory claims.",
+          "estimatedMinutes": 16,
+          "isPublished": true,
+          "tags": [
+            "FDA cleared",
+            "AI devices",
+            "chest X-ray",
+            "stroke",
+            "retinopathy",
+            "Viz.ai"
+          ],
+          "relatedLessonIds": [
+            "lesson_ai_fda"
+          ],
+          "objectives": [
+            {
+              "id": "obj_fdc1",
+              "text": "Describe three FDA-cleared AI medical devices and their intended use"
+            },
+            {
+              "id": "obj_fdc2",
+              "text": "Explain the gap between FDA clearance and real-world evidence of clinical benefit"
+            },
+            {
+              "id": "obj_fdc3",
+              "text": "Identify questions health systems should ask when evaluating FDA-cleared AI tools"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "concepts_grid",
+              "heading": "Landmark FDA-cleared AI devices",
+              "items": [
+                {
+                  "icon": "ti-brain",
+                  "title": "Viz.ai \u2014 Stroke AI",
+                  "body": "AI triage for CT scans showing large vessel occlusion (LVO) stroke. Alerts stroke team simultaneously with CT read. FDA-cleared 2018. RCT evidence shows 37-minute faster time-to-treatment."
+                },
+                {
+                  "icon": "ti-eye",
+                  "title": "IDx-DR \u2014 Retinopathy",
+                  "body": "First FDA-authorized AI device requiring no specialist oversight (autonomous). Images diabetic patient's retina; returns 'more than mild diabetic retinopathy detected' or 'negative.' Primary care clinicians can deploy without ophthalmologist."
+                },
+                {
+                  "icon": "ti-lungs",
+                  "title": "Aidoc \u2014 Chest CT triage",
+                  "body": "AI flags critical findings (PE, pneumothorax, aortic dissection) on chest CT for radiologist prioritization. FDA-cleared. Does not replace radiologist read \u2014 helps with worklist prioritization."
+                },
+                {
+                  "icon": "ti-heart",
+                  "title": "AliveCor \u2014 KardiaMobile",
+                  "body": "Consumer ECG device with FDA-cleared AI for atrial fibrillation detection. First AI-powered cardiac rhythm detection cleared for consumer use. 98% sensitivity for AFib."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "FDA clearance \u2260 evidence of clinical benefit",
+              "body": "Most AI devices reach FDA clearance through the 510(k) pathway, which requires demonstrating substantial equivalence to a predicate device \u2014 not clinical benefit. A device can be FDA-cleared without a single randomized controlled trial showing it improves patient outcomes. Health systems evaluating AI tools should ask: beyond FDA clearance, is there real-world evidence of clinical benefit in deployed settings similar to ours?"
+            },
+            {
+              "type": "text",
+              "heading": "Post-market surveillance: the evidence gap",
+              "body": "After FDA clearance, AI device performance is self-monitored by manufacturers with limited external oversight. CMS and FDA are developing Total Product Lifecycle (TPLC) surveillance frameworks \u2014 requiring manufacturers to monitor real-world performance continuously, report performance changes, and update their Predetermined Change Control Plans.\n\nIn the meantime, health systems are largely on their own in monitoring whether cleared devices are performing as expected in their patient populations. Many have found significant performance degradation when deploying AI tools trained on different populations \u2014 particularly for underrepresented racial and ethnic groups."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_fda_cases",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_fdc1",
+                "type": "single_choice",
+                "question": "What is significant about IDx-DR's FDA authorization compared to most other AI medical devices?",
+                "points": 1,
+                "explanation": "IDx-DR was the first FDA-authorized AI device that can be used autonomously in primary care without requiring a specialist (ophthalmologist) to interpret results \u2014 a new regulatory category.",
+                "options": [
+                  {
+                    "id": "opt_fdc1a",
+                    "text": "It was the first AI device to receive PMA approval rather than 510(k) clearance",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_fdc1b",
+                    "text": "It was the first FDA-authorized AI device authorized for autonomous use without specialist oversight",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_fdc1c",
+                    "text": "It was the first AI device covered by Medicare as a standalone service",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_fdc1d",
+                    "text": "It was trained on data from 50 countries, making it the most globally validated AI device",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_ai_bias",
+      "courseId": "course_ai_healthcare",
+      "pillar": "equity",
+      "order": 6,
+      "slug": "ai-bias-equity",
+      "title": "Bias, Fairness & Equity in Clinical AI",
+      "description": "How AI systems encode and amplify health disparities, frameworks for bias evaluation, and what health systems can do to deploy AI equitably.",
+      "icon": "ti-scale",
+      "targetAudience": [
+        "Quality and equity teams",
+        "Informatics",
+        "Clinical leadership"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_ai_fairness",
+          "trackId": "track_ai_bias",
+          "pillar": "equity",
+          "order": 1,
+          "slug": "ai-fairness-evaluation",
+          "title": "AI Fairness: Evaluation Frameworks & Equity by Design",
+          "summary": "How to evaluate AI tools for bias before and after deployment, what 'fairness' means mathematically (and why different definitions conflict), and practical equity-by-design principles.",
+          "estimatedMinutes": 20,
+          "isPublished": true,
+          "tags": [
+            "AI fairness",
+            "bias evaluation",
+            "equity by design",
+            "subgroup analysis"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_af1",
+              "text": "Describe at least three mathematical definitions of algorithmic fairness"
+            },
+            {
+              "id": "obj_af2",
+              "text": "Explain why different fairness definitions can be mathematically incompatible"
+            },
+            {
+              "id": "obj_af3",
+              "text": "Identify practical steps health systems can take to evaluate and monitor AI equity"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Fairness is not one thing",
+              "body": "When people say an AI system should be 'fair,' they often assume there is a clear definition. There is not. Researchers have identified more than 20 mathematical definitions of algorithmic fairness \u2014 and several are provably incompatible. You cannot simultaneously satisfy all of them.\n\nThis is not a reason for paralysis. It is a reason for being explicit about which definition of fairness you are optimizing for, and why \u2014 because the choice has consequences for different patient groups."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Three key fairness concepts (and their conflicts)",
+              "items": [
+                {
+                  "icon": "ti-equal",
+                  "title": "Demographic parity",
+                  "body": "The model should produce the same positive prediction rate across groups. Problem: if true prevalence differs by group, demographic parity requires the model to ignore real differences."
+                },
+                {
+                  "icon": "ti-chart-bar",
+                  "title": "Equal opportunity",
+                  "body": "The model should have the same true positive rate (sensitivity) across groups \u2014 same recall for those with the condition. Prioritizes not missing cases in any group."
+                },
+                {
+                  "icon": "ti-scale",
+                  "title": "Calibration",
+                  "body": "When the model says 30% risk, 30% of patients in each group should actually have the outcome. Important for clinical use \u2014 calibration failure by group means predictions mean different things for different patients."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "Practical equity evaluation for health systems",
+              "body": "When evaluating an AI tool for procurement or deployment:\n1. Ask the vendor for subgroup performance data \u2014 sensitivity, specificity, and calibration stratified by race, ethnicity, age, sex, and insurance status\n2. Validate in your own patient population before deployment\n3. Monitor performance continuously after deployment \u2014 AI models degrade over time and may degrade unevenly across groups\n4. Create a process for clinicians to flag concerning model behavior"
+            },
+            {
+              "type": "audio_slot",
+              "label": "Health system equity and AI: building governance",
+              "hint": "Interview a CMIO, CDO, or equity officer at a health system about how they evaluate AI tools for equity before procurement, what governance processes they use, and what they wish they had done differently with early deployments. Recommended: 8\u201312 minutes."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_ai_fairness",
+            "passingScore": 80,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_af1",
+                "type": "single_choice",
+                "question": "Why should health systems ask for 'subgroup performance data' when evaluating an AI tool from a vendor?",
+                "points": 1,
+                "explanation": "Aggregate performance metrics can hide poor performance in specific demographic subgroups. A model may work well overall but have significantly lower sensitivity for Black patients, older patients, or patients with different insurance \u2014 which would perpetuate disparities at scale.",
+                "options": [
+                  {
+                    "id": "opt_af1a",
+                    "text": "To verify that the vendor collected data legally under HIPAA",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_af1b",
+                    "text": "Because aggregate metrics can hide poor performance in specific patient subgroups",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_af1c",
+                    "text": "To ensure the model was trained on data from their specific region",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_af1d",
+                    "text": "To determine whether the model requires FDA clearance",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_ai_equity_framework",
+          "pillar": "equity",
+          "order": 2,
+          "slug": "equity-framework-ai-procurement",
+          "title": "An Equity Framework for AI Procurement",
+          "summary": "A practical toolkit for health systems: the questions to ask vendors, the internal assessments to run, and the governance processes that create accountability for AI equity.",
+          "estimatedMinutes": 15,
+          "isPublished": true,
+          "tags": [
+            "AI procurement",
+            "equity framework",
+            "vendor assessment",
+            "governance",
+            "health equity"
+          ],
+          "relatedLessonIds": [
+            "lesson_ai_fairness"
+          ],
+          "objectives": [
+            {
+              "id": "obj_efp1",
+              "text": "Apply an equity assessment framework to a hypothetical AI vendor pitch"
+            },
+            {
+              "id": "obj_efp2",
+              "text": "Identify what documentation health systems should require from AI vendors"
+            },
+            {
+              "id": "obj_efp3",
+              "text": "Describe the internal governance processes that embed equity into AI decision-making"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The equity assessment gap",
+              "body": "A 2023 survey of health system AI governance programs found that fewer than 25% had a formal process for evaluating AI tools for equity before procurement. Most relied on vendor representations and FDA clearance as proxies for trustworthiness \u2014 neither of which addresses equity performance in the buying organization's specific patient population.\n\nBuilding an equity assessment process is not optional for health systems that serve diverse or vulnerable populations under value-based contracts. Deploying a biased AI tool at scale can cause more harm than the problem it was designed to solve."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "The equity procurement checklist",
+              "items": [
+                {
+                  "icon": "ti-database",
+                  "title": "Training data",
+                  "body": "Ask: Where was the model trained? What was the demographic composition of the training population? Was race/ethnicity/SES represented proportionally?"
+                },
+                {
+                  "icon": "ti-chart-bar",
+                  "title": "Subgroup performance",
+                  "body": "Require performance data stratified by race, ethnicity, sex, age, and insurance status. Reject any vendor who cannot provide this. 'We don't have it' is an answer \u2014 and a red flag."
+                },
+                {
+                  "icon": "ti-test-pipe",
+                  "title": "Local validation plan",
+                  "body": "Before go-live, commit to validating performance in your patient population. Build this into the contract \u2014 with a right to terminate if local validation fails."
+                },
+                {
+                  "icon": "ti-eye",
+                  "title": "Ongoing monitoring",
+                  "body": "Require contractual obligations for performance monitoring, bias reporting, and notification if the model is updated. Build internal monitoring into the deployment plan."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "Build equity into the contract",
+              "body": "The best time to establish equity expectations is before signing the vendor contract. Include provisions requiring: (1) pre-deployment equity validation; (2) quarterly performance reports stratified by demographics; (3) notification of model updates; (4) right to audit model performance; (5) termination rights if equity performance degrades below agreed thresholds. Vendors who refuse these provisions are revealing something important."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_equity_framework",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_efp1",
+                "type": "single_choice",
+                "question": "If an AI vendor cannot provide performance data stratified by race and ethnicity, how should a health system respond?",
+                "points": 1,
+                "explanation": "The inability to provide subgroup performance data is a significant red flag \u2014 it means the vendor has not assessed whether their tool performs equitably. Health systems should treat this as a disqualifying factor, not a gap to be filled by trust.",
+                "options": [
+                  {
+                    "id": "opt_efp1a",
+                    "text": "Accept the tool and monitor for bias after deployment",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_efp1b",
+                    "text": "Treat the inability to provide subgroup data as a significant red flag and consider disqualification",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_efp1c",
+                    "text": "Ask the vendor to generate this data within 6 months of deployment",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_efp1d",
+                    "text": "Accept FDA clearance as a substitute for subgroup performance data",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_ai_implementation",
+      "courseId": "course_ai_healthcare",
+      "pillar": "operations",
+      "order": 7,
+      "slug": "ai-implementation",
+      "title": "Responsible AI Implementation",
+      "description": "A practical framework for evaluating, procuring, deploying, and governing AI tools in health systems \u2014 from vendor assessment to post-deployment monitoring.",
+      "icon": "ti-settings",
+      "targetAudience": [
+        "Clinical informatics",
+        "Health IT leadership",
+        "CMIOs and CDOs"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_ai_govern",
+          "trackId": "track_ai_implementation",
+          "pillar": "operations",
+          "order": 1,
+          "slug": "ai-governance-implementation",
+          "title": "AI Governance: A Framework for Responsible Deployment",
+          "summary": "A practical framework for health system AI governance \u2014 from pre-procurement evaluation through deployment, monitoring, and when to turn a model off.",
+          "estimatedMinutes": 18,
+          "isPublished": true,
+          "tags": [
+            "AI governance",
+            "implementation",
+            "procurement",
+            "monitoring",
+            "responsible AI"
+          ],
+          "relatedLessonIds": [
+            "lesson_ai_fairness"
+          ],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_ag1",
+              "text": "Describe a pre-procurement AI evaluation framework"
+            },
+            {
+              "id": "obj_ag2",
+              "text": "Identify the key elements of an AI monitoring program"
+            },
+            {
+              "id": "obj_ag3",
+              "text": "Explain the criteria for deciding to turn off or retrain a deployed model"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Most health systems are buying faster than they can govern",
+              "body": "The AI market for healthcare is growing faster than health systems' capacity to evaluate what they buy. Vendors make dramatic claims; procurement teams rarely include clinical informaticists or equity experts; and post-deployment monitoring is the exception rather than the rule.\n\nThe consequence: health systems are deploying tools whose real-world performance is unknown, whose biases are uncharacterized, and whose failure modes are undocumented. This is a patient safety issue, not just a quality concern."
+            },
+            {
+              "type": "timeline",
+              "heading": "The AI governance lifecycle",
+              "items": [
+                {
+                  "year": "Step 1",
+                  "title": "Problem definition",
+                  "body": "What clinical problem are you solving? What is the current standard of care? What would success look like \u2014 and how would you measure it?",
+                  "pillar": "operations"
+                },
+                {
+                  "year": "Step 2",
+                  "title": "Vendor evaluation",
+                  "body": "Request evidence of clinical validation in similar populations. Demand subgroup performance data. Ask about FDA status. Review published literature (not just vendor white papers).",
+                  "pillar": "operations"
+                },
+                {
+                  "year": "Step 3",
+                  "title": "Local validation",
+                  "body": "Before go-live, validate in your patient population. Compare model predictions to actual outcomes. Check performance by demographic subgroup.",
+                  "pillar": "operations"
+                },
+                {
+                  "year": "Step 4",
+                  "title": "Deployment design",
+                  "body": "Who sees the alert? When? What action do they take? Design the workflow around the model, not the model around the workflow. Plan for alert fatigue from day one.",
+                  "pillar": "operations"
+                },
+                {
+                  "year": "Step 5",
+                  "title": "Monitoring",
+                  "body": "Track model performance continuously \u2014 predictive accuracy, alert override rates, clinical outcomes. Set thresholds for when to escalate or retrain.",
+                  "pillar": "operations"
+                },
+                {
+                  "year": "Step 6",
+                  "title": "Retirement criteria",
+                  "body": "Pre-specify conditions under which you will retrain, pause, or retire the model \u2014 model drift, equity failures, patient harm signals, better alternatives.",
+                  "pillar": "operations"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "The AHA/HIMSS AI governance principles",
+              "body": "The American Hospital Association and HIMSS have published AI governance principles for health systems covering: transparency (clinicians should know when AI is involved), explainability (clinicians should understand why a recommendation was made), equity (performance should be monitored by demographic subgroup), accountability (clear ownership of AI tools and their consequences), and safety (mechanisms to detect and respond to model failures)."
+            },
+            {
+              "type": "audio_slot",
+              "label": "CMIO on building an AI governance committee",
+              "hint": "Interview a CMIO or Chief Digital Officer about how they built their health system's AI governance process \u2014 who is on the committee, what they evaluate, what they've rejected and why, and what they wish they had done earlier. Recommended: 10\u201312 minutes."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_ai_govern",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_ag1",
+                "type": "single_choice",
+                "question": "What does 'local validation' mean in the AI implementation framework?",
+                "points": 1,
+                "explanation": "Local validation means testing the model's performance in your own patient population before deployment \u2014 rather than relying solely on the vendor's validation studies, which may have been conducted in different populations.",
+                "options": [
+                  {
+                    "id": "opt_ag1a",
+                    "text": "Getting approval from your local institutional review board (IRB)",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ag1b",
+                    "text": "Testing model performance in your own patient population before go-live",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_ag1c",
+                    "text": "Ensuring the model complies with your state's privacy laws",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ag1d",
+                    "text": "Reviewing the model's source code with your internal engineering team",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_ai_change_mgmt",
+          "pillar": "operations",
+          "order": 2,
+          "slug": "ai-clinical-change-management",
+          "title": "Clinical Change Management for AI: Getting Clinicians to Use the Tool",
+          "summary": "Why AI tools fail in deployment due to clinician resistance, workflow friction, and trust deficits \u2014 and the change management strategies that drive adoption.",
+          "estimatedMinutes": 15,
+          "isPublished": true,
+          "tags": [
+            "change management",
+            "adoption",
+            "clinician trust",
+            "workflow",
+            "implementation"
+          ],
+          "relatedLessonIds": [
+            "lesson_ai_govern"
+          ],
+          "objectives": [
+            {
+              "id": "obj_cm1",
+              "text": "Identify the primary reasons clinicians fail to adopt AI tools"
+            },
+            {
+              "id": "obj_cm2",
+              "text": "Describe the role of physician champions in AI adoption"
+            },
+            {
+              "id": "obj_cm3",
+              "text": "Apply change management principles to an AI implementation scenario"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The last mile problem",
+              "body": "Many health systems have procured, validated, and deployed AI tools that then sit largely unused. Clinicians click through alerts, ignore dashboards, or work around the tool entirely. This is the last mile problem: the technical challenge of building the AI is solved, but the human challenge of integrating it into clinical practice is not.\n\nStudies of health IT adoption consistently find that workflow fit, trust, and perceived usefulness are the primary determinants of adoption \u2014 not technical performance. An AI tool that is 15% more accurate than a clinician but requires 30 additional seconds per patient will not be used."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Change management strategies that work",
+              "items": [
+                {
+                  "icon": "ti-user-star",
+                  "title": "Physician champions",
+                  "body": "Respected clinical leaders who use the tool and can explain it to peers. Champions provide social proof, answer clinical questions, and create pull instead of push for adoption."
+                },
+                {
+                  "icon": "ti-tool",
+                  "title": "Workflow co-design",
+                  "body": "Involve frontline clinicians in designing how the AI is integrated \u2014 where it appears, when it fires, what action it requests. Co-design creates ownership and catches implementation problems before go-live."
+                },
+                {
+                  "icon": "ti-school",
+                  "title": "Transparent communication",
+                  "body": "Explain what the model does, what it doesn't do, and what its limitations are. Clinicians who understand a tool's boundaries use it more appropriately than those who see it as a black box."
+                },
+                {
+                  "icon": "ti-feedback",
+                  "title": "Feedback loops",
+                  "body": "Show clinicians their own interaction with the tool \u2014 alert action rates, override patterns \u2014 and compare to peers. Behavioral feedback drives improvement without mandates."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "The trust spectrum",
+              "body": "Clinician attitudes toward AI tools range from automation bias (over-trusting AI recommendations without applying clinical judgment) to automation skepticism (ignoring all AI output regardless of accuracy). Neither extreme serves patients well. Effective change management builds calibrated trust \u2014 clinicians who understand when to rely on the tool and when to override it, and who can do so confidently."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_change_mgmt",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_cm1",
+                "type": "single_choice",
+                "question": "What is 'automation bias' in the context of clinical AI adoption?",
+                "points": 1,
+                "explanation": "Automation bias is the tendency to over-trust AI recommendations and apply them without appropriate clinical judgment \u2014 the opposite problem from ignoring AI entirely.",
+                "options": [
+                  {
+                    "id": "opt_cm1a",
+                    "text": "When clinicians systematically ignore AI alerts due to alert fatigue",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cm1b",
+                    "text": "Over-trusting AI recommendations and applying them without appropriate clinical judgment",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_cm1c",
+                    "text": "When AI tools are biased against certain patient populations",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cm1d",
+                    "text": "When automated systems replace manual clinical workflows without adequate testing",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_ai_ethics",
+          "pillar": "operations",
+          "order": 3,
+          "slug": "ai-ethics-healthcare",
+          "title": "AI Ethics in Healthcare: Principles, Dilemmas & Accountability",
+          "summary": "The ethical principles that should guide healthcare AI \u2014 beneficence, non-maleficence, autonomy, justice \u2014 and how they play out in real clinical AI dilemmas.",
+          "estimatedMinutes": 17,
+          "isPublished": true,
+          "tags": [
+            "AI ethics",
+            "bioethics",
+            "autonomy",
+            "justice",
+            "accountability"
+          ],
+          "relatedLessonIds": [
+            "lesson_ai_govern"
+          ],
+          "objectives": [
+            {
+              "id": "obj_ae1b",
+              "text": "Apply the four principles of bioethics to clinical AI scenarios"
+            },
+            {
+              "id": "obj_ae2b",
+              "text": "Explain the tension between transparency and performance in clinical AI"
+            },
+            {
+              "id": "obj_ae3b",
+              "text": "Describe what AI accountability means in practice for health systems"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Bioethics meets machine learning",
+              "body": "Clinical AI does not exist outside the ethical frameworks that govern all of medicine. The four principles of biomedical ethics \u2014 beneficence (do good), non-maleficence (do no harm), autonomy (respect patient choice), and justice (fair distribution of benefits and burdens) \u2014 apply as directly to an AI algorithm as they do to a surgical decision.\n\nApplying these principles to AI reveals specific ethical challenges that don't arise in traditional clinical practice: Who is responsible when an AI recommendation causes harm? Does a patient have the right to know AI was involved in their care? Can a clinician ethically refuse to override an AI recommendation they disagree with?"
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Bioethics applied to clinical AI",
+              "items": [
+                {
+                  "icon": "ti-heart",
+                  "title": "Beneficence",
+                  "body": "AI must actually benefit patients \u2014 not just improve metrics. Deploying an AI that increases documentation speed but has unproven clinical benefit may not meet this standard."
+                },
+                {
+                  "icon": "ti-shield",
+                  "title": "Non-maleficence",
+                  "body": "AI systems can cause harm through false positives (unnecessary treatment), false negatives (missed diagnosis), algorithmic bias, and automation bias. Active harm monitoring is required."
+                },
+                {
+                  "icon": "ti-user-check",
+                  "title": "Autonomy",
+                  "body": "Do patients have the right to know AI was involved in their care? Many argue yes \u2014 informed consent extends to AI tools, especially those making consequential recommendations."
+                },
+                {
+                  "icon": "ti-scale",
+                  "title": "Justice",
+                  "body": "AI must not worsen existing disparities. Systems that deploy AI tools with known bias in underserved populations are violating the justice principle \u2014 regardless of aggregate performance."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "The explainability-performance tradeoff",
+              "body": "Deep learning models often outperform simpler, more explainable models (like logistic regression) \u2014 but their decisions cannot be explained in clinically meaningful terms. A sepsis model that says 'this patient has 73% risk' without explaining why creates an ethical challenge: clinicians are being asked to act on a recommendation they cannot evaluate. The field is developing explainability methods (SHAP, LIME, attention maps), but none yet provide the kind of clinical reasoning a physician can interrogate."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_ai_ethics",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_ae1b",
+                "type": "single_choice",
+                "question": "Under the principle of autonomy, what is the emerging consensus about patient rights regarding clinical AI?",
+                "points": 1,
+                "explanation": "The principle of autonomy \u2014 respecting patient decision-making \u2014 is increasingly interpreted to include the right to know when AI tools are involved in care decisions, as part of informed consent.",
+                "options": [
+                  {
+                    "id": "opt_ae1ba",
+                    "text": "Patients have no right to know about AI use if the clinician reviews the recommendation",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ae1bb",
+                    "text": "Patients should have the right to know when AI is involved in their care as part of informed consent",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_ae1bc",
+                    "text": "Autonomy applies only to treatment decisions, not diagnostic tools",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ae1bd",
+                    "text": "Patient autonomy is satisfied by opt-out provisions in hospital privacy notices",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
