@@ -11,10 +11,10 @@ interface LessonViewProps {
   onMarkComplete: (lessonId: string) => void;
   onQuizPass: (lessonId: string, score: number) => void;
   onAudioUpload?: (lessonId: string, file: File, slotKey: string) => Promise<string>;
+  isCompleted?: boolean;
 }
 
-export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload }: LessonViewProps) {
-  const isCompleted = lesson.progress?.status === "completed";
+export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload, isCompleted = false }: LessonViewProps) {
 
   return (
     <article className="max-w-2xl mx-auto space-y-8 pb-12 font-sans">

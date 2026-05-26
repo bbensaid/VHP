@@ -37,8 +37,15 @@ if (!SUPABASE_URL || !SERVICE_KEY) {
 const db = createClient(SUPABASE_URL, SERVICE_KEY);
 
 // ── Load seed data ────────────────────────────────────────────────────────────
-const seedPath = join(__dir, "../content/course_seed.json");
-const courseData = JSON.parse(readFileSync(seedPath, "utf8"));
+// course_seed.json  → single course object (original onboarding course)
+// courses_tier1.json → array of 4 Tier 1 courses
+const seedPath      = join(__dir, "../content/course_seed.json");
+const tier1Path     = join(__dir, "../content/courses_tier1.json");
+const courseData    = JSON.parse(readFileSync(seedPath, "utf8"));
+const tier1Courses  = JSON.parse(readFileSync(tier1Path, "utf8"));
+
+// All courses to seed: original first, then the 4 tier-1 courses
+const allCourses = [courseData, ...tier1Courses];
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function check(label, error) {
@@ -48,9 +55,9 @@ function check(label, error) {
   }
 }
 
-// ── Seed ─────────────────────────────────────────────────────────────────────
-async function seed() {
-  console.log(`Seeding: ${courseData.title} (${courseData.slug})`);
+// ── Seed one course ───────────────────────────────────────────────────────────
+async function seed(courseData) {
+  console.log(`\nSeeding: ${courseData.title} (${courseData.slug})`);
 
   // 1. Upsert course
   const { data: courseRow, error: courseErr } = await db
@@ -183,7 +190,15 @@ async function seed() {
     console.log(`✓ track: ${track.slug}`);
   }
 
-  console.log(`\n✅ Seeded "${courseData.title}" successfully.`);
+  console.log(`✅ Seeded "${courseData.title}" successfully.`);
 }
 
-seed().catch(err => { console.error(err); process.exit(1); });
+async function main() {
+  console.log(`Seeding ${allCourses.length} courses…`);
+  for (const course of allCourses) {
+    await seed(course);
+  }
+  console.log(`\n🎉 All ${allCourses.length} courses seeded.`);
+}
+
+main().catch(err => { console.error(err); process.exit(1); });

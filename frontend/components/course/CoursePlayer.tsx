@@ -27,12 +27,17 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
+  // Track completed lessons locally so progress updates instantly on click.
+  const [completedIds, setCompletedIds] = useState<Set<string>>(
+    () => new Set(allLessons.filter((l) => l.progress?.status === "completed").map((l) => l.id))
+  );
+
   const currentIndex = allLessons.findIndex((l) => l.id === currentLesson?.id);
   const hasPrev = currentIndex > 0;
   const hasNext = currentIndex < allLessons.length - 1;
 
   const totalLessons = allLessons.length;
-  const completedLessons = allLessons.filter((l) => l.progress?.status === "completed").length;
+  const completedLessons = completedIds.size;
   const progressPercent = totalLessons > 0 ? (completedLessons / totalLessons) * 100 : 0;
 
   const scrollToTop = useCallback(() => {
@@ -55,6 +60,7 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
 
   const handleMarkComplete = useCallback(
     (lessonId: string) => {
+      setCompletedIds((prev) => new Set(prev).add(lessonId));
       onProgressUpdate(lessonId, "completed");
       if (hasNext) {
         setCurrentLesson(allLessons[currentIndex + 1]);
@@ -81,7 +87,7 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
   }
 
   return (
-    <div className="flex w-full h-full overflow-hidden relative border-t border-slate-200">
+    <div className="flex w-full h-full overflow-hidden border-t border-slate-200">
       {/* Mobile sidebar overlay */}
       {mobileSidebarOpen && (
         <div
@@ -105,6 +111,7 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
           progressPercent={progressPercent}
           completedLessons={completedLessons}
           totalLessons={totalLessons}
+          completedIds={completedIds}
         />
       </div>
 
@@ -132,6 +139,7 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
             onMarkComplete={handleMarkComplete}
             onQuizPass={handleQuizPass}
             onAudioUpload={onAudioUpload}
+            isCompleted={completedIds.has(currentLesson.id)}
           />
         </div>
 

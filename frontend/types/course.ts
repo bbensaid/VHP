@@ -5,6 +5,7 @@
 // ── Enums ────────────────────────────────────────────────────
 
 export type Pillar =
+  | "general"
   | "policy"
   | "technology"
   | "economics"
