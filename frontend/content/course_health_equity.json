@@ -1,0 +1,2039 @@
+{
+  "id": "course_health_equity",
+  "slug": "health-equity-sdoh",
+  "title": "Health Equity & SDOH: From Awareness to Action",
+  "subtitle": "Disparity data, SDOH screening, algorithmic bias, CMS equity requirements, and community-level change",
+  "description": "A rigorous course on health equity and social determinants of health \u2014 moving beyond awareness into measurement, accountability, and action. Covers disparity data, SDOH screening tools, algorithmic bias in clinical AI, CMS equity mandates, structural racism in the health system, and community health worker models. Relevant for every role in health care and policy.",
+  "targetAudience": [
+    "Clinical staff and care teams",
+    "Quality and population health staff",
+    "Policy analysts and advocates",
+    "Community health workers and navigators",
+    "Health system leadership",
+    "Managed care and value-based care staff"
+  ],
+  "prerequisites": [],
+  "estimatedHours": 10,
+  "isPublished": true,
+  "version": "1.0.0",
+  "createdAt": "2026-05-25T00:00:00Z",
+  "updatedAt": "2026-05-25T00:00:00Z",
+  "tracks": [
+    {
+      "id": "track_eq_foundations",
+      "courseId": "course_health_equity",
+      "pillar": "equity",
+      "order": 1,
+      "slug": "equity-foundations",
+      "title": "Foundations of Health Equity",
+      "description": "Definitions, the distinction between equality and equity, the evidence on disparities, and why the US performs worse on equity than peer nations.",
+      "icon": "ti-scale",
+      "targetAudience": [
+        "All staff"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_eq_definitions",
+          "trackId": "track_eq_foundations",
+          "pillar": "equity",
+          "order": 1,
+          "slug": "health-equity-definitions",
+          "title": "Health Equity: Definitions, Evidence & the US Context",
+          "summary": "What health equity means, the difference between disparity and inequity, the scale of US health disparities, and the evidence that they are not inevitable.",
+          "estimatedMinutes": 20,
+          "isPublished": true,
+          "tags": [
+            "definitions",
+            "disparities",
+            "equity vs equality",
+            "social determinants"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_eq1",
+              "text": "Define health equity and distinguish it from equality and diversity"
+            },
+            {
+              "id": "obj_eq2",
+              "text": "Describe the scale of racial, socioeconomic, and geographic health disparities in the US"
+            },
+            {
+              "id": "obj_eq3",
+              "text": "Explain why health disparities are considered unjust rather than inevitable"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "What health equity means \u2014 and what it doesn't",
+              "body": "Health equity means that everyone has a fair and just opportunity to be as healthy as possible. It requires removing obstacles to health \u2014 poverty, discrimination, inadequate housing, unsafe neighborhoods, poor education \u2014 that systematically disadvantage certain groups.\n\nHealth equity is not the same as health equality. Equality means giving everyone the same thing. Equity means giving people what they need, which differs based on their circumstances. A useful illustration: three people of different heights trying to watch a game over a fence. Equality gives each person one box. Equity gives the shortest person two boxes, the tallest none \u2014 so everyone can see.\n\nHealth equity is also not the same as diversity, inclusion, or belonging \u2014 though these are related. Equity is specifically about outcomes and the conditions that produce them."
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "3.4 years",
+                  "label": "Life expectancy gap between Black and white Americans (2023)",
+                  "source": "CDC"
+                },
+                {
+                  "value": "2-3x",
+                  "label": "Higher maternal mortality rate for Black women vs. white women",
+                  "source": "CDC"
+                },
+                {
+                  "value": "5x",
+                  "label": "Higher infant mortality for babies born to Black mothers vs. white mothers in some states",
+                  "source": "CDC"
+                },
+                {
+                  "value": "20 years",
+                  "label": "Life expectancy gap between richest and poorest US counties",
+                  "source": "JAMA"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Disparity vs. inequity: a critical distinction",
+              "body": "Not all disparities are inequities. A disparity is any measurable difference between groups. An inequity is a disparity that is unjust and avoidable \u2014 the result of systemic disadvantage rather than biology or free choice. Framing matters: calling disparities 'inequities' assigns moral weight and implies action. Research increasingly shows that most racial health disparities are not explained by biology but by social and structural factors."
+            },
+            {
+              "type": "video",
+              "mediaType": "youtube",
+              "videoId": "SExDNF83fvQ",
+              "caption": "What is health equity? \u2014 RWJF foundational explainer (~5 min)",
+              "durationSeconds": 300
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "The Whitehall Study: status, not just poverty",
+              "body": "The British Whitehall Studies (1960s\u20131980s) followed civil servants across salary grades. Even controlling for lifestyle factors, higher-grade civil servants had dramatically better health outcomes than lower-grade ones \u2014 and this gradient held at every rung, not just at the bottom. Health disadvantage is not only about poverty; it tracks social status, power, and control throughout the socioeconomic ladder."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_eq_definitions",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_eq1",
+                "type": "single_choice",
+                "question": "What is the key distinction between a health 'disparity' and a health 'inequity'?",
+                "points": 1,
+                "explanation": "A disparity is any measurable difference between groups. An inequity is a disparity that is unjust and avoidable \u2014 produced by systemic disadvantage rather than biology or free choice.",
+                "options": [
+                  {
+                    "id": "opt_eq1a",
+                    "text": "Disparities are differences by race; inequities are differences by income",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_eq1b",
+                    "text": "An inequity is a disparity that is unjust and avoidable, caused by systemic disadvantage",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_eq1c",
+                    "text": "Inequities are larger in magnitude than disparities",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_eq1d",
+                    "text": "Disparities exist in clinical care; inequities exist in social systems outside health care",
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "id": "q_eq2",
+                "type": "single_choice",
+                "question": "By approximately how much does life expectancy differ between the richest and poorest US counties?",
+                "points": 1,
+                "options": [
+                  {
+                    "id": "opt_eq2a",
+                    "text": "About 5 years",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_eq2b",
+                    "text": "About 10 years",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_eq2c",
+                    "text": "About 20 years",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_eq2d",
+                    "text": "About 2 years",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_eq_structural",
+          "trackId": "track_eq_foundations",
+          "pillar": "equity",
+          "order": 2,
+          "slug": "structural-racism-health",
+          "title": "Structural Racism & Health: From Redlining to Clinical Bias",
+          "summary": "How structural racism \u2014 through housing, education, wealth, and clinical practice \u2014 produces health disparities, and what the evidence says about implicit bias in clinical settings.",
+          "estimatedMinutes": 18,
+          "isPublished": true,
+          "tags": [
+            "structural racism",
+            "redlining",
+            "implicit bias",
+            "clinical bias"
+          ],
+          "relatedLessonIds": [
+            "lesson_eq_definitions"
+          ],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_es1",
+              "text": "Explain how structural racism \u2014 not just individual prejudice \u2014 produces health disparities"
+            },
+            {
+              "id": "obj_es2",
+              "text": "Describe the health effects of discriminatory housing policy (redlining)"
+            },
+            {
+              "id": "obj_es3",
+              "text": "Summarize the evidence on implicit bias in clinical settings"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Beyond individual prejudice",
+              "body": "When people hear 'racism,' they often think of individual bigotry \u2014 explicit prejudice held by a specific person. Structural racism is different: it refers to the historical and ongoing policies, practices, and norms that systematically advantage some groups and disadvantage others, often without any individual intending harm.\n\nHealth disparities are largely the product of structural racism: differential access to wealth, education, housing, environmental quality, and safety \u2014 all of which are powerful determinants of health \u2014 that have been shaped by policy decisions across generations."
+            },
+            {
+              "type": "text",
+              "heading": "Redlining and health: the maps still matter",
+              "body": "From the 1930s through the 1960s, the federal government's Home Owners' Loan Corporation drew color-coded maps of US cities, rating neighborhoods for lending risk. Neighborhoods with Black residents were systematically marked red ('hazardous') \u2014 denying mortgages that would have built intergenerational wealth.\n\nResearchers have overlaid 1930s redlining maps on modern health data and found persistent correlations: formerly redlined neighborhoods today have higher rates of asthma, diabetes, hypertension, low birth weight, and shorter life expectancy \u2014 80+ years after the maps were drawn. The mechanism is through concentrated poverty, disinvestment, environmental hazard siting, and stress."
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "Implicit bias in clinical settings",
+              "body": "Dozens of studies document disparities in pain management, diagnostic accuracy, and treatment recommendations that persist after controlling for clinical variables. Black patients receive less pain medication than white patients with identical presentations. Studies using identical vignettes with patient names swapped show different treatment recommendations based on perceived race. This is not conscious racism \u2014 it reflects unconscious associations that every clinician is susceptible to, which is why training and system-level safeguards matter."
+            },
+            {
+              "type": "audio_slot",
+              "label": "Clinician on addressing bias in practice",
+              "hint": "Interview a physician or nurse about their experience encountering and addressing implicit bias in clinical settings \u2014 what they've seen, how they've changed their practice, and what systemic changes would help. Recommended: 7\u201310 minutes."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_eq_structural",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_es1",
+                "type": "single_choice",
+                "question": "What is 'structural racism' as distinct from individual prejudice?",
+                "points": 1,
+                "explanation": "Structural racism refers to policies, practices, and norms that systematically advantage some groups and disadvantage others \u2014 often without any individual intending harm.",
+                "options": [
+                  {
+                    "id": "opt_es1a",
+                    "text": "Racism expressed openly by people in positions of authority",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_es1b",
+                    "text": "Policies and practices that systematically disadvantage certain groups, often without individual intent",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_es1c",
+                    "text": "Racism that exists only in social systems, not in health care",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_es1d",
+                    "text": "Unconscious bias held by individual clinicians",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_eq_global",
+          "pillar": "equity",
+          "order": 3,
+          "slug": "global-health-equity-comparison",
+          "title": "The US in Global Context: Why We Spend More and Get Less",
+          "summary": "How the US compares to peer nations on health outcomes \u2014 life expectancy, maternal mortality, infant mortality \u2014 despite spending twice as much, and what drives the gap.",
+          "estimatedMinutes": 16,
+          "isPublished": true,
+          "tags": [
+            "global comparison",
+            "OECD",
+            "life expectancy",
+            "maternal mortality",
+            "spending"
+          ],
+          "relatedLessonIds": [
+            "lesson_eq_definitions"
+          ],
+          "objectives": [
+            {
+              "id": "obj_gl1",
+              "text": "Compare US health outcomes to peer OECD nations on key indicators"
+            },
+            {
+              "id": "obj_gl2",
+              "text": "Explain why the US spends more per capita but achieves worse outcomes"
+            },
+            {
+              "id": "obj_gl3",
+              "text": "Identify which US populations drive the worst outcome gaps"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The paradox: most spending, worst outcomes",
+              "body": "The United States spends approximately $12,500 per person per year on health care \u2014 more than twice the average of other high-income OECD nations. Yet the US ranks last or near-last among OECD countries on life expectancy, maternal mortality, infant mortality, and chronic disease burden.\n\nThis is not primarily a question of health care quality for those who access it \u2014 US care for insured patients with good access is among the best in the world. It is a question of who gets access, and the profound health consequences of leaving tens of millions of people uninsured, underinsured, or under-resourced."
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "$12,555",
+                  "label": "US per capita health spending (2022) \u2014 highest in the world",
+                  "source": "OECD"
+                },
+                {
+                  "value": "77.5 yrs",
+                  "label": "US life expectancy (2022) \u2014 below all peer nations",
+                  "source": "CDC/OECD"
+                },
+                {
+                  "value": "22.3",
+                  "label": "US maternal mortality per 100,000 \u2014 3x higher than UK, France, Canada",
+                  "source": "CDC"
+                },
+                {
+                  "value": "5.4",
+                  "label": "US infant mortality per 1,000 \u2014 highest among comparable nations",
+                  "source": "OECD"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "The American Health Disadvantage is not uniform",
+              "body": "A 2013 National Academies study ('Shorter Lives, Poorer Health') found that the US health disadvantage is concentrated in specific populations: uninsured, low-income, Black and Hispanic Americans drive most of the gap with peer nations. White, college-educated, insured Americans have health outcomes roughly comparable to their counterparts in other countries. The overall US underperformance is a story of who is left behind."
+            },
+            {
+              "type": "video",
+              "mediaType": "youtube",
+              "videoId": "qSjGouBmo0M",
+              "caption": "Why is US healthcare so expensive? \u2014 Vox explainer (~8 min)",
+              "durationSeconds": 480
+            }
+          ],
+          "quiz": {
+            "id": "quiz_global",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_gl1",
+                "type": "single_choice",
+                "question": "According to the 2013 National Academies 'Shorter Lives, Poorer Health' study, the US health disadvantage is primarily concentrated in which groups?",
+                "points": 1,
+                "explanation": "The study found the disadvantage concentrated in uninsured, low-income, and racial/ethnic minority Americans \u2014 white, college-educated, insured Americans have outcomes comparable to peer nations.",
+                "options": [
+                  {
+                    "id": "opt_gl1a",
+                    "text": "All Americans, uniformly across income and racial groups",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_gl1b",
+                    "text": "Uninsured, low-income, and racial/ethnic minority populations",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_gl1c",
+                    "text": "Primarily elderly Americans above age 75",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_gl1d",
+                    "text": "Rural Americans regardless of income or insurance",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_eq_sdoh",
+      "courseId": "course_health_equity",
+      "pillar": "equity",
+      "order": 2,
+      "slug": "social-determinants",
+      "title": "Social Determinants of Health",
+      "description": "The evidence on SDOH, the five Healthy People domains, how SDOH screening works in clinical settings, and the Z-codes used to document social needs.",
+      "icon": "ti-home",
+      "targetAudience": [
+        "Clinical staff",
+        "Care managers",
+        "Community health workers"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_eq_sdoh_evidence",
+          "trackId": "track_eq_sdoh",
+          "pillar": "equity",
+          "order": 1,
+          "slug": "sdoh-evidence-domains",
+          "title": "The Evidence on SDOH: What Drives Health More Than Health Care",
+          "summary": "Why social determinants account for more of health outcomes than clinical care, the five Healthy People 2030 SDOH domains, and the strongest SDOH-health linkages.",
+          "estimatedMinutes": 18,
+          "isPublished": true,
+          "tags": [
+            "SDOH",
+            "Healthy People 2030",
+            "evidence",
+            "social needs"
+          ],
+          "relatedLessonIds": [
+            "lesson_eq_screening"
+          ],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_sd1",
+              "text": "Explain the relative contribution of SDOH vs. clinical care to health outcomes"
+            },
+            {
+              "id": "obj_sd2",
+              "text": "Describe the five Healthy People 2030 SDOH domains"
+            },
+            {
+              "id": "obj_sd3",
+              "text": "Identify the strongest evidence-based links between specific SDOH and health outcomes"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "30% clinical care, 70% everything else",
+              "body": "The most widely cited estimate in health equity work: clinical care accounts for approximately 10\u201320% of health outcomes. The remaining 80\u201390% is shaped by social and economic factors, health behaviors, and environment.\n\nThis doesn't mean health care doesn't matter \u2014 it does, especially in acute crisis. But it does mean that a health system laser-focused on clinical quality while ignoring where patients live, work, eat, and breathe is optimizing the wrong variable."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "The 5 Healthy People 2030 SDOH domains",
+              "items": [
+                {
+                  "icon": "ti-school",
+                  "title": "Education access & quality",
+                  "body": "Educational attainment is one of the strongest predictors of health. More education \u2192 higher income, better jobs, better health literacy, longer life."
+                },
+                {
+                  "icon": "ti-home",
+                  "title": "Economic stability",
+                  "body": "Income, employment, food security, housing stability. Poverty is a powerful health risk factor \u2014 both through material deprivation and chronic stress."
+                },
+                {
+                  "icon": "ti-building-community",
+                  "title": "Social & community context",
+                  "body": "Social support, discrimination, community cohesion, civic participation. Social isolation is comparable to smoking 15 cigarettes/day for health impact."
+                },
+                {
+                  "icon": "ti-stethoscope",
+                  "title": "Health care access & quality",
+                  "body": "Insurance coverage, geographic access to providers, quality of care received, health literacy, and trust in health care systems."
+                },
+                {
+                  "icon": "ti-leaf",
+                  "title": "Neighborhood & built environment",
+                  "body": "Housing quality, air and water quality, access to healthy food, walkability, safety. ZIP code predicts health better than genetic code."
+                }
+              ]
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "10\u201320%",
+                  "label": "Share of health outcomes attributable to clinical care",
+                  "source": "County Health Rankings"
+                },
+                {
+                  "value": "15 cigs/day",
+                  "label": "Equivalent health harm of social isolation",
+                  "source": "Holt-Lunstad 2015"
+                },
+                {
+                  "value": "9 miles",
+                  "label": "Distance between highest and lowest life expectancy in some US cities",
+                  "source": "VCU Center on Society and Health"
+                },
+                {
+                  "value": "40%",
+                  "label": "Of Medicaid and low-income patients report at least one unmet social need",
+                  "source": "NACHC"
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "mediaType": "youtube",
+              "videoId": "d7OdKQwTyKo",
+              "caption": "Social determinants of health \u2014 WHO explainer (~3 min)",
+              "durationSeconds": 180
+            }
+          ],
+          "quiz": {
+            "id": "quiz_sdoh_evidence",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_sd1",
+                "type": "single_choice",
+                "question": "According to the most widely cited estimates, approximately what share of health outcomes is attributable to clinical care?",
+                "points": 1,
+                "explanation": "Clinical care accounts for approximately 10\u201320% of health outcomes. The remaining 80\u201390% is shaped by social and economic factors, health behaviors, and the physical environment.",
+                "options": [
+                  {
+                    "id": "opt_sd1a",
+                    "text": "About 50%",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_sd1b",
+                    "text": "About 10\u201320%",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_sd1c",
+                    "text": "About 70%",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_sd1d",
+                    "text": "About 35%",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_eq_screening",
+          "trackId": "track_eq_sdoh",
+          "pillar": "equity",
+          "order": 2,
+          "slug": "sdoh-screening-tools",
+          "title": "SDOH Screening in Clinical Settings: Tools, Z-Codes & Referrals",
+          "summary": "How clinical teams screen for social needs using validated tools (PRAPARE, AHC, SEEK), document with ICD-10 Z-codes, and connect patients to community resources.",
+          "estimatedMinutes": 20,
+          "isPublished": true,
+          "tags": [
+            "SDOH screening",
+            "PRAPARE",
+            "Z-codes",
+            "social needs",
+            "referral"
+          ],
+          "relatedLessonIds": [
+            "lesson_eq_sdoh_evidence"
+          ],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_sc1",
+              "text": "Identify validated SDOH screening tools and their appropriate use cases"
+            },
+            {
+              "id": "obj_sc2",
+              "text": "Explain how Z-codes are used to document social needs in clinical records"
+            },
+            {
+              "id": "obj_sc3",
+              "text": "Describe the closed-loop referral model for connecting patients to community resources"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Screening: from asking to acting",
+              "body": "SDOH screening asks patients about their social needs directly \u2014 food security, housing stability, transportation, utilities, interpersonal safety. The evidence shows patients are willing to answer these questions when asked in a respectful, confidential context, and that screening identifies needs that clinicians would not otherwise know about.\n\nBut screening without action causes harm: asking someone if they're food insecure and then having no response to offer erodes trust. Effective SDOH programs pair screening with a referral pathway \u2014 either through embedded community health workers, a care coordination team, or a community resource platform like findhelp or NowPow."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Major SDOH screening tools",
+              "items": [
+                {
+                  "icon": "ti-clipboard",
+                  "title": "PRAPARE",
+                  "body": "Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences. 21-item tool from NACHC. Maps to Z-codes. Most widely used in FQHCs."
+                },
+                {
+                  "icon": "ti-file-description",
+                  "title": "AHC Screening Tool",
+                  "body": "Accountable Health Communities screening tool developed by CMS. 10 core questions covering food, housing, transportation, utilities, and safety. Required for CMS AHC model participants."
+                },
+                {
+                  "icon": "ti-stethoscope",
+                  "title": "SEEK",
+                  "body": "Safe Environment for Every Kid. Pediatric tool designed for primary care. Screens for family stress, substance use, depression, and food insecurity during well-child visits."
+                },
+                {
+                  "icon": "ti-heart",
+                  "title": "SDOH-5",
+                  "body": "Brief 5-question tool for rapid screening in high-volume settings. Covers food, housing, transportation, interpersonal violence, and utilities."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Z-codes: documenting social needs in ICD-10",
+              "body": "ICD-10-CM Z-codes (in the Z55\u2013Z65 range) capture social determinants of health in clinical documentation:\n\n- Z59.0: Homelessness\n- Z59.4: Lack of adequate food\n- Z63.0: Problems in relationship with spouse or partner\n- Z56.0: Unemployment, unspecified\n- Z60.2: Problems related to living alone\n\nZ-codes enable population-level analysis of social needs in a practice or system, support quality reporting, and increasingly are used by payers to adjust risk scores and target interventions. Documentation of Z-codes has historically been low \u2014 many clinicians don't know they exist or don't realize the clinical and operational value of using them."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Closed-loop referrals: did the patient get help?",
+              "body": "A warm referral to a food bank is better than a pamphlet. A closed-loop referral \u2014 where the receiving organization confirms the patient connected with services and sends that information back to the care team \u2014 is better still. Community resource platforms like findhelp (formerly Aunt Bertha), NowPow, and Unite Us are building the infrastructure for closed-loop referrals at scale."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_eq_screening",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_sc1",
+                "type": "single_choice",
+                "question": "What are ICD-10 Z-codes (Z55\u2013Z65) used for in clinical settings?",
+                "points": 1,
+                "explanation": "Z-codes in this range are used to document social determinants of health in clinical records \u2014 capturing social needs like homelessness, food insecurity, and unemployment for population analysis and quality reporting.",
+                "options": [
+                  {
+                    "id": "opt_sc1a",
+                    "text": "To document vaccination status for public health reporting",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_sc1b",
+                    "text": "To document social determinants of health like food insecurity and housing instability",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_sc1c",
+                    "text": "To code for mental health diagnoses under DSM-5",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_sc1d",
+                    "text": "To flag patients who are uninsured or underinsured",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_eq_housing_health",
+          "pillar": "equity",
+          "order": 3,
+          "slug": "housing-as-health-care",
+          "title": "Housing as Health Care: Homelessness, Eviction & the Medical Costs",
+          "summary": "The evidence linking housing instability to health outcomes, what happens medically when people lose housing, and how health systems are beginning to pay for housing as a health intervention.",
+          "estimatedMinutes": 17,
+          "isPublished": true,
+          "tags": [
+            "housing",
+            "homelessness",
+            "eviction",
+            "SDOH",
+            "housing-first"
+          ],
+          "relatedLessonIds": [
+            "lesson_eq_sdoh_evidence"
+          ],
+          "objectives": [
+            {
+              "id": "obj_hh1",
+              "text": "Describe the health consequences of housing instability and homelessness"
+            },
+            {
+              "id": "obj_hh2",
+              "text": "Explain the Housing First model and the evidence for its effectiveness"
+            },
+            {
+              "id": "obj_hh3",
+              "text": "Describe how Medicaid and ACO models are beginning to pay for housing-related services"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Housing is health care",
+              "body": "Housing instability \u2014 eviction risk, overcrowding, unsafe conditions, or outright homelessness \u2014 is one of the strongest predictors of poor health outcomes. People experiencing homelessness have life expectancies 20\u201325 years shorter than housed people. They use emergency departments at rates 5\u201310 times higher than the general population, are hospitalized more frequently, and have dramatically higher rates of mental illness, substance use, and communicable disease.\n\nFor health systems operating in value-based contracts, chronically unhoused patients are often the highest-cost, hardest-to-manage members of the population. Housing instability is not a social problem on the side \u2014 it is a primary driver of health care costs."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Housing interventions with health evidence",
+              "items": [
+                {
+                  "icon": "ti-home",
+                  "title": "Housing First",
+                  "body": "Provides permanent housing to chronically homeless people immediately, without requiring sobriety or treatment compliance first. Strong RCT evidence: higher housing retention, comparable or better health outcomes than treatment-first models."
+                },
+                {
+                  "icon": "ti-user-heart",
+                  "title": "Medical respite",
+                  "body": "Short-term residential care for medically ill people experiencing homelessness who don't require hospital level care. Reduces inappropriate ED use and readmissions."
+                },
+                {
+                  "icon": "ti-coins",
+                  "title": "Medicaid housing supports",
+                  "body": "CMS now allows Medicaid to pay for tenancy support services, housing navigation, and transitional rent for high-need populations through 1115 waivers."
+                },
+                {
+                  "icon": "ti-building-community",
+                  "title": "Health system investment",
+                  "body": "Some health systems (Kaiser, Dignity Health, Boston Medical Center) have invested directly in affordable housing \u2014 treating it as a population health investment that reduces their most expensive utilization."
+                }
+              ]
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "20-25 yrs",
+                  "label": "Shorter life expectancy for people experiencing chronic homelessness",
+                  "source": "JAMA"
+                },
+                {
+                  "value": "5-10x",
+                  "label": "Higher ED use rate for unhoused vs. housed individuals",
+                  "source": "Health Affairs"
+                },
+                {
+                  "value": "$30,000+",
+                  "label": "Annual Medicaid cost for a chronically homeless individual",
+                  "source": "RWJF"
+                },
+                {
+                  "value": "$10,000",
+                  "label": "Annual cost of supportive housing per person \u2014 fraction of health system savings",
+                  "source": "Corporation for Supportive Housing"
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_housing",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_hh1",
+                "type": "single_choice",
+                "question": "What is the core principle of the Housing First model?",
+                "points": 1,
+                "explanation": "Housing First provides permanent housing immediately without requiring sobriety, treatment, or compliance as a precondition \u2014 based on evidence that stable housing enables better treatment engagement than treatment-first approaches.",
+                "options": [
+                  {
+                    "id": "opt_hh1a",
+                    "text": "Housing is provided after 90 days of sobriety and compliance with treatment",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_hh1b",
+                    "text": "Permanent housing is provided immediately, without preconditions like sobriety",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_hh1c",
+                    "text": "Temporary shelter is provided while treatment is initiated, then housing follows",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_hh1d",
+                    "text": "Housing vouchers are provided but placement requires employment",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_eq_food_security",
+          "pillar": "equity",
+          "order": 4,
+          "slug": "food-insecurity-clinical-interventions",
+          "title": "Food Insecurity & Health: From Screening to Prescription",
+          "summary": "The health consequences of food insecurity, how clinical teams screen and respond, and the growing produce prescription and medically tailored meal programs in value-based care.",
+          "estimatedMinutes": 15,
+          "isPublished": true,
+          "tags": [
+            "food insecurity",
+            "SNAP",
+            "produce prescription",
+            "medically tailored meals",
+            "nutrition"
+          ],
+          "relatedLessonIds": [
+            "lesson_eq_sdoh_evidence",
+            "lesson_eq_screening"
+          ],
+          "objectives": [
+            {
+              "id": "obj_fi1",
+              "text": "Describe the health consequences of food insecurity beyond hunger"
+            },
+            {
+              "id": "obj_fi2",
+              "text": "Explain produce prescription and medically tailored meal programs and their evidence"
+            },
+            {
+              "id": "obj_fi3",
+              "text": "Describe SNAP's role in food security and its limitations as a health intervention"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Food insecurity is a clinical issue",
+              "body": "Food insecurity \u2014 limited or uncertain access to adequate food \u2014 affects approximately 44 million Americans, including 13 million children. For clinicians, food insecurity is not just a social problem: it is directly linked to uncontrolled diabetes (food-insecure patients have 27% higher A1c), hypertension, depression, and hospital readmissions.\n\nA diabetic patient who cannot afford or access fresh vegetables, whole grains, and lean protein cannot manage their blood sugar regardless of how good their medication is. Food is medicine \u2014 and clinicians are increasingly recognizing that prescriptions for metformin need to be paired with access to food."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Food-as-medicine interventions with evidence",
+              "items": [
+                {
+                  "icon": "ti-leaf",
+                  "title": "Produce prescriptions",
+                  "body": "Clinicians write 'prescriptions' redeemable at farmers markets or grocery stores for fresh produce. RCTs show A1c reductions of 0.6\u20131.0% in food-insecure diabetic patients."
+                },
+                {
+                  "icon": "ti-soup",
+                  "title": "Medically tailored meals",
+                  "body": "Home-delivered meals designed by registered dietitians for specific conditions (diabetes, CHF, renal disease, HIV). Strong evidence: 50% reduction in hospitalizations in some studies."
+                },
+                {
+                  "icon": "ti-building-store",
+                  "title": "Food pharmacy",
+                  "body": "Grocery-store-style areas within clinical settings where food-insecure patients can 'shop' for free healthy food. Pioneer sites: Boston Medical Center, Geisinger."
+                },
+                {
+                  "icon": "ti-coin",
+                  "title": "SNAP enrollment",
+                  "body": "Clinical teams screen for SNAP eligibility and connect patients. Supplemental Nutrition Assistance Program covers ~$200/month in food for eligible individuals \u2014 but only 82% of eligible people are enrolled."
+                }
+              ]
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "44M",
+                  "label": "Americans experiencing food insecurity",
+                  "source": "USDA 2023"
+                },
+                {
+                  "value": "27%",
+                  "label": "Higher A1c in food-insecure vs. food-secure diabetic patients",
+                  "source": "Diabetes Care"
+                },
+                {
+                  "value": "50%",
+                  "label": "Reduction in hospitalizations with medically tailored meals in some studies",
+                  "source": "JAMA IM"
+                },
+                {
+                  "value": "18%",
+                  "label": "Of eligible people not enrolled in SNAP",
+                  "source": "USDA"
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_food",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_fi1",
+                "type": "single_choice",
+                "question": "What have clinical trials found about produce prescription programs for food-insecure diabetic patients?",
+                "points": 1,
+                "explanation": "RCTs of produce prescription programs show A1c reductions of 0.6\u20131.0% in food-insecure diabetic patients \u2014 clinically meaningful reductions comparable to adding a medication.",
+                "options": [
+                  {
+                    "id": "opt_fi1a",
+                    "text": "No clinical impact \u2014 A1c is not affected by diet alone",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_fi1b",
+                    "text": "A1c reductions of 0.6\u20131.0% \u2014 comparable to adding a medication",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_fi1c",
+                    "text": "Improved patient satisfaction but no measurable A1c change",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_fi1d",
+                    "text": "Reductions only in patients who were already adherent to their medications",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_eq_data",
+      "courseId": "course_health_equity",
+      "pillar": "equity",
+      "order": 3,
+      "slug": "disparity-data",
+      "title": "Measuring & Reporting Disparities",
+      "description": "How to collect, stratify, and act on race, ethnicity, and language (REaL) data, and the role of disparity measurement in quality programs.",
+      "icon": "ti-chart-bar",
+      "targetAudience": [
+        "Quality staff",
+        "Analytics teams",
+        "Leadership"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_eq_real_data",
+          "trackId": "track_eq_data",
+          "pillar": "equity",
+          "order": 1,
+          "slug": "real-data-collection",
+          "title": "REaL Data: Collecting Race, Ethnicity & Language",
+          "summary": "Why REaL data collection is foundational to equity work, common pitfalls in collection, and how stratified quality reporting reveals disparities invisible in aggregate data.",
+          "estimatedMinutes": 18,
+          "isPublished": true,
+          "tags": [
+            "REaL data",
+            "race",
+            "ethnicity",
+            "language",
+            "data stratification"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_rd1",
+              "text": "Explain why high-quality REaL data collection is foundational to equity measurement"
+            },
+            {
+              "id": "obj_rd2",
+              "text": "Identify common failures in REaL data collection and how to address them"
+            },
+            {
+              "id": "obj_rd3",
+              "text": "Explain how stratified quality reporting reveals disparities hidden in aggregate data"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "You can't improve what you don't measure",
+              "body": "The single most common reason health systems cannot identify disparities in their own care is data quality. Race and ethnicity data is frequently missing, miscategorized, or so coarsely collected (five broad categories) that meaningful analysis is impossible.\n\nHigh-quality REaL data collection \u2014 asking patients directly, using the full OMB category set, collecting preferred language separately from ethnicity \u2014 is the prerequisite for everything else in equity work. You cannot stratify quality measures, set improvement targets, or demonstrate progress without it."
+            },
+            {
+              "type": "comparison_table",
+              "heading": "Common REaL data problems and solutions",
+              "leftLabel": "Common Problem",
+              "rightLabel": "Better Approach",
+              "rows": [
+                {
+                  "label": "Race",
+                  "left": "Collected by staff observation (inaccurate, biased)",
+                  "right": "Self-reported by patient at registration or via patient portal"
+                },
+                {
+                  "label": "Ethnicity",
+                  "left": "Collapsed into race (Hispanic listed as a race)",
+                  "right": "Collected separately: ethnicity (Hispanic/Not Hispanic) AND race"
+                },
+                {
+                  "label": "Detail",
+                  "left": "5 broad OMB categories only",
+                  "right": "Granular sub-categories (e.g., Cambodian, Dominican, Somali) within OMB categories"
+                },
+                {
+                  "label": "Language",
+                  "left": "Not collected or conflated with ethnicity",
+                  "right": "Preferred spoken language AND preferred written language collected separately"
+                },
+                {
+                  "label": "Missing data",
+                  "left": "Coded as 'Unknown' or 'Declined' without follow-up",
+                  "right": "Protocols to request self-identification at next encounter"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "The aggregate trap",
+              "body": "A hospital's colorectal cancer screening rate is 72% \u2014 at or above the national average. Looks fine. But stratified by race: white patients 79%, Black patients 61%, Hispanic patients 54%. The aggregate hides a 25-point gap. This is the aggregate trap: good overall performance can mask severe disparities. Equity work requires stratified measurement."
+            },
+            {
+              "type": "audio_slot",
+              "label": "Health system equity analyst: building the data infrastructure",
+              "hint": "Interview a data analyst or quality leader at a health system about the practical challenges of collecting and using REaL data \u2014 EHR limitations, staff training, patient trust. Recommended: 7\u20139 minutes."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_real_data",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_rd1",
+                "type": "single_choice",
+                "question": "What is the 'aggregate trap' in quality measurement?",
+                "points": 1,
+                "explanation": "The aggregate trap occurs when good overall (aggregate) performance hides severe disparities between subgroups \u2014 making stratified measurement essential.",
+                "options": [
+                  {
+                    "id": "opt_rd1a",
+                    "text": "Collecting too much data from too many patients, causing analysis paralysis",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_rd1b",
+                    "text": "Good aggregate quality scores that hide significant disparities between demographic subgroups",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_rd1c",
+                    "text": "Using population averages to set individual patient treatment goals",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_rd1d",
+                    "text": "Failing to collect data on patients who decline to self-identify",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_eq_action_data",
+          "pillar": "equity",
+          "order": 2,
+          "slug": "from-data-to-action",
+          "title": "From Disparity Data to Equity Action Plans",
+          "summary": "Once you have stratified disparity data, what do you do with it? Building equity action plans, setting improvement targets, designing targeted interventions, and measuring progress.",
+          "estimatedMinutes": 16,
+          "isPublished": true,
+          "tags": [
+            "equity action plan",
+            "quality improvement",
+            "targeted interventions",
+            "disparity reduction"
+          ],
+          "relatedLessonIds": [
+            "lesson_eq_real_data"
+          ],
+          "objectives": [
+            {
+              "id": "obj_da1",
+              "text": "Describe the structure of an equity action plan"
+            },
+            {
+              "id": "obj_da2",
+              "text": "Explain how to select targeted interventions for identified disparity gaps"
+            },
+            {
+              "id": "obj_da3",
+              "text": "Identify how health systems can set measurable equity improvement targets"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Data is necessary but not sufficient",
+              "body": "Health systems that successfully reduce disparities share a common pattern: they move rapidly from data (showing the gap exists) to action (designing and deploying targeted interventions) to accountability (tracking progress and tying leadership goals to equity outcomes).\n\nThe systems that stall are those that use data collection as a destination rather than a starting point \u2014 producing beautiful dashboards of disparity without organizational commitment to close them."
+            },
+            {
+              "type": "timeline",
+              "heading": "Equity action cycle",
+              "items": [
+                {
+                  "year": "Step 1",
+                  "title": "Identify the gap",
+                  "body": "Stratify a key quality measure (e.g., postpartum follow-up) by race/ethnicity. Quantify the gap between highest and lowest performing groups.",
+                  "pillar": "equity"
+                },
+                {
+                  "year": "Step 2",
+                  "title": "Understand the root cause",
+                  "body": "Disaggregate further: Is the gap in scheduling? No-show rates? Appointment availability? Provider distribution? Root cause determines the right intervention.",
+                  "pillar": "equity"
+                },
+                {
+                  "year": "Step 3",
+                  "title": "Design the intervention",
+                  "body": "Evidence-based options: CHW outreach to the gap population, language concordant appointment scheduling, reminder calls in preferred language, same-day appointments.",
+                  "pillar": "equity"
+                },
+                {
+                  "year": "Step 4",
+                  "title": "Set the target",
+                  "body": "Specific, measurable, time-bound: 'Reduce the Black-white postpartum follow-up gap from 18 points to 8 points within 18 months.'",
+                  "pillar": "equity"
+                },
+                {
+                  "year": "Step 5",
+                  "title": "Measure and iterate",
+                  "body": "Monthly tracking against target. If the gap is not closing, revisit root cause analysis. Treat disparity reduction like any quality improvement project.",
+                  "pillar": "equity"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "Tie leadership goals to equity outcomes",
+              "body": "Health systems that make measurable progress on equity consistently tie senior leader performance goals \u2014 and compensation \u2014 to equity metrics. When the CEO's and CMO's annual reviews include a measurable equity goal, the organization allocates resources, attention, and accountability to closing it. Systems that treat equity as a values statement without accountability rarely make measurable progress."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_action_data",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_da1",
+                "type": "single_choice",
+                "question": "What is the most important factor that distinguishes health systems making measurable equity progress from those that stall?",
+                "points": 1,
+                "explanation": "Research on high-performing equity health systems consistently finds that tying leadership performance and compensation to equity metrics is the key driver of organizational change \u2014 not just having data.",
+                "options": [
+                  {
+                    "id": "opt_da1a",
+                    "text": "Having the most sophisticated data dashboards and analytics infrastructure",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_da1b",
+                    "text": "Tying senior leadership goals and compensation to measurable equity outcomes",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_da1c",
+                    "text": "Receiving extra CMS funding designated for equity improvement",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_da1d",
+                    "text": "Having a majority-minority patient population that creates urgency",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_eq_algorithmic",
+      "courseId": "course_health_equity",
+      "pillar": "equity",
+      "order": 4,
+      "slug": "algorithmic-bias",
+      "title": "Algorithmic Bias in Healthcare",
+      "description": "How clinical algorithms and AI tools can encode and amplify health disparities, landmark cases of biased algorithms, and frameworks for bias evaluation.",
+      "icon": "ti-cpu",
+      "targetAudience": [
+        "Quality staff",
+        "Clinical informatics",
+        "Technology and analytics teams"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_eq_algo_bias",
+          "trackId": "track_eq_algorithmic",
+          "pillar": "equity",
+          "order": 1,
+          "slug": "algorithmic-bias-healthcare",
+          "title": "Algorithmic Bias: When Automation Amplifies Disparity",
+          "summary": "How clinical risk scores and AI tools can perpetuate and amplify racial disparities \u2014 the kidney function (eGFR) case, the Optum care management algorithm, and what health systems can do.",
+          "estimatedMinutes": 20,
+          "isPublished": true,
+          "tags": [
+            "algorithmic bias",
+            "AI bias",
+            "eGFR",
+            "Optum",
+            "risk scores"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_ab1b",
+              "text": "Explain how training data and design choices can encode bias into clinical algorithms"
+            },
+            {
+              "id": "obj_ab2b",
+              "text": "Describe two landmark cases of biased clinical algorithms and their consequences"
+            },
+            {
+              "id": "obj_ab3b",
+              "text": "Identify key questions health systems should ask when evaluating a clinical algorithm"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Automation is not neutrality",
+              "body": "There is a widespread assumption that algorithms and AI are more objective than human judgment. This is false. Algorithms trained on historical data inherit the biases embedded in that data. Algorithms designed without equity analysis can produce outputs that discriminate \u2014 consistently and at scale \u2014 without any human intending it.\n\nThe consequences in healthcare are serious: algorithms that guide who gets care management, who gets referred to specialists, whose pain is taken seriously, or who qualifies for transplant \u2014 all can amplify existing disparities if not carefully designed and evaluated."
+            },
+            {
+              "type": "text",
+              "heading": "Case 1: The kidney function algorithm (eGFR)",
+              "body": "For decades, the standard formula for estimating kidney function (eGFR \u2014 estimated Glomerular Filtration Rate) included a 'race correction': it assigned Black patients higher scores, estimating that Black patients had higher baseline kidney function.\n\nThe consequence: Black patients' kidney function was systematically overestimated. They appeared healthier on paper than they were, which delayed referrals to nephrologists, delayed transplant evaluation, and resulted in Black patients being sicker when they were finally listed for kidney transplants.\n\nIn 2021, NKF and ASN recommended eliminating race from the eGFR equation. Most major health systems have adopted race-free eGFR. This is a case where the algorithm encoded a contested biological assumption that turned out to be wrong \u2014 and caused measurable harm."
+            },
+            {
+              "type": "text",
+              "heading": "Case 2: The Optum care management algorithm",
+              "body": "A 2019 Science paper analyzed an algorithm used by Optum (and widely licensed to health systems) to identify patients who should be enrolled in high-touch care management programs. The algorithm used *healthcare costs* as a proxy for health needs \u2014 patients who had spent the most were predicted to need the most care.\n\nThe problem: Black patients, on average, spend less on health care than white patients with the same health needs \u2014 because of less access, less trust, and systemic undertreatment. By using costs as a proxy for needs, the algorithm systematically underidentified Black patients as eligible for care management. Among patients the algorithm flagged as high-need, only 17.7% were Black \u2014 when their true share by health status should have been 46.5%."
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "Questions to ask when evaluating a clinical algorithm",
+              "body": "1. What data was this trained on? Does the training data reflect historical inequities?\n2. Was the algorithm's performance validated separately for different racial, ethnic, and socioeconomic groups?\n3. What proxy measures does it use \u2014 and are those proxies distributed differently across groups?\n4. Who is the algorithm designed to help, and who might it systematically disadvantage?\n5. Is there an ongoing bias monitoring protocol after deployment?"
+            },
+            {
+              "type": "video",
+              "mediaType": "youtube",
+              "videoId": "UG_X_7g63rY",
+              "caption": "Algorithmic bias in healthcare \u2014 STAT News and Harvard explainer (~8 min)",
+              "durationSeconds": 480
+            }
+          ],
+          "quiz": {
+            "id": "quiz_algo_bias",
+            "passingScore": 80,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_ab1b",
+                "type": "single_choice",
+                "question": "What was the equity problem with the Optum care management algorithm identified in the 2019 Science paper?",
+                "points": 1,
+                "explanation": "The algorithm used healthcare costs as a proxy for health needs. Since Black patients spent less on healthcare than white patients with the same health needs (due to barriers to access), the algorithm systematically underidentified Black patients for care management.",
+                "options": [
+                  {
+                    "id": "opt_ab1ba",
+                    "text": "The algorithm used race as an explicit input, which was illegal",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ab1bb",
+                    "text": "Using healthcare costs as a proxy for needs underidentified Black patients, who spent less despite similar health needs",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_ab1bc",
+                    "text": "The algorithm was only trained on white patients and had no data on Black patients",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ab1bd",
+                    "text": "Black patients were enrolled at higher rates than appropriate, reducing resources for white patients",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_eq_pulse_oximetry",
+          "pillar": "equity",
+          "order": 2,
+          "slug": "pulse-oximetry-racial-bias",
+          "title": "Pulse Oximetry & Hidden Bias in Medical Devices",
+          "summary": "How pulse oximeters were found to overestimate oxygen saturation in patients with darker skin \u2014 causing delayed COVID treatment \u2014 and what it reveals about device development and equity.",
+          "estimatedMinutes": 15,
+          "isPublished": true,
+          "tags": [
+            "pulse oximetry",
+            "medical devices",
+            "skin color",
+            "COVID",
+            "FDA"
+          ],
+          "relatedLessonIds": [
+            "lesson_eq_algo_bias"
+          ],
+          "objectives": [
+            {
+              "id": "obj_po1",
+              "text": "Explain how pulse oximetry bias was identified and its clinical consequences"
+            },
+            {
+              "id": "obj_po2",
+              "text": "Describe how the bias was introduced through device development and validation"
+            },
+            {
+              "id": "obj_po3",
+              "text": "Explain FDA's response and the broader lesson for medical device equity"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "A trusted device that wasn't equally accurate",
+              "body": "Pulse oximeters \u2014 the small clip devices that measure blood oxygen saturation \u2014 have been ubiquitous in clinical care for decades. During COVID-19, they were essential: the decision to admit a patient or discharge them often hinged on a single SpO2 reading.\n\nIn 2020\u20132021, multiple studies published in NEJM and other leading journals found that pulse oximeters were significantly less accurate in patients with darker skin tones \u2014 overestimating oxygen saturation by 2\u20133 percentage points. This meant that Black and Hispanic patients with dangerously low oxygen levels appeared to be within normal range, leading to delayed treatment and worse outcomes.\n\nThis was not a COVID-era discovery \u2014 the bias had been documented in the 1980s and 1990s, but the clinical and regulatory systems failed to act on it."
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "Why the bias exists \u2014 and was ignored",
+              "body": "Pulse oximeters work by shining light through the finger and measuring absorption at two wavelengths. Melanin in the skin absorbs light at these wavelengths, interfering with the measurement. Device manufacturers validated their devices predominantly on lighter-skinned subjects \u2014 a common pattern in medical device and clinical trial populations. Despite early research flagging the disparity, the FDA did not require manufacturers to validate accuracy across skin tones until 2024."
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "3x",
+                  "label": "Higher rate of occult hypoxemia in Black patients missed by pulse oximetry vs. white patients",
+                  "source": "NEJM 2020"
+                },
+                {
+                  "value": "2\u20133 pts",
+                  "label": "Average SpO2 overestimation in patients with darker skin tones",
+                  "source": "NEJM 2020"
+                },
+                {
+                  "value": "2024",
+                  "label": "Year FDA first required manufacturers to validate pulse oximeters across skin tones",
+                  "source": "FDA"
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_pulse_ox",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_po1",
+                "type": "single_choice",
+                "question": "Why do standard pulse oximeters tend to overestimate oxygen saturation in patients with darker skin?",
+                "points": 1,
+                "explanation": "Melanin absorbs light at the same wavelengths pulse oximeters use to measure oxygen saturation, interfering with the measurement and producing falsely high readings in patients with more melanin.",
+                "options": [
+                  {
+                    "id": "opt_po1a",
+                    "text": "Dark skin reflects more light, causing the device to read higher values",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_po1b",
+                    "text": "Melanin absorbs light at the measurement wavelengths, interfering with accuracy",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_po1c",
+                    "text": "The bias is not in the device but in how clinicians interpret readings",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_po1d",
+                    "text": "Patients with darker skin have inherently higher baseline oxygen saturation",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_eq_cms",
+      "courseId": "course_health_equity",
+      "pillar": "equity",
+      "order": 5,
+      "slug": "cms-equity-requirements",
+      "title": "CMS Equity Requirements & Policy",
+      "description": "CMS's health equity strategy, the Health Equity Index in Star Ratings, Section 1557 non-discrimination, and the ACA's equity-related provisions.",
+      "icon": "ti-shield",
+      "targetAudience": [
+        "Policy staff",
+        "Compliance teams",
+        "Quality leadership"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_eq_cms_policy",
+          "trackId": "track_eq_cms",
+          "pillar": "equity",
+          "order": 1,
+          "slug": "cms-equity-strategy",
+          "title": "CMS Health Equity Strategy: From Aspiration to Requirement",
+          "summary": "CMS's Framework for Health Equity, the Health Equity Index in Medicare Advantage Star Ratings, AHEAD model equity requirements, and Section 1557 non-discrimination obligations.",
+          "estimatedMinutes": 18,
+          "isPublished": true,
+          "tags": [
+            "CMS equity",
+            "Health Equity Index",
+            "Section 1557",
+            "Star Ratings equity"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_cp1",
+              "text": "Describe the five priorities in CMS's Framework for Health Equity"
+            },
+            {
+              "id": "obj_cp2",
+              "text": "Explain how the Health Equity Index affects Medicare Advantage Star Ratings"
+            },
+            {
+              "id": "obj_cp3",
+              "text": "Summarize Section 1557 non-discrimination obligations for health care organizations"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "From voluntary to required",
+              "body": "Health equity has moved from a voluntary aspiration to a regulatory requirement. CMS has embedded equity into payment programs, quality reporting, and plan contracting in ways that give health systems and payers financial and legal incentives to close disparities \u2014 not just acknowledge them."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "CMS Framework for Health Equity \u2014 5 priorities",
+              "items": [
+                {
+                  "icon": "ti-database",
+                  "title": "Data collection",
+                  "body": "Expand collection of REaL and SDOH data across all CMS programs and require stratified reporting."
+                },
+                {
+                  "icon": "ti-users",
+                  "title": "Underserved communities",
+                  "body": "Assess and address barriers to participation by underserved communities in CMS programs."
+                },
+                {
+                  "icon": "ti-chart-bar",
+                  "title": "Disparities research",
+                  "body": "Build evidence on interventions that close disparities and share findings with the field."
+                },
+                {
+                  "icon": "ti-coins",
+                  "title": "Payment models",
+                  "body": "Embed equity in payment models \u2014 including requiring disparity reduction plans in ACO and APM contracts."
+                },
+                {
+                  "icon": "ti-home-heart",
+                  "title": "Cultural competency",
+                  "body": "Ensure CMS-funded organizations provide culturally and linguistically appropriate services (CLAS standards)."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Health Equity Index in Star Ratings",
+              "body": "Beginning with the 2027 Star Ratings, CMS is introducing a Health Equity Index (HEI) reward that gives Medicare Advantage plans additional credit for improving quality for low-income and/or disabled enrollees. Plans that reduce disparities within their enrolled population are rewarded; those that perform worse for vulnerable subgroups are penalized. This is the first time equity performance has been directly linked to MA payment."
+            },
+            {
+              "type": "text",
+              "heading": "Section 1557: Non-discrimination in health care",
+              "body": "Section 1557 of the ACA prohibits discrimination based on race, color, national origin, sex, age, and disability by any health program or activity receiving federal financial assistance \u2014 which includes virtually every hospital, health system, and insurer.\n\nThe 2024 Section 1557 final rule extended protections to LGBTQ+ individuals, required covered entities to provide meaningful access for people with limited English proficiency, and established requirements for accessible communication for people with disabilities. Health systems with federal funding must have a designated coordinator, a grievance procedure, and notice of nondiscrimination posted."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_cms_policy",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_cp1",
+                "type": "single_choice",
+                "question": "What does CMS's Health Equity Index in Medicare Advantage Star Ratings reward?",
+                "points": 1,
+                "explanation": "The Health Equity Index gives additional Star Rating credit to MA plans that demonstrate better quality performance for low-income and/or disabled enrollees \u2014 tying equity performance directly to payment.",
+                "options": [
+                  {
+                    "id": "opt_cp1a",
+                    "text": "Plans that serve a higher percentage of racial minority enrollees",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cp1b",
+                    "text": "Plans that improve quality for low-income and/or disabled enrollees relative to their overall performance",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_cp1c",
+                    "text": "Plans that hire a higher percentage of minority clinical staff",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cp1d",
+                    "text": "Plans that partner with Federally Qualified Health Centers",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_eq_clas",
+          "pillar": "equity",
+          "order": 2,
+          "slug": "clas-standards-language-access",
+          "title": "CLAS Standards & Language Access: Legal Requirements & Best Practices",
+          "summary": "The National CLAS Standards, the legal right to language access under Section 1557, and what health systems must do to serve patients with limited English proficiency.",
+          "estimatedMinutes": 15,
+          "isPublished": true,
+          "tags": [
+            "CLAS",
+            "language access",
+            "LEP",
+            "interpreter",
+            "Section 1557"
+          ],
+          "relatedLessonIds": [
+            "lesson_eq_cms_policy"
+          ],
+          "objectives": [
+            {
+              "id": "obj_clas1",
+              "text": "Describe the National CLAS Standards and their structure"
+            },
+            {
+              "id": "obj_clas2",
+              "text": "Explain the legal obligations for language access under Section 1557"
+            },
+            {
+              "id": "obj_clas3",
+              "text": "Identify best practices for providing language access beyond legal minimums"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Language is a social determinant of health",
+              "body": "Approximately 25 million Americans have limited English proficiency (LEP). These patients are less likely to receive preventive care, more likely to experience medication errors, less likely to understand discharge instructions, and more likely to be readmitted. Language barriers have been linked to worse patient safety outcomes across multiple studies.\n\nFederal law (Section 1557 of the ACA, Title VI of the Civil Rights Act) requires health care organizations receiving federal funding to provide meaningful access to patients with LEP \u2014 at no cost to the patient. This means qualified interpreters, not family members or staff who happen to speak the language."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "The National CLAS Standards \u2014 key principals",
+              "items": [
+                {
+                  "icon": "ti-language",
+                  "title": "Language services",
+                  "body": "Provide language assistance to patients with LEP at all points of contact \u2014 clinical care, registration, billing, patient education. At no cost to the patient."
+                },
+                {
+                  "icon": "ti-user-heart",
+                  "title": "Culturally competent care",
+                  "body": "Integrate cultural and linguistic responsiveness into governance, leadership, and workforce. Train staff in cultural humility."
+                },
+                {
+                  "icon": "ti-users",
+                  "title": "Diverse workforce",
+                  "body": "Recruit, retain, and promote diverse staff and leadership that reflects the communities served."
+                },
+                {
+                  "icon": "ti-megaphone",
+                  "title": "Community engagement",
+                  "body": "Partner with communities served, especially underserved, to design and evaluate services."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "Family interpreters: convenient but dangerous",
+              "body": "Using family members, friends, or untrained bilingual staff as interpreters is a legal and safety risk. Family members may filter information (especially around bad news or sensitive topics), lack medical vocabulary, misinterpret clinical terms, and create privacy violations. Section 1557 requires qualified interpreters \u2014 professional in-person, telephone, or video remote interpreting. The convenience of using a patient's child as an interpreter does not outweigh these risks."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_clas",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_clas1",
+                "type": "single_choice",
+                "question": "Under Section 1557 and the CLAS Standards, can a health system use a patient's family member as an interpreter to meet language access requirements?",
+                "points": 1,
+                "explanation": "Family members are generally not acceptable as interpreters under federal law \u2014 they may filter information, lack medical vocabulary, and create privacy risks. Qualified interpreters (in-person, telephone, or video) are required.",
+                "options": [
+                  {
+                    "id": "opt_clas1a",
+                    "text": "Yes, if the patient signs a waiver agreeing to use a family member",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_clas1b",
+                    "text": "No, qualified interpreters are required \u2014 family members are generally not acceptable",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_clas1c",
+                    "text": "Yes, if no professional interpreter is available within 30 minutes",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_clas1d",
+                    "text": "Yes, for routine appointments but not for consent or discharge conversations",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_eq_community",
+      "courseId": "course_health_equity",
+      "pillar": "equity",
+      "order": 6,
+      "slug": "community-action",
+      "title": "Community Health Workers & Community Action",
+      "description": "The evidence on community health workers, how to build CHW programs, cross-sector partnerships, and the role of community in health equity transformation.",
+      "icon": "ti-heart-handshake",
+      "targetAudience": [
+        "Community health workers",
+        "Care management teams",
+        "Program designers"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_eq_chw",
+          "trackId": "track_eq_community",
+          "pillar": "equity",
+          "order": 1,
+          "slug": "community-health-workers",
+          "title": "Community Health Workers: Evidence, Roles & Sustainability",
+          "summary": "The evidence base for CHW programs, the specific roles CHWs play in bridging clinical and community systems, Medicaid CHW reimbursement, and program design principles.",
+          "estimatedMinutes": 20,
+          "isPublished": true,
+          "tags": [
+            "community health workers",
+            "CHW",
+            "Medicaid reimbursement",
+            "bridge"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_cw1",
+              "text": "Describe the core roles of community health workers and what makes them effective"
+            },
+            {
+              "id": "obj_cw2",
+              "text": "Summarize the evidence on CHW impact on utilization, outcomes, and equity"
+            },
+            {
+              "id": "obj_cw3",
+              "text": "Explain how states are financing CHW programs through Medicaid"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The trusted bridge",
+              "body": "Community health workers are lay health workers \u2014 typically from the same community they serve \u2014 who bridge the gap between clinical health systems and the communities they struggle to reach. They are known by many names: promotoras, navigators, health coaches, patient advocates.\n\nWhat makes CHWs effective is not primarily their knowledge (though training matters) but their trust. A CHW who shares the language, culture, and lived experience of the patients they serve can build relationships that clinical staff \u2014 however well-intentioned \u2014 often cannot."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Core CHW roles",
+              "items": [
+                {
+                  "icon": "ti-user-heart",
+                  "title": "Navigation",
+                  "body": "Help patients navigate complex health and social service systems \u2014 appointments, insurance enrollment, benefits applications."
+                },
+                {
+                  "icon": "ti-home",
+                  "title": "Social needs",
+                  "body": "Connect patients with food, housing, transportation, and financial assistance. The direct link between SDOH screening and resource connection."
+                },
+                {
+                  "icon": "ti-stethoscope",
+                  "title": "Chronic disease support",
+                  "body": "Support self-management for diabetes, hypertension, asthma. Evidence shows CHW support improves medication adherence and reduces A1c."
+                },
+                {
+                  "icon": "ti-baby",
+                  "title": "Maternal health",
+                  "body": "Doula and CHW models have demonstrated reduction in maternal mortality and disparities \u2014 particularly for Black mothers."
+                }
+              ]
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "$3.6",
+                  "label": "Return on investment for every $1 spent on CHW programs (meta-analysis)",
+                  "source": "RWJF"
+                },
+                {
+                  "value": "25%",
+                  "label": "Reduction in ED visits in CHW-supported high-risk populations",
+                  "source": "Health Affairs"
+                },
+                {
+                  "value": "33+",
+                  "label": "States that now reimburse CHW services through Medicaid",
+                  "source": "KFF"
+                },
+                {
+                  "value": "2x",
+                  "label": "Black maternal mortality reduction with doula/CHW support in some programs",
+                  "source": "ACOG"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Medicaid CHW reimbursement: the sustainability solution",
+              "body": "Historically, CHW programs were grant-funded \u2014 effective but fragile. More than 33 states now reimburse CHW services through Medicaid, providing a sustainable funding stream. CMS has made this easier through guidance on billing CHW services as part of chronic care management, care coordination, and preventive services. Vermont reimburses CHW services through Medicaid and has integrated CHWs into its ACO model."
+            },
+            {
+              "type": "audio_slot",
+              "label": "Community health worker: the view from the community",
+              "hint": "Interview a CHW about their day-to-day work \u2014 what they actually do, the barriers their patients face, what makes the role effective, and what the health system gets wrong about community engagement. Recommended: 8\u201312 minutes."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_chw",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_cw1",
+                "type": "single_choice",
+                "question": "What is the primary reason community health workers are effective in reaching underserved populations?",
+                "points": 1,
+                "explanation": "CHWs are effective primarily because they share language, culture, and lived experience with the patients they serve \u2014 building trust that clinical staff often cannot achieve, regardless of their clinical skill.",
+                "options": [
+                  {
+                    "id": "opt_cw1a",
+                    "text": "They have more clinical training than nurses or medical assistants",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cw1b",
+                    "text": "They share language, culture, and lived experience, enabling trust that clinical staff often cannot build",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_cw1c",
+                    "text": "They can access patient records that clinical staff cannot",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cw1d",
+                    "text": "They work in community settings where patients feel less anxiety than in clinical settings",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_eq_cross_sector",
+          "pillar": "equity",
+          "order": 2,
+          "slug": "cross-sector-partnerships",
+          "title": "Cross-Sector Partnerships: Health Systems & Community Organizations",
+          "summary": "How health systems, community organizations, housing agencies, schools, and food systems are building partnerships to address upstream determinants of health at scale.",
+          "estimatedMinutes": 16,
+          "isPublished": true,
+          "tags": [
+            "cross-sector",
+            "partnership",
+            "anchor institution",
+            "community benefit",
+            "IRS 501r"
+          ],
+          "relatedLessonIds": [
+            "lesson_eq_chw"
+          ],
+          "objectives": [
+            {
+              "id": "obj_cs1",
+              "text": "Describe the 'anchor institution' role for health systems in community health"
+            },
+            {
+              "id": "obj_cs2",
+              "text": "Explain IRS community benefit requirements for nonprofit hospitals"
+            },
+            {
+              "id": "obj_cs3",
+              "text": "Identify examples of successful cross-sector partnerships and their outcomes"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Hospitals as anchor institutions",
+              "body": "Large health systems are often among the biggest employers in their communities \u2014 with massive purchasing power, real estate holdings, and investment portfolios. The 'anchor institution' concept asks: can health systems use these economic levers to benefit their communities, not just their patients?\n\nExamples: Kaiser Permanente has committed $200M to affordable housing. Boston Medical Center runs a food pantry, farm, and kitchen that produces medically tailored meals. Cleveland Clinic's Evergreen Cooperative uses procurement to create jobs in underserved neighborhoods. These are not charity \u2014 they are strategic investments in the social determinants of health that drive the system's highest-cost patients."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Mechanisms for health system community investment",
+              "items": [
+                {
+                  "icon": "ti-briefcase",
+                  "title": "Procurement",
+                  "body": "Directing purchasing toward local, minority-owned businesses. Creates jobs and local economic circulation in high-need communities."
+                },
+                {
+                  "icon": "ti-coin",
+                  "title": "Investment",
+                  "body": "Mission-aligned investing in affordable housing, community development financial institutions (CDFIs), and social enterprises."
+                },
+                {
+                  "icon": "ti-school",
+                  "title": "Workforce pipeline",
+                  "body": "Partnering with local schools and community colleges to create health career pathways for residents of communities the system serves."
+                },
+                {
+                  "icon": "ti-building-community",
+                  "title": "Community health needs",
+                  "body": "IRS Section 501(r) requires nonprofit hospitals to conduct a Community Health Needs Assessment every 3 years and develop an implementation strategy. A mechanism for structured community investment."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Community benefit: $129B annually \u2014 but poorly tracked",
+              "body": "Nonprofit hospitals claimed $129B in community benefit spending in 2019 \u2014 mostly charity care and Medicaid shortfall. Critics argue that little of this reaches the social determinants investments that would most reduce community health disparities. The IRS requires community benefit reporting but allows wide flexibility in what counts. CMS and advocacy groups are pushing for requirements that a meaningful share of community benefit target measurable social determinants."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_cross_sector",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_cs1",
+                "type": "single_choice",
+                "question": "What is the IRS Section 501(r) requirement for nonprofit hospitals related to community health?",
+                "points": 1,
+                "explanation": "Section 501(r) requires nonprofit hospitals to conduct a Community Health Needs Assessment every 3 years and develop an implementation strategy addressing identified needs \u2014 as a condition of their tax-exempt status.",
+                "options": [
+                  {
+                    "id": "opt_cs1a",
+                    "text": "Nonprofit hospitals must spend at least 10% of revenue on charity care",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cs1b",
+                    "text": "Nonprofit hospitals must conduct a Community Health Needs Assessment every 3 years",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_cs1c",
+                    "text": "Nonprofit hospitals must partner with at least one community health center",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cs1d",
+                    "text": "Nonprofit hospitals must report patient race and ethnicity data to CMS",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_eq_racial_healing",
+          "pillar": "equity",
+          "order": 3,
+          "slug": "organizational-equity-transformation",
+          "title": "Organizational Equity Transformation: From Policy to Culture",
+          "summary": "What it takes to move health equity from a strategic initiative to an organizational culture \u2014 governance, leadership accountability, staff training, and the long arc of institutional change.",
+          "estimatedMinutes": 14,
+          "isPublished": true,
+          "tags": [
+            "organizational change",
+            "equity transformation",
+            "governance",
+            "leadership",
+            "culture"
+          ],
+          "relatedLessonIds": [
+            "lesson_eq_chw"
+          ],
+          "objectives": [
+            {
+              "id": "obj_ot1",
+              "text": "Identify the governance structures that support health equity transformation"
+            },
+            {
+              "id": "obj_ot2",
+              "text": "Explain what 'equity-centered leadership' means in practice"
+            },
+            {
+              "id": "obj_ot3",
+              "text": "Describe why training alone is insufficient for organizational equity change"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Training is not transformation",
+              "body": "Many health systems have invested in implicit bias training, diversity workshops, and equity awareness programs. These have value \u2014 but research consistently shows that training alone does not change organizational behavior or patient outcomes. Systems that achieve meaningful equity improvement do so through structural change: governance accountability, resource allocation, process redesign, and data-driven feedback loops.\n\nThe most effective equity transformations combine awareness (helping staff understand the problem) with structural change (redesigning processes so equitable outcomes are the default, not the exception)."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Elements of organizational equity transformation",
+              "items": [
+                {
+                  "icon": "ti-building",
+                  "title": "Governance",
+                  "body": "Board-level equity committee with authority and budget. Board receives stratified quality and access data regularly. Equity metrics in CEO and senior leader scorecards."
+                },
+                {
+                  "icon": "ti-chart-bar",
+                  "title": "Data accountability",
+                  "body": "Publicly reported equity metrics. Department-level disparity dashboards. Leaders see their unit's equity data alongside financial and clinical quality data."
+                },
+                {
+                  "icon": "ti-coins",
+                  "title": "Resource allocation",
+                  "body": "Dedicated equity improvement budget. Resources directed disproportionately toward identified gap areas. Community benefit investments tied to CHNA priorities."
+                },
+                {
+                  "icon": "ti-users",
+                  "title": "Workforce diversity",
+                  "body": "Hiring practices, retention programs, and leadership development for staff from underrepresented communities. Representative workforce at every level, not just entry-level."
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_org_equity",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_ot1",
+                "type": "single_choice",
+                "question": "What does research show about the effectiveness of implicit bias training alone as an equity intervention?",
+                "points": 1,
+                "explanation": "Research consistently shows that training alone does not change organizational behavior or patient outcomes. Structural changes \u2014 governance accountability, process redesign, data feedback \u2014 are required for measurable improvement.",
+                "options": [
+                  {
+                    "id": "opt_ot1a",
+                    "text": "Implicit bias training alone consistently reduces racial disparities in care within 6 months",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ot1b",
+                    "text": "Training alone does not change behavior or outcomes \u2014 structural changes are required",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_ot1c",
+                    "text": "Training is effective if delivered annually but loses effectiveness when done more frequently",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ot1d",
+                    "text": "Training effectiveness depends primarily on whether it is delivered by an internal or external trainer",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

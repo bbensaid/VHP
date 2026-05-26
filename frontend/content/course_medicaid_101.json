@@ -1,0 +1,2515 @@
+{
+  "id": "course_medicaid_101",
+  "slug": "medicaid-101",
+  "title": "Medicaid 101: How America's Safety Net Works",
+  "subtitle": "Eligibility, financing, managed care, waivers, and the future of the program",
+  "description": "A comprehensive introduction to Medicaid \u2014 the largest source of health coverage in the United States. Covers program structure, eligibility rules, federal-state financing, managed care, waiver authority, quality oversight, and current policy debates. Essential for anyone working in health policy, state government, managed care, community health, or advocacy.",
+  "targetAudience": [
+    "Health policy analysts and advocates",
+    "State agency staff",
+    "Managed care organization employees",
+    "Community health workers",
+    "Clinicians and administrators billing Medicaid",
+    "Anyone new to US health system financing"
+  ],
+  "prerequisites": [],
+  "estimatedHours": 10,
+  "isPublished": true,
+  "version": "1.0.0",
+  "createdAt": "2026-05-25T00:00:00Z",
+  "updatedAt": "2026-05-25T00:00:00Z",
+  "tracks": [
+    {
+      "id": "track_med_foundations",
+      "courseId": "course_medicaid_101",
+      "pillar": "policy",
+      "order": 1,
+      "slug": "medicaid-foundations",
+      "title": "Medicaid Foundations",
+      "description": "History, purpose, and scope of the Medicaid program \u2014 from its 1965 origins through the ACA expansion.",
+      "icon": "ti-shield",
+      "targetAudience": [
+        "All staff"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_med_history",
+          "trackId": "track_med_foundations",
+          "pillar": "policy",
+          "order": 1,
+          "slug": "medicaid-history-origins",
+          "title": "Medicaid's Origins: 1965 to Today",
+          "summary": "How Medicaid was born alongside Medicare in 1965, its evolution through welfare reform, and the ACA's transformative expansion.",
+          "estimatedMinutes": 18,
+          "isPublished": true,
+          "tags": [
+            "history",
+            "ACA",
+            "expansion",
+            "Title XIX"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_mh1",
+              "text": "Explain why Medicaid was created as a separate program from Medicare"
+            },
+            {
+              "id": "obj_mh2",
+              "text": "Describe the key legislative milestones from 1965 to the ACA"
+            },
+            {
+              "id": "obj_mh3",
+              "text": "Explain what the ACA Medicaid expansion changed and why some states did not expand"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Two programs, one moment",
+              "body": "On July 30, 1965, President Lyndon Johnson signed the Social Security Amendments in Independence, Missouri \u2014 with Harry Truman seated beside him. The legislation created two programs at once: Medicare (Title XVIII), covering the elderly regardless of income, and Medicaid (Title XIX), covering certain low-income populations through a federal-state partnership.\n\nThe distinction mattered politically. Medicare was framed as earned insurance \u2014 workers paid in, workers got benefits. Medicaid was framed as welfare \u2014 means-tested assistance for the deserving poor. That framing has shaped every policy debate about the program since."
+            },
+            {
+              "type": "timeline",
+              "heading": "Medicaid milestones",
+              "items": [
+                {
+                  "year": "1965",
+                  "title": "Title XIX enacted",
+                  "body": "Medicaid created as joint federal-state program. Initial enrollment: ~4 million people.",
+                  "pillar": "policy"
+                },
+                {
+                  "year": "1972",
+                  "title": "SSI integration",
+                  "body": "Supplemental Security Income created; Medicaid automatically linked to SSI recipients in most states.",
+                  "pillar": "policy"
+                },
+                {
+                  "year": "1986\u20131990",
+                  "title": "Mandatory expansions",
+                  "body": "Congress mandates coverage for pregnant women and children up to 133% FPL, decoupling Medicaid from welfare cash assistance.",
+                  "pillar": "policy"
+                },
+                {
+                  "year": "1997",
+                  "title": "CHIP created",
+                  "body": "State Children's Health Insurance Program (Title XXI) created, covering children in families above Medicaid limits.",
+                  "pillar": "policy"
+                },
+                {
+                  "year": "2010",
+                  "title": "ACA enacted",
+                  "body": "ACA expands Medicaid to all adults under 138% FPL; federal government pays 100% of expansion costs through 2016, then 90% permanently.",
+                  "pillar": "policy"
+                },
+                {
+                  "year": "2012",
+                  "title": "NFIB v. Sebelius",
+                  "body": "Supreme Court rules ACA Medicaid expansion is effectively optional for states. 10 states still have not expanded as of 2025.",
+                  "pillar": "policy"
+                },
+                {
+                  "year": "2023",
+                  "title": "Unwinding begins",
+                  "body": "Post-COVID continuous enrollment protection ends; states begin redetermining eligibility for ~90 million enrollees.",
+                  "pillar": "policy"
+                }
+              ]
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "92M",
+                  "label": "People enrolled in Medicaid/CHIP (2024)",
+                  "source": "CMS"
+                },
+                {
+                  "value": "$871B",
+                  "label": "Federal + state Medicaid spending (FY2023)",
+                  "source": "CMS"
+                },
+                {
+                  "value": "40%",
+                  "label": "Of all US births covered by Medicaid",
+                  "source": "KFF"
+                },
+                {
+                  "value": "63%",
+                  "label": "Of nursing home residents covered by Medicaid",
+                  "source": "KFF"
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "mediaType": "youtube",
+              "videoId": "3cBhsHb4Sp4",
+              "caption": "Medicaid at a glance \u2014 Kaiser Family Foundation overview (~7 min)",
+              "durationSeconds": 420
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Medicaid is not one program",
+              "body": "Each state runs its own Medicaid program within federal guidelines. Vermont's program (Green Mountain Care) looks very different from Texas's. Eligibility rules, covered services, payment rates, and delivery systems all vary. When someone says 'Medicaid,' they often mean something specific to their state."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_med_history",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_mh1",
+                "type": "single_choice",
+                "question": "What did the Supreme Court's 2012 NFIB v. Sebelius ruling determine about the ACA Medicaid expansion?",
+                "points": 1,
+                "explanation": "The Court ruled states could not be coerced into expanding Medicaid by threat of losing all existing federal Medicaid funding \u2014 making expansion effectively optional.",
+                "options": [
+                  {
+                    "id": "opt_mh1a",
+                    "text": "The ACA Medicaid expansion was unconstitutional and struck down entirely",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mh1b",
+                    "text": "States could not be forced to expand Medicaid \u2014 making expansion optional",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_mh1c",
+                    "text": "All states were required to expand Medicaid by 2014",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mh1d",
+                    "text": "The federal match rate for expansion was reduced from 90% to 75%",
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "id": "q_mh2",
+                "type": "single_choice",
+                "question": "What share of US births does Medicaid cover?",
+                "points": 1,
+                "options": [
+                  {
+                    "id": "opt_mh2a",
+                    "text": "About 20%",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mh2b",
+                    "text": "About 40%",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_mh2c",
+                    "text": "About 60%",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mh2d",
+                    "text": "About 15%",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_med_scope",
+          "trackId": "track_med_foundations",
+          "pillar": "policy",
+          "order": 2,
+          "slug": "medicaid-who-it-covers",
+          "title": "Who Medicaid Covers: Populations & Benefits",
+          "summary": "The mandatory and optional populations Medicaid must and may cover, and the mandatory vs. optional benefits framework.",
+          "estimatedMinutes": 16,
+          "isPublished": true,
+          "tags": [
+            "eligibility",
+            "benefits",
+            "populations",
+            "mandatory",
+            "optional"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_eligibility"
+          ],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_ms1",
+              "text": "Distinguish mandatory from optional Medicaid populations"
+            },
+            {
+              "id": "obj_ms2",
+              "text": "List the mandatory Medicaid benefits all states must cover"
+            },
+            {
+              "id": "obj_ms3",
+              "text": "Explain why benefits vary so much across states"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Not everyone who is poor qualifies",
+              "body": "A common misconception: Medicaid covers all low-income people. It does not. Medicaid covers specific *categories* of low-income people \u2014 and until the ACA, childless adults were largely excluded regardless of income.\n\nThe ACA changed this for expansion states by creating a new adult group (ages 19\u201364, income \u2264138% FPL) with no categorical requirement. But even today, in non-expansion states, a working-age adult without children and without a disability may have no path to Medicaid regardless of how poor they are."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Mandatory Medicaid populations (all states must cover)",
+              "items": [
+                {
+                  "icon": "ti-baby",
+                  "title": "Children",
+                  "body": "Children in families up to 138% FPL. CHIP covers additional children up to state-set limits, often 200\u2013300% FPL."
+                },
+                {
+                  "icon": "ti-heart-handshake",
+                  "title": "Pregnant women",
+                  "body": "Pregnant women up to 138% FPL for pregnancy-related services. Many states cover up to 200% FPL."
+                },
+                {
+                  "icon": "ti-wheelchair",
+                  "title": "People with disabilities",
+                  "body": "SSI recipients are automatically enrolled in most states. Covers significant long-term services and supports."
+                },
+                {
+                  "icon": "ti-users",
+                  "title": "Low-income seniors",
+                  "body": "\"Dual eligibles\" \u2014 people with both Medicare and Medicaid. Medicaid covers Medicare premiums, cost-sharing, and long-term care."
+                },
+                {
+                  "icon": "ti-home",
+                  "title": "Foster care youth",
+                  "body": "Children in foster care and, under ACA, former foster youth up to age 26."
+                },
+                {
+                  "icon": "ti-user-check",
+                  "title": "ACA adult group",
+                  "body": "In expansion states: non-pregnant adults 19\u201364 with income \u2264138% FPL, no categorical requirement."
+                }
+              ]
+            },
+            {
+              "type": "comparison_table",
+              "heading": "Mandatory vs. optional benefits",
+              "leftLabel": "Mandatory (all states must cover)",
+              "rightLabel": "Optional (states may choose to cover)",
+              "rows": [
+                {
+                  "label": "Inpatient hospital",
+                  "left": "\u2713 Required",
+                  "right": ""
+                },
+                {
+                  "label": "Outpatient hospital",
+                  "left": "\u2713 Required",
+                  "right": ""
+                },
+                {
+                  "label": "Physician services",
+                  "left": "\u2713 Required",
+                  "right": ""
+                },
+                {
+                  "label": "EPSDT (children)",
+                  "left": "\u2713 Required",
+                  "right": ""
+                },
+                {
+                  "label": "Family planning",
+                  "left": "\u2713 Required",
+                  "right": ""
+                },
+                {
+                  "label": "Prescription drugs",
+                  "left": "",
+                  "right": "Optional (all states cover)"
+                },
+                {
+                  "label": "Dental (adults)",
+                  "left": "",
+                  "right": "Optional (~35 states cover)"
+                },
+                {
+                  "label": "Vision (adults)",
+                  "left": "",
+                  "right": "Optional (~30 states cover)"
+                },
+                {
+                  "label": "Home & community-based services",
+                  "left": "",
+                  "right": "Optional (waiver required)"
+                },
+                {
+                  "label": "Personal care services",
+                  "left": "",
+                  "right": "Optional"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "EPSDT is a powerful children's benefit",
+              "body": "Early and Periodic Screening, Diagnostic, and Treatment (EPSDT) requires states to cover any medically necessary service for children under 21 \u2014 even if that service is optional for adults. This makes children's Medicaid benefits significantly broader than adult benefits in many states."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_med_scope",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_ms1",
+                "type": "single_choice",
+                "question": "Are prescription drugs a mandatory Medicaid benefit that all states must cover?",
+                "points": 1,
+                "explanation": "Prescription drugs are technically an optional benefit \u2014 but all 50 states and DC cover them because formulary drug coverage is practically essential and federal law provides strong rebate incentives.",
+                "options": [
+                  {
+                    "id": "opt_ms1a",
+                    "text": "Yes, all states are required to cover prescription drugs",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ms1b",
+                    "text": "No, prescription drugs are optional \u2014 but all states cover them in practice",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_ms1c",
+                    "text": "Only generic drugs are mandatory; brand-name drugs are optional",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ms1d",
+                    "text": "Prescription drugs are only covered for children under Medicaid",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_med_chip",
+          "pillar": "policy",
+          "order": 3,
+          "slug": "chip-childrens-health-insurance",
+          "title": "CHIP: The Children's Health Insurance Program",
+          "summary": "How CHIP fills coverage gaps above Medicaid for children, its separate federal matching structure, and the recurring reauthorization battles.",
+          "estimatedMinutes": 15,
+          "isPublished": true,
+          "tags": [
+            "CHIP",
+            "children",
+            "Title XXI",
+            "SCHIP",
+            "reauthorization"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_scope"
+          ],
+          "objectives": [
+            {
+              "id": "obj_chip1",
+              "text": "Explain the difference between Medicaid and CHIP for children"
+            },
+            {
+              "id": "obj_chip2",
+              "text": "Describe CHIP's federal matching structure and why it differs from Medicaid"
+            },
+            {
+              "id": "obj_chip3",
+              "text": "Explain the significance of CHIP reauthorization battles for children's coverage"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The coverage gap for children above Medicaid limits",
+              "body": "When Congress expanded Medicaid for children in the late 1980s, it raised income limits for coverage \u2014 but many families still fell in a gap: too much income for Medicaid, too little to afford private insurance. The Balanced Budget Act of 1997 created CHIP (then called SCHIP \u2014 State Children's Health Insurance Program, Title XXI) to fill that gap.\n\nCHIP covers children in families earning between the Medicaid limit and an upper threshold set by each state \u2014 most states cover up to 200\u2013300% FPL, and several go higher. States can run CHIP as a separate program, expand Medicaid directly, or combine both approaches."
+            },
+            {
+              "type": "comparison_table",
+              "heading": "Medicaid vs. CHIP for children",
+              "leftLabel": "Medicaid (Title XIX)",
+              "rightLabel": "CHIP (Title XXI)",
+              "rows": [
+                {
+                  "label": "Income limit",
+                  "left": "\u2264138% FPL (expansion states)",
+                  "right": "Varies: typically 200\u2013300% FPL"
+                },
+                {
+                  "label": "Federal match",
+                  "left": "State FMAP (50\u201383%)",
+                  "right": "Enhanced FMAP: state FMAP + 15 points, minimum 65%"
+                },
+                {
+                  "label": "Premium/cost-sharing",
+                  "left": "Very limited",
+                  "right": "States may charge modest premiums/copays"
+                },
+                {
+                  "label": "Benefits",
+                  "left": "Full EPSDT benefit required",
+                  "right": "Benchmark or benchmark-equivalent benefit"
+                },
+                {
+                  "label": "Entitlement",
+                  "left": "Federal entitlement \u2014 must cover all eligible",
+                  "right": "Capped allotment \u2014 states can freeze enrollment if funds run out"
+                }
+              ]
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "7.2M",
+                  "label": "Children enrolled in CHIP (2024)",
+                  "source": "CMS"
+                },
+                {
+                  "value": "72%+",
+                  "label": "Average federal CHIP match rate",
+                  "source": "CMS"
+                },
+                {
+                  "value": "200%\u2013320%",
+                  "label": "FPL range across state CHIP income limits",
+                  "source": "KFF"
+                },
+                {
+                  "value": "97%",
+                  "label": "Of US children have health coverage when Medicaid+CHIP included",
+                  "source": "CMS"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "CHIP is not an entitlement \u2014 funding lapses matter",
+              "body": "Unlike Medicaid, CHIP is funded through annual Congressional appropriations (capped allotments). When funding lapses \u2014 as it did in 2017, creating a 114-day gap \u2014 states face the prospect of freezing enrollment or disenrolling children. This makes CHIP politically vulnerable in ways that Medicaid's entitlement structure is not."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_chip",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_chip1",
+                "type": "single_choice",
+                "question": "Why does CHIP receive a higher federal matching rate than standard Medicaid?",
+                "points": 1,
+                "explanation": "CHIP's enhanced FMAP (state FMAP + 15 percentage points, minimum 65%) was designed to incentivize states to create and expand the program for children above Medicaid limits.",
+                "options": [
+                  {
+                    "id": "opt_chip1a",
+                    "text": "Children's health care costs are lower, so the federal government subsidizes more",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_chip1b",
+                    "text": "The enhanced FMAP incentivizes states to extend coverage to children above Medicaid income limits",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_chip1c",
+                    "text": "CHIP was created during a budget surplus, so Congress could afford a higher match",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_chip1d",
+                    "text": "Children in CHIP have more complex health needs than Medicaid children",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_med_dual",
+          "pillar": "policy",
+          "order": 4,
+          "slug": "dual-eligibles-medicare-medicaid",
+          "title": "Dual Eligibles: Where Medicare Meets Medicaid",
+          "summary": "The 12 million people enrolled in both Medicare and Medicaid \u2014 who they are, how coordination works (and fails), and the integrated care models designed to fix it.",
+          "estimatedMinutes": 18,
+          "isPublished": true,
+          "tags": [
+            "dual eligibles",
+            "Medicare-Medicaid",
+            "integration",
+            "D-SNP",
+            "PACE"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_scope"
+          ],
+          "objectives": [
+            {
+              "id": "obj_dual1",
+              "text": "Describe who dual eligibles are and why they are the highest-cost population in public coverage"
+            },
+            {
+              "id": "obj_dual2",
+              "text": "Explain the coordination problems that arise when Medicare and Medicaid don't communicate"
+            },
+            {
+              "id": "obj_dual3",
+              "text": "Identify the integrated care models designed to serve duals more effectively"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Two programs, one person, coordination chaos",
+              "body": "Approximately 12 million people are enrolled in both Medicare (which covers most health care for people 65+ and those with qualifying disabilities) and Medicaid (which covers low-income populations). These 'dual eligibles' are among the sickest and most expensive people in either program \u2014 averaging costs more than 4x those of Medicare-only beneficiaries.\n\nThe problem: Medicare and Medicaid were designed independently, with different rules, different payment systems, different covered services, and different administrative structures. For a dual eligible, this means: Medicare pays for acute and post-acute care; Medicaid pays for long-term services and supports. But neither program is responsible for coordinating the whole person's care."
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "12M",
+                  "label": "Dual eligible beneficiaries (Medicare + Medicaid)",
+                  "source": "CMS"
+                },
+                {
+                  "value": "35%",
+                  "label": "Of Medicaid spending goes to dual eligibles",
+                  "source": "MedPAC"
+                },
+                {
+                  "value": "4x",
+                  "label": "Higher average cost of dual eligibles vs. Medicare-only",
+                  "source": "CMS"
+                },
+                {
+                  "value": "1 in 3",
+                  "label": "Dual eligibles has a serious mental illness",
+                  "source": "CMS"
+                }
+              ]
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Integrated care models for duals",
+              "items": [
+                {
+                  "icon": "ti-building-hospital",
+                  "title": "PACE",
+                  "body": "Program of All-Inclusive Care for the Elderly. Comprehensive day-program model for nursing-home-eligible duals. Single capitation covers all Medicare and Medicaid services. Very high satisfaction."
+                },
+                {
+                  "icon": "ti-heart-handshake",
+                  "title": "D-SNPs",
+                  "body": "Dual Eligible Special Needs Plans. Medicare Advantage plans designed for duals. States are increasingly requiring D-SNPs to coordinate with Medicaid through Highly Integrated D-SNPs (HIDSNPs)."
+                },
+                {
+                  "icon": "ti-refresh",
+                  "title": "Financial Alignment Initiative",
+                  "body": "CMS demonstration that aligned Medicare and Medicaid financing for duals in 13 states. Mixed results \u2014 some savings, significant enrollment challenges."
+                },
+                {
+                  "icon": "ti-star",
+                  "title": "CMS Unified Plan",
+                  "body": "CMS is moving toward requiring all duals to have a single integrated plan for both Medicare and Medicaid benefits by 2027 in states that participate."
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_dual",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_dual1",
+                "type": "single_choice",
+                "question": "Why do dual eligibles account for a disproportionate share of Medicaid spending?",
+                "points": 1,
+                "explanation": "Dual eligibles are among the sickest, most complex patients \u2014 often with multiple chronic conditions, behavioral health needs, and need for long-term services. They account for about 35% of Medicaid spending despite being a smaller share of enrollment.",
+                "options": [
+                  {
+                    "id": "opt_dual1a",
+                    "text": "States receive higher FMAP for dual eligibles, incentivizing more spending",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_dual1b",
+                    "text": "They have the highest health complexity and often need long-term services that Medicaid covers",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_dual1c",
+                    "text": "Medicare does not cover outpatient services for duals, so Medicaid pays for everything",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_dual1d",
+                    "text": "Dual eligibles are disproportionately represented in states with generous Medicaid programs",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_med_eligibility",
+      "courseId": "course_medicaid_101",
+      "pillar": "policy",
+      "order": 2,
+      "slug": "medicaid-eligibility",
+      "title": "Eligibility & Enrollment",
+      "description": "How income is calculated using MAGI, the redetermination process, the coverage gap in non-expansion states, and the post-COVID unwinding.",
+      "icon": "ti-user-check",
+      "targetAudience": [
+        "Eligibility workers",
+        "Navigators",
+        "Policy staff"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_med_eligibility",
+          "trackId": "track_med_eligibility",
+          "pillar": "policy",
+          "order": 1,
+          "slug": "medicaid-eligibility-magi",
+          "title": "How Medicaid Eligibility Works: MAGI & Income Rules",
+          "summary": "Modified Adjusted Gross Income (MAGI), the 5% income disregard, household composition rules, and the difference between Medicaid and marketplace eligibility.",
+          "estimatedMinutes": 20,
+          "isPublished": true,
+          "tags": [
+            "MAGI",
+            "eligibility",
+            "FPL",
+            "income",
+            "household"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_scope"
+          ],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_me1",
+              "text": "Explain what MAGI is and why the ACA standardized it for Medicaid"
+            },
+            {
+              "id": "obj_me2",
+              "text": "Calculate whether a hypothetical household is Medicaid-eligible"
+            },
+            {
+              "id": "obj_me3",
+              "text": "Describe the coverage gap and who it affects"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Before the ACA: a patchwork of rules",
+              "body": "Before 2014, each state used its own income-counting methodology \u2014 some used gross income, others net income, others deducted specific expenses. A person could be eligible in Vermont but not New Hampshire even with identical income. The ACA standardized eligibility for most groups using Modified Adjusted Gross Income (MAGI) \u2014 the same concept used for federal tax purposes."
+            },
+            {
+              "type": "text",
+              "heading": "What MAGI includes (and excludes)",
+              "body": "MAGI for Medicaid = Adjusted Gross Income (from federal tax return) + untaxed foreign income + tax-exempt interest + non-taxable Social Security benefits.\n\nNotably excluded: assets. Unlike the old Medicaid rules, MAGI-based eligibility does not count savings accounts, home equity, or car values. A person with $50,000 in a savings account can qualify if their income is low enough. (This does not apply to long-term care Medicaid \u2014 asset tests still apply there.)\n\nThe ACA also added a standard 5% FPL income disregard \u2014 effectively raising the income limit by 5 percentage points. So a state with a 133% FPL limit actually covers people up to 138% FPL in practice."
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "138%",
+                  "label": "FPL \u2014 ACA adult expansion limit (with 5% disregard)",
+                  "source": "CMS"
+                },
+                {
+                  "value": "$20,783",
+                  "label": "138% FPL for single adult (2024)",
+                  "source": "HHS"
+                },
+                {
+                  "value": "~2.5M",
+                  "label": "People in the coverage gap (non-expansion states, 2024)",
+                  "source": "KFF"
+                },
+                {
+                  "value": "10",
+                  "label": "States that have not expanded Medicaid as of 2025",
+                  "source": "KFF"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "The coverage gap: when you're too poor for help",
+              "body": "In non-expansion states, adults without children or disabilities often fall into a 'coverage gap': they earn too much for traditional Medicaid (which may have limits well below 100% FPL) but too little for ACA marketplace subsidies (which start at 100% FPL). An estimated 2.5 million people are trapped in this gap \u2014 poor enough that they can't afford coverage, but ineligible for either program."
+            },
+            {
+              "type": "audio_slot",
+              "label": "Eligibility worker perspective: common misconceptions",
+              "hint": "Interview a Medicaid eligibility worker or navigator about the top misconceptions applicants have about income rules, asset tests, and the application process. Recommended: 5\u20138 minutes."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_med_eligibility",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_me1",
+                "type": "single_choice",
+                "question": "Under MAGI-based Medicaid eligibility, does a $40,000 savings account disqualify an otherwise eligible applicant?",
+                "points": 1,
+                "explanation": "MAGI-based Medicaid does not count assets \u2014 only income. Asset tests were eliminated for most Medicaid groups under the ACA. (Exception: long-term care Medicaid still has asset rules.)",
+                "options": [
+                  {
+                    "id": "opt_me1a",
+                    "text": "Yes, assets above $2,000 disqualify applicants",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_me1b",
+                    "text": "No, MAGI-based eligibility does not count assets",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_me1c",
+                    "text": "Only retirement accounts are excluded; regular savings count",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_me1d",
+                    "text": "Assets are counted but only above $10,000",
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "id": "q_me2",
+                "type": "single_choice",
+                "question": "The 'coverage gap' in non-expansion states affects people who:",
+                "points": 1,
+                "options": [
+                  {
+                    "id": "opt_me2a",
+                    "text": "Earn too much for marketplace subsidies but too little for Medicaid",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_me2b",
+                    "text": "Earn too much for traditional Medicaid but too little for marketplace subsidies",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_me2c",
+                    "text": "Are eligible for both Medicaid and Medicare simultaneously",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_me2d",
+                    "text": "Have pre-existing conditions that disqualify them from marketplace plans",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_med_unwinding",
+          "trackId": "track_med_eligibility",
+          "pillar": "policy",
+          "order": 2,
+          "slug": "medicaid-unwinding-redeterminations",
+          "title": "The Great Unwinding: Post-COVID Redeterminations",
+          "summary": "How the COVID continuous enrollment protection worked, what the unwinding meant for states and enrollees, and lessons for eligibility modernization.",
+          "estimatedMinutes": 15,
+          "isPublished": true,
+          "tags": [
+            "unwinding",
+            "redetermination",
+            "COVID",
+            "continuous enrollment",
+            "churn"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_eligibility"
+          ],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_mu1",
+              "text": "Explain what the continuous enrollment condition was and why it ended"
+            },
+            {
+              "id": "obj_mu2",
+              "text": "Describe the scale of the unwinding and its equity implications"
+            },
+            {
+              "id": "obj_mu3",
+              "text": "Identify policy lessons for reducing inappropriate disenrollment"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The freeze and the thaw",
+              "body": "In March 2020, the Families First Coronavirus Response Act included a provision: states could receive enhanced federal matching funds (a 6.2 percentage point FMAP increase) in exchange for maintaining continuous enrollment \u2014 they could not disenroll anyone from Medicaid during the public health emergency, even if their circumstances changed.\n\nEnrollment surged from ~71 million to ~94 million. The continuous enrollment protection ended April 1, 2023. States had 12 months to complete redeterminations for everyone. The process \u2014 called the 'unwinding' \u2014 became one of the largest eligibility events in Medicaid history."
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "23M+",
+                  "label": "People disenrolled during the unwinding (through 2024)",
+                  "source": "KFF"
+                },
+                {
+                  "value": "~70%",
+                  "label": "Of disenrollments due to procedural reasons (not income)",
+                  "source": "KFF"
+                },
+                {
+                  "value": "4.8M",
+                  "label": "Children disenrolled during the unwinding",
+                  "source": "Georgetown CCF"
+                },
+                {
+                  "value": "12",
+                  "label": "Months states had to complete redeterminations",
+                  "source": "CMS"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "Most disenrollments were procedural",
+              "body": "The majority of people losing Medicaid coverage during the unwinding were disenrolled for procedural reasons \u2014 outdated addresses, returned mail, inability to reach enrollees \u2014 not because they were actually ineligible. Many were still poor enough to qualify but lost coverage anyway. This highlighted structural failures in state eligibility systems."
+            },
+            {
+              "type": "video",
+              "mediaType": "youtube",
+              "videoId": "Z7hGgqm26LE",
+              "caption": "Medicaid unwinding \u2014 KFF explainer on the redetermination process (~6 min)",
+              "durationSeconds": 360
+            }
+          ],
+          "quiz": {
+            "id": "quiz_med_unwinding",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_mu1",
+                "type": "single_choice",
+                "question": "What was the primary reason most people lost Medicaid coverage during the 2023\u20132024 unwinding?",
+                "points": 1,
+                "explanation": "Studies found that roughly 70% of disenrollments were for procedural reasons \u2014 outdated contact information, returned mail, etc. \u2014 not because enrollees were actually ineligible.",
+                "options": [
+                  {
+                    "id": "opt_mu1a",
+                    "text": "They found jobs and their income rose above the eligibility limit",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mu1b",
+                    "text": "Procedural reasons: outdated addresses, returned mail, unreachable enrollees",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_mu1c",
+                    "text": "They voluntarily switched to employer-sponsored insurance",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mu1d",
+                    "text": "Congress reduced the income eligibility threshold during the unwinding",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_med_smi",
+          "pillar": "policy",
+          "order": 3,
+          "slug": "medicaid-behavioral-health-coverage",
+          "title": "Medicaid & Behavioral Health: The IMD Exclusion and SUD Treatment",
+          "summary": "How Medicaid covers (and fails to cover) mental health and substance use disorder services \u2014 the IMD exclusion, the opioid crisis response, and 1115 waivers for behavioral health.",
+          "estimatedMinutes": 17,
+          "isPublished": true,
+          "tags": [
+            "behavioral health",
+            "IMD exclusion",
+            "SUD",
+            "mental health",
+            "opioid crisis"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_eligibility"
+          ],
+          "objectives": [
+            {
+              "id": "obj_bh1",
+              "text": "Explain what the IMD exclusion is and why it limits Medicaid coverage for mental health"
+            },
+            {
+              "id": "obj_bh2",
+              "text": "Describe how Medicaid covers SUD treatment and the role of 1115 waivers"
+            },
+            {
+              "id": "obj_bh3",
+              "text": "Identify the policy changes that have expanded behavioral health coverage in Medicaid"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The IMD exclusion: a 1965 policy with 2024 consequences",
+              "body": "When Medicaid was created in 1965, Congress included the Institution for Mental Disease (IMD) exclusion: Medicaid cannot pay for care in facilities with more than 16 beds that primarily treat mental illness or substance use disorders. The rationale was to push states to use community mental health systems rather than large state psychiatric hospitals.\n\nSix decades later, the IMD exclusion limits inpatient psychiatric care and residential SUD treatment for Medicaid beneficiaries at the time they most need it \u2014 during a psychiatric crisis or acute addiction episode. A person having a mental health crisis who needs a 28-day residential program may not be able to access Medicaid-funded care if the facility has more than 16 beds."
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "The opioid crisis and the waiver response",
+              "body": "The opioid epidemic made the IMD exclusion's consequences undeniable. CMS began approving Section 1115 waivers specifically to allow states to pay for short-term residential SUD treatment in larger facilities. By 2024, more than 35 states had received these waivers. The Consolidated Appropriations Act of 2023 also created a narrow permanent exception allowing Medicaid to pay for short-term inpatient psychiatric care, a partial legislative fix."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Medicaid behavioral health coverage landscape",
+              "items": [
+                {
+                  "icon": "ti-brain",
+                  "title": "Outpatient MH",
+                  "body": "Covered in all states \u2014 therapy, psychiatric medication management, crisis services. The most accessible Medicaid BH benefit."
+                },
+                {
+                  "icon": "ti-building-hospital",
+                  "title": "Inpatient psych",
+                  "body": "Limited by IMD exclusion for facilities >16 beds. Short-term exception (15 days/month) newly available under 2023 legislation."
+                },
+                {
+                  "icon": "ti-pill",
+                  "title": "MOUD",
+                  "body": "Medications for opioid use disorder (buprenorphine, methadone, naltrexone) \u2014 covered in all states after 2021 CMS guidance removed prior auth requirements."
+                },
+                {
+                  "icon": "ti-home",
+                  "title": "Residential SUD",
+                  "body": "Available in 35+ states via 1115 waiver. Short-term residential treatment for opioid and other substance use disorders."
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_bh",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_bh1",
+                "type": "single_choice",
+                "question": "What does the IMD exclusion prohibit in Medicaid?",
+                "points": 1,
+                "explanation": "The IMD exclusion prohibits Medicaid payment for care in facilities with more than 16 beds that primarily treat mental illness or substance use disorders \u2014 limiting inpatient psychiatric and residential SUD treatment.",
+                "options": [
+                  {
+                    "id": "opt_bh1a",
+                    "text": "Coverage of outpatient mental health services in community settings",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_bh1b",
+                    "text": "Medicaid payment for care in large (>16 bed) facilities primarily treating mental illness or SUD",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_bh1c",
+                    "text": "Coverage of medications for opioid use disorder (buprenorphine, naltrexone)",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_bh1d",
+                    "text": "States from contracting with managed care organizations for behavioral health",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_med_financing",
+      "courseId": "course_medicaid_101",
+      "pillar": "economics",
+      "order": 3,
+      "slug": "medicaid-financing",
+      "title": "Federal-State Financing",
+      "description": "How Medicaid is funded: FMAP, the federal match, state budgets, and the politics of federal funding formulas.",
+      "icon": "ti-coin",
+      "targetAudience": [
+        "Budget analysts",
+        "Policy staff",
+        "State agency staff"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_med_fmap",
+          "trackId": "track_med_financing",
+          "pillar": "economics",
+          "order": 1,
+          "slug": "medicaid-fmap-federal-match",
+          "title": "The Federal Match: How FMAP Works",
+          "summary": "The Federal Medical Assistance Percentage (FMAP), how it is calculated, why it varies by state, and what enhanced FMAPs mean for state budgets.",
+          "estimatedMinutes": 18,
+          "isPublished": true,
+          "tags": [
+            "FMAP",
+            "federal match",
+            "financing",
+            "state budget"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_mf1",
+              "text": "Define FMAP and explain how it is calculated"
+            },
+            {
+              "id": "obj_mf2",
+              "text": "Explain why richer states have lower FMAPs"
+            },
+            {
+              "id": "obj_mf3",
+              "text": "Describe the enhanced FMAP for ACA expansion and its fiscal significance"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Every Medicaid dollar is matched",
+              "body": "Medicaid is an entitlement program with open-ended federal funding. For every dollar a state spends on covered services for eligible beneficiaries, the federal government pays back a share \u2014 the Federal Medical Assistance Percentage (FMAP).\n\nFMAP is calculated based on each state's per capita income relative to the national average. Poorer states get higher federal matches (up to 83%); wealthier states get lower matches (the statutory floor is 50%). Vermont's FMAP is approximately 56%; Mississippi's is approximately 77%.\n\nThis design is redistributive: federal dollars flow disproportionately to states with lower income \u2014 and lower tax capacity \u2014 giving them a stronger safety net than they could afford alone."
+            },
+            {
+              "type": "comparison_table",
+              "heading": "FMAP examples (approximate 2024)",
+              "leftLabel": "State",
+              "rightLabel": "Federal pays / State pays",
+              "rows": [
+                {
+                  "label": "Mississippi (lowest income)",
+                  "left": "Mississippi",
+                  "right": "77% federal / 23% state"
+                },
+                {
+                  "label": "West Virginia",
+                  "left": "West Virginia",
+                  "right": "74% federal / 26% state"
+                },
+                {
+                  "label": "Vermont",
+                  "left": "Vermont",
+                  "right": "56% federal / 44% state"
+                },
+                {
+                  "label": "California",
+                  "left": "California",
+                  "right": "50% federal / 50% state"
+                },
+                {
+                  "label": "ACA expansion (all states)",
+                  "left": "Expansion adults",
+                  "right": "90% federal / 10% state (permanent)"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Enhanced FMAPs reward state action",
+              "body": "Congress has used enhanced FMAPs as policy levers: COVID-19 added 6.2 points, ACA expansion gets a permanent 90% match, and the American Rescue Plan offered states a 5-point increase if they expanded Medicaid. The fiscal incentive is powerful \u2014 a state covering one new expansion enrollee at 90% federal match only risks 10 cents of state money per dollar spent."
+            },
+            {
+              "type": "text",
+              "heading": "Block grants vs. the current structure",
+              "body": "Periodically, Congress debates converting Medicaid to a block grant \u2014 a fixed annual payment to states regardless of enrollment or spending. Proponents argue it gives states flexibility and controls federal spending. Opponents note that the current open-ended match is counter-cyclical: federal support automatically increases during recessions when enrollment grows and state revenues fall. A block grant would shift this recession risk entirely to states."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_med_fmap",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_mf1",
+                "type": "single_choice",
+                "question": "Why do poorer states receive a higher FMAP than wealthier states?",
+                "points": 1,
+                "explanation": "FMAP is inversely related to state per capita income \u2014 states with lower average incomes receive higher federal matches because they have less tax capacity to finance their share of Medicaid.",
+                "options": [
+                  {
+                    "id": "opt_mf1a",
+                    "text": "Poorer states have more Medicaid enrollees, so they need more federal help",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mf1b",
+                    "text": "FMAP is inversely related to per capita income \u2014 poorer states have less tax capacity",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_mf1c",
+                    "text": "Federal law requires all states to receive the same FMAP",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mf1d",
+                    "text": "Poorer states negotiate higher FMAPs based on their Medicaid quality scores",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_med_dsh",
+          "pillar": "economics",
+          "order": 2,
+          "slug": "medicaid-dsh-supplemental-payments",
+          "title": "DSH Payments, UPL & Supplemental Financing",
+          "summary": "How Disproportionate Share Hospital payments, Upper Payment Limit arrangements, and provider taxes let states maximize federal Medicaid dollars \u2014 and the audit risks.",
+          "estimatedMinutes": 17,
+          "isPublished": true,
+          "tags": [
+            "DSH",
+            "UPL",
+            "supplemental payments",
+            "provider tax",
+            "financing"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_fmap"
+          ],
+          "objectives": [
+            {
+              "id": "obj_dsh1",
+              "text": "Explain what DSH payments are and why Congress created them"
+            },
+            {
+              "id": "obj_dsh2",
+              "text": "Describe how states use provider taxes and IGTs to maximize federal Medicaid dollars"
+            },
+            {
+              "id": "obj_dsh3",
+              "text": "Explain the audit and compliance risks around supplemental payment arrangements"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Disproportionate Share Hospital payments",
+              "body": "Hospitals that serve a high proportion of Medicaid and uninsured patients \u2014 called Disproportionate Share Hospitals (DSH) \u2014 receive additional Medicaid payments above their standard rates. Congress created DSH payments in 1981 to compensate these hospitals for the financial burden of providing uncompensated care.\n\nDSH payments are capped at the federal level (about $12B annually) and distributed to states by formula. States then further allocate to hospitals meeting DSH criteria. The ACA was supposed to cut DSH payments substantially \u2014 on the theory that expanded coverage would reduce uncompensated care \u2014 but Congress has repeatedly delayed these cuts."
+            },
+            {
+              "type": "text",
+              "heading": "Provider taxes and IGTs: financing games",
+              "body": "States have developed sophisticated mechanisms to maximize federal Medicaid dollars beyond the base FMAP:\n\n**Provider taxes**: States impose taxes on hospitals, nursing facilities, or MCOs. The tax revenue is used as the state's share of Medicaid \u2014 which is then matched by federal FMAP dollars. The net result: states capture more federal dollars per dollar of actual state general fund spending.\n\n**Intergovernmental Transfers (IGTs)**: Public hospitals or counties transfer funds to the state Medicaid agency, which then makes supplemental payments back to those providers after claiming federal match on the funds. Again, net effect is maximizing federal matching with minimal general fund exposure.\n\nCMS has repeatedly tried to limit these arrangements; states have repeatedly found new approaches."
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "Upper Payment Limit and audit risk",
+              "body": "Supplemental payments to providers cannot exceed what Medicare would pay for the same services \u2014 the Upper Payment Limit (UPL). CMS audits have found numerous states making supplemental payments that exceeded UPL, resulting in large repayments. Provider taxes and IGT arrangements are an active area of federal scrutiny."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_dsh",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_dsh1",
+                "type": "single_choice",
+                "question": "What is the purpose of Disproportionate Share Hospital (DSH) payments?",
+                "points": 1,
+                "explanation": "DSH payments compensate hospitals that serve high proportions of Medicaid and uninsured patients for the financial burden of providing uncompensated care.",
+                "options": [
+                  {
+                    "id": "opt_dsh1a",
+                    "text": "To pay hospitals that achieve the highest quality scores on Medicaid measures",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_dsh1b",
+                    "text": "To compensate hospitals serving disproportionately high shares of Medicaid and uninsured patients",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_dsh1c",
+                    "text": "To fund hospital construction projects in underserved areas",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_dsh1d",
+                    "text": "To offset the cost of graduate medical education for Medicaid residents",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_med_state_budget",
+          "pillar": "economics",
+          "order": 3,
+          "slug": "medicaid-state-budget-pressure",
+          "title": "Medicaid & State Budgets: The Biggest Line Item",
+          "summary": "Why Medicaid has become the largest item in most state budgets, how enrollment growth drives fiscal pressure, and the policy levers states use to control costs.",
+          "estimatedMinutes": 15,
+          "isPublished": true,
+          "tags": [
+            "state budget",
+            "cost control",
+            "enrollment growth",
+            "provider rates"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_fmap"
+          ],
+          "objectives": [
+            {
+              "id": "obj_sb1",
+              "text": "Explain why Medicaid is the largest or second-largest item in most state budgets"
+            },
+            {
+              "id": "obj_sb2",
+              "text": "Identify the main drivers of Medicaid cost growth"
+            },
+            {
+              "id": "obj_sb3",
+              "text": "Describe the primary levers states use to control Medicaid spending"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The budget reality",
+              "body": "In most states, Medicaid is either the largest or second-largest expenditure in the state budget \u2014 typically 20\u201328% of all state spending, ahead of elementary and secondary education in many states. This was not always the case: Medicaid spending has grown from $118B in 1990 to over $900B today (federal + state combined).\n\nFor state budget directors, Medicaid is the variable that matters most. Enrollment is counter-cyclical \u2014 it grows during recessions precisely when state revenues fall. A single economic downturn can add hundreds of thousands of Medicaid enrollees at the worst possible fiscal moment."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Levers states use to control Medicaid costs",
+              "items": [
+                {
+                  "icon": "ti-coin",
+                  "title": "Provider rates",
+                  "body": "States set reimbursement rates for fee-for-service and influence MCO rates. Low rates reduce spending but drive providers out of Medicaid networks, harming access."
+                },
+                {
+                  "icon": "ti-clipboard",
+                  "title": "Prior authorization",
+                  "body": "Requiring clinical review before covering expensive services. Can be clinically appropriate or a barrier to needed care \u2014 active area of federal reform."
+                },
+                {
+                  "icon": "ti-building-hospital",
+                  "title": "Managed care",
+                  "body": "Shifting to capitated MCOs provides spending predictability and theoretically incentivizes MCOs to prevent high-cost utilization."
+                },
+                {
+                  "icon": "ti-adjustments",
+                  "title": "Benefit restrictions",
+                  "body": "Cutting optional benefits (adult dental, vision, therapy limits) to reduce spending. Often politically easier than rate cuts."
+                },
+                {
+                  "icon": "ti-user-minus",
+                  "title": "Eligibility restrictions",
+                  "body": "Limiting optional populations, tightening income thresholds, or adding documentation burdens. The most direct cost control but reduces coverage."
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_state_budget",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_sb1",
+                "type": "single_choice",
+                "question": "Why is Medicaid enrollment described as 'counter-cyclical'?",
+                "points": 1,
+                "explanation": "Medicaid enrollment grows during economic downturns (recessions) as people lose jobs and income \u2014 precisely when state tax revenues are falling. This makes Medicaid a fiscal challenge that compounds during the worst budget moments.",
+                "options": [
+                  {
+                    "id": "opt_sb1a",
+                    "text": "Medicaid enrollment declines when the economy grows, because people get employer insurance",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_sb1b",
+                    "text": "Enrollment grows during recessions when state revenues fall \u2014 amplifying fiscal stress",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_sb1c",
+                    "text": "Medicaid costs cycle predictably with the federal budget cycle",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_sb1d",
+                    "text": "States can counter Medicaid cost growth by cycling eligibility rules",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_med_managed_care",
+      "courseId": "course_medicaid_101",
+      "pillar": "economics",
+      "order": 4,
+      "slug": "medicaid-managed-care",
+      "title": "Managed Care",
+      "description": "How most states deliver Medicaid through managed care organizations, capitated payments, network adequacy, and quality requirements.",
+      "icon": "ti-building-hospital",
+      "targetAudience": [
+        "MCO staff",
+        "Provider relations",
+        "Policy staff"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_med_mco",
+          "trackId": "track_med_managed_care",
+          "pillar": "economics",
+          "order": 1,
+          "slug": "medicaid-managed-care-organizations",
+          "title": "MCOs: Capitation, Networks & Accountability",
+          "summary": "How Medicaid managed care organizations are paid, contracted, and held accountable \u2014 and why states moved from fee-for-service to managed care.",
+          "estimatedMinutes": 20,
+          "isPublished": true,
+          "tags": [
+            "managed care",
+            "MCO",
+            "capitation",
+            "PMPM",
+            "network adequacy"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_mm1",
+              "text": "Explain how capitated managed care differs from fee-for-service"
+            },
+            {
+              "id": "obj_mm2",
+              "text": "Describe how states set capitation rates and what actuarial soundness means"
+            },
+            {
+              "id": "obj_mm3",
+              "text": "Identify the key accountability mechanisms for Medicaid MCOs"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The shift to managed care",
+              "body": "In 1980, nearly all Medicaid was delivered fee-for-service: states paid providers directly for each covered service. By 2023, approximately 72% of Medicaid beneficiaries \u2014 and 55% of Medicaid spending \u2014 flows through managed care organizations (MCOs).\n\nThe shift happened for several reasons: states wanted cost predictability, MCOs promised care coordination, and federal law in the 1990s made it easier for states to mandate managed care enrollment without federal waivers."
+            },
+            {
+              "type": "comparison_table",
+              "heading": "Fee-for-service vs. managed care",
+              "leftLabel": "Fee-for-Service",
+              "rightLabel": "Managed Care (Capitation)",
+              "rows": [
+                {
+                  "label": "Payment model",
+                  "left": "State pays provider per service",
+                  "right": "State pays MCO fixed monthly amount per member (PMPM)"
+                },
+                {
+                  "label": "Financial risk",
+                  "left": "State bears all cost risk",
+                  "right": "MCO bears utilization risk within contracted services"
+                },
+                {
+                  "label": "Care coordination",
+                  "left": "Fragmented; each provider bills separately",
+                  "right": "MCO responsible for coordinating care"
+                },
+                {
+                  "label": "Cost predictability",
+                  "left": "Unpredictable \u2014 depends on utilization",
+                  "right": "Predictable state budget (per PMPM rate)"
+                },
+                {
+                  "label": "Provider payment",
+                  "left": "State sets rates directly",
+                  "right": "MCO sets rates within contract minimums"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Actuarial soundness: the legal floor",
+              "body": "Federal law requires that Medicaid capitation rates be 'actuarially sound' \u2014 sufficient to pay for covered services for the enrolled population. States must document their actuarial basis. Rates that are too low create financial pressure on MCOs that can result in inadequate provider networks, prior authorization barriers, or insolvency."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "MCO accountability mechanisms",
+              "items": [
+                {
+                  "icon": "ti-file-text",
+                  "title": "Contracts",
+                  "body": "State-MCO contracts specify covered services, network requirements, quality measures, and financial penalties for non-compliance."
+                },
+                {
+                  "icon": "ti-chart-bar",
+                  "title": "HEDIS measures",
+                  "body": "MCOs report standardized quality measures (HEDIS). States may tie a portion of capitation to performance on key measures."
+                },
+                {
+                  "icon": "ti-users",
+                  "title": "Network adequacy",
+                  "body": "Federal rules require MCOs to maintain sufficient providers (time/distance standards) so enrollees can access covered services."
+                },
+                {
+                  "icon": "ti-cash",
+                  "title": "MLR requirements",
+                  "body": "MCOs must spend at least 85% of premium revenue on medical costs (medical loss ratio). Excess profit must be returned to the state."
+                }
+              ]
+            },
+            {
+              "type": "audio_slot",
+              "label": "MCO perspective: managing Medicaid populations",
+              "hint": "Interview a Medicaid MCO medical director or care coordinator about the realities of managing complex populations, prior authorization challenges, and value-based contracting with providers. Recommended: 8\u201310 minutes."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_med_mco",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_mm1",
+                "type": "single_choice",
+                "question": "What does 'actuarially sound' mean for Medicaid capitation rates?",
+                "points": 1,
+                "explanation": "Actuarial soundness means rates must be sufficient to pay for covered services for the enrolled population, based on documented actuarial analysis.",
+                "options": [
+                  {
+                    "id": "opt_mm1a",
+                    "text": "Rates must be lower than what Medicare pays for the same services",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mm1b",
+                    "text": "Rates must be sufficient to cover expected costs for the enrolled population",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_mm1c",
+                    "text": "Rates must be approved by the state insurance commissioner",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mm1d",
+                    "text": "Rates must include a 15% profit margin for the MCO",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_med_vbp_mc",
+          "pillar": "economics",
+          "order": 2,
+          "slug": "medicaid-value-based-payment",
+          "title": "Value-Based Payment in Medicaid Managed Care",
+          "summary": "How states are requiring MCOs to pass value-based payment arrangements to providers, the VBP taxonomy, and Vermont's OneCare model as a leading example.",
+          "estimatedMinutes": 16,
+          "isPublished": true,
+          "tags": [
+            "value-based payment",
+            "VBP",
+            "managed care",
+            "OneCare",
+            "Vermont"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_mco"
+          ],
+          "objectives": [
+            {
+              "id": "obj_vbp1",
+              "text": "Explain the CMS VBP taxonomy and its four levels"
+            },
+            {
+              "id": "obj_vbp2",
+              "text": "Describe how states use contract requirements to push MCOs toward VBP"
+            },
+            {
+              "id": "obj_vbp3",
+              "text": "Explain how Vermont's OneCare model integrates Medicaid VBP with the all-payer model"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "From MCO capitation to provider risk",
+              "body": "Managed care capitation pays MCOs a fixed per-member-per-month amount \u2014 shifting risk from the state to the MCO. But the MCO can still pay its contracted providers fee-for-service, retaining the perverse incentives of volume-based payment at the provider level.\n\nValue-based payment (VBP) in Medicaid managed care means MCOs pass some of the financial risk and reward to providers \u2014 paying primary care practices, hospitals, and other providers based on quality and outcomes, not just volume. CMS has been pressuring states to require VBP arrangements in MCO contracts since 2016."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "CMS VBP taxonomy: four levels of provider risk",
+              "items": [
+                {
+                  "icon": "ti-chart-bar",
+                  "title": "Level 1: P4P",
+                  "body": "Pay for Performance \u2014 MCO pays bonuses or withholds based on quality measure performance. No shared financial risk on cost."
+                },
+                {
+                  "icon": "ti-refresh",
+                  "title": "Level 2: Shared savings",
+                  "body": "MCO and provider share savings against a spending benchmark. Provider earns upside if they perform efficiently. Still no downside risk."
+                },
+                {
+                  "icon": "ti-scale",
+                  "title": "Level 3: Two-sided risk",
+                  "body": "Provider shares in both savings and losses against benchmark. Requires strong data infrastructure and contract sophistication."
+                },
+                {
+                  "icon": "ti-cash",
+                  "title": "Level 4: Population-based payment",
+                  "body": "Full capitation to provider \u2014 a fixed PMPM for a defined population regardless of services delivered. Maximum risk transfer."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Vermont's OneCare: Medicaid VBP at state scale",
+              "body": "Vermont's OneCare Vermont ACO receives a global budget from both commercial payers and Medicaid (through Green Mountain Care). Medicaid's OneCare contract uses a population-based payment approach \u2014 putting the ACO at risk for total cost of care for its attributed Medicaid population. This is among the most advanced Medicaid VBP models in the country, aligned with Vermont's participation in the AHEAD model."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_vbp_mc",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_vbp1",
+                "type": "single_choice",
+                "question": "What is Level 4 (population-based payment) in the CMS VBP taxonomy?",
+                "points": 1,
+                "explanation": "Level 4 is full capitation to providers \u2014 a fixed per-member-per-month payment regardless of services delivered, representing maximum risk transfer from MCO to provider.",
+                "options": [
+                  {
+                    "id": "opt_vbp1a",
+                    "text": "Pay-for-performance bonuses tied to quality measure scores",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_vbp1b",
+                    "text": "Full capitation \u2014 fixed PMPM payment regardless of services delivered",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_vbp1c",
+                    "text": "Shared savings only, with no downside risk for providers",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_vbp1d",
+                    "text": "Bundled payment for specific clinical episodes",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_med_network",
+          "pillar": "economics",
+          "order": 3,
+          "slug": "medicaid-network-adequacy-access",
+          "title": "Network Adequacy & Provider Access in Medicaid",
+          "summary": "The provider access crisis in Medicaid \u2014 low reimbursement rates, thin networks, and the federal rules that try to ensure enrollees can actually see a doctor.",
+          "estimatedMinutes": 15,
+          "isPublished": true,
+          "tags": [
+            "network adequacy",
+            "provider access",
+            "reimbursement",
+            "time-distance",
+            "FQHC"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_mco"
+          ],
+          "objectives": [
+            {
+              "id": "obj_na1",
+              "text": "Explain why Medicaid provider access is a persistent problem"
+            },
+            {
+              "id": "obj_na2",
+              "text": "Describe the federal network adequacy standards for Medicaid MCOs"
+            },
+            {
+              "id": "obj_na3",
+              "text": "Identify the role of FQHCs and RHCs in Medicaid provider access"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Coverage without access",
+              "body": "Having Medicaid coverage does not guarantee access to care. Studies consistently show that Medicaid enrollees face longer waits, more difficulty finding providers, and worse access to specialists than commercially insured patients \u2014 primarily because Medicaid reimbursement rates are substantially lower than Medicare or commercial rates in most states.\n\nA 2011 GAO study found that only 69% of physicians were accepting new Medicaid patients, compared to 83% accepting Medicare. In some specialties (psychiatry, dermatology, orthopedics), Medicaid acceptance rates are far lower. The ACA attempted to address this with a temporary primary care rate increase to Medicare parity \u2014 but it expired in 2014 and was not renewed."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Federal network adequacy rules for Medicaid MCOs",
+              "items": [
+                {
+                  "icon": "ti-map-pin",
+                  "title": "Time-distance standards",
+                  "body": "MCOs must ensure enrollees can reach primary care within 30 minutes / 30 miles in urban areas; longer in rural. Specialty access has similar standards."
+                },
+                {
+                  "icon": "ti-phone",
+                  "title": "Appointment availability",
+                  "body": "CMS requires states to set appointment wait time standards for routine, urgent, and preventive care. Enforcement has been inconsistent."
+                },
+                {
+                  "icon": "ti-users",
+                  "title": "Provider-to-enrollee ratios",
+                  "body": "States must ensure sufficient primary care physicians per enrollee. Ratios vary by state and are often insufficient in rural areas."
+                },
+                {
+                  "icon": "ti-stethoscope",
+                  "title": "FQHCs and RHCs",
+                  "body": "Federally Qualified Health Centers (FQHCs) and Rural Health Clinics (RHCs) must be paid enhanced rates \u2014 cost-based reimbursement \u2014 making them critical safety-net providers for Medicaid populations."
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_network",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_na1",
+                "type": "single_choice",
+                "question": "What is the primary reason many physicians do not accept Medicaid patients?",
+                "points": 1,
+                "explanation": "Medicaid reimbursement rates are substantially lower than Medicare or commercial insurance rates in most states, making Medicaid patients financially unattractive to many private practice physicians.",
+                "options": [
+                  {
+                    "id": "opt_na1a",
+                    "text": "Medicaid patients have more complex documentation requirements",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_na1b",
+                    "text": "Medicaid reimbursement rates are substantially lower than Medicare or commercial rates",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_na1c",
+                    "text": "Medicaid patients are required to use FQHCs instead of private practices",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_na1d",
+                    "text": "Federal regulations prohibit Medicaid patients from seeing certain specialists",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_med_waivers",
+      "courseId": "course_medicaid_101",
+      "pillar": "policy",
+      "order": 5,
+      "slug": "medicaid-waivers",
+      "title": "Waivers & State Flexibility",
+      "description": "Section 1115 waivers, HCBS waivers, and how states use federal waiver authority to test new approaches and cover populations beyond standard rules.",
+      "icon": "ti-adjustments",
+      "targetAudience": [
+        "Policy staff",
+        "State agency staff",
+        "Advocates"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_med_1115",
+          "trackId": "track_med_waivers",
+          "pillar": "policy",
+          "order": 1,
+          "slug": "medicaid-1115-waivers",
+          "title": "Section 1115 Waivers: Laboratories of Democracy",
+          "summary": "How Section 1115 demonstration waivers allow states to test Medicaid expansions, restrictions, and innovations \u2014 and the political battles over work requirements.",
+          "estimatedMinutes": 18,
+          "isPublished": true,
+          "tags": [
+            "1115 waiver",
+            "work requirements",
+            "demonstration",
+            "state flexibility"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_hcbs"
+          ],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_mw1",
+              "text": "Explain what a Section 1115 waiver is and what it allows states to do"
+            },
+            {
+              "id": "obj_mw2",
+              "text": "Describe the 'budget neutrality' requirement for 1115 waivers"
+            },
+            {
+              "id": "obj_mw3",
+              "text": "Analyze the work requirements debate and court rulings"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Waiver authority: flexibility within a framework",
+              "body": "Section 1115 of the Social Security Act gives the Secretary of Health and Human Services authority to waive almost any Medicaid requirement for 'experimental, pilot, or demonstration projects' that promote the program's objectives.\n\nStates apply to CMS with a proposed innovation, CMS negotiates terms, and if approved, the state gets a five-year waiver (renewable). The waiver must be 'budget neutral' \u2014 the federal government should spend no more than it would have without the waiver.\n\nThis has been used for expansive purposes (covering childless adults before the ACA, adding dental benefits) and restrictive ones (imposing work requirements, charging premiums, limiting retroactive coverage)."
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "Work requirements: blocked by the courts",
+              "body": "Several Republican administrations approved 1115 waivers requiring Medicaid enrollees to document work, volunteering, or job training to maintain coverage. Courts repeatedly struck these down, ruling that work requirements do not promote Medicaid's objective of providing health coverage \u2014 they undermine it by causing coverage loss. The legal and policy debate continues."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "What states have used 1115 waivers to do",
+              "items": [
+                {
+                  "icon": "ti-user-plus",
+                  "title": "Cover new populations",
+                  "body": "Cover childless adults, undocumented immigrants for emergency care, or people above standard income limits."
+                },
+                {
+                  "icon": "ti-tooth",
+                  "title": "Add benefits",
+                  "body": "Add dental, vision, or housing supports beyond standard Medicaid services."
+                },
+                {
+                  "icon": "ti-coin",
+                  "title": "Impose cost-sharing",
+                  "body": "Charge premiums or copays to groups that otherwise wouldn't pay them."
+                },
+                {
+                  "icon": "ti-briefcase",
+                  "title": "Work requirements",
+                  "body": "Require documentation of employment or community engagement \u2014 legally contested and often blocked."
+                },
+                {
+                  "icon": "ti-home",
+                  "title": "Housing supports",
+                  "body": "Pay for transitional housing and housing navigation as health-related services."
+                },
+                {
+                  "icon": "ti-refresh",
+                  "title": "Restructure delivery",
+                  "body": "Create integrated managed care systems, global budgets, or value-based payment models."
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_med_1115",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_mw1",
+                "type": "single_choice",
+                "question": "What does 'budget neutrality' require for a Section 1115 waiver?",
+                "points": 1,
+                "explanation": "Budget neutrality means the federal government cannot spend more under the waiver than it would have under standard Medicaid rules \u2014 any expansion in benefits or populations must be offset by savings elsewhere.",
+                "options": [
+                  {
+                    "id": "opt_mw1a",
+                    "text": "The state must balance its Medicaid budget before applying for the waiver",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mw1b",
+                    "text": "The federal government should spend no more with the waiver than without it",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_mw1c",
+                    "text": "The state must match federal spending dollar-for-dollar",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mw1d",
+                    "text": "CMS must certify that the waiver will save money within five years",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_med_hcbs",
+          "trackId": "track_med_waivers",
+          "pillar": "policy",
+          "order": 2,
+          "slug": "medicaid-hcbs-waivers",
+          "title": "HCBS Waivers: Care at Home Instead of in Institutions",
+          "summary": "How Home and Community-Based Services waivers let Medicaid pay for care in homes and communities rather than nursing facilities \u2014 and the long waitlists that result.",
+          "estimatedMinutes": 16,
+          "isPublished": true,
+          "tags": [
+            "HCBS",
+            "long-term care",
+            "home care",
+            "nursing home",
+            "1915c"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_1115"
+          ],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_mh1b",
+              "text": "Explain what HCBS waivers are and why they were created"
+            },
+            {
+              "id": "obj_mh2b",
+              "text": "Describe the institutional bias in Medicaid and why it persists"
+            },
+            {
+              "id": "obj_mh3b",
+              "text": "Understand the HCBS waitlist problem and its equity implications"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The institutional bias",
+              "body": "Federal Medicaid law has historically required states to cover nursing facility care for eligible seniors and people with disabilities \u2014 but did not require states to cover equivalent care at home. This created an institutional bias: you could get a nursing home bed covered, but not the home aide that would let you stay in your own house.\n\nSection 1915(c) HCBS waivers were created in 1981 to let states pay for home and community-based care as an alternative to institutionalization. States can cap enrollment (unlike nursing home coverage, which is an entitlement), which has created massive waitlists in many states."
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "700K+",
+                  "label": "People on HCBS Medicaid waitlists nationally",
+                  "source": "KFF"
+                },
+                {
+                  "value": "$1,300",
+                  "label": "Average daily cost of nursing facility care vs. ~$200 for home care",
+                  "source": "Genworth"
+                },
+                {
+                  "value": "63%",
+                  "label": "Of nursing home residents covered by Medicaid",
+                  "source": "KFF"
+                },
+                {
+                  "value": "$12.7B",
+                  "label": "American Rescue Plan investment in HCBS (2021)",
+                  "source": "CMS"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "Money follows the person",
+              "body": "'Money Follows the Person' (MFP) is a CMS demonstration program that helps people transition from nursing facilities back to community settings. When someone leaves a nursing facility for home care, their Medicaid funding moves with them. Vermont has been a national leader in this model."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_med_hcbs",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_mh1b",
+                "type": "single_choice",
+                "question": "Why can states cap HCBS waiver enrollment but cannot cap nursing facility coverage?",
+                "points": 1,
+                "explanation": "Nursing facility coverage is a mandatory Medicaid benefit \u2014 an entitlement that eligible people have a legal right to. HCBS waivers are optional and capped, which is why waitlists exist.",
+                "options": [
+                  {
+                    "id": "opt_mh1ba",
+                    "text": "HCBS is more expensive than nursing facility care",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mh1bb",
+                    "text": "Nursing facility coverage is a mandatory entitlement; HCBS waivers are optional and capped",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_mh1bc",
+                    "text": "Federal law prohibits unlimited HCBS spending",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mh1bd",
+                    "text": "HCBS providers have limited capacity and cannot accept unlimited referrals",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_med_1915b",
+          "pillar": "policy",
+          "order": 3,
+          "slug": "medicaid-1915b-managed-care-waivers",
+          "title": "Section 1915(b) Waivers: Mandatory Managed Care",
+          "summary": "How Section 1915(b) waivers allow states to mandate Medicaid managed care enrollment, limit freedom of choice, and restrict geographic service areas.",
+          "estimatedMinutes": 14,
+          "isPublished": true,
+          "tags": [
+            "1915b waiver",
+            "mandatory managed care",
+            "freedom of choice",
+            "PCCM"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_1115",
+            "lesson_med_mco"
+          ],
+          "objectives": [
+            {
+              "id": "obj_1915b1",
+              "text": "Explain why states need a waiver to require Medicaid managed care enrollment"
+            },
+            {
+              "id": "obj_1915b2",
+              "text": "Describe the key requirements for a 1915(b) waiver"
+            },
+            {
+              "id": "obj_1915b3",
+              "text": "Distinguish 1915(b) waivers from 1115 demonstrations"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Freedom of choice \u2014 and how to waive it",
+              "body": "Federal Medicaid law gives beneficiaries the right to choose any qualified Medicaid provider \u2014 freedom of choice. States that want to require enrollees to use a specific network (an MCO, a primary care case manager, or a defined provider panel) must waive this freedom of choice.\n\nSection 1915(b) of the Social Security Act provides that authority. Unlike 1115 waivers (which require full federal review and budget neutrality), 1915(b) waivers are primarily administrative \u2014 they allow mandatory managed care but within standard Medicaid benefit rules. They are easier and faster to obtain than 1115 waivers.\n\nMost states that run mandatory Medicaid managed care programs use either a 1915(b) waiver or have transitioned to authority under the ACA's Medicaid managed care rules (which allow mandatory managed care without a waiver for most populations)."
+            },
+            {
+              "type": "comparison_table",
+              "heading": "1115 vs. 1915(b) waivers",
+              "leftLabel": "Section 1115",
+              "rightLabel": "Section 1915(b)",
+              "rows": [
+                {
+                  "label": "Purpose",
+                  "left": "Broad experimentation \u2014 can change eligibility, benefits, cost-sharing",
+                  "right": "Primarily managed care authority \u2014 mandatory enrollment, limited choice"
+                },
+                {
+                  "label": "Review process",
+                  "left": "Full federal review, public comment required",
+                  "right": "Faster, primarily administrative review"
+                },
+                {
+                  "label": "Budget neutrality",
+                  "left": "Required",
+                  "right": "Not required"
+                },
+                {
+                  "label": "Duration",
+                  "left": "5 years, renewable",
+                  "right": "2 years, renewable"
+                },
+                {
+                  "label": "Typical use",
+                  "left": "Expansion, new benefits, delivery system reform",
+                  "right": "Mandatory MCO enrollment, PCCM programs"
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_1915b",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_1915b1",
+                "type": "single_choice",
+                "question": "Why do states need a Section 1915(b) waiver to mandate Medicaid managed care enrollment?",
+                "points": 1,
+                "explanation": "Federal Medicaid law gives beneficiaries freedom of choice of any qualified provider. Mandatory managed care enrollment restricts this choice, requiring a waiver of that freedom-of-choice requirement.",
+                "options": [
+                  {
+                    "id": "opt_1915b1a",
+                    "text": "Managed care organizations are not Medicaid-qualified providers under federal law",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_1915b1b",
+                    "text": "Federal law gives Medicaid enrollees freedom of choice; mandatory enrollment waives that right",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_1915b1c",
+                    "text": "MCO capitation rates require federal approval above the FMAP match",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_1915b1d",
+                    "text": "States need federal approval before contracting with private insurance companies",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "track_med_quality",
+      "courseId": "course_medicaid_101",
+      "pillar": "clinical",
+      "order": 6,
+      "slug": "medicaid-quality-oversight",
+      "title": "Quality & Oversight",
+      "description": "How CMS and states measure Medicaid quality, HEDIS measures, CHIP reauthorization quality initiatives, and the push for value-based payment in Medicaid.",
+      "icon": "ti-chart-bar",
+      "targetAudience": [
+        "Quality staff",
+        "MCO staff",
+        "Clinical leadership"
+      ],
+      "isPublished": true,
+      "createdAt": "2026-05-25T00:00:00Z",
+      "updatedAt": "2026-05-25T00:00:00Z",
+      "lessons": [
+        {
+          "id": "lesson_med_quality",
+          "trackId": "track_med_quality",
+          "pillar": "clinical",
+          "order": 1,
+          "slug": "medicaid-quality-measures",
+          "title": "Measuring Medicaid Quality: HEDIS, CAHPS & State Reporting",
+          "summary": "How Medicaid quality is measured and reported, the role of HEDIS measures, member experience surveys, and CMS's push toward value-based payment.",
+          "estimatedMinutes": 17,
+          "isPublished": true,
+          "tags": [
+            "quality",
+            "HEDIS",
+            "CAHPS",
+            "value-based",
+            "measurement"
+          ],
+          "relatedLessonIds": [],
+          "createdAt": "2026-05-25T00:00:00Z",
+          "updatedAt": "2026-05-25T00:00:00Z",
+          "objectives": [
+            {
+              "id": "obj_mq1",
+              "text": "Identify the key Medicaid quality measures and why they matter"
+            },
+            {
+              "id": "obj_mq2",
+              "text": "Explain how value-based payment is being introduced into Medicaid managed care"
+            },
+            {
+              "id": "obj_mq3",
+              "text": "Describe what CAHPS measures and how member experience data is used"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "The quality measurement challenge",
+              "body": "Medicaid serves populations with significant health complexity \u2014 high rates of chronic conditions, behavioral health needs, social determinants challenges, and limited prior access to care. Measuring quality in this context requires measures that account for acuity and capture what matters to enrollees.\n\nCMS requires states to collect and report standardized quality data through the Medicaid and CHIP Quality Improvement Program (Medicaid managed care rules) and state reporting to CMS's Transformed Medicaid Statistical Information System (T-MSIS)."
+            },
+            {
+              "type": "concepts_grid",
+              "heading": "Key Medicaid quality measures",
+              "items": [
+                {
+                  "icon": "ti-vaccine",
+                  "title": "Child immunizations",
+                  "body": "Childhood Immunization Status (CIS) \u2014 one of the most watched pediatric quality measures in Medicaid."
+                },
+                {
+                  "icon": "ti-heart-rate-monitor",
+                  "title": "Prenatal & postpartum care",
+                  "body": "Timely prenatal visits, postpartum follow-up at 7\u201384 days. Critical given Medicaid's role covering 40% of births."
+                },
+                {
+                  "icon": "ti-brain",
+                  "title": "Behavioral health follow-up",
+                  "body": "Follow-up after ED visit for mental illness, follow-up after hospitalization for mental illness (FUH/FUM)."
+                },
+                {
+                  "icon": "ti-pill",
+                  "title": "Medication adherence",
+                  "body": "PDC measures for diabetes, hypertension, and cholesterol medications \u2014 linked to long-term outcomes."
+                },
+                {
+                  "icon": "ti-users",
+                  "title": "CAHPS",
+                  "body": "Consumer Assessment of Healthcare Providers and Systems \u2014 member experience surveys covering access, communication, and care coordination."
+                },
+                {
+                  "icon": "ti-chart-line",
+                  "title": "Prevention",
+                  "body": "Cervical cancer screening, colorectal cancer screening, diabetes eye exams \u2014 preventive services often underprovided to Medicaid populations."
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Value-based payment in Medicaid managed care",
+              "body": "CMS increasingly pushes states to include value-based payment (VBP) requirements in MCO contracts. Under VBP, MCOs pass some financial risk to providers \u2014 paying primary care practices based on quality and outcomes rather than pure volume. Vermont's OneCare model is a leading example of provider-level VBP within a Medicaid context."
+            },
+            {
+              "type": "audio_slot",
+              "label": "Quality director perspective: measuring what matters",
+              "hint": "Interview a Medicaid MCO or state quality director about the practical challenges of quality measurement \u2014 data gaps, attribution, adjusting for social determinants. Recommended: 6\u20138 minutes."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_med_quality",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_mq1",
+                "type": "single_choice",
+                "question": "What does CAHPS measure in the Medicaid context?",
+                "points": 1,
+                "explanation": "CAHPS (Consumer Assessment of Healthcare Providers and Systems) measures member experience \u2014 how enrollees perceive access to care, communication with providers, and care coordination quality.",
+                "options": [
+                  {
+                    "id": "opt_mq1a",
+                    "text": "Clinical outcomes like hospital readmission rates and mortality",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mq1b",
+                    "text": "Member experience: access, communication, and care coordination as perceived by enrollees",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_mq1c",
+                    "text": "Financial performance of Medicaid MCOs",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_mq1d",
+                    "text": "Provider compliance with network adequacy standards",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_med_equity_quality",
+          "pillar": "clinical",
+          "order": 2,
+          "slug": "medicaid-equity-quality",
+          "title": "Equity in Medicaid Quality: Stratified Reporting & Disparities",
+          "summary": "How CMS and states are requiring Medicaid quality data to be stratified by race, ethnicity and income \u2014 and what health systems find when they look.",
+          "estimatedMinutes": 15,
+          "isPublished": true,
+          "tags": [
+            "equity",
+            "quality stratification",
+            "disparities",
+            "Medicaid quality"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_quality"
+          ],
+          "objectives": [
+            {
+              "id": "obj_eq_q1",
+              "text": "Explain why Medicaid quality data has historically not been stratified by race/ethnicity"
+            },
+            {
+              "id": "obj_eq_q2",
+              "text": "Describe CMS's requirements for stratified quality reporting in Medicaid managed care"
+            },
+            {
+              "id": "obj_eq_q3",
+              "text": "Identify common quality disparities found in Medicaid populations"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "Aggregate quality scores hide disparity",
+              "body": "For decades, Medicaid quality reporting focused on aggregate performance \u2014 one score for the whole plan, the whole state, the whole population. This made it impossible to identify whether quality gaps existed between racial, ethnic, or income groups within the Medicaid program.\n\nCMS's 2024 Medicaid managed care regulations require states to collect race, ethnicity, and language data from MCOs and to stratify quality measure reporting by these categories. This is the first federal mandate for stratified quality reporting in Medicaid \u2014 and it is revealing significant disparities in care that were invisible in aggregate data."
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "25 pts",
+                  "label": "Typical quality gap between white and Black Medicaid enrollees on prenatal care measures",
+                  "source": "MACPAC"
+                },
+                {
+                  "value": "40%",
+                  "label": "Lower postpartum care rate for Hispanic vs. white Medicaid enrollees in some states",
+                  "source": "MACPAC"
+                },
+                {
+                  "value": "2024",
+                  "label": "Year CMS first mandated stratified quality reporting in Medicaid managed care",
+                  "source": "CMS"
+                },
+                {
+                  "value": "60%",
+                  "label": "Of states lack complete race/ethnicity data in their Medicaid systems",
+                  "source": "KFF"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "The data gap is itself a finding",
+              "body": "When states attempt to stratify their Medicaid quality data by race and ethnicity, many discover the first problem: their data is incomplete or inaccurate. Missing or wrong race/ethnicity codes in Medicaid administrative data is itself an indicator of how underserved populations have been treated \u2014 enrolled, but not seen as individuals with identities worth recording accurately."
+            }
+          ],
+          "quiz": {
+            "id": "quiz_eq_quality",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_eq_q1",
+                "type": "single_choice",
+                "question": "What did CMS's 2024 Medicaid managed care regulations require for the first time?",
+                "points": 1,
+                "explanation": "CMS's 2024 rule mandates that states collect REaL data from MCOs and stratify quality measure reporting by race, ethnicity, and language \u2014 the first federal requirement for stratified Medicaid quality reporting.",
+                "options": [
+                  {
+                    "id": "opt_eq_q1a",
+                    "text": "All MCOs must achieve at least 4-star ratings on their HEDIS measures",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_eq_q1b",
+                    "text": "States must collect REaL data and stratify quality reporting by race, ethnicity, and language",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_eq_q1c",
+                    "text": "MCOs must hire a Chief Equity Officer approved by the state",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_eq_q1d",
+                    "text": "States must achieve parity in Medicaid and commercial quality scores",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_med_prior_auth",
+          "pillar": "clinical",
+          "order": 3,
+          "slug": "medicaid-prior-authorization",
+          "title": "Prior Authorization in Medicaid: Access Barrier or Necessary Gate?",
+          "summary": "How prior authorization works in Medicaid managed care, its impact on care access, federal reform requirements, and the CMS prior authorization final rule.",
+          "estimatedMinutes": 15,
+          "isPublished": true,
+          "tags": [
+            "prior authorization",
+            "PA",
+            "access",
+            "CMS final rule",
+            "FHIR"
+          ],
+          "relatedLessonIds": [
+            "lesson_med_quality"
+          ],
+          "objectives": [
+            {
+              "id": "obj_pa1",
+              "text": "Explain how prior authorization works in Medicaid managed care"
+            },
+            {
+              "id": "obj_pa2",
+              "text": "Describe the evidence on prior authorization's impact on care access and outcomes"
+            },
+            {
+              "id": "obj_pa3",
+              "text": "Summarize the 2024 CMS prior authorization final rule and what it requires"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "heading": "What prior authorization is \u2014 and what it does",
+              "body": "Prior authorization (PA) requires providers to obtain MCO approval before delivering certain covered services \u2014 expensive drugs, imaging, specialist visits, procedures. The stated rationale: ensure services are medically necessary before they're delivered, preventing waste.\n\nThe evidence on actual clinical impact is more troubling. AMA surveys show that 93% of physicians report PA causes delays in necessary care, 82% report that PA causes patients to abandon treatment, and 34% report a serious adverse event attributable to PA delay. The burden falls most heavily on complex patients who need the most care \u2014 and on underserved communities where providers have fewer staff to handle PA paperwork."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "2024 CMS Prior Authorization Final Rule",
+              "body": "The CMS Interoperability and Prior Authorization final rule (January 2024) requires Medicaid MCOs to: (1) implement FHIR-based APIs so providers can submit PA requests electronically, (2) respond to urgent requests within 72 hours and standard requests within 7 days, (3) report annual PA metrics (denial rates, response times, appeal rates) publicly, and (4) give reasons for denials. Full compliance deadlines are 2026\u20132027."
+            },
+            {
+              "type": "key_stat",
+              "stats": [
+                {
+                  "value": "93%",
+                  "label": "Of physicians report PA causes delays in necessary care",
+                  "source": "AMA 2023"
+                },
+                {
+                  "value": "2 hrs/day",
+                  "label": "Average physician time spent on PA per week (14 hours)",
+                  "source": "AMA"
+                },
+                {
+                  "value": "34%",
+                  "label": "Of physicians report a serious adverse event due to PA delay",
+                  "source": "AMA 2023"
+                },
+                {
+                  "value": "72 hrs",
+                  "label": "New maximum response time for urgent PA requests under 2024 CMS rule",
+                  "source": "CMS"
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "quiz_prior_auth",
+            "passingScore": 75,
+            "shuffleOptions": true,
+            "questions": [
+              {
+                "id": "q_pa1",
+                "type": "single_choice",
+                "question": "Under the 2024 CMS prior authorization final rule, how quickly must MCOs respond to urgent prior authorization requests?",
+                "points": 1,
+                "explanation": "The 2024 CMS rule requires MCOs to respond to urgent prior authorization requests within 72 hours and standard requests within 7 calendar days.",
+                "options": [
+                  {
+                    "id": "opt_pa1a",
+                    "text": "24 hours for urgent requests",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_pa1b",
+                    "text": "72 hours for urgent requests",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_pa1c",
+                    "text": "5 business days for urgent requests",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_pa1d",
+                    "text": "The rule does not set time limits \u2014 states set their own",
+                    "isCorrect": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
