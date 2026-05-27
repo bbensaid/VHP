@@ -408,7 +408,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_ai_fundamentals",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         }
       ]
     },
@@ -747,7 +750,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_ai_predictive",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         },
         {
           "id": "lesson_ai_pop_health",
@@ -856,7 +862,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_ai_predictive",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         }
       ]
     },
@@ -1127,7 +1136,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_ai_nlp",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         }
       ]
     },
@@ -1378,7 +1390,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_ai_cds",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         }
       ]
     },
@@ -1643,7 +1658,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_ai_fda",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         }
       ]
     },
@@ -1881,7 +1899,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_ai_bias",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         }
       ]
     },
@@ -2143,7 +2164,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_ai_implementation",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         },
         {
           "id": "lesson_ai_ethics",
@@ -2252,11 +2276,12 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_ai_implementation",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         }
       ]
     }
-  ],
-  "pillar": "technology",
-  "level": "intermediate"
+  ]
 }

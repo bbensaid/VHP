@@ -24,7 +24,7 @@ export default async function CourseOverviewPage({ params }: PageProps) {
   let course = await getCourseWithProgress(courseSlug, user?.id ?? null);
   if (!course) return notFound();
 
-  // Auto-enroll logged-in users, then redirect to first lesson
+  // Auto-enroll logged-in users and redirect to first lesson
   if (user) {
     if (!course.enrollment) {
       await enrollUser(user.id, course.id);
@@ -34,9 +34,15 @@ export default async function CourseOverviewPage({ params }: PageProps) {
     if (firstLesson) {
       redirect(`/academy/tracks/${courseSlug}/${firstLesson.slug}`);
     }
+  } else {
+    // Not logged in — redirect to first lesson directly (no progress tracking)
+    const firstLesson = course.tracks.flatMap((t) => t.lessons)[0];
+    if (firstLesson) {
+      redirect(`/academy/tracks/${courseSlug}/${firstLesson.slug}`);
+    }
   }
 
-  // Not logged in, or no lessons yet — show a landing page
+  // Logged in but no lessons yet — show a landing page
   const totalLessons = course.tracks.flatMap((t) => t.lessons).length;
   const totalMinutes = course.tracks
     .flatMap((t) => t.lessons)
@@ -100,21 +106,10 @@ export default async function CourseOverviewPage({ params }: PageProps) {
           ))}
         </div>
 
-        {/* CTA */}
-        {!user && (
-          <div className="bg-sky-50 border border-sky-200 rounded-xl p-6 flex items-center justify-between gap-6">
-            <div>
-              <p className="font-bold text-slate-900 mb-1">Sign in to start learning</p>
-              <p className="text-sm text-slate-500">Your progress is saved automatically as you complete lessons.</p>
-            </div>
-            <Link
-              href={`/login?from=/academy/tracks/${courseSlug}`}
-              className="px-5 py-2.5 bg-sky-600 text-white rounded-xl font-bold hover:bg-sky-700 transition-colors text-sm whitespace-nowrap"
-            >
-              Sign in →
-            </Link>
-          </div>
-        )}
+        <div className="bg-sky-50 border border-sky-200 rounded-xl p-6">
+          <p className="font-bold text-slate-900 mb-1">No lessons published yet</p>
+          <p className="text-sm text-slate-500">Check back soon — content is being added.</p>
+        </div>
       </div>
     </div>
   );

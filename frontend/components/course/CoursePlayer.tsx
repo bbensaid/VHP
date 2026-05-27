@@ -91,7 +91,7 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
   }
 
   return (
-    <div className="flex w-full h-full overflow-hidden border-t border-slate-200">
+    <div className="flex w-full border-t border-slate-200 flex-1 min-h-0">
       {/* Mobile sidebar overlay */}
       {mobileSidebarOpen && (
         <div
