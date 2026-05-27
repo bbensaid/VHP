@@ -19,7 +19,7 @@ interface LessonViewProps {
 export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload, isCompleted = false }: LessonViewProps) {
 
   return (
-    <article className="max-w-3xl mx-auto space-y-8 pb-16 font-sans">
+    <article className="w-full max-w-5xl mx-auto space-y-8 pb-16 font-sans">
       <header className="space-y-3 pt-2">
         <PillarBadge pillar={lesson.pillar} />
         <h1 className="text-3xl font-black text-slate-900 leading-tight">{lesson.title}</h1>
@@ -52,22 +52,28 @@ export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload, 
         </section>
       )}
 
-      <div className="space-y-8">
-        {(() => {
-          const sanityBlock = lesson.contentBlocks.find(b => b.type === "sanity_portable_text") as { type: "sanity_portable_text"; body: unknown[] } | undefined;
-          if (sanityBlock) {
-            return <AcademyContent body={sanityBlock.body as PortableTextBlock[]} />;
-          }
-          return lesson.contentBlocks.map((block, i) => (
-            <ContentBlockRenderer
-              key={i}
-              block={block}
-              lessonId={lesson.id}
-              onAudioUpload={onAudioUpload ? (file, key) => onAudioUpload(lesson.id, file, key) : undefined}
-            />
-          ));
-        })()}
-      </div>
+      {(() => {
+        const sanityBlock = lesson.contentBlocks.find(b => b.type === "sanity_portable_text") as { type: "sanity_portable_text"; body: unknown[] } | undefined;
+        if (sanityBlock) {
+          return (
+            <div className="bg-white rounded-xl border border-slate-200 shadow-sm px-8 py-10 sm:px-12 sm:py-12">
+              <AcademyContent body={sanityBlock.body as PortableTextBlock[]} />
+            </div>
+          );
+        }
+        return (
+          <div className="space-y-8">
+            {lesson.contentBlocks.map((block, i) => (
+              <ContentBlockRenderer
+                key={i}
+                block={block}
+                lessonId={lesson.id}
+                onAudioUpload={onAudioUpload ? (file, key) => onAudioUpload(lesson.id, file, key) : undefined}
+              />
+            ))}
+          </div>
+        );
+      })()}
 
       {lesson.quiz && (
         <section aria-label="Knowledge check">
