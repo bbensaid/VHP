@@ -195,7 +195,7 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
           <span className="ml-auto text-xs text-slate-400 shrink-0">{currentIndex + 1} / {totalLessons}</span>
         </div>
 
-        <div ref={scrollContainerRef} className="flex-1 overflow-y-auto overscroll-contain px-4 md:px-8 py-6">
+        <div ref={scrollContainerRef} className="flex-1 overflow-y-auto overscroll-contain px-6 md:px-10 py-6">
           <LessonView
             lesson={currentLesson}
             onMarkComplete={handleMarkComplete}
