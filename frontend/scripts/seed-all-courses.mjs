@@ -1,5 +1,5 @@
 // scripts/seed-all-courses.mjs
-// Seeds ALL HTR Academy courses: onboarding + Tier 1 + Tier 2.
+// Seeds ALL HTR Academy courses: onboarding + Tier 1 + Tier 2 + Tier 3.
 // Run with: node scripts/seed-all-courses.mjs
 //
 // Idempotent — upserts on conflict, safe to run multiple times.
@@ -44,8 +44,9 @@ const db = createClient(SUPABASE_URL, SERVICE_KEY);
 const seedCourse  = JSON.parse(readFileSync(join(__dir, "../content/course_seed.json"),  "utf8"));
 const tier1       = JSON.parse(readFileSync(join(__dir, "../content/courses_tier1.json"), "utf8"));
 const tier2       = JSON.parse(readFileSync(join(__dir, "../content/courses_tier2.json"), "utf8"));
+const tier3       = JSON.parse(readFileSync(join(__dir, "../content/courses_tier3.json"), "utf8"));
 
-const ALL_COURSES = [seedCourse, ...tier1, ...tier2];
+const ALL_COURSES = [seedCourse, ...tier1, ...tier2, ...tier3];
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function check(label, error) {

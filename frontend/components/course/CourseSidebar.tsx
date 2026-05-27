@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { CheckCircle2, Circle, ChevronDown } from "lucide-react";
+import { CheckCircle2, Circle, ChevronDown, X } from "lucide-react";
 import type { TrackWithProgress, Pillar } from "@/types/course";
 import { CourseProgressBar } from "./CourseProgressBar";
 
@@ -25,6 +25,7 @@ interface CourseSidebarProps {
   completedLessons: number;
   totalLessons: number;
   completedIds: Set<string>;
+  onClose?: () => void;
 }
 
 export function CourseSidebar({
@@ -36,6 +37,7 @@ export function CourseSidebar({
   completedLessons,
   totalLessons,
   completedIds,
+  onClose,
 }: CourseSidebarProps) {
   const trackOfCurrentLesson = tracks.find((t) =>
     t.lessons.some((l) => l.id === currentLessonId)
@@ -68,9 +70,20 @@ export function CourseSidebar({
   return (
     <aside className="flex flex-col w-72 min-w-[288px] h-full border-r border-slate-200 bg-slate-50 overflow-hidden">
       <div className="p-5 border-b border-slate-200 space-y-3">
-        <div>
-          <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">HTR Academy</p>
-          <h2 className="text-base font-semibold text-slate-900 mt-1 leading-snug">{courseTitle}</h2>
+        <div className="flex items-start justify-between gap-2">
+          <div>
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">HTR Academy</p>
+            <h2 className="text-base font-semibold text-slate-900 mt-1 leading-snug">{courseTitle}</h2>
+          </div>
+          {onClose && (
+            <button
+              onClick={onClose}
+              className="lg:hidden mt-0.5 p-1.5 rounded-md hover:bg-slate-200 text-slate-500 shrink-0"
+              aria-label="Close navigation"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          )}
         </div>
         <CourseProgressBar
           percent={progressPercent}

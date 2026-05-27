@@ -393,6 +393,54 @@ export async function updateAudioSlot(
   if (error) throw new Error(`updateAudioSlot: ${error.message}`);
 }
 
+// ── searchLessons ─────────────────────────────────────────────────────────────
+
+export interface LessonSearchResult {
+  lessonId: string;
+  lessonSlug: string;
+  lessonTitle: string;
+  summary: string | null;
+  courseSlug: string;
+  courseTitle: string;
+  trackTitle: string;
+  pillar: string;
+}
+
+export async function searchLessons(query: string, limit = 20): Promise<LessonSearchResult[]> {
+  if (!query.trim()) return [];
+  const q = `%${query.trim()}%`;
+  const { data, error } = await db
+    .from("lessons")
+    .select(`
+      id, slug, title, summary, pillar,
+      tracks!inner ( slug, title, course_id,
+        courses!inner ( slug, title )
+      )
+    `)
+    .or(`title.ilike.${q},summary.ilike.${q}`)
+    .eq("is_published", true)
+    .limit(limit);
+
+  if (error || !data) return [];
+
+  return (data as unknown[]).map((row) => {
+    const r = row as {
+      id: string; slug: string; title: string; summary: string | null; pillar: string;
+      tracks: { slug: string; title: string; courses: { slug: string; title: string } };
+    };
+    return {
+      lessonId:    r.id,
+      lessonSlug:  r.slug,
+      lessonTitle: r.title,
+      summary:     r.summary,
+      courseSlug:  r.tracks.courses.slug,
+      courseTitle: r.tracks.courses.title,
+      trackTitle:  r.tracks.title,
+      pillar:      r.pillar,
+    };
+  });
+}
+
 // ── seedCourseFromJson ────────────────────────────────────────────────────────
 // One-time seeder — uses dbAdmin (service-role) to bypass RLS.
 
