@@ -20,6 +20,13 @@ export function ContentBlockRenderer({
 }) {
   switch (block.type) {
     case "text":           return <TextBlockRenderer block={block} />;
+    case "heading": {
+      const Tag = (`h${block.level ?? 2}`) as "h2" | "h3" | "h4";
+      const cls = block.level === 3 ? "text-lg font-semibold text-slate-900 mt-6 mb-2"
+                : block.level === 4 ? "text-base font-semibold text-slate-800 mt-4 mb-1"
+                : "text-xl font-bold text-slate-900 mt-8 mb-3";
+      return <Tag className={cls}>{block.text}</Tag>;
+    }
     case "video":          return <VideoBlockRenderer block={block} />;
     case "audio_slot":     return <AudioSlotRenderer block={block} lessonId={lessonId} onUpload={onAudioUpload} />;
     case "concepts_grid":  return <ConceptsGridRenderer block={block} />;

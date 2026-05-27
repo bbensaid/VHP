@@ -1,7 +1,10 @@
 // Route: /academy/tracks
 // Lists all published courses from Supabase (the course-player system).
+"use server";
 import Link from "next/link";
 import { db } from "@/lib/db/client";
+import { searchLessons } from "@/lib/course-api";
+import { LessonSearch } from "@/components/course/LessonSearch";
 
 export const metadata = {
   title: "Courses | HTR Academy",
@@ -99,6 +102,9 @@ export default async function TracksPage() {
             Structured, self-paced courses on health transformation. Built on
             the six-pillar framework — progress saved automatically.
           </p>
+          <div className="mt-6">
+            <LessonSearch onSearch={searchLessons} />
+          </div>
         </div>
       </div>
 

@@ -100,9 +100,10 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
         />
       )}
 
-      {/* Course nav sidebar — hidden on mobile unless toggled */}
+      {/* Course nav sidebar — hidden on mobile unless toggled.
+          top-14 offsets below the sticky app header on mobile. */}
       <div className={`
-        fixed inset-y-0 left-0 z-50 lg:static lg:z-auto
+        fixed top-14 bottom-0 left-0 z-50 lg:static lg:top-auto lg:bottom-auto lg:z-auto
         transition-transform duration-300
         ${mobileSidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
       `}>
@@ -116,6 +117,7 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
           completedLessons={completedLessons}
           totalLessons={totalLessons}
           completedIds={completedIds}
+          onClose={() => setMobileSidebarOpen(false)}
         />
       </div>
 
