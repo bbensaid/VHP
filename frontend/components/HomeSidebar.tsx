@@ -261,9 +261,8 @@ const SECTIONS: Section[] = [
     divideColor: "divide-sky-100", activeItemBg: "bg-sky-100",
     items: [
       { href: "/academy/personalized-learning", label: "Personalized Learning",   icon: SparklesIcon },
-      { href: "/academy/tracks",                label: "Learning Tracks",          icon: TableCellsIcon },
+      { href: "/academy/tracks",                label: "Courses",                  icon: TableCellsIcon },
       { href: "/academy/tracks/hie-health-reform-onboarding", label: "HIE & Health Reform", icon: BookOpenIcon, groupLabel: "Featured Course" },
-      { href: "/academy/courses",               label: "Courses",                  icon: BookOpenIcon },
       { href: "/academy/webinars",              label: "Webinars",                 icon: PresentationChartLineIcon },
       { href: "/academy/case-studies",          label: "Case Studies",             icon: DocumentTextIcon },
       { href: "/academy/glossary",              label: "Glossary",                 icon: BookOpenIcon },
