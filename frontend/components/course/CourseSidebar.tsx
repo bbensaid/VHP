@@ -70,28 +70,18 @@ export function CourseSidebar({
 
   return (
     <aside className="flex flex-col w-64 min-w-[256px] border-r border-slate-200 bg-slate-50 overflow-y-auto" style={{ height: "100%" }}>
-      {/* Dark header */}
+      {/* Back link */}
+      <Link
+        href="/academy/tracks"
+        className="flex items-center gap-2 px-4 py-2.5 bg-indigo-50 hover:bg-indigo-100 transition-colors text-indigo-700 font-semibold text-xs shrink-0 border-b border-indigo-100"
+      >
+        <ArrowLeft className="w-3.5 h-3.5 shrink-0" />
+        Back to Academy
+      </Link>
+
+      {/* Dark course title */}
       <div className="bg-slate-900 px-4 py-4 shrink-0">
-        <Link
-          href="/academy/tracks"
-          className="flex items-center gap-1.5 text-slate-400 hover:text-white text-[10px] font-bold uppercase tracking-widest mb-3 transition-colors"
-        >
-          <ArrowLeft className="w-3 h-3 shrink-0" />
-          Back to Academy
-        </Link>
-        <h2 className="text-sm font-bold text-white leading-snug mb-3">{courseTitle}</h2>
-        <div className="space-y-1.5">
-          <div className="flex items-center justify-between text-[10px] text-slate-400">
-            <span>{Math.round(progressPercent)}% complete</span>
-            <span>{completedLessons}/{totalLessons} lessons</span>
-          </div>
-          <div className="h-1 w-full rounded-full bg-slate-700 overflow-hidden">
-            <div
-              className="h-full bg-emerald-500 rounded-full transition-all duration-300"
-              style={{ width: `${Math.min(progressPercent, 100)}%` }}
-            />
-          </div>
-        </div>
+        <h2 className="text-sm font-bold text-white leading-snug">{courseTitle}</h2>
         {onClose && (
           <button
             onClick={onClose}
@@ -101,6 +91,20 @@ export function CourseSidebar({
             <X className="w-4 h-4" />
           </button>
         )}
+      </div>
+
+      {/* Progress */}
+      <div className="px-4 py-3 border-b border-slate-200 shrink-0">
+        <div className="flex items-center justify-between text-[10px] text-slate-400 mb-1.5">
+          <span>{Math.round(progressPercent)}% complete</span>
+          <span>{completedLessons}/{totalLessons} lessons</span>
+        </div>
+        <div className="h-1 w-full rounded-full bg-slate-200 overflow-hidden">
+          <div
+            className="h-full bg-emerald-500 rounded-full transition-all duration-300"
+            style={{ width: `${Math.min(progressPercent, 100)}%` }}
+          />
+        </div>
       </div>
 
       <nav className="py-2" aria-label="Course navigation">
