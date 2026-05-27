@@ -39,10 +39,15 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const { isStripVisible, setStripVisible } = useTicker();
 
   // 3. AUTO-COLLAPSE — studio/chat hide sidebars entirely; course pages collapse them by default.
+  //    Catalog page (/academy/tracks exactly) always forces left sidebar open.
   useEffect(() => {
     if (hideSidebarsCompletely || isCoursePage) {
       setLeftOpen(false);
       setRightOpen(false);
+    } else if (pathname === "/academy/tracks") {
+      if (typeof window !== "undefined" && window.innerWidth >= BREAKPOINT_LG) {
+        setLeftOpen(true);
+      }
     }
   }, [pathname, hideSidebarsCompletely, isCoursePage, setLeftOpen, setRightOpen]);
 
