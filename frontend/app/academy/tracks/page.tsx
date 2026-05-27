@@ -33,6 +33,7 @@ interface CourseRow {
 
 interface TrackSummary {
   pillar: string;
+  title: string;
   lesson_count: number;
 }
 
@@ -52,19 +53,19 @@ async function getCourseCatalog(): Promise<
     (courses as CourseRow[]).map(async (course) => {
       const { data: trackRows } = await db
         .from("tracks")
-        .select("id, pillar")
+        .select("id, pillar, title")
         .eq("course_id", course.id)
         .eq("is_published", true)
         .order("order");
 
       const tracks: TrackSummary[] = await Promise.all(
-        (trackRows ?? []).map(async (t: { id: string; pillar: string }) => {
+        (trackRows ?? []).map(async (t: { id: string; pillar: string; title: string }) => {
           const { count } = await db
             .from("lessons")
             .select("id", { count: "exact", head: true })
             .eq("track_id", t.id)
             .eq("is_published", true);
-          return { pillar: t.pillar, lesson_count: count ?? 0 };
+          return { pillar: t.pillar, title: t.title, lesson_count: count ?? 0 };
         })
       );
 
@@ -111,21 +112,11 @@ export default async function TracksPage() {
         ) : (
           <div className="grid gap-6 sm:grid-cols-2">
             {catalog.map(({ course, tracks }) => {
-              const totalLessons = tracks.reduce(
-                (s, t) => s + t.lesson_count,
-                0
-              );
-              // Leading pillar = the one with most tracks
-              const pillarCounts = tracks.reduce<Record<string, number>>(
-                (acc, t) => {
-                  acc[t.pillar] = (acc[t.pillar] ?? 0) + 1;
-                  return acc;
-                },
-                {}
-              );
-              const leadPillar =
-                Object.entries(pillarCounts).sort((a, b) => b[1] - a[1])[0]?.[0] ??
-                "general";
+              const totalLessons = tracks.reduce((s, t) => s + t.lesson_count, 0);
+              const pillarCounts = tracks.reduce<Record<string, number>>((acc, t) => {
+                acc[t.pillar] = (acc[t.pillar] ?? 0) + 1; return acc;
+              }, {});
+              const leadPillar = Object.entries(pillarCounts).sort((a, b) => b[1] - a[1])[0]?.[0] ?? "general";
               const colors = PILLAR[leadPillar] ?? PILLAR.general;
 
               return (
@@ -137,56 +128,54 @@ export default async function TracksPage() {
                   {/* Colour bar */}
                   <div className={`h-1.5 w-full ${colors.dot}`} />
 
-                  <div className="p-6 flex flex-col flex-1 gap-4">
-                    {/* Badge row */}
-                    <div className="flex flex-wrap gap-2">
-                      <span
-                        className={`text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full border ${colors.badge}`}
-                      >
+                  <div className="p-6 flex flex-col flex-1 gap-3">
+                    {/* Badge + stats row */}
+                    <div className="flex items-center gap-2">
+                      <span className={`text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full border ${colors.badge}`}>
                         {leadPillar}
                       </span>
-                      {tracks.length > 1 && (
-                        <span className="text-[10px] font-bold text-slate-400 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full">
-                          {tracks.length} pillars
-                        </span>
-                      )}
+                      <span className="text-[10px] text-slate-400 ml-auto">
+                        <span className="font-bold text-slate-600">{tracks.length}</span> tracks &middot; <span className="font-bold text-slate-600">{totalLessons}</span> lessons
+                        {course.estimated_hours > 0 && <> &middot; ~<span className="font-bold text-slate-600">{course.estimated_hours}h</span></>}
+                      </span>
                     </div>
 
-                    {/* Title + subtitle */}
+                    {/* Title + description */}
                     <div>
-                      <h2 className="text-lg font-black text-slate-900 group-hover:text-sky-700 transition-colors leading-snug mb-1">
+                      <h2 className="text-base font-black text-slate-900 group-hover:text-sky-700 transition-colors leading-snug mb-1">
                         {course.title}
                       </h2>
-                      {course.subtitle && (
-                        <p className="text-sm text-slate-500 leading-snug line-clamp-2">
-                          {course.subtitle}
+                      {course.description && (
+                        <p className="text-xs text-slate-500 leading-relaxed line-clamp-2">
+                          {course.description}
                         </p>
                       )}
                     </div>
 
-                    {/* Stats */}
-                    <div className="flex flex-wrap gap-4 text-xs text-slate-500 mt-auto pt-2 border-t border-slate-100">
-                      <span>
-                        <span className="font-bold text-slate-700">{tracks.length}</span> tracks
-                      </span>
-                      <span>
-                        <span className="font-bold text-slate-700">{totalLessons}</span> lessons
-                      </span>
-                      {course.estimated_hours > 0 && (
-                        <span>
-                          ~<span className="font-bold text-slate-700">{course.estimated_hours}h</span>
-                        </span>
-                      )}
+                    {/* Track list */}
+                    <div className="border-t border-slate-100 pt-3 mt-1">
+                      <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-2">What you&apos;ll cover</p>
+                      <ul className="space-y-1">
+                        {tracks.slice(0, 5).map((t) => {
+                          const dot = PILLAR[t.pillar]?.dot ?? "bg-slate-400";
+                          return (
+                            <li key={t.title} className="flex items-center gap-2 text-xs text-slate-600">
+                              <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${dot}`} />
+                              {t.title}
+                            </li>
+                          );
+                        })}
+                        {tracks.length > 5 && (
+                          <li className="text-[10px] text-slate-400 pl-3.5">+{tracks.length - 5} more tracks</li>
+                        )}
+                      </ul>
                     </div>
 
                     {/* CTA */}
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between mt-auto pt-3 border-t border-slate-100">
                       <div className="flex flex-wrap gap-1">
                         {(course.target_audience ?? []).slice(0, 2).map((a: string) => (
-                          <span
-                            key={a}
-                            className="text-[10px] text-slate-400 bg-slate-50 border border-slate-100 rounded px-1.5 py-0.5"
-                          >
+                          <span key={a} className="text-[10px] text-slate-400 bg-slate-50 border border-slate-100 rounded px-1.5 py-0.5">
                             {a}
                           </span>
                         ))}

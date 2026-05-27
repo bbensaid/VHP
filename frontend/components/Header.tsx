@@ -180,10 +180,10 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
               className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-sky-50 transition-colors group"
             >
               <span className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-700">
-                Learning Tracks
+                Courses
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
-                Structured multi-course programs
+                Structured self-paced courses
               </span>
             </Link>
           </div>
@@ -196,7 +196,6 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
           </p>
           <div className="space-y-1">
             {[
-              { href: "/academy/courses", label: "Courses", desc: "In-depth learning modules" },
               { href: "/academy/webinars", label: "Webinars", desc: "Live & recorded expert sessions" },
               { href: "/academy/case-studies", label: "Case Studies", desc: "Real-world transformation stories" },
             ].map((item) => (
@@ -884,8 +883,7 @@ const Header = () => {
                 children: [
                   { label: "📖 The Book — Transforming American Healthcare", href: "/book", sub: [] },
                   { label: "Personalized Learning", href: "/academy/personalized-learning", sub: [] },
-                  { label: "Learning Tracks", href: "/academy/tracks", sub: [] },
-                  { label: "Courses", href: "/academy/courses", sub: [] },
+                  { label: "Courses", href: "/academy/tracks", sub: [] },
                   { label: "Webinars", href: "/academy/webinars", sub: [] },
                   { label: "Case Studies", href: "/academy/case-studies", sub: [] },
                   { label: "Glossary", href: "/academy/glossary", sub: [] },
