@@ -311,8 +311,8 @@ const components: PortableTextComponents = {
           <p className="relative z-10 ty-hero text-slate-600 italic leading-9 font-medium mb-3">{value.analogy}</p>
         )}
         {value.bridge && (
-          <div className="mt-5 ml-2 border-l-2 border-indigo-200 pl-5 py-1">
-            <p className="text-[16px] text-slate-700 leading-8 font-medium">{value.bridge}</p>
+          <div className="mt-6 bg-slate-50 border border-slate-200 rounded-lg px-5 py-4">
+            <p className="text-[13px] text-slate-600 leading-7">{value.bridge}</p>
           </div>
         )}
         <div className="mt-4 h-0.5 w-8 bg-slate-200 rounded-full" />
