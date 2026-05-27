@@ -71,7 +71,7 @@ export function CourseSidebar({
   return (
     <aside className="flex flex-col w-64 min-w-[256px] border-r border-slate-200 bg-slate-50 overflow-y-auto" style={{ height: "100%" }}>
       <Link
-        href="/academy/courses"
+        href="/academy/tracks"
         className="flex items-center gap-2 px-4 py-2.5 bg-indigo-50 hover:bg-indigo-100 transition-colors text-indigo-700 font-semibold text-xs shrink-0 border-b border-indigo-100"
       >
         <ArrowLeft className="w-3.5 h-3.5 shrink-0" />
