@@ -29,6 +29,7 @@ function toLesson(row: Record<string, unknown>): Lesson {
     estimatedMinutes: (row.estimated_minutes as number) ?? 10,
     objectives: (row.objectives as Lesson["objectives"]) ?? [],
     contentBlocks: (row.content_blocks as Lesson["contentBlocks"]) ?? [],
+    sanitySlug: (row.sanity_slug as string) ?? null,
     tags: (row.tags as string[]) ?? [],
     relatedLessonIds: (row.related_lesson_ids as string[]) ?? [],
     isPublished: row.is_published as boolean,

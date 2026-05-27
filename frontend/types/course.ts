@@ -201,7 +201,8 @@ export interface Lesson {
   estimatedMinutes: number;
   objectives: LessonObjective[];
   contentBlocks: ContentBlock[];
-  sanityBody?: unknown[];   // raw Sanity portable-text — rendered by AcademyContent when present
+  sanitySlug?: string | null;  // Sanity academyModule slug — when set, content is fetched from Sanity
+  sanityBody?: unknown[];      // raw Sanity portable-text — rendered by AcademyContent when present
   quiz?: Quiz;
   tags: string[];
   relatedLessonIds?: string[];

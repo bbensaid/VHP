@@ -101,3 +101,21 @@ export const getCachedTicker = () =>
     undefined,
     { tags: ["ticker"], revalidate: 60 }
   );
+
+/** Fetch Sanity bodies for a list of lesson slugs in one GROQ query.
+ *  Returns a map of slug → PortableText body array. */
+export async function getLessonBodiesFromSanity(
+  slugs: string[]
+): Promise<Record<string, unknown[]>> {
+  if (slugs.length === 0) return {};
+  const results = await cachedFetch<Array<{ slug: string; body: unknown[] }>>(
+    `*[_type == "academyModule" && slug.current in $slugs]{ "slug": slug.current, body }`,
+    { slugs },
+    { tags: ["academyModule"], revalidate: 300 }
+  );
+  const map: Record<string, unknown[]> = {};
+  for (const r of results ?? []) {
+    if (r.slug && r.body) map[r.slug] = r.body;
+  }
+  return map;
+}
