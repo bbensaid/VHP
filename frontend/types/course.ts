@@ -15,6 +15,7 @@ export type Pillar =
 
 export type LessonContentBlockType =
   | "text"
+  | "heading"
   | "video"
   | "audio_slot"
   | "concepts_grid"
@@ -45,6 +46,12 @@ export interface TextBlock {
   type: "text";
   heading?: string;
   body: string; // supports markdown
+}
+
+export interface HeadingBlock {
+  type: "heading";
+  text: string;
+  level?: 2 | 3 | 4; // h2 default
 }
 
 export interface VideoBlock {
@@ -134,6 +141,7 @@ export interface GlossaryBlock {
 
 export type ContentBlock =
   | TextBlock
+  | HeadingBlock
   | VideoBlock
   | AudioSlotBlock
   | ConceptsGridBlock
