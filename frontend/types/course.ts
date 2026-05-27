@@ -139,6 +139,11 @@ export interface GlossaryBlock {
   terms: GlossaryTerm[];
 }
 
+export interface SanityPortableTextBlock {
+  type: "sanity_portable_text";
+  body: unknown[];
+}
+
 export type ContentBlock =
   | TextBlock
   | HeadingBlock
@@ -149,7 +154,8 @@ export type ContentBlock =
   | CalloutBlock
   | KeyStatBlock
   | ComparisonTableBlock
-  | GlossaryBlock;
+  | GlossaryBlock
+  | SanityPortableTextBlock;
 
 // ── Quiz ─────────────────────────────────────────────────────
 
@@ -195,6 +201,7 @@ export interface Lesson {
   estimatedMinutes: number;
   objectives: LessonObjective[];
   contentBlocks: ContentBlock[];
+  sanityBody?: unknown[];   // raw Sanity portable-text — rendered by AcademyContent when present
   quiz?: Quiz;
   tags: string[];
   relatedLessonIds?: string[];

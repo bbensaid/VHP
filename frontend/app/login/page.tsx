@@ -107,6 +107,14 @@ function LoginForm() {
             Don&apos;t have an account?{" "}
             <Link href="/signup" className="text-indigo-600 font-semibold hover:text-indigo-800">Sign up free</Link>
           </p>
+
+          {redirectTo.startsWith("/academy") && (
+            <div className="mt-4">
+              <a href={redirectTo} className="flex items-center justify-center w-full px-4 py-3 bg-sky-100 hover:bg-sky-200 text-sky-800 font-semibold text-sm rounded-xl transition-colors border border-sky-300">
+                Skip — browse as guest (no progress saved)
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>

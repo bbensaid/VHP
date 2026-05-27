@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { CheckCircle2, Circle, ChevronDown, X } from "lucide-react";
+import Link from "next/link";
+import { CheckCircle2, Circle, ChevronDown, X, ArrowLeft } from "lucide-react";
 import type { TrackWithProgress, Pillar } from "@/types/course";
 import { CourseProgressBar } from "./CourseProgressBar";
 
@@ -68,12 +69,18 @@ export function CourseSidebar({
   }
 
   return (
-    <aside className="flex flex-col w-72 min-w-[288px] h-full border-r border-slate-200 bg-slate-50 overflow-hidden">
+    <aside className="flex flex-col w-72 min-w-[288px] border-r border-slate-200 bg-slate-50 overflow-hidden self-stretch">
+      <Link
+        href="/academy/courses"
+        className="flex items-center gap-2 px-4 py-2.5 bg-indigo-50 hover:bg-indigo-100 transition-colors text-indigo-700 font-semibold text-xs shrink-0 border-b border-indigo-100"
+      >
+        <ArrowLeft className="w-3.5 h-3.5 shrink-0" />
+        Back to Academy
+      </Link>
       <div className="p-5 border-b border-slate-200 space-y-3">
         <div className="flex items-start justify-between gap-2">
           <div>
-            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">HTR Academy</p>
-            <h2 className="text-base font-semibold text-slate-900 mt-1 leading-snug">{courseTitle}</h2>
+            <h2 className="text-base font-semibold text-slate-900 leading-snug">{courseTitle}</h2>
           </div>
           {onClose && (
             <button
