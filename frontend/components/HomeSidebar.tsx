@@ -4,6 +4,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
+import { StarIcon } from "@heroicons/react/24/solid";
 import {
   AcademicCapIcon,
   BriefcaseIcon,
@@ -38,6 +39,13 @@ import {
   type PillarId,
   type Program,
 } from "@/lib/taxonomy";
+
+interface FeaturedCourse {
+  slug: string;
+  title: string;
+  subtitle: string | null;
+  estimated_hours: number;
+}
 
 interface HomeSidebarProps {
   onNavigate?: () => void;
@@ -262,7 +270,6 @@ const SECTIONS: Section[] = [
     items: [
       { href: "/academy/personalized-learning", label: "Personalized Learning",   icon: SparklesIcon },
       { href: "/academy/tracks",                label: "Courses",                  icon: TableCellsIcon },
-      { href: "/academy/tracks/hie-health-reform-onboarding", label: "HIE & Health Reform", icon: BookOpenIcon, groupLabel: "Featured Course" },
       { href: "/academy/webinars",              label: "Webinars",                 icon: PresentationChartLineIcon },
       { href: "/academy/case-studies",          label: "Case Studies",             icon: DocumentTextIcon },
       { href: "/academy/glossary",              label: "Glossary",                 icon: BookOpenIcon },
@@ -367,6 +374,19 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [showSetup, setShowSetup] = useState(false);
+  const [featuredCourse, setFeaturedCourse] = useState<FeaturedCourse | null>(null);
+
+  useEffect(() => {
+    const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+    const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+    fetch(
+      `${SUPABASE_URL}/rest/v1/courses?is_featured=eq.true&is_published=eq.true&select=slug,title,subtitle,estimated_hours&limit=1`,
+      { headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` } }
+    )
+      .then((r) => r.json())
+      .then((rows) => { if (rows?.[0]) setFeaturedCourse(rows[0]); })
+      .catch(() => {});
+  }, []);
 
   useEffect(() => {
     let typed = "";
@@ -591,6 +611,44 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
                   {/* ── REGULAR SECTION: flat item list ─────────────────── */}
                   {!section.isPillarSection && section.items && (
                     <div className="py-1">
+                      {/* Featured course card — only inside Academy section */}
+                      {section.id === "learn" && featuredCourse && (
+                        <div className="px-3 pb-2 pt-1">
+                          <p className="text-[9px] font-black uppercase tracking-widest text-sky-600 mb-1.5 pl-1">Featured Course</p>
+                          <Link
+                            href={`/academy/tracks/${featuredCourse.slug}`}
+                            onClick={onNavigate}
+                            className={`block rounded-xl overflow-hidden border transition-all group ${
+                              isActive(`/academy/tracks/${featuredCourse.slug}`)
+                                ? "border-sky-400 shadow-md"
+                                : "border-sky-200 hover:border-sky-400 hover:shadow-md"
+                            }`}
+                          >
+                            <div className="bg-linear-to-br from-sky-700 to-indigo-800 px-3 py-3">
+                              <div className="flex items-center gap-1 mb-1.5">
+                                <StarIcon className="w-3 h-3 text-amber-300 shrink-0" />
+                                <span className="text-[9px] font-black uppercase tracking-widest text-sky-300">Featured</span>
+                              </div>
+                              <p className="text-[11px] font-bold text-white leading-snug group-hover:text-sky-100 transition-colors">
+                                {featuredCourse.title}
+                              </p>
+                              {featuredCourse.subtitle && (
+                                <p className="text-[10px] text-sky-300 leading-snug mt-0.5 line-clamp-2">
+                                  {featuredCourse.subtitle}
+                                </p>
+                              )}
+                            </div>
+                            <div className="bg-sky-50 px-3 py-1.5 flex items-center justify-between">
+                              {featuredCourse.estimated_hours > 0 && (
+                                <span className="text-[10px] text-sky-600 font-medium">~{featuredCourse.estimated_hours}h</span>
+                              )}
+                              <span className="text-[10px] font-bold text-sky-700 group-hover:text-sky-800 ml-auto">
+                                Start →
+                              </span>
+                            </div>
+                          </Link>
+                        </div>
+                      )}
                       {section.items.map((item) => {
                         const Icon = item.icon;
                         return (
