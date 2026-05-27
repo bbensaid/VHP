@@ -69,7 +69,7 @@ export function CourseSidebar({
   }
 
   return (
-    <aside className="flex flex-col w-72 min-w-[288px] border-r border-slate-200 bg-slate-50 overflow-hidden self-stretch">
+    <aside className="flex flex-col w-72 min-w-[288px] border-r border-slate-200 bg-slate-50 self-stretch overflow-y-auto">
       <Link
         href="/academy/courses"
         className="flex items-center gap-2 px-4 py-2.5 bg-indigo-50 hover:bg-indigo-100 transition-colors text-indigo-700 font-semibold text-xs shrink-0 border-b border-indigo-100"
