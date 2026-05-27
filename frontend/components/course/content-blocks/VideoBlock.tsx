@@ -25,7 +25,7 @@ export function VideoBlockRenderer({ block }: { block: VideoBlock }) {
   if (!embedUrl && !videoUrl) return null;
 
   return (
-    <div className="space-y-2">
+    <div className="space-y-2 max-w-2xl">
       <div className="relative w-full rounded-xl overflow-hidden bg-black aspect-video shadow-lg border border-slate-200">
         {/* Self-hosted / direct URL — use native <video> */}
         {isUpload && videoUrl ? (
