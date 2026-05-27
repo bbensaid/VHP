@@ -1,3 +1,6 @@
+import { redirect } from "next/navigation";
+export default function CoursesPage() { redirect("/academy/tracks"); }
+/*
 import { db } from "@/lib/db/client";
 import CoursesClient from "./CoursesClient";
 
@@ -37,3 +40,5 @@ export default async function CoursesPage() {
     </div>
   );
 }
+
+*/
