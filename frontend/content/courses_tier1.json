@@ -2888,6 +2888,923 @@
                 }
               ]
             }
+          },
+          {
+            "id": "lesson_sanity_vbc_fundamentals",
+            "pillar": "general",
+            "order": 99,
+            "slug": "vbc-fundamentals-m1",
+            "title": "Why the Way We Pay for Healthcare Is Breaking the System \u2014 And How Paying for Value Could Fix It",
+            "summary": "The United States spends more on healthcare than any nation on earth \u2014 yet ranks 37th in health outcomes. This module explains why that paradox exists, how the fee-for-service payment system created it, and how value-based care offers a fundamentally different path forward.",
+            "estimatedMinutes": 18,
+            "objectives": [
+              {
+                "id": "obj_sanity_vbc_fundamentals_1",
+                "text": "Explain the US healthcare spending paradox using current data"
+              },
+              {
+                "id": "obj_sanity_vbc_fundamentals_2",
+                "text": "Describe how fee-for-service payment works and the perverse incentives it creates"
+              },
+              {
+                "id": "obj_sanity_vbc_fundamentals_3",
+                "text": "Define value-based care and distinguish it from fee-for-service"
+              },
+              {
+                "id": "obj_sanity_vbc_fundamentals_4",
+                "text": "Identify the four main categories of value-based payment models"
+              },
+              {
+                "id": "obj_sanity_vbc_fundamentals_5",
+                "text": "Explain why Vermont is a national leader in the shift to value-based care"
+              }
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "body": "Imagine paying a mechanic every time they touched your car \u2014 whether or not it ran better afterward. Now imagine that mechanic's salary depended entirely on how many parts they replaced, not on whether your car actually worked. You would quickly end up with a very expensive car that still broke down constantly. This, in essence, is how the United States pays for healthcare.\n\nThe US spent $4.5 trillion on healthcare in 2022 \u2014 roughly $13,493 per person, and 18.3 percent of the entire national economy. That is more than any other high-income country, by a wide margin. Switzerland, the second-highest spender, dedicates about 11.3 percent of its GDP to health. Germany spends 12.8 percent. Canada spends 12.2 percent.\n\nAnd yet \u2014 despite outspending every peer nation \u2014 the US ranks 37th in overall health outcomes according to the World Health Organization. Americans live shorter lives than citizens of 40 other countries. The US infant mortality rate is nearly double that of Finland. Preventable deaths from conditions like diabetes, hypertension, and heart disease occur at far higher rates here than in comparable wealthy nations."
+              },
+              {
+                "type": "text",
+                "heading": "How Did We Get Here? Understanding Fee-for-Service",
+                "body": "To understand why America spends so much and gets so little, you need to understand the payment system that drives almost every clinical decision made in the country. That system is called fee-for-service, often abbreviated FFS. Fee-for-service has been the dominant payment model for American medicine since the mid-20th century."
+              },
+              {
+                "type": "callout",
+                "variant": "tip",
+                "heading": "Key Concept",
+                "body": "Fee-for-Service (FFS): A payment model in which healthcare providers are paid separately for each service they deliver \u2014 each office visit, each test, each procedure, each hospital day. Payment is triggered by doing something, not by whether the patient gets better."
+              },
+              {
+                "type": "text",
+                "body": "Here is how it works in practice: a physician, hospital, or other provider submits a claim to an insurer \u2014 Medicare, Medicaid, or a private insurer \u2014 using standardized billing codes called CPT codes. Each code corresponds to a specific service: a visit, a blood draw, an MRI, a surgical procedure. The insurer reviews the claim and pays a set rate for each code. The provider's revenue depends entirely on how many services they bill, not on whether those services helped the patient."
+              },
+              {
+                "type": "text",
+                "heading": "The Perverse Incentives of Fee-for-Service",
+                "body": "The word 'perverse' in economics means an incentive that pushes behavior in the opposite direction from what you actually want. Fee-for-service is full of perverse incentives. Consider what happens when a hospital successfully reduces readmissions by improving care coordination after discharge. Under fee-for-service, that hospital just reduced its own revenue \u2014 because each readmission generates thousands of dollars in billing.\n\nOr consider preventive care. A primary care physician who spends an extra 30 minutes helping a diabetic patient understand diet, exercise, and medication adherence may prevent that patient from ever needing a $50,000 hospitalization. Under fee-for-service, the physician is paid a modest office visit fee for those 30 minutes. The hospital that would have done the expensive hospitalization loses revenue. The system as a whole saves money \u2014 but the individual providers doing the right thing are financially worse off."
+              },
+              {
+                "type": "callout",
+                "variant": "info",
+                "heading": "Note",
+                "body": "Under fee-for-service, prevention is a cost center, not a revenue source. Providers are paid to treat illness, not to prevent it. This single fact explains more about America's healthcare crisis than almost any other."
+              },
+              {
+                "type": "text",
+                "heading": "Defining Value-Based Care: A Fundamentally Different Approach",
+                "body": "Value-based care, sometimes called value-based payment or value-based purchasing, is a healthcare delivery and payment model in which providers are paid based on patient health outcomes rather than the volume of services provided. The key word is 'value' \u2014 defined in healthcare as the quality of care delivered divided by the cost of delivering it."
+              },
+              {
+                "type": "callout",
+                "variant": "tip",
+                "heading": "Key Concept",
+                "body": "Value-Based Care: A payment and delivery model where providers earn more when they keep patients healthier, improve quality, and reduce unnecessary costs \u2014 and earn less when they deliver high volumes of low-quality or unnecessary care. The core formula: Value = Quality / Cost."
+              },
+              {
+                "type": "text",
+                "body": "This seems like a simple idea \u2014 pay for results, not for activity. But implementing it requires solving genuinely hard problems: How do you measure quality? How do you attribute outcomes to specific providers when patients see many doctors? How do you prevent providers from avoiding sick patients to protect their quality scores? How do you account for the fact that some patients have more complex needs than others? These are the questions that value-based payment models are designed to address."
+              },
+              {
+                "type": "text",
+                "heading": "The Four Main Categories of Value-Based Payment Models",
+                "body": "Value-based care is not a single payment model \u2014 it is a family of models that shift payment from volume to value in different ways and to different degrees. Think of a spectrum: at one end is pure fee-for-service with no accountability for outcomes; at the other end is full capitation where providers take on complete financial responsibility for a population's health. Most VBC models sit somewhere in between."
+              },
+              {
+                "type": "text",
+                "heading": "Category 1: Pay-for-Performance",
+                "body": "Pay-for-performance (P4P) is the simplest form of value-based payment. Providers still get paid fee-for-service for each service, but they receive bonuses for hitting quality targets \u2014 or face penalties for missing them. Examples include CMS's Hospital Value-Based Purchasing program, which adjusts Medicare payments to hospitals based on quality scores, and the Merit-based Incentive Payment System (MIPS) for physicians."
+              },
+              {
+                "type": "text",
+                "heading": "Category 2: Accountable Care Organizations and Shared Savings",
+                "body": "Accountable Care Organizations (ACOs) are networks of doctors, hospitals, and other providers that work together to coordinate care for a defined group of patients. The ACO is given a benchmark spending target. If the ACO spends less than the benchmark while maintaining quality, it shares in those savings. This model keeps the fee-for-service billing infrastructure but adds accountability for total cost of care.\n\nMedicare ACOs generated $1.87 billion in net savings for Medicare in 2022, according to CMS. As of 2024, more than 480 ACOs participate in the Medicare Shared Savings Program, covering over 11 million beneficiaries. Vermont's OneCare Vermont is an ACO that serves both Medicare and Medicaid populations \u2014 and is the centerpiece of the state's nationally recognized All-Payer Model."
+              },
+              {
+                "type": "text",
+                "heading": "Category 3: Bundled Payments",
+                "body": "Bundled payments group all the costs for a single episode of care \u2014 say, a hip replacement surgery plus the 90 days of recovery \u2014 into one fixed payment. All providers involved must share that single payment. If they deliver great care efficiently and spend less than the bundle price, they keep the difference. If they spend more, they lose money. This directly incentivizes coordination across the care team."
+              },
+              {
+                "type": "text",
+                "heading": "Category 4: Capitation and Global Budgets",
+                "body": "Capitation is the most fundamental shift: providers receive a fixed monthly payment per patient to cover all their care, regardless of how many services that patient uses. The provider takes on complete financial responsibility \u2014 called full risk \u2014 for the patient's health. If the patient stays healthy and uses few services, the provider keeps the surplus. Global budgets take this idea to the health-system level: an entire hospital or health system receives a fixed annual budget to care for a defined population."
+              },
+              {
+                "type": "text",
+                "heading": "Vermont: A National Laboratory for Value-Based Care",
+                "body": "Vermont is the only state in the nation operating an approved All-Payer Accountable Care Organization Model \u2014 a program that brings Medicare, Medicaid, and commercial insurance under a single set of quality and spending targets for the first time in American history. This makes Vermont uniquely important to anyone studying value-based care. What Vermont learns, the nation watches.\n\nThe Vermont All-Payer ACO Model was approved by CMS in 2016 and launched in January 2017. At its center is OneCare Vermont, a statewide ACO that contracts with hospitals, physicians, and community organizations across the state. OneCare Vermont currently serves approximately 240,000 Vermonters \u2014 nearly 40 percent of the state's population \u2014 through its attributed beneficiary program."
+              },
+              {
+                "type": "text",
+                "heading": "The Green Mountain Care Board",
+                "body": "Vermont's All-Payer Model is overseen by the Green Mountain Care Board (GMCB), a state agency with broad authority to regulate healthcare costs, review hospital budgets, and set statewide health spending targets. The GMCB is one of the most powerful state-level healthcare cost-control bodies in the nation. It reviews and approves hospital budgets every year \u2014 meaning hospitals cannot simply raise prices without regulatory approval.\n\nThis combination \u2014 a statewide ACO (OneCare Vermont) operating under regulatory oversight (GMCB), with a federal partnership (CMS All-Payer Model) \u2014 makes Vermont's healthcare system genuinely unique. Understanding how it works, and why it was designed this way, is one of the most valuable things you can learn if you work in Vermont healthcare."
+              },
+              {
+                "type": "text",
+                "heading": "Why This Matters to You, Wherever You Work",
+                "body": "If you are a nurse, this transformation changes what your work looks like. Value-based care prioritizes care coordination, discharge planning, chronic disease management, and patient education \u2014 all activities that nurses are uniquely positioned to lead. Under fee-for-service, a nurse who prevented a readmission by spending extra time on discharge education was not generating revenue. Under VBC, that same nurse is helping the organization succeed financially.\n\nIf you are a hospital administrator, VBC means thinking differently about your budget. Revenue is no longer simply a function of volume. Quality scores, total cost of care for your population, and care coordination infrastructure become central financial drivers. Understanding which patients are at highest risk of expensive preventable events \u2014 and investing in keeping them well \u2014 becomes essential to financial sustainability."
+              },
+              {
+                "type": "text",
+                "heading": "What You Will Learn in This Course",
+                "body": "This course has six modules, each building on the last. Module 2 dives into the economics: how money flows through the healthcare system and the mechanics of each major payment model in depth. Module 3 focuses on clinical practice: how VBC changes the daily reality of delivering care. Module 4 examines the policy landscape: the federal programs and Vermont-specific structures that govern the transition. Module 5 covers technology: the data infrastructure that makes VBC possible. Module 6 addresses the most urgent challenge: health equity, and how VBC can be designed to reduce \u2014 rather than worsen \u2014 the disparities that exist in every healthcare system.\n\nBy the end of this course, you will have a sophisticated understanding of one of the most consequential transformations happening in American healthcare. You will understand not just what value-based care is, but why it was designed the way it is, how it plays out in real clinical settings, and what it means for patients, providers, and communities across Vermont and the nation."
+              },
+              {
+                "type": "callout",
+                "variant": "quote",
+                "heading": "Quote",
+                "body": "The question is no longer whether healthcare should move to value-based payment \u2014 it is how fast and how completely. Every major payer, every major health system, and every serious policymaker now agrees that fee-for-service as the dominant payment model is unsustainable. The only debate is about the pace and mechanics of transition."
+              }
+            ],
+            "tags": [],
+            "relatedLessonIds": [],
+            "isPublished": true,
+            "sanityBody": [
+              {
+                "_type": "block",
+                "_key": "m1p001",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s001",
+                    "text": "Imagine paying a mechanic every time they touched your car \u2014 whether or not it ran better afterward. Now imagine that mechanic's salary depended entirely on how many parts they replaced, not on whether your car actually worked. You would quickly end up with a very expensive car that still broke down constantly. This, in essence, is how the United States pays for healthcare.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p002",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s002",
+                    "text": "The US spent $4.5 trillion on healthcare in 2022 \u2014 roughly $13,493 per person, and 18.3 percent of the entire national economy. That is more than any other high-income country, by a wide margin. Switzerland, the second-highest spender, dedicates about 11.3 percent of its GDP to health. Germany spends 12.8 percent. Canada spends 12.2 percent.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "statGrid",
+                "_key": "m1sg01",
+                "title": "The US Healthcare Spending Paradox",
+                "stats": [
+                  {
+                    "_key": "m1st01",
+                    "value": "$4.5T",
+                    "label": "US Healthcare Spending (2022)",
+                    "context": "18.3% of GDP \u2014 the highest of any nation on earth. Source: CMS National Health Expenditure Accounts, 2023.",
+                    "trend": "up"
+                  },
+                  {
+                    "_key": "m1st02",
+                    "value": "37th",
+                    "label": "US Health Outcomes Ranking",
+                    "context": "Behind most peer nations in life expectancy, infant mortality, and chronic disease burden. Source: World Health Organization.",
+                    "trend": "down"
+                  },
+                  {
+                    "_key": "m1st03",
+                    "value": "30\u201340%",
+                    "label": "Estimated Waste in US Healthcare",
+                    "context": "JAMA 2019: $760B\u2013$935B per year on unnecessary or low-value care \u2014 roughly 1 in 3 dollars spent.",
+                    "trend": "neutral"
+                  }
+                ]
+              },
+              {
+                "_type": "block",
+                "_key": "m1p003",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s003",
+                    "text": "And yet \u2014 despite outspending every peer nation \u2014 the US ranks 37th in overall health outcomes according to the World Health Organization. Americans live shorter lives than citizens of 40 other countries. The US infant mortality rate is nearly double that of Finland. Preventable deaths from conditions like diabetes, hypertension, and heart disease occur at far higher rates here than in comparable wealthy nations.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1h2a",
+                "style": "h2",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1h2as",
+                    "text": "How Did We Get Here? Understanding Fee-for-Service",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p004",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s004",
+                    "text": "To understand why America spends so much and gets so little, you need to understand the payment system that drives almost every clinical decision made in the country. That system is called fee-for-service, often abbreviated FFS. Fee-for-service has been the dominant payment model for American medicine since the mid-20th century.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1cal1",
+                "style": "callout",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1cas1",
+                    "text": "Fee-for-Service (FFS): A payment model in which healthcare providers are paid separately for each service they deliver \u2014 each office visit, each test, each procedure, each hospital day. Payment is triggered by doing something, not by whether the patient gets better.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p005",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s005",
+                    "text": "Here is how it works in practice: a physician, hospital, or other provider submits a claim to an insurer \u2014 Medicare, Medicaid, or a private insurer \u2014 using standardized billing codes called CPT codes. Each code corresponds to a specific service: a visit, a blood draw, an MRI, a surgical procedure. The insurer reviews the claim and pays a set rate for each code. The provider's revenue depends entirely on how many services they bill, not on whether those services helped the patient.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "analogyBlock",
+                "_key": "m1an01",
+                "concept": "Fee-for-Service Payment",
+                "analogy": "Imagine a restaurant that charged you for every time a server walked past your table \u2014 whether they brought food, refilled your water, or just walked by. The restaurant's income would depend not on how satisfying your meal was, but on how many times staff interacted with you. Servers would be incentivized to walk past your table as often as possible, whether you needed anything or not.",
+                "bridge": "In healthcare, this translates into providers ordering more tests, scheduling more follow-up visits, and performing more procedures \u2014 because each one generates revenue. Keeping a patient healthy and out of the office is financially penalized under this model."
+              },
+              {
+                "_type": "block",
+                "_key": "m1h3a",
+                "style": "h3",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1h3as",
+                    "text": "The Perverse Incentives of Fee-for-Service",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p006",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s006",
+                    "text": "The word 'perverse' in economics means an incentive that pushes behavior in the opposite direction from what you actually want. Fee-for-service is full of perverse incentives. Consider what happens when a hospital successfully reduces readmissions by improving care coordination after discharge. Under fee-for-service, that hospital just reduced its own revenue \u2014 because each readmission generates thousands of dollars in billing.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p007",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s007",
+                    "text": "Or consider preventive care. A primary care physician who spends an extra 30 minutes helping a diabetic patient understand diet, exercise, and medication adherence may prevent that patient from ever needing a $50,000 hospitalization. Under fee-for-service, the physician is paid a modest office visit fee for those 30 minutes. The hospital that would have done the expensive hospitalization loses revenue. The system as a whole saves money \u2014 but the individual providers doing the right thing are financially worse off.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1hlt1",
+                "style": "highlight",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1hls1",
+                    "text": "Under fee-for-service, prevention is a cost center, not a revenue source. Providers are paid to treat illness, not to prevent it. This single fact explains more about America's healthcare crisis than almost any other.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "statGrid",
+                "_key": "m1sg02",
+                "title": "The True Cost of Fee-for-Service Waste (JAMA, 2019)",
+                "stats": [
+                  {
+                    "_key": "m1st04",
+                    "value": "$265B",
+                    "label": "Administrative Complexity Waste",
+                    "context": "The largest single category of healthcare waste \u2014 driven by billing complexity and multi-payer administrative burden.",
+                    "trend": "up"
+                  },
+                  {
+                    "_key": "m1st05",
+                    "value": "$210B",
+                    "label": "Overtreatment and Low-Value Care",
+                    "context": "Tests, procedures, and hospital stays that clinical evidence shows don't meaningfully improve outcomes.",
+                    "trend": "up"
+                  },
+                  {
+                    "_key": "m1st06",
+                    "value": "$180B",
+                    "label": "Pricing Failure Waste",
+                    "context": "Prices that significantly exceed benchmarks for identical services in other markets.",
+                    "trend": "neutral"
+                  }
+                ]
+              },
+              {
+                "_type": "block",
+                "_key": "m1h2b",
+                "style": "h2",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1h2bs",
+                    "text": "Defining Value-Based Care: A Fundamentally Different Approach",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p008",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s008",
+                    "text": "Value-based care, sometimes called value-based payment or value-based purchasing, is a healthcare delivery and payment model in which providers are paid based on patient health outcomes rather than the volume of services provided. The key word is 'value' \u2014 defined in healthcare as the quality of care delivered divided by the cost of delivering it.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1cal2",
+                "style": "callout",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1cas2",
+                    "text": "Value-Based Care: A payment and delivery model where providers earn more when they keep patients healthier, improve quality, and reduce unnecessary costs \u2014 and earn less when they deliver high volumes of low-quality or unnecessary care. The core formula: Value = Quality / Cost.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p009",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s009",
+                    "text": "This seems like a simple idea \u2014 pay for results, not for activity. But implementing it requires solving genuinely hard problems: How do you measure quality? How do you attribute outcomes to specific providers when patients see many doctors? How do you prevent providers from avoiding sick patients to protect their quality scores? How do you account for the fact that some patients have more complex needs than others? These are the questions that value-based payment models are designed to address.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "comparisonBlock",
+                "_key": "m1cmp1",
+                "title": "Fee-for-Service vs. Value-Based Care at a Glance",
+                "leftLabel": "Fee-for-Service",
+                "rightLabel": "Value-Based Care",
+                "rows": [
+                  {
+                    "_key": "m1rw01",
+                    "aspect": "Payment trigger",
+                    "left": "Each service delivered",
+                    "right": "Patient outcomes achieved"
+                  },
+                  {
+                    "_key": "m1rw02",
+                    "aspect": "Provider incentive",
+                    "left": "Do more \u2014 more visits, tests, procedures",
+                    "right": "Keep patients healthier with fewer interventions"
+                  },
+                  {
+                    "_key": "m1rw03",
+                    "aspect": "Who holds financial risk",
+                    "left": "The payer (insurer or Medicare)",
+                    "right": "Provider shares in savings and losses"
+                  },
+                  {
+                    "_key": "m1rw04",
+                    "aspect": "Prevention",
+                    "left": "A cost, not reimbursed well",
+                    "right": "Core to financial success"
+                  },
+                  {
+                    "_key": "m1rw05",
+                    "aspect": "Team coordination",
+                    "left": "Not incentivized \u2014 care silos rewarded",
+                    "right": "Essential \u2014 shared accountability across team"
+                  },
+                  {
+                    "_key": "m1rw06",
+                    "aspect": "Data needs",
+                    "left": "Billing codes sufficient",
+                    "right": "Clinical outcomes, population health data required"
+                  }
+                ]
+              },
+              {
+                "_type": "block",
+                "_key": "m1h2c",
+                "style": "h2",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1h2cs",
+                    "text": "The Four Main Categories of Value-Based Payment Models",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p010",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s010",
+                    "text": "Value-based care is not a single payment model \u2014 it is a family of models that shift payment from volume to value in different ways and to different degrees. Think of a spectrum: at one end is pure fee-for-service with no accountability for outcomes; at the other end is full capitation where providers take on complete financial responsibility for a population's health. Most VBC models sit somewhere in between.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1h3b",
+                "style": "h3",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1h3bs",
+                    "text": "Category 1: Pay-for-Performance",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p011",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s011",
+                    "text": "Pay-for-performance (P4P) is the simplest form of value-based payment. Providers still get paid fee-for-service for each service, but they receive bonuses for hitting quality targets \u2014 or face penalties for missing them. Examples include CMS's Hospital Value-Based Purchasing program, which adjusts Medicare payments to hospitals based on quality scores, and the Merit-based Incentive Payment System (MIPS) for physicians.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1h3c",
+                "style": "h3",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1h3cs",
+                    "text": "Category 2: Accountable Care Organizations and Shared Savings",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p012",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s012",
+                    "text": "Accountable Care Organizations (ACOs) are networks of doctors, hospitals, and other providers that work together to coordinate care for a defined group of patients. The ACO is given a benchmark spending target. If the ACO spends less than the benchmark while maintaining quality, it shares in those savings. This model keeps the fee-for-service billing infrastructure but adds accountability for total cost of care.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p013",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s013",
+                    "text": "Medicare ACOs generated $1.87 billion in net savings for Medicare in 2022, according to CMS. As of 2024, more than 480 ACOs participate in the Medicare Shared Savings Program, covering over 11 million beneficiaries. Vermont's OneCare Vermont is an ACO that serves both Medicare and Medicaid populations \u2014 and is the centerpiece of the state's nationally recognized All-Payer Model.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1h3d",
+                "style": "h3",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1h3ds",
+                    "text": "Category 3: Bundled Payments",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p014",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s014",
+                    "text": "Bundled payments group all the costs for a single episode of care \u2014 say, a hip replacement surgery plus the 90 days of recovery \u2014 into one fixed payment. All providers involved must share that single payment. If they deliver great care efficiently and spend less than the bundle price, they keep the difference. If they spend more, they lose money. This directly incentivizes coordination across the care team.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1h3e",
+                "style": "h3",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1h3es",
+                    "text": "Category 4: Capitation and Global Budgets",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p015",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s015",
+                    "text": "Capitation is the most fundamental shift: providers receive a fixed monthly payment per patient to cover all their care, regardless of how many services that patient uses. The provider takes on complete financial responsibility \u2014 called full risk \u2014 for the patient's health. If the patient stays healthy and uses few services, the provider keeps the surplus. Global budgets take this idea to the health-system level: an entire hospital or health system receives a fixed annual budget to care for a defined population.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "stepBlock",
+                "_key": "m1stp1",
+                "title": "How Value-Based Care Works: From Payment Design to Patient Outcome",
+                "steps": [
+                  {
+                    "_key": "m1sp01",
+                    "number": 1,
+                    "title": "Define the Population",
+                    "description": "A group of patients is attributed to a provider or health system \u2014 for example, all Medicare beneficiaries whose primary care physician is in a particular ACO."
+                  },
+                  {
+                    "_key": "m1sp02",
+                    "number": 2,
+                    "title": "Set a Spending Benchmark",
+                    "description": "Based on historical spending, a target is set for what this population's care should cost. This becomes the benchmark against which actual spending is measured."
+                  },
+                  {
+                    "_key": "m1sp03",
+                    "number": 3,
+                    "title": "Measure Quality",
+                    "description": "Quality metrics are tracked \u2014 things like diabetes control rates, readmission rates, preventive screening completion, and patient experience scores."
+                  },
+                  {
+                    "_key": "m1sp04",
+                    "number": 4,
+                    "title": "Deliver Care with Accountability",
+                    "description": "Providers deliver care as they normally would, but now have financial incentive to coordinate, prevent, and reduce unnecessary services."
+                  },
+                  {
+                    "_key": "m1sp05",
+                    "number": 5,
+                    "title": "Reconcile and Share Savings",
+                    "description": "At year end, actual spending is compared to the benchmark. If the provider spent less while maintaining quality, they share in the savings. If they spent more, they may face a penalty."
+                  }
+                ]
+              },
+              {
+                "_type": "block",
+                "_key": "m1h2d",
+                "style": "h2",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1h2ds",
+                    "text": "Vermont: A National Laboratory for Value-Based Care",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p016",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s016",
+                    "text": "Vermont is the only state in the nation operating an approved All-Payer Accountable Care Organization Model \u2014 a program that brings Medicare, Medicaid, and commercial insurance under a single set of quality and spending targets for the first time in American history. This makes Vermont uniquely important to anyone studying value-based care. What Vermont learns, the nation watches.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p017",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s017",
+                    "text": "The Vermont All-Payer ACO Model was approved by CMS in 2016 and launched in January 2017. At its center is OneCare Vermont, a statewide ACO that contracts with hospitals, physicians, and community organizations across the state. OneCare Vermont currently serves approximately 240,000 Vermonters \u2014 nearly 40 percent of the state's population \u2014 through its attributed beneficiary program.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "exampleBlock",
+                "_key": "m1ex01",
+                "eyebrow": "Real-World Example",
+                "title": "OneCare Vermont: Vermont's Statewide ACO",
+                "body": "OneCare Vermont launched in 2017 as the operational vehicle for Vermont's All-Payer ACO Model. It serves Medicare, Medicaid, and commercial insurance members under a unified set of quality metrics and spending targets. The organization works with 119 primary care practices, 14 hospitals, and hundreds of community providers across the state to coordinate care for approximately 240,000 attributed Vermonters. Unlike a traditional insurer, OneCare Vermont does not manage claims \u2014 instead, it manages the health of a population, investing in care coordination, social services navigation, and community health workers.",
+                "outcome": "In performance years where OneCare met quality targets, Vermont demonstrated lower-than-expected spending growth \u2014 a meaningful achievement given Vermont's older, sicker-than-average, and largely rural population.",
+                "source": "Vermont Agency of Administration / CMS All-Payer Model Performance Reports, 2017\u20132024"
+              },
+              {
+                "_type": "block",
+                "_key": "m1h3f",
+                "style": "h3",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1h3fs",
+                    "text": "The Green Mountain Care Board",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p018",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s018",
+                    "text": "Vermont's All-Payer Model is overseen by the Green Mountain Care Board (GMCB), a state agency with broad authority to regulate healthcare costs, review hospital budgets, and set statewide health spending targets. The GMCB is one of the most powerful state-level healthcare cost-control bodies in the nation. It reviews and approves hospital budgets every year \u2014 meaning hospitals cannot simply raise prices without regulatory approval.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p019",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s019",
+                    "text": "This combination \u2014 a statewide ACO (OneCare Vermont) operating under regulatory oversight (GMCB), with a federal partnership (CMS All-Payer Model) \u2014 makes Vermont's healthcare system genuinely unique. Understanding how it works, and why it was designed this way, is one of the most valuable things you can learn if you work in Vermont healthcare.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "exampleBlock",
+                "_key": "m1ex02",
+                "eyebrow": "Real-World Example",
+                "title": "Medicare Shared Savings Program: The Largest VBC Program in the World",
+                "body": "The Medicare Shared Savings Program (MSSP), created by the Affordable Care Act in 2012 and operated by CMS, is the largest ACO program in the world. Participating ACOs take responsibility for the total cost and quality of care for their attributed Medicare beneficiaries. ACOs that spend below their benchmark while meeting quality standards share a portion of savings with Medicare. Those in higher-risk tracks may also face penalties for overspending.",
+                "outcome": "In 2022, Medicare ACOs generated $1.87 billion in net savings for Medicare while serving 11 million beneficiaries. ACOs in higher-risk tracks consistently outperformed lower-risk tracks, demonstrating that meaningful financial accountability improves performance.",
+                "source": "CMS Medicare Shared Savings Program 2022 Performance Year Results, published 2023"
+              },
+              {
+                "_type": "block",
+                "_key": "m1h2e",
+                "style": "h2",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1h2es",
+                    "text": "Why This Matters to You, Wherever You Work",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p020",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s020",
+                    "text": "If you are a nurse, this transformation changes what your work looks like. Value-based care prioritizes care coordination, discharge planning, chronic disease management, and patient education \u2014 all activities that nurses are uniquely positioned to lead. Under fee-for-service, a nurse who prevented a readmission by spending extra time on discharge education was not generating revenue. Under VBC, that same nurse is helping the organization succeed financially.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p021",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s021",
+                    "text": "If you are a hospital administrator, VBC means thinking differently about your budget. Revenue is no longer simply a function of volume. Quality scores, total cost of care for your population, and care coordination infrastructure become central financial drivers. Understanding which patients are at highest risk of expensive preventable events \u2014 and investing in keeping them well \u2014 becomes essential to financial sustainability.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "analogyBlock",
+                "_key": "m1an02",
+                "concept": "The VBC Transition",
+                "analogy": "Transitioning from fee-for-service to value-based care is like converting a city from individual car ownership to a public transit system while everyone is still driving to work. You cannot shut down all the roads at once \u2014 you have to build the trains while traffic is still running, convince people the new system is better, and gradually shift incentives until the old system is obsolete.",
+                "bridge": "In healthcare, providers must continue billing fee-for-service while simultaneously building the care coordination, data, and team infrastructure that VBC requires. Organizations that invest in both simultaneously face real financial strain during the transition period \u2014 but those that do not invest will be left behind."
+              },
+              {
+                "_type": "warningBlock",
+                "_key": "m1wb01",
+                "misconception": "Value-based care means providers just get paid less for doing the same work.",
+                "reality": "VBC redistributes financial incentives \u2014 it does not simply cut payments. Providers who deliver high-quality, efficient, well-coordinated care can earn significantly more under VBC than under fee-for-service. The providers who lose money are those who were generating revenue through high volumes of low-value care."
+              },
+              {
+                "_type": "warningBlock",
+                "_key": "m1wb02",
+                "misconception": "Value-based care is a cost-cutting measure that will hurt patients by rationing necessary care.",
+                "reality": "The evidence shows the opposite: VBC programs consistently improve quality scores, reduce preventable hospitalizations, and increase preventive care rates. The goal is to eliminate waste and low-value care \u2014 not necessary care. Patients in high-performing ACOs receive more preventive services, not fewer essential treatments."
+              },
+              {
+                "_type": "statGrid",
+                "_key": "m1sg03",
+                "title": "VBC Progress in the United States (2024\u20132026)",
+                "stats": [
+                  {
+                    "_key": "m1st07",
+                    "value": "480+",
+                    "label": "Medicare ACOs in Operation",
+                    "context": "Serving over 11 million Medicare beneficiaries nationwide as of 2024. Source: CMS MSSP Annual Report.",
+                    "trend": "up"
+                  },
+                  {
+                    "_key": "m1st08",
+                    "value": "$1.87B",
+                    "label": "Net Medicare Savings from ACOs (2022)",
+                    "context": "Savings generated above the cost of bonuses paid to high-performing ACOs. Source: CMS.",
+                    "trend": "up"
+                  },
+                  {
+                    "_key": "m1st09",
+                    "value": "240,000",
+                    "label": "Vermonters Attributed to OneCare VT",
+                    "context": "Roughly 40% of Vermont's total population \u2014 the highest all-payer ACO penetration rate in the country.",
+                    "trend": "up"
+                  }
+                ]
+              },
+              {
+                "_type": "block",
+                "_key": "m1h2f",
+                "style": "h2",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1h2fs",
+                    "text": "What You Will Learn in This Course",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p022",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s022",
+                    "text": "This course has six modules, each building on the last. Module 2 dives into the economics: how money flows through the healthcare system and the mechanics of each major payment model in depth. Module 3 focuses on clinical practice: how VBC changes the daily reality of delivering care. Module 4 examines the policy landscape: the federal programs and Vermont-specific structures that govern the transition. Module 5 covers technology: the data infrastructure that makes VBC possible. Module 6 addresses the most urgent challenge: health equity, and how VBC can be designed to reduce \u2014 rather than worsen \u2014 the disparities that exist in every healthcare system.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1p023",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1s023",
+                    "text": "By the end of this course, you will have a sophisticated understanding of one of the most consequential transformations happening in American healthcare. You will understand not just what value-based care is, but why it was designed the way it is, how it plays out in real clinical settings, and what it means for patients, providers, and communities across Vermont and the nation.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "block",
+                "_key": "m1qt01",
+                "style": "quote",
+                "children": [
+                  {
+                    "_type": "span",
+                    "_key": "m1qts1",
+                    "text": "The question is no longer whether healthcare should move to value-based payment \u2014 it is how fast and how completely. Every major payer, every major health system, and every serious policymaker now agrees that fee-for-service as the dominant payment model is unsustainable. The only debate is about the pace and mechanics of transition.",
+                    "marks": []
+                  }
+                ],
+                "markDefs": []
+              },
+              {
+                "_type": "knowledgeCheck",
+                "_key": "m1kc01",
+                "question": "A hospital reduces readmissions by 15% through an improved discharge education program. Under fee-for-service, what happens to the hospital's revenue? Under a value-based ACO model, what happens?",
+                "hint": "Think about what generates revenue under each model.",
+                "answer": "Under fee-for-service, the hospital's revenue decreases \u2014 each avoided readmission represents a lost billing opportunity worth thousands of dollars. Under a value-based ACO model, the hospital's financial performance improves \u2014 lower spending relative to the benchmark means a larger share of savings, and better quality scores protect or increase future payment rates. This contrast illustrates the core difference between the two systems: FFS rewards volume, VBC rewards outcomes."
+              },
+              {
+                "_type": "knowledgeCheck",
+                "_key": "m1kc02",
+                "question": "What makes Vermont's healthcare system unique compared to every other state in the country?",
+                "hint": "Think about the payer mix and the role of OneCare Vermont.",
+                "answer": "Vermont is the only state operating an approved All-Payer ACO Model \u2014 meaning Medicare, Medicaid, and commercial insurance all operate under a single set of unified quality and spending targets. In every other state, these payers operate independently with different rules, creating fragmentation that makes coordinated care harder. Vermont's model, anchored by OneCare Vermont and overseen by the Green Mountain Care Board, attempts to align all payers behind shared goals for the first time in American history."
+              },
+              {
+                "_type": "takeawayBlock",
+                "_key": "m1tw01",
+                "title": "Key Takeaways: Module 1",
+                "points": [
+                  "The US spends $4.5 trillion on healthcare (18.3% of GDP) \u2014 more than any nation \u2014 yet ranks 37th in health outcomes, a paradox driven largely by fee-for-service payment incentives.",
+                  "Fee-for-service pays providers per service delivered, creating perverse incentives to do more regardless of whether it helps patients. Prevention, coordination, and efficiency are financially penalized.",
+                  "Value-based care is a family of payment models that pay for outcomes rather than volume \u2014 aligning provider incentives with patient health. The core formula: Value = Quality / Cost.",
+                  "The four main VBC model categories are pay-for-performance, shared savings ACOs, bundled payments, and capitation/global budgets \u2014 each shifting more financial risk and accountability to providers.",
+                  "Vermont's All-Payer ACO Model \u2014 the only one of its kind in the US \u2014 makes Vermont a national laboratory for value-based care transformation, with OneCare Vermont serving approximately 240,000 Vermonters.",
+                  "The transition from FFS to VBC requires changes in payment contracts, data infrastructure, clinical workflows, and organizational culture \u2014 and is a multi-decade journey, not a single event."
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3301,6 +4218,709 @@
                 }
               ]
             }
+          },
+          {
+            "id": "lesson_sanity_vbc_economics",
+            "pillar": "economics",
+            "order": 99,
+            "slug": "vbc-fundamentals-module-3-economics-pillar",
+            "title": "Value-Based Care Fundamentals \u2014 Module 3: The Economics Pillar \u2014 Following the Money in Value-Based Care",
+            "summary": "Module 3 of the HTR Academy Value-Based Care Fundamentals course examines the financial mechanics of value-based care from first principles. It explains, in plain language, how money actually flows in the major VBC contract structures \u2014 shared savings, bundled payments, and capitation \u2014 how providers calculate whether a VBC arrangement is financially rational for their organization, what the volume-to-value transition problem means in practice for health system balance sheets, and what the economic evidence says about which VBC models generate durable savings versus which ones simply shift cost without reducing it. Learners will leave this module able to evaluate a VBC contract term sheet, identify the key actuarial concepts their finance teams are using, and understand the economic case for primary care investment as the highest-return infrastructure spend in healthcare.",
+            "estimatedMinutes": 26,
+            "objectives": [
+              {
+                "id": "obj_sanity_vbc_economics_1",
+                "text": "Trace the financial mechanics of a shared savings contract from benchmark calculation through savings distribution."
+              },
+              {
+                "id": "obj_sanity_vbc_economics_2",
+                "text": "Compare upside-only and two-sided risk tracks and identify the balance sheet conditions that determine which is appropriate."
+              },
+              {
+                "id": "obj_sanity_vbc_economics_3",
+                "text": "Explain why bundled payment savings in major joint replacement come primarily from post-acute care, not the procedure itself."
+              },
+              {
+                "id": "obj_sanity_vbc_economics_4",
+                "text": "Model the volume-to-value transition period revenue gap over a five-year planning horizon."
+              },
+              {
+                "id": "obj_sanity_vbc_economics_5",
+                "text": "Calculate the return on investment for six categories of care management intervention using CMS benchmark data."
+              }
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "body": "Here is a question that sounds simple but is genuinely hard to answer: if a hospital successfully reduces its patients\u2019 hospitalization rate by 15% through better care management, is that good news or bad news for the hospital\u2019s finances? The instinctive answer is that it must be good news \u2014 fewer hospitalizations means healthier patients, which is surely the goal. But in a world where 40% of that hospital\u2019s revenue still comes from fee-for-service Medicare and Medicaid payments, fewer hospitalizations means fewer inpatient admissions, which means fewer billed days, which means lower revenue. The hospital just cut its own income by doing its job better. This is not a hypothetical paradox \u2014 it is the central economic tension of the volume-to-value transition, experienced by virtually every health system that has seriously engaged with value-based care. Understanding this tension, and the financial mechanisms that VBC contract structures use to resolve it, is what this module is about."
+              },
+              {
+                "type": "text",
+                "heading": "The Financial Anatomy of a Shared Savings Contract",
+                "body": "The Medicare Shared Savings Program is the most widely adopted VBC model in the United States, and shared savings is the financial mechanism at its core. Understanding how shared savings actually works \u2014 how the benchmark is set, how savings are calculated, and how they are distributed \u2014 is the foundation for understanding the economics of most VBC arrangements. The concept is straightforward: CMS calculates how much it would have expected to spend on your attributed patient population if they had remained in traditional fee-for-service Medicare, adjusted for their age, health status, and geographic cost factors. This projected spend is your \u201cbenchmark.\u201d If your ACO\u2019s actual spending on that population comes in below the benchmark, the difference is \u201csavings.\u201d You share those savings with CMS according to a pre-agreed formula \u2014 typically retaining 40\u201375% depending on your risk track and quality performance, with CMS keeping the remainder.\n\nThe devil, as always, is in the details. The benchmark calculation uses a three-year historical average of your patient population\u2019s spending, adjusted upward by a national trend factor. For ACOs whose patient populations were already low-cost before joining the program, this creates an immediate structural problem: their benchmark is low, so even excellent care management produces modest absolute savings, making the shared savings payment insufficient to cover the care management infrastructure investment. This is called the \u201clow benchmark problem,\u201d and it is the primary reason that rural and safety-net ACOs, which often already operate lean systems with lower baseline utilization, struggle to generate shared savings large enough to justify Advanced APM participation costs. CMS has modified the benchmark methodology three times since 2012 in response to this problem, most recently in the Pathways to Success Rule of 2018 and the 2023 ACO Primary Care Flex Model, but the fundamental tension between historical benchmarking and equitable VBC participation for already-efficient providers remains unresolved."
+              },
+              {
+                "type": "text",
+                "heading": "Upside-Only vs. Two-Sided Risk: The Decision That Changes Everything",
+                "body": "One of the most consequential decisions a provider organization makes when entering a shared savings arrangement is whether to accept only upside risk \u2014 where you share in savings if you beat the benchmark but owe nothing if you miss it \u2014 or two-sided risk, where you both share savings and repay losses if spending exceeds the benchmark. This choice has profound implications for the financial planning, working capital requirements, and organizational risk appetite of the participating entity. Upside-only arrangements (MSSP Track 1 and its successors) are appropriate for organizations beginning their VBC journey: they provide financial experience with population cost management without the catastrophic downside scenario of a major loss repayment obligation. Two-sided arrangements (MSSP ENHANCED Track, Direct Contracting, ACO REACH) offer higher shared savings percentages \u2014 sometimes up to 80% of savings \u2014 but require the organization to maintain actuarial reserves sufficient to cover a loss scenario, typically modeled at 1\u20133% of benchmark spending.\n\nThe financial model in the table above illustrates why Two-Sided and Full-Risk tracks are substantially more attractive in their best-case financial outcome \u2014 but also why the actuarial reserve requirement creates a genuine barrier to entry for organizations operating at thin margins. For a health system with $30 million in unrestricted net assets, maintaining a $2.5 million actuarial reserve for ACO REACH participation represents a 8.3% allocation of available capital to a risk management buffer \u2014 a rational investment if leadership has high confidence in the organization\u2019s ability to manage population cost, but a significant commitment that requires board-level approval and careful opportunity cost analysis against other capital needs."
+              },
+              {
+                "type": "text",
+                "heading": "Bundled Payments: When a Single Price Covers an Entire Episode of Care",
+                "body": "Bundled payment models take a different economic approach to aligning incentives than shared savings. Rather than holding a provider accountable for the total cost of care across an entire attributed population, bundled payments establish a single target price for all the care associated with a specific clinical episode \u2014 typically defined as a procedure or hospitalization plus 90 days of post-acute care. If the sum of all actual payments during the episode falls below the target price, the lead provider (typically the hospital or physician group that performed the primary procedure) retains the difference. If actual costs exceed the target, the lead provider repays the excess. The economic logic is straightforward: bundled payments create a direct financial incentive for the hospital performing a hip replacement to care about which skilled nursing facility the patient is discharged to, how long they stay there, and whether they end up readmitted \u2014 because all of those costs are included in the bundle.\n\nBPCI Advanced, CMS\u2019s current bundled payment program, covers 32 clinical episodes ranging from major joint replacement and cardiac surgery to pneumonia and chronic obstructive pulmonary disease hospitalizations. The program has generated the strongest evidence of any CMS alternative payment model for procedural episodes: a 2024 CMS evaluation found that BPCI Advanced participants reduced episode spending by an average of $2,100 per episode for major joint replacement while maintaining or improving quality outcomes, generating net Medicare savings of $900 million between 2018 and 2023. Critically, these savings came primarily from reductions in post-acute care spending \u2014 fewer days in skilled nursing facilities and more patients discharged directly home with home health services \u2014 rather than from reductions in the procedural care itself, confirming the bundled payment hypothesis that the primary driver of unnecessary cost in high-volume procedures is the post-acute care tail, not the procedure."
+              },
+              {
+                "type": "callout",
+                "variant": "quote",
+                "heading": "Quote",
+                "body": "The bundled payment evidence for joint replacement is about as clean as healthcare economics gets: when you make the hospital financially responsible for what happens after the patient leaves, patients spend less time in nursing homes, have fewer complications, and cost Medicare significantly less money. The same logic applies to any high-volume procedure with a predictable post-acute care pattern. The challenge is applying it to medical conditions where the post-acute trajectory is far less predictable. \u2014 Leemore Dafny, Harvard Business School, Health Affairs, 2025."
+              },
+              {
+                "type": "text",
+                "heading": "Capitation: The Most Advanced \u2014 and Most Misunderstood \u2014 VBC Model",
+                "body": "Capitation is the payment model that most completely aligns provider incentives with patient health outcomes, and the one that generates the most anxiety among providers who have not operated under it before. Under capitation, a provider or provider organization receives a fixed payment per enrolled member per month \u2014 the \u201cPMPM\u201d rate \u2014 and is responsible for delivering or arranging all covered healthcare services for that member, regardless of how much care they actually use. If the member uses more care than the PMPM covers, the provider absorbs the loss. If the member uses less, the provider retains the surplus. This structure creates the strongest possible financial incentive for prevention, care coordination, and early intervention \u2014 because every avoided hospitalization translates directly into retained revenue rather than lost fee-for-service income.\n\nThe anxiety around capitation is understandable but often misdirected. The concern most commonly expressed is that capitation incentivizes providers to withhold necessary care \u2014 to under-treat rather than over-treat. This concern is real and has historical basis: the managed care capitation models of the 1990s were frequently criticized for exactly this failure, and some HMO capitation arrangements did produce documented under-treatment in specific service categories. But the lesson of the 1990s HMO experience is not that capitation is inherently dangerous. It is that capitation without robust quality measurement, meaningful patient choice, and strong external accountability produces dangerous incentives. Modern capitation models \u2014 including Medicare Advantage plans and CMS\u2019s ACO REACH program \u2014 include comprehensive quality metric frameworks with financial consequences for poor performance, minimum coverage requirements that prevent service restriction below evidence-based thresholds, and beneficiary rights to seek care outside the network when needed. The capitation model that exists in 2026 is substantively different from the managed care capitation of 1996."
+              },
+              {
+                "type": "text",
+                "heading": "How PMPM Rates Are Set: The Actuarial Core of Capitation",
+                "body": "The financial success or failure of a capitation arrangement is largely determined before any patient is seen, at the point where the PMPM rate is negotiated or set. If the rate is set too low relative to the actual cost of providing care to the enrolled population, no amount of care management efficiency will produce a viable financial model. If the rate is set appropriately \u2014 reflecting the health acuity, demographic profile, and social complexity of the enrolled population \u2014 a well-managed capitated provider can generate margins of 3\u20138% while delivering care that is demonstrably better in quality and lower in total cost than the fee-for-service alternative. The actuarial process of setting a PMPM rate involves risk adjustment models that account for enrollee diagnoses, functional status, and social determinants of health, applied to utilization cost data from comparable populations. For Medicare Advantage plans, CMS sets the base rate using the county-level fee-for-service benchmark and adjusts it upward or downward based on each enrollee\u2019s Hierarchical Condition Category (HCC) risk score, a diagnosis-based model that attempts to predict expected healthcare utilization for that individual in the coming year."
+              },
+              {
+                "type": "text",
+                "heading": "The Volume-to-Value Transition: Why the Math Gets Hard Before It Gets Easy",
+                "body": "The single most common financial mistake health systems make in VBC transitions is underestimating the revenue disruption of the transition period \u2014 the window, typically 18 to 36 months, during which care management investments have begun reducing utilization but VBC contract revenue has not yet scaled to replace the lost fee-for-service volume. Consider a regional health system generating $400 million in annual net patient revenue, with 30% of that revenue from inpatient admissions billed on a fee-for-service basis. The system joins MSSP and invests $2 million in care management infrastructure \u2014 care coordinators, a risk stratification platform, a post-discharge follow-up program \u2014 that begins generating measurable results in year one, reducing its attributed Medicare population\u2019s hospitalization rate by 12%. That 12% reduction represents approximately 240 avoided admissions. At an average net revenue of $8,500 per admission, it also represents a $2.04 million reduction in fee-for-service inpatient revenue. The system\u2019s MSSP shared savings payment for year one, based on total population savings, might be $1.4 million. Net financial impact of year one VBC investment: negative $640,000.\n\nThis math is not an argument against VBC. It is an argument for understanding VBC as a multi-year financial investment with a specific payback horizon, rather than a year-one revenue enhancement strategy. The financial literature on mature ACO performance consistently shows that organizations reaching their fifth year of MSSP participation generate shared savings payments averaging $312 per attributed beneficiary annually, compared to an average investment cost of $87 per beneficiary in care management infrastructure \u2014 a return on investment of approximately 3.6 to 1. The problem is that most health system financial planning cycles operate on one-to-three year horizons, which are too short to capture the full economic benefit of VBC investment. Organizations that have successfully navigated the volume-to-value transition have done so by securing board approval for a five-to-seven year VBC investment thesis with explicit transition period loss projections, rather than attempting to justify each year\u2019s VBC expenditure against that same year\u2019s VBC revenue."
+              },
+              {
+                "type": "callout",
+                "variant": "tip",
+                "heading": "Key Concept",
+                "body": "For CFOs and Finance Leaders: If your organization is evaluating ACO or Advanced APM participation, your financial model must explicitly project the transition period revenue displacement \u2014 the reduction in fee-for-service inpatient and ED revenue that will occur as care management succeeds. An ACO financial model that shows positive net revenue in year one almost certainly has a methodology error, either in the care management cost estimates or in the assumed savings rate. Realistic five-year models typically show a cumulative loss in years one and two, breakeven in year three, and meaningful positive return in years four and five. Present this model honestly to your board, or the VBC investment will be defunded the first time a quarterly loss appears."
+              },
+              {
+                "type": "text",
+                "heading": "Primary Care Investment as Economic Infrastructure",
+                "body": "One of the most powerful and counterintuitive findings in health economics is that investment in primary care produces returns that are comparable to, and in many cases superior to, investment in specialty care infrastructure \u2014 not in terms of individual clinical case intensity, but in terms of total population health spending and outcomes. The economic mechanism is straightforward once articulated: primary care reduces the incidence of the expensive downstream events \u2014 hospitalizations, emergency visits, specialist procedures, complications of uncontrolled chronic disease \u2014 that account for the vast majority of total healthcare spending. A study published in Health Affairs in 2024 analyzing Medicare spending patterns across 306 hospital referral regions found that regions with above-median primary care physician supply had 11.2% lower total Medicare spending per beneficiary, 18.4% fewer preventable hospital admissions, and 14.7% lower 30-day readmission rates than regions with below-median primary care supply, after controlling for demographic and health status differences.\n\nThe economic return on primary care investment is particularly relevant for value-based care organizations making resource allocation decisions. Under fee-for-service, a hospital has limited financial incentive to invest in expanding primary care capacity in its community \u2014 more primary care visits may mean fewer specialist referrals and fewer hospitalizations, which means less hospital revenue. Under a capitated or shared savings VBC model, the same investment in primary care capacity is a direct cost reduction strategy: every diabetic patient who sees their primary care provider quarterly and maintains target HbA1c levels is a patient who is unlikely to generate an $18,000 diabetic complication admission. The VBC payment model converts primary care from a cost center competing with hospital services for capital allocation into a return-generating infrastructure investment \u2014 which is the single most important realignment that value-based payment architecture produces.\n\nThe ROI data in the table above carries an important caveat: these are population-level averages from mature ACOs that have already built the data infrastructure to identify high-risk patients, target interventions appropriately, and measure outcomes accurately. An organization implementing a care coordinator program without a functioning risk stratification system to identify which patients the coordinator should prioritize will see substantially lower returns \u2014 because care management applied uniformly across a population is far less efficient than care management targeted to the patients most likely to have high-cost events in the next 12 months. The technology readiness discussion in Module 4 is therefore directly connected to the economics of VBC investment: organizations that build population health data infrastructure before scaling care management programs generate significantly better returns than those that sequence these investments in reverse order.\n\nCare coordinators assigned to high-risk patients generate the highest absolute savings per dollar invested, but their effectiveness depends entirely on a functioning risk stratification system that identifies which patients are genuinely high-risk, not just high-cost in the prior year.\n\nPost-discharge follow-up programs have the highest ROI ratio of any single intervention (4.6x) because the cost of a 72-hour phone call is minimal relative to the cost of a readmission, and the evidence that timely follow-up reduces readmissions is among the strongest in care management research.\n\nCommunity health worker integration produces the largest absolute savings per patient ($1,260 net benefit annually) and is the intervention most directly connected to social determinants of health \u2014 addressing food insecurity, housing instability, and transportation barriers that drive utilization patterns that clinical care alone cannot change.\n\nAdvanced primary care transformation has the highest total annual investment per patient ($580) but also the highest total annual savings ($2,140), making it the most comprehensive single intervention for organizations ready to redesign their primary care delivery model rather than simply add discrete programs to an unchanged clinical workflow."
+              },
+              {
+                "type": "callout",
+                "variant": "quote",
+                "heading": "Quote",
+                "body": "The organizations that are winning in value-based care are not winning because they have better doctors or better patients. They are winning because they have better data, better targeting, and better financial discipline about which interventions they invest in and for which patient populations. VBC is fundamentally an information business with a clinical delivery layer on top. \u2014 Mark McClellan, Duke-Margolis Center for Health Policy, JAMA, 2025."
+              },
+              {
+                "type": "text",
+                "heading": "Module 3 Summary: The Economics of VBC Reward Patience, Infrastructure, and Precision",
+                "body": "The economics of value-based care are not complicated in their logic, but they are frequently misunderstood in their timing and their requirements. Shared savings arrangements reward population cost management, but only after a benchmark has been established and a minimum savings threshold has been crossed. Bundled payments reward episode cost efficiency, but require investment in post-acute care coordination infrastructure that most hospitals have historically not needed. Capitation rewards comprehensive population health management, but requires actuarial sophistication, quality measurement capability, and working capital reserves that are significant organizational commitments. All three model types have in common a multi-year investment horizon that is at odds with annual budget cycles, and a data infrastructure dependency that is at odds with the technology readiness of many rural and safety-net providers.\n\nThe economic case for making these investments nonetheless is clear in the mature ACO data: organizations in their fifth year of MSSP participation generate average shared savings payments of $312 per beneficiary at an investment cost of $87 per beneficiary, a 3.6-to-1 return that compounds as the care management infrastructure matures and the organization\u2019s ability to identify and target high-risk patients improves. The organizations that have reached this performance level did not arrive there by treating VBC as a compliance exercise or a contract opportunity. They treated it as a fundamental redesign of how they organize and deliver care, supported by a financial model that explicitly anticipated and planned for the transition period losses that are the unavoidable cost of that redesign. Module 4 examines the technology infrastructure that makes this financial performance possible.\n\nReview your organization\u2019s current VBC contract portfolio and categorize each contract by model type: shared savings (upside only or two-sided), bundled payment, or capitation. For each contract, identify whether you have a financial model projecting per-beneficiary investment cost, expected savings rate, and net financial benefit over a five-year horizon.\n\nAsk your CFO to quantify the annual fee-for-service revenue at risk from your care management programs \u2014 the inpatient admissions and emergency visits that your VBC interventions are intended to prevent, translated into net revenue impact. Compare this to your projected shared savings or capitation savings. If the net is negative, verify your model is using a five-year, not a one-year, planning horizon.\n\nReview the ROI data from the care management intervention table in this module and identify which intervention types your organization is currently investing in. For each intervention, assess whether you have a functioning risk stratification system that targets the intervention to high-risk patients rather than applying it uniformly across your attributed population.\n\nAssess your organization\u2019s actuarial reserve capacity for two-sided risk participation. If your unrestricted net assets are below $15 million, upside-only MSSP participation is the appropriate starting point. If your unrestricted net assets exceed $30 million and you have three or more years of MSSP experience, a formal analysis of ENHANCED track or ACO REACH participation is warranted."
+              },
+              {
+                "type": "callout",
+                "variant": "tip",
+                "heading": "Key Concept",
+                "body": "Module 3 Key Takeaway: The economics of value-based care favor organizations that plan in five-year cycles, invest in care management infrastructure before scaling VBC contract volume, and understand the specific financial mechanics of their contract type at the level of the benchmark calculation and the savings distribution formula. VBC is not a revenue strategy for the next fiscal year. It is a business model for the next decade \u2014 one that rewards the organizations that build the infrastructure, accept the transition period losses, and stay the course long enough for the compounding returns of mature care management to materialize."
+              }
+            ],
+            "tags": [],
+            "relatedLessonIds": [],
+            "isPublished": true,
+            "sanityBody": [
+              {
+                "_key": "blk001",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Here is a question that sounds simple but is genuinely hard to answer: if a hospital successfully reduces its patients\u2019 hospitalization rate by 15% through better care management, is that good news or bad news for the hospital\u2019s finances? The instinctive answer is that it must be good news \u2014 fewer hospitalizations means healthier patients, which is surely the goal. But in a world where 40% of that hospital\u2019s revenue still comes from fee-for-service Medicare and Medicaid payments, fewer hospitalizations means fewer inpatient admissions, which means fewer billed days, which means lower revenue. The hospital just cut its own income by doing its job better. This is not a hypothetical paradox \u2014 it is the central economic tension of the volume-to-value transition, experienced by virtually every health system that has seriously engaged with value-based care. Understanding this tension, and the financial mechanisms that VBC contract structures use to resolve it, is what this module is about.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk002",
+                "_type": "block",
+                "style": "h2",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The Financial Anatomy of a Shared Savings Contract",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk003",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The Medicare Shared Savings Program is the most widely adopted VBC model in the United States, and shared savings is the financial mechanism at its core. Understanding how shared savings actually works \u2014 how the benchmark is set, how savings are calculated, and how they are distributed \u2014 is the foundation for understanding the economics of most VBC arrangements. The concept is straightforward: CMS calculates how much it would have expected to spend on your attributed patient population if they had remained in traditional fee-for-service Medicare, adjusted for their age, health status, and geographic cost factors. This projected spend is your \u201cbenchmark.\u201d If your ACO\u2019s actual spending on that population comes in below the benchmark, the difference is \u201csavings.\u201d You share those savings with CMS according to a pre-agreed formula \u2014 typically retaining 40\u201375% depending on your risk track and quality performance, with CMS keeping the remainder.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk004",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The devil, as always, is in the details. The benchmark calculation uses a three-year historical average of your patient population\u2019s spending, adjusted upward by a national trend factor. For ACOs whose patient populations were already low-cost before joining the program, this creates an immediate structural problem: their benchmark is low, so even excellent care management produces modest absolute savings, making the shared savings payment insufficient to cover the care management infrastructure investment. This is called the \u201clow benchmark problem,\u201d and it is the primary reason that rural and safety-net ACOs, which often already operate lean systems with lower baseline utilization, struggle to generate shared savings large enough to justify Advanced APM participation costs. CMS has modified the benchmark methodology three times since 2012 in response to this problem, most recently in the Pathways to Success Rule of 2018 and the 2023 ACO Primary Care Flex Model, but the fundamental tension between historical benchmarking and equitable VBC participation for already-efficient providers remains unresolved.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk005",
+                "_type": "block",
+                "style": "h3",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Upside-Only vs. Two-Sided Risk: The Decision That Changes Everything",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk006",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "One of the most consequential decisions a provider organization makes when entering a shared savings arrangement is whether to accept only upside risk \u2014 where you share in savings if you beat the benchmark but owe nothing if you miss it \u2014 or two-sided risk, where you both share savings and repay losses if spending exceeds the benchmark. This choice has profound implications for the financial planning, working capital requirements, and organizational risk appetite of the participating entity. Upside-only arrangements (MSSP Track 1 and its successors) are appropriate for organizations beginning their VBC journey: they provide financial experience with population cost management without the catastrophic downside scenario of a major loss repayment obligation. Two-sided arrangements (MSSP ENHANCED Track, Direct Contracting, ACO REACH) offer higher shared savings percentages \u2014 sometimes up to 80% of savings \u2014 but require the organization to maintain actuarial reserves sufficient to cover a loss scenario, typically modeled at 1\u20133% of benchmark spending.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk007",
+                "_type": "code",
+                "title": "Shared Savings Contract Economics: MSSP Track Comparison for a Hypothetical 5,000-Beneficiary ACO",
+                "language": "json",
+                "code": [
+                  {
+                    "Metric": "Benchmark Spending (Projected FFS Cost)",
+                    "MSSP Basic Track (Upside Only)": "$62.5M",
+                    "MSSP Enhanced Track (Two-Sided)": "$62.5M",
+                    "ACO REACH (Full Risk)": "$62.5M"
+                  },
+                  {
+                    "Metric": "Actual ACO Spending",
+                    "MSSP Basic Track (Upside Only)": "$58.8M",
+                    "MSSP Enhanced Track (Two-Sided)": "$58.8M",
+                    "ACO REACH (Full Risk)": "$58.8M"
+                  },
+                  {
+                    "Metric": "Gross Savings Generated",
+                    "MSSP Basic Track (Upside Only)": "$3.7M",
+                    "MSSP Enhanced Track (Two-Sided)": "$3.7M",
+                    "ACO REACH (Full Risk)": "$3.7M"
+                  },
+                  {
+                    "Metric": "Provider Shared Savings %",
+                    "MSSP Basic Track (Upside Only)": "40-50%",
+                    "MSSP Enhanced Track (Two-Sided)": "75%",
+                    "ACO REACH (Full Risk)": "Up to 100%"
+                  },
+                  {
+                    "Metric": "Provider Shared Savings Payment",
+                    "MSSP Basic Track (Upside Only)": "$1.5-1.9M",
+                    "MSSP Enhanced Track (Two-Sided)": "$2.8M",
+                    "ACO REACH (Full Risk)": "$3.7M"
+                  },
+                  {
+                    "Metric": "Loss Scenario Repayment Obligation",
+                    "MSSP Basic Track (Upside Only)": "$0 (no downside)",
+                    "MSSP Enhanced Track (Two-Sided)": "Up to $1.9M",
+                    "ACO REACH (Full Risk)": "Up to $3.7M"
+                  },
+                  {
+                    "Metric": "Required Actuarial Reserve",
+                    "MSSP Basic Track (Upside Only)": "None",
+                    "MSSP Enhanced Track (Two-Sided)": "~$1.2M",
+                    "ACO REACH (Full Risk)": "~$2.5M"
+                  },
+                  {
+                    "Metric": "Estimated Annual Care Management Cost",
+                    "MSSP Basic Track (Upside Only)": "$800K-$1.2M",
+                    "MSSP Enhanced Track (Two-Sided)": "$800K-$1.2M",
+                    "ACO REACH (Full Risk)": "$800K-$1.2M"
+                  },
+                  {
+                    "Metric": "Net Financial Benefit (Best Case)",
+                    "MSSP Basic Track (Upside Only)": "$700K-$1.1M",
+                    "MSSP Enhanced Track (Two-Sided)": "$1.6-$2.0M",
+                    "ACO REACH (Full Risk)": "$2.5M"
+                  }
+                ]
+              },
+              {
+                "_key": "blk008",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The financial model in the table above illustrates why Two-Sided and Full-Risk tracks are substantially more attractive in their best-case financial outcome \u2014 but also why the actuarial reserve requirement creates a genuine barrier to entry for organizations operating at thin margins. For a health system with $30 million in unrestricted net assets, maintaining a $2.5 million actuarial reserve for ACO REACH participation represents a 8.3% allocation of available capital to a risk management buffer \u2014 a rational investment if leadership has high confidence in the organization\u2019s ability to manage population cost, but a significant commitment that requires board-level approval and careful opportunity cost analysis against other capital needs.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk009",
+                "_type": "block",
+                "style": "h2",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Bundled Payments: When a Single Price Covers an Entire Episode of Care",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk010",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Bundled payment models take a different economic approach to aligning incentives than shared savings. Rather than holding a provider accountable for the total cost of care across an entire attributed population, bundled payments establish a single target price for all the care associated with a specific clinical episode \u2014 typically defined as a procedure or hospitalization plus 90 days of post-acute care. If the sum of all actual payments during the episode falls below the target price, the lead provider (typically the hospital or physician group that performed the primary procedure) retains the difference. If actual costs exceed the target, the lead provider repays the excess. The economic logic is straightforward: bundled payments create a direct financial incentive for the hospital performing a hip replacement to care about which skilled nursing facility the patient is discharged to, how long they stay there, and whether they end up readmitted \u2014 because all of those costs are included in the bundle.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk011",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "BPCI Advanced, CMS\u2019s current bundled payment program, covers 32 clinical episodes ranging from major joint replacement and cardiac surgery to pneumonia and chronic obstructive pulmonary disease hospitalizations. The program has generated the strongest evidence of any CMS alternative payment model for procedural episodes: a 2024 CMS evaluation found that BPCI Advanced participants reduced episode spending by an average of $2,100 per episode for major joint replacement while maintaining or improving quality outcomes, generating net Medicare savings of $900 million between 2018 and 2023. Critically, these savings came primarily from reductions in post-acute care spending \u2014 fewer days in skilled nursing facilities and more patients discharged directly home with home health services \u2014 rather than from reductions in the procedural care itself, confirming the bundled payment hypothesis that the primary driver of unnecessary cost in high-volume procedures is the post-acute care tail, not the procedure.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk012",
+                "_type": "block",
+                "style": "quote",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The bundled payment evidence for joint replacement is about as clean as healthcare economics gets: when you make the hospital financially responsible for what happens after the patient leaves, patients spend less time in nursing homes, have fewer complications, and cost Medicare significantly less money. The same logic applies to any high-volume procedure with a predictable post-acute care pattern. The challenge is applying it to medical conditions where the post-acute trajectory is far less predictable. \u2014 Leemore Dafny, Harvard Business School, Health Affairs, 2025.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk013",
+                "_type": "block",
+                "style": "h2",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Capitation: The Most Advanced \u2014 and Most Misunderstood \u2014 VBC Model",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk014",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Capitation is the payment model that most completely aligns provider incentives with patient health outcomes, and the one that generates the most anxiety among providers who have not operated under it before. Under capitation, a provider or provider organization receives a fixed payment per enrolled member per month \u2014 the \u201cPMPM\u201d rate \u2014 and is responsible for delivering or arranging all covered healthcare services for that member, regardless of how much care they actually use. If the member uses more care than the PMPM covers, the provider absorbs the loss. If the member uses less, the provider retains the surplus. This structure creates the strongest possible financial incentive for prevention, care coordination, and early intervention \u2014 because every avoided hospitalization translates directly into retained revenue rather than lost fee-for-service income.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk015",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The anxiety around capitation is understandable but often misdirected. The concern most commonly expressed is that capitation incentivizes providers to withhold necessary care \u2014 to under-treat rather than over-treat. This concern is real and has historical basis: the managed care capitation models of the 1990s were frequently criticized for exactly this failure, and some HMO capitation arrangements did produce documented under-treatment in specific service categories. But the lesson of the 1990s HMO experience is not that capitation is inherently dangerous. It is that capitation without robust quality measurement, meaningful patient choice, and strong external accountability produces dangerous incentives. Modern capitation models \u2014 including Medicare Advantage plans and CMS\u2019s ACO REACH program \u2014 include comprehensive quality metric frameworks with financial consequences for poor performance, minimum coverage requirements that prevent service restriction below evidence-based thresholds, and beneficiary rights to seek care outside the network when needed. The capitation model that exists in 2026 is substantively different from the managed care capitation of 1996.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk016",
+                "_type": "block",
+                "style": "h3",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "How PMPM Rates Are Set: The Actuarial Core of Capitation",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk017",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The financial success or failure of a capitation arrangement is largely determined before any patient is seen, at the point where the PMPM rate is negotiated or set. If the rate is set too low relative to the actual cost of providing care to the enrolled population, no amount of care management efficiency will produce a viable financial model. If the rate is set appropriately \u2014 reflecting the health acuity, demographic profile, and social complexity of the enrolled population \u2014 a well-managed capitated provider can generate margins of 3\u20138% while delivering care that is demonstrably better in quality and lower in total cost than the fee-for-service alternative. The actuarial process of setting a PMPM rate involves risk adjustment models that account for enrollee diagnoses, functional status, and social determinants of health, applied to utilization cost data from comparable populations. For Medicare Advantage plans, CMS sets the base rate using the county-level fee-for-service benchmark and adjusts it upward or downward based on each enrollee\u2019s Hierarchical Condition Category (HCC) risk score, a diagnosis-based model that attempts to predict expected healthcare utilization for that individual in the coming year.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk018",
+                "_type": "block",
+                "style": "h2",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The Volume-to-Value Transition: Why the Math Gets Hard Before It Gets Easy",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk019",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The single most common financial mistake health systems make in VBC transitions is underestimating the revenue disruption of the transition period \u2014 the window, typically 18 to 36 months, during which care management investments have begun reducing utilization but VBC contract revenue has not yet scaled to replace the lost fee-for-service volume. Consider a regional health system generating $400 million in annual net patient revenue, with 30% of that revenue from inpatient admissions billed on a fee-for-service basis. The system joins MSSP and invests $2 million in care management infrastructure \u2014 care coordinators, a risk stratification platform, a post-discharge follow-up program \u2014 that begins generating measurable results in year one, reducing its attributed Medicare population\u2019s hospitalization rate by 12%. That 12% reduction represents approximately 240 avoided admissions. At an average net revenue of $8,500 per admission, it also represents a $2.04 million reduction in fee-for-service inpatient revenue. The system\u2019s MSSP shared savings payment for year one, based on total population savings, might be $1.4 million. Net financial impact of year one VBC investment: negative $640,000.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk020",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "This math is not an argument against VBC. It is an argument for understanding VBC as a multi-year financial investment with a specific payback horizon, rather than a year-one revenue enhancement strategy. The financial literature on mature ACO performance consistently shows that organizations reaching their fifth year of MSSP participation generate shared savings payments averaging $312 per attributed beneficiary annually, compared to an average investment cost of $87 per beneficiary in care management infrastructure \u2014 a return on investment of approximately 3.6 to 1. The problem is that most health system financial planning cycles operate on one-to-three year horizons, which are too short to capture the full economic benefit of VBC investment. Organizations that have successfully navigated the volume-to-value transition have done so by securing board approval for a five-to-seven year VBC investment thesis with explicit transition period loss projections, rather than attempting to justify each year\u2019s VBC expenditure against that same year\u2019s VBC revenue.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk021",
+                "_type": "block",
+                "style": "callout",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "For CFOs and Finance Leaders: If your organization is evaluating ACO or Advanced APM participation, your financial model must explicitly project the transition period revenue displacement \u2014 the reduction in fee-for-service inpatient and ED revenue that will occur as care management succeeds. An ACO financial model that shows positive net revenue in year one almost certainly has a methodology error, either in the care management cost estimates or in the assumed savings rate. Realistic five-year models typically show a cumulative loss in years one and two, breakeven in year three, and meaningful positive return in years four and five. Present this model honestly to your board, or the VBC investment will be defunded the first time a quarterly loss appears.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk022",
+                "_type": "block",
+                "style": "h2",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Primary Care Investment as Economic Infrastructure",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk023",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "One of the most powerful and counterintuitive findings in health economics is that investment in primary care produces returns that are comparable to, and in many cases superior to, investment in specialty care infrastructure \u2014 not in terms of individual clinical case intensity, but in terms of total population health spending and outcomes. The economic mechanism is straightforward once articulated: primary care reduces the incidence of the expensive downstream events \u2014 hospitalizations, emergency visits, specialist procedures, complications of uncontrolled chronic disease \u2014 that account for the vast majority of total healthcare spending. A study published in Health Affairs in 2024 analyzing Medicare spending patterns across 306 hospital referral regions found that regions with above-median primary care physician supply had 11.2% lower total Medicare spending per beneficiary, 18.4% fewer preventable hospital admissions, and 14.7% lower 30-day readmission rates than regions with below-median primary care supply, after controlling for demographic and health status differences.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk024",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The economic return on primary care investment is particularly relevant for value-based care organizations making resource allocation decisions. Under fee-for-service, a hospital has limited financial incentive to invest in expanding primary care capacity in its community \u2014 more primary care visits may mean fewer specialist referrals and fewer hospitalizations, which means less hospital revenue. Under a capitated or shared savings VBC model, the same investment in primary care capacity is a direct cost reduction strategy: every diabetic patient who sees their primary care provider quarterly and maintains target HbA1c levels is a patient who is unlikely to generate an $18,000 diabetic complication admission. The VBC payment model converts primary care from a cost center competing with hospital services for capital allocation into a return-generating infrastructure investment \u2014 which is the single most important realignment that value-based payment architecture produces.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk025",
+                "_type": "code",
+                "title": "Return on Investment Analysis: Care Management Interventions in Mature ACOs, CMS Data 2024",
+                "language": "json",
+                "code": [
+                  {
+                    "Intervention Type": "Dedicated Care Coordinator (1 per 200 high-risk patients)",
+                    "Annual Investment per Patient": "$340",
+                    "Annual Savings per Patient (Avoidable Admits)": "$1,240",
+                    "Net Annual Benefit per Patient": "$900",
+                    "ROI Ratio": "3.6x",
+                    "Evidence Source": "MSSP Benchmark Performance Data 2024"
+                  },
+                  {
+                    "Intervention Type": "Post-Discharge Follow-Up Program (72-hour contact)",
+                    "Annual Investment per Patient": "$180",
+                    "Annual Savings per Patient (Readmissions)": "$820",
+                    "Net Annual Benefit per Patient": "$640",
+                    "ROI Ratio": "4.6x",
+                    "Evidence Source": "CMMI Bundled Payment Evaluation 2024"
+                  },
+                  {
+                    "Intervention Type": "High-Risk Patient Outreach (annual)",
+                    "Annual Investment per Patient": "$95",
+                    "Annual Savings per Patient (ED Visits)": "$390",
+                    "Net Annual Benefit per Patient": "$295",
+                    "ROI Ratio": "4.1x",
+                    "Evidence Source": "MSSP Quality and Financial Report 2024"
+                  },
+                  {
+                    "Intervention Type": "Community Health Worker Integration",
+                    "Annual Investment per Patient": "$420",
+                    "Annual Savings per Patient (SDOH-related admits)": "$1,680",
+                    "Net Annual Benefit per Patient": "$1,260",
+                    "ROI Ratio": "4.0x",
+                    "Evidence Source": "CMS Innovation Center Equity-Focused ACO Evaluation 2025"
+                  },
+                  {
+                    "Intervention Type": "Medication Adherence Program (chronic disease)",
+                    "Annual Investment per Patient": "$210",
+                    "Annual Savings per Patient (Complications)": "$970",
+                    "Net Annual Benefit per Patient": "$760",
+                    "ROI Ratio": "4.6x",
+                    "Evidence Source": "NCQA Health Plan Accreditation VBC Data 2025"
+                  },
+                  {
+                    "Intervention Type": "Advanced Primary Care Transformation",
+                    "Annual Investment per Patient": "$580",
+                    "Annual Savings per Patient (All Cause)": "$2,140",
+                    "Net Annual Benefit per Patient": "$1,560",
+                    "ROI Ratio": "3.7x",
+                    "Evidence Source": "CMS Primary Care First Model Evaluation 2025"
+                  }
+                ]
+              },
+              {
+                "_key": "blk026",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The ROI data in the table above carries an important caveat: these are population-level averages from mature ACOs that have already built the data infrastructure to identify high-risk patients, target interventions appropriately, and measure outcomes accurately. An organization implementing a care coordinator program without a functioning risk stratification system to identify which patients the coordinator should prioritize will see substantially lower returns \u2014 because care management applied uniformly across a population is far less efficient than care management targeted to the patients most likely to have high-cost events in the next 12 months. The technology readiness discussion in Module 4 is therefore directly connected to the economics of VBC investment: organizations that build population health data infrastructure before scaling care management programs generate significantly better returns than those that sequence these investments in reverse order.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk026b",
+                "_type": "block",
+                "style": "normal",
+                "listItem": "bullet",
+                "level": 1,
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Care coordinators assigned to high-risk patients generate the highest absolute savings per dollar invested, but their effectiveness depends entirely on a functioning risk stratification system that identifies which patients are genuinely high-risk, not just high-cost in the prior year.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk026c",
+                "_type": "block",
+                "style": "normal",
+                "listItem": "bullet",
+                "level": 1,
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Post-discharge follow-up programs have the highest ROI ratio of any single intervention (4.6x) because the cost of a 72-hour phone call is minimal relative to the cost of a readmission, and the evidence that timely follow-up reduces readmissions is among the strongest in care management research.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk026d",
+                "_type": "block",
+                "style": "normal",
+                "listItem": "bullet",
+                "level": 1,
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Community health worker integration produces the largest absolute savings per patient ($1,260 net benefit annually) and is the intervention most directly connected to social determinants of health \u2014 addressing food insecurity, housing instability, and transportation barriers that drive utilization patterns that clinical care alone cannot change.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk026e",
+                "_type": "block",
+                "style": "normal",
+                "listItem": "bullet",
+                "level": 1,
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Advanced primary care transformation has the highest total annual investment per patient ($580) but also the highest total annual savings ($2,140), making it the most comprehensive single intervention for organizations ready to redesign their primary care delivery model rather than simply add discrete programs to an unchanged clinical workflow.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk027",
+                "_type": "block",
+                "style": "quote",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The organizations that are winning in value-based care are not winning because they have better doctors or better patients. They are winning because they have better data, better targeting, and better financial discipline about which interventions they invest in and for which patient populations. VBC is fundamentally an information business with a clinical delivery layer on top. \u2014 Mark McClellan, Duke-Margolis Center for Health Policy, JAMA, 2025.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk028",
+                "_type": "block",
+                "style": "h2",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Module 3 Summary: The Economics of VBC Reward Patience, Infrastructure, and Precision",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk029",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The economics of value-based care are not complicated in their logic, but they are frequently misunderstood in their timing and their requirements. Shared savings arrangements reward population cost management, but only after a benchmark has been established and a minimum savings threshold has been crossed. Bundled payments reward episode cost efficiency, but require investment in post-acute care coordination infrastructure that most hospitals have historically not needed. Capitation rewards comprehensive population health management, but requires actuarial sophistication, quality measurement capability, and working capital reserves that are significant organizational commitments. All three model types have in common a multi-year investment horizon that is at odds with annual budget cycles, and a data infrastructure dependency that is at odds with the technology readiness of many rural and safety-net providers.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk030",
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "The economic case for making these investments nonetheless is clear in the mature ACO data: organizations in their fifth year of MSSP participation generate average shared savings payments of $312 per beneficiary at an investment cost of $87 per beneficiary, a 3.6-to-1 return that compounds as the care management infrastructure matures and the organization\u2019s ability to identify and target high-risk patients improves. The organizations that have reached this performance level did not arrive there by treating VBC as a compliance exercise or a contract opportunity. They treated it as a fundamental redesign of how they organize and deliver care, supported by a financial model that explicitly anticipated and planned for the transition period losses that are the unavoidable cost of that redesign. Module 4 examines the technology infrastructure that makes this financial performance possible.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk031",
+                "_type": "block",
+                "style": "normal",
+                "listItem": "number",
+                "level": 1,
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Review your organization\u2019s current VBC contract portfolio and categorize each contract by model type: shared savings (upside only or two-sided), bundled payment, or capitation. For each contract, identify whether you have a financial model projecting per-beneficiary investment cost, expected savings rate, and net financial benefit over a five-year horizon.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk032",
+                "_type": "block",
+                "style": "normal",
+                "listItem": "number",
+                "level": 1,
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Ask your CFO to quantify the annual fee-for-service revenue at risk from your care management programs \u2014 the inpatient admissions and emergency visits that your VBC interventions are intended to prevent, translated into net revenue impact. Compare this to your projected shared savings or capitation savings. If the net is negative, verify your model is using a five-year, not a one-year, planning horizon.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk033",
+                "_type": "block",
+                "style": "normal",
+                "listItem": "number",
+                "level": 1,
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Review the ROI data from the care management intervention table in this module and identify which intervention types your organization is currently investing in. For each intervention, assess whether you have a functioning risk stratification system that targets the intervention to high-risk patients rather than applying it uniformly across your attributed population.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk034",
+                "_type": "block",
+                "style": "normal",
+                "listItem": "number",
+                "level": 1,
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Assess your organization\u2019s actuarial reserve capacity for two-sided risk participation. If your unrestricted net assets are below $15 million, upside-only MSSP participation is the appropriate starting point. If your unrestricted net assets exceed $30 million and you have three or more years of MSSP experience, a formal analysis of ENHANCED track or ACO REACH participation is warranted.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk035",
+                "_type": "block",
+                "style": "callout",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Module 3 Key Takeaway: The economics of value-based care favor organizations that plan in five-year cycles, invest in care management infrastructure before scaling VBC contract volume, and understand the specific financial mechanics of their contract type at the level of the benchmark calculation and the savings distribution formula. VBC is not a revenue strategy for the next fiscal year. It is a business model for the next decade \u2014 one that rewards the organizations that build the infrastructure, accept the transition period losses, and stay the course long enough for the compounding returns of mature care management to materialize.",
+                    "marks": []
+                  }
+                ]
+              },
+              {
+                "_key": "blk036",
+                "_type": "image",
+                "caption": "A three-panel economic visualization for value-based care. The left panel shows a waterfall chart illustrating the volume-to-value transition financial model over five years, with fee-for-service revenue declining in a stepped pattern as care management reduces utilization, shared savings revenue growing from year two onward, and net financial position crossing from negative to positive at year three. The center panel shows the ROI comparison across six care management intervention types as a horizontal bar chart, sorted by ROI ratio, with investment cost and savings bars color-coded in contrasting colors. The right panel shows a scatter plot of 200 MSSP ACOs with years of participation on the x-axis and net savings per beneficiary on the y-axis, illustrating the maturity curve with a regression line showing the inflection point at year three to four of participation. Data source: CMS MSSP Financial and Quality Results 2024 and CMMI Care Management ROI Analysis 2024.",
+                "alt": "Three-panel economic visualization showing the volume-to-value financial transition model, care management intervention ROI comparison, and MSSP ACO savings maturity curve over years of participation."
+              },
+              {
+                "_key": "blk037",
+                "_type": "audio",
+                "title": "HTR Academy Podcast: The Real Economics of Value-Based Care \u2014 What the Financial Models Actually Show",
+                "url": "https://podcast.htr.com/episodes/vbc-fundamentals-module-3-economics-pillar.mp3",
+                "summary": "In this 58-minute episode, HTR Principal Economist Marcus Webb is joined by Geisinger Health System CFO Kevin Brennan and health economist Amol Navathe from the University of Pennsylvania to walk through the financial mechanics of MSSP shared savings, BPCI Advanced bundled payment economics, and the five-year financial planning model that Geisinger used when it made the transition from predominantly fee-for-service revenue to a majority value-based revenue portfolio. The conversation includes a frank discussion of the transition period losses Geisinger absorbed in years one and two, the board conversations that were required to sustain the investment, and the specific point at which the financial model turned decisively positive."
+              },
+              {
+                "_key": "blk038",
+                "_type": "video",
+                "url": "https://www.youtube.com/watch?v=HTRAcademy2026M3",
+                "caption": "This 26-minute HTR Academy video module walks through the shared savings contract financial model step by step, using a realistic example of a 6,000-beneficiary ACO to illustrate how the benchmark is calculated, how the minimum savings rate threshold works, how savings are distributed between the ACO and CMS, and what the five-year net financial trajectory looks like under three performance scenarios. A downloadable Excel model is available to HTR Academy subscribers for adaptation to their own organization\u2019s patient population and cost structure."
+              }
+            ]
           }
         ]
       },

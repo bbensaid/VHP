@@ -1,24 +1,18 @@
-import { client } from "@/lib/sanity";
+import { db } from "@/lib/db/client";
 import CoursesClient from "./CoursesClient";
 
 export const metadata = {
   title: "Courses | HTR Academy",
-  description: "Structured online courses on healthcare transformation — policy, economics, technology, clinical innovation, equity, and operations. Taught by practitioners, not academics.",
+  description: "Structured online courses on healthcare transformation — policy, economics, technology, clinical innovation, equity, and operations.",
 };
 
 async function getCourses() {
-  const query = `*[_type == "course"] | order(title asc) {
-    _id,
-    title,
-    pillar,
-    type,
-    price,
-    meta,
-    description,
-    "slug": slug.current,
-    instructors[]->{name}
-  }`;
-  return client.fetch(query, {}, { next: { revalidate: 60 } });
+  const { data } = await db
+    .from("courses")
+    .select("id, slug, title, subtitle, description, pillar, level, estimated_hours, is_published")
+    .eq("is_published", true)
+    .order("title");
+  return data ?? [];
 }
 
 export default async function CoursesPage() {
@@ -31,12 +25,9 @@ export default async function CoursesPage() {
           <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
             Academy · Courses
           </span>
-          <h1 className="ty-h1 font-black text-slate-900 mb-3">
-            Course Catalog
-          </h1>
+          <h1 className="ty-h1 font-black text-slate-900 mb-3">Course Catalog</h1>
           <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">
-            Browse our library of certifications, masterclasses, and workshops
-            tailored for healthcare leadership.
+            Browse our library of certifications, masterclasses, and workshops tailored for healthcare leadership.
           </p>
         </div>
       </div>

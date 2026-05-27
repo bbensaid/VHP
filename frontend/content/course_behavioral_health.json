@@ -3,7 +3,7 @@
   "slug": "behavioral-health-integration",
   "title": "Behavioral Health Integration",
   "subtitle": "Mental health, substance use, and the integration of behavioral and physical healthcare",
-  "description": "Behavioral health conditions — depression, anxiety, substance use disorders, serious mental illness — are among the most prevalent, costly, and undertreated conditions in the U.S. healthcare system. This course covers the clinical landscape of behavioral health, evidence-based integration models, payment and financing, parity law, and Vermont's behavioral health infrastructure.",
+  "description": "Behavioral health conditions \u2014 depression, anxiety, substance use disorders, serious mental illness \u2014 are among the most prevalent, costly, and undertreated conditions in the U.S. healthcare system. This course covers the clinical landscape of behavioral health, evidence-based integration models, payment and financing, parity law, and Vermont's behavioral health infrastructure.",
   "pillar": "clinical",
   "level": "intermediate",
   "estimatedHours": 8,
@@ -25,14 +25,23 @@
           "estimatedMinutes": 20,
           "summary": "Mental health and substance use disorders affect 1 in 5 Americans annually, account for over $280 billion in direct costs, and are the leading driver of disability in the U.S. Understanding the scope of the behavioral health crisis is essential for appreciating why integration is a health system imperative.",
           "objectives": [
-            {"id": "obj-bh-001-1", "text": "Describe the prevalence and economic impact of behavioral health conditions in the U.S."},
-            {"id": "obj-bh-001-2", "text": "Explain how behavioral health conditions interact with and amplify physical health costs"},
-            {"id": "obj-bh-001-3", "text": "Identify the major barriers to behavioral health care access"}
+            {
+              "id": "obj-bh-001-1",
+              "text": "Describe the prevalence and economic impact of behavioral health conditions in the U.S."
+            },
+            {
+              "id": "obj-bh-001-2",
+              "text": "Explain how behavioral health conditions interact with and amplify physical health costs"
+            },
+            {
+              "id": "obj-bh-001-3",
+              "text": "Identify the major barriers to behavioral health care access"
+            }
           ],
           "contentBlocks": [
             {
               "type": "text",
-              "body": "Mental health and substance use disorders are the defining public health challenge of our era. In any given year, approximately 1 in 5 U.S. adults — 57 million people — experience a mental health condition. Yet fewer than half receive treatment. The treatment gap is even wider for substance use disorders, where only 10–12% of people with an identified need access treatment in a given year."
+              "body": "Mental health and substance use disorders are the defining public health challenge of our era. In any given year, approximately 1 in 5 U.S. adults \u2014 57 million people \u2014 experience a mental health condition. Yet fewer than half receive treatment. The treatment gap is even wider for substance use disorders, where only 10\u201312% of people with an identified need access treatment in a given year."
             },
             {
               "type": "heading",
@@ -41,7 +50,7 @@
             },
             {
               "type": "text",
-              "body": "The direct costs of mental health and substance use treatment exceed $280 billion annually. But direct costs substantially understate the total burden:\n\n**Physical health cost amplification.** People with serious mental illness (SMI) die 10–25 years earlier than the general population — primarily from cardiovascular disease, diabetes, and respiratory conditions, not suicide. Depression doubles the cost of managing diabetes and hypertension. Anxiety disorders increase ED utilization by 2–3x.\n\n**Productivity losses.** Depression is the leading cause of disability globally (WHO). U.S. workplaces lose an estimated $193 billion annually in earnings due to mental health conditions.\n\n**Criminal justice costs.** An estimated 20% of incarcerated individuals have a serious mental illness; 65% meet criteria for substance use disorder. The U.S. jail system has become the de facto largest mental health institution in many states.\n\n**Social services costs.** Homelessness, child welfare involvement, and domestic violence are all strongly associated with untreated behavioral health conditions."
+              "body": "The direct costs of mental health and substance use treatment exceed $280 billion annually. But direct costs substantially understate the total burden:\n\n**Physical health cost amplification.** People with serious mental illness (SMI) die 10\u201325 years earlier than the general population \u2014 primarily from cardiovascular disease, diabetes, and respiratory conditions, not suicide. Depression doubles the cost of managing diabetes and hypertension. Anxiety disorders increase ED utilization by 2\u20133x.\n\n**Productivity losses.** Depression is the leading cause of disability globally (WHO). U.S. workplaces lose an estimated $193 billion annually in earnings due to mental health conditions.\n\n**Criminal justice costs.** An estimated 20% of incarcerated individuals have a serious mental illness; 65% meet criteria for substance use disorder. The U.S. jail system has become the de facto largest mental health institution in many states.\n\n**Social services costs.** Homelessness, child welfare involvement, and domestic violence are all strongly associated with untreated behavioral health conditions."
             },
             {
               "type": "heading",
@@ -50,13 +59,13 @@
             },
             {
               "type": "text",
-              "body": "**Workforce shortage.** The U.S. has a severe behavioral health workforce shortage — 55% of U.S. counties have no psychiatrist. Wait times of 30–90 days for outpatient therapy are common even in urban markets.\n\n**Stigma.** Mental health stigma remains a significant barrier, particularly for men, rural communities, military personnel, and many cultural groups.\n\n**Financing gaps.** Despite mental health parity laws, behavioral health is reimbursed at lower rates than comparable medical services in many markets. Many behavioral health providers don't accept insurance at all.\n\n**Fragmentation.** In most markets, physical health and behavioral health are delivered by separate systems, with separate records, separate providers, and separate payers — creating coordination failures for the highest-need patients."
+              "body": "**Workforce shortage.** The U.S. has a severe behavioral health workforce shortage \u2014 55% of U.S. counties have no psychiatrist. Wait times of 30\u201390 days for outpatient therapy are common even in urban markets.\n\n**Stigma.** Mental health stigma remains a significant barrier, particularly for men, rural communities, military personnel, and many cultural groups.\n\n**Financing gaps.** Despite mental health parity laws, behavioral health is reimbursed at lower rates than comparable medical services in many markets. Many behavioral health providers don't accept insurance at all.\n\n**Fragmentation.** In most markets, physical health and behavioral health are delivered by separate systems, with separate records, separate providers, and separate payers \u2014 creating coordination failures for the highest-need patients."
             },
             {
               "type": "callout",
               "variant": "warning",
               "title": "Vermont Context",
-              "body": "Vermont has above-average rates of mental health and substance use disorders relative to national benchmarks, driven in part by rural isolation, economic stress, and an aging population. Vermont has invested significantly in its Designated Agency (DA) system — 11 regional non-profit agencies providing comprehensive community mental health and SUD services under state contract."
+              "body": "Vermont has above-average rates of mental health and substance use disorders relative to national benchmarks, driven in part by rural isolation, economic stress, and an aging population. Vermont has invested significantly in its Designated Agency (DA) system \u2014 11 regional non-profit agencies providing comprehensive community mental health and SUD services under state contract."
             }
           ],
           "quiz": {
@@ -66,10 +75,22 @@
                 "id": "q-bh-001-1",
                 "text": "Approximately what proportion of U.S. adults experience a mental health condition in any given year?",
                 "options": [
-                  {"id": "a", "text": "1 in 20"},
-                  {"id": "b", "text": "1 in 10"},
-                  {"id": "c", "text": "1 in 5"},
-                  {"id": "d", "text": "1 in 3"}
+                  {
+                    "id": "a",
+                    "text": "1 in 20"
+                  },
+                  {
+                    "id": "b",
+                    "text": "1 in 10"
+                  },
+                  {
+                    "id": "c",
+                    "text": "1 in 5"
+                  },
+                  {
+                    "id": "d",
+                    "text": "1 in 3"
+                  }
                 ],
                 "correctId": "c",
                 "explanation": "Approximately 1 in 5 U.S. adults (about 57 million people) experience a mental health condition each year, making it one of the most prevalent health challenges in the country."
@@ -86,14 +107,23 @@
           "estimatedMinutes": 22,
           "summary": "A foundational understanding of depression, anxiety disorders, bipolar disorder, schizophrenia spectrum disorders, and PTSD equips healthcare administrators, policymakers, and care managers to make informed decisions about behavioral health programs.",
           "objectives": [
-            {"id": "obj-bh-002-1", "text": "Describe the clinical features and prevalence of major depressive disorder and anxiety disorders"},
-            {"id": "obj-bh-002-2", "text": "Distinguish serious mental illness (SMI) from common mental health conditions"},
-            {"id": "obj-bh-002-3", "text": "Identify evidence-based first-line treatments for major depressive disorder and generalized anxiety"}
+            {
+              "id": "obj-bh-002-1",
+              "text": "Describe the clinical features and prevalence of major depressive disorder and anxiety disorders"
+            },
+            {
+              "id": "obj-bh-002-2",
+              "text": "Distinguish serious mental illness (SMI) from common mental health conditions"
+            },
+            {
+              "id": "obj-bh-002-3",
+              "text": "Identify evidence-based first-line treatments for major depressive disorder and generalized anxiety"
+            }
           ],
           "contentBlocks": [
             {
               "type": "text",
-              "body": "Behavioral health encompasses a broad spectrum of conditions. Understanding the clinical fundamentals — prevalence, diagnostic criteria, and treatment — is essential for designing programs, evaluating outcomes, and communicating credibly with clinical colleagues."
+              "body": "Behavioral health encompasses a broad spectrum of conditions. Understanding the clinical fundamentals \u2014 prevalence, diagnostic criteria, and treatment \u2014 is essential for designing programs, evaluating outcomes, and communicating credibly with clinical colleagues."
             },
             {
               "type": "heading",
@@ -102,7 +132,7 @@
             },
             {
               "type": "text",
-              "body": "MDD affects approximately 21 million U.S. adults annually — the most prevalent mental health condition in primary care. Diagnostic criteria (DSM-5) require 5 or more of 9 symptoms (including depressed mood or anhedonia) for at least 2 weeks:\n\n- Depressed mood most of the day\n- Markedly diminished interest or pleasure (anhedonia)\n- Significant weight change or appetite disturbance\n- Insomnia or hypersomnia\n- Psychomotor agitation or retardation\n- Fatigue or loss of energy\n- Feelings of worthlessness or guilt\n- Difficulty concentrating\n- Recurrent thoughts of death or suicide\n\n**First-line treatment:** Antidepressant medication (SSRIs or SNRIs) and/or psychotherapy (CBT has strongest evidence). 60–70% of patients respond to the first antidepressant; 80%+ respond with treatment optimization."
+              "body": "MDD affects approximately 21 million U.S. adults annually \u2014 the most prevalent mental health condition in primary care. Diagnostic criteria (DSM-5) require 5 or more of 9 symptoms (including depressed mood or anhedonia) for at least 2 weeks:\n\n- Depressed mood most of the day\n- Markedly diminished interest or pleasure (anhedonia)\n- Significant weight change or appetite disturbance\n- Insomnia or hypersomnia\n- Psychomotor agitation or retardation\n- Fatigue or loss of energy\n- Feelings of worthlessness or guilt\n- Difficulty concentrating\n- Recurrent thoughts of death or suicide\n\n**First-line treatment:** Antidepressant medication (SSRIs or SNRIs) and/or psychotherapy (CBT has strongest evidence). 60\u201370% of patients respond to the first antidepressant; 80%+ respond with treatment optimization."
             },
             {
               "type": "heading",
@@ -111,7 +141,7 @@
             },
             {
               "type": "text",
-              "body": "Anxiety disorders are the most prevalent mental health conditions overall — affecting 40 million U.S. adults (19%). The major anxiety disorders include:\n\n**Generalized Anxiety Disorder (GAD)** — Excessive worry about multiple life domains for ≥6 months. Often presents in primary care with somatic complaints (headaches, GI symptoms, fatigue).\n\n**Panic Disorder** — Recurrent unexpected panic attacks with fear of future attacks. Frequently misdiagnosed as cardiac or pulmonary emergency in the ED.\n\n**Social Anxiety Disorder** — Intense fear of social situations; significant functional impairment.\n\n**PTSD** — Following exposure to traumatic events. Particularly prevalent in veterans, survivors of violence, and healthcare workers.\n\n**First-line treatment:** CBT is the most evidence-based psychotherapy for all anxiety disorders. SSRIs/SNRIs are first-line pharmacotherapy."
+              "body": "Anxiety disorders are the most prevalent mental health conditions overall \u2014 affecting 40 million U.S. adults (19%). The major anxiety disorders include:\n\n**Generalized Anxiety Disorder (GAD)** \u2014 Excessive worry about multiple life domains for \u22656 months. Often presents in primary care with somatic complaints (headaches, GI symptoms, fatigue).\n\n**Panic Disorder** \u2014 Recurrent unexpected panic attacks with fear of future attacks. Frequently misdiagnosed as cardiac or pulmonary emergency in the ED.\n\n**Social Anxiety Disorder** \u2014 Intense fear of social situations; significant functional impairment.\n\n**PTSD** \u2014 Following exposure to traumatic events. Particularly prevalent in veterans, survivors of violence, and healthcare workers.\n\n**First-line treatment:** CBT is the most evidence-based psychotherapy for all anxiety disorders. SSRIs/SNRIs are first-line pharmacotherapy."
             },
             {
               "type": "heading",
@@ -120,7 +150,7 @@
             },
             {
               "type": "text",
-              "body": "**Serious Mental Illness** is defined by SAMHSA as a mental, behavioral, or emotional disorder resulting in serious functional impairment that substantially interferes with or limits major life activities. SMI includes:\n\n**Schizophrenia spectrum disorders** — Psychosis (hallucinations, delusions), disorganized thinking, negative symptoms (avolition, flat affect). Affects ~1% of the population; requires long-term antipsychotic treatment and intensive community support.\n\n**Bipolar disorder** — Cyclical periods of mania and depression. Affects ~2.8% of adults; requires mood stabilizers (lithium, valproate) and often integrated mental health management.\n\nSMI patients have the highest health system utilization — hospitalizations, ED visits, homelessness — and represent the core population for ACT teams, assertive community treatment, and Designated Agency intensive case management."
+              "body": "**Serious Mental Illness** is defined by SAMHSA as a mental, behavioral, or emotional disorder resulting in serious functional impairment that substantially interferes with or limits major life activities. SMI includes:\n\n**Schizophrenia spectrum disorders** \u2014 Psychosis (hallucinations, delusions), disorganized thinking, negative symptoms (avolition, flat affect). Affects ~1% of the population; requires long-term antipsychotic treatment and intensive community support.\n\n**Bipolar disorder** \u2014 Cyclical periods of mania and depression. Affects ~2.8% of adults; requires mood stabilizers (lithium, valproate) and often integrated mental health management.\n\nSMI patients have the highest health system utilization \u2014 hospitalizations, ED visits, homelessness \u2014 and represent the core population for ACT teams, assertive community treatment, and Designated Agency intensive case management."
             }
           ],
           "quiz": null
@@ -134,14 +164,23 @@
           "estimatedMinutes": 22,
           "summary": "Substance use disorders (SUDs) affect over 46 million Americans and are among the most deadly and costly health conditions in the U.S. The opioid crisis, alcohol use disorder, and stimulant use have each reshaped the behavioral health landscape and demand distinct treatment approaches.",
           "objectives": [
-            {"id": "obj-bh-003-1", "text": "Describe the clinical features of opioid use disorder and evidence-based medications for treatment (MOUD)"},
-            {"id": "obj-bh-003-2", "text": "Identify the scale and treatment gap for alcohol use disorder"},
-            {"id": "obj-bh-003-3", "text": "Explain the harm reduction philosophy and its evidence base"}
+            {
+              "id": "obj-bh-003-1",
+              "text": "Describe the clinical features of opioid use disorder and evidence-based medications for treatment (MOUD)"
+            },
+            {
+              "id": "obj-bh-003-2",
+              "text": "Identify the scale and treatment gap for alcohol use disorder"
+            },
+            {
+              "id": "obj-bh-003-3",
+              "text": "Explain the harm reduction philosophy and its evidence base"
+            }
           ],
           "contentBlocks": [
             {
               "type": "text",
-              "body": "Substance use disorders are chronic brain diseases — not moral failures or character defects. This reframing, grounded in neuroscience, is central to modern SUD treatment philosophy and increasingly reflected in law, policy, and clinical practice."
+              "body": "Substance use disorders are chronic brain diseases \u2014 not moral failures or character defects. This reframing, grounded in neuroscience, is central to modern SUD treatment philosophy and increasingly reflected in law, policy, and clinical practice."
             },
             {
               "type": "heading",
@@ -150,7 +189,7 @@
             },
             {
               "type": "text",
-              "body": "The U.S. opioid epidemic has killed over 500,000 people since 1999 and remains the leading cause of accidental death — accounting for 80,000+ overdose deaths in 2023. The epidemic has evolved through waves:\n\n**Wave 1 (1990s–2010):** Prescription opioid overprescribing — OxyContin, hydrocodone, oxycodone\n**Wave 2 (2010s):** Heroin surge as prescription opioids became less accessible\n**Wave 3 (2013–present):** Illicit fentanyl and fentanyl analogs dominate the drug supply\n\n**Opioid Use Disorder (OUD) treatment:** The evidence-based standard is **Medications for Opioid Use Disorder (MOUD)**:\n- **Buprenorphine (Suboxone)** — partial opioid agonist that reduces cravings and withdrawal; prescribable in office settings; primary care–friendly\n- **Methadone** — full agonist; requires daily attendance at a licensed opioid treatment program (OTP)\n- **Naltrexone (Vivitrol)** — opioid antagonist that blocks euphoric effects; monthly injectable preferred\n\nMOUD reduces overdose mortality by 50–75% and substantially improves treatment retention. Naloxone (Narcan) distribution for overdose reversal is a complementary harm reduction strategy."
+              "body": "The U.S. opioid epidemic has killed over 500,000 people since 1999 and remains the leading cause of accidental death \u2014 accounting for 80,000+ overdose deaths in 2023. The epidemic has evolved through waves:\n\n**Wave 1 (1990s\u20132010):** Prescription opioid overprescribing \u2014 OxyContin, hydrocodone, oxycodone\n**Wave 2 (2010s):** Heroin surge as prescription opioids became less accessible\n**Wave 3 (2013\u2013present):** Illicit fentanyl and fentanyl analogs dominate the drug supply\n\n**Opioid Use Disorder (OUD) treatment:** The evidence-based standard is **Medications for Opioid Use Disorder (MOUD)**:\n- **Buprenorphine (Suboxone)** \u2014 partial opioid agonist that reduces cravings and withdrawal; prescribable in office settings; primary care\u2013friendly\n- **Methadone** \u2014 full agonist; requires daily attendance at a licensed opioid treatment program (OTP)\n- **Naltrexone (Vivitrol)** \u2014 opioid antagonist that blocks euphoric effects; monthly injectable preferred\n\nMOUD reduces overdose mortality by 50\u201375% and substantially improves treatment retention. Naloxone (Narcan) distribution for overdose reversal is a complementary harm reduction strategy."
             },
             {
               "type": "heading",
@@ -159,7 +198,7 @@
             },
             {
               "type": "text",
-              "body": "Alcohol use disorder (AUD) affects an estimated 29 million Americans — yet fewer than 10% receive any treatment and only 2% receive FDA-approved medications. AUD is the 3rd leading preventable cause of death in the U.S. (95,000 deaths/year from alcohol-related causes).\n\n**Evidence-based medications for AUD:**\n- **Naltrexone** (oral or monthly injectable) — reduces cravings and the rewarding effects of alcohol; first-line\n- **Acamprosate** — reduces protracted withdrawal symptoms; effective for maintaining abstinence\n- **Disulfiram (Antabuse)** — causes aversive reaction with alcohol; effective only with high adherence\n\nThe vast majority of AUD patients are not diagnosed or treated in primary care settings — a significant population health opportunity."
+              "body": "Alcohol use disorder (AUD) affects an estimated 29 million Americans \u2014 yet fewer than 10% receive any treatment and only 2% receive FDA-approved medications. AUD is the 3rd leading preventable cause of death in the U.S. (95,000 deaths/year from alcohol-related causes).\n\n**Evidence-based medications for AUD:**\n- **Naltrexone** (oral or monthly injectable) \u2014 reduces cravings and the rewarding effects of alcohol; first-line\n- **Acamprosate** \u2014 reduces protracted withdrawal symptoms; effective for maintaining abstinence\n- **Disulfiram (Antabuse)** \u2014 causes aversive reaction with alcohol; effective only with high adherence\n\nThe vast majority of AUD patients are not diagnosed or treated in primary care settings \u2014 a significant population health opportunity."
             },
             {
               "type": "heading",
@@ -168,7 +207,7 @@
             },
             {
               "type": "text",
-              "body": "**Harm reduction** is a set of practical strategies that reduce the negative consequences of drug use without requiring abstinence. Core principles:\n\n- Meet people where they are — in their use patterns, not an idealized goal state\n- Reduce risks without moralizing\n- Respect autonomy and dignity\n\n**Evidence-based harm reduction programs:**\n- **Syringe service programs (SSPs)** — reduce HIV and hepatitis C transmission by 50%+ among PWID; also serve as entry points to SUD treatment\n- **Naloxone distribution** — FDA-approved for pharmacy dispensing without prescription in most states\n- **Fentanyl test strips** — low-cost tools that allow people to test drugs for fentanyl before use\n- **Safe consumption sites** — supervised drug use facilities (legal in some jurisdictions) that have prevented deaths without increasing drug use in surrounding communities"
+              "body": "**Harm reduction** is a set of practical strategies that reduce the negative consequences of drug use without requiring abstinence. Core principles:\n\n- Meet people where they are \u2014 in their use patterns, not an idealized goal state\n- Reduce risks without moralizing\n- Respect autonomy and dignity\n\n**Evidence-based harm reduction programs:**\n- **Syringe service programs (SSPs)** \u2014 reduce HIV and hepatitis C transmission by 50%+ among PWID; also serve as entry points to SUD treatment\n- **Naloxone distribution** \u2014 FDA-approved for pharmacy dispensing without prescription in most states\n- **Fentanyl test strips** \u2014 low-cost tools that allow people to test drugs for fentanyl before use\n- **Safe consumption sites** \u2014 supervised drug use facilities (legal in some jurisdictions) that have prevented deaths without increasing drug use in surrounding communities"
             }
           ],
           "quiz": {
@@ -178,10 +217,22 @@
                 "id": "q-bh-003-1",
                 "text": "Which of the following is an evidence-based medication for opioid use disorder that can be prescribed in primary care settings?",
                 "options": [
-                  {"id": "a", "text": "Disulfiram (Antabuse)"},
-                  {"id": "b", "text": "Buprenorphine (Suboxone)"},
-                  {"id": "c", "text": "Acamprosate"},
-                  {"id": "d", "text": "Naloxone only in hospitals"}
+                  {
+                    "id": "a",
+                    "text": "Disulfiram (Antabuse)"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Buprenorphine (Suboxone)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Acamprosate"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Naloxone only in hospitals"
+                  }
                 ],
                 "correctId": "b",
                 "explanation": "Buprenorphine (Suboxone) can be prescribed in primary care and office-based settings and is a first-line medication for opioid use disorder. Methadone for OUD requires an opioid treatment program."
@@ -207,14 +258,23 @@
           "estimatedMinutes": 20,
           "summary": "Behavioral health integration exists on a continuum from coordinated care (separate systems communicating) to co-located care (sharing physical space) to fully integrated care (unified team and record). The SAMHSA-HRSA Center for Integrated Health Solutions defines six levels of integration.",
           "objectives": [
-            {"id": "obj-bh-004-1", "text": "Describe the six levels of the SAMHSA-HRSA integration continuum"},
-            {"id": "obj-bh-004-2", "text": "Identify practical differences between co-located and integrated care"},
-            {"id": "obj-bh-004-3", "text": "Explain why full integration is associated with better outcomes for high-risk patients"}
+            {
+              "id": "obj-bh-004-1",
+              "text": "Describe the six levels of the SAMHSA-HRSA integration continuum"
+            },
+            {
+              "id": "obj-bh-004-2",
+              "text": "Identify practical differences between co-located and integrated care"
+            },
+            {
+              "id": "obj-bh-004-3",
+              "text": "Explain why full integration is associated with better outcomes for high-risk patients"
+            }
           ],
           "contentBlocks": [
             {
               "type": "text",
-              "body": "Integration is not binary — it exists on a spectrum. Understanding where a system sits on the integration continuum helps identify gaps and set realistic improvement goals."
+              "body": "Integration is not binary \u2014 it exists on a spectrum. Understanding where a system sits on the integration continuum helps identify gaps and set realistic improvement goals."
             },
             {
               "type": "heading",
@@ -223,7 +283,7 @@
             },
             {
               "type": "text",
-              "body": "The SAMHSA-HRSA Center for Integrated Health Solutions framework describes six levels across three broad categories:\n\n**Coordinated (Levels 1–2):**\n- Level 1: Minimal collaboration — separate systems, informal communication\n- Level 2: Basic collaboration at a distance — shared communication protocols, still separate systems\n\n**Co-located (Levels 3–4):**\n- Level 3: Basic collaboration onsite — providers share a building, communicate informally\n- Level 4: Close collaboration onsite — regular team meetings, some shared records, active referral processes\n\n**Integrated (Levels 5–6):**\n- Level 5: Close collaboration approaching an integrated practice — biopsychosocial orientation, regular team huddles, warm handoffs, some population tracking\n- Level 6: Full collaboration in a transformed/merged integrated practice — unified treatment plans, shared records, fully blended team identity, measurement of whole-person outcomes"
+              "body": "The SAMHSA-HRSA Center for Integrated Health Solutions framework describes six levels across three broad categories:\n\n**Coordinated (Levels 1\u20132):**\n- Level 1: Minimal collaboration \u2014 separate systems, informal communication\n- Level 2: Basic collaboration at a distance \u2014 shared communication protocols, still separate systems\n\n**Co-located (Levels 3\u20134):**\n- Level 3: Basic collaboration onsite \u2014 providers share a building, communicate informally\n- Level 4: Close collaboration onsite \u2014 regular team meetings, some shared records, active referral processes\n\n**Integrated (Levels 5\u20136):**\n- Level 5: Close collaboration approaching an integrated practice \u2014 biopsychosocial orientation, regular team huddles, warm handoffs, some population tracking\n- Level 6: Full collaboration in a transformed/merged integrated practice \u2014 unified treatment plans, shared records, fully blended team identity, measurement of whole-person outcomes"
             },
             {
               "type": "heading",
@@ -232,7 +292,7 @@
             },
             {
               "type": "text",
-              "body": "Research consistently shows that higher levels of integration produce better outcomes for the highest-need patients — those with co-occurring physical and behavioral health conditions:\n\n- **Co-located vs. coordinated:** Co-location alone (sharing a building) without workflow and culture change produces modest benefits. The critical elements are *warm handoffs* (direct introduction rather than referral slips), *shared records*, and *team-based communication*.\n\n- **Integrated vs. co-located:** Fully integrated practices — particularly those implementing Collaborative Care — outperform co-located practices on depression and anxiety outcomes, antidepressant adherence, and A1C control in patients with comorbid diabetes.\n\nFor the approximately 50% of people with behavioral health conditions who *only* seek care in primary care settings, the integration level of primary care determines whether they receive any behavioral health treatment."
+              "body": "Research consistently shows that higher levels of integration produce better outcomes for the highest-need patients \u2014 those with co-occurring physical and behavioral health conditions:\n\n- **Co-located vs. coordinated:** Co-location alone (sharing a building) without workflow and culture change produces modest benefits. The critical elements are *warm handoffs* (direct introduction rather than referral slips), *shared records*, and *team-based communication*.\n\n- **Integrated vs. co-located:** Fully integrated practices \u2014 particularly those implementing Collaborative Care \u2014 outperform co-located practices on depression and anxiety outcomes, antidepressant adherence, and A1C control in patients with comorbid diabetes.\n\nFor the approximately 50% of people with behavioral health conditions who *only* seek care in primary care settings, the integration level of primary care determines whether they receive any behavioral health treatment."
             }
           ],
           "quiz": null
@@ -244,16 +304,25 @@
           "pillar": "clinical",
           "order": 2,
           "estimatedMinutes": 24,
-          "summary": "The Collaborative Care Model (CoCM) is the most rigorously evidence-based approach to primary care–behavioral health integration, with 79 randomized controlled trials demonstrating superior outcomes for depression, anxiety, and PTSD compared to usual care. This lesson covers the model's components, evidence, implementation, and billing.",
+          "summary": "The Collaborative Care Model (CoCM) is the most rigorously evidence-based approach to primary care\u2013behavioral health integration, with 79 randomized controlled trials demonstrating superior outcomes for depression, anxiety, and PTSD compared to usual care. This lesson covers the model's components, evidence, implementation, and billing.",
           "objectives": [
-            {"id": "obj-bh-005-1", "text": "Name the three core roles in the Collaborative Care Model"},
-            {"id": "obj-bh-005-2", "text": "Explain measurement-based care and why it is central to CoCM"},
-            {"id": "obj-bh-005-3", "text": "Describe the CMS billing codes that enable Collaborative Care reimbursement"}
+            {
+              "id": "obj-bh-005-1",
+              "text": "Name the three core roles in the Collaborative Care Model"
+            },
+            {
+              "id": "obj-bh-005-2",
+              "text": "Explain measurement-based care and why it is central to CoCM"
+            },
+            {
+              "id": "obj-bh-005-3",
+              "text": "Describe the CMS billing codes that enable Collaborative Care reimbursement"
+            }
           ],
           "contentBlocks": [
             {
               "type": "text",
-              "body": "The Collaborative Care Model was developed at the University of Washington by Wayne Katon and Jürgen Unützer over 25 years and tested in over 79 randomized controlled trials — making it the most evidence-based model in behavioral health integration. On average, CoCM doubles depression remission rates at 12 months compared to usual care."
+              "body": "The Collaborative Care Model was developed at the University of Washington by Wayne Katon and J\u00fcrgen Un\u00fctzer over 25 years and tested in over 79 randomized controlled trials \u2014 making it the most evidence-based model in behavioral health integration. On average, CoCM doubles depression remission rates at 12 months compared to usual care."
             },
             {
               "type": "heading",
@@ -262,7 +331,7 @@
             },
             {
               "type": "text",
-              "body": "**1. The Treating Clinician (PCP or specialist).** The primary care provider (PCP) or relevant specialist is the treating clinician — they diagnose, prescribe, and maintain the patient relationship. PCPs in CoCM don't need to become expert in psychiatric medication management; they're supported by the care manager and psychiatric consultant.\n\n**2. The Behavioral Health Care Manager (BHCM).** The BHCM is the operational center of CoCM — typically a social worker, nurse, or counselor embedded in primary care. The BHCM:\n- Conducts initial behavioral health assessments\n- Provides brief evidence-based interventions (behavioral activation, CBT, PST)\n- Tracks patient progress on a registry using validated measures (PHQ-9, GAD-7)\n- Reaches out proactively when patients are not improving\n- Facilitates communication between the PCP and psychiatric consultant\n\n**3. The Psychiatric Consultant (PC).** A psychiatrist or psychiatric nurse practitioner who reviews the care manager's caseload, makes treatment recommendations for patients not improving, and provides case-based education to the care team. The PC does *not* typically see patients directly — they consult to the care manager and PCP."
+              "body": "**1. The Treating Clinician (PCP or specialist).** The primary care provider (PCP) or relevant specialist is the treating clinician \u2014 they diagnose, prescribe, and maintain the patient relationship. PCPs in CoCM don't need to become expert in psychiatric medication management; they're supported by the care manager and psychiatric consultant.\n\n**2. The Behavioral Health Care Manager (BHCM).** The BHCM is the operational center of CoCM \u2014 typically a social worker, nurse, or counselor embedded in primary care. The BHCM:\n- Conducts initial behavioral health assessments\n- Provides brief evidence-based interventions (behavioral activation, CBT, PST)\n- Tracks patient progress on a registry using validated measures (PHQ-9, GAD-7)\n- Reaches out proactively when patients are not improving\n- Facilitates communication between the PCP and psychiatric consultant\n\n**3. The Psychiatric Consultant (PC).** A psychiatrist or psychiatric nurse practitioner who reviews the care manager's caseload, makes treatment recommendations for patients not improving, and provides case-based education to the care team. The PC does *not* typically see patients directly \u2014 they consult to the care manager and PCP."
             },
             {
               "type": "heading",
@@ -271,7 +340,7 @@
             },
             {
               "type": "text",
-              "body": "**Measurement-based care (MBC)** — the systematic use of validated rating scales at every encounter to track symptom severity and treatment response — is a foundational principle of CoCM. Patients complete PHQ-9 (for depression) or GAD-7 (for anxiety) at each encounter; scores guide clinical decision-making.\n\nMBC enables the care manager to identify patients who are 'not at goal' — those who haven't improved after 4–8 weeks of treatment — and escalate to the psychiatric consultant for treatment adjustment. This data-driven population management approach is what distinguishes CoCM from unstructured referral."
+              "body": "**Measurement-based care (MBC)** \u2014 the systematic use of validated rating scales at every encounter to track symptom severity and treatment response \u2014 is a foundational principle of CoCM. Patients complete PHQ-9 (for depression) or GAD-7 (for anxiety) at each encounter; scores guide clinical decision-making.\n\nMBC enables the care manager to identify patients who are 'not at goal' \u2014 those who haven't improved after 4\u20138 weeks of treatment \u2014 and escalate to the psychiatric consultant for treatment adjustment. This data-driven population management approach is what distinguishes CoCM from unstructured referral."
             },
             {
               "type": "heading",
@@ -280,7 +349,7 @@
             },
             {
               "type": "text",
-              "body": "CMS added specific billing codes for Collaborative Care in 2017, making CoCM financially viable in fee-for-service Medicare and many Medicaid programs:\n\n- **99492** — Initial psychiatric collaborative care management, first 70 minutes\n- **99493** — Subsequent psychiatric collaborative care management, first 60 minutes per calendar month\n- **99494** — Additional 30 minutes per month\n\nThese codes are billed by the supervising physician (PCP), who must have overall responsibility for the patient. Monthly billing captures the coordination, registry management, and psychiatric consultation time — not just face-to-face encounters."
+              "body": "CMS added specific billing codes for Collaborative Care in 2017, making CoCM financially viable in fee-for-service Medicare and many Medicaid programs:\n\n- **99492** \u2014 Initial psychiatric collaborative care management, first 70 minutes\n- **99493** \u2014 Subsequent psychiatric collaborative care management, first 60 minutes per calendar month\n- **99494** \u2014 Additional 30 minutes per month\n\nThese codes are billed by the supervising physician (PCP), who must have overall responsibility for the patient. Monthly billing captures the coordination, registry management, and psychiatric consultation time \u2014 not just face-to-face encounters."
             }
           ],
           "quiz": {
@@ -290,13 +359,25 @@
                 "id": "q-bh-005-1",
                 "text": "In the Collaborative Care Model, what is the primary role of the psychiatric consultant?",
                 "options": [
-                  {"id": "a", "text": "To provide weekly psychotherapy to all enrolled patients"},
-                  {"id": "b", "text": "To see all patients directly for medication management"},
-                  {"id": "c", "text": "To review the caseload, make treatment recommendations for patients not improving, and consult to the care team"},
-                  {"id": "d", "text": "To manage the behavioral health registry and conduct outreach calls"}
+                  {
+                    "id": "a",
+                    "text": "To provide weekly psychotherapy to all enrolled patients"
+                  },
+                  {
+                    "id": "b",
+                    "text": "To see all patients directly for medication management"
+                  },
+                  {
+                    "id": "c",
+                    "text": "To review the caseload, make treatment recommendations for patients not improving, and consult to the care team"
+                  },
+                  {
+                    "id": "d",
+                    "text": "To manage the behavioral health registry and conduct outreach calls"
+                  }
                 ],
                 "correctId": "c",
-                "explanation": "The psychiatric consultant in CoCM reviews the care manager's registry, makes treatment recommendations for patients not improving, and consults to the care team — they typically don't see patients directly."
+                "explanation": "The psychiatric consultant in CoCM reviews the care manager's registry, makes treatment recommendations for patients not improving, and consults to the care team \u2014 they typically don't see patients directly."
               }
             ]
           }
@@ -310,9 +391,18 @@
           "estimatedMinutes": 18,
           "summary": "Primary Care Behavioral Health (PCBH) is a same-day consultation model where a behavioral health consultant (BHC) is embedded in primary care, available for warm handoffs during primary care visits. PCBH complements rather than replaces Collaborative Care and is particularly effective for population-level prevention.",
           "objectives": [
-            {"id": "obj-bh-006-1", "text": "Distinguish PCBH from the Collaborative Care Model"},
-            {"id": "obj-bh-006-2", "text": "Describe the warm handoff workflow in PCBH"},
-            {"id": "obj-bh-006-3", "text": "Identify which patient populations are best served by PCBH vs. CoCM"}
+            {
+              "id": "obj-bh-006-1",
+              "text": "Distinguish PCBH from the Collaborative Care Model"
+            },
+            {
+              "id": "obj-bh-006-2",
+              "text": "Describe the warm handoff workflow in PCBH"
+            },
+            {
+              "id": "obj-bh-006-3",
+              "text": "Identify which patient populations are best served by PCBH vs. CoCM"
+            }
           ],
           "contentBlocks": [
             {
@@ -326,7 +416,7 @@
             },
             {
               "type": "text",
-              "body": "The core PCBH workflow:\n\n1. Patient presents to primary care for any reason (physical complaint, medication refill, chronic disease management)\n2. PCP identifies a behavioral or functional issue during the visit — depression screen positive, anxiety complaint, health behavior change need\n3. **Warm handoff** — the PCP personally introduces the patient to the BHC (same day, in the same clinic), framing the BHC as a member of the care team\n4. BHC sees the patient for 15–30 minutes during the same visit — conducting a brief assessment and delivering a brief evidence-based intervention\n5. BHC provides a brief consultation note to the PCP with recommendations\n6. Follow-up care is planned collaboratively\n\nThe key distinction from traditional psychiatric referral: the warm handoff eliminates the 50–80% drop-off rate between referral and initial specialty appointment."
+              "body": "The core PCBH workflow:\n\n1. Patient presents to primary care for any reason (physical complaint, medication refill, chronic disease management)\n2. PCP identifies a behavioral or functional issue during the visit \u2014 depression screen positive, anxiety complaint, health behavior change need\n3. **Warm handoff** \u2014 the PCP personally introduces the patient to the BHC (same day, in the same clinic), framing the BHC as a member of the care team\n4. BHC sees the patient for 15\u201330 minutes during the same visit \u2014 conducting a brief assessment and delivering a brief evidence-based intervention\n5. BHC provides a brief consultation note to the PCP with recommendations\n6. Follow-up care is planned collaboratively\n\nThe key distinction from traditional psychiatric referral: the warm handoff eliminates the 50\u201380% drop-off rate between referral and initial specialty appointment."
             },
             {
               "type": "heading",
@@ -335,7 +425,7 @@
             },
             {
               "type": "text",
-              "body": "PCBH and CoCM are not competing models — they serve different population segments:\n\n**PCBH** is ideal for:\n- Moderate-severity depression, anxiety, and adjustment disorders\n- Health behavior change (weight management, smoking cessation, medication adherence)\n- Functional somatic disorders\n- Prevention and wellness\n- Universal population-level screening and brief intervention\n\n**CoCM** is ideal for:\n- Moderate-to-severe MDD and anxiety disorders requiring systematic treatment-to-target\n- High-risk patients with co-occurring physical health conditions\n- Populations where measurement-based longitudinal care management is needed\n\nMany high-performing systems deploy both: PCBH for broad population-level access, CoCM for more intensive management of the moderate-to-high-risk population."
+              "body": "PCBH and CoCM are not competing models \u2014 they serve different population segments:\n\n**PCBH** is ideal for:\n- Moderate-severity depression, anxiety, and adjustment disorders\n- Health behavior change (weight management, smoking cessation, medication adherence)\n- Functional somatic disorders\n- Prevention and wellness\n- Universal population-level screening and brief intervention\n\n**CoCM** is ideal for:\n- Moderate-to-severe MDD and anxiety disorders requiring systematic treatment-to-target\n- High-risk patients with co-occurring physical health conditions\n- Populations where measurement-based longitudinal care management is needed\n\nMany high-performing systems deploy both: PCBH for broad population-level access, CoCM for more intensive management of the moderate-to-high-risk population."
             }
           ],
           "quiz": null
@@ -356,11 +446,20 @@
           "pillar": "clinical",
           "order": 1,
           "estimatedMinutes": 22,
-          "summary": "The ASAM (American Society of Addiction Medicine) Criteria are the national standard for determining the appropriate level of care for individuals with substance use disorders. Understanding ASAM levels — from early intervention to medically managed intensive inpatient — is essential for SUD treatment system design.",
+          "summary": "The ASAM (American Society of Addiction Medicine) Criteria are the national standard for determining the appropriate level of care for individuals with substance use disorders. Understanding ASAM levels \u2014 from early intervention to medically managed intensive inpatient \u2014 is essential for SUD treatment system design.",
           "objectives": [
-            {"id": "obj-bh-007-1", "text": "Describe the six ASAM dimensions used to assess SUD treatment needs"},
-            {"id": "obj-bh-007-2", "text": "List the major ASAM levels of care from 0.5 to 4.0"},
-            {"id": "obj-bh-007-3", "text": "Explain how ASAM criteria are used by payers for utilization management"}
+            {
+              "id": "obj-bh-007-1",
+              "text": "Describe the six ASAM dimensions used to assess SUD treatment needs"
+            },
+            {
+              "id": "obj-bh-007-2",
+              "text": "List the major ASAM levels of care from 0.5 to 4.0"
+            },
+            {
+              "id": "obj-bh-007-3",
+              "text": "Explain how ASAM criteria are used by payers for utilization management"
+            }
           ],
           "contentBlocks": [
             {
@@ -374,7 +473,7 @@
             },
             {
               "type": "text",
-              "body": "Treatment decisions are based on assessment across six dimensions:\n\n1. **Acute intoxication and/or withdrawal potential** — What is the current intoxication status? What is the risk of withdrawal complications?\n2. **Biomedical conditions and complications** — Co-occurring physical health conditions that affect treatment\n3. **Emotional, behavioral, or cognitive conditions and complications** — Co-occurring mental health conditions\n4. **Readiness to change** — Motivation and engagement with treatment\n5. **Relapse, continued use, or continued problem potential** — Risk factors for return to use\n6. **Recovery/living environment** — Social supports, housing stability, family environment"
+              "body": "Treatment decisions are based on assessment across six dimensions:\n\n1. **Acute intoxication and/or withdrawal potential** \u2014 What is the current intoxication status? What is the risk of withdrawal complications?\n2. **Biomedical conditions and complications** \u2014 Co-occurring physical health conditions that affect treatment\n3. **Emotional, behavioral, or cognitive conditions and complications** \u2014 Co-occurring mental health conditions\n4. **Readiness to change** \u2014 Motivation and engagement with treatment\n5. **Relapse, continued use, or continued problem potential** \u2014 Risk factors for return to use\n6. **Recovery/living environment** \u2014 Social supports, housing stability, family environment"
             },
             {
               "type": "heading",
@@ -383,13 +482,13 @@
             },
             {
               "type": "text",
-              "body": "**Level 0.5 — Early Intervention:** Brief intervention for people at risk or early-stage use problems. SBIRT (Screening, Brief Intervention, Referral to Treatment) in primary care.\n\n**Level 1 — Outpatient Services:** Standard outpatient treatment — individual, group, and family counseling. <9 hours/week of service. Most SUD treatment occurs at this level.\n\n**Level 2 — Intensive Outpatient (IOP) / Partial Hospitalization (PHP):** \n- 2.1 IOP: 9+ hours/week of structured programming\n- 2.5 PHP: 20+ hours/week, near residential intensity without overnight stay\n\n**Level 3 — Residential Services:**\n- 3.1 Clinically managed low-intensity residential (sober living with clinical support)\n- 3.5 Clinically managed high-intensity residential (therapeutic community)\n- 3.7 Medically monitored intensive inpatient\n\n**Level 4 — Medically Managed Intensive Inpatient:** 24-hour medically managed care for severe withdrawal or medical/psychiatric complexity requiring hospital level of care."
+              "body": "**Level 0.5 \u2014 Early Intervention:** Brief intervention for people at risk or early-stage use problems. SBIRT (Screening, Brief Intervention, Referral to Treatment) in primary care.\n\n**Level 1 \u2014 Outpatient Services:** Standard outpatient treatment \u2014 individual, group, and family counseling. <9 hours/week of service. Most SUD treatment occurs at this level.\n\n**Level 2 \u2014 Intensive Outpatient (IOP) / Partial Hospitalization (PHP):** \n- 2.1 IOP: 9+ hours/week of structured programming\n- 2.5 PHP: 20+ hours/week, near residential intensity without overnight stay\n\n**Level 3 \u2014 Residential Services:**\n- 3.1 Clinically managed low-intensity residential (sober living with clinical support)\n- 3.5 Clinically managed high-intensity residential (therapeutic community)\n- 3.7 Medically monitored intensive inpatient\n\n**Level 4 \u2014 Medically Managed Intensive Inpatient:** 24-hour medically managed care for severe withdrawal or medical/psychiatric complexity requiring hospital level of care."
             },
             {
               "type": "callout",
               "variant": "info",
               "title": "Parity and ASAM",
-              "body": "Mental health parity law requires that payers not apply more restrictive utilization management criteria to SUD treatment than to comparable medical/surgical care. Regulators increasingly scrutinize payer ASAM-based coverage decisions for parity violations — particularly for high-need residential and IOP levels."
+              "body": "Mental health parity law requires that payers not apply more restrictive utilization management criteria to SUD treatment than to comparable medical/surgical care. Regulators increasingly scrutinize payer ASAM-based coverage decisions for parity violations \u2014 particularly for high-need residential and IOP levels."
             }
           ],
           "quiz": null
@@ -401,16 +500,25 @@
           "pillar": "operations",
           "order": 2,
           "estimatedMinutes": 20,
-          "summary": "Opioid use disorder treatment is delivered through two main pathways: federally regulated Opioid Treatment Programs (OTPs/methadone clinics) and office-based opioid treatment (OBOT) using buprenorphine. Understanding both systems — their regulatory frameworks, patient populations, and financing — is essential for opioid epidemic response.",
+          "summary": "Opioid use disorder treatment is delivered through two main pathways: federally regulated Opioid Treatment Programs (OTPs/methadone clinics) and office-based opioid treatment (OBOT) using buprenorphine. Understanding both systems \u2014 their regulatory frameworks, patient populations, and financing \u2014 is essential for opioid epidemic response.",
           "objectives": [
-            {"id": "obj-bh-008-1", "text": "Describe the federal regulatory framework for OTPs"},
-            {"id": "obj-bh-008-2", "text": "Explain how OBOT with buprenorphine differs from OTP methadone treatment"},
-            {"id": "obj-bh-008-3", "text": "Identify policy changes that have expanded access to MOUD"}
+            {
+              "id": "obj-bh-008-1",
+              "text": "Describe the federal regulatory framework for OTPs"
+            },
+            {
+              "id": "obj-bh-008-2",
+              "text": "Explain how OBOT with buprenorphine differs from OTP methadone treatment"
+            },
+            {
+              "id": "obj-bh-008-3",
+              "text": "Identify policy changes that have expanded access to MOUD"
+            }
           ],
           "contentBlocks": [
             {
               "type": "text",
-              "body": "Medication for opioid use disorder (MOUD) is the gold standard for OUD treatment — reducing overdose mortality by 50–75%, improving treatment retention, and enabling recovery. Yet treatment access remains severely limited by regulatory barriers, workforce shortages, and stigma."
+              "body": "Medication for opioid use disorder (MOUD) is the gold standard for OUD treatment \u2014 reducing overdose mortality by 50\u201375%, improving treatment retention, and enabling recovery. Yet treatment access remains severely limited by regulatory barriers, workforce shortages, and stigma."
             },
             {
               "type": "heading",
@@ -419,7 +527,7 @@
             },
             {
               "type": "text",
-              "body": "OTPs — commonly called methadone clinics — are federally certified programs licensed to dispense methadone for OUD treatment. They are regulated by SAMHSA at the federal level and by state opioid authorities.\n\n**Access requirements:**\n- Patients must attend in person (traditionally daily for the first 90+ days; take-home doses earned with demonstrated stability)\n- OTPs must offer counseling, medical evaluation, and case management\n- Methadone for OUD cannot be prescribed at a pharmacy — only dispensed at the OTP\n\nThe COVID-19 pandemic created historic regulatory flexibilities: SAMHSA allowed OTPs to provide up to 28 days of take-home methadone and allowed telephone assessments. Post-pandemic, many of these flexibilities became permanent — a major access improvement.\n\nOTPs serve approximately 400,000 people with OUD nationally, but there are significant geographic access gaps, particularly in rural areas."
+              "body": "OTPs \u2014 commonly called methadone clinics \u2014 are federally certified programs licensed to dispense methadone for OUD treatment. They are regulated by SAMHSA at the federal level and by state opioid authorities.\n\n**Access requirements:**\n- Patients must attend in person (traditionally daily for the first 90+ days; take-home doses earned with demonstrated stability)\n- OTPs must offer counseling, medical evaluation, and case management\n- Methadone for OUD cannot be prescribed at a pharmacy \u2014 only dispensed at the OTP\n\nThe COVID-19 pandemic created historic regulatory flexibilities: SAMHSA allowed OTPs to provide up to 28 days of take-home methadone and allowed telephone assessments. Post-pandemic, many of these flexibilities became permanent \u2014 a major access improvement.\n\nOTPs serve approximately 400,000 people with OUD nationally, but there are significant geographic access gaps, particularly in rural areas."
             },
             {
               "type": "heading",
@@ -428,7 +536,7 @@
             },
             {
               "type": "text",
-              "body": "Buprenorphine for OUD can be prescribed in any office setting — primary care, internal medicine, urgent care, emergency departments — by any DEA-licensed clinician. The **DATA 2000 waiver** system (X-waiver) previously required separate training and certification; the SUPPORT for Patients and Communities Act of 2023 **eliminated the X-waiver requirement**, allowing any DEA-registered prescriber to prescribe buprenorphine for OUD.\n\nThis was a landmark deregulatory step — removing the primary administrative barrier to primary care integration of OUD treatment. The U.S. now has the regulatory framework to make OBOT available in every primary care setting that sees patients with OUD.\n\nRealizing this potential requires training, clinical support systems (collaborative care models for OUD), reimbursement alignment, and organizational culture change."
+              "body": "Buprenorphine for OUD can be prescribed in any office setting \u2014 primary care, internal medicine, urgent care, emergency departments \u2014 by any DEA-licensed clinician. The **DATA 2000 waiver** system (X-waiver) previously required separate training and certification; the SUPPORT for Patients and Communities Act of 2023 **eliminated the X-waiver requirement**, allowing any DEA-registered prescriber to prescribe buprenorphine for OUD.\n\nThis was a landmark deregulatory step \u2014 removing the primary administrative barrier to primary care integration of OUD treatment. The U.S. now has the regulatory framework to make OBOT available in every primary care setting that sees patients with OUD.\n\nRealizing this potential requires training, clinical support systems (collaborative care models for OUD), reimbursement alignment, and organizational culture change."
             }
           ],
           "quiz": {
@@ -438,10 +546,22 @@
                 "id": "q-bh-008-1",
                 "text": "What regulatory change did the SUPPORT for Patients and Communities Act of 2023 make to buprenorphine prescribing?",
                 "options": [
-                  {"id": "a", "text": "It required all primary care providers to prescribe buprenorphine for OUD"},
-                  {"id": "b", "text": "It eliminated the X-waiver requirement, allowing any DEA-registered prescriber to prescribe buprenorphine for OUD"},
-                  {"id": "c", "text": "It moved buprenorphine to Schedule III, reducing prescribing restrictions"},
-                  {"id": "d", "text": "It allowed pharmacists to prescribe buprenorphine without a physician order"}
+                  {
+                    "id": "a",
+                    "text": "It required all primary care providers to prescribe buprenorphine for OUD"
+                  },
+                  {
+                    "id": "b",
+                    "text": "It eliminated the X-waiver requirement, allowing any DEA-registered prescriber to prescribe buprenorphine for OUD"
+                  },
+                  {
+                    "id": "c",
+                    "text": "It moved buprenorphine to Schedule III, reducing prescribing restrictions"
+                  },
+                  {
+                    "id": "d",
+                    "text": "It allowed pharmacists to prescribe buprenorphine without a physician order"
+                  }
                 ],
                 "correctId": "b",
                 "explanation": "The SUPPORT Act eliminated the DATA 2000 X-waiver requirement, removing the primary regulatory barrier to office-based opioid treatment and allowing any DEA-registered clinician to prescribe buprenorphine for OUD."
@@ -465,16 +585,25 @@
           "pillar": "policy",
           "order": 1,
           "estimatedMinutes": 20,
-          "summary": "The Mental Health Parity and Addiction Equity Act (MHPAEA) of 2008 requires insurers to cover mental health and substance use disorders on the same terms as medical and surgical benefits. But parity in law has not meant parity in practice — enforcement gaps and complex regulations leave significant disparities.",
+          "summary": "The Mental Health Parity and Addiction Equity Act (MHPAEA) of 2008 requires insurers to cover mental health and substance use disorders on the same terms as medical and surgical benefits. But parity in law has not meant parity in practice \u2014 enforcement gaps and complex regulations leave significant disparities.",
           "objectives": [
-            {"id": "obj-bh-009-1", "text": "Explain what MHPAEA requires of group health plans"},
-            {"id": "obj-bh-009-2", "text": "Distinguish quantitative from non-quantitative treatment limitations"},
-            {"id": "obj-bh-009-3", "text": "Identify the enforcement mechanisms and ongoing challenges in parity compliance"}
+            {
+              "id": "obj-bh-009-1",
+              "text": "Explain what MHPAEA requires of group health plans"
+            },
+            {
+              "id": "obj-bh-009-2",
+              "text": "Distinguish quantitative from non-quantitative treatment limitations"
+            },
+            {
+              "id": "obj-bh-009-3",
+              "text": "Identify the enforcement mechanisms and ongoing challenges in parity compliance"
+            }
           ],
           "contentBlocks": [
             {
               "type": "text",
-              "body": "Mental health parity is a simple concept — behavioral health coverage should be equivalent to medical/surgical coverage — that has proven extraordinarily difficult to enforce. Despite the 2008 law, behavioral health reimbursement rates remain 22–31% below medical rates nationally, out-of-network utilization is 3–5x higher than for medical care, and coverage denials for behavioral health are disproportionately high."
+              "body": "Mental health parity is a simple concept \u2014 behavioral health coverage should be equivalent to medical/surgical coverage \u2014 that has proven extraordinarily difficult to enforce. Despite the 2008 law, behavioral health reimbursement rates remain 22\u201331% below medical rates nationally, out-of-network utilization is 3\u20135x higher than for medical care, and coverage denials for behavioral health are disproportionately high."
             },
             {
               "type": "heading",
@@ -483,7 +612,7 @@
             },
             {
               "type": "text",
-              "body": "MHPAEA applies to most group health plans (10+ employees) and insurers that cover mental health/SUD benefits. Key requirements:\n\n**Financial requirements** (copays, deductibles, out-of-pocket limits) for mental health/SUD benefits cannot be more restrictive than for medical/surgical benefits in any plan tier.\n\n**Treatment limitations** — both quantitative (day limits, visit limits) and non-quantitative (prior authorization requirements, network adequacy, step-therapy protocols) — for mental health/SUD must be comparable to limits applied to medical/surgical benefits.\n\nThe **Non-Quantitative Treatment Limitation (NQTL)** provision is where most parity violations occur. If a plan requires prior authorization for behavioral health inpatient stays but not for medical inpatient stays, that's a potential parity violation. If a plan uses stricter criteria for authorizing residential SUD treatment than for comparable medical treatment (like rehab for hip fracture), that's a potential violation."
+              "body": "MHPAEA applies to most group health plans (10+ employees) and insurers that cover mental health/SUD benefits. Key requirements:\n\n**Financial requirements** (copays, deductibles, out-of-pocket limits) for mental health/SUD benefits cannot be more restrictive than for medical/surgical benefits in any plan tier.\n\n**Treatment limitations** \u2014 both quantitative (day limits, visit limits) and non-quantitative (prior authorization requirements, network adequacy, step-therapy protocols) \u2014 for mental health/SUD must be comparable to limits applied to medical/surgical benefits.\n\nThe **Non-Quantitative Treatment Limitation (NQTL)** provision is where most parity violations occur. If a plan requires prior authorization for behavioral health inpatient stays but not for medical inpatient stays, that's a potential parity violation. If a plan uses stricter criteria for authorizing residential SUD treatment than for comparable medical treatment (like rehab for hip fracture), that's a potential violation."
             },
             {
               "type": "heading",
@@ -492,7 +621,7 @@
             },
             {
               "type": "text",
-              "body": "MHPAEA is enforced by:\n- **Department of Labor** — for ERISA-governed employer-sponsored plans\n- **HHS** — for individual and small group market plans, Medicaid managed care\n- **State insurance departments** — for fully insured commercial plans (states may have additional requirements)\n\n**Consolidated Appropriations Act (CAA) 2021** strengthened parity enforcement:\n- Plans must conduct and document comparative analyses of their NQTLs\n- Regulators can request and review these analyses\n- Plans must provide NQTL analyses to members upon request\n\nState attorneys general have increasingly litigated parity violations — New York, California, and Washington have brought major enforcement actions. But individual enforcement remains difficult, and the overall behavioral health coverage gap persists."
+              "body": "MHPAEA is enforced by:\n- **Department of Labor** \u2014 for ERISA-governed employer-sponsored plans\n- **HHS** \u2014 for individual and small group market plans, Medicaid managed care\n- **State insurance departments** \u2014 for fully insured commercial plans (states may have additional requirements)\n\n**Consolidated Appropriations Act (CAA) 2021** strengthened parity enforcement:\n- Plans must conduct and document comparative analyses of their NQTLs\n- Regulators can request and review these analyses\n- Plans must provide NQTL analyses to members upon request\n\nState attorneys general have increasingly litigated parity violations \u2014 New York, California, and Washington have brought major enforcement actions. But individual enforcement remains difficult, and the overall behavioral health coverage gap persists."
             }
           ],
           "quiz": null
@@ -504,16 +633,25 @@
           "pillar": "economics",
           "order": 2,
           "estimatedMinutes": 20,
-          "summary": "Traditional fee-for-service payment has failed behavioral health — it rewards volume over outcomes, doesn't pay for non-face-to-face coordination, and creates incentives misaligned with recovery. Emerging value-based payment models for behavioral health offer a different approach.",
+          "summary": "Traditional fee-for-service payment has failed behavioral health \u2014 it rewards volume over outcomes, doesn't pay for non-face-to-face coordination, and creates incentives misaligned with recovery. Emerging value-based payment models for behavioral health offer a different approach.",
           "objectives": [
-            {"id": "obj-bh-010-1", "text": "Explain why fee-for-service payment is poorly suited to behavioral health"},
-            {"id": "obj-bh-010-2", "text": "Describe bundle payments and Certified Community Behavioral Health Clinic (CCBHC) payment models"},
-            {"id": "obj-bh-010-3", "text": "Identify the role of behavioral health in ACO value-based contracts"}
+            {
+              "id": "obj-bh-010-1",
+              "text": "Explain why fee-for-service payment is poorly suited to behavioral health"
+            },
+            {
+              "id": "obj-bh-010-2",
+              "text": "Describe bundle payments and Certified Community Behavioral Health Clinic (CCBHC) payment models"
+            },
+            {
+              "id": "obj-bh-010-3",
+              "text": "Identify the role of behavioral health in ACO value-based contracts"
+            }
           ],
           "contentBlocks": [
             {
               "type": "text",
-              "body": "Fee-for-service payment creates fundamental misalignments in behavioral health:\n\n- Recovery often involves *fewer* clinical encounters over time as patients stabilize — the opposite of FFS incentives\n- Most impactful behavioral health work (peer support, care coordination, crisis prevention) is not billable under FFS\n- Low behavioral health reimbursement rates drive providers to avoid managed care contracts, creating access gaps\n- There is no FFS mechanism to pay for population-level prevention or early intervention"
+              "body": "Fee-for-service payment creates fundamental misalignments in behavioral health:\n\n- Recovery often involves *fewer* clinical encounters over time as patients stabilize \u2014 the opposite of FFS incentives\n- Most impactful behavioral health work (peer support, care coordination, crisis prevention) is not billable under FFS\n- Low behavioral health reimbursement rates drive providers to avoid managed care contracts, creating access gaps\n- There is no FFS mechanism to pay for population-level prevention or early intervention"
             },
             {
               "type": "heading",
@@ -522,7 +660,7 @@
             },
             {
               "type": "text",
-              "body": "**CCBHCs** are a federal model established by the Excellence in Mental Health Act (2014) that provides prospective cost-based payment (Prospective Payment System, PPS) for comprehensive behavioral health services — including crisis services, case management, peer support, and integrated primary care. CCBHCs must:\n\n- Provide crisis services 24/7\n- Serve anyone regardless of ability to pay\n- Offer integrated primary care screening and monitoring\n- Include peer support specialists\n- Meet specific quality reporting requirements\n\nCCBHC payment rates are substantially higher than standard Medicaid rates, covering the full cost of comprehensive services. Demonstration programs show CCBHCs reduce hospitalizations, ED visits, and homelessness. The CCBHC model has expanded from 8 pilot states to 49 states."
+              "body": "**CCBHCs** are a federal model established by the Excellence in Mental Health Act (2014) that provides prospective cost-based payment (Prospective Payment System, PPS) for comprehensive behavioral health services \u2014 including crisis services, case management, peer support, and integrated primary care. CCBHCs must:\n\n- Provide crisis services 24/7\n- Serve anyone regardless of ability to pay\n- Offer integrated primary care screening and monitoring\n- Include peer support specialists\n- Meet specific quality reporting requirements\n\nCCBHC payment rates are substantially higher than standard Medicaid rates, covering the full cost of comprehensive services. Demonstration programs show CCBHCs reduce hospitalizations, ED visits, and homelessness. The CCBHC model has expanded from 8 pilot states to 49 states."
             },
             {
               "type": "heading",
@@ -531,7 +669,7 @@
             },
             {
               "type": "text",
-              "body": "ACOs and health systems in value-based contracts have a strong financial incentive to invest in behavioral health:\n\n- Comorbid depression/anxiety in patients with diabetes, COPD, CHF, or CAD drives 2–3x higher total cost of care\n- Untreated SUD is a major driver of preventable hospitalizations and ED use — the highest-cost utilization categories\n- Behavioral health integration ROI has been documented at $1.40–$6.50 per dollar invested, depending on model\n\nHigh-performing ACOs embed behavioral health in primary care, invest in CoCM, track behavioral health HEDIS measures (FUH, FUM, AMM, HBD), and include behavioral health specialists in care management teams targeting the highest-risk patients."
+              "body": "ACOs and health systems in value-based contracts have a strong financial incentive to invest in behavioral health:\n\n- Comorbid depression/anxiety in patients with diabetes, COPD, CHF, or CAD drives 2\u20133x higher total cost of care\n- Untreated SUD is a major driver of preventable hospitalizations and ED use \u2014 the highest-cost utilization categories\n- Behavioral health integration ROI has been documented at $1.40\u2013$6.50 per dollar invested, depending on model\n\nHigh-performing ACOs embed behavioral health in primary care, invest in CoCM, track behavioral health HEDIS measures (FUH, FUM, AMM, HBD), and include behavioral health specialists in care management teams targeting the highest-risk patients."
             }
           ],
           "quiz": null
@@ -554,14 +692,23 @@
           "estimatedMinutes": 20,
           "summary": "Vermont's 11 Designated Agencies (DAs) and specialized services agencies are non-profit regional organizations that serve as the backbone of Vermont's community mental health and SUD treatment system. Understanding the DA system illuminates how Vermont has built a statewide behavioral health infrastructure distinct from most other states.",
           "objectives": [
-            {"id": "obj-bh-011-1", "text": "Describe the structure and geographic coverage of Vermont's Designated Agency system"},
-            {"id": "obj-bh-011-2", "text": "Explain the 'safety net' mandate and what services DAs are required to provide"},
-            {"id": "obj-bh-011-3", "text": "Identify how DA services are financed and how Act 68 affects the DA system"}
+            {
+              "id": "obj-bh-011-1",
+              "text": "Describe the structure and geographic coverage of Vermont's Designated Agency system"
+            },
+            {
+              "id": "obj-bh-011-2",
+              "text": "Explain the 'safety net' mandate and what services DAs are required to provide"
+            },
+            {
+              "id": "obj-bh-011-3",
+              "text": "Identify how DA services are financed and how Act 68 affects the DA system"
+            }
           ],
           "contentBlocks": [
             {
               "type": "text",
-              "body": "Vermont's community mental health system was built on a deinstitutionalization-era framework that established non-profit Designated Agencies to serve as regional community mental health centers. Unlike most states, Vermont mandated geographic coverage — every Vermonter has a DA with responsibility for providing or arranging comprehensive mental health and SUD services, regardless of ability to pay."
+              "body": "Vermont's community mental health system was built on a deinstitutionalization-era framework that established non-profit Designated Agencies to serve as regional community mental health centers. Unlike most states, Vermont mandated geographic coverage \u2014 every Vermonter has a DA with responsibility for providing or arranging comprehensive mental health and SUD services, regardless of ability to pay."
             },
             {
               "type": "heading",
@@ -570,7 +717,7 @@
             },
             {
               "type": "text",
-              "body": "Vermont's 11 Designated Agencies cover all 14 counties:\n\n- **Baart Programs** (Burlington metro)\n- **Brattleboro Retreat** (Windham County) — also includes inpatient psychiatric\n- **Clara Martin Center** (Orange and Windsor counties)\n- **Health Care and Rehabilitation Services (HCRS)** (Windsor and Windham)\n- **Howard Center** (Chittenden County) — largest DA, also operates child and family services\n- **Lamoille County Mental Health Services**\n- **Northeast Kingdom Human Services (NKHS)**\n- **Northwestern Counseling and Support Services (NCSS)**\n- **United Counseling Service (UCS)** (Bennington County)\n- **Washington County Mental Health Services**\n- **White River Junction VA** — specialized services\n\nEach DA has a **Designated Agency Agreement** with the state (DVHA and DAIL) defining the services it must provide and the populations it must serve."
+              "body": "Vermont's 11 Designated Agencies cover all 14 counties:\n\n- **Baart Programs** (Burlington metro)\n- **Brattleboro Retreat** (Windham County) \u2014 also includes inpatient psychiatric\n- **Clara Martin Center** (Orange and Windsor counties)\n- **Health Care and Rehabilitation Services (HCRS)** (Windsor and Windham)\n- **Howard Center** (Chittenden County) \u2014 largest DA, also operates child and family services\n- **Lamoille County Mental Health Services**\n- **Northeast Kingdom Human Services (NKHS)**\n- **Northwestern Counseling and Support Services (NCSS)**\n- **United Counseling Service (UCS)** (Bennington County)\n- **Washington County Mental Health Services**\n- **White River Junction VA** \u2014 specialized services\n\nEach DA has a **Designated Agency Agreement** with the state (DVHA and DAIL) defining the services it must provide and the populations it must serve."
             },
             {
               "type": "heading",
@@ -579,13 +726,13 @@
             },
             {
               "type": "text",
-              "body": "Vermont's DAs have an explicit safety net mandate — they must serve anyone with a serious mental illness, serious emotional disturbance (children), or SUD, regardless of insurance status or ability to pay. Services include:\n\n- Adult outpatient mental health and SUD treatment\n- Community Rehabilitation and Treatment (CRT) — intensive case management for SMI\n- Residential services (group homes, supported housing)\n- Crisis stabilization and emergency mental health services\n- Children's integrated services\n- Peer support services\n\nDA services are financed through a blend of Medicaid, state general funds, and third-party billing. Vermont has invested in the DA system as a prevention-oriented alternative to expensive institutional care."
+              "body": "Vermont's DAs have an explicit safety net mandate \u2014 they must serve anyone with a serious mental illness, serious emotional disturbance (children), or SUD, regardless of insurance status or ability to pay. Services include:\n\n- Adult outpatient mental health and SUD treatment\n- Community Rehabilitation and Treatment (CRT) \u2014 intensive case management for SMI\n- Residential services (group homes, supported housing)\n- Crisis stabilization and emergency mental health services\n- Children's integrated services\n- Peer support services\n\nDA services are financed through a blend of Medicaid, state general funds, and third-party billing. Vermont has invested in the DA system as a prevention-oriented alternative to expensive institutional care."
             },
             {
               "type": "callout",
               "variant": "info",
               "title": "Act 68 and the DA System",
-              "body": "Vermont's Act 68 (2025) includes explicit provisions to strengthen the integration of DA services with the emerging health system reform framework — aligning DA population health goals with global budget incentives and expanding integrated care models across the DA network."
+              "body": "Vermont's Act 68 (2025) includes explicit provisions to strengthen the integration of DA services with the emerging health system reform framework \u2014 aligning DA population health goals with global budget incentives and expanding integrated care models across the DA network."
             }
           ],
           "quiz": null
@@ -597,16 +744,25 @@
           "pillar": "policy",
           "order": 2,
           "estimatedMinutes": 18,
-          "summary": "Vermont developed the 'Hub and Spoke' model for opioid use disorder treatment — a nationally recognized system that centralizes complex OUD patients in regional hubs while extending buprenorphine treatment to primary care spokes across the state. Vermont's model has been replicated by numerous states.",
+          "summary": "Vermont developed the 'Hub and Spoke' model for opioid use disorder treatment \u2014 a nationally recognized system that centralizes complex OUD patients in regional hubs while extending buprenorphine treatment to primary care spokes across the state. Vermont's model has been replicated by numerous states.",
           "objectives": [
-            {"id": "obj-bh-012-1", "text": "Describe the structure of Vermont's Hub and Spoke opioid treatment system"},
-            {"id": "obj-bh-012-2", "text": "Explain what support services spokes receive under the model"},
-            {"id": "obj-bh-012-3", "text": "Identify why Vermont's model has been recognized nationally as a population health success"}
+            {
+              "id": "obj-bh-012-1",
+              "text": "Describe the structure of Vermont's Hub and Spoke opioid treatment system"
+            },
+            {
+              "id": "obj-bh-012-2",
+              "text": "Explain what support services spokes receive under the model"
+            },
+            {
+              "id": "obj-bh-012-3",
+              "text": "Identify why Vermont's model has been recognized nationally as a population health success"
+            }
           ],
           "contentBlocks": [
             {
               "type": "text",
-              "body": "Vermont was among the first states to face the opioid crisis in a rural population — and responded with a system innovation that became a national model. Vermont Governor Peter Shumlin's 2014 State of the State address (devoted entirely to the opioid crisis) and the subsequent investment in a statewide Hub and Spoke treatment system put Vermont at the forefront of the opioid response."
+              "body": "Vermont was among the first states to face the opioid crisis in a rural population \u2014 and responded with a system innovation that became a national model. Vermont Governor Peter Shumlin's 2014 State of the State address (devoted entirely to the opioid crisis) and the subsequent investment in a statewide Hub and Spoke treatment system put Vermont at the forefront of the opioid response."
             },
             {
               "type": "heading",
@@ -615,7 +771,7 @@
             },
             {
               "type": "text",
-              "body": "**Hubs** are specialized OUD treatment programs (typically OTPs) that treat the most complex patients — those who need methadone, have severe psychiatric comorbidities, or require intensive psychosocial support. Vermont has 8 hubs, which also serve as training and consultation resources for spoke providers.\n\n**Spokes** are primary care practices, federally qualified health centers, and other clinical settings that prescribe buprenorphine for OUD patients with lower complexity. Spokes are supported by:\n\n- **Nurse Health Specialists (NHPs)** — funded by the state and embedded in spoke practices, providing care management, patient monitoring, and care coordination for patients receiving buprenorphine\n- **Consultation** from hub providers for complex cases\n- **Shared care protocols** and documentation standards\n\nThis model dramatically extended the reach of MOUD treatment — from a handful of specialized clinics to over 300 primary care providers statewide."
+              "body": "**Hubs** are specialized OUD treatment programs (typically OTPs) that treat the most complex patients \u2014 those who need methadone, have severe psychiatric comorbidities, or require intensive psychosocial support. Vermont has 8 hubs, which also serve as training and consultation resources for spoke providers.\n\n**Spokes** are primary care practices, federally qualified health centers, and other clinical settings that prescribe buprenorphine for OUD patients with lower complexity. Spokes are supported by:\n\n- **Nurse Health Specialists (NHPs)** \u2014 funded by the state and embedded in spoke practices, providing care management, patient monitoring, and care coordination for patients receiving buprenorphine\n- **Consultation** from hub providers for complex cases\n- **Shared care protocols** and documentation standards\n\nThis model dramatically extended the reach of MOUD treatment \u2014 from a handful of specialized clinics to over 300 primary care providers statewide."
             },
             {
               "type": "heading",
@@ -624,7 +780,7 @@
             },
             {
               "type": "text",
-              "body": "Vermont's Hub and Spoke model demonstrated:\n\n- Expansion of buprenorphine treatment capacity from ~1,100 to over 5,000 patients in the first 5 years\n- Treatment of >25% of the estimated OUD population — one of the highest coverage rates in the country\n- No increase in opioid-related crime or diversion associated with expanded buprenorphine access\n- Cost-effectiveness: Medicaid spending on OUD treatment per member was lower than in most comparable states despite higher treatment rates (because ambulatory treatment was preventing expensive hospitalizations)\n\nVermont's model has been cited by SAMHSA as a national model and replicated (with adaptations) in Pennsylvania, Maryland, and other states. It demonstrates how state-level health system architecture can meaningfully expand access to evidence-based treatment at scale."
+              "body": "Vermont's Hub and Spoke model demonstrated:\n\n- Expansion of buprenorphine treatment capacity from ~1,100 to over 5,000 patients in the first 5 years\n- Treatment of >25% of the estimated OUD population \u2014 one of the highest coverage rates in the country\n- No increase in opioid-related crime or diversion associated with expanded buprenorphine access\n- Cost-effectiveness: Medicaid spending on OUD treatment per member was lower than in most comparable states despite higher treatment rates (because ambulatory treatment was preventing expensive hospitalizations)\n\nVermont's model has been cited by SAMHSA as a national model and replicated (with adaptations) in Pennsylvania, Maryland, and other states. It demonstrates how state-level health system architecture can meaningfully expand access to evidence-based treatment at scale."
             }
           ],
           "quiz": {
@@ -634,13 +790,25 @@
                 "id": "q-bh-012-1",
                 "text": "In Vermont's Hub and Spoke model, what is the primary role of spokes?",
                 "options": [
-                  {"id": "a", "text": "To dispense methadone to complex opioid use disorder patients"},
-                  {"id": "b", "text": "To provide primary care–based buprenorphine treatment for lower-complexity OUD patients"},
-                  {"id": "c", "text": "To operate inpatient detoxification units"},
-                  {"id": "d", "text": "To provide outpatient counseling only, without medications"}
+                  {
+                    "id": "a",
+                    "text": "To dispense methadone to complex opioid use disorder patients"
+                  },
+                  {
+                    "id": "b",
+                    "text": "To provide primary care\u2013based buprenorphine treatment for lower-complexity OUD patients"
+                  },
+                  {
+                    "id": "c",
+                    "text": "To operate inpatient detoxification units"
+                  },
+                  {
+                    "id": "d",
+                    "text": "To provide outpatient counseling only, without medications"
+                  }
                 ],
                 "correctId": "b",
-                "explanation": "Spokes are primary care practices and similar settings that prescribe buprenorphine to lower-complexity OUD patients, supported by nurse health specialists and hub consultation — extending MOUD access across the state."
+                "explanation": "Spokes are primary care practices and similar settings that prescribe buprenorphine to lower-complexity OUD patients, supported by nurse health specialists and hub consultation \u2014 extending MOUD access across the state."
               }
             ]
           }
@@ -661,16 +829,25 @@
           "pillar": "operations",
           "order": 1,
           "estimatedMinutes": 20,
-          "summary": "The U.S. behavioral health crisis system has historically been inadequate — relying on emergency departments and law enforcement to manage psychiatric crises. The 988 Suicide and Crisis Lifeline, mobile crisis teams, and crisis stabilization centers represent a new infrastructure for community-based crisis response.",
+          "summary": "The U.S. behavioral health crisis system has historically been inadequate \u2014 relying on emergency departments and law enforcement to manage psychiatric crises. The 988 Suicide and Crisis Lifeline, mobile crisis teams, and crisis stabilization centers represent a new infrastructure for community-based crisis response.",
           "objectives": [
-            {"id": "obj-bh-013-1", "text": "Describe the components of a comprehensive behavioral health crisis system"},
-            {"id": "obj-bh-013-2", "text": "Explain the 988 Suicide and Crisis Lifeline and its capabilities"},
-            {"id": "obj-bh-013-3", "text": "Identify evidence-based alternatives to ED and law enforcement response for psychiatric crises"}
+            {
+              "id": "obj-bh-013-1",
+              "text": "Describe the components of a comprehensive behavioral health crisis system"
+            },
+            {
+              "id": "obj-bh-013-2",
+              "text": "Explain the 988 Suicide and Crisis Lifeline and its capabilities"
+            },
+            {
+              "id": "obj-bh-013-3",
+              "text": "Identify evidence-based alternatives to ED and law enforcement response for psychiatric crises"
+            }
           ],
           "contentBlocks": [
             {
               "type": "text",
-              "body": "Approximately 2.2 million people visit emergency departments for behavioral health reasons annually — accounting for 5% of all ED visits. EDs are poorly designed for psychiatric care: long waits in stimulating environments, limited behavioral health staff, and pressure toward quick disposition. Yet for most communities, the ED remains the primary crisis resource."
+              "body": "Approximately 2.2 million people visit emergency departments for behavioral health reasons annually \u2014 accounting for 5% of all ED visits. EDs are poorly designed for psychiatric care: long waits in stimulating environments, limited behavioral health staff, and pressure toward quick disposition. Yet for most communities, the ED remains the primary crisis resource."
             },
             {
               "type": "heading",
@@ -679,7 +856,7 @@
             },
             {
               "type": "text",
-              "body": "SAMHSA describes a crisis continuum with three essential pillars:\n\n**Crisis Call Centers (988).** The 988 Suicide and Crisis Lifeline, activated July 2022, routes calls and texts to local crisis centers. Trained counselors provide assessment, de-escalation, and warm handoffs to community resources. 988 call volume has increased substantially since launch.\n\n**Mobile Crisis Teams.** Teams of behavioral health clinicians (and increasingly, peer support specialists) who respond to non-violent psychiatric crises in the community — an alternative to law enforcement response. Evidence shows mobile crisis teams reduce arrests, reduce ED use, and improve consumer satisfaction. CAHOOTS in Eugene, Oregon is the most studied model.\n\n**Crisis Stabilization Units (CSUs).** Short-stay (23-hour to 7-day) community-based facilities where people in psychiatric or SUD crisis can stabilize without hospital admission. CSUs cost significantly less than inpatient psychiatric hospitalization and divert from the ED."
+              "body": "SAMHSA describes a crisis continuum with three essential pillars:\n\n**Crisis Call Centers (988).** The 988 Suicide and Crisis Lifeline, activated July 2022, routes calls and texts to local crisis centers. Trained counselors provide assessment, de-escalation, and warm handoffs to community resources. 988 call volume has increased substantially since launch.\n\n**Mobile Crisis Teams.** Teams of behavioral health clinicians (and increasingly, peer support specialists) who respond to non-violent psychiatric crises in the community \u2014 an alternative to law enforcement response. Evidence shows mobile crisis teams reduce arrests, reduce ED use, and improve consumer satisfaction. CAHOOTS in Eugene, Oregon is the most studied model.\n\n**Crisis Stabilization Units (CSUs).** Short-stay (23-hour to 7-day) community-based facilities where people in psychiatric or SUD crisis can stabilize without hospital admission. CSUs cost significantly less than inpatient psychiatric hospitalization and divert from the ED."
             },
             {
               "type": "heading",
@@ -688,7 +865,7 @@
             },
             {
               "type": "text",
-              "body": "Police respond to an estimated 10–20% of 911 calls involving behavioral health crises. These encounters can escalate dangerously — people with mental illness are 16 times more likely to be killed during a police encounter than other civilians.\n\n**Crisis Intervention Team (CIT)** training — the '40-hour Memphis model' — teaches officers de-escalation, recognition of psychiatric symptoms, and diversion to treatment resources. CIT-trained officers are less likely to use force and more likely to refer to treatment.\n\nLarger structural reform is creating alternative response systems that dispatch mental health clinicians instead of (or alongside) law enforcement for low-violence mental health calls — a model expanding rapidly following national attention to police-involved deaths."
+              "body": "Police respond to an estimated 10\u201320% of 911 calls involving behavioral health crises. These encounters can escalate dangerously \u2014 people with mental illness are 16 times more likely to be killed during a police encounter than other civilians.\n\n**Crisis Intervention Team (CIT)** training \u2014 the '40-hour Memphis model' \u2014 teaches officers de-escalation, recognition of psychiatric symptoms, and diversion to treatment resources. CIT-trained officers are less likely to use force and more likely to refer to treatment.\n\nLarger structural reform is creating alternative response systems that dispatch mental health clinicians instead of (or alongside) law enforcement for low-violence mental health calls \u2014 a model expanding rapidly following national attention to police-involved deaths."
             }
           ],
           "quiz": null

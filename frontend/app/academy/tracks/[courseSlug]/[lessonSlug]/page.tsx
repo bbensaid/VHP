@@ -23,25 +23,19 @@ export default async function LessonPage({ params }: PageProps) {
   const { courseSlug, lessonSlug } = await params;
 
   const user = await getUser();
-  if (!user) redirect(`/login?from=/academy/tracks/${courseSlug}/${lessonSlug}`);
 
-  let course = await getCourseWithProgress(courseSlug, user.id);
+  let course = await getCourseWithProgress(courseSlug, user?.id ?? null);
   if (!course) return notFound();
 
   // Verify the lesson exists in this course
   const allLessons = course.tracks.flatMap((t) => t.lessons);
   if (!allLessons.find((l) => l.slug === lessonSlug)) return notFound();
 
-  // Auto-enroll if not already enrolled
-  if (!course.enrollment) {
+  // Auto-enroll logged-in users only
+  if (user && !course.enrollment) {
     await enrollUser(user.id, course.id);
     course = (await getCourseWithProgress(courseSlug, user.id))!;
   }
 
-  return (
-    <LessonPageClient
-      course={course}
-      enrollmentId={course.enrollment?.id ?? ""}
-    />
-  );
+  return <LessonPageClient course={course} enrollmentId={course.enrollment?.id ?? ""} />;
 }

@@ -21,6 +21,7 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   "ti-message-circle": MessageCircle, "ti-users": Users,
   "ti-globe": Globe, "ti-wifi-off": Wifi, "ti-map-pin": MapPin,
   "ti-device-laptop": Laptop2, "ti-truck": Truck,
+  "ti-building-hospital": Building, "ti-package": FileText, "ti-percentage": Coins,
 };
 
 export function ConceptsGridRenderer({ block }: { block: ConceptsGridBlock }) {
@@ -30,7 +31,7 @@ export function ConceptsGridRenderer({ block }: { block: ConceptsGridBlock }) {
         <h3 className="text-lg font-semibold text-slate-900">{block.heading}</h3>
       )}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {block.items.map((item, i) => {
+        {(block.items ?? []).map((item, i) => {
           const Icon = ICON_MAP[item.icon] ?? Shield;
           return (
             <div key={i} className="bg-white border border-slate-200 rounded-lg p-4 space-y-2">

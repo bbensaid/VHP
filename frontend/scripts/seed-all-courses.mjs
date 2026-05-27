@@ -149,7 +149,9 @@ async function seed(courseData) {
           summary:            lesson.summary            ?? null,
           estimated_minutes:  lesson.estimatedMinutes   ?? null,
           objectives:         lesson.objectives         ?? [],
-          content_blocks:     lesson.contentBlocks      ?? [],
+          content_blocks:     lesson.sanityBody
+                                ? [{ type: "sanity_portable_text", body: lesson.sanityBody }, ...(lesson.contentBlocks ?? [])]
+                                : (lesson.contentBlocks ?? []),
           tags:               lesson.tags               ?? [],
           related_lesson_ids: [],
           is_published:       lesson.isPublished        ?? true,

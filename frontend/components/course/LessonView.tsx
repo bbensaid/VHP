@@ -5,6 +5,8 @@ import type { LessonWithProgress } from "@/types/course";
 import { PillarBadge } from "./PillarBadge";
 import { ContentBlockRenderer } from "./ContentBlockRenderer";
 import { LessonQuiz } from "./LessonQuiz";
+import AcademyContent from "@/components/AcademyContent";
+import type { PortableTextBlock } from "@portabletext/react";
 
 interface LessonViewProps {
   lesson: LessonWithProgress;
@@ -17,10 +19,10 @@ interface LessonViewProps {
 export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload, isCompleted = false }: LessonViewProps) {
 
   return (
-    <article className="max-w-2xl mx-auto space-y-8 pb-12 font-sans">
+    <article className="max-w-3xl mx-auto space-y-8 pb-16 font-sans">
       <header className="space-y-3 pt-2">
         <PillarBadge pillar={lesson.pillar} />
-        <h1 className="text-2xl font-semibold text-slate-900 leading-snug">{lesson.title}</h1>
+        <h1 className="text-3xl font-black text-slate-900 leading-tight">{lesson.title}</h1>
         <div className="flex items-center gap-4 text-sm text-slate-500">
           <span className="flex items-center gap-1.5">
             <Clock className="w-4 h-4" />
@@ -51,14 +53,20 @@ export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload, 
       )}
 
       <div className="space-y-8">
-        {lesson.contentBlocks.map((block, i) => (
-          <ContentBlockRenderer
-            key={i}
-            block={block}
-            lessonId={lesson.id}
-            onAudioUpload={onAudioUpload ? (file, key) => onAudioUpload(lesson.id, file, key) : undefined}
-          />
-        ))}
+        {(() => {
+          const sanityBlock = lesson.contentBlocks.find(b => b.type === "sanity_portable_text") as { type: "sanity_portable_text"; body: unknown[] } | undefined;
+          if (sanityBlock) {
+            return <AcademyContent body={sanityBlock.body as PortableTextBlock[]} />;
+          }
+          return lesson.contentBlocks.map((block, i) => (
+            <ContentBlockRenderer
+              key={i}
+              block={block}
+              lessonId={lesson.id}
+              onAudioUpload={onAudioUpload ? (file, key) => onAudioUpload(lesson.id, file, key) : undefined}
+            />
+          ));
+        })()}
       </div>
 
       {lesson.quiz && (
