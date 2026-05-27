@@ -19,7 +19,7 @@ interface LessonViewProps {
 export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload, isCompleted = false }: LessonViewProps) {
 
   return (
-    <article className="w-full max-w-4xl mx-auto space-y-6 pb-16 font-sans">
+    <article className="w-full space-y-6 pb-16 font-sans">
       <header className="space-y-3 pt-2">
         <PillarBadge pillar={lesson.pillar} />
         <h1 className="text-xl font-black text-slate-900 leading-tight">{lesson.title}</h1>
