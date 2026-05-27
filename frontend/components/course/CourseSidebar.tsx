@@ -142,13 +142,17 @@ export function CourseSidebar({
                           ref={isActive ? (el) => el?.scrollIntoView({ block: "nearest" }) : null}
                           className={`flex items-center gap-2 w-full pl-8 pr-3 py-1.5 text-xs transition-colors text-left ${
                             isActive
-                              ? "bg-white text-slate-900 font-semibold"
-                              : "text-slate-500 hover:bg-white hover:text-slate-800"
+                              ? "bg-sky-50 text-sky-900 font-semibold border-r-2 border-sky-500"
+                              : "text-slate-500 hover:bg-slate-100 hover:text-slate-800"
                           }`}
                           aria-current={isActive ? "page" : undefined}
                         >
                           {isDone ? (
                             <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                          ) : isActive ? (
+                            <div className="w-4 h-4 shrink-0 rounded-full bg-sky-500 border-2 border-sky-500 flex items-center justify-center">
+                              <div className="w-1.5 h-1.5 rounded-full bg-white" />
+                            </div>
                           ) : (
                             <Circle className="w-4 h-4 shrink-0 opacity-40" />
                           )}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Trophy, BookOpen, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import type { CourseWithProgress } from "@/types/course";
@@ -28,6 +28,32 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [courseComplete, setCourseComplete] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  // ── Resizable content padding ─────────────────────────────────────────────
+  const [leftPad, setLeftPad] = useState(40);
+  const [rightPad, setRightPad] = useState(40);
+  const dragSide = useRef<"left" | "right" | null>(null);
+  const dragStartX = useRef(0);
+  const dragStartPad = useRef(0);
+
+  useEffect(() => {
+    const onMove = (e: MouseEvent) => {
+      if (!dragSide.current) return;
+      const delta = e.clientX - dragStartX.current;
+      const next = Math.min(400, Math.max(8, dragStartPad.current + (dragSide.current === "left" ? delta : -delta)));
+      if (dragSide.current === "left") setLeftPad(next);
+      else setRightPad(next);
+    };
+    const onUp = () => {
+      if (!dragSide.current) return;
+      dragSide.current = null;
+      document.body.style.cursor = "";
+      document.body.style.userSelect = "";
+    };
+    window.addEventListener("mousemove", onMove);
+    window.addEventListener("mouseup", onUp);
+    return () => { window.removeEventListener("mousemove", onMove); window.removeEventListener("mouseup", onUp); };
+  }, []);
 
   // Track completed lessons locally so progress updates instantly on click.
   const [completedIds, setCompletedIds] = useState<Set<string>>(
@@ -121,7 +147,27 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
         />
       </div>
 
-      <div className="flex flex-col flex-1 overflow-hidden min-w-0">
+      <div className="flex flex-1 overflow-hidden min-w-0 relative">
+        {/* ── Drag handles — absolute, full-height, never scroll ─────── */}
+        {!courseComplete && (<>
+          <div
+            onMouseDown={(e) => { e.preventDefault(); dragSide.current = "left"; dragStartX.current = e.clientX; dragStartPad.current = leftPad; document.body.style.cursor = "col-resize"; document.body.style.userSelect = "none"; }}
+            className="absolute top-0 bottom-0 left-0 z-10 w-3 cursor-col-resize group flex items-center justify-center"
+            title="Drag to resize"
+          >
+            <div className="w-1 h-16 rounded-full bg-slate-300 group-hover:bg-sky-400 group-active:bg-sky-500 transition-colors" />
+          </div>
+          <div
+            onMouseDown={(e) => { e.preventDefault(); dragSide.current = "right"; dragStartX.current = e.clientX; dragStartPad.current = rightPad; document.body.style.cursor = "col-resize"; document.body.style.userSelect = "none"; }}
+            className="absolute top-0 bottom-0 right-0 z-10 w-3 cursor-col-resize group flex items-center justify-center"
+            title="Drag to resize"
+          >
+            <div className="w-1 h-16 rounded-full bg-slate-300 group-hover:bg-sky-400 group-active:bg-sky-500 transition-colors" />
+          </div>
+        </>)}
+
+        {/* ── Inner column: top bar + scroll + bottom bar ───────────── */}
+        <div className="flex flex-col flex-1 overflow-hidden min-w-0">
         {courseComplete ? (
           /* ── Course Completion Screen ───────────────────────────────── */
           <div className="flex-1 overflow-y-auto flex flex-col items-center justify-center px-6 py-12 bg-linear-to-b from-white to-sky-50">
@@ -195,7 +241,11 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
           <span className="ml-auto text-xs text-slate-400 shrink-0">{currentIndex + 1} / {totalLessons}</span>
         </div>
 
-        <div ref={scrollContainerRef} className="flex-1 overflow-y-auto overscroll-contain px-4 md:px-6 py-6">
+        <div
+          ref={scrollContainerRef}
+          className="flex-1 overflow-y-auto overscroll-contain py-6"
+          style={{ paddingLeft: leftPad, paddingRight: rightPad }}
+        >
           <LessonView
             lesson={currentLesson}
             onMarkComplete={handleMarkComplete}
@@ -227,6 +277,7 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
         </div>
           </>
         )}
+        </div>{/* end inner flex-col */}
       </div>
     </div>
   );
