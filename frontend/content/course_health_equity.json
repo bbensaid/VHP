@@ -392,7 +392,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_eq_foundations",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         }
       ]
     },
@@ -799,7 +802,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_eq_sdoh",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         },
         {
           "id": "lesson_eq_food_security",
@@ -928,7 +934,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_eq_sdoh",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         }
       ]
     },
@@ -1188,7 +1197,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_eq_data",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         }
       ]
     },
@@ -1412,7 +1424,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_eq_algorithmic",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         }
       ]
     },
@@ -1660,7 +1675,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_eq_cms",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         }
       ]
     },
@@ -1928,7 +1946,10 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_eq_community",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         },
         {
           "id": "lesson_eq_racial_healing",
@@ -2031,11 +2052,12 @@
                 ]
               }
             ]
-          }
+          },
+          "trackId": "track_eq_community",
+          "createdAt": "2026-05-26T00:00:00.000Z",
+          "updatedAt": "2026-05-26T00:00:00.000Z"
         }
       ]
     }
-  ],
-  "pillar": "equity",
-  "level": "foundational"
+  ]
 }

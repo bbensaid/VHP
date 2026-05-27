@@ -73,7 +73,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   }
 
   return (
-    <div className={`bg-white dark:bg-slate-900 flex flex-col ${isCoursePage ? "h-full overflow-hidden" : "flex-1"}`}>
+    <div className={`bg-white dark:bg-slate-900 flex flex-col ${isCoursePage ? "h-full overflow-hidden" : "flex-1 overflow-y-auto"}`}>
       {/* 1. Sticky Navigation Bar */}
       {isStickyBarVisible && (
         <div className="sticky top-0 z-(--z-sticky) h-10 flex justify-center transition-all duration-300 pointer-events-none bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 shadow-[0_4px_8px_-2px_rgba(0,0,0,0.12)]">
@@ -118,7 +118,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         </CollapsibleSidebar>
 
         <main
-          className={`flex-1 min-w-0 transition-all duration-300 ${isCoursePage ? "min-h-0 overflow-hidden" : "min-h-screen"} ${isLeftOpen ? "lg:ml-4" : isCoursePage ? "" : "lg:pl-6"} ${isRightOpen ? "lg:mr-4" : isCoursePage ? "" : "lg:pr-6"}`}
+          className={`flex-1 min-w-0 transition-all duration-300 ${isCoursePage ? "min-h-0 flex flex-col" : "min-h-screen"} ${isLeftOpen ? "lg:ml-4" : isCoursePage ? "" : "lg:pl-6"} ${isRightOpen ? "lg:mr-4" : isCoursePage ? "" : "lg:pr-6"}`}
           style={{ "--sidebar-top": sidebarTop } as React.CSSProperties}
         >
           {children}
@@ -153,7 +153,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
       {/* 4. Bottom navigation — mobile only */}
       <BottomNav />
 
-      <Footer />
+      {!isCoursePage && <Footer />}
     </div>
   );
 }
