@@ -79,33 +79,38 @@ export function CourseSidebar({
         Back to Academy
       </Link>
 
-      {/* Dark course title */}
-      <div className="bg-slate-900 px-4 py-4 shrink-0">
-        <h2 className="text-sm font-bold text-white leading-snug">{courseTitle}</h2>
-        {onClose && (
-          <button
-            onClick={onClose}
-            className="lg:hidden absolute top-3 right-3 p-1.5 rounded-md hover:bg-slate-700 text-slate-400 shrink-0"
-            aria-label="Close navigation"
-          >
-            <X className="w-4 h-4" />
-          </button>
-        )}
+      {/* Course title card */}
+      <div className="m-3 rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden shrink-0">
+        <div className="bg-slate-900 px-4 py-4">
+          <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1">Course</p>
+          <h2 className="text-sm font-bold text-white leading-snug">{courseTitle}</h2>
+        </div>
       </div>
 
       {/* Progress */}
-      <div className="px-4 py-3 border-b border-slate-200 shrink-0">
-        <div className="flex items-center justify-between text-[10px] text-slate-400 mb-1.5">
+      <div className="px-4 pb-3 shrink-0">
+        <div className="flex justify-between text-[10px] text-slate-400 mb-1.5">
           <span>{Math.round(progressPercent)}% complete</span>
           <span>{completedLessons}/{totalLessons} lessons</span>
         </div>
-        <div className="h-1 w-full rounded-full bg-slate-200 overflow-hidden">
+        <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
           <div
             className="h-full bg-emerald-500 rounded-full transition-all duration-300"
             style={{ width: `${Math.min(progressPercent, 100)}%` }}
           />
         </div>
       </div>
+      <div className="border-b border-slate-200 mx-3 shrink-0" />
+
+      {onClose && (
+        <button
+          onClick={onClose}
+          className="lg:hidden absolute top-3 right-3 p-1.5 rounded-md hover:bg-slate-200 text-slate-500"
+          aria-label="Close navigation"
+        >
+          <X className="w-4 h-4" />
+        </button>
+      )}
 
       <nav className="py-2" aria-label="Course navigation">
         {tracks.map((track) => {
