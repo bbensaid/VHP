@@ -70,7 +70,7 @@ export default async function RootLayout({
               <ClientOnlyShell />
               <div className="flex flex-col h-screen">
                 <Header />
-                <div className="flex-1 min-h-0 overflow-hidden">
+                <div className="flex-1 min-h-0 flex flex-col">
                   <AppShell tickerData={tickerData}>
                     <main id="main-content" className="contents">
                       <ErrorBoundary section="Page">{children}</ErrorBoundary>
