@@ -53,6 +53,15 @@ export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload, 
       )}
 
       {(() => {
+        // Priority 1: sanityBody injected at page load from Sanity CMS
+        if (lesson.sanityBody && lesson.sanityBody.length > 0) {
+          return (
+            <div className="bg-white rounded-xl border border-slate-200 shadow-sm px-8 py-10 sm:px-12 sm:py-12">
+              <AcademyContent body={lesson.sanityBody as PortableTextBlock[]} />
+            </div>
+          );
+        }
+        // Priority 2: legacy sanity_portable_text block in content_blocks
         const sanityBlock = lesson.contentBlocks.find(b => b.type === "sanity_portable_text") as { type: "sanity_portable_text"; body: unknown[] } | undefined;
         if (sanityBlock) {
           return (
@@ -61,6 +70,7 @@ export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload, 
             </div>
           );
         }
+        // Priority 3: legacy content_blocks (Supabase-stored)
         return (
           <div className="space-y-8">
             {lesson.contentBlocks.map((block, i) => (
