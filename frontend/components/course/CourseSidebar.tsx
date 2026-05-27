@@ -70,33 +70,37 @@ export function CourseSidebar({
 
   return (
     <aside className="flex flex-col w-64 min-w-[256px] border-r border-slate-200 bg-slate-50 overflow-y-auto" style={{ height: "100%" }}>
-      <Link
-        href="/academy/tracks"
-        className="flex items-center gap-2 px-4 py-2.5 bg-indigo-50 hover:bg-indigo-100 transition-colors text-indigo-700 font-semibold text-xs shrink-0 border-b border-indigo-100"
-      >
-        <ArrowLeft className="w-3.5 h-3.5 shrink-0" />
-        Back to Academy
-      </Link>
-      <div className="p-5 border-b border-slate-200 space-y-3">
-        <div className="flex items-start justify-between gap-2">
-          <div>
-            <h2 className="text-sm font-semibold text-slate-900 leading-snug">{courseTitle}</h2>
+      {/* Dark header */}
+      <div className="bg-slate-900 px-4 py-4 shrink-0">
+        <Link
+          href="/academy/tracks"
+          className="flex items-center gap-1.5 text-slate-400 hover:text-white text-[10px] font-bold uppercase tracking-widest mb-3 transition-colors"
+        >
+          <ArrowLeft className="w-3 h-3 shrink-0" />
+          Back to Academy
+        </Link>
+        <h2 className="text-sm font-bold text-white leading-snug mb-3">{courseTitle}</h2>
+        <div className="space-y-1.5">
+          <div className="flex items-center justify-between text-[10px] text-slate-400">
+            <span>{Math.round(progressPercent)}% complete</span>
+            <span>{completedLessons}/{totalLessons} lessons</span>
           </div>
-          {onClose && (
-            <button
-              onClick={onClose}
-              className="lg:hidden mt-0.5 p-1.5 rounded-md hover:bg-slate-200 text-slate-500 shrink-0"
-              aria-label="Close navigation"
-            >
-              <X className="w-4 h-4" />
-            </button>
-          )}
+          <div className="h-1 w-full rounded-full bg-slate-700 overflow-hidden">
+            <div
+              className="h-full bg-emerald-500 rounded-full transition-all duration-300"
+              style={{ width: `${Math.min(progressPercent, 100)}%` }}
+            />
+          </div>
         </div>
-        <CourseProgressBar
-          percent={progressPercent}
-          completedLessons={completedLessons}
-          totalLessons={totalLessons}
-        />
+        {onClose && (
+          <button
+            onClick={onClose}
+            className="lg:hidden absolute top-3 right-3 p-1.5 rounded-md hover:bg-slate-700 text-slate-400 shrink-0"
+            aria-label="Close navigation"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        )}
       </div>
 
       <nav className="py-2" aria-label="Course navigation">
