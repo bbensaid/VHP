@@ -69,7 +69,7 @@ export function CourseSidebar({
   }
 
   return (
-    <aside className="flex flex-col w-72 min-w-[288px] border-r border-slate-200 bg-slate-50 self-stretch overflow-y-auto">
+    <aside className="flex flex-col w-64 min-w-[256px] border-r border-slate-200 bg-slate-50 overflow-y-auto" style={{ height: "100%" }}>
       <Link
         href="/academy/courses"
         className="flex items-center gap-2 px-4 py-2.5 bg-indigo-50 hover:bg-indigo-100 transition-colors text-indigo-700 font-semibold text-xs shrink-0 border-b border-indigo-100"
@@ -80,7 +80,7 @@ export function CourseSidebar({
       <div className="p-5 border-b border-slate-200 space-y-3">
         <div className="flex items-start justify-between gap-2">
           <div>
-            <h2 className="text-base font-semibold text-slate-900 leading-snug">{courseTitle}</h2>
+            <h2 className="text-sm font-semibold text-slate-900 leading-snug">{courseTitle}</h2>
           </div>
           {onClose && (
             <button
@@ -99,7 +99,7 @@ export function CourseSidebar({
         />
       </div>
 
-      <nav className="flex-1 overflow-y-auto py-2" aria-label="Course navigation">
+      <nav className="py-2" aria-label="Course navigation">
         {tracks.map((track) => {
           const isOpen = openTrackIds.has(track.id);
           const trackDone = track.lessons.every((l) => completedIds.has(l.id));
@@ -108,7 +108,7 @@ export function CourseSidebar({
             <div key={track.id}>
               <button
                 onClick={() => toggleTrack(track.id)}
-                className="flex items-center gap-2 w-full px-4 py-2.5 text-sm font-medium text-slate-600 hover:bg-white hover:text-slate-900 transition-colors"
+                className="flex items-center gap-2 w-full px-4 py-2 text-xs font-medium text-slate-600 hover:bg-white hover:text-slate-900 transition-colors"
                 aria-expanded={isOpen}
               >
                 <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${PILLAR_DOT[track.pillar]}`} />
@@ -127,7 +127,7 @@ export function CourseSidebar({
                         <button
                           onClick={() => onSelectLesson(lesson.id)}
                           ref={isActive ? (el) => el?.scrollIntoView({ block: "nearest" }) : null}
-                          className={`flex items-center gap-2 w-full pl-9 pr-4 py-2 text-sm transition-colors text-left ${
+                          className={`flex items-center gap-2 w-full pl-8 pr-3 py-1.5 text-xs transition-colors text-left ${
                             isActive
                               ? "bg-white text-slate-900 font-semibold"
                               : "text-slate-500 hover:bg-white hover:text-slate-800"

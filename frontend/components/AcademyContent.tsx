@@ -66,12 +66,12 @@ const components: PortableTextComponents = {
 
   block: {
     normal: ({ children }) => (
-      <p className="text-[17px] text-slate-700 leading-8 mb-8">{children}</p>
+      <p className="text-[15px] text-slate-700 leading-7 mb-5">{children}</p>
     ),
 
     h1: ({ children, value }) => {
       const text = (value as BlockValue).children?.map((c) => c.text).join("") || "";
-      return <h1 id={slugify(text)} className="scroll-mt-24 text-3xl font-black text-slate-900 mt-14 mb-5 leading-tight">{children}</h1>;
+      return <h1 id={slugify(text)} className="scroll-mt-24 text-2xl font-black text-slate-900 mt-10 mb-4 leading-tight">{children}</h1>;
     },
 
     // Section opener — full visual break, feels like a chapter
@@ -84,7 +84,7 @@ const components: PortableTextComponents = {
             <span className="text-[9px] font-black text-slate-400 uppercase tracking-[0.25em] px-2">Section</span>
             <div className="h-px flex-1 bg-slate-200" />
           </div>
-          <h2 id={slugify(text)} className="scroll-mt-24 text-2xl font-black text-slate-900 leading-snug border-l-4 border-indigo-500 pl-4">
+          <h2 id={slugify(text)} className="scroll-mt-24 text-xl font-black text-slate-900 leading-snug border-l-4 border-indigo-500 pl-4">
             {children}
           </h2>
         </div>
@@ -142,19 +142,19 @@ const components: PortableTextComponents = {
   },
 
   list: {
-    bullet: ({ children }) => <ul className="my-7 space-y-4">{children}</ul>,
-    number: ({ children }) => <ol className="my-7 space-y-4">{children}</ol>,
+    bullet: ({ children }) => <ul className="my-4 space-y-2">{children}</ul>,
+    number: ({ children }) => <ol className="my-4 space-y-2">{children}</ol>,
   },
 
   listItem: {
     bullet: ({ children }) => (
-      <li className="flex gap-4 text-[17px] text-slate-700 leading-8">
-        <span className="mt-3 w-2 h-2 rounded-full bg-indigo-500 shrink-0" />
+      <li className="flex gap-3 text-[15px] text-slate-700 leading-7">
+        <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0" />
         <span>{children}</span>
       </li>
     ),
     number: ({ children }) => (
-      <li className="flex gap-4 text-[17px] text-slate-700 leading-8">
+      <li className="flex gap-3 text-[15px] text-slate-700 leading-7">
         <span>{children}</span>
       </li>
     ),
