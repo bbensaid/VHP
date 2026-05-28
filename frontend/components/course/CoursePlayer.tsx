@@ -29,7 +29,10 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
   const [courseComplete, setCourseComplete] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-  // ── Resizable content padding ─────────────────────────────────────────────
+  // ── Resizable content padding ──────────────────────────────────────────────
+  // leftPad / rightPad control how much horizontal padding is on the scroll div.
+  // The drag handles are position:absolute on the NON-SCROLLING outer panel,
+  // so they never scroll away and are always grabbable.
   const [leftPad, setLeftPad] = useState(40);
   const [rightPad, setRightPad] = useState(40);
   const dragSide = useRef<"left" | "right" | null>(null);
@@ -45,17 +48,18 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
       else setRightPad(next);
     };
     const onUp = () => {
-      if (!dragSide.current) return;
       dragSide.current = null;
       document.body.style.cursor = "";
       document.body.style.userSelect = "";
     };
     window.addEventListener("mousemove", onMove);
     window.addEventListener("mouseup", onUp);
-    return () => { window.removeEventListener("mousemove", onMove); window.removeEventListener("mouseup", onUp); };
+    return () => {
+      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("mouseup", onUp);
+    };
   }, []);
 
-  // Track completed lessons locally so progress updates instantly on click.
   const [completedIds, setCompletedIds] = useState<Set<string>>(
     () => new Set(allLessons.filter((l) => l.progress?.status === "completed").map((l) => l.id))
   );
@@ -63,7 +67,6 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
   const currentIndex = allLessons.findIndex((l) => l.id === currentLesson?.id);
   const hasPrev = currentIndex > 0;
   const hasNext = currentIndex < allLessons.length - 1;
-
   const totalLessons = allLessons.length;
   const completedLessons = completedIds.size;
   const progressPercent = totalLessons > 0 ? (completedLessons / totalLessons) * 100 : 0;
@@ -71,7 +74,6 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
   const scrollToTop = useCallback(() => {
     scrollContainerRef.current?.scrollTo({ top: 0, behavior: "instant" });
   }, []);
-
 
   const handleSelectLesson = useCallback(
     (lessonId: string) => {
@@ -126,8 +128,7 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
         />
       )}
 
-      {/* Course nav sidebar — hidden on mobile unless toggled.
-          top-14 offsets below the sticky app header on mobile. */}
+      {/* Course nav sidebar */}
       <div className={`
         fixed top-14 bottom-0 left-0 z-50 lg:static lg:top-auto lg:bottom-auto lg:z-auto
         transition-transform duration-300
@@ -147,29 +148,46 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
         />
       </div>
 
-      <div className="flex flex-1 overflow-hidden min-w-0 relative">
-        {/* ── Drag handles — absolute, full-height, never scroll ─────── */}
-        {!courseComplete && (<>
-          <div
-            onMouseDown={(e) => { e.preventDefault(); dragSide.current = "left"; dragStartX.current = e.clientX; dragStartPad.current = leftPad; document.body.style.cursor = "col-resize"; document.body.style.userSelect = "none"; }}
-            className="absolute top-0 bottom-0 left-0 z-10 w-3 cursor-col-resize group flex items-center justify-center"
-            title="Drag to resize"
-          >
-            <div className="w-1 h-16 rounded-full bg-slate-300 group-hover:bg-sky-400 group-active:bg-sky-500 transition-colors" />
-          </div>
-          <div
-            onMouseDown={(e) => { e.preventDefault(); dragSide.current = "right"; dragStartX.current = e.clientX; dragStartPad.current = rightPad; document.body.style.cursor = "col-resize"; document.body.style.userSelect = "none"; }}
-            className="absolute top-0 bottom-0 right-0 z-10 w-3 cursor-col-resize group flex items-center justify-center"
-            title="Drag to resize"
-          >
-            <div className="w-1 h-16 rounded-full bg-slate-300 group-hover:bg-sky-400 group-active:bg-sky-500 transition-colors" />
-          </div>
-        </>)}
+      {/* ── Content panel — position:relative so absolute handles are anchored here ── */}
+      <div className="relative flex flex-col flex-1 overflow-hidden min-w-0">
 
-        {/* ── Inner column: top bar + scroll + bottom bar ───────────── */}
-        <div className="flex flex-col flex-1 overflow-hidden min-w-0">
+        {/* LEFT drag handle — floats at the current left content edge */}
+        {!courseComplete && (
+          <div
+            onMouseDown={(e) => {
+              e.preventDefault();
+              dragSide.current = "left";
+              dragStartX.current = e.clientX;
+              dragStartPad.current = leftPad;
+              document.body.style.cursor = "col-resize";
+              document.body.style.userSelect = "none";
+            }}
+            className="absolute top-0 bottom-0 z-20 flex items-center justify-center cursor-col-resize group"
+            style={{ left: leftPad - 24, width: 12 }}
+          >
+            <div className="w-1.5 h-16 rounded-full bg-slate-300 group-hover:bg-sky-500 transition-colors" />
+          </div>
+        )}
+
+        {/* RIGHT drag handle — floats at the current right content edge */}
+        {!courseComplete && (
+          <div
+            onMouseDown={(e) => {
+              e.preventDefault();
+              dragSide.current = "right";
+              dragStartX.current = e.clientX;
+              dragStartPad.current = rightPad;
+              document.body.style.cursor = "col-resize";
+              document.body.style.userSelect = "none";
+            }}
+            className="absolute top-0 bottom-0 z-20 flex items-center justify-center cursor-col-resize group"
+            style={{ right: rightPad - 6, width: 12 }}
+          >
+            <div className="w-1.5 h-16 rounded-full bg-slate-300 group-hover:bg-sky-500 transition-colors" />
+          </div>
+        )}
+
         {courseComplete ? (
-          /* ── Course Completion Screen ───────────────────────────────── */
           <div className="flex-1 overflow-y-auto flex flex-col items-center justify-center px-6 py-12 bg-linear-to-b from-white to-sky-50">
             <div className="max-w-lg w-full text-center space-y-6">
               <div className="flex justify-center">
@@ -184,7 +202,6 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
                   You&apos;ve completed all {totalLessons} lessons. Great work advancing your healthcare knowledge.
                 </p>
               </div>
-
               <div className="flex items-center justify-center gap-8 py-4 border-y border-slate-200">
                 <div className="text-center">
                   <p className="text-2xl font-black text-slate-900">{totalLessons}</p>
@@ -199,7 +216,6 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
                   <p className="text-xs text-slate-500 uppercase tracking-wide">Complete</p>
                 </div>
               </div>
-
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link
                   href="/academy/tracks"
@@ -209,11 +225,7 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
                   Browse More Courses
                 </Link>
                 <button
-                  onClick={() => {
-                    setCourseComplete(false);
-                    setCurrentLesson(allLessons[0]);
-                    scrollToTop();
-                  }}
+                  onClick={() => { setCourseComplete(false); setCurrentLesson(allLessons[0]); scrollToTop(); }}
                   className="flex items-center justify-center gap-2 px-5 py-2.5 border border-slate-200 text-slate-700 rounded-xl font-bold hover:bg-slate-50 transition-colors text-sm"
                 >
                   <ArrowLeft className="w-4 h-4" />
@@ -224,60 +236,59 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
           </div>
         ) : (
           <>
-        {/* Top bar */}
-        <div className="flex items-center gap-3 px-4 md:px-6 py-3 border-b border-slate-200 bg-white">
-          {/* Mobile menu toggle */}
-          <button
-            onClick={() => setMobileSidebarOpen(true)}
-            className="lg:hidden p-1.5 rounded-md hover:bg-slate-100 text-slate-500 shrink-0"
-            aria-label="Open course navigation"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-          <PillarBadge pillar={currentLesson.pillar} size="xs" />
-          <span className="text-sm font-medium text-slate-900 truncate">{currentLesson.title}</span>
-          <span className="ml-auto text-xs text-slate-400 shrink-0">{currentIndex + 1} / {totalLessons}</span>
-        </div>
+            {/* Top bar */}
+            <div className="flex items-center gap-3 px-4 md:px-6 py-3 border-b border-slate-200 bg-white shrink-0">
+              <button
+                onClick={() => setMobileSidebarOpen(true)}
+                className="lg:hidden p-1.5 rounded-md hover:bg-slate-100 text-slate-500 shrink-0"
+                aria-label="Open course navigation"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+              <PillarBadge pillar={currentLesson.pillar} size="xs" />
+              <span className="text-sm font-medium text-slate-900 truncate">{currentLesson.title}</span>
+              <span className="ml-auto text-xs text-slate-400 shrink-0">{currentIndex + 1} / {totalLessons}</span>
+            </div>
 
-        <div
-          ref={scrollContainerRef}
-          className="flex-1 overflow-y-auto overscroll-contain py-6"
-          style={{ paddingLeft: leftPad, paddingRight: rightPad }}
-        >
-          <LessonView
-            lesson={currentLesson}
-            onMarkComplete={handleMarkComplete}
-            onQuizPass={handleQuizPass}
-            onAudioUpload={onAudioUpload}
-            isCompleted={completedIds.has(currentLesson.id)}
-          />
-        </div>
+            {/* Scrollable content — padding controlled by drag handles */}
+            <div
+              ref={scrollContainerRef}
+              className="flex-1 overflow-y-auto overscroll-contain py-6"
+              style={{ paddingLeft: leftPad, paddingRight: rightPad }}
+            >
+              <LessonView
+                lesson={currentLesson}
+                onMarkComplete={handleMarkComplete}
+                onQuizPass={handleQuizPass}
+                onAudioUpload={onAudioUpload}
+                isCompleted={completedIds.has(currentLesson.id)}
+              />
+            </div>
 
-        {/* Bottom nav bar */}
-        <div className="flex items-center gap-3 px-4 md:px-6 py-3 border-t border-slate-200 bg-white">
-          <button
-            onClick={() => hasPrev && handleSelectLesson(allLessons[currentIndex - 1].id)}
-            disabled={!hasPrev}
-            className="flex items-center gap-1.5 px-3 py-2 text-sm border border-slate-200 rounded-md hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
-          >
-            <ChevronLeft className="w-4 h-4" /> <span className="hidden sm:inline">Previous</span>
-          </button>
-          <div className="flex-1">
-            <CourseProgressBar percent={progressPercent} completedLessons={completedLessons} totalLessons={totalLessons} />
-          </div>
-          <button
-            onClick={() => hasNext && handleSelectLesson(allLessons[currentIndex + 1].id)}
-            disabled={!hasNext}
-            className="flex items-center gap-1.5 px-3 py-2 text-sm bg-sky-600 text-white rounded-md hover:bg-sky-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
-          >
-            <span className="hidden sm:inline">Next</span> <ChevronRight className="w-4 h-4" />
-          </button>
-        </div>
+            {/* Bottom nav bar */}
+            <div className="flex items-center gap-3 px-4 md:px-6 py-3 border-t border-slate-200 bg-white shrink-0">
+              <button
+                onClick={() => hasPrev && handleSelectLesson(allLessons[currentIndex - 1].id)}
+                disabled={!hasPrev}
+                className="flex items-center gap-1.5 px-3 py-2 text-sm border border-slate-200 rounded-md hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+              >
+                <ChevronLeft className="w-4 h-4" /> <span className="hidden sm:inline">Previous</span>
+              </button>
+              <div className="flex-1">
+                <CourseProgressBar percent={progressPercent} completedLessons={completedLessons} totalLessons={totalLessons} />
+              </div>
+              <button
+                onClick={() => hasNext && handleSelectLesson(allLessons[currentIndex + 1].id)}
+                disabled={!hasNext}
+                className="flex items-center gap-1.5 px-3 py-2 text-sm bg-sky-600 text-white rounded-md hover:bg-sky-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+              >
+                <span className="hidden sm:inline">Next</span> <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
           </>
         )}
-        </div>{/* end inner flex-col */}
       </div>
     </div>
   );
