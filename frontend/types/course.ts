@@ -106,6 +106,7 @@ export interface CalloutBlock {
 
 export interface KeyStatBlock {
   type: "key_stat";
+  heading?: string;
   stats: Array<{
     value: string;
     label: string;
