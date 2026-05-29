@@ -36,7 +36,7 @@ export default function VoiceFab() {
 
   return (
     <div
-      style={{ position: "fixed", bottom: "5rem", left: "50%", transform: "translateX(-50%)", zIndex: 99999 }}
+      style={{ position: "fixed", top: "0.6rem", right: "13rem", zIndex: 99999 }}
       className="flex flex-col items-center gap-2 select-none"
     >
       {/* Transcript pill */}

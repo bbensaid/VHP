@@ -1,5 +1,91 @@
 "use client";
 
+import { useState } from "react";
+
+// ── Interactive Knowledge Check widget ────────────────────────────────────────
+function KnowledgeCheckWidget({
+  question,
+  hint,
+  answer,
+  explanation,
+  options,
+}: {
+  question: string;
+  hint?: string;
+  answer?: string;
+  explanation?: string;
+  options?: Array<{ _key: string; text: string; isCorrect: boolean }>;
+}) {
+  const [selected, setSelected] = useState<string | null>(null);
+  const [revealed, setRevealed] = useState(false);
+
+  const correctKey = options?.find((o) => o.isCorrect)?._key;
+  const isCorrect = selected !== null && selected === correctKey;
+
+  return (
+    <div className="my-10 rounded-xl border border-amber-200 overflow-hidden shadow-sm">
+      <div className="bg-amber-100 px-5 py-2.5 flex items-center gap-2 border-b border-amber-200">
+        <span className="text-base">🧠</span>
+        <span className="text-[10px] font-black text-amber-700 uppercase tracking-[0.2em]">Knowledge Check</span>
+      </div>
+      <div className="bg-white px-6 py-6 space-y-5">
+        <p className="text-[17px] font-bold text-slate-800 leading-7">{question}</p>
+        {hint && <p className="text-sm text-amber-700 italic">Hint: {hint}</p>}
+
+        {options && options.length > 0 ? (
+          <div className="space-y-2.5">
+            {options.map((opt) => {
+              const isSelected = selected === opt._key;
+              const showResult = selected !== null;
+              const isRight = opt.isCorrect;
+              let style = "border-slate-200 bg-white hover:bg-slate-50 text-slate-700 cursor-pointer";
+              if (showResult && isSelected && isRight)  style = "border-emerald-500 bg-emerald-50 text-emerald-900 font-bold cursor-default";
+              if (showResult && isSelected && !isRight) style = "border-rose-400 bg-rose-50 text-rose-900 cursor-default";
+              if (showResult && !isSelected && isRight) style = "border-emerald-300 bg-emerald-50/50 text-emerald-800 cursor-default";
+              if (showResult && !isSelected && !isRight) style = "border-slate-100 bg-white text-slate-400 cursor-default";
+              return (
+                <button
+                  key={opt._key}
+                  onClick={() => { if (!selected) setSelected(opt._key); }}
+                  className={`w-full text-left px-4 py-3 rounded-lg border-2 text-[15px] leading-6 transition-all ${style}`}
+                >
+                  {showResult && isRight && <span className="mr-2 text-emerald-600 font-black">✓</span>}
+                  {showResult && isSelected && !isRight && <span className="mr-2 text-rose-500 font-black">✗</span>}
+                  {opt.text}
+                </button>
+              );
+            })}
+            {selected && (explanation || answer) && (
+              <div className="mt-4 pt-4 border-t border-amber-100">
+                <p className="text-[10px] font-black text-amber-600 uppercase tracking-[0.2em] mb-2">
+                  {isCorrect ? "✓ Correct!" : "Not quite —"} Explanation
+                </p>
+                <p className="text-[15px] text-slate-700 leading-7">{explanation || answer}</p>
+              </div>
+            )}
+          </div>
+        ) : (
+          <div className="border-t border-amber-100 pt-5">
+            {!revealed ? (
+              <button
+                onClick={() => setRevealed(true)}
+                className="px-4 py-2 bg-amber-400 hover:bg-amber-500 text-amber-950 font-bold text-sm rounded-lg transition-colors"
+              >
+                Reveal Answer
+              </button>
+            ) : (
+              <>
+                <p className="text-[10px] font-black text-amber-600 uppercase tracking-[0.2em] mb-2">Answer</p>
+                <p className="text-[16px] text-slate-700 leading-7">{answer}</p>
+              </>
+            )}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 // components/AcademyContent.tsx
 // Educational PortableText renderer for Academy course modules.
 // Every block type is designed to serve the learner — not the publisher.
@@ -80,9 +166,9 @@ const components: PortableTextComponents = {
       return (
         <div className="mt-16 mb-7">
           <div className="flex items-center gap-3 mb-5">
-            <div className="h-px flex-1 bg-slate-200" />
-            <span className="text-[9px] font-black text-slate-400 uppercase tracking-[0.25em] px-2">Section</span>
-            <div className="h-px flex-1 bg-slate-200" />
+            <div className="h-px flex-1 bg-indigo-300" />
+            <span className="text-[9px] font-black text-indigo-400 uppercase tracking-[0.25em] px-2">Section</span>
+            <div className="h-px flex-1 bg-indigo-300" />
           </div>
           <h2 id={slugify(text)} className="scroll-mt-24 text-xl font-black text-slate-900 leading-snug border-l-4 border-indigo-500 pl-4">
             {children}
@@ -270,92 +356,106 @@ const components: PortableTextComponents = {
 
     // ── Pattern 1: Left-border accent (teal) ──────────────────────────────────
     // 🌍 Real-World Example — teal left border, editorial structure
-    exampleBlock: ({ value }) => (
-      <div className="my-10 border-l-4 border-teal-500 bg-teal-50 rounded-r-xl px-6 py-5 shadow-sm">
-        <div className="flex items-center gap-2 mb-3">
-          <span className="text-base leading-none">🌍</span>
-          <span className="text-[10px] font-black text-teal-600 uppercase tracking-[0.2em]">
-            {value.eyebrow || "Real-World Example"}
-          </span>
-        </div>
-        {value.title && (
-          <h4 className="font-black text-teal-900 text-lg leading-snug mb-2">{value.title}</h4>
-        )}
-        {value.body && (
-          <p className="text-[16px] text-teal-800 leading-7">{value.body}</p>
-        )}
-        {value.outcome && (
-          <div className="flex items-start gap-2.5 mt-4 pt-3 border-t border-teal-200">
-            <span className="text-emerald-500 font-black text-lg shrink-0 mt-0.5">→</span>
-            <p className="text-sm font-bold text-teal-900 leading-relaxed">{value.outcome}</p>
+    exampleBlock: ({ value }) => {
+      const body = value.content || value.body || "";
+      return (
+        <div className="my-10 border-l-4 border-teal-500 bg-teal-50 rounded-r-xl px-6 py-6 shadow-sm">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-base leading-none">🌍</span>
+            <span className="text-[10px] font-black text-teal-600 uppercase tracking-[0.2em]">
+              {value.eyebrow || "Real-World Example"}
+            </span>
           </div>
-        )}
-        {value.source && (
-          <p className="text-xs text-teal-600 italic mt-2">Source: {value.source}</p>
-        )}
-      </div>
-    ),
-
-    // ── Pattern 3: Pure typography ────────────────────────────────────────────
-    // 🔗 Analogy — no box, italic pullquote style (distinct from Key Concept)
-    analogyBlock: ({ value }) => (
-      <div className="my-12 pl-8 relative">
-        <span className="absolute -top-4 left-0 text-[5rem] font-black text-slate-200 leading-none select-none pointer-events-none">&ldquo;</span>
-        <div className="flex items-center gap-2 mb-2 relative z-10">
-          <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Analogy</span>
-          {value.concept && (
-            <span className="text-xs text-slate-400">— {value.concept}</span>
+          {value.title && (
+            <h4 className="font-black text-teal-900 text-lg leading-snug mb-3">{value.title}</h4>
+          )}
+          {body && (
+            <div className="space-y-2">
+              {body.split("\n").filter(Boolean).map((line: string, i: number) => (
+                <p key={i} className="text-[15px] text-teal-800 leading-7">{line}</p>
+              ))}
+            </div>
+          )}
+          {value.outcome && (
+            <div className="flex items-start gap-2.5 mt-4 pt-3 border-t border-teal-200">
+              <span className="text-emerald-500 font-black text-lg shrink-0 mt-0.5">→</span>
+              <p className="text-sm font-bold text-teal-900 leading-relaxed">{value.outcome}</p>
+            </div>
+          )}
+          {value.source && (
+            <p className="text-xs text-teal-600 italic mt-3">Source: {value.source}</p>
           )}
         </div>
-        {value.analogy && (
-          <p className="relative z-10 ty-hero text-slate-600 italic leading-9 font-medium mb-3">{value.analogy}</p>
-        )}
-        {value.bridge && (
-          <div className="mt-6 bg-slate-50 border border-slate-200 rounded-lg px-5 py-4">
-            <p className="text-[13px] text-slate-600 leading-7">{value.bridge}</p>
+      );
+    },
+
+    // ── Pattern 3: Analogy — violet tinted card with large quote mark ────────
+    analogyBlock: ({ value }) => (
+      <div className="my-12 bg-violet-50 border border-violet-200 rounded-xl px-7 py-6 shadow-sm relative overflow-hidden">
+        <span className="absolute -top-2 -left-1 text-[7rem] font-black text-violet-200 leading-none select-none pointer-events-none">&ldquo;</span>
+        <div className="relative z-10">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-base leading-none">🔗</span>
+            <span className="text-[10px] font-black text-violet-600 uppercase tracking-[0.2em]">Analogy</span>
+            {value.concept && (
+              <span className="text-xs text-violet-500 font-medium">— {value.concept}</span>
+            )}
           </div>
-        )}
-        <div className="mt-4 h-0.5 w-8 bg-slate-200 rounded-full" />
+          {value.analogy && (
+            <p className="text-[16px] text-violet-900 italic leading-8 font-medium mb-3">{value.analogy}</p>
+          )}
+          {value.bridge && (
+            <div className="mt-4 bg-white border border-violet-200 rounded-lg px-5 py-4">
+              <p className="text-[14px] text-violet-800 leading-7">{value.bridge}</p>
+            </div>
+          )}
+        </div>
       </div>
     ),
 
     // ── Pattern 5: Structural / Data ──────────────────────────────────────────
-    // ⚖️ Comparison Table — lighter title bar, semantic column colors preserved
+    // ⚖️ Comparison — two-column side-by-side with bullet points
     comparisonBlock: ({ value }) => {
-      type Row = { aspect: string; left: string; right: string };
-      const rows: Row[] = value.rows || [];
+      const left:  { label?: string; points?: string[] } = value.left  || {};
+      const right: { label?: string; points?: string[] } = value.right || {};
+      const leftPts:  string[] = left.points  || [];
+      const rightPts: string[] = right.points || [];
       return (
         <div className="my-10 overflow-hidden rounded-xl shadow-md border border-slate-200">
           {value.title && (
-            <div className="bg-slate-100 px-5 py-3 border-b border-slate-200 text-center">
-              <span className="text-[10px] font-black text-slate-600 uppercase tracking-[0.2em]">{value.title}</span>
+            <div className="bg-rose-50 px-5 py-3 border-b border-slate-200 text-center">
+              <span className="text-[10px] font-black text-rose-600 uppercase tracking-[0.2em]">{value.title}</span>
             </div>
           )}
-          <div className="overflow-x-auto bg-white">
-            <table className="w-full border-collapse text-sm">
-              <thead>
-                <tr>
-                  <th className="bg-slate-50 px-5 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest text-left w-1/4 border-b-2 border-slate-200">
-                    Dimension
-                  </th>
-                  <th className="bg-rose-500 px-5 py-4 text-[10px] font-black text-white uppercase tracking-widest text-center border-b-2 border-rose-600 w-[37.5%]">
-                    ✗ {value.leftLabel || "Before"}
-                  </th>
-                  <th className="bg-emerald-600 px-5 py-4 text-[10px] font-black text-white uppercase tracking-widest text-center border-b-2 border-emerald-700 w-[37.5%]">
-                    ✓ {value.rightLabel || "After"}
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((row, i) => (
-                  <tr key={row.aspect} className={`border-b border-slate-100 ${i % 2 === 1 ? "bg-slate-50/40" : "bg-white"}`}>
-                    <td className="px-5 py-4 font-bold text-slate-700 text-xs uppercase tracking-wide">{row.aspect}</td>
-                    <td className="px-5 py-4 text-slate-600 text-center bg-rose-50/30">{row.left}</td>
-                    <td className="px-5 py-4 text-slate-700 font-medium text-center bg-emerald-50/30">{row.right}</td>
-                  </tr>
+          <div className="grid grid-cols-2">
+            {/* Left column */}
+            <div className="bg-rose-50 border-r border-slate-200 px-5 py-5">
+              <p className="text-[10px] font-black text-rose-600 uppercase tracking-[0.2em] mb-4">
+                {left.label || "Option A"}
+              </p>
+              <ul className="space-y-2.5">
+                {leftPts.map((pt, i) => (
+                  <li key={i} className="flex gap-2.5 text-[14px] text-rose-900 leading-6">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0" />
+                    {pt}
+                  </li>
                 ))}
-              </tbody>
-            </table>
+              </ul>
+            </div>
+            {/* Right column */}
+            <div className="bg-emerald-50 px-5 py-5">
+              <p className="text-[10px] font-black text-emerald-700 uppercase tracking-[0.2em] mb-4">
+                {right.label || "Option B"}
+              </p>
+              <ul className="space-y-2.5">
+                {rightPts.map((pt, i) => (
+                  <li key={i} className="flex gap-2.5 text-[14px] text-emerald-900 leading-6">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+                    {pt}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       );
@@ -369,9 +469,9 @@ const components: PortableTextComponents = {
       return (
         <div className="my-10 bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
           {value.title && (
-            <div className="bg-slate-50 border-b border-slate-200 px-6 py-4">
-              <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-0.5">Process</p>
-              <p className="font-black text-slate-800 text-base">{value.title}</p>
+            <div className="bg-indigo-50 border-b border-indigo-100 px-6 py-4">
+              <p className="text-[10px] font-black text-indigo-400 uppercase tracking-[0.2em] mb-0.5">Process</p>
+              <p className="font-black text-indigo-900 text-base">{value.title}</p>
             </div>
           )}
           <div className="p-6 space-y-0">
@@ -401,25 +501,20 @@ const components: PortableTextComponents = {
     },
 
     // ── Pattern 4: Light-band card ────────────────────────────────────────────
-    // ❓ Knowledge Check — light amber header band, white body (quiz feel)
-    knowledgeCheck: ({ value }) => (
-      <div className="my-10 rounded-xl border border-amber-200 overflow-hidden shadow-sm">
-        <div className="bg-amber-100 px-5 py-2.5 flex items-center gap-2 border-b border-amber-200">
-          <span className="text-base">🧠</span>
-          <span className="text-[10px] font-black text-amber-700 uppercase tracking-[0.2em]">Knowledge Check</span>
-        </div>
-        <div className="bg-white px-6 py-6 space-y-5">
-          <p className="text-[17px] font-bold text-slate-800 leading-7">{value.question}</p>
-          {value.hint && (
-            <p className="text-sm text-amber-700 italic">Hint: {value.hint}</p>
-          )}
-          <div className="border-t border-amber-100 pt-5">
-            <p className="text-[10px] font-black text-amber-600 uppercase tracking-[0.2em] mb-2">Answer</p>
-            <p className="text-[16px] text-slate-700 leading-7">{value.answer}</p>
-          </div>
-        </div>
-      </div>
-    ),
+    // ❓ Knowledge Check — interactive multiple-choice quiz
+    knowledgeCheck: ({ value }) => {
+      const opts: Array<{ _key: string; text: string; isCorrect: boolean }> = value.options || [];
+      const hasOptions = opts.length > 0;
+      return (
+        <KnowledgeCheckWidget
+          question={value.question}
+          hint={value.hint}
+          answer={value.answer}
+          explanation={value.explanation}
+          options={hasOptions ? opts : undefined}
+        />
+      );
+    },
 
     // ── Pattern 1: Left-border accent (emerald) ───────────────────────────────
     // ✅ Key Takeaways — emerald left border, summary list
@@ -445,26 +540,22 @@ const components: PortableTextComponents = {
       );
     },
 
-    // ── Pattern 6: Two-tone split ─────────────────────────────────────────────
-    // ⚠️ Misconception Buster — inline badge, rose/emerald two-tone body
-    warningBlock: ({ value }) => (
-      <div className="my-10 rounded-xl overflow-hidden border border-rose-200 shadow-sm">
-        <div className="bg-rose-50 px-6 py-4">
-          <div className="flex items-center gap-2 mb-3">
+    // ── Pattern 6: Warning / Important Note ──────────────────────────────────
+    warningBlock: ({ value }) => {
+      const title   = value.title   || value.misconception || "Important";
+      const message = value.message || value.reality       || "";
+      return (
+        <div className="my-10 rounded-xl overflow-hidden border border-amber-300 shadow-sm">
+          <div className="bg-amber-50 px-6 py-3 flex items-center gap-2 border-b border-amber-200">
             <span className="text-base leading-none">⚠️</span>
-            <span className="text-[10px] font-black text-rose-600 uppercase tracking-[0.2em]">Common Misconception</span>
+            <span className="text-[10px] font-black text-amber-700 uppercase tracking-[0.2em]">{title}</span>
           </div>
-          <div className="flex gap-3">
-            <span className="text-rose-500 font-black text-lg shrink-0 mt-0.5">✗</span>
-            <p className="text-[15px] text-rose-900 leading-7 line-through decoration-rose-400">{value.misconception}</p>
+          <div className="bg-white px-6 py-5">
+            <p className="text-[15px] text-slate-700 leading-7">{message}</p>
           </div>
         </div>
-        <div className="bg-emerald-50 px-6 py-4 border-t border-rose-100 flex gap-3">
-          <span className="text-emerald-600 font-black text-lg shrink-0 mt-0.5">✓</span>
-          <p className="text-[15px] text-emerald-900 font-medium leading-7">{value.reality}</p>
-        </div>
-      </div>
-    ),
+      );
+    },
 
     video:   VideoBlock,
     youtube: VideoBlock,
@@ -473,5 +564,51 @@ const components: PortableTextComponents = {
 };
 
 export default function AcademyContent({ body }: { body: PortableTextBlock[] }) {
-  return <PortableText value={body} components={components} />;
+  // Pre-compute section numbers from the body array so SSR and client agree
+  const sectionNumbers: Record<string, number> = {};
+  let n = 0;
+  for (const block of body) {
+    const b = block as PortableTextBlock & { style?: string; _key?: string };
+    if (b.style === "h2") {
+      const text = (b as BlockValue).children?.map((c) => c.text).join("") || "";
+      if (text.toLowerCase() !== "sources") {
+        n += 1;
+        if (b._key) sectionNumbers[b._key] = n;
+      }
+    }
+  }
+
+  const numberedComponents: PortableTextComponents = {
+    ...components,
+    block: {
+      ...components.block,
+      h2: ({ children, value }) => {
+        const text = (value as BlockValue).children?.map((c) => c.text).join("") || "";
+        if (text.toLowerCase() === "sources") {
+          return (
+            <div className="mt-14 mb-3 pt-6 border-t border-slate-200">
+              <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.25em]">Sources</p>
+            </div>
+          );
+        }
+        const num = sectionNumbers[(value as PortableTextBlock & { _key?: string })._key || ""] ?? "";
+        return (
+          <div className="mt-16 mb-7">
+            <div className="flex items-center gap-3 mb-5">
+              <div className="h-px flex-1 bg-indigo-300" />
+              <span className="text-[9px] font-black text-indigo-400 uppercase tracking-[0.25em] px-2">
+                Section #{num}
+              </span>
+              <div className="h-px flex-1 bg-indigo-300" />
+            </div>
+            <h2 id={slugify(text)} className="scroll-mt-24 text-xl font-black text-slate-900 leading-snug border-l-4 border-indigo-500 pl-4">
+              {children}
+            </h2>
+          </div>
+        );
+      },
+    },
+  };
+
+  return <PortableText value={body} components={numberedComponents} />;
 }

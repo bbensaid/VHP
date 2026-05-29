@@ -29,23 +29,28 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
   const [courseComplete, setCourseComplete] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-  // ── Resizable content padding ──────────────────────────────────────────────
-  // leftPad / rightPad control how much horizontal padding is on the scroll div.
-  // The drag handles are position:absolute on the NON-SCROLLING outer panel,
-  // so they never scroll away and are always grabbable.
-  const [leftPad, setLeftPad] = useState(40);
-  const [rightPad, setRightPad] = useState(40);
+  // ── Resizable content column width ────────────────────────────────────────
+  // contentWidth controls the max-width of the centered content column.
+  // Handles sit just outside the column edges and drag to resize.
+  const contentPanelRef = useRef<HTMLDivElement>(null);
+  const [contentWidth, setContentWidth] = useState(900);
   const dragSide = useRef<"left" | "right" | null>(null);
   const dragStartX = useRef(0);
-  const dragStartPad = useRef(0);
+  const dragStartWidth = useRef(0);
+
+  const WIDTH_MIN = 500;
+  const WIDTH_MAX = 1400;
 
   useEffect(() => {
     const onMove = (e: MouseEvent) => {
       if (!dragSide.current) return;
       const delta = e.clientX - dragStartX.current;
-      const next = Math.min(400, Math.max(8, dragStartPad.current + (dragSide.current === "left" ? delta : -delta)));
-      if (dragSide.current === "left") setLeftPad(next);
-      else setRightPad(next);
+      const next = Math.min(WIDTH_MAX, Math.max(WIDTH_MIN,
+        dragSide.current === "left"
+          ? dragStartWidth.current - delta * 2
+          : dragStartWidth.current + delta * 2
+      ));
+      setContentWidth(next);
     };
     const onUp = () => {
       dragSide.current = null;
@@ -148,44 +153,9 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
         />
       </div>
 
-      {/* ── Content panel — position:relative so absolute handles are anchored here ── */}
-      <div className="relative flex flex-col flex-1 overflow-hidden min-w-0">
+      {/* ── Content panel ── */}
+      <div ref={contentPanelRef} className="relative flex flex-col flex-1 overflow-hidden min-w-0">
 
-        {/* LEFT drag handle — floats at the current left content edge */}
-        {!courseComplete && (
-          <div
-            onMouseDown={(e) => {
-              e.preventDefault();
-              dragSide.current = "left";
-              dragStartX.current = e.clientX;
-              dragStartPad.current = leftPad;
-              document.body.style.cursor = "col-resize";
-              document.body.style.userSelect = "none";
-            }}
-            className="absolute top-0 bottom-0 z-20 flex items-center justify-center cursor-col-resize group"
-            style={{ left: leftPad - 24, width: 12 }}
-          >
-            <div className="w-1.5 h-16 rounded-full bg-slate-300 group-hover:bg-sky-500 transition-colors" />
-          </div>
-        )}
-
-        {/* RIGHT drag handle — floats at the current right content edge */}
-        {!courseComplete && (
-          <div
-            onMouseDown={(e) => {
-              e.preventDefault();
-              dragSide.current = "right";
-              dragStartX.current = e.clientX;
-              dragStartPad.current = rightPad;
-              document.body.style.cursor = "col-resize";
-              document.body.style.userSelect = "none";
-            }}
-            className="absolute top-0 bottom-0 z-20 flex items-center justify-center cursor-col-resize group"
-            style={{ right: rightPad - 6, width: 12 }}
-          >
-            <div className="w-1.5 h-16 rounded-full bg-slate-300 group-hover:bg-sky-500 transition-colors" />
-          </div>
-        )}
 
         {courseComplete ? (
           <div className="flex-1 overflow-y-auto flex flex-col items-center justify-center px-6 py-12 bg-linear-to-b from-white to-sky-50">
@@ -252,19 +222,57 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
               <span className="ml-auto text-xs text-slate-400 shrink-0">{currentIndex + 1} / {totalLessons}</span>
             </div>
 
-            {/* Scrollable content — padding controlled by drag handles */}
+            {/* Scrollable content */}
             <div
               ref={scrollContainerRef}
               className="flex-1 overflow-y-auto overscroll-contain py-6"
-              style={{ paddingLeft: leftPad, paddingRight: rightPad }}
             >
-              <LessonView
-                lesson={currentLesson}
-                onMarkComplete={handleMarkComplete}
-                onQuizPass={handleQuizPass}
-                onAudioUpload={onAudioUpload}
-                isCompleted={completedIds.has(currentLesson.id)}
-              />
+              <div className="flex items-stretch min-h-full">
+                {/* LEFT handle — always flush against content column */}
+                <div className="flex-1 flex justify-end items-start pt-32">
+                  <div
+                    onMouseDown={(e) => {
+                      e.preventDefault();
+                      dragSide.current = "left";
+                      dragStartX.current = e.clientX;
+                      dragStartWidth.current = contentWidth;
+                      document.body.style.cursor = "col-resize";
+                      document.body.style.userSelect = "none";
+                    }}
+                    className="w-3 flex items-center justify-center cursor-col-resize group h-16 sticky top-32"
+                  >
+                    <div className="w-1.5 h-16 rounded-full bg-slate-300 group-hover:bg-sky-500 transition-colors" />
+                  </div>
+                </div>
+
+                {/* Content column */}
+                <div style={{ width: contentWidth, flexShrink: 0, paddingLeft: 24, paddingRight: 24 }}>
+                  <LessonView
+                    lesson={currentLesson}
+                    onMarkComplete={handleMarkComplete}
+                    onQuizPass={handleQuizPass}
+                    onAudioUpload={onAudioUpload}
+                    isCompleted={completedIds.has(currentLesson.id)}
+                  />
+                </div>
+
+                {/* RIGHT handle — always flush against content column */}
+                <div className="flex-1 flex justify-start items-start pt-32">
+                  <div
+                    onMouseDown={(e) => {
+                      e.preventDefault();
+                      dragSide.current = "right";
+                      dragStartX.current = e.clientX;
+                      dragStartWidth.current = contentWidth;
+                      document.body.style.cursor = "col-resize";
+                      document.body.style.userSelect = "none";
+                    }}
+                    className="w-3 flex items-center justify-center cursor-col-resize group h-16 sticky top-32"
+                  >
+                    <div className="w-1.5 h-16 rounded-full bg-slate-300 group-hover:bg-sky-500 transition-colors" />
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Bottom nav bar */}
