@@ -117,7 +117,8 @@ export const blockContentType = defineType({
       fields: [
         { name: 'eyebrow',  type: 'string', title: 'Eyebrow (e.g. "Real-World Example", "Case Study")', initialValue: 'Real-World Example' },
         { name: 'title',    type: 'string', title: 'Title / Organization' },
-        { name: 'body',     type: 'text',   title: 'What happened (2–4 sentences)' },
+        { name: 'content',  type: 'text',   title: 'Content (primary — used by API writes)' },
+        { name: 'body',     type: 'text',   title: 'Body (legacy fallback)' },
         { name: 'outcome',  type: 'string', title: 'Measurable outcome (1 sentence)' },
         { name: 'source',   type: 'string', title: 'Source attribution' },
       ],
@@ -134,24 +135,25 @@ export const blockContentType = defineType({
       ],
     }),
 
-    // ── Comparison: old vs new, model A vs model B ────────────────────────────
+    // ── Comparison: two-column side-by-side with bullet points per side ──────
     defineArrayMember({
       type: 'object', name: 'comparisonBlock', title: 'Comparison Table',
       preview: { select: { title: 'title' }, prepare: ({ title }) => ({ title: `⚖️ Comparison: ${title || ''}` }) },
       fields: [
-        { name: 'title',      type: 'string', title: 'Title (optional)' },
-        { name: 'leftLabel',  type: 'string', title: 'Left column label (old/bad/FFS)' },
-        { name: 'rightLabel', type: 'string', title: 'Right column label (new/good/VBC)' },
+        { name: 'title', type: 'string', title: 'Title (optional)' },
         {
-          name: 'rows', type: 'array', title: 'Rows',
-          of: [{
-            type: 'object',
-            fields: [
-              { name: 'aspect', type: 'string', title: 'Dimension / aspect' },
-              { name: 'left',   type: 'string', title: 'Left value' },
-              { name: 'right',  type: 'string', title: 'Right value' },
-            ],
-          }],
+          name: 'left', type: 'object', title: 'Left column',
+          fields: [
+            { name: 'label',  type: 'string', title: 'Column label' },
+            { name: 'points', type: 'array',  title: 'Bullet points', of: [{ type: 'string' }] },
+          ],
+        },
+        {
+          name: 'right', type: 'object', title: 'Right column',
+          fields: [
+            { name: 'label',  type: 'string', title: 'Column label' },
+            { name: 'points', type: 'array',  title: 'Bullet points', of: [{ type: 'string' }] },
+          ],
         },
       ],
     }),
@@ -176,14 +178,25 @@ export const blockContentType = defineType({
       ],
     }),
 
-    // ── Knowledge Check: comprehension prompt with revealed answer ────────────
+    // ── Knowledge Check: interactive multiple-choice or revealed-answer ─────────
     defineArrayMember({
       type: 'object', name: 'knowledgeCheck', title: 'Knowledge Check',
       preview: { select: { title: 'question' }, prepare: ({ title }) => ({ title: `❓ Check: ${title?.slice(0, 50) || ''}` }) },
       fields: [
-        { name: 'question', type: 'text',   title: 'Question' },
-        { name: 'hint',     type: 'string', title: 'Hint (optional)' },
-        { name: 'answer',   type: 'text',   title: 'Full answer / explanation' },
+        { name: 'question',    type: 'text',   title: 'Question' },
+        { name: 'hint',        type: 'string', title: 'Hint (optional)' },
+        { name: 'answer',      type: 'text',   title: 'Revealed answer (used when no options)' },
+        { name: 'explanation', type: 'text',   title: 'Explanation shown after answering' },
+        {
+          name: 'options', type: 'array', title: 'Answer options (leave empty for open-ended)',
+          of: [{
+            type: 'object',
+            fields: [
+              { name: 'text',      type: 'string',  title: 'Option text' },
+              { name: 'isCorrect', type: 'boolean', title: 'Is this correct?' },
+            ],
+          }],
+        },
       ],
     }),
 
@@ -197,13 +210,13 @@ export const blockContentType = defineType({
       ],
     }),
 
-    // ── Misconception Buster: wrong belief → correct reality ──────────────────
+    // ── Warning / Important Note ──────────────────────────────────────────────
     defineArrayMember({
-      type: 'object', name: 'warningBlock', title: 'Common Misconception',
-      preview: { select: { title: 'misconception' }, prepare: ({ title }) => ({ title: `⚠️ Myth: ${title?.slice(0, 50) || ''}` }) },
+      type: 'object', name: 'warningBlock', title: 'Warning / Important Note',
+      preview: { select: { title: 'title' }, prepare: ({ title }) => ({ title: `⚠️ ${title?.slice(0, 50) || ''}` }) },
       fields: [
-        { name: 'misconception', type: 'text', title: '❌ The misconception (what people wrongly believe)' },
-        { name: 'reality',       type: 'text', title: '✅ The reality (the truth)' },
+        { name: 'title',   type: 'string', title: 'Title / label' },
+        { name: 'message', type: 'text',   title: 'Message body' },
       ],
     }),
   ],
