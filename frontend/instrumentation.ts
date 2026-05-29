@@ -5,19 +5,28 @@
  * Runs once in the Node.js process at server startup, before any request.
  *
  * Why this exists:
- *   AcademyModuleEngine (and other async server components) render in Node.js.
- *   React's dev-mode profiler calls performance.mark() at render start and
- *   performance.measure() at render end. When notFound() aborts a render,
- *   the end-timestamp can be numerically earlier than the start mark, causing
- *   Node.js (which implements the Web Performance API) to throw:
+ *   Async server components (LessonPage, AcademyModuleEngine, etc.) call
+ *   notFound() or redirect() to abort a render mid-flight. React's dev-mode
+ *   profiler calls performance.mark() at render start and performance.measure()
+ *   at render end. When the render is aborted, the end-timestamp can be
+ *   numerically earlier than the start mark, causing Node.js to throw:
  *
  *     "Failed to execute 'measure' on 'Performance':
- *      '​AcademyModuleEngine' cannot have a negative time stamp."
+ *      '​LessonPage' cannot have a negative time stamp."
  *
- *   Turbopack surfaces this Node.js DOMException as a full dev-overlay crash.
- *   Patching here — before React ever renders a page — suppresses it cleanly.
- *   The patch is a dev-only no-op: guarded by NODE_ENV and tree-shaken in prod.
+ *   Both Turbopack and Webpack dev modes surface this as a dev-overlay crash.
+ *   Patching both performance.measure and performance.mark here suppresses it.
+ *   The patch is dev-only and a no-op in production.
  */
+
+function isNegativeTimestampError(e: unknown): boolean {
+  const msg = e instanceof Error ? e.message : String(e);
+  return (
+    msg.includes("negative") ||
+    msg.includes("time stamp") ||
+    msg.includes("cannot have a negative")
+  );
+}
 
 export async function register() {
   if (
@@ -26,25 +35,25 @@ export async function register() {
   ) {
     const { performance } = await import("perf_hooks");
 
-    const orig = performance.measure.bind(performance);
+    const origMeasure = performance.measure.bind(performance);
+    const origMark = performance.mark.bind(performance);
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (performance as any).measure = function (...args: any[]) {
       try {
-        return (orig as (...a: unknown[]) => unknown)(...args);
+        return (origMeasure as (...a: unknown[]) => unknown)(...args);
       } catch (e: unknown) {
-        const msg = e instanceof Error ? e.message : String(e);
-        // Suppress React profiler errors caused by notFound() or redirect() aborting
-        // an in-progress render — the mark start timestamp ends up after the measure
-        // end timestamp, producing a "negative time stamp" DOMException. This is
-        // harmless: the page/component handled the abort correctly.
-        if (
-          msg.includes("negative") ||
-          msg.includes("time stamp") ||
-          msg.includes("cannot have a negative")
-        ) {
-          return;
-        }
+        if (isNegativeTimestampError(e)) return;
+        throw e;
+      }
+    };
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (performance as any).mark = function (...args: any[]) {
+      try {
+        return (origMark as (...a: unknown[]) => unknown)(...args);
+      } catch (e: unknown) {
+        if (isNegativeTimestampError(e)) return;
         throw e;
       }
     };

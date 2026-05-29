@@ -19,38 +19,39 @@ interface LessonViewProps {
 export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload, isCompleted = false }: LessonViewProps) {
 
   return (
-    <article className="w-full space-y-6 pb-16 font-sans">
-      <header className="space-y-3 pt-2">
-        <PillarBadge pillar={lesson.pillar} />
-        <h1 className="text-xl font-black text-slate-900 leading-tight">{lesson.title}</h1>
-        <div className="flex items-center gap-4 text-sm text-slate-500">
-          <span className="flex items-center gap-1.5">
-            <Clock className="w-4 h-4" />
-            {lesson.estimatedMinutes} min
-          </span>
-          {isCompleted && (
-            <span className="flex items-center gap-1.5 text-emerald-700">
-              <CheckCircle2 className="w-4 h-4" />
-              Completed
+    <article className="w-full pb-16 font-sans">
+      <div className="w-full space-y-6">
+        <header className="space-y-3 pt-2">
+          <PillarBadge pillar={lesson.pillar} />
+          <h1 className="text-xl font-black text-slate-900 leading-tight">{lesson.title}</h1>
+          <div className="flex items-center gap-4 text-sm text-slate-500">
+            <span className="flex items-center gap-1.5">
+              <Clock className="w-4 h-4" />
+              {lesson.estimatedMinutes} min
             </span>
-          )}
-        </div>
-        <p className="text-base text-slate-600 leading-relaxed">{lesson.summary}</p>
-      </header>
+            {isCompleted && (
+              <span className="flex items-center gap-1.5 text-emerald-700">
+                <CheckCircle2 className="w-4 h-4" />
+                Completed
+              </span>
+            )}
+          </div>
+          <p className="text-base text-slate-600 leading-relaxed">{lesson.summary}</p>
+        </header>
 
-      {lesson.objectives.length > 0 && (
-        <section aria-label="Learning objectives" className="bg-slate-50 border border-slate-200 rounded-lg p-5 space-y-3">
-          <h2 className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Learning objectives</h2>
-          <ul className="space-y-2.5">
-            {lesson.objectives.map((obj) => (
-              <li key={obj.id} className="flex items-start gap-2.5 text-sm">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                <span className="text-slate-700 leading-relaxed">{obj.text}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+        {lesson.objectives.length > 0 && (
+          <section aria-label="Learning objectives" className="bg-indigo-50 border border-indigo-200 rounded-xl p-5 space-y-3">
+            <h2 className="text-xs font-bold text-indigo-600 uppercase tracking-wider">Learning Objectives</h2>
+            <ul className="space-y-2.5">
+              {lesson.objectives.map((obj) => (
+                <li key={obj.id} className="flex items-start gap-2.5 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
+                  <span className="text-indigo-900 leading-relaxed">{obj.text}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
       {(() => {
         // Priority 1: sanityBody injected at page load from Sanity CMS
@@ -102,6 +103,7 @@ export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload, 
           </button>
         </div>
       )}
+      </div>
     </article>
   );
 }
