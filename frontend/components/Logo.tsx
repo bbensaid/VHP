@@ -10,9 +10,9 @@ const Logo: React.FC = () => {
         
         {/* 2. IMAGE SIZE */}
         <div className="relative h-14 w-14 sm:h-16 sm:w-16 shrink-0">
-          <Image 
-            src="/logo-icon8c.svg" 
-            alt="HTR Logo" 
+          <Image
+            src="/logo-hts-vector.svg"
+            alt="HTS Logo"
             fill
             className="object-contain"
             priority
@@ -28,12 +28,12 @@ const Logo: React.FC = () => {
         </div>
       </div> */}
 
-             <div className="leading-tight">
-          <div className="text-[10px] sm:text-xs font-extrabold text-black">HEALTH</div>
-          <div className="text-[10px] sm:text-xs font-extrabold text-black">TRANSFORMATION</div>
-          <div className="text-[10px] sm:text-xs font-extrabold text-black">SOLUTIONS</div>
+             <div className="leading-tight subpixel-antialiased">
+          <div className="text-[10px] sm:text-xs font-bold text-slate-900">HEALTH</div>
+          <div className="text-[10px] sm:text-xs font-bold text-slate-900">TRANSFORMATION</div>
+          <div className="text-[10px] sm:text-xs font-bold text-slate-900">SOLUTIONS</div>
         </div>
-      </div> 
+      </div>
 
 
 
@@ -52,14 +52,10 @@ const Logo: React.FC = () => {
       {/* 4. TAGLINE */}
       <div className="mt-0 w-full hidden sm:block">
         <div className="w-full border-t border-gray-300" />
-        <div className="mt-0 text-center text-[10px] font-medium tracking-wide uppercase flex justify-center items-center gap-1">
-          {/* <span className="text-card-economics font-bold">OPTIMIZING CARE</span> */}
-    
-          <span className="text-slate-400 font-bold">SHAPING</span>
-          <span className="text-slate-400"></span>
-          <span className="text-slate-400 font-bold">HEALTHCARE</span>
-          <span className="text-slate-400"></span>
-          <span className="text-slate-400 font-bold">TOGETHER</span>
+        <div className="mt-0.5 text-center text-[10px] font-semibold tracking-wide uppercase flex justify-center items-center gap-1.5 text-slate-600 subpixel-antialiased">
+          <span>SHAPING</span>
+          <span>HEALTHCARE</span>
+          <span>TOGETHER</span>
         </div>
       </div>
     </div>
