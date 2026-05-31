@@ -2,6 +2,8 @@
 
 import { useState, useCallback, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Trophy, BookOpen, ArrowLeft } from "lucide-react";
+import { SparklesIcon } from "@heroicons/react/24/outline";
+import { useSidebar } from "@/components/SidebarContext";
 import Link from "next/link";
 import type { CourseWithProgress } from "@/types/course";
 import { CourseSidebar } from "./CourseSidebar";
@@ -17,6 +19,7 @@ interface CoursePlayerProps {
 }
 
 export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioUpload }: CoursePlayerProps) {
+  const { isRightOpen, setRightOpen } = useSidebar();
   const allLessons = course.tracks.flatMap((t) => t.lessons);
 
   const initialLesson =
@@ -38,7 +41,7 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
   const dragStartX = useRef(0);
   const dragStartWidth = useRef(0);
 
-  const WIDTH_MIN = 500;
+  const WIDTH_MIN = 860;
   const WIDTH_MAX = 1400;
 
   useEffect(() => {
@@ -219,7 +222,18 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
               </button>
               <PillarBadge pillar={currentLesson.pillar} size="xs" />
               <span className="text-sm font-medium text-slate-900 truncate">{currentLesson.title}</span>
-              <span className="ml-auto text-xs text-slate-400 shrink-0">{currentIndex + 1} / {totalLessons}</span>
+              <div className="ml-auto flex items-center gap-3 shrink-0">
+                {!isRightOpen && (
+                  <button
+                    onClick={() => setRightOpen(true)}
+                    className="flex items-center gap-1.5 px-3 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold rounded-full transition-colors shadow-sm"
+                  >
+                    <SparklesIcon className="w-3.5 h-3.5" />
+                    Ask AI
+                  </button>
+                )}
+                <span className="text-xs text-slate-400">{currentIndex + 1} / {totalLessons}</span>
+              </div>
             </div>
 
             {/* Scrollable content */}
