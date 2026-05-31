@@ -143,11 +143,11 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         </CollapsibleSidebar>
       </div>
 
-      {/* 3. Floating "Ask AI" button — tablet+ only, hidden on phone (BottomNav handles it) */}
-      {!isRightOpen && (
+      {/* 3. Floating "Ask AI" button — hidden on course pages (button lives in course top bar instead) */}
+      {!isRightOpen && !isCoursePage && (
         <button
           onClick={() => setRightOpen(true)}
-          className="hidden md:flex fixed bottom-6 right-6 z-(--z-overlay) items-center gap-2 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm font-bold"
+          className="hidden md:flex fixed bottom-6 right-6 z-9999 items-center gap-2 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm font-bold"
           aria-label="Open AI Analyst"
         >
           <SparklesIcon className="w-4 h-4" />

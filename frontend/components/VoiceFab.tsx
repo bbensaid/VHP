@@ -10,8 +10,8 @@ export default function VoiceFab() {
     useVoice();
   const pathname = usePathname() ?? "";
 
-  if (pathname.startsWith("/studio")) return null;
-  if (fabHidden) return null;
+  // Mic lives inside the Header search bar — this floating duplicate is hidden
+  return null;
 
   const handleClick = () => {
     if (isSpeaking) { stopSpeaking(); return; }
@@ -24,7 +24,7 @@ export default function VoiceFab() {
     ? "bg-indigo-600 hover:bg-indigo-500"
     : isListening
     ? "bg-rose-600 hover:bg-rose-500"
-    : "bg-slate-800 hover:bg-slate-700";
+    : "bg-white hover:bg-slate-100 border border-slate-200 shadow";
 
   const statusText = isSpeaking
     ? "Speaking — click to stop"
@@ -37,7 +37,7 @@ export default function VoiceFab() {
   return (
     <div
       style={{ position: "fixed", top: "0.6rem", right: "13rem", zIndex: 99999 }}
-      className="flex flex-col items-center gap-2 select-none"
+      className="flex flex-col items-center gap-1.5 select-none"
     >
       {/* Transcript pill */}
       {isListening && transcript && (
@@ -56,7 +56,7 @@ export default function VoiceFab() {
         type="button"
         onClick={handleClick}
         aria-label={statusText}
-        className={`relative flex items-center justify-center w-16 h-16 rounded-full shadow-2xl text-white transition-colors duration-150 ${bgClass}`}
+        className={`relative flex items-center justify-center w-11 h-11 rounded-full transition-colors duration-150 ${bgClass} ${isActive ? "text-white shadow-2xl" : "text-slate-700"}`}
       >
         {isActive && (
           <span
@@ -65,8 +65,8 @@ export default function VoiceFab() {
         )}
         <span className="relative z-10">
           {isSpeaking
-            ? <SpeakerWaveIcon className="w-8 h-8" />
-            : <MicrophoneIcon className="w-8 h-8" />
+            ? <SpeakerWaveIcon className="w-5 h-5" />
+            : <MicrophoneIcon className="w-5 h-5" />
           }
         </span>
       </button>

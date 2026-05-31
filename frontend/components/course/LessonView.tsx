@@ -23,7 +23,7 @@ export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload, 
       <div className="w-full space-y-6">
         <header className="space-y-3 pt-2">
           <PillarBadge pillar={lesson.pillar} />
-          <h1 className="text-xl font-black text-slate-900 leading-tight">{lesson.title}</h1>
+          <h1 className="text-3xl font-black text-slate-900 leading-tight">{lesson.title}</h1>
           <div className="flex items-center gap-4 text-sm text-slate-500">
             <span className="flex items-center gap-1.5">
               <Clock className="w-4 h-4" />
