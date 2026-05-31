@@ -216,13 +216,14 @@ const components: PortableTextComponents = {
       </div>
     ),
 
-    // ── Pattern 3: Pure typography ────────────────────────────────────────────
-    // Expert voice / reflection — no box, just large italic type
+    // ── Pattern 3: Pullquote — centered, visually isolated ───────────────────
     quote: ({ children }) => (
-      <div className="my-14 px-4 relative">
-        <span className="absolute -top-6 left-0 text-[7rem] font-black text-slate-200 leading-none select-none pointer-events-none">&ldquo;</span>
-        <p className="relative z-10 ty-h2 text-slate-600 italic leading-10 font-medium pl-8">{children}</p>
-        <div className="mt-5 ml-8 h-0.5 w-10 bg-slate-300 rounded-full" />
+      <div className="my-12 mx-auto max-w-2xl">
+        <div className="relative bg-slate-900 rounded-2xl px-10 py-8 text-center shadow-xl">
+          <span className="absolute top-4 left-6 text-[4rem] font-black text-indigo-400 leading-none select-none pointer-events-none opacity-60">&ldquo;</span>
+          <p className="relative z-10 text-lg text-white italic leading-9 font-medium">{children}</p>
+          <span className="absolute bottom-4 right-6 text-[4rem] font-black text-indigo-400 leading-none select-none pointer-events-none opacity-60">&rdquo;</span>
+        </div>
       </div>
     ),
   },
@@ -257,7 +258,7 @@ const components: PortableTextComponents = {
       else if (assetRef)  try { imgSrc = urlFor(value).width(1000).auto("format").url(); } catch { imgSrc = null; }
       else if (directUrl) imgSrc = directUrl;
       return (
-        <figure className="my-12">
+        <figure className="my-12 max-w-2xl mx-auto">
           {imgSrc ? (
             <img src={imgSrc} alt={value.alt || value.caption || ""}
                  className="w-full rounded-xl shadow-lg border border-slate-200" loading="lazy" />
@@ -289,7 +290,7 @@ const components: PortableTextComponents = {
       if (!Array.isArray(data) || data.length === 0) return null;
       const headers = Object.keys(data[0]);
       return (
-        <div className="my-10 overflow-hidden rounded-xl border border-slate-300 shadow-md">
+        <div className="my-10 overflow-hidden rounded-xl border border-slate-300 shadow-md max-w-2xl mx-auto">
           <div className="bg-slate-900 px-5 py-4 flex items-center gap-3">
             <div className="flex gap-1.5">
               <span className="w-2.5 h-2.5 rounded-full bg-red-400" />
@@ -332,19 +333,19 @@ const components: PortableTextComponents = {
           {value.title && (
             <p className="text-[11px] font-black text-slate-500 uppercase tracking-[0.2em] mb-4 text-center">{value.title}</p>
           )}
-          <div className={`grid gap-4 ${stats.length === 2 ? "grid-cols-2" : stats.length === 3 ? "grid-cols-3" : "grid-cols-2 md:grid-cols-4"}`}>
+          <div className={`grid gap-3 ${stats.length === 2 ? "grid-cols-2" : stats.length === 3 ? "grid-cols-3" : "grid-cols-2 sm:grid-cols-4"}`}>
             {stats.map((stat, i) => {
               const c = statColors[i % statColors.length];
               const trend = stat.trend ? trendIcon[stat.trend] : null;
               return (
-                <div key={stat.label} className={`${c.bg} border ${c.border} rounded-2xl p-6 flex flex-col gap-2`}>
-                  <div className={`text-4xl font-black ${c.num} leading-none flex items-start gap-2`}>
+                <div key={stat.label} className={`${c.bg} border ${c.border} rounded-xl p-4 flex flex-col gap-1.5 min-w-0`}>
+                  <div className={`text-2xl font-black ${c.num} leading-none flex items-start gap-1.5 break-all`}>
                     {stat.value}
-                    {trend && <span className={`text-xl ${trend.color} mt-1`}>{trend.icon}</span>}
+                    {trend && <span className={`text-base ${trend.color} mt-0.5`}>{trend.icon}</span>}
                   </div>
-                  <div className={`text-sm font-bold ${c.label} leading-snug`}>{stat.label}</div>
+                  <div className={`text-xs font-bold ${c.label} leading-snug`}>{stat.label}</div>
                   {stat.context && (
-                    <div className={`text-xs ${c.sub} leading-relaxed mt-1`}>{stat.context}</div>
+                    <div className={`text-[11px] ${c.sub} leading-relaxed mt-0.5`}>{stat.context}</div>
                   )}
                 </div>
               );
@@ -423,8 +424,8 @@ const components: PortableTextComponents = {
       return (
         <div className="my-10 overflow-hidden rounded-xl shadow-md border border-slate-200">
           {value.title && (
-            <div className="bg-rose-50 px-5 py-3 border-b border-slate-200 text-center">
-              <span className="text-[10px] font-black text-rose-600 uppercase tracking-[0.2em]">{value.title}</span>
+            <div className="bg-slate-700 px-5 py-3 text-center">
+              <span className="text-[10px] font-black text-white uppercase tracking-[0.2em]">{value.title}</span>
             </div>
           )}
           <div className="grid grid-cols-2">

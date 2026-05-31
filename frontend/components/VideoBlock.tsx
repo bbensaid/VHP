@@ -85,7 +85,7 @@ export default function VideoBlock({ value, compact }: VideoBlockProps) {
   // 2. Render YouTube
   if (youtubeId) {
     return (
-      <figure className="my-8 w-full max-w-full">
+      <figure className="my-8 max-w-3xl mx-auto">
         <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black shadow-lg border border-slate-200">
           {isMounted && (
             <iframe
@@ -110,7 +110,7 @@ export default function VideoBlock({ value, compact }: VideoBlockProps) {
   const isDirectVideo = url.toLowerCase().endsWith(".mp4") || url.toLowerCase().endsWith(".webm");
   if (isDirectVideo) {
     return (
-      <figure className="my-8 w-full max-w-full">
+      <figure className="my-8 max-w-3xl mx-auto">
         <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black shadow-lg border border-slate-200">
           <video
             controls
