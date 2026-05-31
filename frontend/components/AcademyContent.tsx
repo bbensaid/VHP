@@ -582,7 +582,7 @@ export default function AcademyContent({ body }: { body: PortableTextBlock[] }) 
   const numberedComponents: PortableTextComponents = {
     ...components,
     block: {
-      ...components.block,
+      ...(components.block as Record<string, unknown>),
       h2: ({ children, value }) => {
         const text = (value as BlockValue).children?.map((c) => c.text).join("") || "";
         if (text.toLowerCase() === "sources") {
