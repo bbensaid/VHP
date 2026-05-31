@@ -1,0 +1,1 @@
+"Read /Users/baba/Vermont-Health-Platform/CONTENT_TEMPLATE.py before writing any lesson. Use only the helper functions defined there. Search the web for every specific claim before writing it. Do not write any statistic, legislation name, act number, dollar amount, or named program without a found source. End every lesson with takeaway(), quiz(), and a Sources section."

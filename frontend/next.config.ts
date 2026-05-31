@@ -37,7 +37,9 @@ const securityHeaders = [
       "font-src 'self' data:",
       // Sanity CDN images + YouTube thumbnails + blob (react-simple-maps SVG) + data URIs
       // OpenStreetMap tile servers (a/b/c.tile.openstreetmap.org) for Leaflet map
-      "img-src 'self' blob: data: https://cdn.sanity.io https://img.youtube.com https://*.tile.openstreetmap.org",
+      "img-src 'self' blob: data: https://cdn.sanity.io https://img.youtube.com https://*.tile.openstreetmap.org https://upload.wikimedia.org",
+      // Audio and video — external MP3/MP4, Wikimedia, Sanity-hosted media
+      "media-src 'self' blob: https://upload.wikimedia.org https://cdn.sanity.io https://www.nasa.gov",
       // API/data connections:
       //   - Supabase REST + Realtime WebSocket
       //   - Sanity GROQ API: {projectId}.api.sanity.io (two-level subdomain)

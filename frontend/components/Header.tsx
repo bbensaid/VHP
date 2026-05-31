@@ -808,6 +808,21 @@ const Header = () => {
             <span className="hidden md:inline-flex">
               <BackendStatus />
             </span>
+            {/* External microphone button — centered with search box, full voice functionality */}
+            {mounted && voice.isSupported && (
+              <button
+                type="button"
+                onClick={voice.isSpeaking ? voice.stopSpeaking : voice.toggleListening}
+                title={voice.isListening ? "Listening… click to stop (⌘⇧V)" : voice.isSpeaking ? "Speaking… click to stop" : "Voice input (⌘⇧V)"}
+                className={`hidden md:flex items-center justify-center w-8 h-8 rounded-full transition-colors ${
+                  voice.isSpeaking ? "bg-indigo-100 text-indigo-600" :
+                  voice.isListening ? "bg-rose-100 text-rose-600 animate-pulse" :
+                  "bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-700"
+                }`}
+              >
+                <MicrophoneIcon className="w-4 h-4" />
+              </button>
+            )}
             <DarkModeToggle />
             {!isStudio && (
               <button
