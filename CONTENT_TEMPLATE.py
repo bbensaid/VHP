@@ -135,11 +135,15 @@ LESSON STRUCTURE (follow this pattern for every section)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 """
 
-import json, subprocess
+import json, re, urllib.request
 
-TOKEN = "YOUR_SANITY_WRITE_TOKEN"  # from frontend/.env.local — SANITY_API_TOKEN
+# ── Token — read from env file, never hardcoded ────────────────────────────────
+def _read_token():
+    with open('/Users/baba/Vermont-Health-Platform/frontend/.env.local') as f:
+        return re.search(r'SANITY_API_TOKEN\s*=\s*(.+)', f.read()).group(1).strip()
+
 PROJECT_ID = "fxz10xl7"
-API = f"https://{PROJECT_ID}.api.sanity.io/v2024-01-01/data/mutate/production"
+API = f"https://{PROJECT_ID}.api.sanity.io/v2021-06-07/data/mutate/production"
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -315,26 +319,34 @@ def quiz(k, question, options, explanation):
 # POST TO SANITY
 # ══════════════════════════════════════════════════════════════════════════════
 
-def post(slug, title, body):
+def post(slug, title, body, course_slug=None, order=None):
     """Write a lesson body to Sanity CMS.
-    slug:  must exactly match the sanity_slug column in the Supabase lessons table.
-    title: lesson display title (stored in Sanity, not shown in the renderer).
-    body:  list of block dicts built with the helpers above.
+    slug:         must exactly match the _id in Sanity (e.g. 'interop-fhir-intro')
+    title:        lesson display title
+    body:         list of block dicts built with the helpers above
+    course_slug:  e.g. 'healthcare-interoperability' (optional but recommended)
+    order:        integer sort position within the course (optional)
     """
-    doc = {'_type':'academyModule','_id':slug,
-           'slug':{'_type':'slug','current':slug},'title':title,'body':body}
-    payload = {'mutations':[{'createOrReplace': doc}]}
-    with open('/tmp/_sp.json','w') as f: json.dump(payload, f)
-    r = subprocess.run([
-        'curl','-s','-X','POST', API,
-        '-H','Content-Type: application/json',
-        '-H',f'Authorization: Bearer {TOKEN}',
-        '-d','@/tmp/_sp.json'
-    ], capture_output=True, text=True)
-    if '"error"' in r.stdout or '"errors"' in r.stdout:
-        print(f"FAIL {slug}: {r.stdout[:300]}")
-    else:
-        print(f"OK: {slug}")
+    TOKEN = _read_token()
+    doc = {
+        '_type': 'academyModule',
+        '_id':   slug,
+        'slug':  {'_type':'slug','current':slug},
+        'title': title,
+        'body':  body,
+    }
+    if course_slug: doc['courseSlug'] = course_slug
+    if order is not None: doc['order'] = order
+    payload = json.dumps({'mutations':[{'createOrReplace': doc}]}).encode()
+    req = urllib.request.Request(API, data=payload, headers={
+        'Content-Type': 'application/json',
+        'Authorization': f'Bearer {TOKEN}',
+    })
+    with urllib.request.urlopen(req) as r:
+        result = json.loads(r.read())
+    txn = result.get('transactionId','?')
+    op  = result.get('results',[{}])[0].get('operation','?')
+    print(f"OK: {slug} | txn={txn} | op={op}")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
