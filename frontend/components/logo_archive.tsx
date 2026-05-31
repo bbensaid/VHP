@@ -9,9 +9,9 @@ const Logo: React.FC = () => {
       <div className="flex items-center gap-2">
         
         {/* 2. IMAGE SIZE */}
-        <div className="relative h-14 w-14 sm:h-16 sm:w-16 shrink-0">
+        <div className="relative h-10 w-10 sm:h-12 sm:w-12 shrink-0">
           <Image 
-            src="/logo-icon8c.svg" 
+            src="/logo-icon.svg" 
             alt="HTR Logo" 
             fill
             className="object-contain"
@@ -31,7 +31,7 @@ const Logo: React.FC = () => {
              <div className="leading-tight">
           <div className="text-[10px] sm:text-xs font-extrabold text-black">HEALTH</div>
           <div className="text-[10px] sm:text-xs font-extrabold text-black">TRANSFORMATION</div>
-          <div className="text-[10px] sm:text-xs font-extrabold text-black">SOLUTIONS</div>
+          <div className="text-[10px] sm:text-xs font-extrabold text-black">REVIEW</div>
         </div>
       </div> 
 
@@ -52,14 +52,14 @@ const Logo: React.FC = () => {
       {/* 4. TAGLINE */}
       <div className="mt-0 w-full hidden sm:block">
         <div className="w-full border-t border-gray-300" />
-        <div className="mt-0 text-center text-[10px] font-medium tracking-wide uppercase flex justify-center items-center gap-1">
+        <div className="mt-0 text-center text-[10px] font-medium tracking-widest uppercase flex justify-center items-center gap-1">
           {/* <span className="text-card-economics font-bold">OPTIMIZING CARE</span> */}
     
-          <span className="text-slate-400 font-bold">EVOLVING</span>
-          <span className="text-slate-400"></span>
-          <span className="text-slate-400 font-bold">HEALTHCARE</span>
-          <span className="text-slate-400"></span>
-          <span className="text-slate-400 font-bold">TOGETHER</span>
+          <span className="text-slate-400 font-bold">EDUCATE</span>
+          <span className="text-slate-400">-</span>
+          <span className="text-slate-400 font-bold">ANALYZE</span>
+          <span className="text-slate-400">-</span>
+          <span className="text-slate-400 font-bold">ADVISE</span>
         </div>
       </div>
     </div>
