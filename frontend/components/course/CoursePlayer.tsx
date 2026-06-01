@@ -220,6 +220,15 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
+              {/* Always-visible back link — works even when the course side nav is hidden */}
+              <Link
+                href="/academy/tracks"
+                className="flex items-center gap-1.5 text-xs font-semibold text-indigo-700 hover:text-indigo-900 shrink-0"
+              >
+                <ArrowLeft className="w-3.5 h-3.5 shrink-0" />
+                <span className="hidden sm:inline">Academy</span>
+              </Link>
+              <span className="text-slate-300 shrink-0 hidden sm:inline">/</span>
               <PillarBadge pillar={currentLesson.pillar} size="xs" />
               <span className="text-sm font-medium text-slate-900 truncate">{currentLesson.title}</span>
               <div className="ml-auto flex items-center gap-3 shrink-0">

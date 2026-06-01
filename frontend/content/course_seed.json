@@ -1,7 +1,7 @@
 {
   "id": "course_htr_onboarding_v1",
   "slug": "hie-health-reform-onboarding",
-  "title": "HIE & Health Reform: New Employee Onboarding",
+  "title": "HIE & Health Reform",
   "subtitle": "Your foundation in the six pillars of health transformation",
   "description": "A comprehensive onboarding course for professionals joining Health Information Exchange, health reform, and related programs. Built on the HTR six-pillar framework, this course gives you working fluency in Policy, Technology, Economics, Clinical quality, Health Equity, and Operations.",
   "targetAudience": [
@@ -17,9 +17,7 @@
   "version": "1.0.0",
   "createdAt": "2026-05-25T00:00:00Z",
   "updatedAt": "2026-05-25T00:00:00Z",
-
   "tracks": [
-
     {
       "id": "track_policy",
       "courseId": "course_htr_onboarding_v1",
@@ -29,150 +27,110 @@
       "title": "Policy & Legislation",
       "description": "Federal and Vermont state legislation governing health data exchange, privacy, and system transformation. Covers HIPAA, 21st Century Cures Act, Vermont Act 167 and Act 68.",
       "icon": "ti-shield",
-      "targetAudience": ["All staff", "Policy analysts", "Compliance staff"],
+      "targetAudience": [
+        "All staff",
+        "Policy analysts",
+        "Compliance staff"
+      ],
       "isPublished": true,
       "createdAt": "2026-05-25T00:00:00Z",
       "updatedAt": "2026-05-25T00:00:00Z",
-
       "lessons": [
-        {
-          "id": "lesson_welcome",
-          "trackId": "track_policy",
-          "pillar": "policy",
-          "order": 1,
-          "slug": "welcome-htr-framework",
-          "title": "Welcome & the HTR Framework",
-          "summary": "Orientation to the HTR six-pillar framework and your role in the health reform ecosystem.",
-          "estimatedMinutes": 15,
-          "isPublished": true,
-          "tags": ["orientation", "framework", "six-pillars"],
-          "relatedLessonIds": [],
-          "createdAt": "2026-05-25T00:00:00Z",
-          "updatedAt": "2026-05-25T00:00:00Z",
-          "objectives": [
-            { "id": "obj_w1", "text": "Understand the HTR six-pillar framework and how the pillars interconnect" },
-            { "id": "obj_w2", "text": "Describe your role in the broader health reform ecosystem" },
-            { "id": "obj_w3", "text": "Identify the key programs and organizations you will work with" }
-          ],
-          "contentBlocks": [
-            {
-              "type": "audio_slot",
-              "label": "Welcome from HTR leadership",
-              "hint": "Upload a personal welcome message from your executive director or CEO. Recommended: 3–5 minutes, MP3 or WAV."
-            },
-            {
-              "type": "text",
-              "heading": "Why this course exists",
-              "body": "Health transformation is complex. It sits at the intersection of law, technology, clinical practice, economics, and social justice. New employees — regardless of their specialty — are more effective when they understand all six dimensions.\n\nThis course gives you that foundation. You will not become an expert in every pillar, but you will gain the vocabulary, context, and conceptual map to work across disciplines and contribute meaningfully from day one."
-            },
-            {
-              "type": "concepts_grid",
-              "heading": "The HTR six pillars",
-              "items": [
-                { "icon": "ti-shield", "title": "Policy", "body": "Federal and state legislation, regulatory frameworks, and governance structures that define what HIEs can and must do." },
-                { "icon": "ti-cpu", "title": "Technology", "body": "Standards (HL7, FHIR), infrastructure (integration engines, MPI), and interoperability frameworks that make data exchange possible." },
-                { "icon": "ti-coin", "title": "Economics", "body": "Payment models, value-based care incentives, and the financial levers that drive or impede transformation." },
-                { "icon": "ti-heart-rate-monitor", "title": "Clinical", "body": "Quality measures, population health management, and evidence-based care practices that define what good health outcomes look like." },
-                { "icon": "ti-scale", "title": "Equity", "body": "Access disparities, social determinants of health, and the imperative to ensure transformation benefits everyone — not just the well-resourced." },
-                { "icon": "ti-settings", "title": "Operations", "body": "Workforce, governance, organizational design, and the day-to-day systems that make a health reform organization function." }
-              ]
-            },
-            {
-              "type": "callout",
-              "variant": "tip",
-              "heading": "The pillars are not independent",
-              "body": "A decision about FHIR API architecture (Technology) has implications for patient consent (Policy), data completeness across populations (Equity), care gap identification (Clinical), and cost of implementation (Economics). Always think across pillars."
-            },
-            {
-              "type": "key_stat",
-              "stats": [
-                { "value": "~20%", "label": "of Americans live in rural areas", "source": "AAMC" },
-                { "value": "11%", "label": "of physicians practice in rural areas", "source": "AAMC" },
-                { "value": "$4.5T", "label": "US annual healthcare spend (2023)", "source": "CMS" },
-                { "value": "30%", "label": "estimated low-value care spending", "source": "NEJM" }
-              ]
-            },
-            {
-              "type": "video",
-              "mediaType": "youtube",
-              "videoId": "x2hzI9rJMpg",
-              "caption": "Introduction to Health Information Exchange — ONC overview (~8 min)",
-              "durationSeconds": 480
-            }
-          ],
-          "quiz": {
-            "id": "quiz_welcome",
-            "passingScore": 75,
-            "shuffleOptions": true,
-            "questions": [
-              {
-                "id": "q_w1",
-                "type": "single_choice",
-                "question": "Which statement best describes the relationship between the six HTR pillars?",
-                "points": 1,
-                "explanation": "No pillar stands alone — a technology decision has policy, equity, and economic implications. This interconnection is the core insight of the HTR framework.",
-                "options": [
-                  { "id": "opt_w1a", "text": "They are independent disciplines addressed by separate teams", "isCorrect": false },
-                  { "id": "opt_w1b", "text": "They are deeply interconnected — decisions in one pillar ripple through all others", "isCorrect": true },
-                  { "id": "opt_w1c", "text": "Policy and Technology are the two foundational pillars; the others are secondary", "isCorrect": false },
-                  { "id": "opt_w1d", "text": "The six pillars apply only to state-level HIEs, not to federal programs", "isCorrect": false }
-                ]
-              },
-              {
-                "id": "q_w2",
-                "type": "single_choice",
-                "question": "What is the primary goal of this onboarding course?",
-                "points": 1,
-                "options": [
-                  { "id": "opt_w2a", "text": "To make every employee a technical FHIR expert", "isCorrect": false },
-                  { "id": "opt_w2b", "text": "To provide deep specialization in one pillar of your choice", "isCorrect": false },
-                  { "id": "opt_w2c", "text": "To build broad working fluency across all six HTR pillars", "isCorrect": true },
-                  { "id": "opt_w2d", "text": "To fulfill federal compliance training requirements only", "isCorrect": false }
-                ]
-              }
-            ]
-          }
-        },
-
         {
           "id": "lesson_hipaa",
           "trackId": "track_policy",
           "pillar": "policy",
-          "order": 2,
+          "order": 1,
           "slug": "hipaa-fundamentals",
           "title": "HIPAA Fundamentals",
           "summary": "The Health Insurance Portability and Accountability Act — its three rules, your obligations as an HIE workforce member, and the minimum necessary standard.",
           "estimatedMinutes": 25,
           "isPublished": true,
-          "tags": ["hipaa", "privacy", "compliance", "phi"],
-          "relatedLessonIds": ["lesson_cures_act"],
+          "tags": [
+            "hipaa",
+            "privacy",
+            "compliance",
+            "phi"
+          ],
+          "relatedLessonIds": [
+            "lesson_cures_act"
+          ],
           "createdAt": "2026-05-25T00:00:00Z",
           "updatedAt": "2026-05-25T00:00:00Z",
           "objectives": [
-            { "id": "obj_h1", "text": "Identify the three HIPAA rules and what each governs" },
-            { "id": "obj_h2", "text": "Define Protected Health Information (PHI) and its 18 identifiers" },
-            { "id": "obj_h3", "text": "Apply the minimum necessary standard to your daily work" },
-            { "id": "obj_h4", "text": "Know your reporting obligations in the event of a breach" }
+            {
+              "id": "obj_h1",
+              "text": "Identify the three HIPAA rules and what each governs"
+            },
+            {
+              "id": "obj_h2",
+              "text": "Define Protected Health Information (PHI) and its 18 identifiers"
+            },
+            {
+              "id": "obj_h3",
+              "text": "Apply the minimum necessary standard to your daily work"
+            },
+            {
+              "id": "obj_h4",
+              "text": "Know your reporting obligations in the event of a breach"
+            }
           ],
           "contentBlocks": [
             {
               "type": "timeline",
               "heading": "HIPAA legislative history",
               "items": [
-                { "year": "1996", "title": "HIPAA enacted", "body": "Sets national standards for health insurance portability and administrative simplification. PHI privacy provisions included.", "pillar": "policy" },
-                { "year": "2003", "title": "Privacy Rule effective", "body": "Establishes patient rights over their health information. Limits on uses and disclosures without authorization.", "pillar": "policy" },
-                { "year": "2005", "title": "Security Rule effective", "body": "Requires administrative, physical, and technical safeguards for electronic PHI (ePHI).", "pillar": "policy" },
-                { "year": "2009", "title": "HITECH Act", "body": "Health Information Technology for Economic and Clinical Health Act — strengthens HIPAA enforcement, introduces Meaningful Use.", "pillar": "policy" },
-                { "year": "2013", "title": "Omnibus Rule", "body": "Extends HIPAA obligations to Business Associates. Increases civil penalties significantly (up to $1.9M per violation category).", "pillar": "policy" }
+                {
+                  "year": "1996",
+                  "title": "HIPAA enacted",
+                  "body": "Sets national standards for health insurance portability and administrative simplification. PHI privacy provisions included.",
+                  "pillar": "policy"
+                },
+                {
+                  "year": "2003",
+                  "title": "Privacy Rule effective",
+                  "body": "Establishes patient rights over their health information. Limits on uses and disclosures without authorization.",
+                  "pillar": "policy"
+                },
+                {
+                  "year": "2005",
+                  "title": "Security Rule effective",
+                  "body": "Requires administrative, physical, and technical safeguards for electronic PHI (ePHI).",
+                  "pillar": "policy"
+                },
+                {
+                  "year": "2009",
+                  "title": "HITECH Act",
+                  "body": "Health Information Technology for Economic and Clinical Health Act — strengthens HIPAA enforcement, introduces Meaningful Use.",
+                  "pillar": "policy"
+                },
+                {
+                  "year": "2013",
+                  "title": "Omnibus Rule",
+                  "body": "Extends HIPAA obligations to Business Associates. Increases civil penalties significantly (up to $1.9M per violation category).",
+                  "pillar": "policy"
+                }
               ]
             },
             {
               "type": "concepts_grid",
               "heading": "The three HIPAA rules",
               "items": [
-                { "icon": "ti-lock", "title": "Privacy Rule", "body": "Governs who can access and use PHI. Patients have rights to access, amend, and receive an accounting of disclosures. Minimum necessary standard applies." },
-                { "icon": "ti-shield-check", "title": "Security Rule", "body": "Technical, administrative, and physical safeguards for ePHI. Requires risk analysis, access controls, audit logs, encryption where reasonable." },
-                { "icon": "ti-bell-ringing", "title": "Breach Notification Rule", "body": "Covered entities must notify patients within 60 days of discovering a breach of unsecured PHI. HHS notification required; media notification if >500 individuals in a state." }
+                {
+                  "icon": "ti-lock",
+                  "title": "Privacy Rule",
+                  "body": "Governs who can access and use PHI. Patients have rights to access, amend, and receive an accounting of disclosures. Minimum necessary standard applies."
+                },
+                {
+                  "icon": "ti-shield-check",
+                  "title": "Security Rule",
+                  "body": "Technical, administrative, and physical safeguards for ePHI. Requires risk analysis, access controls, audit logs, encryption where reasonable."
+                },
+                {
+                  "icon": "ti-bell-ringing",
+                  "title": "Breach Notification Rule",
+                  "body": "Covered entities must notify patients within 60 days of discovering a breach of unsecured PHI. HHS notification required; media notification if >500 individuals in a state."
+                }
               ]
             },
             {
@@ -192,10 +150,26 @@
               "leftLabel": "Covered Entity",
               "rightLabel": "Business Associate",
               "rows": [
-                { "label": "Examples", "left": "Hospitals, clinics, health plans, clearinghouses", "right": "HIEs, EHR vendors, billing companies, cloud providers" },
-                { "label": "Primary obligation", "left": "Direct HIPAA compliance for patient care activities", "right": "Comply with HIPAA through contract (BAA) with covered entity" },
-                { "label": "Breach penalties", "left": "Up to $1.9M per violation category", "right": "Same — directly liable since 2013 Omnibus Rule" },
-                { "label": "Patient rights", "left": "Must respond to patient requests", "right": "Must cooperate with covered entity's patient rights obligations" }
+                {
+                  "label": "Examples",
+                  "left": "Hospitals, clinics, health plans, clearinghouses",
+                  "right": "HIEs, EHR vendors, billing companies, cloud providers"
+                },
+                {
+                  "label": "Primary obligation",
+                  "left": "Direct HIPAA compliance for patient care activities",
+                  "right": "Comply with HIPAA through contract (BAA) with covered entity"
+                },
+                {
+                  "label": "Breach penalties",
+                  "left": "Up to $1.9M per violation category",
+                  "right": "Same — directly liable since 2013 Omnibus Rule"
+                },
+                {
+                  "label": "Patient rights",
+                  "left": "Must respond to patient requests",
+                  "right": "Must cooperate with covered entity's patient rights obligations"
+                }
               ]
             },
             {
@@ -223,10 +197,26 @@
                 "points": 1,
                 "explanation": "The minimum necessary standard requires accessing only the PHI elements required for the specific task — in this case, the data fields needed for the population report, not full patient charts.",
                 "options": [
-                  { "id": "opt_h1a", "text": "Access full patient charts to ensure complete context", "isCorrect": false },
-                  { "id": "opt_h1b", "text": "Access only the data elements required for that specific analysis", "isCorrect": true },
-                  { "id": "opt_h1c", "text": "Share the report freely throughout the organization for transparency", "isCorrect": false },
-                  { "id": "opt_h1d", "text": "Disable audit logging to speed up data retrieval", "isCorrect": false }
+                  {
+                    "id": "opt_h1a",
+                    "text": "Access full patient charts to ensure complete context",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_h1b",
+                    "text": "Access only the data elements required for that specific analysis",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_h1c",
+                    "text": "Share the report freely throughout the organization for transparency",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_h1d",
+                    "text": "Disable audit logging to speed up data retrieval",
+                    "isCorrect": false
+                  }
                 ]
               },
               {
@@ -235,10 +225,26 @@
                 "question": "When was the HIPAA Omnibus Rule implemented, and what was its most significant change?",
                 "points": 1,
                 "options": [
-                  { "id": "opt_h2a", "text": "1996 — initial enactment of HIPAA", "isCorrect": false },
-                  { "id": "opt_h2b", "text": "2003 — creation of the Privacy Rule", "isCorrect": false },
-                  { "id": "opt_h2c", "text": "2013 — Business Associates became directly liable for HIPAA compliance", "isCorrect": true },
-                  { "id": "opt_h2d", "text": "2009 — introduction of electronic health records", "isCorrect": false }
+                  {
+                    "id": "opt_h2a",
+                    "text": "1996 — initial enactment of HIPAA",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_h2b",
+                    "text": "2003 — creation of the Privacy Rule",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_h2c",
+                    "text": "2013 — Business Associates became directly liable for HIPAA compliance",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_h2d",
+                    "text": "2009 — introduction of electronic health records",
+                    "isCorrect": false
+                  }
                 ]
               },
               {
@@ -248,33 +254,62 @@
                 "points": 1,
                 "explanation": "HIEs are typically classified as Business Associates, not Covered Entities. They handle PHI on behalf of covered entities (hospitals, clinics) rather than directly providing patient care.",
                 "options": [
-                  { "id": "opt_h3t", "text": "True", "isCorrect": false },
-                  { "id": "opt_h3f", "text": "False", "isCorrect": true, "explanation": "HIEs are typically Business Associates, not Covered Entities." }
+                  {
+                    "id": "opt_h3t",
+                    "text": "True",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_h3f",
+                    "text": "False",
+                    "isCorrect": true,
+                    "explanation": "HIEs are typically Business Associates, not Covered Entities."
+                  }
                 ]
               }
             ]
           }
         },
-
         {
           "id": "lesson_cures_act",
           "trackId": "track_policy",
           "pillar": "policy",
-          "order": 3,
+          "order": 2,
           "slug": "21st-century-cures-act",
           "title": "21st Century Cures Act",
           "summary": "The landmark 2016 legislation that mandated interoperability, prohibited information blocking, and established FHIR APIs as the standard for patient data access.",
           "estimatedMinutes": 25,
           "isPublished": true,
-          "tags": ["cures-act", "information-blocking", "interoperability", "TEFCA", "ONC"],
-          "relatedLessonIds": ["lesson_hipaa", "lesson_fhir"],
+          "tags": [
+            "cures-act",
+            "information-blocking",
+            "interoperability",
+            "TEFCA",
+            "ONC"
+          ],
+          "relatedLessonIds": [
+            "lesson_hipaa",
+            "lesson_fhir"
+          ],
           "createdAt": "2026-05-25T00:00:00Z",
           "updatedAt": "2026-05-25T00:00:00Z",
           "objectives": [
-            { "id": "obj_ca1", "text": "Summarize the core provisions of the 21st Century Cures Act relevant to HIE" },
-            { "id": "obj_ca2", "text": "Define information blocking and identify the eight regulatory exceptions" },
-            { "id": "obj_ca3", "text": "Explain TEFCA and the role of Qualified Health Information Networks (QHINs)" },
-            { "id": "obj_ca4", "text": "Connect Cures Act requirements to your organization's current compliance obligations" }
+            {
+              "id": "obj_ca1",
+              "text": "Summarize the core provisions of the 21st Century Cures Act relevant to HIE"
+            },
+            {
+              "id": "obj_ca2",
+              "text": "Define information blocking and identify the eight regulatory exceptions"
+            },
+            {
+              "id": "obj_ca3",
+              "text": "Explain TEFCA and the role of Qualified Health Information Networks (QHINs)"
+            },
+            {
+              "id": "obj_ca4",
+              "text": "Connect Cures Act requirements to your organization's current compliance obligations"
+            }
           ],
           "contentBlocks": [
             {
@@ -286,12 +321,36 @@
               "type": "concepts_grid",
               "heading": "Key Cures Act concepts",
               "items": [
-                { "icon": "ti-ban", "title": "Information blocking", "body": "Any practice that unreasonably restricts access, exchange, or use of EHI. Applies to health IT developers, HIE networks, and providers." },
-                { "icon": "ti-list-check", "title": "8 exceptions", "body": "Preventing harm, privacy, security, infeasibility, health IT performance, content and manner, fees, and licensing. Know these — they define your compliance space." },
-                { "icon": "ti-api", "title": "FHIR R4 APIs", "body": "Certified EHRs must expose standardized FHIR R4 APIs for patient-facing and population-level data access. No information blocking through technical barriers." },
-                { "icon": "ti-network", "title": "TEFCA / QHINs", "body": "Qualified Health Information Networks operate under a Common Agreement to enable nationwide interoperability. Your HIE may connect through a QHIN." },
-                { "icon": "ti-user-check", "title": "Patient access rights", "body": "Patients have a right to access their EHI electronically at no cost through third-party apps. Blocking this is a violation." },
-                { "icon": "ti-alert-triangle", "title": "Penalties", "body": "Information blocking by health IT developers: up to $1M per violation. Providers: referred to OIG for appropriate disincentives." }
+                {
+                  "icon": "ti-ban",
+                  "title": "Information blocking",
+                  "body": "Any practice that unreasonably restricts access, exchange, or use of EHI. Applies to health IT developers, HIE networks, and providers."
+                },
+                {
+                  "icon": "ti-list-check",
+                  "title": "8 exceptions",
+                  "body": "Preventing harm, privacy, security, infeasibility, health IT performance, content and manner, fees, and licensing. Know these — they define your compliance space."
+                },
+                {
+                  "icon": "ti-api",
+                  "title": "FHIR R4 APIs",
+                  "body": "Certified EHRs must expose standardized FHIR R4 APIs for patient-facing and population-level data access. No information blocking through technical barriers."
+                },
+                {
+                  "icon": "ti-network",
+                  "title": "TEFCA / QHINs",
+                  "body": "Qualified Health Information Networks operate under a Common Agreement to enable nationwide interoperability. Your HIE may connect through a QHIN."
+                },
+                {
+                  "icon": "ti-user-check",
+                  "title": "Patient access rights",
+                  "body": "Patients have a right to access their EHI electronically at no cost through third-party apps. Blocking this is a violation."
+                },
+                {
+                  "icon": "ti-alert-triangle",
+                  "title": "Penalties",
+                  "body": "Information blocking by health IT developers: up to $1M per violation. Providers: referred to OIG for appropriate disincentives."
+                }
               ]
             },
             {
@@ -306,9 +365,21 @@
               "leftLabel": "Actor",
               "rightLabel": "Primary obligation",
               "rows": [
-                { "label": "Health IT developers (EHR vendors)", "left": "Up to $1M per violation", "right": "Must not build features that restrict data access" },
-                { "label": "Health Information Networks (HIEs)", "left": "OIG referral / disincentives", "right": "Must not create barriers to data sharing" },
-                { "label": "Healthcare providers", "left": "OIG referral / disincentives", "right": "Must not unreasonably withhold patient data" }
+                {
+                  "label": "Health IT developers (EHR vendors)",
+                  "left": "Up to $1M per violation",
+                  "right": "Must not build features that restrict data access"
+                },
+                {
+                  "label": "Health Information Networks (HIEs)",
+                  "left": "OIG referral / disincentives",
+                  "right": "Must not create barriers to data sharing"
+                },
+                {
+                  "label": "Healthcare providers",
+                  "left": "OIG referral / disincentives",
+                  "right": "Must not unreasonably withhold patient data"
+                }
               ]
             },
             {
@@ -336,10 +407,26 @@
                 "points": 1,
                 "explanation": "Information blocking is specifically defined as practices that unreasonably interfere with access, exchange, or use of EHI — not all data sharing restrictions are prohibited.",
                 "options": [
-                  { "id": "opt_ca1a", "text": "Any sharing of patient data with third-party applications", "isCorrect": false },
-                  { "id": "opt_ca1b", "text": "Practices that unreasonably interfere with access, exchange, or use of Electronic Health Information", "isCorrect": true },
-                  { "id": "opt_ca1c", "text": "Refusing to adopt FHIR standards voluntarily", "isCorrect": false },
-                  { "id": "opt_ca1d", "text": "Charging any fees for data access", "isCorrect": false }
+                  {
+                    "id": "opt_ca1a",
+                    "text": "Any sharing of patient data with third-party applications",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ca1b",
+                    "text": "Practices that unreasonably interfere with access, exchange, or use of Electronic Health Information",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_ca1c",
+                    "text": "Refusing to adopt FHIR standards voluntarily",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_ca1d",
+                    "text": "Charging any fees for data access",
+                    "isCorrect": false
+                  }
                 ]
               },
               {
@@ -348,56 +435,136 @@
                 "question": "Which of the following entities are directly subject to information blocking rules under the Cures Act? (Select all that apply)",
                 "points": 2,
                 "options": [
-                  { "id": "opt_ca2a", "text": "Health IT developers (EHR vendors)", "isCorrect": true },
-                  { "id": "opt_ca2b", "text": "Health Information Networks (HIEs)", "isCorrect": true },
-                  { "id": "opt_ca2c", "text": "Healthcare providers", "isCorrect": true },
-                  { "id": "opt_ca2d", "text": "Individual patients requesting their own records", "isCorrect": false }
+                  {
+                    "id": "opt_ca2a",
+                    "text": "Health IT developers (EHR vendors)",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_ca2b",
+                    "text": "Health Information Networks (HIEs)",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_ca2c",
+                    "text": "Healthcare providers",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_ca2d",
+                    "text": "Individual patients requesting their own records",
+                    "isCorrect": false
+                  }
                 ]
               }
             ]
           }
         },
-
         {
           "id": "lesson_vt_legislation",
           "trackId": "track_policy",
           "pillar": "policy",
-          "order": 4,
+          "order": 3,
           "slug": "vermont-act-167-act-68",
           "title": "Vermont Act 167 & Act 68",
           "summary": "Vermont's landmark health reform legislation: Act 167's HIE mandate and hospital sustainability work, and Act 68's structural transformation goals and AHS transition.",
           "estimatedMinutes": 20,
           "isPublished": true,
-          "tags": ["vermont", "act-167", "act-68", "GMCB", "VITL", "VHIE"],
+          "tags": [
+            "vermont",
+            "act-167",
+            "act-68",
+            "GMCB",
+            "VITL",
+            "VHIE"
+          ],
           "createdAt": "2026-05-25T00:00:00Z",
           "updatedAt": "2026-05-25T00:00:00Z",
           "objectives": [
-            { "id": "obj_vt1", "text": "Summarize the key HIE-related provisions of Vermont Act 167 (2022)" },
-            { "id": "obj_vt2", "text": "Explain Act 68 (2025) and the transition of authority to AHS" },
-            { "id": "obj_vt3", "text": "Describe the roles of GMCB, VITL, DVHA, and AHS in Vermont's HIE ecosystem" },
-            { "id": "obj_vt4", "text": "Understand the 'one record per Vermonter' strategic vision" }
+            {
+              "id": "obj_vt1",
+              "text": "Summarize the key HIE-related provisions of Vermont Act 167 (2022)"
+            },
+            {
+              "id": "obj_vt2",
+              "text": "Explain Act 68 (2025) and the transition of authority to AHS"
+            },
+            {
+              "id": "obj_vt3",
+              "text": "Describe the roles of GMCB, VITL, DVHA, and AHS in Vermont's HIE ecosystem"
+            },
+            {
+              "id": "obj_vt4",
+              "text": "Understand the 'one record per Vermonter' strategic vision"
+            }
           ],
           "contentBlocks": [
             {
               "type": "timeline",
               "heading": "Vermont health reform legislative history",
               "items": [
-                { "year": "2011", "title": "Vermont Act 48", "body": "Establishes the Green Mountain Care Board (GMCB) and a framework for universal healthcare coverage in Vermont.", "pillar": "policy" },
-                { "year": "2014", "title": "VITL operationalized", "body": "Vermont Information Technology Leaders takes on operational responsibility for the statewide Vermont Health Information Exchange (VHIE).", "pillar": "technology" },
-                { "year": "2017", "title": "Vermont All-Payer ACO Model", "body": "Vermont becomes the first state to implement an all-payer ACO model, aligning Medicare, Medicaid, and commercial payers under shared VBC goals.", "pillar": "economics" },
-                { "year": "2022", "title": "Vermont Act 167", "body": "Comprehensive reform legislation: HIE data integration strategy, hospital sustainability workstreams, Blueprint for Health, prior authorization reporting, and the 'one record per Vermonter' mandate.", "pillar": "policy" },
-                { "year": "2025", "title": "Vermont Act 68", "body": "Transfers statewide transformation planning from GMCB to AHS. $2M for hospital telehealth incentive grants. Structural health system changes focused on cost reduction and equity.", "pillar": "policy" },
-                { "year": "2025", "title": "Vermont Act 62", "body": "Transfers Vermont's Health Information Technology Plan responsibility from GMCB to DVHA. Requires annual HIE Strategic Plan updates.", "pillar": "policy" }
+                {
+                  "year": "2011",
+                  "title": "Vermont Act 48",
+                  "body": "Establishes the Green Mountain Care Board (GMCB) and a framework for universal healthcare coverage in Vermont.",
+                  "pillar": "policy"
+                },
+                {
+                  "year": "2014",
+                  "title": "VITL operationalized",
+                  "body": "Vermont Information Technology Leaders takes on operational responsibility for the statewide Vermont Health Information Exchange (VHIE).",
+                  "pillar": "technology"
+                },
+                {
+                  "year": "2017",
+                  "title": "Vermont All-Payer ACO Model",
+                  "body": "Vermont becomes the first state to implement an all-payer ACO model, aligning Medicare, Medicaid, and commercial payers under shared VBC goals.",
+                  "pillar": "economics"
+                },
+                {
+                  "year": "2022",
+                  "title": "Vermont Act 167",
+                  "body": "Comprehensive reform legislation: HIE data integration strategy, hospital sustainability workstreams, Blueprint for Health, prior authorization reporting, and the 'one record per Vermonter' mandate.",
+                  "pillar": "policy"
+                },
+                {
+                  "year": "2025",
+                  "title": "Vermont Act 68",
+                  "body": "Transfers statewide transformation planning from GMCB to AHS. $2M for hospital telehealth incentive grants. Structural health system changes focused on cost reduction and equity.",
+                  "pillar": "policy"
+                },
+                {
+                  "year": "2025",
+                  "title": "Vermont Act 62",
+                  "body": "Transfers Vermont's Health Information Technology Plan responsibility from GMCB to DVHA. Requires annual HIE Strategic Plan updates.",
+                  "pillar": "policy"
+                }
               ]
             },
             {
               "type": "concepts_grid",
               "heading": "Key organizations in Vermont's HIE ecosystem",
               "items": [
-                { "icon": "ti-building-community", "title": "AHS", "body": "Vermont Agency of Human Services — now leads statewide health transformation planning per Act 68. Parent agency for DVHA and other health programs." },
-                { "icon": "ti-chart-bar", "title": "GMCB", "body": "Green Mountain Care Board — regulates hospital budgets and health insurance rates. Previously led HIE strategy and hospital sustainability work." },
-                { "icon": "ti-device-desktop", "title": "VITL", "body": "Vermont Information Technology Leaders — operates the VHIE. Connects hospitals, clinics, labs, and pharmacies. Vermont's HIE operator." },
-                { "icon": "ti-database", "title": "DVHA / VHCURES", "body": "Department of Vermont Health Access administers Medicaid and VHCURES — Vermont's all-payer claims database. Now coordinates the HIT Plan per Act 62." }
+                {
+                  "icon": "ti-building-community",
+                  "title": "AHS",
+                  "body": "Vermont Agency of Human Services — now leads statewide health transformation planning per Act 68. Parent agency for DVHA and other health programs."
+                },
+                {
+                  "icon": "ti-chart-bar",
+                  "title": "GMCB",
+                  "body": "Green Mountain Care Board — regulates hospital budgets and health insurance rates. Previously led HIE strategy and hospital sustainability work."
+                },
+                {
+                  "icon": "ti-device-desktop",
+                  "title": "VITL",
+                  "body": "Vermont Information Technology Leaders — operates the VHIE. Connects hospitals, clinics, labs, and pharmacies. Vermont's HIE operator."
+                },
+                {
+                  "icon": "ti-database",
+                  "title": "DVHA / VHCURES",
+                  "body": "Department of Vermont Health Access administers Medicaid and VHCURES — Vermont's all-payer claims database. Now coordinates the HIT Plan per Act 62."
+                }
               ]
             },
             {
@@ -420,12 +587,36 @@
               "type": "glossary_terms",
               "heading": "Vermont HIE terminology",
               "terms": [
-                { "term": "VHIE", "definition": "Vermont Health Information Exchange — the statewide clinical data exchange operated by VITL.", "pillar": "technology" },
-                { "term": "VHCURES", "definition": "Vermont Health Care Uniform Reporting and Evaluation System — the all-payer claims database.", "pillar": "economics" },
-                { "term": "Blueprint for Health", "definition": "Vermont's multi-payer primary care transformation model using Community Health Teams to support complex patients.", "pillar": "clinical" },
-                { "term": "GMCB", "definition": "Green Mountain Care Board — Vermont's independent regulatory body for hospital budgets and health insurance rates.", "pillar": "policy" },
-                { "term": "VITL", "definition": "Vermont Information Technology Leaders — non-profit organization that operates the VHIE.", "pillar": "technology" },
-                { "term": "UHDS", "definition": "Unified Health Data System — the planned integration of VHCURES and VHIE data mandated by Act 167.", "pillar": "technology" }
+                {
+                  "term": "VHIE",
+                  "definition": "Vermont Health Information Exchange — the statewide clinical data exchange operated by VITL.",
+                  "pillar": "technology"
+                },
+                {
+                  "term": "VHCURES",
+                  "definition": "Vermont Health Care Uniform Reporting and Evaluation System — the all-payer claims database.",
+                  "pillar": "economics"
+                },
+                {
+                  "term": "Blueprint for Health",
+                  "definition": "Vermont's multi-payer primary care transformation model using Community Health Teams to support complex patients.",
+                  "pillar": "clinical"
+                },
+                {
+                  "term": "GMCB",
+                  "definition": "Green Mountain Care Board — Vermont's independent regulatory body for hospital budgets and health insurance rates.",
+                  "pillar": "policy"
+                },
+                {
+                  "term": "VITL",
+                  "definition": "Vermont Information Technology Leaders — non-profit organization that operates the VHIE.",
+                  "pillar": "technology"
+                },
+                {
+                  "term": "UHDS",
+                  "definition": "Unified Health Data System — the planned integration of VHCURES and VHIE data mandated by Act 167.",
+                  "pillar": "technology"
+                }
               ]
             }
           ],
@@ -441,10 +632,26 @@
                 "points": 1,
                 "explanation": "Act 68 moved transformation planning from GMCB to the Vermont Agency of Human Services (AHS), which now leads the statewide reform agenda.",
                 "options": [
-                  { "id": "opt_vt1a", "text": "The Green Mountain Care Board (GMCB)", "isCorrect": false },
-                  { "id": "opt_vt1b", "text": "Vermont Information Technology Leaders (VITL)", "isCorrect": false },
-                  { "id": "opt_vt1c", "text": "The Vermont Agency of Human Services (AHS)", "isCorrect": true },
-                  { "id": "opt_vt1d", "text": "The Vermont Legislature directly", "isCorrect": false }
+                  {
+                    "id": "opt_vt1a",
+                    "text": "The Green Mountain Care Board (GMCB)",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_vt1b",
+                    "text": "Vermont Information Technology Leaders (VITL)",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_vt1c",
+                    "text": "The Vermont Agency of Human Services (AHS)",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_vt1d",
+                    "text": "The Vermont Legislature directly",
+                    "isCorrect": false
+                  }
                 ]
               },
               {
@@ -453,10 +660,26 @@
                 "question": "The 'one record per Vermonter' vision from Act 167 refers to:",
                 "points": 1,
                 "options": [
-                  { "id": "opt_vt2a", "text": "A mandate for all Vermonters to use a single EHR vendor", "isCorrect": false },
-                  { "id": "opt_vt2b", "text": "A strategy to merge VHCURES claims data with VHIE clinical data into a unified longitudinal health record", "isCorrect": true },
-                  { "id": "opt_vt2c", "text": "A paper medical record system for rural areas without broadband", "isCorrect": false },
-                  { "id": "opt_vt2d", "text": "A single insurance plan for all Vermont residents", "isCorrect": false }
+                  {
+                    "id": "opt_vt2a",
+                    "text": "A mandate for all Vermonters to use a single EHR vendor",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_vt2b",
+                    "text": "A strategy to merge VHCURES claims data with VHIE clinical data into a unified longitudinal health record",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_vt2c",
+                    "text": "A paper medical record system for rural areas without broadband",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_vt2d",
+                    "text": "A single insurance plan for all Vermont residents",
+                    "isCorrect": false
+                  }
                 ]
               }
             ]
@@ -464,7 +687,6 @@
         }
       ]
     },
-
     {
       "id": "track_technology",
       "courseId": "course_htr_onboarding_v1",
@@ -474,11 +696,14 @@
       "title": "Technology & Interoperability",
       "description": "The standards, infrastructure, and architecture that power health data exchange. Covers HL7, FHIR, Master Patient Index, terminology services, and integration engine design.",
       "icon": "ti-cpu",
-      "targetAudience": ["Technical staff", "Health informaticists", "All staff (foundations)"],
+      "targetAudience": [
+        "Technical staff",
+        "Health informaticists",
+        "All staff (foundations)"
+      ],
       "isPublished": true,
       "createdAt": "2026-05-25T00:00:00Z",
       "updatedAt": "2026-05-25T00:00:00Z",
-
       "lessons": [
         {
           "id": "lesson_fhir",
@@ -490,38 +715,109 @@
           "summary": "From HL7 v2 pipe-delimited messages to FHIR R4 RESTful APIs — the evolution of health data standards and why they matter for HIE.",
           "estimatedMinutes": 30,
           "isPublished": true,
-          "tags": ["HL7", "FHIR", "interoperability", "standards", "CDA", "SMART"],
-          "relatedLessonIds": ["lesson_cures_act", "lesson_mpi"],
+          "tags": [
+            "HL7",
+            "FHIR",
+            "interoperability",
+            "standards",
+            "CDA",
+            "SMART"
+          ],
+          "relatedLessonIds": [
+            "lesson_cures_act",
+            "lesson_mpi"
+          ],
           "createdAt": "2026-05-25T00:00:00Z",
           "updatedAt": "2026-05-25T00:00:00Z",
           "objectives": [
-            { "id": "obj_f1", "text": "Distinguish HL7 v2, CDA/v3, and FHIR R4 and explain when each is used" },
-            { "id": "obj_f2", "text": "Describe FHIR resources, RESTful operations, and the USCDI" },
-            { "id": "obj_f3", "text": "Explain SMART on FHIR and its role in patient-facing app authorization" },
-            { "id": "obj_f4", "text": "Identify the FHIR standards relevant to your organization's current integrations" }
+            {
+              "id": "obj_f1",
+              "text": "Distinguish HL7 v2, CDA/v3, and FHIR R4 and explain when each is used"
+            },
+            {
+              "id": "obj_f2",
+              "text": "Describe FHIR resources, RESTful operations, and the USCDI"
+            },
+            {
+              "id": "obj_f3",
+              "text": "Explain SMART on FHIR and its role in patient-facing app authorization"
+            },
+            {
+              "id": "obj_f4",
+              "text": "Identify the FHIR standards relevant to your organization's current integrations"
+            }
           ],
           "contentBlocks": [
             {
               "type": "timeline",
               "heading": "Health data standards evolution",
               "items": [
-                { "year": "1987", "title": "HL7 v2 introduced", "body": "Pipe-delimited messaging standard (e.g., MSH|ADT^A01). Still the most widely deployed healthcare messaging standard in production today.", "pillar": "technology" },
-                { "year": "2005", "title": "HL7 CDA / C-CDA", "body": "Clinical Document Architecture — XML-based structured documents. C-CDA summaries power transitions of care and HIE document exchange.", "pillar": "technology" },
-                { "year": "2012", "title": "FHIR introduced", "body": "Fast Healthcare Interoperability Resources — RESTful, resource-based standard designed for modern web APIs. Far more developer-friendly than v2 or CDA.", "pillar": "technology" },
-                { "year": "2020", "title": "FHIR R4 mandated", "body": "ONC and CMS Interoperability rules require FHIR R4 for certified health IT under the 21st Century Cures Act. The standard for new integrations.", "pillar": "technology" },
-                { "year": "2022+", "title": "TEFCA & QHINs", "body": "FHIR-based nationwide exchange network goes live. QHINs enable cross-network query and retrieval at scale.", "pillar": "technology" }
+                {
+                  "year": "1987",
+                  "title": "HL7 v2 introduced",
+                  "body": "Pipe-delimited messaging standard (e.g., MSH|ADT^A01). Still the most widely deployed healthcare messaging standard in production today.",
+                  "pillar": "technology"
+                },
+                {
+                  "year": "2005",
+                  "title": "HL7 CDA / C-CDA",
+                  "body": "Clinical Document Architecture — XML-based structured documents. C-CDA summaries power transitions of care and HIE document exchange.",
+                  "pillar": "technology"
+                },
+                {
+                  "year": "2012",
+                  "title": "FHIR introduced",
+                  "body": "Fast Healthcare Interoperability Resources — RESTful, resource-based standard designed for modern web APIs. Far more developer-friendly than v2 or CDA.",
+                  "pillar": "technology"
+                },
+                {
+                  "year": "2020",
+                  "title": "FHIR R4 mandated",
+                  "body": "ONC and CMS Interoperability rules require FHIR R4 for certified health IT under the 21st Century Cures Act. The standard for new integrations.",
+                  "pillar": "technology"
+                },
+                {
+                  "year": "2022+",
+                  "title": "TEFCA & QHINs",
+                  "body": "FHIR-based nationwide exchange network goes live. QHINs enable cross-network query and retrieval at scale.",
+                  "pillar": "technology"
+                }
               ]
             },
             {
               "type": "concepts_grid",
               "heading": "Core standards concepts",
               "items": [
-                { "icon": "ti-code-dots", "title": "HL7 v2 messages", "body": "Segment-based messages (MSH, PID, OBR, OBX) sent between systems. ADT messages (admit/discharge/transfer) are the workhorse of HIE alert feeds." },
-                { "icon": "ti-file-text", "title": "C-CDA documents", "body": "Consolidated Clinical Document Architecture — structured XML summaries (CCD, discharge summary, referral note) for transitions of care." },
-                { "icon": "ti-box-multiple", "title": "FHIR resources", "body": "Patient, Observation, Condition, MedicationRequest, DiagnosticReport — discrete data objects with defined schemas, accessible via REST API endpoints." },
-                { "icon": "ti-lock-access", "title": "SMART on FHIR", "body": "Authorization framework (OAuth2-based) enabling third-party apps to access EHR data with patient or clinician consent. Powers patient-facing health apps." },
-                { "icon": "ti-list", "title": "USCDI", "body": "US Core Data for Interoperability — the minimum data set that must be available through certified EHR APIs. Defines the floor for FHIR R4 conformance." },
-                { "icon": "ti-arrows-exchange", "title": "ADT notifications", "body": "Admit-Discharge-Transfer alerts (HL7 v2 or FHIR) — the foundational real-time signal for care coordination workflows in an HIE." }
+                {
+                  "icon": "ti-code-dots",
+                  "title": "HL7 v2 messages",
+                  "body": "Segment-based messages (MSH, PID, OBR, OBX) sent between systems. ADT messages (admit/discharge/transfer) are the workhorse of HIE alert feeds."
+                },
+                {
+                  "icon": "ti-file-text",
+                  "title": "C-CDA documents",
+                  "body": "Consolidated Clinical Document Architecture — structured XML summaries (CCD, discharge summary, referral note) for transitions of care."
+                },
+                {
+                  "icon": "ti-box-multiple",
+                  "title": "FHIR resources",
+                  "body": "Patient, Observation, Condition, MedicationRequest, DiagnosticReport — discrete data objects with defined schemas, accessible via REST API endpoints."
+                },
+                {
+                  "icon": "ti-lock-access",
+                  "title": "SMART on FHIR",
+                  "body": "Authorization framework (OAuth2-based) enabling third-party apps to access EHR data with patient or clinician consent. Powers patient-facing health apps."
+                },
+                {
+                  "icon": "ti-list",
+                  "title": "USCDI",
+                  "body": "US Core Data for Interoperability — the minimum data set that must be available through certified EHR APIs. Defines the floor for FHIR R4 conformance."
+                },
+                {
+                  "icon": "ti-arrows-exchange",
+                  "title": "ADT notifications",
+                  "body": "Admit-Discharge-Transfer alerts (HL7 v2 or FHIR) — the foundational real-time signal for care coordination workflows in an HIE."
+                }
               ]
             },
             {
@@ -530,12 +826,36 @@
               "leftLabel": "HL7 v2",
               "rightLabel": "FHIR R4",
               "rows": [
-                { "label": "Format", "left": "Pipe-delimited text (MSH|EVN|PID...)", "right": "JSON or XML resources via REST API" },
-                { "label": "Integration style", "left": "Point-to-point, push-based messaging", "right": "RESTful: GET /Patient/{id}, POST /Observation" },
-                { "label": "Flexibility", "left": "High — but inconsistent implementations", "right": "Standardized structure with conformance profiles" },
-                { "label": "Adoption", "left": "~95% of existing hospital integrations", "right": "Required for all new certified EHR integrations" },
-                { "label": "Developer experience", "left": "Requires specialized HL7 parsing expertise", "right": "Standard web development skills apply" },
-                { "label": "Patient access", "left": "Not designed for direct patient access", "right": "Enables patient-facing apps via SMART on FHIR" }
+                {
+                  "label": "Format",
+                  "left": "Pipe-delimited text (MSH|EVN|PID...)",
+                  "right": "JSON or XML resources via REST API"
+                },
+                {
+                  "label": "Integration style",
+                  "left": "Point-to-point, push-based messaging",
+                  "right": "RESTful: GET /Patient/{id}, POST /Observation"
+                },
+                {
+                  "label": "Flexibility",
+                  "left": "High — but inconsistent implementations",
+                  "right": "Standardized structure with conformance profiles"
+                },
+                {
+                  "label": "Adoption",
+                  "left": "~95% of existing hospital integrations",
+                  "right": "Required for all new certified EHR integrations"
+                },
+                {
+                  "label": "Developer experience",
+                  "left": "Requires specialized HL7 parsing expertise",
+                  "right": "Standard web development skills apply"
+                },
+                {
+                  "label": "Patient access",
+                  "left": "Not designed for direct patient access",
+                  "right": "Enables patient-facing apps via SMART on FHIR"
+                }
               ]
             },
             {
@@ -568,10 +888,26 @@
                 "question": "A FHIR 'resource' is best described as:",
                 "points": 1,
                 "options": [
-                  { "id": "opt_f1a", "text": "A PDF document containing patient records", "isCorrect": false },
-                  { "id": "opt_f1b", "text": "A discrete, standardized data object (e.g., Patient, Observation) accessible via REST API", "isCorrect": true },
-                  { "id": "opt_f1c", "text": "An HL7 v2 message segment like MSH or PID", "isCorrect": false },
-                  { "id": "opt_f1d", "text": "A claims billing code in ICD-10 format", "isCorrect": false }
+                  {
+                    "id": "opt_f1a",
+                    "text": "A PDF document containing patient records",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_f1b",
+                    "text": "A discrete, standardized data object (e.g., Patient, Observation) accessible via REST API",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_f1c",
+                    "text": "An HL7 v2 message segment like MSH or PID",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_f1d",
+                    "text": "A claims billing code in ICD-10 format",
+                    "isCorrect": false
+                  }
                 ]
               },
               {
@@ -581,16 +917,31 @@
                 "points": 1,
                 "explanation": "SMART on FHIR provides an OAuth2-based authorization framework that enables third-party apps to access EHR data with patient or clinician consent.",
                 "options": [
-                  { "id": "opt_f2a", "text": "Converting HL7 v2 messages to FHIR resources", "isCorrect": false },
-                  { "id": "opt_f2b", "text": "Encrypting health data in transit", "isCorrect": false },
-                  { "id": "opt_f2c", "text": "Authorizing third-party apps to access EHR data with patient or clinician consent", "isCorrect": true },
-                  { "id": "opt_f2d", "text": "Storing FHIR resources in a relational database", "isCorrect": false }
+                  {
+                    "id": "opt_f2a",
+                    "text": "Converting HL7 v2 messages to FHIR resources",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_f2b",
+                    "text": "Encrypting health data in transit",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_f2c",
+                    "text": "Authorizing third-party apps to access EHR data with patient or clinician consent",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_f2d",
+                    "text": "Storing FHIR resources in a relational database",
+                    "isCorrect": false
+                  }
                 ]
               }
             ]
           }
         },
-
         {
           "id": "lesson_mpi",
           "trackId": "track_technology",
@@ -601,14 +952,33 @@
           "summary": "Patient identity matching and clinical terminology standards — the infrastructure that ensures the right data belongs to the right patient and means the same thing everywhere.",
           "estimatedMinutes": 25,
           "isPublished": true,
-          "tags": ["MPI", "patient-matching", "LOINC", "SNOMED", "RxNorm", "terminology"],
+          "tags": [
+            "MPI",
+            "patient-matching",
+            "LOINC",
+            "SNOMED",
+            "RxNorm",
+            "terminology"
+          ],
           "createdAt": "2026-05-25T00:00:00Z",
           "updatedAt": "2026-05-25T00:00:00Z",
           "objectives": [
-            { "id": "obj_m1", "text": "Explain how a Master Patient Index works and why it is foundational to HIE" },
-            { "id": "obj_m2", "text": "Distinguish deterministic and probabilistic patient matching algorithms" },
-            { "id": "obj_m3", "text": "Identify the four major clinical terminology standards: LOINC, SNOMED CT, RxNorm, ICD-10" },
-            { "id": "obj_m4", "text": "Explain why terminology mapping is critical to data quality and analytics" }
+            {
+              "id": "obj_m1",
+              "text": "Explain how a Master Patient Index works and why it is foundational to HIE"
+            },
+            {
+              "id": "obj_m2",
+              "text": "Distinguish deterministic and probabilistic patient matching algorithms"
+            },
+            {
+              "id": "obj_m3",
+              "text": "Identify the four major clinical terminology standards: LOINC, SNOMED CT, RxNorm, ICD-10"
+            },
+            {
+              "id": "obj_m4",
+              "text": "Explain why terminology mapping is critical to data quality and analytics"
+            }
           ],
           "contentBlocks": [
             {
@@ -620,12 +990,36 @@
               "type": "concepts_grid",
               "heading": "MPI and matching fundamentals",
               "items": [
-                { "icon": "ti-fingerprint", "title": "MPI", "body": "Assigns a Master Patient Identifier (MPID) that links a patient's records across all participating systems." },
-                { "icon": "ti-equal", "title": "Deterministic matching", "body": "Exact match on defined fields (SSN + DOB + surname). High precision, lower recall — misses records with any data entry errors." },
-                { "icon": "ti-math-function", "title": "Probabilistic matching", "body": "Weighted scoring across multiple fields (Fellegi-Sunter algorithm). Handles typos, name variations, and missing fields. Produces a match confidence score." },
-                { "icon": "ti-x", "title": "False positive", "body": "Two different patients incorrectly linked — the most dangerous error. Can result in wrong patient receiving another's clinical information." },
-                { "icon": "ti-copy", "title": "False negative", "body": "One patient's records remain fragmented across multiple identities. Causes care gaps, duplicate testing, analytics failures." },
-                { "icon": "ti-refresh", "title": "Referential matching", "body": "Uses a national reference database (e.g., LexisNexis) to augment matching — particularly effective for patients who change address or name." }
+                {
+                  "icon": "ti-fingerprint",
+                  "title": "MPI",
+                  "body": "Assigns a Master Patient Identifier (MPID) that links a patient's records across all participating systems."
+                },
+                {
+                  "icon": "ti-equal",
+                  "title": "Deterministic matching",
+                  "body": "Exact match on defined fields (SSN + DOB + surname). High precision, lower recall — misses records with any data entry errors."
+                },
+                {
+                  "icon": "ti-math-function",
+                  "title": "Probabilistic matching",
+                  "body": "Weighted scoring across multiple fields (Fellegi-Sunter algorithm). Handles typos, name variations, and missing fields. Produces a match confidence score."
+                },
+                {
+                  "icon": "ti-x",
+                  "title": "False positive",
+                  "body": "Two different patients incorrectly linked — the most dangerous error. Can result in wrong patient receiving another's clinical information."
+                },
+                {
+                  "icon": "ti-copy",
+                  "title": "False negative",
+                  "body": "One patient's records remain fragmented across multiple identities. Causes care gaps, duplicate testing, analytics failures."
+                },
+                {
+                  "icon": "ti-refresh",
+                  "title": "Referential matching",
+                  "body": "Uses a national reference database (e.g., LexisNexis) to augment matching — particularly effective for patients who change address or name."
+                }
               ]
             },
             {
@@ -636,10 +1030,26 @@
             {
               "type": "key_stat",
               "stats": [
-                { "value": "~50%", "label": "of HIE records have at least one demographic discrepancy", "source": "ONC research" },
-                { "value": "100K+", "label": "LOINC codes for lab and clinical observations", "source": "Regenstrief Institute" },
-                { "value": "350K+", "label": "SNOMED CT clinical concepts", "source": "SNOMED International" },
-                { "value": "~18", "label": "HIPAA identifiers that constitute PHI", "source": "HHS OCR" }
+                {
+                  "value": "~50%",
+                  "label": "of HIE records have at least one demographic discrepancy",
+                  "source": "ONC research"
+                },
+                {
+                  "value": "100K+",
+                  "label": "LOINC codes for lab and clinical observations",
+                  "source": "Regenstrief Institute"
+                },
+                {
+                  "value": "350K+",
+                  "label": "SNOMED CT clinical concepts",
+                  "source": "SNOMED International"
+                },
+                {
+                  "value": "~18",
+                  "label": "HIPAA identifiers that constitute PHI",
+                  "source": "HHS OCR"
+                }
               ]
             },
             {
@@ -660,10 +1070,26 @@
                 "points": 1,
                 "explanation": "A false negative means one patient's records across systems fail to be matched and remain fragmented — causing care gaps and analytics failures. False positives (wrong patients linked) are the more dangerous error.",
                 "options": [
-                  { "id": "opt_m1a", "text": "Two different patients are incorrectly linked together", "isCorrect": false },
-                  { "id": "opt_m1b", "text": "One patient's records across systems fail to be matched and remain fragmented", "isCorrect": true },
-                  { "id": "opt_m1c", "text": "A lab test result is coded with the wrong LOINC code", "isCorrect": false },
-                  { "id": "opt_m1d", "text": "An API call returns a 404 error", "isCorrect": false }
+                  {
+                    "id": "opt_m1a",
+                    "text": "Two different patients are incorrectly linked together",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_m1b",
+                    "text": "One patient's records across systems fail to be matched and remain fragmented",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_m1c",
+                    "text": "A lab test result is coded with the wrong LOINC code",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_m1d",
+                    "text": "An API call returns a 404 error",
+                    "isCorrect": false
+                  }
                 ]
               },
               {
@@ -672,16 +1098,31 @@
                 "question": "Which terminology standard is specifically used to standardize laboratory test names and clinical observations?",
                 "points": 1,
                 "options": [
-                  { "id": "opt_m2a", "text": "ICD-10-CM", "isCorrect": false },
-                  { "id": "opt_m2b", "text": "RxNorm", "isCorrect": false },
-                  { "id": "opt_m2c", "text": "LOINC", "isCorrect": true },
-                  { "id": "opt_m2d", "text": "SNOMED CT", "isCorrect": false }
+                  {
+                    "id": "opt_m2a",
+                    "text": "ICD-10-CM",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_m2b",
+                    "text": "RxNorm",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_m2c",
+                    "text": "LOINC",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_m2d",
+                    "text": "SNOMED CT",
+                    "isCorrect": false
+                  }
                 ]
               }
             ]
           }
         },
-
         {
           "id": "lesson_integration",
           "trackId": "track_technology",
@@ -692,14 +1133,33 @@
           "summary": "The middleware that routes and transforms health data — how integration engines work, HIE architecture patterns, and Vermont's technical infrastructure.",
           "estimatedMinutes": 25,
           "isPublished": true,
-          "tags": ["integration-engine", "Mirth", "architecture", "pub-sub", "VITL", "infrastructure"],
+          "tags": [
+            "integration-engine",
+            "Mirth",
+            "architecture",
+            "pub-sub",
+            "VITL",
+            "infrastructure"
+          ],
           "createdAt": "2026-05-25T00:00:00Z",
           "updatedAt": "2026-05-25T00:00:00Z",
           "objectives": [
-            { "id": "obj_i1", "text": "Describe the role of an integration engine in an HIE" },
-            { "id": "obj_i2", "text": "Explain publish-subscribe vs. point-to-point architecture" },
-            { "id": "obj_i3", "text": "Identify major integration platforms used in production HIEs" },
-            { "id": "obj_i4", "text": "Trace the path of a clinical data element from source EHR to HIE consumer" }
+            {
+              "id": "obj_i1",
+              "text": "Describe the role of an integration engine in an HIE"
+            },
+            {
+              "id": "obj_i2",
+              "text": "Explain publish-subscribe vs. point-to-point architecture"
+            },
+            {
+              "id": "obj_i3",
+              "text": "Identify major integration platforms used in production HIEs"
+            },
+            {
+              "id": "obj_i4",
+              "text": "Trace the path of a clinical data element from source EHR to HIE consumer"
+            }
           ],
           "contentBlocks": [
             {
@@ -711,12 +1171,36 @@
               "type": "concepts_grid",
               "heading": "Architecture patterns",
               "items": [
-                { "icon": "ti-point-to-point", "title": "Point-to-point", "body": "Each source system connects directly to each destination. Simple for small networks; becomes unmanageable at scale (N×M connections)." },
-                { "icon": "ti-broadcast", "title": "Hub-and-spoke", "body": "All participants connect to a central hub. Reduces connections to N+M. The dominant model for statewide HIEs like VITL." },
-                { "icon": "ti-topology-star-3", "title": "Publish-subscribe", "body": "Publishers send data to topics; subscribers receive events they care about. Scales well; supports real-time alerting (ADT feeds, care alerts)." },
-                { "icon": "ti-cloud", "title": "FHIR server", "body": "A dedicated FHIR API layer that stores resources and exposes standardized endpoints. Increasingly the target architecture for new HIE builds." },
-                { "icon": "ti-shield-lock", "title": "Security layers", "body": "TLS in transit, mTLS for server-to-server, role-based access control, audit logging, and de-identification pipelines are non-negotiable." },
-                { "icon": "ti-refresh-alert", "title": "Error handling", "body": "Messages that fail validation are quarantined, not dropped. Dead-letter queues and alerting ensure nothing silently disappears." }
+                {
+                  "icon": "ti-point-to-point",
+                  "title": "Point-to-point",
+                  "body": "Each source system connects directly to each destination. Simple for small networks; becomes unmanageable at scale (N×M connections)."
+                },
+                {
+                  "icon": "ti-broadcast",
+                  "title": "Hub-and-spoke",
+                  "body": "All participants connect to a central hub. Reduces connections to N+M. The dominant model for statewide HIEs like VITL."
+                },
+                {
+                  "icon": "ti-topology-star-3",
+                  "title": "Publish-subscribe",
+                  "body": "Publishers send data to topics; subscribers receive events they care about. Scales well; supports real-time alerting (ADT feeds, care alerts)."
+                },
+                {
+                  "icon": "ti-cloud",
+                  "title": "FHIR server",
+                  "body": "A dedicated FHIR API layer that stores resources and exposes standardized endpoints. Increasingly the target architecture for new HIE builds."
+                },
+                {
+                  "icon": "ti-shield-lock",
+                  "title": "Security layers",
+                  "body": "TLS in transit, mTLS for server-to-server, role-based access control, audit logging, and de-identification pipelines are non-negotiable."
+                },
+                {
+                  "icon": "ti-refresh-alert",
+                  "title": "Error handling",
+                  "body": "Messages that fail validation are quarantined, not dropped. Dead-letter queues and alerting ensure nothing silently disappears."
+                }
               ]
             },
             {
@@ -750,10 +1234,26 @@
                 "points": 1,
                 "explanation": "The hospital (publisher) publishes an ADT notification to the HIE hub, which routes it to all subscribers who have opted in to receive alerts for that patient — e.g., their primary care provider.",
                 "options": [
-                  { "id": "opt_i1a", "text": "The hospital directly contacts all of the patient's care team members", "isCorrect": false },
-                  { "id": "opt_i1b", "text": "The hospital publishes an ADT event; subscribers (authorized care team members) receive the notification", "isCorrect": true },
-                  { "id": "opt_i1c", "text": "The patient's record is automatically updated in all EHR systems", "isCorrect": false },
-                  { "id": "opt_i1d", "text": "The integration engine requests a FHIR resource from the patient's health plan", "isCorrect": false }
+                  {
+                    "id": "opt_i1a",
+                    "text": "The hospital directly contacts all of the patient's care team members",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_i1b",
+                    "text": "The hospital publishes an ADT event; subscribers (authorized care team members) receive the notification",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_i1c",
+                    "text": "The patient's record is automatically updated in all EHR systems",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_i1d",
+                    "text": "The integration engine requests a FHIR resource from the patient's health plan",
+                    "isCorrect": false
+                  }
                 ]
               }
             ]
@@ -761,7 +1261,6 @@
         }
       ]
     },
-
     {
       "id": "track_economics",
       "courseId": "course_htr_onboarding_v1",
@@ -771,11 +1270,14 @@
       "title": "Economics & Payment Models",
       "description": "The financial architecture of healthcare reform — value-based care models, payment incentives, and the economic case for high-value over low-value care.",
       "icon": "ti-coin",
-      "targetAudience": ["All staff", "Finance and strategy staff", "Program managers"],
+      "targetAudience": [
+        "All staff",
+        "Finance and strategy staff",
+        "Program managers"
+      ],
       "isPublished": true,
       "createdAt": "2026-05-25T00:00:00Z",
       "updatedAt": "2026-05-25T00:00:00Z",
-
       "lessons": [
         {
           "id": "lesson_vbc",
@@ -787,14 +1289,32 @@
           "summary": "The central economic transformation in healthcare — from volume-based to outcomes-based payment, and Vermont's All-Payer Model.",
           "estimatedMinutes": 25,
           "isPublished": true,
-          "tags": ["VBC", "FFS", "ACO", "all-payer-model", "payment-reform"],
+          "tags": [
+            "VBC",
+            "FFS",
+            "ACO",
+            "all-payer-model",
+            "payment-reform"
+          ],
           "createdAt": "2026-05-25T00:00:00Z",
           "updatedAt": "2026-05-25T00:00:00Z",
           "objectives": [
-            { "id": "obj_v1", "text": "Contrast fee-for-service and value-based care incentive structures" },
-            { "id": "obj_v2", "text": "Identify the main VBC payment models: shared savings, bundled payments, capitation" },
-            { "id": "obj_v3", "text": "Explain how ACOs work and their relationship to HIE data" },
-            { "id": "obj_v4", "text": "Describe Vermont's All-Payer Model and its significance nationally" }
+            {
+              "id": "obj_v1",
+              "text": "Contrast fee-for-service and value-based care incentive structures"
+            },
+            {
+              "id": "obj_v2",
+              "text": "Identify the main VBC payment models: shared savings, bundled payments, capitation"
+            },
+            {
+              "id": "obj_v3",
+              "text": "Explain how ACOs work and their relationship to HIE data"
+            },
+            {
+              "id": "obj_v4",
+              "text": "Describe Vermont's All-Payer Model and its significance nationally"
+            }
           ],
           "contentBlocks": [
             {
@@ -803,21 +1323,57 @@
               "leftLabel": "Fee-for-Service",
               "rightLabel": "Value-Based Care",
               "rows": [
-                { "label": "Payment basis", "left": "Volume — each service rendered generates payment", "right": "Outcomes — quality, efficiency, and cost reduction generate payment" },
-                { "label": "Incentive", "left": "Do more (more visits, tests, procedures = more revenue)", "right": "Do better (prevent hospitalizations, close care gaps = more revenue)" },
-                { "label": "Care coordination", "left": "Penalized — coordination takes time with no direct billing", "right": "Rewarded — coordinated care reduces avoidable costs" },
-                { "label": "Data needs", "left": "Billing codes and claims", "right": "Complete longitudinal patient data — exactly what HIE provides" },
-                { "label": "Risk", "left": "Payer bears all financial risk", "right": "Risk shared or transferred to provider based on model tier" }
+                {
+                  "label": "Payment basis",
+                  "left": "Volume — each service rendered generates payment",
+                  "right": "Outcomes — quality, efficiency, and cost reduction generate payment"
+                },
+                {
+                  "label": "Incentive",
+                  "left": "Do more (more visits, tests, procedures = more revenue)",
+                  "right": "Do better (prevent hospitalizations, close care gaps = more revenue)"
+                },
+                {
+                  "label": "Care coordination",
+                  "left": "Penalized — coordination takes time with no direct billing",
+                  "right": "Rewarded — coordinated care reduces avoidable costs"
+                },
+                {
+                  "label": "Data needs",
+                  "left": "Billing codes and claims",
+                  "right": "Complete longitudinal patient data — exactly what HIE provides"
+                },
+                {
+                  "label": "Risk",
+                  "left": "Payer bears all financial risk",
+                  "right": "Risk shared or transferred to provider based on model tier"
+                }
               ]
             },
             {
               "type": "concepts_grid",
               "heading": "Value-based payment models",
               "items": [
-                { "icon": "ti-percentage", "title": "Shared savings", "body": "Provider keeps a portion of savings below a benchmark. Upside-only (no downside risk) to two-sided (shares losses too). ACO MSSP is the federal model." },
-                { "icon": "ti-package", "title": "Bundled payments", "body": "Single payment for an episode of care (e.g., hip replacement + 90-day recovery). Provider accountable for total cost and quality of the episode." },
-                { "icon": "ti-users", "title": "Capitation / PMPM", "body": "Fixed per-member-per-month payment regardless of utilization. Full risk transfer to provider. Requires robust population health management." },
-                { "icon": "ti-building-hospital", "title": "ACOs", "body": "Accountable Care Organizations — networks of providers sharing accountability for a defined patient population's costs and quality outcomes." }
+                {
+                  "icon": "ti-percentage",
+                  "title": "Shared savings",
+                  "body": "Provider keeps a portion of savings below a benchmark. Upside-only (no downside risk) to two-sided (shares losses too). ACO MSSP is the federal model."
+                },
+                {
+                  "icon": "ti-package",
+                  "title": "Bundled payments",
+                  "body": "Single payment for an episode of care (e.g., hip replacement + 90-day recovery). Provider accountable for total cost and quality of the episode."
+                },
+                {
+                  "icon": "ti-users",
+                  "title": "Capitation / PMPM",
+                  "body": "Fixed per-member-per-month payment regardless of utilization. Full risk transfer to provider. Requires robust population health management."
+                },
+                {
+                  "icon": "ti-building-hospital",
+                  "title": "ACOs",
+                  "body": "Accountable Care Organizations — networks of providers sharing accountability for a defined patient population's costs and quality outcomes."
+                }
               ]
             },
             {
@@ -849,16 +1405,31 @@
                 "question": "Why is complete HIE data foundational to value-based care models?",
                 "points": 1,
                 "options": [
-                  { "id": "opt_v1a", "text": "It reduces the number of billing codes needed", "isCorrect": false },
-                  { "id": "opt_v1b", "text": "It enables the attribution, quality measurement, care gap identification, and outcome tracking that VBC requires", "isCorrect": true },
-                  { "id": "opt_v1c", "text": "It replaces the need for EHR systems entirely", "isCorrect": false },
-                  { "id": "opt_v1d", "text": "It automates fee-for-service billing processes", "isCorrect": false }
+                  {
+                    "id": "opt_v1a",
+                    "text": "It reduces the number of billing codes needed",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_v1b",
+                    "text": "It enables the attribution, quality measurement, care gap identification, and outcome tracking that VBC requires",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_v1c",
+                    "text": "It replaces the need for EHR systems entirely",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_v1d",
+                    "text": "It automates fee-for-service billing processes",
+                    "isCorrect": false
+                  }
                 ]
               }
             ]
           }
         },
-
         {
           "id": "lesson_value_care",
           "trackId": "track_economics",
@@ -869,33 +1440,83 @@
           "summary": "Not all spending produces health. Understanding what constitutes high-value and low-value care — and how HIE data identifies each — is core to health reform economics.",
           "estimatedMinutes": 20,
           "isPublished": true,
-          "tags": ["low-value-care", "high-value-care", "Choosing-Wisely", "waste", "analytics"],
+          "tags": [
+            "low-value-care",
+            "high-value-care",
+            "Choosing-Wisely",
+            "waste",
+            "analytics"
+          ],
           "createdAt": "2026-05-25T00:00:00Z",
           "updatedAt": "2026-05-25T00:00:00Z",
           "objectives": [
-            { "id": "obj_lv1", "text": "Define high-value and low-value care with concrete examples" },
-            { "id": "obj_lv2", "text": "Explain the Choosing Wisely initiative and its significance" },
-            { "id": "obj_lv3", "text": "Describe how HIE data enables population-level identification of low-value care" },
-            { "id": "obj_lv4", "text": "Connect low-value care reduction to Vermont's reform cost targets" }
+            {
+              "id": "obj_lv1",
+              "text": "Define high-value and low-value care with concrete examples"
+            },
+            {
+              "id": "obj_lv2",
+              "text": "Explain the Choosing Wisely initiative and its significance"
+            },
+            {
+              "id": "obj_lv3",
+              "text": "Describe how HIE data enables population-level identification of low-value care"
+            },
+            {
+              "id": "obj_lv4",
+              "text": "Connect low-value care reduction to Vermont's reform cost targets"
+            }
           ],
           "contentBlocks": [
             {
               "type": "key_stat",
               "stats": [
-                { "value": "~$935B", "label": "estimated annual US healthcare waste", "source": "JAMA 2019" },
-                { "value": "25–30%", "label": "of care estimated to be of low value", "source": "NEJM" },
-                { "value": "$300B+", "label": "estimated in unnecessary services alone", "source": "IOM" },
-                { "value": "500+", "label": "Choosing Wisely recommendations across 80+ specialties", "source": "ABIM Foundation" }
+                {
+                  "value": "~$935B",
+                  "label": "estimated annual US healthcare waste",
+                  "source": "JAMA 2019"
+                },
+                {
+                  "value": "25–30%",
+                  "label": "of care estimated to be of low value",
+                  "source": "NEJM"
+                },
+                {
+                  "value": "$300B+",
+                  "label": "estimated in unnecessary services alone",
+                  "source": "IOM"
+                },
+                {
+                  "value": "500+",
+                  "label": "Choosing Wisely recommendations across 80+ specialties",
+                  "source": "ABIM Foundation"
+                }
               ]
             },
             {
               "type": "concepts_grid",
               "heading": "High-value vs low-value care",
               "items": [
-                { "icon": "ti-trending-up", "title": "High-value care", "body": "Strong evidence of benefit, cost proportionate to benefit. Examples: childhood vaccinations, diabetic retinopathy screening, smoking cessation counseling." },
-                { "icon": "ti-trending-down", "title": "Low-value care", "body": "Minimal or no benefit, potential harm, cost not justified. Examples: imaging for uncomplicated low back pain, antibiotics for viral URI, routine pre-op testing." },
-                { "icon": "ti-list-check", "title": "Choosing Wisely", "body": "ABIM Foundation initiative with 80+ specialty societies identifying overused tests and procedures. Evidence-based recommendations for clinicians and patients." },
-                { "icon": "ti-chart-dots", "title": "Data-driven detection", "body": "Claims + clinical data in HIE enables population-level identification of low-value care patterns by geography, provider, payer, and patient population." }
+                {
+                  "icon": "ti-trending-up",
+                  "title": "High-value care",
+                  "body": "Strong evidence of benefit, cost proportionate to benefit. Examples: childhood vaccinations, diabetic retinopathy screening, smoking cessation counseling."
+                },
+                {
+                  "icon": "ti-trending-down",
+                  "title": "Low-value care",
+                  "body": "Minimal or no benefit, potential harm, cost not justified. Examples: imaging for uncomplicated low back pain, antibiotics for viral URI, routine pre-op testing."
+                },
+                {
+                  "icon": "ti-list-check",
+                  "title": "Choosing Wisely",
+                  "body": "ABIM Foundation initiative with 80+ specialty societies identifying overused tests and procedures. Evidence-based recommendations for clinicians and patients."
+                },
+                {
+                  "icon": "ti-chart-dots",
+                  "title": "Data-driven detection",
+                  "body": "Claims + clinical data in HIE enables population-level identification of low-value care patterns by geography, provider, payer, and patient population."
+                }
               ]
             },
             {
@@ -920,10 +1541,26 @@
                 "question": "Which data combination is most powerful for identifying low-value care patterns at a population level?",
                 "points": 1,
                 "options": [
-                  { "id": "opt_lv1a", "text": "Social media data and patient satisfaction surveys", "isCorrect": false },
-                  { "id": "opt_lv1b", "text": "Claims data (VHCURES) combined with clinical data from the HIE", "isCorrect": true },
-                  { "id": "opt_lv1c", "text": "EHR data from a single hospital system", "isCorrect": false },
-                  { "id": "opt_lv1d", "text": "Federal quality reports published annually by CMS", "isCorrect": false }
+                  {
+                    "id": "opt_lv1a",
+                    "text": "Social media data and patient satisfaction surveys",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_lv1b",
+                    "text": "Claims data (VHCURES) combined with clinical data from the HIE",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_lv1c",
+                    "text": "EHR data from a single hospital system",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_lv1d",
+                    "text": "Federal quality reports published annually by CMS",
+                    "isCorrect": false
+                  }
                 ]
               }
             ]
@@ -931,7 +1568,6 @@
         }
       ]
     },
-
     {
       "id": "track_clinical",
       "courseId": "course_htr_onboarding_v1",
@@ -941,11 +1577,15 @@
       "title": "Clinical Quality & Measures",
       "description": "Quality measurement, population health management, and evidence-based clinical practice. How we define, measure, and improve care quality.",
       "icon": "ti-heart-rate-monitor",
-      "targetAudience": ["Clinical staff", "Quality analysts", "Population health managers", "All staff"],
+      "targetAudience": [
+        "Clinical staff",
+        "Quality analysts",
+        "Population health managers",
+        "All staff"
+      ],
       "isPublished": true,
       "createdAt": "2026-05-25T00:00:00Z",
       "updatedAt": "2026-05-25T00:00:00Z",
-
       "lessons": [
         {
           "id": "lesson_cqm",
@@ -957,24 +1597,58 @@
           "summary": "How we measure quality — structure, process, outcome, and experience measures — and how HIE data improves measure fidelity.",
           "estimatedMinutes": 25,
           "isPublished": true,
-          "tags": ["CQM", "eCQM", "HEDIS", "quality-measures", "outcomes"],
+          "tags": [
+            "CQM",
+            "eCQM",
+            "HEDIS",
+            "quality-measures",
+            "outcomes"
+          ],
           "createdAt": "2026-05-25T00:00:00Z",
           "updatedAt": "2026-05-25T00:00:00Z",
           "objectives": [
-            { "id": "obj_cq1", "text": "Distinguish structure, process, outcome, and patient experience measures with examples" },
-            { "id": "obj_cq2", "text": "Identify major CQM frameworks: HEDIS, CMS Quality programs, NCQA" },
-            { "id": "obj_cq3", "text": "Explain electronic Clinical Quality Measures (eCQMs) and their data requirements" },
-            { "id": "obj_cq4", "text": "Articulate how HIE longitudinal data improves measure accuracy" }
+            {
+              "id": "obj_cq1",
+              "text": "Distinguish structure, process, outcome, and patient experience measures with examples"
+            },
+            {
+              "id": "obj_cq2",
+              "text": "Identify major CQM frameworks: HEDIS, CMS Quality programs, NCQA"
+            },
+            {
+              "id": "obj_cq3",
+              "text": "Explain electronic Clinical Quality Measures (eCQMs) and their data requirements"
+            },
+            {
+              "id": "obj_cq4",
+              "text": "Articulate how HIE longitudinal data improves measure accuracy"
+            }
           ],
           "contentBlocks": [
             {
               "type": "concepts_grid",
               "heading": "The four measure domains",
               "items": [
-                { "icon": "ti-building", "title": "Structure", "body": "What resources, systems, and organizational features are in place? EHR adoption, board certification rates, care coordination staffing, HIE participation." },
-                { "icon": "ti-list-check", "title": "Process", "body": "Was the right thing done? Flu vaccine administered, A1c tested, colorectal screening completed, diabetic eye exam performed. Most HEDIS measures are process measures." },
-                { "icon": "ti-heart", "title": "Outcome", "body": "What happened to the patient? 30-day readmission rates, mortality, blood pressure control, HbA1c <7%, emergency department utilization." },
-                { "icon": "ti-message-circle", "title": "Patient experience", "body": "CAHPS surveys measure communication quality, care coordination, access to care, and overall care experience from the patient's perspective." }
+                {
+                  "icon": "ti-building",
+                  "title": "Structure",
+                  "body": "What resources, systems, and organizational features are in place? EHR adoption, board certification rates, care coordination staffing, HIE participation."
+                },
+                {
+                  "icon": "ti-list-check",
+                  "title": "Process",
+                  "body": "Was the right thing done? Flu vaccine administered, A1c tested, colorectal screening completed, diabetic eye exam performed. Most HEDIS measures are process measures."
+                },
+                {
+                  "icon": "ti-heart",
+                  "title": "Outcome",
+                  "body": "What happened to the patient? 30-day readmission rates, mortality, blood pressure control, HbA1c <7%, emergency department utilization."
+                },
+                {
+                  "icon": "ti-message-circle",
+                  "title": "Patient experience",
+                  "body": "CAHPS surveys measure communication quality, care coordination, access to care, and overall care experience from the patient's perspective."
+                }
               ]
             },
             {
@@ -983,10 +1657,26 @@
               "leftLabel": "Framework",
               "rightLabel": "Primary use",
               "rows": [
-                { "label": "HEDIS (NCQA)", "left": "Health Effectiveness Data and Information Set", "right": "Health plan quality reporting — 90+ measures across preventive care, chronic disease, behavioral health" },
-                { "label": "CMS Quality Programs", "left": "MIPS, APM incentives, Hospital Compare", "right": "Medicare and Medicaid provider payment adjustments based on quality performance" },
-                { "label": "PCMH (NCQA)", "left": "Patient-Centered Medical Home recognition", "right": "Primary care quality designation used in Blueprint for Health" },
-                { "label": "Vermont Blueprint", "left": "Vermont-specific measure set", "right": "Multi-payer quality targets aligned with All-Payer Model goals" }
+                {
+                  "label": "HEDIS (NCQA)",
+                  "left": "Health Effectiveness Data and Information Set",
+                  "right": "Health plan quality reporting — 90+ measures across preventive care, chronic disease, behavioral health"
+                },
+                {
+                  "label": "CMS Quality Programs",
+                  "left": "MIPS, APM incentives, Hospital Compare",
+                  "right": "Medicare and Medicaid provider payment adjustments based on quality performance"
+                },
+                {
+                  "label": "PCMH (NCQA)",
+                  "left": "Patient-Centered Medical Home recognition",
+                  "right": "Primary care quality designation used in Blueprint for Health"
+                },
+                {
+                  "label": "Vermont Blueprint",
+                  "left": "Vermont-specific measure set",
+                  "right": "Multi-payer quality targets aligned with All-Payer Model goals"
+                }
               ]
             },
             {
@@ -1019,10 +1709,26 @@
                 "points": 1,
                 "explanation": "Process measures ask 'was the right thing done?' — the HbA1c test is a recommended process of care for diabetic patients. Outcome measures would track the actual HbA1c value achieved.",
                 "options": [
-                  { "id": "opt_cq1a", "text": "A structure measure", "isCorrect": false },
-                  { "id": "opt_cq1b", "text": "A process measure", "isCorrect": true },
-                  { "id": "opt_cq1c", "text": "An outcome measure", "isCorrect": false },
-                  { "id": "opt_cq1d", "text": "A patient experience measure", "isCorrect": false }
+                  {
+                    "id": "opt_cq1a",
+                    "text": "A structure measure",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cq1b",
+                    "text": "A process measure",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_cq1c",
+                    "text": "An outcome measure",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_cq1d",
+                    "text": "A patient experience measure",
+                    "isCorrect": false
+                  }
                 ]
               },
               {
@@ -1031,8 +1737,17 @@
                 "question": "HIE data improves eCQM accuracy by providing a longitudinal view that includes care received at facilities outside the primary care provider's own EHR.",
                 "points": 1,
                 "options": [
-                  { "id": "opt_cq2t", "text": "True", "isCorrect": true, "explanation": "This is one of the core value propositions of HIE — eliminating false care gaps that appear when data from other facilities is unavailable." },
-                  { "id": "opt_cq2f", "text": "False", "isCorrect": false }
+                  {
+                    "id": "opt_cq2t",
+                    "text": "True",
+                    "isCorrect": true,
+                    "explanation": "This is one of the core value propositions of HIE — eliminating false care gaps that appear when data from other facilities is unavailable."
+                  },
+                  {
+                    "id": "opt_cq2f",
+                    "text": "False",
+                    "isCorrect": false
+                  }
                 ]
               }
             ]
@@ -1040,7 +1755,6 @@
         }
       ]
     },
-
     {
       "id": "track_equity",
       "courseId": "course_htr_onboarding_v1",
@@ -1050,11 +1764,15 @@
       "title": "Health Equity & Access",
       "description": "Understanding health disparities, social determinants, and Vermont's rural health challenges — and how HIE can be a tool for equity rather than inequity.",
       "icon": "ti-scale",
-      "targetAudience": ["All staff", "Community health staff", "Policy analysts", "Clinical staff"],
+      "targetAudience": [
+        "All staff",
+        "Community health staff",
+        "Policy analysts",
+        "Clinical staff"
+      ],
       "isPublished": true,
       "createdAt": "2026-05-25T00:00:00Z",
       "updatedAt": "2026-05-25T00:00:00Z",
-
       "lessons": [
         {
           "id": "lesson_disparities",
@@ -1066,24 +1784,59 @@
           "summary": "The upstream drivers of health inequity — race, income, geography, disability — and the data practices that reveal or perpetuate them.",
           "estimatedMinutes": 25,
           "isPublished": true,
-          "tags": ["SDOH", "health-equity", "disparities", "race", "rural", "data-equity"],
+          "tags": [
+            "SDOH",
+            "health-equity",
+            "disparities",
+            "race",
+            "rural",
+            "data-equity"
+          ],
           "createdAt": "2026-05-25T00:00:00Z",
           "updatedAt": "2026-05-25T00:00:00Z",
           "objectives": [
-            { "id": "obj_eq1", "text": "Define health equity, health disparities, and social determinants of health" },
-            { "id": "obj_eq2", "text": "Identify key disparity dimensions: race/ethnicity, income, geography, disability" },
-            { "id": "obj_eq3", "text": "Explain how HIE data can both reveal and perpetuate disparities" },
-            { "id": "obj_eq4", "text": "Describe stratified quality measurement as an equity tool" }
+            {
+              "id": "obj_eq1",
+              "text": "Define health equity, health disparities, and social determinants of health"
+            },
+            {
+              "id": "obj_eq2",
+              "text": "Identify key disparity dimensions: race/ethnicity, income, geography, disability"
+            },
+            {
+              "id": "obj_eq3",
+              "text": "Explain how HIE data can both reveal and perpetuate disparities"
+            },
+            {
+              "id": "obj_eq4",
+              "text": "Describe stratified quality measurement as an equity tool"
+            }
           ],
           "contentBlocks": [
             {
               "type": "concepts_grid",
               "heading": "Foundational equity concepts",
               "items": [
-                { "icon": "ti-scale", "title": "Health equity", "body": "Every person has a fair opportunity to attain their full health potential — not limited by social, economic, or environmental disadvantage." },
-                { "icon": "ti-chart-bar", "title": "Health disparities", "body": "Preventable differences in health outcomes and disease burden experienced by socially disadvantaged groups." },
-                { "icon": "ti-home", "title": "Social determinants", "body": "Conditions where people are born, grow, live, work, and age — housing, income, education, food security, transportation — that drive 80%+ of health outcomes." },
-                { "icon": "ti-map-pin", "title": "Geographic disparities", "body": "Rural Vermonters face significantly worse access to specialists, behavioral health, and preventive care than urban counterparts." }
+                {
+                  "icon": "ti-scale",
+                  "title": "Health equity",
+                  "body": "Every person has a fair opportunity to attain their full health potential — not limited by social, economic, or environmental disadvantage."
+                },
+                {
+                  "icon": "ti-chart-bar",
+                  "title": "Health disparities",
+                  "body": "Preventable differences in health outcomes and disease burden experienced by socially disadvantaged groups."
+                },
+                {
+                  "icon": "ti-home",
+                  "title": "Social determinants",
+                  "body": "Conditions where people are born, grow, live, work, and age — housing, income, education, food security, transportation — that drive 80%+ of health outcomes."
+                },
+                {
+                  "icon": "ti-map-pin",
+                  "title": "Geographic disparities",
+                  "body": "Rural Vermonters face significantly worse access to specialists, behavioral health, and preventive care than urban counterparts."
+                }
               ]
             },
             {
@@ -1100,10 +1853,26 @@
             {
               "type": "key_stat",
               "stats": [
-                { "value": "20%", "label": "of Americans live in rural areas", "source": "AAMC" },
-                { "value": "11%", "label": "of physicians practice rurally", "source": "AAMC" },
-                { "value": "80%+", "label": "of health outcomes driven by social factors", "source": "WHO" },
-                { "value": "~40%", "label": "of EHR records missing race/ethnicity data", "source": "ONC research" }
+                {
+                  "value": "20%",
+                  "label": "of Americans live in rural areas",
+                  "source": "AAMC"
+                },
+                {
+                  "value": "11%",
+                  "label": "of physicians practice rurally",
+                  "source": "AAMC"
+                },
+                {
+                  "value": "80%+",
+                  "label": "of health outcomes driven by social factors",
+                  "source": "WHO"
+                },
+                {
+                  "value": "~40%",
+                  "label": "of EHR records missing race/ethnicity data",
+                  "source": "ONC research"
+                }
               ]
             },
             {
@@ -1131,10 +1900,26 @@
                 "points": 1,
                 "explanation": "Stratifying quality measures by race, ethnicity, income, and geography reveals hidden disparities that aggregate data masks — this is a core equity analytics practice.",
                 "options": [
-                  { "id": "opt_eq1a", "text": "Increasing the number of FHIR API endpoints available", "isCorrect": false },
-                  { "id": "opt_eq1b", "text": "Stratifying quality measures by race, ethnicity, income, and geography", "isCorrect": true },
-                  { "id": "opt_eq1c", "text": "Restricting data access to protect patient privacy", "isCorrect": false },
-                  { "id": "opt_eq1d", "text": "Focusing exclusively on clinical data without SDOH integration", "isCorrect": false }
+                  {
+                    "id": "opt_eq1a",
+                    "text": "Increasing the number of FHIR API endpoints available",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_eq1b",
+                    "text": "Stratifying quality measures by race, ethnicity, income, and geography",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_eq1c",
+                    "text": "Restricting data access to protect patient privacy",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_eq1d",
+                    "text": "Focusing exclusively on clinical data without SDOH integration",
+                    "isCorrect": false
+                  }
                 ]
               },
               {
@@ -1144,8 +1929,16 @@
                 "points": 1,
                 "explanation": "True — algorithms trained on historical utilization data encode existing disparities. Lower utilization among disadvantaged groups (due to access barriers) is interpreted as lower risk, even when actual disease burden is equal or higher.",
                 "options": [
-                  { "id": "opt_eq2t", "text": "True", "isCorrect": true },
-                  { "id": "opt_eq2f", "text": "False", "isCorrect": false }
+                  {
+                    "id": "opt_eq2t",
+                    "text": "True",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_eq2f",
+                    "text": "False",
+                    "isCorrect": false
+                  }
                 ]
               }
             ]
@@ -1153,7 +1946,6 @@
         }
       ]
     },
-
     {
       "id": "track_operations",
       "courseId": "course_htr_onboarding_v1",
@@ -1163,11 +1955,14 @@
       "title": "Operations & Workforce",
       "description": "The organizational infrastructure of health reform — workforce roles, governance models, consent frameworks, and the ethical foundations of data stewardship.",
       "icon": "ti-settings",
-      "targetAudience": ["All new employees", "Operations staff", "Program managers"],
+      "targetAudience": [
+        "All new employees",
+        "Operations staff",
+        "Program managers"
+      ],
       "isPublished": true,
       "createdAt": "2026-05-25T00:00:00Z",
       "updatedAt": "2026-05-25T00:00:00Z",
-
       "lessons": [
         {
           "id": "lesson_workforce",
@@ -1179,26 +1974,68 @@
           "summary": "The roles, competencies, and organizational structures of health reform programs — and how to be a T-shaped professional across all six pillars.",
           "estimatedMinutes": 20,
           "isPublished": true,
-          "tags": ["workforce", "roles", "careers", "T-shaped", "interdisciplinary"],
+          "tags": [
+            "workforce",
+            "roles",
+            "careers",
+            "T-shaped",
+            "interdisciplinary"
+          ],
           "createdAt": "2026-05-25T00:00:00Z",
           "updatedAt": "2026-05-25T00:00:00Z",
           "objectives": [
-            { "id": "obj_o1", "text": "Map the key functional roles in an HIE or health reform organization" },
-            { "id": "obj_o2", "text": "Understand the skills most in demand across the six pillars" },
-            { "id": "obj_o3", "text": "Describe the 'T-shaped professional' model and its relevance to your career" },
-            { "id": "obj_o4", "text": "Know who to contact for common cross-functional workflows" }
+            {
+              "id": "obj_o1",
+              "text": "Map the key functional roles in an HIE or health reform organization"
+            },
+            {
+              "id": "obj_o2",
+              "text": "Understand the skills most in demand across the six pillars"
+            },
+            {
+              "id": "obj_o3",
+              "text": "Describe the 'T-shaped professional' model and its relevance to your career"
+            },
+            {
+              "id": "obj_o4",
+              "text": "Know who to contact for common cross-functional workflows"
+            }
           ],
           "contentBlocks": [
             {
               "type": "concepts_grid",
               "heading": "Key functional roles in HIE organizations",
               "items": [
-                { "icon": "ti-code", "title": "Health informatics", "body": "Integration engineers, FHIR developers, MPI specialists. Build and maintain the technical plumbing of the HIE." },
-                { "icon": "ti-chart-dots", "title": "Data analytics", "body": "Population health analysts, quality measure specialists, data scientists. Turn HIE data into insights." },
-                { "icon": "ti-shield", "title": "Privacy & compliance", "body": "HIPAA compliance officers, privacy analysts, security engineers. Ensure regulatory adherence and patient trust." },
-                { "icon": "ti-users", "title": "Provider relations", "body": "Onboard and support data contributors — hospitals, clinics, labs. Train end users on HIE services." },
-                { "icon": "ti-file-certificate", "title": "Policy & strategy", "body": "Engage with legislators, agencies, and stakeholders to shape HIE governance, funding, and strategic direction." },
-                { "icon": "ti-headset", "title": "Operations & support", "body": "Help desk, training, project management, and organizational effectiveness. The connective tissue of the organization." }
+                {
+                  "icon": "ti-code",
+                  "title": "Health informatics",
+                  "body": "Integration engineers, FHIR developers, MPI specialists. Build and maintain the technical plumbing of the HIE."
+                },
+                {
+                  "icon": "ti-chart-dots",
+                  "title": "Data analytics",
+                  "body": "Population health analysts, quality measure specialists, data scientists. Turn HIE data into insights."
+                },
+                {
+                  "icon": "ti-shield",
+                  "title": "Privacy & compliance",
+                  "body": "HIPAA compliance officers, privacy analysts, security engineers. Ensure regulatory adherence and patient trust."
+                },
+                {
+                  "icon": "ti-users",
+                  "title": "Provider relations",
+                  "body": "Onboard and support data contributors — hospitals, clinics, labs. Train end users on HIE services."
+                },
+                {
+                  "icon": "ti-file-certificate",
+                  "title": "Policy & strategy",
+                  "body": "Engage with legislators, agencies, and stakeholders to shape HIE governance, funding, and strategic direction."
+                },
+                {
+                  "icon": "ti-headset",
+                  "title": "Operations & support",
+                  "body": "Help desk, training, project management, and organizational effectiveness. The connective tissue of the organization."
+                }
               ]
             },
             {
@@ -1229,16 +2066,31 @@
                 "question": "A 'T-shaped' HIE professional is best described as someone who:",
                 "points": 1,
                 "options": [
-                  { "id": "opt_o1a", "text": "Focuses exclusively on technical skills and avoids policy discussions", "isCorrect": false },
-                  { "id": "opt_o1b", "text": "Has deep expertise in one domain plus broad working fluency across all six HIE pillars", "isCorrect": true },
-                  { "id": "opt_o1c", "text": "Specializes only in policy and legislation", "isCorrect": false },
-                  { "id": "opt_o1d", "text": "Rotates departments every six months to avoid specialization", "isCorrect": false }
+                  {
+                    "id": "opt_o1a",
+                    "text": "Focuses exclusively on technical skills and avoids policy discussions",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_o1b",
+                    "text": "Has deep expertise in one domain plus broad working fluency across all six HIE pillars",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_o1c",
+                    "text": "Specializes only in policy and legislation",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_o1d",
+                    "text": "Rotates departments every six months to avoid specialization",
+                    "isCorrect": false
+                  }
                 ]
               }
             ]
           }
         },
-
         {
           "id": "lesson_governance",
           "trackId": "track_operations",
@@ -1249,14 +2101,33 @@
           "summary": "Who decides what data is shared, with whom, and for what purpose — HIE governance models, Vermont's opt-out consent framework, and the ethical principles of data stewardship.",
           "estimatedMinutes": 25,
           "isPublished": true,
-          "tags": ["governance", "consent", "opt-out", "data-ethics", "VITL", "trust"],
+          "tags": [
+            "governance",
+            "consent",
+            "opt-out",
+            "data-ethics",
+            "VITL",
+            "trust"
+          ],
           "createdAt": "2026-05-25T00:00:00Z",
           "updatedAt": "2026-05-25T00:00:00Z",
           "objectives": [
-            { "id": "obj_g1", "text": "Distinguish centralized, federated, and hybrid HIE governance models" },
-            { "id": "obj_g2", "text": "Explain Vermont's opt-out consent model and its implications" },
-            { "id": "obj_g3", "text": "Identify the key governance bodies in Vermont's HIE ecosystem" },
-            { "id": "obj_g4", "text": "Apply ethical principles — purpose limitation, proportionality, benefit — to data use decisions" }
+            {
+              "id": "obj_g1",
+              "text": "Distinguish centralized, federated, and hybrid HIE governance models"
+            },
+            {
+              "id": "obj_g2",
+              "text": "Explain Vermont's opt-out consent model and its implications"
+            },
+            {
+              "id": "obj_g3",
+              "text": "Identify the key governance bodies in Vermont's HIE ecosystem"
+            },
+            {
+              "id": "obj_g4",
+              "text": "Apply ethical principles — purpose limitation, proportionality, benefit — to data use decisions"
+            }
           ],
           "contentBlocks": [
             {
@@ -1265,19 +2136,47 @@
               "leftLabel": "Model",
               "rightLabel": "Characteristics",
               "rows": [
-                { "label": "Centralized", "left": "Single organization controls all data and governance decisions", "right": "Efficient but concentrated risk; VITL's VHIE is primarily centralized" },
-                { "label": "Federated", "left": "Data stays at source organizations; queries go to each node", "right": "Greater local control; more complex to operate; CommonWell model" },
-                { "label": "Hybrid", "left": "Central coordination with distributed data governance", "right": "Most realistic for statewide networks balancing control and trust" }
+                {
+                  "label": "Centralized",
+                  "left": "Single organization controls all data and governance decisions",
+                  "right": "Efficient but concentrated risk; VITL's VHIE is primarily centralized"
+                },
+                {
+                  "label": "Federated",
+                  "left": "Data stays at source organizations; queries go to each node",
+                  "right": "Greater local control; more complex to operate; CommonWell model"
+                },
+                {
+                  "label": "Hybrid",
+                  "left": "Central coordination with distributed data governance",
+                  "right": "Most realistic for statewide networks balancing control and trust"
+                }
               ]
             },
             {
               "type": "concepts_grid",
               "heading": "Consent and governance foundations",
               "items": [
-                { "icon": "ti-lock-open", "title": "Vermont opt-out model", "body": "VHIE uses opt-out consent: patients are included by default and can choose to exclude their data. Maximizes data completeness while preserving patient autonomy." },
-                { "icon": "ti-file-certificate", "title": "Data use agreements", "body": "Legal frameworks governing how HIE data can be used by researchers, payers, and analytics platforms. Define permitted uses and prohibited disclosures." },
-                { "icon": "ti-users-group", "title": "Governance bodies", "body": "HIE Steering Committee, AHS leadership, VITL Board, and GMCB (for regulatory matters) shape Vermont's HIE governance landscape." },
-                { "icon": "ti-eye", "title": "Transparency", "body": "Patients and providers must be able to understand what data is in the HIE, who has accessed it, and for what purpose. Audit trails are mandatory." }
+                {
+                  "icon": "ti-lock-open",
+                  "title": "Vermont opt-out model",
+                  "body": "VHIE uses opt-out consent: patients are included by default and can choose to exclude their data. Maximizes data completeness while preserving patient autonomy."
+                },
+                {
+                  "icon": "ti-file-certificate",
+                  "title": "Data use agreements",
+                  "body": "Legal frameworks governing how HIE data can be used by researchers, payers, and analytics platforms. Define permitted uses and prohibited disclosures."
+                },
+                {
+                  "icon": "ti-users-group",
+                  "title": "Governance bodies",
+                  "body": "HIE Steering Committee, AHS leadership, VITL Board, and GMCB (for regulatory matters) shape Vermont's HIE governance landscape."
+                },
+                {
+                  "icon": "ti-eye",
+                  "title": "Transparency",
+                  "body": "Patients and providers must be able to understand what data is in the HIE, who has accessed it, and for what purpose. Audit trails are mandatory."
+                }
               ]
             },
             {
@@ -1316,10 +2215,26 @@
                 "points": 1,
                 "explanation": "Vermont uses an opt-out model — patients are included by default and can choose to exclude their data. This maximizes data completeness while preserving patient autonomy.",
                 "options": [
-                  { "id": "opt_g1a", "text": "Opt-in: patients must actively consent before their data is included", "isCorrect": false },
-                  { "id": "opt_g1b", "text": "Opt-out: patients are included by default and may choose to exclude their data", "isCorrect": true },
-                  { "id": "opt_g1c", "text": "No consent model: all data is shared without restriction", "isCorrect": false },
-                  { "id": "opt_g1d", "text": "Consent required only for mental health and substance use data", "isCorrect": false }
+                  {
+                    "id": "opt_g1a",
+                    "text": "Opt-in: patients must actively consent before their data is included",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_g1b",
+                    "text": "Opt-out: patients are included by default and may choose to exclude their data",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_g1c",
+                    "text": "No consent model: all data is shared without restriction",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_g1d",
+                    "text": "Consent required only for mental health and substance use data",
+                    "isCorrect": false
+                  }
                 ]
               },
               {
@@ -1328,10 +2243,26 @@
                 "question": "The 'purpose limitation' principle in data ethics means:",
                 "points": 1,
                 "options": [
-                  { "id": "opt_g2a", "text": "Data should only be stored for a limited time period", "isCorrect": false },
-                  { "id": "opt_g2b", "text": "Data collected for one purpose (e.g., treatment) should not be repurposed without appropriate authorization", "isCorrect": true },
-                  { "id": "opt_g2c", "text": "Data access should be limited to managers and executives only", "isCorrect": false },
-                  { "id": "opt_g2d", "text": "Only a limited number of data types can be stored in the HIE", "isCorrect": false }
+                  {
+                    "id": "opt_g2a",
+                    "text": "Data should only be stored for a limited time period",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_g2b",
+                    "text": "Data collected for one purpose (e.g., treatment) should not be repurposed without appropriate authorization",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "opt_g2c",
+                    "text": "Data access should be limited to managers and executives only",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "opt_g2d",
+                    "text": "Only a limited number of data types can be stored in the HIE",
+                    "isCorrect": false
+                  }
                 ]
               }
             ]
