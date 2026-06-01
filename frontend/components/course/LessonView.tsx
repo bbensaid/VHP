@@ -43,12 +43,18 @@ export function LessonView({ lesson, onMarkComplete, onQuizPass, onAudioUpload, 
           <section aria-label="Learning objectives" className="bg-indigo-50 border border-indigo-200 rounded-xl p-5 space-y-3">
             <h2 className="text-xs font-bold text-indigo-600 uppercase tracking-wider">Learning Objectives</h2>
             <ul className="space-y-2.5">
-              {lesson.objectives.map((obj) => (
-                <li key={obj.id} className="flex items-start gap-2.5 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
-                  <span className="text-indigo-900 leading-relaxed">{obj.text}</span>
-                </li>
-              ))}
+              {lesson.objectives.map((obj, i) => {
+                // Objectives may be stored as {id, text} objects or as plain strings.
+                // Normalize so both render correctly and every <li> has a stable key.
+                const text = typeof obj === "string" ? obj : obj?.text ?? "";
+                const key = (typeof obj === "object" && obj?.id) ? obj.id : `obj-${i}`;
+                return (
+                  <li key={key} className="flex items-start gap-2.5 text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
+                    <span className="text-indigo-900 leading-relaxed">{text}</span>
+                  </li>
+                );
+              })}
             </ul>
           </section>
         )}
