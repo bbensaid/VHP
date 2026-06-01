@@ -268,6 +268,7 @@ const SECTIONS: Section[] = [
     borderAccent: "border-sky-500", hoverBg: "hover:bg-sky-100",
     divideColor: "divide-sky-100", activeItemBg: "bg-sky-100",
     items: [
+      { href: "/academy/tracks/welcome-htr-framework", label: "Welcome & the HTR Framework", icon: SparklesIcon },
       { href: "/academy/personalized-learning", label: "Personalized Learning",   icon: SparklesIcon },
       { href: "/academy/tracks",                label: "Courses",                  icon: TableCellsIcon },
       { href: "/academy/webinars",              label: "Webinars",                 icon: PresentationChartLineIcon },
