@@ -30,7 +30,13 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
   const isStudio = pathname.startsWith("/studio");
   const isChatPage = pathname === "/chat";
   const isWelcomePage = pathname === "/welcome";
-  const isCoursePage = pathname.startsWith("/academy/tracks/");
+  // The course PLAYER (fixed, non-scrolling shell) is only the lesson route:
+  // /academy/tracks/[courseSlug]/[lessonSlug] — i.e. 4 path segments.
+  // The course OVERVIEW (/academy/tracks/[courseSlug], 3 segments) should scroll
+  // like a normal page, just like the catalog at /academy/tracks.
+  const isCoursePage =
+    pathname.startsWith("/academy/tracks/") &&
+    pathname.split("/").filter(Boolean).length >= 4;
   const hideSidebarsCompletely = isStudio || isChatPage || isWelcomePage;
 
   // 2. SIDEBAR STATE from Context (shared with Header)
