@@ -564,7 +564,25 @@ const components: PortableTextComponents = {
   },
 };
 
-export default function AcademyContent({ body }: { body: PortableTextBlock[] }) {
+export default function AcademyContent({ body: rawBody }: { body: PortableTextBlock[] }) {
+  // Defensively de-duplicate block _keys. Legacy/stale CMS content can contain
+  // repeated keys (e.g. two "s5h1" blocks), which crashes React's reconciler
+  // ("two children with the same key"). Re-key any duplicate so rendering is safe.
+  const seenKeys = new Set<string>();
+  const body = (rawBody ?? []).map((block, i) => {
+    const b = block as PortableTextBlock & { _key?: string };
+    let key = b._key || `blk-${i}`;
+    if (seenKeys.has(key)) {
+      let suffix = 1;
+      while (seenKeys.has(`${key}-dup${suffix}`)) suffix += 1;
+      key = `${key}-dup${suffix}`;
+      seenKeys.add(key);
+      return { ...b, _key: key } as PortableTextBlock;
+    }
+    seenKeys.add(key);
+    return block;
+  });
+
   // Pre-compute section numbers from the body array so SSR and client agree
   const sectionNumbers: Record<string, number> = {};
   let n = 0;
