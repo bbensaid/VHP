@@ -1,0 +1,152 @@
+[
+ {
+  "lesson_slug": "bundled-payment-mechanics",
+  "lesson_id": "4d1869ab-ecf8-43c6-a284-ef1c3c461c7f",
+  "old": "vbc-bundled-payment-mechanics",
+  "new": "bundled-payment-mechanics"
+ },
+ {
+  "lesson_slug": "patient-reported-outcomes",
+  "lesson_id": "8627c012-ae45-451a-82f6-0ae0b1f45a93",
+  "old": "vbc-patient-reported-outcomes",
+  "new": "academyModule-vbc-pro"
+ },
+ {
+  "lesson_slug": "bundled-payment-evidence",
+  "lesson_id": "214165e3-9138-424c-b954-e2cc003d19b2",
+  "old": "vbc-bundled-payment-evidence",
+  "new": "bundled-payment-evidence"
+ },
+ {
+  "lesson_slug": "aco-medicaid-commercial",
+  "lesson_id": "4211bad7-532a-4eb0-8c82-6c64f812c85a",
+  "old": "vbc-aco-medicaid-commercial",
+  "new": "aco-medicaid-commercial"
+ },
+ {
+  "lesson_slug": "mips-merit-based-incentive",
+  "lesson_id": "5c817a3e-36fd-4a38-8e30-2b2e63d3fc17",
+  "old": "vbc-mips-payment-system",
+  "new": "mips-merit-based-incentive"
+ },
+ {
+  "lesson_slug": "social-risk-adjustment",
+  "lesson_id": "e0cc60e1-9e03-4dd2-8c0b-ee81d171354f",
+  "old": "vbc-social-risk-adjustment",
+  "new": "social-risk-adjustment"
+ },
+ {
+  "lesson_slug": "star-ratings-equity-critique",
+  "lesson_id": "ce76b8b4-f526-4d78-a682-a0764e54b325",
+  "old": "vbc-star-ratings-equity-critique",
+  "new": "star-ratings-equity-critique"
+ },
+ {
+  "lesson_slug": "oncology-care-model",
+  "lesson_id": "837fc9e7-8084-4c88-a43d-941ad6102158",
+  "old": "vbc-oncology-care-model",
+  "new": "oncology-care-model"
+ },
+ {
+  "lesson_slug": "aco-performance-evidence",
+  "lesson_id": "345e29a1-ca5d-463e-9547-b635d3bc9348",
+  "old": "vbc-aco-performance-evidence",
+  "new": "aco-performance-evidence"
+ },
+ {
+  "lesson_slug": "sanity-pm-m3-economics",
+  "lesson_id": "96f8bd5a-ad34-4f02-8fd7-2432583edfa8",
+  "old": "precision-medicine-m3-economics",
+  "new": "academyModule-precision-medicine-m3-economics"
+ },
+ {
+  "lesson_slug": "aco-basics",
+  "lesson_id": "11ea7c99-2270-4072-b29d-6758f42ba3cd",
+  "old": "vbc-fundamentals-module-3-economics-pillar",
+  "new": "aco-basics"
+ },
+ {
+  "lesson_slug": "sanity-vbc-technology",
+  "lesson_id": "9c2a5663-d621-4f4b-88f6-e93e88beceda",
+  "old": "vbc-fundamentals-module-4-technology-pillar",
+  "new": "academyModule-vbc-fundamentals-module-4-technology-pillar"
+ },
+ {
+  "lesson_slug": "relative-value-units",
+  "lesson_id": "f91e414f-b5c2-4e1d-a280-f26b11bbf7e9",
+  "old": "vbc-rvu-physician-payment",
+  "new": "relative-value-units"
+ },
+ {
+  "lesson_slug": "sanity-vbc-clinical",
+  "lesson_id": "fcfee8a8-1718-4007-9027-d4bcfe83927f",
+  "old": "vbc-clinical-m5",
+  "new": "academyModule-vbc-clinical-m5"
+ },
+ {
+  "lesson_slug": "vbc-fundamentals-module-3-economics-pillar",
+  "lesson_id": "e49bcdcd-dc9f-4204-bebe-3a5d2797c923",
+  "old": "vbc-fundamentals-module-3-economics-pillar",
+  "new": "academyModule-vbc-fundamentals-module-3-economics-pillar"
+ },
+ {
+  "lesson_slug": "sanity-vbc-policy",
+  "lesson_id": "b927de74-b607-4708-99df-1c984ff6d1fd",
+  "old": "vbc-fundamentals-module-2-policy-pillar",
+  "new": "academyModule-vbc-fundamentals-module-2-policy-pillar"
+ },
+ {
+  "lesson_slug": "sanity-pm-m1-fundamentals",
+  "lesson_id": "94d543e4-0815-4301-a17d-30e888da92b1",
+  "old": "precision-medicine-m1",
+  "new": "academyModule-precision-medicine-m1"
+ },
+ {
+  "lesson_slug": "sanity-pm-m2-policy",
+  "lesson_id": "46775197-9376-4ce4-997e-2f577cd923dc",
+  "old": "precision-medicine-m2-policy",
+  "new": "academyModule-precision-medicine-m2-policy"
+ },
+ {
+  "lesson_slug": "sanity-pm-m4-technology",
+  "lesson_id": "27d7dc9e-ef38-479c-9909-269fb8a27e29",
+  "old": "precision-medicine-m4-technology",
+  "new": "academyModule-precision-medicine-m4-technology"
+ },
+ {
+  "lesson_slug": "sanity-pm-m5-clinical",
+  "lesson_id": "746f8881-13df-4880-9b7b-2a5559ba7b1c",
+  "old": "precision-medicine-m5-clinical",
+  "new": "academyModule-precision-medicine-m5-clinical"
+ },
+ {
+  "lesson_slug": "sanity-pm-m6-equity",
+  "lesson_id": "8022d950-ffa0-4aee-b5b1-445ac326e8ee",
+  "old": "precision-medicine-m6-equity",
+  "new": "academyModule-precision-medicine-m6-equity"
+ },
+ {
+  "lesson_slug": "risk-adjustment-hcc",
+  "lesson_id": "48247e64-0e6f-434f-8c38-2d497d909c76",
+  "old": "vbc-risk-adjustment-hcc",
+  "new": "risk-adjustment-hcc"
+ },
+ {
+  "lesson_slug": "medicare-star-ratings",
+  "lesson_id": "b598118f-dc2c-4d59-9aea-7659bcdaba6d",
+  "old": "vbc-medicare-star-ratings",
+  "new": "medicare-star-ratings"
+ },
+ {
+  "lesson_slug": "global-budgets-hospital-finance",
+  "old": "vbc-global-budgets-hospital-finance",
+  "new": "global-budgets-hospital-finance",
+  "lesson_id": "6b9ad961-e44e-4d4b-bd8f-c24f239a56f1"
+ },
+ {
+  "lesson_slug": "quality-measures-hedis-ecqm",
+  "old": "vbc-quality-measures-hedis-ecqm",
+  "new": "academyModule-vbc-hedis-ecqm",
+  "lesson_id": "3bd04c71-679b-452b-afee-0e7d656931b2"
+ }
+]
