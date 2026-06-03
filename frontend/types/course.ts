@@ -242,6 +242,8 @@ export interface Course {
   targetAudience: string[];
   prerequisites: string[];
   estimatedHours: number;
+  pillar?: Pillar;            // lowercase pillar id (Supabase courses.pillar)
+  chapterRef?: string | null; // book chapter num (courses.chapter_ref) — book tie-in
   tracks: Track[];
   isPublished: boolean;
   version: string;            // e.g. "1.0.0"

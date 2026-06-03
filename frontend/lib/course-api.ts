@@ -275,6 +275,8 @@ export async function getCourseWithProgress(
     targetAudience: (cr.target_audience ?? []) as string[],
     prerequisites: (cr.prerequisites ?? []) as string[],
     estimatedHours: (cr.estimated_hours ?? 0) as number,
+    pillar: (cr.pillar as CourseWithProgress["pillar"]) ?? undefined,
+    chapterRef: (cr.chapter_ref as string) ?? null,
     isPublished: cr.is_published as boolean,
     version: (cr.version ?? "1.0.0") as string,
     createdAt: cr.created_at as string,
@@ -440,6 +442,68 @@ export async function searchLessons(query: string, limit = 20): Promise<LessonSe
       pillar:      r.pillar,
     };
   });
+}
+
+// ── getCoursesByPillar ────────────────────────────────────────────────────────
+// Published courses for a pillar, for the pillar-page "Courses in this pillar"
+// rail (PLAN_SANITY_ECOSYSTEM.md §7.1). Pillar ids are lowercase, matching the
+// Supabase `pillar` column and lib/taxonomy PillarId.
+
+export interface PillarCourse {
+  slug: string;
+  title: string;
+  subtitle: string | null;
+  estimatedHours: number | null;
+  chapterRef: string | null;
+}
+
+export async function getCoursesByPillar(pillar: string): Promise<PillarCourse[]> {
+  const { data, error } = await db
+    .from("courses")
+    .select("slug, title, subtitle, estimated_hours, chapter_ref, is_featured")
+    .eq("pillar", pillar)
+    .eq("is_published", true)
+    .order("is_featured", { ascending: false })
+    .order("title", { ascending: true });
+
+  if (error || !data) return [];
+
+  return (data as Array<Record<string, unknown>>).map((r) => ({
+    slug:           r.slug as string,
+    title:          r.title as string,
+    subtitle:       (r.subtitle as string) ?? null,
+    estimatedHours: (r.estimated_hours as number) ?? null,
+    chapterRef:     (r.chapter_ref as string) ?? null,
+  }));
+}
+
+// ── getCoursesByChapter ───────────────────────────────────────────────────────
+// All published courses grouped by their chapter_ref, for the book page's
+// "Go deeper: Academy course" links (PLAN_SANITY_ECOSYSTEM.md §7.2). One query;
+// returns a map of chapter num -> courses.
+
+export async function getCoursesByChapter(): Promise<Record<string, PillarCourse[]>> {
+  const { data, error } = await db
+    .from("courses")
+    .select("slug, title, subtitle, estimated_hours, chapter_ref")
+    .eq("is_published", true)
+    .not("chapter_ref", "is", null)
+    .order("title", { ascending: true });
+
+  if (error || !data) return {};
+
+  const map: Record<string, PillarCourse[]> = {};
+  for (const r of data as Array<Record<string, unknown>>) {
+    const ch = r.chapter_ref as string;
+    (map[ch] ??= []).push({
+      slug:           r.slug as string,
+      title:          r.title as string,
+      subtitle:       (r.subtitle as string) ?? null,
+      estimatedHours: (r.estimated_hours as number) ?? null,
+      chapterRef:     ch,
+    });
+  }
+  return map;
 }
 
 // ── seedCourseFromJson ────────────────────────────────────────────────────────
