@@ -1,5 +1,4 @@
 import { client } from "@/lib/sanity";
-import Link from "next/link";
 
 export const metadata = {
   title: "Annual Impact Reports | HTR Advisory",
@@ -14,11 +13,14 @@ interface Report {
   accessLevel: string;
   summary?: string;
   imageUrl?: string;
+  fileUrl?: string;
 }
 
 async function getReports() {
   const query = `*[_type == "report"] | order(publishedAt desc) {
-    _id, title, subtitle, publishedAt, accessLevel, summary, "imageUrl": coverImage.asset->url
+    _id, title, subtitle, publishedAt, accessLevel, summary,
+    "imageUrl": coverImage.asset->url,
+    "fileUrl": file.asset->url
   }`;
   return client.fetch(query, {}, { next: { revalidate: 60 } });
 }
@@ -69,10 +71,21 @@ export default async function ReportsPage() {
               <p className="text-lg text-indigo-900/60 font-medium mb-4">{report.subtitle}</p>
               <p className="text-slate-600 mb-6 leading-relaxed max-w-4xl">{report.summary}</p>
               <div className="border-t border-gray-100 pt-6">
-                {report.accessLevel === "Public" ? (
-                  <button className="px-6 py-2 bg-indigo-600 text-white font-bold rounded hover:bg-indigo-700 transition-colors shadow-sm w-full sm:w-auto">Download Free PDF</button>
+                {/* TEMP: report download gating disabled — every report is freely
+                    downloadable until the subscription flow is built. The accessLevel
+                    badge above still shows the intended tier. */}
+                {report.fileUrl ? (
+                  <a
+                    href={report.fileUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download
+                    className="inline-block px-6 py-2 bg-indigo-600 text-white font-bold rounded hover:bg-indigo-700 transition-colors shadow-sm w-full sm:w-auto text-center"
+                  >
+                    Download PDF
+                  </a>
                 ) : (
-                  <Link href="/subscribe" className="flex items-center gap-2 text-slate-500 font-bold hover:text-indigo-600 transition-colors"><span className="text-lg">🔒</span><span>Unlock Report</span></Link>
+                  <span className="flex items-center gap-2 text-slate-400 font-bold"><span className="text-lg">📄</span><span>PDF not yet attached</span></span>
                 )}
               </div>
             </div>
