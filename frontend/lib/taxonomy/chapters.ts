@@ -341,3 +341,9 @@ export function chaptersByGroup(group: ChapterGroup): Chapter[] {
 export function chaptersForPillar(pillar: PillarId): Chapter[] {
   return CHAPTERS.filter((c) => c.pillar === pillar);
 }
+
+/** Look up a chapter by its `num` ("1"–"20", "Preface", …). Case-insensitive. */
+export function getChapter(num: string): Chapter | undefined {
+  const n = num.trim().toLowerCase();
+  return CHAPTERS.find((c) => c.num.toLowerCase() === n);
+}

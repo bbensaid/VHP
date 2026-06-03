@@ -44,10 +44,47 @@ Done this pass (§9 step 2 + the course slice of step 3):
    Supabase dashboard SQL editor (run 032 then 033). The pillar backfill above
    used an existing column so it ran from here; the new column did not.
 
-**Still open:**
-- Apply migrations 032 + 033 in the Supabase SQL editor (DDL — see above).
-- Phase 2: policyAnalysis→chapter + definition pillar backfills (§9 step 3
-  remainder) and UI wiring (§7, step 4).
+**Phase 1 closeout:** migrations 032 + 033 **applied** in the Supabase SQL editor
+(2026-06-02). All 15 courses now have `chapter_ref` + a pillar; 0 nulls.
+
+---
+
+## 0c. EXECUTION LOG — Phase 2 (remaining backfills + UI) — 2026-06-02
+
+§9 step 3 remainder + step 4. Findings + work:
+
+1. **`policyAnalysis` Studio label renamed** `'Policy Analysis'` → **`'Analysis'`**
+   (type `_id` unchanged — no migration, no query churn; the name was misleading
+   since the layer spans all 6 pillars). Per discussion: NOT split into per-pillar
+   types — pillar is already a field; splitting would break every query.
+2. **`policyAnalysis.chapterRef` backfilled** by pillar → lead chapter
+   (`scripts/backfill-analysis-chapterref.mjs --commit`): **109 patched**
+   (Economics→8, Tech→6, Policy→5, Clinical→10, Equity→12, Operations→14).
+   Idempotent (only sets where unset); refine per-doc later.
+3. **definition pillars** — NO-OP: all 36 already carry `pillars` (schema field
+   predated this work). Like §4a, the plan list was stale.
+4. **UI §7.1** — new `components/CoursesInPillar.tsx` (Supabase by pillar) wired
+   into `PillarOverview` (covers Policy/Economics/Technology/Clinical/Equity) AND
+   the bespoke `app/operations/page.tsx` (which doesn't use PillarOverview).
+   The "Related Analysis" rail already existed as `LatestHubReports`
+   (policyAnalysis by pillar) — added it to Operations too for parity.
+5. **UI §7.3** — new `components/CourseBookTie.tsx` on the course overview page:
+   "From the Book (Ch. N)" callout (resolved via new `getChapter()` in
+   chapters.ts) + "Related Analysis" rail. `course-api` now surfaces
+   `pillar`/`chapterRef`; added `getCoursesByPillar()`.
+6. **UI §7.2** — book page (`app/book/page.tsx`) chapter cards now show
+   "Go Deeper · Academy" course chips + "Related Analysis" brief links, via new
+   `getCoursesByChapter()` + a briefs-by-chapter GROQ fetch (2 queries total, not
+   per-card). Added `id="chapter-N"` anchors so the course-page callout deep-links.
+
+Verified: tsc clean (0 errors); eslint 0 errors on changed files (4 pre-existing
+warnings untouched); all 3 live data paths return under anon/public keys.
+
+**Still open (Phase 3+ / not in scope this pass):**
+- Per-doc refinement of policyAnalysis chapterRef (currently lead-chapter default).
+- §8 caseStudy/report/webinar pillar+chapterRef backfill (schemas ready; data not
+  yet filled) and their pillar-rail surfacing.
+- §5 validation triage (~30 stat-heavy briefs) and legacy interop coverage call (§10 Q4).
 
 ---
 

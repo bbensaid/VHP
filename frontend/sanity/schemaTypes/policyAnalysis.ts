@@ -2,7 +2,7 @@ import {defineField, defineType} from 'sanity'
 
 export const policyAnalysisType = defineType({
   name: 'policyAnalysis',
-  title: 'Policy Analysis',
+  title: 'Analysis',
   type: 'document',
   fields: [
     defineField({

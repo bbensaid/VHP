@@ -1,5 +1,7 @@
 import Link from "next/link";
 import FromTheBookForPillar from "@/components/FromTheBookForPillar";
+import CoursesInPillar from "@/components/CoursesInPillar";
+import LatestHubReports from "@/components/LatestHubReports";
 
 export const metadata = {
   title: "Operations | Health Transformation Review",
@@ -117,6 +119,22 @@ export default function OperationsPage() {
             </Link>
           ))}
         </div>
+      </section>
+
+      {/* ── COURSES & ANALYSIS (pillar rails, §7.1) ───────────────────────── */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <CoursesInPillar
+          pillarId="operations"
+          colorClass="text-teal-700"
+          cardHoverClass="hover:border-teal-300 hover:bg-teal-50/40"
+          titleHoverClass="group-hover:text-teal-700"
+        />
+        <LatestHubReports
+          pillar="Operations"
+          colorClass="text-teal-700"
+          cardHoverClass="hover:border-teal-300 hover:bg-teal-50/40"
+          titleHoverClass="group-hover:text-teal-700"
+        />
       </section>
 
       {/* ── WHY NOW ───────────────────────────────────────────────────────── */}
