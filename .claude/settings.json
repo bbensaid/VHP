@@ -50,7 +50,11 @@
       "Bash(grep -oE 'message=\"[^\"]{0,120}')",
       "Bash(awk '{print $2, $11, $12, $13}')",
       "Bash(kill 87816 23368)",
-      "Bash(pkill -f \"next-server\")"
+      "Bash(pkill -f \"next-server\")",
+      "Bash(curl -s -o /dev/null -w '' -b htr_beta=1 http://localhost:3000__TRACKED_VAR__)",
+      "Bash(grep -oE 'message=\"[^\"]{0,200}')",
+      "Bash(curl -s -o /dev/null -b \"htr_beta=1\" \"http://localhost:3000/economics/the-premium-spike-breaking-point\")",
+      "Bash(curl -s -o /dev/null -b htr_beta=1 http://localhost:3000__TRACKED_VAR__)"
     ]
   }
 }
