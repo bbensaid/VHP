@@ -100,10 +100,30 @@ neither. instructor(4) are people → LEFT untouched per §8.
    Verified live: 20/20 have pillar + chapterRef, 0 missing.
 
 **Still open:**
-- **Phase 3b (UI):** surface caseStudy/report/webinar in pillar rails + book
-  chapter cards (data now ready; rails not yet built).
 - Per-doc refinement of policyAnalysis/editorial chapterRef (lead-chapter default).
 - §5 validation triage (~30 stat-heavy briefs) and legacy interop coverage (§10 Q4).
+
+---
+
+## 0e. EXECUTION LOG — Phase 3b (§8 surfacing) — 2026-06-02
+
+New `components/RelatedEditorial.tsx` ("More in this Pillar" — case studies +
+webinars by pillar, one GROQ query). Wired into `PillarOverview` (5 pillars) and
+the bespoke Operations page, below the courses + analysis rails. Reports are
+paywalled (no per-doc route) so they are NOT listed in the rail — they remain at
+`/advisory/reports`. Links use the existing detail routes
+(`/academy/case-studies/[slug]`, `/academy/webinars/[slug]`).
+
+Book page (`app/book/page.tsx`): chapter cards now also show a "Case Studies &
+Webinars" list per chapter, via a new `getEditorialByChapter()` fetch (3 GROQ
+queries total on the page now: courses, briefs, editorial).
+
+Verified: tsc 0 errors; eslint 0 errors on changed files; live data —
+Economics pillar → 3 editorial items; editorial-by-chapter spans ch 5/6/8/10/12.
+
+**Ecosystem now fully cross-references** (book ↔ pillar ↔ course ↔ analysis ↔
+case studies/webinars). Remaining items are curation/validation (per-doc chapter
+refinement, §5 triage, §10 Q4), not wiring.
 
 ---
 
