@@ -47,8 +47,10 @@ const securityHeaders = [
       //   - jsDelivr CDN: US Atlas TopoJSON for react-simple-maps maps
       //   - Stripe payment API
       "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.supabase.io https://*.api.sanity.io https://*.apicdn.sanity.io https://api.sanity.io https://cdn.jsdelivr.net https://api.stripe.com https://*.sentry.io https://o*.ingest.sentry.io",
-      // YouTube embeds + Spotify/SoundCloud audio + Stripe Checkout / 3DS
-      "frame-src https://www.youtube.com https://open.spotify.com https://w.soundcloud.com https://js.stripe.com https://hooks.stripe.com",
+      // 'self' so the same-origin book PDF (/HTR_Book_v28_Final2.pdf) can be
+      // framed (frame-src does NOT inherit default-src when set explicitly).
+      // YouTube embeds + Spotify/SoundCloud audio + Stripe Checkout / 3DS.
+      "frame-src 'self' https://www.youtube.com https://open.spotify.com https://w.soundcloud.com https://js.stripe.com https://hooks.stripe.com",
       // Service workers / web workers
       "worker-src 'self' blob:",
     ].join("; "),
