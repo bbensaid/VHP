@@ -2,6 +2,7 @@ import Link from "next/link";
 import FromTheBookForPillar from "@/components/FromTheBookForPillar";
 import CoursesInPillar from "@/components/CoursesInPillar";
 import LatestHubReports from "@/components/LatestHubReports";
+import RelatedEditorial from "@/components/RelatedEditorial";
 
 export const metadata = {
   title: "Operations | Health Transformation Review",
@@ -132,6 +133,11 @@ export default function OperationsPage() {
         <LatestHubReports
           pillar="Operations"
           colorClass="text-teal-700"
+          cardHoverClass="hover:border-teal-300 hover:bg-teal-50/40"
+          titleHoverClass="group-hover:text-teal-700"
+        />
+        <RelatedEditorial
+          pillar="Operations"
           cardHoverClass="hover:border-teal-300 hover:bg-teal-50/40"
           titleHoverClass="group-hover:text-teal-700"
         />

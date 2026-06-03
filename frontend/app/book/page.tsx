@@ -40,6 +40,27 @@ async function getBriefsByChapter(): Promise<Record<string, ChapterBrief[]>> {
   return map;
 }
 
+interface ChapterEditorial { _id: string; _type: "caseStudy" | "webinar"; title: string; slug?: { current: string } }
+const EDITORIAL_BASE: Record<ChapterEditorial["_type"], string> = {
+  caseStudy: "/academy/case-studies",
+  webinar: "/academy/webinars",
+};
+
+/** Case studies + webinars carrying a chapterRef, grouped by chapter num. */
+async function getEditorialByChapter(): Promise<Record<string, ChapterEditorial[]>> {
+  const items: Array<ChapterEditorial & { chapterRef?: string }> = await client.fetch(
+    `*[_type in ["caseStudy","webinar"] && defined(chapterRef)]{ _id, _type, title, slug, chapterRef }`,
+    {},
+    { next: { revalidate: 300 } }
+  );
+  const map: Record<string, ChapterEditorial[]> = {};
+  for (const e of items ?? []) {
+    if (!e.chapterRef) continue;
+    (map[e.chapterRef] ??= []).push(e);
+  }
+  return map;
+}
+
 // Map chapter.num -> reader-mode slug. Built once at module load.
 const CHAPTER_SLUGS: Record<string, string> = Object.fromEntries(
   getAllTracks().map((t) => [t.id, t.slug])
@@ -123,9 +144,10 @@ const KEY_CONCEPTS = [
 
 export default async function BookPage() {
   // Book ↔ platform tie-in (§7.2): courses + analysis briefs per chapter num.
-  const [coursesByChapter, briefsByChapter] = await Promise.all([
+  const [coursesByChapter, briefsByChapter, editorialByChapter] = await Promise.all([
     getCoursesByChapter(),
     getBriefsByChapter(),
+    getEditorialByChapter(),
   ]);
 
   return (
@@ -292,6 +314,7 @@ export default async function BookPage() {
                     const numLabel = /^\d+$/.test(ch.num) ? `Chapter ${ch.num}` : ch.num;
                     const chCourses = coursesByChapter[ch.num] ?? [];
                     const chBriefs = briefsByChapter[ch.num] ?? [];
+                    const chEditorial = editorialByChapter[ch.num] ?? [];
 
                     return (
                       <div key={ch.num} id={`chapter-${ch.num}`} className="scroll-mt-24 rounded-xl border bg-white p-5 hover:shadow-sm transition-all border-slate-200">
@@ -363,6 +386,27 @@ export default async function BookPage() {
                                         className="text-[11px] font-medium text-slate-500 hover:text-indigo-700 hover:underline leading-snug"
                                       >
                                         {b.title}
+                                      </Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+
+                            {/* Case studies + webinars for this chapter (§8) */}
+                            {chEditorial.length > 0 && (
+                              <div className="mt-3 pt-3 border-t border-slate-100">
+                                <p className="text-[9px] font-black uppercase tracking-widest text-slate-300 mb-1.5">
+                                  Case Studies &amp; Webinars
+                                </p>
+                                <ul className="space-y-1">
+                                  {chEditorial.slice(0, 4).map((e) => (
+                                    <li key={e._id}>
+                                      <Link
+                                        href={e.slug?.current ? `${EDITORIAL_BASE[e._type]}/${e.slug.current}` : EDITORIAL_BASE[e._type]}
+                                        className="text-[11px] font-medium text-slate-500 hover:text-indigo-700 hover:underline leading-snug"
+                                      >
+                                        {e.title}
                                       </Link>
                                     </li>
                                   ))}
