@@ -255,11 +255,11 @@ export default async function ArticlePageTemplate({
               </div>
             </div>
 
-            <h1 className={`ty-h1 font-black mb-6 leading-tight ${theme.text}`}>
+            <h1 className={`text-2xl sm:text-3xl font-black mb-4 leading-tight ${theme.text}`}>
               {article.title}
             </h1>
 
-            <p className="ty-h2 text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
               {article.summary}
             </p>
           </header>
