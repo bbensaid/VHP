@@ -22,6 +22,20 @@ export default defineType({
       type: 'date',
     }),
     defineField({
+      name: 'pillar',
+      title: 'Pillar',
+      type: 'string',
+      options: {
+        list: ['Policy', 'Economics', 'Technology', 'Clinical', 'Equity', 'Operations'],
+      },
+    }),
+    defineField({
+      name: 'chapterRef',
+      title: 'Book Chapter',
+      type: 'string',
+      description: 'Book chapter number ("1"–"20") this report ties into. Optional.',
+    }),
+    defineField({
       name: 'accessLevel',
       title: 'Access Level',
       type: 'string',
