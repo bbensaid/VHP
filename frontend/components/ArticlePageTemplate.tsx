@@ -2,7 +2,7 @@ import Link from "next/link";
 import { client } from "@/lib/sanity";
 import { getUser, roleAtLeast } from "@/lib/auth";
 import UpgradePrompt from "@/components/UpgradePrompt";
-import ArticleContent from "./ArticleContent";
+import AcademyContent from "./AcademyContent";
 import VideoBlock from "./VideoBlock";
 import AudioBlock from "./AudioBlock";
 import PrintButton from "@/components/PrintButton";
@@ -281,8 +281,8 @@ export default async function ArticlePageTemplate({
 
           {canReadFull ? (
             <>
-              <div id="article-body" className="prose prose-lg prose-indigo max-w-none transition-all duration-200">
-                <ArticleContent body={mainContent} />
+              <div id="article-body" className="max-w-none transition-all duration-200">
+                <AcademyContent body={mainContent} />
               </div>
               {!user && (
                 <div className="mt-12">
@@ -293,8 +293,8 @@ export default async function ArticlePageTemplate({
           ) : (
             <>
               {/* Show first 3 content blocks as preview */}
-              <div id="article-body" className="prose prose-lg prose-indigo max-w-none transition-all duration-200 relative">
-                <ArticleContent body={mainContent.slice(0, 3)} />
+              <div id="article-body" className="max-w-none transition-all duration-200 relative">
+                <AcademyContent body={mainContent.slice(0, 3)} />
                 {/* Fade out the preview */}
                 <div className="absolute bottom-0 inset-x-0 h-48 bg-linear-to-t from-white dark:from-slate-900 to-transparent pointer-events-none" />
               </div>
