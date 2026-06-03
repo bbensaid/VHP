@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCourseWithProgress, enrollUser } from "@/lib/course-api";
 import { getUser } from "@/lib/auth";
+import CourseBookTie from "@/components/CourseBookTie";
 
 interface PageProps {
   params: Promise<{ courseSlug: string }>;
@@ -74,6 +75,9 @@ export default async function CourseOverviewPage({ params }: PageProps) {
         {course.description && (
           <p className="text-slate-600 leading-relaxed max-w-3xl mb-10">{course.description}</p>
         )}
+
+        {/* Book tie-in + related analysis (§7.3) */}
+        <CourseBookTie pillar={course.pillar} chapterRef={course.chapterRef} />
 
         {lessons.length === 0 ? (
           <div className="bg-white border border-slate-200 rounded-2xl p-8 text-center">

@@ -2,6 +2,7 @@ import Link from "next/link";
 import HubSubscribeCTA from "@/components/HubSubscribeCTA";
 import LatestHubReports from "@/components/LatestHubReports";
 import FromTheBookForPillar from "@/components/FromTheBookForPillar";
+import CoursesInPillar from "@/components/CoursesInPillar";
 import { getPillar, type PillarId } from "@/lib/taxonomy";
 import { PILLAR_OVERVIEW } from "@/lib/data/pillar-topics";
 
@@ -129,6 +130,14 @@ export default function PillarOverview({ pillarId, children }: Props) {
           ))}
         </div>
       </div>
+
+      {/* Courses in this pillar (Supabase) */}
+      <CoursesInPillar
+        pillarId={pillarId}
+        colorClass={textColor}
+        cardHoverClass={`${hoverBorder} ${hoverBg}`}
+        titleHoverClass={`group-hover:${textColor}`}
+      />
 
       {/* Latest reports for this pillar */}
       <LatestHubReports
