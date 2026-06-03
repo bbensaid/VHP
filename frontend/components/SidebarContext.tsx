@@ -39,8 +39,18 @@ export function SidebarProvider({ children }: { children: ReactNode }) {
   );
 }
 
+// Safe no-op fallback so a consumer rendered before the provider is mounted
+// (SSR / client boundary timing) degrades gracefully instead of crashing the
+// whole page. The real provider always supersedes this once mounted.
+const NOOP_SIDEBAR: SidebarContextType = {
+  isLeftOpen: true,
+  isRightOpen: true,
+  toggleLeft: () => {},
+  toggleRight: () => {},
+  setLeftOpen: () => {},
+  setRightOpen: () => {},
+};
+
 export function useSidebar() {
-  const ctx = useContext(SidebarContext);
-  if (!ctx) throw new Error("useSidebar must be used within SidebarProvider");
-  return ctx;
+  return useContext(SidebarContext) ?? NOOP_SIDEBAR;
 }

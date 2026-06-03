@@ -237,8 +237,23 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
   );
 }
 
+// Safe no-op fallback so a consumer rendered before the provider is mounted
+// (SSR / client boundary timing) degrades gracefully instead of crashing the
+// whole page. The real provider always supersedes this once mounted.
+const NOOP_VOICE: VoiceContextType = {
+  isListening: false,
+  isSpeaking: false,
+  isSupported: false,
+  fabHidden: false,
+  transcript: "",
+  pendingInjection: null,
+  toggleListening: () => {},
+  toggleFabHidden: () => {},
+  clearInjection: () => {},
+  speakText: () => {},
+  stopSpeaking: () => {},
+};
+
 export function useVoice() {
-  const ctx = useContext(VoiceContext);
-  if (!ctx) throw new Error("useVoice must be used within VoiceProvider");
-  return ctx;
+  return useContext(VoiceContext) ?? NOOP_VOICE;
 }
