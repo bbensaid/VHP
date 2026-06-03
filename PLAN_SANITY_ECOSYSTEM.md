@@ -80,11 +80,30 @@ Done this pass (§9 step 2 + the course slice of step 3):
 Verified: tsc clean (0 errors); eslint 0 errors on changed files (4 pre-existing
 warnings untouched); all 3 live data paths return under anon/public keys.
 
-**Still open (Phase 3+ / not in scope this pass):**
-- Per-doc refinement of policyAnalysis chapterRef (currently lead-chapter default).
-- §8 caseStudy/report/webinar pillar+chapterRef backfill (schemas ready; data not
-  yet filled) and their pillar-rail surfacing.
-- §5 validation triage (~30 stat-heavy briefs) and legacy interop coverage call (§10 Q4).
+---
+
+## 0d. EXECUTION LOG — Phase 3a (§8 editorial backfill) — 2026-06-02
+
+Live audit first (assumptions stale as usual): caseStudy(7) + webinar(4)
+**already had pillars**, just needed chapterRef; report(4) + analystNote(5) had
+neither. instructor(4) are people → LEFT untouched per §8.
+
+1. **analystNote schema** — added `pillar` + `chapterRef` fields (had neither).
+2. **20 editorial docs backfilled** (`scripts/backfill-editorial-pillar-chapter.mjs
+   --commit`), idempotent (only sets unset fields):
+   - caseStudy/webinar: chapterRef = pillar lead chapter.
+   - report: pillar by title (Direct-to-Employer→Economics, CMS Fee Schedule
+     Forecast→**Economics** [confirmed: payment-rate angle], State of Health
+     AI→Technology, VT Solvency Audit→Economics) + lead chapter.
+   - analystNote: pillar by content (001 MA margins→Economics, 002 SEP-1→Clinical,
+     003 travel-RN→Operations, 004 ambient-AI→Technology, 005 Act 167→Policy) + lead.
+   Verified live: 20/20 have pillar + chapterRef, 0 missing.
+
+**Still open:**
+- **Phase 3b (UI):** surface caseStudy/report/webinar in pillar rails + book
+  chapter cards (data now ready; rails not yet built).
+- Per-doc refinement of policyAnalysis/editorial chapterRef (lead-chapter default).
+- §5 validation triage (~30 stat-heavy briefs) and legacy interop coverage (§10 Q4).
 
 ---
 
