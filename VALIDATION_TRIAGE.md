@@ -98,6 +98,49 @@ DSH editor's note deliberately quoting the corrected-away claim).
 **Scripts:** `purge-htr-claims.mjs`, `fix-remaining-blocks.mjs`, `neutralize-unverifiable.mjs`,
 plus scan helpers. All bodies backed up in `/sanity-backups/backup-all-briefs-*.json`.
 
+---
+
+## Pass 3 — the 51 low-stat briefs swept (every stray number checked)
+
+Scanned all 51 remaining briefs for *any* number-bearing sentence (91 found across 35
+docs; 16 briefs were pure prose). Verified the checkable ones, cut the rest.
+
+**Verified → corrected (web-sourced):**
+- `pol-005` No Surprises Act: "22,000 projected / 700,000 actual (2024)" → **1.46M disputes
+  initiated in 2024** (CRS); kept the "overwhelmed, backlog" point.
+- `tech-001` FDA AI devices: "more than 950 / 312 in 2024" → **~1,000 by end-2024** (FDA
+  list); cut the unverifiable "47 De Novo / 340%."
+- `eco-004` MA V28: kept the verified ~**3.1–3.3%** score reduction; **cut the unsourced
+  "$31B AHIP" and "43 counties / highest since 2014."**
+- `tech-002` TEFCA: softened unsourced "73% of beds / 2.1M req/mo / 1.3B visits."
+- `pol-004` CON laws: "36 states" → **35 states + DC** (2024); generalized the
+  unverifiable "Tennessee SB 1204 / one REH in 18 months."
+
+**First-person fabricated / invented → DELETED or stripped:**
+- Deleted blocks: `clinical-rpm` "we reduce ED visits 22%"; `fiscal-optimization-rpm`
+  "40% of savings"; `alzheimers` "increase MRI throughput 12%"; `maternal-mandate`
+  "$12M RMOMS reserved, applications open Mar 15 2026."
+- Stripped the fabricated figures/first-person from: `sdoh-integration` ("As CTO,
+  I… 80%"), `vermont-health-economics-roadmap` ("92% data liquidity / our 14
+  districts"), `vermont-vhie` ("$2.1M avoidable technical debt"), `fiscal-locum`
+  ("22% of shifts"), `virtual-nursing` ("23 systems/11 states, 31%/11% effect"),
+  `maternal-mandate` (invented "Dec 2025 CMS-HRSA rule / 89-county Index"),
+  `scope-of-practice` (invented "2025 Health Affairs meta of 14 studies, 12%, $85k").
+
+**Left intact (verified real):** Obermeyer/Science 2019 + ACA §1557 2024 final rule
+(`equ-002`); the recurring Vermont anchors (19.6%, 108%, 13% workforce decline,
+$62.1M BCBSVT) confirmed in pass 1; and HTR branding/opinion lines.
+
+**Final sweep across all 109 briefs: clean.** The only marker match is the DSH editor's
+note deliberately quoting the corrected-away false claim. Scripts: `sweep-low51.mjs`,
+`extract-low51-claims.mjs`, `final-sweep.mjs`.
+
+### Bottom line
+Every one of the 109 policyAnalysis briefs has now been swept. Verifiable claims were
+corrected to sourced values; HTR-internal and otherwise-unverifiable statistics were
+deleted or stripped of their fabricated precision. Nothing presented as data is now an
+un-sourceable house figure.
+
 **Sources:** CDC NCHS Maternal Mortality 2024 · CDC MMWR 6943a3 (telehealth) ·
 Health Affairs 10.1377/hlthaff.2016.1651 (EHR) · VTDigger 2025-12-22 (UVMMC/BCBSVT) ·
 congress.gov IF10422 + Georgetown CCF + HFMA (DSH) · Chartis 2025 Rural Health State of the State.
