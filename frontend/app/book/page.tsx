@@ -20,6 +20,25 @@ import {
   type PillarId,
 } from "@/lib/taxonomy";
 import { getAllTracks } from "@/lib/narration";
+import { getCoursesByChapter, type PillarCourse } from "@/lib/course-api";
+import { client } from "@/lib/sanity";
+
+interface ChapterBrief { _id: string; title: string; pillar?: string; slug?: { current: string } }
+
+/** All policyAnalysis briefs that carry a chapterRef, grouped by chapter num. */
+async function getBriefsByChapter(): Promise<Record<string, ChapterBrief[]>> {
+  const briefs: Array<ChapterBrief & { chapterRef?: string }> = await client.fetch(
+    `*[_type == "policyAnalysis" && defined(chapterRef)]{ _id, title, pillar, slug, chapterRef }`,
+    {},
+    { next: { revalidate: 300 } }
+  );
+  const map: Record<string, ChapterBrief[]> = {};
+  for (const b of briefs ?? []) {
+    if (!b.chapterRef) continue;
+    (map[b.chapterRef] ??= []).push(b);
+  }
+  return map;
+}
 
 // Map chapter.num -> reader-mode slug. Built once at module load.
 const CHAPTER_SLUGS: Record<string, string> = Object.fromEntries(
@@ -102,7 +121,13 @@ const KEY_CONCEPTS = [
 
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
 
-export default function BookPage() {
+export default async function BookPage() {
+  // Book ↔ platform tie-in (§7.2): courses + analysis briefs per chapter num.
+  const [coursesByChapter, briefsByChapter] = await Promise.all([
+    getCoursesByChapter(),
+    getBriefsByChapter(),
+  ]);
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-8 md:py-12">
 
@@ -265,9 +290,11 @@ export default function BookPage() {
                     const pillar = ch.pillar ? PILLARS.find((p) => p.id === ch.pillar) : null;
                     const PillarIcon = ch.pillar ? PILLAR_ICONS[ch.pillar] : null;
                     const numLabel = /^\d+$/.test(ch.num) ? `Chapter ${ch.num}` : ch.num;
+                    const chCourses = coursesByChapter[ch.num] ?? [];
+                    const chBriefs = briefsByChapter[ch.num] ?? [];
 
                     return (
-                      <div key={ch.num} className="rounded-xl border bg-white p-5 hover:shadow-sm transition-all border-slate-200">
+                      <div key={ch.num} id={`chapter-${ch.num}`} className="scroll-mt-24 rounded-xl border bg-white p-5 hover:shadow-sm transition-all border-slate-200">
                         <div className="flex flex-col md:flex-row md:items-start gap-4">
                           {/* Left: chapter info */}
                           <div className="flex-1 min-w-0">
@@ -300,6 +327,48 @@ export default function BookPage() {
                               Read this chapter
                               <ArrowRightIcon className="w-2.5 h-2.5" />
                             </Link>
+
+                            {/* Go deeper: Academy course(s) for this chapter (§7.2) */}
+                            {chCourses.length > 0 && (
+                              <div className="mt-3 pt-3 border-t border-slate-100">
+                                <p className="text-[9px] font-black uppercase tracking-widest text-slate-300 mb-1.5">
+                                  Go Deeper · Academy
+                                </p>
+                                <div className="flex flex-wrap gap-1.5">
+                                  {chCourses.map((c: PillarCourse) => (
+                                    <Link
+                                      key={c.slug}
+                                      href={`/academy/tracks/${c.slug}`}
+                                      className="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-[11px] font-semibold bg-sky-50 hover:bg-sky-100 text-sky-700 border border-sky-200 hover:border-sky-300 transition-all"
+                                    >
+                                      {c.title}
+                                      <ArrowRightIcon className="w-2.5 h-2.5 opacity-50" />
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+
+                            {/* Related analysis briefs for this chapter (§7.2) */}
+                            {chBriefs.length > 0 && (
+                              <div className="mt-3 pt-3 border-t border-slate-100">
+                                <p className="text-[9px] font-black uppercase tracking-widest text-slate-300 mb-1.5">
+                                  Related Analysis
+                                </p>
+                                <ul className="space-y-1">
+                                  {chBriefs.slice(0, 4).map((b) => (
+                                    <li key={b._id}>
+                                      <Link
+                                        href={`/${(b.pillar ?? "").toLowerCase()}/${b.slug?.current ?? ""}`}
+                                        className="text-[11px] font-medium text-slate-500 hover:text-indigo-700 hover:underline leading-snug"
+                                      >
+                                        {b.title}
+                                      </Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
                           </div>
 
                           {/* Right: platform links */}
