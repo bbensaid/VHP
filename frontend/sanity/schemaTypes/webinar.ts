@@ -28,6 +28,12 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'chapterRef',
+      title: 'Book Chapter',
+      type: 'string',
+      description: 'Book chapter number ("1"–"20") this event ties into. Optional.',
+    }),
+    defineField({
       name: 'description',
       title: 'Short Description',
       type: 'text',

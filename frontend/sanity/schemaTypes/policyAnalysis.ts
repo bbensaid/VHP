@@ -29,6 +29,7 @@ export const policyAnalysisType = defineType({
           { title: 'Technology', value: 'Technology' },
           { title: 'Clinical',   value: 'Clinical'   },
           { title: 'Equity',     value: 'Equity'     },
+          { title: 'Operations', value: 'Operations' },
         ],
         layout: 'radio',
       },
@@ -70,6 +71,14 @@ export const policyAnalysisType = defineType({
         ],
       },
       validation: (Rule) => Rule.required().error('A category is required.'),
+    }),
+
+    // ── BOOK TIE-IN — chapter number from chapters.ts (taxonomy) ─────────
+    defineField({
+      name: 'chapterRef',
+      title: 'Book Chapter',
+      type: 'string',
+      description: 'Book chapter number ("1"–"20") this analysis ties into. Optional.',
     }),
 
     defineField({
