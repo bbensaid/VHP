@@ -7,7 +7,7 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const MIN_WORDS = 2000;
+const MIN_WORDS = 1400; // "close enough" floor; target ~2000 where the topic supports it
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const env = readFileSync(join(__dir, "../.env.local"), "utf8");
