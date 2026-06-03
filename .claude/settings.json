@@ -54,7 +54,21 @@
       "Bash(curl -s -o /dev/null -w '' -b htr_beta=1 http://localhost:3000__TRACKED_VAR__)",
       "Bash(grep -oE 'message=\"[^\"]{0,200}')",
       "Bash(curl -s -o /dev/null -b \"htr_beta=1\" \"http://localhost:3000/economics/the-premium-spike-breaking-point\")",
-      "Bash(curl -s -o /dev/null -b htr_beta=1 http://localhost:3000__TRACKED_VAR__)"
+      "Bash(curl -s -o /dev/null -b htr_beta=1 http://localhost:3000__TRACKED_VAR__)",
+      "Bash(node scripts/expand-pol-002-pbm.mjs)",
+      "Bash(node scripts/expand-pol-002-pbm.mjs --commit)",
+      "Bash(node scripts/expand-clin-001-hah.mjs)",
+      "Bash(node scripts/expand-clin-001-hah.mjs --commit)",
+      "Bash(node /Users/baba/Vermont-Health-Platform/frontend/scripts/expand-clin-001-hah.mjs)",
+      "Bash(node /Users/baba/Vermont-Health-Platform/frontend/scripts/expand-clin-001-hah.mjs --commit)",
+      "Bash(node /Users/baba/Vermont-Health-Platform/frontend/scripts/expand-equ-003-rural.mjs)",
+      "Bash(node /Users/baba/Vermont-Health-Platform/frontend/scripts/expand-equ-003-rural.mjs --commit)",
+      "Bash(node /Users/baba/Vermont-Health-Platform/frontend/scripts/audit-analysis-length.mjs)",
+      "Bash(node /Users/baba/Vermont-Health-Platform/frontend/scripts/triage-queue.mjs)",
+      "Bash(node /Users/baba/Vermont-Health-Platform/frontend/scripts/triage-delete.mjs)",
+      "Bash(node /Users/baba/Vermont-Health-Platform/frontend/scripts/triage-delete.mjs --commit)",
+      "Bash(node /Users/baba/Vermont-Health-Platform/frontend/scripts/expand-batch-clinical-1.mjs)",
+      "Bash(node /Users/baba/Vermont-Health-Platform/frontend/scripts/expand-batch-clinical-1.mjs --commit)"
     ]
   }
 }

@@ -1,0 +1,725 @@
+{
+  "_id": "policyAnalysis-clin-001",
+  "body": [
+    {
+      "_key": "hah-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-2",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital-at-Home (HaH) delivers acute, inpatient-level care — daily physician oversight, nursing visits, IV medications, diagnostics, and continuous monitoring — in a patient's residence instead of a hospital bed. Once a fringe experiment, it became a mainstream care model under a COVID-era Medicare waiver, and in early 2026 Congress committed to it through the end of the decade. This analysis reviews the evidence on outcomes and cost, the operating model and its guardrails, the policy timeline that nearly ended the program in 2025, and the equity questions that determine who actually benefits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-4",
+          "_type": "span",
+          "marks": [],
+          "text": "From a 17-Patient Pilot to a National Model"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hah-5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-6",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital-at-Home is not a pandemic invention — it is a thirty-year-old idea that the pandemic finally made payable. The model was formalized at Johns Hopkins in 1995, when geriatrician Bruce Leff and colleagues ran a small pilot — initially just 17 patients — to treat acutely ill older adults who needed hospital-level care but risked deterioration (delirium, deconditioning, infection) in a conventional ward. The pilot concluded the approach was safe, feasible, highly satisfactory, and cost-effective for selected patients (Knowable Magazine, 2025)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-8",
+          "_type": "span",
+          "marks": [],
+          "text": "For the next twenty-five years the idea stalled on a single obstacle: Medicare and most private insurers did not pay for home hospitalization, so fewer than 50 programs existed nationally. COVID-19 broke the logjam. On November 25, 2020, under the broader 'Hospital Without Walls' initiative and Section 1135 emergency waiver authority, CMS launched the Acute Hospital Care at Home (AHCAH) initiative, which let approved hospitals bill Medicare for inpatient-level care delivered at home (AHA, 2020). With payment finally available, the number of programs grew from fewer than 50 before the pandemic to more than 400 approved hospitals today — one of the fastest delivery-model expansions in recent memory."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-10",
+          "_type": "span",
+          "marks": [],
+          "text": "What the Evidence Shows"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hah-11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-12",
+          "_type": "span",
+          "marks": [],
+          "text": "The clinical case for Hospital-at-Home is unusually strong for a delivery-model innovation. CMS's own 2024 evaluation of the Acute Hospital Care at Home (AHCAH) initiative found that mortality was lower for home patients across all of the top 25 MS-DRGs studied, and the difference was statistically significant for 11 of them (CMS, 2024). The agency also found that Medicaid enrollees treated at home experienced similar or better outcomes than those in brick-and-mortar hospitals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-14",
+          "_type": "span",
+          "marks": [],
+          "text": "That federal finding rests on two decades of prior research. The foundational Johns Hopkins model developed by Bruce Leff documented roughly 38% lower cost of care alongside lower complication rates, higher patient and caregiver satisfaction, and dramatically lower 30-day readmissions — on the order of 7% versus 23% for matched inpatients in early studies (AHRQ PSNet). Subsequent systematic reviews in heart failure and other conditions have generally reproduced the pattern: equal or better safety, shorter effective length of stay, fewer hospital-acquired infections and episodes of delirium, and improved quality of life at 6 and 12 months."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-16",
+          "_type": "span",
+          "marks": [],
+          "text": "The convergence is what makes Hospital-at-Home credible: an independent line of academic trials and CMS's own administrative-data evaluation reach the same conclusion — for carefully selected patients, home-based acute care is at least as safe as the ward and materially cheaper."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "hah-17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-18",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Home Care Costs Less"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hah-19",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-20",
+          "_type": "span",
+          "marks": [],
+          "text": "The savings are structural, not the result of skimping on care. A hospital bed carries enormous fixed overhead — facility depreciation, 24/7 staffing of an entire unit, environmental services — that is allocated across every admission. Shifting an appropriate patient home removes most of that overhead while preserving the clinical inputs that actually drive recovery. Home patients also avoid two expensive iatrogenic risks of hospitalization: hospital-acquired infections and the functional and cognitive decline (especially delirium in older adults) that frequently follows days in an unfamiliar, immobilizing ward environment. Fewer complications mean shorter episodes and fewer downstream readmissions, compounding the direct overhead savings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-21",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-22",
+          "_type": "span",
+          "marks": [],
+          "text": "The Operating Model and Its Guardrails"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hah-23",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-24",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital-at-Home is not 'a nurse visit plus a phone.' Under the CMS waiver, a participating hospital must submit a patient-screening protocol for approval that combines clinical criteria with an environmental assessment of the home — confirming, among other things, that the dwelling is safe and that the patient's needs can be met there (CMS; American Nurse). The care model itself is intensive: 24/7 availability of both physician and nursing coverage, at least two in-person visits per day by a registered nurse or, where permitted, a Mobile Integrated Health paramedic, continuous or intermittent remote monitoring of vital signs, and on-demand audio/video connection to the care team. Medication delivery, mobile diagnostics, and meal support round out the package."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-25",
+      "_type": "code",
+      "code": "[{\"Requirement\":\"Eligibility screening\",\"Detail\":\"CMS-approved protocol — clinical criteria + home environmental assessment\"},{\"Requirement\":\"Physician oversight\",\"Detail\":\"24/7 availability; daily evaluation (in person or via telehealth)\"},{\"Requirement\":\"Nursing visits\",\"Detail\":\"≥2 in-person visits/day (RN or, if appropriate, MIH paramedic)\"},{\"Requirement\":\"Monitoring\",\"Detail\":\"Remote vital-sign monitoring; on-demand audio connection to care team\"},{\"Requirement\":\"Rapid response\",\"Detail\":\"Ability to escalate and return the patient to the hospital quickly\"}]",
+      "title": "Hospital-at-Home: core CMS requirements"
+    },
+    {
+      "_key": "hah-26",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-27",
+          "_type": "span",
+          "marks": [],
+          "text": "These guardrails matter for interpreting the outcome data: HaH's strong results are the results of a tightly screened, intensively monitored program — not evidence that any patient can safely be sent home. The eligibility funnel is doing real work, and a program that loosens it without preserving the monitoring intensity should not expect the same outcomes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-28",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-29",
+          "_type": "span",
+          "marks": [],
+          "text": "Where It Works — and How Big It Has Gotten"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hah-30",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-31",
+          "_type": "span",
+          "marks": [],
+          "text": "In practice, Hospital-at-Home concentrates on a band of conditions that are acute enough to require hospital-level management but stable enough to monitor safely at home: heart failure, COPD exacerbations, pneumonia and other infections, cellulitis, and selected post-acute and chronic-disease flares. Mass General Brigham has built the largest U.S. program, running roughly 50-60 home patients a day with capacity around 70 and a stated goal of shifting 10% of its total inpatient volume — on the order of 200-300 beds — into the home (Becker's, 2025). Cleveland Clinic's Florida program treated about 1,000 patients in its first year, and Mayo Clinic and Kaiser Permanente co-developed a model and the Advanced Care at Home Coalition to push the approach forward."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-32",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-33",
+          "_type": "span",
+          "marks": [],
+          "text": "The scale signal matters for policy: these are not boutique pilots but core operations at some of the country's most sophisticated systems, built on the assumption that the payment pathway will persist. That assumption is exactly what the waiver politics put at risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-34",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-35",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2025 Cliff and the 2030 Extension"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hah-36",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-37",
+          "_type": "span",
+          "marks": [],
+          "text": "For all its clinical success, Hospital-at-Home spent 2025 on the edge of disappearing, because its Medicare reimbursement runs entirely through a temporary waiver. Without an active AHCAH waiver, hospitals cannot bill fee-for-service Medicare or Medicaid for home-based acute care at all — they can only bill private and managed-care plans (Chartis, 2025). That single fact makes the waiver existential: it is the difference between a reimbursed service line and an unfunded one."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-38",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-39",
+          "_type": "span",
+          "marks": [],
+          "text": "Congress let the initiative lapse on September 30, 2025 amid a government-funding impasse, briefly stranding active programs. The Consolidated Appropriations Act, 2026 then reinstated and extended the waiver through September 30, 2030 — the substance of the Hospital Inpatient Services Modernization Act (H.R. 4313 / S.2237) — giving the field roughly five years of funding certainty for the first time (AMA, 2026; Healthcare Dive, 2025). As of late 2025, roughly 419 hospitals across about 147 health systems in 39 states had been approved to operate AHCAH programs (CMS, 2025)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-40",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-41",
+          "_type": "span",
+          "marks": [],
+          "text": "A care model can be proven safe, cheaper, and preferred by patients and still nearly die — not on the merits, but because its funding was attached to a waiver that Congress has to keep renewing. Durable adoption requires durable payment."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "hah-42",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-43",
+          "_type": "span",
+          "marks": [],
+          "text": "What Makes It Hard to Scale"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hah-44",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-45",
+          "_type": "span",
+          "marks": [],
+          "text": "If the evidence is so favorable, why is Hospital-at-Home roughly 1-2% of eligible volume rather than 20%? Several barriers beyond payment are real. The first is logistics: a home hospital is a supply chain — same-day delivery of medications, oxygen, infusion equipment, and mobile diagnostics, plus a routing system that gets nurses or paramedics to scattered homes for two visits a day. That coordination is operationally harder than walking down a hospital corridor, and it does not scale linearly. The second is workforce: the model needs clinicians comfortable practicing without the safety net of a unit, and in many markets nursing and paramedic capacity is already strained."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-46",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-47",
+          "_type": "span",
+          "marks": [],
+          "text": "The third is the technology stack. Reliable Hospital-at-Home depends on remote monitoring that feeds a command center, video connectivity into the home, and EHR integration so the home episode is documented like any other admission — and that stack only works where connectivity does. The fourth is payer fragmentation: the AHCAH waiver governs fee-for-service Medicare, but Medicaid coverage is uneven and commercial coverage varies plan by plan, so a hospital's program economics depend on its specific payer mix. A system whose eligible patients are mostly in plans that do not reimburse HaH cannot run the model at scale regardless of the clinical case."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-48",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-49",
+          "_type": "span",
+          "marks": [],
+          "text": "The Equity Question: Who Gets to Stay Home?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hah-50",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-51",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital-at-Home's benefits are real but not automatically equitable, because eligibility depends on conditions that track existing disadvantage. The screening protocol's environmental assessment effectively requires adequate, safe housing; many programs also assume an available caregiver. Patients who are unhoused, live in unsafe or crowded housing, or lack a caregiver can be screened out — which means the model can systematically exclude some of the most vulnerable patients it might most help (PMC, 2024)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-52",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-53",
+          "_type": "span",
+          "marks": [],
+          "text": "Technology compounds the gap. Remote monitoring and telehealth presuppose reliable broadband, which is precisely what rural and many low-income urban areas lack: rural residents report markedly lower broadband access, and in some areas connectivity is too weak to support monitoring devices at all (Commonwealth Fund, 2025; Johns Hopkins, 2025). The result is a risk that Hospital-at-Home, left to its default design, concentrates its benefits among well-housed, well-connected, caregiver-supported patients. Equity-minded policy responses — Medicaid coverage of HaH, broadband investment, and broader workforce models including community paramedicine — are aimed squarely at widening that funnel."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-54",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-55",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital-at-Home's eligibility criteria — safe housing, a caregiver, working broadband — are also a map of social advantage. Without deliberate design choices, the model risks delivering its biggest benefits to the patients who already have the most."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "hah-56",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-57",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hah-58",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-59",
+          "_type": "span",
+          "marks": [],
+          "text": "Three things will determine whether Hospital-at-Home matures from waiver-dependent program into permanent infrastructure. First, payment permanence: the 2030 extension buys time, but a permanent Medicare benefit (with a defined payment mechanism rather than a renewable waiver) is what would justify the capital investment in logistics, monitoring, and staffing that scaling requires. Second, scope expansion: whether programs move beyond the stable medical admissions that dominate today toward higher-acuity and post-surgical care, and whether Medicaid and commercial payers broaden coverage. Third, equity instrumentation: whether programs and regulators track who is screened out and why, and whether broadband and caregiver-support investments measurably widen access rather than leaving HaH a benefit for the already-advantaged."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-60",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-61",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hah-62",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-63",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital-at-Home is one of the rare delivery-model reforms where the clinical evidence, the cost evidence, and patient preference all point the same direction, validated by both academic trials and CMS's own data. Its vulnerability has never been clinical — it is structural: a care model funded by a waiver Congress must keep renewing, and an eligibility model that can quietly track social advantage. The 2026 extension through 2030 stabilizes the first problem for now; the second is unsolved and deserves explicit measurement. For health systems, the strategic read is that HaH is here to stay long enough to invest in — but the programs that endure will be the ones built for payment permanence and designed, deliberately, to reach beyond the easy-to-serve patient."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-64",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-65",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hah-67",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-68",
+          "_type": "span",
+          "marks": [
+            "hah-66"
+          ],
+          "text": "CMS — Acute Hospital Care at Home: Report on the Study of the Initiative (mortality and outcomes)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hah-66",
+          "_type": "link",
+          "href": "https://www.cms.gov/newsroom/fact-sheets/fact-sheet-report-study-acute-hospital-care-home-initiative"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-70",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-71",
+          "_type": "span",
+          "marks": [
+            "hah-69"
+          ],
+          "text": "CMS — Acute Hospital Care at Home Data Release Fact Sheet"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hah-69",
+          "_type": "link",
+          "href": "https://www.cms.gov/newsroom/fact-sheets/acute-hospital-care-home-data-release-fact-sheet"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-73",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-74",
+          "_type": "span",
+          "marks": [
+            "hah-72"
+          ],
+          "text": "AHRQ PSNet — Hospital at Home reduces costs, readmissions, and complications (Johns Hopkins model)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hah-72",
+          "_type": "link",
+          "href": "https://psnet.ahrq.gov/innovation/hospital-homesm-care-reduces-costs-readmissions-and-complications-and-enhances"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-76",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-77",
+          "_type": "span",
+          "marks": [
+            "hah-75"
+          ],
+          "text": "AMA — Lawmakers extend CMS hospital-at-home waiver for five years"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hah-75",
+          "_type": "link",
+          "href": "https://www.ama-assn.org/public-health/population-health/lawmakers-extend-cms-hospital-home-waiver-five-years"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-79",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-80",
+          "_type": "span",
+          "marks": [
+            "hah-78"
+          ],
+          "text": "Healthcare Dive — House passes bill extending hospital-at-home waivers for five years"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hah-78",
+          "_type": "link",
+          "href": "https://www.healthcaredive.com/news/house-passes-bill-extending-hospital-at-home-waivers-for-five-years/806798/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-82",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-83",
+          "_type": "span",
+          "marks": [
+            "hah-81"
+          ],
+          "text": "Chartis — 10 years of continuous hospital-at-home funding on the line in the waiver extension"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hah-81",
+          "_type": "link",
+          "href": "https://www.chartis.com/insights/10-years-continuous-hospital-home-funding-line-congressional-waiver-extension"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-85",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-86",
+          "_type": "span",
+          "marks": [
+            "hah-84"
+          ],
+          "text": "American Nurse — Program development: Hospital at Home (staffing and visit model)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hah-84",
+          "_type": "link",
+          "href": "https://www.myamericannurse.com/hospital-at-home-program/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-88",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-89",
+          "_type": "span",
+          "marks": [
+            "hah-87"
+          ],
+          "text": "Commonwealth Fund — In Rural America, a Weak Signal Can Mean Worse Health (broadband and HaH)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hah-87",
+          "_type": "link",
+          "href": "https://www.commonwealthfund.org/publications/podcast/2025/may/in-rural-america-weak-signal-can-mean-worse-health"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-91",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-92",
+          "_type": "span",
+          "marks": [
+            "hah-90"
+          ],
+          "text": "PMC — Perspectives on Policies to Improve Equity in Hospital at Home"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hah-90",
+          "_type": "link",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11692391/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-94",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-95",
+          "_type": "span",
+          "marks": [
+            "hah-93"
+          ],
+          "text": "Knowable Magazine — The hospital-at-home movement is growing in the United States (history)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hah-93",
+          "_type": "link",
+          "href": "https://knowablemagazine.org/content/article/health-disease/2025/hospital-at-home-movement-is-growing-in-the-united-states"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-97",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-98",
+          "_type": "span",
+          "marks": [
+            "hah-96"
+          ],
+          "text": "AHA — Summary of New CMS Flexibilities for Acute Hospital Care at Home (Nov 2020 launch)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hah-96",
+          "_type": "link",
+          "href": "https://www.aha.org/special-bulletin/2020-11-30-summary-new-cms-flexibilities-acute-hospital-care-home-program"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hah-100",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hah-101",
+          "_type": "span",
+          "marks": [
+            "hah-99"
+          ],
+          "text": "Becker's Hospital Review — How Mass General Brigham built the largest hospital-at-home program"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hah-99",
+          "_type": "link",
+          "href": "https://www.beckershospitalreview.com/healthcare-information-technology/telehealth/how-mass-general-brigham-built-the-largest-hospital-at-home/"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "Hospital-at-Home delivers inpatient-level acute care in the home and is backed by unusually strong evidence — CMS's own data shows lower mortality across the top MS-DRGs, and decades of trials show ~38% lower cost with fewer complications. This analysis covers the outcomes, the operating model, the 2025 funding cliff and 2030 extension, and the equity limits of who gets to stay home.",
+  "title": "Hospital-at-Home Programs: CMS Acute Hospital Care at Home Waiver Outcomes"
+}

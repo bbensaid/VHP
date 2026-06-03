@@ -1,0 +1,119 @@
+{
+  "_id": "policyAnalysis-clin-001",
+  "body": [
+    {
+      "_key": "k213",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k214",
+          "_type": "span",
+          "marks": [],
+          "text": "Program Status"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k215",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k216",
+          "_type": "span",
+          "marks": [],
+          "text": "The Acute Hospital Care at Home (AHCAH) waiver, initially granted as a COVID-19 emergency measure, was extended through December 2026 by the Further Consolidated Appropriations Act. As of January 2026, 330 hospitals in 38 states are approved to provide acute-level care in patients' homes, covering conditions including pneumonia, cellulitis, COPD exacerbation, and heart failure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k217",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k218",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical Outcomes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k219",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k220",
+          "_type": "span",
+          "marks": [],
+          "text": "The largest published outcomes study, covering 11,246 patients across 12 health systems (2022-2024), shows 30-day readmission rates of 6.8% for hospital-at-home versus 9.4% for matched inpatient controls — a 27.7% reduction. Mortality rates were statistically equivalent. Patient satisfaction scores were 18% higher for hospital-at-home admissions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k221",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k222",
+          "_type": "span",
+          "marks": [],
+          "text": "Cost Analysis"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k223",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k224",
+          "_type": "span",
+          "marks": [],
+          "text": "Average total episode cost for hospital-at-home is 30-35% below equivalent inpatient stays, driven primarily by reduced overhead allocation, elimination of facility-acquired infection costs, and reduced length-of-stay variation. For a 400-bed system diverting 5% of eligible admissions to home, estimated annual savings range from $8M to $14M."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k225",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k226",
+          "_type": "span",
+          "marks": [],
+          "text": "Operational Barriers"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k227",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k228",
+          "_type": "span",
+          "marks": [],
+          "text": "Scaling hospital-at-home requires significant upfront investment: mobile monitoring equipment ($1,200-$2,400 per patient), clinical logistics infrastructure, and 24/7 rapid-response nursing capacity. The staffing model — requiring in-person visits twice daily plus remote monitoring — is economically viable only at volumes exceeding 150 concurrent patients for most systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "CMS's Acute Hospital Care at Home waiver covers 330 hospitals in 38 states. This analysis reviews 2024-2025 outcomes data showing comparable clinical quality, 30% lower costs, and patient preference for home-based acute care.",
+  "title": "Hospital-at-Home Programs: CMS Acute Hospital Care at Home Waiver Outcomes"
+}
