@@ -134,9 +134,12 @@ export default async function ArticlePageTemplate({
 
   const theme = getTheme(article.pillar);
 
-  // Gate full body behind subscriber+; free/anon users see a 3-paragraph preview
+  // TEMP: subscription gating disabled — all content is fully readable by every
+  // user (anon included) until the subscription flow is built. To re-enable the
+  // paywall, restore: `user ? roleAtLeast(user.role, "subscriber") : false`.
   const user = await getUser();
-  const canReadFull = user ? roleAtLeast(user.role, "subscriber") : false;
+  void roleAtLeast; // keep import while gating is disabled
+  const canReadFull = true;
 
   const videoElements =
     article.body?.filter((block: SanityBlock) => ["video", "youtube", "mux.video"].includes(block._type)) || [];
