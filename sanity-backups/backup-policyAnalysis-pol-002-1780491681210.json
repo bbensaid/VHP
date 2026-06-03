@@ -1,0 +1,119 @@
+{
+  "_id": "policyAnalysis-pol-002",
+  "body": [
+    {
+      "_key": "k25",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k26",
+          "_type": "span",
+          "marks": [],
+          "text": "The PBM Regulatory Landscape"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k27",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k28",
+          "_type": "span",
+          "marks": [],
+          "text": "Pharmacy benefit managers process approximately 80% of U.S. prescription drug claims, yet operate with minimal transparency regarding pricing spreads and rebate flows. The 2025 legislative cycle saw unprecedented state-level action, with 14 states enacting PBM transparency bills and 8 more introducing legislation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k29",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k30",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Legislative Provisions"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k31",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k32",
+          "_type": "span",
+          "marks": [],
+          "text": "The most substantive enacted laws share three core elements: spread pricing prohibition for Medicaid managed care contracts, mandatory rebate pass-through to plan sponsors (typically 85-100%), and annual formulary and network pharmacy disclosure to state insurance commissioners."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k33",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k34",
+          "_type": "span",
+          "marks": [],
+          "text": "Market Impact"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k35",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k36",
+          "_type": "span",
+          "marks": [],
+          "text": "Early data from states that enacted PBM transparency laws in 2023-2024 (New York, Ohio, Arkansas) show 12-18% reduction in net drug costs for state employee health plans in the first year. However, PBMs have responded by restructuring fee arrangements to shift from spread to administrative service fees."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k37",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k38",
+          "_type": "span",
+          "marks": [],
+          "text": "Federal Preemption Risk"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k39",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k40",
+          "_type": "span",
+          "marks": [],
+          "text": "ERISA preemption remains the primary legal vulnerability for state PBM laws. Self-insured employer plans, which cover approximately 61% of privately insured Americans, are exempt from state insurance regulation under ERISA Section 514. States must structure PBM laws to avoid triggering preemption challenges."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "Fourteen states enacted pharmacy benefit manager transparency laws in 2025. This analysis compares spread pricing restrictions, rebate pass-through mandates, and formulary disclosure requirements across enacted legislation.",
+  "title": "PBM Reform Legislation: State-Level Transparency Requirements in 2025-2026"
+}

@@ -1,0 +1,119 @@
+{
+  "_id": "policyAnalysis-equ-003",
+  "body": [
+    {
+      "_key": "k313",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k314",
+          "_type": "span",
+          "marks": [],
+          "text": "Rural Hospital Closure Trajectory"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k315",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k316",
+          "_type": "span",
+          "marks": [],
+          "text": "The Chartis Center for Rural Health documents 147 rural hospital closures since 2010, with an acceleration to 19 closures in 2025 — the highest annual total since 2020. An additional 600+ rural hospitals are classified as financially vulnerable, defined as operating with negative EBITDA margins for two consecutive years."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k317",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k318",
+          "_type": "span",
+          "marks": [],
+          "text": "Geographic Impact"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k319",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k320",
+          "_type": "span",
+          "marks": [],
+          "text": "Rural hospital closures concentrate in the South and Midwest, with 10 states accounting for 68% of closures. Counties with hospital closures experience 5.9% increase in cardiovascular mortality, 3.2% increase in maternal mortality, and 11% reduction in local employment within 5 years of closure — impacts that extend far beyond healthcare access."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k321",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k322",
+          "_type": "span",
+          "marks": [],
+          "text": "Workforce Dimension"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k323",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k324",
+          "_type": "span",
+          "marks": [],
+          "text": "Rural communities face a compounding challenge: not only are facilities closing, but workforce shortages make reopening or replacing closed services increasingly difficult. Rural areas have 63 primary care physicians per 100,000 residents versus 112 per 100,000 in urban areas. Psychiatry shortage is more severe: 9.3 rural psychiatrists per 100,000 versus 24.1 urban."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k325",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k326",
+          "_type": "span",
+          "marks": [],
+          "text": "Broadband and Telehealth"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k327",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k328",
+          "_type": "span",
+          "marks": [],
+          "text": "Federal Communications Commission broadband data shows 19.4M rural Americans lack access to fixed broadband meeting the FCC's 25/3 Mbps threshold — a population that cannot reliably access video telehealth services. The Infrastructure Investment and Jobs Act's $65B broadband investment aims to close this gap by 2030, but construction timelines suggest the coverage gap will persist for 5-7 years."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "147 rural hospitals have closed since 2010, and 600+ are at risk of closure. This analysis connects facility closure data to workforce shortages, broadband infrastructure gaps limiting telehealth access, and the equity implications for rural populations.",
+  "title": "Rural Healthcare Access: Facility Closures, Workforce Gaps, and Broadband Infrastructure"
+}

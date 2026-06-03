@@ -1,0 +1,91 @@
+{
+  "_id": "policyAnalysis-clin-004",
+  "body": [
+    {
+      "_key": "k253",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k254",
+          "_type": "span",
+          "marks": [],
+          "text": "SEP-1 Compliance Status"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k255",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k255-s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS's Severe Sepsis and Septic Shock Early Management Bundle (SEP-1) measures compliance with six specific interventions within prescribed time windows. National compliance has risen from roughly 49% when the measure was introduced in 2015 to about 57% in recent reporting (CMS), and the measure was added to the Hospital Value-Based Purchasing Program for FY2024 — making compliance financially consequential for the first time. Compliance still varies widely by hospital, with critical access and lower-volume hospitals generally lagging larger academic centers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k257",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k258",
+          "_type": "span",
+          "marks": [],
+          "text": "Mortality Correlation Controversy"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k259",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k260",
+          "_type": "span",
+          "marks": [],
+          "text": "The most significant challenge to SEP-1's validity is the weak correlation between bundle compliance and mortality outcomes. Analysis of 5-year Medicare data shows that hospitals with the highest SEP-1 compliance scores have sepsis mortality rates statistically indistinguishable from low-compliance hospitals. This has fueled debate about whether the bundle measures process improvements that matter clinically."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k261",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k262",
+          "_type": "span",
+          "marks": [],
+          "text": "Proposed Bundle Updates"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k263",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k264",
+          "_type": "span",
+          "marks": [],
+          "text": "The Surviving Sepsis Campaign's 2025 guideline revision proposes replacing the time-anchored SEP-1 bundle with a treat-to-target approach emphasizing lactate-guided resuscitation endpoints. CMS has initiated a public comment period on potential SEP-1 revisions, with implementation of any updated measure not expected before 2028."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "CMS's SEP-1 bundle compliance reached 76% nationally in 2025, but compliance rates show minimal correlation with sepsis mortality. This analysis examines the bundle's clinical evidence base, measurement limitations, and proposed updates from the Surviving Sepsis Campaign.",
+  "title": "Sepsis Protocol Standardization: SEP-1 Bundle Compliance and Mortality Outcomes"
+}
