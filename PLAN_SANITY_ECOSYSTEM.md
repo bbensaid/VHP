@@ -16,9 +16,38 @@ The deep audit **overturned the initial "108 legacy modules to delete" assumptio
    - The safety net **blocked 8 deletes** that the relink had just turned back into live content — these would have been destroyed under the original plan.
 5. **policyAnalysis cleaned** (`scripts/clean-policy-analysis.mjs`): normalized 5 non-canonical pillars (CLINICAL/EQUITY/TECHNOLOGY/Science/Innovation → canonical); deleted `debug-video-test`, the 269-char `the-triple-threat-v2` stub, and 3 draft-shadow docs that had a published twin. **114 → 109**, 0 non-canonical pillars remain. (`drafts.strategic-implementation-rpm...` left intact — no published twin.)
 
-**Still open (intentionally not auto-done):**
-- **7 rich orphan docs** (~1,700w each: `academyModule-vbc-future`, `-vbc-global-budgets`, `-vbc-hedis-ecqm`, `-vbc-pop-health`, `-vbc-risk-hcc`, `fee-for-service-origins`, `global-budgets-hospital-finance`) — good, unique, unreferenced content. Should be **relinked into the curriculum**, not deleted. Needs a curriculum decision on which track/order.
-- Phase 1 (chapterRef + UI wiring) below.
+6. **Resolved the 7 rich orphans** (2026-06-02): on inspection, 2 were already linked (`vbc-hedis-ecqm`, `global-budgets-hospital-finance`); 4 (`vbc-future`, `-pop-health`, `-risk-hcc`, `-global-budgets`) were **older superseded twins** of already-linked purpose-written lessons (`vbc-future-directions`, `aco-population-health-strategy`, `risk-adjustment-hcc`, `global-budgets-hospital-finance`) → deleted. 1 was a real mislink: the `fee-for-service-origins` **lesson** pointed at `vbc-fundamentals-m1` (rendering identical content to the `vbc-fundamentals-m1` lesson) → retargeted to its namesake `fee-for-service-origins` doc. academyModule **253 → 249**, 0 broken links.
+
+---
+
+## 0b. EXECUTION LOG — Phase 1 (schema + course backfill) — 2026-06-02
+
+§9 step 1 (normalize policyAnalysis pillars, §4a) was **already done in Phase 0**
+(log item 5) — verified live: all 109 policyAnalysis docs use the 6 canonical
+labels, 0 non-canonical. No-op.
+
+Done this pass (§9 step 2 + the course slice of step 3):
+
+1. **`chapterRef` added to 5 Sanity schemas** (`frontend/sanity/schemaTypes/`):
+   policyAnalysis, caseStudy, report, webinar, definition. Optional `string`
+   holding the book chapter `num` ("1"–"20"). Additive, version-controlled.
+   Also: added missing **`Operations`** pillar option to policyAnalysis +
+   definition lists (live data already had 1 Operations policyAnalysis doc), and
+   added a **`pillar`** field to `report` (was the only editorial type missing it).
+2. **2 null course pillars backfilled** (live, via service role key):
+   `hie-health-reform-onboarding` → **policy**, `welcome-htr-framework` →
+   **technology**. All 15 courses now have a pillar; 0 nulls.
+3. **`courses.chapter_ref` migration written** — `032_course_chapter_ref.sql`
+   (DDL) + `033_course_chapter_ref_backfill.sql` (the §6 map, lead chapter per
+   course). ⚠️ **NOT YET APPLIED**: this DB has no Supabase CLI, no SQL-exec
+   RPC, and no Postgres connection string in env — DDL must be run by hand in the
+   Supabase dashboard SQL editor (run 032 then 033). The pillar backfill above
+   used an existing column so it ran from here; the new column did not.
+
+**Still open:**
+- Apply migrations 032 + 033 in the Supabase SQL editor (DDL — see above).
+- Phase 2: policyAnalysis→chapter + definition pillar backfills (§9 step 3
+  remainder) and UI wiring (§7, step 4).
 
 ---
 
