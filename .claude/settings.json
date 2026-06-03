@@ -10,7 +10,12 @@
       "Bash(/Users/baba/Vermont-Health-Platform/backend/venv/bin/pip show:*)",
       "Bash(grep '\"\"zod\"\"' package.json)",
       "Bash(grep -E \"\\\\.tsx$\")",
-      "Bash(cat /Users/baba/Vermont-Health-Platform/frontend/app/academy/courses/*/page.tsx)"
+      "Bash(cat /Users/baba/Vermont-Health-Platform/frontend/app/academy/courses/*/page.tsx)",
+      "Bash(node -e ' *)",
+      "Bash(node scripts/backfill-editorial-pillar-chapter.mjs)",
+      "Bash(node scripts/backfill-editorial-pillar-chapter.mjs --commit)",
+      "Bash(perl -0pi -e 's/\\(<RelatedEditorial\\\\s*\\\\n\\\\s*pillar=\\\\{[^}]*\\\\}\\\\s*\\\\n\\)\\\\s*colorClass=\\\\{[^}]*\\\\}\\\\s*\\\\n/$1/g' components/PillarOverview.tsx app/operations/page.tsx)",
+      "Bash(grep -nA4 \"<RelatedEditorial\" components/PillarOverview.tsx app/operations/page.tsx)"
     ]
   }
 }
