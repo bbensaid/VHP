@@ -43,5 +43,19 @@ export default defineType({
       type: 'string',
       initialValue: 'Chief Editor',
     }),
+    defineField({
+      name: 'pillar',
+      title: 'Pillar',
+      type: 'string',
+      options: {
+        list: ['Policy', 'Economics', 'Technology', 'Clinical', 'Equity', 'Operations'],
+      },
+    }),
+    defineField({
+      name: 'chapterRef',
+      title: 'Book Chapter',
+      type: 'string',
+      description: 'Book chapter number ("1"–"20") this signal ties into. Optional.',
+    }),
   ],
 })
