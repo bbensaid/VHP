@@ -209,8 +209,9 @@ export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioU
           </div>
         ) : (
           <>
-            {/* Top bar */}
-            <div className="flex items-center gap-3 px-4 md:px-6 py-3 border-b border-slate-200 bg-white shrink-0">
+            {/* Top bar — sticky + raised so the back link is never clipped or
+                covered by the sticky ticker / collapsed nav rails (z-overlay=40). */}
+            <div className="relative z-[45] flex items-center gap-3 px-4 md:px-6 py-3 border-b border-slate-200 bg-white shrink-0">
               <button
                 onClick={() => setMobileSidebarOpen(true)}
                 className="lg:hidden p-1.5 rounded-md hover:bg-slate-100 text-slate-500 shrink-0"
