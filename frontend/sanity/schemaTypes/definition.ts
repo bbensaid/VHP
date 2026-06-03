@@ -30,9 +30,16 @@ export default defineType({
           { title: 'Technology', value: 'Technology' },
           { title: 'Clinical', value: 'Clinical' },
           { title: 'Equity', value: 'Equity' },
+          { title: 'Operations', value: 'Operations' },
         ],
         layout: 'tags',
       },
+    }),
+    defineField({
+      name: 'chapterRef',
+      title: 'Book Chapter',
+      type: 'string',
+      description: 'Book chapter number ("1"–"20") this term ties into. Optional.',
     }),
   ],
 })

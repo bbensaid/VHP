@@ -27,6 +27,12 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'chapterRef',
+      title: 'Book Chapter',
+      type: 'string',
+      description: 'Book chapter number ("1"–"20") this case study ties into. Optional.',
+    }),
+    defineField({
       name: 'clientType',
       title: 'Client Type (e.g. "Rural Hospital", "Payer")',
       type: 'string',
