@@ -57,8 +57,46 @@ public source to confirm. Recommend the same "HTR estimate" labeling or a real c
   $8–14M savings": find the source study or label as modeled.
 - `rural-hospital-cybersecurity-ransomware-2026` — breach stats (87% increase; rural 61%/31%).
 
-**Net this pass:** 7 docs corrected (1 full rewrite + 6 targeted), all changes
-web-sourced and reversible; ~10 house-figure items remain for a sourcing/labeling pass.
+---
+
+## Pass 2 (all 109 briefs) — HTR-internal & unverifiable stats purged
+
+Per the "aggressive: cut what can't be verified" directive, every brief (not just
+the top 30) was scanned and the unverifiable claims removed or neutralized.
+
+**HTR self-attributed claims (9 blocks):** deleted the 5 that were pure fabricated
+house data (`glp1` "we modeled"; `eco-003` 450k/$38.7B; `eco-005` "HTR audit of 500
+price files"; `equ-001` "$2.40/$1"; `equ-005` "HTR model ROI 3.1:1"); rewrote 4 to
+drop the fake attribution while keeping real content (`rural-nurse` $1.2T→IHS Markit
+framing; `module-2` AHEAD opinion minus the fake "HTR Regulatory Intelligence" sig;
+`module-4` recast the fake "we audited our ACO network" as the real **Obermeyer/Science
+2019** algorithmic-bias finding; `module-4` roadmap minus the unverifiable "HTR research"
+tail). Also removed a fabricated "HTR's 2025 survey … 4.2 min/patient" in `tech-002`.
+
+**Remaining-79 verified corrections (5 docs):**
+- `clin-004` SEP-1 "76% (2025)" → ~57% (CMS); dropped unsourced academic/CAH split.
+- `eco-001` MSSP "$2.1B in 2025, record" → $2.1B (2023) record + ~$2.5B (2024) (CMS).
+- `pol-003` "Vermont lowest disenrollment nationally at 8%" → removed superlative.
+- `tech-003` Change Healthcare "94% of US pharmacies" → ~40% of claims / >90% of pharmacies.
+- `vermont-affordability` "555% markups" → 262% (verified).
+
+**Remaining-79 neutralized fabricated precision (14 blocks / 7 docs):** invented study
+figures and dollar amounts stripped, qualitative point kept — `global-budget` (fake
+CIHI/NHS/Japan %s), `tech-004` (RPM "340%"), `precision-medicine` (fake NCI 3.4×/$150B,
+5,600 counselors, Epic 23%), `rural-chronic-disease` (fake "83%", "2025 JAMA 87k-patient"
+ORs), `rural-health-vc` (fake Rock Health $4.8B splits, "34% readmission"), `rural-hospital-
+regulatory-relief-act` (unverifiable Act + $2.1B/$680k figures), `telehealth-cliff`
+(fabricated "$14.1B CBO score" → real ~$4B/2yr framing).
+
+**Left intact:** verified-correct facts (physician employment 77.6%, PBM 80% by top 3,
+HITECH $27B, $2M transparency penalty, etc.) and legitimate HTR *branding/opinion*
+("HTR Outlook", "HTR Academy", "HTR recommends") which carry no fabricated statistic.
+
+Final sweep: 0 fabrication markers remain across all 109 briefs (the one match is the
+DSH editor's note deliberately quoting the corrected-away claim).
+
+**Scripts:** `purge-htr-claims.mjs`, `fix-remaining-blocks.mjs`, `neutralize-unverifiable.mjs`,
+plus scan helpers. All bodies backed up in `/sanity-backups/backup-all-briefs-*.json`.
 
 **Sources:** CDC NCHS Maternal Mortality 2024 · CDC MMWR 6943a3 (telehealth) ·
 Health Affairs 10.1377/hlthaff.2016.1651 (EHR) · VTDigger 2025-12-22 (UVMMC/BCBSVT) ·
