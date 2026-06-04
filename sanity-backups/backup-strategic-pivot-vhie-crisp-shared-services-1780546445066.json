@@ -1,0 +1,389 @@
+{
+  "_id": "strategic-pivot-vhie-crisp-shared-services",
+  "body": [
+    {
+      "_key": "crisp-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-2",
+          "_type": "span",
+          "marks": [],
+          "text": "State health information exchanges face a quiet strategic crisis: the technology they were built to provide has become a commodity, while the cost of maintaining bespoke infrastructure has not fallen. Vermont's debate over transitioning its Health Information Exchange (VHIE) toward a shared-services utility model — exemplified by Maryland's CRISP — captures a choice every state HIE now confronts. This analysis examines the build-versus-join question, the CRISP shared-services model, the sustainability problem driving the pivot, and what it means for state health-data strategy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-4",
+          "_type": "span",
+          "marks": [],
+          "text": "The Build-vs-Join Inflection"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "crisp-5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-6",
+          "_type": "span",
+          "marks": [],
+          "text": "Many state HIEs, Vermont's included, were built in an earlier era on a 'best-of-breed' architecture — assembling separate components for master patient indexing, data repositories, terminology services, and exchange, each selected and integrated by the state. That made sense when the technology was novel and no turnkey option existed. But the market has matured: HIE technology is now substantially a commodity, available as managed services rather than something each state must build and maintain itself. The strategic question has flipped from 'how do we build it?' to 'why are we still building it ourselves when we could join a shared utility?'"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-8",
+          "_type": "span",
+          "marks": [],
+          "text": "The economics increasingly favor joining. Connecting to an existing HIE is lower-cost than building an internal one, consumes fewer personnel hours, and offers a wider range of exchange partners (National Rural Health Resource Center). For a small state, maintaining a custom technology stack means paying for engineering, upgrades, and operations that a shared utility spreads across many states — a poor use of scarce resources when the differentiating value is no longer the infrastructure but how the data is used. The pivot Vermont is weighing is from being an infrastructure builder to being a solutions buyer, freeing the state to focus on data use rather than data plumbing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-10",
+          "_type": "span",
+          "marks": [],
+          "text": "State HIEs were built when exchange technology was novel and bespoke. It is now a commodity — which flips the strategic question from 'how do we build it?' to 'why are we still building it ourselves?' The pivot is from infrastructure builder to solutions buyer."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "crisp-11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-12",
+          "_type": "span",
+          "marks": [],
+          "text": "The CRISP Shared-Services Model"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "crisp-13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-14",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland's CRISP is the reference model for where Vermont and other states are looking. Competitively selected as Maryland's state-designated HIE in 2009 and re-selected at each cycle, CRISP has evolved well beyond basic exchange: Maryland has formally designated it a Health Data Utility, and it now supports a broad range of clinical and non-clinical data exchange for population health, public-health reporting, consent management, and prescription-drug monitoring (Maryland Health Care Commission; TechTarget). Crucially, CRISP operates a shared-services arm — CRISP Shared Services — that extends its capabilities to other states, so a state can effectively rent CRISP's mature infrastructure rather than build its own."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-16",
+          "_type": "span",
+          "marks": [],
+          "text": "CRISP's sustainability is instructive: it serves an entire state through a single nonprofit with strong state support, and its largely self-developed technology stack provides flexibility with low licensing costs (HIMSS; rural HIE analyses). The model demonstrates that a mature, well-governed HIE can both expand its services and remain financially viable — and that its infrastructure can be shared, turning one state's investment into a utility for others. For a state like Vermont, joining such a shared-services model means inheriting that maturity rather than recreating it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-18",
+          "_type": "span",
+          "marks": [],
+          "text": "The Sustainability Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "crisp-19",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-20",
+          "_type": "span",
+          "marks": [],
+          "text": "Underneath the build-vs-join debate is a hard financial reality that has dogged state HIEs from the start. Most were stood up with federal grant funding that lowered the upfront infrastructure cost, but that grant money was never permanent, and the transition to self-sustaining revenue (subscriptions, transaction fees, per-member fees) has proven difficult. The pattern documented across state HIEs is sobering: those offering more services show greater operational maturity but often at the expense of financial viability, as they struggle to fund expanded capabilities through sustainable revenue models (HIMSS). An HIE can become more useful and less solvent at the same time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-21",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-22",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the squeeze driving the shared-services pivot. A state maintaining its own HIE bears the full cost of infrastructure that grants no longer fund, while a shared utility spreads those costs and may offer a more sustainable per-state economics. The pivot is, in significant part, a response to the unglamorous question of who pays for the HIE once the federal startup money is gone — and the answer 'share the infrastructure' is increasingly attractive precisely because going it alone has proven financially fragile."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-23",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-24",
+          "_type": "span",
+          "marks": [],
+          "text": "The TEFCA Question"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "crisp-25",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-26",
+          "_type": "span",
+          "marks": [],
+          "text": "Looming over every state HIE decision is TEFCA, the federal 'network of networks' now scaling rapidly. TEFCA raises an existential question for state HIEs: if national exchange increasingly moves data across the country through designated QHINs, what is left for a state HIE to do? The answer is that TEFCA and state HIEs are complementary rather than substitutes — but the boundary is shifting. TEFCA handles the broad national plumbing of getting a record from one place to another; state HIEs and Health Data Utilities like CRISP add the state-specific value: aggregating data for state public-health reporting, supporting state Medicaid and care-redesign programs, managing consent under state law, and serving local use cases a national framework will not."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-27",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-28",
+          "_type": "span",
+          "marks": [],
+          "text": "This reinforces the shared-services logic. As TEFCA absorbs the commodity exchange function, the differentiating value of a state HIE moves further toward data use and state-specific services — exactly the things a state should focus on rather than maintaining its own exchange infrastructure. A state weighing a shared-services pivot should therefore think about the full stack: let TEFCA and a shared utility handle the plumbing, and concentrate state resources on the population-health, public-health, and program-support uses that only the state can do. The pivot away from building infrastructure is, in part, a recognition that the national framework is building much of that infrastructure anyway."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-29",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-30",
+          "_type": "span",
+          "marks": [],
+          "text": "The Trade-Offs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "crisp-31",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-32",
+          "_type": "span",
+          "marks": [],
+          "text": "Joining a shared utility is not free of cost. The state cedes some control: its data and exchange now run on another organization's platform and protocols, and customization to local needs may be harder than with a self-built stack. There are data-governance and sovereignty questions — where the state's health data lives, who controls it, and how the arrangement can be unwound if it sours. And the transition itself is disruptive, requiring migration of existing interfaces and integrations, with the attendant risk and cost of any major system change. These are real considerations, not reasons against the pivot, but they explain why the decision is weighty and why states approach it deliberately rather than reflexively."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-33",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-34",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "crisp-35",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-36",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether Vermont and similar states formalize transitions to shared-services HIE models and whether those transitions deliver the promised cost savings and capability gains; whether CRISP-style shared utilities expand their multi-state footprint, consolidating the HIE landscape; how the shared-services model interacts with TEFCA, which is building national exchange that could reshape what state HIEs need to provide; and whether the governance and data-sovereignty concerns are addressed in ways that make states comfortable ceding infrastructure control. The direction — from bespoke state builds toward shared utilities — is increasingly clear; the open questions are pace, terms, and how it fits the emerging national exchange architecture."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-37",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-38",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "crisp-39",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-40",
+          "_type": "span",
+          "marks": [],
+          "text": "State health information exchanges are at an inflection point: the technology they were built to provide has commoditized, the federal grants that funded their construction are gone, and bespoke infrastructure has become a poor use of scarce state resources. The shared-services utility model — exemplified by Maryland's CRISP and its multi-state extension — offers a more sustainable path, letting a state inherit mature infrastructure and focus its energy on using data rather than maintaining plumbing. The trade-offs are real: ceded control, data-sovereignty questions, and transition disruption. But the underlying logic is compelling, and Vermont's deliberation over a CRISP-style pivot reflects a choice every state HIE now faces. The strategic value of a state HIE no longer lies in owning the infrastructure; it lies in what the state does with the data — and freeing resources from infrastructure maintenance to data use is the point of the pivot. For a small state especially, the question is no longer whether to maintain a bespoke HIE but how gracefully to transition off one — and the states that move deliberately, securing favorable terms and protecting their data governance, will convert a sunk-cost infrastructure burden into a sustainable platform for the population-health and public-health work that is the real point of having a state HIE at all."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-41",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-42",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "crisp-44",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-45",
+          "_type": "span",
+          "marks": [
+            "crisp-43"
+          ],
+          "text": "Maryland Health Care Commission — Health Information Exchange (CRISP designation)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "crisp-43",
+          "_type": "link",
+          "href": "https://mhcc.maryland.gov/health-information-exchange-hie"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-47",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-48",
+          "_type": "span",
+          "marks": [
+            "crisp-46"
+          ],
+          "text": "TechTarget — Maryland Designates CRISP HIE as State Health Data Utility"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "crisp-46",
+          "_type": "link",
+          "href": "https://www.techtarget.com/searchhealthit/news/366578477/Maryland-Designates-CRISP-HIE-as-State-Health-Data-Utility"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-50",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-51",
+          "_type": "span",
+          "marks": [
+            "crisp-49"
+          ],
+          "text": "HIMSS — Transparency of the Sustainability of State Health Information Exchanges"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "crisp-49",
+          "_type": "link",
+          "href": "https://www.himss.org/resources/transparency-sustainability-state-health-information-exchanges-regarding-services/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "crisp-53",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "crisp-54",
+          "_type": "span",
+          "marks": [
+            "crisp-52"
+          ],
+          "text": "National Rural Health Resource Center — HIE First Considerations (build vs join)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "crisp-52",
+          "_type": "link",
+          "href": "https://www.ruralcenter.org/sites/default/files/rhitnd/HIE-First%20Considerations-National%20Rural%20Health%20Resource%20Center.pdf"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "State HIEs face a strategic crisis: exchange technology has commoditized while bespoke infrastructure stays costly and the federal startup grants are gone. Vermont's debate over pivoting its VHIE to a CRISP-style shared-services utility captures the build-vs-join choice every state HIE now faces. This analysis covers the inflection, the CRISP model, the sustainability squeeze driving the pivot, and the control/sovereignty trade-offs.",
+  "title": "Strategic Pivot: Transitioning VHIE to the CRISP Shared Services Utility Model"
+}

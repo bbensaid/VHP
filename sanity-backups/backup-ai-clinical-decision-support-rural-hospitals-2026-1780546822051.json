@@ -1,0 +1,197 @@
+{
+  "_id": "ai-clinical-decision-support-rural-hospitals-2026",
+  "body": [
+    {
+      "_key": "blk001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "kume4znw",
+          "_type": "span",
+          "marks": [],
+          "text": "The first cohort of rural hospitals to deploy AI clinical decision support tools at operational scale—primarily through RHT program infrastructure grants and partnerships with Texas’s Lone Star AI Network and Vermont’s digital transformation program—has completed 12–18 months of production deployment. The data challenges both the optimist and pessimist narratives about AI in rural healthcare settings."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk002",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "jpxmxgw4",
+          "_type": "span",
+          "marks": [],
+          "text": "What the Real-World Data Shows"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk003",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "08h87oq6",
+          "_type": "span",
+          "marks": [],
+          "text": "Across 14 rural deployments analyzed in a pre-publication report shared with HRSA in December 2025, AI clinical decision support tools demonstrated statistically significant improvements in three areas: sepsis early warning (average 4.2-hour earlier intervention, 12% mortality reduction in the pilot cohort), medication reconciliation error detection (31% reduction in discharge reconciliation errors), and preventable readmission risk flagging (18% reduction in 30-day readmissions for flagged patients who received care coordination follow-up)."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk004",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "g78zr297",
+          "_type": "span",
+          "marks": [],
+          "text": "The AI tools that are working in rural hospitals are doing one thing well and doing it quietly. The ones that are failing are trying to do everything and generating so much noise that clinicians have learned to ignore them entirely."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "blk005",
+      "_type": "code",
+      "code": "[\n  {\n    \"Use Case\": \"Sepsis Early Warning\",\n    \"Outcome Improvement\": \"-12% mortality\",\n    \"Alert Fatigue Rate\": \"18% false positive\",\n    \"Clinician Override Rate\": \"22%\"\n  },\n  {\n    \"Use Case\": \"Medication Reconciliation\",\n    \"Outcome Improvement\": \"-31% errors\",\n    \"Alert Fatigue Rate\": \"8% false positive\",\n    \"Clinician Override Rate\": \"11%\"\n  },\n  {\n    \"Use Case\": \"Readmission Risk Flagging\",\n    \"Outcome Improvement\": \"-18% readmissions\",\n    \"Alert Fatigue Rate\": \"41% false positive\",\n    \"Clinician Override Rate\": \"38%\"\n  },\n  {\n    \"Use Case\": \"Diagnostic Imaging AI (Chest X-ray)\",\n    \"Outcome Improvement\": \"-9% missed findings\",\n    \"Alert Fatigue Rate\": \"6% false positive\",\n    \"Clinician Override Rate\": \"14%\"\n  }\n]",
+      "language": "json",
+      "title": "AI CDS Performance Across 14 Rural Hospital Deployments"
+    },
+    {
+      "_key": "blk006",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "o49aiz75",
+          "_type": "span",
+          "marks": [],
+          "text": "The Alert Fatigue Problem Is Real and Solvable"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk007",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "0wlqtyn2",
+          "_type": "span",
+          "marks": [],
+          "text": "The readmission risk flagging deployment had the highest alert fatigue rate (41%) and the highest clinician override rate (38%) in the cohort. The root cause, in 10 of the 14 sites, was model calibration: the tools had been trained on urban hospital populations with different baseline risk distributions and had not been recalibrated to the rural patient population before deployment. Sites that invested 90 days in local model recalibration before going live showed alert fatigue rates below 15%."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "6nxf0fhs",
+          "_type": "span",
+          "marks": [],
+          "text": "The human-in-the-loop requirement is not a temporary limitation pending better AI—it is an architectural feature of safe AI deployment. Rural hospitals that treated AI CDS outputs as recommendations requiring clinical judgment outperformed those that attempted to automate responses to AI alerts. The former group showed 22% better outcomes on the primary metrics; the latter showed AI tools being disabled by frustrated clinicians within six months."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk009",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "kn9z0ki5",
+          "_type": "span",
+          "marks": [],
+          "text": "DEPLOYMENT CHECKLIST: Before activating any AI CDS tool in a rural hospital, complete four steps: (1) local model recalibration on 12 months of your own patient data, (2) alert threshold setting with clinical leadership (not vendor defaults), (3) override tracking workflow to capture clinician reasoning, (4) 90-day alert fatigue audit with defined escalation if false positive rate exceeds 20%."
+        }
+      ],
+      "style": "callout"
+    },
+    {
+      "_key": "blk010",
+      "_type": "image",
+      "alt": "Human-in-the-loop workflow architecture for rural hospital AI clinical decision support deployment, showing alert generation through model feedback loop.",
+      "caption": "Workflow diagram showing the human-in-the-loop architecture for AI clinical decision support in a rural hospital, illustrating the alert generation, clinician review, override documentation, and model feedback loop stages with timing annotations."
+    },
+    {
+      "_key": "blk011",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "dlc0ugkz",
+          "_type": "span",
+          "marks": [],
+          "text": "Questions for Rural CIOs Evaluating AI CDS Vendors"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "blk012",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e09vmjjp",
+          "_type": "span",
+          "marks": [],
+          "text": "What is the training data composition—what % is rural/CAH population? How will local recalibration be supported?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "j7xlq78i",
+          "_type": "span",
+          "marks": [],
+          "text": "What is the vendor’s alert threshold methodology and can it be adjusted post-deployment?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk014",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hcfpo3h0",
+          "_type": "span",
+          "marks": [],
+          "text": "What override tracking and model feedback mechanism is built into the product?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk015",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5gj01bok",
+          "_type": "span",
+          "marks": [],
+          "text": "What SLA covers alert fatigue rate monitoring and remediation if thresholds are exceeded?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    }
+  ],
+  "summary": "As AI clinical decision support tools reach rural hospitals through RHT program-funded deployments and commercial partnerships, the first systematic real-world safety and efficacy data is emerging. This analysis examines outcomes from 14 rural AI deployments across six states, with particular focus on alert fatigue rates, clinician override patterns, and the workflow design choices that separate effective deployments from counterproductive ones.",
+  "title": "AI Clinical Decision Support in Rural Hospitals: What the First Wave of Real-World Deployments Reveals About Safety, Efficacy, and the Human-in-the-Loop Requirement"
+}

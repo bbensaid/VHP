@@ -1,0 +1,51 @@
+{
+  "_id": "equity-broadband-digital-determinants",
+  "body": [
+    {
+      "_key": "uddpgdfd",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "61ladn49",
+          "_type": "span",
+          "marks": [],
+          "text": "Healthcare is a Bandwidth Issue"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "0rdzmmw0",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ll44o82g",
+          "_type": "span",
+          "marks": [],
+          "text": "We cannot 'Maximize Health' if 15% of the population is invisible to the digital system. Equity requires that we treat broadband as a public utility essential for the delivery of modern healthcare."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "ynqdbuta",
+      "_type": "quote",
+      "children": [
+        {
+          "_key": "y2p30qv7",
+          "_type": "span",
+          "marks": [],
+          "text": "A patient without a portal is a patient without a voice in the new value-based economy."
+        }
+      ]
+    },
+    {
+      "_key": "4jhiefzc",
+      "_type": "image",
+      "alt": "Broadband vs Health Outcomes Heatmap",
+      "caption": "Heatmap showing the overlap between low broadband speeds and high chronic disease prevalence."
+    }
+  ],
+  "summary": "Analyzing the correlation between high-speed internet access and health outcomes in Vermont’s Northeast Kingdom. We argue that digital access is a fundamental clinical requirement.",
+  "title": "The Broadband Gap: Solving the Digital Determinants of Health (DDoH)"
+}
