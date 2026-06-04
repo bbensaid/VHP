@@ -1,0 +1,210 @@
+{
+  "_id": "rural-hospital-operating-margin-crisis-2026",
+  "body": [
+    {
+      "_key": "blk001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "n7ka2j2e",
+          "_type": "span",
+          "marks": [],
+          "text": "The Kaufman Hall National Hospital Flash Report for January 2026 confirms what rural health system analysts have been tracking since mid-2024: the rural hospital financial crisis has entered a new, more acute phase. Forty-three percent of rural hospitals reported negative operating margins in FY 2025, the highest share since the measure was first tracked in 2012 and a 7-point deterioration from FY 2024’s already alarming 36%."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk002",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "r6guxxeo",
+          "_type": "span",
+          "marks": [],
+          "text": "The Three Structural Drivers"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk003",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "d4ivch8w",
+          "_type": "span",
+          "marks": [],
+          "text": "The deterioration is driven by three converging pressures. First, labor cost inflation: median rural hospital RN hourly wage increased 18% between 2023 and 2025, while Medicaid rates in most states increased less than 4% over the same period. The gap between input cost inflation and reimbursement growth is the single largest contributor to negative margin expansion."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk004",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1mfxcfko",
+          "_type": "span",
+          "marks": [],
+          "text": "Second, payer mix erosion: rural counties have experienced disproportionate commercial insurance coverage loss as employers reduce benefit generosity. The share of rural hospital revenue from commercial payers—which subsidize Medicare and Medicaid shortfalls—fell from 31% in 2022 to 27% in 2025. For a $50M rural hospital, this shift represents approximately $2M in lost contribution margin."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk005",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "jck5r7qn",
+          "_type": "span",
+          "marks": [],
+          "text": "Third, volume fragmentation: telehealth expansion and improved transportation have enabled some rural patients to self-select to urban specialty centers for procedures that previously generated revenue for local facilities. Rural hospitals are losing profitable procedural volumes while retaining unprofitable complex and behavioral health volumes."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk006",
+      "_type": "code",
+      "code": "[\n  {\n    \"Metric\": \"% with Negative Operating Margin\",\n    \"FY 2023\": \"28%\",\n    \"FY 2025\": \"43%\",\n    \"Change\": \"+15pp\"\n  },\n  {\n    \"Metric\": \"Median Operating Margin\",\n    \"FY 2023\": \"+0.8%\",\n    \"FY 2025\": \"-2.1%\",\n    \"Change\": \"-2.9pp\"\n  },\n  {\n    \"Metric\": \"Median Days Cash on Hand\",\n    \"FY 2023\": \"42 days\",\n    \"FY 2025\": \"31 days\",\n    \"Change\": \"-11 days\"\n  },\n  {\n    \"Metric\": \"% with < 30 Days Cash on Hand\",\n    \"FY 2023\": \"22%\",\n    \"FY 2025\": \"38%\",\n    \"Change\": \"+16pp\"\n  },\n  {\n    \"Metric\": \"Median Labor Cost as % of Revenue\",\n    \"FY 2023\": \"54%\",\n    \"FY 2025\": \"61%\",\n    \"Change\": \"+7pp\"\n  }\n]",
+      "language": "json",
+      "title": "Rural Hospital Financial Metrics: FY 2023 vs FY 2025"
+    },
+    {
+      "_key": "blk007",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "r4u5iuhf",
+          "_type": "span",
+          "marks": [],
+          "text": "The Four Operating Models Generating Positive Margins"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ln2i5fop",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite the aggregate deterioration, 57% of rural hospitals maintained positive operating margins in FY 2025. Analysis of this cohort reveals four distinct operating models that are outperforming: (1) regional referral network anchors that have formalized upstream referral relationships with smaller CAHs; (2) vertically integrated primary care systems that capture both primary and specialist revenue within a single entity; (3) CAHs that have moved aggressively into swing-bed skilled nursing, generating a 3–8% margin premium; and (4) FQHC look-alike hybrids that blend grant revenue with Medicaid cost-based reimbursement."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk009",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ph4lkqto",
+          "_type": "span",
+          "marks": [],
+          "text": "The rural hospitals that will survive 2026 have already decided what business they are in. The ones that will not have been trying to be everything to everyone with a cost structure built for a different era."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "blk010",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ndb02h6f",
+          "_type": "span",
+          "marks": [],
+          "text": "STRATEGIC ALERT: Rural hospital boards should commission a full service-line contribution margin analysis before Q3 2026. Facilities carrying negative-margin service lines without a strategic rationale are consuming reserves that will be needed for AHEAD or RHT program co-investments."
+        }
+      ],
+      "style": "callout"
+    },
+    {
+      "_key": "blk011",
+      "_type": "image",
+      "alt": "Financial dashboard showing rural hospital operating margin crisis indicators for FY 2025 including margin distribution histogram, cash position trend, and strategic operating model quadrant analysis.",
+      "caption": "Multi-panel financial dashboard showing FY 2025 rural hospital operating margin distribution as a histogram, days-cash-on-hand trend line from 2019–2025, and a quadrant chart mapping the four positive-margin operating models by market share and margin level."
+    },
+    {
+      "_key": "blk012",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "25raolx8",
+          "_type": "span",
+          "marks": [],
+          "text": "Board-Level Questions for Q1 2026"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "blk013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m58hkzd8",
+          "_type": "span",
+          "marks": [],
+          "text": "What is our current operating model and which of the four positive-margin archetypes is achievable given our market?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk014",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9n5mm6cu",
+          "_type": "span",
+          "marks": [],
+          "text": "At current burn rate, when do we breach the 30-day cash threshold that triggers covenant violations?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk015",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mv6l5znw",
+          "_type": "span",
+          "marks": [],
+          "text": "Which service lines are generating negative contribution margin and what is the strategic case for maintaining them?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk016",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "lp29zz9l",
+          "_type": "span",
+          "marks": [],
+          "text": "What RHT program funding streams are available to offset labor cost inflation in our state?"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    }
+  ],
+  "summary": "Kaufman Hall’s January 2026 flash report shows that 43% of rural hospitals ended FY 2025 with negative operating margins, up from 36% in 2024. This analysis examines the structural drivers behind the deterioration, identifies the four operating models that are generating positive margins, and quantifies the financial gap that RHT program investments must close.",
+  "title": "The Rural Hospital Margin Crisis: Why 2026 Is the Inflection Year and What the Data Says About Survival Strategies"
+}

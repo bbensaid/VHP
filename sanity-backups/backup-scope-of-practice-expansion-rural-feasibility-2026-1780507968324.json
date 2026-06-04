@@ -1,0 +1,212 @@
+{
+  "_id": "scope-of-practice-expansion-rural-feasibility-2026",
+  "body": [
+    {
+      "_key": "blk001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8o1kltjk",
+          "_type": "span",
+          "marks": [],
+          "text": "The debate over full-practice authority (FPA) for nurse practitioners and, increasingly, physician assistants, has moved from professional turf to empirical policy evaluation. With 27 states and D.C. now granting NPs FPA, a decade of implementation evidence allows researchers to distinguish the conditions under which scope expansion actually closes access gaps from those in which it produces minimal change."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk002",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k7mu04m9",
+          "_type": "span",
+          "marks": [],
+          "text": "The Access Improvement Evidence Base"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk003",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk003-s",
+          "_type": "span",
+          "marks": [],
+          "text": "The research on full practice authority (FPA) for nurse practitioners generally finds that loosening scope-of-practice restrictions modestly improves access to primary care in underserved areas, with the largest gains where FPA is paired with Medicaid reimbursement parity; where parity is absent, measured access gains are smaller and less consistent."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk004",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e6m043j4",
+          "_type": "span",
+          "marks": [],
+          "text": "Full-practice authority without Medicaid reimbursement parity is a permission slip without a paycheck. The access gains only materialize when NPs can build financially viable independent practices."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "blk005",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "29iwlqps",
+          "_type": "span",
+          "marks": [],
+          "text": "Feasibility Conditions That Drive or Suppress Impact"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk006",
+      "_type": "code",
+      "code": "[\n  {\n    \"Condition\": \"Medicaid NP reimbursement parity (100% of MD rate)\",\n    \"Impact Direction\": \"Strong Positive\",\n    \"Effect Size\": \"+18% rural NP visits\"\n  },\n  {\n    \"Condition\": \"NP-owned practice allowed under state law\",\n    \"Impact Direction\": \"Positive\",\n    \"Effect Size\": \"+9% rural NP visits\"\n  },\n  {\n    \"Condition\": \"Hospital privileging barriers remain post-FPA\",\n    \"Impact Direction\": \"Suppressor\",\n    \"Effect Size\": \"-6% projected gain\"\n  },\n  {\n    \"Condition\": \"Rural loan repayment extended to NPs\",\n    \"Impact Direction\": \"Strong Positive\",\n    \"Effect Size\": \"+14% rural NP supply\"\n  },\n  {\n    \"Condition\": \"State has physician workforce surplus\",\n    \"Impact Direction\": \"Suppressor\",\n    \"Effect Size\": \"Near-zero access effect\"\n  }\n]",
+      "language": "json",
+      "title": "FPA Impact Conditions: Factors That Amplify or Suppress Rural Access Gains"
+    },
+    {
+      "_key": "blk007",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "84m56mgz",
+          "_type": "span",
+          "marks": [],
+          "text": "The Political Feasibility Landscape in 2026"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk008-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Multiple states have active FPA legislation, and some rural hospital associations that historically opposed these bills have shifted to support them — a change driven largely by how expensive and difficult physician recruitment in rural markets has become."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk009",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "nbdhkzvh",
+          "_type": "span",
+          "marks": [],
+          "text": "The remaining political opposition is concentrated in state medical associations and some specialty societies. The most effective legislative strategy observed in successful FPA states has been data-sharing agreements between NP associations and rural hospital coalitions that document specific unfilled positions that NP FPA would address—converting an abstract policy debate into a concrete vacancy count."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk010",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ehgi3xs9",
+          "_type": "span",
+          "marks": [],
+          "text": "FEASIBILITY VERDICT: FPA legislation is a high-probability access intervention only when packaged with Medicaid reimbursement parity and NP-owned practice authorization. Standalone FPA without these co-conditions has insufficient evidence to justify the political capital required for passage."
+        }
+      ],
+      "style": "callout"
+    },
+    {
+      "_key": "blk011",
+      "_type": "image",
+      "alt": "U.S. map showing nurse practitioner practice authority status by state overlaid with rural Health Professional Shortage Areas, illustrating geographic alignment between FPA states and rural primary care deserts.",
+      "caption": "Heat map of the United States showing states with full-practice authority (dark blue), restricted practice (medium blue), and reduced practice (light blue) for nurse practitioners, overlaid with rural primary care HPSA designations in red."
+    },
+    {
+      "_key": "blk012",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "of19zxnv",
+          "_type": "span",
+          "marks": [],
+          "text": "Recommendations for State Health Policy Teams"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "blk013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "u1igi2pu",
+          "_type": "span",
+          "marks": [],
+          "text": "Bundle FPA legislation with explicit Medicaid reimbursement parity provisions"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk014",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "xy53y37o",
+          "_type": "span",
+          "marks": [],
+          "text": "Conduct rural vacancy audit before legislative introduction to build stakeholder coalition"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk015",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "87yftymc",
+          "_type": "span",
+          "marks": [],
+          "text": "Include hospital privileging reform in the legislative package to prevent post-FPA access suppression"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk016",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pbc7fgly",
+          "_type": "span",
+          "marks": [],
+          "text": "Model 3-year access impact projections using Health Affairs FPA evidence base for fiscal notes"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    }
+  ],
+  "summary": "Twenty-seven states now grant full independent practice authority to nurse practitioners, yet rural patient access improvements have been uneven. This feasibility study examines the fiscal, workforce, and political conditions under which scope-of-practice expansion produces measurable access gains in rural primary care deserts versus conditions where the policy produces minimal effect.",
+  "title": "Expanding Scope of Practice for Rural NPs and PAs: A Feasibility Analysis of Full-Practice Authority Legislation"
+}

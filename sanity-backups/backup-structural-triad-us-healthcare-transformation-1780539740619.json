@@ -1,0 +1,425 @@
+{
+  "_id": "structural-triad-us-healthcare-transformation",
+  "body": [
+    {
+      "_key": "e10-119",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-120",
+          "_type": "span",
+          "marks": [],
+          "text": "The United States health system stands at a structural juncture. It spends far more per person than any other wealthy nation yet trails its peers on the outcomes that matter most — life expectancy, chronic-disease control, and avoidable mortality. Diagnosing why requires looking past individual scandals and line items to the three structural pillars that determine how care is financed, governed, and delivered: economics, policy, and technology. Each pillar is independently misaligned, and — more importantly — the three are misaligned with one another. Real transformation is not fixing one pillar but re-aligning the triad."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-121",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-122",
+          "_type": "span",
+          "marks": [],
+          "text": "The Scale of the Misalignment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e10-123",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-124",
+          "_type": "span",
+          "marks": [],
+          "text": "The headline numbers establish that this is a structural problem, not a marginal one. U.S. national health expenditure reached $5.3 trillion in 2024 — roughly $15,474 per person and 18.0 percent of GDP — after growing 7.2 percent in a single year. For that spending the country buys a life expectancy of 79.0 years, about 3.7 years below the comparable-country average of 82.7, while spending close to twice as much per capita as peer nations. A system that spends the most and ranks near the bottom of its peer group on the headline outcome is, by definition, structurally inefficient — it is converting dollars into health at a worse rate than systems built on different foundations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-125",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-126",
+          "_type": "span",
+          "marks": [],
+          "text": "The dominant driver of the spending is chronic disease, which by some projections could cost the United States as much as $47 trillion over the 2024–2039 period. That single fact reframes the whole problem: a system organized around acute, episodic, fee-generating intervention is being asked to manage a cost base that is overwhelmingly chronic, longitudinal, and prevention-sensitive. The structural mismatch between how the system is built and what it is actually treating is the root cause the triad must address."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-127",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-128",
+          "_type": "span",
+          "marks": [],
+          "text": "Pillar I — Economics: Beyond Fee-for-Service"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e10-129",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-130",
+          "_type": "span",
+          "marks": [],
+          "text": "The economic pillar's central flaw is fee-for-service (FFS), which pays for volume rather than value and so rewards acute intervention over prevention. Under FFS, a hospital is paid more when a patient's diabetes deteriorates into an amputation than when it is controlled and the complication never occurs — an incentive structure exactly inverted from what a chronic-disease-dominated cost base requires. The shift to value-based care (VBC), which ties payment to outcomes and total cost of care, is the economic correction: it makes keeping a population healthy the financially rewarded behavior."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-131",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-132",
+          "_type": "span",
+          "marks": [],
+          "text": "But VBC cannot be willed into existence by exhortation; it requires the other two pillars. A provider asked to bear financial risk for a population's outcomes needs the policy authority to be paid that way and the technology to know what is happening to that population. This is why economics, though the most-discussed pillar, cannot be reformed in isolation — its central reform (VBC) is structurally dependent on policy and technology moving in step. An FFS economy with a VBC veneer, lacking the supporting policy and data infrastructure, produces the worst of both worlds: risk without the tools to manage it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-133",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-134",
+          "_type": "span",
+          "marks": [],
+          "text": "Pillar II — Policy: Building the Rails for Value"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e10-135",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-136",
+          "_type": "span",
+          "marks": [],
+          "text": "The policy pillar exists to make value-based arrangements legal, financed, and feasible. Over the past fifteen years, federal policy has been rebuilt to enable this: the CMS Innovation Center's authority to test new payment models, MACRA's framework rewarding advanced alternative payment models, the 2020 revisions to the Stark Law and Anti-Kickback Statute that created value-based exceptions, and CMS's stated goal of having all Medicare beneficiaries in an accountable-care relationship by 2030. These are not incidental rule changes; they are the construction of the legal and financial rails on which value-based care can actually run."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-137",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-138",
+          "_type": "span",
+          "marks": [],
+          "text": "The policy pillar's role is enabling, not commanding. It cannot deliver better care directly; it can only make the economic and technological reforms feasible by removing legal barriers and supplying payment authority. Where policy lags — where the law still presumes fee-for-service or where payment authority is granted only in short, uncertain increments — the economic and technological pillars stall, because organizations will not invest in models the policy environment does not durably support. Aligned policy is the precondition that lets the other two pillars move."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-139",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-140",
+          "_type": "span",
+          "marks": [],
+          "text": "The triad's core insight: economics, policy, and technology are not independent reform tracks but interdependent pillars. Value-based care (economics) is legally and financially impossible without enabling policy, and operationally impossible without data infrastructure (technology). Reforming any one pillar while the others lag produces stranded investment and the worst of both models."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "e10-141",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-142",
+          "_type": "span",
+          "marks": [],
+          "text": "Pillar III — Technology: The Infrastructure of Knowing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e10-143",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-144",
+          "_type": "span",
+          "marks": [],
+          "text": "The technology pillar provides the capability without which value-based care is merely aspirational: the ability to know, in real time, what is happening to a population across the entire care continuum. Managing total cost of care requires interoperable data, risk stratification to identify high-cost patients, and the analytic infrastructure to act before costs are incurred. Federal interoperability policy — the ONC/ASTP standards, TEFCA, and CMS's Interoperability and Patient Access rule — is steadily building the data rails, but adoption is uneven, and the facilities furthest from that infrastructure (small, rural, under-resourced) are exactly those that VBC most needs to include."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-145",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-146",
+          "_type": "span",
+          "marks": [],
+          "text": "Technology is where good intentions most often die operationally. An organization can hold a value-based contract (economics) under enabling regulation (policy) and still fail because it cannot see its own population's data well enough to manage it. Attempting to bear population cost-risk without the data infrastructure to identify high-risk patients and track them across settings is among the most common and most preventable causes of value-based underperformance. The technology pillar is the difference between VBC as a financial arrangement and VBC as a functioning care model."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-147",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-148",
+          "_type": "span",
+          "marks": [],
+          "text": "What Peer Systems Reveal About the Triad"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e10-149",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-150",
+          "_type": "span",
+          "marks": [],
+          "text": "The international comparison is instructive precisely because peer nations align their triads differently and get more health per dollar. Most wealthy countries that outperform the United States on life expectancy at roughly half the per-capita spend do so not because they have discovered a miracle treatment but because their economics, policy, and technology are coordinated around primary care, prevention, and population health rather than around acute, fee-generating volume. Their financing rewards keeping people well, their policy frameworks make that the default, and their data systems support it — the three pillars pull in the same direction."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-151",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-152",
+          "_type": "span",
+          "marks": [],
+          "text": "The lesson is not that the United States should copy any specific foreign system; it is that value-for-money is a function of triad alignment, not of any single policy choice. The U.S. system's distinctive failure — paying the most and ranking near the bottom of its peer group on the headline outcome — is the signature of a triad whose pillars work against one another: fee-for-service economics fighting prevention, fragmented policy authority, and uneven data infrastructure. Peer systems demonstrate that when the three pillars are aligned around longitudinal, preventive care, the same or fewer dollars buy materially better outcomes. That is the empirical case for treating transformation as a coordination problem across the whole triad rather than a search for one decisive reform."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-153",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-154",
+          "_type": "span",
+          "marks": [],
+          "text": "Why the Triad Must Move Together"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e10-155",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-156",
+          "_type": "span",
+          "marks": [],
+          "text": "The defining argument of the structural-triad framework is that the three pillars are interdependent, so sequential or siloed reform fails. Pay for value without enabling policy, and the arrangements are legally fragile. Enable policy without the technology to manage risk, and providers decline the risk or lose money taking it. Build the technology without the economic incentive to use it, and it becomes expensive shelfware. Each pillar is a necessary condition for the others, which means the binding constraint at any moment is whichever pillar is furthest behind."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-157",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-158",
+          "_type": "span",
+          "marks": [],
+          "text": "This reframes the transformation agenda from a list of separate fixes into a coordination problem. The task is not to perfect economics, then policy, then technology, but to advance all three in alignment so that no pillar's lag strands the others' progress. The U.S. system's poor value-for-money — most spending, middling outcomes — is precisely what a chronically mis-aligned triad produces. Redesigning the value chain means treating economics, policy, and technology as a single integrated system, and moving them together toward a model organized around the chronic, longitudinal care the population actually needs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-159",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-160",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e10-161",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-162",
+          "_type": "span",
+          "marks": [],
+          "text": "Spending, outcome, and policy figures verified against federal and peer-reviewed sources:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-164",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-165",
+          "_type": "span",
+          "marks": [
+            "e10-163"
+          ],
+          "text": "Health Affairs — National Health Care Spending Increased 7.2% in 2024"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e10-163",
+          "_type": "link",
+          "href": "https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2025.01683"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-167",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-168",
+          "_type": "span",
+          "marks": [
+            "e10-166"
+          ],
+          "text": "CMS — National Health Expenditure (NHE) Fact Sheet"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e10-166",
+          "_type": "link",
+          "href": "https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/nhe-fact-sheet"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-170",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-171",
+          "_type": "span",
+          "marks": [
+            "e10-169"
+          ],
+          "text": "Peterson-KFF Health System Tracker — U.S. life expectancy vs. comparable countries"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e10-169",
+          "_type": "link",
+          "href": "https://www.healthsystemtracker.org/chart-collection/u-s-life-expectancy-compare-countries/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-173",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-174",
+          "_type": "span",
+          "marks": [
+            "e10-172"
+          ],
+          "text": "Partnership to Fight Chronic Disease / Milken — chronic disease cost projections"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e10-172",
+          "_type": "link",
+          "href": "https://www.fightchronicdisease.org/post/new-report-chronic-disease-could-cost-the-u-s-47-trillion-over-next-15-years"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "e10-176",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e10-177",
+          "_type": "span",
+          "marks": [
+            "e10-175"
+          ],
+          "text": "CMS Innovation Center — strategy and accountable-care goal (policy rails)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e10-175",
+          "_type": "link",
+          "href": "https://www.cms.gov/priorities/innovation/about/strategic-direction"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "A structural framework for U.S. health-system transformation: economics (fee-for-service → value-based care), policy (CMMI, MACRA, 2020 VBC legal exceptions, the 2030 accountable-care goal), and technology (interoperability/TEFCA, risk stratification) are not separate reform tracks but interdependent pillars. VBC is legally impossible without enabling policy and operationally impossible without data infrastructure. The system's poor value-for-money — $5.3T/18% GDP spend, 79.0-year life expectancy vs 82.7 peer average — is what a mis-aligned triad produces. The binding constraint is whichever pillar lags.",
+  "title": "The Structural Triad: Redesigning the US Healthcare Value Chain"
+}

@@ -1,0 +1,66 @@
+{
+  "_id": "end-of-all-payer-dream-act-167",
+  "body": [
+    {
+      "_key": "fcsvur49",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4aky3e2s",
+          "_type": "span",
+          "marks": [],
+          "text": "For years, the Vermont All-Payer Accountable Care Organization (ACO) Model was heralded as the gold standard for state-led health reform. However, the 2024 Wyman Report and the subsequent mandates of Act 167 signal a stark policy pivot. The state is acknowledging that voluntary capitation frameworks are insufficient to combat the structural inflation of the Fee-For-Service (FFS) chassis."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "ic6qsxcw",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tp07ux2l",
+          "_type": "span",
+          "marks": [],
+          "text": "The Regulatory Shift to AHEAD"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "dmk4wioq",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b8l670m7",
+          "_type": "span",
+          "marks": [],
+          "text": "The Centers for Medicare & Medicaid Services (CMS) AHEAD model enforces a rigid Global Budget. Unlike the All-Payer model, which sought to align incentives while keeping the FFS billing infrastructure intact, a Global Budget caps total hospital revenue. This is a profound regulatory shift from 'managing volume' to 'enforcing scarcity.'"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "x1s5hoqi",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "txfreq8j",
+          "_type": "span",
+          "marks": [],
+          "text": "Policy is the economic architecture of care. A Global Budget legally transforms an MRI from a profit-generating asset into a managed liability."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "d3o24m9m",
+      "_type": "code",
+      "code": "[\n  {\n    \"Metric\": \"Reimbursement Base\",\n    \"All_Payer\": \"Fee-For-Service with Shared Savings\",\n    \"AHEAD\": \"Fixed Prospective Revenue Cap\"\n  },\n  {\n    \"Metric\": \"Financial Risk\",\n    \"All_Payer\": \"Upside/Downside corridors\",\n    \"AHEAD\": \"Total Total Cost of Care (TCOC) Risk\"\n  },\n  {\n    \"Metric\": \"Hospital Incentive\",\n    \"All_Payer\": \"Increase high-margin service volume\",\n    \"AHEAD\": \"Shift care to low-cost community settings\"\n  }\n]",
+      "language": "json",
+      "title": "Policy Framework Comparison: All-Payer vs. AHEAD"
+    }
+  ],
+  "summary": "Vermont's transition from the All-Payer Model to the AHEAD Global Budget framework represents a fundamental admission: voluntary Value-Based Care cannot outpace Fee-For-Service inflation.",
+  "title": "The End of the All-Payer Dream: Transitioning to Global Budgets Under Act 167"
+}

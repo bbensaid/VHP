@@ -1,0 +1,119 @@
+{
+  "_id": "policyAnalysis-eco-001",
+  "body": [
+    {
+      "_key": "k77",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k78",
+          "_type": "span",
+          "marks": [],
+          "text": "2025 MSSP Results Overview"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k79",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k79-s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Medicare Shared Savings Program (MSSP) posted a then-record $2.1B in net savings to Medicare in 2023, and a new record of roughly $2.5B in 2024 (CMS) — the program's eighth consecutive year of savings. ACO participation has continued to grow, and the distribution of savings remains skewed toward Enhanced Track participants taking on greater downside risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k81",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k82",
+          "_type": "span",
+          "marks": [],
+          "text": "Track-Level Performance"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k83",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k84",
+          "_type": "span",
+          "marks": [],
+          "text": "Enhanced Track ACOs generated average per-beneficiary savings of $847, versus $212 for Basic Track Level E and minimal savings for lower Basic Track levels. The performance gap reflects Enhanced Track's two-sided risk structure, which incentivizes aggressive care management investment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k85",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k86",
+          "_type": "span",
+          "marks": [],
+          "text": "Organizational Structure Findings"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k87",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k88",
+          "_type": "span",
+          "marks": [],
+          "text": "Physician-led ACOs without hospital ownership outperformed hospital-led ACOs in per-beneficiary savings by 23%. This confirms prior research suggesting that hospital-led structures face incentive misalignment — hospitals benefit from inpatient volume that ACO contracts reward reducing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k89",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k90",
+          "_type": "span",
+          "marks": [],
+          "text": "Geographic Variation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k91",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k92",
+          "_type": "span",
+          "marks": [],
+          "text": "Rural ACOs underperformed urban counterparts by 31% on average savings rates, despite lower baseline costs. Access limitations — particularly specialist availability and transportation — constrain care coordination effectiveness in rural settings. CMS is piloting enhanced rural flex payments in 2026."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "CMS released 2025 Medicare Shared Savings Program results showing $2.1B in net savings, with Enhanced Track ACOs generating 4x the savings of Basic Track. This analysis breaks down performance by ACO size, geography, and organizational structure.",
+  "title": "Value-Based Care Contract Performance: 2025 Shared Savings Results Across ACO Models"
+}

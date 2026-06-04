@@ -1,0 +1,105 @@
+{
+  "_id": "policyAnalysis-equ-005",
+  "body": [
+    {
+      "_key": "k341",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k342",
+          "_type": "span",
+          "marks": [],
+          "text": "Community Health Worker Policy Landscape"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k343",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k344",
+          "_type": "span",
+          "marks": [],
+          "text": "Community health workers (CHWs) — frontline public health workers who share lived experience with the communities they serve — have emerged as a cost-effective strategy for addressing social determinants and improving health equity. The Affordable Care Act and subsequent state Medicaid expansions have created new reimbursement pathways enabling sustainable CHW employment in clinical settings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k345",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k346",
+          "_type": "span",
+          "marks": [],
+          "text": "Reimbursement Expansion"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k347",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k348",
+          "_type": "span",
+          "marks": [],
+          "text": "As of January 2026, 33 states have authorized Medicaid reimbursement for CHW services under Section 1905(a)(6) of the Social Security Act or through Section 1115 demonstration waivers. Average Medicaid reimbursement for CHW services ranges from $28 to $67 per hour of direct service, with most states requiring physician or advanced practice provider supervision."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k349",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k350",
+          "_type": "span",
+          "marks": [],
+          "text": "Evidence Base"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k351",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k352",
+          "_type": "span",
+          "marks": [],
+          "text": "The strongest evidence for CHW effectiveness exists in three domains: diabetes self-management support (average A1c reduction of 0.9 percentage points in six published randomized controlled trials), hypertension control (14% improvement in controlled blood pressure in community-based programs), and maternal health outreach (18% reduction in preterm birth in high-risk populations)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k353",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k354",
+          "_type": "span",
+          "marks": [],
+          "text": "Value-Based Care Integration"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    }
+  ],
+  "summary": "Medicaid CHW reimbursement is now available in 33 states under 1905(a)(6) and 1115 waivers. This analysis examines state certification requirements, evidence-based models, and the integration of CHWs into value-based care arrangements.",
+  "title": "Community Health Worker Integration: Certification, Reimbursement, and Outcomes"
+}

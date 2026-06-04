@@ -1,0 +1,175 @@
+{
+  "_id": "policyAnalysis-pol-001",
+  "body": [
+    {
+      "_key": "k1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k2",
+          "_type": "span",
+          "marks": [],
+          "text": "Executive Summary"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k4",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's Act 167, signed into law in June 2025, represents the most ambitious state-level health coverage expansion since Massachusetts' 2006 Chapter 58. The legislation requires universal primary care enrollment for all Vermont residents by January 1, 2028, regardless of immigration status or employment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k6",
+          "_type": "span",
+          "marks": [],
+          "text": "Legislative Background"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k8",
+          "_type": "span",
+          "marks": [],
+          "text": "The act builds on Vermont's Green Mountain Care Board infrastructure, established under Act 48 (2011). Key provisions include: mandatory enrollment through existing all-payer model networks, a 1.2% payroll surcharge on employers with more than 50 employees, and a federal 1115 waiver application to capture enhanced Medicaid matching funds."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k10",
+          "_type": "span",
+          "marks": [],
+          "text": "Fiscal Analysis"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k12",
+          "_type": "span",
+          "marks": [],
+          "text": "The Legislative Joint Fiscal Office estimates first-year costs at $340M, rising to $1.2B by Year 3 as the uninsured population is absorbed. The payroll surcharge is projected to generate $280M annually, leaving a structural gap of approximately $920M that requires federal participation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k14",
+          "_type": "span",
+          "marks": [],
+          "text": "Federal Waiver Risk"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "k15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k16",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS approval of the 1115 waiver is not guaranteed. Vermont's previous waiver application for a global budget (2017) was denied under the prior administration. The current CMS leadership has signaled openness to state flexibility, but has not pre-approved universal primary care models."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k18",
+          "_type": "span",
+          "marks": [],
+          "text": "Implementation Timeline"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k19",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k20",
+          "_type": "span",
+          "marks": [],
+          "text": "Phase 1 (2026): Green Mountain Care Board establishes enrollment infrastructure and contracts with 12 primary care accountable care organizations. Phase 2 (2027): Employer mandate enforcement begins. Phase 3 (2028): Full universal enrollment target."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k21",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k22",
+          "_type": "span",
+          "marks": [],
+          "text": "Analyst Recommendation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k23",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k24",
+          "_type": "span",
+          "marks": [],
+          "text": "States watching Vermont should monitor the CMS waiver outcome closely. If approved, Act 167 creates a replicable model for universal primary care coverage without full single-payer legislation. If denied, Vermont faces a $920M structural deficit that could force program rollback or tax increases."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "Vermont's Act 167 mandates universal primary care coverage for all residents by 2028, creating a $1.2B funding challenge. This analysis examines implementation pathways, federal waiver requirements, and actuarial risk for the state's all-payer model.",
+  "title": "Vermont's Act 167: Universal Primary Care and Its Fiscal Implications"
+}

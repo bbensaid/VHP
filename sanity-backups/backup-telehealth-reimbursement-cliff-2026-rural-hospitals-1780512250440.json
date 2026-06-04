@@ -1,0 +1,189 @@
+{
+  "_id": "telehealth-reimbursement-cliff-2026-rural-hospitals",
+  "body": [
+    {
+      "_key": "blk001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "cehh4jf2",
+          "_type": "span",
+          "marks": [],
+          "text": "The telehealth reimbursement landscape for rural hospitals faces its most consequential policy moment since 2020. Unless Congress passes a permanent extension before December 31, 2026, the Medicare telehealth waivers that have governed rural hospital billing since the COVID-19 public health emergency will sunset, reverting to pre-pandemic restrictions that would disqualify the majority of services currently delivered via telehealth for Medicare reimbursement."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk002",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "td71u1y8",
+          "_type": "span",
+          "marks": [],
+          "text": "The Six Waivers at Risk and Their Financial Exposure"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk003",
+      "_type": "code",
+      "code": "[\n  {\n    \"Waiver\": \"Geographic Site Eligibility Expansion\",\n    \"Current Status\": \"Active\",\n    \"Pre-Waiver Rule\": \"Patient must be in rural HPSA\",\n    \"Revenue at Risk (avg CAH)\": \"$310,000/yr\"\n  },\n  {\n    \"Waiver\": \"Patient Home as Originating Site\",\n    \"Current Status\": \"Active\",\n    \"Pre-Waiver Rule\": \"Home visits not eligible\",\n    \"Revenue at Risk (avg CAH)\": \"$220,000/yr\"\n  },\n  {\n    \"Waiver\": \"Audio-Only Service Coverage\",\n    \"Current Status\": \"Active\",\n    \"Pre-Waiver Rule\": \"Video required\",\n    \"Revenue at Risk (avg CAH)\": \"$180,000/yr\"\n  },\n  {\n    \"Waiver\": \"Mental Health Telehealth (no in-person req)\",\n    \"Current Status\": \"Active\",\n    \"Pre-Waiver Rule\": \"6-month in-person prior\",\n    \"Revenue at Risk (avg CAH)\": \"$95,000/yr\"\n  },\n  {\n    \"Waiver\": \"Federally Qualified Health Center Telehealth\",\n    \"Current Status\": \"Active\",\n    \"Pre-Waiver Rule\": \"Not eligible as distant site\",\n    \"Revenue at Risk (avg CAH)\": \"$35,000/yr\"\n  }\n]",
+      "language": "json",
+      "title": "COVID-Era Telehealth Waivers Expiring December 31, 2026"
+    },
+    {
+      "_key": "blk004",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f9r5kin6",
+          "_type": "span",
+          "marks": [],
+          "text": "The Legislative Outlook and Scenario Planning"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk005",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk005-s",
+          "_type": "span",
+          "marks": [],
+          "text": "As of early 2026, telehealth-extension bills — including the CONNECT for Health Act (permanent extension) and narrower two-year extensions — remain in play. The fiscal scoring of these bills is contested: CBO has scored short-term telehealth extensions in the range of a few billion dollars over two years, while CONNECT’s sponsors argue it would generate net savings. That disagreement over cost has repeatedly stalled permanent action despite bipartisan support."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk006",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m6xxon5g",
+          "_type": "span",
+          "marks": [],
+          "text": "The most likely legislative outcome, based on current committee dynamics, is a partial permanent extension covering rural originating site flexibility and audio-only services, with the home-as-originating-site and mental health waivers subject to a further two-year extension. Rural hospital revenue officers should model three scenarios: full extension, partial extension, and full expiration."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk007",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ds69ple7",
+          "_type": "span",
+          "marks": [],
+          "text": "No rural hospital CFO should be operating without a telehealth waiver sunset contingency plan. The best-case legislative outcome still removes significant revenue. The worst case is an 8-figure exposure for mid-size rural systems."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "blk008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ur1o13bd",
+          "_type": "span",
+          "marks": [],
+          "text": "CONTINGENCY PLANNING: Build three scenarios into FY 2027 budget: (1) Full Extension: revenue neutral; (2) Partial Extension (rural HPSA + audio-only): -$220K avg impact; (3) Full Sunset: -$840K avg impact. Begin renegotiating commercial payer telehealth rates NOW regardless of Medicare outcome—commercial rates are currently below cost in 62% of rural markets."
+        }
+      ],
+      "style": "callout"
+    },
+    {
+      "_key": "blk009",
+      "_type": "image",
+      "alt": "Legislative scenario timeline for 2026 telehealth waiver expiration showing financial impact branches for rural Critical Access Hospitals under three legislative outcomes.",
+      "asset": {
+        "_ref": "image-b9612fa8debe718f6b12d726ff05f2717e3985c8-1536x1024-png",
+        "_type": "reference"
+      },
+      "caption": "Legislative timeline diagram showing the December 31, 2026 waiver expiration cliff with branching scenario paths: full CONNECT Act passage, partial Telehealth Modernization Act passage, and full sunset reversion, with financial impact annotations for an average Critical Access Hospital."
+    },
+    {
+      "_key": "blk010",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zhrge8tg",
+          "_type": "span",
+          "marks": [],
+          "text": "Revenue Protection Actions for Rural Telehealth Programs"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "blk011",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "6yhys30k",
+          "_type": "span",
+          "marks": [],
+          "text": "Model three legislative scenarios in FY 2027 budget before Q2 2026 board submission"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk012",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "q311wa16",
+          "_type": "span",
+          "marks": [],
+          "text": "Audit current telehealth volume by waiver category to quantify specific exposure by service type"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sxyibc8j",
+          "_type": "span",
+          "marks": [],
+          "text": "Renegotiate commercial payer telehealth rates—Medicare waiver sunset does not automatically affect commercial contracts"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk014",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gxiurnj2",
+          "_type": "span",
+          "marks": [],
+          "text": "Join AHA rural advocacy coalition for CONNECT Act support—CBO scoring is the primary obstacle and rural hospital data is the most persuasive input"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    }
+  ],
+  "summary": "The COVID-era telehealth flexibilities extended through December 31, 2026 under the Consolidated Appropriations Act will expire unless Congress acts. For rural hospitals that have built service line revenue on pandemic-era reimbursement rates, the expiration represents an average revenue exposure of $840,000 per facility. This analysis maps the specific waivers at risk, the reimbursement differential, and the legislative outlook.",
+  "title": "The 2026 Telehealth Reimbursement Cliff: What Rural Hospitals Must Do Before the COVID-Era Waivers Expire V2"
+}

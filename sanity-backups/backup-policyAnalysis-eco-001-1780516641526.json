@@ -1,0 +1,417 @@
+{
+  "_id": "policyAnalysis-eco-001",
+  "body": [
+    {
+      "_key": "vbc-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-2",
+          "_type": "span",
+          "marks": [],
+          "text": "After a decade of skepticism about whether value-based care actually saves money, the 2024 results are in — and they are the strongest yet. The Medicare Shared Savings Program, the country's largest accountable-care program, delivered record savings, and the data reveals a clear lesson about what makes value-based care work: downside financial risk. This analysis examines the 2024 ACO results, why two-sided risk is the engine of savings, the gap between high and low performers, and what the evidence now says about the future of value-based payment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-4",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2024 Results"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "vbc-5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-6",
+          "_type": "span",
+          "marks": [],
+          "text": "The Medicare Shared Savings Program (MSSP) posted its best year on record in 2024. Of 476 ACOs, 75% — representing 80% of the 10.3 million assigned beneficiaries — earned performance payments, and the program saved Medicare $2.48 billion relative to benchmarks, the eighth consecutive year of savings and a new record (CMS; Accountable for Health). Per-beneficiary savings reached $637, a 40% increase since 2021, and even after paying out shared savings to the ACOs, the program returned roughly $240 per beneficiary net to Medicare. Crucially, the savings came with quality: nearly every ACO met CMS's quality standard, with improvements on blood-pressure control, A1c control, and cancer screening — demonstrating that the cost reductions were paired with better, not worse, care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-8",
+          "_type": "span",
+          "marks": [],
+          "text": "This matters because value-based care spent years dogged by the question of whether it actually delivers — whether shared-savings programs genuinely reduce spending or just reward favorable patient selection. The sustained, growing, quality-paired savings of the MSSP now make a strong empirical case that well-designed accountable care does work. After a decade of building, the model has produced its proof of concept at national scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-10",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2024 verdict on value-based care: the Medicare Shared Savings Program saved a record $2.48 billion — its eighth straight year of savings — at $637 per beneficiary (up 40% since 2021), with quality improving, not declining. After a decade of doubt, well-designed accountable care has its proof at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "vbc-11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-12",
+          "_type": "span",
+          "marks": [],
+          "text": "Two-Sided Risk: The Engine"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "vbc-13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-14",
+          "_type": "span",
+          "marks": [],
+          "text": "The single most important finding is about what kind of value-based care works. Two-sided risk — arrangements where ACOs can lose money if they overspend, not just share in savings if they underspend — is the engine of MSSP performance. ACOs in the higher-risk Level E and Enhanced tracks delivered more than two-thirds of all savings in 2024, generating $5.4 billion of the $6.6 billion total, and two-thirds of ACOs now operate under downside risk (Accountable for Health; Fierce Healthcare). The pattern is unambiguous: ACOs with real money at stake save far more than those in upside-only arrangements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-16",
+          "_type": "span",
+          "marks": [],
+          "text": "The mechanism is intuitive. An ACO that only shares in savings has a modest incentive to manage cost; an ACO that will be penalized for overspending has a powerful one, and it invests accordingly in the care management, data infrastructure, and network discipline that actually reduce spending. Upside-only models let organizations dabble in value-based care without committing; two-sided risk forces the operational seriousness that produces results. This is why CMS has steadily pushed ACOs toward downside risk, and why the 2024 data validates that push — the savings are concentrated exactly where the risk is."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-18",
+          "_type": "span",
+          "marks": [],
+          "text": "The Performance Gap"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "vbc-19",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-20",
+          "_type": "span",
+          "marks": [],
+          "text": "Beneath the strong averages lies wide variation, and it is instructive. While 75% of ACOs earned performance payments, a quarter did not, and the savings are heavily concentrated in the higher-risk, more committed organizations. Some ACOs — physician-led groups and sophisticated value-based-care companies like Aledade — saved enormous sums (Aledade's ACOs alone saved over $1 billion in 2024), while others barely broke even. This dispersion reflects the reality that value-based care is hard operational work, not an automatic payoff: success requires investment in care coordination, risk stratification, data infrastructure, and network management that not every organization makes or makes well."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-21",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-22",
+          "_type": "span",
+          "marks": [],
+          "text": "The performance gap carries a strategic lesson. Value-based care is not a financing trick that any provider can adopt and profit from; it is a different operating model that rewards organizations built for it and punishes those that treat it as a side activity bolted onto fee-for-service. Physician-led ACOs have tended to outperform hospital-led ones, plausibly because hospitals face a conflict — reducing admissions hurts their fee-for-service revenue — that physician groups do not. The winners are those whose whole orientation is population health; the laggards are those straddling two payment worlds."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-23",
+      "_type": "code",
+      "code": "[{\"Metric\":\"Total savings\",\"Value\":\"$2.48B (record; 8th straight year)\"},{\"Metric\":\"Per beneficiary\",\"Value\":\"$637 saved (+40% since 2021)\"},{\"Metric\":\"Earned payments\",\"Value\":\"75% of 476 ACOs; $4.1B in payments\"},{\"Metric\":\"Two-sided risk\",\"Value\":\"Level E/Enhanced = $5.4B of $6.6B total savings\"}]",
+      "title": "MSSP 2024: the value-based-care verdict"
+    },
+    {
+      "_key": "vbc-24",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-25",
+          "_type": "span",
+          "marks": [],
+          "text": "The Headwinds"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "vbc-26",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-27",
+          "_type": "span",
+          "marks": [],
+          "text": "The strong results coexist with real headwinds that temper the optimism. The first is the benchmark ratchet: an ACO's savings are measured against a spending benchmark that is itself influenced by the ACO's prior performance, so an ACO that saves money sees its future benchmark lowered, making each successive year's savings harder to achieve — the program can, in effect, penalize its own success. The second is the difficulty of attribution and selection: skeptics note that some apparent savings may reflect which patients an ACO ends up with rather than how it manages them, though the sustained quality gains argue against pure selection. The third is the investment barrier, especially for small and rural providers, who may lack the capital and infrastructure to take on downside risk even though that is where the savings are."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-28",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-29",
+          "_type": "span",
+          "marks": [],
+          "text": "These headwinds matter because they shape who can participate and for how long. The benchmark problem in particular threatens the program's durability — if saving money makes future saving harder, the most successful ACOs face diminishing returns that could eventually push them out, which is precisely the opposite of what the program intends. Refining the benchmark methodology to reward sustained performance without ratcheting it away is among the most important technical fixes for keeping value-based care viable as it scales, and it is a recurring theme in the policy debate over the program's future."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-30",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-31",
+          "_type": "span",
+          "marks": [],
+          "text": "ACO REACH and the Broader Landscape"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "vbc-32",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-33",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond MSSP, CMS's ACO REACH model pushes value-based care further — emphasizing health equity and requiring providers to take on substantial financial risk. ACO REACH has operated at meaningful scale (in 2023 it included 132 ACOs managing care for more than two million beneficiaries and overseeing $26.6 billion in Medicare Part A and B spending), serving as the program where the most risk-tolerant organizations operate (McDermott+). Together, MSSP and REACH represent CMS's bet that accountable care, with escalating downside risk, is the future of Medicare payment — a bet the 2024 results increasingly justify. CMS has set a goal of having all Medicare beneficiaries in an accountable-care relationship, and the growing participation and savings suggest the trajectory is real."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-34",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-35",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "vbc-36",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-37",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether the savings trend continues to grow as more ACOs move into two-sided risk, or plateaus; whether CMS sustains its push toward downside risk despite provider resistance to the financial exposure; whether the benchmark-setting methodology (the perennial weak point — benchmarks that are too generous overstate savings, too harsh drive ACOs out) is refined; whether physician-led models continue to outperform hospital-led ones, with implications for who should lead value-based care; and whether the model extends beyond Medicare into Medicaid and commercial markets at similar scale. The 2024 results are the strongest evidence yet that value-based care works when structured with real risk — the question now is how far and how fast it spreads."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-38",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-39",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "vbc-40",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-41",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2024 ACO results are the clearest evidence to date that value-based care delivers: a record $2.48 billion in Medicare savings, $637 per beneficiary, eight consecutive years of savings, and quality improving alongside cost reduction. The decisive lesson is that two-sided risk is the engine — ACOs with real downside exposure generated the overwhelming majority of savings, validating CMS's push toward downside risk and revealing that upside-only arrangements let organizations dabble without delivering. But the wide performance gap shows value-based care is hard operational work, not an automatic payoff, rewarding organizations genuinely built for population health (often physician-led) over those straddling fee-for-service. After a decade of doubt, the model has its proof of concept; the open questions are how aggressively CMS pushes risk, how it sets benchmarks, and how far accountable care spreads beyond Medicare. The era of asking whether value-based care works is giving way to the harder question of how to scale what the evidence now shows does."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-42",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-43",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "vbc-45",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-46",
+          "_type": "span",
+          "marks": [
+            "vbc-44"
+          ],
+          "text": "CMS — Medicare Shared Savings Program PY2024 Financial and Quality Results"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "vbc-44",
+          "_type": "link",
+          "href": "https://www.cms.gov/files/document/fact-sheet-ssp-py24-financial-quality-results.pdf"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-48",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-49",
+          "_type": "span",
+          "marks": [
+            "vbc-47"
+          ],
+          "text": "Accountable for Health — Shared Savings Program Results from 2024"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "vbc-47",
+          "_type": "link",
+          "href": "https://accountableforhealth.org/accountability-delivered-in-medicare-shared-savings-program-results-from-2024/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-51",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-52",
+          "_type": "span",
+          "marks": [
+            "vbc-50"
+          ],
+          "text": "Fierce Healthcare — Medicare ACOs saved $2.4B in 2024, setting a new record"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "vbc-50",
+          "_type": "link",
+          "href": "https://www.fiercehealthcare.com/regulatory/mssp-acos-saved-24b-2024-setting-new-record-program"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-54",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-55",
+          "_type": "span",
+          "marks": [
+            "vbc-53"
+          ],
+          "text": "McDermott+ — ACO REACH: What Recent Performance Results Could Mean for the Model's Future"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "vbc-53",
+          "_type": "link",
+          "href": "https://www.mcdermottplus.com/blog/regs-eggs/aco-reach-what-recent-performance-results-could-mean-for-future-models/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "vbc-57",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vbc-58",
+          "_type": "span",
+          "marks": [
+            "vbc-56"
+          ],
+          "text": "Aledade — Aledade ACOs Save Over $1 Billion in 2024"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "vbc-56",
+          "_type": "link",
+          "href": "https://aledade.com/newsroom/aledade-news/aledade-acos-save-over-1-billion-in-2024"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "After a decade of doubt, the 2024 Medicare Shared Savings Program results are the strongest evidence yet that value-based care works — a record $2.48B saved, $637/beneficiary (+40% since 2021), eight straight years, with quality improving. The decisive lesson: two-sided (downside) risk is the engine, generating $5.4B of $6.6B in savings. This analysis covers the results, why risk drives savings, the performance gap, and ACO REACH.",
+  "title": "Value-Based Care Contract Performance: 2025 Shared Savings Results Across ACO Models"
+}

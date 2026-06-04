@@ -1,0 +1,91 @@
+{
+  "_id": "policyAnalysis-clin-002",
+  "body": [
+    {
+      "_key": "k229",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k230",
+          "_type": "span",
+          "marks": [],
+          "text": "Pharmacogenomics Coverage Landscape"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k231",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k232",
+          "_type": "span",
+          "marks": [],
+          "text": "Pharmacogenomic (PGx) testing enables clinicians to select medications and doses based on a patient's genetic profile, reducing adverse drug reactions and improving therapeutic efficacy. Commercial payer coverage has expanded significantly: 78% of large commercial plans cover PGx testing for at least one drug-gene pair, up from 41% in 2021."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k233",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k234",
+          "_type": "span",
+          "marks": [],
+          "text": "Most Commonly Covered Tests"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k235",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k236",
+          "_type": "span",
+          "marks": [],
+          "text": "Drug-gene pairs with the strongest commercial coverage include: CYP2C19 for clopidogrel dosing (cardiovascular), CYP2D6 for codeine and tamoxifen (oncology and pain management), TPMT/NUDT15 for thiopurine dosing (oncology), and HLA-B*57:01 for abacavir hypersensitivity (HIV). Multi-gene panel testing — covering 25+ genes simultaneously — is covered by fewer than 40% of commercial plans."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k237",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k238",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS Coverage Status"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k239",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k240",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare coverage remains fragmented. CMS issued a Local Coverage Determination (LCD) framework in 2023 establishing coverage for PGx testing in specific oncology contexts but declined to issue a National Coverage Determination for broader PGx panels. This has created geographic variation in Medicare coverage depending on which MAC jurisdiction covers the beneficiary."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "Pharmacogenomic testing coverage has expanded significantly, with 78% of commercial plans covering PGx testing for at least one drug-gene pair. This analysis compares coverage policies, clinical utility evidence, and CMS's Medicare coverage determination.",
+  "title": "Precision Medicine and Pharmacogenomics: Payer Coverage Policies in 2025"
+}

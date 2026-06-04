@@ -1,0 +1,395 @@
+{
+  "_id": "telehealth-reimbursement-cliff-2026-rural-hospitals",
+  "body": [
+    {
+      "_key": "tcl-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-2",
+          "_type": "span",
+          "marks": [],
+          "text": "Telehealth's national policy story is about a recurring funding cliff. For rural hospitals, that cliff is not an abstraction — it is an existential question about whether a service line they have built their access strategy around will still be paid for next year. This analysis takes the rural-hospital lens on the telehealth reimbursement cliff: why rural systems are uniquely exposed, what the current extension does and does not secure, the planning problem the uncertainty creates, and how rural hospitals should manage a service whose funding keeps living deadline to deadline."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-4",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Rural Hospitals Are Uniquely Exposed"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "tcl-5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-6",
+          "_type": "span",
+          "marks": [],
+          "text": "Most of Medicare's pandemic-era telehealth flexibilities — letting patients be seen at home, removing the rural-originating-site and geographic restrictions, allowing audio-only visits, and letting rural clinics serve as distant-site providers — were temporary waivers, and they have been extended in a series of short windows rather than made permanent. For rural hospitals this is more consequential than for urban systems, because rural providers built telehealth into the core of how they reach patients across distance: tele-specialty consults, remote monitoring, and virtual primary and behavioral-health visits are not a convenience layer but a substitute for the specialists and services the community does not have locally."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-8",
+          "_type": "span",
+          "marks": [],
+          "text": "When the flexibilities lapse or are threatened, rural hospitals face the prospect of either absorbing the cost of telehealth they can no longer bill Medicare for, or cutting services their patients depend on. The audio-only provision is especially critical rurally, because it is the lifeline for patients without the broadband for video — disproportionately rural patients — so a cliff that takes audio-only with it cuts hardest exactly where alternatives are thinnest."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-10",
+          "_type": "span",
+          "marks": [],
+          "text": "For urban systems, the telehealth cliff is a reimbursement nuisance. For rural hospitals that built their access strategy on virtual specialty and behavioral-health care, it's an existential question about whether the service line replacing absent local providers will still be paid for next year."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "tcl-11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-12",
+          "_type": "span",
+          "marks": [],
+          "text": "What the Current Extension Secures"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "tcl-13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-14",
+          "_type": "span",
+          "marks": [],
+          "text": "The landscape is now split into durable and precarious halves. The Consolidated Appropriations Act, 2026 extended the general Medicare telehealth flexibilities through December 31, 2027 — a two-year window of relative certainty (CMS; Quarles). And crucially, the core behavioral-health telehealth flexibilities were made permanent by earlier Consolidated Appropriations Acts: no geographic restriction, the home as an eligible site, and audio-only delivery for mental-health care are now codified in statute (Telehealth.HHS.gov). For rural hospitals, the permanent behavioral-health carve-out is the most reassuring piece, since behavioral health is the highest-value rural telehealth use case."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-16",
+          "_type": "span",
+          "marks": [],
+          "text": "But the non-behavioral flexibilities — which cover most of rural telehealth's volume — still expire at the end of 2027 absent further action, and they have lapsed before (briefly, during a 2025 funding impasse). So a rural hospital planning beyond 2027 is planning against a cliff, and the recurring nature of these extensions means the uncertainty is structural, not a one-time event. Rural systems have learned to expect a last-minute extension, but cannot bank on one."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-18",
+          "_type": "span",
+          "marks": [],
+          "text": "The Planning Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "tcl-19",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-20",
+          "_type": "span",
+          "marks": [],
+          "text": "The deepest harm of the cliff may not be any single lapse but the chronic uncertainty itself. Building a telehealth program — the technology, the staffing, the workflows, the patient relationships — requires multi-year investment, and no rational administrator commits capital to a service line whose reimbursement might vanish at the next funding deadline. The cliff therefore suppresses exactly the durable investment rural telehealth needs, keeping programs perpetually provisional. A rural hospital that would build robust tele-specialty infrastructure for a permanent benefit instead runs a minimal, hedge-everything version because it cannot trust the payment will persist."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-21",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-22",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the case for permanence beyond any single extension: the value of making the flexibilities permanent is not only continued payment but the investment certainty that unlocks serious program-building. And the cost evidence increasingly supports permanence — research finding telehealth substitutes for rather than adds to utilization undercuts the budget fear that has driven the short-term, cliff-edge approach. The rural-access case and the cost case now point the same direction; what is missing is the political resolution to make the non-behavioral flexibilities permanent rather than perpetually extended."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-23",
+      "_type": "code",
+      "code": "[{\"Element\":\"Behavioral health\",\"Status\":\"Permanent (CAA 2021/2023) — the durable piece\"},{\"Element\":\"Non-behavioral (geographic/home/audio)\",\"Status\":\"Extended to Dec 31, 2027 — still a cliff\"},{\"Element\":\"Rural stake\",\"Status\":\"Telehealth substitutes for absent local specialists/services\"},{\"Element\":\"Planning effect\",\"Status\":\"Chronic uncertainty suppresses durable investment\"}]",
+      "title": "The telehealth cliff: rural exposure"
+    },
+    {
+      "_key": "tcl-24",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-25",
+          "_type": "span",
+          "marks": [],
+          "text": "The Broadband Dependency Underneath"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "tcl-26",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-27",
+          "_type": "span",
+          "marks": [],
+          "text": "The telehealth cliff has a quieter twin: even if reimbursement is secured permanently, rural telehealth only works where the broadband to deliver it exists. The two constraints interact and compound — a permanent payment guarantee is worthless in a community where the signal cannot carry a video visit, and the best broadband in the world is useless if Medicare will not pay for the visit. For rural hospitals, telehealth sustainability is therefore a two-front problem: the payment cliff and the connectivity gap, and progress on only one leaves the service stranded on the other."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-28",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-29",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why rural telehealth strategy cannot be separated from the federal broadband investment (BEAD) running in parallel: they are two halves of the same access infrastructure. A rural hospital evaluating its telehealth future has to track both the reimbursement timeline and the broadband buildout timeline in its market, because the service's viability depends on both arriving — and the audio-only provision exists precisely as the bridge for the period and the places where video-grade broadband has not yet reached, which is one more reason its permanence matters so much to rural systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-30",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-31",
+          "_type": "span",
+          "marks": [],
+          "text": "How Rural Hospitals Should Manage It"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "tcl-32",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-33",
+          "_type": "span",
+          "marks": [],
+          "text": "Until permanence arrives, rural hospitals have to manage the cliff deliberately. The first move is to build aggressively on the permanent foundation — behavioral-health telehealth is durable and is the highest-value rural use case, so it is the safest place to invest. The second is to model the 2027 cliff explicitly in financial planning, with contingency scenarios for full extension, partial extension (e.g., rural-HPSA and audio-only only), and full sunset, so a lapse does not arrive as a surprise. The third is to diversify payer reliance: commercial and Medicaid managed-care coverage of telehealth does not depend on the Medicare waiver, so a program anchored partly in those payers is more resilient to a Medicare cliff. And the fourth is advocacy — rural hospitals and their associations are among the most credible voices for permanence, and the cliff persists partly because the case has not been pressed to resolution."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-34",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-35",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "tcl-36",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-37",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether Congress makes the non-behavioral flexibilities permanent before the December 2027 deadline or extends them again at the edge; whether audio-only payment survives, given its rural importance; whether the substitution-not-addition cost evidence reshapes the CBO scoring that has stalled permanence; and whether rural telehealth investment recovers if certainty arrives or stays minimal under continued uncertainty. The behavioral-health foundation is secure; the rest of rural telehealth's future hinges on whether policymakers convert a recurring cliff into a permanent benefit."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-38",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-39",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "tcl-40",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-41",
+          "_type": "span",
+          "marks": [],
+          "text": "The telehealth reimbursement cliff is a national policy quirk that lands as an existential threat on rural hospitals, which built their access strategy on virtual care substituting for absent local providers. The current state is bifurcated: behavioral-health telehealth is permanently secured — the most valuable rural piece — while the broader flexibilities are extended only through 2027 and have lapsed before. The deepest damage is the chronic uncertainty, which suppresses the durable investment rural telehealth needs. With the cost evidence now favoring permanence and the rural-access case strong, the constructive path is clear: make the flexibilities permanent. Until then, rural hospitals should build on the permanent behavioral-health base, plan explicitly for the cliff, diversify payers, and press the case — because a service line this central to rural access should not have to be re-justified every funding deadline. The broader point is that telehealth has graduated from pandemic stopgap to permanent rural infrastructure in everything but its financing, and the policy lag is now the main obstacle. A rural hospital can build the technology, train the staff, and earn patient trust in months; what it cannot do is manufacture the multi-year payment certainty that justifies the investment. Closing that gap — converting the recurring cliff into a permanent benefit, and pairing it with the broadband that makes telehealth physically possible — is the single most valuable thing federal policy could do for rural telehealth, and the evidence to justify it is already in hand. For now, rural telehealth survives on borrowed time and renewed deadlines — a precarious footing for infrastructure that millions of rural patients now depend on for access to the specialists and behavioral-health care their communities cannot otherwise provide."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-42",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-43",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "tcl-45",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-46",
+          "_type": "span",
+          "marks": [
+            "tcl-44"
+          ],
+          "text": "CMS — Telehealth FAQ (flexibility timeline; extension to Dec 31, 2027)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "tcl-44",
+          "_type": "link",
+          "href": "https://www.cms.gov/files/document/telehealth-faq-updated-02-26-2026.pdf"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-48",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-49",
+          "_type": "span",
+          "marks": [
+            "tcl-47"
+          ],
+          "text": "Telehealth.HHS.gov — Telehealth policy updates (permanent behavioral-health flexibilities)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "tcl-47",
+          "_type": "link",
+          "href": "https://telehealth.hhs.gov/providers/telehealth-policy/telehealth-policy-updates"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-51",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-52",
+          "_type": "span",
+          "marks": [
+            "tcl-50"
+          ],
+          "text": "Quarles — Countdown to 2026: telehealth changes impacting Medicare providers"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "tcl-50",
+          "_type": "link",
+          "href": "https://www.quarles.com/newsroom/publications/countdown-to-2026-new-year-changes-in-telehealth-impacting-medicare-providers"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "tcl-54",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tcl-55",
+          "_type": "span",
+          "marks": [
+            "tcl-53"
+          ],
+          "text": "KFF — What to Know About Medicare Coverage of Telehealth"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "tcl-53",
+          "_type": "link",
+          "href": "https://www.kff.org/medicare/what-to-know-about-medicare-coverage-of-telehealth/"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "Telehealth's recurring funding cliff lands hardest on rural hospitals, which built their access strategy on virtual care replacing absent local providers. Behavioral-health telehealth is now permanent, but the broader flexibilities expire Dec 31, 2027 and have lapsed before — and the chronic uncertainty suppresses the durable investment rural telehealth needs. This analysis takes the rural lens on the cliff and how to manage it.",
+  "title": "The 2026 Telehealth Reimbursement Cliff: What Rural Hospitals Must Do Before the COVID-Era Waivers Expire V2"
+}

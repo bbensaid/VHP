@@ -1,0 +1,190 @@
+{
+  "_id": "vermont-health-economics-roadmap-2026",
+  "body": [
+    {
+      "_key": "es0ylrog",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "qistpefl",
+          "_type": "span",
+          "marks": [],
+          "text": "As the CTO for the Vermont Agency of Digital Services, my mandate is clear: we must engineer a healthcare infrastructure that is fiscally sustainable and technologically liquid. The legacy 'Silo' model, where patient data is trapped in proprietary vendor-locked repositories, is the primary driver of administrative friction and clinical inefficiency in the State of Vermont."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "8vkb3kko",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fwt02q7p",
+          "_type": "span",
+          "marks": [],
+          "text": "I. The Strategic Imperative: Data Sovereignty"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "1v6an6ty",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1v6an6ty-s",
+          "_type": "span",
+          "marks": [],
+          "text": "A central goal of Vermont's 2026 health-data strategy is to sharply increase real-time clinical data liquidity, reducing the 'friction tax' of manual records retrieval across the state's rural health districts."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "f68983bh",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gace6vwq",
+          "_type": "span",
+          "marks": [],
+          "text": "The shift toward data sovereignty is not merely a technical upgrade; it is an economic necessity. When clinical data becomes liquid, the cost of care coordination drops exponentially. This phenomenon, which I define as 'Technical Deflation,' allows the State to reinvest capital into frontline medical services rather than back-end IT maintenance."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "fyea3e1d",
+      "_type": "image",
+      "alt": "Technical architecture diagram of the Vermont Health Information Exchange showing FHIR API gateways and rural hospital integration nodes.",
+      "caption": "Figure 1.0: Architectural Blueprint of the Vermont Health Information Exchange (VHIE) 2026 Liquidity Fabric. This diagram illustrates the decoupling of the application layer from the persistent data layer, enabling multi-vendor interoperability."
+    },
+    {
+      "_key": "6lhhdgtu",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8hv5dbjr",
+          "_type": "span",
+          "marks": [],
+          "text": "II. Economic Performance and Technical Metrics"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "2qgbwwjc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "q3x50y23",
+          "_type": "span",
+          "marks": [],
+          "text": "To measure the success of this transformation, we have established a 'Liquidity Index' that tracks the latency and accuracy of data movements between independent provider nodes. The following table represents the performance audit of our primary technical gateways as of February 2026."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "3o5fi8qr",
+      "_type": "code",
+      "code": "[\n  {\n    \"Technical_Node\": \"Northlands Rural Health\",\n    \"Sync_Latency_ms\": 14,\n    \"Data_Accuracy\": \"99.4%\",\n    \"Economic_Efficiency\": \"88%\"\n  },\n  {\n    \"Technical_Node\": \"Green Mountain Medical\",\n    \"Sync_Latency_ms\": 38,\n    \"Data_Accuracy\": \"97.2%\",\n    \"Economic_Efficiency\": \"82%\"\n  },\n  {\n    \"Technical_Node\": \"AHS Central Registry\",\n    \"Sync_Latency_ms\": 9,\n    \"Data_Accuracy\": \"99.9%\",\n    \"Economic_Efficiency\": \"94%\"\n  },\n  {\n    \"Technical_Node\": \"Burlington Community Hub\",\n    \"Sync_Latency_ms\": 22,\n    \"Data_Accuracy\": \"98.5%\",\n    \"Economic_Efficiency\": \"91%\"\n  },\n  {\n    \"Technical_Node\": \"Southern Vermont Access\",\n    \"Sync_Latency_ms\": 41,\n    \"Data_Accuracy\": \"96.8%\",\n    \"Economic_Efficiency\": \"79%\"\n  }\n]",
+      "language": "json",
+      "title": "Vermont ADS Interoperability Performance Audit (Q1 2026)"
+    },
+    {
+      "_key": "u6tt500m",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "azz13uqq",
+          "_type": "span",
+          "marks": [],
+          "text": "III. The Executive Perspective on Policy Friction"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "ls9ihy3r",
+      "_type": "audio",
+      "summary": "A 15-minute technical breakdown for the Vermont Legislature regarding the decommissioning of legacy EMR interfaces and the transition to the VHP unified API layer.",
+      "title": "CTO Executive Briefing: Overcoming the Legacy Mindset",
+      "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    },
+    {
+      "_key": "ge2wjkpy",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "w98rtxm4",
+          "_type": "span",
+          "marks": [],
+          "text": "We are not in the business of buying software suites; we are in the business of engineering public health outcomes. In 2026, a static clinical record is a liability. A liquid record is a life saved."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "vrcqrdsy",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8pviuhhr",
+          "_type": "span",
+          "marks": [],
+          "text": "IV. Visualizing the 2030 Roadmap"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "b11d2pnr",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "0lk67f5h",
+          "_type": "span",
+          "marks": [],
+          "text": "The transition to Value-Based Care (VBC) requires a technical foundation that can handle real-time risk adjustment and population health analytics. The video analysis below details our trajectory for the next four fiscal years."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "cos0hxmv",
+      "_type": "video",
+      "caption": "Technical Walkthrough: The Vermont Health Platform 2030 Roadmap and the integration of Ambient Clinical Intelligence.",
+      "url": "https://www.youtube.com/watch?v=cbBKoyjFLUY"
+    },
+    {
+      "_key": "9eq85g7s",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1112yafu",
+          "_type": "span",
+          "marks": [],
+          "text": "V. Final Analysis and Conclusions"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "2gqb5zea",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "2rkkjtn4",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2026 Roadmap represents a commitment to the citizens of Vermont. By leveraging technical deflation, we are ensuring that the Agency of Human Services remains a global leader in health transformation. The data liquidity fabric is no longer a concept; it is the operational reality of our State."
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "This definitive roadmap outlines the transition of the Vermont Agency of Human Services toward a data-sovereign, FHIR-native interoperability layer. It details the technical deflationary dividends expected from decommissioning legacy Silos and the resulting impact on rural critical access hospital sustainability.",
+  "title": "The Economic Architecture of Vermont’s 2026 Health Transformation: From Silos to Liquidity Fabrics"
+}

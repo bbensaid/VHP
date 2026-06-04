@@ -1,0 +1,91 @@
+{
+  "_id": "policyAnalysis-eco-004",
+  "body": [
+    {
+      "_key": "k121",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k122",
+          "_type": "span",
+          "marks": [],
+          "text": "Recalibration Background"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k123",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k123-s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS began phasing in the recalibrated V28 CMS-HCC risk adjustment model in 2024, rebasing it to more recent fee-for-service data and trimming certain condition coefficients. CMS projected the transition would reduce average MA risk scores by roughly 3.1–3.3%, lowering per-member-per-month payments to plans."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k125",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k126",
+          "_type": "span",
+          "marks": [],
+          "text": "Financial Impact"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k127",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k127-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Insurers warned the change would pressure margins; large national plans (UnitedHealth, Humana, CVS/Aetna) have more scale to absorb it through efficiencies and supplemental-benefit trims, while smaller regional plans face greater strain. CMS framed the recalibration as restoring payment accuracy and protecting the Medicare Trust Fund."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k129",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k130",
+          "_type": "span",
+          "marks": [],
+          "text": "Market Exit and Access"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k131",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k131-s",
+          "_type": "span",
+          "marks": [],
+          "text": "The tighter payment environment has contributed to MA plans exiting some markets and trimming benefits for 2026, with rural counties — where MA margins are thinnest — among the most exposed to reduced plan choice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "CMS's 2024-2026 risk adjustment recalibration reduced MA plan payments by an estimated $31B over three years. This analysis examines plan-level financial impacts, benefit reductions, and market exits in rural counties.",
+  "title": "Medicare Advantage Risk Adjustment Recalibration: Financial Impact on Health Plans"
+}

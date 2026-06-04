@@ -1,0 +1,79 @@
+{
+  "_id": "economics-of-prevention-2025",
+  "body": [
+    {
+      "_key": "r1p4fe6m",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vthgihe6",
+          "_type": "span",
+          "marks": [],
+          "text": "Preventive care is often cited as the holy grail of healthcare economics. The logic is simple: catch disease early, treat it cheaply, and avoid the catastrophic costs of chronic management. However, the current reimbursement landscape tells a different story."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "l5greabv",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b4hi8y06",
+          "_type": "span",
+          "marks": [],
+          "text": "The Reimbursement Gap"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "k3j5h4iq",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "r42qcx18",
+          "_type": "span",
+          "marks": [],
+          "text": "While payers champion wellness, their fee schedules often prioritize procedural intervention. A 15-minute wellness check reimburses at a fraction of a diagnostic imaging scan."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "8zgyprvf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "nmirhyum",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Insight: We cannot expect a system designed for sick care to spontaneously generate wellness without a fundamental realignment of financial incentives."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "k9lna9kx",
+      "_type": "code",
+      "code": "[{\"Intervention\": \"Diabetes Prevention Program\", \"ROI\": \"$2.50 per $1 spent\"}, {\"Intervention\": \"Hypertension Control\", \"ROI\": \"$1.80 per $1 spent\"}]",
+      "language": "json",
+      "title": "ROI of Preventive Interventions"
+    },
+    {
+      "_key": "lghpaqw9",
+      "_type": "video",
+      "caption": "Economic breakdown of preventive vs. reactive care costs.",
+      "url": "https://www.youtube.com/watch?v=cbBKoyjFLUY"
+    },
+    {
+      "_key": "noaojvck",
+      "_type": "audio",
+      "summary": "Interview with leading health economists on the barriers to preventive care adoption.",
+      "title": "Podcast: The Prevention Paradox",
+      "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    }
+  ],
+  "summary": "An analysis of why preventive care models are failing to gain traction despite clear economic benefits.",
+  "title": "The Economics of Prevention: A 2025 Perspective"
+}

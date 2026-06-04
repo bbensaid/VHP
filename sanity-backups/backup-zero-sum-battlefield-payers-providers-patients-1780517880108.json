@@ -1,0 +1,367 @@
+{
+  "_id": "zero-sum-battlefield-payers-providers-patients",
+  "body": [
+    {
+      "_key": "zsb-113",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-114",
+          "_type": "span",
+          "marks": [],
+          "text": "In late 2025, Vermont's largest health insurer did something almost unheard of: it publicly told its members to avoid the state's largest hospital. The extraordinary, open conflict between Blue Cross Blue Shield of Vermont and the University of Vermont Health Network laid bare a dynamic usually hidden behind closed-door negotiations — a zero-sum war between payers and providers, with patients and premiums caught in the middle. This analysis uses the Vermont case to examine the economics of payer-provider conflict, the price disparities it exposed, why such fights are intensifying, and what it reveals about a broken market."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-115",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-116",
+          "_type": "span",
+          "marks": [],
+          "text": "The Vermont Rupture"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "zsb-117",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-118",
+          "_type": "span",
+          "marks": [],
+          "text": "The conflict broke into the open when Blue Cross Blue Shield of Vermont (BCBSVT), facing severe financial strain, launched a campaign explicitly steering patients away from the University of Vermont Medical Center (UVMMC) toward lower-cost independent facilities. BCBSVT's distress was real: the insurer faced a substantial deficit, driven by paying out enormous sums in claims, and it broke the usual industry silence to publicly attack the prices it was being charged (VTDigger). For an insurer to publicly tell members to avoid the dominant hospital is a remarkable escalation — a sign that the normal private negotiation had failed and the conflict had become existential for the payer."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-119",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-120",
+          "_type": "span",
+          "marks": [],
+          "text": "Underlying the rupture is an affordability crisis that gives it weight. Vermonters spend the highest share of household income on health insurance premiums of any state — around 19.6%, nearly double the national average — and the state's benchmark premiums have risen sharply (the silver-plan benchmark up 108% since 2018, confirmed in the state's own Oliver Wyman Act 167 analysis). The payer-provider war is, in this sense, a fight over who bears the blame for premiums that have become unaffordable, with the insurer pointing at hospital prices and the hospital pointing at its own costs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-121",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-122",
+          "_type": "span",
+          "marks": [],
+          "text": "In late 2025 Vermont's largest insurer publicly told members to avoid the state's largest hospital — an extraordinary rupture of the usually-private payer-provider negotiation, and a window into the zero-sum economics underneath, in a state where residents spend ~19.6% of income on premiums, the highest in the nation."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "zsb-123",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-124",
+          "_type": "span",
+          "marks": [],
+          "text": "The Price Disparities Exposed"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "zsb-125",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-126",
+          "_type": "span",
+          "marks": [],
+          "text": "The conflict's most concrete revelation was the scale of price disparity between the dominant hospital and independent facilities. Disclosures in the dispute showed UVMMC charging dramatically more than independent sites for identical services — a standard MRI billed at roughly $6,520 at UVMMC versus about $1,799 at an independent facility, a markup of around 262% for the same scan (VTDigger). These are not differences explained by quality or complexity; they reflect the market power of a dominant hospital network able to command prices that a competitive market would not sustain. The insurer's steering campaign was, in effect, an attempt to route patients to the competitive price and away from the monopoly price."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-127",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-128",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the heart of the economic story: a dominant provider can charge multiples of the competitive rate for commoditized services because patients and insurers have limited alternatives, and those inflated prices flow directly into premiums. The Vermont disclosures put hard numbers on a dynamic — provider market power inflating prices — that is usually invisible, and they illustrate why the payer felt it had no choice but to fight publicly: the prices it was paying were, in its telling, mathematically incompatible with affordable premiums."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-129",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-130",
+          "_type": "span",
+          "marks": [],
+          "text": "Why These Fights Are Intensifying"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "zsb-131",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-132",
+          "_type": "span",
+          "marks": [],
+          "text": "The Vermont rupture is an extreme version of a national pattern. Payer-provider conflicts — contract disputes, network terminations, public steering campaigns — are intensifying because the underlying tension has sharpened: health-care costs keep rising, premiums have hit the ceiling of what employers and individuals can bear, and the zero-sum nature of the fight (every dollar the provider charges is a dollar the payer must collect in premiums or absorb in losses) leaves less room for the quiet compromises that once kept these conflicts private. As affordability reaches a breaking point, the polite fiction that payers and providers are partners gives way to open conflict over a pie that can no longer grow painlessly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-133",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-134",
+          "_type": "span",
+          "marks": [],
+          "text": "Provider consolidation amplifies the dynamic. As hospitals merge into dominant networks (UVMMC's position in Vermont is a clear example), they gain the market power to command higher prices, which both drives the cost growth and gives payers less ability to negotiate or steer around them. The result is a structural collision: consolidated providers with pricing power versus insurers facing affordability limits, with no easy resolution — which is exactly the collision that erupted publicly in Vermont and is simmering in markets across the country."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-135",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-136",
+          "_type": "span",
+          "marks": [],
+          "text": "A Symptom of a Broken Market"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "zsb-137",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-138",
+          "_type": "span",
+          "marks": [],
+          "text": "The deepest lesson of the Vermont war is that it is a symptom of a market that does not function like a normal one. In a working market, the price disparities exposed in Vermont could not persist — competition would force the $6,520 MRI down toward the $1,799 price. They persist because health care lacks the conditions for functioning price competition: patients are insulated from prices by insurance, care is often not shoppable, dominant providers face limited competition, and the information needed to compare is opaque. The payer-provider war is what happens when a market's normal price-disciplining mechanisms are absent and the parties are left to fight directly over who absorbs costs that competition would otherwise constrain."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-139",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-140",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why the fight is ultimately unsatisfying for everyone, including patients. The insurer's steering campaign addresses the symptom (high prices at one hospital) without curing the disease (the absence of functioning competition), patients get caught between their insurer and their hospital, and premiums keep rising regardless of who wins any individual battle. The Vermont rupture is dramatic, but it is a sign of dysfunction, not a path to resolution — which points toward the structural remedies (price regulation, global budgets, antitrust enforcement, transparency) that address why the market fails rather than just refereeing the resulting fights."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-141",
+      "_type": "code",
+      "code": "[{\"Element\":\"The rupture\",\"Detail\":\"BCBSVT publicly steered members away from UVMMC (late 2025)\"},{\"Element\":\"The price gap\",\"Detail\":\"MRI ~$6,520 (UVMMC) vs ~$1,799 (independent) — ~262% markup\"},{\"Element\":\"The affordability backdrop\",\"Detail\":\"VT premiums ~19.6% of income (highest in US); +108% since 2018\"},{\"Element\":\"The root\",\"Detail\":\"Provider market power + absence of functioning price competition\"}]",
+      "title": "The payer-provider war: the Vermont case"
+    },
+    {
+      "_key": "zsb-142",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-143",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "zsb-144",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-145",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether the BCBSVT-UVMMC conflict resolves through negotiation, regulation, or the kind of structural reform (global budgets under Act 167/AHEAD) that would change the underlying economics; whether such public payer-provider ruptures spread to other markets as affordability pressure mounts nationally; whether provider consolidation continues to strengthen the market power driving these fights, or antitrust enforcement pushes back; and whether states respond to these conflicts with the structural remedies (rate regulation, transparency, global budgets) that address market failure rather than just the symptoms. Vermont's war is a leading indicator of a tension building across the country."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-146",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-147",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "zsb-148",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-149",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's extraordinary public payer-provider war — an insurer telling members to avoid the dominant hospital — is a window into a zero-sum economic conflict usually hidden behind closed doors, and a symptom of a market that does not function like a normal one. The disclosures exposed the underlying problem with unusual clarity: a dominant hospital charging multiples of the competitive price (a $6,520 MRI versus $1,799) because market power lets it, with those inflated prices flowing into the highest premium burden in the nation. Such conflicts are intensifying because rising costs have collided with the ceiling of affordability and provider consolidation has sharpened the imbalance — but the fights themselves resolve nothing, treating the symptom while the disease (absent price competition) remains. The Vermont rupture points past the battle to the structural remedies — global budgets, rate regulation, antitrust, transparency — that address why the market fails, which is precisely the direction Vermont's own Act 167 reforms are heading. The war is the symptom; fixing the broken market is the cure. There is a grim clarity in Vermont's openness about the conflict that other markets lack: by fighting in public, the insurer and hospital have made visible what is usually negotiated in secret, turning Vermont into an involuntary case study in how American health care's affordability crisis actually plays out at the level of two institutions and the patients between them. Other states watching the spectacle would do well to read it not as a Vermont peculiarity but as a preview of the conflicts their own consolidating, unaffordable markets are incubating — and to pursue the structural fixes before their own version erupts into public view."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-150",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-151",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "zsb-153",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-154",
+          "_type": "span",
+          "marks": [
+            "zsb-152"
+          ],
+          "text": "VTDigger — Vermont's largest health insurer tells you to avoid the state's largest hospital"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "zsb-152",
+          "_type": "link",
+          "href": "https://vtdigger.org/2025/12/22/vermonts-largest-health-insurer-tells-you-to-avoid-the-states-largest-hospital-in-new-marketing-campaign/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-156",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-157",
+          "_type": "span",
+          "marks": [
+            "zsb-155"
+          ],
+          "text": "VTDigger — Vermont health insurance costs among highest in the nation, rising quickly"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "zsb-155",
+          "_type": "link",
+          "href": "https://vtdigger.org/2024/08/27/vermont-health-insurance-costs-are-among-the-highest-in-the-nation-and-rising-quickly/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-159",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-160",
+          "_type": "span",
+          "marks": [
+            "zsb-158"
+          ],
+          "text": "Vermont Business Magazine — GMCB, Oliver Wyman statements on Act 167 final report (108% premium growth)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "zsb-158",
+          "_type": "link",
+          "href": "https://vermontbiz.com/news/2024/october/29/gmcb-oliver-wyman-statements-regarding-act-167-final-report"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "zsb-162",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zsb-163",
+          "_type": "span",
+          "marks": [
+            "zsb-161"
+          ],
+          "text": "Newsweek — Map shows which states spend the most on health insurance (Vermont highest)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "zsb-161",
+          "_type": "link",
+          "href": "https://www.newsweek.com/map-shows-which-states-spend-most-least-health-insurance-2096651"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "In late 2025 Vermont's largest insurer (BCBSVT) publicly told members to avoid the state's largest hospital (UVMMC) — an extraordinary rupture exposing a zero-sum payer-provider war. Disclosures showed the dominant hospital charging ~262% more than independent sites (a $6,520 MRI vs $1,799), with prices flowing into the nation's highest premium burden (~19.6% of income). This analysis uses the Vermont case to examine payer-provider conflict, provider market power, and the broken market underneath.",
+  "title": "The Zero-Sum Battlefield: When Payers War with Providers"
+}

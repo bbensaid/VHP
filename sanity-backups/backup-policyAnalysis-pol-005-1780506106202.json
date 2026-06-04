@@ -1,0 +1,91 @@
+{
+  "_id": "policyAnalysis-pol-005",
+  "body": [
+    {
+      "_key": "k65",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k66",
+          "_type": "span",
+          "marks": [],
+          "text": "The IDR System Collapse"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k67",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k67-s",
+          "_type": "span",
+          "marks": [],
+          "text": "The No Surprises Act (NSA), effective January 2022, was designed to protect patients from unexpected out-of-network bills. Its independent dispute resolution (IDR) mechanism lets payers and providers arbitrate payment disputes. Volume has dwarfed expectations: against an initial CMS estimate of roughly 22,000 disputes a year, more than 1.46 million federal IDR disputes were initiated in 2024 (CRS), overwhelming the system and producing a large backlog that arbiters only began clearing in 2025."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k69",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k70",
+          "_type": "span",
+          "marks": [],
+          "text": "Backlog and Delays"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k71",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k72",
+          "_type": "span",
+          "marks": [],
+          "text": "The average dispute resolution time has grown from the statutory 30-day window to 14 months as of Q4 2025. Certified IDR entities, licensed to arbitrate disputes, have struggled to staff adequately. Several entities have withdrawn certification, further concentrating caseload."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k73",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k74",
+          "_type": "span",
+          "marks": [],
+          "text": "Strategic Behavior"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k75",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k76",
+          "_type": "span",
+          "marks": [],
+          "text": "Providers — particularly emergency medicine and anesthesiology groups — have used volume IDR filings strategically, anticipating that payers will settle below the qualifying payment amount rather than absorb arbitration costs. Payers have responded by extending network offers to previously non-participating providers to reduce IDR exposure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "The No Surprises Act's independent dispute resolution (IDR) process has been overwhelmed — 700,000 disputes filed versus CMS's projected 22,000. This analysis examines arbitration backlog, payer and provider strategies, and reform proposals.",
+  "title": "Surprise Billing Enforcement: Two Years Under the No Surprises Act"
+}

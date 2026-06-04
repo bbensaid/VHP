@@ -1,0 +1,79 @@
+{
+  "_id": "architecting-resilience-vhie-rural-health",
+  "body": [
+    {
+      "_key": "o53ryhds",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8906aobv",
+          "_type": "span",
+          "marks": [],
+          "text": "The digital transformation of Vermont's healthcare landscape is predicated on the successful integration of the Vermont Health Information Exchange (VHIE). For Critical Access Hospitals (CAHs), the ability to seamlessly exchange patient data is not merely a technical convenience but a financial imperative. Current legacy systems create significant Policy Friction, impeding the flow of vital clinical information."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "ca930a1i",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "q3qumab3",
+          "_type": "span",
+          "marks": [],
+          "text": "Technical Deflation and Administrative Efficiency"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "0578l8p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "uk4ld41s",
+          "_type": "span",
+          "marks": [],
+          "text": "By standardizing data ingress through the VHIE, we observe a measurable Technical Deflation in administrative overhead. When providers can access longitudinal patient records without manual intervention, the marginal cost of care delivery decreases."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "zvh90t6k",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fh3nl5md",
+          "_type": "span",
+          "marks": [],
+          "text": "Interoperability Fabric is the silent infrastructure of equity. Without it, rural providers are left navigating complex care pathways in the dark."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "f90gwm29",
+      "_type": "code",
+      "code": "[\n  {\n    \"County\": \"Addison\",\n    \"VHIE_Utilization\": \"88%\",\n    \"Admin_Cost_Reduction\": \"12%\",\n    \"Readmission_Rate\": \"9.2%\"\n  },\n  {\n    \"County\": \"Orleans\",\n    \"VHIE_Utilization\": \"65%\",\n    \"Admin_Cost_Reduction\": \"5%\",\n    \"Readmission_Rate\": \"13.5%\"\n  },\n  {\n    \"County\": \"Windham\",\n    \"VHIE_Utilization\": \"72%\",\n    \"Admin_Cost_Reduction\": \"8%\",\n    \"Readmission_Rate\": \"11.0%\"\n  }\n]",
+      "language": "json",
+      "title": "VHIE Impact on Rural Admin Costs (2024)"
+    },
+    {
+      "_key": "85hr1xkf",
+      "_type": "video",
+      "caption": "The Future of Connected Care in Vermont",
+      "url": "https://www.youtube.com/watch?v=example123"
+    },
+    {
+      "_key": "oy8skg3c",
+      "_type": "audio",
+      "summary": "CTO discussion on the roadmap for SDOH data integration within the VHIE framework.",
+      "title": "AHS Tech Briefing: Q3 2024",
+      "url": "https://assets.vermont.gov/audio/ahs-tech-q3.mp3"
+    }
+  ],
+  "summary": "This analysis explores how the Vermont Health Information Exchange (VHIE) serves as a critical infrastructure for reducing administrative burden in Critical Access Hospitals. We examine the correlation between data liquidity and reduced readmission rates in rural counties. The findings advocate for a unified interoperability fabric to support value-based care models.",
+  "title": "Architecting Resilience: The Role of VHIE in Rural Health Sustainability"
+}

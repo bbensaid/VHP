@@ -1,0 +1,212 @@
+{
+  "_id": "hospital-at-home-rural-implementation-guide-2026",
+  "body": [
+    {
+      "_key": "blk001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ell3bvnn",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS’s Acute Hospital Care at Home (AHCaH) waiver, first established during the COVID-19 public health emergency and extended through December 31, 2026 under the CAA, now covers 137 rural hospitals across 34 states. As the extension deadline approaches, rural hospital executives are making critical capital allocation decisions: invest in the operational infrastructure to expand Hospital-at-Home programs, or wait for legislative permanence before committing."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk002",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tn4gmsrj",
+          "_type": "span",
+          "marks": [],
+          "text": "The Operational Model in Rural Markets"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk003",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ky2k2nbg",
+          "_type": "span",
+          "marks": [],
+          "text": "The rural Hospital-at-Home operational model differs meaningfully from urban implementations. The two-hour visit requirement, which CMS mandates for AHCaH patients, is achievable in urban markets with dense nursing staff. In rural markets with a 30–60-minute drive between patients, the same requirement demands a more geographically concentrated patient panel and a different staffing model. The rural systems achieving operational viability are limiting their HaH service area to a 20-mile radius from the hospital and deploying community paramedics—already on road for EMS—as the primary daily visit staff."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk004",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f22llijn",
+          "_type": "span",
+          "marks": [],
+          "text": "The community paramedic model is operationally elegant for rural HaH: EMS agencies are already deployed across the service area, have established patient relationships, and can provide basic clinical monitoring and medication administration within their expanded scope. The most successful rural HaH programs, including those in Rhode Island and Florida’s RHT program designs, have formalized paramedicine as the daily visit mechanism with hospital physicians providing oversight via telemedicine."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk005",
+      "_type": "code",
+      "code": "[\n  {\n    \"Cost/Revenue Category\": \"Avg. Medicare reimbursement per episode\",\n    \"Amount\": \"$6,200–$8,400\",\n    \"Notes\": \"Varies by DRG and LOS\"\n  },\n  {\n    \"Cost/Revenue Category\": \"Direct clinical labor (paramedicine + RN)\",\n    \"Amount\": \"$1,800–$2,600\",\n    \"Notes\": \"Per episode, 4-day avg LOS\"\n  },\n  {\n    \"Cost/Revenue Category\": \"Remote monitoring equipment\",\n    \"Amount\": \"$180–$240\",\n    \"Notes\": \"Per episode, amortized\"\n  },\n  {\n    \"Cost/Revenue Category\": \"Overhead allocation\",\n    \"Amount\": \"$600–$900\",\n    \"Notes\": \"Program admin, coordination\"\n  },\n  {\n    \"Cost/Revenue Category\": \"Net operating margin per episode\",\n    \"Amount\": \"$1,800–$4,860\",\n    \"Notes\": \"Pre-capital amortization\"\n  }\n]",
+      "language": "json",
+      "title": "Rural Hospital-at-Home: Per-Episode Economics"
+    },
+    {
+      "_key": "blk006",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m90ojqyd",
+          "_type": "span",
+          "marks": [],
+          "text": "Patient Eligibility: The Rural Selection Criteria"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk007",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ycgayj2o",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS eligibility criteria for AHCaH require patients to have a condition that would otherwise warrant inpatient admission and to have a safe home environment (running water, electricity, caregiver availability). In rural markets, the safety assessment is the operationally complex step. Rural HaH programs report that 28–35% of otherwise eligible patients fail the home safety screen—primarily due to caregiver absence and substandard housing—compared to 12–18% in urban programs. This significantly affects program census projections."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "lerrg3tj",
+          "_type": "span",
+          "marks": [],
+          "text": "The rural Hospital-at-Home program that works is not the one with the best technology. It is the one that solved the home safety problem. You cannot deliver hospital care in a home that is not safe."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "blk009",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5mtp4mge",
+          "_type": "span",
+          "marks": [],
+          "text": "PLANNING NOTE: Rural HaH programs should budget a 30% safety screen failure rate when modeling program census. Build partnerships with community action agencies and housing organizations as parallel infrastructure—they are the pathway to expanding eligibility for borderline home environments."
+        }
+      ],
+      "style": "callout"
+    },
+    {
+      "_key": "blk010",
+      "_type": "image",
+      "alt": "Operational model diagram for rural Hospital-at-Home program showing community paramedicine visit structure, telemedicine physician oversight, and remote monitoring data integration within a 20-mile service radius.",
+      "caption": "Operational diagram of a rural Hospital-at-Home program showing the hub-and-spoke model with the rural hospital as coordination center, 20-mile service radius, community paramedic visit routes, telemedicine physician oversight connections, and remote monitoring data flows."
+    },
+    {
+      "_key": "blk011",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ils8vtkr",
+          "_type": "span",
+          "marks": [],
+          "text": "Go/No-Go Criteria for Rural HaH Program Launch"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "blk012",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "oyajolc3",
+          "_type": "span",
+          "marks": [],
+          "text": "Minimum viable census: 3–5 concurrent patients to justify dedicated paramedicine coordination overhead"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1q8i7tsc",
+          "_type": "span",
+          "marks": [],
+          "text": "EMS agency partnership with documented community paramedic scope authorization in your state"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk014",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "qpqz7t81",
+          "_type": "span",
+          "marks": [],
+          "text": "Telemedicine platform with asynchronous monitoring capability (not just synchronous video)"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk015",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "49z4lw5q",
+          "_type": "span",
+          "marks": [],
+          "text": "Housing/home safety assessment partnership with a community organization before program launch"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk016",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tit6fgv2",
+          "_type": "span",
+          "marks": [],
+          "text": "Legal analysis of AHCaH waiver extension legislation status before major capital commitment"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    }
+  ],
+  "summary": "CMS’s Acute Hospital Care at Home waiver has been extended through 2026, with 137 rural hospitals now authorized to deliver acute-level care in patient homes. This implementation analysis examines the operational model, patient eligibility criteria, payer mix considerations, and the per-episode economics that determine whether Hospital-at-Home is financially viable for a given rural market.",
+  "title": "Hospital-at-Home in Rural Markets: Implementation Economics, Patient Eligibility, and the Operational Model That Is Working"
+}

@@ -1,0 +1,119 @@
+{
+  "_id": "policyAnalysis-tech-001",
+  "body": [
+    {
+      "_key": "k145",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k146",
+          "_type": "span",
+          "marks": [],
+          "text": "FDA's Evolving AI Regulatory Framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k147",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k147-s",
+          "_type": "span",
+          "marks": [],
+          "text": "The FDA had authorized roughly 1,000 AI/ML-enabled medical devices by the end of 2024 (FDA's authorized-device list), with the pace of clearances rising sharply in recent years. The 2025 final guidance on Predetermined Change Control Plans (PCCPs) establishes a framework allowing AI/ML software to learn and adapt post-market without a new 510(k) submission for each modification."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k149",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k150",
+          "_type": "span",
+          "marks": [],
+          "text": "High-Risk Algorithm Classification"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k151",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k152",
+          "_type": "span",
+          "marks": [],
+          "text": "The guidance distinguishes between decision-support software that clinicians are expected to override (lower risk, often exempt from device regulation) and autonomous or locked algorithms driving clinical decisions without independent clinician verification. The latter category faces the most stringent oversight requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k153",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k154",
+          "_type": "span",
+          "marks": [],
+          "text": "Predicate Device Challenge"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k155",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k155-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Novel AI applications in pathology, radiology, and genomics frequently lack adequate predicate devices for 510(k) substantial equivalence, pushing more of them onto the De Novo pathway. De Novo authorization typically takes substantially longer than a 510(k) clearance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k157",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k158",
+          "_type": "span",
+          "marks": [],
+          "text": "Post-Market Surveillance"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k159",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k160",
+          "_type": "span",
+          "marks": [],
+          "text": "PCCPs require manufacturers to establish performance monitoring protocols across diverse patient populations, with mandatory reporting when algorithm performance degrades below pre-specified thresholds. Early implementations have revealed significant performance drops in non-white patient populations for skin condition detection algorithms."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "FDA's 2025 guidance on predetermined change control plans for AI/ML software as a medical device creates a new regulatory pathway. This analysis examines compliance requirements, the predicate device problem for novel AI, and post-market surveillance obligations.",
+  "title": "AI Clinical Decision Support: FDA Regulatory Framework for High-Risk Algorithms"
+}

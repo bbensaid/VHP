@@ -1,0 +1,91 @@
+{
+  "_id": "policyAnalysis-tech-002",
+  "body": [
+    {
+      "_key": "k161",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k162",
+          "_type": "span",
+          "marks": [],
+          "text": "TEFCA Network Status"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k163",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k163-s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Office of the National Coordinator for Health IT (ONC) designated a first cohort of Qualified Health Information Networks (QHINs) under TEFCA, and the major EHR vendors — Epic, Oracle Health, and MEDITECH — have each connected to at least one QHIN, giving the framework broad nominal reach across U.S. hospital beds."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k165",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k166",
+          "_type": "span",
+          "marks": [],
+          "text": "Exchange Volume Reality"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k167",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k167-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite broad participation, actual clinical data exchange under TEFCA remains modest relative to the volume of care delivered, and query response rates from some participating organizations are still low — a reminder that network designation is not the same as routine, usable interoperability at the point of care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k169",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k170",
+          "_type": "span",
+          "marks": [],
+          "text": "Workflow Integration Barriers"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k171",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k171-s",
+          "_type": "span",
+          "marks": [],
+          "text": "The core challenge is not data exchange but workflow integration. Clinicians routinely spend meaningful time reconciling information from external sources — a documentation burden that undermines the efficiency rationale for interoperability and contributes to burnout. EHR vendors also face commercial incentives that do not always align with frictionless external data exchange."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "The Trusted Exchange Framework and Common Agreement (TEFCA) reached 18 Qualified Health Information Networks by mid-2025. This analysis assesses actual data exchange volume, EHR vendor participation rates, and barriers to clinical workflow integration.",
+  "title": "EHR Interoperability: TEFCA Network Participation and Real-World Data Exchange"
+}
