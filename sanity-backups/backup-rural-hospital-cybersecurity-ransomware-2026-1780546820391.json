@@ -1,0 +1,212 @@
+{
+  "_id": "rural-hospital-cybersecurity-ransomware-2026",
+  "body": [
+    {
+      "_key": "blk001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "rz2u820w",
+          "_type": "span",
+          "marks": [],
+          "text": "The HHS Office for Civil Rights reported 168 ransomware attacks on U.S. hospitals in 2025, a record high and an 87% increase over 2024. Rural hospitals accounted for 61% of successful breaches despite representing only 31% of the total hospital count. The disparity reflects structural vulnerabilities—understaffed IT departments, legacy EHR systems with known unpatched vulnerabilities, and flat network architectures—that have made rural facilities the preferred target for ransomware threat actors."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk002",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "p3au7msk",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Rural Hospitals Are the Preferred Target"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk003",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "76fzmpvb",
+          "_type": "span",
+          "marks": [],
+          "text": "Three factors make rural hospitals disproportionately attractive targets. First, limited IT staffing: the average rural hospital has 1.8 FTE IT staff for a facility that may have 200–400 network endpoints. Urban health systems average 1 IT FTE per 15–20 endpoints. Second, legacy infrastructure: 68% of rural hospitals are running at least one clinical system on an operating system that is out of mainstream support—typically Windows Server 2012 or earlier—creating known and widely exploited attack surfaces. Third, willingness to pay: rural hospitals have demonstrated higher ransom payment rates because they cannot sustain EHR downtime without patient safety consequences and often lack the data backup architecture to restore from backups."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk004",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tf0rgph0",
+          "_type": "span",
+          "marks": [],
+          "text": "Ransomware groups explicitly target rural hospitals because they know the facility will pay. The combination of critical systems, minimal IT staff, and limited backup capability creates a near-perfect coercion environment."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "blk005",
+      "_type": "code",
+      "code": "[\n  {\n    \"Attack Vector\": \"Phishing (email credential theft)\",\n    \"% of Successful Breaches\": \"54%\",\n    \"Avg. Downtime\": \"11 days\",\n    \"Avg. Total Cost\": \"$1.1M\"\n  },\n  {\n    \"Attack Vector\": \"Unpatched VPN / Remote Access Vulnerability\",\n    \"% of Successful Breaches\": \"28%\",\n    \"Avg. Downtime\": \"18 days\",\n    \"Avg. Total Cost\": \"$1.8M\"\n  },\n  {\n    \"Attack Vector\": \"Compromised Third-Party Vendor Access\",\n    \"% of Successful Breaches\": \"12%\",\n    \"Avg. Downtime\": \"22 days\",\n    \"Avg. Total Cost\": \"$2.4M\"\n  },\n  {\n    \"Attack Vector\": \"Insider Threat / Social Engineering\",\n    \"% of Successful Breaches\": \"6%\",\n    \"Avg. Downtime\": \"8 days\",\n    \"Avg. Total Cost\": \"$680K\"\n  }\n]",
+      "language": "json",
+      "title": "2025 Rural Hospital Ransomware: Attack Vector and Impact Data"
+    },
+    {
+      "_key": "blk006",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zriomidy",
+          "_type": "span",
+          "marks": [],
+          "text": "The Five Controls CMS Will Codify in 2026"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk007",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "qtgicofx",
+          "_type": "span",
+          "marks": [],
+          "text": "Based on the HHS Healthcare Cybersecurity Performance Goals published in December 2024 and CMS rulemaking signals, five controls are widely expected to be codified as Conditions of Participation in a 2026 Interim Final Rule: (1) mandatory multi-factor authentication on all remote access systems, (2) network segmentation isolating clinical systems from administrative networks, (3) immutable offline backup tested quarterly, (4) annual mandatory cybersecurity training for all staff with access to clinical systems, and (5) a documented incident response plan with a defined RTO/RPO for EHR restoration."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "xgmcyphg",
+          "_type": "span",
+          "marks": [],
+          "text": "HHS has paired the anticipated CoP requirements with a $50M rural cybersecurity grant program through HRSA, specifically designed to fund the infrastructure upgrades required for compliance. Grant applications are expected to open in Q2 2026 with priority scoring for CAHs and rural PPS hospitals with fewer than 100 beds."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk009",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "48tcu2dx",
+          "_type": "span",
+          "marks": [],
+          "text": "FUNDING AVAILABLE: HRSA Rural Hospital Cybersecurity Grant Program (expected Q2 2026 opening): $50M available, priority scoring for CAHs and rural PPS <100 beds. Prepare pre-application materials now: current incident response plan, IT asset inventory, and backup architecture documentation."
+        }
+      ],
+      "style": "callout"
+    },
+    {
+      "_key": "blk010",
+      "_type": "image",
+      "alt": "Network security architecture comparison showing high-vulnerability flat network design versus recommended segmented architecture for rural hospital cybersecurity compliance with CMS 2026 CoP requirements.",
+      "caption": "Network architecture diagram contrasting a flat rural hospital network (high ransomware vulnerability) with a segmented network architecture showing isolated clinical, administrative, and IoT zones with MFA checkpoints, offline backup repository, and incident response isolation switches."
+    },
+    {
+      "_key": "blk011",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m8mwsrdu",
+          "_type": "span",
+          "marks": [],
+          "text": "2026 Cybersecurity Implementation Checklist for CAH CIOs"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "blk012",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "82va46op",
+          "_type": "span",
+          "marks": [],
+          "text": "Implement MFA on all VPN and remote desktop access immediately—this is the #1 breach vector"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "jkk4pirz",
+          "_type": "span",
+          "marks": [],
+          "text": "Complete network segmentation design separating clinical, admin, and IoT networks"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk014",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tiyxngth",
+          "_type": "span",
+          "marks": [],
+          "text": "Test immutable offline backup restoration quarterly—a backup you have never tested is not a backup"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk015",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7kv0c3kd",
+          "_type": "span",
+          "marks": [],
+          "text": "Prepare HRSA cybersecurity grant pre-application materials by March 2026"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk016",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "2usr1uoi",
+          "_type": "span",
+          "marks": [],
+          "text": "Schedule mandatory phishing simulation training before Q2 2026—54% of breaches start with a click"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    }
+  ],
+  "summary": "Ransomware attacks on rural hospitals increased 87% in 2025, with average downtime costs of $1.3M per incident—a figure that exceeds the operating reserves of 34% of affected Critical Access Hospitals. This analysis presents the attack vector data, explains why rural hospitals are disproportionately targeted, and identifies the five security controls that CMS and HHS are expected to codify as Conditions of Participation by mid-2026.",
+  "title": "Rural Hospitals Under Siege: The 2025 Ransomware Epidemic and the Five Security Controls Every CAH Must Implement in 2026"
+}

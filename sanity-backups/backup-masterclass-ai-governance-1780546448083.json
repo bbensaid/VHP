@@ -1,0 +1,409 @@
+{
+  "_id": "masterclass-ai-governance",
+  "body": [
+    {
+      "_key": "mag-109",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-110",
+          "_type": "span",
+          "marks": [],
+          "text": "Most health systems are deploying clinical AI faster than they are governing it. The gap is not for lack of principles — there are no shortage of frameworks — but for lack of operational structures: the committees, policies, and protocols that turn 'be responsible with AI' into something a hospital actually does. This is a practical guide to standing up clinical AI governance: who must be at the table, the procurement discipline that catches problems before deployment, the monitoring that catches them after, and the emergency protocol for when an algorithm goes wrong."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-111",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-112",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Governance Fails"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mag-113",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-114",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical AI governance fails most often for a predictable reason: it is treated as an IT problem and run by IT. Technology staff can evaluate whether a tool integrates and performs technically, but they cannot judge whether its outputs are clinically appropriate, whether its failure modes are dangerous in practice, or whether it discriminates against a subgroup — and they cannot, by themselves, change clinician behavior. Governance that lives in the IT department produces tools that are technically sound and clinically ungoverned. The first principle of effective AI governance is therefore that it must be a clinical and institutional function, not a technical one — owned by people with the authority and the clinical judgment to decide what gets deployed and how it is used."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-115",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-116",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical AI governance fails when it's run by IT. Technologists can judge whether a tool works technically; they cannot judge whether its outputs are clinically safe, whether it discriminates, or change how clinicians use it. Effective AI governance is a clinical and institutional function, not a technical one."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "mag-117",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-118",
+          "_type": "span",
+          "marks": [],
+          "text": "The Stakeholder Table"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mag-119",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-120",
+          "_type": "span",
+          "marks": [],
+          "text": "Effective governance starts with the right people. A Clinical AI Safety Committee should not proceed without, at minimum: a Chief Medical Information Officer or equivalent clinical-informatics leader to bridge medicine and technology; practicing clinical champions from the specialties where AI is deployed, because the people who will use the tool must judge it; legal and compliance, given the liability and regulatory stakes (including the Section 1557 anti-discrimination duty); a health-equity voice to scrutinize subgroup performance; data-science capability to interrogate how a model actually works; and patient representation where appropriate. The composition is the message: governance that includes only technologists and administrators will miss exactly the clinical, equity, and legal risks that matter most."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-121",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-122",
+          "_type": "span",
+          "marks": [],
+          "text": "The committee's authority matters as much as its composition. It needs a real mandate — the power to approve, reject, or halt AI deployments — not an advisory role that operational pressure can override. A governance body that can be bypassed when a vendor's tool is attractive or a deadline looms is not governance; it is theater. The committee must own the decision of what AI the institution uses and under what conditions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-123",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-124",
+          "_type": "span",
+          "marks": [],
+          "text": "Procurement Discipline: The Model Card"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mag-125",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-126",
+          "_type": "span",
+          "marks": [],
+          "text": "The highest-leverage governance happens before deployment, at procurement, because it is far easier to refuse a flawed tool than to unwind one in clinical use. The key instrument is a 'model card' requirement: before buying an AI tool, the institution should require the vendor to disclose, in standardized form, what the model does, what data it was trained on, how it performs across demographic and clinical subgroups, its known limitations and failure modes, and its validation evidence. A vendor unwilling or unable to provide this is itself a red flag. The model card directly addresses the vendor-accountability gap that otherwise leaves the institution legally responsible for a tool it cannot see inside — it forces the disclosure that makes informed, defensible deployment possible."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-127",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-128",
+          "_type": "span",
+          "marks": [],
+          "text": "Procurement discipline also means demanding subgroup performance data specifically, not just overall accuracy, because a tool can be accurate on average and dangerously wrong for a subpopulation — and under Section 1557 the institution has an affirmative duty to identify and mitigate exactly that. Building these requirements into purchasing contracts pushes accountability toward the vendor who controls the model, and gives the institution the evidence it needs to meet its own legal and clinical obligations. Procurement is where leverage over vendors is greatest, because the alternative — the institution's business — is what the vendor wants."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-129",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-130",
+          "_type": "span",
+          "marks": [],
+          "text": "Post-Deployment Monitoring"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mag-131",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-132",
+          "_type": "span",
+          "marks": [],
+          "text": "Governance does not end at deployment, because AI models drift: their performance changes as patient populations, clinical practice, and data shift over time, so a tool validated at launch can degrade silently. Effective governance therefore requires ongoing monitoring — tracking the tool's real-world performance, watching for the specific failure modes identified in procurement, and auditing outputs against defined accuracy thresholds, all stratified by subgroup to catch emerging bias. This is the difference between treating AI as a static product (validate once, trust forever) and as a living system (validate continuously, because it changes). Many institutions do the upfront validation and neglect the ongoing monitoring, which is how a tool that was safe at launch becomes unsafe in use without anyone noticing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-133",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-134",
+          "_type": "span",
+          "marks": [],
+          "text": "The Red Button Protocol"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mag-135",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-136",
+          "_type": "span",
+          "marks": [],
+          "text": "Finally, governance requires an emergency stop — a 'red button' protocol for rapidly suspending an algorithm that is causing or threatening harm. When monitoring detects that a tool is malfunctioning, drifting dangerously, or producing harmful outputs, the institution needs a pre-defined, fast pathway to pull it from clinical use, communicate the suspension to affected clinicians, and revert to non-AI workflows — without the delay of assembling a committee to debate it in the moment. The red button is the operational embodiment of the principle that AI is an assistant under supervision: the institution retains the ability to switch it off. A governance program without a tested suspension protocol is like a building without a fire alarm — fine until the moment it is not."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-137",
+      "_type": "code",
+      "code": "[{\"Component\":\"Stakeholder table\",\"Detail\":\"CMIO + clinical champions + legal + equity + data science — with real authority\"},{\"Component\":\"Procurement (model card)\",\"Detail\":\"Require vendor disclosure of training data, subgroup performance, limitations\"},{\"Component\":\"Post-deployment monitoring\",\"Detail\":\"Continuous, subgroup-stratified performance auditing (models drift)\"},{\"Component\":\"Red button protocol\",\"Detail\":\"Pre-defined rapid suspension pathway for a malfunctioning algorithm\"}]",
+      "title": "Clinical AI governance: the operational structure"
+    },
+    {
+      "_key": "mag-138",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-139",
+          "_type": "span",
+          "marks": [],
+          "text": "Governance for the Resource-Constrained"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mag-140",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-141",
+          "_type": "span",
+          "marks": [],
+          "text": "The operational structures described here are achievable for a large academic medical center with informatics staff, a CMIO, and a compliance department. They are far harder for a small or rural hospital that may have no dedicated IT security staff, let alone a data-science team to interrogate a model's subgroup performance — yet these are exactly the institutions deploying vendor AI tools, often with the least capacity to govern them. This is the governance equity problem: sophisticated oversight concentrates where resources are, leaving under-resourced institutions to deploy ungoverned AI by default, importing risk they cannot see."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-142",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-143",
+          "_type": "span",
+          "marks": [],
+          "text": "The realistic answer for resource-constrained institutions is shared and pooled governance. A small hospital cannot stand up its own Clinical AI Safety Committee with deep data-science capability, but a hospital association, a regional collaborative, or a state body could provide shared governance services — vetting tools, demanding model cards, and monitoring performance on behalf of many small members, the same shared-services logic that applies to HIE infrastructure. Just as no rural hospital should build its own data-exchange stack, none should be expected to build sophisticated AI governance alone. Pooling the capability is how the institutions with the least resources avoid being the ones deploying the least-governed AI — and it is the missing piece in most current discussions of clinical-AI governance, which implicitly assume a large-institution context that most of American health care does not match."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-144",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-145",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mag-146",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-147",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether standardized model-card and disclosure norms emerge so institutions are not each negotiating transparency from scratch; whether Section 1557 enforcement pushes health systems to build the audit programs the rule requires; whether governance maturity keeps pace with the move of generative AI into higher-stakes clinical tasks; and whether smaller and rural institutions — which lack the data-science capacity to run sophisticated governance — get shared resources or pooled governance models so they are not left deploying ungoverned AI. The principles of AI governance are settled; the operational capacity to execute them, especially outside large academic systems, is the gap to close."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-148",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-149",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mag-150",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-151",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical AI governance is an operational discipline, not a statement of principles, and it fails most often because institutions treat it as an IT function rather than a clinical and institutional one. Doing it right means a Clinical AI Safety Committee with the right people (clinical, legal, equity, data science) and real authority; procurement discipline anchored in model-card disclosure that forces vendor transparency and addresses the accountability gap; continuous, subgroup-stratified post-deployment monitoring because models drift; and a tested red-button protocol to suspend a tool that turns dangerous. These structures turn the abstract duty to use AI responsibly into something a hospital actually does. As clinical AI proliferates — much of it outside FDA regulation and into ever-higher-stakes tasks — the institutions that build this operational governance ahead of need will capture AI's benefits while containing its risks; those that deploy first and govern later are accumulating a liability that a single bad output can crystallize."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-152",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-153",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mag-155",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-156",
+          "_type": "span",
+          "marks": [
+            "mag-154"
+          ],
+          "text": "Nature Scientific Reports — A validated framework for responsible AI in healthcare autonomous systems"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "mag-154",
+          "_type": "link",
+          "href": "https://www.nature.com/articles/s41598-025-25266-z"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-158",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-159",
+          "_type": "span",
+          "marks": [
+            "mag-157"
+          ],
+          "text": "National Health Law Program — 1557 Final Rule and the duty to identify/mitigate algorithmic discrimination"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "mag-157",
+          "_type": "link",
+          "href": "https://healthlaw.org/1557-final-rule-protects-against-bias-in-health-care-algorithms/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-161",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-162",
+          "_type": "span",
+          "marks": [
+            "mag-160"
+          ],
+          "text": "The Hastings Center for Bioethics — AI in Healthcare (governance)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "mag-160",
+          "_type": "link",
+          "href": "https://www.thehastingscenter.org/briefingbook/ai-in-healthcare/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "mag-164",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mag-165",
+          "_type": "span",
+          "marks": [
+            "mag-163"
+          ],
+          "text": "PMC — Mitigating Bias in Clinical Algorithms: implications for policy and governance"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "mag-163",
+          "_type": "link",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10668606/"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "Most health systems deploy clinical AI faster than they govern it — and governance fails most often because it's run by IT rather than as a clinical and institutional function. This practical guide covers the operational structures that turn 'responsible AI' into action: a Clinical AI Safety Committee with real authority, model-card procurement discipline, continuous subgroup-stratified monitoring (because models drift), and a red-button suspension protocol.",
+  "title": "Masterclass: Implementing AI Governance in Clinical Settings"
+}
