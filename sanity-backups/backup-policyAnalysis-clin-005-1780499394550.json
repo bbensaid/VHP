@@ -1,0 +1,119 @@
+{
+  "_id": "policyAnalysis-clin-005",
+  "body": [
+    {
+      "_key": "k265",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k266",
+          "_type": "span",
+          "marks": [],
+          "text": "National Maternal Mortality Status"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k267",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k267-s",
+          "_type": "span",
+          "marks": [],
+          "text": "The United States recorded a maternal mortality rate of 17.9 per 100,000 live births in 2024 (CDC NCHS final data) — the highest among comparably resourced nations. That is roughly double Canada's rate (about 8 per 100,000) and several times the rates of Australia and the United Kingdom (roughly 3–6 per 100,000). After years of deterioration that peaked during the pandemic, the rate has eased modestly but remains far above its high-income peers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k269",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k270",
+          "_type": "span",
+          "marks": [],
+          "text": "State-Level Variation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k271",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k272",
+          "_type": "span",
+          "marks": [],
+          "text": "Maternal mortality variation across states is dramatic and not fully explained by case mix or demographics. California (7.3 per 100,000) leads the nation following 15 years of implementing the California Maternal Quality Care Collaborative's evidence-based toolkits. Mississippi (43.1 per 100,000), Louisiana (38.4), and Oklahoma (35.7) have the worst outcomes, driven by limited access to obstetric care and high rates of chronic conditions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k273",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k274",
+          "_type": "span",
+          "marks": [],
+          "text": "Racial Disparities"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k275",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k276",
+          "_type": "span",
+          "marks": [],
+          "text": "Black women die from pregnancy-related causes at 3.4 times the rate of white women — a disparity that persists after controlling for income, education, and clinical risk factors. Research increasingly implicates structural racism in healthcare settings, including differential pain assessment and treatment, discharge against patient concerns, and less frequent access to high-volume obstetric centers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k277",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k278",
+          "_type": "span",
+          "marks": [],
+          "text": "Evidence-Based Interventions"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k279",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k280",
+          "_type": "span",
+          "marks": [],
+          "text": "The Alliance for Innovation on Maternal Health (AIM) bundles — standardized protocols for obstetric emergencies including hemorrhage, hypertension, and venous thromboembolism — have demonstrated 22-38% reduction in severe maternal morbidity in implementing hospitals. As of 2025, 41 states have adopted AIM bundles at the hospital level, though implementation fidelity varies widely."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "The U.S. maternal mortality rate of 23.8 per 100,000 live births remains the highest among high-income nations. This analysis examines state-level variation from 7.3 to 43.1 per 100,000, evidence-based bundles, and the racial equity dimension of maternal outcomes.",
+  "title": "Maternal Mortality Crisis: Evidence-Based Interventions and State-Level Performance"
+}

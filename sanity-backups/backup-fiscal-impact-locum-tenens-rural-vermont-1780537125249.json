@@ -1,0 +1,93 @@
+{
+  "_id": "fiscal-impact-locum-tenens-rural-vermont",
+  "body": [
+    {
+      "_key": "f0d8e2ol",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "25ppnbyo",
+          "_type": "span",
+          "marks": [],
+          "text": "The healthcare landscape in rural Vermont is currently grappling with a severe labor imbalance. Critical Access Hospitals (CAHs) have seen a dramatic shift in their operational cost structures as the local workforce diminishes and the dependency on locum tenens staffing reaches unprecedented levels."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "dlnjy1oz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "514h0i25",
+          "_type": "span",
+          "marks": [],
+          "text": "Operational Volatility and Cost Escalation"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "45cdz3a4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "45cdz3a4-s",
+          "_type": "span",
+          "marks": [],
+          "text": "In parts of the Northeast Kingdom, a large share of clinical shifts are now covered by temporary locum staff. This dependency disrupts continuity of care and introduces significant price volatility into hospital budgets: the wage gap between full-time employees and contracted providers has widened to a point that threatens the long-term viability of small rural medical centers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b7nl6kcd",
+      "_type": "code",
+      "code": "[\n  {\n    \"Metric\": \"Locum Spending Growth (FY2024)\",\n    \"Result\": \"+45%\"\n  },\n  {\n    \"Metric\": \"Locum Anesthesiologist Rate\",\n    \"$450/hr\": \"Market Peak\"\n  },\n  {\n    \"Metric\": \"Employed Anesthesiologist Rate\",\n    \"$210/hr\": \"Standard Baseline\"\n  },\n  {\n    \"Metric\": \"Northeast Kingdom Shift Coverage\",\n    \"Result\": \"22% Temporary\"\n  }\n]",
+      "language": "json",
+      "title": "FY2024 Staffing Cost Comparison"
+    },
+    {
+      "_key": "ngrhf4ex",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zah6phsv",
+          "_type": "span",
+          "marks": [],
+          "text": "The transition from a stable salaried workforce to a gig-economy model for specialized clinicians is the single greatest threat to hospital solvency in northern New England today."
+        }
+      ],
+      "style": "blockquote"
+    },
+    {
+      "_key": "u7zlgafd",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "37hqgqe6",
+          "_type": "span",
+          "marks": [],
+          "text": "Strategic Outlook"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "x5pdb13n",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ws015sqs",
+          "_type": "span",
+          "marks": [],
+          "text": "To mitigate these risks, policy interventions must focus on regional retention incentives and the potential for state-wide staffing pools to counteract the premium rates charged by private agencies."
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "This analysis examines the escalating reliance on temporary staffing within Vermont's Critical Access Hospitals, highlighting a 45% spending surge in FY2024. The resulting fiscal strain poses significant solvency risks for rural healthcare networks.",
+  "title": "The Fiscal Impact of Locum Tenens Reliance in Rural Vermont"
+}

@@ -1,0 +1,91 @@
+{
+  "_id": "policyAnalysis-tech-004",
+  "body": [
+    {
+      "_key": "k185",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k186",
+          "_type": "span",
+          "marks": [],
+          "text": "RPM Utilization Growth"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k187",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k187-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Remote patient monitoring billing under CPT codes 99453, 99454, 99457, and 99458 has grown rapidly since 2020, when CMS clarified telehealth-era reimbursement policies and made RPM one of the more financially viable Medicare care-management programs. Adoption is concentrated in chronic conditions including hypertension, diabetes, and heart failure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k189",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k190",
+          "_type": "span",
+          "marks": [],
+          "text": "Adoption Concentration"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k191",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k192",
+          "_type": "span",
+          "marks": [],
+          "text": "RPM adoption is heavily concentrated among large integrated delivery networks (IDNs) and multi-specialty groups with upfront device procurement capacity. The per-patient device cost of $80-$250 for cellular-enabled monitoring equipment creates a significant capital barrier for independent practices and rural health clinics."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k193",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k194",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical Evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k195",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k196",
+          "_type": "span",
+          "marks": [],
+          "text": "Meta-analysis of 34 RPM studies in hypertension management shows average systolic blood pressure reduction of 6.8 mmHg versus usual care, with 23% reduction in emergency department visits and 18% reduction in hospitalizations. The clinical evidence base is strongest for hypertension and weakest for behavioral health monitoring, where device-based metrics are less predictive."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "RPM CPT code utilization grew 340% from 2021-2025, but adoption is concentrated among large integrated systems. This analysis examines reimbursement adequacy, device cost burden, and Medicaid coverage variation across states.",
+  "title": "Remote Patient Monitoring Reimbursement: CPT Code Evolution and Adoption Barriers"
+}

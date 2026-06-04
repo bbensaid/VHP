@@ -1,0 +1,105 @@
+{
+  "_id": "policyAnalysis-equ-001",
+  "body": [
+    {
+      "_key": "k281",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k282",
+          "_type": "span",
+          "marks": [],
+          "text": "SDOH Screening Policy Context"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k283",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k284",
+          "_type": "span",
+          "marks": [],
+          "text": "The Accountable Health Communities Health-Related Social Needs (AHC-HRSN) screening tool is now required for Medicare and Medicaid beneficiaries in 47 CMS Innovation Center models. Commercial payers including UnitedHealth's Optum and Humana have incorporated SDOH screening into chronic disease management programs. Approximately 34% of U.S. health systems report implementing systematic SDOH screening in clinical workflows."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k285",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k286",
+          "_type": "span",
+          "marks": [],
+          "text": "Screening Performance"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k287",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k288",
+          "_type": "span",
+          "marks": [],
+          "text": "Universal SDOH screening completion rates average 61% in health systems with established workflows, with significant variation by care setting: primary care (72%), emergency department (48%), and inpatient (81%). Social need prevalence rates in screened populations: food insecurity (28%), housing instability (19%), transportation barriers (23%), and utility assistance needs (16%)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k289",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k290",
+          "_type": "span",
+          "marks": [],
+          "text": "Referral-to-Resolution Gap"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k291",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k292",
+          "_type": "span",
+          "marks": [],
+          "text": "The most significant implementation challenge is the referral-to-resolution gap. Among patients screening positive for social needs, 74% receive a referral to a community resource, but only 31% successfully access the resource within 90 days. Barriers include community resource capacity constraints, navigation complexity, and patient engagement challenges."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k293",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k294",
+          "_type": "span",
+          "marks": [],
+          "text": "Economic Case"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    }
+  ],
+  "summary": "SDOH screening using tools like PRAPARE and AHC-HRSN is now required by CMS for certain value-based contracts. This analysis examines screening completion rates, referral-to-resolution pathways, and evidence for ROI on community resource investments.",
+  "title": "Social Determinants Screening in Clinical Settings: Evidence for Population Health ROI"
+}

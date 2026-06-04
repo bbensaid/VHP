@@ -1,0 +1,199 @@
+{
+  "_id": "rural-health-venture-capital-investment-surge-2026",
+  "body": [
+    {
+      "_key": "blk001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tchp1v0u",
+          "_type": "span",
+          "marks": [],
+          "text": "Rural health’s investment narrative shifted fundamentally in 2024–2025. For most of the past decade, health technology venture capital treated rural markets as a distribution problem—a secondary consideration after urban market penetration. The combination of federal RHT program funding, AHEAD model financial incentives, and demonstrably large total addressable markets in rural chronic disease has inverted that assumption."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk002",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7yk91y3d",
+          "_type": "span",
+          "marks": [],
+          "text": "Where the $4.8 Billion Is Going"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk003",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk003-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Rural-focused health-tech investment has concentrated in a few categories: AI-enabled diagnostic and decision-support tools for rural primary care, remote patient monitoring and chronic-disease-management platforms, and telehealth specialty-access networks, with smaller amounts going to pharmacy technology, workforce platforms, and behavioral health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk004",
+      "_type": "code",
+      "code": "[\n  {\n    \"Investment Category\": \"AI Diagnostic Tools (Rural Primary Care)\",\n    \"2025 Investment Volume\": \"$2.0B\",\n    \"YoY Growth\": \"+420%\",\n    \"Maturity Stage\": \"Early-Growth\"\n  },\n  {\n    \"Investment Category\": \"Remote Patient Monitoring / Chronic Disease\",\n    \"2025 Investment Volume\": \"$1.5B\",\n    \"YoY Growth\": \"+280%\",\n    \"Maturity Stage\": \"Growth\"\n  },\n  {\n    \"Investment Category\": \"Telehealth Specialty Networks\",\n    \"2025 Investment Volume\": \"$912M\",\n    \"YoY Growth\": \"+190%\",\n    \"Maturity Stage\": \"Late-Growth\"\n  },\n  {\n    \"Investment Category\": \"Rural Pharmacy Technology\",\n    \"2025 Investment Volume\": \"$218M\",\n    \"YoY Growth\": \"+310%\",\n    \"Maturity Stage\": \"Early\"\n  },\n  {\n    \"Investment Category\": \"Rural Workforce Platforms\",\n    \"2025 Investment Volume\": \"$170M\",\n    \"YoY Growth\": \"+140%\",\n    \"Maturity Stage\": \"Early\"\n  }\n]",
+      "language": "json",
+      "title": "2025 Rural Health Tech Venture Capital: Category Breakdown"
+    },
+    {
+      "_key": "blk005",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "abto8xd5",
+          "_type": "span",
+          "marks": [],
+          "text": "The Three Categories With Highest Deployment Probability"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk006",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk006-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Remote patient monitoring is the investment category most likely to reach meaningful rural deployment in the near term: the evidence base is comparatively mature, reimbursement codes (CPT 99453–99458) are established, the FDA pathway for most RPM devices is well understood, and the main barrier — rural broadband — is being addressed by parallel federal investment. Early rural RPM pilots report reductions in 30-day readmissions, though results vary by program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk007",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5p4geapg",
+          "_type": "span",
+          "marks": [],
+          "text": "AI diagnostic tools present the highest long-term value but the most complex deployment path. Regulatory clearance timelines for FDA De Novo and 510(k) pathways average 18–28 months for AI/ML-based diagnostics. The rural systems best positioned to benefit are those that have already invested in EHR data quality—AI tools that require clean, structured data will fail in organizations with fragmented medical records."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1wgls41t",
+          "_type": "span",
+          "marks": [],
+          "text": "The rural health investment wave will create winners and losers among health systems. The winners will be those that did the data hygiene work before the tools arrived. The losers will discover their data is not AI-ready at the worst possible time."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "blk009",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5htxksf9",
+          "_type": "span",
+          "marks": [],
+          "text": "STRATEGIC OPPORTUNITY: RHT program states including Virginia (CareIQ initiative), South Carolina (Tech Catalyst Fund), and Nevada (Outcomes Accelerator) have dedicated capital and technical assistance specifically to connect rural health systems with vetted health tech companies. These programs offer a lower-risk pathway than direct venture partnership for health system leaders evaluating new technology."
+        }
+      ],
+      "style": "callout"
+    },
+    {
+      "_key": "blk010",
+      "_type": "image",
+      "alt": "Geographic visualization of 2025 rural health technology venture capital investment by state, showing concentration in RHT program states with bubble size representing investment volume.",
+      "caption": "Geographic bubble map of the United States showing rural health technology venture capital deployment by state in 2025, with bubble size proportional to investment volume and color coding by primary investment category (AI diagnostics, RPM, telehealth)."
+    },
+    {
+      "_key": "blk011",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "3qcj7uom",
+          "_type": "span",
+          "marks": [],
+          "text": "How Rural Health System Leaders Should Position for Partnership"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "blk012",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "r4ms649r",
+          "_type": "span",
+          "marks": [],
+          "text": "Conduct EHR data quality audit to assess AI-readiness before evaluating AI diagnostic tool partnerships"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4edr9kdh",
+          "_type": "span",
+          "marks": [],
+          "text": "Contact state RHT program office regarding tech partnership intermediary programs (CareIQ, Catalyst Fund, Outcomes Accelerator)"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk014",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5r3iihpp",
+          "_type": "span",
+          "marks": [],
+          "text": "Prioritize RPM pilots in FY 2026—mature reimbursement + clear ROI makes these the lowest-risk entry point"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk015",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "bqakk2bt",
+          "_type": "span",
+          "marks": [],
+          "text": "Assign a designated health tech partnership lead at VP level to manage inbound vendor relationships"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    }
+  ],
+  "summary": "Health tech venture capital investment in rural-focused companies reached $4.8 billion in 2025, a 340% increase over 2022 levels, according to Rock Health’s Q4 2025 annual report. This analysis maps where the capital is flowing, identifies the three investment categories with the highest probability of reaching rural deployment at scale, and assesses what rural health system leaders should be doing to position for partnership.",
+  "title": "The Rural Health Investment Surge: Where $4.8 Billion in Health Tech Capital Is Flowing in 2026 and What It Means for System Leaders"
+}

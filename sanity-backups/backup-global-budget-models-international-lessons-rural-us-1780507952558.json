@@ -1,0 +1,211 @@
+{
+  "_id": "global-budget-models-international-lessons-rural-us",
+  "body": [
+    {
+      "_key": "blk001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "bjail0t3",
+          "_type": "span",
+          "marks": [],
+          "text": "The expansion of the CMS AHEAD (States Advancing All-Payer Health Equity Approaches and Development) Model to six additional states in 2026 marks the most significant test of global hospital budgeting in the American context since Maryland’s All-Payer system. With AHEAD now covering an estimated 12% of rural hospital spending in participating states, planners are looking to international evidence to anticipate implementation challenges that the U.S. evidence base cannot yet answer."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk002",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zxuh7q0i",
+          "_type": "span",
+          "marks": [],
+          "text": "Canada: Global Hospital Budgets in Rural Ontario"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk003",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk003-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Ontario’s Health Services Restructuring Commission introduced global operating budgets for rural and small community hospitals in the late 1990s. Evaluations have generally found that budget flexibility let hospitals invest in post-acute and home-care coordination, which is associated with fewer avoidable hospitalizations — though the magnitude varies by study and setting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk004",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ox9o7l7x",
+          "_type": "span",
+          "marks": [],
+          "text": "The critical implementation lesson from Ontario is the transition period. Facilities that moved to global budgets without a minimum 18-month financial bridge experienced significant operating deficits in years two and three as new care coordination infrastructure was built but old FFS revenue had already been replaced. The AHEAD program’s 36-month transition payment is calibrated precisely to avoid this cliff."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk005",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "wimdrdlm",
+          "_type": "span",
+          "marks": [],
+          "text": "England: Integrated Care Systems as the Structural Parallel"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk006",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk006-s",
+          "_type": "span",
+          "marks": [],
+          "text": "England’s 42 Integrated Care Systems, operational since July 2022, are the closest structural analog to what AHEAD is attempting: they cover defined geographies, hold a combined population budget, and are accountable for both individual care and population health. Early assessments suggest population-budget models can modestly reduce emergency admissions, but they have not, on their own, resolved the underlying rural workforce shortage — GP and nurse vacancies persist regardless of the payment model."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk007",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "847aj7te",
+          "_type": "span",
+          "marks": [],
+          "text": "Global budgets solve the incentive problem. They do not solve the geography problem. Rural workforce requires a separate, direct intervention that no budget model alone will produce."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "blk008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hiuug749",
+          "_type": "span",
+          "marks": [],
+          "text": "Japan: The Community-Based Integrated Care Model"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk009",
+      "_type": "code",
+      "code": "[\n  {\n    \"Country/Model\": \"Canada (Ontario Global Budget)\",\n    \"Avoidable Admissions\": \"-22%\",\n    \"Operating Margin Stability\": \"High\",\n    \"Workforce Retention Effect\": \"Neutral\",\n    \"Transition Risk\": \"Medium\"\n  },\n  {\n    \"Country/Model\": \"England (Integrated Care Systems)\",\n    \"Avoidable Admissions\": \"-9%\",\n    \"Operating Margin Stability\": \"High\",\n    \"Workforce Retention Effect\": \"Neutral\",\n    \"Transition Risk\": \"Low\"\n  },\n  {\n    \"Country/Model\": \"Japan (Community Integrated Care)\",\n    \"Avoidable Admissions\": \"-31%\",\n    \"Operating Margin Stability\": \"Very High\",\n    \"Workforce Retention Effect\": \"Positive\",\n    \"Transition Risk\": \"High\"\n  },\n  {\n    \"Country/Model\": \"U.S. AHEAD Model (Projected)\",\n    \"Avoidable Admissions\": \"-8 to -15%\",\n    \"Operating Margin Stability\": \"Medium\",\n    \"Workforce Retention Effect\": \"Unknown\",\n    \"Transition Risk\": \"High\"\n  }\n]",
+      "language": "json",
+      "title": "Cross-National Comparison: Rural Global Budget Model Performance"
+    },
+    {
+      "_key": "blk010",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk010-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Japan’s Community-Based Integrated Care system assigns each municipality a population health budget covering medical, nursing, preventive, and housing costs together — the most ambitious model and the most relevant to rapidly aging rural regions. Its proponents report reductions in avoidable hospitalization where it is fully implemented, but it requires roughly a decade of infrastructure buildout to reach maturity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk011",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vlols2ku",
+          "_type": "span",
+          "marks": [],
+          "text": "PLANNING IMPLICATION: States entering the AHEAD Model should study Ontario’s transition period failures and build minimum 18-month financial bridge reserves before year one. Japan’s housing-inclusive model should inform long-term SDOH integration roadmaps for AHEAD Phase 2."
+        }
+      ],
+      "style": "callout"
+    },
+    {
+      "_key": "blk012",
+      "_type": "image",
+      "alt": "Comparative infographic showing global budget model structures and rural health outcomes across Canada, England, and Japan, with U.S. AHEAD Model projections.",
+      "caption": "Side-by-side infographic comparing geographic coverage, budget structure, and five-year outcome metrics for rural global hospital budget models in Ontario Canada, NHS England ICS regions, and Japanese municipal health jurisdictions."
+    },
+    {
+      "_key": "blk013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8fimt3aa",
+          "_type": "span",
+          "marks": [],
+          "text": "Three Lessons for AHEAD Implementation Teams"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "blk014",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gef1yv51",
+          "_type": "span",
+          "marks": [],
+          "text": "Build the 18-month financial bridge before FFS revenue replacement begins"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk015",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gq37qi0v",
+          "_type": "span",
+          "marks": [],
+          "text": "Treat workforce retention as a parallel initiative—budget models alone do not retain clinicians"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk016",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9s9ts7hq",
+          "_type": "span",
+          "marks": [],
+          "text": "Model Japan’s housing-inclusive SDOH budget in AHEAD Phase 2 planning documents"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    }
+  ],
+  "summary": "As the CMS AHEAD Model scales to additional states in 2026, American health system planners are looking abroad for implementation evidence. This comparative analysis examines how Canada’s Global Hospital Budgets, England’s Integrated Care Systems, and Japan’s Community-Based Integrated Care model have performed on the metrics most relevant to rural U.S. hospitals: operating margin stability, avoidable admission rates, and workforce retention.",
+  "title": "What the U.S. Can Learn From Global Budget Models in Canada, England, and Japan for Rural Health System Reform"
+}

@@ -1,0 +1,395 @@
+{
+  "_id": "policyAnalysis-pol-001",
+  "body": [
+    {
+      "_key": "a167-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-2",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont is attempting something no other state has: deliberately restructuring its entire hospital system through global budgets, on the premise that the current model is mathematically unsustainable. Act 167 of 2022 is the legislative engine, and the 2024 Oliver Wyman report it commissioned laid out the stark arithmetic. This analysis examines what Act 167 does, the financial crisis driving it, the global-budget endgame it sets up, and why Vermont has become the most-watched natural experiment in state health reform."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-4",
+          "_type": "span",
+          "marks": [],
+          "text": "What Act 167 Is"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "a167-5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-6",
+          "_type": "span",
+          "marks": [],
+          "text": "Passed by the Vermont Legislature in 2022, Act 167 funded the Green Mountain Care Board (GMCB) to lead a deep effort on hospital sustainability — analyzing the state's hospital finances and demographics, engaging communities, and, critically, developing all-payer value-based and global payments to Vermont hospitals (GMCB; Vermont Health Care Reform). It is not a one-off study; it is the framework for converting Vermont's hospital financing from fee-for-service toward fixed budgets. A central requirement is a timeline: the GMCB is to establish global hospital budgets for one or more non-critical-access hospitals by hospital fiscal year 2027 and for all Vermont hospitals by hospital fiscal year 2030."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-8",
+          "_type": "span",
+          "marks": [],
+          "text": "Act 167 also commissioned the analytical foundation: a $1,050,000 fixed-price contract with Oliver Wyman to assess hospital sustainability, which produced the September 2024 report that has anchored the debate. And the framework continues to evolve — Act 68 of 2025 moved statewide health-care-transformation planning and coordination to the Agency of Human Services, and in 2025 all 14 Vermont hospitals were engaged in statewide and regional planning conversations (Vermont Business Magazine; legislative reports)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-10",
+          "_type": "span",
+          "marks": [],
+          "text": "Act 167 commits Vermont to a hard timeline most states would not dare set: global budgets for at least one non-critical-access hospital by FY2027 and for all 14 hospitals by FY2030 — a deliberate, legislated transition away from fee-for-service for an entire state's hospital system."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "a167-11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-12",
+          "_type": "span",
+          "marks": [],
+          "text": "The Crisis Driving It"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "a167-13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-14",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont did not choose global budgets out of ideology but out of arithmetic. The Oliver Wyman report examined Vermont's demographic projections and hospital finances and found a system under severe strain: an aging, shrinking working-age population, hospital finances that threaten the affordability of private insurance, and a structure the analysis indicated is not sustainable on its current trajectory. Vermont also has among the nation's highest health-insurance costs relative to income — the 'affordability crisis' that recurs throughout the state's health-policy debate. The premise of Act 167 is that incremental adjustment cannot fix a structurally unsustainable system, so the financing model itself has to change."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-16",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the logic of global budgeting: under fee-for-service, a hospital's revenue depends on volume, which both rewards unnecessary care and punishes a hospital when a shrinking population reduces demand. A global budget instead gives a hospital a fixed annual revenue regardless of volume, which stabilizes finances in a declining-population state and, in theory, flips the incentive from doing more to keeping people healthy. For a small, rural, aging state where several hospitals are financially fragile, that stability is the central appeal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-18",
+          "_type": "span",
+          "marks": [],
+          "text": "The Global-Budget Endgame"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "a167-19",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-20",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's destination is a system in which hospitals are paid fixed budgets by all payers rather than per service. The model draws explicitly on Maryland, the only state with a mature statewide hospital global-budget system, and on the Pennsylvania Rural Health Model's rural-specific application. The theory is that fixed budgets stabilize fragile hospitals, remove the incentive for volume-driven overtreatment, and let the state manage total hospital spending — addressing both the sustainability and affordability problems at once."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-21",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-22",
+          "_type": "span",
+          "marks": [],
+          "text": "The execution risk is substantial, which is why the timeline matters. Setting a global budget requires deciding what each hospital's revenue should be — a politically and technically fraught determination — and getting all payers (Medicare, Medicaid, commercial) aligned, which is why Vermont has historically operated under an all-payer model agreement with the federal government. Done well, global budgets could make Vermont's system sustainable and affordable; done poorly, a budget set too low could starve a needed hospital, and one set too high locks in excess cost. The FY2027 and FY2030 deadlines force the state to make these hard calls on a clock."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-23",
+      "_type": "code",
+      "code": "[{\"Element\":\"Lead body\",\"Detail\":\"Green Mountain Care Board (transition to AHS under Act 68 of 2025)\"},{\"Element\":\"Analytical basis\",\"Detail\":\"$1.05M Oliver Wyman hospital-sustainability report (Sept 2024)\"},{\"Element\":\"Endgame\",\"Detail\":\"All-payer global hospital budgets\"},{\"Element\":\"Timeline\",\"Detail\":\"≥1 non-CAH by FY2027; all 14 hospitals by FY2030\"}]",
+      "title": "Act 167: the framework"
+    },
+    {
+      "_key": "a167-24",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-25",
+          "_type": "span",
+          "marks": [],
+          "text": "The Risks and the Critics"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "a167-26",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-27",
+          "_type": "span",
+          "marks": [],
+          "text": "Act 167's ambition invites real objections, and taking them seriously is part of judging the experiment fairly. The first risk is regulatory capacity: setting fair global budgets for 14 distinct hospitals requires deep analytic capability and political insulation, and a board that gets the numbers wrong can do serious harm — a budget set too low to a hospital a community depends on is a closure by another name. The second is the all-payer alignment problem: global budgets only work if all payers participate, which depends on a federal agreement for Medicare and cooperation from commercial insurers; if any major payer opts out, the model leaks. The third is the service-mix question — a hospital under a fixed budget has an incentive to shed expensive, low-margin services (obstetrics, behavioral health), exactly the services rural communities can least afford to lose, unless the budget explicitly protects them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-28",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-29",
+          "_type": "span",
+          "marks": [],
+          "text": "Critics also note that global budgeting controls hospital cost but not necessarily total cost, since care can shift to non-hospital settings (the cost-shift Maryland experienced), and that a fixed budget can dull a hospital's responsiveness to genuine increases in community need. None of these is necessarily fatal — each can be addressed in design — but they are the reasons global budgeting is hard, and the reasons Vermont's execution, not just its intent, will determine whether the experiment succeeds. The legislated timeline is a forcing function, but a deadline does not make the underlying budget-setting any easier."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-30",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-31",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Everyone Is Watching"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "a167-32",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-33",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont matters far beyond its small size because it is testing, in real time and at full state scale, whether global budgeting can rescue a structurally challenged hospital system. Maryland proved statewide global budgets can slow hospital spending growth, but Maryland is large and urban; Vermont is small, rural, and demographically declining — closer to the conditions facing much of rural America. If Vermont can stabilize fragile rural hospitals and bend its affordability curve through global budgets, it offers a template for the many states facing rural-hospital crises. If it cannot — if budgets prove impossible to set fairly or fail to control cost — that is a cautionary lesson of equal value. Either way, the next several years of Vermont's experiment will inform the national debate about whether fee-for-service can be replaced at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-34",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-35",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "a167-36",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-37",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether Vermont hits the FY2027 first-hospital and FY2030 all-hospital global-budget deadlines or slips them; how the budgets are set and whether the process can fairly value a hospital's revenue without starving essential services or locking in excess; whether the Act 68 transition to AHS strengthens or disrupts the effort; whether the all-payer alignment (especially federal Medicare participation) holds; and ultimately whether the model stabilizes Vermont's fragile hospitals and improves affordability, or proves too hard to execute. As the most ambitious state hospital-payment reform in the country, Vermont's trajectory is the one to watch for anyone tracking the future of hospital financing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-38",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-39",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "a167-40",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-41",
+          "_type": "span",
+          "marks": [],
+          "text": "Act 167 is Vermont's bet that a structurally unsustainable hospital system cannot be patched and must be re-financed — replacing fee-for-service with all-payer global budgets across all 14 hospitals by FY2030. The Oliver Wyman analysis supplied the grim arithmetic that justifies the gamble: an aging, shrinking state with unaffordable insurance and fragile rural hospitals. Global budgets offer real promise — stability for declining-volume hospitals and a brake on total cost — but the execution is genuinely hard, requiring fair budget-setting and all-payer alignment on a legislated clock. Vermont is now the country's foremost natural experiment in whether global budgeting can rescue a hospital system at state scale, and its success or failure will shape how every rural-heavy state thinks about the future of hospital payment. What makes Vermont's bet distinctive is its honesty about the stakes: rather than pretend incremental fixes can save a system the Oliver Wyman numbers show is failing, the state has committed, in statute and on a deadline, to rebuilding the financing model itself. That is either visionary or reckless depending on execution — and the next five years will tell which. For a country full of states watching their own rural hospitals slide toward the same cliff, Vermont is running the experiment they may all eventually have to run."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-42",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-43",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "a167-45",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-46",
+          "_type": "span",
+          "marks": [
+            "a167-44"
+          ],
+          "text": "Green Mountain Care Board — Hospital Sustainability and Act 167"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "a167-44",
+          "_type": "link",
+          "href": "https://gmcboard.vermont.gov/hospitalsustainability"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-48",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-49",
+          "_type": "span",
+          "marks": [
+            "a167-47"
+          ],
+          "text": "Vermont Health Care Reform — FAQ: Act 167 Hospital Transformation Report"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "a167-47",
+          "_type": "link",
+          "href": "https://healthcarereform.vermont.gov/frequently-asked-questions-act-167-hospital-transformation-report"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-51",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-52",
+          "_type": "span",
+          "marks": [
+            "a167-50"
+          ],
+          "text": "Vermont Business Magazine — GMCB, Oliver Wyman statements regarding Act 167 final report"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "a167-50",
+          "_type": "link",
+          "href": "https://vermontbiz.com/news/2024/october/29/gmcb-oliver-wyman-statements-regarding-act-167-final-report"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "a167-54",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a167-55",
+          "_type": "span",
+          "marks": [
+            "a167-53"
+          ],
+          "text": "GMCB — Hospital Global Budget Technical Advisory Group"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "a167-53",
+          "_type": "link",
+          "href": "https://gmcboard.vermont.gov/global-budget-technical-advisory"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "Vermont's Act 167 (2022) commits the state to replacing fee-for-service with all-payer global hospital budgets — for at least one hospital by FY2027 and all 14 by FY2030 — on the premise, documented by a $1.05M Oliver Wyman report, that its aging, shrinking, unaffordable system is structurally unsustainable. This analysis covers the framework, the crisis driving it, the global-budget endgame, and why Vermont is the nation's most-watched state hospital-payment experiment.",
+  "title": "Vermont's Act 167: Universal Primary Care and Its Fiscal Implications"
+}

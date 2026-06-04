@@ -1,0 +1,79 @@
+{
+  "_id": "nursing-workforce-crisis-economics",
+  "body": [
+    {
+      "_key": "69829xjl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c1i1whty",
+          "_type": "span",
+          "text": "The post-pandemic labor market has permanently shifted the cost basis of care delivery. Reliance on external contract labor has moved from a 'stop-gap' measure to a structural liability."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "ovzzgquy",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "jrm69sdo",
+          "_type": "span",
+          "text": "1. The Agency Premium"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "vgfa2p63",
+      "_type": "image",
+      "alt": "Chart comparing full-time employee cost vs travel nurse cost over 5 years",
+      "caption": "Figure 1: The 'Margin Gap' - Agency labor costs have risen 40% faster than reimbursement rates."
+    },
+    {
+      "_key": "uri2koza",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hhx82jqt",
+          "_type": "span",
+          "text": "For every $1.00 spent on a core staff RN, hospitals spend $2.40 for a travel equivalent. This wage disparity creates a toxic feedback loop: Core staff leave for agency roles, forcing the hospital to hire more agency staff."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "8q7tmb2z",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "0475zn05",
+          "_type": "span",
+          "text": "2. Internal Float Pools: The Solution?"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "3k64zbw0",
+      "_type": "code",
+      "code": "[\n  { \"Metric\": \"Hourly Rate (Fully Loaded)\", \"Agency Nurse\": \"$125\", \"Internal Float\": \"$85\" },\n  { \"Metric\": \"Onboarding Time\", \"Agency Nurse\": \"2 Days\", \"Internal Float\": \"0 Days\" },\n  { \"Metric\": \"Quality Score (HCAHPS)\", \"Agency Nurse\": \"Average\", \"Internal Float\": \"High\" }\n]",
+      "language": "json"
+    },
+    {
+      "_key": "pw2rrpg7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "uz4jpjhz",
+          "_type": "span",
+          "text": "Verdict: Systems investing in 'Internal Agencies' (Gig-work platforms for their own staff) report a 15% reduction in total labor spend within 12 months."
+        }
+      ],
+      "style": "blockquote"
+    }
+  ],
+  "summary": "Hospitals are trading margin for staffing stability. We analyze the $120/hr travel nurse premium and the operational ROI of internal float pools.",
+  "title": "The Nursing Workforce Crisis: Retention Economics vs. Agency Spend"
+}

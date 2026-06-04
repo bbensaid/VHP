@@ -1,0 +1,91 @@
+{
+  "_id": "policyAnalysis-clin-003",
+  "body": [
+    {
+      "_key": "k241",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k242",
+          "_type": "span",
+          "marks": [],
+          "text": "Telehealth Volume Stabilization"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k243",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k244",
+          "_type": "span",
+          "marks": [],
+          "text": "Following the pandemic-driven surge to 32% of outpatient visits in 2020, telehealth volumes have stabilized at approximately 12% of all outpatient encounters in 2025. This level represents an 8x increase over pre-COVID baseline of 1.4%. The stabilization suggests telehealth has achieved lasting integration into clinical workflow rather than reverting to minimal use."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k245",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k246",
+          "_type": "span",
+          "marks": [],
+          "text": "Specialty Variation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k247",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k248",
+          "_type": "span",
+          "marks": [],
+          "text": "Telehealth integration varies dramatically by specialty. Behavioral health leads at 38% of visits conducted virtually. Dermatology (28%), neurology (22%), and endocrinology (19%) follow. Primary care averages 14%. Surgical specialties, procedural gastroenterology, and ophthalmology remain below 5%, where hands-on examination is clinically essential."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k249",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k250",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality Evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k251",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k252",
+          "_type": "span",
+          "marks": [],
+          "text": "For behavioral health — the dominant telehealth use case — outcomes data is consistently positive. PHQ-9 depression score improvement rates in telepsychiatry match or exceed in-person benchmarks in four of five published studies. HEDIS performance measures for depression follow-up at 30 and 84 days improved in health plans with high telehealth penetration."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "Telehealth volumes stabilized at 12% of all outpatient visits in 2025, down from pandemic peaks but 8x pre-COVID levels. This analysis examines specialty variation, quality indicators, no-show rates, and the evidence base for audio-only visits.",
+  "title": "Virtual Care Access and Quality: Post-Pandemic Telehealth in Clinical Practice"
+}

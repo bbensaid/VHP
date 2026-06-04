@@ -1,0 +1,445 @@
+{
+  "_id": "policyAnalysis-equ-001",
+  "body": [
+    {
+      "_key": "sdoh-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-2",
+          "_type": "span",
+          "marks": [],
+          "text": "Most of what determines health happens outside the clinic — in housing, food, transportation, and income. Health systems have responded by screening patients for these social determinants of health (SDOH), and in 2024 the practice moved from optional to expected as CMS tied screening to hospital quality measurement. This analysis examines what SDOH screening is, the evidence on whether it improves outcomes, the gap between screening and actually resolving needs, and what it takes to make it more than a box-checking exercise."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-4",
+          "_type": "span",
+          "marks": [],
+          "text": "From Optional to Expected"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sdoh-5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-6",
+          "_type": "span",
+          "marks": [],
+          "text": "Screening for social needs used to be a discretionary good-practice. As of 2024, CMS has made it a measured expectation: hospitals face a five-domain inpatient screening measure covering at least food insecurity, housing instability, transportation, utilities, and interpersonal safety, with NCQA scoring both whether systems screen and whether they intervene (CMSA; Findhelp). Positive responses map to ICD-10 Z-codes (Z55-Z65), and CMS encourages putting those codes on claims so it can analyze how social conditions drive cost. The shift matters because measurement plus payment is what turns a nice idea into standard operating procedure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-8",
+          "_type": "span",
+          "marks": [],
+          "text": "The largest real-world evidence comes from CMS's Accountable Health Communities (AHC) Model, which screened more than a million people across 28 communities and navigated those with needs to community resources. Its headline finding: food insecurity was the single most common health-related social need — a useful corrective to the assumption that housing or transportation dominate, and a guide to where screening most often leads (HCI; Camden Coalition)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-10",
+          "_type": "span",
+          "marks": [],
+          "text": "SDOH screening crossed a threshold in 2024: CMS now measures it, NCQA scores both screening and intervention, and payers are attaching dollars to social-risk documentation. That changes it from a values statement into an operational requirement — and raises the stakes on whether screening actually leads anywhere."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "sdoh-11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-12",
+          "_type": "span",
+          "marks": [],
+          "text": "The Screen-Without-Solve Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sdoh-13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-14",
+          "_type": "span",
+          "marks": [],
+          "text": "The central failure mode of SDOH screening is screening that goes nowhere. It is straightforward to ask a patient whether they have enough food; it is hard to do something about it. Many programs began by handing patients a printed resource guide — which is barely better than nothing, because the patient still has to navigate a fragmented social-services system on their own. The field's response is the closed-loop referral: an automated, tracked connection to a food bank, housing agency, or transportation service, with confirmation that the patient actually received help (Findhelp). The distinction is everything — an open-loop referral documents a need; a closed-loop referral resolves one."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-16",
+          "_type": "span",
+          "marks": [],
+          "text": "The data exposes the gap. In programs that screen well, a large share of patients screen positive for at least one social need, a smaller share receive a referral, and a still smaller share successfully connect to the resource within a useful window. Each step loses people, so a program measured only on screening completion can look successful while changing nothing. Honest SDOH programs measure the whole funnel — screened, referred, connected, need resolved — not just the first step."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-17",
+      "_type": "code",
+      "code": "[{\"Step\":\"Screen\",\"Detail\":\"Ask the five domains; positive responses → Z-codes\"},{\"Step\":\"Refer\",\"Detail\":\"Connect to a community resource — open-loop (guide) vs. closed-loop (tracked)\"},{\"Step\":\"Connect\",\"Detail\":\"Patient actually reaches the resource — the biggest drop-off\"},{\"Step\":\"Resolve\",\"Detail\":\"The underlying need is met — the only step that changes health\"}]",
+      "title": "The SDOH screening funnel (where programs leak)"
+    },
+    {
+      "_key": "sdoh-18",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-19",
+          "_type": "span",
+          "marks": [],
+          "text": "The Data and Trust Question"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sdoh-20",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-21",
+          "_type": "span",
+          "marks": [],
+          "text": "SDOH screening also raises a question health systems are only beginning to grapple with: what happens to the data, and does collecting it help or harm the patient? Recording that someone is food-insecure, unstably housed, or experiencing interpersonal violence creates sensitive information that, once in the record, can be seen widely and could in principle be used against the patient — affecting how they are perceived, or surfacing in contexts (custody, immigration, insurance) where it was never meant to go. Patients are not naive about this, and some decline to disclose needs precisely because they distrust where the information will travel."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-22",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-23",
+          "_type": "span",
+          "marks": [],
+          "text": "This matters operationally because under-disclosure undermines the whole exercise: a screening tool only works if patients answer honestly, and they will only answer honestly if they trust both the asker and the system behind them. That trust is easier to build when the person screening is someone the patient already trusts — a community health worker rather than an intake form — and when the system can actually offer help in return, so disclosure feels like a path to assistance rather than surveillance. SDOH screening, in other words, is as much a trust problem as a workflow problem, and systems that treat it as pure data collection tend to get incomplete and skewed data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-24",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-25",
+          "_type": "span",
+          "marks": [],
+          "text": "Does It Improve Outcomes?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sdoh-26",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-27",
+          "_type": "span",
+          "marks": [],
+          "text": "The evidence is genuinely mixed and worth stating honestly. The logic is strong and the AHC model showed that navigation can connect people to resources, but rigorous proof that screening-and-referral programs improve hard health outcomes or lower total cost is still developing — the AHC evaluation found benefits more clearly for some needs and metrics than others, and effects depend heavily on whether the referral loop actually closes. Newer work shows that machine-learning models drawing on existing data can identify social needs more accurately than survey questions alone (AUC ~0.77 vs ~0.58), pointing toward better targeting — but identifying a need is not the same as meeting it. The defensible reading: screening is a necessary first step whose value is entirely contingent on the intervention that follows."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-28",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-29",
+          "_type": "span",
+          "marks": [],
+          "text": "What Makes It Work"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sdoh-30",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-31",
+          "_type": "span",
+          "marks": [],
+          "text": "Programs that move outcomes rather than just document need share features. They invest in closed-loop referral infrastructure and the navigators or community health workers who actually do the connecting. They target the highest-yield needs — food insecurity first, given its prevalence — rather than screening broadly and acting narrowly. They build community partnerships so there is somewhere real to refer patients to, recognizing that a referral is worthless if the food bank or housing program is itself overwhelmed. And critically, they operate under value-based contracts that reward resolving needs, because under fee-for-service the work of closing a social-needs loop generates cost without revenue — the same wrong-pocket problem that limits prevention generally."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-32",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-33",
+          "_type": "span",
+          "marks": [],
+          "text": "Who Should Do the Screening"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sdoh-34",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-35",
+          "_type": "span",
+          "marks": [],
+          "text": "A practical question that shapes whether screening works is who asks the questions and in what setting. A social-needs questionnaire handed to a patient at registration, divorced from any relationship, tends to produce low completion and guarded answers. The same questions asked by a trusted clinician, nurse, or community health worker who can immediately offer a connection to help produce more honest disclosure and a warmer handoff to resources. Setting matters too: the emergency department captures patients who avoid primary care but is a chaotic place to surface sensitive needs, while primary care offers continuity but misses the disconnected. The strongest programs match the screening modality to the population and pair the screen with a person, not just a form."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-36",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-37",
+          "_type": "span",
+          "marks": [],
+          "text": "This connects SDOH screening to the broader workforce question. Because resolving social needs is labor-intensive, the screening strategy and the staffing strategy are inseparable: a system that screens at scale without the navigators or community health workers to act is generating documented needs it has no capacity to meet. The decision of who screens is therefore also a decision about whether the organization is prepared to do something with the answer."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-38",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-39",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sdoh-40",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-41",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether CMS's measurement expands from screening rates toward intervention and resolution measures, since that is what would force closed-loop investment; whether the evidence base matures from process metrics toward demonstrated outcome and cost effects; whether community-resource capacity keeps pace with referral volume (screening that floods under-funded social services helps no one); and whether value-based contracting spreads enough to fund the navigation labor that makes screening actionable. The trajectory of SDOH screening will be set less by the screening tools than by whether the system builds the capacity to act on what they find."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-42",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-43",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sdoh-44",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-45",
+          "_type": "span",
+          "marks": [],
+          "text": "SDOH screening is now an operational expectation, and that is progress — naming social needs is a precondition for addressing them. But screening is only as valuable as the intervention it triggers, and the field's defining risk is becoming very good at documenting needs it does not resolve. The programs that matter measure the full funnel, invest in closed-loop referral and the navigators who staff it, partner with adequately-resourced community organizations, and operate where payment rewards resolution rather than volume. SDOH screening is a means, not an end; judged as an end, it is theater, and judged as a means, its value depends entirely on what the system is built to do next."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-46",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-47",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sdoh-49",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-50",
+          "_type": "span",
+          "marks": [
+            "sdoh-48"
+          ],
+          "text": "CMSA Today — 2024 SDOH Requirements and What Lies Ahead (five-domain screening, NCQA)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sdoh-48",
+          "_type": "link",
+          "href": "https://cmsatoday.com/2024/12/30/2024-sdoh-social-determinants-of-health-sdoh-requirements-and-what-lies-ahead-in-2025/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-52",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-53",
+          "_type": "span",
+          "marks": [
+            "sdoh-51"
+          ],
+          "text": "CMS — Using Z Codes: The Social Determinants of Health"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sdoh-51",
+          "_type": "link",
+          "href": "https://www.cms.gov/files/document/zcodes-infographic.pdf"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-55",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-56",
+          "_type": "span",
+          "marks": [
+            "sdoh-54"
+          ],
+          "text": "HCI Innovation Group — Food Insecurity Most Prevalent Social Need in the AHC Model"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sdoh-54",
+          "_type": "link",
+          "href": "https://www.hcinnovationgroup.com/population-health-management/social-determinants-of-health/news/21157451/food-insecurity-is-most-prevalent-social-need-in-accountable-health-communities-model"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-58",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-59",
+          "_type": "span",
+          "marks": [
+            "sdoh-57"
+          ],
+          "text": "Camden Coalition — 5 key takeaways from the AHC Model Evaluation"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sdoh-57",
+          "_type": "link",
+          "href": "https://camdenhealth.org/blog/5-key-takeaways-from-the-ahc-model-evaluation/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "sdoh-61",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sdoh-62",
+          "_type": "span",
+          "marks": [
+            "sdoh-60"
+          ],
+          "text": "Findhelp — CMS SDOH Regulations for Hospitals Are Finalized (closed-loop referral)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sdoh-60",
+          "_type": "link",
+          "href": "https://company.findhelp.com/blog/2024/08/23/cms-sdoh-regulations-for-hospitals-are-finalized/"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "SDOH screening became a CMS-measured expectation in 2024 (five domains, Z-codes, NCQA scoring screening AND intervention). The AHC Model found food insecurity the most common social need across 1M+ people. But screening only helps if it leads to a closed-loop referral that resolves the need — the field's defining risk is documenting needs it doesn't fix. This analysis covers the funnel, the mixed outcome evidence, and what makes it work.",
+  "title": "Social Determinants Screening in Clinical Settings: Evidence for Population Health ROI"
+}

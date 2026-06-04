@@ -1,0 +1,395 @@
+{
+  "_id": "policyAnalysis-eco-005",
+  "body": [
+    {
+      "_key": "hpt-112",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-113",
+          "_type": "span",
+          "marks": [],
+          "text": "For decades, the prices hospitals charge were among the best-kept secrets in the American economy — negotiated in private, invisible to the patients who paid them. Federal price-transparency rules set out to change that, requiring hospitals to publish their prices. Years in, the rules have produced data but not yet a functioning market. This analysis examines what the transparency rules require, the tightening enforcement, the persistent gap between disclosure and usable information, and the unresolved question of whether transparency actually lowers prices."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-114",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-115",
+          "_type": "span",
+          "marks": [],
+          "text": "What the Rules Require"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hpt-116",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-117",
+          "_type": "span",
+          "marks": [],
+          "text": "The Hospital Price Transparency rule requires hospitals to publish their standard charges — including the payer-specific negotiated rates that were historically secret — in two forms: a comprehensive machine-readable file (MRF) containing all items and services, and a consumer-friendly display of common 'shoppable' services. The requirements have tightened over time: beginning July 1, 2024, the MRF must conform to a CMS-specified template, layout, and data dictionary; and beginning January 1, 2025, hospitals must include charge-affecting modifiers and an estimated allowed dollar amount whenever a charge is expressed as a percentage or algorithm (CMS; HFMA). Hospitals must also attest that the published information is true, accurate, and complete."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-118",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-119",
+          "_type": "span",
+          "marks": [],
+          "text": "The progression of these requirements tells the story of the rule's central struggle: it is not enough to require hospitals to publish prices; the data has to be standardized, complete, and accurate enough to actually use. Each tightening — the template mandate, the modifier and allowed-amount requirements, the attestation — addresses a way hospitals had complied in letter while producing data that was useless in practice. The rule has spent years evolving from 'publish something' toward 'publish something usable.'"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-120",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-121",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital price transparency's core struggle isn't getting hospitals to publish prices — it's getting them to publish prices that are standardized, complete, and accurate enough to actually use. Each rule tightening closes another way hospitals complied in letter while producing unusable data."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "hpt-122",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-123",
+          "_type": "span",
+          "marks": [],
+          "text": "Tightening Enforcement"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hpt-124",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-125",
+          "_type": "span",
+          "marks": [],
+          "text": "Enforcement has sharpened considerably. CMS released a validator tool to check MRF compliance and built an automated auditing system that makes noncompliance harder to hide and penalties harder to avoid. The fines have teeth and are being levied: in March 2025 CMS fined Northlake Behavioral Health System $257,180 for template and metadata violations and missing negotiated charges, and in May 2025 it imposed a $309,738 penalty on Arkansas Methodist Medical Center for ongoing noncompliance after multiple reviews (CMS; Wise Carter). The maximum penalties scale with hospital size and days of noncompliance, reaching into the millions per year for large hospitals. The early era of lax enforcement — when many hospitals simply ignored or minimally complied with the rule — is giving way to a regime of automated detection and real financial consequences."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-126",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-127",
+          "_type": "span",
+          "marks": [],
+          "text": "The Disclosure-vs-Usability Gap"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hpt-128",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-129",
+          "_type": "span",
+          "marks": [],
+          "text": "Publishing prices and creating a usable market are very different things, and the gap between them is the rule's central disappointment so far. Even where hospitals comply, the data has often been incomplete, inconsistently formatted, or hard to interpret — which is precisely why the GAO has argued that enforcement should focus on pricing-data quality, not just whether a file exists (HFMA/GAO). A machine-readable file of negotiated rates is only useful if it is accurate, complete, and comparable across hospitals; a file that is technically present but riddled with gaps or non-standard formats lets a hospital claim compliance while frustrating the comparison shopping the rule was meant to enable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-130",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-131",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why the rule keeps tightening toward data quality. The underlying recognition is that transparency theater — publishing a file that satisfies the letter of the rule but cannot be used to compare prices — defeats the purpose, and that the hard work is not mandating disclosure but ensuring the disclosed data is good enough to drive the price competition that is the rule's actual goal. Years in, the data quality is improving under enforcement pressure but is not yet uniformly good enough to power a functioning shopping market."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-132",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-133",
+          "_type": "span",
+          "marks": [],
+          "text": "The Variation It Exposed"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hpt-134",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-135",
+          "_type": "span",
+          "marks": [],
+          "text": "Whatever its effect on prices, transparency has succeeded at one thing: documenting the staggering, indefensible variation in what hospitals charge. The data has revealed that the same service — an MRI, a colonoscopy, a delivery — can cost wildly different amounts not just between hospitals but between payers at the same hospital, and that there is often little relationship between price and quality. A hospital may charge one insurer several times what it charges another for an identical procedure, and its cash price may be lower than some negotiated rates. These disparities, long suspected, are now documented in the hospitals' own published files, and they undercut any claim that prices reflect cost or value rather than negotiating leverage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-136",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-137",
+          "_type": "span",
+          "marks": [],
+          "text": "This exposure has value independent of whether individual patients shop. It arms employers and payers with evidence for negotiation, fuels research and journalism that pressures outlier hospitals, and informs policy debates about price regulation, site-neutral payment, and provider consolidation by making the scale of the problem undeniable. Even if transparency never produces a consumer shopping market, forcing the variation into the open changes the politics of hospital pricing — it is harder to defend a price that has been publicly shown to be many times what the hospital accepts from another payer for the same service. The disclosed data is becoming an evidentiary foundation for the broader fight over hospital prices, which may prove more consequential than any individual patient's shopping."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-138",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-139",
+          "_type": "span",
+          "marks": [],
+          "text": "Does It Lower Prices?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hpt-140",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-141",
+          "_type": "span",
+          "marks": [],
+          "text": "The ultimate test — whether transparency actually lowers what patients and payers pay — remains largely unproven, and honesty requires saying so. The theory is appealing: expose the enormous variation in negotiated rates (the same service can cost wildly different amounts at different hospitals, or even for different payers at the same hospital), and patients will shop, payers will negotiate harder, and prices will converge downward. There is some evidence of modest price moderation in markets with sophisticated employers and benefit consultants who use the data, but consumer-facing price shopping remains rare, and the broad price-lowering effect the rule's proponents envisioned has not clearly materialized."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-142",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-143",
+          "_type": "span",
+          "marks": [],
+          "text": "The obstacles are structural. Most health care is not shoppable in the moment (you do not comparison-shop an emergency), insured patients are insulated from price by their coverage, and even motivated shoppers struggle with data that is incomplete and hard to compare. Transparency may work more through the back end — payers and employers using exposed rates to negotiate — than through individual patient shopping. The realistic assessment is that price transparency is a necessary foundation that has not yet, on its own, delivered the price competition its advocates promised, and may require complementary policies (and far better data) to do so."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-144",
+      "_type": "code",
+      "code": "[{\"Dimension\":\"Requirements\",\"Detail\":\"Machine-readable file (all charges) + shoppable-services display; CMS template (2024); modifiers/allowed amounts (2025)\"},{\"Dimension\":\"Enforcement\",\"Detail\":\"Automated auditing; real fines (Northlake $257k, Arkansas Methodist $310k, 2025)\"},{\"Dimension\":\"Data-quality gap\",\"Detail\":\"GAO: enforce on data quality, not just file existence\"},{\"Dimension\":\"Price effect\",\"Detail\":\"Unproven; modest moderation in sophisticated-employer markets; little consumer shopping\"}]",
+      "title": "Hospital price transparency: status"
+    },
+    {
+      "_key": "hpt-145",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-146",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hpt-147",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-148",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether enforcement and the data-quality requirements produce files complete and standardized enough to enable real comparison; whether payers and employers (more than individual patients) use the exposed rates to negotiate prices down; whether evidence of an actual price-lowering effect emerges as data quality improves; and whether transparency is paired with complementary tools (site-neutral payment, out-of-network protections) that address the structural reasons transparency alone has underdelivered. The rule has moved from publish-something to publish-something-usable; whether usable data finally produces price competition is the test the next few years will run."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-149",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-150",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hpt-151",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-152",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital price transparency has succeeded at forcing into the open the negotiated rates that were once secret, and enforcement has sharpened from lax to automated with real penalties. But publishing prices and creating a functioning price market are different achievements, and the rule has delivered the first far more than the second: the data has often been incomplete or unusable, which is why each rule revision tightens toward data quality rather than mere disclosure. The ultimate goal — lower prices through competition — remains largely unproven, obstructed by the structural reality that most care is not shoppable and insured patients are insulated from price. Transparency is a necessary foundation that has not yet, by itself, bent the price curve, and likely works more through payer and employer negotiation than individual shopping. Its eventual value depends on whether the data becomes good enough to use and whether it is paired with the complementary policies that address what transparency alone cannot."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-153",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-154",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hpt-156",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-157",
+          "_type": "span",
+          "marks": [
+            "hpt-155"
+          ],
+          "text": "CMS — Hospital Price Transparency Fact Sheet (requirements and enforcement)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hpt-155",
+          "_type": "link",
+          "href": "https://www.cms.gov/newsroom/fact-sheets/hospital-price-transparency-fact-sheet"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-159",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-160",
+          "_type": "span",
+          "marks": [
+            "hpt-158"
+          ],
+          "text": "HFMA — New guidance makes hospital price transparency obligations more exacting"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hpt-158",
+          "_type": "link",
+          "href": "https://www.hfma.org/price-transparency/new-guidance-makes-hospital-price-transparency-obligations-more-exacting/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-162",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-163",
+          "_type": "span",
+          "marks": [
+            "hpt-161"
+          ],
+          "text": "HFMA / GAO — Price transparency enforcement should look at pricing-data quality"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hpt-161",
+          "_type": "link",
+          "href": "https://www.hfma.org/price-transparency/hospital-price-transparency-enforcement-should-look-at-pricing-data-quality-gao-says/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "hpt-165",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hpt-166",
+          "_type": "span",
+          "marks": [
+            "hpt-164"
+          ],
+          "text": "Wise Carter — Hospital Price Transparency Rule (2025 penalties: Northlake, Arkansas Methodist)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "hpt-164",
+          "_type": "link",
+          "href": "https://www.wisecarter.com/2025/10/hospital-price-transparency-rule/"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "Hospital price-transparency rules forced once-secret negotiated rates into the open, and enforcement has sharpened to automated auditing with real fines (Northlake $257k, Arkansas Methodist $310k in 2025). But publishing prices and creating a usable market are different: data is often incomplete, so the rules keep tightening toward quality. Whether transparency actually lowers prices remains unproven. This analysis covers the requirements, enforcement, the usability gap, and the price question.",
+  "title": "Hospital Price Transparency Compliance: Three Years After CMS Enforcement"
+}

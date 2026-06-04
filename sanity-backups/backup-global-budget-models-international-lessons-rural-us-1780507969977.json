@@ -1,0 +1,395 @@
+{
+  "_id": "global-budget-models-international-lessons-rural-us",
+  "body": [
+    {
+      "_key": "gb-111",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-112",
+          "_type": "span",
+          "marks": [],
+          "text": "As fee-for-service strangles rural hospitals — whose finances collapse when low volume cannot cover fixed costs — policymakers are converging on an alternative: the global budget, which pays a hospital a fixed annual amount regardless of volume. The U.S. has two real laboratories for this idea (Maryland statewide and Pennsylvania's rural model) plus instructive international experience. This analysis examines how global budgets work, what the Maryland and Pennsylvania evidence shows, the international lessons, and why the model is especially suited to rural America."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-113",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-114",
+          "_type": "span",
+          "marks": [],
+          "text": "How Global Budgets Work"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "gb-115",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-116",
+          "_type": "span",
+          "marks": [],
+          "text": "Under fee-for-service, a hospital earns revenue per admission, test, and procedure — so revenue rises with volume, and falls when volume falls. For a rural hospital in a shrinking community, that is a death spiral: declining volume cannot cover the fixed costs of maintaining an ER, beds, and staff, producing the losses that drive closures. A global budget breaks the link: the hospital receives a predetermined annual revenue regardless of how many services it delivers, giving it predictable income and removing the incentive to maximize volume. In principle this both stabilizes fragile hospitals and discourages unnecessary care, since extra volume no longer means extra revenue (The Source; Saving Rural Hospitals)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-117",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-118",
+          "_type": "span",
+          "marks": [],
+          "text": "The catch is the same as its appeal: setting the budget. A global budget requires someone — usually a state regulator — to decide what each hospital's revenue should be, balancing financial viability against cost control. Set it too low and the hospital cannot survive; too high and it locks in excess spending. Global budgeting therefore replaces the market's (flawed) volume signal with administrative judgment, which is only as good as the regulator making it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-119",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-120",
+          "_type": "span",
+          "marks": [],
+          "text": "Global budgets flip rural hospital economics: instead of revenue that collapses with falling volume, the hospital gets a fixed annual budget. That predictability is why the model is increasingly seen as rural America's most promising financial lifeline — and why setting the budget right is everything."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "gb-121",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-122",
+          "_type": "span",
+          "marks": [],
+          "text": "The Maryland Evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "gb-123",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-124",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland is the only state with a mature, statewide all-payer hospital global-budget system, making it the most important U.S. evidence base. The results on cost are real: the model was estimated to reduce Medicare hospital spending by roughly $550 million over three years — beating its target — and one analysis put total Medicare savings at about $975 million over five years, while slowing all-payer hospital spending growth (Mathematica; PMC). This is genuine evidence that statewide global budgets can bend the hospital cost curve, the strongest such evidence in the U.S."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-125",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-126",
+          "_type": "span",
+          "marks": [],
+          "text": "The caveats are instructive. The Medicare savings were partly offset for commercial members by increased professional (non-hospital) spending — squeezing the hospital balloon pushed some costs elsewhere. And patient-experience scores in Maryland were lower than comparison hospitals (though they did not worsen under global budgets, suggesting a pre-existing difference rather than a budget effect). The lesson is that global budgets can control hospital cost but do not automatically control total cost or improve experience — the design has to account for cost-shifting to non-hospital settings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-127",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-128",
+          "_type": "span",
+          "marks": [],
+          "text": "The Pennsylvania Rural Test"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "gb-129",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-130",
+          "_type": "span",
+          "marks": [],
+          "text": "Pennsylvania ran the most directly relevant experiment: the Pennsylvania Rural Health Model, a CMMI-approved global-budget arrangement specifically for critical access and rural hospitals, operating from 2019. Its explicit goal was the rural one — improving the financial viability and stability of rural hospitals whose margins had collapsed with dwindling volume. The key finding is the one rural America cares about: global budgets provided predictable annual revenue that helped sustain these facilities, and some evidence showed increased resilience to volume loss during the COVID-19 pandemic, when fee-for-service hospitals saw revenue crater as elective volume vanished but globally-budgeted hospitals kept their fixed income (CMS; Saving Rural Hospitals)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-131",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-132",
+          "_type": "span",
+          "marks": [],
+          "text": "That COVID natural experiment is telling: the very feature of global budgets that critics call a weakness (paying regardless of volume) became a decisive strength when volume collapsed for reasons outside the hospital's control. For rural hospitals chronically exposed to volume shocks, revenue stability is not a minor benefit — it is the difference between staying open and closing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-133",
+      "_type": "code",
+      "code": "[{\"Model\":\"Maryland (statewide)\",\"Finding\":\"~$975M Medicare savings/5yr; slowed spending growth; some cost-shift to professional services\"},{\"Model\":\"Pennsylvania (rural)\",\"Finding\":\"Predictable revenue sustained rural hospitals; resilient to COVID volume loss\"},{\"Model\":\"Vermont (Act 167)\",\"Finding\":\"Statewide global budgets planned — all hospitals by FY2030\"}]",
+      "title": "Global budgets: the U.S. evidence"
+    },
+    {
+      "_key": "gb-134",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-135",
+          "_type": "span",
+          "marks": [],
+          "text": "The Design Choices That Decide Success"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "gb-136",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-137",
+          "_type": "span",
+          "marks": [],
+          "text": "Because the model is proven but the budget-setting is everything, the design choices are where global budgeting succeeds or fails — and they are worth naming concretely. The first is the base and trend: what revenue level a hospital starts at and how the budget grows each year. Set the base too low or the trend below cost inflation, and the budget squeezes the hospital toward insolvency; set them too high, and the model entrenches excess spending. The second is risk adjustment: the budget must account for changes in a community's size and acuity, or a hospital is penalized for a sicker, larger population it did not choose. The third is the handling of leakage — what happens when patients seek care outside the budgeted hospital — which Maryland's cost-shift experience shows must be anticipated."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-138",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-139",
+          "_type": "span",
+          "marks": [],
+          "text": "The fourth, and most important for rural America, is service protection: a global budget should be structured so a hospital cannot improve its margin by dropping the essential, money-losing services (obstetrics, emergency, behavioral health) that are the whole reason the community needs the hospital. A budget that simply caps revenue without protecting essential services invites the hospital to survive financially by becoming clinically hollow. The states that get global budgeting right will be those that treat it not as a spending cap but as a deliberate instrument for sustaining the specific services a community depends on — which requires far more design sophistication than 'pay a fixed amount' implies."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-140",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-141",
+          "_type": "span",
+          "marks": [],
+          "text": "The International Lessons"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "gb-142",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-143",
+          "_type": "span",
+          "marks": [],
+          "text": "Global budgeting is unremarkable internationally — most wealthy countries fund hospitals through some form of fixed or capped budget rather than per-service fees, which is part of why they spend far less than the U.S. on hospital care. The instructive lesson from abroad is not whether global budgets work (they plainly can) but how to manage their failure modes: the risk that a fixed budget creates incentives to under-provide care or to push patients elsewhere, and the need for quality measurement to ensure budget discipline does not become rationing. Countries that pair global budgets with strong quality oversight and access guarantees avoid the under-provision trap; those that simply cap spending without those guardrails can ration care. The transferable lesson for the U.S. is that the budget must be paired with accountability for access and quality, not just cost."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-144",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-145",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "gb-146",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-147",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether Vermont's statewide Act 167 implementation succeeds and adds a third major U.S. data point (especially a rural-heavy one); whether the Pennsylvania Rural Health Model is extended or replicated by other states after its initial authorization; whether CMS's AHEAD model (which incorporates global-budget elements) scales the approach nationally; and whether the designs incorporate the lessons — guarding against cost-shifting to non-hospital settings and against under-provision — that the Maryland and international experience teach. The momentum is real, but global budgeting lives or dies on execution: the model is proven, the budget-setting is where it succeeds or fails."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-148",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-149",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "gb-150",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-151",
+          "_type": "span",
+          "marks": [],
+          "text": "Global budgets are the most promising answer to the rural hospital financial crisis because they fix the core problem — revenue that collapses with falling volume — by paying a fixed annual amount instead. The evidence supports it: Maryland's statewide model saved Medicare roughly $975M over five years and slowed spending growth, and Pennsylvania's rural model gave fragile hospitals the revenue stability that proved decisive during COVID. The international experience confirms global budgets work and teaches how to avoid their failure modes through quality and access guardrails. The recurring lesson across all of it is that the model is sound but the budget-setting is everything — set fairly and paired with accountability for access and quality, global budgets can stabilize rural hospitals and control cost; set carelessly, they can starve hospitals or ration care. Vermont's Act 167 is now the experiment that will test this at full state scale in the rural conditions that matter most. If global budgeting is going to become the default answer to the rural hospital crisis — and the converging momentum from Maryland, Pennsylvania, CMS's AHEAD model, and Vermont suggests it might — then the policy community's attention should shift from debating whether the model works to mastering the design choices that determine whether any given implementation helps or harms. The era of asking 'should we try global budgets?' is giving way to the harder, more important question of 'how do we set them right?'"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-152",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-153",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "gb-155",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-156",
+          "_type": "span",
+          "marks": [
+            "gb-154"
+          ],
+          "text": "Mathematica — What States Can Learn from Maryland's Experience with Hospital Global Budgeting"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "gb-154",
+          "_type": "link",
+          "href": "https://www.mathematica.org/blogs/what-states-can-learn-from-marylands-experience-with-hospital-global-budgeting"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-158",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-159",
+          "_type": "span",
+          "marks": [
+            "gb-157"
+          ],
+          "text": "CMS — Pennsylvania Rural Health Model"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "gb-157",
+          "_type": "link",
+          "href": "https://www.cms.gov/priorities/innovation/innovation-models/pa-rural-health-model"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-161",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-162",
+          "_type": "span",
+          "marks": [
+            "gb-160"
+          ],
+          "text": "The Source on Healthcare Price & Competition — Provider Rate Regulation: Hospital Global Budgets"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "gb-160",
+          "_type": "link",
+          "href": "https://sourceonhealthcare.org/provider-rate-regulation/global-budgets/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "gb-164",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gb-165",
+          "_type": "span",
+          "marks": [
+            "gb-163"
+          ],
+          "text": "Saving Rural Hospitals (CHQPR) — Global Budgets"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "gb-163",
+          "_type": "link",
+          "href": "https://ruralhospitals.chqpr.org/Global_Budgets.html"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "Global budgets pay hospitals a fixed annual amount regardless of volume — fixing the death spiral where rural hospital revenue collapses as volume falls. Maryland's statewide model saved Medicare ~$975M over 5 years; Pennsylvania's rural model gave fragile hospitals revenue stability that proved decisive during COVID. This analysis covers how they work, the U.S. and international evidence, and why the budget-setting is everything.",
+  "title": "What the U.S. Can Learn From Global Budget Models in Canada, England, and Japan for Rural Health System Reform"
+}

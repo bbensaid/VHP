@@ -1,0 +1,395 @@
+{
+  "_id": "end-of-all-payer-dream-act-167",
+  "body": [
+    {
+      "_key": "eap-56",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-57",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont spent a decade pursuing one of American health care's most ambitious experiments: the all-payer Accountable Care Organization model, in which every payer would align behind a single value-based framework. That dream has largely given way to a different one — global hospital budgets under Act 167. This analysis examines what the all-payer ACO model tried to do, why it fell short of its promise, and what Vermont's pivot toward global budgets reveals about the limits of the ACO approach and the next phase of state payment reform."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-58",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-59",
+          "_type": "span",
+          "marks": [],
+          "text": "The All-Payer ACO Dream"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "eap-60",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-61",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's All-Payer ACO Model, launched under an agreement with the federal government, was a genuinely bold idea: align Medicare, Medicaid, and commercial insurers behind a single accountable-care framework so that providers faced consistent value-based incentives across all their patients, not the usual patchwork where each payer pulls in a different direction. The theory was powerful — if every payer rewarded the same things (managing population health, controlling total cost), providers could finally reorganize around value rather than straddling conflicting payment models. Vermont was widely watched as the test of whether all-payer alignment could work at state scale, a step toward the holy grail of coherent, system-wide payment reform."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-62",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-63",
+          "_type": "span",
+          "marks": [],
+          "text": "The model ran through a state ACO and aimed to bring a large share of Vermonters into accountable-care arrangements with shared financial accountability for cost and quality. For years it was held up as the leading example of multi-payer value-based reform in the United States — the place where the fragmented incentives that doom most payment reform might finally be unified."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-64",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-65",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's all-payer ACO model chased health care's holy grail: getting every payer to reward the same things, so providers could organize around value instead of straddling conflicting incentives. Its quiet retreat toward global budgets is a lesson in how hard that alignment really is."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "eap-66",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-67",
+          "_type": "span",
+          "marks": [],
+          "text": "Why the Dream Fell Short"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "eap-68",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-69",
+          "_type": "span",
+          "marks": [],
+          "text": "The all-payer ACO model did not fail catastrophically so much as fall short of its transformative promise, for reasons that illuminate the limits of the ACO approach generally. Aligning all payers proved harder than hoped: commercial insurers and the federal government have different goals, time horizons, and constraints, and sustaining true multi-payer alignment against those frictions is enormously difficult. The ACO mechanism itself — shared savings against a benchmark — has well-documented limits: benchmarks are hard to set fairly, savings can come from favorable patient selection rather than better care, and the model asks providers to take financial risk that many, especially small rural ones, are ill-equipped to bear. And the underlying problem Vermont most needed to solve — the structural unsustainability documented later by the Oliver Wyman report — was a hospital-finance and demographic problem that an ACO overlay did not fix."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-70",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-71",
+          "_type": "span",
+          "marks": [],
+          "text": "In short, the ACO model is an incentive layer placed on top of the existing fee-for-service plumbing; it nudges behavior but does not change the fundamental economics of a hospital whose revenue still depends on volume in a shrinking population. That structural mismatch is why Vermont concluded it needed something more direct."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-72",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-73",
+          "_type": "span",
+          "marks": [],
+          "text": "The Pivot to Global Budgets"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "eap-74",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-75",
+          "_type": "span",
+          "marks": [],
+          "text": "Act 167 represents the pivot: rather than continue layering accountable-care incentives on top of fee-for-service, Vermont moved toward replacing the payment base itself with global hospital budgets — fixed annual revenue that directly addresses the volume-dependence problem the ACO model could only nudge. This is a meaningful philosophical shift. The all-payer ACO tried to change incentives while leaving the fee-for-service chassis in place; global budgets change the chassis. For a state whose core problem is hospitals that cannot survive on declining volume, the more direct intervention — guaranteeing revenue regardless of volume — addresses the disease rather than the symptom."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-76",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-77",
+          "_type": "span",
+          "marks": [],
+          "text": "The continuity matters too: the all-payer alignment work was not wasted, because global budgets also require all payers to participate, so Vermont's years of building multi-payer infrastructure feed directly into the new model. The pivot is less an abandonment than an evolution — from aligning payers behind ACO incentives to aligning them behind fixed budgets, a recognition that the alignment was necessary but the ACO mechanism was insufficient."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-78",
+      "_type": "code",
+      "code": "[{\"Phase\":\"All-payer ACO model\",\"Mechanism\":\"Align all payers behind shared-savings accountable care\"},{\"Phase\":\"The limit\",\"Mechanism\":\"Incentive layer atop fee-for-service; didn't fix volume-dependence\"},{\"Phase\":\"Act 167 pivot\",\"Mechanism\":\"Replace the base with all-payer global hospital budgets\"}]",
+      "title": "Vermont's payment-reform evolution"
+    },
+    {
+      "_key": "eap-79",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-80",
+          "_type": "span",
+          "marks": [],
+          "text": "The Federal Dependency"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "eap-81",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-82",
+          "_type": "span",
+          "marks": [],
+          "text": "One structural feature shadows both the all-payer ACO and the global-budget pivot: Vermont's reforms depend on the federal government's participation, because Medicare is too large a payer to align with state policy on its own. The all-payer model ran under a special agreement with the federal government that let Medicare participate in Vermont's framework, and global budgets likewise require Medicare to pay Vermont hospitals on the state's terms rather than standard national rates. This makes Vermont's experiment perpetually contingent on federal willingness — a change in administration, in CMS priorities, or in the terms of the agreement can reshape or end what the state has built."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-83",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-84",
+          "_type": "span",
+          "marks": [],
+          "text": "This dependency is both Vermont's enabling condition and its vulnerability. It is enabling because federal participation is what makes true all-payer reform possible at all — without Medicare, any state model covers only part of the market and loses much of its power. It is a vulnerability because the state does not control the largest payer at the table, so even a well-designed Vermont reform can be undone by federal decisions made for national reasons. Any state contemplating Vermont's path has to reckon with the same reality: ambitious payment reform at state scale runs through Washington, and that is a dependency, not a detail."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-85",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-86",
+          "_type": "span",
+          "marks": [],
+          "text": "What It Reveals About Payment Reform"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "eap-87",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-88",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's arc carries a national lesson. The accountable-care model — the dominant value-based-care approach in the U.S. for a decade — is powerful but limited precisely because it is an overlay: it adjusts incentives without changing the fee-for-service foundation, so it can improve behavior at the margin but cannot rescue a hospital whose underlying economics are broken. For systems facing structural rather than behavioral problems — declining volume, fixed costs, demographic decline — the ACO nudge is not enough, and more direct interventions like global budgets become necessary. Vermont's pivot is an early, instructive case of a state concluding that it had to move past the ACO paradigm toward something more fundamental."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-89",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-90",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "eap-91",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-92",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether global budgets succeed where the all-payer ACO fell short, validating the pivot; whether other states drawing on Vermont's experience skip straight to global budgets or attempt the ACO path first; whether the multi-payer alignment Vermont built proves transferable to the global-budget model; and whether the federal government's posture (which underwrote the all-payer agreement) supports the budget evolution. Vermont's transition is a real-time test of whether the ACO era is giving way to a global-budget era for states with structurally challenged hospital systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-93",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-94",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "eap-95",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-96",
+          "_type": "span",
+          "marks": [],
+          "text": "The end of Vermont's all-payer ACO dream is not a failure story but an evolution one: the state learned that aligning payers behind accountable-care incentives, while necessary, was not sufficient to fix a hospital system whose problem was structural rather than behavioral. Act 167's pivot to global budgets is the logical next step — changing the payment base itself rather than overlaying incentives on fee-for-service. The national lesson is that the accountable-care model, for all its value, is an overlay with real limits, and states facing structural hospital crises may need to move past it toward more direct interventions. Vermont, having pioneered the all-payer ACO and now pioneering the pivot to global budgets, remains the laboratory where the future of state payment reform is being worked out — and its conclusion that the ACO was not enough is a finding the rest of the country should heed. There is a humility in Vermont's arc worth absorbing: a decade of sincere, sophisticated effort on the most-watched value-based experiment in the country ended not in triumph but in a pragmatic pivot to something more direct. That is not a story of failure but of learning — the kind of honest course-correction that health reform rarely permits itself. The states that learn fastest from Vermont will be the ones willing to admit, as Vermont did, that an elegant incentive model is no substitute for fixing the underlying economics, and that sometimes the more radical intervention is also the more realistic one. For a country whose rural hospitals are sliding toward the same cliff Vermont reached first, that lesson is not academic — it is a preview."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-97",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-98",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "eap-100",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-101",
+          "_type": "span",
+          "marks": [
+            "eap-99"
+          ],
+          "text": "Green Mountain Care Board — Hospital Sustainability and Act 167 (global budget transition)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "eap-99",
+          "_type": "link",
+          "href": "https://gmcboard.vermont.gov/hospitalsustainability"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-103",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-104",
+          "_type": "span",
+          "marks": [
+            "eap-102"
+          ],
+          "text": "Vermont Health Care Reform — Health Care Transformation"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "eap-102",
+          "_type": "link",
+          "href": "https://healthcarereform.vermont.gov/health-care-transformation"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-106",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-107",
+          "_type": "span",
+          "marks": [
+            "eap-105"
+          ],
+          "text": "Mathematica — What States Can Learn from Maryland's Experience with Hospital Global Budgeting"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "eap-105",
+          "_type": "link",
+          "href": "https://www.mathematica.org/blogs/what-states-can-learn-from-marylands-experience-with-hospital-global-budgeting"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "eap-109",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eap-110",
+          "_type": "span",
+          "marks": [
+            "eap-108"
+          ],
+          "text": "Vermont Business Magazine — GMCB, Oliver Wyman statements regarding Act 167 final report"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "eap-108",
+          "_type": "link",
+          "href": "https://vermontbiz.com/news/2024/october/29/gmcb-oliver-wyman-statements-regarding-act-167-final-report"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "Vermont spent a decade on the all-payer ACO model — aligning every payer behind one value-based framework, health care's holy grail. It fell short because the ACO is an incentive layer atop fee-for-service that can't fix structurally broken hospital economics. Act 167's pivot to global budgets changes the payment base itself. This analysis covers the dream, why it fell short, and what the pivot reveals about the limits of accountable care.",
+  "title": "The End of the All-Payer Dream: Transitioning to Global Budgets Under Act 167"
+}

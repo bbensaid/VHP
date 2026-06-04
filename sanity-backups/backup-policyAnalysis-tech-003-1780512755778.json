@@ -1,0 +1,91 @@
+{
+  "_id": "policyAnalysis-tech-003",
+  "body": [
+    {
+      "_key": "k173",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k174",
+          "_type": "span",
+          "marks": [],
+          "text": "Ransomware Attack Landscape"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k175",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k175-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Healthcare has become one of the most targeted sectors for ransomware. The February 2024 Change Healthcare attack demonstrated systemic fragility: Change processes roughly 40% of all U.S. medical claims, and its compromise disrupted claims and payment processing for more than 90% of the nation's pharmacies, forcing many patients to pay out of pocket and starving providers of cash flow for weeks (UnitedHealth Group; AHA)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k177",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k178",
+          "_type": "span",
+          "marks": [],
+          "text": "Financial Impact"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k179",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k180",
+          "_type": "span",
+          "marks": [],
+          "text": "Average ransomware recovery costs for health systems reached $18.2M in 2025, including ransom payments (where paid), IT remediation, business continuity costs, and regulatory penalties. Average downtime per incident extended to 14 days, with clinical operations costs estimated at $1.3M per day for a 400-bed hospital."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k181",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k182",
+          "_type": "span",
+          "marks": [],
+          "text": "HHS Regulatory Response"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k183",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k184",
+          "_type": "span",
+          "marks": [],
+          "text": "HHS published a proposed HIPAA Security Rule update in December 2024 requiring 72-hour breach notification (reduced from 60 days), mandatory annual penetration testing, multi-factor authentication for all ePHI access, and network segmentation requirements for clinical systems. The rule is expected to be finalized in mid-2026 with an 18-month compliance timeline."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "Healthcare ransomware attacks increased 78% in 2024-2025, with average downtime costs of $1.3M per day. This analysis covers HHS's proposed HIPAA Security Rule update, mandatory cyber incident reporting, and essential security controls for clinical environments.",
+  "title": "Cybersecurity in Health Systems: Ransomware Trends and Regulatory Response"
+}

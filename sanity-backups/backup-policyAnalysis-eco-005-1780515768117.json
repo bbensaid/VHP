@@ -1,0 +1,77 @@
+{
+  "_id": "policyAnalysis-eco-005",
+  "body": [
+    {
+      "_key": "k133",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k134",
+          "_type": "span",
+          "marks": [],
+          "text": "Compliance Landscape"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k135",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k136",
+          "_type": "span",
+          "marks": [],
+          "text": "Three years after CMS began substantive enforcement of hospital price transparency requirements, compliance has reached 82% for large urban hospitals but lags significantly among critical access hospitals (44%) and for-profit multi-site systems (61%). The penalty maximum of $2M per hospital per year has driven compliance among high-revenue institutions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k137",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k138",
+          "_type": "span",
+          "marks": [],
+          "text": "Data Quality Problems"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k141",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k142",
+          "_type": "span",
+          "marks": [],
+          "text": "Price Competition Evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k143",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k144",
+          "_type": "span",
+          "marks": [],
+          "text": "Early research on whether price transparency drives competition shows mixed results. Markets with high employer concentration and sophisticated benefit consulting show 4-8% price moderation in shoppable services. Markets with limited insurer competition show no measurable price effect. Consumer-facing price shopping remains rare — fewer than 3% of patients report using hospital price tools before seeking care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "CMS has issued $16M in civil monetary penalties for hospital price transparency non-compliance since 2023. This analysis assesses compliance rates by hospital type, the quality of disclosed data, and whether transparency is actually driving price competition.",
+  "title": "Hospital Price Transparency Compliance: Three Years After CMS Enforcement"
+}

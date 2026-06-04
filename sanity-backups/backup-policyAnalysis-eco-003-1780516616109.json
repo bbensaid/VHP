@@ -1,0 +1,105 @@
+{
+  "_id": "policyAnalysis-eco-003",
+  "body": [
+    {
+      "_key": "k105",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k106",
+          "_type": "span",
+          "marks": [],
+          "text": "Rate Normalization"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k107",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k108",
+          "_type": "span",
+          "marks": [],
+          "text": "Travel registered nurse compensation peaked at an average $3,800/week in early 2022 during COVID-driven staffing crises. By Q3 2025, travel RN rates had normalized to $1,820/week — a 52% decline. Hospitals have dramatically reduced reliance on contract labor, with contract RN share of total hours falling from 12% (2022) to 4% (2025)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k109",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k110",
+          "_type": "span",
+          "marks": [],
+          "text": "Structural Shortage Persists"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k111",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k112",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite rate normalization, the Bureau of Labor Statistics projects 195,000 RN job openings annually through 2031. The American Association of Colleges of Nursing reports that U.S. nursing schools turned away 91,938 qualified applicants in 2024 due to faculty shortages, inadequate clinical placement capacity, and facility constraints."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k113",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k114",
+          "_type": "span",
+          "marks": [],
+          "text": "Economic Modeling"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k117",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k118",
+          "_type": "span",
+          "marks": [],
+          "text": "Solutions Landscape"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k119",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k120",
+          "_type": "span",
+          "marks": [],
+          "text": "Three interventions show economic promise: nursing school faculty salary subsidies (ROI of 4.2:1 over 10 years), international nurse recruitment with pathway-to-permanent-residency programs (median 14-month ROI), and team-based care redesign reducing RN task burden by 22% through medical assistant and LPN task redistribution."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "Travel nurse rates have declined 52% from 2022 peaks, but underlying structural shortages persist. This analysis projects a 450,000 RN shortfall by 2030 and examines the economics of nursing school expansion, international recruitment, and care team redesign.",
+  "title": "Nursing Shortage Economics: Travel Nurse Rate Normalization and Long-Term Workforce Gaps"
+}

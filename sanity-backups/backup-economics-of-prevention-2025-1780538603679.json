@@ -1,0 +1,395 @@
+{
+  "_id": "economics-of-prevention-2025",
+  "body": [
+    {
+      "_key": "prev-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-2",
+          "_type": "span",
+          "marks": [],
+          "text": "Prevention is health care's most appealing idea and its most frustrating one: stopping disease before it starts should be both better for patients and cheaper for the system, yet prevention persistently struggles to attract investment proportional to its promise. This analysis examines the economic case for prevention, the evidence on its return, why the appealing 'prevention saves money' slogan oversimplifies, the structural barriers that under-fund it, and what would let the system invest in prevention rationally."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-4",
+          "_type": "span",
+          "marks": [],
+          "text": "The Case for Prevention"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "prev-5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-6",
+          "_type": "span",
+          "marks": [],
+          "text": "The economic logic of prevention starts with where the money goes: in the United States, chronic disease accounts for more than 85% of total health expenditure (CDC). Since chronic conditions — diabetes, heart disease, hypertension — are substantially preventable or manageable, the potential savings from preventing or controlling them are enormous, and prevention also generates broader economic value through improved workforce productivity and reduced disability. The intuitive case is powerful: catch and prevent the chronic diseases that drive 85% of spending, and the savings should be vast. This is why prevention is invoked in nearly every cost-control discussion as the obvious lever."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-8",
+          "_type": "span",
+          "marks": [],
+          "text": "The evidence does support real returns when prevention is well-targeted and well-timed. Modeling of chronic-disease management finds ROI exceeding 20% when interventions sustain patient adherence and slow disease progression, with the crucial caveat that timing and delivery efficiency matter as much as the magnitude of behavior change — early, adaptive interventions that maintain adherence yield the highest returns (PMC; ASPE). Prevention works economically; the question is the conditions under which it does."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-10",
+          "_type": "span",
+          "marks": [],
+          "text": "Chronic disease drives over 85% of U.S. health spending, and prevention can deliver ROI above 20% when well-targeted and sustained. But the appealing slogan 'prevention saves money' oversimplifies — some prevention saves, some costs, and the returns depend heavily on timing, targeting, and who captures them."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "prev-11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-12",
+          "_type": "span",
+          "marks": [],
+          "text": "Why 'Prevention Saves Money' Oversimplifies"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "prev-13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-14",
+          "_type": "span",
+          "marks": [],
+          "text": "The slogan that prevention always saves money is, despite its appeal, an oversimplification that economists have repeatedly flagged. Some preventive interventions do save money (they cost less than the disease they prevent), but many cost money even when they are highly worthwhile — they improve health and extend life at a reasonable cost per quality-adjusted life year, but they do not pay for themselves in pure dollar terms. Screening a large population to catch a relatively rare disease, for instance, costs a great deal across everyone screened to benefit the few who have it, so the aggregate may not save money even though the screening is valuable. The honest framing is that prevention should be judged on cost-effectiveness (is the health benefit worth the cost?), not on whether it saves money (does it pay for itself?) — and many valuable preventive services are cost-effective without being cost-saving."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-16",
+          "_type": "span",
+          "marks": [],
+          "text": "This distinction matters enormously for how prevention is justified. Advocates who oversell prevention as a money-saver set it up to disappoint when the savings do not materialize as promised, which can undermine support for genuinely valuable prevention. The defensible case is not that prevention always saves money but that targeted, well-timed prevention can save money, and that even when it does not, much of it delivers health benefits worth the cost. Treating prevention as a cost-effectiveness question rather than a savings guarantee is both more honest and more durable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-18",
+          "_type": "span",
+          "marks": [],
+          "text": "The Structural Under-Investment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "prev-19",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-20",
+          "_type": "span",
+          "marks": [],
+          "text": "Even where prevention clearly pays, the system systematically under-invests in it, and the reasons are structural. The first is the wrong-pocket problem: prevention's savings accrue over years and often to a different payer than the one paying for the prevention now — an employer pays to prevent a disease whose costs would fall on Medicare decades later, or an insurer pays for prevention whose savings appear after the member has switched plans. The payer making the investment cannot capture the return, so it rationally under-invests. The second is fee-for-service incentives: a system that pays for treating disease, not preventing it, financially rewards the sickness prevention would avert — under fee-for-service, prevention that reduces billable disease is revenue-negative for providers. The third is the time horizon: prevention's returns are slow and uncertain while its costs are immediate and certain, which disadvantages it in budgeting that favors near-term results."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-21",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-22",
+          "_type": "span",
+          "marks": [],
+          "text": "These barriers explain the paradox of prevention being universally praised and chronically under-funded. The problem is not that prevention does not work but that the system's payment structure does not reward the entity that pays for it — exactly the wrong-pocket and fee-for-service failures that recur across health economics. Prevention is under-funded not because its value is doubted but because the system is structured so that the payer who invests in it rarely captures the return."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-23",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-24",
+          "_type": "span",
+          "marks": [],
+          "text": "The Public-Health Dimension"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "prev-25",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-26",
+          "_type": "span",
+          "marks": [],
+          "text": "The most cost-effective prevention often happens furthest from the clinic, which complicates the economics further. Population-level public-health interventions — tobacco taxes and control, clean air and water, vaccination programs, food and nutrition policy, injury prevention — are frequently the highest-return prevention investments available, yet they sit almost entirely outside the health-care payment system that this analysis has focused on. A tobacco tax that prevents thousands of cancers and heart attacks delivers enormous health and economic returns, but no insurer or hospital pays for it or captures its savings; it is funded, if at all, through public budgets that compete with everything else government does. The highest-value prevention is thus often the least connected to the entities that benefit financially from health spending."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-27",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-28",
+          "_type": "span",
+          "marks": [],
+          "text": "This widens the wrong-pocket problem into a wrong-sector problem: the prevention with the best returns is public-health and policy work whose benefits accrue diffusely across society and over decades, captured by no single payer and funded by chronically under-resourced public-health budgets. The clinical prevention that payment reform could fund (screening, chronic-disease management) is real and valuable, but the largest prevention returns lie in public-health investments that the health-care financing debate often ignores entirely. A complete economics of prevention has to recognize that the most cost-effective prevention may require public investment outside the medical system, not just payment reform within it — and that under-funding public health is among the costliest false economies in the entire health enterprise."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-29",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-30",
+          "_type": "span",
+          "marks": [],
+          "text": "What Would Let the System Invest Rationally"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "prev-31",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-32",
+          "_type": "span",
+          "marks": [],
+          "text": "Fixing prevention's under-investment requires aligning who pays with who benefits. Value-based and capitated payment models are the most direct fix: when an organization bears the total cost of care for a population over time (an ACO, a capitated plan, an integrated system), it captures the savings from prevention and therefore invests in it rationally — which is why the strongest prevention programs tend to exist inside risk-bearing organizations. Longer-term member relationships and policies that let payers capture cross-payer savings would also help, as would direct public investment in prevention whose societal returns exceed any single payer's. The common thread is that prevention will be funded proportional to its value only when the entity paying for it can capture the return — which means prevention's future is tied to the spread of payment models that internalize long-term, population-level savings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-33",
+      "_type": "code",
+      "code": "[{\"Fact\":\"Chronic disease share\",\"Detail\":\">85% of U.S. health expenditure (CDC)\"},{\"Fact\":\"ROI when well-done\",\"Detail\":\">20% with sustained adherence; timing and targeting decisive\"},{\"Caveat\":\"Cost-effective != cost-saving\",\"Detail\":\"Much valuable prevention costs money but is worth it\"},{\"Barrier\":\"Under-investment\",\"Detail\":\"Wrong-pocket + fee-for-service + slow returns\"}]",
+      "title": "The economics of prevention"
+    },
+    {
+      "_key": "prev-34",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-35",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "prev-36",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-37",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether value-based and capitated payment models spread enough to let payers capture prevention's returns and invest rationally; whether prevention is framed honestly as cost-effectiveness rather than oversold as guaranteed savings; whether policies emerge to address the wrong-pocket problem (cross-payer savings capture, longer member relationships); and whether the chronic-disease management interventions with proven ROI (early, adaptive, adherence-sustaining) are deployed at scale. Prevention's chronic under-funding is a structural payment problem, so its future tracks the spread of the payment models that would solve it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-38",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-39",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "prev-40",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-41",
+          "_type": "span",
+          "marks": [],
+          "text": "Prevention is health care's most appealing idea and its most under-funded, and the gap between its promise and its investment is structural, not evidentiary. Chronic disease drives over 85% of spending, well-targeted prevention can deliver strong returns (ROI above 20% when sustained), and even prevention that does not save money is often cost-effective — but the system under-invests because of the wrong-pocket problem (savings accrue to a different payer later), fee-for-service incentives (that reward treating the disease prevention would avert), and prevention's slow, uncertain returns against immediate, certain costs. The honest framing is to judge prevention on cost-effectiveness rather than overselling it as guaranteed savings, and the structural fix is to align who pays with who benefits — through value-based and capitated models that let the investing entity capture the long-term, population-level return. Prevention does not lack evidence or value; it lacks a payment structure that rewards the payer who funds it, and its future depends on building one."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-42",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-43",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "prev-45",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-46",
+          "_type": "span",
+          "marks": [
+            "prev-44"
+          ],
+          "text": "CDC NCCDPHP — Health and Economic Benefits of Chronic Disease Interventions"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "prev-44",
+          "_type": "link",
+          "href": "https://www.cdc.gov/nccdphp/priorities/index.html"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-48",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-49",
+          "_type": "span",
+          "marks": [
+            "prev-47"
+          ],
+          "text": "ASPE — A Review and Analysis of Economic Models of Prevention Benefits"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "prev-47",
+          "_type": "link",
+          "href": "https://aspe.hhs.gov/reports/review-analysis-economic-models-prevention-benefits-0"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-51",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-52",
+          "_type": "span",
+          "marks": [
+            "prev-50"
+          ],
+          "text": "PMC — Modeling ROI in chronic disease management: adherence and policy timing"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "prev-50",
+          "_type": "link",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12717686/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "prev-54",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "prev-55",
+          "_type": "span",
+          "marks": [
+            "prev-53"
+          ],
+          "text": "PMC — What to Expect in 2024: Health Economics and Outcomes Research Trends"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "prev-53",
+          "_type": "link",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10810314/"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "Prevention is health care's most appealing and most under-funded idea. Chronic disease drives 85%+ of spending and well-targeted prevention delivers ROI above 20% — but 'prevention saves money' oversimplifies (much valuable prevention is cost-effective without being cost-saving), and the system under-invests due to the wrong-pocket problem and fee-for-service incentives. This analysis covers the evidence, why the slogan misleads, and the payment fix.",
+  "title": "The Economics of Prevention: A 2025 Perspective"
+}

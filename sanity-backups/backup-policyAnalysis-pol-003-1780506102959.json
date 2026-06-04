@@ -1,0 +1,91 @@
+{
+  "_id": "policyAnalysis-pol-003",
+  "body": [
+    {
+      "_key": "k41",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k42",
+          "_type": "span",
+          "marks": [],
+          "text": "Scale of the Coverage Loss"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k43",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k44",
+          "_type": "span",
+          "marks": [],
+          "text": "Following the end of continuous enrollment protections, states completed redeterminations between April 2023 and December 2024. Final counts show 23.7M individuals lost Medicaid coverage, with 14.8M estimated to be procedurally disenrolled despite remaining eligible — a significant policy failure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k45",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k46",
+          "_type": "span",
+          "marks": [],
+          "text": "State Performance Variation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k47",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k47-s",
+          "_type": "span",
+          "marks": [],
+          "text": "State outcomes varied dramatically during the Medicaid unwinding. States with ex parte (automatic) renewal processes and robust data-sharing retained far more eligible enrollees than states relying on returned mail, where procedural (paperwork-driven) disenrollments ran high — nationally about 69% of all disenrollments were procedural (KFF). Vermont was among the better-performing states, renewing the majority of enrollees and keeping procedural terminations comparatively low."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k49",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k50",
+          "_type": "span",
+          "marks": [],
+          "text": "Effective Retention Strategies"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k51",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k52",
+          "_type": "span",
+          "marks": [],
+          "text": "Evidence-based approaches that minimized eligible disenrollment include: automated income verification through IRS data matches, presumptive eligibility at federally qualified health centers, 12-month continuous eligibility for adults (adopted by 22 states), and partnership with community health workers for outreach."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "The 2023-2025 Medicaid unwinding disenrolled 23.7M individuals nationally. This analysis examines which state strategies most effectively preserved coverage, and what policy levers remain available for re-enrollment.",
+  "title": "Medicaid Redetermination Aftermath: Enrollment Cliff and State Response Strategies"
+}

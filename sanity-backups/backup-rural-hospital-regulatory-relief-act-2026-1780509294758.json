@@ -1,0 +1,395 @@
+{
+  "_id": "rural-hospital-regulatory-relief-act-2026",
+  "body": [
+    {
+      "_key": "reh-56",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-57",
+          "_type": "span",
+          "marks": [],
+          "text": "Faced with a rural hospital closure epidemic, Congress created a new kind of hospital: one that does emergency and outpatient care but no longer admits inpatients, in exchange for enhanced payment. The Rural Emergency Hospital (REH) designation is the most significant federal structural response to rural hospital collapse in decades. This analysis examines what an REH is, the early conversion data, the financial logic, the hard trade-off it forces communities to make, and whether it actually prevents the closures it was designed to stop."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-58",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-59",
+          "_type": "span",
+          "marks": [],
+          "text": "What a Rural Emergency Hospital Is"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "reh-60",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-61",
+          "_type": "span",
+          "marks": [],
+          "text": "Launched by CMS in January 2023, the REH is a new Medicare provider type designed for rural hospitals that cannot sustain inpatient care but whose communities still need emergency and outpatient services. A hospital converting to REH status gives up its inpatient beds — it can no longer admit patients for overnight acute stays — and in return receives enhanced, more predictable payment: in 2025, a monthly facility payment of about $285,625 regardless of volume, plus 105% of the standard Hospital Outpatient Prospective Payment System rate for its Medicare outpatient services (Azalea Health; CMS). The bargain is explicit: surrender inpatient capability, keep the ER and outpatient services open, and get paid in a way that a low-volume inpatient hospital could not survive on."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-62",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-63",
+          "_type": "span",
+          "marks": [],
+          "text": "This is a fundamentally new idea in U.S. hospital policy. For decades the only options for a failing rural hospital were to limp along losing money on inpatient beds nobody filled, or to close entirely and leave the community with nothing. The REH creates a third path — a 'right-sized' facility matched to what a small community actually uses (emergency stabilization and outpatient care) rather than what a full hospital is licensed to provide."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-64",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-65",
+          "_type": "span",
+          "marks": [],
+          "text": "The Rural Emergency Hospital is a new bargain: give up inpatient beds, keep the ER and outpatient services, and receive a fixed ~$285,625/month plus 105% of outpatient rates. It's a third path between a money-losing full hospital and an empty lot."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "reh-66",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-67",
+          "_type": "span",
+          "marks": [],
+          "text": "The Early Conversion Data"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "reh-68",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-69",
+          "_type": "span",
+          "marks": [],
+          "text": "Adoption has been real but cautious. By October 2025, 42 facilities had converted to REH status — 19 in 2023, 18 in 2024, and 3 in 2025 (Rural Health Information Hub; Bipartisan Policy Center). The pace and the regional pattern are both telling: conversions have concentrated in the South, with the large majority of early adopters in southern states, reflecting both where rural hospital distress is most acute and where state regulatory frameworks accommodate the new model. The deceleration to just 3 conversions in 2025 suggests the easy candidates may have moved first and that the trade-off gives many hospitals pause."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-70",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-71",
+          "_type": "span",
+          "marks": [],
+          "text": "That hesitation is the most important signal in the data. With 432 rural hospitals identified as financially vulnerable, one might expect a flood of conversions; 42 in nearly three years is a trickle by comparison. The gap between the number of at-risk hospitals and the number converting tells us that REH status, while valuable, is not an easy or universally attractive choice — because of what it costs the community to accept it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-72",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-73",
+          "_type": "span",
+          "marks": [],
+          "text": "The Hard Trade-Off"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "reh-74",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-75",
+          "_type": "span",
+          "marks": [],
+          "text": "The REH bargain forces a community to give up something real: inpatient care. After conversion, a patient who needs to be admitted overnight must be transferred elsewhere, which in a rural area can mean a long trip away from family and local support. For a community, accepting REH status means accepting that 'the hospital' is no longer a place you can be admitted — a genuine loss, and an emotionally and politically charged one. This is why many vulnerable hospitals hesitate: the choice is not between a full hospital and an REH, but between an REH and the prospect of closure, and communities understandably resist conceding that their full-service hospital is gone even when the finances say it already is."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-76",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-77",
+          "_type": "span",
+          "marks": [],
+          "text": "There is also a clinical judgment embedded in the trade-off. For a community whose hospital admitted very few inpatients anyway — many of whom arguably should have been transferred to higher-acuity care regardless — losing inpatient beds may cost little in practice while preserving the ER that genuinely saves lives. For a community whose hospital still served real inpatient need, the loss is heavier. The REH is therefore the right answer for some hospitals and the wrong one for others, and the conversion decision turns on an honest assessment of what the inpatient beds were actually accomplishing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-78",
+      "_type": "code",
+      "code": "[{\"Dimension\":\"Launched\",\"Detail\":\"CMS, January 2023\"},{\"Dimension\":\"Conversions\",\"Detail\":\"42 by Oct 2025 (19 in '23, 18 in '24, 3 in '25)\"},{\"Dimension\":\"Payment\",\"Detail\":\"~$285,625/mo fixed + 105% of OPPS outpatient rate (2025)\"},{\"Dimension\":\"Trade-off\",\"Detail\":\"Surrender inpatient beds; keep ER + outpatient\"}]",
+      "title": "Rural Emergency Hospital: the scorecard"
+    },
+    {
+      "_key": "reh-79",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-80",
+          "_type": "span",
+          "marks": [],
+          "text": "What the REH Doesn't Solve"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "reh-81",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-82",
+          "_type": "span",
+          "marks": [],
+          "text": "It is important to be precise about the REH's limits, because overselling it invites disappointment. The designation addresses one specific failure mode — a hospital that cannot sustain inpatient volume but whose community needs emergency and outpatient care — and it does nothing for several others. It does not address the workforce shortage: an REH still needs to staff its ER and outpatient services, and in many distressed areas the binding constraint is not the payment model but the inability to recruit clinicians at all. It does not restore lost services like obstetrics or behavioral health that the community may need. And it does not fix the upstream economic and demographic decline driving rural hospital distress in the first place; it manages a symptom."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-83",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-84",
+          "_type": "span",
+          "marks": [],
+          "text": "There is also a subtle risk that the REH option could, at the margin, accelerate the loss of inpatient care — giving a struggling hospital a financially rational reason to drop beds it might otherwise have fought to keep, shifting more inpatient care to distant facilities and lengthening transfers. Whether that is a feature (right-sizing care to what communities actually use) or a bug (hollowing out rural inpatient capacity) depends on the case, and it is one more reason the REH is a tool requiring judgment rather than a default. The designation is a real and valuable innovation, but it is a narrow instrument aimed at one problem, not a comprehensive rural-hospital rescue."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-85",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-86",
+          "_type": "span",
+          "marks": [],
+          "text": "Does It Prevent Closures?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "reh-87",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-88",
+          "_type": "span",
+          "marks": [],
+          "text": "The honest answer is: it is too early, and the cautious uptake complicates the verdict. The REH clearly gives some hospitals a viable path that did not exist before — for a facility on the brink, a fixed monthly payment plus enhanced outpatient rates can be the difference between survival and closure, and preserving the ER preserves the access that matters most acutely. To that extent the REH is preventing some closures, or at least converting full closures into partial ones that keep emergency access alive. But the slow conversion rate, against 432 vulnerable hospitals, suggests the REH is not a sufficient answer on its own — it helps the subset of hospitals for whom the inpatient trade-off pencils out, while many others remain at risk without finding REH attractive enough to choose."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-89",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-90",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "reh-91",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-92",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether the conversion pace recovers or continues to slow, which will indicate how broadly attractive the model really is; whether converted REHs prove financially sustainable over time (the model is young enough that long-term viability is unproven); whether the regional concentration broadens beyond the South as more states align their regulations; whether Congress or CMS adjusts the model (payment levels, allowable services) to make it more attractive or address gaps; and ultimately whether REH conversion measurably reduces full closures and preserves emergency access in communities that would otherwise have lost everything. The REH is a genuine policy innovation; whether it is a sufficient one is the open question."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-93",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-94",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "reh-95",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-96",
+          "_type": "span",
+          "marks": [],
+          "text": "The Rural Emergency Hospital designation is the most significant federal structural response to rural hospital collapse in a generation — a genuinely new provider type that lets a failing hospital trade inpatient beds for a fixed payment and keep its ER and outpatient services alive. For the right hospital, it converts what would have been a total closure into preserved emergency access, which is the access that matters most. But the cautious uptake — 42 conversions against 432 vulnerable hospitals — shows it is not a universal fix: the inpatient trade-off is a real loss that many communities resist, and the model helps only the subset for whom that trade pencils out. The REH is a valuable new tool in the rural-hospital toolkit, not a solution to the crisis by itself; its lasting verdict depends on whether converted hospitals prove durable and whether the model evolves to reach more of the hospitals teetering on the edge."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-97",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-98",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "reh-100",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-101",
+          "_type": "span",
+          "marks": [
+            "reh-99"
+          ],
+          "text": "Rural Health Information Hub — Rural Emergency Hospitals (REHs) Overview"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "reh-99",
+          "_type": "link",
+          "href": "https://www.ruralhealthinfo.org/topics/rural-emergency-hospitals"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-103",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-104",
+          "_type": "span",
+          "marks": [
+            "reh-102"
+          ],
+          "text": "Bipartisan Policy Center — The Rural Emergency Hospital Model: Year Two Progress Report"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "reh-102",
+          "_type": "link",
+          "href": "https://bipartisanpolicy.org/wp-content/uploads/2024/10/Final_BPC_Rural_Emergency_Hospital_2024.pdf"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-106",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-107",
+          "_type": "span",
+          "marks": [
+            "reh-105"
+          ],
+          "text": "CMS — Rural Emergency Hospitals (provider type and payment)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "reh-105",
+          "_type": "link",
+          "href": "https://www.cms.gov/medicare/health-safety-standards/certification-compliance/rural-emergency-hospitals"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "reh-109",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "reh-110",
+          "_type": "span",
+          "marks": [
+            "reh-108"
+          ],
+          "text": "Azalea Health — The Rural Emergency Hospital Designation (payment detail)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "reh-108",
+          "_type": "link",
+          "href": "https://www.azaleahealth.com/blog/rural-emergency-hospital-designation/"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "The Rural Emergency Hospital (REH) designation, launched by CMS in 2023, lets a failing rural hospital give up inpatient beds in exchange for a fixed ~$285,625/month plus enhanced outpatient pay — keeping the ER open. By Oct 2025, 42 hospitals had converted, but cautiously (just 3 in 2025) against 432 vulnerable hospitals. This analysis covers the model, the data, the hard inpatient trade-off, and whether it actually prevents closures.",
+  "title": "Rural Hospital Regulatory Relief Act: What the 2026 Reforms Mean for Critical Access Facilities"
+}

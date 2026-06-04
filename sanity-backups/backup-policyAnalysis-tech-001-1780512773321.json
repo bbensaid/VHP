@@ -1,0 +1,395 @@
+{
+  "_id": "policyAnalysis-tech-001",
+  "body": [
+    {
+      "_key": "fda-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-2",
+          "_type": "span",
+          "marks": [],
+          "text": "Artificial intelligence is moving into clinical practice faster than the regulatory framework built to govern medical devices was designed to handle. The core mismatch is structural: traditional device regulation assumes a fixed product, but the whole point of modern AI is that it learns and changes. This analysis examines how the FDA regulates AI-enabled medical devices, the predetermined-change-control-plan innovation meant to resolve the learning-model problem, the gaps the framework still leaves, and what it means for developers and health systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-4",
+          "_type": "span",
+          "marks": [],
+          "text": "The Regulatory Mismatch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "fda-5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-6",
+          "_type": "span",
+          "marks": [],
+          "text": "The FDA's medical-device framework was designed for static products — a device is tested, cleared, and then stays the same until the manufacturer files a new submission for a significant change. AI/ML software breaks that assumption. An adaptive model is valuable precisely because it can be updated and improved as it sees more data, but under the traditional rules each significant modification would require a new regulatory submission — an impossibly slow cycle for software that might update frequently. The FDA has authorized roughly a thousand AI/ML-enabled devices to date, the vast majority through the 510(k) pathway, and the pace has accelerated — forcing the agency to adapt a framework never built for learning systems (FDA SaMD; PMC)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-8",
+          "_type": "span",
+          "marks": [],
+          "text": "The result has been a multi-year effort to evolve device regulation toward the realities of software, without sacrificing the safety assurance that is the FDA's core mandate. The central innovation of that effort is the Predetermined Change Control Plan."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-10",
+          "_type": "span",
+          "marks": [],
+          "text": "The PCCP Innovation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "fda-11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-12",
+          "_type": "span",
+          "marks": [],
+          "text": "On December 3, 2024, the FDA published final guidance on Predetermined Change Control Plans (PCCPs) for AI-enabled device software — its key answer to the learning-model problem. A PCCP lets a manufacturer specify, at the time of initial authorization, exactly what future modifications it plans to make and how it will validate them, so that pre-approved changes can be implemented without a new marketing submission each time (McDermott; FDA). It has three components: a description of the planned modifications, a protocol for how each will be developed and tested, and an impact assessment of the risks. In August 2024 the FDA proposed extending the PCCP concept beyond AI to all device types, and in January 2025 it issued further draft guidance on AI device lifecycle management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-14",
+          "_type": "span",
+          "marks": [],
+          "text": "The PCCP is a genuinely clever regulatory design: it shifts the FDA's review from a one-time snapshot to a pre-authorized envelope of change, letting AI devices improve within agreed bounds while keeping the agency's safety oversight intact. In effect, the manufacturer commits up front to the rules of how its model may evolve, and the FDA approves the rules rather than re-approving every result. This is the regulatory equivalent of approving a process rather than a fixed product — the only approach that can keep pace with software that is designed to change."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-16",
+          "_type": "span",
+          "marks": [],
+          "text": "The FDA's core problem with clinical AI: device rules assume a fixed product, but AI's value is that it learns and changes. The Predetermined Change Control Plan is the fix — the FDA approves an envelope of pre-specified, pre-validated changes up front, so the model can improve without a new submission each time."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "fda-17",
+      "_type": "code",
+      "code": "[{\"Element\":\"Pathways\",\"Detail\":\"510(k) (most), De Novo, PMA — adapted for software\"},{\"Element\":\"PCCP (final Dec 2024)\",\"Detail\":\"Pre-authorize planned modifications + validation; no new submission per change\"},{\"Element\":\"PCCP components\",\"Detail\":\"Modification description · modification protocol · impact assessment\"},{\"Element\":\"2025 direction\",\"Detail\":\"Lifecycle-management draft guidance; PCCP extended toward all device types\"}]",
+      "title": "How the FDA regulates AI devices"
+    },
+    {
+      "_key": "fda-18",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-19",
+          "_type": "span",
+          "marks": [],
+          "text": "The Gaps the Framework Leaves"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "fda-20",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-21",
+          "_type": "span",
+          "marks": [],
+          "text": "For all its sophistication, the framework has real gaps. The largest is that most clinical AI is not regulated by the FDA at all. The FDA regulates AI that functions as a medical device, but a great deal of consequential clinical AI — administrative tools, many clinical-decision-support functions that fall under regulatory exemptions, and the large language models being woven into documentation and workflow — sits outside or at the edge of FDA jurisdiction, governed lightly if at all. A hospital deploying an AI scribe or a risk-stratification tool embedded in its EHR may be using software that never passed FDA review."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-22",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-23",
+          "_type": "span",
+          "marks": [],
+          "text": "The second gap is post-market reality. Even FDA-cleared AI must perform in the messy real world, on local populations that may differ from the training data, and the framework's post-market surveillance and real-world-performance monitoring remain comparatively weak — a model can be authorized and then drift, or underperform for a subgroup, with limited mechanisms to catch it. The third is the bias and equity dimension: FDA clearance does not guarantee a device performs equitably across race or geography, which is why the separate Section 1557 algorithm rule exists — a sign that device regulation alone does not cover the discrimination risk. Together these gaps mean FDA clearance is necessary but far from sufficient assurance that a clinical AI tool is safe and fair in a given setting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-24",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-25",
+          "_type": "span",
+          "marks": [],
+          "text": "The Generative AI Wildcard"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "fda-26",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-27",
+          "_type": "span",
+          "marks": [],
+          "text": "The framework described above was built largely around 'narrow' AI — models that do one defined task, like flagging a finding on an image. Generative AI and large language models break even that adapted framework, because they are general-purpose, their outputs are open-ended and probabilistic, and they can 'hallucinate' plausible-sounding errors. A traditional device validation asks 'does this model accurately detect X?'; a generative model used to summarize a chart or draft a note has no such bounded task to validate, and its failure modes (confident fabrication) are different in kind from a narrow classifier's. The PCCP and device framework were not designed for this, and the FDA has been notably cautious about how, or whether, to regulate generative clinical AI."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-28",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-29",
+          "_type": "span",
+          "marks": [],
+          "text": "This creates a widening regulatory vacuum exactly where adoption is fastest. Ambient documentation, chart summarization, and LLM-based decision support are spreading through health systems with little FDA oversight, governed mainly by the systems' own judgment and by general rules like the Section 1557 anti-discrimination provisions. The result is that the most rapidly-adopted and arguably highest-risk category of clinical AI is the least regulated — the inverse of what a risk-based framework would intend. Closing this gap, whether through new FDA authority, new legislation, or robust self-governance, is among the most pressing unresolved questions in health-AI policy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-30",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-31",
+          "_type": "span",
+          "marks": [],
+          "text": "What It Means for Developers and Health Systems"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "fda-32",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-33",
+          "_type": "span",
+          "marks": [],
+          "text": "For AI developers, the PCCP is both an opportunity and a discipline: a well-constructed PCCP can dramatically speed the cadence of model improvement by pre-clearing a change envelope, but it requires sophisticated upfront work to specify and justify the modification protocol — rewarding developers who plan their model's evolution rigorously. For health systems, the key lesson is that the FDA's clearance is a floor, not a ceiling: a cleared device still needs local validation, post-deployment monitoring, and subgroup performance checks, because clearance does not certify performance on the system's own patients. And for the large category of clinical AI outside FDA jurisdiction, the health system itself is effectively the regulator — responsible for the diligence the FDA did not perform."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-34",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-35",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "fda-36",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-37",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: how widely PCCPs are adopted and whether they meaningfully accelerate safe AI iteration; whether the FDA strengthens post-market surveillance and real-world-performance requirements to match the lifecycle-management direction of its 2025 guidance; whether the jurisdictional gap (the large share of clinical AI outside FDA review) is addressed through expanded authority or left to health systems and other rules; and how FDA device regulation interacts with the Section 1557 bias rule and any future federal AI legislation. The framework is evolving thoughtfully, but the pace of AI deployment is outrunning the pace of regulatory adaptation, and the gap between what is deployed and what is rigorously overseen is the space to watch."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-38",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-39",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "fda-40",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-41",
+          "_type": "span",
+          "marks": [],
+          "text": "The FDA is adapting a device framework built for static products to AI that learns and changes, and the Predetermined Change Control Plan — finalized in December 2024 — is a genuinely clever solution: pre-authorize an envelope of validated change so models can improve without re-submission while safety oversight persists. But the framework leaves real gaps: most clinical AI falls outside FDA jurisdiction, post-market surveillance is weak, and clearance does not certify equity or local performance. The practical takeaway is that FDA clearance is necessary but not sufficient — health systems must treat every AI tool as requiring their own local validation and monitoring, and must recognize that for the large category of unregulated clinical AI, they are the regulator of last resort. The regulatory framework is maturing; the deployment of AI is maturing faster, and closing that gap is the central challenge of clinical-AI governance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-42",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-43",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "fda-45",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-46",
+          "_type": "span",
+          "marks": [
+            "fda-44"
+          ],
+          "text": "FDA — Artificial Intelligence in Software as a Medical Device"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "fda-44",
+          "_type": "link",
+          "href": "https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-software-medical-device"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-48",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-49",
+          "_type": "span",
+          "marks": [
+            "fda-47"
+          ],
+          "text": "McDermott+ — FDA Issues Final Guidance on Predetermined Change Control Plans for AI-Enabled Devices"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "fda-47",
+          "_type": "link",
+          "href": "https://www.mcdermottplus.com/insights/fda-issues-final-guidance-on-predetermined-change-control-plans-for-ai-enabled-devices/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-51",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-52",
+          "_type": "span",
+          "marks": [
+            "fda-50"
+          ],
+          "text": "PMC — Machine Learning-Enabled Medical Devices Authorized by the FDA in 2024"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "fda-50",
+          "_type": "link",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12730494/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "fda-54",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fda-55",
+          "_type": "span",
+          "marks": [
+            "fda-53"
+          ],
+          "text": "PMC — Predetermined Change Control Plans: Guiding Principles for Safe AI/ML Technologies"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "fda-53",
+          "_type": "link",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12577744/"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "The FDA's device framework assumes a fixed product, but AI's value is that it learns and changes. The Predetermined Change Control Plan (final guidance Dec 2024) is the fix — pre-authorizing an envelope of validated changes so models improve without re-submission. But most clinical AI sits outside FDA jurisdiction, post-market surveillance is weak, and clearance doesn't certify equity or local performance. This analysis covers the framework, the PCCP, and the gaps.",
+  "title": "AI Clinical Decision Support: FDA Regulatory Framework for High-Risk Algorithms"
+}

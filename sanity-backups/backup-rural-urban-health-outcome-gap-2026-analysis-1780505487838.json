@@ -1,0 +1,210 @@
+{
+  "_id": "rural-urban-health-outcome-gap-2026-analysis",
+  "body": [
+    {
+      "_key": "blk001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9t9po3fd",
+          "_type": "span",
+          "marks": [],
+          "text": "The CDC’s December 2025 Rural-Urban Health Disparities Surveillance Report presents a picture that defies simple characterization. Aggregate rural-urban health outcome gaps—measured by age-adjusted mortality, preventable hospitalization rates, and chronic disease control—have improved modestly since 2020 in some categories and deteriorated sharply in others. Understanding the divergence is essential for allocating the limited clinical and financial resources available for rural health equity investment."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk002",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "6fb2pa4v",
+          "_type": "span",
+          "marks": [],
+          "text": "Where Gaps Are Narrowing"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk003",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ieubh85w",
+          "_type": "span",
+          "marks": [],
+          "text": "Cardiovascular disease mortality is the clearest positive trend. The rural-urban age-adjusted cardiovascular mortality gap has narrowed from 37% in 2019 to 28% in 2024, driven by three parallel forces: improved telehealth access for cardiac monitoring and medication management, the expansion of CAH cardiac rehabilitation programs supported by RHT infrastructure funding, and improved statin and antihypertensive medication adherence enabled by community pharmacy expansion in rural markets."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk004",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "unu1740k",
+          "_type": "span",
+          "marks": [],
+          "text": "Cancer screening rates show improvement in colorectal and cervical cancer, with the rural-urban gap narrowing 8–12 percentage points since 2020. Mobile screening unit deployment—a strategy adopted by 14 state RHT programs—is the primary driver, with each additional mobile unit estimated to close approximately 3–4% of the rural-urban screening gap in its service area over 24 months."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk005",
+      "_type": "code",
+      "code": "[\n  {\n    \"Health Outcome Category\": \"Cardiovascular Disease Mortality\",\n    \"2019 Rural Premium\": \"+37%\",\n    \"2024 Rural Premium\": \"+28%\",\n    \"Trend\": \"Narrowing\"\n  },\n  {\n    \"Health Outcome Category\": \"Colorectal Cancer Screening\",\n    \"2019 Rural Gap\": \"-22pp\",\n    \"2024 Rural Gap\": \"-14pp\",\n    \"Trend\": \"Narrowing\"\n  },\n  {\n    \"Health Outcome Category\": \"Maternal Mortality\",\n    \"2019 Rural Premium\": \"+48%\",\n    \"2024 Rural Premium\": \"+61%\",\n    \"Trend\": \"Widening\"\n  },\n  {\n    \"Health Outcome Category\": \"Suicide Rate (Age-Adjusted)\",\n    \"2019 Rural Premium\": \"+74%\",\n    \"2024 Rural Premium\": \"+89%\",\n    \"Trend\": \"Widening\"\n  },\n  {\n    \"Health Outcome Category\": \"Opioid Overdose Mortality\",\n    \"2019 Rural Premium\": \"+58%\",\n    \"2024 Rural Premium\": \"+71%\",\n    \"Trend\": \"Widening\"\n  },\n  {\n    \"Health Outcome Category\": \"Type 2 Diabetes Control (HbA1c < 8)\",\n    \"2019 Rural Gap\": \"-18pp\",\n    \"2024 Rural Gap\": \"-16pp\",\n    \"Trend\": \"Marginally Improving\"\n  }\n]",
+      "language": "json",
+      "title": "Rural-Urban Health Outcome Gap Trends: 2019–2024"
+    },
+    {
+      "_key": "blk006",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1xf24y1n",
+          "_type": "span",
+          "marks": [],
+          "text": "Where Gaps Are Widening: The Three Crisis Categories"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk007",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "kmih08ez",
+          "_type": "span",
+          "marks": [],
+          "text": "Maternal mortality is the most alarming widening disparity. The rural maternal mortality rate reached 61% above the urban rate in 2024—up from 48% in 2019—driven by a combination of obstetric unit closures (86 rural hospitals lost their OB units between 2020 and 2024), worsening hemorrhage management capability at rural EDs receiving transferred patients, and deteriorating postpartum follow-up rates as rural primary care capacity has shrunk."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4oi4nl49",
+          "_type": "span",
+          "marks": [],
+          "text": "The rural mental health and suicide mortality gap has widened from 74% to 89% above urban rates over the same period, reflecting both the absolute shortage of rural mental health providers and the failure of telehealth expansion to fully compensate for the loss of community mental health center capacity in rural markets. Rural counties with no licensed mental health provider within 30 miles—now numbering 1,242—show the steepest deterioration."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk009",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "bxdjetr6",
+          "_type": "span",
+          "marks": [],
+          "text": "The maternal mortality data is not a slow-moving trend we can plan around. A 61% rural premium means that a woman giving birth in rural Georgia faces dramatically higher mortality risk than her urban counterpart. This is a measurable, preventable, ongoing harm."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "blk010",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zg4ag3f6",
+          "_type": "span",
+          "marks": [],
+          "text": "INVESTMENT PRIORITY: The evidence base is clear that the three widening disparity categories—maternal mortality, mental health, and SUD—require targeted direct investment, not general rural health system improvement. Programs that improve average rural health outcomes without specifically targeting these categories will not bend the mortality curve on the indicators that matter most."
+        }
+      ],
+      "style": "callout"
+    },
+    {
+      "_key": "blk011",
+      "_type": "image",
+      "alt": "Trend chart showing rural-urban health outcome gap trajectories 2019-2024 for six categories, with color coding distinguishing narrowing disparities from widening ones and policy intervention annotations.",
+      "caption": "Multi-panel trend chart showing rural-urban health outcome gap trajectories from 2019–2024 for six health categories, with narrowing trends shown in green lines (cardiovascular, cancer screening) and widening trends shown in red lines (maternal mortality, suicide, opioid overdose), annotated with key policy interventions at their implementation dates."
+    },
+    {
+      "_key": "blk012",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fq0wj3hm",
+          "_type": "span",
+          "marks": [],
+          "text": "Investment Priorities Based on the Evidence"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "blk013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8x768obe",
+          "_type": "span",
+          "marks": [],
+          "text": "Maternal mortality: fund obstetric emergency capability in EDs, not just new labor units—the emergency presentation gap is where deaths are occurring"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk014",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "nj3eeyrr",
+          "_type": "span",
+          "marks": [],
+          "text": "Mental health: target the 1,242 counties with no licensed mental health provider within 30 miles for telepsychiatry partnership funding"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk015",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "3o9n8osw",
+          "_type": "span",
+          "marks": [],
+          "text": "SUD: expand MAT access points—the evidence for buprenorphine/naltrexone in rural settings is stronger than for any other SUD intervention"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk016",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "axq841cn",
+          "_type": "span",
+          "marks": [],
+          "text": "Cardiovascular: sustain cardiac rehabilitation and medication adherence programs—these are working and are at risk from telehealth reimbursement expiration"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    }
+  ],
+  "summary": "The CDC’s 2025 Rural-Urban Health Disparities Surveillance Report reveals a bifurcated trend: cardiovascular disease mortality disparities are narrowing modestly, while maternal mortality, mental health, and substance use disorder outcome gaps are widening at an accelerating rate. This analysis disaggregates the drivers, identifies the intervention categories with demonstrated effectiveness, and maps the current policy landscape against the evidence base.",
+  "title": "The Rural-Urban Health Outcome Gap in 2026: A Data-Driven Analysis of Where Disparities Are Widening, Where They Are Closing, and Why"
+}
