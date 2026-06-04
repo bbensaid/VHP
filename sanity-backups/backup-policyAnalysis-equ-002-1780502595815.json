@@ -1,0 +1,119 @@
+{
+  "_id": "policyAnalysis-equ-002",
+  "body": [
+    {
+      "_key": "k297",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k298",
+          "_type": "span",
+          "marks": [],
+          "text": "Documented Bias in Clinical Algorithms"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k299",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k300",
+          "_type": "span",
+          "marks": [],
+          "text": "Multiple high-profile studies have documented racial and gender bias in widely deployed clinical algorithms. The Obermeyer et al. (2019) study in Science demonstrated that a commercial risk-stratification algorithm used by major health systems systematically underestimated the severity of illness in Black patients by assigning lower risk scores relative to clinical need — a bias rooted in using healthcare cost as a proxy for health status."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k301",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k302",
+          "_type": "span",
+          "marks": [],
+          "text": "Scope of Affected Algorithms"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k303",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k304",
+          "_type": "span",
+          "marks": [],
+          "text": "Documented bias exists across multiple clinical domains: sepsis prediction models underperforming in Black patients (4 of 7 published validations), pain assessment algorithms trained predominantly on white patient data showing reduced accuracy for Asian and Hispanic populations, nephrology eGFR equations (now revised) historically overestimating kidney function in Black patients, and pulmonary function tests using race-based reference equations that may be scientifically unfounded."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k305",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k306",
+          "_type": "span",
+          "marks": [],
+          "text": "Regulatory Framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k307",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k308",
+          "_type": "span",
+          "marks": [],
+          "text": "HHS Office for Civil Rights has indicated that Section 1557 of the ACA prohibits the use of discriminatory clinical algorithms in covered entities. The 2024 Section 1557 final rule explicitly addresses algorithmic discrimination, requiring health systems to assess AI and decision-support tools for discriminatory impact. Enforcement mechanisms and audit requirements are still being developed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k309",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k310",
+          "_type": "span",
+          "marks": [],
+          "text": "Mitigation Approaches"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k311",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k312",
+          "_type": "span",
+          "marks": [],
+          "text": "Algorithmic bias mitigation requires action at three stages: (1) development — ensuring diverse and representative training datasets, subgroup performance reporting, and fairness constraints in model optimization; (2) validation — mandatory subgroup performance analysis before deployment; and (3) post-market monitoring — ongoing performance surveillance stratified by race, gender, age, and socioeconomic proxies."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "Commercial clinical algorithms show documented racial and gender bias in sepsis prediction, pain assessment, and nephrology scoring. This analysis covers auditing methodologies, regulatory guidance under HHS Section 1557, and bias mitigation approaches.",
+  "title": "Algorithmic Bias in Clinical AI: Detection Methods and Mitigation Strategies"
+}

@@ -1,0 +1,197 @@
+{
+  "_id": "sdoh-screening-rural-health-systems-implementation-2026",
+  "body": [
+    {
+      "_key": "blk001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8ky651fw",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS’s 2024 Quality Payment Program updates added SDOH screening rates to the Merit-based Incentive Payment System (MIPS) measure set, creating a financial incentive for rural practices to document social needs screening. The predictable result has been a surge in screening rates accompanied by minimal change in patient outcomes: rural practices are asking the PRAPARE or AHC HRSN questions, documenting the responses, and then doing nothing with the data because no referral infrastructure exists."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk002",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7izfgafw",
+          "_type": "span",
+          "marks": [],
+          "text": "The Closed-Loop Referral Network: What Separates Effective From Performative SDOH Programs"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk003",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4hbqofn",
+          "_type": "span",
+          "marks": [],
+          "text": "The defining characteristic of SDOH programs that generate clinical outcomes is the closed-loop referral: a workflow in which a positive SDOH screen automatically generates a referral to a community resource, and the referral system tracks completion and feeds resolution data back to the clinical team. Without the feedback loop, a positive food insecurity screen that generates a referral to a food pantry the patient never contacts is indistinguishable—in the clinical record—from a referral that resulted in three months of regular food access."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk004",
+      "_type": "code",
+      "code": "[\n  {\n    \"Maturity Level\": \"Level 1: Compliance Screening\",\n    \"Description\": \"SDOH screener administered, responses documented, no referral workflow\",\n    \"Clinical Outcome Impact\": \"None\"\n  },\n  {\n    \"Maturity Level\": \"Level 2: Manual Referral\",\n    \"Description\": \"Positive screens generate manual referrals via phone/fax to community orgs\",\n    \"Clinical Outcome Impact\": \"Low (20% completion)\"\n  },\n  {\n    \"Maturity Level\": \"Level 3: Digital Referral\",\n    \"Description\": \"EHR-integrated referral to community orgs via Unite Us or FindHelp\",\n    \"Clinical Outcome Impact\": \"Medium (55% completion)\"\n  },\n  {\n    \"Maturity Level\": \"Level 4: Closed-Loop with Resolution Tracking\",\n    \"Description\": \"Digital referral with confirmation feedback from community org to EHR\",\n    \"Clinical Outcome Impact\": \"High (78% completion, measurable utilization reduction)\"\n  }\n]",
+      "language": "json",
+      "title": "SDOH Screening Program Maturity Levels: Rural Health System Archetypes"
+    },
+    {
+      "_key": "blk005",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "uo7qyhcx",
+          "_type": "span",
+          "marks": [],
+          "text": "Four Rural Health Systems That Built It"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk006",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "kiutzb3w",
+          "_type": "span",
+          "marks": [],
+          "text": "Carilion Clinic (Virginia) partnered with Unite Us to build a closed-loop referral network across seven rural counties. In the first 18 months, 62% of referred patients received a community service within 30 days, and the cohort showed a 16% reduction in ED utilization compared to matched controls. The investment was $280,000 in the first year (Unite Us licensing, care coordinator training, community organization onboarding)."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk007",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "cejcqcxv",
+          "_type": "span",
+          "marks": [],
+          "text": "CHAP’s rural network in Appalachian Kentucky embedded community health workers—rather than software platforms—as the referral mechanism. CHWs with deep community relationships achieved 71% referral completion rates and generated an average $3,400 reduction in 12-month care costs per enrolled patient with multiple SDOH needs. The labor model (CHW salary: $38,000–48,000) is accessible to rural systems that cannot afford enterprise SDOH platforms."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "o8qhdqw0",
+          "_type": "span",
+          "marks": [],
+          "text": "The technology is the easy part. A food pantry that does not have capacity to absorb 200 new patients does not become more capable because you build an elegant referral interface. The network is the hard part."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "blk009",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hea9kkb3",
+          "_type": "span",
+          "marks": [],
+          "text": "NETWORK BUILDING PRIORITY: Before selecting an SDOH technology platform, conduct a community resource capacity audit. Map the actual service capacity of every organization in your referral network. A closed-loop system that routes patients to over-capacity organizations will generate lower completion rates than a manual system with a well-resourced CHW."
+        }
+      ],
+      "style": "callout"
+    },
+    {
+      "_key": "blk010",
+      "_type": "image",
+      "alt": "Closed-loop social needs referral workflow for rural health systems showing the five-stage process from SDOH screening through community organization service delivery and EHR resolution documentation.",
+      "caption": "Closed-loop SDOH referral workflow diagram showing the patient screening, positive needs identification, digital referral generation, community organization receipt and service delivery, resolution confirmation, and EHR feedback documentation steps with completion rate annotations at each stage."
+    },
+    {
+      "_key": "blk011",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fbqetwz4",
+          "_type": "span",
+          "marks": [],
+          "text": "Implementation Pathway for Rural Health Systems"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "blk012",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "bn31n48r",
+          "_type": "span",
+          "marks": [],
+          "text": "Conduct community resource capacity audit before platform selection—technology cannot substitute for community capacity"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "kw5ls3qe",
+          "_type": "span",
+          "marks": [],
+          "text": "Evaluate Unite Us, FindHelp, and CHW-based models against your specific community resource landscape"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk014",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "w1je6trb",
+          "_type": "span",
+          "marks": [],
+          "text": "Set 60% referral completion rate as the minimum threshold for a viable closed-loop program"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk015",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "32t28wfv",
+          "_type": "span",
+          "marks": [],
+          "text": "Build resolution tracking feedback into any technology contract as a non-negotiable requirement"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    }
+  ],
+  "summary": "The transition from SDOH screening as a compliance checkbox to SDOH data as a functional care coordination input is the defining implementation challenge for rural health equity in 2026. This analysis profiles four rural health systems that have built closed-loop social needs referral networks—and quantifies the clinical outcomes that justify the investment.",
+  "title": "SDOH Screening at Scale: How Rural Health Systems Are Moving From Paper Questionnaires to Actionable Social Needs Referral Networks"
+}

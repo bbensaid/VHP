@@ -1,0 +1,629 @@
+{
+  "_id": "policyAnalysis-clin-002",
+  "body": [
+    {
+      "_key": "pgx-97",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-98",
+          "_type": "span",
+          "marks": [],
+          "text": "Pharmacogenomics (PGx) — using a patient's genetics to guide which drug, and what dose, will work safely — is one of the most clinically mature pieces of precision medicine. The science is settled for a meaningful set of gene-drug pairs, the guidelines are written, and the FDA flags many of them on drug labels. Yet adoption remains slow, and the reason is not the biology. It is payment. This analysis examines what PGx can do, what the evidence shows, why insurer coverage lags the science, and what would have to change for genotype-guided prescribing to become routine."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-99",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-100",
+          "_type": "span",
+          "marks": [],
+          "text": "What Pharmacogenomics Actually Does"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pgx-101",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-102",
+          "_type": "span",
+          "marks": [],
+          "text": "Many drugs are metabolized by enzymes whose activity varies genetically from person to person. A patient who is a 'poor metabolizer' of a given enzyme may accumulate a drug to toxic levels at a standard dose; an 'ultra-rapid metabolizer' may clear it so fast that a standard dose does nothing. PGx testing identifies these variants — most importantly in the CYP2D6 and CYP2C19 enzyme genes — so a clinician can choose a different drug or adjust the dose before the patient is harmed or fails therapy. The classic examples span psychiatry (antidepressants), cardiology (clopidogrel after stenting), oncology, and pain management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-103",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-104",
+          "_type": "span",
+          "marks": [],
+          "text": "The evidence governing these decisions is not vendor marketing — it is curated by the Clinical Pharmacogenetics Implementation Consortium (CPIC), which grades gene-drug pairs by strength of evidence. CPIC 'Level A' pairs are those where genetics should change prescribing; many of the same pairs carry FDA labeling. For CYP2D6 and CYP2C19 alone, CPIC assigns Level A status to multiple psychiatric drugs — citalopram, escitalopram, amitriptyline, atomoxetine, nortriptyline, paroxetine, and vortioxetine among them (CPIC; PMC, 2024)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-105",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-106",
+          "_type": "span",
+          "marks": [],
+          "text": "The pharmacogenomics debate is unusual in medicine: the science is ahead of the system. For a defined set of gene-drug pairs the evidence is strong enough that both CPIC and the FDA say genetics should guide prescribing — yet most prescribing still proceeds blind to it."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "pgx-107",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-108",
+          "_type": "span",
+          "marks": [],
+          "text": "Where It Is Already Standard of Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pgx-109",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-110",
+          "_type": "span",
+          "marks": [],
+          "text": "It is easy to dismiss pharmacogenomics as speculative, but several gene-drug pairs are already woven into routine practice — proof that the model works when evidence and workflow align. In oncology, testing the DPYD gene before giving fluoropyrimidine chemotherapy (5-FU, capecitabine) identifies patients who cannot metabolize the drug and would otherwise suffer severe, sometimes fatal, toxicity; Europe has moved toward mandatory DPYD testing, and U.S. cancer centers increasingly follow. In HIV care, testing for the HLA-B*57:01 allele before prescribing abacavir to prevent a dangerous hypersensitivity reaction is unambiguous standard of care. In hematology and rheumatology, TPMT/NUDT15 testing before thiopurine drugs prevents life-threatening marrow suppression."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-111",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-112",
+          "_type": "span",
+          "marks": [],
+          "text": "These examples share a common shape: a clear, sometimes catastrophic harm; a single decisive gene; and a test result that maps to an obvious action. Where those conditions hold, pharmacogenomics is not contested at all — it is malpractice to ignore it. The frontier debate is about extending the model from these clean single-gene, high-stakes cases to broader preemptive panels across more ordinary prescribing, where the benefit per patient is smaller but the population scale is vast."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-113",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-114",
+          "_type": "span",
+          "marks": [],
+          "text": "The Evidence: PREPARE and Preemptive Testing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pgx-115",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-116",
+          "_type": "span",
+          "marks": [],
+          "text": "The most important recent evidence comes from the PREPARE trial, a large multi-country study of 6,944 patients across primary care, oncology, and general medicine that tested a preemptive panel approach — genotyping patients across a set of pharmacogenes before prescribing, rather than testing reactively after a problem. PREPARE found that acting on a 12-gene panel meaningfully reduced clinically relevant adverse drug reactions, providing the strongest real-world support yet for preemptive PGx (Nature Pharmacogenomics Journal, 2024)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-117",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-118",
+          "_type": "span",
+          "marks": [],
+          "text": "The distinction between preemptive and reactive testing is central to both the clinical and the economic case. Cost-effectiveness analyses find that preemptive panel testing — done once and reused across a lifetime of prescribing decisions — is frequently cost-effective, whereas one-off reactive testing for a single drug often is not, particularly in cardiovascular care (Nature Pharmacogenomics Journal, 2025; PMC systematic review). The economics improve precisely because a single test informs many future prescriptions; reactive testing throws away that reuse value."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-119",
+      "_type": "code",
+      "code": "[{\"Approach\":\"Preemptive (panel)\",\"Description\":\"Genotype many pharmacogenes once, before prescribing\",\"Economics\":\"Often cost-effective — one test informs many future decisions\"},{\"Approach\":\"Reactive (single-gene)\",\"Description\":\"Test one gene after a drug problem or for one drug\",\"Economics\":\"Frequently not cost-effective in isolation\"}]",
+      "title": "Preemptive vs. reactive PGx testing"
+    },
+    {
+      "_key": "pgx-120",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-121",
+          "_type": "span",
+          "marks": [],
+          "text": "The Psychiatry Cautionary Tale"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pgx-122",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-123",
+          "_type": "span",
+          "marks": [],
+          "text": "Pharmacogenomics' biggest commercial market — psychiatry — is also where its credibility is most contested, and the distinction matters for the whole field. Combinatorial commercial panels such as GeneSight test dozens of psychiatric medications and produce algorithmic 'use as directed / use with caution / use with increased caution' recommendations. But the evidence does not support that breadth: the FDA has stated that only about 13 antidepressants have enough pharmacogenomic evidence to warrant therapy changes, whereas GeneSight evaluates roughly 57 medications, and independent reviews — including a VA evidence brief — have found that GeneSight-guided treatment did not produce statistically convincing improvements in remission over usual care (AAFP, 2021; VA Evidence Brief)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-124",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-125",
+          "_type": "span",
+          "marks": [],
+          "text": "The lesson is not that psychiatric PGx is worthless — single-gene CYP2D6/CYP2C19 guidance for specific antidepressants rests on solid CPIC evidence — but that proprietary combinatorial algorithms extend well beyond what the evidence supports, and conflating the two damages the credibility of the rigorous core. Payers, reasonably, treat the over-broad commercial panels skeptically; the risk is that skepticism spills over onto the genuinely actionable gene-drug pairs. Keeping the evidence-based core distinct from the marketing is essential to the field's legitimacy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-126",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-127",
+          "_type": "span",
+          "marks": [],
+          "text": "The Diversity Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pgx-128",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-129",
+          "_type": "span",
+          "marks": [],
+          "text": "There is also an equity flaw baked into the reference data. Pharmacogenomic knowledge has been built disproportionately on people of European ancestry — who represent more than 63% of population-labeled individuals in PharmGKB, the field's leading database — even though the functional variants in drug-metabolizing genes differ by ancestry. Roughly half of all functional variants in drug-related genes are unique to a single population group, and standard tests can miss alleles common in African, Afro-Caribbean, and other underrepresented populations (PMC, 2025; ScienceDirect)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-130",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-131",
+          "_type": "span",
+          "marks": [],
+          "text": "The consequence is that a PGx test calibrated on European reference data can be less accurate — even misleading — for patients of other ancestries, precisely the populations that already experience worse medication outcomes. Without deliberate inclusion of diverse genomes in reference panels, pharmacogenomics risks doing what too much of precision medicine does: delivering its benefits first and best to the already-advantaged while leaving others with a tool that works less well for them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-132",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-133",
+          "_type": "span",
+          "marks": [],
+          "text": "Pharmacogenomics carries two warning labels of its own: over-broad commercial psychiatric panels that outrun their evidence, and reference data skewed toward European ancestry. Both must be managed honestly, or PGx will repeat precision medicine's habit of helping the well-studied most."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "pgx-134",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-135",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Coverage Lags the Science"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pgx-136",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-137",
+          "_type": "span",
+          "marks": [],
+          "text": "If the science is strong and preemptive testing is cost-effective, why is uptake slow? The binding constraint is reimbursement. Medicare took a meaningful step in August 2020, when its MolDx program issued local coverage determinations covering PGx tests where a clinically actionable gene-drug interaction exists — defined as CPIC Level A or B (American Pharmacogenomics Association). But commercial coverage remains patchy and conservative. Even for clopidogrel, where the FDA carries a boxed warning about CYP2C19 poor metabolizers and the cardiology stakes are life-and-death, the reimbursement rate for the relevant CYP2C19 test sits around 52% and has not improved much over time despite mounting evidence (PMC, 2024)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-138",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-139",
+          "_type": "span",
+          "marks": [],
+          "text": "Several forces explain the lag. Payers favor single-gene, single-indication coverage over the panels that are most cost-effective, because panels look like 'testing for things we're not treating yet.' Outcome data, while strong for ADR reduction, is thinner on hard endpoints like mortality and total-cost-of-care that payers weight most heavily. And the savings from PGx accrue diffusely and over time — fewer adverse events, fewer failed medication trials — which is exactly the kind of long-horizon, cross-budget benefit that fragmented U.S. insurance is structurally bad at capturing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-140",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-141",
+          "_type": "span",
+          "marks": [],
+          "text": "Pharmacogenomics suffers from the wrong-pocket problem: the test costs one payer money today, while the savings — avoided hospitalizations, fewer failed drug trials — land later, in someone else's budget. A system that cannot see across pockets underinvests in exactly this kind of prevention."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "pgx-142",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-143",
+          "_type": "span",
+          "marks": [],
+          "text": "Coding and Operational Barriers"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pgx-144",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-145",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond coverage policy, the plumbing is clumsy. Single-gene tests use discrete CPT codes (for example, 81225 for CYP2D6, 81226 for CYP2C19), while multi-gene panels are billed through individual gene codes or proprietary PLA codes, creating documentation friction and inconsistent payment. Just as important is the last mile at the point of care: a PGx result is only useful if it surfaces inside the EHR as an actionable, persistent alert when a relevant drug is ordered. Where results sit in a PDF rather than as structured, decision-support-ready data, even a tested patient gets prescribed blind. Implementation, not just coverage, is a real barrier."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-146",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-147",
+          "_type": "span",
+          "marks": [],
+          "text": "The implementation gap compounds the coverage gap in a self-reinforcing way. Because results are not reliably actionable in the EHR, clinicians do not order tests; because few tests are ordered, payers see low demand and limited outcome data; because outcome data stays thin, coverage stays conservative; and because coverage is conservative, health systems do not invest in the integration that would make results actionable. Breaking that loop requires moving on coverage and integration together, not sequentially — which is why the organizations most likely to crack it first are integrated, risk-bearing systems that control the payer, the EHR, and the clinical workflow at once."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-148",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-149",
+          "_type": "span",
+          "marks": [],
+          "text": "What Would Move It"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pgx-150",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-151",
+          "_type": "span",
+          "marks": [],
+          "text": "Three changes would accelerate genotype-guided prescribing. First, payer adoption of preemptive panel coverage rather than single-gene reactive coverage, aligning reimbursement with the approach the evidence actually supports. Second, EHR integration that turns a result into a real-time prescribing alert, so the clinical value is captured automatically rather than depending on a clinician remembering to look. Third, value-based contracting that lets the entity bearing long-term total-cost risk — an ACO, an integrated system, a capitated plan — internalize the downstream savings from fewer adverse events, solving the wrong-pocket problem that fee-for-service cannot."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-152",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-153",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pgx-154",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-155",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether commercial payers expand from single-gene to preemptive-panel coverage in the wake of PREPARE; whether CMS broadens its MolDx framework or adds gene-drug pairs as CPIC elevates them; and whether large integrated systems and ACOs — which capture their own downstream savings — move ahead of fee-for-service payers in embedding PGx as standard practice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-156",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-157",
+          "_type": "span",
+          "marks": [],
+          "text": "Two more developments are worth tracking. The first is the FDA's own posture: the agency maintains a table of pharmacogenomic associations in drug labeling and has periodically signaled where the evidence is and is not sufficient — its push-back on over-broad combinatorial claims is itself a market-shaping force. The second is the delivery model: pharmacist-led pharmacogenomics services, in which a clinical pharmacist interprets results and advises prescribers, have emerged as a practical way to close the interpretation gap without requiring every physician to become a PGx expert. Where the test result is cheap but the interpretation is the bottleneck, that division of labor may matter as much as coverage policy. Adoption is likely to advance fastest exactly where payment, data integration, and interpretation support are aligned at once."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-158",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-159",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pgx-160",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-161",
+          "_type": "span",
+          "marks": [],
+          "text": "Pharmacogenomics is a case where the medicine is ready and the financing is not. For a defined set of gene-drug pairs, the evidence is strong, the guidelines are explicit, and preemptive panel testing is cost-effective — yet conservative, single-gene-oriented coverage and weak EHR integration keep it from becoming routine. The lever is economic and structural, not scientific: align reimbursement with preemptive panels, wire results into prescribing decision support, build out interpretation capacity, and let risk-bearing organizations capture the downstream savings. The field must also keep its evidence-based core distinct from over-broad commercial panels and close the ancestry-diversity gap in its reference data, or it will squander credibility and widen disparities even as it grows. Until those pieces align, pharmacogenomics will remain a proven tool used far below its potential — precision medicine stranded by imprecise payment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-162",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-163",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pgx-165",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-166",
+          "_type": "span",
+          "marks": [
+            "pgx-164"
+          ],
+          "text": "Nature, The Pharmacogenomics Journal — Real-world evidence on preemptive PGx testing for preventing ADRs (PREPARE)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "pgx-164",
+          "_type": "link",
+          "href": "https://www.nature.com/articles/s41397-024-00326-1"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-168",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-169",
+          "_type": "span",
+          "marks": [
+            "pgx-167"
+          ],
+          "text": "Nature, The Pharmacogenomics Journal — Cost-effectiveness and savings of pharmacogenetics across common conditions"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "pgx-167",
+          "_type": "link",
+          "href": "https://www.nature.com/articles/s41397-025-00376-z"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-171",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-172",
+          "_type": "span",
+          "marks": [
+            "pgx-170"
+          ],
+          "text": "PMC — Cost-Effectiveness of Pharmacogenetic Testing for Drugs With CPIC Guidelines: A Systematic Review"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "pgx-170",
+          "_type": "link",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9828439/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-174",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-175",
+          "_type": "span",
+          "marks": [
+            "pgx-173"
+          ],
+          "text": "American Pharmacogenomics Association — Navigating Reimbursement for Pharmacogenomic Testing (Medicare MolDx LCDs)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "pgx-173",
+          "_type": "link",
+          "href": "https://americanpharmacogenomicsassociation.com/insurance-issues/navigating-reimbursement-for-pharmacogenomic-testing/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-177",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-178",
+          "_type": "span",
+          "marks": [
+            "pgx-176"
+          ],
+          "text": "PMC — Real-World Evidence Supporting Payer Coverage Decisions for PGx Testing (CYP2C19 reimbursement ~52%)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "pgx-176",
+          "_type": "link",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12194790/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-180",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-181",
+          "_type": "span",
+          "marks": [
+            "pgx-179"
+          ],
+          "text": "AAFP — GeneSight Psychotropic Genetic Testing for Psychiatric Medication Selection"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "pgx-179",
+          "_type": "link",
+          "href": "https://www.aafp.org/pubs/afp/issues/2021/0700/p89.html"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "pgx-183",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pgx-184",
+          "_type": "span",
+          "marks": [
+            "pgx-182"
+          ],
+          "text": "PMC — Bridging genomics' greatest challenge: the diversity gap"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "pgx-182",
+          "_type": "link",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11770215/"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "For a defined set of gene-drug pairs, pharmacogenomics is clinically mature — CPIC and the FDA agree genetics should guide prescribing, and the PREPARE trial (6,944 patients) shows preemptive panel testing reduces adverse drug reactions. Yet adoption lags because of conservative insurer coverage and weak EHR integration. This analysis examines the science, the economics, and what would make genotype-guided prescribing routine.",
+  "title": "Precision Medicine and Pharmacogenomics: Payer Coverage Policies in 2025"
+}

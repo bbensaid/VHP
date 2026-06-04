@@ -1,0 +1,249 @@
+{
+  "_id": "rural-hospital-regulatory-relief-act-2026",
+  "body": [
+    {
+      "_key": "blk001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk001-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Proposals to provide rural-hospital regulatory relief would matter for the roughly 1,360 Critical Access Hospitals operating nationwide. After years of incremental waivers and temporary pandemic-era flexibilities, the policy goal is to make several of those flexibilities permanent — changes that, in aggregate, would return meaningful operating-budget relief to rural hospitals, though specific dollar estimates depend on the final legislative text and CMS implementation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk002",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "jte50y5d",
+          "_type": "span",
+          "marks": [],
+          "text": "The Three Core Provisions"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk003",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "lx7r2366",
+          "_type": "span",
+          "marks": [],
+          "text": "Provision One eliminates the 96-hour physician certification requirement for CAH inpatient admissions—a rule that has historically functioned as a de facto discharge mandate, forcing early patient transfers and undermining the case-mix complexity that sustains CAH revenue. The repeal takes effect January 1, 2027, giving facilities a 12-month runway to renegotiate payer contracts that depended on short-stay averages."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk004",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk004-s",
+          "_type": "span",
+          "marks": [],
+          "text": "One frequently proposed change expands the CAH swing-bed program to include observation-status patients, closing a longstanding gap that excludes a growing share of rural admissions from swing-bed cost-based reimbursement. Hospital groups have argued this single change would add meaningful annual revenue at eligible facilities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk005",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "q1dem36s",
+          "_type": "span",
+          "marks": [],
+          "text": "Eliminating the 96-hour rule is not a minor administrative fix. It is the single most consequential reimbursement change for rural hospitals since the Balanced Budget Act of 1997."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "blk006",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "cpuvn7by",
+          "_type": "span",
+          "marks": [],
+          "text": "Financial Impact by Hospital Type"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk007",
+      "_type": "code",
+      "code": "[\n  {\n    \"CAH Category\": \"Under 25 beds, swing-bed eligible\",\n    \"Avg. Annual Gain\": \"$1.1M\",\n    \"Primary Driver\": \"Swing-bed expansion + 96hr repeal\"\n  },\n  {\n    \"CAH Category\": \"Under 25 beds, no swing-bed\",\n    \"Avg. Annual Gain\": \"$420K\",\n    \"Primary Driver\": \"96hr repeal only\"\n  },\n  {\n    \"CAH Category\": \"25–50 beds, rural PPS conversion eligible\",\n    \"Avg. Annual Gain\": \"$1.8M\",\n    \"Primary Driver\": \"All three provisions\"\n  },\n  {\n    \"CAH Category\": \"Tribal / IHS-affiliated\",\n    \"Avg. Annual Gain\": \"$240K\",\n    \"Primary Driver\": \"Observation status inclusion\"\n  }\n]",
+      "language": "json",
+      "title": "Projected Annual Revenue Impact by CAH Category"
+    },
+    {
+      "_key": "blk008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "rbqh6h4z",
+          "_type": "span",
+          "marks": [],
+          "text": "The Compliance Window Executives Must Not Miss"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk009",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "dyvtvjyf",
+          "_type": "span",
+          "marks": [],
+          "text": "Provision Three establishes a voluntary ‘Safe Harbor Compliance Pathway’ that allows CAHs to self-certify compliance with updated quality reporting requirements without undergoing a full CMS validation survey for three years. The window to enroll opens July 1, 2026, and closes December 31, 2026. Facilities that miss this window default to the standard survey cycle, which carries an average 14-month wait time."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk010",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "bjjpenv9",
+          "_type": "span",
+          "marks": [],
+          "text": "Health system executives should prioritize three immediate actions: "
+        },
+        {
+          "_key": "31a5ki28",
+          "_type": "span",
+          "marks": [
+            "em"
+          ],
+          "text": "(1) audit current payer contracts for 96-hour-linked length-of-stay incentives"
+        },
+        {
+          "_key": "fob70js5",
+          "_type": "span",
+          "marks": [
+            "em"
+          ],
+          "text": ", (2) assess swing-bed program eligibility and initiate the CoP application if not currently enrolled"
+        },
+        {
+          "_key": "wlcvwra6",
+          "_type": "span",
+          "marks": [
+            "em"
+          ],
+          "text": ", and (3) register for the Safe Harbor Pathway no later than October 2026 to allow adequate preparation time."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk011",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4rvrksmb",
+          "_type": "span",
+          "marks": [],
+          "text": "ACTION REQUIRED: The Safe Harbor enrollment window closes December 31, 2026. Legal and compliance teams should begin self-certification documentation no later than Q3 2026 to avoid reverting to the standard 14-month survey cycle."
+        }
+      ],
+      "style": "callout"
+    },
+    {
+      "_key": "blk012",
+      "_type": "image",
+      "alt": "Regulatory comparison diagram illustrating before-and-after reimbursement pathways for Critical Access Hospitals under the 2026 Rural Hospital Regulatory Relief Act.",
+      "caption": "Side-by-side comparison diagram showing CAH reimbursement flow under pre-2026 rules versus post-Act rules, highlighting the swing-bed expansion pathway and removal of the 96-hour certification gate."
+    },
+    {
+      "_key": "blk013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "jl6onf0z",
+          "_type": "span",
+          "marks": [],
+          "text": "Watch Points for FY 2027 Budget Planning"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "blk014",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9924mj71",
+          "_type": "span",
+          "marks": [],
+          "text": "Renegotiate managed care contracts before 96-hour rule repeal effective date"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk015",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "yuoxgtyi",
+          "_type": "span",
+          "marks": [],
+          "text": "Quantify swing-bed observation revenue potential using current payer mix"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk016",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8fueugzs",
+          "_type": "span",
+          "marks": [],
+          "text": "Confirm HCAHPS and quality reporting baseline before Safe Harbor self-certification"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk017",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "rhyso2qj",
+          "_type": "span",
+          "marks": [],
+          "text": "Monitor CMS rulemaking for Provision Three implementing regulations, expected September 2026"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    }
+  ],
+  "summary": "The 2026 Rural Hospital Regulatory Relief Act introduces the most significant rollback of administrative compliance burdens for Critical Access Hospitals in two decades. This analysis examines the three provisions with the highest financial impact and what health system executives must do before Q3 2026 to capture the full benefit.",
+  "title": "Rural Hospital Regulatory Relief Act: What the 2026 Reforms Mean for Critical Access Facilities"
+}

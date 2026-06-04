@@ -1,0 +1,119 @@
+{
+  "_id": "policyAnalysis-tech-005",
+  "body": [
+    {
+      "_key": "k197",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k198",
+          "_type": "span",
+          "marks": [],
+          "text": "Deployment Landscape"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k199",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k200",
+          "_type": "span",
+          "marks": [],
+          "text": "Generative AI adoption in healthcare administration accelerated significantly in 2025, with 61% of health systems reporting at least one production deployment, up from 23% in 2024. Clinical documentation assistance — ambient AI listening and generating structured notes — is the leading use case, followed by prior authorization drafting and coding assistance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k201",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k202",
+          "_type": "span",
+          "marks": [],
+          "text": "Validated Use Cases"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k203",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k204",
+          "_type": "span",
+          "marks": [],
+          "text": "The strongest evidence for generative AI ROI exists in three areas: ambient clinical documentation (reducing documentation time by 31-47% in validated studies), prior authorization letter drafting (62% reduction in administrative time), and clinical coding assistance (7-12% improvement in coding accuracy for complex cases)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k205",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k206",
+          "_type": "span",
+          "marks": [],
+          "text": "Hallucination Risk in Clinical Contexts"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k207",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k208",
+          "_type": "span",
+          "marks": [],
+          "text": "Large language model hallucination — generating plausible but incorrect information — poses particular risks in clinical documentation. Studies of ambient AI note-generation show error rates of 2.1-4.7%, including clinically significant errors such as wrong medication doses, incorrect allergy documentation, and symptom omissions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k209",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k210",
+          "_type": "span",
+          "marks": [],
+          "text": "Governance Framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k211",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k212",
+          "_type": "span",
+          "marks": [],
+          "text": "HTR recommends a four-layer governance framework: (1) pre-deployment validation on representative patient populations, (2) mandatory clinician attestation rather than passive acceptance of AI-generated content, (3) ongoing post-deployment monitoring with statistical process control charts, and (4) clear liability policies designating the attending clinician as responsible for AI-assisted documentation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "Health systems are deploying generative AI for clinical documentation, prior authorization, and revenue cycle management. This analysis examines validated use cases, hallucination risk in clinical contexts, and governance requirements for responsible deployment.",
+  "title": "Generative AI in Healthcare Administration: Use Cases, Risks, and Governance Frameworks"
+}

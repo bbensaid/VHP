@@ -1,0 +1,687 @@
+{
+  "_id": "policyAnalysis-clin-004",
+  "body": [
+    {
+      "_key": "sep-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-2",
+          "_type": "span",
+          "marks": [],
+          "text": "Sepsis kills more people in U.S. hospitals than almost any other condition, and for a decade federal policy has tried to standardize its treatment through SEP-1 — the Severe Sepsis and Septic Shock Early Management Bundle. In 2024 that measure crossed a critical threshold: it became pay-for-performance. This analysis examines what SEP-1 requires, what the evidence does and does not show about whether it saves lives, and why a measure now tied to hospital payment remains scientifically contested."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-4",
+          "_type": "span",
+          "marks": [],
+          "text": "The Scale of the Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sep-5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-6",
+          "_type": "span",
+          "marks": [],
+          "text": "The stakes explain the policy intensity. The CDC estimates that at least 1.7 million U.S. adults develop sepsis each year and at least 350,000 die — sepsis contributes to more than a third of all hospital deaths, more than almost any other single condition (CDC). The economic burden is correspondingly enormous: sepsis care is among the most expensive reasons for hospitalization in the United States, with cost estimates ranging from roughly $52 billion to over $60 billion per year (AHRQ HCUP; PMC). Sepsis is also time-critical in a way few conditions are — survival falls with each hour of delayed recognition and treatment — which is precisely why a time-based process measure is so intuitively appealing, and why getting it wrong has real consequences."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-8",
+          "_type": "span",
+          "marks": [],
+          "text": "What SEP-1 Requires"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sep-9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-10",
+          "_type": "span",
+          "marks": [],
+          "text": "SEP-1 is a 'bundle' measure: to be compliant, a hospital must complete a specific set of interventions within defined time windows after sepsis is recognized. The elements include obtaining blood cultures before antibiotics, measuring serum lactate (and repeating it if elevated), administering broad-spectrum antibiotics within a target window, and delivering fluid resuscitation for patients with hypotension or elevated lactate. Crucially, SEP-1 is all-or-nothing — missing any single element fails the entire bundle for that patient, which makes the measure demanding to satisfy and sensitive to documentation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-12",
+          "_type": "span",
+          "marks": [],
+          "text": "The measure was introduced by CMS in 2015 as a reporting metric. National compliance has climbed over the years — from roughly half of cases at introduction to the high-50s/low-60s percent range more recently — but it varies sharply by hospital type, with lower-volume and critical access hospitals generally lagging large academic centers (CMS; CIDRAP)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-14",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2024 Shift: From Reporting to Payment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sep-15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-16",
+          "_type": "span",
+          "marks": [],
+          "text": "The consequential change came in fiscal year 2024, when CMS moved SEP-1 from a pay-for-reporting measure into the Hospital Value-Based Purchasing (VBP) Program, placing it in the program's Safety domain (HealthLeaders, 2024). That move matters because the VBP program redistributes a portion of hospitals' Medicare payments based on performance: SEP-1 compliance now has direct dollar consequences, not merely public-reporting ones. For hospital quality and finance leaders, a measure that was once a documentation exercise became a line item that can move reimbursement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-18",
+          "_type": "span",
+          "marks": [],
+          "text": "The policy significance of SEP-1 is no longer mainly clinical — it is financial. As of FY2024 it sits inside Hospital Value-Based Purchasing, so compliance rates now shift Medicare dollars between hospitals regardless of the unresolved debate over whether the bundle itself saves lives."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "sep-19",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-20",
+          "_type": "span",
+          "marks": [],
+          "text": "The Evidence Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sep-21",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-22",
+          "_type": "span",
+          "marks": [],
+          "text": "Here is the uncomfortable core of the SEP-1 story: the evidence that bundle compliance actually reduces mortality is weak and contested. A 2024-2025 systematic review identified twelve studies examining the relationship between SEP-1 compliance and mortality — five found a statistically significant benefit, and seven did not. The review concluded there was no high- or moderate-quality evidence that SEP-1 compliance improves mortality, while allowing that a benefit might exist in certain subpopulations (Systematic review, PMC, 2025; 2 Minute Medicine)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-23",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-24",
+          "_type": "span",
+          "marks": [],
+          "text": "This is not a fringe critique. The Infectious Diseases Society of America and allied groups formally urged CMS in 2023 to retire SEP-1, arguing that the measure rewards process compliance rather than outcomes and that a mortality-based sepsis measure would better serve patients (End Sepsis, 2023). At the same time, patient-safety advocates credit SEP-1 with raising sepsis awareness and driving earlier recognition — so the disagreement is genuine, not one-sided."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-25",
+      "_type": "code",
+      "code": "[{\"Position\":\"In favor\",\"Argument\":\"Standardized early recognition; raised institutional attention to sepsis; some subgroup mortality signal\"},{\"Position\":\"Against\",\"Argument\":\"No moderate/high-quality evidence of overall mortality benefit; all-or-nothing scoring; rewards process not outcome\"},{\"Position\":\"Unintended effect\",\"Argument\":\"May drive overuse of broad-spectrum antibiotics, working against antimicrobial stewardship\"}]",
+      "title": "SEP-1: the case for and against"
+    },
+    {
+      "_key": "sep-26",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-27",
+          "_type": "span",
+          "marks": [],
+          "text": "The Science Underneath the Bundle"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sep-28",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-29",
+          "_type": "span",
+          "marks": [],
+          "text": "To understand why SEP-1's evidence base is shaky, it helps to trace where the bundle came from. Its intellectual ancestor is Early Goal-Directed Therapy (EGDT), the protocol from Emanuel Rivers' landmark 2001 single-center trial of 263 septic-shock patients, which reported a striking mortality reduction from aggressive, protocolized early resuscitation targeting specific hemodynamic goals (Rivers, 2001). EGDT reshaped sepsis care worldwide and seeded the protocolized, time-bound philosophy that SEP-1 later codified."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-30",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-31",
+          "_type": "span",
+          "marks": [],
+          "text": "But when EGDT was tested rigorously at scale, it did not hold up. Three large multicenter randomized trials — ProCESS (US), ARISE (Australasia), and ProMISe (UK) — found that strict EGDT protocolization offered no mortality benefit over good usual care (NEJM patient-level meta-analysis, 2017). The nuance matters: the trials did not prove early sepsis treatment useless — they showed that once clinicians recognize sepsis and treat it promptly, the specific rigid protocol adds little. That is the crux of the SEP-1 debate: the bundle mandates the protocolized specifics that the best trials found unnecessary, while the genuinely valuable part — early recognition and prompt treatment — is harder to capture in a checkbox."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-32",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-33",
+          "_type": "span",
+          "marks": [],
+          "text": "SEP-1 inherited its DNA from a 2001 protocol that three large trials later failed to confirm. The enduring lesson of those trials was that prompt recognition matters more than rigid protocol — yet it is the rigid protocol that SEP-1 scores."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "sep-34",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-35",
+          "_type": "span",
+          "marks": [],
+          "text": "The Antibiotic Stewardship Tension"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sep-36",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-37",
+          "_type": "span",
+          "marks": [],
+          "text": "One specific concern deserves emphasis because it pits two quality goals against each other. SEP-1's time-to-antibiotics requirement pressures clinicians to give broad-spectrum antibiotics quickly to anyone who might be septic. But sepsis is hard to diagnose at the bedside, and a measure that penalizes delay incentivizes treating possible sepsis as definite sepsis. The result, critics argue, is overuse of broad-spectrum antibiotics in patients who turn out not to have bacterial sepsis — directly undermining antimicrobial stewardship programs that are themselves a national patient-safety priority. A measure designed to improve safety can, at the margin, degrade it on a different axis."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-38",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-39",
+          "_type": "span",
+          "marks": [],
+          "text": "SEP-1 asks clinicians to act fast on a diagnosis that is often uncertain. Speed is the right instinct in true sepsis — but a measure that scores speed alone can convert diagnostic uncertainty into reflexive broad-spectrum prescribing."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "sep-40",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-41",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Compliance Varies So Much"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sep-42",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-43",
+          "_type": "span",
+          "marks": [],
+          "text": "SEP-1's all-or-nothing design has an underappreciated consequence: a hospital can deliver excellent sepsis care and still fail the measure on a technicality. Because every bundle element must be completed and documented within its time window, a single missed lactate redraw, a fluid order placed but charted late, or an antibiotic given just outside the window fails the entire case. A meaningful share of measured 'non-compliance' is therefore a documentation and workflow problem rather than a care-quality problem — which is why hospitals invest heavily in sepsis order sets, automated screening alerts, and abstraction support purely to capture the care they are already providing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-44",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-45",
+          "_type": "span",
+          "marks": [],
+          "text": "This design also explains the persistent gap between large academic centers and smaller or critical access hospitals. Larger centers have dedicated sepsis coordinators, mature electronic order sets, and chart-abstraction teams; smaller hospitals often do not, so they score worse even when bedside care is comparable. When SEP-1 was a reporting measure, that gap was an information asymmetry. Now that it sits in Value-Based Purchasing, the same gap becomes a payment penalty that flows away from exactly the resource-constrained hospitals least able to build the documentation infrastructure that compliance rewards."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-46",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-47",
+          "_type": "span",
+          "marks": [],
+          "text": "Toward a Better Measure"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sep-48",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-49",
+          "_type": "span",
+          "marks": [],
+          "text": "The constructive response gaining traction is not to abandon sepsis measurement but to reorient it from process to outcome. A risk-adjusted, mortality-based sepsis measure — one that asks whether a hospital's septic patients survive at expected rates given their severity, rather than whether boxes were checked — would reward the thing that matters and would not penalize a hospital for treating sepsis effectively in a way the bundle does not recognize. It would also relieve the antibiotic-overuse pressure, since hospitals would be judged on survival rather than on speed-to-antibiotic in isolation. The technical challenge is real: sepsis is heterogeneous and hard to risk-adjust, and outcome measures can be gamed through coding. But the major infectious-disease and critical-care societies have judged those challenges more tractable than the conceptual flaw at the heart of a process bundle the evidence does not support."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-50",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-51",
+          "_type": "span",
+          "marks": [],
+          "text": "What This Means for Hospitals"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sep-52",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-53",
+          "_type": "span",
+          "marks": [],
+          "text": "For hospital leaders, the practical posture is dual. Operationally, because SEP-1 now affects VBP payment, hospitals have to perform on it: that means reliable sepsis-screening triggers, order sets that make the bundle the path of least resistance, and documentation that captures compliance accurately (a meaningful share of 'failures' are documentation gaps, not care gaps). Clinically, the smarter programs treat SEP-1 as a floor, not a ceiling — using it to drive early recognition while layering on antimicrobial stewardship guardrails so the antibiotic-overuse risk is actively managed rather than ignored."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-54",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-55",
+          "_type": "span",
+          "marks": [],
+          "text": "For policymakers, SEP-1 is a case study in the limits of process measures. It illustrates how a metric can become entrenched in payment policy faster than the evidence base matures, and why the field is pushing CMS toward an outcome-based sepsis measure — one that rewards risk-adjusted survival rather than checkbox completion. Whether CMS replaces or augments SEP-1 with such a measure is the open policy question."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-56",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-57",
+          "_type": "span",
+          "marks": [],
+          "text": "There is also a credible federal model for what better looks like. In August 2023, the CDC released its Hospital Sepsis Program Core Elements — a framework that, instead of scoring a single time-bound bundle, asks hospitals to stand up a real sepsis program: leadership commitment and dedicated accountability, structures for identification and management, and measurement of local sepsis epidemiology and outcomes (CDC, 2023). It is a program-maturity model rather than a checkbox, and it points toward the kind of measurement that rewards building durable capability over passing individual cases."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-58",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-59",
+          "_type": "span",
+          "marks": [],
+          "text": "The Core Elements also widen the lens beyond the acute admission. Sepsis is not over when the patient leaves the ICU: survivors face elevated risk of readmission, functional decline, and death for months to years afterward — 'post-sepsis syndrome.' A measurement regime fixated on a few hours of bundle compliance captures none of that downstream burden, which is where much of sepsis's true cost and mortality actually accrues. An outcome-oriented framework can; a process bundle cannot."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-60",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-61",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sep-62",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-63",
+          "_type": "span",
+          "marks": [],
+          "text": "Three developments will shape the next phase. First, whether CMS responds to the IDSA petition by developing a risk-adjusted, mortality-based sepsis measure to complement or replace SEP-1 — the single most important signal. Second, whether the VBP financial incentive measurably changes compliance behavior and, more importantly, whether any compliance gains translate into outcome gains or merely more antibiotic use. Third, the equity dimension: because critical access and low-volume hospitals lag on compliance, a payment penalty attached to SEP-1 could disproportionately draw dollars away from the rural hospitals least able to absorb the loss — turning a quality measure into a regressive transfer if not carefully calibrated."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-64",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-65",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sep-66",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-67",
+          "_type": "span",
+          "marks": [],
+          "text": "SEP-1 is simultaneously the most influential and most contested sepsis policy in the United States. It has standardized early sepsis management and, since 2024, carries real financial stakes through Hospital Value-Based Purchasing — yet the evidence that compliance saves lives remains inconclusive, the measure carries a real risk of driving antibiotic overuse, and its all-or-nothing scoring penalizes documentation gaps and resource-poor hospitals as much as genuine care failures. The defensible institutional strategy is threefold: perform on SEP-1 because it now affects payment; manage its antibiotic-overuse side effect through active stewardship; and build toward the CDC Core Elements model of a mature, outcome-measured sepsis program rather than treating bundle compliance as the goal. Alongside that, the field's major infectious-disease and critical-care societies are right to press CMS for a risk-adjusted, mortality-based successor measure. The principle is simple: a measure that moves Medicare dollars should eventually have to prove that it moves mortality — and on that test, SEP-1 has not yet delivered."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-68",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-69",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sep-71",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-72",
+          "_type": "span",
+          "marks": [
+            "sep-70"
+          ],
+          "text": "PMC — Effect of SEP-1 Compliance on Mortality Among Patients With Sepsis: A Systematic Review (2025)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sep-70",
+          "_type": "link",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12015987/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-74",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-75",
+          "_type": "span",
+          "marks": [
+            "sep-73"
+          ],
+          "text": "CIDRAP — Study finds no link between CMS sepsis bundle and fewer deaths"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sep-73",
+          "_type": "link",
+          "href": "https://www.cidrap.umn.edu/antimicrobial-stewardship/study-finds-no-link-between-cms-sepsis-bundle-fewer-deaths"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-77",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-78",
+          "_type": "span",
+          "marks": [
+            "sep-76"
+          ],
+          "text": "HealthLeaders — CMS Takes Significant Step to Improve Sepsis Care in 2024 IPPS Rule (SEP-1 enters VBP)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sep-76",
+          "_type": "link",
+          "href": "https://www.healthleadersmedia.com/clinical-care/expert-cms-takes-significant-step-improve-sepsis-care-2024-ipps-rule"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-80",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-81",
+          "_type": "span",
+          "marks": [
+            "sep-79"
+          ],
+          "text": "End Sepsis — SEP-1 Is Not Good Enough (IDSA petition context)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sep-79",
+          "_type": "link",
+          "href": "https://www.endsepsis.org/2023/08/17/end-sepsis-sep-1-response/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-83",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-84",
+          "_type": "span",
+          "marks": [
+            "sep-82"
+          ],
+          "text": "2 Minute Medicine — SEP-1 sepsis management bundle not associated with improved mortality"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sep-82",
+          "_type": "link",
+          "href": "https://www.2minutemedicine.com/sep-1-sepsis-management-bundle-not-associated-with-improved-mortality/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-86",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-87",
+          "_type": "span",
+          "marks": [
+            "sep-85"
+          ],
+          "text": "CDC — Sepsis: facts, incidence, and mortality"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sep-85",
+          "_type": "link",
+          "href": "https://www.cdc.gov/sepsis/hcp/core-elements/index.html"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-89",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-90",
+          "_type": "span",
+          "marks": [
+            "sep-88"
+          ],
+          "text": "NEJM — Early, Goal-Directed Therapy for Septic Shock: A Patient-Level Meta-Analysis (ProCESS/ARISE/ProMISe)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sep-88",
+          "_type": "link",
+          "href": "https://www.nejm.org/doi/full/10.1056/NEJMoa1701380"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-92",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-93",
+          "_type": "span",
+          "marks": [
+            "sep-91"
+          ],
+          "text": "AHRQ HCUP — Assessment of Sepsis in the United States and Its Burden on Hospital Care"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sep-91",
+          "_type": "link",
+          "href": "https://hcup-us.ahrq.gov/reports/SepsisUSBurdenHospitalCare.pdf"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "sep-95",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sep-96",
+          "_type": "span",
+          "marks": [
+            "sep-94"
+          ],
+          "text": "CDC — Hospital Sepsis Program Core Elements (2023)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "sep-94",
+          "_type": "link",
+          "href": "https://www.cdc.gov/sepsis/hcp/core-elements/index.html"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "SEP-1, the federal sepsis-care bundle, became pay-for-performance in 2024 — now affecting Medicare payment through Hospital Value-Based Purchasing — yet a systematic review of 12 studies found no moderate/high-quality evidence it reduces mortality, and it risks driving antibiotic overuse. This analysis covers the requirements, the contested evidence, and the push for an outcome-based successor.",
+  "title": "Sepsis Protocol Standardization: SEP-1 Bundle Compliance and Mortality Outcomes"
+}

@@ -1,0 +1,473 @@
+{
+  "_id": "policyAnalysis-equ-002",
+  "body": [
+    {
+      "_key": "algo-63",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-64",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical algorithms — from risk scores to lab-result formulas to AI models — are supposed to be objective. Many are not. A series of landmark findings has shown that widely used clinical tools systematically disadvantage Black and other minority patients, and in 2024 the federal government made identifying and mitigating that bias a legal obligation. This analysis examines the canonical examples, the mechanisms that produce bias, the new regulatory duty under Section 1557, and what mitigation actually requires."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-65",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-66",
+          "_type": "span",
+          "marks": [],
+          "text": "The Canonical Examples"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "algo-67",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-68",
+          "_type": "span",
+          "marks": [],
+          "text": "Three cases anchor the field. The watershed was Obermeyer and colleagues' 2019 Science study, which found that a commercial algorithm used to manage the care of millions of patients systematically under-estimated the illness of Black patients — because it used historical healthcare spending as a proxy for health need, and less had historically been spent on Black patients with the same conditions. The model faithfully learned a pattern of unequal access and reproduced it as lower predicted need (Science, 2019)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-69",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-70",
+          "_type": "span",
+          "marks": [],
+          "text": "The second is race-corrected eGFR, the kidney-function formula that for years adjusted Black patients' results upward on the assumption of higher muscle mass — making their kidneys look healthier than they were, delaying diagnosis, specialist referral, and transplant eligibility. After evidence of harm, the National Kidney Foundation and American Society of Nephrology recommended removing race from the equation. The third is pulse oximetry: the ubiquitous finger device overestimates blood-oxygen saturation in patients with darker skin, because its calibration data came largely from light-skinned subjects — a hardware bias that contributed to under-treatment, including during COVID-19 (PMC; FDA)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-71",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-72",
+          "_type": "span",
+          "marks": [],
+          "text": "The pattern across the canonical cases is the same: a tool built on unrepresentative data or a flawed proxy encodes existing inequity and then dispenses it as objective fact. The bias is not in the math; it is in what the math was trained on and asked to predict."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "algo-73",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-74",
+          "_type": "span",
+          "marks": [],
+          "text": "How Bias Gets In"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "algo-75",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-76",
+          "_type": "span",
+          "marks": [],
+          "text": "Algorithmic bias in medicine arises through a few recurring mechanisms. The first is a biased proxy: using a measurable stand-in (spending) for the real target (need) when the proxy itself reflects inequity — the Obermeyer mechanism. The second is unrepresentative training or calibration data: a model or device built mostly on one population performs worse on others — the pulse-oximetry mechanism. The third is race-based correction: explicitly building race into a formula on contested biological assumptions — the eGFR mechanism. The fourth is label and access bias: when the outcome a model learns from (a diagnosis, a procedure) is itself shaped by who historically had access to care, the model learns the access gap as if it were a clinical fact."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-77",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-78",
+          "_type": "span",
+          "marks": [],
+          "text": "The common thread is that none of these is a coding error to be debugged. Each reflects a choice about data, proxies, or assumptions — which means bias cannot be prevented by better engineering alone. It requires deliberate evaluation of how a tool performs across subgroups, before and after deployment, by people empowered to act on what they find."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-79",
+      "_type": "code",
+      "code": "[{\"Mechanism\":\"Biased proxy\",\"Example\":\"Spending used for 'need' (Obermeyer 2019)\"},{\"Mechanism\":\"Unrepresentative data\",\"Example\":\"Pulse oximetry calibrated on light skin\"},{\"Mechanism\":\"Race-based correction\",\"Example\":\"Race-adjusted eGFR delaying kidney care\"},{\"Mechanism\":\"Label/access bias\",\"Example\":\"Models learning historical access gaps as need\"}]",
+      "title": "Mechanisms of clinical algorithmic bias"
+    },
+    {
+      "_key": "algo-80",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-81",
+          "_type": "span",
+          "marks": [],
+          "text": "The De-Racing Debate"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "algo-82",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-83",
+          "_type": "span",
+          "marks": [],
+          "text": "Removing race from clinical algorithms is the right move in cases like eGFR, but the field has learned it is not a simple universal rule, and the nuance matters. Race is a social construct, not a biological one, so building it into a formula as if it were a genetic variable is usually wrong — and in eGFR it caused direct harm. But race in a dataset sometimes acts as a proxy for real, unmeasured factors (exposure, access, environmental burden), so naively deleting it can occasionally make a model less accurate for the very group it was meant to help. The sophisticated position is not 'race in' or 'race out' but: never use race as a biological input or a justification for differential treatment, and where race appears to carry predictive signal, find and use the real underlying variable (income, neighborhood, exposure) instead of the racial proxy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-84",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-85",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why mitigation is harder than it sounds and cannot be reduced to a slogan. It requires understanding why a variable is in a model and what it stands for — work that demands clinical, statistical, and equity expertise together. The danger is that the legitimate push to de-race algorithms becomes mechanical, with organizations stripping race to satisfy a rule without doing the harder work of replacing it with the genuine causal factors, potentially trading a visible bias for a hidden one."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-86",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-87",
+          "_type": "span",
+          "marks": [],
+          "text": "The New Legal Duty: Section 1557"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "algo-88",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-89",
+          "_type": "span",
+          "marks": [],
+          "text": "In 2024 this stopped being only an ethics issue and became a compliance one. The HHS Office for Civil Rights' final rule under Section 1557 of the ACA (published May 6, 2024) explicitly prohibits discrimination through 'patient care decision support tools' — a deliberately broad term spanning flowcharts, clinical formulas, and AI/ML models. It cites race-corrected algorithms (eGFR, pulmonary-function equations), population health risk-prediction tools, and biased devices like pulse oximeters as examples of potential violations (Health Affairs; National Health Law Program)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-90",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-91",
+          "_type": "span",
+          "marks": [],
+          "text": "Critically, the rule imposes affirmative, ongoing duties: covered entities must make reasonable efforts to identify decision-support tools that use a protected characteristic as an input and to mitigate the risk of discrimination from each tool's use. The general prohibition took effect May 1, 2025. This converts bias mitigation from optional best practice into a regulatory obligation backed by civil-rights enforcement — a significant shift in incentives for health systems and the vendors that sell them algorithms."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-92",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-93",
+          "_type": "span",
+          "marks": [],
+          "text": "Section 1557's 2024 rule reframes algorithmic bias as discrimination, not just bad engineering. A health system can now be liable not only for building a biased tool but for using one without checking — which makes subgroup evaluation a compliance requirement, not a nicety."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "algo-94",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-95",
+          "_type": "span",
+          "marks": [],
+          "text": "What Mitigation Requires"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "algo-96",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-97",
+          "_type": "span",
+          "marks": [],
+          "text": "Effective mitigation operates at three stages. In development: representative training data, subgroup performance reporting, and avoiding biased proxies and unjustified race correction. In validation: mandatory pre-deployment testing of how a tool performs across race, ethnicity, sex, age, and socioeconomic proxies — not just overall accuracy, which can hide subgroup failure. In deployment: ongoing post-market surveillance stratified by subgroup, because a model's performance drifts as populations and practice change. The recurring lesson is that overall accuracy is not enough; a model can be highly accurate on average and dangerously wrong for a subgroup, and only disaggregated evaluation catches it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-98",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-99",
+          "_type": "span",
+          "marks": [],
+          "text": "The Vendor Accountability Gap"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "algo-100",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-101",
+          "_type": "span",
+          "marks": [],
+          "text": "A practical problem complicates the new legal duty: most health systems do not build their algorithms — they buy them, often as opaque components embedded in EHRs, imaging software, and risk-stratification platforms. Section 1557 places the obligation on the covered entity using the tool, but the entity frequently cannot see inside it: vendors treat training data, performance-by-subgroup, and model logic as proprietary, leaving the buyer legally responsible for discrimination it has no practical way to detect. This is the algorithmic equivalent of being told to inspect a sealed box."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-102",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-103",
+          "_type": "span",
+          "marks": [],
+          "text": "Closing this gap requires pushing accountability up the supply chain. Buyers increasingly need to demand subgroup-performance documentation, validation data, and bias-audit results as a condition of purchase, and 'model cards' or nutrition-label-style disclosures are emerging to standardize what vendors must reveal. Until that transparency is routine, the legal duty and the practical ability to meet it are mismatched — the entity holds the liability while the vendor holds the information. How that tension resolves, through contracting norms or regulation reaching the vendors themselves, will determine whether the Section 1557 rule produces real audits or just paperwork attesting to boxes no one can actually open."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-104",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-105",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "algo-106",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-107",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: how aggressively OCR enforces the Section 1557 algorithm provisions and what compliance norms emerge; whether health systems build real algorithm-inventory-and-audit programs or treat the rule as paperwork; whether the de-racing of clinical formulas (eGFR, pulmonary function, others) continues and reaches practice uniformly; whether the FDA tightens device-bias requirements (as it has begun to for pulse oximetry); and whether AI vendors furnish the subgroup-performance documentation buyers now need to meet their own legal duty. The combination of high-profile evidence and a new legal hook makes this one of the faster-moving equity fronts in health care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-108",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-109",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "algo-110",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-111",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical algorithmic bias is well-documented, harmful, and now legally actionable. The canonical cases — Obermeyer's risk algorithm, race-corrected eGFR, pulse oximetry — show a single pattern: tools that encode existing inequity and present it as objective. The 2024 Section 1557 rule turns mitigation into an affirmative duty, requiring health systems to find and fix discriminatory decision-support tools or face civil-rights liability. Meeting that duty means subgroup evaluation at development, validation, and deployment — because overall accuracy hides the failures that matter. The era of treating clinical algorithms as neutral by default is over; the question now is whether systems build the audit capacity the new obligation requires."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-112",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-113",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "algo-115",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-116",
+          "_type": "span",
+          "marks": [
+            "algo-114"
+          ],
+          "text": "Science (2019) — Dissecting racial bias in an algorithm used to manage population health (Obermeyer et al.)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "algo-114",
+          "_type": "link",
+          "href": "https://www.science.org/doi/10.1126/science.aax2342"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-118",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-119",
+          "_type": "span",
+          "marks": [
+            "algo-117"
+          ],
+          "text": "PMC — Mitigating Racial and Ethnic Bias in Clinical Algorithms: Scoping Review and Policy Implications"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "algo-117",
+          "_type": "link",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10668606/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-121",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-122",
+          "_type": "span",
+          "marks": [
+            "algo-120"
+          ],
+          "text": "FDA — Performance Evaluation of Pulse Oximeters (skin-pigmentation bias)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "algo-120",
+          "_type": "link",
+          "href": "https://www.fda.gov/media/175828/download"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-124",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-125",
+          "_type": "span",
+          "marks": [
+            "algo-123"
+          ],
+          "text": "Health Affairs Forefront — Section 1557 Rule Mandates Identification and Mitigation of Discriminatory Clinical Algorithms"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "algo-123",
+          "_type": "link",
+          "href": "https://www.healthaffairs.org/content/forefront/section-1557-rule-mandates-identification-and-mitigation-discriminatory-clinical"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "algo-127",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "algo-128",
+          "_type": "span",
+          "marks": [
+            "algo-126"
+          ],
+          "text": "National Health Law Program — 1557 Final Rule Protects Against Bias in Health Care Algorithms"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "algo-126",
+          "_type": "link",
+          "href": "https://healthlaw.org/1557-final-rule-protects-against-bias-in-health-care-algorithms/"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "Widely used clinical algorithms — Obermeyer's care-management model, race-corrected eGFR, pulse oximetry — systematically disadvantage minority patients by encoding biased proxies, unrepresentative data, and race correction. The 2024 Section 1557 rule makes identifying and mitigating that bias a legal duty (effective May 2025). This analysis covers the canonical cases, the mechanisms, the new obligation, and what subgroup-level mitigation requires.",
+  "title": "Algorithmic Bias in Clinical AI: Detection Methods and Mitigation Strategies"
+}

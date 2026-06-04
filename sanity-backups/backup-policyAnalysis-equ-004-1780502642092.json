@@ -1,0 +1,91 @@
+{
+  "_id": "policyAnalysis-equ-004",
+  "body": [
+    {
+      "_key": "k329",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k330",
+          "_type": "span",
+          "marks": [],
+          "text": "Legal Framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k331",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k332",
+          "_type": "span",
+          "marks": [],
+          "text": "Section 1557 of the ACA prohibits discrimination on the basis of national origin in covered healthcare programs, which HHS interprets to require meaningful access for Limited English Proficient (LEP) patients. Approximately 26M U.S. residents are LEP, including 10.6M who speak Spanish and 9M who speak Asian and Pacific Island languages as their primary language."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k333",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k334",
+          "_type": "span",
+          "marks": [],
+          "text": "Compliance Landscape"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k335",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k336",
+          "_type": "span",
+          "marks": [],
+          "text": "A 2025 Joint Commission review of 200 hospitals found 67% had qualified medical interpreter services available 24/7 for the top three languages spoken in their market, but only 29% had such services for the top 10 languages. Telephone interpreter services are available more broadly, but call connection wait times averaged 8.4 minutes — a significant barrier in urgent clinical situations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k337",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k338",
+          "_type": "span",
+          "marks": [],
+          "text": "Patient Safety Implications"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k339",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k340",
+          "_type": "span",
+          "marks": [],
+          "text": "Communication failures in LEP patients are associated with adverse event rates 2-3x higher than English-proficient patients. The most common preventable adverse events include medication errors (wrong dose or frequency conveyed in translation), missed follow-up due to discharge instructions not understood, and delayed diagnosis due to symptom history misinterpretation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "Section 1557 requires language access for LEP patients, but compliance is inconsistent. This analysis examines telephonic versus in-person interpreter quality, the role of machine translation, and language access as a patient safety issue.",
+  "title": "Language Access in Healthcare: Legal Requirements and Implementation Gaps"
+}

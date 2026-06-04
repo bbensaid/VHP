@@ -1,0 +1,66 @@
+{
+  "_id": "capitation-mechanics-rvu-volume",
+  "body": [
+    {
+      "_key": "zjj7hqxo",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "jeu2xw4b",
+          "_type": "span",
+          "marks": [],
+          "text": "The core pathology of rural healthcare economics is the reliance on the 'Cost Shift.' Hospitals have historically compensated for Medicare and Medicaid underpayments by charging exorbitant rates to commercial payers. With Vermont's working-age population projected to decline by 13% by 2040, the tax base for this cross-subsidization is vanishing."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "o5i9r8vx",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "52wmypva",
+          "_type": "span",
+          "marks": [],
+          "text": "The End of the RVU"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "z5kt81yd",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "y88hfhrt",
+          "_type": "span",
+          "marks": [],
+          "text": "Value-Based Care (VBC) requires dismantling the Relative Value Unit (RVU) as the primary measure of physician productivity. When hospitals are paid via Capitation (a flat per-member-per-month fee), generating high RVUs through excessive testing destroys operating margins."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "q43lwsw6",
+      "_type": "code",
+      "code": "[\n  {\n    \"Metric\": \"Population Over Age 65\",\n    \"Result\": \"Reaching 30% by 2040\"\n  },\n  {\n    \"Metric\": \"Commercial Payer Base\",\n    \"Result\": \"-13% Contraction\"\n  },\n  {\n    \"Metric\": \"Required Commercial Markup to Break Even\",\n    \"Result\": \"+262% over Medicare\"\n  }\n]",
+      "language": "json",
+      "title": "The Math of the Demographic Cliff (2025-2040)"
+    },
+    {
+      "_key": "q1rsrbe7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "bcqpqde5",
+          "_type": "span",
+          "marks": [],
+          "text": "You cannot balance a system-wide government deficit on the backs of a shrinking commercial middle class. The arithmetic of the cost-shift has failed."
+        }
+      ],
+      "style": "quote"
+    }
+  ],
+  "summary": "As the working-age commercial insurance base shrinks, the traditional 'cost-shift' mechanism is bankrupting rural hospitals. Capitation offers the only mathematical exit from the demographic death spiral.",
+  "title": "Capitation Mechanics: Decoupling Rural Solvency from RVU Volume"
+}

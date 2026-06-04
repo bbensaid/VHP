@@ -1,0 +1,489 @@
+{
+  "_id": "health-economics-fundamentals-vermont-act-167",
+  "body": [
+    {
+      "_key": "e9-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-2",
+          "_type": "span",
+          "marks": [],
+          "text": "Health economics offers a precise vocabulary for what Vermont is living through. The state's Act 167 hospital-sustainability investigation did not invent a new crisis; it documented, in unusually concrete terms, the collision between a demand curve that keeps rising and a financing structure that can no longer support it. Reading the Vermont case through the standard tools of the field — derived demand, price elasticity, cross-subsidization, and the distinction between cost-shifting and cost-saving — turns a set of alarming headlines into a coherent, and correctable, economic story."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-4",
+          "_type": "span",
+          "marks": [],
+          "text": "Health as Capital: The Grossman Framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-6",
+          "_type": "span",
+          "marks": [],
+          "text": "Michael Grossman's foundational model treats health not as a good consumed for its own sake but as a stock of 'health capital' that depreciates over time and can be replenished through investment — medical care, but also nutrition, housing, and behavior. Demand for medical care, in this framing, is a derived demand: people do not want hospital visits, they want the health those visits restore. The model predicts that demand for care rises as the depreciation rate of health capital rises, which is precisely what aging does."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-8",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont is one of the oldest states in the country. Roughly 22 percent of Vermonters are 65 or older, placing it near the top of the national rankings alongside Maine and Florida, and about 28 percent are 60 or older. In Grossman's terms, Vermont's population is depreciating its health capital faster than almost any other state's, which mechanically pushes up the derived demand for medical care even before any change in prices or technology. This is the demographic engine underneath the Act 167 findings: an aging population generates rising care demand as a matter of biology, not policy choice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-10",
+          "_type": "span",
+          "marks": [],
+          "text": "Inelastic Demand and the Affordability Trap"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-12",
+          "_type": "span",
+          "marks": [],
+          "text": "Price elasticity of demand measures how much the quantity demanded falls when price rises. For much of medical care — and especially for the chronic and acute needs of an older, rural population — demand is highly inelastic: a heart attack, a hip fracture, or insulin does not become optional because the price went up. The Act 167 community-engagement process, which reached more than 3,100 participants across all 14 of Vermont's hospital service areas, surfaced exactly this dynamic. Rural Vermonters need access regardless of price, yet the price of that access — premiums and deductibles — has climbed far faster than incomes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-14",
+          "_type": "span",
+          "marks": [],
+          "text": "Inelastic demand has a hard policy implication: you cannot solve an affordability crisis by expecting patients to 'shop' their way out of it. When demand barely responds to price, rising prices do not reduce utilization; they reduce financial security, push people to forgo care they actually need, and eventually drive them out of the insurance pool altogether. That is the affordability trap, and Vermont is deep in it. On the state's individual exchange, Vermont Health Connect, premiums have roughly doubled or more over recent years, and payers have told the legislature that the regulated insurance markets have been losing money."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-16",
+          "_type": "span",
+          "marks": [],
+          "text": "The Cross-Subsidy That Quietly Expired"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-18",
+          "_type": "span",
+          "marks": [],
+          "text": "For decades, American hospital finance rested on a cross-subsidy: commercial insurers paid well above cost, and those margins covered the losses hospitals booked on Medicare and especially Medicaid patients. Vermont hospital leaders describe this openly — they argue they must charge commercial insurers high rates because public-payer reimbursement is too low, with Medicaid payments among the lowest in the nation. Economically, this is a private tax levied on commercially-insured Vermonters to fund a public obligation the state and federal governments under-fund."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-19",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-20",
+          "_type": "span",
+          "marks": [],
+          "text": "The cross-subsidy works only as long as the commercial base is large and stable enough to absorb the load. It is not anymore. As premiums double, employers and individuals drop or thin their coverage, shrinking the commercial pool that the whole structure depends on. In 2023, Blue Cross and Blue Shield of Vermont paid out roughly $1.11 in claims for every $1.00 of premium it collected — an unsustainable loss ratio that signals the commercial side can no longer carry the subsidy. The 'silent social contract' that premiums would rise forever to cover public-payer shortfalls has, in Vermont, audibly broken."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-21",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-22",
+          "_type": "span",
+          "marks": [],
+          "text": "The economic core of Act 167: Vermont faces rising, inelastic demand (an aging population depreciating its health capital) financed by a shrinking commercial cross-subsidy. Those two curves cannot be reconciled by asking patients to shop harder or by raising premiums further — the first fails because demand is inelastic, the second fails because it accelerates the collapse of the commercial pool."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "e9-23",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-24",
+          "_type": "span",
+          "marks": [],
+          "text": "Cost-Shifting Versus Cost-Saving"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-25",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-26",
+          "_type": "span",
+          "marks": [],
+          "text": "A crucial distinction in health economics is between shifting a cost and eliminating it. The commercial cross-subsidy is pure cost-shifting: the dollar is simply moved from a public payer to a private one, and total system spending is unchanged. Genuine relief requires cost-saving — reducing the resources the system consumes to produce a given amount of health. Higher taxation, as the Act 167 report itself notes, mostly shifts costs onto residents and businesses (with the added risk of driving them out of state); it does not lower the underlying cost of care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-27",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-28",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why Vermont's most-discussed reforms — hospital global budgets, reference-based pricing, and the multi-state AHEAD model — are structured to attack cost growth rather than reallocate it. A global budget caps a hospital's total revenue and forces it to live within a fixed envelope, converting the incentive from 'do more billable volume' to 'keep the population healthy at lower total cost.' Whether these tools deliver real savings is an empirical question, but their logic is correct: only cost-saving, not cost-shifting, can resolve a crisis in which every payer is already stretched."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-29",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-30",
+          "_type": "span",
+          "marks": [],
+          "text": "The National Backdrop"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-31",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-32",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's predicament is an intensified version of the national one. U.S. national health expenditure reached $5.3 trillion in 2024 — about $15,474 per person and 18.0 percent of GDP — after growing 7.2 percent in a single year. The United States spends roughly twice as much per capita as comparable wealthy countries yet posts a life expectancy of 79.0 years, about 3.7 years below the peer-country average of 82.7. The country, in other words, buys less health per dollar than its peers, and Vermont buys it for an older, more rural, more expensive-to-serve population."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-33",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-34",
+          "_type": "span",
+          "marks": [],
+          "text": "Chronic disease is the dominant cost driver nationally, with projections that it could cost the United States as much as $47 trillion over the 2024–2039 period. For a state whose demographics guarantee a heavy and growing chronic-disease burden, the math is unforgiving: the same forces straining the national system bear down on Vermont first and hardest, which is precisely why Vermont has become a national test case for whether a small state can re-engineer hospital finance before the cross-subsidy collapses entirely."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-35",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-36",
+          "_type": "span",
+          "marks": [],
+          "text": "Moral Hazard, Insurance, and the Limits of Cost-Sharing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-37",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-38",
+          "_type": "span",
+          "marks": [],
+          "text": "Health economics also explains why the standard private-market remedy — making patients bear more cost through high deductibles — backfires in Vermont. The textbook rationale for cost-sharing is moral hazard: insulated from price, insured patients consume more care than they would if they paid directly, so deductibles are meant to restore price sensitivity. But moral hazard only bites where demand is elastic and care is discretionary. For an older, sicker, rural population whose utilization is dominated by chronic-disease management and acute events, the discretionary margin is thin, and high deductibles mostly deter necessary care rather than wasteful care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-39",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-40",
+          "_type": "span",
+          "marks": [],
+          "text": "The empirical literature is consistent on this point: blunt cost-sharing reduces high-value and low-value care roughly alike, because patients cannot reliably tell which is which. In Vermont's context, that means deductible-heavy designs translate directly into forgone primary care and medication non-adherence, which raise downstream costs through avoidable hospitalizations. The policy implication is that financial protection and cost control are not in tension here — protecting access to high-value primary and preventive care is itself a cost-control strategy, because it heads off the expensive acute episodes the system can least afford."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-41",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-42",
+          "_type": "span",
+          "marks": [],
+          "text": "What the Framework Tells Policymakers"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-43",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-44",
+          "_type": "span",
+          "marks": [],
+          "text": "The health-economics lens yields a short, disciplined list of conclusions. First, demand is rising for demographic reasons that policy cannot reverse, so the lever must be the cost of producing health, not the quantity of health demanded. Second, because demand is inelastic, consumer-shopping and high-deductible designs will not bend the curve and will mostly transfer financial risk onto patients. Third, the commercial cross-subsidy is a depleting resource that cannot be stretched further without collapsing the pool that funds it. Fourth, only cost-saving structural reform — global budgets, payment redesign, prevention, and right-sizing of services — addresses the actual problem; everything else is cost-shifting dressed up as a solution."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-45",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-46",
+          "_type": "span",
+          "marks": [],
+          "text": "Act 167 is best understood not as a doomsday report but as a forcing function: it translates the abstractions of health economics into a dated, dollar-denominated ultimatum. The framework says the crisis is real, the easy answers are illusions, and the hard answers — restructuring how care is financed and delivered — are the only ones the economics will actually support."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-47",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-48",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-49",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-50",
+          "_type": "span",
+          "marks": [],
+          "text": "Every figure above is drawn from primary state and federal sources and peer-reviewed health-economics reporting. Key references:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-52",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-53",
+          "_type": "span",
+          "marks": [
+            "e9-51"
+          ],
+          "text": "Green Mountain Care Board — Act 167 Hospital Sustainability (Oliver Wyman report & FAQ)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e9-51",
+          "_type": "link",
+          "href": "https://healthcarereform.vermont.gov/frequently-asked-questions-act-167-hospital-transformation-report"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-55",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-56",
+          "_type": "span",
+          "marks": [
+            "e9-54"
+          ],
+          "text": "VTDigger — Vermont Health Connect premiums have doubled, or more (Oct 2025)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e9-54",
+          "_type": "link",
+          "href": "https://vtdigger.org/2025/10/31/on-vermont-health-connect-annual-premium-prices-have-doubled-or-more/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-58",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-59",
+          "_type": "span",
+          "marks": [
+            "e9-57"
+          ],
+          "text": "America's Health Rankings — Vermont population age 65+"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e9-57",
+          "_type": "link",
+          "href": "https://www.americashealthrankings.org/explore/measures/pct_65plus/VT"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-61",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-62",
+          "_type": "span",
+          "marks": [
+            "e9-60"
+          ],
+          "text": "Health Affairs — National Health Care Spending Increased 7.2% in 2024"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e9-60",
+          "_type": "link",
+          "href": "https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2025.01683"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-64",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-65",
+          "_type": "span",
+          "marks": [
+            "e9-63"
+          ],
+          "text": "Peterson-KFF Health System Tracker — U.S. life expectancy vs. comparable countries"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e9-63",
+          "_type": "link",
+          "href": "https://www.healthsystemtracker.org/chart-collection/u-s-life-expectancy-compare-countries/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-67",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-68",
+          "_type": "span",
+          "marks": [
+            "e9-66"
+          ],
+          "text": "Partnership to Fight Chronic Disease / Milken — chronic disease cost projections"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e9-66",
+          "_type": "link",
+          "href": "https://www.fightchronicdisease.org/post/new-report-chronic-disease-could-cost-the-u-s-47-trillion-over-next-15-years"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "An applied health-economics reading of Vermont's Act 167 crisis: an aging population (22% over 65) drives rising, inelastic demand for care while the commercial cross-subsidy that funded Medicaid/Medicare shortfalls collapses — BCBSVT paid $1.11 per premium dollar in 2023. The fix must be cost-saving structural reform (global budgets, AHEAD), not cost-shifting via taxes or premiums. Anchored to verified NHE ($5.3T, 18% GDP) and life-expectancy (79.0 vs 82.7) data.",
+  "title": "Health Economics Fundamentals: Act 167 & The Vermont Case"
+}

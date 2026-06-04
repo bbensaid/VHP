@@ -1,0 +1,91 @@
+{
+  "_id": "policyAnalysis-pol-004",
+  "body": [
+    {
+      "_key": "k53",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k54",
+          "_type": "span",
+          "marks": [],
+          "text": "Background on Certificate of Need"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k55",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k55-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Certificate of Need laws, operating in 35 states and DC (as of 2024), require healthcare providers to obtain state approval before adding beds, acquiring major equipment, or opening new facilities. Originally designed to prevent costly duplication, CON laws have increasingly been criticized for limiting competition and access in underserved markets."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k57",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k58",
+          "_type": "span",
+          "marks": [],
+          "text": "2025-2026 Legislative Activity"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k59",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k60",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2025-2026 legislative cycle represents the most active CON reform period in two decades. Seven states modified their programs: three states narrowed CON requirements for rural facilities (Tennessee, Montana, South Dakota), two states expanded CON to cover outpatient surgery centers (New Jersey, Connecticut), and two states fully repealed their programs (North Carolina rural carve-out, Idaho)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k61",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k62",
+          "_type": "span",
+          "marks": [],
+          "text": "Rural Hospital Exception Model"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k63",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k63-s",
+          "_type": "span",
+          "marks": [],
+          "text": "A rural-exception model has emerged in some states, carving out CON-free zones for sparsely populated counties or areas far from the nearest hospital, on the theory that CON review deters investment where access is already scarce. Early results are limited, and evidence on whether these carve-outs meaningfully expand rural capacity is still thin."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "CON laws are being re-evaluated as rural hospital closures accelerate. This analysis tracks the 2025-2026 legislative cycle, where 7 states modified CON programs — some expanding protections, others creating rural exemptions to attract new entrants.",
+  "title": "Certificate of Need Laws in 2026: Expansion, Contraction, and the Rural Hospital Exception"
+}

@@ -1,0 +1,91 @@
+{
+  "_id": "policyAnalysis-eco-002",
+  "body": [
+    {
+      "_key": "k93",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k94",
+          "_type": "span",
+          "marks": [],
+          "text": "Market Context"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k95",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k96",
+          "_type": "span",
+          "marks": [],
+          "text": "Healthcare private equity experienced a significant recalibration in 2024-2025 following the interest rate surge of 2022-2023. With the 10-year Treasury stabilizing around 4.2%, leveraged buyout economics have normalized, but the frothy exit environment of 2019-2021 has not returned."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k97",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k98",
+          "_type": "span",
+          "marks": [],
+          "text": "Sector-Specific Dynamics"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k99",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k100",
+          "_type": "span",
+          "marks": [],
+          "text": "Behavioral health remains the most sought-after sub-sector, with 247 transactions in 2025 (down from 312 in 2023 but stable from 2024). Dental services organizations (DSOs) faced the sharpest multiple compression, falling from 14x to 8x EBITDA as Medicaid adult dental expansions have not materialized as projected."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k101",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k102",
+          "_type": "span",
+          "marks": [],
+          "text": "Regulatory Headwinds"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k103",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k104",
+          "_type": "span",
+          "marks": [],
+          "text": "FTC and state attorney general scrutiny of healthcare consolidation has extended deal timelines by an average of 8 months. Three PE-backed transactions were blocked outright in 2025: two anesthesiology roll-ups and one home health acquisition. FTC's 2024 policy statement on physician practice acquisitions explicitly targets roll-up strategies."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "summary": "PE-backed healthcare exits declined 34% by deal count in 2025, with EBITDA multiples compressing from 16x to 11x in physician management organizations. This analysis examines sector-specific dynamics in behavioral health, dental, and urgent care.",
+  "title": "Healthcare Private Equity Exit Multiples Compress as Interest Rates Stabilize"
+}

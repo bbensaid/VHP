@@ -1,0 +1,395 @@
+{
+  "_id": "algorithmic-second-opinion-liability-crisis",
+  "body": [
+    {
+      "_key": "liab-113",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-114",
+          "_type": "span",
+          "marks": [],
+          "text": "As AI moves from suggesting to effectively co-deciding in clinical care, an unresolved question grows more urgent: when an AI tool contributes to a patient harm, who is liable? The clinician who relied on it? The hospital that deployed it? The vendor that built it? This analysis examines the current liability landscape, the double-bind it creates for clinicians, the vendor-accountability gap, and the documentation practices emerging as a medicolegal standard."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-115",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-116",
+          "_type": "span",
+          "marks": [],
+          "text": "The Current Answer: The Clinician"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "liab-117",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-118",
+          "_type": "span",
+          "marks": [],
+          "text": "The law's current answer is blunt: the clinician whose name is on the chart bears responsibility for its contents. There is no federal law that shifts malpractice liability from a clinician to an AI tool or its developer, and courts have long held that clinicians have a duty to exercise independent medical judgment regardless of what an algorithm recommended. Blindly following an AI's recommendation without critical evaluation — even if the AI is flawed — can itself be a breach of the standard of care (CM&F Group; PMC). In other words, AI does not absolve the clinician; the clinician remains the responsible decision-maker, and the AI is treated as a tool whose output they were obligated to evaluate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-119",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-120",
+          "_type": "span",
+          "marks": [],
+          "text": "This places the legal weight squarely on the human at the point of care, which is coherent with how medicine has always assigned responsibility but increasingly uncomfortable as AI tools become more capable and more relied upon. A clinician who is expected to independently verify everything an AI produces captures less of the AI's efficiency benefit; a clinician who trusts the AI to save time assumes the liability if it errs. The law currently resolves the tension entirely in one direction — onto the clinician — and that allocation is starting to strain."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-121",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-122",
+          "_type": "span",
+          "marks": [],
+          "text": "The law's current answer is blunt: the clinician whose name is on the chart owns its contents. No statute shifts AI malpractice liability to the vendor, and blindly following a flawed AI can itself breach the standard of care. AI doesn't absolve the clinician — it adds a tool they're legally obligated to second-guess."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "liab-123",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-124",
+          "_type": "span",
+          "marks": [],
+          "text": "The Double Bind"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "liab-125",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-126",
+          "_type": "span",
+          "marks": [],
+          "text": "The emerging liability landscape creates a genuine paradox for clinicians. On one side, they face liability for using AI incorrectly — accepting a hallucinated detail, deferring to a biased risk score, exhibiting 'automation bias' by trusting the machine over their own judgment. On the other, as AI tools become established and effective, they may increasingly face liability for failing to use them — if a standard, accurate AI tool would have caught something a clinician missed, not using it could itself become a deviation from an evolving standard of care (Indigo; Physician AI Handbook). The clinician is squeezed between the risk of over-trusting AI and the risk of under-using it, with the safe middle ground narrow and shifting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-127",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-128",
+          "_type": "span",
+          "marks": [],
+          "text": "This double bind is destabilizing precisely because the standard of care is moving. Today, declining to use AI is defensible; as AI tools become validated and widespread, that may change, and a clinician who eschewed an established tool could be found negligent. The law has not resolved where the line sits or how fast it is moving, leaving clinicians to navigate liability exposure from both directions simultaneously — a uniquely unstable position created by a technology whose role is changing faster than the legal framework around it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-129",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-130",
+          "_type": "span",
+          "marks": [],
+          "text": "The Vendor-Accountability Gap"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "liab-131",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-132",
+          "_type": "span",
+          "marks": [],
+          "text": "The deepest unfairness in the current allocation is that liability sits with the clinician while control often sits with the vendor. When an AI suggestion alters wording, omits context, or inserts erroneous content that contributes to harm, three parties are implicated: the clinician who signed the note, the institution that selected and deployed the system, and the vendor that designed and trained the model. Yet the legal weight falls heavily on the first two, while vendors — who built the model, chose the training data, and understand its failure modes — are largely shielded, often by contracts that disclaim liability and by the 'learned intermediary' logic that treats the clinician as the responsible decision-maker (PMC; Milbank Quarterly)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-133",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-134",
+          "_type": "span",
+          "marks": [],
+          "text": "This misalignment matters because it dulls the incentive for vendors to make their tools safe and transparent. If the entity that builds and profits from an AI tool bears little liability when it errs, while the clinician who cannot see inside it bears most, the market under-invests in the safety and disclosure that would let clinicians use the tools responsibly. A more rational allocation would push some accountability up the supply chain to the vendors who control the model — through liability rules, mandatory transparency, or both — so that the party best able to prevent the harm has a reason to. How the law evolves on vendor accountability is the most consequential open question in AI liability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-135",
+      "_type": "code",
+      "code": "[{\"Party\":\"Clinician\",\"Exposure\":\"Primary — owns the chart; duty of independent judgment; double-bind exposure\"},{\"Party\":\"Institution\",\"Exposure\":\"Selected/deployed the tool; set supervision policy\"},{\"Party\":\"Vendor\",\"Exposure\":\"Built/trained the model — but largely shielded by contracts and learned-intermediary logic\"}]",
+      "title": "AI liability: who bears it"
+    },
+    {
+      "_key": "liab-136",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-137",
+          "_type": "span",
+          "marks": [],
+          "text": "What Would Fix the Allocation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "liab-138",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-139",
+          "_type": "span",
+          "marks": [],
+          "text": "The structural fix is to align liability with control — to put more accountability on the parties best positioned to prevent AI harm. Several mechanisms could do this. Liability rules could hold vendors responsible for harms traceable to their model's design, training data, or known-but-undisclosed failure modes, rather than letting contracts disclaim all responsibility onto the clinician. Mandatory transparency — requiring vendors to disclose subgroup performance, error rates, and limitations — would both inform clinicians' use and create a basis for vendor accountability when undisclosed flaws cause harm. And a clearer regulatory framework distinguishing the clinician's responsibility (appropriate use and oversight) from the vendor's (a tool that performs as represented) would let each party be accountable for what they actually control."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-140",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-141",
+          "_type": "span",
+          "marks": [],
+          "text": "The obstacle is that the current allocation serves powerful interests — vendors prefer the liability shield, and the learned-intermediary doctrine is well-established — so change will be slow and contested. But the logic is hard to escape: a system that holds clinicians liable for the failures of tools they cannot inspect, while shielding the vendors who built them, both treats clinicians unfairly and under-incentivizes safety where it can most be improved. Until the allocation shifts, the clinician remains the system's liability sponge, absorbing risk created upstream — and that is neither fair nor, for patient safety, optimal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-142",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-143",
+          "_type": "span",
+          "marks": [],
+          "text": "The Emerging Defensive Standard"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "liab-144",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-145",
+          "_type": "span",
+          "marks": [],
+          "text": "In the absence of clear law, defensive documentation practices are becoming a de facto medicolegal standard. The leading practice is the double-review or double-documentation workflow: the clinician records an independent assessment both before and after AI input, demonstrating that they exercised their own judgment rather than merely accepting the AI's output. Documenting the AI tool's known error rates and limitations in the record can also support a stronger legal defense, by showing the clinician understood and accounted for the tool's fallibility (PhysEmp). These practices are partly genuine safety measures — independent judgment is exactly what prevents automation-bias harm — and partly legal armor, evidence that the clinician met their duty regardless of what the AI produced."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-146",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-147",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "liab-148",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-149",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether legislation or case law begins shifting some liability toward vendors, realigning accountability with control; whether the standard of care formally evolves to expect AI use in defined situations, hardening the 'failure to use' side of the double bind; whether double-review documentation becomes a codified expectation; and whether malpractice insurers begin pricing AI use (or non-use) into premiums, which would powerfully shape clinician behavior. The liability framework is lagging the technology badly, and how it resolves — especially on vendor accountability — will shape whether clinicians can adopt AI confidently or must practice defensively around it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-150",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-151",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "liab-152",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-153",
+          "_type": "span",
+          "marks": [],
+          "text": "AI liability in medicine currently rests on a simple but increasingly strained principle: the clinician owns the chart, AI or not, and must exercise independent judgment regardless of what the algorithm says. That allocation places clinicians in a worsening double bind — liable for over-trusting AI and, as tools become standard, potentially liable for under-using it — while vendors who built and control the models remain largely shielded. The misalignment between liability (on the clinician) and control (often with the vendor) dulls the incentive for safer, more transparent tools, which is why vendor accountability is the pivotal unresolved question. In the meantime, double-review documentation is emerging as the practical defense. The law is lagging a technology that is reshaping clinical decision-making, and until it catches up — particularly on pushing accountability toward those who build the models — clinicians will bear a disproportionate share of a risk they cannot fully control."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-154",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-155",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "liab-157",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-158",
+          "_type": "span",
+          "marks": [
+            "liab-156"
+          ],
+          "text": "CM&F Group — AI in Clinical Practice: Who Is Liable When the Algorithm Gets It Wrong?"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "liab-156",
+          "_type": "link",
+          "href": "https://www.cmfgroup.com/blog/healthcare-professionals/ai-clinical-practice-liability/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-160",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-161",
+          "_type": "span",
+          "marks": [
+            "liab-159"
+          ],
+          "text": "PMC — Liability Exposure of Clinicians in Artificial Intelligence-Driven Healthcare"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "liab-159",
+          "_type": "link",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10987009/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-163",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-164",
+          "_type": "span",
+          "marks": [
+            "liab-162"
+          ],
+          "text": "Milbank Quarterly — Artificial Intelligence and Liability in Medicine: Balancing Safety and Innovation"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "liab-162",
+          "_type": "link",
+          "href": "https://www.milbank.org/quarterly/articles/artificial-intelligence-and-liability-in-medicine-balancing-safety-and-innovation/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "liab-166",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "liab-167",
+          "_type": "span",
+          "marks": [
+            "liab-165"
+          ],
+          "text": "PhysEmp — AI Documentation Is Rewriting Medical Liability Lines (double-review standard)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "liab-165",
+          "_type": "link",
+          "href": "https://www.physemp.com/blog/ai-documentation-is-rewriting-medical-liability-lines"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "summary": "When AI contributes to a patient harm, who is liable? The current answer is blunt: the clinician who owns the chart, with no law shifting liability to the vendor. This creates a double bind — clinicians are exposed for over-trusting AI and, as tools become standard, for under-using it — while vendors who built the models stay largely shielded. This analysis covers the liability landscape, the vendor-accountability gap, and the emerging double-review defensive standard.",
+  "title": "The Algorithmic Second Opinion: Who Pays When AI Misses?"
+}

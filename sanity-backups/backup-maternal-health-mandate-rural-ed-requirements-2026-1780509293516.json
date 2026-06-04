@@ -1,0 +1,214 @@
+{
+  "_id": "maternal-health-mandate-rural-ed-requirements-2026",
+  "body": [
+    {
+      "_key": "blk001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk001-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Rural maternal care deserts — counties with no hospital obstetric unit — have expanded sharply as rural hospitals close labor-and-delivery services, leaving emergency departments to handle obstetric emergencies without dedicated OB capability. This has driven policy proposals to set minimum obstetric-emergency standards for hospital EDs even where no labor-and-delivery unit exists."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk002",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "py2i2seo",
+          "_type": "span",
+          "marks": [],
+          "text": "What the Mandate Requires"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk003",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk003-s",
+          "_type": "span",
+          "marks": [],
+          "text": "The capabilities such proposals typically call for are concrete: a stocked obstetric-emergency cart aligned with the ACOG hemorrhage bundle (uterotonics, compression sutures, neonatal resuscitation equipment); at least one nurse per shift trained in obstetric/neonatal emergency response (e.g., ALSO or NRP); and a documented transfer agreement with a facility providing comprehensive obstetric care within a defined transport time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk004",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4r0lrehb",
+          "_type": "span",
+          "marks": [],
+          "text": "The United States loses more women to obstetric hemorrhage in rural emergency departments than in labor and delivery units. This mandate addresses the silent front door of the maternal mortality crisis."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "blk005",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ekrxxafn",
+          "_type": "span",
+          "marks": [],
+          "text": "Compliance Gap Analysis Across States"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk006",
+      "_type": "code",
+      "code": "[\n  {\n    \"Region\": \"Northeast\",\n    \"EDs with ALSO-certified RN on staff\": \"68%\",\n    \"EDs with OB cart\": \"54%\",\n    \"EDs with transfer agreement\": \"81%\"\n  },\n  {\n    \"Region\": \"South\",\n    \"EDs with ALSO-certified RN on staff\": \"38%\",\n    \"EDs with OB cart\": \"29%\",\n    \"EDs with transfer agreement\": \"61%\"\n  },\n  {\n    \"Region\": \"Midwest\",\n    \"EDs with ALSO-certified RN on staff\": \"52%\",\n    \"EDs with OB cart\": \"44%\",\n    \"EDs with transfer agreement\": \"74%\"\n  },\n  {\n    \"Region\": \"West\",\n    \"EDs with ALSO-certified RN on staff\": \"47%\",\n    \"EDs with OB cart\": \"39%\",\n    \"EDs with transfer agreement\": \"68%\"\n  }\n]",
+      "language": "json",
+      "title": "Estimated ED Compliance Readiness by Region (Pre-Mandate)"
+    },
+    {
+      "_key": "blk007",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ps509xco",
+          "_type": "span",
+          "marks": [],
+          "text": "The Strategic Opportunity Inside the Compliance Burden"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "blk008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "6crdl0uh",
+          "_type": "span",
+          "marks": [],
+          "text": "The transfer agreement requirement—often viewed as purely administrative—represents a leverage point for rural hospitals to negotiate formal clinical partnerships with regional referral centers. Several RHT program states, including Georgia (Obstetric Carts initiative) and North Carolina (ROOTS Hub model), have pre-positioned grant funding specifically to offset the cost of ALSO certification and cart procurement for CAHs."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk009",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mfb7vh0u",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital CFOs should run a net-revenue analysis before assuming the mandate is purely a cost center. Rural EDs that achieve ALSO certification frequently see increased volumes of prenatal visits and early labor presentations that were previously being bypassed in favor of distant delivery centers."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "blk011",
+      "_type": "image",
+      "alt": "ACOG-compliant obstetric emergency cart showing organized compartments with hemorrhage management medications, neonatal resuscitation equipment, and stabilization tools required by the 2026 CMS-HRSA mandate.",
+      "caption": "Detailed photograph of an ACOG-compliant obstetric emergency cart fully stocked with labeled compartments for hemorrhage management, neonatal resuscitation, and maternal stabilization medications."
+    },
+    {
+      "_key": "blk012",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "recvn8h4",
+          "_type": "span",
+          "marks": [],
+          "text": "Implementation Timeline for Compliance Officers"
+        }
+      ],
+      "style": "h3"
+    },
+    {
+      "_key": "blk013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "da050r1d",
+          "_type": "span",
+          "marks": [],
+          "text": "February 2026: Conduct gap assessment against ACOG Hemorrhage Bundle checklist"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk014",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m9gjpvce",
+          "_type": "span",
+          "marks": [],
+          "text": "March 2026: Apply for HRSA RMOMS supplemental grant"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk015",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ian2ell4",
+          "_type": "span",
+          "marks": [],
+          "text": "April–May 2026: Schedule ALSO certification cohort for ED nursing staff"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk016",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "nje67ehb",
+          "_type": "span",
+          "marks": [],
+          "text": "June 2026: Execute transfer agreement with regional referral center; document in CoP file"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    },
+    {
+      "_key": "blk017",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "z0wk9spl",
+          "_type": "span",
+          "marks": [],
+          "text": "July 1, 2026: Compliance deadline — surveyors may begin spot checks immediately"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "style": "normal"
+    }
+  ],
+  "summary": "CMS and HRSA jointly issued updated conditions of participation requiring rural emergency departments to maintain specific obstetric emergency equipment and protocols by July 1, 2026. For the 46% of rural hospitals that currently lack OB units, these mandates create both an urgent compliance obligation and a strategic opportunity to renegotiate regional transfer agreements.",
+  "title": "The New Maternal Health Mandates: What Rural Emergency Departments Must Have on Hand by July 2026"
+}
