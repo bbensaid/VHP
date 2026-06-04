@@ -1,0 +1,92 @@
+{
+  "_id": "vermont-rural-health-transformation-2026",
+  "body": [
+    {
+      "_key": "8wjtjii5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "yj30wpyk",
+          "_type": "span",
+          "marks": [],
+          "text": "As the State of Vermont moves toward a more integrated health system, the sustainability of Critical Access Hospitals (CAHs) depends on technological liquidity and policy flexibility."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "sih00uqi",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "evo42kgw",
+          "_type": "span",
+          "marks": [],
+          "text": "I. Regional Capacity & Performance Metrics"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "xsfgydml",
+      "_type": "code",
+      "code": "[\n  {\n    \"Region\": \"Northeast Kingdom\",\n    \"Beds\": 25,\n    \"IT_Readiness\": \"High\"\n  },\n  {\n    \"Region\": \"Central Vermont\",\n    \"Beds\": 120,\n    \"IT_Readiness\": \"Medium\"\n  },\n  {\n    \"Region\": \"Southern Vermont\",\n    \"Beds\": 45,\n    \"IT_Readiness\": \"High\"\n  }\n]",
+      "language": "json",
+      "title": "Rural Facility Capacity Matrix"
+    },
+    {
+      "_key": "qyefhpzp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zze974io",
+          "_type": "span",
+          "marks": [],
+          "text": "II. Executive Audio Briefing"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "c4hr7rl7",
+      "_type": "audio",
+      "summary": "An 8-minute breakdown of the legislative hurdles facing rural health transformation in 2026.",
+      "title": "Podcast: Policy Friction in Rural Innovation",
+      "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    },
+    {
+      "_key": "6v620g16",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9enk1rbt",
+          "_type": "span",
+          "marks": [],
+          "text": "Geography should not determine the quality of a citizen's digital health identity."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "9kzqq7le",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "xeu4lron",
+          "_type": "span",
+          "marks": [],
+          "text": "III. Visualizing the Transformation"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "chdbn8tp",
+      "_type": "video",
+      "caption": "Explaining the shift to Value-Based Care in rural districts.",
+      "url": "https://www.youtube.com/watch?v=cbBKoyjFLUY"
+    }
+  ],
+  "summary": "An analysis of the Rural Health Transformation Program's impact on Vermont's independent hospitals. This report evaluates the shift from volume-based to value-based care models in low-population density areas.",
+  "title": "Rural Health Transformation: Strengthening Vermont's Critical Access Hospitals"
+}

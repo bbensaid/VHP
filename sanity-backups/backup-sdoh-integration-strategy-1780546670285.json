@@ -1,0 +1,70 @@
+{
+  "_id": "sdoh-integration-strategy",
+  "body": [
+    {
+      "_key": "qycf7pw2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "qycf7pw2-s",
+          "_type": "span",
+          "marks": [],
+          "text": "Roughly 80% of health outcomes are driven by factors outside the clinical setting — housing stability, food security, transportation access. Treating that social data with the same technical rigor as a lab result — ingesting Z-codes from primary care and matching them with social-service datasets — makes it possible to build a social-risk view that drives preventive resource allocation before a crisis occurs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "51v8rnn4",
+      "_type": "image",
+      "alt": "Diagram showing data flow between social service agencies and clinical EMRs.",
+      "caption": "Technical architecture of the ADS SDOH-to-Clinical data pipeline."
+    },
+    {
+      "_key": "6yqr5if2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9m5pgg8r",
+          "_type": "span",
+          "marks": [],
+          "text": "We are not just moving data; we are mapping the human context to the clinical outcome. Equity is a data-engineering challenge."
+        }
+      ],
+      "style": "quote"
+    },
+    {
+      "_key": "cdvme055",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "72f4q9f4",
+          "_type": "span",
+          "marks": [],
+          "text": "ADS COMPLIANCE: All integrated care partners must adopt the Gravity Project's SDOH data standards for interoperability by Q1 2027."
+        }
+      ],
+      "style": "callout"
+    },
+    {
+      "_key": "tchw22nn",
+      "_type": "code",
+      "code": "[\n  {\n    \"Variable\": \"Housing Stability\",\n    \"OutcomeImpact\": \"+22% Compliance\",\n    \"CostSaving\": \"$4.2M\"\n  },\n  {\n    \"Variable\": \"Food Security\",\n    \"OutcomeImpact\": \"+18% Outcome\",\n    \"CostSaving\": \"$2.8M\"\n  },\n  {\n    \"Variable\": \"Transport Access\",\n    \"OutcomeImpact\": \"-35% No-Shows\",\n    \"CostSaving\": \"$1.1M\"\n  }\n]",
+      "language": "json",
+      "title": "SDOH Impact on Chronic Disease Outcomes (Vermont Pilot)"
+    },
+    {
+      "_key": "au7ipt0a",
+      "_type": "audio",
+      "url": "https://www.google.com/search?q=https://ads.vermont.gov/audio/sdoh-strategy-brief.mp3"
+    },
+    {
+      "_key": "jjzsv6x9",
+      "_type": "video",
+      "url": "https://www.google.com/search?q=https://ads.vermont.gov/video/sdoh-system-demo.mp4"
+    }
+  ],
+  "summary": "A strategic framework for the Vermont ADS to bridge the gap between social services and clinical outcomes by standardizing Z-code data ingestion and geospatial social risk mapping.",
+  "title": "The Algorithmic Bridge: Integrating SDOH into Clinical Data Streams"
+}
