@@ -21,6 +21,7 @@ import TickerStrip from "@/components/TickerStrip";
 import { usePathname } from "next/navigation";
 import { MicrophoneIcon } from "@heroicons/react/24/outline";
 import { useVoice } from "@/components/VoiceContext";
+import { useBrand } from "@/components/BrandContext";
 
 // ─── COMPANY DROPDOWN (top bar) ─────────────────────────────────────────────
 const companyItems = [
@@ -547,6 +548,7 @@ const Header = () => {
   const { isHeaderVisible, setHeaderVisible, headlines } = useTicker();
   const { toggleLeft, toggleRight, setLeftOpen, setRightOpen } = useSidebar();
   const voice = useVoice();
+  const { config: brand } = useBrand();
   const isChatPage = pathname === "/chat";
 
   // Inject voice transcript into header search — skip /chat (handled there)
@@ -607,13 +609,14 @@ const Header = () => {
     if (megaMenuTimeoutRef.current) clearTimeout(megaMenuTimeoutRef.current);
   };
 
-  const megaMenuItems: { type: MegaMenuType; label: string; activeCheck: string }[] = [
+  const megaMenuItems = ([
     { type: "intelligence", label: "PILLARS", activeCheck: "/policy,/economics,/technology,/clinical,/equity,/operations,/research-lab" },
     { type: "learn", label: "ACADEMY", activeCheck: "/academy" },
     { type: "tools", label: "TOOLS", activeCheck: "/htr-simulator,/hti-dashboard,/trending-topics,/multimedia,/the-wire,/investment-tracker,/medicaid-eligibility-simulator,/transformation-friction-index,/impact-simulation" },
     { type: "states", label: "STATES & PROGRAMS", activeCheck: "/states,/vermont-act-167,/vermont-act-68,/vermont-medicaid,/vermont-rht-program,/vermont-blueprint,/vermont-vcci,/vermont-sash,/vermont-sdoh,/vermont-designated-agencies,/vermont-legislative-resources,/california-calaim,/oregon-cco,/dashboard,/ahead-model,/bed-capacity" },
     { type: "advise", label: "FUTURE ADVISORY SERVICES", activeCheck: "/advisory,/connect,/community" },
-  ];
+  ] as { type: MegaMenuType; label: string; activeCheck: string }[])
+    .filter((item) => brand.showAdvisory || item.type !== "advise");
 
   const isMenuActive = (activeCheck: string) =>
     activeCheck.split(",").some((p) => {
@@ -973,7 +976,7 @@ const Header = () => {
                   { label: "HTR Connect", href: "/connect", sub: [] },
                 ],
               },
-            ].map((section) => (
+            ].filter((section) => brand.showAdvisory || section.key !== "advise").map((section) => (
               <div key={section.key} className="border-b border-slate-100 dark:border-slate-700">
                 <button
                   onClick={() => setMobileSection(mobileSection === section.key ? null : section.key)}
