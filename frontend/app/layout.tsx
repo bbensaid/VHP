@@ -2,8 +2,10 @@ import React from "react";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { cookies } from "next/headers";
+import { cookies, headers } from "next/headers";
 import Header from "@/components/Header";
+import { BrandProvider } from "@/components/BrandContext";
+import { resolveBrand, getBrandConfig } from "@/lib/brand";
 import { TickerProvider } from "@/components/TickerContext";
 import { SidebarProvider } from "@/components/SidebarContext";
 import AppShell from "@/components/AppShell";
@@ -17,11 +19,15 @@ import { VoiceProvider } from "@/components/VoiceContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Health Transformation Review",
-  description:
-    "Policy, Economics, and Technology at the Nexus of Healthcare Reform.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const host = (await headers()).get("host");
+  const { displayName } = getBrandConfig(resolveBrand(host));
+  return {
+    title: displayName,
+    description:
+      "Policy, Economics, and Technology at the Nexus of Healthcare Reform.",
+  };
+}
 
 // Next 16 requires viewport in its own export — moved out of metadata.
 export const viewport: Viewport = {
@@ -37,6 +43,7 @@ export default async function RootLayout({
 }) {
   const cookieStore = await cookies();
   const betaGranted = cookieStore.get("htr_beta")?.value === "granted";
+  const brand = resolveBrand((await headers()).get("host"));
 
   // Before beta access is granted, render nothing but the gate page itself.
   if (!betaGranted) {
@@ -56,6 +63,7 @@ export default async function RootLayout({
       <body className={`${inter.className} subpixel-antialiased`}>
         <WebVitalsReporter />
         <ThemeProvider>
+          <BrandProvider brand={brand}>
           {/* Skip navigation — visible on focus for keyboard users (WCAG 2.4.1) */}
           <a
             href="#main-content"
@@ -81,6 +89,7 @@ export default async function RootLayout({
               </VoiceProvider>
             </SidebarProvider>
           </TickerProvider>
+          </BrandProvider>
         </ThemeProvider>
       </body>
     </html>

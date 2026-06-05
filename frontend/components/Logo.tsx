@@ -1,7 +1,11 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { useBrand } from "@/components/BrandContext";
 
 const Logo: React.FC = () => {
+  const { config } = useBrand();
   return (
     <div className="inline-block group cursor-pointer select-none">
       
@@ -31,7 +35,7 @@ const Logo: React.FC = () => {
              <div className="leading-tight subpixel-antialiased">
           <div className="text-[10px] sm:text-xs font-bold text-slate-900">HEALTH</div>
           <div className="text-[10px] sm:text-xs font-bold text-slate-900">TRANSFORMATION</div>
-          <div className="text-[10px] sm:text-xs font-bold text-slate-900">SOLUTIONS</div>
+          <div className="text-[10px] sm:text-xs font-bold text-slate-900">{config.logoWord}</div>
         </div>
       </div>
 
