@@ -1,9 +1,13 @@
 import { MetadataRoute } from "next";
+import { headers } from "next/headers";
+import { resolveBrand } from "@/lib/brand";
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://htr.vercel.app";
+const FALLBACK_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://htr.vercel.app";
 
-// Static routes with their change frequency and priority
-const staticRoutes: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
+// Static routes with their change frequency and priority.
+// `advisoryOnly` paths are excluded from the sitemap on the "review" brand,
+// where the advisory section does not exist.
+const staticRoutes: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]; advisoryOnly?: boolean }[] = [
   // Core
   { path: "/",                    priority: 1.0, changeFrequency: "daily" },
   { path: "/mission",             priority: 0.8, changeFrequency: "monthly" },
@@ -50,12 +54,12 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
   { path: "/academy/faculty",     priority: 0.6, changeFrequency: "monthly" },
 
   // Advisory & tools
-  { path: "/advisory",            priority: 0.8, changeFrequency: "monthly" },
-  { path: "/connect",             priority: 0.8, changeFrequency: "monthly" },
-  { path: "/advisory/reports",    priority: 0.7, changeFrequency: "weekly" },
-  { path: "/advisory/research",   priority: 0.7, changeFrequency: "weekly" },
-  { path: "/advisory/consulting", priority: 0.7, changeFrequency: "monthly" },
-  { path: "/advisory/contact",    priority: 0.7, changeFrequency: "monthly" },
+  { path: "/advisory",            priority: 0.8, changeFrequency: "monthly", advisoryOnly: true },
+  { path: "/connect",             priority: 0.8, changeFrequency: "monthly", advisoryOnly: true },
+  { path: "/advisory/reports",    priority: 0.7, changeFrequency: "weekly",  advisoryOnly: true },
+  { path: "/advisory/research",   priority: 0.7, changeFrequency: "weekly",  advisoryOnly: true },
+  { path: "/advisory/consulting", priority: 0.7, changeFrequency: "monthly", advisoryOnly: true },
+  { path: "/advisory/contact",    priority: 0.7, changeFrequency: "monthly", advisoryOnly: true },
   { path: "/hti-dashboard",       priority: 0.8, changeFrequency: "weekly" },
   { path: "/trending-topics",     priority: 0.8, changeFrequency: "daily" },
   { path: "/multimedia",          priority: 0.7, changeFrequency: "weekly" },
@@ -76,13 +80,23 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
   { path: "/terms",               priority: 0.4, changeFrequency: "yearly" },
 ];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
 
-  return staticRoutes.map(({ path, priority, changeFrequency }) => ({
-    url: `${APP_URL}${path}`,
-    lastModified: now,
-    changeFrequency,
-    priority,
-  }));
+  // Each domain serves a sitemap rooted at its own host, so search engines see
+  // self-consistent canonical URLs per brand instead of cross-domain links.
+  const host = (await headers()).get("host");
+  const proto = (await headers()).get("x-forwarded-proto") ?? "https";
+  const baseUrl = host ? `${proto}://${host}` : FALLBACK_URL;
+
+  const brand = resolveBrand(host);
+
+  return staticRoutes
+    .filter((r) => brand !== "review" || !r.advisoryOnly)
+    .map(({ path, priority, changeFrequency }) => ({
+      url: `${baseUrl}${path}`,
+      lastModified: now,
+      changeFrequency,
+      priority,
+    }));
 }

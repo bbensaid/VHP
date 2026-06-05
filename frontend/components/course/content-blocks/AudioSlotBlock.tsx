@@ -39,7 +39,8 @@ export function AudioSlotRenderer({
   function togglePlay() {
     const audio = audioRef.current;
     if (!audio) return;
-    isPlaying ? audio.pause() : audio.play();
+    if (isPlaying) audio.pause();
+    else audio.play();
     setIsPlaying(!isPlaying);
   }
 

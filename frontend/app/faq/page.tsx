@@ -94,7 +94,7 @@ const faqs = [
     ],
   },
   {
-    category: "Future Advisory Services",
+    category: "Advisory Services",
     icon: "🤝",
     items: [
       {

@@ -4,7 +4,7 @@
 //   healthtransformationreview.org    / .com  → "review"    (reduced: no advisory)
 //
 // 99% of the app is identical across domains. The only differences are the logo
-// wordmark, the display name, and whether the "Future Advisory Services" section
+// wordmark, the display name, and whether the "Advisory Services" section
 // is shown. Everything flows from a single brand value resolved per request from
 // the Host header.
 
@@ -15,7 +15,7 @@ export interface BrandConfig {
   logoWord: string;
   /** Full brand name for <title>, metadata, footer copyright. */
   displayName: string;
-  /** Whether the "Future Advisory Services" nav section is available. */
+  /** Whether the "Advisory Services" nav section is available. */
   showAdvisory: boolean;
 }
 

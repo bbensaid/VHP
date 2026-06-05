@@ -101,7 +101,12 @@
       "Bash(cd /Users/baba/Vermont-Health-Platform/frontend)",
       "Bash(node scripts/expand-batch-econ-6.mjs --commit)",
       "Bash(df -h /private/tmp 2>/dev/null | tail -1; echo \"---\"; pkill -f \"next dev\" 2>/dev/null; pkill -f \"next-server\" 2>/dev/null; rm -rf /private/tmp/claude-502/node-compile-cache 2>/dev/null; rm -f /private/tmp/*.log 2>/dev/null; find /private/tmp -maxdepth 2 -type f -size +5M 2>/dev/null | head; df -h /private/tmp 2>/dev/null | tail -1)",
-      "Bash(node scripts/expand-batch-econ-7.mjs --commit)"
+      "Bash(node scripts/expand-batch-econ-7.mjs --commit)",
+      "Bash(export TMPDIR=/Users/baba/Vermont-Health-Platform/.tmp_build)",
+      "Bash(mkdir -p /Users/baba/Vermont-Health-Platform/.tmp_build)",
+      "Bash(grep -n \"eslint\\\\|ignoreDuringBuilds\\\\|ignoreBuildErrors\\\\|typescript\" next.config.ts)",
+      "Bash(timeout 600 npm run build)",
+      "Bash(echo \"EXIT=$?\")"
     ],
     "additionalDirectories": [
       "/private/tmp"
