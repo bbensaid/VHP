@@ -206,7 +206,7 @@ const SECTIONS: Section[] = [
   },
   {
     id: "advisory",
-    title: "Future Advisory Services",
+    title: "Advisory Services",
     emoji: "🤝",
     color: "bg-sky-700",
     pages: [
