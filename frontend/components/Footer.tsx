@@ -1,8 +1,10 @@
 // components/Footer.tsx
+"use client";
 
 import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
+import { useBrand } from "@/components/BrandContext";
 
 const pillars = [
   {
@@ -92,6 +94,10 @@ const platformLinks = [
 ];
 
 const Footer: React.FC = () => {
+  const { config: brand } = useBrand();
+  const visiblePlatformLinks = platformLinks.filter(
+    (l) => brand.showAdvisory || l.href !== "/advisory"
+  );
   return (
     <footer className="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 mt-auto">
       
@@ -211,7 +217,7 @@ const Footer: React.FC = () => {
               Platform
             </h4>
             <ul className="space-y-2.5">
-              {platformLinks.map((l) => (
+              {visiblePlatformLinks.map((l) => (
                 <li key={l.label}>
                   <Link
                     href={l.href}
@@ -224,7 +230,8 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Advisory */}
+          {/* Advisory — hidden on the "review" brand */}
+          {brand.showAdvisory && (
           <div>
             <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 dark:text-slate-400 mb-4">
               Advisory
@@ -247,6 +254,7 @@ const Footer: React.FC = () => {
               ))}
             </ul>
           </div>
+          )}
 
           {/* Contact */}
           <div>
@@ -293,7 +301,7 @@ const Footer: React.FC = () => {
         {/* ── BOTTOM BAR ──────────────────────────────────────────────── */}
         <div className="border-t border-slate-200 dark:border-slate-700 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
           <div className="flex items-center gap-3">
-            <p>© {new Date().getFullYear()} Health Transformation Review. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} {brand.displayName}. All rights reserved.</p>
             <span className="hidden md:inline text-slate-400">·</span>
             <p className="hidden md:block text-slate-500 dark:text-slate-400">
               Non-partisan. Independent. Evidence-driven.

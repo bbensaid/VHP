@@ -39,6 +39,7 @@ import {
   type PillarId,
   type Program,
 } from "@/lib/taxonomy";
+import { useBrand } from "@/components/BrandContext";
 
 interface FeaturedCourse {
   slug: string;
@@ -374,6 +375,9 @@ const SETUP_SEQUENCE = "setup";
 export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const { config: brand } = useBrand();
+  // On the "review" brand the advisory section is removed entirely.
+  const sections = SECTIONS.filter((s) => brand.showAdvisory || s.id !== "advisory");
   const [showSetup, setShowSetup] = useState(false);
   const [featuredCourse, setFeaturedCourse] = useState<FeaturedCourse | null>(null);
 
@@ -483,7 +487,7 @@ export default function HomeSidebar({ onNavigate }: HomeSidebarProps) {
 
       {/* ── Section list ──────────────────────────────────────────────────── */}
       <div>
-        {SECTIONS.map((section) => {
+        {sections.map((section) => {
           const isOpen = expandedSections.includes(section.id);
           const SectionIcon = section.icon;
 
