@@ -87,7 +87,7 @@ const companyLinks = [
 const platformLinks = [
   { label: "State Performance Dashboard", href: "/dashboard" },
   { label: "HTR Academy", href: "/academy" },
-  { label: "Future Advisory Services", href: "/advisory" },
+  { label: "Advisory Services", href: "/advisory" },
   { label: "Multimedia & Podcasts", href: "/multimedia" },
   { label: "Trending Topics", href: "/trending-topics" },
   { label: "Subscribe", href: "/subscribe" },

@@ -63,7 +63,8 @@ export function CourseSidebar({
   function toggleTrack(trackId: string) {
     setOpenTrackIds((prev) => {
       const next = new Set(prev);
-      next.has(trackId) ? next.delete(trackId) : next.add(trackId);
+      if (next.has(trackId)) next.delete(trackId);
+      else next.add(trackId);
       return next;
     });
   }

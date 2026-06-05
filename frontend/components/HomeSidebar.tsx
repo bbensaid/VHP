@@ -305,9 +305,9 @@ const SECTIONS: Section[] = [
   // ── STATES & PROGRAMS — generated from taxonomy ────────────────────────────
   buildProgramsSection(),
 
-  // ── FUTURE ADVISORY SERVICES ──────────────────────────────────────────────
+  // ── ADVISORY SERVICES ──────────────────────────────────────────────
   {
-    id: "advisory", label: "Future Advisory Services",
+    id: "advisory", label: "Advisory Services",
     icon: BriefcaseIcon,
     dot: "bg-indigo-500",
     headerColor: "text-indigo-700", headerBg: "bg-indigo-100",
