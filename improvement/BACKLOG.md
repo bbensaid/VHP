@@ -11,7 +11,8 @@
 | ID | Lane | Candidate | Impact | Conf | Effort | Score | Risk | Status | Provenance |
 |---|---|---|---|---|---|---|---|---|---|
 | C0-7 | H | Address 2 high npm vulnerabilities (`npm audit`) | 4 | 5 | S(1) | 20 | additive | **✅ DONE Cycle 2** | next 16.2.3→16.2.7 patch; 2 high→0; smoke passed |
-| C0-8 | H | Capture Sentry baseline; triage top open error clusters | 4 | 4 | S(1) | 16 | additive | proposed | Plan §3; not yet captured |
+| C0-8 | H | Capture Sentry baseline; triage top open error clusters | 4 | 4 | S(1) | 16 | additive | **partially ✅ Cycle 3** | Fixed the gap that made server errors invisible (see C0-14). Live dashboard baseline still needs user's Sentry creds. |
+| C0-14 | H | Wire Sentry server/RSC error capture in `instrumentation.ts` (import server/edge configs + export `onRequestError`) | 4 | 5 | S(1) | 20 | additive | **✅ DONE Cycle 3** | Server/RSC errors were silently dropped on Next 16; now captured. smoke passed |
 | C0-12 | H | Refresh Supabase backup; set ≤30-day cadence (code/infra only, no content writes) | 3 | 5 | S(1) | 15 | additive | proposed | Plan §2 Lane H |
 | C0-11 | B | Capture typecheck + bundle baselines (fill scoreboard blanks) | 2 | 5 | S(1) | 10 | additive | proposed | scoreboard has gaps |
 | C0-9 | A | Converge or document the 3 backend deploy descriptors (fly/railway/Procfile) | 2 | 4 | S(1) | 8 | additive | proposed | Doc 01; fly active, others fallback |
