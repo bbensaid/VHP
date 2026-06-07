@@ -5,6 +5,32 @@
 
 ---
 
+## Cycle 3 — C0-14 Sentry server/RSC error capture — ✅ DONE (2026-06-07)
+
+**Lane:** H (ops/security). **Approved + executed.** Started as C0-8 (capture Sentry baseline); OBSERVE found a config gap that made the baseline meaningless, so the cycle fixed the gap instead.
+
+**Finding:** `@sentry/nextjs@9.47.1` installed, `sentry.{client,server,edge}.config.ts` present, `withSentryConfig` in `next.config.ts` — BUT `instrumentation.ts` `register()` only patched a dev perf bug; it never imported the server/edge Sentry configs, and there was no `onRequestError` export. On Next.js 15/16 that means **server-component, route-handler, and RSC errors were never sent to Sentry**. A "Sentry baseline" would have been falsely empty for server errors.
+
+**Change:** `frontend/instrumentation.ts` only —
+- `import * as Sentry from "@sentry/nextjs"`.
+- In `register()`, after the existing (untouched) dev-perf patch: `await import("./sentry.server.config")` for nodejs runtime, `./sentry.edge.config` for edge.
+- `export const onRequestError = Sentry.captureRequestError`.
+- All gated behavior preserved: configs are no-ops unless `NODE_ENV==="production"` + DSN set.
+
+**Metric — before → after:** server/RSC errors captured by Sentry: **no → yes** (in production). Dev behavior unchanged.
+
+**Verify (all passed):** typecheck exit 0 · eslint on changed file exit 0 · `npm run build` exit 0 ("✓ Compiled successfully in 115s") · `bundle:check` ✅ under budget.
+
+**Files changed:** `frontend/instrumentation.ts` only. No content, no DB, no deps.
+
+**Rollback:** `git checkout frontend/instrumentation.ts`.
+
+**Follow-ups:** C0-8 reduced to "read live Sentry dashboard baseline" — still blocked on user's Sentry creds (DSN/API token not local). Now that server errors are actually captured, that baseline will be trustworthy once taken.
+
+**Next proposed unit:** C0-6 (lint warning burndown, start with 142 `no-unused-vars`) or C0-11 (typecheck/bundle baselines — already partly captured this cycle).
+
+---
+
 ## Cycle 2 — C0-7 npm high-severity vulnerabilities — ✅ DONE (2026-06-06)
 
 **Lane:** H (ops/security). **Approved + executed.**
