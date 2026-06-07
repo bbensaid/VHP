@@ -106,7 +106,25 @@
       "Bash(mkdir -p /Users/baba/Vermont-Health-Platform/.tmp_build)",
       "Bash(grep -n \"eslint\\\\|ignoreDuringBuilds\\\\|ignoreBuildErrors\\\\|typescript\" next.config.ts)",
       "Bash(timeout 600 npm run build)",
-      "Bash(echo \"EXIT=$?\")"
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(defaults read *)",
+      "Bash(rm -rf ~/Library/Caches/*)",
+      "Bash(rm -rf ~/Library/pnpm/store/*)",
+      "Bash(rm -rf ~/.npm/_cacache)",
+      "Bash(rm -rf ~/.cache/uv/*)",
+      "Bash(rm -rf ~/.cache/node/*)",
+      "Bash(sed -n '1,40p' backend/routers/chat.py)",
+      "Bash(sed -n '1,30p' frontend/app/api/webhooks/sanity/route.ts)",
+      "Bash(sed -n '189,230p' backend/services/llm.py)",
+      "Bash(sed -n '889,905p' backend/services/tools.py)",
+      "Bash(pandoc /tmp/vhp-combined.md -f gfm -t html5 --standalone --toc --toc-depth=2 --metadata 'title=Vermont Health Platform — Documentation' -o /tmp/vhp-combined.html)",
+      "Bash(weasyprint /tmp/vhp-combined.html \"Vermont-Health-Platform-Documentation.pdf\" -s /tmp/vhp-doc-style.css)",
+      "Bash(grep -vE \"^\\\\s*$\")",
+      "Bash(sips -s format png --out /tmp/vhp-p1.png \"Vermont-Health-Platform-Documentation.pdf\")",
+      "Bash(qlmanage -t -s 1000 -o /tmp \"Vermont-Health-Platform-Documentation.pdf\")",
+      "Bash(pandoc /tmp/vhp-combined.md -f gfm -t docx --toc --toc-depth=2 --metadata 'title=Vermont Health Platform — Documentation' -o Vermont-Health-Platform-Documentation.docx)",
+      "Bash(base64 -i \"Vermont-Health-Platform-Documentation.docx\" -o /tmp/vhp-docx.b64)",
+      "Bash(pandoc /tmp/vhp-combined.md -f gfm -t docx --toc --toc-depth=3 --metadata 'title=Vermont Health Platform — Complete Documentation Set' --metadata 'author=HTR — Healthcare Transformation Roadmap' -o Vermont-Health-Platform-Documentation.docx)"
     ],
     "additionalDirectories": [
       "/private/tmp"
