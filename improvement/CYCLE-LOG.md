@@ -1,0 +1,94 @@
+# Cycle Log — append-only LEARN entries
+
+> The recursive edge: each cycle's OBSERVE starts by reading the most recent entry here.
+> Newest entries at the top.
+
+---
+
+## Cycle 2 — C0-7 npm high-severity vulnerabilities — ✅ DONE (2026-06-06)
+
+**Lane:** H (ops/security). **Approved + executed.**
+
+**Change:** `cd frontend && npm audit fix` (no `--force`). Bumped `next` 16.2.3 → **16.2.7** (in-range patch of existing `^16.1.6`; `package.json` unchanged, only `package-lock.json`). Transitive `@babel/plugin-transform-modules-systemjs` high resolved too.
+
+**Metric — before → after:**
+- npm vulnerabilities: **25 (2 high, 23 moderate) → 21 (0 high, 21 moderate)**. Both highs cleared.
+- Cleared CVE classes in `next`: DoS, middleware/proxy bypass, App Router XSS, RSC cache poisoning, SSRF, image-optimization DoS.
+
+**Verify (all passed):** `npm run typecheck` clean · `npm run build` exit 0 ("✓ Compiled successfully in 2.7min", all ~184 routes) · `npm run bundle:check` ✅ under budget (8.47 MB / 20 MB; largest chunk 1.23 MB / 1.5 MB).
+
+**Files changed:** `frontend/package-lock.json` only. No content, no DB, no migrations.
+
+**Rollback:** `git checkout frontend/package-lock.json`.
+
+**New candidates surfaced:** 21 remaining moderates are all transitive via `@sanity/*` and `@sentry/*` depending on a vulnerable `uuid`/`@sanity/uuid`. `npm audit fix` won't touch them (needs upstream bumps or `--force` with breaking changes). → added C0-13 below.
+
+**Next proposed unit:** C0-8 (Sentry error baseline, read-only) or C0-13 (investigate the `uuid`-chain moderates, propose-only).
+
+---
+
+## Scope change — Content lanes ABORTED (2026-06-06)
+
+**User directive:** abort all content work; keep the rest of the loop.
+
+**Actions taken (loop config only — no app data touched):**
+- RUNBOOK: added a CONTENT WORK — HARD STOP banner; DIAGNOSE now discards any content candidate; content actions listed as a backstop always-pause; hard-won lesson updated.
+- SCOREBOARD: removed Content/Academy (C/D) metrics; Lane E narrowed to AI **engineering** (latency, eval-as-code, retrieval config) — explicitly no content fixes.
+- BACKLOG: removed C0-2/C0-3/C0-4/C0-5/C0-10 (content); kept code/infra/AI-engineering items (C0-1, C0-6 to C0-9, C0-11, C0-12). New recommended first units: C0-7 (npm vulns), C0-8 (Sentry baseline), C0-11 (typecheck/bundle baseline).
+
+**Loop now operates on:** Lane A (architecture), B (codebase health), E (AI engineering — code only), F (tools/data/infra), G (UX/a11y), H (ops/security). It will never propose, audit-as-work, or edit editorial/Academy content again.
+
+**No code or production data changed in this scope-change step.**
+
+---
+
+## Cycle 1 — NO-GO (2026-06-06)
+
+**Proposed unit:** Re-point 12 dangling `lessons.sanity_slug` values in `genomics-precision-medicine` + `value-based-care` (strip an `academyModule-` prefix) so they'd render the existing rich Sanity docs.
+
+**Outcome: REJECTED by user. Correctly.**
+
+**What I got wrong:** I treated deliberately-disconnected content as a mechanical link bug. Those `sanity_slug`s are broken *on purpose* — the content was unverifiable and intentionally pulled after extensive prior review. The Sanity docs existing under the de-prefixed slugs is exactly the trap: present but disconnected by design. Re-linking would have silently re-published suppressed content and undone real prior work.
+
+**Root cause in the loop:** DIAGNOSE assumed "gap = defect" without first checking *why* the gap exists. OBSERVE never consulted the suppression history (`CONTENT_CORRECTIONS.md`, `VALIDATION_TRIAGE.md`, memory).
+
+**Corrective actions taken:**
+- RUNBOOK DIAGNOSE step now requires proving a gap is unintentional before it can become a candidate; if intent can't be ruled out and verifiability can't be proven, it's left alone.
+- Added "re-linking/un-hiding previously suppressed content" to **always-pause** actions, reclassified as content-restoration needing proof of verifiability.
+- Added a "Hard-won lessons" section to RUNBOOK documenting this.
+- Saved durable project memory.
+
+**Backlog impact:** C0-3 and C0-5 reclassified — `audit-courses.mjs` is fine as a *signal*, but its EMPTY/PARTIAL labels must NOT be auto-treated as work. The remaining gaps (precision-medicine, VBC, welcome) are **parked: intentional/unverified — do not touch without explicit content-restoration approval.**
+
+**No data was changed.** Diagnosis only.
+
+---
+
+## Cycle 0 — Bootstrap (2026-06-06)
+
+**Phase:** Bootstrap (stand up the loop; no production change made).
+
+**What was done**
+- Created branch `improvement/bootstrap-loop` (guardrail: never on `main`).
+- Created `/improvement/` with `RUNBOOK.md`, `SCOREBOARD.md`, `BACKLOG.md`, `CYCLE-LOG.md`.
+- Ran a read-only OBSERVE sweep and captured real baselines.
+
+**Baselines captured (before → target)**
+- Lint warnings: **293** (0 errors) → 0. Breakdown: `no-unused-vars` 142, `react/no-unescaped-entities` 138, `next/no-img-element` 13.
+- npm vulnerabilities: **25** (2 high, 23 moderate, 0 critical) → 0 high.
+- Structure: 184 page routes, 39 API handlers, 73 top-level components, 80 scripts, 34 migrations, 22 Sanity schema types.
+
+**Decisions locked in**
+- Supervised cadence · Content+AI quality first · files in `/improvement/` · additive writes proceed once a cycle is approved, deletes/migrations/billing always pause.
+
+**New candidates surfaced → added to BACKLOG**
+- C0-1…C0-12 seeded (see `BACKLOG.md`). Top by score: C0-2 (RAG 👎 instrumentation), C0-3 (`sanity_slug` audit), C0-7 (high vulns), C0-8 (Sentry baseline).
+
+**Not yet measured (gaps to close in early cycles)**
+- RAG 👎 rate, eval pass rate, content-audit counts, typecheck/bundle baselines, Sentry open clusters. These blank cells in `SCOREBOARD.md` are themselves the first OBSERVE targets.
+
+**Next cycle (cycle 1) — proposed**
+- Per lead-lane weighting + supervised cadence, present **C0-2 / C0-3 / C0-4** with evidence for go/no-go. All begin read-only; any fixes are additive and reversible.
+
+**Verification of this cycle**
+- No code or production data changed. Files are docs only. `npm run smoke` not required for a docs-only bootstrap; will run on the first EXECUTE unit.
