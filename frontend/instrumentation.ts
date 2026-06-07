@@ -19,6 +19,8 @@
  *   The patch is dev-only and a no-op in production.
  */
 
+import * as Sentry from "@sentry/nextjs";
+
 function isNegativeTimestampError(e: unknown): boolean {
   const msg = e instanceof Error ? e.message : String(e);
   return (
@@ -58,4 +60,20 @@ export async function register() {
       }
     };
   }
+
+  // Initialize Sentry per server runtime. Without these imports the
+  // sentry.{server,edge}.config.ts files never run, so server-component,
+  // route-handler, and RSC errors are never captured (Next.js 15/16 +
+  // @sentry/nextjs v9 pattern). Each config is a no-op unless
+  // NODE_ENV === "production" and NEXT_PUBLIC_SENTRY_DSN is set.
+  if (process.env.NEXT_RUNTIME === "nodejs") {
+    await import("./sentry.server.config");
+  }
+  if (process.env.NEXT_RUNTIME === "edge") {
+    await import("./sentry.edge.config");
+  }
 }
+
+// Required hook so Next.js forwards server-side request errors (Server
+// Components, Route Handlers, middleware) to Sentry.
+export const onRequestError = Sentry.captureRequestError;
