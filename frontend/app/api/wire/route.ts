@@ -4,6 +4,26 @@ import { createClient } from "@supabase/supabase-js";
 const CACHE_KEY = "wire_feed";
 const CACHE_TTL_MS = 15 * 60 * 1000; // 15 minutes
 
+// RSS titles arrive HTML-escaped (named + numeric entities). The previous
+// hand-rolled chain only decoded &amp;/&#039;/&quot;, so &#038; (&), curly
+// quotes (&#8217;), dashes (&#8211;) etc. leaked through and rendered
+// literally in The Wire headlines. This decodes named + decimal + hex
+// numeric entities generally. Runs server-side on trusted RSS titles only.
+const NAMED_ENTITIES: Record<string, string> = {
+  amp: "&", apos: "'", quot: '"', lt: "<", gt: ">", nbsp: " ",
+  ldquo: "“", rdquo: "”", lsquo: "‘", rsquo: "’",
+  ndash: "–", mdash: "—", hellip: "…",
+};
+
+function decodeEntities(text: string): string {
+  return text
+    // numeric: decimal (&#039;) and hex (&#x27;)
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(parseInt(n, 10)))
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+    // named (&amp; last so it doesn't double-decode an already-entity string)
+    .replace(/&([a-zA-Z]+);/g, (m, name) => NAMED_ENTITIES[name] ?? m);
+}
+
 function getServiceClient() {
   return createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -86,11 +106,9 @@ function parseItems(xmlText: string, source: string, label: string, limit: numbe
     const linkMatch = block.match(/<link>(.*?)<\/link>/);
     if (!titleMatch?.[1] || !linkMatch?.[1]) return [];
 
-    const title = titleMatch[1]
-      .replace(/<!\[CDATA\[(.*?)\]\]>/, "$1")
-      .replace(/&amp;/g, "&")
-      .replace(/&#039;/g, "'")
-      .replace(/&quot;/g, '"')
+    const title = decodeEntities(
+      titleMatch[1].replace(/<!\[CDATA\[(.*?)\]\]>/, "$1")
+    )
       .replace(/\s*-\s*KFF Health News\s*$/, "")
       .replace(/\s*\|\s*STAT\s*$/, "")
       .replace(/\s*-\s*Health Affairs\s*$/, "")
@@ -107,9 +125,15 @@ function parseItems(xmlText: string, source: string, label: string, limit: numbe
   });
 }
 
-export async function GET() {
-  // Try Supabase cache first
+export async function GET(request: Request) {
+  // ?nocache=1 forces a live re-fetch + re-decode, bypassing the Supabase
+  // cache. Useful after a parser/decoder change so stale-decoded headlines
+  // don't linger for up to CACHE_TTL_MS.
+  const noCache = new URL(request.url).searchParams.get("nocache") === "1";
+
+  // Try Supabase cache first (unless bypassed)
   try {
+    if (noCache) throw new Error("cache bypassed");
     const supabase = getServiceClient();
     const { data } = await supabase
       .from("ticker_cache")
