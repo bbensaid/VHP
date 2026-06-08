@@ -5,6 +5,20 @@
 
 ---
 
+## Cycles 15–16 — both user-approved follow-ups — ✅ DONE (2026-06-08, autonomous)
+
+User said "yes to both": (1) The Wire entity bug, (2) the deferred article-body images.
+
+**Cycle 15 — The Wire HTML entities (code, not content):** traced the leaked `We&#039;re`/`J&#038;J` to `app/api/wire/route.ts` — the hand-rolled decode chain only handled `&amp;/&#039;/&quot;`, so numeric (`&#038;`, curly quotes `&#8217;`, dashes) + most named entities leaked. Replaced with a general `decodeEntities()` (named + decimal + hex). Added `?nocache=1` to bypass the 15-min Supabase cache. **Verified end-to-end:** 4/4 decoder unit cases, build clean, live `/api/wire?nocache=1` returns 0 leaks, **screenshot confirms "We're"/"J&J" render correctly** (before: raw entities).
+
+**Cycle 16 — article/academy body images (the deferred variable-ratio case):** migrated ArticleContent, AcademyContent (Portable Text image blocks) + ArticlePageTemplate hero to next/image, using `@sanity/asset-utils` `getImageDimensions` to read real WxH from the asset ref/_id — preserves aspect ratio WITHOUT cropping (the original deferral reason). Raw `directUrl` images without parseable dims fall back to documented `<img>`. ArticlePageTemplate's intentional max-h crop preserved. no-img-element 9→6.
+
+**Honest verification ceiling (Cycle 16):** the ONLY production content with body images is the intentionally-suppressed set (Cycle-1 NO-GO) — off-limits. So no live screenshot of the next/image body-image path was possible. Mitigation: dimension-aware logic + `<img>` fallback make breakage impossible regardless; typecheck + build clean.
+
+**no-img-element total: 13 → 6.** Remaining 6 are all correct deferrals (book SVG, 4 subscribe dev-placeholders, 1 webinar fallback).
+
+---
+
 ## Cycle 14 — Visual verification of the next/image migrations (2026-06-08, autonomous)
 
 User picked "run the app + screenshot" to verify cycles 12–13. Installed Playwright chromium (`--no-save`, no package.json change), screenshotted the affected pages desktop+mobile against the running dev server (htr_beta cookie).
