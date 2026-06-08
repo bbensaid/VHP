@@ -36,8 +36,8 @@ RAG/content/business metrics are read from Supabase tables and `/admin/*` (see s
 | — `react/no-unescaped-entities` | lint | **138** | 138 (deferred — not ESLint-autofixable, cosmetic; low ROI vs churn) | lower priority |
 | — `react/no-unescaped-entities` | lint | **138** | 138 | 0 |
 | — `next/no-img-element` | lint | **13** | 13 | 0 |
-| Typecheck errors | `npm run typecheck` | _to capture_ | — | 0 |
-| Bundle budget | `bundle:check` | _to capture (assumed pass)_ | — | pass |
+| Typecheck errors | `npm run typecheck` | **0** (clean, Cycle 9) | 0 | 0 (hold) |
+| Bundle budget | `bundle:check` | **8.47 MB / 20 MB; largest 1.23/1.5 MB** (Cycle 9) | pass | stay under budget |
 | Top-level components | `components/*.tsx` | **73** | 73 | trending down (dedupe) |
 | One-off scripts | `frontend/scripts/` | **80** | 80 | consolidated/documented |
 | Backend mypy/pytest gating | CI | non-blocking | non-blocking | blocking |
