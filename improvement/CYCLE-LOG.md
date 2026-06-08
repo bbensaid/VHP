@@ -5,6 +5,24 @@
 
 ---
 
+## Cycle 7 — C0-6 lint burndown batch 4 (dead constants) — ✅ DONE (2026-06-07, autonomous)
+
+**Lane B.** Removed 3 *confirmed-dead* assigned-but-unused values: `CONTENT_TYPES` (role-content route), `LABEL_XS` (bed-capacity), unused `useRouter()` call + its import (signup).
+
+**Judgment applied (important):** of the 34 assigned-but-unused warnings, only the unambiguously-dead ones were removed. **Left untouched** the suspicious computed values — `consortiumBonus` (a bonus computed but never applied), `isSubscriber`/`isAdvisory` (gating flags never used). These may be *latent bugs* (logic that was meant to consume them), not safe deletions — flagged for human review, not auto-removed. This is the same "a warning is a question, not an order" discipline.
+
+**Metric:** lint **255 → 252** (−3). 0 errors.
+
+**Verify:** typecheck exit 0 · build exit 0 ("Compiled successfully in 2.1min").
+
+**Note:** the 3 edits were captured in user's manual commit `92a7e7f` (user committed mid-cycle); confirmed identical to intended diff, pushed to origin.
+
+**Decision on `no-unescaped-entities` (138):** deferred / deprioritized. Not ESLint-autofixable, purely cosmetic (React renders these fine), and hand-escaping 138 spots is high-churn/low-value. Better ROI elsewhere.
+
+**Remaining unused-vars:** 12 args (_-prefix — safe mechanical batch), 3 local funcs, ~31 suspicious assigned-unused (human review). Next: pivot off lint to higher-value lanes (C0-1 eval harness as code, C0-9 deploy descriptors, C0-11 baselines) since the cheap lint wins are mostly done.
+
+---
+
 ## Cycle 6 — C0-6 lint burndown batch 3 + harness allowlist — ✅ DONE (2026-06-07, autonomous)
 
 **Lane B.** Removed unused imports from 7 research components; also stopped removing extra dead tokens that shared the same import lines (useMemo, Copy, ChevronDown, etc.).
