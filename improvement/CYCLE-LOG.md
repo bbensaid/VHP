@@ -5,6 +5,24 @@
 
 ---
 
+## Cycle 8 — C0-9 backend deploy descriptors documented — ✅ DONE (2026-06-08, autonomous)
+
+**Lane A (architecture).** Pivoted off lint (cheap wins exhausted) to a real clarity gap.
+
+**Finding:** backend ships 4 deploy files (`fly.toml`, `Dockerfile`, `railway.toml`, `Procfile`) with no doc saying which is authoritative. CI (`fly-deploy.yml`) deploys via `flyctl deploy` → **Fly is the live target**; `railway.toml` + `Procfile` are unwired portability fallbacks.
+
+**Change:** added `backend/DEPLOYMENT.md` — TL;DR table, the actual CI pipeline, why fallbacks are kept, local-run + secrets notes. Did NOT delete the fallbacks (harmless, intentional portability insurance; deletion is a human call).
+
+**Risk:** none — pure docs, no code/behavior change. No verify gate needed beyond accuracy (confirmed against `fly-deploy.yml` + the toml files).
+
+**Also abandoned this cycle:** the 12 unused-*args* lint warnings. On inspection they're a mix — destructured component *props* (`_`-prefixing breaks the prop contract) and safe callback args (`i`/`idx`/`item`). Not a clean mechanical batch; low ROI vs. risk. Lint micro-batching is now **paused** at 252 (down from 293, −41 over cycles 4–7).
+
+**Loop health check:** 6 shipped improvements (cycles 2–8, excl. the NO-GO). Security ✅, observability ✅, −41 lint, deploy clarity ✅. Lane B (lint) is into diminishing returns; Lane A/E/H have higher-value untouched items.
+
+**Next:** C0-11 (capture typecheck/bundle baselines into scoreboard — pure measurement, fills gaps) then C0-1 (eval harness as runnable code — the highest-value AI-engineering item, code-only).
+
+---
+
 ## Cycle 7 — C0-6 lint burndown batch 4 (dead constants) — ✅ DONE (2026-06-07, autonomous)
 
 **Lane B.** Removed 3 *confirmed-dead* assigned-but-unused values: `CONTENT_TYPES` (role-content route), `LABEL_XS` (bed-capacity), unused `useRouter()` call + its import (signup).
