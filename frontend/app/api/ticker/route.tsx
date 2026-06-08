@@ -90,7 +90,7 @@ export async function GET() {
     }
 
     return NextResponse.json({ headlines: items, last_updated: fetchedAt });
-  } catch (error) {
+  } catch (_error) {
     // Live fetch failed — attempt to serve from Supabase cache
     try {
       const supabase = getServiceClient();

@@ -4,7 +4,7 @@ import React from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { useEffect, useState, useCallback, useRef, Suspense } from "react";
 import Link from "next/link";
-import { MagnifyingGlassIcon, BookmarkIcon } from "@heroicons/react/24/outline";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import BookmarkButton from "@/components/BookmarkButton";
 import { useVoice } from "@/components/VoiceContext";
 
