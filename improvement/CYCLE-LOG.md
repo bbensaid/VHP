@@ -5,6 +5,20 @@
 
 ---
 
+## Cycle 14 — Visual verification of the next/image migrations (2026-06-08, autonomous)
+
+User picked "run the app + screenshot" to verify cycles 12–13. Installed Playwright chromium (`--no-save`, no package.json change), screenshotted the affected pages desktop+mobile against the running dev server (htr_beta cookie).
+
+**Verified rendering (no breakage):** /the-wire, /advisory/reports, /academy/webinars, /book, /multimedia all render correctly — layouts intact, no broken images, fallback/no-image branches display properly.
+
+**Honest limitation found:** the production dataset currently has **zero webinars with images and zero posts with mainImage** — so the migrated `next/image` *image* code paths (ArticleFeed thumbnail, webinar hero, report cover) are **not exercised by any live content**. Every page hit the no-image fallback. So I confirmed the migrations don't break the no-image case and compile/configure correctly, but could NOT capture a live pixel of the optimized image path because no content triggers it. The book-cover image (left as raw <img>, an SVG) renders fine — confirms that deferral was right.
+
+**Also surfaced (NOT fixed — content lane, off-limits):** The Wire headlines render double-escaped HTML entities (`We&#039;re`, `J&#038;J` shown literally). Real UX defect but it's feed/content data — logged for the user, not touched.
+
+**Net:** cycles 12–13 are safe and correct; visual check passed for what's renderable. The image-optimization benefit will only be visible once content with images exists. No regressions. Temp screenshots in /tmp/uishots (not committed).
+
+---
+
 ## Cycles 12–13 — Lane G (UI/UX): img → next/image migration — ✅ DONE (2026-06-08, autonomous)
 
 User asked "why no UI/UX?" — fair. Had been avoiding it (subjective, needs visual verification). Pivoted to the **objective** UI/perf win: raw `<img>` → `next/image` (lazy-load, format optimization, no layout shift). User chose per-file migration.
