@@ -35,7 +35,7 @@ RAG/content/business metrics are read from Supabase tables and `/admin/*` (see s
 | — `no-unused-vars` | lint | **142** | **~101** (Cycle 7: ~41 unused imports + 3 dead consts removed) | 0 |
 | — `react/no-unescaped-entities` | lint | **138** | 138 (deferred — not ESLint-autofixable, cosmetic; low ROI vs churn) | lower priority |
 | — `react/no-unescaped-entities` | lint | **138** | 138 | 0 |
-| — `next/no-img-element` | lint | **13** | 13 | 0 |
+| — `next/no-img-element` | lint | **13** | **9** (Cycles 12–13: 4 → next/image; 9 remain, mostly variable-ratio article images deferred for visual check) | 0 or documented-exempt |
 | Typecheck errors | `npm run typecheck` | **0** (clean, Cycle 9) | 0 | 0 (hold) |
 | Bundle budget | `bundle:check` | **8.47 MB / 20 MB; largest 1.23/1.5 MB** (Cycle 9) | pass | stay under budget |
 | Top-level components | `components/*.tsx` | **73** | 73 | trending down (dedupe) |

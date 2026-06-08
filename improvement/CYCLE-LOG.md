@@ -5,6 +5,25 @@
 
 ---
 
+## Cycles 12–13 — Lane G (UI/UX): img → next/image migration — ✅ DONE (2026-06-08, autonomous)
+
+User asked "why no UI/UX?" — fair. Had been avoiding it (subjective, needs visual verification). Pivoted to the **objective** UI/perf win: raw `<img>` → `next/image` (lazy-load, format optimization, no layout shift). User chose per-file migration.
+
+**Cycle 12:** added `images.remotePatterns` to next.config (cdn.sanity.io, img.youtube.com, upload.wikimedia.org — mirroring the CSP img-src allowlist) + migrated VideoBlock YouTube thumbnail (fill). no-img-element 13→12.
+
+**Cycle 13:** 3 clean fill-container migrations (parent already relative+sized+object-cover): ArticleFeed list thumbnail, advisory/reports cover, webinars/[slug] hero. no-img-element 12→9.
+
+**Deferred with reasons (not skipped silently):**
+- `ArticleContent.tsx`, `ArticlePageTemplate.tsx` — full-bleed article body images, `w-full h-auto`, **variable aspect ratio**. `fill` would force a box and crop. Needs Sanity asset dimensions or a visual call. NOT safe to blind-migrate.
+- `book/page.tsx` — local SVG; next/image doesn't optimize SVGs.
+- `subscribe/page.tsx` (4) — `via.placeholder.com` **dev placeholders**; should be replaced with real partner logos (content task), not optimized.
+
+**Verify:** typecheck clean, build exit 0 both cycles (build validates remote hosts + fill config). **Honest caveat:** build proves config validity, not pixel-correctness; fill+object-cover in relative aspect boxes is the documented pattern so confidence is high, but the deferred variable-ratio ones genuinely need eyes.
+
+**no-img-element: 13 → 9.** Remaining 9 are the documented deferrals (need visual check or are placeholders/SVG) — not blindly autofixable.
+
+---
+
 ## Cycle 11 — C0-15 enforce dataset validation in CI — ✅ DONE (2026-06-08, autonomous)
 
 **Lane F (tools/CI).** Wired Cycle 10's validator into `.github/workflows/ci.yml` backend job as a blocking "Validate RAG golden dataset" step (stdlib-only, no install). Catches malformed dataset entries on every push/PR; does NOT gate on coverage warnings.
