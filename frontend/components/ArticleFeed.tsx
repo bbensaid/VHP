@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { client } from "@/lib/sanity";
 import imageUrlBuilder from "@sanity/image-url";
 import { getMoreArticles } from "@/app/actions";
@@ -341,10 +342,12 @@ export default function ArticleFeed({
 
               {isList && article.mainImage && (
                 <div className="w-full md:w-1/3 relative min-h-[200px] md:min-h-full">
-                  <img
+                  <Image
                     src={urlFor(article.mainImage).width(600).height(400).url()}
                     alt={article.title}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
                   />
                 </div>
               )}
