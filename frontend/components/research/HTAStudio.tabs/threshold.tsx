@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Calculator, AlertTriangle, CheckCircle } from "lucide-react";
+import { AlertTriangle, CheckCircle } from "lucide-react";
 import { fmtUSD, fmtPct } from "../HTAStudio.data";
 
 // TAB 4 — Threshold & Surrogate Endpoint Analysis

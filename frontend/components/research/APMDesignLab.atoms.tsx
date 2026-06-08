@@ -5,7 +5,6 @@
  * SectionCard, Label, SliderField, SelectField, StatBox, ViabilityBadge.
  */
 
-import { Info, CheckCircle, AlertTriangle, XCircle } from "lucide-react";
 
 // ─── Shared UI Primitives ────────────────────────────────────────────────────
 

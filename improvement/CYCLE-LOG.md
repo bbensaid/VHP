@@ -5,6 +5,24 @@
 
 ---
 
+## Cycle 5 — C0-6 lint burndown batch 2 (unused imports) — ✅ DONE (2026-06-07, autonomous)
+
+**Lane B.** First fully-autonomous cycle (no per-change approval; committed on green).
+
+Removed 10 unused imports across 10 files: AppShell (`useState`), ArticlePaywall (`UpgradePrompt`), HomeSidebar (`type Program`), academy/PersonalizedLearningHub (`DocumentTextIcon`,`QuestionMarkCircleIcon`), course/CourseSidebar (`CourseProgressBar`), research/APMDesignLab.atoms (whole unused lucide line: Info/CheckCircle/AlertTriangle/XCircle), research/CEACalculator (`TrendingUp`), research/HTAStudio.tabs/threshold (`Calculator`), research/HighLowValueCare (`type SyntheticPatient`).
+
+**Skipped (correctly):** `vermont-act-68` MilestoneRow, `vermont-legislative-resources` SectionHeader, `SixPillarFrameworkMap` depPath — these are unused *local functions*, not imports; deletion needs more care → deferred to a later local-cleanup unit.
+
+**Metric:** lint warnings **283 → 270** (−13; the APMDesignLab line cleared 4 at once). 0 errors.
+
+**Verify:** typecheck exit 0 · build exit 0 ("Compiled successfully in 3.2min") · bundle under budget.
+
+**Rollback:** `git checkout` the 10 files.
+
+**Next:** C0-6 continues — ~8 pure unused-import files left, then unused local funcs/vars, then 138 `no-unescaped-entities` (big mechanical batch), 13 `no-img-element`.
+
+---
+
 ## Cycle 4 — C0-6 lint burndown, batch 1 (unused imports) — ✅ DONE (2026-06-07)
 
 **Lane:** B (codebase health). **Approved + executed.**
