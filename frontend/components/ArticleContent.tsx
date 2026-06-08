@@ -2,8 +2,10 @@
 
 import { PortableText, PortableTextComponents } from "next-sanity";
 import type { PortableTextMarkComponentProps, PortableTextBlock } from "@portabletext/react";
+import Image from "next/image";
 import { client } from "@/sanity/lib/client";
 import imageUrlBuilder from "@sanity/image-url";
+import { getImageDimensions } from "@sanity/asset-utils";
 import VideoBlock from "@/components/VideoBlock";
 import AudioBlock from "@/components/AudioBlock";
 
@@ -174,12 +176,18 @@ const ptComponents: PortableTextComponents = {
       const directUrl  = value?.url || value?.src;
 
       let imgSrc: string | null = null;
+      // Real intrinsic dimensions from the Sanity asset (ref encodes WxH).
+      // Lets next/image preserve aspect ratio without cropping — only set
+      // when we have a Sanity asset; raw directUrl has no known dimensions.
+      let dims: { width: number; height: number } | null = null;
 
       if (assetUrl) {
         imgSrc = assetUrl;
+        try { dims = getImageDimensions(value); } catch { dims = null; }
       } else if (assetRef) {
         try {
           imgSrc = urlFor(value).width(1200).auto("format").url();
+          dims = getImageDimensions(value);
         } catch {
           imgSrc = null;
         }
@@ -187,13 +195,27 @@ const ptComponents: PortableTextComponents = {
         imgSrc = directUrl;
       }
 
+      const imgClass = "w-full h-auto rounded-2xl shadow-lg border border-slate-200";
+
       return (
         <figure className="my-12">
-          {imgSrc ? (
+          {imgSrc && dims ? (
+            <Image
+              src={imgSrc}
+              alt={value.alt || value.caption || ""}
+              width={dims.width}
+              height={dims.height}
+              sizes="(max-width: 768px) 100vw, 800px"
+              className={imgClass}
+            />
+          ) : imgSrc ? (
+            // Raw URL without known dimensions — next/image can't size it
+            // safely, so keep a native lazy <img>.
+            // eslint-disable-next-line @next/next/no-img-element
             <img
               src={imgSrc}
               alt={value.alt || value.caption || ""}
-              className="w-full rounded-2xl shadow-lg border border-slate-200"
+              className={imgClass}
               loading="lazy"
             />
           ) : (
