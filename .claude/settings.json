@@ -174,7 +174,20 @@
       "Bash(wc:*)",
       "Bash(sort:*)",
       "Bash(uniq:*)",
-      "Bash(npm audit:*)"
+      "Bash(npm audit:*)",
+      "Bash(node -e \"try{require.resolve\\('playwright'\\);console.log\\('playwright OK'\\)}catch{try{require.resolve\\('@playwright/test'\\);console.log\\('@playwright/test OK'\\)}catch{try{require.resolve\\('puppeteer'\\);console.log\\('puppeteer OK'\\)}catch{console.log\\('no headless browser dep'\\)}}}\")",
+      "Bash(curl -s -o /dev/null -w \"advisory/reports: %{http_code}\\\\n\" -b \"htr_beta=1\" http://localhost:3000/advisory/reports)",
+      "Bash(curl -s -o /dev/null -w \"the-wire \\(ArticleFeed\\): %{http_code}\\\\n\" -b \"htr_beta=1\" http://localhost:3000/the-wire)",
+      "Bash(npx playwright *)",
+      "Bash(curl -s \"https://fxz10xl7.api.sanity.io/v2021-06-07/data/query/production?query=$\\(python3 -c \"import urllib.parse;print\\(urllib.parse.quote\\('*[_type==\\\\\"webinar\\\\\" && defined\\(image\\)]{\\\\\"s\\\\\":slug.current}[0..3]'\\)\\)\"\\)\")",
+      "Bash(curl -s \"https://fxz10xl7.api.sanity.io/v2021-06-07/data/query/production?query=$\\(python3 -c \"import urllib.parse;print\\(urllib.parse.quote\\('*[_type==\\\\\"post\\\\\" && defined\\(mainImage\\)]{\\\\\"s\\\\\":slug.current,title}[0..2]'\\)\\)\"\\)\")",
+      "Bash(npx wait-on *)",
+      "Bash(curl -s -o /dev/null -w \"wire api: %{http_code}\\\\n\" -b \"htr_beta=1\" http://localhost:3000/api/wire)",
+      "Bash(curl -s -b \"htr_beta=1\" http://localhost:3000/api/wire)",
+      "Bash(curl -s -b \"htr_beta=1\" \"http://localhost:3000/api/wire\")",
+      "Bash(node -e \"try{require.resolve\\('@sanity/asset-utils'\\);console.log\\('asset-utils available'\\)}catch{console.log\\('NOT available'\\)}\")",
+      "Bash(curl -s \"https://fxz10xl7.api.sanity.io/v2021-06-07/data/query/production?query=$\\(python3 -c \"import urllib.parse;print\\(urllib.parse.quote\\('*[_type in [\\\\\"policyAnalysis\\\\\",\\\\\"post\\\\\"] && count\\(body[_type==\\\\\"image\\\\\"]\\)>0][0..2]{\\\\\"s\\\\\":slug.current,_type}'\\)\\)\"\\)\")",
+      "Bash(curl -s \"https://fxz10xl7.api.sanity.io/v2021-06-07/data/query/production?query=$\\(python3 -c \"import urllib.parse;print\\(urllib.parse.quote\\('*[_type==\\\\\"policyAnalysis\\\\\" && count\\(body[_type==\\\\\"image\\\\\"]\\)>0 && !\\(slug.current match \\\\\"vbc-fundamentals*\\\\\"\\) && !\\(slug.current match \\\\\"precision-medicine*\\\\\"\\) && status==\\\\\"published\\\\\"][0..4]{\\\\\"s\\\\\":slug.current}'\\)\\)\"\\)\")"
     ],
     "additionalDirectories": [
       "/private/tmp"
