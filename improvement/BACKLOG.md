@@ -14,7 +14,7 @@
 | C0-8 | H | Capture Sentry baseline; triage top open error clusters | 4 | 4 | S(1) | 16 | additive | **partially ✅ Cycle 3** | Fixed the gap that made server errors invisible (see C0-14). Live dashboard baseline still needs user's Sentry creds. |
 | C0-14 | H | Wire Sentry server/RSC error capture in `instrumentation.ts` (import server/edge configs + export `onRequestError`) | 4 | 5 | S(1) | 20 | additive | **✅ DONE Cycle 3** | Server/RSC errors were silently dropped on Next 16; now captured. smoke passed |
 | C0-12 | H | Refresh Supabase backup; set ≤30-day cadence (code/infra only, no content writes) | 3 | 5 | S(1) | 15 | additive | proposed | Plan §2 Lane H |
-| C0-11 | B | Capture typecheck + bundle baselines (fill scoreboard blanks) | 2 | 5 | S(1) | 10 | additive | proposed | scoreboard has gaps |
+| C0-11 | B | Capture typecheck + bundle baselines (fill scoreboard blanks) | 2 | 5 | S(1) | 10 | additive | **✅ DONE Cycle 9** | typecheck 0 errors; bundle 8.47/20 MB. Both healthy. |
 | C0-9 | A | Converge or document the 3 backend deploy descriptors (fly/railway/Procfile) | 2 | 4 | S(1) | 8 | additive | **✅ DONE Cycle 8** | Added backend/DEPLOYMENT.md; Fly authoritative, others kept as fallbacks |
 | C0-6 | B | Burn down 293 lint warnings, starting with `no-unused-vars` (142, lowest risk) | 3 | 5 | M(3) | 5.0 | additive | **in-progress** | Cycle 4 batch 1: −10 (293→283). ~50 files w/ unused imports remain + 34 assigned-unused + 12 args + 138 unescaped-entities + 13 img |
 | C0-1 | E | Wire `backend/eval/` as a runnable code harness (latency + retrieval regression) — **code only, no content authoring** | 4 | 3 | M(3) | 4.0 | additive | proposed | Plan §3; eval dir exists |
