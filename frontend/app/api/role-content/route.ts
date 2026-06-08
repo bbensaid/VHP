@@ -14,9 +14,6 @@ const ROLE_PILLARS: Record<string, string[]> = {
   all:        ["Policy", "Economics", "Technology", "Clinical", "Equity"],
 };
 
-// Content types to query — ordered by relevance
-const CONTENT_TYPES = ["policyAnalysis", "post", "caseStudy"];
-
 function shuffleArray<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
