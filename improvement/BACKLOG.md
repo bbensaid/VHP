@@ -16,7 +16,7 @@
 | C0-12 | H | Refresh Supabase backup; set ≤30-day cadence (code/infra only, no content writes) | 3 | 5 | S(1) | 15 | additive | proposed | Plan §2 Lane H |
 | C0-11 | B | Capture typecheck + bundle baselines (fill scoreboard blanks) | 2 | 5 | S(1) | 10 | additive | proposed | scoreboard has gaps |
 | C0-9 | A | Converge or document the 3 backend deploy descriptors (fly/railway/Procfile) | 2 | 4 | S(1) | 8 | additive | proposed | Doc 01; fly active, others fallback |
-| C0-6 | B | Burn down 293 lint warnings, starting with `no-unused-vars` (142, lowest risk) | 3 | 5 | M(3) | 5.0 | additive | proposed | `npm run lint`: 293 warnings |
+| C0-6 | B | Burn down 293 lint warnings, starting with `no-unused-vars` (142, lowest risk) | 3 | 5 | M(3) | 5.0 | additive | **in-progress** | Cycle 4 batch 1: −10 (293→283). ~50 files w/ unused imports remain + 34 assigned-unused + 12 args + 138 unescaped-entities + 13 img |
 | C0-1 | E | Wire `backend/eval/` as a runnable code harness (latency + retrieval regression) — **code only, no content authoring** | 4 | 3 | M(3) | 4.0 | additive | proposed | Plan §3; eval dir exists |
 | C0-13 | H | Investigate 21 moderate vulns (transitive `uuid`/`@sanity/uuid` via `@sanity/*` + `@sentry/*`); needs upstream bumps or `--force` (breaking) — **propose-only** | 2 | 4 | M(3) | 2.7 | propose-only | proposed | Cycle 2: `npm audit fix` can't clear; surfaced 2026-06-06 |
 

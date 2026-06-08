@@ -9,7 +9,6 @@ import {
   SparklesIcon,
   PaperAirplaneIcon,
   TrashIcon,
-  StopIcon,
   ClipboardDocumentIcon,
   CheckIcon,
   ArrowDownTrayIcon,
