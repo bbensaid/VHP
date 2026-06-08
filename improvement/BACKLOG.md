@@ -18,7 +18,7 @@
 | C0-9 | A | Converge or document the 3 backend deploy descriptors (fly/railway/Procfile) | 2 | 4 | S(1) | 8 | additive | **✅ DONE Cycle 8** | Added backend/DEPLOYMENT.md; Fly authoritative, others kept as fallbacks |
 | C0-6 | B | Burn down 293 lint warnings, starting with `no-unused-vars` (142, lowest risk) | 3 | 5 | M(3) | 5.0 | additive | **in-progress** | Cycle 4 batch 1: −10 (293→283). ~50 files w/ unused imports remain + 34 assigned-unused + 12 args + 138 unescaped-entities + 13 img |
 | C0-1 | E | Wire `backend/eval/` as a runnable code harness (latency + retrieval regression) — **code only, no content authoring** | 4 | 3 | M(3) | 4.0 | additive | **partially ✅ Cycle 10** | Added dependency-free `validate_dataset.py` (CI-able). Full Ragas run still needs keys/credits + a 50+ dataset (content = user's domain). |
-| C0-15 | F | Wire `validate_dataset.py` + `npm run typecheck`/lint into a CI step (backend job currently has no eval check) | 3 | 4 | S(1) | 12 | additive | proposed | Cycle 10 — validator exists but nothing runs it in CI |
+| C0-15 | F | Wire `validate_dataset.py` into CI (backend job) | 3 | 4 | S(1) | 12 | additive | **✅ DONE Cycle 11** | Added blocking "Validate RAG golden dataset" step to ci.yml backend job; stdlib-only, no install |
 | C0-13 | H | Investigate 21 moderate vulns (transitive `uuid`/`@sanity/uuid` via `@sanity/*` + `@sentry/*`); needs upstream bumps or `--force` (breaking) — **propose-only** | 2 | 4 | M(3) | 2.7 | propose-only | proposed | Cycle 2: `npm audit fix` can't clear; surfaced 2026-06-06 |
 
 ### Removed (content lanes — out of scope)
