@@ -31,8 +31,8 @@ RAG/content/business metrics are read from Supabase tables and `/admin/*` (see s
 
 | Metric | Source | Baseline (2026-06-06) | Current | Target |
 |---|---|---|---|---|
-| Lint warnings | `npm run lint` | **293** (0 errors) | **270** (Cycle 5) | 0 |
-| — `no-unused-vars` | lint | **142** | **~119** (Cycle 5, batches 1–2: 23 unused imports removed) | 0 |
+| Lint warnings | `npm run lint` | **293** (0 errors) | **255** (Cycle 6) | 0 |
+| — `no-unused-vars` | lint | **142** | **~104** (Cycle 6, batches 1–3: ~38 unused imports removed) | 0 |
 | — `react/no-unescaped-entities` | lint | **138** | 138 | 0 |
 | — `next/no-img-element` | lint | **13** | 13 | 0 |
 | Typecheck errors | `npm run typecheck` | _to capture_ | — | 0 |
