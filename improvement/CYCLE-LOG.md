@@ -5,6 +5,20 @@
 
 ---
 
+## Cycle 10 — C0-1 dependency-free RAG dataset validator — ✅ DONE (2026-06-08, autonomous)
+
+**Lane E (AI engineering, code only).** OBSERVE found `backend/eval/evaluate_rag.py` already exists (Ragas, 4 metrics) but: 8/50 Q/A pairs, needs live keys+Supabase+credits to run, and importing it pulls dotenv/llama_index/ragas — so it can't gate CI.
+
+**Change:** added `backend/eval/validate_dataset.py` — reads GOLDEN_DATASET via stdlib `ast` (NO import of evaluate_rag, NO third-party deps, NO network). Checks structure (required fields, duplicate questions, unknown pillars, too-short ground_truth) + coverage (size vs 50+ target, missing pillars). Exit 0/1/2.
+
+**Did NOT** author Q/A content — that's content/domain work (user's). The validator only verifies shape and reports gaps objectively.
+
+**Verify:** runs on bare system python (no venv, no deps) → exit 0 default, exit 2 strict. Surfaced real gaps: 8 entries, **Operations pillar = 0 coverage**, Technology = 1.
+
+**New candidate:** C0-15 — wire this validator into CI (nothing runs it yet).
+
+---
+
 ## Cycle 8 — C0-9 backend deploy descriptors documented — ✅ DONE (2026-06-08, autonomous)
 
 **Lane A (architecture).** Pivoted off lint (cheap wins exhausted) to a real clarity gap.
