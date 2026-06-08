@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Info, TrendingUp, AlertTriangle, CheckCircle } from "lucide-react";
+import { Info, AlertTriangle, CheckCircle } from "lucide-react";
 
 // ─── Reference QALY values for common conditions ──────────────────────────────
 const CONDITION_PRESETS = [
