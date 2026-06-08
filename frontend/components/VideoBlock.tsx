@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { PlayIcon, FilmIcon } from "@heroicons/react/24/solid";
 
 interface VideoBlockProps {
@@ -39,10 +40,12 @@ export default function VideoBlock({ value, compact }: VideoBlockProps) {
         {/* Thumbnail / Preview Area */}
         <div className="relative aspect-video bg-slate-900 flex items-center justify-center overflow-hidden">
           {youtubeId ? (
-            <img
+            <Image
               src={`https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`}
               alt="Video Thumbnail"
-              className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+              fill
+              sizes="(max-width: 768px) 100vw, 320px"
+              className="object-cover opacity-80 group-hover:opacity-100 transition-opacity"
             />
           ) : (
             <div className="w-full h-full bg-slate-800 flex items-center justify-center">
