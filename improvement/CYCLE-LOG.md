@@ -5,6 +5,35 @@
 
 ---
 
+## Cycle 11 — C0-15 enforce dataset validation in CI — ✅ DONE (2026-06-08, autonomous)
+
+**Lane F (tools/CI).** Wired Cycle 10's validator into `.github/workflows/ci.yml` backend job as a blocking "Validate RAG golden dataset" step (stdlib-only, no install). Catches malformed dataset entries on every push/PR; does NOT gate on coverage warnings.
+
+**Verify:** command exits 0 from `backend/`; YAML indentation confirmed matching sibling steps (6/8 spaces).
+
+**Risk:** none — additive CI step, no code/runtime change.
+
+### Loop status after 10 productive cycles (2–11, excl. the Cycle-1 NO-GO)
+
+| # | Lane | Shipped |
+|---|---|---|
+| 2 | H | next 16.2.3→16.2.7, 2 high vulns → 0 |
+| 3 | H | Sentry now captures server/RSC errors |
+| 4 | B | −10 lint (unused imports) |
+| 5 | B | −13 lint |
+| 6 | B | −15 lint + harness allowlist |
+| 7 | B | −3 lint (dead consts) |
+| 8 | A | backend/DEPLOYMENT.md (deploy clarity) |
+| 9 | B | typecheck/bundle baselines captured |
+| 10 | E | dependency-free RAG dataset validator |
+| 11 | F | validator enforced in CI |
+
+**Cumulative:** lint 293→252 (−41), 2 high CVEs fixed, server-error observability restored, 2 docs, 1 new CI gate. All verified, committed, pushed. Zero content touched. Zero production data touched.
+
+**Backlog remaining (lower value / blocked):** C0-8 (live Sentry baseline — needs user creds), C0-12 (Supabase backup cadence — needs creds/infra access), C0-13 (21 moderate transitive vulns — need breaking upgrades, propose-only), remaining lint (props/cosmetic — low ROI). The high-value, safe, autonomously-doable items are now largely exhausted; further cycles hit either diminishing returns or credential/infra gates.
+
+---
+
 ## Cycle 10 — C0-1 dependency-free RAG dataset validator — ✅ DONE (2026-06-08, autonomous)
 
 **Lane E (AI engineering, code only).** OBSERVE found `backend/eval/evaluate_rag.py` already exists (Ragas, 4 metrics) but: 8/50 Q/A pairs, needs live keys+Supabase+credits to run, and importing it pulls dotenv/llama_index/ragas — so it can't gate CI.
