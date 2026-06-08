@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { CheckCircle, XCircle, AlertTriangle, TrendingDown, TrendingUp, Info } from "lucide-react";
+import { CheckCircle, XCircle, AlertTriangle, TrendingDown, TrendingUp } from "lucide-react";
 import { SYNTHETIC_PATIENTS, CHOOSING_WISELY_FLAGS } from "@/lib/syntheticPatients";
 
 // ─── A1C / BP PANEL MANAGEMENT ────────────────────────────────────────────────

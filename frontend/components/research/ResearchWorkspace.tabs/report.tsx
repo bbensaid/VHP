@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
+import { useState, useCallback } from "react";
 import {
-  Plus, Trash2, Copy, Download, Eye, EyeOff, ArrowUp, ArrowDown, Clipboard,
+  Plus, Trash2, Download, Eye, EyeOff, ArrowUp, ArrowDown, Clipboard,
 } from "lucide-react";
 import {
   SECTION_TYPES, REPORT_TEMPLATES,
