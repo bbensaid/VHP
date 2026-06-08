@@ -7,7 +7,8 @@
 
 | Setting | Value |
 |---|---|
-| **Run mode** | **Supervised cadence** — present proposed change + evidence, wait for go/no-go before EXECUTE |
+| **Run mode** | **FULLY AUTONOMOUS** (set 2026-06-07). Run OBSERVE→DIAGNOSE→PRIORITIZE→EXECUTE→VERIFY→LEARN end-to-end with NO per-change approval. Commit each cycle immediately after the smoke gate passes. Do NOT ask the user to approve, push, or confirm. Keep going cycle after cycle until told to stop. User reverts if needed. |
+| **Push** | Push to `origin` after each commit (branch `improvement/bootstrap-loop`). Never merge to `main` autonomously — that's the user's call. |
 | **Lane weighting** | **Content lanes ABORTED** (see below). Active lanes: A, B, E (AI *engineering* only), F, G, H — round-robin |
 | **CONTENT WORK — HARD STOP** | **Lanes C (Sanity content) and D (Academy/lessons/`sanity_slug`) are ABORTED and OUT OF SCOPE.** The loop must NEVER propose, audit-as-work, write, re-link, restore, or otherwise touch editorial or Academy content. Content is the user's domain exclusively. This is non-negotiable. |
 | **Loop files** | this `/improvement/` directory (version-controlled) |
