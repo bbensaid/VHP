@@ -1,4 +1,5 @@
 import { client } from "@/lib/sanity";
+import Image from "next/image";
 
 export const metadata = {
   title: "Annual Impact Reports | HTR Advisory",
@@ -54,7 +55,7 @@ export default async function ReportsPage() {
           <div key={report._id} className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 flex flex-col md:flex-row gap-8 items-start hover:shadow-xl transition-all group">
             <div className="w-full md:w-48 h-64 shrink-0 rounded-lg overflow-hidden border border-slate-100 bg-slate-50 relative">
               {report.imageUrl ? (
-                <img src={report.imageUrl} alt={report.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src={report.imageUrl} alt={report.title} fill sizes="(max-width: 768px) 100vw, 192px" className="object-cover group-hover:scale-105 transition-transform duration-500" />
               ) : (
                 <div className="w-full h-full flex flex-col items-center justify-center text-center p-4">
                   <span className="text-4xl mb-2 text-slate-300">📄</span>
