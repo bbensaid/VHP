@@ -5,6 +5,28 @@
 
 ---
 
+## Cycle 4 — C0-6 lint burndown, batch 1 (unused imports) — ✅ DONE (2026-06-07)
+
+**Lane:** B (codebase health). **Approved + executed.**
+
+**Scope:** Removed 9 genuinely-unused imports + `_`-prefixed 1 unused caught-error, across 10 files. Deliberately limited to unused *imports* (safest category); did NOT touch the 34 "assigned but never used" locals, 12 unused args, or the entity/img warnings — those are separate units.
+
+**Files (10):** `app/account/page.tsx` (`db`), `app/chat/page.tsx` (`StopIcon`), `app/clinical/{genomics,hah,population}/page.tsx` (`Link`), `app/search/page.tsx` (`BookmarkIcon`), `app/transformation-friction-index/page.tsx` (`BeakerIcon`), `app/vermont-act-167/simulator/tabs/{equity,scenario}.tsx` (`type Recommendation`), `app/api/ticker/route.tsx` (`error`→`_error`).
+
+**Metric — before → after:** total lint warnings **293 → 283** (−10); `no-unused-vars` **142 → 132** (−10). 0 errors throughout.
+
+**Verify (all passed):** typecheck exit 0 · `npm run build` exit 0 ("✓ Compiled successfully in 2.2min") — proves no removed import was actually in use · `bundle:check` ✅ under budget.
+
+**Files changed:** 10 app files. No content, no DB, no deps.
+
+**Rollback:** `git checkout` the 10 files.
+
+**Remaining for C0-6 (kept in-progress):** ~50 more files with unused imports; then 34 assigned-unused (need per-case judgment — possible real bugs), 12 args (_-prefix), 138 `react/no-unescaped-entities`, 13 `next/no-img-element`.
+
+**Next proposed unit:** C0-6 batch 2 (next ~10 unused-import files) — or pivot to C0-11 (baselines). The `no-unescaped-entities` (138) is a good later batch since it's mechanical and high-count.
+
+---
+
 ## Cycle 3 — C0-14 Sentry server/RSC error capture — ✅ DONE (2026-06-07)
 
 **Lane:** H (ops/security). **Approved + executed.** Started as C0-8 (capture Sentry baseline); OBSERVE found a config gap that made the baseline meaningless, so the cycle fixed the gap instead.

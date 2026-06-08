@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import {
   HOSPITALS, RECOMMENDATIONS, PILLARS,
   CATEGORY_LABELS, CATEGORY_COLORS,
-  type Recommendation, type PillarKey,
+  type PillarKey,
 } from "../data";
 import { Badge, PillarGauge } from "../atoms";
 import { StickyOutputPanel } from "@/components/StickyOutputPanel";
