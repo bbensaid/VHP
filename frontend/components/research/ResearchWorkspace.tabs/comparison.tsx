@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
-import { Plus, Copy, Star, X, Award, Clipboard } from "lucide-react";
+import { useState, useCallback } from "react";
+import { Plus, Star, X, Award, Clipboard } from "lucide-react";
 import {
   COMP_TEMPLATES,
-  type Scenario, type CompDimension, type CompScenario,
+  type CompDimension, type CompScenario,
   uid,
 } from "../ResearchWorkspace.data";
 import { useLocalStorage } from "../ResearchWorkspace.atoms";
