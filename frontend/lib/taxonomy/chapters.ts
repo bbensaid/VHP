@@ -10,7 +10,7 @@
  *
  * When the book moves: update this file. Everything else follows.
  *
- * Chapter IDs reference the actual chapter number ("1", "10", "20", or the
+ * Chapter IDs reference the actual chapter number ("1", "10", "16", or the
  * non-numeric "preface"/"introduction"). `platformLinks` reference tool IDs
  * from tools.ts (preferred) or direct program/page IDs.
  */
@@ -71,40 +71,16 @@ export const CHAPTERS: readonly Chapter[] = [
   },
   {
     num: "1",
-    title: "The Six-Pillar Framework",
-    desc: "The 15 dependency relationships between pillars. The failure cascade when any single pillar is missing. How to use the dependency map as an analytical and investment-prioritization tool.",
+    title: "The Six-Pillar Framework and the Execution Sequence",
+    desc: "The six pillars defined, their 15 dependency relationships, and the failure cascade when any one is missing. Then the execution sequence: the OneCare Vermont failure as a sequencing autopsy, why Technology must precede Economics, the six stages, and the three sequencing principles in practice.",
     group: "Foundations",
     pillar: null,
     platformLinks: ["framework-map", "htr-simulator", "transformation-friction-index"],
   },
-  {
-    num: "2",
-    title: "The Execution Sequence: Why Order Is Not Optional",
-    desc: "The OneCare Vermont failure as a sequencing autopsy. Why Technology must precede Economics. The six stages of execution and the chicken-and-egg resolution.",
-    group: "Foundations",
-    pillar: null,
-    platformLinks: [
-      { label: "Vermont VCCI", href: "/vermont-vcci" },
-      { label: "AHEAD Model", href: "/ahead-model" },
-      "impact-simulation",
-    ],
-  },
-  {
-    num: "3",
-    title: "The Execution Sequence in Practice",
-    desc: "Sequencing decisions, failure prevention, and Vermont's implementation timeline. Three principles: critical path, parallel work, and equity as a design constraint.",
-    group: "Foundations",
-    pillar: null,
-    platformLinks: [
-      { label: "Vermont Act 68 (2025)", href: "/vermont-act-68" },
-      { label: "Act 68 Simulator", href: "/vermont-act-68/simulator" },
-      "policy-simulator",
-    ],
-  },
 
   // ── Policy Pillar ───────────────────────────────────────────────────────
   {
-    num: "4",
+    num: "2",
     title: "The Policy Pillar — Legislative Architecture for Structural Reform",
     desc: "The Oliver Wyman System Redesign Blueprint. Vermont Act 167 (2022) as the diagnostic mandate. Act 68 (2025) as the operational mandate. Global budget architecture and reference-based pricing.",
     group: "Policy Pillar",
@@ -117,9 +93,9 @@ export const CHAPTERS: readonly Chapter[] = [
     ],
   },
   {
-    num: "5",
+    num: "3",
     title: "The Policy Pillar in Practice — CMMI Models, Waiver Strategy, and the Federal-State Interface",
-    desc: "CMMI model landscape (2026). Section 1115 waivers and budget neutrality. Prior authorization reform (H.R. 1). The Medicaid policy landscape and H.R. 1 implications.",
+    desc: "CMMI model landscape (2026). Section 1115 waivers and budget neutrality. Prior authorization reform. The Medicaid policy landscape and H.R. 1 implications.",
     group: "Policy Pillar",
     pillar: "policy",
     platformLinks: [
@@ -132,9 +108,9 @@ export const CHAPTERS: readonly Chapter[] = [
 
   // ── Technology Pillar ───────────────────────────────────────────────────
   {
-    num: "6",
+    num: "4",
     title: "The Technology Pillar — Data Infrastructure for a Transformed Health System",
-    desc: "VHCURES, VITL, the 2025 HIE governance shift (Act 62). FHIR interoperability, the Vermont CIN, statewide EHR feasibility, and AI governance before the risk arrives.",
+    desc: "VHCURES, VITL, and the HIE governance shift. FHIR interoperability, the Vermont CIN, statewide EHR feasibility, and AI governance before the risk arrives.",
     group: "Technology Pillar",
     pillar: "technology",
     platformLinks: [
@@ -145,7 +121,7 @@ export const CHAPTERS: readonly Chapter[] = [
     ],
   },
   {
-    num: "7",
+    num: "5",
     title: "The Technology Pillar in Practice — FHIR, AI Governance, and Clinical Decision Support",
     desc: "FHIR implementation reality. AI scribe, remote patient monitoring, telehealth, and diagnostic AI. The AI Clinical Governance Lifecycle. Alert fatigue and CDS effectiveness.",
     group: "Technology Pillar",
@@ -155,9 +131,9 @@ export const CHAPTERS: readonly Chapter[] = [
 
   // ── Economics Pillar ────────────────────────────────────────────────────
   {
-    num: "8",
+    num: "6",
     title: "The Economics Pillar — Global Budgets, Reference-Based Pricing, and Financial Reform",
-    desc: "The fee-for-service trap. Vermont's four attempts at global budgets. Maryland's decade of evidence. AHEAD Model integration with Act 68. Hospital financial modeling.",
+    desc: "The fee-for-service trap. Reference-based pricing mechanics. Hospital global budgets and Maryland's decade of evidence. AHEAD Model integration with Act 68. Hospital financial modeling.",
     group: "Economics Pillar",
     pillar: "economics",
     platformLinks: [
@@ -168,9 +144,9 @@ export const CHAPTERS: readonly Chapter[] = [
     ],
   },
   {
-    num: "9",
+    num: "7",
     title: "The Economics Pillar in Practice — VBC Financial Modeling and APM Readiness",
-    desc: "Shared savings calculations. Risk stratification as the economic engine. VBC readiness assessment (six domains). Contract analysis — the 65-item VBC contract review checklist.",
+    desc: "Shared savings calculations. Risk stratification as the economic engine. The 30-dimension VBC readiness assessment (six domains). APM contract analysis for financial risk.",
     group: "Economics Pillar",
     pillar: "economics",
     platformLinks: ["shared-savings-calc", "cea-calculator", "hospital-stress-test", "vbc-readiness"],
@@ -178,9 +154,9 @@ export const CHAPTERS: readonly Chapter[] = [
 
   // ── Clinical Pillar ─────────────────────────────────────────────────────
   {
-    num: "10",
+    num: "8",
     title: "The Clinical Pillar — Redesigning Care Delivery for a Transformed System",
-    desc: "Vermont Blueprint for Health — 15 years of evidence. Behavioral health crisis and the three-layer architecture. Collaborative Care Model. The PACE model and Vermont's long-term care gap.",
+    desc: "Vermont Blueprint for Health — 15 years of evidence. The behavioral health crisis and the three-layer architecture. Collaborative Care Model. Care for Vermont's aging population.",
     group: "Clinical Pillar",
     pillar: "clinical",
     platformLinks: [
@@ -191,9 +167,9 @@ export const CHAPTERS: readonly Chapter[] = [
     ],
   },
   {
-    num: "11",
-    title: "The Clinical Pillar in Practice — Care Model Implementation and Quality Mechanics",
-    desc: "PCMH transformation playbook. Blueprint field staff model. HEDIS improvement methodology — Vermont context. Deploying the Collaborative Care Model operationally.",
+    num: "9",
+    title: "The Clinical Pillar in Practice — Care Model Implementation, Quality Mechanics, and the Vermont Clinical Transformation Toolkit",
+    desc: "PCMH transformation playbook. Blueprint field staff model. HEDIS improvement methodology — Vermont context. Deploying the Collaborative Care Model operationally. The care transition protocol.",
     group: "Clinical Pillar",
     pillar: "clinical",
     platformLinks: [
@@ -206,9 +182,9 @@ export const CHAPTERS: readonly Chapter[] = [
 
   // ── Equity Pillar ───────────────────────────────────────────────────────
   {
-    num: "12",
+    num: "10",
     title: "The Equity Pillar — Closing Gaps, Not Just Averaging Them",
-    desc: "SDOH as a structural variable, not a downstream filter. Vermont's 8 SDOH domains. Algorithmic bias in clinical AI. Access disparity in rural Vermont.",
+    desc: "Why average outcomes are the wrong target. Vermont's equity landscape and disparity root-cause taxonomy. Rural equity, the GLP-1 access crisis, and measuring equity with HEROI and HEDIS stratification.",
     group: "Equity Pillar",
     pillar: "equity",
     platformLinks: [
@@ -218,20 +194,12 @@ export const CHAPTERS: readonly Chapter[] = [
       "equity-studio",
     ],
   },
-  {
-    num: "13",
-    title: "The Equity Pillar in Practice — HEDIS Equity Measurement, HEROI, and SDOH Screening",
-    desc: "HEDIS equity stratification. HEROI (Health Equity ROI Index). SDOH screening at scale. Vermont's equity measurement framework and gap-closing strategy.",
-    group: "Equity Pillar",
-    pillar: "equity",
-    platformLinks: ["population-modeler", "equity-studio", "risk-stratification-methodology"],
-  },
 
   // ── Operations Pillar ───────────────────────────────────────────────────
   {
-    num: "14",
+    num: "11",
     title: "The Operations Pillar — Executing Hospital System Transformation",
-    desc: "Revenue cycle management under global budgets. HCC coding accuracy as a financial lever. Workforce strategy and credentialing. Supply chain and compliance in a transformed system.",
+    desc: "Revenue cycle management under global budgets. HCC coding accuracy as a financial lever. The administrative cost gap. Workforce strategy, supply chain, and compliance in a transformed system.",
     group: "Operations Pillar",
     pillar: "operations",
     platformLinks: [
@@ -241,24 +209,12 @@ export const CHAPTERS: readonly Chapter[] = [
       "transformation-scorecard",
     ],
   },
-  {
-    num: "15",
-    title: "The Operations Pillar in Practice — Revenue Cycle, HCC Coding, and Administrative Efficiency",
-    desc: "30 operational levers for cost reduction. HCC coding walkthrough. Denial management. The administrative cost gap that global budgets must close.",
-    group: "Operations Pillar",
-    pillar: "operations",
-    platformLinks: [
-      "vbc-readiness",
-      "evidence-library",
-      { label: "Vermont Hospital Profiles", href: "/dashboard/vermont/hospitals" },
-    ],
-  },
 
   // ── Future & Strategy ───────────────────────────────────────────────────
   {
-    num: "16",
+    num: "12",
     title: "Infrastructure for Knowledge Transfer and Implementation",
-    desc: "How health systems build the internal capacity to execute transformation — learning infrastructure, workforce development, and the platform for ongoing adaptation.",
+    desc: "How health systems build the internal capacity to execute transformation — learning infrastructure, workforce development, the HTR Platform toolkit, and a framework for selecting advisory support.",
     group: "Future & Strategy",
     pillar: null,
     platformLinks: [
@@ -268,17 +224,17 @@ export const CHAPTERS: readonly Chapter[] = [
     ],
   },
   {
-    num: "17",
-    title: "The Future of Healthcare Transformation — 2026 and Beyond",
-    desc: "What Vermont proves about what is nationally replicable. The transformation horizon: AI, demographic aging, federal policy uncertainty, and the states that will follow Vermont's lead.",
+    num: "13",
+    title: "The Future of Healthcare Transformation — 2026, What Vermont Proves, and What Remains",
+    desc: "Vermont's six-pillar scorecard (April 2026). Five forces shaping the next decade. The six-pillar forecast 2026–2035 and Vermont's two ten-year trajectories.",
     group: "Future & Strategy",
     pillar: null,
     platformLinks: ["innovation-leaderboard", "hti-dashboard", { label: "Trending Topics", href: "/trending-topics" }],
   },
   {
-    num: "18",
+    num: "14",
     title: "Political Sustainability — Protecting Transformation Across Election Cycles",
-    desc: "How to build transformation that survives political transition. Coalition strategy, evidence production, and the institutional anchors that make reform durable.",
+    desc: "Why political sustainability is an analytical problem, not only a political one. The structural durability of Vermont's reform architecture, early-warning signals of political risk, and organizational risk-management strategies.",
     group: "Future & Strategy",
     pillar: null,
     platformLinks: [
@@ -287,17 +243,17 @@ export const CHAPTERS: readonly Chapter[] = [
     ],
   },
   {
-    num: "19",
-    title: "Healthcare Transformation as Portfolio Management",
-    desc: "Applying PMI project management discipline to system transformation. Risk registers, dependency tracking, milestone gates, and the transformation portfolio office.",
+    num: "15",
+    title: "Healthcare Transformation as Portfolio Management — Applying PMI Standards to Six-Pillar Reform",
+    desc: "Project, program, and portfolio levels. Vermont's 19-component transformation portfolio. The portfolio risk register, benefits realization, and the case for a transformation portfolio office.",
     group: "Future & Strategy",
     pillar: null,
     platformLinks: ["impact-simulation", "transformation-scorecard", "transformation-friction-index"],
   },
   {
-    num: "20",
-    title: "The AHS Restructuring Roadmap — A Six-Pillar Framework for System Redesign",
-    desc: "Vermont's Agency of Human Services restructuring as a live six-pillar implementation case. Written directly for state leaders executing the Act 68 agenda.",
+    num: "16",
+    title: "The AHS Restructuring Roadmap — A Six-Pillar Framework for System Architects",
+    desc: "Vermont's Agency of Human Services restructuring as a live six-pillar implementation case. The statutory mandate of Act 68, the redesigned AHS operating model, and a framework for the 2028 Statewide Strategic Plan.",
     group: "Future & Strategy",
     pillar: null,
     platformLinks: [
@@ -342,7 +298,7 @@ export function chaptersForPillar(pillar: PillarId): Chapter[] {
   return CHAPTERS.filter((c) => c.pillar === pillar);
 }
 
-/** Look up a chapter by its `num` ("1"–"20", "Preface", …). Case-insensitive. */
+/** Look up a chapter by its `num` ("1"–"16", "Preface", …). Case-insensitive. */
 export function getChapter(num: string): Chapter | undefined {
   const n = num.trim().toLowerCase();
   return CHAPTERS.find((c) => c.num.toLowerCase() === n);
