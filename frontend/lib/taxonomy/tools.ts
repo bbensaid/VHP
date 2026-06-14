@@ -133,6 +133,14 @@ export const TOOLS: readonly Tool[] = [
     chapters: ["7"],
   },
   {
+    id: "emr-ehr-lab",
+    label: "EMR/EHR Lab",
+    href: "/research-lab/interoperability?tab=emr",
+    pillars: ["technology"],
+    chapters: ["6"],
+    desc: "Model EHR adoption cost & ROI, compare major vendors, audit USCDI data quality, and walk a simulated clinical encounter.",
+  },
+  {
     id: "ai-governance-lab",
     label: "AI Clinical Governance Lab",
     href: "/research-lab/technology-ai?tab=ai",

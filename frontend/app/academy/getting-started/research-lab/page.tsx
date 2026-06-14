@@ -3,7 +3,7 @@ import { ArrowLeftIcon, ArrowTopRightOnSquareIcon } from "@heroicons/react/24/ou
 
 export const metadata = {
   title: "Research Lab Guide | HTR Getting Started",
-  description: "How to use HTR's 21 research lab tools — what each tool does and when to use it.",
+  description: "How to use HTR's 22 research lab tools — what each tool does and when to use it.",
 };
 
 const LAB_GROUPS = [
@@ -26,6 +26,13 @@ const LAB_GROUPS = [
         who: "Population health managers, data scientists, clinical teams",
         when: "When building a risk-stratified care management program, validating HCC scores, or designing the data inputs for a predictive model.",
         tip: "Use the HCC v28 RAF scoring module first to understand your population's risk profile before designing interventions.",
+      },
+      {
+        tab: "?tab=emr",
+        name: "EMR/EHR Lab",
+        who: "CMIOs, health IT leaders, hospital finance teams, clinical informaticists",
+        when: "When selecting or building the business case for an EHR — comparing vendors, modeling adoption cost and 5-year ROI, auditing data quality, or quantifying clinician documentation burden.",
+        tip: "Start in Vendor Comparison and select a vendor — that choice flows into the Cost, Data Quality, and Workflow modes, so the whole tool reflects one system's profile end-to-end.",
       },
     ],
   },

@@ -6,6 +6,7 @@ import LabPageShell from '@/components/research/LabPageShell'
 
 const FHIRLab                   = dynamic(() => import('@/components/research/FHIRLab'),                   { ssr: false })
 const RiskStratificationEngine  = dynamic(() => import('@/components/research/RiskStratificationEngine'),  { ssr: false })
+const EMREHRLab                 = dynamic(() => import('@/components/research/EMREHRLab'),                 { ssr: false })
 
 function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string; badge: string; desc: string }) {
   return (
@@ -30,6 +31,10 @@ const TABS = [
   {
     id: 'risk', icon: '📊', label: 'Risk Stratification Engine', badge: 'Clinical Risk',
     desc: 'Apply HCC v28 RAF scoring, segment populations by risk tier, build custom risk models, and analyze comorbidity interactions using Elixhauser and Charlson indices.',
+  },
+  {
+    id: 'emr', icon: '🏥', label: 'EMR/EHR Lab', badge: 'EHR Systems',
+    desc: 'Model EHR adoption cost, timeline, and 5-year ROI; compare Epic, Oracle Health, MEDITECH, and athenahealth; audit a record for USCDI data quality; and step through a simulated clinical encounter to see documentation burden.',
   },
 ]
 
@@ -86,6 +91,7 @@ export default function InteroperabilityClient() {
 
       {activeTab === 'fhir' && <div><ToolHeader icon="🔌" label="FHIR Interoperability Lab"  badge="Interoperability" desc={TABS[0].desc} /><FHIRLab /></div>}
       {activeTab === 'risk' && <div><ToolHeader icon="📊" label="Risk Stratification Engine" badge="Clinical Risk"    desc={TABS[1].desc} /><RiskStratificationEngine /></div>}
+      {activeTab === 'emr'  && <div><ToolHeader icon="🏥" label="EMR/EHR Lab"                badge="EHR Systems"      desc={TABS[2].desc} /><EMREHRLab /></div>}
     </LabPageShell>
   )
 }

@@ -136,7 +136,7 @@ export default function AdvisoryPage() {
                   { label: "Claude Sonnet 4.6", desc: "Most powerful AI — Anthropic's latest" },
                   { label: "Agentic AI Tools", desc: "Tool-use, web search, data retrieval" },
                   { label: "Priority Intelligence", desc: "Pre-publication briefings & reports" },
-                  { label: "Research Lab", desc: "Full access to all 21 tools" },
+                  { label: "Research Lab", desc: "Full access to all 22 tools" },
                 ].map((item) => (
                   <div key={item.label} className="bg-slate-900 border border-slate-800 rounded-lg px-4 py-3">
                     <p className="text-sm font-bold text-fuchsia-300">{item.label}</p>
