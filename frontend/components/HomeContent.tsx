@@ -80,9 +80,9 @@ const CAPABILITIES = [
     href: "/research-lab",
     emoji: "🧪",
     title: "Research Lab",
-    desc: "21 interactive analytical tools — payment models, policy quality, population equity, and more.",
+    desc: "22 interactive analytical tools — payment models, policy quality, population equity, and more.",
     accent: "border-amber-200 hover:border-amber-400 hover:bg-amber-50",
-    tag: "21 tools",
+    tag: "22 tools",
     tagColor: "bg-amber-100 text-amber-700",
   },
   {

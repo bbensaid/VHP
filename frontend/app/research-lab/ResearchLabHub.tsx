@@ -36,9 +36,10 @@ const loadOpts = (label: string) => ({
   // so they share vendor splitting with chart.js / recharts
 } as const)
 
-/* ── Lazy-load all 21 tools with loading skeletons ──────────────────────── */
+/* ── Lazy-load all 22 tools with loading skeletons ──────────────────────── */
 const FHIRLab                    = dynamic(() => import(/* webpackChunkName: "tool-fhir" */        '@/components/research/FHIRLab'),                    { ...loadOpts('FHIR'), ssr: false })
 const RiskStratificationEngine   = dynamic(() => import(/* webpackChunkName: "tool-risk" */        '@/components/research/RiskStratificationEngine'),   { ...loadOpts('Risk'), ssr: false })
+const EMREHRLab                  = dynamic(() => import(/* webpackChunkName: "tool-emr" */         '@/components/research/EMREHRLab'),                  { ...loadOpts('EMR'), ssr: false })
 const APMDesignLab               = dynamic(() => import(/* webpackChunkName: "tool-apm" */         '@/components/research/APMDesignLab'),               { ...loadOpts('APM'), ssr: false })
 const APMCalculator              = dynamic(() => import(/* webpackChunkName: "tool-apm" */         '@/components/research/APMCalculator'),              { ...loadOpts('APMCalc'), ssr: false })
 const CEACalculator              = dynamic(() => import(/* webpackChunkName: "tool-econ" */        '@/components/research/CEACalculator'),              { ...loadOpts('CEA'), ssr: false })
@@ -81,6 +82,7 @@ const SECTIONS: Section[] = [
     tools: [
       { id: 'fhir',   icon: '🔌', label: 'FHIR Interoperability Lab',  badge: 'Interoperability', badgeCls: 'bg-indigo-100 text-indigo-700 border-indigo-200', desc: 'Build and validate FHIR R4 resources, map clinical terminologies, test CDS Hooks, simulate prior authorization workflows, and check ONC compliance.' },
       { id: 'risk',   icon: '📊', label: 'Risk Stratification Engine',  badge: 'Clinical Risk',    badgeCls: 'bg-indigo-100 text-indigo-700 border-indigo-200', desc: 'Apply HCC v28 RAF scoring, segment populations by risk tier, build custom risk models, and analyze comorbidity interactions using Elixhauser and Charlson indices.' },
+      { id: 'emr',    icon: '🏥', label: 'EMR/EHR Lab',                 badge: 'EHR Systems',      badgeCls: 'bg-indigo-100 text-indigo-700 border-indigo-200', desc: 'Model EHR adoption cost, timeline, and 5-year ROI; compare Epic, Oracle Health, MEDITECH, and athenahealth; audit a record for USCDI data quality; and step through a simulated clinical encounter to see documentation burden.' },
     ],
   },
   {
@@ -134,6 +136,7 @@ function ActiveTool({ sectionId, toolId }: { sectionId: string; toolId: string }
   switch (key) {
     case 'interoperability/fhir':          return <FHIRLab />
     case 'interoperability/risk':          return <RiskStratificationEngine />
+    case 'interoperability/emr':           return <EMREHRLab />
     case 'payment-models/apm-design':      return <APMDesignLab />
     case 'payment-models/apm-calc':        return <APMCalculator />
     case 'payment-models/cea':             return <CEACalculator />
@@ -273,7 +276,7 @@ function ResearchLabHubInner() {
                 HTR Research Lab
               </h1>
               <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">
-                21 interactive analytical tools spanning every dimension of health system transformation — from FHIR interoperability to six-pillar transformation scorecard.
+                22 interactive analytical tools spanning every dimension of health system transformation — from FHIR interoperability to six-pillar transformation scorecard.
               </p>
             </div>
           </div>
