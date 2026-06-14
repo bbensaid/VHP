@@ -69,7 +69,7 @@ const CHAPTER_SLUGS: Record<string, string> = Object.fromEntries(
 export const metadata = {
   title: "The Book | Transforming American Healthcare — HTR",
   description:
-    "Transforming American Healthcare: A Six-Pillar Framework for System Transformation. The intellectual foundation of the HTR Platform — 20 chapters covering Policy, Economics, Technology, Clinical, Equity, and Operations.",
+    "Transforming American Healthcare: A Six-Pillar Framework for System Transformation. The intellectual foundation of the HTR Platform — 16 chapters covering Policy, Economics, Technology, Clinical, Equity, and Operations.",
 };
 
 // ─── VIEW-LOCAL CONFIG ────────────────────────────────────────────────────────
@@ -100,28 +100,28 @@ const READER_PROFILES = [
   {
     label: "Policy Professional",
     emoji: "🏛️",
-    desc: "Start with Chapters 4–5 (Policy), then Chapter 2 (Sequencing) and Chapter 18 (Political Sustainability).",
+    desc: "Start with Chapters 2–3 (Policy), then Chapter 1 (The Execution Sequence) and Chapter 14 (Political Sustainability).",
     startHref: "/policy",
     startLabel: "Policy Intelligence →",
   },
   {
     label: "Healthcare Executive",
     emoji: "📊",
-    desc: "Start with Chapters 8–9 (Economics), then Chapters 14–15 (Operations) and Chapter 19 (Portfolio Management).",
+    desc: "Start with Chapters 6–7 (Economics), then Chapter 11 (Operations) and Chapter 15 (Portfolio Management).",
     startHref: "/economics",
     startLabel: "Economics Intelligence →",
   },
   {
     label: "Vermont Practitioner",
     emoji: "🍁",
-    desc: "Chapters 4, 10, and 20 are written directly for you. Vermont programs and clinical transformation are your primary thread.",
+    desc: "Chapters 2, 8, and 16 are written directly for you. Vermont programs and clinical transformation are your primary thread.",
     startHref: "/vermont-medicaid",
     startLabel: "Vermont Programs →",
   },
   {
     label: "Student or Researcher",
     emoji: "🔬",
-    desc: "Start with Chapter 1 (Framework), Chapter 2 (Sequencing), and the Research Lab tools that correspond to each pillar.",
+    desc: "Start with Chapter 1 (The Execution Sequence), then work each pillar chapter alongside the Research Lab tools and Appendix I (the HTR Lab Workbook).",
     startHref: "/research-lab",
     startLabel: "Research Lab →",
   },
@@ -130,14 +130,14 @@ const READER_PROFILES = [
 const KEY_CONCEPTS = [
   { term: "Six-Pillar Framework", def: "Policy, Economics, Technology, Clinical, Equity, Operations — must move together. Addressed in Chapter 1.", href: "/about/framework" },
   { term: "The 15 Dependency Relationships", def: "The structural interdependencies between pillars that determine execution order and failure risk.", href: "/about/framework" },
-  { term: "Execution Sequence", def: "Why Policy → Technology → Economics → Clinical → Equity → Operations is non-negotiable. Chapters 2–3.", href: "/htr-simulator" },
+  { term: "Execution Sequence", def: "Why Policy → Technology → Economics → Clinical → Equity → Operations is non-negotiable. Chapter 1.", href: "/htr-simulator" },
   { term: "The OneCare Failure", def: "Vermont's ACO failure used as a sequencing autopsy — economics without technology readiness.", href: "/vermont-vcci" },
   { term: "Vermont Thread", def: "Vermont's Acts 167 & 68, Blueprint, VCCI, AHEAD, and RHT Program as the book's primary teaching case.", href: "/vermont-act-68" },
   { term: "The AHEAD Model", def: "Medicare's entry into Vermont's total cost of care reform — integrating with Act 68's global budget mandate.", href: "/ahead-model" },
   { term: "Reference-Based Pricing", def: "The pricing architecture that precedes global budgets — anchoring payments to a transparent reference.", href: "/economics/value" },
   { term: "VBC Readiness (6 Domains)", def: "The six organizational readiness dimensions any health system must score before assuming value-based risk.", href: "/research-lab/knowledge-workspace?tab=readiness" },
   { term: "Failure Cascade", def: "How a gap in one pillar triggers compounding failures across the other five.", href: "/transformation-friction-index" },
-  { term: "AHS Restructuring Roadmap", def: "Vermont's Agency of Human Services restructuring as a live Chapter 20 six-pillar case study.", href: "/vermont-act-68" },
+  { term: "AHS Restructuring Roadmap", def: "Vermont's Agency of Human Services restructuring as a live Chapter 16 six-pillar case study.", href: "/vermont-act-68" },
 ];
 
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
@@ -168,7 +168,7 @@ export default async function BookPage() {
               Health Transformation Review
             </span>
             <span className="px-3 py-1 rounded-full bg-indigo-500/30 border border-indigo-400/30 text-xs font-black uppercase tracking-widest text-indigo-200">
-              Book — v28
+              Book — 2026 Edition
             </span>
           </div>
 
@@ -197,7 +197,7 @@ export default async function BookPage() {
           </div>
 
           <div className="flex flex-wrap gap-3">
-            <a href="/HTR_Book_v28_Final2.pdf" download="Transforming_American_Healthcare_HTR.pdf" className="inline-flex items-center gap-2 bg-white text-slate-900 px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-slate-100 transition-colors shadow-lg shadow-black/20">
+            <a href="/HTR_Book_v41.pdf" download="Transforming_American_Healthcare_HTR.pdf" className="inline-flex items-center gap-2 bg-white text-slate-900 px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-slate-100 transition-colors shadow-lg shadow-black/20">
               <ArrowDownTrayIcon className="w-4 h-4" />
               Download PDF
             </a>
@@ -243,13 +243,13 @@ export default async function BookPage() {
       <section className="mb-12">
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-xs font-black uppercase tracking-widest text-slate-400">Read the Full Book</h2>
-          <a href="/HTR_Book_v28_Final2.pdf" download="Transforming_American_Healthcare_HTR.pdf" className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors">
+          <a href="/HTR_Book_v41.pdf" download="Transforming_American_Healthcare_HTR.pdf" className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors">
             <ArrowDownTrayIcon className="w-3.5 h-3.5" />
             Download PDF
           </a>
         </div>
         <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50">
-          <iframe src="/HTR_Book_v28_Final2.pdf" className="w-full" style={{ height: "700px" }} title="Transforming American Healthcare — HTR Book" />
+          <iframe src="/HTR_Book_v41.pdf" className="w-full" style={{ height: "700px" }} title="Transforming American Healthcare — HTR Book" />
         </div>
       </section>
 
