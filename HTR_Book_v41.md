@@ -1706,12 +1706,13 @@ Two observations about this architecture are important for Vermont's technology 
 
 ## **Work This Chapter on the Platform**
 
-Chapter 4's data-infrastructure argument is best understood by building on the actual standards. The FHIR Lab turns the interoperability discussion into working resources.
+Chapter 4's data-infrastructure argument is best understood by building on the actual standards. The FHIR Lab turns the interoperability discussion into working resources, and the EMR/EHR Lab turns the EHR-investment decision into a model you can run.
 
 | Do this | On this tool | What to look for |
 | :---- | :---- | :---- |
 | Build FHIR R4 resources and map terminology across ICD-10, SNOMED, LOINC, RxNorm | **FHIR Interoperability Lab** — `/research-lab/interoperability?tab=fhir` | How a working data exchange differs from a data asset that merely "exists." |
 | Stratify a population by CMS-HCC risk and see the attribution that global budgets require | **Risk Stratification Engine** — `/research-lab/interoperability?tab=risk` | Why technology must precede economics: you cannot manage a budget for a population you cannot see. |
+| Compare EHR vendors, model adoption cost and 5-year ROI, and audit a record's USCDI data quality | **EMR/EHR Lab** — `/research-lab/interoperability?tab=emr` | Why "buying an EHR" is a financial and data-quality decision, not just a software purchase — and where the documentation burden comes from. |
 
 *Figure 4.H — Hands-on platform tools for the Technology Pillar.*
 
