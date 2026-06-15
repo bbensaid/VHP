@@ -124,7 +124,8 @@
       "Bash(qlmanage -t -s 1000 -o /tmp \"Vermont-Health-Platform-Documentation.pdf\")",
       "Bash(pandoc /tmp/vhp-combined.md -f gfm -t docx --toc --toc-depth=2 --metadata 'title=Vermont Health Platform — Documentation' -o Vermont-Health-Platform-Documentation.docx)",
       "Bash(base64 -i \"Vermont-Health-Platform-Documentation.docx\" -o /tmp/vhp-docx.b64)",
-      "Bash(pandoc /tmp/vhp-combined.md -f gfm -t docx --toc --toc-depth=3 --metadata 'title=Vermont Health Platform — Complete Documentation Set' --metadata 'author=HTR — Healthcare Transformation Roadmap' -o Vermont-Health-Platform-Documentation.docx)"
+      "Bash(pandoc /tmp/vhp-combined.md -f gfm -t docx --toc --toc-depth=3 --metadata 'title=Vermont Health Platform — Complete Documentation Set' --metadata 'author=HTR — Healthcare Transformation Roadmap' -o Vermont-Health-Platform-Documentation.docx)",
+      "Bash(git merge *)"
     ],
     "additionalDirectories": [
       "/private/tmp"
