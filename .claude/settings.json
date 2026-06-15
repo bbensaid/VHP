@@ -221,7 +221,11 @@
       "Bash(bash scripts/generate-narration-piper.sh 00-preface)",
       "Bash(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 frontend/public/audio/narration/00-preface.m4a)",
       "Bash(bash scripts/generate-narration-piper.sh)",
-      "Bash(xargs -n1 basename)"
+      "Bash(xargs -n1 basename)",
+      "Bash(git ls-remote *)",
+      "Bash(crontab -l)",
+      "Bash(git check-ignore *)",
+      "Bash(rm -f .claude/scheduled_tasks.lock)"
     ],
     "additionalDirectories": [
       "/private/tmp",
