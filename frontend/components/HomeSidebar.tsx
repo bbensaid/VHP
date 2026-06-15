@@ -134,7 +134,7 @@ const PILLAR_CONFIG: Record<PillarId, PillarSidebarConfig> = {
       { href: "/technology/security", label: "Data Security & Governance" },
       { href: "/technology/workflow", label: "Tech-Enabled Workflow" },
     ],
-    labToolIds: ["fhir-lab", "clinical-data-exchange", "ai-governance-lab", "digital-health-lab"],
+    labToolIds: ["fhir-lab", "emr-ehr-lab", "clinical-data-exchange", "ai-governance-lab", "digital-health-lab"],
   },
   clinical: {
     intelligenceItems: [
