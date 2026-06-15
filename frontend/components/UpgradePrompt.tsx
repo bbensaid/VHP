@@ -39,7 +39,7 @@ const TIER_CONFIG: Record<Tier, {
     perks: [
       "Full AI Analyst powered by Llama 3.3 70b",
       "The Wire — real-time healthcare intelligence",
-      "Research Lab — 19 interactive tools",
+      "Research Lab — 21 interactive tools",
       "Unlimited policy analysis access",
     ],
     cta: "Subscribe Now",

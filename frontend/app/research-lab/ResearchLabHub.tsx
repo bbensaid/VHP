@@ -36,7 +36,7 @@ const loadOpts = (label: string) => ({
   // so they share vendor splitting with chart.js / recharts
 } as const)
 
-/* ── Lazy-load all 22 tools with loading skeletons ──────────────────────── */
+/* ── Lazy-load all 21 tools with loading skeletons ──────────────────────── */
 const FHIRLab                    = dynamic(() => import(/* webpackChunkName: "tool-fhir" */        '@/components/research/FHIRLab'),                    { ...loadOpts('FHIR'), ssr: false })
 const RiskStratificationEngine   = dynamic(() => import(/* webpackChunkName: "tool-risk" */        '@/components/research/RiskStratificationEngine'),   { ...loadOpts('Risk'), ssr: false })
 const EMREHRLab                  = dynamic(() => import(/* webpackChunkName: "tool-emr" */         '@/components/research/EMREHRLab'),                  { ...loadOpts('EMR'), ssr: false })
@@ -276,7 +276,7 @@ function ResearchLabHubInner() {
                 HTR Research Lab
               </h1>
               <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">
-                22 interactive analytical tools spanning every dimension of health system transformation — from FHIR interoperability to six-pillar transformation scorecard.
+                21 interactive analytical tools spanning every dimension of health system transformation — from FHIR interoperability to six-pillar transformation scorecard.
               </p>
             </div>
           </div>
