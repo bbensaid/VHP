@@ -119,6 +119,7 @@ export const CHAPTERS: readonly Chapter[] = [
       { label: "Data Security & Governance", href: "/technology/security" },
       "fhir-lab",
       "emr-ehr-lab",
+      "statewide-ehr-lab",
     ],
   },
   {
@@ -208,6 +209,8 @@ export const CHAPTERS: readonly Chapter[] = [
       { label: "Revenue Cycle Management", href: "/operations/revenue-cycle" },
       { label: "Workforce & Human Capital", href: "/operations/workforce" },
       "transformation-scorecard",
+      "cin-shared-services",
+      "ems-transformation",
     ],
   },
 

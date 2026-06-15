@@ -10,6 +10,8 @@ const InnovationLeaderboard  = dynamic(() => import('@/components/research/Innov
 const ResearchWorkspace      = dynamic(() => import('@/components/research/ResearchWorkspace'),      { ssr: false })
 const VBCReadinessAssessment = dynamic(() => import('@/components/research/VBCReadinessAssessment'), { ssr: false })
 const TransformationScorecard = dynamic(() => import('@/components/research/TransformationScorecard'), { ssr: false })
+const CINSharedServicesLab   = dynamic(() => import('@/components/research/CINSharedServicesLab'),   { ssr: false })
+const EMSTransformationLab   = dynamic(() => import('@/components/research/EMSTransformationLab'),   { ssr: false })
 
 function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string; badge: string; desc: string }) {
   return (
@@ -50,6 +52,14 @@ const TABS = [
   {
     id: 'workspace', icon: '🗂️', label: 'Research Workspace', badge: 'Workspace',
     desc: 'Save and compare analysis scenarios, build structured reports from templates, manage citations in AMA/APA format, and export findings as Markdown or text.',
+  },
+  {
+    id: 'cin', icon: '🔗', label: 'CIN & Shared Services', badge: 'Vermont RHT',
+    desc: "Model Vermont's RHT-funded Clinically Integrated Network: shared billing, coding, credentialing, HR, IT, and group purchasing across the 14 hospitals against the ~$1,303/discharge administrative cost premium.",
+  },
+  {
+    id: 'ems', icon: '🚑', label: 'EMS Transformation', badge: 'Vermont RHT',
+    desc: "Model Vermont's RHT EMS investment: regionalizing 31 separate agencies and community-paramedicine treat-and-refer ED diversion, with the global-budget margin impact of prevented ED visits and admissions.",
   },
 ]
 
@@ -110,6 +120,8 @@ export default function KnowledgeWorkspaceClient() {
       {activeTab === 'scorecard'   && <div><ToolHeader icon="🎯"  label="Transformation Scorecard" badge="Executive"      desc={TABS[3].desc} /><TransformationScorecard /></div>}
       {activeTab === 'readiness'   && <div><ToolHeader icon="📊"  label="VBC Readiness Assessment" badge="Transformation" desc={TABS[4].desc} /><VBCReadinessAssessment /></div>}
       {activeTab === 'workspace'   && <div><ToolHeader icon="🗂️"  label="Research Workspace"       badge="Workspace"      desc={TABS[5].desc} /><ResearchWorkspace /></div>}
+      {activeTab === 'cin'         && <div><ToolHeader icon="🔗"  label="CIN & Shared Services"    badge="Vermont RHT"    desc={TABS[6].desc} /><CINSharedServicesLab /></div>}
+      {activeTab === 'ems'         && <div><ToolHeader icon="🚑"  label="EMS Transformation"       badge="Vermont RHT"    desc={TABS[7].desc} /><EMSTransformationLab /></div>}
     </LabPageShell>
   )
 }

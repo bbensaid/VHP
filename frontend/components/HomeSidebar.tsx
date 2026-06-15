@@ -134,7 +134,7 @@ const PILLAR_CONFIG: Record<PillarId, PillarSidebarConfig> = {
       { href: "/technology/security", label: "Data Security & Governance" },
       { href: "/technology/workflow", label: "Tech-Enabled Workflow" },
     ],
-    labToolIds: ["fhir-lab", "emr-ehr-lab", "clinical-data-exchange", "ai-governance-lab", "digital-health-lab"],
+    labToolIds: ["fhir-lab", "emr-ehr-lab", "statewide-ehr-lab", "clinical-data-exchange", "ai-governance-lab", "digital-health-lab"],
   },
   clinical: {
     intelligenceItems: [
@@ -166,7 +166,7 @@ const PILLAR_CONFIG: Record<PillarId, PillarSidebarConfig> = {
       { href: "/operations/supply-chain",  label: "Supply Chain & Infrastructure" },
       { href: "/operations/payer-network", label: "Payer & Network Operations" },
     ],
-    labToolIds: ["transformation-scorecard", "vbc-readiness", "evidence-library", "research-workspace"],
+    labToolIds: ["transformation-scorecard", "vbc-readiness", "evidence-library", "research-workspace", "cin-shared-services", "ems-transformation"],
   },
 };
 

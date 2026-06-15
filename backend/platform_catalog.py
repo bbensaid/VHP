@@ -442,6 +442,15 @@ CATALOG = [
         "keywords": ["emr", "ehr", "electronic health record", "electronic medical record", "ehr vendor", "ehr selection", "epic", "oracle health", "cerner", "meditech", "athenahealth", "ehr cost", "ehr roi", "ehr adoption", "total cost of ownership", "uscdi", "ehr data quality", "documentation burden", "pajama time", "clinician burnout", "ehr business case"],
     },
     {
+        "id": "lab-statewide-ehr",
+        "label": "Statewide EHR Deployment Modeler",
+        "url": "/research-lab/interoperability?tab=statewide-ehr",
+        "category": "Research Lab",
+        "subcategory": "Interoperability & Risk",
+        "description": "Model Vermont's Act 167 / Oliver Wyman feasibility question: a single statewide EHR vs. FHIR interoperability across the existing platforms — comparing 10-year total cost, data timeliness, migration disruption, and vendor lock-in.",
+        "keywords": ["statewide ehr", "single ehr", "common ehr", "act 167", "oliver wyman", "ehr feasibility", "statewide electronic health record", "fhir vs ehr", "ehr migration", "vendor lock-in", "vermont ehr", "hie strategic plan", "rht"],
+    },
+    {
         "id": "lab-risk-stratification",
         "label": "Risk Stratification Engine",
         "url": "/research-lab/interoperability?tab=risk",
@@ -543,6 +552,24 @@ CATALOG = [
         "subcategory": "Knowledge & Workspace",
         "description": "Save and compare analysis scenarios, build structured reports from templates, manage citations in AMA/APA format, and export findings as Markdown or text.",
         "keywords": ["research workspace", "save scenarios", "citation manager", "export report", "structured report"],
+    },
+    {
+        "id": "lab-cin-shared-services",
+        "label": "CIN & Shared Services Modeler",
+        "url": "/research-lab/knowledge-workspace?tab=cin",
+        "category": "Research Lab",
+        "subcategory": "Knowledge & Workspace",
+        "description": "Model Vermont's RHT-funded Clinically Integrated Network: shared billing, coding, credentialing, HR, IT, and group purchasing across the 14 hospitals against the ~$1,303/discharge administrative cost premium, with break-even.",
+        "keywords": ["cin", "clinically integrated network", "shared services", "administrative cost", "admin premium", "group purchasing", "back office", "billing", "coding", "credentialing", "vermont cin", "rht", "consolidation savings", "1303 per discharge"],
+    },
+    {
+        "id": "lab-ems-transformation",
+        "label": "EMS Transformation Modeler",
+        "url": "/research-lab/knowledge-workspace?tab=ems",
+        "category": "Research Lab",
+        "subcategory": "Knowledge & Workspace",
+        "description": "Model Vermont's RHT EMS investment: regionalizing 31 separate agencies and community-paramedicine treat-and-refer ED diversion, with the global-budget margin impact of prevented ED visits and admissions.",
+        "keywords": ["ems", "emergency medical services", "community paramedicine", "ems regionalization", "treat and refer", "ed diversion", "avoidable ed", "ambulance", "31 agencies", "paramedicine", "vermont ems", "rht", "911 utilization", "prevented admissions"],
     },
 
     # ─────────────────────────────────────────────────────────────────────────
