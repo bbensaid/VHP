@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { useSearchParams } from "next/navigation";
 import {
   Building2,
   DollarSign,
@@ -589,8 +590,16 @@ const MODES: { id: ModeId; icon: React.ReactNode; label: string }[] = [
   { id: "workflow", icon: <Stethoscope className="w-4 h-4" />, label: "4 · Workflow Sim" },
 ];
 
+const MODE_IDS = MODES.map((m) => m.id);
+
 export default function EMREHRLab() {
-  const [mode, setMode] = useState<ModeId>("vendors");
+  // Deep-link support: ?mode=cost|quality|workflow|vendors opens that mode
+  // (used by Academy lesson callouts that point at a specific mode).
+  const searchParams = useSearchParams();
+  const initialMode = MODE_IDS.includes(searchParams.get("mode") as ModeId)
+    ? (searchParams.get("mode") as ModeId)
+    : "vendors";
+  const [mode, setMode] = useState<ModeId>(initialMode);
   const [vendorId, setVendorId] = useState<VendorId>("epic");
   const vendor = vendorById(vendorId);
 
