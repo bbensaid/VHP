@@ -433,6 +433,15 @@ CATALOG = [
         "keywords": ["fhir", "fhir r4", "interoperability", "cds hooks", "prior authorization", "onc compliance", "hl7"],
     },
     {
+        "id": "lab-emr-ehr",
+        "label": "EMR/EHR Lab",
+        "url": "/research-lab/interoperability?tab=emr",
+        "category": "Research Lab",
+        "subcategory": "Interoperability & Risk",
+        "description": "Compare EHR vendors (Epic, Oracle Health, MEDITECH, athenahealth), model EHR adoption cost and 5-year ROI, audit a record's USCDI data quality, and quantify clinician documentation burden.",
+        "keywords": ["emr", "ehr", "electronic health record", "electronic medical record", "ehr vendor", "ehr selection", "epic", "oracle health", "cerner", "meditech", "athenahealth", "ehr cost", "ehr roi", "ehr adoption", "total cost of ownership", "uscdi", "ehr data quality", "documentation burden", "pajama time", "clinician burnout", "ehr business case"],
+    },
+    {
         "id": "lab-risk-stratification",
         "label": "Risk Stratification Engine",
         "url": "/research-lab/interoperability?tab=risk",
