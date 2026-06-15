@@ -450,6 +450,42 @@ CATALOG = [
         "description": "Apply HCC v28 RAF scoring, segment populations by risk tier, build custom risk models, and analyze comorbidity interactions using Elixhauser and Charlson indices.",
         "keywords": ["risk stratification", "hcc scoring", "raf score", "risk tier", "elixhauser", "charlson", "comorbidity", "patient risk"],
     },
+    {
+        "id": "lab-clinical-data-exchange",
+        "label": "Clinical Data Exchange Lab",
+        "url": "/research-lab/vbc-clinical-quality?tab=hl7",
+        "category": "Research Lab",
+        "subcategory": "VBC, Clinical & Quality",
+        "description": "Read annotated HL7 v2 messages (ADT/ORU), build FHIR R4 resource bundles, use the HL7↔FHIR side-by-side bridge, and browse USCDI v3 data elements — anchored to 8 Vermont patient scenarios.",
+        "keywords": ["hl7", "hl7 v2", "adt", "oru", "fhir bundle", "clinical data exchange", "uscdi", "message", "interface", "data exchange"],
+    },
+    {
+        "id": "lab-risk-stratification-methodology",
+        "label": "Risk Stratification Methodology",
+        "url": "/research-lab/vbc-clinical-quality?tab=risk",
+        "category": "Research Lab",
+        "subcategory": "VBC, Clinical & Quality",
+        "description": "Walk through HCC v28 RAF score calculation step by step, build a population risk-tier pyramid, and compare major risk adjustment algorithms including Johns Hopkins ACG, CDPS, and Charlson.",
+        "keywords": ["risk adjustment methodology", "hcc v28", "raf calculation", "acg", "johns hopkins acg", "cdps", "charlson", "risk tier pyramid", "algorithm comparison"],
+    },
+    {
+        "id": "lab-vbc-quality-measures",
+        "label": "VBC Quality Measures",
+        "url": "/research-lab/vbc-clinical-quality?tab=quality",
+        "category": "Research Lab",
+        "subcategory": "VBC, Clinical & Quality",
+        "description": "Explore HEDIS measures with numerator/denominator logic, analyze 30-day readmissions using CMS RSRR methodology, and classify avoidable ED visits with AHRQ Prevention Quality Indicators.",
+        "keywords": ["hedis", "quality measures", "readmissions", "rsrr", "30-day readmission", "avoidable ed", "prevention quality indicators", "pqi", "ahrq", "vbc quality"],
+    },
+    {
+        "id": "lab-high-low-value-care",
+        "label": "High vs. Low Value Care",
+        "url": "/research-lab/vbc-clinical-quality?tab=value",
+        "category": "Research Lab",
+        "subcategory": "VBC, Clinical & Quality",
+        "description": "Run A1C and blood-pressure panel management with shared-savings calculations, scan for low-value care with Choosing Wisely, and decompose total cost of care by service category.",
+        "keywords": ["high value care", "low value care", "choosing wisely", "a1c management", "blood pressure panel", "shared savings", "total cost of care", "tcoc", "overuse"],
+    },
 
     # ─────────────────────────────────────────────────────────────────────────
     # RESEARCH LAB — KNOWLEDGE & WORKSPACE
