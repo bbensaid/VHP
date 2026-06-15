@@ -29,7 +29,7 @@ const FEATURE_GUIDES = [
     icon: BeakerIcon,
     color: "sky",
     title: "Research Lab",
-    desc: "A guide to all 21 modeling tools — which one to use and when.",
+    desc: "A guide to all 24 modeling tools — which one to use and when.",
     href: "/academy/getting-started/research-lab",
   },
   {
@@ -73,7 +73,7 @@ const FIRST_STEPS = [
   {
     step: "04",
     title: "Explore the Research Lab",
-    body: "The Research Lab has 21 interactive modeling tools. The hub page gives you an overview — start there and follow the links to the tools most relevant to your work.",
+    body: "The Research Lab has 24 interactive modeling tools. The hub page gives you an overview — start there and follow the links to the tools most relevant to your work.",
     href: "/research-lab",
     cta: "Open Research Lab",
   },

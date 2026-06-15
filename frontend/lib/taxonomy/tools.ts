@@ -141,6 +141,14 @@ export const TOOLS: readonly Tool[] = [
     desc: "Model EHR adoption cost & ROI, compare major vendors, audit USCDI data quality, and walk a simulated clinical encounter.",
   },
   {
+    id: "statewide-ehr-lab",
+    label: "Statewide EHR Deployment Modeler",
+    href: "/research-lab/interoperability?tab=statewide-ehr",
+    pillars: ["technology"],
+    chapters: ["4"],
+    desc: "Model the Act 167 feasibility question: a single statewide EHR vs. FHIR interoperability across Vermont's existing platforms — 10-year TCO, data timeliness, disruption, and vendor lock-in.",
+  },
+  {
     id: "ai-governance-lab",
     label: "AI Clinical Governance Lab",
     href: "/research-lab/technology-ai?tab=ai",
@@ -235,6 +243,22 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/knowledge-workspace?tab=workforce",
     pillars: ["clinical", "operations"],
     chapters: ["11"],
+  },
+  {
+    id: "cin-shared-services",
+    label: "CIN & Shared Services Modeler",
+    href: "/research-lab/knowledge-workspace?tab=cin",
+    pillars: ["operations", "economics"],
+    chapters: ["11"],
+    desc: "Model Vermont's RHT-funded Clinically Integrated Network: shared billing/coding/credentialing/HR/IT and group purchasing across the 14 hospitals vs. the $1,303/discharge admin-cost premium.",
+  },
+  {
+    id: "ems-transformation",
+    label: "EMS Transformation Modeler",
+    href: "/research-lab/knowledge-workspace?tab=ems",
+    pillars: ["operations"],
+    chapters: ["11"],
+    desc: "Model Vermont's RHT EMS investment: regionalizing 31 agencies and community-paramedicine treat-and-refer ED diversion, with global-budget margin impact.",
   },
 
   // ── Top-level simulators & dashboards ─────────────────────────────────

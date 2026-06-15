@@ -5,7 +5,7 @@ import FromTheBook from "@/components/FromTheBook";
 
 export const metadata = {
   title: "HTR Research Lab | Health Transformation Review",
-  description: "21 interactive analytical tools organized by the six-pillar framework: Policy, Economics, Technology, Clinical, Equity, and Operations.",
+  description: "24 interactive analytical tools organized by the six-pillar framework: Policy, Economics, Technology, Clinical, Equity, and Operations.",
 };
 
 const PILLAR_LABS: {

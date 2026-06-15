@@ -36,10 +36,13 @@ const loadOpts = (label: string) => ({
   // so they share vendor splitting with chart.js / recharts
 } as const)
 
-/* ── Lazy-load all 21 tools with loading skeletons ──────────────────────── */
+/* ── Lazy-load all 24 tools with loading skeletons ──────────────────────── */
 const FHIRLab                    = dynamic(() => import(/* webpackChunkName: "tool-fhir" */        '@/components/research/FHIRLab'),                    { ...loadOpts('FHIR'), ssr: false })
 const RiskStratificationEngine   = dynamic(() => import(/* webpackChunkName: "tool-risk" */        '@/components/research/RiskStratificationEngine'),   { ...loadOpts('Risk'), ssr: false })
 const EMREHRLab                  = dynamic(() => import(/* webpackChunkName: "tool-emr" */         '@/components/research/EMREHRLab'),                  { ...loadOpts('EMR'), ssr: false })
+const StatewideEHRLab            = dynamic(() => import(/* webpackChunkName: "tool-statewide-ehr" */ '@/components/research/StatewideEHRLab'),          { ...loadOpts('StatewideEHR'), ssr: false })
+const CINSharedServicesLab       = dynamic(() => import(/* webpackChunkName: "tool-cin" */         '@/components/research/CINSharedServicesLab'),       { ...loadOpts('CIN'), ssr: false })
+const EMSTransformationLab       = dynamic(() => import(/* webpackChunkName: "tool-ems" */         '@/components/research/EMSTransformationLab'),       { ...loadOpts('EMS'), ssr: false })
 const APMDesignLab               = dynamic(() => import(/* webpackChunkName: "tool-apm" */         '@/components/research/APMDesignLab'),               { ...loadOpts('APM'), ssr: false })
 const APMCalculator              = dynamic(() => import(/* webpackChunkName: "tool-apm" */         '@/components/research/APMCalculator'),              { ...loadOpts('APMCalc'), ssr: false })
 const CEACalculator              = dynamic(() => import(/* webpackChunkName: "tool-econ" */        '@/components/research/CEACalculator'),              { ...loadOpts('CEA'), ssr: false })
@@ -83,6 +86,7 @@ const SECTIONS: Section[] = [
       { id: 'fhir',   icon: '🔌', label: 'FHIR Interoperability Lab',  badge: 'Interoperability', badgeCls: 'bg-indigo-100 text-indigo-700 border-indigo-200', desc: 'Build and validate FHIR R4 resources, map clinical terminologies, test CDS Hooks, simulate prior authorization workflows, and check ONC compliance.' },
       { id: 'risk',   icon: '📊', label: 'Risk Stratification Engine',  badge: 'Clinical Risk',    badgeCls: 'bg-indigo-100 text-indigo-700 border-indigo-200', desc: 'Apply HCC v28 RAF scoring, segment populations by risk tier, build custom risk models, and analyze comorbidity interactions using Elixhauser and Charlson indices.' },
       { id: 'emr',    icon: '🏥', label: 'EMR/EHR Lab',                 badge: 'EHR Systems',      badgeCls: 'bg-indigo-100 text-indigo-700 border-indigo-200', desc: 'Model EHR adoption cost, timeline, and 5-year ROI; compare Epic, Oracle Health, MEDITECH, and athenahealth; audit a record for USCDI data quality; and step through a simulated clinical encounter to see documentation burden.' },
+      { id: 'statewide-ehr', icon: '🗺️', label: 'Statewide EHR Modeler', badge: 'Act 167 · RHT',  badgeCls: 'bg-indigo-100 text-indigo-700 border-indigo-200', desc: "Model Vermont's Act 167 feasibility question — a single statewide EHR vs. FHIR interoperability across existing platforms — on 10-year cost, data timeliness, migration disruption, and vendor lock-in." },
     ],
   },
   {
@@ -126,6 +130,8 @@ const SECTIONS: Section[] = [
       { id: 'workforce',   icon: '👨‍⚕️', label: 'Workforce Modeler',         badge: 'Workforce',    badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Project physician supply and demand across 12 specialties over 10 years, simulate nurse staffing ratio impacts, calculate turnover costs, and model rural incentive programs.' },
       { id: 'leaderboard', icon: '🏆',  label: 'Innovation Leaderboard',   badge: 'Benchmarking', badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Rank all 50 states on a composite health transformation index, score 30 major health systems on VBC maturity, and compare 20 payers on innovation leadership.' },
       { id: 'workspace',   icon: '🗂️',  label: 'Research Workspace',       badge: 'Workspace',    badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Save and compare analysis scenarios, build structured reports from templates, manage citations in AMA/APA format, and export findings as Markdown or text.' },
+      { id: 'cin',         icon: '🔗',  label: 'CIN & Shared Services',    badge: 'Vermont RHT',  badgeCls: 'bg-teal-100 text-teal-700 border-teal-200', desc: "Model Vermont's RHT-funded Clinically Integrated Network: shared billing, coding, credentialing, HR, IT, and group purchasing across the 14 hospitals against the ~$1,303/discharge administrative cost premium." },
+      { id: 'ems',         icon: '🚑',  label: 'EMS Transformation',       badge: 'Vermont RHT',  badgeCls: 'bg-teal-100 text-teal-700 border-teal-200', desc: "Model Vermont's RHT EMS investment: regionalizing 31 separate agencies and community-paramedicine treat-and-refer ED diversion, with the global-budget margin impact of prevented ED visits and admissions." },
     ],
   },
 ]
@@ -137,6 +143,7 @@ function ActiveTool({ sectionId, toolId }: { sectionId: string; toolId: string }
     case 'interoperability/fhir':          return <FHIRLab />
     case 'interoperability/risk':          return <RiskStratificationEngine />
     case 'interoperability/emr':           return <EMREHRLab />
+    case 'interoperability/statewide-ehr': return <StatewideEHRLab />
     case 'payment-models/apm-design':      return <APMDesignLab />
     case 'payment-models/apm-calc':        return <APMCalculator />
     case 'payment-models/cea':             return <CEACalculator />
@@ -155,6 +162,8 @@ function ActiveTool({ sectionId, toolId }: { sectionId: string; toolId: string }
     case 'knowledge-workspace/workforce':  return <WorkforceModeler />
     case 'knowledge-workspace/leaderboard':return <InnovationLeaderboard />
     case 'knowledge-workspace/workspace':  return <ResearchWorkspace />
+    case 'knowledge-workspace/cin':        return <CINSharedServicesLab />
+    case 'knowledge-workspace/ems':        return <EMSTransformationLab />
     default: return null
   }
 }
@@ -276,7 +285,7 @@ function ResearchLabHubInner() {
                 HTR Research Lab
               </h1>
               <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">
-                21 interactive analytical tools spanning every dimension of health system transformation — from FHIR interoperability to six-pillar transformation scorecard.
+                24 interactive analytical tools spanning every dimension of health system transformation — from FHIR interoperability to six-pillar transformation scorecard.
               </p>
             </div>
           </div>
