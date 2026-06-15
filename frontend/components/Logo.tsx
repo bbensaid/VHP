@@ -5,18 +5,22 @@ import Image from "next/image";
 import { useBrand } from "@/components/BrandContext";
 
 const Logo: React.FC = () => {
-  const { config } = useBrand();
+  const { brand, config } = useBrand();
+  // Logo graphic switches per domain: review → "HTR", solutions → "HTS".
+  // Same bespoke mark; only the trailing letter differs (R vs S).
+  const logoSrc = brand === "review" ? "/logo-hts-vector-R.svg" : "/logo-hts-vector-S.svg";
+  const logoAlt = brand === "review" ? "HTR Logo" : "HTS Logo";
   return (
     <div className="inline-block group cursor-pointer select-none">
-      
+
       {/* 1. FLEX CONTAINER */}
       <div className="flex items-center gap-2">
-        
+
         {/* 2. IMAGE SIZE */}
         <div className="relative h-14 w-14 sm:h-16 sm:w-16 shrink-0">
           <Image
-            src="/logo-hts-vector.svg"
-            alt="HTS Logo"
+            src={logoSrc}
+            alt={logoAlt}
             fill
             className="object-contain"
             priority

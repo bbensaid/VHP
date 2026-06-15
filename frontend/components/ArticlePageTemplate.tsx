@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import { getImageDimensions } from "@sanity/asset-utils";
 import { client } from "@/lib/sanity";
 import { getUser, roleAtLeast } from "@/lib/auth";
 import UpgradePrompt from "@/components/UpgradePrompt";
@@ -267,20 +269,41 @@ export default async function ArticlePageTemplate({
             </p>
           </header>
 
-          {article.mainImage?.asset?.url && (
+          {article.mainImage?.asset?.url && (() => {
+            // Dimensions parsed from the Sanity asset _id (encodes WxH) so
+            // next/image preserves ratio; the max-h-[600px] object-cover crop
+            // (intentional) is preserved via className.
+            let dims: { width: number; height: number } | null = null;
+            try { dims = getImageDimensions(article.mainImage.asset); } catch { dims = null; }
+            const heroClass = "w-full h-auto rounded-xl shadow-lg object-cover max-h-[600px]";
+            return (
             <figure className="mb-12">
-              <img
-                src={article.mainImage.asset.url}
-                alt={article.mainImage.alt || article.title}
-                className="w-full h-auto rounded-xl shadow-lg object-cover max-h-[600px]"
-              />
+              {dims ? (
+                <Image
+                  src={article.mainImage.asset.url}
+                  alt={article.mainImage.alt || article.title}
+                  width={dims.width}
+                  height={dims.height}
+                  sizes="(max-width: 1024px) 100vw, 1024px"
+                  className={heroClass}
+                />
+              ) : (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={article.mainImage.asset.url}
+                  alt={article.mainImage.alt || article.title}
+                  className={heroClass}
+                  loading="lazy"
+                />
+              )}
               {article.mainImage.caption && (
                 <figcaption className="mt-3 text-center text-sm text-slate-500 dark:text-slate-400 italic">
                   {article.mainImage.caption}
                 </figcaption>
               )}
             </figure>
-          )}
+            );
+          })()}
 
           {canReadFull ? (
             <>

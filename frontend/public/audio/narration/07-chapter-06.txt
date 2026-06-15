@@ -1,53 +1,230 @@
-Chapter 6. The Technology Pillar. Data Infrastructure for a Transformed Health System.
+Vermont’s mandatory reference-based pricing and global hospital budgets represent the most direct attempt by any American state to break the fee-for-service incentive structure that makes population health management financially irrational.
+Payment reform is the precondition on which all other transformation depends. This chapter develops reference-based pricing mechanics, global budget architecture, and what Maryland's decade of evidence proves.
 
-In Chapter 1 we said Technology is the data infrastructure that makes everything else measurable. In Chapter 2 we said the Technology pillar must precede the Economics pillar in the execution sequence, because you cannot pay for value if you cannot measure value. In this chapter, we develop the Technology pillar in detail.
+The Economics Pillar: Why Payment Reform Is the Master Variable.
 
-The chapter is organized around five elements. Vermont's all-payer claims database, called VHCURES. Vermont's health information exchange, operating under Act 62 governance. The interoperability standards that connect everything, principally FHIR. The Clinically Integrated Network architecture. And the governance framework for artificial intelligence in clinical care.
+Of the six pillars in the six-pillar framework, the Economics pillar is the one that determines whether the other five actually produce results. You can design perfect care protocols, build excellent data infrastructure, and train a superb clinical workforce — but if the payment system rewards volume over value, every other improvement will be absorbed by the financial logic of fee-for-service. Payment reform is not one element of healthcare transformation. It is the precondition on which all other transformation depends.
+This chapter develops the economics of healthcare transformation through three lenses that are analytically inseparable: the mechanics of how hospitals are actually paid today and why that model is failing (with Vermont as the case study), the technical architecture of the alternative payment mechanisms designed to replace it (reference-based pricing and global budgets), and the financial modeling discipline that organizations need to navigate the transition. Vermont's reform journey — from the Act 167 diagnostic through the Act 68 mandate through the AHEAD Model state agreement — is the most complete real-world laboratory for these economic questions currently operating in the United States.
 
-Element one. VHCURES, the Vermont Healthcare Claims Uniform Reporting and Evaluation System.
+The Fee-for-Service Trap — Why the Current System Fails.
 
-An all-payer claims database is, in concept, simple. It is a centralized data repository that collects health insurance claims from all payers operating in a state, including commercial insurers, Medicare, and Medicaid. The database enables population-level analysis of cost, utilization, quality, and equity across the entire health system, regardless of which payer covered any individual claim.
+Fee-for-service payment is the foundational economic structure of American healthcare: providers are paid for each service they deliver, with payment amounts set by negotiated contracts or government rate schedules. The system's economic logic is simple and, from a provider's perspective, entirely rational: more services delivered means more revenue. The problem is that this rationality at the individual transaction level produces irrational outcomes at the system level.
 
-Vermont's VHCURES is one of the older and more mature all-payer claims databases in the country. It is operated under state regulatory authority, supported by federal Medicare data integration, and made available to state agencies, researchers, and contracted analytic partners under privacy-protective protocols. VHCURES is the principal evidence base for everything we say about Vermont health system performance in the rest of this book.
+The Volume Incentive Problem.
 
-The structural importance of VHCURES extends beyond the individual analyses it supports. VHCURES is the data foundation on which Vermont's hospital global budget regime depends. Without claims-level data across all payers, the global budget cannot be defined defensibly, the performance of the global budget cannot be measured, and the financial integrity of the regime cannot be verified.
+Under fee-for-service, a hospital that prevents a hospitalization loses revenue. A hospital that prevents a readmission loses revenue. A hospital that successfully manages a patient's chronic condition in primary care so they never need the emergency department loses revenue. Every improvement in population health, every success in care coordination, every dollar spent on preventing the expensive acute event — each of these reduces the hospital's income under the fee-for-service model.
+This is not a criticism of individual hospital managers or clinicians, who are generally motivated by genuine commitment to patient care. It is an observation about the structural incentive embedded in the payment architecture. When the financial incentive and the clinical incentive point in opposite directions, the financial incentive wins — not always, not in every case, but systematically and at scale. This is why fifteen years of voluntary value-based care programs have moved the needle on payment reform without fundamentally changing the volume-driven behavior of the hospital sector.
+"The concept of the global budget is the fundamental piece that flipped the incentives for hospitals in the right direction. It was such a monumental change, a sea change, in the way that hospitals thought about raising revenue."
+— Maryland state regulator, quoted in JAMA Network Open study of the Maryland All-Payer Model
 
-States that lack a mature all-payer claims database cannot implement a credible global budget regime. Several states have attempted to build such databases and abandoned the effort for political or operational reasons. The states currently leading on payment reform are, with very few exceptions, the states that have invested in claims-data infrastructure.
+The Price Extraction Problem.
 
-Element two. The Vermont Information Technology Leaders organization, known as VITL, and the Act 62 governance restructure.
+By the numbers: 417%, UVMMC Outpatient vs. Medicare; 250-300%, Average VT Commercial Rate; ~136%, Approx. Break-Even Point; $400M+, Projected 5-Year Savings.
+Fee-for-service payment creates a second structural problem distinct from the volume incentive: it enables hospitals with market power to charge commercial payers prices far above their actual cost of care. In competitive markets, prices are disciplined by competition. In highly concentrated hospital markets — which describe the majority of U.S. hospital markets, and all of Vermont's — there is no effective competitive discipline on commercial prices.
+Vermont's price data, documented in the GMCB's February 2026 report and confirmed by independent analyses, is among the most extreme in the country:
+(See the accompanying table.)
+The gap between the break-even point (~136% of Medicare) and the actual commercial prices being charged (250–300% on average, with outliers reaching 944%) is not driven by higher quality, better outcomes, or greater complexity. Oliver Wyman's analysis found no relationship between price and quality across Vermont's hospital system. It is driven by market power — the ability of a dominant provider to demand above-cost prices from payers who have no viable alternative for their members.
+The consequence for insurance premiums is direct and arithmetically straightforward. When a hospital charges 300% of Medicare for a service instead of 136%, and when commercial insurance covers the majority of that cost, premiums must rise to cover the difference. Vermont's premium trajectory — individual market average monthly premium from $456 in 2018 to $948 in 2024, a 108% increase in six years — tracks hospital charge growth with high fidelity. These are not coincidental trends. They are the mathematical output of a price structure that has no regulatory discipline.
+Vermont average monthly silver marketplace premium (2018–2024)
+(See the accompanying table.)
 
-A health information exchange, sometimes called an HIE, is the operational counterpart to an all-payer claims database. Where the claims database holds retrospective billing data, the health information exchange moves clinical data across organizations in something approaching real time. Lab results. Hospital admissions. Discharge summaries. Medication histories. The clinical data that allows one care team to know what another care team did, when seconds and minutes matter.
+The Cross-Subsidy Collapse.
 
-VITL was founded in two thousand five and has operated as Vermont's primary health information exchange for two decades. Over those decades, the operational requirements of a state-level health information exchange have grown substantially. The original VITL architecture was designed for a smaller and less ambitious use case than the one Vermont's transformation now requires.
+The fee-for-service model sustains itself through cross-subsidy: commercial payers (who pay above cost) effectively subsidize Medicare and Medicaid patients (who pay below cost). This cross-subsidy is the financial foundation of every U.S. hospital that serves a mixed payer population — which is to say, every hospital.
+Vermont's demographic trajectory, documented in detail by Oliver Wyman, is destroying the cross-subsidy model. As the 65+ population expands from 21.7% in 2020 toward 30%+ by 2040, the proportion of patients covered by below-cost Medicare and Medicaid grows. As the working-age population (20-64) declines from 58.8% toward 52%, the pool of commercially insured patients shrinks. The shrinking commercial base must bear a growing cross-subsidy burden — which forces premiums higher — which reduces commercial enrollment — which shrinks the commercial base further. This is not a gradual trend. It is a reinforcing spiral.
+Oliver Wyman's financial projections capture where this spiral leads: under the conservative scenario, 13 of Vermont's 14 hospitals report operating losses by 2028, with a cumulative 5-year system deficit of $700 million to $2.4 billion depending on expense growth assumptions. The hospital system does not gradually lose efficiency under this trajectory. It collapses.
+BEYOND VERMONT
+The fee-for-service spiral described above does not require Vermont's all-payer model or its 14-hospital structure to operate — it is the default trajectory of fee-for-service payment anywhere that a shrinking commercial base subsidizes care for a growing share of publicly-insured and uninsured patients, which describes most rural and many urban hospital markets nationally. What Vermont's numbers provide is a fully quantified, publicly documented version of a spiral every state's hospital association can recognize in its own data, even where no single report has assembled the picture as starkly as Oliver Wyman did for Vermont.
 
-Act 62 of two thousand twenty-four was the legislative restructuring of Vermont's health information exchange governance. Act 62 clarified the relationships between the state, the existing VITL organization, the hospitals and primary care practices that depend on health information exchange, and the technology vendors that participate in the ecosystem. Act 62 is in framework terms, a Policy pillar action that authorizes a Technology pillar restructure required by the Economics pillar work of Act 68.
+Reference-Based Pricing — Mechanics, Evidence, and Vermont's Design.
 
-The structural lesson of Act 62 is that Technology infrastructure is, in significant part, a governance question. The legal and operational frameworks under which technology is built and operated determine what that technology can support. Bad governance produces bad technology, no matter how good the engineers are. Good governance is the precondition for good technology.
+Reference-based pricing (RBP) is the first operational tool in Vermont's economics reform sequence. It addresses the price extraction problem directly: rather than allowing hospitals and payers to negotiate prices in bilateral, opaque arrangements where hospital market power determines the outcome, RBP establishes a transparent external benchmark — typically a percentage of Medicare reimbursement — as the maximum a hospital may accept.
 
-Element three. FHIR interoperability.
+How RBP Works: The Mechanism.
 
-FHIR is the acronym for Fast Healthcare Interoperability Resources, a healthcare data exchange standard developed under HL7 International. FHIR is the current generation interoperability standard for healthcare. It is structured around web-native protocols, supports modern application programming interfaces, and is the foundation of the federal interoperability rule-making that has been advancing through the Office of the National Coordinator for Health Information Technology over the past several years.
+The core RBP mechanism is straightforward: the regulatory authority (in Vermont's case, GMCB) establishes, by rule, the maximum amounts that hospitals shall accept as payment in full for items and services delivered. These maximum amounts are calculated as a percentage of Medicare reimbursement for the same or similar service. The percentage is calibrated to allow hospitals to cover their actual costs (break-even at ~136% of Medicare) while eliminating the excessive markup that drives premium inflation.
+Act 68's RBP architecture reflects four design principles that distinguish Vermont's approach from weaker price transparency experiments:
+Mandatory, not voluntary — every hospital, every commercial payer, by FY2027
+Binding ceiling, not advisory guidance — hospitals cannot charge or collect more than the established rate
+Transparent benchmark — Medicare rates provide a nationally comparable, publicly available anchor
+Premium passthrough monitoring — GMCB and DFR must verify that price reductions translate to lower premiums
+GMCB's February 2026 report introduced one additional design refinement that reflects the Vermont-specific complexity of applying RBP to a highly varied 14-hospital system. Rather than applying a single statewide RBP multiplier, GMCB will consider each hospital's specific community context: payer mix, labor costs, social risk factors, and role in Vermont's system. A critical access hospital serving a predominantly Medicaid and Medicare rural population has different cost economics than a large PPS academic medical center. Vermont's RBP methodology will accommodate these differences while maintaining the essential principle that commercial prices may not exceed a defensible multiple of Medicare.
 
-The structural importance of FHIR is that it is, for the first time in the history of American health information technology, a single standard that all major systems are converging toward. Electronic health record vendors. Health information exchanges. Payer systems. State data systems. Federal data systems. The convergence is not complete. The convergence is unevenly implemented. But the convergence is real and is structurally different from the historical fragmentation of healthcare data exchange.
+The Evidence Base: Cross-State Results.
 
-The implication for transformation is that the operational cost of data exchange is falling. Five years ago, custom-integrating two health information systems was a six-figure project. Today, the same integration is a configuration exercise. The cost curve matters. Cheaper data exchange enables population health management programs, risk stratification programs, and equity reporting programs that were operationally impossible at the higher cost.
+Vermont is not designing RBP in a vacuum. Three states have implemented meaningful price reference programs with documented results, providing the evidence base for Vermont's design choices.
+(See the accompanying table.)
+The Oregon results are the most directly applicable to Vermont's situation because Oregon implemented RBP for a state employee plan while Vermont is implementing it statewide. The critical finding — all 24 affected hospitals remained in-network — directly addresses the most frequently raised concern about RBP: that hospitals will walk away from the regulated rates and leave patients without in-network access. The Oregon evidence is unambiguous on this point: hospitals did not exit the market when rates were set at 200% of Medicare, because 200% of Medicare is still substantially above their actual costs.
 
-Element four. The Clinically Integrated Network architecture.
+What RBP Does — and What It Does Not Do.
 
-A Clinically Integrated Network, often abbreviated CIN, is an organizational structure that allows independent providers to collaborate operationally and contractually while preserving their independent legal identity. The Federal Trade Commission and Department of Justice antitrust guidance recognizes Clinically Integrated Networks as a permissible form of provider collaboration when specific criteria are met.
+GMCB's February 2026 report was notably precise about the scope of RBP's impact. Understanding what RBP accomplishes, and what requires complementary mechanisms, is essential for policymakers and healthcare leaders designing transformation strategies.
+RBP does:
+Reduce hospital leverage to demand excessive prices from commercial payers
+Narrow unjustified price variation across hospitals for the same service
+Protect patient affordability by establishing binding price ceilings
+Limit monopolistic pricing power in concentrated markets
+Incentivize operational efficiencies over price increases as the margin lever
+Serve as a necessary input for global budget design by establishing the price denominator
+RBP does NOT:
+Control total hospital spending — only the price component, not volume
+Guarantee savings pass-through to consumers without explicit monitoring requirements
+Restructure incentives around prevention or population health
+Guarantee hospital efficiency, sustainability, or quality performance
+Solve the cross-subsidy collapse driven by demographic aging
+This is why Act 68 sequences RBP first, global budgets second. RBP is a necessary but insufficient tool. Global budgets address what RBP leaves unresolved: total hospital spending, volume incentives, and population health management.
 
-Vermont's transformation strategy contemplates the development of a Clinically Integrated Network architecture that connects rural hospitals, the Federally Qualified Health Centers, the Designated Agencies that provide community behavioral health services, and the primary care practices participating in the Blueprint for Health. The Clinically Integrated Network is the organizational form that translates the global budget regime of Act 68 into operational reality at the provider level.
+Vermont's Phased Implementation Timeline.
 
-The Rural Health Transformation Program funding, including Vermont's one hundred and ninety-five million dollar award, is significantly directed toward Clinically Integrated Network development. This is a Technology pillar investment but it is also an Operations pillar investment, and it depends on the Policy pillar authority that Act 68 establishes.
+GMCB is implementing RBP in two phases, reflecting both the regulatory complexity of establishing a statewide rate-setting methodology and the operational reality that hospitals need runway to adapt their financial models.
+(See the accompanying table.)
+The Phase I action — the negative 1% commercial rate benchmark for FY2027 — deserves particular attention because it is already producing results before formal RBP is in place. Combined with FY2026 measures including the Act 55 outpatient drug cap and hospital budget enforcement, GMCB reduced Vermont hospital commercial revenue by $230.65 million in FY2026: $104.3M from the Act 55 drug cap, $94.58M from hospital budget orders, and $31.76M from budget enforcement. This is the largest single-year price reduction in Vermont hospital history, accomplished through regulatory authority that already existed, signaling what becomes possible when RBP is formally implemented.
 
-Element five. Artificial intelligence governance.
+Hospital Global Budgets — Architecture, History, and Vermont's Mandate.
 
-We are now in a period when artificial intelligence is being introduced into clinical care at a rate that exceeds the rate at which the governance frameworks for that introduction are maturing. The Technology pillar must include a coherent governance approach to artificial intelligence, not as a side concern but as a central concern.
+A hospital global budget is a prospectively set annual revenue cap for a hospital, established before the year begins, based on population health needs and past performance rather than on the volume of services delivered during the year. Under a global budget, a hospital receives a fixed total payment regardless of how many patients it sees or how many services it provides. This single design choice — decoupling revenue from volume — fundamentally transforms the hospital's financial incentive structure.
 
-The book's view is that artificial intelligence governance must address three questions. First, validation. How do we know the artificial intelligence model performs as advertised on the population to which it will be applied. Second, deployment. How is the model integrated into clinical workflow without introducing alert fatigue, automation bias, or workflow disruption. Third, monitoring. How do we know, on an ongoing basis, that the model continues to perform, that the model has not drifted, and that the model has not produced disparate outcomes by race, ethnicity, or other protected characteristic.
+The Economic Logic: Flipping the Incentive.
 
-Vermont's Technology pillar work explicitly contemplates artificial intelligence governance at the state regulatory level. The Green Mountain Care Board has authority that touches on artificial intelligence governance in hospital operations. The Agency of Human Services has authority that touches on artificial intelligence in clinical care delivery. The federal Office for Civil Rights has authority over discriminatory uses of artificial intelligence in health care. The governance terrain is, as of two thousand twenty-six, still being mapped.
+Under fee-for-service, revenue = price × volume. To increase revenue, a hospital must increase either the price per service or the number of services delivered. Under a global budget, revenue is fixed. The only way to improve financial performance is to reduce costs — which means managing population health better, preventing hospitalizations, reducing avoidable readmissions, improving efficiency, and delivering care in less expensive settings.
+This is not a theoretical incentive. The Maryland experience, documented over a decade of all-payer global budget operation, demonstrates the behavioral change in concrete terms. As one Maryland state regulator described it: the global budget is the fundamental piece that flips the incentives for hospitals — hospitals had to transition from business strategies that chase volume to ones that focused on population health management. That transition does not happen overnight, but it does happen, and the documented savings are substantial.
+The global budget also creates something fee-for-service never can: revenue predictability. Under FFS, a hospital's revenue depends on patient volume, acuity, service mix, and billing accuracy — all variable and partially outside the hospital's control. Under a global budget, the hospital knows its annual revenue before the year begins. This predictability enables the long-term capital planning, workforce investment, and care redesign that hospital transformation requires. For Vermont's financially distressed rural hospitals, revenue predictability is not a secondary benefit — it is a survival mechanism.
 
-The book argues that getting artificial intelligence governance right requires moving before the risks crystallize, not after. The cost of getting governance right preemptively is high. The cost of getting governance right reactively, after a high-visibility incident, is higher.
+Five Design Dimensions Every Global Budget Must Resolve.
 
-In Chapter 7, we turn to the Technology pillar in practice. We examine the operational deployment of artificial intelligence scribes, remote patient monitoring, telehealth, and diagnostic artificial intelligence. We walk through the artificial intelligence clinical governance lifecycle in detail. And we address the operational reality of alert fatigue and clinical decision support effectiveness.
+Global budget design is technically complex, and the design choices are consequential. GMCB's February 2026 report identified five dimensions that any global budget methodology must address, along with the core tradeoff embedded in each. These dimensions apply equally to Vermont's GMCB-designed commercial budgets, the AHEAD Model Medicare budgets, and the Medicaid global budget already in operation.
+(See the accompanying table.)
+
+Vermont's Global Budget History: Four Attempts, One Lesson.
+
+Vermont has been attempting to implement hospital global budgets for over a decade. The history of those attempts is essential context for understanding why Act 68's mandatory approach represents a fundamental departure from everything that preceded it, and why the departure was necessary.
+(See the accompanying table.)
+The central lesson of this history is unambiguous: voluntary models fail because the actors who benefit most from the status quo — the highest-priced hospitals and the commercial payers with the most leverage — can and do opt out. A global budget that is optional for the highest-price hospital in a market is not a global budget; it is a demonstration project. Act 68's statutory mandate eliminates the opt-out. This is the design difference that matters.
+"If the model is not adequately regulated and sufficiently resourced, it will fail dramatically and harm patients and harm our health system."
+— Owen Foster, Chair of the Vermont Green Mountain Care Board, on signing the AHEAD State Agreement, January 2025
+
+Maryland — A Decade of Global Budget Evidence.
+
+Vermont is this chapter's forward-looking case — an early-stage, mandatory implementation whose outcomes are still unfolding. Maryland is this chapter's backward-looking case — a decade-plus, statewide global budget program whose outcomes are already measurable. The two are best read as a pair: Maryland answers “does this kind of model work anywhere, over time?” while Vermont answers “what does it take to implement one today, under current conditions?” A reader in a state with neither Vermont's all-payer infrastructure nor Maryland's decades of regulatory history should read this section first, since it is the evidence base that does not depend on either state's specific starting conditions.
+
+Maryland All-Payer Model — A Decade of Evidence.
+
+The only U.S. state with mandatory all-payer global budgets since 2014. Vermont's closest comparable.
+$1.4 billion in Medicare hospital savings vs. projected national trend.
+7% reduction in hospital admissions for Medicare patients. Avoidable admissions down over 6%.
+Vermont's AHEAD EAST Fund ($150M addresses the gap: global budgets without primary care investment reduce volume without improving population health.
+Maryland is the only U.S. state to have operated a mandatory all-payer hospital rate setting system with global budgets for more than a decade. Its experience is the closest available empirical evidence for what Vermont is attempting, and it deserves detailed examination — both for what it demonstrates is possible and for the limitations the evidence also reveals.
+
+The Maryland Architecture.
+
+Maryland's Health Services Cost Review Commission (HSCRC) was established in 1972 with statutory authority to set hospital rates for all commercial payers — a unique regulatory authority that no other state possesses. The HSCRC received a Medicare demonstration waiver in 1977, enabling all-payer rate setting to include Medicare. The current Global Budget Revenue (GBR) methodology, implemented through a renegotiated CMS waiver in 2014, fixes each hospital's total annual revenue before the year begins, regardless of how many patients are served or services provided. Prices for individual services adjust dynamically during the year to meet the fixed revenue target.
+The model's accountability structure has three components beyond the global budget itself: a Medicare Performance Adjustment (1% of Medicare revenues) tied to total cost of care outcomes; Quality Based Reimbursement (2% of all-payer revenue) linked to patient experience, safety, and outcomes; and incentives for reducing hospital-acquired conditions, potentially avoidable utilization, and readmissions. The budget constraint is non-negotiable; the quality components are calibrated to reward the population health management behavior the global budget is designed to incentivize.
+
+The Results.
+
+The evidence from Maryland's global budget model is substantial and consistent across multiple independent evaluations:
+(See the accompanying table.)
+Maryland also reduced hospital spending for commercial beneficiaries, cut ED visits and inpatient admissions across all payer types, and significantly improved outcomes for dual-eligible (Medicare/Medicaid) patients — the highest-cost, highest-complexity population segment that Vermont also needs to serve better. The 14-day follow-up visit rate and 30-day unplanned readmission rate both improved for non-teaching hospitals.
+
+The Limitations — What Maryland Teaches About What Global Budgets Cannot Do Alone.
+
+The Maryland evidence is not uniformly positive, and intellectual honesty requires presenting the limitations alongside the achievements. The Milbank Fund's evaluation found mixed results on quality metrics and no improvement in overall population health measures like smoking rates or obesity prevalence. The reason is analytically important: the global budget creates a powerful incentive to reduce hospital utilization, but it does not automatically create the community infrastructure needed to address the health determinants that drive that utilization.
+When Maryland reduced avoidable hospital admissions, the reduction was concentrated among healthier patients — people who, with adequate primary care and social support, would not have needed hospitalization. The sickest patients continued arriving at emergency departments, and hospitals actually spent more time treating them. The lesson is that a global budget without commensurate investment in primary care, behavioral health, housing, and transportation does not improve population health — it just reduces hospital revenue while leaving the underlying drivers of high utilization intact.
+Vermont has heard this lesson clearly. The AHEAD State Agreement explicitly links hospital global budgets with the Equity, Access, and Statewide Transformation (EAST) Fund — providing up to $150 million in additional Medicare funds annually starting in 2027 to invest in primary care, mental health, home health, and long-term care services. The Rural Health Transformation Program award of $195 million provides capital for workforce, telehealth, and community infrastructure. Vermont's global budget design is, from the beginning, paired with the community investment that Maryland added only after its first years of operation.
+
+The AHEAD Model — Medicare's Entry into Vermont's Reform.
+
+By the numbers: Jan 2028, AHEAD Cohort 2 Launches; $150M/yr, EAST Fund for Vermont; 9 Years, Model Duration to 2035; 3-Payer, Medicare + Medicaid + Commercial.
+The AHEAD (Achieving Healthcare Efficiency through Accountable Design) Model represents the federal government's partnership with states committed to genuine all-payer total cost of care transformation. Vermont signed its AHEAD State Agreement on January 17, 2025, committing to participate in Cohort 2 beginning January 1, 2028. The agreement was a 3-1 vote by GMCB, with the dissenting member citing concerns about implementation complexity — a vote that reflects the genuine difficulty and ambition of what Vermont has committed to.
+
+What AHEAD Actually Is.
+
+AHEAD is a voluntary state total cost of care model that aims to drive state-level healthcare transformation and multi-payer alignment. The model has three primary components that operate in concert:
+Hospital Global Budgets — participating hospitals receive prospective, biweekly Medicare FFS payments instead of traditional claims-based payments, providing revenue predictability while creating population health incentives
+Primary Care AHEAD — voluntary program for primary care practices to receive enhanced prospective, risk-adjusted Medicare payments for coordinated care, with four payment pathway options including fully prospective models
+State accountability — Vermont commits to controlling total cost of care growth, increasing primary care investment as a percentage of total spending, and improving population health outcomes and equity metrics
+The AHEAD Financial Package for Vermont
+The AHEAD State Agreement provides Vermont with a substantial financial resource package alongside its accountability commitments:
+Up to $150 million in additional Medicare funds annually starting in 2027, with inflation adjustments each year
+$1.2 million in federal transformation grants beginning Cooperative Agreement Year 3 (2027) for health system transformation
+Equity, Access, and Statewide Transformation (EAST) Fund for investment in primary care, behavioral health, home health, and long-term care — the community infrastructure layer that makes global budgets work
+Technical assistance from CMS on global budget design methodology, risk adjustment, and performance monitoring
+Nine-year model duration (through December 31, 2035) providing multi-year planning horizon for hospital transformation
+The $150M annual figure is significant context: Vermont's total Medicare and Medicaid spending exceeds $3 billion annually. The AHEAD funds represent approximately 5% of that total — meaningful but not transformative in isolation. The value is in what the funds are explicitly directed toward: the community infrastructure and primary care investment that turns a hospital cost-control model into a population health model.
+
+The AHEAD-Act 68 Integration: Why Both Are Required.
+
+A critical analytical point that is easily missed: the AHEAD Model and Act 68 are not alternatives or substitutes. They are complementary layers of the same reform architecture, operating on different payer populations and at different speeds, but designed to converge on the same outcome: a Vermont hospital system operating under aligned all-payer global budgets.
+AHEAD governs Medicare FFS hospital payments — approximately 23% of Vermont's insured population and a higher share of hospital revenue given Medicare's age-driven intensity. Act 68 governs commercial hospital prices and budgets — approximately 52% of Vermont's insured population and the majority of hospital revenue. Vermont's Medicaid global budget, already operational under the Global Commitment to Health demonstration and aligned with AHEAD, covers approximately 19% of the population. Together, these three layers create the all-payer alignment that makes a global budget system effective.
+(See the accompanying table.)
+The Medicare Advantage gap is worth noting. AHEAD applies to Medicare fee-for-service beneficiaries; approximately 31% of Vermont's Medicare-eligible population is in Medicare Advantage plans, which are managed care contracts between CMS and private insurers. These plans operate outside the AHEAD global budget framework. As MA enrollment continues growing nationally, this gap represents an increasing share of the Medicare population that is not subject to Vermont's hospital cost-containment regime — a design limitation that Vermont policymakers are aware of and that will require ongoing attention.
+
+Hospital Financial Modeling — Reading the Numbers That Matter.
+
+For healthcare leaders navigating the transition to global budgets and reference-based pricing, financial modeling is not an academic exercise. It is the analytical foundation for every strategic decision: which service lines to maintain or discontinue, how much capital investment is prudent, what staffing model is financially sustainable, when and how aggressively to pursue shared services. This section develops the core financial modeling framework for Vermont's hospital sector, drawing on Oliver Wyman's projections and the GMCB's hospital financial data.
+
+The Oliver Wyman Projection Scenarios.
+
+Oliver Wyman built two financial scenarios for Vermont's hospital sector through 2028, representing the range between optimistic and realistic assumptions about expense growth. Both scenarios assume the same revenue growth trajectory (3.5% annual non-340B revenue growth); they differ in their expense growth assumptions, reflecting uncertainty about labor market conditions and drug costs.
+(See the accompanying table.)
+The UVM Health Network requires separate attention because it dominates Vermont's hospital economics. Under the conservative scenario, UVM network hospitals face a $312M cumulative 5-year deficit against break-even — more than 44% of the total statewide deficit. Under the realistic scenario, this grows to $1.5B — again roughly 62% of the statewide total. The concentration of Vermont's hospital financial problem in the largest network is analytically important: system transformation strategies that do not address UVMMC's cost structure and overhead will fail to materially improve statewide affordability. Oliver Wyman specifically called out UVMMC's administrative overhead and the proportion of providers engaged in non-patient-care activities as areas requiring examination.
+
+Reading the Metrics That Actually Matter Under Global Budgets.
+
+The transition from fee-for-service to global budgets fundamentally changes which financial metrics matter most. Healthcare finance professionals accustomed to FFS environments need to reorient around a different set of indicators.
+(See the accompanying table.)
+This metric shift is not cosmetic. It requires fundamental changes to hospital management information systems, internal reporting, board dashboards, and management incentive structures. A hospital whose CFO is still optimizing revenue per discharge when revenue is fixed will not successfully navigate the global budget transition. The CFO in a global budget environment needs to become an expert in population health economics — tracking the care patterns and community conditions that drive utilization, and investing in interventions that reduce avoidable costs.
+
+The Savings Roadmap: Where Vermont's $400M+ Can Come From.
+
+Oliver Wyman's analysis identified the specific sources of direct and indirect savings from Vermont's transformation. Understanding this roadmap is essential for any organization planning its role in Vermont's reformed system.
+(See the accompanying table.)
+The largest single source of indirect savings — shifting procedures from hospital to ambulatory surgical and outpatient settings — reflects the third Oliver Wyman imperative: move all care possible out of hospitals. Low-risk surgical procedures performed in a hospital setting cost two to three times what the same procedure costs in a free-standing ambulatory surgical unit. Vermont currently has only two ambulatory surgical centers (both in Burlington), a significant gap given the breadth of the inpatient surgical capacity Oliver Wyman recommends redirecting. The RHT Program and Act 68 transformation grants are explicitly designed to fund the development of non-hospital care capacity that makes this shift possible.
+
+APM Transition Strategy for Vermont Healthcare Organizations.
+
+For health systems, payer organizations, and community providers operating in Vermont, the payment reform transformation is not an abstract policy development — it is an operational reality requiring specific preparation. This section provides the strategic and financial planning framework for organizations navigating the transition.
+
+The Three-Phase Transition Model.
+
+Vermont's payment reform trajectory follows a predictable three-phase model that organizations can use for planning purposes:
+(See the accompanying table.)
+
+The VBC Readiness Assessment in a Global Budget Context.
+
+The Value-Based Care Transformation Readiness Assessment (30 dimensions across six domains) applies directly to Vermont organizations preparing for global budget participation, but three domains deserve elevated attention given the specific demands of the Vermont environment:
+Data and Technology — particularly attribution list generation and total cost of care measurement. A hospital that cannot accurately attribute its patient population cannot manage a global budget. Vermont's VHCURES all-payer claims database is the foundational data infrastructure, but many hospitals lack the internal analytics capability to use it effectively for population health management. This gap must be closed before FY2027.
+Care Delivery Capability — particularly community health worker deployment and post-acute care network relationships. The Maryland experience demonstrated that global budgets without community care infrastructure simply reduce hospital volume without improving population health. Vermont hospitals must build these relationships proactively.
+
+Work This Chapter on the Platform.
+
+Chapter 6's payment-reform argument — reference-based pricing, global budgets, the fee-for-service trap — is fully modelable. Reproduce the chapter's Vermont numbers and then run your own.
+(See the accompanying table.)
+
+Implications for You.
+
+If you are a Vermont hospital executive: Global budgets change everything about how you think about revenue. Under fee-for-service, revenue growth requires volume growth. Under a global budget, revenue is fixed — which means cost reduction and efficiency improvement are the only paths to financial improvement. The hospitals that are preparing for global budgets now are modeling their cost structure under a fixed revenue scenario: what does your cost per adjusted discharge look like at current volume? At 5% lower volume? At 10% lower volume? What administrative cost reduction opportunities exist that are not visible under the current volume-growth financial model? The $1,303 per-discharge administrative gap between Vermont's CAHs and the national benchmark is not going to close by itself. It closes when the financial model changes, and that model change is 18 months away.
+If you are an AHS or GMCB official: The global budget methodology is the most consequential document Vermont's transformation will produce. It determines which hospitals are financially viable under mandatory pricing, which will need transformation support, and which may require consolidation or redesign. The methodology must address three technical questions that Act 68 leaves partially open: How will benchmarks be set for hospitals with unusual payer mixes? How will social risk adjustment be incorporated for hospitals serving high-SDOH populations? And how will the benchmark be updated in years two, three, and beyond, as the transformation investments of the RHT Program produce changes in utilization that the original benchmark did not anticipate? Getting these three questions right in the methodology design is worth more than any amount of enforcement capability applied to a poorly designed methodology.
+If you are a Vermont legislator: The EAST Fund — up to $150M annually in Medicare performance funds flowing to Vermont under AHEAD — is transformation capital, not operating revenue. Its correct use is investment in the community health infrastructure, workforce development, and social determinants programs that produce the population health improvement AHEAD measures. If the EAST Fund is used to cover operating deficits at financially stressed hospitals, it will produce short-term relief and long-term dependence without the population health improvement that justifies the federal investment. The legislature should set explicit expectations for EAST Fund use that distinguish transformation investment from operating subsidy.
+If you are a national health policy professional: Vermont's RBP target of 200% of Medicare is the most specific mandatory all-payer price target enacted by any state. The central question it raises for national health policy is not whether 200% is the right number — it is whether mandatory price caps produce access reductions or operational efficiencies. Maryland's decades-long experience with all-payer rate regulation provides one data point; Vermont's will provide another, in a smaller and more rural market under more acute financial pressure. The comparison between Vermont's results and Maryland's will be the most informative natural experiment in all-payer pricing since Maryland's program began.
+Network and Partnerships — particularly community partner SDOH referral networks. The Oliver Wyman systems map showed that housing, transportation, and behavioral health gaps drive a significant proportion of avoidable hospital utilization. Hospitals that lack functioning SDOH referral pathways will face cost pressure under global budgets that they cannot address through clinical means alone.
+
+Key Concepts Introduced or Expanded in This Chapter.
+
+Global Budget Revenue (GBR)
+Maryland's term for a prospectively fixed annual hospital revenue cap, adjusted for quality performance and population health metrics. The model Vermont's GMCB-designed commercial global budgets will most closely follow.
+All-payer alignment
+The condition in which Medicare, Medicaid, and commercial payers all operate under the same or compatible payment methodology for hospital services. Essential for global budget effectiveness; Vermont's AHEAD + Act 68 combination is designed to achieve this by FY2028-2030.
+Cross-subsidy
+The mechanism by which above-cost commercial payments subsidize below-cost Medicare and Medicaid payments. Vermont's demographic shift is making this mechanism financially unsustainable as the commercial base shrinks relative to the government-payer population.
+Potentially avoidable utilization (PAU)
+Hospital admissions, ED visits, and readmissions that could have been prevented through effective primary care, care coordination, or SDOH intervention. A key performance metric under global budgets; reducing PAU saves money in a capped-revenue environment.
+EAST Fund
+Equity, Access, and Statewide Transformation Fund — the component of Vermont's AHEAD State Agreement providing up to $150M annually in additional Medicare funds for investment in primary care, behavioral health, home health, and long-term care.
+AHEAD (Achieving Healthcare Efficiency through Accountable Design)
+CMMI's voluntary state total cost of care model, with 6 participating states. Vermont participates in Cohort 2, beginning January 2028. Provides Medicare FFS hospital global budgets, enhanced primary care payments, and accountability for total cost of care growth.
+Revenue predictability
+A primary benefit of global budgets for hospital financial management: knowing total annual revenue before the year begins enables capital planning, workforce investment, and strategic redesign that FFS revenue uncertainty prevents.
+PMPM (per member per month)
+The standard unit of measurement in population-based payment models. Total spending (or cost) divided by the number of enrolled members divided by the number of months. The fundamental metric for tracking performance under global budgets and capitation arrangements.
+Sources: Oliver Wyman Healthcare and Life Sciences Group, Act 167 Community Engagement: Recommendations (August 2024, revised October 2024); Act 68 of 2025 (Vermont); Green Mountain Care Board, Act 68 Update on Hospital Reference-Based Pricing and Global Budgets (February 17, 2026); Vermont AHEAD State Agreement (January 17, 2025); CMS, AHEAD Model overview; Maryland HSCRC, Global Budget Revenue methodology and annual reports; Commonwealth Fund, Hospital Global Budgeting: Lessons from Maryland and Selected Nations (June 2024); Milbank Memorial Fund, Uniquely Similar: New Results from Maryland's All-Payer Model (2020); Vermont Agency of Human Services, Rural Health Transformation Program Application (November 2025).

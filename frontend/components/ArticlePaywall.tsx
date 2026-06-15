@@ -1,5 +1,4 @@
 import Link from "next/link";
-import UpgradePrompt from "./UpgradePrompt"; // or inline a simple CTA if UpgradePrompt has different props
 
 export default function ArticlePaywall({ previewText, title, from }: { previewText: string; title: string; from: string }) {
   return (

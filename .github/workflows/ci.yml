@@ -141,6 +141,12 @@ jobs:
       - name: Lint (ruff)
         run: ruff check .
 
+      - name: Validate RAG golden dataset
+        run: python -m eval.validate_dataset
+        # Dependency-free structural check (stdlib only). Blocking: fails CI on
+        # malformed dataset entries, but NOT on coverage warnings (8/50, missing
+        # pillars) — those are tracked, not gated.
+
       - name: Type check (mypy)
         run: mypy main.py --ignore-missing-imports --no-strict-optional
         continue-on-error: true  # Non-blocking until type coverage improves

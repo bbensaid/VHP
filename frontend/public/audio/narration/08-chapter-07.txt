@@ -1,63 +1,143 @@
-Chapter 7. The Technology Pillar in Practice. FHIR, AI Governance, and Clinical Decision Support.
+The translation of Vermont’s payment architecture into operational financial management requires actuarial precision, equity safeguards, and analytics capability being built simultaneously with the policy mandates they must support.
+How healthcare organizations model the financial impact of value-based care — benchmark mechanics, shared savings calculations, risk stratification ROI, and the financial case for transformation investment.
 
-Chapter 6 made the structural argument for Technology. Chapter 7 examines what actually happens when the technology is deployed into clinical operations. The Technology pillar tends to look simple in policy documents and complicated in real hospitals. This chapter is about what complicates it.
+From Payment Architecture to Financial Practice.
 
-We organize the chapter around five operational topics. FHIR implementation reality. Artificial intelligence scribe technology. Remote patient monitoring and telehealth. Diagnostic artificial intelligence. And the artificial intelligence clinical governance lifecycle.
+Chapter 3 established the payment architecture — reference-based pricing, global budgets, the AHEAD Model, Maryland's proof of concept, and Vermont's economic transformation mandate. This chapter turns from architecture to practice: how do healthcare organizations actually model the financial impact of alternative payment models, assess their readiness to enter and succeed in VBC contracts, and build the financial case for the operational investments that transformation requires?
+Financial modeling for value-based care is not the same as financial modeling for fee-for-service operations. Under FFS, the financial questions are primarily about revenue optimization: how do we maximize reimbursement for the volume we deliver? Under VBC, the financial questions are fundamentally different: what is our total cost of care for our attributed population? Where is our cost higher than the benchmark, and why? What investments in care management, primary care, or SDOH programs will reduce that cost below the benchmark, producing shared savings? These are population health economics questions, not revenue cycle questions, and they require different analytical frameworks, different data infrastructure, and different management skills.
 
-Topic one. FHIR implementation reality.
+The APM Financial Modeling Framework.
 
-In Chapter 6 we described FHIR as the converging interoperability standard. That is true at the level of standards bodies and federal rulemaking. The reality on the ground is more uneven. Different electronic health record vendors implement FHIR with different completeness. Different versions of the standard remain in use across different systems. Different organizations have different operational maturity in deploying FHIR-based integrations.
+Understanding Benchmarks — The Foundation of VBC Economics.
 
-The practical implication is that FHIR is a precondition for transformation but is not, by itself, transformation. A state-level health information exchange that has adopted FHIR is structurally better positioned than one that has not. A hospital electronic health record that exposes FHIR endpoints is structurally better positioned than one that does not. But the conversion from structurally better positioned to operationally functioning requires sustained engineering investment that most organizations have under-budgeted.
+Every alternative payment model is built around a benchmark: the expected cost of care for the attributed population against which actual performance is measured. Shared savings (if actual costs are below benchmark) or shared losses (if actual costs are above benchmark) are calculated relative to this benchmark. Getting the benchmark right — or negotiating favorable benchmark methodology — is often the most important financial decision in VBC contract entry.
+Benchmarks can be constructed in several ways, each with different financial implications for the entering organization:
+Benchmark Construction Methods — What Healthcare Leaders Must Understand
 
-The lesson for transformation strategy is that FHIR adoption is a beginning, not an end. The platform's FHIR Interoperability Lab, available in the research lab section, allows organizations to assess their current FHIR maturity and to identify the specific operational gaps that block higher-value uses of the standard.
+Historical Spending Baseline.
 
-Topic two. Artificial intelligence scribe technology.
+The most common approach — the benchmark is set at the organization's own historical cost of care, typically with a trend adjustment. Advantage: organizations with above-average historical spending start with a higher benchmark, making savings easier to achieve. Disadvantage: organizations with below-average historical spending (already efficient) face a lower benchmark with less room for savings — the ‘efficient provider disadvantage.’
+VERMONT AHEAD CONTEXT
+CMMI sets global budget baselines for hospitals based on their historical Medicare FFS spending, with adjustments. Vermont's hospitals with historically lower spending may face benchmarks that limit their financial upside under AHEAD.
 
-Artificial intelligence scribe technology is the use of large language models to listen to clinical encounters and generate structured clinical documentation in real time, without requiring the clinician to type. The technology has matured rapidly. Major electronic health record vendors now offer integrated artificial intelligence scribe products. Independent vendors offer alternatives. Several major health systems have deployed artificial intelligence scribes at scale and report substantial reductions in clinician documentation time, with corresponding reductions in burnout and improvement in clinician satisfaction.
+Regional Benchmark.
 
-The operational lessons from the early deployments are several. First, artificial intelligence scribe technology is not a finished product. It requires ongoing model adjustment, prompt engineering, and quality assurance. Second, clinical workflow must be redesigned around the technology, not simply extended. Clinicians who try to use artificial intelligence scribes as a translation of the prior documentation workflow tend to report mixed experiences. Clinicians who redesign their workflow around the technology tend to report stronger benefits. Third, the data privacy and governance questions are real. Audio of clinical encounters is among the most sensitive data the system handles. Vendor contracts, audit trails, and patient consent mechanisms matter.
+The benchmark is set at regional average cost of care, not the organization's own history. Advantage: eliminates the efficient provider disadvantage. Disadvantage: organizations in high-cost regions compete against a lower benchmark than their own history would produce.
+VERMONT RBP CONTEXT
+GMCB's reference-based pricing uses Medicare rates as the external benchmark — not Vermont hospital historical prices. This is a regional benchmark approach that directly addresses the problem of benchmarks based on historical high prices.
 
-The Vermont transformation strategy includes investment in artificial intelligence scribe technology as part of the Rural Health Transformation Program funding. The investment is targeted at rural hospitals and primary care practices where clinician documentation burden is highest and clinician burnout is most acute. The investment is, in framework terms, a Technology pillar action serving Clinical pillar goals.
+Prospective Benchmark.
 
-Topic three. Remote patient monitoring and telehealth.
+The benchmark is set at the beginning of the performance year based on projected population needs. Used in global budgets and capitation models. Advantage: provides revenue certainty for planning. Disadvantage: risk adjustment quality determines fairness — poor risk adjustment produces winners and losers based on case mix differences, not care management quality.
+VERMONT GLOBAL BUDGET CONTEXT
+Vermont's Act 68 global budgets for non-CAH hospitals must specify how the prospective budget is set and adjusted for patient complexity — the risk adjustment methodology is a key design question currently under development.
 
-Remote patient monitoring is the use of devices to collect physiological data from patients outside the clinical setting. Blood pressure cuffs that transmit readings to clinical teams. Glucose monitors. Pulse oximeters. Wearable devices that track heart rate, sleep, and activity. The technology has matured. The clinical evidence base for remote patient monitoring in chronic disease management is now substantial.
+The Shared Savings Calculation — A Working Model.
 
-Telehealth is the broader practice of clinical care delivered through video, telephone, or asynchronous messaging rather than in-person encounters. The pandemic-era expansion of telehealth produced operational and regulatory adaptations that are now being consolidated into ongoing practice. Vermont's transformation strategy assumes substantial use of telehealth, particularly in rural areas where in-person access is geographically constrained.
+For organizations entering ACO REACH, MSSP, or similar shared savings models, the following framework captures the core financial logic. The APM Shared Savings Calculator implements this model with organization-specific data inputs.
+(See the accompanying table.)
 
-The operational issues with both remote patient monitoring and telehealth are similar. Reimbursement parity with in-person care, which determines financial viability. Workflow integration, which determines clinical effectiveness. Patient access to the necessary technology and connectivity. Equity considerations, since the populations that most need access to telehealth are often the populations with the least reliable broadband and device access.
+Risk Stratification — The Economic Engine of Population Health Management.
 
-The Vermont Rural Health Transformation Program funds broadband infrastructure in rural Vermont precisely because telehealth and remote patient monitoring cannot deliver their potential without reliable connectivity. The investment is a Technology pillar investment that is also implicitly an Equity pillar investment.
+The Care Management ROI Calculation.
 
-Topic four. Diagnostic artificial intelligence.
+A program preventing 50 hospitalizations in 10,000 Medicare beneficiaries at $15,000 each generates $750,000 in avoided cost.
+If the program costs $200,000 to operate, the ROI is 275%.
+Under fee-for-service, the prevented hospitalization is lost revenue — which is why FFS systematically discourages prevention.
+Under fee-for-service, the financial value of identifying a high-risk patient is limited — you can bill more for the additional services you provide. Under value-based care, the financial value of identifying a high-risk patient before a health crisis occurs is enormous: every hospitalization prevented by a care management intervention saves the organization the full cost of that hospitalization. The math is compelling.
+A care management program that prevents 50 hospitalizations in a population of 10,000 Medicare beneficiaries, at an average cost of $15,000 per hospitalization, generates $750,000 in avoided cost. If the organization bears downside risk (and receives upside savings) on those prevented hospitalizations, the financial return on a care management program that costs $200,000 to operate is approximately 3.75:1 — a 275% ROI. This is the core financial logic that makes population health management economically rational under VBC and economically irrational under FFS.
+(See the accompanying table.)
 
-Diagnostic artificial intelligence is the use of machine learning models to assist clinicians with diagnostic decisions. Image-based diagnostic artificial intelligence in radiology, pathology, and dermatology has matured substantially. Algorithmic risk stratification for patient deterioration is now common in hospital settings. Diagnostic decision support in primary care is an active area of development.
+Economics Pillar Implementation Matrix.
 
-The structural question with diagnostic artificial intelligence is not whether to use it. The structural question is how to govern it. Diagnostic artificial intelligence introduces risks that older clinical decision support tools did not. Models can drift. Models can perform differently on populations than they were trained on. Models can encode biases that produce disparate diagnostic outcomes by race, ethnicity, or other protected characteristic. Models can produce automation bias in clinicians, who may stop second-guessing the model even when the model is wrong.
+The following matrix provides implementation guidance for the key investments in this pillar — estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
+(See the accompanying table.)
 
-We address governance in the next topic.
+APM Readiness Assessment — The 30-Dimension Framework.
 
-Topic five. The artificial intelligence clinical governance lifecycle.
+The Value-Based Care Transformation Readiness Assessment evaluates organizational readiness for APM entry across 30 dimensions in six domains. The framework is designed to identify the gaps that are most likely to prevent an organization from achieving shared savings — or most likely to produce shared losses — before a contract is signed.
 
-The book argues that responsible artificial intelligence in clinical care requires a four-stage governance lifecycle. The four stages are validation, deployment, monitoring, and retirement.
+The Six Readiness Domains.
 
-Validation. Before an artificial intelligence model is deployed clinically, it must be validated on the population to which it will be applied. Validation includes performance metrics, equity audits, and clinical workflow assessment. Validation is not a one-time act. Validation must be repeated as the model is updated, as the population shifts, and as the clinical context changes.
+Domain 1: Strategic Clarity assesses whether the organization has a clear rationale for APM participation, an appropriate governance structure, and leadership alignment on the risk appetite and timeline for VBC transition. Organizations that enter APMs without genuine executive commitment — treating VBC as a compliance exercise rather than a strategic priority — consistently underperform.
+Domain 2: Data and Technology evaluates the analytics infrastructure needed to manage a VBC population: attribution list generation, total cost of care measurement, care gap identification, risk stratification, and quality reporting automation. This domain is Vermont's most significant organizational gap — most Vermont community hospitals lack the internal analytics capability to use VHCURES data effectively for population health management. The joint AHS-GMCB analytics vendor procurement addresses the statewide gap; individual hospital analytics capacity must be built alongside it.
+Domain 3: Care Delivery Capability assesses the clinical programs needed to act on risk stratification insights: care management programs organized around risk tiers, primary care PCMH readiness, behavioral health integration, post-acute care network relationships, community health worker deployment, and patient outreach and engagement capability. Vermont's Blueprint for Health PCMHs and CHTs provide a strong care delivery foundation; the gap is in building on this foundation to serve the more complex patients that AHEAD's population health requirements target.
+Domain 4: Network and Partnerships evaluates the relationships the organization has with the specialists, post-acute facilities, and community organizations that determine whether high-risk patients receive coordinated care or fragmented care after a hospitalization or specialist referral. Vermont's Oliver Wyman-designed COE regionalization framework and CIN development address this domain systematically.
+Domain 5: Revenue Cycle examines the billing and coding practices that determine whether the organization's VBC contracts are financially managed correctly: HCC coding completeness (essential for risk adjustment accuracy), RAF gap identification, attribution denial management, and VBC contract payment reconciliation. This domain is covered in depth in Chapter 3.
+Domain 6: Workforce Operations evaluates the staffing model, credentialing efficiency, retention rates, and training capability that determine whether the care coordination programs identified in Domain 3 can actually be implemented and sustained.
 
-Deployment. When an artificial intelligence model is deployed clinically, the deployment must include workflow design, clinician training, alert tuning, and a defined plan for handling model outputs. Deployment is the stage at which alert fatigue is either prevented or generated. We will return to alert fatigue.
+VBC Readiness Scoring — What the Numbers Mean.
 
-Monitoring. Once an artificial intelligence model is operating clinically, ongoing monitoring is required to detect model drift, performance degradation, and emerging disparate outcomes. Monitoring includes automated metrics, periodic re-validation, and a process for human review of edge cases. Monitoring is the stage that most organizations under-invest in.
+Each of the 30 dimensions is scored 1-4: Pre-transition (1), Developing (2), Operational (3), Optimized (4). A total score below 60 indicates the organization is not ready for full-risk VBC; the gap analysis identifies the highest-priority investments before contract entry.
+Vermont-specific benchmarks: Blueprint-participating PCMH practices with active CHT support typically score 8-12 in Domain 3 (care delivery) — strong by national standards. Most Vermont hospitals score 3-7 in Domain 2 (data and technology) — a critical gap given that data infrastructure is the prerequisite for population health management. The RHRC engagement's explicit focus on developing analytic dashboards for hospitals reflects the recognition that Domain 2 is the binding constraint for most Vermont providers.
 
-Retirement. Eventually, every artificial intelligence model must be retired or replaced. The model that was state of the art three years ago may be obsolete now. The clinical context may have changed. The population may have changed. The retirement decision is structurally important and is often delayed for institutional reasons that have nothing to do with clinical evidence.
+Contract Analysis — Reading an APM Contract for Financial Risk.
 
-The platform's AI Clinical Governance Lab, available in the research lab, walks through this lifecycle in operational detail. The lab is structured for procurement teams, governance committees, and clinical informatics leaders who are making real artificial intelligence governance decisions.
+APM contracts are complex, and the financial risk embedded in them is often not apparent from the headline terms. A shared savings contract that appears attractive at the summary level may contain provisions — benchmark methodology choices, quality withhold structures, attribution methodology, carve-out provisions — that substantially change the financial calculus. Every organization entering a significant APM contract should apply the following analysis framework.
 
-A note on alert fatigue and clinical decision support effectiveness.
+The 65-Item VBC Contract Review Checklist: Key Categories.
 
-Clinical decision support is the broader category that includes artificial intelligence-based decision support. Clinical decision support has been deployed in American hospitals for decades. The accumulated experience is mixed. Well-designed clinical decision support reduces clinical errors, improves adherence to evidence-based practice, and supports population health management. Poorly designed clinical decision support produces alert fatigue, automation bias, and clinician burnout.
+The VBC Contract Review Checklist (available in the Implementation Toolkit) covers 65 specific contract provisions in eight categories. The most financially consequential categories are:
+(See the accompanying table.)
 
-The difference between well-designed and poorly designed clinical decision support is workflow integration. A clinical decision support alert that interrupts a clinician at the wrong moment, with the wrong information, with the wrong action available, is worse than no alert at all. A clinical decision support alert that arrives at the right moment, with the right information, with the right action available, is genuinely useful.
+Hospital Financial Modeling Under Global Budgets — The Vermont Framework.
 
-The work of getting clinical decision support right is operational work. It requires clinicians, informaticists, workflow designers, and quality assurance staff working together over time. It is not a technology procurement decision. It is an ongoing operational discipline.
+For Vermont hospitals, the most operationally relevant financial modeling challenge is not APM shared savings calculation — it is global budget management. As Act 68's mandatory global budgets take effect for non-CAH hospitals beginning FY2028, hospital CFOs need to transition from FFS revenue optimization to global budget management. These are fundamentally different financial disciplines.
 
-In Chapter 8, we turn to the Economics pillar. We examine the fee-for-service trap, Vermont's four attempts at global budgets, Maryland's decade of evidence, and the financial architecture of Act 68.
+The Global Budget Financial Management Model.
+
+Under a global budget, a Vermont hospital's annual revenue is set prospectively. The financial management objective shifts from maximizing volume and revenue to achieving the highest quality population health outcomes within the fixed revenue envelope. The key financial metrics change accordingly:
+(See the accompanying table.)
+
+The Hospital Financial Stress Test Model.
+
+The Hospital Financial Stress Test Model — available in the Research Lab for Professional and Advisory subscribers — allows hospital CFOs and finance teams to model their organization's financial position under different payment reform scenarios. The model's key scenarios for Vermont hospitals in 2026:
+RBP scenario: What does our financial position look like if commercial prices are set at 200% of Medicare (Oliver Wyman's recommended benchmark) or 250% (GMCB's phased approach)? What service lines have prices furthest above the benchmark and face the most revenue reduction?
+Global budget scenario: Under a prospective revenue cap equal to our current net patient revenue minus X%, what is our operating margin? What cost reductions or service redesigns are required to maintain solvency?
+Medicaid cut scenario: With H.R. 1's Medicaid revenue reductions phasing in from 2027-2031, what is our projected total revenue under conservative, base, and optimistic assumptions about our Medicaid payer mix?
+Transformation investment scenario: If we invest $X million in care management, CHW deployment, and telehealth, what reduction in avoidable hospitalizations and ED visits is required to achieve positive ROI within our VBC contract or global budget framework?
+
+The ROI of Transformation — Building the Financial Case.
+
+Every transformation investment — a care management program, a behavioral health integration initiative, an SDOH screening program, a telehealth platform — requires a financial justification. Under fee-for-service, this justification is often difficult to construct because the investment may reduce utilization (and revenue) even when it improves outcomes. Under value-based care and global budgets, the financial case for transformation investment is considerably stronger.
+
+The Transformation ROI Framework.
+
+The following framework structures the financial case for transformation investments in a VBC environment. It is the analytical backbone of HTR Advisory engagements that involve transformation investment decisions.
+(See the accompanying table.)
+
+Making Care Primary — Vermont's Primary Care Economics.
+
+The AHEAD Model's requirement that states demonstrate increased investment in primary care as a percentage of total spending is not just a quality metric — it is an economics imperative. The foundational economic argument for primary care investment in a global budget environment is that primary care is the highest-return investment a healthcare system can make: the same $1 invested in primary care produces greater total cost of care reduction than $1 invested in hospital care or specialty care.
+Vermont's Blueprint for Health embeds this economic logic in its design. The all-payer PMPM payments to PCMH practices are structured as an investment in reduced downstream costs — and Vermont's own evaluation data confirms the 5.8:1 ROI. Under AHEAD, primary care investment will be measured as a percentage of total spending, creating an explicit financial accountability framework for the primary care investment argument.
+
+Work This Chapter on the Platform.
+
+Chapter 7's VBC financial mechanics — shared savings, risk, contract analysis, readiness — are exactly what these calculators do.
+(See the accompanying table.)
+
+Implications for You.
+
+If you are a Vermont hospital executive: Value-based contract negotiation is not optional — it is the operational translation of the payment reform Acts 167 and 68 mandate. Every commercial contract renewal is an opportunity to negotiate terms that align with the global budget environment your organization will be operating under from FY2028. Specifically: negotiate shared savings arrangements that let you capture the financial benefit of the utilization reduction your clinical investments will produce; negotiate quality measurement aligned with HEDIS and AHEAD metrics rather than arbitrary payer-specific measures; and negotiate administrative simplification terms — consolidated reporting, standardized prior authorization, reduced documentation burden — that free up clinical capacity for population health management. The hospitals that have negotiated aligned VBC contracts before FY2028 will have a financial model that reinforces transformation. Those that have not will have a commercial revenue model that still rewards volume, creating internal conflict with the global budget environment.
+If you are an AHS or GMCB official: Vermont's VBC financial modeling work — specifically, the AHEAD actuarial analysis and the global budget benchmark development — requires real actuarial expertise. The AHS-GMCB analytics vendor must include or be supplemented by actuarial capacity with experience in all-payer models. The specific technical challenge Vermont faces — setting fair benchmarks for 14 hospitals with different payer mixes, different geographic markets, and different historical efficiency levels — is not a job for general health analytics capability. It requires specialists in prospective payment system design. If Vermont's AHEAD benchmark methodology is set by people without this expertise, the benchmarks will be set wrong, and no amount of enforcement capability applied to wrong benchmarks produces the right transformation outcomes.
+If you are a Vermont legislator: Vermont's commercial insurance market concentration — a small number of large commercial payers in a small state — creates negotiating dynamics that global budgets do not automatically resolve. GMCB has authority to regulate hospital rates; it does not have the same authority over commercial insurer behavior in VBC negotiations. The legislature should assess whether Vermont needs additional regulatory tools to ensure that the savings produced by RBP and global budgets flow through to premium reduction, as Act 68's passthrough requirement intends, rather than being absorbed in commercial insurer margins.
+If you are a national health policy professional: Vermont's VBC financial modeling challenge — building the actuarial and analytical infrastructure for a mandatory all-payer model in a small state — is the challenge every state that attempts mandatory payment reform will face. Vermont's approach: VHCURES for population data, external analytics vendor for modeling capability, EAST Fund for transformation capital, and statutory deadlines for implementation — is worth studying as a model for states that want to move beyond voluntary VBC without the large state infrastructure that makes voluntary models easier to administer.
+For Vermont hospitals operating under global budgets, the financial relationship between primary care investment and hospital cost management is direct: a better-functioning primary care system means fewer hospital admissions from preventable chronic disease exacerbations, fewer avoidable ED visits, and fewer hospitalizations for conditions that should have been managed in outpatient settings. The hospital that invests in primary care strengthens the community health infrastructure that reduces its own inpatient costs — a virtuous cycle that fee-for-service can never produce but global budgets require.
+
+Key Concepts.
+
+Benchmark
+The expected cost of care against which actual APM performance is measured. Shared savings or losses are calculated relative to the benchmark. Benchmark methodology — historical vs. regional, trend adjustment, risk adjustment — is the most consequential financial design choice in APM contract entry.
+Attribution
+The process of assigning patients to an ACO or provider for purposes of shared savings calculation. Prospective attribution (known before the year) enables proactive care management; retrospective attribution (known after the year) creates uncertainty. Attribution methodology determines the denominator and exposure.
+Shared savings rate
+The percentage of savings below benchmark that the organization receives. Typically 50-75% for one-sided risk models; may reach 80% for full-risk models.
+Minimum savings rate (MSR)
+The threshold below which savings are not shared — typically 2-3.5% of benchmark — protecting against natural year-to-year variation triggering unearned payments.
+Risk corridor
+A provision in full-risk APM contracts that caps the organization's maximum financial loss at a defined threshold, providing stop-loss protection for organizations bearing downside risk.
+RAF (Risk Adjustment Factor)
+The multiplier applied to a benchmark to account for the health status of the attributed population. Accurate HCC (Hierarchical Condition Category) coding is essential for RAF accuracy. RAF gaps — diagnoses that should be coded but are not — create benchmarks that understate the population's expected cost, producing apparent savings that disappear when coding is corrected.
+VBC Transformation Readiness Assessment
+The 30-dimension, 6-domain assessment evaluating an organization's readiness to enter and succeed in value-based care contracts. Total score below 60 indicates pre-transition status; gap analysis identifies highest-priority investments before contract entry.
+Sources: CMS ACO model documentation; HTR's Economics pillar framework; Vermont Blueprint for Health ROI study (Population Health Management); GMCB hospital budget data; Oliver Wyman Act 167 Report; AHS Transformation Reports; Vermont AHEAD State Agreement; Act 68 of 2025.

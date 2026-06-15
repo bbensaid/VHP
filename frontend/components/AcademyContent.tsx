@@ -109,8 +109,10 @@ function KnowledgeCheckWidget({
 
 import { PortableText, PortableTextComponents } from "next-sanity";
 import type { PortableTextMarkComponentProps, PortableTextBlock } from "@portabletext/react";
+import Image from "next/image";
 import { client } from "@/sanity/lib/client";
 import imageUrlBuilder from "@sanity/image-url";
+import { getImageDimensions } from "@sanity/asset-utils";
 import VideoBlock from "@/components/VideoBlock";
 import AudioBlock from "@/components/AudioBlock";
 
@@ -254,14 +256,25 @@ const components: PortableTextComponents = {
       const assetRef  = value?.asset?._ref || value?.asset?._id;
       const directUrl = value?.url || value?.src;
       let imgSrc: string | null = null;
-      if      (assetUrl)  imgSrc = assetUrl;
-      else if (assetRef)  try { imgSrc = urlFor(value).width(1000).auto("format").url(); } catch { imgSrc = null; }
+      // Real intrinsic dimensions from the Sanity asset (ref encodes WxH) so
+      // next/image preserves aspect ratio without cropping; only available
+      // for Sanity assets, not raw directUrl.
+      let dims: { width: number; height: number } | null = null;
+      if      (assetUrl)  { imgSrc = assetUrl; try { dims = getImageDimensions(value); } catch { dims = null; } }
+      else if (assetRef)  try { imgSrc = urlFor(value).width(1000).auto("format").url(); dims = getImageDimensions(value); } catch { imgSrc = null; }
       else if (directUrl) imgSrc = directUrl;
+      const academyImgClass = "w-full h-auto rounded-xl shadow-lg border border-slate-200";
       return (
         <figure className="my-12 max-w-2xl mx-auto">
-          {imgSrc ? (
+          {imgSrc && dims ? (
+            <Image src={imgSrc} alt={value.alt || value.caption || ""}
+                   width={dims.width} height={dims.height}
+                   sizes="(max-width: 768px) 100vw, 672px"
+                   className={academyImgClass} />
+          ) : imgSrc ? (
+            // eslint-disable-next-line @next/next/no-img-element
             <img src={imgSrc} alt={value.alt || value.caption || ""}
-                 className="w-full rounded-xl shadow-lg border border-slate-200" loading="lazy" />
+                 className={academyImgClass} loading="lazy" />
           ) : (
             <div className="w-full bg-slate-50 border-2 border-dashed border-slate-200 rounded-xl py-14 flex flex-col items-center gap-2 text-slate-400">
               <span className="text-5xl">🖼️</span>
