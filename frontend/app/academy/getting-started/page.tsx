@@ -29,7 +29,7 @@ const FEATURE_GUIDES = [
     icon: BeakerIcon,
     color: "sky",
     title: "Research Lab",
-    desc: "A guide to all 21 modeling tools — which one to use and when.",
+    desc: "A guide to all 22 modeling tools — which one to use and when.",
     href: "/academy/getting-started/research-lab",
   },
   {
