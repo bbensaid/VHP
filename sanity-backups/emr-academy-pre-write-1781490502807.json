@@ -1,0 +1,2741 @@
+{
+  "takenAt": "2026-06-15T02:28:19.795Z",
+  "sanityBodies": {
+    "interop-ehr-market": {
+      "_id": "interop-ehr-market",
+      "_type": "academyModule",
+      "body": [
+        {
+          "_key": "s1h",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s1hs",
+              "_type": "span",
+              "marks": [],
+              "text": "The EHR Market Today: Concentration and Scale"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s1p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s1p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "The U.S. electronic health records market is large, concentrated, and growing. Grand View Research estimated the U.S. EHR market at approximately $12.87 billion in 2024, with projections for sustained growth as adoption deepens and cloud-based platforms replace older on-premise installations. That dollar figure, however, obscures the most important structural fact: a small number of vendors command the overwhelming majority of the market, especially in the hospital sector where the highest-acuity and highest-cost care is delivered."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s1p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s1p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "According to KLAS Research's 2024 acute care market analysis, four vendors — Epic, Oracle Health (formerly Cerner), MEDITECH, and TruBridge — together account for roughly 87% of acute care hospital EHR installations in the United States. Epic alone holds 42.3% of all acute care hospitals by count, but when the metric shifts from hospital count to hospital beds — a proxy for the volume of care actually delivered — Epic's share jumps to 54.9%. This distinction between counting hospitals and counting beds matters enormously: large academic medical centers and health systems serve exponentially more patients than small critical-access hospitals, so the vendor that dominates large institutions controls the data environment for a disproportionate share of American patients."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s1p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s1p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "The ambulatory market — outpatient physician offices and clinics — tells a different story. Here the field is more fragmented, with eClinicalWorks capturing roughly 12–14% of the ambulatory market, Epic near 10–20% depending on methodology, and athenahealth around 7%. The ambulatory segment is far more price-sensitive than the inpatient segment, which explains why cloud-native vendors with subscription pricing models have found durable footholds even as Epic expands into large health system ambulatory practices. The U.S. ambulatory EHR market alone was estimated at $5.49 billion in 2024."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s1sg",
+          "_type": "statGrid",
+          "stats": [
+            {
+              "_key": "s1",
+              "context": "Grand View Research estimate for U.S. market only",
+              "label": "U.S. EHR Market (2024)",
+              "value": "$12.87B"
+            },
+            {
+              "_key": "s2",
+              "context": "Share of all U.S. acute care hospitals using Epic (KLAS 2024)",
+              "label": "Epic's Hospital Count Share",
+              "value": "42.3%"
+            },
+            {
+              "_key": "s3",
+              "context": "Share of U.S. inpatient beds covered by Epic (KLAS 2024)",
+              "label": "Epic's Hospital Bed Share",
+              "value": "54.9%"
+            },
+            {
+              "_key": "s4",
+              "context": "Acute care hospital count, down from 23.4% (KLAS 2024)",
+              "label": "Oracle Health's Hospital Share",
+              "value": "22.9%"
+            },
+            {
+              "_key": "s5",
+              "context": "Third-largest inpatient EHR vendor by hospital count",
+              "label": "MEDITECH's Hospital Share",
+              "value": "14.8%"
+            },
+            {
+              "_key": "s6",
+              "context": "Estimated 2024 market size for outpatient EHR sector",
+              "label": "U.S. Ambulatory EHR Market",
+              "value": "$5.49B"
+            }
+          ]
+        },
+        {
+          "_key": "s2h",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s2hs",
+              "_type": "span",
+              "marks": [],
+              "text": "Epic's Dominance: A Private Company Running Half of America's Hospital Records"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s2p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s2p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Epic Systems Corporation is headquartered in Verona, Wisconsin — a deliberate choice by its founder and CEO, Judy Faulkner, who started the company in a Madison, Wisconsin basement in 1979 with a $70,000 investment from friends and family. Faulkner has kept Epic entirely private, never taking venture capital or private equity money, and has stated publicly that Epic will never go public. This unusual corporate structure — a multi-billion-dollar private company with no outside investors — gives Epic extraordinary freedom to prioritize long-term strategic moves over quarterly earnings. By 2024, Epic reported $5.7 billion in annual revenue and held the medical records of more than 325 million people."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s2p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s2p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "The scale of Epic's reach becomes concrete through MyChart, its patient-facing portal. As of early 2024, Epic reported 185 million active MyChart users — a number that rivals the active user base of many major consumer apps. When a patient logs into MyChart at a hospital in Boston, a clinic in rural Iowa, or a health system in California, they are interacting with the same underlying platform. This patient-portal ubiquity is both a convenience and a strategic lock-in mechanism: patients who are enrolled in MyChart have a strong implicit incentive to seek care within the Epic ecosystem, because their records, messaging threads, and appointment history are all resident there."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s2p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s2p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "Epic's dominance at large academic medical centers is not accidental. The company historically pursued a strategy of landing flagship institutions — the University of Pennsylvania, Johns Hopkins, Kaiser Permanente, Cleveland Clinic — understanding that smaller community hospitals and physician practices would follow the referral patterns of the dominant regional health system. KLAS confirmed that in 2024, Epic added a net 176 acute care multispecialty hospitals, its largest-ever annual net gain, and won nearly 70% of all hospitals impacted by EHR decisions that year regardless of size. The competitive flywheel is self-reinforcing: more Epic installations mean more Epic-to-Epic data exchange, which is dramatically smoother than cross-vendor exchange, giving clinical staff at Epic sites a perceived interoperability advantage that further pressures non-Epic competitors."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s2an",
+          "_type": "analogyBlock",
+          "analogy": "Think of Epic's network effect like an operating system that everyone in an office already runs: sharing files is frictionless within the system, but the moment you need to exchange data with someone on a different platform, compatibility issues multiply. The more people adopt the dominant platform, the more the others face pressure to convert.",
+          "concept": "Epic's Care Everywhere network makes data exchange nearly seamless between Epic sites, creating a powerful network effect that disadvantages hospitals still on competing EHRs."
+        },
+        {
+          "_key": "s2ex",
+          "_type": "exampleBlock",
+          "content": "When a patient cared for at a Mayo Clinic facility (Epic) is transferred to a Mass General Brigham hospital (also Epic), clinicians can pull that patient's full longitudinal record — allergies, medications, prior diagnoses, imaging reports — almost instantly via Epic's Care Everywhere framework. Performing the same query across a vendor boundary, say from an Epic site to an Oracle Health site, requires the hospitals to rely on external interoperability frameworks like Carequality, introducing additional query steps, potential data mapping inconsistencies, and latency. The technical gap is narrowing with FHIR APIs, but the lived experience for clinicians remains meaningfully different.",
+          "title": "Care Everywhere: Epic-to-Epic Seamlessness"
+        },
+        {
+          "_key": "s3h",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s3hs",
+              "_type": "span",
+              "marks": [],
+              "text": "Oracle Health (Formerly Cerner) and the Troubled VA Contract"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s3p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s3p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Cerner was Epic's primary rival for decades, particularly at mid-size community hospitals and large integrated delivery networks. That competitive landscape shifted in June 2022, when Oracle Corporation completed its acquisition of Cerner for $28.3 billion, rebranding the company as Oracle Health. Oracle's ambition was to layer its cloud infrastructure and database technology underneath Cerner's clinical software, creating a unified platform that could compete with Epic at scale. The reality of the post-acquisition integration has proven considerably messier. According to KLAS 2024 data, Oracle Health saw a net loss of 74 acute care hospitals during the year, with its market share declining from 23.4% to 22.9% — a continuation of a multi-year erosion."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s3p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s3p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "The most high-profile test of Oracle Health's capabilities is the U.S. Department of Veterans Affairs EHR modernization contract. The VA signed a deal with Cerner in May 2018, originally valued at $10 billion, to replace its legacy VistA system with the Cerner Millennium platform — later branded MHS GENESIS after the Department of Defense adopted the same system for its military health system. The DoD implementation has been comparatively successful: MHS GENESIS is now live at roughly 3,890 garrison facilities with over 197,200 end-users serving more than 9.5 million beneficiaries across the United States, Europe, and the Asia-Pacific. The VA implementation, however, has faced repeated delays, safety incidents, and congressional scrutiny, with lawmakers at various points demanding the contract be restructured or cancelled."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s3p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s3p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "The VA contract's estimated lifetime cost has ballooned — some estimates project it could exceed $50 billion over 28 years — and as of recent reporting, the VA had spent roughly $5 billion to implement the system at only six of its 171 medical centers. The VA renegotiated the contract with Oracle Health to introduce stronger performance metrics and larger monetary penalties for non-compliance. The saga illustrates how even the best-resourced government healthcare agencies can struggle when a dominant EHR transition encounters the full complexity of a legacy clinical environment. For the broader interoperability agenda, the VA case demonstrates that vendor selection is only the starting point — implementation fidelity, change management, and sustained governance are equally determinative of whether new systems deliver value."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s3w",
+          "_type": "warningBlock",
+          "message": "The Oracle Health VA contract is a live case study in the risks of large-scale EHR transitions. As of 2024–2025, the VA had spent approximately $5 billion implementing the system at only 6 of 171 medical centers, with costs projected to eventually exceed $50 billion over the full contract lifetime. Patient safety concerns, clinician dissatisfaction, and congressional pressure have accompanied the rollout. Policymakers and health systems alike cite this project as evidence that technical interoperability alone cannot compensate for poor implementation planning and insufficient workflow integration.",
+          "title": "VA EHR Modernization: A Cautionary Tale"
+        },
+        {
+          "_key": "s4h",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s4hs",
+              "_type": "span",
+              "marks": [],
+              "text": "The Ambulatory and Community Health Market: A More Competitive Landscape"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s4p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s4p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "The outpatient physician office market operates under different economic logic than the hospital sector. A 10-physician internal medicine practice does not have a multi-million-dollar IT budget, a dedicated implementation team, or the negotiating leverage of a large health system. This price sensitivity has made the ambulatory market fertile ground for cloud-native, subscription-priced vendors. eClinicalWorks — a privately held company based in Westborough, Massachusetts — has built a substantial ambulatory presence serving roughly 12–14% of the U.S. ambulatory EHR market. The company's success is built on aggressive pricing, a broad feature set, and deep penetration into independent physician practices and specialty clinics."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s4p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s4p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "athenahealth, now owned by Veritas Capital and Bain Capital after a 2019 buyout from Optum/UnitedHealth, holds approximately 7% of the ambulatory EHR market and distinguishes itself through a network-based model that provides revenue cycle management alongside clinical documentation. NextGen Healthcare and Modernizing Medicine serve specific specialty niches — NextGen has historically been strong in large specialty practices, while Modernizing Medicine's EMA platform dominates in dermatology, ophthalmology, and orthopedics. The ambulatory market's fragmentation means interoperability is harder to achieve: a patient's records may be split across a hospital Epic instance, a primary care eClinicalWorks installation, and a specialty Modernizing Medicine environment, with no single platform holding the complete picture."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s4p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s4p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "Federally Qualified Health Centers (FQHCs) — the safety-net clinics that serve uninsured and low-income communities — face even sharper cost constraints and have developed a distinct ecosystem. OCHIN, a nonprofit health IT cooperative, has emerged as a critical infrastructure provider for FQHCs, enabling them to access the Epic platform through a shared instance model that dramatically reduces per-site cost. In 2024 alone, 33 rural and community health organizations implemented OCHIN's Epic model, with OCHIN Epic now supporting more than 1,900 care delivery sites in 37 states and reaching over 7 million patients. eClinicalWorks also serves a significant FQHC population, and multiple FQHCs selected its AI-enhanced EHR solutions in 2024. The FQHC market underscores a recurring theme: the economics of EHR adoption are inseparable from the economics of care delivery, and vendor decisions made at the market's lowest-margin margin have outsized consequences for health equity."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s4cmp",
+          "_type": "comparisonBlock",
+          "left": {
+            "label": "Inpatient (Hospital) Market",
+            "points": [
+              "Dominated by 3–4 vendors (Epic, Oracle Health, MEDITECH, TruBridge)",
+              "Epic holds ~55% of hospital beds; intense consolidation ongoing",
+              "High switching costs — multi-year, multi-million-dollar implementations",
+              "Large health systems negotiate directly; leverage is limited by lock-in",
+              "Epic-to-Epic exchange is near-seamless; cross-vendor exchange adds friction"
+            ]
+          },
+          "right": {
+            "label": "Ambulatory (Outpatient) Market",
+            "points": [
+              "More fragmented — eClinicalWorks, Epic, athenahealth, NextGen, Modernizing Medicine",
+              "Price sensitivity drives subscription/cloud-native model adoption",
+              "Smaller practices have less negotiating leverage and IT support",
+              "FQHCs use cooperative models (OCHIN) to access enterprise-class platforms",
+              "Multi-vendor environment makes longitudinal record aggregation harder"
+            ]
+          },
+          "title": "Inpatient vs. Ambulatory EHR Market Dynamics"
+        },
+        {
+          "_key": "s5h",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s5hs",
+              "_type": "span",
+              "marks": [],
+              "text": "Market Concentration and What It Means for Interoperability"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s5p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s5p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "The relationship between market concentration and interoperability is complex and contested. On one hand, a highly concentrated market dominated by a single vendor creates a de facto network: if most hospitals run the same platform, data can flow readily within that platform's native exchange mechanisms. Epic's Care Everywhere framework exemplifies this — Epic sites can query one another for patient records with minimal friction, and the 185 million MyChart users represent an enormous longitudinal dataset that is navigable within the Epic ecosystem. From a pure data-flow perspective, a world where everyone ran the same EHR would minimize many interoperability challenges at the point of care."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s5p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s5p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "The problem is what happens at the boundaries. The 22.9% of hospitals on Oracle Health, the 14.8% on MEDITECH, the vast ambulatory market on eClinicalWorks and athenahealth, and the millions of patients receiving care at FQHCs on mixed platforms — all of these are outside Epic's native exchange universe. When care flows across that boundary, the friction increases. This is where federal interoperability policy becomes essential. The 21st Century Cures Act's information blocking provisions, finalized by ONC, prohibit EHR vendors from practices that unreasonably restrict access to, exchange of, or use of electronic health information. The FHIR R4 standard has reached near-universal EHR vendor adoption — 92% of EHR vendors support it, 90% of health systems have FHIR-enabled APIs, and 81% of hospitals have enabled patient access APIs — creating a common technical language that theoretically enables cross-vendor exchange regardless of underlying platform."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s5p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s5p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "TEFCA — the Trusted Exchange Framework and Common Agreement — represents the most ambitious federal attempt to operationalize nationwide interoperability atop this FHIR foundation. TEFCA designates Qualified Health Information Networks (QHINs) as the connecting hubs, and organizations that participate in TEFCA agree to share data under a common governance framework. Crucially, a final rule issued in December 2024 established a \"TEFCA Manner Exception\" — providing that limiting exchange to TEFCA channels will not constitute information blocking when both parties are TEFCA participants and other conditions are met. This regulatory move is designed to steer the entire ecosystem toward TEFCA participation by giving vendors a safe harbor for TEFCA-based exchange while maintaining anti-blocking obligations elsewhere. Whether TEFCA can override the gravitational pull of dominant vendor networks remains the central open question for health data policy in the coming decade."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s5st",
+          "_type": "stepBlock",
+          "steps": [
+            {
+              "_key": "step1",
+              "description": "Required ONC to establish information blocking prohibitions and certified EHR technology standards, laying the statutory foundation for data access rights.",
+              "title": "21st Century Cures Act (2016)"
+            },
+            {
+              "_key": "step2",
+              "description": "Operationalized information blocking prohibitions; required FHIR R4 APIs for certified EHRs; mandated patient access to their data via open APIs.",
+              "title": "ONC Interoperability Final Rule (2020)"
+            },
+            {
+              "_key": "step3",
+              "description": "Updated USCDI (U.S. Core Data for Interoperability) to Version 3, requiring EHRs to support a broader standardized data set and tightened information blocking enforcement.",
+              "title": "HTI-1 Final Rule (2024)"
+            },
+            {
+              "_key": "step4",
+              "description": "Established the TEFCA Manner Exception — participating organizations can limit exchange to TEFCA channels without triggering information blocking liability, channeling the market toward unified nationwide exchange.",
+              "title": "HTI-2 / TEFCA Final Rule (December 2024)"
+            },
+            {
+              "_key": "step5",
+              "description": "Third-party developers now build apps on top of EHR FHIR APIs, creating a competitive application layer that reduces the lock-in power of any single EHR vendor's proprietary features.",
+              "title": "Open APIs and Market Response"
+            }
+          ],
+          "title": "How the Federal Interoperability Regulatory Stack Works"
+        },
+        {
+          "_key": "s5cal",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s5cals",
+              "_type": "span",
+              "marks": [],
+              "text": "The open API mandate is changing competitive dynamics in ways the market has not fully absorbed. When any developer can build on top of Epic, Oracle Health, or athenahealth using standardized FHIR APIs, the EHR vendor loses some of its ability to lock customers into proprietary workflows. Patients and providers can increasingly choose best-of-breed applications — scheduling tools, remote monitoring platforms, AI-assisted documentation — that connect to any certified EHR via API. This \"unbundling\" of EHR functionality is one of the most significant structural shifts in the market."
+            }
+          ],
+          "markDefs": [],
+          "style": "callout"
+        },
+        {
+          "_key": "tw1",
+          "_type": "takeawayBlock",
+          "points": [
+            "The U.S. acute care EHR market is highly concentrated: Epic holds 42.3% of hospitals by count and 54.9% by bed share (KLAS 2024), giving it effective control over the data environment for more than half of U.S. inpatient care.",
+            "Oracle Health (formerly Cerner, acquired by Oracle in June 2022) holds 22.9% of acute care hospitals but lost 74 net hospital customers in 2024; its flagship VA modernization contract has been plagued by delays and ballooning costs.",
+            "The ambulatory EHR market is more fragmented, with eClinicalWorks (~12–14%), Epic (~10–20%), and athenahealth (~7%) leading a field of specialized vendors — and FQHCs relying on cooperative models like OCHIN to access enterprise-class systems affordably.",
+            "Epic's Care Everywhere framework creates near-seamless data exchange between Epic sites, generating a powerful network effect that disadvantages non-Epic hospitals and increases friction at cross-vendor boundaries.",
+            "Federal interoperability policy — particularly the 21st Century Cures Act, ONC's information blocking rules, and the TEFCA framework finalized in December 2024 — is designed to counteract the lock-in power of dominant vendors by mandating open FHIR APIs and anti-blocking compliance.",
+            "FHIR R4 has reached near-universal adoption among certified EHR vendors (92%), but technical standards alone do not eliminate the operational and governance challenges of cross-vendor data exchange in a concentrated market.",
+            "The VA EHR modernization contract illustrates that vendor dominance and platform standardization do not automatically produce better outcomes — implementation quality, change management, and sustained governance are equally decisive.",
+            "The emergence of open APIs and the TEFCA marketplace is beginning to unbundle EHR functionality, allowing third-party applications to compete on top of any certified EHR platform and gradually reducing the competitive advantage of proprietary vendor ecosystems."
+          ]
+        },
+        {
+          "_key": "qz1",
+          "_type": "knowledgeCheck",
+          "explanation": "Epic's share of acute care hospitals by count was 42.3% in 2024, but when the metric shifts to hospital beds — a better proxy for actual care volume — Epic's share rises to 54.9%. This distinction matters because large academic medical centers and health systems have far more beds and serve far more patients than small critical-access hospitals, so bed share better reflects Epic's effective control over the patient data environment in the United States.",
+          "options": [
+            {
+              "_key": "opt1",
+              "isCorrect": false,
+              "text": "22.9%"
+            },
+            {
+              "_key": "opt2",
+              "isCorrect": false,
+              "text": "42.3%"
+            },
+            {
+              "_key": "opt3",
+              "isCorrect": true,
+              "text": "54.9%"
+            },
+            {
+              "_key": "opt4",
+              "isCorrect": false,
+              "text": "67.4%"
+            }
+          ],
+          "question": "According to KLAS Research's 2024 data, what is Epic's market share among U.S. acute care hospitals when measured by hospital beds rather than hospital count?"
+        },
+        {
+          "_key": "src",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "srcs",
+              "_type": "span",
+              "marks": [],
+              "text": "Sources"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "src1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src1s",
+              "_type": "span",
+              "marks": [],
+              "text": "[1] KLAS Research — U.S. Acute Care EHR Market Share in 2024 — https://engage.klasresearch.com/blog/us-acute-care-ehr-market-share-in-2024/805/ — Epic holds 42.3% of acute care hospitals by count and 54.9% by bed share; Oracle Health at 22.9%; MEDITECH at 14.8%; Epic added net 176 hospitals in 2024."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src2s",
+              "_type": "span",
+              "marks": [],
+              "text": "[2] Fierce Healthcare — Epic sees largest net gain in EHR market share in 2024 — https://www.fiercehealthcare.com/health-tech/epic-gaining-more-ground-hospital-ehr-market-share-widens-its-lead-over-oracle-health — Epic won nearly 70% of all EHR decisions in 2024; Oracle Health net loss of 74 hospitals."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src3s",
+              "_type": "span",
+              "marks": [],
+              "text": "[3] Wikipedia / Healthcare IT News — Oracle acquires Cerner for $28.3B — https://www.healthcareitnews.com/news/oracle-acquires-cerner-283b — Oracle completed acquisition of Cerner on June 8, 2022, for $28.3 billion; rebranded as Oracle Health."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src4s",
+              "_type": "span",
+              "marks": [],
+              "text": "[4] Fierce Healthcare — VA renegotiates $10B Oracle Cerner EHR contract — https://www.fiercehealthcare.com/health-tech/va-renegotiates-10b-ehr-contract-stronger-performance-metrics-bigger-penalties — VA's Cerner contract originally $10B (2018), revised toward $16B; MHS GENESIS live at 3,890 DoD facilities serving 9.5M beneficiaries; VA spent ~$5B at only 6 of 171 medical centers."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src5",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src5s",
+              "_type": "span",
+              "marks": [],
+              "text": "[5] CNBC / CEO Today Magazine — Epic Systems: Judy Faulkner biography — https://www.cnbc.com/2025/08/16/how-epics-82-year-old-ceo-judy-faulkner-built-her-software-factory.html — Epic founded 1979 in Madison, WI; private company; $5.7B annual revenue; 325 million patient records; 185 million MyChart users as of early 2024."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src6",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src6s",
+              "_type": "span",
+              "marks": [],
+              "text": "[6] Grand View Research — U.S. Electronic Health Records Market Report — https://www.grandviewresearch.com/industry-analysis/us-electronic-health-records-market-report — U.S. EHR market estimated at $12.87 billion in 2024; U.S. ambulatory EHR market $5.49 billion in 2024."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src7",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src7s",
+              "_type": "span",
+              "marks": [],
+              "text": "[7] OCHIN — 33 rural and community health organizations implemented OCHIN Epic in 2024 — https://ochin.org/news/rural-community-health-ochin-epic-2024/ — OCHIN Epic supports 1,900+ care delivery sites in 37 states reaching over 7 million patients."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src8",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src8s",
+              "_type": "span",
+              "marks": [],
+              "text": "[8] EHR Source — EHR Interoperability in 2026: FHIR, TEFCA, and What Your Practice Needs to Know — https://www.ehrsource.com/articles/ehr-interoperability-guide/ — FHIR R4 adoption: 92% of EHR vendors support it; 90% of health systems have FHIR APIs; TEFCA Manner Exception established in December 2024 HTI-2 final rule."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "The EHR Market: Vendors, Market Share, and What Dominance Means for Interoperability"
+    },
+    "interop-ehr-burden": {
+      "_id": "interop-ehr-burden",
+      "_type": "academyModule",
+      "body": [
+        {
+          "_key": "s1h2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s1h2s",
+              "_type": "span",
+              "marks": [],
+              "text": "The Burden Problem: Physicians Spend More Time on EHRs Than on Patients"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s1p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s1p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "When the electronic health record was introduced into American medicine, it arrived with a promise: replace error-prone paper charts with a searchable, shareable digital record that would improve care quality and save time. Decades later, the promise has been only partially kept. The digital record exists — but the time savings never arrived. Instead, a mountain of peer-reviewed evidence now documents one of the most consequential unintended consequences in modern medicine: physicians routinely spend more hours each day interacting with their EHR than they spend in face-to-face contact with patients. This is not hyperbole — it is a measurable, replicated finding that is reshaping how health systems think about clinician well-being and workforce sustainability."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s1p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s1p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "A landmark time-motion study by Sinsky and colleagues, published in the Annals of Internal Medicine, found that for every hour physicians spent in direct clinical face time with patients, they spent nearly two additional hours on EHR and desk work. Subsequent research has only deepened this picture. A 2024 study published in the Annals of Family Medicine found that for every 8 hours of scheduled patient visits, primary care physicians logged 5.3 additional hours in the EHR — 2.1 of those hours devoted exclusively to clinical documentation. Overall, physicians today report spending roughly 13 hours per week on indirect patient care tasks such as order entry, documentation, and referral management, within a 57.8-hour reported workweek. That math leaves precious little time for the human encounter that drew most physicians to medicine in the first place."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s1p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s1p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "What is perhaps most striking is what happens after clinic hours. Researchers coined the term \"pajama time\" to describe the hours physicians spend in the EHR at home, after their clinical day has technically ended. A study in the Annals of Family Medicine found that primary care physicians spent approximately 86 minutes — nearly an hour and a half — on the EHR after clinic hours every day. Among upper-year family medicine residents, nearly one-third report spending three or more additional hours per day on after-hours EHR work. This chronic overflow of documentation into personal time has been directly linked to burnout, reduced professional satisfaction, and lower examination performance. The AMA's 2024 national burnout survey of nearly 18,000 physicians across 43 states found that 43.2 percent of physicians reported at least one burnout symptom — and ineffective EHR systems ranked among the most consistently cited sources of occupational stress."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s1sg",
+          "_type": "statGrid",
+          "stats": [
+            {
+              "_key": "s1",
+              "context": "Widely cited figure from Sinsky et al., time-motion research",
+              "label": "Daily EHR burden per physician",
+              "value": "5.9 hrs"
+            },
+            {
+              "_key": "s2",
+              "context": "EHR use after clinic hours; primary care physicians, Annals of Family Medicine",
+              "label": "After-hours \"pajama time\" daily",
+              "value": "86 min"
+            },
+            {
+              "_key": "s3",
+              "context": "AMA 2024 national survey of ~18,000 physicians across 43 states",
+              "label": "Physicians with burnout symptoms",
+              "value": "43.2%"
+            },
+            {
+              "_key": "s4",
+              "context": "For every 1 hr with patients, ~2 hrs on EHR and desk work (Sinsky et al.)",
+              "label": "EHR vs. patient face time ratio",
+              "value": "2:1"
+            }
+          ]
+        },
+        {
+          "_key": "s1an",
+          "_type": "analogyBlock",
+          "analogy": "Imagine hiring a carpenter whose tools are so cumbersome that they spend two hours filing paperwork for every hour they actually build. The carpenter is technically productive — paperwork is real work — but the building is going up slower, and the carpenter is exhausted. That is the situation facing American physicians with today's EHR systems: real documentation is necessary, but the cognitive and time burden has grown so large that it crowds out the core work of patient care.",
+          "concept": "EHR documentation burden displacing clinical time"
+        },
+        {
+          "_key": "s2h2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s2h2s",
+              "_type": "span",
+              "marks": [],
+              "text": "Root Causes: Poor Design, Alert Fatigue, and Fragmented Data"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s2p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s2p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Understanding why EHRs consume so much physician time requires looking beneath the surface of the software itself. Most commercial EHR systems were not designed with usability as the primary objective — they were designed to fulfill billing and compliance requirements, and the clinical workflow was often an afterthought. As a result, physicians routinely navigate dozens of screens, click through cascading dropdown menus, and manually enter data that could theoretically be auto-populated if systems communicated with one another. Poor interoperability is at the heart of this problem: when a patient arrives from another health system, their prior lab results, imaging reports, and medication lists frequently do not follow them. The physician or their staff must manually re-enter that information, dramatically extending visit preparation time and increasing the risk of transcription errors."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s2p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s2p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "One of the most pervasive and dangerous documentation behaviors to emerge from EHR design failures is copy-forward documentation — the practice of copying a prior note into the current encounter and editing only minimally. A 2022 analysis of over 100 million EHR notes found that 50.1 percent of all text in clinical notes was duplicated from prior documentation on the same patient. As many as 90 percent of clinicians admit to using copy-and-paste functions in the EHR. While this behavior saves time in the short run, it systematically degrades note quality: outdated medication lists persist, resolved problems remain active, and contradictory information accumulates across encounters. Patient safety researchers at the Agency for Healthcare Research and Quality have documented that copy-forward errors contribute directly to diagnostic mistakes and adverse events, including hospitalizations that might have been prevented had the clinical record been accurate."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s2p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s2p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "Alert fatigue is another root cause that compounds the burden of fragmented data. Clinical decision support (CDS) systems embedded in EHRs are designed to catch dangerous drug interactions, flag abnormal values, and remind clinicians of overdue preventive care. In theory, these alerts save lives. In practice, the volume has become overwhelming: some physicians and nurses report receiving between 100 and 200 CDS alerts per day. At Brigham and Women's Hospital — one of the most prestigious academic medical centers in the country — physicians override approximately 98 percent of medication order alerts. Research published in JMIR Medical Informatics found that in one medication-related CDS system, only 7.3 percent of generated alerts were clinically appropriate. When physicians learn that the vast majority of alerts are irrelevant, they begin dismissing them reflexively — a conditioned response that creates exactly the kind of cognitive blind spot the alerts were designed to prevent. The result is a system that adds burden without proportional benefit, eroding trust in the very tools meant to support clinical judgment."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s2cmp",
+          "_type": "comparisonBlock",
+          "left": {
+            "label": "Billing-First EHR Design",
+            "points": [
+              "Optimized for code capture and compliance documentation",
+              "Complex multi-screen workflows for each order",
+              "Copy-forward encouraged by poor note templates",
+              "Alert thresholds set broadly to minimize liability",
+              "Limited FHIR integration — manual data re-entry required"
+            ]
+          },
+          "right": {
+            "label": "Clinician-First EHR Design",
+            "points": [
+              "Streamlined workflows matching clinical thought process",
+              "Smart defaults and auto-population from prior visits",
+              "Structured templates that discourage copy-forward",
+              "Alert logic refined to clinically actionable thresholds",
+              "FHIR APIs pre-populate data from external health systems"
+            ]
+          },
+          "title": "EHR System Design: Billing-First vs. Clinician-First"
+        },
+        {
+          "_key": "s2warn",
+          "_type": "warningBlock",
+          "message": "When physicians override 98% of EHR alerts — as documented at Brigham and Women's Hospital — the few clinically critical warnings become invisible in the noise. Alert fatigue is not just a workflow inefficiency; it is a direct mechanism for medication errors and missed diagnoses.",
+          "title": "Alert Fatigue Is a Patient Safety Issue"
+        },
+        {
+          "_key": "s3h2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s3h2s",
+              "_type": "span",
+              "marks": [],
+              "text": "The Prior Authorization Crisis: When Interoperability Gaps Meet Insurance Bureaucracy"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s3p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s3p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "No single administrative burden in American medicine has generated more physician frustration — or caused more direct patient harm — than prior authorization. Prior authorization is the process by which insurers require physicians to obtain approval before prescribing certain medications, ordering specific imaging studies, or proceeding with recommended procedures. In principle, it is a cost-management tool. In practice, it has become a bureaucratic labyrinth that consumes an extraordinary share of physician and staff time. The AMA's 2024 nationwide survey of 1,000 practicing physicians found that practices complete an average of 39 prior authorization requests per physician per week, consuming approximately 13 hours of physician and staff time — roughly one and a half business days — every single week. Two in five physician practices employ staff dedicated exclusively to prior authorization tasks."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s3p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s3p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "The connection to EHR interoperability is direct and underappreciated. Prior authorization processes are slow largely because clinical data does not flow automatically between provider EHR systems and insurer systems. Physicians must manually extract clinical information from the EHR, re-enter it into insurer portals or fax it via paper forms, and then wait — sometimes for days — for a decision. If interoperable APIs existed to transmit structured clinical data directly, the information exchange could happen in minutes rather than days. The status quo is expensive in human terms: 94 percent of physicians in the 2024 AMA survey reported that prior authorization contributes to physician burnout. That near-universal figure makes prior authorization one of the most universally agreed-upon sources of professional dissatisfaction in medicine today."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s3p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s3p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "The patient consequences are equally alarming. According to the 2024 AMA survey, 93 percent of physicians reported that prior authorization causes care delays, with more than half saying delays occur \"always\" or \"often.\" Seventy-eight percent of physicians reported that prior authorization often or sometimes results in patients abandoning a recommended course of treatment entirely — unable or unwilling to wait for approval, they simply go without care. Most seriously, nearly one in four physicians (24 percent) reported that prior authorization has led to a serious adverse event for a patient in their care, including hospitalization, permanent impairment, or death. Of those reporting adverse events, 19 percent cited delays leading to hospitalization, 13 percent identified life-threatening events, and 7 percent reported disability, birth defects, or patient death as downstream consequences of authorization delays."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s3sg",
+          "_type": "statGrid",
+          "stats": [
+            {
+              "_key": "s1",
+              "context": "AMA 2024 survey; average across 1,000 practicing physicians",
+              "label": "Prior auth requests per physician",
+              "value": "39/week"
+            },
+            {
+              "_key": "s2",
+              "context": "Physician + staff combined; ~1.5 business days per week (AMA 2024)",
+              "label": "Weekly staff time on prior auth",
+              "value": "13 hrs"
+            },
+            {
+              "_key": "s3",
+              "context": "AMA 2024 prior authorization physician survey",
+              "label": "Physicians: prior auth causes burnout",
+              "value": "94%"
+            },
+            {
+              "_key": "s4",
+              "context": "Includes hospitalization, disability, or death (AMA 2024)",
+              "label": "Physicians: prior auth caused serious harm",
+              "value": "24%"
+            }
+          ]
+        },
+        {
+          "_key": "s3ex",
+          "_type": "exampleBlock",
+          "content": "A primary care physician prescribes a biologic medication for a patient with severe rheumatoid arthritis. The insurer requires prior authorization. The physician's staff submits a paper form. Nine days pass. The insurer requests additional clinical documentation. The staff re-submits. Five more days pass. The patient, unable to manage pain and unable to take time off work for repeated calls to the insurer, abandons the prescription and returns to lower-efficacy over-the-counter options. Three months later, the patient presents to the emergency department with advanced joint damage. The total cost of the ED visit and specialist follow-up exceeds the annual cost of the biologic — and the patient has suffered irreversible harm. This scenario plays out thousands of times each day across the United States.",
+          "title": "The Cascading Harm of a Delayed Authorization"
+        },
+        {
+          "_key": "s4h2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s4h2s",
+              "_type": "span",
+              "marks": [],
+              "text": "What Regulation Is Doing About EHR Burden"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s4p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s4p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Federal policymakers have recognized for years that EHR burden and poor interoperability are not merely nuisances — they are structural failures of the health information technology ecosystem that cause measurable patient harm. The legislative response began in earnest with the 21st Century Cures Act of 2016, which included sweeping provisions designed to promote the free flow of electronic health information and prohibit \"information blocking\" — practices by EHR vendors, health systems, or health information networks that impede access to or exchange of patient data. Penalties for information blocking violations can reach up to $1 million per violation for health IT developers and health information networks. Enforcement against healthcare providers became effective July 1, 2024, marking a turning point in the federal government's willingness to hold the ecosystem accountable."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s4p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s4p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "On the interoperability infrastructure side, the Office of the National Coordinator for Health IT (ONC) has advanced the Trusted Exchange Framework and Common Agreement (TEFCA), a nationwide framework designed to enable any HIPAA-covered entity to connect to a single network and exchange data with any provider connected to any participating Qualified Health Information Network (QHIN). The ONC's HTI-1 Final Rule, which took effect March 11, 2024, further implements the EHR Reporting Program from the Cures Act, requiring transparent reporting on certified health IT metrics. Together, these initiatives aim to shift the EHR ecosystem from fragmentation toward genuine clinical interoperability — a shift that, if successful, would directly reduce the manual data re-entry burden that consumes so much physician time."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s4p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s4p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "The most targeted federal intervention on prior authorization specifically is the CMS Interoperability and Prior Authorization Final Rule, known as CMS-0057-F. Finalized in early 2024, the rule requires impacted payers — including Medicaid managed care plans, CHIP managed care entities, and qualified health plan issuers on federal exchanges — to implement FHIR-based Prior Authorization APIs, establish turnaround time limits of 72 hours for expedited requests and 7 calendar days for standard requests, and provide specific reasons for denial decisions. The operational provisions took effect January 1, 2026, with full API requirements due January 1, 2027. The rule also requires payers to implement a Provider Access API, enabling in-network providers to retrieve patient claims and encounter data directly — a foundational step toward the kind of data pre-population that could eliminate much of today's manual re-entry burden."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s4steps",
+          "_type": "stepBlock",
+          "steps": [
+            {
+              "_key": "step1",
+              "description": "Prohibits information blocking; mandates open APIs for patient data access; establishes ONC health IT certification requirements.",
+              "title": "21st Century Cures Act (2016)"
+            },
+            {
+              "_key": "step2",
+              "description": "Defines eight narrow exceptions to the information blocking prohibition; applies to EHR developers, health information networks, and providers.",
+              "title": "ONC Information Blocking Rule (2021)"
+            },
+            {
+              "_key": "step3",
+              "description": "Implements EHR Reporting Program; expands information blocking enforcement; advances USCDI data standards for interoperability.",
+              "title": "HTI-1 Final Rule (March 2024)"
+            },
+            {
+              "_key": "step4",
+              "description": "Mandates FHIR-based Prior Auth APIs; requires 72-hr expedited / 7-day standard decision turnaround; operational compliance began January 1, 2026.",
+              "title": "CMS-0057-F Prior Authorization Rule (2024)"
+            },
+            {
+              "_key": "step5",
+              "description": "Penalties for provider information blocking became enforceable; ONC gains authority to refer providers to relevant accrediting bodies.",
+              "title": "Information Blocking Enforcement for Providers (July 2024)"
+            }
+          ],
+          "title": "Key Federal Interventions Targeting EHR Burden and Interoperability"
+        },
+        {
+          "_key": "s4call",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s4calls",
+              "_type": "span",
+              "marks": [],
+              "text": "The U.S. Surgeon General and the AMA have both issued formal calls for systemic action on EHR burden. In 2022, Surgeon General Vivek Murthy's advisory on health worker burnout explicitly identified EHR and administrative burden as a primary structural driver of the crisis, and called on health systems, payers, and technology vendors to redesign workflows that prioritize clinician well-being alongside patient safety."
+            }
+          ],
+          "markDefs": [],
+          "style": "callout"
+        },
+        {
+          "_key": "s5h2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s5h2s",
+              "_type": "span",
+              "marks": [],
+              "text": "Interventions That Actually Work: From Ambient AI to FHIR Pre-Population"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s5p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s5p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Amid the grim statistics on EHR burden, a set of interventions has emerged with genuine evidence of efficacy. The most discussed — and arguably the most promising — is ambient artificial intelligence documentation, often called the \"ambient AI scribe.\" These systems use natural language processing to listen to physician-patient conversations and automatically generate structured clinical notes inside the EHR, dramatically reducing the manual typing and clicking that consumes so much of a physician's cognitive bandwidth. A quality improvement study of 263 physicians and advanced practice practitioners across six health care systems — published in JAMA Network Open — found that after 30 days of using an ambient AI scribe, burnout rates dropped significantly from 51.9 percent to 38.8 percent. The odds of burnout fell by 74 percent. Eighty-four percent of physicians reported a positive effect on patient communication, and 82 percent said their overall work satisfaction improved."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s5p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s5p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "Health systems deploying ambient AI at scale are reporting similarly encouraging results. Between October 2023 and December 2024, 7,260 Permanente physicians used ambient AI tools across more than 2.5 million patient encounters, saving an estimated 15,791 hours of documentation time — equivalent to approximately 1,800 eight-hour workdays. Platforms such as Nuance DAX Copilot (integrated with Epic and other major EHRs), Abridge, and Suki are now deployed across hundreds of health systems. Studies consistently report reductions in after-hours charting, decreased cognitive load, and improved patient-physician eye contact and conversation quality. A 2026 real-world prospective observational time-motion study published in JMIR Medical Informatics documented significant time savings per clinical encounter using ambient AI tools in outpatient settings. Fifty-six percent of patients reported that ambient AI scribes had a positive impact on the quality of their visit, suggesting that the benefits extend beyond the clinician experience to the patient relationship itself."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s5p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s5p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "Beyond ambient AI, several other high-impact interventions have evidence behind them. FHIR-enabled data pre-population — where a patient's prior labs, medications, and diagnoses flow automatically into the new encounter note from external health systems — directly attacks the manual re-entry burden that fragmented interoperability creates. Team-based inbox management, in which clinical staff handle prescription refill requests, routine test result communications, and referral coordination, can reduce physician inbox volume by 30 to 40 percent in well-designed implementations. Human medical scribes remain effective where ambient AI is not yet deployed: studies show they reduce physician documentation time by approximately 10 minutes per patient encounter and are associated with reduced after-hours EHR time. ONC's SAFER (Safety Assurance Factors for EHR Resilience) guides provide health systems with a structured self-assessment framework for identifying and mitigating EHR-related patient safety risks — including alert fatigue, poor workflow design, and inadequate usability testing — before they cause harm."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s5cmp",
+          "_type": "comparisonBlock",
+          "left": {
+            "label": "Status Quo (Fragmented, Manual)",
+            "points": [
+              "Physician types full note after each encounter",
+              "Labs and outside records re-entered by hand",
+              "Alert fatigue from 100–200 daily CDS alerts",
+              "86+ min of after-hours charting every day",
+              "Prior auth submitted by fax; 9+ days for decision"
+            ]
+          },
+          "right": {
+            "label": "Optimized Workflow (AI + FHIR + Team-Based)",
+            "points": [
+              "Ambient AI generates note during encounter; physician reviews",
+              "FHIR APIs pre-populate prior data from all connected systems",
+              "Alert logic refined to high-yield, actionable thresholds",
+              "After-hours charting reduced 50–70% in AI scribe studies",
+              "FHIR Prior Auth API returns decision in 72 hrs or less"
+            ]
+          },
+          "title": "Documentation Burden: Status Quo vs. Optimized Workflow"
+        },
+        {
+          "_key": "s5ex",
+          "_type": "exampleBlock",
+          "content": "Mass General Brigham — the Boston-based academic health system — conducted a formal evaluation of ambient AI documentation technology across its clinical enterprise. The program demonstrated reductions in physician burnout, improved patient interaction quality, and meaningful decreases in time spent on post-visit documentation. Physicians reported being able to make eye contact with patients during conversations rather than focusing on a screen, and many described rediscovering aspects of the clinical encounter they had lost to years of EHR demands. Mass General Brigham's public reporting on this program has become a reference point for health systems evaluating ambient AI investments nationally.",
+          "title": "Mass General Brigham: Ambient Documentation at Scale"
+        },
+        {
+          "_key": "tkwy",
+          "_type": "takeawayBlock",
+          "points": [
+            "Physicians spend more time in the EHR than with patients: roughly 5.9 hrs of daily EHR work, plus ~86 minutes of \"pajama time\" after hours, creating a chronic source of burnout.",
+            "43.2% of U.S. physicians reported at least one burnout symptom in the 2024 AMA survey; ineffective EHR systems and administrative tasks rank among the most cited stressors.",
+            "Alert fatigue is a patient safety crisis: physicians at leading hospitals override up to 98% of EHR medication alerts, rendering critical warnings invisible in the noise.",
+            "Copy-forward documentation — used by ~90% of clinicians — saves time but propagates errors; over 50% of EHR note text is duplicated from prior encounters in large-scale studies.",
+            "Prior authorization consumes 13 hours of physician and staff time per week (AMA 2024); 94% of physicians say it causes burnout, and 24% report it has led to serious patient harm.",
+            "CMS-0057-F mandates FHIR-based Prior Auth APIs and 72-hr expedited decision turnarounds, with compliance effective January 2026 — a landmark shift toward automated authorization.",
+            "Ambient AI scribes cut burnout from 51.9% to 38.8% in a 6-system study; 82% of physicians reported improved work satisfaction; 15,000+ physician hours saved at Kaiser Permanente alone.",
+            "FHIR data pre-population, team-based inbox management, and ONC SAFER guides are proven complementary tools for reducing EHR burden without waiting for regulatory mandates."
+          ]
+        },
+        {
+          "_key": "qz1",
+          "_type": "knowledgeCheck",
+          "explanation": "The 2024 AMA survey of 1,000 practicing physicians found that approximately 24 percent — nearly one in four — reported that prior authorization had led to a serious adverse event for a patient in their care, including hospitalization, permanent impairment, or death. This statistic is particularly striking because it demonstrates that the harm from prior authorization is not merely financial or bureaucratic, but clinically concrete: 19% cited delays causing hospitalization, 13% identified life-threatening events, and 7% reported disability or death as downstream consequences of authorization delays.",
+          "options": [
+            {
+              "_key": "opt1",
+              "isCorrect": false,
+              "text": "About 5% — prior authorization delays are mostly administrative inconveniences"
+            },
+            {
+              "_key": "opt2",
+              "isCorrect": true,
+              "text": "About 24% — nearly one in four physicians have seen serious patient harm from prior auth delays"
+            },
+            {
+              "_key": "opt3",
+              "isCorrect": false,
+              "text": "About 50% — a majority of physicians have witnessed serious adverse events"
+            },
+            {
+              "_key": "opt4",
+              "isCorrect": false,
+              "text": "About 75% — the vast majority of physicians report prior auth causing severe patient harm"
+            }
+          ],
+          "question": "According to the 2024 AMA prior authorization survey, approximately what percentage of physicians reported that prior authorization has led to a serious adverse event — including hospitalization, permanent impairment, or death — for a patient in their care?"
+        },
+        {
+          "_key": "srch2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "srch2s",
+              "_type": "span",
+              "marks": [],
+              "text": "Sources"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "src1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src1s",
+              "_type": "span",
+              "marks": [],
+              "text": "[1] AMA — Physician Burnout Statistics 2024: Latest Changes and Trends — https://www.ama-assn.org/practice-management/physician-health/physician-burnout-statistics-2024-latest-changes-and-trends — Source for 43.2% burnout rate, 18,000-physician survey scope, and EHR as top stressor."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src2s",
+              "_type": "span",
+              "marks": [],
+              "text": "[2] AMA — Fixing Prior Auth: Nearly 40 Prior Authorizations a Week Is Way Too Many — https://www.ama-assn.org/practice-management/prior-authorization/fixing-prior-auth-nearly-40-prior-authorizations-week-way — Source for 39 requests/week, 13 hours staff time, 94% burnout link, and 24% serious adverse events."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src3s",
+              "_type": "span",
+              "marks": [],
+              "text": "[3] CMS — CMS Interoperability and Prior Authorization Final Rule CMS-0057-F Fact Sheet — https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-prior-authorization-final-rule-cms-0057-f — Source for FHIR API mandates, 72-hour expedited / 7-day standard turnaround, and January 2026 compliance date."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src4s",
+              "_type": "span",
+              "marks": [],
+              "text": "[4] JAMA Network Open — Use of Ambient AI Scribes to Reduce Administrative Burden and Professional Burnout — https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2839542 — Source for burnout drop from 51.9% to 38.8%, 74% reduced odds of burnout, 82% improved work satisfaction."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src5",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src5s",
+              "_type": "span",
+              "marks": [],
+              "text": "[5] Annals of Family Medicine / AMA — Pajama Time: Primary Care Physicians and After-Hours EHR Work — https://www.ama-assn.org/practice-management/physician-health/doctors-work-fewer-hours-ehr-still-follows-them-home — Source for 86 minutes after-hours EHR time, 5.3 additional hours per 8-hr clinic day, and pajama time burnout link."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src6",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src6s",
+              "_type": "span",
+              "marks": [],
+              "text": "[6] PMC / JMIR Medical Informatics — Appropriateness of Alerts and Physicians' Responses in a Medication CDS System — https://pmc.ncbi.nlm.nih.gov/articles/PMC9579928/ — Source for 92.9% override rate, only 7.3% of alerts clinically appropriate; Brigham 98% override rate cited."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src7",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src7s",
+              "_type": "span",
+              "marks": [],
+              "text": "[7] PSNet / AHRQ — EHR Copy and Paste and Patient Safety — https://psnet.ahrq.gov/perspective/ehr-copy-and-paste-and-patient-safety — Source for 50.1% duplicated EHR note text, ~90% of clinicians using copy-paste, and adverse event linkage."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src8",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src8s",
+              "_type": "span",
+              "marks": [],
+              "text": "[8] AMA / Mass General Brigham — AI Scribes Save 15,000 Hours and Restore the Human Side of Medicine — https://www.ama-assn.org/practice-management/digital-health/ai-scribes-save-15000-hours-and-restore-human-side-medicine — Source for 15,791 hours saved across 2.5 million Kaiser Permanente encounters with ambient AI tools."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "EHR Burden and Clinician Burnout: How Poor Interoperability Hurts Clinicians"
+    },
+    "ehr-data-quality": {
+      "_id": "ehr-data-quality",
+      "_type": "academyModule",
+      "body": [
+        {
+          "_key": "s1h1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s1h1s",
+              "_type": "span",
+              "marks": [],
+              "text": "The Foundation Everything Rests On"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s1p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s1p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "The last two lessons built toward a clear conclusion: modern quality measurement — eCQMs and FHIR-based digital measures — computes scores automatically from data in the electronic health record. That makes one fact inescapable. The most sophisticated measure in the world is worthless if the underlying EHR data is wrong, missing, or inconsistent."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s1p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s1p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "EHR data quality is therefore not a side topic; it is the foundation the entire digital-measurement enterprise rests on. A measure can have perfect logic, flawless standards, and elegant FHIR plumbing, and still produce a completely misleading result if the data feeding it is poor. \"Garbage in, garbage out\" is not a cliché here — it is the central operational risk."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s1p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s1p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "This lesson breaks down what \"data quality\" actually means, the specific ways EHR data goes wrong, and why this matters so much for quality measurement and improvement."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s1c1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s1c1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Because modern measures compute automatically from EHR data, data quality is the foundation of all quality measurement: a perfectly specified measure still produces a wrong answer if the underlying data is incomplete, inaccurate, or inconsistent."
+            }
+          ],
+          "markDefs": [],
+          "style": "callout"
+        },
+        {
+          "_key": "s2h1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s2h1s",
+              "_type": "span",
+              "marks": [],
+              "text": "The Dimensions of Data Quality"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s2p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s2p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Researchers have worked to define data quality precisely, and while frameworks vary, a consistent core set of dimensions recurs. The three that matter most for quality measurement — and that name this lesson — are completeness, accuracy, and timeliness, joined closely by consistency."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s2p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s2p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "Completeness asks: is the data actually there? A measure needs the relevant facts recorded for every patient in the denominator. Accuracy (sometimes called correctness) asks: is the recorded data right — does it match reality? Timeliness (or currency) asks: is the data available when it is needed, and does it reflect the current state? Consistency (or concordance) asks: does the data agree with itself and across sources?"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s2p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s2p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "Other frameworks add dimensions like plausibility (is the value believable — a blood pressure of 900 is not), uniqueness (no duplicate records), and representativeness. Notably, there is still no single standard taxonomy for EHR data quality, which is itself a challenge — but completeness is consistently the most-assessed dimension, because missing data is the most common and most damaging problem."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s2t1",
+          "_type": "code",
+          "code": [
+            {
+              "Dimension": "Completeness",
+              "Failure_Example": "A required A1c result is missing",
+              "Question": "Is the needed data actually present?"
+            },
+            {
+              "Dimension": "Accuracy",
+              "Failure_Example": "Wrong value entered or coded",
+              "Question": "Does the recorded data match reality?"
+            },
+            {
+              "Dimension": "Timeliness",
+              "Failure_Example": "Result not recorded until after the measurement window",
+              "Question": "Is the data current and available in time?"
+            },
+            {
+              "Dimension": "Consistency",
+              "Failure_Example": "Conflicting values across systems",
+              "Question": "Does the data agree with itself/other sources?"
+            }
+          ],
+          "language": "json",
+          "title": "Core Data Quality Dimensions"
+        },
+        {
+          "_key": "s3h1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s3h1s",
+              "_type": "span",
+              "marks": [],
+              "text": "How EHR Data Actually Goes Wrong"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s3p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s3p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "These are not theoretical concerns. EHR data quality problems are pervasive and well-documented. Missing data is the headline issue: studies have found missing-data rates exceeding 80 percent for some variables, meaning the fact a measure needs simply is not in the record for most patients."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s3p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s3p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "A second major problem is the free-text trap. The majority of data stored in EHRs is unstructured free text — narrative notes — which automated measures generally cannot read. Important clinical facts (a documented reason a patient declined a screening, a blood pressure mentioned in a note) routinely live in text the eCQM cannot see, so the care vanishes from the measure even though it happened."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s3p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s3p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "A third is copy-paste and note bloat. Copy-paste prevalence has been measured at around 82 percent in residents' progress notes, and more than half of the text in some electronic records is duplicated. Bloated, copied notes propagate stale or wrong information forward, contributing to diagnostic errors, wasted clinician time, and inaccurate billing — and they make it hard to tell what is actually current and true."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s3sg1",
+          "_type": "statGrid",
+          "stats": [
+            {
+              "_key": "s1",
+              "context": "Missing-data rates in EHR research (critical-care review)",
+              "label": "Missingness for Some Variables",
+              "value": ">80%"
+            },
+            {
+              "_key": "s2",
+              "context": "Prevalence in progress notes (information-integrity studies)",
+              "label": "Copy-Paste in Resident Notes",
+              "value": "~82%"
+            },
+            {
+              "_key": "s3",
+              "context": "Share of text duplicated in some records (studies)",
+              "label": "Duplicated Text",
+              "value": ">50%"
+            },
+            {
+              "_key": "s4",
+              "context": "Share of ICU medication errors that were EHR-related (PMC)",
+              "label": "ICU Med Errors EHR-Related",
+              "value": "34%"
+            }
+          ]
+        },
+        {
+          "_key": "s4h1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s4h1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Why It Hits Quality Measurement So Hard"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s4p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s4p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Each data-quality failure maps directly onto a wrong measure result. Incomplete data makes delivered care invisible, so a measure understates performance — good care looks like a gap. Inaccurate data can do either: it can falsely credit care that did not happen, or penalize care that did."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s4p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s4p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "The free-text problem is especially insidious because it is systematic, not random. If a particular clinic documents a key step mostly in narrative notes, that clinic will look worse on the eCQM regardless of how good its actual care is — the measure is really measuring documentation behavior, not care. This is how a quality measure can quietly become a measure of \"how well you code,\" which corrodes trust in the whole exercise."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s4p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s4p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "Beyond measurement, these issues carry real safety stakes. EHR-related medication errors have been found to comprise about 34 percent of all medication errors in ICUs, with a substantial share carrying life-threatening potential. So data quality is simultaneously a measurement problem and a patient-safety problem — the same bad data that distorts a score can harm a patient."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s4w1",
+          "_type": "warningBlock",
+          "message": "When required clinical facts live in free text or go unrecorded, an eCQM measures how care was documented and coded, not how it was delivered. A clinic with excellent care but text-heavy notes can score poorly — eroding trust in the measure and unfairly penalizing good clinicians.",
+          "title": "A Quality Measure Can Become a Documentation Measure"
+        },
+        {
+          "_key": "s5h1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s5h1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Improving Data Quality"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "s5p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s5p1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Because data quality underpins everything, organizations serious about quality measurement invest in it directly. The first step is assessment: systematically checking data against the dimensions above using methods like comparison to gold standards, validity and plausibility checks, element-presence checks, and data-source agreement. You cannot fix what you have not measured."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s5p2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s5p2s",
+              "_type": "span",
+              "marks": [],
+              "text": "The second is capture at the source: redesigning workflows and templates so that the clinical facts measures need are recorded in structured, coded fields as a natural part of care — not buried in free text or skipped. This is the workflow work that the eCQM lesson flagged: getting the right data into the right field the first time. Natural-language processing can help surface facts trapped in free text, but capturing them structurally up front is more reliable."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s5p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "s5p3s",
+              "_type": "span",
+              "marks": [],
+              "text": "The third is governance: clear standards for documentation, controls on copy-paste, ongoing validation of EHR outputs, and the external auditing role played by entities like the EQRO and the HEDIS Compliance Audit covered earlier. Data quality is not a one-time cleanup; it is a continuous discipline. As measurement goes fully digital and multi-source with dQMs, this foundation only becomes more important — which is why it sits at the center of this course rather than the margins."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "s5st1",
+          "_type": "stepBlock",
+          "steps": [
+            {
+              "_key": "step1",
+              "description": "Systematically check data against completeness, accuracy, timeliness, and consistency.",
+              "title": "Assess"
+            },
+            {
+              "_key": "step2",
+              "description": "Redesign workflows/templates so needed facts are recorded in structured fields, not free text.",
+              "title": "Capture at the source"
+            },
+            {
+              "_key": "step3",
+              "description": "Set documentation standards, control copy-paste, and validate EHR outputs continuously.",
+              "title": "Govern"
+            },
+            {
+              "_key": "step4",
+              "description": "Use external review (e.g., EQRO, HEDIS Compliance Audit) to verify data reliability.",
+              "title": "Audit"
+            }
+          ],
+          "title": "Improving EHR Data Quality"
+        },
+        {
+          "_key": "tw",
+          "_type": "takeawayBlock",
+          "points": [
+            "Because modern measures compute automatically from EHR data, data quality is the foundation of all quality measurement — a perfect measure on bad data still gives a wrong answer.",
+            "The core data-quality dimensions are completeness, accuracy, timeliness, and consistency, with completeness the most commonly assessed because missing data is so damaging.",
+            "EHR data quality problems are pervasive: missing-data rates above 80% for some variables, ~82% copy-paste in resident notes, and over half of text duplicated in some records.",
+            "Most EHR data is unstructured free text that automated measures cannot read, so real care frequently disappears from the measure.",
+            "Incomplete or free-text data makes good care look like a gap, turning a quality measure into a measure of documentation and coding behavior.",
+            "Poor EHR data is also a safety problem — EHR-related medication errors made up about 34% of ICU medication errors in one analysis.",
+            "Improving data quality requires assessment, capturing facts in structured fields at the source, governance (including copy-paste controls), and external auditing."
+          ]
+        },
+        {
+          "_key": "qz",
+          "_type": "knowledgeCheck",
+          "explanation": "eCQMs can only count structured, coded data. When care is documented in free text the measure cannot read, delivered care becomes invisible and the clinic appears non-compliant — so the low score reflects a data-capture (completeness) problem, not the true quality of care. This is why the measure can drift into assessing documentation behavior rather than care.",
+          "options": [
+            {
+              "_key": "opt1",
+              "isCorrect": false,
+              "text": "The clinic genuinely provides poor diabetes care"
+            },
+            {
+              "_key": "opt2",
+              "isCorrect": true,
+              "text": "The measure is reflecting incomplete/unstructured data capture, not the actual quality of care delivered"
+            },
+            {
+              "_key": "opt3",
+              "isCorrect": false,
+              "text": "The eCQM logic must be broken"
+            },
+            {
+              "_key": "opt4",
+              "isCorrect": false,
+              "text": "Free-text documentation improves eCQM scores"
+            }
+          ],
+          "question": "A clinic delivers excellent diabetes care but documents many key findings in free-text notes. On the diabetes eCQM, the clinic scores poorly. What is the most accurate interpretation?"
+        },
+        {
+          "_key": "src",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "srcs",
+              "_type": "span",
+              "marks": [],
+              "text": "Sources"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "src1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src1s",
+              "_type": "span",
+              "marks": [],
+              "text": "[1] Methods and dimensions of EHR data quality assessment (JAMIA) — https://academic.oup.com/jamia/article/20/1/144/2909176 — five dimensions: completeness, correctness, concordance, plausibility, currency"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src2s",
+              "_type": "span",
+              "marks": [],
+              "text": "[2] Electronic health record data quality assessment and tools: a systematic review (JAMIA) — https://academic.oup.com/jamia/article/30/10/1730/7216383 — completeness most assessed; lack of standard taxonomy; assessment methods"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src3s",
+              "_type": "span",
+              "marks": [],
+              "text": "[3] Discovery of data quality issues in EHRs: consequences for critical care — systematized review (PMC) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12784561/ — missing-data rates exceeding 80% for some variables"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src4s",
+              "_type": "span",
+              "marks": [],
+              "text": "[4] Impact of EHR Systems on Information Integrity: Quality and Safety Implications (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC3797550/ — ~82% copy-paste in resident notes; >half duplicated text; note bloat and errors"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src5",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src5s",
+              "_type": "span",
+              "marks": [],
+              "text": "[5] Data hidden in the free text (EMERSE) — https://project-emerse.org/data_in_free_text.html — most EHR data is unstructured free text rarely usable by automated measures"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src6",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src6s",
+              "_type": "span",
+              "marks": [],
+              "text": "[6] Automating Electronic Health Record Data Quality Assessment (PMC) — https://ncbi.nlm.nih.gov/pmc/articles/PMC9925537 — assessment approaches and the cascading impact of data-quality issues; EHR-related medication errors in ICUs"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "EHR Data Quality: Completeness, Accuracy, Timeliness"
+    },
+    "interop-uscdi": {
+      "_id": "interop-uscdi",
+      "_type": "academyModule",
+      "body": [
+        {
+          "_key": "h2-what-is-uscdi",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h2-what-is-uscdi_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "What Is USCDI?"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "blk-intro-1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-intro-1_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "The United States Core Data for Interoperability — universally abbreviated as USCDI — is a standardized set of health data classes and constituent data elements that ONC (the Office of the National Coordinator for Health Information Technology) has designated as the minimum dataset required for nationwide, interoperable health information exchange. Think of USCDI as the federal government's official answer to a fundamental question: when any two health IT systems in the United States share patient data, which fields must both sides be capable of sending and receiving?"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "blk-intro-2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-intro-2_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI was first published in July 2020 as part of the ONC 21st Century Cures Act Final Rule. Before USCDI existed, its predecessor — the Common Clinical Data Set (CCDS) — served a similar purpose, but lacked the structured versioning and annual update cycle that USCDI introduced. USCDI is not a FHIR implementation guide, a claims format, or a coding system. It sits one level above all of those: it defines *what* data must be interoperable, leaving the technical *how* to implementation guides like HL7 FHIR US Core."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "callout-intro",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "callout-intro_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI defines the minimum dataset for interoperability — it tells the healthcare ecosystem which data elements every certified health IT system must be able to exchange, regardless of vendor or care setting."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "blk-intro-3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-intro-3_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "The standard is managed entirely by ONC, an agency within the U.S. Department of Health and Human Services (HHS). ONC maintains USCDI through an open, publicly participatory process: any stakeholder — a hospital, a health IT developer, a patient advocacy group, or an individual clinician — can submit new data element proposals via the ONC New Data Element and Class (ONDEC) Submission System. Submissions go through a maturity-level review. Elements that reach Level 2 maturity by October of a given year are eligible for inclusion in the following year's draft USCDI, which is published in January. After public comment and review by the Health IT Advisory Committee (HITAC), the final version is published each July."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "sg-intro",
+          "_type": "statGrid",
+          "stats": [
+            {
+              "_key": "864227c7b061",
+              "label": "Year USCDI v1 was first published",
+              "value": "2020"
+            },
+            {
+              "_key": "188cf17ec926",
+              "label": "Data classes in USCDI v3",
+              "value": "19"
+            },
+            {
+              "_key": "699839513c0b",
+              "label": "Data elements in USCDI v3",
+              "value": "94"
+            },
+            {
+              "_key": "ad760dcaa94c",
+              "label": "USCDI update cadence (draft Jan, final Jul)",
+              "value": "Annual"
+            }
+          ]
+        },
+        {
+          "_key": "h2-version-history",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h2-version-history_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI Version History: From v1 to v6"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "blk-vh-1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-vh-1_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "ONC has published new USCDI versions every year since 2020, each one expanding the required dataset to reflect evolving clinical practice, public health priorities, and equity goals. Understanding the version history helps explain why compliance timelines vary across programs and why EHR vendors may support different versions simultaneously."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "h3-v1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h3-v1_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Version 1 — July 2020"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "blk-v1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-v1_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI v1 was the first published version and became the regulatory baseline for Certified EHR Technology (CEHRT) under the 21st Century Cures Act Final Rule. It encompassed 52 data elements across 16 data classes. Key additions over the predecessor CCDS included Clinical Notes, Provenance, Pediatric Vital Signs, and patient Address. USCDI v1 set the floor for what any ONC-certified EHR must be capable of exchanging."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "h3-v2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h3-v2_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Version 2 — July 2021"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "blk-v2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-v2_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI v2 added three new data classes and 22 new data elements, with an explicit focus on advancing health equity. The most significant additions were Sexual Orientation and Gender Identity (SOGI) data elements — long requested by LGBTQ+ health advocates — and Social Determinants of Health (SDOH) data elements that allow clinicians to document housing instability, food insecurity, and transportation barriers."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "h3-v3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h3-v3_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Version 3 — July 2022 (Now the Regulatory Baseline)"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "blk-v3-1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-v3-1_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI v3 is the most consequential version to date from a regulatory standpoint. The HTI-1 Final Rule, effective February 2024, adopted USCDI v3 as the new baseline standard for certified health IT. Importantly, ONC mandated that all health IT modules certified to criteria referencing USCDI must upgrade to v3 by January 1, 2026 — a hard compliance deadline that is reshaping EHR upgrade cycles across the industry. USCDI v3 expanded to 19 data classes and 94 data elements."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "blk-v3-2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-v3-2_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "The 19 data classes in USCDI v3 cover: Allergies and Intolerances, Assessment and Plan of Treatment, Care Team Members, Clinical Notes, Clinical Tests, Diagnostic Imaging, Encounter Information, Goals, Health Insurance Information (new in v3), Health Status/Assessments (new in v3, absorbing Health Concerns), Immunizations, Laboratory, Medications, Patient Demographics/Information, Problems, Procedures, Provenance, Referral Notes, and Vital Signs. New equity-focused data elements include Disability Status, Mental/Cognitive Status, Functional Status, and Pregnancy Status."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "hl-v3-deadline",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "hl-v3-deadline_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI v3 is the current mandatory baseline. All ONC-certified EHRs must support v3 by January 1, 2026 under the HTI-1 Final Rule."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "h3-v4-v6",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h3-v4-v6_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Versions 4, 5, and 6 — Continued Annual Expansion"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "blk-v4-v6",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-v4-v6_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI v4 added 20 data elements and one new data class to v3, including Alcohol Use, Substance Use, Physical Activity Assessments, Treatment Intervention preferences, Care Experience Preferences, and Medication Adherence data elements. USCDI v5, published July 2024, added 16 new data elements and two new data classes. USCDI v6 was published July 2025 with 6 additional data elements. Draft USCDI v7, released January 2026 for public comment, proposes 30 new data elements — the largest single-version expansion in the standard's history."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "analogy-building-code",
+          "_type": "analogyBlock",
+          "analogy": "[Unhandled block type: analogyBlock]"
+        },
+        {
+          "_key": "h2-cehrt",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h2-cehrt_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI and the ONC Certification Program"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "blk-cehrt-1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-cehrt-1_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI does not exist in a vacuum — its power comes from its direct linkage to the ONC Health IT Certification Program. To participate in federal programs like the Merit-based Incentive Payment System (MIPS), the Medicare and Medicaid Promoting Interoperability programs, and several value-based care models, providers must use Certified EHR Technology (CEHRT). Certification, in turn, requires EHR products to demonstrate they can exchange the specific data classes and elements defined in the current regulatory baseline version of USCDI."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "blk-cehrt-2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-cehrt-2_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "This creates a powerful compliance chain: federal payment programs require CEHRT → CEHRT certification requires USCDI support → USCDI defines which data elements must be interoperable. The result is that every major EHR vendor selling to hospitals, physician groups, or ambulatory clinics that accept Medicare or Medicaid must build USCDI compliance into their core product."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "ex-cehrt",
+          "_type": "exampleBlock",
+          "content": "A regional hospital system using Epic or Oracle Health must ensure its EHR can receive and send all 94 data elements in USCDI v3 — including the new Health Insurance Information class and the equity-focused Disability Status elements — before its next CEHRT certification renewal. Failure to meet the January 1, 2026 deadline risks losing certification, which would disqualify the system from participating in MIPS and could result in Medicare payment penalties.",
+          "eyebrow": "Real-World Application"
+        },
+        {
+          "_key": "blk-cehrt-3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-cehrt-3_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "The 21st Century Cures Act Final Rule (2020) was the original legislative trigger that made USCDI certification mandatory. The subsequent HTI-1 Final Rule (effective February 8, 2024) updated the regulatory baseline from USCDI v1 to USCDI v3 and introduced the January 1, 2026 transition deadline. Notably, after January 1, 2026, ONC will no longer allow new certifications to reference USCDI v1 — v3 becomes the only valid baseline. This is not a soft guideline but a hard regulatory requirement."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "compare-rules",
+          "_type": "comparisonBlock",
+          "left": {
+            "label": "21st Century Cures Act Final Rule (2020)",
+            "points": [
+              "Established USCDI v1 as baseline for CEHRT",
+              "Required support for 52 data elements across 16 classes",
+              "Prohibited information blocking",
+              "Mandated patient access APIs using FHIR",
+              "Covered major EHR developers with ≥ 500k patient records"
+            ]
+          },
+          "right": {
+            "label": "HTI-1 Final Rule (2024)",
+            "points": [
+              "Upgraded baseline to USCDI v3 (94 elements, 19 classes)",
+              "Set January 1, 2026 as hard compliance deadline",
+              "Expanded CEHRT scope to more health IT developers",
+              "Required support for USCDI+ use cases in certain programs",
+              "Strengthened algorithmic transparency and AI accountability provisions"
+            ]
+          },
+          "title": "21st Century Cures Act Final Rule vs. HTI-1 Final Rule"
+        },
+        {
+          "_key": "h2-uscdi-plus",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h2-uscdi-plus_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI+: Domain-Specific Extensions Beyond the Core"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "blk-plus-1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-plus-1_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI defines the national minimum dataset — but minimum is often not enough for specialized programs. ONC created USCDI+ (pronounced 'USCDI plus') to address exactly this gap. USCDI+ is an extension mechanism that allows federal agencies and programs to define domain-specific datasets that go beyond the core USCDI standard without fragmenting the broader interoperability ecosystem."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "blk-plus-2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-plus-2_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Under the USCDI+ framework, a program identifies additional data elements it needs beyond USCDI — elements that are too specialized or too nascent to be appropriate for the universal baseline but that the program's participants must be able to exchange. These elements are documented, published, and harmonized using the same structured USCDI methodology, creating a consistent, machine-readable specification for developers."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "callout-plus",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "callout-plus_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI+ is not a replacement for USCDI — it is a structured extension layer. Every USCDI+ dataset builds on top of the core USCDI standard. Programs using USCDI+ still require full USCDI compliance as the foundation."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "blk-plus-3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-plus-3_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "The first and most prominent USCDI+ domain is USCDI+ Quality, developed jointly by ONC and CMS to support digital quality measurement. USCDI+ Quality establishes a harmonized baseline of data elements needed for a wide range of quality measurement use cases — including CMS electronic clinical quality measures (eCQMs), CMS's Data Element Library, AHRQ Common Formats, and NCQA HEDIS measures. By creating a consistent USCDI+ Quality data element list, ONC and CMS aim to reduce the fragmentation that currently exists when different quality programs require the same underlying clinical data but specify it in incompatible ways."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "blk-plus-4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-plus-4_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "CDC has also engaged with the USCDI+ framework for public health reporting extensions. The model reflects a broader philosophy: rather than allow each federal program to independently define and require its own proprietary dataset — which would force EHR vendors to build dozens of separate integrations — USCDI+ creates a managed, centrally coordinated extension layer where new program needs are documented and harmonized against each other and against the core standard."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "sg-plus",
+          "_type": "statGrid",
+          "stats": [
+            {
+              "_key": "plus-s1",
+              "label": "USCDI+ use cases published by ONC",
+              "value": "13+"
+            },
+            {
+              "_key": "plus-s2",
+              "label": "Year USCDI+ program launched",
+              "value": "2021"
+            },
+            {
+              "_key": "plus-s3",
+              "label": "USCDI+ operates at sector or program level",
+              "value": "Sector"
+            },
+            {
+              "_key": "plus-s4",
+              "label": "USCDI+ adoption is voluntary for stakeholders",
+              "value": "Voluntary"
+            }
+          ]
+        },
+        {
+          "_key": "h2-fhir-mapping",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h2-fhir-mapping_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "How USCDI Maps to the US Core FHIR Implementation Guide"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "blk-fhir-1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-fhir-1_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI tells you *what* data must be interoperable. The US Core FHIR Implementation Guide (IG) — published by HL7 and maintained in close coordination with ONC — tells you *how* to represent and exchange that data using FHIR resources and profiles. Understanding the relationship between these two standards is essential for any health IT developer building interoperability solutions."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "blk-fhir-2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-fhir-2_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "The US Core IG defines FHIR profiles — constrained versions of base FHIR resources — that implement each USCDI data class and element with Must Support constraints, terminology bindings, and search parameters. For example, the USCDI Allergies and Intolerances data class maps to the US Core AllergyIntolerance profile; the USCDI Clinical Notes data class maps to the US Core DocumentReference and DiagnosticReport profiles; the USCDI Patient Demographics class maps to the US Core Patient profile."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "blk-fhir-3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-fhir-3_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Each new version of US Core is designed to align with a corresponding version of USCDI. US Core v6 aligns with USCDI v3; US Core v7 and later versions align with subsequent USCDI releases. However, the mapping is not always one-to-one. A single USCDI data class may map to multiple FHIR profiles, and many US Core profile elements have no direct USCDI counterpart — because US Core's scope is broader than certification. US Core also includes elements needed to make FHIR technically functional that USCDI does not explicitly require."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "warn-fhir-naming",
+          "_type": "warningBlock",
+          "message": "USCDI data class names and FHIR resource names often differ. 'Health Status/Assessments' in USCDI does not map cleanly to a single FHIR resource — it spans Observation, Condition, and other resources depending on the specific data element. Always consult the US Core USCDI mapping table when implementing FHIR APIs for USCDI compliance.",
+          "title": "FHIR Naming vs. USCDI Naming"
+        },
+        {
+          "_key": "blk-fhir-4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-fhir-4_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "For ONC certification, EHRs must demonstrate they support the FHIR-based APIs specified in the certification criteria — which reference US Core profiles as the implementation specification for USCDI-required data. In practice, this means demonstrating that a FHIR server can return Patient, AllergyIntolerance, Condition, MedicationRequest, DiagnosticReport, Observation, DocumentReference, and other US Core-profiled resources for the data elements required by the certified USCDI version."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "quote-fhir",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "quote-fhir_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI and FHIR US Core are complementary initiatives, with USCDI defining high-level data requirements and FHIR US Core providing detailed FHIR-based profiles for meeting those requirements. Mapping between them is necessary for achieving interoperability and consistency in healthcare data exchange."
+            }
+          ],
+          "markDefs": [],
+          "style": "blockquote"
+        },
+        {
+          "_key": "h2-challenges",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h2-challenges_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Real-World Implementation Challenges"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "blk-ch-1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-ch-1_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Despite USCDI's clear regulatory mandate and structured versioning process, real-world implementation remains far from uniform. Multiple categories of challenges have emerged as the standard has expanded from 52 data elements in v1 to 94 in v3 — and continues to grow with each annual release."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "h3-ambiguity",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h3-ambiguity_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Data Class Ambiguity"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "blk-ch-ambiguity",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-ch-ambiguity_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "One of the most persistent criticisms of USCDI — raised prominently by the Electronic Health Record Association (EHRA) — is the ambiguity in data class definitions. When a data class definition is broad or imprecise, EHR vendors may implement it in materially different ways while both claiming compliance. This ambiguity creates friction at exactly the point where standardization is supposed to reduce it: when two certified systems try to exchange the 'same' data element and find it encoded differently."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "h3-legacy",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h3-legacy_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Legacy Systems and Upgrade Costs"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "blk-ch-legacy",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-ch-legacy_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Many hospitals — particularly critical access hospitals, rural facilities, psychiatric hospitals, and safety-net providers — run older EHR infrastructure that was certified to USCDI v1 or earlier CCDS standards. Upgrading to USCDI v3 compliance is not a configuration change; it often requires significant software development, data migration, and staff retraining. ONC data shows that while 86% of non-federal acute care hospitals have adopted a certified EHR, only 67% of psychiatric hospitals have done so — a gap that reflects real structural barriers in the certification upgrade pathway."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "h3-coded",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h3-coded_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Coded vs. Unstructured Data"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "blk-ch-coded",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-ch-coded_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "USCDI compliance assumes data exists in structured, coded form. But in clinical practice, a substantial portion of medically significant information lives in unstructured clinical notes, scanned documents, and free-text fields. Oncology is a stark example: many pathology results remain uncoded in EHRs because clinicians manually transcribe pathology reports without applying standardized terminologies like SNOMED CT or LOINC. An EHR may be technically certified to send the Laboratory data class, but if the underlying data is unstructured, the API call returns incomplete or absent records."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "h3-lag",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h3-lag_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Version Lag Between Certification and Clinical Reality"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "blk-ch-lag",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blk-ch-lag_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Because USCDI is updated annually but regulatory baselines are set through formal rulemaking — a process that takes 18-24 months — there is always a gap between the most current USCDI version and the version required for certification. As of 2026, the regulatory baseline is USCDI v3 (published 2022), while ONC has already published v5 and v6 and is drafting v7. Programs that want to use elements from v4 or v5 for quality measurement must rely on USCDI+ or non-regulatory mechanisms — adding complexity for developers who must support multiple versions simultaneously."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "ex-version-lag",
+          "_type": "exampleBlock",
+          "content": "A care coordination vendor building a post-discharge follow-up platform wants to capture Medication Adherence data — an element added in USCDI v4. If the EHRs they integrate with are only certified to USCDI v3, they have no standardized way to request that data element via the FHIR API. They must either negotiate custom extensions with each EHR vendor, use an HL7 FHIR Questionnaire workaround, or wait until the regulatory baseline advances to v4 — which may be years away.",
+          "eyebrow": "Version Lag Example"
+        },
+        {
+          "_key": "steps-ondec",
+          "_type": "stepBlock",
+          "steps": [
+            {
+              "_key": "d8276f7cba00",
+              "description": "A stakeholder identifies a clinical data element not in the current USCDI version",
+              "title": "Identify Gap"
+            },
+            {
+              "_key": "9cd80e6edba5",
+              "description": "They submit the element via the ONC ONDEC (New Data Element and Class) Submission System",
+              "title": "Submit via ONDEC"
+            },
+            {
+              "_key": "4fcf72e354aa",
+              "description": "The community reviews and comments; the element is assigned a maturity level",
+              "title": "Community Review"
+            },
+            {
+              "_key": "7d4b20e448c4",
+              "description": "Elements reaching Level 2 maturity by October are eligible for the next annual USCDI version",
+              "title": "Maturity Level 2"
+            },
+            {
+              "_key": "step-5",
+              "description": "ONC publishes the draft version in January and the final version in July of the following year",
+              "title": "Final Adoption"
+            }
+          ],
+          "title": "How New Elements Enter USCDI (ONDEC Process)"
+        },
+        {
+          "_key": "h2-takeaways",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h2-takeaways_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Key Takeaways"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "takeaway-main",
+          "_type": "takeawayBlock",
+          "points": [
+            "USCDI is ONC's standardized minimum dataset for interoperability — it defines which health data classes and elements every certified EHR must be capable of exchanging.",
+            "The standard launched in July 2020 (v1) and is updated annually, with draft versions published each January and final versions each July.",
+            "USCDI v3 (19 data classes, 94 elements) is the current regulatory baseline, mandated for all ONC-certified EHRs by January 1, 2026 under the HTI-1 Final Rule.",
+            "USCDI+ is an extension mechanism for sector-specific data needs, used in programs like TEFCA, CDC public health reporting, and CMS quality measurement.",
+            "USCDI and FHIR US Core are complementary: USCDI defines what data must be exchangeable; US Core defines how to represent it in FHIR.",
+            "Implementation challenges include version lag (v1 vs v3 gaps), inconsistent mapping to FHIR resources, and the shift from free text to coded data elements."
+          ],
+          "title": "Key Takeaways"
+        },
+        {
+          "_key": "quiz-hti1",
+          "_type": "knowledgeCheck",
+          "explanation": "The HTI-1 (Health Data, Technology, and Interoperability) Final Rule, effective February 8, 2024, adopted USCDI v3 as the new certification baseline and set January 1, 2026 as the hard deadline for all certified health IT to transition from USCDI v1 to v3. The original 21st Century Cures Act Final Rule established USCDI v1 as the initial baseline in 2020.",
+          "options": [
+            {
+              "_key": "d7173521f620",
+              "isCorrect": false,
+              "text": "The 21st Century Cures Act Final Rule (2020)"
+            },
+            {
+              "_key": "c26120301e8b",
+              "isCorrect": true,
+              "text": "The HTI-1 (Health Data, Technology, and Interoperability) Final Rule (2024)"
+            },
+            {
+              "_key": "quiz-opt-3",
+              "isCorrect": false,
+              "text": "The CMS Interoperability and Patient Access Final Rule (2020)"
+            },
+            {
+              "_key": "quiz-opt-4",
+              "isCorrect": false,
+              "text": "The HIPAA Omnibus Rule (2013)"
+            }
+          ],
+          "question": "Which federal rule established USCDI v3 as the new mandatory certification baseline and set January 1, 2026 as the compliance deadline?"
+        },
+        {
+          "_key": "h2-sources",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "h2-sources_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Sources"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "src-1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src-1_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "ONC — United States Core Data for Interoperability (USCDI) | Interoperability Standards Platform: https://isp.healthit.gov/united-states-core-data-interoperability-uscdi"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src-2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src-2_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "ONC — HTI-1 Final Rule (Health Data, Technology, and Interoperability): https://healthit.gov/regulations/hti-rules/hti-1-final-rule/"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src-3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src-3_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "ONC Standards Bulletin 2024-2 (USCDI v5): https://www.healthit.gov/topic/standardsbulletin_24-2"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src-4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src-4_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "ONC — USCDI+ Program: https://www.healthit.gov/topic/interoperability/uscdi-plus"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src-5",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src-5_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "HL7 US Core Implementation Guide v9.0.0 — USCDI Mapping: https://build.fhir.org/ig/HL7/US-Core/uscdi.html"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src-6",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src-6_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "EHRA Blog — Concerns Grow over Ambiguity of USCDI Data Classes: https://ehrablog.org/2023/12/20/concerns-grow-over-ambiguity-of-uscdi-data-classes/"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src-7",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src-7_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Particle Health — Understanding USCDI and How USCDI Works With FHIR: https://www.particlehealth.com/blog/understanding-uscdi"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src-8",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src-8_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "Federal Register — HTI-1 Final Rule (2024/01/09): https://www.federalregister.gov/documents/2024/01/09/2023-28857/health-data-technology-and-interoperability-certification-program-updates-algorithm-transparency-and"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src-9",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src-9_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "CMS MMS Hub — USCDI and USCDI+ Quality Presentation: https://mmshub.cms.gov/sites/default/files/MMS-InfoSession-USCDI-Slides-20231129.pdf"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "src-10",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "src-10_s0",
+              "_type": "span",
+              "marks": [],
+              "text": "1upHealth — Transitioning from USCDI Version 1 to Version 3: https://1up.health/blog/transitioning-from-uscdi-version-1-to-version-3/"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "USCDI: The United States Core Data for Interoperability Standard"
+    }
+  },
+  "ehrTrack": {
+    "track": {
+      "id": "a31a8a75-7474-4142-abc0-427825e26120",
+      "title": "EHR Systems & Integration",
+      "slug": "ehr-integration",
+      "course_id": "cdb32873-2fe8-49a8-a68d-7b471f4c283a"
+    },
+    "lessons": [
+      {
+        "id": "4f7a3306-a439-4957-a234-e10bc452b0c7",
+        "slug": "ehr-market-landscape",
+        "title": "The EHR Market: Epic, Oracle/Cerner & the Concentration Problem",
+        "order": 1,
+        "sanity_slug": "interop-ehr-market",
+        "pillar": "technology"
+      },
+      {
+        "id": "15ce5047-0879-4dc7-af78-157ddf5d3425",
+        "slug": "interface-engines-integration",
+        "title": "Interface Engines: The Plumbing of Health IT",
+        "order": 2,
+        "sanity_slug": "interop-interface-engines",
+        "pillar": "technology"
+      },
+      {
+        "id": "82714e10-70cb-406a-bfb6-5b67974e967f",
+        "slug": "ehr-physician-burden",
+        "title": "EHR Burden: Documentation, Inbox & the Pajama Time Problem",
+        "order": 3,
+        "sanity_slug": "interop-ehr-burden",
+        "pillar": "technology"
+      }
+    ]
+  }
+}

@@ -225,7 +225,12 @@
       "Bash(git ls-remote *)",
       "Bash(crontab -l)",
       "Bash(git check-ignore *)",
-      "Bash(rm -f .claude/scheduled_tasks.lock)"
+      "Bash(rm -f .claude/scheduled_tasks.lock)",
+      "Bash(node scripts/_tmp-find-tech-academy.mjs)",
+      "Bash(node scripts/emr-academy-backup.mjs)",
+      "Bash(node -e \"fetch\\('https://fxz10xl7.api.sanity.io/v2021-06-07/data/query/production?query='+encodeURIComponent\\('*[_id==\\\\\"interop-ehr-market\\\\\"][0]{_id,_type,title,slug,courseSlug,pillar,\\\\\"bodyLen\\\\\":count\\(body\\)}'\\)\\).then\\(r=>r.json\\(\\)\\).then\\(j=>console.log\\(JSON.stringify\\(j.result,null,2\\)\\)\\)\")",
+      "Bash(node scripts/emr-academy-integrate.mjs)",
+      "Bash(node scripts/emr-academy-integrate.mjs --commit)"
     ],
     "additionalDirectories": [
       "/private/tmp",
