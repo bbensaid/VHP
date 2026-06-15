@@ -112,7 +112,7 @@ export default function OnboardingModal() {
                 {[
                   { icon: NewspaperIcon, label: "The Wire", desc: "Real-time intelligence feed" },
                   { icon: SparklesIcon, label: "AI Analyst", desc: "Ask any healthcare question" },
-                  { icon: ChartBarIcon, label: "Research Lab", desc: "21 analytical tools" },
+                  { icon: ChartBarIcon, label: "Research Lab", desc: "24 analytical tools" },
                   { icon: AcademicCapIcon, label: "Academy", desc: "Structured learning paths" },
                 ].map(({ icon: Icon, label, desc }) => (
                   <div key={label} className="flex items-start gap-2.5 bg-slate-50 dark:bg-slate-800 rounded-xl p-3">

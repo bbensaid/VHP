@@ -7,6 +7,7 @@ import LabPageShell from '@/components/research/LabPageShell'
 const FHIRLab                   = dynamic(() => import('@/components/research/FHIRLab'),                   { ssr: false })
 const RiskStratificationEngine  = dynamic(() => import('@/components/research/RiskStratificationEngine'),  { ssr: false })
 const EMREHRLab                 = dynamic(() => import('@/components/research/EMREHRLab'),                 { ssr: false })
+const StatewideEHRLab           = dynamic(() => import('@/components/research/StatewideEHRLab'),           { ssr: false })
 
 function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string; badge: string; desc: string }) {
   return (
@@ -35,6 +36,10 @@ const TABS = [
   {
     id: 'emr', icon: '🏥', label: 'EMR/EHR Lab', badge: 'EHR Systems',
     desc: 'Model EHR adoption cost, timeline, and 5-year ROI; compare Epic, Oracle Health, MEDITECH, and athenahealth; audit a record for USCDI data quality; and step through a simulated clinical encounter to see documentation burden.',
+  },
+  {
+    id: 'statewide-ehr', icon: '🗺️', label: 'Statewide EHR Modeler', badge: 'Act 167 · RHT',
+    desc: "Model Vermont's Act 167 feasibility question — a single statewide EHR vs. FHIR interoperability across the existing platforms — on 10-year cost, data timeliness, migration disruption, and vendor lock-in.",
   },
 ]
 
@@ -92,6 +97,7 @@ export default function InteroperabilityClient() {
       {activeTab === 'fhir' && <div><ToolHeader icon="🔌" label="FHIR Interoperability Lab"  badge="Interoperability" desc={TABS[0].desc} /><FHIRLab /></div>}
       {activeTab === 'risk' && <div><ToolHeader icon="📊" label="Risk Stratification Engine" badge="Clinical Risk"    desc={TABS[1].desc} /><RiskStratificationEngine /></div>}
       {activeTab === 'emr'  && <div><ToolHeader icon="🏥" label="EMR/EHR Lab"                badge="EHR Systems"      desc={TABS[2].desc} /><EMREHRLab /></div>}
+      {activeTab === 'statewide-ehr' && <div><ToolHeader icon="🗺️" label="Statewide EHR Deployment Modeler" badge="Act 167 · RHT" desc={TABS[3].desc} /><StatewideEHRLab /></div>}
     </LabPageShell>
   )
 }
