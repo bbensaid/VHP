@@ -4,7 +4,7 @@
  * Shared UI atoms for WorkforceModeler tabs: Pill, Slider, SectionCard, MetricBox.
  */
 
-import { ChevronDown, Info } from "lucide-react";
+import { Info } from "lucide-react";
 import { fmt, fmtDollars } from "./WorkforceModeler.data";
 
 export function Pill({

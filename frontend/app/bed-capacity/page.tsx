@@ -516,7 +516,6 @@ function overallStatus(h: Hospital): { cls: keyof typeof STATUS_STYLES; label: s
 // ─── SHARED LABEL STYLE ───────────────────────────────────────────────────────
 // Fix #4: replace all muted slate-400/500 labels with slate-600 minimum
 const LABEL_SM  = "text-xs font-semibold text-slate-600 dark:text-slate-300";
-const LABEL_XS  = "text-[11px] font-medium text-slate-600 dark:text-slate-300";
 const LABEL_CAP = "text-[10px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400";
 
 // ─── ALGORITHM SELECTOR WIDGET ────────────────────────────────────────────────

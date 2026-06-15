@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useCallback } from "react";
 import {
-  Plus, Trash2, Copy, Tag, Search, Filter, BookOpen, Clipboard, ChevronRight,
+  Plus, Trash2, Tag, Search, BookOpen, Clipboard, ChevronRight,
 } from "lucide-react";
 import {
   NOTE_CATEGORIES, SAMPLE_NOTES,

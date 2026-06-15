@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { CheckCircle2, Circle, ChevronDown, X, ArrowLeft } from "lucide-react";
 import type { TrackWithProgress, Pillar } from "@/types/course";
-import { CourseProgressBar } from "./CourseProgressBar";
 
 const PILLAR_DOT: Record<Pillar, string> = {
   general:    "bg-slate-400",

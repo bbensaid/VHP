@@ -1,6 +1,5 @@
 import { requireAuth } from "@/lib/auth";
 import Link from "next/link";
-import { db } from "@/lib/db/client";
 import { getUserCertifications, getUserEnrollments } from "@/lib/db/academy";
 
 export default async function AccountPage() {

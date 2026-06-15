@@ -183,7 +183,7 @@ export default async function ChapterReaderPage(
               Listen to this chapter
             </Link>
             <a
-              href="/HTR_Book_v28_Final2.pdf"
+              href="/HTR_Book_v41.pdf"
               download="Transforming_American_Healthcare_HTR.pdf"
               className="flex items-center justify-center gap-2 w-full bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold px-3 py-2 rounded-lg transition-colors"
             >

@@ -62,6 +62,16 @@ const nextConfig: NextConfig = {
     styledComponents: true,
   },
 
+  // Remote hosts allowed for next/image optimization.
+  // Kept in sync with the CSP img-src allowlist above.
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "cdn.sanity.io" },
+      { protocol: "https", hostname: "img.youtube.com" },
+      { protocol: "https", hostname: "upload.wikimedia.org" },
+    ],
+  },
+
   async headers() {
     return [
       {

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import CategoryPage from "@/components/CategoryPage";
 
 export const metadata = {

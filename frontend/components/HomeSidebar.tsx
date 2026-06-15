@@ -37,7 +37,6 @@ import {
   getTool,
   type Pillar,
   type PillarId,
-  type Program,
 } from "@/lib/taxonomy";
 import { useBrand } from "@/components/BrandContext";
 

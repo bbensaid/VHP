@@ -3,7 +3,6 @@
 import { useState, useMemo } from "react";
 import {
   HOSPITALS, RECOMMENDATIONS, COUNTY_DATA,
-  type Recommendation,
 } from "../data";
 import { Badge, InfoCard, PillarGauge, MetricCard, TabBtn } from "../atoms";
 import { StickyOutputPanel } from "@/components/StickyOutputPanel";

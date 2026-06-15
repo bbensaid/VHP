@@ -1,4 +1,5 @@
 import { client } from "@/sanity/lib/client";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import VideoBlock from "@/components/VideoBlock";
@@ -107,7 +108,7 @@ export default async function WebinarDetailPage({
             </div>
           ) : webinar.imageUrl ? (
             <div className="aspect-video bg-slate-900 rounded-2xl overflow-hidden flex items-center justify-center relative shadow-xl">
-              <img src={webinar.imageUrl} alt={webinar.title} className="w-full h-full object-cover opacity-70" />
+              <Image src={webinar.imageUrl} alt={webinar.title} fill sizes="100vw" className="object-cover opacity-70" />
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
                 <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
                   <svg className="w-8 h-8 text-indigo-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
