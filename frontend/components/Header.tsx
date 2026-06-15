@@ -335,7 +335,7 @@ function ToolsPanel({ onClose }: { onClose: () => void }) {
           <div className={sec}>
             <p className={hdr}>Research Lab</p>
             {[
-              { href: "/research-lab", label: "All 24 Lab Tools", desc: "Browse the full analytical tool directory" },
+              { href: "/research-lab", label: "All 21 Lab Tools", desc: "Browse the full analytical tool directory" },
               { href: "/research-lab/vbc-clinical-quality?tab=hl7", label: "Clinical Data Exchange Lab", desc: "HL7 v2, FHIR R4, USCDI — 8 Vermont patient scenarios" },
               { href: "/research-lab/vbc-clinical-quality?tab=quality", label: "VBC Quality Measures", desc: "HEDIS, 30-day readmissions, avoidable ED" },
               { href: "/research-lab/vbc-clinical-quality?tab=value", label: "High vs. Low Value Care", desc: "A1C/BP panel mgmt, Choosing Wisely, TCOC" },
@@ -922,7 +922,7 @@ const Header = () => {
                   { label: "Investment Tracker", href: "/investment-tracker", sub: [] },
                   { label: "Trending Topics", href: "/trending-topics", sub: [] },
                   { label: "Multimedia", href: "/multimedia", sub: [] },
-                  { label: "All 24 Research Lab Tools", href: "/research-lab", sub: [] },
+                  { label: "All 21 Research Lab Tools", href: "/research-lab", sub: [] },
                   { label: "Clinical Data Exchange Lab", href: "/research-lab/vbc-clinical-quality?tab=hl7", sub: [] },
                   { label: "Risk Stratification Methodology", href: "/research-lab/vbc-clinical-quality?tab=risk", sub: [] },
                   { label: "VBC Quality Measures", href: "/research-lab/vbc-clinical-quality?tab=quality", sub: [] },
