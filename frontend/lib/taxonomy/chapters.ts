@@ -118,6 +118,7 @@ export const CHAPTERS: readonly Chapter[] = [
       { label: "AI & Machine Learning", href: "/technology/ai" },
       { label: "Data Security & Governance", href: "/technology/security" },
       "fhir-lab",
+      "emr-ehr-lab",
     ],
   },
   {
