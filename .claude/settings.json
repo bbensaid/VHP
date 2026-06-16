@@ -248,7 +248,12 @@
       "Bash(node scripts/_academy_audit.mjs)",
       "Bash(curl -s --max-time 30 -b \"htr_beta=1\" \"http://localhost:3000/research-lab/interoperability?tab=statewide-ehr\")",
       "Bash(curl -s --max-time 30 -b \"htr_beta=1\" \"http://localhost:3000/research-lab/knowledge-workspace?tab=cin\")",
-      "Bash(curl -s --max-time 30 -b \"htr_beta=1\" \"http://localhost:3000/research-lab/knowledge-workspace?tab=ems\")"
+      "Bash(curl -s --max-time 30 -b \"htr_beta=1\" \"http://localhost:3000/research-lab/knowledge-workspace?tab=ems\")",
+      "Bash(cp HTR_Book_v41.docx sanity-backups/HTR_Book_v41.docx.pre-rht-tools-__CMDSUB_OUTPUT__.bak)",
+      "Bash(cp HTR_Book_v41.md sanity-backups/HTR_Book_v41.md.pre-rht-tools-__CMDSUB_OUTPUT__.bak)",
+      "Bash(rm -f /tmp/HTR_v41_new.docx)",
+      "Bash(zip -X -q /tmp/HTR_v41_new.docx '[Content_Types].xml')",
+      "Bash(zip -rX -q /tmp/HTR_v41_new.docx . -x '[Content_Types].xml')"
     ],
     "additionalDirectories": [
       "/private/tmp",
