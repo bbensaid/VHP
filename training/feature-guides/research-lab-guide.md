@@ -5,7 +5,7 @@
 
 ## What Is the Research Lab?
 
-The Research Lab is HTR's suite of 21 interactive modeling and analysis tools. Each tool lets you input your own parameters and generate quantitative outputs — financial projections, population models, policy impact analyses, and more.
+The Research Lab is HTR's suite of 24 interactive modeling and analysis tools. Each tool lets you input your own parameters and generate quantitative outputs — financial projections, population models, policy impact analyses, and more.
 
 **Entry point:** `/research-lab`
 
@@ -21,6 +21,8 @@ The Lab is organized into six topic groups, each accessible from the hub page.
 |-----|------|--------------|
 | `?tab=fhir` | **FHIR Interoperability Lab** | Explore FHIR R4 data exchange, CMS interoperability rule compliance, API design for healthcare |
 | `?tab=risk` | **Risk Stratification Engine** | Build and test clinical risk scoring models; explore data requirements and model validation |
+| `?tab=emr` | **EMR/EHR Lab** | Compare EHR vendors (Epic, Oracle Health, MEDITECH, athenahealth), model adoption cost and 5-year ROI, audit USCDI data quality, and quantify documentation burden |
+| `?tab=statewide-ehr` | **Statewide EHR Deployment Modeler** | The Act 167 feasibility question: a single statewide EHR vs. FHIR interoperability across Vermont's existing platforms — 10-year cost, data timeliness, disruption, lock-in |
 
 **Best for:** Health IT professionals, clinical informaticists, researchers studying interoperability
 
@@ -87,6 +89,8 @@ The Lab is organized into six topic groups, each accessible from the hub page.
 | `?tab=workforce` | **Workforce Modeler** | Model healthcare workforce supply/demand, training pipelines, labor cost trends |
 | `?tab=leaderboard` | **Innovation Leaderboard** | Benchmark innovation leaders across health systems, payers, and states |
 | `?tab=workspace` | **Research Workspace** | Multi-tool research environment for extended analysis sessions |
+| `?tab=cin` | **CIN & Shared Services Modeler** | Model Vermont's RHT-funded Clinically Integrated Network: shared billing/coding/credentialing/HR/IT and group purchasing across the 14 hospitals vs. the $1,303/discharge admin premium |
+| `?tab=ems` | **EMS Transformation Modeler** | Model regionalizing Vermont's 31 EMS agencies and community-paramedicine treat-and-refer ED diversion under global budgets |
 
 **Best for:** All users; the Evidence Library and Research Workspace are useful for every role
 
