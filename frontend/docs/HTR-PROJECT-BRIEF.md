@@ -134,7 +134,7 @@ Adding a new pillar sub-topic requires updating **both** `HomeSidebar.tsx` AND `
 See `HTR-PLATFORM-MAP.md` (in repo root) for:
 - Complete route listing (all 163 pages)
 - All component files and their purposes
-- Research Lab tool index (21 tools)
+- Research Lab tool index (24 tools)
 - All API routes (40+)
 - Supabase table list
 - Full known issues log

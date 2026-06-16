@@ -36,7 +36,7 @@ URL: http://[domain]/research-lab
 No authentication required for base access. Client portal login unlocks saved workspace persistence and custom benchmark loading.
 
 ### Scale
-- **19 interactive tools** across 6 functional categories
+- **24 interactive tools** across 6 functional categories. Beyond the modules detailed below, the suite includes the **EMR/EHR Lab** (compare EHR vendors — Epic, Oracle Health, MEDITECH, athenahealth — model adoption cost and 5-year ROI, audit USCDI data quality, and quantify documentation burden) and the **Statewide EHR Deployment Modeler** (the Act 167 / Oliver Wyman feasibility question: a single statewide EHR vs. FHIR interoperability across Vermont's existing platforms) on the Interoperability bench; and the **CIN & Shared Services Modeler** (Vermont's RHT-funded Clinically Integrated Network against the $1,303/discharge administrative cost premium) and **EMS Transformation Modeler** (regionalizing Vermont's 31 EMS agencies and community-paramedicine ED diversion under global budgets) on the Knowledge & Workspace bench.
 - **~1,200+ interactive UI controls** (sliders, dropdowns, toggles, number inputs, tabs)
 - **~30,000+ lines of TypeScript/React** across all components
 - **Zero external computation dependencies** — all algorithms run in browser JavaScript
