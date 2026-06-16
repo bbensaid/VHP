@@ -54,7 +54,7 @@ Six pillars in the top navigation: Policy, Economics, Technology, Clinical, Equi
 
 *(Screen: Flash to `/research-lab` briefly)*
 
-The Research Lab — 21 modeling tools for everything from APM design to Medicaid eligibility.
+The Research Lab — 24 modeling tools for everything from APM design to Medicaid eligibility.
 
 *(Screen: Flash to `/academy` briefly)*
 

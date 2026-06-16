@@ -45,7 +45,7 @@ Located in: `training/feature-guides/`
 | File | Feature | Contents |
 |------|---------|----------|
 | `ai-analyst-guide.md` | AI Analyst | Access modes, what to ask, role personalization, tips, voice mode, shortcuts |
-| `research-lab-guide.md` | Research Lab | All 21 tools with descriptions, standalone tools, usage tips |
+| `research-lab-guide.md` | Research Lab | All 24 tools with descriptions, standalone tools, usage tips |
 | `voice-guide.md` | Voice Interface | Browser support, activation, commands, TTS, troubleshooting |
 | `academy-guide.md` | HTR Academy | All 8 sections, progress tracking, access levels |
 

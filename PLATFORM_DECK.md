@@ -752,7 +752,7 @@ We don't build features unless they:
 - Open `/about/framework` to see the Six-Pillar Map in motion
 - Open `/htr-simulator` and score yourself in 30 minutes
 - Open `/the-wire` to see what just happened today
-- Open `/research-lab` to browse all 21 tools
+- Open `/research-lab` to browse all 24 tools
 - Or just open the AI Analyst (`⌘K` or the right sidebar) and ask anything
 
 ---
