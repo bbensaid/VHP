@@ -1713,6 +1713,7 @@ Chapter 4's data-infrastructure argument is best understood by building on the a
 | Build FHIR R4 resources and map terminology across ICD-10, SNOMED, LOINC, RxNorm | **FHIR Interoperability Lab** — `/research-lab/interoperability?tab=fhir` | How a working data exchange differs from a data asset that merely "exists." |
 | Stratify a population by CMS-HCC risk and see the attribution that global budgets require | **Risk Stratification Engine** — `/research-lab/interoperability?tab=risk` | Why technology must precede economics: you cannot manage a budget for a population you cannot see. |
 | Compare EHR vendors, model adoption cost and 5-year ROI, and audit a record's USCDI data quality | **EMR/EHR Lab** — `/research-lab/interoperability?tab=emr` | Why "buying an EHR" is a financial and data-quality decision, not just a software purchase — and where the documentation burden comes from. |
+| Weigh a single statewide EHR against FHIR interoperability across Vermont's existing platforms | **Statewide EHR Deployment Modeler** — `/research-lab/interoperability?tab=statewide-ehr` | The Act 167 feasibility question: whether FHIR can deliver the data sharing without the cost and disruption of a statewide migration. |
 
 *Figure 4.H — Hands-on platform tools for the Technology Pillar.*
 
@@ -3847,6 +3848,8 @@ Chapter 11's operations argument — administrative cost, workforce, execution �
 | :---- | :---- | :---- |
 | Track six-pillar transformation status against baseline and target | **Transformation Scorecard** — `/research-lab/knowledge-workspace?tab=scorecard` | Whether operational capacity is keeping pace with the statutory execution timeline. |
 | Project physician and nurse supply/demand and the cost of turnover | **Workforce Modeler** — `/research-lab/knowledge-workspace?tab=workforce` | The workforce gap that the $1,303 per-discharge administrative-cost gap must fund closing. |
+| Model the RHT-funded CIN's shared services against the $1,303/discharge administrative premium | **CIN & Shared Services Modeler** — `/research-lab/knowledge-workspace?tab=cin` | Where consolidating billing, coding, credentialing, HR, and IT across the 14 hospitals reaches the scale that pays for itself. |
+| Model regionalizing Vermont's 31 EMS agencies and community-paramedicine ED diversion | **EMS Transformation Modeler** — `/research-lab/knowledge-workspace?tab=ems` | How treat-and-refer and regionalization convert fragmentation into margin under global budgets. |
 
 *Figure 11.H — Hands-on platform tools for the Operations Pillar.*
 
@@ -4060,7 +4063,7 @@ The advisory practice described in this chapter is grounded in a specific theory
 ### **The HTR Platform — Four Components**
 
 - THE WIRE — Real-time intelligence at healthtransformationreview.org/the-wire across all six pillars. Convergence Newsletter (free weekly) for Observer subscribers.
-- RESEARCH LAB — 19 interactive tools at healthtransformationreview.org/research-lab. FHIR Lab, APM Design Lab, Health Equity Studio, Policy Simulator, and more.
+- RESEARCH LAB — 24 interactive tools at healthtransformationreview.org/research-lab. FHIR Lab, EMR/EHR Lab, Statewide EHR Modeler, APM Design Lab, Health Equity Studio, Policy Simulator, CIN & Shared Services Modeler, EMS Transformation Modeler, and more.
 - HTR ACADEMY — Structured curriculum at healthtransformationreview.org/academy. Foundation and advanced courses in APM mechanics, HEDIS, and transformation leadership.
 - ADVISORY SERVICES — Strategic consulting, research, health IT, independent review, capability assessment, financial audit, regulatory navigation, and training. Contact: advisory@healthtransformationreview.org
 
@@ -5317,7 +5320,7 @@ The Academy is the structured learning center, organized around the same archite
 
 ## **The Research Lab**
 
-The Research Lab is a suite of 19 interactive analytical tools organized into the same six-pillar structure — working environments for modeling, analysis, and scenario planning rather than reference tools. They span Interoperability & Risk (FHIR Interoperability Lab, Risk Stratification Engine); Payment Models & VBC (APM Design Lab, APM Shared Savings Calculator, Population Health Modeler); Policy & Quality Sciences (Policy Simulator, Hospital Financial Scorecard, Actuarial Lab, Clinical Quality Optimizer); Population & Equity (Health Equity Studio/HEROI); Technology & AI (HTA Studio, AI Analytics Lab, Digital Health Lab); and Knowledge & Workspace (Evidence Library, Workforce Modeler, Research Workspace, Innovation Leaderboard, VBC Readiness Assessment). Full tool specifications are in Appendix E.
+The Research Lab is a suite of 24 interactive analytical tools organized into the same six-pillar structure — working environments for modeling, analysis, and scenario planning rather than reference tools. They span Interoperability & Risk (FHIR Interoperability Lab, Risk Stratification Engine, EMR/EHR Lab, Statewide EHR Deployment Modeler); Payment Models & VBC (APM Design Lab, APM Shared Savings Calculator, Population Health Modeler); Policy & Quality Sciences (Policy Simulator, Hospital Financial Scorecard, Actuarial Lab, Clinical Quality Optimizer); Population & Equity (Health Equity Studio/HEROI); Technology & AI (HTA Studio, AI Analytics Lab, Digital Health Lab); and Knowledge & Workspace (Evidence Library, Workforce Modeler, Research Workspace, Innovation Leaderboard, VBC Readiness Assessment, CIN & Shared Services Modeler, EMS Transformation Modeler). Full tool specifications are in Appendix E.
 
 ## **States & Programs**
 
