@@ -4,12 +4,12 @@ import { PortableText, PortableTextComponents } from "next-sanity";
 import type { PortableTextMarkComponentProps, PortableTextBlock } from "@portabletext/react";
 import Image from "next/image";
 import { client } from "@/sanity/lib/client";
-import imageUrlBuilder from "@sanity/image-url";
+import { createImageUrlBuilder } from "@sanity/image-url";
 import { getImageDimensions } from "@sanity/asset-utils";
 import VideoBlock from "@/components/VideoBlock";
 import AudioBlock from "@/components/AudioBlock";
 
-const builder = imageUrlBuilder(client);
+const builder = createImageUrlBuilder(client);
 function urlFor(source: Parameters<typeof builder.image>[0]) {
   return builder.image(source);
 }

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "@/lib/sanity";
-import imageUrlBuilder from "@sanity/image-url";
+import { createImageUrlBuilder } from "@sanity/image-url";
 import { getMoreArticles } from "@/app/actions";
 import VideoBlock from "@/components/VideoBlock";
 import {
@@ -20,7 +20,7 @@ import {
   ClockIcon,
 } from "@heroicons/react/24/outline";
 
-const builder = imageUrlBuilder(client);
+const builder = createImageUrlBuilder(client);
 function urlFor(source: { asset: { _ref: string } } | null | undefined) {
   return builder.image(source as Parameters<typeof builder.image>[0]);
 }
