@@ -103,12 +103,12 @@ const BYPASS_AUTH = process.env.ALLOW_AUTH_BYPASS === "true";
 
 if (BYPASS_AUTH && process.env.NODE_ENV === "production") {
   console.warn(
-    "[middleware] ⚠️ ALLOW_AUTH_BYPASS=true in PRODUCTION — role-gated routes are open. " +
+    "[proxy] ⚠️ ALLOW_AUTH_BYPASS=true in PRODUCTION — role-gated routes are open. " +
     "Unset this env var when leaving beta."
   );
 }
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // ── Beta gate — block all page navigation until access code entered ──────────
