@@ -62,6 +62,20 @@ const nextConfig: NextConfig = {
     styledComponents: true,
   },
 
+  // The /read/[slug] route reads small narration *.txt files from public/ at
+  // runtime. Next's file-tracer would otherwise pull the entire public/
+  // directory — including ~280MB of *.m4a narration audio — into that route's
+  // serverless function, blowing past Vercel's 300MB function limit. The audio
+  // is served as a static CDN asset and is never needed inside the function, so
+  // exclude all large media (and the book PDFs) from output file tracing.
+  outputFileTracingExcludes: {
+    "**": [
+      "./public/audio/**/*.m4a",
+      "./public/audio/**/*.mp3",
+      "./public/**/*.pdf",
+    ],
+  },
+
   // Remote hosts allowed for next/image optimization.
   // Kept in sync with the CSP img-src allowlist above.
   images: {
