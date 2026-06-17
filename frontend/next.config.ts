@@ -62,6 +62,14 @@ const nextConfig: NextConfig = {
     styledComponents: true,
   },
 
+  // Pin the workspace root to this app directory. Stray package-lock.json files
+  // exist higher up (~/ and the repo root), so Next would otherwise infer the
+  // wrong root and emit a "multiple lockfiles" warning. __dirname is the
+  // frontend/ directory where this config lives.
+  turbopack: {
+    root: __dirname,
+  },
+
   // The /read/[slug] route reads small narration *.txt files from public/ at
   // runtime. Next's file-tracer would otherwise pull the entire public/
   // directory — including ~280MB of *.m4a narration audio — into that route's
