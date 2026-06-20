@@ -292,72 +292,186 @@ The canonical in-app usage guide — who each tool is for, when to use it, one p
 
 ## 14. The Research Lab — Tool-by-Tool Walkthroughs
 
-This section walks each tool's purpose, inputs, and outputs. (Tools sharing a bench are grouped.)
+This section documents each tool in depth: who it is for, when to use it, the inputs it takes, the outputs it produces, and the methodology behind it. Tools are grouped by bench. Every tool is a self-contained client-side model; all figures are illustrative planning outputs, not live or audited data.
 
-### Interoperability & Risk
+### Bench 1 — Interoperability & Risk
 
-**FHIR Interoperability Lab** — *for health IT professionals and clinical informaticists.*
-Build and validate FHIR R4 resources, map clinical terminologies across ICD-10/SNOMED/LOINC/RxNorm, test CDS Hooks, simulate the CMS prior-authorization workflow, and check ONC compliance. *Use it when* planning a Patient Access or Provider Directory API, or testing FHIR resource design. *Outputs:* spec-compliant FHIR JSON, terminology mappings, compliance checkpoints.
+#### FHIR Interoperability Lab — `?tab=fhir`
+**For:** health IT professionals, clinical informaticists, integration engineers.
+**When:** planning a Patient Access or Provider Directory API, testing FHIR R4 resource design, mapping terminologies, or preparing for an ONC information-blocking review.
+**Inputs:** resource type and parameters; terminology terms to map; a CDS Hooks scenario; a prior-authorization case.
+**Outputs:** spec-compliant FHIR R4 JSON (with generated UUIDs, `meta.profile`, narrative), cross-terminology mappings (ICD-10 ↔ SNOMED ↔ LOINC ↔ RxNorm), a simulated CDS Hooks exchange, a CMS prior-auth workflow trace, and an ONC compliance checklist.
+**Methodology:** the builder generates genuine R4 structures; terminology mappings draw on standard code systems. **Power tip:** start from the rule or use case, not the resource — the lab walks you to the relevant resources and checkpoints.
 
-**Risk Stratification Engine** — *for population-health managers and data scientists.*
-Apply HCC v28 RAF scoring, segment a population into risk tiers, build custom risk models, and analyze comorbidity interactions (Elixhauser, Charlson). *Use it when* building a risk-stratified care-management program or validating HCC scores. *Outputs:* RAF scores, tier distribution, comorbidity analysis.
+#### Risk Stratification Engine — `?tab=risk`
+**For:** population-health managers, data scientists, care-management leaders.
+**When:** building a risk-stratified care-management program, validating HCC scores, or designing the data inputs for a predictive model.
+**Inputs:** a population's diagnosis profile; the risk model to apply; comorbidity selections.
+**Outputs:** HCC v28 RAF scores, a risk-tier segmentation, custom-model results, and comorbidity-interaction analysis using Elixhauser and Charlson indices.
+**Methodology:** HCC v28 RAF logic with standard comorbidity indices. **Power tip:** run the RAF module first to understand the population's risk profile before designing interventions.
 
-**EMR/EHR Lab** — *for CMIOs, health-IT leaders, and hospital finance.* An integrated four-mode tool driven by one vendor selection:
-- *Vendor Comparison* — weight interoperability, usability, cost, and ambulatory fit; rank Epic, Oracle Health, MEDITECH, athenahealth.
-- *Adoption & Cost* — model implementation cost, go-live productivity dip, and a 5-year cost/benefit table with break-even, using the selected vendor's cost profile.
-- *Data Quality* — audit a mock record against the ten USCDI classes, seeded by the vendor's interoperability score.
-- *Workflow Simulator* — model a clinician's daily EHR burden by vendor and patient panel; toggle interventions (scribes, ambient AI, templates, team-based care) against the ~360 min/day national benchmark.
+#### EMR/EHR Lab — `?tab=emr`
+**For:** CMIOs, health-IT leaders, hospital finance teams.
+**When:** selecting an EHR, building the adoption business case, auditing data quality, or quantifying documentation burden.
+**Structure:** an integrated four-mode tool driven by one vendor selection — choose a vendor and that choice flows through every mode.
+- *Vendor Comparison* (`&mode=vendors`): weight interoperability, usability, cost, and ambulatory fit; rank Epic, Oracle Health, MEDITECH, athenahealth, with public market-share context.
+- *Adoption & Cost* (`&mode=cost`): inputs — providers, timeline, hosting model, clinical revenue/provider. Outputs — implementation capex, annual license, go-live productivity loss, a 5-year cost/benefit table, and a break-even year.
+- *Data Quality* (`&mode=quality`): audits a mock record against the ten USCDI classes, seeded by the selected vendor's interoperability score.
+- *Workflow Simulator* (`&mode=workflow`): models a clinician's daily EHR minutes by vendor and panel; toggle scribes, ambient AI, templates, and team-based care against the ~360 min/day national benchmark.
+**Power tip:** the whole tool reflects one vendor end-to-end — change the vendor and re-read all four modes to compare options. See the full worked example in §41.1.
 
-**Statewide EHR Deployment Modeler** — *the Act 167 / Oliver Wyman feasibility question.* Model a single statewide EHR versus FHIR interoperability across the existing platforms, scored on 10-year total cost, data timeliness, migration disruption, and vendor lock-in. *Outputs:* side-by-side path comparison and a verdict on whether FHIR makes a statewide migration unnecessary.
+#### Statewide EHR Deployment Modeler — `?tab=statewide-ehr`
+**For:** state health officials, CMIOs, policy analysts (the Act 167 / Oliver Wyman feasibility question).
+**When:** weighing a single statewide EHR against FHIR interoperability across existing platforms.
+**Inputs:** participating hospitals; per-hospital migration vs. integration costs; data-timeliness and disruption assumptions.
+**Outputs:** two paths side by side — *single statewide EHR* vs. *FHIR interoperability* — each scored on 10-year total cost, data timeliness, migration disruption, and vendor lock-in, with a verdict.
+**Methodology:** a structured cost/benefit comparison anchored to Vermont's feasibility-assessment framing. **Power tip:** the central question is whether FHIR delivers acceptable real-time exchange; if it does, the case for a disruptive migration weakens.
 
-### Payment Models & VBC
+### Bench 2 — Payment Models & VBC
 
-**APM Design Lab** — design alternative payment models from scratch (episode bundles, global budgets), with benchmark waterfalls and natural-language model recommendations.
-**Shared Savings Calculator** — project shared savings/losses under MSSP, ACO REACH, or custom global budgets, with risk corridors and quality withholds.
-**CEA Calculator** — cost per QALY, NNT, and break-even for any intervention, compared against ICER/NICE/CMS willingness-to-pay thresholds.
-**Global Budget Transition Modeler** — model a state's transition from fee-for-service to a global hospital budget.
+#### APM Design Lab — `?tab=apm-design`
+**For:** health economists, payment-model consultants, payers, hospital finance.
+**When:** designing a new APM, evaluating a structure, or preparing a CMMI application.
+**Inputs:** model type, risk arrangement, benchmark parameters.
+**Outputs:** episode bundles, global-budget structures, benchmark waterfall charts, and natural-language model recommendations. **Power tip:** start with model type, then configure the risk arrangement; use the recommendation engine if unsure.
 
-### Policy & Quality Sciences
+#### APM Shared Savings Calculator — `?tab=apm-calc`
+**For:** ACO finance teams, actuaries.
+**When:** projecting shared savings/losses under MSSP, ACO REACH, or a custom global budget.
+**Inputs:** benchmark methodology, spending, risk-corridor and quality-withhold parameters.
+**Outputs:** projected savings/losses, risk-corridor effects, quality-withhold impact.
 
-**Policy Simulator** — model 1115 waiver types across state scenarios, design Vermont-style global budgets, and analyze price-transparency policy.
-**Clinical Quality Optimizer** — simulate HEDIS measures with NCQA benchmarks, predict CMS Star Ratings, optimize MIPS, and calculate pay-for-performance ROI.
-**Hospital Financial Stress Test** — stress-test hospital financials against payer-mix shifts, Medicaid rate cuts, and volume changes, benchmarked against CAH/Rural-PPS/Urban-Tertiary peers; 10-year projection.
-**HTA Studio** — budget-impact models, multi-criteria decision analysis, and real Monte Carlo probabilistic sensitivity analysis (1,000 iterations).
-**Actuarial Lab** — ACA actuarial value, premium development, adverse-selection modeling, IRA drug-pricing impacts.
-**Work Requirements Calculator** — Medicaid coverage loss from work-requirement and eligibility provisions, including administrative-churn effects.
-**H.R. 1 Cliff Scenario** — the financial cliff for states and providers under H.R. 1 Medicaid changes.
+#### CEA Calculator — `?tab=cea`
+**For:** health economists, HTA analysts.
+**When:** assessing an intervention's value.
+**Inputs:** cost and effectiveness estimates, time horizon, willingness-to-pay threshold.
+**Outputs:** cost per QALY, NNT, break-even timeline, and comparison against ICER/NICE/CMS thresholds.
 
-### Population & Equity
+#### Global Budget Transition Modeler — `?tab=gb-transition`
+**For:** hospital finance, state regulators.
+**When:** modeling a move from fee-for-service to a global hospital budget.
+**Inputs:** baseline volumes/revenue, transition timeline, population.
+**Outputs:** a multi-year transition trajectory and the financial inflection points.
 
-**Population Health Modeler** — Markov disease-progression models, SIR epidemic dynamics, preventable-hospitalization modeling, intervention ROI.
-**Health Equity Studio** — disparity analysis across outcomes by race/income/geography, SDOH burden scoring, and the HEROI equity-weighted ICER metric.
+### Bench 3 — Policy & Quality Sciences
 
-### Technology & AI
+#### Policy Simulator — `?tab=policy`
+**For:** policy analysts, government officials.
+**When:** modeling 1115 waivers, global-budget designs, Medicaid expansion, or price-transparency policy.
+**Inputs:** waiver type, state scenario, policy levers.
+**Outputs:** modeled impact on utilization, cost, and coverage against pre-loaded state scenarios.
 
-**AI Clinical Governance Lab** — compare predictive-model performance, detect algorithmic bias (demographic parity, equal opportunity), build governance frameworks, and calculate AI ROI.
-**Digital Health Lab** — RPM ROI using CMS CPT codes (99453–99458), telehealth utilization scenarios, patient-engagement comparisons, EHR-interoperability optimization.
+#### Clinical Quality Optimizer — `?tab=quality`
+**For:** quality officers, VBC teams.
+**Inputs:** measure selections, current performance, target.
+**Outputs:** HEDIS simulation with NCQA benchmarks, CMS Star prediction, MIPS optimization, P4P ROI.
 
-### VBC, Clinical & Quality
+#### Hospital Financial Stress Test — `?tab=scorecard`
+**For:** hospital CFOs, boards, state regulators.
+**When:** stress-testing financials against payer-mix shifts, Medicaid rate cuts, and volume changes.
+**Inputs:** peer archetype (CAH, Rural PPS, Urban Tertiary), stressors.
+**Outputs:** a 10-year margin trajectory. See worked example §41.6.
 
-**Clinical Data Exchange Lab** — annotated HL7 v2 messages (ADT/ORU), FHIR R4 bundles, an HL7↔FHIR bridge, and a USCDI v3 browser, anchored to eight Vermont patient scenarios.
-**Risk Stratification Methodology** — step-by-step HCC v28 RAF calculation, a population-tier pyramid, and comparison of ACG/CDPS/Charlson algorithms.
-**VBC Quality Measures** — HEDIS measures with numerator/denominator logic, CMS RSRR readmission analysis, AHRQ PQI avoidable-ED classification.
-**High vs. Low Value Care** — A1C/BP panel management with shared-savings math, a Choosing Wisely low-value-care scan, and total-cost-of-care decomposition.
+#### HTA Studio — `?tab=hta`
+**For:** HTA analysts, coverage decision-makers.
+**Outputs:** budget-impact models, multi-criteria decision analysis (8 criteria), and real Monte Carlo probabilistic sensitivity analysis (1,000 iterations across Beta/Log-normal/Gamma distributions).
 
-### Knowledge & Workspace
+#### Actuarial Lab — `?tab=actuarial`
+**For:** actuaries, plan finance.
+**Outputs:** ACA actuarial value, premium development (3 methodologies), adverse-selection ("death spiral") modeling, IRA drug-pricing impact.
 
-**Transformation Scorecard** — score an organization across all six pillars with Vermont AHEAD milestones integrated.
-**VBC Readiness Assessment** — a 30-dimension, 6-domain readiness score with prioritized gap analysis and presets (Vermont AHEAD, CAH, advanced system).
-**Evidence Library** — searchable library of landmark CEA/CUA studies, CMMI models with lessons learned, and HTR policy briefs.
-**Workforce Modeler** — physician/nurse supply-demand projections across specialties, staffing-ratio impacts, turnover costs, rural-incentive modeling.
-**Innovation Leaderboard** — rank states, health systems, and payers on transformation/VBC-maturity indices.
-**Research Workspace** — save and compare scenarios, build reports from templates, manage citations, export findings.
-**CIN & Shared Services Modeler** *(Vermont RHT)* — model the RHT-funded Clinically Integrated Network: shared billing/coding/credentialing/HR/IT and group purchasing across the 14 hospitals against the ~$1,303/discharge administrative cost premium, with break-even.
-**EMS Transformation Modeler** *(Vermont RHT)* — model regionalizing Vermont's 31 EMS agencies and community-paramedicine treat-and-refer ED diversion, with the global-budget margin impact of prevented ED visits and admissions.
+#### Work Requirements Calculator — `?tab=medicaid-wr`
+**For:** policy analysts, Medicaid officials.
+**Outputs:** enrollment/disenrollment under work-requirement policies, including the gap between nominal exemptions and real-world coverage loss from administrative churn.
+
+#### H.R. 1 Cliff Scenario — `?tab=hr1-cliff`
+**For:** state budget officials, hospital finance.
+**Outputs:** the financial cliff for states and providers under H.R. 1 Medicaid provisions.
+
+### Bench 4 — Population & Equity
+
+#### Population Health Modeler — `?tab=population`
+**For:** population-health managers, public-health researchers.
+**Outputs:** Markov disease-progression models (5 conditions), SIR epidemic dynamics, preventable-hospitalization modeling, intervention ROI.
+
+#### Health Equity Studio — `?tab=equity`
+**For:** equity officers, public-health researchers.
+**Outputs:** disparity analysis across 10 outcomes by race/ethnicity/income/geography, geographic-access mapping, SDOH burden scoring, and the HEROI equity-weighted ICER.
+
+### Bench 5 — Technology & AI
+
+#### AI Clinical Governance Lab — `?tab=ai`
+**For:** AI governance leads, clinical informaticists.
+**When:** building an AI governance framework, evaluating a clinical AI tool, or preparing for FDA SaMD / ONC HTI review.
+**Outputs:** model-performance comparison, bias detection (demographic parity, equal opportunity), governance frameworks, AI ROI.
+
+#### Digital Health Lab — `?tab=digital`
+**For:** digital-health product teams, investors.
+**Outputs:** RPM ROI using CMS CPT codes (99453–99458), telehealth-utilization scenarios, patient-engagement platform comparison, EHR-interoperability optimization.
+
+### Bench 6 — VBC, Clinical & Quality
+
+#### Clinical Data Exchange Lab — `?tab=hl7`
+**For:** integration engineers, informaticists.
+**Outputs:** annotated HL7 v2 messages (ADT/ORU), FHIR R4 bundles, an HL7↔FHIR side-by-side bridge, and a USCDI v3 browser — anchored to 8 Vermont patient scenarios.
+
+#### Risk Stratification Methodology — `?tab=risk`
+**For:** data scientists, actuaries.
+**Outputs:** step-by-step HCC v28 RAF calculation, a population-tier pyramid, and comparison of ACG, CDPS, and Charlson algorithms.
+
+#### VBC Quality Measures — `?tab=quality`
+**For:** quality teams.
+**Outputs:** HEDIS measures with numerator/denominator logic, 30-day readmission analysis (CMS RSRR), AHRQ Prevention Quality Indicator avoidable-ED classification.
+
+#### High vs. Low Value Care — `?tab=value`
+**For:** clinical leaders, VBC teams.
+**Outputs:** A1C/BP panel management with shared-savings math, a Choosing Wisely low-value-care scan, and total-cost-of-care decomposition by service category.
+
+### Bench 7 — Knowledge & Workspace
+
+#### Transformation Scorecard — `?tab=scorecard`
+**For:** executives.
+**Outputs:** a six-pillar executive scorecard with Vermont AHEAD statutory milestones integrated.
+
+#### VBC Readiness Assessment — `?tab=readiness`
+**For:** transformation leaders.
+**Outputs:** a 30-dimension, 6-domain readiness score with prioritized gap analysis; presets for Vermont AHEAD, CAH, and advanced systems.
+
+#### Evidence Library — `?tab=evidence`
+**For:** researchers, all users.
+**Outputs:** searchable landmark CEA/CUA studies, CMMI models with lessons learned, and HTR policy briefs.
+
+#### Workforce Modeler — `?tab=workforce`
+**For:** workforce planners, operations.
+**Outputs:** physician/nurse supply-demand projections across specialties over 10 years, staffing-ratio impacts, turnover costs, rural-incentive modeling.
+
+#### Innovation Leaderboard — `?tab=leaderboard`
+**For:** benchmarking, strategy.
+**Outputs:** rankings of states, health systems, and payers on transformation and VBC-maturity indices.
+
+#### Research Workspace — `?tab=workspace`
+**For:** all users running extended analyses.
+**Outputs:** saved/compared scenarios, structured reports from templates, citation management (AMA/APA), and Markdown/text export.
+
+#### CIN & Shared Services Modeler — `?tab=cin` *(Vermont RHT)*
+**For:** hospital finance, system operators.
+**Inputs:** hospitals, discharges, the administrative cost premium (~$1,303/discharge), shared-service domains, group-purchasing volume.
+**Outputs:** annual admin savings, group-purchasing savings, CIN setup/operating cost, and break-even in months. See worked example §41.3.
+
+#### EMS Transformation Modeler — `?tab=ems` *(Vermont RHT)*
+**For:** EMS planners, state operations.
+**Inputs:** EMS agencies (31), target regions, 911 volume, non-emergent share, community-paramedicine reach.
+**Outputs:** ED visits diverted, admissions prevented, regionalization savings, program cost, net annual impact. See worked example §41.4.
 
 ### Top-level simulators (not on a bench)
 
-**HTR Simulator** (`/htr-simulator`) — score an org or state across all six pillars and watch the dependency cascade. **Transformation Friction Index** (`/transformation-friction-index`) — find the binding-constraint pillar. **Impact Simulation** (`/impact-simulation`). **HTI Dashboard** (`/hti-dashboard`). **Investment Tracker** (`/investment-tracker`). **Medicaid Eligibility Simulator** (`/medicaid-eligibility-simulator`).
+These are standalone routes, not Research Lab tabs:
+- **HTR Simulator** (`/htr-simulator`) — score an organization or state across all six pillars and watch the dependency cascade (worked example §41.5).
+- **Transformation Friction Index** (`/transformation-friction-index`) — identify the binding-constraint pillar.
+- **Impact Simulation** (`/impact-simulation`) — model intervention impact.
+- **HTI Dashboard** (`/hti-dashboard`) — the composite Health Transformation Index.
+- **Investment Tracker** (`/investment-tracker`) — capital flows and digital-health funding.
+- **Medicaid Eligibility Simulator** (`/medicaid-eligibility-simulator`) — eligibility scenarios.
 
 ## 15. The AI Analyst
 
@@ -381,6 +495,10 @@ The AI Analyst is a retrieval-augmented assistant, available as a right-sidebar 
 - **HTR Simulator** (`/htr-simulator`) — the flagship six-pillar dependency simulator.
 - **State comparisons & spotlights** — `/compare-states`, `/states/[state]`, plus dedicated Vermont, Oregon CCO, and California CalAIM pages.
 - **The Wire** (`/the-wire`) — a daily, RSS-driven intelligence feed across all six pillars, with reader comments.
+
+**Detail — how a free visitor experiences the platform.** Without an account, a visitor can read every pillar hub, browse the book at `/book`, read The Wire, see pricing, and use the AI Analyst widget in a limited capacity. This is the public "front door" and is what most launch traffic will see. The conversion path is deliberate: a free visitor exploring a pillar hub encounters "From the Book" callouts and tool links; clicking a gated tool (e.g., the full AI chat) routes them to `/upgrade` with their intended destination preserved, so signing up returns them to where they were.
+
+**Personalization for signed-in users.** Setting a role at `/welcome` tunes the AI Analyst's framing, the getting-started guide shown, and which content is surfaced first. A clinician sees clinical-pillar entry points; a CFO sees economics and operations. The role is stored on the account and can be changed at any time.
 
 ## 17. Accounts, Roles, and Subscriptions
 
@@ -407,6 +525,10 @@ The platform has a tiered access model enforced at the edge by the proxy (see §
 ---
 
 # PART IV — THE ACADEMY
+
+**The Wire in depth.** The Wire (`/the-wire`) is a continuously updated intelligence feed assembled from external RSS sources across all six pillars. Headlines are de-duplicated and HTML-decoded; each item is categorized by pillar so a reader can filter to, say, only Technology or only Policy news. Registered users can comment on items (threaded, with comment counts), making The Wire both a news surface and a light community layer. Operationally, the feed is cached (with a cache-bypass option for forced refresh) and surfaced via `/api/wire`.
+
+**Dashboards in depth.** The 50-State Dashboard is the platform's comparative-evidence engine. At the national level it ranks states; drilling into `/dashboard/[state]` shows that state's transformation profile; drilling further into `/dashboard/[state]/hospitals/[hospital]` shows hospital-level financial and performance data. Vermont has a dedicated drill-down (`/dashboard/vermont/hospitals`) because it is the teaching case. The HTI Dashboard expresses the same data as a single composite index for quick cross-state comparison.
 
 ## 19. Structure: Courses, Tracks, Lessons
 
@@ -435,6 +557,10 @@ The Academy (`/academy`) is HTR's executive-education layer, built on a three-le
 
 Many lessons include **"Apply It in the [Tool]"** callouts that deep-link to the matching Research Lab tool and mode — turning a concept into hands-on modeling. For example, lessons in the *EHR Systems & Integration* track link to the EMR/EHR Lab's vendor, workflow, and data-quality modes, and a dedicated EHR business-case lesson links to its cost mode.
 
+**A typical learner journey.** A new learner lands on `/academy`, picks a course aligned to their role (e.g., a CMIO chooses *Healthcare Interoperability & Data Exchange*), and works through its tracks in order. Within a track, lessons build on one another; many lessons end with an "Apply It" callout that opens the matching Research Lab tool so the learner immediately practices the concept. Progress is saved to the account and visible at `/account/courses`. On finishing a course, the learner receives a certificate (§22).
+
+**Case studies and webinars** complement the structured courses: case studies (`/academy/case-studies`) work through real transformation scenarios, and webinars (`/academy/webinars`) provide recorded deep-dives. The glossary (`/academy/glossary`, plus a Medicaid-specific glossary) is a standing reference a learner can consult from any lesson.
+
 ## 21. Getting Started and Learning Paths
 
 - **`/academy/getting-started`** — the onboarding hub. The recommended first session: (1) set your role at `/welcome`; (2) ask the AI Analyst your real question; (3) read your role guide; (4) explore the Research Lab; (5) bookmark your key tools. Includes role-specific quick-starts for executives, policy analysts, clinicians, economists, health-tech professionals, compliance officers, researchers, and investors.
@@ -449,6 +575,8 @@ The Academy tracks course completion and issues certificates (`/api/academy/cert
 ---
 
 # PART V — TECHNICAL ARCHITECTURE
+
+**A note on personalization and learning paths under the hood.** The personalized-learning feature (`/academy/personalized-learning`, backed by `/api/personalized-learning`) assembles a recommended lesson sequence for a learner based on their role and goals, and can validate the platform links it generates against the live Sanity catalog so it never points a learner at a missing module. An audio companion (`/api/personalized-learning/audio`) can narrate the path. This is the most "AI-adjacent" Academy feature and shares the backend's content awareness.
 
 ## 23. System Overview
 
@@ -687,6 +815,8 @@ The AI Analyst's knowledge has two maintainable parts:
 ---
 
 # PART VIII — LAUNCH
+
+**Why this matters more in a paused-development posture.** Once active development stops, the platform becomes a static target: no one is watching the build daily, and the most likely sources of breakage are (a) external dependency CVEs, (b) expiring credentials/API keys (Stripe, Sanity token, LLM keys), and (c) drift between the running backend index and the content. The maintenance cadence in §32 is therefore not optional even in maintenance mode — it is the difference between a system that ages gracefully and one that silently degrades. Assign an owner for the monthly security review and the quarterly credential check before stepping away.
 
 ## 38. Pre-Launch Checklist
 
@@ -944,3 +1074,110 @@ Relationships: `courses 1—* tracks 1—* lessons`. Every level carries `pillar
 ---
 
 *End of extended reference. Combined with Parts I–VIII, this guide is the complete user, technical, and operational manual for the HTR ecosystem.*
+
+## Appendix F — Frequently Asked Questions
+
+**General**
+
+*What is the difference between HTR and HTS?* Health Transformation Review (HTR) is the knowledge/analytical brand; Health Transformation Solutions (HTS) is the advisory-services brand. The platform supports both and resolves the displayed brand by host.
+
+*Do I need an account to use HTR?* No. The book browser, pillar hubs, The Wire, and a limited AI Analyst are public. An account (and a subscription for higher tiers) unlocks the full AI chat, dashboards, and the advisory hub.
+
+*Is my data safe in the Research Lab tools?* Yes. Every Research Lab tool runs entirely in your browser using only the inputs you type. No data is uploaded, and there is no PHI handling — the tools use mock or user-provided figures only.
+
+*Are the tool outputs real predictions?* No. Every tool is an illustrative planning model with clearly labeled assumptions, intended to teach trade-offs and support scenario planning — not to produce audited forecasts or vendor quotes.
+
+**The Book**
+
+*Is the book free?* The book is integrated into the platform and readable there; distribution terms are set by the owner.
+
+*Can I listen instead of read?* Yes — every chapter has audio narration at `/book/listen` and transcripts in the reader.
+
+*How does the book connect to the tools?* Each pillar chapter ends with a "Work This Chapter on the Platform" table linking to the specific tools that let you model the chapter's argument; Appendix E lists all tools.
+
+**The Platform**
+
+*Which tool should I use for X?* Ask the AI Analyst — it maps questions to tools. Or consult the in-app guide at `/academy/getting-started/research-lab`.
+
+*Can I save my work?* Bookmark any page/tool to My Library (`/saved`); use the Research Workspace to save and compare analysis scenarios and export findings.
+
+*Why can't I access the AI chat / a dashboard?* Those are gated to subscribers and above. Upgrade at `/upgrade`.
+
+**The Academy**
+
+*How is the Academy different from the book?* The book is the argument; the Academy is structured, lesson-by-lesson instruction with hands-on tool practice and credentials.
+
+*Do I get a certificate?* Yes — completing a course issues a certificate, verifiable at `/verify/[hash]`.
+
+**Billing**
+
+*How do subscriptions work?* Via Stripe — monthly or yearly, per tier (subscriber, student, professional, team). Manage billing in the customer portal under `/account/billing`.
+
+*What happens if my payment fails?* A lifecycle email is sent; access reverts according to subscription status synced from Stripe.
+
+## Appendix G — Book Chapter ↔ Platform Tool Cross-Reference
+
+This table summarizes which Research Lab tools each pillar chapter's "Work This Chapter on the Platform" section links to. (The authoritative mapping lives in `chapters.ts`; this is a reading aid.)
+
+| Chapter (pillar) | Primary linked tools |
+|---|---|
+| Ch 1 — Framework & Execution Sequence | HTR Simulator; Transformation Friction Index |
+| Ch 2–3 — Policy | Policy Simulator; Work Requirements Calculator; H.R. 1 Cliff Scenario |
+| Ch 4 — Technology (Data Infrastructure) | FHIR Interoperability Lab; Risk Stratification Engine; EMR/EHR Lab; Statewide EHR Deployment Modeler |
+| Ch 5 — Technology in Practice | Clinical Data Exchange Lab; AI Clinical Governance Lab; Digital Health Lab |
+| Ch 6–7 — Economics | APM Design Lab; Shared Savings Calculator; Global Budget Transition Modeler; Hospital Financial Stress Test; CEA Calculator |
+| Ch 8–9 — Clinical | Risk Stratification Engine/Methodology; VBC Quality Measures; High vs. Low Value Care; Clinical Quality Optimizer |
+| Ch 10 — Equity | Health Equity Studio; Population Health Modeler |
+| Ch 11 — Operations | Transformation Scorecard; Workforce Modeler; CIN & Shared Services Modeler; EMS Transformation Modeler |
+| Ch 12–16 — Knowledge transfer, future, sustainability, portfolio, AHS | Innovation Leaderboard; VBC Readiness Assessment; Evidence Library; HTI Dashboard |
+
+## Appendix H — API Surface Summary
+
+The platform exposes ~39 API routes. The ones operators most often touch:
+
+| Endpoint | Purpose | Protection |
+|---|---|---|
+| `/api/chat` | Proxy to the AI backend | Tier-gated |
+| `/api/search` | Site search | Public |
+| `/api/wire`, `/api/wire/comments` | The Wire feed + comments | Public read / auth write |
+| `/api/stripe/checkout`, `/portal`, `/team-checkout` | Billing flows | Auth |
+| `/api/stripe/webhook` | Subscription sync → roles | Stripe signature |
+| `/api/academy/certificates` | Certificate issue/verify | Auth |
+| `/api/personalized-learning` (+ `/audio`) | Learning-path generation | Auth |
+| `/api/hospitals`, `/api/hti-scores`, `/api/state-metrics`, `/api/rht-states` | Dashboard data | Public (some cached) |
+| `/api/keys/create|rotate|revoke` | Developer API keys | Auth |
+| `/api/cron/digest`, `/api/digest` | Email digests | `CRON_SECRET`/`DIGEST_SECRET` |
+| `/api/webhooks/sanity` | Content change hooks | Signature |
+| `/api/health` | Liveness | Public |
+
+## Appendix I — Glossary of Vermont Programs & Entities
+
+- **GMCB** — Green Mountain Care Board; Vermont's health-care regulator (rate review, hospital budgets, global budgets).
+- **AHS** — Vermont Agency of Human Services; the system operator for transformation.
+- **DVHA** — Department of Vermont Health Access; Medicaid + HIE governance.
+- **Blueprint for Health** — Vermont's medical-home and community-health-team program.
+- **VCCI** — Vermont Chronic Care Initiative; intensive case management for the highest-cost Medicaid members.
+- **SASH** — Support and Services at Home; an aging-in-place program.
+- **CCBHC** — Certified Community Behavioral Health Clinic.
+- **CHT** — Community Health Team (Blueprint).
+- **RHT Program** — the $195M federal Rural Health Transformation award to Vermont (5 years, ending FY2030).
+- **AHEAD** — the CMS all-payer global-budget model Vermont is adopting (performance year from Jan 2028).
+- **Act 167 (2022)** — initiated Vermont's reform cascade; mandated the statewide-EHR feasibility assessment.
+- **Act 68 (2025)** — made transformation mandatory; the framework RHT capital executes.
+- **OneCare** — Vermont's former ACO, whose wind-down informs the dependency-sequence lessons.
+
+## Appendix J — Document Maintenance
+
+This guide is a living document. Update it whenever the ecosystem changes:
+
+- **A tool is added/removed** → update §13 bench table, §14 walkthroughs, Appendix A, Appendix G, and the tool count everywhere.
+- **The book is revised** → update Part II, Appendix G, and any chapter references.
+- **The architecture changes** → update Part V and the relevant ops sections.
+- **Env vars change** → update §30 and Appendix C.
+- **Launch state changes** → update Part VIII.
+
+Regenerate the `.docx` from this `.md` (via pandoc) after edits. Keep the version line at the top current.
+
+---
+
+*This completes the HTR Ecosystem Guide — a comprehensive user, technical, and operational manual spanning the book, the platform, and the Academy.*
