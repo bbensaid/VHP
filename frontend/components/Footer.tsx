@@ -314,6 +314,12 @@ const Footer: React.FC = () => {
             <Link href="/terms" className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
               Terms of Service
             </Link>
+            <Link href="/disclaimer" className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
+              Disclaimer
+            </Link>
+            <Link href="/billing-policy" className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
+              Billing
+            </Link>
             <Link href="/about/methodology" className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
               Methodology
             </Link>

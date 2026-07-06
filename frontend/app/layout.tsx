@@ -5,7 +5,7 @@ import "./globals.css";
 import { cookies, headers } from "next/headers";
 import Header from "@/components/Header";
 import { BrandProvider } from "@/components/BrandContext";
-import { resolveBrand, getBrandConfig } from "@/lib/brand";
+import { resolveBrand, getBrandConfig, normalizeHost } from "@/lib/brand";
 import { TickerProvider } from "@/components/TickerContext";
 import { SidebarProvider } from "@/components/SidebarContext";
 import AppShell from "@/components/AppShell";
@@ -16,6 +16,7 @@ import WebVitalsReporter from "@/components/WebVitalsReporter";
 import ClientOnlyShell from "@/components/ClientOnlyShell";
 import WelcomeRedirect from "@/components/WelcomeRedirect";
 import { VoiceProvider } from "@/components/VoiceContext";
+import TesterHubButton from "@/components/TesterHubButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,8 +43,19 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const cookieStore = await cookies();
-  const betaGranted = cookieStore.get("htr_beta")?.value === "granted";
-  const brand = resolveBrand((await headers()).get("host"));
+  const hostHeader = (await headers()).get("host");
+  const brand = resolveBrand(hostHeader);
+
+  // The beta cookie is "granted:<host>". Access is only granted when the host
+  // embedded in the cookie matches the current request host — so a cookie set
+  // on one domain doesn't unlock another. (Legacy bare "granted" cookies from
+  // before domain scoping are treated as ungranted and re-prompt at the gate.)
+  const betaCookie = cookieStore.get("htr_beta")?.value ?? "";
+  const grantedHost = betaCookie.startsWith("granted:")
+    ? betaCookie.slice("granted:".length)
+    : null;
+  const betaGranted =
+    grantedHost !== null && grantedHost === normalizeHost(hostHeader);
 
   // Before beta access is granted, render nothing but the gate page itself.
   if (!betaGranted) {
@@ -86,6 +98,7 @@ export default async function RootLayout({
                   </AppShell>
                 </div>
               </div>
+              <TesterHubButton />
               </VoiceProvider>
             </SidebarProvider>
           </TickerProvider>

@@ -50,3 +50,39 @@ export function resolveBrand(host: string | null | undefined): Brand {
 export function getBrandConfig(brand: Brand): BrandConfig {
   return BRAND_CONFIG[brand];
 }
+
+// ─── DOMAIN-SCOPED ACCESS ─────────────────────────────────────────────────────
+// Beta access codes are scoped to one or more of these canonical hostnames.
+// A code is only valid on a domain listed in its `allowed_domains` column.
+// This is the single source of truth referenced by the verify route, the
+// admin UI, and the SQL migration.
+
+export const ACCESS_DOMAINS = [
+  "healthtransformationreview.org",
+  "healthtransformationreview.com",
+  "healthtransformationsolutions.org",
+  "healthtransformationsolutions.com",
+] as const;
+
+export type AccessDomain = (typeof ACCESS_DOMAINS)[number];
+
+/**
+ * Normalize a raw request Host header to a canonical hostname:
+ *   - lowercase
+ *   - strip port (":3000")
+ *   - strip a leading "www."
+ * Returns the bare hostname, e.g. "healthtransformationreview.org".
+ */
+export function normalizeHost(host: string | null | undefined): string {
+  if (!host) return "";
+  return host
+    .toLowerCase()
+    .trim()
+    .split(":")[0]
+    .replace(/^www\./, "");
+}
+
+/** True if the normalized host is one of the four production access domains. */
+export function isAccessDomain(host: string): host is AccessDomain {
+  return (ACCESS_DOMAINS as readonly string[]).includes(host);
+}

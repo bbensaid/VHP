@@ -4,17 +4,35 @@ import { useState, Suspense } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { createBrowserClient } from "@supabase/ssr";
+import { useBrand } from "@/components/BrandContext";
 
 const supabase = createBrowserClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 );
 
+// Account-gated destinations can't be browsed as a guest, so "skip" from one of
+// these lands on home instead of bouncing off the gated page. The skip option
+// itself is always shown — access-code users never have to sign in.
+const ACCOUNT_REQUIRED_PREFIXES = ["/account", "/admin", "/studio", "/upgrade"];
+
+function isAccountRequired(dest: string): boolean {
+  return ACCOUNT_REQUIRED_PREFIXES.some((p) => dest === p || dest.startsWith(p + "/"));
+}
+
 function LoginForm() {
   const router = useRouter();
+  const { config } = useBrand();
   const searchParams = useSearchParams();
-  const redirectTo = searchParams.get("from") ?? "/account";
+  const fromParam = searchParams.get("from");
+  const redirectTo = fromParam ?? "/account";
   const isTimeout = searchParams.get("timeout") === "1";
+
+  // Where "skip" should land: back where the user was headed if it's a
+  // browsable page; otherwise home (so a gated `from` doesn't bounce them
+  // right back to /login). The header "Sign in" link passes no `from`, so
+  // skip goes home.
+  const skipTarget = fromParam && !isAccountRequired(fromParam) ? fromParam : "/";
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -44,7 +62,10 @@ function LoginForm() {
         <div className="text-center mb-8">
           <Link href="/" className="inline-block">
             <span className="text-2xl font-black text-slate-900 tracking-tight">
-              Health Transformation <span className="text-indigo-600">Review</span>
+              Health Transformation{" "}
+              <span className="text-indigo-600">
+                {config.logoWord.charAt(0) + config.logoWord.slice(1).toLowerCase()}
+              </span>
             </span>
           </Link>
           <p className="mt-2 text-slate-500 text-sm">Sign in to your account</p>
@@ -108,13 +129,14 @@ function LoginForm() {
             <Link href="/signup" className="text-indigo-600 font-semibold hover:text-indigo-800">Sign up free</Link>
           </p>
 
-          {redirectTo.startsWith("/academy") && (
-            <div className="mt-4">
-              <a href={redirectTo} className="flex items-center justify-center w-full px-4 py-3 bg-sky-100 hover:bg-sky-200 text-sky-800 font-semibold text-sm rounded-xl transition-colors border border-sky-300">
-                Skip — browse as guest (no progress saved)
-              </a>
-            </div>
-          )}
+          <div className="mt-4">
+            <a href={skipTarget} className="flex items-center justify-center w-full px-4 py-3 bg-sky-100 hover:bg-sky-200 text-sky-800 font-semibold text-sm rounded-xl transition-colors border border-sky-300">
+              Skip — continue without an account
+            </a>
+            <p className="text-center text-xs text-slate-400 mt-2">
+              You have platform access. An account only saves progress and unlocks account features.
+            </p>
+          </div>
         </div>
       </div>
     </div>
