@@ -12,7 +12,7 @@ export default async function AccessCodesPage() {
 
   const { data: codes, error } = await dbAdmin
     .from("beta_access_codes")
-    .select("id, code, label, is_active, created_at")
+    .select("id, code, label, is_active, allowed_domains, created_at")
     .order("created_at", { ascending: true });
 
   if (error) {

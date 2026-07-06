@@ -254,7 +254,19 @@
       "Bash(rm -f /tmp/HTR_v41_new.docx)",
       "Bash(zip -X -q /tmp/HTR_v41_new.docx '[Content_Types].xml')",
       "Bash(zip -rX -q /tmp/HTR_v41_new.docx . -x '[Content_Types].xml')",
-      "Bash(break)"
+      "Bash(break)",
+      "Bash(node -e \"const t=require\\('fs'\\).readFileSync\\('node_modules/next/dist/server/config-shared.d.ts','utf8'\\); console.log\\('outputFileTracingExcludes in NextConfig types:', t.includes\\('outputFileTracingExcludes'\\)\\)\")",
+      "Bash(node -e \"const m=require\\('@sanity/image-url'\\); console.log\\('default:', typeof m.default || typeof m\\); console.log\\('createImageUrlBuilder named export:', typeof m.createImageUrlBuilder\\)\")",
+      "Bash(node -e \"console.log\\(require\\('@sanity/image-url/package.json'\\).version\\)\")",
+      "Bash(node -e \"const p=require\\('./frontend/package.json'\\); const d={...p.dependencies}; ['next','react','@supabase/supabase-js','@sentry/nextjs','stripe','sanity','next-sanity','styled-components','tailwindcss'].forEach\\(k=>console.log\\(' ',k,d[k]||'\\(dev\\)'\\)\\)\")",
+      "Bash(pandoc HTR_ECOSYSTEM_GUIDE.md -o HTR_ECOSYSTEM_GUIDE.docx --toc --toc-depth=2 --metadata title=\"The HTR Ecosystem — Complete Guide\")",
+      "Bash(pandoc HTR_ECOSYSTEM_GUIDE.md -o HTR_ECOSYSTEM_GUIDE.docx --toc --toc-depth=2 --metadata title=\"The HTR Ecosystem — Complete Guide\" --metadata author=\"Health Transformation Review\")",
+      "Bash(pandoc /tmp/guide_pb.md -o HTR_ECOSYSTEM_GUIDE.docx --toc --toc-depth=2 --metadata title=\"The HTR Ecosystem — Complete Guide\" --metadata author=\"Health Transformation Review\")",
+      "Bash(pandoc HTR_Formation_Packet.md -o HTR_Formation_Packet.docx --toc)",
+      "Bash(pandoc HTR_Legal_Pack.md -o HTR_Legal_Pack.docx --toc)",
+      "Bash(lsof -iTCP:3000 -sTCP:LISTEN -n -P)",
+      "Bash(lsof -iTCP -sTCP:LISTEN -n -P)",
+      "Bash(kill 9162 45433)"
     ],
     "additionalDirectories": [
       "/private/tmp",

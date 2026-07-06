@@ -32,3 +32,6 @@ yarn-error.log*
 *.tar.gz
 *.docx
 *.bak
+
+# Company formation docs — contain personal data (SSN, address). Keep out of git.
+formation/

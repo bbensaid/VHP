@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
+import { useBrand } from "@/components/BrandContext";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -24,6 +25,12 @@ interface Section {
   title: string;
   emoji: string;
   color: string;
+  /**
+   * Which brand this section applies to. Omitted = shared across both domains.
+   * "solutions" = only the Health Transformation Solutions domains (Advisory
+   * Services is hidden on the Review domains — see lib/brand.ts / HomeSidebar).
+   */
+  brand?: "solutions" | "review";
   pages: PageLink[];
 }
 
@@ -40,9 +47,23 @@ const SECTIONS: Section[] = [
       { label: "The Wire (News Feed)", href: "/the-wire", note: "Real-time intelligence feed — scroll articles" },
       { label: "Trending Topics", href: "/trending-topics", note: "Hot topics ranked by activity" },
       { label: "Search", href: "/search", note: "Global search — try a query like 'Medicaid'" },
-      { label: "Saved / Bookmarks", href: "/saved", note: "Requires login — saved articles & tools" },
-      { label: "Multimedia", href: "/multimedia", note: "Videos & audio content hub" },
+      { label: "My Library", href: "/library", note: "Saved articles & resources (login required; /saved redirects here)", tag: "subscriber" },
+      { label: "Multimedia Hub", href: "/multimedia", note: "Videos & audio content hub" },
+      { label: "Video Library", href: "/media/videos", note: "Video content listing" },
+      { label: "System Vitals", href: "/system-vitals", note: "Live platform metrics ticker page" },
+      { label: "Bed Capacity", href: "/bed-capacity", note: "Real-time hospital bed availability" },
+      { label: "Changelog", href: "/changelog", note: "Platform release notes / what's new" },
       { label: "Site Map", href: "/site-map", note: "Public sitemap page" },
+    ],
+  },
+  {
+    id: "book",
+    title: "The Book",
+    emoji: "📖",
+    color: "bg-amber-800",
+    pages: [
+      { label: "The Book — Landing", href: "/book", note: "'Transforming American Healthcare' book page" },
+      { label: "Book → Listen (audio)", href: "/book/listen", note: "Narrated audio version of the book" },
     ],
   },
   {
@@ -53,11 +74,13 @@ const SECTIONS: Section[] = [
     pages: [
       { label: "HTI Dashboard (main)", href: "/hti-dashboard", note: "Health Transformation Index — charts & gauges", tag: "subscriber" },
       { label: "Dashboard → State Picker", href: "/dashboard", note: "Select a state to drill in", tag: "subscriber" },
-      { label: "Dashboard → Vermont", href: "/dashboard/vermont", note: "Vermont state detail view", tag: "subscriber" },
+      { label: "Dashboard → Vermont", href: "/dashboard/vermont", note: "Vermont state detail view (dynamic [state] route)", tag: "subscriber" },
       { label: "Dashboard → Vermont Hospitals", href: "/dashboard/vermont/hospitals", note: "Hospital list for Vermont", tag: "subscriber" },
       { label: "Dashboard → NVRH Hospital", href: "/dashboard/vermont/hospitals/nvrh", note: "Northeastern Vermont Regional Hospital detail", tag: "subscriber" },
-      { label: "Dashboard → California", href: "/dashboard/california", note: "California state detail view", tag: "subscriber" },
+      { label: "Dashboard → California", href: "/dashboard/california", note: "California state detail view (dynamic [state] route)", tag: "subscriber" },
       { label: "Dashboard → Compare States", href: "/dashboard/compare", note: "Side-by-side state comparison", tag: "subscriber" },
+      { label: "Dashboard → Simulator", href: "/dashboard/simulator", note: "Dashboard-integrated scenario simulator", tag: "subscriber" },
+      { label: "Compare States (standalone)", href: "/compare-states", note: "State comparison entry page" },
       { label: "HTR Index Methodology", href: "/htr-index", note: "How the index is calculated" },
       { label: "Transformation Friction Index", href: "/transformation-friction-index", note: "Friction scoring methodology" },
       { label: "Investment Tracker", href: "/investment-tracker", note: "Healthcare investment trends" },
@@ -66,12 +89,13 @@ const SECTIONS: Section[] = [
   },
   {
     id: "research",
-    title: "Research Lab (19 Tools)",
+    title: "Research Lab",
     emoji: "🔬",
     color: "bg-violet-700",
     pages: [
-      { label: "Research Lab — Hub", href: "/research-lab", note: "Overview of all 6 lab categories" },
+      { label: "Research Lab — Hub", href: "/research-lab", note: "Overview of all lab benches & tools" },
       { label: "Lab → Interoperability & Clinical", href: "/research-lab/interoperability", note: "FHIR validator, CDS Hooks, HCC risk stratification", tag: "subscriber" },
+      { label: "Lab → VBC & Clinical Quality", href: "/research-lab/vbc-clinical-quality", note: "Value-based care & clinical quality tools", tag: "subscriber" },
       { label: "Lab → Payment Models", href: "/research-lab/payment-models", note: "APM design, MSSP/ACO REACH, global budget", tag: "subscriber" },
       { label: "Lab → Population & Equity", href: "/research-lab/population-equity", note: "Markov chains, SIR dynamics, disparity analysis", tag: "subscriber" },
       { label: "Lab → Policy & Quality", href: "/research-lab/policy-quality", note: "1115 waiver, HEDIS, CMS Star Ratings", tag: "subscriber" },
@@ -87,8 +111,6 @@ const SECTIONS: Section[] = [
     pages: [
       { label: "HTR Simulator", href: "/htr-simulator", note: "Interactive health transformation scenarios" },
       { label: "AHEAD Model", href: "/ahead-model", note: "All-Payer Claims Database explorer" },
-      { label: "Vermont ACT 167 Simulator", href: "/vermont-act-167/simulator", note: "Simulate Act 167 outcomes" },
-      { label: "Vermont ACT 167 Overview", href: "/vermont-act-167", note: "Act 167 background & analysis" },
       { label: "Medicaid Eligibility Simulator", href: "/medicaid-eligibility-simulator", note: "Test eligibility scenarios" },
       { label: "AI Analyst Chat", href: "/chat", note: "Full-page AI chat interface", tag: "subscriber" },
     ],
@@ -174,16 +196,38 @@ const SECTIONS: Section[] = [
   },
   {
     id: "states",
-    title: "State Profiles",
+    title: "State Profiles & Programs",
     emoji: "🗺️",
     color: "bg-lime-700",
     pages: [
       { label: "States — Directory", href: "/states", note: "All state profiles" },
-      { label: "State → Vermont", href: "/states/vermont", note: "Vermont health transformation profile" },
-      { label: "State → California", href: "/states/california", note: "California health transformation profile" },
-      { label: "Vermont ACT 167", href: "/vermont-act-167", note: "Vermont's landmark health reform law" },
-      { label: "Vermont Medicaid", href: "/vermont-medicaid", note: "Vermont Medicaid program overview" },
+      { label: "State → Vermont", href: "/states/vermont", note: "Vermont profile (dynamic [state] route)" },
+      { label: "State → California", href: "/states/california", note: "California profile (dynamic [state] route)" },
+      { label: "State → Oregon", href: "/states/oregon", note: "Oregon profile (dynamic [state] route)" },
       { label: "California CalAIM", href: "/california-calaim", note: "California's CalAIM initiative" },
+      { label: "California CalAIM Simulator", href: "/california-calaim/simulator", note: "Simulate CalAIM scenarios" },
+      { label: "Oregon CCO", href: "/oregon-cco", note: "Oregon Coordinated Care Organizations" },
+      { label: "Oregon CCO Simulator", href: "/oregon-cco/simulator", note: "Simulate Oregon CCO scenarios" },
+    ],
+  },
+  {
+    id: "vermont",
+    title: "Vermont Programs",
+    emoji: "🍁",
+    color: "bg-green-800",
+    pages: [
+      { label: "Vermont ACT 167", href: "/vermont-act-167", note: "Vermont's landmark health reform law" },
+      { label: "Vermont ACT 167 Simulator", href: "/vermont-act-167/simulator", note: "Simulate Act 167 outcomes" },
+      { label: "Vermont ACT 68", href: "/vermont-act-68", note: "Act 68 overview & analysis" },
+      { label: "Vermont ACT 68 Simulator", href: "/vermont-act-68/simulator", note: "Simulate Act 68 outcomes" },
+      { label: "Vermont Medicaid", href: "/vermont-medicaid", note: "Vermont Medicaid program overview" },
+      { label: "Vermont Blueprint for Health", href: "/vermont-blueprint", note: "Blueprint program overview" },
+      { label: "Vermont RHT Program", href: "/vermont-rht-program", note: "Regional Health Transformation program" },
+      { label: "Vermont Designated Agencies", href: "/vermont-designated-agencies", note: "DA network overview" },
+      { label: "Vermont SASH", href: "/vermont-sash", note: "Support & Services at Home" },
+      { label: "Vermont VCCI", href: "/vermont-vcci", note: "Vermont Chronic Care Initiative" },
+      { label: "Vermont SDOH", href: "/vermont-sdoh", note: "Social determinants of health in Vermont" },
+      { label: "Vermont Legislative Resources", href: "/vermont-legislative-resources", note: "Legislative reference hub" },
     ],
   },
   {
@@ -193,9 +237,12 @@ const SECTIONS: Section[] = [
     color: "bg-purple-700",
     pages: [
       { label: "Academy — Hub", href: "/academy", note: "Main academy landing" },
+      { label: "Academy → Getting Started", href: "/academy/getting-started", note: "New-user orientation" },
+      { label: "Academy → Getting Started: Research Lab", href: "/academy/getting-started/research-lab", note: "Research Lab orientation lesson" },
       { label: "Academy → Personalized Learning", href: "/academy/personalized-learning", note: "AI-curated learning path" },
       { label: "Academy → Courses", href: "/academy/courses", note: "All course listings" },
       { label: "Academy → Tracks", href: "/academy/tracks", note: "Curated learning tracks" },
+      { label: "Academy → Faculty", href: "/academy/faculty", note: "Instructor / faculty directory" },
       { label: "Academy → Case Studies", href: "/academy/case-studies", note: "Real-world case study library" },
       { label: "Academy → Webinars", href: "/academy/webinars", note: "Live & recorded webinars" },
       { label: "Academy → Glossary", href: "/academy/glossary", note: "Healthcare reform terminology" },
@@ -209,6 +256,7 @@ const SECTIONS: Section[] = [
     title: "Advisory Services",
     emoji: "🤝",
     color: "bg-sky-700",
+    brand: "solutions", // Hidden on the Review domains — Solutions-only feature.
     pages: [
       { label: "Advisory — Hub", href: "/advisory", note: "Pro-bono advisory services overview" },
       { label: "Advisory → Services Menu", href: "/advisory/services", note: "Full services list" },
@@ -222,6 +270,7 @@ const SECTIONS: Section[] = [
       { label: "Advisory → Reports", href: "/advisory/reports", note: "Published advisory reports" },
       { label: "Advisory → Approach", href: "/advisory/approach", note: "Our methodology" },
       { label: "Advisory → Capability Assessment", href: "/advisory/capability-assessment", note: "Self-assessment tool" },
+      { label: "Advisory → Contact", href: "/advisory/contact", note: "Advisory engagement contact form" },
       { label: "Advisory Hub (subscriber)", href: "/advisory-hub", note: "Subscriber advisory portal", tag: "subscriber" },
     ],
   },
@@ -300,6 +349,8 @@ const SECTIONS: Section[] = [
       { label: "Developers", href: "/developers", note: "Developer / API documentation" },
       { label: "Privacy Policy", href: "/privacy", note: "Privacy policy" },
       { label: "Terms of Service", href: "/terms", note: "Terms of service" },
+      { label: "Disclaimer", href: "/disclaimer", note: "Legal / not-medical-advice disclaimer" },
+      { label: "Billing Policy", href: "/billing-policy", note: "Billing & refund policy" },
     ],
   },
   {
@@ -308,12 +359,14 @@ const SECTIONS: Section[] = [
     emoji: "🔑",
     color: "bg-zinc-700",
     pages: [
-      { label: "Login", href: "/login", note: "Email/password login" },
+      { label: "Login", href: "/login", note: "Email/password login (+ Skip option for access-code users)" },
       { label: "Sign Up", href: "/signup", note: "New account registration" },
       { label: "Forgot Password", href: "/forgot-password", note: "Password reset request" },
       { label: "Reset Password", href: "/reset-password", note: "Password reset form (needs token)" },
       { label: "Onboarding", href: "/onboarding", note: "Post-signup onboarding flow" },
-      { label: "Beta Gate", href: "/beta", note: "Access code entry screen" },
+      { label: "Setup", href: "/setup", note: "Initial account/profile setup" },
+      { label: "Welcome / Role Picker", href: "/welcome", note: "First-visit role selection + Skip" },
+      { label: "Beta Gate", href: "/beta", note: "Domain-scoped access code entry screen" },
     ],
   },
   {
@@ -461,10 +514,21 @@ function PageCard({ page, entry, onRate, onNote }: PageCardProps) {
 type SendState = "idle" | "sending" | "sent" | "error";
 
 export default function TesterPage() {
+  const { brand, config } = useBrand();
+
+  // Only show sections that apply to the current domain. A section with no
+  // `brand` is shared; one tagged "solutions"/"review" shows only on that
+  // domain — so Review testers never see Advisory, and vice versa. This mirrors
+  // the real nav filtering in HomeSidebar / Header / Footer.
+  const sections = React.useMemo(
+    () => SECTIONS.filter((s) => !s.brand || s.brand === brand),
+    [brand]
+  );
+
   const [feedback, setFeedback] = useState<Record<string, FeedbackEntry>>({});
   const [filter, setFilter]     = useState("");
   const [openSections, setOpenSections] = useState<Record<string, boolean>>(
-    Object.fromEntries(SECTIONS.map((s) => [s.id, true]))
+    Object.fromEntries(sections.map((s) => [s.id, true]))
   );
   const [testerName, setTesterName] = useState("");
   const [sendState, setSendState]   = useState<SendState>("idle");
@@ -519,7 +583,7 @@ export default function TesterPage() {
   };
 
   // Stats
-  const totalPages = SECTIONS.reduce((a, s) => a + s.pages.length, 0);
+  const totalPages = sections.reduce((a, s) => a + s.pages.length, 0);
   const rated  = Object.keys(feedback).length;
   const works  = Object.values(feedback).filter((f) => f.rating === "works").length;
   const issues = Object.values(feedback).filter((f) => f.rating === "issues").length;
@@ -528,7 +592,7 @@ export default function TesterPage() {
 
   // Filter
   const q = filter.toLowerCase();
-  const filteredSections = SECTIONS.map((s) => ({
+  const filteredSections = sections.map((s) => ({
     ...s,
     pages: s.pages.filter(
       (p) => !q || p.label.toLowerCase().includes(q) || p.href.toLowerCase().includes(q) || (p.note ?? "").toLowerCase().includes(q)
@@ -537,8 +601,8 @@ export default function TesterPage() {
 
   const toggleSection = (id: string) =>
     setOpenSections((prev) => ({ ...prev, [id]: !prev[id] }));
-  const expandAll  = () => setOpenSections(Object.fromEntries(SECTIONS.map((s) => [s.id, true])));
-  const collapseAll = () => setOpenSections(Object.fromEntries(SECTIONS.map((s) => [s.id, false])));
+  const expandAll  = () => setOpenSections(Object.fromEntries(sections.map((s) => [s.id, true])));
+  const collapseAll = () => setOpenSections(Object.fromEntries(sections.map((s) => [s.id, false])));
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -552,7 +616,8 @@ export default function TesterPage() {
             <div className="flex-1 min-w-0">
               <h1 className="text-xl font-black text-slate-900 tracking-tight">🧪 Beta Tester Navigation Hub</h1>
               <p className="text-xs text-slate-500 mt-0.5">
-                {totalPages} pages · {SECTIONS.length} sections · All links open in a new tab
+                Testing <span className="font-bold text-slate-700">{config.displayName}</span>
+                {" "}({brand}) · {totalPages} pages · {sections.length} sections · All links open in a new tab
               </p>
             </div>
             <div className="flex items-center gap-2 flex-wrap">
@@ -665,10 +730,10 @@ export default function TesterPage() {
                     </span>
                   )}
                 </div>
-                <span className="text-white/70 text-sm">{openSections[section.id] ? "▲" : "▼"}</span>
+                <span className="text-white/70 text-sm">{openSections[section.id] !== false ? "▲" : "▼"}</span>
               </button>
 
-              {openSections[section.id] && (
+              {openSections[section.id] !== false && (
                 <div className="bg-slate-50 p-4 grid grid-cols-1 md:grid-cols-2 gap-3">
                   {section.pages.map((page) => (
                     <PageCard
