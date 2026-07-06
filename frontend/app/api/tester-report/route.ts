@@ -9,9 +9,15 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { dbAdmin } from "@/lib/db/client";
+import { normalizeHost } from "@/lib/brand";
 
 const TO      = "bechir.bensaid@gmail.com";
-const FROM    = "HTR Tester <noreply@htr.health>";
+// Resend's built-in test sender — works with zero domain setup, but only
+// delivers to the Resend account's own verified email (bechir.bensaid@gmail.com).
+// Once a sending domain is verified in Resend, swap this for e.g.
+// "HTR Tester <tester@yourdomain.com>".
+const FROM    = "HTR Tester <onboarding@resend.dev>";
 const SUBJECT = (name: string, date: string) =>
   `[Beta Feedback] ${name} — ${date}`;
 
@@ -188,34 +194,84 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "No feedback to send" }, { status: 400 });
   }
 
+  const entries = Object.values(feedback);
+  const total   = entries.length;
+  const works   = entries.filter((f) => f.rating === "works").length;
+  const issues  = entries.filter((f) => f.rating === "issues").length;
+  const broken  = entries.filter((f) => f.rating === "broken").length;
+  // Flag reports where any issue/broken rating has no explanatory note — these
+  // are the low-credibility ones to eyeball first. (No pressure on the tester;
+  // we just mark it on our end.)
+  const lowDetail = entries.some(
+    (f) => (f.rating === "issues" || f.rating === "broken") && !f.note.trim()
+  );
+
+  const domain    = normalizeHost(req.headers.get("host"));
+  const userAgent = req.headers.get("user-agent") ?? "";
+
+  // ── 1. Persist to the DB FIRST — this is the durable record. A failed email
+  //       (bad/missing Resend key, unverified sender) must never lose feedback.
+  const { data: saved, error: dbError } = await dbAdmin
+    .from("tester_feedback")
+    .insert({
+      tester_name: testerName,
+      domain,
+      total,
+      works,
+      issues,
+      broken,
+      low_detail: lowDetail,
+      feedback,
+      user_agent: userAgent,
+      email_sent: false,
+    })
+    .select("id")
+    .single();
+
+  if (dbError) {
+    console.error("tester_feedback insert error:", dbError.message);
+    return NextResponse.json({ error: "Failed to save feedback" }, { status: 500 });
+  }
+
+  // ── 2. Try the email (best-effort). Failure does NOT fail the request —
+  //       the feedback is already saved above.
   const date     = new Date().toLocaleString("en-US", { dateStyle: "full", timeStyle: "short" });
   const markdown = buildMarkdown(testerName, feedback, date);
   const html     = buildHtml(testerName, feedback, date);
-
-  // Encode the .md file as base64 for Resend attachment
   const mdBase64 = Buffer.from(markdown, "utf-8").toString("base64");
   const filename = `HTR-Feedback-${testerName.replace(/\s+/g, "-")}-${new Date().toISOString().slice(0, 10)}.md`;
 
-  const res = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      from:        FROM,
-      to:          TO,
-      subject:     SUBJECT(testerName, date),
-      html,
-      attachments: [{ filename, content: mdBase64 }],
-    }),
-  });
-
-  if (!res.ok) {
-    const err = await res.text();
-    console.error("Resend error:", err);
-    return NextResponse.json({ error: "Failed to send email" }, { status: 502 });
+  let emailSent = false;
+  if (process.env.RESEND_API_KEY) {
+    try {
+      const res = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from:        FROM,
+          to:          TO,
+          subject:     SUBJECT(testerName, date),
+          html,
+          attachments: [{ filename, content: mdBase64 }],
+        }),
+      });
+      if (res.ok) {
+        emailSent = true;
+        await dbAdmin.from("tester_feedback").update({ email_sent: true }).eq("id", saved.id);
+      } else {
+        console.error("Resend error:", await res.text());
+      }
+    } catch (e) {
+      console.error("Resend request failed:", e);
+    }
+  } else {
+    console.warn("RESEND_API_KEY not set — feedback saved to DB, email skipped.");
   }
 
-  return NextResponse.json({ ok: true });
+  // Success as long as the feedback was saved. `emailSent` tells the client
+  // whether the email also went out.
+  return NextResponse.json({ ok: true, emailSent });
 }
