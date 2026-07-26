@@ -35,3 +35,6 @@ yarn-error.log*
 
 # Company formation docs — contain personal data (SSN, address). Keep out of git.
 formation/
+# Book build snapshots (local only)
+book-archive/
+Book Latest Version/

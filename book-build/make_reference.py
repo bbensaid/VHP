@@ -15,13 +15,16 @@ from docx.oxml import OxmlElement
 
 NAVY = RGBColor(0x1B, 0x3A, 0x6B)
 BODY = RGBColor(0x1A, 0x1A, 0x1A)
-HEAD = "Calibri"
-SERIF = "Georgia"
+HEADCOLOR = RGBColor(0x16, 0x1B, 0x22)   # near-black for headings (book, not report-navy)
+HEAD = "Garamond"                        # serif headings, book-like (was Calibri navy)
+SERIF = "Garamond"                       # book body serif (was Georgia — a screen font)
 
 doc = Document()
 for s in doc.sections:
     s.page_width = Inches(8.5); s.page_height = Inches(11)
-    s.top_margin = s.bottom_margin = s.left_margin = s.right_margin = Inches(1)
+    # tighter, book-proportioned text block on letter paper
+    s.top_margin = s.bottom_margin = Inches(0.9)
+    s.left_margin = s.right_margin = Inches(1.1)
 
 def font(style, *, name, size, color, bold=False, italic=False):
     f = style.font
@@ -35,21 +38,24 @@ def space(style,*,before,after,line):
     pf=style.paragraph_format; pf.space_before=Pt(before); pf.space_after=Pt(after)
     pf.line_spacing=line; pf.line_spacing_rule=WD_LINE_SPACING.MULTIPLE
 
-font(doc.styles['Normal'], name=SERIF, size=11, color=BODY)
-space(doc.styles['Normal'], before=0, after=9, line=1.3)
+# Body: Garamond 10.5pt, tight book leading. Garamond runs small, so 10.5pt reads
+# like ~9.5-10pt of a screen serif — denser, more words per page, textbook feel.
+font(doc.styles['Normal'], name=SERIF, size=10.5, color=BODY)
+space(doc.styles['Normal'], before=0, after=7, line=1.15)
 
-font(doc.styles['Heading 1'], name=HEAD, size=17, color=NAVY, bold=True)
-space(doc.styles['Heading 1'], before=20, after=10, line=1.1)
+# Headings: serif, near-black, restrained (book), stepped down from the report sizes.
+font(doc.styles['Heading 1'], name=HEAD, size=15, color=HEADCOLOR, bold=True)
+space(doc.styles['Heading 1'], before=18, after=8, line=1.1)
 doc.styles['Heading 1'].paragraph_format.keep_with_next=True
-font(doc.styles['Heading 2'], name=HEAD, size=13.5, color=NAVY, bold=True)
-space(doc.styles['Heading 2'], before=15, after=6, line=1.1)
+font(doc.styles['Heading 2'], name=HEAD, size=12.5, color=HEADCOLOR, bold=True)
+space(doc.styles['Heading 2'], before=13, after=5, line=1.1)
 doc.styles['Heading 2'].paragraph_format.keep_with_next=True  # keep H2 with its first line only
-font(doc.styles['Heading 3'], name=HEAD, size=11.5, color=NAVY, bold=True)
-space(doc.styles['Heading 3'], before=11, after=5, line=1.1)
+font(doc.styles['Heading 3'], name=HEAD, size=11, color=HEADCOLOR, bold=True)
+space(doc.styles['Heading 3'], before=10, after=4, line=1.1)
 doc.styles['Heading 3'].paragraph_format.keep_with_next=True
 
 if 'Title' in [s.name for s in doc.styles]:
-    font(doc.styles['Title'], name=HEAD, size=28, color=NAVY, bold=True)
+    font(doc.styles['Title'], name=HEAD, size=26, color=NAVY, bold=True)
     space(doc.styles['Title'], before=0, after=10, line=1.0)
 
 # Caption — small italic gray, space AFTER for breathing room
@@ -87,7 +93,7 @@ make_table_style()
 # ── Callout paragraph styles (Pandoc custom-style targets) ───────────────────
 # These just need to EXIST so Pandoc tags paragraphs; the post-pass restyles them.
 from docx.enum.style import WD_STYLE_TYPE
-for sid in ('CalloutWorked','CalloutBeyond','CalloutTry','CalloutKey','CalloutVT','StatStrip','PullQuote','QuoteAttr','Banner'):
+for sid in ('CalloutWorked','CalloutBeyond','CalloutTry','CalloutKey','CalloutVT','StatStrip','PullQuote','QuoteAttr','Banner','DepMap','PartDivider'):
     try:
         st = doc.styles.add_style(sid, WD_STYLE_TYPE.PARAGRAPH)
         font(st, name=SERIF, size=10, color=BODY)
@@ -127,5 +133,31 @@ try:
     space(qa, before=0, after=12, line=1.2)
 except Exception: pass
 
+# ── TOC entry styles: match the v29 draft ────────────────────────────────────
+# Serif body font, black text, dot-leader page numbers right-aligned at the
+# margin. TOC 1 = chapters/appendices (BOLD, small gap above). TOC 2 = sections
+# (regular, indented). TOC 3 = sub-sections (regular, more indented). Live TOC
+# field fills page numbers automatically; the right-tab + dot leader gives the
+# "....... 14" look.
+from docx.shared import Inches as _In
+RIGHT_TAB = _In(6.5)   # page-number column at the right text margin (8.5in - 2*1in)
+
+def _toc(style_name, *, size, bold, indent, before):
+    try:
+        st = doc.styles[style_name]                 # built-in TOC styles exist by name
+    except KeyError:
+        st = doc.styles.add_style(style_name, WD_STYLE_TYPE.PARAGRAPH)
+    font(st, name=SERIF, size=size, color=BODY, bold=bold)
+    space(st, before=before, after=2, line=1.05)
+    pf = st.paragraph_format
+    pf.left_indent = _In(indent)
+    # right-aligned dot-leader tab stop so page numbers line up at the margin
+    from docx.enum.text import WD_TAB_ALIGNMENT, WD_TAB_LEADER
+    pf.tab_stops.add_tab_stop(RIGHT_TAB, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
+
+_toc('TOC 1', size=11.5, bold=True,  indent=0.0,  before=8)
+_toc('TOC 2', size=11,   bold=False, indent=0.35, before=0)
+_toc('TOC 3', size=10.5, bold=False, indent=0.7,  before=0)
+
 doc.save('book-build/reference.docx')
-print("Wrote reference.docx (Modern editorial: Calibri navy headings, Georgia 11 body)")
+print("Wrote reference.docx (Book style: Garamond near-black serif headings, Garamond 10.5 body)")

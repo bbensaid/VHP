@@ -30,7 +30,21 @@ Vermont runs through this book as its primary teaching case. Vermont is in this 
 
 This book is also not a prediction. The transformations described here are underway but unfinished. Whether Vermont's hospital system stabilizes or contracts, whether global budgets reduce costs or constrain access, whether the Agency of Human Services can execute the restructuring its mandate requires — these are genuinely uncertain. What this book provides is the analytical framework for understanding what is happening and why, and for contributing to better decisions as the story unfolds. The decisions, and their consequences, belong to the people who make them.
 
-The reader profiles and recommended reading paths are in the Introduction that follows. Use them. This material rewards a reading strategy calibrated to your role and your decisions, not a linear march through twenty chapters.
+Finally, a word about what this book *is* — because it is not, on its own, the whole of the argument. This book is the intellectual foundation of the **Health Transformation Review** ([healthtransformationreview.org](https://healthtransformationreview.org)), an integrated ecosystem with three parts that are designed to work as one:
+
+- **The book** you are reading — the framework, the dependency logic, the Vermont evidence, and the national comparisons.
+- **The platform** ([healthtransformationreview.org](https://healthtransformationreview.org)) — six pillar hubs, a **Research Lab** of two dozen interactive analytical tools, an **AI Analyst** grounded in this book and Vermont's source documents, a fifty-state dashboard, and a daily intelligence feed. Every argument in these pages that can be modeled *is* modeled there.
+- **The Academy** ([healthtransformationreview.org/academy](https://healthtransformationreview.org/academy)) — a structured executive-education layer of courses, tracks, and lessons that teach the concepts hands-on and link directly to the tools that apply them.
+
+The three are deliberately cross-linked. Each pillar chapter ends with a *"Work This Chapter on the Platform"* guide that maps its argument to the specific tools that let you manipulate it; the platform's tools carry *"From the Book"* callouts back to the chapters that explain them; and the AI Analyst can answer a question and route you to the right tool or lesson in the same breath. **Everything in the ecosystem is, in effect, an interactive expression of this book's framework.** You can read the book alone and it stands on its own — but the framework is meant to be *run*, not just read, and the platform is where you run it.
+
+::: {custom-style="CalloutBeyond"}
+**EXPLORE THE ECOSYSTEM**
+
+The full ecosystem is at **[healthtransformationreview.org](https://healthtransformationreview.org)** — read the book online with audio narration at [/book](https://healthtransformationreview.org/book), open the [Research Lab](https://healthtransformationreview.org/research-lab), ask the [AI Analyst](https://healthtransformationreview.org/chat), or start a course in the [Academy](https://healthtransformationreview.org/academy). The Introduction that follows explains how the three components fit together and which to start with for your role.
+:::
+
+The reader profiles and recommended reading paths are in the Introduction that follows. Use them. This material rewards a reading strategy calibrated to your role and your decisions — and to the tools and courses that go with it — not a linear march through twenty chapters.
 
 April 2026
 
@@ -150,25 +164,43 @@ The central analytical contribution of this book is the six-pillar framework for
 
 Chapter 1 develops this framework in full — defining each pillar, mapping the fifteen dependency relationships that connect them, and showing what cascades through the system when any one is missing. What matters here, at the outset, is the single premise the rest of the book rests on: Vermont's reform agenda is instructive precisely because it addresses all six pillars simultaneously — imperfectly and incompletely, as any real-world policy effort does, but with a comprehensiveness that distinguishes it from the single-pillar interventions that have failed repeatedly at the national level.
 
+## **The HTR Ecosystem: How the Book, the Platform, and the Academy Work Together**
+
+This book is one of three integrated components of the **Health Transformation Review** ([healthtransformationreview.org](https://healthtransformationreview.org)). The framework you are about to read is not only an argument to be followed — it is a system to be operated, and the platform and Academy are where you operate it. Understanding how the three fit together will change how you read what follows.
+
+| Component | What it is | How it connects to the book |
+| :---- | :---- | :---- |
+| **The Book** | *Transforming American Healthcare* — the framework, the dependency logic, the Vermont evidence, and the national comparisons. Read it online with audio narration at [/book](https://healthtransformationreview.org/book). | The intellectual foundation. Everything else is an interactive expression of it. |
+| **The Platform** | Six pillar hubs, a [Research Lab](https://healthtransformationreview.org/research-lab) of two dozen interactive analytical tools, an [AI Analyst](https://healthtransformationreview.org/chat) grounded in this book and Vermont's source documents, a [fifty-state dashboard](https://healthtransformationreview.org/dashboard), and a daily intelligence feed. | Every argument here that can be modeled *is* modeled there. Each pillar chapter ends with a *"Work This Chapter on the Platform"* guide linking to the exact tools. |
+| **The Academy** | A structured executive-education layer of courses, tracks, and lessons — from foundational concepts to advanced payment-model design. Start at [/academy](https://healthtransformationreview.org/academy). | Lessons teach the book's concepts hands-on and deep-link to the tool that applies each one. |
+
+The connection runs in every direction. The book sends you to the platform through the chapter-ending tool guides. The platform sends you back to the book through *"From the Book"* callouts on every hub and tool. The Academy sends you to both. And the [AI Analyst](https://healthtransformationreview.org/chat) sits across all three — ask it a question and it answers from the book's evidence base *and* routes you to the tool, dashboard, or lesson that lets you go further. The practical consequence for you as a reader: whenever this book makes a claim you want to test against your own organization or state, there is almost always a tool waiting to let you do exactly that. Watch for the **EXPLORE ON THE PLATFORM** and **GO DEEPER — ACADEMY** callouts throughout the chapters; they are the doorways.
+
+::: {custom-style="CalloutTry"}
+**START HERE**
+
+New to the ecosystem? Open [healthtransformationreview.org/academy/getting-started](https://healthtransformationreview.org/academy/getting-started), declare your role, and the platform personalizes what it surfaces first. Prefer to explore on your own? The [Research Lab](https://healthtransformationreview.org/research-lab) is organized into six benches — one per pillar — and the [AI Analyst](https://healthtransformationreview.org/chat) can orient you to any of them.
+:::
+
 ## **How to Use This Book**
 
-This book has four primary reader profiles. Each has a different relationship to the material and a different way of getting maximum value from it.
+This book has four primary reader profiles. Each has a different relationship to the material and a different way of getting maximum value from it — in the book, on the platform, and in the Academy.
 
 ### **The Healthcare Policy Professional**
 
-You work in a government agency, a legislative office, a think tank, or a foundation focused on healthcare policy. Recommended path: Read the Introduction and Chapter 1 (the six-pillar framework and the execution sequence) in full. For the pillar you care most about, read the corresponding chapter in depth. Read Chapter 16 (the AHS Restructuring Roadmap) carefully — it is the most direct bridge between policy mandate and organizational design. Read Chapter 13 (The Future of Healthcare Transformation) for the national context.
+You work in a government agency, a legislative office, a think tank, or a foundation focused on healthcare policy. Recommended path: Read the Introduction and Chapter 1 (the six-pillar framework and the execution sequence) in full. For the pillar you care most about, read the corresponding chapter in depth. Read Chapter 16 (the AHS Restructuring Roadmap) carefully — it is the most direct bridge between policy mandate and organizational design. Read Chapter 13 (The Future of Healthcare Transformation) for the national context. *On the platform:* start with the [HTR Simulator](https://healthtransformationreview.org/htr-simulator) to model a state's readiness and the [fifty-state dashboard](https://healthtransformationreview.org/dashboard) to benchmark it, then work the [Policy & Quality Sciences bench](https://healthtransformationreview.org/research-lab/policy-quality) in the Research Lab. *In the Academy:* begin with the policy and payment-reform courses at [/academy/courses](https://healthtransformationreview.org/academy/courses).
 
 ### **The Healthcare Executive or Administrator**
 
-You lead a hospital, health system, health plan, ACO, or healthcare services organization. You are making decisions — about contracts, capital investments, workforce, technology — that the transformation environment is complicating. Recommended path: Read the Introduction for the overarching argument, then go directly to the chapters most relevant to your immediate decisions. Chapters 6-7 (Economics) for VBC contracts. Chapters 8-9 (Clinical) for care management programs. Chapters 4-5 (Technology) for infrastructure investment. Chapter 11 (Operations) for hospital transformation planning. Return to Chapter 1 for the integrating logic.
+You lead a hospital, health system, health plan, ACO, or healthcare services organization. You are making decisions — about contracts, capital investments, workforce, technology — that the transformation environment is complicating. Recommended path: Read the Introduction for the overarching argument, then go directly to the chapters most relevant to your immediate decisions. Chapters 6-7 (Economics) for VBC contracts. Chapters 8-9 (Clinical) for care management programs. Chapters 4-5 (Technology) for infrastructure investment. Chapter 11 (Operations) for hospital transformation planning. Return to Chapter 1 for the integrating logic. *On the platform:* run your own organization through the [Payment Models & VBC bench](https://healthtransformationreview.org/research-lab/payment-models) — the VBC Readiness Assessment and APM tools — and pressure-test your finances with the [Research Lab](https://healthtransformationreview.org/research-lab). *In the Academy:* take the Value-Based Care course at [/academy](https://healthtransformationreview.org/academy) before your next contract cycle.
 
 ### **The Vermont Practitioner**
 
-You work for AHS, GMCB, DVHA, the Vermont legislature, a Vermont hospital, a Blueprint practice, or a Vermont community organization. Recommended path: Read Appendix A (Vermont System Portrait) first, then Chapter 1 (the six-pillar framework and execution sequence) and Chapter 2 (the Policy Pillar — Acts 167 and 68). Then Chapter 16 (the AHS Restructuring Roadmap) as the operational framework for your work. Use the implementation timeline tables throughout as a working reference guide.
+You work for AHS, GMCB, DVHA, the Vermont legislature, a Vermont hospital, a Blueprint practice, or a Vermont community organization. Recommended path: Read Appendix A (Vermont System Portrait) first, then Chapter 1 (the six-pillar framework and execution sequence) and Chapter 2 (the Policy Pillar — Acts 167 and 68). Then Chapter 16 (the AHS Restructuring Roadmap) as the operational framework for your work. Use the implementation timeline tables throughout as a working reference guide. *On the platform:* the Vermont concept pages — [Act 167](https://healthtransformationreview.org/vermont-act-167), [Act 68](https://healthtransformationreview.org/vermont-act-68), the [AHEAD Model](https://healthtransformationreview.org/ahead-model) — and the [Vermont hospital dashboard](https://healthtransformationreview.org/dashboard/vermont/hospitals) turn the book's Vermont evidence into live, current data. Ask the [AI Analyst](https://healthtransformationreview.org/chat) about any Vermont statute or program.
 
 ### **The Healthcare Student or Researcher**
 
-You are building foundational knowledge in a graduate program or as an independent researcher. Recommended path: Read the entire book in order. Chapter 1 establishes the framework and execution sequence; Chapters 2-11 develop each pillar; Chapters 12-16 provide future context and the AHS restructuring roadmap. The Key Concepts sections at the end of each chapter are the glossary. The source notes are the bibliography. Use Vermont as the case study while building transferable analytical skills.
+You are building foundational knowledge in a graduate program or as an independent researcher. Recommended path: Read the entire book in order. Chapter 1 establishes the framework and execution sequence; Chapters 2-11 develop each pillar; Chapters 12-16 provide future context and the AHS restructuring roadmap. The Key Concepts sections at the end of each chapter are the glossary. The source notes are the bibliography. Use Vermont as the case study while building transferable analytical skills. *On the platform:* the [Academy](https://healthtransformationreview.org/academy) gives you a structured curriculum with certificates, and the entire [Research Lab](https://healthtransformationreview.org/research-lab) is a sandbox for reproducing the book's analyses yourself. Start at [/academy/getting-started](https://healthtransformationreview.org/academy/getting-started).
 
 ## **What This Book Cannot Do**
 
@@ -218,17 +250,29 @@ A policy intervention that passes question one but fails questions three, four, 
 
 The six pillars are not equal in their causal priority — enabling legislation (Policy) and payment reform (Economics) are preconditions that the other pillars depend on — but they are equal in their necessity. A transformed healthcare system requires all six to be functional.
 
-**Policy** — The legislative and regulatory environment that creates the mandatory architecture for transformation. Policy establishes what actors must do, what they are prohibited from doing, and what governance structures ensure accountability. Voluntary reform operates within the Policy pillar's constraints; structural transformation requires it to change. *Vermont application: Acts 167 and 68, the AHEAD Model State Agreement, and the Statewide Strategic Plan mandate are Vermont's Policy pillar interventions. Each converts voluntary reform into statutory obligation.*
+**Policy** — The legislative and regulatory environment that creates the mandatory architecture for transformation. Policy establishes what actors must do, what they are prohibited from doing, and what governance structures ensure accountability. Voluntary reform operates within the Policy pillar's constraints; structural transformation requires it to change.
 
-**Technology** — The data infrastructure, health information exchange, analytical platforms, and clinical technologies that make population health management possible at scale. The Technology pillar is the information substrate on which all other pillar functions depend — you cannot manage what you cannot measure. *Vermont application: VHCURES (all-payer claims database), VITL/VHIE (health information exchange), the AHS-GMCB data integration and analytics capability, AI scribe grants, and Vermont's Clinically Integrated Network are Technology pillar investments.*
+*Vermont application: Acts 167 and 68, the AHEAD Model State Agreement, and the Statewide Strategic Plan mandate are Vermont's Policy pillar interventions. Each converts voluntary reform into statutory obligation.*
 
-**Economics** — The payment and financial architecture that determines what behaviors the system rewards. The Economics pillar encompasses payment reform (from fee-for-service to value-based and global payment), financial modeling, total cost of care management, and the hospital financial sustainability that transformation requires. *Vermont application: Reference-based pricing (FY2027), global hospital budgets (FY2028–2030), and the AHEAD Model's total cost of care accountability are Vermont's Economics pillar interventions.*
+**Technology** — The data infrastructure, health information exchange, analytical platforms, and clinical technologies that make population health management possible at scale. The Technology pillar is the information substrate on which all other pillar functions depend — you cannot manage what you cannot measure.
 
-**Clinical** — The care delivery models, quality measurement frameworks, clinical workforce design, and patient care programs that determine how care is actually delivered. The Clinical pillar is where payment reform becomes patient outcomes — or fails to. *Vermont application: The Blueprint for Health (all-payer PCMH program), Collaborative Care Model behavioral health integration, CCBHC expansion, and the primary care investment strategy are Vermont's Clinical pillar interventions.*
+*Vermont application: VHCURES (all-payer claims database), VITL/VHIE (health information exchange), the AHS-GMCB data integration and analytics capability, AI scribe grants, and Vermont's Clinically Integrated Network are Technology pillar investments.*
 
-**Equity** — The programs, investments, and accountability structures that ensure transformation benefits reach all populations — and specifically those most harmed by the current system's failures. Equity is not a soft afterthought; it is an analytical requirement. A transformation that reduces average costs while widening disparities has failed. *Vermont application: Geographic equity across Vermont's 14 HSAs, SDOH investment through the EAST Fund and Blueprint HRSN screening, rural access preservation in the RBP and global budget design, and health equity metrics in Act 167/68 reporting are Vermont's Equity pillar interventions.*
+**Economics** — The payment and financial architecture that determines what behaviors the system rewards. The Economics pillar encompasses payment reform (from fee-for-service to value-based and global payment), financial modeling, total cost of care management, and the hospital financial sustainability that transformation requires.
 
-**Operations** — The organizational capacity, management infrastructure, administrative simplification, and implementation discipline that converts strategy into executed programs. The Operations pillar is where transformation plans become real or remain documents — the graveyard of well-designed reforms that could not be implemented. *Vermont application: The 14-hospital transformation planning process, RHRC technical assistance, the AHS HSA Coordinator model, the Division of Planning and Effectiveness, and EMS regionalization are Vermont's Operations pillar investments.*
+*Vermont application: Reference-based pricing (FY2027), global hospital budgets (FY2028–2030), and the AHEAD Model's total cost of care accountability are Vermont's Economics pillar interventions.*
+
+**Clinical** — The care delivery models, quality measurement frameworks, clinical workforce design, and patient care programs that determine how care is actually delivered. The Clinical pillar is where payment reform becomes patient outcomes — or fails to.
+
+*Vermont application: The Blueprint for Health (all-payer PCMH program), Collaborative Care Model behavioral health integration, CCBHC expansion, and the primary care investment strategy are Vermont's Clinical pillar interventions.*
+
+**Equity** — The programs, investments, and accountability structures that ensure transformation benefits reach all populations — and specifically those most harmed by the current system's failures. Equity is not a soft afterthought; it is an analytical requirement. A transformation that reduces average costs while widening disparities has failed.
+
+*Vermont application: Geographic equity across Vermont's 14 HSAs, SDOH investment through the EAST Fund and Blueprint HRSN screening, rural access preservation in the RBP and global budget design, and health equity metrics in Act 167/68 reporting are Vermont's Equity pillar interventions.*
+
+**Operations** — The organizational capacity, management infrastructure, administrative simplification, and implementation discipline that converts strategy into executed programs. The Operations pillar is where transformation plans become real or remain documents — the graveyard of well-designed reforms that could not be implemented.
+
+*Vermont application: The 14-hospital transformation planning process, RHRC technical assistance, the AHS HSA Coordinator model, the Division of Planning and Effectiveness, and EMS regionalization are Vermont's Operations pillar investments.*
 
 The table below characterizes each pillar's diagnostic function and structural role in the system — not as a repetition of the definitions above, but as a specification of what each pillar produces when functioning and what question it answers in the transformation logic.
 
@@ -245,19 +289,9 @@ The table below characterizes each pillar's diagnostic function and structural r
 
 ## **The Architecture of Interdependency: The Fifteen Dependency Relationships**
 
-The six pillars do not operate independently. They interact through a set of dependencies and feedback loops that determine whether transformation produces the outcomes it promises. Understanding these interactions is the core analytical skill this book develops.
+The six pillars do not operate independently. They interact through fifteen directed dependencies and feedback loops that determine whether transformation produces the outcomes it promises. Understanding these interactions is the core analytical skill this book develops.
 
-The foundational dependency is between Policy and Economics. Payment reform (Economics) requires policy authority — either statutory mandate or regulatory power — to be effective at scale. Vermont learned this lesson through a decade of voluntary payment reform efforts: the Vermont All-Payer ACO Model, OneCare's voluntary hospital participation, VITL's voluntary HIE connectivity. Each produced partial results because voluntary participation allowed the highest-cost actors to opt out. Act 68's mandatory RBP and global budget requirements are a Policy pillar response to the failure of Economics pillar interventions without Policy pillar backing.
-
-The second critical dependency is between Economics and Clinical. Payment reform changes the financial incentive structure; clinical redesign changes the care delivery model to respond to the new incentives. A hospital operating under a global budget has a financial incentive to prevent hospitalizations — but it can only act on that incentive if it has the primary care network, care coordination infrastructure, and behavioral health integration to actually keep patients out of the hospital. Without the Clinical pillar investment, the Economics pillar incentive produces financial pressure without clinical improvement.
-
-The third dependency is between Technology and all other pillars. You cannot attribute patients to hospitals for global budget purposes without accurate patient matching across providers. You cannot identify care gaps for quality improvement without population-level claims and clinical data. You cannot model the financial impact of service line closures without analytics infrastructure. You cannot monitor equity metrics without data stratified by race, income, and geography. Technology is the information substrate on which every other pillar's management functions depend.
-
-The Equity pillar has a different kind of dependency: it is simultaneously a constraint on every other pillar and a beneficiary of all of them. Every payment reform intervention, clinical redesign, and technology investment must be evaluated for its equity implications — does it reduce disparities or exacerbate them? Does it reach the populations that need it most or concentrate benefits among those already well-served? Act 68's goals explicitly include reducing health inequities alongside reducing costs and improving outcomes, recognizing that transformation that achieves the first two without the third is incomplete.
-
-The Operations pillar is the translation layer — the organizational capacity that converts policy intent, payment incentives, technology tools, clinical models, and equity goals into implemented programs with trained staff and measured outcomes. A transformation strategy that is analytically sound, financially compelling, technically feasible, and clinically validated will still fail if the organization responsible for executing it lacks the project-management infrastructure, the change-management capability, and the sustained leadership attention that execution requires.
-
-These five relationships are the framework's structural core. What follows develops the complete architecture: all fifteen directed dependency relationships between and among the six pillars, the specific mechanisms by which each operates, the failure modes that emerge when dependencies are ignored, and the Vermont evidence that confirms the structure with empirical specificity. Figure 1.B renders all fifteen relationships as a single matrix; the six-pillar framework map — available as an interactive visualization on Health Transformation Review — renders them as a navigable diagram.
+Figure 1.B renders all fifteen relationships as a single matrix: read each row as a source pillar and each column as the pillar it acts on. The bracketed tag names the kind of dependency — **ENABLES** (makes possible), **REQUIRES** (cannot function without), **DRIVES** (actively forces change in), **CONSTRAINS** (imposes a design limit on). The sections that follow take the relationships one source pillar at a time, naming the mechanism by which each operates, the failure mode that emerges when it is ignored, and the Vermont evidence that confirms it. (The same map is available as an interactive visualization on [Health Transformation Review](https://healthtransformationreview.org/research-lab).)
 
 | From ↓ / To → | Policy | Technology | Economics | Clinical | Equity | Operations |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -269,52 +303,6 @@ These five relationships are the framework's structural core. What follows devel
 | **Operations** | Enables data feedback loops | Requires workforce to run infrastructure | — | — | — | — |
 
 *Figure 1.B — The architecture of interdependency: the fifteen dependency relationships, read From-row to To-column. Source: six-pillar framework documentation; Vermont Health Transformation / HTR (2026).*
-
-The same fifteen relationships are restated below, grouped by source pillar, for precise reading. Read each block as *source pillar → the pillars it acts on.* The tag in brackets names the kind of dependency — **ENABLES** (makes possible), **REQUIRES** (cannot function without), **DRIVES** (actively forces change in), **CONSTRAINS** (imposes a design limit on).
-
-::: {custom-style="DepMap"}
-**POLICY** — 3 outbound
-
-→ **Economics** · [ENABLES] mandatory authority for structural payment reform
-
-→ **Equity** · [ENABLES] statutory accountability mandates
-
-→ **Operations** · [REQUIRES] statutory deadlines that force execution capacity
-
-**TECHNOLOGY** — 3 outbound
-
-→ **Economics** · [ENABLES] VBC financial management
-
-→ **Clinical** · [ENABLES] risk stratification and population health management
-
-→ **Equity** · [ENABLES] demographic stratification that reveals disparities
-
-**ECONOMICS** — 3 outbound
-
-→ **Technology** · [REQUIRES] the data infrastructure to measure total cost of care
-
-→ **Clinical** · [DRIVES] care-delivery redesign through payment incentives
-
-→ **Equity** · [REQUIRES] social risk adjustment in payment design
-
-**CLINICAL** — 2 outbound
-
-→ **Equity** · [ENABLES] access expansion through care-model reach
-
-→ **Operations** · [REQUIRES] execution infrastructure — workforce, credentialing, management
-
-**EQUITY** — 2 outbound (constraints)
-
-→ **Policy** · [CONSTRAINS] every policy decision through equity review
-
-→ **Clinical** · [CONSTRAINS] how care is delivered — cultural competency, language access
-
-**OPERATIONS** — 2 outbound (feedback)
-
-→ **Policy** · [ENABLES] the data feedback loop that makes policy self-correcting
-
-→ **Technology** · [REQUIRES] the workforce that runs the data infrastructure
-:::
 
 ### **Policy Dependencies: Three Relationships That Establish the Mandatory Architecture**
 
@@ -365,7 +353,7 @@ Value-based care contracts are agreements to share financial accountability for 
 ::: {custom-style="CalloutVT"}
 **VERMONT EVIDENCE**
 
-Vermont's AHEAD global budgets for hospitals, beginning January 2028, require GMCB to set prospective annual budgets based on historical Medicare spending adjusted for population risk. This calculation requires accurate VHCURES data, validated risk adjustment methodology, and an analytics platform capable of producing hospital-specific TCOC projections. The AHS-GMCB analytics vendor procurement underway in 2025–2026 is the Technology pillar investment that makes the Economics pillar's AHEAD implementation analytically executable.
+Vermont's AHEAD global budgets for hospitals, beginning January 2028, require GMCB to set prospective annual budgets based on historical Medicare spending adjusted for population risk. This calculation requires accurate VHCURES data, validated risk adjustment methodology, and an analytics platform capable of producing hospital-specific TCOC projections. The AHS-GMCB data integration and analytics capability being stood up in 2025–2026 is the Technology pillar investment that makes the Economics pillar's AHEAD implementation analytically executable.
 :::
 
 **Economics → Equity: VBC design must include social risk adjustment** · *REQUIRES*
@@ -389,7 +377,7 @@ This dependency runs in both directions between Technology and Economics: the Ec
 ::: {custom-style="CalloutVT"}
 **VERMONT EVIDENCE**
 
-VHCURES population health analytics make the APM financial modeling described in Chapter 7 possible. The APM Shared Savings Calculator, the Hospital Financial Stress Test, and the VBC Readiness Assessment — all tools in the HTR Research Lab — are built on VHCURES data logic. Vermont hospitals that invest in VHCURES analytics capability before AHEAD launches in January 2028 will be able to manage their global budgets proactively rather than reactively.
+VHCURES population health analytics make the APM financial modeling described in Chapter 7 possible. The APM Shared Savings Calculator, the Hospital Financial Stress Test, and the VBC Readiness Assessment — all tools in the [HTR Research Lab](https://healthtransformationreview.org/research-lab/payment-models) — are built on VHCURES data logic. Vermont hospitals that invest in VHCURES analytics capability before AHEAD launches in January 2028 will be able to manage their global budgets proactively rather than reactively.
 :::
 
 **Technology → Equity: Disaggregated data reveals disparities hidden in averages** · *ENABLES (critical)*
@@ -495,11 +483,11 @@ The most rigorous test of a dependency framework is not whether it describes how
 
 The dependency map is not merely a theoretical framework — it is a practical analytical tool for three management functions: transformation sequencing, risk identification, and investment prioritization.
 
-**Transformation sequencing — what must come first.** The dependency structure generates a partial ordering of interventions. Some investments cannot produce their expected results until enabling investments are in place. Getting the sequence wrong is not merely inefficient — it produces failed interventions that generate political resistance to subsequent correct interventions. The correct sequencing logic: Policy before Economics (mandatory authority must precede payment reform); Technology before Economics in its analytics function (the infrastructure for VBC contract management should be in place before full-risk contracts are signed); Clinical capacity before Operations scale; and Equity throughout, not at the end — it is a constraint, not a final review.
+**Transformation sequencing — what must come first.** The dependency structure generates a partial ordering of interventions: some investments cannot produce their expected results until enabling investments are in place. Getting the sequence wrong is not merely inefficient — it produces failed interventions that generate political resistance to subsequent correct interventions. Part Two of this chapter develops that ordering in full and stress-tests it against Vermont's OneCare failure.
 
-**Risk identification.** The dependency map identifies Vermont's vulnerabilities with precision. The critical path runs through the Technology pillar's analytics capability: AHEAD global budgets require VHCURES analytics, equity measurement requires demographic stratification, and clinical risk stratification requires the population health platform. The AHS-GMCB analytics vendor procurement — underway in 2025–2026 but not yet complete — is the single highest-risk gap in Vermont's current architecture. A delay does not merely delay one program; it delays the financial management capability for AHEAD, the equity measurement capability for the Statewide Strategic Plan, and the risk stratification capability for Blueprint's CCBHC expansion. Three dependencies converge on this single investment.
+**Risk identification.** The dependency map identifies Vermont's vulnerabilities with precision. The critical path runs through the Technology pillar's analytics capability: AHEAD global budgets require VHCURES analytics, equity measurement requires demographic stratification, and clinical risk stratification requires the population health platform. The AHS-GMCB analytics capability — being stood up in 2025–2026 but not yet complete — is the single highest-risk gap in Vermont's current architecture. A delay does not merely delay one program; it delays the financial management capability for AHEAD, the equity measurement capability for the Statewide Strategic Plan, and the risk stratification capability for Blueprint's CCBHC expansion. Three dependencies converge on this single investment.
 
-**Investment prioritization.** Not all pillar investments have equal leverage. An investment in a pillar with many inbound dependencies has higher leverage than one required by only a single pillar. The Technology pillar has the highest inbound dependency count in Vermont's current architecture (Economics, Clinical, and Operations all require it); Operations is second (Clinical and Policy require it). The highest-leverage investments in Vermont's current phase are therefore analytics vendor deployment, AHS organizational capacity building, and HCC gap closure at AHEAD-participating hospitals.
+**Investment prioritization.** Not all pillar investments have equal leverage. An investment in a pillar with many inbound dependencies has higher leverage than one required by only a single pillar. The Technology pillar has the highest inbound dependency count in Vermont's current architecture (Economics, Clinical, and Operations all require it); Operations is second (Clinical and Policy require it). The highest-leverage investments in Vermont's current phase are therefore analytics capability deployment, AHS organizational capacity building, and HCC gap closure at AHEAD-participating hospitals.
 
 ## **The Vermont Thread: Six Pillars in One System**
 
@@ -517,6 +505,8 @@ Vermont's healthcare transformation is the closest thing to a controlled experim
 *Figure 1.D — Vermont's six-pillar transformation map. Sources: Acts 167, 51, 55, 62, 68 of 2022–2025; AHEAD State Agreement; Vermont RHT Program Application; Oliver Wyman Act 167 Report.*
 
 This table is not a comprehensive inventory of Vermont's healthcare reform. It is a navigation map — a way of locating Vermont's specific interventions within the analytical framework that the subsequent chapters develop. The framework gives every Vermont policy intervention a structural home and every analytical concept a Vermont application.
+
+The chapter so far has established what the six pillars are and how they depend on one another. The remainder turns to the question those dependencies force: in what order must the pillars be built?
 
 ## **From Framework to Sequence: Why Order Is Not Optional**
 
@@ -576,7 +566,7 @@ OneCare operated without this. Care managers were working from claims data arriv
 A care manager responsible for 500 high-risk patients under a Total Cost of Care model needs to identify patients who are deteriorating before they are hospitalized. If her data arrives 60 days after the fact, she learns in March that a patient was hospitalized in January. The intervention opportunity is gone. If her data arrives within 24 to 48 hours — integrated clinical and claims feeds updated daily — she can see that a patient filled a new prescription last week, had an abnormal lab result three days ago, and has not seen their primary care provider in six months. She can call today, before the hospitalization.
 :::
 
-Vermont's AHEAD technology infrastructure addresses this directly: VHCURES provides longitudinal population data; VITL/VHIE provides clinical data exchange; and the AHS-GMCB Analytics Vendor provides the modeling layer for global budget management and equity monitoring. This is the substrate OneCare never built.
+Vermont's AHEAD technology infrastructure addresses this directly: VHCURES provides longitudinal population data; VITL/VHIE provides clinical data exchange; and the AHS-GMCB analytics capability provides the modeling layer for global budget management and equity monitoring. This is the substrate OneCare never built.
 
 ### **Sequencing Failure 3: The Cascade**
 
@@ -631,7 +621,7 @@ Vermont's legislative progression illustrates both. Act 167 established the diag
 
 Technology is the operating system on which every subsequent stage runs. It is not a layer added on top of a functioning reform. It is the foundation that makes reform functional. The required components: integrated clinical and claims data; data updated in near-real time; and shared infrastructure for organizations that cannot independently support sophisticated analytics.
 
-Vermont's VHCURES provides longitudinal population data. VITL/VHIE provides the clinical exchange. The AHS-GMCB Analytics Vendor provides the modeling for global budget design and equity monitoring. The Vermont CIN provides shared capability to rural hospitals that individually lack the scale to build these functions.
+Vermont's VHCURES provides longitudinal population data. VITL/VHIE provides the clinical exchange. The AHS-GMCB analytics capability provides the modeling for global budget design and equity monitoring. The Vermont CIN provides shared capability to rural hospitals that individually lack the scale to build these functions.
 
 The payment architecture design — Economics-as-design — happens in parallel during Stage 2. This is the work of specifying what the payment model needs to measure, which determines what the technology needs to do. But Economics-as-management — the operational work of running global budgets — does not go live until the technology substrate is functional.
 
@@ -661,14 +651,10 @@ Operations is the execution layer that converts all prior-stage investments into
 
 Operations is last not because it is least important, but because operational redesign requires the technology infrastructure, payment incentives, and clinical models of the preceding stages to already be in place. A hospital that redesigns its administrative operations before its payment model is live will optimize for a fee-for-service world that the reform is designed to replace.
 
-![The six-stage execution sequence: numbered Policy → Technology → Economics → Clinical → Equity → Operations, each with its diagnostic question and key action.](sequence_graphic.png)
-
-*Figure 1.2a — The six-stage execution sequence at a glance: each pillar's diagnostic question and the key action that defines its stage. The table below gives the full sequencing rationale and Vermont anchors.*
-
 | # | Pillar | Key action | Why this sequence | Vermont anchor |
 | :----: | :---- | :---- | :---- | :---- |
 | 1 | Policy | Establish enforceable authority, mandate participation, secure transformation capital | Nothing can be authorized, built, or funded without statutory permission. Mandatory architecture prevents high-cost actors from opting out. | Acts 167, 51, 68; AHEAD State Agreement; $195M RHT award |
-| 2 | Technology | Build integrated clinical + claims data infrastructure — real-time — before financial risk is assumed | Technology is the operating system. Must be operational before Economics goes live. "Managing Blind" is the failure mode. | VHCURES; VITL/VHIE; AHS-GMCB Analytics Vendor; Vermont CIN |
+| 2 | Technology | Build integrated clinical + claims data infrastructure — real-time — before financial risk is assumed | Technology is the operating system. Must be operational before Economics goes live. "Managing Blind" is the failure mode. | VHCURES; VITL/VHIE; AHS-GMCB analytics capability; Vermont CIN |
 | 3 | Economics | Deploy global budgets and RBP onto a system that can already see itself | Economics-as-management requires the technology substrate. Payment design (Economics-as-design) happens in parallel during Stage 2. | Global hospital budgets; RBP at ≤200% Medicare; EAST Fund up to $150M annually |
 | 4 | Clinical | Redesign care on aligned incentives | Clinical transformation is where ROI is realized — but only when payment incentives are live and technology identifies which patients need which interventions. | PCMH transformation; CoCM; CCBHC expansion; Blueprint 5.8:1 ROI |
 | 5 | Equity | Audit, calibrate, correct — with social risk adjustment embedded in payment design | Equity is a constraining dependency throughout. Without social risk adjustment, global budgets penalize safety-net providers. | HRSN screening; EAST Fund for SDOH; SRA in global budgets; REH model |
@@ -692,7 +678,7 @@ In practice, reading the critical path means identifying which investments are *
 
 The critical path is sequential by definition. But the framework does not require that *all* work be sequential. Many investments can proceed in parallel, as long as none of the parallel tracks violates a critical-path dependency.
 
-Vermont's current architecture illustrates this: while the Technology gate is being opened (analytics vendor deployment, VHCURES integration), parallel work proceeds on Equity design (social risk adjustment methodology for global budgets), Operations capacity building (RHRC hospital transformation planning, AHS PMO establishment), and Clinical infrastructure (Blueprint PCMH expansion, CCBHC certifications). None of this parallel work depends on the Technology gate being open — it can proceed simultaneously without violating any critical-path dependency.
+Vermont's current architecture illustrates this: while the Technology gate is being opened (analytics capability deployment, VHCURES integration), parallel work proceeds on Equity design (social risk adjustment methodology for global budgets), Operations capacity building (RHRC hospital transformation planning, AHS PMO establishment), and Clinical infrastructure (Blueprint PCMH expansion, CCBHC certifications). None of this parallel work depends on the Technology gate being open — it can proceed simultaneously without violating any critical-path dependency.
 
 The diagnostic question for any proposed parallel investment: *does this investment have an unmet upstream dependency?* If yes — if its effectiveness depends on a gate that is not yet open — it is not parallel work. It is premature work that will produce either wasted results or results that cannot be used until the upstream dependency is met.
 
@@ -705,36 +691,28 @@ In practice, embedding equity as a design constraint requires two organizational
 ::: {custom-style="CalloutTry"}
 **TRY THIS — Test a critical-path violation.**
 
-Open the **HTR Simulator** (`/htr-simulator`) and model an organization that funds a downstream pillar before its upstream gate is open — for example, high Economics ambition with a weak Technology score. Watch the composite readiness collapse. Then open the **Transformation Friction Index** (`/transformation-friction-index`) to see which pillar is your binding constraint. The principle is simpler to feel in the tool than to argue on the page: you cannot buy your way past a closed gate.
+Open the **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** and model an organization that funds a downstream pillar before its upstream gate is open — for example, high Economics ambition with a weak Technology score. Watch the composite readiness collapse. Then open the **[Transformation Friction Index](https://healthtransformationreview.org/transformation-friction-index)** to see which pillar is your binding constraint. The principle is simpler to feel in the tool than to argue on the page: you cannot buy your way past a closed gate.
 :::
 
 ::: {custom-style="CalloutVT"}
 **GO DEEPER — HTR Academy**
 
-The dependency mechanics behind these three principles — how payment incentives drive care redesign, why VBC contracts require data infrastructure first — are developed hands-on in the Academy's **Value-Based Care** course. Readers new to APM risk and total-cost-of-care accountability should start there before applying the sequencing framework to a live contract.
+The dependency mechanics behind these three principles — how payment incentives drive care redesign, why VBC contracts require data infrastructure first — are developed hands-on in the [Academy's](https://healthtransformationreview.org/academy) **Value-Based Care** course. Readers new to APM risk and total-cost-of-care accountability should start there before applying the sequencing framework to a live contract.
 :::
 
 ## **Five Sequencing Decisions That Organizations Get Wrong**
 
-### **Failure 1: Economics Without Policy Readiness**
+The OneCare autopsy above is the fully documented case. The same errors recur, in generalizable form, across every transformation effort. The table below is the diagnostic version — the pattern to recognize, the early-warning signals that reveal it before it fully cascades, and the correction — so a reform architect can catch a sequencing error in their own system while it is still cheap to reverse.
 
-Pattern: A payment reform program launches without mandatory policy architecture requiring all relevant actors to participate. Early warning signals: voluntary participation below 80%; persistent non-participation by highest-cost providers; contract redesigns driven by adverse selection rather than clinical results. Vermont evidence: OneCare Vermont. Correction: Act 68's mandatory RBP and global budgets. Irreversibility threshold: After a decade, the voluntary architecture had normalized — providers had built business models around non-participation that made the transition to mandatory reform more disruptive than it would have been at the outset.
+| Sequencing error | Early-warning signals | Vermont evidence | Correction |
+| :---- | :---- | :---- | :---- |
+| **Economics without Policy readiness** — payment reform launched without mandatory participation | Voluntary participation below 80%; highest-cost providers stay out; redesigns driven by adverse selection | OneCare Vermont (voluntary architecture normalized over a decade, making the later transition to mandatory reform more disruptive than it would have been at the outset) | Act 68 mandatory RBP + global budgets |
+| **Technology without Operations readiness** — platform deployed to an org that cannot use it | Adoption below 30% six months post-deployment; continued manual processes; staff workarounds | VITL: sound platform, incomplete adoption among smaller providers for lack of Operations-pillar support to connect and train them | Vermont CIN shared-services model |
+| **Clinical without financial alignment** — high-quality program run under fee-for-service | Program running at a loss absorbed by cross-subsidy; support contingent on that cross-subsidy; perpetual budget-cut risk | Blueprint PCMHs produce the 5.8:1 ROI, but under FFS most of it accrues to payers, not the practices generating it | AHEAD global budgets align incentives with clinical investment |
+| **Equity review at the end, not the beginning** — methodology finished, then sent for equity review | Equity staff flagging the same structural problems in finalized designs; high rate of equity modifications at approval stage | RBP methodology design is the live test case: preserving rural access and not defunding high-Medicaid hospitals is a design question, not a post-hoc correction | Health Equity Advisory Commission consulted at design stage, not comment stage |
+| **Operations execution without adequate capacity** — mandate outpaces organizational capacity | Statutory deadlines extended or waived; deliverables perpetually "in progress"; governance that convenes but does not decide | AHS must run 14 hospital transformation processes, AHEAD support, RBP finalization, and the Strategic Plan at once — capacity Oliver Wyman flagged as insufficient | RHRC builds hospital-level capacity before AHEAD accountability takes full effect |
 
-### **Failure 2: Technology Deployment Without Operations Readiness**
-
-Pattern: A technology platform is deployed to an organization lacking the IT staff, data governance, clinical workflow integration, and change management capacity to use it effectively. Early warning signals: adoption rates below 30% six months post-deployment; continued reliance on manual processes despite platform availability; clinical staff workarounds that bypass the platform. Vermont evidence: VITL has been operational for years; adoption among smaller Vermont providers remains incomplete not because VITL is poorly designed but because the Operations pillar infrastructure to connect, train, and support smaller providers is insufficient. Correction: Vermont CIN's shared services model — providing Technology pillar capability to organizations whose Operations pillar cannot support it independently.
-
-### **Failure 3: Clinical Programs Without Financial Alignment**
-
-Pattern: A high-quality clinical program is implemented under fee-for-service payment. Clinical results are produced but not financial results. The organization cannot sustain it. Early warning signals: program operating at a financial loss absorbed through cross-subsidy; leadership support contingent on continued favorable cross-subsidy; program perpetually at risk of budget cuts. Vermont evidence: Vermont's Blueprint for Health has operated under this partial misalignment. Blueprint PCMHs produce the documented 5.8-to-1 ROI — but under fee-for-service, most of that ROI accrues to payers rather than to the practices generating it. Correction: AHEAD global budgets align financial incentives with clinical investment.
-
-### **Failure 4: Equity Review at the End Rather Than the Beginning**
-
-Pattern: A payment reform methodology is completed and then submitted for equity review. The equity review identifies significant disparate impact. Redesign is expensive, politically complicated, and often incomplete. Early warning signals: equity staff consistently identifying the same structural problems in finalized designs; high rate of equity-related modifications at approval stage. Vermont evidence: Vermont's RBP methodology design process is the current test case. The design question — how to set reference prices in a way that preserves access for rural communities and does not defund hospitals serving high-Medicaid populations — is an equity question that must be answered in the methodology, not added as a correction after it is set. The Health Equity Advisory Commission consultation required by Act 68 must happen at the methodology design stage, not the comment stage.
-
-### **Failure 5: Operations Execution Without Adequate Capacity**
-
-Pattern: A statutory mandate requires organizational execution at a pace the organization's current Operations pillar capacity cannot support. Plans are produced. Deadlines are missed. Deliverables are partial. Early warning signals: statutory deadlines being extended or waived; deliverables consistently described as "in progress" at reporting dates; transformation governance structures that convene but do not decide. Vermont evidence: AHS must simultaneously manage 14 hospital transformation planning processes, AHEAD implementation support, RBP methodology finalization, Statewide Strategic Plan development, and ongoing program administration — with organizational capacity the Oliver Wyman analysis identified as insufficient. The RHRC engagement with all 14 Vermont hospitals is the correct sequencing: building hospital-level transformation capacity before AHEAD's clinical accountability requirements take full effect.
+*Figure 1.E — Five sequencing errors: the diagnostic pattern, early-warning signals, and correction for each. Source: HTR analysis; Vermont experience; Oliver Wyman Act 167 Report.*
 
 ## **Vermont's Implementation Timeline: Reading the Sequence in Statutory Deadlines**
 
@@ -743,7 +721,7 @@ Vermont's transformation is unusual in one critical respect: it has a legislativ
 | Pillar | Status (timeframe) | Where it stands |
 | :---- | :---- | :---- |
 | **Policy** | Completed (2022–2025) | Acts 167, 51, and 68 establish the mandatory architecture. Federal RHT award provides capital. AHEAD State Agreement signed January 2025. The Policy gate is fully open. |
-| **Technology** | In progress (2025–2026) | AHS-GMCB analytics vendor procurement underway. Vermont CIN under development. VHCURES attribution modeling in progress. AI scribe and RPM grants deployed. The current critical bottleneck — the Technology gate is partially open but not fully operational. |
+| **Technology** | In progress (2025–2026) | AHS-GMCB analytics capability being stood up. Vermont CIN under development. VHCURES attribution modeling in progress. AI scribe and RPM grants deployed. The current critical bottleneck — the Technology gate is partially open but not fully operational. |
 | **Economics** | Staged (2027–2028) | RBP mandatory beginning FY2027, global budgets mandatory beginning FY2028. The sequence is correct: mandatory payment reform follows mandatory policy authority and follows the technology build in design. |
 | **Clinical** | Parallel (2024–2028) | Blueprint PCMH expansion, CCBHC certifications, CoCM deployment proceed in parallel with Technology work — correctly, because they do not depend on the Technology or Economics gates being open to begin. |
 | **Operations** | Building (2025–2028) | RHRC engagement, AHS HSA Coordinator model, Division of Planning and Effectiveness, PMO structure — correctly sequenced to precede the peak execution demand of FY2027–2028. |
@@ -753,33 +731,33 @@ Vermont's transformation is unusual in one critical respect: it has a legislativ
 
 ### **The Current Vulnerability: The Technology-Economics Race**
 
-Vermont's most significant current sequencing risk is the gap between AHEAD's performance year start and the analytics vendor deployment timeline. Vermont hospitals will begin accumulating AHEAD financial accountability in January 2028 — updated per CMS's September 2025 announcement moving the Cohort 2 start from 2027 to 2028. If the AHS-GMCB analytics vendor is not fully operational by that date, hospitals will be making financial management decisions based on incomplete or lagged data for the first year of full AHEAD accountability.
+Vermont's most significant current sequencing risk is the gap between AHEAD's performance year start and the analytics capability deployment timeline. Vermont hospitals will begin accumulating AHEAD financial accountability in January 2028 — updated per CMS's September 2025 announcement moving the Cohort 2 start from 2027 to 2028. If the AHS-GMCB analytics capability is not fully operational by that date, hospitals will be making financial management decisions based on incomplete or lagged data for the first year of full AHEAD accountability.
 
-This is a manageable but costly risk. Vermont hospitals that invest in their own VHCURES analytics capability — particularly HCC gap closure, the highest-ROI pre-launch analytics investment — can partially compensate for the analytics vendor gap. A delay in analytics vendor selection and deployment does not merely delay one program: it delays the financial management capability for AHEAD, the equity measurement capability for the Statewide Strategic Plan, and the risk stratification capability for Blueprint's CCBHC expansion. Three dependencies converge on this single Technology pillar investment.
+This is a manageable but costly risk. Vermont hospitals that invest in their own VHCURES analytics capability — particularly HCC gap closure, the highest-ROI pre-launch analytics investment — can partially compensate for the analytics capability gap. A delay in that capability's deployment does not merely delay one program: it delays the financial management capability for AHEAD, the equity measurement capability for the Statewide Strategic Plan, and the risk stratification capability for Blueprint's CCBHC expansion. Three dependencies converge on this single Technology pillar investment.
 
 ## **Work This Chapter on the Platform**
 
-The execution-sequence argument is best understood by manipulating it, not just reading it. The HTR platform turns this chapter's three core claims — that the pillars are interdependent, that order is non-negotiable, and that getting the order wrong produces a measurable failure cascade — into tools you can run against your own organization or state.
+The execution-sequence argument is best understood by manipulating it, not just reading it. The [HTR platform](https://healthtransformationreview.org/research-lab) turns this chapter's three core claims — that the pillars are interdependent, that order is non-negotiable, and that getting the order wrong produces a measurable failure cascade — into tools you can run against your own organization or state.
 
 | Do this | On this tool | What to look for |
 | :---- | :---- | :---- |
 | Trace the 15 dependency relationships between the six pillars and see which downstream pillars a given gap disables | **Six-Pillar Map** — `/about/framework` | Click any pillar to highlight what it enables and what it depends on. Confirm visually why Technology sits upstream of Economics. |
-| Score a real organization or state across all six pillars and watch the composite readiness number respond | **HTR Simulator** — `/htr-simulator` | Drop one pillar's score to zero and observe the cascade — the simulator penalizes downstream readiness, reproducing the OneCare logic in Figure 1.1. |
-| Quantify where reform is losing momentum and which pillar is the binding constraint | **Transformation Friction Index** — `/transformation-friction-index` | Identify your own "Technology gate" bottleneck — the chapter's central Vermont vulnerability — before it becomes a financial one. |
+| Score a real organization or state across all six pillars and watch the composite readiness number respond | **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** | Drop one pillar's score to zero and observe the cascade — the simulator penalizes downstream readiness, reproducing the OneCare logic in Figure 1.1. |
+| Quantify where reform is losing momentum and which pillar is the binding constraint | **[Transformation Friction Index](https://healthtransformationreview.org/transformation-friction-index)** | Identify your own "Technology gate" bottleneck — the chapter's central Vermont vulnerability — before it becomes a financial one. |
 
 *Figure 1.3 — Hands-on platform tools for Chapter 1: working the execution-sequence argument on the HTR platform.*
 
 ::: {custom-style="CalloutTry"}
 **TRY THIS — Reproduce the OneCare cascade.**
 
-Open the **HTR Simulator** and build a profile with strong Economics ambition (high) but weak Policy mandate (voluntary) and weak Technology substrate (no integrated real-time data). The composite score should collapse — not because the Economics inputs are bad, but because the simulator enforces the same dependency logic that sank OneCare. Then fix the order: raise Policy and Technology first, and watch the same Economics inputs finally produce a viable score. That reversal *is* the argument of this chapter.
+Open the **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** and build a profile with strong Economics ambition (high) but weak Policy mandate (voluntary) and weak Technology substrate (no integrated real-time data). The composite score should collapse — not because the Economics inputs are bad, but because the simulator enforces the same dependency logic that sank OneCare. Then fix the order: raise Policy and Technology first, and watch the same Economics inputs finally produce a viable score. That reversal *is* the argument of this chapter.
 :::
 
 ## **Implications for You**
 
-If you are a Vermont hospital executive: The most important action you can take before AHEAD's performance year begins in January 2028 is completing HCC gap closure for your full Medicare-attributed population. This single Technology pillar investment improves risk adjustment accuracy, produces a more defensible global budget benchmark, and prevents the "Managing Blind" failure mode in your first AHEAD performance year. Do not wait for the AHS-GMCB analytics vendor to complete this work. Start with VHCURES direct access and your current analytics resources now.
+If you are a Vermont hospital executive: The most important action you can take before AHEAD's performance year begins in January 2028 is completing HCC gap closure for your full Medicare-attributed population. This single Technology pillar investment improves risk adjustment accuracy, produces a more defensible global budget benchmark, and prevents the "Managing Blind" failure mode in your first AHEAD performance year. Do not wait for the AHS-GMCB analytics capability to complete this work. Start with VHCURES direct access and your current analytics resources now.
 
-If you are an AHS or GMCB official: The Technology gate is your critical bottleneck, and it has a hard deadline — analytics capability must be operational before January 2028 AHEAD financial accountability begins. The three-dependency convergence — AHEAD management, Statewide Strategic Plan measurement, CCBHC risk stratification — means that a delay in the analytics vendor is a compound failure across multiple statutory obligations. This deserves the urgency of a critical-path emergency, not the pace of a standard procurement.
+If you are an AHS or GMCB official: The Technology gate is your critical bottleneck, and it has a hard deadline — analytics capability must be operational before January 2028 AHEAD financial accountability begins. The three-dependency convergence — AHEAD management, Statewide Strategic Plan measurement, CCBHC risk stratification — means that a delay in the analytics capability is a compound failure across multiple statutory obligations. This deserves the urgency of a critical-path emergency, not the pace of a standard procurement.
 
 If you are a Vermont legislator: The sequencing framework translates directly into the right oversight questions to ask AHS and GMCB at every reporting interval: Is the Technology gate open before the Economics gate goes live? Is the RBP methodology being designed with equity constraints from the beginning, or will the equity review happen at the approval stage? Is the RHRC engagement building hospital-level Operations capacity ahead of AHEAD's clinical accountability requirements? These three questions will determine whether Act 68's mandates produce the transformation they were designed for.
 
