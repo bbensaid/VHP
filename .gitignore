@@ -33,6 +33,9 @@ yarn-error.log*
 *.docx
 *.bak
 
+# The book manuscript IS the .docx — track it (overrides *.docx above)
+!HTR_Book_v42.docx
+
 # Company formation docs — contain personal data (SSN, address). Keep out of git.
 formation/
 # Book build snapshots (local only)
