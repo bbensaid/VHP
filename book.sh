@@ -51,7 +51,33 @@ commit() {
   ok "Committed to git (recoverable with: git log -- $DOCX)"
 }
 
+HOLDER_FILE=.book-holder
+holder() { [[ -f $HOLDER_FILE ]] && cat $HOLDER_FILE || echo author; }
+
 case "$CMD" in
+  mine|take)
+    echo "author" > $HOLDER_FILE
+    ok "You now hold the book. Claude will not touch the manuscript."
+    echo "  Upload HTR_Book_v42.docx to Google Docs and edit."
+    echo "  When done: download it here, then run ./book.sh"
+    exit 0 ;;
+
+  claude|give)
+    echo "claude" > $HOLDER_FILE
+    ok "Claude now holds the book. Do NOT edit in Google Docs until it is handed back."
+    exit 0 ;;
+
+  who)
+    h=$(holder)
+    if [[ $h == author ]]; then
+      echo "YOU hold the book. Claude will not edit it."
+      echo "Edit in Google Docs, download here, then run ./book.sh"
+    else
+      echo "CLAUDE holds the book. Do not edit in Google Docs right now —"
+      echo "your copy is going out of date. Wait for it to be handed back."
+    fi
+    exit 0 ;;
+
   check)
     python3 book-build/sync_from_gdocs.py
     ;;
@@ -84,5 +110,5 @@ case "$CMD" in
     ;;
 
   *)
-    echo "usage: ./book.sh [sync|build|check]"; exit 2 ;;
+    echo "usage: ./book.sh [sync|build|check|who|mine|claude]"; exit 2 ;;
 esac

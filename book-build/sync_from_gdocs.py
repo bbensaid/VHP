@@ -101,16 +101,48 @@ def main():
     shutil.copy2(DOCX, snap)
     print(f"snapshot: {os.path.relpath(snap, ROOT)}\n")
 
-    # ---- 3. baseline = the committed .docx ----------------------------------
-    base_blob = os.path.join(ARCH, f'.baseline-{stamp}.docx')
-    with open(base_blob, 'wb') as f:
-        f.write(subprocess.run(['git', '-C', ROOT, 'show', 'HEAD:HTR_Book_v42.docx'],
-                               capture_output=True).stdout)
+    # ---- 3. baseline = the build the author ACTUALLY started from -----------
+    # NOT simply HEAD. If Claude edited the manuscript after the author last
+    # downloaded, HEAD contains work the author's copy never had, and every one
+    # of those edits would show up here as something the author "deleted" —
+    # which is exactly the false alarm that burned us on 2026-07-27.
+    #
+    # So: walk back through the committed builds and pick the one whose text is
+    # CLOSEST to the download. That is the version the author was editing.
+    revs = sh('git', '-C', ROOT, 'log', '--format=%H', '-12',
+              '--', 'HTR_Book_v42.docx').split()
+    dl_words = set(words(' '.join(paragraphs(docx_to_text(DOCX)))))
+
+    best, best_rev, best_score = None, None, -1.0
+    for rev in revs:
+        blob = os.path.join(ARCH, f'.cand-{stamp}.docx')
+        data = subprocess.run(['git', '-C', ROOT, 'show', f'{rev}:HTR_Book_v42.docx'],
+                              capture_output=True).stdout
+        if not data:
+            continue
+        with open(blob, 'wb') as f:
+            f.write(data)
+        cand = paragraphs(docx_to_text(blob))
+        os.remove(blob)
+        cw = set(words(' '.join(cand)))
+        if not cw:
+            continue
+        score = len(cw & dl_words) / len(cw | dl_words)      # Jaccard
+        if score > best_score:
+            best, best_rev, best_score = cand, rev, score
+
+    if best is None:
+        sys.exit("could not find a committed build to compare against.")
+    if best_rev != revs[0]:
+        print(f"NOTE: your download matches an EARLIER build ({best_rev[:8]}), not the")
+        print( "      latest. Claude has edited the manuscript since you downloaded.")
+        print( "      Comparing against the version you actually started from, so")
+        print( "      Claude's newer edits are not misreported as your deletions.\n")
+    base_blob = None
 
     new_p  = paragraphs(docx_to_text(DOCX))
-    base_p = paragraphs(docx_to_text(base_blob))
+    base_p = best
     md_txt = open(MD, encoding='utf8').read()
-    os.remove(base_blob)
 
     # ---- 4. diff, classifying each change ----------------------------------
     sm = difflib.SequenceMatcher(None, base_p, new_p, autojunk=False)
