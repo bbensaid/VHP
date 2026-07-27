@@ -44,14 +44,20 @@ font(doc.styles['Normal'], name=SERIF, size=10.5, color=BODY)
 space(doc.styles['Normal'], before=0, after=7, line=1.15)
 
 # Headings: serif, near-black, restrained (book), stepped down from the report sizes.
-font(doc.styles['Heading 1'], name=HEAD, size=15, color=HEADCOLOR, bold=True)
-space(doc.styles['Heading 1'], before=18, after=8, line=1.1)
+#
+# SEPARATION: the earlier scale (15 / 12.5 / 11 against 10.5pt body) was nearly
+# flat — an H2 stood only 2pt above body text with 13pt of air, so a new major
+# section read as a continuation of the list above it. The sizes below widen the
+# steps and, more importantly, put real space ABOVE each heading: white space is
+# what signals "new section" to a reader, far more than point size.
+font(doc.styles['Heading 1'], name=HEAD, size=17, color=HEADCOLOR, bold=True)
+space(doc.styles['Heading 1'], before=26, after=10, line=1.1)
 doc.styles['Heading 1'].paragraph_format.keep_with_next=True
-font(doc.styles['Heading 2'], name=HEAD, size=12.5, color=HEADCOLOR, bold=True)
-space(doc.styles['Heading 2'], before=13, after=5, line=1.1)
+font(doc.styles['Heading 2'], name=HEAD, size=14, color=HEADCOLOR, bold=True)
+space(doc.styles['Heading 2'], before=24, after=7, line=1.1)   # 24pt above = clear break
 doc.styles['Heading 2'].paragraph_format.keep_with_next=True  # keep H2 with its first line only
-font(doc.styles['Heading 3'], name=HEAD, size=11, color=HEADCOLOR, bold=True)
-space(doc.styles['Heading 3'], before=10, after=4, line=1.1)
+font(doc.styles['Heading 3'], name=HEAD, size=11.5, color=HEADCOLOR, bold=True)
+space(doc.styles['Heading 3'], before=16, after=4, line=1.1)
 doc.styles['Heading 3'].paragraph_format.keep_with_next=True
 
 if 'Title' in [s.name for s in doc.styles]:
