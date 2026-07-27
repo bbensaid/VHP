@@ -13,11 +13,8 @@ import { dbAdmin } from "@/lib/db/client";
 import { normalizeHost } from "@/lib/brand";
 
 const TO      = "bechir.bensaid@gmail.com";
-// Resend's built-in test sender — works with zero domain setup, but only
-// delivers to the Resend account's own verified email (bechir.bensaid@gmail.com).
-// Once a sending domain is verified in Resend, swap this for e.g.
-// "HTR Tester <tester@yourdomain.com>".
-const FROM    = "HTR Tester <onboarding@resend.dev>";
+// Branded sender — healthtransformationreview.org is verified in Resend.
+const FROM    = "HTR <tester@healthtransformationreview.org>";
 const SUBJECT = (name: string, date: string) =>
   `[Beta Feedback] ${name} — ${date}`;
 

@@ -197,7 +197,7 @@ export default async function BookPage() {
           </div>
 
           <div className="flex flex-wrap gap-3">
-            <a href="/HTR_Book_v41.pdf" download="Transforming_American_Healthcare_HTR.pdf" className="inline-flex items-center gap-2 bg-white text-slate-900 px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-slate-100 transition-colors shadow-lg shadow-black/20">
+            <a href="/HTR_Book_v42.pdf" download="Transforming_American_Healthcare_HTR.pdf" className="inline-flex items-center gap-2 bg-white text-slate-900 px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-slate-100 transition-colors shadow-lg shadow-black/20">
               <ArrowDownTrayIcon className="w-4 h-4" />
               Download PDF
             </a>
@@ -243,13 +243,13 @@ export default async function BookPage() {
       <section className="mb-12">
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-xs font-black uppercase tracking-widest text-slate-400">Read the Full Book</h2>
-          <a href="/HTR_Book_v41.pdf" download="Transforming_American_Healthcare_HTR.pdf" className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors">
+          <a href="/HTR_Book_v42.pdf" download="Transforming_American_Healthcare_HTR.pdf" className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors">
             <ArrowDownTrayIcon className="w-3.5 h-3.5" />
             Download PDF
           </a>
         </div>
         <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50">
-          <iframe src="/HTR_Book_v41.pdf" className="w-full" style={{ height: "700px" }} title="Transforming American Healthcare — HTR Book" />
+          <iframe src="/HTR_Book_v42.pdf" className="w-full" style={{ height: "700px" }} title="Transforming American Healthcare — HTR Book" />
         </div>
       </section>
 
