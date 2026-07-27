@@ -3,7 +3,7 @@ The five forces this chapter develops — federal Medicaid retrenchment, the AHE
 
 Vermont Transformation Scorecard: Six-Pillar Status, April 2026.
 
-The table below consolidates Vermont’s transformation progress across all six pillars. It answers the question every reader should ask before reading this chapter’s forecast: where does Vermont actually stand? The full scorecard with metric-level detail appears in Appendix F. The signal column reflects HTR’s assessment as of April 2026.
+Figure 13.1 consolidates Vermont’s transformation progress across all six pillars. It answers the question every reader should ask before reading this chapter’s forecast: where does Vermont actually stand? The full scorecard with metric-level detail appears in Appendix F. The signal column reflects HTR’s assessment as of April 2026.
 (See the accompanying table.)
 Reading this scorecard as a system rather than as six independent measures is essential. The most dangerous pattern is not a single pillar failing — it is the combination of Policy and Economics on track while Technology remains at risk. Mandatory financial accountability (January 2028) without the analytics infrastructure to manage it is precisely the "Managing Blind" failure mode that destroyed OneCare Vermont. The Technology signal is therefore the most consequential number on this table.
 

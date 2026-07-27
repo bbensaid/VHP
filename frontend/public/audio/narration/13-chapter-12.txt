@@ -12,7 +12,7 @@ The Knowledge and Implementation Infrastructure.
 The HTR Platform — Four Components.
 
 THE WIRE — Real-time intelligence at healthtransformationreview.org across all six pillars. Convergence Newsletter (free weekly) for Observer subscribers.
-RESEARCH LAB — 19 interactive tools at healthtransformationreview.org. FHIR Lab, APM Design Lab, Health Equity Studio, Policy Simulator, and more.
+RESEARCH LAB — 24 interactive tools at healthtransformationreview.org. FHIR Lab, EMR/EHR Lab, Statewide EHR Modeler, APM Design Lab, Health Equity Studio, Policy Simulator, CIN & Shared Services Modeler, EMS Transformation Modeler, and more.
 HTR ACADEMY — Structured curriculum at healthtransformationreview.org. Foundation and advanced courses in APM mechanics, HEDIS, and transformation leadership.
 ADVISORY SERVICES — Strategic consulting, research, health IT, independent review, capability assessment, financial audit, regulatory navigation, and training. Contact: advisory@healthtransformationreview.org
 
