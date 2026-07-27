@@ -1,14 +1,24 @@
 #!/usr/bin/env python3
 """
-Extract clean narration transcripts from HTR_Book_v41.md, one .txt per
-chapter, named to match narration.ts's v41 scheme:
+Extract clean narration transcripts from the manuscript, one .txt per chapter,
+named to match narration.ts's scheme:
   Preface->00-preface, Introduction->01-introduction, Chapter N->{seq:02}-chapter-{N:02}
 Strips markdown/callout/table markup so the TTS voice reads prose. Tables and
 figures are replaced with a short spoken pointer ("See the accompanying table.").
-"""
-import re, os
 
-SRC='HTR_Book_v41.md'
+Usage:
+  python3 book-build/make_transcripts.py                    # current manuscript
+  python3 book-build/make_transcripts.py HTR_Book_v43.md    # explicit source
+
+Writing the .txt files is only step one. To (re)render the audio afterwards:
+  ./scripts/generate-narration-audio.sh          # macOS `say`, all chapters
+  ./scripts/generate-narration-audio.sh 02-chapter-01     # one chapter
+  ./scripts/generate-narration-piper.sh          # Piper (more natural voice)
+Both are local and free; regenerate only the chapters whose text actually moved.
+"""
+import re, os, sys
+
+SRC = sys.argv[1] if len(sys.argv) > 1 else 'HTR_Book_v42.md'
 OUT='frontend/public/audio/narration'
 os.makedirs(OUT, exist_ok=True)
 text=open(SRC, encoding='utf-8').read()
