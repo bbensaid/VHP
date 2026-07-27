@@ -716,7 +716,7 @@ A hospital that redesigns its administrative operations before its payment model
 
 ## **Three Sequencing Principles in Practice**
 
-The six-stage sequence is the *what*. Applying it to real investment decisions requires three operating principles — the rules a reform architect uses to decide what to fund now, what to fund in parallel, and what to hold until an upstream gate opens.
+Correctly applying the six-stage sequence to real investment decisions requires three operating principles — the rules a reform architect uses to decide what to fund now, what to fund in parallel, and what to hold until an upstream gate opens.
 
 ### **Principle 1: The Critical Path Is Non-Negotiable**
 
