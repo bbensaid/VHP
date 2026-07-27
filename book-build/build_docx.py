@@ -1232,55 +1232,58 @@ def rule_above_major_sections():
         pbdr.append(top); pPr.append(pbdr)
 
 def tighten_table_pagination():
-    """Reduce the big white voids that appear on the page BEFORE a table.
+    """Tables flow. No exceptions.
 
-    A table cannot split across a page, so Word shoves the whole thing to the
-    next page and leaves whatever gap remains. We cannot reflow text around a
-    break the pipeline can't see (pagination is decided by Word at render time,
-    and depends on the reader's font metrics). What we CAN do is stop making the
-    gap worse and let more body text fill it:
+    THE RULE (author's, 2026-07-27): every table may split across a page break,
+    and every table repeats its header row at the top of each new page. Nothing
+    is held back to keep a table whole.
 
-      1. Clear keepNext on the paragraph immediately before a table. That
-         paragraph was being dragged onto the table's page, widening the void.
-         Released, it stays put and fills the space.
-      2. Allow long tables to break across pages (cantSplit off on rows of tall
-         tables), so a table that cannot fit on one page no longer forces an
-         entire blank page ahead of itself.
-      3. Keep the caption glued to its table (keepNext on the caption's
-         predecessor is preserved for short tables only).
+    Why this and not something cleverer: a table that cannot split forces Word
+    to shove the whole thing to the next page, leaving a half-blank page behind
+    it. Earlier versions tried to pick which tables were "worth" keeping whole —
+    first by row count, then by estimated height — and every threshold left some
+    tables locked and some pages half empty. Letting them all flow removes the
+    cause instead of tuning the symptom. A split table is not a defect when the
+    header repeats: the reader still sees what every column means.
 
-    Short tables (<= 8 rows) keep the old all-or-nothing behaviour: they look
-    better whole, and the gap they leave is small.
+    Also releases keepNext on the paragraphs above each table, which otherwise
+    drags the lead-in text forward onto the table's page and widens the very gap
+    it was trying to avoid. The lead-ins name their figure explicitly
+    ("Figure 1.A characterizes…"), so they read fine a page earlier.
     """
-    LONG_TABLE_ROWS = 8
     for tbl in doc.tables:
         rows = tbl.rows
-        long_table = len(rows) > LONG_TABLE_ROWS
+        if not rows:
+            continue
 
-        # (2) long tables may split; short ones stay atomic
+        # 1. every row may break across pages
         for r in rows:
             trPr = r._tr.get_or_add_trPr()
             for old in trPr.findall(qn('w:cantSplit')):
                 trPr.remove(old)
-            if not long_table:
-                el = OxmlElement('w:cantSplit'); trPr.append(el)
 
-        # header row repeats when a long table does break
-        if long_table and rows:
-            trPr = rows[0]._tr.get_or_add_trPr()
-            if trPr.find(qn('w:tblHeader')) is None:
-                el = OxmlElement('w:tblHeader'); el.set(qn('w:val'), 'true')
-                trPr.append(el)
+        # 2. the header row repeats on every page the table continues onto
+        trPr = rows[0]._tr.get_or_add_trPr()
+        if trPr.find(qn('w:tblHeader')) is None:
+            el = OxmlElement('w:tblHeader'); el.set(qn('w:val'), 'true')
+            trPr.append(el)
+        # a repeating header must not itself be split mid-row
+        if trPr.find(qn('w:cantSplit')) is None:
+            trPr.append(OxmlElement('w:cantSplit'))
 
-        # (1) release the paragraph directly above a LONG table
-        if not long_table:
-            continue
+        # 3. let the text above the table stay where it is
         prev = tbl._tbl.getprevious()
-        if prev is not None and prev.tag == qn('w:p'):
+        released = 0
+        while prev is not None and prev.tag == qn('w:p') and released < 2:
             pPr = prev.find(qn('w:pPr'))
             if pPr is not None:
                 for kn in pPr.findall(qn('w:keepNext')):
                     pPr.remove(kn)
+                ps = pPr.find(qn('w:pStyle'))
+                if ps is not None and str(ps.get(qn('w:val'))).startswith('Heading'):
+                    break
+            prev = prev.getprevious()
+            released += 1
 
 def keep_lists_together():
     """Stop bullet lists from splitting across a page with a big void: set
