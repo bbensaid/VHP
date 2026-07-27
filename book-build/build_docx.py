@@ -14,7 +14,7 @@ Modern-editorial styled book builder. Post-pass does:
   - TOC on its OWN page; page break before each chapter
   - strip Pandoc heading bookmark anchors (the blue ribbon artifacts)
 """
-import sys, subprocess, os, re
+import sys, subprocess, os, re, copy
 from docx import Document
 from docx.shared import Pt, Inches, RGBColor
 from docx.oxml.ns import qn
@@ -1037,6 +1037,97 @@ def first_h1_el():
                     return ch
     return None
 
+def add_page_numbers():
+    """Bottom-right page numbers that START AT 1 ON THE PREFACE.
+
+    The cover and the Table of Contents must carry no number, so the document is
+    split into two sections:
+      - section 1 = cover + TOC          -> its own footer, left empty
+      - section 2 = Preface -> end       -> footer with a PAGE field, numbering
+                                            restarted at 1
+
+    The split is made by giving the LAST paragraph before the Preface (the TOC's
+    trailing page-break paragraph) its own sectPr. In Word a sectPr on a
+    paragraph ends the section AT that paragraph, so everything after it belongs
+    to the next section — the same rule the landscape-table code relies on.
+    """
+    h1 = first_h1_el()                      # the Preface heading
+    if h1 is None: return
+
+    # ---- 1. build the two footers on the document's single sectPr ------------
+    # python-docx exposes section objects; the document currently has one.
+    sec_all = doc.sections[0]
+
+    def _footer_page_field(footer, with_number):
+        """Right-aligned footer paragraph; PAGE field only when with_number."""
+        p = footer.paragraphs[0] if footer.paragraphs else footer.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+        for r in list(p.runs):
+            r._element.getparent().remove(r._element)
+        if not with_number:
+            return
+        r = p.add_run()
+        fld_b = OxmlElement('w:fldChar'); fld_b.set(qn('w:fldCharType'), 'begin')
+        instr = OxmlElement('w:instrText'); instr.set(qn('xml:space'), 'preserve')
+        instr.text = ' PAGE '
+        fld_e = OxmlElement('w:fldChar'); fld_e.set(qn('w:fldCharType'), 'end')
+        for el in (fld_b, instr, fld_e):
+            r._element.append(el)
+        _set_runs(p, size=9.5, color=RGBColor(0x55, 0x55, 0x55))
+
+    # ---- 2. create the numbered footer FIRST -------------------------------
+    # This must happen before the deepcopy below: touching sec_all.footer is what
+    # materialises footer1.xml and adds the <w:footerReference> to the document
+    # sectPr. Copying first would clone a sectPr that has no footer yet, and the
+    # reference would then land on the wrong (front-matter) section.
+    _footer_page_field(sec_all.footer, True)
+    sec_all.different_first_page_header_footer = False
+
+    # restart numbering at 1 on the body section (the document default sectPr,
+    # which governs everything from the last section break to the end)
+    pgnum = sec_all._sectPr.find(qn('w:pgNumType'))
+    if pgnum is None:
+        pgnum = OxmlElement('w:pgNumType')
+        sec_all._sectPr.append(pgnum)
+    pgnum.set(qn('w:start'), '1')
+
+    prev = h1.getprevious()
+    if prev is None or prev.tag != qn('w:p'):
+        return                       # nothing to split on: number everything
+
+    # ---- 3. split: the paragraph before the Preface ends the front section ---
+    # A paragraph-level sectPr terminates the section AT that paragraph, so this
+    # one governs the cover + TOC. It inherits the page setup but must carry
+    # neither the footer nor the restart, or the front matter would be numbered.
+    front_sectPr = copy.deepcopy(sec_all._sectPr)
+    for ref in front_sectPr.findall(qn('w:footerReference')):
+        front_sectPr.remove(ref)
+    for pn in front_sectPr.findall(qn('w:pgNumType')):
+        front_sectPr.remove(pn)
+    pPr = prev.find(qn('w:pPr'))
+    if pPr is None:
+        pPr = OxmlElement('w:pPr'); prev.insert(0, pPr)
+    pPr.append(front_sectPr)
+
+    # ---- 4. every intermediate section (landscape tables etc.) must inherit ---
+    # the numbered footer. A sectPr with no footerReference of its own inherits
+    # from the PREVIOUS section, and the landscape blocks sit between the front
+    # matter and the body — without an explicit reference the first of them
+    # would inherit the footerless front-matter section and blank the numbers
+    # from there on. Point them all at the same footer part.
+    fref = sec_all._sectPr.find(qn('w:footerReference'))
+    if fref is None:
+        return
+    rid = fref.get(qn('r:id'))
+    for sp in body.iter(qn('w:sectPr')):
+        if sp is sec_all._sectPr or sp is front_sectPr:
+            continue
+        if sp.find(qn('w:footerReference')) is not None:
+            continue
+        ref = OxmlElement('w:footerReference')
+        ref.set(qn('w:type'), 'default'); ref.set(qn('r:id'), rid)
+        sp.insert(0, ref)
+
 def _toc_line(text, name, level):
     """One TOC entry paragraph: styled TOC 1/2/3, the heading text as a hyperlink
     to its _Toc bookmark, a right dot-leader tab, then a PAGEREF field that shows
@@ -1111,6 +1202,86 @@ def chapter_page_breaks():
             if first: first=False; continue
             p._p.addprevious(page_break_para())
 
+def rule_above_major_sections():
+    """Draw a thin rule ABOVE every Heading 2 so a new major section is
+    unmistakable.
+
+    The reported problem: a long run of bolded items (the counterargument
+    sections, the analytical-payoff list) ends and a brand-new major section
+    begins, but nothing tells the eye that the list is over — the new section
+    reads as one more item in it. Size alone did not carry that signal.
+
+    A hairline above the heading, plus the widened space-before in the
+    stylesheet, makes the boundary explicit. Chapter openers (Heading 1) already
+    start a fresh page and need no rule.
+    """
+    for p in doc.paragraphs:
+        if p.style is None or p.style.name not in ('Heading 2',):
+            continue
+        pPr = p._p.get_or_add_pPr()
+        if pPr.find(qn('w:pBdr')) is not None:      # never double-rule
+            continue
+        # a heading sitting at the very top of a page would show a floating line
+        if pPr.find(qn('w:pageBreakBefore')) is not None:
+            continue
+        pbdr = OxmlElement('w:pBdr')
+        top = OxmlElement('w:top')
+        top.set(qn('w:val'), 'single'); top.set(qn('w:sz'), '6')      # hairline
+        top.set(qn('w:space'), '10')                                  # gap heading↔rule
+        top.set(qn('w:color'), 'C9D2DF')                              # pale navy
+        pbdr.append(top); pPr.append(pbdr)
+
+def tighten_table_pagination():
+    """Reduce the big white voids that appear on the page BEFORE a table.
+
+    A table cannot split across a page, so Word shoves the whole thing to the
+    next page and leaves whatever gap remains. We cannot reflow text around a
+    break the pipeline can't see (pagination is decided by Word at render time,
+    and depends on the reader's font metrics). What we CAN do is stop making the
+    gap worse and let more body text fill it:
+
+      1. Clear keepNext on the paragraph immediately before a table. That
+         paragraph was being dragged onto the table's page, widening the void.
+         Released, it stays put and fills the space.
+      2. Allow long tables to break across pages (cantSplit off on rows of tall
+         tables), so a table that cannot fit on one page no longer forces an
+         entire blank page ahead of itself.
+      3. Keep the caption glued to its table (keepNext on the caption's
+         predecessor is preserved for short tables only).
+
+    Short tables (<= 8 rows) keep the old all-or-nothing behaviour: they look
+    better whole, and the gap they leave is small.
+    """
+    LONG_TABLE_ROWS = 8
+    for tbl in doc.tables:
+        rows = tbl.rows
+        long_table = len(rows) > LONG_TABLE_ROWS
+
+        # (2) long tables may split; short ones stay atomic
+        for r in rows:
+            trPr = r._tr.get_or_add_trPr()
+            for old in trPr.findall(qn('w:cantSplit')):
+                trPr.remove(old)
+            if not long_table:
+                el = OxmlElement('w:cantSplit'); trPr.append(el)
+
+        # header row repeats when a long table does break
+        if long_table and rows:
+            trPr = rows[0]._tr.get_or_add_trPr()
+            if trPr.find(qn('w:tblHeader')) is None:
+                el = OxmlElement('w:tblHeader'); el.set(qn('w:val'), 'true')
+                trPr.append(el)
+
+        # (1) release the paragraph directly above a LONG table
+        if not long_table:
+            continue
+        prev = tbl._tbl.getprevious()
+        if prev is not None and prev.tag == qn('w:p'):
+            pPr = prev.find(qn('w:pPr'))
+            if pPr is not None:
+                for kn in pPr.findall(qn('w:keepNext')):
+                    pPr.remove(kn)
+
 def keep_lists_together():
     """Stop bullet lists from splitting across a page with a big void: set
     keepNext on every list item except the last in each run, and keepLines on
@@ -1166,10 +1337,13 @@ style_captions()
 style_inline_figures()
 wide_tables_to_landscape()
 style_key_concepts()
+rule_above_major_sections()
+tighten_table_pagination()
 keep_lists_together()
 chapter_page_breaks()
 add_cover()
 insert_toc()
+add_page_numbers()        # AFTER insert_toc: splits on the TOC's trailing break
 
 # update fields on open
 doc.settings.element.append(_uf := OxmlElement('w:updateFields')); _uf.set(qn('w:val'),'true')

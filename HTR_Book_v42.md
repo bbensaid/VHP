@@ -102,37 +102,45 @@ This book uses Vermont as its primary teaching case for the reasons explained ab
 
 **Use the “Implications for You” sections as your entry point.** Most chapters close by addressing different reader roles directly — hospital executives, payers, state officials, clinicians. These sections are written to apply regardless of any state context, and are often the fastest way to find the actionable content inside a Vermont-heavy chapter. If you read nothing else in a chapter, read that section, then go back for the supporting detail you need.
 
-In short: treat Vermont the way a business or medical textbook treats a case study. The case is specific so that the lesson does not have to be. Vermont is not the audience for this book. Vermont is the evidence.
+In short: treat Vermont the way a business or medical textbook treats a case study. The case is specific so that the lesson does not have to be.
+
+::: {custom-style="Banner"}
+Vermont is not the audience for this book. Vermont is the evidence.
+:::
 
 ## **The Strongest Case Against This Book's Argument**
 
 This book argues that structural, mandatory reform can succeed where voluntary reform has failed. That is a contested claim, and intellectual honesty requires engaging the strongest version of the opposition before asking the reader to proceed on that premise.
 
-### **The Price Regulation Argument**
+### **1. The Price Regulation Argument**
 
 Economists and hospital advocates argue that mandatory reference-based pricing — tying hospital payment to a percentage of Medicare rates — will reduce access rather than improve affordability. If hospitals cannot cover their costs at regulated prices, they will close service lines, exit markets, or reduce Medicaid volumes. Vermont, by this reading, is not pioneering a solution. It is forcing a reckoning that will harm the rural communities it claims to protect.
 
 This is a serious argument. Maryland's experience with hospital global budgets is the primary counterevidence: Maryland has operated all-payer rate regulation since 1977 and maintains rural hospital access comparable to or better than non-regulated states, while holding per-capita cost growth below the national average. But Maryland's model is decades old, built during a different regulatory and demographic environment. Vermont's experiment is newer, its hospitals more financially fragile, and its rural population more dispersed. The access-reduction risk is real and this book does not dismiss it. Chapter 14 (Political Sustainability) analyzes it directly as the primary failure mode to monitor.
 
-### **The Global Budget Argument**
+### **2. The Global Budget Argument**
 
 Critics of hospital global budgets argue that fixed revenue envelopes create perverse incentives: hospitals that reduce utilization under a global budget model may shift costs rather than eliminate them, delay necessary care to manage within budget, or game quality metrics rather than improve quality. The literature on budget caps and quality outcomes is genuinely mixed.
 
 This book's response is not that global budgets are without risk. It is that the alternative — fee-for-service payment that makes population health management financially irrational — has a documented record of failure that is longer and more extensive than the record of global budget problems. The choice is not between a perfect payment model and a risky one. It is between a payment model that systematically rewards volume and one that, with adequate safeguards, can reward outcomes. Chapter 6 (the Economics Pillar) develops the specific safeguards Vermont's model requires.
 
-### **The AHEAD Skepticism Argument**
+### **3. The AHEAD Skepticism Argument**
 
 CMMI has operated innovation models for fifteen years. Most have not produced the savings they projected. AHEAD's predecessor — the Vermont All-Payer ACO Model — produced modest results over nine years despite significant federal and state investment. Why will AHEAD be different?
 
 This is perhaps the strongest challenge in the book. The answer requires acknowledging the critique honestly: CMMI models have generally underperformed their projections, and there is no guarantee AHEAD will be different. What is different about Vermont's approach is the mandatory statutory architecture that AHEAD did not have in its predecessor: Acts 167 and 68 require hospitals to participate in global budgets and reference-based pricing regardless of whether AHEAD succeeds. Vermont's transformation does not depend on AHEAD — AHEAD amplifies it. If AHEAD underperforms, Vermont's mandatory state framework remains. Chapter 13 (The Future of Healthcare Transformation) returns to this directly.
 
-### **The Oliver Wyman Independence Question**
+### **4. The AHEAD Durability Argument**
+
+AHEAD is an eleven-year CMMI model running from 2024 through December 2035, under a single innovation-center framework that has already been modified once (the January 2026 changes extending the end date and adding new accountability requirements) and will span at least one more presidential transition before Vermont's Cohort 2 implementation even begins in January 2028. CMMI's own track record — acknowledged elsewhere in this book — includes models redesigned or discontinued mid-course. The book's response to AHEAD skepticism is that Vermont's mandatory state framework under Acts 167 and 68 remains in force even if AHEAD underperforms or is altered. That is true for the commercial and Medicaid components of Vermont's reform, which Act 68 governs directly. It is not fully true for the Medicare component specifically: Medicare global budgets exist in Vermont's framework only because AHEAD provides them, and no state statute can substitute for a federal payment model on Medicare claims. A reader assessing AHEAD durability should therefore distinguish between “Vermont's reform survives if AHEAD changes” (true, for the commercial and Medicaid pillars) and “Vermont's Medicare global budget survives if AHEAD changes” (not guaranteed, and not within any state's control).
+
+### **5. The Oliver Wyman Independence Question**
 
 This book relies heavily on Oliver Wyman's Act 167 analysis. Oliver Wyman was paid $1 million by the Vermont state government to produce a report that would support the case for reform. That is not independence. Readers should note that the Oliver Wyman financial projections — hospital deficit trajectories, administrative cost benchmarks, workforce shortage estimates — cannot all be independently verified from public sources, and the firm had a client relationship that may have shaped how it framed its conclusions.
 
 This book treats Oliver Wyman's quantitative findings as estimates, not certainties, and notes throughout where specific figures cannot be independently confirmed. The structural argument — that Vermont's system faces a genuine financial crisis requiring structural response — is supported by public GMCB data, independent KFF analysis, and GMCB's own enforcement actions that do not depend on Oliver Wyman's projections.
 
-### **The Vermont-Specificity Argument**
+### **6. The Vermont-Specificity Argument**
 
 The most common version of this objection does not concern any single policy. It is a reaction to the book as a whole: this is a book about one small, unusually homogeneous, unusually transparent state with an unusual regulatory body — does any of it actually apply to a large, diverse, politically fragmented state with a dozen competing health systems and no Green Mountain Care Board?
 
@@ -144,17 +152,13 @@ The second part is the real limitation: this book cannot, in one volume, also pr
 
 Put plainly: a reader who finishes this book having learned a great deal about Vermont but nothing transferable about sequencing, payment design, technology architecture, equity accountability, or operational execution has found a real gap between this book's intent and its execution — not a correct reading of a book that was only ever about Vermont. The “How to Read This Book If Vermont Isn't Your Context” section earlier in this Introduction, and the “Implications for You” sections that close most chapters, exist specifically to close that gap.
 
-### **The Transition-Window Argument**
+### **7. The Transition-Window Argument**
 
 Reference-based pricing and global hospital budgets shift a hospital from a system where it can grow revenue by growing volume to one where revenue is fixed or capped. For hospitals already operating below break-even — which, per Oliver Wyman's own numbers, describes most of Vermont's system today — the most dangerous financial period may not be the destination (FY2030 statewide global budgets) but the transition itself: the years in which RBP is phasing in, global budgets are not yet operational statewide, and the underlying losses documented in Chapter 6 remain unaddressed. This book documents both the destination and the starting crisis in detail. It is more cautious about the specific financial bridge that carries a hospital across that gap — the combination of Rural Health Transformation Program funds, AHEAD's Equity, Access, and Statewide Transformation (EAST) Fund payments, and the sequencing of Medicaid versus commercial global budgets — which together determine whether a given hospital remains solvent in fiscal years 2027 and 2028 specifically. A hospital CFO's most pressing question is rarely “what does the system look like in 2030?” It is “what keeps us open in 2027?” Appendix H addresses this transition window directly.
 
-### **The Enforcement Question**
+### **8. The Enforcement Question**
 
 This book repeatedly emphasizes that Vermont's approach is mandatory rather than voluntary, and treats this as the central correction to OneCare's design flaw. But a mandatory regime is only as real as its enforcement, and a skeptical reader is entitled to ask: what actually happens to a hospital that does not comply — that refuses a global budget, or continues billing above the reference-based-pricing ceiling? Act 68 gives GMCB subpoena authority and data-sharing power with the Department of Financial Regulation, and the answer is no longer hypothetical. GMCB's FY23 enforcement actions against UVMMC ($80.3M overage) and RRMC ($11.1M overage) were the first such enforcement actions in Vermont's regulatory history, and UVMMC's subsequent court challenge to that enforcement — Vermont's largest, most powerful hospital system testing GMCB's authority directly — was decided against UVMMC. That outcome is the strongest available evidence that “mandatory” in this book's framework describes a regime that has been tested against its most resourced potential opponent and held. Appendix H develops the enforcement mechanics and this case in more detail.
-
-### **The AHEAD Durability Argument**
-
-AHEAD is an eleven-year CMMI model running from 2024 through December 2035, under a single innovation-center framework that has already been modified once (the January 2026 changes extending the end date and adding new accountability requirements) and will span at least one more presidential transition before Vermont's Cohort 2 implementation even begins in January 2028. CMMI's own track record — acknowledged elsewhere in this book — includes models redesigned or discontinued mid-course. The book's response to AHEAD skepticism is that Vermont's mandatory state framework under Acts 167 and 68 remains in force even if AHEAD underperforms or is altered. That is true for the commercial and Medicaid components of Vermont's reform, which Act 68 governs directly. It is not fully true for the Medicare component specifically: Medicare global budgets exist in Vermont's framework only because AHEAD provides them, and no state statute can substitute for a federal payment model on Medicare claims. A reader assessing AHEAD durability should therefore distinguish between “Vermont's reform survives if AHEAD changes” (true, for the commercial and Medicaid pillars) and “Vermont's Medicare global budget survives if AHEAD changes” (not guaranteed, and not within any state's control).
 
 These are not the only critiques of Vermont's approach. They are the most serious ones, and this book engages them throughout rather than assuming the policy case is settled. It is not settled. Vermont is the experiment. This book is the analytical framework for watching it clearly.
 
@@ -188,19 +192,39 @@ This book has four primary reader profiles. Each has a different relationship to
 
 ### **The Healthcare Policy Professional**
 
-You work in a government agency, a legislative office, a think tank, or a foundation focused on healthcare policy. Recommended path: Read the Introduction and Chapter 1 (the six-pillar framework and the execution sequence) in full. For the pillar you care most about, read the corresponding chapter in depth. Read Chapter 16 (the AHS Restructuring Roadmap) carefully — it is the most direct bridge between policy mandate and organizational design. Read Chapter 13 (The Future of Healthcare Transformation) for the national context. *On the platform:* start with the [HTR Simulator](https://healthtransformationreview.org/htr-simulator) to model a state's readiness and the [fifty-state dashboard](https://healthtransformationreview.org/dashboard) to benchmark it, then work the [Policy & Quality Sciences bench](https://healthtransformationreview.org/research-lab/policy-quality) in the Research Lab. *In the Academy:* begin with the policy and payment-reform courses at [/academy/courses](https://healthtransformationreview.org/academy/courses).
+You work in a government agency, a legislative office, a think tank, or a foundation focused on healthcare policy.
+
+**Recommended path.** Read the Introduction and Chapter 1 (the six-pillar framework and the execution sequence) in full. For the pillar you care most about, read the corresponding chapter in depth. Read Chapter 16 (the AHS Restructuring Roadmap) carefully — it is the most direct bridge between policy mandate and organizational design. Read Chapter 13 (The Future of Healthcare Transformation) for the national context.
+
+**On the platform.** Start with the [HTR Simulator](https://healthtransformationreview.org/htr-simulator) to model a state's readiness and the [fifty-state dashboard](https://healthtransformationreview.org/dashboard) to benchmark it, then work the [Policy & Quality Sciences bench](https://healthtransformationreview.org/research-lab/policy-quality) in the Research Lab.
+
+**In the Academy.** Begin with the policy and payment-reform courses at [/academy/courses](https://healthtransformationreview.org/academy/courses).
 
 ### **The Healthcare Executive or Administrator**
 
-You lead a hospital, health system, health plan, ACO, or healthcare services organization. You are making decisions — about contracts, capital investments, workforce, technology — that the transformation environment is complicating. Recommended path: Read the Introduction for the overarching argument, then go directly to the chapters most relevant to your immediate decisions. Chapters 6-7 (Economics) for VBC contracts. Chapters 8-9 (Clinical) for care management programs. Chapters 4-5 (Technology) for infrastructure investment. Chapter 11 (Operations) for hospital transformation planning. Return to Chapter 1 for the integrating logic. *On the platform:* run your own organization through the [Payment Models & VBC bench](https://healthtransformationreview.org/research-lab/payment-models) — the VBC Readiness Assessment and APM tools — and pressure-test your finances with the [Research Lab](https://healthtransformationreview.org/research-lab). *In the Academy:* take the Value-Based Care course at [/academy](https://healthtransformationreview.org/academy) before your next contract cycle.
+You lead a hospital, health system, health plan, ACO, or healthcare services organization. You are making decisions — about contracts, capital investments, workforce, technology — that the transformation environment is complicating.
+
+**Recommended path.** Read the Introduction for the overarching argument, then go directly to the chapters most relevant to your immediate decisions. Chapters 6-7 (Economics) for VBC contracts. Chapters 8-9 (Clinical) for care management programs. Chapters 4-5 (Technology) for infrastructure investment. Chapter 11 (Operations) for hospital transformation planning. Return to Chapter 1 for the integrating logic.
+
+**On the platform.** Run your own organization through the [Payment Models & VBC bench](https://healthtransformationreview.org/research-lab/payment-models) — the VBC Readiness Assessment and APM tools — and pressure-test your finances with the [Research Lab](https://healthtransformationreview.org/research-lab).
+
+**In the Academy.** Take the Value-Based Care course at [/academy](https://healthtransformationreview.org/academy) before your next contract cycle.
 
 ### **The Vermont Practitioner**
 
-You work for AHS, GMCB, DVHA, the Vermont legislature, a Vermont hospital, a Blueprint practice, or a Vermont community organization. Recommended path: Read Appendix A (Vermont System Portrait) first, then Chapter 1 (the six-pillar framework and execution sequence) and Chapter 2 (the Policy Pillar — Acts 167 and 68). Then Chapter 16 (the AHS Restructuring Roadmap) as the operational framework for your work. Use the implementation timeline tables throughout as a working reference guide. *On the platform:* the Vermont concept pages — [Act 167](https://healthtransformationreview.org/vermont-act-167), [Act 68](https://healthtransformationreview.org/vermont-act-68), the [AHEAD Model](https://healthtransformationreview.org/ahead-model) — and the [Vermont hospital dashboard](https://healthtransformationreview.org/dashboard/vermont/hospitals) turn the book's Vermont evidence into live, current data. Ask the [AI Analyst](https://healthtransformationreview.org/chat) about any Vermont statute or program.
+You work for AHS, GMCB, DVHA, the Vermont legislature, a Vermont hospital, a Blueprint practice, or a Vermont community organization.
+
+**Recommended path.** Read Appendix A (Vermont System Portrait) first, then Chapter 1 (the six-pillar framework and execution sequence) and Chapter 2 (the Policy Pillar — Acts 167 and 68). Then Chapter 16 (the AHS Restructuring Roadmap) as the operational framework for your work. Use the implementation timeline tables throughout as a working reference guide.
+
+**On the platform.** The Vermont concept pages — [Act 167](https://healthtransformationreview.org/vermont-act-167), [Act 68](https://healthtransformationreview.org/vermont-act-68), the [AHEAD Model](https://healthtransformationreview.org/ahead-model) — and the [Vermont hospital dashboard](https://healthtransformationreview.org/dashboard/vermont/hospitals) turn the book's Vermont evidence into live, current data. Ask the [AI Analyst](https://healthtransformationreview.org/chat) about any Vermont statute or program.
 
 ### **The Healthcare Student or Researcher**
 
-You are building foundational knowledge in a graduate program or as an independent researcher. Recommended path: Read the entire book in order. Chapter 1 establishes the framework and execution sequence; Chapters 2-11 develop each pillar; Chapters 12-16 provide future context and the AHS restructuring roadmap. The Key Concepts sections at the end of each chapter are the glossary. The source notes are the bibliography. Use Vermont as the case study while building transferable analytical skills. *On the platform:* the [Academy](https://healthtransformationreview.org/academy) gives you a structured curriculum with certificates, and the entire [Research Lab](https://healthtransformationreview.org/research-lab) is a sandbox for reproducing the book's analyses yourself. Start at [/academy/getting-started](https://healthtransformationreview.org/academy/getting-started).
+You are building foundational knowledge in a graduate program or as an independent researcher.
+
+**Recommended path.** Read the entire book in order. Chapter 1 establishes the framework and execution sequence; Chapters 2-11 develop each pillar; Chapters 12-16 provide future context and the AHS restructuring roadmap. The Key Concepts sections at the end of each chapter are the glossary. The source notes are the bibliography. Use Vermont as the case study while building transferable analytical skills.
+
+**On the platform.** The [Academy](https://healthtransformationreview.org/academy) gives you a structured curriculum with certificates, and the entire [Research Lab](https://healthtransformationreview.org/research-lab) is a sandbox for reproducing the book's analyses yourself. Start at [/academy/getting-started](https://healthtransformationreview.org/academy/getting-started).
 
 ## **What This Book Cannot Do**
 
@@ -234,7 +258,11 @@ In 2010, the Affordable Care Act created the Center for Medicare and Medicaid In
 
 The pattern of failure across CMMI models is instructive. Models that addressed only the Economics pillar — changing what Medicare paid without addressing how care was delivered or whether providers had the infrastructure to respond — generated financial pressure without behavioral change. Models that addressed only the Clinical pillar — redesigning care coordination or care management programs — produced clinical improvements that the payment system then penalized by reducing volume-based revenue. Models that required Technology pillar investment — electronic health records, population health platforms, data exchange — found that providers lacked the operational capacity to use the tools effectively.
 
-The lesson is not that payment reform, clinical redesign, or technology investment is wrong. It is that each intervention, pursued in isolation, runs into the constraints created by the pillars it ignores. This is the core analytical argument of the six-pillar framework: healthcare transformation is a system problem, and system problems require system solutions.
+The lesson is not that payment reform, clinical redesign, or technology investment is wrong. It is that each intervention, pursued in isolation, runs into the constraints created by the pillars it ignores. This is the core analytical argument of the six-pillar framework.
+
+::: {custom-style="Banner"}
+Healthcare transformation is a system problem, and system problems require system solutions.
+:::
 
 Every major healthcare transformation framework in the past thirty years has identified the same list of necessary conditions. Pay differently. Redesign care delivery. Build data infrastructure. Address social determinants. Ensure equity. Execute operationally. The list is right. The reasoning behind it is right. And yet the transformation that the list is supposed to produce has not arrived — not in most states, not at national scale, not with the speed and completeness the evidence has long indicated is possible.
 
@@ -274,7 +302,7 @@ The six pillars are not equal in their causal priority — enabling legislation 
 
 *Vermont application: The 14-hospital transformation planning process, RHRC technical assistance, the AHS HSA Coordinator model, the Division of Planning and Effectiveness, and EMS regionalization are Vermont's Operations pillar investments.*
 
-The table below characterizes each pillar's diagnostic function and structural role in the system — not as a repetition of the definitions above, but as a specification of what each pillar produces when functioning and what question it answers in the transformation logic.
+**Figure 1.A** characterizes each pillar's diagnostic function and structural role in the system — not as a repetition of the definitions above, but as a specification of what each pillar produces when functioning and what question it answers in the transformation logic.
 
 | Pillar | Diagnostic question | Structural role in the system | What it produces when functioning |
 | :---- | :---- | :---- | :---- |
@@ -292,6 +320,22 @@ The table below characterizes each pillar's diagnostic function and structural r
 The six pillars do not operate independently. They interact through fifteen directed dependencies and feedback loops that determine whether transformation produces the outcomes it promises. Understanding these interactions is the core analytical skill this book develops.
 
 Figure 1.B renders all fifteen relationships as a single matrix: read each row as a source pillar and each column as the pillar it acts on. The bracketed tag names the kind of dependency — **ENABLES** (makes possible), **REQUIRES** (cannot function without), **DRIVES** (actively forces change in), **CONSTRAINS** (imposes a design limit on). The sections that follow take the relationships one source pillar at a time, naming the mechanism by which each operates, the failure mode that emerges when it is ignored, and the Vermont evidence that confirms it. (The same map is available as an interactive visualization on the Health Transformation Review platform: [healthtransformationreview.org/research-lab](https://healthtransformationreview.org/research-lab).)
+
+**A note on reading direction — the single most common source of confusion.** Every dependency is a *directed* relationship between two pillars, and the verb you use to name it depends on which end you are standing at. **ENABLES and REQUIRES are the same relationship viewed from opposite ends.** When Technology enables Economics, Economics necessarily requires Technology; these are not two dependencies but one, described from the giving side and the receiving side. The same holds for DRIVES and CONSTRAINS: the pillar doing the driving is experienced by the other pillar as a constraint on its design.
+
+This matters because it tells you what to count and what to look for. The fifteen relationships are counted once each, as directed edges — not thirty. And a pillar's *inbound* count (how many other pillars depend on it) is the measure of its leverage, which is why the analysis later in this chapter identifies Technology as Vermont's critical path.
+
+::: {custom-style="CalloutKey"}
+**ONE RELATIONSHIP OR TWO?**
+
+The test is whether there are two *distinct causal mechanisms* or one mechanism described twice.
+
+*One relationship, two viewpoints (the common case):* Technology **enables** Economics; Economics **requires** Technology. A single dependency — data infrastructure makes financial management possible — named from either end. Count it once.
+
+*Two relationships, a genuine feedback loop (the rare case):* Operations **enables** Policy's data feedback loops, *and* Policy **requires** statutory deadlines that Operations must execute against. Here the two directions carry different content: information flows one way, obligation the other. These are the loops that make the system self-correcting, and they are the reason the framework speaks of "dependencies **and feedback loops**" rather than dependencies alone.
+
+When you see a pillar pair occupying two cells in Figure 1.B, check which case you are in before concluding the framework is double-counting.
+:::
 
 | From ↓ / To → | Policy | Technology | Economics | Clinical | Equity | Operations |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -338,7 +382,7 @@ Technology is the data substrate on which every other pillar's management functi
 
 **Technology → Economics: Analytics makes VBC financial management possible** · *ENABLES*
 
-This dependency runs in both directions between Technology and Economics: the Economics pillar requires data infrastructure, and the Technology pillar enables the financial management capability that VBC contracts require. The distinction is between existence and effectiveness. An organization can enter an APM contract without adequate analytics — the contract still exists, the financial obligations are still real. But the organization cannot manage its financial performance under that contract, cannot identify where its costs are above benchmark, cannot target care management investment toward the highest-return opportunities, and cannot dispute errors in the payer's shared savings calculations without the required data infrastructure and implemented technology.
+This is the paired reading described above: Technology *enables* Economics, which is the same relationship Economics experiences as *requiring* data infrastructure. The distinction it draws is between existence and effectiveness. An organization can enter an APM contract without adequate analytics — the contract still exists, the financial obligations are still real. But the organization cannot manage its financial performance under that contract, cannot identify where its costs are above benchmark, cannot target care management investment toward the highest-return opportunities, and cannot dispute errors in the payer's shared savings calculations without the required data infrastructure and implemented technology.
 
 ::: {custom-style="CalloutVT"}
 **VERMONT EVIDENCE**
@@ -506,11 +550,9 @@ Vermont's healthcare transformation is the closest thing to a controlled experim
 
 This table is not a comprehensive inventory of Vermont's healthcare reform. It is a navigation map — a way of locating Vermont's specific interventions within the analytical framework that the subsequent chapters develop. The framework gives every Vermont policy intervention a structural home and every analytical concept a Vermont application.
 
-The chapter so far has established what the six pillars are and how they depend on one another. The remainder turns to the question those dependencies force: in what order must the pillars be built?
-
 ## **From Framework to Sequence: Why Order Is Not Optional**
 
-The fifteen dependencies establish that the six pillars are interdependent. They also establish something sharper: that the pillars cannot be built in any order. A dependency is, by definition, a constraint on sequence — if Economics requires Technology, then Technology must come first. The rest of this chapter develops that argument, using Vermont's OneCare failure as the case that proves what happens when the sequence is violated.
+Part One established what the six pillars are and how they depend on one another. The dependencies establish something sharper still: that the pillars cannot be built in any order. A dependency is, by definition, a constraint on sequence — if Economics requires Technology, then Technology must come first. The rest of this chapter develops that argument, using Vermont's OneCare failure as the case that proves what happens when the sequence is violated.
 
 ## **The Core Argument: Dependency Logic Determines Sequence**
 
@@ -702,7 +744,7 @@ The dependency mechanics behind these three principles — how payment incentive
 
 ## **Five Sequencing Decisions That Organizations Get Wrong**
 
-The OneCare autopsy above is the fully documented case. The same errors recur, in generalizable form, across every transformation effort. The table below is the diagnostic version — the pattern to recognize, the early-warning signals that reveal it before it fully cascades, and the correction — so a reform architect can catch a sequencing error in their own system while it is still cheap to reverse.
+The OneCare autopsy above is the fully documented case. The same errors recur, in generalizable form, across every transformation effort. **Figure 1.E** is the diagnostic version — the pattern to recognize, the early-warning signals that reveal it before it fully cascades, and the correction — so a reform architect can catch a sequencing error in their own system while it is still cheap to reverse.
 
 | Sequencing error | Early-warning signals | Vermont evidence | Correction |
 | :---- | :---- | :---- | :---- |
@@ -4251,7 +4293,7 @@ The five forces this chapter develops — federal Medicaid retrenchment, the AHE
 
 ## **Vermont Transformation Scorecard: Six-Pillar Status, April 2026**
 
-The table below consolidates Vermont’s transformation progress across all six pillars. It answers the question every reader should ask before reading this chapter’s forecast: where does Vermont actually stand? The full scorecard with metric-level detail appears in Appendix F. The signal column reflects HTR’s assessment as of April 2026.
+**Figure 13.1** consolidates Vermont’s transformation progress across all six pillars. It answers the question every reader should ask before reading this chapter’s forecast: where does Vermont actually stand? The full scorecard with metric-level detail appears in Appendix F. The signal column reflects HTR’s assessment as of April 2026.
 
 | Pillar | 2022 Baseline | 2026 Status | 2028 Target | Signal |
 | :---- | :---- | :---- | :---- | :---- |
@@ -4659,7 +4701,7 @@ The Portfolio Manager's job is to ensure every component can trace its contribut
 
 ## **The Business Case**
 
-The objection to building a PMO is always the same: we cannot afford it. The cost-benefit table below answers that objection directly. The ~$4.5–7.5M cost of a staffed PMO over four to five years is roughly 2% of the portfolio value it protects. The cost of not building it is the December 2028 plan arriving as a descriptive document rather than a binding commitment — the continuation of the Oliver Wyman deficit trajectory, the failure of 13 of 14 hospitals to reach sustainability, and the loss of the political window Vermont’s mandatory architecture has opened. That is not a $0 outcome.
+The objection to building a PMO is always the same: we cannot afford it. The cost-benefit analysis in **Figure 15.7** answers that objection directly. The ~$4.5–7.5M cost of a staffed PMO over four to five years is roughly 2% of the portfolio value it protects. The cost of not building it is the December 2028 plan arriving as a descriptive document rather than a binding commitment — the continuation of the Oliver Wyman deficit trajectory, the failure of 13 of 14 hospitals to reach sustainability, and the loss of the political window Vermont’s mandatory architecture has opened. That is not a $0 outcome.
 
 | Investment | Annual cost | Total (4–5 yr) | Benefit |
 | :---- | :---- | :---- | :---- |
