@@ -6,8 +6,6 @@
 
 Bechir BenSaid
 
-*First Edition — April 2026*
-
 # **PREFACE**
 
 This book began with a room full of people who already knew something was wrong.
