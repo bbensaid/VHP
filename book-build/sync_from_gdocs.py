@@ -4,22 +4,26 @@ sync_from_gdocs.py — pull the author's Google Docs edits back into the manuscr
 
 WHY THIS EXISTS
 ---------------
-The book is authored in Google Docs (the only word processor on this machine).
-Google Docs has no concept of Word's *named styles*, so every download flattens
-the pipeline's callouts, banners and figure styling into raw inline formatting.
-The prose edits are perfectly good; only the styling is lost.
+The author edits the book in Google Docs. The VISUAL formatting survives that
+round-trip fine — shading, borders, callout colours and the navy palette all
+come back intact. What Google Docs drops is only the *style NAMES* (the
+invisible `custom-style="Banner"` labels). A reader sees no difference; this
+script is the only thing that cares.
 
-So the round-trip is:
+It matters because the build pipeline regenerates the .docx from the .md, and
+the .md is what needs the author's edits folded back into it. Finding those
+edits by hand means wading through ~190 diff blocks, nearly all of it noise
+from tables being redrawn by the converter.
 
-    Google Docs  ──download──>  HTR_Book_v42.docx   (edits present, styles gone)
+    Google Docs  ──download──>  HTR_Book_v42.docx
          ^                              |
-         |                         THIS SCRIPT
+         |                         THIS SCRIPT  (finds what the author changed)
          |                              v
-    upload  <──build──  HTR_Book_v42.docx  <──  HTR_Book_v42.md  (styles restored)
+    upload  <──build──  HTR_Book_v42.docx  <──  HTR_Book_v42.md
 
-This script does the middle step: it extracts what changed in the download and
-reports it, so the .md (which the build pipeline needs) can be brought up to date
-without hand-diffing 190 blocks of table-conversion noise.
+THE AUTHOR NEVER RUNS THIS. It is Claude's bookkeeping tool, invoked after the
+author says "I made some edits". Verified on the 2026-07-26 download: 14 real
+edits surfaced, 116 noise blocks discarded.
 
 USAGE
 -----
