@@ -44,7 +44,7 @@ The full ecosystem is at **[healthtransformationreview.org](https://healthtransf
 
 The reader profiles and recommended reading paths are in the Introduction that follows. Use them. This material rewards a reading strategy calibrated to your role and your decisions — and to the tools and courses that go with it — not a linear march through twenty chapters.
 
-April 2026
+January 2026
 
 # **INTRODUCTION**
 
