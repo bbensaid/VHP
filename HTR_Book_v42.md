@@ -166,7 +166,7 @@ Chapter 1 develops this framework in full — defining each pillar, mapping the 
 
 ## **The HTR Ecosystem: How the Book, the Platform, and the Academy Work Together**
 
-This book is one of three integrated components of the **Health Transformation Review** ([healthtransformationreview.org](https://healthtransformationreview.org)). The framework you are about to read is not only an argument to be followed — it is a system to be operated, and the platform and Academy are where you operate it. Understanding how the three fit together will change how you read what follows.
+This book is one of three integrated components of the **Health Transformation Review** ecosystem. The framework covered in this book is not only an argument to be followed — it is a system to be operated, and the platform ([healthtransformationreview.org](https://healthtransformationreview.org)) and Academy ([healthtransformationreview.org/academy](https://healthtransformationreview.org/academy)) are where you operate it. Understanding how the three fit together will change how you read what follows.
 
 | Component | What it is | How it connects to the book |
 | :---- | :---- | :---- |
@@ -220,7 +220,7 @@ Sources: Oliver Wyman Healthcare and Life Sciences Group, Act 167 Community Enga
 
 ## **The Problem with Single-Pillar Thinking**
 
-In 2010, the Affordable Care Act created the Center for Medicare and Medicaid Innovation with a mandate to test new payment and delivery models and scale what worked. Over the following fifteen years, CMMI launched more than fifty models, investing billions of dollars and the attention of thousands of healthcare organizations. The results were modest. A 2023 evaluation found that the vast majority of CMMI models had not achieved statistically significant reductions in spending or improvements in quality. Most were discontinued. A handful showed promise and were expanded.
+In 2010, the Affordable Care Act created the Center for Medicare and Medicaid Innovation with a mandate to test new payment and delivery models and scale what worked. Over the following fifteen years, CMMI launched more than fifty models, investing billions of dollars and attracted the attention of thousands of healthcare organizations. The results were modest. A 2023 evaluation found that the vast majority of CMMI models had not achieved statistically significant reductions in spending or improvements in quality. Most were discontinued. A handful showed promise and were expanded.
 
 ::: {custom-style="StatStrip"}
 **50+** — CMMI Models Launched
@@ -229,7 +229,7 @@ In 2010, the Affordable Care Act created the Center for Medicare and Medicaid In
 
 **15 Yrs** — Span of Experience
 
-**6** — Pillars Required
+**6** — Single Pillar Thinking
 :::
 
 The pattern of failure across CMMI models is instructive. Models that addressed only the Economics pillar — changing what Medicare paid without addressing how care was delivered or whether providers had the infrastructure to respond — generated financial pressure without behavioral change. Models that addressed only the Clinical pillar — redesigning care coordination or care management programs — produced clinical improvements that the payment system then penalized by reducing volume-based revenue. Models that required Technology pillar investment — electronic health records, population health platforms, data exchange — found that providers lacked the operational capacity to use the tools effectively.
@@ -248,13 +248,13 @@ A policy intervention that passes question one but fails questions three, four, 
 
 ## **The Six Pillars Defined**
 
-The six pillars are not equal in their causal priority — enabling legislation (Policy) and payment reform (Economics) are preconditions that the other pillars depend on — but they are equal in their necessity. A transformed healthcare system requires all six to be functional.
+The six pillars are not equal in their causal priority — enabling legislation (Policy) and investing in data infrastructure (Technology) are preconditions that the other pillars depend on — but they are equal in their necessity. A transformed healthcare system requires all six to be functional.
 
 **Policy** — The legislative and regulatory environment that creates the mandatory architecture for transformation. Policy establishes what actors must do, what they are prohibited from doing, and what governance structures ensure accountability. Voluntary reform operates within the Policy pillar's constraints; structural transformation requires it to change.
 
 *Vermont application: Acts 167 and 68, the AHEAD Model State Agreement, and the Statewide Strategic Plan mandate are Vermont's Policy pillar interventions. Each converts voluntary reform into statutory obligation.*
 
-**Technology** — The data infrastructure, health information exchange, analytical platforms, and clinical technologies that make population health management possible at scale. The Technology pillar is the information substrate on which all other pillar functions depend — you cannot manage what you cannot measure.
+**Technology** — The data infrastructure, health information exchange, analytical platforms, and clinical technologies that make population health management possible at scale. The Technology pillar is the information substrate on which most other pillar functions depend — you cannot manage what you cannot measure.
 
 *Vermont application: VHCURES (all-payer claims database), VITL/VHIE (health information exchange), the AHS-GMCB data integration and analytics capability, AI scribe grants, and Vermont's Clinically Integrated Network are Technology pillar investments.*
 
@@ -279,9 +279,9 @@ The table below characterizes each pillar's diagnostic function and structural r
 | Pillar | Diagnostic question | Structural role in the system | What it produces when functioning |
 | :---- | :---- | :---- | :---- |
 | **Policy** | Is it permissible? | The mandatory architecture. Converts aspirational reform into binding requirements. Without mandatory authority, the highest-cost actors opt out and voluntary reform achieves marginal results. | Statutory mandates that eliminate voluntary opt-out; accountability timelines that cannot be deferred; federal-state agreements that commit both parties to specific outcomes. |
-| **Technology** | Is it possible? | The data substrate. Makes population health management, VBC contract execution, equity measurement, and strategic planning analytically feasible. Without data infrastructure, the other pillars are managing blind. | Attribution lists, TCOC measurement, HEDIS stratification, risk stratification, care-gap identification, AI-assisted clinical workflows — the analytical functions that VBC and population health management require. |
+| **Technology** | Is it possible? | The data substrate. Makes population health management, VBC contract execution, equity measurement, and strategic planning analytically feasible. Without data infrastructure, the other pillars are managed blindly. | Attribution lists, TCOC measurement, HEDIS stratification, risk stratification, care-gap identification, AI-assisted clinical workflows — the analytical functions that VBC and population health management require. |
 | **Economics** | Is it sustainable? | The incentive architecture. Determines whether organizations have a financial reason to behave differently. Payment reform does not change clinical behavior directly — it changes the financial logic that shapes clinical decisions over time. | Payment models in which population health management is financially rational; price structures that break the commercial cross-subsidy chain; accountability for total cost of care rather than encounter volume. |
-| **Clinical** | Is it effective? | The mechanism of change. Payment reform changes incentives; clinical redesign changes behavior. The financial case for preventive investment only materializes when clinical programs actually deliver the utilization reduction that produces savings. | Primary care transformation that prevents hospitalizations; behavioral health integration that reduces crisis presentations; care management that closes gaps before they become acute episodes. |
+| **Clinical** | Is it effective? | The mechanism of change. Payment reform changes incentives; clinical redesign changes behavior. The financial case for preventive investment only materializes when clinical programs actually deliver the utilization reduction that produces cost savings and better health outcomes. | Primary care transformation that prevents hospitalizations; behavioral health integration that reduces crisis presentations; care management that closes gaps before they become acute episodes. |
 | **Equity** | Is it just? | The cross-cutting constraint and accountability lens. Not a separate program — a dimension applied to every decision in every other pillar. Transformation that improves averages while widening disparities has failed by the framework's own standards. | Stratified measurement that reveals disparities hidden in aggregates; payment designs that do not penalize providers serving high-SDOH populations; clinical programs that reach disadvantaged populations; technology infrastructure that produces disaggregated data. |
 | **Operations** | Is it executable? | The execution layer. Translates statutory mandates, payment models, data platforms, and clinical programs into organizational reality. The most analytically sound framework fails if the implementing organization lacks capacity, infrastructure, and management discipline. | Hospital transformation plans that are implemented, not filed; AHS organizational capacity sufficient to manage 14 simultaneous transformation processes; project-management infrastructure that tracks progress against statutory deadlines. |
 
@@ -291,7 +291,7 @@ The table below characterizes each pillar's diagnostic function and structural r
 
 The six pillars do not operate independently. They interact through fifteen directed dependencies and feedback loops that determine whether transformation produces the outcomes it promises. Understanding these interactions is the core analytical skill this book develops.
 
-Figure 1.B renders all fifteen relationships as a single matrix: read each row as a source pillar and each column as the pillar it acts on. The bracketed tag names the kind of dependency — **ENABLES** (makes possible), **REQUIRES** (cannot function without), **DRIVES** (actively forces change in), **CONSTRAINS** (imposes a design limit on). The sections that follow take the relationships one source pillar at a time, naming the mechanism by which each operates, the failure mode that emerges when it is ignored, and the Vermont evidence that confirms it. (The same map is available as an interactive visualization on [Health Transformation Review](https://healthtransformationreview.org/research-lab).)
+Figure 1.B renders all fifteen relationships as a single matrix: read each row as a source pillar and each column as the pillar it acts on. The bracketed tag names the kind of dependency — **ENABLES** (makes possible), **REQUIRES** (cannot function without), **DRIVES** (actively forces change in), **CONSTRAINS** (imposes a design limit on). The sections that follow take the relationships one source pillar at a time, naming the mechanism by which each operates, the failure mode that emerges when it is ignored, and the Vermont evidence that confirms it. (The same map is available as an interactive visualization on the Health Transformation Review platform: [healthtransformationreview.org/research-lab](https://healthtransformationreview.org/research-lab).)
 
 | From ↓ / To → | Policy | Technology | Economics | Clinical | Equity | Operations |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -332,6 +332,40 @@ Acts 167 and 68 both contain explicit equity requirements — they are not aspir
 The Health Care Delivery Advisory Committee established under Act 68 is required to consult with the Health Equity Advisory Commission and to incorporate equity considerations into the Statewide Strategic Plan. This institutional design is the Policy pillar building the Equity pillar's accountability structure into the statutory framework.
 :::
 
+### **Technology Dependencies: Three Relationships That Enable Analytical Management**
+
+Technology is the data substrate on which every other pillar's management functions depend. It has the broadest set of outbound dependencies in the framework — three enabling relationships to Economics, Clinical, and Equity that describe what becomes possible when data infrastructure is adequate, and what remains impossible when it is not.
+
+**Technology → Economics: Analytics makes VBC financial management possible** · *ENABLES*
+
+This dependency runs in both directions between Technology and Economics: the Economics pillar requires data infrastructure, and the Technology pillar enables the financial management capability that VBC contracts require. The distinction is between existence and effectiveness. An organization can enter an APM contract without adequate analytics — the contract still exists, the financial obligations are still real. But the organization cannot manage its financial performance under that contract, cannot identify where its costs are above benchmark, cannot target care management investment toward the highest-return opportunities, and cannot dispute errors in the payer's shared savings calculations without the required data infrastructure and implemented technology.
+
+::: {custom-style="CalloutVT"}
+**VERMONT EVIDENCE**
+
+VHCURES population health analytics make the APM financial modeling described in Chapter 7 possible. The APM Shared Savings Calculator, the Hospital Financial Stress Test, and the VBC Readiness Assessment — all tools in the [HTR Research Lab](https://healthtransformationreview.org/research-lab/payment-models) — are built on VHCURES data logic. Vermont hospitals that invest in VHCURES analytics capability before AHEAD launches in January 2028 will be able to manage their global budgets proactively rather than reactively.
+:::
+
+**Technology → Equity: Disaggregated data reveals disparities hidden in averages** · *ENABLES (critical)*
+
+The Equity pillar's entire analytical function depends on the Technology pillar's ability to produce demographic stratification. You cannot measure a disparity you cannot see. Vermont's 91% primary care access rate — four points above the national benchmark — is a genuine achievement. It also hides an 11-point gap between white Vermont adults and BIPOC Vermont adults. That gap is invisible in aggregate data. It becomes visible only when VHCURES data is stratified by race/ethnicity, and that stratification is only possible when the data contains adequate demographic information.
+
+::: {custom-style="CalloutVT"}
+**VERMONT EVIDENCE**
+
+Vermont's race/ethnicity data in VHCURES is incomplete — commercial claims frequently lack demographic fields. This is not a minor data quality issue; it is a Technology pillar gap that directly limits the Equity pillar's analytical capability. The Vermont Department of Health's Health Equity Data Report (January 2025) documents this limitation explicitly. Closing the Technology gap is prerequisite to the Equity pillar's disparity measurement function.
+:::
+
+**Technology → Clinical: Data infrastructure enables population health management** · *ENABLES*
+
+The clinical programs developed later in this book — Blueprint PCMH, CoCM, CCBHC, CHT deployment — can all be designed and implemented without data infrastructure. What they cannot do without it is function as population health programs rather than individual encounter programs. Risk stratification identifies which patients are most likely to deteriorate; without it, care management deploys reactively, after hospitalization rather than before. Care-gap identification triggers outreach for overdue preventive services; without it, gaps close only when patients happen to schedule appointments. SDOH screening tools flag patients for CHT navigation; without the data platform to connect the flag to the navigation workflow, the flag is generated and ignored.
+
+::: {custom-style="CalloutVT"}
+**VERMONT EVIDENCE**
+
+Blueprint's clinical registry is the Technology pillar product that enables Blueprint's Clinical pillar outcomes. The 5.8:1 ROI documented for Blueprint is achievable precisely because Blueprint combines the Clinical pillar's care team model with the Technology pillar's population health analytics. The AI scribe grants in the RHT Program are the Technology pillar's contribution to the Clinical pillar's workforce capacity problem.
+:::
+
 ### **Economics Dependencies: Three Relationships That Transmit Incentive Change**
 
 Economics is the pillar through which policy mandates are converted into behavioral change at the organizational and clinical level. Payment models do not change behavior directly — they change the financial logic that shapes decision-making. The Economics pillar's three outbound dependencies — to Clinical, Equity, and Technology — describe the mechanisms through which this conversion happens.
@@ -366,40 +400,6 @@ Value-based care contracts that do not adjust for social risk systematically pen
 Vermont's AHEAD global budget design must address this explicitly. The methodology for social risk adjustment in Vermont's hospital global budgets is an active design question as of early 2026. Getting it wrong — designing an Economics pillar instrument that ignores the Equity pillar's requirement — would produce a payment system that penalizes the hospitals serving the most vulnerable Vermonters.
 :::
 
-### **Technology Dependencies: Three Relationships That Enable Analytical Management**
-
-Technology is the data substrate on which every other pillar's management functions depend. It has the broadest set of outbound dependencies in the framework — three enabling relationships to Economics, Clinical, and Equity that describe what becomes possible when data infrastructure is adequate, and what remains impossible when it is not.
-
-**Technology → Economics: Analytics makes VBC financial management possible** · *ENABLES*
-
-This dependency runs in both directions between Technology and Economics: the Economics pillar requires data infrastructure, and the Technology pillar enables the financial management capability that VBC contracts require. The distinction is between existence and effectiveness. An organization can enter an APM contract without adequate analytics — the contract still exists, the financial obligations are still real. But the organization cannot manage its financial performance under that contract, cannot identify where its costs are above benchmark, cannot target care management investment toward the highest-return opportunities, and cannot dispute errors in the payer's shared savings calculations.
-
-::: {custom-style="CalloutVT"}
-**VERMONT EVIDENCE**
-
-VHCURES population health analytics make the APM financial modeling described in Chapter 7 possible. The APM Shared Savings Calculator, the Hospital Financial Stress Test, and the VBC Readiness Assessment — all tools in the [HTR Research Lab](https://healthtransformationreview.org/research-lab/payment-models) — are built on VHCURES data logic. Vermont hospitals that invest in VHCURES analytics capability before AHEAD launches in January 2028 will be able to manage their global budgets proactively rather than reactively.
-:::
-
-**Technology → Equity: Disaggregated data reveals disparities hidden in averages** · *ENABLES (critical)*
-
-The Equity pillar's entire analytical function depends on the Technology pillar's ability to produce demographic stratification. You cannot measure a disparity you cannot see. Vermont's 91% primary care access rate — four points above the national benchmark — is a genuine achievement. It also hides an 11-point gap between white Vermont adults and BIPOC Vermont adults. That gap is invisible in aggregate data. It becomes visible only when VHCURES data is stratified by race/ethnicity, and that stratification is only possible when the data contains adequate demographic information.
-
-::: {custom-style="CalloutVT"}
-**VERMONT EVIDENCE**
-
-Vermont's race/ethnicity data in VHCURES is incomplete — commercial claims frequently lack demographic fields. This is not a minor data quality issue; it is a Technology pillar gap that directly limits the Equity pillar's analytical capability. The Vermont Department of Health's Health Equity Data Report (January 2025) documents this limitation explicitly. Closing the Technology gap is prerequisite to the Equity pillar's disparity measurement function.
-:::
-
-**Technology → Clinical: Data infrastructure enables population health management** · *ENABLES*
-
-The clinical programs developed later in this book — Blueprint PCMH, CoCM, CCBHC, CHT deployment — can all be designed and implemented without data infrastructure. What they cannot do without it is function as population health programs rather than individual encounter programs. Risk stratification identifies which patients are most likely to deteriorate; without it, care management deploys reactively, after hospitalization rather than before. Care-gap identification triggers outreach for overdue preventive services; without it, gaps close only when patients happen to schedule appointments. SDOH screening tools flag patients for CHT navigation; without the data platform to connect the flag to the navigation workflow, the flag is generated and ignored.
-
-::: {custom-style="CalloutVT"}
-**VERMONT EVIDENCE**
-
-Blueprint's clinical registry is the Technology pillar product that enables Blueprint's Clinical pillar outcomes. The 5.8:1 ROI documented for Blueprint is achievable precisely because Blueprint combines the Clinical pillar's care team model with the Technology pillar's population health analytics. The AI scribe grants in the RHT Program are the Technology pillar's contribution to the Clinical pillar's workforce capacity problem.
-:::
-
 ### **Clinical Dependencies: Two Relationships That Connect Care Models to System Requirements**
 
 Clinical is the pillar that converts payment incentives into actual health outcomes. Its two outbound dependencies — to Equity and Operations — describe the operational requirements of clinical programs and their equity implications.
@@ -424,6 +424,18 @@ Geographic and demographic disparities in healthcare access are primarily clinic
 Essex County's elevated uninsurance rate and limited primary care access are equity problems with a clinical solution — expanding Blueprint-participating practices in underserved HSAs, deploying telehealth through the RHT Program to reduce geographic access barriers, and certifying additional CCBHCs in Northeast Kingdom communities. Remove the Clinical pillar investment and the Equity pillar's access gap remains unmeasured but unaddressed.
 :::
 
+### **Equity Constraints: Two Relationships That Apply the Justice Lens to the Whole System**
+
+Equity's two outbound dependencies are constraining rather than enabling — they impose requirements on Clinical and Policy that must be designed in from the beginning rather than retrofitted. Equity is not the last pillar in the sequence; it is the lens applied to every other pillar's decisions throughout the design and implementation process.
+
+**Equity → Policy: Equity accountability constrains every policy decision** · *CONSTRAINS*
+
+Every policy decision in Vermont's transformation — the RBP rate methodology, the global budget design, the COE designation framework, the Statewide Strategic Plan structure — must be evaluated for equity impact before it is finalized. This is not post-hoc equity review; it is an equity constraint embedded in the policy design process. A RBP methodology that sets rates uniformly without adjusting for the market conditions faced by hospitals in underserved communities is technically correct and practically inequitable.
+
+**Equity → Clinical: Equity constrains how care is delivered, not just to whom** · *CONSTRAINS*
+
+Implicit bias in clinical settings, cultural incompetence, language access barriers, and differential treatment quality by race/ethnicity are clinical practice problems with equity implications. They are not solved by expanding access — expanding access to biased care widens some disparities while narrowing others. The Equity pillar constrains the Clinical pillar's design by requiring that care models address cultural competence, language access, and practice variation as design requirements, not implementation afterthoughts.
+
 ### **Operations Dependencies: Two Feedback Relationships That Close the Loop**
 
 Operations is the pillar that executes all other pillars' intentions. Its two outbound dependencies run back to Technology and Policy — feedback relationships that make the system self-correcting rather than purely top-down.
@@ -441,18 +453,6 @@ The Technology pillar's infrastructure — VHCURES analytics, the CIN data platf
 
 Vermont's rural CAHs — Grace Cottage, Gifford Medical Center, North Country Hospital — have limited IT staff. This Operations pillar constraint directly limits their Technology pillar capability. The Vermont CIN's shared services model addresses this: a shared analytics and IT function within the CIN provides all 14 hospitals access to Technology pillar capability they cannot individually afford. The CIN is an Operations pillar solution to a Technology pillar gap.
 :::
-
-### **Equity Constraints: Two Relationships That Apply the Justice Lens to the Whole System**
-
-Equity's two outbound dependencies are constraining rather than enabling — they impose requirements on Clinical and Policy that must be designed in from the beginning rather than retrofitted. Equity is not the last pillar in the sequence; it is the lens applied to every other pillar's decisions throughout the design and implementation process.
-
-**Equity → Policy: Equity accountability constrains every policy decision** · *CONSTRAINS*
-
-Every policy decision in Vermont's transformation — the RBP rate methodology, the global budget design, the COE designation framework, the Statewide Strategic Plan structure — must be evaluated for equity impact before it is finalized. This is not post-hoc equity review; it is an equity constraint embedded in the policy design process. A RBP methodology that sets rates uniformly without adjusting for the market conditions faced by hospitals in underserved communities is technically correct and practically inequitable.
-
-**Equity → Clinical: Equity constrains how care is delivered, not just to whom** · *CONSTRAINS*
-
-Implicit bias in clinical settings, cultural incompetence, language access barriers, and differential treatment quality by race/ethnicity are clinical practice problems with equity implications. They are not solved by expanding access — expanding access to biased care widens some disparities while narrowing others. The Equity pillar constrains the Clinical pillar's design by requiring that care models address cultural competence, language access, and practice variation as design requirements, not implementation afterthoughts.
 
 ## **The Failure Cascade: What Happens When a Pillar Is Missing**
 
@@ -483,11 +483,11 @@ The most rigorous test of a dependency framework is not whether it describes how
 
 The dependency map is not merely a theoretical framework — it is a practical analytical tool for three management functions: transformation sequencing, risk identification, and investment prioritization.
 
-**Transformation sequencing — what must come first.** The dependency structure generates a partial ordering of interventions: some investments cannot produce their expected results until enabling investments are in place. Getting the sequence wrong is not merely inefficient — it produces failed interventions that generate political resistance to subsequent correct interventions. Part Two of this chapter develops that ordering in full and stress-tests it against Vermont's OneCare failure.
+**1. Transformation sequencing — what must come first.** The dependency structure generates a partial ordering of interventions: some investments cannot produce their expected results until enabling investments are in place. Getting the sequence wrong is not merely inefficient — it produces failed interventions that generate political resistance to subsequent correct interventions. Part Two of this chapter develops that ordering in full and stress-tests it against Vermont's OneCare failure.
 
-**Risk identification.** The dependency map identifies Vermont's vulnerabilities with precision. The critical path runs through the Technology pillar's analytics capability: AHEAD global budgets require VHCURES analytics, equity measurement requires demographic stratification, and clinical risk stratification requires the population health platform. The AHS-GMCB analytics capability — being stood up in 2025–2026 but not yet complete — is the single highest-risk gap in Vermont's current architecture. A delay does not merely delay one program; it delays the financial management capability for AHEAD, the equity measurement capability for the Statewide Strategic Plan, and the risk stratification capability for Blueprint's CCBHC expansion. Three dependencies converge on this single investment.
+**2. Risk identification.** The dependency map identifies Vermont's vulnerabilities with precision. The critical path runs through the Technology pillar's analytics capability: AHEAD global budgets require VHCURES analytics, equity measurement requires demographic stratification, and clinical risk stratification requires the population health platform. The AHS-GMCB analytics capability — being stood up in 2025–2026 but not yet complete — is the single highest-risk gap in Vermont's current architecture. A delay does not merely delay one program; it delays the financial management capability for AHEAD, the equity measurement capability for the Statewide Strategic Plan, and the risk stratification capability for Blueprint's CCBHC expansion. Three dependencies converge on this single investment.
 
-**Investment prioritization.** Not all pillar investments have equal leverage. An investment in a pillar with many inbound dependencies has higher leverage than one required by only a single pillar. The Technology pillar has the highest inbound dependency count in Vermont's current architecture (Economics, Clinical, and Operations all require it); Operations is second (Clinical and Policy require it). The highest-leverage investments in Vermont's current phase are therefore analytics capability deployment, AHS organizational capacity building, and HCC gap closure at AHEAD-participating hospitals.
+**3. Investment prioritization.** Not all pillar investments have equal leverage. An investment in a pillar with many inbound dependencies has higher leverage than one required by only a single pillar. The Technology pillar has the highest inbound dependency count in Vermont's current architecture (Economics, Clinical, and Operations all require it); Operations is second (Clinical and Policy require it). The highest-leverage investments in Vermont's current phase are therefore analytics capability deployment, AHS organizational capacity building, and HCC gap closure at AHEAD-participating hospitals.
 
 ## **The Vermont Thread: Six Pillars in One System**
 
@@ -516,7 +516,7 @@ The fifteen dependencies establish that the six pillars are interdependent. They
 
 Strip away the state names and the claim is this: any organization or system attempting to move all six pillars — Policy, Technology, Economics, Clinical, Equity, and Operations — will fail if it deploys them against their dependency order, and the failure will be structural rather than a matter of effort, funding, or political will. This is true whether the actor is a state government, a health system, or a payer, and regardless of which pillar feels most urgent at the time. Vermont is the case where both halves of this claim — the failure when the order is wrong, and the correction once the order is fixed — are fully documented and publicly visible, which is why it carries the argument in this chapter.
 
-Vermont did not choose careful sequencing because it was disciplined. It was forced into it because it had run out of time to get it wrong.
+Vermont did not choose careful sequencing because it was disciplined. It was forced into it because it had the scars from earlier experiences and had run out of time to get it wrong.
 
 When Oliver Wyman presented Vermont's hospital financial trajectory in September 2024 — nine of fourteen hospitals in operating losses, thirteen of fourteen projecting losses by 2028, a cumulative five-year system deficit between $700 million and $2.4 billion — the room understood something that policy documents rarely state directly: the cost of getting the sequencing wrong was now larger than the state's ability to recover. A decade of OneCare Vermont had demonstrated what the wrong sequence produces. Acts 167, 51, and 68 are the statutory attempt to build the right one.
 
