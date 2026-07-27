@@ -45,7 +45,7 @@ export default function ReaderError({
           All chapters
         </Link>
         <a
-          href="/HTR_Book_v41.pdf"
+          href="/HTR_Book_v42.pdf"
           download
           className="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-bold px-4 py-2 rounded-lg transition-colors"
         >
