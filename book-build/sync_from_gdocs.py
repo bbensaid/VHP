@@ -70,8 +70,16 @@ def paragraphs(text, from_md=False):
         t = re.sub(r'-{2,}', '—', t)
         t = re.sub(r'^\d+(\.\d+)*\s+', '', t)           # auto heading numbers
         t = re.sub(r'\s+', ' ', t).strip()
-        if len(t) > 40 and not re.fullmatch(r'[\d\s.]+', t):
-            out.append(t)
+        if not t or re.fullmatch(r'[\d\s.]+', t):
+            continue
+        # Drop TOC lines ("Chapter Title 137") — they are regenerated every
+        # build and are pure noise. Everything else is kept REGARDLESS of
+        # length: a 10-character line like "April 2026" on the cover is a real
+        # edit, and a >40-char filter silently swallowed exactly that one
+        # (2026-07-27).
+        if re.search(r'\s\d{1,3}$', t) and len(t) < 70:
+            continue
+        out.append(t)
     return out
 
 def words(s):

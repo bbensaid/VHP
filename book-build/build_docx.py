@@ -987,18 +987,19 @@ def add_cover():
         _set_runs(sub2, size=11.5, color=NAVY, italic=True)
         sub2.paragraph_format.space_after = Pt(24)
     if author is not None:
+        # Style only — never rewrite the byline. The .md is the source of truth
+        # for cover text; an override here would silently undo any change the
+        # author makes to it (same bug as the hard-coded date below).
         author.alignment = WD_ALIGN_PARAGRAPH.LEFT
-        # force the author text (in case markdown still said the old byline)
-        if author.runs:
-            author.runs[0].text = 'Bechir BenSaid'
-            for extra in author.runs[1:]: extra.text = ''
         _set_runs(author, size=12, color=BLACK, bold=True)
         author.paragraph_format.space_before = Pt(4); author.paragraph_format.space_after = Pt(2)
     if edition is not None:
+        # Style it, but do NOT rewrite its text. This used to hard-code
+        # 'April 2026', which silently restored the date every build after the
+        # author had deleted it from the manuscript (2026-07-27). The cover
+        # line says whatever the .md says; if the .md has no date line, there
+        # is no `edition` paragraph to style and nothing is printed.
         edition.alignment = WD_ALIGN_PARAGRAPH.LEFT
-        if edition.runs:
-            edition.runs[0].text = 'April 2026'
-            for extra in edition.runs[1:]: extra.text = ''
         _set_runs(edition, size=10, color=GRAY)
         edition.paragraph_format.space_after = Pt(0)
 
