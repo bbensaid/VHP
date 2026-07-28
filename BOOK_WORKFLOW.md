@@ -40,6 +40,45 @@ manuscript, it stops and says so.
 ./book.sh check    # only show what changed in a download; build nothing
 ```
 
+Plus the handoff commands, so only one of us edits at a time:
+
+```bash
+./book.sh who      # who holds the book right now
+./book.sh mine     # you take it — Claude will not edit the manuscript
+./book.sh claude   # hand it over — don't edit in Google Docs until it's back
+```
+
+---
+
+## Section titles must stay identical across chapters
+
+Every chapter ends with the same set of sections. **Write the heading exactly
+the same way each time** — the build styles them by matching the text, so a
+variant title renders differently and looks broken:
+
+| Section | Write it exactly as |
+| :--- | :--- |
+| Platform guide | `## **Work This Chapter on the Platform**` |
+| Reader guidance | `## **Implications for You**` |
+| Glossary | `## **Key Concepts in This Chapter**` |
+| Citations | `Sources: …` — a normal paragraph, **not** a heading |
+
+`Sources` is the odd one out on purpose: it's a small grey italic footer with a
+thin rule above it, not a section heading, so it must be a plain paragraph
+beginning `Sources: `.
+
+This drifted once already (2026-07-27): the glossary had been written five
+different ways across chapters — *Key Concepts*, *Key Concepts in This
+Chapter*, *Key Concepts Introduced in This Chapter*, *Key Concepts Introduced
+or Expanded in This Chapter* — at two different heading levels, and three
+chapters wrote `## **Sources**` as a heading while the other fifteen used the
+paragraph form. To check they're still uniform:
+
+```bash
+grep -nE "^#{1,4}.*Key Concepts" HTR_Book_v42.md   # every hit should read the same
+grep -cE "^#{1,4} \*\*Sources\*\*" HTR_Book_v42.md # must be 0
+```
+
 ---
 
 ## After editing in Google Docs

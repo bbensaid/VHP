@@ -15,8 +15,12 @@ Modern-editorial styled book builder. Post-pass does:
   - strip Pandoc heading bookmark anchors (the blue ribbon artifacts)
 """
 import sys, subprocess, os, re, copy
+
+BODY_FONT = "Garamond"   # must match SERIF in make_reference.py
 from docx import Document
 from docx.shared import Pt, Inches, RGBColor
+
+GRAY = RGBColor(0x40, 0x40, 0x40)   # Sources / citation grey
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -603,9 +607,23 @@ def shrink_sources():
         if _is_sources_heading(p):
             p.style=doc.styles['Normal']
             if p.runs:
-                p.runs[0].text='Sources'; p.runs[0].bold=True; p.runs[0].italic=False
-                p.runs[0].font.size=Pt(9); p.runs[0].font.color.rgb=GRAY
+                r0=p.runs[0]
+                # The run carries an rPr inherited from the Heading style (navy
+                # 2E74B5, 10pt). Assigning .font.* leaves those direct-formatting
+                # elements in place, so the label kept rendering as a heading —
+                # which is exactly what made 3 of 19 Sources blocks look wrong.
+                # Clear the run properties first, then restyle from scratch.
+                old=r0._r.find(qn('w:rPr'))
+                if old is not None: r0._r.remove(old)
+                r0.text='Sources'; r0.bold=True; r0.italic=False
+                r0.font.size=Pt(9); r0.font.color.rgb=GRAY
                 for extra in p.runs[1:]: extra.text=''
+            # paragraph-level marks (heading colour/size/keepNext) also survive
+            # the style swap — drop them so Normal actually governs the label
+            pPr=p._p.find(qn('w:pPr'))
+            if pPr is not None:
+                for tag in ('w:rPr','w:keepNext','w:keepLines','w:outlineLvl'):
+                    for el in pPr.findall(qn(tag)): pPr.remove(el)
             _sources_toprule(p)
             heading_ids.append(id(p._p))
 
@@ -618,12 +636,34 @@ def shrink_sources():
                 for r in paras[j].runs:
                     r.font.size=Pt(9); r.italic=True; r.font.color.rgb=GRAY
                 j+=1
-        txt=p.text.strip()
-        # (b) inline 'Sources: ...' paragraph
-        if p.style.name in ('Normal','Body Text') and txt.startswith('Sources:'):
-            for r in p.runs:
-                r.font.size=Pt(9); r.italic=True; r.font.color.rgb=GRAY
-            _sources_toprule(p)
+
+def finalize_sources():
+    """FINAL, AUTHORITATIVE styling for every 'Sources:' paragraph.
+
+    Runs LAST in the pipeline so it overwrites whatever earlier passes (and
+    pandoc's own Calibri run properties) produced. A citation block then looks
+    identical whether the manuscript wrote it as a '## Sources' heading or an
+    inline 'Sources: ...' line — the two used to drift apart, leaving three
+    chapters in Calibri/black with different spacing from the other fifteen.
+    """
+    for p in doc.paragraphs:
+        if not p.text.strip().startswith('Sources:'):
+            continue
+        p.style = doc.styles['Body Text']
+        pf = p.paragraph_format
+        pf.space_before = Pt(18); pf.space_after = Pt(6)
+        for r in p.runs:
+            old = r._r.find(qn('w:rPr'))
+            if old is not None: r._r.remove(old)
+            r.bold = False; r.italic = True
+            r.font.size = Pt(9); r.font.color.rgb = GRAY
+            r.font.name = BODY_FONT
+            rPr = r._r.get_or_add_rPr()
+            rf = OxmlElement('w:rFonts')
+            for a in ('w:ascii','w:hAnsi','w:cs'): rf.set(qn(a), BODY_FONT)
+            rPr.insert(0, rf)
+        _sources_toprule(p)
+
 
 # ── 5. tables: full width portrait; wide -> smaller font ─────────────────────
 def style_tables():
@@ -1348,6 +1388,7 @@ chapter_page_breaks()
 add_cover()
 insert_toc()
 add_page_numbers()        # AFTER insert_toc: splits on the TOC's trailing break
+finalize_sources()        # LAST: authoritative look for every Sources block
 
 # update fields on open
 doc.settings.element.append(_uf := OxmlElement('w:updateFields')); _uf.set(qn('w:val'),'true')
