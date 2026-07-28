@@ -392,12 +392,12 @@ When you see a pillar pair occupying two cells in Figure 1.B, check which case y
 
 | From ↓ / To → | Policy | Technology | Economics | Clinical | Equity | Operations |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| **Policy** | — | — | Enables mandatory authority | — | Enables accountability mandates | Requires statutory deadlines |
-| **Technology** | — | — | Enables VBC financial management | Enables risk stratification | Enables demographic stratification | — |
-| **Economics** | — | Requires data infrastructure | — | Drives financial rationality | Requires social risk adjustment | — |
-| **Clinical** | — | — | — | — | Enables access expansion | Requires execution infrastructure |
-| **Equity** | Constrains with justice reviews | — | — | Constrains with cultural competency | — | — |
-| **Operations** | Enables data feedback loops | Requires workforce to run infrastructure | — | — | — | — |
+| **Policy** | — | — | [ENABLES] mandatory authority | — | [ENABLES] accountability mandates | [REQUIRES] statutory deadlines |
+| **Technology** | — | — | [ENABLES] VBC financial management | [ENABLES] risk stratification | [ENABLES] demographic stratification | — |
+| **Economics** | — | [REQUIRES] data infrastructure | — | [DRIVES] financial rationality | [REQUIRES] social risk adjustment | — |
+| **Clinical** | — | — | — | — | [ENABLES] access expansion | [REQUIRES] execution infrastructure |
+| **Equity** | [CONSTRAINS] with justice reviews | — | — | [CONSTRAINS] with cultural competency | — | — |
+| **Operations** | [ENABLES] data feedback loops | [REQUIRES] workforce to run infrastructure | — | — | — | — |
 
 *Figure 1.B — The architecture of interdependency: the fifteen dependency relationships, read From-row to To-column. Source: six-pillar framework documentation; Vermont Health Transformation / HTR (2026).*
 
