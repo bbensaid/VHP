@@ -1332,15 +1332,27 @@ def tighten_table_pagination():
         # of that white space. Releasing keepNext lets the heading sit at the
         # bottom of the page with the table beginning right after it, or flow
         # onto the next page on its own — either way the preceding page fills.
+        # EXCEPTION: a figure lead-in ("Figure 1.A characterizes…") must stay with
+        # its table. Releasing it stranded the sentence alone at the top of a
+        # page with three-quarters of that page blank and the table overleaf —
+        # worse than the gap the release was meant to close. Only release
+        # paragraphs that are NOT introducing this figure.
         prev = tbl._tbl.getprevious()
         released = 0
         while prev is not None and prev.tag == qn('w:p') and released < 2:
             pPr = prev.find(qn('w:pPr'))
-            if pPr is not None:
+            txt = "".join(prev.itertext()).strip()
+            is_lead_in = bool(re.match(r'^(Figure|Table)\s+[0-9]', txt))
+            if pPr is not None and not is_lead_in:
                 for kn in pPr.findall(qn('w:keepNext')):
                     pPr.remove(kn)
                 kn = OxmlElement('w:keepNext'); kn.set(qn('w:val'), 'false')
                 pPr.append(kn)          # override the style's keepNext
+            elif is_lead_in and pPr is not None:
+                # glue it to the table instead
+                for kn in pPr.findall(qn('w:keepNext')):
+                    pPr.remove(kn)
+                pPr.append(OxmlElement('w:keepNext'))
             prev = prev.getprevious()
             released += 1
 
