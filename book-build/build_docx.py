@@ -1365,36 +1365,66 @@ def tighten_table_pagination():
                     trPr.append(OxmlElement('w:cantSplit'))
 
 def shrink_oversized_tables():
-    """Drop the font a half-point on tables that would otherwise overflow a page.
+    """Reclaim vertical space in tall tables so they leave smaller gaps.
 
-    Ten tables in this book render taller than a full page even at the normal
-    body size, so they always break — and a break near a page bottom leaves a
-    ragged gap. A 0.5pt reduction is invisible next to the surrounding text but
-    recovers three to four lines per page, which is usually enough to pull the
-    tallest tables back inside one page.
+    Height model: a row is as tall as its TALLEST cell, and a cell's height is
+    driven by how many lines its text wraps to at that column's width. An
+    earlier version measured only the longest cell per row and reported 10 tall
+    tables; measuring every cell against its own column width found 99. That
+    undercount is why the first pass barely helped.
+
+    Two levers, applied only to tables that would overflow a page:
+      1. Cell padding: trim paragraph space-before/after inside cells to zero
+         and tighten line spacing. Invisible to a reader, and on a 40-row table
+         it recovers several lines.
+      2. Font: drop a half point, floored at 7.5pt so it stays legible.
     """
-    CHARS_PER_LINE = 38
     PAGE_LINES = 46
+    TEXT_DXA   = 9360          # usable text width in twentieths of a point
 
-    def est_lines(t):
-        n = 0
-        for r in t.rows:
-            per_cell = [max(1, len(c.text) // CHARS_PER_LINE + 1) for c in r.cells]
-            n += max(per_cell) if per_cell else 1
-        return n
+    def col_widths(t):
+        grid = t._tbl.find(qn('w:tblGrid'))
+        if grid is None:
+            n = len(t.columns) or 1
+            return [TEXT_DXA / n] * n
+        w = []
+        for gc in grid.findall(qn('w:gridCol')):
+            try: w.append(float(gc.get(qn('w:w'))))
+            except (TypeError, ValueError): w.append(TEXT_DXA / max(1, len(t.columns)))
+        return w or [TEXT_DXA]
 
-    shrunk = 0
-    for tbl in doc.tables:
-        if est_lines(tbl) <= PAGE_LINES:
+    def est_lines(t, pt=9.0):
+        widths = col_widths(t)
+        # ~0.5 * font size per character in twentieths of a point
+        char_dxa = pt * 10.0
+        total = 0
+        for row in t.rows:
+            tallest = 1
+            for i, cell in enumerate(row.cells):
+                w = widths[i] if i < len(widths) else widths[-1]
+                per_line = max(8, int(w / char_dxa))
+                lines = 0
+                for para in cell.paragraphs:
+                    lines += max(1, -(-len(para.text) // per_line))
+                tallest = max(tallest, lines)
+            total += tallest
+        return total
+
+    tightened = 0
+    for t in doc.tables:
+        if est_lines(t) <= PAGE_LINES:
             continue
-        shrunk += 1
-        for row in tbl.rows:
+        tightened += 1
+        for row in t.rows:
             for cell in row.cells:
-                for p in cell.paragraphs:
-                    for r in p.runs:
+                for para in cell.paragraphs:
+                    pf = para.paragraph_format
+                    pf.space_before = Pt(0); pf.space_after = Pt(0)
+                    pf.line_spacing = 1.0
+                    for r in para.runs:
                         cur = r.font.size
-                        r.font.size = Pt(max(7.0, (cur.pt if cur else 9.0) - 0.5))
-    return shrunk
+                        r.font.size = Pt(max(7.5, (cur.pt if cur else 9.0) - 0.5))
+    return tightened
 
 def keep_lists_together():
     """Stop bullet lists from splitting across a page with a big void: set
