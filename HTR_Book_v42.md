@@ -31,7 +31,7 @@ This book is also not a prediction. The transformations described here are under
 Finally, a word about what this book *is* — because it is not, on its own, the whole of the argument. This book is the intellectual foundation of the **Health Transformation Review** ([healthtransformationreview.org](https://healthtransformationreview.org)), an open-source integrated ecosystem with three parts designed to work as one:
 
 - **The book** you are reading — the framework, the dependency logic, the Vermont evidence, and the national comparisons.
-- **The platform** ([healthtransformationreview.org](https://healthtransformationreview.org)) — six pillar hubs, a **Research Lab** of two dozen interactive analytical tools, an **AI Analyst** grounded in this book and Vermont's public-domain source documents, a fifty-state dashboard, and a daily intelligence feed. Every argument in these pages that can be modeled *is* modeled there.
+- **The platform** — six pillar hubs, a **Research Lab** of two dozen interactive analytical tools, an **AI Analyst** grounded in this book and Vermont's public-domain source documents, a fifty-state dashboard, and a daily intelligence feed. Every argument in these pages that can be modeled *is* modeled there.
 - **The Academy** ([healthtransformationreview.org/academy](https://healthtransformationreview.org/academy)) — a structured executive-education layer of courses, tracks, and lessons that teach the concepts hands-on and link directly to the tools that apply them.
 
 The three are deliberately cross-linked. Each pillar chapter ends with a *"Work This Chapter on the Platform"* guide that maps its argument to the specific tools that let you manipulate it; the platform's tools carry *"From the Book"* callouts back to the chapters that explain them; and the AI Analyst can answer a question and route you to the right tool or lesson in the same breath. **Everything in the ecosystem is, in effect, an interactive expression of this book's framework.** You can read the book alone and it stands on its own — but the framework is meant to be *run*, not just read, and the platform is where you run it.
@@ -238,11 +238,11 @@ Sources: Oliver Wyman Healthcare and Life Sciences Group, Act 167 Community Enga
 
 # **Chapter 1: The Six-Pillar Framework and the Execution Sequence**
 
-*Healthcare transformation is a system problem: six pillars — Policy, Technology, Economics, Clinical, Equity, and Operations — connected by fifteen dependency relationships that determine whether reform succeeds or fails. This chapter defines the six pillars, maps their interdependencies, shows what cascades when any one is missing, and then turns to the question those dependencies force: in what order must the pillars be built? Vermont provides both the proof of concept and the canonical failure case — OneCare Vermont's collapse is the most instructive sequencing autopsy in recent American health policy.*
+*Healthcare transformation is a system problem: six pillars — Policy, Technology, Economics, Clinical, Equity, and Operations — connected by fifteen dependency relationships that determine whether reform succeeds or fails. This chapter opens with the failure that proves the point — OneCare Vermont's collapse — then defines the six pillars, maps their interdependencies, shows what cascades when any one is missing, and turns to the question those dependencies force: in what order must the pillars be built? Vermont provides both the proof of concept and the canonical failure case — OneCare Vermont's collapse is the most instructive sequencing autopsy in recent American health policy.*
 
 ## **The Problem with Single-Pillar Thinking**
 
-In 2010, the Affordable Care Act created the Center for Medicare and Medicaid Innovation with a mandate to test new payment and delivery models and scale what worked. Over the following fifteen years, CMMI launched more than fifty models, investing billions of dollars and attracted the attention of thousands of healthcare organizations. The results were modest. A 2023 evaluation found that the vast majority of CMMI models had not achieved statistically significant reductions in spending or improvements in quality. Most were discontinued. A handful showed promise and were expanded.
+In 2010, the Affordable Care Act created the Center for Medicare and Medicaid Innovation with a mandate to test new payment and delivery models and scale what worked. Over the following fifteen years, CMMI launched more than fifty models, investing billions of dollars and attracting the attention of thousands of healthcare organizations. The results were modest. A 2023 evaluation found that the vast majority of CMMI models had not achieved statistically significant reductions in spending or improvements in quality. Most were discontinued. A handful showed promise and were expanded.
 
 ::: {custom-style="StatStrip"}
 **50+** — CMMI Models Launched
@@ -251,7 +251,7 @@ In 2010, the Affordable Care Act created the Center for Medicare and Medicaid In
 
 **15 Yrs** — Span of Experience
 
-**6** — Single Pillar Thinking
+**Problem:** — Single-Pillar Thinking
 :::
 
 The pattern of failure across CMMI models is instructive. Models that addressed only the Economics pillar — changing what Medicare paid without addressing how care was delivered or whether providers had the infrastructure to respond — generated financial pressure without behavioral change. Models that addressed only the Clinical pillar — redesigning care coordination or care management programs — produced clinical improvements that the payment system then penalized by reducing volume-based revenue. Models that required Technology pillar investment — electronic health records, population health platforms, data exchange — found that providers lacked the operational capacity to use the tools effectively.
@@ -270,6 +270,61 @@ A checklist is a set of independent items. You can check them in any order. Chec
 
 ::: {custom-style="Banner"}
 A policy intervention that passes question one but fails questions four, five, or six is not a solution — it is a well-intentioned mistake waiting to be made.
+:::
+
+## **The OneCare Failure: A Sequencing Autopsy**
+
+The clearest evidence for that argument is a failure that has already happened. Before defining the six pillars, it is worth examining OneCare Vermont's collapse in structural terms, because the failure was not random and it was not primarily the result of bad intentions or poor execution. OneCare failed because of sequencing errors baked into its design from the beginning. Identifying those errors precisely is more useful than simply noting that the ACO wound down after a decade of operation.
+
+OneCare was Vermont's primary Accountable Care Organization vehicle under a Total Cost of Care model — holding OneCare financially responsible for the total healthcare spending of an attributed Vermont population. On paper, sound design. In practice, three sequencing failures that compounded into a cascade the organization could not survive.
+
+### **Sequencing Failure 1: Economics Without Policy Foundation**
+
+The most fundamental problem: Vermont attempted to operate a sophisticated payment reform model — one requiring system-wide accountability — without the policy foundation to enforce participation. Provider participation in OneCare was voluntary.
+
+This matters structurally, not just administratively. The Total Cost of Care model holds the ACO financially accountable for the total spending of an attributed population. But when high-cost, high-revenue providers remain outside the ACO — because participation is optional — the ACO is held responsible for costs it cannot influence. A hospital generating significant revenue from inpatient admissions has a rational financial incentive to stay outside a model that rewards reducing those admissions. When it does, the ACO's ability to manage total cost is structurally undermined from day one.
+
+::: {custom-style="CalloutWorked"}
+**WORKED EXAMPLE — What optional participation means for a hospital CFO**
+
+Imagine you are the CFO of a Vermont hospital. Your hospital generates $40 million annually from inpatient admissions. OneCare is asking you to join an ACO that will hold you financially accountable for reducing those admissions — reducing your revenue. Participation is voluntary. You have three choices: join and accept the risk; join and manage costs without affecting revenue; or don't join. For many Vermont hospitals, the rational choice was the third. This is not a failure of values. It is a predictable response to an incentive structure that the policy framework failed to close.
+:::
+
+Act 68's mandatory architecture is the direct statutory response to this failure. Reference-based pricing and global budgets are not optional. Every Vermont hospital is in.
+
+### **Sequencing Failure 2: Economics Without Technology — The "Managing Blind" Failure Mode**
+
+OneCare attempted to manage a complex, population-level payment model involving real financial risk without the technology infrastructure required to do so. Specifically: no integrated system combining timely clinical data with claims data at meaningful scale.
+
+Claims data is the financial record of healthcare — every bill submitted to an insurer. It tells you what was done, when, and at what cost. Clinical data is the medical record — diagnoses, lab results, medications, care plans. It tells you why something was done and what the patient's health status actually is. Neither dataset alone is sufficient for managing value-based payment. You need both, integrated, in near-real time.
+
+OneCare operated without this. Care managers were working from claims data arriving 60 to 90 days after care was delivered — meaning they were identifying patients who had already been hospitalized rather than preventing hospitalization in the first place. This is the "Managing Blind" failure mode: assuming downside financial risk under a Total Cost of Care model without the analytics to track total cost of care in real time. The result is unexpected, unexplainable financial losses — not because the model is wrong, but because the organization cannot see what it is supposed to be managing.
+
+::: {custom-style="CalloutWorked"}
+**WORKED EXAMPLE — Why timeliness is as critical as integration**
+
+A care manager responsible for 500 high-risk patients under a Total Cost of Care model needs to identify patients who are deteriorating before they are hospitalized. If her data arrives 60 days after the fact, she learns in March that a patient was hospitalized in January. The intervention opportunity is gone. If her data arrives within 24 to 48 hours — integrated clinical and claims feeds updated daily — she can see that a patient filled a new prescription last week, had an abnormal lab result three days ago, and has not seen their primary care provider in six months. She can call today, before the hospitalization.
+:::
+
+Vermont's AHEAD technology infrastructure addresses this directly: VHCURES provides longitudinal population data; VITL/VHIE provides clinical data exchange; and the AHS-GMCB analytics capability provides the modeling layer for global budget management and equity monitoring. This is the substrate OneCare never built.
+
+### **Sequencing Failure 3: The Cascade**
+
+The two failures above did not operate independently. They compounded. Because participation was optional, OneCare could not achieve the provider network coverage required to manage total cost of care. Because it could not manage total cost of care, it could not demonstrate savings. Because it could not demonstrate savings, it could not attract the capital to build the technology infrastructure that might have allowed it to manage costs. Because it lacked that technology, care management remained limited, financial reporting remained inadequate, and clinical value remained undemonstrated. Because clinical value was undemonstrated, skeptical providers had no reason to join. Which returned the cascade to its starting point.
+
+| Sequencing Gap | Structural Error | Direct Consequence | Cascade Effect |
+| :---- | :---- | :---- | :---- |
+| Policy (Stage 1) | Voluntary participation — no mandate | High-revenue hospitals opt out; ACO accountable for costs it cannot influence | Total cost of care cannot be managed → savings targets missed |
+| Technology (Stage 2) | No integrated real-time data; 60–90 day lag | "Managing Blind" — care managers identify hospitalized patients after the fact | Proactive intervention impossible → high-cost events not prevented → financial exposure accelerates |
+| Economics (Stage 3) | Payment model assumed risk before technology was ready | Unexpected losses → cannot demonstrate savings to payers | Capital unavailable to build technology → cycle repeats |
+| System-level | Three gaps mutually reinforcing | Organizational wind-down after ~10 years | Failure was architectural — no management decision could reverse it |
+
+*Figure 1.1 — The OneCare Failure Cascade. Source: HTR Analysis (2026). Based on GMCB records, AHS November 2025 Transformation Report, and OneCare Vermont public filings.*
+
+::: {custom-style="CalloutBeyond"}
+**BEYOND VERMONT**
+
+The three sequencing failures above — economics without a policy foundation, payment reform without data infrastructure, and clinical redesign without measurement — are not OneCare-specific defects. They are the three failure modes any value-based care vehicle exhibits when its launch order is wrong, whether that vehicle is a Medicaid ACO in a large fragmented state, a commercial risk contract for an independent physician group, or a CMMI model anywhere in the country. The autopsy is transferable even where the entity, the state, and the payer mix are not.
 :::
 
 ## **The Six Pillars Defined**
@@ -525,7 +580,7 @@ The most rigorous test of a dependency framework is not whether it describes how
 
 The dependency map is not merely a theoretical framework — it is a practical analytical tool for three management functions: transformation sequencing, risk identification, and investment prioritization.
 
-**1. Transformation sequencing — what must come first.** The dependency structure generates a partial ordering of interventions: some investments cannot produce their expected results until enabling investments are in place. Getting the sequence wrong is not merely inefficient — it produces failed interventions that generate political resistance to subsequent correct interventions. Part Two of this chapter develops that ordering in full and stress-tests it against Vermont's OneCare failure.
+**1. Transformation sequencing — what must come first.** The dependency structure generates a partial ordering of interventions: some investments cannot produce their expected results until enabling investments are in place. Getting the sequence wrong is not merely inefficient — it produces failed interventions that generate political resistance to subsequent correct interventions. Sections 1.8 through 1.15 develop that ordering in full, returning to the OneCare failure examined in Section 1.2.
 
 **2. Risk identification.** The dependency map identifies Vermont's vulnerabilities with precision. The critical path runs through the Technology pillar's analytics capability: AHEAD global budgets require VHCURES analytics, equity measurement requires demographic stratification, and clinical risk stratification requires the population health platform. The AHS-GMCB analytics capability — being stood up in 2025–2026 but not yet complete — is the single highest-risk gap in Vermont's current architecture. A delay does not merely delay one program; it delays the financial management capability for AHEAD, the equity measurement capability for the Statewide Strategic Plan, and the risk stratification capability for Blueprint's CCBHC expansion. Three dependencies converge on this single investment.
 
@@ -550,7 +605,7 @@ This table is not a comprehensive inventory of Vermont's healthcare reform. It i
 
 ## **From Framework to Sequence: Why Order Is Not Optional**
 
-Part One established what the six pillars are and how they depend on one another. The dependencies establish something sharper still: that the pillars cannot be built in any order. A dependency is, by definition, a constraint on sequence — if Economics requires Technology, then Technology must come first. The rest of this chapter develops that argument, using Vermont's OneCare failure as the case that proves what happens when the sequence is violated.
+Sections 1.3 through 1.7 established what the six pillars are and how they depend on one another. The dependencies establish something sharper still: that the pillars cannot be built in any order. A dependency is, by definition, a constraint on sequence — if Economics requires Technology, then Technology must come first. The rest of this chapter develops that argument, using Vermont's OneCare failure as the case that proves what happens when the sequence is violated.
 
 ## **The Core Argument: Dependency Logic Determines Sequence**
 
@@ -572,64 +627,9 @@ The correct sequence is: Policy → Technology → Economics → Clinical → Eq
 The Policy → Technology → Economics → Clinical → Equity → Operations sequence does not depend on a state having an all-payer model, a Green Mountain Care Board, or a single dominant ACO. Substitute any state's reform vehicle for OneCare and the same diagnostic question applies: did payment reform get layered onto a data infrastructure that did not yet exist? If so, the same cascade — unmeasurable risk, unmanageable contracts, eventual collapse — is the predictable result, not a Vermont-specific accident.
 :::
 
-## **The OneCare Failure: A Sequencing Autopsy**
-
-Before presenting the sequence, it is worth examining OneCare Vermont's failure in structural terms, because the failure was not random and it was not primarily the result of bad intentions or poor execution. OneCare failed because of sequencing errors baked into its design from the beginning. Identifying those errors precisely is more useful than simply noting that the ACO wound down after a decade of operation.
-
-OneCare was Vermont's primary Accountable Care Organization vehicle under a Total Cost of Care model — holding OneCare financially responsible for the total healthcare spending of an attributed Vermont population. On paper, sound design. In practice, three sequencing failures that compounded into a cascade the organization could not survive.
-
-### **Sequencing Failure 1: Economics Without Policy Foundation**
-
-The most fundamental problem: Vermont attempted to operate a sophisticated payment reform model — one requiring system-wide accountability — without the policy foundation to enforce participation. Provider participation in OneCare was voluntary.
-
-This matters structurally, not just administratively. The Total Cost of Care model holds the ACO financially accountable for the total spending of an attributed population. But when high-cost, high-revenue providers remain outside the ACO — because participation is optional — the ACO is held responsible for costs it cannot influence. A hospital generating significant revenue from inpatient admissions has a rational financial incentive to stay outside a model that rewards reducing those admissions. When it does, the ACO's ability to manage total cost is structurally undermined from day one.
-
-::: {custom-style="CalloutWorked"}
-**WORKED EXAMPLE — What optional participation means for a hospital CFO**
-
-Imagine you are the CFO of a Vermont hospital. Your hospital generates $40 million annually from inpatient admissions. OneCare is asking you to join an ACO that will hold you financially accountable for reducing those admissions — reducing your revenue. Participation is voluntary. You have three choices: join and accept the risk; join and manage costs without affecting revenue; or don't join. For many Vermont hospitals, the rational choice was the third. This is not a failure of values. It is a predictable response to an incentive structure that the policy framework failed to close.
-:::
-
-Act 68's mandatory architecture is the direct statutory response to this failure. Reference-based pricing and global budgets are not optional. Every Vermont hospital is in.
-
-### **Sequencing Failure 2: Economics Without Technology — The "Managing Blind" Failure Mode**
-
-OneCare attempted to manage a complex, population-level payment model involving real financial risk without the technology infrastructure required to do so. Specifically: no integrated system combining timely clinical data with claims data at meaningful scale.
-
-Claims data is the financial record of healthcare — every bill submitted to an insurer. It tells you what was done, when, and at what cost. Clinical data is the medical record — diagnoses, lab results, medications, care plans. It tells you why something was done and what the patient's health status actually is. Neither dataset alone is sufficient for managing value-based payment. You need both, integrated, in near-real time.
-
-OneCare operated without this. Care managers were working from claims data arriving 60 to 90 days after care was delivered — meaning they were identifying patients who had already been hospitalized rather than preventing hospitalization in the first place. This is the "Managing Blind" failure mode: assuming downside financial risk under a Total Cost of Care model without the analytics to track total cost of care in real time. The result is unexpected, unexplainable financial losses — not because the model is wrong, but because the organization cannot see what it is supposed to be managing.
-
-::: {custom-style="CalloutWorked"}
-**WORKED EXAMPLE — Why timeliness is as critical as integration**
-
-A care manager responsible for 500 high-risk patients under a Total Cost of Care model needs to identify patients who are deteriorating before they are hospitalized. If her data arrives 60 days after the fact, she learns in March that a patient was hospitalized in January. The intervention opportunity is gone. If her data arrives within 24 to 48 hours — integrated clinical and claims feeds updated daily — she can see that a patient filled a new prescription last week, had an abnormal lab result three days ago, and has not seen their primary care provider in six months. She can call today, before the hospitalization.
-:::
-
-Vermont's AHEAD technology infrastructure addresses this directly: VHCURES provides longitudinal population data; VITL/VHIE provides clinical data exchange; and the AHS-GMCB analytics capability provides the modeling layer for global budget management and equity monitoring. This is the substrate OneCare never built.
-
-### **Sequencing Failure 3: The Cascade**
-
-The two failures above did not operate independently. They compounded. Because participation was optional, OneCare could not achieve the provider network coverage required to manage total cost of care. Because it could not manage total cost of care, it could not demonstrate savings. Because it could not demonstrate savings, it could not attract the capital to build the technology infrastructure that might have allowed it to manage costs. Because it lacked that technology, care management remained limited, financial reporting remained inadequate, and clinical value remained undemonstrated. Because clinical value was undemonstrated, skeptical providers had no reason to join. Which returned the cascade to its starting point.
-
-| Sequencing Gap | Structural Error | Direct Consequence | Cascade Effect |
-| :---- | :---- | :---- | :---- |
-| Policy (Stage 1) | Voluntary participation — no mandate | High-revenue hospitals opt out; ACO accountable for costs it cannot influence | Total cost of care cannot be managed → savings targets missed |
-| Technology (Stage 2) | No integrated real-time data; 60–90 day lag | "Managing Blind" — care managers identify hospitalized patients after the fact | Proactive intervention impossible → high-cost events not prevented → financial exposure accelerates |
-| Economics (Stage 3) | Payment model assumed risk before technology was ready | Unexpected losses → cannot demonstrate savings to payers | Capital unavailable to build technology → cycle repeats |
-| System-level | Three gaps mutually reinforcing | Organizational wind-down after ~10 years | Failure was architectural — no management decision could reverse it |
-
-*Figure 1.1 — The OneCare Failure Cascade. Source: HTR Analysis (2026). Based on GMCB records, AHS November 2025 Transformation Report, and OneCare Vermont public filings.*
-
-::: {custom-style="CalloutBeyond"}
-**BEYOND VERMONT**
-
-The three sequencing failures above — economics without a policy foundation, payment reform without data infrastructure, and clinical redesign without measurement — are not OneCare-specific defects. They are the three failure modes any value-based care vehicle exhibits when its launch order is wrong, whether that vehicle is a Medicaid ACO in a large fragmented state, a commercial risk contract for an independent physician group, or a CMMI model anywhere in the country. The autopsy is transferable even where the entity, the state, and the payer mix are not.
-:::
-
 ## **The Critics: Why Sequencing Logic Has Real Opponents**
 
-The sequencing argument presented in this chapter has critics, and they deserve direct engagement rather than dismissal.
+The sequencing argument presented in this chapter — and the OneCare autopsy in Section 1.2 that motivates it — has critics, who deserve direct engagement rather than dismissal.
 
 ### **"Sequencing Is a Post-Hoc Rationalization"**
 
@@ -775,7 +775,7 @@ The dependency mechanics behind these three principles — how payment incentive
 
 ## **Five Sequencing Decisions That Organizations Get Wrong**
 
-The OneCare autopsy above is the fully documented case. The same errors recur, in generalizable form, across every transformation effort. **Figure 1.E** is the diagnostic version — the pattern to recognize, the early-warning signals that reveal it before it fully cascades, and the correction — so a reform architect can catch a sequencing error in their own system while it is still cheap to reverse.
+The OneCare autopsy in Section 1.2 is the fully documented case. The same errors recur, in generalizable form, across every transformation effort. **Figure 1.E** is the diagnostic version — the pattern to recognize, the early-warning signals that reveal it before it fully cascades, and the correction — so a reform architect can catch a sequencing error in their own system while it is still cheap to reverse.
 
 | Sequencing error | Early-warning signals | Vermont evidence | Correction |
 | :---- | :---- | :---- | :---- |
