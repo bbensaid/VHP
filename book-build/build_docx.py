@@ -1332,6 +1332,21 @@ def tighten_table_pagination():
         # of that white space. Releasing keepNext lets the heading sit at the
         # bottom of the page with the table beginning right after it, or flow
         # onto the next page on its own — either way the preceding page fills.
+        # FIRST: delete empty paragraphs sitting between the lead-in and the
+        # table. Pandoc turns the blank line that markdown requires before a
+        # table into a real empty paragraph. It renders as a blank line, it
+        # breaks the keepNext chain from the lead-in to the table, and it is
+        # the reason "Figure 1.A characterizes…" kept getting stranded at the
+        # top of a page with the table overleaf. 49 tables had one.
+        while True:
+            prev_el = tbl._tbl.getprevious()
+            if (prev_el is not None and prev_el.tag == qn('w:p')
+                    and not "".join(prev_el.itertext()).strip()
+                    and prev_el.find(qn('w:drawing')) is None):
+                prev_el.getparent().remove(prev_el)
+                continue
+            break
+
         # EXCEPTION: a figure lead-in ("Figure 1.A characterizes…") must stay with
         # its table. Releasing it stranded the sentence alone at the top of a
         # page with three-quarters of that page blank and the table overleaf —
