@@ -355,7 +355,7 @@ The six pillars are not equal in their causal priority — enabling legislation 
 
 *Vermont application: The 14-hospital transformation planning process, RHRC technical assistance, the AHS HSA Coordinator model, the Division of Planning and Effectiveness, and EMS regionalization are Vermont's Operations pillar investments.*
 
-**Figure 1.A** characterizes each pillar's diagnostic function and structural role in the system — not as a repetition of the definitions above, but as a specification of what each pillar produces when functioning and what question it answers in the transformation logic.
+The table below characterizes each pillar's diagnostic function and structural role in the system — not as a repetition of the definitions above, but as a specification of what each pillar produces when functioning and what question it answers in the transformation logic.
 
 | Pillar | Diagnostic question | Structural role in the system | What it produces when functioning |
 | :---- | :---- | :---- | :---- |
@@ -366,13 +366,13 @@ The six pillars are not equal in their causal priority — enabling legislation 
 | **Equity** | Is it just? | The cross-cutting constraint and accountability lens. Not a separate program — a dimension applied to every decision in every other pillar. Transformation that improves averages while widening disparities has failed by the framework's own standards. | Stratified measurement that reveals disparities hidden in aggregates; payment designs that do not penalize providers serving high-SDOH populations; clinical programs that reach disadvantaged populations; technology infrastructure that produces disaggregated data. |
 | **Operations** | Is it executable? | The execution layer. Translates statutory mandates, payment models, data platforms, and clinical programs into organizational reality. The most analytically sound framework fails if the implementing organization lacks capacity, infrastructure, and management discipline. | Hospital transformation plans that are implemented, not filed; AHS organizational capacity sufficient to manage 14 simultaneous transformation processes; project-management infrastructure that tracks progress against statutory deadlines. |
 
-*Figure 1.A — The six pillars: diagnostic questions and structural roles. Source: six-pillar framework documentation; Acts 167 and 68 of 2025.*
+*Figure 1.2 — The six pillars: diagnostic questions and structural roles. Source: six-pillar framework documentation; Acts 167 and 68 of 2025.*
 
 ## **The Architecture of Interdependency: The Fifteen Dependency Relationships**
 
 The six pillars do not operate independently. They interact through fifteen directed dependencies and feedback loops that determine whether transformation produces the outcomes it promises. Understanding these interactions is the core analytical skill this book develops.
 
-Figure 1.B renders all fifteen relationships as a single matrix: read each row as a source pillar and each column as the pillar it acts on. The bracketed tag names the kind of dependency — **ENABLES** (makes possible), **REQUIRES** (cannot function without), **DRIVES** (actively forces change in), **CONSTRAINS** (imposes a design limit on). The sections that follow take the relationships one source pillar at a time, naming the mechanism by which each operates, the failure mode that emerges when it is ignored, and the Vermont evidence that confirms it. (The same map is available as an interactive visualization on the Health Transformation Review platform: [healthtransformationreview.org/research-lab](https://healthtransformationreview.org/research-lab).)
+Figure 1.3 renders all fifteen relationships as a single matrix: read each row as a source pillar and each column as the pillar it acts on. The bracketed tag names the kind of dependency — **ENABLES** (makes possible), **REQUIRES** (cannot function without), **DRIVES** (actively forces change in), **CONSTRAINS** (imposes a design limit on). The sections that follow take the relationships one source pillar at a time, naming the mechanism by which each operates, the failure mode that emerges when it is ignored, and the Vermont evidence that confirms it. (The same map is available as an interactive visualization on the Health Transformation Review platform: [healthtransformationreview.org/research-lab](https://healthtransformationreview.org/research-lab).)
 
 **A note on reading direction — the single most common source of confusion.** Every dependency is a *directed* relationship between two pillars, and the verb you use to name it depends on which end you are standing at. **ENABLES and REQUIRES are the same relationship viewed from opposite ends.** When Technology enables Economics, Economics necessarily requires Technology; these are not two dependencies but one, described from the giving side and the receiving side. The same holds for DRIVES and CONSTRAINS: the pillar doing the driving is experienced by the other pillar as a constraint on its design.
 
@@ -387,7 +387,7 @@ The test is whether there are two *distinct causal mechanisms* or one mechanism 
 
 *Two relationships, a genuine feedback loop (the rare case):* Operations **enables** Policy's data feedback loops, *and* Policy **requires** statutory deadlines that Operations must execute against. Here the two directions carry different content: information flows one way, obligation the other. These are the loops that make the system self-correcting, and they are the reason the framework speaks of "dependencies **and feedback loops**" rather than dependencies alone.
 
-When you see a pillar pair occupying two cells in Figure 1.B, check which case you are in before concluding the framework is double-counting.
+When you see a pillar pair occupying two cells in Figure 1.3, check which case you are in before concluding the framework is double-counting.
 :::
 
 | From ↓ / To → | Policy | Technology | Economics | Clinical | Equity | Operations |
@@ -399,7 +399,7 @@ When you see a pillar pair occupying two cells in Figure 1.B, check which case y
 | **Equity** | [CONSTRAINS] with justice reviews | — | — | [CONSTRAINS] with cultural competency | — | — |
 | **Operations** | [ENABLES] data feedback loops | [REQUIRES] workforce to run infrastructure | — | — | — | — |
 
-*Figure 1.B — The architecture of interdependency: the fifteen dependency relationships, read From-row to To-column. Source: six-pillar framework documentation; Vermont Health Transformation / HTR (2026).*
+*Figure 1.3 — The architecture of interdependency: the fifteen dependency relationships, read From-row to To-column. Source: six-pillar framework documentation; Vermont Health Transformation / HTR (2026).*
 
 ### **Policy Dependencies: Three Relationships That Establish the Mandatory Architecture**
 
@@ -574,7 +574,7 @@ The most rigorous test of a dependency framework is not whether it describes how
 | **Equity** | Transformation proceeds but disparities widen; average outcomes improve while geographic and demographic gaps grow. | Technically optimal policy produces inequitable distributions; technology is built but not used for stratified measurement; clinical programs improve averages without closing gaps. | Transformation that increases efficiency while reducing equity — technically successful, ethically failed. | National VBC experience: most APMs improved averages while widening disparities; safety-net providers penalized. |
 | **Operations** | Statutory mandates exist on paper; clinical programs are designed; data platforms are procured; nothing is implemented. | Policy accountability fails without capacity to meet deadlines; platforms deployed but unused for management; contracts signed but not managed. | Transformation documents accumulate; deadlines slip; the 2028 Strategic Plan is descriptive rather than committal; the deficit trajectory continues. | Most state reform efforts of the 2010s: correct policy, adequate financing, sophisticated data — capacity insufficient to execute. |
 
-*Figure 1.C — Failure-cascade analysis: what breaks when each pillar is absent. Source: HTR analysis; CMMI evaluation literature; Oliver Wyman Act 167 Report; Vermont experience.*
+*Figure 1.4 — Failure-cascade analysis: what breaks when each pillar is absent. Source: HTR analysis; CMMI evaluation literature; Oliver Wyman Act 167 Report; Vermont experience.*
 
 ## **Using the Dependency Map as an Analytical Tool**
 
@@ -599,7 +599,7 @@ Vermont's healthcare transformation is the closest thing to a controlled experim
 | **Equity** | Geographic equity monitoring (HSA-level); SDOH integration through AHS HSA Coordinators; rural access preservation in RBP/global budget design | HRSN universal screening (Blueprint); CCBHC access for all populations; Northeast Kingdom focus; GLP-1 access advocacy | Chapter 10 |
 | **Operations** | 14-hospital transformation planning (RHRC + AHS); Vermont CIN shared services; Act 68 transformation grants ($2M); PMO establishment | EMS regionalization; administrative simplification (CON, prior auth); AHS restructuring; Division of Planning and Effectiveness | Chapters 11, 16 |
 
-*Figure 1.D — Vermont's six-pillar transformation map. Sources: Acts 167, 51, 55, 62, 68 of 2022–2025; AHEAD State Agreement; Vermont RHT Program Application; Oliver Wyman Act 167 Report.*
+*Figure 1.5 — Vermont's six-pillar transformation map. Sources: Acts 167, 51, 55, 62, 68 of 2022–2025; AHEAD State Agreement; Vermont RHT Program Application; Oliver Wyman Act 167 Report.*
 
 This table is not a comprehensive inventory of Vermont's healthcare reform. It is a navigation map — a way of locating Vermont's specific interventions within the analytical framework that the subsequent chapters develop. The framework gives every Vermont policy intervention a structural home and every analytical concept a Vermont application.
 
@@ -710,7 +710,7 @@ A hospital that redesigns its administrative operations before its payment model
 | 5 | Equity | Audit, calibrate, correct — with social risk adjustment embedded in payment design | Equity is a constraining dependency throughout. Without social risk adjustment, global budgets penalize safety-net providers. | HRSN screening; EAST Fund for SDOH; SRA in global budgets; REH model |
 | 6 | Operations | Close the administrative cost gap and translate strategy into implemented programs | Operations is the execution layer. Vermont's $1,303 per-discharge administrative gap vs. national benchmark is the primary source of projected direct savings. | RHRC methodology; shared services; 14-hospital transformation planning |
 
-*Figure 1.2 — The Six-Stage Execution Sequence. Source: HTR Analysis (2026).*
+*Figure 1.6 — The Six-Stage Execution Sequence. Source: HTR Analysis (2026).*
 
 ## **Three Sequencing Principles in Practice**
 
@@ -775,7 +775,7 @@ The dependency mechanics behind these three principles — how payment incentive
 
 ## **Five Sequencing Decisions That Organizations Get Wrong**
 
-The OneCare autopsy in Section 1.2 is the fully documented case. The same errors recur, in generalizable form, across every transformation effort. **Figure 1.E** is the diagnostic version — the pattern to recognize, the early-warning signals that reveal it before it fully cascades, and the correction — so a reform architect can catch a sequencing error in their own system while it is still cheap to reverse.
+The OneCare autopsy in Section 1.2 is the fully documented case. The same errors recur, in generalizable form, across every transformation effort. **Figure 1.7** is the diagnostic version — the pattern to recognize, the early-warning signals that reveal it before it fully cascades, and the correction — so a reform architect can catch a sequencing error in their own system while it is still cheap to reverse.
 
 | Sequencing error | Early-warning signals | Vermont evidence | Correction |
 | :---- | :---- | :---- | :---- |
@@ -785,7 +785,7 @@ The OneCare autopsy in Section 1.2 is the fully documented case. The same errors
 | **Equity review at the end, not the beginning** — methodology finished, then sent for equity review | Equity staff flagging the same structural problems in finalized designs; high rate of equity modifications at approval stage | RBP methodology design is the live test case: preserving rural access and not defunding high-Medicaid hospitals is a design question, not a post-hoc correction | Health Equity Advisory Commission consulted at design stage, not comment stage |
 | **Operations execution without adequate capacity** — mandate outpaces organizational capacity | Statutory deadlines extended or waived; deliverables perpetually "in progress"; governance that convenes but does not decide | AHS must run 14 hospital transformation processes, AHEAD support, RBP finalization, and the Strategic Plan at once — capacity Oliver Wyman flagged as insufficient | RHRC builds hospital-level capacity before AHEAD accountability takes full effect |
 
-*Figure 1.E — Five sequencing errors: the diagnostic pattern, early-warning signals, and correction for each. Source: HTR analysis; Vermont experience; Oliver Wyman Act 167 Report.*
+*Figure 1.7 — Five sequencing errors: the diagnostic pattern, early-warning signals, and correction for each. Source: HTR analysis; Vermont experience; Oliver Wyman Act 167 Report.*
 
 ## **Vermont's Implementation Timeline: Reading the Sequence in Statutory Deadlines**
 
@@ -800,7 +800,7 @@ Vermont's transformation is unusual in one critical respect: it has a legislativ
 | **Operations** | Building (2025–2028) | RHRC engagement, AHS HSA Coordinator model, Division of Planning and Effectiveness, PMO structure — correctly sequenced to precede the peak execution demand of FY2027–2028. |
 | **Equity** | Throughout (2025–2028) | Social risk adjustment methodology, HEROI scoring, geographic equity monitoring — correctly treated as a parallel design constraint rather than a final review. |
 
-*Figure 1.4 — Vermont's transformation timeline, by pillar. Source: HTR Analysis (2026); Act 68 of 2025; AHEAD State Agreement.*
+*Figure 1.8 — Vermont's transformation timeline, by pillar. Source: HTR Analysis (2026); Act 68 of 2025; AHEAD State Agreement.*
 
 ### **The Current Vulnerability: The Technology-Economics Race**
 
@@ -818,7 +818,7 @@ The execution-sequence argument is best understood by manipulating it, not just 
 | Score a real organization or state across all six pillars and watch the composite readiness number respond | **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** | Drop one pillar's score to zero and observe the cascade — the simulator penalizes downstream readiness, reproducing the OneCare logic in Figure 1.1. |
 | Quantify where reform is losing momentum and which pillar is the binding constraint | **[Transformation Friction Index](https://healthtransformationreview.org/transformation-friction-index)** | Identify your own "Technology gate" bottleneck — the chapter's central Vermont vulnerability — before it becomes a financial one. |
 
-*Figure 1.3 — Hands-on platform tools for Chapter 1: working the execution-sequence argument on the HTR platform.*
+*Figure 1.H — Hands-on platform tools for Chapter 1: working the execution-sequence argument on the HTR platform.*
 
 ::: {custom-style="CalloutTry"}
 **TRY THIS — Reproduce the OneCare cascade.**
@@ -4322,7 +4322,7 @@ The five forces this chapter develops — federal Medicaid retrenchment, the AHE
 
 ## **Vermont Transformation Scorecard: Six-Pillar Status, April 2026**
 
-**Figure 13.1** consolidates Vermont’s transformation progress across all six pillars. It answers the question every reader should ask before reading this chapter’s forecast: where does Vermont actually stand? The full scorecard with metric-level detail appears in Appendix F. The signal column reflects HTR’s assessment as of April 2026.
+The table below consolidates Vermont’s transformation progress across all six pillars. It answers the question every reader should ask before reading this chapter’s forecast: where does Vermont actually stand? The full scorecard with metric-level detail appears in Appendix F. The signal column reflects HTR’s assessment as of April 2026.
 
 | Pillar | 2022 Baseline | 2026 Status | 2028 Target | Signal |
 | :---- | :---- | :---- | :---- | :---- |
@@ -5582,195 +5582,195 @@ Now deliberately break the order: take a strong Stage 3 budget model and a stron
 
 # **Figure Index**
 
-Figure 1.1 — The OneCare Failure Cascade. Source: HTR Analysis (2026). Based on GMCB records, AHS 
+Figure 1.1 — The OneCare Failure Cascade. Source: HTR Analysis (2026). Based on GMCB records, AHS November 2025 Transformation Report, and OneCare Vermont public filings.
 
-Figure 1.2 — The Six-Stage Execution Sequence. Source: HTR Analysis (2026).
+Figure 1.2 — The six pillars: diagnostic questions and structural roles. Source: six-pillar framework documentation; Acts 167 and 68 of 2025.
 
-Figure T — .1 — Vermont Healthcare Transformation Timeline: 2022–2035. Sources: Vermont Legislature, 
+Figure 1.3 — The architecture of interdependency: the fifteen dependency relationships, read From-row to To-column. Source: six-pillar framework documentation; Vermont Health Transformation / HTR (2026).
 
-Figure 3.1 — CMMI model success factors: what distinguishes models that produce results from those
+Figure 1.4 — Failure-cascade analysis: what breaks when each pillar is absent. Source: HTR analysis; CMMI evaluation literature; Oliver Wyman Act 167 Report; Vermont experience.
 
-Figure 3.2 — Policy strategy functions for healthcare organizations. Source: HTR Advisory framewor
+Figure 1.5 — Vermont's six-pillar transformation map. Sources: Acts 167, 51, 55, 62, 68 of 2022–2025; AHEAD State Agreement; Vermont RHT Program Application; Oliver Wyman Act 167 Report.
 
-Figure 3.3 — H.R. 1 Medicaid provisions: timeline, financial impact, and Vermont implications. Sou
+Figure 1.6 — The Six-Stage Execution Sequence. Source: HTR Analysis (2026).
+
+Figure 1.7 — Five sequencing errors: the diagnostic pattern, early-warning signals, and correction for each. Source: HTR analysis; Vermont experience; Oliver Wyman Act 167 Report.
+
+Figure 1.8 — Vermont's transformation timeline, by pillar. Source: HTR Analysis (2026); Act 68 of 2025; AHEAD State Agreement.
+
+Figure 1.H — Hands-on platform tools for Chapter 1: working the execution-sequence argument on the HTR platform.
+
+Figure 2.1 — Act 68 statutory implementation timeline. Source: Act 68 of 2025.
+
+Figure 2.H — Hands-on platform tools for the Policy Pillar.
+
+Figure 3.1 — CMMI model success factors: what distinguishes models that produce results from those that don't. Source: HTR analysis of CMMI evaluation literature; CMS model documentation.
+
+Figure 3.2 — Policy strategy functions for healthcare organizations. Source: HTR Advisory framework.
+
+Figure 3.3 — H.R. 1 Medicaid provisions: timeline, financial impact, and Vermont implications. Sources: KFF analysis; CBO estimates; Pew Charitable Trusts (January 2026).
+
+Figure 3.H — Hands-on platform tools for the Policy Pillar in practice.
+
+Figure 4.1 — Vermont's three-layer health data infrastructure. Source: GMCB VHCURES documentation; Vermont HIE Strategic Plan.
 
 Figure 4.1 — VHCURES data coverage summary. Source: GMCB VHCURES documentation.
 
-Figure 4.2 — VHCURES structural limitations and required improvements. Sources: GMCB VHCURES data 
+Figure 4.2 — VHCURES structural limitations and required improvements. Sources: GMCB VHCURES data documentation; Oliver Wyman Act 167 Report; AHS Transformation Reports; Act 68 of 2025.
 
-Figure 4.3 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering
+Figure 4.3 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering Committee statutory mandate; AHS January 2025 Legislative Presentation; DVHA HIE governance documents.
 
-Figure 4.4 — Vermont statewide EHR: case for and against. The feasibility assessment underway will
+Figure 4.4 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.
 
-Figure 4.5 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Pr
+Figure 4.5 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Presentation January 2025; Vermont RHT Program Application; GMCB HIE connectivity criteria.
 
-Figure 4.6 — Vermont target technology architecture: five-layer model. Sources: GMCB VHCURES docum
+Figure 4.6 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.
 
-Figure 5.1 — Vermont's three priority FHIR use cases. Sources: CMS Interoperability and Patient Ac
+Figure 4.H — Hands-on platform tools for the Technology Pillar.
 
-Figure 5.2 — Population health CDS types and Vermont applications. Sources: the Technology pillar 
+Figure 5.1 — Vermont's three priority FHIR use cases. Sources: CMS Interoperability and Patient Access Rule; ONC 21st Century Cures Rule; the Technology pillar framework.
 
-Figure 5.3 — Technology pillar implementation matrix. Sources: HTR Advisory; Vermont RHT Program 
+Figure 5.2 — Population health CDS types and Vermont applications. Sources: the Technology pillar framework; Vermont Blueprint for Health; VHCURES documentation.
 
-Figure 6.1 — Vermont hospital commercial pricing vs. Medicare and break-even benchmarks. Sources: 
+Figure 5.H — Hands-on platform tools for the Technology Pillar in practice.
 
-Figure 6.2 — Vermont silver marketplace premium trajectory 2018–2024, showing 108% increase over s
+Figure 5.3 — Technology pillar implementation matrix. Sources: HTR Advisory; Vermont RHT Program (2025); CMS interoperability rule.
 
-Figure 6.3 — Cross-state reference-based pricing and rate regulation: design and outcomes. Sources
+Figure 6.2 — Vermont silver marketplace premium trajectory 2018–2024, showing 108% increase over six years. Source: Oliver Wyman Act 167 Report; GMCB analysis.
 
-Figure 6.4 — Vermont RBP and global budget implementation phases. Source: GMCB Act 68 Update, Febr
+Figure 6.4 — Vermont RBP and global budget implementation phases. Source: GMCB Act 68 Update, February 2026.
 
-Table 6.5 — Five dimensions of global budget design with Vermont's current direction. Source: GMC
+Figure 6.8 — Vermont all-payer architecture under AHEAD + Act 68 combined. Sources: Vermont RHT Program Application (November 2025); AHS AHEAD fact sheet; Act 68.
 
-Table 6.6 — Vermont global budget history: four attempts and the central lesson. Sources: GMCB Ac
+Figure 6.9 — Oliver Wyman Vermont hospital financial projection scenarios. Source: Oliver Wyman Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025).
 
-Table 6.7 — Maryland All-Payer Global Budget Model results summary. Sources: HSCRC; CMS; Commonwe
+Figure 6.10 — Financial metrics that matter: FFS vs. global budget environment. Compiled from GMCB guidance, Maryland HSCRC methodology, and Act 68 accountability framework.
 
-Figure 6.8 — Vermont all-payer architecture under AHEAD + Act 68 combined. Sources: Vermont RHT Pr
-
-Figure 6.9 — Oliver Wyman Vermont hospital financial projection scenarios. Source: Oliver Wyman Ac
-
-Figure 6.10 — Financial metrics that matter: FFS vs. global budget environment. Compiled from GMCB
-
-Figure 6.11 — Estimated sources of direct and indirect savings from Vermont hospital transformatio
+Figure 6.11 — Estimated sources of direct and indirect savings from Vermont hospital transformation. Figures are illustrative ranges derived from Oliver Wyman's >$400M total estimate. Source: Oliver Wyman Act 167 Report (2024).
 
 Figure 6.12 — Three-phase APM transition model for Vermont healthcare organizations.
 
-Figure 7.1 — APM shared savings calculation framework. Source: HTR's APM Shared Savings Calculator
+Figure 6.H — Hands-on platform tools for the Economics Pillar.
 
-Figure 7.2 — Economics pillar implementation matrix. Sources: HTR Research Lab; Oliver Wyman Act 
+Figure 7.1 — APM shared savings calculation framework. Source: HTR's APM Shared Savings Calculator methodology; CMS ACO model documentation.
 
-Figure 7.3 — The financial case for population health management under VBC. Sources: CMS cost data
+Figure 7.2 — Economics pillar implementation matrix. Sources: HTR Research Lab; Oliver Wyman Act 167 Report; Vermont AHEAD documentation.
 
-Figure 7.4 — Financial metrics transformation: FFS versus global budget environment. Source: HTR's
+Figure 7.4 — Financial metrics transformation: FFS versus global budget environment. Source: HTR's Economics pillar framework.
 
-Figure 7.5 — Transformation investment ROI framework with Vermont examples. Sources: HTR's Economi
+Figure 7.5 — Transformation investment ROI framework with Vermont examples. Sources: HTR's Economics pillar framework; Blueprint for Health ROI study; CMS cost data; Vermont data from AHS Transformation Reports.
 
-Figure 8.1 — Vermont Blueprint for Health: three integrated components. Sources: Blueprint for Hea
+Figure 7.H — Hands-on platform tools for the Economics Pillar in practice.
 
-Figure 8.2 — Blueprint for Health clinical outcomes and ROI. Sources: Population Health Management
+Figure 8.1 — Vermont Blueprint for Health: three integrated components. Sources: Blueprint for Health website; Vermont Blueprint Overview (GMCB, 2022); Blueprint Annual Report 2024.
 
-Figure 8.3 — Collaborative Care Model components and Vermont application. Sources: SAMHSA CoCM pro
+Figure 8.2 — Blueprint for Health clinical outcomes and ROI. Sources: Population Health Management journal; AHS November 2025 Transformation Report; Blueprint for Health 2024 data.
 
-Figure 8.4 — Vermont comprehensive primary health care: five operational components and investment
+Figure 8.3 — Collaborative Care Model components and Vermont application. Sources: SAMHSA CoCM program; CMS Behavioral Health Integration Services (January 2026); Vermont MHI Pilot Evaluation (2025).
 
-Figure 8.5 — Vermont clinical quality measurement framework: priority measures, rationale, and cur
+Figure 8.4 — Vermont comprehensive primary health care: five operational components and investment vehicles. Sources: Act 68 of 2025; AHEAD State Agreement (January 2025); AHS Transformation Plans 2025.
 
-Figure 8.6 — Clinical pillar commitments for Vermont's Statewide Health Care Delivery Strategic Pl
+Figure 8.5 — Vermont clinical quality measurement framework: priority measures, rationale, and current status. Sources: AHS Transformation Report (November 2025); Blueprint for Health data; Oliver Wyman Act 167 Report.
 
-Figure 9.1 — NCQA PCMH recognition: six concept areas and Vermont implementation challenges. Sour
+Figure 8.H — Hands-on platform tools for the Clinical Pillar.
 
-Figure 9.2 — Panel risk stratification framework for Vermont PCMH practices. Sources: Vermont Blu
+Figure 8.6 — Clinical pillar commitments for Vermont's Statewide Health Care Delivery Strategic Plan. Sources: Act 68 of 2025; Oliver Wyman Act 167 Report; AHS Transformation Plans; Vermont RHT Program Application.
 
-Figure 9.3 — Collaborative Care Model components and Vermont application. Sources: SAMHSA CoCM pr
+Figure 9.1 — NCQA PCMH recognition: six concept areas and Vermont implementation challenges. Sources: NCQA PCMH Standards and Guidelines, 2023 edition; Vermont Blueprint for Health Annual Report 2024; Oliver Wyman Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025).
 
-Figure 9.4 — Clinical pillar in-practice implementation commitments for Vermont's Statewide Healt
+Figure 9.2 — Panel risk stratification framework for Vermont PCMH practices. Sources: Vermont Blueprint for Health Practice Support Resources; HRSA Population Health Management Training; Oliver Wyman Act 167 Report section on primary care productivity.
 
-Figure 9.5 — Clinical pillar implementation matrix. Sources: Vermont Blueprint for Health Annual 
+Figure 9.3 — Collaborative Care Model components and Vermont application. Sources: SAMHSA CoCM program; CMS Behavioral Health Integration Services (January 2026); Vermont MHI Pilot Evaluation (2025).
 
-Figure 10.1 — Vermont geographic equity disparities: key indicators. Sources: AHS November 2025 Tra
+Figure 9.4 — Clinical pillar in-practice implementation commitments for Vermont's Statewide Health Care Delivery Strategic Plan. Sources: Act 68 of 2025; AHEAD State Agreement (January 2025); AHS Transformation Plans 2025; Vermont RHT Program Application (November 2025).
 
-Figure 10.2 — Vermont SDOH burden: key indicators and equity implications. Sources: Vermont RHT Pro
+Figure 9.H — Hands-on platform tools for the Clinical Pillar in practice.
 
-Figure 10.3 — Vermont equity gaps and required investments. Sources: Vermont Department of Health H
+Figure 9.5 — Clinical pillar implementation matrix. Sources: Vermont Blueprint for Health Annual Report 2024; Vermont MHI Evaluation 2025; SAMHSA CCBHC documentation.
 
-Figure 10.4 — Equity as a cross-cutting dimension of all six pillars. Sources: Act 67 of 2025; Oliv
+Figure 10.1 — Vermont geographic equity disparities: key indicators. Sources: AHS November 2025 Transformation Report; Vermont RHT Program Application; Vermont Department of Health.
 
-Figure 10.5 — Vermont equity accountability framework: indicators, stratifications, and targets. So
+Figure 10.2 — Vermont SDOH burden: key indicators and equity implications. Sources: Vermont RHT Program Application (November 2025); Oliver Wyman Act 167 Report; Vermont Department of Health.
 
-Figure 10.6 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Eq
+Figure 10.3 — Vermont equity gaps and required investments. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Oliver Wyman Act 167 Report; AHS Transformation Reports; KFF GLP-1 coverage analysis.
 
-Figure 10.7 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specific
+Figure 10.4 — Equity as a cross-cutting dimension of all six pillars. Sources: Act 67 of 2025; Oliver Wyman Act 167 Report; six-pillar framework.
 
-Figure 10.8 — Five-step disparity closure process with Vermont applications. Source: HTR's Health E
+Figure 10.5 — Vermont equity accountability framework: indicators, stratifications, and targets. Sources: Act 167; Act 68; VDH Health Equity Data Report (January 2025); AHS Transformation Reports.
 
-Figure 10.9 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VD
+Figure 10.H — Hands-on platform tools for the Equity Pillar.
 
-Figure 11.1 — Vermont health system transformation governance architecture under Act 68. Sources: A
+Figure 10.6 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.
 
-Figure 11.2 — Vermont hospital transformation planning sequence. Sources: AHS Health Care Transform
+Figure 10.7 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specifications; AHS Health Equity Data Report (January 2025); Blueprint for Health data.
 
-Figure 11.3 — Vermont health system transformation outcome measures: current performance vs. benchm
+Figure 10.8 — Five-step disparity closure process with Vermont applications. Source: HTR's Health Equity Studio methodology.
 
-Figure 11.4 — Administrative cost gap: Vermont PPS hospitals vs. national benchmark. This $1,303 pe
+Figure 10.9 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VDH; Blueprint for Health; DVHA; AHS.
 
-Figure 11.5 — Vermont 14-hospital regionalization framework: COE designations, tiers, and key opera
+Figure 11.1 — Vermont health system transformation governance architecture under Act 68. Sources: Act 68 of 2025; AHS Legislative Presentation (January 2025).
 
-Figure 11.6 — Vermont workforce crisis key metrics. Sources: Vermont RHT Program Application (Novem
+Figure 11.2 — Vermont hospital transformation planning sequence. Sources: AHS Health Care Transformation website; AHS November 2025 Act 68 Report; AHS January 2025 Legislative Presentation.
 
-Figure 11.7 — Vermont health system transformation: comprehensive operations metrics framework. Sou
+Figure 11.3 — Vermont health system transformation outcome measures: current performance vs. benchmarks. Source: AHS Health Care System Transformation Report, November 2025.
 
-Figure 11.8 — Attribution error taxonomy and remediation. Source: HTR's Operations pillar framework
+Figure 11.4 — Administrative cost gap: Vermont PPS hospitals vs. national benchmark. This $1,303 per-discharge gap represents the primary operational inefficiency target for Vermont's transformation. Source: AHS Transformation Report, November 2025 (NASHP via CMS).
 
-Figure 11.9 — Operations pillar implementation matrix. Sources: Vermont AHS Transformation Reports
+Figure 11.5 — Vermont 14-hospital regionalization framework: COE designations, tiers, and key operational considerations. Sources: Oliver Wyman Act 167 Report (2024); AHS Transformation Reports (2025).
 
-Figure 12.1 — technical infrastructure framework components and intended users. Source: technical i
+Figure 11.6 — Vermont workforce crisis key metrics. Sources: Vermont RHT Program Application (November 2025); Oliver Wyman Act 167 Report; Vermont Department of Labor.
 
-Figure 12.2 — Kotter's change management framework applied to Vermont's healthcare transformation. 
+Figure 11.7 — Vermont health system transformation: comprehensive operations metrics framework. Sources: Act 68 of 2025; AHS Transformation Report (November 2025); Oliver Wyman Act 167 Report.
 
-Figure 12.3 — HTR Implementation Toolkit: available tools for Strategist and Enterprise subscribers
+Figure 11.H — Hands-on platform tools for the Operations Pillar.
 
-Figure 13.1 — Vermont Six-Pillar Transformation Scorecard, April 2026. Technology and Equity
+Figure 11.8 — Attribution error taxonomy and remediation. Source: HTR's Operations pillar framework; ACO REACH and MSSP operational guidance.
 
-Figure 13.2 — The 2025 federal healthcare policy inflection point. Sources: KFF; CBO; Chartis, 2026
+Figure 11.9 — Operations pillar implementation matrix. Sources: Vermont AHS Transformation Reports (August, November 2025); RHRC engagement; Oliver Wyman Act 167 Report.
 
-Figure 13.3 — Six-pillar forecast, 2026–2035: Vermont and national. Sources: HTR analysis; sources 
+Figure 12.1 — technical infrastructure framework components and intended users. Source: technical infrastructure framework documentation.
 
-Figure 13.4 — Vermont's transformation decisions and their national implications. Sources: HTR anal
+Figure 12.2 — Kotter's change management framework applied to Vermont's healthcare transformation. Source: HTR Advisory methodology; Kotter (1996); Vermont transformation documentation.
 
-Figure 14.1 — Early-warning signals of political risk to Vermont's reform architecture. Sources: HT
+Figure 12.3 — HTR Implementation Toolkit: available tools for Strategist and Enterprise subscribers.
 
-Figure 14.2 — Political-disruption scenario planning for Vermont healthcare organizations. Sources:
+Figure 13.1 — Vermont Six-Pillar Transformation Scorecard, April 2026. Technology and Equity are the two pillars where 2026 status most diverges from the 2028 target. Full scorecard with sources: Appendix F.
 
-Figure 15.1 — The project-management gap. Sources: PMI Standard for Portfolio Management (5th ed.);
+Figure 13.2 — The 2025 federal healthcare policy inflection point. Sources: KFF; CBO; Chartis, 2026 State of Rural Health.
 
-Figure 15.2 — PMI hierarchy applied to Vermont's transformation. Source: PMI Standard for Portfolio
+Figure 13.3 — Six-pillar forecast, 2026–2035: Vermont and national. Sources: HTR analysis; sources cited throughout this chapter.
 
-Figure 15.3 — Vermont's 19-component transformation portfolio. Sources: Act 68 of 2025; AHS Transfo
+Figure 13.4 — Vermont's transformation decisions and their national implications. Sources: HTR analysis; Vermont AHEAD State Agreement; Act 68 of 2025.
 
-Figure 15.4 — Pillar-level role matrix. Sources: PMI credential requirements; Act 68 governance str
+Figure 14.1 — Early-warning signals of political risk to Vermont's reform architecture. Sources: HTR Advisory risk-monitoring framework; Act 68 of 2025; GMCB regulatory process documentation.
 
-Figure 15.5 — Vermont's portfolio risk register (PMI format). Risk score \= probability (Low=1 … Hig
+Figure 14.2 — Political-disruption scenario planning for Vermont healthcare organizations. Sources: HTR Advisory risk assessment; Vermont political-environment analysis (April 2026).
 
-Figure 15.6 — Benefits-realization plan. Sources: Act 167 of 2022; PMI Standard for Portfolio Manag
+Figure 15.1 — The project-management gap. Sources: PMI Standard for Portfolio Management (5th ed.); Oliver Wyman Act 167 Report; AHS November 2025 Transformation Report.
 
-Figure 15.7 — Business case for portfolio-management investment. Sources: PMI Pulse of the Professi
+Figure 15.2 — PMI hierarchy applied to Vermont's transformation. Source: PMI Standard for Portfolio Management (5th ed.); PMBOK Guide 7th ed.; PMI Program Management Standard.
 
-Figure 16.1 — Act 68 statutory requirements for the Strategic Plan. Sources: Act 68 of 2025; HCAC m
+Figure 15.3 — Vermont's 19-component transformation portfolio. Sources: Act 68 of 2025; AHS Transformation Reports; Vermont RHT Program Application; CMS AHEAD documentation.
 
-Figure 16.2 — AHS organizational gaps and required structural changes. Sources: Oliver Wyman Act 16
+Figure 15.4 — Pillar-level role matrix. Sources: PMI credential requirements; Act 68 governance structure; Vermont RHT Program organizational design.
 
-Figure 16.3 — Vermont's 14 HSAs: regional profile and priority transformation challenges. Sources: 
+Figure 15.5 — Vermont's portfolio risk register (PMI format). Risk score \= probability (Low=1 … High=5) × impact (Low=1 … Critical=4). Sources: PMI Standard for Portfolio Management (5th ed.); analytical risk assessment throughout this book; AHS November 2025 Report.
 
-Figure 16.4 — AHS restructuring and Vermont transformation timeline. Sources: Act 68 of 2025; AHEAD
+Figure 15.6 — Benefits-realization plan. Sources: Act 167 of 2022; PMI Standard for Portfolio Management (5th ed.); Vermont Scorecard (Appendix F).
 
-Figure 16.5 — Proposed structure for the 2028 Statewide Strategic Plan. Sources: Act 68 of 2025; HC
+Figure 15.7 — Business case for portfolio-management investment. Sources: PMI Pulse of the Profession (2017); Vermont RHT Program Application; Act 68 EAST Fund allocation; PMI salary data.
 
-Figure 16.6 — Key parameters for the Strategic Plan. Sources: Act 68; VTDigger; Oliver Wyman Act 16
+Figure 16.1 — Act 68 statutory requirements for the Strategic Plan. Sources: Act 68 of 2025; HCAC mandate (healthcarereform.vermont.gov).
 
-Figure A — .1 — Vermont demographic transformation. Sources: Oliver Wyman Act 167 Report (2024); Verm
+Figure 16.2 — AHS organizational gaps and required structural changes. Sources: Oliver Wyman Act 167 Recommendations (2024); AHS Transformation Reports (2025); Act 68 of 2025.
 
-Figure A — .2 — GMCB regulatory functions. Sources: GMCB Hospital Budget Review Guide; Acts 167 and 6
+Figure 16.3 — Vermont's 14 HSAs: regional profile and priority transformation challenges. Sources: Oliver Wyman Act 167 Report; Vermont RHT Program Application; AHS Transformation Reports 2025.
 
-Figure A — .3 — Vermont's 14 hospitals: typology, grant status, focus, and challenges. Sources: AHS H
+Figure 16.4 — AHS restructuring and Vermont transformation timeline. Sources: Act 68 of 2025; AHEAD State Agreement (January 2025); AHS Transformation Reports; Vermont RHT Program Application.
 
-Figure A — .4 — Vermont hospital transformation initiative themes, January 2026 (148 initiatives). So
+Figure 16.5 — Proposed structure for the 2028 Statewide Strategic Plan. Sources: Act 68 of 2025; HCAC mandate; six-pillar framework.
 
-Figure B — .1 — Policy-pillar implementation matrix. Sources: HTR Advisory methodology; Vermont RHT P
-
-Figure F — .1 — Policy-pillar scorecard. Sources: Act 68 of 2025; Oliver Wyman Act 167 Report; CMS AH
-
-Figure F — .2 — Technology-pillar scorecard. Sources: GMCB VHCURES; VITL; Vermont DOH Health Equity D
-
-Figure F — .3 — Economics-pillar scorecard. Sources: Oliver Wyman Act 167 Report; AHS November 2025 R
-
-Figure F — .4 — Clinical-pillar scorecard. Sources: Vermont Blueprint Annual Report 2024; Vermont AHS
-
-Figure F — .5 — Equity-pillar scorecard. Sources: Vermont DOH Health Equity Data Report (January 2025
-
-Figure F — .6 — Operations-pillar scorecard. Sources: AHS Transformation Reports (August, November 20
-
-The HTR platform is a subscription service. Academic, institutional, and team options are available at healthtransformationreview.org.
+Figure 16.6 — Key parameters for the Strategic Plan. Sources: Act 68; VTDigger; Oliver Wyman Act 167 Report; Vermont RHT Program Application.
 
 # **Bibliography and Source Notes**
 
