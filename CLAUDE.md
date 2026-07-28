@@ -16,7 +16,32 @@ The short version, because getting this wrong destroys the author's work:
   `python3 book-build/sync_from_gdocs.py` — it snapshots the download, lists
   the real edits and filters the ~190 blocks of table-conversion noise.
 - `./book.sh` wraps all of this and refuses to build over unsynced edits. Prefer
-  it to running the pipeline by hand.
+  it to running the pipeline by hand. It also tracks who holds the book
+  (`./book.sh who|mine|claude`) — **never edit the manuscript while the author
+  holds it**; that caused a real collision on 2026-07-27.
+
+### Recurring section headings are style-critical
+
+The pipeline styles end-of-chapter sections by **matching their text**, so a
+variant title renders differently and reads as a formatting bug. Keep these
+byte-identical across every chapter:
+
+`## **Work This Chapter on the Platform**` · `## **Implications for You**` ·
+`## **Key Concepts in This Chapter**` · and `Sources: …` as a plain paragraph
+(never `## **Sources**` — it renders as a grey italic footer, not a heading).
+
+Audit after any structural edit:
+
+```bash
+grep -nE "^#{1,4}.*Key Concepts" HTR_Book_v42.md    # all identical?
+grep -cE "^#{1,4} \*\*Sources\*\*" HTR_Book_v42.md  # must be 0
+```
+
+`finalize_sources()` runs **last** in `build_docx.py` deliberately: it is the
+single authority on how a Sources block looks, overriding pandoc's own run
+properties. Do not style Sources anywhere else — two competing code paths are
+what let three chapters drift to Calibri/black while fifteen were
+Garamond/grey.
 
 **Google Docs does NOT destroy the formatting.** Shading, borders, callout
 colours and the navy palette all survive a round-trip. It drops only the
