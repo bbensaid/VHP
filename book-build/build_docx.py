@@ -35,7 +35,13 @@ NAVY = RGBColor(0x1B,0x3A,0x6B)
 HEADCOLOR = RGBColor(0x16,0x1B,0x22)   # near-black book headings (match make_reference.py)
 PORTRAIT_DXA = int(6.3*1440)   # full text width (portrait, 8.5in - 2*1.1in margins)
 LANDSCAPE_DXA = int(9.6*1440)  # full text width on a landscape page (11in - 2*0.7in margins)
-WIDE_TABLE_MIN_COLS = 4        # a table must have >= this many columns ...
+WIDE_TABLE_MIN_COLS = 6        # a table must have >= this many columns ...
+# 4 was far too low: all 40 landscape-wrapped tables in this book have only 4-5
+# columns and read fine upright. Each wrapper is a portrait->landscape->portrait
+# sandwich whose LEADING break renders as a blank paragraph, which is what split
+# every figure lead-in from its table and left half-blank pages. Deleting that
+# blank line by hand made it worse, because the trailing landscape break then
+# governed the table and ran it off the page.
 WIDE_TABLE_MIN_CELL = 120      # ... AND at least one cell this long (chars) to go landscape
 
 def _is_dependency_matrix(t):
