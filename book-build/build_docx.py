@@ -1332,6 +1332,28 @@ def tighten_table_pagination():
         # of that white space. Releasing keepNext lets the heading sit at the
         # bottom of the page with the table beginning right after it, or flow
         # onto the next page on its own — either way the preceding page fills.
+        # Remove the empty paragraph pandoc leaves between a lead-in and its
+        # table (markdown requires a blank line there; pandoc makes it a real
+        # paragraph). It renders as a blank line and breaks the keepNext chain
+        # from the lead-in to the table.
+        #
+        # CRITICAL: only remove paragraphs that carry NO sectPr. 41 of these
+        # empties are the section breaks that flip a wide table to landscape and
+        # back. Deleting those collapsed the section structure and rendered the
+        # whole book landscape. Only 8 are inert; those are the ones to drop.
+        while True:
+            prev_el = tbl._tbl.getprevious()
+            if prev_el is None or prev_el.tag != qn('w:p'):
+                break
+            if "".join(prev_el.itertext()).strip():
+                break
+            pPr_prev = prev_el.find(qn('w:pPr'))
+            if pPr_prev is not None and pPr_prev.find(qn('w:sectPr')) is not None:
+                break                      # load-bearing section break — leave it
+            if prev_el.find(qn('w:drawing')) is not None:
+                break                      # holds an image
+            prev_el.getparent().remove(prev_el)
+
         # EXCEPTION: a figure lead-in ("Figure 1.A characterizes…") must stay with
         # its table. Releasing it stranded the sentence alone at the top of a
         # page with three-quarters of that page blank and the table overleaf —
@@ -1343,11 +1365,23 @@ def tighten_table_pagination():
             pPr = prev.find(qn('w:pPr'))
             txt = "".join(prev.itertext()).strip()
             is_lead_in = bool(re.match(r'^(Figure|Table)\s+[0-9]', txt))
-            if pPr is not None and not is_lead_in:
+            # A section-break paragraph that survived the cleanup above sits
+            # between the lead-in and the table. Releasing it (keepNext=false)
+            # is what stranded "Figure 1.A characterizes…" on its own page —
+            # the chain lead-in -> break -> table snapped in the middle. Glue
+            # it instead so the whole run travels together.
+            is_sect = pPr is not None and pPr.find(qn('w:sectPr')) is not None
+            is_empty = not txt
+
+            if pPr is not None and not is_lead_in and not (is_sect and is_empty):
                 for kn in pPr.findall(qn('w:keepNext')):
                     pPr.remove(kn)
                 kn = OxmlElement('w:keepNext'); kn.set(qn('w:val'), 'false')
                 pPr.append(kn)          # override the style's keepNext
+            elif pPr is not None and is_sect and is_empty:
+                for kn in pPr.findall(qn('w:keepNext')):
+                    pPr.remove(kn)
+                pPr.append(OxmlElement('w:keepNext'))   # keep it with the table
             elif is_lead_in and pPr is not None:
                 # glue it to the table instead
                 for kn in pPr.findall(qn('w:keepNext')):
