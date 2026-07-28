@@ -31,7 +31,7 @@ This book is also not a prediction. The transformations described here are under
 Finally, a word about what this book *is* — because it is not, on its own, the whole of the argument. This book is the intellectual foundation of the **Health Transformation Review** ([healthtransformationreview.org](https://healthtransformationreview.org)), an open-source integrated ecosystem with three parts designed to work as one:
 
 - **The book** you are reading — the framework, the dependency logic, the Vermont evidence, and the national comparisons.
-- **The platform** — six pillar hubs, a **Research Lab** of two dozen interactive analytical tools, an **AI Analyst** grounded in this book and Vermont's public-domain source documents, a fifty-state dashboard, and a daily intelligence feed. Every argument in these pages that can be modeled *is* modeled there.
+- **The platform** — six pillar hubs, a **Research Lab** of nearly forty interactive analytical tools, an **AI Analyst** grounded in this book and Vermont's public-domain source documents, a fifty-state dashboard, and a daily intelligence feed. Every argument in these pages that can be modeled *is* modeled there.
 - **The Academy** ([healthtransformationreview.org/academy](https://healthtransformationreview.org/academy)) — a structured executive-education layer of courses, tracks, and lessons that teach the concepts hands-on and link directly to the tools that apply them.
 
 The three are deliberately cross-linked. Each pillar chapter ends with a *"Work This Chapter on the Platform"* guide that maps its argument to the specific tools that let you manipulate it; the platform's tools carry *"From the Book"* callouts back to the chapters that explain them; and the AI Analyst can answer a question and route you to the right tool or lesson in the same breath. **Everything in the ecosystem is, in effect, an interactive expression of this book's framework.** You can read the book alone and it stands on its own — but the framework is meant to be *run*, not just read, and the platform is where you run it.
@@ -173,7 +173,7 @@ This book is one of three integrated components of the **Health Transformation R
 | Component | What it is | How it connects to the book |
 | :---- | :---- | :---- |
 | **The Book** | *Transforming American Healthcare* — the framework, the dependency logic, the Vermont evidence, and the national comparisons. Read it online with audio narration at [/book](https://healthtransformationreview.org/book). | The intellectual foundation. Everything else is an interactive expression of it. |
-| **The Platform** | Six pillar hubs, a [Research Lab](https://healthtransformationreview.org/research-lab) of two dozen interactive analytical tools, an [AI Analyst](https://healthtransformationreview.org/chat) grounded in this book and Vermont's source documents, a [fifty-state dashboard](https://healthtransformationreview.org/dashboard), and a daily intelligence feed. | Every argument here that can be modeled *is* modeled there. Each pillar chapter ends with a *"Work This Chapter on the Platform"* guide linking to the exact tools. |
+| **The Platform** | Six pillar hubs, a [Research Lab](https://healthtransformationreview.org/research-lab) of nearly forty interactive analytical tools, an [AI Analyst](https://healthtransformationreview.org/chat) grounded in this book and Vermont's source documents, a [fifty-state dashboard](https://healthtransformationreview.org/dashboard), and a daily intelligence feed. | Every argument here that can be modeled *is* modeled there. Each pillar chapter ends with a *"Work This Chapter on the Platform"* guide linking to the exact tools. |
 | **The Academy** | A structured executive-education layer of courses, tracks, and lessons — from foundational concepts to advanced payment-model design. Start at [/academy](https://healthtransformationreview.org/academy). | Lessons teach the book's concepts hands-on and deep-link to the tool that applies each one. |
 
 The connection runs in every direction. The book sends you to the platform through the chapter-ending tool guides. The platform sends you back to the book through *"From the Book"* callouts on every hub and tool. The Academy sends you to both. And the [AI Analyst](https://healthtransformationreview.org/chat) sits across all three — ask it a question and it answers from the book's evidence base *and* routes you to the tool, dashboard, or lesson that lets you go further. The practical consequence for you as a reader: whenever this book makes a claim you want to test against your own organization or state, there is almost always a tool waiting to let you do exactly that. Watch for the **EXPLORE ON THE PLATFORM** and **GO DEEPER — ACADEMY** callouts throughout the chapters; they are the doorways.
@@ -181,7 +181,7 @@ The connection runs in every direction. The book sends you to the platform throu
 ::: {custom-style="CalloutTry"}
 **START HERE**
 
-New to the ecosystem? Open [healthtransformationreview.org/academy/getting-started](https://healthtransformationreview.org/academy/getting-started), declare your role, and the platform personalizes what it surfaces first. Prefer to explore on your own? The [Research Lab](https://healthtransformationreview.org/research-lab) is organized into six benches — one per pillar — and the [AI Analyst](https://healthtransformationreview.org/chat) can orient you to any of them.
+New to the ecosystem? Open [healthtransformationreview.org/academy/getting-started](https://healthtransformationreview.org/academy/getting-started), declare your role, and the platform personalizes what it surfaces first. Prefer to explore on your own? The [Research Lab](https://healthtransformationreview.org/research-lab) is organized into benches grouped by pillar — and the [AI Analyst](https://healthtransformationreview.org/chat) can orient you to any of them.
 :::
 
 ## **How to Use This Book**
@@ -222,7 +222,7 @@ You are building foundational knowledge in a graduate program or as an independe
 
 **Recommended path.** Read the entire book in order. Chapter 1 establishes the framework and execution sequence; Chapters 2-11 develop each pillar; Chapters 12-16 provide future context and the AHS restructuring roadmap. The Key Concepts sections at the end of each chapter are the glossary. The source notes are the bibliography. Use Vermont as the case study while building transferable analytical skills.
 
-**On the platform.** The [Academy](https://healthtransformationreview.org/academy) gives you a structured curriculum with certificates, and the entire [Research Lab](https://healthtransformationreview.org/research-lab) is a sandbox for reproducing the book's analyses yourself. Start at [/academy/getting-started](https://healthtransformationreview.org/academy/getting-started).
+**On the platform.** The [Academy](https://healthtransformationreview.org/academy) gives you a structured curriculum with progress tracking, and the entire [Research Lab](https://healthtransformationreview.org/research-lab) is a sandbox for reproducing the book's analyses yourself. Start at [/academy/getting-started](https://healthtransformationreview.org/academy/getting-started).
 
 ## **What This Book Cannot Do**
 
@@ -242,7 +242,7 @@ Sources: Oliver Wyman Healthcare and Life Sciences Group, Act 167 Community Enga
 
 ## **The Problem with Single-Pillar Thinking**
 
-In 2010, the Affordable Care Act created the Center for Medicare and Medicaid Innovation with a mandate to test new payment and delivery models and scale what worked. Over the following fifteen years, CMMI launched more than fifty models, investing billions of dollars and attracting the attention of thousands of healthcare organizations. The results were modest. A 2023 evaluation found that the vast majority of CMMI models had not achieved statistically significant reductions in spending or improvements in quality. Most were discontinued. A handful showed promise and were expanded.
+In 2010, the Affordable Care Act created the Center for Medicare and Medicaid Innovation with a mandate to test new payment and delivery models and scale what worked. Over the following fifteen years, CMMI launched more than fifty models, investing billions of dollars and attracting the attention of thousands of healthcare organizations. A 2023 evaluation found that the vast majority had not achieved statistically significant reductions in spending or improvements in quality. Most were discontinued. A handful showed promise and were expanded.
 
 ::: {custom-style="StatStrip"}
 **50+** — CMMI Models Launched
@@ -276,7 +276,7 @@ A policy intervention that passes question one but fails questions four, five, o
 
 The clearest evidence for that argument is a failure that has already happened. Before defining the six pillars, it is worth examining OneCare Vermont's collapse in structural terms, because the failure was not random and it was not primarily the result of bad intentions or poor execution. OneCare failed because of sequencing errors baked into its design from the beginning. Identifying those errors precisely is more useful than simply noting that the ACO wound down after a decade of operation.
 
-OneCare was Vermont's primary Accountable Care Organization vehicle under a Total Cost of Care model — holding OneCare financially responsible for the total healthcare spending of an attributed Vermont population. On paper, sound design. In practice, three sequencing failures that compounded into a cascade the organization could not survive.
+OneCare was Vermont's primary Accountable Care Organization vehicle under a Total Cost of Care model — holding OneCare financially responsible for the total healthcare spending of an attributed Vermont population. On paper, sound design. In practice, three sequencing failures that compounded until the organization could not recover.
 
 ### **Sequencing Failure 1: Economics Without Policy Foundation**
 
@@ -580,7 +580,7 @@ The most rigorous test of a dependency framework is not whether it describes how
 
 The dependency map is not merely a theoretical framework — it is a practical analytical tool for three management functions: transformation sequencing, risk identification, and investment prioritization.
 
-**1. Transformation sequencing — what must come first.** The dependency structure generates a partial ordering of interventions: some investments cannot produce their expected results until enabling investments are in place. Getting the sequence wrong is not merely inefficient — it produces failed interventions that generate political resistance to subsequent correct interventions. Sections 1.8 through 1.15 develop that ordering in full, returning to the OneCare failure examined in Section 1.2.
+**1. Transformation sequencing — what must come first.** The dependency structure generates a partial ordering of interventions: some investments cannot produce their expected results until enabling investments are in place. Getting the sequence wrong is not merely inefficient — it produces failed interventions that generate political resistance to subsequent correct interventions. Sections 1.8 through 1.14 develop that ordering in full, returning to the OneCare failure examined in Section 1.2.
 
 **2. Risk identification.** The dependency map identifies Vermont's vulnerabilities with precision. The critical path runs through the Technology pillar's analytics capability: AHEAD global budgets require VHCURES analytics, equity measurement requires demographic stratification, and clinical risk stratification requires the population health platform. The AHS-GMCB analytics capability — being stood up in 2025–2026 but not yet complete — is the single highest-risk gap in Vermont's current architecture. A delay does not merely delay one program; it delays the financial management capability for AHEAD, the equity measurement capability for the Statewide Strategic Plan, and the risk stratification capability for Blueprint's CCBHC expansion. Three dependencies converge on this single investment.
 
