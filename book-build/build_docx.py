@@ -1312,7 +1312,16 @@ def tighten_table_pagination():
         if trPr.find(qn('w:cantSplit')) is None:
             trPr.append(OxmlElement('w:cantSplit'))
 
-        # 3. let the text above the table stay where it is
+        # 3. let the text above the table stay where it is.
+        #
+        # This includes HEADINGS. A heading carries keepNext from its style, so
+        # Word refuses to separate it from the table below — and when the table
+        # will not fit, it drags the heading forward too, stranding everything
+        # above them and leaving a half-blank page. Twenty tables in this book
+        # sit directly under a heading, and they were the largest single source
+        # of that white space. Releasing keepNext lets the heading sit at the
+        # bottom of the page with the table beginning right after it, or flow
+        # onto the next page on its own — either way the preceding page fills.
         prev = tbl._tbl.getprevious()
         released = 0
         while prev is not None and prev.tag == qn('w:p') and released < 2:
@@ -1320,11 +1329,50 @@ def tighten_table_pagination():
             if pPr is not None:
                 for kn in pPr.findall(qn('w:keepNext')):
                     pPr.remove(kn)
-                ps = pPr.find(qn('w:pStyle'))
-                if ps is not None and str(ps.get(qn('w:val'))).startswith('Heading'):
-                    break
+                kn = OxmlElement('w:keepNext'); kn.set(qn('w:val'), 'false')
+                pPr.append(kn)          # override the style's keepNext
             prev = prev.getprevious()
             released += 1
+
+        # 4. a table that breaks should leave at least two rows on each side of
+        #    the break rather than one orphaned row.
+        if len(rows) >= 4:
+            for r in (rows[1], rows[-1]):
+                trPr = r._tr.get_or_add_trPr()
+                if trPr.find(qn('w:cantSplit')) is None:
+                    trPr.append(OxmlElement('w:cantSplit'))
+
+def shrink_oversized_tables():
+    """Drop the font a half-point on tables that would otherwise overflow a page.
+
+    Ten tables in this book render taller than a full page even at the normal
+    body size, so they always break — and a break near a page bottom leaves a
+    ragged gap. A 0.5pt reduction is invisible next to the surrounding text but
+    recovers three to four lines per page, which is usually enough to pull the
+    tallest tables back inside one page.
+    """
+    CHARS_PER_LINE = 38
+    PAGE_LINES = 46
+
+    def est_lines(t):
+        n = 0
+        for r in t.rows:
+            per_cell = [max(1, len(c.text) // CHARS_PER_LINE + 1) for c in r.cells]
+            n += max(per_cell) if per_cell else 1
+        return n
+
+    shrunk = 0
+    for tbl in doc.tables:
+        if est_lines(tbl) <= PAGE_LINES:
+            continue
+        shrunk += 1
+        for row in tbl.rows:
+            for cell in row.cells:
+                for p in cell.paragraphs:
+                    for r in p.runs:
+                        cur = r.font.size
+                        r.font.size = Pt(max(7.0, (cur.pt if cur else 9.0) - 0.5))
+    return shrunk
 
 def keep_lists_together():
     """Stop bullet lists from splitting across a page with a big void: set
@@ -1383,6 +1431,7 @@ wide_tables_to_landscape()
 style_key_concepts()
 rule_above_major_sections()
 tighten_table_pagination()
+shrink_oversized_tables()
 keep_lists_together()
 chapter_page_breaks()
 add_cover()
