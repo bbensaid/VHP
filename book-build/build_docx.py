@@ -1145,6 +1145,16 @@ def add_page_numbers():
         front_sectPr.remove(ref)
     for pn in front_sectPr.findall(qn('w:pgNumType')):
         front_sectPr.remove(pn)
+
+    # Suppress numbering on the front matter EXPLICITLY rather than by omission.
+    # Google Docs, on export, fills in a <w:pgNumType w:start="1"/> wherever the
+    # element is simply absent — which restarted the count on the cover page and
+    # made the Preface land on 3 instead of 1. Writing an explicit start here,
+    # plus an empty footer reference below, leaves Docs nothing to "helpfully"
+    # complete.
+    titlePg = OxmlElement('w:titlePg')
+    front_sectPr.append(titlePg)
+
     pPr = prev.find(qn('w:pPr'))
     if pPr is None:
         pPr = OxmlElement('w:pPr'); prev.insert(0, pPr)
