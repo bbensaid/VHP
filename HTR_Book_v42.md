@@ -4276,6 +4276,18 @@ The most common advisory failure in healthcare transformation is engaging extern
 
 Vermont's transformation experience runs through this book as both an analytical case study and an active advisory engagement. HTR has worked with Vermont hospitals, state agencies, and community organizations on specific transformation questions — APM readiness assessments, equity analytics, technology architecture reviews, policy impact analysis. The Vermont case study in this book draws on that engagement experience as well as the extensive public record of Vermont's transformation.
 
+## **Work This Chapter on the Platform**
+
+This chapter argues that knowledge without implementation infrastructure produces nothing. The [HTR platform](https://healthtransformationreview.org/research-lab) is one instance of that infrastructure — the tools below are where the book's frameworks become working instruments.
+
+| Do this | On this tool | What to look for |
+| :---- | :---- | :---- |
+| Search the evidence base behind a claim before you cite it in your own work | **[Evidence Library](https://healthtransformationreview.org/research-lab/knowledge-workspace?tab=evidence)** | Whether the underlying source is a peer-reviewed evaluation, a consultant projection, or an agency self-report — the distinction this chapter argues most transformation reading collapses. |
+| Assemble your own analysis using the book's frameworks rather than reading someone else's | **[Research Workspace](https://healthtransformationreview.org/research-lab/knowledge-workspace?tab=workspace)** | How quickly a framework you understood abstractly becomes concrete once you supply your own organization's numbers. |
+| Ask a question in plain language and get routed to the framework, chapter, and tool that answer it | **[AI Analyst](https://healthtransformationreview.org/chat)** | Use it as the change-management aid this chapter describes: the fastest way to bring a colleague who has not read the book up to the point where they can act. |
+
+*Figure 12.H — Hands-on platform tools for Chapter 12: turning knowledge into implementation.*
+
 ## **Implications for You**
 
 If you are a Vermont hospital executive: The knowledge transfer infrastructure this chapter describes — learning collaboratives, Communities of Practice, the Vermont CIN's shared analytics capability — is not an academic exercise. It is the mechanism by which the transformation investments being made at Vermont's more advanced hospitals become available to the smaller, less resourced hospitals that cannot independently build the same capabilities. If you lead one of Vermont's larger systems, your participation in learning collaboratives and knowledge transfer is not optional generosity. It is a system obligation, and increasingly, a strategic interest: a system in which 9 of 14 hospitals are financially fragile cannot produce the population health improvement AHEAD measures, because the fragile hospitals serve the populations whose outcomes most need to improve.
@@ -4473,6 +4485,33 @@ Vermont's transformation will produce documented answers to questions every stat
 
 *Figure 13.4 — Vermont's transformation decisions and their national implications. Sources: HTR analysis; Vermont AHEAD State Agreement; Act 68 of 2025.*
 
+## **Work This Chapter on the Platform**
+
+A forecast is only useful if you can watch it resolve. These tools track the indicators this chapter projects forward, so the reader can check the book's predictions against the record as it accumulates.
+
+| Do this | On this tool | What to look for |
+| :---- | :---- | :---- |
+| Track Vermont's six-pillar status as it moves, rather than at the single April 2026 snapshot this chapter reports | **[HTI Dashboard](https://healthtransformationreview.org/hti-dashboard)** | Whether a pillar is improving, flat, or decaying between reporting intervals — the trend that decides which of the chapter's two scenarios is unfolding. |
+| Compare Vermont against the other states pursuing structural reform | **[Innovation Leaderboard](https://healthtransformationreview.org/research-lab/knowledge-workspace?tab=leaderboard)** | Which states are moving on which pillars. Vermont being early is the premise of this book; the leaderboard is where you check whether it stays true. |
+| Follow the policy and regulatory record as it is made | **[The Wire](https://healthtransformationreview.org/the-wire)** | GMCB decisions, AHS reports, and CMS model changes — the raw material from which the next version of this chapter's forecast will be written. |
+| Score a state's readiness on the six pillars and test the chapter's scenarios yourself | **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** | What has to be true, pillar by pillar, for the optimistic scenario rather than the pessimistic one to hold. |
+
+*Figure 13.H — Hands-on platform tools for Chapter 13: tracking the forecast against the record.*
+
+## **Implications for You**
+
+**If you are a Vermont official:** this chapter's two scenarios differ on a small number of decisions that are still open in 2026 — whether the analytics capability is operational before AHEAD financial accountability begins, whether social risk adjustment is embedded in global budget design or appended to it, and whether the December 2028 Strategic Plan commits to measurable outcomes or describes intentions. Those three are worth more attention than the forecast's aggregate numbers.
+
+**If you lead a healthcare organization outside Vermont:** the five forces this chapter identifies are not Vermont-specific, and the ten-year horizon is a planning window, not a prediction. The practical question is which of the five is already visible in your own market, and how much lead time your organization has before it becomes binding. A payer or system that treats demographic cross-subsidy erosion as a 2035 problem will discover it as a 2029 problem.
+
+**If you are a policymaker in another state:** Vermont's value to you is as an early instance, not a template. Watch which of the decisions above Vermont gets right and which it gets wrong, and treat both as information you are receiving several years before you would have generated it yourself. That is the only sense in which this chapter is a forecast for anyone but Vermont.
+
+**If you are a researcher:** the scenarios in this chapter are falsifiable and dated. That is deliberate. The indicators are public — GMCB hospital data, AHS transformation reports, CMS AHEAD documentation — and a reader in 2029 will be able to say plainly which scenario occurred. Hold the book to that.
+
+## **Key Concepts in This Chapter**
+
+Five forces · six-pillar forecast · optimistic and pessimistic scenario · national template · transformation trajectory · falsifiable forecast · decision points
+
 ## **A Closing Note: What This Book Is Betting On**
 
 Every analytical framework contains implicit bets. It is worth making this book's explicit.
@@ -4582,6 +4621,28 @@ Vermont's cascade — Act 167 establishing diagnosis, Act 51 building institutio
 Act 167's comprehensive, public, community-grounded diagnostic process — 230+ meetings, 3,100+ participants — created legitimacy for Act 68's mandates by making the crisis visible and involving affected communities. Communities that helped identify their own system's problems are less susceptible to campaigns claiming the problems do not exist. Act 68 adds a second sustainability feature: it makes failure visible. Monthly reports to the legislature, quarterly GMCB rate-setting updates, and the December 2028 deadline create continuous public accountability. If Act 68 is weakened, the weakening will be documented in public reporting — a political accountability trail that makes deliberate erosion more costly.
 
 This is the model other states should take from Vermont, beyond the specific policy content: build the political-sustainability architecture into the reform design from the start. Diagnosis before legislation. Public process before mandate. Incremental capacity-building before full accountability. Continuous public reporting that makes progress and failure equally visible.
+
+## **Work This Chapter on the Platform**
+
+Political risk is easier to argue about than to measure. These tools turn the chapter's early-warning signals into something you can check on a given date rather than debate.
+
+| Do this | On this tool | What to look for |
+| :---- | :---- | :---- |
+| Watch the statutory and regulatory record for the early-warning signals this chapter names | **[The Wire](https://healthtransformationreview.org/the-wire)** | Bills that would amend Act 68, GMCB appointment changes, and shifts in enforcement posture — the leading indicators, well before any of them reaches a headline. |
+| Model what happens to the transformation if one pillar's political support is withdrawn | **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** | Drop the Policy score and watch Economics fall with it. The dependency structure is why political risk to one pillar is not contained to that pillar. |
+| Quantify where reform is losing momentum before it becomes a political story | **[Transformation Friction Index](https://healthtransformationreview.org/transformation-friction-index)** | Rising friction in a pillar is usually visible in the operating data a year before it becomes a legislative problem. |
+
+*Figure 14.H — Hands-on platform tools for Chapter 14: monitoring political risk.*
+
+## **Implications for You**
+
+**If you are a state official or legislator:** the durability argument in this chapter rests on structure, not on goodwill — mandatory statutory architecture, staggered effective dates, and federal agreements that carry their own obligations. The practical implication is that protecting transformation across an election cycle is mostly work done *before* the cycle: every deadline that lands inside a statute is one that does not depend on the next administration's enthusiasm.
+
+**If you lead a healthcare organization:** political risk to the reform is operational risk to you. An organization that has built its capital plan on global budgets arriving in FY2028 needs a stated position on what it does if that date moves. The chapter's early-warning signals are worth monitoring not because you can influence them, but because they determine how much lead time you have.
+
+**If you are an advocate:** the most durable protections in Vermont's architecture were not the most rhetorically forceful ones. Mandatory participation, statutory deadlines, and federal-state agreements survive changes of government; strategic plans and voluntary commitments generally do not. That distinction is worth more than a stronger version of the same advocacy.
+
+**If you are in another state:** the reform cascade this chapter describes — a diagnostic act, then an enabling act, then an operational act — is a political-sustainability structure as much as a policy one. Each act makes the next harder to reverse. States that attempt the whole architecture in a single bill give opponents one target instead of three.
 
 ## **Key Concepts in This Chapter**
 
@@ -5015,6 +5076,28 @@ Beyond its analytical content, the plan must make one commitment currently absen
 Vermont’s AHS restructuring matters beyond Vermont because it is the first test of whether a state human-services agency can redesign itself as a population-health system operator in response to a statutory transformation mandate. The questions are not Vermont-specific: How do you align an agency organized around program silos with geographically defined service areas? How do you build the analytics capacity to model structural change before implementing it? How do you run a multi-stakeholder planning process that includes hospitals, insurers, providers, and community organizations without producing a plan that commits to nothing? Vermont will have answers by December 2028. They will be grounded in real experience with a real system under real pressure. That is not nothing. In American health policy, where policy debates run decades ahead of implementation evidence, it may be the most valuable contribution Vermont makes.
 
 Vermont will have answers by December 2028 — grounded in real experience with a real system under real pressure. Those answers may be the most valuable policy contribution Vermont makes to American healthcare in a generation. The significance is not that Vermont is large or powerful; it is that Vermont is early — early enough to produce a tested model before the rest of the country reaches the same crisis point, and early enough for the lessons to remain actionable.
+
+## **Work This Chapter on the Platform**
+
+This chapter specifies an organizational design. The tools below let a system architect test that design against the six-pillar framework it is built on, and against the record of what the agency has actually delivered.
+
+| Do this | On this tool | What to look for |
+| :---- | :---- | :---- |
+| Map the redesigned AHS operating model onto the six pillars and check for uncovered functions | **[Six-Pillar Map](https://healthtransformationreview.org/about/framework)** | A pillar with no named organizational owner in the restructuring. That is the gap this chapter's design is meant to close. |
+| Track AHS's delivery against the statutory deadlines this chapter enumerates | **[HTI Dashboard](https://healthtransformationreview.org/hti-dashboard)** | Whether Operations-pillar capacity is rising fast enough to meet the December 2028 Strategic Plan obligation. |
+| Test what the restructuring is worth by removing it | **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** | Score a state with strong Policy and Economics but weak Operations. The composite collapse is the argument for this chapter in one number. |
+
+*Figure 16.H — Hands-on platform tools for Chapter 16: testing the AHS restructuring design.*
+
+## **Implications for You**
+
+**If you are an AHS leader:** the three decisions this chapter identifies as not yet made are the ones worth your attention — they are decisions, not constraints, and each forecloses options once taken. The restructuring's success does not depend on the org chart being optimal; it depends on someone owning each pillar's function with the authority to act on it.
+
+**If you are a Vermont legislator:** Act 68 requires AHS to produce a Statewide Strategic Plan by December 2028. This chapter argues that the plan's quality is determined by organizational capacity built two years earlier. The oversight question is therefore not about the plan; it is whether the Division of Planning and Effectiveness and the HSA-coordinator model are staffed and operating in FY2027.
+
+**If you run a state health agency elsewhere:** the specific structure here is Vermont's, but the diagnosis generalizes. An agency organized by program and funding stream cannot execute a transformation organized by population and geography. That mismatch is the most common structural reason state reform efforts stall, and it is invisible on an org chart that has not been read against the six pillars.
+
+**If you are a hospital or provider leader:** the AHS restructuring determines who you will actually be dealing with — HSA coordinators rather than program administrators, and a planning function with the authority to say no. Organizations that build relationships with the new structure early will find the FY2028 transition considerably less disruptive than those waiting for it to settle.
 
 ## **Key Concepts in This Chapter**
 
@@ -5812,6 +5895,8 @@ Figure 12.2 — Kotter's change management framework applied to Vermont's health
 
 Figure 12.3 — HTR Implementation Toolkit: available tools for Strategist and Enterprise subscribers.
 
+Figure 12.H — Hands-on platform tools for Chapter 12: turning knowledge into implementation.
+
 Figure 13.1 — Vermont Six-Pillar Transformation Scorecard, April 2026. Technology and Equity are the two pillars where 2026 status most diverges from the 2028 target. Full scorecard with sources: Appendix F.
 
 Figure 13.2 — The 2025 federal healthcare policy inflection point. Sources: KFF; CBO; Chartis, 2026 State of Rural Health.
@@ -5820,9 +5905,13 @@ Figure 13.3 — Six-pillar forecast, 2026–2035: Vermont and national. Sources:
 
 Figure 13.4 — Vermont's transformation decisions and their national implications. Sources: HTR analysis; Vermont AHEAD State Agreement; Act 68 of 2025.
 
+Figure 13.H — Hands-on platform tools for Chapter 13: tracking the forecast against the record.
+
 Figure 14.1 — Early-warning signals of political risk to Vermont's reform architecture. Sources: HTR Advisory risk-monitoring framework; Act 68 of 2025; GMCB regulatory process documentation.
 
 Figure 14.2 — Political-disruption scenario planning for Vermont healthcare organizations. Sources: HTR Advisory risk assessment; Vermont political-environment analysis (April 2026).
+
+Figure 14.H — Hands-on platform tools for Chapter 14: monitoring political risk.
 
 Figure 15.1 — The project-management gap. Sources: PMI Standard for Portfolio Management (5th ed.); Oliver Wyman Act 167 Report; AHS November 2025 Transformation Report.
 
@@ -5838,6 +5927,8 @@ Figure 15.6 — Benefits-realization plan. Sources: Act 167 of 2022; PMI Standar
 
 Figure 15.7 — Business case for portfolio-management investment. Sources: PMI Pulse of the Profession (2017); Vermont RHT Program Application; Act 68 EAST Fund allocation; PMI salary data.
 
+Figure 15.H — Hands-on platform tools for Chapter 15: running the transformation portfolio.
+
 Figure 16.1 — Act 68 statutory requirements for the Strategic Plan. Sources: Act 68 of 2025; HCAC mandate (healthcarereform.vermont.gov).
 
 Figure 16.2 — AHS organizational gaps and required structural changes. Sources: Oliver Wyman Act 167 Recommendations (2024); AHS Transformation Reports (2025); Act 68 of 2025.
@@ -5849,6 +5940,8 @@ Figure 16.4 — AHS restructuring and Vermont transformation timeline. Sources: 
 Figure 16.5 — Proposed structure for the 2028 Statewide Strategic Plan. Sources: Act 68 of 2025; HCAC mandate; six-pillar framework.
 
 Figure 16.6 — Key parameters for the Strategic Plan. Sources: Act 68; VTDigger; Oliver Wyman Act 167 Report; Vermont RHT Program Application.
+
+Figure 16.H — Hands-on platform tools for Chapter 16: testing the AHS restructuring design.
 
 # **Bibliography and Source Notes**
 
