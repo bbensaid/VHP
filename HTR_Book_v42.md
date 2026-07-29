@@ -28,11 +28,11 @@ Vermont runs through this book as its primary teaching case. Vermont is in this 
 
 This book is also not a prediction. The transformations described here are underway but unfinished. Whether Vermont's hospital system stabilizes or contracts, whether global budgets reduce costs or constrain access, whether the Agency of Human Services can execute the restructuring its mandate requires — these are genuinely uncertain. What this book provides is the analytical framework for understanding what is happening and why, and for contributing to better decisions as the story unfolds. The decisions, and their consequences, belong to the people who make them.
 
-Finally, a word about what this book *is* — because it is not, on its own, the whole of the argument. This book is the intellectual foundation of the **Health Transformation Review** ([healthtransformationreview.org](https://healthtransformationreview.org)), an open-source integrated ecosystem with three parts designed to work as one:
+Finally, this book is not, on its own, the whole of the argument. This book is the intellectual foundation of the **Health Transformation Review**, an open-source integrated ecosystem with three parts designed to work as one:
 
-- **The book** you are reading — the framework, the dependency logic, the Vermont evidence, and the national comparisons.
-- **The platform** ([healthtransformationreview.org](https://healthtransformationreview.org)) — six pillar hubs, a **Research Lab** of nearly forty interactive analytical tools, an **AI Analyst** grounded in this book and Vermont's public-domain source documents, a fifty-state dashboard, and a daily intelligence feed. Every argument in these pages that can be modeled *is* modeled there.
-- **The Academy** ([healthtransformationreview.org/academy](https://healthtransformationreview.org/academy)) — a structured executive-education layer of courses, tracks, and lessons that teach the concepts hands-on and link directly to the tools that apply them.
+1. The book ([healthtransformationreview.org/book](https://healthtransformationreview.org/book)) you are reading — the framework, the dependency logic, the Vermont evidence, and the national comparisons.
+2. The platform ([healthtransformationreview.org](https://healthtransformationreview.org)) — six pillar hubs, a **Research Lab** of nearly forty interactive analytical tools, an **AI Analyst** grounded in this book and Vermont's public-domain source documents, a fifty-state dashboard, and a daily intelligence feed. Every argument in these pages that can be modeled *is* modeled there.
+3. The Academy ([healthtransformationreview.org/academy](https://healthtransformationreview.org/academy)) — a structured executive-education layer of courses, tracks, and lessons that teach the concepts hands-on and link directly to the tools that apply them.
 
 The three are deliberately cross-linked. Each pillar chapter ends with a *"Work This Chapter on the Platform"* guide that maps its argument to the specific tools that let you manipulate it; the platform's tools carry *"From the Book"* callouts back to the chapters that explain them; and the AI Analyst can answer a question and route you to the right tool or lesson in the same breath. **Everything in the ecosystem is, in effect, an interactive expression of this book's framework.** You can read the book alone and it stands on its own — but the framework is meant to be *run*, not just read, and the platform is where you run it.
 
@@ -387,7 +387,6 @@ The test is whether there are two *distinct causal mechanisms* or one mechanism 
 
 *Two relationships, a genuine feedback loop (the rare case):* Operations **enables** Policy's data feedback loops, *and* Policy **requires** statutory deadlines that Operations must execute against. Here the two directions carry different content: information flows one way, obligation the other. These are the loops that make the system self-correcting, and they are the reason the framework speaks of "dependencies **and feedback loops**" rather than dependencies alone.
 
-When you see a pillar pair occupying two cells in Figure 1.3, check which case you are in before concluding the framework is double-counting.
 :::
 
 | From ↓ / To → | Policy | Technology | Economics | Clinical | Equity | Operations |

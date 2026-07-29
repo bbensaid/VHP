@@ -169,6 +169,26 @@ def main():
         else:
             review.append((old, new))
 
+    # ---- 4b. DELETIONS — the direction the first version missed -------------
+    # A sentence the author DELETED is absent from their file, so a one-way scan
+    # ("what in their file differs from mine?") never sees it. On 2026-07-29 that
+    # silently kept a sentence the author had deleted from a callout box, plus a
+    # rewritten paragraph whose old version survived. Scan the other way too.
+    base_keys = {re.sub(r'[^a-z]', '', x.lower()) for x in new_p}
+    deleted = []
+    for x in base_p:
+        k = re.sub(r'[^a-z]', '', x.lower())
+        if k in base_keys:
+            continue
+        if difflib.get_close_matches(k, list(base_keys), n=1, cutoff=0.80):
+            continue                      # reworded, not deleted
+        deleted.append(x)
+    if deleted:
+        print(f"\nDELETED by the author — still present in the manuscript ({len(deleted)}):")
+        for x in deleted:
+            print(f"  - {x[:170]}")
+        print()
+
     # ---- 5. report ----------------------------------------------------------
     print(f"{len(applyable)} reworded paragraph(s), {len(review)} structural "
           f"change(s), {noise} formatting-only block(s) ignored.\n")
