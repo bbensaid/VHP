@@ -93,6 +93,12 @@ case "$CMD" in
       echo   "   That means you downloaded a new copy from Google Docs."
       echo   "   Your edits are being snapshotted and listed below."
       echo
+      # Harvest hand-set table column widths FIRST, before anything can lose
+      # them. Widths live only in the .docx; the .md carries none, so a rebuild
+      # would fall back to computed values and wipe any resizing done since the
+      # last harvest. Doing it here means the author never has to remember.
+      python3 book-build/save_table_widths.py "$DOCX" >/dev/null 2>&1 \
+        && ok "Table widths captured from your download (survive future builds)."
       python3 book-build/sync_from_gdocs.py
       echo
       warn "STOP AND READ: the edits above are in the .docx but NOT yet in"

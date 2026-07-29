@@ -121,6 +121,31 @@ the PDF is right, searching it for `The OneCare Failure: A Sequencing Autopsy` w
 
 ---
 
+## Table column widths
+
+Size table columns however you like in Google Docs. **They persist.**
+
+`./book.sh` captures them automatically the moment it sees a new download — you
+do not have to remember anything. The widths are stored in
+`book-build/table_widths.json`, keyed by each table's header row, and re-applied
+on every build.
+
+Keying by header (not position) means your sizing survives tables being added,
+removed, or renumbered. A table you have never sized keeps the pipeline's
+computed widths.
+
+If you ever want to capture widths without going through `./book.sh`:
+
+```bash
+python3 book-build/save_table_widths.py HTR_Book_v42.docx
+```
+
+The 49 single-column tables are not covered and do not need to be — those are
+the callout boxes (banners, VERMONT EVIDENCE, TRY THIS), which have no columns
+to size.
+
+---
+
 ## Nothing can be lost
 
 - Every Google Docs download is snapshotted to `book-archive/` before anything
