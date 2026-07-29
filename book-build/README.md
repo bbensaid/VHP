@@ -1,28 +1,39 @@
 # HTR Book — Formatting & Build Pipeline Documentation
 
 This folder contains everything that turns the Markdown manuscript
-(`HTR_Book_v41.md`, in the repo root) into the styled Word document
-(`HTR_Book_v41.docx`). Keep this folder. It is how all formatting/styling is
+(`HTR_Book_v42.md`, in the repo root) into the styled Word document
+(`HTR_Book_v42.docx`). Keep this folder. It is how all formatting/styling is
 applied, and it is reusable for every future edition and every new piece of
 content.
 
-**Golden rule:** the manuscript lives in Markdown (`../HTR_Book_v41.md`). The
+**Golden rule:** the manuscript lives in Markdown (`../HTR_Book_v42.md`). The
 `.docx` is *generated* — never hand-edit the `.docx`, because the next build
 overwrites it. Edit the Markdown, then rebuild.
 
 ---
 
-## 1. How to build the styled book (the only command you need)
+## 1. How to build the styled book
+
+**Use `./book.sh` — not these commands directly.** It wraps the pipeline, refuses
+to build over Google Docs edits that are not yet in the manuscript, and commits
+the result. See [BOOK_WORKFLOW.md](../BOOK_WORKFLOW.md).
 
 ```bash
 cd /Users/baba/Vermont-Health-Platform
+./book.sh build
+```
+
+The raw pipeline, for reference — running this bypasses the safety check that
+prevents overwriting the author's unsynced edits:
+
+```bash
 python3 book-build/make_reference.py        # (re)builds the Word style template
-python3 book-build/build_docx.py HTR_Book_v41.md book-build/HTR_Book_v41.docx --cover book-build/cover.png
+python3 book-build/build_docx.py HTR_Book_v42.md HTR_Book_v42.docx --cover book-build/cover.png
 ```
 
 - Requires: `pandoc` (3.x) and Python `python-docx`. (`Pillow` only needed if you
   regenerate the sequence graphic.)
-- Output: `book-build/HTR_Book_v41.docx`.
+- Output: `HTR_Book_v42.docx` (repo root).
 - For a print PDF: open that `.docx` in Word/Google Docs → **Download as PDF**
   (preserves all styling). No local PDF engine matches the docx styling.
 
@@ -59,7 +70,7 @@ artifacts.
 | :--- | :--- |
 | `cover.png` | Book cover image, placed on page 1 by `build_docx.py --cover`. |
 | `sequence_graphic.png` | The 6-stage execution-sequence figure (Figure 1.2a). Regenerate via `make_sequence_graphic.py`. |
-| `HTR_Book_v41.docx` | The built book. Regenerated every build. |
+
 | `slice.md`, `HTR_Book_v41_PROOF.docx`, `word/` | Scratch/proof artifacts from development — safe to delete. |
 
 ---
