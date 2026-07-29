@@ -117,7 +117,7 @@ invisible *style names*, which affects tooling, not appearance.
 
 ⚠️ **Export from a fresh upload of the current file.** On 2026-07-27 a PDF was
 exported from an old Google Docs copy and was missing a full day of work. If
-the PDF is right, searching it for `Figure 1.A characterizes` will hit.
+the PDF is right, searching it for `The OneCare Failure: A Sequencing Autopsy` will hit.
 
 ---
 
