@@ -817,6 +817,7 @@ The execution-sequence argument is best understood by manipulating it, not just 
 | Trace the 15 dependency relationships between the six pillars and see which downstream pillars a given gap disables | **Six-Pillar Map** — `/about/framework` | Click any pillar to highlight what it enables and what it depends on. Confirm visually why Technology sits upstream of Economics. |
 | Score a real organization or state across all six pillars and watch the composite readiness number respond | **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** | Drop one pillar's score to zero and observe the cascade — the simulator penalizes downstream readiness, reproducing the OneCare logic in Figure 1.1. |
 | Quantify where reform is losing momentum and which pillar is the binding constraint | **[Transformation Friction Index](https://healthtransformationreview.org/transformation-friction-index)** | Identify your own "Technology gate" bottleneck — the chapter's central Vermont vulnerability — before it becomes a financial one. |
+| Model how one pillar's shortfall propagates through the other five over time | **Impact Simulation** — `/impact-simulation` | The lag: a Technology gap shows up in Economics results a year later, which is why it is missed. |
 
 *Figure 1.H — Hands-on platform tools for Chapter 1: working the execution-sequence argument on the HTR platform.*
 
@@ -1992,6 +1993,7 @@ Chapter 5's implementation reality — AI governance, CDS, and clinical data exc
 | Build an AI clinical governance framework across the model lifecycle | **AI Clinical Governance Lab** — `/research-lab/technology-ai?tab=ai` | The 65-item checklist as a go/no-go gate before any clinical AI deployment. |
 | Model RPM and telehealth ROI by condition and CPT code | **Digital Health Lab** — `/research-lab/technology-ai?tab=digital` | Where digital health earns its cost — and where it adds alert fatigue without value. |
 | Exercise clinical data exchange and HL7 messaging | **Clinical Data Exchange Lab** — `/research-lab/vbc-clinical-quality?tab=hl7` | The integration work that makes near-real-time care management possible. |
+| Test whether FHIR-based exchange can deliver what a statewide EHR would, at lower cost | **FHIR Interoperability Lab** — `/research-lab/interoperability?tab=fhir` | Where FHIR closes the gap and where it does not — the question Vermont's feasibility assessment must answer. |
 
 *Figure 5.H — Hands-on platform tools for the Technology Pillar in practice.*
 
@@ -2661,6 +2663,8 @@ Chapter 7's VBC financial mechanics — shared savings, risk, contract analysis,
 | Model shared savings/loss under any APM contract (benchmark PMPM, sharing rate, MSR, stop-loss) | **Shared Savings Calculator** — `/research-lab/payment-models?tab=apm-calc` | Pessimistic/base/optimistic spread — the difference between a viable contract and a "managing blind" one. |
 | Score an organization's value-based-care readiness across six domains | **VBC Readiness Assessment** — `/research-lab/knowledge-workspace?tab=readiness` | Which domain is the binding constraint before assuming downside risk. |
 | Run a cost-effectiveness analysis on a proposed intervention | **CEA Calculator** — `/research-lab/payment-models?tab=cea` | Whether the ROI case survives contact with the numbers. |
+| Stress-test a hospital's finances against reference-based pricing and global budget scenarios | **Hospital Financial Stress Test** — `/research-lab/policy-quality?tab=scorecard` | The years the hospital is thinnest. For most Vermont hospitals that is FY2027-28, not the FY2030 destination. |
+| Track capital committed against each pillar and find where funding runs ahead of dependency order | **Investment Tracker** — `/investment-tracker` | Money moving faster than the sequence is the early signal of premature investment. |
 
 *Figure 7.H — Hands-on platform tools for the Economics Pillar in practice.*
 
@@ -2935,6 +2939,7 @@ Chapter 8's clinical-redesign argument — the Blueprint, Collaborative Care, pa
 | :---- | :---- | :---- |
 | Stratify a clinical panel by risk tier and match staffing intensity | **Risk Stratification Methodology** — `/research-lab/vbc-clinical-quality?tab=risk` | How panel design changes when staffing follows risk rather than volume. |
 | Model HEDIS measure performance against NCQA benchmarks | **VBC Quality Measures** — `/research-lab/vbc-clinical-quality?tab=quality` | Which measures move population outcomes vs. which only move scores. |
+| Run risk stratification on a live panel rather than reading the methodology | **Risk Stratification Engine** — `/research-lab/interoperability?tab=risk` | How many patients change tier once social risk is included alongside clinical risk. |
 
 *Figure 8.H — Hands-on platform tools for the Clinical Pillar.*
 
@@ -3176,6 +3181,7 @@ Chapter 9's quality mechanics — HEDIS improvement, value vs. waste, optimizati
 | :---- | :---- | :---- |
 | Optimize HEDIS, Star Ratings, and MIPS performance with payment-adjustment estimates | **Clinical Quality Optimizer** — `/research-lab/policy-quality?tab=quality` | The payment consequence of each quality decision under value-based contracts. |
 | Separate high-value from low-value care across services | **High vs. Low Value Care** — `/research-lab/vbc-clinical-quality?tab=value` | Where reducing volume improves both margin and outcomes. |
+| Run risk stratification against a panel and compare tiers to current care-management assignment | **Risk Stratification Engine** — `/research-lab/interoperability?tab=risk` | Patients in a high tier who are receiving no care management — the gap quality measures do not surface. |
 
 *Figure 9.H — Hands-on platform tools for the Clinical Pillar in practice.*
 
@@ -3941,6 +3947,7 @@ Chapter 11's operations argument — administrative cost, workforce, execution �
 | Project physician and nurse supply/demand and the cost of turnover | **Workforce Modeler** — `/research-lab/knowledge-workspace?tab=workforce` | The workforce gap that the $1,303 per-discharge administrative-cost gap must fund closing. |
 | Model the RHT-funded CIN's shared services against the $1,303/discharge administrative premium | **CIN & Shared Services Modeler** — `/research-lab/knowledge-workspace?tab=cin` | Where consolidating billing, coding, credentialing, HR, and IT across the 14 hospitals reaches the scale that pays for itself. |
 | Model regionalizing Vermont's 31 EMS agencies and community-paramedicine ED diversion | **EMS Transformation Modeler** — `/research-lab/knowledge-workspace?tab=ems` | How treat-and-refer and regionalization convert fragmentation into margin under global budgets. |
+| Stress-test a hospital's finances through the transition years | **Hospital Financial Stress Test** — `/research-lab/policy-quality?tab=scorecard` | Whether the operations plan survives the FY2027-28 window, which is where transformation plans usually break. |
 
 *Figure 11.H — Hands-on platform tools for the Operations Pillar.*
 
@@ -4890,6 +4897,8 @@ A portfolio is easier to manage when you can see it. The [HTR platform](https://
 | Track the capital committed against each pillar and see where funding and dependency order disagree | **[Investment Tracker](https://healthtransformationreview.org/investment-tracker)** | Components funded ahead of their upstream gate. Money moving faster than dependency order is the early signal of premature investment. |
 | Watch the six-pillar status of a transformation move over time rather than at a single reporting date | **[HTI Dashboard](https://healthtransformationreview.org/hti-dashboard)** | Whether a pillar's status is improving, flat, or decaying between reporting intervals — the trend a monthly report cannot show. |
 | Test what happens to composite readiness when one component slips | **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** | Drop the Technology score and watch Economics and Clinical fall with it. This is the risk register's R-01 in visual form. |
+| Score the portfolio's six-pillar status the way an outside reviewer would | **Transformation Scorecard** — `/research-lab/knowledge-workspace?tab=scorecard` | Divergence between the PMO's status reporting and the scorecard is itself a governance finding. |
+| Model what a single component slipping does to the rest of the portfolio | **Impact Simulation** — `/impact-simulation` | Which components have no slack: the ones whose slip moves other pillars' outcomes. |
 
 *Figure 15.H — Hands-on platform tools for Chapter 15: running the transformation portfolio.*
 
