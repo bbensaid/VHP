@@ -4633,7 +4633,7 @@ AHS is managing Vermont's transformation as a collection of projects without the
 
 ## **Vermont's Transformation Portfolio: 19 Components**
 
-PMI's standard requires the portfolio to be defined — every component identified, classified, and assigned governance. The map below defines Vermont's transformation as a PMI-compliant portfolio of 19 components.
+PMI's standard requires the portfolio to be defined — every component identified, classified, and assigned governance. Vermont has never published such a definition; the inventory below is HTR's, assembled by reading Act 68, the AHEAD State Agreement, the RHT Program application, and the AHS transformation reports for every initiative that carries a named owner and a dated obligation, then assigning each to the pillar whose function it serves. Nineteen is what that exercise produces as of early 2026; it is not a number Vermont has adopted, and a reader repeating the exercise against later reports should expect it to move.
 
 | Pillar | Portfolio component | Type | Priority | Lead | 2026 status → stage gate |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -4692,6 +4692,55 @@ Below the Portfolio Manager, each pillar needs a Project (or Program) Manager. T
 PMI defines three governance tiers: the Portfolio Governance Body (strategic oversight — for Vermont, the AHS Secretary + HCAC + GMCB), the Portfolio Management Office (operational coordination — currently the under-resourced AHS Health Reform Office), and the component level (individual programs and projects). The PMO establishment must fill the gaps: a dedicated Portfolio Manager (PfMP), 2–3 PMO analysts, portfolio-management software, standardized reporting, six pillar Program Managers, and formalized project leads for all 19 components.
 
 Mapping the ten PMI knowledge areas to Vermont's situation reveals the consistent gap: the book addresses each knowledge area analytically, but Vermont lacks the operational infrastructure to manage it. There is no formal work-breakdown structure for any pillar; statutory deadlines are tracked in isolation rather than as an integrated master schedule; RHT spending is tracked for federal compliance rather than portfolio performance; quality is measured program-by-program without portfolio aggregation; AHS staff are overcommitted with no formal resource leveling; communications, procurement, and stakeholder management all operate at the component level without a portfolio-level strategy; and risk is analyzed in this book but not managed operationally through a maintained register. Integration management — the dependency map, the execution sequence, the scorecard — exists analytically; operational integration does not yet exist.
+
+## **Portfolio Sequence Is Dependency Sequence**
+
+The nineteen components are not a flat list of work to be scheduled by deadline
+and resource availability. They inherit an order from the dependency structure
+established in Chapter 1, and a portfolio manager who schedules them by
+statutory date alone will produce exactly the failures that chapter documents.
+
+Read Figure 15.3 by its first column and the point is immediate: the components
+are already grouped by pillar. What the PMI framing adds is that each pillar's
+components carry the *inbound dependencies of that pillar*. The Economics
+components — RBP implementation, global-budget design, EAST Fund deployment —
+cannot be productively worked before the Technology components that make them
+measurable. That is not a scheduling preference. It is the same critical-path
+constraint that produced the OneCare failure in Section 1.2, restated in
+portfolio terms.
+
+This gives the portfolio manager a decision rule that a Gantt chart does not:
+
+**A component whose upstream pillar gate is still closed is not "behind
+schedule." It is correctly waiting.** Accelerating it consumes budget and
+political capital to produce output nobody can use. The AHS-GMCB analytics
+deployment is the clearest case — it is the single highest-risk component in
+the register (R-01) precisely because three downstream components converge on
+it, not because its own deadline is nearest.
+
+The inverse rule matters as much. **A component with no unmet upstream
+dependency should be running now, regardless of how distant its own deadline
+is.** Social-risk-adjustment methodology (R-08) has a FY2028 target and no
+upstream blocker; it can and should proceed in parallel today. Treating it as a
+FY2028 problem because that is when it is due is the scheduling error that
+leaves equity work perpetually late.
+
+::: {custom-style="CalloutKey"}
+**THE PORTFOLIO MANAGER'S SEQUENCING TEST**
+
+For each component, in order:
+
+1. **Which pillar does it belong to?** (Figure 15.3, column one.)
+2. **Is that pillar's upstream gate open?** (Section 1.2's gate definition:
+   open means the enabling work is finished, not that a milestone was declared.)
+3. **If closed — what is the gating component, and is it resourced?**
+   That component, not this one, is where the schedule pressure belongs.
+4. **If open — is this component running?** If not, it is late by dependency
+   order even when it is early by calendar.
+
+Applied across all nineteen, this test produces the portfolio's true critical
+path, which will not match the order of statutory deadlines.
+:::
 
 ## **Predictive vs. Adaptive Approaches**
 
@@ -4769,6 +4818,35 @@ December 2028: Strategic Plan delivered with portfolio-management evidence — b
 3. "We can't afford a Portfolio Manager when we're cutting budgets." Vermont cannot afford not to have one. RHT funds are contingent on demonstrated progress; a portfolio that misses its components risks federal clawback. The ~$4.5–7.5M cost is roughly 2% of the value it protects, and the alternative is the multi-billion-dollar partial-transformation outcome.
 
 4. "The hospitals won't accept being managed by AHS." The Portfolio Manager does not manage the hospitals — it manages AHS's contribution to the portfolio. Hospital plans are produced by hospitals, approved by AHS, and monitored through GMCB. The Portfolio Manager is Vermont's transformation orchestrator, not its controller.
+
+## **Work This Chapter on the Platform**
+
+A portfolio is easier to manage when you can see it. The [HTR platform](https://healthtransformationreview.org/research-lab) carries the tracking and diagnostic tools this chapter argues an AHS PMO would otherwise have to build from scratch.
+
+| Do this | On this tool | What to look for |
+| :---- | :---- | :---- |
+| Identify which pillar is the binding constraint on the whole portfolio right now | **[Transformation Friction Index](https://healthtransformationreview.org/transformation-friction-index)** | The pillar with the highest friction score is where the portfolio manager's attention belongs — not the component with the nearest deadline. |
+| Track the capital committed against each pillar and see where funding and dependency order disagree | **[Investment Tracker](https://healthtransformationreview.org/investment-tracker)** | Components funded ahead of their upstream gate. Money moving faster than dependency order is the early signal of premature investment. |
+| Watch the six-pillar status of a transformation move over time rather than at a single reporting date | **[HTI Dashboard](https://healthtransformationreview.org/hti-dashboard)** | Whether a pillar's status is improving, flat, or decaying between reporting intervals — the trend a monthly report cannot show. |
+| Test what happens to composite readiness when one component slips | **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** | Drop the Technology score and watch Economics and Clinical fall with it. This is the risk register's R-01 in visual form. |
+
+*Figure 15.H — Hands-on platform tools for Chapter 15: running the transformation portfolio.*
+
+::: {custom-style="CalloutTry"}
+**TRY THIS — Find your own portfolio's binding constraint.**
+
+Open the **[Transformation Friction Index](https://healthtransformationreview.org/transformation-friction-index)** and score your organization or state on each pillar. Then list your three most urgent initiatives by deadline. If none of them sits in your highest-friction pillar, your portfolio is being scheduled by calendar rather than by dependency — the failure this chapter is written to prevent.
+:::
+
+## **Implications for You**
+
+**If you are an AHS or state agency leader:** the argument of this chapter is not that Vermont needs more oversight — it has the HCAC, monthly legislative reporting, and federal review. It needs an *integrator*: one role accountable for the portfolio as a whole, with authority to resolve resource conflicts between components that today are managed by different units against different deadlines. The single most consequential decision is not whether to hire a Portfolio Manager but whether that role is given authority over sequencing. A PMO that reports status without the power to hold a component back until its upstream gate opens will document the cascade rather than prevent it.
+
+**If you lead a hospital PMO or transformation office:** Figure 15.3 is a template, not a Vermont artifact. Build the same inventory for your own organization — every initiative touching the six pillars, each assigned a pillar, an owner, a type, and a stage gate. Most organizations discover in that exercise that they are running more simultaneous transformation components than they had counted, that several have no named owner, and that two or three are downstream of a gate nobody is tracking. Then apply the sequencing test above: the components correctly waiting are not your problem; the ones running ahead of their dependencies are.
+
+**If you are a legislator or board member:** the oversight question that separates a real portfolio from a reporting exercise is short. *Which component is currently the binding constraint on all the others, who owns it, and what would it take to accelerate it?* An organization managing a genuine portfolio can answer in one sentence. An organization managing a list will answer with a status summary of all nineteen.
+
+**If you are in another state:** the portfolio does not have to be nineteen components or built on PMI's standard specifically. What transfers is the discipline of defining the portfolio at all — naming every component, assigning each to a pillar and an owner, and scheduling by dependency rather than by deadline. States that skip this step do not avoid portfolio management; they do it implicitly, badly, and without anyone accountable for the result.
 
 ## **Key Concepts in This Chapter**
 
