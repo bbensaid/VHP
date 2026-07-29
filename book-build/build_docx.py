@@ -1466,6 +1466,61 @@ def shrink_oversized_tables():
                         r.font.size = Pt(max(7.5, (cur.pt if cur else 9.0) - 0.5))
     return tightened
 
+
+def apply_saved_table_widths():
+    """Re-apply the author's hand-set column widths.
+
+    The build regenerates the .docx from the .md, and the .md carries no width
+    information, so style_tables() recomputes every column from cell content.
+    That wiped the widths the author had set by hand in Google Docs.
+
+    book-build/table_widths.json holds widths harvested from an authored .docx,
+    keyed by the table's header-row text so the mapping survives tables being
+    reordered or renumbered. A table whose header is not in the file keeps the
+    computed widths - so new tables still get a sensible default, and the
+    author only has to size a table once.
+
+    To refresh after another round of manual sizing:
+        python3 book-build/save_table_widths.py <authored.docx>
+    """
+    import json
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'table_widths.json')
+    if not os.path.exists(path):
+        return 0
+    saved = json.load(open(path))
+    applied = 0
+    for t in doc.tables:
+        rows = t.rows
+        if not rows:
+            continue
+        hdr = "|".join(c.text for c in rows[0].cells)[:120]
+        widths = saved.get(hdr)
+        grid = t._tbl.find(qn('w:tblGrid'))
+        if not widths or grid is None:
+            continue
+        gcs = grid.findall(qn('w:gridCol'))
+        if len(gcs) != len(widths):
+            continue                      # structure changed - keep computed
+        for gc, w in zip(gcs, widths):
+            gc.set(qn('w:w'), str(w))
+        for row in rows:
+            for ci, cell in enumerate(row.cells):
+                if ci >= len(widths):
+                    continue
+                tcPr = cell._tc.get_or_add_tcPr()
+                for old in tcPr.findall(qn('w:tcW')):
+                    tcPr.remove(old)
+                tcW = OxmlElement('w:tcW')
+                tcW.set(qn('w:w'), str(widths[ci])); tcW.set(qn('w:type'), 'dxa')
+                tcPr.append(tcW)
+        tblPr = t._tbl.tblPr
+        for old in tblPr.findall(qn('w:tblLayout')):
+            tblPr.remove(old)
+        lay = OxmlElement('w:tblLayout'); lay.set(qn('w:type'), 'fixed')
+        tblPr.append(lay)
+        applied += 1
+    return applied
+
 def keep_lists_together():
     """Stop bullet lists from splitting across a page with a big void: set
     keepNext on every list item except the last in each run, and keepLines on
@@ -1523,6 +1578,8 @@ wide_tables_to_landscape()
 style_key_concepts()
 rule_above_major_sections()
 tighten_table_pagination()
+_w = apply_saved_table_widths()
+print(f"  re-applied author column widths to {_w} tables")
 shrink_oversized_tables()
 keep_lists_together()
 chapter_page_breaks()

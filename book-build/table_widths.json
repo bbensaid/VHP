@@ -1,0 +1,634 @@
+{
+ "Component|What it is|How it connects to the book": [
+  1170,
+  4395,
+  3510
+ ],
+ "50+|CMMI Models Launched|&lt;10%|Models With Significant Results|15 Yrs|Span of Experience|Problem:|Single-Pillar Thinki": [
+  2268,
+  2268,
+  2268,
+  2268
+ ],
+ "Sequencing Gap|Structural Error|Direct Consequence|Cascade Effect": [
+  1080,
+  1950,
+  3060,
+  2970
+ ],
+ "Pillar|Diagnostic question|Structural role in the system|What it produces when functioning": [
+  1215,
+  1530,
+  3255,
+  3090
+ ],
+ "From \u2193 / To \u2192|Policy|Technology|Economics|Clinical|Equity|Operations": [
+  1368,
+  1284,
+  1284,
+  1284,
+  1284,
+  1284,
+  1284
+ ],
+ "6|Pillars, All Required|15|Dependency Relationships|6|Failure Cascade Patterns|1|Pillar Missing = System Fails": [
+  2268,
+  2268,
+  2268,
+  2268
+ ],
+ "Pillar removed|Immediate failure|Second-order failure|System-level outcome|Historical example": [
+  1110,
+  1905,
+  2295,
+  2040,
+  1725
+ ],
+ "Pillar|Primary Vermont intervention|Secondary interventions|Developed in": [
+  1245,
+  3420,
+  3465,
+  945
+ ],
+ "#|Pillar|Key action|Why this sequence|Vermont anchor": [
+  345,
+  1125,
+  2100,
+  3330,
+  2190
+ ],
+ "Sequencing error|Early-warning signals|Vermont evidence|Correction": [
+  2268,
+  2268,
+  2268,
+  2268
+ ],
+ "Pillar|Status (timeframe)|Where it stands": [
+  1245,
+  1980,
+  5850
+ ],
+ "Do this|On this tool|What to look for": [
+  4062,
+  947,
+  4062
+ ],
+ "Year|Milestone|Pillar|Significance": [
+  1063,
+  2752,
+  1501,
+  3754
+ ],
+ "9 of 14|Hospitals in Loss FY2023|$2.4B|5-Year Deficit Projection|108%|Premium Increase 2018-2024|57%|Growth in 65+ by 20": [
+  2268,
+  2268,
+  2268,
+  2268
+ ],
+ "Common perception|What the data actually shows": [
+  4168,
+  4903
+ ],
+ "Hospital|COE Count|Key Specialties": [
+  3767,
+  691,
+  4613
+ ],
+ "When|Milestone": [
+  2002,
+  7069
+ ],
+ "State / Program|Key design features and outcomes": [
+  2513,
+  6558
+ ],
+ "Characteristic|What it means|Models with this characteristic|Models without it": [
+  1749,
+  2440,
+  2440,
+  2440
+ ],
+ "Model|Key features and relevance": [
+  4536,
+  4536
+ ],
+ "Function|Key activities|Vermont-specific examples|HTR Advisory service": [
+  1145,
+  2642,
+  2642,
+  2642
+ ],
+ "H.R. 1 Medicaid provision|When it takes effect|Financial impact|Vermont-specific implications": [
+  2326,
+  2093,
+  2326,
+  2326
+ ],
+ "Layer|Role in the data stack": [
+  4459,
+  4612
+ ],
+ "Commercial population covered 60% Of commercially insured Vermonters \u2014 partial due to ERISA self-insured employer exempt": [
+  4536,
+  4536
+ ],
+ "Limitation|What it means for transformation|Required improvement": [
+  2474,
+  3298,
+  3298
+ ],
+ "Step|What it requires|Timeline|Current status": [
+  1749,
+  2440,
+  2440,
+  2440
+ ],
+ "Case for a statewide EHR|Case against (or caution)": [
+  4536,
+  4536
+ ],
+ "FHIR compliance level|Vermont providers and current status": [
+  3460,
+  5611
+ ],
+ "Layer|Components": [
+  4212,
+  4860
+ ],
+ "FHIR use case|What it enables|Implementation requirements|Vermont priority": [
+  2181,
+  2296,
+  2296,
+  2296
+ ],
+ "CDS type|What it does|Implementation requirement|Vermont application": [
+  1332,
+  2579,
+  2579,
+  2579
+ ],
+ "Investment|Estimated cost|Timeline to value|ROI crossover|Vermont benchmark": [
+  2726,
+  1222,
+  987,
+  1316,
+  2820
+ ],
+ "417%|UVMMC Outpatient vs.\u00a0Medicare|250-300%|Average VT Commercial Rate|~136%|Approx. Break-Even Point|$400M+|Projected 5": [
+  2268,
+  2268,
+  2268,
+  2268
+ ],
+ "Average commercial-to-Medicare ratio, Vermont hospitals 250\u2013300% vs.\u00a0~136% break-even point|Outpatient imaging \u2014 worst c": [
+  4536,
+  4536
+ ],
+ "2018|$456": [
+  4536,
+  4536
+ ],
+ "State / Program|Design|Scope|Key Results": [
+  1115,
+  2910,
+  2134,
+  2910
+ ],
+ "Phase|Timeline|Mechanism|Key Actions": [
+  2314,
+  1501,
+  1501,
+  3754
+ ],
+ "Design dimension|The choice|Key tradeoff|Vermont\u2019s current direction": [
+  988,
+  2694,
+  2694,
+  2694
+ ],
+ "Approach|Year(s)|Structure|Outcome and lesson": [
+  1951,
+  791,
+  3164,
+  3164
+ ],
+ "Medicare hospital savings to date $1.4B vs.\u00a0projected national trend (HSCRC)|Reduction in hospital admissions 7% Medicar": [
+  4536,
+  4536
+ ],
+ "Jan 2028|AHEAD Cohort 2 Launches|$150M/yr|EAST Fund for Vermont|9 Years|Model Duration to 2035|3-Payer|Medicare + Medica": [
+  2268,
+  2268,
+  2268,
+  2268
+ ],
+ "Payer layer|% of VT insured pop.|Payment mechanism|Effective date|Governing authority": [
+  1528,
+  1232,
+  2958,
+  1824,
+  1528
+ ],
+ "Scenario|Assumptions and 5-year system deficit": [
+  3936,
+  5135
+ ],
+ "In a fee-for-service environment, watch:|In a global budget environment, watch:": [
+  4379,
+  4692
+ ],
+ "Source of direct savings (5-year total)|Estimate": [
+  7955,
+  1116
+ ],
+ "Phase|Timeline|Payment environment|Strategic priorities": [
+  669,
+  1095,
+  3653,
+  3653
+ ],
+ "Step|Formula / concept|Practical meaning|Vermont application": [
+  1258,
+  2604,
+  2604,
+  2604
+ ],
+ "Average Medicare inpatient hospital cost prevented per event $15,000 Approximate average \u2014 varies significantly by DRG a": [
+  4536,
+  4536
+ ],
+ "Contract provision category|Key questions and financial risk": [
+  2886,
+  6185
+ ],
+ "Under FFS \u2014 optimize these metrics|Under global budget \u2014 optimize these metrics": [
+  4338,
+  4733
+ ],
+ "Investment type|Revenue/savings mechanism|Calculation approach|Vermont example": [
+  1909,
+  2387,
+  2387,
+  2387
+ ],
+ "5.8:1|Blueprint ROI on Investment|15+ Yrs|Operational Since 2006|All-Payer|Medicare + Medicaid + Commercial|91%|VT Adult": [
+  2268,
+  2268,
+  2268,
+  2268
+ ],
+ "Component|What it is|How it is funded|What it does": [
+  1512,
+  2520,
+  2520,
+  2520
+ ],
+ "Blueprint ROI: medical expenditure reduction per $1M invested $5.8M Lower hospitalization and outpatient facility use (P": [
+  4536,
+  4536
+ ],
+ "CoCM component|Role|What they do|Vermont application": [
+  1804,
+  1414,
+  2926,
+  2926
+ ],
+ "Component|What it means in practice|Vermont investment vehicle": [
+  2181,
+  3445,
+  3445
+ ],
+ "Domain|Priority measures|Why this measure|Current VT status": [
+  1512,
+  2520,
+  2520,
+  2520
+ ],
+ "Commitment|What it requires|Timeline|Primary vehicle": [
+  1980,
+  2763,
+  1565,
+  2763
+ ],
+ "Concept Area|What it requires operationally|Vermont implementation challenge": [
+  2553,
+  3259,
+  3259
+ ],
+ "Tier|% of Panel|Characteristics|Care Model": [
+  1313,
+  596,
+  3581,
+  3581
+ ],
+ "CoCM Component|Role|What they do|Vermont application": [
+  1804,
+  1414,
+  2926,
+  2926
+ ],
+ "Commitment|Operational Requirement|Timeline|Primary Vehicle": [
+  2880,
+  2880,
+  432,
+  2880
+ ],
+ "Uninsured rate, Essex County (NE Kingdom) 8% vs.\u00a03% statewide \u2014 nearly 3x the state average despite Vermont\u2019s near-unive": [
+  4536,
+  4536
+ ],
+ "SDOH domain|Vermont statistic|Equity implication": [
+  1067,
+  4002,
+  4002
+ ],
+ "1 Geographic Access Barriers|Mechanisms: Physical distance from providers; transportation infrastructure inadequacy; pro": [
+  2886,
+  6185
+ ],
+ "Gap|What is missing|Required investment|Timeline": [
+  1749,
+  2440,
+  2440,
+  2440
+ ],
+ "Pillar|Equity risk (if neglected)|Equity opportunity (if designed well)": [
+  697,
+  4187,
+  4187
+ ],
+ "Indicator|Stratification required|2028 target direction|Data source": [
+  1979,
+  2226,
+  2474,
+  2391
+ ],
+ "HEDIS domain|Key measures|Vermont equity stratification priority|Current Vermont data source": [
+  1369,
+  2567,
+  2567,
+  2567
+ ],
+ "Step|Action|Time investment|Vermont application": [
+  1694,
+  2990,
+  1395,
+  2990
+ ],
+ "Equity dimension|Best current data source in Vermont": [
+  4032,
+  5040
+ ],
+ "Actor|Statutory Role|Key Authority|Current Capacity": [
+  1716,
+  2451,
+  2451,
+  2451
+ ],
+ "Phase|Content|Timing|AHS role": [
+  2183,
+  2910,
+  1067,
+  2910
+ ],
+ "32.3%|Potentially Avoidable ED Visits|14.8%|30-Day Readmission Rate|91%|VT Adults with Primary Care Provider|59%|Primary": [
+  2268,
+  2268,
+  2268,
+  2268
+ ],
+ "Measure|VT Current|Benchmark (75th pctile)|Gap|Act 167 Goal": [
+  3556,
+  612,
+  1409,
+  1716,
+  1777
+ ],
+ "Vermont PPS hospitals (actual)|$2730": [
+  7908,
+  1163
+ ],
+ "Hospital (HSA)|Current COEs|Tier|Key transformation considerations": [
+  2815,
+  750,
+  1751,
+  3754
+ ],
+ "370 FTE|Primary Care Shortage by 2030|2.5%|VT Unemployment Aug 2025|$195M|RHT Workforce Investment|All 14|Hospitals Citi": [
+  2268,
+  2268,
+  2268,
+  2268
+ ],
+ "Primary care physician shortfall by 2030 370 FTEs 112 family medicine, 190 other primary care (RHT application)|Hospital": [
+  4536,
+  4536
+ ],
+ "Domain|Key metrics|Data source|Target direction": [
+  1405,
+  2555,
+  2555,
+  2555
+ ],
+ "Attribution error type|How it happens|Financial impact|Remediation": [
+  1332,
+  2579,
+  2579,
+  2579
+ ],
+ "Component|What it provides": [
+  3155,
+  5916
+ ],
+ "Kotter step|Original formulation|Healthcare adaptation|Vermont application": [
+  1183,
+  2629,
+  2629,
+  2629
+ ],
+ "Tool|What it does": [
+  3573,
+  5498
+ ],
+ "Pillar|2022 Baseline|2026 Status|2028 Target|Signal": [
+  362,
+  2177,
+  2177,
+  2177,
+  2177
+ ],
+ "Measure|Figure|Detail": [
+  3954,
+  465,
+  4652
+ ],
+ "Pillar|2026 starting point|Primary headwinds|Primary tailwinds|2035 assessment": [
+  362,
+  2177,
+  2177,
+  2177,
+  2177
+ ],
+ "Decision|Vermont timeline|If Vermont succeeds|If Vermont struggles": [
+  2376,
+  1941,
+  2376,
+  2376
+ ],
+ "Signal|What it indicates|Severity|Monitoring source": [
+  2958,
+  2958,
+  443,
+  2711
+ ],
+ "Disruption scenario|Probability (HTR assessment)|Primary impact|Organizational response": [
+  2392,
+  1263,
+  2708,
+  2708
+ ],
+ "10 of 10|19|7|14+": [
+  2202,
+  2254,
+  2254,
+  2359
+ ],
+ "Level|PMI definition|Vermont example|Who manages it|Success measure": [
+  359,
+  2215,
+  2215,
+  2067,
+  2215
+ ],
+ "Pillar|Portfolio component|Type|Priority|Lead|2026 status \u2192 stage gate": [
+  672,
+  2755,
+  1478,
+  537,
+  1344,
+  2284
+ ],
+ "Pillar|Role|Recommended credential|Key deliverables|Reports to": [
+  396,
+  1545,
+  2376,
+  2376,
+  2376
+ ],
+ "ID|Risk|Pillars|Prob.|Impact|Score|Response|Owner": [
+  348,
+  2746,
+  823,
+  366,
+  366,
+  348,
+  2746,
+  1326
+ ],
+ "Act 167 goal|Primary contributing components|Measurement metric|2028 target": [
+  1283,
+  2478,
+  2655,
+  2655
+ ],
+ "Investment|Annual cost|Total (4\u20135 yr)|Benefit": [
+  2481,
+  852,
+  1085,
+  4653
+ ],
+ "Statutory requirement|What it means in practice|Deadline": [
+  2474,
+  3298,
+  3298
+ ],
+ "Gap|What it looks like in practice|Consequence|Required structural change": [
+  1846,
+  2408,
+  2408,
+  2408
+ ],
+ "HSA region|Key hospital(s)|Profile|Priority transformation challenges": [
+  918,
+  2181,
+  2526,
+  3445
+ ],
+ "Deadline|Milestone|Primary owner|Status": [
+  918,
+  3240,
+  1890,
+  3024
+ ],
+ "Parameter|Value|Detail": [
+  3660,
+  636,
+  4775
+ ],
+ "Indicator|Value|Significance": [
+  3283,
+  604,
+  5184
+ ],
+ "GMCB function|Why it matters for transformation": [
+  3155,
+  5916
+ ],
+ "Hospital|Type|Grant|Primary focus|Key challenges": [
+  1863,
+  588,
+  735,
+  2942,
+  2942
+ ],
+ "Initiative theme|Count|Representative examples": [
+  3233,
+  449,
+  5389
+ ],
+ "Date / deadline|Statutory requirement|Primary authority|Status (April 2026)": [
+  1256,
+  3279,
+  1256,
+  3279
+ ],
+ "Hospital (HSA)|COE count|Key COE specialties|Tier|RHT rural status": [
+  2799,
+  466,
+  3110,
+  1555,
+  1140
+ ],
+ "AHEAD provision|Vermont-specific terms": [
+  3628,
+  5443
+ ],
+ "Metric|2022 baseline|2026 status|2028 target|Source": [
+  1240,
+  1899,
+  2287,
+  2326,
+  1318
+ ],
+ "Pillar|Coverage|Book chapters": [
+  1080,
+  6480,
+  1512
+ ],
+ "Term|What it is|Generic equivalent": [
+  1765,
+  3653,
+  3653
+ ],
+ "Pillar|Vermont\u2019s instance|Your state\u2019s equivalent|Exists? (Y/N/Partial)": [
+  795,
+  4775,
+  1830,
+  1671
+ ],
+ "Date|Act 68 (State / Commercial &amp; Medicaid)|AHEAD Cohort 2 (Federal / Medicare)": [
+  1125,
+  3973,
+  3973
+ ]
+}
