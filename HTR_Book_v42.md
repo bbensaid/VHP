@@ -4160,7 +4160,7 @@ The advisory practice described in this chapter is grounded in a specific theory
 ### **The HTR Platform — Four Components**
 
 - THE WIRE — Real-time intelligence at healthtransformationreview.org/the-wire across all six pillars. Convergence Newsletter (free weekly) for Observer subscribers.
-- RESEARCH LAB — 24 interactive tools at healthtransformationreview.org/research-lab. FHIR Lab, EMR/EHR Lab, Statewide EHR Modeler, APM Design Lab, Health Equity Studio, Policy Simulator, CIN & Shared Services Modeler, EMS Transformation Modeler, and more.
+- RESEARCH LAB — nearly forty interactive tools at healthtransformationreview.org/research-lab. FHIR Lab, EMR/EHR Lab, Statewide EHR Modeler, APM Design Lab, Health Equity Studio, Policy Simulator, CIN & Shared Services Modeler, EMS Transformation Modeler, and more.
 - HTR ACADEMY — Structured curriculum at healthtransformationreview.org/academy. Foundation and advanced courses in APM mechanics, HEDIS, and transformation leadership.
 - ADVISORY SERVICES — Strategic consulting, research, health IT, independent review, capability assessment, financial audit, regulatory navigation, and training. Contact: advisory@healthtransformationreview.org
 
@@ -5579,7 +5579,7 @@ The Academy is the structured learning center, organized around the same archite
 
 ## **The Research Lab**
 
-The Research Lab is a suite of 24 interactive analytical tools organized into the same six-pillar structure — working environments for modeling, analysis, and scenario planning rather than reference tools. They span Interoperability & Risk (FHIR Interoperability Lab, Risk Stratification Engine, EMR/EHR Lab, Statewide EHR Deployment Modeler); Payment Models & VBC (APM Design Lab, APM Shared Savings Calculator, Population Health Modeler); Policy & Quality Sciences (Policy Simulator, Hospital Financial Scorecard, Actuarial Lab, Clinical Quality Optimizer); Population & Equity (Health Equity Studio/HEROI); Technology & AI (HTA Studio, AI Analytics Lab, Digital Health Lab); and Knowledge & Workspace (Evidence Library, Workforce Modeler, Research Workspace, Innovation Leaderboard, VBC Readiness Assessment, CIN & Shared Services Modeler, EMS Transformation Modeler). Full tool specifications are in Appendix E.
+The Research Lab is a suite of nearly forty interactive analytical tools organized into the same six-pillar structure — working environments for modeling, analysis, and scenario planning rather than reference tools. They span Interoperability & Risk (FHIR Interoperability Lab, Risk Stratification Engine, EMR/EHR Lab, Statewide EHR Deployment Modeler); Payment Models & VBC (APM Design Lab, APM Shared Savings Calculator, Population Health Modeler); Policy & Quality Sciences (Policy Simulator, Hospital Financial Scorecard, Actuarial Lab, Clinical Quality Optimizer); Population & Equity (Health Equity Studio/HEROI); Technology & AI (HTA Studio, AI Analytics Lab, Digital Health Lab); and Knowledge & Workspace (Evidence Library, Workforce Modeler, Research Workspace, Innovation Leaderboard, VBC Readiness Assessment, CIN & Shared Services Modeler, EMS Transformation Modeler). Full tool specifications are in Appendix E.
 
 ## **States & Programs**
 
