@@ -11,8 +11,8 @@
   2268
  ],
  "Sequencing Gap|Structural Error|Direct Consequence|Cascade Effect": [
-  1185,
-  2280,
+  1335,
+  2130,
   2625,
   2970
  ],
@@ -58,10 +58,10 @@
   2190
  ],
  "Sequencing error|Early-warning signals|Vermont evidence|Correction": [
-  2268,
-  2268,
-  2268,
-  2268
+  1950,
+  2070,
+  2970,
+  2070
  ],
  "Pillar|Status (timeframe)|Where it stands": [
   1245,
@@ -494,36 +494,36 @@
   2359
  ],
  "Level|PMI definition|Vermont example|Who manages it|Success measure": [
-  359,
-  2215,
-  2215,
-  2067,
-  2215
+  960,
+  1620,
+  2220,
+  2070,
+  2220
  ],
  "Pillar|Portfolio component|Type|Priority|Lead|2026 status \u2192 stage gate": [
-  672,
-  2755,
-  1478,
-  537,
-  1344,
-  2284
+  1050,
+  2025,
+  1335,
+  1050,
+  1350,
+  2280
  ],
  "Pillar|Role|Recommended credential|Key deliverables|Reports to": [
-  396,
+  1140,
   1545,
-  2376,
-  2376,
-  2376
+  2145,
+  2295,
+  1920
  ],
  "ID|Risk|Pillars|Prob.|Impact|Score|Response|Owner": [
-  348,
-  2746,
-  823,
-  366,
-  366,
-  348,
-  2746,
-  1326
+  585,
+  1905,
+  870,
+  975,
+  810,
+  675,
+  2190,
+  1035
  ],
  "Act 167 goal|Primary contributing components|Measurement metric|2028 target": [
   1283,
@@ -532,10 +532,10 @@
   2655
  ],
  "Investment|Annual cost|Total (4\u20135 yr)|Benefit": [
-  2481,
-  852,
-  1085,
-  4653
+  2040,
+  1290,
+  1545,
+  4185
  ],
  "Statutory requirement|What it means in practice|Deadline": [
   2474,
