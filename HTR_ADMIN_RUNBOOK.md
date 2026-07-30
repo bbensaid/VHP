@@ -467,6 +467,25 @@ None of those happen on their own. Review `backend/fly.toml` before any change
 touching `[[vm]]`, `min_machines_running`, or regions, and check the Fly
 dashboard monthly for the first few months.
 
+### Weekly balance check (installed 2026-07-30)
+
+Because Fly has no cap and no alerts, a local cron job fires every **Monday at
+09:14** — macOS notification, opens the Fly billing page, logs to
+`~/.htr-fly-reminder.log`.
+
+```bash
+./scripts/fly-balance-reminder.sh --test        # fire now
+./scripts/fly-balance-reminder.sh --install     # (already done)
+./scripts/fly-balance-reminder.sh --uninstall
+crontab -l | grep -A1 'HTR fly'                 # verify
+```
+
+**What to look for:** ~$5.70/mo, roughly $1.40/week accruing. Materially higher
+means the configuration changed, not that traffic grew.
+
+**Limitation:** cron only fires while the Mac is awake; a reminder due during
+sleep is skipped, not queued. Switch to a `launchd` agent if that matters.
+
 ### Free tiers to watch
 
 Groq's free tier has rate limits that a public launch could exceed. OpenAI
