@@ -4674,7 +4674,7 @@ PMI's portfolio, program, and project standards are not Vermont-specific, or eve
 
 ## **The Project-Management Gap in Healthcare Transformation**
 
-Every concept in this book maps to a project-management discipline, whether or not project management was the framing its authors chose. Pillar definition is scope management. The execution sequence is schedule management with dependency logic. The failure cascade is risk management. The Vermont Scorecard is benefits-realization management. The six-pillar framework is, in its entirety, a portfolio-management architecture — and Vermont's transformation is failing to be managed as one.
+Every concept in the preceding chapters maps to a project-management discipline, whether or not it was introduced in those terms. Pillar definition is scope management. The execution sequence is schedule management with dependency logic. The failure cascade is risk management. The Vermont Scorecard is benefits-realization management. The six-pillar framework is, in its entirety, a portfolio-management architecture — and Vermont's transformation is failing to be managed as one.
 
 Every concept in this book maps directly to a recognized project-management discipline. Pillar definition is scope management. The execution sequence is schedule management with dependency logic. The failure cascade is risk management. The implementation matrix is cost and resource management. The Vermont Scorecard is benefits-realization management. The six-pillar framework is, in its entirety, a portfolio-management framework — and Vermont's transformation needs to be managed as one.
 
