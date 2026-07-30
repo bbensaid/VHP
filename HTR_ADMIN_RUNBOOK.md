@@ -450,8 +450,22 @@ what one does.
 - Halving to 512MB would roughly halve the cost; the workload fits, since no
   local model is loaded
 
-**Fly has no spending cap.** The practical ceiling is one machine's 24/7 rate —
-there is no path by which beta traffic multiplies it.
+**On the "no spending cap" caveat.** Fly does not offer a setting that stops
+billing at a dollar limit. That is not the same as an unbounded bill. What you
+run is one machine, and its 24/7 rate — **~$5.70/mo** — is the arithmetic
+ceiling. Traffic does not move it: Fly bills machine-seconds, not requests, so
+ten testers and ten thousand cost the same.
+
+The bill can only exceed that if the **configuration** changes:
+
+- a second machine (`flyctl scale count`, or `min_machines_running > 1`)
+- a larger machine (the `[[vm]]` block in `backend/fly.toml`)
+- an additional region
+- adding a Fly-hosted service — Postgres, volumes, object storage
+
+None of those happen on their own. Review `backend/fly.toml` before any change
+touching `[[vm]]`, `min_machines_running`, or regions, and check the Fly
+dashboard monthly for the first few months.
 
 ### Free tiers to watch
 
@@ -690,7 +704,7 @@ Honest list as of 2026-07-30.
 
 | Risk | Detail | Mitigation |
 | :--- | :--- | :--- |
-| **No spending cap on Fly** | Fly offers none | Single small machine bounds it to ~$5.70/mo |
+| **No spending-cap *feature* on Fly** | Fly has no setting where you cap the bill at $N and it stops. The *configuration* still bounds it: one `shared-1x-cpu@1024MB` machine × 24/7 = **~$5.70/mo**, regardless of users or requests. | Cost can only rise if the CONFIG changes — a second machine, a larger machine, another region, or adding a Fly service (Postgres, volumes, object storage). Review `backend/fly.toml` before any change that touches `[[vm]]`, `min_machines_running`, or regions. |
 | **Revocation lag** | 7-day cookie | Change cookie name for instant lockout |
 | **Role-gating bypassed** | `ALLOW_AUTH_BYPASS=true` | Intentional in beta; must flip before GA |
 | **No automated DB migrations** | Applied by hand in the SQL editor | Track carefully; migrations are numbered |
