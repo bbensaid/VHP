@@ -469,22 +469,35 @@ dashboard monthly for the first few months.
 
 ### Weekly balance check (installed 2026-07-30)
 
-Because Fly has no cap and no alerts, a local cron job fires every **Monday at
-09:14** — macOS notification, opens the Fly billing page, logs to
+Because Fly has no cap and no alerts, a **launchd agent** fires every **Monday
+at 09:14** — macOS notification, opens the Fly billing page, logs to
 `~/.htr-fly-reminder.log`.
 
 ```bash
-./scripts/fly-balance-reminder.sh --test        # fire now
-./scripts/fly-balance-reminder.sh --install     # (already done)
-./scripts/fly-balance-reminder.sh --uninstall
-crontab -l | grep -A1 'HTR fly'                 # verify
+launchctl list | grep htr                      # verify it is registered
+launchctl start org.htr.fly-balance-reminder   # fire now
+./scripts/fly-balance-reminder.sh --test       # or fire the script directly
 ```
+
+| Piece | Path |
+| :--- | :--- |
+| Agent | `~/Library/LaunchAgents/org.htr.fly-balance-reminder.plist` |
+| Script | `scripts/fly-balance-reminder.sh` |
+| Log | `~/.htr-fly-reminder.log` |
+
+**Why launchd and not cron:** cron silently skips a job that was due while the
+Mac was asleep; launchd runs it on the next wake. For a once-a-week reminder
+that is the whole point. A cron entry was installed first and then removed —
+`--install`/`--uninstall` in the script still manage it as a fallback, but do
+not run both or the reminder fires twice.
 
 **What to look for:** ~$5.70/mo, roughly $1.40/week accruing. Materially higher
 means the configuration changed, not that traffic grew.
 
-**Limitation:** cron only fires while the Mac is awake; a reminder due during
-sleep is skipped, not queued. Switch to a `launchd` agent if that matters.
+**To remove:**
+```bash
+launchctl unload -w ~/Library/LaunchAgents/org.htr.fly-balance-reminder.plist
+```
 
 ### Free tiers to watch
 
