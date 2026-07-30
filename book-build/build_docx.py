@@ -1521,6 +1521,45 @@ def apply_saved_table_widths():
         applied += 1
     return applied
 
+
+def space_after_tables():
+    """Put breathing room between a table and whatever follows it.
+
+    The author kept inserting a blank line after tables in Google Docs, and it
+    kept disappearing on rebuild. The cause is not that anything deletes it:
+    markdown requires exactly one blank line to terminate a table, pandoc
+    consumes that line as the terminator, and so NO spacing paragraph ever
+    reaches the .docx. Re-adding it by hand could never survive a regeneration.
+
+    The durable fix is paragraph spacing rather than an empty paragraph: set
+    space-before on the element that follows each table. A caption gets a
+    smaller gap (it belongs to the table); body text gets a full line.
+    """
+    CAPTION_GAP = Pt(6)
+    BODY_GAP    = Pt(14)
+    kids = list(body.iterchildren())
+    touched = 0
+    for i, el in enumerate(kids):
+        if el.tag != qn('w:tbl') or i + 1 >= len(kids):
+            continue
+        nxt = kids[i + 1]
+        if nxt.tag != qn('w:p'):
+            continue
+        txt = "".join(nxt.itertext()).strip()
+        if not txt:
+            continue                     # a real empty para already spaces it
+        is_caption = bool(re.match(r'^(Figure|Table)\s+[0-9]', txt))
+        pPr = nxt.find(qn('w:pPr'))
+        if pPr is None:
+            pPr = OxmlElement('w:pPr'); nxt.insert(0, pPr)
+        sp = pPr.find(qn('w:spacing'))
+        if sp is None:
+            sp = OxmlElement('w:spacing'); pPr.append(sp)
+        gap = CAPTION_GAP if is_caption else BODY_GAP
+        sp.set(qn('w:before'), str(int(gap.pt * 20)))
+        touched += 1
+    return touched
+
 def keep_lists_together():
     """Stop bullet lists from splitting across a page with a big void: set
     keepNext on every list item except the last in each run, and keepLines on
@@ -1578,6 +1617,8 @@ wide_tables_to_landscape()
 style_key_concepts()
 rule_above_major_sections()
 tighten_table_pagination()
+_sp = space_after_tables()
+print(f"  spaced {_sp} post-table paragraphs")
 _w = apply_saved_table_widths()
 print(f"  re-applied author column widths to {_w} tables")
 shrink_oversized_tables()
