@@ -11,14 +11,25 @@
 #   24/7. Anything materially above that means the CONFIGURATION changed — a
 #   second machine, a bigger machine, another region, or an added Fly service.
 #
-# INSTALL (once):
-#   ./scripts/fly-balance-reminder.sh --install
+# SCHEDULING
+#   Driven by a launchd agent, NOT cron:
+#     ~/Library/LaunchAgents/org.htr.fly-balance-reminder.plist
 #
-# REMOVE:
-#   ./scripts/fly-balance-reminder.sh --uninstall
+#   launchd runs a missed job on the next wake; cron silently skips anything
+#   due while the Mac was asleep. For a once-a-week reminder that difference
+#   is the whole point, so the cron entry was removed in favour of launchd.
 #
-# TEST (fire the notification right now):
+#   launchctl load   -w ~/Library/LaunchAgents/org.htr.fly-balance-reminder.plist
+#   launchctl unload -w ~/Library/LaunchAgents/org.htr.fly-balance-reminder.plist
+#   launchctl list | grep htr
+#   launchctl start org.htr.fly-balance-reminder     # fire now
+#
+# TEST (fire the notification directly):
 #   ./scripts/fly-balance-reminder.sh --test
+#
+# The --install/--uninstall flags manage a CRON entry and are kept only as a
+# fallback for a machine without launchd. Do not run --install alongside the
+# launchd agent or the reminder fires twice.
 #
 set -euo pipefail
 

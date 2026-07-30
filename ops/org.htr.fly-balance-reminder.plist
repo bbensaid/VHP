@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  HTR — weekly Fly.io balance reminder.
+
+  Replaces the cron entry. The difference that matters: launchd runs a missed
+  job on the next wake, whereas cron silently skips anything due while the Mac
+  is asleep. Since the whole point is a reliable weekly nudge — Fly has no
+  billing cap and no alerts — a skipped reminder defeats it.
+
+  Fires Mondays at 09:14 local (Weekday 1 = Monday).
+
+  Manage with:
+    launchctl load   -w ~/Library/LaunchAgents/org.htr.fly-balance-reminder.plist
+    launchctl unload -w ~/Library/LaunchAgents/org.htr.fly-balance-reminder.plist
+    launchctl list | grep htr
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>org.htr.fly-balance-reminder</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/baba/Vermont-Health-Platform/scripts/fly-balance-reminder.sh</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>1</integer>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>14</integer>
+    </dict>
+
+    <!-- Run a missed occurrence on the next wake instead of skipping it.
+         This is the entire reason for moving off cron. -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/baba/.htr-fly-reminder.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/baba/.htr-fly-reminder.err.log</string>
+</dict>
+</plist>
