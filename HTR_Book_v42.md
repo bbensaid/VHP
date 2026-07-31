@@ -2706,7 +2706,7 @@ Sources: CMS ACO model documentation; HTR's Economics pillar framework; Vermont 
 
 # **Chapter 8: The Clinical Pillar — Redesigning Care Delivery for a Transformed System**
 
-*Vermont’s Blueprint for Health, PCMH transformation, and CCBHC expansion represent three decades of primary care investment whose return is now contingent on the payment reform that Acts 167 and 68 mandate.*
+*Vermont’s Blueprint for Health, PCMH transformation, and CCBHC expansion represent two decades of primary care investment whose return is now contingent on the payment reform that Acts 167 and 68 mandate.*
 
 The Clinical pillar is where the abstractions of the other five pillars become a patient's actual experience of care — and it is also where good intentions most often fail to translate into changed practice, because clinical workflows do not change simply because a payment model or a policy mandate changes. This is true everywhere care is delivered, not only in Vermont. The Vermont Blueprint for Health is presented in this chapter because it is one of the longest-running primary care transformation programs in the country, and its fifteen-year record offers something most states do not have: a long enough timeline to distinguish what clinical redesign looks like when it is given time to mature versus when it is rushed ahead of the payment and technology foundations it depends on.
 
@@ -2718,9 +2718,9 @@ A common confusion in healthcare transformation discussions conflates the clinic
 
 In the context of Vermont's transformation, the clinical pillar question is specific and urgent: what does primary care look like in a system no longer organized around hospitals as the default site of care? What does behavioral health integration look like in a state with 245 ED visits per 10,000 for suicide ideation and self-harm, and inadequate community mental health capacity? What does care coordination look like for Vermont's rapidly growing elderly population, with the highest-cost, most complex needs? And how do these clinical design questions connect to the payment reform and operational transformation happening simultaneously?
 
-Vermont has more developed answers to these clinical design questions than most states, because Vermont has been running the Blueprint for Health — the most sophisticated all-payer primary care transformation program in the country — for more than fifteen years. The Blueprint is not a pilot or a demonstration. It is operating infrastructure, funded by all payers, embedded in primary care practices across all 14 Hospital Service Areas, and producing measurable results. Understanding the Blueprint is the foundation for understanding Vermont's clinical pillar strategy.
+Vermont has more developed answers to these clinical design questions than most states, because Vermont has been running the Blueprint for Health — the most sophisticated all-payer primary care transformation program in the country — for nearly two decades. The Blueprint is not a pilot or a demonstration. It is operating infrastructure, funded by all payers, embedded in primary care practices across all 14 Hospital Service Areas, and producing measurable results. Understanding the Blueprint is the foundation for understanding Vermont's clinical pillar strategy.
 
-## **The Vermont Blueprint for Health — Fifteen Years of Primary Care Transformation**
+## **The Vermont Blueprint for Health — Two Decades of Primary Care Transformation**
 
 ::: {custom-style="StatStrip"}
 **5.8:1** — Blueprint ROI on Investment
