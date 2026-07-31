@@ -7,12 +7,17 @@ Every count below came from a script, not an estimate; the scripts are named so
 each number can be re-derived.
 
 > **Status update — 2026-07-31, after author sign-off.** Pass 1 was reported
-> read-only. The author then authorised two fixes, both now applied and
-> verified: **C-1** (all 97 Sanity `chapterRef`s + 13 of 15 course
-> `chapter_ref`s repointed) and **C-2** (AHEAD cohort corrected on the Act 167
-> page). See [§7 Fixes applied](#7-fixes-applied). No lesson, article, or
-> manuscript content was written or re-linked — only chapter-reference fields.
-> C-3, C-4 and all §5 gaps remain open decisions.
+> read-only; the author then authorised fixes. Applied and verified: **C-1**
+> (all 97 Sanity `chapterRef`s + 13 of 15 course `chapter_ref`s repointed),
+> **C-2** (AHEAD cohort corrected on the Act 167 page), **R-3** (regression
+> guard), **R-4** (Ch 2 tool mapping + a new `/vermont-act-51` page).
+>
+> Building that page surfaced **C-5** — the book misdescribed Act 51 — which
+> required editing the manuscript (`HTR_Book_v42.md` + a `.docx` rebuild, book
+> handed back afterwards). No Academy lesson or Sanity article content was
+> written or re-linked.
+>
+> **Still open:** C-3 (deficit range vs. bare "$2.4B"), C-4, and the §5 gaps.
 
 | Pass | Pillar | Date | Status |
 | :--- | :--- | :--- | :--- |
@@ -239,8 +244,8 @@ non-reinforcement. Flagged because Ch 2 sends readers there specifically.
 
 | Gap | Assessment | Reasoning |
 | :--- | :--- | :--- |
-| **Chapter 2 has zero tools** in `tools.ts` | **Likely oversight** | Ch 2's own "Work This Chapter" table points readers at Policy Simulator + the Act pages, but `tools.ts` maps Policy Simulator to `chapters: ["3"]` only. The book promises a ch-2 tool experience the registry does not encode. Chapters 12, 14 and 16 are also at zero tools. |
-| **Act 51 has no platform presence** | **Likely oversight** | Act 167 and Act 68 each have a dedicated route; Act 51 defined the six-pillar architecture the whole platform is organised around, and has none. |
+| **Chapter 2 has zero tools** in `tools.ts` | **Was an oversight — now closed** | Ch 2's own "Work This Chapter" table points readers at Policy Simulator + the Act pages, but `tools.ts` mapped Policy Simulator to `chapters: ["3"]` only. Now `["2", "3"]`. **Chapters 12, 14 and 16 remain at zero tools** — not yet assessed. |
+| **Act 51 has no platform presence** | **Was an oversight — now closed** | Act 167 and Act 68 each had a dedicated route; Act 51 had none. ⚠️ The reasoning first recorded here ("defined the six-pillar architecture") was itself wrong — see [C-5](#c-5--the-book-misdescribed-act-51--high-found-while-building-the-page). `/vermont-act-51` now exists, written from the enacted text. |
 | **AHEAD has no dedicated policy surface** | Likely deliberate | `/ahead-model` exists but is mapped to Economics (ch 6). AHEAD is genuinely cross-pillar. |
 | **Prior authorization reform** — Ch 3 only | Likely deliberate | Minor sub-topic of one chapter. |
 | **Global budgets / RBP have no Academy course** | Likely deliberate | Covered by `value-based-care` and `hospital-finance` under Economics. Cross-pillar by nature. |
@@ -258,7 +263,7 @@ Ordered by effort-to-value. **All require author sign-off** — per
 | ~~R-1~~ | ~~Fix `LEAD_CHAPTER` and repoint 97 docs + courses.~~ | — | ✅ **DONE** 2026-07-31 — see §7 |
 | ~~R-2~~ | ~~Resolve the AHEAD cohort conflict.~~ | — | ✅ **DONE** 2026-07-31 — book was right, page corrected |
 | ~~R-3~~ | ~~Add a `chapterRef` regression guard.~~ | — | ✅ **DONE** 2026-07-31 — `check-chapterref-integrity.mjs` |
-| **R-4** | Decide whether Ch 2 should map to tools in `tools.ts`, and whether Act 51 warrants a route. | Medium | Medium — closes the Policy pillar's real coverage gaps |
+| ~~R-4~~ | ~~Ch 2 tool mapping + an Act 51 route.~~ | — | ✅ **DONE** 2026-07-31 — and surfaced C-5, a factual error in the book |
 | **R-5** | Reconcile the $700M–$2.4B range vs. the bare "$2.4B" in the book's own tables (C-3). | Low | Medium — internal consistency |
 | **R-6** | Consider surfacing 9-of-14 and the deficit range on `/vermont-act-167` (C-4). | Low | Low–medium |
 
@@ -332,6 +337,57 @@ non-zero on drift; safe for CI. Currently passes.
 
 This class of bug is silent: every wrong ref still resolved to a *real* chapter,
 so nothing crashed and no link 404'd. Only a pillar cross-check catches it.
+
+### C-5 — **The book misdescribed Act 51.** 🔴 High *(found while building the page)*
+
+Not in the original pass. Building the Act 51 page meant reading the statute,
+and it is **not what the book said it was**.
+
+Vermont Act 51 of 2023 (**H.206**, signed June 6, 2023) is titled *"An act
+relating to miscellaneous changes affecting the duties of the Department of
+Vermont Health Access."* Its nine sections cover Medicaid adult dental
+coverage, third-party liability, the prescription monitoring system, an FQHC
+payment report, a Blueprint for Health payment report, a PBM/340B repeal,
+hospital liens, and effective dates.
+
+**Sec. 8 is the only transformation content**: it adds a new Sec. 2a to Act 167
+authorizing AHS to conduct transformation planning with *up to four hospitals*,
+informed by Act 167's analysis and coordinated with GMCB.
+
+There is no six-pillar framework in the statute and no AHS restructuring
+mandate — that is Act 68's, which the book states correctly elsewhere. The
+six-pillar framework is the book's own analytical model, not Vermont law.
+
+The book contradicted itself: its Sources line (`:5958`) was accurate
+(*"healthcare-reform continuation; hospital sustainability assessments; CON
+review"*) while three prominent places were wrong. Corrected in the manuscript:
+
+| Line | Was | Now |
+| :--- | :--- | :--- |
+| 663 | "Act 51 defined the transformation architecture" | "moved from diagnosis to planning, authorizing AHS to run transformation engagements with individual hospitals" |
+| 893 (ch 2 table) | "Defined the six-pillar transformation architecture; established AHS restructuring mandate" | "Authorized AHS hospital transformation planning pilots with up to four hospitals (amending Act 167); Medicaid and DVHA program changes" |
+| 5623 (App. H glossary) | "Defined the six-pillar transformation architecture and the AHS restructuring mandate." | "Vermont's planning mandate — authorized AHS to conduct transformation planning with up to four hospitals (amending Act 167)…" |
+
+Lines 866, 911, 4557, 4625 and 4665 were left alone — their "reform cascade" /
+"planning mandate" framing is accurate.
+
+`VermontReformCascade.tsx` carried the same error in a different form,
+describing Act 51 as *"Health Care Reform & Data Infrastructure"* with four
+VHCURES/GMCB data provisions **none of which are in the statute**. Rewritten
+against the enacted text and repointed from `/policy` to `/vermont-act-51`.
+
+Source: [Act 51 as enacted](https://legislature.vermont.gov/Documents/2024/Docs/ACTS/ACT051/ACT051%20As%20Enacted.pdf)
+(Vermont Legislature, official enrolled text).
+
+### R-4 — Chapter 2 coverage gap closed ✅
+
+- `policy-simulator` now maps to `chapters: ["2", "3"]` in `tools.ts`, matching
+  what Ch 2's own "Work This Chapter on the Platform" table already told
+  readers. Chapter 2 is no longer a zero-tool chapter.
+- **New page: `/vermont-act-51`** — section-by-section from the enacted text,
+  with Sec. 8 broken out, the cascade position, and primary sources. Written to
+  describe the statute as it actually reads, and it says so explicitly where
+  secondary summaries differ. Added to Ch 2's `platformLinks` in `chapters.ts`.
 
 ### Incidental finding — empty Sanity token
 
