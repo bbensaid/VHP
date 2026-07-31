@@ -160,7 +160,7 @@ export const CHAPTERS: readonly Chapter[] = [
   {
     num: "8",
     title: "The Clinical Pillar — Redesigning Care Delivery for a Transformed System",
-    desc: "Vermont Blueprint for Health — 15 years of evidence. The behavioral health crisis and the three-layer architecture. Collaborative Care Model. Care for Vermont's aging population.",
+    desc: "Vermont Blueprint for Health — two decades of evidence. The behavioral health crisis and the three-layer architecture. Collaborative Care Model. Care for Vermont's aging population.",
     group: "Clinical Pillar",
     pillar: "clinical",
     platformLinks: [
