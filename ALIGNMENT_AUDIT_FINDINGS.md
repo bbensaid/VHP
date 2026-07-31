@@ -21,15 +21,17 @@ each number can be re-derived.
 
 | Pass | Pillar | Date | Status |
 | :--- | :--- | :--- | :--- |
-| 1 | **Policy** | 2026-07-31 | Complete |
-| 2 | Technology | — | Not started |
+| 1 | **Policy** | 2026-07-31 | Complete — fixes applied (§7) |
+| 2 | **Technology** | 2026-07-31 | Complete — findings only, nothing changed |
 | 3 | Economics | — | Not started |
 | 4 | Clinical | — | Not started |
 | 5 | Equity | — | Not started |
 | 6 | Operations | — | Not started |
 
-Book state during this pass: **the author held the manuscript** (`./book.sh who`).
-`HTR_Book_v42.md` was read only, never written.
+The author held the manuscript during both audit passes (`./book.sh who`), so
+`HTR_Book_v42.md` was read-only while auditing. The one exception is C-5, where
+the author explicitly authorised the Act 51 correction; the lock was taken and
+handed back for that edit.
 
 ### Scripts written for this audit (read-only)
 
@@ -396,6 +398,165 @@ token (role: `editor`) is in `backend/.env`. Sanity reads are public, so audit
 scripts appeared to work; only writes failed. Worth reconciling — a script
 following the runbook's "credentials are in `frontend/.env.local`" will fail to
 write with a permissions error that does not name the real cause.
+
+---
+
+## Pass 2 — Technology pillar
+
+**2026-07-31. Report only — nothing changed in this pass.** Book chapters 4 and
+5. The author held the manuscript throughout; `HTR_Book_v42.md` was read only.
+
+New read-only scripts, both reusable for passes 3–6:
+
+| Script | Purpose |
+| :--- | :--- |
+| `frontend/scripts/audit-pillar-inventory.mjs <Pillar>` | Sanity + Academy inventory for any pillar |
+| `frontend/scripts/audit-pillar-excerpts.mjs` | Verifies C-6 — exits 1 while it stands |
+
+### T1. Inventory
+
+#### Book — 2 chapters
+
+| Ch | Title | Lines |
+| :--- | :--- | :--- |
+| 4 | The Technology Pillar — Data Infrastructure for a Transformed Health System | 1501–1854 |
+| 5 | The Technology Pillar in Practice — FHIR, AI Governance, and Clinical Decision Support | 1855–2038 |
+
+#### Platform — tools
+
+6 tools carry `pillars: ["technology"]`, plus 4 cross-cutting. All 6 are named
+in the manuscript and all three bench routes resolve — **no orphans**.
+
+| Tool | `chapters:` |
+| :--- | :--- |
+| FHIR Interoperability Lab | 4, 5 |
+| EMR/EHR Lab | 4 |
+| Statewide EHR Deployment Modeler | 4 |
+| AI Clinical Governance Lab | 5 |
+| Digital Health Lab | 5 |
+| Clinical Data Exchange Lab | 5 |
+
+#### Platform — editorial
+
+25 Sanity docs tagged `Technology`: 17 `policyAnalysis`, 3 `academyModule`,
+2 `caseStudy`, 1 `analystNote`, 1 `report`, 1 `webinar`. All now correctly at
+`chapterRef=4` after pass 1's C-1 fix.
+
+#### Academy — 2 substantive courses
+
+| Course | Lessons | Rich | `chapter_ref` |
+| :--- | :--- | :--- | :--- |
+| ai-machine-learning-healthcare | 18 | 18/18 ✅ | 4 |
+| interoperability-data-exchange | 26 | 25/26 ⚠️ | 4 |
+| welcome-htr-framework | 1 | 0/1 ❌ | 1 (cross-cutting) |
+
+### T2. Coverage matrix — Technology
+
+| Concept | Book | Tool | Editorial | Academy |
+| :--- | :--- | :--- | :--- | :--- |
+| VHCURES / APCD | Ch 4 | — | — | — |
+| VITL / VHIE | Ch 4 | — | 2 briefs (VHIE resilience, CRISP pivot) | interop *Vermont's HIE: VITL* |
+| Act 62 HIE governance transfer | Ch 4 | — | — | — |
+| FHIR / interoperability | Ch 4, 5 | FHIR Lab | 1 brief (TEFCA) | interop track (4 lessons) |
+| Terminology (SNOMED/LOINC/RxNorm) | Ch 4 | FHIR Lab | — | interop *Clinical Terminology* |
+| USCDI data quality | Ch 4 | EMR/EHR Lab | — | interop *USCDI* |
+| EHR market / TCO / ROI | Ch 4 | EMR/EHR Lab | — | interop *EHR Business Case* |
+| Statewide EHR feasibility | Ch 4 | Statewide EHR Modeler | — | — |
+| Risk stratification / HCC | Ch 4 (Fig 4.H) | Risk Stratification Engine ⚠️ | — | aiml *Population Health AI* |
+| AI governance lifecycle | Ch 4, 5 | AI Governance Lab | 3 briefs | aiml *AI Governance* |
+| Clinical decision support | Ch 5 | AI Governance Lab | 2 briefs | aiml CDS track (2) |
+| Ambient AI / scribe | Ch 5 | — | 1 brief | aiml *LLMs in Healthcare* |
+| RPM / telehealth | Ch 5 | Digital Health Lab | 2 briefs | — |
+| HL7 v2 messaging | Ch 5 | Clinical Data Exchange Lab | — | interop *HL7 v2* |
+| Cybersecurity / ransomware | — | — | 2 briefs | interop *HIPAA Security* |
+| Information blocking / Cures Act | — | — | — | interop track (4 lessons) |
+| FDA regulation of AI/SaMD | — | — | 1 brief | aiml FDA track (2) |
+| Algorithmic bias | Ch 10 (Equity) | — | — | aiml fairness track (2) |
+
+### T3. Contradictions
+
+### C-6 — **All six pillar pages cite the wrong book chapters, and contradict their own headings.** 🔴 Critical
+
+[frontend/components/FromTheBookForPillar.tsx:14-46](frontend/components/FromTheBookForPillar.tsx#L14-L46)
+
+The component computes the chapter range correctly from `chapters.ts`, then
+renders it beside a **hardcoded excerpt whose chapter numbers are the +2 error
+again** — the same Preface/Introduction miscount as C-1, in prose this time.
+Both appear on the same card, so each pillar page contradicts itself:
+
+| Pillar page | Heading renders | Excerpt prose says | Off by |
+| :--- | :--- | :--- | :--- |
+| `/policy` | Chapters 2 & 3 | "Chapter 4 decodes… Chapter 5 covers…" | +2 |
+| `/technology` | Chapters 4 & 5 | "Chapter 6 covers VHCURES… Chapter 7…" | +2 |
+| `/economics` | Chapters 6 & 7 | "Chapter 8 dissects… Chapter 9 provides…" | +2 |
+| `/clinical` | Chapters 8 & 9 | "Chapter 10 covers… Chapter 11 provides…" | +2 |
+| `/equity` | Chapter 10 | "Chapter 12 treats… Chapter 13 operationalizes…" | +2, **and invents a 2nd chapter** |
+| `/operations` | Chapter 11 | "Chapter 14 covers… Chapter 15 provides…" | +3, **and invents a 2nd chapter** |
+
+Equity and Operations are worse than a renumbering. Each pillar has exactly
+**one** chapter (10 and 11), but both excerpts describe two, and the invented
+second chapter's content does not exist: chapters 12, 13 and 15 are Knowledge
+Transfer, The Future, and Portfolio Management — not equity measurement or
+operational levers.
+
+The *substance* of each excerpt is otherwise accurate — VHCURES/Act 62/FHIR
+genuinely is chapter 4. So for four pillars this is a pure renumbering fix;
+Equity and Operations additionally need their phantom second chapter removed.
+
+Reader-visible on all six top-level pillar pages (five via `PillarOverview`,
+`/operations` directly) — a primary navigation surface.
+
+Verify: `cd frontend && node scripts/audit-pillar-excerpts.mjs` (exits 1 while this stands)
+
+### C-7 — **Act 62 dated 2024 in one place, 2025 everywhere else.** 🟡 Medium
+
+[frontend/lib/data/state-comparison.ts:177](frontend/lib/data/state-comparison.ts#L177)
+reads `{ value: "Act 62 (2024)", detail: "Reorganized governance of VITL" }`.
+
+The book (`HTR_Book_v42.md:1590`), `VermontReformCascade.tsx:89`, and
+`TransformationScorecard.tsx:91` all say **2025**, effective July 1, 2025.
+
+**2025 is correct** — Act 62 is S.63 of the 2025 session; GMCB's own HIT pages
+confirm the July 1, 2025 transfer. The `state-comparison.ts` entry is wrong,
+and it sits in a cross-state comparison table where Vermont is scored "best."
+
+### C-8 — Chapter 4 features a tool that isn't tagged Technology. 🟡 Medium
+
+Ch 4's "Work This Chapter on the Platform" table (`:1806`) sends readers to the
+**Risk Stratification Engine** as one of four Technology-pillar tools, with the
+rationale *"why technology must precede economics."* In
+[tools.ts:170](frontend/lib/taxonomy/tools.ts#L170) that tool is
+`pillars: ["clinical", "equity"], chapters: ["8", "9"]` — neither tagged
+`technology` nor mapped to chapter 4.
+
+The href in the book matches the registry, so the link works. But the tool is
+invisible in any Technology-pillar or chapter-4 listing, which is the same
+class of gap as Ch 2's zero-tool finding in pass 1. It is genuinely used by
+three chapters (4, 8, 9), so this is a tagging question, not a relocation.
+
+### T4. Orphans and gaps — Technology
+
+- **No tool orphans.** All 6 technology tools are named in the book; all bench
+  routes resolve.
+- **VHCURES, VITL and Act 62 have no tool and no dedicated page** — the three
+  most Vermont-specific items in ch 4. *Likely deliberate* (they are described,
+  not modelled), but Act 62 is referenced in four separate files without a home
+  page, unlike Acts 167/51/68.
+- **Cybersecurity/ransomware: 2 briefs, no book coverage.** Editorial breadth
+  beyond the book — *likely deliberate*.
+- **Information blocking / Cures Act: 4 Academy lessons, no book coverage.**
+  Foundational material the book assumes — *likely deliberate*.
+- **`interoperability-data-exchange` is 25/26** — one lesson not rich. Per the
+  standing rule, thin content is often intentional; flagged, not actioned.
+
+### T5. Recommendations — Technology
+
+| # | Action | Effort | Value |
+| :--- | :--- | :--- | :--- |
+| **R-7** | Fix the six `PILLAR_EXCERPTS` (C-6): renumber all six, and remove the phantom second chapter from Equity and Operations. | Low | **Very high** — six top-level pages, each self-contradicting |
+| **R-8** | Correct Act 62 to 2025 in `state-comparison.ts` (C-7). | Trivial | Medium |
+| **R-9** | Decide whether Risk Stratification Engine should carry `technology` and chapter 4 (C-8). | Trivial | Medium |
+| **R-10** | Extend the regression guard to assert hardcoded chapter citations in components match `chapters.ts`. | Low | High — C-6 is C-1 in prose; the current guard only covers data |
 
 ---
 
