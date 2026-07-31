@@ -103,8 +103,9 @@ export const TOOLS: readonly Tool[] = [
     id: "hospital-stress-test",
     label: "Hospital Financial Stress Test",
     href: "/research-lab/policy-quality?tab=scorecard",
+    // Featured in the ch 6, 7 and 11 "Work This Chapter" tables.
     pillars: ["economics", "operations"],
-    chapters: ["7", "11"],
+    chapters: ["6", "7", "11"],
   },
   {
     id: "hta-studio",
@@ -187,8 +188,9 @@ export const TOOLS: readonly Tool[] = [
     id: "vbc-quality-measures",
     label: "VBC Quality Measures",
     href: "/research-lab/vbc-clinical-quality?tab=quality",
+    // Featured in both ch 8 and ch 9 "Work This Chapter" tables.
     pillars: ["clinical"],
-    chapters: ["9"],
+    chapters: ["8", "9"],
   },
   {
     id: "high-low-value-care",
@@ -234,13 +236,14 @@ export const TOOLS: readonly Tool[] = [
     label: "Evidence Library",
     href: "/research-lab/knowledge-workspace?tab=evidence",
     pillars: ["operations"],
-    chapters: ["11"],
+    chapters: ["11", "12"],
   },
   {
     id: "research-workspace",
     label: "Research Workspace",
     href: "/research-lab/knowledge-workspace?tab=workspace",
     pillars: ["operations"],
+    chapters: ["12"],
   },
   {
     id: "workforce-modeler",
@@ -272,35 +275,36 @@ export const TOOLS: readonly Tool[] = [
     label: "Six-Pillar Map",
     href: "/about/framework",
     pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"],
-    chapters: ["1"],
+    chapters: ["1", "16"],
   },
   {
     id: "htr-simulator",
     label: "HTR Simulator",
     href: "/htr-simulator",
     pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"],
-    chapters: ["1"],
+    // Featured in the ch 1, 13, 14, 15 and 16 platform tables.
+    chapters: ["1", "13", "14", "15", "16"],
   },
   {
     id: "transformation-friction-index",
     label: "Transformation Friction Index",
     href: "/transformation-friction-index",
     pillars: ["policy", "operations"],
-    chapters: ["1", "15"],
+    chapters: ["1", "14", "15"],
   },
   {
     id: "investment-tracker",
     label: "Investment Tracker",
     href: "/investment-tracker",
     pillars: ["economics"],
-    chapters: ["7"],
+    chapters: ["7", "15"],
   },
   {
     id: "hti-dashboard",
     label: "HTI Dashboard",
     href: "/hti-dashboard",
     pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"],
-    chapters: ["13"],
+    chapters: ["13", "15", "16"],
   },
   {
     id: "medicaid-eligibility-simulator",
@@ -321,6 +325,9 @@ export const TOOLS: readonly Tool[] = [
     label: "The Wire",
     href: "/the-wire",
     pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"],
+    // A live news feed, so it is not chapter-bound — but chs 13 and 14 send
+    // readers to it explicitly as an early-warning instrument.
+    chapters: ["13", "14"],
   },
 ] as const;
 
