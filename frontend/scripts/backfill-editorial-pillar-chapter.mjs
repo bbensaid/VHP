@@ -18,8 +18,16 @@ const TOKEN = process.env.SANITY_API_TOKEN;
 const PID = "fxz10xl7";
 const COMMIT = process.argv.includes("--commit");
 
+// Lead chapter per pillar, as `chapters.ts` numbers them.
+//
+// ⚠️ These are chapter NUMBERS, not positions in the CHAPTERS array. That array
+// opens with Preface and Introduction, so it holds 18 entries for 16 numbered
+// chapters. An earlier version of this map was built by counting array
+// positions, which put every pillar 2 chapters too high (Policy -> "5", the
+// Technology chapter) and mispointed all 97 editorial docs and 15 courses.
+// Corrected 2026-07-31; see ALIGNMENT_AUDIT_FINDINGS.md §3 C-1.
 const LEAD_CHAPTER = {
-  Policy: "5", Economics: "8", Technology: "6", Clinical: "10", Equity: "12", Operations: "14",
+  Policy: "2", Technology: "4", Economics: "6", Clinical: "8", Equity: "10", Operations: "11",
 };
 
 // Explicit pillar assignments for the types that lack a pillar.
