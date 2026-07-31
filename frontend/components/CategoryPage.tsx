@@ -15,7 +15,8 @@ async function getArticles(pillar: string, category?: string) {
   const categoryFilter = category
     ? ` && category match "*${category}*"`
     : "";
-  const query = `*[_type == "policyAnalysis" && pillar == "${pillar}"${categoryFilter}] | order(publishedAt desc) [0...6] {
+  // Home pillar OR secondary pillar — see policyAnalysis.secondaryPillars.
+  const query = `*[_type == "policyAnalysis" && (pillar == "${pillar}" || "${pillar}" in secondaryPillars)${categoryFilter}] | order(publishedAt desc) [0...6] {
     _id, title, summary, publishedAt, slug, status, impactLevel, mainImage,
     "readTime": round(length(pt::text(body)) / 1000)
   }`;

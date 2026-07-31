@@ -10,7 +10,8 @@ interface Report {
 }
 
 async function getLatest(pillar: string): Promise<Report[]> {
-  const query = `*[_type == "policyAnalysis" && pillar == "${pillar}"] | order(publishedAt desc)[0...3] {
+  // Home pillar OR secondary pillar — see policyAnalysis.secondaryPillars.
+  const query = `*[_type == "policyAnalysis" && (pillar == "${pillar}" || "${pillar}" in secondaryPillars)] | order(publishedAt desc)[0...3] {
     _id, title, summary, publishedAt, slug
   }`;
   return client.fetch(query, {}, { next: { revalidate: 60 } });
