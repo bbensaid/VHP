@@ -17,18 +17,20 @@ each number can be re-derived.
 > handed back afterwards). No Academy lesson or Sanity article content was
 > written or re-linked.
 >
-> **Still open:** C-3 (deficit range vs. bare "$2.4B"), C-4, and the §5 gaps.
+> **All six passes complete.** Still open for the author: C-3 (deficit range vs.
+> bare "$2.4B"), C-4, **C-10** (Blueprint age — three statements disagree), and
+> the Operations editorial gap (2 docs vs Economics' 41).
 
 | Pass | Pillar | Date | Status |
 | :--- | :--- | :--- | :--- |
 | 1 | **Policy** | 2026-07-31 | Complete — fixes applied (§7) |
 | 2 | **Technology** | 2026-07-31 | Complete — fixes applied (§T6) |
-| 3 | Economics | — | Not started |
-| 4 | Clinical | — | Not started |
-| 5 | Equity | — | Not started |
-| 6 | Operations | — | Not started |
+| 3 | **Economics** | 2026-07-31 | Complete — fixes applied (§P36-4) |
+| 4 | **Clinical** | 2026-07-31 | Complete — fixes applied (§P36-4) |
+| 5 | **Equity** | 2026-07-31 | Complete — fixes applied (§P36-4) |
+| 6 | **Operations** | 2026-07-31 | Complete — fixes applied (§P36-4) |
 
-The author held the manuscript during both audit passes (`./book.sh who`), so
+The author held the manuscript throughout (`./book.sh who`), so
 `HTR_Book_v42.md` was read-only while auditing. The one exception is C-5, where
 the author explicitly authorised the Act 51 correction; the lock was taken and
 handed back for that edit.
@@ -40,6 +42,13 @@ handed back for that edit.
 | `frontend/scripts/audit-policy-alignment.mjs` | Course → pillar / chapter_ref, and every lesson in the 4 policy courses |
 | `frontend/scripts/audit-policy-sanity.mjs` | Sanity doc counts by type; all docs carrying a `pillar` |
 | `frontend/scripts/audit-chapterref-blast.mjs` | Cross-checks every `chapterRef` / `chapter_ref` against `chapters.ts` |
+| `frontend/scripts/audit-pillar-inventory.mjs <Pillar>` | Sanity + Academy inventory for any pillar |
+| `frontend/scripts/audit-pillar-excerpts.mjs` | Pillar-page excerpts vs `chapters.ts` (C-6) |
+| `frontend/scripts/audit-book-tool-tables.mjs` | Every chapter's tool table vs `tools.ts` (C-8, C-9) |
+
+Two are **regression guards**, safe for CI — they exit non-zero on drift:
+`check-chapterref-integrity.mjs` (data + component prose) and
+`audit-book-tool-tables.mjs` (book tables ↔ registry).
 
 ---
 
@@ -612,6 +621,110 @@ guard exits 1 and names the pillar.
 
 C-1 and C-6 are the same defect in two media — data and prose. The guard now
 covers both.
+
+---
+
+## Passes 3–6 — Economics · Clinical · Equity · Operations
+
+**2026-07-31.** Run together, since the structural checks are the same query
+across four pillars. Fixes applied in the same session.
+
+New script: `frontend/scripts/audit-book-tool-tables.mjs` — parses every
+chapter's "Work This Chapter on the Platform" table straight from the manuscript
+and cross-checks each tool named there against `tools.ts`. This generalises the
+one-off C-8 finding into a check that covers **all 16 chapters at once**, and it
+is what turned up C-9 below.
+
+### P36-1. Inventory
+
+| Pillar | Ch | Sanity docs | Courses | Lessons |
+| :--- | :--- | :--- | :--- | :--- |
+| Economics | 6, 7 | **41** | 2 | 41 |
+| Clinical | 8, 9 | 18 | 4 | 69 |
+| Equity | 10 | 13 | 1 | 16 |
+| Operations | 11 | **2** | 1 | 21 |
+
+Editorial weight is heavily skewed: Economics has **41 docs, Operations has 2**
+— a 20× spread across two pillars with comparable book coverage.
+
+### P36-2. Contradictions and gaps
+
+#### C-9 — **13 tool references in later chapters were unmapped.** 🟠 High → fixed
+
+The pass-2 finding (C-8) was not a one-off. Parsing every chapter table found
+**58 tool references across all 16 chapters**, of which 13 pointed at tools
+`tools.ts` did not map to that chapter:
+
+| Chapter | Tool | Was mapped to |
+| :--- | :--- | :--- |
+| 12 | Evidence Library | ch 11 |
+| 12 | Research Workspace | *(no chapters at all)* |
+| 13, 14 | The Wire | *(no chapters at all)* |
+| 13, 14, 15, 16 | HTR Simulator | ch 1 |
+| 14 | Transformation Friction Index | ch 1, 15 |
+| 15 | Investment Tracker | ch 7 |
+| 15, 16 | HTI Dashboard | ch 13 |
+| 16 | Six-Pillar Map | ch 1 |
+
+Chapters **12, 14 and 16 showed zero tools** in every chapter listing while
+their own tables sent readers to three tools each. The earlier pass reported
+those as possible deliberate gaps — they were not; the references were simply
+written in a different markdown form (`**[Label](https://…)**` rather than
+``**Label** — `/href` ``) and no check had ever parsed them.
+
+**All 16 chapters now have at least one tool.** Tool→chapter pairs: 44 → 61.
+
+#### C-10 — **The book contradicts itself on the Blueprint's age.** 🟡 Medium — *author's call*
+
+Three statements, same chapter, mutually inconsistent:
+
+| Location | Claim |
+| :--- | :--- |
+| `HTR_Book_v42.md:2709` (ch 8 epigraph) | "three decades of primary care investment" |
+| `HTR_Book_v42.md:2723` (section heading) | "**Fifteen Years** of Primary Care Transformation" |
+| `HTR_Book_v42.md:2735` | "established in **2006** and reaching statewide implementation by 2013" |
+
+From 2006, the correct figure in 2026 is **two decades** — so the epigraph
+overstates and the heading understates. `chapters.ts:163` repeats the "15 years
+of evidence" phrasing.
+
+**Not changed.** Unlike the Act 51 error, this is not a verifiable-fact
+correction with one right answer — "fifteen years" may be deliberate (the
+Blueprint reached statewide scale in 2013) and the heading is style-critical per
+`CLAUDE.md`. Three locations, one of them a recurring heading: the author should
+decide the wording.
+
+#### Operations editorial gap — *reported, not changed*
+
+Operations has **2 Sanity docs** against Economics' 41. Nine briefs read as
+operational by title, but eight are tagged to other pillars — and mostly
+defensibly (nursing-workforce *economics* really is Economics).
+
+Retagging is exactly the judgement call `CLAUDE.md` reserves for the author, so
+nothing was moved. The question for triage: should workforce/staffing briefs be
+dual-tagged so `/operations` is not near-empty?
+
+### P36-3. What was verified clean
+
+- **Tool→book links:** all 58 chapter-table references resolve to a real tool
+  in `tools.ts`, correctly mapped, across all 16 chapters.
+- **`chapterRef` integrity:** 97 Sanity docs + 15 courses + 6 pillar excerpts
+  still agree with `chapters.ts`.
+- **Cross-corpus figures:** `$1,303` admin gap, `$195M` RHT, `31 EMS agencies`,
+  `14 hospitals`, `HEROI`, `65-item checklist` — all consistent between book and
+  platform wherever both carry them.
+- **Content health:** Equity 16/16 lessons rich; Operations 21/21; Clinical
+  63/69 (genomics 15/21 is a known PARTIAL); Economics 35/41 (VBC 17/23 known).
+
+### P36-4. Fixes applied
+
+| Fix | Detail |
+| :--- | :--- |
+| **C-9** | 8 tool entries in `tools.ts` remapped — see table above. All 16 chapters now carry tools; pairs 44 → 61. |
+| **C-8 follow-on** | `hospital-stress-test` +ch 6; `vbc-quality-measures` +ch 8. Both were featured in those chapters' tables but mapped elsewhere. |
+| **New guard** | `audit-book-tool-tables.mjs` handles both markdown forms and ignores non-tool routes (statute pages, pillar overviews) so it stays green. |
+
+Verified: `tsc` clean, `next build` passes, all three guards green.
 
 ---
 
