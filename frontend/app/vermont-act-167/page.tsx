@@ -166,13 +166,14 @@ export default function VermontAct167Page() {
                 { date: "Aug 2023", event: "Green Mountain Care Board awards Oliver Wyman Group a $1.05M contract to lead community engagement" },
                 { date: "Oct–Nov 2023", event: "Round 1 community engagement: hundreds of interviews, public meetings across Vermont" },
                 { date: "Jun 2024", event: "Oliver Wyman publicly characterizes Vermont's health care system as 'badly broken'" },
-                { date: "Jul 2, 2024", event: "CMS announces Vermont selected for AHEAD Model Cohort 1 (alongside Maryland)" },
+                { date: "Jul 2, 2024", event: "CMS announces Vermont selected for AHEAD Model Cohort 2 (alongside Maryland in Cohort 1)" },
                 { date: "Jul–Aug 2024", event: "Round 2 community engagement: statewide meetings, updated data collection" },
                 { date: "Sep 18, 2024", event: "Oliver Wyman delivers final 144-page report to GMCB — recommends hospital consolidations, service line closures" },
                 { date: "Oct 2024", event: "Gifford Medical Center uncovers major data errors; multiple hospitals push back" },
                 { date: "Oct 23, 2024", event: "Oliver Wyman admits errors but holds firm on overall conclusions" },
                 { date: "Dec 2024", event: "Vermont Legislature examines EMS reform as near-term priority stemming from Act 167 findings" },
-                { date: "Jan 1, 2026", event: "AHEAD Model Cohort 1 implementation officially begins in Vermont" },
+                { date: "Jan 1, 2026", event: "AHEAD Medicaid hospital global budgets begin in Vermont (Cohort 2 preparation)" },
+                { date: "Jan 1, 2028", event: "AHEAD Cohort 2 performance year begins — Medicare FFS hospital global budgets (start moved from 2027 per CMS, Sept 2025)" },
               ].map((item) => (
                 <div key={item.date} className="flex gap-6 pl-10 relative">
                   <div className="absolute left-2.5 top-1 w-3 h-3 rounded-full bg-violet-500 border-2 border-white shadow-sm" />
@@ -451,10 +452,10 @@ export default function VermontAct167Page() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
             {[
               { label: "CMS Announcement", value: "July 2, 2024" },
-              { label: "Vermont Cohort", value: "Cohort 1 (with Maryland)" },
-              { label: "Program Length", value: "11 years (2024–2034)" },
+              { label: "Vermont Cohort", value: "Cohort 2 (Maryland is Cohort 1)" },
+              { label: "Program Length", value: "11 years (2024–2035)" },
               { label: "Grant Funding", value: "Up to $12M per state" },
-              { label: "Implementation Start", value: "January 1, 2026" },
+              { label: "Implementation Start", value: "January 1, 2028 (Medicare FFS global budgets)" },
               { label: "Model Type", value: "Hospital Global Budgets + Primary Care AHEAD" },
             ].map((item) => (
               <div key={item.label} className="bg-white rounded-lg p-3 border border-emerald-100">
