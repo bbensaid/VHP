@@ -66,11 +66,42 @@ for (const c of courses) {
   }
 }
 
-console.log(`Checked ${docs.length} Sanity docs + ${courses.length} courses against chapters.ts.`);
+// ── Hardcoded chapter citations in components (C-6) ────────────────────────
+// The database refs above are only half the problem: chapter numbers are also
+// typed by hand into UI prose, where they drift silently. FromTheBookForPillar
+// is the known case — its excerpt renders beside a heading computed from this
+// same taxonomy, so a stale number makes the card contradict itself.
+const compSrc = readFileSync(new URL("../components/FromTheBookForPillar.tsx", import.meta.url), "utf8");
+const CH_BY_PILLAR = {};
+for (const [num, pil] of Object.entries(CH_PILLAR)) if (pil) (CH_BY_PILLAR[pil] ??= []).push(num);
+
+const excerptRe = /(\w+):\s*\{\s*title:\s*"[^"]*",\s*excerpt:\s*\n?\s*"((?:[^"\\]|\\.)*)",?\s*\},/g;
+let seen = 0;
+let e;
+while ((e = excerptRe.exec(compSrc))) {
+  const [, pillar, excerpt] = e;
+  if (!CH_BY_PILLAR[pillar]) continue;
+  seen++;
+  const cited = [...excerpt.matchAll(/Chapters?\s+(\d+)/g)].map((x) => x[1]);
+  const truth = CH_BY_PILLAR[pillar];
+  if (JSON.stringify(cited) !== JSON.stringify(truth)) {
+    failures.push(
+      `EXCERPT FromTheBookForPillar.${pillar} cites ch ${cited.join(", ") || "(none)"} but chapters.ts assigns ch ${truth.join(", ")}`
+    );
+  }
+}
+if (seen !== 6) {
+  failures.push(`EXCERPT parser matched ${seen} of 6 pillars in FromTheBookForPillar.tsx — parser is stale`);
+}
+
+console.log(
+  `Checked ${docs.length} Sanity docs + ${courses.length} courses + ${seen} pillar excerpts against chapters.ts.`
+);
 if (failures.length) {
-  console.error(`\n❌ ${failures.length} chapter reference(s) point at the wrong pillar:\n`);
+  console.error(`\n❌ ${failures.length} chapter reference(s) disagree with chapters.ts:\n`);
   failures.forEach((f) => console.error("  " + f));
-  console.error("\nSee ALIGNMENT_AUDIT_FINDINGS.md §3 C-1. Fix: node scripts/fix-chapterref-offset.mjs");
+  console.error("\nSee ALIGNMENT_AUDIT_FINDINGS.md C-1 (data) and C-6 (component prose).");
+  console.error("Data fix: node scripts/fix-chapterref-offset.mjs — prose must be edited by hand.");
   process.exit(1);
 }
-console.log("✅ All chapter references resolve to a chapter of the matching pillar.");
+console.log("✅ Chapter references and pillar excerpts all agree with chapters.ts.");

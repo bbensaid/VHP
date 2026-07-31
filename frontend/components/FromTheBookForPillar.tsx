@@ -11,36 +11,48 @@
 import FromTheBook from "./FromTheBook";
 import { chaptersForPillar, type PillarId } from "@/lib/taxonomy";
 
+/**
+ * ⚠️ Chapter numbers in these excerpts must match `chapters.ts`.
+ *
+ * Nothing enforces that at runtime — the card's heading is computed from the
+ * taxonomy while this prose is hand-written, so a stale number here makes the
+ * card contradict its own heading. Every excerpt was previously off by two
+ * (Preface and Introduction counted as chapters 1 and 2), and the Equity and
+ * Operations entries described a second chapter that does not exist.
+ * Corrected 2026-07-31; see ALIGNMENT_AUDIT_FINDINGS.md C-6.
+ *
+ * `scripts/audit-pillar-excerpts.mjs` verifies this file against chapters.ts.
+ */
 const PILLAR_EXCERPTS: Record<PillarId, { title: string; excerpt: string }> = {
   policy: {
     title: "The Policy Pillar — Legislative Architecture for Structural Reform",
     excerpt:
-      "Vermont's Acts 167 and 68 are examined as the definitive case study in how policy creates the mandatory architecture for transformation. Chapter 4 decodes the Oliver Wyman blueprint; Chapter 5 covers CMMI models, 1115 waivers, and the H.R. 1 federal policy landscape.",
+      "Vermont's Acts 167, 51, and 68 are examined as the definitive case study in how policy creates the mandatory architecture for transformation. Chapter 2 decodes the Oliver Wyman blueprint and the reform cascade; Chapter 3 covers CMMI models, 1115 waivers, and the H.R. 1 federal policy landscape.",
   },
   economics: {
     title: "The Economics Pillar — Global Budgets, Reference-Based Pricing, and Financial Reform",
     excerpt:
-      "Chapter 8 dissects Vermont's four attempts at global budgets, Maryland's decade of evidence, and how the AHEAD Model integrates with Act 68's mandate. Chapter 9 provides the VBC financial modeling toolkit: shared savings, APM readiness, and the 65-item contract review checklist.",
+      "Chapter 6 dissects the fee-for-service trap, reference-based pricing mechanics, Maryland's decade of global-budget evidence, and how the AHEAD Model integrates with Act 68's mandate. Chapter 7 provides the VBC financial modeling toolkit: shared savings, APM readiness, and the 65-item contract review checklist.",
   },
   technology: {
     title: "The Technology Pillar — Data Infrastructure for a Transformed Health System",
     excerpt:
-      "Chapter 6 covers VHCURES, Vermont's HIE governance shift (Act 62), FHIR compliance, and AI governance before the risk arrives. Chapter 7 goes into implementation: AI scribe, remote patient monitoring, clinical decision support, and the AI Clinical Governance Lifecycle.",
+      "Chapter 4 covers VHCURES, Vermont's HIE governance shift (Act 62), FHIR interoperability, and AI governance before the risk arrives. Chapter 5 goes into implementation: AI scribe, remote patient monitoring, clinical decision support, and the AI Clinical Governance Lifecycle.",
   },
   clinical: {
     title: "The Clinical Pillar — Redesigning Care Delivery for a Transformed System",
     excerpt:
-      "Chapter 10 covers Vermont's Blueprint for Health (15 years of evidence), the behavioral health crisis architecture, Collaborative Care Model, and the PACE/long-term care gap. Chapter 11 provides the PCMH transformation playbook, HEDIS improvement methodology, and the Vermont clinical transformation toolkit.",
+      "Chapter 8 covers Vermont's Blueprint for Health, the behavioral health crisis architecture, the Collaborative Care Model, and the PACE/long-term care gap. Chapter 9 provides the PCMH transformation playbook, HEDIS improvement methodology, and the Vermont clinical transformation toolkit.",
   },
   equity: {
     title: "The Equity Pillar — Closing Gaps, Not Just Averaging Them",
     excerpt:
-      "Chapter 12 treats SDOH as a structural variable, not a downstream filter — covering Vermont's 8 SDOH domains, algorithmic bias in clinical AI, and rural access disparity. Chapter 13 operationalizes equity measurement through HEDIS stratification, the HEROI Index, and SDOH screening at scale.",
+      "Chapter 10 treats SDOH as a structural variable, not a downstream filter — covering Vermont's rural-urban divide, the Northeast Kingdom, the GLP-1 access crisis, and algorithmic bias in clinical AI. It then operationalizes equity measurement through stratified HEDIS, the HEROI Index, and VBC equity safeguards.",
   },
   operations: {
     title: "The Operations Pillar — Executing Hospital System Transformation",
     excerpt:
-      "Chapter 14 covers revenue cycle management under global budgets, HCC coding accuracy as a financial lever, workforce strategy, and supply chain in a transformed system. Chapter 15 provides 30 operational levers for cost reduction, HCC coding walkthroughs, denial management, and closing the administrative cost gap.",
+      "Chapter 11 covers the Vermont transformation operating model, the RHRC methodology for rural hospital technical assistance, regionalization across the 14-hospital system, the workforce crisis, and closing the $1,303 per-discharge administrative cost gap.",
   },
 };
 
