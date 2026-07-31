@@ -87,9 +87,11 @@ export const CHAPTERS: readonly Chapter[] = [
     pillar: "policy",
     platformLinks: [
       { label: "Vermont Act 167", href: "/vermont-act-167" },
+      { label: "Vermont Act 51 (2023)", href: "/vermont-act-51" },
       { label: "Vermont Act 68 (2025)", href: "/vermont-act-68" },
       { label: "Vermont RHT Program", href: "/vermont-rht-program" },
       { label: "Policy Overview", href: "/policy" },
+      "policy-simulator",
     ],
   },
   {
