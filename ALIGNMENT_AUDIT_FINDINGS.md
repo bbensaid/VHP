@@ -3,8 +3,16 @@
 Companion to [ALIGNMENT_AUDIT_BRIEF.md](ALIGNMENT_AUDIT_BRIEF.md). One pillar
 per pass; findings accumulate here.
 
-**Report only.** Nothing in any corpus was modified. Every count below came from
-a script, not an estimate; the scripts are named so each number can be re-derived.
+Every count below came from a script, not an estimate; the scripts are named so
+each number can be re-derived.
+
+> **Status update — 2026-07-31, after author sign-off.** Pass 1 was reported
+> read-only. The author then authorised two fixes, both now applied and
+> verified: **C-1** (all 97 Sanity `chapterRef`s + 13 of 15 course
+> `chapter_ref`s repointed) and **C-2** (AHEAD cohort corrected on the Act 167
+> page). See [§7 Fixes applied](#7-fixes-applied). No lesson, article, or
+> manuscript content was written or re-linked — only chapter-reference fields.
+> C-3, C-4 and all §5 gaps remain open decisions.
 
 | Pass | Pillar | Date | Status |
 | :--- | :--- | :--- | :--- |
@@ -247,12 +255,91 @@ Ordered by effort-to-value. **All require author sign-off** — per
 
 | # | Action | Effort | Value |
 | :--- | :--- | :--- | :--- |
-| **R-1** | Fix `LEAD_CHAPTER` in the backfill script (−2 on every value), then re-run to correct 97 Sanity docs + 15 courses. Decide the two cross-cutting courses by hand. | Low — one map, one re-run | **Very high** — corrects every book↔platform tie on `/book` and every course page |
-| **R-2** | Resolve the AHEAD cohort conflict (C-2) against the CMS source of record, then correct whichever side is wrong. | Low | **High** — a labelled fact box contradicting the book |
-| **R-3** | Add a regression guard asserting every `chapterRef` resolves to a chapter whose `pillar` matches the doc's. Would have caught C-1 at write time. | Low | High — this class of bug is silent |
+| ~~R-1~~ | ~~Fix `LEAD_CHAPTER` and repoint 97 docs + courses.~~ | — | ✅ **DONE** 2026-07-31 — see §7 |
+| ~~R-2~~ | ~~Resolve the AHEAD cohort conflict.~~ | — | ✅ **DONE** 2026-07-31 — book was right, page corrected |
+| ~~R-3~~ | ~~Add a `chapterRef` regression guard.~~ | — | ✅ **DONE** 2026-07-31 — `check-chapterref-integrity.mjs` |
 | **R-4** | Decide whether Ch 2 should map to tools in `tools.ts`, and whether Act 51 warrants a route. | Medium | Medium — closes the Policy pillar's real coverage gaps |
 | **R-5** | Reconcile the $700M–$2.4B range vs. the bare "$2.4B" in the book's own tables (C-3). | Low | Medium — internal consistency |
 | **R-6** | Consider surfacing 9-of-14 and the deficit range on `/vermont-act-167` (C-4). | Low | Low–medium |
+
+---
+
+## 7. Fixes applied
+
+Applied 2026-07-31 on the author's instruction ("fix it, leave those two courses
+alone, and check CMS on the cohort"). Content fields were not touched — only
+chapter-reference wiring and the factually wrong AHEAD figures.
+
+### C-1 — chapter references repointed ✅
+
+`frontend/scripts/fix-chapterref-offset.mjs` (new, dry-run by default).
+It derives each pillar's lead chapter from `chapters.ts` **at runtime** rather
+than hardcoding a map, so it stays correct if the book is restructured — and it
+catches individually-wrong refs the −2 rule would miss.
+
+| | Before | After |
+| :--- | :--- | :--- |
+| Sanity docs correct | **0 / 97** | **97 / 97** |
+| Courses correct | 0 / 15 | 13 / 13 attempted (2 held back) |
+
+Held back per instruction, unchanged: `hie-health-reform-onboarding` (ch 16),
+`welcome-htr-framework` (ch 1).
+
+One course was *not* a simple −2: `genomics-precision-medicine` was at ch 7
+(Economics) and moved to ch 8 (Clinical) — it had been individually wrong.
+Deriving from `chapters.ts` caught it; a blanket −2 would not have.
+
+Root cause fixed at source: the `LEAD_CHAPTER` map in
+[backfill-editorial-pillar-chapter.mjs:21](frontend/scripts/backfill-editorial-pillar-chapter.mjs#L21)
+now holds the correct values, with a comment explaining the Preface/Introduction
+trap so it is not reintroduced.
+
+Verified with the same script that found the bug:
+`node scripts/audit-chapterref-blast.mjs` → `correct: 97  mispointed: 0`.
+
+### C-2 — AHEAD cohort corrected ✅
+
+**The book was right; the platform page was wrong.** Confirmed against Vermont
+reporting on the signed State Agreement: *"The agreement states that Vermont
+will enter the second cohort in the program… Maryland may be the only state
+that participates in the first cohort."*
+([VTDigger, 17 Jan 2025](https://vtdigger.org/2025/01/17/vermont-moves-ahead-with-new-federal-health-care-payment-model/))
+CMS then moved Cohorts 2–3 to January 2028 in September 2025 — exactly as the
+book records at `HTR_Book_v42.md:806`.
+
+Corrected in [frontend/app/vermont-act-167/page.tsx](frontend/app/vermont-act-167/page.tsx):
+
+| Line | Was | Now |
+| :--- | :--- | :--- |
+| 169 | selected for "Cohort 1 (alongside Maryland)" | Cohort 2 (Maryland in Cohort 1) |
+| 175 | "Cohort 1 implementation begins" Jan 2026 | Medicaid global budgets begin (Cohort 2 prep) |
+| 176 | *(absent)* | **new** — Jan 1 2028 Cohort 2 performance year |
+| 455 | "Cohort 1 (with Maryland)" | "Cohort 2 (Maryland is Cohort 1)" |
+| 456 | "11 years (2024–2034)" | "11 years (2024–2035)" |
+| 458 | Implementation start Jan 1 2026 | Jan 1 2028 (Medicare FFS global budgets) |
+
+Two of these — the 2034 end date and the implementation start — were **not in
+the original findings**; they surfaced while editing the fact box. The Jan 2026
+date was not simply deleted: Vermont's Medicaid global budgets genuinely do
+begin then (`HTR_Book_v42.md:1194`), so that row was reworded rather than
+removed.
+
+### R-3 — regression guard added ✅
+
+`frontend/scripts/check-chapterref-integrity.mjs` — asserts every chapter
+reference resolves to a chapter whose pillar matches the document's own. Exits
+non-zero on drift; safe for CI. Currently passes.
+
+This class of bug is silent: every wrong ref still resolved to a *real* chapter,
+so nothing crashed and no link 404'd. Only a pillar cross-check catches it.
+
+### Incidental finding — empty Sanity token
+
+`SANITY_API_TOKEN` in `frontend/.env.local` is **empty**. The write-capable
+token (role: `editor`) is in `backend/.env`. Sanity reads are public, so audit
+scripts appeared to work; only writes failed. Worth reconciling — a script
+following the runbook's "credentials are in `frontend/.env.local`" will fail to
+write with a permissions error that does not name the real cause.
 
 ---
 
