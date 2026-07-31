@@ -170,8 +170,11 @@ export const TOOLS: readonly Tool[] = [
     id: "risk-stratification-engine",
     label: "Risk Stratification Engine",
     href: "/research-lab/interoperability?tab=risk",
-    pillars: ["clinical", "equity"],
-    chapters: ["8", "9"],
+    // Ch 4's "Work This Chapter" table features this as a Technology-pillar
+    // tool ("you cannot manage a budget for a population you cannot see");
+    // chs 8-9 use it for panel-level care management.
+    pillars: ["technology", "clinical", "equity"],
+    chapters: ["4", "8", "9"],
   },
   {
     id: "risk-stratification-methodology",

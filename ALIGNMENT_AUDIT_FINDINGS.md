@@ -22,7 +22,7 @@ each number can be re-derived.
 | Pass | Pillar | Date | Status |
 | :--- | :--- | :--- | :--- |
 | 1 | **Policy** | 2026-07-31 | Complete — fixes applied (§7) |
-| 2 | **Technology** | 2026-07-31 | Complete — findings only, nothing changed |
+| 2 | **Technology** | 2026-07-31 | Complete — fixes applied (§T6) |
 | 3 | Economics | — | Not started |
 | 4 | Clinical | — | Not started |
 | 5 | Equity | — | Not started |
@@ -33,7 +33,7 @@ The author held the manuscript during both audit passes (`./book.sh who`), so
 the author explicitly authorised the Act 51 correction; the lock was taken and
 handed back for that edit.
 
-### Scripts written for this audit (read-only)
+## Scripts written for this audit (read-only)
 
 | Script | Purpose |
 | :--- | :--- |
@@ -403,7 +403,7 @@ write with a permissions error that does not name the real cause.
 
 ## Pass 2 — Technology pillar
 
-**2026-07-31. Report only — nothing changed in this pass.** Book chapters 4 and
+**2026-07-31.** Book chapters 4 and
 5. The author held the manuscript throughout; `HTR_Book_v42.md` was read only.
 
 New read-only scripts, both reusable for passes 3–6:
@@ -415,14 +415,14 @@ New read-only scripts, both reusable for passes 3–6:
 
 ### T1. Inventory
 
-#### Book — 2 chapters
+#### Book — Technology chapters
 
 | Ch | Title | Lines |
 | :--- | :--- | :--- |
 | 4 | The Technology Pillar — Data Infrastructure for a Transformed Health System | 1501–1854 |
 | 5 | The Technology Pillar in Practice — FHIR, AI Governance, and Clinical Decision Support | 1855–2038 |
 
-#### Platform — tools
+#### Platform — Technology tools
 
 6 tools carry `pillars: ["technology"]`, plus 4 cross-cutting. All 6 are named
 in the manuscript and all three bench routes resolve — **no orphans**.
@@ -436,7 +436,7 @@ in the manuscript and all three bench routes resolve — **no orphans**.
 | Digital Health Lab | 5 |
 | Clinical Data Exchange Lab | 5 |
 
-#### Platform — editorial
+#### Platform — Technology editorial
 
 25 Sanity docs tagged `Technology`: 17 `policyAnalysis`, 3 `academyModule`,
 2 `caseStudy`, 1 `analystNote`, 1 `report`, 1 `webinar`. All now correctly at
@@ -553,10 +553,65 @@ three chapters (4, 8, 9), so this is a tagging question, not a relocation.
 
 | # | Action | Effort | Value |
 | :--- | :--- | :--- | :--- |
-| **R-7** | Fix the six `PILLAR_EXCERPTS` (C-6): renumber all six, and remove the phantom second chapter from Equity and Operations. | Low | **Very high** — six top-level pages, each self-contradicting |
-| **R-8** | Correct Act 62 to 2025 in `state-comparison.ts` (C-7). | Trivial | Medium |
-| **R-9** | Decide whether Risk Stratification Engine should carry `technology` and chapter 4 (C-8). | Trivial | Medium |
-| **R-10** | Extend the regression guard to assert hardcoded chapter citations in components match `chapters.ts`. | Low | High — C-6 is C-1 in prose; the current guard only covers data |
+| ~~R-7~~ | ~~Fix the six `PILLAR_EXCERPTS` (C-6).~~ | — | ✅ **DONE** 2026-07-31 |
+| ~~R-8~~ | ~~Correct Act 62 to 2025 (C-7).~~ | — | ✅ **DONE** 2026-07-31 |
+| ~~R-9~~ | ~~Tag Risk Stratification Engine for Technology / ch 4 (C-8).~~ | — | ✅ **DONE** 2026-07-31 |
+| ~~R-10~~ | ~~Extend the guard to component prose.~~ | — | ✅ **DONE** 2026-07-31 |
+
+### T6. Fixes applied — Technology
+
+All four applied 2026-07-31. Verified: `tsc` clean, `next build` passes, all six
+pillar pages re-rendered and checked, guard green.
+
+**C-6 — six pillar excerpts rewritten.**
+[FromTheBookForPillar.tsx](frontend/components/FromTheBookForPillar.tsx)
+
+| Page | Heading | Excerpt before | Excerpt now |
+| :--- | :--- | :--- | :--- |
+| `/policy` | Chapters 2 & 3 | ch 4, 5 | ch 2, 3 ✅ |
+| `/technology` | Chapters 4 & 5 | ch 6, 7 | ch 4, 5 ✅ |
+| `/economics` | Chapters 6 & 7 | ch 8, 9 | ch 6, 7 ✅ |
+| `/clinical` | Chapters 8 & 9 | ch 10, 11 | ch 8, 9 ✅ |
+| `/equity` | Chapter 10 | ch 12, 13 | ch 10 only ✅ |
+| `/operations` | Chapter 11 | ch 14, 15 | ch 11 only ✅ |
+
+Equity and Operations needed rewriting, not renumbering. Their phantom second
+chapter was removed and the real chapter's content substituted, read from the
+manuscript: ch 10 genuinely contains both the disparity analysis *and* the
+HEROI / stratified-HEDIS measurement material; ch 11 is the transformation
+operating model, RHRC methodology, regionalization, workforce, and the $1,303
+per-discharge administrative cost gap.
+
+> **One claim was fabricated, not just misnumbered.** The Operations excerpt
+> promised *"30 operational levers for cost reduction."* `grep -F "30 operational"`
+> returns nothing in the manuscript. Replaced with what ch 11 actually covers.
+
+A comment now marks the map as taxonomy-coupled, since nothing enforces it at
+runtime.
+
+**C-7 — Act 62 corrected to 2025.**
+[state-comparison.ts:177](frontend/lib/data/state-comparison.ts#L177). Detail
+text also expanded to name the actual change (HIT Plan + VITL oversight, GMCB →
+DVHA, effective July 1, 2025) rather than the vague "Reorganized governance of
+VITL." Confirmed against GMCB's own HIT pages: Act 62 is S.63 of the 2025
+session.
+
+**C-8 — Risk Stratification Engine retagged.**
+[tools.ts:170](frontend/lib/taxonomy/tools.ts#L170) — now
+`pillars: ["technology", "clinical", "equity"]`, `chapters: ["4", "8", "9"]`.
+It is genuinely used by all three chapters, so this is additive; nothing was
+removed. Ch 4's platform table no longer points at a tool invisible to the
+Technology pillar. Tool→chapter pairs: 44 → 45.
+
+**R-10 — guard extended to component prose.**
+[check-chapterref-integrity.mjs](frontend/scripts/check-chapterref-integrity.mjs)
+now also parses `FromTheBookForPillar.tsx` and asserts each excerpt's cited
+chapters match `chapters.ts`, failing if the parser stops matching all six
+(so the check cannot silently no-op). Verified by reintroducing the bug: the
+guard exits 1 and names the pillar.
+
+C-1 and C-6 are the same defect in two media — data and prose. The guard now
+covers both.
 
 ---
 
