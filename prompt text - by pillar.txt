@@ -1,0 +1,10 @@
+Read ALIGNMENT_AUDIT_BRIEF.md and HTR_ADMIN_RUNBOOK.md.
+
+Start the alignment audit with the Policy pillar. Inventory what
+exists in all three corpora (book chapters, platform tools,
+Sanity editorial content, Academy courses), build the coverage
+matrix, and check for contradictions between them.
+
+Report findings only — do not write or change any content.
+Commit the findings to ALIGNMENT_AUDIT_FINDINGS.md before
+finishing.
