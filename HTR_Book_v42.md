@@ -660,7 +660,7 @@ This critique identifies a real failure mode. The response is a distinction the 
 
 Policy is the absolute precondition for everything that follows. Its two functions: it creates the mandatory architecture that prevents high-cost actors from opting out of reform, and it secures the transformation capital that funds the technology build.
 
-Vermont's legislative progression illustrates both. Act 167 established the diagnostic foundation. Act 51 defined the transformation architecture. Act 68 operationalized the mandate — converting voluntary reform into binding statutory requirements for global budgets and reference-based pricing. The AHEAD Model federal agreement layered in the federal funding that made the technology build financially feasible. The $195 million Rural Health Transformation award is a Policy-pillar outcome, not an Economics-pillar outcome. Transformation capital comes from policy and regulatory relationships, not from the payment model itself.
+Vermont's legislative progression illustrates both. Act 167 established the diagnostic foundation. Act 51 moved from diagnosis to planning, authorizing AHS to run transformation engagements with individual hospitals. Act 68 operationalized the mandate — converting voluntary reform into binding statutory requirements for global budgets and reference-based pricing. The AHEAD Model federal agreement layered in the federal funding that made the technology build financially feasible. The $195 million Rural Health Transformation award is a Policy-pillar outcome, not an Economics-pillar outcome. Transformation capital comes from policy and regulatory relationships, not from the payment model itself.
 
 ### **Stage 2: Technology — Build the Substrate Before Assuming Risk**
 
@@ -890,7 +890,7 @@ Every state's reform effort eventually confronts the same architectural question
 | 2022 | Act 167 of 2022 enacted | Policy | Commissioned Oliver Wyman analysis; mandated system-wide diagnostic |
 | Aug 2024 | Oliver Wyman Act 167 Report | Policy / Economics | Documented 9/14 hospitals in losses; $2.4B 5-year deficit projection; triggered legislative action |
 | Sept 2024 | Oliver Wyman presentation to GMCB | Policy | Room full of stakeholders; financial trajectory confirmed publicly; political inflection point |
-| 2023 | Act 51 of 2023 enacted | Policy | Defined the six-pillar transformation architecture; established AHS restructuring mandate |
+| 2023 | Act 51 of 2023 enacted | Policy | Authorized AHS hospital transformation planning pilots with up to four hospitals (amending Act 167); Medicaid and DVHA program changes |
 | 2025 | Act 68 of 2025 enacted | Policy / Economics | Mandatory RBP (FY2027), global budgets (FY2028), Dec 2028 Strategic Plan deadline |
 | Jan 2025 | Vermont AHEAD State Agreement signed | Policy / Economics | Committed Vermont to Cohort 2; up to $150M/year EAST Fund; 8-year performance period |
 | Nov 2025 | Vermont RHT Program Application submitted | Policy / Operations | $195M award application; 19 HTR tools; 370-FTE workforce plan |
@@ -5620,7 +5620,7 @@ Every named Vermont statute, agency, or system in this book is a specific instan
 | **OneCare (Vermont)** | Vermont's primary ACO under the All-Payer ACO Model (2017–2025), now wound down. | Any Medicaid ACO, MSSP ACO, or comparable total-cost-of-care entity in your state. |
 | **AHEAD Model** | CMS/CMMI's Advancing All-Payer Health Equity Approaches and Development model (2024–2035) — federal-state agreements establishing global budgets and a state cost-growth target. Vermont, Maryland, Connecticut, Hawaii, Rhode Island, and parts of New York participate. | Check whether your state has applied to or operates under AHEAD; if not, the generic equivalent is a CMMI state total-cost-of-care model or 1115 waiver. |
 | **Act 167 (2022)** | Vermont's diagnostic mandate — commissioned the Oliver Wyman system-wide financial analysis. | A legislatively mandated independent system assessment or consultant study. |
-| **Act 51 (2023)** | Defined the six-pillar transformation architecture and the AHS restructuring mandate. | A reform-framework-establishing statute. |
+| **Act 51 (2023)** | Vermont's planning mandate — authorized AHS to conduct transformation planning with up to four hospitals (amending Act 167), alongside Medicaid and DVHA program changes. | A statute authorizing hospital transformation pilots or planning engagements. |
 | **Act 68 (2025)** | Vermont's operational mandate — mandatory reference-based pricing by FY2027, global hospital budgets for non-critical-access hospitals by FY2028 and all hospitals by FY2030, and the Statewide Health Care Delivery Strategic Plan (due December 2028). | A binding cost-control or payment-reform statute with statutory deadlines and enforcement authority. |
 | **RBP (Reference-Based Pricing)** | Capping what hospitals may accept as payment in full, expressed as a percentage of Medicare rates. | Same term used nationally; Oregon, Montana, Washington, and Maryland have prior or analogous programs. |
 | **CCBHC** | Certified Community Behavioral Health Clinic — a federal model for integrated behavioral health and primary care. | National model; check your state's CCBHC participation under SAMHSA. |
