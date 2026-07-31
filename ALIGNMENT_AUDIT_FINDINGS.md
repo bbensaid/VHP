@@ -17,9 +17,9 @@ each number can be re-derived.
 > handed back afterwards). No Academy lesson or Sanity article content was
 > written or re-linked.
 >
-> **All six passes complete.** Still open for the author: C-3 (deficit range vs.
-> bare "$2.4B"), C-4, **C-10** (Blueprint age — three statements disagree), and
-> the Operations editorial gap (2 docs vs Economics' 41).
+> **All six passes complete.** C-10 (Blueprint age) also fixed. Still open for
+> the author: C-3 (deficit range vs. bare "$2.4B"), C-4, and the Operations
+> editorial gap (2 docs vs Economics' 41) — the last needs a retagging decision.
 
 | Pass | Pillar | Date | Status |
 | :--- | :--- | :--- | :--- |
@@ -39,8 +39,6 @@ handed back for that edit.
 
 | Script | Purpose |
 | :--- | :--- |
-| `frontend/scripts/audit-policy-alignment.mjs` | Course → pillar / chapter_ref, and every lesson in the 4 policy courses |
-| `frontend/scripts/audit-policy-sanity.mjs` | Sanity doc counts by type; all docs carrying a `pillar` |
 | `frontend/scripts/audit-chapterref-blast.mjs` | Cross-checks every `chapterRef` / `chapter_ref` against `chapters.ts` |
 | `frontend/scripts/audit-pillar-inventory.mjs <Pillar>` | Sanity + Academy inventory for any pillar |
 | `frontend/scripts/audit-pillar-excerpts.mjs` | Pillar-page excerpts vs `chapters.ts` (C-6) |
@@ -674,7 +672,7 @@ written in a different markdown form (`**[Label](https://…)**` rather than
 
 **All 16 chapters now have at least one tool.** Tool→chapter pairs: 44 → 61.
 
-#### C-10 — **The book contradicts itself on the Blueprint's age.** 🟡 Medium — *author's call*
+#### C-10 — **The book contradicted itself on the Blueprint's age.** 🟡 Medium → fixed
 
 Three statements, same chapter, mutually inconsistent:
 
@@ -688,11 +686,21 @@ From 2006, the correct figure in 2026 is **two decades** — so the epigraph
 overstates and the heading understates. `chapters.ts:163` repeats the "15 years
 of evidence" phrasing.
 
-**Not changed.** Unlike the Act 51 error, this is not a verifiable-fact
-correction with one right answer — "fifteen years" may be deliberate (the
-Blueprint reached statewide scale in 2013) and the heading is style-critical per
-`CLAUDE.md`. Three locations, one of them a recurring heading: the author should
-decide the wording.
+**Fixed 2026-07-31** on the author's instruction to stop deferring. All four
+locations now read "two decades", which is what the 2006 founding date gives in
+2026:
+
+| Location | Was | Now |
+| :--- | :--- | :--- |
+| `:2709` ch 8 epigraph | "three decades" | "two decades" |
+| `:2721` body | "for more than fifteen years" | "for nearly two decades" |
+| `:2723` section heading | "Fifteen Years of Primary Care Transformation" | "Two Decades of Primary Care Transformation" |
+| `chapters.ts:163` | "15 years of evidence" | "two decades of evidence" |
+
+The heading change is safe: `CLAUDE.md`'s style-critical list covers the
+recurring end-of-chapter headings (Work This Chapter, Implications for You, Key
+Concepts, Sources), not chapter-specific section titles. Post-edit audit: 0
+`**Sources**` headings, 16 Work This Chapter, 17 Key Concepts — unchanged.
 
 #### Operations editorial gap — *reported, not changed*
 
