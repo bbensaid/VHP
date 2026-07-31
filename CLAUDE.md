@@ -1,5 +1,14 @@
 # Vermont Health Platform — working notes
 
+## Start here
+
+| Document | When |
+| :--- | :--- |
+| [HTR_ADMIN_RUNBOOK.md](HTR_ADMIN_RUNBOOK.md) | **Anything operational** — access codes, deploys, Fly/Vercel/Supabase/Sanity, costs, secrets, emergencies. Verified 2026-07-30. |
+| [BOOK_WORKFLOW.md](BOOK_WORKFLOW.md) | Before touching the manuscript |
+| `frontend/docs/platform-documentation/` | Architecture (2026-06-06, partly stale — the runbook wins on conflicts) |
+| [ALIGNMENT_AUDIT_BRIEF.md](ALIGNMENT_AUDIT_BRIEF.md) | **Next major work**: auditing book ↔ platform ↔ Academy content alignment. Not started. |
+
 ## The book (`HTR_Book_v42`)
 
 **Read [BOOK_WORKFLOW.md](BOOK_WORKFLOW.md) before touching the manuscript.**
