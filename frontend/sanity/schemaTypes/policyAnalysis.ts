@@ -36,6 +36,39 @@ export const policyAnalysisType = defineType({
       validation: (Rule) => Rule.required().error('A pillar is required.'),
     }),
 
+    // ── SECONDARY PILLARS — cross-pillar surfacing ───────────────────────
+    // `pillar` above stays single-valued: it is the doc's home pillar and
+    // drives breadcrumbs, chapterRef, and sort order. This adds the OTHER
+    // pillars a piece legitimately belongs to, so e.g. nursing-workforce
+    // economics appears on /operations as well as /economics.
+    // Pillar pages query `pillar == $p || $p in secondaryPillars`.
+    defineField({
+      name: 'secondaryPillars',
+      title: 'Also relevant to (secondary pillars)',
+      description:
+        'Optional. Other pillars this piece belongs to. It will appear on those pillar pages too, but its home pillar stays the one selected above.',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        list: [
+          { title: 'Policy',     value: 'Policy'     },
+          { title: 'Economics',  value: 'Economics'  },
+          { title: 'Technology', value: 'Technology' },
+          { title: 'Clinical',   value: 'Clinical'   },
+          { title: 'Equity',     value: 'Equity'     },
+          { title: 'Operations', value: 'Operations' },
+        ],
+      },
+      validation: (Rule) =>
+        Rule.unique().custom((vals, ctx) => {
+          const home = (ctx.document as { pillar?: string } | undefined)?.pillar;
+          if (Array.isArray(vals) && home && vals.includes(home)) {
+            return 'Remove the home pillar — it is already set above.';
+          }
+          return true;
+        }),
+    }),
+
     // ── CATEGORY — full list of all 20 subcategories ─────────────────────
     defineField({
       name: 'category',
