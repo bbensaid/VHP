@@ -16,7 +16,9 @@ export async function getMoreArticles(
   const impactFilter = impactLevel ? ` && impactLevel == $impactLevel` : "";
   const end = start + limit;
 
-  const query = `*[_type == "policyAnalysis" && pillar == $pillar${categoryFilter}${searchFilter}${impactFilter}] | order(publishedAt ${sortOrder}) [${start}...${end}] {
+  // Matches the doc's home pillar OR any secondary pillar, so cross-pillar
+  // pieces (e.g. nursing-workforce economics) surface on /operations too.
+  const query = `*[_type == "policyAnalysis" && (pillar == $pillar || $pillar in secondaryPillars)${categoryFilter}${searchFilter}${impactFilter}] | order(publishedAt ${sortOrder}) [${start}...${end}] {
     _id, title, summary, publishedAt, slug, status, impactLevel, mainImage,
     "readTime": round(length(pt::text(body)) / 1000)
   }`;
