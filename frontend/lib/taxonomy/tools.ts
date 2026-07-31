@@ -37,7 +37,9 @@ export const TOOLS: readonly Tool[] = [
     label: "Policy Simulator",
     href: "/research-lab/policy-quality?tab=policy",
     pillars: ["policy"],
-    chapters: ["3"],
+    // Ch 2's "Work This Chapter on the Platform" table sends readers here to
+    // model waiver / global-budget design; ch 3 uses it for CMMI models.
+    chapters: ["2", "3"],
   },
   {
     id: "medicaid-wr-calculator",

@@ -37,18 +37,18 @@ const REFORM_CASCADE: Act[] = [
   {
     year: "2023",
     shortName: "Act 51",
-    fullName: "Act 51 — Health Care Reform & Data Infrastructure",
+    fullName: "Act 51 — DVHA Duties & Hospital Transformation Planning (H.206)",
     status: "completed",
-    href: "/policy",
-    pillar: "Technology",
-    pillarColor: "bg-indigo-100 text-indigo-700 border-indigo-200",
+    href: "/vermont-act-51",
+    pillar: "Policy",
+    pillarColor: "bg-sky-100 text-sky-700 border-sky-200",
     summary:
-      "Infrastructure and data. Expanded VHCURES reporting requirements and strengthened GMCB hospital financial data collection authority. Built the data foundation that Act 68's price transparency, global budget attribution, and total cost of care measurement require.",
+      "From diagnosis to planning. Principally a Medicaid and DVHA bill, its Sec. 8 adds a new Sec. 2a to Act 167 authorizing AHS to conduct transformation planning with up to four hospitals — informed by Act 167's data analysis and community engagement, and coordinated with GMCB.",
     keyProvisions: [
-      "Expanded VHCURES all-payer claims database reporting obligations",
-      "Strengthened GMCB authority to collect hospital financial data",
-      "Required additional hospital cost and utilization reporting",
-      "Established data standards for global budget baseline construction",
+      "Authorized AHS transformation planning with up to four hospitals (Sec. 8)",
+      "Required AHS–GMCB consultation to keep planning aligned with the Act 167 analysis",
+      "Expanded Medicaid adult dental coverage; FQHC and Blueprint payment reports",
+      "Restricted hospital liens where a patient has health insurance",
     ],
   },
   {
