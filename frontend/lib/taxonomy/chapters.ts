@@ -117,6 +117,7 @@ export const CHAPTERS: readonly Chapter[] = [
     pillar: "technology",
     platformLinks: [
       { label: "Technology Overview", href: "/technology" },
+      { label: "Vermont UHDS", href: "/vermont-uhds" },
       { label: "AI & Machine Learning", href: "/technology/ai" },
       { label: "Data Security & Governance", href: "/technology/security" },
       "fhir-lab",
