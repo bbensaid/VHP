@@ -1605,6 +1605,64 @@ The practical path to this integration has three components that must be execute
 
 *Figure 4.3 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering Committee statutory mandate; AHS January 2025 Legislative Presentation; DVHA HIE governance documents.*
 
+### **The Unified Health Data Space — The Vehicle for the Integration Mandate**
+
+The three-step path above describes what must be integrated. It does not name the thing being built. Vermont's answer is the **Unified Health Data Space (UHDS)** — the second-generation successor to the VHIE, and the vehicle through which the Act 68 §10 integration mandate is actually delivered.
+
+The distinction between the two is not cosmetic. A traditional health information exchange is a network for moving messages between systems that each remain, fundamentally, private silos. The UHDS treats the combined data asset — clinical, claims, SDOH, and public health — as a single piece of public infrastructure, governed the way a state governs the electric grid or the water system. The formal name for that philosophy is the **Health Data Utility** model: health data as essential public service, funded through stable public mechanisms and managed for the public good rather than as any one participant's private asset. The UHDS is Vermont's implementation of it.
+
+Two statutory changes made this possible, and one of them is easy to miss. Act 68 (2025), §10 legislatively mandated the integration of clinical, claims, and SDOH data into a single record, and required AHS to report to the legislature by January 15, 2026 on the advantages of that integration — a deadline AHS met. But the enabling change came earlier and quieter: **Act 167 repealed 18 V.S.A. § 9410(e)**, which had prevented the use of direct patient identifiers for record matching. Accurate identity resolution across organizations is the foundation every other capability rests on. Until that repeal, Vermont's own statute forbade the technique its integration mandate requires.
+
+### **The Three-Layer Architecture**
+
+The UHDS is best understood as three layers, each depending on the one beneath it.
+
+| Layer | Name | Components | What it establishes |
+| :---- | :---- | :---- | :---- |
+| 3 | End-User Services | VITLAccess provider portal; real-time ADT event notifications; Advanced Analytics Layer | What clinicians and state leaders actually touch — including the analytics used for regionalization and global-budget modeling |
+| 2 | Exchange Services | FHIR APIs; Clinical Data Repository | Moves and stores data as a single source of truth, prioritized around the weekly-refreshed MDWAS pipeline rather than the lagging VHCURES feed |
+| 1 | Foundational Services | Master Patient Index (Verato); Terminology Services (Term Atlas); Rhapsody integration engine | Establishes *who a patient is* and ensures every system speaks the same clinical vocabulary (SNOMED CT, LOINC). Without it, nothing above is trustworthy |
+
+*Figure 4.4 — The UHDS three-layer architecture. Each layer is dependent on the one below it. Sources: Vermont UHDS Transition Plan; DVHA HIE program documentation.*
+
+### **Why Integration Is the Load-Bearing Element**
+
+The argument for merging these data types is often made in the abstract. It is more persuasive stated as three specific blind spots, each of which the others close.
+
+Clinical data alone gives no visibility outside the patient's own network — a provider cannot see that the same test was run last week at a different hospital. Claims data alone shows that a visit happened and was paid for, but not the blood pressure reading or the lab result, which means it substantially underestimates quality, particularly for discontinuously insured patients. SDOH data alone is frequently trapped in unstructured text or a separate agency's records, invisible to the treating clinician at the point of care.
+
+Three consequences follow directly, and each maps to a capability Vermont's transformation agenda already assumes it will have.
+
+**Hybrid quality measures become possible.** The standardized metrics that combine a claims-identified eligible population with a clinical result — CMS 167 for hypertension control, CMS 204 for diabetes and HbA1c control — require both data types in the same place. Absent integration, these measures can only be produced through manual chart abstraction: paying staff to read individual records by hand. Vermont's program materials put that avoidable burden at **over $14 million annually statewide**.
+
+**Risk prediction measurably improves.** Combining EHR and claims data identifies meaningfully more high-risk patients than claims data alone. That improvement is the entire basis for the earlier, targeted interventions on which Act 167's cost-reduction strategy depends.
+
+**SDOH integration closes the loop on root cause.** A patient repeatedly readmitted for diabetes complications may, on the clinical record alone, appear to need a different medication. Only the SDOH layer reveals whether the actual barrier is a lack of transportation to the pharmacy or a food-insecure household — the finding that redirects an expensive clinical intervention into a far cheaper social referral.
+
+### **The MDWAS-First Path and Why Multi-Payer Scaling Is Not Optional**
+
+Vermont's claims integration runs primarily through the **Medicaid Data Warehouse & Analytics Solution (MDWAS)**, live since November 2024, rather than through VHCURES. The reason is timeliness: MDWAS refreshes weekly and carries an integrated opt-out consent model compliant with Act 53, where VHCURES operates on a nine-to-twelve-month reporting lag, lacks an opt-out mechanism, and — because of ERISA preemption — excludes large segments of the commercially insured population. For retrospective research VHCURES remains serviceable. For intervening in a patient's care, a nine-month lag is not a data source; it is a historical record.
+
+Population coverage scales in three deliberate phases: Medicaid clinical and claims data went live in 2024; Medicare data scales across 2026–2028, meeting AHEAD Model reporting requirements and supporting hospital global-budget monitoring; and full multi-payer integration, incorporating commercial claims and standardized SDOH data, follows in 2029–2030.
+
+That final phase is not a nice-to-have. Medicaid represents roughly 24% of Vermont's primary coverage and Medicare 21% and rising, with commercial and private coverage accounting for roughly half the state. A data space that stops at Medicaid, however well it performs, is by construction blind to how three-quarters of Vermonters actually receive and pay for care. Every argument in this book about global budgets, regionalization, and total-cost-of-care modeling implicitly assumes multi-payer data, because none of those decisions can be made responsibly from one payer's quarter of the picture.
+
+### **The Privacy Shield**
+
+Concentrating this much health data in one place requires a correspondingly rigorous privacy architecture, and Vermont's applies protection tiers by data sensitivity rather than a single blanket policy. General health data flows under an opt-out model per Act 53, with patients retaining the right to object at any time. Substance use disorder data governed by 42 CFR Part 2 requires granular opt-in — technically segregated records, explicit authorization, security labeling, and role-based access limited to personnel with an established treatment relationship. Public health reporting applies cell-size suppression, withholding any output group smaller than ten to prevent re-identification. Payer and provider proprietary data is expressed in price-standardized utilization units rather than raw negotiated rates.
+
+It is worth naming the risk this design creates rather than arguing it away. Consolidating a state's health data into a single asset produces a concentration liability proportional to that asset's value — the same property that makes the UHDS useful makes it a target. The tiered architecture is the mitigation, not a refutation.
+
+Vermont has direct evidence on both sides of this ledger. During the COVID-19 pandemic, the Department of Health used the VITLAccess portal to conduct case investigations without repeatedly burdening frontline clinicians with records requests, and stood up faster data-delivery relationships for contact tracing and immunization tracking. And in October 2020, when a ransomware attack forced the University of Vermont Health Network's six hospitals offline for nearly a month — an incident that cost an estimated $50 to $65 million and which federal prosecutors described as leaving the medical center unable to provide critical services for over two weeks — the statewide exchange provided the continuity-of-access channel that let providers, EMS agencies, and referral hospitals reach patient records while UVMMC's own systems were dark. A statewide exchange is not merely a quality-reporting convenience. It is emergency infrastructure, and it has already been tested as such.
+
+### **The RHT Dependency**
+
+One implication deserves emphasis because it is routinely understated. Vermont's program materials tend to present the Rural Health Transformation Program as a funding stream parallel to the UHDS — a separate pot of federal money for a separate set of projects. The coupling is far tighter than that framing suggests. RHT pays for a portfolio of care-redesign shared services: a centralized transfer center and bed-availability tool, statewide e-consult expansion, a closed-loop referral system, remote patient monitoring, mobile integrated health, a vendor-neutral imaging archive, and a shared-EHR feasibility assessment. The UHDS is the substrate nearly every one of them runs on.
+
+Each of those projects is, in isolation, a vendor-supplied point solution. What converts it into measurable health system transformation is the data layer beneath it. A centralized transfer center only functions if bed and capacity data is tied to a correctly matched patient record across every facility in real time. Strip the UHDS out of the picture and Vermont's $195 million-per-year RHT investment becomes a collection of disconnected purchases that cannot be attributed to a patient's record, linked to cost data, or reported to CMS as evidence that the investment worked.
+
+This is the sequencing argument of Chapter 1 restated in infrastructure terms: the Technology pillar is not one workstream among six. It is the substrate the other five run on, and the RHT dependency is the clearest available demonstration of what happens when capital arrives ahead of the data capability meant to carry it.
+
 ### **The Statewide EHR Question — Vermont's Active Feasibility Assessment**
 
 Oliver Wyman's community meetings generated a clear finding about EHR fragmentation: providers cannot efficiently coordinate care across facilities when different hospitals run different EHR systems that do not share data effectively. Vermont's 14 hospitals currently use four different EHR vendors — Epic (dominant at UVMMC), Oracle Health (formerly Cerner), TruBridge (formerly CPSI, used by smaller community hospitals), and Meditech — plus various additional software for laboratory management, pharmacy, and other functions.
@@ -1620,7 +1678,7 @@ AHS has commissioned a feasibility assessment to evaluate the cost-benefit of im
 | Maryland's experience: common data infrastructure enabled the HSCRC to manage global budgets effectively | ERISA self-insured employers — outside state authority — would still not be in the system even with a statewide EHR |
 | RHT Program IT advance funds can support the capital investment — this is an explicitly authorized use of RHT funds | Vermont's diverse provider landscape (hospitals, FQHCs, private practices, mental health agencies) may not all be able to adopt a single platform |
 
-*Figure 4.4 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.*
+*Figure 4.5 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.*
 
 The feasibility assessment's most important analytical question is whether FHIR-based interoperability — the national standard for health data exchange that is rapidly maturing — can deliver the data sharing Vermont needs without the cost and disruption of a statewide EHR migration. If FHIR can deliver real-time, bi-directional data exchange across Vermont's four EHR platforms at an acceptable implementation cost, the case for a single statewide EHR weakens significantly. Section 4 develops the FHIR picture. AHS's feasibility assessment should produce a clear answer on this question by 2026-2027 — in time to inform the 2028 Strategic Plan.
 
@@ -1670,7 +1728,7 @@ Vermont's RHT Program IT advance investments address this gap directly. The prog
 | Limited / no FHIR | Smaller community hospitals on TruBridge legacy; most Designated Mental Health Agencies; many skilled nursing facilities; independent primary care practices on older EHR versions |
 | FHIR investment planned (RHT Program) | Rural and independent practices; smaller CAHs; targeted technical assistance through Vermont CIN shared services |
 
-*Figure 4.5 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Presentation January 2025; Vermont RHT Program Application; GMCB HIE connectivity criteria.*
+*Figure 4.6 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Presentation January 2025; Vermont RHT Program Application; GMCB HIE connectivity criteria.*
 
 ## **AI and Digital Health Technologies — Vermont's Targeted Investment Strategy**
 
@@ -1792,7 +1850,7 @@ Vermont's Statewide Health Care Delivery Strategic Plan must specify a technolog
 |                              |   decisions, ACO budget data                                 |
 +------------------------------+--------------------------------------------------------------+
 
-*Figure 4.6 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.*
+*Figure 4.7 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.*
 
 Two observations about this architecture are important for Vermont's technology planning. First, layers 3 and above represent target states, not current states. Vermont's current technology infrastructure is solid at Layers 1 and 2, developing at Layer 4, and nascent at Layers 3 and 5. The RHT Program, AHEAD requirements, and the AHS-GMCB analytics vendor procurement are all investments in accelerating the build-out from Layer 1-2 completeness toward Layer 3-5 capability. The Statewide Strategic Plan's technology section should be explicit about which layers are complete, which are under development, and what the completion timeline is.
 
@@ -5789,11 +5847,13 @@ Figure 4.2 — VHCURES structural limitations and required improvements. Sources
 
 Figure 4.3 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering Committee statutory mandate; AHS January 2025 Legislative Presentation; DVHA HIE governance documents.
 
-Figure 4.4 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.
+Figure 4.4 — The UHDS three-layer architecture. Each layer is dependent on the one below it. Sources: Vermont UHDS Transition Plan; DVHA HIE program documentation.
 
-Figure 4.5 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Presentation January 2025; Vermont RHT Program Application; GMCB HIE connectivity criteria.
+Figure 4.5 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.
 
-Figure 4.6 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.
+Figure 4.6 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Presentation January 2025; Vermont RHT Program Application; GMCB HIE connectivity criteria.
+
+Figure 4.7 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.
 
 Figure 4.H — Hands-on platform tools for the Technology Pillar.
 
