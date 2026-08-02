@@ -30,8 +30,13 @@ LANCZOS, save at 300 DPI, so type stays crisp in print.
 from PIL import Image, ImageDraw, ImageFont
 import math, os, textwrap
 
-SCALE = 3
-W, H = 1500 * SCALE, 830 * SCALE
+# Canvas geometry is driven by how the cover actually lands on the page.
+# Usable text width is 6.3in (8.5in page, 1.1in margins). A wide 1.81:1 canvas
+# rendered only ~3.1in tall — a short strip with unreadably small type. A near
+# square fills the lower half of the page properly: at 6.3in wide it stands
+# ~5.7in tall. Drawn at 4x and downsampled, that is ~950 effective DPI.
+SCALE = 6
+W, H = 1900 * SCALE, 1500 * SCALE
 NAVY = (27, 58, 107)
 INK = (34, 34, 34)
 GREY = (95, 105, 120)
@@ -87,8 +92,8 @@ PILLARS = [
 ]
 
 CX, CY = W // 2, int(H * 0.50)
-RING_R = int(min(W, H) * 0.255)
-NODE_R = int(min(W, H) * 0.088)
+RING_R = int(min(W, H) * 0.200)
+NODE_R = int(min(W, H) * 0.075)
 
 # faint guide ring the pillars sit on
 d.ellipse([CX - RING_R, CY - RING_R, CX + RING_R, CY + RING_R],
@@ -125,10 +130,10 @@ for i in range(len(PILLARS)):
           RING, 3 * SCALE)
 
 # ── nodes ────────────────────────────────────────────────────────────────────
-f_node = font(15, bold=True)
-f_name = font(12, bold=True)
-f_q = font(11, bold=True)
-f_body = font(11)
+f_node = font(17, bold=True)
+f_name = font(14, bold=True)
+f_q = font(13, bold=True)
+f_body = font(12)
 
 for name, q, role in PILLARS:
     x, y = pos[name]
@@ -138,55 +143,48 @@ for name, q, role in PILLARS:
     d.text((x - (tb[2] - tb[0]) / 2, y - (tb[3] - tb[1]) / 2 - tb[1]),
            name, font=f_node, fill=NAVY)
 
-# ── callout text blocks, outside the ring ────────────────────────────────────
-# Anchoring each block at its node's y crowds the two lower pillars on each
-# side, whose nodes sit close together. Instead, split the pillars into a left
-# and a right column and distribute each column's blocks evenly down the page,
-# then run a connector across to the node it belongs to.
-COL_W = int(W * 0.235)
-WRAP = 42
-LINE_H = int(15 * SCALE)
+# ── callout text blocks, placed radially around the ring ─────────────────────
+# On a near-square canvas each block sits just outside its own node, on the same
+# radius — so the pairing is positional and needs no connector line. Blocks at
+# the top and bottom centre themselves over/under their node; blocks on the
+# sides hang off the left or right edge.
+WRAP = 30
+LINE_H = int(17 * SCALE)
+BLOCK_W = int(W * 0.225)
 
-# Split 3/3 by name rather than by x. Policy sits at the top of the ring and
-# Clinical at the bottom, so both are near the centre line; a purely
-# geometric split puts four blocks in one column and two in the other.
-LEFT_NAMES = {"POLICY", "OPERATIONS", "EQUITY"}
-left_col = [p for p in PILLARS if p[0] in LEFT_NAMES]
-right_col = [p for p in PILLARS if p[0] not in LEFT_NAMES]
-# order each column top-to-bottom by node position
-left_col.sort(key=lambda p: pos[p[0]][1])
-right_col.sort(key=lambda p: pos[p[0]][1])
+for name, q, role in PILLARS:
+    nx, ny = pos[name]
+    lines = textwrap.wrap(role, width=WRAP)
+    h = int(19 * SCALE) + int(21 * SCALE) + len(lines) * LINE_H
 
-for col, items in (('L', left_col), ('R', right_col)):
-    # measure so the column can be centred vertically as a group
-    heights = [int(17 * SCALE) + int(19 * SCALE)
-               + len(textwrap.wrap(r, width=WRAP)) * LINE_H
-               for _, _, r in items]
-    gap = int(30 * SCALE)
-    total = sum(heights) + gap * (len(items) - 1)
-    ty = int(CY - total / 2)
+    # Anchor side blocks to the OUTERMOST extent of the whole figure, not to the
+    # node centre — the ring reaches further out than any single node, so
+    # measuring from the node let text overlap the circles on the right.
+    outer = RING_R + NODE_R
+    near_centre_x = abs(nx - CX) < NODE_R          # true only for top & bottom
+    if near_centre_x and ny < CY:                  # top of ring (Policy)
+        tx = int(nx - BLOCK_W / 2)
+        ty = int(ny - NODE_R - h - 26 * SCALE)
+    elif near_centre_x:                            # bottom of ring (Clinical)
+        tx = int(nx - BLOCK_W / 2)
+        ty = int(ny + NODE_R + 26 * SCALE)
+    elif nx < CX:                                  # left side
+        tx = int(CX - outer - BLOCK_W - 26 * SCALE)
+        ty = int(ny - h / 2)
+    else:                                          # right side
+        tx = int(CX + outer + 26 * SCALE)
+        ty = int(ny - h / 2)
 
-    for (name, q, role), h in zip(items, heights):
-        tx = int(W * 0.035) if col == 'L' else int(W * 0.965 - COL_W)
-        block_mid = ty + h / 2
+    tx = max(int(W * 0.022), min(tx, int(W * 0.978 - BLOCK_W)))
+    ty = max(int(H * 0.020), min(ty, int(H * 0.980 - h)))
 
-        # pillar name first — this is what pairs the block to its node
-        d.text((tx, ty), name, font=f_name, fill=NAVY)
-        yy = ty + int(17 * SCALE)
-        d.text((tx, yy), q, font=f_q, fill=GREY)
-        yy += int(19 * SCALE)
-        for line in textwrap.wrap(role, width=WRAP):
-            d.text((tx, yy), line, font=f_body, fill=INK)
-            yy += LINE_H
-
-        # No connector line. Earlier versions drew one from each block to its
-        # node; with the blocks distributed evenly and the nodes on a ring, the
-        # lines to the top and bottom pillars became long diagonals that crossed
-        # the figure and added noise. The pillar name appears in bold at the head
-        # of each block, so the pairing is already unambiguous.
-        _ = block_mid
-
-        ty += h + gap
+    d.text((tx, ty), name, font=f_name, fill=NAVY)
+    yy = ty + int(19 * SCALE)
+    d.text((tx, yy), q, font=f_q, fill=GREY)
+    yy += int(21 * SCALE)
+    for line in lines:
+        d.text((tx, yy), line, font=f_body, fill=INK)
+        yy += LINE_H
 
 # ── centre label ─────────────────────────────────────────────────────────────
 f_c1 = font(13, bold=True)
@@ -198,7 +196,21 @@ c2 = "each pillar gates the next"
 tb = d.textbbox((0, 0), c2, font=f_c2)
 d.text((CX - (tb[2] - tb[0]) / 2, CY + 8 * SCALE), c2, font=f_c2, fill=GREY)
 
-out = img.resize((W // SCALE, H // SCALE), Image.LANCZOS)
+# Trim to the drawn content, then re-pad evenly. Placement is computed from the
+# ring, so the used area is rarely centred in the canvas and leaves uneven dead
+# margins — which on the page reads as the figure being small and off-centre.
+bbox = Image.new('RGB', img.size, 'white')
+from PIL import ImageChops
+diff = ImageChops.difference(img, bbox)
+box = diff.getbbox()
+if box:
+    pad = 26 * SCALE
+    box = (max(0, box[0] - pad), max(0, box[1] - pad),
+           min(W, box[2] + pad), min(H, box[3] + pad))
+    img = img.crop(box)
+
+cw, ch = img.size
+out = img.resize((int(cw / 3.6), int(ch / 3.6)), Image.LANCZOS)
 os.makedirs('book-build', exist_ok=True)
 out.save('book-build/cover.png', dpi=(300, 300))
 print("wrote book-build/cover.png", out.size, "@300dpi")
