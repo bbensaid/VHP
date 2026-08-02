@@ -102,6 +102,26 @@ def main():
         print(" the file at the repo root.)")
         return
 
+    # ---- 1a. harvest hand-set table column widths FIRST ---------------------
+    # Widths live ONLY in the .docx; the .md carries none, so the next build
+    # recomputes every column from cell content and wipes any resizing the
+    # author did in Google Docs. `./book.sh` (bare) already harvests them, but
+    # this script is also run directly — and on 2026-08-02 that path skipped
+    # the harvest and came within one rebuild of destroying the author's work.
+    # Do it here too so no entry point can miss it. Idempotent.
+    try:
+        subprocess.run(
+            [sys.executable,
+             os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                          'save_table_widths.py'),
+             DOCX],
+            check=True, capture_output=True, text=True,
+        )
+        print("✓ Table widths captured from your download (they survive rebuilds).\n")
+    except Exception as e:                      # never block the sync on this
+        print(f"⚠ Could not capture table widths: {e}\n"
+              f"  Run manually:  python3 book-build/save_table_widths.py {DOCX}\n")
+
     # ---- 2. snapshot the download before anything touches it ----------------
     os.makedirs(ARCH, exist_ok=True)
     stamp = datetime.datetime.now().strftime('%Y%m%d-%H%M%S')
