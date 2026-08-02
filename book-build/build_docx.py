@@ -1319,14 +1319,26 @@ def tighten_table_pagination():
             for old in trPr.findall(qn('w:cantSplit')):
                 trPr.remove(old)
 
-        # 2. the header row repeats on every page the table continues onto
-        trPr = rows[0]._tr.get_or_add_trPr()
-        if trPr.find(qn('w:tblHeader')) is None:
-            el = OxmlElement('w:tblHeader'); el.set(qn('w:val'), 'true')
-            trPr.append(el)
-        # a repeating header must not itself be split mid-row
-        if trPr.find(qn('w:cantSplit')) is None:
-            trPr.append(OxmlElement('w:cantSplit'))
+        # 2. the header row repeats on every page the table continues onto.
+        #
+        # SKIP single-row tables. Callout boxes, banners and stat strips are all
+        # rendered as a ONE-ROW table — the shaded box IS row 0. Marking that row
+        # as a repeating header and setting cantSplit on it (as a real header
+        # needs) locks the entire box, so a tall callout cannot break across a
+        # page and Word shoves the whole thing forward, stranding a mostly blank
+        # page behind it. That is exactly the failure the rule above forbids.
+        # A one-row table has no continuation rows to repeat a header for, so
+        # there is nothing to gain here and a blank page to lose. Step 3 below
+        # still applies to them — a heading must not stay glued to a callout
+        # either.
+        if len(rows) > 1:
+            trPr = rows[0]._tr.get_or_add_trPr()
+            if trPr.find(qn('w:tblHeader')) is None:
+                el = OxmlElement('w:tblHeader'); el.set(qn('w:val'), 'true')
+                trPr.append(el)
+            # a repeating header must not itself be split mid-row
+            if trPr.find(qn('w:cantSplit')) is None:
+                trPr.append(OxmlElement('w:cantSplit'))
 
         # 3. let the text above the table stay where it is.
         #
