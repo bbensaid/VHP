@@ -1571,9 +1571,13 @@ VHCURES has four structural limitations that matter directly for Vermont's trans
 
 *Figure 4.3 — VHCURES structural limitations and required improvements. Sources: GMCB VHCURES data documentation; Oliver Wyman Act 167 Report; AHS Transformation Reports; Act 68 of 2025.*
 
-**The Health Information Exchange — Perception vs. Reality**
+## **The Vermont HIE — VITL, the Governance Shift, and the Integration Imperative**
 
-The limitations above are VHCURES's own. Vermont's other principal data asset — the Health Information Exchange — has a separate and, in Oliver Wyman's assessment, more consequential gap between what the state appears to have and what it can actually use. The finding is worth quoting because it is the more damaging of the two:
+Vermont's Health Information Exchange (VHIE) is operated by Vermont Information Technology Leaders (VITL), an independent nonprofit designated by statute as the exclusive operator of the statewide HIE network. Every hospital in Vermont contributes records to the VHIE. The VHIE operates a provider portal (VITLAccess) and a query service that allows providers to access patient records from other facilities. Vermont has been building this infrastructure since 2009, when VITL was designated as the Regional Extension Center to help primary care providers adopt electronic health records.
+
+### **Perception vs. Reality — What the Exchange Actually Delivers**
+
+The VHCURES limitations catalogued above are that database's own. The exchange has a separate set, and in Oliver Wyman's assessment a more consequential one: the gap between what Vermont appears to have in a statewide HIE and what the exchange can actually be used for. The finding is worth quoting because it is the more damaging of the two:
 
 - Perception: Vermont has a statewide Health Information Exchange, operated under exclusive statutory designation by VITL.
 - Reality: Participation is voluntary and many community-based providers are not included. The exchange lacks pharmacy claims data and is not viewed as 'user friendly' by providers.
@@ -1587,9 +1591,6 @@ Vermont's technology investments — the VHCURES-VHIE integration mandate, the R
 
 The gap Vermont is closing — between a data asset existing on paper and being functionally usable for population health management — is the single most common technology-pillar failure nationally. Many states have an all-payer claims database, a health information exchange, or both, that are technically operational but functionally underused because of data lag, incomplete participation, or lack of analytics capacity layered on top. The diagnostic question for any organization is not “do these systems exist?” but “can a hospital or payer act on this data inside the decision window that matters?” — and Vermont's VITL integration timeline is a useful benchmark for how long that gap typically takes to close even with statutory mandates and dedicated funding behind it.
 :::
-## **The Vermont HIE — VITL, the Governance Shift, and the Integration Imperative**
-
-Vermont's Health Information Exchange (VHIE) is operated by Vermont Information Technology Leaders (VITL), an independent nonprofit designated by statute as the exclusive operator of the statewide HIE network. Every hospital in Vermont contributes records to the VHIE. The VHIE operates a provider portal (VITLAccess) and a query service that allows providers to access patient records from other facilities. Vermont has been building this infrastructure since 2009, when VITL was designated as the Regional Extension Center to help primary care providers adopt electronic health records.
 
 ### **The 2025 Governance Shift: Act 62 Transfers HIE Authority to DVHA**
 
