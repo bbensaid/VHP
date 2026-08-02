@@ -1504,8 +1504,8 @@ Sources: CMS CMMI model documentation; CMS 1115 waiver framework; KFF Medicaid p
 
 Three data assets recur in every state's transformation infrastructure, whatever they happen to be called locally: a claims database that lets regulators and payers see total cost of care across the system, a health information exchange that lets clinicians see a patient's record across organizations, and an analytics capability that turns both into something a hospital or payer can act on. Without these three, global budgets cannot be monitored, care coordination cannot be measured, and equity gaps cannot be tracked — which is why Technology precedes Economics, Clinical, and Equity in the six-pillar sequence. Vermont's VHCURES, VITL, and AHS-GMCB analytics platform are this chapter's worked example of what building (and struggling to fully integrate) these three assets looks like in practice.
 
-::: {custom-style="Epigraph"}
-You cannot manage what you cannot measure. Vermont's VHCURES, VITL, and the AHS-GMCB data integration and analytics capability are the data substrate on which every other pillar's management functions depend.
+::: {custom-style="Banner"}
+You cannot manage what you cannot measure.
 :::
 
 ## **The Technology Pillar: Why Data Infrastructure Is the Foundation of Everything Else**
@@ -1544,11 +1544,17 @@ The Vermont Health Care Uniform Reporting and Evaluation System (VHCURES) is Ver
 
 VHCURES is a substantial data asset that gives Vermont analytical capabilities most states lack. Understanding both its capabilities and its limitations is essential for anyone designing Vermont's technology infrastructure.
 
-| Commercial population covered 60% Of commercially insured Vermonters — partial due to ERISA self-insured employer exemption | Government payer coverage 100% Of Medicaid and Medicare enrollees in Vermont |
-| :---- | :---- |
-| Data types Claims + Rx Medical and pharmacy claims, plus eligibility and demographic data | Years available per extract Up to 5 Eligibility and paid claims; data lag typically 12-18+ months |
+::: {custom-style="StatStrip"}
+**60%** — Commercial Population Covered
 
-*Figure 4.1 — VHCURES data coverage summary. Source: GMCB VHCURES documentation.*
+**100%** — Medicaid & Medicare Enrollees
+
+**Claims + Rx** — Data Types Held
+
+**12–18+ Mo** — Typical Data Lag
+:::
+
+*Figure 4.2 — VHCURES data coverage summary. Commercial coverage is partial because ERISA exempts self-insured employers; extracts hold up to five years of eligibility and paid claims. Source: GMCB VHCURES documentation.*
 
 VHCURES enables Vermont to conduct analyses that directly support the transformation agenda: population-level total cost of care measurement (the GMCB publishes all-payer TCOC dashboards derived from VHCURES); potentially avoidable utilization analysis (the 32.3% avoidable ED visit rate in AHS's transformation reports is calculated from VHCURES via VUHDDS); hospital price transparency analysis (the GMCB's 2026 RBP report used VHCURES-derived 2024 claims data to show hospital prices ranging from 279% to 697% of Medicare for outpatient services); and prescription drug affordability analysis (GMCB's 2025 report on drug pricing used VHCURES to model the impact of IRA drug negotiations on Vermont spending). This is a powerful analytical platform that has produced some of the most credible and consequential health policy analysis in recent Vermont history.
 
@@ -1561,16 +1567,16 @@ VHCURES has four structural limitations that matter directly for Vermont's trans
 | Incomplete commercial coverage (60%) | The 40% of commercially insured Vermonters in ERISA self-insured employer plans — many of them higher-income, higher-resource patients — are not in VHCURES unless their employer voluntarily submits. Total cost of care calculations and population health analyses are systematically missing a significant portion of the commercially insured population. Under federal law, self-insured employers cannot be required to submit data to state APCDs. | Voluntary submission incentives; federal ERISA reform advocacy; use of commercial insurer aggregate data for the covered portion; flag analyses as partial in all public reporting |
 | Data lag of 12-18+ months | The most recent VHCURES data typically reflects conditions 12-18 months prior to analysis. The November 2025 AHS transformation report explicitly acknowledged that most available measures reflect 2023 or earlier data. Under global budgets, where hospitals need to understand their population health performance in near-real-time to manage within their budget cap, this lag makes VHCURES insufficient as a management tool. | AHEAD Model requires more timely data reporting; RHT Program analytics investments; GMCB FY27 hospital budget guidance requires hospitals to report more frequently; push for 60-90 day claims lag instead of 12-18 months |
 | No behavioral health or SDOH data integration | VHCURES contains medical and pharmacy claims but not mental health and SUD clinical records (governed by 42 CFR Part 2 and state confidentiality laws), social service utilization data, housing status, or other SDOH indicators. The HIE Steering Committee has a statutory directive to create one health record per person integrating claims, clinical, and SDOH data — but this integration has not been implemented. | VHCURES-VHIE integration per HIE Steering Committee statutory mandate; Act 167 HIE provisions; SDOH data collection through Blueprint HRSN screening linked to VHCURES identifiers with appropriate consent framework |
-| Voluntary provider participation in HIE | VITL's VHIE receives clinical data from hospitals but participation by community-based providers, mental health agencies, skilled nursing facilities, and other post-acute providers is voluntary and incomplete. Oliver Wyman specifically cited VITL as lacking pharmacy claims data and not being viewed as user-friendly. Act 68 requires hospitals to maintain HIE connectivity but does not mandate all provider types. | Act 68 hospital HIE connectivity requirement is a start; AHEAD requires primary care participation; RHT Program telehealth investment includes interoperability requirements; progressive connectivity incentives for non-hospital providers |
+| No clinical results, only billing records | VHCURES records that a service was delivered and paid for, but not what it found. A claim shows an HbA1c test was performed; it does not carry the result. This is why claims-only quality measurement systematically underestimates performance, and why the hybrid measures Act 68 depends on cannot be produced from VHCURES alone. | Clinical-claims linkage through the UHDS; MDWAS weekly refresh as the primary path; VHCURES retained for retrospective analysis rather than management |
 
-*Figure 4.2 — VHCURES structural limitations and required improvements. Sources: GMCB VHCURES data documentation; Oliver Wyman Act 167 Report; AHS Transformation Reports; Act 68 of 2025.*
+*Figure 4.3 — VHCURES structural limitations and required improvements. Sources: GMCB VHCURES data documentation; Oliver Wyman Act 167 Report; AHS Transformation Reports; Act 68 of 2025.*
 
-**VHCURES Perception vs. Reality — Oliver Wyman's Finding**
+**The Health Information Exchange — Perception vs. Reality**
 
-Oliver Wyman's perception-versus-reality analysis identified Vermont's data infrastructure as one of the areas where the gap between apparent capability and actual capability is most consequential. The relevant finding:
+The limitations above are VHCURES's own. Vermont's other principal data asset — the Health Information Exchange — has a separate and, in Oliver Wyman's assessment, more consequential gap between what the state appears to have and what it can actually use. The finding is worth quoting because it is the more damaging of the two:
 
-- Perception: Vermont has a State Health Information Exchange (VITL).
-- Reality: Participation in VITL is voluntary and many community-based providers are not included. VITL lacks pharmacy claims data and is not viewed as 'user friendly' by providers.
+- Perception: Vermont has a statewide Health Information Exchange, operated under exclusive statutory designation by VITL.
+- Reality: Participation is voluntary and many community-based providers are not included. The exchange lacks pharmacy claims data and is not viewed as 'user friendly' by providers.
 
 This matters because Vermont's transformation strategy depends on care coordination between hospitals and community providers — and care coordination requires data sharing. A care coordinator trying to manage a patient transitioning from a hospital inpatient stay to a community mental health program cannot access the clinical data they need if the mental health agency is not connected to VITL. A primary care practice trying to close chronic disease management gaps cannot see the specialty care their patient received at a different facility if that facility's data is not in the HIE.
 
@@ -1591,6 +1597,34 @@ Effective July 1, 2025, Act 62 of 2025 made a significant governance change: res
 
 The governance rationale for this shift is significant: DVHA has direct operational relationships with healthcare providers through its Medicaid contracts, Blueprint for Health administration, and AHEAD Model management. Moving HIT plan responsibility to DVHA aligns the technology strategy with the healthcare delivery transformation authority. It also means that Vermont's AHEAD implementation — which requires robust data exchange for population health management and global budget monitoring — is now coordinated by the same agency managing the data infrastructure.
 
+### **The Exclusive-Operator Problem — Why the Statutory Monopoly Has to End**
+
+There is a structural problem underneath every limitation described so far, and Vermont has been reluctant to name it. Act 61 of 2009 designated VITL as the **exclusive** operator of the statewide Health Information Exchange Network. Not the selected operator, subject to periodic recompetition. Not the incumbent, subject to challenge. The exclusive one, by statute, indefinitely.
+
+That designation was defensible in 2009. Vermont was standing up an exchange from nothing, federal HITECH money was flowing, and a single designated nonprofit was a reasonable way to get an exchange built. Seventeen years later the same provision is the single largest structural impediment to the Technology pillar, and it should be repealed.
+
+The argument is not about VITL's people or its intentions. It is about what a statutory monopoly does to any organization, however well-run. A vendor that cannot be replaced does not have to compete. It does not have to win renewal on performance, price, or usability, because there is no alternative bidder and no credible threat of one. Every incentive that normally drives a technology vendor to improve — the risk of losing the contract, the pressure of a competitor's better product, the discipline of a real procurement — has been legislated away. What remains is an annual contract administered by DVHA with a counterparty the state is not free to change.
+
+The results are exactly what that structure predicts, and Vermont has already documented them. Oliver Wyman's own assessment found the exchange lacking pharmacy claims data and "not viewed as 'user friendly' by providers" — an extraordinary finding about infrastructure the state has funded for the better part of two decades. Provider participation outside hospitals remains voluntary and incomplete. The FHIR API work that the entire integration mandate depends on has been slow to arrive. None of these is a mystery. They are the ordinary consequence of removing competitive pressure from a service and then expressing surprise when the service does not improve.
+
+Oliver Wyman's recommended remedy — more funding for VITL — gets the diagnosis backward. Additional funding into a monopoly does not purchase better performance; it purchases the same performance at higher cost, and it deepens the dependency that created the problem. Vermont has now spent well over $100 million cumulatively on HIT and HIE infrastructure since 2009. The question is not whether the state has invested enough. It is whether the structure it invested through was ever capable of converting that money into capability.
+
+There is a second cost that is easy to miss because it never appears as a line item. A statutory monopoly does not merely underperform; it forecloses alternatives. Every year the exclusive designation stands is a year in which no other organization can propose a better statewide exchange, no vendor can compete on usability or price, and no procurement can test whether Vermont is getting value. The innovation that does not happen leaves no invoice.
+
+The practical path forward does not require dismantling anything abruptly, and it should not. Clinical data must keep flowing while the transition is made. But three things follow directly:
+
+**Repeal or amend the exclusive designation.** The statutory language making any single organization the permanent operator of state health data infrastructure should be struck. Replace it with periodic competitive procurement on defined performance standards — the arrangement Vermont applies to essentially every other vendor relationship of comparable size.
+
+**Build a second, state-controlled ingestion path.** Vermont should not depend on a single external intermediary for the core data pipeline of a federally matched program the state is accountable for. Establishing a direct provider-to-UHDS pathway in parallel with the existing feed is straightforward risk reduction, and it creates the alternative that makes competition possible.
+
+**Wind the intermediary role down deliberately.** As direct governance and technical interfaces mature, the requirement that clinical data pass through a designated nonprofit should be phased out. Data should move from provider to the state's data infrastructure directly, under state-directed governance.
+
+This belongs in AHS's Statewide Health Care Delivery Strategic Plan, due to the legislature in December 2028. AHS contains DVHA, which administers the VITL contract annually; the agency that manages the relationship is the agency best positioned to tell the legislature the relationship's structure is wrong. A restructuring roadmap that reorganizes agency boxes while leaving the exclusive-operator statute untouched will have left the binding constraint in place.
+
+::: {custom-style="Banner"}
+A vendor that cannot be replaced does not have to compete.
+:::
+
 ### **The Integration Mandate: One Health Record Per Person**
 
 The Vermont legislature gave the HIE Steering Committee an explicit statutory mandate that defines the technology pillar's central ambition for the next five years: create one health record for each person that integrates claims data, clinical data, mental health and substance use disorder services data, and social determinants of health data. This mandate is documented in state law and in AHS's own letters to the legislature. It is the most ambitious data integration goal any state has formally committed to, and its achievement would give Vermont a population health management capability that no other state currently possesses.
@@ -1603,7 +1637,7 @@ The practical path to this integration has three components that must be execute
 | 2. Mental health and SUD data integration | Add mental health and substance use disorder data to the integrated record, with appropriate consent frameworks that comply with 42 CFR Part 2 (federal SUD confidentiality rules) and Vermont's own privacy statutes. This is technically complex — SUD data has a separate consent regime from medical data — but clinically essential. | 2027-2028; requires federal 42 CFR Part 2 compliance pathway | DVHA working with VITL on consent policy; 2025 federal regulatory changes to 42 CFR Part 2 may simplify compliance pathway; behavioral health CCBHC expansion creates urgency |
 | 3. SDOH data integration | Add social service utilization data — housing program participation, food assistance, transportation use, domestic violence services — linked to the health record with appropriate privacy protections. This is the most politically sensitive and technically complex integration because it involves non-healthcare agencies and data that carries significant stigma risk. | 2028 and beyond; requires cross-agency data governance agreement | Blueprint HRSN screening generates SDOH data but it is not yet linked to VHCURES or VHIE at scale; AHS HSA Coordinator model (Chapter 3) provides the cross-agency governance vehicle |
 
-*Figure 4.3 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering Committee statutory mandate; AHS January 2025 Legislative Presentation; DVHA HIE governance documents.*
+*Figure 4.4 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering Committee statutory mandate; AHS January 2025 Legislative Presentation; DVHA HIE governance documents.*
 
 ### **The Unified Health Data Space — The Vehicle for the Integration Mandate**
 
@@ -1623,13 +1657,15 @@ The UHDS is best understood as three layers, each depending on the one beneath i
 | 2 | Exchange Services | FHIR APIs; Clinical Data Repository | Moves and stores data as a single source of truth, prioritized around the weekly-refreshed MDWAS pipeline rather than the lagging VHCURES feed |
 | 1 | Foundational Services | Master Patient Index (Verato); Terminology Services (Term Atlas); Rhapsody integration engine | Establishes *who a patient is* and ensures every system speaks the same clinical vocabulary (SNOMED CT, LOINC). Without it, nothing above is trustworthy |
 
-*Figure 4.4 — The UHDS three-layer architecture. Each layer is dependent on the one below it. Sources: Vermont UHDS Transition Plan; DVHA HIE program documentation.*
+*Figure 4.5 — The UHDS three-layer architecture. Each layer is dependent on the one below it. Sources: Vermont UHDS Transition Plan; DVHA HIE program documentation.*
 
 ### **Why Integration Is the Load-Bearing Element**
 
 The argument for merging these data types is often made in the abstract. It is more persuasive stated as three specific blind spots, each of which the others close.
 
-Clinical data alone gives no visibility outside the patient's own network — a provider cannot see that the same test was run last week at a different hospital. Claims data alone shows that a visit happened and was paid for, but not the blood pressure reading or the lab result, which means it substantially underestimates quality, particularly for discontinuously insured patients. SDOH data alone is frequently trapped in unstructured text or a separate agency's records, invisible to the treating clinician at the point of care.
+Clinical data alone answers *what was done* but never *whether it was worth doing*. An exchange solves the narrow version of this problem — a provider can see that the same test was run last week at a different hospital, and avoid repeating it. But duplicate-test avoidance is the smallest possible version of the value question, and it is the only version an HIE can answer on its own. The larger question is the one value-based care exists to ask: of everything delivered to this population, which services improved outcomes and which consumed resources without changing anything? Distinguishing high-value from low-value care requires knowing what a service cost, what it was intended to accomplish, and what happened to the patient afterward — three facts that live in three different systems. A clinical record shows the intervention. It cannot price it, cannot compare it against the alternative that was not chosen, and cannot tell you that a fifth imaging study in eighteen months changed no decision. Under fee-for-service that blindness is merely expensive. Under a global budget it is fatal, because a hospital operating within a fixed revenue envelope must eliminate low-value volume specifically — and cannot eliminate what it cannot identify.
+
+Claims data alone shows that a visit happened and was paid for, but not the blood pressure reading or the lab result, which means it substantially underestimates quality, particularly for discontinuously insured patients. SDOH data alone is frequently trapped in unstructured text or a separate agency's records, invisible to the treating clinician at the point of care.
 
 Three consequences follow directly, and each maps to a capability Vermont's transformation agenda already assumes it will have.
 
@@ -1661,7 +1697,11 @@ One implication deserves emphasis because it is routinely understated. Vermont's
 
 Each of those projects is, in isolation, a vendor-supplied point solution. What converts it into measurable health system transformation is the data layer beneath it. A centralized transfer center only functions if bed capacity and provider availability is tied with a correctly matched patient record across every facility in real time. Strip the UHDS out of the picture and Vermont's $195 million-per-year RHT investment becomes a collection of disconnected purchases that cannot be attributed to a patient's record, linked to cost data, or reported to CMS as evidence that the investment worked.
 
-This is the sequencing argument of Chapter 1 restated in infrastructure terms: the Technology pillar is not one workstream among six. It is the substrate the other five run on, and the RHT dependency is the clearest available demonstration of what happens when capital arrives ahead of the data capability meant to carry it.
+This is the sequencing argument of Chapter 1 restated in infrastructure terms. The Technology pillar is not one workstream among six; it is the substrate the other five run on, and the RHT dependency is the clearest available demonstration of what happens when capital arrives ahead of the data capability meant to carry it.
+
+::: {custom-style="Banner"}
+Capital arriving ahead of the data capability meant to carry it does not buy transformation. It buys disconnected purchases.
+:::
 
 ### **The Statewide EHR Question — Vermont's Active Feasibility Assessment**
 
@@ -1678,7 +1718,7 @@ AHS has commissioned a feasibility assessment to evaluate the cost-benefit of im
 | Maryland's experience: common data infrastructure enabled the HSCRC to manage global budgets effectively | ERISA self-insured employers — outside state authority — would still not be in the system even with a statewide EHR |
 | RHT Program IT advance funds can support the capital investment — this is an explicitly authorized use of RHT funds | Vermont's diverse provider landscape (hospitals, FQHCs, private practices, mental health agencies) may not all be able to adopt a single platform |
 
-*Figure 4.5 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.*
+*Figure 4.6 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.*
 
 The feasibility assessment's most important analytical question is whether FHIR-based interoperability — the national standard for health data exchange that is rapidly maturing — can deliver the data sharing Vermont needs without the cost and disruption of a statewide EHR migration. If FHIR can deliver real-time, bi-directional data exchange across Vermont's four EHR platforms at an acceptable implementation cost, the case for a single statewide EHR weakens significantly. Section 4 develops the FHIR picture. AHS's feasibility assessment should produce a clear answer on this question by 2026-2027 — in time to inform the 2028 Strategic Plan.
 
@@ -1728,7 +1768,7 @@ Vermont's RHT Program IT advance investments address this gap directly. The prog
 | Limited / no FHIR | Smaller community hospitals on TruBridge legacy; most Designated Mental Health Agencies; many skilled nursing facilities; independent primary care practices on older EHR versions |
 | FHIR investment planned (RHT Program) | Rural and independent practices; smaller CAHs; targeted technical assistance through Vermont CIN shared services |
 
-*Figure 4.6 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Presentation January 2025; Vermont RHT Program Application; GMCB HIE connectivity criteria.*
+*Figure 4.7 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Presentation January 2025; Vermont RHT Program Application; GMCB HIE connectivity criteria.*
 
 ## **AI and Digital Health Technologies — Vermont's Targeted Investment Strategy**
 
@@ -1850,7 +1890,7 @@ Vermont's Statewide Health Care Delivery Strategic Plan must specify a technolog
 |                              |   decisions, ACO budget data                                 |
 +------------------------------+--------------------------------------------------------------+
 
-*Figure 4.7 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.*
+*Figure 4.8 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.*
 
 Two observations about this architecture are important for Vermont's technology planning. First, layers 3 and above represent target states, not current states. Vermont's current technology infrastructure is solid at Layers 1 and 2, developing at Layer 4, and nascent at Layers 3 and 5. The RHT Program, AHEAD requirements, and the AHS-GMCB analytics vendor procurement are all investments in accelerating the build-out from Layer 1-2 completeness toward Layer 3-5 capability. The Statewide Strategic Plan's technology section should be explicit about which layers are complete, which are under development, and what the completion timeline is.
 
@@ -5839,19 +5879,19 @@ Figure 3.H — Hands-on platform tools for the Policy Pillar in practice.
 
 Figure 4.1 — Vermont's three-layer health data infrastructure. Source: GMCB VHCURES documentation; Vermont HIE Strategic Plan.
 
-Figure 4.1 — VHCURES data coverage summary. Source: GMCB VHCURES documentation.
+Figure 4.2 — VHCURES data coverage summary. Commercial coverage is partial because ERISA exempts self-insured employers; extracts hold up to five years of eligibility and paid claims. Source: GMCB VHCURES documentation.
 
-Figure 4.2 — VHCURES structural limitations and required improvements. Sources: GMCB VHCURES data documentation; Oliver Wyman Act 167 Report; AHS Transformation Reports; Act 68 of 2025.
+Figure 4.3 — VHCURES structural limitations and required improvements. Sources: GMCB VHCURES data documentation; Oliver Wyman Act 167 Report; AHS Transformation Reports; Act 68 of 2025.
 
-Figure 4.3 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering Committee statutory mandate; AHS January 2025 Legislative Presentation; DVHA HIE governance documents.
+Figure 4.4 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering Committee statutory mandate; AHS January 2025 Legislative Presentation; DVHA HIE governance documents.
 
-Figure 4.4 — The UHDS three-layer architecture. Each layer is dependent on the one below it. Sources: Vermont UHDS Transition Plan; DVHA HIE program documentation.
+Figure 4.5 — The UHDS three-layer architecture. Each layer is dependent on the one below it. Sources: Vermont UHDS Transition Plan; DVHA HIE program documentation.
 
-Figure 4.5 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.
+Figure 4.6 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.
 
-Figure 4.6 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Presentation January 2025; Vermont RHT Program Application; GMCB HIE connectivity criteria.
+Figure 4.7 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Presentation January 2025; Vermont RHT Program Application; GMCB HIE connectivity criteria.
 
-Figure 4.7 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.
+Figure 4.8 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.
 
 Figure 4.H — Hands-on platform tools for the Technology Pillar.
 
