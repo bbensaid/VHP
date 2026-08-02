@@ -1062,13 +1062,18 @@ def add_cover():
 
     # spacer -> centered image -> page break
     sp = _new_para_after(anchor)
-    sp.paragraph_format.space_after = Pt(48)   # breathing room, image lower on page
+    sp.paragraph_format.space_after = Pt(30)   # breathing room, image lower on page
 
     last = sp
     if COVER and os.path.exists(COVER):
         img_p = _new_para_after(sp)
         img_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        img_p.add_run().add_picture(COVER, width=Inches(5.6))
+        # Fill the full usable text width. At the old fixed 5.6in the cover
+        # rendered small and soft on the page; the width is now derived from the
+        # section so it tracks the margins instead of being guessed.
+        sec = doc.sections[0]
+        usable = sec.page_width - sec.left_margin - sec.right_margin
+        img_p.add_run().add_picture(COVER, width=usable)
         last = img_p
 
     brk = _new_para_after(last)
