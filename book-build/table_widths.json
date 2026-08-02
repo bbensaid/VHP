@@ -58,10 +58,10 @@
   2190
  ],
  "Sequencing error|Early-warning signals|Vermont evidence|Correction": [
-  1950,
-  2070,
-  2970,
-  2070
+  1995,
+  2280,
+  2925,
+  1860
  ],
  "Pillar|Status (timeframe)|Where it stands": [
   1245,
@@ -90,9 +90,9 @@
   4903
  ],
  "Hospital|COE Count|Key Specialties": [
-  3767,
-  691,
-  4613
+  3195,
+  945,
+  4935
  ],
  "When|Milestone": [
   2002,
@@ -109,8 +109,8 @@
   2440
  ],
  "Model|Key features and relevance": [
-  4536,
-  4536
+  2325,
+  6735
  ],
  "Function|Key activities|Vermont-specific examples|HTR Advisory service": [
   1145,
@@ -119,41 +119,49 @@
   2642
  ],
  "H.R. 1 Medicaid provision|When it takes effect|Financial impact|Vermont-specific implications": [
-  2326,
-  2093,
-  2326,
-  2326
+  2190,
+  1485,
+  2430,
+  2970
  ],
  "Layer|Role in the data stack": [
-  4459,
-  4612
+  3450,
+  5610
  ],
- "Commercial population covered 60% Of commercially insured Vermonters \u2014 partial due to ERISA self-insured employer exempt": [
-  4536,
-  4536
+ "60%|Commercial Population Covered|100%|Medicaid &amp; Medicare Enrollees|Claims + Rx|Data Types Held|12\u201318+ Mo|Typical D": [
+  2268,
+  2268,
+  2268,
+  2268
  ],
  "Limitation|What it means for transformation|Required improvement": [
-  2474,
-  3298,
-  3298
+  1890,
+  4230,
+  2955
  ],
  "Step|What it requires|Timeline|Current status": [
-  1749,
-  2440,
-  2440,
-  2440
+  1665,
+  3165,
+  1815,
+  2445
+ ],
+ "Layer|Name|Components|What it establishes": [
+  690,
+  1455,
+  2700,
+  4215
  ],
  "Case for a statewide EHR|Case against (or caution)": [
-  4536,
-  4536
+  4455,
+  4605
  ],
  "FHIR compliance level|Vermont providers and current status": [
-  3460,
-  5611
+  2550,
+  6525
  ],
  "Layer|Components": [
-  4212,
-  4860
+  1590,
+  7485
  ],
  "FHIR use case|What it enables|Implementation requirements|Vermont priority": [
   2181,
