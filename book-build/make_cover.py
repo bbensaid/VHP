@@ -209,7 +209,13 @@ for verb, desc in (('ENABLES', 'makes possible'),
            font=f_legd, fill=GREY)
     lx += 17 * SCALE + wv + d.textbbox((0, 0), '— ' + desc, font=f_legd)[2] + 26 * SCALE
 
-out = img.resize((W // SCALE, H // SCALE), Image.LANCZOS)
+# Do NOT downsample by the full SCALE. Everything here is drawn as vectors and
+# live text at SCALE, so the 4x canvas IS the resolution — dividing it back out
+# threw all of that away and shipped a 154 DPI cover that printed fuzzy.
+# The cover is placed 6.30in wide, so keep enough pixels to clear 300 DPI with
+# margin: 6.30in x 400 DPI = 2520px.
+TARGET_W = 2520
+out = img.resize((TARGET_W, int(H * TARGET_W / W)), Image.LANCZOS)
 out = out.quantize(colors=256, method=Image.MEDIANCUT, dither=Image.NONE)
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cover.png')
 out.save(OUT, optimize=True, dpi=(300, 300))
