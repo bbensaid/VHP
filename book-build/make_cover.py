@@ -1,64 +1,91 @@
 #!/usr/bin/env python3
 """
-make_cover.py — generate the cover diagram: the six pillars in a ring, each with
-its diagnostic question and structural role.
+make_cover.py — the cover diagram, drawn from the book's own tables.
 
-WHY THIS EXISTS
----------------
-The previous book-build/cover.png was an AI-generated image (NotebookLM
-watermark, bottom right) that could not be corrected because it was raster art,
-not data. It carried real errors:
+WHY A MATRIX AND NOT A RING
+---------------------------
+The book states fifteen directed dependencies. A ring diagram has to route
+fifteen curved arrows between six nodes and label each one along its curve;
+that is what produced the unreadable, mirrored labels in the original art. A
+matrix shows the same fifteen relationships with every label set horizontally
+at full size, and it is the form the book itself uses (Figure 1.3: "read each
+row as a source pillar and each column as the pillar it acts on").
 
-  * Technology and Economics were given the SAME description ("Determines
-    whether organizations have a financial reason to behave differently") —
-    that is Economics' role; Technology is the data substrate.
-  * "Is it effective?" was labelled the cross-cutting accountability lens.
-    That is Equity's role ("Is it just?"), and Equity said it too.
-  * Garbled words rendered into the art: "Paymecial logic", "cliurrertity lens",
-    "Requiree statdory deadlines", "Constrains with jublos revisions",
-    "clinical measurement,, and clinical".
+Every value here is taken verbatim from HTR_Book_v42.md:
+  * the fifteen dependencies from the Figure 1.3 matrix
+  * each pillar's diagnostic question and structural role from the six-pillar
+    table
 
-Every label below is taken from the book's own six-pillar table (the
-"Diagnostic question" and "Structural role" columns, HTR_Book_v42.md), so the
-cover cannot drift from the text it illustrates.
-
-Rendering follows make_dependency_diagram.py: draw at 3x and downsample with
-LANCZOS, save at 300 DPI, so type stays crisp in print.
+so the cover cannot drift from the text it illustrates.
 
     python3 book-build/make_cover.py
 """
 from PIL import Image, ImageDraw, ImageFont
-import math, os, textwrap
+import os
 
-# Canvas geometry is driven by how the cover actually lands on the page.
-# Usable text width is 6.3in (8.5in page, 1.1in margins). A wide 1.81:1 canvas
-# rendered only ~3.1in tall — a short strip with unreadably small type. A near
-# square fills the lower half of the page properly: at 6.3in wide it stands
-# ~5.7in tall. Drawn at 4x and downsampled, that is ~950 effective DPI.
-SCALE = 6
-W, H = 1900 * SCALE, 1500 * SCALE
+SCALE = 4
 NAVY = (27, 58, 107)
-INK = (34, 34, 34)
-GREY = (95, 105, 120)
-RING = (196, 208, 224)
+INK = (26, 26, 26)
+GREY = (105, 112, 124)
+RULE = (208, 215, 226)
+BAND = (243, 246, 251)
 
-img = Image.new('RGB', (W, H), 'white')
-d = ImageDraw.Draw(img)
+# Relationship colours — one per verb, matching the book's four types.
+VERB = {
+    'ENABLES':    (176, 106, 12),
+    'REQUIRES':   (24, 104, 90),
+    'DRIVES':     (52, 70, 168),
+    'CONSTRAINS': (150, 40, 70),
+}
+
+PILLARS = ['POLICY', 'TECHNOLOGY', 'ECONOMICS', 'CLINICAL', 'EQUITY', 'OPERATIONS']
+
+# The diagnostic question for each pillar (six-pillar table).
+QUESTION = {
+    'POLICY':     'Is it permissible?',
+    'TECHNOLOGY': 'Is it possible?',
+    'ECONOMICS':  'Is it sustainable?',
+    'CLINICAL':   'Is it effective?',
+    'EQUITY':     'Is it just?',
+    'OPERATIONS': 'Is it executable?',
+}
+
+# The structural role, condensed from the same table row.
+ROLE = {
+    'POLICY':     'The mandatory architecture',
+    'TECHNOLOGY': 'The data substrate',
+    'ECONOMICS':  'The incentive architecture',
+    'CLINICAL':   'The mechanism of change',
+    'EQUITY':     'The cross-cutting lens',
+    'OPERATIONS': 'The execution layer',
+}
+
+# The fifteen directed dependencies, verbatim from the Figure 1.3 matrix.
+# (from, to) -> (VERB, what it carries)
+DEPS = {
+    ('POLICY', 'ECONOMICS'):      ('ENABLES', 'mandatory authority'),
+    ('POLICY', 'EQUITY'):         ('ENABLES', 'accountability mandates'),
+    ('POLICY', 'OPERATIONS'):     ('REQUIRES', 'statutory deadlines'),
+    ('TECHNOLOGY', 'ECONOMICS'):  ('ENABLES', 'VBC financial management'),
+    ('TECHNOLOGY', 'CLINICAL'):   ('ENABLES', 'risk stratification'),
+    ('TECHNOLOGY', 'EQUITY'):     ('ENABLES', 'demographic stratification'),
+    ('ECONOMICS', 'TECHNOLOGY'):  ('REQUIRES', 'data infrastructure'),
+    ('ECONOMICS', 'CLINICAL'):    ('DRIVES', 'financial rationality'),
+    ('ECONOMICS', 'EQUITY'):      ('REQUIRES', 'social risk adjustment'),
+    ('CLINICAL', 'EQUITY'):       ('ENABLES', 'access expansion'),
+    ('CLINICAL', 'OPERATIONS'):   ('REQUIRES', 'execution infrastructure'),
+    ('EQUITY', 'POLICY'):         ('CONSTRAINS', 'with justice reviews'),
+    ('EQUITY', 'CLINICAL'):       ('CONSTRAINS', 'with cultural competency'),
+    ('OPERATIONS', 'POLICY'):     ('ENABLES', 'data feedback loops'),
+    ('OPERATIONS', 'TECHNOLOGY'): ('REQUIRES', 'workforce to run infrastructure'),
+}
+assert len(DEPS) == 15, f"expected 15 dependencies, have {len(DEPS)}"
 
 
 def font(sz, bold=False):
-    """Match the book's type: Garamond-family serif, falling back gracefully."""
-    names = ([
-        '/System/Library/Fonts/Supplemental/GaramondPremrPro-Smbd.otf',
-        '/System/Library/Fonts/Supplemental/Georgia Bold.ttf',
-        '/Library/Fonts/Georgia Bold.ttf',
-        '/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf',
-    ] if bold else [
-        '/System/Library/Fonts/Supplemental/GaramondPremrPro.otf',
-        '/System/Library/Fonts/Supplemental/Georgia.ttf',
-        '/Library/Fonts/Georgia.ttf',
-        '/System/Library/Fonts/Supplemental/Times New Roman.ttf',
-    ])
+    names = (['/System/Library/Fonts/Supplemental/Arial Bold.ttf']
+             if bold else ['/System/Library/Fonts/Supplemental/Arial.ttf'])
+    names.append('/System/Library/Fonts/Helvetica.ttc')
     for n in names:
         if os.path.exists(n):
             try:
@@ -68,149 +95,122 @@ def font(sz, bold=False):
     return ImageFont.load_default()
 
 
-# ── the six pillars, verbatim from the book's six-pillar table ───────────────
-# (pillar, diagnostic question, structural role — condensed from the same row)
-PILLARS = [
-    ("POLICY", "Is it permissible?", "The mandatory architecture. Converts "
-     "aspirational reform into binding requirements. Without mandatory "
-     "authority, the highest-cost actors opt out."),
-    ("TECHNOLOGY", "Is it possible?", "The data substrate. Makes population "
-     "health management, VBC execution, equity measurement, and strategic "
-     "planning analytically feasible."),
-    ("ECONOMICS", "Is it sustainable?", "The incentive architecture. Payment "
-     "reform does not change clinical behavior directly — it changes the "
-     "financial logic that shapes clinical decisions over time."),
-    ("CLINICAL", "Is it effective?", "The mechanism of change. Payment reform "
-     "changes incentives; clinical redesign changes behavior and delivers the "
-     "utilization reduction that produces savings."),
-    ("EQUITY", "Is it just?", "The cross-cutting constraint and accountability "
-     "lens. Not a separate program — a dimension applied to every decision in "
-     "every other pillar."),
-    ("OPERATIONS", "Is it executable?", "The execution layer. Translates "
-     "statutory mandates, payment models, data platforms, and clinical "
-     "programs into organizational reality."),
-]
+f_title = font(19, bold=True)
+f_sub = font(11)
+f_hdr = font(11, bold=True)
+f_row = font(11, bold=True)
+f_q = font(9)
+f_verb = font(8, bold=True)
+f_cell = font(9)
+f_leg = font(9, bold=True)
+f_legd = font(9)
 
-CX, CY = W // 2, int(H * 0.50)
-RING_R = int(min(W, H) * 0.200)
-NODE_R = int(min(W, H) * 0.075)
+# ── geometry ────────────────────────────────────────────────────────────────
+PAD = 34 * SCALE
+ROWHDR_W = 132 * SCALE
+COL_W = 128 * SCALE
+HDR_H = 54 * SCALE
+ROW_H = 74 * SCALE
+TITLE_H = 74 * SCALE
+LEG_H = 56 * SCALE
 
-# faint guide ring the pillars sit on
-d.ellipse([CX - RING_R, CY - RING_R, CX + RING_R, CY + RING_R],
-          outline=RING, width=2 * SCALE)
+W = PAD * 2 + ROWHDR_W + COL_W * 6
+H = PAD * 2 + TITLE_H + HDR_H + ROW_H * 6 + LEG_H
 
-# positions, clockwise from top
-pos = {}
-for i, (name, _, _) in enumerate(PILLARS):
-    a = -math.pi / 2 + i * (2 * math.pi / 6)
-    pos[name] = (CX + RING_R * math.cos(a), CY + RING_R * math.sin(a))
+img = Image.new('RGB', (W, H), 'white')
+d = ImageDraw.Draw(img)
 
 
-def arrow(x1, y1, x2, y2, color, width, head=13):
-    d.line([x1, y1, x2, y2], fill=color, width=width)
-    ang = math.atan2(y2 - y1, x2 - x1)
-    h = head * SCALE
-    d.polygon([
-        (x2, y2),
-        (x2 - h * math.cos(ang - 0.42), y2 - h * math.sin(ang - 0.42)),
-        (x2 - h * math.cos(ang + 0.42), y2 - h * math.sin(ang + 0.42)),
-    ], fill=color)
+def centre(text, fnt, x0, x1, y, fill):
+    tb = d.textbbox((0, 0), text, font=fnt)
+    d.text((x0 + (x1 - x0 - (tb[2] - tb[0])) / 2, y), text, font=fnt, fill=fill)
 
 
-# sequence arrows around the ring: Policy -> Technology -> ... -> Operations
-for i in range(len(PILLARS)):
-    a_name = PILLARS[i][0]
-    b_name = PILLARS[(i + 1) % len(PILLARS)][0]
-    ax, ay = pos[a_name]
-    bx, by = pos[b_name]
-    ang = math.atan2(by - ay, bx - ax)
-    gap = NODE_R + 10 * SCALE
-    arrow(ax + gap * math.cos(ang), ay + gap * math.sin(ang),
-          bx - gap * math.cos(ang), by - gap * math.sin(ang),
-          RING, 3 * SCALE)
+def wrap_to(text, fnt, max_w):
+    words, lines, cur = text.split(), [], ''
+    for w in words:
+        t = (cur + ' ' + w).strip()
+        if d.textbbox((0, 0), t, font=fnt)[2] <= max_w:
+            cur = t
+        else:
+            if cur:
+                lines.append(cur)
+            cur = w
+    if cur:
+        lines.append(cur)
+    return lines
 
-# ── nodes ────────────────────────────────────────────────────────────────────
-f_node = font(17, bold=True)
-f_name = font(14, bold=True)
-f_q = font(13, bold=True)
-f_body = font(12)
 
-for name, q, role in PILLARS:
-    x, y = pos[name]
-    d.ellipse([x - NODE_R, y - NODE_R, x + NODE_R, y + NODE_R],
-              fill='white', outline=NAVY, width=3 * SCALE)
-    tb = d.textbbox((0, 0), name, font=f_node)
-    d.text((x - (tb[2] - tb[0]) / 2, y - (tb[3] - tb[1]) / 2 - tb[1]),
-           name, font=f_node, fill=NAVY)
+# ── title ───────────────────────────────────────────────────────────────────
+y = PAD
+d.text((PAD, y), 'THE SIX-PILLAR FRAMEWORK', font=f_title, fill=NAVY)
+y += 26 * SCALE
+d.text((PAD, y), 'Fifteen directed dependencies. Read each row as a source '
+                 'pillar and each column as the pillar it acts on.',
+       font=f_sub, fill=GREY)
 
-# ── callout text blocks, placed radially around the ring ─────────────────────
-# On a near-square canvas each block sits just outside its own node, on the same
-# radius — so the pairing is positional and needs no connector line. Blocks at
-# the top and bottom centre themselves over/under their node; blocks on the
-# sides hang off the left or right edge.
-WRAP = 30
-LINE_H = int(17 * SCALE)
-BLOCK_W = int(W * 0.225)
+grid_x = PAD + ROWHDR_W
+grid_y = PAD + TITLE_H
 
-for name, q, role in PILLARS:
-    nx, ny = pos[name]
-    lines = textwrap.wrap(role, width=WRAP)
-    h = int(19 * SCALE) + int(21 * SCALE) + len(lines) * LINE_H
+# ── column headers ──────────────────────────────────────────────────────────
+for i, p in enumerate(PILLARS):
+    x0 = grid_x + i * COL_W
+    d.rectangle([x0, grid_y, x0 + COL_W, grid_y + HDR_H], fill=BAND)
+    centre(p, f_hdr, x0, x0 + COL_W, grid_y + 13 * SCALE, NAVY)
+    centre(QUESTION[p], f_q, x0, x0 + COL_W, grid_y + 30 * SCALE, GREY)
 
-    # Anchor side blocks to the OUTERMOST extent of the whole figure, not to the
-    # node centre — the ring reaches further out than any single node, so
-    # measuring from the node let text overlap the circles on the right.
-    outer = RING_R + NODE_R
-    near_centre_x = abs(nx - CX) < NODE_R          # true only for top & bottom
-    if near_centre_x and ny < CY:                  # top of ring (Policy)
-        tx = int(nx - BLOCK_W / 2)
-        ty = int(ny - NODE_R - h - 26 * SCALE)
-    elif near_centre_x:                            # bottom of ring (Clinical)
-        tx = int(nx - BLOCK_W / 2)
-        ty = int(ny + NODE_R + 26 * SCALE)
-    elif nx < CX:                                  # left side
-        tx = int(CX - outer - BLOCK_W - 26 * SCALE)
-        ty = int(ny - h / 2)
-    else:                                          # right side
-        tx = int(CX + outer + 26 * SCALE)
-        ty = int(ny - h / 2)
+# ── rows ────────────────────────────────────────────────────────────────────
+for r, src in enumerate(PILLARS):
+    ry = grid_y + HDR_H + r * ROW_H
+    d.rectangle([PAD, ry, grid_x, ry + ROW_H], fill=BAND)
+    d.text((PAD + 10 * SCALE, ry + 16 * SCALE), src, font=f_row, fill=NAVY)
+    d.text((PAD + 10 * SCALE, ry + 32 * SCALE), QUESTION[src], font=f_q, fill=GREY)
+    d.text((PAD + 10 * SCALE, ry + 45 * SCALE), ROLE[src], font=f_q, fill=GREY)
 
-    tx = max(int(W * 0.022), min(tx, int(W * 0.978 - BLOCK_W)))
-    ty = max(int(H * 0.020), min(ty, int(H * 0.980 - h)))
+    for c, dst in enumerate(PILLARS):
+        x0 = grid_x + c * COL_W
+        if src == dst:
+            d.rectangle([x0, ry, x0 + COL_W, ry + ROW_H], fill=(250, 250, 252))
+            centre('—', f_cell, x0, x0 + COL_W, ry + ROW_H / 2 - 7 * SCALE, RULE)
+            continue
+        dep = DEPS.get((src, dst))
+        if not dep:
+            continue
+        verb, what = dep
+        col = VERB[verb]
+        centre(verb, f_verb, x0, x0 + COL_W, ry + 13 * SCALE, col)
+        lines = wrap_to(what, f_cell, COL_W - 16 * SCALE)
+        ty = ry + 28 * SCALE
+        for ln in lines[:3]:
+            centre(ln, f_cell, x0, x0 + COL_W, ty, INK)
+            ty += 12 * SCALE
 
-    d.text((tx, ty), name, font=f_name, fill=NAVY)
-    yy = ty + int(19 * SCALE)
-    d.text((tx, yy), q, font=f_q, fill=GREY)
-    yy += int(21 * SCALE)
-    for line in lines:
-        d.text((tx, yy), line, font=f_body, fill=INK)
-        yy += LINE_H
+# ── grid rules, drawn last so they sit on top ───────────────────────────────
+for i in range(7):
+    x = grid_x + i * COL_W
+    d.line([x, grid_y, x, grid_y + HDR_H + ROW_H * 6], fill=RULE, width=1 * SCALE)
+d.line([PAD, grid_y, PAD, grid_y + HDR_H + ROW_H * 6], fill=RULE, width=1 * SCALE)
+for r in range(8):
+    yy = grid_y + (HDR_H if r else 0) + max(0, r - 1) * ROW_H
+    d.line([PAD, yy, grid_x + COL_W * 6, yy], fill=RULE, width=1 * SCALE)
 
-# ── centre label ─────────────────────────────────────────────────────────────
-f_c1 = font(13, bold=True)
-f_c2 = font(10)
-c1 = "THE EXECUTION SEQUENCE"
-tb = d.textbbox((0, 0), c1, font=f_c1)
-d.text((CX - (tb[2] - tb[0]) / 2, CY - 12 * SCALE), c1, font=f_c1, fill=NAVY)
-c2 = "each pillar gates the next"
-tb = d.textbbox((0, 0), c2, font=f_c2)
-d.text((CX - (tb[2] - tb[0]) / 2, CY + 8 * SCALE), c2, font=f_c2, fill=GREY)
+# ── legend ──────────────────────────────────────────────────────────────────
+ly = grid_y + HDR_H + ROW_H * 6 + 18 * SCALE
+lx = PAD
+for verb, desc in (('ENABLES', 'makes possible'),
+                   ('REQUIRES', 'cannot function without'),
+                   ('DRIVES', 'actively forces change in'),
+                   ('CONSTRAINS', 'imposes a design limit on')):
+    d.rectangle([lx, ly + 2 * SCALE, lx + 11 * SCALE, ly + 11 * SCALE],
+                fill=VERB[verb])
+    d.text((lx + 17 * SCALE, ly), verb, font=f_leg, fill=INK)
+    wv = d.textbbox((0, 0), verb, font=f_leg)[2]
+    d.text((lx + 17 * SCALE + wv + 6 * SCALE, ly), '— ' + desc,
+           font=f_legd, fill=GREY)
+    lx += 17 * SCALE + wv + d.textbbox((0, 0), '— ' + desc, font=f_legd)[2] + 26 * SCALE
 
-# Trim to the drawn content, then re-pad evenly. Placement is computed from the
-# ring, so the used area is rarely centred in the canvas and leaves uneven dead
-# margins — which on the page reads as the figure being small and off-centre.
-bbox = Image.new('RGB', img.size, 'white')
-from PIL import ImageChops
-diff = ImageChops.difference(img, bbox)
-box = diff.getbbox()
-if box:
-    pad = 26 * SCALE
-    box = (max(0, box[0] - pad), max(0, box[1] - pad),
-           min(W, box[2] + pad), min(H, box[3] + pad))
-    img = img.crop(box)
-
-cw, ch = img.size
-out = img.resize((int(cw / 3.6), int(ch / 3.6)), Image.LANCZOS)
-os.makedirs('book-build', exist_ok=True)
-out.save('book-build/cover.png', dpi=(300, 300))
-print("wrote book-build/cover.png", out.size, "@300dpi")
+out = img.resize((W // SCALE, H // SCALE), Image.LANCZOS)
+out = out.quantize(colors=256, method=Image.MEDIANCUT, dither=Image.NONE)
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cover.png')
+out.save(OUT, optimize=True, dpi=(300, 300))
+print(f"wrote {OUT} {out.size}  ({os.path.getsize(OUT):,} bytes)")
