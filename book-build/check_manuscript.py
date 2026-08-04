@@ -110,7 +110,15 @@ while i < len(head_lines):
         while k < len(head_lines) and head_lines[k].strip() == '':
             k += 1
         nxt = head_lines[k].strip() if k < len(head_lines) else ''
-        if not nxt.startswith('*Figure ') and not nxt.startswith('*Table '):
+        # Front matter, glossaries, worksheets and appendix reference tables are
+        # not figures and are deliberately uncaptioned. Only flag tables inside
+        # numbered chapters, where every table IS a figure.
+        in_chapter = False
+        for q in range(i, -1, -1):
+            if head_lines[q].startswith('# **'):
+                in_chapter = head_lines[q].startswith('# **Chapter ')
+                break
+        if in_chapter and not nxt.startswith('*Figure '):
             report('WARN', 'Table with no caption',
                    f'line {i+1}: {head_lines[i][:70]}')
         i = j
@@ -118,11 +126,12 @@ while i < len(head_lines):
         i += 1
 
 # mixed caption vocabulary
+# Every caption must say "Figure" — the book had 12 stragglers labelled
+# "Table", which also made several chapters look like they had numbering gaps.
 tbl_caps = re.findall(r'^\*Table ([0-9A-Z]+\.[0-9]+)', head, re.M)
 if tbl_caps:
-    report('WARN', 'Captions labelled "Table" rather than "Figure"',
-           f'{len(tbl_caps)} of them: {", ".join(sorted(set(tbl_caps))[:8])}'
-           + ('…' if len(set(tbl_caps)) > 8 else ''))
+    report('ERROR', 'Captions labelled "Table" rather than "Figure"',
+           f'{len(tbl_caps)}: {", ".join(sorted(set(tbl_caps))[:8])}')
 
 # broken in-text references
 refs = set(re.findall(r'\bFigure ([0-9]+\.[0-9A-Za-z]+)\b', raw))
