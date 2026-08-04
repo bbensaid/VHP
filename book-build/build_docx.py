@@ -19,6 +19,7 @@ import sys, subprocess, os, re, copy
 BODY_FONT = "Garamond"   # must match SERIF in make_reference.py
 from docx import Document
 from docx.shared import Pt, Inches, RGBColor
+from PIL import Image as PILImage          # cover sizing reads the art's aspect
 
 GRAY = RGBColor(0x40, 0x40, 0x40)   # Sources / citation grey
 from docx.oxml.ns import qn
@@ -1062,7 +1063,7 @@ def add_cover():
 
     # spacer -> centered image -> page break
     sp = _new_para_after(anchor)
-    sp.paragraph_format.space_after = Pt(30)   # breathing room, image lower on page
+    sp.paragraph_format.space_after = Pt(14)   # tight — the cover art needs the room
 
     last = sp
     if COVER and os.path.exists(COVER):
@@ -1071,9 +1072,31 @@ def add_cover():
         # Fill the full usable text width. At the old fixed 5.6in the cover
         # rendered small and soft on the page; the width is now derived from the
         # section so it tracks the margins instead of being guessed.
+        # The cover art is a figure, not body text, so it is not bound by the
+        # text column. Bleed it halfway into the side margins and let it run as
+        # tall as the space below the title block allows — the diagram's labels
+        # are only legible if the whole thing is large on the page.
         sec = doc.sections[0]
         usable = sec.page_width - sec.left_margin - sec.right_margin
-        img_p.add_run().add_picture(COVER, width=usable)
+        bleed = int(Inches(0.55))                      # per side, of a 1.10in margin
+        target_w = usable + 2 * bleed
+
+        with PILImage.open(COVER) as _c:
+            ar = _c.height / _c.width
+        # Vertical budget: page height, less top/bottom margins, less the title
+        # block and the spacer, less a little breathing room at the foot.
+        avail_h = int(sec.page_height - sec.top_margin - sec.bottom_margin
+                      - Inches(3.55))
+        if target_w * ar > avail_h:                    # too tall — fit to height
+            target_w = int(avail_h / ar)
+
+        run = img_p.add_run()
+        run.add_picture(COVER, width=target_w)
+        # Negative indents let the picture sit outside the text column.
+        over = (target_w - usable) // 2
+        if over > 0:
+            img_p.paragraph_format.left_indent = -over
+            img_p.paragraph_format.right_indent = -over
         last = img_p
 
     brk = _new_para_after(last)
