@@ -3027,7 +3027,7 @@ The Statewide Health Care Delivery Strategic Plan that AHS must deliver by Decem
 | PACE program development | At least one PACE program operational in Vermont, serving the highest-acuity elderly population that would otherwise require nursing home placement; feasibility assessment for additional programs | 2026-2028 (feasibility and launch) | AHEAD EAST Fund; RHT long-term care infrastructure investment; Medicaid PACE program rules |
 | Dementia care infrastructure | Memory care COE designation at 3-5 facilities; primary care dementia assessment protocols embedded in all PCMH practices; family caregiver support programs in all HSAs | 2026-2030 | RHT Program; COE designation process; Blueprint quality measures expansion |
 
-*Table 8.1 — Clinical-pillar implementation commitments for the Statewide Strategic Plan. Source: HTR Analysis (2026).*
+*Figure 8.6 — Clinical pillar commitments for Vermont's Statewide Health Care Delivery Strategic Plan. Sources: Act 68 of 2025; Oliver Wyman Act 167 Report; AHS Transformation Plans; Vermont RHT Program Application.*
 
 ## **Work This Chapter on the Platform**
 
@@ -3050,8 +3050,6 @@ If you are an AHS or GMCB official: The Collaborative Care Model — integrating
 If you are a Vermont legislator: The Blueprint for Health is Vermont's most successful population health program and its most underfunded one. The 5.8:1 ROI documented from Vermont's own experience is the strongest evidence available that primary care investment produces system savings. The Blueprint's current funding level does not allow it to operate at the scale AHEAD's population health targets require. A legislative investment in Blueprint capacity — specifically, Community Health Team expansion and PCMH transformation support for practices not yet at advanced tier — is among the highest-ROI appropriations Vermont can make before FY2028.
 
 If you are a national health policy professional: Vermont's clinical pillar experience — specifically, the relationship between PCMH transformation, Blueprint Community Health Teams, and population health improvement — is the best available evidence that primary care investment produces system-level returns in a rural setting. The 5.8:1 ROI figure is from a 2016 peer-reviewed study of 2008–2013 data; updated evidence from Vermont's more recent Blueprint experience is needed and will be produced by AHEAD's clinical measurement requirements. Those updated results will be the primary evidence base for primary care investment policy in rural markets nationally.
-
-*Figure 8.6 — Clinical pillar commitments for Vermont's Statewide Health Care Delivery Strategic Plan. Sources: Act 68 of 2025; Oliver Wyman Act 167 Report; AHS Transformation Plans; Vermont RHT Program Application.*
 
 ## **Key Concepts in This Chapter**
 
@@ -5940,9 +5938,9 @@ Figure 8.4 — Vermont comprehensive primary health care: five operational compo
 
 Figure 8.5 — Vermont clinical quality measurement framework: priority measures, rationale, and current status. Sources: AHS Transformation Report (November 2025); Blueprint for Health data; Oliver Wyman Act 167 Report.
 
-Figure 8.H — Hands-on platform tools for the Clinical Pillar.
-
 Figure 8.6 — Clinical pillar commitments for Vermont's Statewide Health Care Delivery Strategic Plan. Sources: Act 68 of 2025; Oliver Wyman Act 167 Report; AHS Transformation Plans; Vermont RHT Program Application.
+
+Figure 8.H — Hands-on platform tools for the Clinical Pillar.
 
 Figure 9.1 — NCQA PCMH recognition: six concept areas and Vermont implementation challenges. Sources: NCQA PCMH Standards and Guidelines, 2023 edition; Vermont Blueprint for Health Annual Report 2024; Oliver Wyman Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025).
 
