@@ -2082,6 +2082,8 @@ The following matrix provides implementation guidance for the key investments in
 | EHR optimization for structured data capture | $15K-$40K per practice | 1-3 months | 6 months | Blueprint PCMH prerequisite; HEDIS measure reporting accuracy |
 | Cybersecurity assessment and hardening | $50K-$200K per org | 3-6 months | Risk avoidance immediate | Vermont rural CAH vulnerability; ransomware risk at Grace Cottage scale |
 
+*Figure 5.3 — Technology pillar implementation matrix. Sources: HTR Advisory; Vermont RHT Program (2025); CMS interoperability rule.*
+
 ## **Work This Chapter on the Platform**
 
 Chapter 5's implementation reality — AI governance, CDS, and clinical data exchange — maps to three working labs.
@@ -2104,8 +2106,6 @@ If you are an AHS or GMCB official: AI governance for healthcare transformation 
 If you are a Vermont legislator: Vermont's AI governance gap is a legislative opportunity. Vermont has the regulatory infrastructure — GMCB, DVHA, AHS — to create AI standards for healthcare that most states lack. A Vermont AI governance framework for healthcare applications, developed in parallel with AHEAD deployment, would both protect Vermont patients and position Vermont as a national model for responsible AI adoption in healthcare transformation. The alternative — deploying AI tools without governance and creating the framework after problems emerge — is more expensive and less credible.
 
 If you are a national health policy professional: Vermont's technology chapter is, at its core, about a small state trying to build the analytics infrastructure that national health policy has assumed into existence for thirty years without actually funding. The gap between what CMMI models assume about state data infrastructure and what states actually have is the most underappreciated obstacle in American health reform. Vermont's experience — the specific decisions, the specific failures, the specific investments that worked — will be the best available evidence on how to close that gap for states that have less.
-
-*Figure 5.3 — Technology pillar implementation matrix. Sources: HTR Advisory; Vermont RHT Program (2025); CMS interoperability rule.*
 
 ## **Key Concepts in This Chapter**
 
@@ -3269,6 +3269,8 @@ The following matrix provides implementation guidance for the key investments in
 | Care transition protocol (CHT + VITL admission notification) | $20K-$50K setup | 3 months | 6-12 months | Vermont: 14.8% 30-day readmission; 76% BH follow-up rate — improvement target |
 | HCC documentation improvement at clinical level | $10K-$30K training | 1-2 months | Immediate: Year 1 RAF gain | CKD staging, DM complications, morbid obesity — most common VT gaps |
 
+*Figure 9.5 — Clinical pillar implementation matrix. Sources: Vermont Blueprint for Health Annual Report 2024; Vermont MHI Evaluation 2025; SAMHSA CCBHC documentation.*
+
 ## **Work This Chapter on the Platform**
 
 Chapter 9's quality mechanics — HEDIS improvement, value vs. waste, optimization — map to the clinical-quality bench.
@@ -3290,8 +3292,6 @@ If you are an AHS or GMCB official: Vermont's HSA boundaries are the geographic 
 If you are a Vermont legislator: The CCBHC expansion Vermont is pursuing through the RHT Program creates a network of certified community behavioral health centers that integrate behavioral health with primary care across all HSAs. CCBHC certification requires specific staffing ratios, service requirements, and quality measurement. Vermont's legislature should understand that CCBHC certification is not a check-box exercise — it is a clinical quality standard that some currently operating behavioral health organizations may not meet. The expansion budget needs to include not just operating funds but transformation support for organizations working toward certification.
 
 If you are a national health policy professional: Vermont's care model implementation chapter is a detailed case study in the gap between evidence-based clinical models and their implementation in rural settings. Every model described — PCMH, CoCM, CCBHC, CHW programs, telehealth, community paramedicine — has an evidence base. None of them is easily deployable in rural Vermont without the infrastructure investments, workforce development, and clinical workflow redesign that this chapter describes. The implementation challenge is not analytical. It is organizational and financial. Vermont's approach — RHT Program capital for infrastructure, AHEAD financial incentives for deployment, and Blueprint support for implementation — is worth studying as a model for states trying to translate clinical evidence into rural implementation.
-
-*Figure 9.5 — Clinical pillar implementation matrix. Sources: Vermont Blueprint for Health Annual Report 2024; Vermont MHI Evaluation 2025; SAMHSA CCBHC documentation.*
 
 ## **Key Concepts in This Chapter**
 
@@ -3584,7 +3584,7 @@ The National Committee for Quality Assurance (NCQA) has developed HEDIS stratifi
 | Maternal and reproductive health | Prenatal and postpartum care; well-child visits; adolescent well-care; prenatal depression screening | Income; race/ethnicity (BIPOC maternal outcomes nationally and in Vermont below white outcomes); geographic (rural access barriers to OB care) | VHCURES; Blueprint Women's Health Initiative data |
 | Care coordination | 30-day readmission rate; transitions of care; medication reconciliation post-discharge | Income (Medicaid patients have higher readmission rates nationally); geographic (distance from discharge follow-up resources) | VHCURES; GMCB hospital discharge data (VUHDDS) |
 
-*Table 10.1 — HEDIS domains and Vermont equity stratification measures. Source: NCQA; Vermont Blueprint.*
+*Figure 10.7 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specifications; AHS Health Equity Data Report (January 2025); Blueprint for Health data.*
 
 ## **Equity Pillar Implementation Matrix**
 
@@ -3599,9 +3599,7 @@ The following matrix provides implementation guidance for the key investments in
 | Health equity impact assessment process | $25K-$50K one-time | 3 months | Immediate: redesign cost avoidance | Act 68 HCAC consultation requirement; equity-as-design-constraint |
 | Race/ethnicity data quality improvement (VHCURES) | $20K-$60K annually | 6 months | 12 months | Vermont VHCURES: incomplete race/ethnicity fields documented in VDH 2025 |
 
-*Figure 10.7 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.*
-
-*Figure 10.8 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specifications; AHS Health Equity Data Report (January 2025); Blueprint for Health data.*
+*Figure 10.8 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.*
 
 ### **The Data Collection Challenge — Getting Demographic Data Right**
 
@@ -3700,7 +3698,7 @@ In the interim, Vermont's equity analytics strategy must be pragmatic: use the b
 | Clinical practice variation by demographic | VHCURES claims (limited demographic data); VDH health equity data — requires improved race/ethnicity data collection in clinical settings |
 | Trust and patient experience | CAHPS survey data from Blueprint PCMH practices (available but limited demographic stratification) |
 
-*Table 10.3 — Equity dimensions and best available Vermont data sources. Source: HTR Analysis (2026).*
+*Figure 10.10 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VDH; Blueprint for Health; DVHA; AHS.*
 
 ## **Implications for You**
 
@@ -3711,8 +3709,6 @@ If you are an AHS or GMCB official: Vermont's HEROI scoring framework is a polic
 If you are a Vermont legislator: The equity measurement infrastructure Vermont is building — HEROI scoring, stratified HEDIS measures, HRSN screening data — will produce the most detailed state-level picture of healthcare equity in Vermont's history. That data has implications beyond healthcare. It connects to housing, food security, education, and economic development in ways that Act 68's healthcare focus does not directly address. Vermont's legislature should consider how the equity data produced by the healthcare transformation informs the state's broader social policy agenda — and specifically, whether the EAST Fund's social determinants investment can be coordinated with non-healthcare state programs in ways that produce more durable equity improvement than healthcare investment alone.
 
 If you are a national health policy professional: Vermont's HEDIS equity measurement chapter is a detailed case study in the gap between equity measurement and equity improvement. Having good data on equity gaps is necessary but not sufficient for closing them. The mechanisms that produce equity improvement — targeted community investment, social determinants screening, CHW programs in high-gap communities — are not the same mechanisms that produce measurement. Vermont's experience will show whether having the data produces the investment, or whether the investment has to be mandated separately from the measurement. That question matters enormously for national health equity policy.
-
-*Figure 10.10 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VDH; Blueprint for Health; DVHA; AHS.*
 
 ## **Key Concepts in This Chapter**
 
@@ -4196,6 +4192,8 @@ The following matrix provides implementation guidance for the key investments in
 | Service line rationalization and CON modernization | $100K-$250K state cost | 12-24 months | 24-36 months | Vermont Act 68 CON streamlining; EMS regionalization framework |
 | CIN shared services model | $500K-$2M network setup | 18-36 months | 36-48 months | Vermont CIN: RHT-funded; shared analytics, IT, care management for 14 hospitals |
 
+*Figure 11.9 — Operations pillar implementation matrix. Sources: Vermont AHS Transformation Reports (August, November 2025); RHRC engagement; Oliver Wyman Act 167 Report.*
+
 ## **Implications for You**
 
 If you are a Vermont hospital executive: Revenue cycle under global budgets is fundamentally different from revenue cycle under fee-for-service. Under fee-for-service, revenue cycle maximizes capture of every billable service. Under global budgets, revenue is fixed — which means revenue cycle optimization is primarily about cost reduction (administrative efficiency, denial prevention, prior authorization reduction) rather than revenue maximization. The specific investment with the highest near-term return: HCC coding accuracy for your Medicare and AHEAD-attributed population. Your global budget benchmark will be set based on your attributed population's risk scores. Inaccurate HCC coding produces a benchmark that underestimates your population's risk, exposing your organization to financial loss from the first performance year. HCC gap closure is not a revenue cycle project; it is a financial risk management project.
@@ -4205,8 +4203,6 @@ If you are an AHS or GMCB official: Vermont's prior authorization burden — amo
 If you are a Vermont legislator: Vermont's administrative cost per adjusted discharge — $2,730 for CAHs versus $1,427 national benchmark — is the most precise measurement of administrative waste available in Vermont's healthcare system. The $1,303 per-discharge gap, applied across Vermont's hospital volume, represents approximately $100 million or more in annual administrative waste. The legislature should require AHS to track and report this metric annually, and to set specific targets for administrative cost reduction as part of the Statewide Strategic Plan. Administrative cost reduction is not a side benefit of transformation. It is a primary source of the savings that make transformation financially viable.
 
 If you are a national health policy professional: Vermont's revenue cycle and HCC coding chapter is a detailed case study in the technical complexity of global budget implementation at the hospital level. Most national health policy discussions of global budgets focus on the payment design. Vermont's experience will produce evidence on the operational translation: how hospitals actually manage the transition from fee-for-service revenue maximization to fixed-budget cost management, what the specific operational challenges are, and what support mechanisms make the transition manageable. That operational evidence is worth more than any theoretical model of global budget design.
-
-*Figure 11.9 — Operations pillar implementation matrix. Sources: Vermont AHS Transformation Reports (August, November 2025); RHRC engagement; Oliver Wyman Act 167 Report.*
 
 ## **Key Concepts in This Chapter**
 
@@ -5893,9 +5889,9 @@ Figure 5.1 — Vermont's three priority FHIR use cases. Sources: CMS Interoperab
 
 Figure 5.2 — Population health CDS types and Vermont applications. Sources: the Technology pillar framework; Vermont Blueprint for Health; VHCURES documentation.
 
-Figure 5.H — Hands-on platform tools for the Technology Pillar in practice.
-
 Figure 5.3 — Technology pillar implementation matrix. Sources: HTR Advisory; Vermont RHT Program (2025); CMS interoperability rule.
+
+Figure 5.H — Hands-on platform tools for the Technology Pillar in practice.
 
 Figure 6.2 — Vermont silver marketplace premium trajectory 2018–2024, showing 108% increase over six years. Source: Oliver Wyman Act 167 Report; GMCB analysis.
 
@@ -5945,9 +5941,9 @@ Figure 9.3 — Collaborative Care Model components and Vermont application. Sour
 
 Figure 9.4 — Clinical pillar in-practice implementation commitments for Vermont's Statewide Health Care Delivery Strategic Plan. Sources: Act 68 of 2025; AHEAD State Agreement (January 2025); AHS Transformation Plans 2025; Vermont RHT Program Application (November 2025).
 
-Figure 9.H — Hands-on platform tools for the Clinical Pillar in practice.
-
 Figure 9.5 — Clinical pillar implementation matrix. Sources: Vermont Blueprint for Health Annual Report 2024; Vermont MHI Evaluation 2025; SAMHSA CCBHC documentation.
+
+Figure 9.H — Hands-on platform tools for the Clinical Pillar in practice.
 
 Figure 10.1 — Vermont geographic equity disparities: key indicators. Sources: AHS November 2025 Transformation Report; Vermont RHT Program Application; Vermont Department of Health.
 
