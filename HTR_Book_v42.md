@@ -1017,7 +1017,7 @@ One of Oliver Wyman's most valuable contributions is a systematic correction of 
 | Vermont has a functioning State HIE (VITL) | Participation in VITL is voluntary and many community-based providers are not included. VITL lacks pharmacy claims data and is not viewed as user-friendly by providers. |
 | Vermont does not have enough primary care providers | If primary care providers were supported to see 3 patients per hour, there are enough for well into the future. HRSA recognizes no Health Profession Shortage Areas in Vermont. The problem is productivity and practice model, not pure headcount. |
 
-*Table 2.1 — Common perceptions of Vermont's health system versus the data. Source: Oliver Wyman Act 167 Report; GMCB.*
+*Figure 2.1 — Common perceptions of Vermont's health system versus the data. Source: Oliver Wyman Act 167 Report; GMCB.*
 
 These corrections matter for the book's argument because they explain why Vermont's reform agenda is more complex than it appears from the outside. A state that appears to have all-payer payment reform, an ACO, and a health information exchange actually has voluntary, partial implementations of each — generating the appearance of a transformed system while the underlying fee-for-service, fragmented, data-poor reality persists. Acts 167 and 68 are, in part, a legislative response to this gap between perception and reality.
 
@@ -1102,7 +1102,7 @@ Oliver Wyman developed specific COE assignments for 10 of Vermont's 13 current H
 | Mt. Ascutney Hospital (White River Junction) | 1 | Rehabilitation |
 | Grace Cottage, Gifford, North Country, Porter | TBD | Further discussion required as part of regionalization plan |
 
-*Table 2.3 — Proposed Centers of Excellence assignments by hospital. Source: Oliver Wyman regionalization blueprint.*
+*Figure 2.2 — Proposed Centers of Excellence assignments by hospital. Source: Oliver Wyman regionalization blueprint.*
 
 The COE framework serves multiple goals simultaneously. Concentrating surgical and specialty volumes creates the patient throughput needed to maintain clinical excellence — a surgeon performing 200 procedures a year maintains skills that one performing 20 cannot. Concentrating volumes in financially viable hospitals reduces the total number of facilities that need to sustain high-cost infrastructure. And freeing smaller hospitals from the expectation that they must provide full-spectrum care allows them to redesign their role — becoming hubs for primary care, mental health, geriatric services, and community health rather than trying to maintain services they cannot staff or afford.
 
@@ -1144,7 +1144,7 @@ The $400M figure is significant in context: it is the recurring savings that str
 | **December 2028** | Statewide Health Care Delivery Strategic Plan delivered to Vermont Legislature |
 | **FY2030** (Oct 2029) | Global hospital budgets for ALL Vermont hospitals including CAHs |
 
-*Figure 2.1 — Act 68 statutory implementation timeline. Source: Act 68 of 2025.*
+*Figure 2.3 — Act 68 statutory implementation timeline. Source: Act 68 of 2025.*
 
 Signed by Governor Scott on June 12, 2025, Act 68 is the legislative operationalization of the Oliver Wyman diagnosis. The alignment between Oliver Wyman's priority recommendations and Act 68's operative provisions is direct and traceable: Oliver Wyman recommended beginning movement to reference-based pricing at 200% of Medicare or less; Act 68 mandated it by hospital fiscal year 2027. Oliver Wyman recommended moving to global budgets when conditions for success are met; Act 68 required them for non-critical access hospitals by FY2028 and all hospitals by FY2030. Oliver Wyman recommended that GMCB add a Division of Planning and Effectiveness; Act 68 authorized three new permanent classified positions at GMCB. Oliver Wyman recommended reviewing AHS agency structure and program list; Act 68 directed AHS to develop a Statewide Health Care Delivery Strategic Plan by December 2028.
 
@@ -1166,7 +1166,7 @@ The design principles embedded in Act 68's RBP statute reflect the cross-state e
 | Washington (2021) | Public option ('Cascade Care'). Hospital reimbursement capped at 160% of Medicare for participating networks. Voluntary participation, expanding to state employee plans. |
 | Maryland (2014–present) | All-payer system with fixed annual revenue for hospitals based on standardized prices and volume expectations. Includes Medicare waiver. Strong incentives for population health management. The closest model to Vermont's Act 68 trajectory. |
 
-*Table 2.2 — State reference-based pricing and rate-setting programs compared. Sources: state program documentation; RAND; GMCB.*
+*Figure 2.4 — State reference-based pricing and rate-setting programs compared. Sources: state program documentation; RAND; GMCB.*
 
 ### **The Global Budget Mandate**
 
@@ -1320,7 +1320,7 @@ As of 2026, the CMMI model portfolio has been significantly rationalized from it
 | BALANCE Model | GLP-1 obesity drug coverage for Medicare and Medicaid enrollees at negotiated prices. Voluntary for manufacturers, states, and plans. Medicaid launch May 2026; Medicare Part D January 2028. Critical equity and chronic disease management model. |
 | Bundled Payments for Care Improvement Advanced (BPCI-A) | Episode-based payment for acute and post-acute care episodes. Voluntary. For health systems and post-acute providers, BPCI-A remains a viable two-sided risk VBC entry point for specific service lines (joint replacement, cardiac, etc.). |
 
-*Table 3.1 — CMMI models most relevant to Vermont's transformation. Source: CMS Innovation Center.*
+*Figure 3.2 — CMMI models most relevant to Vermont's transformation. Source: CMS Innovation Center.*
 
 ## **Section 1115 Waivers — The State's Primary Federal Policy Tool**
 
@@ -1401,7 +1401,7 @@ For healthcare organizations navigating the policy environment — hospitals, he
 | Opportunity identification | Track CMMI model launches and eligibility; identify state waiver opportunities; evaluate RHT Program grant eligibility; assess AHEAD primary care participation options | Vermont hospitals: Act 68 transformation grants ($2M); AHEAD EAST Fund; RHT Program subrecipient grants; BALANCE Model GLP-1 coverage | Policy Strategy service line: federal program opportunity assessment |
 | Policy advocacy | Participate in public comment on proposed rules; engage state legislature on transformation legislation; provide testimony on hospital financial sustainability; participate in GMCB public meetings | Vermont hospital leaders: engagement with AHS transformation planning; community input on COE designations; participation in Health Care Delivery Advisory Committee public comment | Policy Strategy service line: Phase 3 Implementation Support — legislative testimony and comment letter drafting |
 
-*Figure 3.2 — Policy strategy functions for healthcare organizations. Source: HTR Advisory framework.*
+*Figure 3.3 — Policy strategy functions for healthcare organizations. Source: HTR Advisory framework.*
 
 ## **The Medicaid Policy Landscape — What H.R. 1 Changes and What It Does Not**
 
@@ -1424,7 +1424,7 @@ The 2025 reconciliation law has changed the Medicaid landscape in ways that ever
 | Eligibility redetermination every 6 months (vs. annual) | 2026 | Increases administrative burden; produces coverage churn as enrollees who remain eligible lose coverage due to administrative failures; disproportionate impact on working families | Vermont DVHA will face increased redetermination workload; outreach to ensure eligible Vermonters maintain coverage is an equity priority |
 | Medicaid reimbursement reductions (DSH cuts, payment rate changes) | 2026-2031 (phased) | $911B over 10 years nationally; $137B in rural areas; hospitals will experience revenue reductions | All 14 Vermont hospitals face reduced Medicaid revenue; most severe impact on CAHs with high Medicaid payer mix; integrated into hospital financial sustainability modeling |
 
-*Figure 3.3 — H.R. 1 Medicaid provisions: timeline, financial impact, and Vermont implications. Sources: KFF analysis; CBO estimates; Pew Charitable Trusts (January 2026).*
+*Figure 3.4 — H.R. 1 Medicaid provisions: timeline, financial impact, and Vermont implications. Sources: KFF analysis; CBO estimates; Pew Charitable Trusts (January 2026).*
 
 For Vermont specifically, the Medicaid revenue reductions create a financial stress that compounds the hospital financial crisis Oliver Wyman documented before H.R. 1 passed. Vermont's hospitals were already projecting 5-year cumulative deficits of $700 million to $2.4 billion under the pre-H.R. 1 baseline. The additional Medicaid revenue reductions accelerate the financial timeline for hospitals that were already financially distressed, and reduce the financial cushion for hospitals that were marginally sustainable. This is the fiscal environment in which Vermont's transformation must succeed — which makes the urgency of the transformation not just a policy preference but a fiscal survival requirement.
 
@@ -2071,7 +2071,7 @@ Vermont's RHT Program IT advance investments explicitly include cybersecurity ca
 
 ## **Technology Pillar Implementation Matrix**
 
-The following matrix provides implementation guidance for the key investments in this pillar — estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
+The following matrix provides implementation guidance for the key Technology pillar investments — estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
 
 | Investment | Estimated cost | Timeline to value | ROI crossover | Vermont benchmark |
 | :---- | :---- | :---- | :---- | :---- |
@@ -2184,7 +2184,7 @@ Vermont's price data, documented in the GMCB's February 2026 report and confirme
 | :---- | :---- |
 | UVMMC outpatient charges (2022) 417% of Medicare — among highest nationally (RAND) | Potential savings at 200% Medicare (2018–2023) $400M VEHI + VSEA combined, per GMCB analysis |
 
-*Table 6.1 — Vermont hospital commercial pricing vs. Medicare and break-even benchmarks. Sources: GMCB Act 68 RBP Update (February 2026); RAND Hospital Price Transparency Study.*
+*Figure 6.1 — Vermont hospital commercial pricing vs. Medicare and break-even benchmarks. Sources: GMCB Act 68 RBP Update (February 2026); RAND Hospital Price Transparency Study.*
 
 The gap between the break-even point (~136% of Medicare) and the actual commercial prices being charged (250–300% on average, with outliers reaching 944%) is not driven by higher quality, better outcomes, or greater complexity. Oliver Wyman's analysis found no relationship between price and quality across Vermont's hospital system. It is driven by market power — the ability of a dominant provider to demand above-cost prices from payers who have no viable alternative for their members.
 
@@ -2245,7 +2245,7 @@ Vermont is not designing RBP in a vacuum. Three states have implemented meaningf
 | Maryland (2014–present) | All-payer rate setting; hospitals receive fixed annual revenue (global budget). Medicare waiver. | All payers, all hospitals statewide | $1.4B in Medicare hospital savings to date. 7% reduction in hospital admissions. $800M reduction in hospital spending. Model extended and expanded. |
 | Vermont Act 68 (FY2027) | Mandatory statewide RBP maximum set by GMCB rule. Initially commercial payers; excludes Medicare/Medicaid. | All Vermont hospitals, all commercial payers | Targeting implementation FY27; first negative commercial rate benchmark (-1%) in effect FY26 as transition step. |
 
-*Table 6.3 — Cross-state reference-based pricing and rate regulation: design and outcomes. Sources: GMCB Act 68 Update (February 2026); Health Affairs; Commonwealth Fund; CMS.*
+*Figure 6.3 — Cross-state reference-based pricing and rate regulation: design and outcomes. Sources: GMCB Act 68 Update (February 2026); Health Affairs; Commonwealth Fund; CMS.*
 
 The Oregon results are the most directly applicable to Vermont's situation because Oregon implemented RBP for a state employee plan while Vermont is implementing it statewide. The critical finding — all 24 affected hospitals remained in-network — directly addresses the most frequently raised concern about RBP: that hospitals will walk away from the regulated rates and leave patients without in-network access. The Oregon evidence is unambiguous on this point: hospitals did not exit the market when rates were set at 200% of Medicare, because 200% of Medicare is still substantially above their actual costs.
 
@@ -2310,7 +2310,7 @@ Global budget design is technically complex, and the design choices are conseque
 | Quality linkage | How are quality metrics integrated — penalty, incentive, or both? | Too small a linkage \= no behavioral change. Too large \= financial instability for hospitals still improving. | Act 68 requires standardized accountability metrics. GMCB quality programs (readmissions, HACs) will be embedded. |
 | Flexibility mechanisms | Provisions for mid-year adjustments, carryover of savings, risk corridors? | More flexibility \= lower hospital risk, easier adoption. Less flexibility \= stronger cost-control signal. | GMCB authorized to identify conditions requiring modification or termination of RBP or budget parameters. |
 
-*Table 6.5 — Five dimensions of global budget design with Vermont's current direction. Source: GMCB Act 68 Update (February 2026); Act 68 of 2025.*
+*Figure 6.5 — Five dimensions of global budget design with Vermont's current direction. Source: GMCB Act 68 Update (February 2026); Act 68 of 2025.*
 
 ### **Vermont's Global Budget History: Four Attempts, One Lesson**
 
@@ -2323,7 +2323,7 @@ Vermont has been attempting to implement hospital global budgets for over a deca
 | Vermont All-Payer ACO Model | 2017–2025 | Voluntary commercial payer/provider participation in hospital global payments aligned across Medicare, Medicaid, and commercial based on historical spend | Voluntary participation meant highest-cost commercial payers opted out. OneCare Vermont could not compel participation. Model produced modest results but never achieved the all-payer alignment that makes global budgets effective. Expired end of 2025. |
 | Act 167 / Act 68 Mandate | 2022–present | GMCB directed to design and implement mandatory global budgets: non-CAH hospitals by FY2028, all hospitals by FY2030 | In progress. Removes the voluntary participation flaw that undermined all prior attempts. |
 
-*Table 6.6 — Vermont global budget history: four attempts and the central lesson. Sources: GMCB Act 68 Update (February 2026); Oliver Wyman Act 167 Report.*
+*Figure 6.6 — Vermont global budget history: four attempts and the central lesson. Sources: GMCB Act 68 Update (February 2026); Oliver Wyman Act 167 Report.*
 
 The central lesson of this history is unambiguous: voluntary models fail because the actors who benefit most from the status quo — the highest-priced hospitals and the commercial payers with the most leverage — can and do opt out. A global budget that is optional for the highest-price hospital in a market is not a global budget; it is a demonstration project. Act 68's statutory mandate eliminates the opt-out. This is the design difference that matters.
 
@@ -2364,7 +2364,7 @@ The evidence from Maryland's global budget model is substantial and consistent a
 | :---- | :---- |
 | Reduction in hospital spending $800M Medicare Part A and B combined (CMS evaluation) | All-payer per capita growth cap 3.58% committed growth rate under Maryland model |
 
-*Table 6.7 — Maryland All-Payer Global Budget Model results summary. Sources: HSCRC; CMS; Commonwealth Fund; Milbank Memorial Fund.*
+*Figure 6.7 — Maryland All-Payer Global Budget Model results summary. Sources: HSCRC; CMS; Commonwealth Fund; Milbank Memorial Fund.*
 
 Maryland also reduced hospital spending for commercial beneficiaries, cut ED visits and inpatient admissions across all payer types, and significantly improved outcomes for dual-eligible (Medicare/Medicaid) patients — the highest-cost, highest-complexity population segment that Vermont also needs to serve better. The 14-day follow-up visit rate and 30-day unplanned readmission rate both improved for non-teaching hospitals.
 
@@ -2636,13 +2636,21 @@ Under fee-for-service, the financial value of identifying a high-risk patient is
 
 A care management program that prevents 50 hospitalizations in a population of 10,000 Medicare beneficiaries, at an average cost of $15,000 per hospitalization, generates $750,000 in avoided cost. If the organization bears downside risk (and receives upside savings) on those prevented hospitalizations, the financial return on a care management program that costs $200,000 to operate is approximately 3.75:1 — a 275% ROI. This is the core financial logic that makes population health management economically rational under VBC and economically irrational under FFS.
 
-| Average Medicare inpatient hospital cost prevented per event $15,000 Approximate average — varies significantly by DRG and acuity level | Average potentially preventable ED visit cost $1,800 Including facility and professional fees; varies by acuity |
-| :---- | :---- |
-| ROI: Care management program preventing hospitalizations 3-5x Typical ROI range for well-designed ACO care management programs | Vermont potentially avoidable ED visits as % of total 32.3% Each prevented \= $1,800 saved under global budget / VBC arrangement |
+::: {custom-style="StatStrip"}
+**$15,000** — Avg. Inpatient Cost Prevented
+
+**$1,800** — Avg. Preventable ED Visit
+
+**3–5x** — Care Management ROI Range
+
+**32.3%** — VT Potentially Avoidable ED Visits
+:::
+
+*Figure 7.2 — The economics of prevention under value-based payment. Inpatient and ED costs are approximate averages and vary by DRG and acuity; the ROI range reflects well-designed ACO care-management programs. Sources: CMS; GMCB; HTR analysis.*
 
 ## **Economics Pillar Implementation Matrix**
 
-The following matrix provides implementation guidance for the key investments in this pillar — estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
+The following matrix provides implementation guidance for the key Economics pillar investments — estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
 
 | Investment | Estimated cost | Timeline to value | ROI crossover | Vermont benchmark |
 | :---- | :---- | :---- | :---- | :---- |
@@ -2653,7 +2661,7 @@ The following matrix provides implementation guidance for the key investments in
 | Commercial payer VBC contract negotiation | $75K-$200K per contract | 6-12 months | 18-36 months | Vermont Blue Cross VBC arrangements; MVP Health Care negotiations |
 | Reference-based pricing methodology (state level) | $500K-$2M state cost | 18-24 months | FY2027: systemwide savings | Vermont mandatory RBP FY2027; Oliver Wyman: $300M+ annual projection |
 
-*Figure 7.2 — Economics pillar implementation matrix. Sources: HTR Research Lab; Oliver Wyman Act 167 Report; Vermont AHEAD documentation.*
+*Figure 7.3 — Economics pillar implementation matrix. Sources: HTR Research Lab; Oliver Wyman Act 167 Report; Vermont AHEAD documentation.*
 
 ## **APM Readiness Assessment — The 30-Dimension Framework**
 
@@ -2696,7 +2704,7 @@ The VBC Contract Review Checklist (available in the Implementation Toolkit) cove
 | Carve-outs | What services are excluded from the shared savings calculation? High-cost drugs? Mental health carve-outs? Specialty carve-outs? Each carve-out reduces the organization's ability to manage total cost of care and reduces the savings opportunity. |
 | Reconciliation timing | When are shared savings or losses settled — annually, semi-annually, quarterly? Reconciliation timing affects cash flow planning and the organization's ability to invest shared savings in care improvement programs. |
 
-*Table 7.2 — APM contract review framework: provisions and key questions. Source: HTR Advisory framework.*
+*Figure 7.4 — APM contract review framework: provisions and key questions. Source: HTR Advisory framework.*
 
 ## **Hospital Financial Modeling Under Global Budgets — The Vermont Framework**
 
@@ -2717,7 +2725,7 @@ Under a global budget, a Vermont hospital's annual revenue is set prospectively.
 | Case mix index — capture higher-acuity cases | Community investment ROI — SDOH programs that reduce utilization have direct financial return |
 | Operating margin per adjusted discharge | Operating margin within global budget — sustainability within fixed revenue |
 
-*Figure 7.4 — Financial metrics transformation: FFS versus global budget environment. Source: HTR's Economics pillar framework.*
+*Figure 7.5 — Financial metrics transformation: FFS versus global budget environment. Source: HTR's Economics pillar framework.*
 
 ### **The Hospital Financial Stress Test Model**
 
@@ -2744,7 +2752,7 @@ The following framework structures the financial case for transformation investm
 | Primary care investment (PCMH enhanced payments) | Reduces hospitalizations and specialty care through better chronic disease management and early intervention | Blueprint ROI study: $5.8M reduction in medical expenditure per $1M invested. At this ratio, $3M in Blueprint PCMH investment reduces system costs by $17.4M. | Vermont AHEAD primary care investment mandate: EAST Fund investment in primary care is essentially a system investment with documented 5.8:1 ROI in Vermont's own experience. |
 | Telehealth for rural access | Reduces transportation-related care avoidance and enables earlier intervention before crisis; reduces specialist transport costs for rural hospitals | Travel cost savings + avoided emergency transport + reduced length of stay for patients manageable via telehealth specialty consultation. RPM: each prevented CHF hospitalization saves $15,000. | Vermont RHT Program RPM grants: CHF readmission prevention via RPM in a population of 200 high-risk patients, preventing 10% of 30-day readmissions at 30% readmission rate, saves $90,000/year — ROI positive at $10,000/year RPM program cost. |
 
-*Figure 7.5 — Transformation investment ROI framework with Vermont examples. Sources: HTR's Economics pillar framework; Blueprint for Health ROI study; CMS cost data; Vermont data from AHS Transformation Reports.*
+*Figure 7.6 — Transformation investment ROI framework with Vermont examples. Sources: HTR's Economics pillar framework; Blueprint for Health ROI study; CMS cost data; Vermont data from AHS Transformation Reports.*
 
 ## **Making Care Primary — Vermont's Primary Care Economics**
 
@@ -3258,7 +3266,7 @@ The Statewide Health Care Delivery Strategic Plan that AHS must deliver by Decem
 
 ## **Clinical Pillar Implementation Matrix**
 
-The following matrix provides implementation guidance for the key investments in this pillar — estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
+The following matrix provides implementation guidance for the key Clinical pillar investments — estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
 
 | Investment | Estimated cost | Timeline to value | ROI crossover | Vermont benchmark |
 | :---- | :---- | :---- | :---- | :---- |
@@ -3588,7 +3596,7 @@ The National Committee for Quality Assurance (NCQA) has developed HEDIS stratifi
 
 ## **Equity Pillar Implementation Matrix**
 
-The following matrix provides implementation guidance for the key investments in this pillar — estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
+The following matrix provides implementation guidance for the key Equity pillar investments — estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
 
 | Investment | Estimated cost | Timeline to value | ROI crossover | Vermont benchmark |
 | :---- | :---- | :---- | :---- | :---- |
@@ -3700,7 +3708,7 @@ In the interim, Vermont's equity analytics strategy must be pragmatic: use the b
 
 *Figure 10.10 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VDH; Blueprint for Health; DVHA; AHS.*
 
-## **Implications for You**
+## **Implications for You — Equity Measurement**
 
 If you are a Vermont hospital executive: HEDIS equity measurement is coming whether you prepare for it or not. AHEAD's performance measurement framework includes equity metrics — stratified HEDIS measures by race, income, and geography — and Vermont's global budget methodology will incorporate equity performance. The hospitals that invest now in stratified quality measurement — understanding their quality gaps by population subgroup rather than just their overall rates — will be able to demonstrate equity improvement in their first AHEAD performance year. Those that have not tracked stratified data will be explaining gaps they did not know existed.
 
@@ -4181,7 +4189,7 @@ AHS and GMCB have identified three administrative simplification priorities that
 
 ## **Operations Pillar Implementation Matrix**
 
-The following matrix provides implementation guidance for the key investments in this pillar — estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
+The following matrix provides implementation guidance for the key Operations pillar investments — estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
 
 | Investment | Estimated cost | Timeline to value | ROI crossover | Vermont benchmark |
 | :---- | :---- | :---- | :---- | :---- |
@@ -4194,7 +4202,7 @@ The following matrix provides implementation guidance for the key investments in
 
 *Figure 11.9 — Operations pillar implementation matrix. Sources: Vermont AHS Transformation Reports (August, November 2025); RHRC engagement; Oliver Wyman Act 167 Report.*
 
-## **Implications for You**
+## **Implications for You — Revenue Cycle and Coding**
 
 If you are a Vermont hospital executive: Revenue cycle under global budgets is fundamentally different from revenue cycle under fee-for-service. Under fee-for-service, revenue cycle maximizes capture of every billable service. Under global budgets, revenue is fixed — which means revenue cycle optimization is primarily about cost reduction (administrative efficiency, denial prevention, prior authorization reduction) rather than revenue maximization. The specific investment with the highest near-term return: HCC coding accuracy for your Medicare and AHEAD-attributed population. Your global budget benchmark will be set based on your attributed population's risk scores. Inaccurate HCC coding produces a benchmark that underestimates your population's risk, exposing your organization to financial loss from the first performance year. HCC gap closure is not a revenue cycle project; it is a financial risk management project.
 
@@ -5437,7 +5445,7 @@ Act 68 of 2025 (S.126) established a comprehensive sequence of transformation mi
 | October 1, 2032 | All RHT Program funds must be spent | AHS / CMS | $195M award; spending window 2026–2032 |
 | Every 3 years from 2028 | Statewide Strategic Plan updated | AHS + HCAC | Ongoing statutory obligation |
 
-*Table B.1 — Act 68 statutory timeline and milestones. Source: Act 68 of 2025.*
+*Figure B.1 — Act 68 statutory timeline and milestones. Source: Act 68 of 2025.*
 
 Source: Act 68 of 2025; AHEAD State Agreement (January 2025); Vermont RHT Program Application (November 2025); CMS BALANCE Model (December 2025).
 
@@ -5453,7 +5461,7 @@ Estimated cost, timeline to value, ROI crossover, and Vermont benchmark for the 
 | Federal grant application (RHT Program model) | $50K–$100K application | 12–18 months to award | Capital deployment 3–5 yrs | Vermont RHT: $195M over 5 years for CIN and IT infrastructure |
 | Regulatory engagement and public-comment infrastructure | $25K–$75K annually | Ongoing | Risk-avoidance ROI | GMCB rate-setting participation; RBP methodology comment process |
 
-*Figure B.1 — Policy-pillar implementation matrix. Sources: HTR Advisory methodology; Vermont RHT Program Application (2025); GMCB rate-setting documentation.*
+*Figure B.2 — Policy-pillar implementation matrix. Sources: HTR Advisory methodology; Vermont RHT Program Application (2025); GMCB rate-setting documentation.*
 
 # **Appendix C — The 14-Hospital Centers of Excellence Assignment Framework**
 
@@ -5497,7 +5505,7 @@ Vermont's AHEAD Model State Agreement was signed January 17, 2025; Vermont parti
 | CMMI evaluation | CMS conducts an independent evaluation; results inform national AHEAD expansion decisions |
 | Relationship to Act 68 | AHEAD is the federal vehicle for Vermont's statutory global-budget mandate; Act 68 provides independent state authority that does not depend on AHEAD continuation |
 
-*Table D.1 — AHEAD State Agreement key terms and Vermont-specific provisions. Source: Vermont AHEAD State Agreement (January 2025).*
+*Figure D.1 — AHEAD State Agreement key terms and Vermont-specific provisions. Source: Vermont AHEAD State Agreement (January 2025).*
 
 Source: Vermont AHEAD State Agreement (January 17, 2025); CMMI AHEAD Model documentation; AHS January 2025 Legislative Presentation.
 
@@ -5855,15 +5863,25 @@ Figure 1.8 — Vermont's transformation timeline, by pillar. Source: HTR Analysi
 
 Figure 1.H — Hands-on platform tools for Chapter 1: working the execution-sequence argument on the HTR platform.
 
-Figure 2.1 — Act 68 statutory implementation timeline. Source: Act 68 of 2025.
+Figure T.1 — Vermont Healthcare Transformation Timeline: 2022–2035. Sources: Vermont Legislature, CMS, AHS, GMCB.
+
+Figure 2.1 — Common perceptions of Vermont's health system versus the data. Source: Oliver Wyman Act 167 Report; GMCB.
+
+Figure 2.2 — Proposed Centers of Excellence assignments by hospital. Source: Oliver Wyman regionalization blueprint.
+
+Figure 2.3 — Act 68 statutory implementation timeline. Source: Act 68 of 2025.
+
+Figure 2.4 — State reference-based pricing and rate-setting programs compared. Sources: state program documentation; RAND; GMCB.
 
 Figure 2.H — Hands-on platform tools for the Policy Pillar.
 
 Figure 3.1 — CMMI model success factors: what distinguishes models that produce results from those that don't. Source: HTR analysis of CMMI evaluation literature; CMS model documentation.
 
-Figure 3.2 — Policy strategy functions for healthcare organizations. Source: HTR Advisory framework.
+Figure 3.2 — CMMI models most relevant to Vermont's transformation. Source: CMS Innovation Center.
 
-Figure 3.3 — H.R. 1 Medicaid provisions: timeline, financial impact, and Vermont implications. Sources: KFF analysis; CBO estimates; Pew Charitable Trusts (January 2026).
+Figure 3.3 — Policy strategy functions for healthcare organizations. Source: HTR Advisory framework.
+
+Figure 3.4 — H.R. 1 Medicaid provisions: timeline, financial impact, and Vermont implications. Sources: KFF analysis; CBO estimates; Pew Charitable Trusts (January 2026).
 
 Figure 3.H — Hands-on platform tools for the Policy Pillar in practice.
 
@@ -5893,9 +5911,19 @@ Figure 5.3 — Technology pillar implementation matrix. Sources: HTR Advisory; V
 
 Figure 5.H — Hands-on platform tools for the Technology Pillar in practice.
 
+Figure 6.1 — Vermont hospital commercial pricing vs. Medicare and break-even benchmarks. Sources: GMCB Act 68 RBP Update (February 2026); RAND Hospital Price Transparency Study.
+
 Figure 6.2 — Vermont silver marketplace premium trajectory 2018–2024, showing 108% increase over six years. Source: Oliver Wyman Act 167 Report; GMCB analysis.
 
+Figure 6.3 — Cross-state reference-based pricing and rate regulation: design and outcomes. Sources: GMCB Act 68 Update (February 2026); Health Affairs; Commonwealth Fund; CMS.
+
 Figure 6.4 — Vermont RBP and global budget implementation phases. Source: GMCB Act 68 Update, February 2026.
+
+Figure 6.5 — Five dimensions of global budget design with Vermont's current direction. Source: GMCB Act 68 Update (February 2026); Act 68 of 2025.
+
+Figure 6.6 — Vermont global budget history: four attempts and the central lesson. Sources: GMCB Act 68 Update (February 2026); Oliver Wyman Act 167 Report.
+
+Figure 6.7 — Maryland All-Payer Global Budget Model results summary. Sources: HSCRC; CMS; Commonwealth Fund; Milbank Memorial Fund.
 
 Figure 6.8 — Vermont all-payer architecture under AHEAD + Act 68 combined. Sources: Vermont RHT Program Application (November 2025); AHS AHEAD fact sheet; Act 68.
 
@@ -5911,11 +5939,15 @@ Figure 6.H — Hands-on platform tools for the Economics Pillar.
 
 Figure 7.1 — APM shared savings calculation framework. Source: HTR's APM Shared Savings Calculator methodology; CMS ACO model documentation.
 
-Figure 7.2 — Economics pillar implementation matrix. Sources: HTR Research Lab; Oliver Wyman Act 167 Report; Vermont AHEAD documentation.
+Figure 7.2 — The economics of prevention under value-based payment. Inpatient and ED costs are approximate averages and vary by DRG and acuity; the ROI range reflects well-designed ACO care-management programs. Sources: CMS; GMCB; HTR analysis.
 
-Figure 7.4 — Financial metrics transformation: FFS versus global budget environment. Source: HTR's Economics pillar framework.
+Figure 7.3 — Economics pillar implementation matrix. Sources: HTR Research Lab; Oliver Wyman Act 167 Report; Vermont AHEAD documentation.
 
-Figure 7.5 — Transformation investment ROI framework with Vermont examples. Sources: HTR's Economics pillar framework; Blueprint for Health ROI study; CMS cost data; Vermont data from AHS Transformation Reports.
+Figure 7.4 — APM contract review framework: provisions and key questions. Source: HTR Advisory framework.
+
+Figure 7.5 — Financial metrics transformation: FFS versus global budget environment. Source: HTR's Economics pillar framework.
+
+Figure 7.6 — Transformation investment ROI framework with Vermont examples. Sources: HTR's Economics pillar framework; Blueprint for Health ROI study; CMS cost data; Vermont data from AHS Transformation Reports.
 
 Figure 7.H — Hands-on platform tools for the Economics Pillar in practice.
 
@@ -5959,9 +5991,9 @@ Figure 10.6 — Vermont equity accountability framework: indicators, stratificat
 
 Figure 10.H — Hands-on platform tools for the Equity Pillar.
 
-Figure 10.7 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.
+Figure 10.7 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specifications; AHS Health Equity Data Report (January 2025); Blueprint for Health data.
 
-Figure 10.8 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specifications; AHS Health Equity Data Report (January 2025); Blueprint for Health data.
+Figure 10.8 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.
 
 Figure 10.9 — Five-step disparity closure process with Vermont applications. Source: HTR's Health Equity Studio methodology.
 
@@ -6040,6 +6072,34 @@ Figure 16.5 — Proposed structure for the 2028 Statewide Strategic Plan. Source
 Figure 16.6 — Key parameters for the Strategic Plan. Sources: Act 68; VTDigger; Oliver Wyman Act 167 Report; Vermont RHT Program Application.
 
 Figure 16.H — Hands-on platform tools for Chapter 16: testing the AHS restructuring design.
+
+Figure A.1 — Vermont demographic transformation. Sources: Oliver Wyman Act 167 Report (2024); Vermont RHT Program Application; KFF.
+
+Figure A.2 — GMCB regulatory functions. Sources: GMCB Hospital Budget Review Guide; Acts 167 and 68; GMCB Annual Report 2024.
+
+Figure A.3 — Vermont's 14 hospitals: typology, grant status, focus, and challenges. Sources: AHS Hospital Tracking data (January 2026); individual transformation plans (January 15, 2026); GMCB FY26 Budget Orders.
+
+Figure A.4 — Vermont hospital transformation initiative themes, January 2026 (148 initiatives). Source: AHS Transformation Plans Analysis (January 2026).
+
+Figure B.1 — Act 68 statutory timeline and milestones. Source: Act 68 of 2025.
+
+Figure B.2 — Policy-pillar implementation matrix. Sources: HTR Advisory methodology; Vermont RHT Program Application (2025); GMCB rate-setting documentation.
+
+Figure D.1 — AHEAD State Agreement key terms and Vermont-specific provisions. Source: Vermont AHEAD State Agreement (January 2025).
+
+Figure F.1 — Policy-pillar scorecard. Sources: Act 68 of 2025; Oliver Wyman Act 167 Report; CMS AHEAD documentation; Vermont RHT Program Application.
+
+Figure F.2 — Technology-pillar scorecard. Sources: GMCB VHCURES; VITL; Vermont DOH Health Equity Data Report (January 2025); Vermont RHT Application.
+
+Figure F.3 — Economics-pillar scorecard. Sources: Oliver Wyman Act 167 Report; AHS November 2025 Report; GMCB price-transparency data; CMS AHEAD.
+
+Figure F.4 — Clinical-pillar scorecard. Sources: Vermont Blueprint Annual Report 2024; Vermont AHS; GMCB quality reporting; Oliver Wyman workforce analysis.
+
+Figure F.5 — Equity-pillar scorecard. Sources: Vermont DOH Health Equity Data Report (January 2025); Act 68; GMCB equity reporting; HTR HEROI framework.
+
+Figure F.6 — Operations-pillar scorecard. Sources: AHS Transformation Reports (August, November 2025); RHRC; Vermont RHT Program Application; Act 68.
+
+Figure I.1 — The HTR Lab Workbook maps each of the six pillars to a working platform tool, in the book's execution sequence.
 
 # **Bibliography and Source Notes**
 
