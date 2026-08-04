@@ -3391,20 +3391,15 @@ Identifying a health disparity is the beginning of an equity intervention, not t
 
 Drawing from the Health Equity pillar framework, Vermont's equity gaps fall into five root cause categories. For each category, Vermont has a documented disparity, a traceable mechanism, and a set of interventions — some already underway, some required.
 
+| Root cause category | Mechanisms and Vermont interventions |
+| :---- | :---- |
 | 1 Geographic Access Barriers | Mechanisms: Physical distance from providers; transportation infrastructure inadequacy; provider shortage in rural areas; broadband gaps limiting telehealth; limited hours of operation at available facilities. Vermont interventions: COE regionalization with reliable EMS transport; telehealth expansion through RHT Program; broadband infrastructure investment (Oliver Wyman Imperative 1); Blueprint PCMH expansion to all HSAs; community paramedicine. |
-| :---- | :---- |
-
 | 2 Social Needs Barriers | Mechanisms: Housing instability that prevents sustained engagement with healthcare; food insecurity that drives chronic disease risk; transportation barriers to scheduled care; economic stress that forces delayed care; broadband gaps that prevent telehealth access. Vermont interventions: AHEAD EAST Fund SDOH investment; Blueprint HRSN universal screening with warm handoffs to community resources; AHS HSA Coordinator model linking health and social services; RHT Program investment in community health workers; housing and transportation advocacy as healthcare policy. |
-| :---- | :---- |
-
 | 3 Clinical Practice Variation | Mechanisms: Documented differential treatment quality by race, ethnicity, disability, and body weight. Oliver Wyman community meetings specifically documented weight bias and fatphobia affecting care access; racial disparities in pain management and referral patterns documented nationally and present in Vermont. Vermont interventions: Provider diversity recruitment and retention; implicit bias training as a condition of Blueprint and AHEAD participation; standardized clinical protocols that reduce provider discretion in ways that produce differential outcomes; patient advisory councils including underrepresented communities; cultural competency standards. |
-| :---- | :---- |
-
 | 4 Insurance and Coverage Barriers | Mechanisms: Despite Vermont's 97% coverage rate, 8% of Essex County residents are uninsured; 18% of 25-34 year olds are uninsured; income groups between 251-400% of federal poverty line have the highest uninsurance rates despite being ineligible for Medicaid. Even with coverage, high deductibles and out-of-pocket maximums cause care avoidance. Vermont interventions: ACA enrollment outreach in rural communities; FQHC eligibility screening; Act 68 affordability benchmarks; RBP impact on premium reduction that makes insurance more affordable; AHEAD EAST Fund support for FQHCs serving uninsured and underinsured patients. |
-| :---- | :---- |
-
 | 5 Trust and Engagement Barriers | Mechanisms: Historical and ongoing experiences of discrimination in healthcare settings — documented for LGBTQ+ Vermonters, BIPOC Vermonters, and Vermonters with disabilities. Community meeting feedback specifically cited lack of culturally competent care, stigma, and discrimination as barriers to engagement. Vermont interventions: Community health worker deployment from communities served; HEART program for rural LGBTQ+ Vermonters; BIPOC community partnership grants through VDH Health Equity Capacity Building Program; multilingual patient education materials; patient-centered care training with equity focus; CCBHCs as culturally accessible entry points. |
-| :---- | :---- |
+
+*Figure 10.3 — The disparity root cause taxonomy: five categories, their mechanisms, and Vermont's interventions for each. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Oliver Wyman Act 167 Report; Vermont RHT Program Application.*
 
 The five root cause categories are not mutually exclusive — a Black rural resident of Windham County may face geographic access barriers, SDOH barriers, and trust barriers simultaneously. Vermont's equity interventions are most effective when they are designed to address multiple root causes for the populations with compound equity burdens, rather than addressing each category in isolation.
 
@@ -3502,7 +3497,7 @@ Act 167 and Act 68 equity requirements: Both acts explicitly include reducing he
 | Northeast Kingdom service resilience | The NE Kingdom has the state's highest equity burden and the most financially distressed hospital infrastructure. REH conversion and telehealth investments must precede any service reduction. | North Country and NE VT Regional transformation plans must include equity impact analysis; broadband investment as prerequisite to telehealth; EMS regionalization funded through RHT Program; CCBHC designation for Northeast Kingdom Human Services (planned July 2026) | 2026 (CCBHC designation); 2027-2028 (EMS regionalization; telehealth); hospital transition decisions by 2028 Strategic Plan |
 | Trust-building with underserved communities | Vermont's BIPOC, LGBTQ+, Indigenous, and rural communities have documented experiences of discrimination and dismissal in healthcare settings. Trust is not built by policy statements; it is built by consistent, culturally respectful engagement over time. | Community health worker deployment from served communities; patient advisory councils with diverse representation; Indigenous community outreach and partnership (VDH engagement with Abenaki communities); HEART program expansion for rural LGBTQ+ Vermonters | Ongoing; requires sustained commitment, not a one-time program |
 
-*Figure 10.3 — Vermont equity gaps and required investments. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Oliver Wyman Act 167 Report; AHS Transformation Reports; KFF GLP-1 coverage analysis.*
+*Figure 10.4 — Vermont equity gaps and required investments. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Oliver Wyman Act 167 Report; AHS Transformation Reports; KFF GLP-1 coverage analysis.*
 
 ## **Equity and the Six-Pillar Framework — How Every Pillar Has an Equity Dimension**
 
@@ -3519,7 +3514,7 @@ The correct approach treats equity as a cross-cutting dimension of every pillar 
 | Equity | By definition, equity failures in every other pillar accumulate here. The equity pillar fails when geographic access barriers remain despite transformation, when racial disparities persist despite clinical quality improvement, and when SDOH investments are treated as optional rather than foundational. | HSA-level equity monitoring with Northeast Kingdom as priority; SDOH integration across AHS programs; GLP-1 coverage expansion through BALANCE; community trust-building through CHW deployment and patient advisory councils. |
 | Operations | Hospital transformation plans that optimize for financial sustainability without equity impact analysis — e.g., closing inpatient services in rural communities without ensuring alternative access before closure. | Equity impact assessment requirement for all hospital transformation plans; AHS HSA Coordinator model linking health and social services at community level; Northeast Kingdom equity constraint as a binding parameter on regionalization planning. |
 
-*Figure 10.4 — Equity as a cross-cutting dimension of all six pillars. Sources: Act 67 of 2025; Oliver Wyman Act 167 Report; six-pillar framework.*
+*Figure 10.5 — Equity as a cross-cutting dimension of all six pillars. Sources: Act 67 of 2025; Oliver Wyman Act 167 Report; six-pillar framework.*
 
 ## **Vermont's Equity Accountability Framework**
 
@@ -3538,7 +3533,7 @@ The following framework represents the minimum equity accountability structure t
 | Emergency access time (EMS response) | By county; by time of day | Northeast Kingdom: establish baseline; target improvement through EMS regionalization | EMS dispatch data; RHT Program monitoring |
 | Cultural competency standard compliance | By practice type; by HSA | All Blueprint PCMHs: meet minimum cultural competency standards by 2027 | Blueprint quality measurement; VDH health equity reporting |
 
-*Figure 10.5 — Vermont equity accountability framework: indicators, stratifications, and targets. Sources: Act 167; Act 68; VDH Health Equity Data Report (January 2025); AHS Transformation Reports.*
+*Figure 10.6 — Vermont equity accountability framework: indicators, stratifications, and targets. Sources: Act 167; Act 68; VDH Health Equity Data Report (January 2025); AHS Transformation Reports.*
 
 Two principles must govern how Vermont uses this accountability framework. First, equity indicators must be disaggregated — not presented as averages. An average primary care access rate that is improving while the BIPOC rate is stagnant is not equity progress; it is equity masking. The Statewide Strategic Plan's equity section must show performance by population segment, not just system-wide averages.
 
@@ -3604,9 +3599,9 @@ The following matrix provides implementation guidance for the key investments in
 | Health equity impact assessment process | $25K-$50K one-time | 3 months | Immediate: redesign cost avoidance | Act 68 HCAC consultation requirement; equity-as-design-constraint |
 | Race/ethnicity data quality improvement (VHCURES) | $20K-$60K annually | 6 months | 12 months | Vermont VHCURES: incomplete race/ethnicity fields documented in VDH 2025 |
 
-*Figure 10.6 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.*
+*Figure 10.7 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.*
 
-*Figure 10.7 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specifications; AHS Health Equity Data Report (January 2025); Blueprint for Health data.*
+*Figure 10.8 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specifications; AHS Health Equity Data Report (January 2025); Blueprint for Health data.*
 
 ### **The Data Collection Challenge — Getting Demographic Data Right**
 
@@ -3663,7 +3658,7 @@ The Health Equity Studio implements the following five-step disparity closure pr
 | 4. Implementation with equity lens | Execute interventions with explicit equity targets: not 'increase primary care access' but 'increase Northeast Kingdom Medicaid patient primary care visit rate from 72% to 80% within 18 months' | Ongoing | Blueprint field staff set equity targets by HSA; AHS HSA Coordinators track progress; GMCB analytics vendor enables real-time monitoring |
 | 5. Accountability and iteration | Report disparity metrics alongside average metrics in all quality reporting. If a disparity is widening despite intervention, re-examine root cause attribution and intervention design. | Quarterly reporting cycle | AHS monthly transformation reports to include disparity-stratified metrics; HEROI score incorporated into AHEAD quality reporting for Vermont |
 
-*Figure 10.8 — Five-step disparity closure process with Vermont applications. Source: HTR's Health Equity Studio methodology.*
+*Figure 10.9 — Five-step disparity closure process with Vermont applications. Source: HTR's Health Equity Studio methodology.*
 
 ## **Equity in VBC Contracting — Protecting Against Unintended Consequences**
 
@@ -3717,7 +3712,7 @@ If you are a Vermont legislator: The equity measurement infrastructure Vermont i
 
 If you are a national health policy professional: Vermont's HEDIS equity measurement chapter is a detailed case study in the gap between equity measurement and equity improvement. Having good data on equity gaps is necessary but not sufficient for closing them. The mechanisms that produce equity improvement — targeted community investment, social determinants screening, CHW programs in high-gap communities — are not the same mechanisms that produce measurement. Vermont's experience will show whether having the data produces the investment, or whether the investment has to be mandated separately from the measurement. That question matters enormously for national health equity policy.
 
-*Figure 10.9 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VDH; Blueprint for Health; DVHA; AHS.*
+*Figure 10.10 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VDH; Blueprint for Health; DVHA; AHS.*
 
 ## **Key Concepts in This Chapter**
 
@@ -5958,21 +5953,23 @@ Figure 10.1 — Vermont geographic equity disparities: key indicators. Sources: 
 
 Figure 10.2 — Vermont SDOH burden: key indicators and equity implications. Sources: Vermont RHT Program Application (November 2025); Oliver Wyman Act 167 Report; Vermont Department of Health.
 
-Figure 10.3 — Vermont equity gaps and required investments. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Oliver Wyman Act 167 Report; AHS Transformation Reports; KFF GLP-1 coverage analysis.
+Figure 10.3 — The disparity root cause taxonomy: five categories, their mechanisms, and Vermont's interventions for each. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Oliver Wyman Act 167 Report; Vermont RHT Program Application.
 
-Figure 10.4 — Equity as a cross-cutting dimension of all six pillars. Sources: Act 67 of 2025; Oliver Wyman Act 167 Report; six-pillar framework.
+Figure 10.4 — Vermont equity gaps and required investments. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Oliver Wyman Act 167 Report; AHS Transformation Reports; KFF GLP-1 coverage analysis.
 
-Figure 10.5 — Vermont equity accountability framework: indicators, stratifications, and targets. Sources: Act 167; Act 68; VDH Health Equity Data Report (January 2025); AHS Transformation Reports.
+Figure 10.5 — Equity as a cross-cutting dimension of all six pillars. Sources: Act 67 of 2025; Oliver Wyman Act 167 Report; six-pillar framework.
+
+Figure 10.6 — Vermont equity accountability framework: indicators, stratifications, and targets. Sources: Act 167; Act 68; VDH Health Equity Data Report (January 2025); AHS Transformation Reports.
 
 Figure 10.H — Hands-on platform tools for the Equity Pillar.
 
-Figure 10.6 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.
+Figure 10.7 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.
 
-Figure 10.7 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specifications; AHS Health Equity Data Report (January 2025); Blueprint for Health data.
+Figure 10.8 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specifications; AHS Health Equity Data Report (January 2025); Blueprint for Health data.
 
-Figure 10.8 — Five-step disparity closure process with Vermont applications. Source: HTR's Health Equity Studio methodology.
+Figure 10.9 — Five-step disparity closure process with Vermont applications. Source: HTR's Health Equity Studio methodology.
 
-Figure 10.9 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VDH; Blueprint for Health; DVHA; AHS.
+Figure 10.10 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VDH; Blueprint for Health; DVHA; AHS.
 
 Figure 11.1 — Vermont health system transformation governance architecture under Act 68. Sources: Act 68 of 2025; AHS Legislative Presentation (January 2025).
 
