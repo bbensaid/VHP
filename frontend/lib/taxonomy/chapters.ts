@@ -232,7 +232,7 @@ export const CHAPTERS: readonly Chapter[] = [
   },
   {
     num: "13",
-    title: "The Future of Healthcare Transformation — 2026, What Vermont Proves, and What Remains",
+    title: "The Future of Healthcare Transformation: 2026, What Vermont Proves, and What Remains",
     desc: "Vermont's six-pillar scorecard (April 2026). Five forces shaping the next decade. The six-pillar forecast 2026–2035 and Vermont's two ten-year trajectories.",
     group: "Future & Strategy",
     pillar: null,
@@ -240,7 +240,7 @@ export const CHAPTERS: readonly Chapter[] = [
   },
   {
     num: "14",
-    title: "Political Sustainability — Protecting Transformation Across Election Cycles",
+    title: "Political Sustainability: Protecting Transformation Across Election Cycles",
     desc: "Why political sustainability is an analytical problem, not only a political one. The structural durability of Vermont's reform architecture, early-warning signals of political risk, and organizational risk-management strategies.",
     group: "Future & Strategy",
     pillar: null,
@@ -251,7 +251,7 @@ export const CHAPTERS: readonly Chapter[] = [
   },
   {
     num: "15",
-    title: "Healthcare Transformation as Portfolio Management — Applying PMI Standards to Six-Pillar Reform",
+    title: "Healthcare Transformation as Portfolio Management: Applying PMI Standards to Six-Pillar Reform",
     desc: "Project, program, and portfolio levels. Vermont's 19-component transformation portfolio. The portfolio risk register, benefits realization, and the case for a transformation portfolio office.",
     group: "Future & Strategy",
     pillar: null,
@@ -259,7 +259,7 @@ export const CHAPTERS: readonly Chapter[] = [
   },
   {
     num: "16",
-    title: "The AHS Restructuring Roadmap — A Six-Pillar Framework for System Architects",
+    title: "The AHS Restructuring Roadmap: A Six-Pillar Framework for System Architects",
     desc: "Vermont's Agency of Human Services restructuring as a live six-pillar implementation case. The statutory mandate of Act 68, the redesigned AHS operating model, and a framework for the 2028 Statewide Strategic Plan.",
     group: "Future & Strategy",
     pillar: null,

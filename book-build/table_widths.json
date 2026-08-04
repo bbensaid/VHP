@@ -18,8 +18,8 @@
  ],
  "Pillar|Diagnostic question|Structural role in the system|What it produces when functioning": [
   1215,
-  1530,
-  3255,
+  1425,
+  3360,
   3090
  ],
  "From \u2193 / To \u2192|Policy|Technology|Economics|Clinical|Equity|Operations": [
@@ -86,8 +86,8 @@
   2268
  ],
  "Common perception|What the data actually shows": [
-  4168,
-  4903
+  2625,
+  6450
  ],
  "Hospital|COE Count|Key Specialties": [
   3195,
@@ -99,8 +99,8 @@
   7069
  ],
  "State / Program|Key design features and outcomes": [
-  2513,
-  6558
+  2010,
+  7065
  ],
  "Characteristic|What it means|Models with this characteristic|Models without it": [
   1749,
@@ -113,20 +113,20 @@
   6735
  ],
  "Function|Key activities|Vermont-specific examples|HTR Advisory service": [
-  1145,
-  2642,
-  2642,
-  2642
+  1140,
+  2640,
+  2790,
+  2490
  ],
  "H.R. 1 Medicaid provision|When it takes effect|Financial impact|Vermont-specific implications": [
-  2190,
-  1485,
-  2430,
-  2970
+  2100,
+  1695,
+  2265,
+  3015
  ],
  "Layer|Role in the data stack": [
-  3450,
-  5610
+  3225,
+  5835
  ],
  "60%|Commercial Population Covered|100%|Medicaid &amp; Medicare Enrollees|Claims + Rx|Data Types Held|12\u201318+ Mo|Typical D": [
   2268,
@@ -135,20 +135,20 @@
   2268
  ],
  "Limitation|What it means for transformation|Required improvement": [
-  1890,
-  4230,
-  2955
+  1485,
+  5010,
+  2580
  ],
  "Step|What it requires|Timeline|Current status": [
-  1665,
-  3165,
+  1605,
+  3225,
   1815,
   2445
  ],
  "Layer|Name|Components|What it establishes": [
   690,
-  1455,
-  2700,
+  1050,
+  3105,
   4215
  ],
  "Case for a statewide EHR|Case against (or caution)": [
@@ -160,8 +160,8 @@
   6525
  ],
  "Layer|Components": [
-  1590,
-  7485
+  1455,
+  7620
  ],
  "FHIR use case|What it enables|Implementation requirements|Vermont priority": [
   2181,
@@ -197,10 +197,10 @@
   4536
  ],
  "State / Program|Design|Scope|Key Results": [
-  1115,
-  2910,
-  2134,
-  2910
+  1110,
+  2445,
+  2010,
+  3495
  ],
  "Phase|Timeline|Mechanism|Key Actions": [
   2314,
@@ -209,16 +209,16 @@
   3754
  ],
  "Design dimension|The choice|Key tradeoff|Vermont\u2019s current direction": [
-  988,
-  2694,
-  2694,
-  2694
+  1260,
+  2340,
+  2790,
+  2700
  ],
  "Approach|Year(s)|Structure|Outcome and lesson": [
-  1951,
-  791,
-  3164,
-  3164
+  1560,
+  1185,
+  2835,
+  3495
  ],
  "Medicare hospital savings to date $1.4B vs.\u00a0projected national trend (HSCRC)|Reduction in hospital admissions 7% Medicar": [
   4536,
@@ -238,46 +238,46 @@
   1528
  ],
  "Scenario|Assumptions and 5-year system deficit": [
-  3936,
-  5135
+  1680,
+  7380
  ],
  "In a fee-for-service environment, watch:|In a global budget environment, watch:": [
-  4379,
-  4692
+  2805,
+  6270
  ],
  "Source of direct savings (5-year total)|Estimate": [
   7955,
   1116
  ],
  "Phase|Timeline|Payment environment|Strategic priorities": [
-  669,
-  1095,
-  3653,
-  3653
+  675,
+  930,
+  2445,
+  5040
  ],
  "Step|Formula / concept|Practical meaning|Vermont application": [
-  1258,
-  2604,
-  2604,
-  2604
+  1425,
+  2085,
+  2625,
+  2955
  ],
  "Average Medicare inpatient hospital cost prevented per event $15,000 Approximate average \u2014 varies significantly by DRG a": [
   4536,
   4536
  ],
  "Contract provision category|Key questions and financial risk": [
-  2886,
-  6185
+  2115,
+  6945
  ],
  "Under FFS \u2014 optimize these metrics|Under global budget \u2014 optimize these metrics": [
-  4338,
-  4733
+  3930,
+  5145
  ],
  "Investment type|Revenue/savings mechanism|Calculation approach|Vermont example": [
-  1909,
-  2387,
-  2387,
-  2387
+  1470,
+  2085,
+  2475,
+  3030
  ],
  "5.8:1|Blueprint ROI on Investment|15+ Yrs|Operational Since 2006|All-Payer|Medicare + Medicaid + Commercial|91%|VT Adult": [
   2268,
@@ -296,15 +296,15 @@
   4536
  ],
  "CoCM component|Role|What they do|Vermont application": [
-  1804,
-  1414,
-  2926,
-  2926
+  1620,
+  1125,
+  2970,
+  3345
  ],
  "Component|What it means in practice|Vermont investment vehicle": [
-  2181,
-  3445,
-  3445
+  1710,
+  4260,
+  3105
  ],
  "Domain|Priority measures|Why this measure|Current VT status": [
   1512,
@@ -313,42 +313,42 @@
   2520
  ],
  "Commitment|What it requires|Timeline|Primary vehicle": [
-  1980,
-  2763,
-  1565,
-  2763
+  1560,
+  3570,
+  1365,
+  2565
  ],
  "Concept Area|What it requires operationally|Vermont implementation challenge": [
-  2553,
-  3259,
-  3259
+  1905,
+  3465,
+  3690
  ],
  "Tier|% of Panel|Characteristics|Care Model": [
-  1313,
-  596,
-  3581,
-  3581
+  990,
+  750,
+  3435,
+  3915
  ],
  "CoCM Component|Role|What they do|Vermont application": [
-  1804,
-  1414,
-  2926,
-  2926
+  1650,
+  1260,
+  2925,
+  3225
  ],
  "Commitment|Operational Requirement|Timeline|Primary Vehicle": [
-  2880,
-  2880,
-  432,
-  2880
+  2025,
+  3840,
+  1245,
+  1965
  ],
  "Uninsured rate, Essex County (NE Kingdom) 8% vs.\u00a03% statewide \u2014 nearly 3x the state average despite Vermont\u2019s near-unive": [
   4536,
   4536
  ],
  "SDOH domain|Vermont statistic|Equity implication": [
-  1067,
-  4002,
-  4002
+  1275,
+  3795,
+  4005
  ],
  "1 Geographic Access Barriers|Mechanisms: Physical distance from providers; transportation infrastructure inadequacy; pro": [
   2886,
