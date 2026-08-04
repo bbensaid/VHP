@@ -41,6 +41,25 @@ from PIL import ImageDraw
 ImageDraw.Draw(im).rectangle(
     [int(w * 0.855), int(h * 0.945), w, h], fill='white')
 
+# Drop the image's own title band. The page already carries the book title
+# above the figure, so "The Six-Pillar Healthcare Transformation Framework:
+# An Architecture of Interdependency" repeats it and costs vertical space the
+# diagram needs. Measured on the source: the title occupies y=46-114 and the
+# diagram starts at y~198, so cutting at y=160 removes the text and keeps the
+# artwork whole. Fractional so it survives a re-export at another size.
+im = im.crop((0, int(h * 0.104), w, h))
+
+# Trim the surrounding whitespace so the diagram fills the placed width instead
+# of floating inside its own margins — this is what makes it render bigger on
+# the page without changing the layout.
+from PIL import ImageChops
+bg = Image.new('RGB', im.size, 'white')
+box = ImageChops.difference(im, bg).getbbox()
+if box:
+    pad = int(min(im.size) * 0.012)
+    im = im.crop((max(0, box[0] - pad), max(0, box[1] - pad),
+                  min(im.width, box[2] + pad), min(im.height, box[3] + pad)))
+
 # Line art on flat white: a 256-colour palette is visually lossless here and
 # roughly halves the file, which matters because the image is embedded in the
 # .docx and round-trips through Google Docs.
