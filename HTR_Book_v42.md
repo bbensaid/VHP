@@ -1554,7 +1554,6 @@ VHCURES is a substantial data asset that gives Vermont analytical capabilities m
 **12–18+ Mo** — Typical Data Lag
 :::
 
-*Figure 4.2 — VHCURES data coverage summary. Commercial coverage is partial because ERISA exempts self-insured employers; extracts hold up to five years of eligibility and paid claims. Source: GMCB VHCURES documentation.*
 
 VHCURES enables Vermont to conduct analyses that directly support the transformation agenda: population-level total cost of care measurement (the GMCB publishes all-payer TCOC dashboards derived from VHCURES); potentially avoidable utilization analysis (the 32.3% avoidable ED visit rate in AHS's transformation reports is calculated from VHCURES via VUHDDS); hospital price transparency analysis (the GMCB's 2026 RBP report used VHCURES-derived 2024 claims data to show hospital prices ranging from 279% to 697% of Medicare for outpatient services); and prescription drug affordability analysis (GMCB's 2025 report on drug pricing used VHCURES to model the impact of IRA drug negotiations on Vermont spending). This is a powerful analytical platform that has produced some of the most credible and consequential health policy analysis in recent Vermont history.
 
@@ -1569,7 +1568,7 @@ VHCURES has four structural limitations that matter directly for Vermont's trans
 | No behavioral health or SDOH data integration | VHCURES contains medical and pharmacy claims but not mental health and SUD clinical records (governed by 42 CFR Part 2 and state confidentiality laws), social service utilization data, housing status, or other SDOH indicators. The HIE Steering Committee has a statutory directive to create one health record per person integrating claims, clinical, and SDOH data — but this integration has not been implemented. | VHCURES-VHIE integration per HIE Steering Committee statutory mandate; Act 167 HIE provisions; SDOH data collection through Blueprint HRSN screening linked to VHCURES identifiers with appropriate consent framework |
 | No clinical results, only billing records | VHCURES records that a service was delivered and paid for, but not what it found. A claim shows an HbA1c test was performed; it does not carry the result. This is why claims-only quality measurement systematically underestimates performance, and why the hybrid measures Act 68 depends on cannot be produced from VHCURES alone. | Clinical-claims linkage through the UHDS; MDWAS weekly refresh as the primary path; VHCURES retained for retrospective analysis rather than management |
 
-*Figure 4.3 — VHCURES structural limitations and required improvements. Sources: GMCB VHCURES data documentation; Oliver Wyman Act 167 Report; AHS Transformation Reports; Act 68 of 2025.*
+*Figure 4.2 — VHCURES structural limitations and required improvements. Sources: GMCB VHCURES data documentation; Oliver Wyman Act 167 Report; AHS Transformation Reports; Act 68 of 2025.*
 
 ## **The Vermont HIE — VITL, the Governance Shift, and the Integration Imperative**
 
@@ -1638,7 +1637,7 @@ The practical path to this integration has three components that must be execute
 | 2. Mental health and SUD data integration | Add mental health and substance use disorder data to the integrated record, with appropriate consent frameworks that comply with 42 CFR Part 2 (federal SUD confidentiality rules) and Vermont's own privacy statutes. This is technically complex — SUD data has a separate consent regime from medical data — but clinically essential. | 2027-2028; requires federal 42 CFR Part 2 compliance pathway | DVHA working with VITL on consent policy; 2025 federal regulatory changes to 42 CFR Part 2 may simplify compliance pathway; behavioral health CCBHC expansion creates urgency |
 | 3. SDOH data integration | Add social service utilization data — housing program participation, food assistance, transportation use, domestic violence services — linked to the health record with appropriate privacy protections. This is the most politically sensitive and technically complex integration because it involves non-healthcare agencies and data that carries significant stigma risk. | 2028 and beyond; requires cross-agency data governance agreement | Blueprint HRSN screening generates SDOH data but it is not yet linked to VHCURES or VHIE at scale; AHS HSA Coordinator model (Chapter 3) provides the cross-agency governance vehicle |
 
-*Figure 4.4 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering Committee statutory mandate; AHS January 2025 Legislative Presentation; DVHA HIE governance documents.*
+*Figure 4.3 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering Committee statutory mandate; AHS January 2025 Legislative Presentation; DVHA HIE governance documents.*
 
 ### **The Unified Health Data Space — The Vehicle for the Integration Mandate**
 
@@ -1658,7 +1657,7 @@ The UHDS is best understood as three layers, each depending on the one beneath i
 | 2 | Exchange Services | FHIR APIs; Clinical Data Repository | Moves and stores data as a single source of truth, prioritized around the weekly-refreshed MDWAS pipeline rather than the lagging VHCURES feed |
 | 1 | Foundational Services | Master Patient Index (Verato); Terminology Services (Term Atlas); Rhapsody integration engine | Establishes *who a patient is* and ensures every system speaks the same clinical vocabulary (SNOMED CT, LOINC). Without it, nothing above is trustworthy |
 
-*Figure 4.5 — The UHDS three-layer architecture. Each layer is dependent on the one below it. Sources: Vermont UHDS Transition Plan; DVHA HIE program documentation.*
+*Figure 4.4 — The UHDS three-layer architecture. Each layer is dependent on the one below it. Sources: Vermont UHDS Transition Plan; DVHA HIE program documentation.*
 
 ### **Why Integration Is the Load-Bearing Element**
 
@@ -1719,7 +1718,7 @@ AHS has commissioned a feasibility assessment to evaluate the cost-benefit of im
 | Maryland's experience: common data infrastructure enabled the HSCRC to manage global budgets effectively | ERISA self-insured employers — outside state authority — would still not be in the system even with a statewide EHR |
 | RHT Program IT advance funds can support the capital investment — this is an explicitly authorized use of RHT funds | Vermont's diverse provider landscape (hospitals, FQHCs, private practices, mental health agencies) may not all be able to adopt a single platform |
 
-*Figure 4.6 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.*
+*Figure 4.5 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.*
 
 The feasibility assessment's most important analytical question is whether FHIR-based interoperability — the national standard for health data exchange that is rapidly maturing — can deliver the data sharing Vermont needs without the cost and disruption of a statewide EHR migration. If FHIR can deliver real-time, bi-directional data exchange across Vermont's four EHR platforms at an acceptable implementation cost, the case for a single statewide EHR weakens significantly. Section 4 develops the FHIR picture. AHS's feasibility assessment should produce a clear answer on this question by 2026-2027 — in time to inform the 2028 Strategic Plan.
 
@@ -1769,7 +1768,7 @@ Vermont's RHT Program IT advance investments address this gap directly. The prog
 | Limited / no FHIR | Smaller community hospitals on TruBridge legacy; most Designated Mental Health Agencies; many skilled nursing facilities; independent primary care practices on older EHR versions |
 | FHIR investment planned (RHT Program) | Rural and independent practices; smaller CAHs; targeted technical assistance through Vermont CIN shared services |
 
-*Figure 4.7 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Presentation January 2025; Vermont RHT Program Application; GMCB HIE connectivity criteria.*
+*Figure 4.6 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Presentation January 2025; Vermont RHT Program Application; GMCB HIE connectivity criteria.*
 
 ## **AI and Digital Health Technologies — Vermont's Targeted Investment Strategy**
 
@@ -1891,7 +1890,7 @@ Vermont's Statewide Health Care Delivery Strategic Plan must specify a technolog
 |                              |   decisions, ACO budget data                                 |
 +------------------------------+--------------------------------------------------------------+
 
-*Figure 4.8 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.*
+*Figure 4.7 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.*
 
 Two observations about this architecture are important for Vermont's technology planning. First, layers 3 and above represent target states, not current states. Vermont's current technology infrastructure is solid at Layers 1 and 2, developing at Layer 4, and nascent at Layers 3 and 5. The RHT Program, AHEAD requirements, and the AHS-GMCB analytics vendor procurement are all investments in accelerating the build-out from Layer 1-2 completeness toward Layer 3-5 capability. The Statewide Strategic Plan's technology section should be explicit about which layers are complete, which are under development, and what the completion timeline is.
 
@@ -1906,7 +1905,7 @@ Chapter 4's data-infrastructure argument is best understood by building on the a
 | Compare EHR vendors, model adoption cost and 5-year ROI, and audit a record's USCDI data quality | **EMR/EHR Lab** — `/research-lab/interoperability?tab=emr` | Why "buying an EHR" is a financial and data-quality decision, not just a software purchase — and where the documentation burden comes from. |
 | Weigh a single statewide EHR against FHIR interoperability across Vermont's existing platforms | **Statewide EHR Deployment Modeler** — `/research-lab/interoperability?tab=statewide-ehr` | The Act 167 feasibility question: whether FHIR can deliver the data sharing without the cost and disruption of a statewide migration. |
 
-*Figure 4.9 — Hands-on platform tools for the Technology Pillar.*
+*Figure 4.8 — Hands-on platform tools for the Technology Pillar.*
 
 ## **Implications for You**
 
@@ -2646,7 +2645,6 @@ A care management program that prevents 50 hospitalizations in a population of 1
 **32.3%** — VT Potentially Avoidable ED Visits
 :::
 
-*Figure 7.2 — The economics of prevention under value-based payment. Inpatient and ED costs are approximate averages and vary by DRG and acuity; the ROI range reflects well-designed ACO care-management programs. Sources: CMS; GMCB; HTR analysis.*
 
 ## **Economics Pillar Implementation Matrix**
 
@@ -2661,7 +2659,7 @@ The following matrix provides implementation guidance for the key Economics pill
 | Commercial payer VBC contract negotiation | $75K-$200K per contract | 6-12 months | 18-36 months | Vermont Blue Cross VBC arrangements; MVP Health Care negotiations |
 | Reference-based pricing methodology (state level) | $500K-$2M state cost | 18-24 months | FY2027: systemwide savings | Vermont mandatory RBP FY2027; Oliver Wyman: $300M+ annual projection |
 
-*Figure 7.3 — Economics pillar implementation matrix. Sources: HTR Research Lab; Oliver Wyman Act 167 Report; Vermont AHEAD documentation.*
+*Figure 7.2 — Economics pillar implementation matrix. Sources: HTR Research Lab; Oliver Wyman Act 167 Report; Vermont AHEAD documentation.*
 
 ## **APM Readiness Assessment — The 30-Dimension Framework**
 
@@ -2704,7 +2702,7 @@ The VBC Contract Review Checklist (available in the Implementation Toolkit) cove
 | Carve-outs | What services are excluded from the shared savings calculation? High-cost drugs? Mental health carve-outs? Specialty carve-outs? Each carve-out reduces the organization's ability to manage total cost of care and reduces the savings opportunity. |
 | Reconciliation timing | When are shared savings or losses settled — annually, semi-annually, quarterly? Reconciliation timing affects cash flow planning and the organization's ability to invest shared savings in care improvement programs. |
 
-*Figure 7.4 — APM contract review framework: provisions and key questions. Source: HTR Advisory framework.*
+*Figure 7.3 — APM contract review framework: provisions and key questions. Source: HTR Advisory framework.*
 
 ## **Hospital Financial Modeling Under Global Budgets — The Vermont Framework**
 
@@ -2725,7 +2723,7 @@ Under a global budget, a Vermont hospital's annual revenue is set prospectively.
 | Case mix index — capture higher-acuity cases | Community investment ROI — SDOH programs that reduce utilization have direct financial return |
 | Operating margin per adjusted discharge | Operating margin within global budget — sustainability within fixed revenue |
 
-*Figure 7.5 — Financial metrics transformation: FFS versus global budget environment. Source: HTR's Economics pillar framework.*
+*Figure 7.4 — Financial metrics transformation: FFS versus global budget environment. Source: HTR's Economics pillar framework.*
 
 ### **The Hospital Financial Stress Test Model**
 
@@ -2752,7 +2750,7 @@ The following framework structures the financial case for transformation investm
 | Primary care investment (PCMH enhanced payments) | Reduces hospitalizations and specialty care through better chronic disease management and early intervention | Blueprint ROI study: $5.8M reduction in medical expenditure per $1M invested. At this ratio, $3M in Blueprint PCMH investment reduces system costs by $17.4M. | Vermont AHEAD primary care investment mandate: EAST Fund investment in primary care is essentially a system investment with documented 5.8:1 ROI in Vermont's own experience. |
 | Telehealth for rural access | Reduces transportation-related care avoidance and enables earlier intervention before crisis; reduces specialist transport costs for rural hospitals | Travel cost savings + avoided emergency transport + reduced length of stay for patients manageable via telehealth specialty consultation. RPM: each prevented CHF hospitalization saves $15,000. | Vermont RHT Program RPM grants: CHF readmission prevention via RPM in a population of 200 high-risk patients, preventing 10% of 30-day readmissions at 30% readmission rate, saves $90,000/year — ROI positive at $10,000/year RPM program cost. |
 
-*Figure 7.6 — Transformation investment ROI framework with Vermont examples. Sources: HTR's Economics pillar framework; Blueprint for Health ROI study; CMS cost data; Vermont data from AHS Transformation Reports.*
+*Figure 7.5 — Transformation investment ROI framework with Vermont examples. Sources: HTR's Economics pillar framework; Blueprint for Health ROI study; CMS cost data; Vermont data from AHS Transformation Reports.*
 
 ## **Making Care Primary — Vermont's Primary Care Economics**
 
@@ -2772,7 +2770,7 @@ Chapter 7's VBC financial mechanics — shared savings, risk, contract analysis,
 | Stress-test a hospital's finances against reference-based pricing and global budget scenarios | **Hospital Financial Stress Test** — `/research-lab/policy-quality?tab=scorecard` | The years the hospital is thinnest. For most Vermont hospitals that is FY2027-28, not the FY2030 destination. |
 | Track capital committed against each pillar and find where funding runs ahead of dependency order | **Investment Tracker** — `/investment-tracker` | Money moving faster than the sequence is the early signal of premature investment. |
 
-*Figure 7.7 — Hands-on platform tools for the Economics Pillar in practice.*
+*Figure 7.6 — Hands-on platform tools for the Economics Pillar in practice.*
 
 ## **Implications for You**
 
@@ -5887,21 +5885,20 @@ Figure 3.5 — Hands-on platform tools for the Policy Pillar in practice.
 
 Figure 4.1 — Vermont's three-layer health data infrastructure. Source: GMCB VHCURES documentation; Vermont HIE Strategic Plan.
 
-Figure 4.2 — VHCURES data coverage summary. Commercial coverage is partial because ERISA exempts self-insured employers; extracts hold up to five years of eligibility and paid claims. Source: GMCB VHCURES documentation.
 
-Figure 4.3 — VHCURES structural limitations and required improvements. Sources: GMCB VHCURES data documentation; Oliver Wyman Act 167 Report; AHS Transformation Reports; Act 68 of 2025.
+Figure 4.2 — VHCURES structural limitations and required improvements. Sources: GMCB VHCURES data documentation; Oliver Wyman Act 167 Report; AHS Transformation Reports; Act 68 of 2025.
 
-Figure 4.4 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering Committee statutory mandate; AHS January 2025 Legislative Presentation; DVHA HIE governance documents.
+Figure 4.3 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering Committee statutory mandate; AHS January 2025 Legislative Presentation; DVHA HIE governance documents.
 
-Figure 4.5 — The UHDS three-layer architecture. Each layer is dependent on the one below it. Sources: Vermont UHDS Transition Plan; DVHA HIE program documentation.
+Figure 4.4 — The UHDS three-layer architecture. Each layer is dependent on the one below it. Sources: Vermont UHDS Transition Plan; DVHA HIE program documentation.
 
-Figure 4.6 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.
+Figure 4.5 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.
 
-Figure 4.7 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Presentation January 2025; Vermont RHT Program Application; GMCB HIE connectivity criteria.
+Figure 4.6 — Vermont FHIR compliance landscape (estimated as of 2026). Sources: AHS Legislative Presentation January 2025; Vermont RHT Program Application; GMCB HIE connectivity criteria.
 
-Figure 4.8 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.
+Figure 4.7 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.
 
-Figure 4.9 — Hands-on platform tools for the Technology Pillar.
+Figure 4.8 — Hands-on platform tools for the Technology Pillar.
 
 Figure 5.1 — Vermont's three priority FHIR use cases. Sources: CMS Interoperability and Patient Access Rule; ONC 21st Century Cures Rule; the Technology pillar framework.
 
@@ -5939,17 +5936,16 @@ Figure 6.13 — Hands-on platform tools for the Economics Pillar.
 
 Figure 7.1 — APM shared savings calculation framework. Source: HTR's APM Shared Savings Calculator methodology; CMS ACO model documentation.
 
-Figure 7.2 — The economics of prevention under value-based payment. Inpatient and ED costs are approximate averages and vary by DRG and acuity; the ROI range reflects well-designed ACO care-management programs. Sources: CMS; GMCB; HTR analysis.
 
-Figure 7.3 — Economics pillar implementation matrix. Sources: HTR Research Lab; Oliver Wyman Act 167 Report; Vermont AHEAD documentation.
+Figure 7.2 — Economics pillar implementation matrix. Sources: HTR Research Lab; Oliver Wyman Act 167 Report; Vermont AHEAD documentation.
 
-Figure 7.4 — APM contract review framework: provisions and key questions. Source: HTR Advisory framework.
+Figure 7.3 — APM contract review framework: provisions and key questions. Source: HTR Advisory framework.
 
-Figure 7.5 — Financial metrics transformation: FFS versus global budget environment. Source: HTR's Economics pillar framework.
+Figure 7.4 — Financial metrics transformation: FFS versus global budget environment. Source: HTR's Economics pillar framework.
 
-Figure 7.6 — Transformation investment ROI framework with Vermont examples. Sources: HTR's Economics pillar framework; Blueprint for Health ROI study; CMS cost data; Vermont data from AHS Transformation Reports.
+Figure 7.5 — Transformation investment ROI framework with Vermont examples. Sources: HTR's Economics pillar framework; Blueprint for Health ROI study; CMS cost data; Vermont data from AHS Transformation Reports.
 
-Figure 7.7 — Hands-on platform tools for the Economics Pillar in practice.
+Figure 7.6 — Hands-on platform tools for the Economics Pillar in practice.
 
 Figure 8.1 — Vermont Blueprint for Health: three integrated components. Sources: Blueprint for Health website; Vermont Blueprint Overview (GMCB, 2022); Blueprint Annual Report 2024.
 
