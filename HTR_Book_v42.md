@@ -310,7 +310,7 @@ Vermont's AHEAD technology infrastructure addresses this directly: VHCURES provi
 
 ### **Sequencing Failure 3: The Cascade**
 
-The two failures above did not operate independently. They compounded. Because participation was optional, OneCare could not achieve the provider network coverage required to manage total cost of care. Because it could not manage total cost of care, it could not demonstrate savings. Because it could not demonstrate savings, it could not attract the capital to build the technology infrastructure that might have allowed it to manage costs. Because it lacked that technology, care management remained limited, financial reporting remained inadequate, and clinical value remained undemonstrated. Because clinical value was undemonstrated, skeptical providers had no reason to join. Which returned the cascade to its starting point.
+The two failures above did not operate independently. They compounded. Because participation was optional, OneCare could not achieve the provider network coverage required to manage total cost of care. Because it could not manage the total cost of care, it could not demonstrate savings. Because it could not demonstrate savings, it could not attract the capital to build the technology infrastructure that might have allowed it to manage costs. Because it lacked that technology, care management remained limited, financial reporting remained inadequate, and clinical value remained undemonstrated. Because clinical value was undemonstrated, skeptical providers had no reason to join. Which returned the cascade to its starting point.
 
 | Sequencing Gap | Structural Error | Direct Consequence | Cascade Effect |
 | :---- | :---- | :---- | :---- |
@@ -389,14 +389,7 @@ The test is whether there are two *distinct causal mechanisms* or one mechanism 
 
 :::
 
-| From ↓ / To → | Policy | Technology | Economics | Clinical | Equity | Operations |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| **Policy** | — | — | [ENABLES] mandatory authority | — | [ENABLES] accountability mandates | [REQUIRES] statutory deadlines |
-| **Technology** | — | — | [ENABLES] VBC financial management | [ENABLES] risk stratification | [ENABLES] demographic stratification | — |
-| **Economics** | — | [REQUIRES] data infrastructure | — | [DRIVES] financial rationality | [REQUIRES] social risk adjustment | — |
-| **Clinical** | — | — | — | — | [ENABLES] access expansion | [REQUIRES] execution infrastructure |
-| **Equity** | [CONSTRAINS] with justice reviews | — | — | [CONSTRAINS] with cultural competency | — | — |
-| **Operations** | [ENABLES] data feedback loops | [REQUIRES] workforce to run infrastructure | — | — | — | — |
+![The architecture of interdependency: a six-by-six matrix of the fifteen dependency relationships between the pillars, read From-row to To-column.](book-build/figures/fig_1_3_interdependency.png)
 
 *Figure 1.3 — The architecture of interdependency: the fifteen dependency relationships, read From-row to To-column. Source: six-pillar framework documentation; Vermont Health Transformation / HTR (2026).*
 
