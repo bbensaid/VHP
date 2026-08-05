@@ -58,7 +58,7 @@ They were not wrong.
 
 Oliver Wyman's lead consultant opened with the financial trajectory. Nine of Vermont's fourteen hospitals were already reporting operating losses, with the worst reaching negative 8.9%. If current trends continued — the same trends that had been building for a decade, the trends that voluntary reform had been addressing for years without reversing — thirteen of the fourteen would be in operating losses by 2028. The cumulative five-year system deficit ranged from $700 million in the optimistic scenario to $2.4 billion in the realistic one.
 
-The next slide showed premiums. The average silver exchange plan premium had risen from $456 per month in 2018 to $948 in 2024 — a 108% increase. Median household income had grown 22% over the same period. Out-of-pocket maximums had more than doubled. The University of Vermont Medical Center, with approximately 50% of the state's hospital market share, had charged commercial payers roughly 417% of Medicare rates for outpatient services in 2022, according to the RAND hospital price data cited in the Oliver Wyman analysis — among the highest such ratios in the country, and consistent with RAND's separate finding that UVMMC is the most expensive hospital in Vermont. Those charges flowed directly into the premiums that Vermont families were paying, with no regulatory brake.
+The next slide showed premiums. The average silver exchange plan premium had risen from $456 per month in 2018 to $948 in 2024 — a 108% increase. Median household income had grown 22% over the same period. Out-of-pocket maximums had more than doubled. The University of Vermont Medical Center, with approximately 50% of the state's hospital market share, had charged commercial payers roughly 417% of Medicare rates for outpatient services in 2022, according to the RAND hospital price data cited in the Oliver Wyman analysis — among the highest such ratios in the country, and consistent with RAND's separate finding that UVMMC is the most expensive hospital in Vermont. Those charges flowed directly into the premiums that Vermont families were paying, with no regulatory brakes.
 
 The final slide showed the demographics. Vermont's working-age population was projected to decline 13% by 2040 — from 367,000 to approximately 318,000 — while the over-65 population rose from 21.7% toward 30% of the state's total. This shift would progressively move patients from commercial insurance, which pays above cost and funds the cross-subsidy that sustains hospitals, into Medicare and Medicaid, both of which reimburse below cost. The slide did not say the words "system collapse." It did not need to.
 
@@ -818,7 +818,7 @@ The execution-sequence argument is best understood by manipulating it, not just 
 | Quantify where reform is losing momentum and which pillar is the binding constraint | **[Transformation Friction Index](https://healthtransformationreview.org/transformation-friction-index)** | Identify your own "Technology gate" bottleneck — the chapter's central Vermont vulnerability — before it becomes a financial one. |
 | Model how one pillar's shortfall propagates through the other five over time | **Impact Simulation** — `/impact-simulation` | The lag: a Technology gap shows up in Economics results a year later, which is why it is missed. |
 
-*Figure 1.H — Hands-on platform tools for Chapter 1: working the execution-sequence argument on the HTR platform.*
+*Figure 1.9 — Hands-on platform tools for Chapter 1: working the execution-sequence argument on the HTR platform.*
 
 ::: {custom-style="CalloutTry"}
 **TRY THIS — Reproduce the OneCare cascade.**
@@ -1237,7 +1237,7 @@ Chapter 2's legislative architecture becomes concrete when you model it. The pla
 | Model an 1115 waiver or all-payer global budget design against a pre-loaded state scenario | **Policy Simulator** — `/research-lab/policy-quality?tab=policy` | Compare a "more funding, same structure" path against a structural-reform path — the Oliver Wyman three-imperatives test. |
 | Trace how a statutory mandate cascades into operational deadlines | **Vermont Act 167** — `/vermont-act-167` and **Act 68** — `/vermont-act-68` | Map each statutory deadline to the pillar it gates. |
 
-*Figure 2.H — Hands-on platform tools for the Policy Pillar.*
+*Figure 2.5 — Hands-on platform tools for the Policy Pillar.*
 
 ## **Implications for You**
 
@@ -1459,7 +1459,7 @@ Chapter 3 moves from policy architecture to federal-state practice. These tools 
 | Model the H.R. 1 funding cliff for a state's Medicaid program | **H.R. 1 Cliff Scenario** — `/research-lab/policy-quality?tab=hr1-cliff` | How federal policy shifts the financial assumptions every downstream pillar depends on. |
 | Test eligibility outcomes for a specific household | **Medicaid Eligibility Simulator** — `/medicaid-eligibility-simulator` | Where coverage transitions create gaps the clinical and equity pillars must absorb. |
 
-*Figure 3.H — Hands-on platform tools for the Policy Pillar in practice.*
+*Figure 3.5 — Hands-on platform tools for the Policy Pillar in practice.*
 
 ## **Implications for You**
 
@@ -1906,7 +1906,7 @@ Chapter 4's data-infrastructure argument is best understood by building on the a
 | Compare EHR vendors, model adoption cost and 5-year ROI, and audit a record's USCDI data quality | **EMR/EHR Lab** — `/research-lab/interoperability?tab=emr` | Why "buying an EHR" is a financial and data-quality decision, not just a software purchase — and where the documentation burden comes from. |
 | Weigh a single statewide EHR against FHIR interoperability across Vermont's existing platforms | **Statewide EHR Deployment Modeler** — `/research-lab/interoperability?tab=statewide-ehr` | The Act 167 feasibility question: whether FHIR can deliver the data sharing without the cost and disruption of a statewide migration. |
 
-*Figure 4.H — Hands-on platform tools for the Technology Pillar.*
+*Figure 4.9 — Hands-on platform tools for the Technology Pillar.*
 
 ## **Implications for You**
 
@@ -2095,7 +2095,7 @@ Chapter 5's implementation reality — AI governance, CDS, and clinical data exc
 | Exercise clinical data exchange and HL7 messaging | **Clinical Data Exchange Lab** — `/research-lab/vbc-clinical-quality?tab=hl7` | The integration work that makes near-real-time care management possible. |
 | Test whether FHIR-based exchange can deliver what a statewide EHR would, at lower cost | **FHIR Interoperability Lab** — `/research-lab/interoperability?tab=fhir` | Where FHIR closes the gap and where it does not — the question Vermont's feasibility assessment must answer. |
 
-*Figure 5.H — Hands-on platform tools for the Technology Pillar in practice.*
+*Figure 5.4 — Hands-on platform tools for the Technology Pillar in practice.*
 
 ## **Implications for You**
 
@@ -2516,7 +2516,7 @@ Chapter 6's payment-reform argument — reference-based pricing, global budgets,
 | Design an APM and model a 5-year global-budget transition with Vermont's All-Payer TCOC preset | **APM Design Lab** — `/research-lab/payment-models?tab=apm-design` and **Global Budget Transition Modeler** — `/research-lab/payment-models?tab=gb-transition` | How a binding revenue envelope changes the volume incentive the chapter describes. |
 | Stress-test a hospital's finances under RBP, global-budget, and Medicaid-cut scenarios | **Hospital Financial Stress Test** — `/research-lab/policy-quality?tab=scorecard` | Reproduce the Oliver Wyman finding: 13 of 14 hospitals in operating loss by 2028 under the conservative scenario. |
 
-*Figure 6.H — Hands-on platform tools for the Economics Pillar.*
+*Figure 6.13 — Hands-on platform tools for the Economics Pillar.*
 
 ## **Implications for You**
 
@@ -2772,7 +2772,7 @@ Chapter 7's VBC financial mechanics — shared savings, risk, contract analysis,
 | Stress-test a hospital's finances against reference-based pricing and global budget scenarios | **Hospital Financial Stress Test** — `/research-lab/policy-quality?tab=scorecard` | The years the hospital is thinnest. For most Vermont hospitals that is FY2027-28, not the FY2030 destination. |
 | Track capital committed against each pillar and find where funding runs ahead of dependency order | **Investment Tracker** — `/investment-tracker` | Money moving faster than the sequence is the early signal of premature investment. |
 
-*Figure 7.H — Hands-on platform tools for the Economics Pillar in practice.*
+*Figure 7.7 — Hands-on platform tools for the Economics Pillar in practice.*
 
 ## **Implications for You**
 
@@ -3047,7 +3047,7 @@ Chapter 8's clinical-redesign argument — the Blueprint, Collaborative Care, pa
 | Model HEDIS measure performance against NCQA benchmarks | **VBC Quality Measures** — `/research-lab/vbc-clinical-quality?tab=quality` | Which measures move population outcomes vs. which only move scores. |
 | Run risk stratification on a live panel rather than reading the methodology | **Risk Stratification Engine** — `/research-lab/interoperability?tab=risk` | How many patients change tier once social risk is included alongside clinical risk. |
 
-*Figure 8.H — Hands-on platform tools for the Clinical Pillar.*
+*Figure 8.7 — Hands-on platform tools for the Clinical Pillar.*
 
 ## **Implications for You**
 
@@ -3289,7 +3289,7 @@ Chapter 9's quality mechanics — HEDIS improvement, value vs. waste, optimizati
 | Separate high-value from low-value care across services | **High vs. Low Value Care** — `/research-lab/vbc-clinical-quality?tab=value` | Where reducing volume improves both margin and outcomes. |
 | Run risk stratification against a panel and compare tiers to current care-management assignment | **Risk Stratification Engine** — `/research-lab/interoperability?tab=risk` | Patients in a high tier who are receiving no care management — the gap quality measures do not surface. |
 
-*Figure 9.H — Hands-on platform tools for the Clinical Pillar in practice.*
+*Figure 9.6 — Hands-on platform tools for the Clinical Pillar in practice.*
 
 ## **Implications for You**
 
@@ -3554,7 +3554,7 @@ Chapter 10's equity argument — closing gaps rather than averaging them — is 
 | Compute the HEROI composite across access, quality, outcome, SDOH burden, and trust | **Health Equity Studio** — `/research-lab/population-equity?tab=equity` | Whether an intervention closes the gap or just raises the average while the gap persists. |
 | Model disease progression and intervention ROI for a defined cohort | **Population Health Modeler** — `/research-lab/population-equity?tab=population` | How upstream SDOH investment changes 5–10 year outcomes for the highest-risk segment. |
 
-*Figure 10.H — Hands-on platform tools for the Equity Pillar.*
+*Figure 10.7 — Hands-on platform tools for the Equity Pillar.*
 
 ## **Implications for You**
 
@@ -3592,7 +3592,7 @@ The National Committee for Quality Assurance (NCQA) has developed HEDIS stratifi
 | Maternal and reproductive health | Prenatal and postpartum care; well-child visits; adolescent well-care; prenatal depression screening | Income; race/ethnicity (BIPOC maternal outcomes nationally and in Vermont below white outcomes); geographic (rural access barriers to OB care) | VHCURES; Blueprint Women's Health Initiative data |
 | Care coordination | 30-day readmission rate; transitions of care; medication reconciliation post-discharge | Income (Medicaid patients have higher readmission rates nationally); geographic (distance from discharge follow-up resources) | VHCURES; GMCB hospital discharge data (VUHDDS) |
 
-*Figure 10.7 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specifications; AHS Health Equity Data Report (January 2025); Blueprint for Health data.*
+*Figure 10.8 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specifications; AHS Health Equity Data Report (January 2025); Blueprint for Health data.*
 
 ## **Equity Pillar Implementation Matrix**
 
@@ -3607,7 +3607,7 @@ The following matrix provides implementation guidance for the key Equity pillar 
 | Health equity impact assessment process | $25K-$50K one-time | 3 months | Immediate: redesign cost avoidance | Act 68 HCAC consultation requirement; equity-as-design-constraint |
 | Race/ethnicity data quality improvement (VHCURES) | $20K-$60K annually | 6 months | 12 months | Vermont VHCURES: incomplete race/ethnicity fields documented in VDH 2025 |
 
-*Figure 10.8 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.*
+*Figure 10.9 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.*
 
 ### **The Data Collection Challenge — Getting Demographic Data Right**
 
@@ -3664,7 +3664,7 @@ The Health Equity Studio implements the following five-step disparity closure pr
 | 4. Implementation with equity lens | Execute interventions with explicit equity targets: not 'increase primary care access' but 'increase Northeast Kingdom Medicaid patient primary care visit rate from 72% to 80% within 18 months' | Ongoing | Blueprint field staff set equity targets by HSA; AHS HSA Coordinators track progress; GMCB analytics vendor enables real-time monitoring |
 | 5. Accountability and iteration | Report disparity metrics alongside average metrics in all quality reporting. If a disparity is widening despite intervention, re-examine root cause attribution and intervention design. | Quarterly reporting cycle | AHS monthly transformation reports to include disparity-stratified metrics; HEROI score incorporated into AHEAD quality reporting for Vermont |
 
-*Figure 10.9 — Five-step disparity closure process with Vermont applications. Source: HTR's Health Equity Studio methodology.*
+*Figure 10.10 — Five-step disparity closure process with Vermont applications. Source: HTR's Health Equity Studio methodology.*
 
 ## **Equity in VBC Contracting — Protecting Against Unintended Consequences**
 
@@ -3706,7 +3706,7 @@ In the interim, Vermont's equity analytics strategy must be pragmatic: use the b
 | Clinical practice variation by demographic | VHCURES claims (limited demographic data); VDH health equity data — requires improved race/ethnicity data collection in clinical settings |
 | Trust and patient experience | CAHPS survey data from Blueprint PCMH practices (available but limited demographic stratification) |
 
-*Figure 10.10 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VDH; Blueprint for Health; DVHA; AHS.*
+*Figure 10.11 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VDH; Blueprint for Health; DVHA; AHS.*
 
 ## **Implications for You — Equity Measurement**
 
@@ -4044,7 +4044,7 @@ Chapter 11's operations argument — administrative cost, workforce, execution �
 | Model regionalizing Vermont's 31 EMS agencies and community-paramedicine ED diversion | **EMS Transformation Modeler** — `/research-lab/knowledge-workspace?tab=ems` | How treat-and-refer and regionalization convert fragmentation into margin under global budgets. |
 | Stress-test a hospital's finances through the transition years | **Hospital Financial Stress Test** — `/research-lab/policy-quality?tab=scorecard` | Whether the operations plan survives the FY2027-28 window, which is where transformation plans usually break. |
 
-*Figure 11.H — Hands-on platform tools for the Operations Pillar.*
+*Figure 11.8 — Hands-on platform tools for the Operations Pillar.*
 
 ## **Implications for You**
 
@@ -4083,7 +4083,7 @@ Under FFS, revenue is determined by what care the organization delivers. Under V
 | Incorrect benchmark attribution | Attribution list errors inflate or deflate the risk adjustment factor applied to your benchmark | Incorrect RAF produces a benchmark that doesn't reflect your population's actual cost burden | Compare attribution list to actual patient panel; use clinical data to validate risk adjustment; submit corrected diagnoses codes through formal channels |
 | Retroactive attribution changes | Payer changes attribution methodology mid-contract, shifting patients in or out of your attributed population | Shared savings calculations change unexpectedly after performance year ends | Negotiate prospective attribution methodology in contract; require prior notice of methodology changes; maintain your own attribution model to detect changes |
 
-*Figure 11.8 — Attribution error taxonomy and remediation. Source: HTR's Operations pillar framework; ACO REACH and MSSP operational guidance.*
+*Figure 11.9 — Attribution error taxonomy and remediation. Source: HTR's Operations pillar framework; ACO REACH and MSSP operational guidance.*
 
 ### **Total Cost of Care Monitoring — Seeing What You Cannot Bill**
 
@@ -4200,7 +4200,7 @@ The following matrix provides implementation guidance for the key Operations pil
 | Service line rationalization and CON modernization | $100K-$250K state cost | 12-24 months | 24-36 months | Vermont Act 68 CON streamlining; EMS regionalization framework |
 | CIN shared services model | $500K-$2M network setup | 18-36 months | 36-48 months | Vermont CIN: RHT-funded; shared analytics, IT, care management for 14 hospitals |
 
-*Figure 11.9 — Operations pillar implementation matrix. Sources: Vermont AHS Transformation Reports (August, November 2025); RHRC engagement; Oliver Wyman Act 167 Report.*
+*Figure 11.10 — Operations pillar implementation matrix. Sources: Vermont AHS Transformation Reports (August, November 2025); RHRC engagement; Oliver Wyman Act 167 Report.*
 
 ## **Implications for You — Revenue Cycle and Coding**
 
@@ -4388,7 +4388,7 @@ This chapter argues that knowledge without implementation infrastructure produce
 | Assemble your own analysis using the book's frameworks rather than reading someone else's | **[Research Workspace](https://healthtransformationreview.org/research-lab/knowledge-workspace?tab=workspace)** | How quickly a framework you understood abstractly becomes concrete once you supply your own organization's numbers. |
 | Ask a question in plain language and get routed to the framework, chapter, and tool that answer it | **[AI Analyst](https://healthtransformationreview.org/chat)** | Use it as the change-management aid this chapter describes: the fastest way to bring a colleague who has not read the book up to the point where they can act. |
 
-*Figure 12.H — Hands-on platform tools for Chapter 12: turning knowledge into implementation.*
+*Figure 12.4 — Hands-on platform tools for Chapter 12: turning knowledge into implementation.*
 
 ## **Implications for You**
 
@@ -4598,7 +4598,7 @@ A forecast is only useful if you can watch it resolve. These tools track the ind
 | Follow the policy and regulatory record as it is made | **[The Wire](https://healthtransformationreview.org/the-wire)** | GMCB decisions, AHS reports, and CMS model changes — the raw material from which the next version of this chapter's forecast will be written. |
 | Score a state's readiness on the six pillars and test the chapter's scenarios yourself | **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** | What has to be true, pillar by pillar, for the optimistic scenario rather than the pessimistic one to hold. |
 
-*Figure 13.H — Hands-on platform tools for Chapter 13: tracking the forecast against the record.*
+*Figure 13.5 — Hands-on platform tools for Chapter 13: tracking the forecast against the record.*
 
 ## **Implications for You**
 
@@ -4734,7 +4734,7 @@ Political risk is easier to argue about than to measure. These tools turn the ch
 | Model what happens to the transformation if one pillar's political support is withdrawn | **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** | Drop the Policy score and watch Economics fall with it. The dependency structure is why political risk to one pillar is not contained to that pillar. |
 | Quantify where reform is losing momentum before it becomes a political story | **[Transformation Friction Index](https://healthtransformationreview.org/transformation-friction-index)** | Rising friction in a pillar is usually visible in the operating data a year before it becomes a legislative problem. |
 
-*Figure 14.H — Hands-on platform tools for Chapter 14: monitoring political risk.*
+*Figure 14.3 — Hands-on platform tools for Chapter 14: monitoring political risk.*
 
 ## **Implications for You**
 
@@ -4993,7 +4993,7 @@ A portfolio is easier to manage when you can see it. The [HTR platform](https://
 | Score the portfolio's six-pillar status the way an outside reviewer would | **Transformation Scorecard** — `/research-lab/knowledge-workspace?tab=scorecard` | Divergence between the PMO's status reporting and the scorecard is itself a governance finding. |
 | Model what a single component slipping does to the rest of the portfolio | **Impact Simulation** — `/impact-simulation` | Which components have no slack: the ones whose slip moves other pillars' outcomes. |
 
-*Figure 15.H — Hands-on platform tools for Chapter 15: running the transformation portfolio.*
+*Figure 15.8 — Hands-on platform tools for Chapter 15: running the transformation portfolio.*
 
 ::: {custom-style="CalloutTry"}
 **TRY THIS — Find your own portfolio's binding constraint.**
@@ -5189,7 +5189,7 @@ This chapter specifies an organizational design. The tools below let a system ar
 | Track AHS's delivery against the statutory deadlines this chapter enumerates | **[HTI Dashboard](https://healthtransformationreview.org/hti-dashboard)** | Whether Operations-pillar capacity is rising fast enough to meet the December 2028 Strategic Plan obligation. |
 | Test what the restructuring is worth by removing it | **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** | Score a state with strong Policy and Economics but weak Operations. The composite collapse is the argument for this chapter in one number. |
 
-*Figure 16.H — Hands-on platform tools for Chapter 16: testing the AHS restructuring design.*
+*Figure 16.7 — Hands-on platform tools for Chapter 16: testing the AHS restructuring design.*
 
 ## **Implications for You**
 
@@ -5861,7 +5861,7 @@ Figure 1.7 — Five sequencing errors: the diagnostic pattern, early-warning sig
 
 Figure 1.8 — Vermont's transformation timeline, by pillar. Source: HTR Analysis (2026); Act 68 of 2025; AHEAD State Agreement.
 
-Figure 1.H — Hands-on platform tools for Chapter 1: working the execution-sequence argument on the HTR platform.
+Figure 1.9 — Hands-on platform tools for Chapter 1: working the execution-sequence argument on the HTR platform.
 
 Figure T.1 — Vermont Healthcare Transformation Timeline: 2022–2035. Sources: Vermont Legislature, CMS, AHS, GMCB.
 
@@ -5873,7 +5873,7 @@ Figure 2.3 — Act 68 statutory implementation timeline. Source: Act 68 of 2025.
 
 Figure 2.4 — State reference-based pricing and rate-setting programs compared. Sources: state program documentation; RAND; GMCB.
 
-Figure 2.H — Hands-on platform tools for the Policy Pillar.
+Figure 2.5 — Hands-on platform tools for the Policy Pillar.
 
 Figure 3.1 — CMMI model success factors: what distinguishes models that produce results from those that don't. Source: HTR analysis of CMMI evaluation literature; CMS model documentation.
 
@@ -5883,7 +5883,7 @@ Figure 3.3 — Policy strategy functions for healthcare organizations. Source: H
 
 Figure 3.4 — H.R. 1 Medicaid provisions: timeline, financial impact, and Vermont implications. Sources: KFF analysis; CBO estimates; Pew Charitable Trusts (January 2026).
 
-Figure 3.H — Hands-on platform tools for the Policy Pillar in practice.
+Figure 3.5 — Hands-on platform tools for the Policy Pillar in practice.
 
 Figure 4.1 — Vermont's three-layer health data infrastructure. Source: GMCB VHCURES documentation; Vermont HIE Strategic Plan.
 
@@ -5901,7 +5901,7 @@ Figure 4.7 — Vermont FHIR compliance landscape (estimated as of 2026). Sources
 
 Figure 4.8 — Vermont target technology architecture: five-layer model, top (advanced analytics) to foundation (core data assets). Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan; Oliver Wyman Act 167 Report; Vermont RHT Program Application; Act 62 and Act 68 of 2025.
 
-Figure 4.H — Hands-on platform tools for the Technology Pillar.
+Figure 4.9 — Hands-on platform tools for the Technology Pillar.
 
 Figure 5.1 — Vermont's three priority FHIR use cases. Sources: CMS Interoperability and Patient Access Rule; ONC 21st Century Cures Rule; the Technology pillar framework.
 
@@ -5909,7 +5909,7 @@ Figure 5.2 — Population health CDS types and Vermont applications. Sources: th
 
 Figure 5.3 — Technology pillar implementation matrix. Sources: HTR Advisory; Vermont RHT Program (2025); CMS interoperability rule.
 
-Figure 5.H — Hands-on platform tools for the Technology Pillar in practice.
+Figure 5.4 — Hands-on platform tools for the Technology Pillar in practice.
 
 Figure 6.1 — Vermont hospital commercial pricing vs. Medicare and break-even benchmarks. Sources: GMCB Act 68 RBP Update (February 2026); RAND Hospital Price Transparency Study.
 
@@ -5935,7 +5935,7 @@ Figure 6.11 — Estimated sources of direct and indirect savings from Vermont ho
 
 Figure 6.12 — Three-phase APM transition model for Vermont healthcare organizations.
 
-Figure 6.H — Hands-on platform tools for the Economics Pillar.
+Figure 6.13 — Hands-on platform tools for the Economics Pillar.
 
 Figure 7.1 — APM shared savings calculation framework. Source: HTR's APM Shared Savings Calculator methodology; CMS ACO model documentation.
 
@@ -5949,7 +5949,7 @@ Figure 7.5 — Financial metrics transformation: FFS versus global budget enviro
 
 Figure 7.6 — Transformation investment ROI framework with Vermont examples. Sources: HTR's Economics pillar framework; Blueprint for Health ROI study; CMS cost data; Vermont data from AHS Transformation Reports.
 
-Figure 7.H — Hands-on platform tools for the Economics Pillar in practice.
+Figure 7.7 — Hands-on platform tools for the Economics Pillar in practice.
 
 Figure 8.1 — Vermont Blueprint for Health: three integrated components. Sources: Blueprint for Health website; Vermont Blueprint Overview (GMCB, 2022); Blueprint Annual Report 2024.
 
@@ -5963,7 +5963,7 @@ Figure 8.5 — Vermont clinical quality measurement framework: priority measures
 
 Figure 8.6 — Clinical pillar commitments for Vermont's Statewide Health Care Delivery Strategic Plan. Sources: Act 68 of 2025; Oliver Wyman Act 167 Report; AHS Transformation Plans; Vermont RHT Program Application.
 
-Figure 8.H — Hands-on platform tools for the Clinical Pillar.
+Figure 8.7 — Hands-on platform tools for the Clinical Pillar.
 
 Figure 9.1 — NCQA PCMH recognition: six concept areas and Vermont implementation challenges. Sources: NCQA PCMH Standards and Guidelines, 2023 edition; Vermont Blueprint for Health Annual Report 2024; Oliver Wyman Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025).
 
@@ -5975,7 +5975,7 @@ Figure 9.4 — Clinical pillar in-practice implementation commitments for Vermon
 
 Figure 9.5 — Clinical pillar implementation matrix. Sources: Vermont Blueprint for Health Annual Report 2024; Vermont MHI Evaluation 2025; SAMHSA CCBHC documentation.
 
-Figure 9.H — Hands-on platform tools for the Clinical Pillar in practice.
+Figure 9.6 — Hands-on platform tools for the Clinical Pillar in practice.
 
 Figure 10.1 — Vermont geographic equity disparities: key indicators. Sources: AHS November 2025 Transformation Report; Vermont RHT Program Application; Vermont Department of Health.
 
@@ -5989,15 +5989,15 @@ Figure 10.5 — Equity as a cross-cutting dimension of all six pillars. Sources:
 
 Figure 10.6 — Vermont equity accountability framework: indicators, stratifications, and targets. Sources: Act 167; Act 68; VDH Health Equity Data Report (January 2025); AHS Transformation Reports.
 
-Figure 10.H — Hands-on platform tools for the Equity Pillar.
+Figure 10.7 — Hands-on platform tools for the Equity Pillar.
 
-Figure 10.7 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specifications; AHS Health Equity Data Report (January 2025); Blueprint for Health data.
+Figure 10.8 — Vermont HEDIS equity stratification framework. Sources: NCQA HEDIS Technical Specifications; AHS Health Equity Data Report (January 2025); Blueprint for Health data.
 
-Figure 10.8 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.
+Figure 10.9 — Equity pillar implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.
 
-Figure 10.9 — Five-step disparity closure process with Vermont applications. Source: HTR's Health Equity Studio methodology.
+Figure 10.10 — Five-step disparity closure process with Vermont applications. Source: HTR's Health Equity Studio methodology.
 
-Figure 10.10 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VDH; Blueprint for Health; DVHA; AHS.
+Figure 10.11 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VDH; Blueprint for Health; DVHA; AHS.
 
 Figure 11.1 — Vermont health system transformation governance architecture under Act 68. Sources: Act 68 of 2025; AHS Legislative Presentation (January 2025).
 
@@ -6013,11 +6013,11 @@ Figure 11.6 — Vermont workforce crisis key metrics. Sources: Vermont RHT Progr
 
 Figure 11.7 — Vermont health system transformation: comprehensive operations metrics framework. Sources: Act 68 of 2025; AHS Transformation Report (November 2025); Oliver Wyman Act 167 Report.
 
-Figure 11.H — Hands-on platform tools for the Operations Pillar.
+Figure 11.8 — Hands-on platform tools for the Operations Pillar.
 
-Figure 11.8 — Attribution error taxonomy and remediation. Source: HTR's Operations pillar framework; ACO REACH and MSSP operational guidance.
+Figure 11.9 — Attribution error taxonomy and remediation. Source: HTR's Operations pillar framework; ACO REACH and MSSP operational guidance.
 
-Figure 11.9 — Operations pillar implementation matrix. Sources: Vermont AHS Transformation Reports (August, November 2025); RHRC engagement; Oliver Wyman Act 167 Report.
+Figure 11.10 — Operations pillar implementation matrix. Sources: Vermont AHS Transformation Reports (August, November 2025); RHRC engagement; Oliver Wyman Act 167 Report.
 
 Figure 12.1 — technical infrastructure framework components and intended users. Source: technical infrastructure framework documentation.
 
@@ -6025,7 +6025,7 @@ Figure 12.2 — Kotter's change management framework applied to Vermont's health
 
 Figure 12.3 — HTR Implementation Toolkit: available tools for Strategist and Enterprise subscribers.
 
-Figure 12.H — Hands-on platform tools for Chapter 12: turning knowledge into implementation.
+Figure 12.4 — Hands-on platform tools for Chapter 12: turning knowledge into implementation.
 
 Figure 13.1 — Vermont Six-Pillar Transformation Scorecard, April 2026. Technology and Equity are the two pillars where 2026 status most diverges from the 2028 target. Full scorecard with sources: Appendix F.
 
@@ -6035,13 +6035,13 @@ Figure 13.3 — Six-pillar forecast, 2026–2035: Vermont and national. Sources:
 
 Figure 13.4 — Vermont's transformation decisions and their national implications. Sources: HTR analysis; Vermont AHEAD State Agreement; Act 68 of 2025.
 
-Figure 13.H — Hands-on platform tools for Chapter 13: tracking the forecast against the record.
+Figure 13.5 — Hands-on platform tools for Chapter 13: tracking the forecast against the record.
 
 Figure 14.1 — Early-warning signals of political risk to Vermont's reform architecture. Sources: HTR Advisory risk-monitoring framework; Act 68 of 2025; GMCB regulatory process documentation.
 
 Figure 14.2 — Political-disruption scenario planning for Vermont healthcare organizations. Sources: HTR Advisory risk assessment; Vermont political-environment analysis (April 2026).
 
-Figure 14.H — Hands-on platform tools for Chapter 14: monitoring political risk.
+Figure 14.3 — Hands-on platform tools for Chapter 14: monitoring political risk.
 
 Figure 15.1 — The project-management gap. Sources: PMI Standard for Portfolio Management (5th ed.); Oliver Wyman Act 167 Report; AHS November 2025 Transformation Report.
 
@@ -6057,7 +6057,7 @@ Figure 15.6 — Benefits-realization plan. Sources: Act 167 of 2022; PMI Standar
 
 Figure 15.7 — Business case for portfolio-management investment. Sources: PMI Pulse of the Profession (2017); Vermont RHT Program Application; Act 68 EAST Fund allocation; PMI salary data.
 
-Figure 15.H — Hands-on platform tools for Chapter 15: running the transformation portfolio.
+Figure 15.8 — Hands-on platform tools for Chapter 15: running the transformation portfolio.
 
 Figure 16.1 — Act 68 statutory requirements for the Strategic Plan. Sources: Act 68 of 2025; HCAC mandate (healthcarereform.vermont.gov).
 
@@ -6071,7 +6071,7 @@ Figure 16.5 — Proposed structure for the 2028 Statewide Strategic Plan. Source
 
 Figure 16.6 — Key parameters for the Strategic Plan. Sources: Act 68; VTDigger; Oliver Wyman Act 167 Report; Vermont RHT Program Application.
 
-Figure 16.H — Hands-on platform tools for Chapter 16: testing the AHS restructuring design.
+Figure 16.7 — Hands-on platform tools for Chapter 16: testing the AHS restructuring design.
 
 Figure A.1 — Vermont demographic transformation. Sources: Oliver Wyman Act 167 Report (2024); Vermont RHT Program Application; KFF.
 
