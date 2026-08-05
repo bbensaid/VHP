@@ -389,7 +389,14 @@ The test is whether there are two *distinct causal mechanisms* or one mechanism 
 
 :::
 
-![The architecture of interdependency: a six-by-six matrix of the fifteen dependency relationships between the pillars, read From-row to To-column.](book-build/figures/fig_1_3_interdependency.png)
+| From ↓ / To → | Policy | Technology | Economics | Clinical | Equity | Operations |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| **Policy** | — | — | [ENABLES] mandatory authority | — | [ENABLES] accountability mandates | [REQUIRES] statutory deadlines |
+| **Technology** | — | — | [ENABLES] VBC financial management | [ENABLES] risk stratification | [ENABLES] demographic stratification | — |
+| **Economics** | — | [REQUIRES] data infrastructure | — | [DRIVES] financial rationality | [REQUIRES] social risk adjustment | — |
+| **Clinical** | — | — | — | — | [ENABLES] access expansion | [REQUIRES] execution infrastructure |
+| **Equity** | [CONSTRAINS] with justice reviews | — | — | [CONSTRAINS] with cultural competency | — | — |
+| **Operations** | [ENABLES] data feedback loops | [REQUIRES] workforce to run infrastructure | — | — | — | — |
 
 *Figure 1.3 — The architecture of interdependency: the fifteen dependency relationships, read From-row to To-column. Source: six-pillar framework documentation; Vermont Health Transformation / HTR (2026).*
 
