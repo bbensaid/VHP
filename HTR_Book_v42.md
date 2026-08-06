@@ -98,7 +98,7 @@ This book uses Vermont as its primary teaching case for the reasons explained ab
 
 **Look for the framework statements, not only the Vermont data.** Each chapter makes a claim about how the pillars depend on one another that does not require Vermont to be true — for example, that technology investment must precede payment reform because payment reform without data infrastructure cannot be measured or trusted. Vermont's experience is the proof, presented in detail because detail is what makes an argument verifiable rather than asserted. But the claim itself is the point.
 
-**Use the “Implications for You” sections as your entry point.** Most chapters close by addressing different reader roles directly — hospital executives, payers, state officials, clinicians. These sections are written to apply regardless of any state context, and are often the fastest way to find the actionable content inside a Vermont-heavy chapter. If you read nothing else in a chapter, read that section, then go back for the supporting detail you need.
+**Use the "Implications for You" sections as your entry point.** Most chapters close by addressing different reader roles directly — hospital executives, payers, state officials, clinicians. These sections are written to apply regardless of any state context, and are often the fastest way to find the actionable content inside a Vermont-heavy chapter. If you read nothing else in a chapter, read that section, then go back for the supporting detail you need.
 
 In short: treat Vermont the way a business or medical textbook treats a case study. The case is specific so that the lesson does not have to be.
 
@@ -130,7 +130,7 @@ This is perhaps the strongest challenge in the book. The answer requires acknowl
 
 ### **4. The AHEAD Durability Argument**
 
-AHEAD is an eleven-year CMMI model running from 2024 through December 2035, under a single innovation-center framework that has already been modified once (the January 2026 changes extending the end date and adding new accountability requirements) and will span at least one more presidential transition before Vermont's Cohort 2 implementation even begins in January 2028. CMMI's own track record — acknowledged elsewhere in this book — includes models redesigned or discontinued mid-course. The book's response to AHEAD skepticism is that Vermont's mandatory state framework under Acts 167 and 68 remains in force even if AHEAD underperforms or is altered. That is true for the commercial and Medicaid components of Vermont's reform, which Act 68 governs directly. It is not fully true for the Medicare component specifically: Medicare global budgets exist in Vermont's framework only because AHEAD provides them, and no state statute can substitute for a federal payment model on Medicare claims. A reader assessing AHEAD durability should therefore distinguish between “Vermont's reform survives if AHEAD changes” (true, for the commercial and Medicaid pillars) and “Vermont's Medicare global budget survives if AHEAD changes” (not guaranteed, and not within any state's control).
+AHEAD is an eleven-year CMMI model running from 2024 through December 2035, under a single innovation-center framework that has already been modified once (the January 2026 changes extending the end date and adding new accountability requirements) and will span at least one more presidential transition before Vermont's Cohort 2 implementation even begins in January 2028. CMMI's own track record — acknowledged elsewhere in this book — includes models redesigned or discontinued mid-course. The book's response to AHEAD skepticism is that Vermont's mandatory state framework under Acts 167 and 68 remains in force even if AHEAD underperforms or is altered. That is true for the commercial and Medicaid components of Vermont's reform, which Act 68 governs directly. It is not fully true for the Medicare component specifically: Medicare global budgets exist in Vermont's framework only because AHEAD provides them, and no state statute can substitute for a federal payment model on Medicare claims. A reader assessing AHEAD durability should therefore distinguish between "Vermont's reform survives if AHEAD changes" (true, for the commercial and Medicaid pillars) and "Vermont's Medicare global budget survives if AHEAD changes" (not guaranteed, and not within any state's control).
 
 ### **5. The Oliver Wyman Independence Question**
 
@@ -144,19 +144,19 @@ The most common version of this objection does not concern any single policy. It
 
 This objection deserves to be taken seriously rather than answered with a slogan, because the honest answer has two parts, and the second part is a real limitation of this book rather than a rebuttal.
 
-The first part is that the six-pillar framework itself — the dependency logic that determines sequence, the argument that payment reform without clinical redesign evaporates, that technology investment without operational readiness produces unused platforms, that equity gaps require targeted rather than averaged interventions — was not derived from anything unique to Vermont. It is derived from how health systems, payment, technology, and care delivery relate to one another as a matter of structure. A large, fragmented state with a dozen competing systems does not escape this logic; it experiences it in a more fragmented way, with more actors who can defect, more negotiation required to establish anything “mandatory,” and a longer, messier sequence. The logic is the same. The execution is harder.
+The first part is that the six-pillar framework itself — the dependency logic that determines sequence, the argument that payment reform without clinical redesign evaporates, that technology investment without operational readiness produces unused platforms, that equity gaps require targeted rather than averaged interventions — was not derived from anything unique to Vermont. It is derived from how health systems, payment, technology, and care delivery relate to one another as a matter of structure. A large, fragmented state with a dozen competing systems does not escape this logic; it experiences it in a more fragmented way, with more actors who can defect, more negotiation required to establish anything "mandatory," and a longer, messier sequence. The logic is the same. The execution is harder.
 
 The second part is the real limitation: this book cannot, in one volume, also provide the equivalent depth of documentary detail for every state's version of each institution. Vermont's GMCB, AHS, and AHEAD agreement are described in the detail they are because that detail exists publicly and because Vermont is far enough along its sequence that the consequences of each decision are now visible. A reader in a state without an analog to the GMCB will not find a chapter-length treatment of their own state's rate-setting politics here. What they will find is a description, in Vermont's case, of what that function does, why it has to exist in some form for the rest of the sequence to work, and what tends to happen when it does not exist or lacks enforcement authority — which is itself the diagnostic question worth asking about their own state.
 
-Put plainly: a reader who finishes this book having learned a great deal about Vermont but nothing transferable about sequencing, payment design, technology architecture, equity accountability, or operational execution has found a real gap between this book's intent and its execution — not a correct reading of a book that was only ever about Vermont. The “How to Read This Book If Vermont Isn't Your Context” section earlier in this Introduction, and the “Implications for You” sections that close most chapters, exist specifically to close that gap.
+Put plainly: a reader who finishes this book having learned a great deal about Vermont but nothing transferable about sequencing, payment design, technology architecture, equity accountability, or operational execution has found a real gap between this book's intent and its execution — not a correct reading of a book that was only ever about Vermont. The "How to Read This Book If Vermont Isn't Your Context" section earlier in this Introduction, and the "Implications for You" sections that close most chapters, exist specifically to close that gap.
 
 ### **7. The Transition-Window Argument**
 
-Reference-based pricing and global hospital budgets shift a hospital from a system where it can grow revenue by growing volume to one where revenue is fixed or capped. For hospitals already operating below break-even — which, per Oliver Wyman's own numbers, describes most of Vermont's system today — the most dangerous financial period may not be the destination (FY2030 statewide global budgets) but the transition itself: the years in which RBP is phasing in, global budgets are not yet operational statewide, and the underlying losses documented in Chapter 6 remain unaddressed. This book documents both the destination and the starting crisis in detail. It is more cautious about the specific financial bridge that carries a hospital across that gap — the combination of Rural Health Transformation Program funds, AHEAD's Equity, Access, and Statewide Transformation (EAST) Fund payments, and the sequencing of Medicaid versus commercial global budgets — which together determine whether a given hospital remains solvent in fiscal years 2027 and 2028 specifically. A hospital CFO's most pressing question is rarely “what does the system look like in 2030?” It is “what keeps us open in 2027?” Chapter 6 (the Economics Pillar) addresses this transition window directly.
+Reference-based pricing and global hospital budgets shift a hospital from a system where it can grow revenue by growing volume to one where revenue is fixed or capped. For hospitals already operating below break-even — which, per Oliver Wyman's own numbers, describes most of Vermont's system today — the most dangerous financial period may not be the destination (FY2030 statewide global budgets) but the transition itself: the years in which RBP is phasing in, global budgets are not yet operational statewide, and the underlying losses documented in Chapter 6 remain unaddressed. This book documents both the destination and the starting crisis in detail. It is more cautious about the specific financial bridge that carries a hospital across that gap — the combination of Rural Health Transformation Program funds, AHEAD's Equity, Access, and Statewide Transformation (EAST) Fund payments, and the sequencing of Medicaid versus commercial global budgets — which together determine whether a given hospital remains solvent in fiscal years 2027 and 2028 specifically. A hospital CFO's most pressing question is rarely "what does the system look like in 2030?" It is "what keeps us open in 2027?" Chapter 6 (the Economics Pillar) addresses this transition window directly.
 
 ### **8. The Enforcement Question**
 
-This book repeatedly emphasizes that Vermont's approach is mandatory rather than voluntary, and treats this as the central correction to OneCare's design flaw. But a mandatory regime is only as real as its enforcement, and a skeptical reader is entitled to ask: what actually happens to a hospital that does not comply — that refuses a global budget, or continues billing above the reference-based-pricing ceiling? Act 68 gives GMCB subpoena authority and data-sharing power with the Department of Financial Regulation, and the answer is no longer hypothetical. GMCB's FY23 enforcement actions against UVMMC ($80.3M overage) and RRMC ($11.1M overage) were the first such enforcement actions in Vermont's regulatory history, and UVMMC's subsequent court challenge to that enforcement — Vermont's largest, most powerful hospital system testing GMCB's authority directly — was decided against UVMMC. That outcome is the strongest available evidence that “mandatory” in this book's framework describes a regime that has been tested against its most resourced potential opponent and held. Chapter 13 develops the enforcement mechanics and this case in more detail.
+This book repeatedly emphasizes that Vermont's approach is mandatory rather than voluntary, and treats this as the central correction to OneCare's design flaw. But a mandatory regime is only as real as its enforcement, and a skeptical reader is entitled to ask: what actually happens to a hospital that does not comply — that refuses a global budget, or continues billing above the reference-based-pricing ceiling? Act 68 gives GMCB subpoena authority and data-sharing power with the Department of Financial Regulation, and the answer is no longer hypothetical. GMCB's FY23 enforcement actions against UVMMC ($80.3M overage) and RRMC ($11.1M overage) were the first such enforcement actions in Vermont's regulatory history, and UVMMC's subsequent court challenge to that enforcement — Vermont's largest, most powerful hospital system testing GMCB's authority directly — was decided against UVMMC. That outcome is the strongest available evidence that "mandatory" in this book's framework describes a regime that has been tested against its most resourced potential opponent and held. Chapter 13 develops the enforcement mechanics and this case in more detail.
 
 These are not the only critiques of Vermont's approach. They are the most serious ones, and this book engages them throughout rather than assuming the policy case is settled. It is not settled. Vermont is the experiment. This book is the analytical framework for watching it clearly.
 
@@ -366,7 +366,7 @@ The table below characterizes each pillar's diagnostic function and structural r
 | **Equity** | Is it just? | The cross-cutting constraint and accountability lens. Not a separate program — a dimension applied to every decision in every other pillar. Transformation that improves averages while widening disparities has failed by the framework's own standards. | Stratified measurement that reveals disparities hidden in aggregates; payment designs that do not penalize providers serving high-SDOH populations; clinical programs that reach disadvantaged populations; technology infrastructure that produces disaggregated data. |
 | **Operations** | Is it executable? | The execution layer. Translates statutory mandates, payment models, data platforms, and clinical programs into organizational reality. The most analytically sound framework fails if the implementing organization lacks capacity, infrastructure, and management discipline. | Hospital transformation plans that are implemented, not filed; AHS organizational capacity sufficient to manage 14 simultaneous transformation processes; project-management infrastructure that tracks progress against statutory deadlines. |
 
-*Figure 1.2 — The six pillars: diagnostic questions and structural roles. Source: six-pillar framework documentation; Acts 167 and 68 of 2025.*
+*Figure 1.2 — The six pillars: diagnostic questions and structural roles. Sources: six-pillar framework documentation; Acts 167 and 68 of 2025.*
 
 ## **The Architecture of Interdependency: The Fifteen Dependency Relationships**
 
@@ -398,7 +398,7 @@ The test is whether there are two *distinct causal mechanisms* or one mechanism 
 | **Equity** | [CONSTRAINS] with justice reviews | — | — | [CONSTRAINS] with cultural competency | — | — |
 | **Operations** | [ENABLES] data feedback loops | [REQUIRES] workforce to run infrastructure | — | — | — | — |
 
-*Figure 1.3 — The architecture of interdependency: the fifteen dependency relationships, read From-row to To-column. Source: six-pillar framework documentation; Vermont Health Transformation / HTR (2026).*
+*Figure 1.3 — The architecture of interdependency: the fifteen dependency relationships, read From-row to To-column. Sources: six-pillar framework documentation; Vermont Health Transformation / HTR (2026).*
 
 ### **Policy Dependencies: Three Relationships That Establish the Mandatory Architecture**
 
@@ -573,7 +573,7 @@ The most rigorous test of a dependency framework is not whether it describes how
 | **Equity** | Transformation proceeds but disparities widen; average outcomes improve while geographic and demographic gaps grow. | Technically optimal policy produces inequitable distributions; technology is built but not used for stratified measurement; clinical programs improve averages without closing gaps. | Transformation that increases efficiency while reducing equity — technically successful, ethically failed. | National VBC experience: most APMs improved averages while widening disparities; safety-net providers penalized. |
 | **Operations** | Statutory mandates exist on paper; clinical programs are designed; data platforms are procured; nothing is implemented. | Policy accountability fails without capacity to meet deadlines; platforms deployed but unused for management; contracts signed but not managed. | Transformation documents accumulate; deadlines slip; the 2028 Strategic Plan is descriptive rather than committal; the deficit trajectory continues. | Most state reform efforts of the 2010s: correct policy, adequate financing, sophisticated data — capacity insufficient to execute. |
 
-*Figure 1.4 — Failure-cascade analysis: what breaks when each pillar is absent. Source: HTR analysis; CMMI evaluation literature; Oliver Wyman Act 167 Report; Vermont experience.*
+*Figure 1.4 — Failure-cascade analysis: what breaks when each pillar is absent. Sources: HTR analysis; CMMI evaluation literature; Oliver Wyman Act 167 Report; Vermont experience.*
 
 ## **Using the Dependency Map as an Analytical Tool**
 
@@ -784,7 +784,7 @@ The OneCare autopsy in Section 1.2 is the fully documented case. The same errors
 | **Equity review at the end, not the beginning** — methodology finished, then sent for equity review | Equity staff flagging the same structural problems in finalized designs; high rate of equity modifications at approval stage | RBP methodology design is the live test case: preserving rural access and not defunding high-Medicaid hospitals is a design question, not a post-hoc correction | Health Equity Advisory Commission consulted at design stage, not comment stage |
 | **Operations execution without adequate capacity** — mandate outpaces organizational capacity | Statutory deadlines extended or waived; deliverables perpetually "in progress"; governance that convenes but does not decide | AHS must run 14 hospital transformation processes, AHEAD support, RBP finalization, and the Strategic Plan at once — capacity Oliver Wyman flagged as insufficient | RHRC builds hospital-level capacity before AHEAD accountability takes full effect |
 
-*Figure 1.7 — Five sequencing errors: the diagnostic pattern, early-warning signals, and correction for each. Source: HTR analysis; Vermont experience; Oliver Wyman Act 167 Report.*
+*Figure 1.7 — Five sequencing errors: the diagnostic pattern, early-warning signals, and correction for each. Sources: HTR analysis; Vermont experience; Oliver Wyman Act 167 Report.*
 
 ## **Vermont's Implementation Timeline: Reading the Sequence in Statutory Deadlines**
 
@@ -799,7 +799,7 @@ Vermont's transformation is unusual in one critical respect: it has a legislativ
 | **Operations** | Building (2025–2028) | RHRC engagement, AHS HSA Coordinator model, Division of Planning and Effectiveness, PMO structure — correctly sequenced to precede the peak execution demand of FY2027–2028. |
 | **Equity** | Throughout (2025–2028) | Social risk adjustment methodology, HEROI scoring, geographic equity monitoring — correctly treated as a parallel design constraint rather than a final review. |
 
-*Figure 1.8 — Vermont's transformation timeline, by pillar. Source: HTR Analysis (2026); Act 68 of 2025; AHEAD State Agreement.*
+*Figure 1.8 — Vermont's transformation timeline, by pillar. Sources: HTR Analysis (2026); Act 68 of 2025; AHEAD State Agreement.*
 
 ### **The Current Vulnerability: The Technology-Economics Race**
 
@@ -838,40 +838,40 @@ If you are a national health policy professional: Vermont's OneCare failure is t
 
 ## **Key Concepts in This Chapter**
 
-**Dependency logic**  
+**Dependency logic**
 The principle that some pillar investments cannot produce results until upstream enabling investments are in place. Determines the execution sequence.
 
-**Execution sequence**  
+**Execution sequence**
 The order in which the six pillars must be built: Policy, Technology, Economics, Clinical, Equity, Operations. Determined by structural dependency, not by the relative importance of each pillar.
 
-**Critical path gate**  
+**Critical path gate**
 A prerequisite investment that must be in place before a downstream pillar investment can be productive. A gate is *open* when that work is finished and *closed* while it is unfinished; it is opened by completing the work, never by deciding to proceed. Cannot be bypassed by allocating more resources downstream.
 
-**"Managing Blind" failure mode**  
+**"Managing Blind" failure mode**
 Assuming downside financial risk under a value-based payment model without the analytics infrastructure to track total cost of care in real time. Produces unexpected, unexplainable losses.
 
-**Sequencing failure**  
+**Sequencing failure**
 Deploying a downstream pillar before the upstream enabling investment is in place. OneCare Vermont is canonical: Economics (voluntary ACO) deployed without Policy mandate and Technology substrate.
 
-**Voluntary vs. mandatory architecture**  
+**Voluntary vs. mandatory architecture**
 The distinction between reform programs actors can opt out of and those they cannot. Act 68 establishes mandatory RBP and global budgets — eliminating voluntary opt-out.
 
-**Economics-as-design vs. Economics-as-management**  
+**Economics-as-design vs. Economics-as-management**
 Design (defining the payment architecture) can proceed in parallel with the technology build. Management (operating the model) requires the technology substrate to be operational first.
 
-**Transformation capital vs. incentive architecture**  
+**Transformation capital vs. incentive architecture**
 Transformation capital (RHT award, EAST Fund) is time-limited bridge funding for infrastructure. Incentive architecture (global budgets, RBP) is permanent structural change to the payment environment. Confusing the two produces unsustainable programs.
 
-**Reform cascade**  
+**Reform cascade**
 A legislatively structured sequence where each intervention creates capacity and legitimacy for the next. Vermont's Act 167 → Act 51 → Act 68 is the prototype.
 
-**HCC gap closure**  
+**HCC gap closure**
 The highest-ROI pre-AHEAD-launch analytics investment: completing hierarchical condition category documentation for all Medicare-attributed patients before the performance year begins. Improves risk adjustment accuracy and produces a more defensible global budget benchmark.
 
-**Parallel work**  
+**Parallel work**
 Investment that proceeds simultaneously with critical path work because it sits behind no closed gate. Test: could this investment produce its full intended value today, with upstream pillars in their current state?
 
-**Premature investment**  
+**Premature investment**
 An investment in a downstream pillar that proceeds before the upstream enabling investment is in place. Most common forms: Technology deployment without Operations readiness; Economics contracts without Technology analytics readiness.
 
 Sources: Vermont Agency of Human Services, Health Care System Transformation Report (November 2025); Oliver Wyman Healthcare and Life Sciences Group, Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025); Vermont AHEAD State Agreement (January 2025); CMS AHEAD Model documentation (September 2025 update); Vermont Blueprint for Health Annual Report 2024; Act 68 of 2025; OneCare Vermont ACO annual reports (2014–2023); Maryland HSCRC Total Cost of Care Model data; GMCB FY25 and FY26 Hospital Budget Orders.
@@ -901,9 +901,9 @@ Every state's reform effort eventually confronts the same architectural question
 | Jan 2028 | AHEAD Cohort 2 performance year begins | Economics / Technology | Updated per CMS Sept 2025; Vermont hospitals begin AHEAD financial accountability |
 | Dec 2028 | Statewide Strategic Plan due to legislature | Operations / All pillars | Act 68 binding deadline; must commit to specific targets, timelines, accountable owners |
 | FY2030 (Oct 2029) | Global budgets mandatory — all 14 hospitals | Economics | Full all-payer global budget coverage; complete transition from fee-for-service signal |
-| 2030-2035 | AHEAD performance period continues | Economics / Clinical | CMS evaluation of Vermont total cost of care; evidence base for national replication |
+| 2030–2035 | AHEAD performance period continues | Economics / Clinical | CMS evaluation of Vermont total cost of care; evidence base for national replication |
 
-*Figure T.1 — Vermont Healthcare Transformation Timeline: 2022–2035. Sources: Vermont Legislature, CMS, AHS, GMCB.*
+*Figure T.1 — Vermont Healthcare Transformation Timeline: 2022–2035. Source: Vermont Legislature, CMS, AHS, GMCB.*
 
 Most healthcare reform unfolds incrementally — a new demonstration model here, a revised billing rule there — accumulating over years into changes that are difficult to attribute to any single decision. Vermont's reform trajectory between 2022 and 2025 is different in kind, not degree. Within three years, the Vermont General Assembly enacted a sequence of legislation that collectively mandated the most comprehensive statewide healthcare restructuring attempted by any U.S. state since Maryland's all-payer model in the 1970s. Understanding this sequence — its logic, its mechanisms, and its unresolved tensions — is essential preparation for any healthcare leader operating in an environment of payment and delivery system transformation.
 
@@ -918,7 +918,7 @@ This chapter section examines each act, the analytical infrastructure it created
 
 **$2.4B** — 5-Year Deficit Projection
 
-**108%** — Premium Increase 2018-2024
+**108%** — Premium Increase 2018–2024
 
 **57%** — Growth in 65+ by 2040
 :::
@@ -942,7 +942,7 @@ Oliver Wyman was equally direct about what will not work: more funding without s
 ::: {custom-style="CalloutBeyond"}
 **BEYOND VERMONT**
 
-“More funding without structural change” is the default policy instinct in every state because it is the path of least political resistance — it asks no incumbent actor to accept less. Oliver Wyman's finding for Vermont generalizes directly: in any market where the underlying incentive structure rewards volume over value, additional money flows into the existing structure rather than changing it, producing higher prices and the same access problems. The three imperatives — addressing upstream drivers of cost, fixing the price and budget architecture, and shifting the locus of care — are a sequencing-neutral checklist for diagnosing whether a state's reform agenda is structural or merely additive, regardless of which consulting firm or analytical process produced it.
+"More funding without structural change" is the default policy instinct in every state because it is the path of least political resistance — it asks no incumbent actor to accept less. Oliver Wyman's finding for Vermont generalizes directly: in any market where the underlying incentive structure rewards volume over value, additional money flows into the existing structure rather than changing it, producing higher prices and the same access problems. The three imperatives — addressing upstream drivers of cost, fixing the price and budget architecture, and shifting the locus of care — are a sequencing-neutral checklist for diagnosing whether a state's reform agenda is structural or merely additive, regardless of which consulting firm or analytical process produced it.
 :::
 ## **The Platform for Change: Vermont's System in Crisis**
 
@@ -1016,7 +1016,7 @@ One of Oliver Wyman's most valuable contributions is a systematic correction of 
 | Vermont has a functioning State HIE (VITL) | Participation in VITL is voluntary and many community-based providers are not included. VITL lacks pharmacy claims data and is not viewed as user-friendly by providers. |
 | Vermont does not have enough primary care providers | If primary care providers were supported to see 3 patients per hour, there are enough for well into the future. HRSA recognizes no Health Profession Shortage Areas in Vermont. The problem is productivity and practice model, not pure headcount. |
 
-*Figure 2.1 — Common perceptions of Vermont's health system versus the data. Source: Oliver Wyman Act 167 Report; GMCB.*
+*Figure 2.1 — Common perceptions of Vermont's health system versus the data. Sources: Oliver Wyman Act 167 Report; GMCB.*
 
 These corrections matter for the book's argument because they explain why Vermont's reform agenda is more complex than it appears from the outside. A state that appears to have all-payer payment reform, an ACO, and a health information exchange actually has voluntary, partial implementations of each — generating the appearance of a transformed system while the underlying fee-for-service, fragmented, data-poor reality persists. Acts 167 and 68 are, in part, a legislative response to this gap between perception and reality.
 
@@ -1252,33 +1252,33 @@ Fifth, the AHS restructuring is the strategic plan. Oliver Wyman's explicit reco
 
 ## **Key Concepts in This Chapter**
 
-**Platform for Change**  
+**Platform for Change**
 Oliver Wyman's term for the five interconnected challenge domains — decreasing affordability, deteriorating sustainability, demographic trap, interconnected failure system, and equity gaps — that collectively make structural transformation unavoidable for Vermont.
 
 The three imperatives
 
 Oliver Wyman's highest-level summary of what Vermont must do: build housing and fix transportation; pay PPS hospitals with reference-based pricing and move to global budgets; move all care possible out of hospitals.
 
-**Center of Excellence (COE)**  
+**Center of Excellence (COE)**
 A hospital or facility designated to concentrate volume and expertise in a specific specialty, receiving referrals from other hospitals and ensuring that patient volumes are sufficient to maintain clinical quality. Vermont's regionalization plan designates COEs across 24 specialty categories at 10 of 14 current Hospital Service Areas.
 
-**Balloon squeeze problem**  
+**Balloon squeeze problem**
 The phenomenon in which controlling hospital prices without controlling volume allows hospitals to compensate for lower per-service revenue by delivering more services. Reference-based pricing controls price but not volume; global budgets are required to address both simultaneously.
 
-**Statewide Health Care Delivery Strategic Plan**  
+**Statewide Health Care Delivery Strategic Plan**
 The plan AHS is required to deliver to the Vermont legislature by December 2028 and update every three years, establishing the vision, goals, affordability benchmarks, and accountability metrics for Vermont's transformed health care delivery system. Established by Act 68.
 
-**Hospital Service Area (HSA)**  
+**Hospital Service Area (HSA)**
 A geographic area defined around a hospital and the population it primarily serves. Vermont has 14 HSAs corresponding to its 14 hospitals. The HSA is the fundamental unit of analysis for Vermont's regionalization and transformation planning.
 
-**Rural Emergency Hospital (REH)**  
+**Rural Emergency Hospital (REH)**
 A federal designation allowing a hospital to provide 24/7 emergency services and observation care without maintaining inpatient beds — an option for Vermont hospitals that cannot sustain full inpatient capacity but need to maintain emergency access for their communities.
 
 Sources: Act 167 of 2022 (Vermont); Act 51 of 2023 (Vermont); Act 68 of 2025 (Vermont); Oliver Wyman Healthcare and Life Sciences Group, Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025); Green Mountain Care Board, Act 68 Update on Hospital Reference-Based Pricing and Global Budgets, February 17, 2026; Vermont Agency of Human Services, Vermont Rural Health Transformation Program Application, November 3, 2025; Vermont Agency of Human Services / Brendan Krause, Vermont's Health Care Reform Efforts, presented to Vermont House Health Care Committee, January 31, 2025; Green Mountain Care Board, 2024 Annual Report, January 15, 2025.
 
 # **Chapter 3: The Policy Pillar in Practice — CMMI Models, Waiver Strategy, and the Federal-State Interface**
 
-*The implementation of Vermont’s mandatory policy architecture reveals how legislative intent becomes operational reality — and where the gaps between statute and execution create the most consequential risks.*
+*The implementation of Vermont's mandatory policy architecture reveals how legislative intent becomes operational reality — and where the gaps between statute and execution create the most consequential risks.*
 
 A state statute is not the same thing as a federal policy environment, and the gap between the two is where most reform agendas lose momentum. CMMI model design, Section 1115 waiver negotiation, and prior authorization reform are the three federal-facing tools through which a state's domestic mandate either gets amplified by federal authority or runs into its limits. Every state pursuing structural reform has to navigate this same federal-state interface — the specific models and waiver numbers differ, but the negotiation dynamics, the budget-neutrality constraints, and the administrative-burden problem are common across states. Vermont's AHEAD agreement and waiver history are this chapter's worked example of a negotiation every reforming state eventually has.
 
@@ -1305,7 +1305,7 @@ A 2023 independent evaluation of CMMI models found that the vast majority had no
 | Adequate implementation support | Organizations need technical assistance, analytical tools, and sufficient runway to redesign care delivery before being held financially accountable for outcomes they cannot yet control. | AHEAD (multi-year pre-performance period with substantial cooperative agreement funds). Vermont's RHRC engagement. Making Care Primary (practice transformation support). | Many early CMMI models that launched with insufficient operational support and were discontinued when providers could not implement effectively. |
 | Alignment with state regulatory environment | Federal models that conflict with or duplicate state regulatory structures create compliance complexity without adding value. Models designed in partnership with state agencies produce better results. | AHEAD (designed explicitly as federal-state partnership; requires state agreement and state regulatory alignment). Vermont-specific APM (state-federal co-design). Maryland TCOC (built on Maryland's existing HSCRC regulatory authority). | Federal models imposed on states without coordination with state Medicaid agencies, insurance regulators, or hospital budget review processes. |
 
-*Figure 3.1 — CMMI model success factors: what distinguishes models that produce results from those that don't. Source: HTR analysis of CMMI evaluation literature; CMS model documentation.*
+*Figure 3.1 — CMMI model success factors: what distinguishes models that produce results from those that don't. Sources: HTR analysis of CMMI evaluation literature; CMS model documentation.*
 
 ### **The Current Active CMMI Model Landscape (2026)**
 
@@ -1421,7 +1421,7 @@ The 2025 reconciliation law has changed the Medicaid landscape in ways that ever
 | State-directed payment caps at 100% of Medicare (expansion states) | 2027 | Reduces enhanced Medicaid payments that many states use to supplement provider rates above standard Medicaid levels; significant for safety-net hospitals | Vermont hospitals receiving state-directed supplemental payments face revenue reduction; GMCB global budget design must account for this |
 | Work and community engagement requirements (80 hours/month) | Late 2026 (states must implement by December 31, 2026) | 10 million projected uninsured nationally by 2034; variable state impact depending on implementation; administrative burden on states and enrollees | Vermont has not expressed intent to implement work requirements; federal law now clearly authorizes them. Coverage implications for Vermont's expansion population require monitoring. |
 | Eligibility redetermination every 6 months (vs. annual) | 2026 | Increases administrative burden; produces coverage churn as enrollees who remain eligible lose coverage due to administrative failures; disproportionate impact on working families | Vermont DVHA will face increased redetermination workload; outreach to ensure eligible Vermonters maintain coverage is an equity priority |
-| Medicaid reimbursement reductions (DSH cuts, payment rate changes) | 2026-2031 (phased) | $911B over 10 years nationally; $137B in rural areas; hospitals will experience revenue reductions | All 14 Vermont hospitals face reduced Medicaid revenue; most severe impact on CAHs with high Medicaid payer mix; integrated into hospital financial sustainability modeling |
+| Medicaid reimbursement reductions (DSH cuts, payment rate changes) | 2026–2031 (phased) | $911B over 10 years nationally; $137B in rural areas; hospitals will experience revenue reductions | All 14 Vermont hospitals face reduced Medicaid revenue; most severe impact on CAHs with high Medicaid payer mix; integrated into hospital financial sustainability modeling |
 
 *Figure 3.4 — H.R. 1 Medicaid provisions: timeline, financial impact, and Vermont implications. Sources: KFF analysis; CBO estimates; Pew Charitable Trusts (January 2026).*
 
@@ -1474,32 +1474,32 @@ If you are a national health policy professional: Vermont's AHEAD experience wil
 
 ## **Key Concepts in This Chapter**
 
-**Section 1115 waiver**  
+**Section 1115 waiver**
 Authority under the Social Security Act allowing CMS to waive standard Medicaid requirements and approve experimental programs that promote program objectives. Vermont's Global Commitment to Health demonstration is its primary 1115 vehicle.
 
-**Budget neutrality**  
+**Budget neutrality**
 The federal requirement that 1115 waiver spending not exceed what Medicaid spending would have been without the waiver, calculated against a negotiated without-waiver baseline.
 
-**CMMI (Center for Medicare and Medicaid Innovation)**  
+**CMMI (Center for Medicare and Medicaid Innovation)**
 Federal entity created by the ACA to test new payment and delivery models. Has launched 50+ models since 2010; AHEAD is the most relevant current model for state-level transformation.
 
-**Two-sided risk**  
+**Two-sided risk**
 A payment arrangement in which the organization shares in both savings (upside) and losses (downside) relative to a financial target. Mandatory downside risk changes organizational behavior more effectively than one-sided shared savings.
 
-**Prior authorization**  
+**Prior authorization**
 Health plan requirement for pre-approval before delivering specified services. Oliver Wyman documented PA complexity as a major administrative burden for Vermont providers; Act 167 and Act 68 both address PA simplification.
 
-**Making Care Primary (MCP)**  
+**Making Care Primary (MCP)**
 CMMI's 8-state multi-payer primary care transformation model. A potential vehicle for states not participating in AHEAD seeking federal support for primary care investment.
 
-**Federal Register**  
+**Federal Register**
 The official journal of the U.S. federal government, where CMS and other agencies publish proposed rules (open for public comment) and final rules (legally binding). Essential monitoring source for healthcare policy practitioners.
 
 Sources: CMS CMMI model documentation; CMS 1115 waiver framework; KFF Medicaid policy analyses; H.R. 1 One Big Beautiful Bill Act (July 2025); Vermont Global Commitment to Health demonstration (CMS approval January 2025); Act 167 of 2022; Act 68 of 2025; AHEAD State Agreement (January 2025); American Medical Association prior authorization burden survey; Georgetown Center for Children and Families.
 
 # **Chapter 4: The Technology Pillar — Data Infrastructure for a Transformed Health System**
 
-*Vermont’s data infrastructure investment — VHCURES, VITL, and the AHS-GMCB analytics platform — is building the operating system that mandatory payment reform requires to function.*
+*Vermont's data infrastructure investment — VHCURES, VITL, and the AHS-GMCB analytics platform — is building the operating system that mandatory payment reform requires to function.*
 
 Three data assets recur in every state's transformation infrastructure, whatever they happen to be called locally: a claims database that lets regulators and payers see total cost of care across the system, a health information exchange that lets clinicians see a patient's record across organizations, and an analytics capability that turns both into something a hospital or payer can act on. Without these three, global budgets cannot be monitored, care coordination cannot be measured, and equity gaps cannot be tracked — which is why Technology precedes Economics, Clinical, and Equity in the six-pillar sequence. Vermont's VHCURES, VITL, and AHS-GMCB analytics platform are this chapter's worked example of what building (and struggling to fully integrate) these three assets looks like in practice.
 
@@ -1527,7 +1527,7 @@ You cannot manage what you cannot measure.
 |                                  | AHEAD launches January 2028.                           |
 +----------------------------------+--------------------------------------------------------+
 
-*Figure 4.1 — Vermont's three-layer health data infrastructure. Source: GMCB VHCURES documentation; Vermont HIE Strategic Plan.*
+*Figure 4.1 — Vermont's three-layer health data infrastructure. Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan.*
 
 There is a precise sense in which the Technology pillar is the precondition for every other pillar. Reference-based pricing requires knowing what each hospital actually charges for each service. Global budgets require attributing patients to hospitals and tracking total cost of care across the year. Clinical quality improvement requires measuring the gap between current performance and evidence-based targets. Health equity requires stratifying outcomes by race, income, and geography. Operational transformation requires modeling the financial and access impact of structural changes before implementing them.
 
@@ -1586,7 +1586,7 @@ Vermont's technology investments — the VHCURES-VHIE integration mandate, the R
 ::: {custom-style="CalloutBeyond"}
 **BEYOND VERMONT**
 
-The gap Vermont is closing — between a data asset existing on paper and being functionally usable for population health management — is the single most common technology-pillar failure nationally. Many states have an all-payer claims database, a health information exchange, or both, that are technically operational but functionally underused because of data lag, incomplete participation, or lack of analytics capacity layered on top. The diagnostic question for any organization is not “do these systems exist?” but “can a hospital or payer act on this data inside the decision window that matters?” — and Vermont's VITL integration timeline is a useful benchmark for how long that gap typically takes to close even with statutory mandates and dedicated funding behind it.
+The gap Vermont is closing — between a data asset existing on paper and being functionally usable for population health management — is the single most common technology-pillar failure nationally. Many states have an all-payer claims database, a health information exchange, or both, that are technically operational but functionally underused because of data lag, incomplete participation, or lack of analytics capacity layered on top. The diagnostic question for any organization is not "do these systems exist?" but "can a hospital or payer act on this data inside the decision window that matters?" — and Vermont's VITL integration timeline is a useful benchmark for how long that gap typically takes to close even with statutory mandates and dedicated funding behind it.
 :::
 
 ### **The 2025 Governance Shift: Act 62 Transfers HIE Authority to DVHA**
@@ -1631,8 +1631,8 @@ The practical path to this integration has three components that must be execute
 
 | Step | What it requires | Timeline | Current status |
 | :---- | :---- | :---- | :---- |
-| 1. VHCURES-VHIE claims-clinical integration | Merge VHCURES claims data with VHIE clinical data using a privacy-compliant patient matching methodology. This gives every provider record access to both the claims history (what care was delivered, at what cost, through what payers) and the clinical record (diagnoses, medications, lab results, care plans). | DVHA leading; AHEAD Model requires this for population health management; target 2026-2027 | HIE Steering Committee has a statutory directive to include data integration strategy in HIE plans; VHCURES-VITL linkage already used for Blueprint HEDIS measurement; full bidirectional integration not yet operational |
-| 2. Mental health and SUD data integration | Add mental health and substance use disorder data to the integrated record, with appropriate consent frameworks that comply with 42 CFR Part 2 (federal SUD confidentiality rules) and Vermont's own privacy statutes. This is technically complex — SUD data has a separate consent regime from medical data — but clinically essential. | 2027-2028; requires federal 42 CFR Part 2 compliance pathway | DVHA working with VITL on consent policy; 2025 federal regulatory changes to 42 CFR Part 2 may simplify compliance pathway; behavioral health CCBHC expansion creates urgency |
+| 1. VHCURES-VHIE claims-clinical integration | Merge VHCURES claims data with VHIE clinical data using a privacy-compliant patient matching methodology. This gives every provider record access to both the claims history (what care was delivered, at what cost, through what payers) and the clinical record (diagnoses, medications, lab results, care plans). | DVHA leading; AHEAD Model requires this for population health management; target 2026–2027 | HIE Steering Committee has a statutory directive to include data integration strategy in HIE plans; VHCURES-VITL linkage already used for Blueprint HEDIS measurement; full bidirectional integration not yet operational |
+| 2. Mental health and SUD data integration | Add mental health and substance use disorder data to the integrated record, with appropriate consent frameworks that comply with 42 CFR Part 2 (federal SUD confidentiality rules) and Vermont's own privacy statutes. This is technically complex — SUD data has a separate consent regime from medical data — but clinically essential. | 2027–2028; requires federal 42 CFR Part 2 compliance pathway | DVHA working with VITL on consent policy; 2025 federal regulatory changes to 42 CFR Part 2 may simplify compliance pathway; behavioral health CCBHC expansion creates urgency |
 | 3. SDOH data integration | Add social service utilization data — housing program participation, food assistance, transportation use, domestic violence services — linked to the health record with appropriate privacy protections. This is the most politically sensitive and technically complex integration because it involves non-healthcare agencies and data that carries significant stigma risk. | 2028 and beyond; requires cross-agency data governance agreement | Blueprint HRSN screening generates SDOH data but it is not yet linked to VHCURES or VHIE at scale; AHS HSA Coordinator model (Chapter 3) provides the cross-agency governance vehicle |
 
 *Figure 4.3 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering Committee statutory mandate; AHS January 2025 Legislative Presentation; DVHA HIE governance documents.*
@@ -1718,7 +1718,7 @@ AHS has commissioned a feasibility assessment to evaluate the cost-benefit of im
 
 *Figure 4.5 — Vermont statewide EHR: case for and against. The feasibility assessment underway will weigh these factors against Vermont's specific cost, disruption tolerance, and FHIR interoperability capacity.*
 
-The feasibility assessment's most important analytical question is whether FHIR-based interoperability — the national standard for health data exchange that is rapidly maturing — can deliver the data sharing Vermont needs without the cost and disruption of a statewide EHR migration. If FHIR can deliver real-time, bi-directional data exchange across Vermont's four EHR platforms at an acceptable implementation cost, the case for a single statewide EHR weakens significantly. Section 4 develops the FHIR picture. AHS's feasibility assessment should produce a clear answer on this question by 2026-2027 — in time to inform the 2028 Strategic Plan.
+The feasibility assessment's most important analytical question is whether FHIR-based interoperability — the national standard for health data exchange that is rapidly maturing — can deliver the data sharing Vermont needs without the cost and disruption of a statewide EHR migration. If FHIR can deliver real-time, bi-directional data exchange across Vermont's four EHR platforms at an acceptable implementation cost, the case for a single statewide EHR weakens significantly. Section 4 develops the FHIR picture. AHS's feasibility assessment should produce a clear answer on this question by 2026–2027 — in time to inform the 2028 Strategic Plan.
 
 ## **The Vermont Clinically Integrated Network — A New Technology Institution**
 
@@ -1919,38 +1919,38 @@ Second, the technology architecture has a governance counterpart that is equally
 
 ## **Key Concepts in This Chapter**
 
-**VHCURES**  
+**VHCURES**
 Vermont Health Care Uniform Reporting and Evaluation System — Vermont's all-payer claims database, managed by GMCB with Onpoint Health Data. Contains 100% of Medicaid and Medicare claims and approximately 60% of commercial claims; used for total cost of care measurement, hospital price analysis, and population health analytics.
 
-**VITL / VHIE**  
+**VITL / VHIE**
 Vermont Information Technology Leaders / Vermont Health Information Exchange — the nonprofit designated by statute to operate Vermont's statewide HIE network, providing clinical data exchange between hospitals and other providers. Participation is voluntary for non-hospital providers.
 
-**FHIR (Fast Healthcare Interoperability Resources)**  
-The HL7 standard for healthcare data exchange, mandated by CMS for payers and providers beginning 2021-2022. FHIR enables different health IT systems to exchange information using common data formats and APIs, without custom interfaces.
+**FHIR (Fast Healthcare Interoperability Resources)**
+The HL7 standard for healthcare data exchange, mandated by CMS for payers and providers beginning 2021–2022. FHIR enables different health IT systems to exchange information using common data formats and APIs, without custom interfaces.
 
-**Clinically Integrated Network (CIN)**  
+**Clinically Integrated Network (CIN)**
 A formal network of healthcare providers that share clinical protocols, performance data, and care coordination infrastructure while maintaining independent ownership. Vermont is creating a CIN through its RHT Program to provide shared analytics, group purchasing, administrative services, and referral formalization across its 14-hospital network.
 
-**AI scribe / ambient clinical intelligence**  
+**AI scribe / ambient clinical intelligence**
 AI technology that listens to clinical encounters and automatically generates structured clinical documentation, reducing the documentation burden that contributes to clinician burnout. Vermont's RHT Program includes grants for AI scribe technology for rural and independent practices.
 
-**Remote patient monitoring (RPM)**  
+**Remote patient monitoring (RPM)**
 Technology enabling continuous or periodic monitoring of patients' clinical parameters — heart rate, blood oxygen, blood pressure, glucose — in their homes. Enables earlier intervention for chronic conditions (CHF, COPD, diabetes) to prevent hospital admissions. Vermont's RHT Program includes RPM grants for home health, primary care, and community paramedicine settings.
 
-**42 CFR Part 2**  
-Federal regulations governing confidentiality of substance use disorder treatment records. Separate and more restrictive than HIPAA; creates the primary legal barrier to integrating SUD treatment data into Vermont's unified health record. 2024-2025 federal regulatory changes have begun easing some Part 2 barriers.
+**42 CFR Part 2**
+Federal regulations governing confidentiality of substance use disorder treatment records. Separate and more restrictive than HIPAA; creates the primary legal barrier to integrating SUD treatment data into Vermont's unified health record. 2024–2025 federal regulatory changes have begun easing some Part 2 barriers.
 
-**Act 62 of 2025**  
+**Act 62 of 2025**
 Vermont legislation that transferred responsibility for the statewide Health Information Technology Plan from GMCB to DVHA, effective July 1, 2025. Aligns HIT strategy coordination with DVHA's operational relationships with providers through Medicaid, Blueprint, and AHEAD.
 
-**Master patient index**  
+**Master patient index**
 A database that matches patient identities across multiple healthcare organizations using demographic and clinical matching algorithms. Required for Vermont's integrated health record — without reliable patient matching, claims data and clinical data from different facilities cannot be reliably linked to the same individual.
 
 Sources: GMCB VHCURES documentation (gmcboard.vermont.gov/data-and-analytics); Vermont HIE Strategic Plan 2024 Update; Act 62 of 2025; Act 68 of 2025; Oliver Wyman Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025); Vermont Agency of Human Services / Brendan Krause, Vermont's Health Care Reform Efforts (January 31, 2025); Vermont Rural Health Transformation Program Application (November 3, 2025); Vermont RHT Program Activity Details (December 2025); Chartis 2026 State of Rural Health; JAMA Network Open ambient scribe quality improvement study (2024); National Consortium of Telehealth Resource Centers AI guidance (2026); Vermont Health Information Exchange Data Governance mandate (healthdata.vermont.gov).
 
 # **Chapter 5: The Technology Pillar in Practice — FHIR, AI Governance, and Clinical Decision Support**
 
-*The deployment of Vermont’s health IT infrastructure reveals the Technology pillar’s most consequential sequencing vulnerability: the analytics vendor gap that must close before January 2028.*
+*The deployment of Vermont's health IT infrastructure reveals the Technology pillar's most consequential sequencing vulnerability: the analytics vendor gap that must close before January 2028.*
 
 FHIR interoperability, AI clinical governance, and cybersecurity are not three separate technology initiatives — they are three implementation risks that any organization building on a data infrastructure foundation will encounter, in roughly this order, as that foundation comes online. A standards mandate (FHIR) without a governance framework for the AI tools that will consume that data produces ungoverned clinical AI; a connected, data-rich system without cybersecurity investment produces a larger attack surface. None of this is specific to Vermont's timeline or its CIN structure — it is the standard risk profile of any health system's technology buildout, and Vermont's January 2028 deadline simply compresses the timeline enough to make the sequencing visible.
 
@@ -1987,7 +1987,7 @@ Vermont's CIN implementation should include a dedicated master patient index as 
 ::: {custom-style="CalloutBeyond"}
 **BEYOND VERMONT**
 
-A master patient index is the unglamorous, easy-to-defer piece of infrastructure that every multi-organization care network eventually discovers it cannot do without — whether that network is a Vermont CIN, a Medicaid managed-care plan's provider network in another state, or a regional clinically integrated network anywhere else. The pattern is consistent nationally: organizations invest first in the visible technology (a portal, a dashboard, an AI tool) and defer the MPI because it produces no demo-able output on its own, then discover that every care-coordination feature they actually wanted depends on it. Treat “do we have a reliable MPI” as a go/no-go gate for any care-coordination initiative, in any state.
+A master patient index is the unglamorous, easy-to-defer piece of infrastructure that every multi-organization care network eventually discovers it cannot do without — whether that network is a Vermont CIN, a Medicaid managed-care plan's provider network in another state, or a regional clinically integrated network anywhere else. The pattern is consistent nationally: organizations invest first in the visible technology (a portal, a dashboard, an AI tool) and defer the MPI because it produces no demo-able output on its own, then discover that every care-coordination feature they actually wanted depends on it. Treat "do we have a reliable MPI" as a go/no-go gate for any care-coordination initiative, in any state.
 :::
 ## **AI Clinical Governance — The Complete Framework**
 
@@ -2106,35 +2106,35 @@ If you are a national health policy professional: Vermont's technology chapter i
 
 ## **Key Concepts in This Chapter**
 
-**FHIR R4**  
+**FHIR R4**
 The fourth version of the HL7 FHIR standard, mandated by CMS for healthcare data exchange since 2021. Defines data formats and APIs for patient access, provider access, and payer-to-provider exchange. A standard, not a product — compliance requires implementation work beyond meeting the technical specification.
 
-**Da Vinci Implementation Guides**  
+**Da Vinci Implementation Guides**
 HL7-published FHIR implementation guides developed by the Da Vinci Project (a collaboration of payers, providers, and vendors) for specific use cases: Coverage Requirements Discovery (CRD), Documentation Templates and Rules (DTR), and others for prior authorization, formulary, and care coordination.
 
-**Master patient index (MPI)**  
+**Master patient index (MPI)**
 A centralized database that maintains a consistent patient identity across multiple healthcare organizations, enabling reliable matching of records from different systems for the same patient.
 
-**SaMD (Software as Medical Device)**  
+**SaMD (Software as Medical Device)**
 FDA regulatory category for software that performs medical functions: diagnosing, treating, mitigating, or preventing disease. Clinical AI tools that influence clinical decisions may be SaMDs subject to FDA clearance requirements.
 
-**Alert fatigue**  
+**Alert fatigue**
 The tendency of clinicians to automatically override EHR alerts due to their excessive volume and poor specificity, rendering the alert system ineffective. A design problem, not a clinician behavior problem — effective CDS is specific, actionable, and workflow-integrated.
 
-**CommonWell / Carequality**  
+**CommonWell / Carequality**
 National health data exchange networks that enable FHIR-based record sharing between health systems across organizational boundaries. VITL participates in CommonWell; Vermont CIN membership would enable access to both networks for out-of-state record retrieval.
 
-**Change Healthcare attack**  
+**Change Healthcare attack**
 A 2024 cyberattack on Change Healthcare (a claims processing subsidiary of UnitedHealth Group) that disrupted healthcare claims processing nationally for months, causing cash flow crises at rural hospitals dependent on timely claims payment. Demonstrated systemic healthcare cybersecurity vulnerability.
 
-**MSSP (Managed Security Service Provider)**  
+**MSSP (Managed Security Service Provider)**
 A third-party vendor providing outsourced security operations services — monitoring, threat detection, incident response — enabling organizations without internal security staff to maintain enterprise-level cybersecurity posture.
 
 Sources: CMS Interoperability and Patient Access Final Rule (2020); ONC 21st Century Cures Final Rule (2020); HL7 FHIR R4 specification; Da Vinci Project implementation guides; FDA SaMD framework; the Technology pillar framework; Vermont VITL documentation; Vermont RHT Program Application (November 2025); JAMA Network Open ambient scribe study (2024).
 
 # **Chapter 6: The Economics Pillar — Global Budgets, Reference-Based Pricing, and Financial Reform**
 
-*Vermont’s mandatory reference-based pricing and global hospital budgets represent the most direct attempt by any American state to break the fee-for-service incentive structure that makes population health management financially irrational.*
+*Vermont's mandatory reference-based pricing and global hospital budgets represent the most direct attempt by any American state to break the fee-for-service incentive structure that makes population health management financially irrational.*
 
 *Payment reform is the precondition on which all other transformation depends. This chapter develops reference-based pricing mechanics, global budget architecture, and what Maryland's decade of evidence proves.*
 
@@ -2198,7 +2198,7 @@ The consequence for insurance premiums is direct and arithmetically straightforw
 | 2023 | $875 |
 | 2024 | $948 |
 
-*Figure 6.2 — Vermont silver marketplace premium trajectory 2018–2024, showing 108% increase over six years. Source: Oliver Wyman Act 167 Report; GMCB analysis.*
+*Figure 6.2 — Vermont silver marketplace premium trajectory 2018–2024, showing 108% increase over six years. Sources: Oliver Wyman Act 167 Report; GMCB analysis.*
 
 ### **The Cross-Subsidy Collapse**
 
@@ -2307,7 +2307,7 @@ Global budget design is technically complex, and the design choices are conseque
 | Quality linkage | How are quality metrics integrated — penalty, incentive, or both? | Too small a linkage \= no behavioral change. Too large \= financial instability for hospitals still improving. | Act 68 requires standardized accountability metrics. GMCB quality programs (readmissions, HACs) will be embedded. |
 | Flexibility mechanisms | Provisions for mid-year adjustments, carryover of savings, risk corridors? | More flexibility \= lower hospital risk, easier adoption. Less flexibility \= stronger cost-control signal. | GMCB authorized to identify conditions requiring modification or termination of RBP or budget parameters. |
 
-*Figure 6.5 — Five dimensions of global budget design with Vermont's current direction. Source: GMCB Act 68 Update (February 2026); Act 68 of 2025.*
+*Figure 6.5 — Five dimensions of global budget design with Vermont's current direction. Sources: GMCB Act 68 Update (February 2026); Act 68 of 2025.*
 
 ### **Vermont's Global Budget History: Four Attempts, One Lesson**
 
@@ -2333,7 +2333,7 @@ The central lesson of this history is unambiguous: voluntary models fail because
 
 ## **Maryland — A Decade of Global Budget Evidence**
 
-Vermont is this chapter's forward-looking case — an early-stage, mandatory implementation whose outcomes are still unfolding. Maryland is this chapter's backward-looking case — a decade-plus, statewide global budget program whose outcomes are already measurable. The two are best read as a pair: Maryland answers “does this kind of model work anywhere, over time?” while Vermont answers “what does it take to implement one today, under current conditions?” A reader in a state with neither Vermont's all-payer infrastructure nor Maryland's decades of regulatory history should read this section first, since it is the evidence base that does not depend on either state's specific starting conditions.
+Vermont is this chapter's forward-looking case — an early-stage, mandatory implementation whose outcomes are still unfolding. Maryland is this chapter's backward-looking case — a decade-plus, statewide global budget program whose outcomes are already measurable. The two are best read as a pair: Maryland answers "does this kind of model work anywhere, over time?" while Vermont answers "what does it take to implement one today, under current conditions?" A reader in a state with neither Vermont's all-payer infrastructure nor Maryland's decades of regulatory history should read this section first, since it is the evidence base that does not depend on either state's specific starting conditions.
 
 ### **Maryland All-Payer Model — A Decade of Evidence**
 
@@ -2438,8 +2438,8 @@ Oliver Wyman built two financial scenarios for Vermont's hospital sector through
 
 | Scenario | Assumptions and 5-year system deficit |
 | :---- | :---- |
-| Conservative: 3.5% revenue / 5% expense growth | Non-340B revenue: +3.5% annually. All operating expenses: +5% annually from 2023 baseline.5-year system deficit (2024-2028):• $700M vs. break-even• $1.4B vs. 3% operating margin target• FY2023 budget overage of $106M suggests starting point may be worse than modeled |
-| Realistic: 3.5% revenue / 7-8% expense growth | Non-340B revenue: +3.5% annually. Non-physician labor: +10% annually. Physician fees: +5% annually. Other operating expenses: +7% annually. 340B payments: +3% (inflation only).5-year system deficit (2024-2028):• $2.4B vs. break-even ($3,700 per Vermont resident)• $3.1B vs. 3% operating margin ($4,800 per Vermont resident)• Vermont hospitals requested $285M in FY25 budget increases — a data point supporting the realistic scenario |
+| Conservative: 3.5% revenue / 5% expense growth | Non-340B revenue: +3.5% annually. All operating expenses: +5% annually from 2023 baseline.5-year system deficit (2024–2028):• $700M vs. break-even• $1.4B vs. 3% operating margin target• FY2023 budget overage of $106M suggests starting point may be worse than modeled |
+| Realistic: 3.5% revenue / 7-8% expense growth | Non-340B revenue: +3.5% annually. Non-physician labor: +10% annually. Physician fees: +5% annually. Other operating expenses: +7% annually. 340B payments: +3% (inflation only).5-year system deficit (2024–2028):• $2.4B vs. break-even ($3,700 per Vermont resident)• $3.1B vs. 3% operating margin ($4,800 per Vermont resident)• Vermont hospitals requested $285M in FY25 budget increases — a data point supporting the realistic scenario |
 
 *Figure 6.9 — Oliver Wyman Vermont hospital financial projection scenarios. Source: Oliver Wyman Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025).*
 
@@ -2529,36 +2529,36 @@ If you are a national health policy professional: Vermont's RBP target of 200% o
 
 ## **Key Concepts in This Chapter**
 
-**Global Budget Revenue (GBR)**  
+**Global Budget Revenue (GBR)**
 Maryland's term for a prospectively fixed annual hospital revenue cap, adjusted for quality performance and population health metrics. The model Vermont's GMCB-designed commercial global budgets will most closely follow.
 
-**All-payer alignment**  
+**All-payer alignment**
 The condition in which Medicare, Medicaid, and commercial payers all operate under the same or compatible payment methodology for hospital services. Essential for global budget effectiveness; Vermont's AHEAD + Act 68 combination is designed to achieve this by FY2028-2030.
 
-**Cross-subsidy**  
+**Cross-subsidy**
 The mechanism by which above-cost commercial payments subsidize below-cost Medicare and Medicaid payments. Vermont's demographic shift is making this mechanism financially unsustainable as the commercial base shrinks relative to the government-payer population.
 
-**Potentially avoidable utilization (PAU)**  
+**Potentially avoidable utilization (PAU)**
 Hospital admissions, ED visits, and readmissions that could have been prevented through effective primary care, care coordination, or SDOH intervention. A key performance metric under global budgets; reducing PAU saves money in a capped-revenue environment.
 
-**EAST Fund**  
+**EAST Fund**
 Equity, Access, and Statewide Transformation Fund — the component of Vermont's AHEAD State Agreement providing up to $150M annually in additional Medicare funds for investment in primary care, behavioral health, home health, and long-term care.
 
 AHEAD (Achieving Healthcare Efficiency through Accountable Design)
 
 CMMI's voluntary state total cost of care model, with 6 participating states. Vermont participates in Cohort 2, beginning January 2028. Provides Medicare FFS hospital global budgets, enhanced primary care payments, and accountability for total cost of care growth.
 
-**Revenue predictability**  
+**Revenue predictability**
 A primary benefit of global budgets for hospital financial management: knowing total annual revenue before the year begins enables capital planning, workforce investment, and strategic redesign that FFS revenue uncertainty prevents.
 
-**PMPM (per member per month)**  
+**PMPM (per member per month)**
 The standard unit of measurement in population-based payment models. Total spending (or cost) divided by the number of enrolled members divided by the number of months. The fundamental metric for tracking performance under global budgets and capitation arrangements.
 
 Sources: Oliver Wyman Healthcare and Life Sciences Group, Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025); Act 68 of 2025 (Vermont); Green Mountain Care Board, Act 68 Update on Hospital Reference-Based Pricing and Global Budgets (February 17, 2026); Vermont AHEAD State Agreement (January 17, 2025); CMS, AHEAD Model overview; Maryland HSCRC, Global Budget Revenue methodology and annual reports; Commonwealth Fund, Hospital Global Budgeting: Lessons from Maryland and Selected Nations (June 2024); Milbank Memorial Fund, Uniquely Similar: New Results from Maryland's All-Payer Model (2020); Vermont Agency of Human Services, Rural Health Transformation Program Application (November 2025).
 
 # **Chapter 7: The Economics Pillar in Practice — VBC Financial Modeling and APM Readiness**
 
-*The translation of Vermont’s payment architecture into operational financial management requires actuarial precision, equity safeguards, and analytics capability being built simultaneously with the policy mandates they must support.*
+*The translation of Vermont's payment architecture into operational financial management requires actuarial precision, equity safeguards, and analytics capability being built simultaneously with the policy mandates they must support.*
 
 *How healthcare organizations model the financial impact of value-based care — benchmark mechanics, shared savings calculations, risk stratification ROI, and the financial case for transformation investment.*
 
@@ -2580,7 +2580,7 @@ Benchmarks can be constructed in several ways, each with different financial imp
 
 ### **Historical Spending Baseline**
 
-The most common approach — the benchmark is set at the organization's own historical cost of care, typically with a trend adjustment. Advantage: organizations with above-average historical spending start with a higher benchmark, making savings easier to achieve. Disadvantage: organizations with below-average historical spending (already efficient) face a lower benchmark with less room for savings — the ‘efficient provider disadvantage.’
+The most common approach — the benchmark is set at the organization's own historical cost of care, typically with a trend adjustment. Advantage: organizations with above-average historical spending start with a higher benchmark, making savings easier to achieve. Disadvantage: organizations with below-average historical spending (already efficient) face a lower benchmark with less room for savings — the 'efficient provider disadvantage.'
 
 ::: {custom-style="CalloutKey"}
 **VERMONT AHEAD CONTEXT**
@@ -2617,7 +2617,7 @@ For organizations entering ACO REACH, MSSP, or similar shared savings models, th
 | 4. Minimum savings rate (MSR) | In most shared savings models, savings must exceed a minimum threshold (typically 2-3.5%) before the organization shares in them | Protects against natural year-to-year cost variation triggering shared savings or losses that don't reflect genuine performance changes. | AHEAD uses a different structure — state-level TCOC targets rather than individual ACO MSRs — but the minimum threshold concept applies at the state level. |
 | 5. Shared savings calculation | Gross savings × sharing rate \= Organization's shared savings payment (or loss obligation) | Sharing rates vary by model and risk track — typically 50-75% for one-sided models; may reach 80% for full-risk models. | Vermont RBP: savings to payers from price reduction; 100% of premium passthrough per GMCB monitoring requirement. |
 
-*Figure 7.1 — APM shared savings calculation framework. Source: HTR's APM Shared Savings Calculator methodology; CMS ACO model documentation.*
+*Figure 7.1 — APM shared savings calculation framework. Sources: HTR's APM Shared Savings Calculator methodology; CMS ACO model documentation.*
 
 ### **Risk Stratification — The Economic Engine of Population Health Management**
 
@@ -2728,7 +2728,7 @@ The Hospital Financial Stress Test Model — available in the Research Lab for P
 
 - RBP scenario: What does our financial position look like if commercial prices are set at 200% of Medicare (Oliver Wyman's recommended benchmark) or 250% (GMCB's phased approach)? What service lines have prices furthest above the benchmark and face the most revenue reduction?
 - Global budget scenario: Under a prospective revenue cap equal to our current net patient revenue minus X%, what is our operating margin? What cost reductions or service redesigns are required to maintain solvency?
-- Medicaid cut scenario: With H.R. 1's Medicaid revenue reductions phasing in from 2027-2031, what is our projected total revenue under conservative, base, and optimistic assumptions about our Medicaid payer mix?
+- Medicaid cut scenario: With H.R. 1's Medicaid revenue reductions phasing in from 2027–2031, what is our projected total revenue under conservative, base, and optimistic assumptions about our Medicaid payer mix?
 - Transformation investment scenario: If we invest $X million in care management, CHW deployment, and telehealth, what reduction in avoidable hospitalizations and ED visits is required to achieve positive ROI within our VBC contract or global budget framework?
 
 ## **The ROI of Transformation — Building the Financial Case**
@@ -2783,32 +2783,32 @@ For Vermont hospitals operating under global budgets, the financial relationship
 
 ## **Key Concepts in This Chapter**
 
-**Benchmark**  
+**Benchmark**
 The expected cost of care against which actual APM performance is measured. Shared savings or losses are calculated relative to the benchmark. Benchmark methodology — historical vs. regional, trend adjustment, risk adjustment — is the most consequential financial design choice in APM contract entry.
 
-**Attribution**  
+**Attribution**
 The process of assigning patients to an ACO or provider for purposes of shared savings/loss calculation. Prospective attribution (known before the year) enables proactive care management; retrospective attribution (known after the year) creates uncertainty. Attribution methodology determines the denominator and exposure.
 
-**Shared savings rate**  
+**Shared savings rate**
 The percentage of savings below benchmark that the organization receives. Typically 50-75% for one-sided risk models; may reach 80% for full-risk models.
 
-**Minimum savings rate (MSR)**  
+**Minimum savings rate (MSR)**
 The threshold below which savings are not shared — typically 2-3.5% of benchmark — protecting against natural year-to-year variation triggering unearned payments.
 
-**Risk corridor**  
+**Risk corridor**
 A provision in full-risk APM contracts that caps the organization's maximum financial loss at a defined threshold, providing stop-loss protection for organizations bearing downside risk.
 
-**RAF (Risk Adjustment Factor)**  
+**RAF (Risk Adjustment Factor)**
 The multiplier applied to a benchmark to account for the health status of the attributed population. Accurate HCC (Hierarchical Condition Category) coding is essential for RAF accuracy. RAF gaps — diagnoses that should be coded but are not — create benchmarks that understate the population's expected cost, producing apparent savings that disappear when coding is corrected.
 
-**VBC Transformation Readiness Assessment**  
+**VBC Transformation Readiness Assessment**
 The 30-dimension, 6-domain assessment evaluating an organization's readiness to enter and succeed in value-based care contracts. Total score below 60/120 indicates pre-transition status; gap analysis identifies highest-priority investments before contract entry.
 
 Sources: CMS ACO model documentation; HTR's Economics pillar framework; Vermont Blueprint for Health ROI study (Population Health Management); GMCB hospital budget data; Oliver Wyman Act 167 Report; AHS Transformation Reports; Vermont AHEAD State Agreement; Act 68 of 2025.
 
 # **Chapter 8: The Clinical Pillar — Redesigning Care Delivery for a Transformed System**
 
-*Vermont’s Blueprint for Health, PCMH transformation, and CCBHC expansion represent two decades of primary care investment whose return is now contingent on the payment reform that Acts 167 and 68 mandate.*
+*Vermont's Blueprint for Health, PCMH transformation, and CCBHC expansion represent two decades of primary care investment whose return is now contingent on the payment reform that Acts 167 and 68 mandate.*
 
 The Clinical pillar is where the abstractions of the other five pillars become a patient's actual experience of care — and it is also where good intentions most often fail to translate into changed practice, because clinical workflows do not change simply because a payment model or a policy mandate changes. This is true everywhere care is delivered, not only in Vermont. The Vermont Blueprint for Health is presented in this chapter because it is one of the longest-running primary care transformation programs in the country, and its fifteen-year record offers something most states do not have: a long enough timeline to distinguish what clinical redesign looks like when it is given time to mature versus when it is rushed ahead of the payment and technology foundations it depends on.
 
@@ -3024,11 +3024,11 @@ The Statewide Health Care Delivery Strategic Plan that AHS must deliver by Decem
 
 | Commitment | What it requires | Timeline | Primary vehicle |
 | :---- | :---- | :---- | :---- |
-| Universal Blueprint PCMH coverage | Every primary care practice in Vermont participates in Blueprint PCMH recognition and receives all-payer PMPM payments; no Vermont resident is more than 30 minutes from a PCMH practice | 2025-2028 | Blueprint expansion; AHEAD PC primary care recruitment; RHT workforce investment |
-| Behavioral health integration at every PCMH | Every PCMH practice implements CoCM or equivalent behavioral health integration, with BHCM staff and psychiatric consultation available to all attributed patients | 2025-2028 | MHI permanent funding through AHEAD EAST Fund; CCBHC partnerships; BHCM workforce training through RHT Program |
+| Universal Blueprint PCMH coverage | Every primary care practice in Vermont participates in Blueprint PCMH recognition and receives all-payer PMPM payments; no Vermont resident is more than 30 minutes from a PCMH practice | 2025–2028 | Blueprint expansion; AHEAD PC primary care recruitment; RHT workforce investment |
+| Behavioral health integration at every PCMH | Every PCMH practice implements CoCM or equivalent behavioral health integration, with BHCM staff and psychiatric consultation available to all attributed patients | 2025–2028 | MHI permanent funding through AHEAD EAST Fund; CCBHC partnerships; BHCM workforce training through RHT Program |
 | CCBHC network covering all HSAs | Certified Community-Based integrated Health Centers established in every Hospital Service Area, providing comprehensive community behavioral health services including crisis response, SUD treatment, and care coordination | 2026 (5 new CCBHCs) through 2028 | CCBHC Demonstration State enhanced Medicaid; RHT Program funding; Act 68 grants |
-| PACE program development | At least one PACE program operational in Vermont, serving the highest-acuity elderly population that would otherwise require nursing home placement; feasibility assessment for additional programs | 2026-2028 (feasibility and launch) | AHEAD EAST Fund; RHT long-term care infrastructure investment; Medicaid PACE program rules |
-| Dementia care infrastructure | Memory care COE designation at 3-5 facilities; primary care dementia assessment protocols embedded in all PCMH practices; family caregiver support programs in all HSAs | 2026-2030 | RHT Program; COE designation process; Blueprint quality measures expansion |
+| PACE program development | At least one PACE program operational in Vermont, serving the highest-acuity elderly population that would otherwise require nursing home placement; feasibility assessment for additional programs | 2026–2028 (feasibility and launch) | AHEAD EAST Fund; RHT long-term care infrastructure investment; Medicaid PACE program rules |
+| Dementia care infrastructure | Memory care COE designation at 3-5 facilities; primary care dementia assessment protocols embedded in all PCMH practices; family caregiver support programs in all HSAs | 2026–2030 | RHT Program; COE designation process; Blueprint quality measures expansion |
 
 *Figure 8.6 — Clinical pillar commitments for Vermont's Statewide Health Care Delivery Strategic Plan. Sources: Act 68 of 2025; Oliver Wyman Act 167 Report; AHS Transformation Plans; Vermont RHT Program Application.*
 
@@ -3056,38 +3056,38 @@ If you are a national health policy professional: Vermont's clinical pillar expe
 
 ## **Key Concepts in This Chapter**
 
-**Blueprint for Health**  
+**Blueprint for Health**
 Vermont's all-payer primary care transformation program, operating since 2006. Provides per-member-per-month payments to NCQA-recognized Patient-Centered Medical Home practices and funds Community Health Teams to provide wraparound care coordination services. The foundational layer of Vermont's clinical pillar.
 
-**Patient-Centered Medical Home (PCMH)**  
+**Patient-Centered Medical Home (PCMH)**
 A primary care practice recognized by NCQA as meeting advanced standards for care coordination, population management, quality improvement, and patient engagement. The organizational model for Vermont's primary care system under Blueprint and AHEAD.
 
-**Community Health Team (CHT)**  
+**Community Health Team (CHT)**
 Multi-disciplinary team of social workers, nurses, community health workers, and behavioral health professionals supporting PCMH practices with care coordination, SDOH navigation, and connection to community services.
 
-**Collaborative Care Model (CoCM)**  
+**Collaborative Care Model (CoCM)**
 The integrated behavioral health care model with the strongest evidence base — 90+ RCTs — embedding a behavioral health care manager and psychiatric consultant in primary care to address mental health and SUD needs without requiring specialty referral. The only integrated care model with designated Medicare billing codes.
 
-**Certified Community-Based integrated Health Center (CCBHC)**  
+**Certified Community-Based integrated Health Center (CCBHC)**
 Vermont's term for what CMS calls Certified Community Behavioral Health Clinics. Comprehensive community-based behavioral health facilities receiving enhanced Medicaid funding through the federal CCBHC Demonstration program.
 
-**Mental Health Integration (MHI)**  
+**Mental Health Integration (MHI)**
 Vermont Blueprint's pilot program embedding mental health clinicians and community health workers in primary care settings; evaluated in 2025 as highly effective but facing sustainability challenges when pilot funding ends.
 
-**PACE (Program of All-Inclusive Care for the Elderly)**  
+**PACE (Program of All-Inclusive Care for the Elderly)**
 An integrated medical, social, and long-term care model enabling frail elderly individuals to remain in their communities rather than entering nursing homes. Vermont currently has no PACE programs — a significant gap given its aging demographics.
 
-**Hub and Spoke**  
+**Hub and Spoke**
 Vermont's SUD treatment model: Hubs provide intensive addiction treatment; Spokes are office-based opioid treatment practices in primary care settings providing medication-assisted treatment.
 
-**HRSN (Health-Related Social Needs)**  
+**HRSN (Health-Related Social Needs)**
 The social needs that affect health outcomes — housing, food security, transportation, financial insecurity, social isolation — now universally screened for in Vermont's Blueprint primary care practices.
 
 Sources: Vermont Blueprint for Health Annual Report 2024; Vermont DMH CCBHC Program website (mentalhealth.vermont.gov); Vermont Blueprint Mental Health Integration Pilot Qualitative Outcomes Evaluation (2025); Oliver Wyman Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025); Vermont Agency of Human Services Health Care System Transformation Report (November 2025); Act 68 of 2025; Vermont AHEAD State Agreement (January 2025); Vermont Rural Health Transformation Program Application (November 2025); Population Health Management (Blueprint ROI study, 2016); SAMHSA CoCM Program; CMS Behavioral Health Integration Services (January 2026).
 
 # **Chapter 9: The Clinical Pillar in Practice — Care Model Implementation, Quality Mechanics, and the Vermont Clinical Transformation Toolkit**
 
-*The operational deployment of Vermont’s care models requires workforce, capital, and workflow redesign at a pace the Rural Health Transformation Program is designed but not guaranteed to support.*
+*The operational deployment of Vermont's care models requires workforce, capital, and workflow redesign at a pace the Rural Health Transformation Program is designed but not guaranteed to support.*
 
 Every clinical model in this chapter — PCMH transformation, the Collaborative Care Model, CCBHC operations, HEDIS improvement — has a national specification and a national evidence base; none of it was invented in Vermont. What this chapter provides is the implementation layer that national specifications typically leave abstract: panel sizes, staffing ratios, workflow sequencing, the practical order in which a practice actually builds these capabilities. The Vermont Blueprint practices and the Vermont Clinical Transformation Toolkit are this chapter's worked examples of what implementation looks like when a state has spent fifteen years iterating on exactly these questions — useful to any practice or system implementing the same national models, regardless of state.
 
@@ -3251,11 +3251,11 @@ The Statewide Health Care Delivery Strategic Plan that AHS must deliver by Decem
 
 | Commitment | Operational Requirement | Timeline | Primary Vehicle |
 | :---- | :---- | :---- | :---- |
-| PCMH transformation support for all Vermont primary care practices | Blueprint field staff capacity maintained and expanded; AHEAD transition support for all practices converting from current Blueprint Medicare payment to PC AHEAD | 2025-2028 | Blueprint program; DVHA; AHEAD implementation team |
-| CoCM deployment at every PCMH practice | BHCM workforce training funded; telepsychiatry consultation network established; CoCM billing infrastructure in place at all Blueprint practices | 2025-2028 | MHI permanent funding through AHEAD EAST Fund; RHT Program; CCBHC partnerships |
-| Structured data capture standards across all Vermont primary care | EHR workflow redesign support through Blueprint field staff; VITL connectivity requirements for all Blueprint-participating practices; HCC gap analysis completed for all AHEAD-attributed Medicare patients before January 2028 | 2025-2027 | Blueprint data infrastructure; GMCB analytics vendor; VITL |
-| Care transition protocols at all Vermont hospitals for Blueprint-attributed patients | CHT care transition protocol implemented at all Blueprint practices; VITL admission notification system operational for all Vermont hospitals; 30-day follow-up rate targets established for behavioral health ED visits | 2025-2027 | Blueprint CHT model; VITL infrastructure; DVHA quality targets |
-| Clinical leader engagement in AHEAD governance and Statewide Strategic Plan development | Formal clinical advisory structure for AHS Health Care Delivery Advisory Committee; physician and nursing leadership in AHEAD hospital governance; clinical quality targets set with clinical leader input | 2025-2028 | Act 68 Advisory Committee structure; AHS organizational design; GMCB quality reporting requirements |
+| PCMH transformation support for all Vermont primary care practices | Blueprint field staff capacity maintained and expanded; AHEAD transition support for all practices converting from current Blueprint Medicare payment to PC AHEAD | 2025–2028 | Blueprint program; DVHA; AHEAD implementation team |
+| CoCM deployment at every PCMH practice | BHCM workforce training funded; telepsychiatry consultation network established; CoCM billing infrastructure in place at all Blueprint practices | 2025–2028 | MHI permanent funding through AHEAD EAST Fund; RHT Program; CCBHC partnerships |
+| Structured data capture standards across all Vermont primary care | EHR workflow redesign support through Blueprint field staff; VITL connectivity requirements for all Blueprint-participating practices; HCC gap analysis completed for all AHEAD-attributed Medicare patients before January 2028 | 2025–2027 | Blueprint data infrastructure; GMCB analytics vendor; VITL |
+| Care transition protocols at all Vermont hospitals for Blueprint-attributed patients | CHT care transition protocol implemented at all Blueprint practices; VITL admission notification system operational for all Vermont hospitals; 30-day follow-up rate targets established for behavioral health ED visits | 2025–2027 | Blueprint CHT model; VITL infrastructure; DVHA quality targets |
+| Clinical leader engagement in AHEAD governance and Statewide Strategic Plan development | Formal clinical advisory structure for AHS Health Care Delivery Advisory Committee; physician and nursing leadership in AHEAD hospital governance; clinical quality targets set with clinical leader input | 2025–2028 | Act 68 Advisory Committee structure; AHS organizational design; GMCB quality reporting requirements |
 
 *Figure 9.4 — Clinical pillar in-practice implementation commitments for Vermont's Statewide Health Care Delivery Strategic Plan. Sources: Act 68 of 2025; AHEAD State Agreement (January 2025); AHS Transformation Plans 2025; Vermont RHT Program Application (November 2025).*
 
@@ -3298,38 +3298,38 @@ If you are a national health policy professional: Vermont's care model implement
 
 ## **Key Concepts in This Chapter**
 
-**Panel risk stratification**  
+**Panel risk stratification**
 The systematic organization of a primary care practice's attributed patient panel into risk tiers to enable proportional deployment of care management resources. The foundation of population health management at the practice level.
 
-**Behavioral Health Care Manager (BHCM)**  
+**Behavioral Health Care Manager (BHCM)**
 The clinician who serves as the day-to-day care coordinator in the Collaborative Care Model — maintaining the patient registry, providing brief evidence-based interventions, monitoring treatment response with validated rating scales, and escalating to the psychiatric consultant as needed.
 
-**Transitional Care Model (TCM)**  
+**Transitional Care Model (TCM)**
 The evidence-based approach to reducing 30-day readmissions through intensive post-discharge support, including 24-48 hour post-discharge contact, home visits for highest-risk patients, medication reconciliation, and primary care follow-up before discharge.
 
-**HCC gap analysis**  
+**HCC gap analysis**
 A systematic review of an attributed population's ICD-10 diagnosis coding to identify documentation opportunities where more precise coding would improve risk adjustment accuracy and produce a more accurate RAF score — directly affecting global budget levels under AHEAD.
 
-**CoCM registry**  
+**CoCM registry**
 The patient tracking tool that is the operational foundation of the Collaborative Care Model — a list of all patients in CoCM treatment with their current validated outcome scores, treatment status, and psychiatric consultation record. Registry-based management distinguishes CoCM from ad hoc behavioral health referral.
 
-**Warm handoff**  
+**Warm handoff**
 A direct, synchronous communication between two clinicians or care coordinators transferring responsibility for a patient's care — as opposed to a referral letter. The warm handoff between CCBHC case managers and primary care BHCMs is the operational linchpin of Vermont's behavioral health continuum.
 
-**HEDIS FUM**  
+**HEDIS FUM**
 Follow-Up After Emergency Department Visit for Mental Illness — the HEDIS measure tracking the percentage of ED visits for mental illness followed by a clinical visit within 7 and 30 days. Vermont's 76% 30-day follow-up rate reflects performance on this measure and represents a direct improvement opportunity.
 
-**Structured data capture**  
+**Structured data capture**
 The documentation of clinical information in EHR fields that can be extracted and analyzed for quality measurement and population health management, as opposed to free-text notes that cannot be systematically processed. The difference between a blood pressure recorded in a structured vital signs field versus noted in a progress note determines whether it can be counted for HEDIS hypertension control reporting.
 
-**Clinical inertia**  
+**Clinical inertia**
 The documented tendency of clinicians to continue existing treatment plans even when clinical evidence indicates that treatment intensification is warranted. One of the primary clinical root causes of chronic disease quality measure underperformance; addressed through EHR-embedded clinical decision support alerts and systematic prescribing protocols.
 
 Sources: NCQA PCMH Standards and Guidelines, 2023 edition; Vermont Blueprint for Health Annual Report 2024; Vermont Blueprint Mental Health Integration Pilot Qualitative Outcomes Evaluation (2025); SAMHSA CCBHC Program description and technical assistance documentation; CMS Behavioral Health Integration Services guidance (January 2026); Vermont Agency of Human Services Health Care System Transformation Report (November 2025); Act 68 of 2025; Vermont AHEAD State Agreement (January 2025); Vermont Rural Health Transformation Program Application (November 2025); Coleman EA, et al. Transitional Care Model documentation; CMS Transitional Care Management billing guidance (2024); Population Health Management journal (Blueprint ROI study, 2016); AHRQ Care Coordination Measures Atlas; HTR Research Lab Risk Stratification Engine methodology documentation.
 
 # **Chapter 10: The Equity Pillar — Closing Gaps, Not Just Averaging Them**
 
-*Vermont’s 11-point primary care access gap by race and the geographic concentration of the worst health outcomes in the Northeast Kingdom are the equity test that every payment reform architecture must pass.*
+*Vermont's 11-point primary care access gap by race and the geographic concentration of the worst health outcomes in the Northeast Kingdom are the equity test that every payment reform architecture must pass.*
 
 *A system that improves average outcomes while widening disparities has not achieved quality improvement. Vermont's dominant equity challenge is geographic — the Northeast Kingdom.*
 
@@ -3371,7 +3371,7 @@ Vermont's racial equity disparities, while smaller in absolute number than in mo
 
 BIPOC Vermonters, LGBTQ+ Vermonters, Vermonters with disabilities, and lower-income Vermonters were all more likely to delay care due to cost in a 2024 state survey. The same populations were more likely to report their community was not safe for walking — an indicator of the broader social and built environment conditions that shape health. Eight percent of all Vermonters said they did not get medical care because of cost in the prior year; that rate is higher among people with less education, lower income, BIPOC adults, LGBTQ+ adults, and people with a disability.
 
-Vermont's Indigenous population — primarily Abenaki communities — faces specific equity challenges that the state's data systems are not yet adequately equipped to measure. A June 2024 state health equity report documented disparities for the American Indian or Alaska Native population based on 2021-2022 survey data, but Vermont's small and geographically dispersed Indigenous population creates statistical challenges for survey-based measurement. Vermont Public reporting in 2025 found that several Indigenous community organizations had not been in contact with the Health Department, suggesting that outreach and engagement gaps compound the measurement gaps.
+Vermont's Indigenous population — primarily Abenaki communities — faces specific equity challenges that the state's data systems are not yet adequately equipped to measure. A June 2024 state health equity report documented disparities for the American Indian or Alaska Native population based on 2021–2022 survey data, but Vermont's small and geographically dispersed Indigenous population creates statistical challenges for survey-based measurement. Vermont Public reporting in 2025 found that several Indigenous community organizations had not been in contact with the Health Department, suggesting that outreach and engagement gaps compound the measurement gaps.
 
 ### **The SDOH Burden**
 
@@ -3493,10 +3493,10 @@ Act 167 and Act 68 equity requirements: Both acts explicitly include reducing he
 
 | Gap | What is missing | Required investment | Timeline |
 | :---- | :---- | :---- | :---- |
-| County-level equity data infrastructure | Vermont's equity data is primarily state-level, with BRFSS survey data at the county level for major indicators. Sub-county data is largely absent. The Northeast Kingdom's equity burden cannot be managed without granular geographic data. | VHCURES enhancement to enable county-level SDOH and outcome stratification; VITL connectivity to community-based providers who serve underserved populations; integration of VDH equity data with AHS transformation monitoring | 2026-2027 (analytics vendor procurement enables this) |
+| County-level equity data infrastructure | Vermont's equity data is primarily state-level, with BRFSS survey data at the county level for major indicators. Sub-county data is largely absent. The Northeast Kingdom's equity burden cannot be managed without granular geographic data. | VHCURES enhancement to enable county-level SDOH and outcome stratification; VITL connectivity to community-based providers who serve underserved populations; integration of VDH equity data with AHS transformation monitoring | 2026–2027 (analytics vendor procurement enables this) |
 | Culturally competent workforce | Vermont's clinical workforce is overwhelmingly white and does not reflect the demographic diversity of Vermont's BIPOC, refugee, and immigrant communities. Provider diversity is both an equity outcome and an equity intervention. | Targeted workforce recruitment from underrepresented communities; tuition assistance with equity focus; cultural competency standards in Blueprint and AHEAD participation requirements; provider diversity reporting | Ongoing; RHT workforce investments provide vehicle |
 | GLP-1 Medicaid coverage decision | Vermont Medicaid currently does not cover GLP-1s for obesity as primary indication. The BALANCE Model opt-in decision is an equity policy choice with direct implications for the Medicaid population with obesity. | DVHA evaluation of BALANCE Model participation; budget modeling of long-term cost reduction from obesity treatment vs. short-term coverage costs; legislative advocacy if state plan amendment required | Decision needed by January 2026 (BALANCE opt-in deadline); coverage effective May 2026 if Vermont participates |
-| Northeast Kingdom service resilience | The NE Kingdom has the state's highest equity burden and the most financially distressed hospital infrastructure. REH conversion and telehealth investments must precede any service reduction. | North Country and NE VT Regional transformation plans must include equity impact analysis; broadband investment as prerequisite to telehealth; EMS regionalization funded through RHT Program; CCBHC designation for Northeast Kingdom Human Services (planned July 2026) | 2026 (CCBHC designation); 2027-2028 (EMS regionalization; telehealth); hospital transition decisions by 2028 Strategic Plan |
+| Northeast Kingdom service resilience | The NE Kingdom has the state's highest equity burden and the most financially distressed hospital infrastructure. REH conversion and telehealth investments must precede any service reduction. | North Country and NE VT Regional transformation plans must include equity impact analysis; broadband investment as prerequisite to telehealth; EMS regionalization funded through RHT Program; CCBHC designation for Northeast Kingdom Human Services (planned July 2026) | 2026 (CCBHC designation); 2027–2028 (EMS regionalization; telehealth); hospital transition decisions by 2028 Strategic Plan |
 | Trust-building with underserved communities | Vermont's BIPOC, LGBTQ+, Indigenous, and rural communities have documented experiences of discrimination and dismissal in healthcare settings. Trust is not built by policy statements; it is built by consistent, culturally respectful engagement over time. | Community health worker deployment from served communities; patient advisory councils with diverse representation; Indigenous community outreach and partnership (VDH engagement with Abenaki communities); HEART program expansion for rural LGBTQ+ Vermonters | Ongoing; requires sustained commitment, not a one-time program |
 
 *Figure 10.4 — Vermont equity gaps and required investments. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Oliver Wyman Act 167 Report; AHS Transformation Reports; KFF GLP-1 coverage analysis.*
@@ -3595,7 +3595,7 @@ The following matrix provides implementation guidance for the key Equity pillar 
 | Investment | Estimated cost | Timeline to value | ROI crossover | Vermont benchmark |
 | :---- | :---- | :---- | :---- | :---- |
 | HEROI scoring and equity measurement infrastructure | $30K-$80K setup; $20K/yr | 3-6 months | 12 months (risk avoidance) | Vermont HEROI: 14 HSA-level equity scores; GMCB reporting requirement |
-| HRSN universal screening at Blueprint practices | $10K-$30K per practice/yr | 1-3 months | 6-12 months | Vermont: 91% statewide access vs 79-81% BIPOC — HRSN closes referral gap |
+| HRSN universal screening at Blueprint practices | $10K-$30K per practice/yr | 1-3 months | 6-12 months | Vermont: 91% statewide access vs. 79-81% BIPOC — HRSN closes referral gap |
 | Social risk adjustment methodology design | $100K-$300K state cost | 12-18 months | Prerequisite for fair budgets | Vermont AHEAD: active SRA design question as of early 2026 |
 | SDOH data integration (claims + AHS program data) | $200K-$500K state cost | 18-24 months | 24-36 months | Vermont CIN: housing, food, transportation linkage to VHCURES |
 | Health equity impact assessment process | $25K-$50K one-time | 3 months | Immediate: redesign cost avoidance | Act 68 HCAC consultation requirement; equity-as-design-constraint |
@@ -3714,35 +3714,35 @@ If you are a national health policy professional: Vermont's HEDIS equity measure
 
 ## **Key Concepts in This Chapter**
 
-**Disparity root cause taxonomy**  
+**Disparity root cause taxonomy**
 The six-pillar framework for categorizing the mechanisms that produce health disparities: geographic access barriers, social needs barriers, clinical practice variation, insurance and coverage barriers, and trust and engagement barriers. Each root cause requires different interventions; addressing the wrong cause does not close the gap.
 
-**GLP-1 agonists**  
+**GLP-1 agonists**
 A class of medications (semaglutide, tirzepatide) with proven efficacy for obesity, type 2 diabetes, and cardiovascular disease risk reduction. Current Medicare and most Medicaid programs do not cover them for obesity as a primary indication, creating an equity gap in which transformative drugs are accessible to commercially insured patients but not to Medicaid patients with the highest obesity burden.
 
-**BALANCE Model**  
+**BALANCE Model**
 CMS's December 2025 voluntary model enabling state Medicaid agencies and Medicare Part D plans to cover GLP-1 medications for obesity by negotiating prices with manufacturers. Medicaid launch as early as May 2026; Medicare Part D in January 2028. Voluntary for manufacturers, states, and plans.
 
-**Geographic equity**  
+**Geographic equity**
 The dimension of health equity concerning disparities attributable to where a person lives — rural versus urban, Northeast Kingdom versus Burlington. Vermont's dominant equity challenge; requires interventions that address geographic access barriers, transportation, broadband, and provider distribution alongside racial and socioeconomic equity.
 
-**SDOH (Social Determinants of Health)**  
+**SDOH (Social Determinants of Health)**
 The non-clinical conditions that shape health — housing, food security, transportation, economic security, education, social connection, and safety. Oliver Wyman's first imperative (build housing and fix transportation) is an SDOH intervention as much as a healthcare access intervention.
 
-**Health Equity Advisory Commission**  
+**Health Equity Advisory Commission**
 Vermont's standing advisory body on health equity policy. Required by Act 68 to be consulted by the Health Care Delivery Advisory Committee, embedding equity oversight in transformation governance.
 
-**Northeast Kingdom**  
+**Northeast Kingdom**
 Caledonia, Essex, and Orleans counties in Vermont's most rural region. Vermont's highest-priority equity geography: highest uninsurance rates (6-8%), most limited provider access, highest unemployment, lowest broadband connectivity, and most financially distressed hospital infrastructure.
 
-**HRSN (Health-Related Social Needs) screening**  
+**HRSN (Health-Related Social Needs) screening**
 Universal screening for social needs at primary care visits using validated tools, with warm handoffs to Community Health Teams for navigation. Operational throughout Vermont's Blueprint PCMH network; generates SDOH data that feeds equity monitoring when linked to VHCURES.
 
 Sources: Vermont Department of Health Health Equity Data Report, Annual Report to the Vermont Legislature (January 17, 2025); Oliver Wyman Healthcare and Life Sciences Group, Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025); Vermont Rural Health Transformation Program Application (November 2025); KFF, Medicaid Coverage of and Spending on GLP-1s (January 2026); KFF, What to Know About the BALANCE Model for GLP-1s in Medicare and Medicaid (2026); CMS, BALANCE Model announcement (December 23, 2025); CMS, Medicare GLP-1 Bridge demonstration (March 2026); Health Affairs, Reimagining Rural Health Equity (June 2024); Vermont Public, Vermont is trying to survey underrepresented communities about their health (April 2025); Act 68 of 2025; Act 167 of 2022; AHS November 2025 Health Care System Transformation Report.
 
 # **Chapter 11: The Operations Pillar — Executing Hospital System Transformation**
 
-*Vermont’s $1,303 per-discharge administrative cost gap versus the national benchmark is not a compliance problem — it is the primary financial opportunity available to hospitals that must operate within a global budget.*
+*Vermont's $1,303 per-discharge administrative cost gap versus the national benchmark is not a compliance problem — it is the primary financial opportunity available to hospitals that must operate within a global budget.*
 
 Operations is the pillar where a transformation plan either becomes real or stays a document — and it is also the pillar most often under-resourced, because it produces no new policy, technology, or care model of its own. It simply has to make the other five work, on a timeline, with the staff and capital actually available. That challenge is universal: any health system attempting structural transformation will face some version of the regionalization, workforce, and administrative-efficiency questions this chapter develops for Vermont's 14-hospital system. Vermont's specific numbers — the per-discharge administrative gap, the RHRC methodology, the hospital-by-hospital dashboard — are this chapter's worked example of what operationalizing a transformation mandate looks like when the mandate has statutory deadlines attached.
 
@@ -4077,7 +4077,7 @@ Under FFS, revenue is determined by what care the organization delivers. Under V
 | Incorrect benchmark attribution | Attribution list errors inflate or deflate the risk adjustment factor applied to your benchmark | Incorrect RAF produces a benchmark that doesn't reflect your population's actual cost burden | Compare attribution list to actual patient panel; use clinical data to validate risk adjustment; submit corrected diagnoses codes through formal channels |
 | Retroactive attribution changes | Payer changes attribution methodology mid-contract, shifting patients in or out of your attributed population | Shared savings calculations change unexpectedly after performance year ends | Negotiate prospective attribution methodology in contract; require prior notice of methodology changes; maintain your own attribution model to detect changes |
 
-*Figure 11.9 — Attribution error taxonomy and remediation. Source: HTR's Operations pillar framework; ACO REACH and MSSP operational guidance.*
+*Figure 11.9 — Attribution error taxonomy and remediation. Sources: HTR's Operations pillar framework; ACO REACH and MSSP operational guidance.*
 
 ### **Total Cost of Care Monitoring — Seeing What You Cannot Bill**
 
@@ -4189,8 +4189,8 @@ The following matrix provides implementation guidance for the key Operations pil
 | :---- | :---- | :---- | :---- | :---- |
 | Hospital transformation plan (RHRC model) | $150K-$400K per hospital | 6-12 months | 12-24 months | Vermont RHRC: 14 hospitals; financial + operational + change management |
 | PMO/project management for transformation | $200K-$500K annually | 3-6 months setup | 6-12 months | AHS PMO: managing 14 simultaneous hospital processes + AHEAD + RBP |
-| Administrative simplification (prior auth, credentialing) | $50K-$200K per system | 6-12 months | 12-18 months | Vermont: admin cost $3,826/adj discharge vs $1,427 national benchmark |
-| Revenue cycle optimization and HCC coding | $100K-$300K per org | 6-9 months | 9-18 months | Vermont CAH gap: $938/adj discharge vs $2,759 benchmark (RHRC data) |
+| Administrative simplification (prior auth, credentialing) | $50K-$200K per system | 6-12 months | 12-18 months | Vermont: admin cost $3,826/adj discharge vs. $1,427 national benchmark |
+| Revenue cycle optimization and HCC coding | $100K-$300K per org | 6-9 months | 9-18 months | Vermont CAH gap: $938/adj discharge vs. $2,759 benchmark (RHRC data) |
 | Service line rationalization and CON modernization | $100K-$250K state cost | 12-24 months | 24-36 months | Vermont Act 68 CON streamlining; EMS regionalization framework |
 | CIN shared services model | $500K-$2M network setup | 18-36 months | 36-48 months | Vermont CIN: RHT-funded; shared analytics, IT, care management for 14 hospitals |
 
@@ -4208,32 +4208,32 @@ If you are a national health policy professional: Vermont's revenue cycle and HC
 
 ## **Key Concepts in This Chapter**
 
-**Regional Specialty Center (RSC)**  
+**Regional Specialty Center (RSC)**
 A hospital designated to concentrate volume and clinical expertise in multiple specialty areas, serving as the referral destination for those specialties across a multi-HSA region. Vermont's Tier 1 hospitals under the Oliver Wyman regionalization blueprint.
 
-**Community Ambulatory Care Center (CACC)**  
+**Community Ambulatory Care Center (CACC)**
 An outpatient and primary care facility model proposed by Oliver Wyman as a potential conversion option for hospitals unable to sustain inpatient operations.
 
-**Potentially Avoidable ED Visit**  
+**Potentially Avoidable ED Visit**
 An emergency department visit that could have been prevented through timely primary care, care coordination, or SDOH intervention. Vermont's rate of 32.3% of all ED visits represents a major quality and cost improvement opportunity.
 
-**Rural Health Redesign Center (RHRC)**  
+**Rural Health Redesign Center (RHRC)**
 AHS's primary technical assistance contractor for hospital transformation planning in 2025, providing financial assessment, change management support, and transformation plan development across all 14 Vermont hospitals. Contract concluded October 2025.
 
-**Travel nursing cost**  
+**Travel nursing cost**
 The cost of temporary nurses hired through staffing agencies to fill vacancies, typically 2-3x the cost of permanent hires. Heavy travel nursing dependence is a primary driver of hospital financial distress across Vermont's system.
 
-**Administrative shared services**  
+**Administrative shared services**
 Centralized provision of non-clinical administrative functions (billing, coding, HR, credentialing, IT, group purchasing) across multiple hospitals, reducing the per-hospital administrative cost that is currently 91% above benchmark for Vermont PPS hospitals.
 
-**Population health management operating model**  
+**Population health management operating model**
 An organizational structure that manages healthcare resources at the population level — tracking health outcomes, utilization patterns, and SDOH factors across a defined geography — rather than managing individual patient encounters. The organizational model appropriate for a global budget environment.
 
 Sources: Oliver Wyman Healthcare and Life Sciences Group, Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025); Vermont Agency of Human Services, Health Care System Transformation Report (November 1, 2025); Vermont Agency of Human Services, Health Care System Transformation Report (August 2025); Vermont Agency of Human Services / Brendan Krause, Vermont's Health Care Reform Efforts, House Health Care Committee (January 31, 2025); Act 68 of 2025 (Vermont); Vermont Rural Health Transformation Program Application (November 3, 2025); Green Mountain Care Board, 2024 Annual Report (January 15, 2025); Vermont Agency of Human Services, Health Care Transformation website (healthcarereform.vermont.gov), accessed April 2026.
 
 # **Chapter 12: Infrastructure for Knowledge Transfer and Implementation**
 
-*The Transformation PMO, learning collaboratives, and Vermont CIN shared services are the connective tissue between Vermont’s statutory mandates and the organizational capacity to execute them — and their absence would be more consequential than any policy design flaw.*
+*The Transformation PMO, learning collaboratives, and Vermont CIN shared services are the connective tissue between Vermont's statutory mandates and the organizational capacity to execute them — and their absence would be more consequential than any policy design flaw.*
 
 Knowledge of the six pillars does not, by itself, produce transformation — someone has to run the program, manage the change, and connect the analytical framework to the people doing the work. This is true regardless of which state's statutes are driving the effort. The infrastructure described in this chapter — a program management function, structured advisory support, learning collaboratives, and a change-management discipline — is the generic implementation layer that sits underneath every pillar, in every state. Vermont's specific instantiations (the Transformation PMO, the CIN shared services) are this chapter's example of what that infrastructure looks like once built; an organization elsewhere should read this chapter as a checklist of functions to stand up, not a description of institutions to replicate by name.
 
@@ -4316,7 +4316,7 @@ John Kotter's eight-step change management framework — originally developed fo
 | 7. Sustain acceleration | Build on early wins to drive deeper change | Healthcare transformation must sustain momentum across multiple election cycles, budget battles, and inevitable setbacks. Statutory mandate — Act 68's December 2028 deadline — is the Vermont mechanism for sustaining acceleration. | Vermont's reform cascade structure — each Act building on the previous — is the acceleration mechanism. The Political risk is disruption of the sequence; the institutional protection is the GMCB's independent regulatory authority. |
 | 8. Institute change | Anchor changes in organizational culture and systems | New behaviors must become standard practice, not dependent on continuing leadership attention. Payment reform is the ultimate change institutionalization — when hospitals' financial incentives permanently change, the new behaviors become the default. | Global budgets as mandatory, permanent payment architecture are the ultimate institutionalization mechanism. When Vermont hospitals cannot generate revenue by increasing volume, the financial logic of population health management becomes permanent. |
 
-*Figure 12.2 — Kotter's change management framework applied to Vermont's healthcare transformation. Source: HTR Advisory methodology; Kotter (1996); Vermont transformation documentation.*
+*Figure 12.2 — Kotter's change management framework applied to Vermont's healthcare transformation. Sources: HTR Advisory methodology; Kotter (1996); Vermont transformation documentation.*
 
 ### **The Transformation Pace Problem**
 
@@ -4365,7 +4365,7 @@ The most common advisory failure in healthcare transformation is engaging extern
 "The best healthcare transformation advice I have ever received was not a brilliant strategic recommendation. It was a rigorous identification of the organizational capabilities we did not have, paired with a clear plan for building them. The strategy was clear. The question was whether we could execute it."
 :::
 ::: {custom-style="QuoteAttr"}
-— Composite of client reflections, HTR Advisory engagements, 2022-2026
+— Composite of client reflections, HTR Advisory engagements, 2022–2026
 :::
 
 ## **The Role of External Technical Assistance in State-Level Transformation**
@@ -4402,22 +4402,22 @@ The Wire
 
 The weekly policy and practice intelligence service, providing curated analysis of healthcare transformation developments organized around the six-pillar framework.
 
-**HTR Research Lab**  
+**HTR Research Lab**
 The suite of analytical tools implementing the six-pillar framework: APM Shared Savings Calculator, VBC Readiness Assessment, Health Equity Studio, Hospital Financial Stress Test, AI Governance Checklist, and other instruments.
 
-**HTR Academy**  
+**HTR Academy**
 The structured transformation curriculum for healthcare transformation education: foundational and advanced courses in APM mechanics, quality measurement, health equity analytics, and transformation leadership.
 
-**HEROI (Health Equity Return on Investment)**  
+**HEROI (Health Equity Return on Investment)**
 The composite equity performance score calculated across five dimensions. Available in the Health Equity Studio.
 
-**Kotter's eight-step framework**  
+**Kotter's eight-step framework**
 A widely applied change management framework (Kotter, 1996) adapted in this chapter for healthcare transformation contexts. Steps: urgency, coalition, vision, communication, obstacle removal, short-term wins, acceleration, institutionalization.
 
-**Transformation pace problem**  
+**Transformation pace problem**
 The risk that the required pace of transformation exceeds the available organizational capacity, producing rushed or superficial change processes that fail to achieve genuine structural improvement.
 
-**Advisory dependence**  
+**Advisory dependence**
 The failure mode in which an organization becomes reliant on external advisors for ongoing analytical and implementation support rather than building internal organizational capability. HTR Advisory engagements are explicitly designed to build client capability and reduce dependence over time.
 
 Sources: technical infrastructure framework documentation; Kotter, J.P. (1996) Leading Change; Vermont Agency of Human Services transformation documentation; Oliver Wyman Act 167 Report; Act 68 of 2025; AHEAD State Agreement; Vermont RHT Program Application; HTR client engagement synthesis.
@@ -4430,7 +4430,7 @@ The five forces this chapter develops — federal Medicaid retrenchment, the AHE
 
 ## **Vermont Transformation Scorecard: Six-Pillar Status, April 2026**
 
-The table below consolidates Vermont’s transformation progress across all six pillars. It answers the question every reader should ask before reading this chapter’s forecast: where does Vermont actually stand? The full scorecard with metric-level detail appears in Appendix F. The signal column reflects HTR’s assessment as of April 2026.
+The table below consolidates Vermont's transformation progress across all six pillars. It answers the question every reader should ask before reading this chapter's forecast: where does Vermont actually stand? The full scorecard with metric-level detail appears in Appendix F. The signal column reflects HTR's assessment as of April 2026.
 
 | Pillar | 2022 Baseline | 2026 Status | 2028 Target | Signal |
 | :---- | :---- | :---- | :---- | :---- |
@@ -4511,7 +4511,7 @@ The AHEAD Model — now operating in six states (Maryland, Connecticut, Hawaii, 
 ::: {custom-style="CalloutKey"}
 **STATES TO WATCH**
 
-Vermont is not alone on this trajectory, even if it is presented here in the most detail. Maryland's all-payer model remains the longest-running proof of concept for global budgets nationally (Chapter 6). Connecticut, Hawaii, Rhode Island, and New York are AHEAD's other Cohort 1 and Cohort 2 states, each adapting the same federal model to a different starting structure — Connecticut and Rhode Island both have existing cost-growth benchmark programs analogous in function to Vermont's GMCB, while New York's scale puts it closer to the “large, fragmented state” scenario discussed in the Introduction. Pennsylvania and several Midwestern states have active rural hospital transformation programs working on problems structurally similar to Vermont's Northeast Kingdom challenge, without AHEAD's federal framework. A reader tracking whether this book's framework generalizes has a growing set of natural comparison cases to watch over the next several years, not just Vermont's.
+Vermont is not alone on this trajectory, even if it is presented here in the most detail. Maryland's all-payer model remains the longest-running proof of concept for global budgets nationally (Chapter 6). Connecticut, Hawaii, Rhode Island, and New York are AHEAD's other Cohort 1 and Cohort 2 states, each adapting the same federal model to a different starting structure — Connecticut and Rhode Island both have existing cost-growth benchmark programs analogous in function to Vermont's GMCB, while New York's scale puts it closer to the "large, fragmented state" scenario discussed in the Introduction. Pennsylvania and several Midwestern states have active rural hospital transformation programs working on problems structurally similar to Vermont's Northeast Kingdom challenge, without AHEAD's federal framework. A reader tracking whether this book's framework generalizes has a growing set of natural comparison cases to watch over the next several years, not just Vermont's.
 :::
 ## **The Six-Pillar Forecast: 2026–2035**
 
@@ -4782,7 +4782,7 @@ PMI draws a useful hierarchy: projects produce deliverables; programs coordinate
 | Program | Related projects managed together for benefits not achievable individually. | Technology Pillar program (VHCURES + VITL + CIN + AI governance); Blueprint PCMH expansion (14 HSA projects); AHEAD Implementation Program. | Program Manager (pillar-level) | Benefits realized; interdependencies managed. |
 | Portfolio | A collection of programs/projects/operations managed as a group to achieve strategy. | Vermont's full six-pillar transformation: all 19 components across the pillars, aligned to Act 167's five goals and the December 2028 plan. | Portfolio Manager (AHS Secretary-level or dedicated CPO) | Strategic objectives achieved; resources optimally allocated. |
 
-*Figure 15.2 — PMI hierarchy applied to Vermont's transformation. Source: PMI Standard for Portfolio Management (5th ed.); PMBOK Guide 7th ed.; PMI Program Management Standard.*
+*Figure 15.2 — PMI hierarchy applied to Vermont's transformation. Sources: PMI Standard for Portfolio Management (5th ed.); PMBOK Guide 7th ed.; PMI Program Management Standard.*
 
 AHS is managing Vermont's transformation as a collection of projects without the program or portfolio infrastructure to coordinate them — sequenced by who is available rather than by what the portfolio needs. This is not a criticism of AHS staff, who are executing against an extraordinary mandate with insufficient capacity. It is a structural observation: the capacity does not exist yet. This chapter is the case for building it before the December 2028 deadline makes the gap irreversible.
 
@@ -4934,7 +4934,7 @@ The Portfolio Manager's job is to ensure every component can trace its contribut
 
 ## **The Business Case**
 
-The objection to building a PMO is always the same: we cannot afford it. The cost-benefit analysis in **Figure 15.7** answers that objection directly. The ~$4.5–7.5M cost of a staffed PMO over four to five years is roughly 2% of the portfolio value it protects. The cost of not building it is the December 2028 plan arriving as a descriptive document rather than a binding commitment — the continuation of the Oliver Wyman deficit trajectory, the failure of 13 of 14 hospitals to reach sustainability, and the loss of the political window Vermont’s mandatory architecture has opened. That is not a $0 outcome.
+The objection to building a PMO is always the same: we cannot afford it. The cost-benefit analysis in **Figure 15.7** answers that objection directly. The ~$4.5–7.5M cost of a staffed PMO over four to five years is roughly 2% of the portfolio value it protects. The cost of not building it is the December 2028 plan arriving as a descriptive document rather than a binding commitment — the continuation of the Oliver Wyman deficit trajectory, the failure of 13 of 14 hospitals to reach sustainability, and the loss of the political window Vermont's mandatory architecture has opened. That is not a $0 outcome.
 
 | Investment | Annual cost | Total (4–5 yr) | Benefit |
 | :---- | :---- | :---- | :---- |
@@ -5015,7 +5015,7 @@ Sources: PMI Standard for Portfolio Management, 5th ed. (2017); PMBOK Guide, 7th
 
 *Written for AHS staff, Health Care Delivery Advisory Committee members, Vermont legislators, and hospital leaders who must deliver the Statewide Health Care Delivery Strategic Plan by December 2028.*
 
-Unlike most other chapters in this book, this one is deliberately written as an operational playbook for a single named agency rather than a general framework illustrated by a Vermont example — because the six-pillar framework's ultimate test is not whether it can be described in the abstract, but whether it can be turned into an organizational restructuring mandate for a real agency with a real statutory deadline. A reader who does not work for AHS will still recognize the underlying question this chapter answers: what does a state health agency have to become, organizationally, to operate as a population-health system manager rather than an administrator of programs? That question applies to the equivalent agency in any state pursuing comparable reform, and the chapter's closing section, “Vermont as National Template,” addresses that question directly.
+Unlike most other chapters in this book, this one is deliberately written as an operational playbook for a single named agency rather than a general framework illustrated by a Vermont example — because the six-pillar framework's ultimate test is not whether it can be described in the abstract, but whether it can be turned into an organizational restructuring mandate for a real agency with a real statutory deadline. A reader who does not work for AHS will still recognize the underlying question this chapter answers: what does a state health agency have to become, organizationally, to operate as a population-health system manager rather than an administrator of programs? That question applies to the equivalent agency in any state pursuing comparable reform, and the chapter's closing section, "Vermont as National Template," addresses that question directly.
 
 ## **The Statutory Mandate — What Act 68 Actually Requires AHS to Do**
 
@@ -5044,7 +5044,7 @@ The plan is not AHS's alone to write. Act 68 created an 18-member Health Care De
 
 ## **The Organizational Diagnosis — Why AHS Must Restructure, Not Just Plan**
 
-Oliver Wyman’s finding was blunt: AHS’s organizational structure is one of the primary barriers to transformation. Not because AHS lacks capable people, but because it was designed for a different era and a different role. The current model is organized around funding streams and program types — Medicaid, mental health, substance use, aging, developmental services, Blueprint, health care reform — rather than around the populations served or the communities they live in. That made sense when AHS’s job was administering categorical benefit programs. It does not make sense for an organization whose job is now managing the transformation of an interconnected delivery system that serves everyone in Vermont, all at once.
+Oliver Wyman's finding was blunt: AHS's organizational structure is one of the primary barriers to transformation. Not because AHS lacks capable people, but because it was designed for a different era and a different role. The current model is organized around funding streams and program types — Medicaid, mental health, substance use, aging, developmental services, Blueprint, health care reform — rather than around the populations served or the communities they live in. That made sense when AHS's job was administering categorical benefit programs. It does not make sense for an organization whose job is now managing the transformation of an interconnected delivery system that serves everyone in Vermont, all at once.
 
 ### **The Four Structural Gaps**
 
@@ -5140,17 +5140,17 @@ Pillar 6 — Operations (transformation-plan management, RHRC successor, adminis
 
 The Strategic Plan is the most consequential document AHS will produce this decade; it will define Vermont's system for the decade following its delivery. The proposed structure, organized around the six pillars and Act 68's requirements:
 
-- 1. Executive Summary (5–8 pp) — the crisis in 2028; what changed since 2022; the five goals and progress; the plan's central 2028–2031 commitments.
-- 2. System Context and Diagnosis (15–20 pp) — an updated Oliver Wyman analysis: demographics, hospital finances, payer landscape, workforce, SDOH burden as of a 2028 baseline.
-- 3. Payment Reform Architecture — Economics (20–25 pp) — RBP status; global-budget parameters per hospital; AHEAD TCOC targets and performance; affordability benchmarks.
-- 4. Primary Care and Behavioral Health — Clinical (15–20 pp) — Blueprint enrollment/performance; CCBHC coverage; CoCM status; BH access indicators and 2028–2031 targets.
-- 5. Hospital Network and Regionalization — Operations (20–25 pp) — confirmed tier designations; COE network; transfer infrastructure; shared services; REH/CACC conversions; workforce distribution.
-- 6. Data and Technology Infrastructure — Technology (10–15 pp) — VHCURES enhancement; HIE connectivity; statewide-EHR decision; analytics capabilities; interoperability.
-- 7. Health Equity Strategy — Equity (15–20 pp) — geographic-equity indicators by HSA; disparity measures; SDOH coordination; culturally competent care; 2028–2031 targets.
-- 8. Workforce Strategy (15–20 pp) — supply/demand by profession and geography; RHT workforce investments and outcomes; scope-of-practice changes; pipeline; 2030 projections.
-- 9. AHS Organizational Architecture — Policy & Operations (10–15 pp) — the redesigned structure; HSA Coordinator model; Division of Planning and Effectiveness; cross-program SDOH integration; governance relationships.
-- 10. Accountability Framework (10–15 pp) — full metrics dashboard (all 17+ Act 167/Act 68 measures); data sources and update frequencies; 2028–2031 targets; reporting calendar; revision conditions.
-- 11. Financial Plan (15–20 pp) — RHT capital allocation (remaining balance); EAST Fund allocation; Act 68 grant commitments; projected savings; state-budget implications.
+1. Executive Summary (5–8 pp) — the crisis in 2028; what changed since 2022; the five goals and progress; the plan's central 2028–2031 commitments.
+2. System Context and Diagnosis (15–20 pp) — an updated Oliver Wyman analysis: demographics, hospital finances, payer landscape, workforce, SDOH burden as of a 2028 baseline.
+3. Payment Reform Architecture — Economics (20–25 pp) — RBP status; global-budget parameters per hospital; AHEAD TCOC targets and performance; affordability benchmarks.
+4. Primary Care and Behavioral Health — Clinical (15–20 pp) — Blueprint enrollment/performance; CCBHC coverage; CoCM status; BH access indicators and 2028–2031 targets.
+5. Hospital Network and Regionalization — Operations (20–25 pp) — confirmed tier designations; COE network; transfer infrastructure; shared services; REH/CACC conversions; workforce distribution.
+6. Data and Technology Infrastructure — Technology (10–15 pp) — VHCURES enhancement; HIE connectivity; statewide-EHR decision; analytics capabilities; interoperability.
+7. Health Equity Strategy — Equity (15–20 pp) — geographic-equity indicators by HSA; disparity measures; SDOH coordination; culturally competent care; 2028–2031 targets.
+8. Workforce Strategy (15–20 pp) — supply/demand by profession and geography; RHT workforce investments and outcomes; scope-of-practice changes; pipeline; 2030 projections.
+9. AHS Organizational Architecture — Policy & Operations (10–15 pp) — the redesigned structure; HSA Coordinator model; Division of Planning and Effectiveness; cross-program SDOH integration; governance relationships.
+10. Accountability Framework (10–15 pp) — full metrics dashboard (all 17+ Act 167/Act 68 measures); data sources and update frequencies; 2028–2031 targets; reporting calendar; revision conditions.
+11. Financial Plan (15–20 pp) — RHT capital allocation (remaining balance); EAST Fund allocation; Act 68 grant commitments; projected savings; state-budget implications.
 
 ### **The Central Commitment the Plan Must Make**
 
@@ -5167,7 +5167,7 @@ Beyond its analytical content, the plan must make one commitment currently absen
 
 ## **Vermont as National Template — Why This Restructuring Matters Beyond Vermont**
 
-Vermont’s AHS restructuring matters beyond Vermont because it is the first test of whether a state human-services agency can redesign itself as a population-health system operator in response to a statutory transformation mandate. The questions are not Vermont-specific: How do you align an agency organized around program silos with geographically defined service areas? How do you build the analytics capacity to model structural change before implementing it? How do you run a multi-stakeholder planning process that includes hospitals, insurers, providers, and community organizations without producing a plan that commits to nothing? Vermont will have answers by December 2028. They will be grounded in real experience with a real system under real pressure. That is not nothing. In American health policy, where policy debates run decades ahead of implementation evidence, it may be the most valuable contribution Vermont makes.
+Vermont's AHS restructuring matters beyond Vermont because it is the first test of whether a state human-services agency can redesign itself as a population-health system operator in response to a statutory transformation mandate. The questions are not Vermont-specific: How do you align an agency organized around program silos with geographically defined service areas? How do you build the analytics capacity to model structural change before implementing it? How do you run a multi-stakeholder planning process that includes hospitals, insurers, providers, and community organizations without producing a plan that commits to nothing? Vermont will have answers by December 2028. They will be grounded in real experience with a real system under real pressure. That is not nothing. In American health policy, where policy debates run decades ahead of implementation evidence, it may be the most valuable contribution Vermont makes.
 
 Vermont will have answers by December 2028 — grounded in real experience with a real system under real pressure. Those answers may be the most valuable policy contribution Vermont makes to American healthcare in a generation. The significance is not that Vermont is large or powerful; it is that Vermont is early — early enough to produce a tested model before the rest of the country reaches the same crisis point, and early enough for the lessons to remain actionable.
 
@@ -5273,13 +5273,13 @@ The room in September 2024 was full because people knew something was wrong. Thi
 
 ## **Key Concepts in This Chapter**
 
-**Partial-transformation scenario**  
+**Partial-transformation scenario**
 The failure mode in which Vermont makes progress on all six pillars but execution gaps prevent full realization: RBP contested, global-budget methodology delayed, the Strategic Plan descriptive rather than binding. Distinguishable from success only in retrospect.
 
-**Binding vs. descriptive plan**  
+**Binding vs. descriptive plan**
 A binding plan commits to specific targets, timelines, and accountable owners that can be evaluated by a disinterested observer. A descriptive plan states goals that could be plausibly claimed as achieved regardless of outcomes. Act 68's December 2028 deadline requires the binding version.
 
-**Transformation inflection point**  
+**Transformation inflection point**
 A moment at which political, financial, and regulatory conditions for structural reform align simultaneously. Vermont's 2024…2026 window is such a moment. Inflection points close: the political conditions that produced Acts 167 and 68 are not guaranteed to persist through multiple legislative cycles without visible results.
 
 The three critical decisions
@@ -5438,7 +5438,7 @@ Act 68 of 2025 (S.126) established a comprehensive sequence of transformation mi
 
 *Figure B.1 — Act 68 statutory timeline and milestones. Source: Act 68 of 2025.*
 
-Source: Act 68 of 2025; AHEAD State Agreement (January 2025); Vermont RHT Program Application (November 2025); CMS BALANCE Model (December 2025).
+Sources: Act 68 of 2025; AHEAD State Agreement (January 2025); Vermont RHT Program Application (November 2025); CMS BALANCE Model (December 2025).
 
 ### **Policy-Pillar Implementation Matrix**
 
@@ -5475,7 +5475,7 @@ Oliver Wyman's Act 167 Recommendations proposed a Centers of Excellence (COE) fr
 | Gifford Medical Center (Randolph) | TBD | Among most financially vulnerable — comprehensive assessment needed | Tier 3 — Transition assessment | Rural |
 | North Country Hospital (Newport) | TBD | Northeast Kingdom anchor; REH candidacy under assessment | Tier 3 — Transition assessment | Rural |
 
-Source: Oliver Wyman, Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025). COE designations are proposed; final designations subject to the AHS and hospital transformation planning process.
+Sources: Oliver Wyman, Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025). COE designations are proposed; final designations subject to the AHS and hospital transformation planning process.
 
 # **Appendix D — AHEAD State Agreement: Key Terms and Provisions**
 
@@ -5498,7 +5498,7 @@ Vermont's AHEAD Model State Agreement was signed January 17, 2025; Vermont parti
 
 *Figure D.1 — AHEAD State Agreement key terms and Vermont-specific provisions. Source: Vermont AHEAD State Agreement (January 2025).*
 
-Source: Vermont AHEAD State Agreement (January 17, 2025); CMMI AHEAD Model documentation; AHS January 2025 Legislative Presentation.
+Sources: Vermont AHEAD State Agreement (January 17, 2025); CMMI AHEAD Model documentation; AHS January 2025 Legislative Presentation.
 
 # **Appendix E — HTR Platform Tools and Methodology Overview**
 
@@ -5838,25 +5838,25 @@ Now deliberately break the order: take a strong Stage 3 budget model and a stron
 
 Figure 1.1 — The OneCare Failure Cascade. Source: HTR Analysis (2026). Based on GMCB records, AHS November 2025 Transformation Report, and OneCare Vermont public filings.
 
-Figure 1.2 — The six pillars: diagnostic questions and structural roles. Source: six-pillar framework documentation; Acts 167 and 68 of 2025.
+Figure 1.2 — The six pillars: diagnostic questions and structural roles. Sources: six-pillar framework documentation; Acts 167 and 68 of 2025.
 
-Figure 1.3 — The architecture of interdependency: the fifteen dependency relationships, read From-row to To-column. Source: six-pillar framework documentation; Vermont Health Transformation / HTR (2026).
+Figure 1.3 — The architecture of interdependency: the fifteen dependency relationships, read From-row to To-column. Sources: six-pillar framework documentation; Vermont Health Transformation / HTR (2026).
 
-Figure 1.4 — Failure-cascade analysis: what breaks when each pillar is absent. Source: HTR analysis; CMMI evaluation literature; Oliver Wyman Act 167 Report; Vermont experience.
+Figure 1.4 — Failure-cascade analysis: what breaks when each pillar is absent. Sources: HTR analysis; CMMI evaluation literature; Oliver Wyman Act 167 Report; Vermont experience.
 
 Figure 1.5 — Vermont's six-pillar transformation map. Sources: Acts 167, 51, 55, 62, 68 of 2022–2025; AHEAD State Agreement; Vermont RHT Program Application; Oliver Wyman Act 167 Report.
 
 Figure 1.6 — The Six-Stage Execution Sequence. Source: HTR Analysis (2026).
 
-Figure 1.7 — Five sequencing errors: the diagnostic pattern, early-warning signals, and correction for each. Source: HTR analysis; Vermont experience; Oliver Wyman Act 167 Report.
+Figure 1.7 — Five sequencing errors: the diagnostic pattern, early-warning signals, and correction for each. Sources: HTR analysis; Vermont experience; Oliver Wyman Act 167 Report.
 
-Figure 1.8 — Vermont's transformation timeline, by pillar. Source: HTR Analysis (2026); Act 68 of 2025; AHEAD State Agreement.
+Figure 1.8 — Vermont's transformation timeline, by pillar. Sources: HTR Analysis (2026); Act 68 of 2025; AHEAD State Agreement.
 
 Figure 1.9 — Hands-on platform tools for Chapter 1: working the execution-sequence argument on the HTR platform.
 
-Figure T.1 — Vermont Healthcare Transformation Timeline: 2022–2035. Sources: Vermont Legislature, CMS, AHS, GMCB.
+Figure T.1 — Vermont Healthcare Transformation Timeline: 2022–2035. Source: Vermont Legislature, CMS, AHS, GMCB.
 
-Figure 2.1 — Common perceptions of Vermont's health system versus the data. Source: Oliver Wyman Act 167 Report; GMCB.
+Figure 2.1 — Common perceptions of Vermont's health system versus the data. Sources: Oliver Wyman Act 167 Report; GMCB.
 
 Figure 2.2 — Proposed Centers of Excellence assignments by hospital. Source: Oliver Wyman regionalization blueprint.
 
@@ -5866,7 +5866,7 @@ Figure 2.4 — State reference-based pricing and rate-setting programs compared.
 
 Figure 2.5 — Hands-on platform tools for the Policy Pillar.
 
-Figure 3.1 — CMMI model success factors: what distinguishes models that produce results from those that don't. Source: HTR analysis of CMMI evaluation literature; CMS model documentation.
+Figure 3.1 — CMMI model success factors: what distinguishes models that produce results from those that don't. Sources: HTR analysis of CMMI evaluation literature; CMS model documentation.
 
 Figure 3.2 — CMMI models most relevant to Vermont's transformation. Source: CMS Innovation Center.
 
@@ -5876,7 +5876,7 @@ Figure 3.4 — H.R. 1 Medicaid provisions: timeline, financial impact, and Vermo
 
 Figure 3.5 — Hands-on platform tools for the Policy Pillar in practice.
 
-Figure 4.1 — Vermont's three-layer health data infrastructure. Source: GMCB VHCURES documentation; Vermont HIE Strategic Plan.
+Figure 4.1 — Vermont's three-layer health data infrastructure. Sources: GMCB VHCURES documentation; Vermont HIE Strategic Plan.
 
 Figure 4.2 — VHCURES structural limitations and required improvements. Sources: GMCB VHCURES data documentation; Oliver Wyman Act 167 Report; AHS Transformation Reports; Act 68 of 2025.
 
@@ -5902,13 +5902,13 @@ Figure 5.4 — Hands-on platform tools for the Technology Pillar in practice.
 
 Figure 6.1 — Vermont hospital commercial pricing vs. Medicare and break-even benchmarks. Sources: GMCB Act 68 RBP Update (February 2026); RAND Hospital Price Transparency Study.
 
-Figure 6.2 — Vermont silver marketplace premium trajectory 2018–2024, showing 108% increase over six years. Source: Oliver Wyman Act 167 Report; GMCB analysis.
+Figure 6.2 — Vermont silver marketplace premium trajectory 2018–2024, showing 108% increase over six years. Sources: Oliver Wyman Act 167 Report; GMCB analysis.
 
 Figure 6.3 — Cross-state reference-based pricing and rate regulation: design and outcomes. Sources: GMCB Act 68 Update (February 2026); Health Affairs; Commonwealth Fund; CMS.
 
 Figure 6.4 — Vermont RBP and global budget implementation phases. Source: GMCB Act 68 Update, February 2026.
 
-Figure 6.5 — Five dimensions of global budget design with Vermont's current direction. Source: GMCB Act 68 Update (February 2026); Act 68 of 2025.
+Figure 6.5 — Five dimensions of global budget design with Vermont's current direction. Sources: GMCB Act 68 Update (February 2026); Act 68 of 2025.
 
 Figure 6.6 — Vermont global budget history: four attempts and the central lesson. Sources: GMCB Act 68 Update (February 2026); Oliver Wyman Act 167 Report.
 
@@ -5926,7 +5926,7 @@ Figure 6.12 — Three-phase APM transition model for Vermont healthcare organiza
 
 Figure 6.13 — Hands-on platform tools for the Economics Pillar.
 
-Figure 7.1 — APM shared savings calculation framework. Source: HTR's APM Shared Savings Calculator methodology; CMS ACO model documentation.
+Figure 7.1 — APM shared savings calculation framework. Sources: HTR's APM Shared Savings Calculator methodology; CMS ACO model documentation.
 
 Figure 7.2 — Economics pillar implementation matrix. Sources: HTR Research Lab; Oliver Wyman Act 167 Report; Vermont AHEAD documentation.
 
@@ -6002,13 +6002,13 @@ Figure 11.7 — Vermont health system transformation: comprehensive operations m
 
 Figure 11.8 — Hands-on platform tools for the Operations Pillar.
 
-Figure 11.9 — Attribution error taxonomy and remediation. Source: HTR's Operations pillar framework; ACO REACH and MSSP operational guidance.
+Figure 11.9 — Attribution error taxonomy and remediation. Sources: HTR's Operations pillar framework; ACO REACH and MSSP operational guidance.
 
 Figure 11.10 — Operations pillar implementation matrix. Sources: Vermont AHS Transformation Reports (August, November 2025); RHRC engagement; Oliver Wyman Act 167 Report.
 
 Figure 12.1 — technical infrastructure framework components and intended users. Source: technical infrastructure framework documentation.
 
-Figure 12.2 — Kotter's change management framework applied to Vermont's healthcare transformation. Source: HTR Advisory methodology; Kotter (1996); Vermont transformation documentation.
+Figure 12.2 — Kotter's change management framework applied to Vermont's healthcare transformation. Sources: HTR Advisory methodology; Kotter (1996); Vermont transformation documentation.
 
 Figure 12.3 — HTR Implementation Toolkit: available tools for Strategist and Enterprise subscribers.
 
@@ -6032,7 +6032,7 @@ Figure 14.3 — Hands-on platform tools for Chapter 14: monitoring political ris
 
 Figure 15.1 — The project-management gap. Sources: PMI Standard for Portfolio Management (5th ed.); Oliver Wyman Act 167 Report; AHS November 2025 Transformation Report.
 
-Figure 15.2 — PMI hierarchy applied to Vermont's transformation. Source: PMI Standard for Portfolio Management (5th ed.); PMBOK Guide 7th ed.; PMI Program Management Standard.
+Figure 15.2 — PMI hierarchy applied to Vermont's transformation. Sources: PMI Standard for Portfolio Management (5th ed.); PMBOK Guide 7th ed.; PMI Program Management Standard.
 
 Figure 15.3 — Vermont's 19-component transformation portfolio. Sources: Act 68 of 2025; AHS Transformation Reports; Vermont RHT Program Application; CMS AHEAD documentation.
 
