@@ -37,7 +37,7 @@ Finally, this book is not, on its own, the whole of the argument. This book is t
 The three are deliberately cross-linked. Each pillar chapter ends with a *"Work This Chapter on the Platform"* guide that maps its argument to the specific tools that let you manipulate it; the platform's tools carry *"From the Book"* callouts back to the chapters that explain them; and the AI Analyst can answer a question and route you to the right tool or lesson in the same breath. **Everything in the ecosystem is, in effect, an interactive expression of this book's framework.** You can read the book alone and it stands on its own — but the framework is meant to be *run*, not just read, and the platform is where you run it.
 
 ::: {custom-style="CalloutBeyond"}
-**EXPLORE THE ECOSYSTEM**
+**EXPLORE ON THE PLATFORM**
 
 The full ecosystem is at **[healthtransformationreview.org](https://healthtransformationreview.org)** — read the book online with audio narration at [/book](https://healthtransformationreview.org/book), open the [Research Lab](https://healthtransformationreview.org/research-lab), ask the [AI Analyst](https://healthtransformationreview.org/chat), or start a course in the [Academy](https://healthtransformationreview.org/academy). The Introduction that follows explains how the three components fit together and which to start with for your role.
 :::
@@ -766,8 +766,8 @@ In practice, embedding equity as a design constraint requires two organizational
 Open the **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** and model an organization that funds a downstream pillar before its upstream gate is open — for example, high Economics ambition with a weak Technology score. Watch the composite readiness collapse. Then open the **[Transformation Friction Index](https://healthtransformationreview.org/transformation-friction-index)** to see which pillar is your binding constraint. The principle is simpler to feel in the tool than to argue on the page: no amount of downstream funding opens an upstream gate. Spending more on the payment model does not make the missing analytics appear.
 :::
 
-::: {custom-style="CalloutVT"}
-**GO DEEPER — HTR Academy**
+::: {custom-style="CalloutBeyond"}
+**GO DEEPER — ACADEMY**
 
 The dependency mechanics behind these three principles — how payment incentives drive care redesign, why VBC contracts require data infrastructure first — are developed hands-on in the [Academy's](https://healthtransformationreview.org/academy) **Value-Based Care** course. Readers new to APM risk and total-cost-of-care accountability should start there before applying the sequencing framework to a live contract.
 :::
@@ -3702,7 +3702,7 @@ In the interim, Vermont's equity analytics strategy must be pragmatic: use the b
 
 *Figure 10.11 — Vermont equity analytics: current data sources by equity dimension. Sources: GMCB; VDH; Blueprint for Health; DVHA; AHS.*
 
-## **Implications for You — Equity Measurement**
+## **Implications for You**
 
 If you are a Vermont hospital executive: HEDIS equity measurement is coming whether you prepare for it or not. AHEAD's performance measurement framework includes equity metrics — stratified HEDIS measures by race, income, and geography — and Vermont's global budget methodology will incorporate equity performance. The hospitals that invest now in stratified quality measurement — understanding their quality gaps by population subgroup rather than just their overall rates — will be able to demonstrate equity improvement in their first AHEAD performance year. Those that have not tracked stratified data will be explaining gaps they did not know existed.
 
@@ -4196,7 +4196,7 @@ The following matrix provides implementation guidance for the key Operations pil
 
 *Figure 11.10 — Operations pillar implementation matrix. Sources: Vermont AHS Transformation Reports (August, November 2025); RHRC engagement; Oliver Wyman Act 167 Report.*
 
-## **Implications for You — Revenue Cycle and Coding**
+## **Implications for You**
 
 If you are a Vermont hospital executive: Revenue cycle under global budgets is fundamentally different from revenue cycle under fee-for-service. Under fee-for-service, revenue cycle maximizes capture of every billable service. Under global budgets, revenue is fixed — which means revenue cycle optimization is primarily about cost reduction (administrative efficiency, denial prevention, prior authorization reduction) rather than revenue maximization. The specific investment with the highest near-term return: HCC coding accuracy for your Medicare and AHEAD-attributed population. Your global budget benchmark will be set based on your attributed population's risk scores. Inaccurate HCC coding produces a benchmark that underestimates your population's risk, exposing your organization to financial loss from the first performance year. HCC gap closure is not a revenue cycle project; it is a financial risk management project.
 
