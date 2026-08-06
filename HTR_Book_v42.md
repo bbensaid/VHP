@@ -874,7 +874,6 @@ Investment that proceeds simultaneously with critical path work because it sits 
 **Premature investment**  
 An investment in a downstream pillar that proceeds before the upstream enabling investment is in place. Most common forms: Technology deployment without Operations readiness; Economics contracts without Technology analytics readiness.
 
-
 Sources: Vermont Agency of Human Services, Health Care System Transformation Report (November 2025); Oliver Wyman Healthcare and Life Sciences Group, Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025); Vermont AHEAD State Agreement (January 2025); CMS AHEAD Model documentation (September 2025 update); Vermont Blueprint for Health Annual Report 2024; Act 68 of 2025; OneCare Vermont ACO annual reports (2014–2023); Maryland HSCRC Total Cost of Care Model data; GMCB FY25 and FY26 Hospital Budget Orders.
 
 # **Chapter 2: The Policy Pillar — Legislative Architecture for Structural Reform**
@@ -1553,7 +1552,6 @@ VHCURES is a substantial data asset that gives Vermont analytical capabilities m
 
 **12–18+ Mo** — Typical Data Lag
 :::
-
 
 VHCURES enables Vermont to conduct analyses that directly support the transformation agenda: population-level total cost of care measurement (the GMCB publishes all-payer TCOC dashboards derived from VHCURES); potentially avoidable utilization analysis (the 32.3% avoidable ED visit rate in AHS's transformation reports is calculated from VHCURES via VUHDDS); hospital price transparency analysis (the GMCB's 2026 RBP report used VHCURES-derived 2024 claims data to show hospital prices ranging from 279% to 697% of Medicare for outpatient services); and prescription drug affordability analysis (GMCB's 2025 report on drug pricing used VHCURES to model the impact of IRA drug negotiations on Vermont spending). This is a powerful analytical platform that has produced some of the most credible and consequential health policy analysis in recent Vermont history.
 
@@ -2645,7 +2643,6 @@ A care management program that prevents 50 hospitalizations in a population of 1
 **32.3%** — VT Potentially Avoidable ED Visits
 :::
 
-
 ## **Economics Pillar Implementation Matrix**
 
 The following matrix provides implementation guidance for the key Economics pillar investments — estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
@@ -3327,7 +3324,6 @@ The documentation of clinical information in EHR fields that can be extracted an
 
 **Clinical inertia**  
 The documented tendency of clinicians to continue existing treatment plans even when clinical evidence indicates that treatment intensification is warranted. One of the primary clinical root causes of chronic disease quality measure underperformance; addressed through EHR-embedded clinical decision support alerts and systematic prescribing protocols.
-
 
 Sources: NCQA PCMH Standards and Guidelines, 2023 edition; Vermont Blueprint for Health Annual Report 2024; Vermont Blueprint Mental Health Integration Pilot Qualitative Outcomes Evaluation (2025); SAMHSA CCBHC Program description and technical assistance documentation; CMS Behavioral Health Integration Services guidance (January 2026); Vermont Agency of Human Services Health Care System Transformation Report (November 2025); Act 68 of 2025; Vermont AHEAD State Agreement (January 2025); Vermont Rural Health Transformation Program Application (November 2025); Coleman EA, et al. Transitional Care Model documentation; CMS Transitional Care Management billing guidance (2024); Population Health Management journal (Blueprint ROI study, 2016); AHRQ Care Coordination Measures Atlas; HTR Research Lab Risk Stratification Engine methodology documentation.
 
@@ -5156,8 +5152,6 @@ The Strategic Plan is the most consequential document AHS will produce this deca
 - 10. Accountability Framework (10–15 pp) — full metrics dashboard (all 17+ Act 167/Act 68 measures); data sources and update frequencies; 2028–2031 targets; reporting calendar; revision conditions.
 - 11. Financial Plan (15–20 pp) — RHT capital allocation (remaining balance); EAST Fund allocation; Act 68 grant commitments; projected savings; state-budget implications.
 
-*Figure 16.5 — Proposed structure for the 2028 Statewide Strategic Plan. Sources: Act 68 of 2025; HCAC mandate; six-pillar framework.*
-
 ### **The Central Commitment the Plan Must Make**
 
 Beyond its analytical content, the plan must make one commitment currently absent from Vermont's transformation discourse: a specific, quantified trajectory for what Vermont's healthcare system will look like in 2031, 2035, and 2040, with the financial modeling to show it is achievable. Oliver Wyman provided the diagnostic scenario — without transformation, 13 of 14 hospitals in losses by 2028, unsustainable premiums, and contraction through unplanned closures. The plan must provide the alternative scenario with equal specificity: if Vermont executes on the timelines in this chapter, how many hospitals maintain inpatient beds in 2031? What is the primary-care investment level? The premium-growth rate? The Northeast Kingdom uninsurance rate? That is the difference between a strategic plan and a strategic aspiration.
@@ -5169,7 +5163,7 @@ Beyond its analytical content, the plan must make one commitment currently absen
 | RHT capital available | $195M | Vermont's December 2025 award; aligned with Acts 167 and 68 |
 | Projected direct transformation savings (5 yr) | >$400M | Independent of AHEAD and RBP payment-reform savings (Oliver Wyman) |
 
-*Figure 16.6 — Key parameters for the Strategic Plan. Sources: Act 68; VTDigger; Oliver Wyman Act 167 Report; Vermont RHT Program Application.*
+*Figure 16.5 — Key parameters for the Strategic Plan. Sources: Act 68; VTDigger; Oliver Wyman Act 167 Report; Vermont RHT Program Application.*
 
 ## **Vermont as National Template — Why This Restructuring Matters Beyond Vermont**
 
@@ -5187,7 +5181,7 @@ This chapter specifies an organizational design. The tools below let a system ar
 | Track AHS's delivery against the statutory deadlines this chapter enumerates | **[HTI Dashboard](https://healthtransformationreview.org/hti-dashboard)** | Whether Operations-pillar capacity is rising fast enough to meet the December 2028 Strategic Plan obligation. |
 | Test what the restructuring is worth by removing it | **[HTR Simulator](https://healthtransformationreview.org/htr-simulator)** | Score a state with strong Policy and Economics but weak Operations. The composite collapse is the argument for this chapter in one number. |
 
-*Figure 16.7 — Hands-on platform tools for Chapter 16: testing the AHS restructuring design.*
+*Figure 16.6 — Hands-on platform tools for Chapter 16: testing the AHS restructuring design.*
 
 ## **Implications for You**
 
@@ -5295,7 +5289,6 @@ Will the Strategic Plan be binding or descriptive? Will the analytics vendor be 
 Vermont as national template
 
 Vermont's value is not that states copy its legislation but that it produces real evidence — on mandatory RBP, global budgets, and rural system redesign — for questions every state will eventually face. By 2030, Vermont will have answers that no model projection can replicate.
-
 
 Sources: Vermont Act 68 of 2025; H.R. 1 (One Big Beautiful Bill Act, July 2025); CMS BALANCE Model announcement (December 2025); CMS AHEAD Model documentation (September 2025 update); Oliver Wyman Act 167 Report (August 2024); AHS Health Care System Transformation Reports (2025–2026); GMCB FY25 and FY26 Hospital Budget Orders; GMCB enforcement actions (September 2024).
 
@@ -5885,7 +5878,6 @@ Figure 3.5 — Hands-on platform tools for the Policy Pillar in practice.
 
 Figure 4.1 — Vermont's three-layer health data infrastructure. Source: GMCB VHCURES documentation; Vermont HIE Strategic Plan.
 
-
 Figure 4.2 — VHCURES structural limitations and required improvements. Sources: GMCB VHCURES data documentation; Oliver Wyman Act 167 Report; AHS Transformation Reports; Act 68 of 2025.
 
 Figure 4.3 — Vermont's three-step path to integrated health records. Sources: Vermont HIE Steering Committee statutory mandate; AHS January 2025 Legislative Presentation; DVHA HIE governance documents.
@@ -5935,7 +5927,6 @@ Figure 6.12 — Three-phase APM transition model for Vermont healthcare organiza
 Figure 6.13 — Hands-on platform tools for the Economics Pillar.
 
 Figure 7.1 — APM shared savings calculation framework. Source: HTR's APM Shared Savings Calculator methodology; CMS ACO model documentation.
-
 
 Figure 7.2 — Economics pillar implementation matrix. Sources: HTR Research Lab; Oliver Wyman Act 167 Report; Vermont AHEAD documentation.
 
@@ -6063,11 +6054,9 @@ Figure 16.3 — Vermont's 14 HSAs: regional profile and priority transformation 
 
 Figure 16.4 — AHS restructuring and Vermont transformation timeline. Sources: Act 68 of 2025; AHEAD State Agreement (January 2025); AHS Transformation Reports; Vermont RHT Program Application.
 
-Figure 16.5 — Proposed structure for the 2028 Statewide Strategic Plan. Sources: Act 68 of 2025; HCAC mandate; six-pillar framework.
+Figure 16.5 — Key parameters for the Strategic Plan. Sources: Act 68; VTDigger; Oliver Wyman Act 167 Report; Vermont RHT Program Application.
 
-Figure 16.6 — Key parameters for the Strategic Plan. Sources: Act 68; VTDigger; Oliver Wyman Act 167 Report; Vermont RHT Program Application.
-
-Figure 16.7 — Hands-on platform tools for Chapter 16: testing the AHS restructuring design.
+Figure 16.6 — Hands-on platform tools for Chapter 16: testing the AHS restructuring design.
 
 Figure A.1 — Vermont demographic transformation. Sources: Oliver Wyman Act 167 Report (2024); Vermont RHT Program Application; KFF.
 
