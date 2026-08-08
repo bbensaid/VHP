@@ -22,7 +22,7 @@
     "@sanity/vision": "latest",
     "@sentry/nextjs": "^9.47.1",
     "@stripe/stripe-js": "^8.11.0",
-    "@supabase/ssr": "^0.9.0",
+    "@supabase/ssr": "^0.10.3",
     "@supabase/supabase-js": "^2.89.0",
     "@types/leaflet": "^1.9.21",
     "chart.js": "^4.4.0",
