@@ -166,10 +166,9 @@ async def fetch_kff_uninsured(client: httpx.AsyncClient) -> dict[str, float]:
     Returns: { state_abbr: uninsured_rate_pct }
     """
     try:
-        # KFF data API — CSV endpoint for uninsured rate
-        _url = "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
-        # Note: KFF uses a JavaScript-rendered page; we use their CSV download URL
-        # The actual API endpoint varies — fall back gracefully
+        # KFF publishes uninsured-rate data only behind a JavaScript-rendered
+        # page (kff.org state-indicator pages) — no stable CSV/API endpoint,
+        # so this source falls back to manual values.
         log.info("KFF uninsured rate: using manual fallback (API requires JS rendering)")
         return {}
     except Exception as e:
