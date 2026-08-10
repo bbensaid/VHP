@@ -40,6 +40,7 @@ export const TOOLS: readonly Tool[] = [
     // Ch 2's "Work This Chapter on the Platform" table sends readers here to
     // model waiver / global-budget design; ch 3 uses it for CMMI models.
     chapters: ["2", "3"],
+    desc: "Model 1115 waivers, global budgets, and Medicaid expansion scenarios.",
   },
   {
     id: "medicaid-wr-calculator",
@@ -47,6 +48,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/policy-quality?tab=medicaid-wr",
     pillars: ["policy"],
     chapters: ["3"],
+    desc: "Model coverage loss and hospital revenue impact from H.R. 1 Medicaid work requirements, state by state.",
   },
   {
     id: "hr1-cliff",
@@ -54,6 +56,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/policy-quality?tab=hr1-cliff",
     pillars: ["policy"],
     chapters: ["3"],
+    desc: "Model the post-2030 Medicaid funding cliff created by H.R. 1 FMAP phase-downs, state-by-state.",
   },
   {
     id: "innovation-leaderboard",
@@ -61,6 +64,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/knowledge-workspace?tab=leaderboard",
     pillars: ["policy"],
     chapters: ["13"],
+    desc: "Rank all 50 states on health transformation and innovation activity.",
   },
   {
     id: "clinical-quality-optimizer",
@@ -68,6 +72,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/policy-quality?tab=quality",
     pillars: ["clinical"],
     chapters: ["9"],
+    desc: "Simulate HEDIS measures, predict CMS Star Ratings, optimize MIPS scores.",
   },
 
   // ── Payment Models bench ──────────────────────────────────────────────
@@ -77,6 +82,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/payment-models?tab=apm-design",
     pillars: ["economics"],
     chapters: ["6", "7"],
+    desc: "Design novel APMs — episode bundles, global budgets, benchmark waterfalls.",
   },
   {
     id: "shared-savings-calc",
@@ -84,6 +90,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/payment-models?tab=apm-calc",
     pillars: ["economics"],
     chapters: ["7"],
+    desc: "Model MSSP, ACO REACH, and global budget shared savings scenarios.",
   },
   {
     id: "cea-calculator",
@@ -91,6 +98,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/payment-models?tab=cea",
     pillars: ["economics"],
     chapters: ["7"],
+    desc: "Calculate cost per QALY, NNT, and break-even timeline for any intervention.",
   },
   {
     id: "global-budget-modeler",
@@ -98,6 +106,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/payment-models?tab=gb-transition",
     pillars: ["economics"],
     chapters: ["6"],
+    desc: "Model revenue and operating margin through the transition from fee-for-service to a global budget.",
   },
   {
     id: "hospital-stress-test",
@@ -106,18 +115,21 @@ export const TOOLS: readonly Tool[] = [
     // Featured in the ch 6, 7 and 11 "Work This Chapter" tables.
     pillars: ["economics", "operations"],
     chapters: ["6", "7", "11"],
+    desc: "Stress-test hospital financials against payer mix, Medicaid cuts, and global budget scenarios.",
   },
   {
     id: "hta-studio",
     label: "HTA Studio",
     href: "/research-lab/policy-quality?tab=hta",
     pillars: ["economics"],
+    desc: "Build budget impact models and run Monte Carlo PSA with 1,000 iterations.",
   },
   {
     id: "actuarial-lab",
     label: "Actuarial Lab",
     href: "/research-lab/policy-quality?tab=actuarial",
     pillars: ["economics"],
+    desc: "Calculate ACA actuarial value, model adverse selection, and IRA drug pricing.",
   },
 
   // ── Technology & AI bench ─────────────────────────────────────────────
@@ -127,6 +139,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/interoperability?tab=fhir",
     pillars: ["technology"],
     chapters: ["4", "5"],
+    desc: "Build and validate FHIR R4 resources, test CDS Hooks, check ONC compliance.",
   },
   {
     id: "clinical-data-exchange",
@@ -134,6 +147,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/vbc-clinical-quality?tab=hl7",
     pillars: ["technology"],
     chapters: ["5"],
+    desc: "Annotated HL7 v2 messages (ADT/ORU), FHIR R4 bundles, HL7↔FHIR bridge, and USCDI v3 data element browser — anchored to 8 Vermont patient scenarios.",
   },
   {
     id: "emr-ehr-lab",
@@ -157,6 +171,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/technology-ai?tab=ai",
     pillars: ["technology"],
     chapters: ["5"],
+    desc: "Compare predictive models, detect algorithmic bias, build AI governance frameworks.",
   },
   {
     id: "digital-health-lab",
@@ -164,6 +179,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/technology-ai?tab=digital",
     pillars: ["technology"],
     chapters: ["5"],
+    desc: "Calculate RPM ROI, model telehealth utilization, optimize EHR interoperability.",
   },
 
   // ── VBC, Clinical & Quality bench ─────────────────────────────────────
@@ -176,6 +192,7 @@ export const TOOLS: readonly Tool[] = [
     // chs 8-9 use it for panel-level care management.
     pillars: ["technology", "clinical", "equity"],
     chapters: ["4", "8", "9"],
+    desc: "Apply HCC v28 RAF scoring and segment populations by clinical complexity.",
   },
   {
     id: "risk-stratification-methodology",
@@ -183,6 +200,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/vbc-clinical-quality?tab=risk",
     pillars: ["clinical"],
     chapters: ["8", "9"],
+    desc: "Step-by-step HCC v28 RAF calculation per patient, population tier pyramid, and comparison of HCC vs. ACG vs. CDPS vs. Charlson algorithms.",
   },
   {
     id: "vbc-quality-measures",
@@ -191,6 +209,7 @@ export const TOOLS: readonly Tool[] = [
     // Featured in both ch 8 and ch 9 "Work This Chapter" tables.
     pillars: ["clinical"],
     chapters: ["8", "9"],
+    desc: "HEDIS panel with numerator/denominator logic, 30-day readmission (CMS RSRR), and AHRQ PQI avoidable ED analysis — 8 Vermont patient scenarios.",
   },
   {
     id: "high-low-value-care",
@@ -198,6 +217,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/vbc-clinical-quality?tab=value",
     pillars: ["clinical"],
     chapters: ["9"],
+    desc: "A1C/BP panel management with VBC savings calculations, Choosing Wisely scan, and TCOC decomposition by service category.",
   },
 
   // ── Population & Equity bench ─────────────────────────────────────────
@@ -207,6 +227,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/population-equity?tab=population",
     pillars: ["equity", "clinical"],
     chapters: ["10"],
+    desc: "Run Markov chain disease progression models and SIR epidemic dynamics.",
   },
   {
     id: "equity-studio",
@@ -214,6 +235,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/population-equity?tab=equity",
     pillars: ["equity"],
     chapters: ["10"],
+    desc: "Analyze disparities across 10 outcomes and compute equity-weighted ICER via HEROI.",
   },
 
   // ── Knowledge & Workspace bench ───────────────────────────────────────
@@ -223,6 +245,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/knowledge-workspace?tab=scorecard",
     pillars: ["operations"],
     chapters: ["11", "15"],
+    desc: "Executive six-pillar dashboard — score all six pillars with Vermont AHEAD milestone tracking.",
   },
   {
     id: "vbc-readiness",
@@ -230,6 +253,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/knowledge-workspace?tab=readiness",
     pillars: ["operations", "economics"],
     chapters: ["7", "11"],
+    desc: "30-dimension, 6-domain self-assessment producing a readiness score and prioritized gap analysis. Vermont AHEAD presets included.",
   },
   {
     id: "evidence-library",
@@ -237,6 +261,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/knowledge-workspace?tab=evidence",
     pillars: ["operations"],
     chapters: ["11", "12"],
+    desc: "Search 25 landmark CEA/CUA studies and 20 CMMI innovation model summaries.",
   },
   {
     id: "research-workspace",
@@ -244,6 +269,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/knowledge-workspace?tab=workspace",
     pillars: ["operations"],
     chapters: ["12"],
+    desc: "Save scenarios, build structured reports, manage citations, and export findings.",
   },
   {
     id: "workforce-modeler",
@@ -251,6 +277,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/knowledge-workspace?tab=workforce",
     pillars: ["clinical", "operations"],
     chapters: ["11"],
+    desc: "Project physician and nursing supply/demand across 12 specialties over 10 years.",
   },
   {
     id: "cin-shared-services",
@@ -276,6 +303,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/about/framework",
     pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"],
     chapters: ["1", "16"],
+    desc: "Explore the Six-Pillar Framework — the conceptual map connecting Policy, Economics, Technology, Clinical, Equity, and Operations.",
   },
   {
     id: "htr-simulator",
@@ -284,6 +312,7 @@ export const TOOLS: readonly Tool[] = [
     pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"],
     // Featured in the ch 1, 13, 14, 15 and 16 platform tables.
     chapters: ["1", "13", "14", "15", "16"],
+    desc: "Model health transformation readiness across all six HTR pillars for any organization or state.",
   },
   {
     id: "transformation-friction-index",
@@ -291,6 +320,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/transformation-friction-index",
     pillars: ["policy", "operations"],
     chapters: ["1", "14", "15"],
+    desc: "Quantify implementation barriers to health transformation across all six pillars for any state or organization.",
   },
   {
     id: "investment-tracker",
@@ -298,6 +328,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/investment-tracker",
     pillars: ["economics"],
     chapters: ["7", "15"],
+    desc: "Track healthcare M&A, VC, PE, and strategic partnership activity by sector, geography, and deal size.",
   },
   {
     id: "hti-dashboard",
@@ -305,6 +336,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/hti-dashboard",
     pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"],
     chapters: ["13", "15", "16"],
+    desc: "Interactive Health Transformation Index scoring engine — composite scores, sub-indices, and state rankings.",
   },
   {
     id: "medicaid-eligibility-simulator",
@@ -312,6 +344,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/medicaid-eligibility-simulator",
     pillars: ["policy", "equity"],
     chapters: ["3"],
+    desc: "Screen Vermont Medicaid eligibility step-by-step by income, household size, age, and demographics.",
   },
   {
     id: "impact-simulation",
@@ -319,6 +352,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/impact-simulation",
     pillars: ["policy", "economics", "clinical", "operations"],
     chapters: ["1", "15"],
+    desc: "Model cross-pillar impact of payment reform, care delivery change, technology adoption, workforce strategy, equity interventions, and policy shifts.",
   },
   {
     id: "the-wire",
@@ -328,6 +362,7 @@ export const TOOLS: readonly Tool[] = [
     // A live news feed, so it is not chapter-bound — but chs 13 and 14 send
     // readers to it explicitly as an early-warning instrument.
     chapters: ["13", "14"],
+    desc: "Real-time curated feed of the most important healthcare policy, economics, and transformation news signals.",
   },
 ] as const;
 

@@ -10,7 +10,7 @@ import json
 import logging
 from typing import List, Optional
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import StreamingResponse
 from llama_index.core.agent import ReActAgent
 from llama_index.core.chat_engine import ContextChatEngine
@@ -24,6 +24,7 @@ from llama_index.llms.groq import Groq as GroqLLM
 from pydantic import BaseModel, field_validator
 
 from config import GROQ_API_KEY, MAX_SYSTEM_PROMPT_LEN, MODEL_FREE, MODEL_SUBSCRIBER
+from platform_catalog import BASE_URL as DEFAULT_BASE_URL
 from services.auth import AuthedUser, require_subscriber
 from services.catalog_search import (
     build_guaranteed_lab_section,
@@ -50,6 +51,38 @@ VALID_PILLARS = {"policy", "economics", "technology", "clinical", "equity"}
 
 # Pillar tag used on all Medicaid eligibility chunks (set by medicaid_parser.py)
 MEDICAID_PILLAR = "Medicaid Eligibility"
+
+# ── Brand-aware URL rebasing ───────────────────────────────────────────────────
+# The platform serves four domains from one deployment (see frontend/lib/brand.ts).
+# All backend URL literals are written against DEFAULT_BASE_URL; when the Next.js
+# proxy forwards the requesting domain via X-HTR-Host, every URL surface that
+# reaches the user (system prompt, lab section, citations) is rebased to it, so
+# a healthtransformationsolutions.* visitor never gets .review links.
+
+_BRAND_HOSTS = {
+    "healthtransformationreview.org",
+    "healthtransformationreview.com",
+    "healthtransformationsolutions.org",
+    "healthtransformationsolutions.com",
+}
+
+
+def resolve_base_url(fastapi_request: Request) -> str:
+    """Base URL for the requesting brand domain; DEFAULT_BASE_URL if unknown."""
+    raw = fastapi_request.headers.get("x-htr-host", "")
+    host = raw.lower().strip().split(":")[0].removeprefix("www.")
+    if host in _BRAND_HOSTS:
+        return f"https://{host}"
+    return DEFAULT_BASE_URL
+
+
+def rebase_urls(text: str, base_url: str) -> str:
+    """Rewrite DEFAULT_BASE_URL links (and bare-domain mentions) onto the requesting domain."""
+    if base_url == DEFAULT_BASE_URL or not text:
+        return text
+    default_host = DEFAULT_BASE_URL.removeprefix("https://")
+    new_host = base_url.removeprefix("https://")
+    return text.replace(DEFAULT_BASE_URL, base_url).replace(default_host, new_host)
 
 log = logging.getLogger("htr-brain")
 router = APIRouter()
@@ -447,6 +480,7 @@ async def _persist_conversation_turn(
 @router.post("/api/chat")
 async def chat(
     request: ChatRequest,
+    fastapi_request: Request,
     user: AuthedUser = Depends(require_subscriber),
 ):
     """
@@ -538,6 +572,12 @@ async def chat(
             f"lead with that specific information before broadening your answer.\n\n"
             + system_prompt
         )
+
+    # Rebase every URL the LLM will see onto the requesting brand domain, so its
+    # generated links match the site the user is on (resolved once, outside the
+    # async generator — see closure notes above).
+    _base_url = resolve_base_url(fastapi_request)
+    system_prompt = rebase_urls(system_prompt, _base_url)
 
     async def generate():
         # Yield a keepalive space immediately so the HTTP response starts streaming
@@ -648,12 +688,12 @@ async def chat(
                 # Since we can't retract already-streamed tokens, we yield a correction sentinel
                 # that the frontend strips, then yield the correct section.
                 yield "\n\n[STRIP_LAB]"
-            lab_section = build_guaranteed_lab_section(_guaranteed_tools)
+            lab_section = rebase_urls(build_guaranteed_lab_section(_guaranteed_tools), _base_url)
             yield lab_section
             full_response.append(lab_section)
 
         if citations:
-            citations_json = json.dumps(citations, ensure_ascii=False)
+            citations_json = rebase_urls(json.dumps(citations, ensure_ascii=False), _base_url)
             yield f"\n\n[CITATIONS]{citations_json}[/CITATIONS]"
 
         if supabase and user.user_id != "dev":

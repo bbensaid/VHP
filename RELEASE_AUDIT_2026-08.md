@@ -8,14 +8,16 @@ Baseline (Phase 0, 2026-08-10): frontend `typecheck` ✅, `build` ✅, `lint` 0 
 
 | ID | Sev | Finding | Status |
 |---|---|---|---|
-| CODE-1 | P1 | `/advisory/*` (12 routes) fully reachable on .review domains — hidden from nav/sitemap only; `app/advisory/layout.tsx` does no brand check | OPEN → fixing |
-| CODE-2 | P1 | Backend brand-blind: `platform_catalog.py` BASE_URL + chat system prompt hardcode healthtransformationreview.org; .solutions visitors get .review URLs in AI answers | OPEN → fixing |
+| CODE-1 | P1 | `/advisory/*` (12 routes) fully reachable on .review domains — hidden from nav/sitemap only. Fixed with `lib/brand-server.ts` `requireAdvisoryBrand()` guard: 404 on review brand at the layouts of /advisory, /advisory-hub, /connect, /connect-hub, /community (the three sections Header filters as "advise") | **FIXED** |
+| CODE-2 | P1 | Backend brand-blind: .solutions visitors got .review URLs in AI answers. Fixed: Next proxy forwards `X-HTR-Host`; backend `resolve_base_url()`/`rebase_urls()` rebase system prompt, lab section, and citations onto the requesting domain (allowlisted to the four production hosts) | **FIXED** |
 | CODE-3 | P2 | `resolveBrand()` defaults unknown hosts (localhost, Vercel previews) to `solutions` (full advisory variant) | NEEDS-SIGN-OFF (confirm intended) |
-| CODE-4 | P1 | `app/research-lab/page.tsx` hardcodes its own 32-tool catalog instead of importing `TOOLS` from `lib/taxonomy/tools.ts` — two sources of truth can drift | OPEN → fixing |
-| CODE-5 | P2 | `components/VoiceFab.tsx` dead code (`return null` before all logic) | OPEN → fixing |
-| CODE-6 | P2 | Stale Railway artifacts: `backend/railway.toml`, `Procfile`, `.env.railway.example`, ci.yml "Railway will auto-deploy" message; Fly is the real target | OPEN → fixing |
-| CODE-7 | P2 | `frontend/e2e/README.md` + config comments reference deleted `middleware.ts` and old `htr_beta=granted` cookie format (now `granted:<host>`) | OPEN → fixing |
-| CODE-8 | P2 | CI runs `pytest tests/` against nonexistent `backend/tests/` (continue-on-error, so silently useless) | OPEN → fixing |
+| CODE-4 | P1 | `app/research-lab/page.tsx` hardcoded a 24-tool catalog while the registry has **39** (the book's "nearly forty" was right; the page's "24 Analytical Tools" claim contradicted it). Its FromTheBook callout still used v28-era numbering ("Chapters 1–20", Policy = "Ch 4–5", wrong appendix). Fixed: all 35 missing `desc` fields added to `tools.ts` (copy sourced from the page + backend catalog so UI and AI agree); hub now derives every section from `TOOLS`+`PILLARS`; callout corrected to v42 numbering (Policy 2–3, Economics 6–7, Appendix E tool list / Appendix G reader's guide) | **FIXED** |
+| CODE-5 | P2 | `components/VoiceFab.tsx` dead code (`return null` before all logic). Deleted; unwired from `ClientOnlyShell` | **FIXED** |
+| CODE-6 | P2 | ci.yml claimed "Railway will auto-deploy the backend" — false; Fly deploys via fly-deploy.yml. Fixed message. NOTE: `railway.toml`/`Procfile`/`.env.railway.example` were NOT removed — `backend/DEPLOYMENT.md` documents them as deliberate portability insurance | **FIXED** |
+| CODE-7 | P2 | e2e docs/comments referenced deleted `middleware.ts` + legacy cookie. Fixed alongside CODE-15 | **FIXED** |
+| CODE-8 | P2 | CI ran `pytest tests/` against nonexistent `backend/tests/`. Step removed with a note; real suite is a recommendation | **FIXED** |
+| CODE-15 | **P0** | **e2e suite silently gated**: Playwright set legacy cookie `granted`, but since domain-scoping, layout.tsx only honors `granted:<host>` (ALLOW_AUTH_BYPASS only bypasses role-gating in proxy.ts, not the beta gate). Every e2e page render was the beta gate page — CI smoke green was not testing real pages. Fixed: cookie now `granted:localhost` | **FIXED** |
+| CODE-16 | P2 | Chat pillar filter omits **operations**: backend `VALID_PILLARS` and the frontend proxy's zod enum both list only 5 pillars. Consistent with zero Operations docs in eval dataset — but if Operations-tagged RAG content exists/arrives, it can never be filtered to | NEEDS-SIGN-OFF (add operations or document why not) |
 | CODE-9 | P1 | Backend `ruff check .` (CI-blocking, unpinned ruff) failed with 254 errors. Added `backend/ruff.toml` pinning rules (E4/E7/E9/F/I + deliberate E402 ignores for dotenv-ordering in main.py/config.py), auto-fixed imports, hand-fixed unused vars, deleted dead `main-original.py` (Gemini-era orphan). Backend now compiles + lints clean | **FIXED** |
 | CODE-10 | P1 | Personalized Learning: `items_per_week` (2–6 from user's time budget) computed but prompt hardcoded "exactly 3 items per week" — pacing personalization was dead code. Wired into prompt; downstream validation already handles variable counts | **FIXED** |
 | CODE-11 | P1 | AI Analyst prompt said "Act 167 (2018)" — platform (correctly) says 2022 everywhere. Cross-corpus contradiction in the AI's own grounding | **FIXED** (→ 2022) |
@@ -34,7 +36,7 @@ Baseline (Phase 0, 2026-08-10): frontend `typecheck` ✅, `build` ✅, `lint` 0 
 
 | ID | Sev | Finding | Status |
 |---|---|---|---|
-| OPS-1 | P0 | `frontend/public/HTR_Book_v42.pdf` dated Aug 4; manuscript `.docx` rebuilt Aug 6 → served PDF likely stale. Verify with "The OneCare Failure: A Sequencing Autopsy" + latest edits | AUTHOR-ACTION (re-export via Google Docs) |
+| OPS-1 | P0 | **Verified live 2026-08-10**: served PDF (= repo `frontend/public/` copy, identical md5, 309pp) is the **Aug 4** export; a newer Aug 5 export sits at repo root and was never copied to `public/`; the `.docx` was rebuilt **Aug 6** (4 rebuild commits after the served export). OneCare Autopsy section IS present — staleness is limited to the Aug 5–6 edits. Author: upload current `.docx` → export PDF → replace BOTH root `HTR_Book_v42.pdf` and `frontend/public/HTR_Book_v42.pdf` | AUTHOR-ACTION |
 | OPS-2 | P1 | Narration audio recorded 2026-06-14, drifted from v42 (worst: preface, introduction, ch1). Regeneration is local + free (Piper) | RECOMMENDATION (approve regeneration run) |
 | OPS-3 | P2 | RAG eval golden dataset: 8 Q/A pairs vs 50 target; Operations pillar has zero coverage | RECOMMENDATION |
 
