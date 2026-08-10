@@ -153,8 +153,6 @@ def rerank_nodes(query: str, nodes: List[NodeWithScore], top_k: int = 5) -> List
         return nodes[:top_k]
 
 
-_PLATFORM_BASE = "https://healthtransformationreview.org"
-
 # Maps Sanity content_type → platform URL prefix
 _SOURCE_TYPE_URL_MAP = {
     "post":           "/policy",          # articles live under pillar paths

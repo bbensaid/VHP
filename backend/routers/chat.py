@@ -59,6 +59,8 @@ MEDICAID_PILLAR = "Medicaid Eligibility"
 # reaches the user (system prompt, lab section, citations) is rebased to it, so
 # a healthtransformationsolutions.* visitor never gets .review links.
 
+# Mirror of ACCESS_DOMAINS in frontend/lib/brand.ts (the canonical list — Python
+# cannot import it). A new/renamed domain must be added in both places.
 _BRAND_HOSTS = {
     "healthtransformationreview.org",
     "healthtransformationreview.com",
@@ -73,6 +75,9 @@ def resolve_base_url(fastapi_request: Request) -> str:
     host = raw.lower().strip().split(":")[0].removeprefix("www.")
     if host in _BRAND_HOSTS:
         return f"https://{host}"
+    if host and not host.endswith(("localhost", ".local")):
+        # Surface a missed domain in logs on the first request, not in a user report
+        log.warning(f"X-HTR-Host {raw!r} not in _BRAND_HOSTS — falling back to {DEFAULT_BASE_URL}")
     return DEFAULT_BASE_URL
 
 
@@ -575,9 +580,16 @@ async def chat(
 
     # Rebase every URL the LLM will see onto the requesting brand domain, so its
     # generated links match the site the user is on (resolved once, outside the
-    # async generator — see closure notes above).
+    # async generator — see closure notes above). On the solutions brand, also
+    # align the platform's display name in the identity sentence with the site
+    # the user is actually on (HTR remains the shared ecosystem abbreviation).
     _base_url = resolve_base_url(fastapi_request)
     system_prompt = rebase_urls(system_prompt, _base_url)
+    if "healthtransformationsolutions" in _base_url:
+        system_prompt = system_prompt.replace(
+            "Health Transformation Review (HTR)",
+            "Health Transformation Solutions (HTR)",
+        )
 
     async def generate():
         # Yield a keepalive space immediately so the HTTP response starts streaming
@@ -682,18 +694,23 @@ async def chat(
             full_text = "".join(full_response)
             lab_marker = "🔬 TRY IT IN THE HTR LAB"
             if lab_marker in full_text:
-                # LLM produced a lab section — strip it, we'll replace it
-                # Yield a marker so the frontend knows to erase back to here
-                # (We use a simple sentinel the frontend already knows: overwrite via stream)
-                # Since we can't retract already-streamed tokens, we yield a correction sentinel
-                # that the frontend strips, then yield the correct section.
+                # We can't retract already-streamed tokens; emit a sentinel the
+                # frontend strips (see app/chat/page.tsx), then yield the
+                # authoritative section below.
                 yield "\n\n[STRIP_LAB]"
             lab_section = rebase_urls(build_guaranteed_lab_section(_guaranteed_tools), _base_url)
             yield lab_section
             full_response.append(lab_section)
 
         if citations:
-            citations_json = rebase_urls(json.dumps(citations, ensure_ascii=False), _base_url)
+            # Rebase only the url field of each citation — titles and snippets are
+            # corpus text and must not be rewritten.
+            rebased_citations = [
+                {**c, "url": rebase_urls(c["url"], _base_url)}
+                if isinstance(c.get("url"), str) else c
+                for c in citations
+            ]
+            citations_json = json.dumps(rebased_citations, ensure_ascii=False)
             yield f"\n\n[CITATIONS]{citations_json}[/CITATIONS]"
 
         if supabase and user.user_id != "dev":

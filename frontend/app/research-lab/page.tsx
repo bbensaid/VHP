@@ -1,6 +1,6 @@
 import Link from "next/link";
 import FromTheBook from "@/components/FromTheBook";
-import { PILLARS } from "@/lib/taxonomy/pillars";
+import { PILLARS, type PillarId } from "@/lib/taxonomy/pillars";
 import { TOOLS, type Tool } from "@/lib/taxonomy/tools";
 
 export const metadata = {
@@ -9,7 +9,10 @@ export const metadata = {
 };
 
 // Presentation-only color classes per pillar (content comes from the taxonomy).
-const PILLAR_STYLES: Record<string, { color: string; bg: string; border: string; dot: string }> = {
+// Keyed by PillarId so adding/renaming a pillar is a compile error here, not a
+// runtime undefined.
+type PillarStyle = { color: string; bg: string; border: string; dot: string };
+const PILLAR_STYLES: Record<PillarId, PillarStyle> = {
   policy:     { color: "text-sky-700",     bg: "bg-sky-50",     border: "border-sky-200",     dot: "bg-sky-500" },
   economics:  { color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200", dot: "bg-emerald-500" },
   technology: { color: "text-indigo-700",  bg: "bg-indigo-50",  border: "border-indigo-200",  dot: "bg-indigo-500" },
@@ -18,29 +21,32 @@ const PILLAR_STYLES: Record<string, { color: string; bg: string; border: string;
   operations: { color: "text-teal-700",    bg: "bg-teal-50",    border: "border-teal-200",    dot: "bg-teal-500" },
 };
 
-const CROSS_PILLAR_STYLE = { color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200", dot: "bg-amber-500" };
+const CROSS_PILLAR_STYLE: PillarStyle = { color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200", dot: "bg-amber-500" };
 
 // Tools spanning most of the framework are shown in their own cross-pillar
 // section; everything else is grouped under its primary (first-listed) pillar.
 const isCrossPillar = (t: Tool) => t.pillars.length >= 4;
 
-export default function ResearchLabPage() {
-  const sections: { id: string; label: string; style: typeof CROSS_PILLAR_STYLE; intelligenceHref?: string; tools: readonly Tool[] }[] = [
-    ...PILLARS.map((p) => ({
-      id: p.id,
-      label: p.label,
-      style: PILLAR_STYLES[p.id],
-      intelligenceHref: p.href,
-      tools: TOOLS.filter((t) => !isCrossPillar(t) && t.pillars[0] === p.id),
-    })),
-    {
-      id: "cross-pillar",
-      label: "Cross-Pillar Simulators & Dashboards",
-      style: CROSS_PILLAR_STYLE,
-      tools: TOOLS.filter(isCrossPillar),
-    },
-  ];
+type Section = { id: string; label: string; style: PillarStyle; intelligenceHref?: string; tools: readonly Tool[] };
 
+// Static partition of the registry — computed once at module load.
+const SECTIONS: readonly Section[] = [
+  ...PILLARS.map((p) => ({
+    id: p.id,
+    label: p.label,
+    style: PILLAR_STYLES[p.id],
+    intelligenceHref: p.href,
+    tools: TOOLS.filter((t) => !isCrossPillar(t) && t.pillars[0] === p.id),
+  })),
+  {
+    id: "cross-pillar",
+    label: "Cross-Pillar Simulators & Dashboards",
+    style: CROSS_PILLAR_STYLE,
+    tools: TOOLS.filter(isCrossPillar),
+  },
+];
+
+export default function ResearchLabPage() {
   return (
     <div className="min-h-screen bg-white">
 
@@ -67,7 +73,7 @@ export default function ResearchLabPage() {
 
         <h2 className="text-2xl font-black text-slate-900">Tools by Domain</h2>
 
-        {sections.map((section) => (
+        {SECTIONS.map((section) => (
           <div key={section.id} className={`rounded-2xl border ${section.style.border} ${section.style.bg} p-6`}>
             {/* Section header */}
             <div className="flex items-center gap-2.5 mb-5">

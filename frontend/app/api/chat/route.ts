@@ -58,7 +58,10 @@ export async function POST(req: Request) {
 
   // Forward the requesting domain so the backend can brand its URLs
   // (healthtransformationreview.* vs healthtransformationsolutions.*).
-  const hostHeader = req.headers.get("host") || "";
+  // Prefer x-forwarded-host: behind a proxy/CDN the bare host header can be
+  // the internal deployment host rather than the public domain.
+  const hostHeader =
+    req.headers.get("x-forwarded-host") || req.headers.get("host") || "";
 
   try {
     const upstream = await fetch(`${PYTHON_BACKEND}/api/chat`, {

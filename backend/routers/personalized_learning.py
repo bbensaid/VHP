@@ -367,9 +367,13 @@ def _build_generation_prompt(
     role_context = ROLE_FRAMING.get(prefs.role, "healthcare transformation")
     total_hours  = round(prefs.time_per_week_hours * prefs.timeline_weeks, 1)
 
-    # Determine items per week based on time budget (target ~25-30 min/item)
+    # Determine items per week based on time budget (target ~25-30 min/item),
+    # then clamp the plan to ~36 items total so the JSON fits the generator's
+    # max_tokens=8000 budget (sized for the original 3 items × 12 weeks).
     mins_per_week  = prefs.time_per_week_hours * 60
     items_per_week = max(2, min(6, int(mins_per_week / 28)))
+    items_per_week = max(2, min(items_per_week, 36 // prefs.timeline_weeks))
+    content_items_per_week = items_per_week - 1  # remainder after the weekly knowledge_check
 
     return f"""You are a world-class healthcare education curriculum designer at the Health Transformation Review (HTR).
 
@@ -402,7 +406,7 @@ Vermont-specific context to weave in where relevant:
 
 {_build_catalog_section(catalog, prefs.topics)}
 ═══ GENERATION INSTRUCTIONS ═══
-Create exactly {prefs.timeline_weeks} weeks with exactly {items_per_week} items per week (a mix of reading and case_study items, plus exactly one knowledge_check per week).
+Create exactly {prefs.timeline_weeks} weeks with exactly {items_per_week} items per week: exactly one knowledge_check, and {content_items_per_week} reading/case_study item(s).
 
 Rules:
 - Every reading and case_study item: content field must be 100-130 words (concise but substantive — key insight, real example, actionable takeaway)
