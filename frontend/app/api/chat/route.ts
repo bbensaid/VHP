@@ -56,12 +56,17 @@ export async function POST(req: Request) {
   // a dev placeholder so the backend's auth_header check is satisfied.
   const authHeader = req.headers.get("Authorization") || "Bearer dev";
 
+  // Forward the requesting domain so the backend can brand its URLs
+  // (healthtransformationreview.* vs healthtransformationsolutions.*).
+  const hostHeader = req.headers.get("host") || "";
+
   try {
     const upstream = await fetch(`${PYTHON_BACKEND}/api/chat`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         "Authorization": authHeader,
+        "X-HTR-Host": hostHeader,
       },
       body: JSON.stringify(parsed.data),
     });
