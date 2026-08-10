@@ -7,7 +7,7 @@
 | [HTR_ADMIN_RUNBOOK.md](HTR_ADMIN_RUNBOOK.md) | **Anything operational** — access codes, deploys, Fly/Vercel/Supabase/Sanity, costs, secrets, emergencies. Verified 2026-07-30. |
 | [BOOK_WORKFLOW.md](BOOK_WORKFLOW.md) | Before touching the manuscript |
 | `frontend/docs/platform-documentation/` | Architecture (2026-06-06, partly stale — the runbook wins on conflicts) |
-| [ALIGNMENT_AUDIT_BRIEF.md](ALIGNMENT_AUDIT_BRIEF.md) | **Next major work**: auditing book ↔ platform ↔ Academy content alignment. Not started. |
+| [ALIGNMENT_AUDIT_BRIEF.md](ALIGNMENT_AUDIT_BRIEF.md) | Book ↔ platform ↔ Academy alignment audit methodology. **Completed 2026-07-31** — results in [ALIGNMENT_AUDIT_FINDINGS.md](ALIGNMENT_AUDIT_FINDINGS.md); re-verified 2026-08-10 in [RELEASE_AUDIT_2026-08.md](RELEASE_AUDIT_2026-08.md) (the pre-release audit ledger — read it for open items). |
 
 ## The book (`HTR_Book_v42`)
 

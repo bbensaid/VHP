@@ -1,6 +1,6 @@
 # 04 — Content & Data: Supabase
 
-> **Verified against:** `supabase/migrations/001…033` + dated migrations, `backend/services/db.py`, `frontend/lib/supabase.ts`, `frontend/lib/auth.ts`.
+> **Verified against:** `supabase/migrations/` — 36 files: `001…033` + 3 dated migrations (latest: 20260705_tester_feedback), `backend/services/db.py`, `frontend/lib/supabase.ts`, `frontend/lib/auth.ts`.
 
 Supabase is the **application database, auth provider, file storage, and vector store**. Sanity holds prose; Supabase holds *people, permissions, progress, money, and embeddings.*
 
@@ -34,7 +34,7 @@ Clients:
 
 ## 2. Migrations: the source of schema truth
 
-`supabase/migrations/` contains **34 ordered, append-only** SQL files. The schema is whatever these produce when run in order.
+`supabase/migrations/` contains **36 ordered, append-only** SQL files. The schema is whatever these produce when run in order.
 
 | # | Migration | Adds |
 |---|---|---|
