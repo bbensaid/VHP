@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<rect width="1000" height="1000" fill="#ffffff"/>
+<defs>
+<marker id="ah-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#679B95"/></marker>
+<marker id="ah-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#BBA472"/></marker>
+<marker id="ah-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#C4634F"/></marker>
+<marker id="ah-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#2B2B2B"/></marker>
+</defs>
+<circle cx="500.0" cy="500.0" r="468.0" fill="none" stroke="#B8B8B8" stroke-width="1.6"/>
+<circle cx="500.0" cy="500.0" r="458.0" fill="none" stroke="#B8B8B8" stroke-width="1.6"/>
+<path d="M 584.9,219.0 Q 620.4,281.4 692.3,281.0" fill="none" stroke="#679B95" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-teal)" opacity="0.95"/>
+<path d="M 451.0,254.9 Q 280.4,367.4 268.2,571.5" fill="none" stroke="#679B95" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-teal)" opacity="0.95"/>
+<path d="M 415.1,219.0 Q 326.8,190.0 307.7,281.0" fill="none" stroke="#BBA472" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-gold)" opacity="0.95"/>
+<path d="M 785.8,433.0 Q 749.5,495.0 785.8,557.0" fill="none" stroke="#BBA472" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-gold)" opacity="0.95"/>
+<path d="M 736.8,419.9 Q 566.2,532.4 554.0,736.5" fill="none" stroke="#679B95" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-teal)" opacity="0.95"/>
+<path d="M 700.9,384.0 Q 435.0,377.5 307.7,611.0" fill="none" stroke="#679B95" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-teal)" opacity="0.95"/>
+<path d="M 785.8,567.0 Q 822.1,505.0 785.8,443.0" fill="none" stroke="#BBA472" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-gold)" opacity="0.95"/>
+<path d="M 700.9,714.0 Q 620.8,699.3 593.5,776.0" fill="none" stroke="#BBA472" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-gold)" opacity="0.95"/>
+<path d="M 687.8,665.0 Q 505.0,545.0 322.2,665.0" fill="none" stroke="#BBA472" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-gold)" opacity="0.95"/>
+<path d="M 415.1,781.0 Q 379.6,718.6 307.7,719.0" fill="none" stroke="#679B95" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-teal)" opacity="0.95"/>
+<path d="M 451.0,745.1 Q 438.8,541.1 268.2,428.5" fill="none" stroke="#679B95" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-teal)" opacity="0.95"/>
+<path d="M 263.2,580.1 Q 458.6,481.8 446.0,263.5" fill="none" stroke="#C4634F" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-red)" opacity="0.95"/>
+<path d="M 299.1,714.0 Q 334.6,776.4 406.5,776.0" fill="none" stroke="#C4634F" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-red)" opacity="0.95"/>
+<path d="M 214.2,567.0 Q 267.0,505.0 214.2,443.0" fill="none" stroke="#C4634F" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-red)" opacity="0.95"/>
+<path d="M 312.2,335.0 Q 495.0,455.0 677.8,335.0" fill="none" stroke="#2B2B2B" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-dark)" opacity="0.95"/>
+<circle cx="500.0" cy="170.0" r="92.0" fill="#ffffff" stroke="#679B95" stroke-width="4.5"/>
+<text x="500.0" y="164.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#111111">POLICY</text>
+<text x="500.0" y="196.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#111111">Is it permissible?</text>
+<circle cx="785.8" cy="335.0" r="92.0" fill="#ffffff" stroke="#2B2B2B" stroke-width="4.5"/>
+<text x="785.8" y="329.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#111111">TECHNOLOGY</text>
+<text x="785.8" y="361.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#111111">Is it possible?</text>
+<circle cx="785.8" cy="665.0" r="92.0" fill="#ffffff" stroke="#2B2B2B" stroke-width="4.5"/>
+<text x="785.8" y="659.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#111111">ECONOMICS</text>
+<text x="785.8" y="691.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#111111">Is it sustainable?</text>
+<circle cx="500.0" cy="830.0" r="92.0" fill="#ffffff" stroke="#679B95" stroke-width="4.5"/>
+<text x="500.0" y="824.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#111111">CLINICAL</text>
+<text x="500.0" y="856.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#111111">Is it effective?</text>
+<circle cx="214.2" cy="665.0" r="92.0" fill="#ffffff" stroke="#C4634F" stroke-width="4.5"/>
+<text x="214.2" y="659.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#111111">EQUITY</text>
+<text x="214.2" y="691.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#111111">Is it just?</text>
+<circle cx="214.2" cy="335.0" r="92.0" fill="#ffffff" stroke="#BBA472" stroke-width="4.5"/>
+<text x="214.2" y="329.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#111111">OPERATIONS</text>
+<text x="214.2" y="361.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#111111">Is it executable?</text>
+</svg>
