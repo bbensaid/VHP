@@ -1,8 +1,11 @@
 # Book ↔ Platform ↔ Academy — Content Alignment Audit
 
-**Status: not started.** Written 2026-07-30 as a handoff so this survives a
-context reset. If you are a fresh session picking this up, read this file and
-[HTR_ADMIN_RUNBOOK.md](HTR_ADMIN_RUNBOOK.md) before doing anything.
+**Status: COMPLETED 2026-07-31** — all six pillar passes done; findings and
+applied fixes in [ALIGNMENT_AUDIT_FINDINGS.md](ALIGNMENT_AUDIT_FINDINGS.md).
+Re-verified 2026-08-10 during the pre-release audit
+([RELEASE_AUDIT_2026-08.md](RELEASE_AUDIT_2026-08.md)) — connection checks all
+green; remaining open items live in that ledger. This file is kept as the
+methodology reference for future re-runs. (Originally written 2026-07-30.)
 
 ---
 
