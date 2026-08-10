@@ -19,11 +19,10 @@ import hashlib
 import logging
 from typing import Optional
 
-from fastapi import APIRouter, Header, HTTPException, Depends
+from fastapi import APIRouter, Depends, Header, HTTPException
 from pydantic import BaseModel
 
 from services.db import get_supabase
-from config import SUPABASE_SERVICE_ROLE_KEY, SUPABASE_URL
 
 log = logging.getLogger("htr-brain")
 router = APIRouter(prefix="/api/v1", tags=["developer-api"])

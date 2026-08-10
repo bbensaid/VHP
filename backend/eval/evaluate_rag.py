@@ -32,6 +32,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from dotenv import load_dotenv
+
 load_dotenv(override=True)
 
 log = logging.getLogger("rag-eval")
@@ -130,7 +131,6 @@ GOLDEN_DATASET = [
 async def retrieve_context(question: str, pillar: str | None = None) -> list[str]:
     """Retrieve context using the hybrid RAG pipeline."""
     from llama_index.core import Settings
-    from llama_index.core.schema import QueryBundle
     from llama_index.core.postprocessor import MetadataReplacementNodePostprocessor
     from llama_index.embeddings.openai import OpenAIEmbedding
     from llama_index.llms.groq import Groq as GroqLLM
@@ -156,7 +156,7 @@ async def retrieve_context(question: str, pillar: str | None = None) -> list[str
         **({"filter_pillar": pillar} if pillar else {}),
     }).execute()
 
-    from llama_index.core.schema import NodeWithScore, TextNode, QueryBundle
+    from llama_index.core.schema import NodeWithScore, TextNode
     nodes = []
     for row in (result.data or []):
         meta = row.get("metadata_") or row.get("metadata") or {}
@@ -205,9 +205,14 @@ async def generate_answer(question: str, contexts: list[str]) -> str:
 async def run_evaluation():
     """Run Ragas evaluation on the golden dataset."""
     try:
-        from ragas import evaluate
-        from ragas.metrics import faithfulness, answer_relevancy, context_precision, context_recall
         from datasets import Dataset
+        from ragas import evaluate
+        from ragas.metrics import (
+            answer_relevancy,
+            context_precision,
+            context_recall,
+            faithfulness,
+        )
     except ImportError:
         log.error(
             "Ragas not installed. Run: pip install ragas datasets pandas\n"

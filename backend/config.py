@@ -6,6 +6,7 @@ Import from here instead of scattering os.getenv() calls across modules.
 """
 
 import os
+
 from dotenv import load_dotenv
 
 load_dotenv(override=True)
@@ -44,6 +45,7 @@ SANITY_RETRY_BACKOFF = 1.5
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 import pathlib
+
 BASE_DIR    = pathlib.Path(__file__).parent
 DATA_DIR    = BASE_DIR / "data"
 STORAGE_DIR = BASE_DIR / "storage"
