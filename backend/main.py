@@ -40,15 +40,22 @@ if _SENTRY_DSN:
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from config import FRONTEND_URL, MODEL_SUBSCRIBER, EMBEDDING_MODEL, SUPABASE_DB_URL, SUPABASE_JWT_SECRET
-from services.llm import init_global_settings, get_ranker
-from services.indexing import build_index, load_index
-from routers.chat import router as chat_router, set_index
-from routers.ingest import router as ingest_router
+from config import (
+    EMBEDDING_MODEL,
+    FRONTEND_URL,
+    MODEL_SUBSCRIBER,
+    SUPABASE_DB_URL,
+    SUPABASE_JWT_SECRET,
+)
 from routers.api_v1 import router as api_v1_router
+from routers.chat import router as chat_router
+from routers.chat import set_index
+from routers.ingest import router as ingest_router
 from routers.personalized_learning import router as personalized_learning_router
 from routers.vermont_ops import router as vermont_ops_router
 from services.catalog_search import build_catalog_index
+from services.indexing import build_index, load_index
+from services.llm import get_ranker, init_global_settings
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("htr-brain")
@@ -69,8 +76,8 @@ app.add_middleware(
 
 try:
     from slowapi import Limiter, _rate_limit_exceeded_handler
-    from slowapi.util import get_remote_address
     from slowapi.errors import RateLimitExceeded
+    from slowapi.util import get_remote_address
 
     limiter = Limiter(key_func=get_remote_address)
     app.state.limiter = limiter

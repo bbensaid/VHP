@@ -13,26 +13,25 @@ from typing import List, Optional
 
 import httpx
 from llama_index.core import (
-    VectorStoreIndex,
-    StorageContext,
-    SimpleDirectoryReader,
-    Settings,
     Document,
+    SimpleDirectoryReader,
+    StorageContext,
+    VectorStoreIndex,
 )
 from llama_index.core.node_parser import SentenceWindowNodeParser
 
 from config import (
     DATA_DIR,
-    STORAGE_DIR,
-    SANITY_PROJECT_ID,
-    SANITY_DATASET,
     SANITY_API_TOKEN,
     SANITY_API_VER,
+    SANITY_DATASET,
     SANITY_MAX_RETRIES,
+    SANITY_PROJECT_ID,
     SANITY_RETRY_BACKOFF,
+    STORAGE_DIR,
     SUPABASE_DB_URL,
-    SUPABASE_URL,
     SUPABASE_SERVICE_ROLE_KEY,
+    SUPABASE_URL,
 )
 from services.medicaid_parser import parse_medicaid_directory
 
@@ -114,11 +113,14 @@ async def fetch_sanity_content() -> List[Document]:
                 body       = doc.get("bodyText") or ""
                 objectives = doc.get("learningObjectives")
 
-                if title:      parts.append(title)
-                if summary:    parts.append(summary)
+                if title:
+                    parts.append(title)
+                if summary:
+                    parts.append(summary)
                 if objectives and isinstance(objectives, list):
                     parts.append(". ".join(objectives))
-                if body:       parts.append(body)
+                if body:
+                    parts.append(body)
 
                 content = "\n\n".join(filter(None, parts)).strip()
                 if len(content) < 20:

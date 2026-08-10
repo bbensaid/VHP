@@ -11,14 +11,13 @@ import hmac
 import logging
 import uuid
 from datetime import datetime, timezone
-from typing import Optional
 
 from fastapi import APIRouter, HTTPException, Request
 
 from config import INGEST_SECRET
-from services.indexing import build_index, incremental_reindex_document
+from routers.chat import get_index, set_index
 from services.db import get_supabase
-from routers.chat import set_index, get_index
+from services.indexing import build_index, incremental_reindex_document
 
 log    = logging.getLogger("htr-brain")
 router = APIRouter()

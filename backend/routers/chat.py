@@ -8,33 +8,39 @@ backend/routers/chat.py
 import asyncio
 import json
 import logging
-from typing import Optional, List
+from typing import List, Optional
 
-from fastapi import APIRouter, Depends, HTTPException, Request
+from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import StreamingResponse
+from llama_index.core.agent import ReActAgent
+from llama_index.core.chat_engine import ContextChatEngine
+from llama_index.core.llms import ChatMessage, MessageRole
+from llama_index.core.memory import ChatMemoryBuffer
+from llama_index.core.postprocessor import (
+    MetadataReplacementPostProcessor as MetadataReplacementNodePostprocessor,
+)
+from llama_index.core.schema import NodeWithScore, QueryBundle
+from llama_index.llms.groq import Groq as GroqLLM
 from pydantic import BaseModel, field_validator
 
-from llama_index.core.memory import ChatMemoryBuffer
-from llama_index.core.llms import ChatMessage, MessageRole
-from llama_index.core.postprocessor import MetadataReplacementPostProcessor as MetadataReplacementNodePostprocessor
-from llama_index.core.schema import QueryBundle, NodeWithScore
-from llama_index.core.chat_engine import ContextChatEngine
-from llama_index.core.agent import ReActAgent
-from llama_index.llms.groq import Groq as GroqLLM
-
+from config import GROQ_API_KEY, MAX_SYSTEM_PROMPT_LEN, MODEL_FREE, MODEL_SUBSCRIBER
 from services.auth import AuthedUser, require_subscriber
-from services.db import get_supabase
-from services.llm import get_llm_for_role, get_ranker
-from services.retrieval import HybridRetriever, StaticNodeRetriever, rerank_nodes, extract_citations, boost_vermont_nodes
-from services.tools import ALL_TOOLS
-from config import MODEL_FREE, MODEL_SUBSCRIBER, GROQ_API_KEY, MAX_SYSTEM_PROMPT_LEN
-from platform_catalog import HTR_TOOLS_CATALOG_TEXT, BASE_URL
 from services.catalog_search import (
-    find_relevant_tools_semantic,
-    format_tool_hint,
-    find_tools_for_query,
     build_guaranteed_lab_section,
+    find_relevant_tools_semantic,
+    find_tools_for_query,
+    format_tool_hint,
 )
+from services.db import get_supabase
+from services.llm import get_llm_for_role
+from services.retrieval import (
+    HybridRetriever,
+    StaticNodeRetriever,
+    boost_vermont_nodes,
+    extract_citations,
+    rerank_nodes,
+)
+from services.tools import ALL_TOOLS
 
 # Roles that get the full agentic (ReAct) pipeline
 AGENTIC_ROLES = {"professional", "advisory", "admin"}
@@ -337,6 +343,7 @@ def _get_llm_for_medicaid(user: "AuthedUser"):
     """
     if user.role in ("free", "student"):
         from llama_index.llms.groq import Groq as GroqLLM
+
         from services.llm import FallbackLLM
         sub_llm  = GroqLLM(model=MODEL_SUBSCRIBER, api_key=GROQ_API_KEY)
         fast_llm = GroqLLM(model=MODEL_FREE,        api_key=GROQ_API_KEY)
@@ -636,7 +643,6 @@ async def chat(
             lab_marker = "🔬 TRY IT IN THE HTR LAB"
             if lab_marker in full_text:
                 # LLM produced a lab section — strip it, we'll replace it
-                cut = full_text.find(lab_marker)
                 # Yield a marker so the frontend knows to erase back to here
                 # (We use a simple sentinel the frontend already knows: overwrite via stream)
                 # Since we can't retract already-streamed tokens, we yield a correction sentinel

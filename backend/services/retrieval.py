@@ -10,7 +10,7 @@ from typing import List, Optional
 
 from llama_index.core import Settings
 from llama_index.core.retrievers import BaseRetriever
-from llama_index.core.schema import NodeWithScore, TextNode, QueryBundle
+from llama_index.core.schema import NodeWithScore, QueryBundle, TextNode
 from supabase import Client as SupabaseClient
 
 from services.llm import get_ranker
