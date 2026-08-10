@@ -193,7 +193,12 @@ if n_wtc != 16:
 
 for label, pat, want in (
         ('Key Concepts', r'Key Concepts in This Chapter', 17),
-        ('Implications for You', r'^## \*\*Implications for You\*\*', 16)):
+        # 18, not 16: two of these headings used to carry a subject suffix
+        # ("— Equity Measurement", "— Revenue Cycle and Coding") and so fell
+        # outside this exact-match pattern. They were normalized on 2026-08-06,
+        # because the pipeline styles these sections by matching their text and
+        # a variant title renders as a formatting fault.
+        ('Implications for You', r'^## \*\*Implications for You\*\*', 18)):
     n = len(re.findall(pat, raw, re.M))
     if n != want:
         report('WARN', f'{label} heading count', f'{n}, expected {want}')

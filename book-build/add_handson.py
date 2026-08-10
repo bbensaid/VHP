@@ -6,6 +6,14 @@ chapters 2-11 of HTR_Book_v41.md, immediately before that chapter's
 
 Tool labels/hrefs verified against frontend/lib/taxonomy/tools.ts.
 """
+
+# NOTE (2026-08-05): the captions below were written as 'Figure N.H'. That
+# lettered slot was retired — every hands-on figure now carries the next
+# ordinary number in its chapter's sequence. If this script is ever rerun to
+# insert a NEW hands-on block, give the caption the next free number in that
+# chapter rather than '.H'; a stray .H will reappear in the list of figures.
+# HANDS-ON FIGURE NUMBERING
+
 import re
 
 PATH='HTR_Book_v41.md'
