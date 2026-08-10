@@ -12,24 +12,15 @@
  ],
  "Sequencing Gap|Structural Error|Direct Consequence|Cascade Effect": [
   1335,
-  2130,
-  2625,
-  2970
+  2250,
+  2325,
+  3150
  ],
  "Pillar|Diagnostic question|Structural role in the system|What it produces when functioning": [
   1215,
   1425,
   3360,
   3090
- ],
- "From \u2193 / To \u2192|Policy|Technology|Economics|Clinical|Equity|Operations": [
-  1368,
-  1284,
-  1284,
-  1284,
-  1284,
-  1284,
-  1284
  ],
  "6|Pillars, All Required|15|Dependency Relationships|6|Failure Cascade Patterns|1|Pillar Missing = System Fails": [
   2268,
@@ -64,14 +55,14 @@
   1860
  ],
  "Pillar|Status (timeframe)|Where it stands": [
-  1245,
-  1980,
-  5850
+  1140,
+  1185,
+  6750
  ],
  "Do this|On this tool|What to look for": [
-  4062,
-  947,
-  4062
+  3312,
+  2736,
+  3023
  ],
  "Year|Milestone|Pillar|Significance": [
   1063,
@@ -261,9 +252,11 @@
   2625,
   2955
  ],
- "Average Medicare inpatient hospital cost prevented per event $15,000 Approximate average \u2014 varies significantly by DRG a": [
-  4536,
-  4536
+ "$15,000|Avg. Inpatient Cost Prevented|$1,800|Avg. Preventable ED Visit|3\u20135x|Care Management ROI Range|32.3%|VT Potential": [
+  2268,
+  2268,
+  2268,
+  2268
  ],
  "Contract provision category|Key questions and financial risk": [
   2115,
@@ -350,9 +343,9 @@
   3795,
   4005
  ],
- "1 Geographic Access Barriers|Mechanisms: Physical distance from providers; transportation infrastructure inadequacy; pro": [
-  2886,
-  6185
+ "Root cause category|Mechanisms and Vermont interventions": [
+  3219,
+  5852
  ],
  "Gap|What is missing|Required investment|Timeline": [
   1749,

@@ -420,9 +420,13 @@ def _build_stat_cards(paras):
     # marker so style_tables() skips this (already fully styled as a stat strip)
     cap=OxmlElement('w:tblCaption'); cap.set(qn('w:val'),'STATSTRIP'); tblPr.append(cap)
     bd=OxmlElement('w:tblBorders')
-    # white gaps between the light-blue cards (like separate chips); no outer frame
+    # Hairline blue rules between the light-blue cards; no outer frame.
+    # These were 1.5pt white, which cut visible notches out of the light-blue
+    # band and read as a formatting fault rather than as separators. A 0.5pt
+    # (sz=4) mid-blue divides the cards without breaking the band; sz=4 is the
+    # thinnest width Word renders reliably at print scale.
     for e in ('insideV',):
-        b=OxmlElement(f'w:{e}'); b.set(qn('w:val'),'single'); b.set(qn('w:sz'),'12'); b.set(qn('w:space'),'0'); b.set(qn('w:color'),'FFFFFF'); bd.append(b)
+        b=OxmlElement(f'w:{e}'); b.set(qn('w:val'),'single'); b.set(qn('w:sz'),'4'); b.set(qn('w:space'),'0'); b.set(qn('w:color'),'A8C4E5'); bd.append(b)
     tblPr.append(bd)
     cm=OxmlElement('w:tblCellMar')
     for e,w in (('top','50'),('left','80'),('bottom','50'),('right','80')):   # tighter top/bottom
@@ -578,8 +582,23 @@ def _wrap_group_in_box(p_elements, *, fill, bar, labelcolor):
             # body stays roman (NOT italic) — smaller size already differentiates it
         tc.append(pe)
     tr.append(tc); tbl.append(tr)
-    # spacer paragraph after box
-    sp_after=OxmlElement('w:p'); sppr=OxmlElement('w:pPr'); spc=OxmlElement('w:spacing'); spc.set(qn('w:after'),'120'); sppr.append(spc); sp_after.append(sppr)
+    # Spacer paragraph after the box.
+    #
+    # `after` alone is not enough when the next block is another callout box:
+    # the spacer is an empty paragraph, so it contributes almost no height of
+    # its own, and Word puts a table straight after it. Consecutive boxes
+    # (TRY THIS followed by GO DEEPER, say) then touch, and the two colours
+    # read as one mis-striped block. Giving the spacer an explicit line height
+    # as well as trailing space guarantees a visible gap between any two
+    # boxes, and is harmless where prose follows instead.
+    sp_after=OxmlElement('w:p'); sppr=OxmlElement('w:pPr')
+    spc=OxmlElement('w:spacing')
+    spc.set(qn('w:after'),'120')
+    spc.set(qn('w:line'),'240'); spc.set(qn('w:lineRule'),'auto')
+    sppr.append(spc)
+    rpr=OxmlElement('w:rPr'); szv=OxmlElement('w:sz'); szv.set(qn('w:val'),'16'); rpr.append(szv)
+    sppr.append(rpr)
+    sp_after.append(sppr)
     tbl.addnext(sp_after)
 
 # ── 4. Sources -> small font ─────────────────────────────────────────────────
@@ -687,15 +706,43 @@ def style_tables():
         tblPr=t._tbl.tblPr
         look=tblPr.find(qn('w:tblLook'))
         if look is None: look=OxmlElement('w:tblLook'); tblPr.append(look)
-        look.set(qn('w:firstRow'),'1'); look.set(qn('w:noHBand'),'0'); look.set(qn('w:noVBand'),'1')
-        # navy header fill manually (in case style not honored)
+        # Does row 1 actually label the columns, or is it data?
+        #
+        # A markdown table always has a header row, so this used to paint row 1
+        # navy-on-white every time. That is wrong for the stat-card grids
+        # (e.g. Figure 8.2), where every cell — row 1 included — is a headline
+        # number plus its note. Painting the first pair navy made it look like
+        # a title for the rows beneath it, which it is not: the four cells are
+        # peers.
+        #
+        # A real header is short and label-like. Data cells in these grids run
+        # to a sentence or more, so cell length separates the two cleanly.
         hdr=t.rows[0]
-        for c in hdr.cells:
-            tcPr=c._tc.get_or_add_tcPr()
-            for old in tcPr.findall(qn('w:shd')): tcPr.remove(old)
-            shade(tcPr,'1B3A6B')
-            for para in c.paragraphs:
-                for r in para.runs: r.font.color.rgb=RGBColor(0xFF,0xFF,0xFF); r.bold=True
+        hdr_cells=[c.text.strip() for c in hdr.cells]
+        longest=max((len(x) for x in hdr_cells), default=0)
+        is_header = longest <= 60
+
+        if is_header:
+            look.set(qn('w:firstRow'),'1'); look.set(qn('w:noHBand'),'0'); look.set(qn('w:noVBand'),'1')
+            # navy header fill manually (in case style not honored)
+            for c in hdr.cells:
+                tcPr=c._tc.get_or_add_tcPr()
+                for old in tcPr.findall(qn('w:shd')): tcPr.remove(old)
+                shade(tcPr,'1B3A6B')
+                for para in c.paragraphs:
+                    for r in para.runs: r.font.color.rgb=RGBColor(0xFF,0xFF,0xFF); r.bold=True
+        else:
+            # No header row: treat every row as a peer. Row 1 gets the same
+            # light tint as the other cells rather than a navy banner, and the
+            # text stays dark so it reads as content.
+            look.set(qn('w:firstRow'),'0'); look.set(qn('w:noHBand'),'0'); look.set(qn('w:noVBand'),'1')
+            for c in hdr.cells:
+                tcPr=c._tc.get_or_add_tcPr()
+                for old in tcPr.findall(qn('w:shd')): tcPr.remove(old)
+                shade(tcPr,'EDF2F9')
+                for para in c.paragraphs:
+                    for r in para.runs:
+                        r.font.color.rgb=RGBColor(0x11,0x11,0x11); r.bold=True
         # full width, but AUTOFIT columns to content (not equal width)
         for tag in ('w:tblW','w:tblLayout'):
             el=tblPr.find(qn(tag))
@@ -1084,9 +1131,17 @@ def add_cover():
         with PILImage.open(COVER) as _c:
             ar = _c.height / _c.width
         # Vertical budget: page height, less top/bottom margins, less the title
-        # block and the spacer, less a little breathing room at the foot.
+        # block and the spacer, less breathing room at the foot.
+        #
+        # The reserve is 4.45in, not the earlier 3.55in. That figure was tuned
+        # for the old 2:1 landscape art, which was governed by its width and
+        # never came near the vertical limit. The current art is square (ar~1.0)
+        # and so is governed by height: it took the whole budget and ran from
+        # the title block down to the bottom margin, which read as oversized on
+        # the page. The extra 0.9in holds it to ~4.8in square and leaves a
+        # visible foot below the diagram.
         avail_h = int(sec.page_height - sec.top_margin - sec.bottom_margin
-                      - Inches(3.55))
+                      - Inches(4.45))
         if target_w * ar > avail_h:                    # too tall — fit to height
             target_w = int(avail_h / ar)
 
