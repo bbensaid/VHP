@@ -28,7 +28,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from config import SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
+from config import SUPABASE_SERVICE_ROLE_KEY, SUPABASE_URL
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 log = logging.getLogger("cms-quality")

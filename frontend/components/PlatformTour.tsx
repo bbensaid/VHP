@@ -22,8 +22,8 @@ const TOUR_STEPS: TourStep[] = [
     position: "center",
   },
   {
-    title: "The Six-Pillar Navigation",
-    body: "Every piece of content, tool, and analysis on HTR maps to one of six pillars: Policy, Economics, Technology, Clinical, Equity, and Operations. Use the top navigation to browse by pillar.",
+    title: "The Five-Pillar Navigation",
+    body: "Every piece of content, tool, and analysis on HTR maps to one of five pillars — Policy, Technology, Economics, Clinical, and Operations — or to the cross-cutting Equity Imperative. Use the top navigation to browse by pillar.",
     target: "nav",
     position: "bottom-right",
   },

@@ -20,7 +20,6 @@ import argparse
 import csv
 import io
 import logging
-import os
 import sys
 import urllib.request
 from pathlib import Path
@@ -28,7 +27,7 @@ from pathlib import Path
 # Allow running as a standalone script
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from config import SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
+from config import SUPABASE_SERVICE_ROLE_KEY, SUPABASE_URL
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 log = logging.getLogger("cms-hospitals")
@@ -152,7 +151,7 @@ def upsert_to_supabase(records: list[dict], dry_run: bool = False) -> None:
     total = 0
     for i in range(0, len(records), batch_size):
         batch = records[i : i + batch_size]
-        resp = supabase.table("hospitals").upsert(batch, on_conflict="id").execute()
+        supabase.table("hospitals").upsert(batch, on_conflict="id").execute()
         total += len(batch)
         log.info(f"Upserted {total}/{len(records)} hospitals")
 

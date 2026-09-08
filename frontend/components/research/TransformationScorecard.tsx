@@ -39,7 +39,7 @@ const PILLARS: PillarConfig[] = [
       { label: "State policy alignment", benchmark: "Active in ≥1 CMMI / state model" },
       { label: "Legislative monitoring", benchmark: "Weekly policy brief review process" },
       { label: "Regulatory compliance score", benchmark: "Zero material deficiencies" },
-      { label: "Waiver strategy", benchmark: "1115/AHEAD participation or roadmap" },
+      { label: "Waiver strategy", benchmark: "1115 waiver strategy or roadmap" },
     ],
     milestones: [
       { label: "FY2026: 2.5% commercial rate reduction", date: "FY2026", status: "active", vermont: "GMCB -1% commercial benchmark — first negative in Vermont history" },
@@ -108,34 +108,12 @@ const PILLARS: PillarConfig[] = [
       { label: "HEDIS composite performance", benchmark: "≥75th percentile on priority measures" },
       { label: "Care management penetration", benchmark: "≥90% of high-risk members in program" },
       { label: "30-day readmission rate", benchmark: "≤15% (CMS national benchmark)" },
-      { label: "Primary care investment ratio", benchmark: "≥AHEAD floor requirement" },
+      { label: "Primary care investment ratio", benchmark: "≥Act 68 primary care investment floor" },
     ],
     milestones: [
-      { label: "FY2026: AHEAD primary care investment reporting begins", date: "FY2026", status: "active", vermont: "AHEAD Cohort 2 — primary care floor accountability begins" },
-      { label: "FY2027: HEDIS equity stratification mandatory (AHEAD)", date: "FY2027", status: "upcoming" },
+      { label: "FY2026: Primary care investment reporting begins (Act 68)", date: "FY2026", status: "active", vermont: "Vermont withdrew from AHEAD in July 2026; primary care floor accountability now runs on Act 68's state mandate" },
+      { label: "FY2027: HEDIS equity stratification mandatory (Act 68)", date: "FY2027", status: "upcoming" },
       { label: "FY2028: COE designation system operational (Statewide Plan)", date: "FY2028", status: "upcoming" },
-    ],
-  },
-  {
-    id: "equity",
-    label: "Equity",
-    icon: "⚖️",
-    color: "text-violet-700",
-    bg: "bg-violet-50",
-    border: "border-violet-200",
-    barColor: "bg-violet-500",
-    labHref: "/research-lab/population-equity?tab=equity",
-    dimensions: [
-      { label: "HEROI composite equity score", benchmark: "≥70/100 (adequate performance)" },
-      { label: "HEDIS disparity ratio (Black/White)", benchmark: "≤1.2× for priority measures" },
-      { label: "SDOH screening rate", benchmark: "≥80% of attributed members screened annually" },
-      { label: "Geographic equity (HSA variation)", benchmark: "≤15% performance range across HSAs" },
-      { label: "AHEAD equity benchmark status", benchmark: "On track vs. CMS-set targets" },
-    ],
-    milestones: [
-      { label: "FY2026: AHEAD equity baseline measurement", date: "FY2026", status: "active", vermont: "Baseline HEROI and HEDIS stratification for each Vermont HSA" },
-      { label: "FY2027: AHEAD equity targets enforced", date: "FY2027", status: "upcoming" },
-      { label: "FY2028: Statewide equity benchmarks in Strategic Plan", date: "FY2028", status: "upcoming" },
     ],
   },
   {
@@ -162,6 +140,34 @@ const PILLARS: PillarConfig[] = [
   },
 ];
 
+
+// The Equity Imperative -- NOT one of the five scored/aggregated pillars in
+// PILLARS above. Same data shape (so it reuses the same card/milestone
+// rendering), but tracked and displayed separately: it is the cross-cutting
+// "is it just?" test applied to the five, not a sixth thing to average in.
+const EQUITY_IMPERATIVE: PillarConfig = {
+  id: "equity",
+  label: "The Equity Imperative",
+  icon: "⚖️",
+  color: "text-violet-700",
+  bg: "bg-violet-50",
+  border: "border-violet-200",
+  barColor: "bg-violet-500",
+  labHref: "/research-lab/population-equity?tab=equity",
+  dimensions: [
+    { label: "HEROI composite equity score", benchmark: "≥70/100 (adequate performance)" },
+    { label: "HEDIS disparity ratio (Black/White)", benchmark: "≤1.2× for priority measures" },
+    { label: "SDOH screening rate", benchmark: "≥80% of attributed members screened annually" },
+    { label: "Geographic equity (HSA variation)", benchmark: "≤15% performance range across HSAs" },
+    { label: "Act 68 equity benchmark status", benchmark: "On track vs. Vermont statutory targets" },
+  ],
+  milestones: [
+    { label: "FY2026: Equity baseline measurement (Act 68)", date: "FY2026", status: "active", vermont: "Baseline HEROI and HEDIS stratification for each Vermont HSA" },
+    { label: "FY2027: Act 68 equity targets enforced", date: "FY2027", status: "upcoming", vermont: "AHEAD's CMS-set equity targets no longer apply after Vermont's July 2026 withdrawal; Act 68's state-level equity reporting mandate continues" },
+    { label: "FY2028: Statewide equity benchmarks in Strategic Plan", date: "FY2028", status: "upcoming" },
+  ],
+};
+
 // ─── SCORE INPUT ──────────────────────────────────────────────────────────────
 const SCORE_LEVELS = [
   { value: 0,  label: "Not Started",  short: "NS",  color: "bg-rose-100 text-rose-700 border-rose-200" },
@@ -177,11 +183,115 @@ const MILESTONE_STYLES = {
   upcoming:  { dot: "bg-slate-300", badge: "bg-slate-100 text-slate-500 border-slate-200", label: "Upcoming" },
 };
 
+
+function PillarDetailCard({ pillar, suffix, score, onScoreChange, milestonesOpen, onToggleMilestones }: {
+  pillar: PillarConfig;
+  suffix: string;
+  score: number;
+  onScoreChange: (value: number) => void;
+  milestonesOpen: boolean;
+  onToggleMilestones: () => void;
+}) {
+  const level = SCORE_LEVELS.findLast(l => score >= l.value) ?? SCORE_LEVELS[0];
+
+  return (
+    <div className={`rounded-xl border ${pillar.border} overflow-hidden`}>
+      {/* Pillar header */}
+      <div className={`${pillar.bg} px-5 py-4`}>
+        <div className="flex flex-wrap items-center gap-3 mb-3">
+          <span className="text-xl">{pillar.icon}</span>
+          <span className={`font-black text-base ${pillar.color}`}>{pillar.label}{suffix}</span>
+          <span className={`ml-auto text-xs font-black px-2.5 py-1 rounded-lg border ${level.color}`}>{level.label}</span>
+          <span className={`text-lg font-black ${pillar.color}`}>{score}%</span>
+        </div>
+
+        {/* Score slider */}
+        <div className="flex items-center gap-3">
+          <div className="flex-1 h-2 rounded-full bg-white/60 overflow-hidden">
+            <div className={`h-full rounded-full transition-all ${pillar.barColor}`} style={{ width: `${score}%` }} />
+          </div>
+          <div className="flex gap-1.5">
+            {SCORE_LEVELS.map(l => (
+              <button
+                key={l.value}
+                onClick={() => onScoreChange(l.value)}
+                className={`text-[9px] font-black px-1.5 py-0.5 rounded border transition-all ${
+                  score === l.value ? l.color + " font-black" : "bg-white/80 border-slate-200 text-slate-500 hover:border-slate-400"
+                }`}
+                title={l.label}
+              >
+                {l.short}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Dimensions */}
+      <div className="bg-white px-5 py-3">
+        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Key Benchmarks</p>
+        <div className="space-y-1.5">
+          {pillar.dimensions.map(dim => (
+            <div key={dim.label} className="flex items-start gap-2">
+              <span className={`text-[9px] font-black shrink-0 mt-0.5 ${pillar.color}`}>▸</span>
+              <div>
+                <span className="text-xs font-bold text-slate-700">{dim.label}</span>
+                <span className="text-[10px] text-slate-400 ml-1.5">{dim.benchmark}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Milestones toggle */}
+        <button
+          onClick={onToggleMilestones}
+          className={`mt-3 flex items-center gap-1.5 text-[10px] font-bold ${pillar.color} hover:underline`}
+        >
+          <span>{milestonesOpen ? "▾" : "▸"}</span>
+          Vermont Act 68 Milestones ({pillar.milestones.length})
+        </button>
+
+        {milestonesOpen && (
+          <div className="mt-3 space-y-2 border-t border-slate-100 pt-3">
+            {pillar.milestones.map(m => {
+              const s = MILESTONE_STYLES[m.status];
+              return (
+                <div key={m.label} className="flex items-start gap-2.5">
+                  <div className={`w-2.5 h-2.5 rounded-full shrink-0 mt-1 ${s.dot}`} />
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="text-xs font-bold text-slate-800">{m.label}</span>
+                      <span className={`text-[9px] font-black px-1.5 py-0.5 rounded border ${s.badge}`}>{s.label}</span>
+                    </div>
+                    {m.vermont && (
+                      <p className="text-[10px] text-slate-400 mt-0.5 leading-relaxed">{m.vermont}</p>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        <div className="mt-3">
+          <Link
+            href={pillar.labHref}
+            className={`text-[10px] font-black ${pillar.color} hover:underline`}
+          >
+            Open {pillar.label} Research Lab →
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ─── COMPONENT ────────────────────────────────────────────────────────────────
 export default function TransformationScorecard() {
   const [scores, setScores] = useState<Record<string, number>>({
-    policy: 50, economics: 25, technology: 50, clinical: 75, equity: 25, operations: 50,
+    policy: 50, technology: 50, economics: 25, clinical: 75, operations: 50,
   });
+  const [equityScore, setEquityScore] = useState(25);
   const [showMilestones, setShowMilestones] = useState<Record<string, boolean>>({});
 
   function setScore(pillarId: string, value: number) {
@@ -215,7 +325,7 @@ export default function TransformationScorecard() {
           <div>
             <p className="text-[10px] font-black uppercase tracking-widest text-amber-400 mb-1">Transformation Readiness Scorecard</p>
             <h2 className="text-2xl font-black tracking-tight">{overallScore}% — {overallStatus.label}</h2>
-            <p className="text-sm text-slate-400 mt-1">Six-Pillar Assessment · Self-Scored · Vermont AHEAD Milestones Integrated</p>
+            <p className="text-sm text-slate-400 mt-1">Five-Pillar Assessment · Self-Scored · Vermont Act 68 Milestones Integrated · Equity Imperative Checked</p>
           </div>
           <Link
             href="/research-lab/knowledge-workspace?tab=readiness"
@@ -234,7 +344,7 @@ export default function TransformationScorecard() {
         </div>
 
         {/* Pillar score bars */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {PILLARS.map(pillar => (
             <div key={pillar.id} className="text-center">
               <div className="text-lg mb-1">{pillar.icon}</div>
@@ -248,6 +358,21 @@ export default function TransformationScorecard() {
               <div className="text-[10px] font-bold text-slate-400">{pillar.label}</div>
             </div>
           ))}
+        </div>
+
+        {/* The Equity Imperative -- its own row, ring-highlighted, not a 6th tile
+            in the grid above. */}
+        <div className="mt-4 rounded-xl p-3 bg-violet-950/40 ring-2 ring-violet-500/40">
+          <div className="flex items-center gap-3">
+            <span className="text-lg">{EQUITY_IMPERATIVE.icon}</span>
+            <div className="flex-1">
+              <p className="text-[10px] font-black uppercase tracking-widest text-violet-300">The Equity Imperative — is it just?</p>
+              <div className="h-1.5 rounded-full bg-slate-700 overflow-hidden mt-1">
+                <div className="h-full rounded-full transition-all bg-violet-500" style={{ width: `${equityScore}%` }} />
+              </div>
+            </div>
+            <span className="text-lg font-black text-white">{equityScore}%</span>
+          </div>
         </div>
 
         {/* Focus area */}
@@ -266,109 +391,39 @@ export default function TransformationScorecard() {
 
       {/* Pillar detail cards */}
       <div className="space-y-4">
-        {PILLARS.map(pillar => {
-          const score = scores[pillar.id];
-          const level = SCORE_LEVELS.findLast(l => score >= l.value) ?? SCORE_LEVELS[0];
-          const milestonesOpen = showMilestones[pillar.id];
+        {PILLARS.map(pillar => (
+          <PillarDetailCard
+            key={pillar.id}
+            pillar={pillar}
+            suffix=" Pillar"
+            score={scores[pillar.id]}
+            onScoreChange={(v) => setScore(pillar.id, v)}
+            milestonesOpen={!!showMilestones[pillar.id]}
+            onToggleMilestones={() => toggleMilestones(pillar.id)}
+          />
+        ))}
+      </div>
 
-          return (
-            <div key={pillar.id} className={`rounded-xl border ${pillar.border} overflow-hidden`}>
-              {/* Pillar header */}
-              <div className={`${pillar.bg} px-5 py-4`}>
-                <div className="flex flex-wrap items-center gap-3 mb-3">
-                  <span className="text-xl">{pillar.icon}</span>
-                  <span className={`font-black text-base ${pillar.color}`}>{pillar.label} Pillar</span>
-                  <span className={`ml-auto text-xs font-black px-2.5 py-1 rounded-lg border ${level.color}`}>{level.label}</span>
-                  <span className={`text-lg font-black ${pillar.color}`}>{score}%</span>
-                </div>
-
-                {/* Score slider */}
-                <div className="flex items-center gap-3">
-                  <div className="flex-1 h-2 rounded-full bg-white/60 overflow-hidden">
-                    <div className={`h-full rounded-full transition-all ${pillar.barColor}`} style={{ width: `${score}%` }} />
-                  </div>
-                  <div className="flex gap-1.5">
-                    {SCORE_LEVELS.map(l => (
-                      <button
-                        key={l.value}
-                        onClick={() => setScore(pillar.id, l.value)}
-                        className={`text-[9px] font-black px-1.5 py-0.5 rounded border transition-all ${
-                          score === l.value ? l.color + " font-black" : "bg-white/80 border-slate-200 text-slate-500 hover:border-slate-400"
-                        }`}
-                        title={l.label}
-                      >
-                        {l.short}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Dimensions */}
-              <div className="bg-white px-5 py-3">
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Key Benchmarks</p>
-                <div className="space-y-1.5">
-                  {pillar.dimensions.map(dim => (
-                    <div key={dim.label} className="flex items-start gap-2">
-                      <span className={`text-[9px] font-black shrink-0 mt-0.5 ${pillar.color}`}>▸</span>
-                      <div>
-                        <span className="text-xs font-bold text-slate-700">{dim.label}</span>
-                        <span className="text-[10px] text-slate-400 ml-1.5">{dim.benchmark}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Milestones toggle */}
-                <button
-                  onClick={() => toggleMilestones(pillar.id)}
-                  className={`mt-3 flex items-center gap-1.5 text-[10px] font-bold ${pillar.color} hover:underline`}
-                >
-                  <span>{milestonesOpen ? "▾" : "▸"}</span>
-                  Vermont AHEAD Milestones ({pillar.milestones.length})
-                </button>
-
-                {milestonesOpen && (
-                  <div className="mt-3 space-y-2 border-t border-slate-100 pt-3">
-                    {pillar.milestones.map(m => {
-                      const s = MILESTONE_STYLES[m.status];
-                      return (
-                        <div key={m.label} className="flex items-start gap-2.5">
-                          <div className={`w-2.5 h-2.5 rounded-full shrink-0 mt-1 ${s.dot}`} />
-                          <div className="min-w-0">
-                            <div className="flex items-center gap-2 flex-wrap">
-                              <span className="text-xs font-bold text-slate-800">{m.label}</span>
-                              <span className={`text-[9px] font-black px-1.5 py-0.5 rounded border ${s.badge}`}>{s.label}</span>
-                            </div>
-                            {m.vermont && (
-                              <p className="text-[10px] text-slate-400 mt-0.5 leading-relaxed">{m.vermont}</p>
-                            )}
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
-
-                <div className="mt-3">
-                  <Link
-                    href={pillar.labHref}
-                    className={`text-[10px] font-black ${pillar.color} hover:underline`}
-                  >
-                    Open {pillar.label} Research Lab →
-                  </Link>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+      {/* The Equity Imperative detail card -- outside the PILLARS.map above,
+          same card shape (so scoring and milestones work identically), but a
+          violet ring instead of a plain border so it doesn't read as a 6th
+          pillar in the list. */}
+      <div className="ring-4 ring-violet-100 rounded-xl">
+        <PillarDetailCard
+          pillar={EQUITY_IMPERATIVE}
+          suffix=""
+          score={equityScore}
+          onScoreChange={setEquityScore}
+          milestonesOpen={!!showMilestones.equity}
+          onToggleMilestones={() => toggleMilestones("equity")}
+        />
       </div>
 
       {/* Methodology */}
       <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
         <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Scorecard Methodology</p>
         <p className="text-xs text-slate-500 leading-relaxed">
-          Executive-level dashboard for tracking transformation progress across all six HTR pillars. Self-score each pillar from 0% (Pre-Transformation) to 100% (Optimized). Vermont AHEAD statutory milestones are integrated into each pillar — active milestones reflect current FY2026 obligations. For a full 30-dimension assessment with specific capability scoring, use the <Link href="/research-lab/knowledge-workspace?tab=readiness" className="text-sky-600 font-bold hover:underline">VBC Readiness Assessment</Link>. For executive reporting or board presentation support, contact HTR Advisory.
+          Executive-level dashboard for tracking transformation progress across all five HTR pillars, each checked against the Equity Imperative. Self-score each pillar from 0% (Pre-Transformation) to 100% (Optimized). Vermont Act 68 statutory milestones are integrated into each pillar — active milestones reflect current FY2026 obligations. For a full 30-dimension assessment with specific capability scoring, use the <Link href="/research-lab/knowledge-workspace?tab=readiness" className="text-sky-600 font-bold hover:underline">VBC Readiness Assessment</Link>. For executive reporting or board presentation support, contact HTR Advisory.
         </p>
       </div>
     </div>

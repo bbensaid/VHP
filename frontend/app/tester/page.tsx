@@ -62,7 +62,7 @@ const SECTIONS: Section[] = [
     emoji: "📖",
     color: "bg-amber-800",
     pages: [
-      { label: "The Book — Landing", href: "/book", note: "'Transforming American Healthcare' book page" },
+      { label: "The Book — Landing", href: "/book", note: "'Transforming Healthcare' book page" },
       { label: "Book → Listen (audio)", href: "/book/listen", note: "Narrated audio version of the book" },
     ],
   },

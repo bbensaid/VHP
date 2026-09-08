@@ -35,7 +35,7 @@ const companyItems = [
 
 // ─── MEGA-MENU DATA ──────────────────────────────────────────────────────────
 
-import { PILLARS, type PillarId } from "@/lib/taxonomy";
+import { PILLARS, EQUITY_IMPERATIVE, type FrameworkId } from "@/lib/taxonomy";
 
 // Header mega-menu items are more verbose than the sidebar (they carry a `desc`
 // per item). Pillar identity comes from taxonomy; per-item descriptions are
@@ -47,7 +47,7 @@ interface MegaMenuItem {
   desc: string;
 }
 
-const PILLAR_MENU_ITEMS: Record<PillarId, MegaMenuItem[]> = {
+const PILLAR_MENU_ITEMS: Record<FrameworkId, MegaMenuItem[]> = {
   policy: [
     { href: "/policy/regulation", label: "Regulation & Legislation", desc: "Federal & state rule-making analysis" },
     { href: "/policy/mandates", label: "Public Health Mandates", desc: "Coverage requirements & enforcement" },
@@ -109,7 +109,7 @@ type MegaMenuType = "intelligence" | "learn" | "tools" | "states" | "advise" | n
 function IntelligencePanel({ onClose }: { onClose: () => void }) {
   return (
     <div className="px-8 py-6">
-      <div className="grid grid-cols-6 gap-6" style={{ width: "min(1200px, 92vw)" }}>
+      <div className="grid grid-cols-5 gap-6" style={{ width: "min(1200px, 92vw)" }}>
         {pillars.map((p) => {
           return (
             <div key={p.id}>
@@ -136,6 +136,43 @@ function IntelligencePanel({ onClose }: { onClose: () => void }) {
             </div>
           );
         })}
+      </div>
+
+      {/* The Equity Imperative sits BELOW the five as a full-width band, not
+          beside them as a sixth column — it is the test each pillar must pass,
+          not another pillar. Changing this back to a peer column would
+          contradict the book's central framing. */}
+      <div className="mt-6 pt-5 border-t border-violet-200 dark:border-violet-900" style={{ width: "min(1200px, 92vw)" }}>
+        <Link
+          href={EQUITY_IMPERATIVE.href}
+          onClick={onClose}
+          className={`flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 px-3 py-3 rounded-lg ${EQUITY_IMPERATIVE.classes.hoverBg} transition-colors group`}
+        >
+          <span className="flex items-center gap-1.5 shrink-0">
+            <span className={`w-2 h-2 rounded-full ${EQUITY_IMPERATIVE.classes.dot} shrink-0`} />
+            <span className={`text-xs font-black uppercase tracking-widest ${EQUITY_IMPERATIVE.classes.headerColor}`}>
+              {EQUITY_IMPERATIVE.label}
+            </span>
+          </span>
+          <span className="text-xs text-slate-500 dark:text-slate-400">
+            Applied to all five pillars, at every stage — {EQUITY_IMPERATIVE.desc}
+          </span>
+        </Link>
+        <div className="flex flex-wrap gap-x-1 gap-y-1 mt-1 pl-3">
+          {PILLAR_MENU_ITEMS.equity.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={onClose}
+              className={`px-3 py-1.5 rounded-lg ${EQUITY_IMPERATIVE.classes.hoverBg} transition-colors group`}
+            >
+              <span className={`text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:${EQUITY_IMPERATIVE.classes.headerColor}`}>
+                {item.label}
+              </span>
+              <span className="text-xs text-slate-400 dark:text-slate-500 ml-2">{item.desc}</span>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -231,7 +268,7 @@ function LearnPanel({ onClose }: { onClose: () => void }) {
                 The Book
               </span>
               <span className="text-xs text-slate-400 mt-0.5">
-                <em>Transforming American Healthcare</em> — 20 chapters, 6 pillars
+                <em>Transforming Healthcare</em> — 16 chapters, 5 pillars, 1 imperative
               </span>
             </Link>
             <Link
@@ -289,7 +326,7 @@ function ToolsPanel({ onClose }: { onClose: () => void }) {
           <p className={hdr}>Simulators</p>
           <div className="space-y-1">
             {[
-              { href: "/htr-simulator", label: "HTR Simulator", desc: "6-pillar transformation scenario modeler" },
+              { href: "/htr-simulator", label: "HTR Simulator", desc: "5-pillar transformation scenario modeler" },
               { href: "/medicaid-eligibility-simulator", label: "Medicaid Eligibility", desc: "Vermont Medicaid screening — 5 steps" },
               { href: "/impact-simulation", label: "Impact Simulation", desc: "Cross-pillar scenario modeling" },
               { href: "/transformation-friction-index", label: "Friction Index", desc: "Policy complexity vs. operational readiness" },
@@ -899,7 +936,7 @@ const Header = () => {
                 label: "Academy & Learning",
                 emoji: "🎓",
                 children: [
-                  { label: "📖 The Book — Transforming American Healthcare", href: "/book", sub: [] },
+                  { label: "📖 The Book — Transforming Healthcare", href: "/book", sub: [] },
                   { label: "Personalized Learning", href: "/academy/personalized-learning", sub: [] },
                   { label: "Courses", href: "/academy/tracks", sub: [] },
                   { label: "Webinars", href: "/academy/webinars", sub: [] },

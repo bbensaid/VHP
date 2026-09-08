@@ -430,7 +430,7 @@ export default function VermontUHDSPage() {
         <SectionHeader label="Related" title="Continue Your Research" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { href: "/vermont-rht-program", label: "Vermont RHT Program", desc: "The $195M/year federal award funding the care-redesign services the UHDS carries.", color: "border-teal-200 hover:border-teal-400" },
+            { href: "/vermont-rht-program", label: "Vermont RHT Program", desc: "The $195M federal award (over five years) funding the care-redesign services the UHDS carries.", color: "border-teal-200 hover:border-teal-400" },
             { href: "/vermont-act-68", label: "Vermont Act 68", desc: "§10 mandates the clinical + claims + SDOH integration this page describes.", color: "border-rose-200 hover:border-rose-400" },
             { href: "/technology", label: "Technology Pillar", desc: "VHCURES, FHIR, AI governance, and the rest of Vermont's data infrastructure.", color: "border-indigo-200 hover:border-indigo-400" },
           ].map((p) => (

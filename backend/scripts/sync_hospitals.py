@@ -26,8 +26,8 @@ Environment variables (backend/.env):
     SUPABASE_SERVICE_ROLE_KEY
 """
 
-import asyncio
 import argparse
+import asyncio
 import csv
 import io
 import logging

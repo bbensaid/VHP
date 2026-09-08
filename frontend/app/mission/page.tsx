@@ -45,7 +45,7 @@ const values = [
     iconBg: "bg-amber-50",
     border: "border-amber-100",
     title: "Systemic Thinking",
-    body: "A policy that is permissible but economically unsustainable is not a solution. A technology that is possible but clinically ineffective is not progress. We test every insight across all six pillars before it reaches you.",
+    body: "A policy that is permissible but economically unsustainable is not a solution. A technology that is possible but clinically ineffective is not progress. We test every insight across all five pillars, and against the Equity Imperative, before it reaches you.",
   },
   {
     icon: HeartIcon,
@@ -61,7 +61,7 @@ const values = [
     iconBg: "bg-emerald-50",
     border: "border-emerald-100",
     title: "Cross-Disciplinary Collaboration",
-    body: "Policymakers, economists, clinicians, technologists, and equity advocates do not naturally speak the same language. HTR is the translation layer — and we hold the six-pillar standard for every piece of intelligence we publish.",
+    body: "Policymakers, economists, clinicians, technologists, and equity advocates do not naturally speak the same language. HTR is the translation layer — and we hold every piece of intelligence we publish to the five-pillar, one-imperative standard.",
   },
   {
     icon: ChartBarIcon,
@@ -214,7 +214,7 @@ export default function MissionPage() {
 
           <div className="mt-8 bg-white border border-indigo-100 rounded-xl p-6 md:p-8 text-center">
             <p className="text-slate-600 text-base max-w-3xl mx-auto leading-relaxed">
-              A policy intervention that passes question one but fails questions three, four, five, or six is not a solution — it is a well-intentioned mistake waiting to be made. HTR&rsquo;s editorial standard requires that every analysis we publish has been interrogated across all six dimensions.
+              A policy intervention that passes question one but fails questions three, four, or five is not a solution — it is a well-intentioned mistake waiting to be made. HTR&rsquo;s editorial standard requires that every analysis we publish has been interrogated across all five pillars and the Equity Imperative.
             </p>
           </div>
         </div>

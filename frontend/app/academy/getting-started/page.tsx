@@ -213,7 +213,7 @@ export default function GettingStartedPage() {
               { label: "HTR Connect (community)", url: "/connect" },
               { label: "Advisory Hub", url: "/advisory-hub" },
               { label: "Global Search", url: "/search" },
-              { label: "Six-Pillar Framework", url: "/about/framework" },
+              { label: "Five-Pillar Framework", url: "/about/framework" },
               { label: "Account & Subscription", url: "/account" },
               { label: "FAQ", url: "/faq" },
             ].map(({ label, url }) => (

@@ -6,8 +6,11 @@ Supabase client singleton.
 
 import logging
 from typing import Optional
-from supabase import create_client as create_supabase_client, Client as SupabaseClient
-from config import SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
+
+from supabase import Client as SupabaseClient
+from supabase import create_client as create_supabase_client
+
+from config import SUPABASE_SERVICE_ROLE_KEY, SUPABASE_URL
 
 log = logging.getLogger("htr-brain")
 

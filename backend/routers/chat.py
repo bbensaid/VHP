@@ -8,33 +8,40 @@ backend/routers/chat.py
 import asyncio
 import json
 import logging
-from typing import Optional, List
+from typing import List, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import StreamingResponse
+from llama_index.core.agent import ReActAgent
+from llama_index.core.chat_engine import ContextChatEngine
+from llama_index.core.llms import ChatMessage, MessageRole
+from llama_index.core.memory import ChatMemoryBuffer
+from llama_index.core.postprocessor import (
+    MetadataReplacementPostProcessor as MetadataReplacementNodePostprocessor,
+)
+from llama_index.core.schema import NodeWithScore, QueryBundle
+from llama_index.llms.groq import Groq as GroqLLM
 from pydantic import BaseModel, field_validator
 
-from llama_index.core.memory import ChatMemoryBuffer
-from llama_index.core.llms import ChatMessage, MessageRole
-from llama_index.core.postprocessor import MetadataReplacementPostProcessor as MetadataReplacementNodePostprocessor
-from llama_index.core.schema import QueryBundle, NodeWithScore
-from llama_index.core.chat_engine import ContextChatEngine
-from llama_index.core.agent import ReActAgent
-from llama_index.llms.groq import Groq as GroqLLM
-
+from config import GROQ_API_KEY, MAX_SYSTEM_PROMPT_LEN, MODEL_FREE, MODEL_SUBSCRIBER
+from platform_catalog import BASE_URL as DEFAULT_BASE_URL
 from services.auth import AuthedUser, require_subscriber
-from services.db import get_supabase
-from services.llm import get_llm_for_role, get_ranker
-from services.retrieval import HybridRetriever, StaticNodeRetriever, rerank_nodes, extract_citations, boost_vermont_nodes
-from services.tools import ALL_TOOLS
-from config import MODEL_FREE, MODEL_SUBSCRIBER, GROQ_API_KEY, MAX_SYSTEM_PROMPT_LEN
-from platform_catalog import HTR_TOOLS_CATALOG_TEXT, BASE_URL
 from services.catalog_search import (
-    find_relevant_tools_semantic,
-    format_tool_hint,
-    find_tools_for_query,
     build_guaranteed_lab_section,
+    find_relevant_tools_semantic,
+    find_tools_for_query,
+    format_tool_hint,
 )
+from services.db import get_supabase
+from services.llm import get_llm_for_role
+from services.retrieval import (
+    HybridRetriever,
+    StaticNodeRetriever,
+    boost_vermont_nodes,
+    extract_citations,
+    rerank_nodes,
+)
+from services.tools import ALL_TOOLS
 
 # Roles that get the full agentic (ReAct) pipeline
 AGENTIC_ROLES = {"professional", "advisory", "admin"}
@@ -44,6 +51,43 @@ VALID_PILLARS = {"policy", "economics", "technology", "clinical", "equity"}
 
 # Pillar tag used on all Medicaid eligibility chunks (set by medicaid_parser.py)
 MEDICAID_PILLAR = "Medicaid Eligibility"
+
+# ── Brand-aware URL rebasing ───────────────────────────────────────────────────
+# The platform serves four domains from one deployment (see frontend/lib/brand.ts).
+# All backend URL literals are written against DEFAULT_BASE_URL; when the Next.js
+# proxy forwards the requesting domain via X-HTR-Host, every URL surface that
+# reaches the user (system prompt, lab section, citations) is rebased to it, so
+# a healthtransformationsolutions.* visitor never gets .review links.
+
+# Mirror of ACCESS_DOMAINS in frontend/lib/brand.ts (the canonical list — Python
+# cannot import it). A new/renamed domain must be added in both places.
+_BRAND_HOSTS = {
+    "healthtransformationreview.org",
+    "healthtransformationreview.com",
+    "healthtransformationsolutions.org",
+    "healthtransformationsolutions.com",
+}
+
+
+def resolve_base_url(fastapi_request: Request) -> str:
+    """Base URL for the requesting brand domain; DEFAULT_BASE_URL if unknown."""
+    raw = fastapi_request.headers.get("x-htr-host", "")
+    host = raw.lower().strip().split(":")[0].removeprefix("www.")
+    if host in _BRAND_HOSTS:
+        return f"https://{host}"
+    if host and not host.endswith(("localhost", ".local")):
+        # Surface a missed domain in logs on the first request, not in a user report
+        log.warning(f"X-HTR-Host {raw!r} not in _BRAND_HOSTS — falling back to {DEFAULT_BASE_URL}")
+    return DEFAULT_BASE_URL
+
+
+def rebase_urls(text: str, base_url: str) -> str:
+    """Rewrite DEFAULT_BASE_URL links (and bare-domain mentions) onto the requesting domain."""
+    if base_url == DEFAULT_BASE_URL or not text:
+        return text
+    default_host = DEFAULT_BASE_URL.removeprefix("https://")
+    new_host = base_url.removeprefix("https://")
+    return text.replace(DEFAULT_BASE_URL, base_url).replace(default_host, new_host)
 
 log = logging.getLogger("htr-brain")
 router = APIRouter()
@@ -337,6 +381,7 @@ def _get_llm_for_medicaid(user: "AuthedUser"):
     """
     if user.role in ("free", "student"):
         from llama_index.llms.groq import Groq as GroqLLM
+
         from services.llm import FallbackLLM
         sub_llm  = GroqLLM(model=MODEL_SUBSCRIBER, api_key=GROQ_API_KEY)
         fast_llm = GroqLLM(model=MODEL_FREE,        api_key=GROQ_API_KEY)
@@ -440,6 +485,7 @@ async def _persist_conversation_turn(
 @router.post("/api/chat")
 async def chat(
     request: ChatRequest,
+    fastapi_request: Request,
     user: AuthedUser = Depends(require_subscriber),
 ):
     """
@@ -530,6 +576,19 @@ async def chat(
             f"If the question is directly about the entity or topic on this page, "
             f"lead with that specific information before broadening your answer.\n\n"
             + system_prompt
+        )
+
+    # Rebase every URL the LLM will see onto the requesting brand domain, so its
+    # generated links match the site the user is on (resolved once, outside the
+    # async generator — see closure notes above). On the solutions brand, also
+    # align the platform's display name in the identity sentence with the site
+    # the user is actually on (HTR remains the shared ecosystem abbreviation).
+    _base_url = resolve_base_url(fastapi_request)
+    system_prompt = rebase_urls(system_prompt, _base_url)
+    if "healthtransformationsolutions" in _base_url:
+        system_prompt = system_prompt.replace(
+            "Health Transformation Review (HTR)",
+            "Health Transformation Solutions (HTR)",
         )
 
     async def generate():
@@ -635,19 +694,23 @@ async def chat(
             full_text = "".join(full_response)
             lab_marker = "🔬 TRY IT IN THE HTR LAB"
             if lab_marker in full_text:
-                # LLM produced a lab section — strip it, we'll replace it
-                cut = full_text.find(lab_marker)
-                # Yield a marker so the frontend knows to erase back to here
-                # (We use a simple sentinel the frontend already knows: overwrite via stream)
-                # Since we can't retract already-streamed tokens, we yield a correction sentinel
-                # that the frontend strips, then yield the correct section.
+                # We can't retract already-streamed tokens; emit a sentinel the
+                # frontend strips (see app/chat/page.tsx), then yield the
+                # authoritative section below.
                 yield "\n\n[STRIP_LAB]"
-            lab_section = build_guaranteed_lab_section(_guaranteed_tools)
+            lab_section = rebase_urls(build_guaranteed_lab_section(_guaranteed_tools), _base_url)
             yield lab_section
             full_response.append(lab_section)
 
         if citations:
-            citations_json = json.dumps(citations, ensure_ascii=False)
+            # Rebase only the url field of each citation — titles and snippets are
+            # corpus text and must not be rewritten.
+            rebased_citations = [
+                {**c, "url": rebase_urls(c["url"], _base_url)}
+                if isinstance(c.get("url"), str) else c
+                for c in citations
+            ]
+            citations_json = json.dumps(rebased_citations, ensure_ascii=False)
             yield f"\n\n[CITATIONS]{citations_json}[/CITATIONS]"
 
         if supabase and user.user_id != "dev":

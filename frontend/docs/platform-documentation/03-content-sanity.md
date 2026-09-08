@@ -1,6 +1,6 @@
 # 03 — Content Creation: Sanity CMS
 
-> **Verified against:** `frontend/sanity/sanity.config.ts`, `frontend/sanity/schemaTypes/*` (all 22 schema types), `frontend/app/api/webhooks/sanity/route.ts`, `frontend/lib/sanity-fetch.ts`.
+> **Verified against:** `frontend/sanity/sanity.config.ts`, `frontend/sanity/schemaTypes/*` (all 21 schema types), `frontend/app/api/webhooks/sanity/route.ts`, `frontend/lib/sanity-fetch.ts`.
 
 Sanity is where **all editorial content** lives. This document is the working manual for editors and authors.
 

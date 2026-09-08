@@ -1054,17 +1054,41 @@ def add_cover():
     GRAY = RGBColor(0x55,0x55,0x55)
     BLACK = RGBColor(0x1A,0x1A,0x1A)
 
-    # locate the five leading title-block paragraphs by content
+    # Locate the leading title-block paragraphs by POSITION, not by their text.
+    # These used to be matched on literal strings ('transforming american
+    # healthcare', 'a six-pillar', 'with vermont'). v46 retitled the book to
+    # "TRANSFORMING HEALTHCARE" with a five-pillar subtitle, so every matcher
+    # silently missed and the cover shipped as unstyled body text. The title
+    # block is simply whatever precedes the first heading: title, then any
+    # subtitles, then the byline, then an optional date/edition line.
     title=sub1=sub2=author=edition=None
+    block=[]
     for p in doc.paragraphs[:12]:
-        tl = p.text.strip()
-        low = tl.lower()
-        if not tl: continue
-        if 'transforming american healthcare' in low and title is None: title=p
-        elif low.startswith('a six-pillar') and sub1 is None: sub1=p
-        elif low.startswith('with vermont') and sub2 is None: sub2=p
-        elif ('bechir' in low or low.startswith('health transformation review')) and author is None: author=p
-        elif ('edition' in low or 'april 2026' in low) and edition is None: edition=p
+        if p.style.name.startswith('Heading'):
+            break
+        if p.text.strip():
+            block.append(p)
+
+    def _is_author(p):
+        low = p.text.strip().lower()
+        return 'bechir' in low or low.startswith('health transformation review')
+
+    def _is_edition(p):
+        low = p.text.strip().lower()
+        return bool(re.search(r'\bedition\b', low) or
+                    re.match(r'^[a-z]+ \d{4}$', low))
+
+    if block:
+        title = block[0]
+        rest = block[1:]
+        for p in list(rest):
+            if author is None and _is_author(p):
+                author = p; rest.remove(p)
+            elif edition is None and _is_edition(p):
+                edition = p; rest.remove(p)
+        # whatever is left between the title and the byline is subtitle text
+        if len(rest) > 0: sub1 = rest[0]
+        if len(rest) > 1: sub2 = rest[1]
 
     if title is not None:
         title.alignment = WD_ALIGN_PARAGRAPH.LEFT

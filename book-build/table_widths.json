@@ -10,19 +10,43 @@
   2268,
   2268
  ],
+ "Policy|Yes \u2014 Act 68 makes global budgets binding on every hospital, ending the opt-out that sank the voluntary OneCare m": [
+  1839,
+  7233
+ ],
  "Sequencing Gap|Structural Error|Direct Consequence|Cascade Effect": [
   1335,
   2250,
   2325,
   3150
  ],
- "Pillar|Diagnostic question|Structural role in the system|What it produces when functioning": [
-  1215,
-  1425,
-  3360,
-  3090
+ "Policy|Is it |permissible? \u2014 the| mandate that makes reform non-optional.": [
+  1839,
+  7233
  ],
- "6|Pillars, All Required|15|Dependency Relationships|6|Failure Cascade Patterns|1|Pillar Missing = System Fails": [
+ "Policy|Permissible \u2014 and does the mandate close disparities or widen them?": [
+  1640,
+  7432
+ ],
+ "Diagnostic|Interactive five-pillar diagnostic \u2014 score any initiative against |the five questions and the Equity |Imperat": [
+  1839,
+  7233
+ ],
+ "Pillar|Diagnostic question|Structural role in the system|What it produces when functioning": [
+  2265,
+  2265,
+  2266,
+  2266
+ ],
+ "FROM |\u2193  /|  TO \u2192|Policy|Technology|Economics|Clinical|Operations": [
+  1510,
+  1510,
+  1510,
+  1510,
+  1511,
+  1511
+ ],
+ "5|Pillars, All Required|9|Dependency Relationships|5|Failure Cascade Patterns|1|Pillar Missing = System Fails": [
   2268,
   2268,
   2268,
@@ -70,13 +94,13 @@
   1501,
   3754
  ],
- "9 of 14|Hospitals in Loss FY2023|$2.4B|5-Year Deficit Projection|108%|Premium Increase 2018-2024|57%|Growth in 65+ by 20": [
+ "9 of 14|Hospitals in Loss FY2023|$2.4B|5-Year Deficit Projection|108%|Premium Increase 2018\u20132024|57%|Growth in 65+ by 20": [
   2268,
   2268,
   2268,
   2268
  ],
- "Common perception|What the data actually shows": [
+ "Common perception|What the data |actually shows": [
   2625,
   6450
  ],
@@ -146,7 +170,7 @@
   4455,
   4605
  ],
- "FHIR compliance level|Vermont providers and current status": [
+ "FHIR compliance level|Vermont providers and |current status": [
   2550,
   6525
  ],
@@ -215,19 +239,6 @@
   4536,
   4536
  ],
- "Jan 2028|AHEAD Cohort 2 Launches|$150M/yr|EAST Fund for Vermont|9 Years|Model Duration to 2035|3-Payer|Medicare + Medica": [
-  2268,
-  2268,
-  2268,
-  2268
- ],
- "Payer layer|% of VT insured pop.|Payment mechanism|Effective date|Governing authority": [
-  1528,
-  1232,
-  2958,
-  1824,
-  1528
- ],
  "Scenario|Assumptions and 5-year system deficit": [
   1680,
   7380
@@ -236,7 +247,7 @@
   2805,
   6270
  ],
- "Source of direct savings (5-year total)|Estimate": [
+ "Source of |Direct &amp; indirect savings| (5-year total)|Estimate": [
   7955,
   1116
  ],
@@ -288,7 +299,7 @@
   4536,
   4536
  ],
- "CoCM component|Role|What they do|Vermont application": [
+ "CoCM| component|Role|What they do|Vermont application": [
   1620,
   1125,
   2970,
@@ -322,7 +333,7 @@
   3435,
   3915
  ],
- "CoCM Component|Role|What they do|Vermont application": [
+ "CoCM| Component|Role|What they do|Vermont application": [
   1650,
   1260,
   2925,
@@ -398,7 +409,7 @@
   2268,
   2268
  ],
- "Measure|VT Current|Benchmark (75th pctile)|Gap|Act 167 Goal": [
+ "Measure|VT Current|Benchmark (75th |pctile|)|Gap|Act 167 Goal": [
   3556,
   612,
   1409,
@@ -442,7 +453,7 @@
   5916
  ],
  "Kotter step|Original formulation|Healthcare adaptation|Vermont application": [
-  1183,
+  1182,
   2629,
   2629,
   2629
@@ -600,10 +611,6 @@
   1555,
   1140
  ],
- "AHEAD provision|Vermont-specific terms": [
-  3628,
-  5443
- ],
  "Metric|2022 baseline|2026 status|2028 target|Source": [
   1240,
   1899,
@@ -626,10 +633,5 @@
   4775,
   1830,
   1671
- ],
- "Date|Act 68 (State / Commercial &amp; Medicaid)|AHEAD Cohort 2 (Federal / Medicare)": [
-  1125,
-  3973,
-  3973
  ]
 }

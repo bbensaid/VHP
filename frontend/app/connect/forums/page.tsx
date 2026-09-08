@@ -2,7 +2,7 @@ import ConnectEarlyAccess from '@/components/connect/ConnectEarlyAccess'
 
 export const metadata = {
   title: 'Join a Pillar Circle | HTR Connect',
-  description: 'Join an HTR Connect Pillar Circle — moderated asynchronous discussion forums organized by the Six-Pillar Framework, with HTR expert responses within 48 hours.',
+  description: 'Join an HTR Connect Pillar Circle — moderated asynchronous discussion forums organized by the Five-Pillar Framework, with HTR expert responses within 48 hours.',
 }
 
 export default function ForumsPage() {

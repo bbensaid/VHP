@@ -188,7 +188,7 @@ export default function OperationsPage() {
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
           <Link href="/about/framework" className="inline-flex items-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-teal-700 transition-colors">
-            Our Six-Pillar Framework →
+            Our Five-Pillar Framework →
           </Link>
           <Link href="/htr-simulator" className="inline-flex items-center gap-2 bg-white text-slate-900 border border-slate-200 px-6 py-3 rounded-lg font-bold hover:bg-slate-50 transition-colors">
             HTR Simulator

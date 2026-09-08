@@ -7,7 +7,7 @@ export type { NarrationTrack } from "@/lib/narration";
 export const metadata = {
   title: "Listen | The Book | HTR",
   description:
-    "Audio narration of Transforming American Healthcare — Preface, Introduction, and all 20 chapters. Roughly ten minutes per chapter.",
+    "Audio narration of Transforming Healthcare — Preface, Introduction, and all 16 chapters. Roughly ten minutes per chapter.",
 };
 
 export default function BookListenPage() {
@@ -23,7 +23,7 @@ export default function BookListenPage() {
           Listen
         </h1>
         <p className="text-base text-slate-600 leading-relaxed max-w-3xl">
-          Audio narration of <em>Transforming American Healthcare</em>. Roughly ten minutes per chapter. Each track is a faithful summary of the chapter, designed to be heard while you drive, walk, or work alongside the rest of the platform.
+          Audio narration of <em>Transforming Healthcare</em>. Roughly ten minutes per chapter. Each track is a faithful summary of the chapter, designed to be heard while you drive, walk, or work alongside the rest of the platform.
         </p>
       </div>
 

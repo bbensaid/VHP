@@ -3,8 +3,8 @@ import { defineConfig, devices } from "@playwright/test";
 /**
  * Smoke-test configuration. Hits the top 10 routes against a local Next.js
  * server, asserts each renders without crashing, and verifies the expected
- * H1 / page title. The beta cookie is set globally so middleware doesn't
- * redirect every request to /beta.
+ * H1 / page title. The beta cookie is set globally so the beta gate in
+ * app/layout.tsx doesn't render the gate page for every request.
  *
  * Run locally:
  *     npx playwright install --with-deps chromium   # first time only
@@ -15,6 +15,12 @@ import { defineConfig, devices } from "@playwright/test";
  *     The GitHub Action installs Playwright + Chromium, builds the app,
  *     starts the server, and runs the suite.
  */
+// Derive the beta-cookie host from the target URL so runs against a preview
+// or production URL are gated correctly, not silently shown the gate page.
+// (Mirrors normalizeHost in lib/brand.ts: URL.hostname already excludes the port.)
+const BASE_URL = process.env.PLAYWRIGHT_BASE_URL ?? "http://localhost:3000";
+const BASE_HOST = new URL(BASE_URL).hostname.replace(/^www\./, "");
+
 export default defineConfig({
   testDir: "./e2e",
   timeout: 30_000,
@@ -25,18 +31,20 @@ export default defineConfig({
   reporter: process.env.CI ? "github" : "list",
 
   use: {
-    baseURL: process.env.PLAYWRIGHT_BASE_URL ?? "http://localhost:3000",
+    baseURL: BASE_URL,
     trace: "on-first-retry",
     // The platform is beta-gated; ship the cookie with every test so we
-    // don't bounce to /beta. The HTR backend code reads `htr_beta=granted`
-    // (see middleware.ts).
+    // don't get the gate page. app/layout.tsx only honors the domain-scoped
+    // format "granted:<host>" (host per lib/brand.ts normalizeHost — port
+    // stripped). A bare "granted" is treated as a legacy cookie and
+    // re-prompts at the gate.
     extraHTTPHeaders: {},
     storageState: {
       cookies: [
         {
           name: "htr_beta",
-          value: "granted",
-          domain: "localhost",
+          value: `granted:${BASE_HOST}`,
+          domain: BASE_HOST,
           path: "/",
           httpOnly: false,
           secure: false,

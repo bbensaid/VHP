@@ -1,0 +1,106 @@
+{
+  "id": "lesson_5p_single_pillar",
+  "trackId": "track_5p_foundations",
+  "pillar": "general",
+  "order": 1,
+  "slug": "why-single-pillar-thinking-fails",
+  "title": "Why Single-Pillar Thinking Fails",
+  "summary": "Fifteen years of federal payment and delivery reform show the same pattern: interventions that touch only one part of the system run into constraints created by the parts they ignore. This lesson builds the case for treating transformation as a system problem.",
+  "estimatedMinutes": 20,
+  "isPublished": true,
+  "tags": ["five-pillar-framework", "cmmi", "systems-thinking", "healthcare-reform"],
+  "relatedLessonIds": [],
+  "createdAt": "2026-09-07T00:00:00Z",
+  "updatedAt": "2026-09-07T00:00:00Z",
+  "objectives": [
+    { "id": "obj_5p1", "text": "Explain why single-pillar interventions in CMMI's model portfolio ran into constraints created by the pillars they ignored" },
+    { "id": "obj_5p2", "text": "State CMMI's actual track record: how many models were tested, how many met the bar for nationwide expansion, and the net budgetary result" },
+    { "id": "obj_5p3", "text": "Identify which pillar an intervention addresses and predict what happens when the others are left unaddressed" }
+  ],
+  "contentBlocks": [
+    {
+      "type": "text",
+      "heading": "A fifteen-year natural experiment",
+      "body": "In 2010, the Affordable Care Act created the Center for Medicare and Medicaid Innovation (CMMI) with a mandate to test new payment and delivery models and scale what worked. Over the next fifteen years, CMMI ran the largest natural experiment in American healthcare reform: dozens of models, billions of dollars, thousands of participating organizations, each testing a theory of what would fix the system.\n\nThe results are unusually well documented, because CMMI models are evaluated against the same statutory bar: does the model improve quality without increasing spending, reduce spending without reducing quality, or do both? A model that clears that bar is eligible for nationwide expansion. That is a clean, falsifiable test — and it produced a clear pattern."
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        { "value": "70", "label": "Models CMMI tested, 2011–2024", "source": "GAO" },
+        { "value": "4", "label": "Models that met the bar for nationwide expansion", "source": "GAO" },
+        { "value": "$7.9B", "label": "Spent by CMMI to operate its models", "source": "CBO, Sept. 2023" },
+        { "value": "$5.4B", "label": "Net increase in federal spending, 2011–2020", "source": "CBO, Sept. 2023" }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Not a failure of effort — a failure of scope",
+      "body": "Read that scorecard carefully before drawing the wrong conclusion. It is not that payment reform doesn't work, or that CMMI wasted fifteen years. It's that the models were, almost without exception, narrow. Each one addressed a single part of the system while leaving the others unchanged — and the parts left unchanged determined the outcome.\n\nModels that changed only what Medicare paid, without changing how care was delivered or whether providers had the infrastructure to respond, generated financial pressure with no behavioral change to show for it. Models that redesigned care coordination produced real clinical improvements — that the payment system then penalized, because better coordination usually means fewer billable services. Models that required new technology — EHRs, population health platforms, data exchange — ran into providers who had the tool but not the operational capacity to use it.\n\nEach of these is a single-pillar intervention hitting a constraint created by a different pillar. That is the pattern this course exists to name and to fix."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "heading": "The diagnostic test",
+      "body": "For any transformation initiative — a CMMI model, a state Medicaid waiver, a hospital's own value-based care strategy — ask five questions: Is it permissible (Policy)? Is it possible (Technology)? Is it sustainable (Economics)? Is it effective (Clinical)? Is it executable (Operations)? An initiative that fails even one of these questions will underperform regardless of how well it answers the others."
+    },
+    {
+      "type": "text",
+      "heading": "The Equity Imperative is not a sixth question",
+      "body": "There is a sixth question running underneath all five: is it just? Does the answer hold up the same way for a rural Medicaid patient as it does for an urban commercially-insured one? This is not a separate pillar competing for its own resources and its own success metric — it is a test applied to each of the five. A payment model can be permissible, possible, sustainable, effective, and executable, and still fail if it improves the average while widening the gap between the best-served and worst-served populations. You will see this Equity Imperative applied concretely, pillar by pillar, in Track 7 of this course and in Chapter 10 of the book."
+    },
+    {
+      "type": "comparison_table",
+      "heading": "What CMMI's pattern predicts",
+      "rows": [
+        { "label": "Economics only", "left": "Payment changes, delivery doesn't", "right": "Financial pressure with no behavior change" },
+        { "label": "Clinical only", "left": "Care coordination improves", "right": "Payment system penalizes the volume reduction" },
+        { "label": "Technology only", "left": "New systems deployed", "right": "Providers lack operational capacity to use them" },
+        { "label": "All five, in sequence", "left": "Mandate → data → incentive → care redesign → execution", "right": "Each stage removes the constraint blocking the next" }
+      ]
+    }
+  ],
+  "quiz": {
+    "id": "quiz_5p_single_pillar",
+    "passingScore": 75,
+    "shuffleOptions": true,
+    "questions": [
+      {
+        "id": "q_5p1",
+        "type": "single_choice",
+        "question": "Of the 70 CMMI models tested from 2011–2024, how many met the statutory bar for nationwide expansion?",
+        "points": 1,
+        "explanation": "GAO found only 4 of 70 tested models — about 5.7% — met the criteria of improving quality without raising spending, reducing spending without harming quality, or both.",
+        "options": [
+          { "id": "opt_5p1a", "text": "4", "isCorrect": true },
+          { "id": "opt_5p1b", "text": "25", "isCorrect": false, "explanation": "Well above the actual count — this overstates CMMI's success rate." },
+          { "id": "opt_5p1c", "text": "35 (half)", "isCorrect": false, "explanation": "Far above the actual figure." },
+          { "id": "opt_5p1d", "text": "0", "isCorrect": false, "explanation": "Close to the real picture in spirit, but four models did clear the statutory bar." }
+        ]
+      },
+      {
+        "id": "q_5p2",
+        "type": "single_choice",
+        "question": "A model redesigns care coordination and produces measurable clinical improvement, but participating providers lose revenue because they deliver fewer billable services. Which pillar was left unaddressed?",
+        "points": 1,
+        "explanation": "This is the Economics pillar failing to align with a Clinical-pillar intervention — the payment system still rewards volume, so better coordination is financially self-defeating.",
+        "options": [
+          { "id": "opt_5p2a", "text": "Economics — the payment model wasn't changed to match the new care model", "isCorrect": true },
+          { "id": "opt_5p2b", "text": "Technology — the EHR wasn't upgraded", "isCorrect": false, "explanation": "The scenario describes a payment misalignment, not a technology gap." },
+          { "id": "opt_5p2c", "text": "Operations — the providers weren't trained", "isCorrect": false, "explanation": "The care improvement did happen; the problem is what the payment system did in response." },
+          { "id": "opt_5p2d", "text": "Policy — there was no legislative mandate", "isCorrect": false, "explanation": "This scenario is about incentive alignment, not the presence of a mandate." }
+        ]
+      },
+      {
+        "id": "q_5p3",
+        "type": "true_false",
+        "question": "The Equity Imperative functions as a sixth pillar, scored and resourced alongside the other five.",
+        "points": 1,
+        "explanation": "The Equity Imperative is a cross-cutting test — 'is it just?' — applied to each of the five pillars, not a sixth item competing with them for its own budget line.",
+        "options": [
+          { "id": "opt_5p3a", "text": "False", "isCorrect": true },
+          { "id": "opt_5p3b", "text": "True", "isCorrect": false, "explanation": "This is the exact misreading this course is designed to correct." }
+        ]
+      }
+    ]
+  }
+}

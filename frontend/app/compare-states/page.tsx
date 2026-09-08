@@ -6,7 +6,7 @@ import { getPillar } from "@/lib/taxonomy";
 export const metadata = {
   title: "Compare States | HTR",
   description:
-    "Vermont, Oregon, and California side-by-side: the three transformation archetypes from Chapter 17 of Transforming American Healthcare.",
+    "Vermont, Oregon, and California side-by-side: the three transformation archetypes from Transforming Healthcare.",
 };
 
 const VERDICT_CHIP: Record<NonNullable<ComparisonCell["verdict"]>, string> = {

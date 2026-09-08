@@ -343,7 +343,7 @@ def query_vermont_hospital_financials(hospital_name: str) -> str:
         f"- **Projected 2028 Loss** (5% expense growth): ${h['projected_loss_2028_m']}M",
         f"- **FY2025 Budget Request Increase**: ${h['fy2025_budget_request_increase_m']}M",
         f"- **Strategic Context**: {h['note']}",
-        f"\n🔗 [Act 167 Simulator](/vermont-act-167/simulator) · [Bed Capacity Tool](/bed-capacity)",
+        "\n🔗 [Act 167 Simulator](/vermont-act-167/simulator) · [Bed Capacity Tool](/bed-capacity)",
     ])
 
 
@@ -585,7 +585,7 @@ def query_act167_recommendations(hospital_name: str) -> str:
     else:
         lines.append(f"*{fin['note']}*")
 
-    lines.append(f"\n🔗 [Act 167 Simulator](/vermont-act-167/simulator)")
+    lines.append("\n🔗 [Act 167 Simulator](/vermont-act-167/simulator)")
     return "\n".join(lines)
 
 

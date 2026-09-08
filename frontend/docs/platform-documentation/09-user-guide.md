@@ -1,6 +1,6 @@
 # 09 — User Guide & Usability
 
-> **Verified against:** `frontend/app/*` routes, `frontend/components/{CommandPalette,VoiceContext,VoiceFab,Header,HomeSidebar,RightSidebar,AppShell}.tsx`, `frontend/app/pricing/page.tsx`, `frontend/app/research-lab/*`. Companion: `training/` user-guides & feature-guides.
+> **Verified against:** `frontend/app/*` routes, `frontend/components/{CommandPalette,VoiceContext,Header,HomeSidebar,RightSidebar,AppShell}.tsx`, `frontend/app/pricing/page.tsx`, `frontend/app/research-lab/*`. Companion: `training/` user-guides & feature-guides.
 
 This is the end-user manual. It explains what the platform does and how to use every major feature, written for clinicians, executives, policy analysts, investors, and researchers.
 

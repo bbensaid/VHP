@@ -151,7 +151,7 @@ async def update_bed_capacity(
             update_data[field] = val
 
     try:
-        res = supabase.table("vt_bed_capacity").upsert(update_data, on_conflict="hospital_id").execute()
+        supabase.table("vt_bed_capacity").upsert(update_data, on_conflict="hospital_id").execute()
         log.info(f"Bed capacity updated: {hospital_id} by {user.sub}")
 
         # Check if this update triggers a critical alert and write it

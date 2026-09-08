@@ -5,11 +5,13 @@ JWT-based Supabase auth: user extraction and role-gating FastAPI dependencies.
 """
 
 import logging
+
 import jwt
 from fastapi import HTTPException, Request
 from pydantic import BaseModel
-from services.db import get_supabase
+
 from config import SUPABASE_JWT_SECRET
+from services.db import get_supabase
 
 log = logging.getLogger("htr-brain")
 

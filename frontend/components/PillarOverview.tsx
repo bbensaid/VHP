@@ -4,7 +4,7 @@ import LatestHubReports from "@/components/LatestHubReports";
 import FromTheBookForPillar from "@/components/FromTheBookForPillar";
 import CoursesInPillar from "@/components/CoursesInPillar";
 import RelatedEditorial from "@/components/RelatedEditorial";
-import { getPillar, type PillarId } from "@/lib/taxonomy";
+import { getPillar, type FrameworkId } from "@/lib/taxonomy";
 import { PILLAR_OVERVIEW } from "@/lib/data/pillar-topics";
 
 /**
@@ -23,7 +23,7 @@ import { PILLAR_OVERVIEW } from "@/lib/data/pillar-topics";
  */
 
 interface Props {
-  pillarId: PillarId;
+  pillarId: FrameworkId;
   /** Optional extra content rendered between FromTheBook and the topic grid. */
   children?: React.ReactNode;
 }

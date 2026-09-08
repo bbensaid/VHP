@@ -407,7 +407,7 @@ A Python script that generated the AI in Healthcare course JSON. Not intended fo
 
 ## Course Catalog (Current)
 
-As of May 2026: **9 courses, 55 tracks, 154 lessons** seeded in Supabase.
+As of August 2026: **15 courses, 243 lessons** live in Supabase (229 with rich Sanity-backed content — run `node frontend/scripts/audit-courses.mjs` for the current per-course table). An earlier snapshot said 9 courses / 154 lessons; Tier 3 has since shipped.
 
 | Slug | Title | Tracks | Lessons | Pillar | Level |
 |------|-------|--------|---------|--------|-------|
@@ -421,7 +421,7 @@ As of May 2026: **9 courses, 55 tracks, 154 lessons** seeded in Supabase.
 | `medicare-fundamentals` | Medicare Fundamentals | 5 | 12 | policy | foundational |
 | `behavioral-health-integration` | Behavioral Health Integration | 6 | 13 | clinical | intermediate |
 
-### Planned (Tier 3)
+### Tier 3 (shipped — content in `frontend/content/courses_tier3.json`)
 - Revenue Cycle Management (`revenue-cycle-management`)
 - Hospital Finance & Accounting (`hospital-finance`)
 - Clinical Quality Measurement (`clinical-quality`)

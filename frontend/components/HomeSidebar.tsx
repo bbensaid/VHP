@@ -36,7 +36,8 @@ import {
   PROGRAM_GROUPS,
   getTool,
   type Pillar,
-  type PillarId,
+  type FrameworkId,
+  EQUITY_IMPERATIVE,
 } from "@/lib/taxonomy";
 import { useBrand } from "@/components/BrandContext";
 
@@ -91,7 +92,7 @@ type Section = {
 // and accent classes come from lib/taxonomy/pillars.ts. The lab tool details
 // (label, href) come from lib/taxonomy/tools.ts via id lookup.
 
-const PILLAR_ICON: Record<PillarId, React.ComponentType<{ className?: string }>> = {
+const PILLAR_ICON: Record<FrameworkId, React.ComponentType<{ className?: string }>> = {
   policy: BuildingLibraryIcon,
   economics: BanknotesIcon,
   technology: CpuChipIcon,
@@ -105,7 +106,7 @@ interface PillarSidebarConfig {
   labToolIds: string[];
 }
 
-const PILLAR_CONFIG: Record<PillarId, PillarSidebarConfig> = {
+const PILLAR_CONFIG: Record<FrameworkId, PillarSidebarConfig> = {
   policy: {
     intelligenceItems: [
       { href: "/policy/regulation",  label: "Regulation & Legislation" },
@@ -258,6 +259,9 @@ function buildProgramsSection(): Section {
 const SECTIONS: Section[] = [
   // Pillar sections — generated from taxonomy
   ...PILLARS.map(buildPillarSection),
+  // The Equity Imperative follows the five pillars rather than sitting among
+  // them — it is the cross-cutting test applied to each, not a sixth pillar.
+  buildPillarSection(EQUITY_IMPERATIVE),
 
   // ── ACADEMY ────────────────────────────────────────────────────────────────
   {
@@ -288,7 +292,7 @@ const SECTIONS: Section[] = [
     borderAccent: "border-amber-500", hoverBg: "hover:bg-amber-100",
     divideColor: "divide-amber-100", activeItemBg: "bg-amber-100",
     items: [
-      { href: "/about/framework",                label: "Six-Pillar Map",       icon: BeakerIcon },
+      { href: "/about/framework",                label: "Five-Pillar Map",       icon: BeakerIcon },
       { href: "/htr-simulator",                  label: "HTR Simulator",       icon: CpuChipIcon },
       { href: "/medicaid-eligibility-simulator", label: "Medicaid Eligibility", icon: DocumentTextIcon },
       { href: "/hti-dashboard",                  label: "HTI Dashboard",       icon: TableCellsIcon },

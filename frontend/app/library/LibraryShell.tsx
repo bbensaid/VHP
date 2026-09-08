@@ -339,7 +339,7 @@ function ChaptersSection({ items }: { items: Bookmark[] }) {
       <EmptyState
         icon={BookOpenIcon}
         title="No saved chapters yet"
-        description={`Open a chapter of "Transforming American Healthcare" and tap the bookmark icon to save it here.`}
+        description={`Open a chapter of "Transforming Healthcare" and tap the bookmark icon to save it here.`}
         ctaLabel="Read the Book"
         ctaHref="/book"
       />

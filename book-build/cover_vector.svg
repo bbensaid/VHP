@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<rect width="1000" height="1000" fill="#ffffff"/>
+<defs>
+<marker id="ah-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#679B95"/></marker>
+<marker id="ah-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#BBA472"/></marker>
+<marker id="ah-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#C4634F"/></marker>
+<marker id="ah-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#2B2B2B"/></marker>
+</defs>
+<circle cx="500.0" cy="500.0" r="452.0" fill="none" stroke="#C4634F" stroke-width="3.2" opacity="0.9"/>
+<circle cx="500.0" cy="500.0" r="442.0" fill="none" stroke="#C4634F" stroke-width="1.4" opacity="0.45"/>
+<path id="eq-top" fill="none" d="M 53.0,500.0 A 447.0,447.0 0 0 1 947.0,500.0"/>
+<path id="eq-bot" fill="none" d="M 53.0,500.0 A 447.0,447.0 0 0 0 947.0,500.0"/>
+<text font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="3" fill="#C4634F"><textPath href="#eq-top" startOffset="50%" text-anchor="middle">THE EQUITY IMPERATIVE</textPath></text>
+<text font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26" font-style="italic" fill="#C4634F"><textPath href="#eq-bot" startOffset="50%" text-anchor="middle">Is it just?</textPath></text>
+<path d="M 598.7,259.7 Q 697.7,213.8 688.3,324.8" fill="none" stroke="#679B95" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-teal)" opacity="0.95"/>
+<path d="M 537.7,304.0 Q 661.6,436.1 642.0,625.0" fill="none" stroke="#679B95" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-teal)" opacity="0.95"/>
+<path d="M 401.3,259.7 Q 302.3,213.8 311.7,324.8" fill="none" stroke="#679B95" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-teal)" opacity="0.95"/>
+<path d="M 759.0,519.6 Q 833.3,599.6 724.8,625.0" fill="none" stroke="#2B2B2B" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-dark)" opacity="0.95"/>
+<path d="M 698.0,475.3 Q 610.7,634.0 425.0,673.7" fill="none" stroke="#2B2B2B" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-dark)" opacity="0.95"/>
+<path d="M 561.4,752.4 Q 508.3,847.7 450.6,752.4" fill="none" stroke="#BBA472" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-gold)" opacity="0.95"/>
+<path d="M 278.9,636.4 Q 171.8,615.3 244.7,531.0" fill="none" stroke="#679B95" stroke-width="5" stroke-linecap="round" marker-end="url(#ah-teal)" opacity="0.95"/>
+<path d="M 302.0,331.9 Q 390.2,356.2 391.6,266.8" fill="none" stroke="#BBA472" stroke-width="5" stroke-linecap="round" stroke-dasharray="16 11" marker-end="url(#ah-gold)" opacity="0.95"/>
+<path d="M 325.3,403.6 Q 489.2,326.6 662.7,403.6" fill="none" stroke="#BBA472" stroke-width="5" stroke-linecap="round" stroke-dasharray="16 11" marker-end="url(#ah-gold)" opacity="0.95"/>
+<circle cx="500.0" cy="188.0" r="112.0" fill="#ffffff" stroke="#679B95" stroke-width="4.5"/>
+<text x="500.0" y="182.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#111111">POLICY</text>
+<text x="500.0" y="214.0" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#111111">Is it permissible?</text>
+<circle cx="796.7" cy="403.6" r="112.0" fill="#ffffff" stroke="#2B2B2B" stroke-width="4.5"/>
+<text x="796.7" y="397.6" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#111111">TECHNOLOGY</text>
+<text x="796.7" y="429.6" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#111111">Is it possible?</text>
+<circle cx="683.4" cy="752.4" r="112.0" fill="#ffffff" stroke="#BBA472" stroke-width="4.5"/>
+<text x="683.4" y="746.4" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#111111">ECONOMICS</text>
+<text x="683.4" y="778.4" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#111111">Is it sustainable?</text>
+<circle cx="316.6" cy="752.4" r="112.0" fill="#ffffff" stroke="#679B95" stroke-width="4.5"/>
+<text x="316.6" y="746.4" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#111111">CLINICAL</text>
+<text x="316.6" y="778.4" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#111111">Is it effective?</text>
+<circle cx="203.3" cy="403.6" r="112.0" fill="#ffffff" stroke="#BBA472" stroke-width="4.5"/>
+<text x="203.3" y="397.6" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#111111">OPERATIONS</text>
+<text x="203.3" y="429.6" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#111111">Is it executable?</text>
+</svg>

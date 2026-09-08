@@ -10,19 +10,24 @@ POST /api/personalized-learning/generate
 import asyncio
 import json
 import logging
-from typing import List, Optional, Dict, Any
+from typing import Any, Dict, List, Optional
 
 import httpx
 from fastapi import APIRouter, Depends, HTTPException
+from fastapi.responses import Response as FastAPIResponse
+from llama_index.llms.groq import Groq as GroqLLM
 from pydantic import BaseModel, field_validator
 
-from fastapi.responses import Response as FastAPIResponse
-from services.auth import AuthedUser, require_subscriber
 from config import (
-    GROQ_API_KEY, MODEL_SUBSCRIBER, OPENAI_API_KEY,
-    SANITY_PROJECT_ID, SANITY_DATASET, SANITY_API_TOKEN, SANITY_API_VER,
+    GROQ_API_KEY,
+    MODEL_SUBSCRIBER,
+    OPENAI_API_KEY,
+    SANITY_API_TOKEN,
+    SANITY_API_VER,
+    SANITY_DATASET,
+    SANITY_PROJECT_ID,
 )
-from llama_index.llms.groq import Groq as GroqLLM
+from services.auth import AuthedUser, require_subscriber
 
 log = logging.getLogger("htr-brain")
 router = APIRouter()
@@ -362,9 +367,13 @@ def _build_generation_prompt(
     role_context = ROLE_FRAMING.get(prefs.role, "healthcare transformation")
     total_hours  = round(prefs.time_per_week_hours * prefs.timeline_weeks, 1)
 
-    # Determine items per week based on time budget (target ~25-30 min/item)
+    # Determine items per week based on time budget (target ~25-30 min/item),
+    # then clamp the plan to ~36 items total so the JSON fits the generator's
+    # max_tokens=8000 budget (sized for the original 3 items × 12 weeks).
     mins_per_week  = prefs.time_per_week_hours * 60
     items_per_week = max(2, min(6, int(mins_per_week / 28)))
+    items_per_week = max(2, min(items_per_week, 36 // prefs.timeline_weeks))
+    content_items_per_week = items_per_week - 1  # remainder after the weekly knowledge_check
 
     return f"""You are a world-class healthcare education curriculum designer at the Health Transformation Review (HTR).
 
@@ -390,14 +399,14 @@ Content spans 5 pillars:
 
 Vermont-specific context to weave in where relevant:
 - Vermont Blueprint for Health — multi-payer PCMH model
-- Vermont All-Payer ACO Model (VMSSP) — statewide Total Cost of Care contract
+- Vermont All-Payer ACO Model (2017–2022) — statewide Total Cost of Care contract
 - OneCare Vermont — the single Accountable Care Organization
 - Green Mountain Care Board — Vermont's health care oversight body
-- Act 167 (2018) — health care reform legislation
+- Act 167 (2022) — health care affordability and system transformation law
 
 {_build_catalog_section(catalog, prefs.topics)}
 ═══ GENERATION INSTRUCTIONS ═══
-Create exactly {prefs.timeline_weeks} weeks with exactly 3 items per week (reading, case_study, knowledge_check).
+Create exactly {prefs.timeline_weeks} weeks with exactly {items_per_week} items per week: exactly one knowledge_check, and {content_items_per_week} reading/case_study item(s).
 
 Rules:
 - Every reading and case_study item: content field must be 100-130 words (concise but substantive — key insight, real example, actionable takeaway)
