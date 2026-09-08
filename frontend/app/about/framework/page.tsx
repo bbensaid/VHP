@@ -1,9 +1,9 @@
 import Link from "next/link";
-import SixPillarFrameworkMap from "@/components/SixPillarFrameworkMap";
+import FivePillarFrameworkMap from "@/components/FivePillarFrameworkMap";
 
 export const metadata = {
-  title: "Six-Pillar Framework | HTR",
-  description: "The HTR Six-Pillar Framework maps the interdependencies between Policy, Economics, Technology, Clinical, Equity, and Operations in health system transformation.",
+  title: "Five-Pillar Framework | HTR",
+  description: "The HTR Five-Pillar Framework maps the interdependencies between Policy, Technology, Economics, Clinical, and Operations — each held to the Equity Imperative — in health system transformation.",
 };
 
 const pillars = [
@@ -28,25 +28,6 @@ const pillars = [
   },
   {
     number: "02",
-    label: "Economics",
-    question: "Is it sustainable?",
-    color: "text-emerald-700",
-    border: "border-emerald-200",
-    bg: "bg-emerald-50",
-    accent: "bg-emerald-600",
-    accentText: "text-emerald-600",
-    href: "/economics",
-    why: "The history of American healthcare is littered with clinically excellent, politically popular interventions that collapsed when their financial models failed. HTR treats economic sustainability — for health systems, for payers, for patients, and for the capital markets that fund innovation — as a non-negotiable analytical dimension.",
-    what: [
-      "Value-based care modeling: global budgets, shared savings, risk adjustment, total cost of care",
-      "Market structure: payer concentration, health system M&A, independent practice viability",
-      "Workforce economics: compensation benchmarking, training pipeline capacity, retention modeling",
-      "Capital flows: venture investment, CDFI deployment, federal program capital allocation",
-    ],
-    blindspot: "A care model that improves outcomes under a grant-funded pilot is not a solution if it cannot sustain itself under standard reimbursement. Economic analysis distinguishes demonstration projects from scalable interventions.",
-  },
-  {
-    number: "03",
     label: "Technology",
     question: "Is it possible?",
     color: "text-indigo-700",
@@ -63,6 +44,25 @@ const pillars = [
       "Implementation feasibility: IT staff capacity, change management, total cost of ownership",
     ],
     blindspot: "AI tools trained on urban academic medical center data may perform poorly when deployed in community health centers with different patient populations and documentation patterns. Technological feasibility must be assessed at the deployment site, not the development lab.",
+  },
+  {
+    number: "03",
+    label: "Economics",
+    question: "Is it sustainable?",
+    color: "text-emerald-700",
+    border: "border-emerald-200",
+    bg: "bg-emerald-50",
+    accent: "bg-emerald-600",
+    accentText: "text-emerald-600",
+    href: "/economics",
+    why: "The history of American healthcare is littered with clinically excellent, politically popular interventions that collapsed when their financial models failed. HTR treats economic sustainability — for health systems, for payers, for patients, and for the capital markets that fund innovation — as a non-negotiable analytical dimension.",
+    what: [
+      "Value-based care modeling: global budgets, shared savings, risk adjustment, total cost of care",
+      "Market structure: payer concentration, health system M&A, independent practice viability",
+      "Workforce economics: compensation benchmarking, training pipeline capacity, retention modeling",
+      "Capital flows: venture investment, CDFI deployment, federal program capital allocation",
+    ],
+    blindspot: "A care model that improves outcomes under a grant-funded pilot is not a solution if it cannot sustain itself under standard reimbursement. Economic analysis distinguishes demonstration projects from scalable interventions.",
   },
   {
     number: "04",
@@ -85,25 +85,6 @@ const pillars = [
   },
   {
     number: "05",
-    label: "Equity",
-    question: "Is it just?",
-    color: "text-violet-700",
-    border: "border-violet-200",
-    bg: "bg-violet-50",
-    accent: "bg-violet-600",
-    accentText: "text-violet-600",
-    href: "/equity",
-    why: "A health system intervention that improves aggregate outcomes while widening disparity gaps is not a success — it is a failure dressed in favorable statistics. HTR's equity pillar ensures that every analysis is stress-tested against its distributional impact: who benefits, who is left out, and whether the intervention actively narrows or widens existing gaps.",
-    what: [
-      "SDOH integration: housing, food security, transportation, broadband as health determinants",
-      "Algorithmic bias: training data equity audits, disparate impact testing, AI fairness standards",
-      "Access disparity: geographic, insurance, linguistic, and cultural barriers to care",
-      "Community engagement: co-design with affected populations, trust-building, health literacy",
-    ],
-    blindspot: "An algorithm that produces accurate predictions on average may produce systematically biased predictions for specific racial, ethnic, or income-defined subgroups. Equity analysis is not a final-step diversity review — it is a foundational requirement that shapes how interventions are designed from the start.",
-  },
-  {
-    number: "06",
     label: "Operations",
     question: "Is it executable?",
     color: "text-teal-700",
@@ -124,6 +105,29 @@ const pillars = [
   },
 ];
 
+// Not a pillar. The Equity Imperative is the test each of the five above
+// must pass — rendered separately below so it never reads as a sixth peer.
+const equityImperative =
+  {
+    number: "★",
+    label: "The Equity Imperative",
+    question: "Is it just?",
+    color: "text-violet-700",
+    border: "border-violet-200",
+    bg: "bg-violet-50",
+    accent: "bg-violet-600",
+    accentText: "text-violet-600",
+    href: "/equity",
+    why: "A health system intervention that improves aggregate outcomes while widening disparity gaps is not a success — it is a failure dressed in favorable statistics. The Equity Imperative ensures that every analysis is stress-tested against its distributional impact: who benefits, who is left out, and whether the intervention actively narrows or widens existing gaps.",
+    what: [
+      "SDOH integration: housing, food security, transportation, broadband as health determinants",
+      "Algorithmic bias: training data equity audits, disparate impact testing, AI fairness standards",
+      "Access disparity: geographic, insurance, linguistic, and cultural barriers to care",
+      "Community engagement: co-design with affected populations, trust-building, health literacy",
+    ],
+    blindspot: "An algorithm that produces accurate predictions on average may produce systematically biased predictions for specific racial, ethnic, or income-defined subgroups. Equity analysis is not a final-step diversity review — it is a foundational requirement that shapes how interventions are designed from the start.",
+  };
+
 const failureModes = [
   {
     title: "The Unfunded Mandate",
@@ -143,17 +147,17 @@ const failureModes = [
   {
     title: "The Equity Bypass",
     desc: "A new care model improves aggregate outcomes and is financially sustainable — but the patients who benefit most are already the best-resourced. Disparities widen.",
-    pillars: ["Policy ✓", "Economics ✓", "Clinical ✓", "Equity ✗"],
+    pillars: ["Policy ✓", "Economics ✓", "Clinical ✓", "Equity Imperative ✗"],
   },
   {
     title: "The Operational Cliff",
     desc: "A transformation is approved, funded, and technologically enabled — then stalls because the revenue cycle cannot support the new payment model, staff cannot be credentialed fast enough, and supply chain disruptions delay launch by 18 months.",
-    pillars: ["Policy ✓", "Economics ✓", "Technology ✓", "Clinical ✓", "Equity ✓", "Operations ✗"],
+    pillars: ["Policy ✓", "Technology ✓", "Economics ✓", "Clinical ✓", "Equity Imperative ✓", "Operations ✗"],
   },
   {
     title: "The Complete Failure",
-    desc: "All six pillars are interrogated. The intervention fails on equity, economics, and operational readiness. It is not published as a recommendation. This is the framework working as intended.",
-    pillars: ["Policy ✓", "Economics ✗", "Technology ✓", "Clinical ✓", "Equity ✗", "Operations ✗"],
+    desc: "All five pillars are interrogated and the Equity Imperative applied. The intervention fails on economics, operational readiness, and the justice test. It is not published as a recommendation. This is the framework working as intended.",
+    pillars: ["Policy ✓", "Technology ✓", "Economics ✗", "Clinical ✓", "Operations ✗", "Equity Imperative ✗"],
   },
 ];
 
@@ -168,20 +172,20 @@ export default function FrameworkPage() {
             Our Analytical Framework
           </span>
           <h1 className="text-xl font-bold tracking-tight text-slate-900">
-            Six questions. Zero shortcuts.
+            Five questions. One imperative.
           </h1>
           <p className="text-sm text-slate-500 mt-1 max-w-2xl leading-relaxed">
-            Every analysis must survive all six pillars. A recommendation that passes five out of six is not published — click any pillar to trace its dependencies.
+            Every analysis must survive all five pillars and the Equity Imperative. A recommendation that passes the pillars but fails the imperative is not published — click any pillar to trace its dependencies.
           </p>
         </div>
       </section>
 
       {/* ── INTERACTIVE DEPENDENCY MAP ───────────────────────────────────── */}
       <section className="w-full px-2 sm:px-3 py-4">
-        <SixPillarFrameworkMap />
+        <FivePillarFrameworkMap />
       </section>
 
-      {/* ── THE SIX PILLARS ──────────────────────────────────────────────── */}
+      {/* ── THE FIVE PILLARS ─────────────────────────────────────────────── */}
       <section className="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-10">
           {pillars.map((p) => (
@@ -230,6 +234,49 @@ export default function FrameworkPage() {
             </div>
           ))}
         </div>
+
+        {/* The Equity Imperative — deliberately NOT part of the numbered list
+            above. It is the test every pillar must pass, not a sixth pillar. */}
+        <div className="mt-10 bg-white border-2 border-violet-300 rounded-2xl overflow-hidden shadow-sm ring-4 ring-violet-50">
+          <div className="bg-violet-50 border-b border-violet-200 px-8 py-6 flex items-center justify-between">
+            <div className="flex items-center gap-5">
+              <div className="w-12 h-12 bg-violet-600 rounded-full text-white flex items-center justify-center text-xs font-black shrink-0 text-center leading-tight">
+                IS IT<br/>JUST?
+              </div>
+              <div>
+                <h3 className="text-2xl font-black text-violet-700">{equityImperative.label}</h3>
+                <p className="text-slate-600 font-semibold text-sm">Applied to every pillar above, at every stage — not a sixth pillar alongside them.</p>
+              </div>
+            </div>
+            <Link
+              href={equityImperative.href}
+              className="hidden md:inline-flex items-center gap-2 text-xs font-bold text-violet-600 border border-violet-200 px-4 py-2 rounded-lg hover:bg-violet-50 transition-colors"
+            >
+              Explore the Equity Imperative →
+            </Link>
+          </div>
+          <div className="px-8 py-8 grid md:grid-cols-3 gap-8">
+            <div className="md:col-span-1">
+              <p className="text-[11px] font-black uppercase tracking-widest text-slate-400 mb-3">Why this question</p>
+              <p className="text-sm text-slate-700 leading-relaxed">{equityImperative.why}</p>
+            </div>
+            <div className="md:col-span-1">
+              <p className="text-[11px] font-black uppercase tracking-widest text-slate-400 mb-3">What we analyze</p>
+              <ul className="space-y-2">
+                {equityImperative.what.map((item) => (
+                  <li key={item} className="flex gap-2 text-sm text-slate-600">
+                    <span className="w-1.5 h-1.5 rounded-full bg-violet-600 shrink-0 mt-1.5" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-violet-50 border border-violet-200 rounded-xl p-5 md:col-span-1">
+              <p className="text-[11px] font-black uppercase tracking-widest text-slate-500 mb-2">The blind spot this catches</p>
+              <p className="text-sm text-slate-700 leading-relaxed font-medium">{equityImperative.blindspot}</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* ── FAILURE MODES ─────────────────────────────────────────────────── */}
@@ -237,13 +284,13 @@ export default function FrameworkPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-14">
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
-              Why Five Out of Six Is Not Enough
+              Why Passing the Pillars Is Not Enough
             </span>
             <h2 className="ty-h1 font-black tracking-tight text-slate-900 mb-4">
               The failure modes the framework prevents.
             </h2>
             <p className="ty-hero text-slate-500 max-w-3xl">
-              These are not hypothetical scenarios. They are the recurring failure patterns that have defined American healthcare transformation for the past 30 years — and that the six-question standard is specifically designed to catch before they become policy.
+              These are not hypothetical scenarios. They are the recurring failure patterns that have defined American healthcare transformation for the past 30 years — and that the five-pillar, one-imperative standard is specifically designed to catch before they become policy.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -277,16 +324,15 @@ export default function FrameworkPage() {
           See the framework applied.
         </h2>
         <p className="ty-hero text-slate-500 mb-8 max-w-xl mx-auto">
-          Browse our pillar hubs to see how Policy, Economics, Technology, Clinical, Equity, and Operations intersect on the issues shaping healthcare today.
+          Browse our pillar hubs to see how Policy, Technology, Economics, Clinical, and Operations intersect on the issues shaping healthcare today — and how the Equity Imperative tests every one of them.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
           {[
             { label: "Policy", href: "/policy", color: "bg-sky-600" },
-            { label: "Economics", href: "/economics", color: "bg-emerald-600" },
             { label: "Technology", href: "/technology", color: "bg-indigo-600" },
+            { label: "Economics", href: "/economics", color: "bg-emerald-600" },
             { label: "Clinical", href: "/clinical", color: "bg-rose-600" },
-            { label: "Equity", href: "/equity", color: "bg-violet-600" },
-          { label: "Operations", href: "/operations", color: "bg-teal-600" },
+            { label: "Operations", href: "/operations", color: "bg-teal-600" },
           ].map((p) => (
             <Link
               key={p.label}

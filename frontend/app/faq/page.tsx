@@ -28,24 +28,24 @@ const faqs = [
     ],
   },
   {
-    category: "The Six Pillars",
+    category: "The Five Pillars and the Equity Imperative",
     icon: "🏛️",
     items: [
       {
-        q: "Why does HTR use six pillars instead of fewer?",
-        a: "Because health system transformation fails along six distinct structural fault lines — not three. Policy determines what is permissible. Economics determines what is sustainable. Technology determines what is possible. Clinical determines what is effective. Equity determines who actually benefits. Operations determines whether it can be executed at scale. A transformation analysis that skips any of these six questions is not incomplete — it is dangerous. Each pillar has its own sub-metrics, weighting, and dedicated principal analyst.",
+        q: "Why does HTR use five pillars instead of fewer?",
+        a: "Because health system transformation fails along five distinct structural fault lines — not three. Policy determines what is permissible. Technology determines what is possible. Economics determines what is sustainable. Clinical determines what is effective. Operations determines whether it can be executed at scale. They are load-bearing in that order: the later pillars rest on the ones built before them. A transformation analysis that skips any of these five questions is not incomplete — it is dangerous. Each pillar has its own sub-metrics, weighting, and dedicated principal analyst.",
       },
       {
-        q: "What are the six pillars and their guiding questions?",
-        a: "Policy ('Is it permissible?') — Regulation, legislation, and governance. Economics ('Is it sustainable?') — Value-based care, workforce investment, and market dynamics. Technology ('Is it possible?') — AI, digital health, and infrastructure. Clinical ('Is it effective?') — Evidence-based care models and population health. Equity ('Is it just?') — SDOH integration, algorithmic bias, and access disparity. Operations ('Is it executable?') — Revenue cycle, workforce capacity, compliance infrastructure, and supply chain readiness.",
+        q: "What are the five pillars, their guiding questions, and the Equity Imperative?",
+        a: "Policy ('Is it permissible?') — Regulation, legislation, and governance. Technology ('Is it possible?') — AI, digital health, and infrastructure. Economics ('Is it sustainable?') — Value-based care, workforce investment, and market dynamics. Clinical ('Is it effective?') — Evidence-based care models and population health. Operations ('Is it executable?') — Revenue cycle, workforce capacity, compliance infrastructure, and supply chain readiness. The Equity Imperative ('Is it just?') is not a sixth pillar — it is the test applied to each of the five: SDOH integration, algorithmic bias, and access disparity, checked at every stage.",
       },
       {
-        q: "Does HTR cover all six pillars equally in its content library?",
-        a: "Our goal is full coverage across all six pillars. Policy and Economics have the deepest content archives. Technology coverage is extensive, with particular depth in AI deployment and digital health. Clinical and Equity have dedicated research pipelines producing quarterly deep-dive reports. Operations coverage focuses on revenue cycle performance, workforce capacity, compliance infrastructure, and supply chain readiness. All six pillars have dedicated principal analysts and quarterly publication schedules.",
+        q: "Does HTR cover all five pillars equally in its content library?",
+        a: "Our goal is full coverage across all five pillars. Policy and Economics have the deepest content archives. Technology coverage is extensive, with particular depth in AI deployment and digital health. Clinical has a dedicated research pipeline producing quarterly deep-dive reports. Operations coverage focuses on revenue cycle performance, workforce capacity, compliance infrastructure, and supply chain readiness. The Equity Imperative has its own dedicated research pipeline and principal analyst, since it is checked against every pillar's output rather than reported on in isolation. All five pillars have dedicated principal analysts and quarterly publication schedules.",
       },
       {
-        q: "How does the Equity pillar differ from existing diversity reporting?",
-        a: "The HTR Equity pillar is analytical, not performative. We do not publish diversity dashboards or benchmark representation statistics. Our Equity coverage focuses on three measurable structural issues: SDOH data integration quality and referral completion rates, algorithmic bias in AI clinical tools deployed in rural settings, and the rural-urban mortality and hospitalization disparity gap. Every metric is tied to a specific intervention category that health system leaders can act on.",
+        q: "How does the Equity Imperative differ from existing diversity reporting?",
+        a: "The HTR Equity Imperative is analytical, not performative. We do not publish diversity dashboards or benchmark representation statistics. Our equity coverage focuses on three measurable structural issues: SDOH data integration quality and referral completion rates, algorithmic bias in AI clinical tools deployed in rural settings, and the rural-urban mortality and hospitalization disparity gap. Every metric is tied to a specific intervention category that health system leaders can act on — and applied as a check against every pillar's analysis, not published as a standalone scorecard.",
       },
     ],
   },
@@ -62,8 +62,8 @@ const faqs = [
         a: "Yes. Status tier changes — from Improving to Stable, for example — can occur at any quarterly update. When a significant change occurs, the state's Dashboard page is flagged and subscribers receive an alert. We document the specific sub-metric driver of every tier change in the changelog.",
       },
       {
-        q: "Why are Policy and Economics weighted at 30% each while Equity is only 10%?",
-        a: "Current weighting reflects data quality constraints, not a judgment of relative importance. Equity sub-metrics — particularly the algorithmic disparity index — lack consistent state-level reporting infrastructure in approximately 20% of states, which would distort a higher weight. The Equity weight is formally scheduled for review in the 2027 Index update, with a target of 15% weighting as state data coverage reaches ≥90%. Our methodology page documents the full formula and rationale.",
+        q: "How does the Equity Imperative factor into a state's Index score, if it isn't one of the weighted pillars?",
+        a: "It isn't a weighted line item, by design — a state can't buy back a justice failure by scoring well elsewhere. The Index score is built from the five pillar weights (see the Methodology page for the current formula), and the Equity Imperative is applied afterward as a check against the result: where equity sub-metrics — particularly the algorithmic disparity index — show a state's transformation is widening disparities, the Dashboard flags that explicitly rather than folding it into a single blended number. Equity sub-metric reporting infrastructure is still inconsistent across roughly 20% of states; closing that gap is a 2027 Index priority.",
       },
       {
         q: "How do you handle states with missing data in a sub-metric?",
@@ -89,7 +89,7 @@ const faqs = [
       },
       {
         q: "Does HTR publish political viewpoints?",
-        a: "No. HTR analysis is non-partisan by design. Our editorial standard requires that policy analysis presents the evidence — including evidence that challenges prevailing political positions from any direction — without advocacy. We cover CMS rulemaking, state legislation, and federal appropriations purely through the lens of their measurable impact on the six pillar dimensions.",
+        a: "No. HTR analysis is non-partisan by design. Our editorial standard requires that policy analysis presents the evidence — including evidence that challenges prevailing political positions from any direction — without advocacy. We cover CMS rulemaking, state legislation, and federal appropriations purely through the lens of their measurable impact on the five pillar dimensions and the Equity Imperative.",
       },
     ],
   },
@@ -185,7 +185,7 @@ export default function FAQPage() {
             <span className="text-indigo-400">Questions</span>
           </h1>
           <p className="ty-hero text-slate-300 max-w-2xl leading-relaxed">
-            Everything you need to know about our methodology, the six-pillar framework, membership tiers, and how to engage our advisory team.
+            Everything you need to know about our methodology, the five-pillar framework, membership tiers, and how to engage our advisory team.
           </p>
         </div>
       </section>

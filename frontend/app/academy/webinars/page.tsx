@@ -3,7 +3,7 @@ import AcademyCard from "@/components/academy/AcademyCard";
 
 export const metadata = {
   title: "Webinars & Roundtables | HTR Academy",
-  description: "Live and recorded HTR webinars featuring policy experts, health system executives, and researchers — organized by the Six-Pillar Framework.",
+  description: "Live and recorded HTR webinars featuring policy experts, health system executives, and researchers — organized by the Five-Pillar Framework.",
 };
 
 interface Webinar {

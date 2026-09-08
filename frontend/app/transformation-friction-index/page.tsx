@@ -51,7 +51,7 @@ const frictionDimensions = [
   },
   {
     label: "Equity Friction",
-    pillar: "Equity",
+    pillar: "Equity Imperative",
     color: "text-violet-700",
     bg: "bg-violet-50",
     border: "border-violet-200",
@@ -113,10 +113,10 @@ export default function TransformationFrictionIndexPage() {
             What the Index Measures
           </span>
           <h2 className="ty-h1 font-black tracking-tight text-slate-900 mb-4">
-            Six friction dimensions. One composite score.
+            Five pillar frictions. One imperative check.
           </h2>
           <p className="ty-hero text-slate-500 max-w-3xl">
-            Each pillar of the HTR framework contributes a distinct friction dimension. The composite score surfaces where a transformation will encounter the most resistance — and which dimensions represent the binding constraints.
+            Each of the five pillars contributes a distinct friction dimension, and the Equity Imperative contributes its own — the political and distributional friction of getting the justice test right. The composite score surfaces where a transformation will encounter the most resistance, and which dimensions represent the binding constraints.
           </p>
         </div>
         <div className="space-y-4">
@@ -125,7 +125,7 @@ export default function TransformationFrictionIndexPage() {
               <div className={`${d.bg} border-b ${d.border} px-6 py-4 flex items-center gap-3`}>
                 <span className={`w-2.5 h-2.5 rounded-full ${d.dot} shrink-0`} />
                 <div>
-                  <span className={`text-xs font-black uppercase tracking-widest ${d.color}`}>{d.pillar} Pillar</span>
+                  <span className={`text-xs font-black uppercase tracking-widest ${d.color}`}>{d.pillar}</span>
                   <h3 className={`font-black text-lg ${d.color}`}>{d.label}</h3>
                 </div>
               </div>
@@ -207,7 +207,7 @@ export default function TransformationFrictionIndexPage() {
           Use the HTR Simulator while the Friction Index is in development.
         </h2>
         <p className="ty-hero text-slate-500 mb-8 max-w-xl mx-auto">
-          The HTR Simulator applies the six-pillar scoring framework to specific transformation scenarios today.
+          The HTR Simulator applies the five-pillar scoring framework, held to the Equity Imperative, to specific transformation scenarios today.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link href="/htr-simulator" className="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-lg font-bold hover:bg-slate-800 transition-colors">
@@ -217,7 +217,7 @@ export default function TransformationFrictionIndexPage() {
             Impact Simulation
           </Link>
           <Link href="/about/framework" className="inline-flex items-center gap-2 bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-lg font-bold hover:bg-slate-50 transition-colors">
-            The Six-Pillar Framework
+            The Five-Pillar Framework
           </Link>
         </div>
       </section>

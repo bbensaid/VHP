@@ -17,7 +17,7 @@ import {
   resolvePlatformLink,
   type ChapterGroup,
   PILLARS,
-  type PillarId,
+  type FrameworkId,
 } from "@/lib/taxonomy";
 import { getAllTracks } from "@/lib/narration";
 import { getCoursesByChapter, type PillarCourse } from "@/lib/course-api";
@@ -67,16 +67,16 @@ const CHAPTER_SLUGS: Record<string, string> = Object.fromEntries(
 );
 
 export const metadata = {
-  title: "The Book | Transforming American Healthcare — HTR",
+  title: "The Book | Transforming Healthcare — HTR",
   description:
-    "Transforming American Healthcare: A Six-Pillar Framework for System Transformation. The intellectual foundation of the HTR Platform — 16 chapters covering Policy, Economics, Technology, Clinical, Equity, and Operations.",
+    "Transforming Healthcare: A Five-Pillar Framework with Vermont as the National Proving Ground. The intellectual foundation of the HTR Platform — 16 chapters covering Policy, Technology, Economics, Clinical, and Operations, each held to the Equity Imperative.",
 };
 
 // ─── VIEW-LOCAL CONFIG ────────────────────────────────────────────────────────
 // Things specific to *this page's presentation*. Anything that other pages also
 // consume lives in lib/taxonomy/.
 
-const PILLAR_ICONS: Record<PillarId, React.ComponentType<{ className?: string }>> = {
+const PILLAR_ICONS: Record<FrameworkId, React.ComponentType<{ className?: string }>> = {
   policy: BuildingLibraryIcon,
   economics: BanknotesIcon,
   technology: CpuChipIcon,
@@ -91,7 +91,7 @@ const GROUP_BADGE_CLASSES: Record<ChapterGroup, string> = {
   "Technology Pillar": "bg-indigo-100 text-indigo-700",
   "Economics Pillar": "bg-emerald-100 text-emerald-700",
   "Clinical Pillar": "bg-red-100 text-red-700",
-  "Equity Pillar": "bg-violet-100 text-violet-700",
+  "The Equity Imperative": "bg-violet-100 text-violet-700",
   "Operations Pillar": "bg-teal-100 text-teal-700",
   "Future & Strategy": "bg-amber-100 text-amber-700",
 };
@@ -121,23 +121,23 @@ const READER_PROFILES = [
   {
     label: "Student or Researcher",
     emoji: "🔬",
-    desc: "Start with Chapter 1 (The Execution Sequence), then work each pillar chapter alongside the Research Lab tools and Appendix I (the HTR Lab Workbook).",
+    desc: "Start with Chapter 1 (The Execution Sequence), then work each pillar chapter alongside the Research Lab tools and Appendix H (the HTR Lab Workbook).",
     startHref: "/research-lab",
     startLabel: "Research Lab →",
   },
 ];
 
 const KEY_CONCEPTS = [
-  { term: "Six-Pillar Framework", def: "Policy, Economics, Technology, Clinical, Equity, Operations — must move together. Addressed in Chapter 1.", href: "/about/framework" },
-  { term: "The 15 Dependency Relationships", def: "The structural interdependencies between pillars that determine execution order and failure risk.", href: "/about/framework" },
-  { term: "Execution Sequence", def: "Why Policy → Technology → Economics → Clinical → Equity → Operations is non-negotiable. Chapter 1.", href: "/htr-simulator" },
+  { term: "Five-Pillar Framework", def: "Policy, Technology, Economics, Clinical, Operations — load-bearing in that order, each held to the Equity Imperative. Addressed in Chapter 1.", href: "/about/framework" },
+  { term: "The 9 Dependency Relationships", def: "The structural interdependencies between pillars that determine execution order and failure risk.", href: "/about/framework" },
+  { term: "Execution Sequence", def: "Why Policy → Technology → Economics → Clinical → Operations is non-negotiable, with the Equity Imperative applied at every stage. Chapter 1.", href: "/htr-simulator" },
   { term: "The OneCare Failure", def: "Vermont's ACO failure used as a sequencing autopsy — economics without technology readiness.", href: "/vermont-vcci" },
   { term: "Vermont Thread", def: "Vermont's Acts 167 & 68, Blueprint, VCCI, AHEAD, and RHT Program as the book's primary teaching case.", href: "/vermont-act-68" },
-  { term: "The AHEAD Model", def: "Medicare's entry into Vermont's total cost of care reform — integrating with Act 68's global budget mandate.", href: "/ahead-model" },
+  { term: "The AHEAD Model", def: "Medicare's CMMI model for Vermont's total cost of care reform — and the one Vermont withdrew from in July 2026 after a federal funding renegotiation, continuing its reform on Act 68's state mandate instead.", href: "/ahead-model" },
   { term: "Reference-Based Pricing", def: "The pricing architecture that precedes global budgets — anchoring payments to a transparent reference.", href: "/economics/value" },
   { term: "VBC Readiness (6 Domains)", def: "The six organizational readiness dimensions any health system must score before assuming value-based risk.", href: "/research-lab/knowledge-workspace?tab=readiness" },
-  { term: "Failure Cascade", def: "How a gap in one pillar triggers compounding failures across the other five.", href: "/transformation-friction-index" },
-  { term: "AHS Restructuring Roadmap", def: "Vermont's Agency of Human Services restructuring as a live Chapter 16 six-pillar case study.", href: "/vermont-act-68" },
+  { term: "Failure Cascade", def: "How a gap in one pillar triggers compounding failures across the other four.", href: "/transformation-friction-index" },
+  { term: "AHS Restructuring Roadmap", def: "Vermont's Agency of Human Services restructuring as a live Chapter 16 five-pillar case study.", href: "/vermont-act-68" },
 ];
 
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
@@ -159,7 +159,7 @@ export default async function BookPage() {
 
         {/* Floating cover thumbnail (md+ only — doesn't compete with title on mobile) */}
         <div className="hidden md:block absolute top-8 right-8 lg:top-10 lg:right-12 w-32 lg:w-40 rotate-3 shadow-2xl shadow-black/40 ring-1 ring-white/10 rounded-md overflow-hidden">
-          <img src="/book-cover.svg" alt="Transforming American Healthcare — book cover" className="w-full h-auto block" />
+          <img src="/book-cover.svg" alt="Transforming Healthcare — book cover" className="w-full h-auto block" />
         </div>
 
         <div className="relative">
@@ -176,7 +176,7 @@ export default async function BookPage() {
             Transforming<br className="hidden md:block" /> American Healthcare
           </h1>
           <p className="text-lg md:text-xl text-white/70 font-medium mb-2">
-            A Six-Pillar Framework for System Transformation
+            A Five-Pillar Framework with Vermont as the National Proving Ground
           </p>
           <p className="text-sm text-white/50 mb-8 max-w-2xl">
             The intellectual foundation of the HTR Platform. {CHAPTERS.filter(c => /^\d+$/.test(c.num)).length} chapters covering the complete theory and practice of healthcare system transformation — with Vermont as the primary teaching case.
@@ -249,7 +249,7 @@ export default async function BookPage() {
           </a>
         </div>
         <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50">
-          <iframe src="/HTR_Book_v42.pdf" className="w-full" style={{ height: "700px" }} title="Transforming American Healthcare — HTR Book" />
+          <iframe src="/HTR_Book_v42.pdf" className="w-full" style={{ height: "700px" }} title="Transforming Healthcare — HTR Book" />
         </div>
       </section>
 
@@ -454,11 +454,11 @@ export default async function BookPage() {
             Explore the Platform That Accompanies the Book
           </h2>
           <p className="text-sm text-white/70 leading-relaxed mb-6 max-w-2xl">
-            Every concept in the book has an interactive counterpart here — research lab tools, state program profiles, data dashboards, and a Six-Pillar dependency map. The platform keeps the analysis current as policy evolves.
+            Every concept in the book has an interactive counterpart here — research lab tools, state program profiles, data dashboards, and a Five-Pillar dependency map, with the Equity Imperative applied throughout. The platform keeps the analysis current as policy evolves.
           </p>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: "/about/framework", label: "Six-Pillar Map", icon: "🕸️" },
+              { href: "/about/framework", label: "Five-Pillar Map", icon: "🕸️" },
               { href: "/research-lab", label: "Research Lab", icon: "🧪" },
               { href: "/vermont-act-68", label: "Vermont Act 68", icon: "🍁" },
               { href: "/htr-simulator", label: "HTR Simulator", icon: "⚙️" },

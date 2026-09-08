@@ -72,22 +72,6 @@ const PILLARS = [
     ],
   },
   {
-    id: "equity",
-    label: "Health Equity",
-    color: "rose",
-    icon: <ScaleIcon className="w-6 h-6" />,
-    tagline: "Access, Disparity & Social Determinants",
-    description:
-      "Quantifies the equity implications of transformation — including geographic access, racial and socioeconomic disparities, transportation barriers, and the distribution of benefits and burdens across vulnerable populations. Transformations that concentrate services or reduce coverage in underserved areas score lower.",
-    dimensions: [
-      "Geographic access to essential services",
-      "Racial and ethnic disparity in outcomes",
-      "Social determinants of health burden (housing, food, transport)",
-      "Low-income and uninsured population impact",
-      "Language access and cultural competency",
-    ],
-  },
-  {
     id: "clinical",
     label: "Clinical Quality",
     color: "amber",
@@ -121,6 +105,27 @@ const PILLARS = [
   },
 ];
 
+const EQUITY_IMPERATIVE = {
+  id: "equity",
+  label: "The Equity Imperative",
+  color: "violet",
+  icon: <ScaleIcon className="w-6 h-6" />,
+  tagline: "Is It Just? — Applied to Every Pillar's Result",
+  description:
+    "Not a sixth pillar and not a sixth score — the justice test applied to the other five. Geographic access, racial and socioeconomic disparities, transportation barriers, and the distribution of benefits and burdens across vulnerable populations. A transformation that scores well on policy, technology, financial, clinical, and operations while concentrating services or reducing coverage in underserved areas fails the imperative regardless.",
+  dimensions: [
+    "Geographic access to essential services",
+    "Racial and ethnic disparity in outcomes",
+    "Social determinants of health burden (housing, food, transport)",
+    "Low-income and uninsured population impact",
+    "Language access and cultural competency",
+  ],
+};
+
+// Not one of the five scored pillars above — this is the cross-cutting
+// "is it just?" check applied to every scenario's result, per the handoff
+// spec: "add the Equity Imperative as a justice check... not a 6th scored axis."
+
 // ─── Use cases ────────────────────────────────────────────────────────────────
 
 const USE_CASES = [
@@ -139,7 +144,7 @@ const USE_CASES = [
     stats: [
       { label: "Hospitals Modeled", value: "14" },
       { label: "Recommendations", value: "18+" },
-      { label: "Pillars Scored", value: "6" },
+      { label: "Pillars Scored", value: "5" },
     ],
   },
   {
@@ -219,7 +224,7 @@ const cardAccentMap: Record<string, string> = {
 };
 
 const pillarsById: Record<string, typeof PILLARS[0]> = Object.fromEntries(
-  PILLARS.map(p => [p.id, p])
+  [...PILLARS, EQUITY_IMPERATIVE].map(p => [p.id, p])
 );
 
 // ─── Main page ─────────────────────────────────────────────────────────────────
@@ -239,7 +244,7 @@ export default function HTRSimulatorPage() {
           </h1>
           <p className="ty-hero text-slate-300 max-w-2xl leading-relaxed">
             Model the multi-pillar impact of any combination of healthcare transformation decisions
-            before implementation — across policy, technology, financial, equity, clinical, and operational dimensions.
+            before implementation — across policy, technology, financial, clinical, and operational dimensions, each held to the Equity Imperative.
           </p>
           <div className="mt-8">
             <Link
@@ -267,7 +272,7 @@ export default function HTRSimulatorPage() {
               {
                 icon: <BeakerIcon className="w-5 h-5" />,
                 title: "Scenario Modeling",
-                body: "Build custom transformation scenarios by selecting any combination of policy recommendations. The simulator instantly scores the combined impact across all six pillars.",
+                body: "Build custom transformation scenarios by selecting any combination of policy recommendations. The simulator instantly scores the combined impact across all five pillars, then applies the Equity Imperative as a justice check on the result.",
               },
               {
                 icon: <CurrencyDollarIcon className="w-5 h-5" />,
@@ -308,14 +313,14 @@ export default function HTRSimulatorPage() {
           </div>
         </section>
 
-        {/* 6-Pillar Framework */}
+        {/* 5-Pillar Framework + the Equity Imperative */}
         <section>
           <div className="flex items-center gap-3 mb-2">
             <Square3Stack3DIcon className="w-6 h-6 text-violet-600" />
-            <h2 className="text-2xl font-black text-slate-900">The 6-Pillar Scoring Framework</h2>
+            <h2 className="text-2xl font-black text-slate-900">The 5-Pillar Scoring Framework</h2>
           </div>
           <p className="text-slate-500 mb-8 max-w-2xl">
-            Every transformation scenario is evaluated across six independent pillars. Each pillar
+            Every transformation scenario is evaluated across five independent pillars, each held to the Equity Imperative. Each pillar
             receives a score from 0–100 based on the recommendations selected, their implementation
             complexity, and expected impact.
           </p>
@@ -356,6 +361,38 @@ export default function HTRSimulatorPage() {
                 </div>
               );
             })}
+
+            {/* The Equity Imperative -- deliberately NOT rendered inside the
+                PILLARS.map above. Same card treatment, but a violet ring
+                instead of a border-l accent, so it reads as a check applied
+                to the five rather than a sixth entry in the same list. */}
+            <div className="bg-white border-2 border-violet-300 ring-4 ring-violet-50 rounded-2xl overflow-hidden">
+              <div className="p-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-11 h-11 rounded-xl border flex items-center justify-center shrink-0 bg-violet-50 text-violet-700 border-violet-200">
+                    {EQUITY_IMPERATIVE.icon}
+                  </div>
+                  <div>
+                    <div className="font-black text-slate-900 text-lg">{EQUITY_IMPERATIVE.label}</div>
+                    <div className="text-xs font-bold uppercase tracking-widest mt-0.5 text-violet-700">
+                      {EQUITY_IMPERATIVE.tagline}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-slate-600 leading-relaxed mb-4">{EQUITY_IMPERATIVE.description}</p>
+                <div>
+                  <div className="text-xs font-black uppercase tracking-wider text-slate-500 mb-2">What the imperative checks</div>
+                  <div className="grid sm:grid-cols-2 gap-1.5">
+                    {EQUITY_IMPERATIVE.dimensions.map(d => (
+                      <div key={d} className="flex items-center gap-2 text-sm text-slate-700">
+                        <CheckCircleIcon className="w-4 h-4 text-violet-400 shrink-0" />
+                        {d}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Score interpretation */}
@@ -390,7 +427,7 @@ export default function HTRSimulatorPage() {
               {
                 step: "01",
                 title: "Recommendation Scoring",
-                body: "Each recommendation is pre-scored across all six pillars by domain experts. Scores reflect expected impact magnitude, implementation complexity, and risk — anchored to published evidence and comparable transformation programs.",
+                body: "Each recommendation is pre-scored across all five pillars by domain experts, then checked against the Equity Imperative. Scores reflect expected impact magnitude, implementation complexity, and risk — anchored to published evidence and comparable transformation programs.",
                 color: "violet",
               },
               {
@@ -546,7 +583,7 @@ export default function HTRSimulatorPage() {
             <div className="flex items-center gap-3">
               <span className="text-2xl leading-none">🕸️</span>
               <div>
-                <p className="text-sm font-black text-violet-700">Six-Pillar Dependency Map</p>
+                <p className="text-sm font-black text-violet-700">Five-Pillar Dependency Map</p>
                 <p className="text-xs text-slate-500">See how each pillar enables, constrains, or drives the others — the structural logic behind the Simulator&rsquo;s scoring model</p>
               </div>
             </div>

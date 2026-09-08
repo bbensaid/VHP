@@ -23,6 +23,7 @@ const MetricDetail = ({
     Technology: { label: "Technology", bar: "bg-indigo-500",  text: "text-indigo-700",  bg: "bg-indigo-50",  border: "border-indigo-200" },
     Clinical:   { label: "Clinical",   bar: "bg-rose-500",    text: "text-rose-700",    bg: "bg-rose-50",    border: "border-rose-200" },
     Equity:     { label: "Equity",     bar: "bg-violet-500",  text: "text-violet-700",  bg: "bg-violet-50",  border: "border-violet-200" },
+    "Equity Imperative": { label: "Equity Imperative", bar: "bg-violet-500", text: "text-violet-700", bg: "bg-violet-50", border: "border-violet-200" },
     Operations: { label: "Operations", bar: "bg-teal-500",  text: "text-teal-700",  bg: "bg-teal-50",  border: "border-teal-200" },
   };
   const s = styles[pillar] ?? styles["Policy"];
@@ -113,7 +114,7 @@ function MethodologyPageInner() {
             The HTR Health System <span className="text-indigo-400">Performance Index</span>
           </h1>
           <p className="ty-hero text-slate-300 max-w-2xl leading-relaxed">
-            A proprietary composite metric — built across six pillars and eighteen sub-metrics — designed to provide a standardized, cross-dimensional measure of each state&rsquo;s healthcare system performance and readiness for transformation.
+            A proprietary composite metric — built across five pillars and fifteen sub-metrics, checked against the Equity Imperative — designed to provide a standardized, cross-dimensional measure of each state&rsquo;s healthcare system performance and readiness for transformation.
           </p>
         </div>
       </div>
@@ -127,11 +128,11 @@ function MethodologyPageInner() {
             <h2 className="ty-h1 font-black text-slate-900">Framework Overview</h2>
           </div>
           <p className="text-slate-600 ty-hero leading-relaxed mb-6">
-The HTR Performance Index scores health system transformation readiness across six pillars: Policy, Economics, Technology, Clinical, Equity, and Operations. Each pillar addresses a distinct structural variable that determines whether a proposed transformation is permissible, sustainable, possible, effective, just, and executable. The Index reflects eighteen sub-metrics across those six pillars, each normalized to a 0–100 scale where a higher score is always better.
+The HTR Performance Index scores health system transformation readiness across five pillars: Policy, Technology, Economics, Clinical, and Operations. Each pillar addresses a distinct structural variable that determines whether a proposed transformation is permissible, possible, sustainable, effective, and executable — and every pillar is checked against the Equity Imperative: is it just? The Index reflects fifteen weighted sub-metrics across those five pillars, plus three Equity Imperative indicators tracked separately, each normalized to a 0–100 scale where a higher score is always better.
           </p>
           <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-6">
             <p className="text-indigo-900 font-semibold text-sm leading-relaxed">
-              <strong>Why six pillars?</strong> Policy, Economics, and Technology determine whether a transformation is authorized, funded, and infrastructurally possible. Clinical, Equity, and Operations determine whether it actually works, for whom, and whether the institution can execute it at scale. All six are co-equal structural variables. An analysis that answers only three of the six questions is incomplete — regardless of which three.
+              <strong>Why five pillars, and why is Equity not a sixth?</strong> Policy, Technology, and Economics determine whether a transformation is authorized, infrastructurally possible, and funded. Clinical and Operations determine whether it actually works and whether the institution can execute it at scale. All five are structural variables a composite score can weigh against each other. The Equity Imperative cannot be traded off the same way — a state cannot buy back a justice failure with a higher Policy score — which is why it is tracked as a check on the result rather than blended into the weighted average.
             </p>
           </div>
           <Link
@@ -141,7 +142,7 @@ The HTR Performance Index scores health system transformation readiness across s
             <div className="flex items-center gap-3">
               <span className="text-2xl leading-none">🕸️</span>
               <div>
-                <p className="text-sm font-black text-indigo-700">See how the six pillars interrelate</p>
+                <p className="text-sm font-black text-indigo-700">See how the five pillars interrelate</p>
                 <p className="text-xs text-slate-500">Interactive dependency map — click any pillar to trace its connections</p>
               </div>
             </div>
@@ -237,21 +238,21 @@ The HTR Performance Index scores health system transformation readiness across s
               description="Measures availability of specialist care, behavioral health services, and maternal health within 60 minutes of rural residents. Draws from HRSA Health Professional Shortage Area designations."
               weight="0.05"
             />
-            {/* Equity */}
+            {/* Equity Imperative — tracked, not weighted into the composite (see step 2 below) */}
             <MetricDetail
-              pillar="Equity"
+              pillar="Equity Imperative"
               metric="Rural-Urban Outcome Disparity Gap"
               description="Composite mortality and hospitalization gap between rural and urban populations, covering cardiovascular, maternal, and behavioral health. Narrower gaps score higher."
               weight="0.05"
             />
             <MetricDetail
-              pillar="Equity"
+              pillar="Equity Imperative"
               metric="SDOH Screening & Referral Completion Rate"
               description="Percentage of Medicaid-attributed patients receiving standardized SDOH screening with documented referral completion. Sourced from CMS Quality Payment Program data."
               weight="0.05"
             />
             <MetricDetail
-              pillar="Equity"
+              pillar="Equity Imperative"
               metric="Algorithmic Disparity Index"
               description="Measures documented evidence of algorithmic bias in risk stratification tools deployed in the state, sourced from HHS Office for Civil Rights reports and peer-reviewed audits. Higher scores indicate lower documented bias."
               weight="0.05"
@@ -309,34 +310,37 @@ The HTR Performance Index scores health system transformation readiness across s
               <div className="flex-1">
                 <h3 className="font-bold text-slate-900 mb-2">Composite Performance Score</h3>
                 <p className="ty-body text-slate-600 mb-4">
-                  The final score is a weighted average of six pillar scores. Policy and Economics carry the greatest weight as the foundational structural drivers. Operations, Technology, and Clinical carry equal secondary weights. Equity carries a baseline weight scheduled to increase as data coverage improves:
+                  The final score is a weighted average of the five pillar scores. Policy and Economics carry the greatest weight as the foundational structural drivers; Operations and Clinical carry equal secondary weights; Technology carries the base weight. The Equity Imperative is deliberately NOT a sixth weighted term — see below for how it factors into the result instead:
                 </p>
                 <code className="block bg-slate-50 border border-slate-200 rounded-lg p-4 text-sm font-mono text-slate-800">
-                  Score = (Policy × 0.25) + (Economics × 0.25) + (Operations × 0.15) + (Technology × 0.10) + (Clinical × 0.15) + (Equity × 0.10)
+                  Score = (Policy × 0.28) + (Economics × 0.28) + (Operations × 0.17) + (Clinical × 0.17) + (Technology × 0.10)
                 </code>
                 <p className="text-xs text-slate-400 mt-3 italic">
-                  Note: Operations weight was introduced at 0.15 in the 2026 Index version. Equity weight is scheduled for review in the 2027 Index version as SDOH and algorithmic bias data quality improves across states. We expect to increase Equity weighting to 0.15 as data coverage reaches ≥90% of states, with a corresponding reduction in Technology weighting.
+                  Note: weights were rebalanced in the 2026 Index version when Equity moved out of the weighted composite and into the Equity Imperative check described below.
+                </p>
+                <p className="ty-body text-slate-600 mt-4 mb-2">
+                  <strong>The Equity Imperative check:</strong> after the weighted score above is computed, the three Equity Imperative sub-metrics (disparity gap, SDOH referral completion, algorithmic disparity) are evaluated against a fixed threshold. A state that clears the five-pillar weighted average but fails the Equity Imperative threshold is flagged on the Dashboard rather than assigned a higher composite score — the imperative can only lower a state’s standing, never raise it, since a strong equity showing is the baseline expectation, not a bonus.
                 </p>
               </div>
             </div>
           </div>
 
           {/* Pillar Weight Grid */}
-          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
+          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4 mb-10">
             <PillarBlock
-              pillar="Policy" weight="25%"
+              pillar="Policy" weight="28%"
               barColor="bg-sky-600"
               textColor="text-sky-700"
               metrics={["VBP Adoption", "Telehealth Policy", "Scope of Practice"]}
             />
             <PillarBlock
-              pillar="Economics" weight="25%"
+              pillar="Economics" weight="28%"
               barColor="bg-emerald-500"
               textColor="text-emerald-700"
               metrics={["Per-Capita Efficiency", "Workforce Availability", "Insurance Coverage"]}
             />
             <PillarBlock
-              pillar="Operations" weight="15%"
+              pillar="Operations" weight="17%"
               barColor="bg-teal-500"
               textColor="text-teal-700"
               metrics={["Admin Cost Ratio", "Revenue Cycle Performance", "Workforce Readiness"]}
@@ -348,17 +352,29 @@ The HTR Performance Index scores health system transformation readiness across s
               metrics={["HIE Maturity", "Broadband Access", "EHR Adoption"]}
             />
             <PillarBlock
-              pillar="Clinical" weight="15%"
+              pillar="Clinical" weight="17%"
               barColor="bg-rose-500"
               textColor="text-rose-700"
               metrics={["Preventable Hospitalization", "Operational Viability", "Care Access Index"]}
             />
-            <PillarBlock
-              pillar="Equity" weight="10%"
-              barColor="bg-violet-500"
-              textColor="text-violet-700"
-              metrics={["Outcome Disparity Gap", "SDOH Referral Rate", "Algorithmic Disparity"]}
-            />
+          </div>
+
+          {/* The Equity Imperative check -- outside the 5-tile weight grid above, since
+              it is not a weighted composite input. Same visual language, but no
+              "Index weight" label -- replaced with what it actually does. */}
+          <div className="bg-white border-2 border-violet-300 ring-4 ring-violet-50 rounded-xl overflow-hidden shadow-sm mb-10">
+            <div className="bg-violet-600 px-4 py-3 flex items-center justify-between">
+              <span className="text-white font-black text-sm uppercase tracking-wider">The Equity Imperative</span>
+              <span className="text-white/80 text-xs font-bold">Threshold check, not a weight</span>
+            </div>
+            <ul className="p-4 space-y-2">
+              {["Outcome Disparity Gap", "SDOH Referral Rate", "Algorithmic Disparity"].map((m) => (
+                <li key={m} className="flex items-center gap-2 text-sm text-slate-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-violet-500 shrink-0" />
+                  {m}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
@@ -423,7 +439,7 @@ The HTR Performance Index scores health system transformation readiness across s
         <div className="bg-indigo-700 text-white rounded-2xl p-8 md:p-10 text-center">
           <h3 className="text-xl font-black mb-3">Explore the Performance Index</h3>
           <p className="text-indigo-100 text-sm mb-6">
-            See how every state scores across all six pillars — and drill into sub-metric detail.
+            See how every state scores across all five pillars — and drill into sub-metric detail.
           </p>
           <Link
             href="/dashboard"

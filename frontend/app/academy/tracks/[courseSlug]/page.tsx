@@ -38,7 +38,7 @@ export default async function CourseOverviewPage({ params }: PageProps) {
     .flatMap((t) => t.lessons)
     .reduce((sum, l) => sum + l.estimatedMinutes, 0);
 
-  // Flatten lessons in course order — present as cards, no six-pillar framing.
+  // Flatten lessons in course order — present as cards, no five-pillar framing.
   const lessons = course.tracks.flatMap((t) => t.lessons);
   const totalHours = Math.round((totalMinutes / 60) * 10) / 10;
 

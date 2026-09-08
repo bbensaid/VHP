@@ -89,7 +89,7 @@ const CAPABILITIES = [
     href: "/htr-simulator",
     emoji: "⚙️",
     title: "HTR Simulator",
-    desc: "Score your health transformation strategy across all 6 pillars with our scenario modeler.",
+    desc: "Score your health transformation strategy across all 5 pillars, held to the Equity Imperative, with our scenario modeler.",
     accent: "border-indigo-200 hover:border-indigo-400 hover:bg-indigo-50",
     tag: "Interactive",
     tagColor: "bg-indigo-100 text-indigo-700",
@@ -124,7 +124,7 @@ const CAPABILITIES = [
   {
     href: "/about/framework",
     emoji: "🕸️",
-    title: "Six-Pillar Framework Map",
+    title: "Five-Pillar Framework Map",
     desc: "Interactive dependency map showing how Policy, Economics, Technology, Clinical, Equity, and Operations interrelate.",
     accent: "border-indigo-200 hover:border-indigo-400 hover:bg-indigo-50",
     tag: "Interactive",
@@ -232,7 +232,7 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
               href: "/policy",
               emoji: "🔍",
               label: "Explore Intelligence",
-              desc: "Browse the 6-pillar knowledge base",
+              desc: "Browse the 5-pillar knowledge base",
               bg: "bg-slate-50 hover:bg-slate-100 border-slate-200 hover:border-slate-300",
             },
             {

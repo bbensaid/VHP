@@ -232,7 +232,7 @@ export default function PillarSidebar() {
           className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm bg-indigo-50 border border-indigo-100 text-indigo-700 hover:bg-indigo-100 hover:border-indigo-300 transition-colors font-semibold"
         >
           <span className="text-base leading-none">🕸️</span>
-          Six-Pillar Dependency Map
+          Five-Pillar Dependency Map
         </Link>
       </div>
 

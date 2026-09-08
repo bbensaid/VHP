@@ -10,15 +10,15 @@
  * and any pillar metadata that uses it.
  */
 
-import type { PillarId } from "./pillars";
+import type { FrameworkId } from "./pillars";
 
 export interface Tool {
   id: string;
   label: string;
   href: string;
-  // Which pillar(s) the tool belongs to. A tool can belong to multiple pillars
-  // (e.g., Risk Stratification is Clinical + Equity).
-  pillars: PillarId[];
+  // Which pillar(s) — or the Equity Imperative — the tool belongs to. A tool
+  // can carry both (e.g., Risk Stratification is Clinical + the equity test).
+  pillars: FrameworkId[];
   // Book chapter numbers this tool implements. Used by the book page to surface
   // platform links per chapter.
   chapters?: string[];
@@ -245,7 +245,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/knowledge-workspace?tab=scorecard",
     pillars: ["operations"],
     chapters: ["11", "15"],
-    desc: "Executive six-pillar dashboard — score all six pillars with Vermont AHEAD milestone tracking.",
+    desc: "Executive five-pillar dashboard — score all five pillars, with the Equity Imperative as a cross-cutting indicator and Vermont RHT Program milestone tracking.",
   },
   {
     id: "vbc-readiness",
@@ -253,7 +253,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/knowledge-workspace?tab=readiness",
     pillars: ["operations", "economics"],
     chapters: ["7", "11"],
-    desc: "30-dimension, 6-domain self-assessment producing a readiness score and prioritized gap analysis. Vermont AHEAD presets included.",
+    desc: "30-dimension, 6-domain self-assessment producing a readiness score and prioritized gap analysis. Vermont Act 68 presets included.",
   },
   {
     id: "evidence-library",
@@ -299,20 +299,20 @@ export const TOOLS: readonly Tool[] = [
   // ── Top-level simulators & dashboards ─────────────────────────────────
   {
     id: "framework-map",
-    label: "Six-Pillar Map",
+    label: "Five-Pillar Map",
     href: "/about/framework",
-    pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"],
+    pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"],
     chapters: ["1", "16"],
-    desc: "Explore the Six-Pillar Framework — the conceptual map connecting Policy, Economics, Technology, Clinical, Equity, and Operations.",
+    desc: "Explore the Five-Pillar Framework — the conceptual map connecting Policy, Technology, Economics, Clinical, and Operations, each held to the Equity Imperative.",
   },
   {
     id: "htr-simulator",
     label: "HTR Simulator",
     href: "/htr-simulator",
-    pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"],
+    pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"],
     // Featured in the ch 1, 13, 14, 15 and 16 platform tables.
     chapters: ["1", "13", "14", "15", "16"],
-    desc: "Model health transformation readiness across all six HTR pillars for any organization or state.",
+    desc: "Model health transformation readiness across the five HTR pillars, with the Equity Imperative scored as a cross-cutting justice check, for any organization or state.",
   },
   {
     id: "transformation-friction-index",
@@ -320,7 +320,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/transformation-friction-index",
     pillars: ["policy", "operations"],
     chapters: ["1", "14", "15"],
-    desc: "Quantify implementation barriers to health transformation across all six pillars for any state or organization.",
+    desc: "Quantify implementation barriers to health transformation across all five pillars for any state or organization.",
   },
   {
     id: "investment-tracker",
@@ -334,9 +334,9 @@ export const TOOLS: readonly Tool[] = [
     id: "hti-dashboard",
     label: "HTI Dashboard",
     href: "/hti-dashboard",
-    pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"],
+    pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"],
     chapters: ["13", "15", "16"],
-    desc: "Interactive Health Transformation Index scoring engine — composite scores, sub-indices, and state rankings.",
+    desc: "Interactive Health Transformation Index scoring engine — composite scores across the five pillars plus the Equity Imperative, sub-indices, and state rankings.",
   },
   {
     id: "medicaid-eligibility-simulator",
@@ -376,6 +376,6 @@ export function toolsForChapter(chapterNum: string): readonly Tool[] {
   return TOOLS.filter((t) => t.chapters?.includes(chapterNum));
 }
 
-export function toolsForPillar(pillar: PillarId): readonly Tool[] {
+export function toolsForPillar(pillar: FrameworkId): readonly Tool[] {
   return TOOLS.filter((t) => t.pillars.includes(pillar));
 }
