@@ -2,8 +2,8 @@
   "id": "course_htr_onboarding_v1",
   "slug": "hie-health-reform-onboarding",
   "title": "HIE & Health Reform",
-  "subtitle": "Your foundation in the six pillars of health transformation",
-  "description": "A comprehensive onboarding course for professionals joining Health Information Exchange, health reform, and related programs. Built on the HTR six-pillar framework, this course gives you working fluency in Policy, Technology, Economics, Clinical quality, Health Equity, and Operations.",
+  "subtitle": "Your foundation in health information exchange \u2014 from HIPAA to FHIR",
+  "description": "A comprehensive onboarding course for professionals joining Health Information Exchange, health reform, and related programs. Organized using the HTR five-pillar structure \u2014 Policy, Technology, Economics, Clinical, Operations, and the cross-cutting Equity Imperative \u2014 as a map of where each topic sits, this course builds working knowledge of HIE fundamentals: HIPAA, interoperability standards, payment-model basics, quality measurement, and governance. For the book's own framework and execution-sequence argument, see the Five Pillars, One Imperative course.",
   "targetAudience": [
     "New employees joining HIE organizations",
     "Health reform program staff",
@@ -1971,7 +1971,7 @@
           "order": 1,
           "slug": "hie-workforce-roles",
           "title": "HIE Workforce & Roles",
-          "summary": "The roles, competencies, and organizational structures of health reform programs — and how to be a T-shaped professional across all six pillars.",
+          "summary": "The roles, competencies, and organizational structures of health reform programs \u2014 and how to be a T-shaped professional across all five pillars, with fluency in the Equity Imperative that tests each of them.",
           "estimatedMinutes": 20,
           "isPublished": true,
           "tags": [
@@ -1990,7 +1990,7 @@
             },
             {
               "id": "obj_o2",
-              "text": "Understand the skills most in demand across the six pillars"
+              "text": "Understand the skills most in demand across the five pillars and the Equity Imperative"
             },
             {
               "id": "obj_o3",
@@ -2041,7 +2041,7 @@
             {
               "type": "text",
               "heading": "The T-shaped professional",
-              "body": "The most effective HIE employees are 'T-shaped': deep expertise in one domain (the vertical bar of the T) combined with broad literacy across all six pillars (the horizontal bar).\n\n- A **technical person** who understands policy context makes better architecture decisions — they know why the information blocking exception matters for their API design.\n- A **policy analyst** who understands FHIR asks better questions of the data team and writes more technically grounded legislation.\n- A **clinician** who understands economics designs better quality measures — ones that are both clinically meaningful and incentive-compatible.\n\nThis course is your horizontal bar. Use it."
+              "body": "The most effective HIE employees are 'T-shaped': deep expertise in one domain (the vertical bar of the T) combined with broad literacy across all five pillars \u2014 and fluency in the Equity Imperative that tests each of them \u2014 (the horizontal bar).\n\n- A **technical person** who understands policy context makes better architecture decisions — they know why the information blocking exception matters for their API design.\n- A **policy analyst** who understands FHIR asks better questions of the data team and writes more technically grounded legislation.\n- A **clinician** who understands economics designs better quality measures — ones that are both clinically meaningful and incentive-compatible.\n- Anyone who treats equity as a checklist item, not a lens applied to every decision, will miss the disparities that only show up when you look for them.\n\nThis course is your horizontal bar. Use it."
             },
             {
               "type": "callout",

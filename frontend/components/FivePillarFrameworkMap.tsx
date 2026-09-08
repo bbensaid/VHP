@@ -3,28 +3,43 @@
 import { useState } from "react";
 
 // ── Data ────────────────────────────────────────────────────────────────────
+// Five pillars, load-bearing order (book v46 §1.3): Policy -> Technology ->
+// Economics -> Clinical -> Operations. Equity is NOT a sixth node here — it is
+// the Equity Imperative, drawn as the ring enclosing all five (see the violet
+// arc in the SVG below) and surfaced per-pillar in the detail panel.
 
 const PILLARS = [
   { id: "policy",   n: 1, label: "Policy",     q: '"Is it permissible?"',  color: "#3b82f6", light: "#eff6ff", border: "#bfdbfe", angle: 270 },
-  { id: "econ",     n: 2, label: "Economics",  q: '"Is it sustainable?"',  color: "#10b981", light: "#ecfdf5", border: "#a7f3d0", angle: 330 },
-  { id: "tech",     n: 3, label: "Technology", q: '"Is it possible?"',     color: "#8b5cf6", light: "#f5f3ff", border: "#ddd6fe", angle: 30  },
-  { id: "clinical", n: 4, label: "Clinical",   q: '"Is it effective?"',    color: "#ef4444", light: "#fef2f2", border: "#fecaca", angle: 90  },
-  { id: "equity",   n: 5, label: "Equity",     q: '"Is it just?"',         color: "#a855f7", light: "#faf5ff", border: "#e9d5ff", angle: 150 },
-  { id: "ops",      n: 6, label: "Operations", q: '"Is it executable?"',   color: "#f59e0b", light: "#fffbeb", border: "#fde68a", angle: 210 },
+  { id: "tech",     n: 2, label: "Technology", q: '"Is it possible?"',     color: "#8b5cf6", light: "#f5f3ff", border: "#ddd6fe", angle: 342 },
+  { id: "econ",     n: 3, label: "Economics",  q: '"Is it sustainable?"',  color: "#10b981", light: "#ecfdf5", border: "#a7f3d0", angle: 54  },
+  { id: "clinical", n: 4, label: "Clinical",   q: '"Is it effective?"',    color: "#ef4444", light: "#fef2f2", border: "#fecaca", angle: 126 },
+  { id: "ops",      n: 5, label: "Operations", q: '"Is it executable?"',   color: "#f59e0b", light: "#fffbeb", border: "#fde68a", angle: 198 },
 ] as const;
 
 type PillarId = (typeof PILLARS)[number]["id"];
 
 const PILLAR_DESCS: Record<PillarId, string> = {
   policy:   "Mandatory architecture that converts voluntary reform into structural change. Acts 167 and 68 are the enabling instruments — without statutory authority, no other pillar can reach its potential.",
-  econ:     "Changes the financial logic of every clinical and operational decision. Global budgets make population health management financially rational. RBP breaks the premium inflation chain.",
   tech:     "The data substrate that makes every other pillar manageable. VHCURES, FHIR APIs, and the CIN analytics platform are the operational backbone of population health management.",
+  econ:     "Changes the financial logic of every clinical and operational decision. Global budgets make population health management financially rational. RBP breaks the premium inflation chain.",
   clinical: "Care delivery redesign is the mechanism through which payment reform delivers results. Vermont's Blueprint proves the 5.8:1 ROI from primary care investment.",
-  equity:   "A cross-cutting constraint on every pillar decision. Any payment design, care model, or technology investment must be evaluated for equity impact. Not a separate program — a lens.",
   ops:      "Where transformation succeeds or stays a document. Statutory mandates and clinical models both fail if AHS lacks organizational capacity, project management, and execution discipline.",
 };
 
-type DepType = "enables" | "drives" | "requires" | "constrains";
+// The Equity Imperative's own question, applied to each pillar — not a 6th
+// node, not a directed edge. This is the "is it just?" gate from book v46
+// §1.3 ("Equity is not a row here; it is the Equity Imperative applied to
+// every row"), preserved per-pillar so the substance doesn't disappear along
+// with the old equity node and its edges.
+const EQUITY_CHECK: Record<PillarId, string> = {
+  policy:   "Does the mandate close disparities or widen them? Acts 167 and 68 require equity metrics to be tracked and reported — equity accountability is built into the statutory architecture, not appended to it.",
+  tech:     "Does the data make disparities visible, or bury them in averages? Demographic stratification of VHCURES data is what makes a disparity measurable at all — Vermont's 91% primary care access rate hides an 11-point white/BIPOC gap.",
+  econ:     "Do the incentives reward serving the hardest-to-reach, or penalize it? A VBC contract without social risk adjustment penalizes providers serving high-SDOH populations — the opposite of the intended effect.",
+  clinical: "Effective — and effective for whom? Blueprint and CCBHC expansion are the primary mechanism for closing geographic access gaps; a care model can improve the average while leaving the gap untouched.",
+  ops:      "Executable — and executable everywhere, including rural and under-resourced settings? A transformation that only the best-resourced hospitals can execute widens the gap it was meant to close.",
+};
+
+type DepType = "enables" | "drives" | "requires" | "feedback";
 
 interface Dep {
   from: PillarId;
@@ -35,29 +50,26 @@ interface Dep {
   text: string;
 }
 
+// The nine directed dependencies (book v46 §1.4 / Figure 1.3 — down from
+// fifteen in the six-pillar model, since equity's edges are gone: it is now
+// the cross-cutting check above, not a pillar with its own dependencies).
 const DEPS: Dep[] = [
-  { from: "policy",   to: "econ",     type: "enables",    color: "#10b981", label: "Mandatory authority",     text: "Act 68 forces RBP (FY2027) and global budgets (FY2028). Without statutory force, highest-cost actors opt out — voluntary reform failed for a decade." },
-  { from: "policy",   to: "ops",      type: "requires",   color: "#f59e0b", label: "Statutory deadlines",     text: "Act 68's December 2028 Strategic Plan deadline forces AHS to build execution capacity. Without external accountability, transformation stays aspirational." },
-  { from: "policy",   to: "equity",   type: "enables",    color: "#10b981", label: "Equity mandates",         text: "Acts 167 and 68 embed equity goals into the accountability framework. Policy explicitly requires equity measurement and reporting." },
-  { from: "econ",     to: "clinical", type: "drives",     color: "#3b82f6", label: "Payment incentives",      text: "Under global budgets, preventing hospitalizations saves money. Blueprint's 5.8:1 ROI only matters when the payer captures the savings — economics makes clinical redesign rational." },
-  { from: "econ",     to: "tech",     type: "requires",   color: "#8b5cf6", label: "VBC data needs",          text: "Attribution, benchmarks, shared savings, TCOC — all require VHCURES data. Vermont's AHEAD global budgets cannot function without the AHS-GMCB analytics vendor." },
-  { from: "econ",     to: "equity",   type: "requires",   color: "#a855f7", label: "Social risk adjustment",  text: "VBC contracts ignoring social risk penalize high-SDOH providers. AHEAD global budget design must include social risk adjustment or the equity pillar collapses." },
-  { from: "tech",     to: "econ",     type: "enables",    color: "#10b981", label: "Analytics for VBC",       text: "VHCURES population analytics make APM financial modeling possible. Without TCOC data, benchmarks are wrong and organizations cannot manage to their global budget." },
-  { from: "tech",     to: "equity",   type: "enables",    color: "#10b981", label: "Disparity measurement",   text: "Stratified HEDIS and HEROI scoring require disaggregated VHCURES data. Vermont's race/ethnicity data gaps directly limit the equity pillar's analytical power." },
-  { from: "tech",     to: "clinical", type: "enables",    color: "#10b981", label: "Population health mgmt",  text: "Risk stratification, care gap ID, SDOH screening — all require data infrastructure. Blueprint's clinical registry and AI scribe productivity are technology-pillar products." },
-  { from: "clinical", to: "ops",      type: "requires",   color: "#f59e0b", label: "Care model execution",    text: "Blueprint PCMHs, CoCM, CCBHC — every clinical redesign requires workforce deployment, credentialing, admin infrastructure. Without operations, a care model is a diagram." },
-  { from: "clinical", to: "equity",   type: "enables",    color: "#10b981", label: "Access expansion",        text: "Blueprint + CCBHC expansion is the primary mechanism for closing geographic access gaps. Essex County's 8% uninsurance is partly a primary care access problem." },
-  { from: "ops",      to: "policy",   type: "enables",    color: "#3b82f6", label: "Implementation feedback", text: "AHS monthly transformation reports feed back into policy. GMCB's RBP methodology is shaped by hospital financial data from the operations layer." },
-  { from: "ops",      to: "tech",     type: "requires",   color: "#8b5cf6", label: "Workforce operates infra",text: "CIN analytics, VHCURES reporting, FHIR compliance — all require IT and admin staff. Technology infrastructure is only as functional as the operations workforce running it." },
-  { from: "equity",   to: "policy",   type: "constrains", color: "#6b7280", label: "Equity accountability",   text: "Any policy change — RBP methodology, global budget design, COE assignments — must be evaluated for equity impact. Equity is a constraint on policy design, not an afterthought." },
-  { from: "equity",   to: "clinical", type: "constrains", color: "#6b7280", label: "Clinical audit",          text: "Implicit bias, cultural competence, language access — equity constrains how clinical care is delivered. Blueprint's HRSN screening is driven by equity's requirement to reach disadvantaged populations." },
+  { from: "policy",   to: "tech",     type: "enables",  color: "#10b981", label: "Funds & authorizes the build", text: "Act 68 and the RHT Program fund and authorize the data infrastructure build. Without statutory funding and mandate, the Technology pillar has no forcing function." },
+  { from: "policy",   to: "econ",     type: "enables",  color: "#10b981", label: "Mandatory authority",          text: "Act 68 forces RBP (FY2027) and global budgets (FY2028). Without statutory force, highest-cost actors opt out — voluntary reform failed for a decade under OneCare." },
+  { from: "policy",   to: "ops",      type: "drives",   color: "#3b82f6", label: "Statutory deadlines",          text: "Act 68's December 2028 Strategic Plan deadline forces AHS to build execution capacity. Without external accountability, transformation stays aspirational." },
+  { from: "tech",     to: "econ",     type: "enables",  color: "#10b981", label: "Analytics for VBC",            text: "VHCURES population analytics make APM financial modeling possible. Without TCOC data, benchmarks are wrong and organizations cannot manage to their global budget." },
+  { from: "tech",     to: "clinical", type: "enables",  color: "#10b981", label: "Population health mgmt",       text: "Risk stratification, care gap ID, SDOH screening — all require data infrastructure. Blueprint's clinical registry and AI scribe productivity are technology-pillar products." },
+  { from: "econ",     to: "clinical", type: "drives",   color: "#3b82f6", label: "Payment incentives",           text: "Under global budgets, preventing hospitalizations saves money. Blueprint's 5.8:1 ROI only matters when the payer captures the savings — economics makes clinical redesign rational." },
+  { from: "clinical", to: "ops",      type: "requires", color: "#f59e0b", label: "Care model execution",         text: "Blueprint PCMHs, CoCM, CCBHC — every clinical redesign requires workforce deployment, credentialing, admin infrastructure. Without operations, a care model is a diagram." },
+  { from: "ops",      to: "policy",   type: "feedback", color: "#6b7280", label: "Implementation feedback",      text: "AHS monthly transformation reports feed back into policy. GMCB's RBP methodology is shaped by hospital financial data from the operations layer — a loop that runs after the initial build." },
+  { from: "ops",      to: "tech",     type: "feedback", color: "#6b7280", label: "Workforce operates infra",     text: "CIN analytics, VHCURES reporting, FHIR compliance — all require IT and admin staff. Technology infrastructure is only as functional as the operations workforce running it." },
 ];
 
 const TYPE_STYLE: Record<DepType, { bg: string; color: string }> = {
-  enables:    { bg: "#dcfce7", color: "#15803d" },
-  drives:     { bg: "#dbeafe", color: "#1d4ed8" },
-  requires:   { bg: "#fef9c3", color: "#a16207" },
-  constrains: { bg: "#f3f4f6", color: "#4b5563" },
+  enables:  { bg: "#dcfce7", color: "#15803d" },
+  drives:   { bg: "#dbeafe", color: "#1d4ed8" },
+  requires: { bg: "#fef9c3", color: "#a16207" },
+  feedback: { bg: "#f3f4f6", color: "#4b5563" },
 };
 
 // ── Geometry ─────────────────────────────────────────────────────────────────
@@ -97,19 +109,9 @@ function edgePts(fromAngle: number, toAngle: number) {
   };
 }
 
-function depPath(fromAngle: number, toAngle: number) {
-  const ep = edgePts(fromAngle, toAngle);
-  const mx = (ep.x1 + ep.x2) / 2, my = (ep.y1 + ep.y2) / 2;
-  const dx = ep.x2 - ep.x1, dy = ep.y2 - ep.y1;
-  const nx = -dy, ny = dx;
-  const nl = Math.sqrt(nx * nx + ny * ny);
-  const qx = r4(mx + (nx / nl) * 26), qy = r4(my + (ny / nl) * 26);
-  return `M${ep.x1},${ep.y1} Q${qx},${qy} ${ep.x2},${ep.y2}`;
-}
-
 // ── Component ─────────────────────────────────────────────────────────────────
 
-export default function SixPillarFrameworkMap() {
+export default function FivePillarFrameworkMap() {
   const [sel, setSel] = useState<PillarId | null>(null);
 
   function toggle(id: PillarId) {
@@ -132,10 +134,10 @@ export default function SixPillarFrameworkMap() {
         {/* SVG — viewBox cropped to actual diagram content (25px margin each side) */}
         <div className="relative w-full" style={{ aspectRatio: "3/2" }}>
           <svg
-            viewBox="160 90 480 395"
+            viewBox="140 70 520 435"
             preserveAspectRatio="xMidYMid meet"
             className="absolute inset-0 w-full h-full"
-            aria-label="Six-pillar framework dependency map"
+            aria-label="Five-pillar framework dependency map, with the Equity Imperative applied to every pillar"
           >
             <defs>
               <marker id="mh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
@@ -143,12 +145,23 @@ export default function SixPillarFrameworkMap() {
               </marker>
             </defs>
 
+            {/* The Equity Imperative — the ring enclosing every pillar, not a
+                node among them. Gaps at top/bottom hold its label. */}
+            <circle cx={CX} cy={300} r={205} fill="none" stroke="#a855f7" strokeWidth={2} opacity={0.55}
+              strokeDasharray="482 40" strokeDashoffset={-20} />
+            <text x={CX} y={82} textAnchor="middle" style={{ fontSize: 12, fontWeight: 800, fill: "#a855f7", letterSpacing: "0.06em" }}>
+              THE EQUITY IMPERATIVE
+            </text>
+            <text x={CX} y={512} textAnchor="middle" style={{ fontSize: 11, fontStyle: "italic", fill: "#a855f7" }}>
+              Is it just? — applied to every pillar, at every stage
+            </text>
+
             {/* Hub — centered in the taller viewBox */}
             <circle cx={CX} cy={300} r={56} fill="#f9fafb" stroke="#e5e7eb" strokeWidth={1} />
             <circle cx={CX} cy={300} r={47} fill="#fff" stroke="#f3f4f6" strokeWidth={1} />
             <text x={CX} y={291} textAnchor="middle" dominantBaseline="central" style={{ fontSize: 12, fontWeight: 700, fill: "#374151", letterSpacing: "0.02em" }}>SYSTEM</text>
             <text x={CX} y={307} textAnchor="middle" dominantBaseline="central" style={{ fontSize: 12, fontWeight: 700, fill: "#374151", letterSpacing: "0.02em" }}>OUTCOMES</text>
-            <text x={CX} y={323} textAnchor="middle" dominantBaseline="central" style={{ fontSize: 10, fill: "#9ca3af" }}>all 6 required</text>
+            <text x={CX} y={323} textAnchor="middle" dominantBaseline="central" style={{ fontSize: 10, fill: "#9ca3af" }}>all 5, load-bearing</text>
 
             {/* Spokes */}
             {PILLARS.map((p) => {
@@ -191,7 +204,7 @@ export default function SixPillarFrameworkMap() {
                   fill="none"
                   stroke={d.color}
                   strokeWidth={isActive ? 2.5 : 1.5}
-                  strokeDasharray={d.type === "constrains" ? "3 3" : undefined}
+                  strokeDasharray={d.type === "feedback" ? "3 3" : undefined}
                   markerEnd="url(#mh)"
                   opacity={isFaded ? 0.04 : isActive ? 1 : 0.22}
                   style={{ transition: "opacity .25s, stroke-width .25s" }}
@@ -240,10 +253,10 @@ export default function SixPillarFrameworkMap() {
         {/* Legend — mt-auto pins it to the bottom of the left column */}
         <div className="mt-auto flex flex-wrap items-center gap-x-6 gap-y-2 px-3 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-600 font-medium">
           {[
-            { label: "enables",    style: { background: "#10b981" } as React.CSSProperties },
-            { label: "drives",     style: { background: "#3b82f6" } as React.CSSProperties },
-            { label: "requires",   style: { background: "#f59e0b" } as React.CSSProperties },
-            { label: "constrains", dashed: true },
+            { label: "enables",  style: { background: "#10b981" } as React.CSSProperties },
+            { label: "drives",   style: { background: "#3b82f6" } as React.CSSProperties },
+            { label: "requires", style: { background: "#f59e0b" } as React.CSSProperties },
+            { label: "feedback", dashed: true },
           ].map((leg) => (
             <div key={leg.label} className="flex items-center gap-2">
               {leg.dashed ? (
@@ -254,6 +267,10 @@ export default function SixPillarFrameworkMap() {
               {leg.label}
             </div>
           ))}
+          <div className="flex items-center gap-2">
+            <span className="w-8 h-0.5 shrink-0 rounded border-t-2 border-dashed" style={{ borderColor: "#a855f7" }} />
+            equity imperative (all pillars)
+          </div>
           <span className="ml-auto text-xs text-gray-400 italic">click a pillar to trace its connections</span>
         </div>
       </div>
@@ -266,7 +283,7 @@ export default function SixPillarFrameworkMap() {
             <div className="w-14 h-14 rounded-full bg-slate-100 flex items-center justify-center text-2xl">🕸️</div>
             <p className="text-sm font-semibold text-slate-500">Select a pillar</p>
             <p className="text-xs text-slate-400 max-w-xs leading-relaxed">
-              Click any of the six pillar cards on the diagram to see how it enables, drives, requires, or constrains the others.
+              Click any of the five pillar cards on the diagram to see how it enables, drives, or requires the others — and what the Equity Imperative asks of it.
             </p>
             {/* Quick-select buttons */}
             <div className="mt-3 flex flex-wrap gap-2 justify-center">
@@ -314,6 +331,16 @@ export default function SixPillarFrameworkMap() {
               {PILLAR_DESCS[sel!]}
             </p>
 
+            {/* Equity Imperative check for this pillar — always shown, not
+                conditional on a dependency existing, since the imperative
+                applies whether or not this pillar has equity-tagged edges. */}
+            <div className="px-4 py-3 border-b border-gray-100 shrink-0 bg-violet-50/60">
+              <p className="text-[10px] font-bold uppercase tracking-wide text-violet-700 mb-1">
+                The Equity Imperative, applied here
+              </p>
+              <p className="text-xs text-violet-900 leading-relaxed">{EQUITY_CHECK[sel!]}</p>
+            </div>
+
             {/* Dependency cards — scrollable */}
             <div className="overflow-y-auto flex-1 divide-y divide-gray-100">
               {selDeps.map((d, i) => {
@@ -338,6 +365,11 @@ export default function SixPillarFrameworkMap() {
                   </div>
                 );
               })}
+              {selDeps.length === 0 && (
+                <p className="px-4 py-6 text-xs text-gray-400 text-center italic">
+                  No directed dependencies in or out of this pillar in Figure 1.3 — see the Equity Imperative note above instead.
+                </p>
+              )}
             </div>
 
             {/* Footer hint */}

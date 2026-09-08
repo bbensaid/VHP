@@ -98,7 +98,7 @@ export default async function TracksPage() {
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl leading-relaxed">
             Structured, self-paced courses on health transformation. Built on
-            the six-pillar framework — progress saved automatically.
+            the five-pillar framework — progress saved automatically.
           </p>
         </div>
       </div>

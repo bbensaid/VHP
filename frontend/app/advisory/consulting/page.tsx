@@ -4,7 +4,7 @@ import { ADVISORY_SERVICES, PILLAR_STYLES } from "@/lib/advisory-data";
 export const metadata = {
   title: "Strategic Consulting | HTR Advisory",
   description:
-    "Partner with HTR Advisory's C-suite consulting practice. Strategic frameworks across all 6 pillars: regulatory compliance, value-based care, digital transformation, clinical operations, health equity, operational execution, and M&A.",
+    "Partner with HTR Advisory's C-suite consulting practice. Strategic frameworks across all 5 pillars, held to the Equity Imperative: regulatory compliance, value-based care, digital transformation, clinical operations, operational execution, and M&A.",
 };
 
 const service = ADVISORY_SERVICES.find((s) => s.id === "consulting")!;
@@ -49,7 +49,7 @@ const SIX_SERVICE_CARDS = [
     pillar: "economics" as const,
     icon: "🤝",
     title: "M&A Integration Strategy",
-    description: "Cultural and technical roadmap design for hospital system consolidation, medical group acquisition, and post-merger integration — across all six pillar dimensions simultaneously.",
+    description: "Cultural and technical roadmap design for hospital system consolidation, medical group acquisition, and post-merger integration — across all five pillar dimensions simultaneously, checked against the Equity Imperative.",
     bullets: ["Multi-Pillar Operational Due Diligence", "Technology Stack Rationalization", "Clinical Governance Design", "Culture Integration Playbook"],
   },
 ];
@@ -64,13 +64,13 @@ export default function ConsultingPage() {
           <div className="flex items-center gap-2 mb-4">
             <span className="text-fuchsia-600 font-bold uppercase tracking-widest text-xs">HTR Advisory</span>
             <span className="text-slate-400">·</span>
-            <span className="text-slate-500 text-xs">Spanning All 6 Pillars</span>
+            <span className="text-slate-500 text-xs">Spanning All 5 Pillars</span>
           </div>
           <h1 className="ty-h1 font-bold mb-4 tracking-tight leading-tight">
             Strategic Consulting
           </h1>
           <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed mb-8">
-            We partner with C-suite executives to design resilient operational frameworks spanning all six pillars of healthcare transformation: Policy, Economics, Technology, Clinical, Equity, and Operations. We move beyond theory to implement actionable strategies that protect margins, improve clinical outcomes, and advance health equity — simultaneously.
+            We partner with C-suite executives to design resilient operational frameworks spanning all five pillars of healthcare transformation — Policy, Technology, Economics, Clinical, and Operations — each held to the Equity Imperative. We move beyond theory to implement actionable strategies that protect margins, improve clinical outcomes, and advance health equity — simultaneously.
           </p>
           <div className="flex flex-wrap gap-2">
             {service.pillars.map((p) => (
@@ -85,7 +85,7 @@ export default function ConsultingPage() {
       {/* ── 6 SERVICE AREAS ───────────────────────────────────────────────── */}
       <div className="container mx-auto px-4 md:px-8 mt-12 max-w-5xl">
         <h2 className="text-2xl font-bold text-slate-900 mb-2">Six Consulting Practice Areas</h2>
-        <p className="text-slate-500 mb-8">Each practice area is anchored to one or more of the six HTR pillars — and every engagement draws connections across all six.</p>
+        <p className="text-slate-500 mb-8">Each practice area is anchored to one or more of the five HTR pillars — and every engagement draws connections across all five, checked against the Equity Imperative.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {SIX_SERVICE_CARDS.map((card) => (
             <div key={card.title} className="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all">
@@ -181,7 +181,7 @@ export default function ConsultingPage() {
                 A 600-bed integrated delivery network in the Northeast had just completed a $280M Epic implementation — on time, over budget, and with clinical adoption rates at 34% after 90 days. Claim denials had spiked 22%, and physician satisfaction scores dropped to the 12th percentile.
               </p>
               <p className="text-slate-700 text-sm leading-relaxed mb-4">
-                HTR Advisory was engaged on Day 97 post-go-live. We conducted a full 6-pillar diagnostic: the root cause was not the technology. It was a mismatch between Epic&apos;s workflow design and the clinical operations model, compounded by inadequate front-end revenue cycle training.
+                HTR Advisory was engaged on Day 97 post-go-live. We conducted a full 5-pillar diagnostic: the root cause was not the technology. It was a mismatch between Epic&apos;s workflow design and the clinical operations model, compounded by inadequate front-end revenue cycle training.
               </p>
               <p className="text-slate-700 text-sm leading-relaxed">
                 Within 180 days of engagement, denial rates returned to baseline, physician adoption reached 78%, and the health system recovered $14.2M in previously denied claims through a targeted appeals program.

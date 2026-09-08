@@ -410,7 +410,7 @@ export default function AheadModelPage() {
             HTR Analysis
           </span>
           <h2 className="ty-h1 font-black tracking-tight text-slate-900 mb-4">
-            What AHEAD means across the six pillars.
+            What AHEAD meant across the five pillars — and why Vermont's withdrawal in July 2026 didn't stop the reform.
           </h2>
         </div>
         <div className="grid md:grid-cols-5 gap-4">
@@ -472,7 +472,7 @@ export default function AheadModelPage() {
             Track AHEAD as it unfolds.
           </h2>
           <p className="text-emerald-200 text-lg mb-8 max-w-2xl mx-auto">
-            HTR monitors CMMI releases, state equity benchmark filings, hospital global budget performance, and primary care investment data across all six participating states.
+            HTR monitors CMMI releases, state equity benchmark filings, hospital global budget performance, and primary care investment data across all participating states.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link

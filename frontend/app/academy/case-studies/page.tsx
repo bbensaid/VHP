@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Case Studies | HTR Academy",
-  description: "In-depth case studies on health system transformation — real initiatives, real outcomes, and the decisions behind them across the Six-Pillar Framework.",
+  description: "In-depth case studies on health system transformation — real initiatives, real outcomes, and the decisions behind them across the Five-Pillar Framework.",
 };
 
 interface CaseStudy {

@@ -7,7 +7,7 @@ const PODCAST_SERIES = [
   {
     id: "pillars",
     emoji: "🏛️",
-    title: "Six Pillars Podcast",
+    title: "Five Pillars Podcast",
     desc: "Deep-dive conversations on Policy, Economics, Technology, Clinical, Equity, and Operations — one episode per pillar per month, featuring HTR analysts and field practitioners.",
     frequency: "Monthly · 6 episodes per cycle",
     status: "Launching Q3 2025",
@@ -95,7 +95,7 @@ const LIBRARY_CATEGORIES = [
   { emoji: "📊", label: "Data Reports", count: "Planned 2026", desc: "State-level data reports, benchmarking analyses, and research findings from the HTR Index." },
   { emoji: "🎓", label: "Webinar Recordings", count: "Available now", desc: "Full recordings from HTR webinars and expert sessions.", href: "/academy/webinars" },
   { emoji: "📖", label: "Case Studies", count: "Available now", desc: "In-depth case studies on health system transformation initiatives.", href: "/academy/case-studies" },
-  { emoji: "🗒️", label: "White Papers", count: "Planned 2026", desc: "Long-form analytical papers on Six-Pillar topics, co-authored with academic and policy partners." },
+  { emoji: "🗒️", label: "White Papers", count: "Planned 2026", desc: "Long-form analytical papers on Five-Pillar topics, co-authored with academic and policy partners." },
   { emoji: "🔬", label: "Research Summaries", count: "Planned 2026", desc: "Structured summaries of peer-reviewed research relevant to health system transformation." },
 ];
 
@@ -282,7 +282,7 @@ const LibraryTab = () => (
 
 export const metadata = {
   title: "HTR Multimedia | Podcasts, Videos & Library",
-  description: "Podcasts, video briefings, policy briefs, and the full HTR media library — organized by the Six-Pillar Framework.",
+  description: "Podcasts, video briefings, policy briefs, and the full HTR media library — organized by the Five-Pillar Framework.",
 };
 
 export default function MultimediaHubPage() {

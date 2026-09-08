@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Annual Impact Reports | HTR Advisory",
-  description: "HTR's annual intelligence and impact reports — comprehensive analysis of health system transformation progress, policy shifts, and market dynamics across the Six Pillars.",
+  description: "HTR's annual intelligence and impact reports — comprehensive analysis of health system transformation progress, policy shifts, and market dynamics across the Five Pillars.",
 };
 
 interface Report {

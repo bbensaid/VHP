@@ -144,7 +144,7 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                       Transforming<br />American<br />Healthcare
                     </div>
                     <div className="w-full h-px bg-white/20 mb-1 md:mb-2" />
-                    <div className="text-white/50 text-[7px] md:text-[9px] leading-tight">A Six-Pillar Framework</div>
+                    <div className="text-white/50 text-[7px] md:text-[9px] leading-tight">A Five-Pillar Framework</div>
                   </div>
                 </div>
 
@@ -154,10 +154,10 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                     The Book
                   </div>
                   <h2 className="ty-h1 font-black text-slate-700 line-clamp-2 md:line-clamp-none leading-tight">
-                    Transforming American Healthcare
+                    Transforming Healthcare
                   </h2>
                   <p className="hidden md:block ty-hero text-slate-600 leading-relaxed">
-                    The intellectual foundation of this platform. 20 chapters, 6 pillars, 15 dependency relationships — and Vermont as the primary teaching case for national healthcare transformation.
+                    The intellectual foundation of this platform. 16 chapters, 5 pillars, 9 dependency relationships, and the Equity Imperative — with Vermont as the primary teaching case for national healthcare transformation.
                   </p>
                   <div className="flex flex-wrap gap-2 md:gap-3 pt-1">
                     <Link
@@ -170,7 +170,7 @@ export default function HeroCarousel({ leadStory }: HeroCarouselProps) {
                       href="/about/framework"
                       className="hidden sm:inline-block bg-white text-slate-700 border border-slate-200 px-4 py-2 md:px-6 md:py-3 rounded-lg font-bold text-sm hover:bg-slate-50 transition-colors"
                     >
-                      Six-Pillar Framework
+                      Five-Pillar Framework
                     </Link>
                   </div>
                 </div>

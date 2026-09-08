@@ -1,18 +1,18 @@
 import Link from "next/link";
 import FromTheBook from "@/components/FromTheBook";
-import { PILLARS, type PillarId } from "@/lib/taxonomy/pillars";
+import { PILLARS, EQUITY_IMPERATIVE, type FrameworkId } from "@/lib/taxonomy/pillars";
 import { TOOLS, type Tool } from "@/lib/taxonomy/tools";
 
 export const metadata = {
   title: "HTR Research Lab | Health Transformation Review",
-  description: `${TOOLS.length} interactive analytical tools organized by the six-pillar framework: Policy, Economics, Technology, Clinical, Equity, and Operations.`,
+  description: `${TOOLS.length} interactive analytical tools organized by the five-pillar framework: Policy, Technology, Economics, Clinical, and Operations — plus the cross-cutting Equity Imperative.`,
 };
 
 // Presentation-only color classes per pillar (content comes from the taxonomy).
 // Keyed by PillarId so adding/renaming a pillar is a compile error here, not a
 // runtime undefined.
 type PillarStyle = { color: string; bg: string; border: string; dot: string };
-const PILLAR_STYLES: Record<PillarId, PillarStyle> = {
+const PILLAR_STYLES: Record<FrameworkId, PillarStyle> = {
   policy:     { color: "text-sky-700",     bg: "bg-sky-50",     border: "border-sky-200",     dot: "bg-sky-500" },
   economics:  { color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200", dot: "bg-emerald-500" },
   technology: { color: "text-indigo-700",  bg: "bg-indigo-50",  border: "border-indigo-200",  dot: "bg-indigo-500" },
@@ -27,6 +27,13 @@ const CROSS_PILLAR_STYLE: PillarStyle = { color: "text-amber-700", bg: "bg-amber
 // section; everything else is grouped under its primary (first-listed) pillar.
 const isCrossPillar = (t: Tool) => t.pillars.length >= 4;
 
+// Tools primarily about equity (e.g. the Health Equity Studio, the Population
+// Health Modeler) get their own group, styled apart from the five pillars —
+// not folded into one of them, and not silently dropped now that "equity"
+// is no longer in PILLARS. See the handoff spec §4: the population-equity
+// bench is the Equity Imperative's cross-cutting group, not a pillar bench.
+const isEquityPrimary = (t: Tool) => !isCrossPillar(t) && t.pillars[0] === "equity";
+
 type Section = { id: string; label: string; style: PillarStyle; intelligenceHref?: string; tools: readonly Tool[] };
 
 // Static partition of the registry — computed once at module load.
@@ -36,8 +43,15 @@ const SECTIONS: readonly Section[] = [
     label: p.label,
     style: PILLAR_STYLES[p.id],
     intelligenceHref: p.href,
-    tools: TOOLS.filter((t) => !isCrossPillar(t) && t.pillars[0] === p.id),
+    tools: TOOLS.filter((t) => !isCrossPillar(t) && !isEquityPrimary(t) && t.pillars[0] === p.id),
   })),
+  {
+    id: "equity",
+    label: EQUITY_IMPERATIVE.label,
+    style: PILLAR_STYLES.equity,
+    intelligenceHref: EQUITY_IMPERATIVE.href,
+    tools: TOOLS.filter(isEquityPrimary),
+  },
   {
     id: "cross-pillar",
     label: "Cross-Pillar Simulators & Dashboards",
@@ -56,7 +70,7 @@ export default function ResearchLabPage() {
           <span className="text-[10px] font-black uppercase tracking-widest text-amber-400 block mb-4">HTR Research Lab</span>
           <h1 className="ty-h1-xl font-black tracking-tight mb-5 leading-tight">{TOOLS.length} Analytical Tools — Organized by Domain</h1>
           <p className="ty-hero text-slate-300 max-w-2xl leading-relaxed">
-            Every tool is assigned to one of the six pillars. Access tools directly from their pillar section in the sidebar, or browse the full directory below.
+            Every tool is assigned to one of the five pillars, or to the cross-cutting Equity Imperative. Access tools directly from their section in the sidebar, or browse the full directory below.
           </p>
         </div>
       </div>

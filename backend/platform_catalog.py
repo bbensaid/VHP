@@ -86,7 +86,7 @@ CATALOG = [
         "label": "Vermont AHEAD Model",
         "url": "/ahead-model",
         "category": "Vermont",
-        "description": "Understand Vermont's All-Payer Health Expenditure Approach — structure, milestones, payer obligations, and CMMI oversight.",
+        "description": "Vermont's All-Payer Health Expenditure Approach — the CMMI model Vermont withdrew from in July 2026 after a federal funding renegotiation cut expected funds from ~$138M to a ~$10M cap. Covers the original structure and milestones, and why Act 68's state mandate carried the reform forward without it.",
         "keywords": ["ahead model", "all-payer model", "vermont ahead", "cmmi vermont", "green mountain care board"],
     },
     {
@@ -102,7 +102,7 @@ CATALOG = [
         "label": "Vermont Health Dashboard",
         "url": "/dashboard/vermont",
         "category": "Vermont",
-        "description": "Interactive Vermont-specific health transformation dashboard — hospital performance, AHEAD milestones, and population metrics.",
+        "description": "Interactive Vermont-specific health transformation dashboard — hospital performance, Act 68 milestones, and population metrics.",
         "keywords": ["vermont dashboard", "vermont hospital performance", "vermont health metrics"],
     },
 
@@ -156,7 +156,7 @@ CATALOG = [
         "label": "50-State Dashboard",
         "url": "/dashboard",
         "category": "States & Programs",
-        "description": "Interactive 50-state health transformation dashboard — filter, rank, and compare states across all six pillars.",
+        "description": "Interactive 50-state health transformation dashboard — filter, rank, and compare states across all five pillars, held to the Equity Imperative.",
         "keywords": ["50 state dashboard", "national dashboard", "state ranking", "state scorecard"],
     },
     {
@@ -193,8 +193,8 @@ CATALOG = [
         "label": "HTR Simulator",
         "url": "/htr-simulator",
         "category": "Tools & Simulators",
-        "description": "Model health transformation readiness across all six HTR pillars for any organization or state.",
-        "keywords": ["htr simulator", "transformation readiness", "six pillar simulator"],
+        "description": "Model health transformation readiness across the five HTR pillars, with the Equity Imperative scored as a cross-cutting justice check, for any organization or state.",
+        "keywords": ["htr simulator", "transformation readiness", "five pillar simulator", "equity imperative"],
     },
     {
         "id": "impact-simulation",
@@ -225,7 +225,7 @@ CATALOG = [
         "label": "Transformation Friction Index",
         "url": "/transformation-friction-index",
         "category": "Tools & Simulators",
-        "description": "Quantify implementation barriers to health transformation across all six pillars for any state or organization.",
+        "description": "Quantify implementation barriers to health transformation across all five pillars for any state or organization.",
         "keywords": ["friction index", "transformation friction", "implementation barriers", "change resistance"],
     },
     {
@@ -261,12 +261,12 @@ CATALOG = [
         "keywords": ["multimedia", "videos", "presentations", "webinar recordings", "media"],
     },
     {
-        "id": "six-pillar-map",
-        "label": "Six-Pillar Framework Map",
+        "id": "five-pillar-map",
+        "label": "Five-Pillar Framework Map",
         "url": "/about/framework",
         "category": "Tools & Simulators",
-        "description": "Explore the HTR Six-Pillar Framework — the conceptual map connecting Policy, Economics, Technology, Clinical, Equity, and Operations.",
-        "keywords": ["six pillar", "framework", "pillar map", "htr framework", "conceptual framework"],
+        "description": "Explore the HTR Five-Pillar Framework — the conceptual map connecting Policy, Technology, Economics, Clinical, and Operations, each held to the Equity Imperative.",
+        "keywords": ["five pillar", "equity imperative", "framework", "pillar map", "htr framework", "conceptual framework"],
     },
 
     # ─────────────────────────────────────────────────────────────────────────
@@ -505,8 +505,8 @@ CATALOG = [
         "url": "/research-lab/knowledge-workspace?tab=readiness",
         "category": "Research Lab",
         "subcategory": "Knowledge & Workspace",
-        "description": "30-dimension, 6-domain assessment producing an organizational readiness score and prioritized gap analysis for VBC transformation — Vermont AHEAD and CAH presets included.",
-        "keywords": ["vbc readiness", "value based care readiness", "readiness assessment", "transformation readiness", "ahead readiness"],
+        "description": "30-dimension, 6-domain assessment producing an organizational readiness score and prioritized gap analysis for VBC transformation — Vermont Act 68 and CAH presets included.",
+        "keywords": ["vbc readiness", "value based care readiness", "readiness assessment", "transformation readiness", "act 68 readiness"],
     },
     {
         "id": "lab-transformation-scorecard",
@@ -514,8 +514,8 @@ CATALOG = [
         "url": "/research-lab/knowledge-workspace?tab=scorecard",
         "category": "Research Lab",
         "subcategory": "Knowledge & Workspace",
-        "description": "Executive six-pillar scorecard — self-score Policy, Economics, Technology, Clinical, Equity, and Operations with Vermont AHEAD statutory milestones integrated.",
-        "keywords": ["transformation scorecard", "six pillar scorecard", "executive scorecard", "ahead milestones", "organization scorecard"],
+        "description": "Executive five-pillar scorecard — self-score Policy, Technology, Economics, Clinical, and Operations, checked against the Equity Imperative, with Vermont Act 68 statutory milestones integrated.",
+        "keywords": ["transformation scorecard", "five pillar scorecard", "equity imperative", "executive scorecard", "act 68 milestones", "organization scorecard"],
     },
     {
         "id": "lab-workforce-modeler",
@@ -588,7 +588,7 @@ CATALOG = [
         "label": "Learning Tracks",
         "url": "/academy/tracks",
         "category": "Academy",
-        "description": "Browse structured learning tracks by topic — Policy, Economics, Technology, Clinical, Equity, and Operations.",
+        "description": "Browse structured learning tracks by topic — Policy, Technology, Economics, Clinical, Operations, and the Equity Imperative.",
         "keywords": ["learning tracks", "curriculum tracks", "structured learning"],
     },
     {

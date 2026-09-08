@@ -78,7 +78,7 @@ export default function TermsPage() {
 
       <h2>8. Intellectual Property</h2>
       <p>
-        The Service, including the book <em>Transforming American Healthcare</em>, the HTR Academy
+        The Service, including the book <em>Transforming Healthcare</em>, the HTR Academy
         courses, software, text, graphics, and the &ldquo;HTR&rdquo; and &ldquo;Health
         Transformation Review&rdquo; marks, is owned by HTR or its licensors and protected by law.
         Except for content expressly offered under an open license, all rights are reserved.

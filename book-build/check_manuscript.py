@@ -193,12 +193,11 @@ if n_wtc != 16:
 
 for label, pat, want in (
         ('Key Concepts', r'Key Concepts in This Chapter', 17),
-        # 18, not 16: two of these headings used to carry a subject suffix
-        # ("— Equity Measurement", "— Revenue Cycle and Coding") and so fell
-        # outside this exact-match pattern. They were normalized on 2026-08-06,
-        # because the pipeline styles these sections by matching their text and
-        # a variant title renders as a formatting fault.
-        ('Implications for You', r'^## \*\*Implications for You\*\*', 18)):
+        # 16 since the v46 regeneration: one per chapter, uniformly worded. The
+        # old expectation of 18 counted two legacy duplicates that no longer
+        # exist. The pipeline styles these sections by matching their text, so a
+        # variant title renders as a formatting fault.
+        ('Implications for You', r'^## \*\*Implications for You\*\*', 16)):
     n = len(re.findall(pat, raw, re.M))
     if n != want:
         report('WARN', f'{label} heading count', f'{n}, expected {want}')
@@ -222,9 +221,11 @@ if o != c:
 n_ch = len(re.findall(r'^# \*\*Chapter ', raw, re.M))
 if n_ch != 16:
     report('ERROR', 'Chapter count', f'{n_ch}, expected 16')
+# 8 since v46: the old Appendix I (execution-sequence stages) was folded into
+# Appendix H, and the appendix letters after it shifted up one.
 n_ap = len(re.findall(r'^# \*\*Appendix ', raw, re.M))
-if n_ap != 9:
-    report('WARN', 'Appendix count', f'{n_ap}, expected 9')
+if n_ap != 8:
+    report('WARN', 'Appendix count', f'{n_ap}, expected 8')
 
 # ── output ──────────────────────────────────────────────────────────────────
 errs = [f for f in findings if f[0] == 'ERROR']
