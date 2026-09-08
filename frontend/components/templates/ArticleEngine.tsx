@@ -8,7 +8,7 @@ interface ArticleEngineProps {
   pillar?: string;
 }
 
-// Pillar → color mapping (matches the 6-pillar system)
+// Pillar → color mapping (matches the 5-pillar system + the Equity Imperative)
 const pillarStyles: Record<string, { text: string; bg: string; border: string; dot: string; href: string }> = {
   Policy:     { text: "text-sky-700",     bg: "bg-sky-50",     border: "border-sky-200",    dot: "bg-sky-600",     href: "/policy"      },
   Economics:  { text: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200", dot: "bg-emerald-500", href: "/economics"   },

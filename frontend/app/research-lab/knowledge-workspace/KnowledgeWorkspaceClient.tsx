@@ -43,7 +43,7 @@ const TABS = [
   },
   {
     id: 'scorecard', icon: '🎯', label: 'Transformation Scorecard', badge: 'Executive',
-    desc: 'Six-pillar executive scorecard — score your organization on Policy, Economics, Technology, Clinical, Equity, and Operations with Vermont AHEAD milestone tracking integrated.',
+    desc: 'Five-pillar executive scorecard — score your organization on Policy, Technology, Economics, Clinical, and Operations, checked against the Equity Imperative, with Vermont Act 68 milestone tracking integrated.',
   },
   {
     id: 'readiness', icon: '📊', label: 'VBC Readiness Assessment', badge: 'Transformation',

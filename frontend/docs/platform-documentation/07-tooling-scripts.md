@@ -120,7 +120,7 @@ Repo-root `scripts/`:
   ```
 - **`generate-narration-audio.sh`** — older fallback narration generator.
 
-Narration powers the book listen experience (`/book/listen`, `BookListenPlayer.tsx`) and the platform's voice/TTS layer (`frontend/lib/narration.ts`, `VoiceContext.tsx`, `VoiceFab.tsx`, activated with ⌘⇧V).
+Narration powers the book listen experience (`/book/listen`, `BookListenPlayer.tsx`) and the platform's voice/TTS layer (`frontend/lib/narration.ts`, `VoiceContext.tsx` — voice toggled with ⌘⇧V via the Header mic (the old VoiceFab floating button was removed 2026-08)).
 
 ## 8. Document generation (PDF/DOCX/PPTX)
 

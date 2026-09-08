@@ -28,8 +28,7 @@ Environment variables (backend/.env):
 import asyncio
 import logging
 import os
-import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -102,7 +101,7 @@ STATE_REGIONS = {
 
 def current_quarter() -> str:
     """Returns the most recently completed quarter, e.g. 'Q1-2025'."""
-    now = datetime.utcnow()
+    now = datetime.now(timezone.utc)
     q = (now.month - 1) // 3  # 0-indexed current quarter
     # Use the previous quarter (most recently COMPLETED)
     if q == 0:
@@ -167,10 +166,9 @@ async def fetch_kff_uninsured(client: httpx.AsyncClient) -> dict[str, float]:
     Returns: { state_abbr: uninsured_rate_pct }
     """
     try:
-        # KFF data API — CSV endpoint for uninsured rate
-        url = "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
-        # Note: KFF uses a JavaScript-rendered page; we use their CSV download URL
-        # The actual API endpoint varies — fall back gracefully
+        # KFF publishes uninsured-rate data only behind a JavaScript-rendered
+        # page (kff.org state-indicator pages) — no stable CSV/API endpoint,
+        # so this source falls back to manual values.
         log.info("KFF uninsured rate: using manual fallback (API requires JS rendering)")
         return {}
     except Exception as e:

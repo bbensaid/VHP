@@ -6,11 +6,16 @@ import { ChevronRightIcon, ArrowPathIcon, DocumentArrowDownIcon } from "@heroico
 
 // ─── TYPES ────────────────────────────────────────────────────────────────────
 
-type Pillar = "Policy" | "Economics" | "Technology" | "Clinical" | "Equity" | "Operations";
+// Five pillars, load-bearing order. Equity is a valid impact dimension every
+// scenario still computes (ImpactDimension) but is NOT one of the 5 pillars
+// aggregated into the overall/positive/negative pillar counts below — it is
+// rendered separately as the Equity Imperative check.
+type Pillar = "Policy" | "Technology" | "Economics" | "Clinical" | "Operations";
+type ImpactDimension = Pillar | "Equity";
 type Direction = "positive" | "neutral" | "negative" | "critical";
 
 interface PillarImpact {
-  pillar: Pillar;
+  pillar: ImpactDimension;
   score: number;        // -100 to +100
   direction: Direction;
   headline: string;
@@ -41,7 +46,7 @@ interface InputDef {
 
 // ─── PILLAR CONFIG ────────────────────────────────────────────────────────────
 
-const PILLAR_COLORS: Record<Pillar, { bg: string; text: string; border: string; bar: string }> = {
+const PILLAR_COLORS: Record<ImpactDimension, { bg: string; text: string; border: string; bar: string }> = {
   Policy:     { bg: "bg-sky-50",    text: "text-sky-700",    border: "border-sky-200",    bar: "bg-sky-500" },
   Economics:  { bg: "bg-emerald-50",text: "text-emerald-700",border: "border-emerald-200",bar: "bg-emerald-500" },
   Technology: { bg: "bg-indigo-50", text: "text-indigo-700", border: "border-indigo-200", bar: "bg-indigo-500" },
@@ -172,7 +177,7 @@ const SCENARIOS: ScenarioTemplate[] = [
     label: "Global Budget & Reference-Based Pricing",
     category: "Payment Reform",
     color: "text-emerald-700 border-emerald-200 bg-emerald-50",
-    description: "Model the six-pillar impact of moving PPS hospitals to reference-based pricing at a target % of Medicare, aligned with the Act 167 recommendation of ≤200% Medicare.",
+    description: "Model the five-pillar impact of moving PPS hospitals to reference-based pricing at a target % of Medicare, aligned with the Act 167 recommendation of ≤200% Medicare, checked against the Equity Imperative.",
     inputs: [
       { id: "medicare_pct", label: "Reference price (% of Medicare)", type: "slider", min: 150, max: 300, default: 200, unit: "%" },
       { id: "timeline_months", label: "Phase-in timeline", type: "slider", min: 12, max: 60, default: 36, unit: "months" },
@@ -559,10 +564,15 @@ export default function ImpactSimulationPage() {
 
   const impacts = useMemo(() => scenario.compute(values), [scenario, values]);
 
-  const overallScore = Math.round(impacts.reduce((s, i) => s + i.score, 0) / impacts.length);
+  // The Equity Imperative is checked, not averaged in — it is not one of the
+  // five pillars the overall score aggregates.
+  const pillarImpacts = useMemo(() => impacts.filter((i) => i.pillar !== "Equity"), [impacts]);
+  const equityImpact = impacts.find((i) => i.pillar === "Equity");
+
+  const overallScore = Math.round(pillarImpacts.reduce((s, i) => s + i.score, 0) / pillarImpacts.length);
   const bindingConstraints = impacts.filter((i) => i.bindingConstraint);
-  const positives = impacts.filter((i) => i.score >= 20).length;
-  const negatives = impacts.filter((i) => i.score < -10).length;
+  const positives = pillarImpacts.filter((i) => i.score >= 20).length;
+  const negatives = pillarImpacts.filter((i) => i.score < -10).length;
 
   return (
     <div className="bg-white font-sans text-slate-800 min-h-screen">
@@ -575,7 +585,7 @@ export default function ImpactSimulationPage() {
           </span>
           <h1 className="text-xl sm:text-2xl font-black tracking-tight">Impact Simulation Engine</h1>
           <p className="text-sm text-slate-400 mt-1 max-w-2xl">
-            Select a transformation scenario, adjust parameters, and see how it propagates across all six pillars simultaneously.
+            Select a transformation scenario, adjust parameters, and see how it propagates across all five pillars simultaneously — and whether it passes the Equity Imperative.
           </p>
         </div>
       </section>
@@ -638,7 +648,7 @@ export default function ImpactSimulationPage() {
             <div className="grid grid-cols-3 gap-4">
               <div className={`rounded-xl border p-4 text-center ${scoreToColor(overallScore)}`}>
                 <p className="text-2xl font-black">{overallScore > 0 ? "+" : ""}{overallScore}</p>
-                <p className="text-xs font-bold mt-1">Overall score</p>
+                <p className="text-xs font-bold mt-1">Overall score (5 pillars)</p>
               </div>
               <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-center">
                 <p className="text-2xl font-black text-emerald-700">{positives}</p>
@@ -664,9 +674,20 @@ export default function ImpactSimulationPage() {
             <div>
               <h3 className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">Cross-pillar impact</h3>
               <div className="grid sm:grid-cols-2 gap-4">
-                {impacts.map((impact) => <PillarCard key={impact.pillar} impact={impact} />)}
+                {pillarImpacts.map((impact) => <PillarCard key={impact.pillar} impact={impact} />)}
               </div>
             </div>
+
+            {/* The Equity Imperative check -- deliberately separate from the
+                5-pillar grid above, not a 6th card in the same row. */}
+            {equityImpact && (
+              <div>
+                <h3 className="text-xs font-black uppercase tracking-widest text-violet-600 mb-3">The Equity Imperative — is it just?</h3>
+                <div className="ring-4 ring-violet-50 rounded-xl">
+                  <PillarCard impact={equityImpact} />
+                </div>
+              </div>
+            )}
 
             {/* Score interpretation */}
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">

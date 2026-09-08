@@ -23,11 +23,10 @@ WHY THIS MATTERS:
 
 import logging
 import math
-from typing import Optional
 
 from llama_index.core import Settings
 
-from platform_catalog import CATALOG, BASE_URL
+from platform_catalog import BASE_URL, CATALOG
 
 log = logging.getLogger("htr-brain")
 
@@ -150,7 +149,8 @@ def find_tools_for_query(question: str, top_k: int = 4) -> list[dict]:
     Uses semantic search if the index is built, falls back to keyword matching.
     Always returns a full_url field on each entry.
     """
-    from platform_catalog import CATALOG, BASE_URL, find_relevant_tools as kw_find
+    from platform_catalog import BASE_URL
+    from platform_catalog import find_relevant_tools as kw_find
 
     def _enrich(entries: list[dict]) -> list[dict]:
         result = []

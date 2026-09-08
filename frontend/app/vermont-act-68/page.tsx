@@ -179,7 +179,7 @@ export default function VermontAct68Page() {
             {
               number: "03",
               title: "Statewide Health Care Delivery Strategic Plan — Due December 2028",
-              body: "Directs the Vermont Agency of Human Services to produce a comprehensive Statewide Health Care Delivery Strategic Plan by December 2028, to be submitted to the Vermont Legislature. The plan must specify measurable outcomes for affordability, quality, equity, and access across all six transformation pillars. It must address the 14-hospital tiered network design, Centers of Excellence designation, and population health management infrastructure.",
+              body: "Directs the Vermont Agency of Human Services to produce a comprehensive Statewide Health Care Delivery Strategic Plan by December 2028, to be submitted to the Vermont Legislature. The plan must specify measurable outcomes for affordability, quality, equity, and access across all five transformation pillars. It must address the 14-hospital tiered network design, Centers of Excellence designation, and population health management infrastructure.",
               tag: "Operations Pillar",
             },
             {
@@ -231,12 +231,12 @@ export default function VermontAct68Page() {
         <VermontReformCascade />
       </section>
 
-      {/* ── SIX-PILLAR LENS ───────────────────────────────────────────────── */}
+      {/* ── FIVE-PILLAR LENS ─────────────────────────────────────────────── */}
       <section className="mb-16">
-        <SectionHeader label="Six-Pillar Analysis" title="Act 68 Through the HTR Framework" />
+        <SectionHeader label="Five-Pillar Analysis" title="Act 68 Through the HTR Framework" />
         <p className="text-sm text-slate-600 leading-relaxed mb-6 max-w-3xl">
-          Act 68 is the rare legislation that touches all six pillars simultaneously — confirming
-          the six-pillar framework's analytical premise that structural healthcare reform cannot
+          Act 68 is the rare legislation that touches all five pillars simultaneously — confirming
+          the five-pillar framework's analytical premise that structural healthcare reform cannot
           be addressed through a single domain.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -405,7 +405,7 @@ export default function VermontAct68Page() {
             {
               icon: "📊",
               label: "VBC Transformation Readiness Assessment",
-              desc: "30-dimension assessment across all six pillars. Benchmark your organization's readiness to enter Act 68 global budgets. Identify the operational gaps that must be closed before FY2028.",
+              desc: "30-dimension assessment across all five pillars. Benchmark your organization's readiness to enter Act 68 global budgets. Identify the operational gaps that must be closed before FY2028.",
               href: "/research-lab/knowledge-workspace?tab=readiness",
               chapter: "Chapter 16 — Advisory Infrastructure",
             },

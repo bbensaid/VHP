@@ -183,7 +183,7 @@ const LAB_GROUPS = [
         tab: "?tab=scorecard",
         name: "Transformation Scorecard",
         who: "All roles — especially executives and consultants",
-        when: "When assessing an organization's overall healthcare transformation readiness across all six pillars.",
+        when: "When assessing an organization's overall healthcare transformation readiness across all five pillars.",
         tip: "Self-score honestly — the value is in identifying your lowest-scoring areas, not in a high composite score.",
       },
       {

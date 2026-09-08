@@ -9,7 +9,7 @@
  * lives here. Adding a pillar topic? Edit this file.
  */
 
-import type { PillarId } from "@/lib/taxonomy";
+import type { FrameworkId } from "@/lib/taxonomy";
 
 export interface PillarTopic {
   /** Display label for the card heading. */
@@ -46,7 +46,7 @@ export interface PillarOverviewContent {
   tools: PillarToolLink[];
 }
 
-export const PILLAR_OVERVIEW: Partial<Record<PillarId, PillarOverviewContent>> = {
+export const PILLAR_OVERVIEW: Partial<Record<FrameworkId, PillarOverviewContent>> = {
   // ── CLINICAL ────────────────────────────────────────────────────────────
   clinical: {
     eyebrow: "Clinical Innovation",
@@ -137,7 +137,7 @@ export const PILLAR_OVERVIEW: Partial<Record<PillarId, PillarOverviewContent>> =
     tools: [
       { href: "/research-lab/payment-models", emoji: "💰", title: "Payment Models Lab", desc: "APM Design, Global Budget Modeler, Shared Savings & CEA calculators" },
       { href: "/investment-tracker", emoji: "📈", title: "Investment Tracker", desc: "M&A, PE activity, capital flows & digital-health rounds in real time" },
-      { href: "/hti-dashboard", emoji: "📊", title: "HTI Dashboard", desc: "State-level Health Transformation Index across all six pillars" },
+      { href: "/hti-dashboard", emoji: "📊", title: "HTI Dashboard", desc: "State-level Health Transformation Index across all five pillars plus the Equity Imperative" },
       { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "All 24 tools including financial stress test & HTA Studio" },
     ],
   },
@@ -186,11 +186,13 @@ export const PILLAR_OVERVIEW: Partial<Record<PillarId, PillarOverviewContent>> =
     ],
   },
 
-  // ── EQUITY ──────────────────────────────────────────────────────────────
+  // ── THE EQUITY IMPERATIVE ─────────────────────────────────────────────────
+  // Not a pillar hub like the five above — this page covers the cross-cutting
+  // "is it just?" test applied to every pillar. See pillars.ts / chapters.ts.
   equity: {
-    eyebrow: "Health Equity",
-    title: "Equity Hub",
-    tagline: "Ensuring fair and just opportunities for health across all populations.",
+    eyebrow: "The Equity Imperative",
+    title: "Is It Just?",
+    tagline: "Not a sixth pillar — the test every pillar must pass. Fair and just opportunities for health across all populations, measured against every policy, technology, payment, and care decision.",
     topicGridXlCols: 4,
     topics: [
       {

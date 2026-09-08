@@ -124,7 +124,7 @@ const SECTIONS: Section[] = [
   {
     id: 'knowledge-workspace', icon: '📚', label: 'Knowledge & Workspace',
     tools: [
-      { id: 'scorecard',   icon: '🎯',  label: 'Transformation Scorecard', badge: 'Executive',      badgeCls: 'bg-teal-100 text-teal-700 border-teal-200', desc: 'Executive six-pillar scorecard — self-score Policy, Economics, Technology, Clinical, Equity, and Operations with Vermont AHEAD statutory milestones integrated.' },
+      { id: 'scorecard',   icon: '🎯',  label: 'Transformation Scorecard', badge: 'Executive',      badgeCls: 'bg-teal-100 text-teal-700 border-teal-200', desc: 'Executive five-pillar scorecard — self-score Policy, Technology, Economics, Clinical, and Operations, checked against the Equity Imperative, with Vermont Act 68 statutory milestones integrated.' },
       { id: 'readiness',   icon: '📊',  label: 'VBC Readiness Assessment', badge: 'Transformation', badgeCls: 'bg-emerald-100 text-emerald-700 border-emerald-200', desc: '30-dimension, 6-domain assessment producing an organizational readiness score and prioritized gap analysis for value-based care transformation. Vermont AHEAD, CAH, and advanced system presets included.' },
       { id: 'evidence',    icon: '📖',  label: 'Evidence Library',         badge: 'Research',     badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Search 25 landmark CEA/CUA studies, track 20 CMMI innovation models with full lesson-learned summaries, and browse 15 HTR policy briefs.' },
       { id: 'workforce',   icon: '👨‍⚕️', label: 'Workforce Modeler',         badge: 'Workforce',    badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Project physician supply and demand across 12 specialties over 10 years, simulate nurse staffing ratio impacts, calculate turnover costs, and model rural incentive programs.' },
@@ -285,7 +285,7 @@ function ResearchLabHubInner() {
                 HTR Research Lab
               </h1>
               <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">
-                24 interactive analytical tools spanning every dimension of health system transformation — from FHIR interoperability to six-pillar transformation scorecard.
+                24 interactive analytical tools spanning every dimension of health system transformation — from FHIR interoperability to the five-pillar transformation scorecard.
               </p>
             </div>
           </div>

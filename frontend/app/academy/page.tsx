@@ -22,7 +22,7 @@ export default function AcademyHub() {
       <div className="max-w-5xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-black text-slate-900 mb-2">What the Academy Covers</h2>
         <p className="text-slate-500 mb-10 max-w-2xl">
-          Every program is anchored in the HTR Six-Pillar Framework — Policy, Economics, Technology,
+          Every program is anchored in the HTR Five-Pillar Framework — Policy, Technology, Economics,
           Clinical, Equity, and Operations. Content is produced by practitioners and updated as the landscape shifts.
         </p>
 
@@ -63,7 +63,7 @@ export default function AcademyHub() {
             <p className="text-slate-600 ty-body leading-relaxed">
               Real-world analyses of what worked, what failed, and why — across APM implementations,
               state waiver programs, AI deployments, and equity initiatives. The Glossary provides
-              authoritative definitions across all six pillars.
+              authoritative definitions across all five pillars and the Equity Imperative.
             </p>
           </div>
         </div>

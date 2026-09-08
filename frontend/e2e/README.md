@@ -37,7 +37,7 @@ PLAYWRIGHT_BASE_URL=https://preview-xyz.vercel.app npm run test:e2e
 
 ## How the beta gate is handled
 
-The platform is gated behind a `htr_beta=granted` cookie set by [/beta](../app/beta/page.tsx). [`playwright.config.ts`](../playwright.config.ts) pre-sets this cookie via `storageState` so every test bypasses the gate.
+The platform is gated behind a domain-scoped `htr_beta=granted:<host>` cookie set by [/beta](../app/beta/page.tsx) and checked in [app/layout.tsx](../app/layout.tsx) (the host must match the request host; a bare legacy `granted` value re-prompts at the gate). [`playwright.config.ts`](../playwright.config.ts) pre-sets `granted:localhost` via `storageState` so every test bypasses the gate. Note: testing against a Vercel preview URL with `PLAYWRIGHT_BASE_URL` will hit the gate, because the cookie is pinned to `localhost`.
 
 If the beta gate is removed at GA, the cookie just becomes a no-op — no test change required.
 

@@ -4,7 +4,7 @@
  * Thread page, and the AI Analyst's page-context resolver.
  */
 
-import type { PillarId } from "./pillars";
+import type { FrameworkId } from "./pillars";
 
 export type ProgramGroup =
   | "Vermont Programs"
@@ -15,7 +15,7 @@ export interface Program {
   label: string;
   href: string;
   group: ProgramGroup;
-  pillars: PillarId[];
+  pillars: FrameworkId[];
   /** Book chapters that anchor this program in narrative form. */
   chapters?: string[];
   desc?: string;

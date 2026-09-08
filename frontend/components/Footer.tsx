@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
               <Logo />
             </Link>
             <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-6 max-w-xs">
-              The cross-disciplinary intelligence platform for health system transformation. Six pillars. Fifty states. Zero agenda.
+              The cross-disciplinary intelligence platform for health system transformation. Five pillars. One imperative. Fifty states. Zero agenda.
             </p>
             {/* Social icons */}
             <div className="flex gap-3">
@@ -158,7 +158,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Six Pillars Grid */}
+        {/* Five Pillars Grid */}
         <div className="mb-8 pb-8 border-b border-slate-200 dark:border-slate-700">
           <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 dark:text-slate-400 mb-4">
             Intelligence Pillars

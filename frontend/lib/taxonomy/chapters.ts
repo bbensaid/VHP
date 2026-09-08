@@ -1,5 +1,5 @@
 /**
- * Book chapters of *Transforming American Healthcare* and their platform map.
+ * Book chapters of *Transforming Healthcare* and their platform map.
  *
  * THIS IS THE CRITICAL FILE for book↔platform alignment. The book changes often;
  * this is the one place every other surface reads from:
@@ -15,7 +15,7 @@
  * from tools.ts (preferred) or direct program/page IDs.
  */
 
-import type { PillarId } from "./pillars";
+import type { FrameworkId } from "./pillars";
 import type { Tool } from "./tools";
 import { TOOLS } from "./tools";
 
@@ -25,7 +25,7 @@ export type ChapterGroup =
   | "Technology Pillar"
   | "Economics Pillar"
   | "Clinical Pillar"
-  | "Equity Pillar"
+  | "The Equity Imperative"
   | "Operations Pillar"
   | "Future & Strategy";
 
@@ -40,7 +40,9 @@ export interface Chapter {
   title: string;
   desc: string;
   group: ChapterGroup;
-  pillar: PillarId | null;
+  // Chapter 10 is "equity" — the Equity Imperative, not a pillar — which is
+  // why this isn't PillarId alone. See pillars.ts.
+  pillar: FrameworkId | null;
   /**
    * Mix of tool IDs (resolved against tools.ts) and ad-hoc {label, href} pairs.
    * Strings are treated as tool IDs; objects are used verbatim.
@@ -64,15 +66,15 @@ export const CHAPTERS: readonly Chapter[] = [
   {
     num: "Introduction",
     title: "What Transformation Actually Means",
-    desc: "The Six-Pillar Framework introduced. Why all six pillars must move together — and the Vermont Thread that runs through the entire book.",
+    desc: "The Five-Pillar Framework introduced. Why the five pillars are load-bearing in sequence, why equity is an imperative rather than a sixth pillar — and the Vermont Thread that runs through the entire book.",
     group: "Foundations",
     pillar: null,
     platformLinks: ["framework-map", "htr-simulator"],
   },
   {
     num: "1",
-    title: "The Six-Pillar Framework and the Execution Sequence",
-    desc: "The six pillars defined, their 15 dependency relationships, and the failure cascade when any one is missing. Then the execution sequence: the OneCare Vermont failure as a sequencing autopsy, why Technology must precede Economics, the six stages, and the three sequencing principles in practice.",
+    title: "The Five-Pillar Framework and the Execution Sequence",
+    desc: "The five pillars defined, their nine dependency relationships, the Equity Imperative applied to each, and the failure cascade when any one pillar is missing. Then the execution sequence: the OneCare Vermont failure as a sequencing autopsy, why Technology must precede Economics, the five stages, and the three sequencing principles in practice.",
     group: "Foundations",
     pillar: null,
     platformLinks: ["framework-map", "htr-simulator", "transformation-friction-index"],
@@ -185,12 +187,12 @@ export const CHAPTERS: readonly Chapter[] = [
     ],
   },
 
-  // ── Equity Pillar ───────────────────────────────────────────────────────
+  // ── The Equity Imperative ──────────────────────────────────────────────
   {
     num: "10",
-    title: "The Equity Pillar — Closing Gaps, Not Just Averaging Them",
-    desc: "Why average outcomes are the wrong target. Vermont's equity landscape and disparity root-cause taxonomy. Rural equity, the GLP-1 access crisis, and measuring equity with HEROI and HEDIS stratification.",
-    group: "Equity Pillar",
+    title: "The Equity Imperative — Closing Gaps, Not Just Averaging Them",
+    desc: "Why average outcomes are the wrong target. Equity as the test every pillar must pass — \"is it just?\" — not a sixth thing to build. Vermont's equity landscape and disparity root-cause taxonomy. Rural equity, the GLP-1 access crisis, and measuring equity with HEROI and HEDIS stratification.",
+    group: "The Equity Imperative",
     pillar: "equity",
     platformLinks: [
       { label: "Vermont SDOH & Social Services", href: "/vermont-sdoh" },
@@ -233,7 +235,7 @@ export const CHAPTERS: readonly Chapter[] = [
   {
     num: "13",
     title: "The Future of Healthcare Transformation: 2026, What Vermont Proves, and What Remains",
-    desc: "Vermont's six-pillar scorecard (April 2026). Five forces shaping the next decade. The six-pillar forecast 2026–2035 and Vermont's two ten-year trajectories.",
+    desc: "Vermont's five-pillar scorecard (April 2026). Five forces shaping the next decade. The five-pillar forecast 2026–2035 and Vermont's two ten-year trajectories.",
     group: "Future & Strategy",
     pillar: null,
     platformLinks: ["innovation-leaderboard", "hti-dashboard", { label: "Trending Topics", href: "/trending-topics" }],
@@ -251,7 +253,7 @@ export const CHAPTERS: readonly Chapter[] = [
   },
   {
     num: "15",
-    title: "Healthcare Transformation as Portfolio Management: Applying PMI Standards to Six-Pillar Reform",
+    title: "Healthcare Transformation as Portfolio Management: Applying PMI Standards to Five-Pillar Reform",
     desc: "Project, program, and portfolio levels. Vermont's 19-component transformation portfolio. The portfolio risk register, benefits realization, and the case for a transformation portfolio office.",
     group: "Future & Strategy",
     pillar: null,
@@ -259,8 +261,8 @@ export const CHAPTERS: readonly Chapter[] = [
   },
   {
     num: "16",
-    title: "The AHS Restructuring Roadmap: A Six-Pillar Framework for System Architects",
-    desc: "Vermont's Agency of Human Services restructuring as a live six-pillar implementation case. The statutory mandate of Act 68, the redesigned AHS operating model, and a framework for the 2028 Statewide Strategic Plan.",
+    title: "The AHS Restructuring Roadmap: A Five-Pillar Framework for System Architects",
+    desc: "Vermont's Agency of Human Services restructuring as a live five-pillar implementation case. The statutory mandate of Act 68, the redesigned AHS operating model, and a framework for the 2028 Statewide Strategic Plan.",
     group: "Future & Strategy",
     pillar: null,
     platformLinks: [
@@ -292,7 +294,7 @@ export const CHAPTER_GROUPS: readonly ChapterGroup[] = [
   "Technology Pillar",
   "Economics Pillar",
   "Clinical Pillar",
-  "Equity Pillar",
+  "The Equity Imperative",
   "Operations Pillar",
   "Future & Strategy",
 ] as const;
@@ -301,7 +303,7 @@ export function chaptersByGroup(group: ChapterGroup): Chapter[] {
   return CHAPTERS.filter((c) => c.group === group);
 }
 
-export function chaptersForPillar(pillar: PillarId): Chapter[] {
+export function chaptersForPillar(pillar: FrameworkId): Chapter[] {
   return CHAPTERS.filter((c) => c.pillar === pillar);
 }
 

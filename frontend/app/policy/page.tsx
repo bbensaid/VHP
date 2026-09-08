@@ -4,7 +4,7 @@ import HR1Tracker from "@/components/policy/HR1Tracker";
 export const metadata = {
   title: "Policy | Health Transformation Review",
   description:
-    "Healthcare policy analysis covering federal regulation, public health mandates, global comparative policy, and feasibility studies — grounded in the HTR Six-Pillar Framework.",
+    "Healthcare policy analysis covering federal regulation, public health mandates, global comparative policy, and feasibility studies — grounded in the HTR Five-Pillar Framework.",
 };
 
 export default function Page() {

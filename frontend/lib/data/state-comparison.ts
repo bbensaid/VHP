@@ -10,7 +10,7 @@
  * STATES and provide its column for every existing row.
  */
 
-import type { PillarId } from "@/lib/taxonomy";
+import type { FrameworkId } from "@/lib/taxonomy";
 
 export interface StateColumn {
   id: "vermont" | "oregon" | "california";
@@ -41,7 +41,7 @@ export interface ComparisonRow {
   /** Row label (left column). */
   label: string;
   /** Optional pillar tag if the row belongs to a specific pillar. */
-  pillar?: PillarId;
+  pillar?: FrameworkId;
   /** Optional row caption shown under the label. */
   caption?: string;
   cells: Record<StateColumn["id"], ComparisonCell>;

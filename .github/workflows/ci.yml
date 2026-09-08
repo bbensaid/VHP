@@ -151,9 +151,8 @@ jobs:
         run: mypy main.py --ignore-missing-imports --no-strict-optional
         continue-on-error: true  # Non-blocking until type coverage improves
 
-      - name: Test (pytest)
-        run: python -m pytest tests/ -v --tb=short
-        continue-on-error: true  # Non-blocking until test suite is established
+      # No pytest step: backend/tests/ does not exist yet. Add the step back
+      # (python -m pytest tests/) when a real suite lands.
 
   # ── Deploy (main branch only) ─────────────────────────────────────────────────
   deploy-notify:
@@ -167,5 +166,5 @@ jobs:
         run: |
           echo "✅ All checks passed on main."
           echo "Vercel will auto-deploy the frontend."
-          echo "Railway will auto-deploy the backend."
-          echo "Run POST /api/ingest on Railway after backend deploy to rebuild the RAG index."
+          echo "Fly.io deploys the backend via fly-deploy.yml when backend/** changed."
+          echo "Run POST /api/ingest on the Fly app after backend deploy to rebuild the RAG index."

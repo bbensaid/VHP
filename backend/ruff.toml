@@ -1,0 +1,11 @@
+# Pin the lint surface so CI (`pip install ruff && ruff check .`) is deterministic
+# across ruff releases. Rules beyond this set are advisory, not blocking.
+target-version = "py311"
+
+[lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[lint.per-file-ignores]
+# Deliberate: load_dotenv() must run before app imports read env at import time
+"main.py" = ["E402"]
+"config.py" = ["E402"]

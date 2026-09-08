@@ -10,7 +10,7 @@ from typing import List, Optional
 
 from llama_index.core import Settings
 from llama_index.core.retrievers import BaseRetriever
-from llama_index.core.schema import NodeWithScore, TextNode, QueryBundle
+from llama_index.core.schema import NodeWithScore, QueryBundle, TextNode
 from supabase import Client as SupabaseClient
 
 from services.llm import get_ranker
@@ -152,8 +152,6 @@ def rerank_nodes(query: str, nodes: List[NodeWithScore], top_k: int = 5) -> List
         log.warning(f"Re-ranking failed: {e}")
         return nodes[:top_k]
 
-
-_PLATFORM_BASE = "https://healthtransformationreview.org"
 
 # Maps Sanity content_type → platform URL prefix
 _SOURCE_TYPE_URL_MAP = {

@@ -9,7 +9,7 @@
  */
 
 import FromTheBook from "./FromTheBook";
-import { chaptersForPillar, type PillarId } from "@/lib/taxonomy";
+import { chaptersForPillar, type FrameworkId } from "@/lib/taxonomy";
 
 /**
  * ⚠️ Chapter numbers in these excerpts must match `chapters.ts`.
@@ -23,7 +23,7 @@ import { chaptersForPillar, type PillarId } from "@/lib/taxonomy";
  *
  * `scripts/audit-pillar-excerpts.mjs` verifies this file against chapters.ts.
  */
-const PILLAR_EXCERPTS: Record<PillarId, { title: string; excerpt: string }> = {
+const PILLAR_EXCERPTS: Record<FrameworkId, { title: string; excerpt: string }> = {
   policy: {
     title: "The Policy Pillar — Legislative Architecture for Structural Reform",
     excerpt:
@@ -32,7 +32,7 @@ const PILLAR_EXCERPTS: Record<PillarId, { title: string; excerpt: string }> = {
   economics: {
     title: "The Economics Pillar — Global Budgets, Reference-Based Pricing, and Financial Reform",
     excerpt:
-      "Chapter 6 dissects the fee-for-service trap, reference-based pricing mechanics, Maryland's decade of global-budget evidence, and how the AHEAD Model integrates with Act 68's mandate. Chapter 7 provides the VBC financial modeling toolkit: shared savings, APM readiness, and the 65-item contract review checklist.",
+      "Chapter 6 dissects the fee-for-service trap, reference-based pricing mechanics, Maryland's decade of global-budget evidence, and Vermont's July 2026 withdrawal from the AHEAD Model after a federal funding renegotiation — and why Act 68's state mandate carried the reform through it. Chapter 7 provides the VBC financial modeling toolkit: shared savings, APM readiness, and the 65-item contract review checklist.",
   },
   technology: {
     title: "The Technology Pillar — Data Infrastructure for a Transformed Health System",
@@ -45,7 +45,7 @@ const PILLAR_EXCERPTS: Record<PillarId, { title: string; excerpt: string }> = {
       "Chapter 8 covers Vermont's Blueprint for Health, the behavioral health crisis architecture, the Collaborative Care Model, and the PACE/long-term care gap. Chapter 9 provides the PCMH transformation playbook, HEDIS improvement methodology, and the Vermont clinical transformation toolkit.",
   },
   equity: {
-    title: "The Equity Pillar — Closing Gaps, Not Just Averaging Them",
+    title: "The Equity Imperative — Closing Gaps, Not Just Averaging Them",
     excerpt:
       "Chapter 10 treats SDOH as a structural variable, not a downstream filter — covering Vermont's rural-urban divide, the Northeast Kingdom, the GLP-1 access crisis, and algorithmic bias in clinical AI. It then operationalizes equity measurement through stratified HEDIS, the HEROI Index, and VBC equity safeguards.",
   },
@@ -72,7 +72,7 @@ function formatChapterRange(nums: string[]): string {
 }
 
 interface Props {
-  pillarId: PillarId;
+  pillarId: FrameworkId;
   href?: string;
 }
 

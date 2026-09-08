@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "About HTR | Health Transformation Review",
-  description: "HTR is an independent intelligence platform for healthcare transformation leaders — grounded in the Six-Pillar Framework of Policy, Economics, Technology, Clinical, Equity, and Operations.",
+  description: "HTR is an independent intelligence platform for healthcare transformation leaders — grounded in the Five-Pillar Framework of Policy, Technology, Economics, Clinical, and Operations, each held to the Equity Imperative.",
 };
 
 const pillars = [
@@ -21,20 +21,6 @@ const pillars = [
     subcategories: ["Regulation & Legislation", "Public Health Mandates", "Global & Comparative Policy", "Policy Feasibility Studies"],
   },
   {
-    id: "economics",
-    label: "Economics",
-    color: "text-emerald-700",
-    bg: "bg-emerald-50",
-    border: "border-emerald-200",
-    accent: "bg-emerald-500",
-    hover: "hover:border-emerald-400 hover:bg-emerald-50/80",
-    question: "Is it sustainable?",
-    href: "/economics",
-    description:
-      "Value-based care modeling, market dynamics, and workforce investment strategy. We follow capital flows to determine what health system transformation can actually afford.",
-    subcategories: ["Value-Based Care Models", "Market & Finance", "Labor & Workforce Strategy", "Healthcare Investment Trends"],
-  },
-  {
     id: "technology",
     label: "Technology",
     color: "text-indigo-700",
@@ -47,6 +33,20 @@ const pillars = [
     description:
       "AI integration, digital infrastructure, and data governance. We evaluate the tools that amplify human clinical capacity and determine operational feasibility at the point of care.",
     subcategories: ["AI & Machine Learning", "Digital Health & Telemedicine", "Data Security & Governance", "Tech-Enabled Workflow"],
+  },
+  {
+    id: "economics",
+    label: "Economics",
+    color: "text-emerald-700",
+    bg: "bg-emerald-50",
+    border: "border-emerald-200",
+    accent: "bg-emerald-500",
+    hover: "hover:border-emerald-400 hover:bg-emerald-50/80",
+    question: "Is it sustainable?",
+    href: "/economics",
+    description:
+      "Value-based care modeling, market dynamics, and workforce investment strategy. We follow capital flows to determine what health system transformation can actually afford.",
+    subcategories: ["Value-Based Care Models", "Market & Finance", "Labor & Workforce Strategy", "Healthcare Investment Trends"],
   },
   {
     id: "clinical",
@@ -63,20 +63,6 @@ const pillars = [
     subcategories: ["Hospital-at-Home", "Precision Medicine", "Virtual Care Models", "Population Health"],
   },
   {
-    id: "equity",
-    label: "Equity",
-    color: "text-violet-700",
-    bg: "bg-violet-50",
-    border: "border-violet-200",
-    accent: "bg-violet-500",
-    hover: "hover:border-violet-400 hover:bg-violet-50/80",
-    question: "Is it just?",
-    href: "/equity",
-    description:
-      "SDOH integration, algorithmic bias, and access disparity analysis. We hold transformation accountable to the communities it is meant to serve.",
-    subcategories: ["SDOH Integration", "Algorithmic Bias", "Access Disparity", "Community Engagement"],
-  },
-  {
     id: "operations",
     label: "Operations",
     color: "text-teal-700",
@@ -91,6 +77,23 @@ const pillars = [
     subcategories: ["Revenue Cycle Management", "Workforce & Human Capital", "Quality, Compliance & Risk", "Supply Chain & Infrastructure"],
   },
 ];
+
+// Not one of the five scored/listed pillars above -- the cross-cutting test
+// applied to each. See pillars.ts.
+const equityImperative = {
+  id: "equity",
+label: "The Equity Imperative",
+  color: "text-violet-700",
+  bg: "bg-violet-50",
+  border: "border-violet-200",
+  accent: "bg-violet-500",
+  hover: "hover:border-violet-400 hover:bg-violet-50/80",
+  question: "Is it just?",
+  href: "/equity",
+  description:
+    "SDOH integration, algorithmic bias, and access disparity analysis. We hold transformation accountable to the communities it is meant to serve.",
+  subcategories: ["SDOH Integration", "Algorithmic Bias", "Access Disparity", "Community Engagement"],
+};
 
 const stats = [
   { value: "50", label: "States Tracked", suffix: "" },
@@ -266,7 +269,7 @@ export default function AboutPage() {
               American healthcare commands the world's largest share of GDP — yet outcomes lag peer nations, costs remain unsustainable, and access is still determined more by geography and income than by clinical need. The capital and political will exist. The missing ingredient is coordinated, cross-disciplinary intelligence.
             </p>
             <p className="ty-hero text-slate-600 leading-relaxed">
-              HTR exists to close that gap. Our six-pillar framework — Policy, Economics, Technology, Clinical, Equity, and Operations — ensures that no decision is made in isolation. Every insight is stress-tested across all dimensions before it reaches you.
+              HTR exists to close that gap. Our five-pillar framework — Policy, Technology, Economics, Clinical, and Operations — ensures that no decision is made in isolation, and the Equity Imperative tests every one of them. Every insight is stress-tested across all dimensions before it reaches you.
             </p>
           </div>
 
@@ -329,7 +332,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── 6 PILLARS ─────────────────────────────────────────────────────── */}
+      {/* ── 5 PILLARS + THE EQUITY IMPERATIVE ────────────────────────────── */}
       <section className="bg-slate-50 border-y border-slate-200 py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
@@ -337,14 +340,14 @@ export default function AboutPage() {
               Our Intelligence Framework
             </span>
             <h2 className="ty-h1 font-black tracking-tight text-slate-900 mb-4">
-              Six Pillars. One Framework.
+              Five Pillars. One Imperative.
             </h2>
             <p className="ty-hero text-slate-500 max-w-2xl mx-auto">
-              Where the original model analyzed three dimensions, HTR's evolved framework asks six essential questions — because transformation that ignores clinical evidence, equity, or operational reality is incomplete.
+              Where the original model analyzed three dimensions, HTR's evolved framework asks five essential questions of every pillar — and one more of the result: is it just? Transformation that ignores clinical evidence, justice, or operational reality is incomplete.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
             {pillars.map((p) => (
               <Link
                 key={p.id}
@@ -376,6 +379,40 @@ export default function AboutPage() {
               </Link>
             ))}
           </div>
+
+          {/* The Equity Imperative — outside the 5-up grid above, with a
+              ring instead of a plain border, so it reads as the test applied
+              to the five rather than a sixth card in the same row. */}
+          <Link
+            href={equityImperative.href}
+            className={`group block mt-4 p-6 bg-white rounded-xl border-2 ${equityImperative.border} ring-4 ring-violet-50 ${equityImperative.hover} transition-all duration-200 shadow-sm hover:shadow-md`}
+          >
+            <div className="flex items-start justify-between gap-6 flex-wrap">
+              <div>
+                <div className={`w-10 h-1 ${equityImperative.accent} rounded-full mb-5`} />
+                <h3 className={`text-xl font-black mb-2 ${equityImperative.color}`}>
+                  {equityImperative.label}
+                </h3>
+                <p className="text-xs text-slate-500 mb-4 leading-relaxed max-w-md">
+                  {equityImperative.description}
+                </p>
+                <div className={`inline-block text-xs font-black italic ${equityImperative.color} ${equityImperative.bg} px-2 py-1 rounded`}>
+                  &ldquo;{equityImperative.question}&rdquo; — applied to every pillar above
+                </div>
+              </div>
+              <ul className="space-y-1">
+                {equityImperative.subcategories.map((cat) => (
+                  <li key={cat} className="text-[11px] text-slate-500 flex items-center gap-1.5">
+                    <span className={`w-1 h-1 rounded-full shrink-0 ${equityImperative.accent}`} />
+                    {cat}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className={`mt-4 text-xs font-bold ${equityImperative.color} opacity-0 group-hover:opacity-100 transition-opacity`}>
+              Explore the Equity Imperative →
+            </div>
+          </Link>
         </div>
       </section>
 
@@ -442,7 +479,7 @@ export default function AboutPage() {
               One analyst per pillar. Zero silos.
             </h2>
             <p className="text-slate-500 mt-4 max-w-xl mx-auto">
-              Each domain is led by a dedicated principal analyst — former policymakers, practicing clinicians, credentialed economists, and health operations executives who collaborate to ensure every insight accounts for all six dimensions.
+              Each domain is led by a dedicated principal analyst — former policymakers, practicing clinicians, credentialed economists, and health operations executives who collaborate to ensure every insight accounts for all five pillars and the Equity Imperative.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -505,7 +542,7 @@ export default function AboutPage() {
           The intelligence you need is already here.
         </h2>
         <p className="ty-hero text-slate-500 mb-8 max-w-xl mx-auto">
-          Start with the State Performance Dashboard, or dive into any of the six pillars. Every page is built for action, not just reading.
+          Start with the State Performance Dashboard, or dive into any of the five pillars. Every page is built for action, not just reading.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link href="/dashboard" className="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-700 transition-colors">

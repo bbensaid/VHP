@@ -3,11 +3,19 @@
 import React, { useState, useRef, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ShieldCheckIcon, ExclamationTriangleIcon } from "@heroicons/react/24/outline";
+import { getBrandConfig, resolveBrand } from "@/lib/brand";
 
 function BetaGateContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const redirectTo = searchParams.get("from") || "/";
+
+  // The gate renders outside BrandProvider (app/layout.tsx skips providers
+  // until beta access is granted), so resolve the brand from the hostname.
+  const [brandName, setBrandName] = useState("HTR");
+  useEffect(() => {
+    setBrandName(getBrandConfig(resolveBrand(window.location.hostname)).displayName);
+  }, []);
 
   const [code, setCode] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
@@ -60,7 +68,7 @@ function BetaGateContent() {
             <ShieldCheckIcon className="w-7 h-7 text-white" />
           </div>
           <h1 className="text-2xl font-black text-slate-900 tracking-tight">
-            Health Transformation Review
+            {brandName}
           </h1>
           {/* <p className="text-slate-500 text-sm mt-1">htr.health</p> */}
         </div>

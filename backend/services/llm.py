@@ -9,25 +9,31 @@ Fallback chain (Groq tiers):
   propagating the error to the caller.
 """
 
-import asyncio
 import logging
 from typing import Any, Optional, Sequence
 
 from llama_index.core import Settings
-from llama_index.core.llms import LLM, CompletionResponse, CompletionResponseGen
-from llama_index.core.llms import ChatMessage, ChatResponse, ChatResponseGen, ChatResponseAsyncGen
+from llama_index.core.llms import (
+    LLM,
+    ChatMessage,
+    ChatResponse,
+    ChatResponseAsyncGen,
+    ChatResponseGen,
+    CompletionResponse,
+    CompletionResponseGen,
+)
+from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.llms.groq import Groq as GroqLLM
 from llama_index.llms.openai import OpenAI as OpenAILLM
-from llama_index.embeddings.openai import OpenAIEmbedding
 
 from config import (
-    GROQ_API_KEY,
     ANTHROPIC_API_KEY,
-    OPENAI_API_KEY,
+    EMBEDDING_MODEL,
+    GROQ_API_KEY,
+    MODEL_ADVISORY,
     MODEL_FREE,
     MODEL_SUBSCRIBER,
-    MODEL_ADVISORY,
-    EMBEDDING_MODEL,
+    OPENAI_API_KEY,
 )
 
 log = logging.getLogger("htr-brain")

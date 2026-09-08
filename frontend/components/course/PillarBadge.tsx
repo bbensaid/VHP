@@ -6,7 +6,7 @@ const PILLAR_CONFIG: Record<Pillar, { label: string; className: string }> = {
   technology: { label: "Technology Pillar", className: "bg-emerald-50 text-emerald-800 border border-emerald-200" },
   economics:  { label: "Economics Pillar",  className: "bg-amber-50 text-amber-800 border border-amber-200" },
   clinical:   { label: "Clinical Pillar",   className: "bg-pink-50 text-pink-800 border border-pink-200" },
-  equity:     { label: "Equity Pillar",     className: "bg-purple-50 text-purple-800 border border-purple-200" },
+  equity:     { label: "Equity Imperative", className: "bg-purple-50 text-purple-800 border border-purple-200" },
   operations: { label: "Operations Pillar", className: "bg-green-50 text-green-800 border border-green-200" },
 };
 
