@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import FromTheBook from "@/components/FromTheBook";
 import {
   ArrowTrendingUpIcon,
   ExclamationTriangleIcon,
@@ -104,6 +105,16 @@ export default function TransformationFrictionIndexPage() {
             Interactive scoring tool — Coming Q3 2026
           </div>
         </div>
+      </section>
+
+      {/* ── FROM THE BOOK ─────────────────────────────────────────────────── */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
+        <FromTheBook
+          chapter="Chapter 1"
+          chapterTitle="The Five-Pillar Framework and the Execution Sequence"
+          excerpt="Friction is what a closed gate feels like from the inside. Chapter 1 defines the binding constraint — the one pillar whose incompleteness stalls everything downstream of it — and argues that identifying it is the first analytical task of any transformation. This index is that diagnosis, scored."
+          href="/read/chapter-01"
+        />
       </section>
 
       {/* ── WHAT IT MEASURES ──────────────────────────────────────────────── */}

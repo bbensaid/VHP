@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import FromTheBook from "@/components/FromTheBook";
 import {
   CpuChipIcon,
   InformationCircleIcon,
@@ -258,6 +259,13 @@ export default function HTRSimulatorPage() {
       </div>
 
       <div className="max-w-5xl mx-auto px-6 py-16 space-y-20">
+
+        <FromTheBook
+          chapter="Chapter 1"
+          chapterTitle="The Five-Pillar Framework and the Execution Sequence"
+          excerpt="This simulator enforces the dependency logic Chapter 1 argues: score high on Economics while Policy is voluntary and Technology is unbuilt, and the composite collapses — not because the economics inputs are weak, but because downstream investment cannot open an upstream gate. That is the OneCare Vermont failure, reproducible here."
+          href="/read/chapter-01"
+        />
 
         {/* What it does */}
         <section>
