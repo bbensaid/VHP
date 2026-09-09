@@ -69,7 +69,7 @@
             {
               "type": "text",
               "heading": "A fifteen-year natural experiment",
-              "body": "In 2010, the Affordable Care Act created the Center for Medicare and Medicaid Innovation (CMMI) with a mandate to test new payment and delivery models and scale what worked. Over the next fifteen years, CMMI ran the largest natural experiment in American healthcare reform: dozens of models, billions of dollars, thousands of participating organizations, each testing a theory of what would fix the system.\n\nThe results are unusually well documented, because CMMI models are evaluated against the same statutory bar: does the model improve quality without increasing spending, reduce spending without reducing quality, or do both? A model that clears that bar is eligible for nationwide expansion. That is a clean, falsifiable test — and it produced a clear pattern."
+              "body": "In 2010, the Affordable Care Act created the Center for Medicare and Medicaid Innovation (CMMI) with a mandate to test new payment and delivery models and scale what worked. Over the next fifteen years, CMMI ran the largest natural experiment in American healthcare reform: dozens of models, billions of dollars, thousands of participating organizations, each testing a theory of what would fix the system.\n\nThe results are unusually well documented, because CMMI models are evaluated against the same statutory bar: does the model improve quality without increasing spending, reduce spending without reducing quality, or do both? A model that clears that bar is eligible for nationwide expansion. That is a clean, falsifiable test — and it produced a clear pattern.\n\nThat pattern is the subject of this lesson, and it holds up whether you look at the portfolio in aggregate or at any single model in detail. The next two sections do both: the aggregate scorecard, then two named models worth knowing by name, because you will hear them cited — correctly and incorrectly — for the rest of your career in this field."
             },
             {
               "type": "key_stat",
@@ -102,6 +102,16 @@
               "body": "Read that scorecard carefully before drawing the wrong conclusion. It is not that payment reform doesn't work, or that CMMI wasted fifteen years. It's that the models were, almost without exception, narrow. Each one addressed a single part of the system while leaving the others unchanged — and the parts left unchanged determined the outcome.\n\nModels that changed only what Medicare paid, without changing how care was delivered or whether providers had the infrastructure to respond, generated financial pressure with no behavioral change to show for it. Models that redesigned care coordination produced real clinical improvements — that the payment system then penalized, because better coordination usually means fewer billable services. Models that required new technology — EHRs, population health platforms, data exchange — ran into providers who had the tool but not the operational capacity to use it.\n\nEach of these is a single-pillar intervention hitting a constraint created by a different pillar. That is the pattern this course exists to name and to fix."
             },
             {
+              "type": "text",
+              "heading": "Case study one: Comprehensive Primary Care Plus",
+              "body": "CPC+ launched in 2017 as CMMI's largest primary care model to date — over 3,000 practices, more than 17 million patients, running five full years before ending in 2021. Its theory of change was squarely Clinical: pay primary care practices more, and enhance that payment specifically to fund care coordination, and practices will manage their populations well enough to keep patients out of the hospital.\n\nThe independent evaluation confirmed the clinical half of the theory. CPC+ practices reduced emergency department visits, hospitalizations, and hospitalization spending relative to comparison practices — a real, measured clinical effect, not a rounding error.\n\nIt did not reduce total Medicare spending. The enhanced payments CMS made to fund the care coordination, plus increases in spending elsewhere in the care continuum, more than offset the utilization reductions the model achieved. CPC+ is the cleanest available illustration of Clinical pillar success that never becomes Economics pillar success, because the payment model funding the intervention was never redesigned to capture the savings the intervention produced."
+            },
+            {
+              "type": "text",
+              "heading": "Case study two: the Medicare Diabetes Prevention Program",
+              "body": "MDPP is the more uncomfortable example, because on paper it is one of CMMI's four unambiguous successes — its pilot met the statutory bar and CMS expanded it nationwide starting in 2018, the coverage decision that defines success in this framework's terms.\n\nExpansion did not translate into reach. Only about 38% of primary care physicians were aware the program existed, and only 23% referred an eligible patient to it. The reimbursement structure paid so little, on such a delayed and performance-contingent schedule, that community organizations found it barely worth the administrative burden of becoming a supplier — producing a nationwide undersupply of physical sites offering the program. CMS's original design did not recognize telehealth delivery, which excluded exactly the rural beneficiaries who had the least access to an in-person site in the first place.\n\nMDPP passed the evaluation CMMI uses to define success — the narrow Clinical-and-Economics question the statute asks. It failed on Policy (a reimbursement structure nobody wanted to operate under), on Operations (no supply of delivery sites), and on the Equity Imperative specifically (the access gap fell hardest on rural Medicare beneficiaries, the population with the fewest alternative options). A model can clear CMMI's bar and still fail the five-question test this course teaches — because the bar only asks two of the five questions."
+            },
+            {
               "type": "callout",
               "variant": "info",
               "heading": "The diagnostic test",
@@ -110,7 +120,7 @@
             {
               "type": "text",
               "heading": "The Equity Imperative is not a sixth question",
-              "body": "There is a sixth question running underneath all five: is it just? Does the answer hold up the same way for a rural Medicaid patient as it does for an urban commercially-insured one? This is not a separate pillar competing for its own resources and its own success metric — it is a test applied to each of the five. A payment model can be permissible, possible, sustainable, effective, and executable, and still fail if it improves the average while widening the gap between the best-served and worst-served populations. You will see this Equity Imperative applied concretely, pillar by pillar, in Track 7 of this course and in Chapter 10 of the book."
+              "body": "There is a sixth question running underneath all five: is it just? Does the answer hold up the same way for a rural Medicaid patient as it does for an urban commercially-insured one? This is not a separate pillar competing for its own resources and its own success metric — it is a test applied to each of the five. A payment model can be permissible, possible, sustainable, effective, and executable, and still fail if it improves the average while widening the gap between the best-served and worst-served populations.\n\nMDPP is the case study to hold onto here: a program CMS itself certified as a success produced an access pattern that concentrated its benefit in exactly the populations least likely to need it most, and left rural, lower-resource communities to figure out a program that had almost nowhere nearby to actually deliver it. You will see this Equity Imperative applied concretely, pillar by pillar, in Track 7 of this course and in Chapter 10 of the book."
             },
             {
               "type": "comparison_table",
@@ -122,9 +132,9 @@
                   "right": "Financial pressure with no behavior change"
                 },
                 {
-                  "label": "Clinical only",
-                  "left": "Care coordination improves",
-                  "right": "Payment system penalizes the volume reduction"
+                  "label": "Clinical only (CPC+)",
+                  "left": "Care coordination improves, utilization falls",
+                  "right": "Payment model never redesigned to capture the savings — no net reduction in spending"
                 },
                 {
                   "label": "Technology only",
@@ -132,11 +142,33 @@
                   "right": "Providers lack operational capacity to use them"
                 },
                 {
+                  "label": "Clinical + Economics only (MDPP)",
+                  "left": "Pilot meets the statutory bar, model expands nationwide",
+                  "right": "No Policy fix to reimbursement, no Operations base of delivery sites — reach collapses"
+                },
+                {
+                  "label": "Equity Imperative unapplied (MDPP)",
+                  "left": "Program certified a national success",
+                  "right": "Access concentrated away from the rural beneficiaries who needed it most"
+                },
+                {
                   "label": "All five, in sequence",
                   "left": "Mandate → data → incentive → care redesign → execution",
                   "right": "Each stage removes the constraint blocking the next"
                 }
               ]
+            },
+            {
+              "type": "callout",
+              "variant": "warning",
+              "heading": "Passing the evaluation is not the same as working",
+              "body": "MDPP is proof that clearing CMMI's own statutory bar does not mean a model works at the scale and reach that matters to patients. Before you cite any pilot result — CMMI's or your own organization's — ask which of the five questions the evaluation actually measured, and which ones it silently assumed away."
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "How to use this pattern",
+              "body": "The next time someone hands you a successful pilot result, don't ask 'did it work?' Ask 'which of the five questions did this evaluation answer, and which did it never ask?' CPC+ answered the Clinical question and never closed the Economics loop. MDPP answered the Clinical and Economics questions and never asked the Policy, Operations, or Equity ones. The gap between a pilot's finding and a program's real-world result is almost always one of the questions nobody thought to ask."
             },
             {
               "type": "callout",
@@ -234,6 +266,38 @@
                     "explanation": "This is the exact misreading this course is designed to correct."
                   }
                 ]
+              },
+              {
+                "id": "q_5p1d",
+                "type": "single_choice",
+                "points": 1,
+                "question": "The Medicare Diabetes Prevention Program (MDPP) met CMMI's statutory bar and was expanded nationwide in 2018, yet only ~23% of eligible patients whose doctors knew about it were referred, and rural beneficiaries had the least access. What does this best illustrate?",
+                "explanation": "MDPP passed the two questions CMMI's evaluation bar actually measures — Clinical effectiveness and Economics viability — but failed the Policy question (a reimbursement design providers didn't want to operate under), the Operations question (no supply of delivery sites), and the Equity Imperative (access concentrated away from the population that needed it most). Clearing the statutory bar is not the same as passing all five questions.",
+                "options": [
+                  {
+                    "id": "o_5p1d1",
+                    "text": "A model can meet CMMI's own success bar and still fail the Policy, Operations, and Equity questions the bar doesn't ask",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "o_5p1d2",
+                    "text": "MDPP proves CMMI's evaluation methodology was flawed and should be discarded",
+                    "isCorrect": false,
+                    "explanation": "The evaluation correctly measured what it was designed to measure — the problem is that it only measures two of the five questions."
+                  },
+                  {
+                    "id": "o_5p1d3",
+                    "text": "MDPP shows that Clinical-only interventions never produce real health benefits",
+                    "isCorrect": false,
+                    "explanation": "The opposite — MDPP's clinical/economic case was real. The failure was in reach, not in the underlying model."
+                  },
+                  {
+                    "id": "o_5p1d4",
+                    "text": "Rural beneficiaries were simply less interested in diabetes prevention",
+                    "isCorrect": false,
+                    "explanation": "The evidence points to supply and design barriers — provider awareness, reimbursement structure, and the initial exclusion of telehealth — not patient interest."
+                  }
+                ]
               }
             ]
           }
@@ -323,8 +387,55 @@
             },
             {
               "type": "text",
+              "heading": "Case study: Economics as the binding constraint — the Pioneer ACO exodus",
+              "body": "CMS's Pioneer ACO Model, launched in 2012, tested what the most advanced accountable care organizations in the country could do under two-sided financial risk — sharing not just in savings but in losses. CMS did not select novices: the 32 founding Pioneer ACOs were chosen specifically because they already had the care-coordination infrastructure most ACOs were still building. On the Clinical question — is it effective? — these were, by CMS's own selection criteria, the strongest answers available in the program.\n\nThe Economics pillar is what broke. Thirteen of the 32 Pioneer ACOs left the model in 2013 or 2014, and CMS confirmed by name that Franciscan Alliance (Indianapolis), Genesys PHO (Flint, Michigan), and Renaissance Health Network (Wayne, Pennsylvania) were among them. Genesys PHO owed Medicare $1.9 million in repayment after failing to hold down spending in its second year under the downside-risk formula. By 2016, only 9 of the original 32 remained.\n\nNone of this reflects a Clinical failure — the organizations that left were not clinically weaker than the ones that stayed. The reason most commonly cited for leaving was that the two-sided risk model was unsustainable even for already-efficient organizations: an ACO that has already wrung out the easy savings has less room left to keep beating its own benchmark year after year. That is a pure Economics-pillar failure — 'is it sustainable?' answered no — while Policy, Technology, Clinical, and Operations were, comparatively, in reasonable shape. More care coordination would not have kept them in the program."
+            },
+            {
+              "type": "text",
+              "heading": "Case study: Technology as the binding constraint — before and after ProvenCare",
+              "body": "Geisinger Health System's ProvenCare program, launched in 2006, bundled the entire cost of elective coronary artery bypass graft (CABG) surgery into a single warrantied price and built the protocol around 40 evidence-based best-practice steps — things like correct pre-admission documentation and correct post-operative beta-blocker dosing. None of these 40 steps were new medical knowledge; every one was already an established best practice before ProvenCare existed.\n\nWhat was new was hardwiring all 40 steps into the electronic health record so it could prompt clinicians in real time, and so Geisinger could monitor compliance across every patient rather than audit a sample after the fact. The published results (Casale et al., Annals of Surgery, 2007) show why that mattered: at launch, only 59% of patients received all 40 components — the same gap between known best practice and actual bedside practice that shows up everywhere in medicine. Within three months of the EHR-based prompting and monitoring going live, full-bundle compliance reached 100% and, after one dip to 86%, stayed there for the rest of the study period. Patients treated under the completed protocol had a 16% shorter hospital stay than the conventional-care comparison group.\n\nPolicy allowed this — nothing barred Geisinger from doing it. Economics rewarded it — the bundled price gave Geisinger a direct financial reason to eliminate variation. Clinical knowledge was not the constraint — the 40 steps were already known and written down. What was missing until the EHR build was Technology: a way to make 'is it possible to do this reliably on every patient' actually true. That is the diagnostic signature of a Technology-pillar constraint — the incentive and the know-how both exist, but nothing enforces or verifies the behavior at the point of care."
+            },
+            {
+              "type": "text",
               "heading": "Diagnosing the binding constraint",
               "body": "In practice you rarely find all five failing at once. You find one that is blocking the others — the binding constraint. The diagnostic move is to walk the five questions in order and stop at the first honest 'no.'\n\nAn organization with a signed value-based contract, a redesigned care model, and no real-time cost data has an Economics pillar that exists on paper and a Technology pillar that cannot support it. Adding clinical staff will not help. Renegotiating the contract will not help. The constraint is data, and until it is relieved, investment in the other pillars produces less than it should."
+            },
+            {
+              "type": "comparison_table",
+              "heading": "Reading the failure signature",
+              "rows": [
+                {
+                  "label": "Policy",
+                  "left": "Signal",
+                  "right": "Participation is voluntary, and the organizations most likely to lose money opt out or never join at all"
+                },
+                {
+                  "label": "Technology",
+                  "left": "Signal",
+                  "right": "The incentive and the clinical know-how both exist, but frontline compliance is inconsistent because nothing prompts or verifies it in real time"
+                },
+                {
+                  "label": "Economics",
+                  "left": "Signal",
+                  "right": "Clinically strong, well-run organizations exit or underperform specifically once real financial risk is introduced"
+                },
+                {
+                  "label": "Clinical",
+                  "left": "Signal",
+                  "right": "Data, mandate, and payment all line up, but the care team's actual practice at the bedside doesn't change"
+                },
+                {
+                  "label": "Operations",
+                  "left": "Signal",
+                  "right": "A funded plan with a real deadline exists on paper but is never actually implemented or tracked"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "Using the failure signature in practice",
+              "body": "When you're handed an initiative that isn't performing, resist the urge to add more of whatever it already has plenty of. The Pioneer ACO exits didn't need better clinical protocols — they had those. Pre-EHR ProvenCare didn't need a bigger financial incentive or a better-written protocol — it had both. In each case, the fix was in the pillar with the honest 'no,' not the pillar that was easiest to invest in further."
             },
             {
               "type": "callout",
@@ -432,6 +543,70 @@
                     "text": "Payment models that reward total cost accountability",
                     "isCorrect": false,
                     "explanation": "That is an Economics pillar output."
+                  }
+                ]
+              },
+              {
+                "id": "q_5p2d",
+                "type": "single_choice",
+                "points": 1,
+                "question": "Thirteen Pioneer ACOs left CMS's model in 2013–2014, including organizations CMS had originally selected for their advanced care-coordination capability. Which pillar's failure best explains the exodus?",
+                "explanation": "These were clinically strong organizations by CMS's own selection criteria. What they couldn't sustain was the two-sided financial risk itself — a pure Economics-pillar failure, not a Clinical one.",
+                "options": [
+                  {
+                    "id": "o_5p2d1",
+                    "text": "Economics — the downside-risk model wasn't sustainable, even for efficient organizations",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "o_5p2d2",
+                    "text": "Clinical — the organizations weren't actually good at care coordination",
+                    "isCorrect": false,
+                    "explanation": "CMS selected these specific organizations because their care coordination was already advanced."
+                  },
+                  {
+                    "id": "o_5p2d3",
+                    "text": "Technology — they lacked the data systems to manage the contract",
+                    "isCorrect": false,
+                    "explanation": "The commonly cited reason for exit was financial risk, not a data or systems gap."
+                  },
+                  {
+                    "id": "o_5p2d4",
+                    "text": "Operations — they couldn't implement the required care redesign",
+                    "isCorrect": false,
+                    "explanation": "The care redesign was already in place; that's why CMS chose them as Pioneers."
+                  }
+                ]
+              },
+              {
+                "id": "q_5p2e",
+                "type": "single_choice",
+                "points": 1,
+                "question": "Geisinger's ProvenCare CABG protocol contained no new medical knowledge — all 40 steps were already established best practice — yet compliance rose from 59% to 100% only after the steps were built into the EHR with real-time prompts and monitoring. Which pillar was the binding constraint before that build?",
+                "explanation": "The incentive (bundled payment) and the clinical knowledge (the 40 steps) already existed. What was missing was a way to reliably enforce and verify the behavior at the point of care for every patient — the Technology pillar's question, 'is it possible?'",
+                "options": [
+                  {
+                    "id": "o_5p2e1",
+                    "text": "Technology",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "o_5p2e2",
+                    "text": "Clinical — the best-practice steps hadn't been defined yet",
+                    "isCorrect": false,
+                    "explanation": "All 40 steps were already established best practice before the EHR build."
+                  },
+                  {
+                    "id": "o_5p2e3",
+                    "text": "Economics — the bundled payment didn't reward the right behavior",
+                    "isCorrect": false,
+                    "explanation": "The bundled price already gave Geisinger a direct financial reason to eliminate variation."
+                  },
+                  {
+                    "id": "o_5p2e4",
+                    "text": "Policy — Geisinger wasn't permitted to run the program",
+                    "isCorrect": false,
+                    "explanation": "Nothing in the scenario suggests a permissibility problem."
                   }
                 ]
               }
