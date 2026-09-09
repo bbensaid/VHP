@@ -1,5 +1,6 @@
 import Link from "next/link";
 import FivePillarFrameworkMap from "@/components/FivePillarFrameworkMap";
+import FromTheBook from "@/components/FromTheBook";
 
 export const metadata = {
   title: "Five-Pillar Framework | HTR",
@@ -183,6 +184,16 @@ export default function FrameworkPage() {
       {/* ── INTERACTIVE DEPENDENCY MAP ───────────────────────────────────── */}
       <section className="w-full px-2 sm:px-3 py-4">
         <FivePillarFrameworkMap />
+      </section>
+
+      {/* ── FROM THE BOOK ────────────────────────────────────────────────── */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-2">
+        <FromTheBook
+          chapter="Chapter 1"
+          chapterTitle="The Five-Pillar Framework and the Execution Sequence"
+          excerpt="This map is the interactive form of Chapter 1's central argument. The chapter defines each pillar's diagnostic question, maps the nine dependency relationships drawn above, and works the OneCare Vermont collapse as the canonical case of what happens when a downstream pillar is funded before its upstream gate is open."
+          href="/read/chapter-01"
+        />
       </section>
 
       {/* ── THE FIVE PILLARS ─────────────────────────────────────────────── */}
