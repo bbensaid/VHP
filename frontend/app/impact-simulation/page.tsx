@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import FromTheBook from "@/components/FromTheBook";
 import { ChevronRightIcon, ArrowPathIcon, DocumentArrowDownIcon } from "@heroicons/react/24/outline";
 
 // ─── TYPES ────────────────────────────────────────────────────────────────────
@@ -588,6 +589,16 @@ export default function ImpactSimulationPage() {
             Select a transformation scenario, adjust parameters, and see how it propagates across all five pillars simultaneously — and whether it passes the Equity Imperative.
           </p>
         </div>
+      </section>
+
+      {/* ── FROM THE BOOK ─────────────────────────────────────────────────── */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <FromTheBook
+          chapter="Chapter 15"
+          chapterTitle="Healthcare Transformation as Portfolio Management"
+          excerpt="Chapter 15 treats a transformation agenda as a portfolio with dependencies rather than a list of initiatives — which is what this engine models. The propagation logic it runs on is Chapter 1's: a shortfall in one pillar surfaces in another's results a year later, which is precisely why it gets missed."
+          href="/read/chapter-15"
+        />
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
