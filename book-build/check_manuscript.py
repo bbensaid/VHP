@@ -9,13 +9,20 @@ style-critical rules from CLAUDE.md.
 
 Exits non-zero if anything is found, so it can gate a build.
 
-    python3 book-build/check_manuscript.py
+    python3 book-build/check_manuscript.py                    # canonical file
+    python3 book-build/check_manuscript.py HTR_Book_v42_002.md  # a checkpoint
+
+Bug fixed 2026-09-08: this used to hardcode the canonical filename and
+silently ignore any argument, so `check_manuscript.py HTR_Book_v42_001.md`
+re-checked the unchanged canonical file instead of the checkpoint — a real
+mistake made repeatedly in one session before being caught. Always pass the
+file you mean to check explicitly now that it's honored.
 """
 import re
 import sys
 import collections
 
-BOOK = '/Users/baba/Vermont-Health-Platform/HTR_Book_v42.md'
+BOOK = sys.argv[1] if len(sys.argv) > 1 else '/Users/baba/Vermont-Health-Platform/HTR_Book_v42.md'
 raw = open(BOOK, encoding='utf-8').read()
 lines = raw.split('\n')
 findings = []
@@ -187,9 +194,16 @@ if n_src:
     report('ERROR', '"**Sources**" used as a heading (must be a plain paragraph)',
            f'{n_src} occurrence(s)')
 
-n_wtc = len(re.findall(r'^## \*\*Work This Chapter on the Platform\*\*', raw, re.M))
+# 2026-09-08: mid-rollout, renaming "Work This Chapter on the Platform" to
+# "EXPLORE ON THE PLATFORM" one chapter at a time (see FACT_CHECK_LEDGER.md /
+# project_academy_ecosystem_gap). Count both spellings together until all 16
+# are converted, so the transition doesn't read as 16 separate false errors.
+n_wtc_old = len(re.findall(r'^## \*\*Work This Chapter on the Platform\*\*', raw, re.M))
+n_wtc_new = len(re.findall(r'^## \*\*EXPLORE ON THE PLATFORM\*\*', raw, re.M))
+n_wtc = n_wtc_old + n_wtc_new
 if n_wtc != 16:
-    report('ERROR', 'Work This Chapter heading count', f'{n_wtc}, expected 16')
+    report('ERROR', 'Work This Chapter / EXPLORE ON THE PLATFORM heading count',
+           f'{n_wtc} total ({n_wtc_old} old-style + {n_wtc_new} renamed), expected 16')
 
 for label, pat, want in (
         ('Key Concepts', r'Key Concepts in This Chapter', 17),

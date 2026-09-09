@@ -157,6 +157,32 @@ to size.
 
 ---
 
+## Claude's edit checkpoints (`HTR_Book_v42_001.md`, `_002`, …)
+
+**Rule (2026-09-08):** Claude never edits `HTR_Book_v42.md`/`.docx`/`.pdf`
+directly — those three names are reserved for whatever the author has
+promoted as current. Any edit Claude makes (fact-check fixes, an audit
+finding, an added section) goes into a **new, incrementing numbered copy** —
+`HTR_Book_v42_001.md`, then `_002`, `_003`, and so on. Find the next number
+with `ls HTR_Book_v42_*.md`.
+
+The author reviews the numbered file and **manually copies it over
+`HTR_Book_v42.md`** (then re-runs the normal `.docx`/PDF steps below) when
+ready. Claude does not do that copy step, does not touch the `.docx`/PDF as
+part of a checkpoint, and does not run `./book.sh build` on a checkpoint.
+
+This exists because `HTR_Book_v42.md` and `HTR_Book_v42.pdf` are also the
+canonical names the platform serves — a checkpoint file living under its own
+name can never be mistaken for "the" current book while it's still under
+review, however long that takes.
+
+This is a different axis from the version bump below: `_001`/`_002` are
+Claude's incremental edit checkpoints within v42, awaiting the author's
+manual promotion. `v43`/`v44` is the author's own structural re-numbering of
+the whole book. Don't conflate them.
+
+---
+
 ## Version bumps (v43, v44 …)
 
 Bump for structural change — chapters added/removed/renumbered, a new appendix,
