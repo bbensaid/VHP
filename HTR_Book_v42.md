@@ -14,9 +14,19 @@ They were not wrong. Nine of Vermont's fourteen hospitals were already operating
 
 That room is the origin of this book. Not because Vermont is uniquely troubled — every American state is facing some version of the same forces on a time delay — but because Vermont is early. Early in its demographic aging. Early in its hospital financial fragility. Early in its recognition that thirty years of voluntary payment reform have not changed the fundamental incentives of the system. And early, therefore, in its willingness to do something that no state has done with this level of statutory specificity and capital commitment: mandate structural change.
 
+::: {custom-style="CalloutBeyond"}
+**BEYOND VERMONT**
+
+"On a time delay" is measurable, not rhetorical. In 2020, three states had more residents over 65 than under 18: Maine, Vermont, and Florida. By 2024 there were eleven — Delaware, Hawaii, Montana, New Hampshire, Oregon, Pennsylvania, Rhode Island, and West Virginia had joined them. Vermont now ranks fourth-oldest in the country by median age (42.8), behind Maine (45.1), New Hampshire (43.0), and West Virginia (42.9).
+
+The financial consequence is arriving on the same delay. Nationally, 41% of rural hospitals operate in the red and roughly 768 are at risk of closing, 315 of them within three years. Vermont's nine-of-fourteen — 64% — is not a different problem from the national one. It is the national problem, further along. The states listed above are the ones for whom this book is least hypothetical.
+:::
+
 This book is the analytical framework for that change. It is not a policy brief for or against any particular agenda. The five goals of Vermont's Act 167 — reduce inefficiencies, lower costs, improve health outcomes, reduce health inequities, and increase access to essential services — are goals that virtually every person across the political spectrum would endorse. The means for achieving them are legitimately contested. This book engages that contestation honestly and presents both sides where the evidence genuinely runs in two directions.
 
 The framework is organized around five pillars: Policy, Technology, Economics, Clinical, and Operations. It emerged from the conviction that transformation fails when it addresses any single pillar in isolation. Payment reform without clinical redesign produces financial savings that evaporate when care models do not change. Clinical quality improvement without payment reform produces better care that the financial system immediately discourages. Technology investment without operational readiness produces platforms that no one uses. Equity goals without structural investment produce aspirations without outcomes.
+
+That last failure is why equity does not appear here as a sixth pillar. It is the **Equity Imperative** — a single justice test that each of the five pillars must pass on its own terms, not a separate workstream running alongside them. A sixth pillar would come with its own budget line, its own staff, and its own place in the queue, which means it could be sequenced last, funded least, and reported separately from the work that actually determines whether disparities close. An imperative cannot be deferred that way, because there is no separate equity project to defer: every pillar's own deliverable carries an equity condition it has to satisfy. The Introduction explains why that distinction is structural rather than rhetorical, and Chapter 1 applies the test pillar by pillar.
 
 ::: {custom-style="Banner"}
 The five pillars must move together — which means the people responsible for each pillar must understand all the others.
@@ -34,7 +44,7 @@ Finally, this book is not, on its own, the whole of the argument. This book is t
 
 3.  The Academy ([healthtransformationreview.org/academy](https://healthtransformationreview.org/academy)) — a structured executive-education layer of courses, tracks, and lessons that teach the concepts hands-on and link directly to the tools that apply them.
 
-The three are deliberately cross-linked. Each pillar chapter ends with a *"Work This Chapter on the Platform"* guide that maps its argument to the specific tools that let you manipulate it; the platform's tools carry *"From the Book"* callouts back to the chapters that explain them; and the AI Analyst can answer a question and route you to the right tool or lesson in the same breath. **Everything in the ecosystem is, in effect, an interactive expression of this book's framework.** You can read the book alone and it stands on its own — but the framework is meant to be *run*, not just read, and the platform is where you run it.
+The three are deliberately cross-linked. Each chapter ends with two doorways: an *"Explore on the Platform"* guide that maps the chapter's argument to the specific tools that let you manipulate it, and a *"Go Deeper — Academy"* guide pointing to the lessons that teach it hands-on. The platform's tools carry *"From the Book"* callouts back to the chapters that explain them; and the AI Analyst can answer a question and route you to the right tool or lesson in the same breath. **Everything in the ecosystem is, in effect, an interactive expression of this book's framework.** You can read the book alone and it stands on its own — but the framework is meant to be *run*, not just read, and the platform is where you run it.
 
 ::: {custom-style="CalloutTry"}
 **EXPLORE ON THE PLATFORM**
@@ -147,21 +157,27 @@ This book repeatedly emphasizes that Vermont's approach is mandatory rather than
 
 These are not the only critiques of Vermont's approach. They are the most serious ones, and this book engages them throughout rather than assuming the policy case is settled. It is not settled. Vermont is the experiment. This book is the analytical framework for watching it clearly.
 
-## **The Five-Pillar Framework: Why Transforming American Healthcare Together**
+## **The Five-Pillar Framework and the Equity Imperative: Why They Must Move Together**
 The central analytical contribution of this book is the five-pillar framework for healthcare transformation: Policy, Technology, Economics, Clinical, and Operations. It is not a checklist of things that should be done, but an integrated architecture for understanding why transformation attempts fail when they address any pillar in isolation. Remove any one pillar and the transformation fails: payment reform without the data infrastructure to manage it, or the clinical models to respond to it, produces financial pressure without improvement.
 
-Chapter 1 develops this framework in full — defining each pillar, mapping the nine dependency relationships that connect them, and showing what cascades through the system when any one is missing. What matters here, at the outset, is the single premise the rest of the book rests on: Vermont's reform agenda is instructive precisely because it addresses all five pillars simultaneously — imperfectly and incompletely, as any real-world policy effort does, but with a comprehensiveness that distinguishes it from the single-pillar interventions that have failed repeatedly at the national level.
+Each pillar is defined by a single diagnostic question. Policy asks whether a reform is permissible. Technology asks whether it is possible. Economics asks whether it is sustainable. Clinical asks whether it is effective. Operations asks whether it is executable. An honest "no" to any one of them predicts underperformance regardless of how confidently the other four answer yes.
+
+There is a sixth question, and it is deliberately not a sixth pillar: **is it just?** This is the Equity Imperative — a cross-cutting test that each of the five pillars must pass on its own terms, rather than a separate workstream competing with them for budget, staff, and attention. The distinction is structural, not rhetorical. A sixth pillar has its own line item and its own position in the queue, which means it can be sequenced last, funded least, and reported separately from the work that determines whether disparities actually close. An imperative has none of those escape hatches: there is no standalone equity project to defer, because each pillar's own deliverable carries an equity condition it must satisfy. Does the mandate close disparities or widen them (Policy)? Does the data make disparities visible, or bury them in averages (Technology)? Do the incentives reward serving the hardest-to-reach populations, or penalize it (Economics)? Effective — but effective for whom (Clinical)? Executable everywhere, including in rural and under-resourced settings (Operations)?
+
+The reason this matters is that a reform can improve the average while widening the gap, and pass every test but this one. Vermont's primary care access rate is roughly 91% — four points above the national benchmark and a genuine achievement. That same number conceals an 11-point gap between white Vermont adults and BIPOC Vermont adults. Nothing in the aggregate figure reveals the gap; it becomes visible only when the underlying data is stratified by race and ethnicity, which is a Technology-pillar capability rather than a statement of good intentions. A framework that treated equity as a separate pillar would have been satisfied by the 91%. Treating it as an imperative is what forces the second question.
+
+Chapter 1 develops all of this in full — defining each pillar, mapping the nine dependency relationships that connect them, applying the justice test to each pillar in turn, and showing what cascades through the system when any one is missing. Chapter 10 takes up the Equity Imperative on its own terms. What matters here, at the outset, is the single premise the rest of the book rests on: Vermont's reform agenda is instructive precisely because it addresses all five pillars simultaneously, and is held to the same imperative throughout — imperfectly and incompletely, as any real-world policy effort does, but with a comprehensiveness that distinguishes it from the single-pillar interventions that have failed repeatedly at the national level.
 
 ## **The HTR Ecosystem: How the Book, the Platform, and the Academy Work Together**
 This book is one of three integrated components of the **Health Transformation Review** ecosystem. The framework covered in this book is not only an argument to be followed — it is a system to be operated, and the platform ([healthtransformationreview.org](https://healthtransformationreview.org)) and Academy ([healthtransformationreview.org/academy](https://healthtransformationreview.org/academy)) are where you operate it. Understanding how the three fit together will change how you read what follows.
 
 | Component | What it is | How it connects to the book |
 | :---- | :---- | :---- |
-| **The Book** | *Transforming American Healthcare* — the framework, the dependency logic, the Vermont evidence, and the national comparisons. Read it online with audio narration at [/book](https://healthtransformationreview.org/book). | The intellectual foundation. Everything else is an interactive expression of it. |
-| **The Platform** | Five pillar hubs, a [Research Lab](https://healthtransformationreview.org/research-lab) of nearly forty interactive analytical tools, an [AI Analyst](https://healthtransformationreview.org/chat) grounded in this book and Vermont's source documents, a [fifty-state dashboard](https://healthtransformationreview.org/dashboard), and a daily intelligence feed. | Every argument here that can be modeled *is* modeled there. Each pillar chapter ends with a *"Work This Chapter on the Platform"* guide linking to the exact tools. |
-| **The Academy** | A structured executive-education layer of courses, tracks, and lessons — from foundational concepts to advanced payment-model design. Start at [/academy](https://healthtransformationreview.org/academy). | Lessons teach the book's concepts hands-on and deep-link to the tool that applies each one. |
+| **The Book** | *Transforming Healthcare* — the framework, the dependency logic, the Vermont evidence, and the national comparisons. Read it online with audio narration at [/book](https://healthtransformationreview.org/book). | The intellectual foundation. Everything else is an interactive expression of it. |
+| **The Platform** | Five pillar hubs, a [Research Lab](https://healthtransformationreview.org/research-lab) of nearly forty interactive analytical tools, an [AI Analyst](https://healthtransformationreview.org/chat) grounded in this book and Vermont's source documents, a [fifty-state dashboard](https://healthtransformationreview.org/dashboard), and a daily intelligence feed. | Every argument here that can be modeled *is* modeled there. Each chapter ends with an *"Explore on the Platform"* guide linking to the exact tools. |
+| **The Academy** | A structured executive-education layer of courses, tracks, and lessons. **Five Pillars, One Imperative** is this book's companion course — eight tracks that follow the book's own sequence. Start at [/academy](https://healthtransformationreview.org/academy). | Each chapter ends with a *"Go Deeper — Academy"* guide naming the specific lessons that teach it hands-on. |
 
-The connection runs in every direction. The book sends you to the platform through the chapter-ending tool guides. The platform sends you back to the book through *"From the Book"* callouts on every hub and tool. The Academy sends you to both. And the [AI Analyst](https://healthtransformationreview.org/chat) sits across all three — ask it a question and it answers from the book's evidence base *and* routes you to the tool, dashboard, or lesson that lets you go further. The practical consequence for you as a reader: whenever this book makes a claim you want to test against your own organization or state, there is almost always a tool waiting to let you do exactly that. Watch for the **EXPLORE ON THE PLATFORM** and **GO DEEPER — ACADEMY** callouts throughout the chapters; they are the doorways.
+The connection runs in every direction. The book sends you to the platform through the chapter-ending tool guides. The platform sends you back to the book through *"From the Book"* callouts on every hub and tool. The Academy sends you to both. And the [AI Analyst](https://healthtransformationreview.org/chat) sits across all three — ask it a question and it answers from the book's evidence base *and* routes you to the tool, dashboard, or lesson that lets you go further. The practical consequence for you as a reader: whenever this book makes a claim you want to test against your own organization or state, there is almost always a tool waiting to let you do exactly that. Every chapter closes with the same two doorways — **EXPLORE ON THE PLATFORM**, then **GO DEEPER — ACADEMY** — and shorter **TRY THIS** prompts appear mid-chapter wherever an argument is easier to feel in a tool than to follow on the page.
 
 ::: {custom-style="CalloutTry"}
 **START HERE**
@@ -179,7 +195,7 @@ You work in a government agency, a legislative office, a think tank, or a founda
 
 **On the platform.** Start with the [HTR Simulator](https://healthtransformationreview.org/htr-simulator) to model a state's readiness and the [fifty-state dashboard](https://healthtransformationreview.org/dashboard) to benchmark it, then work the [Policy & Quality Sciences bench](https://healthtransformationreview.org/research-lab/policy-quality) in the Research Lab.
 
-**In the Academy.** Begin with the policy and payment-reform courses at [/academy/courses](https://healthtransformationreview.org/academy/courses).
+**In the Academy.** Begin with **Five Pillars, One Imperative**, Track 2 ("Policy — Establish the Mandate"), which works the Act 167 → 51 → 68 cascade and the voluntary-versus-mandatory distinction directly. Then the payment-reform courses at [/academy/courses](https://healthtransformationreview.org/academy/courses).
 
 ### **The Healthcare Executive or Administrator**
 You lead a hospital, health system, health plan, ACO, or healthcare services organization. You are making decisions — about contracts, capital investments, workforce, technology — that the transformation environment is complicating.
@@ -188,7 +204,7 @@ You lead a hospital, health system, health plan, ACO, or healthcare services org
 
 **On the platform.** Run your own organization through the [Payment Models & VBC bench](https://healthtransformationreview.org/research-lab/payment-models) — the VBC Readiness Assessment and APM tools — and pressure-test your finances with the [Research Lab](https://healthtransformationreview.org/research-lab).
 
-**In the Academy.** Take the Value-Based Care course at [/academy](https://healthtransformationreview.org/academy) before your next contract cycle.
+**In the Academy.** Take **Five Pillars, One Imperative** Track 4 ("Economics — Put Incentives on a Visible System") for the framework, then the Value-Based Care course at [/academy](https://healthtransformationreview.org/academy) before your next contract cycle.
 
 ### **The Vermont Practitioner**
 You work for AHS, GMCB, DVHA, the Vermont legislature, a Vermont hospital, a Blueprint practice, or a Vermont community organization.
@@ -196,6 +212,8 @@ You work for AHS, GMCB, DVHA, the Vermont legislature, a Vermont hospital, a Blu
 **Recommended path.** Read Appendix A (Vermont System Portrait) first, then Chapter 1 (the five-pillar framework and execution sequence) and Chapter 2 (the Policy Pillar — Acts 167 and 68). Then Chapter 16 (the AHS Restructuring Roadmap) as the operational framework for your work. Use the implementation timeline tables throughout as a working reference guide.
 
 **On the platform.** The Vermont concept pages — [Act 167](https://healthtransformationreview.org/vermont-act-167), [Act 68](https://healthtransformationreview.org/vermont-act-68), the [AHEAD Model](https://healthtransformationreview.org/ahead-model) — and the [Vermont hospital dashboard](https://healthtransformationreview.org/dashboard/vermont/hospitals) turn the book's Vermont evidence into live, current data. Ask the [AI Analyst](https://healthtransformationreview.org/chat) about any Vermont statute or program.
+
+**In the Academy.** **Five Pillars, One Imperative** Track 2 ("Policy") covers the statutes you work under daily; Track 6 ("Operations — Close the Execution Gap") covers regionalization and the workforce constraint. The Vermont-specific Medicaid Learning Center is at [/academy](https://healthtransformationreview.org/academy).
 
 ### **The Healthcare Student or Researcher**
 You are building foundational knowledge in a graduate program or as an independent researcher.
@@ -220,12 +238,12 @@ Sources: Oliver Wyman Healthcare and Life Sciences Group, Act 167 Community Enga
 > *Healthcare transformation is a system problem: five pillars — Policy, Technology, Economics, Clinical, and Operations — connected by nine dependency relationships that determine whether reform succeeds or fails. This chapter opens with the failure that proves the point — OneCare Vermont's collapse — then defines the five pillars, maps their interdependencies, shows what cascades when any one is missing, and turns to the question those dependencies force: in what order must the pillars be built? Vermont provides both the proof of concept and the canonical failure case — OneCare Vermont's collapse is the most instructive sequencing autopsy in recent American health policy.*
 
 ## **The Problem with Single-Pillar Thinking**
-In 2010, the Affordable Care Act created the Center for Medicare and Medicaid Innovation with a mandate to test new payment and delivery models and scale what worked. Over the following fifteen years, CMMI launched more than fifty models, investing billions of dollars and attracting the attention of thousands of healthcare organizations. A 2023 evaluation found that the vast majority had not achieved statistically significant reductions in spending or improvements in quality. Most were discontinued. A handful showed promise and were expanded.
+In 2010, the Affordable Care Act created the Center for Medicare and Medicaid Innovation with a mandate to test new payment and delivery models and scale what worked. Over the following fifteen years, CMMI launched more than seventy models, investing billions of dollars and attracting the attention of thousands of healthcare organizations. A 2023 Congressional Budget Office analysis found that the vast majority had not achieved statistically significant reductions in spending or improvements in quality — and that CMMI's models, taken together, had not saved money at all: they cost $7.9 billion to operate, reduced spending on health care benefits by $2.6 billion, and increased net federal spending by $5.4 billion between 2011 and 2020. Most were discontinued. A handful showed promise and were expanded.
 
 ::: {custom-style="StatStrip"}
-**50+** — CMMI Models Launched
+**70** — CMMI Models Tested (2011–2024)
 
-**<10%** — Models With Significant Results
+**4 of 70** — Expanded Nationwide
 
 **15 Yrs** — Span of Experience
 
@@ -251,14 +269,14 @@ A policy intervention that passes question one but fails questions three, four, 
 :::
 
 ## **The OneCare Failure: A Sequencing Autopsy**
-The clearest evidence for that argument is a failure that has already happened. Before defining the five pillars, it is worth examining OneCare Vermont's collapse in structural terms, because the failure was not random and it was not primarily the result of bad intentions or poor execution. OneCare failed because of sequencing errors baked into its design from the beginning. Identifying those errors precisely is more useful than simply noting that the ACO wound down after a decade of operation.
+The clearest evidence for that argument is a failure that has already happened. Before defining the five pillars, it is worth examining OneCare Vermont's collapse in structural terms, because the failure was not random and it was not primarily the result of bad intentions or poor execution. OneCare failed because of sequencing errors baked into its design from the beginning. Identifying those errors precisely is more useful than simply noting that the ACO wound down after roughly twelve years, founded in 2013 and closing at the end of 2025; the federal All-Payer ACO Model agreement that defined its most consequential years ran about eight of those years before its own scheduled sunset.
 
 OneCare was Vermont's primary Accountable Care Organization vehicle under a Total Cost of Care model — holding OneCare financially responsible for the total healthcare spending of an attributed Vermont population. On paper, sound design. In practice, three sequencing failures that compounded until the organization could not recover.
 
 ### **Sequencing Failure 1: Economics Without Policy Foundation**
-The most fundamental problem: Vermont attempted to operate a sophisticated payment reform model — one requiring system-wide accountability — without the policy foundation to enforce participation. Provider participation in OneCare was voluntary.
+The most fundamental problem: Vermont attempted to operate a sophisticated payment reform model — one requiring system-wide accountability — without a policy foundation that could compel every payer's participation. Provider participation in OneCare was voluntary, and at its broadest it reached all fourteen Vermont hospitals and thousands of providers — the gap that actually undid the model was on the payer side, not a hospital walking away.
 
-This matters structurally, not just administratively. The Total Cost of Care model holds the ACO financially accountable for the total spending of an attributed population. But when high-cost, high-revenue providers remain outside the ACO — because participation is optional — the ACO is held responsible for costs it cannot influence. A hospital generating significant revenue from inpatient admissions has a rational financial incentive to stay outside a model that rewards reducing those admissions. When it does, the ACO's ability to manage total cost is structurally undermined from day one.
+That gap has a specific origin. In 2016 the U.S. Supreme Court decided *Gobeille v. Liberty Mutual Insurance Co.*, 6–2, holding that ERISA preempts a state law requiring health plans — including self-insured employer plans — to report claims data into a state's all-payer claims database. Vermont could not, after that ruling, legally compel every private payer into its data and payment infrastructure. That structural limit became concrete on January 1, 2023, when Blue Cross Blue Shield of Vermont — the state's largest insurer — declined to renew its OneCare contract, removing roughly 93,000 enrollees, about a third of OneCare's total enrollment, in a single step. Blue Cross cited inadequate contractual protection for its members' claims data under OneCare's plan to subcontract analytics to UVM Health Network (a competitor), and no evidence among its own members of progress on health outcomes or cost of care. This — a federal ruling constraining the mandate's reach, then the state's largest payer exercising exactly the option that ruling protected — is the documented mechanism, not a hospital protecting admission revenue.
 
 **WORKED EXAMPLE — ONE DECISION THROUGH THE MODEL**
 
@@ -278,27 +296,27 @@ OneCare attempted to manage a complex, population-level payment model involving 
 
 Claims data is the financial record of healthcare — every bill submitted to an insurer. It tells you what was done, when, and at what cost. Clinical data is the medical record — diagnoses, lab results, medications, care plans. It tells you why something was done and what the patient's health status actually is. Neither dataset alone is sufficient for managing value-based payment. You need both, integrated, in near-real time.
 
-OneCare operated without this. Care managers were working from claims data arriving 60 to 90 days after care was delivered — meaning they were identifying patients who had already been hospitalized rather than preventing hospitalization in the first place. This is the "Managing Blind" failure mode: assuming downside financial risk under a Total Cost of Care model without the analytics to track total cost of care in real time. The result is unexpected, unexplainable financial losses — not because the model is wrong, but because the organization cannot see what it is supposed to be managing.
+OneCare operated without this at the maturity real-time risk management requires. The evidence is documented from two directions rather than a single internal metric: OneCare's own staff told Green Mountain Care Board regulators, in a budget presentation, that its data analytics system was not as effective as newer software UVM Health Network was in the process of adopting — an admission of the gap from inside the organization. Separately, the state auditor's office found that Vermonters attributed to OneCare visited the emergency department at a rate roughly 36% higher than peer ACOs nationally and had about 18% fewer primary care visits — the utilization signature of a population being managed reactively rather than proactively. (A precise day-count for OneCare's own internal claims lag is not independently documented in the public record; OneCare's annual filings, cited in this chapter's sources, are the place to confirm one if it exists.) This is the "Managing Blind" failure mode: assuming downside financial risk under a Total Cost of Care model without the analytics to manage that risk in real time. The result is unexpected, unexplainable financial losses — not because the model is wrong, but because the organization cannot see what it is supposed to be managing.
 
 ::: {custom-style="CalloutWorked"}
 **WORKED EXAMPLE — Why timeliness is as critical as integration**
 
-A care manager responsible for 500 high-risk patients under a Total Cost of Care model needs to identify patients who are deteriorating before they are hospitalized. If her data arrives 60 days after the fact, she learns in March that a patient was hospitalized in January. The intervention opportunity is gone. If her data arrives within 24 to 48 hours — integrated clinical and claims feeds updated daily — she can see that a patient filled a new prescription last week, had an abnormal lab result three days ago, and has not seen their primary care provider in six months. She can call today, before the hospitalization.
+Consider, hypothetically, a care manager responsible for 500 high-risk patients under a Total Cost of Care model who needs to identify patients who are deteriorating before they are hospitalized. If her data arrives two months after the fact, she learns in March that a patient was hospitalized in January. The intervention opportunity is gone. If her data arrives within 24 to 48 hours — integrated clinical and claims feeds updated daily — she can see that a patient filled a new prescription last week, had an abnormal lab result three days ago, and has not seen their primary care provider in six months. She can call today, before the hospitalization. OneCare's documented utilization pattern — elevated ED use, reduced primary care contact — is consistent with exactly this failure mode, whatever its precise internal lag turned out to be.
 :::
 
 Vermont's health-data technology infrastructure addresses this directly: VHCURES provides longitudinal population data; VITL/VHIE provides clinical data exchange; and the AHS-GMCB analytics capability provides the modeling layer for global budget management and equity monitoring. This is the substrate OneCare never built.
 
 ### **Sequencing Failure 3: The Cascade**
-The two failures above did not operate independently. They compounded. Because participation was optional, OneCare could not achieve the provider network coverage required to manage total cost of care. Because it could not manage the total cost of care, it could not demonstrate savings. Because it could not demonstrate savings, it could not attract the capital to build the technology infrastructure that might have allowed it to manage costs. Because it lacked that technology, care management remained limited, financial reporting remained inadequate, and clinical value remained undemonstrated. Because clinical value was undemonstrated, skeptical providers had no reason to join. Which returned the cascade to its starting point.
+The two failures above did not operate independently. They compounded. Because a 2016 federal ruling limited how far Vermont's mandate could reach into self-insured payers, the state's largest insurer could — and in 2023, did — walk away, removing about a third of the population OneCare needed in order to manage total cost of care. Because it could not manage the total cost of care for a stable population, it could not demonstrate savings cleanly. Because its own analytics lagged what its regulators expected, it could not show the underlying utilization improving either. Because neither savings nor utilization improvement was clearly demonstrated, remaining participants and regulators had less reason to invest further in the model. Which returned the cascade to its starting point.
 
 | Sequencing Gap | Structural Error | Direct Consequence | Cascade Effect |
 | :---- | :---- | :---- | :---- |
-| Policy (Stage 1) | Voluntary participation — no mandate | High-revenue hospitals opt out; ACO accountable for costs it cannot influence | Total cost of care cannot be managed → savings targets missed |
-| Technology (Stage 2) | No integrated real-time data; 60–90 day lag | "Managing Blind" — care managers identify hospitalized patients after the fact | Proactive intervention impossible → high-cost events not prevented → financial exposure accelerates |
-| Economics (Stage 3) | Payment model assumed risk before technology was ready | Unexpected losses → cannot demonstrate savings to payers | Capital unavailable to build technology → cycle repeats |
-| System-level | Three gaps mutually reinforcing | Organizational wind-down after ~10 years | Failure was architectural — no management decision could reverse it |
+| Policy (Stage 1) | *Gobeille v. Liberty Mutual* (2016) limited the mandate's reach into self-insured plans | Blue Cross Blue Shield of Vermont exits (Jan. 2023) — about 93,000 enrollees, a third of the total, removed at once | Total cost of care cannot be managed for a stable population → savings targets contested |
+| Technology (Stage 2) | OneCare's own staff told GMCB its analytics lagged newer available systems | "Managing Blind" — auditor-documented 36% higher ED visits, 18% fewer primary care visits than peer ACOs | Proactive intervention impossible → high-cost events not prevented → financial exposure accelerates |
+| Economics (Stage 3) | Real total-cost risk assumed on top of both gaps above | Independent analyses reach conflicting conclusions on net savings vs. net cost | Contested results → harder to justify further investment in the missing capability |
+| System-level | Three gaps compounding over the federal agreement's ~8-year run | Organizational wind-down at the close of 2025 | Failure was structural — no single management decision could reverse a federal court ruling or rebuild analytics overnight |
 
-*Figure 1.1 — The OneCare Failure Cascade. Source: HTR Analysis (2026). Based on GMCB records, AHS November 2025 Transformation Report, and OneCare Vermont public filings.*
+*Figure 1.1 — The OneCare Failure Cascade. Source: HTR Analysis (2026). Based on GMCB records, AHS November 2025 Transformation Report, OneCare Vermont public filings, *Gobeille v. Liberty Mutual Ins. Co.*, 577 U.S. 312 (2016), and VTDigger reporting (Dec. 20, 2022; Mar. 13, 2026).*
 
 ::: {custom-style="CalloutBeyond"}
 **BEYOND VERMONT**
@@ -410,6 +428,16 @@ The most important dependency in the entire framework. Payment reform that is vo
 Oliver Wyman's Act 167 diagnosis explicitly found that voluntary reform was insufficient given the financial trajectory. The $700 million to $2.4 billion five-year deficit projection assumes the continuation of the commercial pricing structure that mandatory RBP is designed to dismantle. Without the Policy pillar's mandatory authority, the Economics pillar remains aspirational.
 :::
 
+::: {custom-style="CalloutBeyond"}
+**BEYOND VERMONT**
+
+Maryland has been running the experiment Vermont is starting. Its all-payer model put essentially every hospital in the state — 52 of them — under global budgets beginning in 2014, mandatorily, with no opt-out. A decade of evaluation is the closest thing American health policy has to a controlled test of this dependency.
+
+The results support the mechanism and complicate the optimism. Medicare spending fell 2.8% against a comparison group, driven by a 4.1% reduction in hospital expenditures — more than $780 million saved. Potentially preventable admissions fell 16.1%, unplanned readmissions 9.5%. But the quality picture was mixed: readmissions improved for healthier patients while hospitals struggled with sicker ones, and population health measures did not move.
+
+The lesson that transfers is narrower than "global budgets work." It is that mandatory architecture reliably changes hospital financial behavior — which is what this dependency claims — and that changing financial behavior is not the same as improving population health. That second step requires the Clinical pillar, and Maryland's experience is the evidence that it does not arrive on its own.
+:::
+
 **Policy → Operations: Statutory deadlines force execution capacity** · *REQUIRES (critical path)*
 
 One of the most underappreciated dependencies in healthcare transformation. Organizations develop the capacity to execute complex initiatives when they have non-negotiable deadlines, not when they have good intentions. Act 68's December 2028 Statewide Strategic Plan deadline, the FY2027 RBP mandate, and the FY2028 global budget mandate are not just policy milestones — they are organizational forcing functions that require AHS to build the project-management infrastructure, analytics capability, and staffing depth that the transformation requires. Without the Policy pillar imposing external accountability, the Operations pillar faces the chronic problem of healthcare administration: transformation planning that is perpetually in progress but never complete. Vermont's statutory deadlines are the mechanism that prevents this. They are deliberately irreversible.
@@ -435,6 +463,16 @@ This is the paired reading described above: Technology *enables* Economics, whic
 **VERMONT EVIDENCE**
 
 VHCURES population health analytics make the APM financial modeling described in Chapter 7 possible. The APM Shared Savings Calculator, the Hospital Financial Stress Test, and the VBC Readiness Assessment — all tools in the [HTR Research Lab](https://healthtransformationreview.org/research-lab/payment-models) — are built on VHCURES data logic. Vermont hospitals that invest in VHCURES analytics capability before Act 68's hospital global budgets take effect will be able to manage those budgets proactively rather than reactively.
+:::
+
+::: {custom-style="CalloutBeyond"}
+**BEYOND VERMONT**
+
+This dependency is where most states are structurally disqualified before they begin. Roughly 24 states operate an established all-payer claims database; the other half of the country does not have one. Vermont's VHCURES is not an unusual advantage in kind — it is an unusual advantage in *timing*, built years before the payment model that now needs it.
+
+For a state without an APCD, the sequencing consequence is concrete: total-cost-of-care accountability cannot be measured, so a global budget cannot be set defensibly, so the Economics pillar cannot be operated even where the political will exists to mandate it. The gap is not a year of procurement. Standing up an APCD is multi-year work involving legislation, payer reporting mandates, and data-governance infrastructure.
+
+Read against the Policy → Economics box above, this is the practical test for any state reading Vermont's playbook: mandatory authority is necessary but it is not sufficient, and the Technology gate is the one that cannot be opened by a vote.
 :::
 
 **Technology and the Equity Imperative: disaggregated data reveals disparities hidden in averages (critical)**
@@ -473,6 +511,18 @@ Vermont's Blueprint for Health demonstrates this dependency in reverse. The Blue
 **Economics → Technology: VBC contracts require data infrastructure** · *REQUIRES*
 
 Value-based care contracts are agreements to share financial accountability for a population's total cost of care. They cannot be executed without the data infrastructure to measure that total cost. Attribution lists, TCOC benchmarks, shared savings calculations, risk adjustment factors, quality measure reporting — all of these require the all-payer claims data, the population health analytics platform, and the FHIR-based data exchange that the Technology pillar provides. An organization that signs an APM contract without adequate data infrastructure is making a financial commitment it cannot monitor, manage, or dispute.
+
+::: {custom-style="CalloutWorked"}
+**WORKED EXAMPLE — Signing a contract you cannot read**
+
+A CFO signs a two-sided-risk contract for an attributed population of 12,000 lives, with a total-cost-of-care benchmark set from three years of historical claims. Every clinical decision her system makes over the following year is defensible. The care management team is good. The physicians are engaged.
+
+In month fourteen, the payer's reconciliation arrives: her system is $2.1 million over benchmark and owes a share of it back.
+
+She cannot tell whether that number is real. To dispute it she would need to know which patients were attributed and when they moved in or out of the panel; what the risk scores were and whether her documentation supported them; which spending happened outside her system, where she had no visibility at all; and whether the benchmark's trend factor matched what actually happened in her market. She has none of it. The payer has all of it.
+
+So she pays. Not because her system performed badly — she still does not know whether it did — but because she entered an argument she had no evidence to make. The clinical work was never the problem. The Technology gate was closed before she signed, and signing did not open it.
+:::
 
 ::: {custom-style="CalloutVT"}
 **VERMONT EVIDENCE**
@@ -736,10 +786,10 @@ In practice, embedding equity as a design constraint requires two organizational
 
 Open the [**HTR Simulator**](https://healthtransformationreview.org/htr-simulator) and model an organization that funds a downstream pillar before its upstream gate is open — for example, high Economics ambition with a weak Technology score. Watch the composite readiness collapse. Then open the [**Transformation Friction Index**](https://healthtransformationreview.org/transformation-friction-index) to see which pillar is your binding constraint. The principle is simpler to feel in the tool than to argue on the page: no amount of downstream funding opens an upstream gate. Spending more on the payment model does not make the missing analytics appear.
 :::
-::: {custom-style="CalloutVT"}
+::: {custom-style="CalloutKey"}
 **GO DEEPER — ACADEMY**
 
-The dependency mechanics behind these three principles — how payment incentives drive care redesign, why VBC contracts require data infrastructure first — are developed hands-on in the [Academy's](https://healthtransformationreview.org/academy) **Value-Based Care** course. Readers new to APM risk and total-cost-of-care accountability should start there before applying the sequencing framework to a live contract.
+The dependency mechanics behind these three principles are the subject of the Academy's **Five Pillars, One Imperative** course — specifically Lesson 4, "Dependency Logic and the Execution Sequence," and Lesson 5, "Sequencing Failure — The OneCare Autopsy." Start there before applying the sequencing framework to your own organization or state.
 :::
 
 ## **Five Sequencing Decisions That Organizations Get Wrong**
@@ -747,7 +797,7 @@ The OneCare autopsy in Section 1.2 is the fully documented case. The same errors
 
 | Sequencing error | Early-warning signals | Vermont evidence | Correction |
 | :---- | :---- | :---- | :---- |
-| **Economics without Policy readiness** — payment reform launched without mandatory participation | Voluntary participation below 80%; highest-cost providers stay out; redesigns driven by adverse selection | OneCare Vermont (voluntary architecture normalized over a decade, making the later transition to mandatory reform more disruptive than it would have been at the outset) | Act 68 mandatory RBP + global budgets |
+| **Economics without Policy readiness** — payment reform launched without mandatory participation | Voluntary participation below 80%; highest-cost payers or providers stay out; redesigns driven by adverse selection | OneCare Vermont (voluntary architecture normalized over roughly a decade, making the later transition to mandatory reform more disruptive than it would have been at the outset) | Act 68 mandatory RBP + global budgets |
 | **Technology without Operations readiness** — platform deployed to an org that cannot use it | Adoption below 30% six months post-deployment; continued manual processes; staff workarounds | VITL: sound platform, incomplete adoption among smaller providers for lack of Operations-pillar support to connect and train them | Vermont CIN shared-services model |
 | **Clinical without financial alignment** — high-quality program run under fee-for-service | Program running at a loss absorbed by cross-subsidy; support contingent on that cross-subsidy; perpetual budget-cut risk | Blueprint PCMHs produce the 5.8:1 ROI, but under FFS most of it accrues to payers, not the practices generating it | Act 68 global budgets align incentives with clinical investment |
 | **Equity review at the end, not the beginning** — methodology finished, then sent for equity review | Equity staff flagging the same structural problems in finalized designs; high rate of equity modifications at approval stage | RBP methodology design is the live test case: preserving rural access and not defunding high-Medicaid hospitals is a design question, not a post-hoc correction | Health Equity Advisory Commission consulted at design stage, not comment stage |
@@ -769,11 +819,11 @@ Vermont's transformation is unusual in one critical respect: it has a legislativ
 *Figure 1.8 — Vermont's transformation timeline, by pillar. Sources: HTR Analysis (2026); Act 68 of 2025; AHEAD State Agreement.*
 
 ### **The Current Vulnerability: The Technology-Economics Race**
-Vermont's most significant current sequencing risk is the gap between the FY2028 start of Act 68's hospital global budgets and the analytics-capability deployment timeline. Vermont hospitals will begin bearing global-budget financial accountability in January 2028 — updated per CMS's September 2025 announcement moving the Cohort 2 start from 2027 to 2028. If the AHS-GMCB analytics capability is not fully operational by that date, hospitals will be making financial management decisions based on incomplete or lagged data for the first year of full AHEAD accountability.
+Vermont's most significant current sequencing risk is the gap between the FY2028 start of Act 68's hospital global budgets and the analytics-capability deployment timeline. Vermont hospitals will begin bearing global-budget financial accountability in January 2028. If the AHS-GMCB analytics capability is not fully operational by that date, hospitals will be making financial management decisions based on incomplete or lagged data for the first year of full Act 68 global-budget accountability.
 
 This is a manageable but costly risk. Vermont hospitals that invest in their own VHCURES analytics capability — particularly HCC gap closure, the highest-ROI pre-launch analytics investment — can partially compensate for the analytics capability gap. A delay in that capability's deployment does not merely delay one program: it delays the financial management capability for AHEAD, the equity measurement capability for the Statewide Strategic Plan, and the risk stratification capability for Blueprint's CCBHC expansion. Three dependencies converge on this single Technology pillar investment.
 
-## **Work This Chapter on the Platform**
+## **EXPLORE ON THE PLATFORM**
 The execution-sequence argument is best understood by manipulating it, not just reading it. The [HTR platform](https://healthtransformationreview.org/research-lab) turns this chapter's three core claims — that the pillars are interdependent, that order is non-negotiable, and that getting the order wrong produces a measurable failure cascade — into tools you can run against your own organization or state.
 
 | Do this | On this tool | What to look for |
@@ -790,6 +840,21 @@ The execution-sequence argument is best understood by manipulating it, not just 
 
 Open the [**HTR Simulator**](https://healthtransformationreview.org/htr-simulator) and build a profile with strong Economics ambition (high) but weak Policy mandate (voluntary) and weak Technology substrate (no integrated real-time data). The composite score should collapse — not because the Economics inputs are bad, but because the simulator enforces the same dependency logic that sank OneCare. Then fix the order: raise Policy and Technology first, and watch the same Economics inputs finally produce a viable score. That reversal *is* the argument of this chapter.
 :::
+
+## **GO DEEPER — ACADEMY**
+This chapter is the subject of Track 1, "Foundations: The Framework," in the Academy's **Five Pillars, One Imperative** course:
+
+| Lesson | What it covers |
+| :---- | :---- |
+| 1 — Why Single-Pillar Thinking Fails | The CMMI record and why isolated interventions run into the constraints the other pillars create |
+| 2 — The Five Pillars and Their Diagnostic Questions | The five-question framework this chapter defines |
+| 3 — The Equity Imperative: Is It Just? | Why equity is a cross-cutting test, not a sixth pillar |
+| 4 — Dependency Logic and the Execution Sequence | The dependency matrix and the ENABLES/REQUIRES/DRIVES/⟲ vocabulary |
+| 5 — Sequencing Failure — The OneCare Autopsy | The three-part failure this chapter opens with, worked in full |
+
+*Figure 1.10 — Academy Track 1 lessons mapped to this chapter.*
+
+Start at [/academy](https://healthtransformationreview.org/academy) — Track 1 is built to be worked alongside this chapter, not after it.
 
 ## **Implications for You**
 If you are a Vermont hospital executive: The most important action you can take before Act 68's global budgets take effect in FY2028 is completing HCC gap closure for your full Medicare-attributed population. This single Technology pillar investment improves risk adjustment accuracy, produces a more defensible global budget benchmark, and prevents the "Managing Blind" failure mode in your first AHEAD performance year. Do not wait for the AHS-GMCB analytics capability to complete this work. Start with VHCURES direct access and your current analytics resources now.
@@ -825,7 +890,7 @@ If you are a national health policy professional: Vermont's OneCare failure is t
 
 **Premature investment** An investment in a downstream pillar that proceeds before the upstream enabling investment is in place. Most common forms: Technology deployment without Operations readiness; Economics contracts without Technology analytics readiness.
 
-Sources: Vermont Agency of Human Services, Health Care System Transformation Report (November 2025); Oliver Wyman Healthcare and Life Sciences Group, Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025); Vermont AHEAD State Agreement (January 2025); CMS AHEAD Model documentation (September 2025 update); Vermont Blueprint for Health Annual Report 2024; Act 68 of 2025; OneCare Vermont ACO annual reports (2014–2023); Maryland HSCRC Total Cost of Care Model data; GMCB FY25 and FY26 Hospital Budget Orders.
+Sources: Vermont Agency of Human Services, Health Care System Transformation Report (November 2025); Oliver Wyman Healthcare and Life Sciences Group, Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025); Vermont AHEAD State Agreement (January 2025); CMS AHEAD Model documentation (September 2025 update); Vermont Blueprint for Health Annual Report 2024; Act 68 of 2025; OneCare Vermont ACO annual reports (2014–2023); Maryland HSCRC Total Cost of Care Model data; GMCB FY25 and FY26 Hospital Budget Orders; *Gobeille v. Liberty Mutual Ins. Co.*, 577 U.S. 312 (2016); VTDigger, "Vermont's largest health insurer steps away from OneCare" (Dec. 20, 2022); VTDigger, "Vermont's 8-year 'all-payer' health care experiment sunset at the end of 2025. What did it teach us?" (Mar. 13, 2026); Vermont State Auditor performance audits of OneCare Vermont (2019, 2021).
 
 # **Chapter 2: The Policy Pillar — Legislative Architecture for Structural Reform**
 
@@ -843,15 +908,15 @@ Every state's reform effort eventually confronts the same architectural question
 | Jan 2025 | Vermont AHEAD State Agreement signed | Policy / Economics | Committed Vermont to Cohort 2; up to $150M/year EAST Fund; 8-year performance period |
 | 2025 | Act 68 of 2025 enacted | Policy / Economics | Mandatory RBP (FY2027), global budgets (FY2028), Dec 2028 Strategic Plan deadline |
 | Jul 4, 2025 | H.R. 1 signed (One Big Beautiful Bill Act) | Policy | $911B Medicaid cuts over 10 years; work requirements; 10M additional uninsured by 2034 |
-| Nov 2025 | Vermont RHT Program Application submitted | Policy / Operations | $195M award application; 19 HTR tools; 370-FTE workforce plan |
+| Nov 2025 | Vermont RHT Program Application submitted | Policy / Operations | $195M/year award application; 19 HTR tools; 370-FTE workforce plan |
 | Dec 2025 | CMS BALANCE Model announced | Economics / Clinical | GLP-1 coverage at negotiated prices; Vermont DVHA opt-in decision pending |
-| Dec 29, 2025 | Vermont receives $195M RHT award | Policy / Technology | Largest per-capita rural transformation award; funds CIN, telehealth, workforce |
+| Dec 29, 2025 | Vermont receives RHT award | Policy / Technology | $195M/year for 5 years — largest per-capita rural transformation award; funds CIN, telehealth, workforce |
+| Jul 2026 | Vermont withdraws from AHEAD | Policy / Economics | CMS renegotiation cut expected EAST Fund from ~$138M to a ~$10M cap; Vermont exits before its Cohort 2 performance period (Jan 2028) ever began. Act 68's state-authority framework is unaffected — see "The AHEAD Model" in the Economics chapter. |
 | FY2027 (Oct 2026) | RBP mandatory for all Vermont hospitals | Economics | First mandatory all-payer price cap in modern Vermont history; ≤200% Medicare target |
 | FY2028 (Oct 2027) | Global budgets mandatory (non-CAH hospitals) | Economics | Fixed revenue envelopes; transforms financial incentive from volume to population health |
 | Jan 2028 | Act 68 hospital global budgets take effect (FY2028) | Economics / Technology | Updated per CMS Sept 2025; Vermont hospitals begin Act 68 global-budget accountability (FY2028) |
 | Dec 2028 | Statewide Strategic Plan due to legislature | Operations / All pillars | Act 68 binding deadline; must commit to specific targets, timelines, accountable owners |
 | FY2030 (Oct 2029) | Global budgets mandatory — all 14 hospitals | Economics | Full all-payer global budget coverage; complete transition from fee-for-service signal |
-| 2030–2035 | AHEAD performance period continues | Economics / Clinical | CMS evaluation of Vermont total cost of care; evidence base for national replication |
 
 *Figure T.1 — Vermont Healthcare Transformation Timeline: 2022–2035. Source: Vermont Legislature, CMS, AHS, GMCB.*
 
@@ -1168,10 +1233,6 @@ For healthcare leaders, policymakers, and organizations doing business with Verm
 
 - AHS Statewide Health Care Delivery Strategic Plan delivered to legislature by December 2028
 
-- AHEAD Model Cohort 2 full operation; Medicare FFS hospital global budgets active
-
-- CMMI transformation grants of $1.2M available through AHEAD Cooperative Agreement Year 3
-
 - Global hospital budgets for all Vermont hospitals, including critical access hospitals
 
 These deadlines are not aspirational. They are statutory obligations. Organizations planning capital investments, contract negotiations, workforce strategies, or technology deployments that interact with Vermont's hospital system must treat these dates as certainties, not contingencies.
@@ -1253,7 +1314,7 @@ Chapter 2 established Vermont's legislative reform architecture — the Acts, th
 The federal policy environment is not a monolithic force that organizations respond to passively. It is a complex, evolving, and frequently internally contradictory set of programs, rules, incentives, and administrative interpretations that skilled policy practitioners can navigate strategically. Understanding the CMMI model landscape, the mechanics of Medicaid section 1115 waivers, the structure of APM contracts, and the federal-state relationship that determines whether state-level reform efforts are supported or blocked by federal requirements is not academic knowledge — it is operational necessity for any organization or state agency working on healthcare transformation in 2026.
 
 ## **The CMMI Landscape — What Exists, What Works, and What Has Been Discontinued**
-The Center for Medicare and Medicaid Innovation has been the primary federal vehicle for payment reform experimentation since its creation under the ACA. Over fifteen years, CMMI has launched more than fifty models, invested billions of dollars, and engaged thousands of healthcare organizations across the country. The results have been mixed in ways that carry specific lessons for organizations designing their own value-based care strategies.
+The Center for Medicare and Medicaid Innovation has been the primary federal vehicle for payment reform experimentation since its creation under the ACA. Over fifteen years, CMMI has launched more than seventy models, invested billions of dollars, and engaged thousands of healthcare organizations across the country. The results have been mixed in ways that carry specific lessons for organizations designing their own value-based care strategies.
 
 ### **The CMMI Track Record — An Honest Assessment**
 A 2023 independent evaluation of CMMI models found that the vast majority had not achieved statistically significant reductions in Medicare spending or improvements in quality. Most models were discontinued. The models that showed the most promise — ACO REACH (formerly Direct Contracting), AHEAD, the Making Care Primary model — share a set of characteristics that distinguish successful from unsuccessful CMMI designs.
@@ -1272,7 +1333,7 @@ As of 2026, the CMMI model portfolio has been significantly rationalized from it
 
 | Model | Key features and relevance |
 | :---- | :---- |
-| AHEAD (Achieving Healthcare Efficiency through Accountable Design) | Six-state voluntary total cost of care model. Vermont in Cohort 2 (begins January 2028). Hospital global budgets for Medicare FFS. Enhanced primary care payments. $150M/year additional Medicare funds for Vermont. The most relevant model for state-level transformation. |
+| AHEAD (Achieving Healthcare Efficiency through Accountable Design) | Five-state voluntary total cost of care model (Maryland, Connecticut, Hawaii, Rhode Island, New York). Hospital global budgets for Medicare FFS. Enhanced primary care payments. Vermont signed for Cohort 2 in January 2025 but withdrew in July 2026 after CMS cut the expected EAST Fund from ~$138M/year to a ~$10M cap. Still the most relevant model for state-level transformation — and Vermont's experience with it is the clearest evidence yet of the risk it carries. |
 | ACO REACH (Realizing Equity, Access, and Community Health) | Medicare FFS ACO model with mandatory two-sided risk. Full-risk capitation option. Equity focus including SDOH requirements. For organizations managing attributed Medicare populations outside of a state-level model, ACO REACH is the highest-accountability current federal ACO option. |
 | Making Care Primary (MCP) | Multi-payer primary care transformation model in 8-state initial cohort. 10-year model. Three-stage progression from basic to advanced primary care capabilities. States not participating in AHEAD may find MCP a viable primary care transformation vehicle. |
 | BALANCE Model | GLP-1 obesity drug coverage for Medicare and Medicaid enrollees at negotiated prices. Voluntary for manufacturers, states, and plans. Medicaid launch May 2026; Medicare Part D January 2028. Critical equity and chronic disease management model. |
@@ -1318,12 +1379,12 @@ Every state pursuing a 1115 waiver or CMMI model faces the same budget-neutralit
 :::
 
 ## **Prior Authorization Reform — The Administrative Pillar of Policy Strategy**
-Prior authorization — the requirement that providers obtain health plan approval before delivering certain services — is one of the most significant drivers of administrative burden, care delay, and provider frustration in American healthcare. The average physician practice spends 14.9 hours per week on prior authorization tasks. Prior authorization denials delay care for 33% of patients and cause some to abandon treatment entirely. The administrative cost of prior authorization nationally is estimated in the tens of billions of dollars annually.
+Prior authorization — the requirement that providers obtain health plan approval before delivering certain services — is one of the most significant drivers of administrative burden, care delay, and provider frustration in American healthcare. The average physician practice spends 13 hours per week on prior authorization tasks. Prior authorization denials delay care for a substantial share of patients and cause some to abandon treatment entirely. The administrative cost of prior authorization nationally is estimated in the tens of billions of dollars annually.
 
 Prior authorization reform is a Policy pillar issue because it requires either federal rulemaking or state legislation to change meaningfully. Individual payers reforming their own prior authorization processes voluntarily have limited impact; the burden arises from the aggregate of PA requirements across dozens of payers, each with different criteria, forms, and approval timelines.
 
 ### **Federal Prior Authorization Reform: What H.R. 1 and CMS Rules Require**
-The Improving Seniors' Timely Access to Care Act, passed in 2022, required Medicare Advantage plans to implement electronic prior authorization, transparency reporting, and expedited review timelines. CMS implemented rules in 2024 requiring payers to respond to expedited PA requests within 72 hours and standard PA requests within 7 days — a significant improvement from previous norms where standard reviews could take weeks.
+The Improving Seniors' Timely Access to Care Act passed the House unanimously in 2022 but died in the Senate and never became law. CMS achieved much of its substance through rulemaking instead: 2024 rules require payers to respond to expedited PA requests within 72 hours and standard PA requests within 7 days — a significant improvement from previous norms where standard reviews could take weeks.
 
 H.R. 1 (2025) included additional prior authorization reform provisions: public reporting of PA denial rates by service type, required disclosure of clinical criteria used in PA decisions, and stronger external appeal rights for denied requests. These are incremental improvements, not transformational changes. Full elimination of PA for evidence-based, guideline-concordant care — the policy that would most reduce administrative burden — remains aspirational.
 
@@ -2334,11 +2395,11 @@ If you are a national health policy professional: Vermont's RBP target of 200% o
 
 **Potentially avoidable utilization (PAU)** Hospital admissions, ED visits, and readmissions that could have been prevented through effective primary care, care coordination, or SDOH intervention. A key performance metric under global budgets; reducing PAU saves money in a capped-revenue environment.
 
-**EAST Fund** Equity, Access, and Statewide Transformation Fund — the component of Vermont's AHEAD State Agreement providing up to $150M annually in additional Medicare funds for investment in primary care, behavioral health, home health, and long-term care.
+**EAST Fund** Equity, Access, and Statewide Transformation Fund — the component of Vermont's AHEAD State Agreement that was to provide up to $150M annually in additional Medicare funds for investment in primary care, behavioral health, home health, and long-term care. A subsequent CMS renegotiation cut this expectation to a ~$10M cap, and Vermont withdrew from AHEAD in July 2026 before ever receiving it.
 
 AHEAD (Achieving Healthcare Efficiency through Accountable Design)
 
-CMMI's voluntary state total cost of care model, with 6 participating states. Vermont participates in Cohort 2, beginning January 2028. Provides Medicare FFS hospital global budgets, enhanced primary care payments, and accountability for total cost of care growth.
+CMMI's voluntary state total cost of care model, now operating in five states (Maryland, Connecticut, Hawaii, Rhode Island, and New York). Vermont signed for Cohort 2 in January 2025 but withdrew in July 2026. Provides Medicare FFS hospital global budgets, enhanced primary care payments, and accountability for total cost of care growth for its current participants.
 
 **Revenue predictability** A primary benefit of global budgets for hospital financial management: knowing total annual revenue before the year begins enables capital planning, workforce investment, and strategic redesign that FFS revenue uncertainty prevents.
 
@@ -4087,7 +4148,7 @@ Vermont's DVHA must make a BALANCE participation decision in 2026 that balances 
 ### **Force 5: The Value-Based-Care Tipping Point — Still Approaching**
 Despite fifteen years of payment-reform effort, the majority of U.S. healthcare spending remains in fee-for-service. VBC penetration is real — roughly 58% of commercially insured Americans are in some value-based arrangement — but it has not reached the tipping point at which fee-for-service becomes the minority mode of payment. Vermont's mandatory reference-based pricing (RBP) and global-budget approach is a direct legislative response to the failure of voluntary VBC to reach that point.
 
-The AHEAD Model — now operating in five states (Maryland, Connecticut, Hawaii, Rhode Island, and New York), after Vermont's 2026 withdrawal — is the most serious federal commitment to all-payer total-cost-of-care accountability since CMMI's founding. Changes implemented across all cohorts beginning January 2026 extended the model's end date to December 31, 2035, and added new requirements: each state must implement at least two policies promoting healthcare choice and competition, and adopt a Population Health Accountability Plan focused on preventive and chronic-disease care, with new transparency requirements around total-cost-of-care and primary care investment for Original Medicare beneficiaries specifically. Maryland — the model's longest-running and most-watched participant — signed an agreement to continue its participation in November 2025, a signal that the federal commitment to this approach remains intact heading into the period that matters most for Vermont. If Vermont's Cohort 2 participation (beginning January 2028) produces documented savings and quality improvement by 2030, the policy case for expanding AHEAD strengthens significantly. Vermont's performance is not only a Vermont question — it is national evidence for or against the most ambitious federal payment reform currently operating.
+The AHEAD Model — now operating in five states (Maryland, Connecticut, Hawaii, Rhode Island, and New York), after Vermont's 2026 withdrawal — is the most serious federal commitment to all-payer total-cost-of-care accountability since CMMI's founding. Changes implemented across all cohorts beginning January 2026 extended the model's end date to December 31, 2035, and added new requirements: each state must implement at least two policies promoting healthcare choice and competition, and adopt a Population Health Accountability Plan focused on preventive and chronic-disease care, with new transparency requirements around total-cost-of-care and primary care investment for Original Medicare beneficiaries specifically. Maryland — the model's longest-running and most-watched participant — signed an agreement to continue its participation in November 2025, a signal that the federal commitment to this approach remains intact. If Connecticut, Hawaii, Rhode Island, and New York's Cohort 2 and 3 participation produces documented savings and quality improvement by 2030, the policy case for expanding AHEAD strengthens significantly — and Vermont's own withdrawal already stands as a cautionary data point on the reliability of the federal funding those states are counting on. AHEAD's trajectory is not only a question for the states still in it — it is national evidence for or against the most ambitious federal payment reform currently operating, with Vermont's experience as its clearest warning so far.
 
 ::: {custom-style="CalloutBeyond"}
 **STATES TO WATCH**
@@ -4737,7 +4798,7 @@ The choice between a binding plan and a descriptive one will be made by AHS offi
 The people in Vermont who care about transformation have an obligation to press for the binding version. Not the aspirational one.
 
 ### **Decision 2: Will the Analytics Vendor Be Operational Before Act 68's Global Budgets Take Effect?**
-Vermont hospitals will begin operating under Act 68 global budgets in FY2028. The AHS-GMCB analytics vendor must be fully operational — producing HCC gap reports, population attribution analyses, and global budget performance dashboards — before that date. If it is not, Vermont hospitals will enter their first year of full AHEAD accountability without the tools to manage it. The "Managing Blind" failure mode, which destroyed OneCare Vermont's ability to demonstrate savings, will be replicated at the system level.
+Vermont hospitals will begin operating under Act 68 global budgets in FY2028. The AHS-GMCB analytics vendor must be fully operational — producing HCC gap reports, population attribution analyses, and global budget performance dashboards — before that date. If it is not, Vermont hospitals will enter their first year of full Act 68 global-budget accountability without the tools to manage it. The "Managing Blind" failure mode, which destroyed OneCare Vermont's ability to demonstrate savings, will be replicated at the system level.
 
 The analytics vendor procurement is underway as of April 2026. The gap between procurement completion and vendor deployment is typically 12 to 18 months for complex health data systems. January 2028 is 21 months away. This is a manageable timeline that will become an unmanageable one if procurement slips. The people responsible for this procurement — AHS, GMCB, and the legislature that funds them — need to treat January 2028 as an immovable deadline, not an aspirational target.
 
@@ -4839,7 +4900,7 @@ Vermont's transformation would be impossible without an institutional actor most
 
 *Figure A.2 — GMCB regulatory functions. Sources: GMCB Hospital Budget Review Guide; Acts 167 and 68; GMCB Annual Report 2024.*
 
-GMCB's design explains a feature of Vermont's transformation that is analytically important: mandatory authority precedes payment-reform deployment. The voluntary-ACO era produced modest results because the highest-cost providers could decline to participate. GMCB's ability to set rates rather than recommend them is the structural condition that makes mandatory RBP and global budgeting achievable. States attempting payment reform without a comparable body are, in the framework's terms, attempting Economics-pillar transformation without the Policy-pillar architecture that gives it enforcement teeth.
+GMCB's design explains a feature of Vermont's transformation that is analytically important: mandatory authority precedes payment-reform deployment. The voluntary-ACO era produced modest, contested results in part because federal law — per *Gobeille v. Liberty Mutual* (2016) — limited how far the state could compel every payer to participate, and Vermont's largest insurer ultimately exercised exactly that option. GMCB's ability to set rates rather than recommend them is the structural condition that makes mandatory RBP and global budgeting achievable regardless of any single payer's or provider's preference. States attempting payment reform without a comparable body are, in the framework's terms, attempting Economics-pillar transformation without the Policy-pillar architecture that gives it enforcement teeth.
 
 ## **The Hospital System**
 Vermont has 14 general acute-care hospitals, all non-profit — no for-profit chains, and therefore none of the shareholder obligations that complicate transformation elsewhere. The University of Vermont Health Network comprises UVMMC, CVMC, and Porter; Dartmouth Health affiliates include SVMC and Mt. Ascutney. The remaining hospitals — Gifford, Copley, North Country, Northeastern Vermont Regional, Brattleboro Memorial, Springfield, Rutland Regional, Grace Cottage, and Northwestern — operate as independent community institutions, and it is these that face the most acute fragility.
@@ -5099,7 +5160,7 @@ How to use this scorecard. It is a snapshot as of April 2026, and several metric
 
 # **Appendix F — A Reader's Guide to the Health Transformation Review Platform**
 
-A companion to Transforming American Healthcare.
+A companion to Transforming Healthcare.
 
 ## **What This Platform Is**
 The Health Transformation Review (HTR) platform is the living, interactive companion to this book. Where the book provides the analytical framework — the five-pillar architecture, the execution sequence, the Vermont case study — the platform provides the tools, data, and intelligence to apply that framework to your own work in real time. The book explains how American healthcare is being transformed and why the mechanics work as they do; the platform is where you go to do the work — to model a payment-reform scenario, track a CMS initiative, study the Vermont program in depth, analyze your organization's readiness, or stay current as conditions evolve. It is designed to be used alongside the book, not after finishing it.
@@ -5185,7 +5246,7 @@ Sequencing check: per Chapter 1, the correct execution order is Policy → Techn
 Chapters 6 and 7 document where Vermont's hospital system stands today — nine of fourteen hospitals reporting operating losses, with Oliver Wyman's conservative scenario projecting thirteen of fourteen in losses by 2028. They also document where Act 68 is taking the system — reference-based pricing mandatory by FY2027 and statewide global hospital budgets by FY2030. What receives less direct treatment is the financing of the years in between, when RBP is phasing in, global budgets are not yet operational statewide, and the FY2023–2026 losses have not yet been resolved by anything. This section assembles the pieces.
 
 ### **What bridges exist**
-Three sources of transition-period support exist in parallel, on different timelines and with different eligibility rules. The Rural Health Transformation Program provides Vermont roughly $195M per year across five years (2026–2030), about $1 billion in total — capital funding intended for structural transformation, not operating-loss replacement, and explicitly time-limited. The AHEAD EAST Fund provides up to $150M per year to Vermont under its AHEAD agreement, contingent on Cohort 2 implementation milestones beginning January 2028 — meaning this funding is not available during FY2027, the first year of mandatory RBP. Medicaid hospital global budgets (HGB) under Vermont's own design begin in January 2026, ahead of the commercial RBP mandate — meaning the Medicaid payer is, perversely, the first to move to a budget-based model, while commercial payers (where most of the price-extraction problem documented in Chapter 6 lives) are the last.
+Three sources of transition-period support were expected to exist in parallel, on different timelines and with different eligibility rules — though only two now actually apply. The Rural Health Transformation Program provides Vermont roughly $195M per year across five years (2026–2030), about $1 billion in total — capital funding intended for structural transformation, not operating-loss replacement, and explicitly time-limited. The AHEAD EAST Fund was to provide up to $150M per year to Vermont, contingent on Cohort 2 implementation milestones beginning January 2028 — but Vermont withdrew from AHEAD in July 2026, so this funding will not arrive at all (see "The AHEAD Model" in this chapter). Medicaid hospital global budgets (HGB) under Vermont's own design begin in January 2026, ahead of the commercial RBP mandate — meaning the Medicaid payer is, perversely, the first to move to a budget-based model, while commercial payers (where most of the price-extraction problem documented in Chapter 6 lives) are the last.
 
 ::: {custom-style="CalloutKey"}
 **THE GAP**
@@ -5251,7 +5312,7 @@ The Stage 5 question: *Is operational capacity keeping pace with the statutory t
 ::: {custom-style="CalloutTry"}
 **CAPSTONE — Run the whole sequence backwards.**
 
-Now deliberately break the order: take a strong Stage 3 budget model and a strong Stage 4 clinical model, but set Stage 1 to *voluntary* and leave Stage 2 unbuilt. Re-run the **Transformation Scorecard**. The composite collapses — not because the economics or clinical work is weak, but because the platform enforces the same dependency logic that sank OneCare. That collapse is the entire argument of *Transforming American Healthcare*, reproduced by your own hand.
+Now deliberately break the order: take a strong Stage 3 budget model and a strong Stage 4 clinical model, but set Stage 1 to *voluntary* and leave Stage 2 unbuilt. Re-run the **Transformation Scorecard**. The composite collapses — not because the economics or clinical work is weak, but because the platform enforces the same dependency logic that sank OneCare. That collapse is the entire argument of *Transforming Healthcare*, reproduced by your own hand.
 :::
 
 *Figure I.1 — The HTR Lab Workbook maps each of the five pillars to a working platform tool, in the book's execution sequence.*
@@ -5275,6 +5336,8 @@ Figure 1.7 — Five sequencing errors: the diagnostic pattern, early-warning sig
 Figure 1.8 — Vermont's transformation timeline, by pillar. Sources: HTR Analysis (2026); Act 68 of 2025; AHEAD State Agreement.
 
 Figure 1.9 — Hands-on platform tools for Chapter 1: working the execution-sequence argument on the HTR platform.
+
+Figure 1.10 — Academy Track 1 lessons mapped to this chapter.
 
 Figure T.1 — Vermont Healthcare Transformation Timeline: 2022–2035. Source: Vermont Legislature, CMS, AHS, GMCB.
 
