@@ -646,6 +646,99 @@ LESSONS_BY_TRACK = {
 }
 
 
+# ── Book cross-references ───────────────────────────────────────────────────
+# The book points into the Academy through each chapter's "GO DEEPER — ACADEMY"
+# section. This closes the other half of that loop: every lesson ends with a
+# pointer back to the chapter it teaches, so the two halves of the ecosystem
+# reference each other rather than the book linking one way into silence.
+#
+# Keyed by lesson slug. Chapter slugs follow /read/[slug] — numeric chapters are
+# zero-padded ("chapter-01"), per chapterToSlug() in lib/narration.ts.
+BOOK_REFS = {
+    "why-single-pillar-thinking-fails": (
+        "Chapter 1",
+        "chapter-01",
+        "This lesson works the opening argument of Chapter 1 — the CMMI record and why "
+        "interventions that address a single pillar keep running into the constraints of "
+        "the ones they ignore.",
+    ),
+    "five-pillars-diagnostic-questions": (
+        "Chapter 1",
+        "chapter-01",
+        "Chapter 1 defines each pillar's diagnostic question and its structural role. "
+        "Figure 1.2 is the reference table for what each pillar produces when it is working.",
+    ),
+    "the-equity-imperative-is-it-just": (
+        "Chapters 1 and 10",
+        "chapter-10",
+        "Chapter 1 introduces the Equity Imperative as the test applied to all five pillars. "
+        "Chapter 10 develops it in full — stratified HEDIS, the HEROI Index, and the VBC "
+        "equity safeguards that keep payment design from penalizing the providers serving "
+        "the hardest-to-reach populations.",
+    ),
+    "dependency-logic-execution-sequence": (
+        "Chapter 1",
+        "chapter-01",
+        "The dependency matrix in Figure 1.3 is this lesson's source — nine directed "
+        "relationships, read row-pillar to column-pillar, with ENABLES, REQUIRES, DRIVES "
+        "and the two feedback loops that make the system self-correcting.",
+    ),
+    "onecare-sequencing-autopsy": (
+        "Chapter 1",
+        "chapter-01",
+        "Chapter 1 works the OneCare Vermont collapse as three compounding sequencing "
+        "failures and the cascade they produced. It is the canonical case the whole "
+        "framework is built to explain.",
+    ),
+    "legislative-architecture-reform-cascade": (
+        "Chapter 2",
+        "chapter-02",
+        "Chapter 2 is the full legislative history — Act 167's diagnostic mandate, Act 51's "
+        "planning authority, and Act 68's operational mandate, plus the Oliver Wyman "
+        "engagement that produced the evidence base for all three.",
+    ),
+    "voluntary-vs-mandatory-architecture": (
+        "Chapter 2",
+        "chapter-02",
+        "Chapter 2 covers the enforcement mechanics behind the mandate — what 'mandatory' "
+        "means in practice, what GMCB can actually do, and the reference-based pricing "
+        "design that eliminates the opt-out.",
+    ),
+    "cmmi-waivers-federal-state-interface": (
+        "Chapter 3",
+        "chapter-03",
+        "Chapter 3 is the practitioner's guide to the federal interface — the CMMI model "
+        "landscape, Section 1115 waiver negotiation, budget neutrality, and how H.R. 1 "
+        "reshaped the Medicaid environment states now operate in.",
+    ),
+}
+
+
+def _with_book_ref(lesson):
+    """Append the 'From the Book' callout to a lesson, if one is mapped for it.
+
+    Idempotent: re-running the build never stacks duplicate callouts, because the
+    block is appended to a fresh copy of the lesson's block list each time.
+    """
+    ref = BOOK_REFS.get(lesson["slug"])
+    if not ref:
+        return lesson
+    chapter_label, chapter_slug, body = ref
+    out = dict(lesson)
+    blocks = [b for b in lesson.get("contentBlocks", []) if b.get("_bookRef") is not True]
+    blocks.append(
+        {
+            "type": "callout",
+            "variant": "info",
+            "heading": f"From the Book — {chapter_label}",
+            "body": f"{body}\n\nRead it at /read/{chapter_slug}.",
+            "_bookRef": True,
+        }
+    )
+    out["contentBlocks"] = blocks
+    return out
+
+
 def build():
     course = dict(COURSE)
     tracks = []
@@ -655,7 +748,7 @@ def build():
         t["isPublished"] = False
         t["createdAt"] = "2026-09-07T00:00:00Z"
         t["updatedAt"] = "2026-09-07T00:00:00Z"
-        t["lessons"] = LESSONS_BY_TRACK[t["id"]]
+        t["lessons"] = [_with_book_ref(l) for l in LESSONS_BY_TRACK[t["id"]]]
         tracks.append(t)
     course["tracks"] = tracks
     OUT.write_text(json.dumps(course, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

@@ -137,6 +137,13 @@
                   "right": "Each stage removes the constraint blocking the next"
                 }
               ]
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "From the Book — Chapter 1",
+              "body": "This lesson works the opening argument of Chapter 1 — the CMMI record and why interventions that address a single pillar keep running into the constraints of the ones they ignore.\n\nRead it at /read/chapter-01.",
+              "_bookRef": true
             }
           ],
           "quiz": {
@@ -318,6 +325,13 @@
               "type": "text",
               "heading": "Diagnosing the binding constraint",
               "body": "In practice you rarely find all five failing at once. You find one that is blocking the others — the binding constraint. The diagnostic move is to walk the five questions in order and stop at the first honest 'no.'\n\nAn organization with a signed value-based contract, a redesigned care model, and no real-time cost data has an Economics pillar that exists on paper and a Technology pillar that cannot support it. Adding clinical staff will not help. Renegotiating the contract will not help. The constraint is data, and until it is relieved, investment in the other pillars produces less than it should."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "From the Book — Chapter 1",
+              "body": "Chapter 1 defines each pillar's diagnostic question and its structural role. Figure 1.2 is the reference table for what each pillar produces when it is working.\n\nRead it at /read/chapter-01.",
+              "_bookRef": true
             }
           ],
           "quiz": {
@@ -504,6 +518,13 @@
               "type": "text",
               "heading": "Designed in, not reviewed in",
               "body": "The most common way equity fails is not opposition — it is sequencing. An equity review that happens at the approval stage, after the payment methodology is designed, can flag a problem but cannot cheaply fix one. By then the rate structure, the risk model and the measurement approach are already built around assumptions that did not include social risk.\n\nThe alternative is an equity constraint embedded in the design process itself. A reference-based-pricing methodology that sets rates uniformly, without adjusting for the conditions facing hospitals in underserved communities, is technically correct and practically inequitable — and it is far cheaper to catch that while the methodology is being written than after it is adopted."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "From the Book — Chapters 1 and 10",
+              "body": "Chapter 1 introduces the Equity Imperative as the test applied to all five pillars. Chapter 10 develops it in full — stratified HEDIS, the HEROI Index, and the VBC equity safeguards that keep payment design from penalizing the providers serving the hardest-to-reach populations.\n\nRead it at /read/chapter-10.",
+              "_bookRef": true
             }
           ],
           "quiz": {
@@ -688,6 +709,13 @@
               "type": "text",
               "heading": "Design can run ahead of management",
               "body": "One refinement prevents a common overcorrection. Sequencing does not mean four pillars sit idle while the first one finishes.\n\nThe useful distinction is between Economics-as-design and Economics-as-management. Defining a payment architecture — the rate methodology, the risk model, the equity constraints — can and should proceed in parallel with the technology build. Operating that model, with real money and real downside risk, requires the technology substrate to be live. Confusing the two is how organizations end up having signed something they cannot run."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "From the Book — Chapter 1",
+              "body": "The dependency matrix in Figure 1.3 is this lesson's source — nine directed relationships, read row-pillar to column-pillar, with ENABLES, REQUIRES, DRIVES and the two feedback loops that make the system self-correcting.\n\nRead it at /read/chapter-01.",
+              "_bookRef": true
             }
           ],
           "quiz": {
@@ -881,6 +909,13 @@
               "type": "text",
               "heading": "Act 68 as the structural answer",
               "body": "Vermont's legislative response is the clearest evidence that the diagnosis was understood. Act 68 of 2025 makes reference-based pricing mandatory for all Vermont hospitals beginning FY2027, and hospital global budgets mandatory beginning FY2028. This is not an incremental improvement on the voluntary model — it eliminates the opt-out that made the voluntary model ineffective.\n\nWhich sets up the rest of this course. Act 68 answers the Policy failure. Whether Vermont answers the Technology failure in time — whether the AHS–GMCB analytics capability is genuinely operational before FY2028 global budgets take effect — is the open question the framework tells you to watch."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "From the Book — Chapter 1",
+              "body": "Chapter 1 works the OneCare Vermont collapse as three compounding sequencing failures and the cascade they produced. It is the canonical case the whole framework is built to explain.\n\nRead it at /read/chapter-01.",
+              "_bookRef": true
             }
           ],
           "quiz": {
@@ -1108,6 +1143,13 @@
               "type": "text",
               "heading": "Goals that outlive the bill",
               "body": "Act 167 established five statutory goals: reduce inefficiencies; lower costs; improve health outcomes; reduce health inequities; and increase access to essential services.\n\nThese matter not as aspirational language but as operational accountability criteria embedded in everything downstream. AHS's monthly reports to the legislature track progress against them. The GMCB hospital budget review references them. The Rural Health Transformation Program application maps each proposed initiative to them. Act 68's Statewide Strategic Plan will be measured against them. That is how statutory goal-setting works when properly designed — not as a preamble, but as a persistent accountability structure that outlives the bill that created it."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "From the Book — Chapter 2",
+              "body": "Chapter 2 is the full legislative history — Act 167's diagnostic mandate, Act 51's planning authority, and Act 68's operational mandate, plus the Oliver Wyman engagement that produced the evidence base for all three.\n\nRead it at /read/chapter-02.",
+              "_bookRef": true
             }
           ],
           "quiz": {
@@ -1282,6 +1324,13 @@
               "type": "text",
               "heading": "Traceable to the diagnosis",
               "body": "Signed by Governor Scott on June 12, 2025, Act 68 is the legislative operationalization of the Oliver Wyman diagnosis, and the mapping is direct. Oliver Wyman recommended moving to reference-based pricing at 200% of Medicare or less; Act 68 mandated it by FY2027. Oliver Wyman recommended global budgets once conditions for success were met; Act 68 required them for non-CAH hospitals by FY2028 and all hospitals by FY2030. Oliver Wyman recommended GMCB add a Division of Planning and Effectiveness; Act 68 authorized three new permanent classified positions. Oliver Wyman recommended reviewing AHS structure; Act 68 directed the Statewide Strategic Plan.\n\nThis traceability is what a functioning Policy pillar looks like: a diagnosis that produces specific recommendations, and legislation that converts each one into a binding requirement with a date attached."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "From the Book — Chapter 2",
+              "body": "Chapter 2 covers the enforcement mechanics behind the mandate — what 'mandatory' means in practice, what GMCB can actually do, and the reference-based pricing design that eliminates the opt-out.\n\nRead it at /read/chapter-02.",
+              "_bookRef": true
             }
           ],
           "quiz": {
@@ -1465,6 +1514,13 @@
               "type": "text",
               "heading": "Reading the federal environment as a constraint",
               "body": "The federal interface is not only a source of authority and funding — it is also a source of risk that state strategy has to absorb. H.R. 1, signed July 4, 2025, carries roughly $911 billion in Medicaid reductions over ten years along with work requirements, with projections of about 10 million additional uninsured by 2034.\n\nA state reform architecture that assumes a stable federal financing environment is fragile by construction. The Policy pillar's job is not only to obtain authority and capital, but to build a structure that survives changes in both."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "From the Book — Chapter 3",
+              "body": "Chapter 3 is the practitioner's guide to the federal interface — the CMMI model landscape, Section 1115 waiver negotiation, budget neutrality, and how H.R. 1 reshaped the Medicaid environment states now operate in.\n\nRead it at /read/chapter-03.",
+              "_bookRef": true
             }
           ],
           "quiz": {
