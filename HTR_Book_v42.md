@@ -19,14 +19,14 @@ That room is the origin of this book. Not because Vermont is uniquely troubled �
 
 "On a time delay" is measurable, not rhetorical. In 2020, three states had more residents over 65 than under 18: Maine, Vermont, and Florida. By 2024 there were eleven — Delaware, Hawaii, Montana, New Hampshire, Oregon, Pennsylvania, Rhode Island, and West Virginia had joined them. Vermont now ranks fourth-oldest in the country by median age (42.8), behind Maine (45.1), New Hampshire (43.0), and West Virginia (42.9).
 
-The financial consequence is arriving on the same delay. Nationally, 41% of rural hospitals operate in the red and roughly 768 are at risk of closing, 315 of them within three years. Vermont's nine-of-fourteen — 64% — is not a different problem from the national one. It is the national problem, further along. The states listed above are the ones for whom this book is least hypothetical.
+The financial consequence is arriving on the same delay. Nationally, more than 40% of rural hospitals operate in the red, and Chartis counts 417 as vulnerable to closure (*2026 State of Rural Health*). Vermont's nine-of-fourteen — 64% — is not a different problem from the national one. It is the national problem, further along. The states listed above are the ones for whom this book is least hypothetical.
 :::
 
 This book is the analytical framework for that change. It is not a policy brief for or against any particular agenda. The five goals of Vermont's Act 167 — reduce inefficiencies, lower costs, improve health outcomes, reduce health inequities, and increase access to essential services — are goals that virtually every person across the political spectrum would endorse. The means for achieving them are legitimately contested. This book engages that contestation honestly and presents both sides where the evidence genuinely runs in two directions.
 
 The framework is organized around five pillars: Policy, Technology, Economics, Clinical, and Operations. It emerged from the conviction that transformation fails when it addresses any single pillar in isolation. Payment reform without clinical redesign produces financial savings that evaporate when care models do not change. Clinical quality improvement without payment reform produces better care that the financial system immediately discourages. Technology investment without operational readiness produces platforms that no one uses. Equity goals without structural investment produce aspirations without outcomes.
 
-That last failure is why equity does not appear here as a sixth pillar. It is the **Equity Imperative** — a single justice test that each of the five pillars must pass on its own terms, not a separate workstream running alongside them. A sixth pillar would come with its own budget line, its own staff, and its own place in the queue, which means it could be sequenced last, funded least, and reported separately from the work that actually determines whether disparities close. An imperative cannot be deferred that way, because there is no separate equity project to defer: every pillar's own deliverable carries an equity condition it has to satisfy. The Introduction explains why that distinction is structural rather than rhetorical, and Chapter 1 applies the test pillar by pillar.
+That last failure is why equity does not appear here as a sixth pillar. It is the **Equity Imperative** — a single justice test that each of the five pillars must pass on its own terms. The Introduction explains why that distinction is structural rather than a matter of emphasis, and Chapter 1 applies the test pillar by pillar.
 
 ::: {custom-style="Banner"}
 The five pillars must move together — which means the people responsible for each pillar must understand all the others.
@@ -34,7 +34,7 @@ The five pillars must move together — which means the people responsible for e
 
 Vermont runs through this book as its primary teaching case. Vermont is in this book not because it is large or powerful, but because it is transparent. The combination of a small state's intimacy, a strong public-sector analytical tradition, and an active regulatory body in the Agency of Human Services (AHS) and the GMCB has produced a documentary record — the Oliver Wyman analysis, the GMCB's monthly hospital data, the AHS transformation reports, the AHEAD State Agreement — that gives this book a foundation most states cannot match. Vermont's transformation is happening in public, with detailed public data, and the lessons transfer.
 
-This book is also not a prediction. The transformations described here are underway but unfinished. Whether Vermont's hospital system stabilizes or contracts, whether global budgets reduce costs or constrain access, whether the Agency of Human Services can execute the restructuring its mandate requires — these are genuinely uncertain. What this book provides is the analytical framework for understanding what is happening and why, and for contributing to better decisions as the story unfolds. The decisions, and their consequences, belong to the people who make them.
+This book is also not a prediction. The transformations described here are underway but unfinished, and whether Vermont's hospital system stabilizes or contracts is genuinely uncertain. The Introduction's "What This Book Cannot Do" sets out the limits of what a framework can honestly claim; the short version is that the decisions, and their consequences, belong to the people who make them.
 
 Finally, this book is not, on its own, the whole of the argument. This book is the intellectual foundation of the **Health Transformation Review**, an open-source integrated ecosystem with three parts designed to work as one:
 
@@ -54,8 +54,6 @@ The full ecosystem is at [**healthtransformationreview.org**](https://healthtran
 
 The reader profiles and recommended reading paths are in the Introduction that follows. Use them. This material rewards a reading strategy calibrated to your role and your decisions — and to the tools and courses that go with it — not a linear march through the whole book.
 
-January 2026
-
 # **INTRODUCTION**
 
 ## **September 18, 2024**
@@ -65,9 +63,9 @@ The Green Mountain Care Board of Vermont had convened a public meeting at which 
 
 They were not wrong.
 
-Oliver Wyman's lead consultant opened with the financial trajectory. Nine of Vermont's fourteen hospitals were already reporting operating losses, with the worst reaching negative 8.9%. If current trends continued — the same trends that had been building for a decade, the trends that voluntary reform had been addressing for years without reversing — thirteen of the fourteen would be in operating losses by 2028. The cumulative five-year system deficit ranged from $700 million in the optimistic scenario to $2.4 billion in the realistic one.
+Oliver Wyman's lead consultant opened with the financial trajectory. Nine of Vermont's fourteen hospitals were already reporting operating losses, with the worst reaching negative 8.9%. If current trends continued — the same trends that had been building for a decade, the trends that voluntary reform had been addressing for years without reversing — thirteen of the fourteen would be in operating losses by 2028. The cumulative five-year system deficit ranged from $700 million in the optimistic scenario to $2.4 billion in the realistic one. (Press accounts have attached different end-years to this same projection — 2028, 2029, and 2030 have all appeared in print. The range is Oliver Wyman's five-year cumulative figure; the ambiguity is in the coverage, not in the underlying model.)
 
-The next slide showed premiums. The average silver exchange plan premium had risen from $456 per month in 2018 to $948 in 2024 — a 108% increase. Median household income had grown 22% over the same period. Out-of-pocket maximums had more than doubled. The University of Vermont Medical Center, with approximately 50% of the state's hospital market share, had charged commercial payers roughly 417% of Medicare rates for outpatient services in 2022, according to the RAND hospital price data cited in the Oliver Wyman analysis — among the highest such ratios in the country, and consistent with RAND's separate finding that UVMMC is the most expensive hospital in Vermont. Those charges flowed directly into the premiums that Vermont families were paying, with no regulatory brakes.
+The next slide showed premiums. The average silver exchange plan premium had risen from $456 per month in 2018 to $948 in 2024 — a 108% increase. Median household income had grown 22% over the same period. Out-of-pocket maximums had more than doubled. The University of Vermont Medical Center, with approximately 50% of the state's hospital market share, was charging commercial payers roughly 358% of Medicare rates — RAND's published figure for inpatient and outpatient services combined, drawn from 2018–2020 claims — making it, by RAND's own accounting, the most expensive hospital in Vermont. Statewide, Vermont hospitals charge commercial payers 250–300% of Medicare on average, and the Green Mountain Care Board's own later analysis found outpatient imaging at some Vermont hospitals reaching 715–944% of Medicare. Those charges flowed directly into the premiums that Vermont families were paying, with no regulatory brakes.
 
 The final slide showed the demographics. Vermont's working-age population was projected to decline 13% by 2040 — from 367,000 to approximately 318,000 — while the over-65 population rose from 21.7% toward 30% of the state's total. This shift would progressively move patients from commercial insurance, which pays above cost and funds the cross-subsidy that sustains hospitals, into Medicare and Medicaid, both of which reimburse below cost. The slide did not say the words "system collapse." It did not need to.
 
@@ -123,22 +121,23 @@ This is a serious argument. Maryland's experience with hospital global budgets i
 ### **2. The Global Budget Argument**
 Critics of hospital global budgets argue that fixed revenue envelopes create perverse incentives: hospitals that reduce utilization under a global budget model may shift costs rather than eliminate them, delay necessary care to manage within budget, or game quality metrics rather than improve quality. The literature on budget caps and quality outcomes is genuinely mixed.
 
-This book's response is not that global budgets are without risk. It is that the alternative — fee-for-service payment that makes population health management financially irrational — has a documented record of failure that is longer and more extensive than the record of global budget problems. The choice is not between a perfect payment model and a risky one. It is between a payment model that systematically rewards volume and one that, with adequate safeguards, can reward outcomes. Chapter 6 (the Economics Pillar) develops the specific safeguards Vermont's model requires.
+Global budgets carry real risk, and this book does not claim otherwise. What it claims is that the alternative — fee-for-service payment that makes population health management financially irrational — has a documented record of failure longer and more extensive than the record of global budget problems. No perfect payment model is on the table. The real choice lies between one that systematically rewards volume and one that, with adequate safeguards, can reward outcomes. Chapter 6 (the Economics Pillar) develops the specific safeguards Vermont's model requires.
 
-### **3. The AHEAD Skepticism Argument**
-CMMI has operated innovation models for fifteen years. Most have not produced the savings they projected. AHEAD's predecessor — the Vermont All-Payer ACO Model — produced modest results over nine years despite significant federal and state investment. Why will AHEAD be different?
+### **3. The Federal Model Reliability and Durability Argument**
+CMMI has operated innovation models for fifteen years. Most have not produced the savings they projected. AHEAD's predecessor — the Vermont All-Payer ACO Model — produced modest results over nine years despite significant federal and state investment. AHEAD itself was an eleven-year model running from 2024 through December 2035, already modified once (the January 2026 changes extending the end date and adding accountability requirements) and set to span at least one more presidential transition before Vermont's Cohort 2 implementation was due to begin in January 2028. Why would AHEAD be different, and what happens to Vermont's reform if it is not?
 
-This is perhaps the strongest challenge in the book. The answer requires acknowledging the critique honestly: CMMI models have generally underperformed their projections, and there is no guarantee AHEAD will be different. What is different about Vermont's approach is the mandatory statutory architecture that AHEAD did not have in its predecessor: Acts 167 and 68 require hospitals to participate in global budgets and reference-based pricing regardless of whether AHEAD succeeds. Vermont's transformation does not depend on AHEAD — AHEAD was to amplify it. This ceased to be hypothetical in July 2026, when Vermont formally withdrew from AHEAD after CMS capped the program's funding: the mandatory state framework under Acts 167 and 68 remained fully in force, and the reform continued without missing a step. The skeptic's question was answered by events — Vermont did not need AHEAD to survive the loss of AHEAD. Chapter 13 (The Future of Healthcare Transformation) returns to this directly.
+This is perhaps the strongest challenge in the book, and the honest answer begins by conceding the premise: CMMI models have generally underperformed their projections, and several have been redesigned or discontinued mid-course. What is different about Vermont's approach is the mandatory statutory architecture its predecessor lacked. Acts 167 and 68 require hospitals to participate in global budgets and reference-based pricing regardless of what happens federally. Vermont's transformation does not depend on AHEAD; AHEAD was to amplify it.
 
-### **4. The AHEAD Durability Argument**
-AHEAD is an eleven-year CMMI model running from 2024 through December 2035, under a single innovation-center framework that has already been modified once (the January 2026 changes extending the end date and adding new accountability requirements) and would have spanned at least one more presidential transition before Vermont's Cohort 2 implementation was due to begin in January 2028 — an implementation Vermont ultimately abandoned. CMMI's own track record — acknowledged elsewhere in this book — includes models redesigned or discontinued mid-course. The book's response to AHEAD skepticism is that Vermont's mandatory state framework under Acts 167 and 68 remains in force even if AHEAD underperforms or is altered. That is true for the commercial and Medicaid components of Vermont's reform, which Act 68 governs directly. It is not fully true for the Medicare component specifically: Medicare global budgets exist in Vermont's framework only because AHEAD provides them, and no state statute can substitute for a federal payment model on Medicare claims. A reader assessing AHEAD durability should therefore distinguish between "Vermont's reform survives if AHEAD changes" (true, for the commercial and Medicaid pillars) and "Vermont's Medicare global budget survives if AHEAD changes" (not guaranteed, and not within any state's control). That distinction proved decisive: in July 2026 Vermont withdrew from AHEAD after CMS's renegotiation gutted the funding, and the Medicare global budget — the one component no state statute could secure — never took effect. The commercial and Medicaid pillars, governed by Act 68 and the Global Commitment waiver, were unaffected. The durability risk this section warned about was not theoretical; it is now the central fact of Vermont's Medicare story.
+But that defense holds asymmetrically, and the distinction matters. It is fully true for the commercial and Medicaid components, which Act 68 and the Global Commitment waiver govern directly. It is *not* true for Medicare: Medicare global budgets existed in Vermont's framework only because AHEAD provided them, and no state statute can substitute for a federal payment model on Medicare claims.
 
-### **5. The Oliver Wyman Independence Question**
+Events settled both questions at once. In July 2026, after a CMS renegotiation cut Vermont's expected EAST Fund from roughly $138 million to a cap near $10 million, Vermont formally withdrew from AHEAD. The mandatory state framework remained fully in force and the reform continued without missing a step — the skeptic's first question answered by events, since Vermont did not need AHEAD to survive the loss of AHEAD. The Medicare global budget, the one component no state statute could secure, never took effect. Both halves of this argument proved correct simultaneously, and neither was theoretical. Chapter 13 (The Future of Healthcare Transformation) returns to this directly.
+
+### **4. The Oliver Wyman Independence Question**
 This book relies heavily on Oliver Wyman's Act 167 analysis. Oliver Wyman was paid $1 million by the Vermont state government to produce a report that would support the case for reform. That is not independence. Readers should note that the Oliver Wyman financial projections — hospital deficit trajectories, administrative cost benchmarks, workforce shortage estimates — cannot all be independently verified from public sources, and the firm had a client relationship that may have shaped how it framed its conclusions.
 
 This book treats Oliver Wyman's quantitative findings as estimates, not certainties, and notes throughout where specific figures cannot be independently confirmed. The structural argument — that Vermont's system faces a genuine financial crisis requiring structural response — is supported by public GMCB data, independent KFF analysis, and GMCB's own enforcement actions that do not depend on Oliver Wyman's projections.
 
-### **6. The Vermont-Specificity Argument**
+### **5. The Vermont-Specificity Argument**
 The most common version of this objection does not concern any single policy. It is a reaction to the book as a whole: this is a book about one small, unusually homogeneous, unusually transparent state with an unusual regulatory body — does any of it actually apply to a large, diverse, politically fragmented state with a dozen competing health systems and no Green Mountain Care Board?
 
 This objection deserves to be taken seriously rather than answered with a slogan, because the honest answer has two parts, and the second part is a real limitation of this book rather than a rebuttal.
@@ -149,10 +148,10 @@ The second part is the real limitation: this book cannot, in one volume, also pr
 
 Put plainly: a reader who finishes this book having learned a great deal about Vermont but nothing transferable about sequencing, payment design, technology architecture, equity accountability, or operational execution has found a real gap between this book's intent and its execution — not a correct reading of a book that was only ever about Vermont. The "How to Read This Book If Vermont Isn't Your Context" section earlier in this Introduction, and the "Implications for You" sections that close most chapters, exist specifically to close that gap.
 
-### **7. The Transition-Window Argument**
+### **6. The Transition-Window Argument**
 Reference-based pricing and global hospital budgets shift a hospital from a system where it can grow revenue by growing volume to one where revenue is fixed or capped. For hospitals already operating below break-even — which, per Oliver Wyman's own numbers, describes most of Vermont's system today — the most dangerous financial period may not be the destination (FY2030 statewide global budgets) but the transition itself: the years in which RBP is phasing in, global budgets are not yet operational statewide, and the underlying losses documented in Chapter 6 remain unaddressed. This book documents both the destination and the starting crisis in detail. It is more cautious about the specific financial bridge that carries a hospital across that gap — the combination of Rural Health Transformation Program funds, AHEAD's Equity, Access, and Statewide Transformation (EAST) Fund payments, and the sequencing of Medicaid versus commercial global budgets — which together determine whether a given hospital remains solvent in fiscal years 2027 and 2028 specifically. A hospital CFO's most pressing question is rarely "what does the system look like in 2030?" It is "what keeps us open in 2027?" Chapter 6 (the Economics Pillar) addresses this transition window directly.
 
-### **8. The Enforcement Question**
+### **7. The Enforcement Question**
 This book repeatedly emphasizes that Vermont's approach is mandatory rather than voluntary, and treats this as the central correction to OneCare's design flaw. But a mandatory regime is only as real as its enforcement, and a skeptical reader is entitled to ask: what actually happens to a hospital that does not comply — that refuses a global budget, or continues billing above the reference-based-pricing ceiling? Act 68 gives GMCB subpoena authority and data-sharing power with the Department of Financial Regulation, and the answer is no longer hypothetical. GMCB's FY23 enforcement actions against UVMMC ($80.3M overage) and RRMC ($11.1M overage) were the first such enforcement actions in Vermont's regulatory history, and UVMMC's subsequent court challenge to that enforcement — Vermont's largest, most powerful hospital system testing GMCB's authority directly — was decided against UVMMC. That outcome is the strongest available evidence that "mandatory" in this book's framework describes a regime that has been tested against its most resourced potential opponent and held. Chapter 13 develops the enforcement mechanics and this case in more detail.
 
 These are not the only critiques of Vermont's approach. They are the most serious ones, and this book engages them throughout rather than assuming the policy case is settled. It is not settled. Vermont is the experiment. This book is the analytical framework for watching it clearly.
@@ -164,7 +163,7 @@ Each pillar is defined by a single diagnostic question. Policy asks whether a re
 
 There is a sixth question, and it is deliberately not a sixth pillar: **is it just?** This is the Equity Imperative — a cross-cutting test that each of the five pillars must pass on its own terms, rather than a separate workstream competing with them for budget, staff, and attention. The distinction is structural, not rhetorical. A sixth pillar has its own line item and its own position in the queue, which means it can be sequenced last, funded least, and reported separately from the work that determines whether disparities actually close. An imperative has none of those escape hatches: there is no standalone equity project to defer, because each pillar's own deliverable carries an equity condition it must satisfy. Does the mandate close disparities or widen them (Policy)? Does the data make disparities visible, or bury them in averages (Technology)? Do the incentives reward serving the hardest-to-reach populations, or penalize it (Economics)? Effective — but effective for whom (Clinical)? Executable everywhere, including in rural and under-resourced settings (Operations)?
 
-The reason this matters is that a reform can improve the average while widening the gap, and pass every test but this one. Vermont's primary care access rate is roughly 91% — four points above the national benchmark and a genuine achievement. That same number conceals an 11-point gap between white Vermont adults and BIPOC Vermont adults. Nothing in the aggregate figure reveals the gap; it becomes visible only when the underlying data is stratified by race and ethnicity, which is a Technology-pillar capability rather than a statement of good intentions. A framework that treated equity as a separate pillar would have been satisfied by the 91%. Treating it as an imperative is what forces the second question.
+The reason this matters is that a reform can improve the average while widening the gap, and pass every test but this one. Vermont's primary care access rate is roughly 91% — four points above the national benchmark and a genuine achievement. That same number conceals an 11-point gap between white Vermont adults and BIPOC Vermont adults (Vermont Department of Health, *Health Equity Data Report*). Nothing in the aggregate figure reveals the gap; it becomes visible only when the underlying data is stratified by race and ethnicity, which is a Technology-pillar capability rather than a statement of good intentions. A framework that treated equity as a separate pillar would have been satisfied by the 91%. Treating it as an imperative is what forces the second question.
 
 Chapter 1 develops all of this in full — defining each pillar, mapping the nine dependency relationships that connect them, applying the justice test to each pillar in turn, and showing what cascades through the system when any one is missing. Chapter 10 takes up the Equity Imperative on its own terms. What matters here, at the outset, is the single premise the rest of the book rests on: Vermont's reform agenda is instructive precisely because it addresses all five pillars simultaneously, and is held to the same imperative throughout — imperfectly and incompletely, as any real-world policy effort does, but with a comprehensiveness that distinguishes it from the single-pillar interventions that have failed repeatedly at the national level.
 
@@ -193,34 +192,30 @@ You work in a government agency, a legislative office, a think tank, or a founda
 
 **Recommended path.** Read the Introduction and Chapter 1 (the five-pillar framework and the execution sequence) in full. For the pillar you care most about, read the corresponding chapter in depth. Read Chapter 16 (the AHS Restructuring Roadmap) carefully — it is the most direct bridge between policy mandate and organizational design. Read Chapter 13 (The Future of Healthcare Transformation) for the national context.
 
-**On the platform.** Start with the [HTR Simulator](https://healthtransformationreview.org/htr-simulator) to model a state's readiness and the [fifty-state dashboard](https://healthtransformationreview.org/dashboard) to benchmark it, then work the [Policy & Quality Sciences bench](https://healthtransformationreview.org/research-lab/policy-quality) in the Research Lab.
-
-**In the Academy.** Begin with **Five Pillars, One Imperative**, Track 2 ("Policy — Establish the Mandate"), which works the Act 167 → 51 → 68 cascade and the voluntary-versus-mandatory distinction directly. Then the payment-reform courses at [/academy/courses](https://healthtransformationreview.org/academy/courses).
-
 ### **The Healthcare Executive or Administrator**
 You lead a hospital, health system, health plan, ACO, or healthcare services organization. You are making decisions — about contracts, capital investments, workforce, technology — that the transformation environment is complicating.
 
 **Recommended path.** Read the Introduction for the overarching argument, then go directly to the chapters most relevant to your immediate decisions. Chapters 6-7 (Economics) for VBC contracts. Chapters 8-9 (Clinical) for care management programs. Chapters 4-5 (Technology) for infrastructure investment. Chapter 11 (Operations) for hospital transformation planning. Return to Chapter 1 for the integrating logic.
-
-**On the platform.** Run your own organization through the [Payment Models & VBC bench](https://healthtransformationreview.org/research-lab/payment-models) — the VBC Readiness Assessment and APM tools — and pressure-test your finances with the [Research Lab](https://healthtransformationreview.org/research-lab).
-
-**In the Academy.** Take **Five Pillars, One Imperative** Track 4 ("Economics — Put Incentives on a Visible System") for the framework, then the Value-Based Care course at [/academy](https://healthtransformationreview.org/academy) before your next contract cycle.
 
 ### **The Vermont Practitioner**
 You work for AHS, GMCB, DVHA, the Vermont legislature, a Vermont hospital, a Blueprint practice, or a Vermont community organization.
 
 **Recommended path.** Read Appendix A (Vermont System Portrait) first, then Chapter 1 (the five-pillar framework and execution sequence) and Chapter 2 (the Policy Pillar — Acts 167 and 68). Then Chapter 16 (the AHS Restructuring Roadmap) as the operational framework for your work. Use the implementation timeline tables throughout as a working reference guide.
 
-**On the platform.** The Vermont concept pages — [Act 167](https://healthtransformationreview.org/vermont-act-167), [Act 68](https://healthtransformationreview.org/vermont-act-68), the [AHEAD Model](https://healthtransformationreview.org/ahead-model) — and the [Vermont hospital dashboard](https://healthtransformationreview.org/dashboard/vermont/hospitals) turn the book's Vermont evidence into live, current data. Ask the [AI Analyst](https://healthtransformationreview.org/chat) about any Vermont statute or program.
-
-**In the Academy.** **Five Pillars, One Imperative** Track 2 ("Policy") covers the statutes you work under daily; Track 6 ("Operations — Close the Execution Gap") covers regionalization and the workforce constraint. The Vermont-specific Medicaid Learning Center is at [/academy](https://healthtransformationreview.org/academy).
-
 ### **The Healthcare Student or Researcher**
 You are building foundational knowledge in a graduate program or as an independent researcher.
 
 **Recommended path.** Read the entire book in order. Chapter 1 establishes the framework and execution sequence; Chapters 2-11 develop each pillar; Chapters 12-16 provide future context and the AHS restructuring roadmap. The Key Concepts sections at the end of each chapter are the glossary. The source notes are the bibliography. Use Vermont as the case study while building transferable analytical skills.
 
-**On the platform.** The [Academy](https://healthtransformationreview.org/academy) gives you a structured curriculum with progress tracking, and the entire [Research Lab](https://healthtransformationreview.org/research-lab) is a sandbox for reproducing the book's analyses yourself. Start at [/academy/getting-started](https://healthtransformationreview.org/academy/getting-started).
+
+*Where each profile should start on the platform and in the Academy:*
+
+| Profile | On the platform | In the Academy |
+| :---- | :---- | :---- |
+| **Policy professional** | [HTR Simulator](https://healthtransformationreview.org/htr-simulator) to model state readiness; the [fifty-state dashboard](https://healthtransformationreview.org/dashboard) to benchmark it; the [Policy & Quality Sciences bench](https://healthtransformationreview.org/research-lab/policy-quality). | **Five Pillars, One Imperative**, Track 2 ("Policy — Establish the Mandate") — the Act 167 → 51 → 68 cascade and the voluntary-versus-mandatory distinction. Then the payment-reform courses. |
+| **Executive or administrator** | The [Payment Models & VBC bench](https://healthtransformationreview.org/research-lab/payment-models) — VBC Readiness Assessment and APM tools — to pressure-test your own finances. | **Five Pillars, One Imperative** Track 4 ("Economics — Put Incentives on a Visible System"), then the Value-Based Care course before your next contract cycle. |
+| **Vermont practitioner** | The Vermont concept pages ([Act 167](https://healthtransformationreview.org/vermont-act-167), [Act 68](https://healthtransformationreview.org/vermont-act-68), the [AHEAD Model](https://healthtransformationreview.org/ahead-model)) and the [Vermont hospital dashboard](https://healthtransformationreview.org/dashboard/vermont/hospitals); ask the [AI Analyst](https://healthtransformationreview.org/chat) about any statute or program. | **Five Pillars, One Imperative** Track 2 ("Policy") for the statutes you work under daily; Track 6 ("Operations — Close the Execution Gap") for regionalization and the workforce constraint. |
+| **Student or researcher** | The full [Research Lab](https://healthtransformationreview.org/research-lab) as a sandbox for reproducing the book's analyses yourself. | The [Academy](https://healthtransformationreview.org/academy) as a structured curriculum with progress tracking — start at [/academy/getting-started](https://healthtransformationreview.org/academy/getting-started). |
 
 ## **What This Book Cannot Do**
 This book cannot predict whether Vermont's transformation will succeed. The outcome depends on thousands of decisions that will be made by hospital executives, primary care physicians, community health workers, legislators, regulators, and patients over the next five to ten years. This book provides the analytical framework for those decisions; it cannot make them.
@@ -252,10 +247,10 @@ In 2010, the Affordable Care Act created the Center for Medicare and Medicaid In
 
 The pattern of failure across CMMI models is instructive. Models that addressed only the Economics pillar — changing what Medicare paid without addressing how care was delivered or whether providers had the infrastructure to respond — generated financial pressure without behavioral change. Models that addressed only the Clinical pillar — redesigning care coordination or care management programs — produced clinical improvements that the payment system then penalized by reducing volume-based revenue. Models that required Technology pillar investment — electronic health records, population health platforms, data exchange — found that providers lacked the operational capacity to use the tools effectively.
 
-The lesson is not that payment reform, clinical redesign, or technology investment is wrong. It is that each intervention, pursued in isolation, runs into the constraints created by the pillars it ignores. This is the core analytical argument of the five-pillar framework.
+The lesson is not that payment reform, clinical redesign, or technology investment is wrong. Each one, pursued in isolation, simply runs into the constraints created by the pillars it ignores. This is the core analytical argument of the five-pillar framework.
 
 ::: {custom-style="Banner"}
-Healthcare transformation is a system problem, and system problems require system solutions.
+Every pillar you leave out becomes the constraint that defeats the ones you built.
 :::
 
 Every major healthcare transformation framework in the past thirty years has identified the same list of necessary conditions. Pay differently. Redesign care delivery. Build data infrastructure. Address social determinants. Ensure equity. Execute operationally. The list is right. The reasoning behind it is right. And yet the transformation that the list is supposed to produce has not arrived — not in most states, not at national scale, not with the speed and completeness the evidence has long indicated is possible.
@@ -263,10 +258,6 @@ Every major healthcare transformation framework in the past thirty years has ide
 The problem is not the list. The problem is treating it as a list.
 
 A checklist is a set of independent items. You can check them in any order. Checking one does not affect the others. Failing to check one does not prevent you from checking the rest. A checklist of healthcare transformation requirements implies that you can make progress on any one of these independently, and that partial completion is partial progress. This is wrong. The five pillars are not independent items on a checklist. They are a system of interdependent components in which each pillar's effectiveness depends on the others, in which the failure of any single pillar cascades through the system, and in which the order and timing of interventions matters as much as the content of those interventions. Treating the five pillars as a checklist is precisely how decades of technically correct healthcare reform recommendations have produced inadequate results.
-
-::: {custom-style="Banner"}
-A policy intervention that passes question one but fails questions three, four, or five is not a solution — it is a well-intentioned mistake waiting to be made.
-:::
 
 ## **The OneCare Failure: A Sequencing Autopsy**
 The clearest evidence for that argument is a failure that has already happened. Before defining the five pillars, it is worth examining OneCare Vermont's collapse in structural terms, because the failure was not random and it was not primarily the result of bad intentions or poor execution. OneCare failed because of sequencing errors baked into its design from the beginning. Identifying those errors precisely is more useful than simply noting that the ACO wound down after roughly twelve years, founded in 2013 and closing at the end of 2025; the federal All-Payer ACO Model agreement that defined its most consequential years ran about eight of those years before its own scheduled sunset.
@@ -328,17 +319,6 @@ The three sequencing failures above — economics without a policy foundation, p
 Transformation has five moving parts you build and run — and one test they all must pass. The five pillars are capability domains: Policy, Technology, Economics, Clinical, and Operations. Each is a subsystem you can staff, fund, and hold accountable, and each answers a different question about whether transformation will actually work. They are not a row of equals standing side by side. They are load-bearing in sequence: the later pillars rest on the ones built before them, which is why this book treats order as architecture rather than preference.
 
 Equity is different in kind. It is not one more thing you build alongside the five — it is the Equity Imperative every one of them must satisfy. A reform can be permissible, possible, sustainable, effective, and executable and still fail the only test that finally matters: is it just? So equity is not the last pillar in the line; it is the plumb line held against every pillar, at every stage. Five pillars, one imperative.
-
-**THE MODEL AT A GLANCE**
-
-*Five pillars — the capabilities you build, in load-bearing order — held to one imperative.*
-
-| **Policy** | Is it permissible? — the mandate that makes reform non-optional. |
-| :---- | :---- |
-| **Technology** | Is it possible? — the data substrate that makes management possible. |
-| **Economics** | Is it sustainable? — the incentive that makes the right behavior rational. |
-| **Clinical** | Is it effective? — the care redesign that turns incentive into outcomes. |
-| **Operations** | Is it executable? — the capacity that turns design into sustained reality. |
 
 **Policy —** The legislative and regulatory environment that creates the mandatory architecture for transformation. Policy establishes what actors must do, what they are prohibited from doing, and what governance structures ensure accountability. Voluntary reform operates within the Policy pillar's constraints; structural transformation requires it to change.
 
@@ -468,7 +448,7 @@ VHCURES population health analytics make the APM financial modeling described in
 ::: {custom-style="CalloutBeyond"}
 **BEYOND VERMONT**
 
-This dependency is where most states are structurally disqualified before they begin. Roughly 24 states operate an established all-payer claims database; the other half of the country does not have one. Vermont's VHCURES is not an unusual advantage in kind — it is an unusual advantage in *timing*, built years before the payment model that now needs it.
+This dependency is where most states are structurally disqualified before they begin. Roughly two dozen states operate an established all-payer claims database (APCD Council); the other half of the country does not have one. Vermont's VHCURES is not an unusual advantage in kind — it is an unusual advantage in *timing*, built years before the payment model that now needs it.
 
 For a state without an APCD, the sequencing consequence is concrete: total-cost-of-care accountability cannot be measured, so a global budget cannot be set defensibly, so the Economics pillar cannot be operated even where the political will exists to mandate it. The gap is not a year of procurement. Standing up an APCD is multi-year work involving legislation, payer reporting mandates, and data-governance infrastructure.
 
@@ -506,6 +486,20 @@ The most important economics dependency. Under fee-for-service, preventing a hos
 **VERMONT EVIDENCE**
 
 Vermont's Blueprint for Health demonstrates this dependency in reverse. The Blueprint's 5.8:1 return on investment — $5.8 million in reduced medical expenditure per $1 million invested in primary care — is achievable because the Blueprint's all-payer PMPM payments to PCMHs create a financial structure that rewards the clinical investment. Sustain the Economics pillar through Act 68's global budgets and the Clinical pillar's population health logic becomes fully incentive-aligned.
+:::
+
+::: {custom-style="CalloutKey"}
+**WHAT A "GATE" MEANS IN THIS BOOK**
+
+Picture the pillars as a series of locked gates on a single road. A pillar's gate is the work that pillar must complete before traffic can pass through to the pillar behind it.
+
+**A gate is OPEN when that pillar's prerequisite work is finished** — the statute is enacted, the analytics are running, the contracts are signed. Downstream investment can now proceed and produce its intended value.
+
+**A gate is CLOSED when that work is unfinished.** Money spent downstream of a closed gate does not fail loudly; it fails quietly, producing results nobody can use until the gate opens. That is why the sequence cannot be bought past — the point Principle 1 develops later in this chapter.
+
+**You open a gate by completing the work, not by deciding to proceed.** A gate opens on evidence: the capability exists and is operating. Declaring a milestone met does not open it.
+
+Throughout this chapter, "open" always means *passable — the work is done*, and "closed" always means *blocked — the work is not done yet*.
 :::
 
 **Economics → Technology: VBC contracts require data infrastructure** · *REQUIRES*
@@ -619,9 +613,7 @@ The dependency map is not merely a theoretical framework — it is a practical a
 
 **1. Transformation sequencing — what must come first.** The dependency structure generates a partial ordering of interventions: some investments cannot produce their expected results until enabling investments are in place. Getting the sequence wrong is not merely inefficient — it produces failed interventions that generate political resistance to subsequent correct interventions. Sections 1.8 through 1.14 develop that ordering in full, returning to the OneCare failure examined in Section 1.2.
 
-**2. Risk identification.** The dependency map identifies Vermont's vulnerabilities with precision. The critical path runs through the Technology pillar's analytics capability: Act 68 global budgets require VHCURES analytics, equity measurement requires demographic stratification, and clinical risk stratification requires the population health platform. The AHS-GMCB analytics capability — being stood up in 2025–2026 but not yet complete — is the single highest-risk gap in Vermont's current architecture. A delay does not merely delay one program; it delays the financial management capability for AHEAD, the equity measurement capability for the Statewide Strategic Plan, and the risk stratification capability for Blueprint's CCBHC expansion. Three dependencies converge on this single investment.
-
-**3. Investment prioritization.** Not all pillar investments have equal leverage. An investment in a pillar with many inbound dependencies has higher leverage than one required by only a single pillar. The Technology pillar has the highest inbound dependency count in Vermont's current architecture (Economics, Clinical, and Operations all require it); Operations is second (Clinical and Policy require it). The highest-leverage investments in Vermont's current phase are therefore analytics capability deployment, AHS organizational capacity building, and HCC gap closure at AHEAD-participating hospitals.
+**2. Risk identification and investment prioritization.** Both fall out of the same reading: count the inbound dependencies. A pillar that many others require carries both the highest leverage and the highest risk, and in Vermont's current architecture that is unambiguously Technology — Economics, Clinical, and Operations all depend on it, with Operations second (Clinical and Policy require it). Concretely, the AHS-GMCB analytics capability is the single highest-risk gap in the system: a delay there does not delay one program but three, holding up financial management for global budgets, equity measurement for the Statewide Strategic Plan, and risk stratification for Blueprint's CCBHC expansion at once. That is also why analytics deployment, AHS organizational capacity, and HCC gap closure are the highest-leverage investments available to Vermont right now.
 
 ## **The Vermont Thread: Five Pillars in One System**
 Vermont's healthcare transformation is the closest thing to a controlled experiment in simultaneous five-pillar intervention that American health policy has produced. The following table maps Vermont's primary reform vehicles onto the five-pillar framework, establishing the connective tissue that runs through every subsequent chapter.
@@ -636,7 +628,7 @@ Vermont's healthcare transformation is the closest thing to a controlled experim
 
 *Figure 1.5 — Vermont's five-pillar transformation map. Sources: Acts 167, 51, 55, 62, 68 of 2022–2025; AHEAD State Agreement; Vermont RHT Program Application; Oliver Wyman Act 167 Report.*
 
-This table is not a comprehensive inventory of Vermont's healthcare reform. It is a navigation map — a way of locating Vermont's specific interventions within the analytical framework that the subsequent chapters develop. The framework gives every Vermont policy intervention a structural home and every analytical concept a Vermont application.
+This table is a navigation map rather than a comprehensive inventory of Vermont's healthcare reform — a way of locating Vermont's specific interventions within the analytical framework that the subsequent chapters develop. The framework gives every Vermont policy intervention a structural home and every analytical concept a Vermont application.
 
 ## **From Framework to Sequence: Why Order Is Not Optional**
 Sections 1.3 through 1.7 established what the five pillars are and how they depend on one another. The dependencies establish something sharper still: that the pillars cannot be built in any order. A dependency is, by definition, a constraint on sequence — if Economics requires Technology, then Technology must come first. The rest of this chapter develops that argument, using Vermont's OneCare failure as the case that proves what happens when the sequence is violated.
@@ -674,7 +666,7 @@ A second serious critique: by making participation mandatory, Vermont's approach
 The counterevidence is OneCare itself: a decade of voluntary reform produced modest results and left the financial crisis unaddressed.
 
 ::: {custom-style="Banner"}
-The choice is not between a smooth voluntary process and a contentious mandatory one. It is between a process that produces structural change — contentiously — and one that produces durable accommodation of the status quo — smoothly.
+No one is choosing between a smooth voluntary process and a contentious mandatory one. The real choice is between a process that produces structural change — contentiously — and one that produces durable accommodation of the status quo, smoothly.
 :::
 
 Vermont's legislature chose structural change. Chapter 14 (Political Sustainability) analyzes what it takes to maintain that choice across election cycles.
@@ -688,7 +680,7 @@ This critique identifies a real failure mode. The response is a distinction the 
 ### **Stage 1: Policy — Mandate and Capital**
 Policy is the absolute precondition for everything that follows. Its two functions: it creates the mandatory architecture that prevents high-cost actors from opting out of reform, and it secures the transformation capital that funds the technology build.
 
-Vermont's legislative progression illustrates both. Act 167 established the diagnostic foundation. Act 51 moved from diagnosis to planning, authorizing AHS to run transformation engagements with individual hospitals. Act 68 operationalized the mandate — converting voluntary reform into binding statutory requirements for global budgets and reference-based pricing. The AHEAD Model federal agreement layered in the federal funding that made the technology build financially feasible. The $195 million Rural Health Transformation award is a Policy-pillar outcome, not an Economics-pillar outcome. Transformation capital comes from policy and regulatory relationships, not from the payment model itself.
+Vermont's legislative progression illustrates both. Act 167 established the diagnostic foundation. Act 51 moved from diagnosis to planning, authorizing AHS to run transformation engagements with individual hospitals. Act 68 operationalized the mandate — converting voluntary reform into binding statutory requirements for global budgets and reference-based pricing. The AHEAD Model federal agreement layered in the federal funding that made the technology build financially feasible. The Rural Health Transformation award — $195 million for Vermont in its first year, with comparable annual awards expected through FY2030 — is a Policy-pillar outcome, not an Economics-pillar outcome. Transformation capital comes from policy and regulatory relationships, not from the payment model itself.
 
 ### **Stage 2: Technology — Build the Substrate Before Assuming Risk**
 Technology is the operating system on which every subsequent stage runs. It is not a layer added on top of a functioning reform. It is the foundation that makes reform functional. The required components: integrated clinical and claims data; data updated in near-real time; and shared infrastructure for organizations that cannot independently support sophisticated analytics.
@@ -715,7 +707,7 @@ Equity is not a stage in the sequence — it is the Equity Imperative applied ac
 What the Equity Imperative adds is systematic, population-level measurement of whether the equity commitments embedded in every stage have produced equitable outcomes — and the corrective action, informed by real data from a functioning system, when they have not.
 
 ### **Stage 5: Operations — Closing the Administrative Cost Gap**
-Operations is the execution layer that converts all prior-stage investments into organizational reality. Vermont's critical-access and rural hospitals spend $2,730 per discharge on administration, compared to a national benchmark of $1,427. This $1,303 per-discharge gap represents the primary source of the $100 million or more in projected direct savings from shared services and administrative simplification.
+Operations is the execution layer that converts all prior-stage investments into organizational reality. Vermont's PPS hospitals spend $2,730 per adjusted discharge on management and administration, compared with a national benchmark of $1,427 — and UVMMC alone runs $3,826 against that same benchmark. This $1,303 per-discharge gap across the PPS group represents the primary source of the $100 million or more in projected direct savings from shared services and administrative simplification.
 
 Operations is last not because it is least important, but because operational redesign requires the technology infrastructure, payment incentives, and clinical models of the preceding stages to already be in place.
 
@@ -725,8 +717,8 @@ A hospital that redesigns its administrative operations before its payment model
 
 | # | Pillar | Key action | Why this sequence | Vermont anchor |
 | :---- | :---- | :---- | :---- | :---- |
-| 1 | Policy | Establish enforceable authority, mandate participation, secure transformation capital | Nothing can be authorized, built, or funded without statutory permission. Mandatory architecture prevents high-cost actors from opting out. | Acts 167, 51, 68; AHEAD State Agreement; $195M RHT award |
-| 2 | Technology | Build integrated clinical + claims data infrastructure — real-time — before financial risk is assumed | Technology is the operating system. Must be operational before Economics goes live. "Managing Blind" is the failure mode. | VHCURES; VITL/VHIE; AHS-GMCB analytics capability; Vermont CIN |
+| 1 | Policy | Establish enforceable authority, mandate participation, secure transformation capital | Nothing can be authorized, built, or funded without statutory permission. Mandatory architecture prevents high-cost actors from opting out. | Acts 167, 51, 68; AHEAD State Agreement; $195M/yr RHT award |
+| 2 | Technology | Build integrated clinical + claims data infrastructure — real-time — before financial risk is assumed | Technology is the operating system. Must be operational before Economics goes live, for the reasons the OneCare autopsy sets out above. | VHCURES; VITL/VHIE; AHS-GMCB analytics capability; Vermont CIN |
 | 3 | Economics | Deploy global budgets and RBP onto a system that can already see itself | Economics-as-management requires the technology substrate. Payment design (Economics-as-design) happens in parallel during Stage 2. | Global hospital budgets; RBP at ≤200% Medicare; EAST Fund up to $150M annually |
 | 4 | Clinical | Redesign care on aligned incentives | Clinical transformation is where ROI is realized — but only when payment incentives are live and technology identifies which patients need which interventions. | PCMH transformation; CoCM; CCBHC expansion; Blueprint 5.8:1 ROI |
 | 5 | Operations | Close the administrative cost gap and translate strategy into implemented programs | Operations is the execution layer. Vermont's $1,303 per-discharge administrative gap vs. national benchmark is the primary source of projected direct savings. | RHRC methodology; shared services; 14-hospital transformation planning |
@@ -743,19 +735,6 @@ Critical-path dependencies cannot be shortcut by allocating more resources to th
 
 In practice, reading the critical path means identifying which investments are *gates*.
 
-::: {custom-style="CalloutKey"}
-**WHAT A "GATE" MEANS IN THIS BOOK**
-
-Picture the pillars as a series of locked gates on a single road. A pillar's gate is the work that pillar must complete before traffic can pass through to the pillar behind it.
-
-**A gate is OPEN when that pillar's prerequisite work is finished** — the statute is enacted, the analytics are running, the contracts are signed. Downstream investment can now proceed and produce its intended value.
-
-**A gate is CLOSED when that work is unfinished.** Money spent downstream of a closed gate does not fail loudly; it fails quietly, producing results nobody can use until the gate opens. That is why the sequence cannot be bought past — see Principle 1.
-
-**You open a gate by completing the work, not by deciding to proceed.** A gate opens on evidence: the capability exists and is operating. Declaring a milestone met does not open it.
-
-Throughout this chapter, "open" always means *passable — the work is done*, and "closed" always means *blocked — the work is not done yet*.
-:::
 
 Vermont's critical-path sequence for hospital global-budget implementation under Act 68 reads as four gates in order:
 
@@ -1182,7 +1161,7 @@ The act's purpose statement is worth reading in full because it encodes the Oliv
 ### **The Reference-Based Pricing Architecture**
 Act 68's RBP provisions represent a significant departure from the voluntary, incentive-based payment reform approach that dominated American health policy for the previous fifteen years. The act does not invite hospitals to experiment with alternative pricing — it directs GMCB to establish, by rule, maximum amounts that hospitals shall accept as payment in full, not later than hospital fiscal year 2027. The language is mandatory and statewide.
 
-The underlying price problem that RBP addresses is more severe than most national discussions of hospital pricing acknowledge. GMCB's February 2026 report documented that Vermont hospitals charge commercial payers approximately 250-300% of Medicare rates on average — but this average conceals extraordinary variation. Outpatient imaging at some Vermont hospitals reaches 715-944% of Medicare rates. Inpatient mental health services at the same hospitals range from 123% to 409% of Medicare. UVMMC outpatient charges specifically averaged 417% of Medicare rates in 2022 — among the highest in the nation. Hospitals are not clustered near a rational break-even point of 136% of Medicare; they are distributed across a range from roughly profitable to wildly extractive, with no relationship between price and quality.
+The underlying price problem that RBP addresses is more severe than most national discussions of hospital pricing acknowledge. GMCB's February 2026 report documented that Vermont hospitals charge commercial payers approximately 250-300% of Medicare rates on average — but this average conceals extraordinary variation. Outpatient imaging at some Vermont hospitals reaches 715-944% of Medicare rates. Inpatient mental health services at the same hospitals range from 123% to 409% of Medicare. UVMMC's commercial prices averaged 358% of Medicare across inpatient and outpatient services in RAND's published 2018–2020 data — the highest of any hospital in Vermont. Hospitals are not clustered near a rational break-even point of 136% of Medicare; they are distributed across a range from roughly profitable to wildly extractive, with no relationship between price and quality.
 
 The design principles embedded in Act 68's RBP statute reflect the cross-state evidence base. Prices must be based on a percentage of Medicare reimbursement — establishing a transparent, nationally comparable anchor. Consideration must be given to each hospital's specific community context: payer mix, labor costs, social risk factors, and role in Vermont's system. And hospitals are explicitly prohibited from charging patients or insurers more than the established reference-based price, closing billing workarounds that undermined earlier price transparency experiments.
 
@@ -1239,7 +1218,7 @@ These deadlines are not aspirational. They are statutory obligations. Organizati
 :::
 
 ## **The Rural Health Transformation Program: Capital for an Operational Strategy**
-In November 2025, AHS submitted Vermont's application to the federal Rural Health Transformation Program — a $50 billion national fund created by the One Big Beautiful Bill Act of 2025, with $10 billion available annually from 2026 through 2030. Vermont was awarded $195 million in December 2025, nearly double what the state had expected to receive and among the highest per-capita awards nationally.
+In November 2025, AHS submitted Vermont's application to the federal Rural Health Transformation Program — a $50 billion national fund created by the One Big Beautiful Bill Act of 2025, with $10 billion available annually from 2026 through 2030. Vermont was awarded $195 million for the program's first year in December 2025 — nearly double what the state had expected to receive, and among the highest per-capita awards nationally. Awards are made one year at a time; at a comparable annual level through FY2030 the five-year total would approach $1 billion, but only the first year is committed.
 
 The RHT application is itself a teaching document for healthcare transformation practice, because it is structured entirely around the Act 167 and Act 68 goals. Vermont's vision, stated explicitly in the application, is to ensure that rural residents have access to the right care, at the right time, in the right place, at an affordable cost — a direct echo of the AHS health care reform vision statement. The application's three strategic goals map onto Oliver Wyman's three imperatives: strengthening hospital sustainability and primary care (Move all care possible out of hospitals); building workforce pipeline and retention capacity (Build housing and fix the conditions that drive workforce shortage); and leveraging innovative strategies to reduce costs (Pay with reference-based pricing and move to global budgets).
 
@@ -2086,7 +2065,7 @@ This is not a criticism of individual hospital managers or clinicians, who are g
 
 ### **The Price Extraction Problem**
 ::: {custom-style="StatStrip"}
-**417%** — UVMMC Outpatient vs. Medicare
+**358%** — UVMMC Commercial vs. Medicare (RAND)
 
 **250-300%** — Average VT Commercial Rate
 
@@ -2101,7 +2080,7 @@ Vermont's price data, documented in the GMCB's February 2026 report and confirme
 
 | Average commercial-to-Medicare ratio, Vermont hospitals 250–300% vs. ~136% break-even point | Outpatient imaging — worst case 944% of Medicare rate at one Vermont hospital |
 | :---- | :---- |
-| UVMMC outpatient charges (2022) 417% of Medicare — among highest nationally (RAND) | Potential savings at 200% Medicare (2018–2023) $400M VEHI + VSEA combined, per GMCB analysis |
+| UVMMC commercial prices 358% of Medicare (RAND, 2018–2020 data) — the highest in Vermont | Potential savings at 200% Medicare (2018–2023) $400M VEHI + VSEA combined, per GMCB analysis |
 
 *Figure 6.1 — Vermont hospital commercial pricing vs. Medicare and break-even benchmarks. Sources: GMCB Act 68 RBP Update (February 2026); RAND Hospital Price Transparency Study.*
 
@@ -3655,7 +3634,7 @@ Of all the operational challenges Vermont faces, workforce is the one most likel
 ### **The Dimensions of Vermont's Workforce Crisis**
 | Primary care physician shortfall by 2030 370 FTEs 112 family medicine, 190 other primary care (RHT application) | Hospitals with physician shortages cited as primary operational challenge All 14 Physician shortage cited in Oliver Wyman operational challenges for every HSA |
 | :---- | :---- |
-| RHT Program workforce investment $195M Over 5 years; tuition assistance, recruitment, 5-yr service obligations | Vermont unemployment rate (August 2025) 2.5% Below 4.3% national rate; extremely tight labor market limiting healthcare recruitment |
+| RHT Program workforce investment $195M/yr, awarded annually; tuition assistance, recruitment, 5-yr service obligations | Vermont unemployment rate (August 2025) 2.5% Below 4.3% national rate; extremely tight labor market limiting healthcare recruitment |
 
 *Figure 11.6 — Vermont workforce crisis key metrics. Sources: Vermont RHT Program Application (November 2025); Oliver Wyman Act 167 Report; Vermont Department of Labor.*
 
@@ -4099,7 +4078,7 @@ Earlier iterations of this chapter described the American healthcare policy envi
 
 On July 4, 2025, the One Big Beautiful Bill Act (H.R. 1) became law. Its healthcare provisions represent the largest single reduction in federal health-program spending in American history. The Congressional Budget Office estimates $911 billion in Medicaid spending reductions over ten years, producing an estimated 10 million additional uninsured Americans by 2034. The law imposes work and community-engagement requirements on Medicaid-expansion enrollees beginning in late 2026, requires eligibility redeterminations every six months instead of annually, caps state provider taxes, restricts state-directed payments, and phases out financing mechanisms that states have relied on for decades to fund their share of Medicaid.
 
-Simultaneously — and in explicit recognition of the damage these cuts would do to rural hospitals — Congress included a $50 billion Rural Health Transformation (RHT) Program in the same legislation, providing $10 billion annually from FY2026 through FY2030 for state rural-health infrastructure investment. All fifty states received awards. Vermont received $195 million in December 2025.
+Simultaneously — and in explicit recognition of the damage these cuts would do to rural hospitals — Congress included a $50 billion Rural Health Transformation (RHT) Program in the same legislation, providing $10 billion annually from FY2026 through FY2030 for state rural-health infrastructure investment. All fifty states received awards. Vermont received $195 million for the first year in December 2025, with subsequent annual awards expected but approved year by year.
 
 The juxtaposition defines the policy moment: the largest healthcare-coverage contraction in American history, partially offset by a historic but time-limited and front-loaded capital investment in rural infrastructure. Understanding the interaction between these two forces — the Medicaid contraction and the RHT investment — is essential for every healthcare leader, policymaker, and analyst working in the system today.
 
@@ -4957,7 +4936,7 @@ What the plans reveal about constraints. Interoperability remains solved only on
 ## **The Insurance and Premium Crisis**
 Vermont's market is dominated by Blue Cross Blue Shield of Vermont and MVP Health Care. An early ACA adopter (Medicaid expansion in 2014, Vermont Health Connect), the state reached a 97% coverage rate — a genuine achievement that has not resolved the affordability crisis, because coverage is not affordability. The individual-market monthly premium rose from $456 (2018) to $948 (2024) — a 108% increase — while median household income grew 22%, and out-of-pocket maximums more than doubled.
 
-The mechanism is not complicated. Vermont hospitals charge commercial insurers 250–300% of Medicare on average; UVMMC charged roughly 417% of Medicare for outpatient services in 2022. These prices — which bear no relationship to quality — translate directly into premiums. This is what reference-based pricing is designed to address, and why Act 68's RBP mandate is the most consequential health-policy legislation Vermont has passed since Act 48 created the GMCB in 2011.
+The mechanism is not complicated. Vermont hospitals charge commercial insurers 250–300% of Medicare on average; UVMMC's commercial prices averaged 358% of Medicare in RAND's published data — the highest in the state. These prices — which bear no relationship to quality — translate directly into premiums. This is what reference-based pricing is designed to address, and why Act 68's RBP mandate is the most consequential health-policy legislation Vermont has passed since Act 48 created the GMCB in 2011.
 
 ## **Healthcare Workforce**
 Vermont's workforce faces a triple constraint no single intervention resolves. The primary-care shortage is the most immediately actionable: the RHT application projects a 370-FTE primary-care shortfall by 2030 (112 family medicine, 190 other). Oliver Wyman offered an important qualification — HRSA recognizes no Health Profession Shortage Areas in Vermont; the problem is partly one of productivity and care model. In team-based settings where staff work at the top of their licensure and administrative burden is minimized, Vermont would have adequate supply well into the future. The specialist shortage requires regionalization — Vermont cannot maintain cardiologists, neurologists, radiation oncologists, and orthopedic surgeons at all 14 hospitals; Oliver Wyman's Center-of-Excellence framework concentrates specialty services at sufficient-volume facilities, with telehealth, reliable transport, and clear referral pathways as the operational complements. The housing constraint is the most intractable: a 3% rental vacancy rate, half of renters cost-burdened, and the second-highest per-capita homelessness rate in the country mean recruited clinicians may be unable to find affordable housing near the hospital. Oliver Wyman's first imperative — build housing and fix transportation — is a workforce policy as much as a social one.
@@ -5094,7 +5073,7 @@ This scorecard consolidates the Vermont evidence from across the book into a sin
 | Hospital-system diagnostic | No comprehensive analysis | Oliver Wyman Act 167 analysis complete; 230+ meetings, 3,100+ participants | Annual updates to diagnostic methodology | Oliver Wyman Act 167 Report (Aug 2024) |
 | Statewide Strategic Plan | Does not exist | Framework under development; HCAC convened | Plan delivered to legislature December 2028 | Act 68; statutory deadline |
 | Federal-state alignment | No all-payer agreement | AHEAD State Agreement signed Jan 2025; nine-year term | Full AHEAD compliance; second agreement negotiated | CMS AHEAD State Agreement |
-| Capital investment | No dedicated transformation capital | RHT Program: $195M over 5 years awarded | $195M deployed; CIN operational; IT infrastructure complete | Vermont RHT Application (Nov 2025) |
+| Capital investment | No dedicated transformation capital | RHT Program: $195M/yr awarded, first year committed | $195M deployed; CIN operational; IT infrastructure complete | Vermont RHT Application (Nov 2025) |
 
 *Figure E.1 — Policy-pillar scorecard. Sources: Act 68 of 2025; Oliver Wyman Act 167 Report; CMS AHEAD documentation; Vermont RHT Program Application.*
 
@@ -5225,7 +5204,7 @@ Every named Vermont statute, agency, or system in this book is a specific instan
 | **RBP (Reference-Based Pricing)** | Capping what hospitals may accept as payment in full, expressed as a percentage of Medicare rates. | Same term used nationally; Oregon, Montana, Washington, and Maryland have prior or analogous programs. |
 | **CCBHC** | Certified Community Behavioral Health Clinic — a federal model for integrated behavioral health and primary care. | National model; check your state's CCBHC participation under SAMHSA. |
 | **RHRC** | Rural Health Redesign Center — provides the technical-assistance methodology referenced for Vermont's rural hospital transformation. | National technical-assistance provider, not Vermont-specific. |
-| **RHT Program** | Rural Health Transformation Program — the federal capital program from which Vermont received a $195M, five-year award. | Every state was eligible; check your state's RHT award and use-of-funds plan. |
+| **RHT Program** | Rural Health Transformation Program — the federal capital program from which Vermont received $195M for its first year, awarded annually through FY2030. | Every state was eligible; check your state's RHT award and use-of-funds plan. |
 | **HSA** | Hospital Service Area — Vermont's 14 sub-state geographic planning units. | Your state's hospital referral region or service-area equivalent. |
 | **Northeast Kingdom** | Vermont's three northeasternmost counties (Caledonia, Essex, Orleans) — the state's most severe rural access and equity challenge. | The equivalent hardest-to-serve rural region in your state. |
 
@@ -5583,7 +5562,7 @@ National Research and Policy Organizations. KFF — Medicaid Coverage of and Spe
 
 Vermont Health Data Sources. VHCURES (all-payer claims database, GMCB); VUHDDS (hospital discharge database); VHIE (operated by VITL); Vermont BRFSS; Vermont DOH; Vermont Futures Project.
 
-Selected Academic and Clinical Sources. Kotter, Leading Change (1996); NCQA HEDIS Technical Specifications; HL7 FHIR R4 Specification; Archer et al., Cochrane Review on collaborative care (2012; 90+ RCTs); RAND Hospital Price Transparency (2022; UVMMC outpatient 417% of Medicare); Maryland HSCRC TCOC performance data ($1.4B Medicare savings; 7% admission reduction); National Consortium of Telehealth Resource Centers (April 2026).
+Selected Academic and Clinical Sources. Kotter, Leading Change (1996); NCQA HEDIS Technical Specifications; HL7 FHIR R4 Specification; Archer et al., Cochrane Review on collaborative care (2012; 90+ RCTs); RAND Hospital Price Transparency Study (UVMMC at 358% of Medicare, inpatient and outpatient combined, 2018–2020 claims; national average 254% of Medicare in the Round 5.1 study of 2022 claims); Maryland HSCRC TCOC performance data ($1.4B Medicare savings; 7% admission reduction); National Consortium of Telehealth Resource Centers (April 2026).
 
 Note on sources and currency. This book was written between January and April 2026. Vermont's transformation is ongoing, and specific data will continue to evolve. Readers should consult The Wire (healthtransformationreview.org) for current developments; Vermont legislative documents at legislature.vermont.gov; GMCB publications at gmcboard.vermont.gov; AHS materials at healthcarereform.vermont.gov. All Vermont government documents cited are publicly available. URLs were verified as active as of April 2026.
 
