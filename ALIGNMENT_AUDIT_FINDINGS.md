@@ -30,10 +30,9 @@ each number can be re-derived.
 | 5 | **Equity** | 2026-07-31 | Complete — fixes applied (§P36-4) |
 | 6 | **Operations** | 2026-07-31 | Complete — fixes applied (§P36-4) |
 
-The author held the manuscript throughout (`./book.sh who`), so
-`HTR_Book_v42.md` was read-only while auditing. The one exception is C-5, where
-the author explicitly authorised the Act 51 correction; the lock was taken and
-handed back for that edit.
+The author held the manuscript throughout, so `HTR_Book_v42.md` was read-only
+while auditing. The one exception is C-5, where the author explicitly
+authorised the Act 51 correction.
 
 ## Scripts written for this audit (read-only)
 

@@ -361,9 +361,6 @@ curl https://vhp-backend.fly.dev/api/ingest/status
 `HTR_Book_v42.md` and rebuild.
 
 ```bash
-./book.sh who      # who currently "holds" the book (edit lock)
-./book.sh mine     # you take it
-./book.sh claude   # hand it to an assistant
 ./book.sh check    # show unsynced Google Docs edits, build nothing
 ./book.sh build    # rebuild the .docx
 ```

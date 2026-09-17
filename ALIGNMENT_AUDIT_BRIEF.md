@@ -105,9 +105,6 @@ trust in both.
 > claim that was really 9 of 44 pairs; a "10 oversized tables" count that was
 > really 99). Count with a script, show the script.
 
-> ⚠️ **One editor at a time on the manuscript.** If the author is editing in
-> Google Docs, do not touch `HTR_Book_v42.md`. Check `./book.sh who`.
-
 > ⚠️ **Cite locations, not section numbers alone.** Section numbers shift when
 > anything is restructured. Quote the text so a finding stays findable.
 
