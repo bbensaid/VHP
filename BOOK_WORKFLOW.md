@@ -40,14 +40,6 @@ manuscript, it stops and says so.
 ./book.sh check    # only show what changed in a download; build nothing
 ```
 
-Plus the handoff commands, so only one of us edits at a time:
-
-```bash
-./book.sh who      # who holds the book right now
-./book.sh mine     # you take it — Claude will not edit the manuscript
-./book.sh claude   # hand it over — don't edit in Google Docs until it's back
-```
-
 ---
 
 ## Section titles must stay identical across chapters

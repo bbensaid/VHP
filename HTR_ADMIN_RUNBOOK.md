@@ -526,7 +526,6 @@ Summary only here.
 ./book.sh          # detect download, capture widths, list edits, rebuild
 ./book.sh build    # rebuild only
 ./book.sh check    # report only
-./book.sh who|mine|claude   # handoff — one editor at a time
 ```
 
 ### Things that will bite you

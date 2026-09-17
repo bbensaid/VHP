@@ -6,22 +6,28 @@ import { useBrand } from "@/components/BrandContext";
 
 const Logo: React.FC = () => {
   const { brand, config } = useBrand();
-  // Logo graphic switches per domain: review → "HTR", solutions → "HTS".
-  // Same bespoke mark; only the trailing letter differs (R vs S).
-  const logoSrc = brand === "review" ? "/logo-hts-vector-R.svg" : "/logo-hts-vector-S.svg";
+  // Single mark on both domains for now. The artwork reads "HTR", so the
+  // solutions domain currently shows it too — an HTS variant is still needed.
+  const logoSrc = "/logo-option-2.png";
   const logoAlt = brand === "review" ? "HTR Logo" : "HTS Logo";
   return (
     <div className="inline-block group cursor-pointer select-none">
 
-      {/* 1. FLEX CONTAINER */}
-      <div className="flex items-center gap-2">
+      {/* 1. FLEX CONTAINER — owns the type scale for the whole lockup. The
+             wordmark inherits it and the mark is sized in em against it, so
+             this one pair of classes drives both. */}
+      <div className="flex items-center gap-2 text-[10px] sm:text-xs">
 
-        {/* 2. IMAGE SIZE */}
-        <div className="relative h-14 w-14 sm:h-16 sm:w-16 shrink-0">
+        {/* 2. IMAGE SIZE — em units, not pixels: the wordmark is 3 lines at
+               leading-tight (1.25), so 3 x 1.25 = 3.75em is exactly its
+               height. The mark tracks the type at every breakpoint and can
+               never extend past it. */}
+        <div className="relative h-[3.75em] w-[3.75em] shrink-0">
           <Image
             src={logoSrc}
             alt={logoAlt}
             fill
+            sizes="64px"
             className="object-contain"
             priority
           />
@@ -37,9 +43,9 @@ const Logo: React.FC = () => {
       </div> */}
 
              <div className="leading-tight subpixel-antialiased">
-          <div className="text-[10px] sm:text-xs font-bold text-slate-900">HEALTH</div>
-          <div className="text-[10px] sm:text-xs font-bold text-slate-900">TRANSFORMATION</div>
-          <div className="text-[10px] sm:text-xs font-bold text-slate-900">{config.logoWord}</div>
+          <div className="font-bold text-slate-900">HEALTH</div>
+          <div className="font-bold text-slate-900">TRANSFORMATION</div>
+          <div className="font-bold text-slate-900">{config.logoWord}</div>
         </div>
       </div>
 

@@ -1,6 +1,6 @@
 # Transforming Vermont's Health System
 
-### A Six-Pillar White Paper on Vermont's Healthcare Transformation — Past, Present, and a Roadmap to 2040
+### A Five-Pillar White Paper on Vermont's Healthcare Transformation — Past, Present, and a Roadmap to 2040
 
 *Prepared for Vermont policymakers, the Agency of Human Services, the Green Mountain Care Board, the Health Care Delivery Advisory Committee, hospital leaders, and the legislators who will hold this work accountable.*
 
@@ -14,9 +14,9 @@ Vermont is attempting the most comprehensive state-level healthcare transformati
 
 This white paper makes three arguments.
 
-**First, the crisis is structural, and structural crises require structural responses.** Vermont's decade of voluntary payment reform (the All-Payer ACO Model, OneCare Vermont, voluntary VITL connectivity) produced modest results because the highest-cost actors could opt out. Acts 167, 51, and 68 replaced voluntary reform with mandatory architecture: reference-based pricing (RBP) for commercial payers beginning FY2027, global hospital budgets beginning FY2028, and a binding December 2028 Statewide Health Care Delivery Strategic Plan.
+**First, the crisis is structural, and structural crises require structural responses.** Vermont's twelve years under OneCare Vermont (the All-Payer ACO Model, voluntary VITL connectivity) produced contested results in part because federal law — *Gobeille v. Liberty Mutual* (2016) — limited how far the state could compel every payer to participate, and Vermont's largest insurer, Blue Cross Blue Shield, ultimately exercised exactly that option, exiting in 2023. Acts 167, 51, and 68 replaced voluntary reform with mandatory architecture on the hospital side: reference-based pricing (RBP) for commercial payers beginning FY2027, global hospital budgets beginning FY2028, and a binding December 2028 Statewide Health Care Delivery Strategic Plan.
 
-**Second, transformation must be understood and managed through six interdependent pillars** — Policy, Technology, Economics, Clinical, Equity, and Operations. The dominant failure mode in American healthcare reform is single-pillar thinking: payment reform without clinical redesign, technology without operational capacity, equity as an afterthought. Vermont's reform agenda is unusual precisely because it touches all six pillars at once. But the pillars are sequenced, not simultaneous-and-equal: Policy and Technology must lead, Economics and Clinical follow, Equity constrains every decision, and Operations determines whether any of it is executed. Vermont's progress is uneven across the six — strong in Policy and Clinical, improving in Technology, mid-build in Economics, and most at risk in Equity and Operations.
+**Second, transformation must be understood and managed through five interdependent pillars, each held to one cross-cutting Equity Imperative** — Policy, Technology, Economics, Clinical, and Operations, with the justice question ("is it just?") applied to every one of them. The dominant failure mode in American healthcare reform is single-pillar thinking: payment reform without clinical redesign, technology without operational capacity, equity as an afterthought. Equity is deliberately *not* a sixth pillar here: a sixth pillar carries its own budget line and its own place in the queue, which means it can be sequenced last, funded least, and reported separately from the work that determines whether disparities actually close. As an imperative, it has no such escape hatch — each pillar's own deliverable carries an equity condition it must satisfy. Vermont's reform agenda is unusual precisely because it touches all five pillars at once. But the pillars are sequenced, not simultaneous-and-equal: Policy and Technology must lead, Economics and Clinical follow, the Equity Imperative constrains every decision, and Operations determines whether any of it is executed. Vermont's progress is uneven — strong in Policy and Clinical, improving in Technology, mid-build in Economics, most at risk in Operations, and with the Equity Imperative currently the least satisfied of its tests.
 
 **Third, the next thirty-six months are decisive, and the binding constraint is execution, not analysis.** The policy is largely correct and the capital is flowing — $195 million in federal Rural Health Transformation (RHT) Program funds received in December 2025, plus up to ~$150 million per year in AHEAD EAST Fund Medicare investment. What is not yet built is the organizational machinery: a restructured AHS operating as a population-health system operator, a joint AHS–GMCB analytics capability, a Clinically Integrated Network (CIN) for shared services, and the project-management infrastructure to coordinate a 19-component transformation portfolio against a single December 2028 deadline. The federal environment has also turned hostile: H.R. 1 (the One Big Beautiful Bill Act, signed July 4, 2025) imposes $911 billion in Medicaid cuts over ten years, front-loading a temporary rural fund against back-loaded permanent revenue reductions.
 
@@ -39,9 +39,11 @@ Vermont has three assets that make a structural response feasible where it would
 
 ---
 
-## 2. The Six-Pillar Framework
+## 2. The Five-Pillar Framework and the Equity Imperative
 
-Every serious healthcare-transformation framework of the past thirty years has named the same necessary conditions: pay differently, redesign care, build data infrastructure, address social determinants, ensure equity, execute operationally. The list is correct. The problem is treating it as a list. A checklist implies independent items that can be addressed in any order, where partial completion is partial progress. The six pillars are not independent items — they are a system of interdependent components in which each pillar's effectiveness depends on the others, the failure of any one cascades through the rest, and the *order* of intervention matters as much as the content.
+Every serious healthcare-transformation framework of the past thirty years has named the same necessary conditions: pay differently, redesign care, build data infrastructure, address social determinants, ensure equity, execute operationally. The list is correct. The problem is treating it as a list. A checklist implies independent items that can be addressed in any order, where partial completion is partial progress. The five pillars are not independent items — they are a system of interdependent components in which each pillar's effectiveness depends on the others, the failure of any one cascades through the rest, and the *order* of intervention matters as much as the content.
+
+Equity does not appear below as a sixth row, and that placement is deliberate. It is the **Equity Imperative** — one justice test that each of the five pillars must pass on its own terms. Treated as a sixth pillar, equity acquires its own budget line, its own staff, and its own position in the sequence, which is precisely what allows it to be deferred, underfunded, and reported apart from the work that determines whether disparities close. Treated as an imperative, it cannot be separated out, because each pillar's own deliverable carries an equity condition: does the mandate close disparities or widen them (Policy)? Does the data make disparities visible or bury them in averages (Technology)? Do the incentives reward serving the hardest-to-reach, or penalize it (Economics)? Effective — but effective for whom (Clinical)? Executable everywhere, including in rural and under-resourced settings (Operations)?
 
 | Pillar | Diagnostic question | Structural role | Vermont's instruments |
 |---|---|---|---|
@@ -49,14 +51,14 @@ Every serious healthcare-transformation framework of the past thirty years has n
 | **Technology** | Is it possible? | The data substrate. Makes population-health management, VBC execution, equity measurement, and planning analytically feasible. | VHCURES (all-payer claims); VITL/VHIE; the joint AHS–GMCB analytics vendor; the CIN; AI-scribe grants. |
 | **Economics** | Is it sustainable? | The incentive architecture. Determines whether organizations have a financial reason to behave differently. | Reference-based pricing (FY2027); global budgets (FY2028–2030); AHEAD total-cost-of-care accountability; the EAST Fund. |
 | **Clinical** | Is it effective? | The mechanism of change. Where payment reform becomes patient outcomes — or fails to. | Blueprint for Health (PCMH); Collaborative Care Model; CCBHC expansion; primary-care investment. |
-| **Equity** | Is it just? | The cross-cutting constraint applied to every other pillar. Transformation that improves averages while widening disparities has failed. | Geographic equity across 14 HSAs; SDOH investment; rural-access protection in RBP/budget design; Act 167/68 equity reporting. |
 | **Operations** | Is it executable? | The execution layer. Translates mandates, payment models, data, and clinical programs into organizational reality. | 14-hospital transformation planning; AHS restructuring; the HSA-Coordinator model; the Division of Planning and Effectiveness; the PMO. |
+| *The Equity Imperative* | *Is it just?* | *Not a pillar — the cross-cutting test applied to all five above. Transformation that improves averages while widening disparities has failed, however permissible, possible, sustainable, effective, and executable it otherwise is.* | *Geographic equity across 14 HSAs; SDOH investment; rural-access protection in RBP/budget design; Act 167/68 equity reporting; HEROI scoring.* |
 
 ### The dependency logic that makes sequencing non-optional
 
 Five dependencies form the structural core, and they explain why Vermont sequences its reforms as it does:
 
-1. **Policy → Economics (the foundational dependency).** Payment reform that is voluntary produces voluntary results. Vermont spent a decade under OneCare's voluntary ACO and produced modest results among participants and none among those who opted out. Act 68's *mandatory* RBP and global budgets eliminate the opt-out. Without the Policy pillar's mandatory authority, the Economics pillar stays aspirational.
+1. **Policy → Economics (the foundational dependency).** Payment reform that is voluntary produces voluntary results. Vermont spent twelve years under OneCare's voluntary ACO model and produced a genuinely contested financial record, in part because a 2016 federal ruling (*Gobeille v. Liberty Mutual*) limited how far the state could compel every payer to participate — a limit Blue Cross Blue Shield of Vermont exercised by exiting in 2023. Act 68's *mandatory* RBP and global budgets eliminate that opt-out for Vermont hospitals, though they cannot override the federal, payer-side constraint Gobeille established. Without the Policy pillar's mandatory authority, the Economics pillar stays aspirational.
 2. **Economics → Clinical.** Payment reform changes the financial incentive; clinical redesign changes the care model that responds to it. A hospital under a global budget has an incentive to prevent hospitalizations — but can only act on it if it has the primary-care network, care coordination, and behavioral-health integration to keep patients out of the hospital.
 3. **Technology → everything.** You cannot attribute patients for global budgets without accurate matching; cannot identify care gaps without population data; cannot model service-line changes without analytics; cannot monitor equity without stratified data. Technology is the substrate on which every other pillar's management functions depend.
 4. **Equity as constraint.** Every payment, clinical, and technology decision must be evaluated for its equity impact *before* it is finalized — does it reduce disparities or widen them? Equity is not the last pillar in the sequence; it is the lens applied throughout.
@@ -66,13 +68,13 @@ The practical implication for Vermont: **Technology must precede Economics-as-ma
 
 ---
 
-## 3. Vermont's Transformation Across the Six Pillars: Past, Present, and Trajectory
+## 3. Vermont's Transformation Across the Five Pillars: Past, Present, and Trajectory
 
-This section assesses where Vermont stands on each pillar — what was true in 2022 (before Act 167), what is true in early 2026, and what the trajectory and risks are. The pattern is consistent: Vermont's *policy* and *clinical* foundations are among the strongest in the country, its *technology* and *economics* are mid-build, and its *equity* and *operations* pillars carry the most risk.
+This section assesses where Vermont stands on each pillar — what was true in 2022 (before Act 167), what is true in early 2026, and what the trajectory and risks are — and then assesses the Equity Imperative across all five. The pattern is consistent: Vermont's *policy* and *clinical* foundations are among the strongest in the country, its *technology* and *economics* are mid-build, its *operations* pillar carries the most execution risk, and the *Equity Imperative* is the test its pillars currently satisfy least well.
 
 ### 3.1 Policy — Strongest pillar; the mandatory architecture is built
 
-**Past (2022):** Payment reform was voluntary. The Vermont All-Payer ACO Model and OneCare Vermont allowed the highest-cost providers to decline participation; the "all-payer" system did not include all payers. There was no comprehensive system diagnostic, no statewide strategic plan, no all-payer federal agreement, and no dedicated transformation capital.
+**Past (2022):** Payment reform was voluntary. Vermont's mandate could not compel every private payer's participation — a limit rooted in *Gobeille v. Liberty Mutual* (2016), which held that ERISA preempts states from requiring self-insured plans to report claims data into a state database. That limit became concrete when Blue Cross Blue Shield of Vermont, the state's largest insurer, declined to renew its OneCare contract for 2023, removing roughly 93,000 enrollees — about a third of OneCare's total enrollment — in a single step; the "all-payer" system never included all payers. There was no comprehensive system diagnostic, no statewide strategic plan, no all-payer federal agreement, and no dedicated transformation capital.
 
 **Present (2026):** Vermont has assembled the most complete state-level reform mandate in the country through a deliberate **reform cascade** — Act 167 (2022) established the diagnosis (commissioning the Oliver Wyman analysis through a process of 230+ meetings and 3,100+ participants), Act 51 (2023) built institutional capacity, and Act 68 (2025) deployed the mandatory requirements: RBP for commercial payers beginning FY2027, global budgets for non-CAH hospitals beginning FY2028 and all hospitals by FY2030, and a binding Statewide Strategic Plan due December 1, 2028. The AHEAD State Agreement (signed January 17, 2025) commits Vermont to a nine-year all-payer total-cost-of-care model beginning January 1, 2027, with EAST Fund capital and explicit preservation of GMCB's rate-setting authority.
 
@@ -102,23 +104,25 @@ This section assesses where Vermont stands on each pillar — what was true in 2
 
 **Trajectory and risk:** Vermont's Blueprint-plus-AHEAD primary-care investment is the strongest in the country, and the clinical logic is proven by Vermont's own data. The critical variable is **behavioral-health integration sustainability** — the MHI pilot needs permanent EAST Fund financing, and the CoCM Medicare billing codes (CPT 99492/99493/99494) are the mechanism that can make it durable. The workforce constraint (370-FTE primary-care gap) is best addressed not purely by headcount but by team-based care models that let providers work at the top of their licensure with minimized administrative burden.
 
-### 3.5 Equity — Highest-risk pillar; gaps documented but not yet closing
-
-**Past (2022):** Vermont's aggregate numbers were strong — 91% statewide primary-care access (4 points above the national benchmark), 97% insurance coverage — but the aggregates hid the disparities: an 11-point white/BIPOC primary-care access gap (79–81% for BIPOC adults), 8% uninsurance in Essex County against 3% statewide, and the Northeast Kingdom's elevated chronic-disease and behavioral-health-crisis burden. There was no systematic HSA-level equity measurement and minimal SDOH screening.
-
-**Present (2026):** The disparities are now documented and largely unchanged. The HEROI equity-scoring framework has been developed and scoring is underway; Blueprint HRSN (health-related social needs) screening reaches 60%+ of practices; and social-risk-adjustment methodology for global budgets is in design as an active policy question. The GLP-1 access gap is the most consequential new equity issue: Vermont's Medicaid population has exactly the obesity, diabetes, and cardiovascular profile where GLP-1 efficacy is best demonstrated, but near-term budget pressure makes coverage difficult; the BALANCE Model (CMS, December 2025) and IRA price negotiation (semaglutide to ~$274/month effective 2027) are the levers.
-
-**Trajectory and risk:** This is the pillar most at risk of moving backward. H.R. 1's Medicaid cuts fall disproportionately on the low-income and rural populations whose gaps are already widest; federal equity-program funding has been reduced (VDH reported $7M retracted). Without explicit GLP-1 coverage expansion, sustained SDOH investment, and deliberate Northeast Kingdom access protection built into the RBP and global-budget design, Vermont's equity gaps will widen as coverage contracts for the populations with the greatest need. **Equity must be a co-equal design input to the Economics pillar, not a downstream review.**
-
-### 3.6 Operations — The binding constraint; the agency is not yet built for the job
+### 3.5 Operations — The binding constraint; the agency is not yet built for the job
 
 **Past (2022):** AHS operated as a program-silo organization — structured around funding streams and program types (Medicaid, mental health, substance use, aging, developmental services, Blueprint, health care reform) rather than around populations or the geographic communities they live in. There was no systematic hospital-transformation process, minimal transformation-PMO capacity, no Vermont CIN, and fragmented EMS (12+ separate rural agencies).
 
 **Present (2026):** All 14 hospitals are engaged in transformation planning (with the RHRC engagement and a successor function), and the January 2026 plans document 148 operational initiatives with named owners and timelines. PMO establishment is underway, the HSA-Coordinator model is being deployed, the CIN is in development, and AHS has received $195M in RHT capital. Two reports to the legislature (August and November 2025) have been delivered under Act 68's monthly reporting requirement.
 
-**Trajectory and risk:** Oliver Wyman identified four structural gaps that the restructuring must close — the program-silo misalignment with Hospital Service Areas, the absence of a Planning and Effectiveness analytical function, the under-resourcing of the transformation-management function, and fragmented SDOH integration. AHS's own November 2025 report acknowledged it "lacks a dedicated analytical unit" and that "transformation activities are sequenced by capacity rather than by strategic priority." **This is the pillar that will determine whether the other five produce a transformed system or a partial one.** The single most likely cause of plan failure is inadequate project-management infrastructure for a 19-component portfolio converging on one December 2028 deadline.
+**Trajectory and risk:** Oliver Wyman identified four structural gaps that the restructuring must close — the program-silo misalignment with Hospital Service Areas, the absence of a Planning and Effectiveness analytical function, the under-resourcing of the transformation-management function, and fragmented SDOH integration. AHS's own November 2025 report acknowledged it "lacks a dedicated analytical unit" and that "transformation activities are sequenced by capacity rather than by strategic priority." **This is the pillar that will determine whether the other four produce a transformed system or a partial one.** The single most likely cause of plan failure is inadequate project-management infrastructure for a 19-component portfolio converging on one December 2028 deadline.
 
-### Where Vermont stands — pillar scorecard at a glance
+### 3.6 The Equity Imperative — the test the five pillars currently satisfy least well
+
+This section is not a sixth pillar assessment. It is the justice question — *is it just?* — applied back across the five pillars above, which is where equity either gets built in or gets lost.
+
+**Past (2022):** Vermont's aggregate numbers were strong — 91% statewide primary-care access (4 points above the national benchmark), 97% insurance coverage — but the aggregates hid the disparities: an 11-point white/BIPOC primary-care access gap (79–81% for BIPOC adults), 8% uninsurance in Essex County against 3% statewide, and the Northeast Kingdom's elevated chronic-disease and behavioral-health-crisis burden. There was no systematic HSA-level equity measurement and minimal SDOH screening. Note what that pattern is: a Technology-pillar failure as much as a moral one. A disparity that only appears under demographic stratification is invisible to a state that cannot stratify.
+
+**Present (2026):** The disparities are now documented and largely unchanged. The HEROI equity-scoring framework has been developed and scoring is underway; Blueprint HRSN (health-related social needs) screening reaches 60%+ of practices; and social-risk-adjustment methodology for global budgets is in design as an active policy question — an Economics-pillar equity condition being resolved at design time rather than at review time, which is the correct sequence. The GLP-1 access gap is the most consequential new equity issue: Vermont's Medicaid population has exactly the obesity, diabetes, and cardiovascular profile where GLP-1 efficacy is best demonstrated, but near-term budget pressure makes coverage difficult; the BALANCE Model (CMS, December 2025) and IRA price negotiation (semaglutide to ~$274/month effective 2027) are the levers.
+
+**Trajectory and risk:** This is the test most at risk of moving backward. H.R. 1's Medicaid cuts fall disproportionately on the low-income and rural populations whose gaps are already widest; federal equity-program funding has been reduced (VDH reported $7M retracted). Without explicit GLP-1 coverage expansion, sustained SDOH investment, and deliberate Northeast Kingdom access protection built into the RBP and global-budget design, Vermont's equity gaps will widen as coverage contracts for the populations with the greatest need. **The Imperative must be a design input to each pillar — most urgently to Economics — not a downstream review.** An equity review conducted after a rate methodology is finished can identify a problem but can no longer cheaply fix one.
+
+### Where Vermont stands — scorecard at a glance
 
 | Pillar | Foundation | Build status (2026) | Primary risk |
 |---|---|---|---|
@@ -126,8 +130,8 @@ This section assesses where Vermont stands on each pillar — what was true in 2
 | Technology | Solid base (VHCURES) | Mid-build; analytics vendor + CIN in progress | Vendor not operational by Jan 2027; AI governance gap |
 | Economics | Distressed → reforming | Mandates enacted; mechanics in design | Methodology/levels; EAST Fund exposure to Medicaid cuts |
 | Clinical | National-leading (Blueprint) | Strong; AHEAD transition underway | Behavioral-health integration sustainability; workforce |
-| Equity | Strong averages, hidden gaps | Documented, not yet closing | Medicaid cuts widening gaps; GLP-1 access |
 | Operations | Built for a different era | Restructuring underway, incomplete | Execution capacity vs. statutory deadlines |
+| *Equity Imperative (applied to all five)* | *Strong averages, hidden gaps* | *Documented, not yet closing* | *Medicaid cuts widening gaps; GLP-1 access* |
 
 ---
 
@@ -156,9 +160,9 @@ By 2035, a successfully transformed Vermont health system should exhibit the fol
 
 **Phase 4 — Meet the demographic peak (2035–2040).** Scale dementia-care infrastructure, PACE programs, and HCBS capacity for the frailty/multi-morbidity phase of the Baby Boom curve. Update the Strategic Plan on its three-year cycle. Serve as the documented national template other states adopt as they reach Vermont's current condition. *Success in this phase is durability and transferability.*
 
-### 4.3 Pillar-by-pillar future-state actions
+### 4.3 Pillar-by-pillar future-state actions, plus the Equity Imperative
 
-The roadmap below specifies, for each pillar, the actions Vermont must take and the targets it should commit to. Targets marked *(statutory)* are set in Act 68 or GMCB guidance; the rest are recommended benchmarks for what success requires.
+The roadmap below specifies, for each pillar — and then for the Equity Imperative applied across all five — the actions Vermont must take and the targets it should commit to. Targets marked *(statutory)* are set in Act 68 or GMCB guidance; the rest are recommended benchmarks for what success requires.
 
 #### Policy
 
@@ -200,15 +204,6 @@ The roadmap below specifies, for each pillar, the actions Vermont must take and 
 | Build team-based care to convert the workforce shortage into a productivity solution | 2026–2030 | Primary-care FTE gap reduced from 370 to under 200; readmissions below 12% |
 | Develop dementia-care, PACE, and HCBS capacity for the demographic peak | 2028–2040 | Capacity sufficient for the 30%+ over-65 population by 2040 |
 
-#### Equity
-
-| Action | By | Target |
-|---|---|---|
-| Make the BALANCE/GLP-1 Medicaid coverage decision as an equity and population-health decision | 2026 | GLP-1 access gap closed for the Medicaid population most likely to benefit |
-| Build social risk adjustment and Northeast Kingdom access protection into RBP/budget design from the start | FY2028 | NEK uninsurance below 5%; rural access preserved through REH conversions + EMS/telehealth |
-| Deploy HEROI scoring for all 14 HSAs and universal HRSN screening | FY2027–2028 | HEROI scores for all HSAs; universal HRSN screening at all Blueprint PCMHs |
-| Narrow the documented disparities, tracked transparently | 2028–2035 | White/BIPOC primary-care access gap reduced from 11 points to under 6; 87%+ BIPOC access |
-
 #### Operations
 
 | Action | By | Target |
@@ -219,13 +214,24 @@ The roadmap below specifies, for each pillar, the actions Vermont must take and 
 | Reduce administrative cost and regionalize EMS | 2026–2030 | System administrative cost below 150% of the national benchmark by 2030; regional EMS in all HSAs |
 | Integrate SDOH programs (housing, transportation, food) with healthcare delivery via HSA coordination | FY2027+ | SDOH utilization linked to healthcare outcomes in VHCURES; investments directed to highest-gap communities |
 
+#### The Equity Imperative (applied across all five pillars above)
+
+These are not a sixth workstream. Each row below is an equity condition attached to one of the five pillars' own deliverables — the Economics rate methodology, the Technology measurement layer, the Clinical access footprint — and should be owned by that pillar's program manager, not by a separate equity office.
+
+| Action | By | Target |
+|---|---|---|
+| Make the BALANCE/GLP-1 Medicaid coverage decision as an equity and population-health decision | 2026 | GLP-1 access gap closed for the Medicaid population most likely to benefit |
+| Build social risk adjustment and Northeast Kingdom access protection into RBP/budget design from the start | FY2028 | NEK uninsurance below 5%; rural access preserved through REH conversions + EMS/telehealth |
+| Deploy HEROI scoring for all 14 HSAs and universal HRSN screening | FY2027–2028 | HEROI scores for all HSAs; universal HRSN screening at all Blueprint PCMHs |
+| Narrow the documented disparities, tracked transparently | 2028–2035 | White/BIPOC primary-care access gap reduced from 11 points to under 6; 87%+ BIPOC access |
+
 ---
 
 ## 5. Making It Executable: Govern the Transformation as a Portfolio
 
-The roadmap above will not execute itself, and the historical record of healthcare reform is a record of correct plans that produced documents rather than change. Vermont's transformation is — in the precise sense of the discipline — a **portfolio**: a structured collection of 19 interdependent programs and projects across the six pillars, converging on a single December 2028 deadline, with competing resource demands and shared dependencies. It must be managed as one.
+The roadmap above will not execute itself, and the historical record of healthcare reform is a record of correct plans that produced documents rather than change. Vermont's transformation is — in the precise sense of the discipline — a **portfolio**: a structured collection of 19 interdependent programs and projects across the five pillars, converging on a single December 2028 deadline, with competing resource demands and shared dependencies. It must be managed as one.
 
-**The core recommendation:** establish, by Q1 2027, a transformation Project Management Office within AHS, led by a dedicated **Portfolio Manager** (PMI Portfolio Management Professional credential), reporting to the AHS Secretary with a GMCB co-reporting relationship and budget authority over the PMO. Below the Portfolio Manager, designate a Program Manager for each of the six pillars. The Portfolio Manager maintains the integrated master schedule, the portfolio risk register, and the benefits-realization tracking that ties every component to one of Act 167's five statutory goals; resolves the cross-component resource conflicts that the November 2025 AHS report already identifies as a structural constraint; and manages portfolio-level stakeholder relationships with the HCAC, GMCB, hospital CEOs, the legislature, and CMS.
+**The core recommendation:** establish, by Q1 2027, a transformation Project Management Office within AHS, led by a dedicated **Portfolio Manager** (PMI Portfolio Management Professional credential), reporting to the AHS Secretary with a GMCB co-reporting relationship and budget authority over the PMO. Below the Portfolio Manager, designate a Program Manager for each of the five pillars, with equity accountability written into each of those five roles rather than assigned to a separate equity program manager — the org chart should encode the Imperative the same way the framework does. The Portfolio Manager maintains the integrated master schedule, the portfolio risk register, and the benefits-realization tracking that ties every component to one of Act 167's five statutory goals; resolves the cross-component resource conflicts that the November 2025 AHS report already identifies as a structural constraint; and manages portfolio-level stakeholder relationships with the HCAC, GMCB, hospital CEOs, the legislature, and CMS.
 
 The business case is overwhelming. PMI's research finds that organizations with mature project-management practices waste dramatically less than those without it; a 10% improvement in delivery efficiency on Vermont's $195M RHT investment alone exceeds the full multi-year cost of a staffed PMO. The total portfolio-management investment (~$4.5–7.5M over four to five years) is under 2% of the portfolio value it protects — against the alternative of the partial-transformation scenario, which is a multi-billion-dollar outcome: the continuation of the deficit trajectory, the failure of 13 of 14 hospitals to reach sustainability, and the loss of the political window the mandatory architecture has opened.
 
@@ -253,7 +259,7 @@ This does not weaken Vermont's transformation case; it sharpens it. The honest q
 
 Vermont's transformation is not yet a success story; it is a system in mid-flight. As of April 2026, reference-based pricing has not taken effect, global budgets are still being designed, the Strategic Plan has not been written, the analytics vendor has not delivered, and the Northeast Kingdom hospitals remain fragile. But Vermont has committed to structural change with sufficient specificity, statutory authority, and capital that the transformation has a credible path to completion — more than any comparable American state has done.
 
-The six-pillar framework explains both why Vermont can attempt this and where it is most exposed. The Policy and Clinical pillars are national-leading; the Technology and Economics pillars are mid-build and on track if the analytics capability and the budget mechanics land on schedule; the Equity and Operations pillars carry the most risk — equity because the federal Medicaid cuts fall hardest on the populations whose gaps are already widest, and operations because the agency that must execute all of this was built for a different era and is not yet rebuilt for the job.
+The five-pillar framework and its Equity Imperative explain both why Vermont can attempt this and where it is most exposed. The Policy and Clinical pillars are national-leading; the Technology and Economics pillars are mid-build and on track if the analytics capability and the budget mechanics land on schedule; the Operations pillar carries the most execution risk, because the agency that must execute all of this was built for a different era and is not yet rebuilt for the job. The Equity Imperative is the test currently least well satisfied — federal Medicaid cuts fall hardest on the populations whose gaps are already widest — and because it is an imperative rather than a pillar, it cannot be addressed by a separate workstream running alongside the other five. It is satisfied, or not, inside each of them.
 
 The work that remains is therefore not primarily analytical. The evidence base for what must change is strong and consistent. The binding constraints are organizational capacity, political will, and execution discipline: building the restructured agency, the analytics, the CIN, and the PMO fast enough to meet the statutory deadlines, and converting the December 2028 plan from a description into a binding commitment to a quantified future state. Vermont's statutory timeline — the December 2028 deadline, the mandatory Act 68 milestones, the nine-year AHEAD performance period — is the mechanism that converts transformation from a priority that can be deferred into a deadline that cannot. Whether that accountability is enforced will determine the outcome.
 
