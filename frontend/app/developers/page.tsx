@@ -43,8 +43,9 @@ const ENDPOINTS = [
       "economics":  { "spendingPerCapita": 9840, "insuranceCoverage": 95 },
       "technology": { "ehrAdoption": 88, "broadbandAccess": 74 },
       "clinical":   { "preventiveCare": 82, "readmissionRate": 14 },
-      "equity":     { "racialEquityGap": 1.3, "sdohIntegration": 67 }
+      "operations": { "workforceGaps": 80 }
     },
+    "equityImperative": { "racialEquityGap": 1.3, "sdohIntegration": 67 },
     "narrative": { "summary": "..." }
   }
 }`,

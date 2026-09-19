@@ -17,7 +17,20 @@ import { readFileSync } from "fs";
 
 const ALLOWED_NON_PILLAR_COURSES = new Set([
   "hie-health-reform-onboarding", // ch 16 — AHS Restructuring, spans all pillars
-  "welcome-htr-framework",        // ch 1  — Six-Pillar Framework overview
+  "welcome-htr-framework",        // ch 1  — Five-Pillar Framework overview
+]);
+
+// Same exception, for Sanity documents. A doc lands here when BOTH its pillar
+// and its chapterRef are right, but the chapter is a cross-pillar one (pillar:
+// null in chapters.ts) so the equality check can never pass.
+//
+// Keyed by _id. Add one only with the author's sign-off.
+const ALLOWED_NON_PILLAR_DOCS = new Set([
+  // ch 1 — the OneCare autopsy. It is an Economics case study (a total-cost-of-
+  // care payment model), but the book analyses it in Chapter 1 as the worked
+  // example of the Policy→Economics dependency failure (Gobeille v. Liberty
+  // Mutual). Both tags are correct; Chapter 1 simply has no single pillar.
+  "caseStudy-001",
 ]);
 
 const env = readFileSync(new URL("../.env.local", import.meta.url), "utf8");
@@ -45,6 +58,7 @@ const docs = await sanity.fetch(
 );
 for (const d of docs) {
   if (!d.pillar) continue; // no pillar to cross-check against
+  if (ALLOWED_NON_PILLAR_DOCS.has(d._id) && CH_PILLAR[d.chapterRef] === null) continue;
   if (!(d.chapterRef in CH_PILLAR)) {
     failures.push(`SANITY ${d._type} "${String(d.title ?? d._id).slice(0, 44)}" -> ch ${d.chapterRef} does not exist`);
   } else if (CH_PILLAR[d.chapterRef] !== norm(d.pillar)) {
@@ -90,8 +104,11 @@ while ((e = excerptRe.exec(compSrc))) {
     );
   }
 }
-if (seen !== 6) {
-  failures.push(`EXCERPT parser matched ${seen} of 6 pillars in FromTheBookForPillar.tsx — parser is stale`);
+// Six FRAMEWORK ids, not six pillars: the five pillars plus the Equity
+// Imperative, which has its own book chapter (ch.10) and its own excerpt.
+const FRAMEWORK_ID_COUNT = 6; // 5 pillars + the Equity Imperative
+if (seen !== FRAMEWORK_ID_COUNT) {
+  failures.push(`EXCERPT parser matched ${seen} of ${FRAMEWORK_ID_COUNT} framework ids (5 pillars + the Equity Imperative) in FromTheBookForPillar.tsx — parser is stale`);
 }
 
 console.log(

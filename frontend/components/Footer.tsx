@@ -51,16 +51,6 @@ const pillars = [
     ],
   },
   {
-    label: "Equity",
-    href: "/equity",
-    color: "hover:text-violet-400",
-    sub: [
-      { label: "SDOH Integration", href: "/equity/sdoh" },
-      { label: "Algorithmic Bias", href: "/equity/bias" },
-      { label: "Access Disparity", href: "/equity/access" },
-    ],
-  },
-  {
     label: "Operations",
     href: "/operations",
     color: "hover:text-teal-400",
@@ -73,6 +63,20 @@ const pillars = [
     ],
   },
 ];
+
+// Not a sixth entry in `pillars` above — the Equity Imperative is the
+// cross-cutting justice test applied to all five, and the footer renders it in
+// its own band below the pillar grid rather than as a peer column.
+const equityImperative = {
+  label: "The Equity Imperative",
+  href: "/equity",
+  color: "hover:text-violet-400",
+  sub: [
+    { label: "SDOH Integration", href: "/equity/sdoh" },
+    { label: "Algorithmic Bias", href: "/equity/bias" },
+    { label: "Access Disparity", href: "/equity/access" },
+  ],
+};
 
 const companyLinks = [
   { label: "About HTR", href: "/about" },
@@ -163,7 +167,7 @@ const Footer: React.FC = () => {
           <h4 className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-500 dark:text-slate-400 mb-4">
             Intelligence Pillars
           </h4>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {pillars.map((p) => (
               <div key={p.label}>
                 <Link
@@ -186,6 +190,34 @@ const Footer: React.FC = () => {
                 </ul>
               </div>
             ))}
+          </div>
+
+          {/* The Equity Imperative — applied to all five pillars above, not a
+              sixth column beside them. */}
+          <div className="mt-6 pt-5 border-t border-dashed border-violet-200 dark:border-violet-900/50">
+            <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
+              <Link
+                href={equityImperative.href}
+                className={`text-sm font-black text-slate-800 dark:text-slate-200 transition-colors ${equityImperative.color}`}
+              >
+                {equityImperative.label} →
+              </Link>
+              <span className="text-[11px] italic text-slate-500 dark:text-slate-400">
+                Is it just? — the test every pillar must pass.
+              </span>
+              <ul className="flex flex-wrap gap-x-4 gap-y-1">
+                {equityImperative.sub.map((s) => (
+                  <li key={s.label}>
+                    <Link
+                      href={s.href}
+                      className="text-xs text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors"
+                    >
+                      {s.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 

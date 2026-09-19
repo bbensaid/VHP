@@ -13,14 +13,27 @@ import {
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
 
+// Five pillars, in the book's load-bearing order (Policy → Technology →
+// Economics → Clinical → Operations). These are the numbered cards.
 const pillars = [
   { label: "Policy", color: "text-sky-700", bg: "bg-sky-600", border: "border-sky-200", question: "Is it permissible?", href: "/policy" },
-  { label: "Economics", color: "text-emerald-700", bg: "bg-emerald-500", border: "border-emerald-200", question: "Is it sustainable?", href: "/economics" },
   { label: "Technology", color: "text-indigo-700", bg: "bg-indigo-500", border: "border-indigo-200", question: "Is it possible?", href: "/technology" },
+  { label: "Economics", color: "text-emerald-700", bg: "bg-emerald-500", border: "border-emerald-200", question: "Is it sustainable?", href: "/economics" },
   { label: "Clinical", color: "text-rose-700", bg: "bg-rose-500", border: "border-rose-200", question: "Is it effective?", href: "/clinical" },
-  { label: "Equity", color: "text-violet-700", bg: "bg-violet-500", border: "border-violet-200", question: "Is it just?", href: "/equity" },
   { label: "Operations", color: "text-teal-700", bg: "bg-teal-500", border: "border-teal-200", question: "Is it executable?", href: "/operations" },
 ];
+
+// The sixth question — and deliberately not a sixth pillar. Rendered unnumbered
+// and apart, because it is a test applied to all five above rather than a
+// co-equal variable competing with them for budget, staff and attention.
+const equityImperative = {
+  label: "The Equity Imperative",
+  color: "text-violet-700",
+  bg: "bg-violet-500",
+  border: "border-violet-200",
+  question: "Is it just?",
+  href: "/equity",
+};
 
 const values = [
   {
@@ -108,7 +121,7 @@ export default function MissionPage() {
               </p>
               <div className="mt-8 pt-8 border-t border-white/10">
                 <p className="text-slate-400 leading-relaxed text-sm">
-                  We achieve this through six integrated analytical pillars — Policy, Economics, Technology, Clinical, Equity, and Operations — ensuring that no recommendation enters the field having been tested on only one dimension of a structurally complex problem.
+                  We achieve this through five integrated analytical pillars — Policy, Technology, Economics, Clinical, and Operations — each held to the Equity Imperative, ensuring that no recommendation enters the field having been tested on only one dimension of a structurally complex problem.
                 </p>
               </div>
             </div>
@@ -175,10 +188,10 @@ export default function MissionPage() {
                 Our Analytical Framework
               </span>
               <h2 className="ty-h1 font-black tracking-tight text-slate-900 mb-4">
-                Every insight must answer six questions before it reaches you.
+                Every insight must answer five questions — then one more — before it reaches you.
               </h2>
               <p className="text-slate-600 ty-hero leading-relaxed">
-                Six questions. Every analysis. No exceptions. HTR's framework treats Policy, Economics, Technology, Clinical, Equity, and Operations as co-equal structural variables — because health system transformation fails when any one of them is ignored.
+                Five pillar questions, and a sixth that is deliberately not a pillar. Every analysis. No exceptions. HTR's framework treats Policy, Technology, Economics, Clinical, and Operations as load-bearing structural variables — because health system transformation fails when any one of them is ignored — and then asks of all five whether the result is just.
               </p>
             </div>
             <Link
@@ -189,7 +202,7 @@ export default function MissionPage() {
             </Link>
           </div>
 
-          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
             {pillars.map((p, i) => (
               <Link
                 key={p.label}
@@ -211,6 +224,32 @@ export default function MissionPage() {
               </Link>
             ))}
           </div>
+
+          {/* The sixth question. Unnumbered and set apart on purpose: it is a
+              test applied to all five pillars above, not a sixth pillar. */}
+          <Link
+            href={equityImperative.href}
+            className={`group mt-4 block bg-white rounded-xl border-2 border-dashed ${equityImperative.border} p-6 hover:shadow-lg transition-all duration-200`}
+          >
+            <div className="flex flex-wrap items-center gap-3 mb-3">
+              <div className={`w-8 h-8 rounded-full ${equityImperative.bg} text-white flex items-center justify-center text-base font-black`}>
+                ⚖
+              </div>
+              <h3 className={`font-black text-lg ${equityImperative.color}`}>{equityImperative.label}</h3>
+              <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
+                Applied to all five — not a sixth pillar
+              </span>
+            </div>
+            <p className="text-slate-700 font-semibold text-sm mb-3">
+              &ldquo;{equityImperative.question}&rdquo;
+            </p>
+            <p className="text-slate-600 text-sm leading-relaxed">
+              A reform can improve the average while widening the gap, and pass every other test but this one. The Equity Imperative is a cross-cutting standard each pillar must meet on its own terms — not a separate workstream competing with them for budget, staff and attention.
+            </p>
+            <span className={`mt-3 inline-block text-xs font-bold ${equityImperative.color} opacity-0 group-hover:opacity-100 transition-opacity`}>
+              Explore →
+            </span>
+          </Link>
 
           <div className="mt-8 bg-white border border-indigo-100 rounded-xl p-6 md:p-8 text-center">
             <p className="text-slate-600 text-base max-w-3xl mx-auto leading-relaxed">

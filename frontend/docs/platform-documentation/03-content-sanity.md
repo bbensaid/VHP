@@ -49,7 +49,7 @@ Registered in `frontend/sanity/schemaTypes/index.ts`. Twenty-two types:
 
 | Schema (`_type`) | Studio title | Purpose / where it surfaces |
 |---|---|---|
-| `policyAnalysis` | **Analysis** | The flagship research brief. Surfaces on all six pillar sections, `/articles/[slug]`, `/read/[slug]`, search, RAG |
+| `policyAnalysis` | **Analysis** | The flagship research brief. Surfaces on all five pillar sections plus the Equity Imperative hub, `/articles/[slug]`, `/read/[slug]`, search, RAG |
 | `post` | Post | Generic article/post |
 | `author` | Author | Byline for posts |
 | `instructor` | Instructor | Course faculty (`/academy/faculty`) |
@@ -65,7 +65,7 @@ Registered in `frontend/sanity/schemaTypes/index.ts`. Twenty-two types:
 | `audio` | Audio | Narration / audio blocks |
 | `hospital` | Hospital | Hospital profiles (`/dashboard`, directory) |
 | `rhtState` | RHT State Profile | Rural Health Transformation state pages (`/states/[state]`) |
-| `statePerformanceIndex` | State Performance Index | The 0–100 six-pillar composite per state |
+| `statePerformanceIndex` | State Performance Index | The 0–100 five-pillar composite per state, with the Equity Imperative tracked as a cross-cutting indicator |
 | `investmentDeal` | Investment Deal | `/investment-tracker` (M&A, VC, PE, IPO…) |
 | `subscriber` | Subscriber | Newsletter/subscriber records |
 | `category` | Category | Taxonomy |

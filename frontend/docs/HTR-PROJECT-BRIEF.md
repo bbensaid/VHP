@@ -17,7 +17,7 @@
 
 ---
 
-## Six-Pillar Framework
+## Five-Pillar Framework
 The core organizing structure of the entire platform.
 
 | Pillar | Color | Route |

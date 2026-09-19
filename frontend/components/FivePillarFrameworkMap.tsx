@@ -51,7 +51,7 @@ interface Dep {
 }
 
 // The nine directed dependencies (book v46 §1.4 / Figure 1.3 — down from
-// fifteen in the six-pillar model, since equity's edges are gone: it is now
+// fifteen in the previous model, since equity's edges are gone: it is now
 // the cross-cutting check above, not a pillar with its own dependencies).
 const DEPS: Dep[] = [
   { from: "policy",   to: "tech",     type: "enables",  color: "#10b981", label: "Funds & authorizes the build", text: "Act 68 and the RHT Program fund and authorize the data infrastructure build. Without statutory funding and mandate, the Technology pillar has no forcing function." },

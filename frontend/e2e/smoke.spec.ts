@@ -24,12 +24,14 @@ const SMOKE_ROUTES: Route[] = [
   { path: "/",                         expectedText: /Health Transformation Review/i,                ssr: true },
   { path: "/book",                     expectedText: "Transforming",                                   ssr: true },
   { path: "/book/listen",              expectedText: /Listen|Audio Edition/i,                          ssr: true },
-  { path: "/about/framework",          expectedText: /Six-Pillar|Framework/i,                          ssr: true },
+  { path: "/about/framework",          expectedText: /Five Pillars|Five-Pillar|Framework/i,             ssr: true },
   { path: "/policy",                   expectedText: "Policy Hub",                                     ssr: true },
   { path: "/economics",                expectedText: "Economics Hub",                                  ssr: true },
   { path: "/technology",               expectedText: "Technology Hub",                                 ssr: true },
   { path: "/clinical",                 expectedText: "Clinical Hub",                                   ssr: true },
-  { path: "/equity",                   expectedText: "Equity Hub",                                     ssr: true },
+  // /equity is the Equity Imperative hub, not a pillar hub — the page renders
+  // the eyebrow "The Equity Imperative" over the heading "Is It Just?".
+  { path: "/equity",                   expectedText: /Equity Imperative|Is It Just/i,                   ssr: true },
   { path: "/operations",               expectedText: /Operations Intelligence|Operations Hub/i,        ssr: true },
 ];
 

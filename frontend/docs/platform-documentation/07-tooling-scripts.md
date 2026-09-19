@@ -124,12 +124,13 @@ Narration powers the book listen experience (`/book/listen`, `BookListenPlayer.t
 
 ## 8. Document generation (PDF/DOCX/PPTX)
 
-Repo-root tooling produces the marketing/whitepaper/deck artifacts (the `*.pdf`, `*.docx`, `*.pptx` files at repo root):
+`generate_pptx.py` and `generate_whitepaper_docx.py` were removed 2026-09-18
+along with the unreachable marketing whitepaper/deck `.md` sources they built
+from — none of that output was ever linked from the live platform. Remaining
+tooling:
 
 | Script | Produces |
 |---|---|
-| `generate_pptx.py` | `COMBINED_DECK.pptx` and slide decks from the `*_DECK.md` sources |
-| `generate_whitepaper_docx.py` | `HTR_WHITE_PAPER.docx` from `HTR_WHITE_PAPER.md` |
 | `scripts/legacy-python/convert.py`, `merge_to_word.py`, `merge_images.py` | Markdown→Word / image merge utilities |
 | `scripts/legacy-python/digest_latest.py`, `digest_critical.py` | Build content digests |
 

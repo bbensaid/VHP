@@ -25,9 +25,13 @@ import ast
 import os
 import sys
 
-# The six framework pillars. Operations/Technology are currently under-covered;
-# this validator surfaces that without fabricating content.
-PILLARS = {"Policy", "Economics", "Technology", "Clinical", "Equity", "Operations"}
+# The five framework pillars, plus the Equity Imperative — which is a
+# cross-cutting test, not a sixth pillar, but does need its own eval coverage.
+# Operations/Technology are currently under-covered; this validator surfaces
+# that without fabricating content.
+PILLARS = {"Policy", "Technology", "Economics", "Clinical", "Operations"}
+EQUITY_IMPERATIVE = "Equity"
+VALID_TAGS = PILLARS | {EQUITY_IMPERATIVE}
 REQUIRED_FIELDS = ("question", "ground_truth", "pillar")
 TARGET_SIZE = 50  # evaluate_rag.py's own stated goal ("Aim for 50+ Q/A pairs")
 
@@ -88,8 +92,8 @@ def validate(strict: bool = False) -> int:
             seen_questions.add(key)
 
         pillar = item.get("pillar")
-        if pillar and pillar not in PILLARS:
-            errors.append(f"{loc}: unknown pillar {pillar!r} (expected one of {sorted(PILLARS)})")
+        if pillar and pillar not in VALID_TAGS:
+            errors.append(f"{loc}: unknown pillar {pillar!r} (expected one of {sorted(VALID_TAGS)})")
         if pillar:
             pillar_counts[pillar] = pillar_counts.get(pillar, 0) + 1
 
@@ -104,10 +108,13 @@ def validate(strict: bool = False) -> int:
     missing_pillars = sorted(PILLARS - set(pillar_counts))
     if missing_pillars:
         warnings.append(f"pillars with no coverage: {missing_pillars}")
+    if EQUITY_IMPERATIVE not in pillar_counts:
+        warnings.append("the Equity Imperative has no coverage")
 
     # Report
     print(f"Golden dataset: {n} entries")
     print("Pillar coverage: " + ", ".join(f"{p}={pillar_counts.get(p, 0)}" for p in sorted(PILLARS)))
+    print(f"Equity Imperative coverage: {pillar_counts.get(EQUITY_IMPERATIVE, 0)}")
     for w in warnings:
         print(f"  WARN: {w}")
     for e in errors:

@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 interface Props {
-  context?: string; // 'policy', 'economics', 'technology', 'clinical', 'equity' — for segmentation
+  context?: string; // 'policy', 'technology', 'economics', 'clinical', 'operations', 'equity' — for segmentation
   variant?: "banner" | "inline" | "footer";
 }
 

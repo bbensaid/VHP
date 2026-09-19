@@ -122,7 +122,7 @@ const ALL_PLATFORM_SECTIONS = [
     ],
   },
   {
-    label: "Equity",
+    label: "The Equity Imperative",
     color: "bg-violet-50 border-violet-200 text-violet-800 hover:bg-violet-100",
     headerColor: "text-violet-700",
     icon: ScaleIcon,

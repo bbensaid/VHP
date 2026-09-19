@@ -2,7 +2,7 @@
 /**
  * scripts/seed-content.ts
  *
- * Seeds editorial content across all six pillars:
+ * Seeds editorial content across the five pillars and the Equity Imperative:
  *   - policyAnalysis  (5 per pillar = 30 total)
  *   - academyModule   (2 courses × 3 modules = 6 modules)
  *   - definition      (30 glossary terms)
@@ -665,7 +665,7 @@ const policyAnalyses = [
     ],
   },
 
-  // EQUITY PILLAR
+  // THE EQUITY IMPERATIVE (cross-cutting, not a pillar)
   {
     _id: "policyAnalysis-equ-001",
     _type: "policyAnalysis",

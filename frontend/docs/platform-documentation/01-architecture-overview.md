@@ -117,7 +117,7 @@ This is the single most important integration to understand: **the CMS is the so
 - `e2e/` — Playwright tests.
 
 **Notable route groups** (full list in [Doc 10](./10-reference-appendices.md)):
-- Six pillar sections: `/policy`, `/economics`, `/technology`, `/clinical`, `/equity`, `/operations` — each with `[slug]` and named subpages.
+- Five pillar sections: `/policy`, `/technology`, `/economics`, `/clinical`, `/operations` — plus the cross-cutting Equity Imperative hub, `/equity` — each with `[slug]` and named subpages.
 - **Academy:** `/academy/*` (courses, tracks, modules, case-studies, faculty, glossary, webinars, personalized-learning).
 - **Account:** `/account/*` (profile, billing, subscription, courses, bookmarks, referrals, api-keys).
 - **Admin:** `/admin/*` (users, analytics, revenue, access-codes, role-changes, ingest).

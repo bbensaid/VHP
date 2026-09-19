@@ -11,8 +11,14 @@ const PILLARS = [
   { id: "economics", label: "Economics", dot: "bg-emerald-500", desc: "Value-based care & markets" },
   { id: "technology", label: "Technology", dot: "bg-indigo-500", desc: "AI, digital health & data" },
   { id: "clinical", label: "Clinical", dot: "bg-red-500", desc: "Hospital care & delivery" },
-  { id: "equity", label: "Equity", dot: "bg-violet-500", desc: "SDOH & access disparity" },
+  { id: "operations", label: "Operations", dot: "bg-teal-500", desc: "Revenue cycle, workforce & compliance" },
 ];
+
+// Offered after the five pillars, not among them: the Equity Imperative is a
+// cross-cutting test, so selecting it is not the same as picking a pillar.
+const EQUITY_IMPERATIVE_OPTION = {
+  id: "equity", label: "The Equity Imperative", dot: "bg-violet-500", desc: "Is it just? — SDOH, bias & access, across every pillar",
+};
 
 const ROLES = [
   { id: "executive", label: "Healthcare Executive", icon: "🏥" },
@@ -159,7 +165,7 @@ export default function OnboardingModal() {
               <h2 className="ty-h3 font-black text-slate-900 dark:text-slate-100 mb-1">Choose your focus areas</h2>
               <p className="text-sm text-slate-400 dark:text-slate-500 mb-5">Select one or more pillars to personalize your feed.</p>
               <div className="space-y-2">
-                {PILLARS.map((pillar) => {
+                {[...PILLARS, EQUITY_IMPERATIVE_OPTION].map((pillar) => {
                   const selected = selectedPillars.includes(pillar.id);
                   return (
                     <button

@@ -1,6 +1,6 @@
 // scripts/post-five-pillars-to-sanity.mjs
 //
-// Converts Track 1's 5 lessons (frontend/content/course_five_pillars.json)
+// Converts ALL tracks' lessons (frontend/content/course_five_pillars.json)
 // from their Supabase content_blocks shape into Sanity portable text, and
 // posts them as `academyModule` documents.
 //
@@ -173,25 +173,44 @@ const PILLAR_MAP = {
 const course = JSON.parse(
   readFileSync(join(__dir, "../content/course_five_pillars.json"), "utf8"),
 );
-const track1 = course.tracks.find((t) => t.slug === "foundations-the-framework");
-if (!track1) {
-  console.error("✗ Track 'foundations-the-framework' not found in course_five_pillars.json");
+// ALL tracks, not just Track 1. `lesson.order` is course-wide (1..24), so the
+// whole course is one flat, correctly-ordered module sequence and prev/next
+// links carry a learner across track boundaries instead of dead-ending at the
+// end of Track 1.
+const lessons = course.tracks
+  .flatMap((t) => (t.lessons || []).map((l) => ({ ...l, _trackSlug: t.slug })))
+  .sort((a, b) => a.order - b.order);
+
+if (!lessons.length) {
+  console.error("✗ No lessons found in course_five_pillars.json");
   process.exit(1);
 }
 
-const docs = track1.lessons.map((lesson) => ({
+// Track order in the course determines difficulty ramp: Foundations is
+// introductory, the five pillar tracks are the core, the capstone is advanced.
+const LEVEL_BY_TRACK = {
+  "foundations-the-framework": "Foundational",
+  "policy-establish-the-mandate": "Intermediate",
+  "technology-build-the-substrate": "Intermediate",
+  "economics-visible-incentives": "Intermediate",
+  "clinical-redesign-on-incentives": "Intermediate",
+  "operations-close-the-gap": "Intermediate",
+  "the-equity-imperative": "Intermediate",
+  "sustaining-the-transformation": "Advanced",
+};
+
+const docs = lessons.map((lesson, i) => ({
   _id: `academyModule-five-pillars-${lesson.slug}`,
   _type: "academyModule",
   title: lesson.title,
   slug: { _type: "slug", current: lesson.slug },
   courseTitle: "Five Pillars, One Imperative",
   moduleNumber: lesson.order,
-  totalModules: track1.lessons.length,
-  prevModuleSlug: lesson.order > 1 ? track1.lessons[lesson.order - 2].slug : undefined,
-  nextModuleSlug:
-    lesson.order < track1.lessons.length ? track1.lessons[lesson.order].slug : undefined,
+  totalModules: lessons.length,
+  prevModuleSlug: i > 0 ? lessons[i - 1].slug : undefined,
+  nextModuleSlug: i < lessons.length - 1 ? lessons[i + 1].slug : undefined,
   pillar: PILLAR_MAP[lesson.pillar] || "All",
-  level: "Foundational",
+  level: LEVEL_BY_TRACK[lesson._trackSlug] || "Intermediate",
   estimatedReadTime: lesson.estimatedMinutes,
   learningObjectives: (lesson.objectives || []).map((o) => o.text),
   summary: lesson.summary,

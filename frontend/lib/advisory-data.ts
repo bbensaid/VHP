@@ -2,6 +2,8 @@
 // Single source of truth for all Advisory service content.
 // Drives: landing page grid, services catalog, hub tabs, contact form, header nav.
 
+import type { FrameworkId } from "@/lib/taxonomy";
+
 export interface EngagementStep {
   stepNumber: number;
   title: string;
@@ -17,7 +19,10 @@ export interface PricingTier {
   highlight?: boolean;
 }
 
-export type Pillar = "policy" | "economics" | "technology" | "clinical" | "equity" | "operations";
+// Re-exported from the taxonomy rather than redeclared. FrameworkId is the
+// five PillarIds plus the Equity Imperative — keeping this as its own literal
+// union is how the superseded model survived here after the book moved on.
+export type Pillar = FrameworkId;
 
 export interface AdvisoryService {
   id: string;
@@ -114,7 +119,7 @@ export const ADVISORY_SERVICES: AdvisoryService[] = [
       { name: "Full Engagement", price: "$120,000+", description: "Comprehensive multi-pillar strategy engagement over 3–6 months.", includes: ["All 5-pillar + Equity Imperative assessment", "Board-ready strategic plan", "Implementation roadmap", "3 quarterly check-ins"], highlight: true },
       { name: "Executive Retainer", price: "$18,000/mo", description: "Dedicated principal advisor on a monthly retainer for ongoing counsel.", includes: ["Monthly strategy sessions", "On-call analyst access", "Document review", "Board presentation support"], highlight: false },
     ],
-    pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"],
+    pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"],
     scope: "Enterprise strategy across all 5 pillars",
     typicalDuration: "3–6 months",
     startingPrice: "$45,000",
@@ -154,7 +159,7 @@ export const ADVISORY_SERVICES: AdvisoryService[] = [
       { name: "Full Research Engagement", price: "$40,000", description: "Comprehensive 6–8 week custom research project.", includes: ["Full methodology", "Primary interviews", "Financial modeling", "Full report + appendix", "Debrief + presentation"], highlight: true },
       { name: "Research Retainer", price: "$8,000/mo", description: "On-demand research support for teams with ongoing intelligence needs.", includes: ["Up to 3 briefs/quarter", "Priority turnaround", "Data access", "Analyst on-call"], highlight: false },
     ],
-    pillars: ["policy", "economics", "technology", "clinical", "equity"],
+    pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"],
     scope: "Bespoke research on any healthcare question",
     typicalDuration: "4–8 weeks",
     startingPrice: "$15,000",
@@ -274,7 +279,7 @@ export const ADVISORY_SERVICES: AdvisoryService[] = [
       { name: "Comprehensive", price: "$55,000", description: "Full 7-domain ORF assessment with complete peer benchmarking.", includes: ["All 7 domains", "Full peer benchmarking", "Board-ready report", "Executive workshop"], highlight: true },
       { name: "Pre-Transformation Package", price: "$80,000", description: "Full assessment plus 6-month capability development advisory.", includes: ["Full ORF assessment", "6-month follow-on advisory", "Quarterly maturity re-scoring", "Implementation support"], highlight: false },
     ],
-    pillars: ["policy", "economics", "technology", "clinical", "equity"],
+    pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"],
     scope: "Organizational readiness & maturity benchmarking",
     typicalDuration: "5–8 weeks",
     startingPrice: "$30,000",
@@ -354,7 +359,7 @@ export const ADVISORY_SERVICES: AdvisoryService[] = [
       { name: "Regulatory Design Support", price: "$40,000–$80,000", description: "Multi-month support for rulemaking, program design, or legislative drafting.", includes: ["Full evidence review", "Options analysis", "Draft language", "Stakeholder comment analysis", "Ongoing revisions"], highlight: true },
       { name: "Legislative Retainer", price: "$10,000/month", description: "On-call access to senior advisors throughout a legislative session or rulemaking cycle.", includes: ["Unlimited quick-turn briefs", "Testimony preparation", "Stakeholder meeting support", "Weekly intelligence updates"], highlight: false },
     ],
-    pillars: ["policy", "economics", "clinical", "equity", "technology"],
+    pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"],
     scope: "Government advisory & regulatory design",
     typicalDuration: "2 weeks–12 months",
     startingPrice: "$15,000",
@@ -394,7 +399,7 @@ export const ADVISORY_SERVICES: AdvisoryService[] = [
       { name: "Executive Program", price: "$22,000", description: "Full-day or 2-day intensive executive education program.", includes: ["C-suite tailored content", "Case study sessions", "Executive workbook", "Action planning workshop", "30-day follow-on"], highlight: true },
       { name: "Virtual Cohort License", price: "$8,000/quarter", description: "Quarterly virtual training cohort license for an entire organization.", includes: ["4 virtual sessions/quarter", "Async recordings", "All participant materials", "Up to 50 learners"], highlight: false },
     ],
-    pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"],
+    pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"],
     scope: "Professional development across all 5 pillars",
     typicalDuration: "1 day–ongoing",
     startingPrice: "$8,000",

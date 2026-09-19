@@ -14,7 +14,7 @@ export default function AcademyHub() {
         <div className="max-w-5xl mx-auto px-6 py-4">
           <span className="text-[10px] font-semibold uppercase tracking-widest text-sky-400 block mb-0.5">HTR Academy</span>
           <h1 className="text-xl font-bold tracking-tight">Intelligence &amp; Masterclasses</h1>
-          <p className="text-sm text-slate-400 mt-0.5 max-w-2xl">Executive education for healthcare leaders — policy, economics, technology, clinical, equity, and operations as one integrated system.</p>
+          <p className="text-sm text-slate-400 mt-0.5 max-w-2xl">Executive education for healthcare leaders — policy, technology, economics, clinical, and operations as one integrated system, each held to the Equity Imperative.</p>
         </div>
       </div>
 
@@ -23,7 +23,7 @@ export default function AcademyHub() {
         <h2 className="text-2xl font-black text-slate-900 mb-2">What the Academy Covers</h2>
         <p className="text-slate-500 mb-10 max-w-2xl">
           Every program is anchored in the HTR Five-Pillar Framework — Policy, Technology, Economics,
-          Clinical, Equity, and Operations. Content is produced by practitioners and updated as the landscape shifts.
+          Clinical, and Operations — and to the Equity Imperative that tests all five. Content is produced by practitioners and updated as the landscape shifts.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">

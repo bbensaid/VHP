@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ADVISORY_SERVICES, PILLAR_STYLES } from "@/lib/advisory-data";
+import { PILLAR_IDS } from "@/lib/taxonomy";
 
 export const metadata = {
   title: "Training & Executive Education | HTR Advisory",
@@ -70,7 +71,8 @@ const PROGRAMS = [
     title: "Custom Executive Curriculum",
     duration: "Tailored",
     audience: "Leadership Teams, Board Members, Any Audience",
-    pillars: ["policy" as const, "economics" as const, "technology" as const, "clinical" as const, "equity" as const, "operations" as const],
+    // All five pillars, from the taxonomy, plus the Equity Imperative.
+    pillars: [...PILLAR_IDS, "equity" as const],
     description: "We design bespoke education programs combining modules from across all five pillars, tailored to your organization's specific challenges, strategic priorities, and audience level.",
     topics: ["Fully customized to your agenda", "Combines any program topics", "Real case studies from your context", "Pre/post assessment tools", "Executive coaching integration", "Multi-session cohort design available"],
   },

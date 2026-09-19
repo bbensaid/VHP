@@ -21,14 +21,36 @@ ChartJS.register(...registerables);
 
 // ─── CONSTANTS ────────────────────────────────────────────────────────────────
 
+// The five WEIGHTED domains that compose the HTI score. Equity is not among
+// them — see EQUITY_INDICATOR below.
+//
+// Weights were renormalised when equity (previously 0.20) was moved out: the
+// remaining five summed to 0.80, so each was divided by 0.80 to keep the
+// composite on a 0-100 scale. Their RELATIVE proportions are unchanged
+// (digital and outcomes still lead, workforce still trails), but absolute
+// composite values differ from the pre-change dashboard.
 const HTI_WEIGHTS = [
-  { id: "digital",    label: "Digital Maturity",     weight: 0.20, info: "Interoperability, Cyber-resilience, AI Adoption",        color: "#6366f1" },
-  { id: "vbc",        label: "Value-Based Care",      weight: 0.15, info: "% revenue in risk-based contracts, APM penetration",    color: "#10b981" },
-  { id: "equity",     label: "Social Determinants",   weight: 0.20, info: "Gini coefficient of outcomes, SDOH integration score",  color: "#f59e0b" },
-  { id: "outcomes",   label: "Clinical Excellence",   weight: 0.20, info: "Readmission rates, quality measures, PQI scores",      color: "#ec4899" },
-  { id: "experience", label: "Patient Experience",    weight: 0.15, info: "NPS, Digital engagement, PROMs, care access index",    color: "#3b82f6" },
-  { id: "workforce",  label: "Workforce Wellness",    weight: 0.10, info: "Burnout index, retention rate, leadership diversity",  color: "#8b5cf6" },
+  { id: "digital",    label: "Digital Maturity",     weight: 0.25,   info: "Interoperability, Cyber-resilience, AI Adoption",        color: "#6366f1" },
+  { id: "vbc",        label: "Value-Based Care",      weight: 0.1875, info: "% revenue in risk-based contracts, APM penetration",    color: "#10b981" },
+  { id: "outcomes",   label: "Clinical Excellence",   weight: 0.25,   info: "Readmission rates, quality measures, PQI scores",      color: "#ec4899" },
+  { id: "experience", label: "Patient Experience",    weight: 0.1875, info: "NPS, Digital engagement, PROMs, care access index",    color: "#3b82f6" },
+  { id: "workforce",  label: "Workforce Wellness",    weight: 0.125,  info: "Burnout index, retention rate, leadership diversity",  color: "#8b5cf6" },
 ];
+
+// The Equity Imperative — still measured, still charted, but read ACROSS the
+// weighted domains rather than competing with them for a share of the
+// composite. weight: 0 keeps it out of calcComposite() by construction.
+const EQUITY_INDICATOR = {
+  id: "equity",
+  label: "Equity Imperative (SDOH)",
+  weight: 0,
+  info: "Cross-cutting: Gini coefficient of outcomes, SDOH integration score — read against every domain, not averaged with them",
+  color: "#7c3aed",
+};
+
+// Everything to CHART or LIST: the five weighted domains plus the cross-cutting
+// indicator. Use this for display; use HTI_WEIGHTS for anything that scores.
+const HTI_DOMAINS = [...HTI_WEIGHTS, EQUITY_INDICATOR];
 
 const SUB_METRICS: Record<string, { label: string; national: number; }[]> = {
   digital:    [{ label: "EHR Interoperability", national: 72 }, { label: "AI Adoption Rate", national: 38 }, { label: "Cyber Resilience Score", national: 65 }],
@@ -192,11 +214,11 @@ export default function HTIDashboard() {
     const rows: string[][] = [
       ["Domain", "Weight", "Score", "Weighted Contribution"],
     ];
-    for (const w of HTI_WEIGHTS) {
+    for (const w of HTI_DOMAINS) {
       const score = metrics[w.id] ?? 0;
       rows.push([
         w.label,
-        `${(w.weight * 100).toFixed(0)}%`,
+        w.weight === 0 ? "cross-cutting" : `${(w.weight * 100).toFixed(0)}%`,
         score.toFixed(1),
         (score * w.weight).toFixed(2),
       ]);
@@ -218,11 +240,11 @@ export default function HTIDashboard() {
 
   // Radar chart data
   const radarData = useMemo(() => ({
-    labels: HTI_WEIGHTS.map(m => m.label),
+    labels: HTI_DOMAINS.map(m => m.label),
     datasets: [
       {
         label: `${level.charAt(0).toUpperCase() + level.slice(1)} Performance`,
-        data: HTI_WEIGHTS.map(m => metrics[m.id]),
+        data: HTI_DOMAINS.map(m => metrics[m.id]),
         backgroundColor: "rgba(16, 185, 129, 0.15)",
         borderColor: "rgba(16, 185, 129, 1)",
         borderWidth: 3,
@@ -276,7 +298,7 @@ export default function HTIDashboard() {
       labels: allLabels,
       datasets: [
         {
-          label: `${stateObj.stateName} — ${trendDomain === "composite" ? "Composite HTI" : HTI_WEIGHTS.find(w => w.id === trendDomain)?.label}`,
+          label: `${stateObj.stateName} — ${trendDomain === "composite" ? "Composite HTI" : HTI_DOMAINS.find(w => w.id === trendDomain)?.label}`,
           data: stateValues,
           borderColor: "#10b981",
           backgroundColor: "rgba(16,185,129,0.1)",
@@ -339,25 +361,25 @@ export default function HTIDashboard() {
     const national = nationalBenchmark[nationalBenchmark.length - 1];
 
     return {
-      labels: HTI_WEIGHTS.map(w => w.label),
+      labels: HTI_DOMAINS.map(w => w.label),
       datasets: [
         {
           label: stA.stateName,
-          data: HTI_WEIGHTS.map(w => latestA[w.id as keyof QuarterlySnapshot] as number),
+          data: HTI_DOMAINS.map(w => latestA[w.id as keyof QuarterlySnapshot] as number),
           backgroundColor: "rgba(16, 185, 129, 0.7)",
           borderColor: "#10b981",
           borderWidth: 1,
         },
         {
           label: stB.stateName,
-          data: HTI_WEIGHTS.map(w => latestB[w.id as keyof QuarterlySnapshot] as number),
+          data: HTI_DOMAINS.map(w => latestB[w.id as keyof QuarterlySnapshot] as number),
           backgroundColor: "rgba(99, 102, 241, 0.7)",
           borderColor: "#6366f1",
           borderWidth: 1,
         },
         {
           label: "National Average",
-          data: HTI_WEIGHTS.map(w => national[w.id as keyof QuarterlySnapshot] as number),
+          data: HTI_DOMAINS.map(w => national[w.id as keyof QuarterlySnapshot] as number),
           backgroundColor: "rgba(148, 163, 184, 0.4)",
           borderColor: "#94a3b8",
           borderWidth: 1,
@@ -372,10 +394,10 @@ export default function HTIDashboard() {
 
   // Generate dynamic insights based on current metrics
   const insights = useMemo(() => {
-    const gaps = HTI_WEIGHTS
+    const gaps = HTI_DOMAINS
       .map(w => ({ ...w, score: metrics[w.id], gap: 95 - metrics[w.id] }))
       .sort((a, b) => b.gap - a.gap);
-    const strengths = HTI_WEIGHTS
+    const strengths = HTI_DOMAINS
       .map(w => ({ ...w, score: metrics[w.id] }))
       .sort((a, b) => b.score - a.score);
     return { topGap: gaps[0], topStrength: strengths[0] };
@@ -397,7 +419,7 @@ export default function HTIDashboard() {
             HTI <span className="text-emerald-600 font-light tracking-normal">Engine</span>
           </h1>
           <p className="text-slate-500 mt-2 max-w-2xl text-lg font-medium leading-snug">
-            A weighted calculation engine quantifying health system maturity across Clinical, Economic, Social, and Digital domains — with trend analytics and peer benchmarking.
+            A weighted calculation engine quantifying health system maturity across five weighted domains — Digital, Value-Based Care, Clinical, Experience and Workforce — with the Equity Imperative tracked across all of them rather than averaged in. Includes trend analytics and peer benchmarking.
           </p>
         </div>
         <div className="flex bg-slate-100 p-1.5 rounded-2xl border border-slate-200 shadow-inner">
@@ -456,7 +478,7 @@ export default function HTIDashboard() {
                 </div>
                 {/* Domain breakdown mini-bars */}
                 <div className="space-y-1.5 mt-4">
-                  {HTI_WEIGHTS.map(w => (
+                  {HTI_DOMAINS.map(w => (
                     <div key={w.id} className="flex items-center gap-2">
                       <span className="text-[10px] text-slate-400 w-28 shrink-0 truncate">{w.label}</span>
                       <div className="flex-1 h-1.5 bg-indigo-700 rounded-full overflow-hidden">
@@ -480,7 +502,7 @@ export default function HTIDashboard() {
                 <Zap size={14} className="text-emerald-600" />
               </h3>
               <div className="space-y-5">
-                {HTI_WEIGHTS.map(m => (
+                {HTI_DOMAINS.map(m => (
                   <div key={m.id}>
                     <div
                       className="flex justify-between items-center text-[10px] font-bold mb-1.5 uppercase tracking-wider cursor-pointer"
@@ -489,7 +511,7 @@ export default function HTIDashboard() {
                       <span className="text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-1.5">
                         <span className="w-2 h-2 rounded-full inline-block" style={{ backgroundColor: m.color }} />
                         {m.label}
-                        <span className="text-slate-300 normal-case font-normal">{(m.weight * 100).toFixed(0)}%</span>
+                        <span className="text-slate-300 normal-case font-normal">{m.weight === 0 ? "cross-cutting" : `${(m.weight * 100).toFixed(0)}%`}</span>
                       </span>
                       <div className="flex items-center gap-2">
                         <span className="text-slate-900 bg-slate-50 px-2 py-0.5 rounded">{metrics[m.id]}%</span>
@@ -609,13 +631,13 @@ export default function HTIDashboard() {
             <div className="bg-indigo-900 text-white rounded-2xl p-6">
               <h4 className="font-bold text-xs uppercase tracking-widest text-indigo-300 mb-4">HTI Calculation Methodology</h4>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                {HTI_WEIGHTS.map(w => (
+                {HTI_DOMAINS.map(w => (
                   <div key={w.id} className="bg-white/10 rounded-xl p-3">
                     <div className="flex items-center gap-2 mb-1">
                       <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: w.color }} />
                       <span className="text-[11px] font-bold text-white">{w.label}</span>
                     </div>
-                    <div className="text-2xl font-black mb-1" style={{ color: w.color }}>{(w.weight * 100).toFixed(0)}%</div>
+                    <div className="text-2xl font-black mb-1" style={{ color: w.color }}>{w.weight === 0 ? "\u2696" : `${(w.weight * 100).toFixed(0)}%`}</div>
                     <div className="text-[10px] text-slate-400 leading-tight">{w.info}</div>
                   </div>
                 ))}
@@ -650,7 +672,7 @@ export default function HTIDashboard() {
                 className="bg-white border border-slate-200 text-slate-800 text-sm font-medium rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
               >
                 <option value="composite">Composite HTI Score</option>
-                {HTI_WEIGHTS.map(w => (
+                {HTI_DOMAINS.map(w => (
                   <option key={w.id} value={w.id}>{w.label}</option>
                 ))}
               </select>
@@ -854,7 +876,7 @@ export default function HTIDashboard() {
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-slate-100">
-                        {HTI_WEIGHTS.map(w => {
+                        {HTI_DOMAINS.map(w => {
                           const scoreA = latestA[w.id as keyof QuarterlySnapshot] as number;
                           const scoreB = latestB[w.id as keyof QuarterlySnapshot] as number;
                           const natl = nationalBenchmark[nationalBenchmark.length - 1][w.id as keyof QuarterlySnapshot] as number;

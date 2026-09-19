@@ -133,7 +133,7 @@ Backend has fallback descriptors for **Railway** (`railway.toml`, nixpacks, `/he
 
 **Content upgrade** — follow the Academy one-lesson-at-a-time workflow ([Doc 05](./05-academy-system.md)) and the Analysis standards ([Doc 03](./03-content-sanity.md)); always re-ingest after.
 
-> The repo's `UPGRADE_PLAN.md` and `PLAN_SANITY_ECOSYSTEM.md` are historical planning docs — useful context, but treat this section as the current procedure.
+> `UPGRADE_PLAN.md` and `PLAN_SANITY_ECOSYSTEM.md` were historical planning docs, removed 2026-09-18 (unreachable, no live reference) — this section is the current procedure.
 
 ## 10. Backups & disaster recovery
 

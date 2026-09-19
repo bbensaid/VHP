@@ -90,7 +90,7 @@ For each route below, expect to load normally (public):
 - [ ] `/` (home)
 - [ ] `/book` and `/book/listen`
 - [ ] `/read/preface`, `/read/chapter-01`, `/read/chapter-20`
-- [ ] All six pillar pages (`/policy`, `/economics`, `/technology`, `/clinical`, `/equity`, `/operations`)
+- [ ] All five pillar pages (`/policy`, `/technology`, `/economics`, `/clinical`, `/operations`) plus the Equity Imperative hub (`/equity`)
 - [ ] `/about/framework`, `/htr-simulator`, `/transformation-friction-index`
 - [ ] `/vermont-act-68`, `/vermont-act-167`, `/california-calaim`, `/oregon-cco`
 - [ ] `/compare-states`, `/states`, `/dashboard/simulator`

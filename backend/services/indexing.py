@@ -238,6 +238,23 @@ async def build_index() -> VectorStoreIndex:
     # Vermont-specific PDFs get enriched metadata so the retriever can surface them
     # preferentially for Vermont-focused queries. The tagging is keyed on filename.
     _VT_PDF_METADATA: dict[str, dict] = {
+        # The book itself. The Introduction tells readers the AI Analyst is
+        # "grounded in this book" — until this entry existed, it was not: the
+        # corpus held policy PDFs only, so the Analyst answered framework
+        # questions from model priors, which still assert the pre-v46 six-pillar
+        # model. This is the authoritative source for the five pillars, the
+        # Equity Imperative, the nine dependencies and the execution sequence.
+        "htr_book_v42.pdf": {
+            "pillar": "HTR Framework",
+            "source_type": "htr_book",
+            "report": "Transforming American Healthcare — the HTR book (v42)",
+            "year": "2026",
+            "tags": (
+                "htr,book,framework,five pillars,equity imperative,policy,technology,"
+                "economics,clinical,operations,dependencies,execution sequence,vermont,"
+                "act167,act68,onecare,ahead,global budgets,reference-based pricing"
+            ),
+        },
         "wyman_report.pdf": {
             "pillar": "Vermont / Act 167",
             "source_type": "vermont_policy",

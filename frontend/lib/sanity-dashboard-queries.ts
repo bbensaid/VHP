@@ -52,7 +52,6 @@ const PERF_FIELDS = `
     },
     "economics": {
       "spendingPerCapita":  economicsMetrics.spendingPerCapita,
-      "workforceGaps":      economicsMetrics.workforceGaps,
       "insuranceCoverage":  economicsMetrics.insuranceCoverage
     },
     "technology": {
@@ -65,11 +64,14 @@ const PERF_FIELDS = `
       "readmissionRate":        coalesce(clinicalMetrics.readmissionRate, 0),
       "chronicDiseaseControl":  coalesce(clinicalMetrics.chronicDiseaseControl, 0)
     },
-    "equity": {
-      "racialEquityGap":   coalesce(equityMetrics.racialEquityGap, 0),
-      "ruralUrbanGap":     coalesce(equityMetrics.ruralUrbanGap, 0),
-      "sdohIntegration":   coalesce(equityMetrics.sdohIntegration, 0)
+    "operations": {
+      "workforceGaps":     coalesce(operationsMetrics.workforceGaps, economicsMetrics.workforceGaps, 0)
     }
+  },
+  "equityImperative": {
+    "racialEquityGap":   coalesce(equityMetrics.racialEquityGap, 0),
+    "ruralUrbanGap":     coalesce(equityMetrics.ruralUrbanGap, 0),
+    "sdohIntegration":   coalesce(equityMetrics.sdohIntegration, 0)
   },
   "narrative": {
     "title":   narrativeTitle,

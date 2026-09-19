@@ -11,7 +11,6 @@ export type PerformanceIndexProfile = {
     };
     economics: {
       spendingPerCapita: number;
-      workforceGaps: number;
       insuranceCoverage: number;
     };
     technology: {
@@ -24,11 +23,28 @@ export type PerformanceIndexProfile = {
       readmissionRate: number;
       chronicDiseaseControl: number;
     };
-    equity: {
-      racialEquityGap: number;
-      ruralUrbanGap: number;
-      sdohIntegration: number;
+    /**
+     * Operations — the fifth pillar. It had no metric group at all: "workforce
+     * adequacy" was filed under Economics, and the slot a fifth group would
+     * have occupied was taken by Equity. Workforce is the only operations
+     * sub-metric with sourced data today; revenue-cycle and administrative-
+     * efficiency scores are deliberately absent rather than invented.
+     */
+    operations: {
+      workforceGaps: number;
     };
+  };
+  /**
+   * The Equity Imperative — NOT a sixth metric group. It is the cross-cutting
+   * justice check ("is it just?") read against all five pillars above, which is
+   * why it sits outside `metrics` rather than as another key inside it. The
+   * underlying Supabase columns (equity_*) and Sanity field (equityMetrics)
+   * are unchanged; only the app-level model says what this actually is.
+   */
+  equityImperative: {
+    racialEquityGap: number;
+    ruralUrbanGap: number;
+    sdohIntegration: number;
   };
   narrative: {
     title: string;
@@ -47,11 +63,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Leading",
     metrics: {
       policy: { vbpAdoption: 90, telehealth: 85, scopeOfPractice: 78 },
-      economics: { spendingPerCapita: 75, workforceGaps: 80, insuranceCoverage: 95 },
+      economics: { spendingPerCapita: 75, insuranceCoverage: 95 },
       technology: { hieAdoption: 88, broadbandAccess: 70, ehrAdoption: 92 },
       clinical: { preventiveCare: 85, readmissionRate: 80, chronicDiseaseControl: 78 },
-      equity: { racialEquityGap: 75, ruralUrbanGap: 70, sdohIntegration: 82 },
+      operations: { workforceGaps: 80 },
     },
+    equityImperative: { racialEquityGap: 75, ruralUrbanGap: 70, sdohIntegration: 82 },
     narrative: {
       title: "Pioneering State-Wide Value Models",
       summary:
@@ -66,11 +83,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 65, telehealth: 72, scopeOfPractice: 70 },
-      economics: { spendingPerCapita: 72, workforceGaps: 60, insuranceCoverage: 88 },
+      economics: { spendingPerCapita: 72, insuranceCoverage: 88 },
       technology: { hieAdoption: 74, broadbandAccess: 62, ehrAdoption: 85 },
       clinical: { preventiveCare: 70, readmissionRate: 65, chronicDiseaseControl: 68 },
-      equity: { racialEquityGap: 72, ruralUrbanGap: 55, sdohIntegration: 65 },
+      operations: { workforceGaps: 60 },
     },
+    equityImperative: { racialEquityGap: 72, ruralUrbanGap: 55, sdohIntegration: 65 },
     narrative: {
       title: "AI Innovation Bridging a Dispersed Population",
       summary:
@@ -85,11 +103,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 62, telehealth: 68, scopeOfPractice: 72 },
-      economics: { spendingPerCapita: 68, workforceGaps: 58, insuranceCoverage: 88 },
+      economics: { spendingPerCapita: 68, insuranceCoverage: 88 },
       technology: { hieAdoption: 70, broadbandAccess: 65, ehrAdoption: 82 },
       clinical: { preventiveCare: 68, readmissionRate: 62, chronicDiseaseControl: 66 },
-      equity: { racialEquityGap: 70, ruralUrbanGap: 58, sdohIntegration: 60 },
+      operations: { workforceGaps: 58 },
     },
+    equityImperative: { racialEquityGap: 70, ruralUrbanGap: 58, sdohIntegration: 60 },
     narrative: {
       title: "Addressing Polypharmacy and Prevention Gaps",
       summary:
@@ -104,11 +123,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Leading",
     metrics: {
       policy: { vbpAdoption: 88, telehealth: 90, scopeOfPractice: 82 },
-      economics: { spendingPerCapita: 60, workforceGaps: 85, insuranceCoverage: 97 },
+      economics: { spendingPerCapita: 60, insuranceCoverage: 97 },
       technology: { hieAdoption: 92, broadbandAccess: 80, ehrAdoption: 95 },
       clinical: { preventiveCare: 88, readmissionRate: 82, chronicDiseaseControl: 85 },
-      equity: { racialEquityGap: 68, ruralUrbanGap: 72, sdohIntegration: 88 },
+      operations: { workforceGaps: 85 },
     },
+    equityImperative: { racialEquityGap: 68, ruralUrbanGap: 72, sdohIntegration: 88 },
     narrative: {
       title: "National Leader with High-Value Technology Focus",
       summary:
@@ -123,11 +143,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 78, telehealth: 80, scopeOfPractice: 76 },
-      economics: { spendingPerCapita: 65, workforceGaps: 72, insuranceCoverage: 93 },
+      economics: { spendingPerCapita: 65, insuranceCoverage: 93 },
       technology: { hieAdoption: 82, broadbandAccess: 78, ehrAdoption: 88 },
       clinical: { preventiveCare: 80, readmissionRate: 76, chronicDiseaseControl: 78 },
-      equity: { racialEquityGap: 62, ruralUrbanGap: 70, sdohIntegration: 76 },
+      operations: { workforceGaps: 72 },
     },
+    equityImperative: { racialEquityGap: 62, ruralUrbanGap: 70, sdohIntegration: 76 },
     narrative: {
       title: "Behavioral Health Infrastructure as a Strategic Priority",
       summary:
@@ -142,11 +163,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 76, telehealth: 78, scopeOfPractice: 74 },
-      economics: { spendingPerCapita: 70, workforceGaps: 74, insuranceCoverage: 94 },
+      economics: { spendingPerCapita: 70, insuranceCoverage: 94 },
       technology: { hieAdoption: 80, broadbandAccess: 74, ehrAdoption: 86 },
       clinical: { preventiveCare: 78, readmissionRate: 74, chronicDiseaseControl: 75 },
-      equity: { racialEquityGap: 60, ruralUrbanGap: 68, sdohIntegration: 72 },
+      operations: { workforceGaps: 74 },
     },
+    equityImperative: { racialEquityGap: 60, ruralUrbanGap: 68, sdohIntegration: 72 },
     narrative: {
       title: "Island and Tribal Access as Unique Infrastructure Challenge",
       summary:
@@ -161,11 +183,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 74, telehealth: 76, scopeOfPractice: 70 },
-      economics: { spendingPerCapita: 55, workforceGaps: 68, insuranceCoverage: 92 },
+      economics: { spendingPerCapita: 55, insuranceCoverage: 92 },
       technology: { hieAdoption: 80, broadbandAccess: 68, ehrAdoption: 88 },
       clinical: { preventiveCare: 72, readmissionRate: 68, chronicDiseaseControl: 70 },
-      equity: { racialEquityGap: 52, ruralUrbanGap: 58, sdohIntegration: 70 },
+      operations: { workforceGaps: 68 },
     },
+    equityImperative: { racialEquityGap: 52, ruralUrbanGap: 58, sdohIntegration: 70 },
     narrative: {
       title: "Addressing Maternal Deserts Through Workforce Reform",
       summary:
@@ -180,11 +203,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 68, telehealth: 72, scopeOfPractice: 66 },
-      economics: { spendingPerCapita: 70, workforceGaps: 65, insuranceCoverage: 90 },
+      economics: { spendingPerCapita: 70, insuranceCoverage: 90 },
       technology: { hieAdoption: 75, broadbandAccess: 66, ehrAdoption: 84 },
       clinical: { preventiveCare: 70, readmissionRate: 66, chronicDiseaseControl: 68 },
-      equity: { racialEquityGap: 58, ruralUrbanGap: 60, sdohIntegration: 65 },
+      operations: { workforceGaps: 65 },
     },
+    equityImperative: { racialEquityGap: 58, ruralUrbanGap: 60, sdohIntegration: 65 },
     narrative: {
       title: "Regional Hub Model Anchoring Value-Based Transition",
       summary:
@@ -199,11 +223,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 72, telehealth: 76, scopeOfPractice: 74 },
-      economics: { spendingPerCapita: 62, workforceGaps: 70, insuranceCoverage: 90 },
+      economics: { spendingPerCapita: 62, insuranceCoverage: 90 },
       technology: { hieAdoption: 78, broadbandAccess: 75, ehrAdoption: 88 },
       clinical: { preventiveCare: 74, readmissionRate: 70, chronicDiseaseControl: 72 },
-      equity: { racialEquityGap: 55, ruralUrbanGap: 65, sdohIntegration: 70 },
+      operations: { workforceGaps: 70 },
     },
+    equityImperative: { racialEquityGap: 55, ruralUrbanGap: 65, sdohIntegration: 70 },
     narrative: {
       title: "Behavioral Health System Modernization Underway",
       summary:
@@ -218,11 +243,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 60, telehealth: 65, scopeOfPractice: 62 },
-      economics: { spendingPerCapita: 68, workforceGaps: 58, insuranceCoverage: 88 },
+      economics: { spendingPerCapita: 68, insuranceCoverage: 88 },
       technology: { hieAdoption: 68, broadbandAccess: 62, ehrAdoption: 80 },
       clinical: { preventiveCare: 62, readmissionRate: 58, chronicDiseaseControl: 60 },
-      equity: { racialEquityGap: 50, ruralUrbanGap: 58, sdohIntegration: 58 },
+      operations: { workforceGaps: 58 },
     },
+    equityImperative: { racialEquityGap: 50, ruralUrbanGap: 58, sdohIntegration: 58 },
     narrative: {
       title: "Compact State, Complex Access Gaps",
       summary:
@@ -237,11 +263,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Improving",
     metrics: {
       policy: { vbpAdoption: 82, telehealth: 78, scopeOfPractice: 72 },
-      economics: { spendingPerCapita: 70, workforceGaps: 68, insuranceCoverage: 91 },
+      economics: { spendingPerCapita: 70, insuranceCoverage: 91 },
       technology: { hieAdoption: 80, broadbandAccess: 70, ehrAdoption: 88 },
       clinical: { preventiveCare: 76, readmissionRate: 72, chronicDiseaseControl: 75 },
-      equity: { racialEquityGap: 55, ruralUrbanGap: 62, sdohIntegration: 74 },
+      operations: { workforceGaps: 68 },
     },
+    equityImperative: { racialEquityGap: 55, ruralUrbanGap: 62, sdohIntegration: 74 },
     narrative: {
       title: "Global Budget Model Expanding to Rural Hospitals",
       summary:
@@ -258,11 +285,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 55, telehealth: 70, scopeOfPractice: 60 },
-      economics: { spendingPerCapita: 68, workforceGaps: 50, insuranceCoverage: 62 },
+      economics: { spendingPerCapita: 68, insuranceCoverage: 62 },
       technology: { hieAdoption: 75, broadbandAccess: 65, ehrAdoption: 80 },
       clinical: { preventiveCare: 62, readmissionRate: 58, chronicDiseaseControl: 55 },
-      equity: { racialEquityGap: 40, ruralUrbanGap: 45, sdohIntegration: 55 },
+      operations: { workforceGaps: 50 },
     },
+    equityImperative: { racialEquityGap: 40, ruralUrbanGap: 45, sdohIntegration: 55 },
     narrative: {
       title: "Addressing Scale and Disparity",
       summary:
@@ -277,11 +305,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 52, telehealth: 62, scopeOfPractice: 58 },
-      economics: { spendingPerCapita: 72, workforceGaps: 48, insuranceCoverage: 75 },
+      economics: { spendingPerCapita: 72, insuranceCoverage: 75 },
       technology: { hieAdoption: 65, broadbandAccess: 58, ehrAdoption: 76 },
       clinical: { preventiveCare: 55, readmissionRate: 52, chronicDiseaseControl: 50 },
-      equity: { racialEquityGap: 42, ruralUrbanGap: 48, sdohIntegration: 48 },
+      operations: { workforceGaps: 48 },
     },
+    equityImperative: { racialEquityGap: 42, ruralUrbanGap: 48, sdohIntegration: 48 },
     narrative: {
       title: "Paramedicine and Regional Collaboratives Targeting Fragmentation",
       summary:
@@ -296,11 +325,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "At Risk",
     metrics: {
       policy: { vbpAdoption: 42, telehealth: 50, scopeOfPractice: 48 },
-      economics: { spendingPerCapita: 75, workforceGaps: 38, insuranceCoverage: 62 },
+      economics: { spendingPerCapita: 75, insuranceCoverage: 62 },
       technology: { hieAdoption: 55, broadbandAccess: 44, ehrAdoption: 68 },
       clinical: { preventiveCare: 42, readmissionRate: 38, chronicDiseaseControl: 36 },
-      equity: { racialEquityGap: 28, ruralUrbanGap: 35, sdohIntegration: 38 },
+      operations: { workforceGaps: 38 },
     },
+    equityImperative: { racialEquityGap: 28, ruralUrbanGap: 35, sdohIntegration: 38 },
     narrative: {
       title: "Obstetric Crisis Driving Urgent Structural Reform",
       summary:
@@ -315,11 +345,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 56, telehealth: 62, scopeOfPractice: 58 },
-      economics: { spendingPerCapita: 70, workforceGaps: 50, insuranceCoverage: 72 },
+      economics: { spendingPerCapita: 70, insuranceCoverage: 72 },
       technology: { hieAdoption: 65, broadbandAccess: 52, ehrAdoption: 75 },
       clinical: { preventiveCare: 56, readmissionRate: 52, chronicDiseaseControl: 54 },
-      equity: { racialEquityGap: 38, ruralUrbanGap: 42, sdohIntegration: 52 },
+      operations: { workforceGaps: 50 },
     },
+    equityImperative: { racialEquityGap: 38, ruralUrbanGap: 42, sdohIntegration: 52 },
     narrative: {
       title: "ROOTS Hubs Building Regional Integration Capacity",
       summary:
@@ -334,11 +365,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 66, telehealth: 72, scopeOfPractice: 68 },
-      economics: { spendingPerCapita: 68, workforceGaps: 62, insuranceCoverage: 86 },
+      economics: { spendingPerCapita: 68, insuranceCoverage: 86 },
       technology: { hieAdoption: 74, broadbandAccess: 64, ehrAdoption: 82 },
       clinical: { preventiveCare: 68, readmissionRate: 65, chronicDiseaseControl: 66 },
-      equity: { racialEquityGap: 48, ruralUrbanGap: 55, sdohIntegration: 62 },
+      operations: { workforceGaps: 62 },
     },
+    equityImperative: { racialEquityGap: 48, ruralUrbanGap: 55, sdohIntegration: 62 },
     narrative: {
       title: "Tech Investment and Food-as-Medicine Defining Reform",
       summary:
@@ -353,11 +385,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "At Risk",
     metrics: {
       policy: { vbpAdoption: 30, telehealth: 42, scopeOfPractice: 38 },
-      economics: { spendingPerCapita: 82, workforceGaps: 28, insuranceCoverage: 82 },
+      economics: { spendingPerCapita: 82, insuranceCoverage: 82 },
       technology: { hieAdoption: 48, broadbandAccess: 35, ehrAdoption: 62 },
       clinical: { preventiveCare: 30, readmissionRate: 28, chronicDiseaseControl: 25 },
-      equity: { racialEquityGap: 42, ruralUrbanGap: 22, sdohIntegration: 28 },
+      operations: { workforceGaps: 28 },
     },
+    equityImperative: { racialEquityGap: 42, ruralUrbanGap: 22, sdohIntegration: 28 },
     narrative: {
       title: "SUD Crisis and Hospital Distress Demand Systemic Response",
       summary:
@@ -372,11 +405,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "At Risk",
     metrics: {
       policy: { vbpAdoption: 30, telehealth: 40, scopeOfPractice: 35 },
-      economics: { spendingPerCapita: 78, workforceGaps: 28, insuranceCoverage: 72 },
+      economics: { spendingPerCapita: 78, insuranceCoverage: 72 },
       technology: { hieAdoption: 48, broadbandAccess: 38, ehrAdoption: 62 },
       clinical: { preventiveCare: 30, readmissionRate: 28, chronicDiseaseControl: 26 },
-      equity: { racialEquityGap: 20, ruralUrbanGap: 28, sdohIntegration: 28 },
+      operations: { workforceGaps: 28 },
     },
+    equityImperative: { racialEquityGap: 20, ruralUrbanGap: 28, sdohIntegration: 28 },
     narrative: {
       title: "Maternal Mortality and Cancer Burden Requiring Targeted Investment",
       summary:
@@ -391,11 +425,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "At Risk",
     metrics: {
       policy: { vbpAdoption: 40, telehealth: 55, scopeOfPractice: 50 },
-      economics: { spendingPerCapita: 80, workforceGaps: 35, insuranceCoverage: 58 },
+      economics: { spendingPerCapita: 80, insuranceCoverage: 58 },
       technology: { hieAdoption: 60, broadbandAccess: 45, ehrAdoption: 70 },
       clinical: { preventiveCare: 44, readmissionRate: 40, chronicDiseaseControl: 38 },
-      equity: { racialEquityGap: 22, ruralUrbanGap: 32, sdohIntegration: 40 },
+      operations: { workforceGaps: 35 },
     },
+    equityImperative: { racialEquityGap: 22, ruralUrbanGap: 32, sdohIntegration: 40 },
     narrative: {
       title: "Significant Headwinds in Workforce and Access",
       summary:
@@ -410,11 +445,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "At Risk",
     metrics: {
       policy: { vbpAdoption: 32, telehealth: 42, scopeOfPractice: 36 },
-      economics: { spendingPerCapita: 76, workforceGaps: 30, insuranceCoverage: 74 },
+      economics: { spendingPerCapita: 76, insuranceCoverage: 74 },
       technology: { hieAdoption: 50, broadbandAccess: 38, ehrAdoption: 62 },
       clinical: { preventiveCare: 32, readmissionRate: 30, chronicDiseaseControl: 28 },
-      equity: { racialEquityGap: 20, ruralUrbanGap: 28, sdohIntegration: 30 },
+      operations: { workforceGaps: 30 },
     },
+    equityImperative: { racialEquityGap: 20, ruralUrbanGap: 28, sdohIntegration: 30 },
     narrative: {
       title: "Digital Equity as the Foundation for Health Transformation",
       summary:
@@ -429,11 +465,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "At Risk",
     metrics: {
       policy: { vbpAdoption: 42, telehealth: 50, scopeOfPractice: 44 },
-      economics: { spendingPerCapita: 74, workforceGaps: 36, insuranceCoverage: 72 },
+      economics: { spendingPerCapita: 74, insuranceCoverage: 72 },
       technology: { hieAdoption: 55, broadbandAccess: 42, ehrAdoption: 65 },
       clinical: { preventiveCare: 42, readmissionRate: 38, chronicDiseaseControl: 36 },
-      equity: { racialEquityGap: 30, ruralUrbanGap: 35, sdohIntegration: 38 },
+      operations: { workforceGaps: 36 },
     },
+    equityImperative: { racialEquityGap: 30, ruralUrbanGap: 35, sdohIntegration: 38 },
     narrative: {
       title: "Memory Care and Transportation Barriers Defining Rural Gaps",
       summary:
@@ -448,11 +485,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "At Risk",
     metrics: {
       policy: { vbpAdoption: 36, telehealth: 45, scopeOfPractice: 40 },
-      economics: { spendingPerCapita: 76, workforceGaps: 32, insuranceCoverage: 84 },
+      economics: { spendingPerCapita: 76, insuranceCoverage: 84 },
       technology: { hieAdoption: 52, broadbandAccess: 38, ehrAdoption: 65 },
       clinical: { preventiveCare: 36, readmissionRate: 32, chronicDiseaseControl: 28 },
-      equity: { racialEquityGap: 35, ruralUrbanGap: 25, sdohIntegration: 32 },
+      operations: { workforceGaps: 32 },
     },
+    equityImperative: { racialEquityGap: 35, ruralUrbanGap: 25, sdohIntegration: 32 },
     narrative: {
       title: "Maternal Health and Diabetes Disparities Driving Reform",
       summary:
@@ -467,11 +505,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "At Risk",
     metrics: {
       policy: { vbpAdoption: 44, telehealth: 52, scopeOfPractice: 46 },
-      economics: { spendingPerCapita: 72, workforceGaps: 40, insuranceCoverage: 73 },
+      economics: { spendingPerCapita: 72, insuranceCoverage: 73 },
       technology: { hieAdoption: 55, broadbandAccess: 42, ehrAdoption: 65 },
       clinical: { preventiveCare: 44, readmissionRate: 40, chronicDiseaseControl: 38 },
-      equity: { racialEquityGap: 28, ruralUrbanGap: 35, sdohIntegration: 40 },
+      operations: { workforceGaps: 40 },
     },
+    equityImperative: { racialEquityGap: 28, ruralUrbanGap: 35, sdohIntegration: 40 },
     narrative: {
       title: "Digital Literacy as the Entry Point for Rural Transformation",
       summary:
@@ -486,11 +525,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "At Risk",
     metrics: {
       policy: { vbpAdoption: 32, telehealth: 42, scopeOfPractice: 36 },
-      economics: { spendingPerCapita: 74, workforceGaps: 30, insuranceCoverage: 78 },
+      economics: { spendingPerCapita: 74, insuranceCoverage: 78 },
       technology: { hieAdoption: 50, broadbandAccess: 36, ehrAdoption: 60 },
       clinical: { preventiveCare: 32, readmissionRate: 28, chronicDiseaseControl: 26 },
-      equity: { racialEquityGap: 25, ruralUrbanGap: 28, sdohIntegration: 30 },
+      operations: { workforceGaps: 30 },
     },
+    equityImperative: { racialEquityGap: 25, ruralUrbanGap: 28, sdohIntegration: 30 },
     narrative: {
       title: "Hospital Stabilization and Upstream Prevention as Twin Priorities",
       summary:
@@ -505,11 +545,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "At Risk",
     metrics: {
       policy: { vbpAdoption: 34, telehealth: 44, scopeOfPractice: 38 },
-      economics: { spendingPerCapita: 72, workforceGaps: 32, insuranceCoverage: 60 },
+      economics: { spendingPerCapita: 72, insuranceCoverage: 60 },
       technology: { hieAdoption: 50, broadbandAccess: 38, ehrAdoption: 62 },
       clinical: { preventiveCare: 34, readmissionRate: 30, chronicDiseaseControl: 28 },
-      equity: { racialEquityGap: 28, ruralUrbanGap: 30, sdohIntegration: 32 },
+      operations: { workforceGaps: 32 },
     },
+    equityImperative: { racialEquityGap: 28, ruralUrbanGap: 30, sdohIntegration: 32 },
     narrative: {
       title: "Microgrants and Consumer Tech Targeting Prevention at Scale",
       summary:
@@ -526,11 +567,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 58, telehealth: 62, scopeOfPractice: 60 },
-      economics: { spendingPerCapita: 70, workforceGaps: 52, insuranceCoverage: 84 },
+      economics: { spendingPerCapita: 70, insuranceCoverage: 84 },
       technology: { hieAdoption: 68, broadbandAccess: 58, ehrAdoption: 78 },
       clinical: { preventiveCare: 58, readmissionRate: 55, chronicDiseaseControl: 55 },
-      equity: { racialEquityGap: 42, ruralUrbanGap: 50, sdohIntegration: 55 },
+      operations: { workforceGaps: 52 },
     },
+    equityImperative: { racialEquityGap: 42, ruralUrbanGap: 50, sdohIntegration: 55 },
     narrative: {
       title: "School-Based Health Anchoring Pediatric Access Strategy",
       summary:
@@ -545,11 +587,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 65, telehealth: 70, scopeOfPractice: 65 },
-      economics: { spendingPerCapita: 68, workforceGaps: 58, insuranceCoverage: 90 },
+      economics: { spendingPerCapita: 68, insuranceCoverage: 90 },
       technology: { hieAdoption: 72, broadbandAccess: 62, ehrAdoption: 82 },
       clinical: { preventiveCare: 65, readmissionRate: 62, chronicDiseaseControl: 64 },
-      equity: { racialEquityGap: 45, ruralUrbanGap: 55, sdohIntegration: 62 },
+      operations: { workforceGaps: 58 },
     },
+    equityImperative: { racialEquityGap: 45, ruralUrbanGap: 55, sdohIntegration: 62 },
     narrative: {
       title: "Upper Peninsula Aging-in-Place as the Defining Rural Challenge",
       summary:
@@ -564,11 +607,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 50, telehealth: 58, scopeOfPractice: 54 },
-      economics: { spendingPerCapita: 72, workforceGaps: 46, insuranceCoverage: 82 },
+      economics: { spendingPerCapita: 72, insuranceCoverage: 82 },
       technology: { hieAdoption: 62, broadbandAccess: 52, ehrAdoption: 74 },
       clinical: { preventiveCare: 52, readmissionRate: 48, chronicDiseaseControl: 50 },
-      equity: { racialEquityGap: 42, ruralUrbanGap: 45, sdohIntegration: 48 },
+      operations: { workforceGaps: 46 },
     },
+    equityImperative: { racialEquityGap: 42, ruralUrbanGap: 45, sdohIntegration: 48 },
     narrative: {
       title: "Transfer Coordination and Medication Adherence as System Levers",
       summary:
@@ -583,11 +627,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Improving",
     metrics: {
       policy: { vbpAdoption: 72, telehealth: 78, scopeOfPractice: 75 },
-      economics: { spendingPerCapita: 70, workforceGaps: 68, insuranceCoverage: 85 },
+      economics: { spendingPerCapita: 70, insuranceCoverage: 85 },
       technology: { hieAdoption: 80, broadbandAccess: 72, ehrAdoption: 88 },
       clinical: { preventiveCare: 72, readmissionRate: 68, chronicDiseaseControl: 70 },
-      equity: { racialEquityGap: 48, ruralUrbanGap: 58, sdohIntegration: 68 },
+      operations: { workforceGaps: 68 },
     },
+    equityImperative: { racialEquityGap: 48, ruralUrbanGap: 58, sdohIntegration: 68 },
     narrative: {
       title: "Balanced Progress with Focus on VBC",
       summary:
@@ -602,11 +647,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 68, telehealth: 72, scopeOfPractice: 70 },
-      economics: { spendingPerCapita: 68, workforceGaps: 65, insuranceCoverage: 88 },
+      economics: { spendingPerCapita: 68, insuranceCoverage: 88 },
       technology: { hieAdoption: 75, broadbandAccess: 68, ehrAdoption: 84 },
       clinical: { preventiveCare: 70, readmissionRate: 66, chronicDiseaseControl: 68 },
-      equity: { racialEquityGap: 50, ruralUrbanGap: 60, sdohIntegration: 65 },
+      operations: { workforceGaps: 65 },
     },
+    equityImperative: { racialEquityGap: 50, ruralUrbanGap: 60, sdohIntegration: 65 },
     narrative: {
       title: "Agricultural Community Health as a Unique Focus",
       summary:
@@ -621,11 +667,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Improving",
     metrics: {
       policy: { vbpAdoption: 82, telehealth: 84, scopeOfPractice: 78 },
-      economics: { spendingPerCapita: 65, workforceGaps: 75, insuranceCoverage: 92 },
+      economics: { spendingPerCapita: 65, insuranceCoverage: 92 },
       technology: { hieAdoption: 85, broadbandAccess: 74, ehrAdoption: 90 },
       clinical: { preventiveCare: 82, readmissionRate: 78, chronicDiseaseControl: 80 },
-      equity: { racialEquityGap: 58, ruralUrbanGap: 68, sdohIntegration: 78 },
+      operations: { workforceGaps: 75 },
     },
+    equityImperative: { racialEquityGap: 58, ruralUrbanGap: 68, sdohIntegration: 78 },
     narrative: {
       title: "Mental Health Urgent Care Reducing Crisis-Driven ED Load",
       summary:
@@ -640,11 +687,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 68, telehealth: 72, scopeOfPractice: 70 },
-      economics: { spendingPerCapita: 66, workforceGaps: 66, insuranceCoverage: 92 },
+      economics: { spendingPerCapita: 66, insuranceCoverage: 92 },
       technology: { hieAdoption: 76, broadbandAccess: 65, ehrAdoption: 84 },
       clinical: { preventiveCare: 70, readmissionRate: 68, chronicDiseaseControl: 68 },
-      equity: { racialEquityGap: 55, ruralUrbanGap: 62, sdohIntegration: 65 },
+      operations: { workforceGaps: 66 },
     },
+    equityImperative: { racialEquityGap: 55, ruralUrbanGap: 62, sdohIntegration: 65 },
     narrative: {
       title: "Skin Cancer Detection and Digital Access Driving Rural Innovation",
       summary:
@@ -659,11 +707,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 48, telehealth: 55, scopeOfPractice: 50 },
-      economics: { spendingPerCapita: 72, workforceGaps: 44, insuranceCoverage: 75 },
+      economics: { spendingPerCapita: 72, insuranceCoverage: 75 },
       technology: { hieAdoption: 60, broadbandAccess: 48, ehrAdoption: 70 },
       clinical: { preventiveCare: 48, readmissionRate: 44, chronicDiseaseControl: 45 },
-      equity: { racialEquityGap: 38, ruralUrbanGap: 40, sdohIntegration: 45 },
+      operations: { workforceGaps: 44 },
     },
+    equityImperative: { racialEquityGap: 38, ruralUrbanGap: 40, sdohIntegration: 45 },
     narrative: {
       title: "ToRCH Networks Building Hub-and-Spoke Integration",
       summary:
@@ -678,11 +727,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 56, telehealth: 62, scopeOfPractice: 60 },
-      economics: { spendingPerCapita: 68, workforceGaps: 52, insuranceCoverage: 80 },
+      economics: { spendingPerCapita: 68, insuranceCoverage: 80 },
       technology: { hieAdoption: 65, broadbandAccess: 58, ehrAdoption: 76 },
       clinical: { preventiveCare: 58, readmissionRate: 55, chronicDiseaseControl: 56 },
-      equity: { racialEquityGap: 45, ruralUrbanGap: 50, sdohIntegration: 55 },
+      operations: { workforceGaps: 52 },
     },
+    equityImperative: { racialEquityGap: 45, ruralUrbanGap: 50, sdohIntegration: 55 },
     narrative: {
       title: "PACE Expansion and Admin Efficiency Anchoring Rural Sustainability",
       summary:
@@ -697,11 +747,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 65, telehealth: 68, scopeOfPractice: 66 },
-      economics: { spendingPerCapita: 66, workforceGaps: 62, insuranceCoverage: 84 },
+      economics: { spendingPerCapita: 66, insuranceCoverage: 84 },
       technology: { hieAdoption: 72, broadbandAccess: 62, ehrAdoption: 80 },
       clinical: { preventiveCare: 68, readmissionRate: 64, chronicDiseaseControl: 66 },
-      equity: { racialEquityGap: 52, ruralUrbanGap: 58, sdohIntegration: 62 },
+      operations: { workforceGaps: 62 },
     },
+    equityImperative: { racialEquityGap: 52, ruralUrbanGap: 58, sdohIntegration: 62 },
     narrative: {
       title: "Farm-to-School and VR Training Reflecting Rural Innovation",
       summary:
@@ -716,11 +767,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 62, telehealth: 70, scopeOfPractice: 64 },
-      economics: { spendingPerCapita: 64, workforceGaps: 62, insuranceCoverage: 84 },
+      economics: { spendingPerCapita: 64, insuranceCoverage: 84 },
       technology: { hieAdoption: 70, broadbandAccess: 65, ehrAdoption: 80 },
       clinical: { preventiveCare: 66, readmissionRate: 63, chronicDiseaseControl: 65 },
-      equity: { racialEquityGap: 50, ruralUrbanGap: 55, sdohIntegration: 60 },
+      operations: { workforceGaps: 62 },
     },
+    equityImperative: { racialEquityGap: 50, ruralUrbanGap: 55, sdohIntegration: 60 },
     narrative: {
       title: "Frontier Logistics Innovation Through Drones and Kiosks",
       summary:
@@ -735,11 +787,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 60, telehealth: 66, scopeOfPractice: 62 },
-      economics: { spendingPerCapita: 62, workforceGaps: 60, insuranceCoverage: 78 },
+      economics: { spendingPerCapita: 62, insuranceCoverage: 78 },
       technology: { hieAdoption: 68, broadbandAccess: 60, ehrAdoption: 78 },
       clinical: { preventiveCare: 62, readmissionRate: 60, chronicDiseaseControl: 62 },
-      equity: { racialEquityGap: 40, ruralUrbanGap: 52, sdohIntegration: 58 },
+      operations: { workforceGaps: 60 },
     },
+    equityImperative: { racialEquityGap: 40, ruralUrbanGap: 52, sdohIntegration: 58 },
     narrative: {
       title: "Capitated Medicaid and Maternal Hubs Reorienting Rural Care",
       summary:
@@ -756,11 +809,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Improving",
     metrics: {
       policy: { vbpAdoption: 80, telehealth: 90, scopeOfPractice: 85 },
-      economics: { spendingPerCapita: 65, workforceGaps: 70, insuranceCoverage: 88 },
+      economics: { spendingPerCapita: 65, insuranceCoverage: 88 },
       technology: { hieAdoption: 85, broadbandAccess: 75, ehrAdoption: 90 },
       clinical: { preventiveCare: 78, readmissionRate: 75, chronicDiseaseControl: 76 },
-      equity: { racialEquityGap: 55, ruralUrbanGap: 62, sdohIntegration: 80 },
+      operations: { workforceGaps: 70 },
     },
+    equityImperative: { racialEquityGap: 55, ruralUrbanGap: 62, sdohIntegration: 80 },
     narrative: {
       title: "Leader in Policy and Tech, Faces Cost Pressures",
       summary:
@@ -775,11 +829,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Improving",
     metrics: {
       policy: { vbpAdoption: 76, telehealth: 80, scopeOfPractice: 76 },
-      economics: { spendingPerCapita: 64, workforceGaps: 70, insuranceCoverage: 88 },
+      economics: { spendingPerCapita: 64, insuranceCoverage: 88 },
       technology: { hieAdoption: 80, broadbandAccess: 72, ehrAdoption: 88 },
       clinical: { preventiveCare: 76, readmissionRate: 72, chronicDiseaseControl: 74 },
-      equity: { racialEquityGap: 58, ruralUrbanGap: 65, sdohIntegration: 76 },
+      operations: { workforceGaps: 70 },
     },
+    equityImperative: { racialEquityGap: 58, ruralUrbanGap: 65, sdohIntegration: 76 },
     narrative: {
       title: "Tribal Health Investment and Value-Based Hospital Solvency",
       summary:
@@ -794,11 +849,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 72, telehealth: 76, scopeOfPractice: 74 },
-      economics: { spendingPerCapita: 66, workforceGaps: 66, insuranceCoverage: 88 },
+      economics: { spendingPerCapita: 66, insuranceCoverage: 88 },
       technology: { hieAdoption: 76, broadbandAccess: 65, ehrAdoption: 82 },
       clinical: { preventiveCare: 70, readmissionRate: 68, chronicDiseaseControl: 70 },
-      equity: { racialEquityGap: 55, ruralUrbanGap: 62, sdohIntegration: 72 },
+      operations: { workforceGaps: 66 },
     },
+    equityImperative: { racialEquityGap: 55, ruralUrbanGap: 62, sdohIntegration: 72 },
     narrative: {
       title: "Provider Exchange and Pharmacy Access as Dual Levers",
       summary:
@@ -813,11 +869,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 54, telehealth: 60, scopeOfPractice: 60 },
-      economics: { spendingPerCapita: 66, workforceGaps: 54, insuranceCoverage: 78 },
+      economics: { spendingPerCapita: 66, insuranceCoverage: 78 },
       technology: { hieAdoption: 62, broadbandAccess: 55, ehrAdoption: 74 },
       clinical: { preventiveCare: 57, readmissionRate: 54, chronicDiseaseControl: 55 },
-      equity: { racialEquityGap: 48, ruralUrbanGap: 50, sdohIntegration: 52 },
+      operations: { workforceGaps: 54 },
     },
+    equityImperative: { racialEquityGap: 48, ruralUrbanGap: 50, sdohIntegration: 52 },
     narrative: {
       title: "Tele-Pharmacy and Facility Modernization Targeting Rural Gaps",
       summary:
@@ -832,11 +889,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 50, telehealth: 58, scopeOfPractice: 56 },
-      economics: { spendingPerCapita: 68, workforceGaps: 48, insuranceCoverage: 80 },
+      economics: { spendingPerCapita: 68, insuranceCoverage: 80 },
       technology: { hieAdoption: 60, broadbandAccess: 52, ehrAdoption: 72 },
       clinical: { preventiveCare: 52, readmissionRate: 50, chronicDiseaseControl: 50 },
-      equity: { racialEquityGap: 45, ruralUrbanGap: 42, sdohIntegration: 48 },
+      operations: { workforceGaps: 48 },
     },
+    equityImperative: { racialEquityGap: 45, ruralUrbanGap: 42, sdohIntegration: 48 },
     narrative: {
       title: "Center of Excellence Driving Structural Restructuring",
       summary:
@@ -851,11 +909,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 48, telehealth: 56, scopeOfPractice: 54 },
-      economics: { spendingPerCapita: 66, workforceGaps: 46, insuranceCoverage: 76 },
+      economics: { spendingPerCapita: 66, insuranceCoverage: 76 },
       technology: { hieAdoption: 58, broadbandAccess: 50, ehrAdoption: 70 },
       clinical: { preventiveCare: 50, readmissionRate: 48, chronicDiseaseControl: 48 },
-      equity: { racialEquityGap: 45, ruralUrbanGap: 42, sdohIntegration: 46 },
+      operations: { workforceGaps: 46 },
     },
+    equityImperative: { racialEquityGap: 45, ruralUrbanGap: 42, sdohIntegration: 46 },
     narrative: {
       title: "CAH Refocusing and Telepsychiatry Addressing Frontier Realities",
       summary:
@@ -870,11 +929,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 76, telehealth: 80, scopeOfPractice: 76 },
-      economics: { spendingPerCapita: 62, workforceGaps: 72, insuranceCoverage: 88 },
+      economics: { spendingPerCapita: 62, insuranceCoverage: 88 },
       technology: { hieAdoption: 80, broadbandAccess: 72, ehrAdoption: 86 },
       clinical: { preventiveCare: 76, readmissionRate: 72, chronicDiseaseControl: 74 },
-      equity: { racialEquityGap: 55, ruralUrbanGap: 62, sdohIntegration: 72 },
+      operations: { workforceGaps: 72 },
     },
+    equityImperative: { racialEquityGap: 55, ruralUrbanGap: 62, sdohIntegration: 72 },
     narrative: {
       title: "Regional Partnerships and Mobile Health Diversifying Revenue",
       summary:
@@ -889,11 +949,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Improving",
     metrics: {
       policy: { vbpAdoption: 76, telehealth: 80, scopeOfPractice: 78 },
-      economics: { spendingPerCapita: 60, workforceGaps: 74, insuranceCoverage: 80 },
+      economics: { spendingPerCapita: 60, insuranceCoverage: 80 },
       technology: { hieAdoption: 82, broadbandAccess: 74, ehrAdoption: 88 },
       clinical: { preventiveCare: 78, readmissionRate: 74, chronicDiseaseControl: 76 },
-      equity: { racialEquityGap: 58, ruralUrbanGap: 65, sdohIntegration: 72 },
+      operations: { workforceGaps: 74 },
     },
+    equityImperative: { racialEquityGap: 58, ruralUrbanGap: 65, sdohIntegration: 72 },
     narrative: {
       title: "Built Environment and AI Admin Tools Reducing System Friction",
       summary:
@@ -908,11 +969,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 54, telehealth: 62, scopeOfPractice: 58 },
-      economics: { spendingPerCapita: 68, workforceGaps: 48, insuranceCoverage: 72 },
+      economics: { spendingPerCapita: 68, insuranceCoverage: 72 },
       technology: { hieAdoption: 62, broadbandAccess: 55, ehrAdoption: 72 },
       clinical: { preventiveCare: 54, readmissionRate: 50, chronicDiseaseControl: 52 },
-      equity: { racialEquityGap: 42, ruralUrbanGap: 48, sdohIntegration: 50 },
+      operations: { workforceGaps: 48 },
     },
+    equityImperative: { racialEquityGap: 42, ruralUrbanGap: 48, sdohIntegration: 50 },
     narrative: {
       title: "Accelerator Investment and Provider Incentives Rebuilding Workforce",
       summary:
@@ -927,11 +989,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 56, telehealth: 64, scopeOfPractice: 62 },
-      economics: { spendingPerCapita: 68, workforceGaps: 50, insuranceCoverage: 74 },
+      economics: { spendingPerCapita: 68, insuranceCoverage: 74 },
       technology: { hieAdoption: 65, broadbandAccess: 56, ehrAdoption: 76 },
       clinical: { preventiveCare: 56, readmissionRate: 52, chronicDiseaseControl: 55 },
-      equity: { racialEquityGap: 38, ruralUrbanGap: 45, sdohIntegration: 52 },
+      operations: { workforceGaps: 50 },
     },
+    equityImperative: { racialEquityGap: 38, ruralUrbanGap: 45, sdohIntegration: 52 },
     narrative: {
       title: "Closing the 20-Mile Gap Through Residency and Mobile Clinics",
       summary:
@@ -946,11 +1009,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "At Risk",
     metrics: {
       policy: { vbpAdoption: 46, telehealth: 55, scopeOfPractice: 52 },
-      economics: { spendingPerCapita: 74, workforceGaps: 40, insuranceCoverage: 76 },
+      economics: { spendingPerCapita: 74, insuranceCoverage: 76 },
       technology: { hieAdoption: 58, broadbandAccess: 44, ehrAdoption: 68 },
       clinical: { preventiveCare: 46, readmissionRate: 42, chronicDiseaseControl: 44 },
-      equity: { racialEquityGap: 32, ruralUrbanGap: 38, sdohIntegration: 44 },
+      operations: { workforceGaps: 40 },
     },
+    equityImperative: { racialEquityGap: 32, ruralUrbanGap: 38, sdohIntegration: 44 },
     narrative: {
       title: "Specialty Deserts and Workforce Instability Drive Urgent Reform",
       summary:
@@ -965,11 +1029,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Stable",
     metrics: {
       policy: { vbpAdoption: 44, telehealth: 60, scopeOfPractice: 55 },
-      economics: { spendingPerCapita: 55, workforceGaps: 42, insuranceCoverage: 72 },
+      economics: { spendingPerCapita: 55, insuranceCoverage: 72 },
       technology: { hieAdoption: 60, broadbandAccess: 42, ehrAdoption: 68 },
       clinical: { preventiveCare: 44, readmissionRate: 42, chronicDiseaseControl: 40 },
-      equity: { racialEquityGap: 35, ruralUrbanGap: 30, sdohIntegration: 42 },
+      operations: { workforceGaps: 42 },
     },
+    equityImperative: { racialEquityGap: 35, ruralUrbanGap: 30, sdohIntegration: 42 },
     narrative: {
       title: "Frontier Logistics Innovation as an Existential Necessity",
       summary:
@@ -984,11 +1049,12 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     status: "Leading",
     metrics: {
       policy: { vbpAdoption: 82, telehealth: 86, scopeOfPractice: 80 },
-      economics: { spendingPerCapita: 60, workforceGaps: 80, insuranceCoverage: 94 },
+      economics: { spendingPerCapita: 60, insuranceCoverage: 94 },
       technology: { hieAdoption: 88, broadbandAccess: 78, ehrAdoption: 90 },
       clinical: { preventiveCare: 85, readmissionRate: 80, chronicDiseaseControl: 82 },
-      equity: { racialEquityGap: 70, ruralUrbanGap: 65, sdohIntegration: 82 },
+      operations: { workforceGaps: 80 },
     },
+    equityImperative: { racialEquityGap: 70, ruralUrbanGap: 65, sdohIntegration: 82 },
     narrative: {
       title: "Digital Backbone and Respite Network Defining Island Health",
       summary:

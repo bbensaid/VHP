@@ -8,6 +8,7 @@ import {
   BoltIcon,
 } from "@heroicons/react/24/outline";
 import WireCommentDrawer from "@/components/WireCommentDrawer";
+import { PILLAR_LABELS } from "@/lib/taxonomy";
 
 interface WireItem {
   title: string;
@@ -20,6 +21,11 @@ interface WireItem {
 interface EnrichedWireItem extends WireItem {
   pillar: string;
   impact: number;
+  // The Equity Imperative is a cross-cutting test, not a pillar — so it is a
+  // flag set ALONGSIDE the pillar, never a value that wins the pillar slot.
+  // Previously "Equity" competed in the same scoring bucket, which meant an
+  // item about, say, rural access got tagged Equity INSTEAD of Clinical.
+  equityFlag: boolean;
 }
 
 // ─── Pillar tagging ────────────────────────────────────────────────────────────
@@ -48,12 +54,6 @@ const PILLAR_KEYWORDS: Record<string, string[]> = {
     "trial", "fda approval", "safety", "quality", "outcome", "readmission", "mortality",
     "chronic", "primary care", "specialist", "emergency", "icu", "genomic", "precision",
   ],
-  Equity: [
-    "equity", "disparity", "social determinant", "sdoh", "rural", "underserved", "minority",
-    "racial", "ethnic", "low-income", "poverty", "housing", "food", "transportation",
-    "access", "barrier", "community health", "vulnerable", "maternal", "infant mortality",
-    "language", "disability", "lgbtq", "indigenous", "tribal",
-  ],
   Operations: [
     "workforce", "staffing", "burnout", "shortage", "supply chain", "revenue cycle",
     "billing", "coding", "prior authorization", "denial", "network", "consolidation",
@@ -61,6 +61,16 @@ const PILLAR_KEYWORDS: Record<string, string[]> = {
     "hospital operations", "efficiency", "throughput", "capacity", "discharge",
   ],
 };
+
+// Scored separately from PILLAR_KEYWORDS, and additively: an item can be
+// Clinical AND carry the Equity Imperative flag. It is the justice test
+// ("is it just?") applied to whichever pillar the item belongs to.
+const EQUITY_KEYWORDS = [
+  "equity", "disparity", "social determinant", "sdoh", "rural", "underserved", "minority",
+  "racial", "ethnic", "low-income", "poverty", "housing", "food", "transportation",
+  "access", "barrier", "community health", "vulnerable", "maternal", "infant mortality",
+  "language", "disability", "lgbtq", "indigenous", "tribal",
+];
 
 const PILLAR_COLORS: Record<string, string> = {
   Policy:     "bg-sky-50 text-sky-700 border-sky-200",
@@ -93,7 +103,9 @@ function tagItem(item: WireItem): EnrichedWireItem {
   const recencyBoost = ageHours < 6 ? 2 : ageHours < 24 ? 1 : 0;
   const impact = Math.min(5, authority + recencyBoost - (best[1] === 0 ? 1 : 0));
 
-  return { ...item, pillar, impact };
+  const equityFlag = EQUITY_KEYWORDS.some(kw => text.includes(kw));
+
+  return { ...item, pillar, impact, equityFlag };
 }
 
 const SOURCE_COLORS: Record<string, string> = {
@@ -105,7 +117,10 @@ const SOURCE_COLORS: Record<string, string> = {
   industry: "bg-amber-50 text-amber-700",
 };
 
-const PILLAR_FILTERS = ["All", "Policy", "Economics", "Technology", "Clinical", "Equity", "Operations"];
+// Five pillars only. The Equity Imperative gets its own toggle after a divider
+// in the controls row — it filters by the cross-cutting flag, not by pillar.
+const PILLAR_FILTERS = ["All", ...PILLAR_LABELS];
+const EQUITY_FILTER = "Equity Imperative";
 
 function timeAgo(iso: string | null): string {
   if (!iso) return "";
@@ -168,9 +183,12 @@ export default function WireFeed({
     });
   };
 
-  const filtered = activePillar === "All"
-    ? items
-    : items.filter(i => i.pillar === activePillar);
+  const filtered =
+    activePillar === "All"
+      ? items
+      : activePillar === EQUITY_FILTER
+      ? items.filter(i => i.equityFlag)   // cross-cutting: any pillar may match
+      : items.filter(i => i.pillar === activePillar);
 
   // Daily briefing: top 5 highest-impact items across all pillars
   const briefing = [...items]
@@ -196,6 +214,12 @@ export default function WireFeed({
                     <span className={`text-[10px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded border ${PILLAR_COLORS[item.pillar]}`}>
                       {item.pillar}
                     </span>
+                    {item.equityFlag && (
+                      <span title="Carries the Equity Imperative — the justice test applied to this pillar"
+                        className="text-[10px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded border bg-violet-50 text-violet-700 border-violet-200">
+                        ⚖ Equity
+                      </span>
+                    )}
                     <ImpactDots score={item.impact} />
                     {item.published_at && (
                       <span className="text-[10px] text-slate-400">{timeAgo(item.published_at)}</span>
@@ -225,6 +249,17 @@ export default function WireFeed({
               {p}
             </button>
           ))}
+          {/* Divider: pillars to the left, the cross-cutting imperative to the right. */}
+          <div className="w-px bg-slate-200 mx-1 self-stretch" />
+          <button onClick={() => setActivePillar(EQUITY_FILTER)}
+            title="The Equity Imperative — a cross-cutting test applied to every pillar, not a sixth pillar"
+            className={`px-3 py-1.5 rounded-full text-xs font-bold transition-colors border ${
+              activePillar === EQUITY_FILTER
+                ? "bg-violet-600 text-white border-violet-600"
+                : "bg-white text-violet-700 border-violet-200 hover:border-violet-300"
+            }`}>
+            {EQUITY_FILTER}
+          </button>
         </div>
         <div className="flex items-center gap-3">
           <span className="text-xs text-slate-400">Updated {timeAgo(lastFetch)}</span>

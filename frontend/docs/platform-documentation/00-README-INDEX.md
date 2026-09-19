@@ -8,7 +8,7 @@
 
 ## What this platform is
 
-The Vermont Health Platform is a full-stack web application that publishes healthcare-transformation research, runs an online learning **Academy**, hosts interactive policy simulators and dashboards, and provides a retrieval-augmented (RAG) **AI Analyst**. It is organized around a **Six-Pillar Framework**: **Policy, Economics, Technology, Clinical, Equity, Operations.**
+The Vermont Health Platform is a full-stack web application that publishes healthcare-transformation research, runs an online learning **Academy**, hosts interactive policy simulators and dashboards, and provides a retrieval-augmented (RAG) **AI Analyst**. It is organized around a **Five-Pillar Framework**: **Policy, Technology, Economics, Clinical, Operations** — each held to the cross-cutting **Equity Imperative**.
 
 It is built from three cooperating systems:
 
@@ -40,9 +40,9 @@ Read in order if you are new. Jump by role if you are not.
 
 ---
 
-## The Six-Pillar Framework (the spine of everything)
+## The Five-Pillar Framework (the spine of everything)
 
-Almost every content type, navigation section, and dashboard is keyed to one of six pillars. Memorize these — they appear as a `pillar` field on Sanity documents, as top-level nav sections, and as Research-Lab workspaces.
+Almost every content type, navigation section, and dashboard is keyed to one of the five pillars, or to the cross-cutting Equity Imperative. Memorize these — they appear as a `pillar` field on Sanity documents, as top-level nav sections, and as Research-Lab workspaces.
 
 | Pillar | What it covers | Example subcategories |
 |---|---|---|

@@ -6,7 +6,7 @@ import { db } from "@/lib/db/client";
 export const metadata = {
   title: "Courses | HTR Academy",
   description:
-    "Structured courses on healthcare transformation — policy, economics, technology, clinical innovation, equity, and operations.",
+    "Structured courses on healthcare transformation — policy, technology, economics, clinical innovation, and operations, each held to the Equity Imperative.",
 };
 
 // Pillar colour tokens

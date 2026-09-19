@@ -26,7 +26,7 @@ export default function AdvisoryPage() {
             Healthcare Strategy at Every Level of the Enterprise
           </h1>
           <p className="text-base text-slate-300 max-w-3xl leading-relaxed mb-3">
-            The convergence of <strong className="text-sky-400">Policy</strong>, <strong className="text-emerald-400">Economics</strong>, <strong className="text-indigo-400">Technology</strong>, <strong className="text-red-400">Clinical</strong>, and <strong className="text-violet-400">Equity</strong> creates complexity that generalist consultants cannot navigate.
+            The convergence of <strong className="text-sky-400">Policy</strong>, <strong className="text-indigo-400">Technology</strong>, <strong className="text-emerald-400">Economics</strong>, <strong className="text-red-400">Clinical</strong>, and <strong className="text-teal-400">Operations</strong> — each held to <strong className="text-violet-400">the Equity Imperative</strong> — creates complexity that generalist consultants cannot navigate.
           </p>
           <p className="text-base text-slate-300 max-w-3xl leading-relaxed mb-6">
             <strong className="text-white">HTR Advisory</strong> deploys cross-disciplinary expertise grounded in <em>daily intelligence research</em> — not periodic benchmarks. We compete with Competitor #1, Competitor #2, and Competitor #3 on insight quality. We beat them on speed, independence, and depth of domain knowledge.
@@ -173,13 +173,23 @@ export default function AdvisoryPage() {
               { pillar: "economics" as const, title: "Economics", desc: "Value-based care economics, payer contract strategy, financial modeling, market dynamics, and investment analysis." },
               { pillar: "technology" as const, title: "Technology", desc: "Health IT systems, AI governance, interoperability, digital health program management, and cybersecurity." },
               { pillar: "clinical" as const, title: "Clinical", desc: "Clinical operations, care model design, quality performance, workforce capacity, and patient outcomes." },
-              { pillar: "equity" as const, title: "Equity", desc: "SDOH integration, algorithmic bias, access disparities, community engagement, and health equity program design." },
+              { pillar: "operations" as const, title: "Operations", desc: "Revenue cycle, workforce and human capital, supply chain, payer and network operations, and execution capacity." },
             ].map((item) => (
               <div key={item.pillar} className={`rounded-xl p-6 border-2 ${PILLAR_STYLES[item.pillar].bg} ${PILLAR_STYLES[item.pillar].border}`}>
                 <div className={`text-lg font-black mb-3 ${PILLAR_STYLES[item.pillar].text}`}>{item.title}</div>
                 <p className="text-slate-600 ty-body leading-relaxed">{item.desc}</p>
               </div>
             ))}
+            {/* The Equity Imperative spans the row beneath the five pillars —
+                it is the test each of them must pass, not a sixth column. */}
+            <div className={`md:col-span-5 rounded-xl p-6 border-2 border-dashed ${PILLAR_STYLES.equity.bg} ${PILLAR_STYLES.equity.border}`}>
+              <div className={`text-lg font-black mb-3 ${PILLAR_STYLES.equity.text}`}>
+                The Equity Imperative — &ldquo;Is it just?&rdquo;
+              </div>
+              <p className="text-slate-600 ty-body leading-relaxed">
+                SDOH integration, algorithmic bias, access disparities, community engagement, and health equity program design — applied as a cross-cutting standard to all five pillars above, at every stage of an engagement.
+              </p>
+            </div>
           </div>
         </div>
       </div>

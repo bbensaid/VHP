@@ -93,10 +93,12 @@ export const academyModuleType = defineType({
       options: {
         list: [
           { title: 'Policy', value: 'Policy' },
-          { title: 'Economics', value: 'Economics' },
           { title: 'Technology', value: 'Technology' },
+          { title: 'Economics', value: 'Economics' },
           { title: 'Clinical', value: 'Clinical' },
-          { title: 'Equity', value: 'Equity' },
+          { title: 'Operations', value: 'Operations' },
+          // Stored value stays 'Equity' for existing documents.
+          { title: 'Equity Imperative (cross-cutting)', value: 'Equity' },
           { title: 'All Pillars', value: 'All' },
         ],
         layout: 'radio',

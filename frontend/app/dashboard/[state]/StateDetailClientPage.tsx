@@ -183,7 +183,7 @@ function StateDetailClientPageInner({ indexData, programData, stateSlug, hospita
                   </div>
                   <div>
                     <div className="flex items-center gap-3 mb-4"><div className="bg-brand-economics/10 p-2.5 rounded-xl"><BanknotesIcon className="w-6 h-6 text-brand-economics" /></div><h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">Economics Metrics</h3></div>
-                    <div className="space-y-1"><MetricDisplay label="Low Spending" score={indexData.metrics.economics.spendingPerCapita} /><MetricDisplay label="Workforce" score={indexData.metrics.economics.workforceGaps} /><MetricDisplay label="Coverage Rate" score={indexData.metrics.economics.insuranceCoverage} /></div>
+                    <div className="space-y-1"><MetricDisplay label="Low Spending" score={indexData.metrics.economics.spendingPerCapita} /><MetricDisplay label="Coverage Rate" score={indexData.metrics.economics.insuranceCoverage} /></div>
                   </div>
                   <div>
                     <div className="flex items-center gap-3 mb-4"><div className="bg-brand-technology/10 p-2.5 rounded-xl"><BoltIcon className="w-6 h-6 text-brand-technology" /></div><h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">Technology Metrics</h3></div>
@@ -194,9 +194,21 @@ function StateDetailClientPageInner({ indexData, programData, stateSlug, hospita
                     <div className="space-y-1"><MetricDisplay label="Preventive Care" score={indexData.metrics.clinical.preventiveCare} /><MetricDisplay label="Readmission Rate" score={indexData.metrics.clinical.readmissionRate} /><MetricDisplay label="Chronic Disease Control" score={indexData.metrics.clinical.chronicDiseaseControl} /></div>
                   </div>
                   <div>
-                    <div className="flex items-center gap-3 mb-4"><div className="bg-brand-equity/10 p-2.5 rounded-xl"><UsersIcon className="w-6 h-6 text-brand-equity" /></div><h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">Equity Metrics</h3></div>
-                    <div className="space-y-1"><MetricDisplay label="Racial Equity Gap" score={indexData.metrics.equity.racialEquityGap} /><MetricDisplay label="Rural-Urban Gap" score={indexData.metrics.equity.ruralUrbanGap} /><MetricDisplay label="SDOH Integration" score={indexData.metrics.equity.sdohIntegration} /></div>
+                    <div className="flex items-center gap-3 mb-4"><div className="bg-brand-operations/10 p-2.5 rounded-xl"><UsersIcon className="w-6 h-6 text-brand-operations" /></div><h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">Operations Metrics</h3></div>
+                    <div className="space-y-1"><MetricDisplay label="Workforce Adequacy" score={indexData.metrics.operations.workforceGaps} /></div>
+                    <p className="mt-2 text-xs text-slate-400 dark:text-slate-500 italic">Revenue-cycle and administrative-efficiency scores are not yet sourced for all states.</p>
                   </div>
+                </div>
+
+                {/* The Equity Imperative — read against all five pillars above,
+                    which is why it sits below the grid rather than in it. */}
+                <div className="mt-6 pt-6 border-t-2 border-dashed border-violet-200 dark:border-violet-900/50">
+                  <div className="flex flex-wrap items-center gap-3 mb-4">
+                    <div className="bg-brand-equity/10 p-2.5 rounded-xl"><UsersIcon className="w-6 h-6 text-brand-equity" /></div>
+                    <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">The Equity Imperative</h3>
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-400">Cross-cutting — applied to all five pillars</span>
+                  </div>
+                  <div className="space-y-1"><MetricDisplay label="Racial Equity Gap" score={indexData.equityImperative.racialEquityGap} /><MetricDisplay label="Rural-Urban Gap" score={indexData.equityImperative.ruralUrbanGap} /><MetricDisplay label="SDOH Integration" score={indexData.equityImperative.sdohIntegration} /></div>
                 </div>
               </div>
             </div>

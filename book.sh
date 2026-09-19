@@ -1,94 +1,36 @@
 #!/usr/bin/env bash
 #
-#  ./book.sh  — the only book command you need.
+#  ./book.sh — RETIRED as of 2026-09-18.
 #
-#  WHAT IT DOES
-#    1. Notices if you downloaded a new .docx from Google Docs and saves a
-#       snapshot of it, so your edits can never be lost.
-#    2. Shows you exactly what you changed in that download.
-#    3. Rebuilds the styled .docx from the manuscript.
-#    4. Commits everything to git.
+#  This script used to rebuild HTR_Book_v42.docx from HTR_Book_v42.md.
+#  That direction is now forbidden.
 #
-#  HOW TO USE IT
-#    After editing in Google Docs and downloading to this folder:
-#        ./book.sh
+#  HTR_Book_v42.docx IS THE BOOK. The author edits it in Google Docs and
+#  exports the PDF from there. Nothing regenerates it. A rebuild would
+#  overwrite the author's edits with whatever happened to be in the .md,
+#  which is precisely the accident this file now exists to prevent.
 #
-#    To just rebuild (no Google Docs edits to pull in):
-#        ./book.sh build
+#  HTR_Book_v42.md is a derived, disposable text mirror that Claude uses to
+#  grep and cross-check the book against the platform. It is refreshed FROM
+#  the .docx, never merged back into it:
 #
-#    To see what changed in a download without building anything:
-#        ./book.sh check
+#        python3 book-build/refresh_md.py
 #
-#  IF THE SYNC REPORTS EDITS, THEY ARE NOT YET IN THE MANUSCRIPT.
-#  The script tells you so and stops before overwriting anything. Hand the
-#  report to Claude, or apply the wording changes to HTR_Book_v42.md yourself.
+#  The old pipeline still lives in book-build/ (build_docx.py and friends) for
+#  reference, but it must not be pointed at HTR_Book_v42.docx.
 #
 set -euo pipefail
-cd "$(dirname "${BASH_SOURCE[0]}")"
 
-MD=HTR_Book_v42.md
-DOCX=HTR_Book_v42.docx
-CMD="${1:-sync}"
+cat <<'EOF'
+./book.sh is retired — it is not safe to run.
 
-say()  { printf "\n\033[1;36m▸ %s\033[0m\n" "$*"; }
-warn() { printf "\n\033[1;33m⚠  %s\033[0m\n" "$*"; }
-ok()   { printf "\033[1;32m✓ %s\033[0m\n" "$*"; }
+  HTR_Book_v42.docx is the book. It is edited in Google Docs and exported to
+  PDF by the author. Nothing rebuilds it.
 
-build() {
-  say "Rebuilding $DOCX from $MD"
-  python3 book-build/make_reference.py >/dev/null
-  python3 book-build/build_docx.py "$MD" "$DOCX" --cover book-build/cover.png >/dev/null
-  ok "$DOCX rebuilt ($(du -h "$DOCX" | cut -f1))"
-}
+  To refresh Claude's text mirror from the book:
+      python3 book-build/refresh_md.py
 
-commit() {
-  if [[ -z "$(git status --porcelain "$MD" "$DOCX" 2>/dev/null)" ]]; then
-    ok "Nothing new to commit."
-    return
-  fi
-  git add "$MD" "$DOCX" 2>/dev/null || true
-  git commit -q -m "book: rebuild $(date '+%Y-%m-%d %H:%M')" || true
-  ok "Committed to git (recoverable with: git log -- $DOCX)"
-}
-
-case "$CMD" in
-  check)
-    python3 book-build/sync_from_gdocs.py
-    ;;
-
-  build)
-    build; commit
-    ;;
-
-  sync|"")
-    # Did a Google Docs download land on top of the built file?
-    if [[ -n "$(git status --porcelain "$DOCX" 2>/dev/null)" ]]; then
-      warn "$DOCX differs from the last committed build."
-      echo   "   That means you downloaded a new copy from Google Docs."
-      echo   "   Your edits are being snapshotted and listed below."
-      echo
-      # Harvest hand-set table column widths FIRST, before anything can lose
-      # them. Widths live only in the .docx; the .md carries none, so a rebuild
-      # would fall back to computed values and wipe any resizing done since the
-      # last harvest. Doing it here means the author never has to remember.
-      python3 book-build/save_table_widths.py "$DOCX" >/dev/null 2>&1 \
-        && ok "Table widths captured from your download (survive future builds)."
-      python3 book-build/sync_from_gdocs.py
-      echo
-      warn "STOP AND READ: the edits above are in the .docx but NOT yet in"
-      echo   "   $MD, which is what the build reads. Rebuilding now would"
-      echo   "   THROW THEM AWAY."
-      echo
-      echo   "   Give the list above to Claude and ask it to fold them into $MD."
-      echo   "   A snapshot of your download is safe in book-archive/."
-      echo
-      echo   "   When the manuscript is up to date, run:  ./book.sh build"
-      exit 1
-    fi
-    ok "No pending Google Docs edits."
-    build; commit
-    ;;
-
-  *)
-    echo "usage: ./book.sh [sync|build|check]"; exit 2 ;;
-esac
+  To check whether that mirror is stale:
+      python3 book-build/refresh_md.py --check
+EOF
+exit 1

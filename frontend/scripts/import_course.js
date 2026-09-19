@@ -30,7 +30,8 @@ const client = createClient({
 });
 
 // Valid pillar values for the `course` schema
-const COURSE_PILLARS = ["Policy", "Economics", "Technology", "Operations"];
+// Was missing Clinical entirely, and the Equity Imperative tag.
+const COURSE_PILLARS = ["Policy", "Technology", "Economics", "Clinical", "Operations", "Equity"];
 
 function slugify(text) {
   return text
