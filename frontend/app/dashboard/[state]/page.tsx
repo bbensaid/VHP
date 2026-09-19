@@ -27,7 +27,6 @@ function adaptMetricsToIndex(r: StateHealthRow): PerformanceIndexProfile {
       },
       economics: {
         spendingPerCapita: r.econ_spending_per_capita ?? 0,
-        workforceGaps: r.econ_workforce_gaps ?? 0,
         insuranceCoverage: r.econ_insurance_coverage ?? 0,
       },
       technology: {
@@ -40,11 +39,17 @@ function adaptMetricsToIndex(r: StateHealthRow): PerformanceIndexProfile {
         readmissionRate: r.clinical_readmission_rate ?? 0,
         chronicDiseaseControl: r.clinical_chronic_disease ?? 0,
       },
-      equity: {
-        racialEquityGap: r.equity_racial_gap ?? 0,
-        ruralUrbanGap: r.equity_rural_urban_gap ?? 0,
-        sdohIntegration: r.equity_sdoh_integration ?? 0,
+      // Workforce adequacy is an Operations metric. The Supabase column is
+      // still econ_workforce_gaps — renaming it needs a migration, and the
+      // column's meaning, not its name, is what was filed wrongly.
+      operations: {
+        workforceGaps: r.econ_workforce_gaps ?? 0,
       },
+    },
+    equityImperative: {
+      racialEquityGap: r.equity_racial_gap ?? 0,
+      ruralUrbanGap: r.equity_rural_urban_gap ?? 0,
+      sdohIntegration: r.equity_sdoh_integration ?? 0,
     },
     narrative: {
       title: r.narrative_title ?? r.state_name,

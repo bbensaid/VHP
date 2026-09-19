@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import HeroCarousel from "@/components/HeroCarousel";
 import BookmarkButton from "@/components/BookmarkButton";
+import { PILLARS, EQUITY_IMPERATIVE } from "@/lib/taxonomy";
 
 interface LeadStory {
   title: string;
@@ -28,15 +29,22 @@ interface HomeContentProps {
 
 // ─── FILTER CHIP CONFIG ──────────────────────────────────────────────────────
 
-const PILLAR_FILTERS = [
+// Built from the taxonomy so this row can never drift back to six. The five
+// pillars are peers; the Equity Imperative is appended after a divider as a
+// cross-cutting filter, not as a sixth pillar chip.
+const chipClasses = (p: { classes: { headerBg: string; headerColor: string; borderAccent: string; hoverBg: string } }) =>
+  `${p.classes.headerBg} ${p.classes.headerColor} ${p.classes.borderAccent} ${p.classes.hoverBg}`;
+
+const PILLAR_FILTERS: { id: string; label: string; color?: string }[] = [
   { id: "all", label: "All" },
-  { id: "policy", label: "Policy", color: "bg-sky-100 text-sky-700 border-sky-200 hover:bg-sky-200" },
-  { id: "economics", label: "Economics", color: "bg-emerald-100 text-emerald-700 border-emerald-200 hover:bg-emerald-200" },
-  { id: "technology", label: "Technology", color: "bg-indigo-100 text-indigo-700 border-indigo-200 hover:bg-indigo-200" },
-  { id: "clinical", label: "Clinical", color: "bg-red-100 text-red-700 border-red-200 hover:bg-red-200" },
-  { id: "equity", label: "Equity", color: "bg-violet-100 text-violet-700 border-violet-200 hover:bg-violet-200" },
-  { id: "operations", label: "Operations", color: "bg-teal-100 text-teal-700 border-teal-200 hover:bg-teal-200" },
+  ...PILLARS.map((p) => ({ id: p.id, label: p.label, color: chipClasses(p) })),
 ];
+
+const IMPERATIVE_FILTER = {
+  id: EQUITY_IMPERATIVE.id,
+  label: "Equity Imperative",
+  color: chipClasses(EQUITY_IMPERATIVE),
+};
 
 const TYPE_FILTERS = [
   { id: "all", label: "All Formats" },
@@ -125,7 +133,7 @@ const CAPABILITIES = [
     href: "/about/framework",
     emoji: "🕸️",
     title: "Five-Pillar Framework Map",
-    desc: "Interactive dependency map showing how Policy, Economics, Technology, Clinical, Equity, and Operations interrelate.",
+    desc: "Interactive dependency map showing how Policy, Technology, Economics, Clinical, and Operations interrelate — each held to the Equity Imperative.",
     accent: "border-indigo-200 hover:border-indigo-400 hover:bg-indigo-50",
     tag: "Interactive",
     tagColor: "bg-indigo-100 text-indigo-700",
@@ -143,63 +151,28 @@ const CAPABILITIES = [
 
 // ─── TRENDING BY PILLAR ───────────────────────────────────────────────────────
 
-const TRENDING_PILLARS = [
-  {
-    id: "policy",
-    label: "Policy",
-    href: "/policy",
-    dot: "bg-sky-500",
-    ring: "ring-sky-200",
-    bg: "bg-sky-50 hover:bg-sky-100",
-    text: "text-sky-700",
-    topic: "CMS Final Rule on Prior Authorization",
-    sub: "Regulation & Legislation",
-  },
-  {
-    id: "economics",
-    label: "Economics",
-    href: "/economics",
-    dot: "bg-emerald-500",
-    ring: "ring-emerald-200",
-    bg: "bg-emerald-50 hover:bg-emerald-100",
-    text: "text-emerald-700",
-    topic: "Medicare Advantage Margin Compression",
-    sub: "Market & Finance",
-  },
-  {
-    id: "technology",
-    label: "Technology",
-    href: "/technology",
-    dot: "bg-indigo-500",
-    ring: "ring-indigo-200",
-    bg: "bg-indigo-50 hover:bg-indigo-100",
-    text: "text-indigo-700",
-    topic: "Generative AI in Clinical Documentation",
-    sub: "AI & Machine Learning",
-  },
-  {
-    id: "clinical",
-    label: "Clinical",
-    href: "/clinical",
-    dot: "bg-red-500",
-    ring: "ring-red-200",
-    bg: "bg-red-50 hover:bg-red-100",
-    text: "text-red-700",
-    topic: "Hospital-at-Home CMS Waiver Expansion",
-    sub: "Hospital-at-Home",
-  },
-  {
-    id: "equity",
-    label: "Equity",
-    href: "/equity",
-    dot: "bg-amber-500",
-    ring: "ring-amber-200",
-    bg: "bg-amber-50 hover:bg-amber-100",
-    text: "text-amber-700",
-    topic: "SDOH Screening in Value-Based Contracts",
-    sub: "SDOH Integration",
-  },
-];
+// One card per pillar, in the taxonomy's load-bearing order. Equity is NOT
+// here: it is the cross-cutting imperative, surfaced by its own filter chip
+// above rather than competing for a slot in the pillar row. Operations,
+// which this strip used to omit entirely, is back.
+const TRENDING_TOPICS: Record<string, { topic: string; sub: string }> = {
+  policy:     { topic: "CMS Final Rule on Prior Authorization",   sub: "Regulation & Legislation" },
+  technology: { topic: "Generative AI in Clinical Documentation", sub: "AI & Machine Learning" },
+  economics:  { topic: "Medicare Advantage Margin Compression",   sub: "Market & Finance" },
+  clinical:   { topic: "Hospital-at-Home CMS Waiver Expansion",   sub: "Hospital-at-Home" },
+  operations: { topic: "Rural Service Line Regionalization",      sub: "Workforce & Capacity" },
+};
+
+const TRENDING_PILLARS = PILLARS.map((p) => ({
+  id: p.id,
+  label: p.label,
+  href: p.href,
+  dot: p.classes.dot,
+  ring: p.classes.ringLight,
+  bg: `${p.classes.bgLight} ${p.classes.hoverBg}`,
+  text: p.classes.textColor,
+  ...TRENDING_TOPICS[p.id],
+}));
 
 // ─── MAIN COMPONENT ───────────────────────────────────────────────────────────
 
@@ -312,6 +285,20 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
                 {f.label}
               </button>
             ))}
+            {/* Divider: everything left of it is a pillar; Equity is the
+                cross-cutting imperative, deliberately outside the pillar run. */}
+            <div className="w-px bg-slate-200 mx-1 self-stretch" />
+            <button
+              onClick={() => setPillarFilter(IMPERATIVE_FILTER.id)}
+              title="The Equity Imperative — a cross-cutting test applied to every pillar, not a sixth pillar"
+              className={`px-3 py-1 rounded-full text-xs font-bold border transition-all ${
+                pillarFilter === IMPERATIVE_FILTER.id
+                  ? IMPERATIVE_FILTER.color.replace("hover:", "")
+                  : IMPERATIVE_FILTER.color
+              }`}
+            >
+              {IMPERATIVE_FILTER.label}
+            </button>
             <div className="w-px bg-slate-200 mx-1 self-stretch" />
             {TYPE_FILTERS.map((f) => (
               <button

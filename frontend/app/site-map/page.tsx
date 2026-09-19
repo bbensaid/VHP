@@ -10,10 +10,12 @@ const sections = [
     title: "Intelligence Pillars",
     links: [
       { label: "Policy", href: "/policy" },
-      { label: "Economics", href: "/economics" },
       { label: "Technology", href: "/technology" },
+      { label: "Economics", href: "/economics" },
       { label: "Clinical", href: "/clinical" },
-      { label: "Equity", href: "/equity" },
+      { label: "Operations", href: "/operations" },
+      // Not a pillar — the cross-cutting test applied to the five above.
+      { label: "The Equity Imperative", href: "/equity" },
     ],
   },
   {

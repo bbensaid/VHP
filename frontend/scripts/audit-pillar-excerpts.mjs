@@ -50,7 +50,7 @@ for (const r of rows) {
 const bad = rows.filter((r) => !r.ok);
 if (bad.length) {
   console.error(
-    `\n❌ ${bad.length} of 6 pillar excerpts cite chapters that disagree with chapters.ts.`
+    `\n❌ ${bad.length} of 6 framework excerpts (5 pillars + the Equity Imperative) cite chapters that disagree with chapters.ts.`
   );
   console.error("   Each renders beside a heading computed from the same taxonomy, so the");
   console.error("   card contradicts itself. See ALIGNMENT_AUDIT_FINDINGS.md C-6.");

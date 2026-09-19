@@ -9,7 +9,11 @@ type GlossaryTerm = {
   pillars?: string[];
 };
 
-const pillars = ["Policy", "Economics", "Technology", "Clinical", "Equity", "Operations"];
+// Five pillars in load-bearing order. "Equity" stays as the stored tag value
+// (Sanity content is tagged with it) but renders last and labelled as the
+// cross-cutting imperative — never as a sixth pillar.
+const pillars = ["Policy", "Technology", "Economics", "Clinical", "Operations", "Equity"];
+const PILLAR_CHIP_LABEL: Record<string, string> = { Equity: "Equity Imperative" };
 const alphabet = Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i));
 
 function getBadgeStyle(pillar: string) {
@@ -120,7 +124,7 @@ export default function GlossaryClient({ allTerms }: { allTerms: GlossaryTerm[] 
               onClick={() => setSelectedPillar(selectedPillar === pillar ? null : pillar)}
               className={`px-5 py-2 rounded-full text-sm transition-all border ${getPillarButtonStyle(pillar, selectedPillar === pillar)}`}
             >
-              {pillar}
+              {PILLAR_CHIP_LABEL[pillar] ?? pillar}
             </button>
           ))}
         </div>

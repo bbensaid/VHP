@@ -9,9 +9,11 @@ const ROLE_PILLARS: Record<string, string[]> = {
   economist:  ["Economics"],
   tech:       ["Technology"],
   compliance: ["Policy"],
-  researcher: ["Policy", "Economics", "Technology", "Clinical", "Equity"],
+  researcher: ["Policy", "Technology", "Economics", "Clinical", "Operations", "Equity"],
   investor:   ["Economics"],
-  all:        ["Policy", "Economics", "Technology", "Clinical", "Equity"],
+  // "all" must mean all five pillars; Operations was silently excluded, so no
+  // Operations content ever surfaced for the default role.
+  all:        ["Policy", "Technology", "Economics", "Clinical", "Operations", "Equity"],
 };
 
 function shuffleArray<T>(arr: T[]): T[] {

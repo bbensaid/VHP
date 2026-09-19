@@ -6,6 +6,8 @@
  * Do NOT add slugs that don't exist in Sanity — the module pages will 404.
  */
 
+import type { FrameworkId } from "@/lib/taxonomy";
+
 export type TrackModule = {
   slug: string;          // Must match Sanity academyModule slug.current
   title: string;
@@ -17,7 +19,7 @@ export type TrackModule = {
 
 export type LearningTrack = {
   id: string;
-  pillarId: "policy" | "economics" | "technology" | "clinical" | "equity" | "operations";
+  pillarId: FrameworkId;
   title: string;
   subtitle: string;
   icon: string;

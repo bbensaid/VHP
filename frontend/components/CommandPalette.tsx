@@ -57,7 +57,9 @@ export const COMMANDS: CommandItem[] = [
   { id: "nav-2", title: "Policy Analysis", category: "Navigation", href: "/policy", icon: BuildingLibraryIcon, shortcut: "P" },
   { id: "nav-3", title: "Technology Radar", category: "Navigation", href: "/technology", icon: GlobeAmericasIcon, shortcut: "T" },
   { id: "nav-4", title: "Clinical Intelligence", category: "Navigation", href: "/clinical", icon: BeakerIcon, shortcut: "C" },
-  { id: "nav-5", title: "Health Equity", category: "Navigation", href: "/equity", icon: ScaleIcon, shortcut: "Q" },
+  { id: "nav-5", title: "Operations Intelligence", category: "Navigation", href: "/operations", icon: BuildingLibraryIcon, shortcut: "O" },
+  // Not a pillar — the cross-cutting test applied to the five above.
+  { id: "nav-5b", title: "The Equity Imperative", category: "Navigation", href: "/equity", icon: ScaleIcon, shortcut: "Q" },
   { id: "dash-1", title: "National Dashboard", category: "Navigation", href: "/dashboard", icon: MapIcon },
   { id: "dash-2", title: "Investment Tracker", category: "Navigation", href: "/economics/investment", icon: DocumentTextIcon },
   { id: "dash-3", title: "HTI Simulator", category: "Tool", href: "/hti-dashboard", icon: ChartBarIcon },

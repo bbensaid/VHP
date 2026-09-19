@@ -156,7 +156,7 @@ export default function ResearchPage() {
               </div>
               <div>
                 <div className="text-rose-400 font-bold mb-2">5-Pillar Framework</div>
-                <p className="text-indigo-100 text-sm leading-relaxed">Every research question is analyzed through Policy, Economics, Technology, Clinical, Equity, and Operations lenses — not just the single dimension the client originally requested.</p>
+                <p className="text-indigo-100 text-sm leading-relaxed">Every research question is analyzed through Policy, Technology, Economics, Clinical, and Operations lenses, then tested against the Equity Imperative — not just the single dimension the client originally requested.</p>
               </div>
               <div>
                 <div className="text-rose-400 font-bold mb-2">Non-Partisan Analysis</div>

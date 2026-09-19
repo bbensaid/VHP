@@ -15,7 +15,9 @@ interface Course {
   estimated_hours: number | null;
 }
 
-const PILLAR_FILTERS = ["All", "general", "policy", "economics", "technology", "clinical", "equity", "operations"];
+// Load-bearing pillar order; "equity" last because it is the cross-cutting
+// imperative, not a sixth pillar (its stored tag value is unchanged).
+const PILLAR_FILTERS = ["All", "general", "policy", "technology", "economics", "clinical", "operations", "equity"];
 
 const PILLAR_LABEL: Record<string, string> = {
   all: "All Courses",
@@ -24,8 +26,8 @@ const PILLAR_LABEL: Record<string, string> = {
   economics: "Economics",
   technology: "Technology",
   clinical: "Clinical",
-  equity: "Equity",
   operations: "Operations",
+  equity: "Equity Imperative",
 };
 
 const PILLAR_COLOR: Record<string, string> = {

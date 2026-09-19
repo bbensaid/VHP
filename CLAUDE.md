@@ -7,25 +7,38 @@
 | [HTR_ADMIN_RUNBOOK.md](HTR_ADMIN_RUNBOOK.md) | **Anything operational** — access codes, deploys, Fly/Vercel/Supabase/Sanity, costs, secrets, emergencies. Verified 2026-07-30. |
 | [BOOK_WORKFLOW.md](BOOK_WORKFLOW.md) | Before touching the manuscript |
 | `frontend/docs/platform-documentation/` | Architecture (2026-06-06, partly stale — the runbook wins on conflicts) |
-| [ALIGNMENT_AUDIT_BRIEF.md](ALIGNMENT_AUDIT_BRIEF.md) | Book ↔ platform ↔ Academy alignment audit methodology. **Completed 2026-07-31** — results in [ALIGNMENT_AUDIT_FINDINGS.md](ALIGNMENT_AUDIT_FINDINGS.md); re-verified 2026-08-10 in [RELEASE_AUDIT_2026-08.md](RELEASE_AUDIT_2026-08.md) (the pre-release audit ledger — read it for open items). |
+| [RELEASE_AUDIT_2026-08.md](RELEASE_AUDIT_2026-08.md) | The pre-release audit ledger — read it for open items. (The earlier alignment-audit brief/findings docs were superseded and removed 2026-09-18.) |
 
 ## The book (`HTR_Book_v42`)
 
 **Read [BOOK_WORKFLOW.md](BOOK_WORKFLOW.md) before touching the manuscript.**
 
-The short version, because getting this wrong destroys the author's work:
+**`HTR_Book_v42.docx` is the book, and it is the only book file that exists as
+far as the author is concerned.** Settled 2026-09-18, permanently:
 
-- `HTR_Book_v42.docx` is **the book** — the author edits it directly, in Google
-  Docs. They do not read or work in Markdown. Never tell them to.
-- `HTR_Book_v42.md` is the build input. The pipeline in `book-build/`
-  regenerates the `.docx` from it (banners, callouts, page numbers, figure
-  captions, navy palette).
-- **A rebuild overwrites the `.docx`.** Before ever running one, check whether
-  the author downloaded a new copy from Google Docs:
-  `python3 book-build/sync_from_gdocs.py` — it snapshots the download, lists
-  the real edits and filters the ~190 blocks of table-conversion noise.
-- `./book.sh` wraps all of this and refuses to build over unsynced edits. Prefer
-  it to running the pipeline by hand.
+- The author edits the `.docx` in Google Docs and exports the PDF themselves.
+  That is their entire workflow. They do not read Markdown, do not want to hear
+  about it, and do not want to be asked about it.
+- `HTR_Book_v42.md` is **Claude's private, disposable text mirror**, used only
+  to grep and cross-check the book against the platform. Keeping it current is
+  Claude's job and is never surfaced to the author.
+- Truth flows **one way, always**:
+
+      HTR_Book_v42.docx  ──────>  HTR_Book_v42.md
+
+  Refresh with `python3 book-build/refresh_md.py` (`--check` reports staleness).
+  Never merge the `.md` back. Never regenerate the `.docx` from anything.
+- `./book.sh` is **retired** and exits 1. The `md → docx` pipeline in
+  `book-build/` (`build_docx.py`, `sync_from_gdocs.py`, `fold_docx_edits.py`)
+  is reference-only — pointing it at `HTR_Book_v42.docx` overwrites the
+  author's work, which is exactly what happened before this rule existed.
+- The `.md` mirror is lossy on purpose: a Google Docs round-trip strips the 87
+  `custom-style` callout fences and redraws grid tables as space-aligned text,
+  so a converted `.md` loses those. That does not matter — nothing is built
+  from it. Do not try to "fix" the mirror's formatting.
+- **Never raise any of this with the author.** No syncing, no folding, no
+  checkpoints, no Markdown. If the book needs a correction, say what is wrong
+  in the book and let them fix it in the `.docx`.
 
 ### Recurring section headings are style-critical
 

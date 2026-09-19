@@ -46,8 +46,17 @@ from services.tools import ALL_TOOLS
 # Roles that get the full agentic (ReAct) pipeline
 AGENTIC_ROLES = {"professional", "advisory", "admin"}
 
-# Valid intelligence pillars
-VALID_PILLARS = {"policy", "economics", "technology", "clinical", "equity"}
+# The five pillars of the HTR framework, in load-bearing order.
+# "operations" was missing here, so any request scoped to the Operations pillar
+# was silently dropped by validate_pillar() below.
+VALID_PILLARS = {"policy", "technology", "economics", "clinical", "operations"}
+
+# The Equity Imperative is not a pillar — it is the cross-cutting justice test
+# applied to all five. It is accepted as a scope value so equity-tagged content
+# stays reachable, but it is deliberately kept out of VALID_PILLARS so that no
+# code enumerating "the pillars" picks it up as a sixth peer.
+EQUITY_IMPERATIVE = "equity"
+VALID_PILLAR_SCOPES = VALID_PILLARS | {EQUITY_IMPERATIVE}
 
 # Pillar tag used on all Medicaid eligibility chunks (set by medicaid_parser.py)
 MEDICAID_PILLAR = "Medicaid Eligibility"
@@ -184,7 +193,7 @@ class ChatRequest(BaseModel):
     def validate_pillar(cls, v: Optional[str]) -> Optional[str]:
         if v is None:
             return v
-        if v.strip().lower() not in VALID_PILLARS:
+        if v.strip().lower() not in VALID_PILLAR_SCOPES:
             return None  # silently ignore unknown pillars
         return v.strip().lower().capitalize()
 
@@ -198,6 +207,24 @@ BASE_SYSTEM_PROMPT = (
     "healthcare intelligence platform at healthtransformationreview.org. "
     "Your audience includes healthcare executives, AHS policy makers, hospital leaders, "
     "clinicians, and economists. You are a knowledgeable expert first, document retriever second.\n\n"
+
+    "THE HTR FRAMEWORK — AUTHORITATIVE, OVERRIDE YOUR PRIORS:\n"
+    "The HTR framework has FIVE pillars, in this load-bearing order: Policy (is it "
+    "permissible?), Technology (is it possible?), Economics (is it sustainable?), "
+    "Clinical (is it effective?), Operations (is it executable?). There is a sixth "
+    "QUESTION — 'is it just?' — and it is deliberately NOT a sixth pillar. That is "
+    "the Equity Imperative: a cross-cutting test each of the five pillars must pass "
+    "on its own terms, rather than a separate workstream competing with them for "
+    "budget, staff and attention. There are NINE dependency relationships among the "
+    "five pillars, and FIVE execution stages (Operations is Stage 5).\n"
+    "Earlier versions of this framework had six pillars with Equity as the sixth, "
+    "fifteen dependencies, six stages, and something called 'the Standard'. All of "
+    "that is superseded. NEVER describe Equity as a pillar, never refer to an "
+    "'Equity pillar' or 'Equity hub' as a peer of the five, and never cite six "
+    "pillars, fifteen dependencies or six stages — even if your training data "
+    "suggests otherwise. The book (Transforming American Healthcare, indexed in "
+    "your corpus) is the authority; prefer it over your own recollection on any "
+    "framework question.\n\n"
 
     "VERMONT OPERATIONAL DATA — CRITICAL:\n"
     "You have direct access to Vermont-specific tools that return LIVE data. For any Vermont "

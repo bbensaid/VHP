@@ -1,9 +1,12 @@
 // components/academy/AcademyCard.tsx
 import Link from "next/link";
+import type { FrameworkId } from "@/lib/taxonomy";
 
 interface AcademyCardProps {
   type: "CERTIFICATION" | "COURSE" | "WEBINAR";
-  pillar: "Policy" | "Economics" | "Technology" | "Clinical" | "Equity" | "Operations" | "General";
+  // Capitalize<FrameworkId> = the five pillar labels plus "Equity", derived
+  // from the taxonomy so a framework change cannot leave this behind.
+  pillar: Capitalize<FrameworkId> | "General";
   title: string;
   description: string;
   meta: string; // e.g., "6 Weeks • Online" or "Oct 25 • 2:00 PM EST"

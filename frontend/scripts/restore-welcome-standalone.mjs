@@ -23,8 +23,8 @@ const COURSE_SLUG = "welcome-htr-framework";
 const course = {
   slug: COURSE_SLUG,
   title: "Welcome & the HTR Framework",
-  subtitle: "Your orientation to the six-pillar framework",
-  description: "A standalone orientation to the HTR six-pillar framework and your role in the health reform ecosystem. This lesson stands on its own and is not part of any other course.",
+  subtitle: "Your orientation to the five-pillar framework and the Equity Imperative",
+  description: "A standalone orientation to the HTR five-pillar framework — Policy, Technology, Economics, Clinical and Operations, each held to the Equity Imperative — and your role in the health reform ecosystem. This lesson stands on its own and is not part of any other course.",
   targetAudience: ["Anyone new to HTR"],
   prerequisites: [],
   estimatedHours: 0.25,

@@ -19,8 +19,8 @@ const METRICS = [
   { key: "metrics.technology.broadbandAccess", label: "Broadband Access",  format: (v: number) => `${v ?? "—"}%` },
   { key: "metrics.clinical.preventiveCare", label: "Preventive Care",      format: (v: number) => `${v ?? "—"}%` },
   { key: "metrics.clinical.readmissionRate", label: "Readmission Rate",    format: (v: number) => `${v ?? "—"}%` },
-  { key: "metrics.equity.racialEquityGap", label: "Racial Equity Gap",     format: (v: number) => `${v ?? "—"}` },
-  { key: "metrics.equity.sdohIntegration", label: "SDOH Integration",      format: (v: number) => `${v ?? "—"}%` },
+  { key: "equityImperative.racialEquityGap", label: "Racial Equity Gap",     format: (v: number) => `${v ?? "—"}` },
+  { key: "equityImperative.sdohIntegration", label: "SDOH Integration",      format: (v: number) => `${v ?? "—"}%` },
 ];
 
 function getNestedValue(obj: PerformanceIndexProfile, path: string): number {

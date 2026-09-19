@@ -4,7 +4,9 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 
-const PILLARS = ['Policy', 'Economics', 'Technology', 'Clinical', 'Equity', 'Operations', 'General']
+// Load-bearing pillar order; Equity is the cross-cutting imperative, listed
+// after the five pillars rather than among them.
+const PILLARS = ['Policy', 'Technology', 'Economics', 'Clinical', 'Operations', 'Equity', 'General']
 
 const PILLAR_COLORS: Record<string, string> = {
   Policy:     'bg-sky-100 text-sky-700',

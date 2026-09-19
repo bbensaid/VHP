@@ -81,8 +81,10 @@ const PILLAR_CONFIG: Record<string, {
       { href: "/research-lab/knowledge-workspace?tab=workforce", label: "Workforce Modeler" },
     ],
   },
+  // Present so /equity/* pages get a sidebar — NOT a sixth pillar. It is
+  // excluded from PILLAR_IDS below and rendered in its own band.
   equity: {
-    label: "Equity",
+    label: "The Equity Imperative",
     color: "text-violet-700", bg: "bg-violet-50", border: "border-violet-200",
     dot: "bg-violet-500", activeBg: "bg-violet-100", activeText: "text-violet-800", hoverBg: "hover:bg-violet-50",
     items: [
@@ -116,10 +118,14 @@ const PILLAR_CONFIG: Record<string, {
 };
 
 // ─── HELPERS (exported so AppShell and Header can reuse) ─────────────────────
-const PILLAR_IDS = Object.keys(PILLAR_CONFIG);
+const IMPERATIVE_ID = "equity";
+// The five pillars only — what "other pillars" and any pillar enumeration mean.
+const PILLAR_IDS = Object.keys(PILLAR_CONFIG).filter((id) => id !== IMPERATIVE_ID);
+// Every path this sidebar serves, imperative included — routing, not hierarchy.
+const SIDEBAR_IDS = Object.keys(PILLAR_CONFIG);
 
 export function getPillarFromPath(path: string): string | null {
-  for (const p of PILLAR_IDS) {
+  for (const p of SIDEBAR_IDS) {
     if (path === `/${p}` || path.startsWith(`/${p}/`)) return p;
   }
   return null;
@@ -144,6 +150,9 @@ export default function PillarSidebar() {
   const isActive = (href: string) => pathname === href;
   const isLabActive = (href: string) => pathname === href.split("?")[0];
   const otherPillars = PILLAR_IDS.filter((id) => id !== pillarId);
+  // Shown separately beneath the pillar list, and only when you are not
+  // already on it — it is a cross-cutting test, not another domain to browse.
+  const showImperative = pillarId !== IMPERATIVE_ID;
 
   return (
     <div className="pt-2">
@@ -206,7 +215,7 @@ export default function PillarSidebar() {
       {/* ── Other pillars ─────────────────────────────────────────────────── */}
       <div className="border-t border-slate-200 pt-4">
         <p className="text-[9px] font-black uppercase tracking-widest text-slate-400 mb-2 px-3">
-          Other Domains
+          Other Pillars
         </p>
         <div className="space-y-0.5">
           {otherPillars.map((id) => {
@@ -223,6 +232,23 @@ export default function PillarSidebar() {
             );
           })}
         </div>
+
+        {/* The Equity Imperative — applied across the pillars above, listed
+            apart from them so it never reads as a sixth domain. */}
+        {showImperative && (
+          <div className="mt-3 pt-3 border-t border-dashed border-violet-200">
+            <Link
+              href="/equity"
+              className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-violet-700 hover:bg-violet-50 transition-colors"
+            >
+              <span className="w-2 h-2 rounded-full bg-violet-500 shrink-0" />
+              {PILLAR_CONFIG[IMPERATIVE_ID].label}
+            </Link>
+            <p className="px-3 mt-0.5 text-[10px] italic text-slate-400 leading-snug">
+              Is it just? — the test every pillar must pass.
+            </p>
+          </div>
+        )}
       </div>
 
       {/* ── Framework Map ─────────────────────────────────────────────────── */}

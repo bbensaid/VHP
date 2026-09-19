@@ -22,7 +22,10 @@ const HistoryMessageSchema = z.object({
   text: z.string().max(4000),
 });
 
-const VALID_PILLARS = ["Policy", "Economics", "Technology", "Clinical", "Equity"] as const;
+// The five pillars, plus the Equity Imperative as an accepted cross-cutting
+// scope. "Operations" was missing, so a chat request scoped to the Operations
+// pillar was rejected by this schema outright.
+const VALID_PILLARS = ["Policy", "Technology", "Economics", "Clinical", "Operations", "Equity"] as const;
 
 const VALID_USER_ROLES = ["executive", "policy", "clinician", "economist", "tech", "compliance", "researcher", "investor", "all"] as const;
 

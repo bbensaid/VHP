@@ -57,9 +57,12 @@ GOLDEN_DATASET = [
         "question": "What is the AHEAD model in Vermont health care?",
         "ground_truth": (
             "The AHEAD (All-Payer Health Equity Approaches and Development) model is a CMS innovation "
-            "model in Vermont designed to test whether a whole-state approach to health transformation "
-            "can reduce Medicare expenditures, improve quality, and advance health equity. "
-            "It builds on Vermont's All-Payer ACO Model."
+            "model designed to test whether a whole-state approach to health transformation can reduce "
+            "Medicare expenditures, improve quality, and advance health equity. Vermont signed its AHEAD "
+            "State Agreement in January 2025 and formally withdrew in July 2026, after a CMS "
+            "renegotiation cut its expected EAST Fund from roughly $138 million to a cap near $10 "
+            "million. Vermont's mandatory state architecture under Acts 167, 51 and 68 remained in "
+            "force, so the reform continued without the federal model."
         ),
         "pillar": "Policy",
     },
@@ -87,11 +90,98 @@ GOLDEN_DATASET = [
         "question": "What is the HTI (Health Transformation Index) composite score?",
         "ground_truth": (
             "The HTI composite score is a multi-dimensional index that measures a state's progress "
-            "across the five pillars of health transformation: Policy, Economics, Technology, Clinical, "
-            "and Equity. It aggregates weighted sub-scores from each pillar to produce a 0-100 score "
-            "reflecting overall transformation readiness and performance."
+            "across the five pillars of health transformation: Policy, Technology, Economics, Clinical, "
+            "and Operations. It aggregates weighted sub-scores from each pillar to produce a 0-100 score "
+            "reflecting overall transformation readiness and performance, and is read alongside the "
+            "Equity Imperative, which is a cross-cutting justice test rather than a sixth pillar."
         ),
         "pillar": "Policy",
+    },
+    # ── Operations pillar ─────────────────────────────────────────────────────
+    # Added 2026-09-18. The Operations pillar had zero coverage here, the same
+    # omission that had dropped it from the chat validator and the role-content
+    # API. Ground truths below are taken from Chapter 11 of HTR_Book_v42.docx
+    # (the manuscript of record) — no figures invented.
+    {
+        "question": "What is the Operations pillar and why is it the one most often under-resourced?",
+        "ground_truth": (
+            "Operations is the fifth pillar of the HTR framework and asks whether a reform is "
+            "executable. It is the pillar where a transformation plan either becomes real or stays a "
+            "document. It is most often under-resourced because it produces no new policy, technology "
+            "or care model of its own — it simply has to make the other pillars work, on a timeline, "
+            "with the staff and capital actually available."
+        ),
+        "pillar": "Operations",
+    },
+    {
+        "question": "How does Vermont's regionalization blueprint tier its 14 hospitals?",
+        "ground_truth": (
+            "Oliver Wyman's regionalization blueprint organizes Vermont's 14-hospital network into "
+            "three facility types. Tier 1 are Regional Specialty Centers (RSCs), hospitals with enough "
+            "population base, financial position and existing expertise to sustain inpatient beds and "
+            "act as Centers of Excellence; UVMMC in Burlington is the primary RSC with 16 COE "
+            "designations. Tier 2 are focused-scope hospitals with defined specialty roles. Tier 3 are "
+            "hospitals that cannot sustain inpatient beds long term and would convert in an orderly "
+            "way to a Rural Emergency Hospital, a Community Ambulatory Care Center, or a Care at Home "
+            "support hub rather than closing unexpectedly."
+        ),
+        "pillar": "Operations",
+    },
+    {
+        "question": "Why is workforce Vermont's most binding operational constraint?",
+        "ground_truth": (
+            "Workforce is the operational challenge most likely to constrain the pace and ambition of "
+            "Vermont's transformation. It is not a single issue but a cluster of interconnected "
+            "problems cascading across the system. Vermont's unemployment rate was 2.5% in August "
+            "2025, below the 4.3% national rate — an extremely tight labor market that limits "
+            "healthcare recruitment. The RHT Program invests roughly $195 million a year in workforce, "
+            "including tuition assistance, recruitment incentives with five-year service obligations, "
+            "and scope-of-practice expansion for nurses and APRNs. That is the supply-side response; "
+            "workforce redistribution planning is the demand-side response."
+        ),
+        "pillar": "Operations",
+    },
+    {
+        "question": "What is the EMS fragmentation problem in Vermont's inter-facility transfers?",
+        "ground_truth": (
+            "Vermont has 31 separate EMS agencies that a provider may need to contact to arrange a "
+            "patient transfer. Community meeting participants described having to contact all 31. That "
+            "fragmentation is simultaneously a patient safety risk and an operational cost, and it is "
+            "a barrier to regionalization, which depends on reliable transfer infrastructure. "
+            "Vermont's RHT Program application includes EMS transformation as a priority investment: "
+            "professionalization and regionalization of EMS, improved inter-facility transfer "
+            "coordination, and expanded telehealth to reduce unnecessary transfers."
+        ),
+        "pillar": "Operations",
+    },
+    {
+        "question": "What is the RHRC and what role does it play in Vermont hospital transformation?",
+        "ground_truth": (
+            "The RHRC provides technical assistance for rural hospital transformation. It meets "
+            "individually with each Vermont hospital to review hospital-specific financial and "
+            "operational data — cost per adjusted discharge, operating margin, payer mix, service line "
+            "volumes and workforce indicators — and compares each against national and Vermont peers. "
+            "AHS reviews the data with hospitals and the Green Mountain Care Board provides benchmark "
+            "data. The RHRC's transformation plan methodology supports the short-, medium- and "
+            "long-term planning each hospital needs to manage its transition."
+        ),
+        "pillar": "Operations",
+    },
+    # ── Equity Imperative (cross-cutting, not a pillar) ───────────────────────
+    {
+        "question": "Is equity a pillar in the HTR framework?",
+        "ground_truth": (
+            "No. Equity is deliberately not a sixth pillar. The HTR framework has five pillars — "
+            "Policy, Technology, Economics, Clinical and Operations — each defined by a diagnostic "
+            "question. There is a sixth question, 'is it just?', and that is the Equity Imperative: a "
+            "cross-cutting test each of the five pillars must pass on its own terms, rather than a "
+            "separate workstream competing with them for budget, staff and attention. The reason this "
+            "matters is that a reform can improve the average while widening the gap. Vermont's "
+            "primary care access rate is roughly 91%, four points above the national benchmark, yet "
+            "that aggregate conceals an 11-point gap between white Vermont adults and BIPOC Vermont "
+            "adults."
+        ),
+        "pillar": "Equity",
     },
     {
         "question": "What is Hospital-at-Home and what evidence supports it?",

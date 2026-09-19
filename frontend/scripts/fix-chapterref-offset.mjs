@@ -45,8 +45,10 @@ const CH_PILLAR = Object.fromEntries(CHAPTERS.map((c) => [c.num, c.pillar]));
 
 console.log(`Parsed ${CHAPTERS.length} chapter entries from chapters.ts`);
 console.log("True lead chapter per pillar:", LEAD, "\n");
-if (Object.keys(LEAD).length !== 6) {
-  console.error("Expected 6 pillars from chapters.ts — aborting.");
+// 5 pillars + the Equity Imperative, which carries its own chapter (ch.10).
+const FRAMEWORK_ID_COUNT = 6;
+if (Object.keys(LEAD).length !== FRAMEWORK_ID_COUNT) {
+  console.error(`Expected ${FRAMEWORK_ID_COUNT} framework ids (5 pillars + the Equity Imperative) from chapters.ts — aborting.`);
   process.exit(1);
 }
 

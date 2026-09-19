@@ -1,12 +1,12 @@
 /**
  * The five pillars of healthcare transformation, and the Equity Imperative.
  *
- * Book v46 (Sept 2026) restructured the framework: Policy, Technology,
- * Economics, Clinical, and Operations are the five pillars — load-bearing IN
- * THIS ORDER, not interchangeable. Equity is no longer a sixth peer pillar;
- * it is "the Equity Imperative," a cross-cutting test ("is it just?") applied
- * to every pillar at every stage. See the repo-root handoff doc
- * `book v46 hand off items to Claude Code.docx` for the full spec.
+ * The Sept 2026 restructure of the framework: Policy, Technology, Economics,
+ * Clinical, and Operations are the five pillars — load-bearing IN THIS ORDER,
+ * not interchangeable. Equity is no longer a sixth peer pillar; it is "the
+ * Equity Imperative," a cross-cutting test ("is it just?") applied to every
+ * pillar at every stage. (The one-time migration spec doc this cited has
+ * since been superseded and removed — HTR_Book_v42.docx is the living spec.)
  *
  * This is the single source of truth for pillar identity, visual styling,
  * navigation routing, and book↔platform mapping. The home sidebar, header
@@ -60,6 +60,7 @@ export interface Pillar {
     activeItemBg: string;
     bgLight: string;     // for pillar cards in the book page
     textColor: string;   // for pillar cards in the book page
+    ringLight: string;   // for ringed pillar cards (homepage trending strip)
   };
 }
 
@@ -84,6 +85,7 @@ export const PILLARS: readonly Pillar[] = [
       activeItemBg: "bg-sky-100",
       bgLight: "bg-sky-50",
       textColor: "text-sky-700",
+      ringLight: "ring-sky-200",
     },
   },
   {
@@ -102,6 +104,7 @@ export const PILLARS: readonly Pillar[] = [
       activeItemBg: "bg-indigo-100",
       bgLight: "bg-indigo-50",
       textColor: "text-indigo-700",
+      ringLight: "ring-indigo-200",
     },
   },
   {
@@ -120,6 +123,7 @@ export const PILLARS: readonly Pillar[] = [
       activeItemBg: "bg-emerald-100",
       bgLight: "bg-emerald-50",
       textColor: "text-emerald-700",
+      ringLight: "ring-emerald-200",
     },
   },
   {
@@ -138,6 +142,7 @@ export const PILLARS: readonly Pillar[] = [
       activeItemBg: "bg-red-100",
       bgLight: "bg-red-50",
       textColor: "text-red-700",
+      ringLight: "ring-red-200",
     },
   },
   {
@@ -156,6 +161,7 @@ export const PILLARS: readonly Pillar[] = [
       activeItemBg: "bg-teal-100",
       bgLight: "bg-teal-50",
       textColor: "text-teal-700",
+      ringLight: "ring-teal-200",
     },
   },
 ] as const;
@@ -181,6 +187,7 @@ export const EQUITY_IMPERATIVE: Pillar = {
     activeItemBg: "bg-violet-100",
     bgLight: "bg-violet-50",
     textColor: "text-violet-700",
+    ringLight: "ring-violet-200",
   },
 };
 
@@ -189,4 +196,36 @@ export function getPillar(id: PillarId | ImperativeId): Pillar {
   const p = PILLARS.find((p) => p.id === id);
   if (!p) throw new Error(`Unknown pillar: ${id}`);
   return p;
+}
+
+// ─── DERIVED LISTS ───────────────────────────────────────────────────────────
+// Use these instead of writing another pillar array. Every hardcoded list is a
+// place the framework can silently drift back to six — which is exactly how
+// Equity ended up rendered as a peer chip on the homepage for weeks after the
+// book had already moved on.
+
+/** The five pillar ids, in load-bearing order. Never includes "equity". */
+export const PILLAR_IDS: readonly PillarId[] = PILLARS.map((p) => p.id as PillarId);
+
+/** The five pillar labels, in load-bearing order. */
+export const PILLAR_LABELS: readonly string[] = PILLARS.map((p) => p.label);
+
+/**
+ * Pillars plus the Equity Imperative, each tagged with which kind it is.
+ *
+ * For the surfaces that legitimately show both — a tag/badge renderer, a
+ * chapter link, a filter row with a separated imperative. The `kind` flag is
+ * the point: it lets a component render Equity while still refusing to put it
+ * in the numbered row. Code that means "every pillar" wants PILLARS, not this.
+ */
+export type FrameworkItem = Pillar & { kind: "pillar" | "imperative" };
+
+export const FRAMEWORK_ITEMS: readonly FrameworkItem[] = [
+  ...PILLARS.map((p) => ({ ...p, kind: "pillar" as const })),
+  { ...EQUITY_IMPERATIVE, kind: "imperative" as const },
+];
+
+/** True for the Equity Imperative — i.e. "this must not go in a pillar row". */
+export function isImperative(id: string): boolean {
+  return id.toLowerCase() === "equity";
 }

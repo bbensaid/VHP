@@ -23,7 +23,17 @@ export default defineType({
       title: 'Pillar',
       type: 'string',
       options: {
-        list: ['Policy', 'Economics', 'Technology', 'Clinical', 'Equity'],
+        // Five pillars in load-bearing order, then the Equity Imperative.
+        // The stored value stays 'Equity' so existing documents keep working;
+        // only the editor-facing title says what it actually is.
+        list: [
+          { title: 'Policy',     value: 'Policy'     },
+          { title: 'Technology', value: 'Technology' },
+          { title: 'Economics',  value: 'Economics'  },
+          { title: 'Clinical',   value: 'Clinical'   },
+          { title: 'Operations', value: 'Operations' },
+          { title: 'Equity Imperative (cross-cutting)', value: 'Equity' },
+        ],
       },
       validation: (Rule) => Rule.required(),
     }),

@@ -8,7 +8,7 @@ This is the end-user manual. It explains what the platform does and how to use e
 1. [Getting started](#1-getting-started)
 2. [Plans & access tiers](#2-plans--access-tiers)
 3. [Navigating the app](#3-navigating-the-app)
-4. [The Six-Pillar sections](#4-the-six-pillar-sections)
+4. [The Five-Pillar sections](#4-the-five-pillar-sections)
 5. [The AI Analyst](#5-the-ai-analyst)
 6. [The Academy](#6-the-academy)
 7. [Dashboards, states & simulators](#7-dashboards-states--simulators)
@@ -45,15 +45,15 @@ Manage your plan at `/account/subscription` and `/account/billing` (Stripe-power
 ## 3. Navigating the app
 
 - **Header** (`Header.tsx`) — global search, account, theme toggle.
-- **HomeSidebar** (left) — sidebar-first navigation into the six pillars and major sections. This is the primary nav.
+- **HomeSidebar** (left) — sidebar-first navigation into the five pillars, the Equity Imperative, and major sections. This is the primary nav.
 - **RightSidebar** (right) — the AI Analyst widget, available on every page; expand to full chat.
 - **TickerStrip** — a live scrolling band of "System Vitals" (ER wait time, etc.), driven by Sanity `ticker` docs.
 - **Command Palette** — press **⌘K** (or Ctrl+K) to jump anywhere by name.
 - **Breadcrumbs**, **Site Map** (`/site-map`), and **Search** (`/search`) help you orient.
 
-## 4. The Six-Pillar sections
+## 4. The Five-Pillar sections
 
-The platform's content is organized into six pillars, each a top-level section with overview, subpages, and `[slug]` articles:
+The platform's content is organized into five pillars, each a top-level section with overview, subpages, and `[slug]` articles, plus the cross-cutting Equity Imperative hub:
 
 | Pillar | Section | Example subpages |
 |---|---|---|
@@ -82,7 +82,7 @@ Your research co-pilot. It answers questions grounded in the platform's content 
 
 Structured learning at `/academy`.
 
-- **Courses** (`/academy/courses`) — multi-module courses across the six pillars; some are cohort-based, some self-paced.
+- **Courses** (`/academy/courses`) — multi-module courses across the five pillars and the Equity Imperative; some are cohort-based, some self-paced.
 - **Tracks & Modules** (`/academy/tracks`, `/academy/modules`) — curated learning paths.
 - **Lessons** — rich, illustrated lessons (key concepts, real-world examples, stat cards, comparisons, warnings) with optional audio narration.
 - **Quizzes** — check your understanding; attempts and scores are saved.
@@ -95,7 +95,7 @@ Structured learning at `/academy`.
 Interactive, data-driven tools:
 
 - **State profiles** (`/states/[state]`) — Rural Health Transformation program profiles, awards, initiatives, metrics.
-- **State Performance Index** — a 0–100 six-pillar composite per state.
+- **State Performance Index** — a 0–100 five-pillar composite per state, with the Equity Imperative tracked as a cross-cutting indicator.
 - **Compare states** (`/compare-states`, `/dashboard/compare`).
 - **Simulators** — model policy and program outcomes:
   - Vermont: `/vermont-act-167`, `/vermont-act-68`, `/vermont-rht-program`, `/vermont-blueprint`, `/vermont-medicaid`, `/vermont-sash`, plus `/htr-simulator`, `/impact-simulation`.

@@ -84,7 +84,9 @@ export default function VideoLibrary({ allVideos }: { allVideos: Video[] }) {
     }, {} as Record<string, Video[]>);
   }, [allVideos]);
 
-  const pillarOrder = useMemo(() => ['Policy', 'Economics', 'Technology', 'Clinical', 'Equity', 'General'].filter(p => videosByPillar[p]), [videosByPillar]);
+  // Five pillars in load-bearing order (Operations was missing entirely), then
+  // the cross-cutting Equity Imperative, then uncategorised.
+  const pillarOrder = useMemo(() => ['Policy', 'Technology', 'Economics', 'Clinical', 'Operations', 'Equity', 'General'].filter(p => videosByPillar[p]), [videosByPillar]);
 
   const categoriesByPillar = useMemo(() => {
     const categories: Record<string, string[]> = {};

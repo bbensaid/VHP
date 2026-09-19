@@ -42,7 +42,8 @@ const filePath = path.join(CONTENT_DIR, filename);
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 const REQUIRED_FIELDS = ["title", "slug", "courseTitle", "moduleNumber", "summary", "body"];
-const VALID_PILLARS   = ["Policy", "Economics", "Technology", "Clinical", "Equity", "All"];
+// Operations was missing, so an Operations module failed import validation.
+const VALID_PILLARS   = ["Policy", "Technology", "Economics", "Clinical", "Operations", "Equity", "All"];
 const VALID_LEVELS    = ["Foundational", "Intermediate", "Advanced"];
 const MIN_BODY_BLOCKS = 35;
 

@@ -34,8 +34,11 @@
   --color-brand-policy: #0369a1;
   --color-brand-economics: #059669;
   --color-brand-technology: #4f46e5;
-  --color-brand-equity: #7c3aed;
   --color-brand-clinical: #dc2626;
+  --color-brand-operations: #0d9488;  /* teal-600 — matches PILLARS[operations] */
+  /* Not a pillar color: the Equity Imperative's violet, kept for its hub,
+     badge and cross-cutting callouts. */
+  --color-brand-equity: #7c3aed;
   --color-brand-academy: #38bdf8;
   --color-brand-advisory: #d946ef;
 
@@ -44,6 +47,7 @@
   --color-card-economics: var(--color-brand-economics);
   --color-card-tech: var(--color-brand-technology);
   --color-card-clinical: var(--color-brand-clinical);
+  --color-card-operations: var(--color-brand-operations);
   --color-card-equity: var(--color-brand-equity);
 
   /* ── Global UI ─────────────────────────────────────────────────────────── */

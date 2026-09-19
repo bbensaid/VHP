@@ -8,7 +8,7 @@ const PODCAST_SERIES = [
     id: "pillars",
     emoji: "🏛️",
     title: "Five Pillars Podcast",
-    desc: "Deep-dive conversations on Policy, Economics, Technology, Clinical, Equity, and Operations — one episode per pillar per month, featuring HTR analysts and field practitioners.",
+    desc: "Deep-dive conversations on Policy, Technology, Economics, Clinical, and Operations — one episode per pillar per month, plus recurring episodes on the Equity Imperative, featuring HTR analysts and field practitioners.",
     frequency: "Monthly · 6 episodes per cycle",
     status: "Launching Q3 2025",
     accentBg: "bg-indigo-50",

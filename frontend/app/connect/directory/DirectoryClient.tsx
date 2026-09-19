@@ -19,7 +19,8 @@ const ORG_TYPE_LABELS: Record<string, string> = {
   other:         "Other",
 };
 
-const PILLAR_OPTIONS = ["policy", "economics", "technology", "clinical", "equity", "operations"];
+// Load-bearing pillar order; "equity" last as the cross-cutting imperative.
+const PILLAR_OPTIONS = ["policy", "technology", "economics", "clinical", "operations", "equity"];
 
 const PILLAR_COLORS: Record<string, string> = {
   policy:     "bg-sky-100 text-sky-700",

@@ -84,8 +84,23 @@ export default defineType({
       ],
     }),
     defineField({
+      name: 'operationsMetrics',
+      title: 'Operations Metrics',
+      description:
+        'The fifth pillar. Workforce adequacy previously lived under Economics; ' +
+        'it belongs here. Other operations sub-metrics (revenue cycle, ' +
+        'administrative efficiency) are intentionally unscored until sourced.',
+      type: 'object',
+      fields: [
+        scoreField('workforceGaps', 'Workforce Adequacy'),
+      ],
+    }),
+    defineField({
       name: 'equityMetrics',
-      title: 'Equity Metrics',
+      title: 'Equity Imperative (cross-cutting)',
+      description:
+        'Not a sixth pillar — the justice check read against all five pillars ' +
+        'above. Field name kept as equityMetrics so existing documents work.',
       type: 'object',
       fields: [
         scoreField('racialEquityGap', 'Racial Equity Gap'),

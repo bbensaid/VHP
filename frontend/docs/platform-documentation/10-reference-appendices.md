@@ -130,7 +130,7 @@ Lookup tables for the whole platform: environment variables, API routes, page ro
 
 **Auth:** `/login`, `/signup`, `/forgot-password`, `/reset-password`, `/beta`, `/verify/[hash]`.
 
-**Six pillars:** `/policy` (+ `/[slug]`, regulation, mandates, global, feasibility) · `/economics` (+ `/[slug]`, value, market, investment, cea) · `/technology` (+ `/[slug]`, ai, digital, security, workflow) · `/clinical` (+ `/[slug]`, hah, precision, virtual, population, genomics) · `/equity` (+ `/[slug]`, sdoh, bias, access) · `/operations` (+ `/[slug]`, revenue-cycle, supply-chain, workforce, compliance, payer-network).
+**Five pillars:** `/policy` (+ `/[slug]`, regulation, mandates, global, feasibility) · `/technology` (+ `/[slug]`, ai, digital, security, workflow) · `/economics` (+ `/[slug]`, value, market, investment, cea) · `/clinical` (+ `/[slug]`, hah, precision, virtual, population, genomics) · `/operations` (+ `/[slug]`, revenue-cycle, supply-chain, workforce, compliance, payer-network). **Equity Imperative (cross-cutting):** `/equity` (+ `/[slug]`, sdoh, bias, access).
 
 **Articles/reading:** `/articles/[slug]`, `/read/[slug]`, `/library`.
 
@@ -183,7 +183,7 @@ Schema details in [Doc 04](./04-content-supabase.md).
 |---|---|
 | **HTR** | Healthcare Transformation Roadmap — the internal name for the platform/brand |
 | **AI Brain** | The FastAPI backend (`backend/`), title "HTR AI Brain" |
-| **Six-Pillar Framework** | Policy, Economics, Technology, Clinical, Equity, Operations |
+| **Five-Pillar Framework** | Policy, Technology, Economics, Clinical, Operations — each held to the Equity Imperative |
 | **Analysis** | A research brief (`policyAnalysis` in Sanity) |
 | **The Wire** | Live news/insight feed (`/the-wire`) |
 | **RHT** | Rural Health Transformation (program) — `rhtState` profiles |

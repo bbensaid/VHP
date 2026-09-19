@@ -4,6 +4,7 @@
 import React, { useState, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
+import type { FrameworkId } from "@/lib/taxonomy";
 
 interface NavItem {
   href: string;
@@ -13,7 +14,7 @@ interface NavItem {
 interface NavDropdownProps {
   label: string;
   items: NavItem[];
-  pillar?: "policy" | "economics" | "technology" | "clinical" | "equity" | "operations";
+  pillar?: FrameworkId;
   icon?: React.ReactNode; 
   buttonClassName?: string;
 }

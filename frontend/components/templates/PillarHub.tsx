@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { FrameworkId } from "@/lib/taxonomy";
 
 interface Article {
   _id: string;
@@ -15,7 +16,7 @@ interface PillarHubProps {
   pillarSlug: string;
   tagline: string;
   description: string;
-  themeColor: "economics" | "policy" | "technology" | "clinical" | "equity";
+  themeColor: FrameworkId;
   featured: Article | null;
   recent: Article[];
 }
@@ -67,6 +68,16 @@ export function PillarHub({
       lightBg: "bg-red-50",
       hoverCard: "hover:border-red-400 hover:bg-red-50/80",
     },
+    operations: {
+      header: "bg-brand-operations",
+      text: "text-brand-operations",
+      border: "border-brand-operations",
+      indicator: "bg-brand-operations",
+      hoverText: "group-hover:text-brand-operations",
+      lightBg: "bg-teal-50",
+      hoverCard: "hover:border-teal-400 hover:bg-teal-50/80",
+    },
+    // Not a pillar theme — the Equity Imperative's own hub still needs one.
     equity: {
       header: "bg-brand-equity",
       text: "text-brand-equity",

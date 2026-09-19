@@ -358,7 +358,7 @@ export const TOOLS: readonly Tool[] = [
     id: "the-wire",
     label: "The Wire",
     href: "/the-wire",
-    pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"],
+    pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"],
     // A live news feed, so it is not chapter-bound — but chs 13 and 14 send
     // readers to it explicitly as an early-warning instrument.
     chapters: ["13", "14"],

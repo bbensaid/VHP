@@ -41,8 +41,8 @@ export const PROGRAMS: readonly Program[] = [
   // ── Other States & Federal ──────────────────────────────────────────────
   { id: "california-calaim",   label: "California CalAIM",      href: "/california-calaim",   group: "Other States & Federal", pillars: ["policy", "equity", "clinical"], chapters: ["13"] },
   { id: "oregon-cco",          label: "Oregon CCO 3.0",         href: "/oregon-cco",          group: "Other States & Federal", pillars: ["policy", "economics", "equity"], chapters: ["13"] },
-  { id: "states-explorer",     label: "All States Explorer",    href: "/states",              group: "Other States & Federal", pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"] },
-  { id: "fifty-state-dashboard", label: "50-State Dashboard",   href: "/dashboard",           group: "Other States & Federal", pillars: ["policy", "economics", "technology", "clinical", "equity", "operations"] },
+  { id: "states-explorer",     label: "All States Explorer",    href: "/states",              group: "Other States & Federal", pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"] },
+  { id: "fifty-state-dashboard", label: "50-State Dashboard",   href: "/dashboard",           group: "Other States & Federal", pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"] },
   { id: "cms-rural-simulator", label: "CMS Rural Transformation", href: "/dashboard/simulator", group: "Other States & Federal", pillars: ["policy", "economics"] },
 ] as const;
 
