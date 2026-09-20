@@ -244,6 +244,13 @@ async def build_index() -> VectorStoreIndex:
         # questions from model priors, which still assert the pre-v46 six-pillar
         # model. This is the authoritative source for the five pillars, the
         # Equity Imperative, the nine dependencies and the execution sequence.
+        # Ch.1 §1.4 also states the rule for matrix membership: a dependency
+        # earns a cell only when the upstream pillar delivers the currency it
+        # issues (Policy=authority, Technology=information, Economics=incentives,
+        # Clinical=outcomes, Operations=capacity). That is why there is no
+        # Economics->Technology cell: transformation capital (RHT award, and the
+        # EAST Fund under AHEAD before Vermont withdrew in July 2026) is
+        # appropriated, and appropriation is authority, not incentive.
         "htr_book_v42.pdf": {
             "pillar": "HTR Framework",
             "source_type": "htr_book",
@@ -252,7 +259,10 @@ async def build_index() -> VectorStoreIndex:
             "tags": (
                 "htr,book,framework,five pillars,equity imperative,policy,technology,"
                 "economics,clinical,operations,dependencies,execution sequence,vermont,"
-                "act167,act68,onecare,ahead,global budgets,reference-based pricing"
+                "act167,act68,onecare,ahead,global budgets,reference-based pricing,"
+                "dependency matrix,matrix membership,what each pillar issues,"
+                "authority,incentives,information,outcomes,capacity,"
+                "transformation capital,incentive architecture,rht program,east fund"
             ),
         },
         "wyman_report.pdf": {
