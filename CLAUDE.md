@@ -1,5 +1,122 @@
 # Vermont Health Platform — working notes
 
+## STANDING DIRECTIVES — obey these before anything else
+
+Every rule below was given by the author, most of them more than once, after Claude got it
+wrong. They are not preferences. Violating one is a failure, not a judgment call.
+
+**Working style**
+
+1. **NEVER end a turn with "want me to do X or Y?"** Report what is done and stop. If work
+   remains, do it — do not offer a menu.
+2. **NEVER ask a question you can answer yourself.** "Which font should this be?" → go look at
+   what the other chapters do. Ask only when the answer is genuinely the author's to make.
+3. **Batch the work.** Never hand back one paragraph at a time. Sweep a whole chapter, then
+   report once.
+4. **One shell command at a time**, no inline `#` comments — a pasted multi-line block once
+   left the author's terminal stuck at a `quote>` prompt.
+5. **Do not waste tokens.** No re-deriving what is already established, no re-reading what was
+   just read, no exploratory flailing. Test a script's logic before running it on the book.
+6. **Report honestly.** Say what was checked, what was fixed, what was found and deliberately
+   left, and why. Never fabricate content to make an audit look clean.
+
+**The book**
+
+7. **Claude edits `HTR_Book_v42.docx` directly and surgically** via
+   `book-build/patch_docx.py` — see "Claude edits the .docx directly" below. This SUPERSEDES
+   the old rules about `_NNN.md` checkpoints and about handing the author text to paste.
+8. **NEVER delete or overwrite any `HTR_Book_v42_NNN.md` checkpoint** without explicit
+   permission. They are the author's safety net against Claude's mistakes.
+9. **NEVER rebuild the book.** The `md → docx` pipeline is retired. Truth flows
+   `.docx → .md`, one way, always.
+10. **Always back up before editing** and re-locate target text in the *fresh* file. Never
+    trust an offset from an earlier copy.
+11. **There is no renderer here.** Any claim about pages, gaps or layout is an estimate until
+    the author looks. Say so.
+
+**Book formatting — run the audit, never eyeball it**
+
+23. **After ANY edit that creates or restyles a table or paragraph, run
+    `python3 book-build/audit_format.py`.** It checks the four defects that have
+    recurred: white-on-light cells, off-norm font sizes, italic pile-ups, and data
+    rows styled as header rows. Reporting a formatting fix without running it is
+    how the same bug shipped twice.
+24. **NEVER hand-write OOXML builders in an edit script. Import them:**
+    `sys.path.insert(0, 'book-build'); from docx_build import run, para, cell, row, table`.
+    This is the one that actually matters. The white-on-light bug shipped twice
+    because each edit script redefined its own `run()` and the `color` default
+    drifted from `INK` to `None` between them. `docx_build.cell()` now *raises*
+    on a colourless run in a filled cell, so the defect cannot be built at all.
+    Verify with `python3 book-build/test_docx_build.py` (13 tests).
+    The palette lives there too — never retype hex codes.
+25. **Body text is `sz 21` (10.5pt).** Do not copy a neighbouring paragraph's
+    size without checking it against the norm — a 12pt outlier was propagated that
+    way. Table/callout text is 18; 17 for dense tables.
+26. **A header row is the row that names the columns.** Shading plus bold on the
+    first *data* row is a defect, not emphasis. Label cell bold, content cell
+    roman, matching every row beneath it.
+27. **Italic is for figure captions.** Do not stack long italic paragraphs; a
+    second explanatory paragraph under a caption is roman.
+
+**Verification**
+
+12. **NOTHING in this repo is pre-verified.** A prior audit marked "done" is not evidence.
+    Verify before building on anything.
+13. **When you find one bad claim, grep the whole repo for that subject immediately.** One
+    stale fact is usually five.
+14. **NEVER write a URL from inference.** Open the route file, confirm what it queries,
+    confirm the row is live — then write the link.
+15. **Confirm a validator actually read the file you passed it** before trusting its output.
+
+**Content and the platform**
+
+16. **Broken `sanity_slug` links and EMPTY/PARTIAL content are often INTENTIONAL** —
+    unverifiable content was pulled deliberately. Audits raise questions, not work orders.
+    Never auto-restore without sign-off.
+17. **Do not write Academy/Sanity content without asking first.** Past approvals were
+    one-time and do not generalize.
+18. After posting lesson content to Sanity, **set each Supabase lesson row's `sanity_slug`**
+    or the app renders thin legacy blocks.
+19. Supabase scripts **must live in `frontend/scripts/`** or node cannot resolve
+    `@supabase/supabase-js`.
+20. Seed scripts are **upsert-only** — removing a lesson means deleting the Supabase row.
+21. Lesson scripts **must start with `exec(open('CONTENT_TEMPLATE.py').read())`**.
+22. **Persist completed work to the repo immediately** — never leave it only in a scratchpad
+    where a rate or session limit can wipe it.
+
+## What "DONE" means on a chapter — read this before claiming anything is finished
+
+Settled 2026-09-19, permanently. **"Done" is never about formatting alone.** Do not report a
+chapter as done, and do not ask the author whether it is done, until *all* of the following
+have been checked and fixed — not sampled, not spot-checked:
+
+1. **Formatting/styling is internally consistent.** Box type ↔ fill colour ↔ title colour
+   follow the book's system; no font drift; no stacked or mismatched callouts; table cells
+   styled uniformly.
+2. **No repetition.** Run a *systematic* near-duplicate scan (sentence-level similarity over
+   the whole chapter), never a grep for a handful of guessed phrases. Fix every genuine
+   restatement. Distinguish real duplication from legitimate recurrence (glossary entries,
+   figure sources, a table summarising its own prose, a section heading naming its topic) —
+   and say which is which.
+3. **No internal contradictions.** E.g. two different dependencies both called "the most
+   underestimated."
+4. **Aligned with the Preface and Introduction.** This is *paramount*. Scan the chapter's
+   sentences against both front sections for restatement and for conflict. Where the front
+   matter already establishes a figure or definition, the chapter cross-references it instead
+   of re-deriving it. Never edit the Preface or Introduction to fit a chapter — the chapter
+   yields.
+5. **Aligned and cross-linked with the HTR ecosystem.** Every cited URL resolves to a real
+   route (check `frontend/app/`), every named Academy track/lesson exists in Supabase with
+   that exact title, every referenced Research Lab tool exists. The chapter must be linked
+   into the platform, not just internally clean. See [[project_academy_routes]] — never infer
+   a route from a directory name.
+
+Alignment with *other chapters* is lower priority (the author edits those later), but
+Preface + Introduction + ecosystem alignment is part of "done" every time.
+
+Report what was checked, what was fixed, and what was found-but-deliberately-left with the
+reason. Never fabricate content to make an audit look clean.
+
 ## Start here
 
 | Document | When |
@@ -37,8 +154,41 @@ far as the author is concerned.** Settled 2026-09-18, permanently:
   so a converted `.md` loses those. That does not matter — nothing is built
   from it. Do not try to "fix" the mirror's formatting.
 - **Never raise any of this with the author.** No syncing, no folding, no
-  checkpoints, no Markdown. If the book needs a correction, say what is wrong
-  in the book and let them fix it in the `.docx`.
+  checkpoints, no Markdown.
+
+### Claude edits the `.docx` directly — surgically (agreed 2026-09-19)
+
+This supersedes the old "say what's wrong and let them fix it" rule, which made
+the author hand-paste every correction into Google Docs. It does **not** relax
+anything above: the `md → docx` pipeline stays retired and still must never
+regenerate or overwrite `HTR_Book_v42.docx`.
+
+The permitted edit is a **surgical string replacement inside
+`word/document.xml`**, then re-zip. Nothing else. Never rebuild the file.
+
+The live book is the **Google Doc**, not the local file
+([HTR_Book_v42](https://docs.google.com/document/d/1Yfrh5UkW_L_XK0LQw7nSluAViEpOzKn8cq4dmvFAa60/edit),
+My Drive root). The local `.docx` goes stale the moment the author touches the
+doc online — it was a full day behind on 2026-09-19. So, every time:
+
+1. Author downloads the current `.docx` from Google Docs over the repo copy.
+2. Claude backs up that file **before** editing (timestamped copy), then edits.
+3. Claude re-locates the target text in the *fresh* file — never trusts an
+   offset or line number found in an earlier copy.
+4. Author uploads the edited `.docx` back to Google Docs and eyeballs it.
+5. Claude refreshes the `.md` mirror (`book-build/refresh_md.py`).
+
+The Drive connector is **read-only for content** — `update_file` changes only a
+file's title or folder. Claude cannot write into the live Google Doc, which is
+why steps 1 and 4 are the author's.
+
+Batch the edits. One round-trip per chapter beats one per paragraph; that
+inefficiency is what prompted this change.
+
+Style names are **already gone** from the manuscript (0 custom styles remain;
+only `Heading1/2/3` and `Title` are still named, everything else is direct
+formatting). Do not warn the author about losing them again — verified
+2026-09-19.
 
 ### Recurring section headings are style-critical
 

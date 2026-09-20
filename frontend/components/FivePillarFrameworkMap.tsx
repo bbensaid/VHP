@@ -9,11 +9,11 @@ import { useState } from "react";
 // arc in the SVG below) and surfaced per-pillar in the detail panel.
 
 const PILLARS = [
-  { id: "policy",   n: 1, label: "Policy",     q: '"Is it permissible?"',  color: "#3b82f6", light: "#eff6ff", border: "#bfdbfe", angle: 270 },
-  { id: "tech",     n: 2, label: "Technology", q: '"Is it possible?"',     color: "#8b5cf6", light: "#f5f3ff", border: "#ddd6fe", angle: 342 },
-  { id: "econ",     n: 3, label: "Economics",  q: '"Is it sustainable?"',  color: "#10b981", light: "#ecfdf5", border: "#a7f3d0", angle: 54  },
-  { id: "clinical", n: 4, label: "Clinical",   q: '"Is it effective?"',    color: "#ef4444", light: "#fef2f2", border: "#fecaca", angle: 126 },
-  { id: "ops",      n: 5, label: "Operations", q: '"Is it executable?"',   color: "#f59e0b", light: "#fffbeb", border: "#fde68a", angle: 198 },
+  { id: "policy",   n: 1, label: "Policy",     q: '"Is it permissible?"', issues: "AUTHORITY",  color: "#3b82f6", light: "#eff6ff", border: "#bfdbfe", angle: 270 },
+  { id: "tech",     n: 2, label: "Technology", q: '"Is it possible?"', issues: "INFORMATION",     color: "#8b5cf6", light: "#f5f3ff", border: "#ddd6fe", angle: 342 },
+  { id: "econ",     n: 3, label: "Economics",  q: '"Is it sustainable?"', issues: "INCENTIVES",  color: "#10b981", light: "#ecfdf5", border: "#a7f3d0", angle: 54  },
+  { id: "clinical", n: 4, label: "Clinical",   q: '"Is it effective?"', issues: "OUTCOMES",    color: "#ef4444", light: "#fef2f2", border: "#fecaca", angle: 126 },
+  { id: "ops",      n: 5, label: "Operations", q: '"Is it executable?"', issues: "CAPACITY",   color: "#f59e0b", light: "#fffbeb", border: "#fde68a", angle: 198 },
 ] as const;
 
 type PillarId = (typeof PILLARS)[number]["id"];
@@ -317,6 +317,10 @@ export default function FivePillarFrameworkMap() {
                   {selPillar.label}
                 </p>
                 <p className="text-xs text-gray-500">{selPillar.q}</p>
+                <p className="text-xs text-gray-400 mt-1">
+                  Issues <span className="font-semibold text-gray-600">{selPillar.issues}</span>
+                  {" — a dependency exists only where one pillar needs what another issues."}
+                </p>
               </div>
               <button
                 onClick={() => setSel(null)}
