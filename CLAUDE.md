@@ -114,6 +114,30 @@ have been checked and fixed — not sampled, not spot-checked:
 Alignment with *other chapters* is lower priority (the author edits those later), but
 Preface + Introduction + ecosystem alignment is part of "done" every time.
 
+**Do not claim a chapter is done from prose reasoning. Run the script:**
+
+    python3 book-build/audit_chapter.py <N>
+
+It executes criteria 1-4 and the mechanical half of 5, and exits non-zero on failure.
+It passed twice today on reasoning alone while three real defects were live.
+
+**Criterion 5 is only half automatable, and the half that is not is where the defects
+were.** `audit_chapter.py` confirms routes exist and named tools tag the chapter. It
+CANNOT confirm a promise is delivered. For every sentence telling a reader they will
+find something ("the X returns your weakest pillar", "Track 1 walks each gate"), OPEN
+the target and confirm a reader actually finds it. **A 200 is not a delivered promise.**
+Three defects shipped past an audit that checked only route existence and title matching:
+a course page that listed lessons flat while the book cited tracks by name; a
+"Pillar Readiness self-check" that did not exist under that name; and a tool that did
+not tag the chapter citing it.
+
+**Audit the Preface and Introduction too**, not just the chapter. They make platform
+promises of their own.
+
+A Stop hook (`.claude/hooks/stop-gate.sh`) blocks the turn from ending while the
+manuscript has formatting defects. It is the only guard that catches a claim rather
+than an edit.
+
 Report what was checked, what was fixed, and what was found-but-deliberately-left with the
 reason. Never fabricate content to make an audit look clean.
 

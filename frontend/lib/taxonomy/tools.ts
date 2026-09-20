@@ -244,7 +244,7 @@ export const TOOLS: readonly Tool[] = [
     label: "Transformation Scorecard",
     href: "/research-lab/knowledge-workspace?tab=scorecard",
     pillars: ["operations"],
-    chapters: ["11", "15"],
+    chapters: ["1", "11", "15"],
     desc: "Executive five-pillar dashboard — score all five pillars, with the Equity Imperative as a cross-cutting indicator and Vermont RHT Program milestone tracking.",
   },
   {
