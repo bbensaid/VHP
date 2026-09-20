@@ -31,16 +31,21 @@ wrong. They are not preferences. Violating one is a failure, not a judgment call
    `.docx → .md`, one way, always.
 10. **Always back up before editing** and re-locate target text in the *fresh* file. Never
     trust an offset from an earlier copy.
-11. **There is no renderer here.** Any claim about pages, gaps or layout is an estimate until
-    the author looks. Say so.
+11. **There IS a renderer now.** `python3 book-build/render_check.py <first> <last>` regenerates
+    the PDF via LibreOffice and renders pages to PNG in /tmp/htr_render/ — Read them before
+    claiming anything about layout, colour, size, or spacing. A Stop hook enforces this: it
+    refuses to end the turn if the .docx was edited more recently than the last logged render.
+    "I can't see the page" is no longer a true statement. Do not say it.
 
 **Book formatting — run the audit, never eyeball it**
 
 23. **After ANY edit that creates or restyles a table or paragraph, run
-    `python3 book-build/audit_format.py`.** It checks the four defects that have
-    recurred: white-on-light cells, off-norm font sizes, italic pile-ups, and data
-    rows styled as header rows. Reporting a formatting fix without running it is
-    how the same bug shipped twice.
+    `python3 book-build/check_format.py`.** (NOT `audit_format.py` — that file is an
+    orphaned early copy, wired into nothing; this rule pointed at it by mistake for
+    a while. `check_format.py` is the one every hook actually calls.) It checks the
+    defects that have recurred: white-on-light header cells, off-norm font sizes,
+    and data rows styled as header rows. Reporting a formatting fix without running
+    it is how the same bug shipped twice.
 24. **NEVER hand-write OOXML builders in an edit script. Import them:**
     `sys.path.insert(0, 'book-build'); from docx_build import run, para, cell, row, table`.
     This is the one that actually matters. The white-on-light bug shipped twice
@@ -277,9 +282,10 @@ Docs rewrites `keepNext` on import** (a build ships ~123 on; the round-trip
 returns ~76 on and ~1058 off). Do not attempt a `keepNext`-based fix — it
 cannot survive the author's workflow.
 
-There is **no renderer here.** Any claim about pages, gaps, or layout is an
-estimate until the author looks at it. Say so rather than reporting an
-estimate as a measurement.
+There is a renderer now (see directive 11) — `book-build/render_check.py`. Layout
+claims about landscape sandwiches, page breaks, and the keepNext behaviour above
+can and should be checked against a real render before being asserted, the same
+as any other layout claim.
 
 ## Audio narration
 
