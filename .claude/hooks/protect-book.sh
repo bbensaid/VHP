@@ -28,6 +28,24 @@ case "$tool" in
     fi
     ;;
   Bash)
+    # No manuscript edit without a logged acknowledgement of CLAUDE.md.
+    # The author verifies with: cat .claude/book-session.log
+    if printf '%s' "$field" | grep -q 'patch_docx\.py'; then
+      DIR="${CLAUDE_PROJECT_DIR:-/Users/baba/Vermont-Health-Platform}"
+      LOG="$DIR/.claude/book-session.log"
+      fresh=0
+      if [ -f "$LOG" ]; then
+        mt=$(stat -f %m "$LOG" 2>/dev/null || stat -c %Y "$LOG" 2>/dev/null)
+        [ $(( $(date +%s) - mt )) -le 14400 ] && fresh=1
+      fi
+      if [ "$fresh" -ne 1 ]; then
+        echo "BLOCKED: no acknowledgement of CLAUDE.md in this session." >&2
+        echo "Run first:  python3 book-build/ack.py <chapter>" >&2
+        echo "It prints the standing directives and logs the read to" >&2
+        echo ".claude/book-session.log, which the author can inspect." >&2
+        exit 2
+      fi
+    fi
     if printf '%s' "$field" | grep -qE '(^|[^a-zA-Z0-9_/.-])(\./)?book\.sh|build_docx\.py|fold_docx_edits\.py|sync_from_gdocs\.py'; then
       echo "BLOCKED: the md-to-docx rebuild pipeline is retired." >&2
       echo "Pointing it at HTR_Book_v42.docx overwrites the author's work." >&2
