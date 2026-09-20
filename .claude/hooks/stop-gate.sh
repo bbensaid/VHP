@@ -36,5 +36,25 @@ if [ $? -ne 0 ]; then
   echo "passes all five criteria." >&2
   exit 2
 fi
+
+# The manuscript was edited: it must have been RENDERED AND LOOKED AT since,
+# not just checked structurally. render_check.py logs the docx mtime it
+# rendered against; this line requires a log entry at-or-after this edit.
+RLOG="$DIR/.claude/render-log"
+rendered=0
+if [ -f "$RLOG" ]; then
+  last_render_mtime=$(tail -1 "$RLOG" | grep -oE 'docx_mtime=[0-9]+' | cut -d= -f2)
+  [ -n "$last_render_mtime" ] && [ "$last_render_mtime" -ge "$sig" ] && rendered=1
+fi
+if [ "$rendered" -ne 1 ]; then
+  echo "$sig" > "$STAMP"
+  echo "STOP BLOCKED — the manuscript was edited but not rendered and looked at" >&2
+  echo "since that edit. Structural checks passing is not enough." >&2
+  echo "" >&2
+  echo "Run:  python3 book-build/render_check.py <firstpage> <lastpage>" >&2
+  echo "Then Read the PNG(s) it writes to /tmp/htr_render/ before ending the turn." >&2
+  exit 2
+fi
+
 echo "$sig" > "$STAMP"
 exit 0
