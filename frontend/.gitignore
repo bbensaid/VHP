@@ -43,3 +43,6 @@ next-env.d.ts
 # ad-hoc dumps / scratch files
 repomix-output.txt
 /dist/
+
+# compiled output for the framework engine unit tests
+.engine-build/

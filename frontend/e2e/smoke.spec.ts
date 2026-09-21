@@ -1,4 +1,11 @@
 import { test, expect } from "@playwright/test";
+import { BRAND_CONFIG, resolveBrand } from "../lib/brand";
+
+// The app serves four domains and names itself from the request host (lib/brand.ts).
+// Expect the name the host under test actually renders: "Solutions" on localhost and the
+// solutions domains, "Review" on the healthtransformationreview domains.
+const BASE_URL = process.env.PLAYWRIGHT_BASE_URL ?? "http://localhost:3000";
+const BRAND_NAME = BRAND_CONFIG[resolveBrand(new URL(BASE_URL).hostname)].displayName;
 
 /**
  * Smoke tests for the top 10 most-trafficked routes.
@@ -21,7 +28,7 @@ interface Route {
 }
 
 const SMOKE_ROUTES: Route[] = [
-  { path: "/",                         expectedText: /Health Transformation Review/i,                ssr: true },
+  { path: "/",                         expectedText: new RegExp(BRAND_NAME, "i"),                     ssr: true },
   { path: "/book",                     expectedText: "Transforming",                                   ssr: true },
   { path: "/book/listen",              expectedText: /Listen|Audio Edition/i,                          ssr: true },
   { path: "/about/framework",          expectedText: /Five Pillars|Five-Pillar|Framework/i,             ssr: true },
@@ -37,7 +44,8 @@ const SMOKE_ROUTES: Route[] = [
 
 for (const route of SMOKE_ROUTES) {
   test(`renders ${route.path}`, async ({ page }) => {
-    const response = await page.goto(route.path);
+    // domcontentloaded, not "load": /book embeds the full-book PDF in an iframe and "load" waits for it (~25s).
+    const response = await page.goto(route.path, { waitUntil: "domcontentloaded" });
     if (route.ssr && response) {
       expect(response.status(), `expected 200 for ${route.path}`).toBeLessThan(400);
     }
