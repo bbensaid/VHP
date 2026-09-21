@@ -61,6 +61,46 @@ while True:
                         'takes Table7\'s firstRow band (white) on a pale fill. Build '
                         'cells with book-build/docx_build.py.' % (','.join(fills), txt))
 
+    # 4. STYLE-PAINTED FIRST ROW. Every table style in word/styles.xml has a
+    #    firstRow rule: navy 1b3a6b fill + white text. It applies whenever the
+    #    table's tblLook has the firstRow bit (0x0020) and the cell carries no
+    #    explicit fill of its own. Word and Google Docs honour it; LibreOffice
+    #    -- the only renderer available here -- does NOT, so no render ever
+    #    shows it. Two ways it goes wrong:
+    #      a) row 0 is a DATA row (tblHeader=0) -> a data row painted navy;
+    #      b) row 0 text has a hard-coded dark colour -> black on navy.
+    #    Found by the author on 2026-09-21 in two tables, with this checker
+    #    reporting clean. docx_build.table() had hardcoded tblLook=0020.
+    look = re.search(r'<w:tblLook w:val="([0-9a-fA-F]+)"', t)
+    if rows and look and (int(look.group(1), 16) & 0x0020):
+        r0 = rows[0]
+        c0 = re.findall(r'<w:tc>.*?</w:tc>', r0, re.S)
+        def _explicit_fill(c):
+            m = re.search(r'<w:tcPr>.*?<w:shd[^>]*w:fill="([0-9a-fA-F]{6}|auto)"', c, re.S)
+            return bool(m) and m.group(1).lower() != 'auto'
+        painted = [c for c in c0 if not _explicit_fill(c)]
+        if painted:
+            label = ' | '.join(''.join(TXT.findall(c)).strip()[:26] for c in c0)[:70]
+            if 'w:tblHeader w:val="1"' not in r0:
+                problems.append(
+                    'STYLE-PAINTED-DATA-ROW  %r  -- tblLook has firstRow on but row 0 is '
+                    'not a header, so Word/Google Docs paint it navy. Use tblLook 0600 '
+                    '(docx_build.table() does this now) or mark the row header=True.'
+                    % label)
+            else:
+                for c in painted:
+                    for rr in re.findall(r'<w:r\s[^>]*>(.*?)</w:r>', c, re.S):
+                        if '<w:t' not in rr:
+                            continue
+                        col = re.search(r'<w:color w:val="([0-9a-fA-F]{6})"', rr)
+                        if col and col.group(1).lower() in (
+                                '111111', '000000', '1a1a1a', '161b22', '222222', '333333'):
+                            problems.append(
+                                'BLACK-ON-NAVY  header %r has hard-coded dark text (%s) '
+                                'but no explicit fill, so the style paints it navy.'
+                                % (label, col.group(1)))
+                            break
+
     # 3. first DATA row dressed as a header
     if len(rows) >= 3:
         def prof(r):

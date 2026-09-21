@@ -44,7 +44,10 @@ wrong. They are not preferences. Violating one is a failure, not a judgment call
     orphaned early copy, wired into nothing; this rule pointed at it by mistake for
     a while. `check_format.py` is the one every hook actually calls.) It checks the
     defects that have recurred: white-on-light header cells, off-norm font sizes,
-    and data rows styled as header rows. Reporting a formatting fix without running
+    data rows styled as header rows, and (rule 4, added 2026-09-21) a header-less
+    table whose first row the table STYLE paints navy under black text — black-on-navy
+    in Word and Google Docs, but **invisible in every LibreOffice render**, so a clean
+    render proves nothing about it. Reporting a formatting fix without running
     it is how the same bug shipped twice.
 24. **NEVER hand-write OOXML builders in an edit script. Import them:**
     `sys.path.insert(0, 'book-build'); from docx_build import run, para, cell, row, table`.

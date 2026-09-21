@@ -58,5 +58,20 @@ t = table([1900, 7175], [row([cell(para(run('a')), PALE), cell(para(run('b')), P
 chk('table tags balanced', t.count('<w:tbl>') == t.count('</w:tbl>') == 1)
 chk('grid widths emitted', '<w:gridCol w:w="1900"/>' in t)
 
+print('\nstyle-painted first row (black-on-navy, found 2026-09-21):')
+_hdr = table([1900, 7175], [
+    row([cell(para(run('Pillar', bold=True, color='ffffff')), NAVY),
+         cell(para(run('Issues', bold=True, color='ffffff')), NAVY)], header=True),
+    row([cell(para(run('Policy')), PALE), cell(para(run('AUTHORITY')), PALE)])])
+_flat = table([1900, 7175], [
+    row([cell(para(run('Policy')), PALE), cell(para(run('AUTHORITY')), PALE)]),
+    row([cell(para(run('Technology')), PALE), cell(para(run('INFORMATION')), PALE)])])
+chk('table WITH a header row turns the style firstRow ON (0020)',
+    '<w:tblLook w:val="0020"/>' in _hdr)
+chk('table WITHOUT a header row turns firstRow OFF (0600) -- else row 0 paints navy',
+    '<w:tblLook w:val="0600"/>' in _flat and '0020' not in _flat)
+chk('header-less table can no longer carry black ink under a navy-painted row',
+    '<w:tblLook w:val="0020"/>' not in _flat)
+
 print('\npassed=%d failed=%d' % (ok, fail))
 sys.exit(1 if fail else 0)
