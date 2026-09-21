@@ -96,7 +96,19 @@ def row(cells, header=False):
 
 
 def table(cols, rows, border='c9d2dd'):
-    """cols: list of twip widths summing to ~9075. rows: list from row()."""
+    """cols: list of twip widths summing to ~9075. rows: list from row().
+
+    tblLook decides whether the table style's firstRow rule applies, and that
+    rule paints row 0 NAVY with white text. It must therefore be ON only when
+    row 0 really is a header (row(..., header=True)). This used to be hardcoded
+    to 0020 (on) for every table, so a header-less table got a style-painted navy
+    first row underneath run()'s default near-black ink: black on navy in Word
+    and Google Docs. LibreOffice ignores conditional table-style formatting, so
+    no render here ever showed it -- the author found it on 2026-09-21.
+    Header-less tables get 0600: firstRow, and both banding rules, all OFF.
+    """
+    has_header = bool(rows) and 'w:tblHeader w:val="1"' in rows[0]
+    look = '0020' if has_header else '0600'
     grid = ''.join('<w:gridCol w:w="%d"/>' % c for c in cols)
     return ('<w:tbl><w:tblPr><w:tblStyle w:val="Table7"/>'
             '<w:tblW w:w="9075.0" w:type="dxa"/><w:jc w:val="left"/>'
@@ -104,10 +116,10 @@ def table(cols, rows, border='c9d2dd'):
             + ''.join('<w:%s w:color="%s" w:space="0" w:sz="4" w:val="single"/>'
                       % (s, border)
                       for s in ('top', 'left', 'bottom', 'right', 'insideH', 'insideV'))
-            + '</w:tblBorders><w:tblLayout w:type="fixed"/><w:tblLook w:val="0020"/>'
+            + '</w:tblBorders><w:tblLayout w:type="fixed"/><w:tblLook w:val="%s"/>'
               '</w:tblPr><w:tblGrid>%s<w:tblGridChange w:id="0"><w:tblGrid>%s'
               '</w:tblGrid></w:tblGridChange></w:tblGrid>%s</w:tbl>'
-            % (grid, grid, ''.join(rows)))
+            % (look, grid, grid, ''.join(rows)))
 
 
 def body_para(text, **kw):
