@@ -14,8 +14,9 @@
     "bundle:check": "./scripts/check-bundle-size.sh",
     "check:pillars": "node scripts/check-pillar-doctrine.mjs",
     "check:chapters": "node scripts/check-chapterref-integrity.mjs",
-    "smoke": "npm run typecheck && npm run lint && npm run check:pillars && npm run build && npm run bundle:check",
-    "seed:courses": "node scripts/seed-courses.mjs"
+    "smoke": "npm run typecheck && npm run lint && npm run check:pillars && npm run test:engine && npm run build && npm run bundle:check",
+    "seed:courses": "node scripts/seed-courses.mjs",
+    "test:engine": "tsc lib/framework/dependencies.ts lib/framework/sequence-engine.ts --rootDir lib --outDir .engine-build --module commonjs --target es2022 --skipLibCheck && node scripts/test-sequence-engine.cjs"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

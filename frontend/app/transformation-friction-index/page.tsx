@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import FromTheBook from "@/components/FromTheBook";
+import FrictionScorer from "@/components/framework/FrictionScorer";
 import {
   ArrowTrendingUpIcon,
   ExclamationTriangleIcon,
@@ -100,10 +101,13 @@ export default function TransformationFrictionIndexPage() {
           <p className="text-slate-400 max-w-2xl leading-relaxed">
             High friction doesn't mean abandon — it means sequence, de-risk, and resource differently. The Friction Index moves HTR from a review platform to a predictive strategy tool.
           </p>
-          <div className="mt-8 inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/40 text-amber-300 px-4 py-2 rounded-lg text-sm font-bold">
+          <a
+            href="#score"
+            className="mt-8 inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/40 text-amber-300 px-4 py-2 rounded-lg text-sm font-bold hover:bg-amber-500/30 transition-colors"
+          >
             <ClockIcon className="w-4 h-4" />
-            Interactive scoring tool — Coming Q3 2026
-          </div>
+            Score your own transformation ↓
+          </a>
         </div>
       </section>
 
@@ -115,6 +119,11 @@ export default function TransformationFrictionIndexPage() {
           excerpt="Friction is what a closed gate feels like from the inside. Chapter 1 defines the binding constraint — the one pillar whose incompleteness stalls everything downstream of it — and argues that identifying it is the first analytical task of any transformation. This index is that diagnosis, scored."
           href="/read/chapter-01"
         />
+      </section>
+
+      {/* The binding-constraint scorer — the question the page above poses. */}
+      <section id="score" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 scroll-mt-8">
+        <FrictionScorer />
       </section>
 
       {/* ── WHAT IT MEASURES ──────────────────────────────────────────────── */}

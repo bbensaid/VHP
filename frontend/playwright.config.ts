@@ -23,7 +23,12 @@ const BASE_HOST = new URL(BASE_URL).hostname.replace(/^www\./, "");
 
 export default defineConfig({
   testDir: "./e2e",
-  timeout: 30_000,
+  // 60s, not 30s, because the suite is normally run against `next dev`, which
+  // compiles each route on first request. Under a parallel run the heavy client
+  // pages (/book, /book/listen, /htr-simulator) contend for that single dev
+  // server and a cold compile alone can pass 30s. Every test passes in a few
+  // seconds once warm, so this is headroom for the server, not slow assertions.
+  timeout: 60_000,
   expect: { timeout: 5_000 },
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
