@@ -13,14 +13,11 @@
  *   - lagMonths for tech→econ:   §1.15 ("a Technology gap shows up in
  *     Economics results a year later")
  *
- * KNOWN BOOK DISCREPANCY (reported to the author 2026-09-21, unresolved):
- * §1.12.1 names three critical-path dependencies — Policy→Economics,
- * Technology→Economics, Economics→Clinical. But the §1.4.1 heading flags
- * Policy→Operations "(critical path)" and the §1.4.2 heading does NOT flag
- * Technology→Economics. Both passages say "three"; they disagree on which
- * third. This file implements §1.12.1, because the simulator exists to enforce
- * §1.12's Principle 1. If the author resolves it the other way, flip the two
- * flags marked BOOK-DISCREPANCY below and the tests will tell you what moved.
+ * A book discrepancy found while building this (§1.12.1 named three critical-path
+ * dependencies while the §1.4.1/§1.4.2 headings flagged a different three) was
+ * RESOLVED IN THE MANUSCRIPT on 2026-09-21 in favour of §1.12.1, and the §1.4.x
+ * heading verbs were aligned to Figure 1.3 at the same time. Book and code now
+ * agree; this file is no longer carrying a known conflict.
  */
 import type { PillarId } from "../taxonomy/pillars";
 
@@ -74,13 +71,11 @@ export const DEPENDENCIES: readonly Dependency[] = [
     lagMonths: 12, bookSection: "§1.4.1",
   },
   {
-    // BOOK-DISCREPANCY: §1.4.1's heading says "(critical path)"; §1.12.1's list omits it.
-    from: "policy", to: "operations", kind: "requires", criticalPath: false, feedback: false,
+    from: "policy", to: "operations", kind: "drives", criticalPath: false, feedback: false,
     label: "Statutory deadlines force execution capacity",
     lagMonths: 12, bookSection: "§1.4.1",
   },
   {
-    // BOOK-DISCREPANCY: §1.4.2's heading omits "(critical path)"; §1.12.1 names it as one of the three.
     from: "technology", to: "economics", kind: "enables", criticalPath: true, feedback: false,
     label: "Analytics makes VBC financial management possible",
     lagMonths: 12, bookSection: "§1.4.2 / §1.12.1",

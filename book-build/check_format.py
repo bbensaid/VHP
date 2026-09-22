@@ -135,6 +135,25 @@ while True:
         problems.append('FONT-SIZE  sz=24 (12pt) body paragraph, norm is 21 (10.5pt):  %r'
                         % txt[:58])
 
+# --- 5. fallback fonts -------------------------------------------------------
+# Editors have twice applied a Unicode-fallback font to a WHOLE run rather than
+# one character, because Garamond was assumed not to have that glyph. Found by
+# rendering on 2026-09-21: a §2.1 table cell rendered in Gungsuh (a Korean
+# typeface) because its run contained "−"; 26 other runs carried "Cardo" for
+# the same reason with "→". Both are unnecessary -- the same characters appear
+# in default-font runs elsewhere in the book and render correctly -- so any
+# font outside the three the book actually uses is a defect, not a style.
+ALLOWED_FONTS = {'Garamond', 'Calibri', 'Arial'}
+found_fonts = set(re.findall(r'w:ascii="([^"]+)"', x))
+for f in sorted(found_fonts - ALLOWED_FONTS):
+    n = x.count('w:ascii="%s"' % f)
+    problems.append(
+        'FALLBACK-FONT  %r used in %d run(s) -- likely a whole-run Unicode '
+        'fallback (e.g. an arrow or minus sign) applied because Garamond was '
+        'assumed not to have that glyph. Check for the same character in a '
+        'default-font run elsewhere in the book; if it renders, strip the '
+        'w:rFonts override instead.' % (f, n))
+
 if problems:
     sys.stderr.write('\nBOOK FORMAT CHECK FAILED (%d):\n' % len(problems))
     for p in problems[:12]:

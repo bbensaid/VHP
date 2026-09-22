@@ -16,6 +16,8 @@ import {
   type StateTimeSeries,
   type QuarterlySnapshot,
 } from "@/lib/data/hti-timeseries-data";
+import { pillarSeriesFor, policyDataAvailable, pillarComposite } from "@/lib/framework/pillar-mapping";
+import type { PillarId } from "@/lib/taxonomy/pillars";
 
 ChartJS.register(...registerables);
 
@@ -82,7 +84,7 @@ const NATIONAL_CLINICAL_BENCHMARKS: StateTimeSeries["clinicalMetrics"] = {
 };
 
 const QUARTERS = nationalBenchmark.map(q => q.quarter);
-const TAB_IDS = ["simulation", "trends", "compare", "clinical"] as const;
+const TAB_IDS = ["simulation", "trends", "pillars", "compare", "clinical"] as const;
 type TabId = typeof TAB_IDS[number];
 
 // ─── HELPERS ──────────────────────────────────────────────────────────────────
@@ -442,6 +444,7 @@ export default function HTIDashboard() {
         {[
           { id: "simulation", label: "Simulation Engine",   icon: <Zap size={14} /> },
           { id: "trends",     label: "Trend Analysis",      icon: <TrendingUp size={14} /> },
+          { id: "pillars",    label: "Five-Pillar View",    icon: <Target size={14} /> },
           { id: "compare",    label: "Peer Comparison",     icon: <GitCompare size={14} /> },
           { id: "clinical",   label: "Clinical Deep-Dive",  icon: <FlaskConical size={14} /> },
         ].map(tab => (
@@ -783,6 +786,114 @@ export default function HTIDashboard() {
                 })}
             </div>
           </div>
+        </div>
+      )}
+
+      {/* ── TAB: FIVE-PILLAR VIEW ───────────────────────────────────────────────
+          Built 2026-09-21: Chapters 13/15/16 cite this dashboard as tracking
+          "five-pillar status... over time." The six domains above (Digital/VBC/
+          Clinical Excellence/Patient Experience/Workforce/Equity) predate that
+          framework and don't map onto it, so this tab derives the five pillars
+          from the same underlying data instead of replacing the original index.
+          See lib/framework/pillar-mapping.ts for exactly how, and why Policy is
+          scored for Vermont only, not guessed for the rest. */}
+      {activeTab === "pillars" && (
+        <div className="space-y-8">
+          <div className="flex flex-wrap gap-4 items-center">
+            <div className="flex flex-col gap-1">
+              <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400">State</label>
+              <select
+                value={trendState}
+                onChange={e => setTrendState(e.target.value)}
+                className="bg-white border border-slate-200 text-slate-800 text-sm font-medium rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              >
+                {stateOptions.map(s => (
+                  <option key={s.id} value={s.id}>{s.name}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          {(() => {
+            const state = stateTimeSeries.find(s => s.stateId === trendState);
+            if (!state) return null;
+            const series = pillarSeriesFor(state);
+            const latest = series[series.length - 1];
+            const first = series[0];
+            const hasPolicy = policyDataAvailable(trendState);
+            const rows: { id: PillarId; label: string; icon: string }[] = [
+              { id: "policy", label: "Policy", icon: "⚖️" },
+              { id: "technology", label: "Technology", icon: "💻" },
+              { id: "economics", label: "Economics", icon: "💰" },
+              { id: "clinical", label: "Clinical", icon: "🩺" },
+              { id: "operations", label: "Operations", icon: "⚙️" },
+            ];
+            return (
+              <>
+                <div className="bg-white rounded-2xl shadow-xl border border-slate-100 p-8">
+                  <div className="flex items-center justify-between mb-6">
+                    <div>
+                      <h3 className="font-black text-slate-900 text-xl">{state.stateName} — Five-Pillar Status</h3>
+                      <p className="text-sm text-slate-400 mt-1">
+                        Latest quarter: {latest.quarter}. Equity is reported separately and is never
+                        averaged into a pillar score.
+                      </p>
+                    </div>
+                    <div className="px-4 py-2 rounded-xl font-bold text-sm bg-indigo-50 text-indigo-700 border border-indigo-200">
+                      Composite: {pillarComposite(latest)}
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    {rows.map(r => {
+                      const val = latest[r.id];
+                      const firstVal = first[r.id];
+                      const delta = val != null && firstVal != null ? Math.round((val - firstVal) * 10) / 10 : null;
+                      return (
+                        <div key={r.id} className="flex items-center gap-4">
+                          <span className="w-28 text-sm font-bold text-slate-700 flex items-center gap-1.5">
+                            <span>{r.icon}</span> {r.label}
+                          </span>
+                          <div className="flex-1 h-3 bg-slate-100 rounded-full overflow-hidden">
+                            {val != null && (
+                              <div
+                                className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-indigo-400"
+                                style={{ width: `${val}%` }}
+                              />
+                            )}
+                          </div>
+                          <span className="w-16 text-right text-sm font-black text-slate-900 tabular-nums">
+                            {val != null ? val : "—"}
+                          </span>
+                          <span className={`w-20 text-right text-xs font-bold tabular-nums ${
+                            delta == null ? "text-slate-300" : delta >= 0 ? "text-emerald-600" : "text-rose-600"
+                          }`}>
+                            {delta == null ? "no data" : `${delta >= 0 ? "+" : ""}${delta}`}
+                          </span>
+                        </div>
+                      );
+                    })}
+                    <div className="flex items-center gap-4 pt-2 border-t border-slate-100">
+                      <span className="w-28 text-sm font-bold text-violet-700 flex items-center gap-1.5">
+                        <span>⚖️</span> Equity
+                      </span>
+                      <div className="flex-1 h-3 bg-violet-50 rounded-full overflow-hidden">
+                        <div className="h-full rounded-full bg-violet-400" style={{ width: `${latest.equity}%` }} />
+                      </div>
+                      <span className="w-16 text-right text-sm font-black text-violet-700 tabular-nums">{latest.equity}</span>
+                      <span className="w-20" />
+                    </div>
+                  </div>
+                  {!hasPolicy && (
+                    <p className="mt-6 text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3">
+                      Policy is not yet scored for {state.stateName}. This platform has sourced,
+                      book-verified Policy data only for Vermont (Acts 167/51/68); every other
+                      state&rsquo;s Policy pillar is left unscored rather than estimated.
+                    </p>
+                  )}
+                </div>
+              </>
+            );
+          })()}
         </div>
       )}
 
