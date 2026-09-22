@@ -57,7 +57,19 @@ export default defineConfig({
           expires: -1,
         },
       ],
-      origins: [],
+      // There is a SECOND gate after the beta cookie: components/WelcomeRedirect.tsx
+      // client-side redirects any first-time visitor to /welcome unless
+      // localStorage holds "htr-user-role". Without it a test lands on the
+      // persona picker instead of the page under test, and whether it survives is
+      // a race between the assertion and a useEffect — which is why some specs
+      // passed and some failed on the same run. "all" is the value the page's own
+      // "Skip — Show Me Everything" button writes, i.e. no personalization.
+      origins: [
+        {
+          origin: BASE_URL,
+          localStorage: [{ name: "htr-user-role", value: "all" }],
+        },
+      ],
     },
   },
 

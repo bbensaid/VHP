@@ -372,6 +372,7 @@ const TIER_COSTS: Record<string, number> = {
   High: 22000,
   "Very High": 68000,
 };
+const TIER_ORDER: (keyof TierDist)[] = ["Very Low", "Low", "Moderate", "High", "Very High"];
 
 const TIER_COLORS: Record<string, string> = {
   "Very Low": "bg-green-400",
@@ -420,6 +421,16 @@ function PopulationSegmentation() {
     "Food insecurity": 18,
     "Transportation barriers": 15,
   });
+  // Share of each clinical tier currently enrolled in a care-management
+  // program. These are panel inputs, not published rates — the point of the
+  // exercise is to enter your own and see the gap they leave.
+  const [cmEnrollment, setCmEnrollment] = useState<TierDist>({
+    "Very Low": 0,
+    Low: 2,
+    Moderate: 10,
+    High: 35,
+    "Very High": 60,
+  });
 
   const tierSum = Object.values(tierDist).reduce((a, b) => a + b, 0);
 
@@ -461,7 +472,6 @@ function PopulationSegmentation() {
   // ceiling has a 45% chance of an upward tier shift; a panel with all SDOH
   // sliders at 0 shifts nobody, so setting them to zero must reproduce the
   // raw clinical distribution exactly.
-  const TIER_ORDER: (keyof TierDist)[] = ["Very Low", "Low", "Moderate", "High", "Very High"];
   const sdohShiftFraction = useMemo(() => {
     const perFactorWeight = 0.3; // each factor's own max (50%) contributes up to 30% shift odds
     return (Object.values(sdoh).reduce((a, b) => a + b / 50, 0) / Object.keys(sdoh).length) * perFactorWeight;
@@ -470,6 +480,10 @@ function PopulationSegmentation() {
   const sdohAdjusted = useMemo(() => {
     const counts = Object.fromEntries(TIER_ORDER.map((t) => [t, Math.round((tierDist[t] / 100) * panelSize)])) as Record<keyof TierDist, number>;
     const adjusted: Record<keyof TierDist, number> = { ...counts };
+    // movedOut[i] = patients leaving tier i for tier i+1. Kept per-tier, not just
+    // as a total, because the care-management gap below needs to know which tier
+    // an upward-shifted patient came FROM — they carry that tier's enrolment.
+    const movedOut = TIER_ORDER.map(() => 0);
     let movedTotal = 0;
     for (let i = 0; i < TIER_ORDER.length - 1; i++) {
       const from = TIER_ORDER[i];
@@ -477,12 +491,56 @@ function PopulationSegmentation() {
       const moving = Math.round(counts[from] * sdohShiftFraction);
       adjusted[from] -= moving;
       adjusted[to] += moving;
+      movedOut[i] = moving;
       movedTotal += moving;
     }
     const highRiskBefore = counts["High"] + counts["Very High"];
     const highRiskAfter = adjusted["High"] + adjusted["Very High"];
-    return { counts, adjusted, movedTotal, highRiskBefore, highRiskAfter };
+    return { counts, adjusted, movedOut, movedTotal, highRiskBefore, highRiskAfter };
   }, [tierDist, panelSize, sdohShiftFraction]);
+
+  // ── Care-management coverage gap ─────────────────────────────────────────
+  // Built 2026-09-22. Chapter 9 §9.9 sends readers here to "compare tiers to
+  // current care-management assignment" and find "patients in a high tier who
+  // are receiving no care management — the gap quality measures do not
+  // surface." No care-management field existed anywhere in this tool, so the
+  // promise was undeliverable; the 2026-09-21 build answered only the other
+  // half of the citation (who changes tier).
+  //
+  // Method: care management is assigned off the CLINICAL-ONLY tier, which is
+  // the status quo the chapter is criticising. A patient pushed into a high
+  // tier by social risk therefore keeps the enrolment rate of the tier they
+  // came from, and the difference between the two gaps is the part of the gap
+  // that clinical stratification — and the quality measures built on it —
+  // never sees.
+  const cmGap = useMemo(() => {
+    const { counts, adjusted, movedOut } = sdohAdjusted;
+    const rate = (t: keyof TierDist) => cmEnrollment[t] / 100;
+
+    // Enrolled among the clinically-identified high tiers.
+    const enrolledBefore = counts["High"] * rate("High") + counts["Very High"] * rate("Very High");
+
+    // After the shift each tier holds stayers (own rate) plus incomers from the
+    // tier below (that tier's rate, because that is where they were assessed).
+    const idxHigh = TIER_ORDER.indexOf("High");
+    const idxVeryHigh = TIER_ORDER.indexOf("Very High");
+    const enrolledAfter =
+      (counts["High"] - movedOut[idxHigh]) * rate("High") +
+      movedOut[idxHigh - 1] * rate(TIER_ORDER[idxHigh - 1]) +
+      counts["Very High"] * rate("Very High") +
+      movedOut[idxVeryHigh - 1] * rate("High");
+
+    const gapBefore = Math.round(sdohAdjusted.highRiskBefore - enrolledBefore);
+    const gapAfter = Math.round(sdohAdjusted.highRiskAfter - enrolledAfter);
+    return {
+      gapBefore,
+      gapAfter,
+      hidden: gapAfter - gapBefore,
+      enrolledAfter: Math.round(enrolledAfter),
+      highRiskAfter: adjusted["High"] + adjusted["Very High"],
+      coverageAfter: sdohAdjusted.highRiskAfter > 0 ? (enrolledAfter / sdohAdjusted.highRiskAfter) * 100 : 0,
+    };
+  }, [sdohAdjusted, cmEnrollment]);
 
   return (
     <div className="space-y-6">
@@ -646,6 +704,7 @@ function PopulationSegmentation() {
                 min={0}
                 max={50}
                 value={sdoh[k]}
+                aria-label={`${k} prevalence`}
                 onChange={(e) => setSdoh((prev) => ({ ...prev, [k]: Number(e.target.value) }))}
                 className="w-full accent-rose-600"
               />
@@ -683,20 +742,20 @@ function PopulationSegmentation() {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
               <div className="bg-rose-50 border border-rose-100 rounded-lg p-3">
                 <div className="text-xs text-rose-700 mb-1">Patients changing tier</div>
-                <div className="text-xl font-bold text-rose-900">
+                <div className="text-xl font-bold text-rose-900" data-testid="sdoh-moved-total">
                   {sdohAdjusted.movedTotal.toLocaleString()}
                 </div>
               </div>
               <div className="bg-rose-50 border border-rose-100 rounded-lg p-3">
                 <div className="text-xs text-rose-700 mb-1">High/Very High before</div>
-                <div className="text-xl font-bold text-rose-900">
+                <div className="text-xl font-bold text-rose-900" data-testid="sdoh-high-before">
                   {sdohAdjusted.highRiskBefore.toLocaleString()}
                 </div>
               </div>
               <div className="bg-rose-50 border border-rose-100 rounded-lg p-3">
                 <div className="text-xs text-rose-700 mb-1">High/Very High after</div>
                 <div className="text-xl font-bold text-rose-900">
-                  {sdohAdjusted.highRiskAfter.toLocaleString()}
+                  <span data-testid="sdoh-high-after">{sdohAdjusted.highRiskAfter.toLocaleString()}</span>
                   <span className="text-xs font-medium text-rose-500 ml-1">
                     (+{(sdohAdjusted.highRiskAfter - sdohAdjusted.highRiskBefore).toLocaleString()})
                   </span>
@@ -731,6 +790,71 @@ function PopulationSegmentation() {
             </div>
           </>
         )}
+      </div>
+
+      {/* Care-management coverage gap — Chapter 9's "gap quality measures do not surface" */}
+      <div className="bg-white border border-rose-100 rounded-xl p-5 shadow-sm">
+        <h3 className="font-semibold text-rose-900 mb-1 text-sm uppercase tracking-wide">
+          Care-Management Coverage Gap
+        </h3>
+        <p className="text-xs text-slate-500 mb-4">
+          Enter what share of each <em>clinical</em> tier is enrolled in care management today. Because
+          assignment is made on clinical tier, patients pushed into a high tier by social risk keep the
+          enrolment rate of the tier they came from — which is why the gap widens below.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div>
+            {TIER_ORDER.map((t) => (
+              <div key={t} className="mb-3">
+                <div className="flex justify-between text-xs mb-1">
+                  <span className={`font-medium ${TIER_TEXT[t]}`}>{t}</span>
+                  <span className="font-semibold text-rose-700">{cmEnrollment[t]}% enrolled</span>
+                </div>
+                <input
+                  type="range"
+                  min={0}
+                  max={100}
+                  value={cmEnrollment[t]}
+                  aria-label={`${t} care management enrollment`}
+                  onChange={(e) =>
+                    setCmEnrollment((prev) => ({ ...prev, [t]: Number(e.target.value) }))
+                  }
+                  className="w-full accent-rose-600"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="space-y-3">
+            <div className="bg-rose-50 border border-rose-200 rounded-lg p-4">
+              <div className="text-xs text-rose-700 mb-1">
+                High-tier patients receiving no care management
+              </div>
+              <div className="text-3xl font-bold text-rose-900" data-testid="cm-gap-after">
+                {cmGap.gapAfter.toLocaleString()}
+              </div>
+              <div className="text-xs text-rose-600 mt-1">
+                of {sdohAdjusted.highRiskAfter.toLocaleString()} in High/Very High once social risk is
+                included — {cmGap.coverageAfter.toFixed(0)}% covered
+              </div>
+            </div>
+
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+              <div className="text-xs text-amber-800 font-semibold mb-1">
+                The part quality measures do not surface
+              </div>
+              <div className="text-2xl font-bold text-amber-900" data-testid="cm-gap-hidden">
+                +{cmGap.hidden.toLocaleString()}
+              </div>
+              <div className="text-xs text-amber-700 mt-1">
+                Clinical stratification alone shows a gap of {cmGap.gapBefore.toLocaleString()}. Once
+                social risk is included the gap is {cmGap.gapAfter.toLocaleString()} — the difference
+                is patients who are high-risk in fact but not on any registry that triggers outreach.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Results dashboard */}

@@ -77,12 +77,19 @@ export default defineType({
       title: 'Healthcare Pillar',
       type: 'string',
       options: {
+        // The five pillars of the book's framework, in BUILD_ORDER. Corrected
+        // 2026-09-22: this list still carried the retired six-pillar taxonomy —
+        // it offered "Equity" (which is the cross-cutting imperative, never a
+        // pillar, and so has no dependency gate to run capital against) and had
+        // no "Operations" at all, so an Operations deal could not be recorded
+        // and the sequencing check could never flag one. Safe to change: the
+        // dataset holds zero investmentDeal documents, so nothing to migrate.
         list: [
           { title: 'Policy',     value: 'Policy'     },
-          { title: 'Economics',  value: 'Economics'  },
           { title: 'Technology', value: 'Technology' },
+          { title: 'Economics',  value: 'Economics'  },
           { title: 'Clinical',   value: 'Clinical'   },
-          { title: 'Equity',     value: 'Equity'     },
+          { title: 'Operations', value: 'Operations' },
         ],
       },
     }),
