@@ -16,7 +16,7 @@ import {
   type StateTimeSeries,
   type QuarterlySnapshot,
 } from "@/lib/data/hti-timeseries-data";
-import { pillarSeriesFor, policyDataAvailable, pillarComposite } from "@/lib/framework/pillar-mapping";
+import { pillarSeriesFor, policyDataAvailable, frameworkReadiness, pillarTrend } from "@/lib/framework/pillar-mapping";
 import type { PillarId } from "@/lib/taxonomy/pillars";
 
 ChartJS.register(...registerables);
@@ -819,8 +819,8 @@ export default function HTIDashboard() {
             if (!state) return null;
             const series = pillarSeriesFor(state);
             const latest = series[series.length - 1];
-            const first = series[0];
             const hasPolicy = policyDataAvailable(trendState);
+            const readiness = frameworkReadiness(trendState);
             const rows: { id: PillarId; label: string; icon: string }[] = [
               { id: "policy", label: "Policy", icon: "⚖️" },
               { id: "technology", label: "Technology", icon: "💻" },
@@ -839,35 +839,72 @@ export default function HTIDashboard() {
                         averaged into a pillar score.
                       </p>
                     </div>
-                    <div className="px-4 py-2 rounded-xl font-bold text-sm bg-indigo-50 text-indigo-700 border border-indigo-200">
-                      Composite: {pillarComposite(latest)}
-                    </div>
+                    {readiness && (
+                      <div className="px-4 py-2 rounded-xl text-right bg-indigo-50 border border-indigo-200">
+                        <div className="text-[10px] font-bold uppercase tracking-widest text-indigo-400">
+                          Readiness source
+                        </div>
+                        <div className="text-sm font-bold text-indigo-700">{readiness.label}</div>
+                        <div className="text-[10px] text-indigo-400">{readiness.bookRef}</div>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Why two columns, and why they disagree. Added 2026-09-22 after this tab showed
+                      Vermont Technology at 90 (HTI digital maturity) while the HTR Simulator and the
+                      Friction Index put it at 45 and called it the binding constraint. */}
+                  <div className="mb-6 text-xs text-slate-500 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 leading-relaxed">
+                    <strong className="text-slate-700">Readiness</strong>{" "}is the pillar&rsquo;s ability to
+                    issue what the pillars downstream of it need — the same sourced scores{" "}
+                    <a href="/htr-simulator" className="text-indigo-600 underline">the HTR Simulator</a>{" "}
+                    runs. <strong className="text-slate-700">Trend</strong>{" "}is the direction this
+                    platform&rsquo;s adoption and maturity index has moved over{" "}
+                    {series.length}{" "}quarters. They are different measurements and they can point
+                    opposite ways: Vermont&rsquo;s digital maturity has risen steadily while its
+                    Technology gate stays closed, because exchange between those systems is still
+                    voluntary and incomplete. A rising trend is not an open gate.
+                  </div>
+                  <div className="flex items-center gap-4 pb-2 mb-1 border-b border-slate-100 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                    <span className="w-28">Pillar</span>
+                    <span className="flex-1">Readiness (sourced)</span>
+                    <span className="w-12 text-right">Score</span>
+                    <span className="w-36 text-right">Trend (maturity index)</span>
                   </div>
                   <div className="space-y-4">
                     {rows.map(r => {
-                      const val = latest[r.id];
-                      const firstVal = first[r.id];
-                      const delta = val != null && firstVal != null ? Math.round((val - firstVal) * 10) / 10 : null;
+                      const score = readiness ? readiness.scores[r.id] : null;
+                      const trend = pillarTrend(series, r.id);
                       return (
-                        <div key={r.id} className="flex items-center gap-4">
+                        <div key={r.id} className="flex items-center gap-4" data-testid={`pillar-row-${r.id}`}>
                           <span className="w-28 text-sm font-bold text-slate-700 flex items-center gap-1.5">
                             <span>{r.icon}</span> {r.label}
                           </span>
                           <div className="flex-1 h-3 bg-slate-100 rounded-full overflow-hidden">
-                            {val != null && (
+                            {score != null && (
                               <div
-                                className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-indigo-400"
-                                style={{ width: `${val}%` }}
+                                className={`h-full rounded-full ${
+                                  score < 50
+                                    ? "bg-gradient-to-r from-rose-500 to-rose-400"
+                                    : score < 70
+                                      ? "bg-gradient-to-r from-amber-500 to-amber-400"
+                                      : "bg-gradient-to-r from-indigo-500 to-indigo-400"
+                                }`}
+                                style={{ width: `${score}%` }}
                               />
                             )}
                           </div>
-                          <span className="w-16 text-right text-sm font-black text-slate-900 tabular-nums">
-                            {val != null ? val : "—"}
+                          <span
+                            className="w-12 text-right text-sm font-black text-slate-900 tabular-nums"
+                            data-testid={`pillar-readiness-${r.id}`}
+                          >
+                            {score != null ? score : "—"}
                           </span>
-                          <span className={`w-20 text-right text-xs font-bold tabular-nums ${
-                            delta == null ? "text-slate-300" : delta >= 0 ? "text-emerald-600" : "text-rose-600"
+                          <span className={`w-36 text-right text-xs font-bold tabular-nums ${
+                            trend == null ? "text-slate-300" : trend.direction === "improving" ? "text-emerald-600" : trend.direction === "decaying" ? "text-rose-600" : "text-slate-400"
                           }`}>
-                            {delta == null ? "no data" : `${delta >= 0 ? "+" : ""}${delta}`}
+                            {trend == null
+                              ? "no trend data"
+                              : `${trend.direction} ${trend.delta >= 0 ? "+" : ""}${trend.delta}`}
                           </span>
                         </div>
                       );
@@ -879,15 +916,19 @@ export default function HTIDashboard() {
                       <div className="flex-1 h-3 bg-violet-50 rounded-full overflow-hidden">
                         <div className="h-full rounded-full bg-violet-400" style={{ width: `${latest.equity}%` }} />
                       </div>
-                      <span className="w-16 text-right text-sm font-black text-violet-700 tabular-nums">{latest.equity}</span>
-                      <span className="w-20" />
+                      <span className="w-12 text-right text-sm font-black text-violet-700 tabular-nums">{latest.equity}</span>
+                      <span className="w-36 text-right text-[10px] font-bold uppercase tracking-wider text-violet-400">
+                        maturity index
+                      </span>
                     </div>
                   </div>
                   {!hasPolicy && (
                     <p className="mt-6 text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3">
-                      Policy is not yet scored for {state.stateName}. This platform has sourced,
-                      book-verified Policy data only for Vermont (Acts 167/51/68); every other
-                      state&rsquo;s Policy pillar is left unscored rather than estimated.
+                      Policy is not yet scored for {state.stateName}, and neither is any other pillar&rsquo;s
+                      readiness. This platform has sourced, book-verified pillar readiness only for
+                      Vermont (Acts 167/51/68, §1.14); every other state is left unscored rather than
+                      estimated. The trend column still works for every state, because it reads this
+                      platform&rsquo;s own maturity index rather than the book&rsquo;s sourced scores.
                     </p>
                   )}
                 </div>

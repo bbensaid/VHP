@@ -8,13 +8,32 @@
  * it. Per the author's standing instruction, the tool is extended to match the book rather than the
  * book reworded down.
  *
- * Four of the five pillars have a defensible direct mapping onto existing HTI domains:
- *   Technology -> digital      (data/interoperability maturity is literally the Technology pillar)
- *   Clinical   -> outcomes     ("Clinical Excellence" already is the Clinical pillar's own name)
- *   Economics  -> vbc          (value-based-care penetration is a payment-incentive-structure metric)
- *   Operations -> workforce    ("Workforce Wellness" is execution capacity, the Operations currency)
+ * Four of the five pillars have an HTI domain that moves with them, and this file uses those domains
+ * as a TREND PROXY only:
+ *   Technology -> digital      (digital maturity)
+ *   Clinical   -> outcomes     ("Clinical Excellence")
+ *   Economics  -> vbc          (value-based-care penetration)
+ *   Operations -> workforce    ("Workforce Wellness" as execution capacity)
  * Patient Experience has no pillar home and is dropped from this view (it remains in the original
  * six-domain HTI composite, untouched).
+ *
+ * CORRECTED 2026-09-22 — this is the important part. The first version of this file treated those
+ * four domains as the pillars' READINESS SCORES, and that put the platform in direct contradiction
+ * with itself: HTI has Vermont's digital maturity at 90 in Q1-2025, so the dashboard showed
+ * "Technology 90" while the HTR Simulator, the Friction Index and Chapter 1 all say Vermont's
+ * Technology pillar sits at 45 and is the binding constraint of the entire sequence. A reader
+ * sent to one tool by Chapter 13 and the other by Chapter 1 got opposite answers about the single
+ * most important claim in the book.
+ *
+ * They are not the same measurement. An HTI domain scores adoption and maturity, benchmarked across
+ * states; a pillar readiness score asks whether the pillar can issue its currency to the pillars
+ * downstream of it. Vermont scores well on the first and badly on the second for exactly the reason
+ * Chapter 12's readiness table records: "VITL operational but voluntary; incomplete adoption ...
+ * small providers disconnected." Widespread systems, unreliable exchange between them.
+ *
+ * So: readiness levels come from the framework's own sourced preset (`frameworkReadiness`), the HTI
+ * domains supply direction of travel only, and the two are labelled separately in the UI. Neither is
+ * derived from the other, and no pillar level is invented for a state we have no source for.
  *
  * Policy has NO existing HTI domain and no honest way to derive one from the other five numbers —
  * doing so would be inventing a score. Vermont is the one exception: its Policy trajectory is not
@@ -27,7 +46,13 @@
  */
 import type { QuarterlySnapshot, StateTimeSeries } from "../data/hti-timeseries-data";
 import type { PillarId } from "../taxonomy/pillars";
+import { PRESETS } from "./sequence-engine";
 
+/**
+ * One quarter of the TREND series. The four domain-backed numbers are adoption/maturity proxies
+ * used to read direction of travel, NOT pillar readiness — see the header. `policy` is the one
+ * sourced level in here, because statutory enactment dates are a matter of record.
+ */
 export interface PillarSnapshot {
   quarter: string;
   policy: number | null; // null = not yet scored for this state
@@ -87,11 +112,32 @@ export function pillarSeriesFor(state: StateTimeSeries): PillarSnapshot[] {
 }
 
 /**
- * Five-pillar composite for a snapshot. Averages only the pillars with a real score — Policy is
- * excluded from the mean wherever it's null, rather than treated as 0, so a state with no Policy
- * data isn't penalized for a gap in OUR data rather than a gap in its actual policy architecture.
+ * The framework's own sourced pillar readiness for a state, or null where there is none.
+ *
+ * This is deliberately a lookup, not a calculation: it returns the exact preset the HTR Simulator
+ * runs (`PRESETS` in sequence-engine.ts), so the dashboard cannot drift from the simulator the way
+ * it did before 2026-09-22. Vermont is the only state the book sources pillar readiness for; every
+ * other state returns null and the UI says so rather than showing a number.
  */
-export function pillarComposite(p: PillarSnapshot): number {
-  const scored = [p.technology, p.economics, p.clinical, p.operations, ...(p.policy != null ? [p.policy] : [])];
-  return Math.round((scored.reduce((a, b) => a + b, 0) / scored.length) * 10) / 10;
+export function frameworkReadiness(
+  stateId: string,
+): { scores: Record<PillarId, number>; label: string; bookRef: string } | null {
+  if (stateId !== "vermont") return null;
+  const preset = PRESETS.find((p) => p.id === "vermont-2026");
+  if (!preset) return null;
+  return { scores: preset.scores, label: preset.label, bookRef: preset.bookRef };
+}
+
+/** Direction of travel for one pillar across the trend series: the book asks only whether a pillar
+ *  is "improving, flat, or decaying between reporting intervals". */
+export function pillarTrend(
+  series: PillarSnapshot[],
+  pillar: PillarId,
+): { delta: number; direction: "improving" | "flat" | "decaying" } | null {
+  if (series.length < 2) return null;
+  const first = series[0][pillar];
+  const last = series[series.length - 1][pillar];
+  if (first == null || last == null) return null;
+  const delta = Math.round((last - first) * 10) / 10;
+  return { delta, direction: delta > 0 ? "improving" : delta < 0 ? "decaying" : "flat" };
 }
