@@ -7,6 +7,18 @@ import { SectionCard, SliderField, StatBox } from "../APMDesignLab.atoms";
 
 // ─── TAB 3: Global Budget Simulator ─────────────────────────────────────────
 
+// Vermont All-Payer TCOC preset. Sourced 2026-09-22: statewide net patient
+// revenue ≈$2.89B (FY2023 actuals, GMCB); 3.5% NPR growth target set by GMCB
+// for FY25 under the Vermont All-Payer Model agreement. Hospital/physician/
+// pharmacy trend splits and the population-growth/inflation inputs are not
+// Vermont-specific published figures — they stay at the tool's generic
+// defaults even when this preset is loaded; only base spending and the
+// budget growth cap are real, sourced Vermont numbers.
+const VERMONT_PRESET = {
+  baseSpending: 2890,
+  growthRate: 3.5,
+};
+
 export function GlobalBudgetSimulator() {
   const [growthRate, setGrowthRate] = useState(3.5);
   const [baseSpending, setBaseSpending] = useState(2000); // in $M
@@ -17,6 +29,13 @@ export function GlobalBudgetSimulator() {
   const [pharmTrend, setPharmTrend] = useState(8.0);
   const [applySDOH, setApplySDOH] = useState(false);
   const [sdohOffset, setSdohOffset] = useState(1.0);
+  const [isVermontPreset, setIsVermontPreset] = useState(false);
+
+  function loadVermontPreset() {
+    setBaseSpending(VERMONT_PRESET.baseSpending);
+    setGrowthRate(VERMONT_PRESET.growthRate);
+    setIsVermontPreset(true);
+  }
 
   const results = useMemo(() => {
     const base = baseSpending * 1_000_000; // convert M to $
@@ -76,13 +95,27 @@ export function GlobalBudgetSimulator() {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
       <div className="space-y-5">
         <SectionCard title="Global Budget Parameters">
+          <button
+            onClick={loadVermontPreset}
+            className={`w-full mb-4 rounded-lg border px-3 py-2 text-xs font-medium text-left transition-colors ${
+              isVermontPreset
+                ? "border-emerald-600 bg-emerald-900/30 text-emerald-300"
+                : "border-gray-700 bg-gray-800 text-slate-300 hover:border-emerald-700"
+            }`}
+          >
+            {isVermontPreset ? "✓ " : ""}Load Vermont (All-Payer TCOC) preset
+            <div className="text-slate-500 font-normal mt-0.5">
+              $2.89B statewide base (FY2023 actuals, GMCB) · 3.5%/yr growth cap
+              (GMCB FY25 All-Payer Model NPR target)
+            </div>
+          </button>
           <SliderField
             label="Global Budget Growth Rate (Annual)"
             value={growthRate}
             min={0}
             max={6}
             step={0.1}
-            onChange={setGrowthRate}
+            onChange={(v) => { setGrowthRate(v); setIsVermontPreset(false); }}
             display={`${growthRate.toFixed(1)}% / yr`}
           />
           <SliderField
@@ -91,7 +124,7 @@ export function GlobalBudgetSimulator() {
             min={500}
             max={10000}
             step={100}
-            onChange={setBaseSpending}
+            onChange={(v) => { setBaseSpending(v); setIsVermontPreset(false); }}
             display={`$${fmt(baseSpending)}M`}
           />
           <SliderField

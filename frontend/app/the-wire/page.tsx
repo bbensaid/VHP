@@ -17,19 +17,29 @@ interface WireItem {
   published_at: string | null;
 }
 
-async function getWireItems(): Promise<{ items: WireItem[]; fetched_at: string }> {
+interface UnavailableSource {
+  label: string;
+  reason: string;
+  url: string;
+}
+
+async function getWireItems(): Promise<{
+  items: WireItem[];
+  fetched_at: string;
+  unavailable_sources: UnavailableSource[];
+}> {
   try {
     const baseUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
     const res = await fetch(`${baseUrl}/api/wire`, { next: { revalidate: 900 } });
     if (!res.ok) throw new Error("Wire API error");
     return res.json();
   } catch {
-    return { items: [], fetched_at: new Date().toISOString() };
+    return { items: [], fetched_at: new Date().toISOString(), unavailable_sources: [] };
   }
 }
 
 export default async function TheWirePage() {
-  const [{ items, fetched_at }, user] = await Promise.all([
+  const [{ items, fetched_at, unavailable_sources }, user] = await Promise.all([
     getWireItems(),
     getUser(),
   ]);
@@ -58,7 +68,12 @@ export default async function TheWirePage() {
 
       {/* Feed */}
       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm p-6">
-        <WireFeed initialItems={items} fetchedAt={fetched_at} currentUserId={user?.id} />
+        <WireFeed
+          initialItems={items}
+          fetchedAt={fetched_at}
+          currentUserId={user?.id}
+          unavailableSources={unavailable_sources}
+        />
       </div>
     </div>
   );

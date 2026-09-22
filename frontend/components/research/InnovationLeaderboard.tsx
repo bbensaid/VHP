@@ -28,19 +28,40 @@ type TabId = "states" | "hospitals" | "payers";
 
 type SortDirection = "asc" | "desc";
 
+/**
+ * Rebuilt 2026-09-22 (tool-extension queue #3/#6) so this tab is explicitly PILLAR-shaped
+ * (Policy/Technology/Economics/Clinical/Operations) instead of the old six-domain maturity
+ * index (digitalMaturity/valueBased/sdohEquity/clinicalExcellence/patientExperience/
+ * workforceWellness) that Ch13 cited as if it were the book's five pillars but wasn't.
+ *
+ * Per project_readiness_vs_maturity.md, pillar READINESS is sourced for Vermont ONLY, from
+ * lib/framework/sequence-engine.ts PRESETS (via lib/framework/pillar-mapping.ts). It is never
+ * invented for other states. So this table's five columns are NOT "readiness" for 49 of 50
+ * states — they are a "Pillar Indicator": real, cited data where a genuine multi-state source
+ * exists, and a clearly disclosed SIMULATED estimate where none does. Only Vermont's row is
+ * overridden with the actual sourced readiness numbers so it cannot drift from the Simulator /
+ * Friction Index / HTI Dashboard (see VERMONT_READINESS_OVERRIDE below and the on-screen
+ * watermark). Full sourcing notes: see PILLAR_METHODOLOGY_NOTES below the data.
+ */
 interface StateRecord {
   rank: number;
   state: string;
   abbr: string;
   region: "Northeast" | "South" | "Midwest" | "West";
   composite: number;
-  digitalMaturity: number;
-  valueBased: number;
-  sdohEquity: number;
-  clinicalExcellence: number;
-  patientExperience: number;
-  workforceWellness: number;
-  yearOverYear: number;
+  policy: number;
+  technology: number;
+  economics: number;
+  clinical: number;
+  operations: number;
+  /** Real federal/state program this state's Policy score is classified from (or "—"). */
+  policyProgram: string;
+  /** True for exactly one state (Vermont): all five numbers are the book's sourced pillar
+   *  readiness (sequence-engine PRESETS), not this table's own indicator methodology. */
+  readinessSourced: boolean;
+  /** Per-dimension: true where the number is a disclosed simulated estimate rather than
+   *  derived from a real published multi-state dataset. Always false when readinessSourced. */
+  simulated: { technology: boolean; economics: boolean; operations: boolean };
 }
 
 interface HospitalSystem {
@@ -72,96 +93,123 @@ interface Payer {
 }
 
 // ─────────────────────────────────────────────────────────────
-// DATA: ALL 50 STATES
+// DATA: ALL 50 STATES — FIVE PILLARS (Policy/Technology/Economics/Clinical/Operations)
 // ─────────────────────────────────────────────────────────────
-
-const RAW_STATES: Omit<StateRecord, "rank">[] = [
-  // New England (highest)
-  { state: "Massachusetts", abbr: "MA", region: "Northeast", composite: 85, digitalMaturity: 88, valueBased: 87, sdohEquity: 84, clinicalExcellence: 86, patientExperience: 83, workforceWellness: 79, yearOverYear: 2.1 },
-  { state: "Vermont",       abbr: "VT", region: "Northeast", composite: 82, digitalMaturity: 85, valueBased: 84, sdohEquity: 88, clinicalExcellence: 80, patientExperience: 82, workforceWellness: 76, yearOverYear: 3.2 },
-  { state: "Minnesota",     abbr: "MN", region: "Midwest",   composite: 80, digitalMaturity: 82, valueBased: 81, sdohEquity: 79, clinicalExcellence: 83, patientExperience: 80, workforceWellness: 74, yearOverYear: 1.8 },
-  { state: "Colorado",      abbr: "CO", region: "West",      composite: 78, digitalMaturity: 83, valueBased: 79, sdohEquity: 76, clinicalExcellence: 78, patientExperience: 78, workforceWellness: 75, yearOverYear: 2.4 },
-  { state: "Oregon",        abbr: "OR", region: "West",      composite: 76, digitalMaturity: 80, valueBased: 77, sdohEquity: 79, clinicalExcellence: 74, patientExperience: 76, workforceWellness: 72, yearOverYear: 1.5 },
-  { state: "Connecticut",   abbr: "CT", region: "Northeast", composite: 73, digitalMaturity: 77, valueBased: 74, sdohEquity: 72, clinicalExcellence: 75, patientExperience: 73, workforceWellness: 68, yearOverYear: 0.9 },
-  { state: "Washington",    abbr: "WA", region: "West",      composite: 73, digitalMaturity: 81, valueBased: 75, sdohEquity: 74, clinicalExcellence: 72, patientExperience: 72, workforceWellness: 66, yearOverYear: 2.0 },
-  { state: "Hawaii",        abbr: "HI", region: "West",      composite: 74, digitalMaturity: 72, valueBased: 74, sdohEquity: 81, clinicalExcellence: 73, patientExperience: 77, workforceWellness: 70, yearOverYear: 1.1 },
-  { state: "New York",      abbr: "NY", region: "Northeast", composite: 72, digitalMaturity: 78, valueBased: 73, sdohEquity: 70, clinicalExcellence: 74, patientExperience: 70, workforceWellness: 64, yearOverYear: 0.7 },
-  { state: "California",    abbr: "CA", region: "West",      composite: 71, digitalMaturity: 79, valueBased: 72, sdohEquity: 73, clinicalExcellence: 69, patientExperience: 70, workforceWellness: 63, yearOverYear: 1.3 },
-  { state: "Maine",         abbr: "ME", region: "Northeast", composite: 71, digitalMaturity: 73, valueBased: 72, sdohEquity: 74, clinicalExcellence: 70, patientExperience: 74, workforceWellness: 65, yearOverYear: 1.6 },
-  { state: "New Hampshire", abbr: "NH", region: "Northeast", composite: 70, digitalMaturity: 74, valueBased: 71, sdohEquity: 68, clinicalExcellence: 72, patientExperience: 71, workforceWellness: 64, yearOverYear: 0.8 },
-  { state: "Rhode Island",  abbr: "RI", region: "Northeast", composite: 69, digitalMaturity: 71, valueBased: 70, sdohEquity: 71, clinicalExcellence: 68, patientExperience: 70, workforceWellness: 62, yearOverYear: 0.5 },
-  { state: "Maryland",      abbr: "MD", region: "South",     composite: 69, digitalMaturity: 74, valueBased: 70, sdohEquity: 68, clinicalExcellence: 72, patientExperience: 66, workforceWellness: 61, yearOverYear: 1.2 },
-  { state: "New Jersey",    abbr: "NJ", region: "Northeast", composite: 68, digitalMaturity: 72, valueBased: 69, sdohEquity: 67, clinicalExcellence: 70, patientExperience: 67, workforceWellness: 60, yearOverYear: 0.6 },
-  { state: "Wisconsin",     abbr: "WI", region: "Midwest",   composite: 68, digitalMaturity: 70, valueBased: 68, sdohEquity: 67, clinicalExcellence: 71, patientExperience: 68, workforceWellness: 63, yearOverYear: 0.4 },
-  { state: "Virginia",      abbr: "VA", region: "South",     composite: 66, digitalMaturity: 71, valueBased: 67, sdohEquity: 64, clinicalExcellence: 68, patientExperience: 65, workforceWellness: 58, yearOverYear: 1.0 },
-  { state: "Pennsylvania",  abbr: "PA", region: "Northeast", composite: 67, digitalMaturity: 70, valueBased: 67, sdohEquity: 65, clinicalExcellence: 69, patientExperience: 66, workforceWellness: 60, yearOverYear: 0.3 },
-  { state: "Iowa",          abbr: "IA", region: "Midwest",   composite: 67, digitalMaturity: 68, valueBased: 68, sdohEquity: 66, clinicalExcellence: 70, patientExperience: 67, workforceWellness: 62, yearOverYear: 0.8 },
-  { state: "Nebraska",      abbr: "NE", region: "Midwest",   composite: 66, digitalMaturity: 67, valueBased: 66, sdohEquity: 64, clinicalExcellence: 68, patientExperience: 66, workforceWellness: 61, yearOverYear: 0.5 },
-  { state: "Utah",          abbr: "UT", region: "West",      composite: 68, digitalMaturity: 74, valueBased: 70, sdohEquity: 63, clinicalExcellence: 69, patientExperience: 68, workforceWellness: 65, yearOverYear: 1.7 },
-  { state: "Michigan",      abbr: "MI", region: "Midwest",   composite: 65, digitalMaturity: 68, valueBased: 65, sdohEquity: 64, clinicalExcellence: 67, patientExperience: 64, workforceWellness: 58, yearOverYear: 0.2 },
-  { state: "Ohio",          abbr: "OH", region: "Midwest",   composite: 64, digitalMaturity: 67, valueBased: 64, sdohEquity: 62, clinicalExcellence: 66, patientExperience: 63, workforceWellness: 57, yearOverYear: 0.1 },
-  { state: "Illinois",      abbr: "IL", region: "Midwest",   composite: 63, digitalMaturity: 68, valueBased: 63, sdohEquity: 61, clinicalExcellence: 64, patientExperience: 62, workforceWellness: 56, yearOverYear: -0.2 },
-  { state: "Montana",       abbr: "MT", region: "West",      composite: 65, digitalMaturity: 64, valueBased: 65, sdohEquity: 67, clinicalExcellence: 63, patientExperience: 68, workforceWellness: 62, yearOverYear: 1.0 },
-  { state: "Wyoming",       abbr: "WY", region: "West",      composite: 63, digitalMaturity: 62, valueBased: 63, sdohEquity: 61, clinicalExcellence: 62, patientExperience: 65, workforceWellness: 61, yearOverYear: 0.4 },
-  { state: "Idaho",         abbr: "ID", region: "West",      composite: 62, digitalMaturity: 66, valueBased: 63, sdohEquity: 59, clinicalExcellence: 62, patientExperience: 63, workforceWellness: 60, yearOverYear: 0.9 },
-  { state: "North Dakota",  abbr: "ND", region: "Midwest",   composite: 65, digitalMaturity: 64, valueBased: 65, sdohEquity: 63, clinicalExcellence: 67, patientExperience: 66, workforceWellness: 62, yearOverYear: 0.6 },
-  { state: "South Dakota",  abbr: "SD", region: "Midwest",   composite: 63, digitalMaturity: 62, valueBased: 63, sdohEquity: 61, clinicalExcellence: 65, patientExperience: 64, workforceWellness: 60, yearOverYear: 0.3 },
-  { state: "Kansas",        abbr: "KS", region: "Midwest",   composite: 63, digitalMaturity: 64, valueBased: 63, sdohEquity: 61, clinicalExcellence: 64, patientExperience: 63, workforceWellness: 59, yearOverYear: 0.2 },
-  { state: "Missouri",      abbr: "MO", region: "Midwest",   composite: 62, digitalMaturity: 64, valueBased: 62, sdohEquity: 60, clinicalExcellence: 63, patientExperience: 62, workforceWellness: 57, yearOverYear: -0.1 },
-  { state: "Indiana",       abbr: "IN", region: "Midwest",   composite: 62, digitalMaturity: 63, valueBased: 62, sdohEquity: 60, clinicalExcellence: 63, patientExperience: 61, workforceWellness: 57, yearOverYear: 0.1 },
-  { state: "Delaware",      abbr: "DE", region: "Northeast", composite: 66, digitalMaturity: 69, valueBased: 67, sdohEquity: 65, clinicalExcellence: 67, patientExperience: 66, workforceWellness: 60, yearOverYear: 0.7 },
-  { state: "North Carolina",abbr: "NC", region: "South",     composite: 62, digitalMaturity: 65, valueBased: 63, sdohEquity: 60, clinicalExcellence: 63, patientExperience: 61, workforceWellness: 57, yearOverYear: 0.8 },
-  { state: "Arizona",       abbr: "AZ", region: "West",      composite: 61, digitalMaturity: 66, valueBased: 62, sdohEquity: 59, clinicalExcellence: 61, patientExperience: 61, workforceWellness: 57, yearOverYear: 0.6 },
-  { state: "New Mexico",    abbr: "NM", region: "West",      composite: 60, digitalMaturity: 62, valueBased: 61, sdohEquity: 64, clinicalExcellence: 58, patientExperience: 60, workforceWellness: 54, yearOverYear: 0.3 },
-  { state: "Florida",       abbr: "FL", region: "South",     composite: 60, digitalMaturity: 63, valueBased: 61, sdohEquity: 57, clinicalExcellence: 61, patientExperience: 59, workforceWellness: 56, yearOverYear: -0.3 },
-  { state: "Georgia",       abbr: "GA", region: "South",     composite: 58, digitalMaturity: 62, valueBased: 59, sdohEquity: 55, clinicalExcellence: 59, patientExperience: 57, workforceWellness: 54, yearOverYear: 0.4 },
-  { state: "South Carolina",abbr: "SC", region: "South",     composite: 57, digitalMaturity: 60, valueBased: 57, sdohEquity: 54, clinicalExcellence: 58, patientExperience: 56, workforceWellness: 52, yearOverYear: 0.2 },
-  { state: "Texas",         abbr: "TX", region: "South",     composite: 57, digitalMaturity: 63, valueBased: 58, sdohEquity: 53, clinicalExcellence: 57, patientExperience: 56, workforceWellness: 53, yearOverYear: -0.1 },
-  { state: "Nevada",        abbr: "NV", region: "West",      composite: 56, digitalMaturity: 61, valueBased: 57, sdohEquity: 54, clinicalExcellence: 55, patientExperience: 55, workforceWellness: 53, yearOverYear: 0.1 },
-  { state: "Tennessee",     abbr: "TN", region: "South",     composite: 56, digitalMaturity: 59, valueBased: 56, sdohEquity: 53, clinicalExcellence: 57, patientExperience: 55, workforceWellness: 51, yearOverYear: 0.0 },
-  { state: "Kentucky",      abbr: "KY", region: "South",     composite: 54, digitalMaturity: 56, valueBased: 54, sdohEquity: 52, clinicalExcellence: 55, patientExperience: 53, workforceWellness: 49, yearOverYear: -0.2 },
-  { state: "Oklahoma",      abbr: "OK", region: "South",     composite: 52, digitalMaturity: 54, valueBased: 53, sdohEquity: 50, clinicalExcellence: 53, patientExperience: 51, workforceWellness: 48, yearOverYear: -0.4 },
-  { state: "Arkansas",      abbr: "AR", region: "South",     composite: 50, digitalMaturity: 52, valueBased: 51, sdohEquity: 49, clinicalExcellence: 51, patientExperience: 49, workforceWellness: 46, yearOverYear: -0.3 },
-  { state: "Louisiana",     abbr: "LA", region: "South",     composite: 51, digitalMaturity: 53, valueBased: 51, sdohEquity: 49, clinicalExcellence: 52, patientExperience: 50, workforceWellness: 47, yearOverYear: -0.5 },
-  { state: "Alabama",       abbr: "AL", region: "South",     composite: 49, digitalMaturity: 51, valueBased: 49, sdohEquity: 47, clinicalExcellence: 50, patientExperience: 48, workforceWellness: 45, yearOverYear: -0.6 },
-  { state: "Mississippi",   abbr: "MS", region: "South",     composite: 48, digitalMaturity: 49, valueBased: 48, sdohEquity: 46, clinicalExcellence: 49, patientExperience: 47, workforceWellness: 44, yearOverYear: -0.8 },
-  { state: "West Virginia", abbr: "WV", region: "South",     composite: 47, digitalMaturity: 48, valueBased: 47, sdohEquity: 46, clinicalExcellence: 48, patientExperience: 46, workforceWellness: 43, yearOverYear: -0.9 },
-  { state: "Alaska",        abbr: "AK", region: "West",      composite: 59, digitalMaturity: 60, valueBased: 58, sdohEquity: 63, clinicalExcellence: 57, patientExperience: 61, workforceWellness: 55, yearOverYear: 0.5 },
+//
+// SOURCING (full detail in the on-screen Methodology panel and PILLAR_METHODOLOGY_NOTES below):
+//   Policy    — REAL. Classified from CMS's AHEAD Model cohort assignments (cms.gov/priorities/
+//               innovation/innovation-models/ahead; AHA News 2024-07-11) and Pennsylvania's Rural
+//               Health Model (CMMI). Cohort 1 (VT, MD) = 92, Cohort 2 (CT, HI) = 72, Cohort 3 (RI)
+//               = 66, PA Rural Health Model = 55, no known state all-payer/global-budget program
+//               = 30. The tier-to-number mapping is this table's own transparent rule; the
+//               underlying classification (which states are in which federal model) is real and
+//               checkable.
+//   Clinical  — REAL. Derived from America's Health Rankings' overall state health ranking
+//               (United Health Foundation; corroborated across the 2022-based full ranking and
+//               the 2023 top-10, which agree on order for the top ranks). Rank 1-50 converted to a
+//               0-100 scale by score = 100 - (rank-1) * 100/49. This measures population health
+//               outcomes generally, not "clinical transformation" specifically — disclosed as a
+//               proxy, not a perfect match to the book's Clinical pillar definition.
+//   Technology, Economics, Operations — SIMULATED for every state except Vermont. No public
+//               multi-state dataset was found at 50-state granularity for any of the three
+//               (ONC's 2024 interoperability data brief and HCP-LAN's 2024 APM Measurement effort
+//               are both real but national-only, confirmed by direct source review — see
+//               PILLAR_METHODOLOGY_NOTES). These three columns are illustrative estimates loosely
+//               informed by this platform's pre-existing adoption/maturity index, NOT a published
+//               pillar-specific figure. They carry a visible "SIM" tag in the UI per this
+//               instruction from the author: disclose invented data with a clear on-screen label.
+//   Vermont's row — OVERRIDDEN with the book's actual sourced pillar READINESS (policy 95,
+//               technology 45, economics 55, clinical 65, operations 50) from
+//               lib/framework/sequence-engine.ts PRESETS "vermont-2026" via lib/framework/
+//               pillar-mapping.ts frameworkReadiness(). This is not this table's own indicator —
+//               it is pulled in so Vermont cannot show a different Technology number here than the
+//               HTR Simulator, the Friction Index, and the HTI Dashboard all show (that exact
+//               contradiction — Technology 90 here vs. 45 there — was found and fixed once this
+//               week; it must not reappear in a third tool).
+const RAW_STATES: Omit<StateRecord, "rank" | "composite">[] = [
+  { state: "Massachusetts", abbr: "MA", region: "Northeast", policy: 30, technology: 79, economics: 78, clinical: 98, operations: 71, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Vermont", abbr: "VT", region: "Northeast", policy: 95, technology: 45, economics: 55, clinical: 65, operations: 50, policyProgram: "AHEAD Cohort 1 (CMS, performance from Jan 2026)", readinessSourced: true, simulated: { technology: false, economics: false, operations: false } },
+  { state: "Minnesota", abbr: "MN", region: "Midwest", policy: 30, technology: 74, economics: 73, clinical: 90, operations: 67, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Colorado", abbr: "CO", region: "West", policy: 30, technology: 75, economics: 71, clinical: 78, operations: 68, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Oregon", abbr: "OR", region: "West", policy: 30, technology: 72, economics: 69, clinical: 63, operations: 65, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Connecticut", abbr: "CT", region: "Northeast", policy: 72, technology: 69, economics: 67, clinical: 94, operations: 61, policyProgram: "AHEAD Cohort 2 (CMS, performance from Jan 2027)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Washington", abbr: "WA", region: "West", policy: 30, technology: 73, economics: 68, clinical: 88, operations: 59, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Hawaii", abbr: "HI", region: "West", policy: 72, technology: 65, economics: 67, clinical: 84, operations: 63, policyProgram: "AHEAD Cohort 2 (CMS, performance from Jan 2027)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "New York", abbr: "NY", region: "Northeast", policy: 30, technology: 70, economics: 66, clinical: 51, operations: 58, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "California", abbr: "CA", region: "West", policy: 30, technology: 71, economics: 65, clinical: 53, operations: 57, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Maine", abbr: "ME", region: "Northeast", policy: 30, technology: 66, economics: 65, clinical: 76, operations: 58, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "New Hampshire", abbr: "NH", region: "Northeast", policy: 30, technology: 67, economics: 64, clinical: 100, operations: 58, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Rhode Island", abbr: "RI", region: "Northeast", policy: 66, technology: 64, economics: 63, clinical: 82, operations: 56, policyProgram: "AHEAD Cohort 3 (CMS, performance from 2026-27)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Maryland", abbr: "MD", region: "South", policy: 92, technology: 67, economics: 63, clinical: 86, operations: 55, policyProgram: "AHEAD Cohort 1 (CMS, performance from Jan 2026)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "New Jersey", abbr: "NJ", region: "Northeast", policy: 30, technology: 65, economics: 62, clinical: 80, operations: 54, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Wisconsin", abbr: "WI", region: "Midwest", policy: 30, technology: 63, economics: 61, clinical: 59, operations: 57, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Virginia", abbr: "VA", region: "South", policy: 30, technology: 64, economics: 60, clinical: 73, operations: 52, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Pennsylvania", abbr: "PA", region: "Northeast", policy: 55, technology: 63, economics: 60, clinical: 49, operations: 54, policyProgram: "PA Rural Health Model (CMMI, voluntary)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Iowa", abbr: "IA", region: "Midwest", policy: 30, technology: 61, economics: 61, clinical: 67, operations: 56, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Nebraska", abbr: "NE", region: "Midwest", policy: 30, technology: 60, economics: 59, clinical: 61, operations: 55, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Utah", abbr: "UT", region: "West", policy: 30, technology: 67, economics: 63, clinical: 92, operations: 58, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Michigan", abbr: "MI", region: "Midwest", policy: 30, technology: 61, economics: 58, clinical: 35, operations: 52, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Ohio", abbr: "OH", region: "Midwest", policy: 30, technology: 60, economics: 58, clinical: 33, operations: 51, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Illinois", abbr: "IL", region: "Midwest", policy: 30, technology: 61, economics: 57, clinical: 45, operations: 50, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Montana", abbr: "MT", region: "West", policy: 30, technology: 58, economics: 58, clinical: 39, operations: 56, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Wyoming", abbr: "WY", region: "West", policy: 30, technology: 56, economics: 57, clinical: 43, operations: 55, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Idaho", abbr: "ID", region: "West", policy: 30, technology: 59, economics: 57, clinical: 69, operations: 54, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "North Dakota", abbr: "ND", region: "Midwest", policy: 30, technology: 58, economics: 58, clinical: 71, operations: 56, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "South Dakota", abbr: "SD", region: "Midwest", policy: 30, technology: 56, economics: 57, clinical: 55, operations: 54, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Kansas", abbr: "KS", region: "Midwest", policy: 30, technology: 58, economics: 57, clinical: 47, operations: 53, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Missouri", abbr: "MO", region: "Midwest", policy: 30, technology: 58, economics: 56, clinical: 22, operations: 51, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Indiana", abbr: "IN", region: "Midwest", policy: 30, technology: 57, economics: 56, clinical: 27, operations: 51, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Delaware", abbr: "DE", region: "Northeast", policy: 30, technology: 62, economics: 60, clinical: 65, operations: 54, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "North Carolina", abbr: "NC", region: "South", policy: 30, technology: 58, economics: 57, clinical: 57, operations: 51, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Arizona", abbr: "AZ", region: "West", policy: 30, technology: 59, economics: 56, clinical: 37, operations: 51, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "New Mexico", abbr: "NM", region: "West", policy: 30, technology: 56, economics: 55, clinical: 18, operations: 49, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Florida", abbr: "FL", region: "South", policy: 30, technology: 57, economics: 55, clinical: 41, operations: 50, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Georgia", abbr: "GA", region: "South", policy: 30, technology: 56, economics: 53, clinical: 24, operations: 49, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "South Carolina", abbr: "SC", region: "South", policy: 30, technology: 54, economics: 51, clinical: 29, operations: 47, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Texas", abbr: "TX", region: "South", policy: 30, technology: 57, economics: 52, clinical: 20, operations: 48, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Nevada", abbr: "NV", region: "West", policy: 30, technology: 55, economics: 51, clinical: 16, operations: 48, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Tennessee", abbr: "TN", region: "South", policy: 30, technology: 53, economics: 50, clinical: 12, operations: 46, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Kentucky", abbr: "KY", region: "South", policy: 30, technology: 50, economics: 49, clinical: 14, operations: 44, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Oklahoma", abbr: "OK", region: "South", policy: 30, technology: 49, economics: 48, clinical: 10, operations: 43, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Arkansas", abbr: "AR", region: "South", policy: 30, technology: 47, economics: 46, clinical: 2, operations: 41, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Louisiana", abbr: "LA", region: "South", policy: 30, technology: 48, economics: 46, clinical: 0, operations: 42, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Alabama", abbr: "AL", region: "South", policy: 30, technology: 46, economics: 44, clinical: 6, operations: 40, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Mississippi", abbr: "MS", region: "South", policy: 30, technology: 44, economics: 43, clinical: 4, operations: 40, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "West Virginia", abbr: "WV", region: "South", policy: 30, technology: 43, economics: 42, clinical: 8, operations: 39, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Alaska", abbr: "AK", region: "West", policy: 30, technology: 54, economics: 52, clinical: 31, operations: 50, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
 ];
 
-// Compute composite, find top/weakest domain, assign ranks
-const DOMAIN_LABELS: Record<string, string> = {
-  digitalMaturity: "Digital Maturity",
-  valueBased: "Value-Based Care",
-  sdohEquity: "SDOH/Equity",
-  clinicalExcellence: "Clinical Excellence",
-  patientExperience: "Patient Experience",
-  workforceWellness: "Workforce Wellness",
-};
+/** Sources cited in the Methodology panel — kept as data so the UI and this comment can't drift. */
+const PILLAR_METHODOLOGY_NOTES = {
+  policy: "CMS AHEAD Model cohort assignments (cms.gov/priorities/innovation/innovation-models/ahead) and the CMMI Pennsylvania Rural Health Model. Tier-to-score mapping is this tool's own rule over a real, checkable classification.",
+  technology: "SIMULATED. ONC/ASTP Data Brief No. 71 (May 2024), \"Interoperable Exchange of Patient Health Information Among U.S. Hospitals: 2023,\" confirmed to report only national interoperability rates (70% of hospitals engaged in all 4 exchange domains in 2023) with no state-level breakdown. No 50-state technology dataset exists publicly; values here are illustrative estimates, not a published figure.",
+  economics: "SIMULATED. HCP-LAN's 2024 APM Measurement Effort (hcp-lan.org/2024-infographic) is real and national: 44.9% of payments in Category 3-4 APMs, 28.7% in downside-risk APMs; by line of business, Medicare Advantage 60.0%, Medicaid 42.7%, Medicare FFS 44.4%. It surveyed 73 health plans plus 4 FFS-Medicaid states — not a 50-state panel. Per-state values here are illustrative estimates benchmarked against these national figures, not a published state-level APM percentage.",
+  clinical: "America's Health Rankings (United Health Foundation), overall state health ranking, converted from rank (1-50) to a 0-100 scale. A population-health-outcomes proxy, not a literal measure of \"clinical transformation.\"",
+  operations: "SIMULATED. No public multi-state dataset was found for care-management/operational capacity comparable across all 50 states. Illustrative estimate only.",
+} as const;
 
 function getDomainExtremes(s: Omit<StateRecord, "rank">) {
   const domains = [
-    { key: "digitalMaturity", val: s.digitalMaturity },
-    { key: "valueBased", val: s.valueBased },
-    { key: "sdohEquity", val: s.sdohEquity },
-    { key: "clinicalExcellence", val: s.clinicalExcellence },
-    { key: "patientExperience", val: s.patientExperience },
-    { key: "workforceWellness", val: s.workforceWellness },
+    { key: "policy", label: "Policy", val: s.policy },
+    { key: "technology", label: "Technology", val: s.technology },
+    { key: "economics", label: "Economics", val: s.economics },
+    { key: "clinical", label: "Clinical", val: s.clinical },
+    { key: "operations", label: "Operations", val: s.operations },
   ];
   const sorted = [...domains].sort((a, b) => b.val - a.val);
-  return { top: DOMAIN_LABELS[sorted[0].key], weakest: DOMAIN_LABELS[sorted[sorted.length - 1].key] };
+  return { top: sorted[0].label, weakest: sorted[sorted.length - 1].label };
 }
 
 const NATIONAL_AVG = {
-  digitalMaturity: 65,
-  valueBased: 65,
-  sdohEquity: 63,
-  clinicalExcellence: 65,
-  patientExperience: 64,
-  workforceWellness: 59,
+  policy: Math.round(RAW_STATES.reduce((sum, s) => sum + s.policy, 0) / RAW_STATES.length),
+  technology: Math.round(RAW_STATES.reduce((sum, s) => sum + s.technology, 0) / RAW_STATES.length),
+  economics: Math.round(RAW_STATES.reduce((sum, s) => sum + s.economics, 0) / RAW_STATES.length),
+  clinical: Math.round(RAW_STATES.reduce((sum, s) => sum + s.clinical, 0) / RAW_STATES.length),
+  operations: Math.round(RAW_STATES.reduce((sum, s) => sum + s.operations, 0) / RAW_STATES.length),
 };
 
 const STATES: StateRecord[] = [...RAW_STATES]
+  .map((s) => ({ ...s, composite: Math.round((s.policy + s.technology + s.economics + s.clinical + s.operations) / 5) }))
   .sort((a, b) => b.composite - a.composite)
   .map((s, i) => ({ ...s, rank: i + 1 }));
 
@@ -303,7 +351,19 @@ function ScoreBar({ score, avg, color }: { score: number; avg: number; color: st
 // TAB 1: STATE RANKINGS
 // ─────────────────────────────────────────────────────────────
 
-type StateSort = "rank" | "composite" | "digitalMaturity" | "valueBased" | "sdohEquity" | "clinicalExcellence" | "patientExperience" | "workforceWellness" | "yearOverYear";
+type StateSort = "rank" | "composite" | "policy" | "technology" | "economics" | "clinical" | "operations";
+
+/** A cell whose number is a disclosed simulated estimate rather than real published data. */
+function SimBadge() {
+  return (
+    <span
+      title="SIMULATED — no public 50-state dataset exists for this dimension; illustrative estimate only"
+      className="ml-1 align-middle inline-block text-[9px] font-black tracking-wider text-amber-300 bg-amber-900/50 border border-amber-600/50 rounded px-1 py-0.5"
+    >
+      SIM
+    </span>
+  );
+}
 
 function StateRankings() {
   const [search, setSearch] = useState("");
@@ -343,15 +403,34 @@ function StateRankings() {
   );
 
   const handleExport = () => {
-    const lines = ["Rank\tState\tComposite\tTop Domain\tWeakest Domain\tYoY Change", ...filtered.map(s => {
+    const lines = ["Rank\tState\tComposite\tPolicy\tTechnology\tEconomics\tClinical\tOperations\tTop Pillar\tWeakest Pillar\tPolicy Program", ...filtered.map(s => {
       const { top, weakest } = getDomainExtremes(s);
-      return `${s.rank}\t${s.state}\t${s.composite}\t${top}\t${weakest}\t${s.yearOverYear > 0 ? "+" : ""}${s.yearOverYear}`;
+      return `${s.rank}\t${s.state}\t${s.composite}\t${s.policy}\t${s.technology}\t${s.economics}\t${s.clinical}\t${s.operations}\t${top}\t${weakest}\t${s.policyProgram}`;
     })];
     navigator.clipboard.writeText(lines.join("\n"));
   };
 
   return (
     <div className="space-y-4">
+      {/* SIMULATED-DATA WATERMARK — required by the author: Technology, Economics and Operations
+          have no public 50-state source and are disclosed estimates, not published statistics.
+          Vermont is the one exception (its five numbers are the book's sourced pillar readiness). */}
+      <div className="rounded-xl border-2 border-amber-500 bg-amber-950/40 px-4 py-3 flex items-start gap-3">
+        <span className="text-2xl leading-none">⚠️</span>
+        <div className="text-xs text-amber-200 leading-relaxed">
+          <span className="font-black uppercase tracking-widest text-amber-300">Simulated data notice — </span>
+          The <strong>Technology</strong>, <strong>Economics</strong> and <strong>Operations</strong> columns below
+          (marked <SimBadge />) are illustrative estimates. No public dataset scores these three pillars for all 50
+          states — confirmed by direct review of ONC's 2024 interoperability brief (national-only) and HCP-LAN's 2024
+          APM Measurement effort (national/by-payer-category only, not by state). <strong>Policy</strong> and{" "}
+          <strong>Clinical</strong> are real, cited data (CMS AHEAD Model cohorts; America&rsquo;s Health Rankings).{" "}
+          <strong>Vermont</strong>&rsquo;s row is the one exception to all of this: its five numbers are pulled directly
+          from this book&rsquo;s own sourced pillar readiness (the same numbers the{" "}
+          <a href="/htr-simulator" className="underline text-amber-100">HTR Simulator</a> runs), not estimated here.
+          See Methodology for full source detail.
+        </div>
+      </div>
+
       {/* Controls */}
       <div className="flex flex-wrap gap-3 items-center">
         <div className="relative flex-1 min-w-[180px]">
@@ -394,15 +473,14 @@ function StateRankings() {
               <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">State</th>
               <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">Region</th>
               <ColHeader label="Composite" k="composite" />
-              <ColHeader label="Digital" k="digitalMaturity" />
-              <ColHeader label="VBC" k="valueBased" />
-              <ColHeader label="SDOH/Equity" k="sdohEquity" />
-              <ColHeader label="Clinical" k="clinicalExcellence" />
-              <ColHeader label="Patient Exp." k="patientExperience" />
-              <ColHeader label="Workforce" k="workforceWellness" />
-              <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">Top Domain</th>
+              <ColHeader label="Policy" k="policy" />
+              <ColHeader label="Technology" k="technology" />
+              <ColHeader label="Economics" k="economics" />
+              <ColHeader label="Clinical" k="clinical" />
+              <ColHeader label="Operations" k="operations" />
+              <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">Top Pillar</th>
               <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">Weakest</th>
-              <ColHeader label="YoY" k="yearOverYear" />
+              <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">Policy Program</th>
               <th className="px-3 py-2" />
             </tr>
           </thead>
@@ -413,7 +491,7 @@ function StateRankings() {
               return (
                 <React.Fragment key={s.state}>
                   <tr
-                    className="hover:bg-fuchsia-950/30 transition-colors cursor-pointer"
+                    className={`hover:bg-fuchsia-950/30 transition-colors cursor-pointer ${s.readinessSourced ? "bg-indigo-950/30" : ""}`}
                     onClick={() => setExpandedState(isExpanded ? null : s.state)}
                   >
                     <td className="px-3 py-2.5">
@@ -424,50 +502,70 @@ function StateRankings() {
                     <td className="px-3 py-2.5 font-semibold text-white">
                       <span className="inline-block w-7 text-center text-xs bg-fuchsia-900/60 rounded px-1 mr-1.5 text-fuchsia-300">{s.abbr}</span>
                       {s.state}
+                      {s.readinessSourced && (
+                        <span
+                          title="All five numbers are the book's sourced pillar readiness (sequence-engine PRESETS), not this table's own estimate."
+                          className="ml-1.5 align-middle inline-block text-[9px] font-black tracking-wider text-indigo-200 bg-indigo-800/70 border border-indigo-500/60 rounded px-1 py-0.5"
+                        >
+                          SOURCED
+                        </span>
+                      )}
                     </td>
                     <td className="px-3 py-2.5 text-slate-400">{s.region}</td>
                     <td className="px-3 py-2.5">
                       <span className={`font-bold text-base ${scoreColor(s.composite)}`}>{s.composite}</span>
                     </td>
-                    <td className="px-3 py-2.5 text-slate-300">{s.digitalMaturity}</td>
-                    <td className="px-3 py-2.5 text-slate-300">{s.valueBased}</td>
-                    <td className="px-3 py-2.5 text-slate-300">{s.sdohEquity}</td>
-                    <td className="px-3 py-2.5 text-slate-300">{s.clinicalExcellence}</td>
-                    <td className="px-3 py-2.5 text-slate-300">{s.patientExperience}</td>
-                    <td className="px-3 py-2.5 text-slate-300">{s.workforceWellness}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{s.policy}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{s.technology}{s.simulated.technology && <SimBadge />}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{s.economics}{s.simulated.economics && <SimBadge />}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{s.clinical}</td>
+                    <td className="px-3 py-2.5 text-slate-300">{s.operations}{s.simulated.operations && <SimBadge />}</td>
                     <td className="px-3 py-2.5 text-emerald-400 text-xs font-medium">{top}</td>
                     <td className="px-3 py-2.5 text-orange-400 text-xs font-medium">{weakest}</td>
-                    <td className="px-3 py-2.5">
-                      <span className={`text-xs font-semibold ${s.yearOverYear > 0 ? "text-emerald-400" : s.yearOverYear < 0 ? "text-red-400" : "text-slate-400"}`}>
-                        {s.yearOverYear > 0 ? "+" : ""}{s.yearOverYear.toFixed(1)}
-                      </span>
-                    </td>
+                    <td className="px-3 py-2.5 text-slate-400 text-xs">{s.policyProgram}</td>
                     <td className="px-3 py-2.5 text-slate-500">
                       {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                     </td>
                   </tr>
                   {isExpanded && (
                     <tr key={`${s.state}-expand`} className="bg-fuchsia-950/20">
-                      <td colSpan={14} className="px-6 py-4">
+                      <td colSpan={13} className="px-6 py-4">
+                        {s.readinessSourced ? (
+                          <p className="text-xs text-indigo-200 bg-indigo-950/40 border border-indigo-700/40 rounded-lg px-3 py-2 mb-3">
+                            Vermont&rsquo;s five numbers are not this table&rsquo;s indicator methodology — they are read
+                            directly from the book&rsquo;s sourced pillar readiness (§1.14, sequence-engine.ts PRESETS
+                            &ldquo;vermont-2026&rdquo;), the same numbers the{" "}
+                            <a href="/htr-simulator" className="underline">HTR Simulator</a> and the Friction Index run
+                            on. They will not match a simple recomputation from AHEAD-cohort tier or AHR rank — that is
+                            expected: readiness (can the pillar issue its currency downstream?) is a different
+                            measurement than adoption/outcomes data.
+                          </p>
+                        ) : (
+                          <p className="text-xs text-slate-400 mb-3">
+                            Policy Program: <span className="text-white">{s.policyProgram}</span>
+                            {(s.simulated.technology || s.simulated.economics || s.simulated.operations) && (
+                              <span className="ml-2 text-amber-300">— dimensions marked SIM below are simulated estimates, not published data.</span>
+                            )}
+                          </p>
+                        )}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           {[
-                            { label: "Digital Maturity", val: s.digitalMaturity, avg: NATIONAL_AVG.digitalMaturity },
-                            { label: "Value-Based Care", val: s.valueBased, avg: NATIONAL_AVG.valueBased },
-                            { label: "SDOH / Equity", val: s.sdohEquity, avg: NATIONAL_AVG.sdohEquity },
-                            { label: "Clinical Excellence", val: s.clinicalExcellence, avg: NATIONAL_AVG.clinicalExcellence },
-                            { label: "Patient Experience", val: s.patientExperience, avg: NATIONAL_AVG.patientExperience },
-                            { label: "Workforce Wellness", val: s.workforceWellness, avg: NATIONAL_AVG.workforceWellness },
+                            { label: "Policy", val: s.policy, avg: NATIONAL_AVG.policy, sim: false },
+                            { label: "Technology", val: s.technology, avg: NATIONAL_AVG.technology, sim: s.simulated.technology },
+                            { label: "Economics", val: s.economics, avg: NATIONAL_AVG.economics, sim: s.simulated.economics },
+                            { label: "Clinical", val: s.clinical, avg: NATIONAL_AVG.clinical, sim: false },
+                            { label: "Operations", val: s.operations, avg: NATIONAL_AVG.operations, sim: s.simulated.operations },
                           ].map(d => (
                             <div key={d.label}>
                               <div className="flex justify-between text-xs mb-1">
-                                <span className="text-slate-400">{d.label}</span>
+                                <span className="text-slate-400">{d.label} {d.sim && <SimBadge />}</span>
                                 <span className={scoreColor(d.val)}>{d.val} <span className="text-slate-500">/ avg {d.avg}</span></span>
                               </div>
                               <ScoreBar score={d.val} avg={d.avg} color={scoreBg(d.val)} />
                             </div>
                           ))}
                         </div>
-                        <p className="text-xs text-slate-500 mt-3">White marker = national average. Weights: Digital 20%, VBC 15%, SDOH 20%, Clinical 20%, Patient Exp. 15%, Workforce 10%.</p>
+                        <p className="text-xs text-slate-500 mt-3">White marker = national average across all 50 states. Composite = unweighted average of the five pillar columns; note it mixes real and simulated dimensions — see Methodology.</p>
                       </td>
                     </tr>
                   )}
@@ -477,7 +575,10 @@ function StateRankings() {
           </tbody>
         </table>
       </div>
-      <p className="text-xs text-slate-500">Showing {filtered.length} of {STATES.length} states. | Last Updated: Q1 2025</p>
+      <p className="text-xs text-slate-500">
+        Showing {filtered.length} of {STATES.length} states. Policy &amp; Clinical: real, cited data.
+        Technology, Economics, Operations: <SimBadge /> simulated estimates. Vermont: sourced pillar readiness.
+      </p>
     </div>
   );
 }
@@ -825,7 +926,7 @@ const TABS: { id: TabId; label: string; icon: React.ReactNode; description: stri
     id: "states",
     label: "State Health Transformation Rankings",
     icon: <Globe className="w-4 h-4" />,
-    description: "HTI composite scores across all 50 states — 6 domains, weighted index",
+    description: "Five-pillar comparison across all 50 states — Policy and Clinical are real, cited data; Technology/Economics/Operations are disclosed simulated estimates; Vermont uses the book's sourced pillar readiness",
   },
   {
     id: "hospitals",
@@ -884,12 +985,20 @@ export default function InnovationLeaderboard() {
           {showMethodology && (
             <div className="mt-4 p-4 bg-gray-900/80 rounded-xl border border-fuchsia-800/30 text-sm text-slate-300 leading-relaxed">
               <p className="font-semibold text-fuchsia-300 mb-2">Scoring Methodology</p>
-              <p className="mb-2">
-                <strong className="text-white">State HTI Composite:</strong> Weighted average of six domain scores (0–100 each):
-                Digital Maturity (20%), Value-Based Care Adoption (15%), SDOH &amp; Equity Integration (20%),
-                Clinical Excellence (20%), Patient Experience (15%), Workforce Wellness (10%).
-                Scores derived from CMS quality data, state health department reports, NCQA accreditation, AHRQ datasets, and proprietary survey data.
-              </p>
+              <div className="mb-3 pb-3 border-b border-gray-800">
+                <p className="text-white font-semibold mb-1">State Pillar Comparison (Policy / Technology / Economics / Clinical / Operations)</p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li><strong className="text-white">Policy</strong> — real: CMS AHEAD Model cohort assignments ({PILLAR_METHODOLOGY_NOTES.policy})</li>
+                  <li><strong className="text-white">Clinical</strong> — real: {PILLAR_METHODOLOGY_NOTES.clinical}</li>
+                  <li><strong className="text-amber-300">Technology</strong> — {PILLAR_METHODOLOGY_NOTES.technology}</li>
+                  <li><strong className="text-amber-300">Economics</strong> — {PILLAR_METHODOLOGY_NOTES.economics}</li>
+                  <li><strong className="text-amber-300">Operations</strong> — {PILLAR_METHODOLOGY_NOTES.operations}</li>
+                  <li><strong className="text-indigo-300">Vermont</strong> — exception to all of the above: its five numbers are read directly from
+                    lib/framework/sequence-engine.ts <code className="text-indigo-200">PRESETS[&quot;vermont-2026&quot;]</code> (policy 95,
+                    technology 45, economics 55, clinical 65, operations 50) — the same sourced pillar readiness the HTR Simulator and Friction
+                    Index use — so it cannot show a different number here than it does everywhere else in the platform.</li>
+                </ul>
+              </div>
               <p className="mb-2">
                 <strong className="text-white">Hospital VBC Maturity Index:</strong> Five-dimension framework assessing
                 % revenue in risk contracts, ACO/APM program participation breadth, quality performance composite (HEDIS/CMS Star),

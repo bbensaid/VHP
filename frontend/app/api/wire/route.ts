@@ -87,6 +87,59 @@ const SOURCES = [
     source: "industry",
     limit: 5,
   },
+  // Vermont state government (queue #7 — real official feeds, verified live
+  // 2026-09-22 by curling each URL directly). Both are the state's own
+  // Drupal-generated RSS, same <item>/<title>/<link>/<pubDate> shape as
+  // every other source above — no bespoke scraper needed.
+  {
+    // Green Mountain Care Board's site-wide feed: meeting notes, board
+    // presentations, and press releases — including hospital budget /
+    // rate decisions ("Press Release - FY27 HBR Decisions") and personnel
+    // announcements ("Press Release - New Exec Director"). This is the
+    // freshest GMCB feed available; a narrower "Board Decision" taxonomy
+    // feed exists (taxonomy/term/70) but its last entry is from Aug 2025,
+    // so it was rejected as effectively dead.
+    url: "https://gmcboard.vermont.gov/rss.xml",
+    label: "GMCB",
+    source: "vt_gmcb",
+    limit: 8,
+  },
+  {
+    // AHS's own "Press Release" taxonomy feed (discovered via the
+    // <link rel="alternate" type="application/rss+xml"> tag on
+    // humanservices.vermont.gov/press_releases) — covers health-care
+    // transformation announcements (e.g. the AHEAD agreement, the Oliver
+    // Wyman reform report) directly, unlike the agency's generic
+    // document feed which is dominated by DOC facility-population PDFs.
+    // Its most recent entry is Aug 2025 because AHS has not published a
+    // new press release since — that is a fact about AHS's cadence, not
+    // a broken integration; new posts will surface automatically.
+    url: "https://humanservices.vermont.gov/taxonomy/term/3/feed",
+    label: "AHS",
+    source: "vt_ahs",
+    limit: 6,
+  },
+];
+
+// Vermont Legislature bill tracking (Act 68 amendments, GMCB appointment
+// bills) was checked and could NOT be wired: legislature.vermont.gov has
+// no public RSS feed (confirmed — no <link rel="alternate" rss> anywhere,
+// no /rss.xml, /feed, or /bill/rss route resolves). The state DOES run a
+// real bill-data API at legislature.vermont.gov/docs/api/v1, but it is
+// key-gated ("contact IT@leg.state.vt.us to obtain an API key") and no key
+// is available in this environment. Per standing instruction, this is left
+// as an honest "not yet connected" disclosure rather than a scraper against
+// the bill-search HTML (fragile, and outside the RSS abstraction every
+// other source uses) or fabricated bill entries. Surfaced to the client
+// separately from `items` so it never enters pillar-tagging/impact scoring
+// as if it were a real headline.
+const UNAVAILABLE_SOURCES = [
+  {
+    label: "VT Legislature",
+    reason:
+      "No public RSS feed. The Legislature's bill-data API (legislature.vermont.gov/docs/api/v1) requires an API key from IT@leg.state.vt.us that this integration does not have.",
+    url: "https://legislature.vermont.gov/bill",
+  },
 ];
 
 function parseDate(block: string): string | null {
@@ -148,6 +201,7 @@ export async function GET(request: Request) {
           items: data.headlines,
           fetched_at: data.fetched_at,
           from_cache: true,
+          unavailable_sources: UNAVAILABLE_SOURCES,
         });
       }
     }
@@ -194,5 +248,9 @@ export async function GET(request: Request) {
     // non-fatal
   }
 
-  return NextResponse.json({ items: allItems, fetched_at: fetchedAt });
+  return NextResponse.json({
+    items: allItems,
+    fetched_at: fetchedAt,
+    unavailable_sources: UNAVAILABLE_SOURCES,
+  });
 }

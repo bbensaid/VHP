@@ -14,6 +14,7 @@ import {
   AlertTriangle,
   CheckCircle,
   Minus,
+  Gauge,
 } from "lucide-react";
 
 // ─── Utility helpers ───────────────────────────────────────────────────────────
@@ -44,6 +45,7 @@ const HEALTH_OUTCOMES = [
       aian: { ratio: 2.05, label: "American Indian/Alaska Native" },
     },
     decomp: { income: 28, insurance: 18, access: 14, quality: 12, structural: 28 },
+    dimension: "quality" as const,
   },
   {
     label: "Hypertension Control",
@@ -58,6 +60,7 @@ const HEALTH_OUTCOMES = [
       aian: { ratio: 1.44, label: "American Indian/Alaska Native" },
     },
     decomp: { income: 20, insurance: 22, access: 18, quality: 20, structural: 20 },
+    dimension: "quality" as const,
   },
   {
     label: "Maternal Mortality",
@@ -72,6 +75,7 @@ const HEALTH_OUTCOMES = [
       aian: { ratio: 2.27, label: "American Indian/Alaska Native" },
     },
     decomp: { income: 18, insurance: 20, access: 15, quality: 22, structural: 25 },
+    dimension: "outcome" as const,
   },
   {
     label: "Infant Mortality",
@@ -86,6 +90,7 @@ const HEALTH_OUTCOMES = [
       aian: { ratio: 1.91, label: "American Indian/Alaska Native" },
     },
     decomp: { income: 25, insurance: 15, access: 18, quality: 17, structural: 25 },
+    dimension: "outcome" as const,
   },
   {
     label: "Cancer Screening Rates",
@@ -100,6 +105,7 @@ const HEALTH_OUTCOMES = [
       aian: { ratio: 1.60, label: "American Indian/Alaska Native" },
     },
     decomp: { income: 22, insurance: 28, access: 20, quality: 12, structural: 18 },
+    dimension: "quality" as const,
   },
   {
     label: "Mental Health Access",
@@ -114,6 +120,7 @@ const HEALTH_OUTCOMES = [
       aian: { ratio: 1.72, label: "American Indian/Alaska Native" },
     },
     decomp: { income: 20, insurance: 25, access: 22, quality: 15, structural: 18 },
+    dimension: "access" as const,
   },
   {
     label: "COVID-19 Hospitalization",
@@ -128,6 +135,7 @@ const HEALTH_OUTCOMES = [
       aian: { ratio: 3.45, label: "American Indian/Alaska Native" },
     },
     decomp: { income: 30, insurance: 15, access: 12, quality: 10, structural: 33 },
+    dimension: "outcome" as const,
   },
   {
     label: "Opioid Overdose",
@@ -142,6 +150,7 @@ const HEALTH_OUTCOMES = [
       aian: { ratio: 1.89, label: "American Indian/Alaska Native" },
     },
     decomp: { income: 26, insurance: 18, access: 20, quality: 14, structural: 22 },
+    dimension: "outcome" as const,
   },
   {
     label: "Life Expectancy",
@@ -156,6 +165,7 @@ const HEALTH_OUTCOMES = [
       aian: { ratio: 0.903, label: "American Indian/Alaska Native" },
     },
     decomp: { income: 30, insurance: 15, access: 12, quality: 12, structural: 31 },
+    dimension: "outcome" as const,
   },
   {
     label: "Preventable Hospitalization",
@@ -170,6 +180,7 @@ const HEALTH_OUTCOMES = [
       aian: { ratio: 2.12, label: "American Indian/Alaska Native" },
     },
     decomp: { income: 24, insurance: 22, access: 18, quality: 16, structural: 20 },
+    dimension: "outcome" as const,
   },
 ];
 
@@ -330,6 +341,137 @@ const SDOH_INTERVENTIONS = [
   { label: "Transportation Vouchers",     costPerPerson: 780,    impactFactor: 0.06, healthCostAvoidance: 1_100  },
 ];
 
+// SDOH indicator values shared between the SDOH Composite tab and the HEROI Composite tab
+// (both read/write the same population's SDOH profile).
+type IndicatorValues = Record<string, number>;
+const SDOH_DEFAULT_VALUES: IndicatorValues = {
+  poverty: 16.2, unemployment: 5.1, housing_cost: 34.0,
+  hs_completion: 87.0, higher_ed: 28.0, reading_prof: 61.0,
+  isolation: 26.0, language: 6.8, incarceration: 420,
+  uninsured: 12.0, disability: 16.0, mh_ratio: 410,
+  food_desert: 24.0, air_quality: 51.0, housing_quality: 18.0,
+};
+
+// Composite SDOH score (0 = severe deprivation, 100 = optimal). Extracted so the HEROI
+// Composite tab can reuse the exact same scoring as the SDOH Composite & ROI tab.
+function computeSdohCompositeScore(values: IndicatorValues): number {
+  let total = 0;
+  let count = 0;
+  SDOH_DOMAINS.forEach((domain) => {
+    domain.indicators.forEach((ind) => {
+      const local = values[ind.id] ?? ind.national;
+      const national = ind.national;
+      let normalized: number;
+      if (ind.higherIsBetter) {
+        normalized = Math.min(local / national, 1.5) / 1.5 * 100;
+      } else {
+        const ratio = local / national;
+        normalized = Math.max(0, (2 - ratio) / 2 * 100);
+      }
+      total += normalized;
+      count++;
+    });
+  });
+  return count > 0 ? total / count : 0;
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// HEROI — Health Equity Return on Investment composite (book §10.13.1):
+// Access (25%) + Quality (25%) + Outcome (25%) + SDOH burden (15%) + Trust (10%).
+// "Health Equity Return on Investment" is this platform's own coined term — it is
+// not a formula published by CMS, NCQA, RWJF, or NASEM (confirmed by literature
+// search; NCQA's closest published analogue is the Health Equity Summary Score,
+// which uses a different, plan-level methodology). This composite therefore
+// implements the book's own five-dimension definition exactly, built from data
+// the tool already models elsewhere, rather than adopting an external standard.
+// ══════════════════════════════════════════════════════════════════════════════
+type PopMap = { white: number; black: number; hispanic: number; asian: number; aian: number };
+type EquityDimension = "access" | "quality" | "outcome";
+
+// Population-weighted disparity index (%): how far the population-weighted rate for an
+// outcome sits from the White non-Hispanic benchmark, given a population mix. Same
+// calculation the Disparity Calculator (Tab 1) already performs per-outcome.
+function computeDisparityIndexPct(outcome: (typeof HEALTH_OUTCOMES)[number], pop: PopMap): number {
+  const groups = Object.entries(outcome.groups) as [string, { ratio: number; label: string }][];
+  const popMap: Record<string, number> = { white: pop.white, black: pop.black, hispanic: pop.hispanic, asian: pop.asian, aian: pop.aian };
+  const baseRate = outcome.baselineWhite;
+  let weightedRate = 0;
+  groups.forEach(([key, g]) => {
+    const pct = (popMap[key] ?? 0) / 100;
+    weightedRate += pct * (baseRate * g.ratio);
+  });
+  return baseRate > 0 ? ((weightedRate - baseRate) / baseRate) * 100 : 0;
+}
+
+// 0-100 equity score from a disparity index: 100 = no measured gap. Magnitude (not
+// direction) is used, so an outcome where a group does much better than benchmark
+// (e.g. Life Expectancy) still registers as a measured gap, not as "extra credit."
+function equityScoreFromDisparity(disparityIndexPct: number): number {
+  return clamp(100 - Math.abs(disparityIndexPct), 0, 100);
+}
+
+function dimensionEquityScore(dimension: EquityDimension, pop: PopMap): number {
+  const outcomes = HEALTH_OUTCOMES.filter((o) => o.dimension === dimension);
+  if (outcomes.length === 0) return 100;
+  const scores = outcomes.map((o) => equityScoreFromDisparity(computeDisparityIndexPct(o, pop)));
+  return scores.reduce((a, b) => a + b, 0) / scores.length;
+}
+
+// Access equity blends the racial/ethnic disparity signal (Mental Health Access, the one
+// HEALTH_OUTCOMES entry tagged "access") with the geographic primary-care access gap already
+// modeled in the Geographic Access Gap Analyzer (Tab 2) — the book's Access dimension is
+// explicitly about "primary care, specialty care, and emergency care utilization" gaps, and
+// Vermont's largest access gap is rural/urban (metro vs. isolated rural), not racial.
+function computeAccessEquityScore(pop: PopMap): number {
+  const racialAccessScore = dimensionEquityScore("access", pop);
+  const geoGapPts = GEO_DATA.metro_large.primary.accessRate - GEO_DATA.isolated_rural.primary.accessRate;
+  const geoAccessScore = clamp(100 - geoGapPts, 0, 100);
+  return (racialAccessScore + geoAccessScore) / 2;
+}
+function computeQualityEquityScore(pop: PopMap): number {
+  return dimensionEquityScore("quality", pop);
+}
+function computeOutcomeEquityScore(pop: PopMap): number {
+  return dimensionEquityScore("outcome", pop);
+}
+
+// Trust & Engagement is a documented PROXY: the platform does not yet ingest CAHPS or other
+// stratified patient-experience/discrimination survey data (book §10.13.1 names CAHPS
+// explicitly as the intended source). Until that data source is integrated, this uses the
+// disparity-weighted average "structural/historical" attribution share from the Disparity
+// Decomposition module (Tab 1) — structural/historical exclusion is a documented driver of
+// eroded patient trust (NASEM, "Ending Unequal Treatment"). Replace when real CAHPS data
+// is wired in; do not treat this number as a measurement.
+function computeTrustEngagementProxyScore(pop: PopMap): number {
+  let weightedStructural = 0;
+  let weightSum = 0;
+  HEALTH_OUTCOMES.forEach((o) => {
+    const gap = Math.abs(computeDisparityIndexPct(o, pop));
+    weightedStructural += gap * o.decomp.structural;
+    weightSum += gap;
+  });
+  const avgStructuralPct = weightSum > 0 ? weightedStructural / weightSum : 0;
+  return clamp(100 - avgStructuralPct, 0, 100);
+}
+
+type HeroiComposite = { access: number; quality: number; outcome: number; sdoh: number; trust: number; heroi: number };
+
+function computeHeroiComposite(pop: PopMap, sdohValues: IndicatorValues): HeroiComposite {
+  const access = computeAccessEquityScore(pop);
+  const quality = computeQualityEquityScore(pop);
+  const outcome = computeOutcomeEquityScore(pop);
+  const sdoh = computeSdohCompositeScore(sdohValues);
+  const trust = computeTrustEngagementProxyScore(pop);
+  const heroi = access * 0.25 + quality * 0.25 + outcome * 0.25 + sdoh * 0.15 + trust * 0.10;
+  return { access, quality, outcome, sdoh, trust, heroi };
+}
+
+function heroiBand(score: number): { label: string; color: string } {
+  if (score >= 80) return { label: "Achieving equity across all five dimensions", color: "text-emerald-600" };
+  if (score >= 60) return { label: "Material disparities in one or more dimensions requiring targeted intervention", color: "text-amber-600" };
+  return { label: "Pervasive disparities requiring comprehensive equity program redesign", color: "text-red-600" };
+}
+
 // ─── TAB 4 DATA ────────────────────────────────────────────────────────────────
 const EQUITY_EXAMPLES = [
   {
@@ -426,9 +568,8 @@ const VERMONT_EQUITY_PRESETS = [
 ];
 
 // ══════════════════════════════════════════════════════════════════════════════
-function DisparityCalculator() {
+function DisparityCalculator({ pop, setPop }: { pop: PopMap; setPop: (p: PopMap) => void }) {
   const [outcomeIdx, setOutcomeIdx] = useState(0);
-  const [pop, setPop] = useState({ white: 94, black: 1, hispanic: 2, asian: 2, aian: 1 });
   const [activeEquityPreset, setActiveEquityPreset] = useState<string>("vt_statewide");
   const [decomp, setDecomp] = useState<Record<string, number>>({});
   const [showDecomp, setShowDecomp] = useState(false);
@@ -482,10 +623,7 @@ function DisparityCalculator() {
   }, [outcome, pop]);
 
   function handlePopChange(key: string, val: number) {
-    setPop((prev) => {
-      const next = { ...prev, [key]: val };
-      return next;
-    });
+    setPop({ ...pop, [key]: val });
     setDecomp({});
   }
 
@@ -915,40 +1053,12 @@ function GeoAccessAnalyzer() {
 // ══════════════════════════════════════════════════════════════════════════════
 // TAB 3 — SDOH Composite Scoring & ROI
 // ══════════════════════════════════════════════════════════════════════════════
-function SDOHComposite() {
-  type IndicatorValues = Record<string, number>;
-  const defaultValues: IndicatorValues = {
-    poverty: 16.2, unemployment: 5.1, housing_cost: 34.0,
-    hs_completion: 87.0, higher_ed: 28.0, reading_prof: 61.0,
-    isolation: 26.0, language: 6.8, incarceration: 420,
-    uninsured: 12.0, disability: 16.0, mh_ratio: 410,
-    food_desert: 24.0, air_quality: 51.0, housing_quality: 18.0,
-  };
-  const [values, setValues] = useState<IndicatorValues>(defaultValues);
+function SDOHComposite({ values, setValues }: { values: IndicatorValues; setValues: (v: IndicatorValues | ((p: IndicatorValues) => IndicatorValues)) => void }) {
   const [interventionIdx, setInterventionIdx] = useState(0);
   const [coveragePct, setCoveragePct] = useState(30);
   const [popSize, setPopSize] = useState(50_000);
 
-  const sdohScore = useMemo(() => {
-    let total = 0;
-    let count = 0;
-    SDOH_DOMAINS.forEach((domain) => {
-      domain.indicators.forEach((ind) => {
-        const local = values[ind.id] ?? ind.national;
-        const national = ind.national;
-        let normalized: number;
-        if (ind.higherIsBetter) {
-          normalized = Math.min(local / national, 1.5) / 1.5 * 100;
-        } else {
-          const ratio = local / national;
-          normalized = Math.max(0, (2 - ratio) / 2 * 100);
-        }
-        total += normalized;
-        count++;
-      });
-    });
-    return total / count;
-  }, [values]);
+  const sdohScore = useMemo(() => computeSdohCompositeScore(values), [values]);
 
   const outcomes = useMemo(() => sdohToOutcomes(sdohScore), [sdohScore]);
   const intervention = SDOH_INTERVENTIONS[interventionIdx];
@@ -1168,10 +1278,12 @@ function EquityICER() {
       return { ...thr, minMult: minMult.toFixed(2), crossesAt: crosses?.label ?? "Beyond 3×" };
     });
 
-    // HEROI
-    const heroi = (financialSavings + socialValue) / programCost;
+    // Simple financial cost-benefit ratio — NOT the HEROI composite (see the HEROI
+    // Composite Score tab for the platform's five-dimension Health Equity Return on
+    // Investment score). This is a secondary, program-level financial metric.
+    const costBenefitRatio = (financialSavings + socialValue) / programCost;
 
-    return { standardICER, equityICER, equityMult, crossings, heroi, costDiff, qalyDiff, equityQALY };
+    return { standardICER, equityICER, equityMult, crossings, costBenefitRatio, costDiff, qalyDiff, equityQALY };
   }, [interventionCost, controlCost, qalyIntervention, qalyControl, disadvantage, equityWeightIdx, financialSavings, socialValue, programCost]);
 
   function icerColor(icer: number) {
@@ -1300,18 +1412,18 @@ function EquityICER() {
                 {EQUITY_WEIGHTS[equityWeightIdx].label} · disadv. {disadvantage.toFixed(1)}×
               </p>
             </div>
-            <div className={`rounded-xl border p-4 ${results.heroi >= 1 ? "bg-emerald-50 border-emerald-200" : "bg-red-50 border-red-200"}`}>
-              <p className={`text-xs font-medium ${results.heroi >= 1 ? "text-emerald-700" : "text-red-700"}`}>HEROI Ratio</p>
-              <p className={`text-3xl font-extrabold mt-1 ${results.heroi >= 1 ? "text-emerald-700" : "text-red-700"}`}>
-                {fmt(results.heroi, 2)}×
+            <div className={`rounded-xl border p-4 ${results.costBenefitRatio >= 1 ? "bg-emerald-50 border-emerald-200" : "bg-red-50 border-red-200"}`}>
+              <p className={`text-xs font-medium ${results.costBenefitRatio >= 1 ? "text-emerald-700" : "text-red-700"}`}>Program Cost-Benefit Ratio</p>
+              <p className={`text-3xl font-extrabold mt-1 ${results.costBenefitRatio >= 1 ? "text-emerald-700" : "text-red-700"}`}>
+                {fmt(results.costBenefitRatio, 2)}×
               </p>
-              <p className="text-xs text-slate-400 mt-0.5">(Fin. savings + social value) / program cost</p>
+              <p className="text-xs text-slate-400 mt-0.5">(Fin. savings + social value) / program cost — a simple ratio, not the HEROI composite (see the HEROI Composite Score tab)</p>
             </div>
           </div>
 
-          {/* HEROI inputs */}
+          {/* Cost-benefit inputs */}
           <div className="bg-white rounded-xl border border-amber-100 p-4 shadow-sm">
-            <SectionLabel>HEROI Inputs</SectionLabel>
+            <SectionLabel>Cost-Benefit Inputs</SectionLabel>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <NumInput label="Financial Savings from Disparity Reduction" value={financialSavings} onChange={setFinancialSavings} step={10000} prefix="$" />
               <NumInput label="Social Value Estimate (WTP for equity)" value={socialValue} onChange={setSocialValue} step={10000} prefix="$" />
@@ -1352,6 +1464,115 @@ function EquityICER() {
 }
 
 // ══════════════════════════════════════════════════════════════════════════════
+// TAB 5 — HEROI Composite Score
+// The book's actual HEROI definition (§10.13.1): a weighted composite across five
+// equity dimensions. This is deliberately kept separate from EquityICER's "Program
+// Cost-Benefit Ratio," which is a different, simpler financial metric that this
+// tool used to mislabel as "HEROI."
+// ══════════════════════════════════════════════════════════════════════════════
+function HEROIComposite({
+  pop, setPop, sdohValues,
+}: {
+  pop: PopMap; setPop: (p: PopMap) => void; sdohValues: IndicatorValues;
+}) {
+  const composite = useMemo(() => computeHeroiComposite(pop, sdohValues), [pop, sdohValues]);
+  const band = heroiBand(composite.heroi);
+
+  const dims: { key: string; label: string; weight: number; value: number; note: string }[] = [
+    {
+      key: "access", label: "Access Equity", weight: 25, value: composite.access,
+      note: "Racial/ethnic disparity in the Disparity Calculator's access-tagged outcome (Mental Health Access), blended with the metro-vs-isolated-rural primary care access gap from the Geographic Access Gap Analyzer.",
+    },
+    {
+      key: "quality", label: "Quality Equity", weight: 25, value: composite.quality,
+      note: "Population-weighted disparity across the Disparity Calculator's HEDIS-adjacent quality outcomes: diabetes control, hypertension control, cancer screening (preventive care).",
+    },
+    {
+      key: "outcome", label: "Outcome Equity", weight: 25, value: composite.outcome,
+      note: "Population-weighted disparity across mortality and avoidable-utilization outcomes: maternal mortality, infant mortality, preventable hospitalization, COVID-19 hospitalization, opioid overdose, life expectancy.",
+    },
+    {
+      key: "sdoh", label: "SDOH Burden", weight: 15, value: composite.sdoh,
+      note: "The composite SDOH score from the SDOH Composite & ROI tab (0 = severe deprivation, 100 = optimal). Edit indicator values there to change this input.",
+    },
+    {
+      key: "trust", label: "Trust & Engagement", weight: 10, value: composite.trust,
+      note: "PROXY — no CAHPS or stratified patient-experience data source is integrated yet. Uses the disparity-weighted average \"structural/historical\" attribution share from the Disparity Decomposition module as a documented stand-in, not a measurement.",
+    },
+  ];
+
+  function dimColor(v: number) {
+    if (v >= 80) return "bg-emerald-500";
+    if (v >= 60) return "bg-amber-400";
+    if (v >= 40) return "bg-orange-500";
+    return "bg-red-500";
+  }
+
+  return (
+    <div className="space-y-6">
+      {/* Population selector (shared with Disparity Calculator) */}
+      <div className="bg-violet-50 border border-violet-200 rounded-xl p-4">
+        <p className="text-[10px] font-black uppercase tracking-widest text-violet-700 mb-3">
+          Population Mix (shared with the Disparity Calculator tab)
+        </p>
+        <div className="grid grid-cols-2 gap-1.5">
+          {VERMONT_EQUITY_PRESETS.map((p) => {
+            const active = JSON.stringify(pop) === JSON.stringify(p.pop);
+            return (
+              <button
+                key={p.id}
+                onClick={() => setPop(p.pop)}
+                className={`text-left px-3 py-2.5 rounded-lg border text-xs transition-all ${
+                  active
+                    ? "bg-violet-600 border-violet-700 text-white font-bold"
+                    : "bg-white border-violet-200 text-slate-700 hover:border-violet-400 hover:bg-violet-50"
+                }`}
+              >
+                <div className="font-bold leading-tight">{p.label}</div>
+                <div className={`text-[10px] mt-0.5 ${active ? "text-violet-100" : "text-slate-400"}`}>{p.badge}</div>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Composite score */}
+      <div className="bg-white rounded-xl border border-amber-100 p-5 shadow-sm">
+        <SectionLabel>HEROI Composite Score</SectionLabel>
+        <div className="flex items-end gap-4 mb-4">
+          <p className={`text-6xl font-extrabold ${band.color}`}>{fmt(composite.heroi, 1)}</p>
+          <div>
+            <p className="text-sm text-slate-500">/100</p>
+            <p className={`text-sm font-semibold ${band.color}`}>{band.label}</p>
+          </div>
+        </div>
+        <div className="space-y-3">
+          {dims.map((d) => (
+            <div key={d.key}>
+              <div className="flex items-center justify-between mb-0.5">
+                <span className="text-xs font-medium text-slate-700">
+                  {d.label} <span className="text-slate-400">({d.weight}% weight)</span>
+                </span>
+                <span className="text-xs font-bold text-slate-700">{fmt(d.value, 1)}/100</span>
+              </div>
+              <div className="h-3 bg-gray-100 rounded-full overflow-hidden">
+                <div className={`h-full rounded-full ${dimColor(d.value)}`} style={{ width: `${d.value}%` }} />
+              </div>
+              <p className="text-[11px] text-slate-400 mt-1">{d.note}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs text-amber-800">
+        <p className="font-semibold mb-1">Score bands (book §10.13.1)</p>
+        <p>80+: achieving equity across all five dimensions · 60–80: material disparities in one or more dimensions requiring targeted intervention · below 60: pervasive disparities requiring comprehensive equity program redesign.</p>
+      </div>
+    </div>
+  );
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
 // ROOT COMPONENT
 // ══════════════════════════════════════════════════════════════════════════════
 const TABS = [
@@ -1359,10 +1580,16 @@ const TABS = [
   { id: "geo",        label: "Geographic Access Gap",   icon: MapPin,     short: "Geo Access" },
   { id: "sdoh",       label: "SDOH Composite & ROI",    icon: BarChart2,  short: "SDOH"       },
   { id: "icer",       label: "Equity-Weighted ICER",    icon: Calculator, short: "ICER"       },
+  { id: "heroi",      label: "HEROI Composite Score",   icon: Gauge,      short: "HEROI"      },
 ];
 
 export default function HealthEquityStudio() {
   const [activeTab, setActiveTab] = useState("disparity");
+  // Shared across the Disparity Calculator, HEROI Composite, and (indirectly) Geo Access
+  // tabs so the HEROI composite score reflects the same population profile the analyst is
+  // actively working with, rather than a frozen snapshot.
+  const [equityPop, setEquityPop] = useState<PopMap>({ white: 94, black: 1, hispanic: 2, asian: 2, aian: 1 });
+  const [equitySdohValues, setEquitySdohValues] = useState<IndicatorValues>(SDOH_DEFAULT_VALUES);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-white">
@@ -1376,7 +1603,7 @@ export default function HealthEquityStudio() {
             <h1 className="text-2xl font-extrabold tracking-tight">Health Equity Analysis Studio</h1>
           </div>
           <p className="text-amber-100 text-sm max-w-2xl">
-            Interactive tools for measuring racial disparities, geographic access gaps, social determinants of health, and equity-weighted cost-effectiveness analysis.
+            Interactive tools for measuring racial disparities, geographic access gaps, social determinants of health, equity-weighted cost-effectiveness analysis, and the five-dimension HEROI composite score.
           </p>
         </div>
       </div>
@@ -1416,7 +1643,7 @@ export default function HealthEquityStudio() {
                 Disparity ratios sourced from CDC National Health Interview Survey, AHRQ National Healthcare Quality & Disparities Report, and peer-reviewed literature. Adjust local population sliders to calculate community-specific impact.
               </span>
             </div>
-            <DisparityCalculator />
+            <DisparityCalculator pop={equityPop} setPop={setEquityPop} />
           </>
         )}
         {activeTab === "geo" && (
@@ -1438,7 +1665,7 @@ export default function HealthEquityStudio() {
                 Enter your community's indicator values. The composite SDOH score (0–100) maps to expected health outcomes via evidence-based regressions. ROI calculations use peer-reviewed social return on investment frameworks.
               </span>
             </div>
-            <SDOHComposite />
+            <SDOHComposite values={equitySdohValues} setValues={setEquitySdohValues} />
           </>
         )}
         {activeTab === "icer" && (
@@ -1446,10 +1673,21 @@ export default function HealthEquityStudio() {
             <div className="flex items-start gap-2 mb-5 bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-amber-800">
               <Info size={14} className="mt-0.5 shrink-0" />
               <span>
-                Equity-weighted ICER follows the distributional cost-effectiveness analysis (DCEA) framework. Equity weights reflect societal preference for reducing health inequality (Cookson et al., 2017). HEROI adapts social return on investment methodology for health equity contexts.
+                Equity-weighted ICER follows the distributional cost-effectiveness analysis (DCEA) framework. Equity weights reflect societal preference for reducing health inequality (Cookson et al., 2017). The Program Cost-Benefit Ratio below is a simple financial-savings-plus-social-value-over-cost calculation for a single program — for the platform's five-dimension Health Equity Return on Investment (HEROI) score, see the HEROI Composite Score tab.
               </span>
             </div>
             <EquityICER />
+          </>
+        )}
+        {activeTab === "heroi" && (
+          <>
+            <div className="flex items-start gap-2 mb-5 bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-amber-800">
+              <Info size={14} className="mt-0.5 shrink-0" />
+              <span>
+                The Health Equity Return on Investment (HEROI) score is this platform's own composite equity metric — it is not a formula published by CMS, NCQA, RWJF, or NASEM. It is calculated across five weighted dimensions: Access (25%), Quality (25%), Outcome (25%), SDOH Burden (15%), and Trust &amp; Engagement (10%). Four of the five dimensions are computed from this tool's own disparity, geographic-access, and SDOH data; Trust &amp; Engagement uses a documented proxy pending real CAHPS data (see the dimension note below).
+              </span>
+            </div>
+            <HEROIComposite pop={equityPop} setPop={setEquityPop} sdohValues={equitySdohValues} />
           </>
         )}
       </div>

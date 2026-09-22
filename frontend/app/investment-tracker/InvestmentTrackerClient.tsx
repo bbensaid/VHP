@@ -20,6 +20,8 @@ export interface Deal {
   analystNote: string | null;
   sourceUrl: string | null;
   tags: string[] | null;
+  isSimulated?: boolean | null;
+  simulatedNote?: string | null;
 }
 
 const DEAL_TYPE_LABELS: Record<string, string> = {
@@ -84,9 +86,28 @@ export default function InvestmentTrackerClient({ deals }: { deals: Deal[] }) {
   }, [deals, search, dealType, status, pillar, minValue]);
 
   const totalValue = filtered.reduce((s, d) => s + (d.dealValueUsd ?? 0), 0);
+  const anySimulated = deals.some(d => d.isSimulated);
 
   return (
     <div>
+      {/* Simulated-data banner — unmissable, not small print. Only renders when at least one
+          deal in the feed is flagged isSimulated in Sanity. See investmentDeal.ts schema. */}
+      {anySimulated && (
+        <div className="mb-6 rounded-xl border-2 border-red-500 bg-red-50 dark:bg-red-950/40 px-5 py-4 flex items-start gap-3">
+          <span className="text-2xl leading-none">⚠️</span>
+          <div>
+            <p className="text-sm font-black uppercase tracking-wide text-red-700 dark:text-red-300">
+              Contains simulated data
+            </p>
+            <p className="text-xs text-red-700/90 dark:text-red-300/90 mt-1 leading-relaxed">
+              One or more entries below could not be verified against a real source and are marked
+              &ldquo;SIMULATED&rdquo; on their card. They are not real transactions — treat them as
+              illustrative only.
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Filters */}
       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-4 mb-6 space-y-3">
         <div className="flex items-center gap-2 mb-1">
@@ -169,7 +190,28 @@ export default function InvestmentTrackerClient({ deals }: { deals: Deal[] }) {
             const isOpen = expanded === deal._id;
             return (
               <div key={deal._id}
-                className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden hover:border-indigo-200 dark:hover:border-indigo-700 transition-colors">
+                className={`relative bg-white dark:bg-slate-900 border rounded-xl overflow-hidden transition-colors ${
+                  deal.isSimulated
+                    ? "border-red-400 dark:border-red-600 ring-1 ring-red-300 dark:ring-red-700"
+                    : "border-slate-200 dark:border-slate-700 hover:border-indigo-200 dark:hover:border-indigo-700"
+                }`}>
+
+                {/* Simulated-data watermark: diagonal, unmissable, not small print */}
+                {deal.isSimulated && (
+                  <div
+                    aria-hidden="true"
+                    className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center overflow-hidden select-none"
+                  >
+                    <span className="text-red-500/25 dark:text-red-400/20 text-4xl font-black uppercase tracking-widest -rotate-12 whitespace-nowrap">
+                      Simulated Data — Not Real
+                    </span>
+                  </div>
+                )}
+                {deal.isSimulated && (
+                  <div className="relative z-20 bg-red-600 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 flex items-center gap-2">
+                    <span>⚠️ Simulated / invented — not a real transaction</span>
+                  </div>
+                )}
 
                 {/* Card header */}
                 <button
@@ -209,6 +251,14 @@ export default function InvestmentTrackerClient({ deals }: { deals: Deal[] }) {
                 {/* Expanded detail */}
                 {isOpen && (
                   <div className="border-t border-slate-100 dark:border-slate-800 px-5 py-4 space-y-3">
+                    {deal.isSimulated && deal.simulatedNote && (
+                      <div className="bg-red-50 dark:bg-red-950/30 border-l-2 border-red-400 dark:border-red-600 pl-3 py-2 rounded-r-lg">
+                        <p className="text-[10px] font-black uppercase tracking-wider text-red-600 dark:text-red-400 mb-1">
+                          Why this entry is simulated
+                        </p>
+                        <p className="text-xs text-red-800 dark:text-red-300 leading-relaxed">{deal.simulatedNote}</p>
+                      </div>
+                    )}
                     {deal.summary && (
                       <p className="ty-body text-slate-600 dark:text-slate-300 leading-relaxed">{deal.summary}</p>
                     )}

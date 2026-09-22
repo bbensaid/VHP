@@ -18,6 +18,12 @@ interface WireItem {
   published_at: string | null;
 }
 
+interface UnavailableSource {
+  label: string;
+  reason: string;
+  url: string;
+}
+
 interface EnrichedWireItem extends WireItem {
   pillar: string;
   impact: number;
@@ -83,7 +89,7 @@ const PILLAR_COLORS: Record<string, string> = {
 };
 
 const SOURCE_AUTHORITY: Record<string, number> = {
-  cms: 5, fda: 5, policy: 4, stat: 4, industry: 3, tech: 3,
+  cms: 5, fda: 5, vt_gmcb: 5, vt_ahs: 5, policy: 4, stat: 4, industry: 3, tech: 3,
 };
 
 function tagItem(item: WireItem): EnrichedWireItem {
@@ -115,6 +121,8 @@ const SOURCE_COLORS: Record<string, string> = {
   cms:      "bg-emerald-50 text-emerald-700",
   tech:     "bg-indigo-50 text-indigo-700",
   industry: "bg-amber-50 text-amber-700",
+  vt_gmcb:  "bg-green-50 text-green-700",
+  vt_ahs:   "bg-lime-50 text-lime-700",
 };
 
 // Five pillars only. The Equity Imperative gets its own toggle after a divider
@@ -147,13 +155,16 @@ export default function WireFeed({
   initialItems,
   fetchedAt,
   currentUserId,
+  unavailableSources = [],
 }: {
   initialItems: WireItem[];
   fetchedAt: string;
   currentUserId?: string;
+  unavailableSources?: UnavailableSource[];
 }) {
   const [items, setItems] = useState<EnrichedWireItem[]>(() => initialItems.map(tagItem));
   const [lastFetch, setLastFetch] = useState(fetchedAt);
+  const [sourcesNotConnected, setSourcesNotConnected] = useState(unavailableSources);
   const [activePillar, setActivePillar] = useState("All");
   const [isPending, startTransition] = useTransition();
   const [commentCounts, setCommentCounts] = useState<Record<string, number>>({});
@@ -178,6 +189,9 @@ export default function WireFeed({
         if (data.items) {
           setItems(data.items.map(tagItem));
           setLastFetch(data.fetched_at);
+        }
+        if (data.unavailable_sources) {
+          setSourcesNotConnected(data.unavailable_sources);
         }
       } catch { /* silent */ }
     });
@@ -314,6 +328,21 @@ export default function WireFeed({
               </article>
             );
           })}
+        </div>
+      )}
+
+      {/* ── Honest disclosure for sources checked but not wired up ───────────── */}
+      {sourcesNotConnected.length > 0 && (
+        <div className="mt-6 pt-4 border-t border-dashed border-slate-200">
+          {sourcesNotConnected.map((s) => (
+            <p key={s.label} className="text-[11px] text-slate-400 leading-snug">
+              <span className="font-bold uppercase tracking-wider text-slate-500">{s.label}</span>{" "}
+              not yet connected — {s.reason}{" "}
+              <a href={s.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-indigo-600">
+                Check manually →
+              </a>
+            </p>
+          ))}
         </div>
       )}
 

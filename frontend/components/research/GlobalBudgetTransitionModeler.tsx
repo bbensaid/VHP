@@ -4,6 +4,21 @@ import { useState, useMemo } from 'react'
 
 const ORG_PRESETS = [
   {
+    id: 'vermont-apm',
+    label: 'Vermont (All-Payer TCOC)',
+    hospitalCount: 14,
+    annualRevenueM: 2890, // statewide net patient revenue, FY2023 actuals (GMCB)
+    medicaidPct: 17,
+    medicarePct: 45,
+    commercialPct: 37,
+    selfPayPct: 1,
+    operatingMarginPct: -1.5, // illustrative composite — see sourced note below when selected
+    fteCount: 17000, // VAHHS: Vermont hospitals employ ~17,000 statewide
+    recommendedGrowthPct: 3.5, // Vermont All-Payer Model NPR growth target, GMCB FY25 hospital budget guidance
+    note:
+      'Statewide aggregate, not one hospital: 14 Vermont community hospitals. Net patient revenue ≈$2.89B (FY2023 actuals, GMCB). Payer mix is share of gross patient revenue statewide (GMCB Hospital Community Report). 9 of 14 hospitals ran negative operating margins in each of the last two fiscal years (GMCB FY25 hospital budget decisions) — the −1.5% operating margin above is an illustrative composite, not a reported statewide figure. Global budget growth rate defaults to the 3.5% net-patient-revenue target GMCB set for FY25 under the Vermont All-Payer Model agreement.',
+  },
+  {
     id: 'rural-cah',
     label: 'Rural CAH',
     beds: 25,
@@ -78,6 +93,7 @@ function ProgressBar({ pct, color, label }: { pct: number; color: string; label:
 
 export default function GlobalBudgetTransitionModeler() {
   const [presetId, setPresetId] = useState('community')
+  const [growthTouched, setGrowthTouched] = useState(false)
   const [transitionYears, setTransitionYears] = useState(5)
   const [globalBudgetGrowthPct, setGlobalBudgetGrowthPct] = useState(3.5)
   const [ffsBaselineGrowthPct, setFfsBaselineGrowthPct] = useState(5.2)
@@ -147,7 +163,12 @@ export default function GlobalBudgetTransitionModeler() {
           {ORG_PRESETS.map(p => (
             <button
               key={p.id}
-              onClick={() => setPresetId(p.id)}
+              onClick={() => {
+                setPresetId(p.id)
+                if (!growthTouched && 'recommendedGrowthPct' in p && p.recommendedGrowthPct) {
+                  setGlobalBudgetGrowthPct(p.recommendedGrowthPct)
+                }
+              }}
               className={`p-3 rounded-xl border-2 text-left transition-all ${
                 presetId === p.id
                   ? 'border-emerald-500 bg-emerald-50'
@@ -155,7 +176,9 @@ export default function GlobalBudgetTransitionModeler() {
               }`}
             >
               <div className={`text-xs font-black mb-1 ${presetId === p.id ? 'text-emerald-700' : 'text-slate-700'}`}>{p.label}</div>
-              <div className="text-[10px] text-slate-400">{p.beds} beds · {fmt(p.annualRevenueM)} revenue</div>
+              <div className="text-[10px] text-slate-400">
+                {'hospitalCount' in p && p.hospitalCount ? `${p.hospitalCount} hospitals` : `${p.beds} beds`} · {fmt(p.annualRevenueM)} revenue
+              </div>
               <div className={`text-[10px] font-bold ${p.operatingMarginPct >= 0 ? 'text-emerald-600' : 'text-rose-600'}`}>
                 {fmtPct(p.operatingMarginPct)} margin
               </div>
@@ -163,13 +186,19 @@ export default function GlobalBudgetTransitionModeler() {
           ))}
         </div>
 
+        {'note' in preset && preset.note && (
+          <div className="mb-6 text-[11px] leading-relaxed text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-3">
+            {preset.note}
+          </div>
+        )}
+
         <div className="grid md:grid-cols-2 gap-6">
           <div>
             <label className="block text-xs font-bold text-slate-700 mb-1">
               Global budget annual growth rate: <span className="text-emerald-700">{globalBudgetGrowthPct}%</span>
             </label>
             <input type="range" min={1} max={7} step={0.1} value={globalBudgetGrowthPct}
-              onChange={e => setGlobalBudgetGrowthPct(+e.target.value)}
+              onChange={e => { setGlobalBudgetGrowthPct(+e.target.value); setGrowthTouched(true) }}
               className="w-full accent-emerald-600" />
             <div className="flex justify-between text-[10px] text-slate-400 mt-0.5"><span>1%</span><span>7%</span></div>
           </div>

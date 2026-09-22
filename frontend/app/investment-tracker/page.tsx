@@ -28,7 +28,9 @@ const DEALS_QUERY = `
     summary,
     analystNote,
     sourceUrl,
-    tags
+    tags,
+    isSimulated,
+    simulatedNote
   }
 `;
 
