@@ -449,6 +449,41 @@ function PopulationSegmentation() {
     return { tierCounts, totalCost, highRisk, savingsIfReduced };
   }, [tierDist, panelSize]);
 
+  // ── SDOH-adjusted tier reassignment ──────────────────────────────────────
+  // Built 2026-09-21: clinical risk tier and social risk were two independent
+  // sliders with no computed relationship, so a reader could never see "how
+  // many patients change tier once social risk is included alongside clinical
+  // risk" — the exact question Chapters 8 and 9 send readers here to answer.
+  // Method, disclosed rather than hidden in a black box: each of the three SDOH
+  // factors independently raises the odds a patient is stratified one tier
+  // higher than clinical data alone would place them, at 30% weight per factor
+  // at its own maximum (50%) — i.e. a patient facing all three factors at their
+  // ceiling has a 45% chance of an upward tier shift; a panel with all SDOH
+  // sliders at 0 shifts nobody, so setting them to zero must reproduce the
+  // raw clinical distribution exactly.
+  const TIER_ORDER: (keyof TierDist)[] = ["Very Low", "Low", "Moderate", "High", "Very High"];
+  const sdohShiftFraction = useMemo(() => {
+    const perFactorWeight = 0.3; // each factor's own max (50%) contributes up to 30% shift odds
+    return (Object.values(sdoh).reduce((a, b) => a + b / 50, 0) / Object.keys(sdoh).length) * perFactorWeight;
+  }, [sdoh]);
+
+  const sdohAdjusted = useMemo(() => {
+    const counts = Object.fromEntries(TIER_ORDER.map((t) => [t, Math.round((tierDist[t] / 100) * panelSize)])) as Record<keyof TierDist, number>;
+    const adjusted: Record<keyof TierDist, number> = { ...counts };
+    let movedTotal = 0;
+    for (let i = 0; i < TIER_ORDER.length - 1; i++) {
+      const from = TIER_ORDER[i];
+      const to = TIER_ORDER[i + 1];
+      const moving = Math.round(counts[from] * sdohShiftFraction);
+      adjusted[from] -= moving;
+      adjusted[to] += moving;
+      movedTotal += moving;
+    }
+    const highRiskBefore = counts["High"] + counts["Very High"];
+    const highRiskAfter = adjusted["High"] + adjusted["Very High"];
+    return { counts, adjusted, movedTotal, highRiskBefore, highRiskAfter };
+  }, [tierDist, panelSize, sdohShiftFraction]);
+
   return (
     <div className="space-y-6">
       <div className="bg-rose-50 border border-rose-200 rounded-lg p-4 flex gap-3">
@@ -628,6 +663,74 @@ function PopulationSegmentation() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* SDOH-adjusted tier reassignment — the missing link between clinical and social risk */}
+      <div className="bg-white border border-rose-100 rounded-xl p-5 shadow-sm">
+        <h3 className="font-semibold text-rose-900 mb-1 text-sm uppercase tracking-wide">
+          Tier Reassignment Once Social Risk Is Included
+        </h3>
+        <p className="text-xs text-slate-500 mb-4">
+          Clinical-only tiers (left slider set) reassigned upward using the SDOH factors above. Set
+          every SDOH slider to 0 to confirm this reproduces the clinical-only distribution exactly.
+        </p>
+        {sdohAdjusted.movedTotal === 0 ? (
+          <p className="text-sm text-slate-600">
+            No SDOH burden entered — nobody changes tier. Raise a factor above to see the reassignment.
+          </p>
+        ) : (
+          <>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+              <div className="bg-rose-50 border border-rose-100 rounded-lg p-3">
+                <div className="text-xs text-rose-700 mb-1">Patients changing tier</div>
+                <div className="text-xl font-bold text-rose-900">
+                  {sdohAdjusted.movedTotal.toLocaleString()}
+                </div>
+              </div>
+              <div className="bg-rose-50 border border-rose-100 rounded-lg p-3">
+                <div className="text-xs text-rose-700 mb-1">High/Very High before</div>
+                <div className="text-xl font-bold text-rose-900">
+                  {sdohAdjusted.highRiskBefore.toLocaleString()}
+                </div>
+              </div>
+              <div className="bg-rose-50 border border-rose-100 rounded-lg p-3">
+                <div className="text-xs text-rose-700 mb-1">High/Very High after</div>
+                <div className="text-xl font-bold text-rose-900">
+                  {sdohAdjusted.highRiskAfter.toLocaleString()}
+                  <span className="text-xs font-medium text-rose-500 ml-1">
+                    (+{(sdohAdjusted.highRiskAfter - sdohAdjusted.highRiskBefore).toLocaleString()})
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-2">
+              {TIER_ORDER.map((t) => (
+                <div key={t} className="flex items-center gap-3 text-xs">
+                  <span className={`w-20 font-medium ${TIER_TEXT[t]}`}>{t}</span>
+                  <span className="text-slate-500 tabular-nums">
+                    {sdohAdjusted.counts[t].toLocaleString()}
+                  </span>
+                  <span className="text-slate-300">→</span>
+                  <span className="font-semibold text-slate-800 tabular-nums">
+                    {sdohAdjusted.adjusted[t].toLocaleString()}
+                  </span>
+                  <span
+                    className={`ml-auto font-bold tabular-nums ${
+                      sdohAdjusted.adjusted[t] > sdohAdjusted.counts[t]
+                        ? "text-rose-600"
+                        : sdohAdjusted.adjusted[t] < sdohAdjusted.counts[t]
+                          ? "text-slate-400"
+                          : "text-slate-300"
+                    }`}
+                  >
+                    {sdohAdjusted.adjusted[t] - sdohAdjusted.counts[t] > 0 ? "+" : ""}
+                    {(sdohAdjusted.adjusted[t] - sdohAdjusted.counts[t]).toLocaleString()}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
       </div>
 
       {/* Results dashboard */}
