@@ -162,7 +162,7 @@ export const TOOLS: readonly Tool[] = [
     label: "Statewide EHR Deployment Modeler",
     href: "/research-lab/interoperability?tab=statewide-ehr",
     pillars: ["technology"],
-    chapters: ["4"],
+    chapters: ["4", "5"],
     desc: "Model the Act 167 feasibility question: a single statewide EHR vs. FHIR interoperability across Vermont's existing platforms — 10-year TCO, data timeliness, disruption, and vendor lock-in.",
   },
   {

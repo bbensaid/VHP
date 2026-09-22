@@ -1,8 +1,24 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { CheckCircle, XCircle, AlertTriangle, ChevronDown, ChevronRight, Info } from "lucide-react";
+import { CheckCircle, XCircle, AlertTriangle, ChevronDown, ChevronRight, Info, Award } from "lucide-react";
 import { SYNTHETIC_PATIENTS, type SyntheticPatient, type Encounter } from "@/lib/syntheticPatients";
+import { NCQA_QUALITY_COMPASS_BENCHMARKS, hedisStars } from "./ClinicalQualityOptimizer";
+
+// This tool's measure codes follow NCQA's official HEDIS naming; the shared
+// benchmark map (sourced in ClinicalQualityOptimizer.tsx) keys by the same
+// codes for the ones NCQA reports as a single combined rate. Sub-measures
+// NCQA doesn't publish a distinct national percentile for (e.g. the CDC
+// sub-components other than HbA1c control, or 30-day vs. 7-day follow-up)
+// are intentionally left unmapped rather than borrowing a related measure's
+// number — see the "no national benchmark published" fallback below.
+const NCQA_BENCHMARK_CODE: Record<string, string> = {
+  "CDC-HbA1c": "CDC",
+  "CBP": "CBP",
+  "FUH-7": "FUH",
+  "AMM": "AMM",
+  "MAH": "MAH",
+};
 
 // ─── HEDIS MEASURE METADATA ───────────────────────────────────────────────────
 
@@ -194,7 +210,9 @@ function HEDISPanelView() {
     const inNumer = allStatuses.filter(h => h.inDenominator && h.inNumerator).length;
     const rate = inDenom > 0 ? Math.round((inNumer / inDenom) * 100) : null;
     const meta = HEDIS_META[code];
-    return { code, inDenom, inNumer, rate, gaps: inDenom - inNumer, meta };
+    const benchmark = NCQA_QUALITY_COMPASS_BENCHMARKS[NCQA_BENCHMARK_CODE[code]] ?? null;
+    const stars = rate !== null && benchmark ? hedisStars(rate, benchmark.p50, benchmark.p90) : null;
+    return { code, inDenom, inNumer, rate, gaps: inDenom - inNumer, meta, benchmark, stars };
   }), [allMeasureCodes]);
 
   const activeMeasure = selectedMeasure ? measureStats.find(m => m.code === selectedMeasure) : null;
@@ -222,6 +240,11 @@ function HEDISPanelView() {
               )}
             </div>
             <p className="text-[10px] text-slate-600 leading-tight">{m.meta?.fullName ?? m.code}</p>
+            {m.stars !== null && (
+              <p className="text-[9px] font-bold text-indigo-600 mt-1">
+                {"★".repeat(m.stars)}{"☆".repeat(5 - m.stars)} vs. NCQA national
+              </p>
+            )}
             {m.inDenom > 0 && (
               <div className="mt-2">
                 <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
@@ -251,6 +274,43 @@ function HEDISPanelView() {
               )}
             </div>
           </div>
+
+          {/* National benchmark comparison */}
+          <div className="bg-indigo-50 border-b border-indigo-200 px-5 py-4">
+            {activeMeasure.benchmark ? (
+              <div className="flex items-center gap-4">
+                <Award className="w-5 h-5 text-indigo-500 shrink-0" />
+                <div className="flex-1">
+                  <p className="text-[10px] font-black uppercase tracking-widest text-indigo-700 mb-1.5">
+                    vs. NCQA Quality Compass national benchmark ({activeMeasure.benchmark.measureName})
+                  </p>
+                  <div className="relative h-2.5 bg-slate-200 rounded-full overflow-hidden">
+                    <div className="absolute inset-y-0 left-0 bg-slate-400" style={{ width: `${activeMeasure.benchmark.p50}%` }} />
+                    <div className="absolute inset-y-0 left-0 bg-slate-600" style={{ width: `${activeMeasure.benchmark.p90}%` }} />
+                    {activeMeasure.rate !== null && (
+                      <div className="absolute inset-y-0 w-1 bg-amber-500" style={{ left: `${Math.min(100, activeMeasure.rate)}%` }} />
+                    )}
+                  </div>
+                  <div className="flex justify-between text-[9px] text-slate-500 mt-1">
+                    <span>0%</span>
+                    <span>50th pctl: {activeMeasure.benchmark.p50}%</span>
+                    <span>90th pctl: {activeMeasure.benchmark.p90}%</span>
+                  </div>
+                </div>
+                {activeMeasure.stars !== null && (
+                  <div className="text-center shrink-0">
+                    <p className="text-lg font-black text-indigo-600 leading-none">{"★".repeat(activeMeasure.stars)}{"☆".repeat(5 - activeMeasure.stars)}</p>
+                    <p className="text-[9px] text-slate-500 mt-0.5">HEDIS star rating</p>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <p className="text-[10px] text-slate-500 italic">
+                No NCQA Quality Compass national percentile is published as a single rate for {activeMeasure.code} — proprietary/licensed data at this specificity was not available to compare against.
+              </p>
+            )}
+          </div>
+
           <div className="bg-white p-5 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
             <div>
               <p className="font-black text-slate-700 uppercase tracking-widest text-[10px] mb-1.5">Numerator</p>

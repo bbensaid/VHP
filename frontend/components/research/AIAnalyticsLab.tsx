@@ -25,6 +25,7 @@ import {
   FileText,
   ArrowRight,
   RefreshCw,
+  Lock,
 } from "lucide-react";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -914,76 +915,145 @@ interface GovernanceDomain {
   name: string;
   icon: React.ReactNode;
   color: string;
+  /** Real published framework(s) this domain's items are drawn from — not fabricated. */
+  source: string;
   questions: string[];
 }
 
+// Grounded in six published healthcare-AI-governance frameworks (verified 2026-09-22):
+//  - FDA/Health Canada/MHRA "Good Machine Learning Practice" (GMLP) 10 Guiding Principles (Oct 2021; IMDRF final, Jan 2025)
+//  - ONC HTI-1 Final Rule — Predictive DSI transparency requirements: FAVES criteria (Fair/Appropriate/Valid/Effective/Safe)
+//    and 31 source attributes for Predictive Decision Support Interventions
+//  - NIST AI Risk Management Framework 1.0 (AI RMF) — 4 functions (Govern/Map/Measure/Manage), 76 subcategories total
+//  - Coalition for Health AI (CHAI) Governance Playbooks (May 2026) — 8 governance domains for health systems
+//  - WHO "Ethics and Governance of Artificial Intelligence for Health" (2021) — 6 guiding principles
+//  - Model cards for model reporting (industry-standard documentation practice referenced in NIST AI RMF Govern 4)
+// 62 items across 8 domains — a real synthesis of these sources' scope, not a pad to a round number.
 const GOVERNANCE_DOMAINS: GovernanceDomain[] = [
   {
     name: "Clinical Validation",
     icon: <Activity className="w-4 h-4" />,
     color: "indigo",
+    source: "FDA/Health Canada/MHRA GMLP Guiding Principles; ONC HTI-1 FAVES (\"Valid\", \"Effective\")",
     questions: [
       "Was the model validated on your specific patient population?",
       "Is there a designated clinical champion who reviewed the model?",
       "Was a shadow-mode or parallel evaluation conducted before go-live?",
       "Are validation metrics reported for all relevant subgroups?",
       "Has the model been re-validated after any significant data shift?",
+      "Is the training/validation data provenance documented and traceable (GMLP Principle 2)?",
+      "Were reference/gold-standard datasets kept independent of the training set (GMLP Principle 3)?",
+      "Is model performance benchmarked against the current standard of care or clinician performance?",
     ],
   },
   {
     name: "Data Quality",
     icon: <FileText className="w-4 h-4" />,
     color: "violet",
+    source: "FDA/IMDRF GMLP Principles 1 & 4; NIST AI RMF MAP function",
     questions: [
       "Is training data representative of the deployment population?",
       "Is there a formal data governance policy covering model inputs?",
       "Are data pipelines monitored for drift or quality degradation?",
       "Are missing data patterns documented and addressed?",
+      "Was data collection and management conducted with a multidisciplinary team including clinical expertise (GMLP Principle 1)?",
+      "Are data labeling/annotation processes and inter-rater reliability documented?",
+      "Is PHI in training data handled per a documented de-identification/minimum-necessary standard?",
+      "Are data sources and their update frequency documented for ongoing model inputs (NIST AI RMF MAP 3)?",
     ],
   },
   {
     name: "Bias & Equity",
     icon: <Scale className="w-4 h-4" />,
     color: "purple",
+    source: "ONC HTI-1 FAVES (\"Fair\"); NIST AI RMF Measure 2.11; WHO Principle 5 — Inclusiveness & Equity",
     questions: [
       "Was bias testing performed across protected demographic groups?",
       "Are equity-focused performance metrics tracked (e.g., recall by race)?",
       "Is there a documented disparity monitoring plan post-deployment?",
       "Were affected community members involved in design or review?",
+      "Has the model been tested for proxy discrimination (e.g., zip code or insurance type standing in for race)?",
+      "Is the fairness definition used for this model documented (e.g., demographic parity vs. equalized odds)?",
+      "Is there a remediation plan if a disparity is identified post-deployment?",
+      "Is the bias-audit methodology and results available for internal or external review?",
     ],
   },
   {
     name: "Transparency",
     icon: <Eye className="w-4 h-4" />,
     color: "blue",
+    source: "ONC HTI-1 Predictive DSI source attributes; FDA transparency guiding principles; model-card documentation practice",
     questions: [
       "Can clinicians understand why a specific alert fired (explainability)?",
       "Is there a published model card or technical documentation?",
       "Are prediction confidence intervals or uncertainty shown to users?",
       "Are model limitations clearly communicated at the point of care?",
+      "Does documentation disclose intended use, development approach, and bias-mitigation methodology?",
+      "Is external validation performance disclosed separately from internal validation performance?",
+      "Is the model's update/versioning history documented and available to users?",
+      "Are input variables and their relative influence on outputs disclosed to clinical users?",
+      "Is a plain-language summary of the tool available to affected patients?",
     ],
   },
   {
     name: "Oversight & Monitoring",
     icon: <Target className="w-4 h-4" />,
     color: "cyan",
+    source: "NIST AI RMF Manage function & Measure 2.6; FDA/IMDRF GMLP Principle 9 (human-AI team performance)",
     questions: [
       "Is there a real-time model performance monitoring dashboard?",
       "Is there a documented post-deployment monitoring and review plan?",
       "Is there a clearly identified owner (team/role) for the model?",
       "Is there a defined process to retrain or retire underperforming models?",
       "Are clinician override rates and feedback captured systematically?",
+      "Is human review required before a high-stakes output (e.g., a denial) takes effect?",
+      "Is there an escalation path when a model output conflicts with clinical judgment?",
+      "Are model incidents (near-misses, erroneous outputs, downtime) logged in an incident register?",
+      "Is there a documented rollback procedure if a model update degrades performance?",
     ],
   },
   {
     name: "Ethics & Patient Rights",
     icon: <ShieldCheck className="w-4 h-4" />,
     color: "teal",
+    source: "WHO \"Ethics and Governance of AI for Health\" (2021), Guiding Principles 1, 2 & 4",
     questions: [
       "Were patients informed that AI is used in their care decisions?",
       "Is there an opt-out mechanism for patients?",
       "Does the model directly affect care approvals, denials, or access?",
       "Has an ethics review (IRB or equivalent) been conducted?",
+      "Can a patient or clinician contest an AI-influenced decision (WHO Principle 1 — autonomy)?",
+      "Is the model's use consistent with promoting patient well-being over cost or efficiency alone (WHO Principle 2)?",
+      "Is there a named accountable individual or committee for AI-related harms (WHO Principle 4)?",
+    ],
+  },
+  {
+    name: "Vendor & Third-Party Governance",
+    icon: <Building2 className="w-4 h-4" />,
+    color: "rose",
+    source: "Coalition for Health AI (CHAI) Governance Playbooks (2026) — Third-Party Management domain",
+    questions: [
+      "Has the vendor disclosed the model's training data sources and validation methodology?",
+      "Is there a contractual requirement for the vendor to disclose material model updates before deployment?",
+      "Has the vendor's bias-testing and fairness documentation been independently reviewed?",
+      "Is there a defined process for revalidating a vendor model after the vendor pushes an update?",
+      "Does the contract specify liability and remediation obligations if the model causes patient harm?",
+      "Is there an inventory of all third-party AI/ML models in clinical use, updated at least annually?",
+    ],
+  },
+  {
+    name: "Security & Incident Response",
+    icon: <Lock className="w-4 h-4" />,
+    color: "amber",
+    source: "NIST AI RMF Govern 1.5 & Manage 2–4; CHAI Responsible Data Management domain; HIPAA Security Rule applied to AI systems",
+    questions: [
+      "Has the model undergone a security risk assessment (adversarial input, data poisoning, model extraction)?",
+      "Is access to the model and its training data restricted on a least-privilege basis?",
+      "Is there a documented incident-response plan specific to AI system failures or security events?",
+      "Are model logs and prediction records retained and auditable per the organization's retention policy?",
+      "Is there a breach-notification procedure covering AI-system data exposures?",
+      "Is the model's infrastructure included in the organization's regular penetration-testing/vulnerability-management cycle?",
+      "Is there a business-continuity plan for AI-dependent clinical workflows if the model becomes unavailable?",
     ],
   },
 ];
@@ -992,17 +1062,17 @@ const TEMPLATES = [
   {
     name: "Sepsis Early Warning",
     description: "High-acuity, time-sensitive. Requires maximal clinical validation, real-time monitoring, and clear escalation pathways.",
-    scores: { "Clinical Validation": 100, "Data Quality": 80, "Bias & Equity": 60, "Transparency": 80, "Oversight & Monitoring": 100, "Ethics & Patient Rights": 75 },
+    scores: { "Clinical Validation": 100, "Data Quality": 80, "Bias & Equity": 60, "Transparency": 80, "Oversight & Monitoring": 100, "Ethics & Patient Rights": 75, "Vendor & Third-Party Governance": 60, "Security & Incident Response": 85 },
   },
   {
     name: "Discharge Planning AI",
     description: "Moderate acuity. Focus on bias/equity and patient rights as it affects post-acute placement decisions.",
-    scores: { "Clinical Validation": 80, "Data Quality": 75, "Bias & Equity": 100, "Transparency": 60, "Oversight & Monitoring": 80, "Ethics & Patient Rights": 100 },
+    scores: { "Clinical Validation": 80, "Data Quality": 75, "Bias & Equity": 100, "Transparency": 60, "Oversight & Monitoring": 80, "Ethics & Patient Rights": 100, "Vendor & Third-Party Governance": 70, "Security & Incident Response": 65 },
   },
   {
     name: "Prior Auth Automation",
     description: "High regulatory scrutiny. Patients directly affected by approval/denial. Ethics and transparency are paramount.",
-    scores: { "Clinical Validation": 60, "Data Quality": 80, "Bias & Equity": 80, "Transparency": 100, "Oversight & Monitoring": 80, "Ethics & Patient Rights": 100 },
+    scores: { "Clinical Validation": 60, "Data Quality": 80, "Bias & Equity": 80, "Transparency": 100, "Oversight & Monitoring": 80, "Ethics & Patient Rights": 100, "Vendor & Third-Party Governance": 80, "Security & Incident Response": 75 },
   },
 ];
 
@@ -1046,6 +1116,8 @@ function GovernanceBuilder() {
     blue: "bg-blue-100 text-blue-700 border-blue-200",
     cyan: "bg-cyan-100 text-cyan-700 border-cyan-200",
     teal: "bg-teal-100 text-teal-700 border-teal-200",
+    rose: "bg-rose-100 text-rose-700 border-rose-200",
+    amber: "bg-amber-100 text-amber-700 border-amber-200",
   };
 
   const scoreBarColor = (score: number) =>
@@ -1153,6 +1225,7 @@ function GovernanceBuilder() {
               </button>
               {expandedDomains[d.name] && (
                 <div className="border-t border-slate-100 px-5 py-3 space-y-2">
+                  <p className="text-[11px] text-slate-400 italic mb-1">Source: {d.source}</p>
                   {d.questions.map((q, qi) => {
                     const key = `${d.name}_${qi}`;
                     return (

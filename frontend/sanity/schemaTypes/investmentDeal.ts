@@ -156,6 +156,32 @@ export default defineType({
       of: [{ type: 'string' }],
       options: { layout: 'tags' },
     }),
+    defineField({
+      name: 'isSimulated',
+      title: 'Simulated / invented data',
+      type: 'boolean',
+      initialValue: false,
+      description:
+        "Set true ONLY when this deal could not be verified against a real, checkable source " +
+        "(press release, filing, or trade press). The author's standing rule: unverifiable data " +
+        "is allowed here only if clearly disclosed. When true, the Investment Tracker page renders " +
+        "an unmissable watermark/banner on this entry (and a page-level banner if any deal is " +
+        "simulated) — this is not optional cosmetic labeling, do not set true without also filling " +
+        "in simulatedNote.",
+    }),
+    defineField({
+      name: 'simulatedNote',
+      title: 'Simulated data — explanation',
+      type: 'string',
+      description: 'Required when isSimulated is true: say what could not be verified and why this entry exists anyway.',
+      hidden: ({ document }) => !document?.isSimulated,
+      validation: (Rule) =>
+        Rule.custom((value, context) => {
+          const doc = context.document;
+          if (doc?.isSimulated && !value) return 'Required when "Simulated / invented data" is checked.';
+          return true;
+        }),
+    }),
   ],
   orderings: [
     {
@@ -170,15 +196,16 @@ export default defineType({
       dealType: 'dealType',
       dealValueUsd: 'dealValueUsd',
       announcedDate: 'announcedDate',
+      isSimulated: 'isSimulated',
     },
-    prepare({ title, dealType, dealValueUsd, announcedDate }) {
+    prepare({ title, dealType, dealValueUsd, announcedDate, isSimulated }) {
       const typeLabel: Record<string, string> = {
         ma: 'M&A', vc: 'VC', pe: 'PE', ipo: 'IPO',
         partnership: 'Partnership', debt: 'Debt',
       }
       const value = dealValueUsd ? `$${dealValueUsd >= 1000 ? `${(dealValueUsd / 1000).toFixed(1)}B` : `${dealValueUsd}M`}` : 'Undisclosed'
       return {
-        title: title ?? 'Untitled Deal',
+        title: isSimulated ? `⚠️ SIMULATED — ${title ?? 'Untitled Deal'}` : (title ?? 'Untitled Deal'),
         subtitle: `${typeLabel[dealType] ?? dealType} · ${value} · ${announcedDate ?? ''}`,
       }
     },

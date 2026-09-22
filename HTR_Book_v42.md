@@ -3002,7 +3002,7 @@ Chapter 5's implementation reality --- AI governance, CDS, and clinical data exc
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Do this**                                                                              **On this tool**                                                                            **What to look for**
   ---------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------
-  Build an AI clinical governance framework across the model lifecycle                     **AI Clinical Governance Lab** --- /research-lab/technology-ai?tab=ai                       The 65-item checklist as a go/no-go gate before any clinical AI deployment.
+  Build an AI clinical governance framework across the model lifecycle                     **AI Clinical Governance Lab** --- /research-lab/technology-ai?tab=ai                       The 62-item checklist across eight governance domains as a go/no-go gate before any clinical AI deployment.
 
   Model RPM and telehealth ROI by condition and CPT code                                   **Digital Health Lab** --- /research-lab/technology-ai?tab=digital                          Where digital health earns its cost --- and where it adds alert fatigue without value.
 
@@ -3431,13 +3431,13 @@ Network and Partnerships --- particularly community partner SDOH referral networ
 
 Chapter 6's payment-reform argument --- reference-based pricing, global budgets, the fee-for-service trap --- is fully modelable. Reproduce the chapter's Vermont numbers and then run your own.
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Do this**                                                                                      **On this tool**                                                                                                                                                 **What to look for**
-  ------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Design an APM and model a 5-year global-budget transition with Vermont's All-Payer TCOC preset   **APM Design Lab** --- /research-lab/payment-models?tab=apm-design and **Global Budget Transition Modeler** --- /research-lab/payment-models?tab=gb-transition   How a binding revenue envelope changes the volume incentive the chapter describes.
 
-  Stress-test a hospital's finances under RBP, global-budget, and Medicaid-cut scenarios           **Hospital Financial Stress Test** --- /research-lab/policy-quality?tab=scorecard                                                                                Reproduce the Oliver Wyman finding: 13 of 14 hospitals in operating loss by 2028 under the conservative scenario.
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Stress-test a hospital's finances under RBP, global-budget, and Medicaid-cut scenarios           **Hospital Financial Stress Test** --- /research-lab/policy-quality?tab=scorecard                                                                                Run Oliver Wyman's conservative-scenario assumptions (3.5% revenue growth, 5% expense growth) against Vermont's real 2024 hospital baselines and see where the multi-year trajectory lands.
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 6.12 --- Hands-on platform tools for the Economics Pillar.*
 
@@ -5365,7 +5365,7 @@ The advisory practice described in this chapter is grounded in a specific theory
 
 -   RESEARCH LAB --- nearly forty interactive tools at healthtransformationreview.org/research-lab. FHIR Lab, EMR/EHR Lab, Statewide EHR Modeler, APM Design Lab, Health Equity Studio, Policy Simulator, CIN & Shared Services Modeler, EMS Transformation Modeler, and more.
 
--   HTR ACADEMY --- Structured curriculum at healthtransformationreview.org/academy. Foundation and advanced courses in APM mechanics, HEDIS, and transformation leadership.
+-   HTR ACADEMY --- Structured curriculum at healthtransformationreview.org/academy. Foundation and advanced courses in APM mechanics, HEDIS, and global budgets, plus dedicated Health Equity Analytics and Transformation Leadership courses.
 
 -   ADVISORY SERVICES --- Strategic consulting, research, health IT, independent review, capability assessment, financial audit, regulatory navigation, and training. Contact: advisory@healthtransformationreview.org
 
@@ -5380,7 +5380,7 @@ The transformation implementation platform has four integrated components, each 
 
   HTR Research Lab                   A suite of analytical tools implementing the frameworks in this book: APM Shared Savings Calculator, VBC Transformation Readiness Assessment (30-dimension), Hospital Financial Stress Test, AI Governance Checklist, Health Equity Studio (HEROI scoring, HEDIS stratification, disparity decomposition), VBC Contract Review Checklist, Policy Impact Assessment Framework.
 
-  HTR Academy                        Structured curriculum for healthcare transformation --- from foundational courses on APM mechanics and HEDIS quality measurement to advanced programs on global budget management, health equity analytics, and transformation leadership. CEU-eligible content for clinical and administrative professionals.
+  HTR Academy                        Structured curriculum for healthcare transformation --- from foundational courses on APM mechanics and HEDIS quality measurement to advanced programs on global budgets and reference-based pricing, plus dedicated Health Equity Analytics and Transformation Leadership courses.
 
   Transformation Advisory Services   Direct advisory engagements for organizations navigating specific transformation decisions: APM contract evaluation, transformation readiness assessment, VBC financial modeling, health equity program design, technology architecture review, strategic plan development. Engagements range from two-week focused assessments to multi-year transformation management partnerships.
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -5474,7 +5474,7 @@ The HTR Implementation Toolkit is the operational counterpart to this book's ana
 
   Health Equity Studio (HEROI)              Calculates HEROI composite equity score from stratified HEDIS data. Includes disparity decomposition module and intervention portfolio designer.
 
-  AI Clinical Governance Checklist          65-item governance evaluation across six lifecycle stages for clinical AI deployments. Includes vendor assessment module and equity monitoring protocol.
+  AI Clinical Governance Checklist          62-item governance evaluation across eight governance domains for clinical AI deployments. Includes vendor assessment module and equity monitoring protocol.
 
   VBC Contract Review Checklist             65-item analysis framework for VBC contract evaluation, covering benchmark methodology, attribution, quality withhold, risk corridors, carve-outs, and reconciliation terms.
 
@@ -5547,7 +5547,7 @@ The weekly policy and practice intelligence service, providing curated analysis 
 
 **HTR Research Lab** The suite of analytical tools implementing the five-pillar framework: APM Shared Savings Calculator, VBC Readiness Assessment, Health Equity Studio, Hospital Financial Stress Test, AI Governance Checklist, and other instruments.
 
-**HTR Academy** The structured transformation curriculum for healthcare transformation education: foundational and advanced courses in APM mechanics, quality measurement, health equity analytics, and transformation leadership.
+**HTR Academy** The structured transformation curriculum for healthcare transformation education: foundational and advanced courses in APM mechanics, quality measurement, and global budgets, plus dedicated Health Equity Analytics and Transformation Leadership courses.
 
 **HEROI (Health Equity Return on Investment)** The composite equity performance score calculated across five dimensions. Available in the Health Equity Studio.
 
@@ -6867,7 +6867,7 @@ Category 4 --- Technology & AI in Health
 
 E.11 HTA Studio --- Budget Impact Model Builder (5-year, 3 uptake scenarios); Multi-Criteria Decision Analysis (8 criteria, up to 3 alternatives); Monte Carlo PSA (1,000 iterations with CE plane and CEAC); Threshold and Surrogate Analysis.
 
-E.12 AI Analytics Lab --- Predictive Model Performance Comparator (AUC-ROC, sensitivity, specificity, PPV, NPV, F1, Brier for up to 3 models); Algorithmic Bias Detector (demographic parity, equal opportunity, predictive parity, calibration; flags outside 0.80--1.25); AI Clinical Governance Framework Builder (65-item checklist, 6 lifecycle stages); AI ROI Calculator.
+E.12 AI Analytics Lab --- Predictive Model Performance Comparator (AUC-ROC, sensitivity, specificity, PPV, NPV, F1, Brier for up to 3 models); Algorithmic Bias Detector (demographic parity, equal opportunity, predictive parity, calibration; flags outside 0.80--1.25); AI Clinical Governance Framework Builder (62-item checklist, 8 governance domains); AI ROI Calculator.
 
 E.13 Digital Health Lab --- Remote Patient Monitoring ROI Calculator (CPT 99453/99454/99457/99458, 6 condition modules); Telehealth Utilization Modeler; Patient Engagement Platform Comparison (PAM model, 5 types); EHR Optimization and Interoperability ROI.
 
@@ -6927,19 +6927,19 @@ This scorecard consolidates the Vermont evidence from across the book into a sin
 
 ### E.0.3 **Economics Pillar**
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Metric**                                   **2022 baseline**                                **2026 status**                                                                 **2028 target**                                                               **Source**
-  -------------------------------------------- ------------------------------------------------ ------------------------------------------------------------------------------- ----------------------------------------------------------------------------- ----------------------------------------
-  Hospital operating margins                   9 of 14 reporting losses (FY2023); worst −8.9%   9 of 14 in losses; CAH operating profit \$938/discharge vs. \$2,784 benchmark   13 of 14 within sustainable margin range                                      Oliver Wyman; AHS Nov 2025 Report
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Metric**                                   **2022 baseline**                                **2026 status**                                                                                **2028 target**                                                               **Source**
+  -------------------------------------------- ------------------------------------------------ ---------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------- -----------------------------------------------------------------------
+  Hospital operating margins                   9 of 14 reporting losses (FY2023); worst −8.9%   6 of 14 in losses (FY2024, GMCB); CAH operating profit \$938/discharge vs. \$2,784 benchmark   13 of 14 within sustainable margin range                                      Oliver Wyman; AHS Nov 2025 Report; GMCB FY2025 Hospital Budget Review
 
-  Commercial-to-Medicare price ratio           UVMMC 300%+; system average 250--300%            Mandatory RBP (FY2027) enacted; methodology under design                        All hospitals at or below statutory RBP ceiling; cross-subsidy reduced 40%+   GMCB price-transparency data; Act 68
+  Commercial-to-Medicare price ratio           UVMMC 300%+; system average 250--300%            Mandatory RBP (FY2027) enacted; methodology under design                                       All hospitals at or below statutory RBP ceiling; cross-subsidy reduced 40%+   GMCB price-transparency data; Act 68
 
-  Administrative cost per adjusted discharge   UVMMC \$3,826 (267% of \$1,427 benchmark)        \$3,826 (unchanged); RHRC engagement underway                                   System average below 150% of benchmark                                        AHS Nov 2025 Report; NASHP
+  Administrative cost per adjusted discharge   UVMMC \$3,826 (267% of \$1,427 benchmark)        \$3,826 (unchanged); RHRC engagement underway                                                  System average below 150% of benchmark                                        AHS Nov 2025 Report; NASHP
 
-  VBC contract penetration                     AHEAD not launched; commercial VBC minimal       Act 68 global budgets take effect FY2028; commercial VBC growing                Medicare: fee-for-service (AHEAD withdrawn); commercial: 40%+ VBC             CMS AHEAD; GMCB commercial reports
+  VBC contract penetration                     AHEAD not launched; commercial VBC minimal       Act 68 global budgets take effect FY2028; commercial VBC growing                               Medicare: fee-for-service (AHEAD withdrawn); commercial: 40%+ VBC             CMS AHEAD; GMCB commercial reports
 
-  5-year cumulative deficit projection         \$700M--\$2.4B (Oliver Wyman 2024)               Trajectory unchanged without RBP/global-budget implementation                   Deficit trajectory reversed; system break-even by FY2030                      Oliver Wyman; Act 68 financial targets
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  5-year cumulative deficit projection         \$700M--\$2.4B (Oliver Wyman 2024)               Trajectory unchanged without RBP/global-budget implementation                                  Deficit trajectory reversed; system break-even by FY2030                      Oliver Wyman; Act 68 financial targets
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure E.3 --- Economics-pillar scorecard. Sources: Oliver Wyman Act 167 Report; AHS November 2025 Report; GMCB price-transparency data; CMS AHEAD.*
 
@@ -7189,7 +7189,7 @@ The Stage 2 question: *Can you see your population in time to act?* A hospital t
 
 Open the **Global Budget Transition Modeler** (/research-lab/payment-models?tab=gb-transition) and the **Hospital Financial Stress Test** (/research-lab/policy-quality?tab=scorecard). Using the Stage 2 population, model a 5-year global-budget transition and stress-test it against RBP and Medicaid-cut scenarios.
 
-The Stage 3 question: *Under a fixed revenue envelope, is the hospital solvent --- and which assumptions break it?* This is where Vermont's "13 of 14 in operating loss by 2028" finding becomes your own number.
+The Stage 3 question: *Under a fixed revenue envelope, is the hospital solvent --- and which assumptions break it?* This is where Oliver Wyman's conservative-scenario assumptions become your own number --- run them against your hospital's real baseline and see where the multi-year trajectory lands.
 
 ## H.5 **Stage 4 --- Clinical: Redesign Care on Aligned Incentives**
 

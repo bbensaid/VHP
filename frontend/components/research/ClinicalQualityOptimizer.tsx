@@ -265,6 +265,15 @@ const HEDIS_MEASURES: HedisMeasure[] = [
   },
 ];
 
+// Shared with other Research Lab tools (e.g. VBCQualityDashboard) so a national
+// benchmark comparison never retypes these NCQA Quality Compass percentiles —
+// derived from HEDIS_MEASURES above, single source of truth, keyed by the
+// official measure code.
+export const NCQA_QUALITY_COMPASS_BENCHMARKS: Record<string, { p50: number; p90: number; measureName: string }> =
+  Object.fromEntries(
+    HEDIS_MEASURES.map((m) => [m.code, { p50: m.p50, p90: m.p90, measureName: m.name }])
+  );
+
 const STAR_DOMAINS = [
   {
     id: 1,
@@ -400,7 +409,7 @@ function starsFromCutPoints(value: number, cutPoints: [number, number, number, n
   return 1;
 }
 
-function hedisStars(current: number, p50: number, p90: number): number {
+export function hedisStars(current: number, p50: number, p90: number): number {
   if (current >= p90) return 5;
   if (current >= (p50 + p90) / 2) return 4;
   if (current >= p50) return 3;
