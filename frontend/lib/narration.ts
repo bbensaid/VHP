@@ -43,6 +43,15 @@ function chapterToSlug(ch: Chapter): string {
   return `chapter-${ch.num.padStart(2, "0")}`;
 }
 
+// The .m4a audio files were moved out of public/audio/ into a public Supabase
+// Storage bucket on 2026-09-22 — they were the single largest contributor to
+// Vercel's per-deployment static-asset footprint (~355MB, bundled into every
+// deployment). The .txt transcripts stay local (tiny, read server-side via fs
+// in app/read/[slug]/page.tsx). Do not move audioSrc back to a local /audio/
+// path without re-checking that migration's reasoning.
+const NARRATION_AUDIO_BASE =
+  "https://clryhwqaqhvdikgesjbc.supabase.co/storage/v1/object/public/narration-audio";
+
 /** Returns every narration track in canonical reading order. */
 export function getAllTracks(): NarrationTrack[] {
   return CHAPTERS.map((ch, i) => {
@@ -52,7 +61,7 @@ export function getAllTracks(): NarrationTrack[] {
       num: ch.num,
       title: ch.title,
       desc: ch.desc,
-      audioSrc: `/audio/narration/${base}.m4a`,
+      audioSrc: `${NARRATION_AUDIO_BASE}/narration/${base}.m4a`,
       textSrc: `/audio/narration/${base}.txt`,
       slug: chapterToSlug(ch),
       chapter: ch,
