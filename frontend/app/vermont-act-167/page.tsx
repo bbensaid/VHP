@@ -500,7 +500,9 @@ export default function VermontAct167Page() {
                 controls
                 preload="metadata"
                 className="w-full max-w-2xl h-10 accent-violet-500"
-                src="/audio/Vermont_s_Five_Year_Race_Against_Hospital_Insolvency.m4a"
+                // Moved to Supabase Storage 2026-09-22 — see lib/narration.ts's
+                // NARRATION_AUDIO_BASE comment for why.
+                src="https://clryhwqaqhvdikgesjbc.supabase.co/storage/v1/object/public/narration-audio/Vermont_s_Five_Year_Race_Against_Hospital_Insolvency.m4a"
               >
                 Your browser does not support the audio element.
               </audio>
