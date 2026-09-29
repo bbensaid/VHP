@@ -15,7 +15,21 @@ llama-index-llms-groq==0.5.0
 llama-index-embeddings-openai==0.5.1
 llama-index-vector-stores-postgres==0.8.1
 llama-index-readers-file==0.5.5
+# Advisory/admin roles route to MODEL_ADVISORY ("claude-sonnet-4-6"), but
+# services/llm.py guards this import with try/except ImportError — without the
+# package installed, _ANTHROPIC_AVAILABLE is False and those roles silently
+# fall back to Groq. It was missing here entirely.
+llama-index-llms-anthropic==0.12.1
 asyncpg==0.31.0
+# Used by book-build/ingest_book_to_rag.py for the delete/count path.
+psycopg2-binary==2.9.11
+
+# Re-ranking — services/retrieval.py:rerank_nodes() and services/llm.py:get_ranker().
+# get_ranker() swallows the ImportError and logs "re-ranking disabled", so with
+# this missing the whole pipeline silently skipped re-ranking in production.
+# Needs onnxruntime, which has no wheel for py3.13/macOS; the deploy image is
+# python:3.11-slim (linux), where it resolves fine.
+flashrank==0.2.10
 
 # PDF parsing
 pypdf==6.4.2
