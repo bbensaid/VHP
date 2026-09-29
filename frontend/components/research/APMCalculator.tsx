@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 import { TrendingUp, TrendingDown, DollarSign, AlertTriangle } from "lucide-react";
 
 const APM_MODELS = [
@@ -12,6 +12,7 @@ const APM_MODELS = [
     lossShare: 0,      // No downside risk
     qualityWithhold: 0,
     capGainPct: 0.10,  // Max shared savings 10% of benchmark
+    stopLossPct: 0,    // N/A — one-sided model, no downside to cap
     desc: "Entry-level ACO model. No downside risk. ACO keeps 50% of savings above MSR.",
   },
   {
@@ -22,7 +23,8 @@ const APM_MODELS = [
     lossShare: 0.30,
     qualityWithhold: 0.025,
     capGainPct: 0.15,
-    desc: "Enhanced MSSP with downside risk. Higher sharing rate (75%) but 30% loss exposure.",
+    stopLossPct: 0.15, // Loss ceiling 15% of benchmark
+    desc: "Enhanced MSSP with downside risk. Higher sharing rate (75%) but 30% loss exposure, capped at 15% of benchmark.",
   },
   {
     id: "aco_reach",
@@ -32,7 +34,8 @@ const APM_MODELS = [
     lossShare: 1.0,
     qualityWithhold: 0.05,
     capGainPct: 1.0,
-    desc: "Full global risk model. ACO keeps/absorbs 100% of savings or losses vs. benchmark.",
+    stopLossPct: 0.05, // Global model: losses capped at 5% of benchmark
+    desc: "Full global risk model. ACO keeps/absorbs 100% of savings or losses vs. benchmark, with losses stopped at 5%.",
   },
   {
     id: "bpci",
@@ -42,7 +45,8 @@ const APM_MODELS = [
     lossShare: 1.0,
     qualityWithhold: 0,
     capGainPct: 1.0,
-    desc: "Per-episode payment model. Net payment based on actual vs. target episode price.",
+    stopLossPct: 0.20, // Episode-level 20% stop-loss ceiling
+    desc: "Per-episode payment model. Net payment based on actual vs. target episode price, with a 20% stop-loss ceiling.",
   },
   {
     id: "custom",
@@ -52,7 +56,8 @@ const APM_MODELS = [
     lossShare: 0.20,
     qualityWithhold: 0.02,
     capGainPct: 0.12,
-    desc: "Define your own sharing rate, MSR, and risk parameters.",
+    stopLossPct: 0.10,
+    desc: "Define your own sharing rate, MSR, stop-loss, and risk parameters.",
   },
 ];
 
@@ -108,8 +113,14 @@ function fmt(n: number, dec = 0) {
   return n.toLocaleString("en-US", { maximumFractionDigits: dec });
 }
 function fmtUSD(n: number) {
-  if (Math.abs(n) >= 1_000_000) return "$" + (n / 1_000_000).toFixed(2) + "M";
-  return "$" + fmt(Math.round(n));
+  // Sign goes before the "$": found live via the Net ACO Position banner, which
+  // passes raw (possibly negative) netPosition and rendered "$-6.77M" for a loss
+  // instead of "-$6.77M". Call sites that already pass Math.abs() + their own
+  // "+"/"−" prefix are unaffected since abs(n) === n there.
+  const sign = n < 0 ? "-" : "";
+  const abs = Math.abs(n);
+  if (abs >= 1_000_000) return sign + "$" + (abs / 1_000_000).toFixed(2) + "M";
+  return sign + "$" + fmt(abs);
 }
 
 export default function APMCalculator() {
@@ -138,6 +149,7 @@ export default function APMCalculator() {
   const [customSharing, setCustomSharing] = useState(60);
   const [customLoss, setCustomLoss] = useState(20);
   const [customQW, setCustomQW] = useState(2);
+  const [customStopLoss, setCustomStopLoss] = useState(10);
 
   const model = APM_MODELS[modelIdx];
   // Wrapped in useMemo so the results memo below sees a stable reference unless
@@ -145,13 +157,15 @@ export default function APMCalculator() {
   // object on every render and the downstream memo recomputes unconditionally.
   const effectiveModel = useMemo(() => {
     return modelIdx === APM_MODELS.length - 1
-      ? { ...model, msr: customMSR / 100, sharingRate: customSharing / 100, lossShare: customLoss / 100, qualityWithhold: customQW / 100 }
+      ? { ...model, msr: customMSR / 100, sharingRate: customSharing / 100, lossShare: customLoss / 100, qualityWithhold: customQW / 100, stopLossPct: customStopLoss / 100 }
       : model;
-  }, [model, modelIdx, customMSR, customSharing, customLoss, customQW]);
+  }, [model, modelIdx, customMSR, customSharing, customLoss, customQW, customStopLoss]);
 
-  const results = useMemo(() => {
+  // One pure evaluation of the contract at a given actual-spend assumption.
+  // Used for the point estimate AND for the pessimistic/base/optimistic spread.
+  const evaluate = useCallback((spendPct: number) => {
     const annualBenchmark = attributedLives * benchmarkPMPM * 12;
-    const actualSpend     = annualBenchmark * (actualSpendPct / 100);
+    const actualSpend     = annualBenchmark * (spendPct / 100);
     const grossSavings    = annualBenchmark - actualSpend;
     const savingsRate     = grossSavings / annualBenchmark;
 
@@ -169,8 +183,16 @@ export default function APMCalculator() {
     const sharedSavingsBeforeCap = netSavings * effectiveModel.sharingRate * qualityMultiplier;
     const sharedSavings = Math.min(sharedSavingsBeforeCap, maxSharedSavings);
 
-    // Loss payment (if in deficit)
-    const lossPayment = netLoss * effectiveModel.lossShare;
+    // Loss payment (if in deficit), capped by the contract's stop-loss ceiling.
+    // stopLossPct is expressed as a share of annual benchmark revenue, the same
+    // way capGainPct caps the upside. 0 means "no stop-loss defined" — which in
+    // a one-sided model is moot, since lossShare is 0 there anyway.
+    const maxLossExposure = effectiveModel.stopLossPct > 0
+      ? annualBenchmark * effectiveModel.stopLossPct
+      : Infinity;
+    const lossPaymentBeforeCap = netLoss * effectiveModel.lossShare;
+    const lossPayment = Math.min(lossPaymentBeforeCap, maxLossExposure);
+    const stopLossBinding = lossPaymentBeforeCap > maxLossExposure;
 
     // Admin costs
     const totalAdminCost = adminCostPMPM * attributedLives * 12;
@@ -187,13 +209,20 @@ export default function APMCalculator() {
       : 0;
 
     return {
+      spendPct,
       annualBenchmark,
       actualSpend,
       grossSavings,
       savingsRate,
       netSavings,
+      sharedSavingsBeforeCap,
       sharedSavings,
+      maxSharedSavings,
+      lossPaymentBeforeCap,
       lossPayment,
+      maxLossExposure,
+      stopLossBinding,
+      capBinding: sharedSavingsBeforeCap > maxSharedSavings,
       totalAdminCost,
       netPosition,
       netPositionPMPM,
@@ -201,7 +230,26 @@ export default function APMCalculator() {
       qualityMultiplier,
       aboveMSR: savingsRate >= effectiveModel.msr,
     };
-  }, [attributedLives, benchmarkPMPM, actualSpendPct, qualityScore, adminCostPMPM, effectiveModel]);
+  }, [attributedLives, benchmarkPMPM, qualityScore, adminCostPMPM, effectiveModel]);
+
+  const results = useMemo(() => evaluate(actualSpendPct), [evaluate, actualSpendPct]);
+
+  // ── Pessimistic / base / optimistic spread ──────────────────────────────────
+  // The single assumption that drives netSavings/netLoss is actual spend as a %
+  // of benchmark. We flex the *savings margin* (the distance from benchmark) by
+  // ±20%, with a 1.0pp floor so the band never collapses to nothing when the
+  // base case sits exactly on benchmark.
+  const SPREAD = 0.20;
+  const scenarios = useMemo(() => {
+    const margin = actualSpendPct - 100;          // negative = under benchmark
+    const swing  = Math.max(Math.abs(margin) * SPREAD, 1.0);
+    const clamp  = (v: number) => Math.min(115, Math.max(80, v));
+    return [
+      { key: "pessimistic", label: "Pessimistic", note: `Spend ${clamp(actualSpendPct + swing).toFixed(1)}% of benchmark`, r: evaluate(clamp(actualSpendPct + swing)) },
+      { key: "base",        label: "Base Case",   note: `Spend ${actualSpendPct.toFixed(1)}% of benchmark`,               r: results },
+      { key: "optimistic",  label: "Optimistic",  note: `Spend ${clamp(actualSpendPct - swing).toFixed(1)}% of benchmark`, r: evaluate(clamp(actualSpendPct - swing)) },
+    ];
+  }, [evaluate, actualSpendPct, results]);
 
   const isProfit = results.netPosition >= 0;
 
@@ -263,6 +311,7 @@ export default function APMCalculator() {
                 { label: "Loss Share (%)", value: customLoss, set: setCustomLoss, min: 0, max: 100 },
                 { label: "Min Savings Rate (%)", value: customMSR, set: setCustomMSR, min: 0, max: 5, step: 0.1 },
                 { label: "Quality Withhold (%)", value: customQW, set: setCustomQW, min: 0, max: 10, step: 0.5 },
+                { label: "Stop-Loss Ceiling (% of benchmark)", value: customStopLoss, set: setCustomStopLoss, min: 0, max: 30, step: 0.5 },
               ].map(f => (
                 <div key={f.label}>
                   <div className="flex justify-between text-xs mb-1">
@@ -332,7 +381,7 @@ export default function APMCalculator() {
                 { label: "Actual ACO Spend", value: results.actualSpend, color: results.actualSpend < results.annualBenchmark ? "text-emerald-600" : "text-rose-500", barColor: results.actualSpend < results.annualBenchmark ? "bg-emerald-400" : "bg-rose-400" },
                 { label: "Gross Savings (Deficit)", value: results.grossSavings, color: results.grossSavings >= 0 ? "text-emerald-600" : "text-rose-500", barColor: results.grossSavings >= 0 ? "bg-emerald-500" : "bg-rose-500" },
                 { label: `Shared Savings Earned (${(effectiveModel.sharingRate * 100).toFixed(0)}% share)`, value: results.sharedSavings, color: "text-sky-600", barColor: "bg-sky-500" },
-                { label: "Loss Payment to CMS", value: -results.lossPayment, color: "text-rose-500", barColor: "bg-rose-400" },
+                { label: results.stopLossBinding ? `Loss Payment to CMS (stop-loss capped at ${(effectiveModel.stopLossPct * 100).toFixed(0)}%)` : "Loss Payment to CMS", value: -results.lossPayment, color: "text-rose-500", barColor: "bg-rose-400" },
                 { label: "ACO Admin Costs", value: -results.totalAdminCost, color: "text-amber-600", barColor: "bg-amber-400" },
               ].map(row => {
                 const maxVal = results.annualBenchmark;
@@ -362,6 +411,65 @@ export default function APMCalculator() {
             </div>
           </div>
 
+          {/* Scenario spread: pessimistic / base / optimistic */}
+          <div className="bg-white rounded-xl border border-slate-200 p-5">
+            <div className="flex items-baseline justify-between mb-4 gap-3">
+              <h4 className="text-xs font-black uppercase tracking-widest text-slate-400">Scenario Spread</h4>
+              <span className="text-[10px] text-slate-400">Savings margin flexed ±{(SPREAD * 100).toFixed(0)}%</span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {scenarios.map(s => {
+                const good = s.r.netPosition >= 0;
+                const isBase = s.key === "base";
+                return (
+                  <div
+                    key={s.key}
+                    className={`rounded-xl border p-4 ${
+                      isBase
+                        ? "bg-sky-50 border-sky-300 ring-1 ring-sky-200"
+                        : good ? "bg-emerald-50/60 border-emerald-200" : "bg-rose-50/60 border-rose-200"
+                    }`}
+                  >
+                    <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">{s.label}</p>
+                    <p className={`text-2xl font-black mt-1 ${good ? "text-emerald-700" : "text-rose-600"}`}>
+                      {good ? "+" : "−"}{fmtUSD(Math.abs(s.r.netPosition))}
+                    </p>
+                    <p className="text-[10px] text-slate-500 mt-0.5">{s.note}</p>
+                    <div className="mt-3 pt-3 border-t border-slate-200/80 space-y-1.5">
+                      <div className="flex justify-between text-[11px]">
+                        <span className="text-slate-500">Gross shared savings</span>
+                        <span className="font-bold text-slate-700">{fmtUSD(s.r.sharedSavingsBeforeCap)}</span>
+                      </div>
+                      <div className="flex justify-between text-[11px]">
+                        <span className="text-slate-500">Net of withhold &amp; cap</span>
+                        <span className="font-bold text-sky-700">{fmtUSD(s.r.sharedSavings)}</span>
+                      </div>
+                      <div className="flex justify-between text-[11px]">
+                        <span className="text-slate-500">Loss payment</span>
+                        <span className="font-bold text-rose-500">
+                          {s.r.lossPayment > 0 ? "−" + fmtUSD(s.r.lossPayment) : fmtUSD(0)}
+                          {s.r.stopLossBinding && <span className="ml-1 text-[9px] font-black uppercase text-rose-400">capped</span>}
+                        </span>
+                      </div>
+                      <div className="flex justify-between text-[11px]">
+                        <span className="text-slate-500">Admin costs</span>
+                        <span className="font-bold text-amber-600">−{fmtUSD(s.r.totalAdminCost)}</span>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            <p className="text-[10px] text-slate-400 mt-3 leading-relaxed">
+              The gap between <span className="font-bold text-slate-500">gross</span> and{" "}
+              <span className="font-bold text-slate-500">net</span> shared savings is the quality withhold and the{" "}
+              {(effectiveModel.capGainPct * 100).toFixed(0)}% gain cap biting. Downside is limited by the{" "}
+              {effectiveModel.stopLossPct > 0
+                ? `${(effectiveModel.stopLossPct * 100).toFixed(0)}% stop-loss ceiling (${fmtUSD(results.maxLossExposure)})`
+                : "absence of downside risk in this model"}.
+            </p>
+          </div>
+
           {/* Alerts */}
           <div className="space-y-2">
             {!results.aboveMSR && results.grossSavings > 0 && (
@@ -374,6 +482,14 @@ export default function APMCalculator() {
               <div className="flex items-start gap-2 p-3 bg-rose-50 border border-rose-200 rounded-xl text-xs text-rose-700">
                 <AlertTriangle size={14} className="shrink-0 mt-0.5" />
                 Quality score ({qualityScore}) is below 70. Quality withhold of {(effectiveModel.qualityWithhold * 100).toFixed(0)}% applied to shared savings.
+              </div>
+            )}
+            {results.stopLossBinding && (
+              <div className="flex items-start gap-2 p-3 bg-rose-50 border border-rose-200 rounded-xl text-xs text-rose-700">
+                <AlertTriangle size={14} className="shrink-0 mt-0.5" />
+                Stop-loss binding: the {(effectiveModel.lossShare * 100).toFixed(0)}% loss share would owe{" "}
+                {fmtUSD(results.lossPaymentBeforeCap)}, but the {(effectiveModel.stopLossPct * 100).toFixed(0)}% ceiling
+                limits exposure to {fmtUSD(results.maxLossExposure)}.
               </div>
             )}
             {results.breakEvenSavingsPct > 0 && (

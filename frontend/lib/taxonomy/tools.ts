@@ -109,6 +109,16 @@ export const TOOLS: readonly Tool[] = [
     desc: "Model revenue and operating margin through the transition from fee-for-service to a global budget.",
   },
   {
+    id: "vbc-contract-checklist",
+    label: "VBC Contract Review Checklist",
+    href: "/research-lab/payment-models?tab=contract-review",
+    pillars: ["economics"],
+    // Ch 7 §7.5.1 cites this as the 65-item, eight-category checklist; chs 6 and
+    // 12 name it in their platform tables.
+    chapters: ["6", "7", "12"],
+    desc: "Review a VBC or APM contract against 65 provisions in eight categories, with a readiness score and a severity-ranked negotiation list.",
+  },
+  {
     id: "hospital-stress-test",
     label: "Hospital Financial Stress Test",
     href: "/research-lab/policy-quality?tab=scorecard",

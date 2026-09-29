@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { CheckCircle, AlertTriangle, XCircle, TrendingDown, BadgeCheck, FlaskConical } from "lucide-react";
+import { CheckCircle, AlertTriangle, XCircle, TrendingDown, BadgeCheck, FlaskConical, Info } from "lucide-react";
+import { HOSPITALS as ACT167_HOSPITALS } from "@/app/vermont-act-167/simulator/data";
 
 type PeerGroup = "cah" | "rural_pps" | "urban_community" | "urban_tertiary";
 
@@ -76,7 +77,93 @@ type PeerGroup = "cah" | "rural_pps" | "urban_community" | "urban_tertiary";
 // GMCB deck citations as the 11 newly-added hospitals. Gifford's original
 // preset ($58.5M) was reasonably close to its real FY2024 NPR trajectory and
 // is replaced here with the exact sourced GMCB figure for consistency.
-const VERMONT_PRESETS = [
+//
+// SCENARIO PRESETS (extended 2026-09-28 to match HTR_Book_v42 §7.6.2, which
+// tells a CFO they can run FOUR scenarios: RBP at 200% of Medicare (Oliver
+// Wyman) or 250% (GMCB phased); a global budget revenue cap; H.R. 1 Medicaid
+// cuts phasing in across 2027–2031; and a transformation-investment scenario.)
+interface Preset {
+  id: string;
+  label: string;
+  badge: string;
+  peerGroup: PeerGroup;
+  totalRevenue: number;
+  operatingExpense: number;
+  cashOnHand: number;
+  annualDebtService: number;
+  currentAssets: number;
+  currentLiabilities: number;
+  laborCost: number;
+  medicaidCutPct: number;
+  volumeChangePct: number;
+  travelNurseIncreasePct: number;
+  sourced: boolean;
+  /** Reference-based-pricing cap, as a % of Medicare. null = RBP not modeled. */
+  rbpCapPct?: number | null;
+  /** H.R. 1 Medicaid-cut phase-in year (2027–2031). null = not modeled. */
+  hr1PhaseYear?: number | null;
+  /** Years elapsed since the transformation investment. null = not modeled. */
+  transformYears?: number | null;
+}
+
+// ─── REFERENCE-BASED PRICING (Act 68) ─────────────────────────────────────────
+// The two benchmarks the book names. 200% is the Oliver Wyman / Act 167
+// recommendation (≤200% of Medicare — the same figure /impact-simulation uses
+// as its reference-price default); 250% is the GMCB's phased landing point.
+const RBP_BENCHMARKS = [
+  { pct: 200, label: "200% of Medicare", source: "Oliver Wyman / Act 167 recommendation" },
+  { pct: 250, label: "250% of Medicare", source: "GMCB phased benchmark" },
+];
+const RBP_DEFAULT_CAP = 200; // the book treats the Oliver Wyman figure as primary
+// Vermont commercial prices today. GMCB's February 2026 price-transparency
+// dashboard puts Vermont hospital commercial prices at 279%–697% of Medicare
+// (the range /vermont-act-68 cites); Act 68 materials cite 250%–417% as the
+// typical band. No per-hospital figure is published, so the CURRENT price level
+// is a user input bounded by that published range, not a filing. Default 300%
+// sits just inside the dashboard's low end — deliberately conservative, so the
+// modeled RBP revenue loss understates rather than overstates.
+const COMMERCIAL_PRICE_MIN = 279;
+const COMMERCIAL_PRICE_MAX = 697;
+const COMMERCIAL_PRICE_DEFAULT = 300;
+// Commercial share of net patient revenue. ESTIMATED — GMCB publishes payer mix
+// only at system level and inconsistently by hospital. 35% is the mid-range
+// commercial share for Vermont acute-care hospitals; adjustable.
+const COMMERCIAL_SHARE_DEFAULT = 35;
+
+// ─── H.R. 1 MEDICAID CUTS ─────────────────────────────────────────────────────
+// The book (§7.6.2) has the cuts PHASING IN across 2027–2031, not landing as a
+// single post-2030 cliff (which is how this tool's earlier preset was labeled).
+// Full-phase reduction in Medicaid revenue at 2031 = 12% (the figure the old
+// preset used); intervening years are the linear phase-in the statute's
+// work-requirement / provider-tax schedule implies.
+const HR1_FULL_CUT_PCT = 12;
+const HR1_PHASE: Record<number, number> = {
+  2027: 0.2, 2028: 0.4, 2029: 0.6, 2030: 0.8, 2031: 1.0,
+};
+const HR1_YEARS = [2027, 2028, 2029, 2030, 2031];
+
+// ─── TRANSFORMATION INVESTMENT ────────────────────────────────────────────────
+// The book's $195M Rural Health Transformation (RHT) award. Allocated to a
+// single hospital pro-rata by its share of the 14-hospital FY2024 revenue base
+// — an explicit allocation RULE, not a published per-hospital award (no such
+// allocation has been published). Capital is amortized straight-line; recurring
+// savings are expressed as a % of operating expense, ramping to full effect
+// over 3 years. Both the savings rate and the amortization term are adjustable.
+const RHT_STATEWIDE_AWARD = 195_000_000;
+const TRANSFORM_AMORT_YEARS_DEFAULT = 10;
+const TRANSFORM_SAVINGS_PCT_DEFAULT = 2;   // % of operating expense, at full ramp
+const TRANSFORM_RAMP_YEARS = 3;
+
+// Links this tool's presets to the Act 167 simulator's hospital records, which
+// are the only per-hospital SERVICE-LINE data the platform holds.
+const ACT167_ID_BY_PRESET: Record<string, string> = {
+  bmh: "bmh", cvmc: "cvmc", copley: "copley", grace_cottage: "grace-cottage",
+  gifford: "gifford", mt_ascutney: "mt-ascutney", north_country: "north-country",
+  nvrh: "nvrh", nmc: "nmc", porter: "porter", rutland: "rrmc",
+  springfield: "springfield", svmc: "svmc", uvmmc: "uvmmc",
+};
+
+const VERMONT_PRESETS: Preset[] = [
   {
     id: "bmh",
     label: "Brattleboro Memorial Hospital",
@@ -318,7 +405,7 @@ const VERMONT_PRESETS = [
   {
     id: "act68_rbp",
     label: "Act 68 RBP Scenario (FY2027)",
-    badge: "Stress Test · RBP at Medicare +15%",
+    badge: "Stress Test · RBP benchmark 200% / 250% of Medicare",
     peerGroup: "cah" as PeerGroup,
     totalRevenue: 127_353_530,
     operatingExpense: 128_298_007,
@@ -328,9 +415,13 @@ const VERMONT_PRESETS = [
     currentLiabilities: 12_735_353,
     laborCost: 82_110_724,
     medicaidCutPct: 0,
-    volumeChangePct: -8,   // RBP compression: commercial revenue at Medicare +15%
+    // RBP compression is now modeled explicitly by the benchmark control below
+    // (commercial share × the gap between today's price and the cap), not as a
+    // flat volume haircut.
+    volumeChangePct: 0,
     travelNurseIncreasePct: 0,
     sourced: false,
+    rbpCapPct: RBP_DEFAULT_CAP,
   },
   {
     id: "act68_global_budget",
@@ -356,8 +447,8 @@ const VERMONT_PRESETS = [
   },
   {
     id: "hr1_cliff",
-    label: "H.R. 1 Medicaid Cliff (Post-2030)",
-    badge: "Stress Test · $911B Cuts",
+    label: "H.R. 1 Medicaid Cuts (Phasing 2027–2031)",
+    badge: "Stress Test · $911B Cuts, phased",
     peerGroup: "cah" as PeerGroup,
     totalRevenue: 127_353_530,
     operatingExpense: 128_298_007,
@@ -366,10 +457,29 @@ const VERMONT_PRESETS = [
     currentAssets: 22_923_635,
     currentLiabilities: 12_735_353,
     laborCost: 82_110_724,
-    medicaidCutPct: 12,
+    medicaidCutPct: HR1_FULL_CUT_PCT,
     volumeChangePct: -5,
     travelNurseIncreasePct: 15,
     sourced: false,
+    hr1PhaseYear: 2031, // fully phased; drag the year control back to 2027
+  },
+  {
+    id: "rht_transformation",
+    label: "RHT Transformation Investment ($195M)",
+    badge: "Scenario · Rural Health Transformation capital",
+    peerGroup: "cah" as PeerGroup,
+    totalRevenue: 127_353_530,
+    operatingExpense: 128_298_007,
+    cashOnHand: 34_236_197,
+    annualDebtService: 3_183_838,
+    currentAssets: 22_923_635,
+    currentLiabilities: 12_735_353,
+    laborCost: 82_110_724,
+    medicaidCutPct: 0,
+    volumeChangePct: 0,
+    travelNurseIncreasePct: 0,
+    sourced: false,
+    transformYears: 3, // fully ramped
   },
 ];
 
@@ -465,8 +575,15 @@ const STATUS_CONFIG = {
 
 function fmt(n: number, dec = 1) { return n.toLocaleString("en-US", { maximumFractionDigits: dec }); }
 function fmtUSD(n: number) {
-  if (n >= 1_000_000) return "$" + (n / 1_000_000).toFixed(1) + "M";
-  return "$" + n.toLocaleString("en-US", { maximumFractionDigits: 0 });
+  // Sign goes before the "$", not after it — n.toLocaleString() puts "-" on the
+  // digits, which previously produced "$-10,967,892" for a loss (found live in
+  // the H.R. 1 stress-test scenario, which routinely pushes net income negative).
+  // Magnitude is also checked via Math.abs so large losses still get the "M"
+  // abbreviation instead of a long unabbreviated negative number.
+  const sign = n < 0 ? "-" : "";
+  const abs = Math.abs(n);
+  if (abs >= 1_000_000) return sign + "$" + (abs / 1_000_000).toFixed(1) + "M";
+  return sign + "$" + abs.toLocaleString("en-US", { maximumFractionDigits: 0 });
 }
 
 export default function HospitalFinancialScorecard() {
@@ -494,6 +611,25 @@ export default function HospitalFinancialScorecard() {
   const [volumeChangePct, setVolumeChangePct] = useState(0);
   const [travelNurseIncreasePct, setTravelNurseIncreasePct] = useState(0);
 
+  // Scenario 1 — reference-based pricing benchmark
+  const [rbpCapPct, setRbpCapPct] = useState<number | null>(null);
+  const [commercialPricePct, setCommercialPricePct] = useState(COMMERCIAL_PRICE_DEFAULT);
+  const [commercialSharePct, setCommercialSharePct] = useState(COMMERCIAL_SHARE_DEFAULT);
+  // Scenario 3 — H.R. 1 Medicaid cuts, phasing 2027–2031
+  const [hr1PhaseYear, setHr1PhaseYear] = useState<number | null>(null);
+  // Scenario 4 — transformation investment
+  const [transformYears, setTransformYears] = useState<number | null>(null);
+  const [transformInvestment, setTransformInvestment] = useState(0);
+  const [transformSavingsPct, setTransformSavingsPct] = useState(TRANSFORM_SAVINGS_PCT_DEFAULT);
+  const [transformAmortYears, setTransformAmortYears] = useState(TRANSFORM_AMORT_YEARS_DEFAULT);
+
+  // Pro-rata share of the $195M statewide RHT award, by this hospital's share
+  // of the 14-hospital FY2024 revenue base.
+  const systemRevenue = REAL_HOSPITALS.reduce((a, h) => a + h.totalRevenue, 0);
+  function rhtShareFor(revenue: number) {
+    return Math.round((revenue / systemRevenue) * RHT_STATEWIDE_AWARD);
+  }
+
   function loadPreset(id: string) {
     const p = VERMONT_PRESETS.find(x => x.id === id);
     if (!p) return;
@@ -509,33 +645,94 @@ export default function HospitalFinancialScorecard() {
     setMedicaidCutPct(p.medicaidCutPct);
     setVolumeChangePct(p.volumeChangePct);
     setTravelNurseIncreasePct(p.travelNurseIncreasePct);
+    setRbpCapPct(p.rbpCapPct ?? null);
+    setHr1PhaseYear(p.hr1PhaseYear ?? null);
+    setTransformYears(p.transformYears ?? null);
+    setTransformInvestment(p.transformYears != null ? rhtShareFor(p.totalRevenue) : 0);
   }
 
   const bench = PEER_BENCHMARKS[peerGroup];
   const activePresetData = VERMONT_PRESETS.find(x => x.id === activePreset);
 
+  // Service lines for the selected hospital, from the Act 167 simulator dataset
+  // — the platform's only per-hospital service-line record. It is a PRESENCE
+  // list (which lines a hospital operates), not price data: no per-service-line
+  // commercial price as a % of Medicare is published for Vermont hospitals, so
+  // the book's "which service lines are furthest above the benchmark?" question
+  // cannot be answered numerically here without inventing prices. See the
+  // build summary for this gap.
+  const serviceLines = useMemo(() => {
+    const act167Id = activePreset ? ACT167_ID_BY_PRESET[activePreset] : undefined;
+    if (!act167Id) return null;
+    const h = ACT167_HOSPITALS.find(x => x.id === act167Id);
+    return h ? { name: h.name, services: h.services, coes: h.coes } : null;
+  }, [activePreset]);
+
   const results = useMemo(() => {
+    // ── Scenario 1: reference-based pricing ──
+    // Commercial revenue falls by the share of revenue that is commercial times
+    // the proportional gap between today's price (as a % of Medicare) and the
+    // benchmark cap. A cap at or above today's price has no effect.
+    const rbpRevenueLossPct =
+      rbpCapPct != null && commercialPricePct > 0 && rbpCapPct < commercialPricePct
+        ? (commercialSharePct / 100) * (1 - rbpCapPct / commercialPricePct) * 100
+        : 0;
+
+    // ── Scenario 3: H.R. 1 Medicaid cuts, phasing 2027–2031 ──
+    // A selected phase year overrides the manual Medicaid slider.
+    const effectiveMedicaidCutPct =
+      hr1PhaseYear != null
+        ? HR1_FULL_CUT_PCT * (HR1_PHASE[hr1PhaseYear] ?? 1)
+        : medicaidCutPct;
+
+    // ── Scenario 4: transformation investment ──
+    // Capital is amortized straight-line and added to both operating expense
+    // and annual debt service; recurring savings ramp to full effect over
+    // TRANSFORM_RAMP_YEARS and are taken off operating expense.
+    const transformRamp =
+      transformYears != null ? Math.min(1, transformYears / TRANSFORM_RAMP_YEARS) : 0;
+    const transformAnnualCost =
+      transformYears != null && transformAmortYears > 0
+        ? transformInvestment / transformAmortYears
+        : 0;
+    const transformAnnualSavings =
+      operatingExpense * (transformSavingsPct / 100) * transformRamp;
+    const transformNetEffect = transformAnnualSavings - transformAnnualCost; // + = accretive
+
     // Stress adjustments
-    const revenueAdj    = totalRevenue    * (1 + volumeChangePct / 100) * (1 - medicaidCutPct / 100 * 0.15); // Medicaid is ~15% of net rev
+    const revenueAdj    = totalRevenue
+      * (1 + volumeChangePct / 100)
+      * (1 - effectiveMedicaidCutPct / 100 * 0.15) // Medicaid is ~15% of net rev
+      * (1 - rbpRevenueLossPct / 100);
     const laborAdj      = laborCost       * (1 + travelNurseIncreasePct / 100 * 0.12); // Travel nurses ~12% of labor
-    const expenseAdj    = operatingExpense - laborCost + laborAdj;
+    const expenseAdj    = operatingExpense - laborCost + laborAdj - transformNetEffect;
+    const debtServiceAdj = annualDebtService + transformAnnualCost;
     const dailyExpense  = expenseAdj / 365;
     const adjustedMargin = ((revenueAdj - expenseAdj) / revenueAdj) * 100;
 
     return {
       operatingMargin: adjustedMargin,
       dayCashOnHand: dailyExpense > 0 ? cashOnHand / dailyExpense : 0,
-      debtServiceCoverage: annualDebtService > 0
-        ? (revenueAdj - expenseAdj + annualDebtService) / annualDebtService
+      debtServiceCoverage: debtServiceAdj > 0
+        ? (revenueAdj - expenseAdj + debtServiceAdj) / debtServiceAdj
         : 0,
       currentRatio: currentLiabilities > 0 ? currentAssets / currentLiabilities : 0,
       laborCostPct: revenueAdj > 0 ? (laborAdj / revenueAdj) * 100 : 0,
       revenueAdj,
       expenseAdj,
       netIncome: revenueAdj - expenseAdj,
+      rbpRevenueLossPct,
+      rbpRevenueLossUSD: totalRevenue * (rbpRevenueLossPct / 100),
+      effectiveMedicaidCutPct,
+      transformAnnualCost,
+      transformAnnualSavings,
+      transformNetEffect,
+      transformRamp,
     };
   }, [totalRevenue, operatingExpense, cashOnHand, annualDebtService, currentAssets, currentLiabilities,
-      laborCost, medicaidCutPct, volumeChangePct, travelNurseIncreasePct]);
+      laborCost, medicaidCutPct, volumeChangePct, travelNurseIncreasePct,
+      rbpCapPct, commercialPricePct, commercialSharePct, hr1PhaseYear,
+      transformYears, transformInvestment, transformSavingsPct, transformAmortYears]);
 
   // Compounds each of the 14 real FY2024 baselines forward year-by-year at
   // the two adjustable growth rates, exactly as Oliver Wyman's cited
@@ -703,7 +900,7 @@ export default function HospitalFinancialScorecard() {
 
           {/* Stress Test */}
           <div className="bg-rose-50 border border-rose-200 rounded-xl p-4 space-y-3">
-            <p className="text-[10px] font-black uppercase tracking-widest text-rose-600">Stress Test Scenarios</p>
+            <p className="text-[10px] font-black uppercase tracking-widest text-rose-600">2 · Global Budget Cap &amp; Manual Shocks</p>
             {[
               { label: "Medicaid Rate Cut (%)", value: medicaidCutPct, set: setMedicaidCutPct, min: 0, max: 20 },
               { label: "Volume Change (%)", value: volumeChangePct, set: setVolumeChangePct, min: -30, max: 20 },
@@ -722,6 +919,221 @@ export default function HospitalFinancialScorecard() {
               </div>
             ))}
           </div>
+
+          {/* ── SCENARIO 1: Reference-Based Pricing benchmark ── */}
+          <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <p className="text-[10px] font-black uppercase tracking-widest text-indigo-700">1 · Act 68 Reference-Based Pricing</p>
+              <button
+                onClick={() => setRbpCapPct(rbpCapPct == null ? RBP_DEFAULT_CAP : null)}
+                className="text-[9px] font-bold uppercase tracking-wider text-indigo-600 hover:underline"
+              >
+                {rbpCapPct == null ? "Enable" : "Turn off"}
+              </button>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              {RBP_BENCHMARKS.map(b => (
+                <button
+                  key={b.pct}
+                  onClick={() => setRbpCapPct(b.pct)}
+                  className={`text-left px-3 py-2 rounded-lg border text-xs transition-all ${
+                    rbpCapPct === b.pct
+                      ? "bg-indigo-600 border-indigo-700 text-white font-bold"
+                      : "bg-white border-indigo-200 text-slate-600 hover:border-indigo-400"
+                  }`}
+                >
+                  <div className="font-bold">{b.label}</div>
+                  <div className={`text-[9px] mt-0.5 ${rbpCapPct === b.pct ? "text-indigo-100" : "text-slate-400"}`}>{b.source}</div>
+                </button>
+              ))}
+            </div>
+            {rbpCapPct != null && (
+              <>
+                <div>
+                  <div className="flex justify-between text-xs mb-1">
+                    <span className="text-slate-600">Benchmark cap (% of Medicare)</span>
+                    <span className="font-black text-indigo-700">{rbpCapPct}%</span>
+                  </div>
+                  <input type="range" min={150} max={400} step={5} value={rbpCapPct}
+                    onChange={e => setRbpCapPct(parseFloat(e.target.value))}
+                    className="w-full h-1.5 rounded-full appearance-none bg-indigo-200 accent-indigo-600 cursor-pointer" />
+                </div>
+                <div>
+                  <div className="flex justify-between text-xs mb-1">
+                    <span className="text-slate-600">Current commercial price (% of Medicare)</span>
+                    <span className="font-black text-slate-900">{commercialPricePct}%</span>
+                  </div>
+                  <input type="range" min={COMMERCIAL_PRICE_MIN} max={COMMERCIAL_PRICE_MAX} step={1} value={commercialPricePct}
+                    onChange={e => setCommercialPricePct(parseFloat(e.target.value))}
+                    className="w-full h-1.5 rounded-full appearance-none bg-indigo-200 accent-indigo-600 cursor-pointer" />
+                  <p className="text-[9px] text-slate-400 mt-1">
+                    GMCB&apos;s Feb 2026 price-transparency dashboard puts Vermont hospital
+                    commercial prices at {COMMERCIAL_PRICE_MIN}%–{COMMERCIAL_PRICE_MAX}% of Medicare.
+                    No per-hospital figure is published — set yours.
+                  </p>
+                </div>
+                <div>
+                  <div className="flex justify-between text-xs mb-1">
+                    <span className="text-slate-600">Commercial share of net revenue</span>
+                    <span className="font-black text-slate-900">{commercialSharePct}%</span>
+                  </div>
+                  <input type="range" min={10} max={60} step={1} value={commercialSharePct}
+                    onChange={e => setCommercialSharePct(parseFloat(e.target.value))}
+                    className="w-full h-1.5 rounded-full appearance-none bg-indigo-200 accent-indigo-600 cursor-pointer" />
+                  <p className="text-[9px] text-slate-400 mt-1">Estimated — payer mix is not published per hospital.</p>
+                </div>
+                <div className="text-[11px] font-bold text-rose-600 bg-white border border-rose-200 rounded-lg px-3 py-2">
+                  Modeled revenue loss: −{fmt(results.rbpRevenueLossPct, 1)}% ({fmtUSD(results.rbpRevenueLossUSD)})
+                </div>
+              </>
+            )}
+          </div>
+
+          {/* ── SCENARIO 3: H.R. 1 Medicaid cuts, phasing 2027–2031 ── */}
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <p className="text-[10px] font-black uppercase tracking-widest text-amber-700">3 · H.R. 1 Medicaid Cuts — Phase-In</p>
+              <button
+                onClick={() => setHr1PhaseYear(hr1PhaseYear == null ? 2027 : null)}
+                className="text-[9px] font-bold uppercase tracking-wider text-amber-700 hover:underline"
+              >
+                {hr1PhaseYear == null ? "Enable" : "Turn off"}
+              </button>
+            </div>
+            <div className="grid grid-cols-5 gap-1.5">
+              {HR1_YEARS.map(y => (
+                <button
+                  key={y}
+                  onClick={() => setHr1PhaseYear(y)}
+                  className={`px-1 py-2 rounded-lg border text-[11px] font-bold transition-all ${
+                    hr1PhaseYear === y
+                      ? "bg-amber-600 border-amber-700 text-white"
+                      : "bg-white border-amber-200 text-slate-600 hover:border-amber-400"
+                  }`}
+                >
+                  {y}
+                  <div className={`text-[9px] font-medium ${hr1PhaseYear === y ? "text-amber-100" : "text-slate-400"}`}>
+                    {Math.round(HR1_PHASE[y] * 100)}%
+                  </div>
+                </button>
+              ))}
+            </div>
+            <p className="text-[9px] text-slate-500 leading-relaxed">
+              The cuts phase in across 2027–2031 rather than landing as a single post-2030
+              cliff. Selecting a year overrides the Medicaid slider above with that year&apos;s
+              phased share of the full {HR1_FULL_CUT_PCT}% Medicaid revenue reduction
+              {hr1PhaseYear != null && <> — currently <strong>{fmt(results.effectiveMedicaidCutPct, 1)}%</strong></>}.
+            </p>
+          </div>
+
+          {/* ── SCENARIO 4: Transformation investment ── */}
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <p className="text-[10px] font-black uppercase tracking-widest text-emerald-700">4 · Transformation Investment</p>
+              <button
+                onClick={() => {
+                  if (transformYears == null) {
+                    setTransformYears(TRANSFORM_RAMP_YEARS);
+                    if (transformInvestment === 0) setTransformInvestment(rhtShareFor(totalRevenue));
+                  } else {
+                    setTransformYears(null);
+                  }
+                }}
+                className="text-[9px] font-bold uppercase tracking-wider text-emerald-700 hover:underline"
+              >
+                {transformYears == null ? "Enable" : "Turn off"}
+              </button>
+            </div>
+            {transformYears == null ? (
+              <p className="text-[9px] text-slate-500 leading-relaxed">
+                Models a transformation capital investment: amortized cost against recurring
+                operating savings. Defaults to this hospital&apos;s pro-rata share of the
+                $195M statewide Rural Health Transformation award.
+              </p>
+            ) : (
+              <>
+                <div>
+                  <div className="flex justify-between text-xs mb-1">
+                    <span className="text-slate-600">Capital invested</span>
+                    <span className="font-black text-slate-900">{fmtUSD(transformInvestment)}</span>
+                  </div>
+                  <input type="range" min={0} max={50_000_000} step={250_000} value={Math.min(transformInvestment, 50_000_000)}
+                    onChange={e => setTransformInvestment(parseFloat(e.target.value))}
+                    className="w-full h-1.5 rounded-full appearance-none bg-emerald-200 accent-emerald-600 cursor-pointer" />
+                  <p className="text-[9px] text-slate-400 mt-1">
+                    Pro-rata share of the $195M RHT award for this hospital:{" "}
+                    <button onClick={() => setTransformInvestment(rhtShareFor(totalRevenue))} className="font-bold text-emerald-700 underline">
+                      {fmtUSD(rhtShareFor(totalRevenue))}
+                    </button>{" "}
+                    (allocation rule, not a published award).
+                  </p>
+                </div>
+                <div>
+                  <div className="flex justify-between text-xs mb-1">
+                    <span className="text-slate-600">Recurring savings (% of op. expense)</span>
+                    <span className="font-black text-slate-900">{fmt(transformSavingsPct, 1)}%</span>
+                  </div>
+                  <input type="range" min={0} max={6} step={0.1} value={transformSavingsPct}
+                    onChange={e => setTransformSavingsPct(parseFloat(e.target.value))}
+                    className="w-full h-1.5 rounded-full appearance-none bg-emerald-200 accent-emerald-600 cursor-pointer" />
+                </div>
+                <div>
+                  <div className="flex justify-between text-xs mb-1">
+                    <span className="text-slate-600">Amortization term</span>
+                    <span className="font-black text-slate-900">{transformAmortYears} yrs</span>
+                  </div>
+                  <input type="range" min={3} max={20} step={1} value={transformAmortYears}
+                    onChange={e => setTransformAmortYears(parseInt(e.target.value, 10))}
+                    className="w-full h-1.5 rounded-full appearance-none bg-emerald-200 accent-emerald-600 cursor-pointer" />
+                </div>
+                <div>
+                  <div className="flex justify-between text-xs mb-1">
+                    <span className="text-slate-600">Years since investment</span>
+                    <span className="font-black text-slate-900">
+                      {transformYears} yr{transformYears !== 1 ? "s" : ""} · {Math.round(results.transformRamp * 100)}% ramped
+                    </span>
+                  </div>
+                  <input type="range" min={0} max={10} step={1} value={transformYears}
+                    onChange={e => setTransformYears(parseInt(e.target.value, 10))}
+                    className="w-full h-1.5 rounded-full appearance-none bg-emerald-200 accent-emerald-600 cursor-pointer" />
+                  <p className="text-[9px] text-slate-400 mt-1">Savings ramp to full effect over {TRANSFORM_RAMP_YEARS} years.</p>
+                </div>
+                <div className={`text-[11px] font-bold rounded-lg px-3 py-2 bg-white border ${
+                  results.transformNetEffect >= 0 ? "border-emerald-300 text-emerald-700" : "border-rose-200 text-rose-600"
+                }`}>
+                  Net annual effect: {results.transformNetEffect >= 0 ? "+" : "−"}{fmtUSD(Math.abs(results.transformNetEffect))}
+                  <span className="font-medium text-slate-500">
+                    {" "}(savings {fmtUSD(results.transformAnnualSavings)} − amortized cost {fmtUSD(results.transformAnnualCost)})
+                  </span>
+                </div>
+              </>
+            )}
+          </div>
+
+          {/* ── SERVICE LINES ── */}
+          {serviceLines && (
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
+              <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Service Lines Exposed to RBP</p>
+              <div className="flex flex-wrap gap-1.5">
+                {serviceLines.services.map(s => (
+                  <span key={s} className="px-2 py-0.5 rounded-md bg-white border border-slate-200 text-[10px] font-bold text-slate-600">{s}</span>
+                ))}
+                {serviceLines.services.length === 0 && (
+                  <span className="text-[10px] text-slate-400">No specialty service lines recorded.</span>
+                )}
+              </div>
+              <p className="text-[9px] text-slate-400 mt-2 leading-relaxed flex gap-1.5">
+                <Info size={10} className="shrink-0 mt-0.5" />
+                <span>
+                  Service lines {serviceLines.name} operates, from the Act 167 dataset. Vermont
+                  publishes commercial prices as a % of Medicare only at the <strong>hospital</strong> level
+                  (GMCB price-transparency dashboard), never by service line — so this tool ranks
+                  hospital-level exposure, not which individual service line sits furthest above the
+                  benchmark. No per-service-line price is estimated here.
+                </span>
+              </p>
+            </div>
+          )}
         </div>
 
         {/* ── SCORECARD ── */}
@@ -797,15 +1209,31 @@ export default function HospitalFinancialScorecard() {
           </div>
 
           {/* Stress test impact note */}
-          {(medicaidCutPct > 0 || volumeChangePct !== 0 || travelNurseIncreasePct > 0) && (
-            <div className="flex items-start gap-2 p-3 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-700">
-              <TrendingDown size={14} className="shrink-0 mt-0.5" />
-              Stress test active — results reflect a {medicaidCutPct > 0 ? `${medicaidCutPct}% Medicaid cut` : ""}
-              {medicaidCutPct > 0 && volumeChangePct !== 0 ? ", " : ""}
-              {volumeChangePct !== 0 ? `${volumeChangePct > 0 ? "+" : ""}${volumeChangePct}% volume change` : ""}
-              {travelNurseIncreasePct > 0 ? `${medicaidCutPct > 0 || volumeChangePct !== 0 ? ", " : ""}+${travelNurseIncreasePct}% travel nurse labor increase` : ""}.
-            </div>
-          )}
+          {(() => {
+            const active: string[] = [];
+            if (results.effectiveMedicaidCutPct > 0) {
+              active.push(
+                hr1PhaseYear != null
+                  ? `H.R. 1 Medicaid cuts at their FY${hr1PhaseYear} phase (${fmt(results.effectiveMedicaidCutPct, 1)}% of Medicaid revenue)`
+                  : `${fmt(results.effectiveMedicaidCutPct, 1)}% Medicaid cut`
+              );
+            }
+            if (rbpCapPct != null && results.rbpRevenueLossPct > 0) {
+              active.push(`reference-based pricing capped at ${rbpCapPct}% of Medicare (−${fmt(results.rbpRevenueLossPct, 1)}% net revenue)`);
+            }
+            if (volumeChangePct !== 0) active.push(`${volumeChangePct > 0 ? "+" : ""}${volumeChangePct}% volume change`);
+            if (travelNurseIncreasePct > 0) active.push(`+${travelNurseIncreasePct}% travel nurse labor increase`);
+            if (transformYears != null && (results.transformAnnualCost > 0 || results.transformAnnualSavings > 0)) {
+              active.push(`a ${fmtUSD(transformInvestment)} transformation investment ${results.transformNetEffect >= 0 ? "adding" : "costing"} ${fmtUSD(Math.abs(results.transformNetEffect))}/yr net`);
+            }
+            if (active.length === 0) return null;
+            return (
+              <div className="flex items-start gap-2 p-3 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-700">
+                <TrendingDown size={14} className="shrink-0 mt-0.5" />
+                <span>Scenario active — results reflect {active.join("; ")}.</span>
+              </div>
+            );
+          })()}
 
           <p className="text-[10px] text-slate-400 leading-relaxed">
             Peer benchmarks based on AHA Annual Survey 2024 and Kaufman Hall National Hospital Flash Report.

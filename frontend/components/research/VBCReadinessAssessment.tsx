@@ -28,7 +28,7 @@ interface Domain {
 const DOMAINS: Domain[] = [
   {
     id: "strategy",
-    label: "Strategy & Leadership",
+    label: "Strategic Clarity",
     icon: "🏛️",
     pillar: "Policy",
     color: "text-sky-700",
@@ -45,7 +45,7 @@ const DOMAINS: Domain[] = [
   },
   {
     id: "data",
-    label: "Data & Analytics",
+    label: "Data and Technology",
     icon: "📊",
     pillar: "Technology",
     color: "text-indigo-700",
@@ -62,7 +62,7 @@ const DOMAINS: Domain[] = [
   },
   {
     id: "clinical",
-    label: "Clinical Operations",
+    label: "Care Delivery Capability",
     icon: "🩺",
     pillar: "Clinical",
     color: "text-red-700",
@@ -72,60 +72,60 @@ const DOMAINS: Domain[] = [
     dimensions: [
       { id: "c1", label: "Primary care transformation", desc: "PCMH or equivalent transformation underway — team-based care, proactive outreach, care coordination, and panel management" },
       { id: "c2", label: "Care management program", desc: "Dedicated care management staff (nurse case managers, CHWs, social workers) actively managing high-risk and rising-risk attributed members" },
-      { id: "c3", label: "Specialist integration", desc: "VBC-aligned specialist relationships — e-consult programs, care compacts, co-management protocols, and shared savings participation" },
-      { id: "c4", label: "Post-acute care management", desc: "Active management of SNF, home health, and rehab utilization — preferred network, care coordination, and readmission reduction programs" },
-      { id: "c5", label: "Behavioral health integration", desc: "Co-located or closely integrated behavioral health services, SUD treatment, and care coordination for high-BH-burden attributed members", vermont: "Vermont: High MH/SUD burden especially in Rutland, Windham, Northeast Kingdom — AHEAD equity benchmarks require BH improvement" },
+      { id: "c3", label: "Behavioral health integration", desc: "Co-located or closely integrated behavioral health services, SUD treatment, and care coordination for high-BH-burden attributed members", vermont: "Vermont: High MH/SUD burden especially in Rutland, Windham, Northeast Kingdom — AHEAD equity benchmarks require BH improvement" },
+      { id: "c4", label: "Community health worker deployment", desc: "Community health workers deployed for population outreach, SDOH connection, and care-plan reinforcement for the highest-need attributed members" },
+      { id: "c5", label: "Patient outreach and engagement capability", desc: "Systematic patient outreach infrastructure — call center, patient portal engagement, proactive scheduling — that converts risk-stratified lists into actual patient contact" },
     ],
   },
   {
-    id: "finance",
-    label: "Financial Readiness",
-    icon: "💰",
+    id: "partnerships",
+    label: "Network and Partnerships",
+    icon: "🤝",
+    pillar: "Clinical",
+    color: "text-teal-700",
+    bg: "bg-teal-50",
+    border: "border-teal-200",
+    barColor: "bg-teal-500",
+    dimensions: [
+      { id: "p1", label: "Specialist integration", desc: "VBC-aligned specialist relationships — e-consult programs, care compacts, co-management protocols, and shared savings participation" },
+      { id: "p2", label: "Post-acute care management", desc: "Active management of SNF, home health, and rehab utilization — preferred network, care coordination, and readmission reduction programs" },
+      { id: "p3", label: "Community organization partnerships", desc: "Active partnerships with CBOs and local organizations addressing SDOH for the attributed population, with defined referral and feedback loops", vermont: "Vermont's CCBHCs and Blueprint CHTs are key community partnership infrastructure" },
+      { id: "p4", label: "Care compact and shared-savings participation", desc: "Formal care compacts or shared-savings arrangements with key specialist and post-acute partners that align incentives across the referral network" },
+      { id: "p5", label: "Referral network leakage management", desc: "Systematic tracking of referral patterns and out-of-network leakage, with active management to keep attributed patients within the coordinated care network", vermont: "Vermont's Oliver Wyman-designed COE regionalization framework and CIN development address this domain systematically" },
+    ],
+  },
+  {
+    id: "revenue",
+    label: "Revenue Cycle",
+    icon: "💵",
     pillar: "Economics",
     color: "text-emerald-700",
     bg: "bg-emerald-50",
     border: "border-emerald-200",
     barColor: "bg-emerald-500",
     dimensions: [
-      { id: "f1", label: "Financial modeling capability", desc: "Ability to model APM financial scenarios — benchmark construction, shared savings projections, downside risk quantification", vermont: "Use APM Shared Savings Calculator at /research-lab/payment-models?tab=apm-calc with Vermont presets" },
-      { id: "f2", label: "Hospital financial sustainability", desc: "Operating margin, days cash on hand, and debt service coverage ratios sufficient to absorb downside risk and support transformation investment", vermont: "Use Hospital Financial Stress Test at /research-lab/policy-quality?tab=scorecard — NVRH, Gifford, CVMC presets available" },
-      { id: "f3", label: "VBC revenue diversification", desc: "Portfolio of VBC contracts at different risk levels — not exclusively FFS or exclusively full-risk — managed as a progression toward greater risk assumption" },
-      { id: "f4", label: "Transformation investment capacity", desc: "Available capital and operating budget for care management, analytics, technology, and workforce investments required to achieve VBC performance", vermont: "Vermont RHT Program ($195M) provides transformation capital — /vermont-rht-program for investment categories" },
-      { id: "f5", label: "Shared savings distribution policy", desc: "A board-approved policy for distributing shared savings earned — to physicians, care teams, transformation reinvestment, and capital reserve" },
+      { id: "r1", label: "HCC coding completeness", desc: "Comprehensive, accurate HCC coding capturing the full clinical complexity of the attributed population for risk-adjustment purposes", vermont: "HCC gap closure is among the highest-ROI pre-global-budget analytics investments available to Vermont hospitals (Chapter 1)" },
+      { id: "r2", label: "RAF gap identification", desc: "Systematic identification of risk-adjustment-factor gaps — chronic conditions documented in the clinical record but absent from claims-based risk scores" },
+      { id: "r3", label: "Attribution denial management", desc: "A defined process for identifying, appealing, and correcting incorrect patient attribution that affects both quality measurement and financial risk" },
+      { id: "r4", label: "VBC contract payment reconciliation", desc: "Systematic reconciliation of VBC shared-savings and quality payments against contract terms, catching underpayment and calculation errors" },
+      { id: "r5", label: "Coding audit and compliance process", desc: "A regular internal or external coding audit process that validates HCC coding accuracy and reduces compliance risk under risk-adjustment scrutiny" },
     ],
   },
   {
-    id: "technology",
-    label: "Technology Infrastructure",
-    icon: "💻",
-    pillar: "Technology",
-    color: "text-violet-700",
-    bg: "bg-violet-50",
-    border: "border-violet-200",
-    barColor: "bg-violet-500",
-    dimensions: [
-      { id: "t1", label: "EHR optimization for VBC", desc: "EHR configured for population health workflows — HEDIS gaps in care, HCC risk flags, care team communication, and panel management views" },
-      { id: "t2", label: "Population health platform", desc: "A population health management platform (or equivalent EHR functionality) with risk stratification, care gap dashboards, and outreach workflow" },
-      { id: "t3", label: "FHIR interoperability", desc: "FHIR R4 API implemented for data exchange with payers, HIE, and external care management systems", vermont: "Vermont VITL/VHIE Act 68 mandatory connectivity requirement — FHIR Lab at /research-lab/interoperability?tab=fhir" },
-      { id: "t4", label: "Clinical AI governance", desc: "A documented AI governance framework for clinical AI deployments — evaluation criteria, bias monitoring, lifecycle management, and equity safeguards", vermont: "Use AI Clinical Governance Lab at /research-lab/technology-ai?tab=ai for 65-dimension governance evaluation" },
-      { id: "t5", label: "Telehealth and RPM infrastructure", desc: "Telehealth platform and remote patient monitoring capability operational for primary care and high-risk chronic disease management", vermont: "Vermont RHT-funded AI scribe and RPM investments are FY2026 priorities" },
-    ],
-  },
-  {
-    id: "equity",
-    label: "Health Equity",
-    icon: "⚖️",
-    pillar: "Equity",
+    id: "workforce",
+    label: "Workforce Operations",
+    icon: "👥",
+    pillar: "Operations",
     color: "text-amber-700",
     bg: "bg-amber-50",
     border: "border-amber-200",
     barColor: "bg-amber-500",
     dimensions: [
-      { id: "e1", label: "Stratified HEDIS measurement", desc: "Quality performance measured separately by race/ethnicity, income, geography, and other equity dimensions — not just average performance", vermont: "AHEAD equity benchmarks require stratified performance measurement by Hospital Service Area" },
-      { id: "e2", label: "SDOH screening program", desc: "Systematic social determinants of health screening (housing, food, transportation, utilities) with active referral to community resources" },
-      { id: "e3", label: "Health equity disparity analysis", desc: "Regular quantitative analysis of disparities in quality, utilization, and outcomes across attributed population subgroups with trend tracking" },
-      { id: "e4", label: "Equity-weighted program design", desc: "Care management and quality improvement programs explicitly designed to close identified disparities — not just improve average performance" },
-      { id: "e5", label: "Community partnership", desc: "Active partnerships with community health workers, CBOs, and local organizations that reach the highest-disparity populations", vermont: "Vermont CCBHCs (AHEAD Cohort 2 initiative) are key community partnership infrastructure" },
+      { id: "w1", label: "Care team staffing model", desc: "A staffing model for care management, CHT, and BHCM roles sized to the attributed population's risk profile, not generic ratios" },
+      { id: "w2", label: "Credentialing efficiency", desc: "Credentialing and payer enrollment turnaround time fast enough that new clinical hires do not sit unbillable for months", vermont: "Vermont's credentialing cycle is a documented operational bottleneck (Chapter 11)" },
+      { id: "w3", label: "Retention and turnover management", desc: "Active tracking and management of turnover among care management and primary care staff, since turnover directly erodes care-coordination continuity" },
+      { id: "w4", label: "Training and onboarding capability", desc: "A structured training and onboarding program for care management, HCC coding, and VBC-specific roles, not general clinical orientation alone" },
+      { id: "w5", label: "Workforce scheduling and deployment flexibility", desc: "Scheduling and deployment models flexible enough to shift capacity toward high-risk-tier patients as risk stratification identifies them" },
     ],
   },
 ];
@@ -163,10 +163,10 @@ const VERMONT_PRESETS = [
     scores: {
       s1: 3, s2: 2, s3: 2, s4: 2, s5: 3,
       d1: 2, d2: 2, d3: 2, d4: 2, d5: 2,
-      c1: 3, c2: 2, c3: 2, c4: 2, c5: 1,
-      f1: 2, f2: 1, f3: 2, f4: 2, f5: 1,
-      t1: 2, t2: 2, t3: 1, t4: 1, t5: 2,
-      e1: 2, e2: 2, e3: 1, e4: 1, e5: 2,
+      c1: 3, c2: 2, c3: 1, c4: 2, c5: 2,
+      p1: 2, p2: 2, p3: 2, p4: 1, p5: 1,
+      r1: 1, r2: 1, r3: 1, r4: 2, r5: 1,
+      w1: 2, w2: 1, w3: 1, w4: 2, w5: 1,
     } as Record<string, Score>,
   },
   {
@@ -177,9 +177,9 @@ const VERMONT_PRESETS = [
       s1: 2, s2: 1, s3: 1, s4: 1, s5: 2,
       d1: 1, d2: 1, d3: 1, d4: 1, d5: 1,
       c1: 2, c2: 1, c3: 1, c4: 1, c5: 1,
-      f1: 1, f2: 1, f3: 1, f4: 2, f5: 0,
-      t1: 2, t2: 1, t3: 0, t4: 0, t5: 1,
-      e1: 1, e2: 1, e3: 0, e4: 0, e5: 1,
+      p1: 1, p2: 1, p3: 1, p4: 0, p5: 0,
+      r1: 0, r2: 0, r3: 0, r4: 1, r5: 0,
+      w1: 1, w2: 0, w3: 0, w4: 1, w5: 0,
     } as Record<string, Score>,
   },
   {
@@ -189,10 +189,10 @@ const VERMONT_PRESETS = [
     scores: {
       s1: 4, s2: 4, s3: 4, s4: 3, s5: 4,
       d1: 4, d2: 4, d3: 4, d4: 3, d5: 4,
-      c1: 4, c2: 4, c3: 3, c4: 4, c5: 3,
-      f1: 4, f2: 3, f3: 4, f4: 3, f5: 4,
-      t1: 4, t2: 4, t3: 4, t4: 3, t5: 4,
-      e1: 3, e2: 4, e3: 3, e4: 3, e5: 3,
+      c1: 4, c2: 4, c3: 3, c4: 4, c5: 4,
+      p1: 3, p2: 4, p3: 3, p4: 3, p5: 3,
+      r1: 4, r2: 3, r3: 4, r4: 4, r5: 3,
+      w1: 4, w2: 3, w3: 3, w4: 4, w5: 3,
     } as Record<string, Score>,
   },
 ];
@@ -469,7 +469,7 @@ export default function VBCReadinessAssessment() {
       <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
         <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Assessment Methodology</p>
         <p className="text-xs text-slate-500 leading-relaxed">
-          This 30-dimension assessment spans the six HTR pillars (Strategy/Policy, Data/Technology, Clinical, Finance/Economics, Technology, Equity). Each dimension is scored 0–4 (Not Started → Optimized). Overall readiness score is an unweighted average across all answered dimensions. A score of 75%+ indicates Global Budget Readiness; 50–74% indicates Advanced stage. Vermont-specific notes reference Act 68, AHEAD, RHT Program, and HTR Research Lab tools directly relevant to each dimension. For facilitated assessments with external validation, contact HTR Advisory.
+          This 30-dimension assessment spans the six readiness domains Chapter 7 defines: Strategic Clarity, Data and Technology, Care Delivery Capability, Network and Partnerships, Revenue Cycle, and Workforce Operations. Each dimension is scored 0–4 (Not Started → Optimized). Overall readiness score is an unweighted average across all answered dimensions. A score of 75%+ indicates Global Budget Readiness; 50–74% indicates Advanced stage. Vermont-specific notes reference Act 68, AHEAD, RHT Program, and HTR Research Lab tools directly relevant to each dimension. For facilitated assessments with external validation, contact HTR Advisory.
         </p>
       </div>
     </div>

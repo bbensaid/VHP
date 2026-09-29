@@ -18,6 +18,11 @@ export default function ToolkitsPage() {
           description: 'Annotated contract language for shared savings, shared risk, full capitation, and episode-based payment models. Includes risk corridors, quality withholds, and dispute resolution clauses.',
         },
         {
+          icon: '📑',
+          title: 'VBC Contract Review Checklist',
+          description: '65 specific contract provisions in eight categories — benchmark methodology, attribution, quality withhold, risk corridors and stop-loss, carve-outs, reconciliation timing, data-sharing obligations, and termination terms. Available now as an interactive tool in the Research Lab at /research-lab/payment-models?tab=contract-review, with a readiness score and a severity-ranked negotiation list; the exportable workbook version ships with the toolkit.',
+        },
+        {
           icon: '🔌',
           title: 'FHIR R4 Implementation Checklist',
           description: 'End-to-end compliance checklist for CMS interoperability rules: Patient Access API, Provider Directory API, Prior Auth API, and Payer-to-Payer data exchange.',

@@ -125,7 +125,7 @@ const PILLAR_CONFIG: Record<FrameworkId, PillarSidebarConfig> = {
     ],
     labToolIds: [
       "apm-design-lab", "shared-savings-calc", "cea-calculator", "global-budget-modeler",
-      "hospital-stress-test", "hta-studio", "actuarial-lab",
+      "vbc-contract-checklist", "hospital-stress-test", "hta-studio", "actuarial-lab",
     ],
   },
   technology: {
