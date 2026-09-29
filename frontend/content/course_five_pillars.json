@@ -4031,7 +4031,7 @@
             {
               "type": "text",
               "heading": "The Readiness Domain That Actually Predicts Success",
-              "body": "The VBC Transformation Readiness Assessment scores an organization across 30 dimensions in six domains -- strategic clarity, data and technology, care delivery capability, network and partnerships, revenue cycle, and workforce operations -- each rated 1 to 4. A total score below 60 of 120 signals the organization is not ready for full downside risk.\n\nFor Vermont specifically, Domain 2 (Data and Technology) is the binding constraint: most Vermont hospitals score only 3 to 7 of a possible 12 points in this domain, while Blueprint-participating patient-centered medical homes with active Community Health Team support score 8 to 12 in Domain 3 (care delivery) -- strong by national standards. The gap is not clinical capability; it is the analytics infrastructure needed to act on what clinical teams already know how to do.\n\nAn organization should score itself against this framework, or an equivalent one, before signing a downside-risk contract -- not after the first year-end reconciliation reveals the gap the hard way."
+              "body": "The VBC Transformation Readiness Assessment scores an organization across 30 dimensions in six domains -- strategic clarity, data and technology, care delivery capability, network and partnerships, revenue cycle, and workforce operations -- each rated 0 to 4. The platform reports an overall readiness percentage -- the average across all answered dimensions -- rather than a raw point total: 80%+ indicates Global Budget Readiness, 60-79% indicates Advanced stage (12-18 months to readiness), and below 60% signals the organization is not ready for full downside risk.\n\nFor Vermont specifically, Domain 2 (Data and Technology) is the binding constraint: most Vermont hospitals score only 25-45% in this domain, while Blueprint-participating patient-centered medical homes with active Community Health Team support score 40-60% in Domain 3 (care delivery) -- strong by national standards. The gap is not clinical capability; it is the analytics infrastructure needed to act on what clinical teams already know how to do.\n\nAn organization should score itself against this framework, or an equivalent one, before signing a downside-risk contract -- not after the first year-end reconciliation reveals the gap the hard way."
             },
             {
               "type": "text",
@@ -4094,7 +4094,7 @@
               "type": "callout",
               "variant": "tip",
               "heading": "Vermont's Binding Constraint Isn't Clinical",
-              "body": "Blueprint-participating PCMH practices with active Community Health Team support score 8-12 out of 12 on the care-delivery readiness domain -- strong by national standards. Most Vermont hospitals score only 3-7 out of 12 on the data-and-technology domain. Before assuming downside risk, close the second gap, not the first -- it is already closed."
+              "body": "Blueprint-participating PCMH practices with active Community Health Team support score 40-60% on the care-delivery readiness domain -- strong by national standards. Most Vermont hospitals score only 25-45% on the data-and-technology domain. Before assuming downside risk, close the second gap, not the first -- it is already closed."
             },
             {
               "type": "comparison_table",
@@ -4372,7 +4372,7 @@
             {
               "type": "text",
               "heading": "The Technology Gate: A Metric You Cannot See You Cannot Manage",
-              "body": "This is where the Economics pillar runs directly into the Technology pillar's precondition. Vermont's own readiness data makes the point concretely: most Vermont hospitals score only 3 to 7 out of 12 possible points on the Data and Technology domain of the VBC Transformation Readiness Assessment -- the domain covering attribution list generation and total cost of care measurement. A hospital that cannot accurately attribute its patient population cannot manage a global budget, regardless of how well GMCB designs the budget itself.\n\nVHCURES, Vermont's all-payer claims database, is the data infrastructure that makes this measurement possible in principle. But having the database is not the same as having the internal analytics capability to use it -- precisely the gap the joint AHS-GMCB analytics vendor procurement is meant to close, and precisely the gap that determines whether a well-designed budget produces the incentive change this course describes, or just confusion at the first year-end reconciliation.\n\nThe deadline is not abstract. This is Vermont's own stated framing of Domain 2: the gap must be closed before FY2027, when reference-based pricing takes effect for commercial payers -- not after, once the first year of binding prices has already exposed which hospitals could not see their own numbers."
+              "body": "This is where the Economics pillar runs directly into the Technology pillar's precondition. Vermont's own readiness data makes the point concretely: most Vermont hospitals score only 25-45% on the Data and Technology domain of the VBC Transformation Readiness Assessment -- the domain covering attribution list generation and total cost of care measurement. A hospital that cannot accurately attribute its patient population cannot manage a global budget, regardless of how well GMCB designs the budget itself.\n\nVHCURES, Vermont's all-payer claims database, is the data infrastructure that makes this measurement possible in principle. But having the database is not the same as having the internal analytics capability to use it -- precisely the gap the joint AHS-GMCB analytics vendor procurement is meant to close, and precisely the gap that determines whether a well-designed budget produces the incentive change this course describes, or just confusion at the first year-end reconciliation.\n\nThe deadline is not abstract. This is Vermont's own stated framing of Domain 2: the gap must be closed before FY2027, when reference-based pricing takes effect for commercial payers -- not after, once the first year of binding prices has already exposed which hospitals could not see their own numbers."
             },
             {
               "type": "text",
@@ -4403,7 +4403,7 @@
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "3-7 / 12",
+                  "value": "25-45%",
                   "label": "Most Vermont hospitals' score on the Data and Technology readiness domain",
                   "source": "HTR VBC Readiness Assessment / AHEAD preparation baseline"
                 },
@@ -4614,7 +4614,7 @@
                 "type": "true_false",
                 "points": 1,
                 "question": "According to this lesson, a payment model an organization cannot measure is a payment model it cannot manage, regardless of how well it was designed.",
-                "explanation": "This is the lesson's central argument: Vermont's own readiness data show most hospitals scoring 3-7 out of 12 on the data-and-technology domain, meaning the measurement capability required to manage a well-designed global budget or APM is the actual binding constraint, not the design itself.",
+                "explanation": "This is the lesson's central argument: Vermont's own readiness data show most hospitals scoring 25-45% on the data-and-technology domain, meaning the measurement capability required to manage a well-designed global budget or APM is the actual binding constraint, not the design itself.",
                 "options": [
                   {
                     "id": "o_5p14e1",
