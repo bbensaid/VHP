@@ -244,7 +244,11 @@ def chunk_metadata(c: dict) -> dict:
     return {
         "source": SOURCE_KEY,
         "source_type": SOURCE_TYPE,
-        "doc_id": c["doc_id"],
+        # NOT "doc_id": LlamaIndex's node_to_metadata_dict reserves doc_id,
+        # ref_doc_id and document_id and overwrites them with the node's
+        # ref_doc_id (here None), which silently clobbered this to the string
+        # "None" on the first real run. "chunk_id" survives the round-trip.
+        "chunk_id": c["doc_id"],
         "title": c["heading"],
         "pillar": PILLAR,
         "url": BOOK_URL,
@@ -299,7 +303,7 @@ def main() -> int:
         for c in chunks:
             m = chunk_metadata(c)
             print("\n" + "=" * 78)
-            print(f"doc_id  : {m['doc_id']}")
+            print(f"chunk_id: {m['chunk_id']}")
             print(f"title   : {m['title']}")
             print(f"meta    : unit={m['unit_id']} ch={m['chapter_number']} "
                   f"sec={m['section_number']!r} part={m['part']+1}/{m['n_parts']} "
