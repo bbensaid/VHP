@@ -8,6 +8,7 @@ const APMDesignLab                = dynamic(() => import('@/components/research/
 const APMCalculator               = dynamic(() => import('@/components/research/APMCalculator'),               { ssr: false })
 const CEACalculator               = dynamic(() => import('@/components/research/CEACalculator'),               { ssr: false })
 const GlobalBudgetTransitionModeler = dynamic(() => import('@/components/research/GlobalBudgetTransitionModeler'), { ssr: false })
+const VBCContractReviewChecklist  = dynamic(() => import('@/components/research/VBCContractReviewChecklist'),  { ssr: false })
 
 function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string; badge: string; desc: string }) {
   return (
@@ -41,9 +42,13 @@ const TABS = [
     id: 'gb-transition', icon: '📊', label: 'Global Budget Transition Modeler', badge: 'Global Budget',
     desc: 'Model the revenue trajectory of transitioning from FFS to a global budget over 3–7 years. Projects operating margin, admin savings, utilization impact, and risk corridor exposure by organization type.',
   },
+  {
+    id: 'contract-review', icon: '📑', label: 'VBC Contract Review Checklist', badge: 'Implementation Toolkit',
+    desc: 'Work a value-based care or APM contract through 65 specific provisions in eight categories — benchmark methodology, attribution, quality withhold, risk corridors and stop-loss, carve-outs, reconciliation timing, data-sharing obligations, and termination terms — with a live readiness score and a severity-ranked negotiation list.',
+  },
 ]
 
-const VALID_TABS = ['apm-design', 'apm-calc', 'cea', 'gb-transition']
+const VALID_TABS = ['apm-design', 'apm-calc', 'cea', 'gb-transition', 'contract-review']
 const DEFAULT_TAB = 'apm-design'
 
 export default function PaymentModelsClient() {
@@ -100,6 +105,7 @@ export default function PaymentModelsClient() {
       {activeTab === 'apm-calc'     && <div><ToolHeader icon="📈" label="APM Shared Savings Calculator"         badge="Value-Based Care"   desc={TABS[1].desc} /><APMCalculator /></div>}
       {activeTab === 'cea'          && <div><ToolHeader icon="⚗️" label="Cost-Effectiveness Analysis Calculator" badge="Health Economics"   desc={TABS[2].desc} /><CEACalculator /></div>}
       {activeTab === 'gb-transition' && <div><ToolHeader icon="📊" label="Global Budget Transition Modeler"      badge="Global Budget"      desc={TABS[3].desc} /><GlobalBudgetTransitionModeler /></div>}
+      {activeTab === 'contract-review' && <div><ToolHeader icon="📑" label="VBC Contract Review Checklist"       badge="Implementation Toolkit" desc={TABS[4].desc} /><VBCContractReviewChecklist /></div>}
     </LabPageShell>
   )
 }

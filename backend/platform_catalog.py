@@ -375,6 +375,15 @@ CATALOG = [
         "description": "Model revenue and operating margin during the transition from fee-for-service to a global budget payment model.",
         "keywords": ["global budget", "global budget transition", "ffs to global budget", "budget transition", "global payment model"],
     },
+    {
+        "id": "lab-vbc-contract-checklist",
+        "label": "VBC Contract Review Checklist",
+        "url": "/research-lab/payment-models?tab=contract-review",
+        "category": "Research Lab",
+        "subcategory": "Payment Models",
+        "description": "Review a value-based care or APM contract against 65 provisions in eight categories — benchmark methodology, attribution, quality withhold, risk corridors and stop-loss, carve-outs, reconciliation timing, data-sharing obligations, and termination terms.",
+        "keywords": ["contract review", "vbc contract", "apm contract", "contract checklist", "65 item checklist", "stop-loss", "risk corridor", "carve-out", "quality withhold", "attribution", "benchmark methodology", "contract provisions"],
+    },
 
     # ─────────────────────────────────────────────────────────────────────────
     # RESEARCH LAB — POPULATION & EQUITY
