@@ -5778,16 +5778,10 @@ ECONOMICS = [{'id': 'lesson_5p_global_budgets_rbp',
                      'body': 'The VBC Transformation Readiness Assessment scores an organization '
                              'across 30 dimensions in six domains -- strategic clarity, data and '
                              'technology, care delivery capability, network and partnerships, '
-                             'revenue cycle, and workforce operations -- each rated 1 to 4. A '
-                             'total score below 60 of 120 signals the organization is not ready '
-                             'for full downside risk.\n'
+                             'revenue cycle, and workforce operations -- each rated 0 to 4. The platform reports an overall readiness percentage -- the average across all answered dimensions -- rather than a raw point total: 80%+ indicates Global Budget Readiness, 60-79% indicates Advanced stage (12-18 months to readiness), and below 60% signals the organization is not ready for full downside risk.\n'
                              '\n'
                              'For Vermont specifically, Domain 2 (Data and Technology) is the '
-                             'binding constraint: most Vermont hospitals score only 3 to 7 of a '
-                             'possible 12 points in this domain, while Blueprint-participating '
-                             'patient-centered medical homes with active Community Health Team '
-                             'support score 8 to 12 in Domain 3 (care delivery) -- strong by '
-                             'national standards. The gap is not clinical capability; it is the '
+                             'binding constraint: most Vermont hospitals score only 25-45% in this domain, while Blueprint-participating patient-centered medical homes with active Community Health Team support score 40-60% in Domain 3 (care delivery) -- strong by national standards. The gap is not clinical capability; it is the '
                              'analytics infrastructure needed to act on what clinical teams '
                              'already know how to do.\n'
                              '\n'
@@ -5858,10 +5852,7 @@ ECONOMICS = [{'id': 'lesson_5p_global_budgets_rbp',
                     {'type': 'callout',
                      'variant': 'tip',
                      'heading': "Vermont's Binding Constraint Isn't Clinical",
-                     'body': 'Blueprint-participating PCMH practices with active Community Health '
-                             'Team support score 8-12 out of 12 on the care-delivery readiness '
-                             'domain -- strong by national standards. Most Vermont hospitals score '
-                             'only 3-7 out of 12 on the data-and-technology domain. Before '
+                     'body': 'Blueprint-participating PCMH practices with active Community Health Team support score 40-60% on the care-delivery readiness domain -- strong by national standards. Most Vermont hospitals score only 25-45% on the data-and-technology domain. Before '
                              'assuming downside risk, close the second gap, not the first -- it is '
                              'already closed.'},
                     {'type': 'comparison_table',
@@ -6156,9 +6147,7 @@ ECONOMICS = [{'id': 'lesson_5p_global_budgets_rbp',
                      'heading': 'The Technology Gate: A Metric You Cannot See You Cannot Manage',
                      'body': 'This is where the Economics pillar runs directly into the Technology '
                              "pillar's precondition. Vermont's own readiness data makes the point "
-                             'concretely: most Vermont hospitals score only 3 to 7 out of 12 '
-                             'possible points on the Data and Technology domain of the VBC '
-                             'Transformation Readiness Assessment -- the domain covering '
+                             'concretely: most Vermont hospitals score only 25-45% on the Data and Technology domain of the VBC Transformation Readiness Assessment -- the domain covering '
                              'attribution list generation and total cost of care measurement. A '
                              'hospital that cannot accurately attribute its patient population '
                              'cannot manage a global budget, regardless of how well GMCB designs '
@@ -6290,7 +6279,7 @@ ECONOMICS = [{'id': 'lesson_5p_global_budgets_rbp',
                              'designed. Organizations that wait will have a well-designed policy '
                              'and no way to operate inside it.'},
                     {'type': 'key_stat',
-                     'stats': [{'value': '3-7 / 12',
+                     'stats': [{'value': '25-45%',
                                 'label': "Most Vermont hospitals' score on the Data and Technology "
                                          'readiness domain',
                                 'source': 'HTR VBC Readiness Assessment / AHEAD preparation '
@@ -6509,8 +6498,7 @@ ECONOMICS = [{'id': 'lesson_5p_global_budgets_rbp',
                                       'cannot measure is a payment model it cannot manage, '
                                       'regardless of how well it was designed.',
                           'explanation': "This is the lesson's central argument: Vermont's own "
-                                         'readiness data show most hospitals scoring 3-7 out of 12 '
-                                         'on the data-and-technology domain, meaning the '
+                                         'readiness data show most hospitals scoring 25-45% on the data-and-technology domain, meaning the '
                                          'measurement capability required to manage a '
                                          'well-designed global budget or APM is the actual binding '
                                          'constraint, not the design itself.',
