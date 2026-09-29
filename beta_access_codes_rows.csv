@@ -1,0 +1,13 @@
+id,code,label,is_active,created_at,allowed_domains
+00cbfb45-4b90-4259-9de9-86059d9c5700,Eli_H_0.0.0,Eli H.,true,2026-07-30 14:07:02.248276+00,"[""healthtransformationreview.org""]"
+0c823908-7a5a-4caa-9884-9adc843c8fe3,Alice_S_0.0.0,Alice S.,true,2026-07-30 14:07:02.248276+00,"[""healthtransformationreview.org""]"
+1529e5fe-3686-4d3b-9457-e904bb28dfa8,Tim_T_0.0.0,Tim T.,true,2026-07-30 14:07:02.248276+00,"[""healthtransformationreview.org""]"
+27917eb1-8d8a-47e1-8652-485cb83d4039,Joe_L_0.0.0,Joe L.,true,2026-07-30 14:07:02.248276+00,"[""healthtransformationreview.org""]"
+67018231-9106-498b-b326-c9aa05b5e340,Suellen_B_0.0.0,Suellen B.,true,2026-07-30 14:07:02.248276+00,"[""healthtransformationreview.org""]"
+75126a65-f000-4d61-8be1-8342e276577e,Inna_P_0.0.0,Inna P.,true,2026-07-30 14:07:02.248276+00,"[""healthtransformationreview.org""]"
+78b095e7-bc9e-40de-bcc2-f70bb117542f,Jenney_S_0.0.0,Jenney S.,true,2026-07-30 14:07:02.248276+00,"[""healthtransformationreview.org""]"
+8480cfcc-14a8-4aa5-b3c5-3e56fdf4566d,Mahesh_T_0.0.0,Mahesh T.,true,2026-04-12 05:09:47.895383+00,"[""healthtransformationreview.org""]"
+899f9f83-fc6b-4774-875f-878558f94e5e,Bechir_B_0.0.0,Bechir B.,true,2026-04-12 05:09:47.895383+00,"[""healthtransformationreview.org"",""healthtransformationreview.com"",""healthtransformationsolutions.org"",""healthtransformationsolutions.com""]"
+a08cc547-a638-4021-bd26-74f217640c84,Geoff_B_0.0.0,Geoff B.,true,2026-07-30 14:07:02.248276+00,"[""healthtransformationreview.org""]"
+c728d5ff-c2ec-4e4c-b454-f157e0357ab1,Steve_D_0.0.0,Steve D.,true,2026-07-30 14:07:02.248276+00,"[""healthtransformationreview.org""]"
+ca1ec99b-7d4b-443b-91be-da8941fba0c4,Will_D_0.0.0,Will D.,true,2026-04-12 05:09:47.895383+00,"[""healthtransformationreview.org""]"
