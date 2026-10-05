@@ -8,7 +8,9 @@ const Logo: React.FC = () => {
   const { brand, config } = useBrand();
   // Single mark on both domains for now. The artwork reads "HTR", so the
   // solutions domain currently shows it too — an HTS variant is still needed.
-  const logoSrc = "/logo-option-2.png";
+  // logo-htr-web.png = logo-option-2.png re-inked to the Five-Pillar Map palette
+  // with the dependency web; regenerate with scripts/make_logo_web.py.
+  const logoSrc = "/logo-htr-web.png";
   const logoAlt = brand === "review" ? "HTR Logo" : "HTS Logo";
   return (
     <div className="inline-block group cursor-pointer select-none">
