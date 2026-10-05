@@ -13,12 +13,12 @@ export const metadata = {
 // runtime undefined.
 type PillarStyle = { color: string; bg: string; border: string; dot: string };
 const PILLAR_STYLES: Record<FrameworkId, PillarStyle> = {
-  policy:     { color: "text-sky-700",     bg: "bg-sky-50",     border: "border-sky-200",     dot: "bg-sky-500" },
+  policy:     { color: "text-blue-700",     bg: "bg-blue-50",     border: "border-blue-200",     dot: "bg-blue-500" },
   economics:  { color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200", dot: "bg-emerald-500" },
   technology: { color: "text-indigo-700",  bg: "bg-indigo-50",  border: "border-indigo-200",  dot: "bg-indigo-500" },
   clinical:   { color: "text-red-700",     bg: "bg-red-50",     border: "border-red-200",     dot: "bg-red-500" },
   equity:     { color: "text-violet-700",  bg: "bg-violet-50",  border: "border-violet-200",  dot: "bg-violet-500" },
-  operations: { color: "text-teal-700",    bg: "bg-teal-50",    border: "border-teal-200",    dot: "bg-teal-500" },
+  operations: { color: "text-amber-700",    bg: "bg-amber-50",    border: "border-amber-200",    dot: "bg-amber-500" },
 };
 
 const CROSS_PILLAR_STYLE: PillarStyle = { color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200", dot: "bg-amber-500" };

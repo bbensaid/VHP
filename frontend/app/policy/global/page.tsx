@@ -9,7 +9,7 @@ function GlobalPolicyHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">
       <div className="bg-slate-50 border border-slate-200 rounded-2xl px-8 py-10 mb-10">
-        <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
+        <span className="inline-block text-xs font-black uppercase tracking-widest text-blue-700 bg-blue-50 border border-blue-200 rounded-full px-3 py-1 mb-4">
           Policy · Global & Comparative Policy
         </span>
         <h1 className="ty-h1 font-black text-slate-900 mb-3">Global & Comparative Health Policy</h1>
@@ -57,7 +57,7 @@ function GlobalPolicyBody() {
                 { country: "Switzerland", type: "Regulated multi-payer", gdp: "11.3%", le: "83.4 yrs", coverage: "100%", admin: "~16%" },
                 { country: "Australia", type: "Medicare + private mix", gdp: "9.8%", le: "83.2 yrs", coverage: "100%", admin: "~13%" },
               ].map((row) => (
-                <tr key={row.country} className={`hover:bg-slate-50 ${row.country === "United States" ? "bg-sky-50" : ""}`}>
+                <tr key={row.country} className={`hover:bg-slate-50 ${row.country === "United States" ? "bg-blue-50" : ""}`}>
                   <td className="py-3 pr-4 font-bold text-slate-800">{row.country}</td>
                   <td className="py-3 pr-4 text-slate-500 text-xs">{row.type}</td>
                   <td className={`py-3 pr-4 font-bold text-xs ${row.country === "United States" ? "text-rose-600" : "text-emerald-700"}`}>{row.gdp}</td>
@@ -154,7 +154,7 @@ function GlobalPolicyBody() {
             <ul className="space-y-2">
               {card.items.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-slate-600">
-                  <span className="text-sky-500 mt-0.5 shrink-0">›</span>
+                  <span className="text-blue-500 mt-0.5 shrink-0">›</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -171,7 +171,7 @@ function GlobalPolicyBody() {
           {[
             { label: "US Leads", color: "bg-white border-emerald-200", icon: "✅", items: ["Specialty care quality and innovation output", "Cancer 5-year survival rates (breast, prostate, colon)", "Medical device and biopharma R&D investment", "Rare disease treatment availability + FDA innovation pathway"] },
             { label: "US Lags", color: "bg-white border-rose-200", icon: "⚠️", items: ["Life expectancy (76.4 yrs — last in peer group)", "Maternal and infant mortality rates", "Administrative cost efficiency (34% vs. 11–16%)", "Coverage universality (8M+ remain uninsured)"] },
-            { label: "Reform Levers", color: "bg-white border-sky-200", icon: "🔧", items: ["Universal coverage: public option or Medicaid expansion in remaining 10 states", "Drug negotiation: IRA precedent → expand to all Medicare + Medicaid drugs", "Admin simplification: single claim form, uniform prior auth standards", "Primary care investment: redirect 2–3% specialty spend to primary + prevention"] },
+            { label: "Reform Levers", color: "bg-white border-blue-200", icon: "🔧", items: ["Universal coverage: public option or Medicaid expansion in remaining 10 states", "Drug negotiation: IRA precedent → expand to all Medicare + Medicaid drugs", "Admin simplification: single claim form, uniform prior auth standards", "Primary care investment: redirect 2–3% specialty spend to primary + prevention"] },
           ].map((col) => (
             <div key={col.label} className={`rounded-xl p-5 border ${col.color}`}>
               <div className="font-bold text-slate-800 text-sm mb-3">{col.icon} {col.label}</div>
@@ -198,7 +198,7 @@ export default function Page() {
         pillar="Policy"
         title="Global & Comparative Policy"
         description="OECD comparisons, international drug pricing, single-payer models, and lessons for US healthcare reform."
-        colorClass="text-sky-700"
+        colorClass="text-blue-700"
         category="Global"
         hideHeader
       />

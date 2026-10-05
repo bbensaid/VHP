@@ -127,17 +127,6 @@ function BetaGateContent() {
             </button>
           </form>
         </div>
-
-        {/* Footer note */}
-        <p className="text-center text-slate-500 text-xs mt-6 leading-relaxed">
-          Don&apos;t have an access code?{" "}
-          <a
-            href="mailto:contact@htr.health"
-            className="text-slate-600 hover:text-slate-900 underline underline-offset-2 transition-colors"
-          >
-            Contact the HTR team
-          </a>
-        </p>
       </div>
     </div>
   );

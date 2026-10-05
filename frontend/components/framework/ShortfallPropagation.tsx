@@ -12,17 +12,12 @@
  */
 
 import { useMemo, useState } from "react";
-import type { PillarId } from "@/lib/taxonomy/pillars";
+import { getPillar, type PillarId } from "@/lib/taxonomy/pillars";
 import { BUILD_ORDER } from "@/lib/framework/dependencies";
 import { propagateShortfall, runSequence, type PillarScores } from "@/lib/framework/sequence-engine";
 
-const COLOR: Record<PillarId, string> = {
-  policy: "#3b82f6",
-  technology: "#8b5cf6",
-  economics: "#10b981",
-  clinical: "#ef4444",
-  operations: "#f59e0b",
-};
+// Pillar hex comes from the one platform palette (lib/taxonomy/pillars.ts).
+const COLOR = Object.fromEntries(BUILD_ORDER.map((id) => [id, getPillar(id).hex])) as Record<PillarId, string>;
 
 const LABEL: Record<PillarId, string> = {
   policy: "Policy",

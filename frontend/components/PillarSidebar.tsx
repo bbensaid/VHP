@@ -18,8 +18,8 @@ const PILLAR_CONFIG: Record<string, {
 }> = {
   policy: {
     label: "Policy",
-    color: "text-sky-700", bg: "bg-sky-50", border: "border-sky-200",
-    dot: "bg-sky-500", activeBg: "bg-sky-100", activeText: "text-sky-800", hoverBg: "hover:bg-sky-50",
+    color: "text-blue-700", bg: "bg-blue-50", border: "border-blue-200",
+    dot: "bg-blue-500", activeBg: "bg-blue-100", activeText: "text-blue-800", hoverBg: "hover:bg-blue-50",
     items: [
       { href: "/policy/regulation",  label: "Regulation & Legislation" },
       { href: "/policy/mandates",    label: "Public Health Mandates" },
@@ -99,8 +99,8 @@ const PILLAR_CONFIG: Record<string, {
   },
   operations: {
     label: "Operations",
-    color: "text-teal-700", bg: "bg-teal-50", border: "border-teal-200",
-    dot: "bg-teal-500", activeBg: "bg-teal-100", activeText: "text-teal-800", hoverBg: "hover:bg-teal-50",
+    color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200",
+    dot: "bg-amber-500", activeBg: "bg-amber-100", activeText: "text-amber-800", hoverBg: "hover:bg-amber-50",
     items: [
       { href: "/operations/revenue-cycle", label: "Revenue Cycle Management" },
       { href: "/operations/workforce",     label: "Workforce & Human Capital" },

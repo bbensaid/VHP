@@ -20,6 +20,7 @@ import {
   type FrameworkId,
 } from "@/lib/taxonomy";
 import { getAllTracks } from "@/lib/narration";
+import { DEPENDENCIES } from "@/lib/framework/dependencies";
 import { getCoursesByChapter, type PillarCourse } from "@/lib/course-api";
 import { client } from "@/lib/sanity";
 
@@ -87,12 +88,12 @@ const PILLAR_ICONS: Record<FrameworkId, React.ComponentType<{ className?: string
 
 const GROUP_BADGE_CLASSES: Record<ChapterGroup, string> = {
   Foundations: "bg-slate-100 text-slate-700",
-  "Policy Pillar": "bg-sky-100 text-sky-700",
+  "Policy Pillar": "bg-blue-100 text-blue-700",
   "Technology Pillar": "bg-indigo-100 text-indigo-700",
   "Economics Pillar": "bg-emerald-100 text-emerald-700",
   "Clinical Pillar": "bg-red-100 text-red-700",
   "The Equity Imperative": "bg-violet-100 text-violet-700",
-  "Operations Pillar": "bg-teal-100 text-teal-700",
+  "Operations Pillar": "bg-amber-100 text-amber-700",
   "Future & Strategy": "bg-amber-100 text-amber-700",
 };
 
@@ -159,7 +160,7 @@ export default async function BookPage() {
 
         {/* Floating cover thumbnail (md+ only — doesn't compete with title on mobile) */}
         <div className="hidden md:block absolute top-8 right-8 lg:top-10 lg:right-12 w-32 lg:w-40 rotate-3 shadow-2xl shadow-black/40 ring-1 ring-white/10 rounded-md overflow-hidden">
-          <img src="/book-cover.svg" alt="Transforming Healthcare — book cover" className="w-full h-auto block" />
+          <img src="/book-cover.jpg" alt="Cover of Transforming Healthcare by Bechir BenSaid" className="w-full h-auto block" />
         </div>
 
         <div className="relative">
@@ -173,7 +174,7 @@ export default async function BookPage() {
           </div>
 
           <h1 className="text-3xl md:text-5xl font-black leading-tight mb-4">
-            Transforming<br className="hidden md:block" /> American Healthcare
+            Transforming<br className="hidden md:block" /> Healthcare
           </h1>
           <p className="text-lg md:text-xl text-white/70 font-medium mb-2">
             A Five-Pillar Framework with Vermont as the National Proving Ground
@@ -186,8 +187,8 @@ export default async function BookPage() {
             {[
               { n: String(CHAPTERS.filter(c => /^\d+$/.test(c.num)).length), label: "Chapters" },
               { n: String(PILLARS.length), label: "Pillars" },
-              { n: "380+", label: "Pages" },
-              { n: "15", label: "Dependency Relationships" },
+              { n: "~300", label: "Pages" },
+              { n: String(DEPENDENCIES.length), label: "Dependency Relationships" },
             ].map((s) => (
               <div key={s.label} className="text-center">
                 <div className="text-2xl md:text-3xl font-black text-white">{s.n}</div>

@@ -54,10 +54,10 @@ const RECOMMENDATIONS: CCORecommendation[] = [
 ]
 
 const PILLARS: { key: PillarKey; label: string; color: string }[] = [
-  { key: 'policy',    label: 'Policy',    color: 'text-violet-700' },
+  { key: 'policy',    label: 'Policy',    color: 'text-blue-700' },
   { key: 'financial', label: 'Financial', color: 'text-emerald-700' },
-  { key: 'equity',    label: 'Equity',    color: 'text-rose-700' },
-  { key: 'clinical',  label: 'Clinical',  color: 'text-amber-700' },
+  { key: 'equity',    label: 'Equity',    color: 'text-violet-700' },
+  { key: 'clinical',  label: 'Clinical',  color: 'text-red-700' },
 ]
 
 const CAT_LABELS: Record<string, string> = {

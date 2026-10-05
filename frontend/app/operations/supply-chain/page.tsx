@@ -8,19 +8,19 @@ export const metadata = {
 export default function SupplyChainPage() {
   return (
     <div className="bg-white font-sans text-slate-800 min-h-screen">
-      <section className="relative bg-teal-700 text-white overflow-hidden py-20 md:py-28">
+      <section className="relative bg-amber-700 text-white overflow-hidden py-20 md:py-28">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link href="/operations" className="inline-flex items-center text-sm font-bold text-teal-300 hover:text-white mb-8 transition-colors">
+          <Link href="/operations" className="inline-flex items-center text-sm font-bold text-amber-300 hover:text-white mb-8 transition-colors">
             ← Operations Overview
           </Link>
-          <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-teal-200 mb-5 border border-teal-500 bg-teal-600/40 px-4 py-1.5 rounded-full">
+          <span className="inline-block text-[11px] font-black tracking-[0.2em] uppercase text-amber-200 mb-5 border border-amber-500 bg-amber-600/40 px-4 py-1.5 rounded-full">
             Operations · Supply Chain & Infrastructure
           </span>
           <h1 className="ty-h1 font-black tracking-tight leading-tight mb-6">
             Supply Chain &<br />
-            <span className="text-teal-300">Infrastructure</span>
+            <span className="text-amber-300">Infrastructure</span>
           </h1>
-          <p className="text-base md:ty-hero text-teal-100 max-w-2xl leading-relaxed">
+          <p className="text-base md:ty-hero text-amber-100 max-w-2xl leading-relaxed">
             Pharmaceutical procurement, medical device logistics, GPO strategy, facilities management, and capital equipment planning. The physical and logistical foundation that either supports or limits care delivery at scale.
           </p>
         </div>
@@ -43,15 +43,15 @@ export default function SupplyChainPage() {
                 "Environmental services and infection control infrastructure",
               ].map((item) => (
                 <li key={item} className="flex gap-3 text-sm text-slate-700">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0 mt-2" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0 mt-2" />
                   {item}
                 </li>
               ))}
             </ul>
           </div>
           <div className="space-y-5">
-            <div className="bg-teal-50 border border-teal-200 rounded-xl p-6">
-              <p className="text-[11px] font-black uppercase tracking-widest text-teal-600 mb-2">The COVID Lesson</p>
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
+              <p className="text-[11px] font-black uppercase tracking-widest text-amber-700 mb-2">The COVID Lesson</p>
               <p className="text-lg font-black text-slate-900 mb-2">Supply chain is a patient safety variable</p>
               <p className="ty-body text-slate-600 leading-relaxed">The pandemic exposed what health system operations experts had long known: supply chain fragility is not an efficiency problem — it is a patient safety and care continuity problem. Transformation strategies that expand care delivery footprints without assessing supply chain capacity are building on an untested foundation.</p>
             </div>
@@ -76,7 +76,7 @@ export default function SupplyChainPage() {
       <section className="bg-slate-50 border-t border-slate-200 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-4">
           <Link href="/operations/compliance" className="inline-flex items-center gap-2 bg-white text-slate-900 border border-slate-200 px-6 py-3 rounded-lg font-bold hover:bg-slate-50 transition-colors">← Quality, Compliance & Risk</Link>
-          <Link href="/operations/payer-network" className="inline-flex items-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-teal-700 transition-colors">Payer & Network Operations →</Link>
+          <Link href="/operations/payer-network" className="inline-flex items-center gap-2 bg-amber-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-amber-800 transition-colors">Payer & Network Operations →</Link>
           <Link href="/clinical/hah" className="inline-flex items-center gap-2 bg-white text-slate-900 border border-slate-200 px-6 py-3 rounded-lg font-bold hover:bg-slate-50 transition-colors">Related: Hospital-at-Home →</Link>
         </div>
       </section>

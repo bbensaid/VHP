@@ -1,0 +1,309 @@
+{
+  "c_hie": {
+    "id": "0dec507b-079f-41e7-ad2a-d68fdddcc852",
+    "slug": "hie-health-reform-onboarding",
+    "title": "HIE & Health Reform",
+    "subtitle": "Your foundation in the six pillars of health transformation",
+    "description": "A comprehensive onboarding course for professionals joining Health Information Exchange, health reform, and related programs. Built on the HTR six-pillar framework, this course gives you working fluency in Policy, Technology, Economics, Clinical quality, Health Equity, and Operations.",
+    "cover_image_url": null,
+    "target_audience": [
+      "New employees joining HIE organizations",
+      "Health reform program staff",
+      "State agency health IT staff",
+      "Policy analysts new to health informatics",
+      "Clinicians moving into administrative or data roles"
+    ],
+    "prerequisites": [],
+    "estimated_hours": 8,
+    "is_published": true,
+    "version": "1.0.0",
+    "created_at": "2026-05-25T17:00:29.446438+00:00",
+    "updated_at": "2026-06-03T02:13:35.420637+00:00",
+    "pillar": "policy",
+    "level": null,
+    "is_featured": true,
+    "chapter_ref": "16"
+  },
+  "c_welcome": {
+    "id": "44289b0d-2b1e-4438-a0ab-a7b28b9182aa",
+    "slug": "welcome-htr-framework",
+    "title": "Welcome & the HTR Framework",
+    "subtitle": "Your orientation to the six-pillar framework",
+    "description": "A standalone orientation to the HTR six-pillar framework and your role in the health reform ecosystem. This lesson stands on its own and is not part of any other course.",
+    "cover_image_url": null,
+    "target_audience": [
+      "Anyone new to HTR"
+    ],
+    "prerequisites": [],
+    "estimated_hours": 0.3,
+    "is_published": true,
+    "version": "1",
+    "created_at": "2026-06-01T02:48:35.668361+00:00",
+    "updated_at": "2026-06-03T02:13:35.420637+00:00",
+    "pillar": "technology",
+    "level": null,
+    "is_featured": false,
+    "chapter_ref": "1"
+  },
+  "t_precision": {
+    "id": "0bd2c1c9-3680-4077-abf3-affb58a6a23d",
+    "course_id": "9ca8a70f-a5f8-4b4f-ac40-75761dbadefb",
+    "pillar": "technology",
+    "order": 7,
+    "slug": "precision-medicine-deep-dives",
+    "title": "Precision Medicine: In-Depth Modules",
+    "description": "Full-length textbook modules covering the six pillars of precision medicine.",
+    "icon": null,
+    "target_audience": [],
+    "is_published": true,
+    "created_at": "2026-05-27T07:32:20.984481+00:00",
+    "updated_at": "2026-05-27T07:32:20.984481+00:00"
+  },
+  "l_welcome": {
+    "id": "27d44eb8-6369-40ba-94cb-3a500db23497",
+    "track_id": "d8a71b68-a8bc-4415-b5e5-1896f76836d1",
+    "pillar": "policy",
+    "order": 1,
+    "slug": "welcome-htr-framework",
+    "title": "Welcome & the HTR Framework",
+    "summary": "Orientation to the HTR six-pillar framework and your role in the health reform ecosystem.",
+    "estimated_minutes": 15,
+    "objectives": [
+      {
+        "id": "obj_w1",
+        "text": "Understand the HTR six-pillar framework and how the pillars interconnect"
+      },
+      {
+        "id": "obj_w2",
+        "text": "Describe your role in the broader health reform ecosystem"
+      },
+      {
+        "id": "obj_w3",
+        "text": "Identify the key programs and organizations you will work with"
+      }
+    ],
+    "content_blocks": [
+      {
+        "hint": "Upload a personal welcome message from your executive director or CEO. Recommended: 3–5 minutes, MP3 or WAV.",
+        "type": "audio_slot",
+        "label": "Welcome from HTR leadership"
+      },
+      {
+        "body": "Health transformation is complex. It sits at the intersection of law, technology, clinical practice, economics, and social justice. New employees — regardless of their specialty — are more effective when they understand all six dimensions.\n\nThis course gives you that foundation. You will not become an expert in every pillar, but you will gain the vocabulary, context, and conceptual map to work across disciplines and contribute meaningfully from day one.",
+        "type": "text",
+        "heading": "Why this course exists"
+      },
+      {
+        "type": "concepts_grid",
+        "items": [
+          {
+            "body": "Federal and state legislation, regulatory frameworks, and governance structures that define what HIEs can and must do.",
+            "icon": "ti-shield",
+            "title": "Policy"
+          },
+          {
+            "body": "Standards (HL7, FHIR), infrastructure (integration engines, MPI), and interoperability frameworks that make data exchange possible.",
+            "icon": "ti-cpu",
+            "title": "Technology"
+          },
+          {
+            "body": "Payment models, value-based care incentives, and the financial levers that drive or impede transformation.",
+            "icon": "ti-coin",
+            "title": "Economics"
+          },
+          {
+            "body": "Quality measures, population health management, and evidence-based care practices that define what good health outcomes look like.",
+            "icon": "ti-heart-rate-monitor",
+            "title": "Clinical"
+          },
+          {
+            "body": "Access disparities, social determinants of health, and the imperative to ensure transformation benefits everyone — not just the well-resourced.",
+            "icon": "ti-scale",
+            "title": "Equity"
+          },
+          {
+            "body": "Workforce, governance, organizational design, and the day-to-day systems that make a health reform organization function.",
+            "icon": "ti-settings",
+            "title": "Operations"
+          }
+        ],
+        "heading": "The HTR six pillars"
+      },
+      {
+        "body": "A decision about FHIR API architecture (Technology) has implications for patient consent (Policy), data completeness across populations (Equity), care gap identification (Clinical), and cost of implementation (Economics). Always think across pillars.",
+        "type": "callout",
+        "heading": "The pillars are not independent",
+        "variant": "tip"
+      },
+      {
+        "type": "key_stat",
+        "stats": [
+          {
+            "label": "of Americans live in rural areas",
+            "value": "~20%",
+            "source": "AAMC"
+          },
+          {
+            "label": "of physicians practice in rural areas",
+            "value": "11%",
+            "source": "AAMC"
+          },
+          {
+            "label": "US annual healthcare spend (2023)",
+            "value": "$4.5T",
+            "source": "CMS"
+          },
+          {
+            "label": "estimated low-value care spending",
+            "value": "30%",
+            "source": "NEJM"
+          }
+        ]
+      },
+      {
+        "type": "video",
+        "caption": "Introduction to Health Information Exchange — ONC overview (~8 min)",
+        "videoId": "x2hzI9rJMpg",
+        "mediaType": "youtube",
+        "durationSeconds": 480
+      }
+    ],
+    "tags": [
+      "orientation",
+      "framework",
+      "six-pillars"
+    ],
+    "related_lesson_ids": [],
+    "is_published": true,
+    "created_at": "2026-06-01T02:48:36.263144+00:00",
+    "updated_at": "2026-06-01T02:48:36.263144+00:00",
+    "sanity_slug": null
+  },
+  "l_workforce": {
+    "id": "d9e658ad-bab0-4eb9-b27c-ebfba936dc66",
+    "track_id": "40ccb91d-1fca-473f-89cc-8ce595c26c25",
+    "pillar": "operations",
+    "order": 1,
+    "slug": "hie-workforce-roles",
+    "title": "HIE Workforce & Roles",
+    "summary": "The roles, competencies, and organizational structures of health reform programs — and how to be a T-shaped professional across all six pillars.",
+    "estimated_minutes": 20,
+    "objectives": [
+      {
+        "id": "obj_o1",
+        "text": "Map the key functional roles in an HIE or health reform organization"
+      },
+      {
+        "id": "obj_o2",
+        "text": "Understand the skills most in demand across the six pillars"
+      },
+      {
+        "id": "obj_o3",
+        "text": "Describe the 'T-shaped professional' model and its relevance to your career"
+      },
+      {
+        "id": "obj_o4",
+        "text": "Know who to contact for common cross-functional workflows"
+      }
+    ],
+    "content_blocks": [
+      {
+        "type": "concepts_grid",
+        "items": [
+          {
+            "body": "Integration engineers, FHIR developers, MPI specialists. Build and maintain the technical plumbing of the HIE.",
+            "icon": "ti-code",
+            "title": "Health informatics"
+          },
+          {
+            "body": "Population health analysts, quality measure specialists, data scientists. Turn HIE data into insights.",
+            "icon": "ti-chart-dots",
+            "title": "Data analytics"
+          },
+          {
+            "body": "HIPAA compliance officers, privacy analysts, security engineers. Ensure regulatory adherence and patient trust.",
+            "icon": "ti-shield",
+            "title": "Privacy & compliance"
+          },
+          {
+            "body": "Onboard and support data contributors — hospitals, clinics, labs. Train end users on HIE services.",
+            "icon": "ti-users",
+            "title": "Provider relations"
+          },
+          {
+            "body": "Engage with legislators, agencies, and stakeholders to shape HIE governance, funding, and strategic direction.",
+            "icon": "ti-file-certificate",
+            "title": "Policy & strategy"
+          },
+          {
+            "body": "Help desk, training, project management, and organizational effectiveness. The connective tissue of the organization.",
+            "icon": "ti-headset",
+            "title": "Operations & support"
+          }
+        ],
+        "heading": "Key functional roles in HIE organizations"
+      },
+      {
+        "body": "The most effective HIE employees are 'T-shaped': deep expertise in one domain (the vertical bar of the T) combined with broad literacy across all six pillars (the horizontal bar).\n\n- A **technical person** who understands policy context makes better architecture decisions — they know why the information blocking exception matters for their API design.\n- A **policy analyst** who understands FHIR asks better questions of the data team and writes more technically grounded legislation.\n- A **clinician** who understands economics designs better quality measures — ones that are both clinically meaningful and incentive-compatible.\n\nThis course is your horizontal bar. Use it.",
+        "type": "text",
+        "heading": "The T-shaped professional"
+      },
+      {
+        "body": "After completing this course, identify: (1) which pillar is your primary domain, (2) which pillar you feel least confident in, and (3) one person in your organization who is expert in that pillar. Schedule a 30-minute conversation with them in your first month.",
+        "type": "callout",
+        "heading": "Build your pillar map",
+        "variant": "tip"
+      },
+      {
+        "hint": "Recommended: Brief audio introductions (2–3 minutes each) from leaders across teams — informatics, analytics, policy, provider relations, compliance. Stitch them together into one 15–20 minute audio track.",
+        "type": "audio_slot",
+        "label": "Meet our team: roles and career paths at HTR"
+      }
+    ],
+    "tags": [
+      "workforce",
+      "roles",
+      "careers",
+      "T-shaped",
+      "interdisciplinary"
+    ],
+    "related_lesson_ids": [],
+    "is_published": true,
+    "created_at": "2026-05-25T17:00:46.39038+00:00",
+    "updated_at": "2026-05-28T13:50:44.782809+00:00",
+    "sanity_slug": "hie-workforce-roles"
+  },
+  "q": {
+    "id": "0260e09c-4c7b-4a21-8943-fd88a7ad13f4",
+    "quiz_id": "3973e4b5-8a92-470b-97e2-65884ff4f6a7",
+    "order": 1,
+    "question_type": "single_choice",
+    "question": "Which statement best describes the relationship between the six HTR pillars?",
+    "explanation": "No pillar stands alone — a technology decision has policy, equity, and economic implications. This interconnection is the core insight of the HTR framework.",
+    "points": 1
+  },
+  "o1": {
+    "id": "99f29c15-acf8-4f18-8084-ca2673ffeb5c",
+    "question_id": "0260e09c-4c7b-4a21-8943-fd88a7ad13f4",
+    "order": 4,
+    "text": "The six pillars apply only to state-level HIEs, not to federal programs",
+    "is_correct": false,
+    "explanation": null
+  },
+  "o2": {
+    "id": "af6a1099-ed43-4db2-af07-e274941ce92d",
+    "question_id": "abd3a56a-3e19-414a-a994-a99d3b5ed6ce",
+    "order": 2,
+    "text": "Has deep expertise in one domain plus broad working fluency across all six HIE pillars",
+    "is_correct": true,
+    "explanation": null
+  },
+  "o3": {
+    "id": "886f13ed-039a-48a1-9f50-9eecda4c9860",
+    "question_id": "c62c7d00-c0a7-4792-9666-080f3dbecda5",
+    "order": 3,
+    "text": "To build broad working fluency across all six HTR pillars",
+    "is_correct": true,
+    "explanation": null
+  }
+}

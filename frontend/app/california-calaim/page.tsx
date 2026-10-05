@@ -201,7 +201,7 @@ export default function CaliforniaCalAIMPage() {
 
       {/* ── KEY PILLARS ──────────────────────────────────────────────────────── */}
       <section className="mb-16">
-        <SectionHeader label="Program Components" title="The Six Pillars of CalAIM" />
+        <SectionHeader label="Program Components" title="The Six Core Components of CalAIM" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
           <PillarCard
             icon="🏠"

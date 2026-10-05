@@ -5,7 +5,7 @@
  * Sanity webhook config:
  *   URL: https://<your-domain>/api/webhooks/sanity
  *   Secret: same value as INGEST_SECRET in backend/.env
- *   Filter: _type in ["policyAnalysis","post","academyModule","caseStudy","definition","analystNote","webinar","report"]
+ *   Filter: _type in ["policyAnalysis","post","academyModule","caseStudy","definition","analystNote","webinar"]
  */
 
 import { NextRequest, NextResponse } from "next/server";

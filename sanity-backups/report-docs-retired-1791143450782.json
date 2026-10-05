@@ -1,0 +1,74 @@
+[
+  {
+    "_createdAt": "2026-02-23T03:39:08Z",
+    "_id": "report-direct-to-employer-contracting-playbook",
+    "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+    "_type": "report",
+    "_updatedAt": "2026-07-31T18:27:15Z",
+    "accessLevel": "Client Only",
+    "chapterRef": "6",
+    "pillar": "Economics",
+    "publishedAt": "2024-08-05",
+    "subtitle": "Bypassing payers to capture margin.",
+    "summary": "Case studies and contract templates for health systems looking to engage local employers directly.",
+    "title": "Direct-to-Employer Contracting Playbook",
+    "topics": [
+      "Economics",
+      "Strategy"
+    ]
+  },
+  {
+    "_createdAt": "2026-02-23T03:39:08Z",
+    "_id": "report-the-2026-cms-fee-schedule-forecast",
+    "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+    "_type": "report",
+    "_updatedAt": "2026-07-31T18:27:15Z",
+    "accessLevel": "Enterprise",
+    "chapterRef": "6",
+    "pillar": "Economics",
+    "publishedAt": "2024-09-20",
+    "subtitle": "Winners and losers in the proposed rule.",
+    "summary": "Detailed impact analysis of the proposed physician fee schedule and RVU adjustments.",
+    "title": "The 2026 CMS Fee Schedule Forecast",
+    "topics": [
+      "Policy",
+      "Reimbursement"
+    ]
+  },
+  {
+    "_createdAt": "2026-02-23T03:39:08Z",
+    "_id": "report-the-state-of-health-ai-2025",
+    "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+    "_type": "report",
+    "_updatedAt": "2026-07-31T18:27:15Z",
+    "accessLevel": "Public",
+    "chapterRef": "4",
+    "pillar": "Technology",
+    "publishedAt": "2024-11-15",
+    "subtitle": "Adoption rates, ROI models, and liability frameworks.",
+    "summary": "Our flagship annual review of generative AI in clinical settings. Based on surveys of 500+ CIOs.",
+    "title": "The State of Health AI 2025",
+    "topics": [
+      "Technology",
+      "Strategy"
+    ]
+  },
+  {
+    "_createdAt": "2026-02-23T03:39:08Z",
+    "_id": "report-vermont-health-system-solvency-audit",
+    "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+    "_type": "report",
+    "_updatedAt": "2026-07-31T18:27:15Z",
+    "accessLevel": "Client Only",
+    "chapterRef": "6",
+    "pillar": "Economics",
+    "publishedAt": "2024-10-01",
+    "subtitle": "The crisis in rural independent hospitals.",
+    "summary": "A deep dive into the operating margins of Vermont's critical access hospitals and the path forward.",
+    "title": "Vermont Health System Solvency Audit",
+    "topics": [
+      "Economics",
+      "Policy"
+    ]
+  }
+]

@@ -9,12 +9,12 @@ import { useSearchParams } from 'next/navigation'
 const PILLARS = ['Policy', 'Technology', 'Economics', 'Clinical', 'Operations', 'Equity', 'General']
 
 const PILLAR_COLORS: Record<string, string> = {
-  Policy:     'bg-sky-100 text-sky-700',
+  Policy:     'bg-blue-100 text-blue-700',
   Economics:  'bg-emerald-100 text-emerald-700',
   Technology: 'bg-indigo-100 text-indigo-700',
   Clinical:   'bg-red-100 text-red-700',
   Equity:     'bg-violet-100 text-violet-700',
-  Operations: 'bg-teal-100 text-teal-700',
+  Operations: 'bg-amber-100 text-amber-700',
   General:    'bg-slate-100 text-slate-700',
 }
 

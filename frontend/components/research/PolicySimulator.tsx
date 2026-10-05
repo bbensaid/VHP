@@ -44,7 +44,7 @@ export default function PolicySimulator() {
       <div className="bg-white border-b border-slate-200 px-4 py-5 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-start gap-3">
-            <div className="bg-sky-600 text-white rounded-lg p-2 flex-shrink-0">
+            <div className="bg-blue-600 text-white rounded-lg p-2 flex-shrink-0">
               <Activity size={22} />
             </div>
             <div>
@@ -70,7 +70,7 @@ export default function PolicySimulator() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`flex items-center gap-2 px-4 py-3.5 text-sm font-semibold border-b-2 whitespace-nowrap transition-colors ${
                   activeTab === tab.id
-                    ? "border-sky-600 text-sky-700"
+                    ? "border-blue-600 text-blue-700"
                     : "border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300"
                 }`}
               >

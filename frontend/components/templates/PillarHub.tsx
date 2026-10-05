@@ -47,8 +47,8 @@ export function PillarHub({
       border: "border-brand-policy",
       indicator: "bg-brand-policy",
       hoverText: "group-hover:text-brand-policy",
-      lightBg: "bg-sky-50",
-      hoverCard: "hover:border-sky-400 hover:bg-sky-50/80",
+      lightBg: "bg-blue-50",
+      hoverCard: "hover:border-blue-400 hover:bg-blue-50/80",
     },
     technology: {
       header: "bg-brand-technology",
@@ -74,8 +74,8 @@ export function PillarHub({
       border: "border-brand-operations",
       indicator: "bg-brand-operations",
       hoverText: "group-hover:text-brand-operations",
-      lightBg: "bg-teal-50",
-      hoverCard: "hover:border-teal-400 hover:bg-teal-50/80",
+      lightBg: "bg-amber-50",
+      hoverCard: "hover:border-amber-400 hover:bg-amber-50/80",
     },
     // Not a pillar theme — the Equity Imperative's own hub still needs one.
     equity: {

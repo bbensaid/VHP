@@ -7,12 +7,12 @@ import type { TrackWithProgress, Pillar } from "@/types/course";
 
 const PILLAR_DOT: Record<Pillar, string> = {
   general:    "bg-slate-400",
-  policy:     "bg-blue-600",
-  technology: "bg-emerald-600",
-  economics:  "bg-amber-600",
-  clinical:   "bg-pink-600",
-  equity:     "bg-purple-600",
-  operations: "bg-green-600",
+  policy:     "bg-blue-500",
+  technology: "bg-indigo-500",
+  economics:  "bg-emerald-500",
+  clinical:   "bg-red-500",
+  equity:     "bg-violet-500",
+  operations: "bg-amber-500",
 };
 
 interface CourseSidebarProps {

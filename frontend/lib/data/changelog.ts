@@ -123,7 +123,7 @@ export const CHANGELOG: readonly ChangelogEntry[] = [
     version: "Phase 1 — Stabilise + Taxonomy",
     date: "2026-05-18",
     summary:
-      "Single source of truth for the six pillars, all chapters, every research-lab tool, every state program. One edit propagates across the platform.",
+      "Single source of truth for the pillars, all chapters, every research-lab tool, every state program. One edit propagates across the platform.",
     changes: {
       added: [
         "lib/taxonomy/ — pillars, chapters, tools, programs",

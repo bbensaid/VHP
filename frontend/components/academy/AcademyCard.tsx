@@ -17,12 +17,12 @@ interface AcademyCardProps {
 }
 
 const PILLAR_STYLES = {
-  Policy:     { badge: "bg-sky-100 text-sky-800",     border: "border-l-sky-500",     hoverTitle: "group-hover:text-sky-700",     footerBg: "group-hover:bg-sky-50",     footerText: "group-hover:text-sky-700",     arrow: "text-sky-600" },
+  Policy:     { badge: "bg-blue-100 text-blue-800",     border: "border-l-blue-500",     hoverTitle: "group-hover:text-blue-700",     footerBg: "group-hover:bg-blue-50",     footerText: "group-hover:text-blue-700",     arrow: "text-blue-600" },
   Economics:  { badge: "bg-emerald-100 text-emerald-800", border: "border-l-emerald-500", hoverTitle: "group-hover:text-emerald-700", footerBg: "group-hover:bg-emerald-50", footerText: "group-hover:text-emerald-700", arrow: "text-emerald-600" },
   Technology: { badge: "bg-indigo-100 text-indigo-800", border: "border-l-indigo-500",  hoverTitle: "group-hover:text-indigo-600", footerBg: "group-hover:bg-indigo-50",  footerText: "group-hover:text-indigo-700", arrow: "text-indigo-600" },
   Clinical:   { badge: "bg-rose-100 text-rose-800",    border: "border-l-rose-500",    hoverTitle: "group-hover:text-rose-600",    footerBg: "group-hover:bg-rose-50",    footerText: "group-hover:text-rose-700",    arrow: "text-rose-600" },
   Equity:     { badge: "bg-violet-100 text-violet-800", border: "border-l-violet-500",  hoverTitle: "group-hover:text-violet-600",  footerBg: "group-hover:bg-violet-50",  footerText: "group-hover:text-violet-700",  arrow: "text-violet-600" },
-  Operations: { badge: "bg-teal-100 text-teal-800",    border: "border-l-teal-500",    hoverTitle: "group-hover:text-teal-600",    footerBg: "group-hover:bg-teal-50",    footerText: "group-hover:text-teal-700",    arrow: "text-teal-600" },
+  Operations: { badge: "bg-amber-100 text-amber-800",    border: "border-l-amber-500",    hoverTitle: "group-hover:text-amber-700",    footerBg: "group-hover:bg-amber-50",    footerText: "group-hover:text-amber-700",    arrow: "text-amber-700" },
   General:    { badge: "bg-slate-100 text-slate-800",  border: "border-l-slate-500",   hoverTitle: "group-hover:text-slate-700",   footerBg: "group-hover:bg-slate-50",   footerText: "group-hover:text-slate-700",   arrow: "text-slate-500" },
 };
 

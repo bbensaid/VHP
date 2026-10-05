@@ -12,11 +12,11 @@ const pillars = [
     number: "01",
     label: "Policy",
     question: "Is it permissible?",
-    color: "text-sky-700",
-    border: "border-sky-200",
-    bg: "bg-sky-50",
-    accent: "bg-sky-600",
-    accentText: "text-sky-600",
+    color: "text-blue-700",
+    border: "border-blue-200",
+    bg: "bg-blue-50",
+    accent: "bg-blue-600",
+    accentText: "text-blue-600",
     href: "/policy",
     why: "Nothing in healthcare happens outside a regulatory framework. Before evaluating the economics, technology, clinical evidence, or equity implications of any intervention, HTR first establishes whether it is legally permissible at the federal and state level — and under what conditions that permissibility may change.",
     what: [
@@ -88,11 +88,11 @@ const pillars = [
     number: "05",
     label: "Operations",
     question: "Is it executable?",
-    color: "text-teal-700",
-    border: "border-teal-200",
-    bg: "bg-teal-50",
-    accent: "bg-teal-600",
-    accentText: "text-teal-600",
+    color: "text-amber-700",
+    border: "border-amber-200",
+    bg: "bg-amber-50",
+    accent: "bg-amber-600",
+    accentText: "text-amber-700",
     href: "/operations",
     why: "The history of healthcare transformation is not only littered with good ideas that failed due to funding or politics — it is equally filled with well-funded, politically supported initiatives that collapsed under the weight of operational reality. Revenue cycles broke. Workforce systems couldn't absorb the change. Supply chains weren't resilient enough. HTR's Operations pillar asks whether the administrative and operational infrastructure of a health system can actually execute the transformation being proposed.",
     what: [
@@ -339,11 +339,11 @@ export default function FrameworkPage() {
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
           {[
-            { label: "Policy", href: "/policy", color: "bg-sky-600" },
+            { label: "Policy", href: "/policy", color: "bg-blue-600" },
             { label: "Technology", href: "/technology", color: "bg-indigo-600" },
             { label: "Economics", href: "/economics", color: "bg-emerald-600" },
             { label: "Clinical", href: "/clinical", color: "bg-rose-600" },
-            { label: "Operations", href: "/operations", color: "bg-teal-600" },
+            { label: "Operations", href: "/operations", color: "bg-amber-600" },
           ].map((p) => (
             <Link
               key={p.label}

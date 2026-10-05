@@ -417,10 +417,10 @@ export default function AheadModelPage() {
           {[
             {
               pillar: "Policy",
-              color: "text-sky-700",
-              border: "border-sky-200",
-              bg: "bg-sky-50",
-              accent: "bg-sky-600",
+              color: "text-blue-700",
+              border: "border-blue-200",
+              bg: "bg-blue-50",
+              accent: "bg-blue-600",
               insight: "AHEAD requires state legislative and regulatory alignment — from insurance commission approval of payer participation to Medicaid waiver authority. States with unified governance structures have a structural advantage.",
             },
             {

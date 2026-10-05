@@ -7,11 +7,11 @@ import { XMarkIcon, SparklesIcon, ChartBarIcon, AcademicCapIcon, NewspaperIcon, 
 const STORAGE_KEY = "htr_onboarding_v1";
 
 const PILLARS = [
-  { id: "policy", label: "Policy", dot: "bg-sky-500", desc: "Legislation & regulation" },
+  { id: "policy", label: "Policy", dot: "bg-blue-500", desc: "Legislation & regulation" },
   { id: "economics", label: "Economics", dot: "bg-emerald-500", desc: "Value-based care & markets" },
   { id: "technology", label: "Technology", dot: "bg-indigo-500", desc: "AI, digital health & data" },
   { id: "clinical", label: "Clinical", dot: "bg-red-500", desc: "Hospital care & delivery" },
-  { id: "operations", label: "Operations", dot: "bg-teal-500", desc: "Revenue cycle, workforce & compliance" },
+  { id: "operations", label: "Operations", dot: "bg-amber-500", desc: "Revenue cycle, workforce & compliance" },
 ];
 
 // Offered after the five pillars, not among them: the Equity Imperative is a

@@ -1724,11 +1724,11 @@ export const COUNTY_DATA: CountyData[] = [
 // ── Pillar definitions ─────────────────────────────────────────────────────
 
 export const PILLARS: { key: PillarKey; label: string; color: string; bgColor: string; description: string }[] = [
-  { key: "policy", label: "Policy & Governance", color: "text-violet-700", bgColor: "bg-violet-100", description: "Legislative actions, regulatory approvals, governance changes required" },
-  { key: "technology", label: "Technology & Infrastructure", color: "text-blue-700", bgColor: "bg-blue-100", description: "IT systems, capital projects, digital infrastructure needed" },
+  { key: "policy", label: "Policy & Governance", color: "text-blue-700", bgColor: "bg-blue-100", description: "Legislative actions, regulatory approvals, governance changes required" },
+  { key: "technology", label: "Technology & Infrastructure", color: "text-indigo-700", bgColor: "bg-indigo-100", description: "IT systems, capital projects, digital infrastructure needed" },
   { key: "financial", label: "Financial Impact", color: "text-emerald-700", bgColor: "bg-emerald-100", description: "Cost savings, investment required, ROI timeline" },
-  { key: "equity", label: "Equity & Access", color: "text-amber-700", bgColor: "bg-amber-100", description: "Impact on vulnerable populations, travel time, demographic disparities" },
-  { key: "clinical", label: "Clinical Quality", color: "text-rose-700", bgColor: "bg-rose-100", description: "Patient outcomes, volume thresholds, safety, quality improvement" },
+  { key: "equity", label: "Equity & Access", color: "text-violet-700", bgColor: "bg-violet-100", description: "Impact on vulnerable populations, travel time, demographic disparities" },
+  { key: "clinical", label: "Clinical Quality", color: "text-red-700", bgColor: "bg-red-100", description: "Patient outcomes, volume thresholds, safety, quality improvement" },
 ];
 
 export const CATEGORY_LABELS: Record<RecommendationCategory, string> = {

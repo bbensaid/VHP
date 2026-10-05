@@ -49,12 +49,12 @@ interface InputDef {
 // ─── PILLAR CONFIG ────────────────────────────────────────────────────────────
 
 const PILLAR_COLORS: Record<ImpactDimension, { bg: string; text: string; border: string; bar: string }> = {
-  Policy:     { bg: "bg-sky-50",    text: "text-sky-700",    border: "border-sky-200",    bar: "bg-sky-500" },
+  Policy:     { bg: "bg-blue-50",    text: "text-blue-700",    border: "border-blue-200",    bar: "bg-blue-500" },
   Economics:  { bg: "bg-emerald-50",text: "text-emerald-700",border: "border-emerald-200",bar: "bg-emerald-500" },
   Technology: { bg: "bg-indigo-50", text: "text-indigo-700", border: "border-indigo-200", bar: "bg-indigo-500" },
   Clinical:   { bg: "bg-rose-50",   text: "text-rose-700",   border: "border-rose-200",   bar: "bg-rose-500" },
   Equity:     { bg: "bg-violet-50", text: "text-violet-700", border: "border-violet-200", bar: "bg-violet-500" },
-  Operations: { bg: "bg-teal-50",   text: "text-teal-700",   border: "border-teal-200",   bar: "bg-teal-500" },
+  Operations: { bg: "bg-amber-50",   text: "text-amber-700",   border: "border-amber-200",   bar: "bg-amber-500" },
 };
 
 function scoreToDirection(s: number): Direction {

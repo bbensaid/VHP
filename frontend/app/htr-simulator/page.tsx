@@ -28,7 +28,7 @@ const PILLARS = [
   {
     id: "policy",
     label: "Policy Alignment",
-    color: "violet",
+    color: "blue",
     icon: <DocumentCheckIcon className="w-6 h-6" />,
     tagline: "Legislative & Regulatory Readiness",
     description:
@@ -44,7 +44,7 @@ const PILLARS = [
   {
     id: "technology",
     label: "Technology Modernization",
-    color: "blue",
+    color: "indigo",
     icon: <CpuChipIcon className="w-6 h-6" />,
     tagline: "Digital Infrastructure & Interoperability",
     description:
@@ -76,7 +76,7 @@ const PILLARS = [
   {
     id: "clinical",
     label: "Clinical Quality",
-    color: "amber",
+    color: "red",
     icon: <HeartIcon className="w-6 h-6" />,
     tagline: "Outcomes, Safety & Patient Experience",
     description:
@@ -92,7 +92,7 @@ const PILLARS = [
   {
     id: "operations",
     label: "Operational Readiness",
-    color: "teal",
+    color: "amber",
     icon: <Square3Stack3DIcon className="w-6 h-6" />,
     tagline: "Revenue Cycle, Workforce & Administrative Infrastructure",
     description:
@@ -210,6 +210,8 @@ const USE_CASES = [
 const pillarColorMap: Record<string, string> = {
   violet:  "bg-violet-50 text-violet-700 border-violet-200",
   blue:    "bg-blue-50 text-blue-700 border-blue-200",
+  indigo:  "bg-indigo-50 text-indigo-700 border-indigo-200",
+  red:     "bg-red-50 text-red-700 border-red-200",
   emerald: "bg-emerald-50 text-emerald-700 border-emerald-200",
   rose:    "bg-rose-50 text-rose-700 border-rose-200",
   amber:   "bg-amber-50 text-amber-700 border-amber-200",
@@ -219,6 +221,8 @@ const pillarColorMap: Record<string, string> = {
 const cardAccentMap: Record<string, string> = {
   violet:  "border-l-violet-400 bg-violet-50/30",
   blue:    "border-l-blue-400 bg-blue-50/30",
+  indigo:  "border-l-indigo-400 bg-indigo-50/30",
+  red:     "border-l-red-400 bg-red-50/30",
   emerald: "border-l-emerald-400 bg-emerald-50/30",
   rose:    "border-l-rose-400 bg-rose-50/30",
   amber:   "border-l-amber-400 bg-amber-50/30",

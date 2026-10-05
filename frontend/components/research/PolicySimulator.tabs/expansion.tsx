@@ -90,10 +90,10 @@ export function ExpansionTab() {
     const s = NON_EXPANSION_STATES[stateKey];
     return (
       <div
-        className={`rounded-xl border p-4 flex-1 ${highlight ? "border-sky-400 bg-sky-50/30" : "border-slate-200 bg-white"}`}
+        className={`rounded-xl border p-4 flex-1 ${highlight ? "border-blue-400 bg-blue-50/30" : "border-slate-200 bg-white"}`}
       >
         <p
-          className={`text-base font-bold mb-3 ${highlight ? "text-sky-700" : "text-slate-700"}`}
+          className={`text-base font-bold mb-3 ${highlight ? "text-blue-700" : "text-slate-700"}`}
         >
           {s.label}
         </p>
@@ -116,7 +116,7 @@ export function ExpansionTab() {
           </div>
           <div className="flex justify-between border-b border-slate-100 pb-1 pt-1">
             <span className="text-slate-500 font-semibold">New Enrollees</span>
-            <span className="font-bold text-sky-700">
+            <span className="font-bold text-blue-700">
               {results.newEnrollees.toLocaleString()}
             </span>
           </div>
@@ -163,13 +163,13 @@ export function ExpansionTab() {
           </div>
           <div className="flex justify-between border-b border-slate-100 pb-1">
             <span className="text-slate-500 font-semibold">Lives Saved/yr</span>
-            <span className="font-bold text-sky-700">
+            <span className="font-bold text-blue-700">
               ~{results.livesSaved.toLocaleString()}
             </span>
           </div>
           <div className="flex justify-between">
             <span className="text-slate-500">Mortality Reduction</span>
-            <span className="font-bold text-sky-700">
+            <span className="font-bold text-blue-700">
               {results.mortalityReduction.toFixed(2)}%
             </span>
           </div>
@@ -200,7 +200,7 @@ export function ExpansionTab() {
                 <button
                   key={t}
                   onClick={() => setExpandType(t)}
-                  className={`flex-1 py-2 rounded-lg text-sm font-semibold border transition-colors ${expandType === t ? "bg-sky-600 text-white border-sky-600" : "bg-white text-slate-600 border-slate-200 hover:border-sky-400"}`}
+                  className={`flex-1 py-2 rounded-lg text-sm font-semibold border transition-colors ${expandType === t ? "bg-blue-600 text-white border-blue-600" : "bg-white text-slate-600 border-slate-200 hover:border-blue-400"}`}
                 >
                   {t === "full" ? "Full (138% FPL)" : "Partial (100% FPL)"}
                 </button>
@@ -250,7 +250,7 @@ export function ExpansionTab() {
         <StatCard
           label="New Enrollees"
           value={primaryResults.newEnrollees.toLocaleString()}
-          color="sky"
+          color="blue"
           icon={<Users size={20} />}
         />
         <StatCard
@@ -290,7 +290,7 @@ export function ExpansionTab() {
           label="Estimated Lives Saved/yr"
           value={`~${primaryResults.livesSaved.toLocaleString()}`}
           sub="1 per 455 newly insured"
-          color="sky"
+          color="blue"
           icon={<Heart size={20} />}
         />
         <StatCard

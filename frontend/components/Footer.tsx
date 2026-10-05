@@ -10,7 +10,7 @@ const pillars = [
   {
     label: "Policy",
     href: "/policy",
-    color: "hover:text-sky-400",
+    color: "hover:text-blue-400",
     sub: [
       { label: "Regulation & Legislation", href: "/policy/regulation" },
       { label: "Public Health Mandates", href: "/policy/mandates" },
@@ -53,7 +53,7 @@ const pillars = [
   {
     label: "Operations",
     href: "/operations",
-    color: "hover:text-teal-400",
+    color: "hover:text-amber-400",
     sub: [
       { label: "Revenue Cycle Management", href: "/operations/revenue-cycle" },
       { label: "Workforce & Human Capital", href: "/operations/workforce" },

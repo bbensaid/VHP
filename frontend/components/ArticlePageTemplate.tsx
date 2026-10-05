@@ -41,8 +41,8 @@ const getTheme = (pillar: string) => {
       return { badge: "bg-green-100 text-green-800", text: "text-green-800" };
     case "Policy":
       return {
-        badge: "bg-sky-100 text-sky-800",
-        text: "text-sky-800",
+        badge: "bg-blue-100 text-blue-800",
+        text: "text-blue-800",
       };
     case "Technology":
       return {

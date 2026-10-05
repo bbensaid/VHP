@@ -57,12 +57,12 @@ export interface ClientSegment {
 
 // ─── PILLAR COLORS (for cross-reference) ────────────────────────────────────
 export const PILLAR_STYLES: Record<Pillar, { bg: string; text: string; border: string; label: string }> = {
-  policy:     { bg: "bg-sky-100",    text: "text-sky-700",    border: "border-sky-200",    label: "Policy" },
+  policy:     { bg: "bg-blue-100",    text: "text-blue-700",    border: "border-blue-200",    label: "Policy" },
   economics:  { bg: "bg-emerald-100",text: "text-emerald-700",border: "border-emerald-200",label: "Economics" },
   technology: { bg: "bg-indigo-100", text: "text-indigo-700", border: "border-indigo-200", label: "Technology" },
   clinical:   { bg: "bg-red-100",    text: "text-red-700",    border: "border-red-200",    label: "Clinical" },
   equity:     { bg: "bg-violet-100", text: "text-violet-700", border: "border-violet-200", label: "Equity" },
-  operations: { bg: "bg-teal-100",   text: "text-teal-700",   border: "border-teal-200",   label: "Operations" },
+  operations: { bg: "bg-amber-100",   text: "text-amber-700",   border: "border-amber-200",   label: "Operations" },
 };
 
 // ─── ADVISORY STATS BAR ──────────────────────────────────────────────────────

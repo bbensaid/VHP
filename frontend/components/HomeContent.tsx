@@ -2,17 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import HeroCarousel from "@/components/HeroCarousel";
+import PillarHero from "@/components/home/PillarHero";
 import BookmarkButton from "@/components/BookmarkButton";
 import { PILLARS, EQUITY_IMPERATIVE } from "@/lib/taxonomy";
-
-interface LeadStory {
-  title: string;
-  summary?: string;
-  publishedAt?: string;
-  slug?: string;
-  pillar?: string;
-}
 
 interface FeedItem {
   _id: string;
@@ -23,7 +15,6 @@ interface FeedItem {
 }
 
 interface HomeContentProps {
-  leadStory: LeadStory | null;
   feed: FeedItem[] | null;
 }
 
@@ -59,12 +50,12 @@ const getBadgeStyle = (type: string, pillar: string) => {
   if (type === "webinar") return "text-rose-700 bg-rose-50 border-rose-200";
   if (type === "course") return "text-emerald-700 bg-emerald-50 border-emerald-200";
   switch (pillar?.toLowerCase()) {
-    case "policy": return "text-sky-700 bg-sky-50 border-sky-200";
+    case "policy": return "text-blue-700 bg-blue-50 border-blue-200";
     case "economics": return "text-emerald-700 bg-emerald-50 border-emerald-200";
     case "technology": return "text-indigo-700 bg-indigo-50 border-indigo-200";
     case "clinical": return "text-red-700 bg-red-50 border-red-200";
     case "equity": return "text-violet-700 bg-violet-50 border-violet-200";
-    case "operations": return "text-teal-700 bg-teal-50 border-teal-200";
+    case "operations": return "text-amber-700 bg-amber-50 border-amber-200";
     default: return "text-slate-700 bg-slate-50 border-slate-200";
   }
 };
@@ -176,7 +167,7 @@ const TRENDING_PILLARS = PILLARS.map((p) => ({
 
 // ─── MAIN COMPONENT ───────────────────────────────────────────────────────────
 
-export default function HomeContent({ leadStory, feed }: HomeContentProps) {
+export default function HomeContent({ feed }: HomeContentProps) {
   const [pillarFilter, setPillarFilter] = useState("all");
   const [typeFilter, setTypeFilter] = useState("all");
 
@@ -191,8 +182,8 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
 
   return (
     <>
-      {/* HERO CAROUSEL */}
-      <HeroCarousel leadStory={leadStory} />
+      {/* HERO — the five pillars in sequence, one 2026 briefing each */}
+      <PillarHero />
 
       {/* QUICK START — 4 intent-based action cards */}
       <section className="mb-8 md:mb-10">
@@ -213,7 +204,7 @@ export default function HomeContent({ leadStory, feed }: HomeContentProps) {
               emoji: "🎓",
               label: "Start Learning",
               desc: "Courses, tracks & personalized paths",
-              bg: "bg-sky-50 hover:bg-sky-100 border-sky-200 hover:border-sky-300",
+              bg: "bg-blue-50 hover:bg-blue-100 border-blue-200 hover:border-blue-300",
             },
             {
               href: "/research-lab",

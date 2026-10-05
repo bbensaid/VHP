@@ -207,7 +207,7 @@ export function APMTab() {
             <div className="mt-3 space-y-2 text-xs">
               <div className="flex justify-between text-slate-600">
                 <span>VT Growth Target</span>
-                <span className="font-bold text-sky-700">
+                <span className="font-bold text-blue-700">
                   {vtBenchmarks.growthTarget}%
                 </span>
               </div>
@@ -241,7 +241,7 @@ export function APMTab() {
           <StatCard
             label="10-Year Cap Budget (Yr 10)"
             value={fmtM(finalRow.capBudget)}
-            color="sky"
+            color="blue"
             icon={<Globe size={20} />}
           />
           <StatCard
@@ -271,14 +271,14 @@ export function APMTab() {
         <div className="bg-white border border-slate-200 rounded-xl p-5">
           <SectionTitle>Annual Efficiency Requirement</SectionTitle>
           <div className="flex items-center gap-4">
-            <div className="text-4xl font-black text-sky-600">
+            <div className="text-4xl font-black text-blue-600">
               {fmtPct(projectedTrend - growthCap)}
             </div>
             <div className="text-sm text-slate-600">
               <p>
                 Productivity improvement needed annually to close the gap
                 between the{" "}
-                <span className="font-semibold text-sky-700">
+                <span className="font-semibold text-blue-700">
                   {growthCap.toFixed(1)}% cap
                 </span>{" "}
                 and{" "}
@@ -314,7 +314,7 @@ export function APMTab() {
                   <th className="text-right py-2 pr-3 text-slate-500 font-semibold">
                     Trend (Unconstrained)
                   </th>
-                  <th className="text-right py-2 pr-3 text-sky-600 font-semibold">
+                  <th className="text-right py-2 pr-3 text-blue-600 font-semibold">
                     Annual Savings
                   </th>
                   <th className="text-right py-2 pr-3 text-emerald-600 font-semibold">
@@ -334,13 +334,13 @@ export function APMTab() {
                     <td className="py-1.5 pr-3 font-semibold text-slate-700">
                       {row.year}
                     </td>
-                    <td className="py-1.5 pr-3 text-right text-sky-700">
+                    <td className="py-1.5 pr-3 text-right text-blue-700">
                       {fmtM(row.capBudget)}
                     </td>
                     <td className="py-1.5 pr-3 text-right text-red-500">
                       {fmtM(row.trendBudget)}
                     </td>
-                    <td className="py-1.5 pr-3 text-right text-sky-600 font-semibold">
+                    <td className="py-1.5 pr-3 text-right text-blue-600 font-semibold">
                       {row.savings > 0 ? fmtM(row.savings) : "—"}
                     </td>
                     <td className="py-1.5 pr-3 text-right text-emerald-600 font-semibold">
@@ -382,7 +382,7 @@ export function APMTab() {
                   <p className="text-xs text-slate-400">
                     Ceiling: {fmtM(ceiling)}
                   </p>
-                  <p className="text-xs text-sky-600 mt-1 font-semibold">
+                  <p className="text-xs text-blue-600 mt-1 font-semibold">
                     {pcts[i]}% of global budget
                   </p>
                 </div>

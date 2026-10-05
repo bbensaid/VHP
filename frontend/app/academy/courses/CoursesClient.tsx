@@ -32,23 +32,23 @@ const PILLAR_LABEL: Record<string, string> = {
 
 const PILLAR_COLOR: Record<string, string> = {
   general:    "bg-slate-100 text-slate-700 border-slate-300",
-  policy:     "bg-sky-50 text-sky-700 border-sky-300",
+  policy:     "bg-blue-50 text-blue-700 border-blue-300",
   economics:  "bg-emerald-50 text-emerald-700 border-emerald-300",
   technology: "bg-indigo-50 text-indigo-700 border-indigo-300",
-  clinical:   "bg-pink-50 text-pink-700 border-pink-300",
-  equity:     "bg-purple-50 text-purple-700 border-purple-300",
-  operations: "bg-teal-50 text-teal-700 border-teal-300",
+  clinical:   "bg-red-50 text-red-700 border-red-300",
+  equity:     "bg-violet-50 text-violet-700 border-violet-300",
+  operations: "bg-amber-50 text-amber-700 border-amber-300",
 };
 
 const PILLAR_ACTIVE: Record<string, string> = {
   all:        "bg-indigo-600 text-white border-indigo-600",
   general:    "bg-slate-600 text-white border-slate-600",
-  policy:     "bg-sky-600 text-white border-sky-600",
+  policy:     "bg-blue-600 text-white border-blue-600",
   economics:  "bg-emerald-600 text-white border-emerald-600",
   technology: "bg-indigo-600 text-white border-indigo-600",
-  clinical:   "bg-pink-600 text-white border-pink-600",
-  equity:     "bg-purple-600 text-white border-purple-600",
-  operations: "bg-teal-600 text-white border-teal-600",
+  clinical:   "bg-red-600 text-white border-red-600",
+  equity:     "bg-violet-600 text-white border-violet-600",
+  operations: "bg-amber-700 text-white border-amber-700",
 };
 
 const LEVEL_LABEL: Record<string, string> = {
