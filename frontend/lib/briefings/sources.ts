@@ -121,6 +121,7 @@ export const SOURCES: Record<string, Source> = {
     url: "https://cms.gov/newsroom/press-releases/cms-announces-50-billion-awards-strengthen-rural-health-all-50-states",
     checked: "2026-10-04",
   },
+
   "vtbiz-ahead": {
     id: "vtbiz-ahead",
     publisher: "Vermont Business Magazine",
@@ -144,6 +145,30 @@ export const SOURCES: Record<string, Source> = {
     date: "28 July 2026",
     url: "https://www.wcax.com/2026/07/28/vermont-drops-ahead-healthcare-model-shifts-195m-rural-health-fund/",
     checked: "2026-10-04",
+  },
+  "gmcb-fy27": {
+    id: "gmcb-fy27",
+    publisher: "Green Mountain Care Board",
+    title: "Green Mountain Care Board Approves FY27 Hospital Budgets (press release)",
+    date: "15 September 2026",
+    url: "https://gmcboard.vermont.gov/sites/gmcb/files/documents/Press%20Release%20-%20FY27%20Hospital%20Budget%20Review%20Decisions%20-%2009.14.2026(1).pdf",
+    checked: "2026-10-05",
+  },
+  "gmcb-act68-rbp": {
+    id: "gmcb-act68-rbp",
+    publisher: "Green Mountain Care Board",
+    title: "Act 68 Update on Hospital Reference-Based Pricing and Global Budgets",
+    date: "17 February 2026",
+    url: "https://legislature.vermont.gov/assets/Legislative-Reports/GMCB-Act-68-Update-02.17.2026A.pdf",
+    checked: "2026-10-05",
+  },
+  "sevendays-fy27": {
+    id: "sevendays-fy27",
+    publisher: "Seven Days",
+    title: "Vermont Regulators Order Hospital Price Cuts; UVM Hit Hardest",
+    date: "September 2026",
+    url: "https://www.sevendaysvt.com/news/healthcare/vermont-regulators-order-hospital-price-cuts-uvm-hit-hardest/",
+    checked: "2026-10-05",
   },
 
   // ── Clinical ──────────────────────────────────────────────────────────────

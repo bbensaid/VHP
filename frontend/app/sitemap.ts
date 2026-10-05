@@ -21,7 +21,7 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
   { path: "/briefings",                               priority: 0.9, changeFrequency: "monthly" },
   { path: "/briefings/medicaid-rulebook-2027",        priority: 0.8, changeFrequency: "monthly" },
   { path: "/briefings/ai-and-the-data-layer",         priority: 0.8, changeFrequency: "monthly" },
-  { path: "/briefings/vermont-five-year-runway",      priority: 0.8, changeFrequency: "monthly" },
+  { path: "/briefings/hospital-prices-come-down",     priority: 0.8, changeFrequency: "monthly" },
   { path: "/briefings/integrated-behavioral-health",  priority: 0.8, changeFrequency: "monthly" },
   { path: "/briefings/fourteen-hospital-plans",       priority: 0.8, changeFrequency: "monthly" },
   // Pillars
