@@ -186,12 +186,12 @@ function TrackCard({ track, highlighted }: { track: LearningTrack; highlighted?:
 // ─── Coming-Soon Track Card ───────────────────────────────────────────────────
 
 const PILLAR_COLORS: Record<string, { badge: string; dot: string }> = {
-  policy:     { badge: "bg-sky-100 text-sky-700 border-sky-200",         dot: "bg-sky-500" },
+  policy:     { badge: "bg-blue-100 text-blue-700 border-blue-200",         dot: "bg-blue-500" },
   economics:  { badge: "bg-emerald-100 text-emerald-700 border-emerald-200", dot: "bg-emerald-500" },
   technology: { badge: "bg-indigo-100 text-indigo-700 border-indigo-200", dot: "bg-indigo-500" },
   clinical:   { badge: "bg-red-100 text-red-700 border-red-200",          dot: "bg-red-500" },
   equity:     { badge: "bg-violet-100 text-violet-700 border-violet-200", dot: "bg-violet-500" },
-  operations: { badge: "bg-teal-100 text-teal-700 border-teal-200",       dot: "bg-teal-500" },
+  operations: { badge: "bg-amber-100 text-amber-700 border-amber-200",       dot: "bg-amber-500" },
 };
 
 function ComingSoonTrackCard({ track }: { track: LearningTrack }) {

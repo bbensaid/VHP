@@ -16,11 +16,11 @@ import {
 // Five pillars, in the book's load-bearing order (Policy → Technology →
 // Economics → Clinical → Operations). These are the numbered cards.
 const pillars = [
-  { label: "Policy", color: "text-sky-700", bg: "bg-sky-600", border: "border-sky-200", question: "Is it permissible?", href: "/policy" },
+  { label: "Policy", color: "text-blue-700", bg: "bg-blue-600", border: "border-blue-200", question: "Is it permissible?", href: "/policy" },
   { label: "Technology", color: "text-indigo-700", bg: "bg-indigo-500", border: "border-indigo-200", question: "Is it possible?", href: "/technology" },
   { label: "Economics", color: "text-emerald-700", bg: "bg-emerald-500", border: "border-emerald-200", question: "Is it sustainable?", href: "/economics" },
   { label: "Clinical", color: "text-rose-700", bg: "bg-rose-500", border: "border-rose-200", question: "Is it effective?", href: "/clinical" },
-  { label: "Operations", color: "text-teal-700", bg: "bg-teal-500", border: "border-teal-200", question: "Is it executable?", href: "/operations" },
+  { label: "Operations", color: "text-amber-700", bg: "bg-amber-500", border: "border-amber-200", question: "Is it executable?", href: "/operations" },
 ];
 
 // The sixth question — and deliberately not a sixth pillar. Rendered unnumbered

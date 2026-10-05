@@ -47,7 +47,14 @@ export interface Pillar {
   href: string;
   desc: string;
   // Tailwind color family used across dots, accents, hover states.
-  color: "sky" | "emerald" | "indigo" | "red" | "violet" | "teal";
+  color: "blue" | "emerald" | "indigo" | "red" | "violet" | "amber";
+  // The Five-Pillar Map hex, for SVG and charts (map, simulators, hero). Adopted
+  // as the platform standard 2026-10-04. Tailwind classes above use the same
+  // families; text uses the 700 shade so it stays readable on light grounds.
+  hex: string;
+  hexLight: string;   // 50 shade — card fill in the map
+  hexBorder: string;  // 200 shade — card outline in the map
+  hexStrong: string;  // text-safe tone (AA on white, and white-on-it) for type and solid badges
   // Pre-computed Tailwind class strings. These avoid the JIT-compiler problem
   // where dynamically constructed classes (`bg-${color}-100`) get tree-shaken.
   classes: {
@@ -74,18 +81,22 @@ export const PILLARS: readonly Pillar[] = [
     label: "Policy",
     href: "/policy",
     desc: "Regulation, mandates & global health law",
-    color: "sky",
+    color: "blue",
+    hex: "#3b82f6",
+    hexLight: "#eff6ff",
+    hexBorder: "#bfdbfe",
+    hexStrong: "#2563eb",
     classes: {
-      dot: "bg-sky-500",
-      headerColor: "text-sky-700",
-      headerBg: "bg-sky-100",
-      borderAccent: "border-sky-400",
-      hoverBg: "hover:bg-sky-50",
-      divideColor: "divide-sky-100",
-      activeItemBg: "bg-sky-100",
-      bgLight: "bg-sky-50",
-      textColor: "text-sky-700",
-      ringLight: "ring-sky-200",
+      dot: "bg-blue-500",
+      headerColor: "text-blue-700",
+      headerBg: "bg-blue-100",
+      borderAccent: "border-blue-400",
+      hoverBg: "hover:bg-blue-50",
+      divideColor: "divide-blue-100",
+      activeItemBg: "bg-blue-100",
+      bgLight: "bg-blue-50",
+      textColor: "text-blue-700",
+      ringLight: "ring-blue-200",
     },
   },
   {
@@ -94,6 +105,10 @@ export const PILLARS: readonly Pillar[] = [
     href: "/technology",
     desc: "AI, digital health & data governance",
     color: "indigo",
+    hex: "#6366f1",
+    hexLight: "#eef2ff",
+    hexBorder: "#c7d2fe",
+    hexStrong: "#4f46e5",
     classes: {
       dot: "bg-indigo-500",
       headerColor: "text-indigo-700",
@@ -113,6 +128,10 @@ export const PILLARS: readonly Pillar[] = [
     href: "/economics",
     desc: "Value-based care, markets & investment",
     color: "emerald",
+    hex: "#10b981",
+    hexLight: "#ecfdf5",
+    hexBorder: "#a7f3d0",
+    hexStrong: "#047857",
     classes: {
       dot: "bg-emerald-500",
       headerColor: "text-emerald-700",
@@ -132,6 +151,10 @@ export const PILLARS: readonly Pillar[] = [
     href: "/clinical",
     desc: "Care delivery models & population health",
     color: "red",
+    hex: "#ef4444",
+    hexLight: "#fef2f2",
+    hexBorder: "#fecaca",
+    hexStrong: "#dc2626",
     classes: {
       dot: "bg-red-500",
       headerColor: "text-red-700",
@@ -150,18 +173,22 @@ export const PILLARS: readonly Pillar[] = [
     label: "Operations",
     href: "/operations",
     desc: "Revenue cycle, workforce & compliance",
-    color: "teal",
+    color: "amber",
+    hex: "#f59e0b",
+    hexLight: "#fffbeb",
+    hexBorder: "#fde68a",
+    hexStrong: "#b45309",
     classes: {
-      dot: "bg-teal-500",
-      headerColor: "text-teal-700",
-      headerBg: "bg-teal-100",
-      borderAccent: "border-teal-400",
-      hoverBg: "hover:bg-teal-50",
-      divideColor: "divide-teal-100",
-      activeItemBg: "bg-teal-100",
-      bgLight: "bg-teal-50",
-      textColor: "text-teal-700",
-      ringLight: "ring-teal-200",
+      dot: "bg-amber-500",
+      headerColor: "text-amber-700",
+      headerBg: "bg-amber-100",
+      borderAccent: "border-amber-400",
+      hoverBg: "hover:bg-amber-50",
+      divideColor: "divide-amber-100",
+      activeItemBg: "bg-amber-100",
+      bgLight: "bg-amber-50",
+      textColor: "text-amber-700",
+      ringLight: "ring-amber-200",
     },
   },
 ] as const;
@@ -177,6 +204,10 @@ export const EQUITY_IMPERATIVE: Pillar = {
   href: "/equity",
   desc: "Is it just? — SDOH, algorithmic bias & access disparity, tested against every pillar",
   color: "violet",
+  hex: "#a855f7",
+  hexLight: "#faf5ff",
+  hexBorder: "#e9d5ff",
+  hexStrong: "#7c3aed",
   classes: {
     dot: "bg-violet-500",
     headerColor: "text-violet-700",

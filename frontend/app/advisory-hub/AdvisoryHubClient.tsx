@@ -130,7 +130,7 @@ const PILLAR_COLORS: Record<string, string> = {
   Technology: 'bg-indigo-100 text-indigo-700',
   Clinical:   'bg-red-100 text-red-700',
   Equity:     'bg-violet-100 text-violet-700',
-  Operations: 'bg-teal-100 text-teal-700',
+  Operations: 'bg-amber-100 text-amber-700',
 }
 
 function ServicePanel({ svc }: { svc: typeof SERVICES[number] }) {

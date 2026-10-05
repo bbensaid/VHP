@@ -60,9 +60,9 @@ const NavDropdown: React.FC<NavDropdownProps> = ({
       bg: "bg-brand-equity"
     },
     operations: {
-      text: "text-teal-700",
-      hover: "hover:text-teal-700",
-      bg: "bg-teal-600"
+      text: "text-amber-700",
+      hover: "hover:text-amber-700",
+      bg: "bg-amber-600"
     },
   };
 

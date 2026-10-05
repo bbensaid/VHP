@@ -105,10 +105,10 @@ const RECOMMENDATIONS: CalAIMRecommendation[] = [
 ]
 
 const PILLARS: { key: PillarKey; label: string; color: string; bg: string }[] = [
-  { key: 'policy',   label: 'Policy Alignment',    color: 'text-violet-700', bg: 'bg-violet-100' },
+  { key: 'policy',   label: 'Policy Alignment',    color: 'text-blue-700', bg: 'bg-blue-100' },
   { key: 'financial', label: 'Financial Sustainability', color: 'text-emerald-700', bg: 'bg-emerald-100' },
-  { key: 'equity',   label: 'Health Equity',        color: 'text-rose-700',   bg: 'bg-rose-100' },
-  { key: 'clinical', label: 'Clinical Quality',     color: 'text-amber-700',  bg: 'bg-amber-100' },
+  { key: 'equity',   label: 'Health Equity',        color: 'text-violet-700',   bg: 'bg-violet-100' },
+  { key: 'clinical', label: 'Clinical Quality',     color: 'text-red-700',  bg: 'bg-red-100' },
 ]
 
 const CATEGORY_LABELS: Record<string, string> = {

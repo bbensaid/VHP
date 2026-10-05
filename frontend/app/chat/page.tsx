@@ -59,8 +59,8 @@ function detectPHI(text: string): boolean {
 const ALL_PLATFORM_SECTIONS = [
   {
     label: "Policy",
-    color: "bg-sky-50 border-sky-200 text-sky-800 hover:bg-sky-100",
-    headerColor: "text-sky-700",
+    color: "bg-blue-50 border-blue-200 text-blue-800 hover:bg-blue-100",
+    headerColor: "text-blue-700",
     icon: BuildingLibraryIcon,
     topics: [
       { label: "Regulation & Legislation",    prompt: "What are the most important health regulations and legislation I should know about?" },
@@ -136,8 +136,8 @@ const ALL_PLATFORM_SECTIONS = [
   },
   {
     label: "Operations",
-    color: "bg-teal-50 border-teal-200 text-teal-800 hover:bg-teal-100",
-    headerColor: "text-teal-700",
+    color: "bg-amber-50 border-amber-200 text-amber-800 hover:bg-amber-100",
+    headerColor: "text-amber-700",
     icon: Cog6ToothIcon,
     topics: [
       { label: "Revenue Cycle Management",     prompt: "What are the best revenue cycle management strategies for health systems in 2026?" },
@@ -187,8 +187,8 @@ const ALL_PLATFORM_SECTIONS = [
   },
   {
     label: "Academy & Learning",
-    color: "bg-sky-50 border-sky-200 text-sky-800 hover:bg-sky-100",
-    headerColor: "text-sky-700",
+    color: "bg-blue-50 border-blue-200 text-blue-800 hover:bg-blue-100",
+    headerColor: "text-blue-700",
     icon: AcademicCapIcon,
     topics: [
       { label: "Personalized Learning Path", prompt: "Where should I start learning about value-based care and health transformation?" },
@@ -313,6 +313,13 @@ export default function ChatPage() {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const messagesRef = useRef(messages);
   useEffect(() => { messagesRef.current = messages; }, [messages]);
+
+  // Pre-fill from ?q= (the "Ask the Analyst" prompts on /briefings). Fills the
+  // box only — the reader still decides to send it.
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search).get("q");
+    if (q) setInputValue(q.slice(0, 500));
+  }, []);
 
   // Inject voice transcript into chat textarea
   useEffect(() => {

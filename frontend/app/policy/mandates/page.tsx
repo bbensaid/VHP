@@ -9,7 +9,7 @@ function MandatesHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">
       <div className="bg-slate-50 border border-slate-200 rounded-2xl px-8 py-10 mb-10">
-        <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
+        <span className="inline-block text-xs font-black uppercase tracking-widest text-blue-700 bg-blue-50 border border-blue-200 rounded-full px-3 py-1 mb-4">
           Policy · Public Health Mandates
         </span>
         <h1 className="ty-h1 font-black text-slate-900 mb-3">Public Health Mandates</h1>
@@ -154,7 +154,7 @@ function MandatesBody() {
             <ul className="space-y-2">
               {card.items.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-slate-600">
-                  <span className="text-sky-500 mt-0.5 shrink-0">›</span>
+                  <span className="text-blue-500 mt-0.5 shrink-0">›</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -169,7 +169,7 @@ function MandatesBody() {
         <p className="text-slate-500 text-sm mb-6">How healthcare organizations should structure mandate compliance programs</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { phase: "Governance & Tracking", color: "bg-white border-sky-200", steps: ["Regulatory intelligence: subscribe to CMS, OCR, ONC listservs + Federal Register alerts", "Compliance calendar: map all mandate deadlines, comment periods, effective dates", "Board-level compliance committee: quarterly regulatory update reports", "Cross-functional task forces: legal, compliance, clinical, IT per mandate domain"] },
+            { phase: "Governance & Tracking", color: "bg-white border-blue-200", steps: ["Regulatory intelligence: subscribe to CMS, OCR, ONC listservs + Federal Register alerts", "Compliance calendar: map all mandate deadlines, comment periods, effective dates", "Board-level compliance committee: quarterly regulatory update reports", "Cross-functional task forces: legal, compliance, clinical, IT per mandate domain"] },
             { phase: "Implementation", color: "bg-white border-amber-200", steps: ["Gap analysis against each CoP, regulation, and reporting requirement", "Policy and procedure updates triggered by each new final rule", "Staff training: mandatory training tied to new compliance requirements", "Vendor contract reviews: BAAs, Business Associate requirements updated"] },
             { phase: "Monitoring & Audit", color: "bg-white border-emerald-200", steps: ["Mock surveys: annual internal survey readiness exercise for Joint Commission/CMS", "HIPAA audit program: OCR Phase 3 focused audit readiness + internal audits", "Quality reporting validation: pre-submission data integrity checks across all programs", "Incident response drills: EMTALA, emergency preparedness tabletop exercises annually"] },
           ].map((phase) => (
@@ -198,7 +198,7 @@ export default function Page() {
         pillar="Policy"
         title="Public Health Mandates"
         description="Federal mandates, vaccine policy, staffing requirements, and compliance frameworks with enforcement penalties."
-        colorClass="text-sky-700"
+        colorClass="text-blue-700"
         category="Mandates"
         hideHeader
       />

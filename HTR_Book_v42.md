@@ -1056,19 +1056,19 @@ The rule is narrow on purpose: a dependency earns a cell when the downstream pil
 
 Naming what flows is easier than it sounds, because each pillar issues exactly one thing: its currency. That is what makes the five pillars distinct rather than five labels for "important stuff." The table below sets the five currencies side by side.
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Pillar**         **What it issues (**currency) **--- and what that means**
-  ------------------ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Policy**         **AUTHORITY ---** Mandate, prohibition, statutory deadline --- and the power to appropriate. Anything that makes an action required rather than advisable.
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Pillar**       **What it issues (**currency) **--- and what that means**
+  ---------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Policy**       **AUTHORITY ---** Mandate, prohibition, statutory deadline --- and the power to appropriate. Anything that makes an action required rather than advisable.
 
-  **Technology**     **INFORMATION ---** Data that can be trusted, at a cadence fast enough to act on. Claims, clinical feeds, risk scores, stratification.
+  **Technology**   **INFORMATION ---** Data that can be trusted, at a cadence fast enough to act on. Claims, clinical feeds, risk scores, stratification.
 
-  **Economics**      **INCENTIVES ---** The financial consequence attached to a behaviour --- what the system rewards and penalises. Reference-based pricing, global budgets, total-cost-of-care accountability.
+  **Economics**    **INCENTIVES ---** The financial consequence attached to a behaviour --- what the system rewards and penalises. Reference-based pricing, global budgets, total-cost-of-care accountability.
 
-  **Clinical**       **OUTCOMES ---** Care actually delivered, and the measured result of delivering it. The only currency a patient experiences directly.
+  **Clinical**     **OUTCOMES ---** Care actually delivered, and the measured result of delivering it. The only currency a patient experiences directly.
 
-  **Operations**     **CAPACITY ---** People, credentials, management infrastructure and project discipline --- the ability to run what the other four design.
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Operations**   **CAPACITY ---** People, credentials, management infrastructure and project discipline --- the ability to run what the other four design.
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *What each pillar issues. A dependency exists only where one pillar needs what another pillar issues.*
 
@@ -1088,20 +1088,20 @@ The distinction between transformation capital and incentive architecture is not
 
 So there is no Economics → Technology cell. The relationship is real, but what it proposes to send has a different sender. Applied honestly, the rule will sometimes delete a cell you are fond of; that is what a rule is for. A reader who disagrees with any of the nine relationships now has something specific to argue with: name the currency, and name its issuer.
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **WHAT A "GATE" MEANS IN THIS BOOK**                                                                                                                                                                                                                                                               |
-|                                                                                                                                                                                                                                                                                                    |
-| Picture the pillars as a series of locked gates on a single road. A pillar's gate is the work that pillar must complete before traffic can pass through to the pillar behind it.                                                                                                                   |
-|                                                                                                                                                                                                                                                                                                    |
-| **A gate is OPEN when that pillar's prerequisite work is finished** --- the statute is enacted, the analytics are running, the contracts are signed. Downstream investment can now proceed and produce its intended value.                                                                         |
-|                                                                                                                                                                                                                                                                                                    |
-| **A gate is CLOSED when that work is unfinished.** Money spent downstream of a closed gate does not fail loudly; it fails quietly, producing results nobody can use until the gate opens. That is why the sequence cannot be bought past --- the point Principle 1 develops later in this chapter. |
-|                                                                                                                                                                                                                                                                                                    |
-| **You open a gate by completing the work, not by deciding to proceed.** A gate opens on evidence: the capability exists and is operating. Declaring a milestone met does not open it.                                                                                                              |
-|                                                                                                                                                                                                                                                                                                    |
-| Throughout this chapter, "open" always means *passable --- the work is done*, and "closed" always means *blocked --- the work is not done yet*.                                                                                                                                                    |
-+====================================================================================================================================================================================================================================================================================================+
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **WHAT A "GATE" MEANS IN THIS BOOK**                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                            |
+| Picture the pillars as a series of locked gates on a single road. A pillar's gate is the work that pillar must complete before traffic can pass through to the pillar behind it.                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                            |
+| **A gate is OPEN when that pillar's prerequisite work is finished** --- the statute is enacted, the analytics are running, the contracts are signed. Downstream investment can now proceed and produce its intended value.                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                            |
+| **A gate is CLOSED when that work is unfinished.** Money spent downstream of a closed gate does not fail loudly; it fails quietly, producing results nobody can use until the gate opens. That is why no amount of downstream investment can bypass the sequence --- the point Principle 1 develops later in this chapter. |
+|                                                                                                                                                                                                                                                                                                                            |
+| **You open a gate by completing the work, not by deciding to proceed.** A gate opens on evidence: the capability exists and is operating. Declaring a milestone met does not open it.                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                            |
+| Throughout this chapter, "open" always means *passable --- the work is done*, and "closed" always means *blocked --- the work is not done yet*.                                                                                                                                                                            |
++============================================================================================================================================================================================================================================================================================================================+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The sections that follow take the nine relationships one source pillar at a time: the mechanism, the failure mode when it is ignored, and the Vermont evidence that confirms it. Each section closes with the same question --- whether that pillar passes the Equity Imperative.
 
@@ -1316,8 +1316,6 @@ The most rigorous test of a dependency framework is not whether it describes how
 
 *Figure 1.4 --- Failure-cascade analysis: what breaks when each pillar is absent. Sources: HTR analysis; CMMI evaluation literature; Oliver Wyman Act 167 Report; Vermont experience.*
 
-![](media/image2.png){width="6.2in" height="3.8476465441819774in"}
-
 ## 1.6 **Using the Dependency Map as an Analytical Tool**
 
 The dependency map is not merely a theoretical framework --- it is a practical analytical tool for three management functions: transformation sequencing, risk identification, and investment prioritization.
@@ -1366,7 +1364,7 @@ Vermont did not choose careful sequencing because it was disciplined. It was for
 
 When Oliver Wyman presented Vermont's hospital financial trajectory in September 2024 --- nine of fourteen hospitals in operating losses, thirteen of fourteen projecting losses by 2028, a cumulative five-year system deficit between \$700 million and \$2.4 billion --- the room understood something that policy documents rarely state directly: the cost of getting the sequencing wrong was now larger than the state's ability to recover. A decade of OneCare Vermont had demonstrated what the wrong sequence produces. Acts 167, 51, and 68 are the statutory attempt to build the right one.
 
-The pillars are usually presented as simultaneous imperatives --- each necessary, each dependent on the others. That is true, and it is the reason the framework holds. But it is useless to someone who has to commit a budget on Monday, because it says nothing about what to fund first. The answer is not arbitrary, and it is not a matter of institutional preference or political opportunity. .
+The pillars are usually presented as simultaneous imperatives --- each necessary, each dependent on the others. That is true, and it is the reason the framework holds. But it is useless to someone who has to commit a budget on Monday, because it says nothing about what to fund first. The answer is not arbitrary, and it is not a matter of institutional preference or political opportunity.
 
 **The execution sequence is determined by dependency logic --- the structural reality that some things cannot produce value until other things are already in place.**
 
@@ -1408,8 +1406,6 @@ A third critique targets the Technology-before-Economics sequencing specifically
 This critique identifies a real failure mode. The response is a distinction the framework makes explicitly: technology deployment must be coordinated with payment architecture design. Building VHCURES analytics capability in 2025--2026 while designing the Act 68 global budget methodology in parallel --- so that the technology is built to serve a specific and known payment model --- is different from building technology without a defined use case. The failure mode to avoid is not "technology before economics" but "technology without economics."
 
 ## 1.11 **The Five Stages: Resolved**
-
-![](media/image3.png){width="6.2in" height="3.475757874015748in"}
 
 ### 1.11.1 **Stage 1: Policy --- Mandate and Capital**
 
@@ -1501,7 +1497,7 @@ Vermont's current architecture illustrates this. While the Technology gate is st
 
 None of that parallel work sits behind the Technology gate. Designing a social risk adjustment methodology, training hospital transformation teams and certifying CCBHCs all produce their full intended value whether or not the analytics are running yet, so they can proceed now without violating any critical-path dependency.
 
-The diagnostic question for any proposed parallel investment: *does this investment have an unmet upstream dependency?* If yes --- if its effectiveness depends on a gate that is not yet open --- it is not parallel work. It is premature work that will produce either wasted results or results that cannot be used until the upstream dependency is met.
+The diagnostic question for any proposed parallel investment: *does it have an unmet upstream dependency?* If yes --- if its effectiveness depends on a gate that is not yet open --- it is not parallel work. It is premature work that will produce either wasted results or results that cannot be used until the upstream dependency is met.
 
 ### 1.12.3 **Principle 3: Equity Is a Design Constraint, Not a Downstream Filter**
 
@@ -1715,16 +1711,16 @@ This chapter examines each act, the analytical infrastructure it created, and th
 
 Before examining the legislative sequence, it is worth stating plainly what the Oliver Wyman analysis concluded at the highest level of abstraction. After 230 meetings across Vermont's 14 Hospital Service Areas, engagement with more than 3,100 participants representing over 100 organizations, and systematic analysis of financial, demographic, and quality data spanning every hospital in the state, Oliver Wyman's executive summary distilled Vermont's challenge to three imperatives:
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **OLIVER WYMAN'S THREE IMPERATIVES**                                                                                                                                               |
-|                                                                                                                                                                                    |
-| **1. Fix the upstream drivers** --- build housing and other facilities and fix transportation.                                                                                     |
-|                                                                                                                                                                                    |
-| **2. Fix the price and budget architecture** --- pay PPS hospitals with reference-based pricing and move to global budgets/capitation for all when conditions for success are met. |
-|                                                                                                                                                                                    |
-| **3. Shift the locus of care** --- move all care possible out of hospitals.                                                                                                        |
-+====================================================================================================================================================================================+
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **OLIVER WYMAN'S THREE IMPERATIVES**                                                                                                                                                |
+|                                                                                                                                                                                     |
+| 1.  **Fix the upstream drivers** --- build housing and other facilities and fix transportation.                                                                                     |
+|                                                                                                                                                                                     |
+| 2.  **Fix the price and budget architecture** --- pay PPS hospitals with reference-based pricing and move to global budgets/capitation for all when conditions for success are met. |
+|                                                                                                                                                                                     |
+| 3.  **Shift the locus of care** --- move all care possible out of hospitals.                                                                                                        |
++=====================================================================================================================================================================================+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These three imperatives are not a wish list. They are the analytically derived conclusion of a year-long process that examined every dimension of Vermont's system. Each imperative maps directly onto the five-pillar framework: the housing and transportation imperative is an Operations pillar challenge with a central equity dimension; the pricing and global budget imperative is an Economics and Policy pillar challenge; and the shift of care out of hospitals is a Clinical pillar challenge that requires Technology and Operations pillar execution. The entire Vermont reform agenda can be read as a simultaneous, coordinated intervention across all five pillars --- which is precisely why it is analytically instructive for any organization facing comparable pressures.
 
@@ -2979,12 +2975,12 @@ Vermont's RHT Program IT advance investments explicitly include cybersecurity ca
 
 The following matrix provides implementation guidance for the key Technology pillar investments --- estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Investment**                                     **Estimated cost**         **Timeline to value**   **ROI crossover**          **Vermont benchmark**
-  -------------------------------------------------- -------------------------- ----------------------- -------------------------- ----------------------------------------------------------------------------------
+  -------------------------------------------------- -------------------------- ----------------------- -------------------------- ----------------------------------------------------------------------------------------------------------------
   FHIR R4 compliance and API development             \$150K-\$500K per org      12-18 months            18-24 months               Vermont VITL FHIR mandate; CMS interoperability rule compliance
 
-  Clinical AI deployment with governance framework   \$200K-\$1M setup          6-12 months             12-24 months               Vermont AI scribe grants (RHT); ambient documentation ROI 30-45 min/day/provider
+  Clinical AI deployment with governance framework   \$200K-\$1M setup          6-12 months             12-24 months               Vermont AI scribe grants (RHT); ambient scribes save \~15--25 min/day/provider (NEJM AI RCT, 2025; JAMA, 2026)
 
   VHCURES analytics platform access and training     \$20K-\$60K annually       3-6 months              6 months                   Vermont hospitals: pre-AHEAD HCC gap analysis; attribution modeling
 
@@ -2993,7 +2989,7 @@ The following matrix provides implementation guidance for the key Technology pil
   EHR optimization for structured data capture       \$15K-\$40K per practice   1-3 months              6 months                   Blueprint PCMH prerequisite; HEDIS measure reporting accuracy
 
   Cybersecurity assessment and hardening             \$50K-\$200K per org       3-6 months              Risk avoidance immediate   Vermont rural CAH vulnerability; ransomware risk at Grace Cottage scale
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 5.3 --- Technology pillar implementation matrix. Sources: HTR Advisory; Vermont RHT Program (2025); CMS interoperability rule.*
 

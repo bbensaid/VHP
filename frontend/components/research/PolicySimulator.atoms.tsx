@@ -20,7 +20,7 @@ export function StatCard({
   label,
   value,
   sub,
-  color = "sky",
+  color = "blue",
   icon,
 }: {
   label: string;
@@ -30,7 +30,7 @@ export function StatCard({
   icon?: React.ReactNode;
 }) {
   const colors: Record<string, string> = {
-    sky: "bg-sky-50 border-sky-200 text-sky-700",
+    blue: "bg-blue-50 border-blue-200 text-blue-700",
     green: "bg-emerald-50 border-emerald-200 text-emerald-700",
     red: "bg-red-50 border-red-200 text-red-700",
     amber: "bg-amber-50 border-amber-200 text-amber-700",
@@ -38,7 +38,7 @@ export function StatCard({
     indigo: "bg-indigo-50 border-indigo-200 text-indigo-700",
   };
   return (
-    <div className={`rounded-lg border p-4 ${colors[color] ?? colors.sky}`}>
+    <div className={`rounded-lg border p-4 ${colors[color] ?? colors.blue}`}>
       <div className="flex items-start justify-between">
         <div>
           <p className="text-xs font-medium opacity-70 mb-1">{label}</p>
@@ -82,7 +82,7 @@ export function SliderRow({
             </span>
           )}
         </label>
-        <span className="text-sm font-semibold text-sky-700 min-w-[60px] text-right">
+        <span className="text-sm font-semibold text-blue-700 min-w-[60px] text-right">
           {display}
         </span>
       </div>
@@ -93,7 +93,7 @@ export function SliderRow({
         step={step}
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
-        className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-sky-600"
+        className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
       />
       <div className="flex justify-between text-xs text-slate-400 mt-0.5">
         <span>{format ? format(min) : String(min)}</span>
@@ -120,7 +120,7 @@ export function SelectRow({
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm text-slate-800 bg-white focus:outline-none focus:ring-2 focus:ring-sky-400"
+        className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm text-slate-800 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
       >
         {options.map((o) => (
           <option key={o.value} value={o.value}>
@@ -146,7 +146,7 @@ export function ToggleRow({
       <span className="text-sm text-slate-600">{label}</span>
       <button
         onClick={() => onChange(!value)}
-        className={`relative w-11 h-6 rounded-full transition-colors ${value ? "bg-sky-600" : "bg-slate-300"}`}
+        className={`relative w-11 h-6 rounded-full transition-colors ${value ? "bg-blue-600" : "bg-slate-300"}`}
       >
         <span
           className={`absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform ${value ? "translate-x-5" : "translate-x-0"}`}
@@ -160,7 +160,7 @@ export function ResultBar({
   label,
   value,
   max,
-  color = "sky",
+  color = "blue",
 }: {
   label: string;
   value: number;
@@ -169,7 +169,7 @@ export function ResultBar({
 }) {
   const pct = Math.min(100, (value / max) * 100);
   const colors: Record<string, string> = {
-    sky: "bg-sky-500",
+    blue: "bg-blue-500",
     green: "bg-emerald-500",
     amber: "bg-amber-500",
     red: "bg-red-500",
@@ -183,7 +183,7 @@ export function ResultBar({
       </div>
       <div className="w-full bg-slate-100 rounded-full h-2">
         <div
-          className={`h-2 rounded-full ${colors[color] ?? colors.sky} transition-all duration-500`}
+          className={`h-2 rounded-full ${colors[color] ?? colors.blue} transition-all duration-500`}
           style={{ width: `${pct}%` }}
         />
       </div>

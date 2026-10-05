@@ -31,11 +31,11 @@
   --touch-target-min:       2.75rem; /* 44px  — WCAG minimum touch target size  */
 
   /* ── Pillar brand colors ───────────────────────────────────────────────── */
-  --color-brand-policy: #0369a1;
+  --color-brand-policy: #1d4ed8;  /* blue-700 — Five-Pillar Map palette (2026-10-04) */
   --color-brand-economics: #059669;
   --color-brand-technology: #4f46e5;
   --color-brand-clinical: #dc2626;
-  --color-brand-operations: #0d9488;  /* teal-600 — matches PILLARS[operations] */
+  --color-brand-operations: #b45309;  /* amber-700 — map palette; text-safe tone of #f59e0b */
   /* Not a pillar color: the Equity Imperative's violet, kept for its hub,
      badge and cross-cutting callouts. */
   --color-brand-equity: #7c3aed;

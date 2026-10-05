@@ -84,12 +84,12 @@ function StatBox({ value, label, sub }: { value: string; label: string; sub?: st
 
 function PillarTag({ pillar, note }: { pillar: string; color: string; note: string }) {
   const colors: Record<string, string> = {
-    Policy: "bg-sky-50 text-sky-700 border-sky-200",
+    Policy: "bg-blue-50 text-blue-700 border-blue-200",
     Economics: "bg-emerald-50 text-emerald-700 border-emerald-200",
     Technology: "bg-indigo-50 text-indigo-700 border-indigo-200",
     Clinical: "bg-red-50 text-red-700 border-red-200",
     Equity: "bg-violet-50 text-violet-700 border-violet-200",
-    Operations: "bg-teal-50 text-teal-700 border-teal-200",
+    Operations: "bg-amber-50 text-amber-700 border-amber-200",
   };
   return (
     <div className={`border rounded-xl p-4 ${colors[pillar] ?? "bg-slate-50 text-slate-700 border-slate-200"}`}>
@@ -242,7 +242,7 @@ export default function VermontAct68Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <PillarTag
             pillar="Policy"
-            color="sky"
+            color="blue"
             note="Converts voluntary payment reform to statutory mandate. Removes the opt-out provision that allowed high-cost hospitals to remain outside the global budget framework."
           />
           <PillarTag
@@ -267,7 +267,7 @@ export default function VermontAct68Page() {
           />
           <PillarTag
             pillar="Operations"
-            color="teal"
+            color="amber"
             note="Mandates AHS restructuring. Requires 14-hospital transformation plans. $2M grants fund the organizational capacity that transformation execution demands."
           />
         </div>

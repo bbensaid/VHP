@@ -12,6 +12,7 @@ import Link from 'next/link'
 import { ArrowLeftIcon } from '@heroicons/react/24/outline'
 import dynamic from 'next/dynamic'
 import ErrorBoundary from '@/components/ErrorBoundary'
+import { toolBadgeClass } from '@/lib/taxonomy/badges'
 
 /* ── Tool loading skeleton ──────────────────────────────────────────────── */
 function ToolSkeleton() {
@@ -68,7 +69,6 @@ interface Tool {
   icon: string
   label: string
   badge: string
-  badgeCls: string
   desc: string
 }
 
@@ -83,55 +83,55 @@ const SECTIONS: Section[] = [
   {
     id: 'interoperability', icon: '🧬', label: 'Interoperability & Risk',
     tools: [
-      { id: 'fhir',   icon: '🔌', label: 'FHIR Interoperability Lab',  badge: 'Interoperability', badgeCls: 'bg-indigo-100 text-indigo-700 border-indigo-200', desc: 'Build and validate FHIR R4 resources, map clinical terminologies, test CDS Hooks, simulate prior authorization workflows, and check ONC compliance.' },
-      { id: 'risk',   icon: '📊', label: 'Risk Stratification Engine',  badge: 'Clinical Risk',    badgeCls: 'bg-indigo-100 text-indigo-700 border-indigo-200', desc: 'Apply HCC v28 RAF scoring, segment populations by risk tier, build custom risk models, and analyze comorbidity interactions using Elixhauser and Charlson indices.' },
-      { id: 'emr',    icon: '🏥', label: 'EMR/EHR Lab',                 badge: 'EHR Systems',      badgeCls: 'bg-indigo-100 text-indigo-700 border-indigo-200', desc: 'Model EHR adoption cost, timeline, and 5-year ROI; compare Epic, Oracle Health, MEDITECH, and athenahealth; audit a record for USCDI data quality; and step through a simulated clinical encounter to see documentation burden.' },
-      { id: 'statewide-ehr', icon: '🗺️', label: 'Statewide EHR Modeler', badge: 'Act 167 · RHT',  badgeCls: 'bg-indigo-100 text-indigo-700 border-indigo-200', desc: "Model Vermont's Act 167 feasibility question — a single statewide EHR vs. FHIR interoperability across existing platforms — on 10-year cost, data timeliness, migration disruption, and vendor lock-in." },
+      { id: 'fhir',   icon: '🔌', label: 'FHIR Interoperability Lab',  badge: 'Interoperability', desc: 'Build and validate FHIR R4 resources, map clinical terminologies, test CDS Hooks, simulate prior authorization workflows, and check ONC compliance.' },
+      { id: 'risk',   icon: '📊', label: 'Risk Stratification Engine',  badge: 'Clinical Risk',    desc: 'Apply HCC v28 RAF scoring, segment populations by risk tier, build custom risk models, and analyze comorbidity interactions using Elixhauser and Charlson indices.' },
+      { id: 'emr',    icon: '🏥', label: 'EMR/EHR Lab',                 badge: 'EHR Systems',      desc: 'Model EHR adoption cost, timeline, and 5-year ROI; compare Epic, Oracle Health, MEDITECH, and athenahealth; audit a record for USCDI data quality; and step through a simulated clinical encounter to see documentation burden.' },
+      { id: 'statewide-ehr', icon: '🗺️', label: 'Statewide EHR Modeler', badge: 'Act 167 · RHT',  desc: "Model Vermont's Act 167 feasibility question — a single statewide EHR vs. FHIR interoperability across existing platforms — on 10-year cost, data timeliness, migration disruption, and vendor lock-in." },
     ],
   },
   {
     id: 'payment-models', icon: '💰', label: 'Payment Models & VBC',
     tools: [
-      { id: 'apm-design', icon: '🏗️', label: 'APM Design Lab',                        badge: 'Payment Innovation', badgeCls: 'bg-emerald-100 text-emerald-700 border-emerald-200', desc: 'Design novel APMs from scratch: episode bundles, global budgets, benchmark waterfall charts, and natural-language model recommendations.' },
-      { id: 'apm-calc',   icon: '📈', label: 'APM Shared Savings Calculator',          badge: 'Value-Based Care',   badgeCls: 'bg-emerald-100 text-emerald-700 border-emerald-200', desc: 'Model projected shared savings under MSSP, ACO REACH, and custom global budget scenarios. Includes risk corridor modeling and quality withhold impact.' },
-      { id: 'cea',        icon: '⚗️', label: 'Cost-Effectiveness Analysis Calculator', badge: 'Health Economics',   badgeCls: 'bg-emerald-100 text-emerald-700 border-emerald-200', desc: 'Calculate cost per QALY, NNT, and break-even timeline for any clinical intervention. Compare against ICER, NICE, and CMS willingness-to-pay thresholds.' },
+      { id: 'apm-design', icon: '🏗️', label: 'APM Design Lab',                        badge: 'Payment Innovation', desc: 'Design novel APMs from scratch: episode bundles, global budgets, benchmark waterfall charts, and natural-language model recommendations.' },
+      { id: 'apm-calc',   icon: '📈', label: 'APM Shared Savings Calculator',          badge: 'Value-Based Care',   desc: 'Model projected shared savings under MSSP, ACO REACH, and custom global budget scenarios. Includes risk corridor modeling and quality withhold impact.' },
+      { id: 'cea',        icon: '⚗️', label: 'Cost-Effectiveness Analysis Calculator', badge: 'Health Economics',   desc: 'Calculate cost per QALY, NNT, and break-even timeline for any clinical intervention. Compare against ICER, NICE, and CMS willingness-to-pay thresholds.' },
     ],
   },
   {
     id: 'population-equity', icon: '👥', label: 'Population & Equity',
     tools: [
-      { id: 'population', icon: '🌍', label: 'Population Health Modeler', badge: 'Population Health', badgeCls: 'bg-violet-100 text-violet-700 border-violet-200', desc: 'Run Markov chain disease progression models for 5 conditions, simulate SIR epidemic dynamics, model preventable hospitalizations, and calculate intervention ROI.' },
-      { id: 'equity',     icon: '⚖️', label: 'Health Equity Studio',       badge: 'Health Equity',    badgeCls: 'bg-violet-100 text-violet-700 border-violet-200', desc: 'Analyze racial/ethnic disparities across 10 outcomes, map geographic access gaps, score SDOH burden, and compute equity-weighted ICER using the HEROI metric.' },
+      { id: 'population', icon: '🌍', label: 'Population Health Modeler', badge: 'Population Health', desc: 'Run Markov chain disease progression models for 5 conditions, simulate SIR epidemic dynamics, model preventable hospitalizations, and calculate intervention ROI.' },
+      { id: 'equity',     icon: '⚖️', label: 'Health Equity Studio',       badge: 'Health Equity',    desc: 'Analyze racial/ethnic disparities across 10 outcomes, map geographic access gaps, score SDOH burden, and compute equity-weighted ICER using the HEROI metric.' },
     ],
   },
   {
     id: 'policy-quality', icon: '📋', label: 'Policy & Quality Sciences',
     tools: [
-      { id: 'policy',    icon: '🏛️', label: 'Policy Simulator',             badge: 'Health Policy',              badgeCls: 'bg-sky-100 text-sky-700 border-sky-200', desc: 'Model 1115 waiver types across 6 state scenarios, design Vermont-style global budgets, simulate Medicaid expansion impact, and analyze price transparency policies.' },
-      { id: 'quality',   icon: '🎯', label: 'Clinical Quality Optimizer',   badge: 'Quality Improvement',        badgeCls: 'bg-sky-100 text-sky-700 border-sky-200', desc: 'Simulate 15 HEDIS measures with NCQA benchmarks, predict CMS Star Ratings across 32 sub-measures, optimize MIPS composite scores, and calculate P4P ROI.' },
-      { id: 'scorecard', icon: '🏥', label: 'Hospital Financial Stress Test', badge: 'Hospital Finance',            badgeCls: 'bg-sky-100 text-sky-700 border-sky-200', desc: 'Stress-test hospital financials against payer mix shifts, Medicaid rate cuts, and volume changes. Benchmarks against CAH, Rural PPS, and Urban Tertiary peers.' },
-      { id: 'hta',       icon: '🔎', label: 'HTA Studio',                   badge: 'Health Technology Assessment',badgeCls: 'bg-sky-100 text-sky-700 border-sky-200', desc: 'Build budget impact models, run MCDA with 8 criteria, and execute real Monte Carlo PSA with 1,000 stochastic iterations using Beta, Log-normal, and Gamma distributions.' },
-      { id: 'actuarial', icon: '📉', label: 'Actuarial Lab',                badge: 'Actuarial Science',           badgeCls: 'bg-sky-100 text-sky-700 border-sky-200', desc: 'Calculate ACA actuarial value, develop premium rates across 3 methodologies, model adverse selection death spirals, and analyze IRA 2022 drug pricing impacts.' },
+      { id: 'policy',    icon: '🏛️', label: 'Policy Simulator',             badge: 'Health Policy',              desc: 'Model 1115 waiver types across 6 state scenarios, design Vermont-style global budgets, simulate Medicaid expansion impact, and analyze price transparency policies.' },
+      { id: 'quality',   icon: '🎯', label: 'Clinical Quality Optimizer',   badge: 'Quality Improvement',        desc: 'Simulate 15 HEDIS measures with NCQA benchmarks, predict CMS Star Ratings across 32 sub-measures, optimize MIPS composite scores, and calculate P4P ROI.' },
+      { id: 'scorecard', icon: '🏥', label: 'Hospital Financial Stress Test', badge: 'Hospital Finance',            desc: 'Stress-test hospital financials against payer mix shifts, Medicaid rate cuts, and volume changes. Benchmarks against CAH, Rural PPS, and Urban Tertiary peers.' },
+      { id: 'hta',       icon: '🔎', label: 'HTA Studio',                   badge: 'Health Technology Assessment',desc: 'Build budget impact models, run MCDA with 8 criteria, and execute real Monte Carlo PSA with 1,000 stochastic iterations using Beta, Log-normal, and Gamma distributions.' },
+      { id: 'actuarial', icon: '📉', label: 'Actuarial Lab',                badge: 'Actuarial Science',           desc: 'Calculate ACA actuarial value, develop premium rates across 3 methodologies, model adverse selection death spirals, and analyze IRA 2022 drug pricing impacts.' },
     ],
   },
   {
     id: 'technology-ai', icon: '🤖', label: 'Technology & AI',
     tools: [
-      { id: 'ai',      icon: '🤖', label: 'AI Clinical Governance Lab',   badge: 'Artificial Intelligence', badgeCls: 'bg-violet-100 text-violet-700 border-violet-200', desc: 'Compare predictive model performance, detect algorithmic bias with Demographic Parity and Equal Opportunity metrics, build AI governance frameworks, and calculate AI ROI.' },
-      { id: 'digital', icon: '📱', label: 'Digital Health Lab',  badge: 'Digital Health',          badgeCls: 'bg-violet-100 text-violet-700 border-violet-200', desc: 'Calculate RPM ROI using CMS CPT codes (99453–99458), model telehealth utilization under CMS policy scenarios, compare patient engagement platforms, and optimize EHR interoperability.' },
+      { id: 'ai',      icon: '🤖', label: 'AI Clinical Governance Lab',   badge: 'Artificial Intelligence', desc: 'Compare predictive model performance, detect algorithmic bias with Demographic Parity and Equal Opportunity metrics, build AI governance frameworks, and calculate AI ROI.' },
+      { id: 'digital', icon: '📱', label: 'Digital Health Lab',  badge: 'Digital Health',          desc: 'Calculate RPM ROI using CMS CPT codes (99453–99458), model telehealth utilization under CMS policy scenarios, compare patient engagement platforms, and optimize EHR interoperability.' },
     ],
   },
   {
     id: 'knowledge-workspace', icon: '📚', label: 'Knowledge & Workspace',
     tools: [
-      { id: 'scorecard',   icon: '🎯',  label: 'Transformation Scorecard', badge: 'Executive',      badgeCls: 'bg-teal-100 text-teal-700 border-teal-200', desc: 'Executive five-pillar scorecard — self-score Policy, Technology, Economics, Clinical, and Operations, checked against the Equity Imperative, with Vermont Act 68 statutory milestones integrated.' },
-      { id: 'readiness',   icon: '📊',  label: 'VBC Readiness Assessment', badge: 'Transformation', badgeCls: 'bg-emerald-100 text-emerald-700 border-emerald-200', desc: '30-dimension, 6-domain assessment producing an organizational readiness score and prioritized gap analysis for value-based care transformation. Vermont AHEAD, CAH, and advanced system presets included.' },
-      { id: 'evidence',    icon: '📖',  label: 'Evidence Library',         badge: 'Research',     badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Search 25 landmark CEA/CUA studies, track 20 CMMI innovation models with full lesson-learned summaries, and browse 15 HTR policy briefs.' },
-      { id: 'workforce',   icon: '👨‍⚕️', label: 'Workforce Modeler',         badge: 'Workforce',    badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Project physician supply and demand across 12 specialties over 10 years, simulate nurse staffing ratio impacts, calculate turnover costs, and model rural incentive programs.' },
-      { id: 'leaderboard', icon: '🏆',  label: 'Innovation Leaderboard',   badge: 'Benchmarking', badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Rank all 50 states on a composite health transformation index, score 30 major health systems on VBC maturity, and compare 20 payers on innovation leadership.' },
-      { id: 'workspace',   icon: '🗂️',  label: 'Research Workspace',       badge: 'Workspace',    badgeCls: 'bg-slate-200 text-slate-700 border-slate-300', desc: 'Save and compare analysis scenarios, build structured reports from templates, manage citations in AMA/APA format, and export findings as Markdown or text.' },
-      { id: 'cin',         icon: '🔗',  label: 'CIN & Shared Services',    badge: 'Vermont RHT',  badgeCls: 'bg-teal-100 text-teal-700 border-teal-200', desc: "Model Vermont's RHT-funded Clinically Integrated Network: shared billing, coding, credentialing, HR, IT, and group purchasing across the 14 hospitals against the ~$1,303/discharge administrative cost premium." },
-      { id: 'ems',         icon: '🚑',  label: 'EMS Transformation',       badge: 'Vermont RHT',  badgeCls: 'bg-teal-100 text-teal-700 border-teal-200', desc: "Model Vermont's RHT EMS investment: regionalizing 31 separate agencies and community-paramedicine treat-and-refer ED diversion, with the global-budget margin impact of prevented ED visits and admissions." },
+      { id: 'scorecard',   icon: '🎯',  label: 'Transformation Scorecard', badge: 'Executive',      desc: 'Executive five-pillar scorecard — self-score Policy, Technology, Economics, Clinical, and Operations, checked against the Equity Imperative, with Vermont Act 68 statutory milestones integrated.' },
+      { id: 'readiness',   icon: '📊',  label: 'VBC Readiness Assessment', badge: 'Transformation', desc: '30-dimension, 6-domain assessment producing an organizational readiness score and prioritized gap analysis for value-based care transformation. Vermont AHEAD, CAH, and advanced system presets included.' },
+      { id: 'evidence',    icon: '📖',  label: 'Evidence Library',         badge: 'Research',     desc: 'Search 25 landmark CEA/CUA studies, track 20 CMMI innovation models with full lesson-learned summaries, and browse 15 HTR policy briefs.' },
+      { id: 'workforce',   icon: '👨‍⚕️', label: 'Workforce Modeler',         badge: 'Workforce',    desc: 'Project physician supply and demand across 12 specialties over 10 years, simulate nurse staffing ratio impacts, calculate turnover costs, and model rural incentive programs.' },
+      { id: 'leaderboard', icon: '🏆',  label: 'Innovation Leaderboard',   badge: 'Benchmarking', desc: 'Rank all 50 states on a composite health transformation index, score 30 major health systems on VBC maturity, and compare 20 payers on innovation leadership.' },
+      { id: 'workspace',   icon: '🗂️',  label: 'Research Workspace',       badge: 'Workspace',    desc: 'Save and compare analysis scenarios, build structured reports from templates, manage citations in AMA/APA format, and export findings as Markdown or text.' },
+      { id: 'cin',         icon: '🔗',  label: 'CIN & Shared Services',    badge: 'Vermont RHT',  desc: "Model Vermont's RHT-funded Clinically Integrated Network: shared billing, coding, credentialing, HR, IT, and group purchasing across the 14 hospitals against the ~$1,303/discharge administrative cost premium." },
+      { id: 'ems',         icon: '🚑',  label: 'EMS Transformation',       badge: 'Vermont RHT',  desc: "Model Vermont's RHT EMS investment: regionalizing 31 separate agencies and community-paramedicine treat-and-refer ED diversion, with the global-budget margin impact of prevented ED visits and admissions." },
     ],
   },
 ]
@@ -334,7 +334,7 @@ function ResearchLabHubInner() {
             <div className="flex flex-wrap items-center gap-2 mb-1">
               <span className="text-2xl">{activeTool.icon}</span>
               <h2 className="ty-h3 font-black text-slate-900 dark:text-slate-100">{activeTool.label}</h2>
-              <span className={`text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full border ${activeTool.badgeCls}`}>
+              <span className={`text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full border ${toolBadgeClass(activeSectionId, activeTool.id)}`}>
                 {activeTool.badge}
               </span>
             </div>

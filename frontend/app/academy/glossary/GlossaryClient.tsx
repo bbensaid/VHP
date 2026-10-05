@@ -18,12 +18,12 @@ const alphabet = Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i
 
 function getBadgeStyle(pillar: string) {
   switch (pillar) {
-    case "Policy": return "bg-sky-50 text-card-policy border-card-policy/20 border";
+    case "Policy": return "bg-blue-50 text-card-policy border-card-policy/20 border";
     case "Economics": return "bg-emerald-50 text-card-economics border-card-economics/20 border";
     case "Technology": return "bg-indigo-50 text-card-tech border-card-tech/20 border";
     case "Clinical": return "bg-red-50 text-brand-clinical border-brand-clinical/20 border";
     case "Equity": return "bg-violet-50 text-brand-equity border-brand-equity/20 border";
-    case "Operations": return "bg-teal-50 text-teal-700 border-teal-200 border";
+    case "Operations": return "bg-amber-50 text-amber-700 border-amber-200 border";
     default: return "bg-slate-100 text-slate-600 border-slate-200 border";
   }
 }
@@ -31,12 +31,12 @@ function getBadgeStyle(pillar: string) {
 function getPillarButtonStyle(pillar: string, isSelected: boolean) {
   if (!isSelected) return "bg-white text-slate-500 border-slate-200 hover:border-slate-300";
   switch (pillar) {
-    case "Policy": return "bg-sky-50 text-card-policy border-card-policy font-bold ring-1 ring-card-policy/20";
+    case "Policy": return "bg-blue-50 text-card-policy border-card-policy font-bold ring-1 ring-card-policy/20";
     case "Economics": return "bg-emerald-50 text-card-economics border-card-economics font-bold ring-1 ring-card-economics/20";
     case "Technology": return "bg-indigo-50 text-card-tech border-card-tech font-bold ring-1 ring-card-tech/20";
     case "Clinical": return "bg-red-50 text-brand-clinical border-brand-clinical font-bold ring-1 ring-brand-clinical/20";
     case "Equity": return "bg-violet-50 text-brand-equity border-brand-equity font-bold ring-1 ring-brand-equity/20";
-    case "Operations": return "bg-teal-50 text-teal-700 border-teal-500 font-bold ring-1 ring-teal-200";
+    case "Operations": return "bg-amber-50 text-amber-700 border-amber-500 font-bold ring-1 ring-amber-200";
     default: return "bg-slate-900 text-white border-slate-900";
   }
 }

@@ -17,6 +17,13 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
   { path: "/about/methodology",   priority: 0.7, changeFrequency: "monthly" },
   { path: "/faq",                 priority: 0.6, changeFrequency: "monthly" },
 
+  // The 2026 pillar briefings (homepage hero), in execution order
+  { path: "/briefings",                               priority: 0.9, changeFrequency: "monthly" },
+  { path: "/briefings/medicaid-rulebook-2027",        priority: 0.8, changeFrequency: "monthly" },
+  { path: "/briefings/ai-and-the-data-layer",         priority: 0.8, changeFrequency: "monthly" },
+  { path: "/briefings/vermont-five-year-runway",      priority: 0.8, changeFrequency: "monthly" },
+  { path: "/briefings/integrated-behavioral-health",  priority: 0.8, changeFrequency: "monthly" },
+  { path: "/briefings/fourteen-hospital-plans",       priority: 0.8, changeFrequency: "monthly" },
   // Pillars
   { path: "/policy",              priority: 0.9, changeFrequency: "weekly" },
   { path: "/policy/feasibility",  priority: 0.7, changeFrequency: "weekly" },
@@ -56,7 +63,6 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
   // Advisory & tools
   { path: "/advisory",            priority: 0.8, changeFrequency: "monthly", advisoryOnly: true },
   { path: "/connect",             priority: 0.8, changeFrequency: "monthly", advisoryOnly: true },
-  { path: "/advisory/reports",    priority: 0.7, changeFrequency: "weekly",  advisoryOnly: true },
   { path: "/advisory/research",   priority: 0.7, changeFrequency: "weekly",  advisoryOnly: true },
   { path: "/advisory/consulting", priority: 0.7, changeFrequency: "monthly", advisoryOnly: true },
   { path: "/advisory/contact",    priority: 0.7, changeFrequency: "monthly", advisoryOnly: true },

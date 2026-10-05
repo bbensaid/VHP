@@ -1,0 +1,239 @@
+<title>Homepage Hero Revamp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+<style>
+/* Layout: one reading column for the record, with full-width slide reproductions. The slides and drawings are generated from the shipping code (spec-data.js), so this page always shows what is built. */
+:root {
+  --bg: #f6f7f9; --surface: #ffffff; --ink: #1e293b; --ink-2: #475569; --ink-3: #64748b; --rule: #e2e8f0; --chip: #eef2f7; --ok: #047857; --warn: #b45309;
+  --display: "EB Garamond", Garamond, "Times New Roman", serif;
+  --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0f141b; --surface: #161c25; --ink: #e5e9f0; --ink-2: #b4bcc8; --ink-3: #8b95a3; --rule: #273041; --chip: #1f2733; --ok: #34d399; --warn: #fbbf24; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #0f141b; --surface: #161c25; --ink: #e5e9f0; --ink-2: #b4bcc8; --ink-3: #8b95a3; --rule: #273041; --chip: #1f2733; --ok: #34d399; --warn: #fbbf24; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.6; padding-inline: 20px; padding-block: 0 64px; }
+.wrap { max-width: 1120px; margin: 0 auto; }
+.col { max-width: 740px; }
+a { color: inherit; text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid #2563eb; outline-offset: 2px; border-radius: 3px; }
+h1, h2, h3 { text-wrap: balance; }
+header.top { padding-block: 48px 28px; border-bottom: 1px solid var(--rule); margin-bottom: 36px; }
+.eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+h1.title { font-family: var(--display); font-weight: 600; font-size: clamp(34px, 5vw, 52px); line-height: 1.05; margin: 8px 0 12px; }
+.lede { font-size: 17px; color: var(--ink-2); max-width: 700px; margin: 0; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.pill { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--chip); color: var(--ink-2); }
+.pill.ok { color: var(--ok); }
+section { margin-block: 56px; }
+h2.sec { font-family: var(--display); font-weight: 600; font-size: 30px; line-height: 1.15; margin: 0 0 6px; }
+.secnum { font-size: 12px; font-weight: 800; color: var(--ink-3); letter-spacing: .1em; display: block; margin-bottom: 4px; }
+p { margin: 0 0 14px; }
+.col p, .col li { color: var(--ink-2); }
+.col strong { color: var(--ink); }
+ul.tight { padding-left: 20px; margin: 0 0 14px; }
+ul.tight li { margin-bottom: 6px; }
+code { font-size: 12.5px; background: var(--chip); padding: 1px 5px; border-radius: 4px; }
+.sequence { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 14px 0 8px; }
+.sequence .step { font-size: 13px; font-weight: 700; padding: 6px 12px; border-radius: 8px; color: #fff; }
+.sequence .arrow { color: var(--ink-3); font-weight: 700; }
+.rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 20px; }
+.rule { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; min-width: 0; }
+.rule h4 { margin: 0 0 6px; font-size: 13px; font-weight: 800; }
+.rule p { font-size: 13.5px; margin: 0; color: var(--ink-2); }
+
+/* Slide reproduction: fixed light palette on purpose (it shows the light site). */
+.slide-block { margin-block: 36px 56px; }
+.slide-label { display: flex; align-items: baseline; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+.slide-label .n { font-family: var(--display); font-size: 26px; font-weight: 600; }
+.slide-label .q { color: var(--ink-3); font-size: 14px; }
+.mock { background: #f8fafc; color: #334155; border: 1px solid #e2e8f0; border-radius: 16px; box-shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 28px rgba(15,23,42,.06); overflow: hidden; }
+.mock-body { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 28px; padding: 36px 40px 24px; align-items: center; }
+.m-eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
+.m-pill { font-size: 10.5px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; color: #fff; padding: 3px 9px; border-radius: 5px; }
+.m-question { font-size: 13px; font-weight: 600; }
+.m-asof { font-size: 11px; font-weight: 600; color: #94a3b8; }
+.m-head { font-size: clamp(22px, 3vw, 32px); line-height: 1.12; font-weight: 900; color: #1e293b; margin: 0 0 10px; letter-spacing: -.015em; }
+.m-dek { font-size: 15px; line-height: 1.55; color: #475569; margin: 0 0 18px; max-width: 62ch; }
+.m-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; margin-bottom: 16px; }
+.m-fact { padding: 11px 14px 11px 0; min-width: 0; }
+.m-fact + .m-fact { padding-left: 14px; border-left: 1px solid #e2e8f0; }
+.m-fact .v { font-size: 21px; font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.m-fact .l { font-size: 12px; line-height: 1.35; color: #64748b; margin-top: 4px; }
+sup.ref { font-size: 9.5px; font-weight: 700; line-height: 0; margin-left: 1px; color: #94a3b8; }
+.m-equity { margin: 12px 0 0; font-size: 12.5px; font-weight: 300; font-style: italic; color: #94a3b8; }
+.m-equity em { font-weight: 500; color: #a78bfa; }
+.m-sources { margin-top: 8px; font-size: 10.5px; color: #94a3b8; line-height: 1.5; }
+.m-visual svg { width: 100%; max-width: 420px; height: auto; display: block; margin: 0 auto; }
+.slide-spec { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 16px; }
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; min-width: 0; }
+.panel h4 { margin: 0 0 8px; font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.panel ul { margin: 0; padding-left: 18px; }
+.panel li { font-size: 13.5px; color: var(--ink-2); margin-bottom: 4px; word-break: break-word; }
+
+.cover-wrap { display: grid; grid-template-columns: minmax(0, 280px) minmax(0, 1fr); gap: 32px; align-items: start; margin-top: 18px; }
+.cover-wrap img { width: 100%; height: auto; border-radius: 3px; box-shadow: 0 2px 4px rgba(15,23,42,.08), 0 18px 40px -12px rgba(15,23,42,.35); display: block; }
+
+.tbl-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); margin-top: 16px; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 800; background: var(--chip); }
+tr:last-child td { border-bottom: 0; }
+.tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 999px; background: var(--chip); white-space: nowrap; }
+.tag.ok { color: var(--ok); } .tag.open { color: var(--warn); }
+ol.refs { list-style: none; padding: 0; margin: 16px 0 0; }
+ol.refs li { padding: 9px 0; border-bottom: 1px solid var(--rule); font-size: 13.5px; color: var(--ink-2); }
+ol.refs a { word-break: break-word; }
+ol.refs .used { color: var(--ink-3); font-size: 12px; }
+@media (max-width: 760px) {
+  .mock-body { grid-template-columns: minmax(0,1fr); padding: 24px 18px 16px; }
+  .m-visual { order: -1; }
+  .m-facts { grid-template-columns: minmax(0,1fr); }
+  .m-fact + .m-fact { border-left: 0; padding-left: 0; border-top: 1px solid #e2e8f0; }
+  .cover-wrap { grid-template-columns: minmax(0,1fr); }
+  .cover-wrap img { max-width: 280px; }
+}
+</style>
+<script src="spec-data.js"></script>
+
+<div class="wrap">
+  <header class="top">
+    <div class="eyebrow">Health Transformation Review · Homepage</div>
+    <h1 class="title">Homepage Hero Revamp</h1>
+    <p class="lede">The record of what was built: five slides, one per pillar, in the order Chapter 1 says transformation has to happen, each opening a sourced 2026 briefing. The drawings and slide text on this page are generated from the code that ships.</p>
+    <div class="meta">
+      <span class="pill ok">Built · 4 October 2026</span>
+      <span class="pill">All four domains (one deployment)</span>
+      <span class="pill" id="gen"></span>
+    </div>
+  </header>
+
+  <section class="col" id="concept">
+    <span class="secnum">01</span>
+    <h2 class="sec">What changed</h2>
+    <div class="sequence" aria-label="Execution sequence">
+      <span class="step" style="background:#2563eb">1 Policy</span><span class="arrow">→</span>
+      <span class="step" style="background:#4f46e5">2 Technology</span><span class="arrow">→</span>
+      <span class="step" style="background:#047857">3 Economics</span><span class="arrow">→</span>
+      <span class="step" style="background:#dc2626">4 Clinical</span><span class="arrow">→</span>
+      <span class="step" style="background:#b45309">5 Operations</span>
+    </div>
+    <ul class="tight">
+      <li><strong>Five pillar slides replace five unrelated promotions.</strong> The old lead story, fake chart, invented course and broken RHTP logo are gone.</li>
+      <li><strong>The Five-Pillar Map is the visual on every slide and on the book cover.</strong> One shared component draws it for the hero, <code>/about/framework</code>, <code>/briefings</code> and the cover art.</li>
+      <li><strong>Every figure carries a numbered source</strong> on the slide, in the briefing, and in the reference list below.</li>
+      <li><strong>One pillar palette across the platform:</strong> Policy blue, Technology indigo, Economics emerald, Clinical red, Operations amber, Equity violet, from <code>lib/taxonomy/pillars.ts</code>.</li>
+    </ul>
+  </section>
+
+  <section id="design">
+    <div class="col"><span class="secnum">02</span><h2 class="sec">Design, as built</h2></div>
+    <div class="rules">
+      <div class="rule"><h4>The map</h4><p>Policy at the top centre, the sequence running clockwise, as on the original cover. Sequence numbers sit inside the cards. No centre hub.</p></div>
+      <div class="rule"><h4>Arrows</h4><p>Each arrow takes the colour of the pillar it comes from. Its type is written on it, curved along the line, using the verbs of Figure 1.3. Feedback loops are dashed.</p></div>
+      <div class="rule"><h4>Equity, quietly</h4><p>“EQUITY IMPERATIVE” and “Is it just?” are set into the ring's two gaps, curved, in the ring's colour. On each slide, one light-italic line at the foot.</p></div>
+      <div class="rule"><h4>Selected pillar</h4><p>On a slide, the pillar and every arrow touching it stay lit. Uninvolved pillars stay readable at 60%, their arrows at 30%.</p></div>
+      <div class="rule"><h4>Sourced and dated</h4><p>Superscript numbers on every figure; an “As of” date on every slide. <code>npm run check:briefings</code> fails on an uncited figure, a broken citation, a mismatched course title, or content older than 120 days.</p></div>
+      <div class="rule"><h4>Accessible carousel</h4><p>Visible pause control, pause on hover and focus, arrow keys, no auto-advance under reduced motion. Navigation is the labelled five-step sequence.</p></div>
+    </div>
+  </section>
+
+  <section id="slides">
+    <div class="col"><span class="secnum">03</span><h2 class="sec">The five slides</h2>
+      <p>Reproduced from <code>lib/briefings</code> with drawings rendered by the shipping component. Under each, the briefing's sections and the platform links it uses.</p></div>
+    <div id="slide-mount"></div>
+  </section>
+
+  <section id="cover">
+    <div class="col"><span class="secnum">04</span><h2 class="sec">The book cover</h2></div>
+    <div class="cover-wrap">
+      <img src="cover-final.jpg" alt="Cover of Transforming Healthcare by Bechir BenSaid, with the Five-Pillar Map">
+      <div class="col">
+        <p>The cover keeps the serif title, rule, subtitle and author line, and replaces the old thin-circle diagram with the Five-Pillar Map, all arrows lit. In the manuscript this was a single image swap (<code>word/media/image1.jpg</code>) with no change to the document's XML, rendered by <code>frontend/scripts/render-cover.tsx</code> from the same component the platform uses.</p>
+        <p>The same artwork is the cover on <code>/book</code> and the thumbnail beside the map on every hero slide.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="briefing">
+    <div class="col"><span class="secnum">05</span><h2 class="sec">The briefing pages</h2>
+      <p><code>/briefings</code> and <code>/briefings/[slug]</code>, open on all four domains. <code>/advisory/reports</code> redirects here.</p></div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Block</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Header, summary and three sourced figures (shared with the hero)</td><td><span class="tag ok">built</span></td></tr>
+        <tr><td>Analysis with inline numbered citations; Vermont section; “Is it just?” section</td><td><span class="tag ok">built</span> about 600 words each</td></tr>
+        <tr><td>Research Lab tools, Academy courses, book chapters</td><td><span class="tag ok">built</span> checked against <code>tools.ts</code>, live Supabase titles, <code>/book</code> anchors</td></tr>
+        <tr><td>Ask the Analyst prompts (pre-fill <code>/chat?q=</code>)</td><td><span class="tag ok">built</span></td></tr>
+        <tr><td>Numbered sources with publisher, date, DOI and date checked</td><td><span class="tag ok">built</span></td></tr>
+        <tr><td>Narrated audio and video explainer</td><td><span class="tag open">not built</span> parked by the author</td></tr>
+        <tr><td>Briefings indexed for the AI Analyst</td><td><span class="tag open">not built</span> parked by the author</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="fixes">
+    <div class="col"><span class="secnum">06</span><h2 class="sec">Removed and corrected</h2></div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Item</th><th>What happened</th></tr></thead>
+      <tbody>
+        <tr><td>Four empty Sanity “reports”, incl. “The State of Health AI 2025”</td><td><span class="tag ok">deleted</span> backed up in <code>sanity-backups/</code>; <code>report</code> schema removed</td></tr>
+        <tr><td>Old hero: fake chart, “Join 500+”, non-existent course, broken RHTP logo</td><td><span class="tag ok">removed</span></td></tr>
+        <tr><td><code>/vermont-rht-program</code></td><td><span class="tag ok">fixed</span> $195M is the yearly award (FY2026), not a five-year total; KFF's “front-loaded” and “64% of cuts after FY2030” wording kept; scribe claim set to the trial result</td></tr>
+        <tr><td><code>/book</code> page</td><td><span class="tag ok">fixed</span> title “Transforming Healthcare”; nine dependencies (from code); ~300 pages; real cover</td></tr>
+        <tr><td>Book, Chapter 5 table</td><td><span class="tag ok">fixed</span> AI scribes save ~15–25 min/day/provider (NEJM AI RCT, 2025; JAMA, 2026), not an unsourced 30–45</td></tr>
+        <tr><td>Book cover and 57 Cardo fallback runs</td><td><span class="tag ok">fixed</span> via <code>patch_docx.py</code>, each with a backup and a page render</td></tr>
+        <tr><td>“Six pillars” in the Academy</td><td><span class="tag ok">fixed</span> 2 course descriptions, 1 track, 2 lessons (incl. a six-card grid rebuilt as five pillars plus the Equity Imperative), 1 quiz question, 3 quiz answers; CalAIM heading and a changelog line in code</td></tr>
+        <tr><td>Pillar colours</td><td><span class="tag ok">fixed</span> one palette across ~65 files, course player, state simulators, HTR Simulator, Research Lab badges (now derived from each tool's pillar), Policy Simulator accents</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="references">
+    <div class="col"><span class="secnum">07</span><h2 class="sec">References</h2>
+      <p>Every source cited by the hero and briefings, each opened and the figure confirmed in its own text on the date shown.</p></div>
+    <ol class="refs" id="ref-mount"></ol>
+  </section>
+</div>
+
+<script>
+const S = window.SPEC;
+const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+document.getElementById("gen").textContent = "Data generated " + S.generated;
+const fmt = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+const sup = (ns) => `<sup class="ref">${[...new Set(ns)].sort((a, b) => a - b).join(",")}</sup>`;
+const shortPub = (p) => p.replace(/\s*\(summary:.*\)$/, "");
+
+const mount = document.getElementById("slide-mount");
+S.briefings.forEach((b, i) => {
+  const num = Object.fromEntries(b.sources.map((id, k) => [id, k + 1]));
+  const cite = (t) => esc(t).replace(/((?:\{[a-z0-9-]+\})+)/g, (m) => sup([...m.matchAll(/\{([a-z0-9-]+)\}/g)].map((x) => num[x[1]])));
+  const heroSources = b.sources.filter((id) => !id.startsWith("book-"));
+  mount.insertAdjacentHTML("beforeend", `
+  <div class="slide-block">
+    <div class="slide-label"><span class="n">${i + 1}. ${b.pillar}</span><span class="q">${b.question}</span></div>
+    <div class="mock"><div class="mock-body">
+      <div style="min-width:0">
+        <div class="m-eyebrow"><span class="m-pill" style="background:${b.color}">${b.pillar}</span><span class="m-question" style="color:${b.color}">${b.question}</span><span class="m-asof">As of ${fmt(b.asOf)}</span></div>
+        <h3 class="m-head">${esc(b.headline)}</h3>
+        <p class="m-dek">${cite(b.dek)}</p>
+        <div class="m-facts">${b.facts.map((f) => `<div class="m-fact"><div class="v" style="color:${b.color}">${esc(f.value)}${sup(f.cite.map((c) => num[c]))}</div><div class="l">${esc(f.label)}</div></div>`).join("")}</div>
+        <p class="m-equity"><em>Is it just?</em> ${esc(b.equityLine)}</p>
+        <div class="m-sources">Sources: ${heroSources.map((id) => `[${num[id]}] ${esc(shortPub(S.sources[id].publisher))}`).join(" · ")}</div>
+      </div>
+      <div class="m-visual">${b.svg}</div>
+    </div></div>
+    <div class="slide-spec">
+      <div class="panel"><h4>Briefing sections</h4><ul>${b.sections.map((s) => `<li>${esc(s)}</li>`).join("")}</ul></div>
+      <div class="panel"><h4>Platform links</h4><ul>${[...b.chapters, ...b.courses, ...b.tools, ...b.platform].map((s) => `<li>${esc(s)}</li>`).join("")}</ul></div>
+    </div>
+  </div>`);
+});
+
+const used = {};
+S.briefings.forEach((b) => b.sources.forEach((id) => { (used[id] = used[id] || []).push(b.pillar); }));
+document.getElementById("ref-mount").innerHTML = Object.values(S.sources).map((s) => {
+  const link = s.url.startsWith("/") ? `<span>healthtransformationreview.org${esc(s.url)}</span>` : `<a href="${s.url}" target="_blank" rel="noopener">${esc(s.url.replace(/^https?:\/\/(www\.)?/, "").split("/")[0])}</a>`;
+  return `<li><span>${esc(s.publisher)}. <em>${esc(s.title)}</em>. ${esc(s.date)}. ${link}${s.doi ? ` · doi:${esc(s.doi)}` : ""} <span class="used">· checked ${s.checked}${used[s.id] ? " · cited in: " + used[s.id].join(", ") : ""}</span></span></li>`;
+}).join("");
+</script>

@@ -23,7 +23,7 @@ const REFORM_CASCADE: Act[] = [
     status: "completed",
     href: "/vermont-act-167",
     pillar: "Policy",
-    pillarColor: "bg-sky-100 text-sky-700 border-sky-200",
+    pillarColor: "bg-blue-100 text-blue-700 border-blue-200",
     summary:
       "The enabling framework. Directed AHS to negotiate the AHEAD Model State Agreement. Commissioned the Oliver Wyman $1M statewide hospital systems analysis that diagnosed Vermont's crisis. Established community engagement process without mandating specific outcomes.",
     keyProvisions: [
@@ -41,7 +41,7 @@ const REFORM_CASCADE: Act[] = [
     status: "completed",
     href: "/vermont-act-51",
     pillar: "Policy",
-    pillarColor: "bg-sky-100 text-sky-700 border-sky-200",
+    pillarColor: "bg-blue-100 text-blue-700 border-blue-200",
     summary:
       "From diagnosis to planning. Principally a Medicaid and DVHA bill, its Sec. 8 adds a new Sec. 2a to Act 167 authorizing AHS to conduct transformation planning with up to four hospitals — informed by Act 167's data analysis and community engagement, and coordinated with GMCB.",
     keyProvisions: [
@@ -109,7 +109,7 @@ const REFORM_CASCADE: Act[] = [
     status: "active",
     href: "/vermont-act-68",
     pillar: "Policy",
-    pillarColor: "bg-sky-100 text-sky-700 border-sky-200",
+    pillarColor: "bg-blue-100 text-blue-700 border-blue-200",
     summary:
       "Mandatory structural reform. The culmination of the cascade — converts voluntary payment reform into statutory mandate. Requires reference-based pricing (FY2027), hospital global budgets (FY2028–2030), and a Statewide Strategic Plan (December 2028). The most consequential Vermont healthcare legislation since Act 48 created the GMCB in 2011.",
     keyProvisions: [

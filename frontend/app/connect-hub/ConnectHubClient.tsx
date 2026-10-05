@@ -174,7 +174,7 @@ const OFFICE_HOURS = [
     description:
       "Open Q&A on CMS rule-making, 1115 waivers, state plan amendments, legislative strategy, and regulatory compliance. Facilitated by HTR's Policy practice lead.",
     audience: 'Medicaid directors, compliance officers, government affairs staff, hospital regulatory leads',
-    pillarCls: 'bg-sky-100 text-sky-700',
+    pillarCls: 'bg-blue-100 text-blue-700',
   },
   {
     id: 'economics',
@@ -312,7 +312,7 @@ const TOOLKITS = [
     accentBg: 'bg-emerald-50',
     accentBorder: 'border-emerald-200',
     accentText: 'text-emerald-700',
-    pillarCls: ['bg-emerald-100 text-emerald-700', 'bg-sky-100 text-sky-700'],
+    pillarCls: ['bg-emerald-100 text-emerald-700', 'bg-blue-100 text-blue-700'],
   },
   {
     id: 'fhir',
@@ -325,7 +325,7 @@ const TOOLKITS = [
     accentBg: 'bg-indigo-50',
     accentBorder: 'border-indigo-200',
     accentText: 'text-indigo-700',
-    pillarCls: ['bg-indigo-100 text-indigo-700', 'bg-sky-100 text-sky-700'],
+    pillarCls: ['bg-indigo-100 text-indigo-700', 'bg-blue-100 text-blue-700'],
   },
   {
     id: 'equity',
@@ -390,7 +390,7 @@ const TOOLKITS = [
     accentBg: 'bg-fuchsia-50',
     accentBorder: 'border-fuchsia-200',
     accentText: 'text-fuchsia-700',
-    pillarCls: ['bg-emerald-100 text-emerald-700', 'bg-sky-100 text-sky-700'],
+    pillarCls: ['bg-emerald-100 text-emerald-700', 'bg-blue-100 text-blue-700'],
   },
   {
     id: 'workforce',
@@ -580,7 +580,7 @@ const GRANTS = [
     pillars: ['Equity', 'Clinical', 'Policy'],
     status: 'Open',
     statusCls: 'bg-emerald-100 text-emerald-700',
-    pillarCls: ['bg-orange-100 text-orange-700', 'bg-red-100 text-red-700', 'bg-sky-100 text-sky-700'],
+    pillarCls: ['bg-orange-100 text-orange-700', 'bg-red-100 text-red-700', 'bg-blue-100 text-blue-700'],
   },
   {
     id: 'commonwealth',
@@ -700,10 +700,10 @@ const CIRCLES = [
     members: 342,
     recentPosts: 89,
     topicExample: 'Latest: "1115 waiver STCs — what language is CMS actually approving in 2025?"',
-    accentBg: 'bg-sky-50',
-    accentBorder: 'border-sky-200',
-    accentText: 'text-sky-700',
-    statCls: 'bg-sky-100 text-sky-700',
+    accentBg: 'bg-blue-50',
+    accentBorder: 'border-blue-200',
+    accentText: 'text-blue-700',
+    statCls: 'bg-blue-100 text-blue-700',
   },
   {
     id: 'economics',
@@ -834,7 +834,7 @@ const FEATURED_QA = [
   {
     id: 'aco-rural',
     pillar: 'Policy',
-    pillarCls: 'bg-sky-100 text-sky-700',
+    pillarCls: 'bg-blue-100 text-blue-700',
     q: 'What are the key regulatory considerations for launching an MSSP ACO in a predominantly rural state?',
     a: "Rural MSSP ACOs face three compounding challenges: (1) minimum beneficiary thresholds — the 5,000 Medicare beneficiary floor is difficult to meet in low-density markets, making regional convener models worth exploring; (2) attribution methodology — claims-based attribution consistently under-counts rural patient panels where multiple providers share care across long distances; (3) benchmark design — CMS's regional expenditure benchmarks disadvantage historically low-cost rural markets, a structural inequity that HTR's testimony to CMS has flagged repeatedly. For a rural state launch, we typically recommend a phased approach: start with a Track 1 shared-savings model using a convener structure, build the data infrastructure for 18–24 months, then apply for advanced track participation.",
     askedBy: 'Medicaid Director, New England State Agency',

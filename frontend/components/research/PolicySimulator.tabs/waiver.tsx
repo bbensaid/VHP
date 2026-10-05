@@ -152,7 +152,7 @@ export function WaiverTab() {
             onChange={setSelectedState}
           />
 
-          <div className="bg-sky-50 border border-sky-100 rounded-lg p-3 mb-4 text-xs text-sky-800 space-y-1">
+          <div className="bg-blue-50 border border-blue-100 rounded-lg p-3 mb-4 text-xs text-blue-800 space-y-1">
             <div className="flex justify-between">
               <span>Medicaid Enrollees</span>
               <span className="font-bold">
@@ -313,7 +313,7 @@ export function WaiverTab() {
             <StatCard
               label="Net Enrollment Change"
               value={`${results.netEnrollmentChange >= 0 ? "+" : ""}${results.netEnrollmentChange.toLocaleString()}`}
-              color={results.netEnrollmentChange >= 0 ? "sky" : "red"}
+              color={results.netEnrollmentChange >= 0 ? "blue" : "red"}
               icon={<Activity size={20} />}
             />
             <StatCard
@@ -341,7 +341,7 @@ export function WaiverTab() {
                 <StatCard
                   label="Federal Share (90% FMAP expansion)"
                   value={fmtM(results.federalShare)}
-                  color="sky"
+                  color="blue"
                   icon={<Building2 size={20} />}
                 />
                 <StatCard
@@ -377,7 +377,7 @@ export function WaiverTab() {
                       results.mcSavings,
                       results.ucReduction
                     )}
-                    color="sky"
+                    color="blue"
                   />
                   <ResultBar
                     label="Uncompensated Care Reduction"
@@ -446,7 +446,7 @@ export function WaiverTab() {
               label="Estimated Lives Saved"
               value={`~${Math.round(results.netEnrollmentChange > 0 ? results.netEnrollmentChange / 455 : 0)}`}
               sub="~1 per 455 newly insured"
-              color="sky"
+              color="blue"
               icon={<Heart size={20} />}
             />
           </div>

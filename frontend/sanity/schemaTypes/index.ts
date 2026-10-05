@@ -9,7 +9,6 @@ import { academyModuleType }   from './academyModule'
 import caseStudy   from './caseStudy'
 import course      from './course'
 import webinar     from './webinar'
-import report      from './report'
 import ticker      from './ticker'
 import dailyInsight from './dailyInsight'
 import analystNote from './analystNote'
@@ -33,7 +32,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     caseStudy,
     course,
     webinar,
-    report,
     ticker,
     dailyInsight,
     analystNote,

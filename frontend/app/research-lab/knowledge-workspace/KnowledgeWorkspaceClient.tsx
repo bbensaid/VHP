@@ -3,6 +3,7 @@
 import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
+import { toolBadgeClass } from '@/lib/taxonomy/badges'
 
 const EvidenceLibrary        = dynamic(() => import('@/components/research/EvidenceLibrary'),        { ssr: false })
 const WorkforceModeler       = dynamic(() => import('@/components/research/WorkforceModeler'),       { ssr: false })
@@ -19,7 +20,7 @@ function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string;
       <div className="flex flex-wrap items-center gap-2 mb-1">
         <span className="text-2xl">{icon}</span>
         <h2 className="ty-h3 font-black text-slate-900">{label}</h2>
-        <span className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-slate-200 text-slate-700 border border-slate-300">
+        <span className={`text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full border ${toolBadgeClass("knowledge-workspace", TABS.find((t) => t.label === label)?.id)}`}>
           {badge}
         </span>
       </div>

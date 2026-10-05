@@ -21,14 +21,14 @@ import { runSequence, type PillarScores } from "@/lib/framework/sequence-engine"
 const DIMENSION: Record<PillarId, { label: string; dot: string; text: string; inputs: string }> = {
   policy: {
     label: "Policy Complexity",
-    dot: "bg-sky-500",
-    text: "text-sky-700",
+    dot: "bg-blue-500",
+    text: "text-blue-700",
     inputs: "waiver requirements, legislation needed, agency count, veto points",
   },
   technology: {
     label: "Technology Friction",
-    dot: "bg-violet-500",
-    text: "text-violet-700",
+    dot: "bg-indigo-500",
+    text: "text-indigo-700",
     inputs: "EHR gap, interoperability, new platform count, IT timeline",
   },
   economics: {

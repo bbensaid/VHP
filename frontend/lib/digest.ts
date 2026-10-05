@@ -1,7 +1,7 @@
 /**
  * Weekly digest builder.
  *
- * Queries Sanity for the past 7 days of reports, courses, and webinars and
+ * Queries Sanity for the past 7 days of courses and webinars and
  * returns a structured payload ready to feed Loops.so or render in the
  * /api/cron/digest preview.
  *
@@ -13,7 +13,7 @@
 import { client } from "@/lib/sanity";
 
 export interface DigestItem {
-  type: "report" | "course" | "webinar";
+  type: "course" | "webinar";
   title: string;
   slug: string;
   /** ISO timestamp. */
@@ -35,7 +35,7 @@ export interface DigestPayload {
 
 const QUERY = /* groq */ `{
   "items": *[
-    _type in ["report", "course", "webinar"] &&
+    _type in ["course", "webinar"] &&
     coalesce(publishedAt, _createdAt) >= $start &&
     coalesce(publishedAt, _createdAt) <= $end
   ] | order(coalesce(publishedAt, _createdAt) desc)[0...12] {

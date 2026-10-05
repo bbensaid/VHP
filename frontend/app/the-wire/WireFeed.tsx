@@ -79,12 +79,12 @@ const EQUITY_KEYWORDS = [
 ];
 
 const PILLAR_COLORS: Record<string, string> = {
-  Policy:     "bg-sky-50 text-sky-700 border-sky-200",
+  Policy:     "bg-blue-50 text-blue-700 border-blue-200",
   Economics:  "bg-emerald-50 text-emerald-700 border-emerald-200",
   Technology: "bg-indigo-50 text-indigo-700 border-indigo-200",
   Clinical:   "bg-red-50 text-red-700 border-red-200",
   Equity:     "bg-violet-50 text-violet-700 border-violet-200",
-  Operations: "bg-teal-50 text-teal-700 border-teal-200",
+  Operations: "bg-amber-50 text-amber-700 border-amber-200",
   General:    "bg-slate-100 text-slate-600 border-slate-200",
 };
 
@@ -115,7 +115,7 @@ function tagItem(item: WireItem): EnrichedWireItem {
 }
 
 const SOURCE_COLORS: Record<string, string> = {
-  policy:   "bg-sky-50 text-sky-700",
+  policy:   "bg-blue-50 text-blue-700",
   stat:     "bg-violet-50 text-violet-700",
   fda:      "bg-rose-50 text-rose-700",
   cms:      "bg-emerald-50 text-emerald-700",

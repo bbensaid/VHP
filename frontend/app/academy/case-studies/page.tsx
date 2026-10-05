@@ -30,7 +30,7 @@ export default async function CaseStudiesPage() {
     switch (pillar) {
       case "Economics": return "text-card-economics bg-emerald-50";
       case "Technology": return "text-card-tech bg-indigo-50";
-      case "Policy": return "text-card-policy bg-sky-50";
+      case "Policy": return "text-card-policy bg-blue-50";
       default: return "text-slate-600 bg-gray-50";
     }
   };
@@ -39,7 +39,7 @@ export default async function CaseStudiesPage() {
     <div className="bg-white min-h-screen pb-20">
       <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">
         <div className="bg-slate-50 border border-slate-200 rounded-2xl px-8 py-10 mb-10">
-          <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
+          <span className="inline-block text-xs font-black uppercase tracking-widest text-blue-700 bg-blue-50 border border-blue-200 rounded-full px-3 py-1 mb-4">
             Impact Library
           </span>
           <h1 className="ty-h1 font-black text-slate-900 mb-3">Transformation in Action</h1>

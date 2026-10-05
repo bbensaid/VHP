@@ -11,7 +11,9 @@ Ops (each anchored by a distinctive substring, NOT by byte offset):
   {"op":"ins_after", "find":"marker", "xml":"<w:p>...</w:p>"}
 
 Usage:  python3 book-build/patch_docx.py edits.py
-where edits.py defines EDITS = [ ... ].
+where edits.py defines EDITS = [ ... ] and, optionally,
+MEDIA = {"word/media/image1.jpg": "path/to/replacement.jpg"} to swap an
+existing image file in place (same name and type, so no XML changes).
 """
 import os, re, sys, zipfile, shutil, datetime
 
@@ -235,7 +237,8 @@ def apply(x, edits):
     return x
 
 
-def main(edits):
+def main(edits, media=None):
+    media = media or {}
     os.makedirs(BACKUPS, exist_ok=True)
     stamp = datetime.datetime.now().strftime('%Y%m%d-%H%M%S')
     bak = os.path.join(BACKUPS, 'HTR_Book_v42_%s.docx' % stamp)
@@ -243,6 +246,11 @@ def main(edits):
     print('backup -> %s' % os.path.relpath(bak, REPO))
 
     zin = zipfile.ZipFile(DOCX, 'r')
+    for name, src in media.items():
+        if name not in zin.namelist():
+            raise SystemExit('MEDIA %r is not in the docx (swap only, never add)' % name)
+        if os.path.splitext(name)[1].lower() != os.path.splitext(src)[1].lower():
+            raise SystemExit('MEDIA %r: replacement %r must have the same file type' % (name, src))
     doc = zin.read('word/document.xml').decode('utf8')
     new = apply(doc, edits)
 
@@ -256,6 +264,9 @@ def main(edits):
         data = zin.read(item.filename)
         if item.filename == 'word/document.xml':
             data = new.encode('utf8')
+        elif item.filename in media:
+            data = open(media[item.filename], 'rb').read()
+            print('  ok: media %s <- %s' % (item.filename, os.path.relpath(media[item.filename], REPO)))
         zi = zipfile.ZipInfo(item.filename, date_time=item.date_time)
         zi.compress_type = item.compress_type
         zi.external_attr = item.external_attr
@@ -276,4 +287,4 @@ def main(edits):
 if __name__ == '__main__':
     ns = {}
     exec(open(sys.argv[1], encoding='utf8').read(), ns)
-    main(ns['EDITS'])
+    main(ns.get('EDITS', []), ns.get('MEDIA'))

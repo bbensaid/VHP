@@ -135,7 +135,7 @@ export function TransparencyTab() {
       {/* SECTION 1: Price Transparency Compliance */}
       <div className="bg-white border border-slate-200 rounded-xl p-5">
         <div className="flex items-center gap-2 mb-4">
-          <ShieldCheck className="text-sky-600" size={20} />
+          <ShieldCheck className="text-blue-600" size={20} />
           <h3 className="text-base font-bold text-slate-800">
             Price Transparency Compliance Checker
           </h3>
@@ -151,7 +151,7 @@ export function TransparencyTab() {
                 value={hospitalName}
                 onChange={(e) => setHospitalName(e.target.value)}
                 placeholder="e.g., University of Vermont Medical Center"
-                className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-400"
+                className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
 
@@ -170,10 +170,10 @@ export function TransparencyTab() {
                         [req.id]: e.target.checked,
                       }))
                     }
-                    className="mt-0.5 accent-sky-600 w-4 h-4"
+                    className="mt-0.5 accent-blue-600 w-4 h-4"
                   />
                   <div className="flex-1">
-                    <span className="text-sm text-slate-700 group-hover:text-sky-700">
+                    <span className="text-sm text-slate-700 group-hover:text-blue-700">
                       {req.label}
                     </span>
                     <span className="ml-2 text-xs text-slate-400">
@@ -257,7 +257,7 @@ export function TransparencyTab() {
       {/* SECTION 2: Site-Neutral Payment Impact */}
       <div className="bg-white border border-slate-200 rounded-xl p-5">
         <div className="flex items-center gap-2 mb-4">
-          <Scale className="text-sky-600" size={20} />
+          <Scale className="text-blue-600" size={20} />
           <h3 className="text-base font-bold text-slate-800">
             Site-Neutral Payment Impact Analyzer
           </h3>
@@ -297,7 +297,7 @@ export function TransparencyTab() {
                   <button
                     key={s.id}
                     onClick={() => setCurrentSetting(s.id)}
-                    className={`py-2 rounded-lg text-sm font-semibold border transition-colors ${currentSetting === s.id ? "bg-sky-600 text-white border-sky-600" : "bg-white text-slate-600 border-slate-200 hover:border-sky-400"}`}
+                    className={`py-2 rounded-lg text-sm font-semibold border transition-colors ${currentSetting === s.id ? "bg-blue-600 text-white border-blue-600" : "bg-white text-slate-600 border-slate-200 hover:border-blue-400"}`}
                   >
                     {s.label}
                   </button>
@@ -325,7 +325,7 @@ export function TransparencyTab() {
               ].map((row) => (
                 <div
                   key={row.key}
-                  className={`flex justify-between items-center py-1.5 border-b border-slate-200 last:border-0 text-sm ${currentSetting === row.key ? "font-bold text-sky-700" : "text-slate-600"}`}
+                  className={`flex justify-between items-center py-1.5 border-b border-slate-200 last:border-0 text-sm ${currentSetting === row.key ? "font-bold text-blue-700" : "text-slate-600"}`}
                 >
                   <span>{row.label}</span>
                   <div className="flex items-center gap-2">
@@ -346,7 +346,7 @@ export function TransparencyTab() {
               <StatCard
                 label="Current Medicare Revenue"
                 value={fmtM(siteNeutral.currentMedicareRevenue)}
-                color="sky"
+                color="blue"
               />
               <StatCard
                 label="Under Site-Neutral"
@@ -366,12 +366,12 @@ export function TransparencyTab() {
                 icon={<DollarSign size={18} />}
               />
             </div>
-            <div className="bg-sky-50 border border-sky-100 rounded-lg p-3 text-xs text-sky-800">
+            <div className="bg-blue-50 border border-blue-100 rounded-lg p-3 text-xs text-blue-800">
               <span className="font-bold block mb-1">Total Revenue Impact:</span>
-              <span className="text-2xl font-black text-sky-700">
+              <span className="text-2xl font-black text-blue-700">
                 -{fmtM(siteNeutral.totalReduction)}
               </span>
-              <span className="block mt-0.5 text-sky-600 text-xs">
+              <span className="block mt-0.5 text-blue-600 text-xs">
                 (Medicare + Commercial combined annual impact)
               </span>
             </div>
@@ -406,7 +406,7 @@ export function TransparencyTab() {
       {/* SECTION 3: No Surprises Act Impact */}
       <div className="bg-white border border-slate-200 rounded-xl p-5">
         <div className="flex items-center gap-2 mb-4">
-          <Stethoscope className="text-sky-600" size={20} />
+          <Stethoscope className="text-blue-600" size={20} />
           <h3 className="text-base font-bold text-slate-800">
             Surprise Billing — No Surprises Act Impact
           </h3>
@@ -459,7 +459,7 @@ export function TransparencyTab() {
               <StatCard
                 label="Revenue After NSA (QPA)"
                 value={fmtM(nsa.revenueAfter)}
-                color="sky"
+                color="blue"
                 icon={<DollarSign size={18} />}
               />
               <StatCard
@@ -489,7 +489,7 @@ export function TransparencyTab() {
                 out-of-network patient cost-sharing at in-network amounts,
                 eliminating balance billing.
               </p>
-              <p className="mt-2 text-sky-700">
+              <p className="mt-2 text-blue-700">
                 Estimated gross reduction in {nsaSpecialty} out-of-network
                 revenue:{" "}
                 <span className="font-bold">{fmtM(nsa.revenueReduction)}</span>{" "}

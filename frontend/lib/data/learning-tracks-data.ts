@@ -430,7 +430,7 @@ export const learningTracks: LearningTrack[] = [
       "From federal rulemaking cycles and Medicaid waiver design to state innovation programs and global comparative policy — the complete curriculum for healthcare policy professionals.",
     icon: "🏛️",
     badge: "Foundational → Advanced",
-    badgeColor: "bg-sky-100 text-sky-800 border-sky-300",
+    badgeColor: "bg-blue-100 text-blue-800 border-blue-300",
     targetAudience: [
       "Health policy analysts and advocates",
       "State Medicaid directors and program managers",
@@ -472,7 +472,7 @@ export const learningTracks: LearningTrack[] = [
       "From revenue cycle mechanics and denial management to workforce stability, supply chain resilience, and payer network strategy — the complete operational leadership curriculum.",
     icon: "⚙️",
     badge: "Foundational → Advanced",
-    badgeColor: "bg-teal-100 text-teal-800 border-teal-300",
+    badgeColor: "bg-amber-100 text-amber-800 border-amber-300",
     targetAudience: [
       "CFOs and revenue cycle leaders",
       "Hospital operations and COO roles",

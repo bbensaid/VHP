@@ -18,13 +18,13 @@ const MetricDetail = ({
   weight?: string;
 }) => {
   const styles: Record<string, { label: string; bar: string; text: string; bg: string; border: string }> = {
-    Policy:     { label: "Policy",     bar: "bg-sky-600",     text: "text-sky-700",    bg: "bg-sky-50",     border: "border-sky-200" },
+    Policy:     { label: "Policy",     bar: "bg-blue-600",     text: "text-blue-700",    bg: "bg-blue-50",     border: "border-blue-200" },
     Economics:  { label: "Economics",  bar: "bg-emerald-500", text: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" },
     Technology: { label: "Technology", bar: "bg-indigo-500",  text: "text-indigo-700",  bg: "bg-indigo-50",  border: "border-indigo-200" },
     Clinical:   { label: "Clinical",   bar: "bg-rose-500",    text: "text-rose-700",    bg: "bg-rose-50",    border: "border-rose-200" },
     Equity:     { label: "Equity",     bar: "bg-violet-500",  text: "text-violet-700",  bg: "bg-violet-50",  border: "border-violet-200" },
     "Equity Imperative": { label: "Equity Imperative", bar: "bg-violet-500", text: "text-violet-700", bg: "bg-violet-50", border: "border-violet-200" },
-    Operations: { label: "Operations", bar: "bg-teal-500",  text: "text-teal-700",  bg: "bg-teal-50",  border: "border-teal-200" },
+    Operations: { label: "Operations", bar: "bg-amber-500",  text: "text-amber-700",  bg: "bg-amber-50",  border: "border-amber-200" },
   };
   const s = styles[pillar] ?? styles["Policy"];
 
@@ -329,8 +329,8 @@ The HTR Performance Index scores health system transformation readiness across f
           <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4 mb-10">
             <PillarBlock
               pillar="Policy" weight="28%"
-              barColor="bg-sky-600"
-              textColor="text-sky-700"
+              barColor="bg-blue-600"
+              textColor="text-blue-700"
               metrics={["VBP Adoption", "Telehealth Policy", "Scope of Practice"]}
             />
             <PillarBlock
@@ -341,8 +341,8 @@ The HTR Performance Index scores health system transformation readiness across f
             />
             <PillarBlock
               pillar="Operations" weight="17%"
-              barColor="bg-teal-500"
-              textColor="text-teal-700"
+              barColor="bg-amber-500"
+              textColor="text-amber-700"
               metrics={["Admin Cost Ratio", "Revenue Cycle Performance", "Workforce Readiness"]}
             />
             <PillarBlock

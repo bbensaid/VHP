@@ -9,7 +9,7 @@ function RegulationHero() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-12 pb-0">
       <div className="bg-slate-50 border border-slate-200 rounded-2xl px-8 py-10 mb-10">
-        <span className="inline-block text-xs font-black uppercase tracking-widest text-sky-700 bg-sky-50 border border-sky-200 rounded-full px-3 py-1 mb-4">
+        <span className="inline-block text-xs font-black uppercase tracking-widest text-blue-700 bg-blue-50 border border-blue-200 rounded-full px-3 py-1 mb-4">
           Policy · Regulation & Legislation
         </span>
         <h1 className="ty-h1 font-black text-slate-900 mb-3">Regulation & Legislation</h1>
@@ -154,7 +154,7 @@ function RegulationBody() {
             <ul className="space-y-2">
               {card.items.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-slate-600">
-                  <span className="text-sky-500 mt-0.5 shrink-0">›</span>
+                  <span className="text-blue-500 mt-0.5 shrink-0">›</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -169,7 +169,7 @@ function RegulationBody() {
         <p className="text-slate-500 text-sm mb-6">Key legislative deadlines and must-pass vehicles for healthcare policy</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { quarter: "Q1 2025", color: "bg-white border-sky-200", items: ["Reconciliation budget instructions — healthcare spending targets", "IRA drug negotiation Round 2 (15 drugs) — price publication", "HIPAA Security Rule comment period closes", "Telehealth extension expiration trigger — Congress must act"] },
+            { quarter: "Q1 2025", color: "bg-white border-blue-200", items: ["Reconciliation budget instructions — healthcare spending targets", "IRA drug negotiation Round 2 (15 drugs) — price publication", "HIPAA Security Rule comment period closes", "Telehealth extension expiration trigger — Congress must act"] },
             { quarter: "Q2–Q3 2025", color: "bg-white border-amber-200", items: ["Medicare physician payment fix — conversion factor cliff", "CHIP reauthorization — expires Sep 2027 but funding debate ongoing", "340B repayment implementation — CMS guidance expected", "PBM reform legislation — markup in Senate Finance Committee"] },
             { quarter: "Q4 2025", color: "bg-white border-emerald-200", items: ["FY2026 IPPS proposed rule — comment period", "MA 2026 advance notice and rate notice cycle", "No Surprises Act IDR arbitration — potential statutory fix", "ARP enhanced PTCs extension vote — must-pass by Dec 2025"] },
           ].map((q) => (
@@ -198,7 +198,7 @@ export default function Page() {
         pillar="Policy"
         title="Regulation & Legislation"
         description="Federal rulemaking, CMS final rules, drug pricing legislation, and state healthcare laws."
-        colorClass="text-sky-700"
+        colorClass="text-blue-700"
         category="Regulation"
         hideHeader
       />
