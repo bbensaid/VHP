@@ -173,46 +173,54 @@ export const BRIEFINGS: Briefing[] = [
   // ── 3. ECONOMICS ─────────────────────────────────────────────────────────
   {
     pillar: "economics",
-    slug: "vermont-five-year-runway",
-    asOf: "2026-10-04",
-    headline: "Vermont traded AHEAD for a five-year runway. What funds year six?",
-    dek: "In July 2026 Vermont withdrew from AHEAD after CMS cut its expected funding, and put its weight on the Rural Health Transformation Program.{vtbiz-ahead}{vpr-ahead} That program ends in FY2030, and most of H.R. 1's Medicaid reductions land after it does.{cms-rhtp}{kff-rhtp}",
+    slug: "hospital-prices-come-down",
+    asOf: "2026-10-05",
+    headline: "Vermont starts pulling hospital prices down",
+    dek: "On September 14 the Green Mountain Care Board cut commercial hospital rates 2.9% statewide for FY2027 and, for the first time, capped how much commercial revenue each hospital may collect.{gmcb-fy27} It is the bridge to Act 68's reference-based pricing, set by rule in 2027 and in force from hospital FY2028.{gmcb-act68-rbp}",
     facts: [
-      { value: "$195M", label: "Vermont's FY2026 Rural Health Transformation award, about $1B over five years", cite: ["cms-rhtp", "wcax-ahead", "vpr-ahead"] },
-      { value: "FY2030", label: "last year of the $50B national program", cite: ["cms-rhtp"] },
-      { value: "64%", label: "of the federal Medicaid cuts come after FY2030, when the fund has ended", cite: ["kff-rhtp"] },
+      { value: "−2.9%", label: "commercial reimbursement rates statewide, FY2027", cite: ["gmcb-fy27"] },
+      { value: "−4.4%", label: "UVM Medical Center's commercial rates, the largest cut", cite: ["gmcb-fy27"] },
+      { value: "~250–300%", label: "of Medicare: what Vermont hospitals charge commercial insurers on average", cite: ["gmcb-act68-rbp"] },
     ],
-    equityLine: "When the runway ends, which towns keep their hospital?",
+    equityLine: "If prices fall faster than costs, which services close first, and where?",
     sections: [
       {
-        heading: "Why Vermont left AHEAD",
+        heading: "What the Board decided",
         paragraphs: [
-          "Vermont formally notified CMS on July 24, 2026 that it was leaving the AHEAD model.{vtbiz-ahead} Human Services Secretary Jenney Samuelson said new federal guidance had substantially reduced the funding Vermont expected to reinvest in providers such as primary care practices.{vtbiz-ahead} Vermont Public reported that an expected $138 million in additional federal funds had been capped at about $10 million, figures the book's Introduction also records.{vpr-ahead}{book-intro}",
+          "The Green Mountain Care Board completed its FY2027 hospital budget review on September 14, 2026, setting budgets for all 14 community hospitals.{gmcb-fy27} Total net patient revenue was set at about $3.8 billion, 1.6% above FY2026, while commercial reimbursement rates fall 2.9% statewide and commercial net patient revenue falls 1.2%, to $1.937 billion.{gmcb-fy27}",
+          "The new step is the second number. Alongside prices, the Board set limits on each hospital's total commercial revenue, guided by a 1% reduction, so a hospital cannot make up a lower price with more volume.{gmcb-fy27} UVM Medical Center's commercial rates fall 4.4%, the largest cut; Gifford's fall 3.7% and Rutland Regional's 2.6%.{gmcb-fy27}",
         ],
       },
       {
-        heading: "The runway",
+        heading: "Why prices, and why now",
         paragraphs: [
-          "The Rural Health Transformation Program puts $10 billion a year into states from 2026 through 2030. Half is split equally among approved states and half is allocated by factors including rurality, state policy actions and expected impact.{cms-rhtp} Vermont's FY2026 award is $195,053,740, and state officials and reporters describe roughly that amount each year, close to $1 billion over five years.{cms-rhtp}{wcax-ahead}{vpr-ahead}",
-          "The book calls it what it is: a first-year award, and an appropriation, money made available by statute for named purposes on someone else's schedule.{book-ch1}",
+          "The Board's own analysis shows Vermont hospitals charging commercial insurers roughly 250–300% of Medicare on average, against a break-even of about 136% for an efficient hospital, with wide variation between hospitals for the same service and no relationship to quality.{gmcb-act68-rbp} Higher hospital prices flow straight into premiums, and the Board says its FY2027 decisions were aligned with the hospital costs assumed in its 2027 insurance rate review.{gmcb-fy27}",
+          "Act 68 directs the Board to replace case-by-case budget negotiation with reference-based pricing: a maximum price for each service, set as a percentage of Medicare. The methodology is set by rule in 2027 and takes effect in hospital FY2028; FY2027's benchmarks are the transition.{gmcb-act68-rbp} Global hospital budgets follow under the same law.{book-ch1}",
         ],
       },
       {
-        heading: "The timing problem",
+        heading: "The pushback",
         paragraphs: [
-          "The fund's last year is FY2030.{cms-rhtp} KFF finds that nearly two-thirds (64%) of the ten-year federal Medicaid reductions occur after FY2030, and calls the fund front-loaded: its dollars arrive before most of the cuts, which could let rural communities make progress in advance of them.{kff-rhtp} The money that is meant to rebuild the system runs out at the point the pressure on it increases.",
+          "Hospitals argue the cuts land on already thin margins. UVM Health's CEO, Stephen Leffler, said the medical center expects to lose roughly $75 million this year and at least that much next year under the approved budget, and the state hospital association warned the decisions would further destabilize hospital finances.{sevendays-fy27}",
+          "Both things can be true. Prices far above cost are an affordability problem for every commercially insured Vermonter, and a hospital that loses price without losing cost will cut something. Which is why the sequence matters.",
         ],
       },
       {
-        heading: "What replaces AHEAD's global budget",
+        heading: "Why Economics follows Technology",
         paragraphs: [
-          "AHEAD's exit does not end Vermont's payment reform. Act 68 already made reference-based pricing mandatory from FY2027 and global hospital budgets from FY2028, under state authority rather than a federal model.{book-ch1} The open question is whether those state-run instruments can do in year six what one-time federal money does in years one through five.",
+          "Chapter 1 places Technology before Economics because payment reform needs data to work: a hospital managing to a price ceiling or a global budget has to see its own costs and its population's use in close to real time.{book-ch1} Reference-based pricing tells a hospital what it may charge. Only analytics tell it where it can save without cutting care.",
+        ],
+      },
+      {
+        heading: "The Vermont lens",
+        paragraphs: [
+          "Vermont's Rural Health Transformation award, $195 million for FY2026, is the money meant to fund that efficiency work, from shared services to data infrastructure.{cms-rhtp} The fund ends in FY2030, while nearly two-thirds of H.R. 1's federal Medicaid reductions come after it does.{kff-rhtp} Lower commercial prices, shrinking Medicaid dollars and a time-limited fund all arrive in the same five years.",
         ],
       },
       {
         heading: "Is it just?",
         paragraphs: [
-          "One-time money tends to flow to organizations with the staff to apply for it, plan with it and report on it. The rural hospitals and practices with the least margin are often the least able to turn a five-year grant into a permanent change. Judge the runway by where the money lands, not by the total.",
+          "Lower prices help the people who pay premiums, and they are the right target when prices sit far above cost. But a hospital that cannot cut cost fast enough cuts services, and the first services to go tend to be the low-volume ones rural communities rely on. Judge the price cuts by what stays open, not only by what gets cheaper.",
         ],
       },
     ],
@@ -221,15 +229,16 @@ export const BRIEFINGS: Briefing[] = [
       { slug: "hospital-finance", title: "Hospital Finance" },
       { slug: "value-based-care", title: "Value-Based Care: From Fee-for-Service to Outcomes" },
     ],
-    tools: ["global-budget-modeler", "hospital-stress-test", "apm-design-lab"],
+    tools: ["hospital-stress-test", "global-budget-modeler", "apm-design-lab"],
     platform: [
+      { label: "Vermont Act 68", href: "/vermont-act-68" },
       { label: "Vermont's Rural Health Transformation award", href: "/vermont-rht-program" },
       { label: "The AHEAD Model", href: "/ahead-model" },
     ],
     analystPrompts: [
-      "What happens to Vermont hospital finances when Rural Health Transformation funding ends after FY2030?",
-      "How does a state-run global budget differ from AHEAD's federal design?",
-      "Which Vermont hospitals look most exposed in the hospital stress test?",
+      "What would reference-based pricing at 200% of Medicare mean for a Vermont hospital's budget?",
+      "Why did the Green Mountain Care Board cap commercial revenue as well as prices for FY2027?",
+      "Which Vermont hospitals look most exposed to the FY2027 commercial rate cuts in the stress test?",
     ],
   },
 
