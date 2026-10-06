@@ -5,7 +5,7 @@ import VermontReformCascade from "@/components/VermontReformCascade";
 export const metadata = {
   title: "Vermont Act 68 (2025) | Health Transformation Review",
   description:
-    "Vermont Act 68 of 2025 — the most consequential healthcare legislation in Vermont since the Green Mountain Care Board's creation. Mandates reference-based pricing (FY2027), hospital global budgets (FY2028–2030), and a Statewide Health Care Delivery Strategic Plan by December 2028.",
+    "Vermont Act 68 of 2025 — the most consequential healthcare legislation in Vermont since the Green Mountain Care Board's creation. Mandates reference-based pricing (GMCB methodology by rule in 2027, effective hospital FY2028), hospital global budgets (FY2028–2030), and a Statewide Health Care Delivery Strategic Plan by December 2028.",
 };
 
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -126,8 +126,8 @@ export default function VermontAct68Page() {
           into mandatory structural change.
         </p>
         <div className="flex flex-wrap gap-3">
-          <ExternalLink href="https://legislature.vermont.gov/bill/status/2026/H.68">
-            Act 68 Legislative History
+          <ExternalLink href="https://legislature.vermont.gov/bill/status/2026/S.126">
+            Act 68 Legislative History (S.126)
           </ExternalLink>
           <ExternalLink href="https://gmcboard.vermont.gov">
             Green Mountain Care Board
@@ -148,13 +148,13 @@ export default function VermontAct68Page() {
       <section className="mb-16">
         <SectionHeader label="By the Numbers" title="The Scale of Act 68" />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <StatBox value="FY2027" label="RBP Effective" sub="Reference-based pricing mandatory" />
+          <StatBox value="FY2028" label="RBP Effective" sub="GMCB methodology set by rule in 2027" />
           <StatBox value="FY2028" label="Global Budgets" sub="Statutory hospital budgets begin" />
           <StatBox value="Dec 2028" label="Strategic Plan Due" sub="AHS Statewide delivery plan" />
           <StatBox value="$2M" label="Transformation Grants" sub="Authorized for hospitals" />
           <StatBox value="14" label="Hospitals Affected" sub="All Vermont non-profit hospitals" />
-          <StatBox value="2.5%" label="FY2026 Spending Reduction" sub="Required commercial rate cut" />
-          <StatBox value="-1%" label="FY2027 GMCB Guidance" sub="Commercial rate target" />
+          <StatBox value="2.5%" label="FY2026 Spending Reduction" sub="Required hospital spending reduction" />
+          <StatBox value="−2.9%" label="FY2027 Commercial Rates" sub="Statewide, approved by GMCB Sep 2026" />
           <StatBox value="$911B" label="Federal Medicaid Cuts" sub="H.R. 1 backdrop over 10 years" />
         </div>
       </section>
@@ -166,14 +166,14 @@ export default function VermontAct68Page() {
           {[
             {
               number: "01",
-              title: "Reference-Based Pricing (RBP) — Mandatory FY2027",
-              body: "Requires hospitals to accept payment at a set percentage of Medicare rates for commercial payers — eliminating the ability of dominant hospitals to charge 250–417% of Medicare. The GMCB developed a price transparency dashboard in February 2026 showing hospital prices ranging from 279% to 697% of Medicare, providing the data foundation for RBP implementation. Commercial insurers must pass RBP savings through to consumers in the form of lower premiums.",
+              title: "Reference-Based Pricing (RBP) — Effective Hospital FY2028",
+              body: "Requires hospitals to accept payment at a set percentage of Medicare rates for commercial payers — Vermont hospitals currently charge commercial payers roughly 250–300% of Medicare. The GMCB's 2026 price transparency analysis showed hospital outpatient prices ranging from 279% to 697% of Medicare, providing the data foundation for RBP implementation. Act 68 set an FY2027 start; the GMCB's February 2026 Act 68 update puts the methodology into rule in 2027, effective hospital FY2028. Commercial insurers must pass RBP savings through to consumers in the form of lower premiums.",
               tag: "Economics Pillar",
             },
             {
               number: "02",
               title: "Hospital Global Budgets — Mandatory FY2028–2030",
-              body: "Establishes statutory prospective annual global budgets for Vermont hospitals. Unlike AHEAD (which covers Medicare FFS), Act 68 global budgets apply to all payers. Each hospital receives a fixed prospective budget at the beginning of the year — converting the financial incentive from maximizing volume to managing population health. Non-CAH hospitals must have their budget methodology finalized by GMCB by end of FY2027.",
+              body: "Establishes statutory prospective annual global budgets for Vermont hospitals. Unlike AHEAD's Medicare FFS hospital global budgets — which Vermont will not adopt, having withdrawn from AHEAD in July 2026 — Act 68 global budgets are set by the State for commercial payers and Medicaid; Medicare alignment is unresolved. Each hospital receives a fixed prospective budget at the beginning of the year — converting the financial incentive from maximizing volume to managing population health. Non-CAH hospitals must have their budget methodology finalized by GMCB by end of FY2027.",
               tag: "Economics Pillar",
             },
             {
@@ -197,7 +197,7 @@ export default function VermontAct68Page() {
             {
               number: "06",
               title: "Transformation Grants — $2M Authorized",
-              body: "Authorizes $2M in Act 68 transformation grants for Vermont hospitals developing transformation plans under the RHRC technical assistance process. Grants support the analytical work, organizational redesign, and care delivery transformation planning that the statutory timeline requires — specifically for hospitals without the internal capacity to conduct this work independently.",
+              body: "Authorizes $2M in Act 68 transformation grants for Vermont hospitals developing transformation plans under the RHRC technical assistance process. Grants support the analytical work, organizational redesign, and care delivery transformation planning that the statutory timeline requires — specifically for hospitals without the internal capacity to conduct this work independently. Status (AHS report, May 1, 2026): all 14 hospitals filed transformation plans; 13 eligible hospitals applied for transformation grants and 5 grant agreements had been signed.",
               tag: "Operations Pillar",
             },
           ].map((item) => (
@@ -248,7 +248,7 @@ export default function VermontAct68Page() {
           <PillarTag
             pillar="Economics"
             color="emerald"
-            note="RBP eliminates 250–417% of Medicare commercial pricing. Global budgets change hospital financial incentives from volume maximization to population health management."
+            note="RBP targets commercial prices that run roughly 250–300% of Medicare. Global budgets change hospital financial incentives from volume maximization to population health management."
           />
           <PillarTag
             pillar="Technology"
@@ -316,10 +316,10 @@ export default function VermontAct68Page() {
               <h4 className="font-bold text-amber-900 mb-2">The Medicaid-RHT Tension</h4>
               <p className="text-sm text-amber-800 leading-relaxed">
                 H.R. 1 (signed July 4, 2025) imposes $911B in federal Medicaid spending cuts over 10 years —
-                including work requirements, biannual eligibility redeterminations, and caps on state provider
+                including work requirements and six-month eligibility redeterminations (both from January 1, 2027), and caps on state provider
                 taxes. Vermont's hospitals, already financially fragile, absorb these Medicaid revenue reductions
-                at the same time they are executing Act 68 transformation plans. Vermont's $195M Rural Health
-                Transformation Program award partially offsets this pressure, but the RHT Program is
+                at the same time they are executing Act 68 transformation plans. Vermont's Rural Health
+                Transformation Program award ($195M for FY2026, about that much each year through FY2030) partially offsets this pressure, but the RHT Program is
                 time-limited (FY2026–2030) while Medicaid cuts are permanent and back-loaded after 2030.
               </p>
             </div>
@@ -331,9 +331,9 @@ export default function VermontAct68Page() {
             <ul className="space-y-2 text-xs text-slate-600">
               {[
                 "Vermont Medicaid covers ~19% of insured population — Medicaid revenue cuts affect every Vermont hospital's financial position",
-                "Work requirements beginning late 2026 may reduce Medicaid enrollment, shrinking the insured base global budgets are designed to manage",
-                "Biannual eligibility redeterminations increase DVHA administrative burden during the same period AHS is restructuring",
-                "Vermont's RHT Program ($195M) must be invested in structural transformation — not operating revenue replacement — to survive post-2030",
+                "Work requirements beginning January 1, 2027 may reduce Medicaid enrollment, shrinking the insured base global budgets are designed to manage",
+                "Six-month eligibility redeterminations (from January 1, 2027) increase DVHA administrative burden during the same period AHS is restructuring",
+                "Vermont's RHT Program (about $195M a year, FY2026–2030) must be invested in structural transformation — not operating revenue replacement — to survive post-2030",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <span className="text-rose-500 shrink-0 mt-0.5">•</span>
@@ -439,11 +439,11 @@ export default function VermontAct68Page() {
           {[
             {
               term: "Reference-Based Pricing (RBP)",
-              def: "A payment mechanism capping hospital commercial reimbursement at a set multiple of Medicare rates. Act 68 requires GMCB to set this benchmark. Vermont hospital commercial prices currently range from 279%–697% of Medicare; RBP will reduce these toward a regulated ceiling.",
+              def: "A payment mechanism capping hospital commercial reimbursement at a set multiple of Medicare rates. Act 68 requires GMCB to set this benchmark. Vermont hospital outpatient prices range from 279%–697% of Medicare (GMCB, 2026); the GMCB's methodology is set by rule in 2027, effective hospital FY2028; RBP will reduce these toward a regulated ceiling.",
             },
             {
               term: "Hospital Global Budget",
-              def: "A prospective annual budget set for each hospital at the beginning of the year, covering all-payer revenue. Hospitals receive their budget amount regardless of utilization volume — converting the financial incentive from maximizing services to managing population health. Vermont's global budgets run FY2028–2030 under Act 68.",
+              def: "A prospective annual budget set for each hospital at the beginning of the year, covering all-payer revenue. Hospitals receive their budget amount regardless of utilization volume — converting the financial incentive from maximizing services to managing population health. Under Act 68, global budgets begin for non-critical-access hospitals in FY2028 and extend to all hospitals by FY2030.",
             },
             {
               term: "Statewide Health Care Delivery Strategic Plan",
@@ -451,7 +451,7 @@ export default function VermontAct68Page() {
             },
             {
               term: "Rural Health Transformation (RHT) Program",
-              def: "The $50B federal program (FY2026–FY2030) included in H.R. 1 to offset the impact of its Medicaid cuts on rural hospitals. Vermont received $195M. RHT capital is for infrastructure investment (technology, broadband, EMS), not operating revenue replacement.",
+              def: "The $50B federal program (FY2026–FY2030) included in H.R. 1 to offset the impact of its Medicaid cuts on rural hospitals. Vermont's FY2026 award was $195,053,740 (CMS, December 29, 2025), with awards of roughly that size each year through FY2030. RHT capital is for infrastructure investment (technology, broadband, EMS), not operating revenue replacement.",
             },
             {
               term: "Reform Cascade",
@@ -476,7 +476,7 @@ export default function VermontAct68Page() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
           {[
             { href: "https://legislature.vermont.gov/assets/Legislative-Reports/Aug-2025_Act-68-HC-System-Transformation-Report-from-AHS.pdf", label: "AHS Act 68 Transformation Report — August 2025", desc: "Monthly legislative report on Health Care System Transformation progress filed by AHS under Act 68" },
-            { href: "https://ljfo.vermont.gov/assets/Meetings/Health-Reform-Oversight-Committee/2025-12-04/Dec-2025_Act-68-HC-System-Transformation-Report-from-AHS.pdf", label: "AHS Act 68 Transformation Report — December 2025", desc: "Most recent monthly report — hospital planning, primary care access, and DVHA program updates" },
+            { href: "https://ljfo.vermont.gov/assets/Meetings/Health-Reform-Oversight-Committee/2025-12-04/Dec-2025_Act-68-HC-System-Transformation-Report-from-AHS.pdf", label: "AHS Act 68 Transformation Report — December 2025", desc: "Monthly report — hospital planning, primary care access, and DVHA program updates" },
             { href: "https://legislature.vermont.gov/Documents/2026/Workgroups/House%20Health%20Care/Health%20Care%20Reform/W~Brendan%20Krause~Vermont%27s%20Health%20Care%20Reform%20Efforts%20~1-31-2025.pdf", label: "Vermont Health Care Reform Efforts — House Testimony (Jan 2025)", desc: "AHS testimony to House Health Care Committee covering Act 68, AHEAD, Blueprint, and VCCI status" },
             { href: "https://healthcarereform.vermont.gov/health-care-transformation", label: "AHS Health Care Transformation Portal", desc: "Official AHS Office of Health Care Reform — all policy initiatives, program summaries, and reports" },
             { href: "https://humanservices.vermont.gov/our-work/reports", label: "AHS All Legislative Reports Archive", desc: "Complete AHS statutory reports library — all programs including Act 68, Medicaid, Blueprint, VCCI" },
@@ -511,7 +511,7 @@ export default function VermontAct68Page() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
             { href: "/vermont-act-167", label: "Vermont Act 167", desc: "The enabling framework that started Vermont's reform cascade in 2022.", color: "border-violet-200 hover:border-violet-400" },
-            { href: "/ahead-model", label: "AHEAD Model", desc: "Vermont's federal all-payer global budget agreement — the Medicare partner to Act 68's state mandate.", color: "border-sky-200 hover:border-sky-400" },
+            { href: "/ahead-model", label: "AHEAD Model", desc: "The federal all-payer model Vermont signed in January 2025 and withdrew from in July 2026 — Act 68's state mandate now carries hospital reform without a Medicare partner.", color: "border-sky-200 hover:border-sky-400" },
             { href: "/vermont-medicaid", label: "Vermont Medicaid", desc: "Medicaid program details, H.R. 1 impact analysis, and Vermont's Medicaid transformation agenda.", color: "border-emerald-200 hover:border-emerald-400" },
           ].map((p) => (
             <Link key={p.href} href={p.href} className={`group block bg-white border rounded-xl p-5 transition-all hover:shadow-md ${p.color}`}>
