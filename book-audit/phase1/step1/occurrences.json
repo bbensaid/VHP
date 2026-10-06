@@ -1,0 +1,507 @@
+{
+ "uvmmc": [
+  {
+   "off": 514310,
+   "chap": "INTRODUCTION",
+   "text": "This book repeatedly emphasizes that Vermont\u2019s approach is mandatory rather than voluntary, and treats this as the central correction to OneCare\u2019s design flaw. But a mandatory regime is only as real as its enforcement, and a skeptical reader is entitled to ask: what actually happens to a hospital that does not comply \u2014 that refuses a global budget, or continues billing above the reference-based-pricing ceiling? Act 68 gives GMCB subpoena authority and data-sharing power with the Department of Financial Regulation, and the answer is no longer hypothetical. GMCB\u2019s FY23 enforcement actions against UVMMC ($80.3M overage) and RRMC ($11.1M overage) were the first such enforcement actions in Vermont\u2019s regulatory history, and UVMMC\u2019s subsequent court challenge to that enforcement \u2014 Vermont\u2019s largest, most powerful hospital system testing GMCB\u2019s authority directly \u2014 was decided against UVMMC. That outcome is the strongest available evidence that \u201cmandatory\u201d in this book\u2019s framework describes a regime that has been tested against its most resourced potential opponent and held. Chapter 2 establishes GMCB\u2019s Act 68 enforcement authority, and Appendix G (\u00a7G.4.2, \u201cThe test case: GMCB v. UVMMC\u201d) develops the mechanics and this case in more detail."
+  },
+  {
+   "off": 1002628,
+   "chap": "Chapter 1: The Five-Pillar Framework and the Execu",
+   "text": "A second serious critique: by making participation mandatory, Vermont\u2019s approach creates an adversarial relationship with hospital systems that could be productive reform partners under voluntary models. Hospital opposition to mandatory reference-based pricing has been fierce and legally aggressive. UVMMC challenged GMCB budget enforcement in court. A voluntary approach would face less resistance, move faster initially, and produce more durable buy-in."
+  },
+  {
+   "off": 1504777,
+   "chap": "Chapter 2: The Policy Pillar \u2014 Legislative Archite",
+   "text": "If you are a Vermont legislator: The mandatory architecture of Act 68 \u2014 RBP, global budgets, the December 2028 Strategic Plan \u2014 is only as durable as the political will to enforce it. UVMMC challenged GMCB enforcement in court and lost. Future challenges are certain. The legislature\u2019s role is to make clear that enforcement is not discretionary, that the GMCB has the resources and authority to defend its orders, and that the December 2028 deadline for the Strategic Plan requires a binding plan \u2014 not a descriptive one. The difference between a transformation that succeeds and one that produces documents is often determined by the legislature\u2019s willingness to accept only the real thing."
+  },
+  {
+   "off": 4283247,
+   "chap": "Chapter 14: Political Sustainability \u2014 Protecting ",
+   "text": "These signal categories \u2014 a change in the governing party\u2019s posture toward the reform, a high-profile enforcement challenge, a hospital-sector coalition campaign, and a federal policy shift that changes the reform\u2019s financial assumptions \u2014 are the same four categories that would precede the unwinding of a comparable reform in any state. The specific signal in Vermont was UVMMC\u2019s court challenge to GMCB enforcement; a reader elsewhere should identify their own state\u2019s largest, most politically influential health system as the actor most likely to generate the analogous signal, and watch accordingly."
+  },
+  {
+   "off": 4861505,
+   "chap": "Conclusion \u2014 What Vermont Proves, and What Remains",
+   "text": "It has proved that a state government can impose mandatory rate regulation on a well-organized hospital sector and survive politically. UVMMC challenged GMCB enforcement in court and lost. Vermont hospitals have contested RBP methodology vigorously and the legislature has not reversed course. The political durability of mandatory reform \u2014 always the central uncertainty in healthcare policy \u2014 has held through two legislative cycles."
+  },
+  {
+   "off": 5414369,
+   "chap": "Appendix G \u2014 Adapting and Stress-Testing the Frame",
+   "text": "The clearest evidence of what \u201cmandatory\u201d means in practice is GMCB\u2019s FY23 enforcement actions against the University of Vermont Medical Center ($80.3M overage) and Rutland Regional Medical Center ($11.1M overage) \u2014 the first such enforcement actions in Vermont\u2019s regulatory history, and a direct test of GMCB\u2019s toolkit against the system with the most resources and the most to lose. UVMMC challenged that enforcement in court. The challenge was decided against UVMMC. Three things follow from this. First, the corrective-action and budget-order mechanisms GMCB used are now judicially tested, not merely statutory \u2014 a materially stronger form of \u201cmandatory\u201d than untested authority. Second, the outcome did not turn on some narrow technicality that leaves the broader question open; GMCB\u2019s core enforcement authority was upheld. Third, and most importantly for any hospital considering noncompliance heading into the FY2027\u20132028 transition window described in Section G.3: the precedent now exists, it was set against the largest and most capable potential challenger, and it went against the hospital."
+  },
+  {
+   "off": 5417247,
+   "chap": "Appendix G \u2014 Adapting and Stress-Testing the Frame",
+   "text": "For a hospital evaluating its options heading into mandatory RBP and global budgets, the GMCB v. UVMMC outcome forecloses the \u201cwe\u2019ll fight it in court and win\u201d branch that a purely statutory reading of Act 68 might have left open. The remaining open questions are narrower: how GMCB applies this authority to smaller hospitals with genuinely different cost structures than UVMMC\u2019s, and how enforcement interacts with the financing gap identified in Section G.3 \u2014 not whether enforcement itself is real."
+  }
+ ],
+ "dec2028": [
+  {
+   "off": 823415,
+   "chap": "Chapter 1: The Five-Pillar Framework and the Execu",
+   "text": "Organizations develop the capacity to execute complex initiatives when they have non-negotiable deadlines, not when they have good intentions. Act 68\u2019s December 2028 Statewide Strategic Plan deadline, the FY2027 RBP mandate, and the FY2028 global budget mandate are not just policy milestones \u2014 they are organizational forcing functions that require AHS to build the project-management infrastructure, analytics capability, and staffing depth that the transformation requires. Without the Policy pillar imposing external accountability, the Operations pillar faces the chronic problem of healthcare administration: transformation planning that is perpetually in progress but never complete. Vermont\u2019s statutory deadlines are the mechanism that prevents this. "
+  },
+  {
+   "off": 902101,
+   "chap": "Chapter 1: The Five-Pillar Framework and the Execu",
+   "text": "This is the feedback loop that allows the policy architecture to be self-correcting. AHS\u2019s monthly transformation reports to the Vermont Legislature \u2014 required under Act 68 \u2014 document whether transformation is proceeding on the statutory timeline, where gaps have emerged, and what adjustments are required. The GMCB\u2019s RBP methodology for FY2027 is being refined based on hospital financial data from the operations layer. The December 2028 Statewide Strategic Plan will be drafted based on what the Operations pillar has learned from implementing the preceding three years of transformation. This is not passive reporting \u2014 it is active policy learning."
+  },
+  {
+   "off": 1224555,
+   "chap": "Chapter 2: The Policy Pillar \u2014 Legislative Archite",
+   "text": "Mandatory RBP (FY2027), global budgets (FY2028), Dec 2028 Strategic Plan deadline"
+  },
+  {
+   "off": 1244980,
+   "chap": "Chapter 2: The Policy Pillar \u2014 Legislative Archite",
+   "text": "Dec 2028"
+  },
+  {
+   "off": 1421870,
+   "chap": "Chapter 2: The Policy Pillar \u2014 Legislative Archite",
+   "text": "December 2028"
+  },
+  {
+   "off": 1425892,
+   "chap": "Chapter 2: The Policy Pillar \u2014 Legislative Archite",
+   "text": "Signed by Governor Scott on June 12, 2025, Act 68 is the legislative operationalization of the Oliver Wyman diagnosis. The alignment between Oliver Wyman\u2019s priority recommendations and Act 68\u2019s operative provisions is direct and traceable: Oliver Wyman recommended beginning movement to reference-based pricing at 200% of Medicare or less; Act 68 mandated it by hospital fiscal year 2027. Oliver Wyman recommended moving to global budgets when conditions for success are met; Act 68 required them for non-critical access hospitals by FY2028 and all hospitals by FY2030. Oliver Wyman recommended that GMCB add a Division of Planning and Effectiveness; Act 68 authorized three new permanent classified positions at GMCB. Oliver Wyman recommended reviewing AHS agency structure and program list; Act 68 directed AHS to develop a Statewide Health Care Delivery Strategic Plan by December 2028."
+  },
+  {
+   "off": 1453536,
+   "chap": "Chapter 2: The Policy Pillar \u2014 Legislative Archite",
+   "text": "The most consequential long-term provision of Act 68 is the requirement that AHS develop a Statewide Health Care Delivery Strategic Plan, to be delivered to the legislature by December 2028 and updated every three years thereafter. This plan is the statutory vehicle for answering the foundational question that underlies all of Vermont\u2019s reform work: what should Vermont\u2019s healthcare delivery system actually look like?"
+  },
+  {
+   "off": 1466237,
+   "chap": "Chapter 2: The Policy Pillar \u2014 Legislative Archite",
+   "text": "AHS Statewide Health Care Delivery Strategic Plan delivered to legislature by December 2028"
+  },
+  {
+   "off": 1504777,
+   "chap": "Chapter 2: The Policy Pillar \u2014 Legislative Archite",
+   "text": "If you are a Vermont legislator: The mandatory architecture of Act 68 \u2014 RBP, global budgets, the December 2028 Strategic Plan \u2014 is only as durable as the political will to enforce it. UVMMC challenged GMCB enforcement in court and lost. Future challenges are certain. The legislature\u2019s role is to make clear that enforcement is not discretionary, that the GMCB has the resources and authority to defend its orders, and that the December 2028 deadline for the Strategic Plan requires a binding plan \u2014 not a descriptive one. The difference between a transformation that succeeds and one that produces documents is often determined by the legislature\u2019s willingness to accept only the real thing."
+  },
+  {
+   "off": 1506982,
+   "chap": "Chapter 2: The Policy Pillar \u2014 Legislative Archite",
+   "text": "If you are a national health policy professional: Vermont\u2019s Act 68 is the most detailed mandatory all-payer pricing statute enacted by any state in the modern regulatory environment. Before designing comparable legislation for other states, study what Act 68 got right \u2014 the mandatory RBP, the global budget timeline, the equity review requirements \u2014 and what remains untested: the December 2028 plan specificity requirement, the enforcement mechanism for plan non-compliance, and the interaction between federal Medicaid cuts and the state\u2019s mandatory pricing timeline. Vermont will have answers to these questions by 2030 that no model projection can provide."
+  },
+  {
+   "off": 1519572,
+   "chap": "Chapter 2: The Policy Pillar \u2014 Legislative Archite",
+   "text": "Statewide Health Care Delivery Strategic Plan The plan AHS is required to deliver to the Vermont legislature by December 2028 and update every three years, establishing the vision, goals, affordability benchmarks, and accountability metrics for Vermont\u2019s transformed health care delivery system. Established by Act 68."
+  },
+  {
+   "off": 1781440,
+   "chap": "Chapter 4: The Technology Pillar \u2014 Data Infrastruc",
+   "text": "This belongs in AHS\u2019s Statewide Health Care Delivery Strategic Plan, due to the legislature in December 2028. AHS contains DVHA, which administers the VITL contract annually; the agency that manages the relationship is the agency best positioned to tell the legislature the relationship\u2019s structure is wrong. A restructuring roadmap that reorganizes agency boxes while leaving the exclusive-operator statute untouched will have left the binding constraint in place."
+  },
+  {
+   "off": 2409915,
+   "chap": "Chapter 6: The Economics Pillar \u2014 Global Budgets, ",
+   "text": "Global hospital budgets for non-CAH hospitals; Statewide Strategic Plan delivered December 2028"
+  },
+  {
+   "off": 2801639,
+   "chap": "Chapter 8: The Clinical Pillar \u2014 Redesigning Care ",
+   "text": "The Statewide Strategic Plan that AHS must deliver by December 2028 presents the opportunity \u2014 and creates the obligation \u2014 to align Vermont\u2019s clinical quality measurement framework around a coherent set of indicators that serve multiple accountability purposes simultaneously. The following framework represents the clinical quality architecture that Vermont\u2019s reform requires:"
+  },
+  {
+   "off": 2840565,
+   "chap": "Chapter 8: The Clinical Pillar \u2014 Redesigning Care ",
+   "text": "The Statewide Health Care Delivery Strategic Plan that AHS must deliver by December 2028 must address the clinical pillar explicitly. Based on Vermont\u2019s current clinical landscape and the transformation agenda established by Acts 167 and 68, the plan should contain five clinical design commitments:"
+  },
+  {
+   "off": 3033067,
+   "chap": "Chapter 9: The Clinical Pillar in Practice \u2014 Care ",
+   "text": "The Statewide Health Care Delivery Strategic Plan that AHS must deliver by December 2028 must address the clinical pillar\u2019s in-practice implementation requirements. Based on Vermont\u2019s current implementation landscape and the operational requirements developed in this chapter, the plan should contain five clinical implementation commitments:"
+  },
+  {
+   "off": 3472137,
+   "chap": "Chapter 11: The Operations Pillar \u2014 Executing Hosp",
+   "text": "Vermont\u2019s operations challenge is unusual in its specificity and urgency. AHS has statutory deadlines \u2014 hospital transformation plans by early 2026, RBP by FY2027, global budgets by FY2028, the Statewide Strategic Plan by December 2028. It has a constrained budget ($4.2M in appropriated state funds, plus $195M in RHT Program capital and $1.2M in AHEAD cooperative agreement funds). It has a newly contracted operational partner in the Rural Health Redesign Center. And it has 14 hospitals in wildly different financial and operational conditions, ranging from a large academic medical center at the center of the state\u2019s economy to 19-bed critical access hospitals in the Northeast Kingdom where any service reduction has immediate community consequences."
+  },
+  {
+   "off": 3511544,
+   "chap": "Chapter 11: The Operations Pillar \u2014 Executing Hosp",
+   "text": "Approved final plan; AHS integrates hospital plans into statewide picture; plans inform AHS\u2019s Statewide Strategic Plan development for December 2028 delivery"
+  },
+  {
+   "off": 3532804,
+   "chap": "Chapter 11: The Operations Pillar \u2014 Executing Hosp",
+   "text": "AHS responded to this gap by procuring an analytics vendor in partnership with GMCB \u2014 a joint procurement that reflects the appropriate division of labor: GMCB brings regulatory data and rate-setting expertise; AHS brings population health and SDOH context. The analytics platform, once operational, will enable the state to evaluate hospital proposals in terms of quality, cost, and access; assess alignment with regional and statewide goals; and quantify potential cost savings using evidence-based methods. This platform is also the technological foundation for monitoring the Statewide Strategic Plan\u2019s implementation metrics after December 2028."
+  },
+  {
+   "off": 3695645,
+   "chap": "Chapter 11: The Operations Pillar \u2014 Executing Hosp",
+   "text": "For the Statewide Strategic Plan that AHS must deliver by December 2028, a more complete operations metrics framework is required. Drawing on Oliver Wyman\u2019s five Act 167 goals and Act 68\u2019s accountability metrics requirements, the following framework organizes the key operational indicators by domain:"
+  },
+  {
+   "off": 3946558,
+   "chap": "Chapter 12: Infrastructure for Knowledge Transfer ",
+   "text": "Vermont\u2019s 2028 Statewide Strategic Plan is the vision document. The urgency is already created; the coalition is assembling; the vision is the December 2028 deadline."
+  },
+  {
+   "off": 3957046,
+   "chap": "Chapter 12: Infrastructure for Knowledge Transfer ",
+   "text": "Healthcare transformation must sustain momentum across multiple election cycles, budget battles, and inevitable setbacks. Statutory mandate \u2014 Act 68\u2019s December 2028 deadline \u2014 is the Vermont mechanism for sustaining acceleration."
+  },
+  {
+   "off": 4056486,
+   "chap": "Chapter 13: The Future of Healthcare Transformatio",
+   "text": "All hospitals under Act 68 global budgets; Statewide Strategic Plan delivered Dec 2028"
+  },
+  {
+   "off": 4189946,
+   "chap": "Chapter 13: The Future of Healthcare Transformatio",
+   "text": "Can AHS deliver a comprehensive Strategic Plan by December 2028?"
+  },
+  {
+   "off": 4190494,
+   "chap": "Chapter 13: The Future of Healthcare Transformatio",
+   "text": "December 2028 statutory deadline"
+  },
+  {
+   "off": 4212359,
+   "chap": "Chapter 13: The Future of Healthcare Transformatio",
+   "text": "If you are a Vermont official: this chapter\u2019s two scenarios differ on a small number of decisions that are still open in 2026 \u2014 whether the analytics capability is operational before FY2028 global-budget financial accountability begins, whether social risk adjustment is embedded in global budget design or appended to it, and whether the December 2028 Strategic Plan commits to measurable outcomes or describes intentions. Those three are worth more attention than the forecast\u2019s aggregate numbers."
+  },
+  {
+   "off": 4254493,
+   "chap": "Chapter 14: Political Sustainability \u2014 Protecting ",
+   "text": "Strategic Plan scope. Act 68 requires the December 2028 Statewide Strategic Plan but does not fully specify its content. A plan that is descriptive rather than committal would satisfy the statute while producing none of the intended outcomes \u2014 the most politically convenient failure mode: compliance without transformation."
+  },
+  {
+   "off": 4269252,
+   "chap": "Chapter 14: Political Sustainability \u2014 Protecting ",
+   "text": "December 2028 Strategic Plan described as \u201cin progress\u201d in November 2028 reports"
+  },
+  {
+   "off": 4314165,
+   "chap": "Chapter 14: Political Sustainability \u2014 Protecting ",
+   "text": "Act 167\u2019s comprehensive, public, community-grounded diagnostic process \u2014 230+ meetings, 3,100+ participants \u2014 created legitimacy for Act 68\u2019s mandates by making the crisis visible and involving affected communities. Communities that helped identify their own system\u2019s problems are less susceptible to campaigns claiming the problems do not exist. Act 68 adds a second sustainability feature: it makes failure visible. Monthly reports to the legislature, quarterly GMCB rate-setting updates, and the December 2028 deadline create continuous public accountability. If Act 68 is weakened, the weakening will be documented in public reporting \u2014 a political accountability trail that makes deliberate erosion more costly."
+  },
+  {
+   "off": 4378206,
+   "chap": "Chapter 15: Healthcare Transformation as Portfolio",
+   "text": "Vermont\u2019s full five-pillar transformation: all 19 components across the pillars, aligned to Act 167\u2019s five goals and the December 2028 plan."
+  },
+  {
+   "off": 4381606,
+   "chap": "Chapter 15: Healthcare Transformation as Portfolio",
+   "text": "AHS is managing Vermont\u2019s transformation as a collection of projects without the program or portfolio infrastructure to coordinate them \u2014 sequenced by who is available rather than by what the portfolio needs. This is not a criticism of AHS staff, who are executing against an extraordinary mandate with insufficient capacity. It is a structural observation: the capacity does not exist yet. This chapter is the case for building it before the December 2028 deadline makes the gap irreversible."
+  },
+  {
+   "off": 4401969,
+   "chap": "Chapter 15: Healthcare Transformation as Portfolio",
+   "text": "In progress \u2192 Dec 2028"
+  },
+  {
+   "off": 4455893,
+   "chap": "Chapter 15: Healthcare Transformation as Portfolio",
+   "text": "Nineteen components. Shared stage gates. A single December 2028 deadline. Three statutory predecessors \u2014 Acts 167, 51, and 68 \u2014 plus the AHEAD State Agreement\u2019s closeout obligations, each with their own federal and state reporting obligations. This is not a program-management problem. It is a portfolio-management problem, and it cannot be solved by component managers acting independently, no matter how skilled each one is. It requires a Portfolio Manager: a designated authority with the mandate and the access to manage Vermont\u2019s transformation as a whole, not as a collection of programs each doing their best."
+  },
+  {
+   "off": 4468666,
+   "chap": "Chapter 15: Healthcare Transformation as Portfolio",
+   "text": "RBP methodology (FY2027); Strategic Plan (Dec 2028); monthly Act 68 compliance"
+  },
+  {
+   "off": 4524138,
+   "chap": "Chapter 15: Healthcare Transformation as Portfolio",
+   "text": "AHS overcommitment produces a descriptive (non-binding) Dec 2028 Strategic Plan"
+  },
+  {
+   "off": 4587305,
+   "chap": "Chapter 15: Healthcare Transformation as Portfolio",
+   "text": "R-10 avoided; coordinates $195M RHT capital and the EAST Fund\u2019s wind-down after Vermont\u2019s AHEAD withdrawal; single accountability for Dec 2028"
+  },
+  {
+   "off": 4598096,
+   "chap": "Chapter 15: Healthcare Transformation as Portfolio",
+   "text": "The cost-benefit table omits the cost of failure. Without adequate PMO infrastructure, Vermont risks delivering the December 2028 plan as a descriptive document rather than a binding commitment \u2014 the political-sustainability chapter\u2019s most dangerous failure mode. That is not a $0 outcome. It is a multi-billion-dollar one: the continuation of the Oliver Wyman deficit trajectory, the failure of 13 of 14 hospitals to reach sustainability, and the loss of the political window that Vermont\u2019s mandatory architecture has opened."
+  },
+  {
+   "off": 4609518,
+   "chap": "Chapter 15: Healthcare Transformation as Portfolio",
+   "text": "December 2028: Strategic Plan delivered with portfolio-management evidence \u2014 benefits realized, risks managed, resources optimally deployed; PMO transitions to the three-year update cycle."
+  },
+  {
+   "off": 4612969,
+   "chap": "Chapter 15: Healthcare Transformation as Portfolio",
+   "text": "\u201cThis is government \u2014 we don\u2019t run projects like the private sector.\u201d Vermont\u2019s transformation is a time-bounded, outcome-specified, heavily financed portfolio of interdependent programs with legally binding deadlines. The RHT Program is a federal grant with deliverables and reporting obligations; the withdrawn AHEAD State Agreement still carries federal closeout requirements; Act 68 is a statutory mandate with a December 2028 deliverable. Federal partners expect professional project management \u2014 the GAO uses PMI\u2019s PMBOK as a reference standard."
+  },
+  {
+   "off": 4651834,
+   "chap": "Chapter 16: The AHS Restructuring Roadmap \u2014 A Five",
+   "text": "Written for AHS staff, Health Care Delivery Advisory Committee members, Vermont legislators, and hospital leaders who must deliver the Statewide Health Care Delivery Strategic Plan by December 2028."
+  },
+  {
+   "off": 4702191,
+   "chap": "Chapter 16: The AHS Restructuring Roadmap \u2014 A Five",
+   "text": "Legislative accountability \u2014 producing the monthly reports, the December 2028 plan, and the three-year updates. The monthly reporting requirement is a real accountability mechanism, not a formality."
+  },
+  {
+   "off": 4744743,
+   "chap": "Chapter 16: The AHS Restructuring Roadmap \u2014 A Five",
+   "text": "Pillar 1 \u2014 Policy (legislative compliance, federal relationships, regulatory strategy): AHEAD wind-down and successor-agreement strategy (EAST Fund closeout, Medicaid global-budget continuation, terms for any second federal agreement); Act 68 compliance tracking (RBP FY2027, non-CAH global budgets FY2028, plan December 2028, legislative reporting calendar); RHT Program administration (grant management, contractor oversight, annual CMS reporting); and federal-policy monitoring (Medicaid reconciliation, CMMI changes, CMS guidance)."
+  },
+  {
+   "off": 4784829,
+   "chap": "Chapter 16: The AHS Restructuring Roadmap \u2014 A Five",
+   "text": "December 2028"
+  },
+  {
+   "off": 4804019,
+   "chap": "Chapter 16: The AHS Restructuring Roadmap \u2014 A Five",
+   "text": "Dec 2028"
+  },
+  {
+   "off": 4812501,
+   "chap": "Chapter 16: The AHS Restructuring Roadmap \u2014 A Five",
+   "text": "Vermont\u2019s AHS restructuring matters beyond Vermont because it is the first test of whether a state human-services agency can redesign itself as a population-health system operator in response to a statutory transformation mandate. The questions are not Vermont-specific: How do you align an agency organized around program silos with geographically defined service areas? How do you build the analytics capacity to model structural change before implementing it? How do you run a multi-stakeholder planning process that includes hospitals, insurers, providers, and community organizations without producing a plan that commits to nothing? Vermont will have answers by December 2028. They will be grounded in real experience with a real system under real pressure. That is not nothing. In American health policy, where policy debates run decades ahead of implementation evidence, it may be the most valuable contribution Vermont makes. The significance is not that Vermont is large or powerful; it is that Vermont is early \u2014 early enough to produce a tested model before the rest of the country reaches the same crisis point, and early enough for the lessons to remain actionable."
+  },
+  {
+   "off": 4821118,
+   "chap": "Chapter 16: The AHS Restructuring Roadmap \u2014 A Five",
+   "text": "Whether Operations-pillar capacity is rising fast enough to meet the December 2028 Strategic Plan obligation."
+  },
+  {
+   "off": 4826867,
+   "chap": "Chapter 16: The AHS Restructuring Roadmap \u2014 A Five",
+   "text": "If you are a Vermont legislator: Act 68 requires AHS to produce a Statewide Strategic Plan by December 2028. This chapter argues that the plan\u2019s quality is determined by organizational capacity built two years earlier. The oversight question is therefore not about the plan; it is whether the Division of Planning and Effectiveness and the HSA-coordinator model are staffed and operating in FY2027."
+  },
+  {
+   "off": 4838450,
+   "chap": "Conclusion \u2014 What Vermont Proves, and What Remains",
+   "text": "Failure does not look like a spectacular collapse. Vermont is not going to repeal Act 68. The GMCB is not going to dissolve. The $195 million RHT award will be spent on something. Failure looks like this: reference-based pricing takes effect on schedule but is suspended pending litigation that runs for three years. Global budget methodology is completed in 2028 but at benchmarks high enough that the cost-reduction signal is too weak to change hospital behavior. The Statewide Strategic Plan is submitted in December 2028 and describes the right goals without committing to specific, measurable, accountable targets. The AHEAD performance year begins in January 2028 and the analytics vendor is not yet producing the population-level data hospitals need to manage their total cost of care. AHS receives its restructuring mandate but is not given the budget, the hiring authority, or the political cover to execute it at the pace Acts 167 and 68 require."
+  },
+  {
+   "off": 4879853,
+   "chap": "Conclusion \u2014 What Vermont Proves, and What Remains",
+   "text": "To the Vermont legislator: the December 2028 Strategic Plan is your accountability mechanism. Accept only a plan that could be evaluated by a disinterested observer in December 2030. Require specific targets, specific timelines, and named owners. A plan that cannot be evaluated cannot be executed. The investment Vermont has made in transformation deserves the accountability that makes investment meaningful."
+  },
+  {
+   "off": 4887472,
+   "chap": "Conclusion \u2014 What Vermont Proves, and What Remains",
+   "text": "Binding vs.\u00a0descriptive plan A binding plan commits to specific targets, timelines, and accountable owners that can be evaluated by a disinterested observer. A descriptive plan states goals that could be plausibly claimed as achieved regardless of outcomes. Act 68\u2019s December 2028 deadline requires the binding version."
+  },
+  {
+   "off": 5183927,
+   "chap": "Appendix E \u2014 Vermont Transformation Scorecard: 202",
+   "text": "This scorecard consolidates the Vermont evidence from across the book into a single reference. For each pillar it answers three questions: Vermont\u2019s starting point in 2022 (before Act 167), the current state in early 2026, and what success looks like by the December 2028 Strategic Plan deadline. Where 2028 targets are set in statute or GMCB guidance they are noted as statutory; where they represent HTR\u2019s assessment of what success requires, they are noted as HTR benchmark."
+  },
+  {
+   "off": 5196517,
+   "chap": "Appendix E \u2014 Vermont Transformation Scorecard: 202",
+   "text": "Plan delivered to legislature December 2028"
+  },
+  {
+   "off": 5372284,
+   "chap": "Appendix G \u2014 Adapting and Stress-Testing the Frame",
+   "text": "Vermont\u2019s operational mandate \u2014 mandatory reference-based pricing by FY2027, global hospital budgets for non-critical-access hospitals by FY2028 and all hospitals by FY2030, and the Statewide Health Care Delivery Strategic Plan (due December 2028)."
+  },
+  {
+   "off": 5408965,
+   "chap": "Appendix G \u2014 Adapting and Stress-Testing the Frame",
+   "text": "The honest answer to \u201cwhat keeps my hospital solvent in FY2027\u20132028 specifically\u201d is: the same things that would need to keep it solvent absent any of this \u2014 cost reduction (Chapter 11\u2019s administrative-efficiency agenda), RHT capital deployed toward structural change rather than operating support, and whatever reserves or local/state bridge funding GMCB\u2019s budget-order process makes available on a case-by-case basis. This book does not identify a dedicated, guaranteed source of transition financing for FY2027\u20132028 because, as of this writing, one does not appear to exist as a named program. This is the single most consequential open question for any hospital CFO reading this book, and it is one Vermont\u2019s own Statewide Strategic Plan (due December 2028 \u2014 itself after the highest-risk window closes) will need to address retroactively unless GMCB\u2019s annual reporting process surfaces it sooner."
+  }
+ ],
+ "hgb": [
+  {
+   "off": 1584613,
+   "chap": "Chapter 3: The Policy Pillar in Practice \u2014 CMMI Mo",
+   "text": "Vermont operates several 1115 demonstrations that together constitute its Medicaid transformation infrastructure. The Global Commitment to Health demonstration \u2014 Vermont\u2019s primary 1115 waiver \u2014 was originally approved in 2005 and has been renewed and amended repeatedly. The current authorization runs through December 2027, with the AHEAD alignment provisions approved in the January 2025 renewal. Vermont\u2019s Medicaid hospital global budgets, in operation since January 2026, run under this demonstration authority \u2014 on state, not AHEAD, authority."
+  },
+  {
+   "off": 2286368,
+   "chap": "Chapter 6: The Economics Pillar \u2014 Global Budgets, ",
+   "text": "Global budget design is technically complex, and the design choices are consequential. GMCB\u2019s February 2026 report identified five dimensions that any global budget methodology must address, along with the core tradeoff embedded in each. These dimensions apply equally to Vermont\u2019s GMCB-designed commercial budgets, the AHEAD Model Medicare budgets, and the Medicaid global budget already in operation."
+  },
+  {
+   "off": 4766108,
+   "chap": "Chapter 16: The AHS Restructuring Roadmap \u2014 A Five",
+   "text": "AHEAD Medicaid global budget operational (January 2026)"
+  },
+  {
+   "off": 5406614,
+   "chap": "Appendix G \u2014 Adapting and Stress-Testing the Frame",
+   "text": "The result is a sequencing gap within the financing itself: Medicaid global budgets are already in operation, commercial RBP becomes mandatory in FY2027 (October 2026), and the federal AHEAD funding once expected to ease this transition will not arrive at all \u2014 Vermont withdrew from AHEAD in July 2026. Vermont hospitals are therefore moving under new payment regimes without the federal transition funding the framework once assumed would be available. The Rural Health Transformation Program\u2019s $195 million per year is the only funding source available during this window, and it was designed as transformation capital, not as a bridge for operating losses."
+  }
+ ],
+ "late2026": [
+  {
+   "off": 1628005,
+   "chap": "Chapter 3: The Policy Pillar in Practice \u2014 CMMI Mo",
+   "text": "Work requirements (80 hours/month) for Medicaid expansion enrollees beginning late 2026."
+  },
+  {
+   "off": 4074542,
+   "chap": "Chapter 13: The Future of Healthcare Transformatio",
+   "text": "On July 4, 2025, the One Big Beautiful Bill Act (H.R. 1) became law. Its healthcare provisions represent the largest single reduction in federal health-program spending in American history. The Congressional Budget Office estimates $911 billion in Medicaid spending reductions over ten years, producing an estimated 10 million additional uninsured Americans by 2034. The law imposes work and community-engagement requirements on Medicaid-expansion enrollees beginning in late 2026, requires eligibility redeterminations every six months instead of annually, caps state provider taxes, restricts state-directed payments, and phases out financing mechanisms that states have relied on for decades to fund their share of Medicaid."
+  },
+  {
+   "off": 4136587,
+   "chap": "Chapter 13: The Future of Healthcare Transformatio",
+   "text": "Medicaid work requirements (late 2026); federal policy instability; provider-tax restrictions pressuring state budgets."
+  },
+  {
+   "off": 4855520,
+   "chap": "Conclusion \u2014 What Vermont Proves, and What Remains",
+   "text": "H.R. 1\u2019s $911 billion in Medicaid cuts over ten years, work requirements beginning in late 2026, and reduced ACA premium subsidies will arrive in Vermont at the same moment as AHEAD\u2019s performance year and Act 68\u2019s mandatory pricing reform. The combined financial pressure on Vermont hospitals \u2014 from reduced Medicaid volume, reduced Medicaid rates, and mandatory reference-based pricing \u2014 is the biggest test of whether Vermont\u2019s transformation architecture is robust enough to absorb shocks while remaining on its statutory timeline."
+  }
+ ],
+ "rbp2027": [
+  {
+   "off": 704619,
+   "chap": "Chapter 1: The Five-Pillar Framework and the Execu",
+   "text": "Vermont application: Reference-based pricing (FY2027), global hospital budgets (FY2028\u20132030), and total-cost-of-care accountability are Vermont\u2019s Economics pillar interventions."
+  },
+  {
+   "off": 811835,
+   "chap": "Chapter 1: The Five-Pillar Framework and the Execu",
+   "text": "Payment reform that is voluntary produces voluntary results. OneCare Vermont ran for twelve years on a voluntary model: all 14 hospitals took part, but the insurers did not have to \u2014 and when Blue Cross Blue Shield of Vermont, the state\u2019s largest, left in January 2023, about a third of the attributed population went with it (\u00a71.2.1). Act 68 of 2025 changed the architecture where the state does have authority: reference-based pricing is mandatory for all Vermont hospitals beginning FY2027, and global budgets are mandatory beginning FY2028. That closes the hospital-side opt-out. The payer-side limit set by federal law remains."
+  },
+  {
+   "off": 823415,
+   "chap": "Chapter 1: The Five-Pillar Framework and the Execu",
+   "text": "Organizations develop the capacity to execute complex initiatives when they have non-negotiable deadlines, not when they have good intentions. Act 68\u2019s December 2028 Statewide Strategic Plan deadline, the FY2027 RBP mandate, and the FY2028 global budget mandate are not just policy milestones \u2014 they are organizational forcing functions that require AHS to build the project-management infrastructure, analytics capability, and staffing depth that the transformation requires. Without the Policy pillar imposing external accountability, the Operations pillar faces the chronic problem of healthcare administration: transformation planning that is perpetually in progress but never complete. Vermont\u2019s statutory deadlines are the mechanism that prevents this. "
+  },
+  {
+   "off": 902101,
+   "chap": "Chapter 1: The Five-Pillar Framework and the Execu",
+   "text": "This is the feedback loop that allows the policy architecture to be self-correcting. AHS\u2019s monthly transformation reports to the Vermont Legislature \u2014 required under Act 68 \u2014 document whether transformation is proceeding on the statutory timeline, where gaps have emerged, and what adjustments are required. The GMCB\u2019s RBP methodology for FY2027 is being refined based on hospital financial data from the operations layer. The December 2028 Statewide Strategic Plan will be drafted based on what the Operations pillar has learned from implementing the preceding three years of transformation. This is not passive reporting \u2014 it is active policy learning."
+  },
+  {
+   "off": 967992,
+   "chap": "Chapter 1: The Five-Pillar Framework and the Execu",
+   "text": "Reference-based pricing (mandatory, FY2027); global hospital budgets (FY2028\u20132030)"
+  },
+  {
+   "off": 1070498,
+   "chap": "Chapter 1: The Five-Pillar Framework and the Execu",
+   "text": "The Policy gate \u2014 OPEN since June 2025. Act 68 established mandatory RBP (FY2027) and global budgets (FY2028). All Vermont hospitals are now inside the mandatory architecture, so nothing downstream is waiting on statutory authority."
+  },
+  {
+   "off": 1124571,
+   "chap": "Chapter 1: The Five-Pillar Framework and the Execu",
+   "text": "RBP mandatory beginning FY2027, global budgets mandatory beginning FY2028. The sequence is correct: mandatory payment reform follows mandatory policy authority and follows the technology build in design."
+  },
+  {
+   "off": 1224555,
+   "chap": "Chapter 2: The Policy Pillar \u2014 Legislative Archite",
+   "text": "Mandatory RBP (FY2027), global budgets (FY2028), Dec 2028 Strategic Plan deadline"
+  },
+  {
+   "off": 1501562,
+   "chap": "Chapter 2: The Policy Pillar \u2014 Legislative Archite",
+   "text": "If you are a Vermont hospital executive: The single most important thing Act 68 requires of you is not compliance \u2014 it is preparation. RBP is not a theoretical target; it is a statutory mandate effective FY2027, and the Oliver Wyman benchmark GMCB is working from is 200% of Medicare or less. The question is not whether it happens but whether your organization has modeled what it means for your revenue, your payer mix, and your cost structure before it happens. If you have not run an Act 68 financial scenario analysis \u2014 what your net revenue looks like under mandatory RBP across all commercial lines \u2014 that analysis is overdue. The hospitals that run it early have time to respond. The hospitals that do not will be responding to a financial reality they did not see coming."
+  },
+  {
+   "off": 1617798,
+   "chap": "Chapter 3: The Policy Pillar in Practice \u2014 CMMI Mo",
+   "text": "Act 68 RBP compliance planning for FY2027; AHEAD hospital global budget participation; H.R. 1 Medicaid work requirement implementation timeline"
+  },
+  {
+   "off": 2543190,
+   "chap": "Chapter 7: The Economics Pillar in Practice \u2014 VBC ",
+   "text": "Vermont mandatory RBP FY2027; Oliver Wyman: $300M+ annual projection"
+  },
+  {
+   "off": 3472137,
+   "chap": "Chapter 11: The Operations Pillar \u2014 Executing Hosp",
+   "text": "Vermont\u2019s operations challenge is unusual in its specificity and urgency. AHS has statutory deadlines \u2014 hospital transformation plans by early 2026, RBP by FY2027, global budgets by FY2028, the Statewide Strategic Plan by December 2028. It has a constrained budget ($4.2M in appropriated state funds, plus $195M in RHT Program capital and $1.2M in AHEAD cooperative agreement funds). It has a newly contracted operational partner in the Rural Health Redesign Center. And it has 14 hospitals in wildly different financial and operational conditions, ranging from a large academic medical center at the center of the state\u2019s economy to 19-bed critical access hospitals in the Northeast Kingdom where any service reduction has immediate community consequences."
+  },
+  {
+   "off": 3954931,
+   "chap": "Chapter 12: Infrastructure for Knowledge Transfer ",
+   "text": "Vermont FY2026 regulatory actions ($230.65M in commercial revenue reductions) are the first visible win. The August 2025 AHS transformation report showing hospital engagement in transformation planning is a process win. Premium reduction data from RBP (available FY2027-2028) will be the first financial outcome win."
+  },
+  {
+   "off": 3963965,
+   "chap": "Chapter 12: Infrastructure for Knowledge Transfer ",
+   "text": "One of the most consequential advisory questions in healthcare transformation is pace: how fast can an organization or system realistically change, and what happens when the required pace exceeds the available organizational capacity? Vermont\u2019s transformation agenda has statutory deadlines \u2014 RBP by FY2027, global budgets by FY2028 \u2014 that set the required pace. Whether Vermont\u2019s organizational capacity can match that pace is the critical execution uncertainty."
+  },
+  {
+   "off": 4055902,
+   "chap": "Chapter 13: The Future of Healthcare Transformatio",
+   "text": "Mandatory RBP (FY2027) and global budgets (FY2028) enacted; AHEAD signed Jan 2025; $195M RHT awarded"
+  },
+  {
+   "off": 4061570,
+   "chap": "Chapter 13: The Future of Healthcare Transformatio",
+   "text": "RBP mandatory FY2027 enacted; global-budget methodology under design; 6 of 14 hospitals in losses (FY2024, improved from 9); five-year deficit trajectory unchanged"
+  },
+  {
+   "off": 4142104,
+   "chap": "Chapter 13: The Future of Healthcare Transformatio",
+   "text": "VT: RBP implementing (FY2027); global budgets mandated (FY2028). National: VBC ~58% commercial; global budgets rare outside VT/MD."
+  },
+  {
+   "off": 4155926,
+   "chap": "Chapter 13: The Future of Healthcare Transformatio",
+   "text": "FY2027: RBP implemented; commercial rates decline toward benchmark; premium growth slows for the first time in a decade \u2014 the first concrete evidence that mandatory price regulation can reduce premiums without hospital closures."
+  },
+  {
+   "off": 4166013,
+   "chap": "Chapter 13: The Future of Healthcare Transformatio",
+   "text": "FY2027: RBP implemented but contested \u2014 UVMMC and other large systems seek legislative relief from specific rate provisions; GMCB holds implementation on a modified glide path that delays full impact."
+  },
+  {
+   "off": 4251666,
+   "chap": "Chapter 14: Political Sustainability \u2014 Protecting ",
+   "text": "RBP methodology. RBP is mandatory from FY2027, but the methodology setting reference prices is a GMCB regulatory determination. It can be set to neutralize the structural change \u2014 reference prices so close to current commercial rates that little repricing occurs, or exemptions so broad that few hospitals are meaningfully constrained. Hospital lobbying will focus on the methodology, not on overturning the mandate."
+  },
+  {
+   "off": 4468666,
+   "chap": "Chapter 15: Healthcare Transformation as Portfolio",
+   "text": "RBP methodology (FY2027); Strategic Plan (Dec 2028); monthly Act 68 compliance"
+  },
+  {
+   "off": 4474057,
+   "chap": "Chapter 15: Healthcare Transformation as Portfolio",
+   "text": "RBP rates in effect (FY2027); non-CAH global budgets (FY2028); EAST Fund targets"
+  },
+  {
+   "off": 4744743,
+   "chap": "Chapter 16: The AHS Restructuring Roadmap \u2014 A Five",
+   "text": "Pillar 1 \u2014 Policy (legislative compliance, federal relationships, regulatory strategy): AHEAD wind-down and successor-agreement strategy (EAST Fund closeout, Medicaid global-budget continuation, terms for any second federal agreement); Act 68 compliance tracking (RBP FY2027, non-CAH global budgets FY2028, plan December 2028, legislative reporting calendar); RHT Program administration (grant management, contractor oversight, annual CMS reporting); and federal-policy monitoring (Medicaid reconciliation, CMMI changes, CMS guidance)."
+  },
+  {
+   "off": 4936171,
+   "chap": "Appendix A \u2014 Vermont System Portrait",
+   "text": "Act 68 mandates RBP from FY2027, with GMCB setting the methodology; existing rate-review infrastructure makes it implementable."
+  },
+  {
+   "off": 5190635,
+   "chap": "Appendix E \u2014 Vermont Transformation Scorecard: 202",
+   "text": "Mandatory RBP (FY2027) and global budgets (FY2028) enacted"
+  },
+  {
+   "off": 5233343,
+   "chap": "Appendix E \u2014 Vermont Transformation Scorecard: 202",
+   "text": "Mandatory RBP (FY2027) enacted; methodology under design"
+  },
+  {
+   "off": 5372284,
+   "chap": "Appendix G \u2014 Adapting and Stress-Testing the Frame",
+   "text": "Vermont\u2019s operational mandate \u2014 mandatory reference-based pricing by FY2027, global hospital budgets for non-critical-access hospitals by FY2028 and all hospitals by FY2030, and the Statewide Health Care Delivery Strategic Plan (due December 2028)."
+  },
+  {
+   "off": 5394583,
+   "chap": "Appendix G \u2014 Adapting and Stress-Testing the Frame",
+   "text": "Act 68 reference-based pricing (FY2027) + global hospital budgets (FY2028\u20132030)"
+  },
+  {
+   "off": 5402059,
+   "chap": "Appendix G \u2014 Adapting and Stress-Testing the Frame",
+   "text": "Chapters 6 and 7 document where Vermont\u2019s hospital system stands today \u2014 six of fourteen hospitals reporting operating losses in FY2024, down from nine in FY2023, with Oliver Wyman\u2019s conservative scenario projecting thirteen of fourteen in losses by 2028. They also document where Act 68 is taking the system \u2014 reference-based pricing mandatory by FY2027 and statewide global hospital budgets by FY2030. What receives less direct treatment is the financing of the years in between, when RBP is phasing in, global budgets are not yet operational statewide, and the FY2023\u20132026 losses have not yet been resolved by anything. This section assembles the pieces."
+  },
+  {
+   "off": 5406614,
+   "chap": "Appendix G \u2014 Adapting and Stress-Testing the Frame",
+   "text": "The result is a sequencing gap within the financing itself: Medicaid global budgets are already in operation, commercial RBP becomes mandatory in FY2027 (October 2026), and the federal AHEAD funding once expected to ease this transition will not arrive at all \u2014 Vermont withdrew from AHEAD in July 2026. Vermont hospitals are therefore moving under new payment regimes without the federal transition funding the framework once assumed would be available. The Rural Health Transformation Program\u2019s $195 million per year is the only funding source available during this window, and it was designed as transformation capital, not as a bridge for operating losses."
+  }
+ ]
+}
