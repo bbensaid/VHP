@@ -38,19 +38,24 @@ const securityHeaders = [
       // Sanity CDN images + YouTube thumbnails + blob (react-simple-maps SVG) + data URIs
       // OpenStreetMap tile servers (a/b/c.tile.openstreetmap.org) for Leaflet map
       "img-src 'self' blob: data: https://cdn.sanity.io https://img.youtube.com https://*.tile.openstreetmap.org https://upload.wikimedia.org",
-      // Audio and video — external MP3/MP4, Wikimedia, Sanity-hosted media
-      "media-src 'self' blob: https://upload.wikimedia.org https://cdn.sanity.io https://www.nasa.gov",
+      // Audio and video — external MP3/MP4, Wikimedia, Sanity-hosted media.
+      // https://*.supabase.co: book narration .m4a files live in the public
+      // Supabase Storage bucket `narration-audio` (lib/narration.ts) since
+      // 2026-09-22 — without it /book/listen, /read/[slug] and the Act 167
+      // audio player are blocked by this policy.
+      "media-src 'self' blob: https://*.supabase.co https://upload.wikimedia.org https://cdn.sanity.io https://www.nasa.gov",
       // API/data connections:
       //   - Supabase REST + Realtime WebSocket
       //   - Sanity GROQ API: {projectId}.api.sanity.io (two-level subdomain)
       //   - Sanity CDN GROQ: {projectId}.apicdn.sanity.io (two-level subdomain)
       //   - jsDelivr CDN: US Atlas TopoJSON for react-simple-maps maps
       //   - Stripe payment API
-      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.supabase.io https://*.api.sanity.io https://*.apicdn.sanity.io https://api.sanity.io https://cdn.jsdelivr.net https://api.stripe.com https://*.sentry.io https://o*.ingest.sentry.io",
-      // 'self' so the same-origin book PDF (/HTR_Book_v28_Final2.pdf) can be
+      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.supabase.io https://*.api.sanity.io https://*.apicdn.sanity.io https://api.sanity.io https://cdn.jsdelivr.net https://api.stripe.com https://*.sentry.io https://*.ingest.sentry.io https://*.ingest.us.sentry.io",
+      // 'self' so the same-origin book PDF (/HTR_Book_v42.pdf) can be
       // framed (frame-src does NOT inherit default-src when set explicitly).
       // YouTube embeds + Spotify/SoundCloud audio + Stripe Checkout / 3DS.
-      "frame-src 'self' https://www.youtube.com https://open.spotify.com https://w.soundcloud.com https://js.stripe.com https://hooks.stripe.com",
+      // player.vimeo.com: course VideoBlock (components/course/content-blocks/VideoBlock.tsx).
+      "frame-src 'self' https://www.youtube.com https://player.vimeo.com https://open.spotify.com https://w.soundcloud.com https://js.stripe.com https://hooks.stripe.com",
       // Service workers / web workers
       "worker-src 'self' blob:",
     ].join("; "),

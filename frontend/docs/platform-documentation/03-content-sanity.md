@@ -1,6 +1,6 @@
 # 03 — Content Creation: Sanity CMS
 
-> **Verified against:** `frontend/sanity/sanity.config.ts`, `frontend/sanity/schemaTypes/*` (all 21 schema types), `frontend/app/api/webhooks/sanity/route.ts`, `frontend/lib/sanity-fetch.ts`.
+> **Verified against:** `frontend/sanity/sanity.config.ts`, `frontend/sanity/schemaTypes/*` (20 registered schema types; re-verified 2026-10-07), `frontend/app/api/webhooks/sanity/route.ts`, `frontend/lib/sanity-fetch.ts`.
 
 Sanity is where **all editorial content** lives. This document is the working manual for editors and authors.
 
@@ -45,7 +45,7 @@ Route: `frontend/app/studio/[[...index]]`. Log in with your Sanity account (must
 
 ## 3. The content model — every document type
 
-Registered in `frontend/sanity/schemaTypes/index.ts`. Twenty-two types:
+Registered in `frontend/sanity/schemaTypes/index.ts`. Twenty types (the `report` row below is **not** registered — see its note):
 
 | Schema (`_type`) | Studio title | Purpose / where it surfaces |
 |---|---|---|
@@ -57,7 +57,7 @@ Registered in `frontend/sanity/schemaTypes/index.ts`. Twenty-two types:
 | `academyModule` | Academy Module | A module within a course |
 | `caseStudy` | **Case Study** | `/academy/case-studies`, advisory |
 | `webinar` | Webinar / Event | `/academy/webinars`, events |
-| `report` | **Impact Report** | `/library`, advisory reports (PDF + summary) |
+| `report` | **Impact Report** | **Not registered** in `index.ts` (no `report.ts` schema file) and 0 `report` documents in the dataset (2026-10-07). Still named in some GROQ filters below; those match nothing. |
 | `definition` | Glossary Definition | `/academy/glossary` |
 | `ticker` | System Vitals (Ticker) | The scrolling metric strip (`TickerStrip`) |
 | `dailyInsight` | Daily Insight (Dark Strip) | The dark insight strip on home |

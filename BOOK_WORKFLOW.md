@@ -204,6 +204,10 @@ python3 book-build/make_transcripts.py            # .txt from the manuscript
 ./scripts/generate-narration-piper.sh             # Piper, more natural voice
 ```
 
-As of 2026-07-27 the recorded audio is from June 14 and is stale in the
-preface, introduction and chapter 1 (88% of the drift). Re-record those three
-when the manuscript settles.
+The site does **not** play the local files: since 2026-09-22 narration is
+served from the public Supabase Storage bucket `narration-audio`, path
+`narration/<NN-name>.m4a` (base URL in `frontend/lib/narration.ts`). After
+re-recording, upload each `.m4a` over the same object name; local `.m4a`/`.wav`
+files are gitignored and never deployed. Bucket state on 2026-10-07: preface
+through chapter 5 re-uploaded 2026-10-07, chapters 6–16 on 2026-09-29 (the
+June-14 recording described in older notes is gone).

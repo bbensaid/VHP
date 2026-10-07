@@ -1,6 +1,6 @@
 # 04 — Content & Data: Supabase
 
-> **Verified against:** `supabase/migrations/` — 36 files: `001…033` + 3 dated migrations (latest: 20260705_tester_feedback), `backend/services/db.py`, `frontend/lib/supabase.ts`, `frontend/lib/auth.ts`.
+> **Verified against:** `supabase/migrations/` — 37 files: `001…034` + 3 dated migrations (latest: 20260705_tester_feedback), `backend/services/db.py`, `frontend/lib/supabase.ts`, `frontend/lib/auth.ts`.
 
 Supabase is the **application database, auth provider, file storage, and vector store**. Sanity holds prose; Supabase holds *people, permissions, progress, money, and embeddings.*
 
@@ -34,7 +34,7 @@ Clients:
 
 ## 2. Migrations: the source of schema truth
 
-`supabase/migrations/` contains **36 ordered, append-only** SQL files. The schema is whatever these produce when run in order.
+`supabase/migrations/` contains **37 ordered, append-only** SQL files. The schema is whatever these produce when run in order.
 
 | # | Migration | Adds |
 |---|---|---|
@@ -71,6 +71,7 @@ Clients:
 | 031 | lesson_sanity_slug | `lessons.sanity_slug` (link to Sanity body) |
 | 032 | course_chapter_ref | course↔book chapter |
 | 033 | course_chapter_ref_backfill | backfill above |
+| 034 | hybrid_search_data_rag_documents | `hybrid_search_rag()` against `data_rag_documents` (the live corpus); supersedes 007, which targeted the empty `rag_documents` and was never applied |
 | 2026-04-11 | beta_access_codes | `beta_access_codes` |
 
 > **Rule:** never edit a migration that has shipped. To change schema, add the next-numbered file. Apply with `supabase db push` or `psql "$SUPABASE_DB_URL" -f <file>`.
@@ -104,10 +105,11 @@ There are **two generations** of Academy schema, both present:
 
 ## 5. RAG / pgvector tables
 
-- `rag_documents` — chunked, embedded content (vector column + metadata: source slug, type, pillar). HNSW index maintained by migration 021.
+- `data_rag_documents` — **the live RAG corpus** (chunked, embedded content + metadata: source slug, type, pillar), created by LlamaIndex `PGVectorStore`, which prefixes `data_` onto its configured table name.
+- `rag_documents` — the hand-written table from migration 005; **empty (0 rows)**. Migrations 005/007 (and 021's HNSW maintenance, written against it) target this dead table — do not build on it.
 - `rag_query_log` — every RAG query (pruned by 020).
 - `rag_feedback` — thumbs up/down per answer (024).
-- Hybrid search SQL function (007) combines vector similarity with keyword match; the backend `HybridRetriever` calls it. See [Doc 06](./06-ai-analyst-rag.md).
+- Hybrid search SQL function `hybrid_search_rag()` (migration 034, against `data_rag_documents`) combines vector similarity with keyword match; the backend `HybridRetriever` calls it. See [Doc 06](./06-ai-analyst-rag.md).
 
 ## 6. Community, bookmarks, notes, referrals
 

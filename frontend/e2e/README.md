@@ -5,6 +5,7 @@ End-to-end smoke tests for the HTR platform. They catch render-time crashes, mis
 ## What's covered
 
 - **smoke.spec.ts** — Top 10 routes render with the expected H1 text. Catches the "I broke a pillar page and forgot to test it" failure mode.
+- **launch-readiness.spec.ts** — robots.txt, sitemap.xml (host-rooted, gated routes absent), title/description/og:site_name on key pages, noindex on auth pages, security headers incl. CSP `media-src` for Supabase-hosted narration, branded 404.
 - **chat-api.spec.ts** — `/api/chat` contract: rejects invalid bodies, accepts valid ones, gracefully reports backend-down state. `/api/health` returns the expected shape.
 
 ## First-time setup

@@ -1,0 +1,38 @@
+LAUNCH READINESS + DOCS (Phase 4) - 2026-10-07
+Ledger: docs/audits/launch_readiness_2026-10.jsonl
+
+FIXED
+- LIVE BUG: production CSP media-src blocked Supabase Storage, where book narration
+  (bucket narration-audio) has lived since 2026-09-22 -> /book/listen, /read/[slug] and the
+  Act 167 audio player could not play. Added https://*.supabase.co (next.config.ts).
+  Also: invalid Sentry source o*.ingest.sentry.io replaced with *.ingest[.us].sentry.io;
+  player.vimeo.com added to frame-src (course VideoBlock).
+- Security headers otherwise already complete (XFO, nosniff, Referrer-Policy,
+  Permissions-Policy, HSTS, CSP) - confirmed live with curl.
+- sitemap.ts: added book, /read/<chapter>, briefings (from BRIEFINGS), Academy course pages
+  (published Supabase courses), Research Lab + framework tools, Operations pillar, all 13
+  Vermont pages, Oregon/compare-states, legal/info pages. Removed role-gated /dashboard and
+  /hti-dashboard, /search, and duplicate /academy/courses. 134 URLs; all host-rooted.
+- robots.ts created: production domains allow / minus private paths + sitemap link;
+  previews/localhost Disallow: /.
+- Root metadata: host-aware metadataBase, applicationName, openGraph (siteName/type/locale),
+  twitter card, icons.
+- 22 routes lacking title/description got layouts via new brandedMetadata() helper
+  (lib/brand-server.ts); auth/account/utility pages noindex.
+- app/global-error.tsx added (root-layout failures; reports to Sentry).
+- Nav/footer/sidebar/site-map/taxonomy: 110 internal hrefs, 0 broken.
+- e2e/launch-readiness.spec.ts: 15/15 pass against next start.
+- DOC-1 (already fixed, ledger updated), DOC-2 (ACADEMY.md refreshed from live data + code),
+  DOC-3 (platform docs 03/04/05) -> FIXED in RELEASE_AUDIT_2026-08.md.
+- HTR_ADMIN_RUNBOOK.md + BOOK_WORKFLOW.md: narration now documented as Supabase bucket.
+
+LEFT
+- Beta gate redirects /robots.txt and /sitemap.xml to /beta (proxy.ts); access policy,
+  not touched. At GA exempt those two paths or drop the gate.
+- 16 pages hardcode "| Health Transformation Review" titles (wrong on .solutions domains).
+- No Open Graph image; no per-page canonical across the four domains (brand/SEO decision).
+- welcome-htr-framework course (0/1 rich) still linked from HomeSidebar = CONTENT-1.
+- components/sidebar/PolicyCalendar.tsx links /policy/calendar (would 404) but is unused.
+- CLAUDE.md audio section still says audio is from 2026-06-14 (owner's file, not edited).
+
+CHECKS: tsc 0 errors | eslint touched files clean | next build OK | e2e 15/15

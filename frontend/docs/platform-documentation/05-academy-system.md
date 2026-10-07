@@ -2,7 +2,7 @@
 
 > **Verified against:** `supabase/migrations/028…033`, `frontend/lib/course-api.ts`, `frontend/components/AcademyContent.tsx`, `frontend/app/academy/*`, `frontend/app/api/academy/certificates/route.ts`, `CONTENT_TEMPLATE.py`, `frontend/scripts/seed-courses.mjs`, `frontend/scripts/link-sanity-slugs.mjs`.
 
-The Academy is the learning side of the platform: courses, tracks, lessons, quizzes, progress tracking, certificates, and personalized learning paths. It is the most intricate subsystem because it spans **Supabase (structure + progress)** and **Sanity (rich lesson bodies)** simultaneously.
+The Academy is the learning side of the platform: courses, tracks, lessons, quizzes, progress tracking, and personalized learning paths (certificates exist only on the legacy Sanity module path — see §7). It is the most intricate subsystem because it spans **Supabase (structure + progress)** and **Sanity (rich lesson bodies)** simultaneously.
 
 ## Table of contents
 1. [The hybrid data model](#1-the-hybrid-data-model)
@@ -124,7 +124,7 @@ Schema (mig. 028): `quizzes` → `quiz_questions` → `quiz_options`. A quiz att
 
 - **Enroll:** `enrollUser` → `course_player_enrollments`.
 - **Progress:** `updateLessonProgress` → `course_lesson_progress`; course completion % rolls up.
-- **Certificate:** `POST /api/academy/certificates` issues a certificate. It is **idempotent** (returns the existing one if already issued), writes a `certifications` row with a `verification_hash`, stores the PDF URL in `cert_url`, and emails the learner via **Loops** (`sendEvent`). The certificate is publicly verifiable at `/verify/[hash]`.
+- **Certificate (legacy path only):** the Supabase course player (`/academy/tracks/...`) issues **no** certificates and has no completion UI. `POST /api/academy/certificates` is called only by `components/templates/AcademyModuleLayout.tsx`, i.e. the legacy Sanity module engine at `/academy/modules/[slug]`, when its last module is completed. That endpoint issues a certificate. It is **idempotent** (returns the existing one if already issued), writes a `certifications` row with a `verification_hash`, stores the PDF URL in `cert_url`, and emails the learner via **Loops** (`sendEvent`). The certificate is publicly verifiable at `/verify/[hash]`.
 
 ## 8. Personalized Learning
 
