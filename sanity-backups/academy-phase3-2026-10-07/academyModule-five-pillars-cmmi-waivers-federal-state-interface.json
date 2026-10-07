@@ -1,0 +1,827 @@
+{
+ "_createdAt": "2026-09-19T04:08:09Z",
+ "_id": "academyModule-five-pillars-cmmi-waivers-federal-state-interface",
+ "_rev": "cGE63aJqei6oB7VsSNsro1",
+ "_type": "academyModule",
+ "_updatedAt": "2026-09-19T04:08:09Z",
+ "body": [
+  {
+   "_key": "bb12b8efaf54",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "03c1b32b7256",
+     "_type": "span",
+     "marks": [],
+     "text": "Two sovereigns, one delivery system"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "6c02b9595964",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "81c1156caa4a",
+     "_type": "span",
+     "marks": [],
+     "text": "A state statute and the federal policy environment are different things, and the gap between them is where most reform agendas lose momentum. Vermont can direct the Green Mountain Care Board to set maximum hospital payments by rule. It cannot direct Medicare to pay them, it cannot compel a self-insured employer plan to report claims into its database, and it cannot spend federal Medicaid dollars on a benefit the state plan does not authorize."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "1da8f5a9d02e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "4c9bca35d61b",
+     "_type": "span",
+     "marks": [],
+     "text": "Three federal-facing instruments bridge that gap: Section 1115 Medicaid demonstration waivers, CMMI model agreements, and federal rulemaking a state can influence but not control. Each amplifies state authority in a specific direction and each carries conditions."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "40a24c93bce9",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "c01f571e0d27",
+     "_type": "span",
+     "marks": [],
+     "text": "The practical skill is knowing, for any given reform objective, which of three categories it falls into: things the state can do on its own authority, things it can do only with federal agreement, and things it cannot do at all because a higher law forecloses them. Misclassifying an objective is expensive. Vermont has done all three, and this lesson works through each."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "59f43d3d9576",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b2e0a3ca6832",
+     "_type": "span",
+     "marks": [],
+     "text": "Section 1115 \u2014 what the authority actually is"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "fcd447998f4a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "7b5960d4f754",
+     "_type": "span",
+     "marks": [],
+     "text": "Section 1115 of the Social Security Act gives the Secretary of Health and Human Services authority to waive certain Medicaid requirements and to provide federal matching funds for experimental, pilot or demonstration projects that promote the objectives of the program. It is the most powerful federal tool a state has for Medicaid reform, because it lets a state build a program that standard federal rules would not permit."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "ab8bec5ade8d",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "a1b813f959e9",
+     "_type": "span",
+     "marks": [],
+     "text": "In practice states use 1115 authority for four families of things. Coverage expansions beyond standard eligibility categories and benefit structures. Delivery system and payment reform \u2014 global budgets, ACO arrangements and alternative payment models that standard fee-for-service or managed care rules do not accommodate. Health-related social needs services, which CMS has permitted since 2021 for enrollees at risk of institutionalization or with complex social needs, including housing supports, food assistance and transportation. And, since H.R. 1 of 2025 resolved the prior legal uncertainty in favor of state authority, work and community engagement requirements for expansion adults."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "bbf6227ac18a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "358ec028d1a5",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont's primary vehicle is the Global Commitment to Health demonstration, originally approved in 2005 and renewed and amended repeatedly since. It is the authority under which Vermont operates Medicaid hospital global budgets and extends benefits beyond standard state plan requirements. A state without an established 1115 demonstration is starting the Policy pillar's federal work from zero."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "63c65b540fba",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "c3998400ffc8",
+     "_type": "span",
+     "marks": [],
+     "text": "Waivers are negotiated, not adjudicated"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "64592d7074f3",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "7e1348301ad9",
+     "_type": "span",
+     "marks": [],
+     "text": "The most common misconception about 1115 waivers is that they are applications CMS approves or denies against a checklist. They are not. They are the product of sustained negotiation in which the state advocates for the design it wants and CMS negotiates conditions, monitoring requirements, evaluation obligations and financial protections."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "c7b7137aa0e1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "58a5416f334f",
+     "_type": "span",
+     "marks": [],
+     "text": "This has a direct implication for how a state staffs the work. States that engage CMS early, as partners designing a demonstration, obtain better terms than states that submit a completed application and wait. The negotiating position is built from evidence \u2014 a state that can show what its own population costs, and what the demonstration would change, argues from data. A state that cannot, argues from assertion."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "df49108658e8",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "e4adbd27f405",
+     "_type": "span",
+     "marks": [],
+     "text": "Budget neutrality \u2014 the binding constraint"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "63aa4625bc6d",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "817e92bc8128",
+     "_type": "span",
+     "marks": [],
+     "text": "Every 1115 waiver carries a budget neutrality requirement: the federal government will not spend more under the demonstration than it would have spent without it. The comparison is against a negotiated \"without-waiver\" baseline, and it must hold over the demonstration period."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "26929bbeb1df",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "3ed62d21b0e8",
+     "_type": "span",
+     "marks": [],
+     "text": "The baseline is a counterfactual, which means it is inherently uncertain and therefore inherently contestable. What would Medicaid spending have been if the state had done nothing? Trend assumptions, population projections and per-capita growth caps are all negotiable, and small differences in those assumptions compound into large differences in what the state can afford to do. This is why budget neutrality methodology, not the policy content of the demonstration, is frequently the hardest part of a waiver negotiation."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "75c5e79da0c7",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "be60e609721f",
+     "_type": "span",
+     "marks": [],
+     "text": "The sequencing implication is the one that matters for the five-pillar framework. A state that cannot produce a credible total-cost-of-care baseline will negotiate from a weaker position \u2014 not a different negotiation, a worse one. Building the claims and analytics infrastructure to support that argument is a Technology pillar investment that pays off in the Policy pillar, and it is one more reason Technology precedes Economics in the execution sequence."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "3ffd38477597",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "899be1a15bf9",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "What to build before you negotiate\n"
+    },
+    {
+     "_key": "0f3c8eb4212c",
+     "_type": "span",
+     "marks": [],
+     "text": "An all-payer claims database, a total-cost-of-care measurement capability, and a documented risk-adjustment methodology. Vermont entered its federal negotiations with VHCURES. A state arriving without equivalents will accept CMS's baseline assumptions because it has no basis on which to propose different ones \u2014 and those assumptions will govern the demonstration's finances for years."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  },
+  {
+   "_key": "b7478fc4a3ac",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b7ea47ef2acd",
+     "_type": "span",
+     "marks": [],
+     "text": "What a state can compel, and what it cannot"
+    }
+   ],
+   "markDefs": [],
+   "style": "h4"
+  },
+  {
+   "_key": "960876c2d6fe",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "fd1146dedf70",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Hospital rates in the commercial market \u2014 "
+    },
+    {
+     "_key": "267601242ba1",
+     "_type": "span",
+     "marks": [],
+     "text": "State authority, where the legislature grants it \u2192 Vermont's Act 68 directs GMCB to set maximum allowable payments by rule; Maryland's HSCRC has set rates since 1974"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "776d8afe039b",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "40b25fffe71a",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Fully insured commercial plans \u2014 "
+    },
+    {
+     "_key": "17008b47aa81",
+     "_type": "span",
+     "marks": [],
+     "text": "State insurance regulation reaches them \u2192 Rate review, benefit mandates and reporting requirements apply"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "b276bbebe7d1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "ab0217fb7457",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Self-insured employer (ERISA) plans \u2014 "
+    },
+    {
+     "_key": "a11d756d443c",
+     "_type": "span",
+     "marks": [],
+     "text": "Largely beyond state reach \u2192 Gobeille v. Liberty Mutual (2016) held ERISA preempts state claims-reporting mandates as applied to self-funded plans"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "9cc209799a99",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "8ba89d0c9492",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Medicaid \u2014 "
+    },
+    {
+     "_key": "f281ce5e46e2",
+     "_type": "span",
+     "marks": [],
+     "text": "State-administered within federal rules; expandable by waiver \u2192 Section 1115 demonstration authority, subject to budget neutrality"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "b80989b3f9aa",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b7779b30624b",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Medicare fee-for-service \u2014 "
+    },
+    {
+     "_key": "d51683582406",
+     "_type": "span",
+     "marks": [],
+     "text": "No state authority \u2192 Reachable only through a CMMI model agreement or a federal waiver, on CMS's terms and CMS's timeline"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "fe9fcd232eed",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "add9b5ef0305",
+     "_type": "span",
+     "marks": [],
+     "text": "The ERISA ceiling \u2014 Gobeille v. Liberty Mutual (2016)"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "23a097be8596",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "d16708523309",
+     "_type": "span",
+     "marks": [],
+     "text": "On February 29, 2016, the Supreme Court decided *Gobeille v. Liberty Mutual Insurance Co.* by a vote of 6\u20132, in an opinion by Justice Kennedy. The Court held that ERISA preempts Vermont's law requiring health plans \u2014 including self-insured employer plans \u2014 to report claims data into the state's all-payer claims database. Reporting and disclosure are core ERISA functions, and a patchwork of differing state requirements would impose exactly the burden ERISA's preemption clause was written to prevent."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "fe317a9d9553",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "757b3f984740",
+     "_type": "span",
+     "marks": [],
+     "text": "The practical consequence is structural and permanent, absent congressional action. Under KFF's 2025 Employer Health Benefits Survey, 67% of covered workers are in self-funded plans \u2014 80% at large firms. A state operating an all-payer claims database cannot compel the claims of a majority of commercially covered workers into it. Gobeille does not prohibit voluntary contribution, and many plans do contribute; but voluntary is the operative word, and it returns the state to the participation-selection problem from the previous lesson."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "59b9374e3470",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "1e574dc78e42",
+     "_type": "span",
+     "marks": [],
+     "text": "This is why Oliver Wyman's perception-versus-reality analysis had to correct the belief that Vermont has an all-payer model. It does not, and no state statute can create one, because the gap was created by a federal decision about federal law. Understanding this is what separates a reform design that can actually be executed from one that assumes authority the state does not have."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "bb7767e2188f",
+   "_type": "statGrid",
+   "stats": [
+    {
+     "_key": "5df6c90bea97",
+     "context": "Source: U.S. Supreme Court, 577 U.S. 312 (2016)",
+     "label": "Gobeille v. Liberty Mutual (February 29, 2016) \u2014 ERISA preempts state claims-reporting mandates as applied to self-insured plans",
+     "value": "6\u20132"
+    },
+    {
+     "_key": "5e9974833080",
+     "context": "Source: KFF Employer Health Benefits Survey, 2025",
+     "label": "Share of covered U.S. workers in self-funded health plans \u2014 80% at large firms \u2014 largely beyond state reporting authority",
+     "value": "67%"
+    },
+    {
+     "_key": "1119837d8529",
+     "context": "Source: Vermont Public and VTDigger reporting, July 2026, citing information provided to state lawmakers",
+     "label": "Additional federal funds Vermont projected from AHEAD, versus the cap after CMS renegotiated the terms",
+     "value": "$138M \u2192 $10M"
+    },
+    {
+     "_key": "468d56d76109",
+     "context": "Source: Sommers et al., New England Journal of Medicine, 2019; KFF",
+     "label": "Arkansas adults who lost Medicaid coverage under the state's 1115 work-requirement demonstration before a federal court halted it",
+     "value": "18,000"
+    }
+   ]
+  },
+  {
+   "_key": "b8672451882f",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "5122a264af72",
+     "_type": "span",
+     "marks": [],
+     "text": "Rutledge v. PCMA \u2014 where the ceiling stops"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "433194d17923",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "aec9d8e7d01f",
+     "_type": "span",
+     "marks": [],
+     "text": "ERISA preemption is a ceiling on state authority, not a prohibition on state health policy, and the Court drew that line four years later. In *Rutledge v. Pharmaceutical Care Management Association*, decided December 10, 2020 by a vote of 8\u20130 in an opinion by Justice Sotomayor, the Court upheld Arkansas Act 900, which regulates the prices pharmacy benefit managers pay pharmacies for drugs covered by prescription-drug plans."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "d96aae33e81e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "edc3d2d73360",
+     "_type": "span",
+     "marks": [],
+     "text": "The reasoning is the part practitioners should carry forward. Act 900 was \"simple rate regulation\" with neither an impermissible connection to nor reference to ERISA, and ERISA does not preempt state rate regulations that merely increase costs or alter incentives for ERISA plans without forcing them to adopt a particular scheme of substantive coverage. That distinction \u2014 regulating the price of an input versus dictating plan administration or benefit design \u2014 is the doctrinal space in which state cost-control policy still operates. It is the space Act 68's reference-based pricing rule is designed to occupy."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "5d64be70ad04",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "88f038b5ed68",
+     "_type": "span",
+     "marks": [],
+     "text": "CMMI models \u2014 what separates the ones that work"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "36c7c7be71c4",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "5c67d405c751",
+     "_type": "span",
+     "marks": [],
+     "text": "The Center for Medicare and Medicaid Innovation has launched dozens of models since its creation under the ACA. Most did not produce statistically significant reductions in Medicare spending and most were discontinued. The ones that performed better share four design features, and the list is worth memorizing because it doubles as a checklist for evaluating any model a state is considering joining."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "2b4bdad95aa1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "27a26e694c0e",
+     "_type": "span",
+     "marks": [],
+     "text": "First, mandatory or near-mandatory participation, so the financial logic reaches the full population rather than a self-selected subset \u2014 the CJR randomization and Maryland's rate-setting foundation are the clearest illustrations. Second, two-sided risk that is real, meaning downside exposure large enough to change organizational decisions; one-sided shared savings with minimal upside changes very little at scale. Third, adequate implementation support \u2014 technical assistance, analytics and enough runway to redesign care before being held accountable for outcomes the organization cannot yet control. Fourth, alignment with the state regulatory environment, because a federal model that duplicates or conflicts with state rate review and budget processes produces compliance work without producing change."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "c43ba26b8a64",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "97ad4a824b38",
+     "_type": "span",
+     "marks": [],
+     "text": "Note what is absent from that list: the elegance of the payment formula. Model design fails on participation architecture and implementation capacity far more often than on the arithmetic of the benchmark."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "d16e9ae4de02",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "55f2905c8b9d",
+     "_type": "span",
+     "marks": [],
+     "text": "AHEAD \u2014 federal model risk, realized"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "a7f7049a29ba",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "80ca3cfd2c56",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont signed a State Agreement to participate in the CMS AHEAD Model in January 2025; the Green Mountain Care Board joined the Governor and the Agency of Human Services in signing on January 21, 2025. AHEAD is a state-based total cost of care model built around hospital global budgets for Medicare fee-for-service and enhanced primary care payments, with a performance period running into the 2030s. Vermont entered as a Cohort 2 state, with performance scheduled to begin in 2028. The model was intended to continue funding for primary care, the Blueprint for Health and the Support and Services at Home program as OneCare wound down."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "a4c8f3cb406e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "ddf0a40a09f9",
+     "_type": "span",
+     "marks": [],
+     "text": "State officials had calculated, in information provided to lawmakers, that participation could bring roughly $138 million in additional federal funds to Vermont health care. CMS subsequently renegotiated the model's terms, and the renegotiation capped additional payments at approximately $10 million. AHS Secretary Jenney Samuelson described the effect plainly: the overhaul meant greater complexity in Vermont's payment models and less money coming into Vermont."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "4a8259fa4d65",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "cde46e58f99b",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont notified CMS of its withdrawal on July 24, 2026, and announced it publicly the following week \u2014 before its performance period had ever begun. The state redirected its attention to the Rural Health Transformation Program, which is providing $195 million a year for five years. Vermont's Health Care Advocate, Mike Fisher, criticized the years spent pursuing the model."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "99e64ae2f2be",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "1099609e6dc5",
+     "_type": "span",
+     "marks": [],
+     "text": "The structural lesson is the one the book draws. Act 68 is unaffected. Vermont's reference-based pricing mandate, its global budget schedule and its December 2028 Strategic Plan deadline all rest on state statutory authority that never depended on AHEAD continuing. A state whose transformation strategy is a federal model has no strategy when the model's terms change. A state that uses a federal model to accelerate and fund a strategy it has independent authority to execute loses money when the model changes, and keeps the strategy."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "f6e219b88e52",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "9559f1b0752e",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Design for withdrawal before you sign\n"
+    },
+    {
+     "_key": "f825409641b8",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont's AHEAD State Agreement was negotiated with explicit unilateral withdrawal rights \u2014 before launch on 30 days' notice, after launch on six months' notice \u2014 along with protections for GMCB's regulatory independence and provisions on methodology acceptance and dispute resolution. Those clauses looked like lawyerly caution in January 2025. In July 2026 they were the reason Vermont could exit cleanly when the federal economics collapsed. Multi-year federal commitments span administrations; negotiate the exit at the same time you negotiate the entry."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  },
+  {
+   "_key": "5d221726115f",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "86971d962e8b",
+     "_type": "span",
+     "marks": [],
+     "text": "Arkansas \u2014 a waiver that produced exactly what its design implied"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "37c5f1c3d30c",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "87177b323117",
+     "_type": "span",
+     "marks": [],
+     "text": "Federal model risk runs in both directions: a state can be harmed by a federal change, and a state can use federal authority to do something whose consequences were foreseeable. In June 2018 Arkansas became the first state to implement Medicaid work requirements, under an 1115 demonstration, requiring adults aged 30 to 49 to work or engage in qualifying activities for twenty hours a week or document an exemption."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "f7da889da669",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "6e662dc0bb00",
+     "_type": "span",
+     "marks": [],
+     "text": "By the time a federal court halted the policy in spring 2019, roughly 18,000 adults had lost coverage. Sommers and colleagues, publishing in the *New England Journal of Medicine* in 2019, found the policy had not increased employment among the affected group but had raised the uninsured rate among adults aged 30 to 49. The coverage losses were concentrated among people who were working or exempt but failed to complete the monthly online reporting \u2014 an administrative failure, not an eligibility one."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "53ba7c8aeef5",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "ca5d321a3cdb",
+     "_type": "span",
+     "marks": [],
+     "text": "H.R. 1 of 2025 changed the legal posture by authorizing work and community engagement requirements of 80 hours a month for Medicaid expansion enrollees, with states required to implement by the end of 2026. It did not change the operational evidence. A reporting requirement that a large share of eligible enrollees cannot complete produces coverage loss among eligible people, regardless of whether a court has blessed the authority to impose it. That is an Operations pillar failure embedded in a Policy pillar instrument \u2014 and it is the kind of interaction the five-pillar sequence exists to surface before implementation, not after."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "dfeb10c17ec8",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "67c580194214",
+     "_type": "span",
+     "marks": [],
+     "text": "The practitioner framework"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "839f54103b78",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "23ceae6815dc",
+     "_type": "span",
+     "marks": [],
+     "text": "Policy strategy for a health system or a state agency is not primarily advocacy. It is anticipation: knowing what the policy environment will require of the organization 18 to 36 months out, positioning to comply at manageable cost, and identifying which federal programs can fund work the organization intended to do anyway."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "1a1f555cf02a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "8ccd8e8da9db",
+     "_type": "span",
+     "marks": [],
+     "text": "The minimum monitoring infrastructure has four components. Federal rulemaking surveillance through the Federal Register, where proposed rules give 60 to 90 days of advance notice and final rules typically take effect 60 days after publication. State legislative monitoring, because in a state like Vermont each annual session produces material new requirements. CMMI model pipeline monitoring, because application windows are narrow and organizations not watching for them miss participation on favorable terms. And regulatory intelligence on the state board \u2014 GMCB's budget guidance, reference-based pricing methodology updates and program decisions directly determine every Vermont hospital's financial plan."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "8c5e15dfc571",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "1cad93d028ed",
+     "_type": "span",
+     "marks": [],
+     "text": "When something surfaces, the assessment is structured: exposure mapping (what does this specifically require of us, with what financial and operational implications, by when), scenario analysis (under what range of outcomes does our position change), response strategy (compliance roadmap, comment letter, model application, advocacy) and stakeholder communication (who needs to decide what, and when). The discipline is unglamorous. Organizations that skip it are consistently surprised by outputs that were publicly visible for a year."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "22d50cf586bd",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "c0605e375fd5",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Three questions before committing to any federal model\n"
+    },
+    {
+     "_key": "55a1424262e6",
+     "_type": "span",
+     "marks": [],
+     "text": "First: if this model disappears in three years, what survives? If the answer is nothing, the model is the strategy, and that is a strategic failure regardless of the model's merits. Second: what does the agreement say about unilateral withdrawal, methodology disputes and the state regulator's independence? Third: which pillar does this model actually strengthen? A model that funds primary care payments does not, by itself, build the analytics capability the Technology pillar requires, and a model that pays for analytics does not redesign care. Name the pillar, then check whether you already have the prerequisites that pillar depends on."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  },
+  {
+   "_key": "caf3c8952b77",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "37fb1ea387e7",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "From the Book \u2014 Chapter 3\n"
+    },
+    {
+     "_key": "dc07daece046",
+     "_type": "span",
+     "marks": [],
+     "text": "Chapter 3 is the practitioner's guide to the federal interface \u2014 the CMMI model landscape, Section 1115 waiver negotiation, budget neutrality, and how H.R. 1 reshaped the Medicaid environment states now operate in.\n\nRead it at /read/chapter-03."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  }
+ ],
+ "courseTitle": "Five Pillars, One Imperative",
+ "estimatedReadTime": 25,
+ "learningObjectives": [
+  "Describe what Section 1115 authority permits, how a waiver is negotiated, and why budget neutrality is the binding constraint",
+  "Explain the ERISA limit on state authority established by Gobeille v. Liberty Mutual (2016) and the narrower reading Rutledge v. PCMA (2020) left in place",
+  "Identify the four design features that separate CMMI models that produce results from those that do not",
+  "Use Vermont's AHEAD signature and withdrawal to assess federal model risk in a state transformation strategy"
+ ],
+ "level": "Intermediate",
+ "moduleNumber": 8,
+ "nextModuleSlug": "data-infrastructure-as-the-gate",
+ "pillar": "Policy",
+ "prevModuleSlug": "voluntary-vs-mandatory-architecture",
+ "slug": {
+  "_type": "slug",
+  "current": "cmmi-waivers-federal-state-interface"
+ },
+ "summary": "Section 1115 waivers and CMMI models are negotiated instruments, not applications, and both are bounded by what a state can legally compel. This lesson covers budget neutrality, the ERISA ceiling established by Gobeille v. Liberty Mutual, and Vermont's January 2025 AHEAD agreement and July 2026 withdrawal as a worked case of federal model risk.",
+ "title": "CMMI Models, Waivers, and the Federal\u2013State Interface",
+ "totalModules": 24
+}

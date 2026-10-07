@@ -1,0 +1,538 @@
+{
+ "_createdAt": "2026-05-31T07:03:59Z",
+ "_id": "global-budgets-hospital-finance",
+ "_rev": "2zkDeD7zc2Ko2DfFHo5Sm1",
+ "_type": "academyModule",
+ "_updatedAt": "2026-05-31T07:03:59Z",
+ "body": [
+  {
+   "_key": "s1h1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1h1s",
+     "_type": "span",
+     "marks": [],
+     "text": "The Most Radical Idea in Hospital Payment"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "s1p1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1p1s",
+     "_type": "span",
+     "marks": [],
+     "text": "Almost every payment reform discussed in value-based care leaves one thing intact: the hospital still gets paid more when it does more. Shared savings, bundled payments, and pay-for-performance all sit on top of an underlying fee-for-service chassis. A global budget throws that chassis out. Under a global budget, a hospital is given a fixed amount of revenue, set in advance, to cover its inpatient and hospital-based outpatient services for the year \u2014 regardless of how many admissions, procedures, or tests it performs."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s1p2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1p2s",
+     "_type": "span",
+     "marks": [],
+     "text": "This single change inverts the hospital\u2019s financial incentives. Under fee-for-service, an empty bed is lost revenue. Under a global budget, an empty bed is money saved \u2014 because the revenue is guaranteed either way. Suddenly the hospital has a powerful reason to prevent admissions, reduce avoidable emergency visits, invest in care coordination, and keep its community healthy enough to stay out of the building. Revenue is decoupled from volume, and population health becomes a business strategy rather than a charitable afterthought."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s1p3",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1p3s",
+     "_type": "span",
+     "marks": [],
+     "text": "Global budgets are not theoretical. They have been operating at the level of entire states for over a decade, producing some of the strongest evidence in all of payment reform \u2014 and they are now expanding through a federal model that includes Vermont. Understanding global budgets means understanding both how the mechanism works and what happened when real states tried it."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s1c1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1c1s",
+     "_type": "span",
+     "marks": [],
+     "text": "Key Concept: A global budget is a fixed, prospectively set amount of revenue a hospital receives to cover its services for a defined period \u2014 typically a year. It decouples hospital revenue from the volume of care delivered, reversing the core fee-for-service incentive."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  },
+  {
+   "_key": "s1sg1",
+   "_type": "statGrid",
+   "stats": [
+    {
+     "_key": "s1",
+     "context": "Net savings to Medicare over the first three years of the Maryland Total Cost of Care Model, 2019\u20132021 (CMS)",
+     "label": "Maryland Medicare Net Savings",
+     "value": "$689M"
+    },
+    {
+     "_key": "s2",
+     "context": "Reduction in hospital admissions over the first four years of Maryland\u2019s global budget program (Commonwealth Fund / CMS)",
+     "label": "Drop in Hospital Admissions",
+     "value": "16.2%"
+    }
+   ]
+  },
+  {
+   "_key": "s2h1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s2h1s",
+     "_type": "span",
+     "marks": [],
+     "text": "How a Global Budget Actually Works"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "s2p1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s2p1s",
+     "_type": "span",
+     "marks": [],
+     "text": "The mechanics are conceptually simple but operationally demanding. A regulator or payer sets each hospital\u2019s budget prospectively \u2014 before the year begins \u2014 based primarily on the hospital\u2019s historical net revenue for inpatient and outpatient hospital-based services. That budget is then adjusted year to year for factors like inflation, population changes, quality performance, and shifts in the services the hospital provides. The hospital knows, on day one, roughly what it will earn for the entire year."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s2p2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s2p2s",
+     "_type": "span",
+     "marks": [],
+     "text": "The defining feature is that this is an all-payer arrangement in its strongest forms: the budget applies across payers rather than just for Medicare, which prevents hospitals from simply shifting costs onto private insurers to make up for constrained public revenue. Within the budget, the hospital adjusts its prices (unit rates) during the year so that total revenue lands on target. If volume falls, rates can rise to hit the budget; if volume surges, rates fall. The budget \u2014 not the visit count \u2014 is the anchor."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s2steps1",
+   "_type": "stepBlock",
+   "steps": [
+    {
+     "_key": "step1",
+     "description": "A hospital\u2019s revenue for the year is fixed in advance, based largely on its historical net revenue for hospital-based services.",
+     "title": "Set the budget prospectively"
+    },
+    {
+     "_key": "step2",
+     "description": "Because the total is fixed, an extra admission no longer means extra revenue \u2014 and a prevented admission no longer means lost revenue.",
+     "title": "Decouple revenue from volume"
+    },
+    {
+     "_key": "step3",
+     "description": "The hospital now profits by keeping people healthy and out of the building: fewer avoidable admissions, fewer ED visits, more coordination.",
+     "title": "Flip the incentive toward prevention"
+    },
+    {
+     "_key": "step4",
+     "description": "Unit prices are trued up during the year so total revenue lands on the budgeted amount regardless of how volume moves.",
+     "title": "Adjust rates to hit the target"
+    }
+   ],
+   "title": "The Logic Chain of a Global Budget"
+  },
+  {
+   "_key": "s2w1",
+   "_type": "warningBlock",
+   "message": "A global budget that applies to only one payer (e.g., Medicare) invites cost-shifting \u2014 the hospital simply bills private insurers more to offset constrained public revenue. The strongest global budget models, like Maryland\u2019s, are all-payer: every payer\u2019s rates are regulated, closing the cost-shift loophole.",
+   "title": "Why the \"All-Payer\" Part Matters"
+  },
+  {
+   "_key": "s3h1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s3h1s",
+     "_type": "span",
+     "marks": [],
+     "text": "Maryland: The Proof of Concept"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "s3p1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s3p1s",
+     "_type": "span",
+     "marks": [],
+     "text": "No state has gone further than Maryland, which has regulated hospital rates since the 1970s and in 2014 launched an all-payer hospital global budget under its All-Payer Model. In 2019 it expanded into the Maryland Total Cost of Care (TCOC) Model, which built on the global budgets by adding incentives for providers across the system \u2014 not just hospitals \u2014 to coordinate care and manage the total cost of a patient\u2019s care, including outside the hospital walls."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s3p2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s3p2s",
+     "_type": "span",
+     "marks": [],
+     "text": "The results make Maryland the strongest real-world case for global budgets. The global budget approach generated $689 million in net savings to Medicare over the first three years of the TCOC Model (2019\u20132021). Over the first four years (2019\u20132022), total Medicare spending for Part A and Part B declined by an average of $292 per beneficiary per year, or 2.1%. On utilization, the model cut hospital spending by 6.1%, hospital admissions by 16.2%, outpatient emergency department visits by 5.9%, and preventable admissions by 16.8% \u2014 exactly the pattern the incentive design predicts."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s3ex1",
+   "_type": "exampleBlock",
+   "content": "Maryland\u2019s model demonstrated that a state could hold hospital revenue growth to a fixed budget while improving quality \u2014 saving Medicare hundreds of millions of dollars and sharply reducing avoidable hospital use.\n\nIts success directly shaped federal policy. Rather than letting the approach expire, CMS announced the Maryland TCOC Model would end December 31, 2025, and Maryland signed a new long-term agreement to continue an all-payer total-cost-of-care approach under the federal AHEAD Model \u2014 extending the experiment into a multi-state framework.",
+   "title": "Maryland Total Cost of Care Model (2019\u20132025)"
+  },
+  {
+   "_key": "s4h1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s4h1s",
+     "_type": "span",
+     "marks": [],
+     "text": "Beyond Maryland: Rural Hospitals and the Spread of the Idea"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "s4p1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s4p1s",
+     "_type": "span",
+     "marks": [],
+     "text": "Maryland proved global budgets work at scale, but a different problem made them attractive elsewhere: the financial fragility of rural hospitals. Rural hospitals with low patient volumes are devastated by fee-for-service, where revenue depends on filling beds that are often empty. A global budget guarantees their revenue regardless of volume \u2014 a lifeline that can keep the doors open in communities that would otherwise lose access entirely."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s4p2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s4p2s",
+     "_type": "span",
+     "marks": [],
+     "text": "Pennsylvania tested this directly. The Pennsylvania Rural Health Model (PRHM), which ran from 2019 to 2024, gave participating rural hospitals prospective all-payer global budgets based primarily on their historical net revenue, aiming to stabilize their finances and improve population health. The evidence was genuinely mixed: the model delivered meaningful financial stability for fragile rural hospitals, but its impact on quality outcomes was less clear \u2014 a reminder that guaranteeing revenue solves the solvency problem without automatically transforming the quality of care."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s4cmp1",
+   "_type": "comparisonBlock",
+   "left": {
+    "label": "Fee-for-Service Hospital",
+    "points": [
+     "Empty bed = lost revenue",
+     "Financial reward for more admissions and procedures",
+     "Prevention reduces income",
+     "Rural low-volume hospitals are financially fragile",
+     "Revenue rises with utilization"
+    ]
+   },
+   "right": {
+    "label": "Global Budget Hospital",
+    "points": [
+     "Empty bed = money saved against a fixed budget",
+     "Financial reward for avoiding unnecessary care",
+     "Prevention protects the bottom line",
+     "Rural hospitals get predictable, guaranteed revenue",
+     "Revenue is fixed regardless of utilization"
+    ]
+   },
+   "title": "Hospital Incentives: Fee-for-Service vs. Global Budget"
+  },
+  {
+   "_key": "s5h1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s5h1s",
+     "_type": "span",
+     "marks": [],
+     "text": "The AHEAD Model and Vermont\u2019s Path"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "s5p1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s5p1s",
+     "_type": "span",
+     "marks": [],
+     "text": "The federal government is now scaling the global-budget concept across multiple states through the AHEAD Model \u2014 States Advancing All-Payer Health Equity Approaches and Development (also rendered \"Achieving Healthcare Efficiency through Accountable Design\"). AHEAD is a state-based total-cost-of-care model that includes global budgets for participating hospitals and holds participating states accountable for controlling overall growth in healthcare spending while improving population health. CMS issues an agreement to each participating state, which can receive up to $12 million in funding to build the infrastructure, and the model is designed as a long-term effort running through December 31, 2035."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s5p2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s5p2s",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont is among the first states to join AHEAD \u2014 a natural step given its history. For eight years, Vermont ran the Vermont All-Payer ACO Model (VTAPM), a state-led accountable care experiment operated largely through the accountable care organization OneCare Vermont. That model sunset at the end of 2025, and OneCare Vermont announced it would wind down operations at the conclusion of 2025, closing one chapter of the state\u2019s reform story. AHEAD, with its hospital global budgets, is the next chapter \u2014 moving Vermont from an ACO-centered model toward a global-budget, total-cost-of-care framework."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s5p3",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s5p3s",
+     "_type": "span",
+     "marks": [],
+     "text": "AHEAD\u2019s rollout is staged across cohorts, with performance periods phased in over the following years so that states have time to build the regulatory and data infrastructure global budgets require. Vermont\u2019s transition illustrates both the promise and the difficulty of this work: the VTAPM faced real challenges, including the withdrawal of major insurers and persistent questions about cost control and quality, even as it advanced the state\u2019s reform agenda. Global budgets do not erase those challenges \u2014 they restructure the incentives within which a state must still do the hard operational work."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s5an1",
+   "_type": "analogyBlock",
+   "analogy": "Fee-for-service pays a hospital like a taxi meter \u2014 every additional mile (admission, test, procedure) adds to the fare, so there\u2019s no reason to take the shortest route. A global budget pays like a monthly transit pass: the cost is fixed up front, so the operator\u2019s incentive flips entirely toward moving people efficiently and avoiding unnecessary trips.",
+   "concept": "Global budgets vs. fee-for-service hospital payment"
+  },
+  {
+   "_key": "s6h1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s6h1s",
+     "_type": "span",
+     "marks": [],
+     "text": "Promise, Limits, and What It Takes"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "s6p1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s6p1s",
+     "_type": "span",
+     "marks": [],
+     "text": "Global budgets are among the most powerful tools in value-based care precisely because they attack the root of the volume problem rather than layering incentives on top of it. The Maryland evidence \u2014 real Medicare savings alongside large reductions in admissions and preventable hospitalizations \u2014 is some of the most compelling in the field. For rural hospitals, global budgets can be the difference between survival and closure."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s6p2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s6p2s",
+     "_type": "span",
+     "marks": [],
+     "text": "But the model is demanding and not a cure-all. It requires a strong rate-setting authority or regulator capable of setting and adjusting budgets fairly, robust all-payer data systems, and trust among hospitals, payers, and the state. Pennsylvania\u2019s experience showed that financial stabilization can outpace quality improvement, and Vermont\u2019s showed that even a committed state can struggle with insurer participation and measurable cost control. Global budgets change what a hospital is rewarded for; they do not, by themselves, build the care-coordination capacity needed to act on that incentive."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "s6p3",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s6p3s",
+     "_type": "span",
+     "marks": [],
+     "text": "The trajectory, though, is unmistakable. From Maryland\u2019s decade-long proof of concept, to Pennsylvania\u2019s rural lifeline, to the multi-state AHEAD Model now drawing in Vermont and other states through 2035, global budgets have moved from a regulatory curiosity to a central instrument of national payment reform. For students of value-based care, they represent the clearest answer yet to the field\u2019s founding question: what happens when you simply stop paying hospitals more for doing more?"
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "tk",
+   "_type": "takeawayBlock",
+   "points": [
+    "A global budget is a fixed amount of revenue, set in advance, that covers a hospital\u2019s inpatient and hospital-based outpatient services for the year \u2014 decoupling revenue from the volume of care delivered.",
+    "By making revenue fixed, global budgets reverse the fee-for-service incentive: a prevented admission saves money rather than losing it, turning population health and prevention into a financial strategy.",
+    "The strongest models are all-payer, applying regulated rates across all payers to close the cost-shifting loophole that undermines single-payer budgets.",
+    "Maryland is the leading proof of concept: its Total Cost of Care Model generated $689 million in net Medicare savings (2019\u20132021), cut Medicare per-beneficiary spending 2.1% (~$292/year, 2019\u20132022), and reduced hospital admissions 16.2% and preventable admissions 16.8% over four years.",
+    "Maryland\u2019s TCOC Model ended December 31, 2025, with the state continuing an all-payer total-cost-of-care approach under the federal AHEAD Model.",
+    "The Pennsylvania Rural Health Model (2019\u20132024) used global budgets to stabilize fragile rural hospitals\u2019 finances, though its effect on quality outcomes was mixed \u2014 financial fix, quality flaw.",
+    "The federal AHEAD Model is scaling global budgets and total-cost-of-care accountability across multiple states, offering up to $12 million per state and running through December 31, 2035.",
+    "Vermont, after running the Vermont All-Payer ACO Model through 2025 (with OneCare Vermont winding down at the end of 2025), is among the early states transitioning into AHEAD and its hospital global budgets."
+   ]
+  },
+  {
+   "_key": "src",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "srcs",
+     "_type": "span",
+     "marks": [],
+     "text": "Sources"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "src1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "src1s",
+     "_type": "span",
+     "marks": [],
+     "text": "[1] CMS: \"Maryland Total Cost of Care Model\" \u2014 https://www.cms.gov/priorities/innovation/innovation-models/md-tccm \u2014 model structure; global budgets built on the All-Payer Model; TCOC end date December 31, 2025; transition to AHEAD."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "src2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "src2s",
+     "_type": "span",
+     "marks": [],
+     "text": "[2] Commonwealth Fund: \"Hospital Global Budgeting: Lessons from Maryland and Selected Nations\" (June 2024) \u2014 https://www.commonwealthfund.org/publications/fund-reports/2024/jun/hospital-global-budgeting-lessons-maryland-selected-nations \u2014 global budget definition and Maryland utilization results (6.1% spending cut, 16.2% admissions, 5.9% ED, 16.8% preventable admissions)."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "src3",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "src3s",
+     "_type": "span",
+     "marks": [],
+     "text": "[3] Association of Health Care Journalists: \"Maryland hospital payment model cuts costs and improves quality\" (July 2024) \u2014 https://healthjournalism.org/blog/2024/07/maryland-hospital-payment-model-cuts-costs-and-improves-quality-of-care/ \u2014 $689M net Medicare savings 2019\u20132021; $292/beneficiary/year (2.1%) decline 2019\u20132022."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "src4",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "src4s",
+     "_type": "span",
+     "marks": [],
+     "text": "[4] CMS: \"AHEAD (Achieving Healthcare Efficiency through Accountable Design) Model\" \u2014 https://www.cms.gov/priorities/innovation/innovation-models/ahead \u2014 state-based total-cost-of-care model with hospital global budgets; staged cohorts; runs through December 31, 2035."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "src5",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "src5s",
+     "_type": "span",
+     "marks": [],
+     "text": "[5] Health Affairs Forefront: \"Financial Fix, Quality Flaw: Lessons From Pennsylvania\u2019s Rural Health Model\" \u2014 https://www.healthaffairs.org/content/forefront/financial-fix-quality-flaw-lessons-pennsylvania-s-rural-health-model \u2014 PRHM 2019\u20132024; prospective all-payer global budgets from historical net revenue; financial stabilization with mixed quality results."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "src6",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "src6s",
+     "_type": "span",
+     "marks": [],
+     "text": "[6] HCI Innovation Group: \"As OneCare Winds Down, Vermont Looks AHEAD\" \u2014 https://www.hcinnovationgroup.com/policy-value-based-care/accountable-care-organizations-acos/news/55252038/as-onecare-winds-down-vermont-looks-ahead \u2014 Vermont All-Payer ACO Model sunset end of 2025; OneCare Vermont wind-down; Vermont entering AHEAD; up to $12M per state."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "src7",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "src7s",
+     "_type": "span",
+     "marks": [],
+     "text": "[7] VTDigger: \"Vermont\u2019s 8-year \u2018all-payer\u2019 health care experiment sunset at the end of 2025\" (March 2026) \u2014 https://vtdigger.org/2026/03/13/vermonts-8-year-all-payer-health-care-experiment-sunset-at-the-end-of-2025-what-did-it-teach-us/ \u2014 VTAPM history, challenges (insurer withdrawal, cost-control questions), and lessons."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  }
+ ],
+ "courseSlug": "value-based-care",
+ "order": 14,
+ "slug": {
+  "_type": "slug",
+  "current": "global-budgets-hospital-finance"
+ },
+ "title": "Global Budgets for Hospitals: Maryland, Vermont & the AHEAD Model"
+}

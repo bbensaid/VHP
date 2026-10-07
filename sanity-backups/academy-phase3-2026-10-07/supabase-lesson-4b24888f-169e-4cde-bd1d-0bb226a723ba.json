@@ -1,0 +1,145 @@
+{
+ "id": "4b24888f-169e-4cde-bd1d-0bb226a723ba",
+ "track_id": "e6d96b43-9015-46c6-bae2-314ca6cea626",
+ "pillar": "general",
+ "order": 2,
+ "slug": "five-pillars-diagnostic-questions",
+ "title": "The Five Pillars and Their Diagnostic Questions",
+ "summary": "Each pillar answers one question, plays one structural role, and produces one class of result when it is working. This lesson defines all five precisely enough to diagnose which one is failing in a real initiative.",
+ "estimated_minutes": 25,
+ "objectives": [
+  {
+   "id": "obj_5p2a",
+   "text": "State each pillar's diagnostic question and structural role from memory"
+  },
+  {
+   "id": "obj_5p2b",
+   "text": "Name what each pillar produces when it is functioning, and the failure signature when it is not"
+  },
+  {
+   "id": "obj_5p2c",
+   "text": "Diagnose which pillar is the binding constraint in a described initiative"
+  }
+ ],
+ "content_blocks": [
+  {
+   "body": "The framework's usefulness comes from precision. Each pillar is defined by a single diagnostic question, and the five questions are not interchangeable — they interrogate genuinely different things about the same initiative.\n\nPolicy asks: is it permissible? Technology asks: is it possible? Economics asks: is it sustainable? Clinical asks: is it effective? Operations asks: is it executable? An honest 'no' to any one of them predicts underperformance regardless of the other four answers.",
+   "type": "text",
+   "heading": "Five questions, asked in order"
+  },
+  {
+   "rows": [
+    {
+     "left": "Is it permissible?",
+     "label": "Policy",
+     "right": "The mandatory architecture — converts aspirational reform into binding requirements. Without it, the highest-cost actors opt out."
+    },
+    {
+     "left": "Is it possible?",
+     "label": "Technology",
+     "right": "The data substrate — makes population health management, VBC execution, and equity measurement analytically feasible."
+    },
+    {
+     "left": "Is it sustainable?",
+     "label": "Economics",
+     "right": "The incentive architecture — determines whether organizations have a financial reason to behave differently."
+    },
+    {
+     "left": "Is it effective?",
+     "label": "Clinical",
+     "right": "The mechanism of change — payment changes incentives; clinical redesign changes behavior."
+    },
+    {
+     "left": "Is it executable?",
+     "label": "Operations",
+     "right": "The execution layer — translates mandates, models, platforms and programs into organizational reality."
+    }
+   ],
+   "type": "comparison_table",
+   "heading": "The five pillars"
+  },
+  {
+   "body": "A pillar is not an abstraction; it has outputs you can look for. Policy produces statutory mandates that eliminate voluntary opt-out, and accountability timelines that cannot be deferred. Technology produces attribution lists, total-cost-of-care measurement, HEDIS stratification, risk stratification and care-gap identification. Economics produces payment models in which population health management is financially rational, and accountability for total cost rather than encounter volume. Clinical produces primary care transformation that prevents hospitalizations, behavioral health integration that reduces crisis presentations, and care management that closes gaps before they become acute. Operations produces transformation plans that are implemented rather than filed, and project-management infrastructure that tracks progress against real deadlines.\n\nIf you cannot point to the output, the pillar is not working — whatever the org chart says.",
+   "type": "text",
+   "heading": "What each pillar produces when it works"
+  },
+  {
+   "body": "Policy: Acts 167 and 68 make reference-based pricing and global budgets binding on all hospitals. Technology: VHCURES, VITL/VHIE, and the AHS–GMCB analytics capability. Economics: mandatory RBP from FY2027 and hospital global budgets from FY2028. Clinical: Blueprint PCMHs, the Collaborative Care Model, CCBHCs, and community health teams. Operations: the 14-hospital transformation planning process, RHRC technical assistance, the HSA Coordinator model, and EMS regionalization.",
+   "type": "callout",
+   "heading": "Vermont in one line per pillar",
+   "variant": "info"
+  },
+  {
+   "body": "CMS's Pioneer ACO Model, launched in 2012, tested what the most advanced accountable care organizations in the country could do under two-sided financial risk — sharing not just in savings but in losses. CMS did not select novices: the 32 founding Pioneer ACOs were chosen specifically because they already had the care-coordination infrastructure most ACOs were still building. On the Clinical question — is it effective? — these were, by CMS's own selection criteria, the strongest answers available in the program.\n\nThe Economics pillar is what broke. Thirteen of the 32 Pioneer ACOs left the model in 2013 or 2014, and CMS confirmed by name that Franciscan Alliance (Indianapolis), Genesys PHO (Flint, Michigan), and Renaissance Health Network (Wayne, Pennsylvania) were among them. Genesys PHO owed Medicare $1.9 million in repayment after failing to hold down spending in its second year under the downside-risk formula. By 2016, only 9 of the original 32 remained.\n\nNone of this reflects a Clinical failure — the organizations that left were not clinically weaker than the ones that stayed. The reason most commonly cited for leaving was that the two-sided risk model was unsustainable even for already-efficient organizations: an ACO that has already wrung out the easy savings has less room left to keep beating its own benchmark year after year. That is a pure Economics-pillar failure — 'is it sustainable?' answered no — while Policy, Technology, Clinical, and Operations were, comparatively, in reasonable shape. More care coordination would not have kept them in the program.",
+   "type": "text",
+   "heading": "Case study: Economics as the binding constraint — the Pioneer ACO exodus"
+  },
+  {
+   "body": "Geisinger Health System's ProvenCare program, launched in 2006, bundled the entire cost of elective coronary artery bypass graft (CABG) surgery into a single warrantied price and built the protocol around 40 evidence-based best-practice steps — things like correct pre-admission documentation and correct post-operative beta-blocker dosing. None of these 40 steps were new medical knowledge; every one was already an established best practice before ProvenCare existed.\n\nWhat was new was hardwiring all 40 steps into the electronic health record so it could prompt clinicians in real time, and so Geisinger could monitor compliance across every patient rather than audit a sample after the fact. The published results (Casale et al., Annals of Surgery, 2007) show why that mattered: at launch, only 59% of patients received all 40 components — the same gap between known best practice and actual bedside practice that shows up everywhere in medicine. Within three months of the EHR-based prompting and monitoring going live, full-bundle compliance reached 100% and, after one dip to 86%, stayed there for the rest of the study period. Patients treated under the completed protocol had a 16% shorter hospital stay than the conventional-care comparison group.\n\nPolicy allowed this — nothing barred Geisinger from doing it. Economics rewarded it — the bundled price gave Geisinger a direct financial reason to eliminate variation. Clinical knowledge was not the constraint — the 40 steps were already known and written down. What was missing until the EHR build was Technology: a way to make 'is it possible to do this reliably on every patient' actually true. That is the diagnostic signature of a Technology-pillar constraint — the incentive and the know-how both exist, but nothing enforces or verifies the behavior at the point of care.",
+   "type": "text",
+   "heading": "Case study: Technology as the binding constraint — before and after ProvenCare"
+  },
+  {
+   "body": "In practice you rarely find all five failing at once. You find one that is blocking the others — the binding constraint. The diagnostic move is to walk the five questions in order and stop at the first honest 'no.'\n\nAn organization with a signed value-based contract, a redesigned care model, and no real-time cost data has an Economics pillar that exists on paper and a Technology pillar that cannot support it. Adding clinical staff will not help. Renegotiating the contract will not help. The constraint is data, and until it is relieved, investment in the other pillars produces less than it should.",
+   "type": "text",
+   "heading": "Diagnosing the binding constraint"
+  },
+  {
+   "rows": [
+    {
+     "left": "Signal",
+     "label": "Policy",
+     "right": "Participation is voluntary, and the organizations most likely to lose money opt out or never join at all"
+    },
+    {
+     "left": "Signal",
+     "label": "Technology",
+     "right": "The incentive and the clinical know-how both exist, but frontline compliance is inconsistent because nothing prompts or verifies it in real time"
+    },
+    {
+     "left": "Signal",
+     "label": "Economics",
+     "right": "Clinically strong, well-run organizations exit or underperform specifically once real financial risk is introduced"
+    },
+    {
+     "left": "Signal",
+     "label": "Clinical",
+     "right": "Data, mandate, and payment all line up, but the care team's actual practice at the bedside doesn't change"
+    },
+    {
+     "left": "Signal",
+     "label": "Operations",
+     "right": "A funded plan with a real deadline exists on paper but is never actually implemented or tracked"
+    }
+   ],
+   "type": "comparison_table",
+   "heading": "Reading the failure signature"
+  },
+  {
+   "body": "When you're handed an initiative that isn't performing, resist the urge to add more of whatever it already has plenty of. The Pioneer ACO exits didn't need better clinical protocols — they had those. Pre-EHR ProvenCare didn't need a bigger financial incentive or a better-written protocol — it had both. In each case, the fix was in the pillar with the honest 'no,' not the pillar that was easiest to invest in further.",
+   "type": "callout",
+   "heading": "Using the failure signature in practice",
+   "variant": "tip"
+  },
+  {
+   "body": "Chapter 1 defines each pillar's diagnostic question and its structural role. Figure 1.2 is the reference table for what each pillar produces when it is working.\n\nRead it at /read/chapter-01.",
+   "type": "callout",
+   "heading": "From the Book — Chapter 1",
+   "variant": "info",
+   "_bookRef": true
+  }
+ ],
+ "tags": [
+  "five-pillar-framework",
+  "policy",
+  "technology",
+  "economics",
+  "clinical",
+  "operations"
+ ],
+ "related_lesson_ids": [],
+ "is_published": true,
+ "created_at": "2026-09-09T04:03:12.780192+00:00",
+ "updated_at": "2026-09-20T06:03:35.954708+00:00",
+ "sanity_slug": "five-pillars-diagnostic-questions"
+}

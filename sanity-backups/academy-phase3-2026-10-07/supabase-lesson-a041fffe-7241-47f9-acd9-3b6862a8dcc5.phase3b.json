@@ -1,0 +1,240 @@
+{
+  "id": "a041fffe-7241-47f9-acd9-3b6862a8dcc5",
+  "track_id": "b83e4b1c-4565-4054-9ed8-2cf6cba1268c",
+  "pillar": "equity",
+  "order": 20,
+  "slug": "heroi-stratified-hedis-vbc-safeguards",
+  "title": "HEROI, Stratified HEDIS, and VBC Equity Safeguards",
+  "summary": "Stratified HEDIS shows where a disparity exists; HEROI scores whether an organization is closing disparities across five dimensions at once; social risk adjustment and peer grouping keep a value-based contract from penalizing providers who serve higher-social-risk populations. This lesson also explains what equity-weighting an incremental cost-effectiveness ratio actually does, and checks the current — shifting — federal policy ground under all of it.",
+  "estimated_minutes": 25,
+  "objectives": [
+    {
+      "id": "obj_5p20a",
+      "text": "Explain what stratified HEDIS reporting reveals that a standard, plan-wide HEDIS average cannot, and identify NCQA's current stratification requirements."
+    },
+    {
+      "id": "obj_5p20b",
+      "text": "Describe HEROI's five weighted components and explain why a composite equity score is necessary when disparities can move independently across dimensions."
+    },
+    {
+      "id": "obj_5p20c",
+      "text": "Explain what equity-weighting an incremental cost-effectiveness ratio (ICER) actually does, using distributional cost-effectiveness analysis, and distinguish it from HEROI."
+    },
+    {
+      "id": "obj_5p20d",
+      "text": "Identify social risk adjustment and peer/risk grouping as the two families of VBC equity safeguards, and evaluate their current federal trajectory using named 2025–2026 CMS policy actions."
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Lesson one showed why an improving average can conceal a widening gap. This lesson is the toolkit for catching that failure before it reaches a board report, a rate-setting decision, or a value-based contract: stratified measurement, a composite equity score, and the specific payment-design safeguards that keep value-based contracts from punishing the providers serving the hardest populations.\n\nNone of what follows is a sixth pillar either. Stratified HEDIS is a measurement technique applied inside the Clinical and Technology pillars. HEROI is a scoring framework that sits across all five. Social risk adjustment and peer grouping are Economics-pillar payment-design mechanisms. The instrumentation changes; the underlying test — who moved, and who did not — does not.",
+      "type": "text",
+      "heading": "From Measuring Disparities to Closing Them"
+    },
+    {
+      "body": "HEDIS — the Healthcare Effectiveness Data and Information Set — is the most widely used quality measurement system in American healthcare, covering measures from cancer screening rates to diabetes control to postpartum follow-up. In its standard form, HEDIS reports one number per measure per plan or provider population: the share of patients who received the recommended screening, hit the target blood pressure, or returned for a follow-up visit. That number is an average, and it has the same blind spot as any average — it cannot show whether the gain is broadly shared or concentrated.\n\nStratified HEDIS reporting breaks that average back into its component subgroups — by race, ethnicity, income, geography, language, and disability status — and reports performance separately for each. The National Committee for Quality Assurance (NCQA), which develops and maintains HEDIS, has been steadily expanding stratification requirements: as of Measurement Year 2024, 22 HEDIS measures are stratified by race and ethnicity, and NCQA's 2026 Health Equity Accreditation standards require organizations to report stratified results across measures spanning cancer screening, immunizations, blood pressure control, diabetes assessment, postpartum care, and substance use disorder treatment initiation.\n\nVermont's Health Equity Studio implements this same stratification methodology against VHCURES claims data and the Blueprint for Health clinical registry — the state-level equivalent of what NCQA requires nationally. The result, in both cases, is the same kind of information lesson one's diabetes example needed: not “did the average improve,” but “did every subgroup improve, and by how much.”",
+      "type": "text",
+      "heading": "Stratified HEDIS: Splitting the Average Back Apart"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "HEDIS measures NCQA stratifies by race and ethnicity, as of Measurement Year 2024",
+          "value": "22",
+          "source": "NCQA"
+        },
+        {
+          "label": "Vermont primary care access rate, statewide vs. BIPOC adults — the gap stratification exists to surface",
+          "value": "91% vs. 79–81%",
+          "source": "Vermont Department of Health, January 2025"
+        }
+      ]
+    },
+    {
+      "rows": [
+        {
+          "left": "One rate per measure per plan or practice — a single average",
+          "label": "What is reported",
+          "right": "Separate rates for the same measure, broken out by race, ethnicity, income, geography, language, or disability"
+        },
+        {
+          "left": "A subgroup with flat or worsening performance, as long as another subgroup's gains are large enough to move the average",
+          "label": "What it can hide",
+          "right": "Nothing at the subgroup level — but it depends entirely on complete demographic data being attached to the claim or chart"
+        },
+        {
+          "left": "Claims and clinical registries already collected for standard reporting",
+          "label": "Where the data comes from",
+          "right": "The same sources, plus race/ethnicity/language fields that are frequently incomplete, especially in commercial claims"
+        },
+        {
+          "left": "Colorectal cancer screening rate: 72% of eligible patients screened",
+          "label": "Example measure",
+          "right": "Colorectal cancer screening rate: 78% of white patients, 61% of Black patients, 58% of Hispanic patients screened"
+        },
+        {
+          "left": "No one — the average looks acceptable",
+          "label": "Who is accountable for the gap",
+          "right": "Whoever owns the population health strategy for the lagging subgroup, by name, with a target and a timeline"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "Standard HEDIS vs. Stratified HEDIS"
+    },
+    {
+      "body": "Stratification is only as good as the demographic data attached to the underlying record, and that data is uneven. Medicaid claims tend to have the most complete race and ethnicity fields; commercial insurance claims typically lack them; Medicare added standardized race and ethnicity collection more recently than either. Vermont's own VHCURES all-payer claims database has documented gaps in race and ethnicity fields for exactly this reason.\n\nTwo approaches close the gap. Direct collection asks the patient at the point of care — the NCQA standard that Blueprint for Health practices and FQHCs already follow. Indirect imputation estimates race and ethnicity probabilistically from surname and census-block characteristics, using methods such as RAND's Bayesian Improved Surname Geocoding (BISG). Neither replaces the other: direct collection is more accurate where it exists, and imputation fills gaps where it does not, at the cost of estimation error concentrated in exactly the small, geographically dispersed populations — Vermont's Abenaki communities, for instance — that most need accurate measurement.\n\nThis is not a Vermont-specific problem. Every state and national payer stratifying HEDIS measures is working against the same incomplete-demographic-data constraint, which is why NCQA's stratification requirements have expanded gradually rather than all at once — the measurement infrastructure has to be built before the measure can be reported reliably.",
+      "type": "text",
+      "heading": "The Data Problem Underneath Stratification"
+    },
+    {
+      "body": "A single stratified measure — even 22 of them — creates a new problem: an organization can close the gap on one measure while it widens on another, and no individual metric will show overall equity performance improving or declining. The Health Equity Return on Investment (HEROI) framework is the Health Equity Studio's response — a composite score that combines five equity dimensions into one number, so that trade-offs across dimensions are visible rather than hidden inside a stack of separate reports.\n\nThe five components are weighted by health impact and evidence strength: access equity (25%) — the gap in primary care, specialty, and emergency care utilization between advantaged and disadvantaged subpopulations; quality equity (25%) — the gap in HEDIS performance across the same subpopulations for the highest-burden chronic disease measures; outcome equity (25%) — the gap in avoidable hospitalizations, ED visits, and readmissions; SDOH burden (15%) — the prevalence of unmet health-related social needs and the completeness of screening for them; and trust and engagement (10%) — patient experience, measured through CAHPS survey data stratified by race and income.\n\nA score of 80 or above indicates equity achieved across all five dimensions simultaneously. A score of 60–80 flags material disparity in at least one dimension requiring targeted intervention. Below 60 indicates disparities pervasive enough to require a comprehensive redesign of the equity program, not an incremental fix. Vermont's own statewide HEROI score has not yet been formally computed — it depends on the analytics vendor procurement the state has underway — a reminder that a scoring framework is only as real as the data pipeline feeding it.",
+      "type": "text",
+      "heading": "HEROI: Turning Five Independent Disparities Into One Number"
+    },
+    {
+      "body": "Five separate stratified reports let an organization improve on the measures it finds easiest and quietly stall on the rest — and still claim equity progress by pointing to whichever report looks best. A weighted composite forces the trade-off into view: an organization cannot raise its HEROI score by improving access equity alone if quality and outcome equity are flat or falling, because those two dimensions are 65% of the score between them.",
+      "type": "callout",
+      "heading": "Why One Score Instead of Five Reports",
+      "variant": "info"
+    },
+    {
+      "body": "A different, older, and more formal tool addresses a related but distinct question: not “how equitably is this organization performing,” but “should this specific intervention's cost-effectiveness be judged differently depending on who benefits from it.” An incremental cost-effectiveness ratio (ICER) is the standard health-economics measure of value — the additional cost of an intervention divided by the additional health benefit it produces, typically expressed as cost per quality-adjusted life year (QALY). A conventional ICER treats a QALY gained by a wealthy, urban patient and a QALY gained by a low-income, rural patient as worth exactly the same amount.\n\nDistributional cost-effectiveness analysis (DCEA) — developed principally by Richard Cookson, Susan Griffin, Ole Norheim, and Anthony Culyer, and applied using tools like the “equity impact plane” — rejects that assumption. Equity-weighting an ICER means applying explicit weights to the health gains in the calculation based on the socioeconomic position of who receives them, so a health gain concentrated among a disadvantaged population counts for more in the ratio than the identical clinical gain concentrated among an advantaged one. The practical effect: an intervention that looks only marginally cost-effective under a conventional, unweighted ICER can look clearly cost-effective — or the reverse — once the distribution of who benefits is built into the number itself, rather than reported separately as a footnote.\n\nHEROI and an equity-weighted ICER are not the same tool, and this lesson does not conflate them. HEROI scores an organization's ongoing performance across five dimensions of disparity. An equity-weighted ICER scores a single proposed intervention's value before it is adopted, using the same underlying principle — a unit of health benefit is not automatically worth the same regardless of who receives it — applied at the point of decision rather than the point of measurement.",
+      "type": "text",
+      "heading": "What ‘Equity-Weighting an ICER’ Actually Means"
+    },
+    {
+      "body": "HEROI is the Health Equity Studio's organizational scorecard, not an ICER of any kind — it has no cost term. An equity-weighted ICER, from the distributional cost-effectiveness analysis literature, is an intervention-appraisal tool with an explicit cost-per-benefit calculation. If you're asked to compute a HEROI 'ratio,' that's a category error — HEROI is a weighted composite score, not a ratio of cost to benefit.",
+      "type": "callout",
+      "heading": "Don't Conflate the Two Tools",
+      "variant": "warning"
+    },
+    {
+      "body": "Value-based contracts create a specific equity risk when they don't account for who a provider serves: a shared savings or global budget target set without adjusting for the social risk of the attributed population rewards providers with healthier, lower-cost, more socially stable patients and penalizes providers serving higher-need populations for the same quality of care. Social risk adjustment corrects the benchmark itself, before performance is measured against it.\n\nCMS built exactly this mechanism into the ACO REACH model beginning performance year 2023, through a Health Equity Benchmark Adjustment that combined a beneficiary's Area Deprivation Index score with dual-Medicaid-eligibility status to adjust ACOs' financial benchmarks. The adjustment grew more aggressive in 2024 — moving from a downward adjustment on the bottom 50% of the deprivation distribution to the bottom 30%, and from -$6 to -$10 per member per month for providers serving the least-deprived populations, effectively increasing the relative benchmark advantage for ACOs serving higher-need beneficiaries.\n\nThat trajectory reversed in 2025. CMS's Innovation Center released a new strategic direction in May 2025 that dropped “health equity” from its stated priorities entirely, and CMS confirmed the Health Equity Benchmark Adjustment is being removed from ACO REACH quality scoring starting performance year 2026 — the model's final year. The mechanics of adjusting for social risk have not disappeared from federal payment policy, but the explicit equity framing that named and justified them at the federal level is being withdrawn at the same time state programs like Vermont's are being asked to build their own versions.",
+      "type": "text",
+      "heading": "VBC Safeguard One: Social Risk Adjustment"
+    },
+    {
+      "body": "Where social risk adjustment corrects a payment benchmark before the fact, peer and risk grouping corrects a quality score after the fact — by giving credit for serving a harder population rather than adjusting the target itself. Two current CMS mechanisms illustrate the approach. The Merit-based Incentive Payment System's Complex Patient Bonus awards clinicians up to 10 additional points when their Medicare patient population's average HCC risk score or dual-eligibility share is at or above the prior year's median — a direct recognition that a clinician serving more medically and socially complex patients should not be scored as if their patients were average.\n\nThe Skilled Nursing Facility Value-Based Purchasing program adopted a comparable mechanism for a later start date: beginning fiscal year 2027, high-performing SNFs whose resident population is at least 20% dually eligible receive bonus points under a Health Equity Adjustment, alongside an increase in the program's payback percentage from 60% to 66%. Both mechanisms reward performing well while serving a harder population, rather than exempting that population from measurement altogether — the distinction that keeps a safeguard from becoming a loophole.\n\nNeither mechanism is exactly the peer-quintile stratification used elsewhere in Medicare payment reform, and that is deliberate: risk-score-based bonuses and population-share thresholds are two different technical routes to the same equity objective, and a state or a value-based contract does not need to pick only one. Vermont's hospital global budget methodology under Act 68, which must resolve hospital-level social risk adjustment before benchmarks are finalized, can draw on either approach — or, as the book's own framing insists it should, both together.",
+      "type": "text",
+      "heading": "VBC Safeguard Two: Peer and Risk Grouping"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "ACO REACH's Health Equity Benchmark Adjustment for the least-deprived population share, 2023 to 2024 — before its removal from quality scoring in PY2026",
+          "value": "-$6 → -$10 PMPM",
+          "source": "CMS, ACO REACH PY2026 model update"
+        },
+        {
+          "label": "Dual-eligible resident share required for a Skilled Nursing Facility to qualify for the FY2027 Health Equity Adjustment bonus",
+          "value": "≥20%",
+          "source": "CMS, SNF VBP Program"
+        },
+        {
+          "label": "Maximum MIPS Complex Patient Bonus for clinicians with high HCC risk or dual-eligible caseloads",
+          "value": "10 pts",
+          "source": "CMS, MIPS Complex Patient Bonus Fact Sheet"
+        }
+      ]
+    },
+    {
+      "rows": [
+        {
+          "left": "Mechanism: up to 10 bonus points based on average HCC risk score and dual-eligible share, methodology updated for PY2022",
+          "label": "MIPS Complex Patient Bonus",
+          "right": "Status: active"
+        },
+        {
+          "left": "Mechanism: Area Deprivation Index + dual-Medicaid status adjust ACO financial benchmarks, added PY2023",
+          "label": "ACO REACH Health Equity Benchmark Adjustment",
+          "right": "Status: being removed from quality scoring starting PY2026; the model itself ends December 31, 2026"
+        },
+        {
+          "left": "Mechanism: bonus points for high-performing SNFs with ≥20% dual-eligible residents",
+          "label": "SNF VBP Health Equity Adjustment",
+          "right": "Status: begins FY2027"
+        },
+        {
+          "left": "Mechanism: risk scores incorporate differential cost patterns for dual-eligible beneficiaries",
+          "label": "CMS-HCC risk adjustment model, Version 28",
+          "right": "Status: active, fully phased in for 2026 payment"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "Federal VBC Equity Safeguards — Mechanism and Current Status"
+    },
+    {
+      "body": "CMMI's May 2025 strategic direction dropped 'health equity' as an explicit named priority, and the one CMS model built around a named health equity benchmark adjustment is losing that adjustment the year before the model itself ends. The underlying mechanics — adjusting for dual-eligibility, deprivation, and risk score — have not vanished from federal payment policy, but the framing that justified and protected them federally is being withdrawn at the same moment state programs are being asked to build their own. That raises the stakes on Vermont's AHEAD design question. It does not lower them.",
+      "type": "callout",
+      "heading": "The Ground Is Shifting Under Federal Equity Adjustment",
+      "variant": "warning"
+    },
+    {
+      "body": "Vermont's hospital global budgets must resolve hospital-level social risk adjustment as an explicit design question — ensuring that hospitals serving the Northeast Kingdom's high-SDOH population are not penalized relative to Burlington-area hospitals with a more favorable social risk profile, for delivering the same quality of care to a harder population. As of early 2026 this was an active, unresolved design question inside AHEAD; with Vermont's July 2026 withdrawal from AHEAD, it carries over to the global budgets GMCB must set under Act 68, and is not a settled feature of either.\n\nThe federal retreat from explicit health-equity framing does not resolve that question for Vermont; it makes AHS and GMCB's own resolution of it more consequential, because a state-designed safeguard can no longer assume it will be reinforced or modeled by a federal equivalent that is being wound down in the same period. HEROI, stratified HEDIS, and Vermont's own social risk adjustment methodology are, in that sense, doing work that a federal program was starting to do and is now stepping back from.",
+      "type": "text",
+      "heading": "What This Means for Vermont's Hospital Global Budgets"
+    },
+    {
+      "rows": [
+        {
+          "left": "Does the attribution methodology exclude high-SDOH patients who lack a qualifying primary care visit?",
+          "label": "Attribution equity",
+          "right": "A methodology that requires a visit to attribute a patient systematically drops the patients least able to get one"
+        },
+        {
+          "left": "Is the benchmark adjusted for the social risk profile of the attributed population?",
+          "label": "Social risk adjustment",
+          "right": "Without it, providers serving higher-need populations are held to the same target as providers serving lower-need ones"
+        },
+        {
+          "left": "Are quality measures stratified by race, ethnicity, and income, with equity improvement rewarded, not just average improvement?",
+          "label": "Quality measure equity",
+          "right": "An unstratified quality score can rise while the underlying disparity widens — exactly lesson one's failure mode"
+        },
+        {
+          "left": "Does the contract give financial credit for SDOH investments that reduce long-term utilization?",
+          "label": "SDOH investment incentives",
+          "right": "Without credit, SDOH investment is a cost center with no contractual upside, so it gets cut first under budget pressure"
+        },
+        {
+          "left": "Are care management resources allocated by SDOH burden and disparity level, not just clinical risk score?",
+          "label": "Care management intensity",
+          "right": "Clinical risk alone misses social complexity that drives cost and poor outcomes independent of diagnosis"
+        },
+        {
+          "left": "Are there protections against providers avoiding high-complexity, high-SDOH patients?",
+          "label": "Beneficiary protections",
+          "right": "A capitated or shared-savings contract without this protection creates a direct financial incentive to under-serve the hardest patients"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "The VBC Equity Audit — Six Questions Before Signing"
+    },
+    {
+      "body": "Stratified HEDIS shows where a disparity exists. HEROI scores whether an organization is closing disparities across all five dimensions at once, not just the easiest one. An equity-weighted ICER decides, before an intervention is adopted, whether its value calculation should account for who benefits. Social risk adjustment and peer/risk grouping keep the payment contract itself from punishing the providers doing the hardest work.\n\nNone of these four tools is a sixth pillar, and none of them works alone. A hospital with a strong HEROI score but no social risk adjustment in its global budget is still exposed to a benchmark that doesn't reflect its population. A state with excellent stratified HEDIS data but no HEROI-style composite can watch one disparity close while another widens and call it progress. The toolkit only does what lesson one's justice test requires — closing the gap, not just moving the average — when all four pieces operate together, inside whichever of the five pillars a given decision touches.",
+      "type": "text",
+      "heading": "Putting the Toolkit Together"
+    },
+    {
+      "body": "Chapter 10 introduces the HEROI Index and the stratified-measurement toolkit this lesson teaches in depth.\n\nRead it at /read/chapter-10.",
+      "type": "callout",
+      "heading": "From the Book — Chapter 10",
+      "variant": "info",
+      "_bookRef": true
+    }
+  ],
+  "tags": [
+    "equity-imperative",
+    "value-based-care",
+    "stratified-hedis",
+    "social-risk-adjustment",
+    "heroi"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-09-19T04:09:21.045715+00:00",
+  "updated_at": "2026-10-07T13:09:45.043598+00:00",
+  "sanity_slug": "heroi-stratified-hedis-vbc-safeguards"
+}

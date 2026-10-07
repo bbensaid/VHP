@@ -1,0 +1,60 @@
+{
+  "id": "14ddb776-34a5-465f-b3ce-0032f8ea720d",
+  "track_id": "437611e0-8fc2-4041-8aa3-3e3c7c3f1e9e",
+  "pillar": "economics",
+  "order": 2,
+  "slug": "total-cost-of-care-management",
+  "title": "Managing Total Cost of Care",
+  "summary": "Total cost of care (TCOC) is the sum of all spending for a defined population across all settings. Understanding the drivers of TCOC — inpatient, outpatient, ED, pharmacy, post-acute — is essential for designing cost reduction strategies.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj-ph-013-1",
+      "text": "Identify the major categories of total cost of care spending"
+    },
+    {
+      "id": "obj-ph-013-2",
+      "text": "Explain which cost drivers are most amenable to population health intervention"
+    },
+    {
+      "id": "obj-ph-013-3",
+      "text": "Describe the concept of high-value vs. low-value care"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "In value-based care, the goal is not just to provide excellent care — it's to deliver excellent outcomes at appropriate cost. Total cost of care (TCOC) analysis reveals where spending is concentrated and where intervention can generate the most impact.",
+      "type": "text"
+    },
+    {
+      "text": "TCOC Spending Categories",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "For a typical Medicare population, spending breaks down approximately as:\n\n- **Inpatient** — 30–35% of total spending (hospitalizations, surgical procedures)\n- **Physician/outpatient** — 25–30% (office visits, outpatient procedures)\n- **Post-acute care** — 15–20% (skilled nursing facilities, home health, inpatient rehab)\n- **Pharmacy** — 10–15%\n- **ED** — 5–8%\n- **Other** (DME, lab, imaging) — 5–10%\n\nThe highest-leverage areas for population health intervention are **inpatient admissions** (reduce preventable hospitalizations), **post-acute care** (right-size SNF use, extend home health), and **ED utilization** (redirect avoidable visits to primary care).",
+      "type": "text"
+    },
+    {
+      "text": "High-Value vs. Low-Value Care",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Not all spending is created equal. **High-value care** delivers meaningful health benefits relative to its cost — appropriate cancer screenings, evidence-based chronic disease management, effective surgical interventions.\n\n**Low-value care** delivers marginal or no benefit, and in some cases causes harm. The Choosing Wisely campaign identifies hundreds of low-value services across specialties — routine pre-operative testing before low-risk procedures, imaging for uncomplicated low back pain, antibiotics for viral upper respiratory infections.\n\nEstimates suggest 25–30% of U.S. healthcare spending is low-value or waste. Population health programs that monitor ordering patterns and provide clinical decision support can reduce low-value care without compromising outcomes.",
+      "type": "text"
+    },
+    {
+      "body": "Vermont's AHEAD model (All-Payer Health Equity Approaches and Development) sets a statewide per-capita TCOC growth target across all payers. Hospitals, ACOs, and Medicaid are all held to the same target — creating alignment across payers that most states lack.",
+      "type": "callout",
+      "title": "Vermont's Total Cost of Care Model",
+      "variant": "info"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:25:00.353457+00:00",
+  "updated_at": "2026-06-01T18:15:22.17441+00:00",
+  "sanity_slug": "total-cost-of-care-management"
+}

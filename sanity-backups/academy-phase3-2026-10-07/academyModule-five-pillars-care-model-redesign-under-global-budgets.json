@@ -1,0 +1,1075 @@
+{
+ "_createdAt": "2026-09-19T04:08:09Z",
+ "_id": "academyModule-five-pillars-care-model-redesign-under-global-budgets",
+ "_rev": "cGE63aJqei6oB7VsSNsro1",
+ "_type": "academyModule",
+ "_updatedAt": "2026-09-19T04:08:09Z",
+ "body": [
+  {
+   "_key": "5a32d34491b6",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "f53461e10188",
+     "_type": "span",
+     "marks": [],
+     "text": "What a Capped Budget Actually Changes"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "af0c4f59fa5f",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "2b59379c1ba2",
+     "_type": "span",
+     "marks": [],
+     "text": "Under fee-for-service, an avoidable admission is revenue. Under a global budget, the same admission is a cost against a fixed envelope with no offsetting payment. Nothing about the clinical work changes when a payment model changes \u2014 the patient still arrives, the bed is still staffed, the medication is still administered. What changes is which clinical activity the organization can afford to be good at."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "888bdb6f9aef",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "2485702c7d83",
+     "_type": "span",
+     "marks": [],
+     "text": "This is the Clinical pillar's diagnostic question: is it effective? Not \"is it evidence-based\" \u2014 nearly everything in this lesson has been evidence-based for two decades \u2014 but does the redesign actually change utilization in this population, at this scale, with this workforce. An intervention with strong trial evidence and no implementation capacity produces nothing."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "0ff83609b770",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "43c758278ed0",
+     "_type": "span",
+     "marks": [],
+     "text": "Four redesigns carry most of the load when revenue is capped: primary care transformation that prevents hospitalizations, behavioral health integration that reduces crisis presentations, care management that closes gaps before they become acute, and hospital-at-home that moves acute care out of the building. Each has a real evidence base. Each also has a dependency on one of the other four pillars that will break it if that pillar is not in place first."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "4e5d811126ef",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "44df0f982d14",
+     "_type": "span",
+     "marks": [],
+     "text": "The Blueprint for Health: What Vermont Built"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "fe197b1e6fe3",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "ec8417a6d486",
+     "_type": "span",
+     "marks": [],
+     "text": "The Vermont Blueprint for Health was established in 2006 and reached statewide implementation by 2013. It is an all-payer program \u2014 Medicare, Medicaid and commercial insurers all pay into it \u2014 which is the structural feature that distinguishes it from the pilot-scale medical home programs most states ran in the same period. A practice does not have to run two care models, one for the payer that funds transformation and one for everyone else."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "a0f711aa3fc7",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "d1767ff1c033",
+     "_type": "span",
+     "marks": [],
+     "text": "The Blueprint has three components. Practices earn NCQA Patient-Centered Medical Home recognition and receive per-member-per-month payments from all payers, with a base payment plus a performance component. Community Health Teams \u2014 social workers, nurses, community health workers and behavioral health staff \u2014 are funded separately and attached to practices, so that a small rural practice gets care management capacity it could never hire on its own panel revenue. Health information technology, through VITL and the VHCURES all-payer claims database, supplies the population-level reporting that makes proactive outreach possible."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "7230e4e47f38",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "274f0b8637a8",
+     "_type": "span",
+     "marks": [],
+     "text": "The CHT is the piece most often missed by states that copy the model. The PMPM payment buys the practice's attention; the CHT buys the labor. A practice paid to manage a population that has no one to do the managing simply absorbs the payment into operating margin and changes nothing."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "595b37f8082d",
+   "_type": "statGrid",
+   "stats": [
+    {
+     "_key": "7efdc19837b6",
+     "context": "Source: Population Health Management (2016), \"Vermont's Community-Oriented All-Payer Medical Home Model Reduces Expenditures and Utilization While Delivering High-Quality Care\"",
+     "label": "Medical expenditure reduction per $1M invested in the Blueprint, driven by lower hospitalization and outpatient facility use",
+     "value": "$5.8M"
+    },
+    {
+     "_key": "1dd63108b0ad",
+     "context": "Source: Vermont AHS Health Care System Transformation Report, November 2025",
+     "label": "Share of Vermont emergency department visits classified as potentially avoidable",
+     "value": "32.3%"
+    },
+    {
+     "_key": "67cf75c18a8b",
+     "context": "Source: Vermont AHS Health Care System Transformation Report, November 2025",
+     "label": "Vermont adults reporting a personal health care provider, against an 87% national benchmark",
+     "value": "91%"
+    },
+    {
+     "_key": "6d1f65983493",
+     "context": "Source: Vermont Blueprint for Health practice support resources",
+     "label": "Share of a primary care panel in the highest-complexity tier \u2014 accounting for 30-40% of total cost of care for that panel",
+     "value": "3-5%"
+    }
+   ]
+  },
+  {
+   "_key": "b857178fe7f7",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "7a6a7d6c6495",
+     "_type": "span",
+     "marks": [],
+     "text": "The Same Clinical Activity, Two Payment Environments"
+    }
+   ],
+   "markDefs": [],
+   "style": "h4"
+  },
+  {
+   "_key": "04475224ebfe",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "24b4cbd466aa",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "A prevented admission \u2014 "
+    },
+    {
+     "_key": "903ae11a6e65",
+     "_type": "span",
+     "marks": [],
+     "text": "Fee-for-service: lost revenue, absorbed by the hospital that prevented it \u2192 Global budget: retained margin inside a fixed envelope"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "6b4480234c90",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "086c3f4b5905",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "A care coordinator's salary \u2014 "
+    },
+    {
+     "_key": "212e303aff60",
+     "_type": "span",
+     "marks": [],
+     "text": "Fee-for-service: unreimbursed overhead unless a billable code fits \u2192 Global budget: an investment repaid by the utilization it avoids"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "480e547c9ef8",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "16a2b7a369b9",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Panel outreach to patients not seeking care \u2014 "
+    },
+    {
+     "_key": "cc5b59025634",
+     "_type": "span",
+     "marks": [],
+     "text": "Fee-for-service: generates work with no encounter to bill \u2192 Global budget: the highest-yield activity on the panel"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "12057d4ab2d2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "8ff6a28116c5",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Behavioral health screening in primary care \u2014 "
+    },
+    {
+     "_key": "20fa63eeac8f",
+     "_type": "span",
+     "marks": [],
+     "text": "Fee-for-service: creates referral demand the specialty system cannot absorb \u2192 Global budget: identifies the crisis presentations that drive ED and inpatient cost"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "0f628d44ef99",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "055ca5f8b3d0",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "A patient who never comes in \u2014 "
+    },
+    {
+     "_key": "2859d27d4b41",
+     "_type": "span",
+     "marks": [],
+     "text": "Fee-for-service: invisible until they arrive in the ED \u2192 Global budget: attributed, costed, and the practice's problem now"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "7d9e0198ece2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "f22b74ec1c3d",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Site of care \u2014 "
+    },
+    {
+     "_key": "18047188070b",
+     "_type": "span",
+     "marks": [],
+     "text": "Fee-for-service: higher-acuity settings pay more \u2192 Global budget: lowest clinically appropriate setting wins"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "abd1b43fe530",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "0c26cd332fbf",
+     "_type": "span",
+     "marks": [],
+     "text": "Primary Care Is a Productivity Problem Before It Is a Headcount Problem"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "b03e9fc8df48",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "c2b6668fbdf7",
+     "_type": "span",
+     "marks": [],
+     "text": "The Oliver Wyman analysis behind Vermont's Act 167 work reached a conclusion most states resist: Vermont does not have a primary care physician shortage in the conventional sense. HRSA recognizes no Health Professional Shortage Areas in Vermont. What Vermont has is primary care operating in a care model that cannot use the clinicians it already employs."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "c932d134a83b",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "dcbd61a74335",
+     "_type": "span",
+     "marks": [],
+     "text": "The mechanism is panel capacity. A physician working without delegation manages roughly 1,100-1,200 patients. The same physician in a team-based model \u2014 medical assistant, care coordinator, behavioral health care manager, CHT connection, each person working at the top of their license \u2014 can carry 1,500-2,000. That is a 30-50% capacity gain with no new physicians, and it is achievable in a timeframe that physician recruitment is not."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "86c076099697",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "fcf64224e1a5",
+     "_type": "span",
+     "marks": [],
+     "text": "The redesign that produces it is unglamorous: standing orders so that a medical assistant closes a screening gap without a physician touch, a registry that generates the outreach list, protocols that let the care coordinator adjust follow-up intervals, and a schedule that reserves physician time for the decisions only a physician can make. None of it requires new clinical science. All of it requires a practice to rewrite how a day works."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "cf8e771c2903",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b26719b6381e",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "The arithmetic that funds a care manager\n"
+    },
+    {
+     "_key": "741bcf8070f1",
+     "_type": "span",
+     "marks": [],
+     "text": "Panel risk stratification exists to point scarce care management at the patients whose utilization is actually movable. In a 2,000-patient panel, the 3-5% in the highest-complexity tier account for 30-40% of total cost of care. Preventing roughly one hospitalization a month in that tier avoids on the order of $180,000 a year \u2014 enough to fund a half-time care coordinator and still return margin, under any shared-savings or global-budget arrangement. The claim is not that care management pays for itself everywhere; it is that it pays for itself where cost is concentrated, and stratification is how you find out whether it is."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  },
+  {
+   "_key": "b079dfaba04f",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "67e7f7768889",
+     "_type": "span",
+     "marks": [],
+     "text": "Behavioral Health Integration: The Collaborative Care Model"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "bd7a461647f3",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "bc58b80da2d6",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont's behavioral health data describes a system failing at the point of highest acuity: 245.5 emergency department visits per 10,000 population for suicide ideation and self-harm, with 30-day follow-up after a mental health ED visit reaching only 76% and after a substance use ED visit only 68% (Vermont AHS Transformation Report, November 2025). Those follow-up numbers are not a quality footnote. A crisis presentation that does not connect to ongoing care is a scheduled return visit."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "975d8583ba16",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "69606571d3e4",
+     "_type": "span",
+     "marks": [],
+     "text": "The Collaborative Care Model is the response with the strongest evidence base, and it is deliberately not a referral model. A behavioral health care manager sits inside the primary care practice, maintains a registry of every patient in treatment, delivers brief structured interventions, and tracks response with validated instruments \u2014 PHQ-9 for depression, GAD-7 for anxiety. A consulting psychiatrist reviews that registry on a schedule, usually weekly, and advises on the patients who are not improving. The primary care physician remains the treating and billing provider."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "e0e33b13d62f",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "d476bb4d786d",
+     "_type": "span",
+     "marks": [],
+     "text": "The structural insight is in the psychiatrist's role. In a referral model, one psychiatrist can see one patient at a time and the practice's access is capped by that clinician's schedule. In CoCM, one psychiatrist reviews a caseload through the care manager and can support ten to fifteen practices, reserving direct evaluation for the genuinely complex. For a rural state with a psychiatric shortage, that difference is the whole model."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "373f495c144f",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "bc379cdc27d7",
+     "_type": "span",
+     "marks": [],
+     "text": "The Evidence: IMPACT and What Followed"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "f86ea801d9bd",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "059eb78314f3",
+     "_type": "span",
+     "marks": [],
+     "text": "The foundational trial is IMPACT \u2014 Un\u00fctzer and colleagues, JAMA, December 2002. It randomized 1,801 primary care patients aged 60 and older with major depression, dysthymia or both across 18 primary care clinics in eight health care organizations in five states, comparing collaborative care management to usual care. Collaborative care more than doubled the effectiveness of depression treatment relative to usual care. It remains one of the largest depression treatment trials ever conducted, and it is emphatically not a Vermont result."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "ef38d55d6b7d",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "4f2e63e99fc0",
+     "_type": "span",
+     "marks": [],
+     "text": "The cost finding came later and matters more to a CFO. Un\u00fctzer and colleagues followed the same cohort for four years and reported in the American Journal of Managed Care in February 2008 that IMPACT participants had lower mean total health care costs \u2014 $29,422 versus $32,785 for usual care, a difference of $3,363 per patient over four years, with a bootstrap analysis putting the probability of lower costs at 87%. Total costs, not depression-specific costs: the savings showed up in medical utilization."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "52455f9b6140",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "35ae70e036c4",
+     "_type": "span",
+     "marks": [],
+     "text": "CoCM is also the only integrated behavioral health model with its own Medicare billing codes, which is why it survives outside grant funding. CPT 99492 covers the first calendar month of care management (70 minutes), 99493 each subsequent month (60 minutes), 99494 each additional 30 minutes, and HCPCS G2214 a 30-minute month for practices with lighter caseloads. As of January 1, 2026, CMS discontinued G0512; federally qualified health centers and rural health clinics now bill the same CPT codes and G2214 as everyone else, which removes a long-standing distortion for safety-net practices."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "b096f89d6194",
+   "_type": "statGrid",
+   "stats": [
+    {
+     "_key": "66e62f241532",
+     "context": "Source: Un\u00fctzer et al., JAMA, December 2002",
+     "label": "Patients aged 60+ randomized across 18 primary care clinics in five states in the IMPACT collaborative care trial",
+     "value": "1,801"
+    },
+    {
+     "_key": "040e2946d92a",
+     "context": "Source: Un\u00fctzer et al., American Journal of Managed Care, February 2008",
+     "label": "Lower mean total health care costs per IMPACT participant over four years ($29,422 vs. $32,785 under usual care)",
+     "value": "$3,363"
+    },
+    {
+     "_key": "7943ec5b18d7",
+     "context": "Source: Vermont AHS Health Care System Transformation Report, November 2025",
+     "label": "Vermont 30-day follow-up rates after a mental health ED visit and after a substance use ED visit",
+     "value": "76% / 68%"
+    },
+    {
+     "_key": "de5c373dd253",
+     "context": "Source: CMS behavioral health integration billing guidance, 2026",
+     "label": "Medicare CPT codes for psychiatric collaborative care management, plus HCPCS G2214; G0512 discontinued January 1, 2026",
+     "value": "99492-99494"
+    }
+   ]
+  },
+  {
+   "_key": "2790a6fd76d2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "f477768558b4",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "CoCM fails on operations, not on evidence\n"
+    },
+    {
+     "_key": "2ae8bc7b5e67",
+     "_type": "span",
+     "marks": [],
+     "text": "Three prerequisites decide whether a CoCM launch survives its first year, and none of them is clinical. The registry: CoCM is registry-based management, and most EHRs can produce one only after deliberate configuration \u2014 a practice that tries to run CoCM out of the visit note is running referral care with extra paperwork. Time tracking: the billing codes are time-based per calendar month, so the practice needs a way to capture care manager and physician minutes before the first claim, not after the first denial. The psychiatric consultant: weekly case review has to be contracted and scheduled, usually by telepsychiatry, because a consultant who reviews the registry when convenient is not providing the supervision the model's evidence rests on."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  },
+  {
+   "_key": "c948463bf606",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "da468ba806ee",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont's Integration Layers \u2014 and the Sustainability Trap"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "332e64dcfc7e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b4dfebf9d473",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont is building behavioral health capacity in three layers. Integration in primary care is the first: the Blueprint's Mental Health Integration pilot embedded mental health clinicians and community health workers in primary care beginning in 2023, and the 2025 qualitative evaluation found improved access and engagement, with nearly 80% of administrative entities reporting increased Community Health Team staffing. Community capacity is the second: Vermont became a CCBHC demonstration state in 2024, has two active demonstration sites, and plans five additional certified entities \u2014 in Springfield, Burlington, St. Albans, Newport and Barre \u2014 to cover every Hospital Service Area. Crisis response is the third: mobile crisis has been operational since January 2024, dispatched through the 988 Suicide and Crisis Lifeline."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "9d55ea954e5b",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "4faab69b7749",
+     "_type": "span",
+     "marks": [],
+     "text": "The MHI evaluation also found the failure mode. The pilot worked and its funding was temporary. Clinical redesign funded by a grant produces a documented improvement and then a documented regression, because the staff funded by the grant leave when it ends and the workflow they anchored collapses behind them."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "50dc8ff1b818",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "6de340260b92",
+     "_type": "span",
+     "marks": [],
+     "text": "This is why the Clinical pillar cannot be sequenced ahead of Economics. A care model is only as durable as the recurring payment underneath it. Vermont's answer is to move MHI onto permanent primary care payment through AHEAD rather than renew it as a pilot \u2014 which is a financing decision made to protect a clinical result."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "045b51fd4d02",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "718021f9d78c",
+     "_type": "span",
+     "marks": [],
+     "text": "Care Management and the Transition That Fails"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "bb92ff188502",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "9c5c05c0af40",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont's 30-day all-cause readmission rate sits at 14.8%, and its 76% behavioral health follow-up rate reflects the same underlying defect: the hospital-to-community handoff is not systematic. The Transitional Care Model is the evidence-based countermeasure \u2014 identify high-risk patients before discharge, assign a transitional care nurse, make direct contact with the patient or caregiver within 24 to 48 hours, reconcile medications, and book the primary care follow-up before the patient leaves the building."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "b5b0a5543f45",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "9f4958b85a69",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont's implementation runs through the Community Health Teams, with a protocol that is deliberately mundane: CHT contact within 24 hours of a discharge notification, a 7-day follow-up visit that reviews discharge instructions and medication reconciliation and screens for the social needs that drive readmission, and a 30-day care plan review that either closes the episode or moves the patient into standing panel management."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "104622f4c06e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "4ef27e9e1d11",
+     "_type": "span",
+     "marks": [],
+     "text": "The protocol depends on a notification. If the practice does not learn that its attributed patient was admitted, none of it triggers. VITL's admission notification is therefore not an IT convenience \u2014 it is the event that starts the clinical workflow, which is exactly the kind of dependency the Technology pillar exists to satisfy before the Clinical pillar can deliver. Blueprint practices that run the protocol for every attributed discharge, rather than for the patients whose physician happens to call, report readmission rates below the Vermont average."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "59183c7ce476",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "fa1076572c9a",
+     "_type": "span",
+     "marks": [],
+     "text": "Panel Stratification: Matching Staffing to Risk"
+    }
+   ],
+   "markDefs": [],
+   "style": "h4"
+  },
+  {
+   "_key": "f36b16db9d0e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "ac0d9ed75b7c",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Tier 1 \u2014 Complex (3-5% of panel) \u2014 "
+    },
+    {
+     "_key": "9497c102d78c",
+     "_type": "span",
+     "marks": [],
+     "text": "Multiple chronic conditions, high prior utilization, behavioral health and social needs, frailty \u2192 Intensive care management: CHT assignment, written care plan, scheduled outreach, named care manager"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "00bd66606445",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "f99a6b1898c7",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Tier 2 \u2014 Moderate risk (15-20%) \u2014 "
+    },
+    {
+     "_key": "04915460c1fc",
+     "_type": "span",
+     "marks": [],
+     "text": "One or two chronic conditions with management difficulty, recent ED visit or admission \u2192 Proactive chronic disease management: care gap outreach, behavioral health integration, medication management"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "141bcaa9d79d",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b7313bdbe74b",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Tier 3 \u2014 Standard (50-60%) \u2014 "
+    },
+    {
+     "_key": "d15adeedead7",
+     "_type": "span",
+     "marks": [],
+     "text": "Healthy or stable chronic conditions, routine preventive needs \u2192 Preventive care: wellness visit, immunization, screening, health coaching"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "1383c177ab1f",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "527470234cf2",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Tier 4 \u2014 Inactive (20-30%) \u2014 "
+    },
+    {
+     "_key": "7294ec23cf28",
+     "_type": "span",
+     "marks": [],
+     "text": "Attributed but not engaged; may be getting care elsewhere or not at all \u2192 Outreach and re-engagement: targeted contact, open-access scheduling, community health worker follow-up"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "25c1c2eda5ba",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b7554aa7c17a",
+     "_type": "span",
+     "marks": [],
+     "text": "Hospital at Home: Moving the Building"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "fae65269b886",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "1526fafca6cd",
+     "_type": "span",
+     "marks": [],
+     "text": "The most direct way to reduce the cost of an inpatient stay under a capped budget is to deliver it somewhere cheaper. Medicare's Acute Hospital Care at Home initiative lets an approved hospital treat inpatient-level patients in their homes, waiving Conditions of Participation that would otherwise require 24/7 on-site nursing, with a combination of in-person and remote visits. By the American Medical Association's count, 366 programs across 139 health systems in 37 states have been approved."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "0b6c08b2826b",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "a881292de226",
+     "_type": "span",
+     "marks": [],
+     "text": "The evidence predates the waiver. Levine and colleagues published a randomized controlled trial in Annals of Internal Medicine in 2020 comparing home hospital care with usual inpatient care at Brigham and Women's: adjusted cost of the acute episode was roughly 38% lower, and 30-day readmission was 7% in the home arm against 23% among inpatients. CMS's own study, delivered to Congress on September 30, 2024, found that AHCAH beneficiaries generally had lower 30-day mortality than comparable brick-and-mortar inpatients, with low escalation rates back to the hospital."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "b358f6952002",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "a030313644fe",
+     "_type": "span",
+     "marks": [],
+     "text": "Hospital-at-home is also the clearest example in this lesson of a clinical model living on a policy authority. The waiver was scheduled to lapse on January 30, 2026. Section 6210 of the Consolidated Appropriations Act, 2026 (P.L. 119-75) amended Section 1866G(a)(1) of the Social Security Act to strike that date and substitute September 30, 2030, and appropriated $2.5 million for CMS to study hospital-at-home quality and cost against traditional inpatient care. Absent further action, every hospital with an active waiver must discharge or return its home inpatients on September 30, 2030."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "6a2a587c12cd",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "d13dda0bde57",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "A four-year authority and a ten-year capital plan\n"
+    },
+    {
+     "_key": "15e1d7a83f6a",
+     "_type": "span",
+     "marks": [],
+     "text": "Hospital-at-home requires capital and hiring \u2014 monitoring equipment, a command center, paramedic or nurse field teams, supply logistics \u2014 on a payment authority that currently expires in 2030. That is not an argument against building it; it is an argument for knowing which pillar the risk sits in. The Clinical question (is it effective?) is answered: the trial evidence and CMS's own study both support it. The open question is the Policy one (is it permissible, and for how long?). A board approving the capital should be told which of those two questions the decision actually turns on."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  },
+  {
+   "_key": "ce906fd37cf6",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "5bc4f3d8ba03",
+     "_type": "span",
+     "marks": [],
+     "text": "Where the Clinical Pillar Depends on the Other Four"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "b23f8e6def05",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "a0b41dc40911",
+     "_type": "span",
+     "marks": [],
+     "text": "Every redesign in this lesson carries dependencies out of the Clinical pillar, and the dependency, not the clinical design, is usually what fails. Policy decides whether the work is permissible and payable: CoCM exists at scale because CMS created billing codes for it; hospital-at-home exists because Congress keeps extending a waiver. Technology decides whether it is possible: registry-based management, admission notifications and care gap reports are the operating substrate of every model described here, and a practice documenting blood pressure in free text cannot run any of them."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "8ac5880789b5",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "9325e3e39542",
+     "_type": "span",
+     "marks": [],
+     "text": "Economics decides whether it is sustainable: under fee-for-service, prevention destroys revenue, and the Blueprint's return only reads as a return to an organization that keeps what it does not spend. Operations decides whether it is executable: behavioral health care managers, community health workers and transitional care nurses are roles with no established training pipeline, and Vermont's practical answer \u2014 converting existing CHT staff with targeted training rather than recruiting new ones \u2014 is an operations decision that determines whether the clinical model launches this year or in three."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "511ed5fbbd45",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "bedf6d8e45c3",
+     "_type": "span",
+     "marks": [],
+     "text": "The sequencing matters in one direction. A payment reform without a care model produces cost-shifting; a care model without payment reform produces a pilot that ends. But a care model deployed before the data infrastructure exists produces nothing at all, because the clinical team cannot see the population it is accountable for."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "f511c3d10de2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "4dd6b9b18cbf",
+     "_type": "span",
+     "marks": [],
+     "text": "The Equity Imperative in Care Redesign"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "b89d5a6c13e9",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "9c2eb378f1a3",
+     "_type": "span",
+     "marks": [],
+     "text": "Is it just? Applied to care redesign, the question is not whether the program was offered to everyone. It is whether the people whose utilization the model is counting on reducing can actually reach it."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "6f680303c4ab",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "6dcee45d8d46",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont's own numbers make the point. 91% of Vermonters report a personal health care provider, which is four points above the national benchmark and genuinely good. In the same reporting period, 59% of Vermont primary care practices were accepting new Medicaid patients. A transformation strategy that runs entirely through primary care will, without a deliberate correction, deliver its gains to the population already attached to a practice and miss the population whose avoidable ED use is highest. The state average improves and the gap widens."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "34cb4f941a1e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "0d2132859898",
+     "_type": "span",
+     "marks": [],
+     "text": "The same test applies to each redesign. A CoCM program reachable only by patients with a working phone and a stable address excludes the patients with the highest crisis presentation rates. Hospital-at-home requires a home that is safe, heated and connected \u2014 an eligibility criterion that quietly sorts by income and by housing stability. Community Health Team capacity distributed by practice size rather than by panel risk sends the fewest care managers to the practices carrying the most complex patients. None of these is a reason not to build the model. Each is a design question that has to be answered inside the Clinical pillar's own work, not deferred to a separate equity initiative that reports later and controls nothing."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "4d0ca67e487d",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b3b279c3cab9",
+     "_type": "span",
+     "marks": [],
+     "text": "The Failure Modes Worth Naming"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "81c51f54dcdf",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "d17edc652c35",
+     "_type": "span",
+     "marks": [],
+     "text": "Grant-funded redesign. The pilot performs, the funding ends, the staff leave, the workflow reverts. Vermont's MHI evaluation documented exactly this risk and it is the most common way clinical transformation is lost."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "ba9710d3c48e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "148c61ba366e",
+     "_type": "span",
+     "marks": [],
+     "text": "Transformation without field support. States that distribute a PCMH toolkit and wait get PCMH-badged practices that behave as they always did. Vermont's Blueprint puts a quality improvement facilitator in each of its 14 Hospital Service Areas to do readiness assessment, data coaching and workflow redesign inside the practice. That field staff line is the first thing cut in a budget transition and the least recoverable."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "5f90fa99f7b3",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "53d22616d3bf",
+     "_type": "span",
+     "marks": [],
+     "text": "Redesign that skips the panel. A practice that has not stratified its panel deploys care management by referral \u2014 meaning by which physician remembers to refer \u2014 and systematically misses the high-risk patients who are not currently in front of anyone. Tier 4, the attributed-but-inactive 20-30%, is invisible by definition and contains a disproportionate share of the people the model was built for."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "4a34f835f772",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "180f3babd5f2",
+     "_type": "span",
+     "marks": [],
+     "text": "Measurement built after the fact. If the practice cannot demonstrate the utilization change, the payer will not fund the next year of it \u2014 which is the subject of the next lesson."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "48b77eeabb1a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "873ee539b077",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "From the Book \u2014 Chapter 8\n"
+    },
+    {
+     "_key": "20341c7cd28b",
+     "_type": "span",
+     "marks": [],
+     "text": "Chapter 8 is the Clinical pillar in full \u2014 care models redesigned once revenue is capped rather than volume-driven.\n\nRead it at /read/chapter-08."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  }
+ ],
+ "courseTitle": "Five Pillars, One Imperative",
+ "estimatedReadTime": 25,
+ "learningObjectives": [
+  "Explain why a fixed global budget inverts the business case for prevention, and what that inversion requires of primary care staffing and panel design.",
+  "Describe the three roles of the Collaborative Care Model, the evidence base behind it, and the operational prerequisites \u2014 registry, time tracking, psychiatric consultation \u2014 that determine whether it works.",
+  "Trace how Vermont's Blueprint for Health translates PMPM payment and Community Health Teams into measured reductions in hospitalization and outpatient facility use.",
+  "Identify the dependencies a clinical redesign carries into the Policy, Technology, Economics and Operations pillars, and the equity test each of them must pass."
+ ],
+ "level": "Intermediate",
+ "moduleNumber": 15,
+ "nextModuleSlug": "quality-mechanics-hedis-hcc",
+ "pillar": "Clinical",
+ "prevModuleSlug": "economics-as-design-vs-management",
+ "slug": {
+  "_type": "slug",
+  "current": "care-model-redesign-under-global-budgets"
+ },
+ "summary": "When revenue is capped, every avoidable admission becomes a cost with no offsetting payment, which changes what a care model is for. This lesson works through the four redesigns that actually move utilization \u2014 primary care transformation, behavioral health integration, care management, and hospital-at-home \u2014 using Vermont's Blueprint for Health and the national Collaborative Care evidence base.",
+ "title": "Care Model Redesign Under Global Budgets",
+ "totalModules": 24
+}

@@ -1,0 +1,644 @@
+{
+ "_createdAt": "2026-09-09T13:49:24Z",
+ "_id": "academyModule-five-pillars-dependency-logic-execution-sequence",
+ "_rev": "fyirEhnL7S4LV3USY4hiBa",
+ "_type": "academyModule",
+ "_updatedAt": "2026-09-20T04:51:10Z",
+ "body": [
+  {
+   "_key": "25c813d23ab4",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "7d6b41bd799a",
+     "_type": "span",
+     "marks": [],
+     "text": "Order is not a ranking"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "8fb204cb9c70",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "295673667664",
+     "_type": "span",
+     "marks": [],
+     "text": "The sequence Policy \u2192 Technology \u2192 Economics \u2192 Clinical \u2192 Operations is the single most misread part of the framework. It is not a statement that Policy matters most and Operations matters least. It is a statement about what has to exist before what else can work."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "bfaf9e71eac0",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "be809b04db20",
+     "_type": "span",
+     "marks": [],
+     "text": "Dependency logic is the principle that some investments cannot produce results until an upstream enabling investment is in place. The order falls out of the dependencies; it is not chosen for emphasis."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "dc3d33a85532",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "d9214cda8956",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Three kinds of dependency, plus feedback\n"
+    },
+    {
+     "_key": "b7afd1e87c1b",
+     "_type": "span",
+     "marks": [],
+     "text": "ENABLES \u2014 makes something possible that was not possible before (Policy enables binding payment reform; Technology enables analytics-driven payment management). REQUIRES \u2014 cannot function without (VBC contracts require data infrastructure; care models require execution infrastructure). DRIVES \u2014 actively forces change (payment incentives drive care redesign; statutory deadlines drive execution capacity). And \u27f2 marks feedback: relationships that run backward once the system is live, such as implementation data informing the next round of policy design."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  },
+  {
+   "_key": "6f9255078627",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "a87aca9a2bc4",
+     "_type": "span",
+     "marks": [],
+     "text": "The critical-path gate test"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "b6f57d0e850a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "8c7bdc2262aa",
+     "_type": "span",
+     "marks": [],
+     "text": "A gate is a prerequisite that must be complete before a downstream investment can be productive. A gate is open when the work is finished and closed while it is unfinished \u2014 and this is the part organizations get wrong: a gate is opened by completing the work, never by deciding to proceed."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "f3519ecfb635",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "351567b8184c",
+     "_type": "span",
+     "marks": [],
+     "text": "The test for whether something is on the critical path or can run in parallel is a single question: could this investment produce its full intended value today, with the upstream pillars in their current state? If yes, it is parallel work and should proceed now. If no, it is behind a closed gate, and starting it early buys optionality at best and unmanaged risk at worst."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "090dace4b3bc",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "e2d72e2b879a",
+     "_type": "span",
+     "marks": [],
+     "text": "Selected dependencies from the matrix"
+    }
+   ],
+   "markDefs": [],
+   "style": "h4"
+  },
+  {
+   "_key": "23082fb81154",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "705e792b6b53",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Policy \u2192 Economics \u2014 "
+    },
+    {
+     "_key": "82abac353ece",
+     "_type": "span",
+     "marks": [],
+     "text": "ENABLES (critical path) \u2192 Mandatory authority makes structural payment reform binding. Voluntary payment reform produces voluntary results."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "f27869c8db57",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "87595f49f8ef",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Policy \u2192 Operations \u2014 "
+    },
+    {
+     "_key": "df5f731f7065",
+     "_type": "span",
+     "marks": [],
+     "text": "DRIVES (critical path) \u2192 Statutory deadlines force organizations to build execution capacity they otherwise defer indefinitely."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "6aed66160194",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "403ce67b5783",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Technology \u2192 Economics \u2014 "
+    },
+    {
+     "_key": "39b62ff6a62d",
+     "_type": "span",
+     "marks": [],
+     "text": "ENABLES \u2192 Analytics make VBC financial management possible. The contract can exist without them; performance under it cannot be managed."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "bbce92178281",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "2d8729c18a84",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Economics \u2192 Clinical \u2014 "
+    },
+    {
+     "_key": "5a2dbb889a24",
+     "_type": "span",
+     "marks": [],
+     "text": "DRIVES (critical path) \u2192 Payment incentives reshape care delivery. Under global budgets, a prevented admission becomes margin instead of lost revenue."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "d244f752c2f7",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "c621ee1ed096",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Clinical \u2192 Operations \u2014 "
+    },
+    {
+     "_key": "085c3b1d89c6",
+     "_type": "span",
+     "marks": [],
+     "text": "REQUIRES \u2192 A care model is a diagram until it has workforce, credentialing and management infrastructure."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "14972982587d",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "2aefa44d20bc",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Operations \u2192 Policy \u2014 "
+    },
+    {
+     "_key": "3f360c972f40",
+     "_type": "span",
+     "marks": [],
+     "text": "INFORMS \u27f2 (feedback) \u2192 Implementation data feeds back into policy design, making the architecture self-correcting rather than purely top-down."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "3900c30c3edd",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "c8898d3f90fe",
+     "_type": "span",
+     "marks": [],
+     "text": "Case study: skipping the gate \u2014 Massachusetts' 2006 coverage expansion"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "edacbf4df9d9",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "0617c63599a8",
+     "_type": "span",
+     "marks": [],
+     "text": "Massachusetts' 2006 reform (Chapter 58) is usually remembered as the template for the Affordable Care Act: an individual mandate paired with subsidized coverage, moving the state to near-universal insurance. Judged purely on the Policy and Economics questions \u2014 is it permissible, is it sustainable \u2014 it worked, and utilization data later confirmed real gains: more residents used primary and preventive care, and reliance on the emergency room as a usual source of care fell over time."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "eecfd68976c0",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "2c5ac6b37373",
+     "_type": "span",
+     "marks": [],
+     "text": "What the reform did not do first was build primary care capacity to absorb the newly insured. In the years immediately after passage, roughly one in five Massachusetts adults reported being told a doctor's office or clinic was not accepting new patients or not accepting their type of coverage \u2014 a pattern researchers linked to lower reimbursement under the state's public programs and limited provider networks colliding with a sudden demand surge. Reports of dramatically longer wait times circulated widely at the time; the rigorous data on exactly how much waits lengthened is thinner than the anecdote, which is itself a useful caution against overstating a real effect you can't fully quantify."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "c3ba1db02b7e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "3eb2f23dc5bb",
+     "_type": "span",
+     "marks": [],
+     "text": "Read through the dependency matrix, this is a downstream pillar \u2014 Economics, in the form of expanded coverage \u2014 being pushed live while an upstream-in-sequence pillar it depends on for full effect, primary care Operations and Clinical capacity, was still behind its own gate. Coverage is necessary but not sufficient; it converts into access only if there is a functioning system on the other end of it, built on the same timeline."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "5237c8264dc0",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "f280b0b94f85",
+     "_type": "span",
+     "marks": [],
+     "text": "Case study: opening the gate \u2014 HITECH and the EHR adoption curve"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "3f14770379d0",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "22c25e9027a8",
+     "_type": "span",
+     "marks": [],
+     "text": "Contrast that with a Policy-drives-Technology relationship that worked close to how the framework predicts. Before 2009, hospital EHR adoption in the United States crawled forward at roughly 3.2% a year among the hospitals that would later become eligible for federal incentives \u2014 total adoption was still only in the 10\u201320% range as of 2008."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "a3db5892c18e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b9be47fcac9b",
+     "_type": "span",
+     "marks": [],
+     "text": "The HITECH Act (2009) tied real Medicare and Medicaid incentive payments to demonstrating 'meaningful use' of certified EHR technology \u2014 a Policy and Economics instrument aimed squarely at forcing a Technology build. After it took effect, annual EHR adoption growth among eligible hospitals jumped to about 14.2% a year, versus 3.3% a year at hospitals that weren't eligible for the incentive \u2014 a difference-in-differences of roughly 7.9 percentage points directly attributable to the program. By 2015\u20132017, more than 95% of U.S. hospitals had adopted an EHR."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "d62ee40d797f",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "8b019cd76b73",
+     "_type": "span",
+     "marks": [],
+     "text": "This is the DRIVES relationship from the matrix operating close to as designed: a statutory incentive did not just encourage a downstream investment, it multiplied its pace by more than four times. It is also a reminder that 'Technology adopted' and 'Technology pillar functioning' are not the same claim \u2014 HITECH proves the adoption curve can be forced; later chapters of this course (and the book) return to how much further interoperability had to travel after adoption before that Technology base actually supported analytics-driven care."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "36338ce4b090",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b3815ab5876d",
+     "_type": "span",
+     "marks": [],
+     "text": "Design can run ahead of management"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "89640515bb6f",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "2045b2cffce7",
+     "_type": "span",
+     "marks": [],
+     "text": "One refinement prevents a common overcorrection. Sequencing does not mean four pillars sit idle while the first one finishes."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "ee3e6a717129",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "da9e347ddb6e",
+     "_type": "span",
+     "marks": [],
+     "text": "The useful distinction is between Economics-as-design and Economics-as-management. Defining a payment architecture \u2014 the rate methodology, the risk model, the equity constraints \u2014 can and should proceed in parallel with the technology build. Operating that model, with real money and real downside risk, requires the technology substrate to be live. Confusing the two is how organizations end up having signed something they cannot run."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "c46b75a2711a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "1c45786cb4ab",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "The same test, run on both case studies\n"
+    },
+    {
+     "_key": "769fd3be7048",
+     "_type": "span",
+     "marks": [],
+     "text": "Massachusetts and HITECH answer the same question \u2014 could this downstream investment produce its full intended value today, given the upstream pillars' current state? \u2014 in opposite directions. Coverage expansion's answer was no: primary care capacity wasn't there yet, and access strain followed. HITECH's incentive answer was yes: it didn't need a downstream pillar to be ready first, because Policy sits upstream of Technology in the sequence \u2014 its job was to force that build, and it did. Before committing to a downstream investment, run this test rather than assuming momentum or good intentions will close the gap."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  },
+  {
+   "_key": "422abf44ddb8",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "a7f46dcebb2c",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "From the Book \u2014 Chapter 1\n"
+    },
+    {
+     "_key": "a34861086c05",
+     "_type": "span",
+     "marks": [],
+     "text": "The dependency matrix in Figure 1.3 is this lesson's source \u2014 nine directed relationships, read row-pillar to column-pillar, with ENABLES, REQUIRES, DRIVES and the two feedback loops that make the system self-correcting.\n\nRead it at /read/chapter-01."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  },
+  {
+   "_key": "a81812bee7f7",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "efeb5e4d829e",
+     "_type": "span",
+     "marks": [],
+     "text": "What earns a place in the matrix"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "7d2f2192e29a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "cda799ec3197",
+     "_type": "span",
+     "marks": [],
+     "text": "A dependency matrix is an argument, not an inventory. Without a rule for membership it is just a list of relationships that struck somebody as important, and there is no principled way to answer the question a sceptical reader should ask: why is that cell filled and this one empty?"
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "74a935942bfc",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "4be18db321ec",
+     "_type": "span",
+     "marks": [],
+     "text": "The rule is narrow on purpose. A dependency earns a cell when the downstream pillar cannot produce its intended result until the upstream pillar delivers something specific and nameable. \"Cannot\" \u2014 not \"benefits from.\" The pillar's own output \u2014 not general goodness. And nameable \u2014 you must be able to say what is handed over."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "048b1d260668",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "926567cb64fe",
+     "_type": "span",
+     "marks": [],
+     "text": "Naming it is straightforward, because each pillar issues exactly one kind of thing. Policy issues AUTHORITY: mandate, prohibition, statutory deadline, and the power to appropriate. Technology issues INFORMATION: data that can be trusted, fast enough to act on. Economics issues INCENTIVES: the financial consequence attached to a behaviour. Clinical issues OUTCOMES: care delivered and the measured result. Operations issues CAPACITY: people, credentials, management infrastructure, project discipline."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "ac5dac49e17e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "286223f9f395",
+     "_type": "span",
+     "marks": [],
+     "text": "So the test is mechanical. Name what flows, then ask which pillar issues that currency. If it is the upstream pillar, the cell is real. If it is a different pillar, the relationship belongs elsewhere \u2014 or it is a cell already in the grid, read backwards."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "6aaccf4fad2f",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "08b2aa232d59",
+     "_type": "span",
+     "marks": [],
+     "text": "Worked case: why there is no Economics \u2192 Technology cell"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "566b380acce5",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "f02235cc3c00",
+     "_type": "span",
+     "marks": [],
+     "text": "The intuition is sound: data infrastructure is expensive, you cannot build an all-payer claims database or a health information exchange without money, and money is surely economics. Trace the money and it comes apart."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "f5b56c61e353",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "e6c488562909",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont's technology build is paid for by the Rural Health Transformation Program \u2014 $195 million a year for five years \u2014 and was to have been supplemented by the EAST Fund under the AHEAD State Agreement, before Vermont withdrew from AHEAD in July 2026. Both are appropriations: sums made available by statute or federal agreement, for named purposes, on a schedule someone else set. An appropriation is an exercise of authority, and authority is issued by Policy. That is why the Policy \u2192 Technology relationship is described as funding and authorising the build \u2014 the two arrive together because they are the same instrument."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "023c1b351357",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "a405b4692005",
+     "_type": "span",
+     "marks": [],
+     "text": "What the Economics pillar issues is not money but consequence. Reference-based pricing, global budgets and total-cost-of-care accountability change what an organisation gains or loses by behaving one way rather than another. None of them pays for a server. A state can have a fully articulated incentive architecture and no data infrastructure at all \u2014 which is close to what Vermont had under OneCare."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "0a074d6fa03a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "65aa4210f8d0",
+     "_type": "span",
+     "marks": [],
+     "text": "This is the distinction between transformation capital and incentive architecture. Bridge funding is time-limited and ends; incentive architecture is permanent and compounds. Vermont's AHEAD withdrawal is the demonstration: the EAST Fund was cut from roughly $138 million to a capped $10 million, and Act 68's mandates were untouched \u2014 because the two were never the same thing."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "ec05bfa1ab70",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "293d7162c7fa",
+     "_type": "span",
+     "marks": [],
+     "text": "Applied honestly, the rule will sometimes delete a cell you are fond of. That is the point of having one. If you disagree with any of the nine relationships, you now have something specific to argue with: name the currency, and name its issuer."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  }
+ ],
+ "courseTitle": "Five Pillars, One Imperative",
+ "estimatedReadTime": 25,
+ "learningObjectives": [
+  "Read the dependency matrix and distinguish ENABLES, REQUIRES, DRIVES and feedback relationships",
+  "Explain why the execution sequence is determined by dependency, not by importance",
+  "Apply the critical-path gate test to decide whether an investment can proceed now"
+ ],
+ "level": "Foundational",
+ "moduleNumber": 4,
+ "nextModuleSlug": "onecare-sequencing-autopsy",
+ "pillar": "All",
+ "prevModuleSlug": "the-equity-imperative-is-it-just",
+ "slug": {
+  "_type": "slug",
+  "current": "dependency-logic-execution-sequence"
+ },
+ "summary": "The pillars are not a checklist \u2014 they are a directed graph. This lesson covers the dependency matrix, the difference between ENABLES, REQUIRES and DRIVES, and why the build order is Policy \u2192 Technology \u2192 Economics \u2192 Clinical \u2192 Operations.",
+ "title": "Dependency Logic and the Execution Sequence",
+ "totalModules": 24
+}

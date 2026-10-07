@@ -1,0 +1,476 @@
+{
+ "_createdAt": "2026-09-09T13:49:24Z",
+ "_id": "academyModule-five-pillars-onecare-sequencing-autopsy",
+ "_rev": "cGE63aJqei6oB7VsSNsro1",
+ "_type": "academyModule",
+ "_updatedAt": "2026-09-19T04:08:09Z",
+ "body": [
+  {
+   "_key": "1295f47b3151",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "62ff7eb9e3c8",
+     "_type": "span",
+     "marks": [],
+     "text": "A failure worth reading precisely"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "19a5f0841070",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "31a42e3efa3c",
+     "_type": "span",
+     "marks": [],
+     "text": "OneCare Vermont was founded in 2013 by the University of Vermont Medical Center and Dartmouth-Hitchcock Medical Center as a shared ACO vehicle, later becoming the lead entity under Vermont's federal All-Payer ACO Model \u2014 a Total Cost of Care arrangement holding the ACO financially accountable for the spending of an attributed Vermont population. It wound down at the close of 2025, twelve years after founding; the federal all-payer agreement that defined its most consequential years ran about eight of those years before its scheduled sunset."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "9b8eabbb7445",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "92b9bfea86e8",
+     "_type": "span",
+     "marks": [],
+     "text": "The useful conclusion is not the popular, generic version of this story \u2014 'an ACO with voluntary participation inevitably lets high-cost actors free-ride.' That is a plausible-sounding mechanism, but it is not what the documented record shows happened in Vermont specifically. The real mechanisms were more specific, more structural, and more instructive: a federal court ruling that limited how far Vermont's mandate could legally reach, one very large and named payer's documented exit, and an analytics gap the organization itself admitted to regulators. Naming the real mechanisms precisely is what makes this case instructive rather than merely cautionary."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "4be99c6d4582",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "a24a3888fa27",
+     "_type": "span",
+     "marks": [],
+     "text": "Failure 1 \u2014 a Policy foundation the state could not fully build"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "9c60f531d169",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "cae9346ffc30",
+     "_type": "span",
+     "marks": [],
+     "text": "In 2016, the U.S. Supreme Court decided Gobeille v. Liberty Mutual Insurance Co., 6\u20132, holding that ERISA preempts a Vermont law requiring health plans \u2014 including self-insured employer plans \u2014 to report claims data into the state's all-payer claims database. The practical effect: Vermont could not compel every private payer to participate in its data and payment infrastructure the way it could compel state-regulated entities. The 'all-payer' concept had a hole in it from a federal constitutional ruling, years before OneCare's later troubles, and no subsequent Vermont statute could legislate around it."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "0001c3c37966",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b1f47c9ec03c",
+     "_type": "span",
+     "marks": [],
+     "text": "That structural gap became concrete on January 1, 2023, when Blue Cross Blue Shield of Vermont \u2014 the state's largest insurer \u2014 declined to renew its OneCare contract, removing roughly 93,000 enrollees, about a third of OneCare's total enrollment, in a single step. Blue Cross's stated reasons were specific: it objected to OneCare's plan to subcontract data analytics to UVM Health Network, a competitor, without what it considered adequate contractual protection for its members' claims data, and it reported seeing no evidence among its members of progress on health outcomes or cost of care."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "4619178393cb",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "64b100eb71f4",
+     "_type": "span",
+     "marks": [],
+     "text": "This is a real Policy-pillar failure, but not the one the generic story tells. It was not a hospital quietly protecting admission revenue. It was a federal ruling constraining how binding Vermont's own mandate could be, followed by the state's single largest payer making a documented, reasoned exit that removed a third of the population the model needed to manage."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "5df9a1121d7d",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "0a03e50d3415",
+     "_type": "span",
+     "marks": [],
+     "text": "Failure 2 \u2014 Economics without Technology: 'Managing Blind'"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "2fe7832b1e8a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b1ce37586b56",
+     "_type": "span",
+     "marks": [],
+     "text": "OneCare took on real total-cost-of-care financial risk without the mature integrated analytics that risk requires to manage well. This is documented from two directions rather than one invented statistic. First, OneCare's own staff told Green Mountain Care Board regulators, in a budget presentation, that its data analytics system was not as effective as newer software UVM Health Network was in the process of adopting \u2014 an admission of the gap from inside the organization, not an outside estimate."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "9139c433e5c8",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "ff07c1f06f95",
+     "_type": "span",
+     "marks": [],
+     "text": "Second, the state auditor's office documented what that gap produced. A 2019 audit found OneCare 'did not reliably monitor or accurately report' the community-based programs it had promised to fund \u2014 fresh produce for patients, housing assistance for homeless families, care coordination \u2014 producing no evidence of results from investments it had already made. A subsequent analysis found that Vermonters attributed to OneCare visited the emergency department at a rate roughly 36% higher than peer ACOs nationally, had about 18% fewer primary care visits, and paid roughly 30% more for prescription drugs \u2014 the utilization signature of a population that was not, in practice, being proactively managed."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "e9f6d97f0b70",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "fad8d374013b",
+     "_type": "span",
+     "marks": [],
+     "text": "That is the Managing Blind failure mode in its documented form: real financial risk assumed under a total-cost model, next to an analytics capability the organization's own regulators and its own staff acknowledged was not adequate to manage that risk."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "632c31f6b8d4",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "fed5f54d7430",
+     "_type": "span",
+     "marks": [],
+     "text": "Why timeliness is not a lesser form of accuracy"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "c7cd6fe844a6",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "75fd68c4ec21",
+     "_type": "span",
+     "marks": [],
+     "text": "The mechanism behind Managing Blind is general even where a specific day-count for OneCare's own claims lag isn't independently documented: consider, hypothetically, a care manager responsible for 500 high-risk patients under a total-cost model. If her data arrives two months late, she learns in March that a patient was hospitalized in January; the intervention window closed before she knew it existed."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "2cc775f47b3e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "15edeec4cbfe",
+     "_type": "span",
+     "marks": [],
+     "text": "If integrated clinical and claims feeds update daily instead, the same care manager sees that a patient filled a new prescription last week, had an abnormal lab result three days ago, and has not seen their primary care provider in six months. She can call today, before the admission. Same patient, same data elements, entirely different program \u2014 the variable is latency. OneCare's documented utilization pattern (elevated ED use, reduced primary care contact) is consistent with exactly this failure mode, whatever the organization's precise internal lag turned out to be."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "243efb7bc0f3",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "ff8de9bac8c3",
+     "_type": "span",
+     "marks": [],
+     "text": "Failure 3 \u2014 the cascade"
+    }
+   ],
+   "markDefs": [],
+   "style": "h4"
+  },
+  {
+   "_key": "c43334a1ce9e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "d9bbf3cd9f86",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Policy gap \u2014 "
+    },
+    {
+     "_key": "724b024056c3",
+     "_type": "span",
+     "marks": [],
+     "text": "Gobeille v. Liberty Mutual (2016) limited how far Vermont's mandate could legally reach into self-insured plans \u2192 Blue Cross Blue Shield of Vermont exits (Jan. 2023) \u2192 ~93,000 enrollees, about a third of the total, removed at once"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "e402e81369a8",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "49328d7b750d",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Technology gap \u2014 "
+    },
+    {
+     "_key": "626e28b38f62",
+     "_type": "span",
+     "marks": [],
+     "text": "OneCare's own staff told GMCB its analytics lagged newer available systems \u2192 36% higher ED visits and 18% fewer primary care visits than peer ACOs \u2014 care managed reactively, not proactively"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "5d2d46491aa5",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "786e3b931e63",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Economics gap \u2014 "
+    },
+    {
+     "_key": "de2f26053894",
+     "_type": "span",
+     "marks": [],
+     "text": "Real total-cost risk assumed on top of both gaps above \u2192 Financial results become genuinely contested across analyses \u2192 harder to justify further investment in the missing capability"
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "179654466316",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "ff16da0255b0",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "System-level \u2014 "
+    },
+    {
+     "_key": "595a94c80f29",
+     "_type": "span",
+     "marks": [],
+     "text": "Three gaps compounding over the federal agreement's ~8-year run \u2192 Wind-down at the close of 2025. The failure was structural \u2014 no single management decision could reverse a federal court ruling or rebuild analytics overnight."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "6fa78f186fa1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "174e6da8031b",
+     "_type": "span",
+     "marks": [],
+     "text": "The financial verdict is contested, not clean"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "5bb611207c8a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "aa26043fd0df",
+     "_type": "span",
+     "marks": [],
+     "text": "It would be tidy to end this case with a single number. The documented record does not offer one. OneCare's administrative costs ran $70.35 million from 2018 through 2022. One projection found the ACO's total cost of care ran $42.28 million higher than a no-ACO counterfactual over the period studied \u2014 $89.56 million higher excluding the pandemic-distorted year. Vermont's State Auditor separately found more than $25 million in additional spending on ACO operations from 2017 through 2020 compared with traditional fee-for-service."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "087998590ced",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "c9063f4b05ad",
+     "_type": "span",
+     "marks": [],
+     "text": "Other analyses, measured differently, point the other way. One calculation found $18.23 million in net savings \u2014 though excluding 2020 from that same calculation flips it to a $32.38 million cost. A Medicaid-specific measure found $21.43 million in savings under that program alone. These are not rounding differences; they come from genuinely different methodological choices about which years, which payers, and which cost categories to include."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "b3479c2d9180",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "7b3a51e87eb7",
+     "_type": "span",
+     "marks": [],
+     "text": "The honest conclusion is not 'OneCare saved money' or 'OneCare wasted money' \u2014 it is that a Total Cost of Care model without a fully resolved Policy mandate and a fully resolved Technology base produced a record ambiguous enough that reasonable, independent analyses reached opposite headline conclusions from the same underlying program."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "8ce97e4d27bf",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "21da94e5d77c",
+     "_type": "span",
+     "marks": [],
+     "text": "Act 68 as the structural answer \u2014 and what it doesn't answer"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "5700d03cfe3a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b8800224511c",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont's legislative response is the clearest evidence the state read this history and drew a structural conclusion. Act 68 of 2025 makes reference-based pricing mandatory for all Vermont hospitals beginning FY2027, and hospital global budgets mandatory beginning FY2028. This is not an incremental improvement on OneCare's voluntary model \u2014 it eliminates the hospital-side opt-out that made the earlier model's cost control incomplete."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "9018037a398a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "de9f2c805145",
+     "_type": "span",
+     "marks": [],
+     "text": "What Act 68 cannot do is repeal Gobeille v. Liberty Mutual. It binds Vermont hospitals; it has no power to compel a self-insured employer plan to participate in the state's data or payment infrastructure, because that limit is a matter of federal ERISA preemption, not state statute. Vermont's mandate is now real and binding on the hospital side \u2014 the Policy failure this lesson opened with \u2014 while the payer-side gap that let Blue Cross Blue Shield walk away in 2023 remains a standing federal constraint no state law can close on its own. Whether the AHS\u2013GMCB analytics capability is genuinely operational before FY2028 global budgets take effect is the second open question the framework tells you to watch."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "634d3bebe4e4",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "10b098c40da7",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "The lesson underneath the lesson\n"
+    },
+    {
+     "_key": "ac7a52e47df1",
+     "_type": "span",
+     "marks": [],
+     "text": "Notice what changed between the popular version of this story ('voluntary participation let costly actors free-ride') and the documented one (a 2016 Supreme Court ruling, a named payer's exit with stated reasons, an organization's own admission to its regulator). The generic version isn't unreasonable as a general principle \u2014 it's the same logic tested in this course's other case studies \u2014 but it is not what the record shows happened here, in this level of specific detail. Before you cite a failure as your evidence for a diagnostic claim, ask whether you have the documented mechanism or the convenient one. They are not always the same story."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  },
+  {
+   "_key": "2c8bf7f51a9a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "3a5419125bed",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "From the Book \u2014 Chapter 1\n"
+    },
+    {
+     "_key": "26da375a17dd",
+     "_type": "span",
+     "marks": [],
+     "text": "Chapter 1 works the OneCare Vermont collapse as three compounding sequencing failures and the cascade they produced. It is the canonical case the whole framework is built to explain.\n\nRead it at /read/chapter-01."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  }
+ ],
+ "courseTitle": "Five Pillars, One Imperative",
+ "estimatedReadTime": 25,
+ "learningObjectives": [
+  "Identify the three sequencing failures in OneCare's design and the pillar each corresponds to",
+  "Explain the 'Managing Blind' failure mode and why data timeliness is as critical as data integration",
+  "Trace how the three failures compounded into a self-reinforcing cascade"
+ ],
+ "level": "Foundational",
+ "moduleNumber": 5,
+ "nextModuleSlug": "legislative-architecture-reform-cascade",
+ "pillar": "All",
+ "prevModuleSlug": "dependency-logic-execution-sequence",
+ "slug": {
+  "_type": "slug",
+  "current": "onecare-sequencing-autopsy"
+ },
+ "summary": "OneCare Vermont's decade-long collapse is the clearest documented sequencing failure in recent US health policy. This lesson dissects the three compounding errors and shows how Act 68 was written as the direct structural response.",
+ "title": "Sequencing Failure \u2014 The OneCare Autopsy",
+ "totalModules": 24
+}
