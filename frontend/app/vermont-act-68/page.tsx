@@ -370,7 +370,7 @@ export default function VermontAct68Page() {
             {
               icon: "📈",
               label: "APM Shared Savings Calculator",
-              desc: "Model hospital financial outcomes under Act 68 global budgets. Load the Vermont AHEAD preset to see benchmark methodology, break-even scenarios, and shared savings potential for Vermont hospitals.",
+              desc: "Model hospital financial outcomes under Act 68 global budgets. Load the Vermont Act 68 global budget preset to see benchmark methodology, break-even scenarios, and shared savings potential for Vermont hospitals.",
               href: "/research-lab/payment-models?tab=apm-calc",
               chapter: "Chapter 7 — Economics in Practice",
             },
