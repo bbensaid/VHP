@@ -294,5 +294,7 @@ as any other layout claim.
 
 Local and free — macOS `say` (`scripts/generate-narration-audio.sh`) or Piper
 (`scripts/generate-narration-piper.sh`). Transcripts come from
-`book-build/make_transcripts.py`. Recorded audio is from 2026-06-14; preface,
-introduction and chapter 1 carry 88% of the drift from v42.
+`book-build/make_transcripts.py`. Audio is served from the Supabase Storage
+bucket `narration-audio` (not git — `*.m4a`/`*.wav` are gitignored); upload with
+`frontend/scripts/migrate-narration-audio-to-supabase.mjs`. Re-recorded from the
+corrected v42 text 2026-10-07 (Piper).
