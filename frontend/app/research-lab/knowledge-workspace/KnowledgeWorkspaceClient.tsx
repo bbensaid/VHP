@@ -33,7 +33,7 @@ function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string;
 const TABS = [
   {
     id: 'evidence', icon: '📖', label: 'Evidence Library', badge: 'Research',
-    desc: 'Search 25 landmark CEA/CUA studies, track 20 CMMI innovation models with full lesson-learned summaries, and browse 15 HTR policy briefs.',
+    desc: 'Search 25 landmark CEA/CUA studies, track 21 CMMI innovation models with full lesson-learned summaries, and browse 15 HTR policy briefs.',
   },
   {
     id: 'workforce', icon: '👨‍⚕️', label: 'Workforce Modeler', badge: 'Workforce',

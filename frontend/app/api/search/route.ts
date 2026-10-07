@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { client } from "@/lib/sanity";
+import { TOOLS } from "@/lib/taxonomy/tools";
 
 export async function GET(req: NextRequest) {
   const q = req.nextUrl.searchParams.get("q")?.trim();
@@ -43,11 +44,20 @@ export async function GET(req: NextRequest) {
       analystNotes: RawDoc[];
     } = await client.fetch(query, { term });
 
+    // Research Lab tools come from the static registry (Appendix F.2: search spans tools too).
+    const needle = q.toLowerCase();
+    const tools = TOOLS.filter(
+      (t) =>
+        t.status !== "deprecated" &&
+        (t.label.toLowerCase().includes(needle) || (t.desc ?? "").toLowerCase().includes(needle)),
+    ).slice(0, 5);
+
     const results = [
+      ...tools.map((t) => ({ _type: "tool", _id: `tool-${t.id}`, title: t.label, href: t.href, label: "Research Lab Tool", description: t.desc ?? null })),
       ...data.posts.map((r) => ({ ...r, href: `/articles/${r.slug}`, label: "Article", description: r.excerpt })),
       ...data.analyses.map((r) => ({ ...r, href: `/policy/${r.slug}`, label: "Policy Analysis", description: r.summary })),
       ...data.modules.map((r) => ({ ...r, href: `/academy/modules/${r.slug}`, label: "Academy Module", description: r.description })),
-      ...data.definitions.map((r) => ({ ...r, href: `/academy`, label: "Definition", description: r.excerpt })),
+      ...data.definitions.map((r) => ({ ...r, href: `/academy/glossary#${r._id}`, label: "Definition", description: r.excerpt })),
       ...data.caseStudies.map((r) => ({ ...r, href: `/articles/${r.slug}`, label: "Case Study", description: r.summary })),
       ...data.analystNotes.map((r) => ({ ...r, href: `/chat`, label: "Analyst Note", description: null })),
     ];

@@ -730,14 +730,14 @@ export default function VermontAct167Page() {
               </h3>
               <p className="text-slate-300 text-sm leading-relaxed mb-5">
                 Model implementation scenarios for every Oliver Wyman Report recommendation. Analyze the
-                5-pillar impact — policy, technology, financial, equity, and clinical — with interactive
+                impact across five dimensions — policy, technology, financial, equity, and clinical — with interactive
                 controls, hospital-level simulations, equity analysis, and state benchmarks.
               </p>
               <div className="grid grid-cols-2 gap-3 mb-6">
                 {[
                   { n: "14", label: "Hospitals Modeled" },
                   { n: "14", label: "Recommendations" },
-                  { n: "5", label: "Impact Pillars" },
+                  { n: "5", label: "Impact Dimensions" },
                   { n: "8", label: "Analysis Modules" },
                 ].map(({ n, label }) => (
                   <div key={label} className="bg-white/10 rounded-xl p-3 text-center">
@@ -755,7 +755,7 @@ export default function VermontAct167Page() {
             </div>
             <div className="space-y-3">
               {[
-                { icon: "🎯", title: "Scenario Builder", desc: "Select recommendations and see aggregate 5-pillar impact scores" },
+                { icon: "🎯", title: "Scenario Builder", desc: "Select recommendations and see aggregate impact scores across five dimensions" },
                 { icon: "🏥", title: "Hospital Restructuring Simulator", desc: "Model REH, CACC, or closure options for at-risk hospitals with parameter controls" },
                 { icon: "💰", title: "Financial Modeling Dashboard", desc: "Hospital-by-hospital financial projections, savings waterfall, ROI analysis" },
                 { icon: "⚖️", title: "Equity & Access Analysis", desc: "County-level access scores, vulnerable populations, transportation scenarios" },

@@ -4,6 +4,7 @@ import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
 import ToolBookCallout from '@/components/research/ToolBookCallout'
+import Link from 'next/link'
 import { toolBadgeClass } from '@/lib/taxonomy/badges'
 
 const APMDesignLab                = dynamic(() => import('@/components/research/APMDesignLab'),                { ssr: false })
@@ -100,6 +101,15 @@ export default function PaymentModelsClient() {
             <span>{tab.label}</span>
           </button>
         ))}
+        {/* The book's Introduction sends executives here for the VBC Readiness Assessment, which
+            lives on the Knowledge & Workspace bench — link it rather than leave it missing. */}
+        <Link
+          href="/research-lab/knowledge-workspace?tab=readiness"
+          className="relative flex items-center gap-2 px-5 py-2.5 text-sm font-bold whitespace-nowrap rounded-t-xl border-t border-l border-r border-dashed border-slate-300 mr-1 mt-1.5 bg-white text-slate-500 hover:text-slate-700"
+        >
+          <span>📊</span>
+          <span>VBC Readiness Assessment ↗</span>
+        </Link>
       </nav>
 
       <ToolBookCallout href={`/research-lab/payment-models?tab=${activeTab}`} />

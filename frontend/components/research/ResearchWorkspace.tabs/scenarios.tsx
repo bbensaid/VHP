@@ -3,7 +3,7 @@
 import { useState, useMemo, useCallback } from "react";
 import {
   Plus, Trash2, Copy, ChevronDown, ChevronUp, BarChart2,
-  Tag, Calendar, CheckCircle, X, MessageSquare,
+  Tag, Calendar, CheckCircle, X, MessageSquare, Download, Upload,
 } from "lucide-react";
 import {
   SCENARIO_CATEGORIES, SAMPLE_SCENARIOS,
@@ -13,6 +13,9 @@ import {
 import { useLocalStorage, StatusBadge, CategoryBadge } from "../ResearchWorkspace.atoms";
 
 // ─── TAB 1: Scenario Manager ──────────────────────────────────────────────────
+
+/** Appendix D.16: the Scenario Manager holds up to 50 scenarios with JSON import/export. */
+const MAX_SCENARIOS = 50;
 
 export function ScenarioManager() {
   const [scenarios, setScenarios] = useLocalStorage<Scenario[]>("rw:scenarios", SAMPLE_SCENARIOS);
@@ -30,8 +33,51 @@ export function ScenarioManager() {
     status: "Draft" as ScenarioStatus,
   });
 
+  const [ioMessage, setIoMessage] = useState<string | null>(null);
+
+  const handleExport = useCallback(() => {
+    const blob = new Blob([JSON.stringify(scenarios, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "htr-scenarios.json";
+    a.click();
+    URL.revokeObjectURL(url);
+  }, [scenarios]);
+
+  const handleImport = useCallback(
+    (file: File) => {
+      file.text().then((text) => {
+        try {
+          const parsed: unknown = JSON.parse(text);
+          if (!Array.isArray(parsed)) throw new Error("not an array");
+          const valid = parsed.filter(
+            (x): x is Scenario => !!x && typeof x === "object" && typeof (x as Scenario).name === "string",
+          );
+          const existing = new Set(scenarios.map((x) => x.id));
+          const incoming = valid.map((x) => ({
+            ...x,
+            id: typeof x.id === "string" && !existing.has(x.id) ? x.id : uid(),
+            tags: Array.isArray(x.tags) ? x.tags : [],
+            annotations: Array.isArray(x.annotations) ? x.annotations : [],
+            createdAt: typeof x.createdAt === "string" ? x.createdAt : new Date().toISOString(),
+          }));
+          const room = Math.max(0, MAX_SCENARIOS - scenarios.length);
+          setScenarios([...scenarios, ...incoming.slice(0, room)]);
+          setIoMessage(
+            `Imported ${Math.min(room, incoming.length)} of ${valid.length} scenario(s)` +
+              (incoming.length > room ? ` — the workspace holds ${MAX_SCENARIOS}.` : "."),
+          );
+        } catch {
+          setIoMessage("That file is not a scenario export (expected a JSON array).");
+        }
+      });
+    },
+    [scenarios, setScenarios],
+  );
+
   const handleCreate = useCallback(() => {
-    if (!form.name.trim()) return;
+    if (!form.name.trim() || scenarios.length >= MAX_SCENARIOS) return;
     const newS: Scenario = {
       id: uid(),
       name: form.name.trim(),
@@ -130,6 +176,27 @@ export function ScenarioManager() {
             </button>
           )}
           <button
+            onClick={handleExport}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-slate-200 text-slate-600 rounded-lg text-sm font-medium hover:bg-slate-50 transition-colors"
+          >
+            <Download className="w-4 h-4" />
+            Export JSON
+          </button>
+          <label className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-slate-200 text-slate-600 rounded-lg text-sm font-medium hover:bg-slate-50 transition-colors cursor-pointer">
+            <Upload className="w-4 h-4" />
+            Import JSON
+            <input
+              type="file"
+              accept="application/json,.json"
+              className="hidden"
+              onChange={(e) => {
+                const f = e.target.files?.[0];
+                if (f) handleImport(f);
+                e.target.value = "";
+              }}
+            />
+          </label>
+          <button
             onClick={() => setShowForm(!showForm)}
             className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-800 text-white rounded-lg text-sm font-medium hover:bg-slate-700 transition-colors"
           >
@@ -138,6 +205,11 @@ export function ScenarioManager() {
           </button>
         </div>
       </div>
+
+      <p className="text-xs text-slate-400">
+        {scenarios.length} / {MAX_SCENARIOS} scenarios{scenarios.length >= MAX_SCENARIOS ? " — full; delete or export some to add more." : ""}
+        {ioMessage && <span className="ml-2 text-slate-600">{ioMessage}</span>}
+      </p>
 
       {/* New Scenario Form */}
       {showForm && (

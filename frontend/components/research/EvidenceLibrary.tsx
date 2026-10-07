@@ -120,6 +120,7 @@ const CMMI_MODELS: CMMIModel[] = [
   { id: 18, name: "AHEAD (State Total Cost of Care)", status: "Active", start: 2024, end: 2035, participants: 5, type: "State/All-Payer", savings: "Very early stage", lesson: "Multi-payer state total cost of care model: hospital global budgets, Primary Care AHEAD, and a state cooperative agreement of up to $12M. Renamed Achieving Healthcare Efficiency through Accountable Design (originally States Advancing All-Payer Health Equity Approaches and Development) in September 2025, when CMS also set the end date for all cohorts at December 31, 2035. Current participants: Maryland (Cohort 1, performance from January 2026); Connecticut and Hawaii (Cohort 2); Rhode Island and a downstate New York region (Cohort 3) — Cohort 2 and 3 performance begins January 2028. Vermont signed in January 2025 and withdrew in July 2026 after CMS renegotiation capped its expected EAST Fund near $10M." },
   { id: 19, name: "Transforming Maternity Care", status: "Active", start: 2024, end: null, participants: 150, type: "Specialty", savings: "Very early stage", lesson: "Episode-based maternity bundles; equity focus; doula integration. The maternity care model bundles payment across prenatal, delivery, and postpartum periods, with explicit quality measures tied to racial equity in maternal outcomes. Doula integration as a reimbursable care team member is a nationally significant policy precedent with implications beyond the model's footprint." },
   { id: 20, name: "GUIDE (Dementia Care)", status: "Active", start: 2024, end: null, participants: 400, type: "Specialty", savings: "Very early stage", lesson: "Comprehensive dementia care; caregiver support; community navigation. GUIDE establishes a comprehensive care model for people living with dementia and their caregivers, addressing a population historically underserved by structured care coordination. Monthly care management payments support a dementia care specialist model that integrates clinical management with community navigation and caregiver respite services." },
+  { id: 21, name: "Maryland Total Cost of Care Model", status: "Ended", start: 2019, end: 2025, participants: 1, type: "State/All-Payer", savings: "See CMS model evaluations", lesson: "Successor to the Maryland All-Payer Model (2014–2018), built on the Health Services Cost Review Commission's all-payer hospital rate setting: hospital global budgets plus a Medicare total cost of care target for the whole state. CMS announced in March 2025 that it would end the model on December 31, 2025, a year early; Maryland moved into AHEAD (Cohort 1, signed October 2024) with its first performance year in January 2026. The closest operating precedent for Vermont's Act 68 hospital global budgets — and the difference is the 1977-era rate-setting authority Vermont does not have." },
 ];
 
 // ─── Policy Briefs ────────────────────────────────────────────────────────────
@@ -876,9 +877,9 @@ function PolicyBriefLibrary() {
 type Tab = "cea" | "cmmi" | "briefs";
 
 const TABS: { id: Tab; label: string; icon: React.ReactNode; count: number }[] = [
-  { id: "cea", label: "CEA/CUA Study Database", icon: <BarChart2 className="w-4 h-4" />, count: 25 },
-  { id: "cmmi", label: "CMMI Model Tracker", icon: <Activity className="w-4 h-4" />, count: 20 },
-  { id: "briefs", label: "Policy Brief Library", icon: <FileText className="w-4 h-4" />, count: 15 },
+  { id: "cea", label: "CEA/CUA Study Database", icon: <BarChart2 className="w-4 h-4" />, count: CEA_STUDIES.length },
+  { id: "cmmi", label: "CMMI Model Tracker", icon: <Activity className="w-4 h-4" />, count: CMMI_MODELS.length },
+  { id: "briefs", label: "Policy Brief Library", icon: <FileText className="w-4 h-4" />, count: POLICY_BRIEFS.length },
 ];
 
 // ─── What kind of source is this? ────────────────────────────────────────────

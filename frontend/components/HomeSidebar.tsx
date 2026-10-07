@@ -114,7 +114,7 @@ const PILLAR_CONFIG: Record<FrameworkId, PillarSidebarConfig> = {
       { href: "/policy/global",      label: "Global & Comparative Policy" },
       { href: "/policy/feasibility", label: "Policy Feasibility Studies" },
     ],
-    labToolIds: ["policy-simulator", "medicaid-wr-calculator", "hr1-cliff", "innovation-leaderboard"],
+    labToolIds: ["policy-simulator", "medicaid-wr-calculator", "hr1-cliff", "policy-impact-assessment", "innovation-leaderboard"],
   },
   economics: {
     intelligenceItems: [
@@ -135,7 +135,7 @@ const PILLAR_CONFIG: Record<FrameworkId, PillarSidebarConfig> = {
       { href: "/technology/security", label: "Data Security & Governance" },
       { href: "/technology/workflow", label: "Tech-Enabled Workflow" },
     ],
-    labToolIds: ["fhir-lab", "emr-ehr-lab", "statewide-ehr-lab", "clinical-data-exchange", "ai-governance-lab", "digital-health-lab"],
+    labToolIds: ["fhir-lab", "fhir-implementation-guide", "emr-ehr-lab", "statewide-ehr-lab", "clinical-data-exchange", "ai-governance-lab", "digital-health-lab"],
   },
   clinical: {
     intelligenceItems: [
@@ -146,7 +146,7 @@ const PILLAR_CONFIG: Record<FrameworkId, PillarSidebarConfig> = {
       { href: "/clinical/population", label: "Population Health Management" },
     ],
     labToolIds: [
-      "risk-stratification-engine", "risk-stratification-methodology",
+      "risk-stratification-engine", "risk-stratification-methodology", "hcc-gap-closure-playbook",
       "vbc-quality-measures", "high-low-value-care", "clinical-quality-optimizer", "workforce-modeler",
     ],
   },

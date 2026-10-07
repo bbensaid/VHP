@@ -18,6 +18,7 @@ import {
 } from "@/lib/data/hti-timeseries-data";
 import { pillarSeriesFor, policyDataAvailable, frameworkReadiness, pillarTrend } from "@/lib/framework/pillar-mapping";
 import type { PillarId } from "@/lib/taxonomy/pillars";
+import StrategicPlanPace from "@/components/framework/StrategicPlanPace";
 
 ChartJS.register(...registerables);
 
@@ -922,6 +923,7 @@ export default function HTIDashboard() {
                       </span>
                     </div>
                   </div>
+                  {readiness && <StrategicPlanPace operations={readiness.scores.operations} />}
                   {!hasPolicy && (
                     <p className="mt-6 text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3">
                       Policy is not yet scored for {state.stateName}, and neither is any other pillar&rsquo;s

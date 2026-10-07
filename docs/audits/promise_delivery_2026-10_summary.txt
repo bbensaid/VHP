@@ -1,0 +1,75 @@
+PROMISE-DELIVERY AUDIT 2026-10 — SUMMARY
+Total checks logged: 128 (prior run: 61, this run: 67)
+By status (whole run): DELIVERED 84, MISSING_FEATURE 32, MISSING_RESOURCE 5, NAME_MISMATCH 7
+By status (this run): DELIVERED 36, MISSING_FEATURE 22, MISSING_RESOURCE 5, NAME_MISMATCH 4
+
+FIXED / BUILT THIS RUN:
+- [10] Health Equity Studio: whether an intervention closes the gap or just raises the average while the gap persists -> Gap-vs-average test (prior run, committed ade9666) confirmed complete and rendered under HEROIComposite; tab reachable via PopulationEquityClient + ResearchLabHub
+- [16] Five-Pillar Map: map the redesigned AHS operating model onto the five pillars and check for uncovered function -> PillarOwnershipCheck.tsx (built by prior run) was NOT wired into any route; now rendered on /about/framework directly under FivePillarFrameworkMap
+- [2] Vermont Act 167 (/vermont-act-167) and Act 68: trace how a statutory mandate cascades into operational deadlin -> Act 167 page/simulator advertised a '5-pillar impact — policy, technology, financial, equity, clinical' set that contradicts the book's framework (no Operations; Equity is not a pillar). Relabelled us
+- [11] Workforce Modeler: the workforce gap that the $1,303 per-discharge administrative-cost gap must fund closing -> Modeler never referenced the $1,303 premium. Added 'Fund it from the $1,303 administrative premium' panel: discharges x premium x recovered share (reader assumption) compared against the retention pro
+- [16] HTI Dashboard: track AHS's delivery against the statutory deadlines; whether Operations-pillar capacity is ris -> Dashboard showed Operations readiness and a maturity trend but nothing about the Jan 15 2028 deadline. Added StrategicPlanPace (Vermont only): Operations readiness vs engine GATE_OPEN, quarters to Jan
+- [App D.1] FHIR Interoperability Lab: five tabs; Resource Builder (10 resource types); Terminology Mapper (ICD-10-CM, SNO -> Builder had 8 resource types -> added Procedure and AllergyIntolerance (FHIR R4 structures, now 10). CDS Hooks had 4 scenarios -> added 'Opioid Prescribing Safety' (medication-prescribe hook, sourced 
+- [App D.12] AI Clinical Governance Lab: Model Comparator; Algorithmic Bias Detector (demographic parity, equal opportunity -> Bias Detector judged fairness only by percentage-point spreads; no ratio band existed. Added lowest/highest group disparity ratios for demographic parity, equal opportunity and predictive parity, each
+- [App D.14] Evidence Library: 25 CEA/CUA studies; CMMI Tracker 20 models incl. Vermont All-Payer, Maryland TCOC, Making Ca -> Maryland TCOC was not in the tracker. Added it (2019-2025; CMS ended it Dec 31 2025 a year early, Maryland moved to AHEAD Cohort 1 Jan 2026 - verified via cms.gov md-tccm page and CRS IF13033). Tab co
+- [App D.16] Research Workspace: Scenario Manager (50 scenarios, JSON import/export); Report Builder (4 types); Comparison  -> Scenario Manager had no import/export and no capacity. Added Export JSON / Import JSON (validated, id-deduplicated, normalised) and a 50-scenario cap with a counter.
+- [App D.18] VBC Readiness Assessment: 30 dimensions, 6 domains, 120 points; <60 Pre-transition, 60-80 Developing, 80-100 O -> Tool reported only a percentage with different stage labels. Added a 'Points: X / 120 - Stage' line using the Appendix D bands (unassessed = 0).
+- [App F.2] Search spans articles, courses, tools, glossary terms, and reports simultaneously -> Site search covered Sanity articles/policy analyses/academy modules/definitions/case studies but no Research Lab tools; definitions linked to /academy root. Added tools from the lib/taxonomy/tools.ts 
+- [App F.4] Case studies: the RHT Program, Vermont Act 167, California CalAIM -> Academy case-study library (Sanity caseStudy, 7 docs) had none of the three. Added a 'Program case studies' block linking the existing full pages /vermont-rht-program, /vermont-act-167, /california-ca
+- [3 / 12] Policy Impact Assessment Framework (§3.7.2; Toolkit: exposure mapping, scenario analysis, response strategy se -> Built PolicyImpactAssessment.tsx: the four §3.7.2 phases as a worksheet (exposure levels + five-pillar exposure map naming the most upstream pillar touched, equity question, four scenarios, the four §
+- [12] HCC Gap Closure Playbook: methodology guide for retrospective HCC gap analysis, coding education materials, AW -> Built HCCGapClosurePlaybook.tsx: Step 1 retrospective gap method + calculator on the reader's numbers (uncaptured HCCs, RAF per patient, annual benchmark not reflected); Step 2 coding education for th
+- [12] FHIR Implementation Guide: step-by-step guide for the three priority FHIR use cases with EHR-specific configur -> Built FHIRImplementationGuide.tsx: the three Fig 5.1 use cases (patient access g(10), provider access, payer PA via Da Vinci CRD/DTR/PAS + CMS-0057-F) as tickable step lists with the book's Vermont pr
+- [Intro] Executive profile: the Payment Models & VBC bench — VBC Readiness Assessment and APM tools -> VBC Readiness Assessment lives on the Knowledge & Workspace bench, so a reader opening the Payment Models bench could not find it. Added a 'VBC Readiness Assessment ↗' link in the Payment Models tab b
+
+LEFT (not fixed; spec in jsonl note):
+- [16] HTI Dashboard hosts the five-pillar status view
+- [2] Vermont Act 167 (/vermont-act-167) and Act 68: trace how a statutory mandate cascades into operational deadlines; map ea
+- [7] Hospital Financial Stress Test: the years the hospital is thinnest. For most Vermont hospitals that is FY2027-28, not th
+- [11] Hospital Financial Stress Test: stress-test a hospital through the transition years; whether the operations plan survive
+- [14] The Wire: bills that would amend Act 68, GMCB appointment changes, and shifts in enforcement posture
+- [16] HTR Simulator: score a state with strong Policy and Economics but weak Operations. The composite collapse is the argumen
+- [App D.1] FHIR Interoperability Lab: five tabs; Resource Builder (10 resource types); Terminology Mapper (ICD-10-CM, SNOMED CT, LO
+- [App D.3] APM Design Lab: APM Architecture Designer (8 model types); Episode Designer (8 episode types); Global Budget Simulator; 
+- [App D.4] APM Shared Savings Calculator: benchmark PMPM, member-months, TCOC, sharing rate, MSR, quality withhold, stop-loss; pess
+- [App D.5] Population Health Modeler: Markov (5 models, 10-year); AHRQ PQI (13 conditions); Intervention Impact Library (8, 5-year 
+- [App D.6] Health Equity Studio: HEROI weights 25/25/25/15/10; Disparity Calculator; Geographic Access; SDOH Composite; Equity-Weig
+- [App D.7] Policy Simulator: seven 1115 waiver types, six pre-loaded state scenarios; Global Budget Designer; Expansion Calculator;
+- [App D.9] Hospital Financial Stress Test: Vermont GMCB FY2026 data and Oliver Wyman scenarios pre-loaded
+- [App D.13] Digital Health Lab: RPM ROI (CPT 99453/99454/99457/99458, 6 condition modules); Telehealth; Patient Engagement Platform 
+- [App D.17] Innovation Leaderboard: State Rankings (50 states + DC); Hospital System VBC Maturity (30 systems); Payer Innovation Ind
+- [App F.2] Search spans articles, courses, tools, glossary terms, and reports simultaneously
+- [App F.4] Learning Tracks are curated multi-course programs (value-based care, population health, health equity, rural transformat
+- [App H] 'Green Mountain Community Hospital', a fictional 25-bed critical-access hospital, as the worked example throughout
+
+FILES CHANGED/CREATED THIS RUN:
+- backend/platform_catalog.py
+- frontend/app/about/framework/page.tsx
+- frontend/app/academy/case-studies/page.tsx
+- frontend/app/api/search/route.ts
+- frontend/app/research-lab/ResearchLabHub.tsx
+- frontend/app/research-lab/interoperability/InteroperabilityClient.tsx
+- frontend/app/research-lab/knowledge-workspace/KnowledgeWorkspaceClient.tsx
+- frontend/app/research-lab/payment-models/PaymentModelsClient.tsx
+- frontend/app/research-lab/policy-quality/PolicyQualityClient.tsx
+- frontend/app/research-lab/vbc-clinical-quality/VBCClinicalQualityClient.tsx
+- frontend/app/search/page.tsx
+- frontend/app/vermont-act-167/page.tsx
+- frontend/app/vermont-act-167/simulator/page.tsx
+- frontend/app/vermont-act-167/simulator/tabs/hospital.tsx
+- frontend/components/HTIDashboard.tsx
+- frontend/components/HomeSidebar.tsx
+- frontend/components/framework/PillarOwnershipCheck.tsx
+- frontend/components/framework/StrategicPlanPace.tsx
+- frontend/components/research/AIAnalyticsLab.tsx
+- frontend/components/research/EvidenceLibrary.tsx
+- frontend/components/research/FHIRImplementationGuide.tsx
+- frontend/components/research/FHIRLab.tsx
+- frontend/components/research/HCCGapClosurePlaybook.tsx
+- frontend/components/research/HealthEquityStudio.tsx
+- frontend/components/research/PolicyImpactAssessment.tsx
+- frontend/components/research/ResearchWorkspace.tabs/scenarios.tsx
+- frontend/components/research/VBCReadinessAssessment.tsx
+- frontend/components/research/WorkforceModeler.tabs/turnover.tsx
+- frontend/lib/taxonomy/tools.ts
+
+CHECKS: npx tsc --noEmit --skipLibCheck = exit 0; eslint on all touched files = 0 errors (only pre-existing warnings); new files eslint-clean. backend/platform_catalog.py parses. Not committed.
