@@ -1,0 +1,59 @@
+HTR Academy phase 3 corrections — 2026-10-07
+Scope: 277 published lessons (Supabase course+track+lesson is_published), Sanity bodies resolved by slug.current exactly as the app does (lib/sanity-fetch.ts), plus Supabase titles/summaries/objectives and rendered content_blocks; then a sweep of all 286 academyModule docs.
+
+Sanity text fixes: 57 in 18 documents
+  AHEAD_VT: 23
+  STRATEGIC_PLAN_DATE: 9
+  RBP_TIMING: 6
+  UVMMC_COURT: 5
+  RHT_AMOUNT: 4
+  ONECARE_STATUS: 3
+  AHEAD_LIST: 2
+  CMMI_MODEL_STATUS: 2
+  MEDICAID_GB: 1
+  WORK_REQ: 1
+  CCBHC: 1
+Supabase lesson-row fixes: 43 in 15 rows (3 rendered: vitl-vermont-hie summary+objective, sanity-vbc-policy content_blocks; 40 = unrendered fallback mirrors of five-pillars Sanity fixes)
+
+Sanity docs patched:
+  academyModule-five-pillars-apm-readiness-vbc-financial-modeling
+  academyModule-five-pillars-care-model-redesign-under-global-budgets
+  academyModule-five-pillars-cmmi-waivers-federal-state-interface
+  academyModule-five-pillars-dependency-logic-execution-sequence
+  academyModule-five-pillars-economics-as-design-vs-management
+  academyModule-five-pillars-five-pillars-diagnostic-questions
+  academyModule-five-pillars-global-budgets-reference-based-pricing
+  academyModule-five-pillars-heroi-stratified-hedis-vbc-safeguards
+  academyModule-five-pillars-knowledge-infrastructure-technical-assistance
+  academyModule-five-pillars-legislative-architecture-reform-cascade
+  academyModule-five-pillars-onecare-sequencing-autopsy
+  academyModule-five-pillars-political-sustainability-across-election-cycles
+  academyModule-five-pillars-transformation-as-portfolio-management
+  academyModule-five-pillars-workforce-as-the-binding-constraint
+  academyModule-vbc-fundamentals-module-2-policy-pillar
+  aco-medicaid-commercial
+  bundled-payment-mechanics
+  global-budgets-hospital-finance
+
+Highest priority: UVMMC 'court ruled / GMCB upheld / UVMMC v. GMCB / judicially tested' claims (political-sustainability-across-election-cycles, 5 blocks) replaced with the Oct 2024 appeals + April 4 2025 settlement; no court ruling.
+
+Backups (pre-edit JSON): sanity-backups/academy-phase3-2026-10-07/ (Sanity docs <docId>.json; *.after-round1.json are intermediate states; Supabase rows supabase-lesson-<id>.json)
+Every patched Sanity doc was re-fetched and all 57 new strings confirmed present; Supabase rows re-read after update.
+
+LEFT (16):
+  [RBP_TIMING] legislative-architecture-reform-cascade body[30]: Describes the statutory deadline order (Act 68: RBP no later than FY2027) — accurate as a deadline.
+  [RBP_TIMING] political-sustainability-across-election-cycles body[16]: Statutory deadlines, accurately stated.
+  [RBP_TIMING] knowledge-infrastructure-technical-assistance body[28]: Statutory deadlines, accurately stated.
+  [RBP_TIMING] knowledge-infrastructure-technical-assistance body[25]: A forecast, not a claim RBP is in effect; consistent with prices effective FY2028.
+  [UVMMC_COURT] political-sustainability-across-election-cycles summary: Accurate: UVMMC's appeals were a real challenge; summary makes no court-ruling claim. Body corrected.
+  [AHEAD_LIST] sanity-vbc-policy content_blocks[0].body[40]: Could not verify or refute any planned new AHEAD cohort (CMS AHEAD page / Sept 2025 CMS announcement mention none). Left; flag for author.
+  [OTHER] sanity-vbc-policy content_blocks[0].body[23],[44],[28]: Out of the phase-3 subject list and unverifiable/likely invented attributions (Slavitt was Acting CMS Administrator). Not changed — flagged for author review.
+  [CMMI_MODEL_STATUS] sanity-vbc-policy content_blocks[0].body[13]: Generic table of Advanced APM participant types; BPCI Advanced and PCF both ended 2025. Minor; left to avoid rewriting a table row.
+  [CMMI_MODEL_STATUS] bundled-payment-mechanics body[28], body[31].points[6]: Tense only; not on subject list.
+  [CMMI_MODEL_STATUS] multiple various: Accurate: REACH runs through Dec 31 2026 and these lessons already state its end and the LEAD successor (Jan 2027).
+  [AHEAD_VT] transformation-as-portfolio-management body[17]: Part of HTR's explicitly dated early-2026 inventory; left as historical.
+  [RBP_TIMING] global-budgets-reference-based-pricing body[61]: Not on verified list; not verified. Left.
+  [AI_SCRIBE] multiple various: Attributed to named sources; does not contradict the 15–25 min/provider/day RCT range. Left.
+  [OTHER] 13 strings across political-sustainability, legislative-architecture, global-budgets-hospital-finance etc. content_blocks: Fallback content_blocks are not rendered while the Sanity body resolves. 40 of 53 mirror strings matched and were fixed; the other 13 remain stale in the unrendered fallback.
+  [OTHER] all frontend/content/course_five_pillars.json, _build_five_pillars_course.py, _lesson_drafts/*.py: NOT edited. Re-running post-five-pillars-to-sanity.mjs --commit or the seed script would REVERT these corrections — fix the source before any re-post.
+  [OTHER] e.g. sanity-vbc-policy, sanity-pm-m1-fundamentals sanity_slug: Link issue, possibly intentional (rule 16). Not changed.
