@@ -219,6 +219,25 @@ const CDS_SCENARIOS = [
       },
     ],
   },
+  {
+    id: "opioid-safety",
+    label: "Opioid Prescribing Safety",
+    hookType: "medication-prescribe",
+    cards: [
+      {
+        summary: "Opioid + benzodiazepine co-prescription: offer naloxone",
+        detail:
+          "The patient has an active benzodiazepine prescription and this order adds an opioid. The CDC Clinical Practice Guideline for Prescribing Opioids for Pain (2022) advises caution with concurrent opioids and benzodiazepines and offering naloxone when overdose risk is elevated, including concurrent benzodiazepine use. Check the Vermont Prescription Monitoring System before prescribing.",
+        indicator: "warning" as const,
+        source: { label: "CDC Opioid Prescribing Guideline (2022)", url: "https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm" },
+        suggestions: [
+          { label: "Co-prescribe Naloxone", uuid: "sug-15" },
+          { label: "Review VPMS History", uuid: "sug-16" },
+          { label: "Reduce Opioid Dose / Duration", uuid: "sug-17" },
+        ],
+      },
+    ],
+  },
 ];
 
 const INSURANCE_PLANS = [
@@ -303,6 +322,8 @@ type ResourceType =
   | "Encounter"
   | "CarePlan"
   | "DiagnosticReport"
+  | "Procedure"
+  | "AllergyIntolerance"
   | "Bundle";
 
 function buildFhirResource(type: ResourceType, fields: Record<string, string>): object {
@@ -453,6 +474,33 @@ function buildFhirResource(type: ResourceType, fields: Record<string, string>): 
           ? [{ contentType: "text/plain", data: btoa(fields.drNarrative) }]
           : [],
       };
+    case "Procedure":
+      return {
+        resourceType: "Procedure",
+        id: `proc-${Date.now()}`,
+        status: fields.procStatus || "completed",
+        code: fields.procSnomed
+          ? { coding: [{ system: "http://snomed.info/sct", code: fields.procSnomed, display: fields.procCode || "" }], text: fields.procCode || "" }
+          : { text: fields.procCode || "" },
+        subject: { reference: `Patient/${fields.subject || ""}` },
+        performedDateTime: fields.procDate || now,
+      };
+    case "AllergyIntolerance":
+      return {
+        resourceType: "AllergyIntolerance",
+        id: `allergy-${Date.now()}`,
+        clinicalStatus: {
+          coding: [{ system: "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical", code: "active" }],
+        },
+        verificationStatus: {
+          coding: [{ system: "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification", code: fields.allergyVerification || "confirmed" }],
+        },
+        criticality: fields.allergyCriticality || "low",
+        code: { text: fields.allergen || "" },
+        patient: { reference: `Patient/${fields.subject || ""}` },
+        recordedDate: now,
+        reaction: fields.allergyReaction ? [{ manifestation: [{ text: fields.allergyReaction }] }] : [],
+      };
     case "Bundle":
       return {
         resourceType: "Bundle",
@@ -476,6 +524,8 @@ const RESOURCE_REQUIRED_FIELDS: Record<ResourceType, string[]> = {
   Encounter: ["subject", "encStart"],
   CarePlan: ["subject", "cpTitle"],
   DiagnosticReport: ["subject", "drCode"],
+  Procedure: ["subject", "procCode"],
+  AllergyIntolerance: ["subject", "allergen"],
   Bundle: ["bundleType"],
 };
 
@@ -730,6 +780,68 @@ function BuilderTab() {
             </div>
           </div>
         );
+      case "Procedure":
+        return (
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <label className={labelCls}>Subject Patient ID *</label>
+              <input className={inputCls} placeholder="patient-001" value={fields.subject || ""} onChange={(e) => setField("subject", e.target.value)} />
+            </div>
+            <div>
+              <label className={labelCls}>Procedure *</label>
+              <input className={inputCls} placeholder="Colonoscopy" value={fields.procCode || ""} onChange={(e) => setField("procCode", e.target.value)} />
+            </div>
+            <div>
+              <label className={labelCls}>SNOMED CT code</label>
+              <input className={inputCls} placeholder="optional" value={fields.procSnomed || ""} onChange={(e) => setField("procSnomed", e.target.value)} />
+            </div>
+            <div>
+              <label className={labelCls}>Status</label>
+              <select className={selectCls} value={fields.procStatus || ""} onChange={(e) => setField("procStatus", e.target.value)}>
+                <option value="completed">completed</option>
+                <option value="in-progress">in-progress</option>
+                <option value="not-done">not-done</option>
+              </select>
+            </div>
+            <div>
+              <label className={labelCls}>Performed (date)</label>
+              <input type="date" className={inputCls} value={fields.procDate || ""} onChange={(e) => setField("procDate", e.target.value)} />
+            </div>
+          </div>
+        );
+      case "AllergyIntolerance":
+        return (
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <label className={labelCls}>Subject Patient ID *</label>
+              <input className={inputCls} placeholder="patient-001" value={fields.subject || ""} onChange={(e) => setField("subject", e.target.value)} />
+            </div>
+            <div>
+              <label className={labelCls}>Substance *</label>
+              <input className={inputCls} placeholder="Penicillin" value={fields.allergen || ""} onChange={(e) => setField("allergen", e.target.value)} />
+            </div>
+            <div>
+              <label className={labelCls}>Criticality</label>
+              <select className={selectCls} value={fields.allergyCriticality || ""} onChange={(e) => setField("allergyCriticality", e.target.value)}>
+                <option value="low">low</option>
+                <option value="high">high</option>
+                <option value="unable-to-assess">unable-to-assess</option>
+              </select>
+            </div>
+            <div>
+              <label className={labelCls}>Verification</label>
+              <select className={selectCls} value={fields.allergyVerification || ""} onChange={(e) => setField("allergyVerification", e.target.value)}>
+                <option value="confirmed">confirmed</option>
+                <option value="unconfirmed">unconfirmed</option>
+                <option value="refuted">refuted</option>
+              </select>
+            </div>
+            <div className="col-span-2">
+              <label className={labelCls}>Reaction</label>
+              <input className={inputCls} placeholder="Hives" value={fields.allergyReaction || ""} onChange={(e) => setField("allergyReaction", e.target.value)} />
+            </div>
+          </div>
+        );
       case "DiagnosticReport":
         return (
           <div className="grid grid-cols-2 gap-4">
@@ -793,7 +905,7 @@ function BuilderTab() {
             value={resourceType}
             onChange={(e) => { setResourceType(e.target.value as ResourceType); setFields({}); setGenerated(""); }}
           >
-            {(["Patient", "Observation", "Condition", "Medication", "Encounter", "CarePlan", "DiagnosticReport", "Bundle"] as ResourceType[]).map((r) => (
+            {(["Patient", "Observation", "Condition", "Medication", "Encounter", "CarePlan", "DiagnosticReport", "Procedure", "AllergyIntolerance", "Bundle"] as ResourceType[]).map((r) => (
               <option key={r} value={r}>{r}</option>
             ))}
           </select>

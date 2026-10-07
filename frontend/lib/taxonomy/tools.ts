@@ -59,6 +59,15 @@ export const TOOLS: readonly Tool[] = [
     desc: "Model the post-2030 Medicaid funding cliff created by H.R. 1 FMAP phase-downs, state-by-state.",
   },
   {
+    id: "policy-impact-assessment",
+    label: "Policy Impact Assessment Framework",
+    href: "/research-lab/policy-quality?tab=policy-impact",
+    pillars: ["policy"],
+    // Ch 3 §3.7.2 defines the framework; Ch 12 §12.5 lists it in the Implementation Toolkit.
+    chapters: ["3", "12"],
+    desc: "Work a new rule, CMMI model, or state bill through exposure mapping, scenario analysis, response strategy, and stakeholder communication, mapped to the five pillars.",
+  },
+  {
     id: "innovation-leaderboard",
     label: "Innovation Leaderboard",
     href: "/research-lab/knowledge-workspace?tab=leaderboard",
@@ -176,6 +185,15 @@ export const TOOLS: readonly Tool[] = [
     desc: "Model the Act 167 feasibility question: a single statewide EHR vs. FHIR interoperability across Vermont's existing platforms — 10-year TCO, data timeliness, disruption, and vendor lock-in.",
   },
   {
+    id: "fhir-implementation-guide",
+    label: "FHIR Implementation Guide",
+    href: "/research-lab/interoperability?tab=fhir-guide",
+    pillars: ["technology"],
+    // Ch 5 §5.2.2 / Fig 5.1 define the three use cases; Ch 12 §12.5 lists the guide.
+    chapters: ["5", "12"],
+    desc: "Step-by-step implementation of the three priority FHIR use cases (patient access, provider access, payer prior authorization), with where each major EHR vendor documents its certified APIs.",
+  },
+  {
     id: "ai-governance-lab",
     label: "AI Clinical Governance Lab",
     href: "/research-lab/technology-ai?tab=ai",
@@ -211,6 +229,15 @@ export const TOOLS: readonly Tool[] = [
     pillars: ["clinical"],
     chapters: ["8", "9"],
     desc: "Step-by-step HCC v28 RAF calculation per patient, population tier pyramid, and comparison of HCC vs. ACG vs. CDPS vs. Charlson algorithms.",
+  },
+  {
+    id: "hcc-gap-closure-playbook",
+    label: "HCC Gap Closure Playbook",
+    href: "/research-lab/vbc-clinical-quality?tab=hcc-playbook",
+    pillars: ["technology", "clinical"],
+    // Ch 1 Key Concepts, Ch 3 §3.9 and Ch 9 §9.5 make the case; Ch 12 §12.5 lists the playbook.
+    chapters: ["1", "3", "9", "12"],
+    desc: "Retrospective HCC gap analysis on your attributed population, coding education for Vermont's three most common documentation gaps, and Annual Wellness Visit completion program design.",
   },
   {
     id: "vbc-quality-measures",
@@ -271,7 +298,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/knowledge-workspace?tab=evidence",
     pillars: ["operations"],
     chapters: ["11", "12"],
-    desc: "Search 25 landmark CEA/CUA studies and 20 CMMI innovation model summaries.",
+    desc: "Search 25 landmark CEA/CUA studies and 21 CMMI innovation model summaries.",
   },
   {
     id: "research-workspace",

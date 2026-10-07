@@ -10,6 +10,7 @@ const FHIRLab                   = dynamic(() => import('@/components/research/FH
 const RiskStratificationEngine  = dynamic(() => import('@/components/research/RiskStratificationEngine'),  { ssr: false })
 const EMREHRLab                 = dynamic(() => import('@/components/research/EMREHRLab'),                 { ssr: false })
 const StatewideEHRLab           = dynamic(() => import('@/components/research/StatewideEHRLab'),           { ssr: false })
+const FHIRImplementationGuide   = dynamic(() => import('@/components/research/FHIRImplementationGuide'),   { ssr: false })
 
 function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string; badge: string; desc: string }) {
   return (
@@ -42,6 +43,10 @@ const TABS = [
   {
     id: 'statewide-ehr', icon: '🗺️', label: 'Statewide EHR Modeler', badge: 'Act 167 · RHT',
     desc: "Model Vermont's Act 167 feasibility question — a single statewide EHR vs. FHIR interoperability across the existing platforms — on 10-year cost, data timeliness, migration disruption, and vendor lock-in.",
+  },
+  {
+    id: 'fhir-guide', icon: '📘', label: 'FHIR Implementation Guide', badge: 'Implementation',
+    desc: 'Step-by-step implementation of the three priority FHIR use cases — patient access, provider access for care coordination, and payer-to-provider prior authorization — with where Epic, Oracle Health, MEDITECH, and TruBridge document their certified APIs.',
   },
 ]
 
@@ -102,6 +107,7 @@ export default function InteroperabilityClient() {
       {activeTab === 'risk' && <div><ToolHeader icon="📊" label="Risk Stratification Engine" badge="Clinical Risk"    desc={TABS[1].desc} /><RiskStratificationEngine /></div>}
       {activeTab === 'emr'  && <div><ToolHeader icon="🏥" label="EMR/EHR Lab"                badge="EHR Systems"      desc={TABS[2].desc} /><EMREHRLab /></div>}
       {activeTab === 'statewide-ehr' && <div><ToolHeader icon="🗺️" label="Statewide EHR Deployment Modeler" badge="Act 167 · RHT" desc={TABS[3].desc} /><StatewideEHRLab /></div>}
+      {activeTab === 'fhir-guide' && <div><ToolHeader icon="📘" label="FHIR Implementation Guide" badge="Implementation" desc={TABS[4].desc} /><FHIRImplementationGuide /></div>}
     </LabPageShell>
   )
 }

@@ -525,6 +525,11 @@ function fairnessLight(v: FairnessVerdict) {
   return <span className="inline-flex items-center gap-1 text-red-600 font-semibold text-xs"><XCircle className="w-4 h-4" />Violated</span>;
 }
 
+/** Lowest/highest group ratio checked against the 0.80–1.25 band (four-fifths convention). */
+function bandFlag(r: number): string {
+  return r < 0.8 || r > 1.25 ? " — outside 0.80–1.25, flagged" : " — within 0.80–1.25";
+}
+
 function BiasDetector() {
   const [inputs, setInputs] = useState<BiasInputs>(defaultBiasInputs());
   const [showMitigation, setShowMitigation] = useState(false);
@@ -561,6 +566,13 @@ function BiasDetector() {
     const ageVals = Object.values(inputs.ageScores);
     const ageDiff = Math.abs(ageVals[0] - ageVals[1]);
 
+    // Disparity ratios (lowest group / highest group). Appendix D.12: flags outside the
+    // 0.80–1.25 band — the four-fifths convention, read in both directions.
+    const ratio = (lo: number, hi: number) => (hi > 0 ? lo / hi : 1);
+    const demParityRatio = ratio(minRace, maxRace);
+    const eqOppRatio = ratio(minTp, maxTp);
+    const predParityRatio = ratio(minPpv, maxPpv);
+
     const demParity: FairnessVerdict = demParityDiff > 10 ? "fail" : demParityDiff > 5 ? "warn" : "pass";
     const eqOpp: FairnessVerdict = eqOppDiff > 15 ? "fail" : eqOppDiff > 10 ? "warn" : "pass";
     const predParity: FairnessVerdict = predParityDiff > 10 ? "fail" : predParityDiff > 7 ? "warn" : "pass";
@@ -584,6 +596,9 @@ function BiasDetector() {
       demParityDiff,
       eqOppDiff,
       predParityDiff,
+      demParityRatio,
+      eqOppRatio,
+      predParityRatio,
       genderDiff,
       ageDiff,
       demParity,
@@ -733,7 +748,7 @@ function BiasDetector() {
               diff: metrics.demParityDiff,
               threshold: "5%",
               verdict: metrics.demParity,
-              detail: `Max spread: ${metrics.demParityDiff.toFixed(1)}% across racial/ethnic groups`,
+              detail: `Max spread: ${metrics.demParityDiff.toFixed(1)}% across racial/ethnic groups · ratio ${metrics.demParityRatio.toFixed(2)}${bandFlag(metrics.demParityRatio)}`,
             },
             {
               name: "Equal Opportunity",
@@ -741,7 +756,7 @@ function BiasDetector() {
               diff: metrics.eqOppDiff,
               threshold: "10%",
               verdict: metrics.eqOpp,
-              detail: `Max spread: ${metrics.eqOppDiff.toFixed(1)}% in true positive rates`,
+              detail: `Max spread: ${metrics.eqOppDiff.toFixed(1)}% in true positive rates · ratio ${metrics.eqOppRatio.toFixed(2)}${bandFlag(metrics.eqOppRatio)}`,
             },
             {
               name: "Predictive Parity",
@@ -749,7 +764,7 @@ function BiasDetector() {
               diff: metrics.predParityDiff,
               threshold: "10%",
               verdict: metrics.predParity,
-              detail: `Max spread: ${metrics.predParityDiff.toFixed(1)}% in PPV`,
+              detail: `Max spread: ${metrics.predParityDiff.toFixed(1)}% in PPV · ratio ${metrics.predParityRatio.toFixed(2)}${bandFlag(metrics.predParityRatio)}`,
             },
             {
               name: "Gender Parity",

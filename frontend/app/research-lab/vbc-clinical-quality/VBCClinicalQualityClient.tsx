@@ -10,6 +10,7 @@ const HL7FHIRExplorer           = dynamic(() => import('@/components/research/HL
 const VBCQualityDashboard       = dynamic(() => import('@/components/research/VBCQualityDashboard'),       { ssr: false })
 const HighLowValueCare          = dynamic(() => import('@/components/research/HighLowValueCare'),          { ssr: false })
 const RiskStratificationMethodology = dynamic(() => import('@/components/research/RiskStratificationMethodology'), { ssr: false })
+const HCCGapClosurePlaybook     = dynamic(() => import('@/components/research/HCCGapClosurePlaybook'),     { ssr: false })
 
 function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string; badge: string; desc: string }) {
   return (
@@ -54,6 +55,13 @@ const TABS = [
     label: 'Risk Stratification Methodology',
     badge: 'HCC v28 · ACG · CDPS · Charlson',
     desc: 'Step-by-step HCC v28 RAF score calculation for each patient, population tier stratification pyramid, and comparative analysis of major risk adjustment algorithms including Johns Hopkins ACG.',
+  },
+  {
+    id: 'hcc-playbook',
+    icon: '🗂️',
+    label: 'HCC Gap Closure Playbook',
+    badge: 'Methodology · AWV',
+    desc: 'Retrospective HCC gap analysis on your attributed population, coding education for Vermont\'s three most common documentation gaps, and Annual Wellness Visit completion program design.',
   },
 ]
 
@@ -126,6 +134,7 @@ export default function VBCClinicalQualityClient() {
       {activeTab === 'quality' && <VBCQualityDashboard />}
       {activeTab === 'value'   && <HighLowValueCare />}
       {activeTab === 'risk'    && <RiskStratificationMethodology />}
+      {activeTab === 'hcc-playbook' && <HCCGapClosurePlaybook />}
     </LabPageShell>
   )
 }

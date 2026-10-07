@@ -88,6 +88,12 @@ export function TurnoverROITab() {
   const [roleParams, setRoleParams] = useState(ROLE_DEFAULTS["RN"]);
   const [retentionProgram, setRetentionProgram] = useState("Flexible Scheduling");
   const [programCoverage, setProgramCoverage] = useState(100); // % of workforce covered
+  // Chapter 11 §11.17: "the workforce gap that the $1,303 per-discharge administrative-cost
+  // gap must fund closing." Premium and discharges match the CIN & Shared Services Modeler's
+  // defaults; the recovered share is the reader's assumption, not data.
+  const [annualDischarges, setAnnualDischarges] = useState(4_200);
+  const [adminPremium, setAdminPremium] = useState(1_303);
+  const [premiumRecoveredPct, setPremiumRecoveredPct] = useState(10);
 
   const handleRoleChange = (r: string) => {
     setRole(r);
@@ -410,6 +416,39 @@ export function TurnoverROITab() {
               : "Program self-funding immediately"}
           </p>
         </div>
+      </SectionCard>
+
+      {/* Fund it from the administrative premium (Chapter 11) */}
+      <SectionCard title="Fund it from the $1,303 administrative premium">
+        <p className="text-xs text-slate-500 mb-3 leading-relaxed">
+          Chapter 11 argues the administrative-cost premium Vermont hospitals carry per discharge is the pool that has to pay
+          for closing the workforce gap. Enter this organization&apos;s discharges and the share of the premium you expect
+          shared services to recover; the tool compares that pool with the retention program and turnover cost above.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+          <Slider label="Annual discharges" value={annualDischarges} min={500} max={40_000} step={100} onChange={setAnnualDischarges} />
+          <Slider label="Admin premium per discharge" value={adminPremium} min={0} max={2_500} step={1} unit="$" onChange={setAdminPremium} />
+          <Slider label="Share of premium recovered" value={premiumRecoveredPct} min={0} max={50} step={1} unit="%" onChange={setPremiumRecoveredPct}
+            info="Your assumption. The CIN & Shared Services Modeler estimates this by function." />
+        </div>
+        {(() => {
+          const premiumPool = annualDischarges * adminPremium;
+          const recovered = premiumPool * (premiumRecoveredPct / 100);
+          const coversProgram = roiResults.programCost > 0 ? (recovered / roiResults.programCost) * 100 : 0;
+          const coversTurnover = turnoverResults.totalAnnualCost > 0 ? (recovered / turnoverResults.totalAnnualCost) * 100 : 0;
+          return (
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <MetricBox label="Annual admin premium" value={fmtDollars(premiumPool)} sub={`${fmt(annualDischarges)} discharges × ${fmtDollars(adminPremium)}`} />
+              <MetricBox label="Recovered for workforce" value={fmtDollars(recovered)} sub={`${premiumRecoveredPct}% of the premium`} color="orange" />
+              <MetricBox
+                label="Covers"
+                value={`${coversProgram.toFixed(0)}% of program`}
+                sub={`${coversTurnover.toFixed(0)}% of annual ${role} turnover cost`}
+                color={coversProgram >= 100 ? "green" : "amber"}
+              />
+            </div>
+          );
+        })()}
       </SectionCard>
     </div>
   );

@@ -47,6 +47,23 @@ export default async function CaseStudiesPage() {
         </div>
       </div>
 
+      {/* Program case studies — Appendix F.4 names these three; each is a full platform page. */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <h2 className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">Program case studies</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {[
+            { href: "/vermont-rht-program", title: "Vermont Rural Health Transformation Program", sub: "The $195M federal RHT award and what it finances" },
+            { href: "/vermont-act-167", title: "Vermont Act 167", sub: "Oliver Wyman's recommendations, with the hospital-level simulator" },
+            { href: "/california-calaim", title: "California CalAIM", sub: "The $6.7B Medi-Cal transformation" },
+          ].map((p) => (
+            <Link key={p.href} href={p.href} className="block rounded-xl border border-slate-200 bg-white p-5 hover:border-indigo-300 hover:shadow-md transition">
+              <p className="text-sm font-black text-slate-900">{p.title}</p>
+              <p className="text-xs text-slate-500 mt-1">{p.sub}</p>
+            </Link>
+          ))}
+        </div>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {(cases as CaseStudy[]).map((study) => (

@@ -306,6 +306,18 @@ export default function VBCReadinessAssessment() {
                 <p className="text-xs text-slate-500 mt-1">
                   Score: <strong>{fmt(results.overallPct, 0)}%</strong> · {results.answeredDimensions}/{results.totalDimensions} dimensions assessed ({completionPct}% complete)
                 </p>
+                {(() => {
+                  // Appendix D.18: 30 dimensions × 4 = 120 points; unassessed dimensions score 0.
+                  const points = Object.values(scores).reduce<number>((a, v) => a + (v ?? 0), 0);
+                  const max = results.totalDimensions * 4;
+                  const stage = points >= 100 ? "Optimized" : points >= 80 ? "Operational" : points >= 60 ? "Developing" : "Pre-transition";
+                  return (
+                    <p className="text-xs text-slate-500 mt-0.5" data-testid="readiness-points">
+                      Points: <strong>{points} / {max}</strong> · Stage: <strong>{stage}</strong>{" "}
+                      <span className="text-slate-400">(&lt;60 Pre-transition · 60–80 Developing · 80–100 Operational · 100–120 Optimized)</span>
+                    </p>
+                  );
+                })()}
               </div>
             </div>
             {results.answeredDimensions > 0 && (

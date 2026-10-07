@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FivePillarFrameworkMap from "@/components/FivePillarFrameworkMap";
 import FromTheBook from "@/components/FromTheBook";
+import PillarOwnershipCheck from "@/components/framework/PillarOwnershipCheck";
 
 export const metadata = {
   title: "Five-Pillar Framework | HTR",
@@ -185,6 +186,9 @@ export default function FrameworkPage() {
       <section className="w-full px-2 sm:px-3 py-4">
         <FivePillarFrameworkMap />
       </section>
+
+      {/* ── PILLAR OWNERSHIP CHECK (Chapter 16 §16.8) ─────────────────────── */}
+      <PillarOwnershipCheck />
 
       {/* ── FROM THE BOOK ────────────────────────────────────────────────── */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-2">

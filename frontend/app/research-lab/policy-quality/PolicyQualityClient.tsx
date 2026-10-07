@@ -12,6 +12,7 @@ const HospitalFinancialScorecard         = dynamic(() => import('@/components/re
 const HTAStudio                          = dynamic(() => import('@/components/research/HTAStudio'),                          { ssr: false })
 const ActuarialLab                       = dynamic(() => import('@/components/research/ActuarialLab'),                       { ssr: false })
 const MedicaidWorkRequirementsCalculator = dynamic(() => import('@/components/research/MedicaidWorkRequirementsCalculator'), { ssr: false })
+const PolicyImpactAssessment             = dynamic(() => import('@/components/research/PolicyImpactAssessment'),             { ssr: false })
 const HR1CliffScenario                   = dynamic(() => import('@/components/research/HR1CliffScenario'),                   { ssr: false })
 
 function ToolHeader({ icon, label, badge, desc }: { icon: string; label: string; badge: string; desc: string }) {
@@ -57,6 +58,10 @@ const TABS = [
   {
     id: 'hr1-cliff', icon: '📉', label: 'H.R. 1 Cliff Scenario', badge: 'Federal Legislation',
     desc: 'Model the post-2030 Medicaid cliff — when one-time RHT investment capital expires while H.R. 1 Medicaid cuts take permanent effect. Project hospital revenue trajectory by state.',
+  },
+  {
+    id: 'policy-impact', icon: '🧭', label: 'Policy Impact Assessment Framework', badge: 'Policy Strategy',
+    desc: 'Work a new rule, CMMI model, or state bill through exposure mapping, scenario analysis, response strategy, and stakeholder communication — mapped to the five pillars — and copy out a one-page brief.',
   },
 ]
 
@@ -123,6 +128,7 @@ export default function PolicyQualityClient() {
       {activeTab === 'actuarial'   && <div><ToolHeader icon="📉" label="Actuarial Lab"                       badge="Actuarial Science"           desc={TABS[4].desc} /><ActuarialLab /></div>}
       {activeTab === 'medicaid-wr' && <div><ToolHeader icon="📋" label="Work Requirements Calculator"        badge="H.R. 1 · Medicaid"           desc={TABS[5].desc} /><MedicaidWorkRequirementsCalculator /></div>}
       {activeTab === 'hr1-cliff'   && <div><ToolHeader icon="📉" label="H.R. 1 Cliff Scenario"               badge="Federal Legislation"         desc={TABS[6].desc} /><HR1CliffScenario /></div>}
+      {activeTab === 'policy-impact' && <div><ToolHeader icon="🧭" label="Policy Impact Assessment Framework" badge="Policy Strategy" desc={TABS[7].desc} /><PolicyImpactAssessment /></div>}
     </LabPageShell>
   )
 }

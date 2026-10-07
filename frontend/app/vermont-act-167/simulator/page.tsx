@@ -128,7 +128,7 @@ export default function Act167SimulatorPage() {
       <HubPageTemplate
         badgeLabel="Policy Simulation Engine · Beta — Synthetic Data"
         title="Act 167 Transformation Simulator"
-        subtitle={`Analyze implementation scenarios for the Oliver Wyman Report's ${RECOMMENDATIONS.length} recommendations. Model the 5-pillar impact — policy, technology, financial, equity, and clinical — for any combination of actions.`}
+        subtitle={`Analyze implementation scenarios for the Oliver Wyman Report's ${RECOMMENDATIONS.length} recommendations. Model the impact across five dimensions — policy, technology, financial, equity, and clinical — for any combination of actions. (These are impact dimensions for the Oliver Wyman recommendations, not the book's five pillars.)`}
         tabs={tabs}
         backLink="/vermont-act-167"
         backLabel="Vermont Act 167"

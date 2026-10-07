@@ -177,7 +177,7 @@ export function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }
         defaultCollapsed={false}
         compactSummary={
           <span className="flex items-center gap-3 flex-wrap text-[11px]">
-            <span className="font-black uppercase tracking-widest text-slate-700">5-Pillar Analysis</span>
+            <span className="font-black uppercase tracking-widest text-slate-700">5-Dimension Analysis</span>
             <span className="text-violet-700">Policy {Math.round(5 + timelineAggressiveness * 0.05)}/10</span>
             <span className="text-blue-700">Tech {telehealthScope}%</span>
             <span className="text-emerald-700">Financial {Math.round(outcomes.financialImprovement * 100)}%</span>
@@ -186,7 +186,7 @@ export function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }
           </span>
         }
       >
-        <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">Simulation Outputs — 5-Pillar Analysis</div>
+        <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">Simulation Outputs — 5-Dimension Analysis</div>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
           {/* Policy */}
           <InfoCard variant="default">
