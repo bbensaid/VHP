@@ -63,7 +63,7 @@ export function ImplementationRoadmap({ selectedRecs }: { selectedRecs: Set<stri
         "UVMMC administrative cost reduction targets achieved",
         "VITL 2.0 full deployment with API ecosystem",
         "ED-at-Home pilot evaluation and expansion decision",
-        "Full AHEAD Model (2024–2034) mid-term assessment",
+        "Statewide Health Care Delivery Strategic Plan due (on or before Jan 15, 2028)",
         "Elder care COE network established and operational",
         "Statewide medical transportation network complete",
         "Equity scorecard published — progress against baseline",

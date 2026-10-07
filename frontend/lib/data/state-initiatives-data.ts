@@ -10,7 +10,7 @@ export type InitiativeType =
   | "Global Budget"
   | "ACO Model";
 
-export type InitiativeStatus = "Active" | "In Development" | "Completed" | "Pending";
+export type InitiativeStatus = "Active" | "In Development" | "Completed" | "Pending" | "Withdrawn";
 
 export interface StateInitiative {
   id: string;
@@ -45,30 +45,30 @@ export const STATE_INITIATIVES: Record<string, StateInitiativesProfile> = {
     region: "Northeast",
     heroColor: "bg-violet-100 text-violet-800",
     summary:
-      "Vermont is the national model for all-payer health system reform. The Green Mountain Care Board regulates hospital budgets and commercial insurance rates. Act 167 (2024) accelerates hospital transformation. Vermont's participation in the federal AHEAD Model ties commercial payers into statewide spending targets alongside Medicare and Medicaid.",
+      "Vermont is the national model for all-payer health system reform. The Green Mountain Care Board regulates hospital budgets and commercial insurance rates. Act 167 (2022) launched the hospital-transformation analysis, and Act 68 (2025) mandates reference-based pricing and hospital global budgets. Vermont signed the federal AHEAD Model in January 2025 but withdrew in July 2026, so that reform now proceeds under state law.",
     initiatives: [
       {
         id: "vt-act167",
         name: "Vermont Act 167",
         description:
-          "Enacted in 2024, Act 167 gives the Green Mountain Care Board explicit authority to set hospital global budgets regardless of payer mix, directs the Oliver Wyman Report's restructuring recommendations into law, and requires hospitals to file transformation plans. It is the most consequential Vermont health legislation since the creation of the GMCB in 2011.",
+          "Enacted in 2022 (S.285), Act 167 directed the Green Mountain Care Board and AHS to carry out a statewide hospital-sustainability data analysis and community engagement process — the work that became the 2024 Oliver Wyman report — and to pursue a new all-payer agreement with CMS. It set up the diagnosis that Act 51 (2023) and Act 68 (2025) built on.",
         type: "State Law",
         status: "Active",
-        year: 2024,
+        year: 2022,
         internalLink: "/vermont-act-167",
-        externalUrl: "https://legislature.vermont.gov/bill/status/2024/H.867",
+        externalUrl: "https://legislature.vermont.gov/bill/status/2022/S.285",
         tags: ["global budget", "hospitals", "Green Mountain Care Board", "Oliver Wyman"],
       },
       {
         id: "vt-ahead",
         name: "AHEAD Model (Vermont)",
         description:
-          "Vermont is a founding participant in CMS's AHEAD (Adding Home Through Equity, Access, and Delivery) Model. The model sets a statewide total cost of care target for Medicare and, for the first time, brings commercial insurers into a shared accountability structure alongside Medicaid. Vermont's GMCB serves as the model's state partner.",
+          "Vermont signed its state agreement for CMS's AHEAD (States Advancing All-Payer Health Equity Approaches and Development) Model in January 2025 and withdrew in July 2026, after CMS renegotiation cut the expected EAST Fund from roughly $138M to a cap near $10M — before its Cohort 2 performance period (January 2028) began.",
         type: "Federal Program",
-        status: "Active",
-        year: 2024,
+        status: "Withdrawn",
+        year: 2025,
         internalLink: "/ahead-model",
-        externalUrl: "https://innovation.cms.gov/innovation-models/ahead",
+        externalUrl: "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
         tags: ["AHEAD", "CMS", "all-payer", "total cost of care"],
       },
       {
@@ -79,7 +79,7 @@ export const STATE_INITIATIVES: Record<string, StateInitiativesProfile> = {
         type: "State Program",
         status: "Active",
         year: 2011,
-        externalUrl: "https://gmcb.vermont.gov/",
+        externalUrl: "https://gmcboard.vermont.gov/",
         tags: ["GMCB", "rate review", "hospital budget", "regulation"],
       },
       {

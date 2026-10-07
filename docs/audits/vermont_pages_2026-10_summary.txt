@@ -1,0 +1,71 @@
+Vermont pages audit — 2026-10-07
+Detail log: docs/audits/vermont_pages_2026-10.jsonl (59 rows: 46 FIXED, 13 LEFT)
+
+FILES CHANGED (23, uncommitted)
+  app/ahead-model/page.tsx
+  app/compare-states/page.tsx
+  app/dashboard/simulator/CMSRuralSimulatorClient.tsx
+  app/states/[state]/page.tsx                       (Withdrawn status badge colour)
+  app/vermont-act-167/page.tsx
+  app/vermont-act-167/hospitals/[slug]/page.tsx
+  app/vermont-act-167/simulator/data.ts
+  app/vermont-act-167/simulator/tabs/implementation.tsx
+  app/vermont-act-51/page.tsx
+  app/vermont-act-68/page.tsx
+  app/vermont-act-68/simulator/VermontAct68SimulatorClient.tsx
+  app/vermont-blueprint/page.tsx
+  app/vermont-designated-agencies/page.tsx
+  app/vermont-legislative-resources/page.tsx
+  app/vermont-medicaid/page.tsx
+  app/vermont-rht-program/page.tsx
+  app/vermont-sash/page.tsx
+  app/vermont-sdoh/page.tsx
+  app/vermont-uhds/page.tsx
+  app/vermont-vcci/page.tsx
+  lib/data/rht-program.ts            (shared: Vermont entry only)
+  lib/data/state-comparison.ts       (shared: Vermont cells only)
+  lib/data/state-initiatives-data.ts (shared: Vermont entry + new "Withdrawn" status value)
+
+FIX ROWS BY TYPE (46; one row can cover several instances)
+  ahead_vermont_status 23  - Vermont shown as active, prospective, or funded under AHEAD. Fixed to:
+                             signed Jan 2025, withdrew Jul 2026 (EAST Fund ~$138M -> ~$10M cap),
+                             before the Cohort 2 performance period (Jan 2028). "Vermont AHEAD ACO" removed.
+  wrong_fact           10  - /ahead-model listed MN and NH as participants (real: MD; CT, HI; RI, NY),
+                             used an invented 2021-2034 timeline, "$645M+", "6 states", end date 2034 (real: 2035).
+                             Act 167 shown as 2024/H.867 (real: 2022/S.285). APM shown as "AHEAD" in 2019.
+                             RHT "$195M over five years". VT "14 CAHs" (real: 8). RHT award rounded.
+  wrong_date            4  - Strategic Plan "December 2028" -> on or before Jan 15, 2028 (11 instances,
+                             including 7 left on /vermont-act-68 by the 2026-10-05 pass). Act 68 sim
+                             "RBP Effective FY2027" -> FY2028 prices.
+  broken_link           5  - 4 VCCI cards linked to /vermont-rht-program (now /vermont-vcci); /read/chapter-17
+                             is a 404 (the book has 16 chapters); GMCB URL gmcb.vermont.gov -> gmcboard.vermont.gov.
+  stale_figure          2  - Medicaid enrollment 207K / 218K -> 160,747 (DVHA, Dec 2025).
+  stale_status          1  - CCBHC certification (Jul 1, 2026) added to Howard, NCSS, NKHS, HCRS.
+  anachronism           1  - Act 167 (2022) "directs AHEAD negotiation"; AHEAD was announced Sep 2023.
+
+RE-VERIFIED (no change needed): /vermont-act-68 RBP (FY2028 prices, FY2027 statutory deadline), the
+  -2.9% FY27 commercial rate, and the AHEAD withdrawal text. No "UVMMC lost in court" claim exists in
+  scope. RHT page "$195M a year" is correct. The Jan 2027 work requirement dates are correct.
+
+LEFT (13) - see jsonl status=LEFT
+  - /ahead-model PCI targets and equity-benchmark text for CT/HI/MD: no source found, likely fabricated.
+  - Act 167 "target date of 2028" directive: unverified.
+  - /vermont-medicaid does not mention the Jan 2027 work requirements or 6-month redeterminations
+    (this is missing content, not a wrong claim).
+  - The DA list has 10 entries while the page says 11 (Clara Martin Center is missing); bed counts unverified.
+  - Dashboard pages render Sanity/Supabase content; not audited.
+  - Non-Vermont rows in CMSRuralSimulatorClient: unverified.
+  REPORT ONLY, outside owned scope:
+  - "December 2028" Strategic Plan date in components/VermontReformCascade.tsx (118, 132),
+    components/research/TransformationScorecard.tsx (48), components/FivePillarFrameworkMap.tsx (37).
+  - lib/data/state-initiatives-data.ts lists Maine, Pennsylvania, and Minnesota as AHEAD states; none are.
+    lib/data/rht-program.ts:355 and performance-index-data.ts:337 do the same for Georgia.
+  - These describe "Vermont AHEAD" as a live program: components/research/{VBCQualityDashboard,
+    HighLowValueCare,APMCalculator,RiskStratificationMethodology,VCCIScenario}.tsx,
+    lib/syntheticPatients.ts, app/chat/page.tsx, app/academy/getting-started/research-lab/page.tsx,
+    app/policy/feasibility/page.tsx.
+
+CHECKS
+  npx tsc --noEmit --skipLibCheck : exit 0, no errors
+  npx eslint <23 touched files>   : 0 errors, 78 warnings, all pre-existing (react/no-unescaped-entities,
+                                    one unused import in vermont-uhds). No new warnings.

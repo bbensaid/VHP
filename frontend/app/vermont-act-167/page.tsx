@@ -132,8 +132,9 @@ export default function VermontAct167Page() {
             </p>
             <p className="ty-body text-slate-600 leading-relaxed">
               It represents Vermont's most ambitious statutory framework for hospital transformation
-              since the original All-Payer ACO Model, and directly underpins the state's entry into
-              the federal <Link href="/ahead-model" className="text-violet-700 hover:text-violet-900 underline underline-offset-2">AHEAD Model</Link>.
+              since the original All-Payer ACO Model. It underpinned the state's entry into the
+              federal <Link href="/ahead-model" className="text-violet-700 hover:text-violet-900 underline underline-offset-2">AHEAD Model</Link> —
+              from which Vermont withdrew in July 2026, before its performance period began.
             </p>
           </div>
           <div className="bg-white border border-slate-200 rounded-xl p-6">
@@ -166,14 +167,15 @@ export default function VermontAct167Page() {
                 { date: "Aug 2023", event: "Green Mountain Care Board awards Oliver Wyman Group a $1.05M contract to lead community engagement" },
                 { date: "Oct–Nov 2023", event: "Round 1 community engagement: hundreds of interviews, public meetings across Vermont" },
                 { date: "Jun 2024", event: "Oliver Wyman publicly characterizes Vermont's health care system as 'badly broken'" },
-                { date: "Jul 2, 2024", event: "CMS announces Vermont selected for AHEAD Model Cohort 2 (alongside Maryland in Cohort 1)" },
+                { date: "Jul 2, 2024", event: "CMS announces Connecticut and Hawaii joining Maryland and Vermont in the AHEAD Model" },
                 { date: "Jul–Aug 2024", event: "Round 2 community engagement: statewide meetings, updated data collection" },
                 { date: "Sep 18, 2024", event: "Oliver Wyman delivers final 144-page report to GMCB — recommends hospital consolidations, service line closures" },
                 { date: "Oct 2024", event: "Gifford Medical Center uncovers major data errors; multiple hospitals push back" },
                 { date: "Oct 23, 2024", event: "Oliver Wyman admits errors but holds firm on overall conclusions" },
                 { date: "Dec 2024", event: "Vermont Legislature examines EMS reform as near-term priority stemming from Act 167 findings" },
-                { date: "Jan 1, 2026", event: "AHEAD Medicaid hospital global budgets begin in Vermont (Cohort 2 preparation)" },
-                { date: "Jan 1, 2028", event: "AHEAD Cohort 2 performance year begins — Medicare FFS hospital global budgets (start moved from 2027 per CMS, Sept 2025)" },
+                { date: "Jan 1, 2026", event: "Vermont Medicaid hospital global budget launches with six hospitals" },
+                { date: "Jul 7, 2026", event: "CMS letter: the Medicaid hospital global budget is not approved under Global Commitment terms; payments to cease within 60 days" },
+                { date: "Jul 2026", event: "Vermont withdraws from AHEAD after CMS renegotiation cuts the expected EAST Fund from ~$138M to a cap near $10M — before its Cohort 2 performance period (Jan 2028)" },
               ].map((item) => (
                 <div key={item.date} className="flex gap-6 pl-10 relative">
                   <div className="absolute left-2.5 top-1 w-3 h-3 rounded-full bg-violet-500 border-2 border-white shadow-sm" />
@@ -447,15 +449,17 @@ export default function VermontAct167Page() {
             Act 167 explicitly directs Vermont's health reform agencies to negotiate a new All-Payer Model
             agreement with the federal government — making it the direct legislative foundation for Vermont's
             selection into the <strong>AHEAD Model (States Advancing All-Payer Health Equity Approaches
-            and Development)</strong>.
+            and Development)</strong>. Vermont signed its AHEAD agreement in January 2025 and withdrew in
+            July 2026, after CMS renegotiation cut the expected EAST Fund from roughly $138M to a cap near
+            $10M. The reform now proceeds under state law (Act 68).
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
             {[
               { label: "CMS Announcement", value: "July 2, 2024" },
-              { label: "Vermont Cohort", value: "Cohort 2 (Maryland is Cohort 1)" },
+              { label: "Vermont Cohort", value: "Cohort 2 (performance period was to start Jan 2028)" },
               { label: "Program Length", value: "11 years (2024–2035)" },
               { label: "Grant Funding", value: "Up to $12M per state" },
-              { label: "Implementation Start", value: "January 1, 2028 (Medicare FFS global budgets)" },
+              { label: "Vermont Status", value: "Withdrew July 2026 — before its performance period began" },
               { label: "Model Type", value: "Hospital Global Budgets + Primary Care AHEAD" },
             ].map((item) => (
               <div key={item.label} className="bg-white rounded-lg p-3 border border-emerald-100">
@@ -688,10 +692,10 @@ export default function VermontAct167Page() {
             <div>
               <div className="text-xs font-black uppercase tracking-widest text-emerald-400 mb-2">The Opportunity</div>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Vermont's entry into the AHEAD Model, enabled by Act 167, gives the state access to
-                federal resources, technical assistance, and a proven framework for total cost-of-care
-                reform. The 11-year model duration provides a runway for genuine transformation rather
-                than short-cycle policy experiments.
+                Act 167 opened the door to the AHEAD Model, but Vermont withdrew in July 2026 when CMS
+                cut the expected EAST Fund to a cap near $10M. The transformation runway now comes from
+                state law — Act 68&apos;s reference-based pricing and hospital global budgets — and the
+                federal Rural Health Transformation Program award, not from AHEAD.
               </p>
             </div>
             <div>

@@ -73,12 +73,12 @@ const WYMAN_RECS: Record<string, { title: string; detail: string; icon: string }
   significant: [
     { icon: "→", title: "Service Line Rationalization Review", detail: "Conduct detailed volume and margin analysis for all service lines. Eliminate those below clinical quality thresholds." },
     { icon: "→", title: "Value-Based Care Participation", detail: "Accelerate participation in ACO and shared-savings contracts to reduce reliance on fee-for-service revenue." },
-    { icon: "→", title: "Community Infrastructure Investment", detail: "Work with AHS and AHEAD Model resources to invest in transportation, housing, and EMS — reducing costly ED utilization." },
+    { icon: "→", title: "Community Infrastructure Investment", detail: "Work with AHS and state and federal transformation funding to invest in transportation, housing, and EMS — reducing costly ED utilization." },
     { icon: "→", title: "Capital Plan Review", detail: "Defer all non-essential capital expenditures. Prioritize investments that directly reduce variable costs." },
   ],
   modest: [
     { icon: "→", title: "Academic Program Outcome Review", detail: "Evaluate whether medical education and research programs generate measurable improvements in Vermonter health outcomes." },
-    { icon: "→", title: "AHEAD Model Leadership Role", detail: "As Vermont's only financially stable system, UVMMC should lead the AHEAD Model implementation and serve as the anchor for COE designations statewide." },
+    { icon: "→", title: "Global Budget Leadership Role", detail: "As Vermont's only financially stable system, UVMMC should anchor Act 68 hospital global-budget implementation and serve as the anchor for COE designations statewide." },
     { icon: "→", title: "Shared Services Provider", detail: "Expand shared administrative and clinical services to smaller Vermont hospitals to reduce system-wide costs." },
   ],
 };

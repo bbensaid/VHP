@@ -160,7 +160,7 @@ export default function VermontMedicaidPage() {
             Updated 2026
           </span>
           <span className="bg-emerald-100 text-emerald-700 text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded">
-            Over 200,000 Vermonters Enrolled
+            About 160,000 Vermonters Enrolled
           </span>
         </div>
 
@@ -195,8 +195,8 @@ export default function VermontMedicaidPage() {
 
       {/* ── KEY STATS ────────────────────────────────────────────────────── */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-white border border-slate-200 rounded-2xl p-8 mb-12">
-        <StatPill value="207K+" label="Vermonters enrolled in Medicaid & CHIP" />
-        <StatPill value="26%" label="of Vermont's total population covered" />
+        <StatPill value="160K+" label="Vermonters enrolled in Medicaid & CHIP (DVHA, Dec 2025)" />
+        <StatPill value="~25%" label="of Vermont's total population enrolled" />
         <StatPill value="6" label="distinct program categories for different life situations" />
         <StatPill value="317%" label="FPL maximum for children under Dr. Dynasaur" />
       </div>

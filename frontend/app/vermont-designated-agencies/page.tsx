@@ -32,7 +32,7 @@ const DESIGNATED_AGENCIES = [
     counties: ["Chittenden"],
     website: "https://howardcenter.org",
     designation: "Mental Health & Developmental Disabilities Designated Agency; Substance Use Preferred Provider",
-    highlight: "Vermont's largest DA. Serves greater Burlington metro area — highest-population county. Also manages the Chittenden Unit for Special Investigations (CUSI) and a large residential program network.",
+    highlight: "Certified CCBHC (July 1, 2026). Vermont's largest DA. Serves greater Burlington metro area — highest-population county. Also manages the Chittenden Unit for Special Investigations (CUSI) and a large residential program network.",
     sustainability: true,
   },
   {
@@ -59,7 +59,7 @@ const DESIGNATED_AGENCIES = [
     counties: ["Franklin", "Grand Isle"],
     website: "https://ncssvt.org",
     designation: "Mental Health & Developmental Disabilities Designated Agency",
-    highlight: "Serves St. Albans and northwestern Vermont including Grand Isle islands. Franklin County has high rates of SUD and opioid-related presentations.",
+    highlight: "Certified CCBHC (July 1, 2026). Serves St. Albans and northwestern Vermont including Grand Isle islands. Franklin County has high rates of SUD and opioid-related presentations.",
     sustainability: false,
   },
   {
@@ -68,7 +68,7 @@ const DESIGNATED_AGENCIES = [
     counties: ["Caledonia", "Essex", "Orleans"],
     website: "https://nkhs.org",
     designation: "Mental Health & Developmental Disabilities Designated Agency",
-    highlight: "Largest geographic DA — covers Vermont's Northeast Kingdom (NEK), the most rural and medically underserved region. St. Johnsbury hub. Essex County has the lowest population density in VT and the most severe access challenges.",
+    highlight: "Certified CCBHC (July 1, 2026). Largest geographic DA — covers Vermont's Northeast Kingdom (NEK), the most rural and medically underserved region. St. Johnsbury hub. Essex County has the lowest population density in VT and the most severe access challenges.",
     sustainability: false,
   },
   {
@@ -104,7 +104,7 @@ const DESIGNATED_AGENCIES = [
     counties: ["Windham", "Windsor"],
     website: "https://hcrs.org",
     designation: "Mental Health & Developmental Disabilities Designated Agency",
-    highlight: "Serves Brattleboro/Springfield area. Windham County has extremely high rates of SUD, MH, and poverty. Closely coordinated with Brattleboro Retreat (specialized inpatient psychiatric hospital) and Dartmouth-Hitchcock for regional behavioral health capacity.",
+    highlight: "Certified CCBHC (July 1, 2026). Serves Brattleboro/Springfield area. Windham County has extremely high rates of SUD, MH, and poverty. Closely coordinated with Brattleboro Retreat (specialized inpatient psychiatric hospital) and Dartmouth-Hitchcock for regional behavioral health capacity.",
     sustainability: false,
   },
   {
@@ -270,7 +270,7 @@ export default function VermontDesignatedAgenciesPage() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
             { href: "/vermont-blueprint", label: "Blueprint for Health / CHTs", desc: "Blueprint's Mental Health Integration (MHI) initiative routes BH screening and brief treatment within primary care visits, with warm handoffs to DAs for patients needing specialty BH services. Co-location pilots exist in several regions.", color: "border-emerald-200 hover:bg-emerald-50", text: "text-emerald-700" },
-            { href: "/vermont-rht-program", label: "VCCI Case Management", desc: "VCCI case managers coordinate with DA staff for members with co-occurring MH/SUD and medical complexity. The PHQ-9 (depression screen) and AUDIT-C (alcohol screen) that feed VCCI SDOH scoring are often administered by DA-affiliated CHT staff.", color: "border-rose-200 hover:bg-rose-50", text: "text-rose-700" },
+            { href: "/vermont-vcci", label: "VCCI Case Management", desc: "VCCI case managers coordinate with DA staff for members with co-occurring MH/SUD and medical complexity. The PHQ-9 (depression screen) and AUDIT-C (alcohol screen) that feed VCCI SDOH scoring are often administered by DA-affiliated CHT staff.", color: "border-rose-200 hover:bg-rose-50", text: "text-rose-700" },
             { href: "/vermont-act-68", label: "Act 68 (2025)", desc: "Act 68 includes provisions for mental health payment reform and expanded BH integration into primary care. DA Medicaid rate sustainability is a central Act 68 implementation challenge tracked by the AHS Office of Health Care Reform.", color: "border-indigo-200 hover:bg-indigo-50", text: "text-indigo-700" },
           ].map(item => (
             <Link key={item.href} href={item.href} className={`block border rounded-xl p-4 transition-all ${item.color} hover:border-opacity-100`}>

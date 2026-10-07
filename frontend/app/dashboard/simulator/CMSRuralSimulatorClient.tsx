@@ -32,7 +32,7 @@ interface RHTPRecommendation {
 }
 
 const STATES: ParticipatingState[] = [
-  { id: 'vermont', name: 'Vermont', abbr: 'VT', cahCount: 14, rhtAwardM: 195, ruralPop: 380000, medicaidRuralPct: 38, broadbandGapPct: 12, transformationPhase: 'active' },
+  { id: 'vermont', name: 'Vermont', abbr: 'VT', cahCount: 8, rhtAwardM: 195, ruralPop: 380000, medicaidRuralPct: 38, broadbandGapPct: 12, transformationPhase: 'active' },
   { id: 'montana', name: 'Montana', abbr: 'MT', cahCount: 48, rhtAwardM: 285, ruralPop: 820000, medicaidRuralPct: 32, broadbandGapPct: 28, transformationPhase: 'early' },
   { id: 'south-dakota', name: 'South Dakota', abbr: 'SD', cahCount: 36, rhtAwardM: 220, ruralPop: 560000, medicaidRuralPct: 29, broadbandGapPct: 22, transformationPhase: 'planning' },
   { id: 'wyoming', name: 'Wyoming', abbr: 'WY', cahCount: 24, rhtAwardM: 168, ruralPop: 420000, medicaidRuralPct: 25, broadbandGapPct: 18, transformationPhase: 'early' },

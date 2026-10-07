@@ -191,7 +191,7 @@ export default function VermontUHDSPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           {[
             { y: "2024 — complete", d: "Medicaid clinical and claims data live in MDWAS on a weekly refresh.", pct: "~24% of coverage" },
-            { y: "2026–2028", d: "Scale to Medicare data — meeting AHEAD Model reporting requirements and supporting hospital global-budget monitoring.", pct: "~21–25% of coverage" },
+            { y: "2026–2028", d: "Scale to Medicare data — supporting hospital global-budget monitoring under Act 68 (Vermont withdrew from the AHEAD Model in July 2026).", pct: "~21–25% of coverage" },
             { y: "2029–2030", d: "Full multi-payer integration: commercial claims and standardized SDOH/HRSN data, enabling true Total Cost of Care predictive modeling.", pct: "~45–49% of coverage" },
           ].map((p) => (
             <div key={p.y} className="bg-white border border-slate-200 rounded-xl p-5">
@@ -382,7 +382,7 @@ export default function VermontUHDSPage() {
         <div className="space-y-3">
           {[
             { h: "Completed (2024–2025)", t: "Foundational compliance", d: "MDWAS go-live ✓ · MDAAP closeout ✓ · Act 68 statutory report delivered January 15, 2026 ✓", done: true },
-            { h: "Mid-term (2026–2028)", t: "Analytics and scaling", d: "Advanced Analytics Layer procurement · scale to Medicare data for AHEAD Model compliance · Centralized Transfer Center · shared EHR feasibility assessment · Statewide Health Care Delivery Strategic Plan filed (Dec 2028)", done: false },
+            { h: "Mid-term (2026–2028)", t: "Analytics and scaling", d: "Advanced Analytics Layer procurement · scale to Medicare data for global-budget monitoring · Centralized Transfer Center · shared EHR feasibility assessment · Statewide Health Care Delivery Strategic Plan due (on or before Jan 15, 2028)", done: false },
             { h: "Long-term (2029–2030)", t: "Full multi-payer utility", d: "Commercial claims integration · Total Cost of Care predictive modeling live · “staffing flip” from contracted staff to permanent state-led operations by Year 5", done: false },
           ].map((p) => (
             <div key={p.h} className={`border rounded-xl p-5 ${p.done ? "bg-emerald-50 border-emerald-200" : "bg-white border-slate-200"}`}>
@@ -430,7 +430,7 @@ export default function VermontUHDSPage() {
         <SectionHeader label="Related" title="Continue Your Research" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { href: "/vermont-rht-program", label: "Vermont RHT Program", desc: "The $195M federal award (over five years) funding the care-redesign services the UHDS carries.", color: "border-teal-200 hover:border-teal-400" },
+            { href: "/vermont-rht-program", label: "Vermont RHT Program", desc: "The $195M-a-year federal award (annual awards FY2026–FY2030) funding the care-redesign services the UHDS carries.", color: "border-teal-200 hover:border-teal-400" },
             { href: "/vermont-act-68", label: "Vermont Act 68", desc: "§10 mandates the clinical + claims + SDOH integration this page describes.", color: "border-rose-200 hover:border-rose-400" },
             { href: "/technology", label: "Technology Pillar", desc: "VHCURES, FHIR, AI governance, and the rest of Vermont's data infrastructure.", color: "border-indigo-200 hover:border-indigo-400" },
           ].map((p) => (
