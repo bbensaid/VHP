@@ -37,8 +37,9 @@ REQUIRED CONTENT STRUCTURE — the article must contain ALL of the following:
   - 1  numbered list — a step-by-step process, ranked findings, or implementation sequence
   - 2  data tables — each with at least 4 rows and 3 columns of real, specific data
   - 1  image block — caption must be a detailed technical description (2-3 sentences)
-  - 1  audio block — MANDATORY. Use a plausible HTR podcast URL and write a substantive summary.
-  - 1  video block — MANDATORY. Use a plausible YouTube URL and write a substantive caption.
+  - audio / video blocks — ONLY when Section 6 supplies a REAL, working AUDIO_URL / VIDEO_URL.
+    Never invent a URL, an episode, a guest, or a quote. If none is supplied, omit these blocks.
+    (2026-10-07: invented podcast.htr.com episodes with fabricated guests had to be purged.)
 
 DEPTH STANDARDS — every article must include:
   - At least 6 specific dollar figures, percentages, or quantitative data points
@@ -93,11 +94,11 @@ IMAGE (NO asset field, NO _ref — caption and alt ONLY. Caption must be 2-3 sen
 what a real data visualization or diagram for this topic would show):
 {"_key":"blk010","_type":"image","caption":"Detailed 2-3 sentence technical description of what this image would show, including what data it visualizes, what the axes or categories represent, and what the key insight is.","alt":"Accessible one-sentence description of the image for screen readers."}
 
-AUDIO BRIEFING (MANDATORY — always include. Use the AUDIO_URL from Section 6):
-{"_key":"blk011","_type":"audio","title":"HTR Podcast: [Descriptive Episode Title]","url":"https://podcast.htr.com/episodes/[url-safe-episode-slug].mp3","summary":"Substantive 2-sentence description of what the listener will hear, naming the guest, their role, and the specific policy or data question being discussed."}
+AUDIO BRIEFING (OPTIONAL — include ONLY if Section 6 gives a real AUDIO_URL; describe only what that recording actually contains, never invent guests):
+{"_key":"blk011","_type":"audio","title":"[Real episode title]","url":"[AUDIO_URL exactly as supplied]","summary":"2-sentence description of the actual recording."}
 
-VIDEO (MANDATORY — always include. Use the VIDEO_URL from Section 6):
-{"_key":"blk012","_type":"video","url":"https://www.youtube.com/watch?v=HTR2026DEMO","caption":"Substantive 2-sentence caption describing what the video covers, who presents, and what the key data or demonstration shows."}
+VIDEO (OPTIONAL — include ONLY if Section 6 gives a real VIDEO_URL):
+{"_key":"blk012","_type":"video","url":"[VIDEO_URL exactly as supplied]","caption":"2-sentence caption describing the actual video."}
 
 *** 5. SCHEMA BLUEPRINT (FOLLOW EXACTLY) ***
 {
@@ -123,8 +124,8 @@ TOPIC:       [2-3 sentence description of the specific issue, angle, data questi
 IMPACT:      [Critical|High|Medium]
 STATUS:      [Active|Proposed|In Committee]
 DATE:        [ISO 8601 timestamp e.g. 2026-03-01T09:00:00Z]
-AUDIO_URL:   [URL for the podcast episode MP3, or use https://podcast.htr.com/episodes/[slug].mp3]
-VIDEO_URL:   [YouTube URL for the associated video briefing, or use https://www.youtube.com/watch?v=HTR2026DEMO]
+AUDIO_URL:   [Real, working URL of an existing recording — or NONE (then omit the audio block)]
+VIDEO_URL:   [Real, working YouTube URL — or NONE (then omit the video block)]
 REQUIREMENTS:[Specific content mandates: named statistics, named legislation, geographic scope, specific
                health systems or states, data table subjects, image subject, and any other constraints]
 CONTENT_MODE:[Choose one — controls tone and structure throughout:
