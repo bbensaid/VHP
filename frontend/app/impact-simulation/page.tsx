@@ -255,9 +255,9 @@ const SCENARIOS: ScenarioTemplate[] = [
           headline: "Claims data infrastructure and VITL required to manage reference pricing",
           details: [
             "VITL must include pharmacy claims data (currently missing) for accurate TCOC measurement",
-            "AHEAD model requires real-time attribution — current EMR connectivity insufficient",
+            "All-payer TCOC measurement requires real-time attribution — current EMR connectivity insufficient",
             "Standardized accounting system required across all hospitals (GMCB mandate)",
-            "OneCare participation must become mandatory — current voluntary model is insufficient for all-payer",
+            "Provider participation must become mandatory — the voluntary OneCare model (wound down end of 2025) proved insufficient for all-payer",
           ],
         },
       ];

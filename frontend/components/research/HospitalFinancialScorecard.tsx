@@ -1295,7 +1295,7 @@ export default function HospitalFinancialScorecard() {
                 {horizonYears} yr{horizonYears !== 1 ? "s" : ""} · FY{projection.targetYear}
               </span>
             </div>
-            <input type="range" min={1} max={8} step={1} value={horizonYears}
+            <input type="range" min={1} max={10} step={1} value={horizonYears}
               onChange={e => setHorizonYears(parseInt(e.target.value, 10))}
               className="w-full h-1.5 rounded-full appearance-none bg-slate-200 accent-indigo-600 cursor-pointer" />
             <p className="text-[9px] text-slate-400 mt-1">Default (4 yrs) lands on FY2028, the book&apos;s cited endpoint.</p>

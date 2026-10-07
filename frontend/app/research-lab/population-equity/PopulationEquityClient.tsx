@@ -3,6 +3,7 @@
 import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
+import ToolBookCallout from '@/components/research/ToolBookCallout'
 import { toolBadgeClass } from '@/lib/taxonomy/badges'
 
 const PopulationHealthModeler = dynamic(() => import('@/components/research/PopulationHealthModeler'), { ssr: false })
@@ -84,6 +85,8 @@ export default function PopulationEquityClient() {
           </button>
         ))}
       </nav>
+
+      <ToolBookCallout href={`/research-lab/population-equity?tab=${activeTab}`} />
 
       {activeTab === 'population' && <div><ToolHeader icon="🌍" label="Population Health Modeler" badge="Population Health" desc={TABS[0].desc} /><PopulationHealthModeler /></div>}
       {activeTab === 'equity'     && <div><ToolHeader icon="⚖️" label="Health Equity Studio"      badge="Health Equity"    desc={TABS[1].desc} /><HealthEquityStudio /></div>}

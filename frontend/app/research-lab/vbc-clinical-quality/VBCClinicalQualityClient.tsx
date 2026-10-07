@@ -3,6 +3,7 @@
 import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
+import ToolBookCallout from '@/components/research/ToolBookCallout'
 import { toolBadgeClass } from '@/lib/taxonomy/badges'
 
 const HL7FHIRExplorer           = dynamic(() => import('@/components/research/HL7FHIRExplorer'),           { ssr: false })
@@ -50,7 +51,7 @@ const TABS = [
   {
     id: 'risk',
     icon: '📊',
-    label: 'Risk Stratification',
+    label: 'Risk Stratification Methodology',
     badge: 'HCC v28 · ACG · CDPS · Charlson',
     desc: 'Step-by-step HCC v28 RAF score calculation for each patient, population tier stratification pyramid, and comparative analysis of major risk adjustment algorithms including Johns Hopkins ACG.',
   },
@@ -110,6 +111,8 @@ export default function VBCClinicalQualityClient() {
           </button>
         ))}
       </nav>
+
+      <ToolBookCallout href={`/research-lab/vbc-clinical-quality?tab=${activeTab}`} />
 
       {/* Active tool */}
       <ToolHeader

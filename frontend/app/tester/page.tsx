@@ -110,7 +110,7 @@ const SECTIONS: Section[] = [
     color: "bg-teal-700",
     pages: [
       { label: "HTR Simulator", href: "/htr-simulator", note: "Interactive health transformation scenarios" },
-      { label: "AHEAD Model", href: "/ahead-model", note: "All-Payer Claims Database explorer" },
+      { label: "AHEAD Model", href: "/ahead-model", note: "CMS state total cost of care model overview" },
       { label: "Medicaid Eligibility Simulator", href: "/medicaid-eligibility-simulator", note: "Test eligibility scenarios" },
       { label: "AI Analyst Chat", href: "/chat", note: "Full-page AI chat interface", tag: "subscriber" },
     ],

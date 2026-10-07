@@ -1,0 +1,65 @@
+Platform-wide stale-fact sweep — 2026-10-07
+Detail log: docs/audits/platform_sweep_2026-10.jsonl (62 rows: 51 FIXED, 11 LEFT)
+Scope: frontend app/ components/ lib/ (minus vermont-*, ahead-model, states, compare-states,
+lib/briefings, lib/taxonomy, PillarHero, FrameworkMapDiagram) + backend/ *.py. Nothing committed.
+
+FILES CHANGED (33, uncommitted)
+  frontend/components: VermontReformCascade, FivePillarFrameworkMap (DEP_COPY text only), Header,
+    RightSidebar, policy/HR1Tracker, research/{TransformationScorecard, EvidenceLibrary,
+    InnovationLeaderboard, APMCalculator, VBCReadinessAssessment, VBCQualityDashboard,
+    RiskStratificationMethodology, HighLowValueCare, VCCIScenario, HealthEquityStudio,
+    EMSTransformationLab}
+  frontend/app: chat/page, book/page, california-calaim/page, connect/ConnectHubClient,
+    connect-hub/ConnectHubClient, economics/value/page, impact-simulation/page,
+    policy/feasibility/page, research-lab/ResearchLabHub, tester/page,
+    academy/getting-started/research-lab/page
+  frontend/lib: syntheticPatients.ts, data/state-initiatives-data.ts (ME/PA/MN only),
+    data/state-comparison.ts (California cell only)
+  backend: platform_catalog.py, routers/personalized_learning.py, eval/evaluate_rag.py
+
+FIX ROWS BY TYPE (51)
+  ahead_vermont_status 19 - "Vermont AHEAD" presented as a live program with specific contract terms
+                            (quality weights, RPM benefit, PQI tracking, risk-strat prerequisite,
+                            "Vermont AHEAD ACO", "Vermont AHEAD RPM pilot data") in 8 Research Lab tools
+                            and synthetic patients; presets named "AHEAD Entry"; 6 chat prompts. The
+                            unsourced terms were removed, not re-attributed. Presets renamed to Act 68.
+  wrong_fact           13 - Maine, Pennsylvania, Minnesota listed as AHEAD states (3 initiatives removed);
+                            "6 states", "$1B+ committed"; Evidence Library AHEAD row (9 participants,
+                            payer-funded SDOH pools); invented acronym "All-Payer Health Expenditure
+                            Approach"; H.R. 1 work requirements "19-55"; California shown as a Making
+                            Care Primary state; /ahead-model labelled "APCD explorer".
+  stale_status         11 - BPCI-A, Primary Care First, Making Care Primary (ended Dec 31 2025),
+                            PA Rural Health Model (ended Dec 31 2024), Vermont All-Payer ACO Model and
+                            OneCare (ended end-2025) shown Active; ACO REACH "next window Q2 2025".
+  wrong_date            6 - Strategic Plan "December 2028" -> on or before Jan 15, 2028 (all 5 instances
+                            from the Vermont-pass report); RBP "effective FY2027" -> prices FY2028;
+                            AHEAD Cohort 2/3 "Jan 2027"/"2026-27" -> Jan 2028; work reqs -> Jan 1, 2027.
+  anachronism           1 - Act 167 (2022) "directed AHS to negotiate AHEAD".
+  stale_name            1 - AHEAD renamed Sept 2025 (Achieving Healthcare Efficiency through Accountable Design).
+
+NOT A DEFECT (re-verified): Georgia RHT "AHEAD Model readiness" (rht-program.ts, performance-index-data.ts)
+  is correct — Georgia's GREAT Health plan includes AHEAD readiness and an intended application; the text
+  never says Georgia participates. The Vermont pass had flagged it.
+
+LEFT (11) - see jsonl status=LEFT
+  - InnovationLeaderboard: New York has a Cohort 3 region; under the tool's own rule it would score 66
+    and composite ranks would change. Author decision.
+  - APMCalculator presets "Vermont Blueprint ACO (Current)" and "Vermont Medicaid ACO" (185,000 lives)
+    are stale (APM/OneCare ended; enrollment ~160,747). Re-parameterising is a tool decision.
+  - ACO REACH / BPCI-A remain as calculator model options (no LEAD parameters verified).
+  - equity/sdoh "AHEAD includes SDOH performance domain": the Sept 2025 redesign may have changed it; unverified.
+  - EvidenceLibrary: Transforming Maternity Care (150 participants, "bundles") likely wrong; CHART/InCK unverified.
+  - TransformationScorecard FY2027/FY2028 milestones (VITL, HEDIS stratification, COE) unverified.
+  - MinnesotaCare "one of two BHP states (with New York)" likely stale; outside sweep subjects.
+  - backend/services/tools.py Act 167 summary labels Wyman recommendations as "GMCB Regulatory Actions (2025)".
+  - state-initiatives-data.ts:66 and vermont-act-167:451 use the pre-Sept-2025 AHEAD name (accurate for
+    the Jan 2025 signing; vermont-act-167 is outside this scope).
+  - Note for the Vermont-pages owner: /vermont-act-68:373 says "Load the Vermont AHEAD preset"; the APM
+    preset is now "Vermont Act 68 Global Budget (FY2028; formerly AHEAD)" so it still matches, but the
+    page text could say "Act 68 global budget preset".
+
+CHECKS
+  npx tsc --noEmit --skipLibCheck        : exit 0 (one quote error from an edit, caught and fixed)
+  npx eslint <30 touched frontend files> : 0 errors, 56 warnings, all pre-existing (unused vars,
+                                           unescaped entities on lines not edited)
+  python3 -m py_compile (3 backend files): OK

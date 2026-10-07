@@ -212,6 +212,35 @@ export default function MedicaidWorkRequirementsCalculator() {
         <StatBox value={fmtM(results.totalSystemImpactM)} label="Total system revenue impact" color="text-rose-800" />
       </div>
 
+      {/* Exemptions on paper vs. coverage lost in practice. Chapter 3 §3.8 sends readers here
+          for "the gap between nominal exemptions and real-world coverage loss from
+          administrative churn" — this splits the loss figure above into its two sources
+          using the same inputs, so the procedural share is visible rather than buried. */}
+      {(() => {
+        const procedural = results.adminLost
+        const nonCompliance = Math.max(0, results.totalLost - procedural)
+        const proceduralShare = results.totalLost > 0 ? Math.round((procedural / results.totalLost) * 100) : 0
+        return (
+          <div className="bg-white border border-slate-200 rounded-2xl p-6">
+            <h3 className="text-sm font-black uppercase tracking-wider text-slate-500 mb-1">Exemptions on paper vs. coverage lost in practice</h3>
+            <p className="text-xs text-slate-500 mb-4 leading-relaxed">
+              {exemptionRate}% of at-risk adults are exempt on paper. Coverage is still lost two ways: adults who do not
+              meet the requirement, and adults who meet it but are disenrolled because the paperwork fails.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <StatBox value={fmt(Math.round(results.atRisk * (exemptionRate / 100)))} label="Nominally exempt" sub="protected on paper" color="text-emerald-700" />
+              <StatBox value={fmt(nonCompliance)} label="Lost for non-compliance" color="text-amber-700" />
+              <StatBox value={fmt(procedural)} label="Lost to administrative churn" sub={`${proceduralShare}% of all coverage loss`} color="text-rose-700" />
+            </div>
+            <p className="text-[11px] text-slate-500 mt-3 leading-relaxed">
+              The churn share is the gap Chapter 3 points to: losses driven by the {adminErrorRate}% administrative
+              error / disenrollment rate rather than by anyone&apos;s work status. Lower the error rate and this column
+              falls while the exemption rate has not moved: the paperwork, not the policy text, decides who keeps coverage.
+            </p>
+          </div>
+        )
+      })()}
+
       {/* Timeline */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6">
         <h3 className="text-sm font-black uppercase tracking-wider text-slate-500 mb-4">Implementation Timeline</h3>

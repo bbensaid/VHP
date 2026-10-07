@@ -186,7 +186,7 @@ export const PILLAR_ROWS: ComparisonRow[] = [
     cells: {
       vermont:    { value: "Blueprint",          detail: "128 PCMH practices, 18 yrs evidence", verdict: "best" },
       oregon:     { value: "PCPCH",              detail: "Patient-Centered Primary Care Home, mature" },
-      california: { value: "Making Care Primary", detail: "Federal program, county-led" },
+      california: { value: "OHCA benchmark",     detail: "15% of spending on primary care by 2034 (adopted Oct 2024)" },
     },
   },
   {

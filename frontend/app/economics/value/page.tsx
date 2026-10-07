@@ -53,7 +53,7 @@ function ValueBasedCareBody() {
                 { model: "MSSP Basic C/D/E", upside: "40–50%", downside: "30% of losses", cap: "4–8% of benchmark", aapm: true },
                 { model: "MSSP Enhanced", upside: "60%", downside: "60% of losses", cap: "8% of benchmark", aapm: true },
                 { model: "ACO REACH (Pro/Gbl)", upside: "Up to 100%", downside: "Up to 100% of losses", cap: "Corridor mechanism", aapm: true },
-                { model: "BPCI-A (bundles)", upside: "Gain vs. target price", downside: "Repay vs. target price", cap: "Stop-loss option", aapm: true },
+                { model: "BPCI-A (bundles; ended 2025)", upside: "Gain vs. target price", downside: "Repay vs. target price", cap: "Stop-loss option", aapm: true },
                 { model: "Medicare Advantage", upside: "Full capitation retained", downside: "Full insurance risk", cap: "MLR ≥85% floor", aapm: false },
               ].map((row) => (
                 <tr key={row.model} className="hover:bg-slate-50">

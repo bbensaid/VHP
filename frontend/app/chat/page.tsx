@@ -89,7 +89,7 @@ const ALL_PLATFORM_SECTIONS = [
       { label: "Global Budget Transition",       prompt: "Model the revenue trajectory for a health system transitioning to a global budget" },
       { label: "Hospital Financial Stress Test", prompt: "Which Vermont hospitals are most financially stressed and why?" },
       { label: "HTA Studio",                     prompt: "What is Health Technology Assessment and how is it used in coverage decisions?" },
-      { label: "Actuarial Lab",                  prompt: "What are the actuarial risks in Vermont's AHEAD model for payers?" },
+      { label: "Actuarial Lab",                  prompt: "What are the actuarial risks of Act 68 global budgets and reference-based pricing for Vermont payers?" },
     ],
   },
   {
@@ -175,7 +175,7 @@ const ALL_PLATFORM_SECTIONS = [
       { label: "Vermont Medicaid",           prompt: "Give me an overview of Vermont Medicaid — eligibility, benefits, and recent changes." },
       { label: "Vermont Act 167",            prompt: "Walk me through Vermont Act 167 and what it requires from providers." },
       { label: "Vermont Act 68 (2025)",      prompt: "What does Vermont Act 68 of 2025 change for health policy?" },
-      { label: "Vermont AHEAD Model",        prompt: "What is Vermont's AHEAD model and how does it differ from traditional Medicaid?" },
+      { label: "Vermont & AHEAD",            prompt: "Why did Vermont withdraw from the AHEAD model, and what carries its reform forward now?" },
       { label: "Vermont RHT Program",        prompt: "What is Vermont's Rural Health Transformation Program?" },
       { label: "Bed Capacity & Transfer",    prompt: "What is Vermont's current hospital bed capacity situation and how are transfers managed?" },
       { label: "All States Explorer",        prompt: "Compare Vermont to neighboring states on health transformation metrics." },
@@ -208,7 +208,7 @@ const ROLE_STARTERS: Record<string, { prompt: string; label: string; color: stri
   executive: [
     { prompt: "What happens to our revenue if Medicaid cuts 10% in Vermont?", label: "Model Medicaid cut impact", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
     { prompt: "How ready is our organization for value-based care contracts?", label: "Assess VBC readiness", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
-    { prompt: "What does Vermont's AHEAD model mean for our health system?", label: "Understand AHEAD model", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
+    { prompt: "What does Vermont's withdrawal from AHEAD mean for our health system?", label: "Understand the AHEAD exit", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
     { prompt: "Show me the best tools to model our hospital's financial stress scenarios", label: "Financial stress testing", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
   ],
   policy: [
@@ -227,7 +227,7 @@ const ROLE_STARTERS: Record<string, { prompt: string; label: string; color: stri
     { prompt: "Calculate cost-effectiveness for a hospital-at-home program — what's the cost per QALY?", label: "CEA calculation", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
     { prompt: "Design an APM with shared savings for a Vermont ACO", label: "APM design & modeling", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
     { prompt: "Model the revenue trajectory during a global budget transition", label: "Global budget transition", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
-    { prompt: "What are the actuarial risks of Vermont's AHEAD model for payers?", label: "Actuarial risk analysis", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
+    { prompt: "What are the actuarial risks of Act 68 global budgets for Vermont payers?", label: "Actuarial risk analysis", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
   ],
   tech: [
     { prompt: "How do I build a FHIR R4 compliant patient summary and test it against ONC requirements?", label: "FHIR compliance check", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
@@ -239,12 +239,12 @@ const ROLE_STARTERS: Record<string, { prompt: string; label: string; color: stri
     { prompt: "Am I eligible for Vermont Medicaid? Walk me through the criteria.", label: "Medicaid eligibility check", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
     { prompt: "What are the key compliance deadlines and requirements under Vermont Act 167?", label: "Act 167 compliance", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
     { prompt: "What changed in Vermont Medicaid rules for 2026?", label: "2026 Medicaid updates", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
-    { prompt: "Show me tools to track Vermont AHEAD milestone compliance", label: "AHEAD milestone tracking", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
+    { prompt: "Show me tools to track Act 68 milestone compliance", label: "Act 68 milestone tracking", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
   ],
   researcher: [
     { prompt: "Where should I start learning about value-based care and health transformation?", label: "Learning path", color: "bg-indigo-50 border-indigo-200 hover:bg-indigo-100 text-indigo-800" },
     { prompt: "What are the landmark cost-effectiveness studies in healthcare I should know?", label: "Key CEA studies", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-800" },
-    { prompt: "Explain the Vermont AHEAD model and how it differs from traditional Medicaid", label: "AHEAD model explained", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
+    { prompt: "Explain the AHEAD model and why Vermont withdrew from it", label: "AHEAD model explained", color: "bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800" },
     { prompt: "What simulation tools can I use for a research project on health transformation?", label: "Research tools", color: "bg-amber-50 border-amber-200 hover:bg-amber-100 text-amber-800" },
   ],
   investor: [

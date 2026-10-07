@@ -1,0 +1,34 @@
+HTR Academy phase 3b — 2026-10-07
+Ledger: docs/audits/academy_phase3b_2026-10.jsonl (272 FIXED change lines + 10 LEFT/notes)
+
+TASK A — the source files now match the live phase-3 corrections
+Method: every FIXED phase-3 old->new pair was applied, with '→' table entries split into their left/right cells. Matches were exact, with JSON/JS escape forms handled. The repo was grepped for every old string, excluding node_modules/.next/sanity-backups/docs.
+  _lesson_drafts/lessons_track{2,4,5,6,7,8}.py ... 47 replacements (all py_compile OK)
+  _build_five_pillars_course.py ................. 49 replacements in 42 string literals. Edited through the AST and rewrapped, so the diff is large but the content change is small. py_compile OK.
+  course_five_pillars.json ...................... 49 replacements. VERIFIED: running the build script in memory reproduces this file byte-for-byte.
+  course_interoperability.json, courses_tier2.json  2 each (VITL summary/objective)
+  course_value_based_care.json, courses_tier1.json, sanity/content/academy/vbc_policy.json, sanity/temp_holder/VBC_Policy.json  1 each (AHEAD state list)
+  scripts/add-matrix-criterion-lesson.mjs ........ 1 (RHT $195M; node --check OK)
+  A re-scan finds no stale phase-3 strings left in any Academy source. The one hit is the entry #9 prefix, which is a false positive.
+Supabase fallback content_blocks: 9 stale strings in 4 rows were fixed, not 13. The phase-3 count was off: entry #9 was already fixed, the entry #31 sentence is absent from the fallback, and the '→' cells split 3 entries into 6 edits.
+  2cd76ef3 political-sustainability (6 table cells), 873dc954 portfolio-management, a041fffe heroi, e8b3bc58 knowledge-infrastructure.
+  Backups: sanity-backups/academy-phase3-2026-10-07/supabase-lesson-<id>.phase3b.json. Each row was re-fetched and verified.
+  Script: frontend/scripts/academy-phase3b-fallback-fix.mjs
+
+TASK B — sanity-vbc-policy fabrications
+Targets: the Sanity doc academyModule-vbc-fundamentals-module-2-policy-pillar and Supabase row b927de74 (sanity-vbc-policy). The Supabase row is the one that renders, because its sanity_slug holds the _id. Both were backed up (*.phase3b.json), patched by _key with structure kept, re-fetched, and verified identical to the intended result.
+  Podcast (blk045): the episode does not exist (podcast.htr.com does not resolve) and "Dr. Sarah Chen" cannot be verified. Andy Slavitt was Acting CMS Administrator from March 2015 to January 2017, not "Deputy Administrator for Innovation". All named guests (Chen, Slavitt, Valerie Rock) and the "52-minute" claim were removed. No replacement names were added.
+  Quote (blk029): the "HTR Regulatory Intelligence Assessment, Q1 2026" attribution was removed. No such document exists in the platform or on the web.
+  Cohort claim (blk041): "next AHEAD cohort solicitation, expected in late 2026" has no source. It now says CMS's September 2025 AHEAD redesign announced no further cohorts and the existing cohorts run through December 31, 2035.
+  State table (blk024): the unsourced "% Medicaid in VBC Contracts" values and the invented "National Leadership Rating" tiers were removed from all 6 rows, with no numbers invented in their place. Maryland "Hospital Global Budget program since 1977" is now "all-payer rate setting since 1977 (Medicare waiver); hospital global budgets statewide since 2014". Mississippi "FFS dominant; managed care in select counties" is now "MississippiCAN managed care statewide (about 65%, 2024)".
+  Prose (blk025): the matching unsourced claims were replaced with sourced facts. "78% of Medicaid beneficiaries in global budget arrangements" is now "by June 2023, more than 1.3 million members, over half of MassHealth, in ACOs". "Mississippi remains 89% fee-for-service" is now "about 65% in MississippiCAN managed care (DOM 2024 Annual Report)".
+  The same fixes were mirrored into courses_tier1.json, course_value_based_care.json, sanity/content/academy/vbc_policy.json and sanity/temp_holder/VBC_Policy.json, so a re-post cannot revert them. Script: frontend/scripts/academy-phase3b-vbc-policy-fix.mjs
+
+LEFT (see the .jsonl for details)
+  - The policyAnalysis Sanity doc 'vbc-fundamentals-module-2-policy-pillar' shares the same slug and carries the same fabrications. The policyAnalysis doc 'vbc-fundamentals-module-5-clinical-equity-pillars' has another fabricated podcast (Dr. Sarah Chen with Bilinski and Conway). The same pattern appears in temp_holder VBC_Equity/VBC_Clinical and Medicaid_Claude_V2.json. All are outside the authorized scope.
+  - The vbc-policy audio block still points at a nonexistent episode URL. Removing the block needs author sign-off.
+  - Texas "DSRIP ... successor pending" looks stale but was not verified. The phase-3 BPCI/PCF table row is also unchanged.
+  - Stale AHEAD-participation wording remains in non-five-pillars Supabase rows: global-budgets-hospital-finance ("entered in 2024"), total-cost-of-care-management, vitl-vermont-hie callout, sanity-vbc-equity.
+  - "eight participating states" in temp_holder VBC_Equity/VBC_Clinical.
+  - Book checkpoints and book-audit files contain phase-3 strings and were deliberately untouched (rule 8).
+Nothing was committed or pushed.

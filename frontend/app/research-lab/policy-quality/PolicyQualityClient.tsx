@@ -3,6 +3,7 @@
 import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
+import ToolBookCallout from '@/components/research/ToolBookCallout'
 import { toolBadgeClass } from '@/lib/taxonomy/badges'
 
 const PolicySimulator                    = dynamic(() => import('@/components/research/PolicySimulator'),                    { ssr: false })
@@ -111,6 +112,8 @@ export default function PolicyQualityClient() {
           </button>
         ))}
       </nav>
+
+      <ToolBookCallout href={`/research-lab/policy-quality?tab=${activeTab}`} />
 
       {/* Active tool panel */}
       {activeTab === 'policy'      && <div><ToolHeader icon="🏛️" label="Policy Simulator"                    badge="Health Policy"              desc={TABS[0].desc} /><PolicySimulator /></div>}

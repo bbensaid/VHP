@@ -3,6 +3,7 @@
 import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
+import ToolBookCallout from '@/components/research/ToolBookCallout'
 import { toolBadgeClass } from '@/lib/taxonomy/badges'
 
 const AIAnalyticsLab  = dynamic(() => import('@/components/research/AIAnalyticsLab'),  { ssr: false })
@@ -84,6 +85,8 @@ export default function TechnologyAIClient() {
           </button>
         ))}
       </nav>
+
+      <ToolBookCallout href={`/research-lab/technology-ai?tab=${activeTab}`} />
 
       {activeTab === 'ai'      && <div><ToolHeader icon="🤖" label="AI Clinical Governance Lab" badge="Artificial Intelligence" desc={TABS[0].desc} /><AIAnalyticsLab /></div>}
       {activeTab === 'digital' && <div><ToolHeader icon="📱" label="Digital Health Lab"         badge="Digital Health"         desc={TABS[1].desc} /><DigitalHealthLab /></div>}

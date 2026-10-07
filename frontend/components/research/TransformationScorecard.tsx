@@ -1,7 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
+import type { PillarId } from "@/lib/taxonomy/pillars";
+import { GATE_CLOSED, GATE_OPEN, runSequence, type PillarScores } from "@/lib/framework/sequence-engine";
 
 // ─── PILLAR BENCHMARKS ────────────────────────────────────────────────────────
 interface Milestone {
@@ -43,9 +45,9 @@ const PILLARS: PillarConfig[] = [
     ],
     milestones: [
       { label: "FY2026: 2.5% commercial rate reduction", date: "FY2026", status: "active", vermont: "GMCB -1% commercial benchmark — first negative in Vermont history" },
-      { label: "FY2027: RBP mandatory (Act 68)", date: "FY2027", status: "upcoming", vermont: "Maximum commercial rates set at Medicare-based RBP methodology" },
+      { label: "FY2028: RBP prices effective (Act 68)", date: "FY2028", status: "upcoming", vermont: "GMCB sets the Medicare-based RBP method by rule in 2027; maximum commercial rates take effect hospital FY2028" },
       { label: "FY2028: Global budgets (non-CAH)", date: "FY2028", status: "upcoming", vermont: "Mandatory for all non-CAH Vermont hospitals" },
-      { label: "Dec 2028: Statewide Strategic Plan", date: "Dec 2028", status: "upcoming", vermont: "AHS delivers plan to Vermont Legislature" },
+      { label: "Jan 15, 2028: Statewide Strategic Plan", date: "Jan 2028", status: "upcoming", vermont: "AHS delivers plan to Vermont Legislature on or before January 15, 2028 (18 V.S.A. § 9403(d)(3))" },
     ],
   },
   {
@@ -66,7 +68,7 @@ const PILLARS: PillarConfig[] = [
     ],
     milestones: [
       { label: "FY2026: Vermont Blue Cross 2.5% rate reduction", date: "FY2026", status: "active" },
-      { label: "FY2027: First RBP-driven premium reduction", date: "FY2027", status: "upcoming" },
+      { label: "FY2028: First RBP-driven premium reduction", date: "FY2028", status: "upcoming" },
       { label: "FY2028: Global budget financial model live", date: "FY2028", status: "upcoming" },
       { label: "Post-2030: H.R. 1 Medicaid cliff management", date: "Post-2030", status: "upcoming", vermont: "Permanent Medicaid revenue reduction; RHT capital exhausted" },
     ],
@@ -286,6 +288,17 @@ function PillarDetailCard({ pillar, suffix, score, onScoreChange, milestonesOpen
   );
 }
 
+// ─── RAG mapping for the PMO-divergence check ────────────────────────────────
+// Thresholds are the sequence engine's own gate cut-offs (GATE_OPEN 70 / GATE_CLOSED 40).
+type Rag = "green" | "amber" | "red";
+const RAG_RANK: Record<Rag, number> = { red: 0, amber: 1, green: 2 };
+const RAG_TEXT: Record<Rag, string> = { green: "text-emerald-700", amber: "text-amber-700", red: "text-rose-700" };
+function ragFor(score: number): Rag {
+  if (score >= GATE_OPEN) return "green";
+  if (score >= GATE_CLOSED) return "amber";
+  return "red";
+}
+
 // ─── COMPONENT ────────────────────────────────────────────────────────────────
 export default function TransformationScorecard() {
   const [scores, setScores] = useState<Record<string, number>>({
@@ -293,6 +306,9 @@ export default function TransformationScorecard() {
   });
   const [equityScore, setEquityScore] = useState(25);
   const [showMilestones, setShowMilestones] = useState<Record<string, boolean>>({});
+  // What the PMO's own status report says for each pillar — compared below against
+  // the dependency-gated score (Chapter 15 §15.14: divergence is a governance finding).
+  const [pmoStatus, setPmoStatus] = useState<Record<string, Rag | "">>({});
 
   function setScore(pillarId: string, value: number) {
     setScores(prev => ({ ...prev, [pillarId]: value }));
@@ -313,6 +329,13 @@ export default function TransformationScorecard() {
   }
 
   const overallStatus = overallLabel(overallScore);
+
+  // The same dependency engine the HTR Simulator runs (lib/framework/sequence-engine.ts).
+  // The plain average above is what the self-scores look like on paper; this is what the
+  // sequence actually delivers once a weak upstream pillar caps the ones downstream of it —
+  // which is why a strong Economics/Clinical score with weak Policy/Technology collapses here
+  // (Appendix H capstone) instead of averaging out.
+  const sequence = useMemo(() => runSequence(scores as PillarScores), [scores]);
 
   // Find the weakest pillar
   const weakestPillar = PILLARS.reduce((a, b) => scores[a.id] <= scores[b.id] ? a : b);
@@ -341,6 +364,27 @@ export default function TransformationScorecard() {
             className={`h-full rounded-full transition-all ${overallScore >= 75 ? "bg-emerald-500" : overallScore >= 50 ? "bg-indigo-500" : overallScore >= 25 ? "bg-amber-500" : "bg-rose-500"}`}
             style={{ width: `${overallScore}%` }}
           />
+        </div>
+
+        {/* Dependency-gated composite */}
+        <div className="mb-6 grid sm:grid-cols-2 gap-3">
+          <div className="bg-slate-900 rounded-xl p-3 border border-slate-800">
+            <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">Delivered after dependency gates</p>
+            <p className="text-xl font-black text-white tabular-nums">
+              {Math.round(sequence.effectiveComposite)}%
+              {sequence.sequenceLoss > 0 && (
+                <span className="text-sm font-bold text-rose-400 ml-2">−{Math.round(sequence.sequenceLoss)} pts lost to sequence</span>
+              )}
+            </p>
+            <p className="text-[10px] text-slate-500 mt-1">The average above, re-run through the nine dependencies (Chapter 1 §1.4). A downstream pillar can only deliver what its upstream gates allow.</p>
+          </div>
+          {sequence.bindingConstraint && (
+            <div className="bg-slate-900 rounded-xl p-3 border border-amber-500/40">
+              <p className="text-[10px] font-black uppercase tracking-widest text-amber-400 mb-1">Binding constraint</p>
+              <p className="text-xl font-black text-white">{PILLARS.find(p => p.id === sequence.bindingConstraint)?.label}</p>
+              <p className="text-[10px] text-slate-500 mt-1">The pillar whose improvement lifts delivered readiness most — found by sensitivity, as on the HTR Simulator, not by the lowest bar.</p>
+            </div>
+          )}
         </div>
 
         {/* Pillar score bars */}
@@ -417,6 +461,51 @@ export default function TransformationScorecard() {
           milestonesOpen={!!showMilestones.equity}
           onToggleMilestones={() => toggleMilestones("equity")}
         />
+      </div>
+
+      {/* PMO status reporting vs. the scorecard */}
+      <div className="bg-white border border-slate-200 rounded-xl p-5">
+        <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">Outside-reviewer check</p>
+        <h3 className="text-sm font-black text-slate-900 mb-1">Does your PMO&apos;s status report agree with the scorecard?</h3>
+        <p className="text-xs text-slate-500 mb-4 leading-relaxed">
+          Enter the RAG status your program office currently reports for each pillar. The scorecard status is derived from the
+          dependency-gated score above (≥70 green, 40–69 amber, below 40 red — the gate thresholds the HTR Simulator uses). A pillar
+          the PMO reports greener than the scorecard is the divergence Chapter 15 calls a governance finding in itself.
+        </p>
+        <div className="space-y-2">
+          {PILLARS.map(pillar => {
+            const delivered = sequence.pillars[pillar.id as PillarId].effective;
+            const reviewer = ragFor(delivered);
+            const reported = pmoStatus[pillar.id] ?? "";
+            const diverges = reported !== "" && RAG_RANK[reported] > RAG_RANK[reviewer];
+            return (
+              <div key={pillar.id} className="flex flex-wrap items-center gap-3 text-xs">
+                <span className="w-28 font-bold text-slate-700">{pillar.icon} {pillar.label}</span>
+                <label className="flex items-center gap-1.5 text-slate-500">
+                  PMO reports
+                  <select
+                    value={reported}
+                    onChange={e => setPmoStatus(prev => ({ ...prev, [pillar.id]: e.target.value as Rag | "" }))}
+                    className="border border-slate-200 rounded-lg px-2 py-1 text-xs font-bold text-slate-700 bg-white"
+                  >
+                    <option value="">—</option>
+                    <option value="green">Green</option>
+                    <option value="amber">Amber</option>
+                    <option value="red">Red</option>
+                  </select>
+                </label>
+                <span className="text-slate-500">
+                  Scorecard: <strong className={RAG_TEXT[reviewer]}>{reviewer}</strong> ({Math.round(delivered)}%)
+                </span>
+                {diverges && (
+                  <span className="text-[10px] font-black uppercase tracking-wider text-rose-700 bg-rose-50 border border-rose-200 rounded px-2 py-0.5">
+                    Divergence — governance finding
+                  </span>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       {/* Methodology */}

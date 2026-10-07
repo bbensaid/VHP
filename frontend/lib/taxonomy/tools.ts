@@ -86,7 +86,7 @@ export const TOOLS: readonly Tool[] = [
   },
   {
     id: "shared-savings-calc",
-    label: "Shared Savings Calculator",
+    label: "APM Shared Savings Calculator",
     href: "/research-lab/payment-models?tab=apm-calc",
     pillars: ["economics"],
     chapters: ["7"],
@@ -153,7 +153,7 @@ export const TOOLS: readonly Tool[] = [
   },
   {
     id: "clinical-data-exchange",
-    label: "Clinical Data Exchange Lab",
+    label: "Clinical Data Exchange",
     href: "/research-lab/vbc-clinical-quality?tab=hl7",
     pillars: ["technology"],
     chapters: ["5"],

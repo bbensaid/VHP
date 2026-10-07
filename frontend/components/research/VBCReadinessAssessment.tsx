@@ -53,7 +53,7 @@ const DOMAINS: Domain[] = [
     border: "border-indigo-200",
     barColor: "bg-indigo-500",
     dimensions: [
-      { id: "d1", label: "Claims data access and integration", desc: "Ability to access, process, and integrate all-payer claims data for attributed population — Medicare, Medicaid, and commercial", vermont: "Vermont: VHCURES access and AHEAD data reporting infrastructure are prerequisites" },
+      { id: "d1", label: "Claims data access and integration", desc: "Ability to access, process, and integrate all-payer claims data for attributed population — Medicare, Medicaid, and commercial", vermont: "Vermont: VHCURES access and Act 68 global budget data reporting infrastructure are prerequisites" },
       { id: "d2", label: "Patient attribution analytics", desc: "Technical capability to run CMS-style prospective and retrospective attribution algorithms and identify attributed population monthly" },
       { id: "d3", label: "Total cost of care measurement", desc: "Ability to calculate TCOC per attributed member per month benchmarked against CMS or state-set targets, with trend analysis" },
       { id: "d4", label: "Risk stratification capability", desc: "HCC-based risk stratification running continuously on attributed population with outreach prioritization for high-risk members" },
@@ -72,7 +72,7 @@ const DOMAINS: Domain[] = [
     dimensions: [
       { id: "c1", label: "Primary care transformation", desc: "PCMH or equivalent transformation underway — team-based care, proactive outreach, care coordination, and panel management" },
       { id: "c2", label: "Care management program", desc: "Dedicated care management staff (nurse case managers, CHWs, social workers) actively managing high-risk and rising-risk attributed members" },
-      { id: "c3", label: "Behavioral health integration", desc: "Co-located or closely integrated behavioral health services, SUD treatment, and care coordination for high-BH-burden attributed members", vermont: "Vermont: High MH/SUD burden especially in Rutland, Windham, Northeast Kingdom — AHEAD equity benchmarks require BH improvement" },
+      { id: "c3", label: "Behavioral health integration", desc: "Co-located or closely integrated behavioral health services, SUD treatment, and care coordination for high-BH-burden attributed members", vermont: "Vermont: High MH/SUD burden especially in Rutland, Windham, Northeast Kingdom" },
       { id: "c4", label: "Community health worker deployment", desc: "Community health workers deployed for population outreach, SDOH connection, and care-plan reinforcement for the highest-need attributed members" },
       { id: "c5", label: "Patient outreach and engagement capability", desc: "Systematic patient outreach infrastructure — call center, patient portal engagement, proactive scheduling — that converts risk-stratified lists into actual patient contact" },
     ],
@@ -158,8 +158,8 @@ const SCORE_BAR_COLORS: Record<Score, string> = {
 const VERMONT_PRESETS = [
   {
     id: "ahead_entry",
-    label: "Vermont Hospital — AHEAD Entry (FY2027)",
-    badge: "AHEAD Cohort 2 · Pre-global budget",
+    label: "Vermont Hospital — Act 68 Global Budget Entry (FY2028)",
+    badge: "Act 68 · Pre-global budget",
     scores: {
       s1: 3, s2: 2, s3: 2, s4: 2, s5: 3,
       d1: 2, d2: 2, d3: 2, d4: 2, d5: 2,
@@ -172,7 +172,7 @@ const VERMONT_PRESETS = [
   {
     id: "cah_early",
     label: "Vermont CAH — Early Transformation",
-    badge: "CAH · Act 68 RBP FY2027",
+    badge: "CAH · Act 68 RBP FY2028",
     scores: {
       s1: 2, s2: 1, s3: 1, s4: 1, s5: 2,
       d1: 1, d2: 1, d3: 1, d4: 1, d5: 1,
@@ -361,6 +361,30 @@ export default function VBCReadinessAssessment() {
         </div>
       )}
 
+      {/* Binding constraint. Chapter 7 §7.9 sends readers here for "which domain is the binding
+          constraint before assuming downside risk" — the overall % is an average, and an average
+          hides the one domain that will sink a risk contract. Only fully-scored domains compete,
+          so a half-answered domain can't win by default. */}
+      {(() => {
+        const complete = results.domainResults.filter(d => d.answered === d.total);
+        if (complete.length < 2) return null;
+        const weakest = complete.reduce((a, b) => (b.pct < a.pct ? b : a));
+        const strongest = complete.reduce((a, b) => (b.pct > a.pct ? b : a));
+        return (
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+            <h4 className="text-xs font-black uppercase tracking-widest text-amber-700 mb-1">Binding constraint before downside risk</h4>
+            <p className="text-sm text-slate-800 leading-snug">
+              <strong>{weakest.domain.label}</strong> scores {fmt(weakest.pct, 0)}% — {fmt(strongest.pct - weakest.pct, 0)} points
+              below your strongest domain ({strongest.domain.label}). Under downside risk the contract is exposed to the weakest
+              domain, not the average: close this one before accepting losses, whatever the overall score says.
+            </p>
+            {complete.length < DOMAINS.length && (
+              <p className="text-[10px] text-slate-500 mt-1">Based on the {complete.length} of {DOMAINS.length} domains you have fully scored.</p>
+            )}
+          </div>
+        );
+      })()}
+
       {/* Priority gaps */}
       {results.gaps.length > 0 && (
         <div className="bg-rose-50 border border-rose-200 rounded-xl p-4">
@@ -469,7 +493,7 @@ export default function VBCReadinessAssessment() {
       <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
         <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Assessment Methodology</p>
         <p className="text-xs text-slate-500 leading-relaxed">
-          This 30-dimension assessment spans the six readiness domains Chapter 7 defines: Strategic Clarity, Data and Technology, Care Delivery Capability, Network and Partnerships, Revenue Cycle, and Workforce Operations. Each dimension is scored 0–4 (Not Started → Optimized). Overall readiness score is an unweighted average across all answered dimensions. A score of 75%+ indicates Global Budget Readiness; 50–74% indicates Advanced stage. Vermont-specific notes reference Act 68, AHEAD, RHT Program, and HTR Research Lab tools directly relevant to each dimension. For facilitated assessments with external validation, contact HTR Advisory.
+          This 30-dimension assessment spans the six readiness domains Chapter 7 defines: Strategic Clarity, Data and Technology, Care Delivery Capability, Network and Partnerships, Revenue Cycle, and Workforce Operations. Each dimension is scored 0–4 (Not Started → Optimized). Overall readiness score is an unweighted average across all answered dimensions. A score of 75%+ indicates Global Budget Readiness; 50–74% indicates Advanced stage. Vermont-specific notes reference Act 68, RHT Program, and HTR Research Lab tools directly relevant to each dimension. For facilitated assessments with external validation, contact HTR Advisory.
         </p>
       </div>
     </div>

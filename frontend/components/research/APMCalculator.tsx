@@ -65,8 +65,8 @@ const APM_MODELS = [
 const VERMONT_APM_PRESETS = [
   {
     id: "ahead_fy28",
-    label: "Vermont AHEAD Global Budget (FY2028)",
-    badge: "All-payer · Mandatory",
+    label: "Vermont Act 68 Global Budget (FY2028; formerly AHEAD)",
+    badge: "Act 68 · Mandatory",
     modelIdx: 2, // ACO REACH (closest to global budget full risk)
     attributedLives: 52_000,
     benchmarkPMPM: 1_040,
@@ -98,7 +98,7 @@ const VERMONT_APM_PRESETS = [
   },
   {
     id: "rural_hospital_cah",
-    label: "Small Rural Hospital (CAH AHEAD Participant)",
+    label: "Small Rural Hospital (CAH)",
     badge: "CAH · Act 68 Exempt from Global Budget",
     modelIdx: 0, // MSSP Track 1
     attributedLives: 4_200,

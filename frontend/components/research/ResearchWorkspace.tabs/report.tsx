@@ -51,7 +51,7 @@ export function ReportBuilder() {
         id: uid(),
         type: t,
         title: t,
-        content: "",
+        content: tpl.prompts?.[t] ?? "",
         visible: true,
       }));
       setSections(newSections);

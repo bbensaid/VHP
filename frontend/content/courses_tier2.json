@@ -2758,7 +2758,7 @@
             "order": 2,
             "slug": "vitl-vermont-hie",
             "title": "Vermont's HIE: VITL and the Vermont Health Information Network",
-            "summary": "How Vermont built a statewide health information exchange infrastructure \u2014 VITL's connections, legal framework, and role in the AHEAD Model.",
+            "summary": "How Vermont built a statewide health information exchange infrastructure \u2014 VITL's connections, legal framework, and role in Vermont's health reform.",
             "estimatedMinutes": 16,
             "isPublished": true,
             "tags": [
@@ -2786,7 +2786,7 @@
               },
               {
                 "id": "obj_vitl3",
-                "text": "Explain how HIE supports Vermont's AHEAD Model goals"
+                "text": "Explain how HIE supports Vermont's health reform goals"
               }
             ],
             "contentBlocks": [

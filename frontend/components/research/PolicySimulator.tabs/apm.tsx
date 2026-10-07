@@ -14,6 +14,7 @@ import {
   SliderRow,
   ToggleRow,
 } from "../PolicySimulator.atoms";
+import { StructuralReformTest } from "./structural-test";
 
 export function APMTab() {
   const [baseSpend, setBaseSpend] = useState(3500); // in millions
@@ -390,8 +391,9 @@ export function APMTab() {
             })}
           </div>
         </div>
+
+        <StructuralReformTest baseSpend={baseSpend} growthCap={growthCap} projectedTrend={projectedTrend} />
       </div>
     </div>
   );
 }
-

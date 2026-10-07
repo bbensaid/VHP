@@ -92,7 +92,7 @@ function A1CBPPanel() {
           <div className="mb-6 bg-slate-900 rounded-xl p-4 text-white">
             <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-2">How A1C Control Translates to Shared Savings</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-300">
-              <div><p className="font-bold text-amber-400 mb-1">HEDIS Quality Score</p><p>Each 1% improvement in CDC-HbA1c rate boosts the ACO&apos;s quality score. AHEAD weights this measure at 1.5× in the quality performance composite.</p></div>
+              <div><p className="font-bold text-amber-400 mb-1">HEDIS Quality Score</p><p>Each 1% improvement in CDC-HbA1c rate boosts the ACO&apos;s quality score.</p></div>
               <div><p className="font-bold text-amber-400 mb-1">Utilization Avoidance</p><p>Uncontrolled T2DM (A1C &gt;9%) generates ~3× more ED visits and ~2× more hospitalizations vs. controlled. Moving to controlled reduces TCOC by an estimated $1,200–$3,400/patient/year.</p></div>
               <div><p className="font-bold text-amber-400 mb-1">RAF Trajectory</p><p>Persistently uncontrolled T2DM progresses to complications (HCC 18 vs. HCC 19), increasing RAF score and CMS expected TCOC benchmark — but actual costs increase more, eroding savings.</p></div>
             </div>
@@ -209,7 +209,7 @@ function A1CBPPanel() {
 
           <div className="mt-4 p-4 bg-indigo-50 border border-indigo-200 rounded-xl">
             <p className="text-xs font-black uppercase tracking-widest text-indigo-700 mb-2">Maria Gonzalez — RPM Success Case</p>
-            <p className="text-xs text-indigo-800 leading-relaxed">Maria&apos;s BP dropped from 162/98 to 124/76 after RPM enrollment. Vermont AHEAD includes an RPM benefit for Medicare and Medicaid patients. Program cost: ~$480/year (CPT 99453 + 99457 × 12). Estimated avoidance: $4,200/year in ED/inpatient spend. ROI: 8.75× in year 1. At scale across a 500-patient hypertensive panel, the program generates ~$2.1M in net savings.</p>
+            <p className="text-xs text-indigo-800 leading-relaxed">Maria&apos;s BP dropped from 162/98 to 124/76 after RPM enrollment. Program cost: ~$480/year (CPT 99453 + 99457 × 12). Estimated avoidance: $4,200/year in ED/inpatient spend. ROI: 8.75× in year 1. At scale across a 500-patient hypertensive panel, the program generates ~$2.1M in net savings.</p>
           </div>
         </div>
       )}
@@ -431,7 +431,7 @@ function TCOCDecomposition() {
 
       {/* VBC benchmark */}
       <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl">
-        <p className="text-xs font-black uppercase tracking-widest text-slate-500 mb-2">Vermont AHEAD Benchmarking</p>
+        <p className="text-xs font-black uppercase tracking-widest text-slate-500 mb-2">VBC Benchmarking</p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
           <div>
             <p className="text-[10px] text-slate-500 uppercase font-bold mb-0.5">Panel Average PMPY</p>

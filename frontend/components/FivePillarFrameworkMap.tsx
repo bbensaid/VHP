@@ -33,8 +33,8 @@ const EQUITY_CHECK: Record<PillarId, string> = {
 // Panel copy for each of the nine dependencies, keyed "from>to".
 const DEP_COPY: Record<string, { label: string; text: string }> = {
   "policy>technology": { label: "Funds & authorizes the build", text: "Act 68 and the RHT Program fund and authorize the data infrastructure build. Without statutory funding and mandate, the Technology pillar has no forcing function." },
-  "policy>economics": { label: "Mandatory authority", text: "Act 68 forces RBP (FY2027) and global budgets (FY2028). Without statutory force, highest-cost actors opt out — voluntary reform failed for a decade under OneCare." },
-  "policy>operations": { label: "Statutory deadlines", text: "Act 68's December 2028 Strategic Plan deadline forces AHS to build execution capacity. Without external accountability, transformation stays aspirational." },
+  "policy>economics": { label: "Mandatory authority", text: "Act 68 forces RBP (prices effective FY2028) and global budgets (FY2028). Without statutory force, highest-cost actors opt out — voluntary reform failed for a decade under OneCare." },
+  "policy>operations": { label: "Statutory deadlines", text: "Act 68's January 15, 2028 Strategic Plan deadline forces AHS to build execution capacity. Without external accountability, transformation stays aspirational." },
   "technology>economics": { label: "Analytics for VBC", text: "VHCURES population analytics make APM financial modeling possible. Without TCOC data, benchmarks are wrong and organizations cannot manage to their global budget." },
   "technology>clinical": { label: "Population health mgmt", text: "Risk stratification, care gap ID, SDOH screening — all require data infrastructure. Blueprint's clinical registry and AI scribe productivity are technology-pillar products." },
   "economics>clinical": { label: "Payment incentives", text: "Under global budgets, preventing hospitalizations saves money. Blueprint's 5.8:1 ROI only matters when the payer captures the savings — economics makes clinical redesign rational." },

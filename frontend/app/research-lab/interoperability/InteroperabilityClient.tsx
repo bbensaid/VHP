@@ -3,6 +3,7 @@
 import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
+import ToolBookCallout from '@/components/research/ToolBookCallout'
 import { toolBadgeClass } from '@/lib/taxonomy/badges'
 
 const FHIRLab                   = dynamic(() => import('@/components/research/FHIRLab'),                   { ssr: false })
@@ -94,6 +95,8 @@ export default function InteroperabilityClient() {
           </button>
         ))}
       </nav>
+
+      <ToolBookCallout href={`/research-lab/interoperability?tab=${activeTab}`} />
 
       {activeTab === 'fhir' && <div><ToolHeader icon="🔌" label="FHIR Interoperability Lab"  badge="Interoperability" desc={TABS[0].desc} /><FHIRLab /></div>}
       {activeTab === 'risk' && <div><ToolHeader icon="📊" label="Risk Stratification Engine" badge="Clinical Risk"    desc={TABS[1].desc} /><RiskStratificationEngine /></div>}

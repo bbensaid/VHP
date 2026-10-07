@@ -99,8 +99,9 @@ interface Payer {
 // SOURCING (full detail in the on-screen Methodology panel and PILLAR_METHODOLOGY_NOTES below):
 //   Policy    — REAL. Classified from CMS's AHEAD Model cohort assignments (cms.gov/priorities/
 //               innovation/innovation-models/ahead; AHA News 2024-07-11) and Pennsylvania's Rural
-//               Health Model (CMMI). Cohort 1 (VT, MD) = 92, Cohort 2 (CT, HI) = 72, Cohort 3 (RI)
-//               = 66, PA Rural Health Model = 55, no known state all-payer/global-budget program
+//               Health Model (CMMI). Cohort 1 (MD) = 92, Cohort 2 (CT, HI) = 72, Cohort 3 (RI)
+//               = 66, (Vermont signed as Cohort 2 in Jan 2025 and withdrew Jul 2026; its row uses
+//               the readiness override below, not this tier rule) PA Rural Health Model = 55, no known state all-payer/global-budget program
 //               = 30. The tier-to-number mapping is this table's own transparent rule; the
 //               underlying classification (which states are in which federal model) is real and
 //               checkable.
@@ -128,23 +129,23 @@ interface Payer {
 //               week; it must not reappear in a third tool).
 const RAW_STATES: Omit<StateRecord, "rank" | "composite">[] = [
   { state: "Massachusetts", abbr: "MA", region: "Northeast", policy: 30, technology: 79, economics: 78, clinical: 98, operations: 71, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
-  { state: "Vermont", abbr: "VT", region: "Northeast", policy: 95, technology: 45, economics: 55, clinical: 65, operations: 50, policyProgram: "AHEAD Cohort 1 (CMS, performance from Jan 2026)", readinessSourced: true, simulated: { technology: false, economics: false, operations: false } },
+  { state: "Vermont", abbr: "VT", region: "Northeast", policy: 95, technology: 45, economics: 55, clinical: 65, operations: 50, policyProgram: "Act 68 state mandate (signed AHEAD Cohort 2 Jan 2025; withdrew Jul 2026)", readinessSourced: true, simulated: { technology: false, economics: false, operations: false } },
   { state: "Minnesota", abbr: "MN", region: "Midwest", policy: 30, technology: 74, economics: 73, clinical: 90, operations: 67, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Colorado", abbr: "CO", region: "West", policy: 30, technology: 75, economics: 71, clinical: 78, operations: 68, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Oregon", abbr: "OR", region: "West", policy: 30, technology: 72, economics: 69, clinical: 63, operations: 65, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
-  { state: "Connecticut", abbr: "CT", region: "Northeast", policy: 72, technology: 69, economics: 67, clinical: 94, operations: 61, policyProgram: "AHEAD Cohort 2 (CMS, performance from Jan 2027)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Connecticut", abbr: "CT", region: "Northeast", policy: 72, technology: 69, economics: 67, clinical: 94, operations: 61, policyProgram: "AHEAD Cohort 2 (CMS, performance from Jan 2028)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Washington", abbr: "WA", region: "West", policy: 30, technology: 73, economics: 68, clinical: 88, operations: 59, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
-  { state: "Hawaii", abbr: "HI", region: "West", policy: 72, technology: 65, economics: 67, clinical: 84, operations: 63, policyProgram: "AHEAD Cohort 2 (CMS, performance from Jan 2027)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Hawaii", abbr: "HI", region: "West", policy: 72, technology: 65, economics: 67, clinical: 84, operations: 63, policyProgram: "AHEAD Cohort 2 (CMS, performance from Jan 2028)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "New York", abbr: "NY", region: "Northeast", policy: 30, technology: 70, economics: 66, clinical: 51, operations: 58, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "California", abbr: "CA", region: "West", policy: 30, technology: 71, economics: 65, clinical: 53, operations: 57, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Maine", abbr: "ME", region: "Northeast", policy: 30, technology: 66, economics: 65, clinical: 76, operations: 58, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "New Hampshire", abbr: "NH", region: "Northeast", policy: 30, technology: 67, economics: 64, clinical: 100, operations: 58, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
-  { state: "Rhode Island", abbr: "RI", region: "Northeast", policy: 66, technology: 64, economics: 63, clinical: 82, operations: 56, policyProgram: "AHEAD Cohort 3 (CMS, performance from 2026-27)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Rhode Island", abbr: "RI", region: "Northeast", policy: 66, technology: 64, economics: 63, clinical: 82, operations: 56, policyProgram: "AHEAD Cohort 3 (CMS, performance from Jan 2028)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Maryland", abbr: "MD", region: "South", policy: 92, technology: 67, economics: 63, clinical: 86, operations: 55, policyProgram: "AHEAD Cohort 1 (CMS, performance from Jan 2026)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "New Jersey", abbr: "NJ", region: "Northeast", policy: 30, technology: 65, economics: 62, clinical: 80, operations: 54, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Wisconsin", abbr: "WI", region: "Midwest", policy: 30, technology: 63, economics: 61, clinical: 59, operations: 57, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Virginia", abbr: "VA", region: "South", policy: 30, technology: 64, economics: 60, clinical: 73, operations: 52, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
-  { state: "Pennsylvania", abbr: "PA", region: "Northeast", policy: 55, technology: 63, economics: 60, clinical: 49, operations: 54, policyProgram: "PA Rural Health Model (CMMI, voluntary)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "Pennsylvania", abbr: "PA", region: "Northeast", policy: 55, technology: 63, economics: 60, clinical: 49, operations: 54, policyProgram: "PA Rural Health Model (CMMI, voluntary; ended Dec 2024)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Iowa", abbr: "IA", region: "Midwest", policy: 30, technology: 61, economics: 61, clinical: 67, operations: 56, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Nebraska", abbr: "NE", region: "Midwest", policy: 30, technology: 60, economics: 59, clinical: 61, operations: 55, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Utah", abbr: "UT", region: "West", policy: 30, technology: 67, economics: 63, clinical: 92, operations: 58, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },

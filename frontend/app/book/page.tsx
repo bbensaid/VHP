@@ -134,7 +134,7 @@ const KEY_CONCEPTS = [
   { term: "Execution Sequence", def: "Why Policy → Technology → Economics → Clinical → Operations is non-negotiable, with the Equity Imperative applied at every stage. Chapter 1.", href: "/htr-simulator" },
   { term: "The OneCare Failure", def: "Vermont's ACO failure used as a sequencing autopsy — economics without technology readiness.", href: "/vermont-vcci" },
   { term: "Vermont Thread", def: "Vermont's Acts 167 & 68, Blueprint, VCCI, AHEAD, and RHT Program as the book's primary teaching case.", href: "/vermont-act-68" },
-  { term: "The AHEAD Model", def: "Medicare's CMMI model for Vermont's total cost of care reform — and the one Vermont withdrew from in July 2026 after a federal funding renegotiation, continuing its reform on Act 68's state mandate instead.", href: "/ahead-model" },
+  { term: "The AHEAD Model", def: "CMS's multi-payer state total cost of care model (Maryland, Connecticut, Hawaii, Rhode Island, a New York region) — the one Vermont signed in January 2025 and withdrew from in July 2026 after a federal funding renegotiation, continuing its reform on Act 68's state mandate instead.", href: "/ahead-model" },
   { term: "Reference-Based Pricing", def: "The pricing architecture that precedes global budgets — anchoring payments to a transparent reference.", href: "/economics/value" },
   { term: "VBC Readiness (6 Domains)", def: "The six organizational readiness dimensions any health system must score before assuming value-based risk.", href: "/research-lab/knowledge-workspace?tab=readiness" },
   { term: "Failure Cascade", def: "How a gap in one pillar triggers compounding failures across the other four.", href: "/transformation-friction-index" },

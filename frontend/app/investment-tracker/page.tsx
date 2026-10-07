@@ -1,6 +1,8 @@
 import { cachedFetch } from "@/lib/sanity-fetch";
 import InvestmentTrackerClient, { Deal } from "./InvestmentTrackerClient";
 import InvestmentSequencingCheck from "@/components/framework/InvestmentSequencingCheck";
+import PortfolioSequencingCheck from "@/components/framework/PortfolioSequencingCheck";
+import ToolBookCallout from "@/components/research/ToolBookCallout";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -54,6 +56,8 @@ export default async function InvestmentTrackerPage() {
         </p>
       </div>
 
+      <ToolBookCallout href="/investment-tracker" />
+      <PortfolioSequencingCheck />
       <InvestmentSequencingCheck deals={deals ?? []} />
       <InvestmentTrackerClient deals={deals ?? []} />
     </div>

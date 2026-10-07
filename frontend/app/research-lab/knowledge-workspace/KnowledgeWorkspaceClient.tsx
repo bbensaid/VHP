@@ -3,6 +3,7 @@
 import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
+import ToolBookCallout from '@/components/research/ToolBookCallout'
 import { toolBadgeClass } from '@/lib/taxonomy/badges'
 
 const EvidenceLibrary        = dynamic(() => import('@/components/research/EvidenceLibrary'),        { ssr: false })
@@ -55,11 +56,11 @@ const TABS = [
     desc: 'Save and compare analysis scenarios, build structured reports from templates, manage citations in AMA/APA format, and export findings as Markdown or text.',
   },
   {
-    id: 'cin', icon: '🔗', label: 'CIN & Shared Services', badge: 'Vermont RHT',
+    id: 'cin', icon: '🔗', label: 'CIN & Shared Services Modeler', badge: 'Vermont RHT',
     desc: "Model Vermont's RHT-funded Clinically Integrated Network: shared billing, coding, credentialing, HR, IT, and group purchasing across the 14 hospitals against the ~$1,303/discharge administrative cost premium.",
   },
   {
-    id: 'ems', icon: '🚑', label: 'EMS Transformation', badge: 'Vermont RHT',
+    id: 'ems', icon: '🚑', label: 'EMS Transformation Modeler', badge: 'Vermont RHT',
     desc: "Model Vermont's RHT EMS investment: regionalizing 31 separate agencies and community-paramedicine treat-and-refer ED diversion, with the global-budget margin impact of prevented ED visits and admissions.",
   },
 ]
@@ -115,14 +116,16 @@ export default function KnowledgeWorkspaceClient() {
         ))}
       </nav>
 
+      <ToolBookCallout href={`/research-lab/knowledge-workspace?tab=${activeTab}`} />
+
       {activeTab === 'evidence'    && <div><ToolHeader icon="📖"  label="Evidence Library"         badge="Research"       desc={TABS[0].desc} /><EvidenceLibrary /></div>}
       {activeTab === 'workforce'   && <div><ToolHeader icon="👨‍⚕️" label="Workforce Modeler"         badge="Workforce"      desc={TABS[1].desc} /><WorkforceModeler /></div>}
       {activeTab === 'leaderboard' && <div><ToolHeader icon="🏆"  label="Innovation Leaderboard"   badge="Benchmarking"   desc={TABS[2].desc} /><InnovationLeaderboard /></div>}
       {activeTab === 'scorecard'   && <div><ToolHeader icon="🎯"  label="Transformation Scorecard" badge="Executive"      desc={TABS[3].desc} /><TransformationScorecard /></div>}
       {activeTab === 'readiness'   && <div><ToolHeader icon="📊"  label="VBC Readiness Assessment" badge="Transformation" desc={TABS[4].desc} /><VBCReadinessAssessment /></div>}
       {activeTab === 'workspace'   && <div><ToolHeader icon="🗂️"  label="Research Workspace"       badge="Workspace"      desc={TABS[5].desc} /><ResearchWorkspace /></div>}
-      {activeTab === 'cin'         && <div><ToolHeader icon="🔗"  label="CIN & Shared Services"    badge="Vermont RHT"    desc={TABS[6].desc} /><CINSharedServicesLab /></div>}
-      {activeTab === 'ems'         && <div><ToolHeader icon="🚑"  label="EMS Transformation"       badge="Vermont RHT"    desc={TABS[7].desc} /><EMSTransformationLab /></div>}
+      {activeTab === 'cin'         && <div><ToolHeader icon="🔗"  label="CIN & Shared Services Modeler" badge="Vermont RHT"    desc={TABS[6].desc} /><CINSharedServicesLab /></div>}
+      {activeTab === 'ems'         && <div><ToolHeader icon="🚑"  label="EMS Transformation Modeler" badge="Vermont RHT"    desc={TABS[7].desc} /><EMSTransformationLab /></div>}
     </LabPageShell>
   )
 }
