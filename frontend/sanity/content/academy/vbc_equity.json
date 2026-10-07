@@ -246,7 +246,7 @@
       "_type": "block",
       "_key": "m6p015",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m6s015", "text": "CMS has taken meaningful steps to address this. The 2024 Medicaid CHW Coverage Rule created a federal minimum standard requiring all state Medicaid programs to provide reimbursement for defined CHW services by 2026. The AHEAD Model's health equity investment fund provides direct CHW program funding in participating states. Vermont, as an AHEAD participant, has an explicit CHW funding stream tied to the All-Payer Model performance requirements.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m6s015", "text": "CMS has taken meaningful steps to address this. The 2024 Medicaid CHW Coverage Rule created a federal minimum standard requiring all state Medicaid programs to provide reimbursement for defined CHW services by 2026. The AHEAD Model gives each participating state up to $12 million in cooperative agreement funding and requires a state health equity plan. Vermont signed on to AHEAD in January 2025 but withdrew in July 2026, before its performance period began, so it has no AHEAD-linked CHW funding stream.", "marks": []}],
       "markDefs": []
     },
     {
@@ -432,7 +432,7 @@
       "_type": "block",
       "_key": "m6hl02",
       "style": "highlight",
-      "children": [{"_type": "span", "_key": "m6hls2", "text": "Vermont's AHEAD Model participation is the most ambitious attempt in state history to align payment incentives, equity goals, and clinical infrastructure toward a single measurable objective: a healthier population at sustainable cost. Whether it succeeds will depend on the willingness of providers, payers, policymakers, and community organizations to make the hard design choices that equity-centered VBC requires.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m6hls2", "text": "Vermont's health care reform effort — which since its July 2026 withdrawal from AHEAD proceeds under state law (Act 68 of 2025) — is the most ambitious attempt in state history to align payment incentives, equity goals, and clinical infrastructure toward a single measurable objective: a healthier population at sustainable cost. Whether it succeeds will depend on the willingness of providers, payers, policymakers, and community organizations to make the hard design choices that equity-centered VBC requires.", "marks": []}],
       "markDefs": []
     },
     {
@@ -447,7 +447,7 @@
         "Community health workers are the most powerful equity tool in VBC, with a 4-to-1 ROI and 22% reduction in preventable hospitalizations in high-need populations.",
         "AI risk stratification tools can encode and automate historical discrimination — demographic equity audits before deployment are ethically and increasingly legally required.",
         "Disaggregating quality metrics by race, income, and geography is not optional — aggregate improvement can mask widening disparities beneath the average.",
-        "Vermont's AHEAD Model equity requirements represent the most ambitious state-level commitment to equity-centered VBC in the country — and a national model worth watching."
+        "Vermont signed on to AHEAD in January 2025 and withdrew in July 2026, before its performance period began; its reform now proceeds under state law (Act 68 of 2025), so AHEAD's equity requirements no longer apply to Vermont."
       ]
     }
   ]

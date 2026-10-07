@@ -4908,13 +4908,6 @@
                 "alt": "Three-panel economic visualization showing the volume-to-value financial transition model, care management intervention ROI comparison, and MSSP ACO savings maturity curve over years of participation."
               },
               {
-                "_key": "blk037",
-                "_type": "audio",
-                "title": "HTR Academy Podcast: The Real Economics of Value-Based Care \u2014 What the Financial Models Actually Show",
-                "url": "https://podcast.htr.com/episodes/vbc-fundamentals-module-3-economics-pillar.mp3",
-                "summary": "In this 58-minute episode, HTR Principal Economist Marcus Webb is joined by Geisinger Health System CFO Kevin Brennan and health economist Amol Navathe from the University of Pennsylvania to walk through the financial mechanics of MSSP shared savings, BPCI Advanced bundled payment economics, and the five-year financial planning model that Geisinger used when it made the transition from predominantly fee-for-service revenue to a majority value-based revenue portfolio. The conversation includes a frank discussion of the transition period losses Geisinger absorbed in years one and two, the board conversations that were required to sustain the investment, and the specific point at which the financial model turned decisively positive."
-              },
-              {
                 "_key": "blk038",
                 "_type": "video",
                 "url": "https://www.youtube.com/watch?v=HTRAcademy2026M3",
@@ -6200,7 +6193,7 @@
               {
                 "type": "text",
                 "heading": "Maryland: the only all-payer global budget state",
-                "body": "Maryland has had a unique hospital payment system since 1977. The Health Services Cost Review Commission (HSCRC) sets hospital rates for all payers \u2014 Medicare, Medicaid, and commercial \u2014 under a federal waiver. In 2014, Maryland entered the Total Cost of Care Model, adding a population-level global budget for Medicare spending across all care settings.\n\nResults after 5 years: Maryland hospitals generated $1.2B in Medicare savings, achieved lower per-capita cost growth than national trends, and showed quality improvements \u2014 particularly in preventable hospitalizations and readmissions. Vermont's AHEAD model, which Vermont entered in 2024, is modeled partly on Maryland's approach."
+                "body": "Maryland has had a unique hospital payment system since 1977. The Health Services Cost Review Commission (HSCRC) sets hospital rates for all payers \u2014 Medicare, Medicaid, and commercial \u2014 under a federal waiver. In 2014, Maryland entered the Total Cost of Care Model, adding a population-level global budget for Medicare spending across all care settings.\n\nResults after 5 years: Maryland hospitals generated $1.2B in Medicare savings, achieved lower per-capita cost growth than national trends, and showed quality improvements \u2014 particularly in preventable hospitalizations and readmissions. The federal AHEAD Model, which builds partly on Maryland's approach, now runs in Maryland, Connecticut, Hawaii, Rhode Island and downstate New York; Vermont signed on in January 2025 but withdrew in July 2026, and its hospital global budgets now proceed under state law (Act 68 of 2025)."
               },
               {
                 "type": "key_stat",
@@ -6216,9 +6209,9 @@
                     "source": "HSCRC"
                   },
                   {
-                    "value": "2024",
-                    "label": "Year Vermont entered the AHEAD model with global budget elements",
-                    "source": "CMS"
+                    "value": "2025",
+                    "label": "Year Vermont signed the AHEAD State Agreement (it withdrew in July 2026)",
+                    "source": "Vermont GMCB / AHS"
                   },
                   {
                     "value": "15%",
@@ -7648,7 +7641,7 @@
                   {
                     "_type": "span",
                     "_key": "m6s015",
-                    "text": "CMS has taken meaningful steps to address this. The 2024 Medicaid CHW Coverage Rule created a federal minimum standard requiring all state Medicaid programs to provide reimbursement for defined CHW services by 2026. The AHEAD Model's health equity investment fund provides direct CHW program funding in participating states. Vermont, as an AHEAD participant, has an explicit CHW funding stream tied to the All-Payer Model performance requirements.",
+                    "text": "CMS has taken meaningful steps to address this. The 2024 Medicaid CHW Coverage Rule created a federal minimum standard requiring all state Medicaid programs to provide reimbursement for defined CHW services by 2026. The AHEAD Model gives each participating state up to $12 million in cooperative agreement funding and requires a state health equity plan. Vermont signed on to AHEAD in January 2025 but withdrew in July 2026, before its performance period began, so it has no AHEAD-linked CHW funding stream.",
                     "marks": []
                   }
                 ],
@@ -8003,7 +7996,7 @@
                   {
                     "_type": "span",
                     "_key": "m6hls2",
-                    "text": "Vermont's AHEAD Model participation is the most ambitious attempt in state history to align payment incentives, equity goals, and clinical infrastructure toward a single measurable objective: a healthier population at sustainable cost. Whether it succeeds will depend on the willingness of providers, payers, policymakers, and community organizations to make the hard design choices that equity-centered VBC requires.",
+                    "text": "Vermont's health care reform effort \u2014 which since its July 2026 withdrawal from AHEAD proceeds under state law (Act 68 of 2025) \u2014 is the most ambitious attempt in state history to align payment incentives, equity goals, and clinical infrastructure toward a single measurable objective: a healthier population at sustainable cost. Whether it succeeds will depend on the willingness of providers, payers, policymakers, and community organizations to make the hard design choices that equity-centered VBC requires.",
                     "marks": []
                   }
                 ],
@@ -8021,7 +8014,7 @@
                   "Community health workers are the most powerful equity tool in VBC, with a 4-to-1 ROI and 22% reduction in preventable hospitalizations in high-need populations.",
                   "AI risk stratification tools can encode and automate historical discrimination \u2014 demographic equity audits before deployment are ethically and increasingly legally required.",
                   "Disaggregating quality metrics by race, income, and geography is not optional \u2014 aggregate improvement can mask widening disparities beneath the average.",
-                  "Vermont's AHEAD Model equity requirements represent the most ambitious state-level commitment to equity-centered VBC in the country \u2014 and a national model worth watching."
+                  "Vermont signed on to AHEAD in January 2025 and withdrew in July 2026, before its performance period began; its reform now proceeds under state law (Act 68 of 2025), so AHEAD's equity requirements no longer apply to Vermont."
                 ]
               }
             ]
@@ -8403,7 +8396,7 @@
                   {
                     "State": "Texas",
                     "Medicaid VBC Approach": "Managed care dominant but limited VBC quality incentives",
-                    "Key Waiver": "Section 1115 \u2014 DSRIP (expired 2021, successor pending)",
+                    "Key Waiver": "Section 1115 \u2014 Texas Healthcare Transformation and Quality Improvement Program (extended through 2030); DSRIP ended 2021, succeeded by CMS-approved state directed payment programs (e.g., CHIRP, TIPPS) in 2022",
                     "SDOH Integration": "Minimal; no statewide SDOH requirement"
                   },
                   {
@@ -8663,13 +8656,6 @@
                 "_type": "image",
                 "caption": "A two-panel policy architecture diagram for U.S. value-based care. The left panel shows the federal policy stack as a vertical hierarchy: Congress at the top (MACRA, ACA Section 3021), then CMS, then CMMI, then individual model types (ACOs, bundles, capitation, AHEAD), with arrows showing authority flow and legal waivers annotated at each level. The right panel shows the state-federal Medicaid relationship as a Venn diagram with the federal minimum standards circle, the state flexibility circle, and Section 1115 and 1915 waiver authority shown as the overlap zone where VBC Medicaid innovation occurs. Key programs are labeled within each zone.",
                 "alt": "Federal and state policy architecture diagram showing the legal and regulatory structure enabling value-based care in the United States, from Congressional authorization through CMMI model design to state Medicaid waiver programs."
-              },
-              {
-                "_key": "blk045",
-                "_type": "audio",
-                "title": "HTR Academy Podcast: Decoding the Policy Landscape for Value-Based Care",
-                "url": "https://podcast.htr.com/episodes/vbc-fundamentals-module-2-policy-pillar.mp3",
-                "summary": "This episode walks through the practical implications of MACRA, the 2020 Stark and AKS VBC exceptions, and the AHEAD Model for healthcare organizations at different stages of VBC adoption. It includes a plain-language explanation of what the Stark Law actually prohibits, why the 2020 exceptions matter for ACO-physician financial arrangements, and how to read a CMMI model termination notice to extract actionable intelligence for your own organization\u2019s VBC strategy."
               },
               {
                 "_key": "blk046",
@@ -9323,13 +9309,6 @@
                 "_type": "image",
                 "caption": "A three-layer technology architecture diagram for value-based care, designed as a pyramid. The foundation layer (EHR and structured data capture) is shown in blue at the base, with icons representing certified EHR systems, FHIR API connectivity, and standardized clinical coding. The middle layer (HIE and data exchange) is shown in green, with icons representing state HIE connections, ADT alert feeds, TEFCA QHIN connectivity, and bidirectional data flows between hospitals, physicians, pharmacies, and post-acute facilities. The top layer (analytics and intelligence) is shown in purple, with icons representing population health platforms, AI risk stratification models, care gap dashboards, and care coordinator workflow tools. Red annotations on each layer indicate the specific percentage of rural CAHs that lack that capability, based on the capability gap table data from this module.",
                 "alt": "Three-layer pyramid diagram showing the technology infrastructure required for value-based care, from EHR data foundation through health information exchange to AI-powered population health analytics, with rural capability gap annotations."
-              },
-              {
-                "_key": "blk040",
-                "_type": "audio",
-                "title": "HTR Academy Podcast: The Technology Gap in Rural VBC \u2014 What\u2019s Missing and How to Fix It",
-                "url": "https://podcast.htr.com/episodes/vbc-fundamentals-module-4-technology-pillar.mp3",
-                "summary": "In this 61-minute episode, HTR Chief Technology Analyst Dr. Jennifer Park is joined by ONC Deputy National Coordinator Dr. Micky Tripathi and Intermountain Healthcare Chief Digital Officer Daren Anderson to discuss the current state of health IT interoperability, the practical impact of TEFCA\u2019s first year of QHIN operations, and what rural hospitals specifically need to do to close the technology gap that is preventing advanced VBC participation. The conversation includes a frank assessment of why EHR vendors have been slow to implement FHIR capabilities for smaller rural customers, and what the ONC certification program\u2019s enforcement mechanisms can and cannot accomplish."
               },
               {
                 "_key": "blk041",
