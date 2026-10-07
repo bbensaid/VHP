@@ -3213,8 +3213,8 @@
             {
               "type": "callout",
               "variant": "info",
-              "title": "VITL and Vermont's AHEAD Model",
-              "body": "Vermont's All-Payer ACO Model (AHEAD Model) depends on health information exchange infrastructure to function. OneCare Vermont \u2014 the ACO accountable for the state's population under the AHEAD Model \u2014 relies on VITL's ADT notification network to identify care gaps, flag high-risk patients, and coordinate care across providers. Without HIE infrastructure, an ACO operating under a global budget cannot effectively manage population health. VITL's exchange network is not just a technical utility \u2014 it is a core enabler of Vermont's payment reform strategy."
+              "title": "VITL and Vermont's Payment Reform",
+              "body": "Vermont's All-Payer ACO Model, which ran through 2025, depended on health information exchange infrastructure to function. OneCare Vermont \u2014 the ACO at its center until it wound down at the end of 2025 \u2014 relied on VITL's ADT notification network to identify care gaps, flag high-risk patients, and coordinate care across providers. Without HIE infrastructure, an ACO operating under a global budget cannot effectively manage population health. VITL's exchange network is not just a technical utility \u2014 it is a core enabler of Vermont's payment reform strategy."
             },
             {
               "type": "key_stat",

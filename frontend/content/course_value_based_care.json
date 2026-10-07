@@ -2353,7 +2353,7 @@
             },
             {
               "type": "text",
-              "body": "What makes CHWs distinctive — and irreplaceable — is trust. In communities that have historically had reason to distrust institutional medicine, a CHW who grew up in the neighborhood, speaks the language, and has navigated the same systems can accomplish what no clinical protocol can. They connect patients to food assistance programs, navigate housing resources, provide transportation to appointments, and serve as advocates within a healthcare system that can feel foreign and hostile to those who most need it.\n\nDespite this evidence base, CHW integration into VBC programs has been slower than warranted, primarily because of reimbursement barriers. Most fee-for-service billing structures do not include a direct reimbursement pathway for CHW services, requiring VBC organizations to fund CHW positions out of shared savings or grants. This creates funding fragility — organizations that cannot sustain CHW positions between shared savings payments cycle through workforce disruption that undermines the relationship continuity that makes CHW programs effective.\n\nCMS has taken meaningful steps to address this. The 2024 Medicaid CHW Coverage Rule created a federal minimum standard requiring all state Medicaid programs to provide reimbursement for defined CHW services by 2026. The AHEAD Model's health equity investment fund provides direct CHW program funding in participating states. Vermont, as an AHEAD participant, has an explicit CHW funding stream tied to the All-Payer Model performance requirements."
+              "body": "What makes CHWs distinctive — and irreplaceable — is trust. In communities that have historically had reason to distrust institutional medicine, a CHW who grew up in the neighborhood, speaks the language, and has navigated the same systems can accomplish what no clinical protocol can. They connect patients to food assistance programs, navigate housing resources, provide transportation to appointments, and serve as advocates within a healthcare system that can feel foreign and hostile to those who most need it.\n\nDespite this evidence base, CHW integration into VBC programs has been slower than warranted, primarily because of reimbursement barriers. Most fee-for-service billing structures do not include a direct reimbursement pathway for CHW services, requiring VBC organizations to fund CHW positions out of shared savings or grants. This creates funding fragility — organizations that cannot sustain CHW positions between shared savings payments cycle through workforce disruption that undermines the relationship continuity that makes CHW programs effective.\n\nCMS has taken meaningful steps to address this. The 2024 Medicaid CHW Coverage Rule created a federal minimum standard requiring all state Medicaid programs to provide reimbursement for defined CHW services by 2026. The AHEAD Model gives each participating state up to $12 million in cooperative agreement funding and requires a state health equity plan. Vermont signed on to AHEAD in January 2025 but withdrew in July 2026, before its performance period began, so it has no AHEAD-linked CHW funding stream."
             },
             {
               "type": "text",
@@ -2390,7 +2390,7 @@
               "type": "callout",
               "variant": "info",
               "heading": "Note",
-              "body": "Vermont's AHEAD Model participation is the most ambitious attempt in state history to align payment incentives, equity goals, and clinical infrastructure toward a single measurable objective: a healthier population at sustainable cost. Whether it succeeds will depend on the willingness of providers, payers, policymakers, and community organizations to make the hard design choices that equity-centered VBC requires."
+              "body": "Vermont's health care reform effort — which since its July 2026 withdrawal from AHEAD proceeds under state law (Act 68 of 2025) — is the most ambitious attempt in state history to align payment incentives, equity goals, and clinical infrastructure toward a single measurable objective: a healthier population at sustainable cost. Whether it succeeds will depend on the willingness of providers, payers, policymakers, and community organizations to make the hard design choices that equity-centered VBC requires."
             }
           ],
           "tags": [],
@@ -2574,7 +2574,7 @@
             {
               "type": "text",
               "heading": "Maryland: the only all-payer global budget state",
-              "body": "Maryland has had a unique hospital payment system since 1977. The Health Services Cost Review Commission (HSCRC) sets hospital rates for all payers — Medicare, Medicaid, and commercial — under a federal waiver. In 2014, Maryland entered the Total Cost of Care Model, adding a population-level global budget for Medicare spending across all care settings.\n\nResults after 5 years: Maryland hospitals generated $1.2B in Medicare savings, achieved lower per-capita cost growth than national trends, and showed quality improvements — particularly in preventable hospitalizations and readmissions. Vermont's AHEAD model, which Vermont entered in 2024, is modeled partly on Maryland's approach."
+              "body": "Maryland has had a unique hospital payment system since 1977. The Health Services Cost Review Commission (HSCRC) sets hospital rates for all payers — Medicare, Medicaid, and commercial — under a federal waiver. In 2014, Maryland entered the Total Cost of Care Model, adding a population-level global budget for Medicare spending across all care settings.\n\nResults after 5 years: Maryland hospitals generated $1.2B in Medicare savings, achieved lower per-capita cost growth than national trends, and showed quality improvements — particularly in preventable hospitalizations and readmissions. The federal AHEAD Model, which builds partly on Maryland's approach, now runs in Maryland, Connecticut, Hawaii, Rhode Island and downstate New York; Vermont signed on in January 2025 but withdrew in July 2026, and its hospital global budgets now proceed under state law (Act 68 of 2025)."
             },
             {
               "type": "key_stat",
@@ -2590,9 +2590,9 @@
                   "source": "HSCRC"
                 },
                 {
-                  "value": "2024",
-                  "label": "Year Vermont entered the AHEAD model with global budget elements",
-                  "source": "CMS"
+                  "value": "2025",
+                  "label": "Year Vermont signed the AHEAD State Agreement (it withdrew in July 2026)",
+                  "source": "Vermont GMCB / AHS"
                 },
                 {
                   "value": "15%",

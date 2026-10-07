@@ -1,0 +1,34 @@
+HTR Academy phase 3c — 2026-10-07
+Ledger: docs/audits/academy_phase3c_2026-10.jsonl (72 FIXED lines + 5 LEFT/notes)
+Backups: sanity-backups/academy-phase3c-2026-10-07/ (7 Sanity docs, 8 Supabase lesson rows; taken before each write)
+Scripts: frontend/scripts/academy-phase3c-fix.mjs (Sanity + Supabase; dry run without --commit)
+         frontend/scripts/academy-phase3c-local-files.mjs (local source mirrors; reads its pairs from the fix script)
+         frontend/scripts/academy-phase3c-dump.mjs (read-only lessons dump)
+Every Sanity doc and Supabase row was re-fetched after patching and matched the intended result exactly, with no residual target strings. Nothing was deleted except single audio blocks. No documents or rows were removed.
+
+1. FABRICATED PODCASTS (tasks 1+2)
+   podcast.htr.com has no DNS record and curl gets no response. Web searches found no such episodes. The guests include real people (Andy Slavitt, Valerie Rock, Alyssa Bilinski of Brown, Patrick Conway, Kevin Brennan, Amol Navathe) and invented "HTR" staff (Dr. Sarah Chen, Marcus Webb, Dr. Jennifer Park).
+   Renderer check: components/AudioBlock.tsx returns null when there is no url, but ArticlePageTemplate (used for policyAnalysis) still builds the audio section from the block count. Removing the block is therefore the only clean option. Every audio block pointing at podcast.htr.com was removed as a whole block. Neighbouring _keys and structure were not touched.
+   Sanity (7 docs): academyModule module-2 (blk045), module-3 (blk037), module-4 (blk040); policyAnalysis module-2 (blk045), module-3, module-4, module-5 (blk043, Sarah Chen/Bilinski/Conway).
+   Supabase fallbacks (4 rows): sanity-vbc-policy, vbc-fundamentals-module-3-economics-pillar, sanity-vbc-technology, aco-basics.
+   Local (13 blocks in 11 files): VBC_Equity, VBC_Clinical, Medicaid_Claude_V2 (DSH episode, Sarah Chen), VBC_Fundamentals (module-1, Sarah Chen), VBC_Policy, VBC_Economics, VBC_Technology, academy/vbc_policy|economics|technology, courses_tier1 (3).
+   Scope note: the economics and technology episodes (Marcus Webb, Jennifer Park) are the same fabricated pattern on the same dead host. They were removed as well.
+   policyAnalysis module-2: the verified phase-3b fixes from its academyModule twin were also mirrored into it. This covers the table % column and Tier ratings, the Maryland 1977 and Mississippi corrections, the MassHealth and Mississippi prose, the AHEAD state list, and the cohort-solicitation claim. The "Regulatory Intelligence" attribution was already absent there.
+
+2. AHEAD / VERMONT (task 3)  Sources: WCAX + Vermont Public 2026-07-28, VermontBiz, CMS AHEAD page.
+   Supabase fallback rows: global-budgets-hospital-finance ("entered in 2024", stat label and value 2024->2025), total-cost-of-care-management (callout body and title), vitl-vermont-hie (APM/AHEAD conflation, OneCare tense, title), sanity-vbc-equity (3 Vermont-as-participant passages).
+   The live Sanity bodies of all four (slugs global-budgets-hospital-finance, total-cost-of-care-management, interop-vermont-vitl, vbc-equity-m6) were checked and were already correct. Those bodies are what render.
+   "eight participating states" was changed to "the participating states (currently Maryland, Connecticut, Hawaii, Rhode Island and downstate New York)" in Sanity policyAnalysis module-5, VBC_Equity.json and VBC_Clinical.json. "Eight" was the original cap, not the participant count.
+   Mirrored into the local sources: courses_tier1, courses_tier2, course_value_based_care, course_population_health, course_interoperability, expand_vbc, academy/vbc_equity.json.
+
+3. TEXAS (task 4)  "DSRIP (expired 2021, successor pending)" was stale. DSRIP ended on Sept 30, 2021. CMS approved the successor directed-payment programs (CHIRP, TIPPS and others) in 2022, and the THTQIP 1115 waiver runs through 2030. Fixed in both module-2 Sanity docs, in the Supabase sanity-vbc-policy row, and in vbc_policy.json, VBC_Policy.json and courses_tier1.json.
+
+All 17 edited JSON files re-parse. The 15 machine-formatted files were re-serialised only after a no-op round-trip reproduced them byte-for-byte. The 2 hand-formatted files (expand_vbc, academy/vbc_equity) were edited at the text level. The diffs are minimal.
+
+LEFT
+  - frontend/sanity/Prompt_template_Claude_v2.txt makes a podcast block with a named guest (podcast.htr.com) and a demo YouTube video MANDATORY. It is the root cause and will regenerate fabrications. It is a prompt, not content, so it was not edited.
+  - The "2024 Medicaid CHW Coverage Rule ... by 2026" and AHEAD "health equity / SDOH investment fund" claims (module-5 and the equity files) were not verified and were left as they are.
+  - academyModule-vbc-aco-medicaid says the All-Payer ACO Model was "renewed in 2022 as part of the broader Vermont AHEAD model". That is false, but it is a different lesson and was not in scope.
+  - The global-budgets-hospital-finance fallback says "In 2014, Maryland entered the Total Cost of Care Model". The TCOC Model began in 2019; the 2014 model was the All-Payer Model. This is fallback-only and is not AHEAD wording.
+  - The phase-3 BPCI/PCF row in the module-2 APM table is still unchanged (carried from phase 3b).
+Nothing was committed or pushed.

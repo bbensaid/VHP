@@ -2798,8 +2798,8 @@
               {
                 "type": "callout",
                 "variant": "info",
-                "title": "VITL and Vermont's AHEAD Model",
-                "body": "Vermont's All-Payer ACO Model (AHEAD Model) depends on health information exchange infrastructure to function. OneCare Vermont \u2014 the ACO accountable for the state's population under the AHEAD Model \u2014 relies on VITL's ADT notification network to identify care gaps, flag high-risk patients, and coordinate care across providers. Without HIE infrastructure, an ACO operating under a global budget cannot effectively manage population health. VITL's exchange network is not just a technical utility \u2014 it is a core enabler of Vermont's payment reform strategy."
+                "title": "VITL and Vermont's Payment Reform",
+                "body": "Vermont's All-Payer ACO Model, which ran through 2025, depended on health information exchange infrastructure to function. OneCare Vermont \u2014 the ACO at its center until it wound down at the end of 2025 \u2014 relied on VITL's ADT notification network to identify care gaps, flag high-risk patients, and coordinate care across providers. Without HIE infrastructure, an ACO operating under a global budget cannot effectively manage population health. VITL's exchange network is not just a technical utility \u2014 it is a core enabler of Vermont's payment reform strategy."
               },
               {
                 "type": "key_stat",
@@ -5980,8 +5980,8 @@
               {
                 "type": "callout",
                 "variant": "info",
-                "title": "Vermont's Total Cost of Care Model",
-                "body": "Vermont's AHEAD model (All-Payer Health Equity Approaches and Development) sets a statewide per-capita TCOC growth target across all payers. Hospitals, ACOs, and Medicaid are all held to the same target \u2014 creating alignment across payers that most states lack."
+                "title": "Vermont and All-Payer Cost Targets",
+                "body": "The federal AHEAD Model (States Advancing All-Payer Health Equity Approaches and Development) sets a statewide per-capita total cost of care growth target across all payers in each participating state. Vermont signed on in January 2025 but withdrew in July 2026, before its performance period began; its hospital global budgets and cost-growth work now proceed under state law (Act 68 of 2025)."
               }
             ],
             "quiz": null
