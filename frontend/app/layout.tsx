@@ -20,13 +20,42 @@ import TesterHubButton from "@/components/TesterHubButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const SITE_DESCRIPTION =
+  "Policy, Economics, and Technology at the Nexus of Healthcare Reform.";
+
 export async function generateMetadata(): Promise<Metadata> {
-  const host = (await headers()).get("host");
+  const h = await headers();
+  const host = h.get("host");
+  const proto = h.get("x-forwarded-proto") ?? "https";
   const { displayName } = getBrandConfig(resolveBrand(host));
+  // Host-aware base so relative OG/canonical URLs resolve to the domain the
+  // visitor is on (four production domains share one deployment — see lib/brand.ts).
+  const metadataBase = new URL(
+    host ? `${proto}://${host}` : process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000"
+  );
   return {
+    metadataBase,
     title: displayName,
-    description:
-      "Policy, Economics, and Technology at the Nexus of Healthcare Reform.",
+    description: SITE_DESCRIPTION,
+    applicationName: displayName,
+    // No title/description/url here on purpose: child segments that set only
+    // `title`/`description` inherit this object as-is, so a root og:title or
+    // og:url would stamp the homepage's values onto every shared page.
+    // Crawlers fall back to <title>/<meta name="description">.
+    openGraph: {
+      type: "website",
+      siteName: displayName,
+      locale: "en_US",
+    },
+    twitter: {
+      card: "summary",
+    },
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "any" },
+        { url: "/logo-icon.svg", type: "image/svg+xml" },
+      ],
+    },
   };
 }
 

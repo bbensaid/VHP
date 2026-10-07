@@ -44,9 +44,9 @@ Baseline (Phase 0, 2026-08-10): frontend `typecheck` ✅, `build` ✅, `lint` 0 
 
 | ID | Sev | Finding | Status |
 |---|---|---|---|
-| DOC-1 | P1 | `CLAUDE.md:10` + `ALIGNMENT_AUDIT_BRIEF.md` say alignment audit "not started" — it completed 2026-07-31 (`ALIGNMENT_AUDIT_FINDINGS.md`) | OPEN |
-| DOC-2 | P1 | `ACADEMY.md` says 9 courses / Tier 3 "planned"; Supabase has 15 courses, 243 lessons, Tier 3 shipped | OPEN |
-| DOC-3 | P2 | platform-documentation: 03 schema count (22 vs 21), 04 migration count (33 vs 36), 05 cites certificates API (Academy issues no certificates) | OPEN |
+| DOC-1 | P1 | `CLAUDE.md:10` + `ALIGNMENT_AUDIT_BRIEF.md` say alignment audit "not started" — it completed 2026-07-31 (`ALIGNMENT_AUDIT_FINDINGS.md`) | **FIXED** — verified 2026-10-07: CLAUDE.md status line corrected in 2b61e19 (2026-08-10); both ALIGNMENT_AUDIT_*.md files were removed 2026-09-18 as superseded (CLAUDE.md "Start here" records this); no "not started" claim remains in any root doc |
+| DOC-2 | P1 | `ACADEMY.md` says 9 courses / Tier 3 "planned"; Supabase has 15 courses, 243 lessons, Tier 3 shipped | **FIXED** 2026-10-07 — catalogue re-pulled live (18 courses / 100 tracks / 279 lessons, 265 rich); added a verified "Rules" section (sanity_slug join, is_published at 3 levels, `order` column, real player route, upsert-only seeds, scripts in frontend/scripts, CONTENT_TEMPLATE exec, 20-block bar); corrected table names (`course_player_enrollments`/`course_lesson_progress`/`course_quiz_attempts`), migration 029–032 columns, route map (legacy /academy/courses + /academy/modules), certificate note |
+| DOC-3 | P2 | platform-documentation: 03 schema count (22 vs 21), 04 migration count (33 vs 36), 05 cites certificates API (Academy issues no certificates) | **FIXED** 2026-10-07 — 03: 20 registered types (the listed `report` type has no schema file and 0 documents; marked as such); 04: 37 migrations incl. new 034, RAG section now names the live `data_rag_documents` table (005/007/021 target the empty `rag_documents`); 05: certificates scoped to the legacy Sanity module engine (`/academy/modules/[slug]`) — the Supabase course player issues none |
 
 ## AI / RAG
 

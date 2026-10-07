@@ -4,6 +4,7 @@
 // still reachable by direct URL on healthtransformationreview.org/.com.
 // These guards enforce the brand at the route level.
 
+import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { getBrandConfig, resolveBrand, type Brand } from "./brand";
@@ -21,4 +22,23 @@ export async function currentBrand(): Promise<Brand> {
 export async function requireAdvisoryBrand(): Promise<void> {
   const brand = await currentBrand();
   if (!getBrandConfig(brand).showAdvisory) notFound();
+}
+
+/**
+ * Page metadata titled for the current brand ("<title> | <brand display name>"),
+ * so a page reads correctly on both the .review and .solutions domains.
+ * Used by route layouts whose page is a client component (which cannot export
+ * metadata itself). Pass `noIndex` for auth/account/utility pages.
+ */
+export async function brandedMetadata(
+  title: string,
+  description: string,
+  opts: { noIndex?: boolean } = {}
+): Promise<Metadata> {
+  const { displayName } = getBrandConfig(await currentBrand());
+  return {
+    title: `${title} | ${displayName}`,
+    description,
+    ...(opts.noIndex ? { robots: { index: false, follow: false } } : {}),
+  };
 }

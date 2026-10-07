@@ -2,6 +2,25 @@
 
 This document is the authoritative reference for anyone building, modifying, or extending the HTR Academy course system. It covers the data model, content JSON schema, supported block types, database seeding, and the end-to-end workflow for adding new courses.
 
+_Last verified against code and live Supabase/Sanity: 2026-10-07._
+
+---
+
+## The Rules (read before touching Academy data)
+
+These are the facts that have caused real breakage when forgotten. Each was verified against code on 2026-10-07.
+
+1. **Two stores, two jobs.** Supabase holds *structure and state* (`courses` → `tracks` → `lessons`, quizzes, enrollment, progress). Sanity holds the *rich lesson body* (`academyModule` documents, Portable Text). Neither replaced the other.
+2. **`lessons.sanity_slug` is the join.** The lesson page (`app/academy/tracks/[courseSlug]/[lessonSlug]/page.tsx`, `hydrateWithSanityContent`) fetches the Sanity `academyModule` whose `slug.current` equals the lesson's `sanity_slug` and injects it as `sanityBody`. If `sanity_slug` is empty the player falls back to the thin Supabase `content_blocks`. **After posting a lesson to Sanity, set that lesson row's `sanity_slug`** (`frontend/scripts/link-sanity-slugs.mjs`).
+3. **`is_published` is filtered at three levels.** `getCourseWithProgress()` in `frontend/lib/course-api.ts` requires `is_published = true` on the course, **and** on each track, **and** on each lesson. A published course whose tracks are unpublished renders empty. Check all three.
+4. **The ordering column is `order`** (on `tracks`, `lessons`, `quiz_questions`, `quiz_options`) — not `order_index`. A wrong column name returns `data: null` plus an error; always destructure and print `{ data, error }`.
+5. **The real course player is `/academy/tracks/<courseSlug>`** (and `/academy/tracks/<courseSlug>/<lessonSlug>`). `/academy/courses` re-exports the `/academy/tracks` catalogue, and `/academy/courses/<slug>` is a **legacy Sanity** route (`*[_type == "course"]`) — Supabase courses are not there. Never link a Supabase course under `/academy/courses/`.
+6. **Seed scripts are upsert-only.** Courses upsert on `slug`, tracks on `course_id,slug`, lessons on `track_id,slug`, quizzes on `lesson_id`, questions on `quiz_id,order`, options on `question_id,order`. They never delete: removing a lesson means deleting the Supabase row directly. Changing a slug creates a duplicate row.
+7. **Node scripts that use Supabase must live in `frontend/scripts/`**, or node cannot resolve `@supabase/supabase-js`. Env comes from `frontend/.env.local` (`NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `SANITY_API_TOKEN`).
+8. **Python lesson-writing scripts must start with `exec(open('CONTENT_TEMPLATE.py').read())`** (repo root). The template's helpers (`blk`, `h2`, `h3`, `callout`, `highlight`, `quote`, `analogy`, …) are the only block shapes `components/AcademyContent.tsx` renders. Never hand-roll block JSON.
+9. **The "rich" bar is 20 Sanity blocks.** `frontend/scripts/audit-courses.mjs` (`RICH_MIN = 20`) counts a lesson as rich only if `sanity_slug` is set **and** its `academyModule.body` has ≥ 20 blocks. Established courses run ~64–75 blocks per lesson; 20 is the floor, not the target. Run it after every Sanity post — not the poster script's own summary.
+10. **Writing Academy/Sanity content needs the owner's sign-off each time.** Thin or missing lessons are often deliberate (unverifiable content was pulled) — do not auto-restore.
+
 ---
 
 ## Table of Contents
@@ -23,17 +42,18 @@ This document is the authoritative reference for anyone building, modifying, or 
 
 ## System Overview
 
-The HTR Academy delivers structured self-paced courses through a **course player** — a full-screen, sidebar-driven learning interface. Courses are organized as:
+The HTR Academy delivers structured self-paced courses through a **course player** — a full-screen, sidebar-driven learning interface. Courses are organized as (Supabase):
 
 ```
 Course
   └── Track (a themed module, e.g. "Medicare Advantage")
         └── Lesson (a single learning unit, 15–30 min)
-              ├── Content Blocks (rich content: text, callouts, timelines, etc.)
+              ├── sanity_slug → Sanity academyModule.body (the rich body, when set)
+              ├── Content Blocks (Supabase fallback: text, callouts, timelines, etc.)
               └── Quiz (optional, single-choice questions)
 ```
 
-Progress is tracked per user in Supabase. Users are auto-enrolled on first visit to a course page.
+Progress is tracked per user in Supabase. Logged-in users are auto-enrolled on first visit to a course or lesson page; anonymous visitors can read published lessons without progress tracking.
 
 ---
 
@@ -42,13 +62,18 @@ Progress is tracked per user in Supabase. Users are auto-enrolled on first visit
 ### Data Flow
 
 ```
-frontend/content/course_*.json   ← source of truth for content
-       ↓  (seed script)
-Supabase (courses, tracks, lessons, quizzes tables)
-       ↓  (course-api.ts)
+frontend/content/course_*.json  (+ _build_*.py generators)   ← source for structure + fallback content
+       ↓  (seed script, upsert-only)
+Supabase (courses, tracks, lessons, quizzes …)
+       ↓  (lib/course-api.ts getCourseWithProgress — is_published at all 3 levels)
 /academy/tracks/[courseSlug]/[lessonSlug]
-       ↓  (CoursePlayer component)
+       ↓  hydrateWithSanityContent: lessons.sanity_slug → Sanity academyModule.body
+       ↓  (CoursePlayer → LessonView: sanityBody › legacy sanity_portable_text block › content_blocks)
 User browser
+
+Rich bodies are written to Sanity by Python scripts that exec CONTENT_TEMPLATE.py,
+or by node posters such as frontend/scripts/post-five-pillars-to-sanity.mjs
+(dry run by default; --commit to write).
 ```
 
 ### Key Files
@@ -65,7 +90,13 @@ User browser
 | `frontend/app/actions/course.ts` | Server actions — markLessonProgress, submitQuizAttempt |
 | `frontend/types/course.ts` | TypeScript types for the full course data model |
 | `frontend/components/course/` | All course UI components |
-| `frontend/app/academy/tracks/` | Next.js route pages |
+| `frontend/app/academy/tracks/` | Next.js route pages (the real course player) |
+| `CONTENT_TEMPLATE.py` (repo root) | Block helpers + Sanity mutate wiring for lesson-writing scripts |
+| `frontend/components/AcademyContent.tsx` | Renders Sanity lesson bodies (the gold-standard renderer) |
+| `frontend/sanity/schemaTypes/academyModule.ts`, `blockContent.ts` | Sanity schema for lesson bodies |
+| `frontend/scripts/link-sanity-slugs.mjs` | Sets `lessons.sanity_slug` |
+| `frontend/scripts/audit-courses.mjs` | Read-only rich/total report per course (the 20-block bar) |
+| `frontend/scripts/seed-all-courses.mjs` | Upserts courses/tracks/lessons/quizzes from the content JSON |
 
 ---
 
@@ -407,26 +438,30 @@ A Python script that generated the AI in Healthcare course JSON. Not intended fo
 
 ## Course Catalog (Current)
 
-As of August 2026: **15 courses, 243 lessons** live in Supabase (229 with rich Sanity-backed content — run `node frontend/scripts/audit-courses.mjs` for the current per-course table). An earlier snapshot said 9 courses / 154 lessons; Tier 3 has since shipped.
+Live Supabase query, 2026-10-07: **18 courses (all published), 100 tracks (all published), 279 lessons (277 published)**. `audit-courses.mjs` the same day: **265 / 279 lessons rich**. Re-run `node frontend/scripts/audit-courses.mjs` for the current table — do not trust these numbers past their date.
 
-| Slug | Title | Tracks | Lessons | Pillar | Level |
-|------|-------|--------|---------|--------|-------|
-| `hie-health-reform-onboarding` | HIE & Health Reform: New Employee Onboarding | 5 | 17 | general | foundational |
-| `medicaid-101` | Medicaid 101: How America's Safety Net Works | 6 | 19 | policy | foundational |
-| `value-based-care` | Value-Based Care: From Fee-for-Service to Outcomes | 7 | 17 | economics | intermediate |
-| `health-equity-sdoh` | Health Equity & SDOH: From Awareness to Action | 6 | 16 | equity | foundational |
-| `ai-machine-learning-healthcare` | AI & Machine Learning in Healthcare | 7 | 18 | technology | intermediate |
-| `interoperability-data-exchange` | Healthcare Interoperability & Data Exchange | 7 | 25 | technology | intermediate |
-| `population-health-management` | Population Health Management | 7 | 17 | clinical | intermediate |
-| `medicare-fundamentals` | Medicare Fundamentals | 5 | 12 | policy | foundational |
-| `behavioral-health-integration` | Behavioral Health Integration | 6 | 13 | clinical | intermediate |
+| Slug | Title | Tracks | Lessons | Rich | Pillar | Level | Book ch. |
+|------|-------|--------|---------|------|--------|-------|----------|
+| `ai-machine-learning-healthcare` | AI & Machine Learning in Healthcare | 7 | 18 | 18 | technology | intermediate | 4 |
+| `behavioral-health-integration` | Behavioral Health Integration | 6 | 13 | 13 | clinical | intermediate | 8 |
+| `clinical-quality-measurement` | Clinical Quality Measurement | 6 | 18 | 18 | clinical | intermediate | 8 |
+| `five-pillars-one-imperative` | Five Pillars, One Imperative | 8 | 24 | 24 | — | — | — |
+| `genomics-precision-medicine` | Genomics & Precision Medicine | 7 | 21 | 15 | clinical | intermediate | 8 |
+| `health-equity-analytics` | Health Equity Analytics | 1 | 6 | 6 | — | — | — |
+| `health-equity-sdoh` | Health Equity & SDOH: From Awareness to Action | 6 | 16 | 16 | equity | foundational | 10 |
+| `hie-health-reform-onboarding` | HIE & Health Reform | 6 | 13 | 13 | policy | — | 16 |
+| `hospital-finance` | Hospital Finance | 6 | 18 | 18 | economics | intermediate | 6 |
+| `interoperability-data-exchange` | Healthcare Interoperability & Data Exchange | 7 | 26 | 25 | technology | intermediate | 4 |
+| `medicaid-101` | Medicaid 101: How America's Safety Net Works | 6 | 9 | 9 | policy | foundational | 2 |
+| `medicaid-managed-care-operations` | Medicaid Managed Care Operations | 6 | 17 | 17 | policy | intermediate | 2 |
+| `medicare-fundamentals` | Medicare Fundamentals | 5 | 12 | 12 | policy | foundational | 2 |
+| `population-health-management` | Population Health Management | 7 | 17 | 17 | clinical | intermediate | 8 |
+| `revenue-cycle-management` | Revenue Cycle Management | 7 | 21 | 21 | operations | intermediate | 11 |
+| `transformation-leadership` | Transformation Leadership | 1 | 6 | 6 | operations | advanced | 12 |
+| `value-based-care` | Value-Based Care: From Fee-for-Service to Outcomes | 7 | 23 (21 published) | 17 | economics | intermediate | 6 |
+| `welcome-htr-framework` | Welcome & the HTR Framework | 1 | 1 | 0 | technology | — | 1 |
 
-### Tier 3 (shipped — content in `frontend/content/courses_tier3.json`)
-- Revenue Cycle Management (`revenue-cycle-management`)
-- Hospital Finance & Accounting (`hospital-finance`)
-- Clinical Quality Measurement (`clinical-quality`)
-- Medicaid Managed Care Operations (`medicaid-managed-care`)
-- Genomics & Precision Medicine (`genomics-precision-medicine`)
+"Book ch." is `courses.chapter_ref` (migration 032). The partial courses (genomics, interoperability, value-based-care) and the empty `welcome-htr-framework` shell are open owner decisions (RELEASE_AUDIT CONTENT-1/2) — thin lessons may be deliberate.
 
 ---
 
@@ -440,6 +475,9 @@ courses
   slug (text, unique)
   title, subtitle, description (text)
   estimated_hours (int)
+  pillar (htr_pillar), level (course_level)   -- migration 029
+  is_featured (bool)                          -- migration 030
+  chapter_ref (text, book chapter)            -- migration 032
   is_published (bool)
   created_at, updated_at
 
@@ -460,6 +498,7 @@ lessons
   objectives (jsonb)
   content_blocks (jsonb)
   related_lesson_ids (uuid[])
+  sanity_slug (text, nullable)   -- migration 031; → Sanity academyModule.slug.current
   is_published (bool)
 
 quizzes
@@ -486,7 +525,7 @@ quiz_options
   is_correct (bool)
   explanation (text, nullable)
 
-enrollments
+course_player_enrollments
   id (uuid PK)
   user_id (uuid FK → auth.users)
   course_id (uuid FK → courses.id)
@@ -496,17 +535,17 @@ enrollments
   current_lesson_id (uuid FK → lessons.id, nullable)
   enrolled_at, completed_at (timestamptz)
 
-lesson_progress
+course_lesson_progress
   id (uuid PK)
-  enrollment_id (uuid FK → enrollments.id)
+  enrollment_id (uuid FK → course_player_enrollments.id)
   lesson_id (uuid FK → lessons.id)
   UNIQUE: (enrollment_id, lesson_id)
   status (enum: not_started, in_progress, completed)
   started_at, completed_at (timestamptz)
 
-quiz_attempts
+course_quiz_attempts
   id (uuid PK)
-  enrollment_id (uuid FK → enrollments.id)
+  enrollment_id (uuid FK → course_player_enrollments.id)
   quiz_id (uuid FK → quizzes.id)
   answers (jsonb)
   score (numeric 0–100)
@@ -519,6 +558,9 @@ audio_slots
   slot_key (text)  UNIQUE: (lesson_id, slot_key)
   label, hint (text)
   uploaded_url, transcript_url (text, nullable)
+
+-- also in migration 028: learner_audio_uploads, lesson_bookmarks, lesson_notes
+-- (all 13 tables: supabase/migrations/028_course_schema.sql)
 ```
 
 ---
@@ -529,8 +571,11 @@ audio_slots
 |-------|------|-------------|
 | `/academy` | `app/academy/page.tsx` | Academy hub — featured courses, quick links |
 | `/academy/tracks` | `app/academy/tracks/page.tsx` | Full course catalog grid |
-| `/academy/tracks/[courseSlug]` | `app/academy/tracks/[courseSlug]/page.tsx` | Course overview + track listing; auto-redirects logged-in users to first lesson |
-| `/academy/tracks/[courseSlug]/[lessonSlug]` | `app/academy/tracks/[courseSlug]/[lessonSlug]/page.tsx` | Course player (requires login, auto-enrolls) |
+| `/academy/tracks/[courseSlug]` | `app/academy/tracks/[courseSlug]/page.tsx` | Course overview + track listing (auto-enrolls logged-in users; no redirect) |
+| `/academy/tracks/[courseSlug]/[lessonSlug]` | `app/academy/tracks/[courseSlug]/[lessonSlug]/page.tsx` | Course player; injects Sanity bodies via `sanity_slug`; auto-enrolls logged-in users |
+| `/academy/courses` | `app/academy/courses/page.tsx` | Re-exports the `/academy/tracks` catalogue (duplicate URL) |
+| `/academy/courses/[slug]` | `app/academy/courses/[slug]/page.tsx` | **Legacy Sanity** `course` documents — NOT the Supabase courses |
+| `/academy/modules/[slug]` | `app/academy/modules/[slug]/page.tsx` | Standalone Sanity `academyModule` view (legacy module engine; the only path that calls `/api/academy/certificates`) |
 
 ### AppShell behavior on course pages
 
@@ -563,7 +608,7 @@ The seed course and Tier-1 courses use a legacy quiz format (`prompt`/`isCorrect
 The four Tier-1 course JSON files (`course_medicaid_101.json`, etc.) were generated without `pillar` or `level` top-level fields. These are stored in Supabase but not currently used by any frontend display. When adding or editing these fields, re-run the appropriate seed script.
 
 ### Completion flow not yet built
-There is no "Course Complete" celebration/certificate UI. When a user marks the last lesson complete, the player stays on that lesson. This is a planned enhancement (Step 5 in the roadmap).
+The Supabase course player has no "Course Complete" celebration/certificate UI. When a user marks the last lesson complete, the player stays on that lesson. (`POST /api/academy/certificates` exists, but only the legacy Sanity module engine at `/academy/modules/[slug]` calls it.)
 
 ### Mobile sidebar
 The mobile course sidebar (hamburger toggle) is wired up but hasn't been tested end-to-end on real devices. The overlay and translate animation should work but layout on small viewports needs verification.

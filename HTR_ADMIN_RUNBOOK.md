@@ -552,7 +552,7 @@ Summary only here.
 | Tool ↔ chapter map | `frontend/lib/taxonomy/tools.ts` (39 tools, 44 pairs) |
 | PDF | `frontend/public/HTR_Book_v42.pdf`, referenced from 5 places |
 | Reader | `/book`, `/read/[slug]` |
-| Audio | `frontend/public/audio/narration/` — 18 `.m4a` + `.txt` |
+| Audio | **Supabase Storage**, public bucket `narration-audio`, path `narration/<NN-name>.m4a` (base URL in `frontend/lib/narration.ts`) — 18 files. Transcripts (`.txt`) stay in `frontend/public/audio/narration/`. Local `.m4a`/`.wav` there are gitignored working copies, never deployed. |
 
 **Exporting a PDF:** upload the current `.docx` to Google Docs → File → Download
 → PDF → save to repo root → copy to `frontend/public/`.
@@ -570,9 +570,14 @@ python3 book-build/make_transcripts.py            # .txt from the manuscript
 ./scripts/generate-narration-piper.sh             # Piper (free, better)
 ```
 
-Current audio is **OpenAI `gpt-4o-mini-tts`, voice `nova`**, generated
-2026-07-27 for preface / introduction / chapter 1. Cost was ~$0.80 for those
-three. The remaining 15 chapters still carry the older macOS `say` recording.
+The generators write `.m4a` files locally; the site plays them from the
+Supabase Storage bucket `narration-audio` (moved off Vercel 2026-09-22 — the
+audio was ~355MB per deployment). **A newly generated file is not live until
+it is uploaded to `narration-audio/narration/<same filename>`**, overwriting
+the old object. Bucket state on 2026-10-07: preface through chapter 5 uploaded
+2026-10-07, chapters 6–16 uploaded 2026-09-29. The CSP `media-src` must allow
+`https://*.supabase.co` or every player is blocked (fixed in `next.config.ts`
+2026-10-07).
 
 Cost model: **one-time per generation.** The `.m4a` files are static assets —
 listeners cost nothing, there is no per-play fee, and nothing regenerates
