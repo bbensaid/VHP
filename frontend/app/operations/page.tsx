@@ -1,13 +1,14 @@
+import type { Metadata } from "next";
+import { brandedMetadata } from "@/lib/brand-server";
 import Link from "next/link";
 import FromTheBookForPillar from "@/components/FromTheBookForPillar";
 import CoursesInPillar from "@/components/CoursesInPillar";
 import LatestHubReports from "@/components/LatestHubReports";
 import RelatedEditorial from "@/components/RelatedEditorial";
 
-export const metadata = {
-  title: "Operations | Health Transformation Review",
-  description: "Healthcare operations intelligence covering revenue cycle management, workforce strategy, quality and compliance, supply chain, and payer network operations.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return brandedMetadata("Operations", "Healthcare operations intelligence covering revenue cycle management, workforce strategy, quality and compliance, supply chain, and payer network operations.");
+}
 
 const subpages = [
   {

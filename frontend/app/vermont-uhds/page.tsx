@@ -1,11 +1,11 @@
+import type { Metadata } from "next";
+import { brandedMetadata } from "@/lib/brand-server";
 import Link from "next/link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
-export const metadata = {
-  title: "Vermont Unified Health Data Space (UHDS) | Health Transformation Review",
-  description:
-    "Vermont's VHIE-to-UHDS transition — the second-generation health data infrastructure merging clinical, claims, and SDOH data into one longitudinal record, operated as a Health Data Utility. Architecture, privacy model, financing, and the 2025–2030 roadmap.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return brandedMetadata("Vermont Unified Health Data Space (UHDS)", "Vermont's VHIE-to-UHDS transition — the second-generation health data infrastructure merging clinical, claims, and SDOH data into one longitudinal record, operated as a Health Data Utility. Architecture, privacy model, financing, and the 2025–2030 roadmap.");
+}
 
 function SectionHeader({ label, title }: { label: string; title: string }) {
   return (

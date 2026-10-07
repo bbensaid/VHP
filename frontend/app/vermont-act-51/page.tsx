@@ -1,12 +1,12 @@
+import type { Metadata } from "next";
+import { brandedMetadata } from "@/lib/brand-server";
 import Link from "next/link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import VermontReformCascade from "@/components/VermontReformCascade";
 
-export const metadata = {
-  title: "Vermont Act 51 (2023) | Health Transformation Review",
-  description:
-    "Vermont Act 51 of 2023 (H.206) — the planning step between Act 167's diagnosis and Act 68's mandate. Authorized AHS transformation planning with up to four hospitals, alongside Medicaid, dental, FQHC, and Blueprint for Health changes.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return brandedMetadata("Vermont Act 51 (2023)", "Vermont Act 51 of 2023 (H.206) — the planning step between Act 167's diagnosis and Act 68's mandate. Authorized AHS transformation planning with up to four hospitals, alongside Medicaid, dental, FQHC, and Blueprint for Health changes.");
+}
 
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (

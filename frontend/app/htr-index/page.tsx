@@ -1,10 +1,11 @@
+import type { Metadata } from "next";
+import { brandedMetadata } from "@/lib/brand-server";
 // app/htr-index/page.tsx
 import Link from "next/link";
 
-export const metadata = {
-  title: "HTR Index Methodology | Health Transformation Review",
-  description: "The composite measure of healthcare system sustainability.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return brandedMetadata("HTR Index Methodology", "The composite measure of healthcare system sustainability.");
+}
 
 const MethodologyPage = () => {
   return (

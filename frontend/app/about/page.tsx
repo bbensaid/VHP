@@ -1,9 +1,10 @@
+import type { Metadata } from "next";
+import { brandedMetadata } from "@/lib/brand-server";
 import Link from "next/link";
 
-export const metadata = {
-  title: "About HTR | Health Transformation Review",
-  description: "HTR is an independent intelligence platform for healthcare transformation leaders — grounded in the Five-Pillar Framework of Policy, Technology, Economics, Clinical, and Operations, each held to the Equity Imperative.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return brandedMetadata("About HTR", "HTR is an independent intelligence platform for healthcare transformation leaders — grounded in the Five-Pillar Framework of Policy, Technology, Economics, Clinical, and Operations, each held to the Equity Imperative.");
+}
 
 const pillars = [
   {

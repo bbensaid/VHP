@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { brandedMetadata } from "@/lib/brand-server";
 import Link from 'next/link'
 import {
   CodeBracketIcon,
@@ -8,8 +10,8 @@ import {
   HeartIcon,
 } from '@heroicons/react/24/outline'
 
-export const metadata = {
-  title: 'Setup | Health Transformation Review',
+export async function generateMetadata(): Promise<Metadata> {
+  return brandedMetadata("Setup", "Platform setup pages: mission, values, pricing, and site configuration.", { noIndex: true });
 }
 
 const PAGES = [
