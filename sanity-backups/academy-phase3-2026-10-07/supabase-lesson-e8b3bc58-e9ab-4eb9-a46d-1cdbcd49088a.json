@@ -1,0 +1,187 @@
+{
+ "id": "e8b3bc58-e9ab-4eb9-a46d-1cdbcd49088a",
+ "track_id": "62e1ae57-8462-45e6-b7be-1f7d63b6769b",
+ "pillar": "general",
+ "order": 23,
+ "slug": "knowledge-infrastructure-technical-assistance",
+ "title": "Knowledge Infrastructure and Technical Assistance",
+ "summary": "Why knowledge without implementation infrastructure produces nothing, using Vermont's Rural Health Redesign Center engagement as the working model for technical assistance, and two national learning-collaborative models -- IHI's Breakthrough Series and CMS's Transforming Clinical Practice Initiative -- as evidence the pattern generalizes. Covers Kotter's change-management framework adapted for a clinical, regulated institution.",
+ "estimated_minutes": 20,
+ "objectives": [
+  {
+   "id": "obj_5p23a",
+   "text": "Explain the claim that knowledge without implementation infrastructure produces nothing, and identify the generic implementation layer -- program management, technical assistance, learning collaboratives, change management -- that sits underneath every pillar in every state."
+  },
+  {
+   "id": "obj_5p23b",
+   "text": "Describe the Rural Health Redesign Center's integrated technical-assistance model and explain why combining assessment, change management, and plan development in one engagement was a deliberate design choice, not a scope convenience."
+  },
+  {
+   "id": "obj_5p23c",
+   "text": "State the design principle that separates time-limited capacity-building from permanent advisory dependence, and identify the evidence Vermont used to tell the two apart."
+  },
+  {
+   "id": "obj_5p23d",
+   "text": "Apply Kotter's change-management framework to a technical-assistance engagement, including where healthcare's institutional characteristics require adapting the original model."
+  }
+ ],
+ "content_blocks": [
+  {
+   "body": "The frameworks this course has taught are, by themselves, insufficient for transformation. Understanding why a hospital system is financially fragile does not stabilize it. Understanding the mechanics of a global budget does not implement one. Knowing that stratified quality data reveals a disparity does not close it. Every concept this course covers exists at an intersection: understanding it clearly enough to explain it, and translating it into a specific decision, program, contract, or investment in a specific organization. This lesson is about the second half of that intersection.\n\nHealthcare transformation fails more often from change-management failure than from analytical failure. The evidence base for what needs to change is usually adequate and consistent. What fails is the organizational process -- the sequence, pace, and management of the human and institutional change that structural reform requires.",
+   "type": "text",
+   "heading": "The Gap Between Understanding and Doing"
+  },
+  {
+   "body": "The capacity to help an organization execute -- a program-management function, structured advisory support, a change-management discipline -- is the generic implementation layer underneath every pillar, in every state. It has no signature deliverable of its own, which is exactly why it is the most chronically under-resourced piece of any transformation.\n\nTreating it as overhead gets the accounting backwards. Vermont's Oliver Wyman analysis found that hospitals can absorb financial analysis without changing behavior, engage in planning processes that produce documents rather than action, and participate in change-management programs without addressing their underlying financial unsustainability. Technical assistance that combines assessment, change management, and plan development is what prevents each of those three failure modes; an organization that receives only one of the three usually reproduces the failure the other two were meant to catch.",
+   "type": "text",
+   "heading": "Why Technical Assistance Is a Pillar-Level Asset, Not Overhead"
+  },
+  {
+   "body": "The Rural Health Redesign Center (RHRC) was AHS's primary contractor for hospital transformation planning from spring 2025 through October 2025, working with all fourteen Vermont hospitals. RHRC's engagement combined financial and operational assessment, change-management support, and transformation-plan development -- three functions most consulting engagements deliver separately, and that Oliver Wyman's own experience had shown fail when kept apart.\n\nUnderstanding this model matters beyond Vermont's specific history. Financially distressed rural hospital networks are a national problem, and RHRC's combined-function approach is a transferable answer to how a state agency provides technical assistance to them at scale.",
+   "type": "text",
+   "heading": "The RHRC Model: Combining Three Functions Usually Kept Separate"
+  },
+  {
+   "rows": [
+    {
+     "left": "Review hospital-specific cost data from GMCB financial records, CMS cost reports, and the NASHP Hospital Cost Tool; position the hospital against Vermont and national benchmarks on operating profit, admin cost, and labor cost per adjusted discharge.",
+     "label": "Financial and operational baseline",
+     "right": "This is the diagnostic Oliver Wyman found missing -- without it, hospitals negotiate transformation from opinion rather than evidence."
+    },
+    {
+     "left": "Work with hospital leadership to find the highest-leverage short-term cost opportunities (supply chain, staffing, service-line analysis) and medium-term ones (shared services, reconfiguration, COE alignment).",
+     "label": "Priority identification",
+     "right": "Prioritization done with the hospital, not handed to it -- the step that determines whether the plan is owned locally or shelved."
+    },
+    {
+     "left": "Support each hospital in mapping specific actions to timelines, costs, and Act 167's outcome objectives.",
+     "label": "Transformation plan development",
+     "right": "The deliverable a report-only engagement stops at. RHRC treated it as the midpoint, not the endpoint."
+    },
+    {
+     "left": "Connect hospital-level planning to statewide regional work -- checking that a hospital's plan is compatible with its neighbors' and surfacing shared-service opportunities across organizational boundaries.",
+     "label": "Regional coordination",
+     "right": "The workstream a single-hospital engagement structurally cannot deliver, and the reason a state-level contractor rather than fourteen separate consultants was the right design."
+    }
+   ],
+   "type": "comparison_table",
+   "heading": "RHRC's Four Workstreams at Each of Vermont's 14 Hospitals"
+  },
+  {
+   "type": "key_stat",
+   "stats": [
+    {
+     "label": "Average HCC coding gap at Vermont's critical access hospitals, identified in RHRC's 2025 assessment",
+     "value": "12%",
+     "source": "RHRC 2025 assessment, cited in AHS Transformation Reports"
+    },
+    {
+     "label": "Per-discharge operating-profit gap at Vermont critical access hospitals versus the 75th-percentile national benchmark ($938 actual vs. $2,784 benchmark) -- the signal RHRC's baseline work was built to surface",
+     "value": "$1,846",
+     "source": "AHS Health Care System Transformation Report, November 2025"
+    },
+    {
+     "label": "Vermont hospitals RHRC engaged for transformation planning between spring and October 2025",
+     "value": "14/14",
+     "source": "AHS Transformation Reports, 2025"
+    }
+   ]
+  },
+  {
+   "body": "RHRC's contract concluded in October 2025 -- a planned conclusion, not a termination. AHS designed the engagement as a time-limited capacity-building investment: the explicit goal was for hospitals to develop the internal planning capability and the inter-hospital relationships needed to continue transformation work independently, with AHS providing ongoing oversight, grant funding, and analytical support rather than direct technical assistance going forward.\n\nThis design answers a documented failure pattern in state transformation efforts: external, consultant-driven processes that do not build internal organizational capacity produce plans that expire when the consultant leaves. Vermont's sequence -- RHRC builds the planning process and the inter-hospital relationships, then AHS-led coordination takes over with hospital-level implementation -- is built specifically to avoid that outcome. Whether it actually does depends on what replaces RHRC; Vermont's own portfolio risk register flags 'RHRC engagement not replaced by an adequate successor' as a distinct, tracked risk for exactly this reason.",
+   "type": "text",
+   "heading": "A Planned Conclusion, Not a Dependency"
+  },
+  {
+   "body": "The most common advisory failure in healthcare transformation is engaging external consultants for analysis and stopping before implementation -- a report that produces recommendations without the organizational capacity to act on them, followed by a brief period of executive attention and then quiet shelving once operational demands consume the organization's bandwidth. The test for any technical-assistance engagement, RHRC included: does its planned end date coincide with the client having a capability it did not have before, or just with the contract running out?",
+   "type": "callout",
+   "heading": "The Design Principle: Build Capacity, Not Dependence",
+   "variant": "tip"
+  },
+  {
+   "body": "John Kotter's eight-step change-management framework, developed originally for corporate transformations, applies to healthcare system change with real modification. The adaptation that matters most: in healthcare, the guiding coalition (step 2) must include clinical leadership, not only administrative and financial leadership -- transformation that clinical leaders oppose fails regardless of the administrative mandate behind it. Vermont's own coalition -- AHS leadership, GMCB, hospital CEOs, and the legislature's Health Reform Oversight Committee -- has been assembled without systematically integrating hospital medical-staff governance, which the framework identifies as a live gap, not a footnote.\n\nThe other adaptation that matters: communicating the vision (step 4) in healthcare means calibrating the same message differently for clinical staff, administrators, community members, legislators, and payers -- a single communication strategy built for a corporate workforce does not transfer directly to a system with this many distinct audiences and this much regulatory scrutiny.",
+   "type": "text",
+   "heading": "Kotter's Eight Steps, Adapted for a Regulated, Clinical Institution"
+  },
+  {
+   "rows": [
+    {
+     "left": "Original formulation: build a shared sense that change is needed.",
+     "label": "Create urgency (Step 1)",
+     "right": "Vermont: Oliver Wyman's September 2024 public presentation of the financial data -- 9 of 14 hospitals in losses, a $2.4B five-year deficit -- created shared urgency because it was specific and credible, not because it was alarming."
+    },
+    {
+     "left": "Original formulation: clear barriers within the coalition's control.",
+     "label": "Remove obstacles (Step 5)",
+     "right": "Vermont: Acts 167 and 68 are institutional obstacle removal -- Act 68 eliminated RBP's voluntary status; the AHS restructuring removes the program-silo obstacle directly."
+    },
+    {
+     "left": "Original formulation: engineer visible early improvement.",
+     "label": "Create short-term wins (Step 6)",
+     "right": "Vermont: FY2026 regulatory actions ($230.65M in commercial revenue reductions) are the first visible win; premium-reduction data from RBP will not be available until FY2027-2028."
+    },
+    {
+     "left": "Original formulation: use early wins to drive deeper change.",
+     "label": "Sustain acceleration (Step 7)",
+     "right": "Vermont: the statutory mandate itself -- Act 68's December 2028 deadline -- is the mechanism, because momentum has to survive multiple election cycles and budget battles, not just one leadership tenure."
+    }
+   ],
+   "type": "comparison_table",
+   "heading": "Kotter's Framework, Applied"
+  },
+  {
+   "body": "One of the most consequential technical-assistance questions is pace: how fast can an organization or system realistically change, and what happens when the required pace exceeds available capacity? Vermont's statutory deadlines -- RBP by FY2027, global budgets by FY2028 -- set the required pace; whether organizational capacity can match it is the open execution question.\n\nThe pace problem has three distinct dimensions. Hard capacity constraints: if AHS lacks staff to manage 14 hospital transformation plans at once, the plans get managed sequentially, and some hospitals end up with rushed or superficial plans through no fault of their own. Soft capacity constraints: organizational cultures process change slowly, governing boards need to be educated before they can decide, and community buy-in that is not genuinely gathered gets politically reversed even when it is technically correct. External constraints: federal program timelines set by someone else (AHEAD's January 2028 launch is a federal decision, not Vermont's), hospital financial positions that can force emergency decisions preempting a planned timeline, and the political relationships a state's hospital community boards hold with legislators.",
+   "type": "text",
+   "heading": "The Transformation Pace Problem"
+  },
+  {
+   "body": "The HTR platform's four components -- The Wire, Research Lab, Academy, Advisory Services -- exist because knowledge and implementation infrastructure are two different things and both are required. Nearly forty interactive tools in the Research Lab implement the frameworks in this course; the Academy is the knowledge layer; Advisory Services is where technical assistance for a specific organization's decision gets delivered when internal capacity or bandwidth runs short.\n\nExternal advisory support earns its cost under specific conditions: the decision carries real financial or political risk and benefits from independent validation; the organization lacks specific technical expertise (FHIR implementation, HCC coding analysis, waiver negotiation) that would take longer to build internally than the decision timeline allows; the challenge involves multi-stakeholder dynamics that need a neutral facilitator; or the regulatory environment is moving faster than internal monitoring capacity can track. Most of the analytical frameworks in this course can be implemented by a capable internal team with access to the right tools -- external support is not the default, it is the answer to a specific capacity gap.",
+   "type": "text",
+   "heading": "The Platform as a Second Instance of the Same Principle"
+  },
+  {
+   "type": "key_stat",
+   "stats": [
+    {
+     "label": "Governance-evaluation length of the AI Clinical Governance Checklist, across six deployment lifecycle stages",
+     "value": "65-item",
+     "source": "HTR Implementation Toolkit"
+    },
+    {
+     "label": "Assessment scope of the VBC Transformation Readiness Assessment, across six domains",
+     "value": "30-dimension",
+     "source": "HTR Implementation Toolkit"
+    }
+   ]
+  },
+  {
+   "body": "RHRC is Vermont's instance of a much older and more general idea: that a learning collaborative or coordinated technical-assistance network can transfer implementation capability faster than any single organization could build it alone. The Institute for Healthcare Improvement's Breakthrough Series Collaborative model, developed in 1995, is the clearest national example. It brings a cohort of 12 to 160 organizational teams together for a defined six-to-fifteen-month period around one focused improvement topic, combining face-to-face learning sessions, Plan-Do-Study-Act improvement cycles, and ongoing technical assistance to each team between sessions. Documented Breakthrough Series results include 50 percent reductions in patient wait times and in hospitalizations for congestive heart failure, and 25 percent reductions in both ICU costs and staff absenteeism, across the collaboratives IHI has run since the model's introduction.\n\nCMS's Transforming Clinical Practice Initiative (TCPI) is the closer analogue to RHRC's scale and design, because it was government-funded technical assistance rather than a voluntary quality collaborative. Running from 2015 to 2019, CMS awarded $685 million to 29 Practice Transformation Networks and 10 Support and Alignment Networks to provide coaching and technical assistance to more than 140,000 clinicians nationally, preparing ambulatory practices to succeed under value-based payment. A peer-reviewed comparison of nearly 7,000 TCPI-enrolled practices against a matched comparison group found that TCPI practices enrolled in Medicare Alternative Payment Models -- including Advanced APMs -- at higher rates than the comparison group, with the effect holding across rural, small, and specialty practices.\n\nThe common thread across IHI's model, TCPI, and RHRC is not the specific topic or funding source. It is the same design choice: pair the knowledge transfer with hands-on, time-bounded technical assistance to the organizations trying to use it, rather than publishing the knowledge and assuming implementation follows. None of the three assumed a well-designed curriculum or toolkit was sufficient on its own.",
+   "type": "text",
+   "heading": "Beyond Vermont: Two National Models for Building Implementation Capacity at Scale"
+  },
+  {
+   "body": "An organization or state trying to replicate this does not need to hire a national consulting firm. It needs to answer four questions: who is doing the financial and operational baseline work, who is managing the change process with the people actually affected, who is turning the analysis into a plan with dates and owners attached, and who is coordinating that work across organizational boundaries so it does not happen in fourteen separate, uncoordinated versions. RHRC answered all four for Vermont's hospitals in one contract. A smaller organization can staff the same four functions with a mix of internal hires and time-limited outside help -- what matters is that all four exist somewhere, explicitly, with a named owner, rather than being assumed to happen as a side effect of good analysis.",
+   "type": "text",
+   "heading": "What This Means for Building the Function Yourself"
+  },
+  {
+   "body": "Chapter 12 argues that knowledge without implementation infrastructure produces nothing — the RHRC technical-assistance model is its case.\n\nRead it at /read/chapter-12.",
+   "type": "callout",
+   "heading": "From the Book — Chapter 12",
+   "variant": "info",
+   "_bookRef": true
+  }
+ ],
+ "tags": [
+  "technical-assistance",
+  "learning-collaboratives",
+  "knowledge-infrastructure",
+  "change-management",
+  "capacity-building"
+ ],
+ "related_lesson_ids": [],
+ "is_published": true,
+ "created_at": "2026-09-19T04:09:25.295728+00:00",
+ "updated_at": "2026-09-20T06:03:35.954708+00:00",
+ "sanity_slug": "knowledge-infrastructure-technical-assistance"
+}

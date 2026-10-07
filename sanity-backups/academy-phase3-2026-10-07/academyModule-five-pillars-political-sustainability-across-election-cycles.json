@@ -1,0 +1,961 @@
+{
+ "_createdAt": "2026-09-19T04:08:09Z",
+ "_id": "academyModule-five-pillars-political-sustainability-across-election-cycles",
+ "_rev": "cGE63aJqei6oB7VsSNsro1",
+ "_type": "academyModule",
+ "_updatedAt": "2026-09-19T04:08:09Z",
+ "body": [
+  {
+   "_key": "5ac87c0d0057",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "caa9d58f7b4b",
+     "_type": "span",
+     "marks": [],
+     "text": "Political Sustainability Is a Design Problem, Not Only a Political One"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "081cf5c4f580",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "9cf2d4a706f2",
+     "_type": "span",
+     "marks": [],
+     "text": "No state's reform statute is permanent. Act 68 exists because a legislature passed it and remains in force only as long as a legislature, a governor, and a regulator continue to enforce it. This is structural, not a Vermont vulnerability -- the same election-cycle, budget-battle, and provider-opposition dynamics apply to any state's reform statute, with different actors and different timelines."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "d8270840bf13",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "e4847679b365",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont's specific exposure in 2026: an annual legislature, a governor's race, a federal partner (CMS) whose priorities shift with each administration, and hospital systems whose finances are directly affected by reference-based pricing. Any of these actors, alone or together, can modify, weaken, or delay Act 68's mandatory architecture."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "13c3038d0f9b",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "501d6f861edf",
+     "_type": "span",
+     "marks": [],
+     "text": "Treating this analytically means separating what is structurally durable from what is politically exposed, learning the early-warning signals before they become legislative action, and knowing what an organization can do to protect a multi-year investment predicated on policy continuity. This is risk management, not advocacy."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "91af19b3032b",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "2ab8f20550e1",
+     "_type": "span",
+     "marks": [],
+     "text": "What's Hard to Reverse"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "db6554115684",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b1171959397e",
+     "_type": "span",
+     "marks": [],
+     "text": "Federal agreements. The AHEAD State Agreement, signed with CMS in January 2025, is a binding federal-state agreement with a nine-year performance period. Reversal requires CMS consent and forfeits enhanced PMPM payments and capital."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "b69fbc92b0ac",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "ec27fb5f6e4e",
+     "_type": "span",
+     "marks": [],
+     "text": "Capital already committed. The Rural Health Transformation Program's roughly $195 million a year for five years is federal capital already flowing into Vermont's system. The CIN infrastructure, IT upgrades, and analytics platforms it buys create constituencies for their own continuation once built."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "e25b6ae5a0ff",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "0c98f1be4f99",
+     "_type": "span",
+     "marks": [],
+     "text": "The reform cascade. Act 167, Act 51, and Act 68 built legitimacy incrementally; each act created institutions -- the Health Care Delivery Advisory Committee, expanded GMCB authority, the AHS HSA-coordinator model -- that are now constituencies for the next reform. Dismantling Act 68 would mean dismantling those institutions too."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "a2de7ba5b19c",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "afb9471e4f0c",
+     "_type": "span",
+     "marks": [],
+     "text": "The financial crisis itself. Oliver Wyman's projection of 13 of 14 hospitals in operating losses by 2028 does not disappear if Act 68 is weakened. The case for transformation rests on a reality that is not politically manufactured."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "c331df69a957",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "2ccb368b034f",
+     "_type": "span",
+     "marks": [],
+     "text": "What's Politically Exposed"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "f7425f3f7e03",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "a910ddf69506",
+     "_type": "span",
+     "marks": [],
+     "text": "RBP methodology. RBP is mandatory from FY2027, but the methodology that sets reference prices is a GMCB regulatory determination -- it can be set so reference prices sit close to current commercial rates, or with exemptions broad enough that little repricing actually happens. Hospital lobbying targets the methodology, not the mandate itself."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "8272a9b53f26",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "830ac2752884",
+     "_type": "span",
+     "marks": [],
+     "text": "Global-budget levels. Act 68 requires global budgets from FY2028, but GMCB sets the levels. Budgets calibrated to require no behavioral change produce no transformation. The risk here is not repeal -- it is the appearance of accountability without its substance."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "6a303366c919",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "6a30d443b312",
+     "_type": "span",
+     "marks": [],
+     "text": "Strategic Plan scope. Act 68 requires the December 2028 plan but does not fully specify its content. A plan that is descriptive rather than committal satisfies the statute while producing none of the intended outcomes -- the most politically convenient failure mode."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "0de206490b0b",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "4d3ecf9ec2c4",
+     "_type": "span",
+     "marks": [],
+     "text": "Federal Medicaid funding. H.R. 1's $911 billion in Medicaid cuts, enacted in July 2025, pressure Vermont's transformation financing directly, since EAST Fund investments are partly financed through enhanced federal PMPM payments."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "d552c4cd587c",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "44fe7963b01f",
+     "_type": "span",
+     "marks": [],
+     "text": "Durable vs. Exposed -- Reading Vermont's Own Architecture"
+    }
+   ],
+   "markDefs": [],
+   "style": "h4"
+  },
+  {
+   "_key": "534da6f3447f",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "d52cf50629eb",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Federal agreement \u2014 "
+    },
+    {
+     "_key": "4aad3eaceb80",
+     "_type": "span",
+     "marks": [],
+     "text": "AHEAD State Agreement (January 2025): nine-year performance period, CMS consent required to exit. \u2192 Its methodology and total-cost-of-care targets are negotiated year to year -- durable in form, adjustable in substance."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "e04d8277b72a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "797a8449be7f",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Statutory deadline \u2014 "
+    },
+    {
+     "_key": "66afdd5f1fb6",
+     "_type": "span",
+     "marks": [],
+     "text": "RBP (FY2027) and global budgets (FY2028) are mandatory by statute. \u2192 The regulatory methodology setting the actual price and budget levels is not fixed by statute -- this is where a mandate can be hollowed out."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "0d1cba174b8d",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "59217546d9f1",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Capital \u2014 "
+    },
+    {
+     "_key": "575b95d0d875",
+     "_type": "span",
+     "marks": [],
+     "text": "$195M a year in RHT Program funding already committed and flowing. \u2192 EAST Fund spending levels and the December 2028 Strategic Plan's actual content remain discretionary in practice, even where required in form."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "f7ef140d0594",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "b1942286a8e8",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Institutions \u2014 "
+    },
+    {
+     "_key": "b2c79869973f",
+     "_type": "span",
+     "marks": [],
+     "text": "GMCB's expanded authority, the HCAC, and the AHS HSA-coordinator model -- each created by a prior act, each now a constituency. \u2192 The staff and resources given to those institutions are annual budget decisions, made fresh every year."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "d1b1fda336ba",
+   "_type": "statGrid",
+   "stats": [
+    {
+     "_key": "2dfcc03d6a85",
+     "context": "Source: Green Mountain Care Board FY23 enforcement record",
+     "label": "UVMMC's FY23 budget overage that triggered GMCB's first hospital enforcement action in Vermont regulatory history",
+     "value": "$80.3M"
+    },
+    {
+     "_key": "f6be99532e82",
+     "context": "Source: Green Mountain Care Board FY23 enforcement record",
+     "label": "Rutland Regional Medical Center's simultaneous FY23 overage and enforcement action",
+     "value": "$11.1M"
+    }
+   ]
+  },
+  {
+   "_key": "2143d3a4e8b3",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "bd9192ef9250",
+     "_type": "span",
+     "marks": [],
+     "text": "The UVMMC Test Case: What 'Mandatory' Actually Means"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "724873fa6259",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "2cde07004029",
+     "_type": "span",
+     "marks": [],
+     "text": "A mandatory regime is only as real as its enforcement. Act 68 gives GMCB subpoena authority and data-sharing power with the Department of Financial Regulation. GMCB's FY23 enforcement actions against UVMMC ($80.3 million overage) and Rutland Regional Medical Center ($11.1 million overage) were the first such actions in Vermont's regulatory history."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "5a06f2f7e1cb",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "909818b7fe0b",
+     "_type": "span",
+     "marks": [],
+     "text": "UVMMC -- Vermont's largest, most politically influential hospital system -- challenged that enforcement in court. The challenge was decided against UVMMC, and the ruling did not turn on a narrow technicality that leaves the broader question open; GMCB's core enforcement authority was upheld."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "274fa285303e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "743abda23241",
+     "_type": "span",
+     "marks": [],
+     "text": "Three things follow. First, GMCB's corrective-action and budget-order mechanisms are now judicially tested, not merely statutory -- a materially stronger form of 'mandatory' than untested authority. Second, the precedent was set against the largest and most capable potential challenger, and it went against the hospital. Third, for any hospital weighing noncompliance heading into the FY2027-2028 transition, the 'we'll fight it in court and win' branch is now foreclosed by precedent, not just by statute."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "adf2088cf8cf",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "9042297c26a8",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Why a Tested Precedent Outranks an Untested Statute\n"
+    },
+    {
+     "_key": "b0eb10f28c6a",
+     "_type": "span",
+     "marks": [],
+     "text": "A statute never enforced against a determined, well-resourced opponent is a hypothesis about what 'mandatory' means. UVMMC v. GMCB is the test: the state's largest, most capable hospital system challenged the regulator directly and lost. That is the strongest available evidence that Vermont's mandatory architecture is real rather than aspirational -- and it is exactly the kind of evidence a reader should look for before assuming any other state's 'mandatory' reform will hold."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  },
+  {
+   "_key": "56ff9130df2e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "af8fd9f33088",
+     "_type": "span",
+     "marks": [],
+     "text": "Early-Warning Signals and What They Indicate"
+    }
+   ],
+   "markDefs": [],
+   "style": "h4"
+  },
+  {
+   "_key": "02a2b9afe6fa",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "db07d4a99c88",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Hospital lobbying focused on methodology, not the mandate \u2014 "
+    },
+    {
+     "_key": "e651a8fda507",
+     "_type": "span",
+     "marks": [],
+     "text": "Indicates an effort to hollow out RBP through the regulatory process rather than repeal it outright. \u2192 Severity: High. Monitor the GMCB docket and hospital-association statements."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "3a22262beb32",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "c4483c1c40b5",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Bills to extend RBP or global-budget deadlines \u2014 "
+    },
+    {
+     "_key": "11e8a9140826",
+     "_type": "span",
+     "marks": [],
+     "text": "Indicates a direct challenge to the statutory timeline itself. \u2192 Severity: Very High. Monitor the legislative bill tracker and HCAC testimony."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "9cba14449f2e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "1163263b8ed3",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Global-budget levels set within 5% of current commercial rates \u2014 "
+    },
+    {
+     "_key": "1b65bad23d40",
+     "_type": "span",
+     "marks": [],
+     "text": "Indicates regulatory capture -- budgets that exist on paper without producing real pressure. \u2192 Severity: High. Monitor GMCB's FY2028 budget guidance."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "e2d8d2c5a67e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "f7827eceaeaa",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "December 2028 plan still 'in progress' in November 2028 reports \u2014 "
+    },
+    {
+     "_key": "223ef4f1accd",
+     "_type": "span",
+     "marks": [],
+     "text": "Indicates an operations failure, with the deadline unlikely to be met. \u2192 Severity: High. Monitor AHS monthly transformation reports."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "a65290205eed",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "08de568e8a4d",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Governor-candidate platforms proposing RBP repeal or delay \u2014 "
+    },
+    {
+     "_key": "ab55d5430edb",
+     "_type": "span",
+     "marks": [],
+     "text": "Indicates a direct political threat to the mandatory architecture inside a live election cycle. \u2192 Severity: Very High. Monitor campaign coverage and candidate policy statements."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "c8a70c4505be",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "9385027b7617",
+     "_type": "span",
+     "marks": [],
+     "text": "Four Strategies for Operating Inside Political Risk"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "dd854a80c9e0",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "80d1311fecba",
+     "_type": "span",
+     "marks": [],
+     "text": "Build investments that are hard to reverse. An organization that hires the staff, builds the workflows, and stands up the data infrastructure creates facts on the ground that survive a change in the political environment -- a hospital that completes NCQA PCMH recognition, or deploys the Collaborative Care Model, holds a capability that produces value under any payment model, not only under AHEAD's specific design."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "53963897634e",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "2755980a4a6b",
+     "_type": "span",
+     "marks": [],
+     "text": "Engage the regulatory process early and substantively. RBP methodology and global-budget levels are set through GMCB's rulemaking. Organizations that show up with real financial data and model the impact of specific methodology choices shape outcomes more than those that engage only through public opposition."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "cd161b495b82",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "2bcd08e72f79",
+     "_type": "span",
+     "marks": [],
+     "text": "Maintain scenario plans for disruption. Every organization with AHEAD exposure should model at least three scenarios: RBP delayed 18-plus months, global-budget levels set 10 percent or more above current commercial rates, and EAST Fund cuts of 30 percent or more. These are planning inputs, not predictions -- the point is to prioritize investments that hold value across all three."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "84bc65eed6dd",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "9defa94a31f0",
+     "_type": "span",
+     "marks": [],
+     "text": "Document and communicate progress. AHS's monthly transformation reports, required by Act 68, are the primary vehicle for demonstrating that transformation is working. Political protection ultimately rests on evidence, not argument."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "b2179dab588a",
+   "_type": "statGrid",
+   "stats": [
+    {
+     "_key": "727ba2a9c36c",
+     "context": "Source: HTR Advisory political-risk assessment, April 2026",
+     "label": "HTR's assessed probability of a 30%+ EAST Fund cut, driven by H.R. 1's federal Medicaid reductions -- the single highest-probability disruption scenario on Vermont's political risk register",
+     "value": "35-45%"
+    },
+    {
+     "_key": "6d009f53c8f7",
+     "context": "Source: HTR Advisory political-risk assessment, April 2026",
+     "label": "Assessed probability that a 2026 governor is elected committed to Act 68 modification",
+     "value": "10-15%"
+    }
+   ]
+  },
+  {
+   "_key": "5e42410f723d",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "5da2e04da5a1",
+     "_type": "span",
+     "marks": [],
+     "text": "Two Reform Designs, Two Different Encounters With a Political Transition"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "4e152db89f4c",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "0822e603f800",
+     "_type": "span",
+     "marks": [],
+     "text": "Maryland's Health Services Cost Review Commission (HSCRC) is the most direct national comparison to GMCB, and its history is the clearest evidence that an independent regulator with statutory rate-setting authority is a durable design. The Maryland legislature created the HSCRC in 1971; in 1977 Maryland became the first of five states granted a federal waiver letting Medicare and Medicaid pay Maryland hospitals at HSCRC-approved rates. That all-payer rate-setting system has operated continuously across Republican and Democratic governors for close to five decades -- the only state system of its kind to survive that long, according to health-policy researchers who have studied why it persisted where comparable efforts elsewhere were repealed."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "a3d416b7261a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "94139122b530",
+     "_type": "span",
+     "marks": [],
+     "text": "Arkansas's Medicaid expansion shows the opposite design. Enacted in 2013 as the 'private option' under the Health Care Independence Act, it used Medicaid funds to buy private marketplace coverage rather than expanding Medicaid directly -- a compromise built to survive a Republican-controlled legislature. The compromise carried a structural cost: the program's budget requires a three-fourths supermajority vote in both legislative chambers every single year. For over a decade it won that vote, sometimes narrowly, against annual attempts to kill it."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "9f23764fb40a",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "bb3e8066d49d",
+     "_type": "span",
+     "marks": [],
+     "text": "In July 2026, the mechanism that had protected the program from the state legislature failed to protect it from a federal transition. CMS rejected Arkansas's request to renew the program's federal waiver -- now operating as ARHOME, covering roughly 202,000 people -- on the grounds that it no longer met the budget-neutrality requirements imposed by the One Big Beautiful Bill Act. The waiver expires December 31, 2026; Arkansas is asking CMS for a two-year extension to manage the transition. A program that survived thirteen consecutive years of the toughest state legislative test failed the first federal administration change that mattered."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "9d8c196a416d",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "df93a4e5e4e2",
+     "_type": "span",
+     "marks": [],
+     "text": "What Made the Difference"
+    }
+   ],
+   "markDefs": [],
+   "style": "h4"
+  },
+  {
+   "_key": "86cb5974dba2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "4d6910827f68",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Legal basis \u2014 "
+    },
+    {
+     "_key": "8bf5fc9b9b90",
+     "_type": "span",
+     "marks": [],
+     "text": "Maryland HSCRC: a permanent statute creating an independent commission with rate-setting authority, reinforced by a federal Medicare/Medicaid waiver. \u2192 Arkansas ARHOME: a federal Section 1115 demonstration waiver requiring periodic federal renewal, paired with an annual state supermajority budget vote."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "867d7a9e05b3",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "dcd9b13944bb",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Renewal exposure \u2014 "
+    },
+    {
+     "_key": "3ffc8c561bc3",
+     "_type": "span",
+     "marks": [],
+     "text": "Maryland: no annual renewal vote required; the commission operates continuously under its founding statute. \u2192 Arkansas: exposed twice a year to two independent veto points -- the legislature's three-fourths vote and CMS's waiver-renewal discretion."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "bb2c79e10ba6",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "e703c5cb871e",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "What a political transition changed \u2014 "
+    },
+    {
+     "_key": "cf5161442610",
+     "_type": "span",
+     "marks": [],
+     "text": "Maryland: governors of both parties have left the HSCRC's core authority untouched since 1971. \u2192 Arkansas: a change in federal administration priorities (OBBBA budget-neutrality rules) ended a program the state legislature had voted to keep every single year."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "cc7eb1a36316",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "7c555e48d3f3",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Vermont's equivalent choice \u2014 "
+    },
+    {
+     "_key": "1c50e0623107",
+     "_type": "span",
+     "marks": [],
+     "text": "GMCB's authority is statutory and has been judicially tested (UVMMC) -- closer to Maryland's design. \u2192 AHEAD's federal agreement still requires ongoing CMS negotiation -- closer to Arkansas's exposure, which is why a CMS AHEAD waiver-modification request is flagged as a 'Very High' severity signal."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "bc24b5255657",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "5126698f9ca5",
+     "_type": "span",
+     "marks": [],
+     "text": "The Reform Cascade as Political-Sustainability Architecture"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "933019332082",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "77d1eb184619",
+     "_type": "span",
+     "marks": [],
+     "text": "Vermont's Act 167 to Act 51 to Act 68 sequence is itself a sustainability design, not just a legislative history. Act 167's 230-plus public meetings and 3,100-plus participants created legitimacy for Act 68's mandates by making the crisis visible and involving the communities affected. Communities that helped diagnose their own system's problems are harder to convince the problems do not exist."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "864e2a6daa62",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "ad4d01ee472c",
+     "_type": "span",
+     "marks": [],
+     "text": "Act 68 adds a second feature: it makes failure visible. Monthly legislative reports, quarterly GMCB rate-setting updates, and the December 2028 deadline create continuous public accountability -- if the mandate is weakened, the weakening shows up in public reporting, which makes deliberate erosion politically costly rather than quiet."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "f11cfdc28feb",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "5c7fc78a7940",
+     "_type": "span",
+     "marks": [],
+     "text": "The transferable lesson for any state: diagnosis before legislation, public process before mandate, incremental capacity-building before full accountability, and continuous public reporting that makes both progress and failure equally visible. States that attempt the whole architecture in one bill hand opponents a single target instead of three."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "d4beefcca64b",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "780c6148fff2",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "Political Support and Political Sustainability Are Not the Same Thing\n"
+    },
+    {
+     "_key": "6c93c624a420",
+     "_type": "span",
+     "marks": [],
+     "text": "A reform can lose majority support and remain structurally durable if it has built sufficient institutional and organizational constituencies -- that is Maryland's HSCRC, which has outlasted the popularity of any single governor who has overseen it. The inverse is also true: a reform can be popular today and structurally fragile, if it depends on an annual vote or a discretionary federal waiver rather than a permanent statute. Arkansas's program was popular enough to win its legislative vote every year for over a decade. It was not durable, because durability was never where the design put the protection."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  },
+  {
+   "_key": "3822129c2983",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "ad1d339b91a0",
+     "_type": "span",
+     "marks": [],
+     "text": "What This Means for a Multi-Year Investment"
+    }
+   ],
+   "markDefs": [],
+   "style": "h3"
+  },
+  {
+   "_key": "f09c39df26d6",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "dc96b7b1d151",
+     "_type": "span",
+     "marks": [],
+     "text": "If your organization's capital plan depends on a policy landing on a specific date -- global budgets in FY2028, a federal model's cohort expansion, a state's continued Medicaid waiver -- the practical question is not whether you support the policy. It is what you do if the date moves, and how much lead time you will actually have."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "66e393a57fb9",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "ff513fadbef1",
+     "_type": "span",
+     "marks": [],
+     "text": "The early-warning signals in this lesson are worth tracking for exactly that reason: not because you can influence a GMCB rulemaking docket or a CMS waiver decision from outside government, but because watching them is how you convert political uncertainty into planning lead time instead of a surprise."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "663bcf873aa1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "7764b516d38d",
+     "_type": "span",
+     "marks": [
+      "strong"
+     ],
+     "text": "From the Book \u2014 Chapter 14\n"
+    },
+    {
+     "_key": "00e9355e42c7",
+     "_type": "span",
+     "marks": [],
+     "text": "Chapter 14 covers political sustainability across election cycles, including the UVMMC challenge to GMCB enforcement.\n\nRead it at /read/chapter-14."
+    }
+   ],
+   "markDefs": [],
+   "style": "callout"
+  }
+ ],
+ "courseTitle": "Five Pillars, One Imperative",
+ "estimatedReadTime": 20,
+ "learningObjectives": [
+  "Distinguish which elements of a reform architecture are structurally durable -- hard to reverse regardless of who holds office -- from which are politically exposed, using Vermont's Act 68 as the working model.",
+  "Explain why a statutory mandate enforced by an independent regulator with tested authority survives a change of administration in a way that executive discretion or a voluntary commitment does not.",
+  "Identify the early-warning signals that a mandate is being hollowed out through regulatory or budgetary means rather than repealed outright.",
+  "Compare a durable reform design to a fragile one using two real, non-Vermont cases, and state precisely what made the difference."
+ ],
+ "level": "Advanced",
+ "moduleNumber": 22,
+ "nextModuleSlug": "knowledge-infrastructure-technical-assistance",
+ "pillar": "All",
+ "prevModuleSlug": "transformation-as-portfolio-management",
+ "slug": {
+  "_type": "slug",
+  "current": "political-sustainability-across-election-cycles"
+ },
+ "summary": "Why a transformation that depends on continuous political will is fragile, and what makes a reform architecture durable instead -- statutory mandates rather than executive discretion, enforcement authority tested against a real challenge, and early-warning signals that a mandate is being softened rather than repealed. Uses Vermont's UVMMC enforcement case and a contrasting pair of non-Vermont examples.",
+ "title": "Political Sustainability Across Election Cycles",
+ "totalModules": 24
+}

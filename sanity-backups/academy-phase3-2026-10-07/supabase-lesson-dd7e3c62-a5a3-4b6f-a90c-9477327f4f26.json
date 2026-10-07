@@ -1,0 +1,173 @@
+{
+ "id": "dd7e3c62-a5a3-4b6f-a90c-9477327f4f26",
+ "track_id": "0f8b647d-f2f3-401f-8928-827cc0ff6030",
+ "pillar": "policy",
+ "order": 8,
+ "slug": "cmmi-waivers-federal-state-interface",
+ "title": "CMMI Models, Waivers, and the Federal–State Interface",
+ "summary": "Section 1115 waivers and CMMI models are negotiated instruments, not applications, and both are bounded by what a state can legally compel. This lesson covers budget neutrality, the ERISA ceiling established by Gobeille v. Liberty Mutual, and Vermont's January 2025 AHEAD agreement and July 2026 withdrawal as a worked case of federal model risk.",
+ "estimated_minutes": 25,
+ "objectives": [
+  {
+   "id": "obj_5p8a",
+   "text": "Describe what Section 1115 authority permits, how a waiver is negotiated, and why budget neutrality is the binding constraint"
+  },
+  {
+   "id": "obj_5p8b",
+   "text": "Explain the ERISA limit on state authority established by Gobeille v. Liberty Mutual (2016) and the narrower reading Rutledge v. PCMA (2020) left in place"
+  },
+  {
+   "id": "obj_5p8c",
+   "text": "Identify the four design features that separate CMMI models that produce results from those that do not"
+  },
+  {
+   "id": "obj_5p8d",
+   "text": "Use Vermont's AHEAD signature and withdrawal to assess federal model risk in a state transformation strategy"
+  }
+ ],
+ "content_blocks": [
+  {
+   "body": "A state statute and the federal policy environment are different things, and the gap between them is where most reform agendas lose momentum. Vermont can direct the Green Mountain Care Board to set maximum hospital payments by rule. It cannot direct Medicare to pay them, it cannot compel a self-insured employer plan to report claims into its database, and it cannot spend federal Medicaid dollars on a benefit the state plan does not authorize.\n\nThree federal-facing instruments bridge that gap: Section 1115 Medicaid demonstration waivers, CMMI model agreements, and federal rulemaking a state can influence but not control. Each amplifies state authority in a specific direction and each carries conditions.\n\nThe practical skill is knowing, for any given reform objective, which of three categories it falls into: things the state can do on its own authority, things it can do only with federal agreement, and things it cannot do at all because a higher law forecloses them. Misclassifying an objective is expensive. Vermont has done all three, and this lesson works through each.",
+   "type": "text",
+   "heading": "Two sovereigns, one delivery system"
+  },
+  {
+   "body": "Section 1115 of the Social Security Act gives the Secretary of Health and Human Services authority to waive certain Medicaid requirements and to provide federal matching funds for experimental, pilot or demonstration projects that promote the objectives of the program. It is the most powerful federal tool a state has for Medicaid reform, because it lets a state build a program that standard federal rules would not permit.\n\nIn practice states use 1115 authority for four families of things. Coverage expansions beyond standard eligibility categories and benefit structures. Delivery system and payment reform — global budgets, ACO arrangements and alternative payment models that standard fee-for-service or managed care rules do not accommodate. Health-related social needs services, which CMS has permitted since 2021 for enrollees at risk of institutionalization or with complex social needs, including housing supports, food assistance and transportation. And, since H.R. 1 of 2025 resolved the prior legal uncertainty in favor of state authority, work and community engagement requirements for expansion adults.\n\nVermont's primary vehicle is the Global Commitment to Health demonstration, originally approved in 2005 and renewed and amended repeatedly since. It is the authority under which Vermont operates Medicaid hospital global budgets and extends benefits beyond standard state plan requirements. A state without an established 1115 demonstration is starting the Policy pillar's federal work from zero.",
+   "type": "text",
+   "heading": "Section 1115 — what the authority actually is"
+  },
+  {
+   "body": "The most common misconception about 1115 waivers is that they are applications CMS approves or denies against a checklist. They are not. They are the product of sustained negotiation in which the state advocates for the design it wants and CMS negotiates conditions, monitoring requirements, evaluation obligations and financial protections.\n\nThis has a direct implication for how a state staffs the work. States that engage CMS early, as partners designing a demonstration, obtain better terms than states that submit a completed application and wait. The negotiating position is built from evidence — a state that can show what its own population costs, and what the demonstration would change, argues from data. A state that cannot, argues from assertion.",
+   "type": "text",
+   "heading": "Waivers are negotiated, not adjudicated"
+  },
+  {
+   "body": "Every 1115 waiver carries a budget neutrality requirement: the federal government will not spend more under the demonstration than it would have spent without it. The comparison is against a negotiated \"without-waiver\" baseline, and it must hold over the demonstration period.\n\nThe baseline is a counterfactual, which means it is inherently uncertain and therefore inherently contestable. What would Medicaid spending have been if the state had done nothing? Trend assumptions, population projections and per-capita growth caps are all negotiable, and small differences in those assumptions compound into large differences in what the state can afford to do. This is why budget neutrality methodology, not the policy content of the demonstration, is frequently the hardest part of a waiver negotiation.\n\nThe sequencing implication is the one that matters for the five-pillar framework. A state that cannot produce a credible total-cost-of-care baseline will negotiate from a weaker position — not a different negotiation, a worse one. Building the claims and analytics infrastructure to support that argument is a Technology pillar investment that pays off in the Policy pillar, and it is one more reason Technology precedes Economics in the execution sequence.",
+   "type": "text",
+   "heading": "Budget neutrality — the binding constraint"
+  },
+  {
+   "body": "An all-payer claims database, a total-cost-of-care measurement capability, and a documented risk-adjustment methodology. Vermont entered its federal negotiations with VHCURES. A state arriving without equivalents will accept CMS's baseline assumptions because it has no basis on which to propose different ones — and those assumptions will govern the demonstration's finances for years.",
+   "type": "callout",
+   "heading": "What to build before you negotiate",
+   "variant": "info"
+  },
+  {
+   "rows": [
+    {
+     "left": "State authority, where the legislature grants it",
+     "label": "Hospital rates in the commercial market",
+     "right": "Vermont's Act 68 directs GMCB to set maximum allowable payments by rule; Maryland's HSCRC has set rates since 1974"
+    },
+    {
+     "left": "State insurance regulation reaches them",
+     "label": "Fully insured commercial plans",
+     "right": "Rate review, benefit mandates and reporting requirements apply"
+    },
+    {
+     "left": "Largely beyond state reach",
+     "label": "Self-insured employer (ERISA) plans",
+     "right": "Gobeille v. Liberty Mutual (2016) held ERISA preempts state claims-reporting mandates as applied to self-funded plans"
+    },
+    {
+     "left": "State-administered within federal rules; expandable by waiver",
+     "label": "Medicaid",
+     "right": "Section 1115 demonstration authority, subject to budget neutrality"
+    },
+    {
+     "left": "No state authority",
+     "label": "Medicare fee-for-service",
+     "right": "Reachable only through a CMMI model agreement or a federal waiver, on CMS's terms and CMS's timeline"
+    }
+   ],
+   "type": "comparison_table",
+   "heading": "What a state can compel, and what it cannot"
+  },
+  {
+   "body": "On February 29, 2016, the Supreme Court decided *Gobeille v. Liberty Mutual Insurance Co.* by a vote of 6–2, in an opinion by Justice Kennedy. The Court held that ERISA preempts Vermont's law requiring health plans — including self-insured employer plans — to report claims data into the state's all-payer claims database. Reporting and disclosure are core ERISA functions, and a patchwork of differing state requirements would impose exactly the burden ERISA's preemption clause was written to prevent.\n\nThe practical consequence is structural and permanent, absent congressional action. Under KFF's 2025 Employer Health Benefits Survey, 67% of covered workers are in self-funded plans — 80% at large firms. A state operating an all-payer claims database cannot compel the claims of a majority of commercially covered workers into it. Gobeille does not prohibit voluntary contribution, and many plans do contribute; but voluntary is the operative word, and it returns the state to the participation-selection problem from the previous lesson.\n\nThis is why Oliver Wyman's perception-versus-reality analysis had to correct the belief that Vermont has an all-payer model. It does not, and no state statute can create one, because the gap was created by a federal decision about federal law. Understanding this is what separates a reform design that can actually be executed from one that assumes authority the state does not have.",
+   "type": "text",
+   "heading": "The ERISA ceiling — Gobeille v. Liberty Mutual (2016)"
+  },
+  {
+   "type": "key_stat",
+   "stats": [
+    {
+     "label": "Gobeille v. Liberty Mutual (February 29, 2016) — ERISA preempts state claims-reporting mandates as applied to self-insured plans",
+     "value": "6–2",
+     "source": "U.S. Supreme Court, 577 U.S. 312 (2016)"
+    },
+    {
+     "label": "Share of covered U.S. workers in self-funded health plans — 80% at large firms — largely beyond state reporting authority",
+     "value": "67%",
+     "source": "KFF Employer Health Benefits Survey, 2025"
+    },
+    {
+     "label": "Additional federal funds Vermont projected from AHEAD, versus the cap after CMS renegotiated the terms",
+     "value": "$138M → $10M",
+     "source": "Vermont Public and VTDigger reporting, July 2026, citing information provided to state lawmakers"
+    },
+    {
+     "label": "Arkansas adults who lost Medicaid coverage under the state's 1115 work-requirement demonstration before a federal court halted it",
+     "value": "18,000",
+     "source": "Sommers et al., New England Journal of Medicine, 2019; KFF"
+    }
+   ]
+  },
+  {
+   "body": "ERISA preemption is a ceiling on state authority, not a prohibition on state health policy, and the Court drew that line four years later. In *Rutledge v. Pharmaceutical Care Management Association*, decided December 10, 2020 by a vote of 8–0 in an opinion by Justice Sotomayor, the Court upheld Arkansas Act 900, which regulates the prices pharmacy benefit managers pay pharmacies for drugs covered by prescription-drug plans.\n\nThe reasoning is the part practitioners should carry forward. Act 900 was \"simple rate regulation\" with neither an impermissible connection to nor reference to ERISA, and ERISA does not preempt state rate regulations that merely increase costs or alter incentives for ERISA plans without forcing them to adopt a particular scheme of substantive coverage. That distinction — regulating the price of an input versus dictating plan administration or benefit design — is the doctrinal space in which state cost-control policy still operates. It is the space Act 68's reference-based pricing rule is designed to occupy.",
+   "type": "text",
+   "heading": "Rutledge v. PCMA — where the ceiling stops"
+  },
+  {
+   "body": "The Center for Medicare and Medicaid Innovation has launched dozens of models since its creation under the ACA. Most did not produce statistically significant reductions in Medicare spending and most were discontinued. The ones that performed better share four design features, and the list is worth memorizing because it doubles as a checklist for evaluating any model a state is considering joining.\n\nFirst, mandatory or near-mandatory participation, so the financial logic reaches the full population rather than a self-selected subset — the CJR randomization and Maryland's rate-setting foundation are the clearest illustrations. Second, two-sided risk that is real, meaning downside exposure large enough to change organizational decisions; one-sided shared savings with minimal upside changes very little at scale. Third, adequate implementation support — technical assistance, analytics and enough runway to redesign care before being held accountable for outcomes the organization cannot yet control. Fourth, alignment with the state regulatory environment, because a federal model that duplicates or conflicts with state rate review and budget processes produces compliance work without producing change.\n\nNote what is absent from that list: the elegance of the payment formula. Model design fails on participation architecture and implementation capacity far more often than on the arithmetic of the benchmark.",
+   "type": "text",
+   "heading": "CMMI models — what separates the ones that work"
+  },
+  {
+   "body": "Vermont signed a State Agreement to participate in the CMS AHEAD Model in January 2025; the Green Mountain Care Board joined the Governor and the Agency of Human Services in signing on January 21, 2025. AHEAD is a state-based total cost of care model built around hospital global budgets for Medicare fee-for-service and enhanced primary care payments, with a performance period running into the 2030s. Vermont entered as a Cohort 2 state, with performance scheduled to begin in 2028. The model was intended to continue funding for primary care, the Blueprint for Health and the Support and Services at Home program as OneCare wound down.\n\nState officials had calculated, in information provided to lawmakers, that participation could bring roughly $138 million in additional federal funds to Vermont health care. CMS subsequently renegotiated the model's terms, and the renegotiation capped additional payments at approximately $10 million. AHS Secretary Jenney Samuelson described the effect plainly: the overhaul meant greater complexity in Vermont's payment models and less money coming into Vermont.\n\nVermont notified CMS of its withdrawal on July 24, 2026, and announced it publicly the following week — before its performance period had ever begun. The state redirected its attention to the Rural Health Transformation Program, which is providing $195 million a year for five years. Vermont's Health Care Advocate, Mike Fisher, criticized the years spent pursuing the model.\n\nThe structural lesson is the one the book draws. Act 68 is unaffected. Vermont's reference-based pricing mandate, its global budget schedule and its December 2028 Strategic Plan deadline all rest on state statutory authority that never depended on AHEAD continuing. A state whose transformation strategy is a federal model has no strategy when the model's terms change. A state that uses a federal model to accelerate and fund a strategy it has independent authority to execute loses money when the model changes, and keeps the strategy.",
+   "type": "text",
+   "heading": "AHEAD — federal model risk, realized"
+  },
+  {
+   "body": "Vermont's AHEAD State Agreement was negotiated with explicit unilateral withdrawal rights — before launch on 30 days' notice, after launch on six months' notice — along with protections for GMCB's regulatory independence and provisions on methodology acceptance and dispute resolution. Those clauses looked like lawyerly caution in January 2025. In July 2026 they were the reason Vermont could exit cleanly when the federal economics collapsed. Multi-year federal commitments span administrations; negotiate the exit at the same time you negotiate the entry.",
+   "type": "callout",
+   "heading": "Design for withdrawal before you sign",
+   "variant": "warning"
+  },
+  {
+   "body": "Federal model risk runs in both directions: a state can be harmed by a federal change, and a state can use federal authority to do something whose consequences were foreseeable. In June 2018 Arkansas became the first state to implement Medicaid work requirements, under an 1115 demonstration, requiring adults aged 30 to 49 to work or engage in qualifying activities for twenty hours a week or document an exemption.\n\nBy the time a federal court halted the policy in spring 2019, roughly 18,000 adults had lost coverage. Sommers and colleagues, publishing in the *New England Journal of Medicine* in 2019, found the policy had not increased employment among the affected group but had raised the uninsured rate among adults aged 30 to 49. The coverage losses were concentrated among people who were working or exempt but failed to complete the monthly online reporting — an administrative failure, not an eligibility one.\n\nH.R. 1 of 2025 changed the legal posture by authorizing work and community engagement requirements of 80 hours a month for Medicaid expansion enrollees, with states required to implement by the end of 2026. It did not change the operational evidence. A reporting requirement that a large share of eligible enrollees cannot complete produces coverage loss among eligible people, regardless of whether a court has blessed the authority to impose it. That is an Operations pillar failure embedded in a Policy pillar instrument — and it is the kind of interaction the five-pillar sequence exists to surface before implementation, not after.",
+   "type": "text",
+   "heading": "Arkansas — a waiver that produced exactly what its design implied"
+  },
+  {
+   "body": "Policy strategy for a health system or a state agency is not primarily advocacy. It is anticipation: knowing what the policy environment will require of the organization 18 to 36 months out, positioning to comply at manageable cost, and identifying which federal programs can fund work the organization intended to do anyway.\n\nThe minimum monitoring infrastructure has four components. Federal rulemaking surveillance through the Federal Register, where proposed rules give 60 to 90 days of advance notice and final rules typically take effect 60 days after publication. State legislative monitoring, because in a state like Vermont each annual session produces material new requirements. CMMI model pipeline monitoring, because application windows are narrow and organizations not watching for them miss participation on favorable terms. And regulatory intelligence on the state board — GMCB's budget guidance, reference-based pricing methodology updates and program decisions directly determine every Vermont hospital's financial plan.\n\nWhen something surfaces, the assessment is structured: exposure mapping (what does this specifically require of us, with what financial and operational implications, by when), scenario analysis (under what range of outcomes does our position change), response strategy (compliance roadmap, comment letter, model application, advocacy) and stakeholder communication (who needs to decide what, and when). The discipline is unglamorous. Organizations that skip it are consistently surprised by outputs that were publicly visible for a year.",
+   "type": "text",
+   "heading": "The practitioner framework"
+  },
+  {
+   "body": "First: if this model disappears in three years, what survives? If the answer is nothing, the model is the strategy, and that is a strategic failure regardless of the model's merits. Second: what does the agreement say about unilateral withdrawal, methodology disputes and the state regulator's independence? Third: which pillar does this model actually strengthen? A model that funds primary care payments does not, by itself, build the analytics capability the Technology pillar requires, and a model that pays for analytics does not redesign care. Name the pillar, then check whether you already have the prerequisites that pillar depends on.",
+   "type": "callout",
+   "heading": "Three questions before committing to any federal model",
+   "variant": "tip"
+  },
+  {
+   "body": "Chapter 3 is the practitioner's guide to the federal interface — the CMMI model landscape, Section 1115 waiver negotiation, budget neutrality, and how H.R. 1 reshaped the Medicaid environment states now operate in.\n\nRead it at /read/chapter-03.",
+   "type": "callout",
+   "heading": "From the Book — Chapter 3",
+   "variant": "info",
+   "_bookRef": true
+  }
+ ],
+ "tags": [
+  "policy-pillar",
+  "1115-waiver",
+  "erisa",
+  "ahead-model",
+  "budget-neutrality"
+ ],
+ "related_lesson_ids": [],
+ "is_published": true,
+ "created_at": "2026-09-09T04:03:19.53597+00:00",
+ "updated_at": "2026-09-20T06:03:35.954708+00:00",
+ "sanity_slug": "cmmi-waivers-federal-state-interface"
+}

@@ -1,0 +1,163 @@
+{
+ "id": "1c4b11dd-802b-4ac7-80f5-ed24aa4d37d7",
+ "track_id": "0f8b647d-f2f3-401f-8928-827cc0ff6030",
+ "pillar": "policy",
+ "order": 6,
+ "slug": "legislative-architecture-reform-cascade",
+ "title": "Legislative Architecture: Act 167 → Act 51 → Act 68",
+ "summary": "Vermont built its reform mandate in three statutes over three years: a diagnostic act, a planning act, and an operational act with dated deadlines. This lesson takes each act apart to show what instrument it used, what it made possible next, and why reversing the sequence would have failed.",
+ "estimated_minutes": 25,
+ "objectives": [
+  {
+   "id": "obj_5p6a",
+   "text": "State what each of Act 167 (2022), Act 51 (2023) and Act 68 (2025) directed, and identify the policy instrument each one used"
+  },
+  {
+   "id": "obj_5p6b",
+   "text": "Explain why a public diagnostic mandate had to precede an operational mandate for the mandate to survive politically"
+  },
+  {
+   "id": "obj_5p6c",
+   "text": "Name the Act 68 statutory deadlines that gate work in the Technology, Economics, Clinical and Operations pillars"
+  },
+  {
+   "id": "obj_5p6d",
+   "text": "Recognize the same cascade pattern in a non-Vermont statutory sequence and diagnose what a given reform agenda is missing"
+  }
+ ],
+ "content_blocks": [
+  {
+   "body": "Every state reform agenda eventually has to answer one question: which provisions are aspirational and which are binding? Vermont answered it across three legislative sessions, and the answer is legible in the statutes themselves. Act 167 of 2022 commissioned a diagnosis. Act 51 of 2023 authorized planning with a small number of hospitals. Act 68 of 2025 named specific payment tools and attached dated deadlines to them.\n\nEach act used a different instrument, and the instruments are not interchangeable. A diagnostic mandate buys evidence and public legitimacy. A planning mandate buys institutional capacity — people who have actually attempted the work and know where it breaks. An operational mandate spends both: it converts the evidence and the capacity into a legal obligation with a date on it.\n\nThis ordering is what policy scholars call a reform cascade — a legislatively structured process in which each intervention creates the conditions for the next. It is the Policy pillar doing the only job the Policy pillar can do: answering \"is it permissible?\" in a way the other four pillars can then build on. Technology, Economics, Clinical and Operations all execute inside the space a mandate defines. If that space is undefined, the other pillars have nothing to execute against.",
+   "type": "text",
+   "heading": "Three statutes, one instrument each"
+  },
+  {
+   "body": "Act 167 of 2022 directed the Green Mountain Care Board to analyze how to improve the sustainability of Vermont's hospital system, and to develop community- and data-informed options for transforming it. GMCB commissioned an independent consultant — Oliver Wyman — under a roughly $1 million engagement. The resulting report, *Act 167 Community Engagement: Recommendations*, was issued on September 18, 2024.\n\nThe process was deliberately slow and deliberately public. GMCB ran two rounds of community engagement, in October–November 2023 and again in July–August 2024, across all fourteen of Vermont's hospital service areas, with a data-analysis period in between. The engagement came before the recommendations, not after them — the meetings were structured as inputs to a shared diagnosis rather than as hearings on a finished plan.\n\nAct 167 also set five statutory goals that have functioned ever since as Vermont's accountability frame: reduce inefficiencies, lower costs, improve health outcomes, reduce health inequities, and increase access to essential services. Those five goals are not preamble language. AHS reports against them, GMCB's budget review references them, and Vermont's Rural Health Transformation Program application maps each proposed initiative to them. That is what well-designed statutory goal-setting produces — a persistent accountability structure that outlives the bill that created it.",
+   "type": "text",
+   "heading": "Act 167 of 2022 — the diagnostic mandate"
+  },
+  {
+   "type": "key_stat",
+   "stats": [
+    {
+     "label": "Vermont hospitals reporting operating losses in FY2023, with the worst at -8.9%",
+     "value": "9 of 14",
+     "source": "Oliver Wyman, Act 167 Community Engagement: Recommendations, September 2024"
+    },
+    {
+     "label": "Projected cumulative five-year hospital system deficit below break-even by 2028, depending on expense-growth scenario",
+     "value": "$700M–$2.4B",
+     "source": "Oliver Wyman Act 167 report, September 2024"
+    },
+    {
+     "label": "Hospital service areas covered by two full rounds of community engagement before any recommendation was published",
+     "value": "14",
+     "source": "Green Mountain Care Board, Act 167 community engagement record"
+    },
+    {
+     "label": "Hospitals for which the report recommended especially extensive restructuring: North Country, Gifford, Springfield, Grace Cottage",
+     "value": "4",
+     "source": "Oliver Wyman Act 167 report, as reported by VTDigger, October 2024"
+    }
+   ]
+  },
+  {
+   "body": "Publishing a recommendation to close or restructure named services at named community hospitals is not analytically hard. It is politically treacherous. Communities organize around their local hospitals, and a consultant's report that arrives without a prior public process is trivially dismissed as an outsider's spreadsheet.\n\nVermont's sequence — listen first, diagnose second, recommend third — was designed to produce findings with enough legitimacy to survive the backlash. It did not eliminate the backlash. When the final report landed in late October 2024, several hospitals publicly disputed the accuracy of the underlying data, and the dispute was covered statewide. But the diagnosis held well enough to become the intellectual source material for Act 68 the following spring, which is the only test that mattered.",
+   "type": "text",
+   "heading": "Why the diagnosis was built in public"
+  },
+  {
+   "body": "Vermont's Act 167 report drew formal objections from hospitals over data accuracy within weeks of publication, and GMCB and Oliver Wyman both issued statements in response. A diagnostic process that generates no objections almost certainly did not say anything binding. The question to ask is not whether a diagnosis will be challenged but whether it was built so that a challenge to one data element does not collapse the whole finding.",
+   "type": "callout",
+   "heading": "A public diagnosis is contested by design — plan for that, not around it",
+   "variant": "warning"
+  },
+  {
+   "body": "Act 51 of 2023 is the least discussed of the three acts and the easiest to underrate. It directed the Agency of Human Services to engage in transformation planning with up to four hospitals — or a different number if alternate funds allowed — to reduce inefficiencies, lower costs, improve population health outcomes, reduce health inequities, and increase access to essential services, while maintaining sufficient capacity for emergency management.\n\nNote what Act 51 did not do. It did not mandate an outcome, cap a price, or set a revenue envelope. It funded a small number of institutions to attempt the work and find out what breaks. That is the function of a planning mandate: it converts a diagnosis into operational knowledge inside the agency that will later have to administer a real mandate. A legislature that jumps from diagnosis straight to operation writes deadlines that nobody in the executive branch yet knows how to meet.",
+   "type": "text",
+   "heading": "Act 51 of 2023 — the planning mandate"
+  },
+  {
+   "body": "Act 68 of 2025 (originating as S.126) is the operationalization of the Act 167 diagnosis. Its alignment with Oliver Wyman's recommendations is direct and traceable. Oliver Wyman recommended beginning movement to reference-based pricing at 200% of Medicare or less for PPS hospitals; Act 68 directs GMCB to implement reference-based pricing no later than hospital fiscal year 2027. Oliver Wyman recommended moving to global budgets when conditions for success are met; Act 68 requires global hospital budgets for non-critical-access hospitals by FY2028 and for all Vermont hospitals by 2030.\n\nThe statutory language is the point. Act 68 does not invite hospitals to experiment with alternative pricing. It directs GMCB to establish, by rule, the maximum amounts hospitals may receive for each service they provide, benchmarked to a percentage of Medicare reimbursement or another appropriate benchmark. Hospitals may not bill patients or insurers above the established reference price, which closes the billing workarounds that undermined earlier price-transparency efforts. Act 68's RBP provision is the most expansive of its kind in the country: it applies Medicare-benchmarked prices across the entire commercial market rather than to one purchaser's book of business.\n\nAct 68 also requires AHS to deliver a Statewide Health Care Delivery Strategic Plan to the legislature by December 2028, updated every three years, and establishes a Health Care Delivery Advisory Committee to support it. GMCB must report to the General Assembly on implementation, beginning with a February 2026 update and continuing through its annual reports.",
+   "type": "text",
+   "heading": "Act 68 of 2025 — the operational mandate"
+  },
+  {
+   "rows": [
+    {
+     "left": "Directed GMCB to analyze hospital system sustainability and develop community- and data-informed transformation options; set five statutory goals",
+     "label": "Act 167 (2022)",
+     "right": "Produced a public, contested-and-survived evidence base and an accountability frame that every later document maps to"
+    },
+    {
+     "left": "Directed AHS to conduct transformation planning with up to four hospitals against the same five goals",
+     "label": "Act 51 (2023)",
+     "right": "Built agency-side operational knowledge of what hospital transformation actually requires, before any deadline attached to it"
+    },
+    {
+     "left": "Directs GMCB to set maximum allowable hospital payments by rule (RBP) no later than FY2027 and global budgets for non-CAH hospitals by FY2028, all hospitals by 2030; requires a Statewide Strategic Plan by December 2028",
+     "label": "Act 68 (2025)",
+     "right": "Converts the diagnosis and the planning capacity into dated legal obligations that the other four pillars must execute against"
+    },
+    {
+     "left": "Three sessions, three instruments, one continuous accountability frame",
+     "label": "The cascade as a whole",
+     "right": "A mandate that is binding because it is evidenced, and executable because an agency already tried it at small scale"
+    }
+   ],
+   "type": "comparison_table",
+   "heading": "What each act directed, and what it made possible next"
+  },
+  {
+   "body": "Reference-based pricing is a response to measured variation, not to an abstract objection to hospital prices. RAND's Hospital Price Transparency Study, reported in Vermont in October 2020, found that commercial prices at the seven Vermont hospitals in its sample ranged from 178% of Medicare at Springfield Hospital to 358% of Medicare at the University of Vermont Medical Center. UVMMC's outpatient prices ran roughly 40% above the national benchmark.\n\nA nearly two-fold spread between the cheapest and most expensive hospital in a state of 650,000 people is not explained by case mix or quality. It is explained by negotiating leverage. Reference-based pricing removes the leverage from the equation by fixing the benchmark administratively — which is exactly why it requires statutory authority rather than a payer's willingness to walk away from a contract.",
+   "type": "text",
+   "heading": "The price problem reference-based pricing is aimed at"
+  },
+  {
+   "body": "Total hospital spending is price multiplied by volume. Reference-based pricing controls the first term and leaves the second one free. A hospital facing lower per-service revenue can respond by delivering more services — more imaging, more procedures, admitting patients who could have been managed as outpatients. Oliver Wyman called this the balloon squeeze: press on one side of the system and it expands on the other.\n\nGlobal budgets close the loophole by capping total hospital revenue regardless of volume, which inverts the financial incentive from maximizing throughput to maximizing population health per dollar of revenue. Act 68's ordering — RBP in FY2027, global budgets for non-CAH hospitals in FY2028, all hospitals by 2030 — reflects that logic. Price discipline first, because it is administratively simpler and produces the price data a budget must be built on. Revenue envelopes second, because they require the analytics, the attribution and the clinical redesign that a hospital cannot stand up in a single year.",
+   "type": "text",
+   "heading": "Why global budgets follow reference-based pricing, and not the reverse"
+  },
+  {
+   "body": "FY2027 (beginning October 2026): reference-based pricing becomes mandatory across the commercial market. FY2028: global budgets for non-critical-access hospitals. December 2028: the Statewide Health Care Delivery Strategic Plan is due to the legislature. 2030: global budgets for all Vermont hospitals, critical access included. Technology work (claims and clinical data infrastructure), Economics work (revenue modeling and APM readiness), Clinical work (care redesign that survives a fixed revenue envelope) and Operations work (the staffing and capital plans that follow) are all scheduled backward from these four dates. This is what it means for Policy to be the load-bearing pillar.",
+   "type": "callout",
+   "heading": "The deadlines that gate the other four pillars",
+   "variant": "info"
+  },
+  {
+   "body": "Maryland's rate-setting system — the closest American analogue to what Act 68 is building — was itself a cascade, and a slower one. The Maryland legislature created the Health Services Cost Review Commission in 1971. The Commission began setting hospital rates in July 1974, after a three-year phase-in. Only in July 1977 did a federal waiver require Medicare and Medicaid to pay on the basis of HSCRC-approved rates, which is the step that made the system genuinely all-payer. Six years elapsed between the enabling statute and the authority that made it work.\n\nMassachusetts ran the same pattern with different instruments. Chapter 58 of 2006 established near-universal coverage and, in doing so, produced the enrollment and spending data that made the state's cost problem measurable. Chapter 224 of 2012 then set a statewide health care cost growth benchmark and created the Health Policy Commission to monitor it. Coverage first, cost discipline second — and the second act was possible because the first one had generated both the data and the political constituency.\n\nNeither state started with its binding instrument. In both, the binding instrument arrived years after a statute that did something less dramatic and more evidentiary. Vermont compressed the same sequence into three years, which is fast by this standard, not slow.",
+   "type": "text",
+   "heading": "The same cascade outside Vermont: Maryland and Massachusetts"
+  },
+  {
+   "body": "Three conditions distinguish a cascade from a pile of unrelated bills. First, a continuous accountability frame: Vermont's five Act 167 goals appear unchanged in Act 68 and in every AHS report and federal application since. Reform agendas that redefine their goals each session cannot demonstrate progress, because the measuring stick keeps moving.\n\nSecond, evidence that is public before it is binding. Act 68's price and budget mandates are defensible because they implement recommendations that were developed in the open across fourteen hospital service areas over two years. A mandate of equal severity dropped without that record would face the same litigation with a much weaker administrative record behind it.\n\nThird, dated obligations with a named administrator. Act 68 does not say that Vermont should move toward global budgets. It names GMCB, names the rulemaking instrument, and names the fiscal years. The difference between a transformation that succeeds and one that produces documents is usually visible in whether the statute contains a date and a defendant.",
+   "type": "text",
+   "heading": "What a reform cascade requires"
+  },
+  {
+   "body": "Four questions, in order. Who is directed to act — an agency with rulemaking authority, or nobody in particular? By when — a fiscal year, or \"as soon as practicable\"? Against what standard — a named benchmark like a percentage of Medicare, or a goal with no denominator? And what happens on non-compliance? A statute that answers all four is an operational mandate you must plan against. A statute that answers fewer than three is a signal of legislative intent, which is a different and much weaker thing.",
+   "type": "callout",
+   "heading": "Reading a reform statute as a practitioner",
+   "variant": "tip"
+  },
+  {
+   "body": "Chapter 2 is the full legislative history — Act 167's diagnostic mandate, Act 51's planning authority, and Act 68's operational mandate, plus the Oliver Wyman engagement that produced the evidence base for all three.\n\nRead it at /read/chapter-02.",
+   "type": "callout",
+   "heading": "From the Book — Chapter 2",
+   "variant": "info",
+   "_bookRef": true
+  }
+ ],
+ "tags": [
+  "policy-pillar",
+  "act-167",
+  "act-68",
+  "reform-cascade",
+  "vermont"
+ ],
+ "related_lesson_ids": [],
+ "is_published": true,
+ "created_at": "2026-09-09T04:03:17.292101+00:00",
+ "updated_at": "2026-09-20T06:03:35.954708+00:00",
+ "sanity_slug": "legislative-architecture-reform-cascade"
+}

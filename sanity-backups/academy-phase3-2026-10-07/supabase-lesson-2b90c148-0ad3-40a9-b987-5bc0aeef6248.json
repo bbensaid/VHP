@@ -1,0 +1,62 @@
+{
+ "id": "2b90c148-0ad3-40a9-b987-5bc0aeef6248",
+ "track_id": "a372b50e-de8b-4e68-98e2-2230055090dd",
+ "pillar": "operations",
+ "order": 2,
+ "slug": "vitl-vermont-hie",
+ "title": "Vermont's HIE: VITL and the Vermont Health Information Network",
+ "summary": "How Vermont built a statewide health information exchange infrastructure — VITL's connections, legal framework, and role in the AHEAD Model.",
+ "estimated_minutes": 16,
+ "objectives": [
+  {
+   "id": "obj_vitl1",
+   "text": "Describe VITL's role and what it connects in Vermont's health system"
+  },
+  {
+   "id": "obj_vitl2",
+   "text": "Identify the Vermont state laws that govern health information exchange"
+  },
+  {
+   "id": "obj_vitl3",
+   "text": "Explain how HIE supports Vermont's AHEAD Model goals"
+  }
+ ],
+ "content_blocks": [
+  {
+   "body": "Vermont Information Technology Leaders (VITL) is Vermont's statewide health information organization — a nonprofit that operates the Vermont Health Information Network (VHIN), the technical infrastructure that connects healthcare organizations across the state. Founded in 2005, VITL has grown to connect virtually all of Vermont's hospitals, most federally qualified health centers, independent physician practices, long-term care facilities, laboratories, and pharmacies into a shared exchange network.\n\nVITL's core services include ADT event notifications (alerting care teams when their patients are admitted, discharged, or transferred), clinical data repository access (query-based access to patient clinical summaries), provider directory services, and technical assistance for smaller organizations that lack the internal IT capacity to participate in health data exchange independently. VITL also operates Vermont's Master Patient Index — the record-linkage system that matches patient records across different organizations.\n\nVermont's health information exchange operates within a specific legal framework. Act 167 (2006) established the legal authority for statewide HIE and created the governance structure that includes VITL. Act 68 (2006) established the health information technology plan and framework. These laws give VITL a quasi-regulatory role in coordinating Vermont's health IT infrastructure — different from purely market-driven HIEs in states without similar legislation.",
+   "type": "text",
+   "heading": "Vermont's statewide health information infrastructure"
+  },
+  {
+   "body": "Vermont's All-Payer ACO Model (AHEAD Model) depends on health information exchange infrastructure to function. OneCare Vermont — the ACO accountable for the state's population under the AHEAD Model — relies on VITL's ADT notification network to identify care gaps, flag high-risk patients, and coordinate care across providers. Without HIE infrastructure, an ACO operating under a global budget cannot effectively manage population health. VITL's exchange network is not just a technical utility — it is a core enabler of Vermont's payment reform strategy.",
+   "type": "callout",
+   "title": "VITL and Vermont's AHEAD Model",
+   "variant": "info"
+  },
+  {
+   "type": "key_stat",
+   "label": "of Vermont hospitals connected to VITL's exchange network",
+   "value": "100%",
+   "context": "Vermont achieved full hospital connectivity to its statewide HIE — a milestone that many larger states have not reached. Vermont's small size and strong state coordination enabled this comprehensive coverage."
+  },
+  {
+   "body": "Vermont's experience demonstrates what is possible with strong state coordination, clear legal authority, and sustained investment in HIE infrastructure. With a population of 650,000 and 14 hospitals, Vermont achieved full hospital HIE connectivity and deployed ADT notifications statewide — capabilities that health IT experts often cite as prerequisites for effective population health management. States with 10x or 20x Vermont's population face proportionally greater governance and technical challenges, but Vermont's model offers transferable lessons about the importance of state-level coordination and legislative support.",
+   "type": "callout",
+   "title": "Vermont as a small-state HIE model",
+   "variant": "example"
+  }
+ ],
+ "tags": [
+  "VITL",
+  "Vermont",
+  "HIE",
+  "AHEAD",
+  "Act 167",
+  "Act 68"
+ ],
+ "related_lesson_ids": [],
+ "is_published": true,
+ "created_at": "2026-05-26T17:24:46.530235+00:00",
+ "updated_at": "2026-06-01T14:54:57.72774+00:00",
+ "sanity_slug": "interop-vermont-vitl"
+}

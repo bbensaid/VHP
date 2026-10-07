@@ -1,0 +1,163 @@
+{
+ "id": "320b7810-965e-45a5-98e9-d1a70a5e5456",
+ "track_id": "97e8eb99-0057-4332-b64b-0909a77d4bc1",
+ "pillar": "economics",
+ "order": 14,
+ "slug": "economics-as-design-vs-management",
+ "title": "Economics-as-Design vs. Economics-as-Management",
+ "summary": "Designing a payment model is a policy and actuarial exercise; managing one is an analytics and operations exercise, and Vermont's own data show the second is well behind the first. A payment model an organization cannot measure is a payment model it cannot manage, no matter how well it was designed.",
+ "estimated_minutes": 20,
+ "objectives": [
+  {
+   "id": "obj_5p14a",
+   "text": "Distinguish what designing a payment model requires (statutory authority, benchmark and budget architecture) from what managing one requires (measurement, attribution, ongoing analytics)."
+  },
+  {
+   "id": "obj_5p14b",
+   "text": "Explain why the Technology pillar is a precondition for executing an Economics pillar policy, using Vermont's own data-infrastructure gap as the example."
+  },
+  {
+   "id": "obj_5p14c",
+   "text": "Use Maryland's and Massachusetts's experience to show that management capability can be built after design, but at a cost in delayed population-health improvement."
+  },
+  {
+   "id": "obj_5p14d",
+   "text": "Identify a documented case in which the incentive to manage a measurement, rather than the care it describes, produced a compliance and financial failure."
+  }
+ ],
+ "content_blocks": [
+  {
+   "body": "Chapters 6 and 7 together make a distinction this course treats as load-bearing: designing a payment model and managing one are different disciplines, done by different people, on different timelines. Act 68's statutory mandate, GMCB's rulemaking, and the five design dimensions every global budget must resolve -- scope, population adjustment, volume treatment, quality linkage, and flexibility mechanisms -- are design work, largely finished once GMCB's methodology is final.\n\nWhat happens after the methodology is final -- attribution, PMPM tracking, HCC coding, potentially avoidable utilization monitoring, board reporting rebuilt around a fixed-revenue metric set -- is management work, and it is not finished anywhere in Vermont's hospital system yet. A reader who treats Act 68's passage, or GMCB's final rule, as the end of the transformation has confused the two jobs.",
+   "type": "text",
+   "heading": "Two Different Jobs Wearing One Name"
+  },
+  {
+   "body": "Design is a policy and actuarial exercise: statutory authority (Act 68), a regulator with rulemaking power (GMCB), and resolution of the five dimensions every global budget methodology must address -- what services are in scope, how population differences are adjusted for, whether the budget moves with volume, how quality links to payment, and what flexibility exists for mid-year revision.\n\nVermont's GMCB is still resolving several of these dimensions as of its February 2026 update -- scope and population adjustment in particular are both still working through rulemaking. That is not a failure of the process; getting a global budget's design right takes years, and Vermont has been working through some version of it since the Act 167 diagnostic.",
+   "type": "text",
+   "heading": "What Design Requires"
+  },
+  {
+   "body": "Management is an analytics and operations exercise that starts from a different premise: the payment rules already exist, and the job is to hit the target they set. That requires accurate patient attribution, PMPM cost tracking against the budget cap, potentially avoidable utilization monitoring, HCC coding accurate enough that the benchmark reflects real patient complexity, and finance leadership that has rebuilt its own reporting around a different metric set -- cost per discharge instead of revenue per discharge, avoidable admission rate instead of admission volume.\n\nA board dashboard still built around net patient revenue growth and case mix index tells a global-budget-era finance committee almost nothing useful; it answers questions from the payment model the hospital is leaving, not the one it is entering.\n\nNone of this exists automatically once a global budget is signed into law. It has to be built, and building it typically takes longer than the design phase everyone spent years negotiating -- which is exactly the mismatch this lesson is about.",
+   "type": "text",
+   "heading": "What Management Requires"
+  },
+  {
+   "body": "This is where the Economics pillar runs directly into the Technology pillar's precondition. Vermont's own readiness data makes the point concretely: most Vermont hospitals score only 25-45% on the Data and Technology domain of the VBC Transformation Readiness Assessment -- the domain covering attribution list generation and total cost of care measurement. A hospital that cannot accurately attribute its patient population cannot manage a global budget, regardless of how well GMCB designs the budget itself.\n\nVHCURES, Vermont's all-payer claims database, is the data infrastructure that makes this measurement possible in principle. But having the database is not the same as having the internal analytics capability to use it -- precisely the gap the joint AHS-GMCB analytics vendor procurement is meant to close, and precisely the gap that determines whether a well-designed budget produces the incentive change this course describes, or just confusion at the first year-end reconciliation.\n\nThe deadline is not abstract. This is Vermont's own stated framing of Domain 2: the gap must be closed before FY2027, when reference-based pricing takes effect for commercial payers -- not after, once the first year of binding prices has already exposed which hospitals could not see their own numbers.",
+   "type": "text",
+   "heading": "The Technology Gate: A Metric You Cannot See You Cannot Manage"
+  },
+  {
+   "body": "Maryland's HSCRC had every design advantage: a unique, decades-old statutory authority and a federal waiver dating to 1977. Its 2014 Global Budget Revenue methodology is, on the design side, the most mature all-payer model in the country. But the Milbank Fund's evaluation found the model's early years reduced hospital utilization without improving population health measures like smoking or obesity rates -- because the accountability structure connecting quality and community outcomes to the budget, the Medicare Performance Adjustment and the Quality Based Reimbursement program, was strengthened over years of operation, not fully present at launch.\n\nMaryland's management capability -- the systems and incentives that actually connect a fixed budget to better population health, not just less hospital utilization -- was built after the design was already in force. That sequencing cost Maryland years in which the budget produced cost control without the health improvement it was meant to enable.",
+   "type": "text",
+   "heading": "Maryland Designed It Right in 2014 and Still Had to Learn to Manage It"
+  },
+  {
+   "body": "Blue Cross Blue Shield of Massachusetts's Alternative Quality Contract, launched in 2009 with seven provider groups, is a non-Vermont, non-Maryland case of the same distinction resolving in the other direction. The contract's design -- a global budget with pay-for-performance quality measures -- was not fundamentally different from other global payment experiments running at the time.\n\nWhat distinguished the AQC was that participating physician groups invested early in management infrastructure: patient registries, care management staff, and internal reporting aligned to the contract's own cost and quality measures. A Health Affairs study documented savings building from 1.9% in year one to 3.3% in year two; a subsequent New England Journal of Medicine study by Song, Chernew, and colleagues found the reduction in spending growth persisted through four years of the contract. The design was unremarkable; the early management investment is what produced results that compounded rather than evaporated.",
+   "type": "text",
+   "heading": "Massachusetts: A Global Payment Model Managed Well From the Start"
+  },
+  {
+   "body": "There is a failure mode on the management side distinct from simply lacking capability: building the capability to manage the measurement itself, rather than the underlying care. In January 2026, Kaiser Permanente affiliates agreed to pay $556 million to settle Department of Justice allegations that employees in California and Colorado added diagnosis codes to patient charts after visits -- codes the treating physicians had not identified or addressed at the visit itself -- systematically inflating Medicare Advantage risk scores. The government alleged the practice drew roughly $1 billion in federal payments between 2009 and 2018.\n\nHCC coding accuracy is supposed to be a management tool: it makes the benchmark reflect a population's real complexity, so a risk contract's savings measure genuine efficiency rather than an artifact of who a plan enrolled. The Kaiser case shows what happens when an organization builds the capability to move the number instead of the capability to manage the population that number is supposed to describe -- the same infrastructure investment, aimed at the wrong target.\n\nThe settlement, the largest False Claims Act recovery in Medicare Advantage history to date, is a warning specifically relevant to any organization about to accept downside risk under an HCC-adjusted benchmark: the audit and compliance infrastructure needed to code accurately is inseparable from the analytics infrastructure needed to manage a risk contract well. An organization cannot outsource this distinction to its coding vendor and consider the management job done.",
+   "type": "text",
+   "heading": "When the Incentive to Manage the Measurement Replaces Managing the Care"
+  },
+  {
+   "body": "The five-pillar framework holds nine dependency relationships among its pillars, not because the order is arbitrary but because certain capabilities are genuine preconditions for others. Technology preceding Economics in execution is one of those nine: a global budget is, mechanically, an agreement to measure and cap total revenue against a population's cost -- which is impossible without the attribution, claims, and analytics infrastructure the Technology pillar is responsible for building.\n\nThis is also why the Equity Imperative is not a sixth pillar competing with Economics for the same budget line. Equity is the cross-cutting test each pillar must pass on its own terms -- here, whether a global budget's population adjustment fairly accounts for the social risk factors of the hospitals serving Vermont's poorest and most rural communities. A benchmark that ignores social risk fails the Economics pillar's own sustainability test; it is not a separate workstream's problem to solve later.",
+   "type": "text",
+   "heading": "One Instance of the Framework's Dependency Structure"
+  },
+  {
+   "body": "The practical test for any organization entering a Vermont global budget, an AHEAD-adjacent arrangement, or any APM elsewhere: can you already produce, today, the attribution list, the PMPM trend, the potentially avoidable utilization rate, and the HCC-adjusted benchmark the contract will be measured against? If the honest answer is no, the organization is agreeing to be measured by a number it cannot yet see -- and a payment model you cannot measure is a payment model you cannot manage, no matter how well it was designed.\n\nThis is also why this course sequences Technology before Economics: the data infrastructure, attribution capability, and analytics maturity a global budget or APM contract requires are not something an organization builds in the six months before go-live. Organizations that start that build now, ahead of Vermont's FY2027-2028 deadlines, will manage the model the legislature designed. Organizations that wait will have a well-designed policy and no way to operate inside it.",
+   "type": "text",
+   "heading": "Before Your Next Contract Cycle"
+  },
+  {
+   "type": "key_stat",
+   "stats": [
+    {
+     "label": "Most Vermont hospitals' score on the Data and Technology readiness domain",
+     "value": "25-45%",
+     "source": "HTR VBC Readiness Assessment / AHEAD preparation baseline"
+    },
+    {
+     "label": "Average HCC coding gap at Vermont critical access hospitals",
+     "value": "12%",
+     "source": "2025 Vermont Rural Health Redesign Center assessment"
+    },
+    {
+     "label": "Kaiser Permanente DOJ settlement for Medicare Advantage risk-adjustment fraud, January 2026",
+     "value": "$556M",
+     "source": "U.S. Department of Justice"
+    }
+   ]
+  },
+  {
+   "body": "\"If the model is not adequately regulated and sufficiently resourced, it will fail dramatically and harm patients and harm our health system.\" -- Owen Foster, Chair of the Vermont Green Mountain Care Board, on signing the AHEAD State Agreement, January 2025. Regulation is design; resourcing is management. Foster's warning names both halves as necessary.",
+   "type": "callout",
+   "heading": "Design Without Management Is Not Transformation",
+   "variant": "warning"
+  },
+  {
+   "body": "The Massachusetts Alternative Quality Contract's documented savings grew from 1.9% in its first year to 3.3% in its second, and a four-year NEJM study found the reduction in spending growth persisted. That trajectory -- savings building over time rather than appearing once and fading -- is what management capability maturing alongside a payment model looks like.",
+   "type": "callout",
+   "heading": "1.9% to 3.3%: Savings That Compounded",
+   "variant": "info"
+  },
+  {
+   "body": "Can you produce, today, an accurate attribution list, a PMPM cost trend, and an HCC-adjusted benchmark for the specific population a contract will measure? If not, do not sign until you can -- a well-designed contract does not compensate for an organization's inability to see the number it is being measured against.",
+   "type": "callout",
+   "heading": "The Test to Run Before You Sign",
+   "variant": "tip"
+  },
+  {
+   "rows": [
+    {
+     "left": "Design: which services are inside the budget?",
+     "label": "Scope",
+     "right": "Management: can you track cost for exactly those services, and only those, every month?"
+    },
+    {
+     "left": "Design: how are demographics and social risk weighted?",
+     "label": "Population adjustment",
+     "right": "Management: is your HCC/RAF coding accurate enough that the adjustment reflects real patient complexity?"
+    },
+    {
+     "left": "Design: does the budget move if patient volume changes?",
+     "label": "Volume treatment",
+     "right": "Management: can you detect a volume shift in-year, before it appears in a year-end reconciliation?"
+    },
+    {
+     "left": "Design: what share of payment depends on quality metrics?",
+     "label": "Quality linkage",
+     "right": "Management: can you report those exact metrics reliably today, or only after the fact?"
+    },
+    {
+     "left": "Design: what triggers a mid-year adjustment?",
+     "label": "Flexibility mechanisms",
+     "right": "Management: do you have monitoring in place to notice you've hit a trigger?"
+    }
+   ],
+   "type": "comparison_table",
+   "heading": "Design Question vs. Management Question"
+  },
+  {
+   "body": "Chapters 6 and 7 together make the case this lesson distills: designing a payment model is not the same as being able to manage one.\n\nRead it at /read/chapter-06.",
+   "type": "callout",
+   "heading": "From the Book — Chapters 6 and 7",
+   "variant": "info",
+   "_bookRef": true
+  }
+ ],
+ "tags": [
+  "payment-model-design",
+  "data-infrastructure",
+  "economics-pillar",
+  "technology-pillar",
+  "vbc-readiness"
+ ],
+ "related_lesson_ids": [],
+ "is_published": true,
+ "created_at": "2026-09-19T04:09:11.679511+00:00",
+ "updated_at": "2026-09-29T02:57:56.873499+00:00",
+ "sanity_slug": "economics-as-design-vs-management"
+}
