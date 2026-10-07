@@ -6,7 +6,7 @@ import { getPillar } from "@/lib/taxonomy";
 export const metadata = {
   title: "Compare States | HTR",
   description:
-    "Vermont, Oregon, and California side-by-side: the three transformation archetypes from Transforming Healthcare.",
+    "Vermont, Oregon, and California side-by-side: three state transformation archetypes.",
 };
 
 const VERDICT_CHIP: Record<NonNullable<ComparisonCell["verdict"]>, string> = {
@@ -97,13 +97,13 @@ export default function CompareStatesPage() {
       {/* Hero */}
       <div className="mb-10">
         <p className="text-xs font-black uppercase tracking-widest text-indigo-500 mb-2">
-          Chapter 17 · Cross-state analysis
+          Cross-state analysis
         </p>
         <h1 className="text-3xl md:text-4xl font-black text-slate-900 leading-tight mb-3">
           Vermont · Oregon · California
         </h1>
         <p className="text-base text-slate-600 leading-relaxed max-w-3xl">
-          Three transformation archetypes, side by side. Vermont is the most <em>structurally</em> complete (mandatory global budgets, legislative architecture) but the smallest scale. Oregon offers the most <em>governance</em> maturity (a decade of CCO outcomes, community board accountability). California has the largest <em>investment</em> footprint (whole-person care at Medi-Cal scale). No single state has solved the transformation problem. The convergence of all three is the horizon Chapter 17 is oriented toward.
+          Three transformation archetypes, side by side. Vermont is the most <em>structurally</em> complete (mandatory global budgets, legislative architecture) but the smallest scale. Oregon offers the most <em>governance</em> maturity (a decade of CCO outcomes, community board accountability). California has the largest <em>investment</em> footprint (whole-person care at Medi-Cal scale). No single state has solved the transformation problem. The convergence of all three is the horizon this comparison points toward.
         </p>
       </div>
 
@@ -134,16 +134,12 @@ export default function CompareStatesPage() {
       {/* CTA */}
       <section className="mt-14 rounded-2xl bg-slate-900 text-white p-8 md:p-10">
         <h2 className="text-xl md:text-2xl font-black mb-3">
-          The Chapter 17 thesis
+          The cross-state thesis
         </h2>
         <p className="text-sm text-white/70 leading-relaxed mb-6 max-w-2xl">
           Vermont has the architecture without the scale. Oregon has the scale without Vermont&apos;s legislative mandate. California has the investment without the payment architecture. The convergence of all three — mandatory payment reform + proven CCO governance + whole-person care investment — describes what a fully transformed state Medicaid system would look like. That convergence has not happened anywhere yet.
         </p>
         <div className="flex flex-wrap gap-3">
-          <Link href="/read/chapter-17" className="inline-flex items-center gap-2 bg-white text-slate-900 px-4 py-2 rounded-lg text-sm font-bold hover:bg-slate-100 transition-colors">
-            Read Chapter 17
-            <ArrowRightIcon className="w-3.5 h-3.5" />
-          </Link>
           <Link href="/hti-dashboard" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors">
             Open the HTI Dashboard
             <ArrowRightIcon className="w-3.5 h-3.5" />

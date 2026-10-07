@@ -108,7 +108,7 @@ const HOSPITALS: Hospital[] = [
 const RECOMMENDATIONS: Act68Recommendation[] = [
   { id: 'rbp-fy27', title: 'Reference-Based Pricing Implementation (FY2027)', mandated: true, effectiveDate: 'FY2027', category: 'rbp', timelineMonths: 18, pillarScores: { policy: 88, financial: 72, equity: 60, clinical: 65, operations: 75 }, implementationComplexity: 78, annualCostM: 38, annualSavingsM: 145 },
   { id: 'global-budget-fy28', title: 'Hospital Global Budgets (FY2028–2030)', mandated: true, effectiveDate: 'FY2028', category: 'global-budget', timelineMonths: 30, pillarScores: { policy: 90, financial: 80, equity: 65, clinical: 70, operations: 82 }, implementationComplexity: 88, annualCostM: 62, annualSavingsM: 310 },
-  { id: 'strategic-plan', title: 'Statewide Health Care Delivery Strategic Plan (Dec 2028)', mandated: true, effectiveDate: 'Dec 2028', category: 'strategic-plan', timelineMonths: 42, pillarScores: { policy: 85, financial: 55, equity: 80, clinical: 75, operations: 70 }, implementationComplexity: 70, annualCostM: 18, annualSavingsM: 42 },
+  { id: 'strategic-plan', title: 'Statewide Health Care Delivery Strategic Plan (Jan 15, 2028)', mandated: true, effectiveDate: 'Jan 2028', category: 'strategic-plan', timelineMonths: 31, pillarScores: { policy: 85, financial: 55, equity: 80, clinical: 75, operations: 70 }, implementationComplexity: 70, annualCostM: 18, annualSavingsM: 42 },
   { id: 'gmcb-oversight', title: 'Enhanced GMCB Oversight & Reporting', mandated: true, effectiveDate: 'FY2026', category: 'gmcb', timelineMonths: 12, pillarScores: { policy: 92, financial: 60, equity: 65, clinical: 68, operations: 72 }, implementationComplexity: 55, annualCostM: 8, annualSavingsM: 22 },
   { id: 'rbp-commercial', title: 'Commercial Payer RBP Alignment', mandated: false, effectiveDate: 'FY2028', category: 'rbp', timelineMonths: 36, pillarScores: { policy: 75, financial: 85, equity: 55, clinical: 60, operations: 78 }, implementationComplexity: 82, annualCostM: 28, annualSavingsM: 195 },
   { id: 'rural-access', title: 'Rural Access Preservation Standards', mandated: false, effectiveDate: 'FY2027', category: 'equity', timelineMonths: 18, pillarScores: { policy: 70, financial: 45, equity: 95, clinical: 72, operations: 62 }, implementationComplexity: 65, annualCostM: 45, annualSavingsM: 28 },
@@ -188,7 +188,7 @@ export default function VermontAct68SimulatorClient() {
             budgets (FY2028–2030), and a Statewide Strategic Plan across Vermont&apos;s 14-hospital network.
           </p>
           <div className="flex flex-wrap gap-3">
-            {[['14', 'Hospitals'], ['FY2027', 'RBP Effective'], ['FY2028', 'Global Budgets'], ['Dec 2028', 'Strategic Plan Due']].map(([v, l]) => (
+            {[['14', 'Hospitals'], ['FY2028', 'RBP Prices Effective'], ['FY2028', 'Global Budgets'], ['Jan 2028', 'Strategic Plan Due']].map(([v, l]) => (
               <div key={l} className="bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-center">
                 <div className="text-base font-black text-slate-900">{v}</div>
                 <div className="text-[11px] text-slate-500">{l}</div>

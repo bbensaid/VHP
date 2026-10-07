@@ -9,7 +9,7 @@ const participatingStates = [
   {
     name: "Connecticut",
     abbr: "CT",
-    status: "Active",
+    status: "Cohort 2",
     focus: "Total cost of care reduction with a statewide primary care investment floor and hospital global budgets for participating systems.",
     equity: "Mandated health equity benchmarks targeting Black and Hispanic populations with historically higher preventable hospitalization rates.",
     pciTarget: "$120M",
@@ -19,7 +19,7 @@ const participatingStates = [
   {
     name: "Hawaii",
     abbr: "HI",
-    status: "Active",
+    status: "Cohort 2",
     focus: "Island-based care delivery redesign with emphasis on Native Hawaiian health equity and integrated behavioral health in primary care.",
     equity: "Health Equity Benchmark centered on Native Hawaiian and Pacific Islander chronic disease burden, the largest disparity gap in the state.",
     pciTarget: "$85M",
@@ -29,7 +29,7 @@ const participatingStates = [
   {
     name: "Maryland",
     abbr: "MD",
-    status: "Active",
+    status: "Cohort 1 · Active",
     focus: "Extension of Maryland's established all-payer hospital global budget model to full total cost of care accountability under AHEAD.",
     equity: "Builds on the state's existing hospital rate-setting system to address persistent disparities in Baltimore and the Eastern Shore.",
     pciTarget: "$160M",
@@ -37,32 +37,32 @@ const participatingStates = [
     badge: "bg-indigo-100 text-indigo-800",
   },
   {
-    name: "Minnesota",
-    abbr: "MN",
-    status: "Active",
-    focus: "Multi-payer alignment across commercial, Medicare, and Medicaid to standardize value-based contracting and reduce administrative complexity.",
-    equity: "Health Equity Benchmark targets American Indian and Alaska Native populations, with care navigation investments in tribal health systems.",
-    pciTarget: "$140M",
+    name: "Rhode Island",
+    abbr: "RI",
+    status: "Cohort 3",
+    focus: "Selected October 2024 for the third cohort. Pre-implementation began January 2025; the performance period begins January 1, 2028.",
+    equity: "State-specific equity targets are set during pre-implementation; HTR has not yet verified a published Rhode Island benchmark.",
+    pciTarget: "—",
     color: "bg-violet-50 border-violet-200",
     badge: "bg-violet-100 text-violet-800",
   },
   {
-    name: "New Hampshire",
-    abbr: "NH",
-    status: "Active",
-    focus: "Statewide primary care transformation with emphasis on behavioral health integration and substance use disorder treatment access.",
-    equity: "Health Equity Benchmark addresses the rural-urban care gap and targets populations with highest rates of opioid-related mortality.",
-    pciTarget: "$75M",
+    name: "New York (downstate region)",
+    abbr: "NY",
+    status: "Cohort 3",
+    focus: "A sub-state region — Bronx, Kings, Queens, Richmond, and Westchester counties — selected October 2024 for the third cohort; performance period begins January 1, 2028.",
+    equity: "Regional equity targets are set during pre-implementation; HTR has not yet verified a published benchmark for the region.",
+    pciTarget: "—",
     color: "bg-amber-50 border-amber-200",
     badge: "bg-amber-100 text-amber-800",
   },
   {
     name: "Vermont",
     abbr: "VT",
-    status: "Active",
-    focus: "Deepens Vermont's long-standing all-payer model (Act 48 legacy) with a new TCOC accountability framework and primary care investment mandate.",
-    equity: "Health Equity Benchmark focuses on income-based disparities in chronic disease management and maternal health outcomes.",
-    pciTarget: "$65M",
+    status: "Withdrew Jul 2026",
+    focus: "Signed its AHEAD state agreement in January 2025, then withdrew in July 2026 after CMS renegotiation cut the expected EAST Fund from roughly $138M to a cap near $10M — before its Cohort 2 performance period (January 2028) began.",
+    equity: "No AHEAD benchmark applies after withdrawal. Vermont's reform continues under state law — Act 68 reference-based pricing and hospital global budgets.",
+    pciTarget: "—",
     color: "bg-rose-50 border-rose-200",
     badge: "bg-rose-100 text-rose-800",
   },
@@ -112,18 +112,18 @@ const pillars = [
 ];
 
 const timeline = [
-  { year: "2021", event: "CMMI announces AHEAD as a priority model in its strategic refresh, emphasizing equity and total cost of care as the next generation of payment reform." },
-  { year: "2022", event: "State applications open. CMS receives proposals from over 20 states, selecting 6 finalists through a competitive review of readiness, existing infrastructure, and equity commitment." },
-  { year: "2023", event: "Cooperative agreements signed with CT, HI, MD, MN, NH, and VT. Infrastructure payments begin; states initiate stakeholder alignment with hospitals, payers, and community organizations." },
-  { year: "2024", event: "Model officially launches. Hospital Global Budget year one baselines established. Primary Care Investment floors activated. Health Equity Benchmarks formally defined per state." },
-  { year: "2026", event: "First performance reconciliation. States report Year 2 TCOC trends, PCI achievement, and HEB progress. Early data indicates CT and MD leading on cost trajectory; HI leading on equity improvement rates." },
-  { year: "2034", event: "Model end date. Full 10-year outcomes analysis. CMS determines whether AHEAD framework is eligible for nationwide expansion under the Affordable Care Act's Innovation Center scaling authority." },
+  { year: "2023", event: "CMS announces the AHEAD Model (September 5, 2023). Each participating state can receive up to $12M in cooperative agreement funding to support implementation." },
+  { year: "2024", event: "By July, CMS has selected Connecticut, Hawaii, Maryland, and Vermont; in October, Rhode Island and five downstate New York counties are selected. Cohorts: Maryland (1); Connecticut, Hawaii, Vermont (2); Rhode Island, New York (3)." },
+  { year: "2025", event: "Vermont signs its AHEAD state agreement (January). In September, CMS announces policy and operational changes and moves the Cohort 2 and 3 performance period start to January 1, 2028." },
+  { year: "2026", event: "Vermont withdraws (July) after CMS renegotiation cuts its expected EAST Fund from roughly $138M to a cap near $10M. Remaining participants: Maryland, Connecticut, Hawaii, Rhode Island, and the downstate New York region." },
+  { year: "2028", event: "Performance period begins for Cohorts 2 and 3 (January 1, 2028)." },
+  { year: "2035", event: "Model end date for all cohorts (December 31, 2035)." },
 ];
 
 const stats = [
-  { value: "6", label: "Participating States" },
-  { value: "$645M+", label: "Infrastructure Investment" },
-  { value: "2034", label: "Model End Date" },
+  { value: "5", label: "Participating States" },
+  { value: "≤$12M", label: "Cooperative Agreement / State" },
+  { value: "2035", label: "Model End Date" },
   { value: "3", label: "Payer Types Covered" },
 ];
 
@@ -156,7 +156,7 @@ export default function AheadModelPage() {
               The most ambitious payment reform model in CMS history. AHEAD holds states accountable for bending the total cost of care curve across all payers — Medicare, Medicaid, and commercial — while requiring measurable progress on health equity as a condition of financial success.
             </p>
             <p className="ty-hero text-slate-400 leading-relaxed max-w-3xl mb-10">
-              Six states. One decade. The framework that could define the next era of American healthcare financing.
+              Five participating states, a model running through 2035 — and, in Vermont, a case study in why a state walked away.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -250,7 +250,7 @@ export default function AheadModelPage() {
                 {
                   dimension: "Model duration",
                   prior: "3–5 year pilots",
-                  ahead: "10-year cooperative agreement (2024–2034)",
+                  ahead: "Multi-year model running through December 31, 2035",
                   advantage: true,
                 },
               ].map((row) => (
@@ -319,7 +319,7 @@ export default function AheadModelPage() {
             State Profiles
           </span>
           <h2 className="ty-h1 font-black tracking-tight text-slate-900 mb-4">
-            Six states. One shared framework.
+            Five states. One shared framework.
           </h2>
           <p className="ty-hero text-slate-500 max-w-3xl">
             Each state enters AHEAD with a unique health system context, payer mix, and equity challenge — but all operate under the same TCOC accountability structure and Health Equity Benchmark requirement.
@@ -363,7 +363,7 @@ export default function AheadModelPage() {
         <div className="mt-8 bg-indigo-700 text-white rounded-xl p-6 md:p-8">
           <p className="text-[11px] font-black uppercase tracking-widest text-indigo-200 mb-3">HTR Analyst Note</p>
           <p className="text-slate-300 leading-relaxed max-w-4xl">
-            Vermont is the only state participating in both AHEAD and the Rural Health Transformation Program — giving it the most complex, and potentially most instructive, multi-program reform environment in the country. Its performance under both frameworks will be a critical data point for CMS as it evaluates whether RHTP and AHEAD are complementary or require alignment.{" "}
+            Vermont signed AHEAD in January 2025 and withdrew in July 2026, after CMS renegotiation cut the expected EAST Fund from roughly $138M to a cap near $10M. It exited before its Cohort 2 performance period began and now pursues hospital global budgets and reference-based pricing under its own Act 68, alongside its Rural Health Transformation Program award — an instructive test of whether a state can carry all-payer reform without the federal model.{" "}
             <Link href="/dashboard/vermont" className="text-emerald-400 hover:text-emerald-300 font-bold underline underline-offset-2">
               View Vermont's full program profile →
             </Link>

@@ -5,7 +5,7 @@ import VermontReformCascade from "@/components/VermontReformCascade";
 export const metadata = {
   title: "Vermont Act 68 (2025) | Health Transformation Review",
   description:
-    "Vermont Act 68 of 2025 — the most consequential healthcare legislation in Vermont since the Green Mountain Care Board's creation. Mandates reference-based pricing (GMCB methodology by rule in 2027, effective hospital FY2028), hospital global budgets (FY2028–2030), and a Statewide Health Care Delivery Strategic Plan by December 2028.",
+    "Vermont Act 68 of 2025 — the most consequential healthcare legislation in Vermont since the Green Mountain Care Board's creation. Mandates reference-based pricing (GMCB methodology by rule in 2027, effective hospital FY2028), hospital global budgets (FY2028–2030), and a Statewide Health Care Delivery Strategic Plan due on or before January 15, 2028.",
 };
 
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -122,7 +122,7 @@ export default function VermontAct68Page() {
         <p className="ty-hero text-slate-600 leading-relaxed max-w-3xl mb-6">
           Vermont's landmark 2025 healthcare reform legislation — mandating reference-based pricing
           for hospitals, statutory hospital global budgets, and a Statewide Health Care Delivery
-          Strategic Plan due December 2028. Act 68 converts years of voluntary payment reform
+          Strategic Plan due on or before January 15, 2028. Act 68 converts years of voluntary payment reform
           into mandatory structural change.
         </p>
         <div className="flex flex-wrap gap-3">
@@ -150,7 +150,7 @@ export default function VermontAct68Page() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <StatBox value="FY2028" label="RBP Effective" sub="GMCB methodology set by rule in 2027" />
           <StatBox value="FY2028" label="Global Budgets" sub="Statutory hospital budgets begin" />
-          <StatBox value="Dec 2028" label="Strategic Plan Due" sub="AHS Statewide delivery plan" />
+          <StatBox value="Jan 15, 2028" label="Strategic Plan Due" sub="18 V.S.A. § 9403(d)(3); updates every 3 years from Dec 2030" />
           <StatBox value="$2M" label="Transformation Grants" sub="Authorized for hospitals" />
           <StatBox value="14" label="Hospitals Affected" sub="All Vermont non-profit hospitals" />
           <StatBox value="2.5%" label="FY2026 Spending Reduction" sub="Required hospital spending reduction" />
@@ -178,8 +178,8 @@ export default function VermontAct68Page() {
             },
             {
               number: "03",
-              title: "Statewide Health Care Delivery Strategic Plan — Due December 2028",
-              body: "Directs the Vermont Agency of Human Services to produce a comprehensive Statewide Health Care Delivery Strategic Plan by December 2028, to be submitted to the Vermont Legislature. The plan must specify measurable outcomes for affordability, quality, equity, and access across all five transformation pillars. It must address the 14-hospital tiered network design, Centers of Excellence designation, and population health management infrastructure.",
+              title: "Statewide Health Care Delivery Strategic Plan — Due January 15, 2028",
+              body: "Directs the Vermont Agency of Human Services to produce a comprehensive Statewide Health Care Delivery Strategic Plan on or before January 15, 2028 (updated every three years from December 1, 2030), to be submitted to the Vermont Legislature. The plan must specify measurable outcomes for affordability, quality, equity, and access across all five transformation pillars. It must address the 14-hospital tiered network design, Centers of Excellence designation, and population health management infrastructure.",
               tag: "Operations Pillar",
             },
             {
@@ -290,10 +290,10 @@ export default function VermontAct68Page() {
                 ["Nature", "Enabling framework — authorizes, directs, studies", "Mandate — requires specific outcomes by specific dates"],
                 ["Payment reform", "Directs GMCB to develop VBP models", "Mandates RBP (FY2027) and global budgets (FY2028)"],
                 ["Hospital participation", "Voluntary engagement encouraged", "Mandatory for all non-CAH hospitals"],
-                ["AHS role", "Directs AHEAD Model negotiation", "Requires AHS organizational restructuring"],
+                ["AHS role", "Directs negotiation of a successor all-payer agreement (later AHEAD)", "Requires AHS organizational restructuring"],
                 ["Accountability", "Community engagement and reporting", "Statutory deadlines with legislative accountability"],
                 ["Financial force", "Study recommendations", "GMCB rate-setting authority with enforcement"],
-                ["Timeline pressure", "Aspirational 2028 target", "Legally enforceable December 2028 Strategic Plan deadline"],
+                ["Timeline pressure", "Aspirational 2028 target", "Legally enforceable January 15, 2028 Strategic Plan deadline"],
               ].map(([dim, act167, act68]) => (
                 <tr key={dim}>
                   <td className="py-3 pr-6 font-bold text-slate-700 text-xs">{dim}</td>
@@ -447,7 +447,7 @@ export default function VermontAct68Page() {
             },
             {
               term: "Statewide Health Care Delivery Strategic Plan",
-              def: "The comprehensive plan AHS must deliver to the Vermont Legislature by December 2028. Must include measurable commitments for affordability, quality, equity, and access; the 14-hospital tiered network design; Centers of Excellence designations; and population health management infrastructure investments.",
+              def: "The comprehensive plan AHS must deliver to the Vermont Legislature on or before January 15, 2028. Must include measurable commitments for affordability, quality, equity, and access; the 14-hospital tiered network design; Centers of Excellence designations; and population health management infrastructure investments.",
             },
             {
               term: "Rural Health Transformation (RHT) Program",

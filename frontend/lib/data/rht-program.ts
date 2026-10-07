@@ -31,7 +31,7 @@ export const rhtProgramData: Record<string, RHTProfile> = {
   vermont: {
     id: "vermont",
     stateName: "Vermont",
-    awardAmount: "$195,000,000",
+    awardAmount: "$195,053,740",
     status: "At Risk",
     strategicFocus: "Regionalization & Innovative Care Strategies",
     description:

@@ -103,7 +103,7 @@ export const SCALE_ROWS: ComparisonRow[] = [
   {
     label: "Medicaid enrollment",
     cells: {
-      vermont:    { value: "218,000",      detail: "≈34% of population" },
+      vermont:    { value: "160,747",      detail: "≈25% of population (DVHA, Dec 2025)" },
       oregon:     { value: "1.4 million",   detail: "≈33% of population" },
       california: { value: "15 million",    detail: "≈38% of population" },
     },
@@ -136,7 +136,7 @@ export const PILLAR_ROWS: ComparisonRow[] = [
     label: "Federal alignment",
     pillar: "policy",
     cells: {
-      vermont:    { value: "AHEAD model",        detail: "Medicare aligned via CMMI" },
+      vermont:    { value: "1115 waiver",        detail: "Global Commitment to Health; withdrew from AHEAD July 2026" },
       oregon:     { value: "1115 waiver",        detail: "Section 1115 Medicaid demonstration" },
       california: { value: "1115 waiver ($6.7B)", detail: "Largest state Medicaid waiver in U.S." },
     },
@@ -244,7 +244,7 @@ export const PROGRAM_ROWS: ComparisonRow[] = [
   {
     label: "Flagship payment-reform program",
     cells: {
-      vermont:    { value: "Act 68 + AHEAD",  detail: "Mandatory hospital global budgets" },
+      vermont:    { value: "Act 68",          detail: "Mandatory hospital global budgets" },
       oregon:     { value: "CCO 3.0",         detail: "Coordinated Care Organizations, 2025–2030" },
       california: { value: "CalAIM",          detail: "$6.7B Medi-Cal transformation" },
     },

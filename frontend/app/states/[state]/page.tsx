@@ -29,6 +29,7 @@ const STATUS_COLORS: Record<InitiativeStatus, string> = {
   "In Development": "bg-amber-100 text-amber-700",
   Completed: "bg-slate-100 text-slate-600",
   Pending: "bg-yellow-100 text-yellow-700",
+  Withdrawn: "bg-rose-100 text-rose-700",
 };
 
 export default async function StateInitiativesPage({ params }: PageProps) {

@@ -97,7 +97,7 @@ export default function VermontLegislativeResourcesPage() {
           <div className="h-px flex-1 bg-slate-200" />
         </div>
         <p className="text-sm text-slate-600 leading-relaxed mb-5">
-          The Vermont Agency of Human Services (AHS) Office of Health Care Reform (OHCR) files monthly Health Care System Transformation Reports to the legislature under Act 68 of 2025. These reports track hospital transformation planning, primary care reform, global budget progress, and AHEAD ACO performance. AHS Secretary Jenney Samuelson also provides direct testimony to legislative committees.
+          The Vermont Agency of Human Services (AHS) Office of Health Care Reform (OHCR) files monthly Health Care System Transformation Reports to the legislature under Act 68 of 2025. These reports track hospital transformation planning, primary care reform, and global budget progress (reports before July 2026 also covered AHEAD, from which Vermont has since withdrawn). AHS Secretary Jenney Samuelson also provides direct testimony to legislative committees.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
           <ExternalLink href="https://legislature.vermont.gov/assets/Legislative-Reports/Aug-2025_Act-68-HC-System-Transformation-Report-from-AHS.pdf"

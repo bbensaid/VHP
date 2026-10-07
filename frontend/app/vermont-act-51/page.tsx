@@ -296,7 +296,7 @@ export default function VermontAct51Page() {
             {
               act: "Act 68 (2025)",
               role: "Operational mandate",
-              body: "Mandatory reference-based pricing (FY2027), hospital global budgets (FY2028–FY2030), AHS restructuring, and the Statewide Strategic Plan due December 2028.",
+              body: "Mandatory reference-based pricing (FY2027), hospital global budgets (FY2028–FY2030), AHS restructuring, and the Statewide Strategic Plan due on or before January 15, 2028.",
               href: "/vermont-act-68",
               tone: "bg-white border-slate-200",
             },

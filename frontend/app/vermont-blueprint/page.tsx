@@ -3,7 +3,7 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export const metadata = {
   title: "Vermont Blueprint for Health | HTR States",
-  description: "Vermont's Blueprint for Health — the state's primary care transformation initiative. Patient-Centered Medical Homes, Community Health Teams, Mental Health Integration, and the connection to VCCI, AHEAD, and Act 68.",
+  description: "Vermont's Blueprint for Health — the state's primary care transformation initiative. Patient-Centered Medical Homes, Community Health Teams, Mental Health Integration, and the connection to VCCI and Act 68.",
 };
 
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -48,7 +48,7 @@ const BLUEPRINT_TIMELINE = [
   { year: "2010", event: "Act 128 expanded Blueprint statewide. Community Health Teams launched in every Health Service Area. All-payer PCMH payment model activated across Medicare, Medicaid, and commercial payers." },
   { year: "2011", event: "SASH program launched under Blueprint infrastructure — care coordination extended into affordable housing communities for Medicare seniors." },
   { year: "2014", event: "Vermont awarded CMS State Innovation Model (SIM) Round 1 grant to scale Blueprint. CHT capacity expanded significantly." },
-  { year: "2019", event: "Vermont All-Payer ACO Model (AHEAD) launched — Blueprint practices become the primary care foundation for ACO attribution and care management." },
+  { year: "2018", event: "Vermont All-Payer ACO Model performance years begin (agreement signed October 2016; predecessor to AHEAD, not AHEAD itself) — Blueprint practices become the primary care foundation for ACO attribution and care management." },
   { year: "2022", event: "Act 167 enacted — GMCB authority over hospital budgets strengthened. Blueprint's CHTs become the formal medium-risk referral pathway for VCCI." },
   { year: "2023", event: "Mental Health Integration (MHI) into Primary Care initiative launched — CHTs add BH capacity including SUD screening, SBIRT, and crisis navigation." },
   { year: "2024", event: "128 primary care practices participating. 56+ FTE new staff hired using Pilot funding (34 CHWs, 17 BH/SUD team members). All 14 Health Service Areas staffed." },
@@ -96,7 +96,7 @@ export default function VermontBlueprintPage() {
               Primary care practices that earn NCQA PCMH recognition receive a per-member-per-month capitated payment from all payers — Medicare, Medicaid, and commercial insurers — to support team-based, proactive care. This payment is separate from and on top of standard fee-for-service billing.
             </p>
             <p className="text-sm text-slate-600 leading-relaxed">
-              PCMH practices implement same-day access, after-hours care, proactive panel management, and care coordination for high-risk patients. The PCMH model is the primary care foundation on which Vermont's AHEAD ACO and VCCI programs operate.
+              PCMH practices implement same-day access, after-hours care, proactive panel management, and care coordination for high-risk patients. The PCMH model is the primary care foundation on which Vermont's value-based payment reform and VCCI programs operate.
             </p>
           </div>
           <div className="bg-white border border-slate-200 rounded-xl p-6">
@@ -180,8 +180,8 @@ export default function VermontBlueprintPage() {
         <SectionHeader label="System Integration" title="How Blueprint Connects to Other Vermont Programs" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
-            { href: "/vermont-rht-program", label: "VCCI (Chronic Care Initiative)", color: "border-rose-200 hover:border-rose-400 hover:bg-rose-50", textColor: "text-rose-700", desc: "VCCI's High/Very High risk Medicaid members are identified via claims analytics. When they engage with a Blueprint PCMH practice, the CHT coordinates between VCCI case manager and PCP. CHTs receive VCCI referrals for Medium-risk members who don't qualify for intensive case management." },
-            { href: "/ahead-model", label: "Vermont AHEAD ACO", color: "border-sky-200 hover:border-sky-400 hover:bg-sky-50", textColor: "text-sky-700", desc: "Blueprint PCMH practices are the primary care foundation for AHEAD ACO attribution. Attributed Medicare beneficiaries are managed through the PCMH's care coordination infrastructure. ACO global budget calculations assume Blueprint-level primary care investment." },
+            { href: "/vermont-vcci", label: "VCCI (Chronic Care Initiative)", color: "border-rose-200 hover:border-rose-400 hover:bg-rose-50", textColor: "text-rose-700", desc: "VCCI's High/Very High risk Medicaid members are identified via claims analytics. When they engage with a Blueprint PCMH practice, the CHT coordinates between VCCI case manager and PCP. CHTs receive VCCI referrals for Medium-risk members who don't qualify for intensive case management." },
+            { href: "/ahead-model", label: "AHEAD Model", color: "border-sky-200 hover:border-sky-400 hover:bg-sky-50", textColor: "text-sky-700", desc: "The federal all-payer model Vermont signed in January 2025 and withdrew from in July 2026, before its performance period began. Blueprint PCMH practices were to anchor its primary care investment; Blueprint remains central to Act 68's primary care strategy." },
             { href: "/vermont-act-68", label: "Vermont Act 68 (2025)", color: "border-indigo-200 hover:border-indigo-400 hover:bg-indigo-50", textColor: "text-indigo-700", desc: "Act 68 created the Vermont Steering Committee for Comprehensive Primary Health Care, with Blueprint as a central pillar. Act 68 explicitly charges AHS and Blueprint with expanding primary care access and improving PCMH payment sustainability across all payers." },
             { href: "/vermont-designated-agencies", label: "Designated Agencies (MH/SUD)", color: "border-violet-200 hover:border-violet-400 hover:bg-violet-50", textColor: "text-violet-700", desc: "Blueprint CHTs coordinate warm handoffs to the 11 Designated Agencies for members needing specialty BH or SUD services beyond what MHI integration can provide in-office. Co-location pilots between Blueprint practices and DA staff exist in several regions." },
             { href: "/vermont-sash", label: "SASH Program", color: "border-teal-200 hover:border-teal-400 hover:bg-teal-50", textColor: "text-teal-700", desc: "SASH launched under Blueprint infrastructure and remains closely integrated. SASH Coordinators connect housing-based Medicare seniors to Blueprint PCMH practices for primary care. SASH wellness nurses work alongside CHT care coordinators on shared high-risk members." },

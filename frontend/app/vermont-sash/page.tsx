@@ -146,8 +146,8 @@ export default function VermontSASHPage() {
             <p className="text-slate-600">SASH is embedded in affordable housing — addressing food, housing stability, and transportation as part of every participant's care plan. This is what SDOH integration looks like in practice, not just in policy documents.</p>
           </div>
           <div className="bg-white border border-indigo-200 rounded-xl p-4">
-            <p className="font-bold text-indigo-800 mb-1">AHEAD Model Connection</p>
-            <p className="text-slate-600">SASH participants who are Medicare beneficiaries are attributed to Vermont AHEAD ACOs through their primary care practices. SASH's reduced utilization directly improves the ACO's total cost of care performance against its global budget benchmark.</p>
+            <p className="font-bold text-indigo-800 mb-1">Total Cost of Care Connection</p>
+            <p className="text-slate-600">SASH participants who are Medicare beneficiaries are attributed to ACOs through their primary care practices, so SASH&apos;s reduced utilization improves those ACOs&apos; total cost of care performance. Vermont withdrew from the federal AHEAD Model in July 2026; under Act 68 hospital global budgets, avoided admissions still protect hospital margins.</p>
           </div>
           <div className="bg-white border border-indigo-200 rounded-xl p-4">
             <p className="font-bold text-indigo-800 mb-1">National Replication</p>
@@ -162,8 +162,8 @@ export default function VermontSASHPage() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
             { href: "/vermont-blueprint", label: "Blueprint for Health", desc: "SASH was launched under Blueprint infrastructure. SASH Coordinators connect participants to Blueprint PCMH practices; Wellness Nurses work alongside CHT care coordinators.", color: "border-emerald-200 hover:bg-emerald-50 hover:border-emerald-400", text: "text-emerald-700" },
-            { href: "/vermont-rht-program", label: "Vermont VCCI", desc: "High-risk SASH participants who are also Medicaid-enrolled may qualify for VCCI intensive case management. SASH Coordinators and VCCI case managers coordinate for dual-enrolled participants.", color: "border-rose-200 hover:bg-rose-50 hover:border-rose-400", text: "text-rose-700" },
-            { href: "/ahead-model", label: "AHEAD Model", desc: "SASH participants' primary care practices participate in AHEAD. Reduced SASH utilization flows directly into AHEAD total cost of care performance, creating financial alignment between housing investment and healthcare savings.", color: "border-sky-200 hover:bg-sky-50 hover:border-sky-400", text: "text-sky-700" },
+            { href: "/vermont-vcci", label: "Vermont VCCI", desc: "High-risk SASH participants who are also Medicaid-enrolled may qualify for VCCI intensive case management. SASH Coordinators and VCCI case managers coordinate for dual-enrolled participants.", color: "border-rose-200 hover:bg-rose-50 hover:border-rose-400", text: "text-rose-700" },
+            { href: "/ahead-model", label: "AHEAD Model", desc: "The federal all-payer model Vermont signed in January 2025 and withdrew from in July 2026, before its performance period began — so SASH savings no longer flow into AHEAD total cost of care performance.", color: "border-sky-200 hover:bg-sky-50 hover:border-sky-400", text: "text-sky-700" },
           ].map(item => (
             <Link key={item.href} href={item.href} className={`block border rounded-xl p-4 transition-all ${item.color}`}>
               <p className={`font-black text-sm mb-1.5 ${item.text}`}>{item.label}</p>

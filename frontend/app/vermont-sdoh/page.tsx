@@ -160,7 +160,7 @@ export default function VermontSDOHPage() {
           </div>
           <div>
             <p className="font-bold text-orange-300 mb-1">Z-Code Documentation</p>
-            <p className="text-slate-300 leading-relaxed">ICD-10-CM Z55–Z65 codes capture social determinants in the medical record. These Z-codes are what make SDOH data flow through claims and into risk models. Vermont AHEAD explicitly requires ACO participants to document Z-codes for attributed patients with identified social needs — making SDOH documentation a VBC contract obligation.</p>
+            <p className="text-slate-300 leading-relaxed">ICD-10-CM Z55–Z65 codes capture social determinants in the medical record. These Z-codes are what make SDOH data flow through claims and into risk models. In value-based contracts, Z-code documentation for attributed patients with identified social needs is increasingly a quality-reporting obligation.</p>
           </div>
           <div>
             <p className="font-bold text-orange-300 mb-1">FHIR SDOH Representation</p>
@@ -260,7 +260,7 @@ export default function VermontSDOHPage() {
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 text-xs text-center">
             {[
               { step: "1", label: "Screen", desc: "PRAPARE / AHC HRSN screening at PCP visit, ED discharge, or VCCI telephonic assessment. Produces LOINC-coded OBX segments or FHIR Observations.", color: "bg-orange-100 text-orange-800" },
-              { step: "2", label: "Document", desc: "Social needs documented as ICD-10 Z-codes in the problem list and FHIR Condition resources. Required for AHEAD VBC contract quality reporting and VCCI composite score.", color: "bg-amber-100 text-amber-800" },
+              { step: "2", label: "Document", desc: "Social needs documented as ICD-10 Z-codes in the problem list and FHIR Condition resources. Used for VBC contract quality reporting and the VCCI composite score.", color: "bg-amber-100 text-amber-800" },
               { step: "3", label: "Refer", desc: "CHT care coordinator makes warm referral to community resource (2-1-1, food shelf, housing authority, CAA). Referral documented in shared care plan.", color: "bg-emerald-100 text-emerald-800" },
               { step: "4", label: "Close Loop", desc: "VCCI case manager or CHT follows up within 30 days to confirm referral was completed. Loop closure documented in FHIR CarePlan.activity.detail.status.", color: "bg-indigo-100 text-indigo-800" },
             ].map(s => (
@@ -282,7 +282,7 @@ export default function VermontSDOHPage() {
             { href: "/vermont-sash", label: "SASH Program", desc: "Housing-based care coordination — the ultimate SDOH integration model. SASH coordinators are embedded in affordable housing and address SDOH as part of every care plan.", color: "border-teal-200 hover:bg-teal-50", text: "text-teal-700" },
             { href: "/vermont-blueprint", label: "Blueprint for Health / CHTs", desc: "Community Health Teams carry SDOH navigation as a core role. CHTs connect patients to 2-1-1, CAAs, and Designated Agencies from within primary care visits.", color: "border-emerald-200 hover:bg-emerald-50", text: "text-emerald-700" },
             { href: "/vermont-designated-agencies", label: "Designated Agencies (MH/SUD)", desc: "Vermont's 11 DAs provide MH and SUD services — the clinical response tier for mental health and substance use SDOH needs identified through VCCI screening.", color: "border-violet-200 hover:bg-violet-50", text: "text-violet-700" },
-            { href: "/vermont-rht-program", label: "VCCI (via RHT program)", desc: "VCCI SDOH screening (housing, food, SUD, MH, IPV, transport) feeds directly into the composite risk score. VCCI case managers address SDOH through shared care plans and community referrals.", color: "border-rose-200 hover:bg-rose-50", text: "text-rose-700" },
+            { href: "/vermont-vcci", label: "VCCI", desc: "VCCI SDOH screening (housing, food, SUD, MH, IPV, transport) feeds directly into the composite risk score. VCCI case managers address SDOH through shared care plans and community referrals.", color: "border-rose-200 hover:bg-rose-50", text: "text-rose-700" },
             { href: "/equity/sdoh", label: "SDOH Intelligence Hub (Platform)", desc: "The platform's broader SDOH content — PRAPARE screening framework, Z-code documentation guide, VBC contract SDOH integration, and national SDOH policy analysis.", color: "border-orange-200 hover:bg-orange-50", text: "text-orange-700" },
             { href: "/research-lab/vbc-clinical-quality?tab=risk", label: "VCCI Risk Stratification Lab", desc: "Interactive VCCI scoring walkthrough showing how SDOH screening data (housing, food, SUD, MH, IPV) translates into composite risk score points and tier assignment.", color: "border-indigo-200 hover:bg-indigo-50", text: "text-indigo-700" },
           ].map(item => (

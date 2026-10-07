@@ -527,7 +527,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
           "PMO investment: $5.5M setup + $3.2M/yr operating",
           "Projected system-wide savings from coordinated procurement: $8–12M/yr",
           "Reduced duplication in state agency spending: $4–6M/yr",
-          "Federal AHEAD Model technical assistance funding: ~$2M/yr offset",
+          "No AHEAD technical-assistance offset: Vermont withdrew from the AHEAD Model in July 2026",
         ],
         timeline: "Break-even Year 3", investmentM: 5.5, annualSavingsM: 12, riskLevel: "low",
       },
@@ -1358,7 +1358,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
         actions: [
           "GMCB to develop reference-based pricing methodology (Medicare + 15–25% VT adjustment)",
           "Negotiate commercial payer participation through multi-payer reform initiative",
-          "AHEAD Model provides framework for all-payer alignment (2024–2034)",
+          "Act 68 requires RBP no later than hospital FY2027; GMCB sets methodology by rule in 2027, prices effective hospital FY2028 (AHEAD no longer applies — Vermont withdrew July 2026)",
           "Align Quality/Access/Equity metrics across all payers and agencies",
           "Link payments to primary care providers to hospital payments",
           "Phase-in over 3 years to minimize hospital revenue disruption",
