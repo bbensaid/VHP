@@ -1,9 +1,10 @@
+import type { Metadata } from "next";
+import { brandedMetadata } from "@/lib/brand-server";
 import Link from 'next/link'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 
-export const metadata = {
-  title: 'Oregon CCO 3.0 | Health Transformation Review',
-  description: "Oregon's third-generation Coordinated Care Organizations model — integrating physical, behavioral, and oral health under global budgets with equity accountability and community advisory boards.",
+export async function generateMetadata(): Promise<Metadata> {
+  return brandedMetadata("Oregon CCO 3.0", "Oregon's third-generation Coordinated Care Organizations model — integrating physical, behavioral, and oral health under global budgets with equity accountability and community advisory boards.");
 }
 
 function StatBox({ value, label, sub }: { value: string; label: string; sub?: string }) {

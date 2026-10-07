@@ -1,12 +1,12 @@
+import type { Metadata } from "next";
+import { brandedMetadata } from "@/lib/brand-server";
 import Link from "next/link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import VermontReformCascade from "@/components/VermontReformCascade";
 
-export const metadata = {
-  title: "Vermont Act 68 (2025) | Health Transformation Review",
-  description:
-    "Vermont Act 68 of 2025 — the most consequential healthcare legislation in Vermont since the Green Mountain Care Board's creation. Mandates reference-based pricing (GMCB methodology by rule in 2027, effective hospital FY2028), hospital global budgets (FY2028–2030), and a Statewide Health Care Delivery Strategic Plan due on or before January 15, 2028.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return brandedMetadata("Vermont Act 68 (2025)", "Vermont Act 68 of 2025 — the most consequential healthcare legislation in Vermont since the Green Mountain Care Board's creation. Mandates reference-based pricing (GMCB methodology by rule in 2027, effective hospital FY2028), hospital global budgets (FY2028–2030), and a Statewide Health Care Delivery Strategic Plan due on or before January 15, 2028.");
+}
 
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (

@@ -1,10 +1,10 @@
+import { brandedMetadata } from "@/lib/brand-server";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Developer API | Health Transformation Review",
-  description: "Access HTR state performance data, HTI scores, and survey results via a structured JSON API. Authenticated with API keys.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return brandedMetadata("Developer API", "Access HTR state performance data, HTI scores, and survey results via a structured JSON API. Authenticated with API keys.");
+}
 
 const BASE = "https://brain.htr.health";
 

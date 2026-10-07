@@ -1,12 +1,13 @@
+import type { Metadata } from "next";
+import { brandedMetadata } from "@/lib/brand-server";
 import Link from "next/link";
 import FromTheBook from "@/components/FromTheBook";
 import { PILLARS, EQUITY_IMPERATIVE, type FrameworkId } from "@/lib/taxonomy/pillars";
 import { TOOLS, type Tool } from "@/lib/taxonomy/tools";
 
-export const metadata = {
-  title: "HTR Research Lab | Health Transformation Review",
-  description: `${TOOLS.length} interactive analytical tools organized by the five-pillar framework: Policy, Technology, Economics, Clinical, and Operations — plus the cross-cutting Equity Imperative.`,
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return brandedMetadata("HTR Research Lab", `${TOOLS.length} interactive analytical tools organized by the five-pillar framework: Policy, Technology, Economics, Clinical, and Operations — plus the cross-cutting Equity Imperative.`);
+}
 
 // Presentation-only color classes per pillar (content comes from the taxonomy).
 // Keyed by PillarId so adding/renaming a pillar is a compile error here, not a

@@ -1,9 +1,10 @@
+import type { Metadata } from "next";
+import { brandedMetadata } from "@/lib/brand-server";
 import HTIDashboard from "@/components/HTIDashboard";
 
-export const metadata = {
-  title: "HTI Dashboard | Health Transformation Review",
-  description: "Health Transformation Index (HTI) Simulation Engine",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return brandedMetadata("HTI Dashboard", "Health Transformation Index (HTI) Simulation Engine");
+}
 
 export default function Page() {
   return (

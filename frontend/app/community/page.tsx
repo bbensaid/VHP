@@ -1,12 +1,12 @@
+import { brandedMetadata } from "@/lib/brand-server";
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Community | Health Transformation Review",
-  description: "Join the HTR member community — discuss policy, economics, technology, and health system transformation with peers.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return brandedMetadata("Community", "Join the HTR member community — discuss policy, economics, technology, and health system transformation with peers.");
+}
 
 export const revalidate = 60;
 
