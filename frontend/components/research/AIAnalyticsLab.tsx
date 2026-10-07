@@ -1195,6 +1195,30 @@ function GovernanceBuilder() {
         </div>
       </div>
 
+      {/* Deployment gate. Chapter 5 §5.7 uses this checklist "as a go/no-go gate before any
+          clinical AI deployment" — so the verdict is per-domain, not the average: one domain
+          left open (say, Equity & Bias) blocks deployment however strong the rest are. The
+          80% bar is this tool's own Low-Regulatory-Risk threshold, applied to every domain. */}
+      {(() => {
+        const open = domainScores.filter((d) => d.score < 80);
+        const go = open.length === 0;
+        return (
+          <div
+            data-testid="ai-governance-gate"
+            className={`border-2 rounded-xl p-4 ${go ? "bg-green-50 border-green-400" : "bg-red-50 border-red-400"}`}
+          >
+            <p className={`text-xs font-black uppercase tracking-widest mb-1 ${go ? "text-green-700" : "text-red-700"}`}>
+              Deployment gate: {go ? "GO" : "NO-GO"}
+            </p>
+            <p className="text-sm text-slate-800 leading-snug">
+              {go
+                ? "Every governance domain clears 80%. The checklist does not block deployment."
+                : `${open.length} of ${domainScores.length} domains are below 80%: ${open.map((d) => `${d.name} (${d.score}%)`).join(", ")}. Close these before go-live — the gate is passed domain by domain, not on the average.`}
+            </p>
+          </div>
+        );
+      })()}
+
       {/* Regulatory implication */}
       <div className={`border rounded-xl p-4 ${regColors[regulatoryImplication.color]}`}>
         <p className="text-sm font-bold mb-1">{regulatoryImplication.label}</p>

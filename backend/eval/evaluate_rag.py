@@ -56,7 +56,8 @@ GOLDEN_DATASET = [
     {
         "question": "What is the AHEAD model in Vermont health care?",
         "ground_truth": (
-            "The AHEAD (All-Payer Health Equity Approaches and Development) model is a CMS innovation "
+            "The AHEAD (Achieving Healthcare Efficiency through Accountable Design; originally States "
+            "Advancing All-Payer Health Equity Approaches and Development) model is a CMS innovation "
             "model designed to test whether a whole-state approach to health transformation can reduce "
             "Medicare expenditures, improve quality, and advance health equity. Vermont signed its AHEAD "
             "State Agreement in January 2025 and formally withdrew in July 2026, after a CMS "

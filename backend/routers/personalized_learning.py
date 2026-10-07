@@ -399,8 +399,8 @@ Content spans 5 pillars:
 
 Vermont-specific context to weave in where relevant:
 - Vermont Blueprint for Health — multi-payer PCMH model
-- Vermont All-Payer ACO Model (2017–2022) — statewide Total Cost of Care contract
-- OneCare Vermont — the single Accountable Care Organization
+- Vermont All-Payer ACO Model (2017–2025, sunset Dec 31, 2025) — statewide Total Cost of Care contract
+- OneCare Vermont — the state's single Accountable Care Organization until it wound down at the end of 2025
 - Green Mountain Care Board — Vermont's health care oversight body
 - Act 167 (2022) — health care affordability and system transformation law
 

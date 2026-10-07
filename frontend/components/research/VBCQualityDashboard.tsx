@@ -31,7 +31,7 @@ const HEDIS_META: Record<string, { fullName: string; domain: string; numeratorDe
     dataSource: 'Lab data (LOINC 4548-4) or claims with CPT 83036. MUST be a final result (OBX-11 = F) to count.',
     loincCodes: ['4548-4'],
     icd10Codes: ['E11.9', 'E11.65', 'E10.9'],
-    vermont: 'Vermont AHEAD tracks CDC measures as a primary VBC performance benchmark. Controlling A1C to <8% in attributed diabetic members is one of the highest-weight quality metrics in the AHEAD contract scorecard.',
+    vermont: 'Diabetes A1C control is a core quality benchmark in value-based contracts, including Medicare ACO quality measure sets.',
   },
   'CDC-Test': {
     fullName: 'Comprehensive Diabetes Care — HbA1c Testing',
@@ -67,7 +67,7 @@ const HEDIS_META: Record<string, { fullName: string; domain: string; numeratorDe
     dataSource: 'The BP reading must come from an outpatient setting. ED and inpatient readings are excluded. LOINC: 8480-6 (systolic), 8462-4 (diastolic).',
     loincCodes: ['8480-6', '8462-4'],
     icd10Codes: ['I10'],
-    vermont: 'Rutland and Windsor counties show highest hypertension prevalence in Vermont. CBP is a triple-weighted measure in AHEAD quality scoring.',
+    vermont: 'Rutland and Windsor counties show highest hypertension prevalence in Vermont.',
   },
   'FUH-7': {
     fullName: 'Follow-Up After Hospitalization for Mental Illness — 7-day',
@@ -75,7 +75,7 @@ const HEDIS_META: Record<string, { fullName: string; domain: string; numeratorDe
     numeratorDef: 'Members who were followed up within 7 days after discharge from an inpatient stay for mental illness.',
     denominatorDef: 'Members 6+ with a qualifying inpatient discharge with a principal MH diagnosis.',
     dataSource: 'Inpatient claims (DRG 880-887, 894-897) plus outpatient BH follow-up claims. Must be an outpatient visit — a phone call does NOT count.',
-    vermont: 'Vermont has one of the highest MH hospitalization rates in New England. FUH-7 is chronically low due to BH capacity constraints. AHEAD requires performance improvement plans for any organization below state average.',
+    vermont: 'Vermont has one of the highest MH hospitalization rates in New England. FUH-7 is chronically low due to BH capacity constraints.',
   },
   'FUH-30': {
     fullName: 'Follow-Up After Hospitalization for Mental Illness — 30-day',
@@ -115,7 +115,7 @@ const HEDIS_META: Record<string, { fullName: string; domain: string; numeratorDe
     numeratorDef: 'Members with T2DM with PDC ≥80% for diabetes medications (metformin, GLP-1, SGLT2i, sulfonylureas).',
     denominatorDef: 'Members with T2DM who were dispensed a diabetes medication.',
     dataSource: 'Pharmacy claims: PDC = days supply / days in measurement period. Requires ≥2 fills.',
-    vermont: 'Insulin cost burden is a major adherence barrier in Vermont Medicaid patients. AHEAD includes cost-sharing waivers for insulin as part of VBC contract terms.',
+    vermont: 'Insulin cost burden is a major adherence barrier in Vermont Medicaid patients.',
   },
   'PCE': {
     fullName: 'Pharmacotherapy Mgmt of COPD Exacerbation — Systemic Corticosteroid',
@@ -192,6 +192,34 @@ const ACSC_CONDITIONS: Record<string, { label: string; description: string; pqiN
   'I10': { label: 'Hypertension', description: 'AHRQ PQI #7 — Hypertension admissions preventable with outpatient blood pressure management', pqiNumber: 'PQI-07' },
 };
 
+// ─── MEASURE TYPE: does closing the gap move health, or only the score? ──────
+// Chapter 8 §8.8 sends readers here for "which measures move population outcomes
+// vs. which only move scores." An intermediate-outcome measure only closes when a
+// physiologic result changes (A1c, blood pressure, adherence); a process measure
+// closes when a service is delivered or documented, whether or not health changes.
+// Types follow the CMS Part C & D Star Ratings Technical Notes measure-type
+// categories for measures rated there (CBP, glycemic status, medication adherence =
+// Intermediate Outcome, weighted 3x; eye exam, statin use, flu vaccine = Process,
+// weighted 1x), and the Donabedian process/outcome
+// distinction for the HEDIS measures that are not Star-rated.
+type MeasureType = 'Intermediate outcome' | 'Process';
+const MEASURE_TYPE: Record<string, MeasureType> = {
+  'CDC-HbA1c': 'Intermediate outcome',
+  'CBP': 'Intermediate outcome',
+  'MAH': 'Intermediate outcome',
+  'CDC-Test': 'Process',
+  'CDC-Eye': 'Process',
+  'CDC-KE': 'Process',
+  'FUH-7': 'Process',
+  'FUH-30': 'Process',
+  'AMM': 'Process',
+  'SPD': 'Process',
+  'SPC': 'Process',
+  'PCE': 'Process',
+  'PCE-BD': 'Process',
+  'FLU': 'Process',
+};
+
 // ─── HEDIS SUMMARY TABLE ──────────────────────────────────────────────────────
 
 function HEDISPanelView() {
@@ -225,7 +253,7 @@ function HEDISPanelView() {
     <div>
       <div className="mb-4 p-4 bg-blue-50 border border-blue-200 rounded-xl">
         <p className="text-xs text-blue-800 leading-relaxed">
-          <strong>HEDIS (Healthcare Effectiveness Data and Information Set)</strong> is NCQA&apos;s standardized quality measurement framework — the primary quality scorecard for health plans, ACOs, and VBC contracts. Each measure has a strict numerator/denominator definition. Rates are calculated from claims and clinical data. In Vermont AHEAD, HEDIS rates feed directly into the quality performance score that determines shared savings distribution.
+          <strong>HEDIS (Healthcare Effectiveness Data and Information Set)</strong> is NCQA&apos;s standardized quality measurement framework — the primary quality scorecard for health plans, ACOs, and VBC contracts. Each measure has a strict numerator/denominator definition. Rates are calculated from claims and clinical data. In VBC contracts, HEDIS rates typically feed into the quality performance score that determines shared savings distribution.
         </p>
       </div>
 
@@ -240,6 +268,11 @@ function HEDISPanelView() {
               )}
             </div>
             <p className="text-[10px] text-slate-600 leading-tight">{m.meta?.fullName ?? m.code}</p>
+            {MEASURE_TYPE[m.code] && (
+              <span className={`inline-block mt-1 text-[8px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded ${MEASURE_TYPE[m.code] === 'Process' ? 'bg-slate-100 text-slate-500' : 'bg-teal-100 text-teal-700'}`}>
+                {MEASURE_TYPE[m.code]}
+              </span>
+            )}
             {m.stars !== null && (
               <p className="text-[9px] font-bold text-indigo-600 mt-1">
                 {"★".repeat(m.stars)}{"☆".repeat(5 - m.stars)} vs. NCQA national
@@ -255,6 +288,27 @@ function HEDISPanelView() {
             )}
           </button>
         ))}
+      </div>
+
+      {/* Outcome-moving vs score-moving measures */}
+      <div className="mb-6 grid sm:grid-cols-2 gap-3">
+        {(['Intermediate outcome', 'Process'] as const).map(type => {
+          const ms = measureStats.filter(m => MEASURE_TYPE[m.code] === type);
+          const gaps = ms.reduce((a, m) => a + m.gaps, 0);
+          return (
+            <div key={type} className={`rounded-xl border p-4 ${type === 'Process' ? 'border-slate-200 bg-slate-50' : 'border-teal-200 bg-teal-50'}`}>
+              <p className={`text-[10px] font-black uppercase tracking-widest mb-1 ${type === 'Process' ? 'text-slate-500' : 'text-teal-700'}`}>
+                {type === 'Process' ? 'Moves the score' : 'Moves population outcomes'} · {type}
+              </p>
+              <p className="text-sm font-bold text-slate-800">{ms.map(m => m.code).join(', ') || '—'}</p>
+              <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                {gaps} open gap{gaps !== 1 ? 's' : ''} in this panel. {type === 'Process'
+                  ? 'Each closes when the service is delivered or documented — necessary, but a closed gap here does not by itself mean anyone is healthier.'
+                  : 'Each closes only when a clinical result changes, which is why CMS weights these three times a process measure in Star Ratings.'}
+              </p>
+            </div>
+          );
+        })}
       </div>
 
       {/* Measure detail panel */}
@@ -326,7 +380,7 @@ function HEDISPanelView() {
             </div>
             {activeMeasure.meta.vermont && (
               <div className="sm:col-span-3 bg-emerald-50 border border-emerald-200 rounded-lg p-3">
-                <p className="text-[10px] font-black uppercase tracking-widest text-emerald-700 mb-1">Vermont AHEAD Context</p>
+                <p className="text-[10px] font-black uppercase tracking-widest text-emerald-700 mb-1">Vermont Context</p>
                 <p className="text-emerald-800 leading-relaxed">{activeMeasure.meta.vermont}</p>
               </div>
             )}
@@ -425,7 +479,7 @@ function ReadmissionView() {
     <div>
       <div className="mb-4 p-4 bg-blue-50 border border-blue-200 rounded-xl">
         <p className="text-xs text-blue-800 leading-relaxed">
-          <strong>CMS 30-Day Readmission:</strong> CMS measures all-cause 30-day readmission for AMI, HF, pneumonia, COPD, stroke, and CABG under the Hospital Readmissions Reduction Program (HRRP). For ACOs and VBC contracts, 30-day readmission is tracked across all conditions. A readmission within 30 days of a qualifying index discharge is attributed to the discharging hospital unless an exclusion applies (planned procedure, transfer, death). Under Vermont AHEAD, hospitals face financial penalties for excess readmissions above a risk-adjusted expected rate.
+          <strong>CMS 30-Day Readmission:</strong> CMS measures all-cause 30-day readmission for AMI, HF, pneumonia, COPD, stroke, and CABG under the Hospital Readmissions Reduction Program (HRRP). For ACOs and VBC contracts, 30-day readmission is tracked across all conditions. A readmission within 30 days of a qualifying index discharge is attributed to the discharging hospital unless an exclusion applies (planned procedure, transfer, death).
         </p>
       </div>
 
@@ -557,7 +611,7 @@ function AvoidableEDView() {
     <div>
       <div className="mb-4 p-4 bg-blue-50 border border-blue-200 rounded-xl">
         <p className="text-xs text-blue-800 leading-relaxed">
-          <strong>AHRQ Prevention Quality Indicators (PQIs):</strong> PQIs identify ambulatory care–sensitive conditions (ACSCs) — diagnoses where timely and effective outpatient care can prevent or reduce the need for ED visits or hospitalizations. Under VBC contracts, ACOs are measured on ACSC admission rates and bear financial risk for preventable utilization. Vermont AHEAD specifically tracks PQI #1 (Diabetes), PQI #5 (COPD), and PQI #8 (CHF) as VBC performance metrics.
+          <strong>AHRQ Prevention Quality Indicators (PQIs):</strong> PQIs identify ambulatory care–sensitive conditions (ACSCs) — diagnoses where timely and effective outpatient care can prevent or reduce the need for ED visits or hospitalizations. Under VBC contracts, ACOs are measured on ACSC admission rates and bear financial risk for preventable utilization.
         </p>
       </div>
 

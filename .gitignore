@@ -41,3 +41,7 @@ formation/
 # Book build snapshots (local only)
 book-archive/
 Book Latest Version/
+
+# Narration audio is served from Supabase Storage (bucket narration-audio); never commit it
+frontend/public/audio/narration/*.m4a
+frontend/public/audio/narration/*.wav

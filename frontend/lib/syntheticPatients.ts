@@ -267,7 +267,7 @@ const marcus: SyntheticPatient = {
   ],
   scenario: 'CHF Avoidable ED & BP Gap',
   scenarioTitle: 'Marcus Webb — CHF Fluid Overload & Blood Pressure Uncontrolled',
-  keyLearning: 'Marcus has two avoidable ED visits for CHF decompensation that together cost $4,800. No remote weight monitoring was in place. His BP remains at 158/94 despite three antihypertensives, flagging a medication reconciliation and adherence problem. Enrolling him in RPM (daily weight + BP telemetry) is estimated to reduce ED utilization by 60% based on Vermont AHEAD RPM pilot data.',
+  keyLearning: 'Marcus has two avoidable ED visits for CHF decompensation that together cost $4,800. No remote weight monitoring was in place. His BP remains at 158/94 despite three antihypertensives, flagging a medication reconciliation and adherence problem. Enrolling him in RPM (daily weight + BP telemetry) could reduce his ED utilization.',
   sdohFlags: ['Social isolation — lives alone', 'Fixed income — medication cost burden'],
   totalCostPMPY: 38600,
   diagnoses: [
@@ -473,7 +473,7 @@ const james: SyntheticPatient = {
   ],
   scenario: 'COPD Avoidable ED & Low-Value Imaging',
   scenarioTitle: 'James Bouchard — COPD Exacerbations & Choosing Wisely Flags',
-  keyLearning: 'James has four COPD-related ED visits in 12 months — all qualify as ACSC ambulatory-care-sensitive. An action-plan-based pulmonary rehab referral + telephonic nurse coaching (Vermont AHEAD care management benefit) could prevent an estimated 3 of 4 visits. Additionally, he has received 6 chest X-rays in 12 months despite stable COPD — Choosing Wisely recommends against routine chest X-rays in stable COPD, flagging ~$840 in potential low-value imaging spend.',
+  keyLearning: 'James has four COPD-related ED visits in 12 months — all qualify as ACSC ambulatory-care-sensitive. An action-plan-based pulmonary rehab referral + telephonic nurse coaching (a care management service) could prevent an estimated 3 of 4 visits. Additionally, he has received 6 chest X-rays in 12 months despite stable COPD — Choosing Wisely recommends against routine chest X-rays in stable COPD, flagging ~$840 in potential low-value imaging spend.',
   sdohFlags: ['Former smoker (50 pack-years)', 'Rural Franklin County — limited pulmonology access', 'Caregiver fatigue (spouse 79 years old)'],
   totalCostPMPY: 31200,
   diagnoses: [
@@ -546,7 +546,7 @@ const sarah: SyntheticPatient = {
   ],
   scenario: 'Behavioral Health + FUH Gap',
   scenarioTitle: 'Sarah Thibodeau — MDD Hospitalization & Follow-Up Failure',
-  keyLearning: 'Sarah was hospitalized for a MDD episode and discharged without a follow-up appointment within 7 days — failing the HEDIS FUH measure. Vermont AHEAD has explicit BH integration benchmarks, and Rutland County has some of the highest MDD hospitalization rates in the state. Her BP is also uncontrolled but was not addressed during the BH hospitalization. This scenario illustrates how fragmented care coordination between BH and primary care creates compounding HEDIS gaps.',
+  keyLearning: 'Sarah was hospitalized for a MDD episode and discharged without a follow-up appointment within 7 days — failing the HEDIS FUH measure. Rutland County has some of the highest MDD hospitalization rates in the state. Her BP is also uncontrolled but was not addressed during the BH hospitalization. This scenario illustrates how fragmented care coordination between BH and primary care creates compounding HEDIS gaps.',
   sdohFlags: ['Housing instability — Rutland', 'Trauma history', 'Childcare responsibilities limiting appointment access'],
   totalCostPMPY: 18700,
   diagnoses: [

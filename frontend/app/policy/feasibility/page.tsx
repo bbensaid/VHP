@@ -115,7 +115,7 @@ function FeasibilityBody() {
             items: [
               "Maryland All-Payer Model: since 1977 — global hospital budget; all payers pay same rates",
               "Maryland results: hospital cost growth 2.3% below national trend; $1.4B Medicare savings 2014–2023",
-              "ACO Global Budget: Vermont AHEAD Model — population-based global budget for Medicaid + Medicare",
+              "Hospital Global Budget: Vermont Act 68 — statutory global budgets from FY2028 (Vermont withdrew from the federal AHEAD Model in July 2026)",
               "All-payer rate setting (national): could reduce hospital price variation — US prices 3× higher than Canada",
               "Political obstacle: hospital and insurer opposition; requires federal waiver or legislation",
               "Reference pricing (CA): CalPERS reference price for hip/knee replacement — drove 26% price reduction",

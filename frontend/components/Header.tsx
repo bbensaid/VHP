@@ -410,7 +410,7 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
     { href: "/vermont-act-167",              label: "Vermont Act 167 (2022)",          desc: "Hospital transformation & Oliver Wyman analysis" },
     { href: "/vermont-act-68",               label: "Vermont Act 68 (2025)",           desc: "Next-generation VBC legislation & global budget reform" },
     { href: "/vermont-act-68/simulator",     label: "Act 68 Simulator",               desc: "Model Act 68 financial scenarios for Vermont hospitals" },
-    { href: "/ahead-model",                  label: "AHEAD Model",                    desc: "All-payer total cost of care model — 6 states" },
+    { href: "/ahead-model",                  label: "AHEAD Model",                    desc: "State total cost of care model — MD, CT, HI, RI, NY region" },
     { href: "/dashboard/vermont/hospitals",  label: "Vermont Hospital Profiles",      desc: "Financial & quality profiles for Vermont hospitals" },
     { href: "/bed-capacity",                 label: "Bed Capacity & Transfer",        desc: "Real-time bed availability & interfacility routing" },
     { href: "/vermont-legislative-resources", label: "Legislative Reports Library",   desc: "GMCB reports, AHS Act 68 monthly updates, Blueprint annual reports, House committee testimony" },

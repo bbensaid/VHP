@@ -26,7 +26,7 @@ const HR1_PROVISIONS: Provision[] = [
     status: "enacted",
     impact: "High",
     impactColor: "text-rose-700 bg-rose-100 border-rose-200",
-    desc: "Work requirements for adults 19–55, provider tax restrictions, per-capita spending pressure. CBO: 10–15% coverage loss in states with high Medicaid penetration.",
+    desc: "Work requirements for expansion adults 19–64, provider tax restrictions, per-capita spending pressure. CBO: 10–15% coverage loss in states with high Medicaid penetration.",
     date: "July 4, 2025",
     tools: [{ label: "Model Medicaid Impact", href: "/research-lab/policy-quality?tab=policy" }],
   },
@@ -36,7 +36,7 @@ const HR1_PROVISIONS: Provision[] = [
     status: "enacted",
     impact: "Opportunity",
     impactColor: "text-emerald-700 bg-emerald-100 border-emerald-200",
-    desc: "50-state competitive grant program for rural hospital transformation. Vermont awarded $195M (December 2025). Funds telehealth, AI scribe, broadband, and CIN development.",
+    desc: "50-state competitive grant program for rural hospital transformation. Vermont awarded $195M a year (FY2026 award, December 2025). Funds telehealth, AI scribe, broadband, and CIN development.",
     date: "July 4, 2025",
     tools: [{ label: "Vermont RHT Program", href: "/vermont-rht-program" }],
   },
@@ -46,8 +46,8 @@ const HR1_PROVISIONS: Provision[] = [
     status: "implementation",
     impact: "High",
     impactColor: "text-amber-700 bg-amber-100 border-amber-200",
-    desc: "80+ hours/month of work, community service, or vocational training required for Medicaid adults 19–55 without dependents. Administrative burden causes coverage loss even for eligible individuals.",
-    date: "Effective 2026",
+    desc: "80+ hours/month of work, community service, or vocational training required for Medicaid expansion adults 19–64, with exemptions (including parents of young children). Administrative burden causes coverage loss even for eligible individuals.",
+    date: "Effective January 1, 2027",
     tools: [{ label: "Stress Test Hospital Revenue", href: "/research-lab/policy-quality?tab=scorecard" }],
   },
   {
@@ -78,7 +78,7 @@ const HR1_PROVISIONS: Provision[] = [
 const HR1_STATS = [
   { label: "$911B", sub: "10-year Medicaid cuts" },
   { label: "$50B", sub: "Rural Health Transformation Program" },
-  { label: "$195M", sub: "Vermont RHT award (Dec 2025)" },
+  { label: "$195M", sub: "Vermont RHT award per year (FY2026)" },
   { label: "Post-2030", sub: "Medicaid cliff inflection point" },
 ];
 

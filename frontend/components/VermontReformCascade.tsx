@@ -25,9 +25,9 @@ const REFORM_CASCADE: Act[] = [
     pillar: "Policy",
     pillarColor: "bg-blue-100 text-blue-700 border-blue-200",
     summary:
-      "The enabling framework. Directed AHS to negotiate the AHEAD Model State Agreement. Commissioned the Oliver Wyman $1M statewide hospital systems analysis that diagnosed Vermont's crisis. Established community engagement process without mandating specific outcomes.",
+      "The enabling framework. Directed negotiation of a successor all-payer agreement with CMS (later AHEAD). Commissioned the Oliver Wyman $1M statewide hospital systems analysis that diagnosed Vermont's crisis. Established community engagement process without mandating specific outcomes.",
     keyProvisions: [
-      "Directed AHS to negotiate AHEAD State Agreement with CMS",
+      "Directed negotiation of a successor all-payer agreement with CMS (later AHEAD)",
       "Commissioned Oliver Wyman hospital systems analysis (released September 2024)",
       "Established community and stakeholder engagement across all 14 hospitals",
       "Authorized GMCB to develop value-based payment models",
@@ -77,12 +77,12 @@ const REFORM_CASCADE: Act[] = [
     pillar: "Economics",
     pillarColor: "bg-emerald-100 text-emerald-700 border-emerald-200",
     summary:
-      "Federal partnership secured. Vermont and CMS signed the AHEAD Model State Agreement establishing all-payer global budget accountability for Medicare FFS. The federal counterpart to Act 68's state-level all-payer mandate.",
+      "Federal partnership signed, then abandoned. Vermont and CMS signed the AHEAD Model State Agreement in January 2025 as a Cohort 2 state. Vermont withdrew in July 2026, after CMS renegotiation capped the expected EAST Fund near $10M (from ~$138M) — before its performance period (January 2028) began.",
     keyProvisions: [
       "Total cost of care accountability for Medicare FFS beneficiaries",
       "Primary care investment floor requirements",
       "Health equity benchmark targets by Hospital Service Area",
-      "9-year performance period with CMS",
+      "Vermont withdrew July 2026 — none of these terms now apply to Vermont",
     ],
   },
   {
@@ -94,12 +94,12 @@ const REFORM_CASCADE: Act[] = [
     pillar: "Technology",
     pillarColor: "bg-indigo-100 text-indigo-700 border-indigo-200",
     summary:
-      "Technology governance. Transferred responsibility for Vermont's statewide Health Information Technology Plan from GMCB to DVHA (effective July 1, 2025). Aligns HIT strategy with DVHA's operational relationships with providers through Medicaid, Blueprint, and AHEAD.",
+      "Technology governance. Transferred responsibility for Vermont's statewide Health Information Technology Plan from GMCB to DVHA (effective July 1, 2025). Aligns HIT strategy with DVHA's operational relationships with providers through Medicaid and Blueprint.",
     keyProvisions: [
       "HIE Strategic Plan authority transferred from GMCB to DVHA",
       "Annual HIT Plan revisions due November 1; comprehensive updates every 5 years",
       "DVHA coordination with HIE Steering Committee",
-      "Aligns technology strategy with AHEAD implementation authority",
+      "Aligns technology strategy with DVHA's Medicaid and Blueprint operations",
     ],
   },
   {
@@ -111,25 +111,25 @@ const REFORM_CASCADE: Act[] = [
     pillar: "Policy",
     pillarColor: "bg-blue-100 text-blue-700 border-blue-200",
     summary:
-      "Mandatory structural reform. The culmination of the cascade — converts voluntary payment reform into statutory mandate. Requires reference-based pricing (FY2027), hospital global budgets (FY2028–2030), and a Statewide Strategic Plan (December 2028). The most consequential Vermont healthcare legislation since Act 48 created the GMCB in 2011.",
+      "Mandatory structural reform. The culmination of the cascade — converts voluntary payment reform into statutory mandate. Requires reference-based pricing (statutory deadline FY2027; GMCB method by rule in 2027, prices effective hospital FY2028), hospital global budgets (FY2028–2030), and a Statewide Strategic Plan (on or before January 15, 2028). The most consequential Vermont healthcare legislation since Act 48 created the GMCB in 2011.",
     keyProvisions: [
-      "Reference-based pricing mandatory FY2027 (hospitals cannot charge >X% of Medicare)",
-      "Hospital global budgets mandatory FY2028–2030 (all payers, non-CAH hospitals)",
-      "Statewide Health Care Delivery Strategic Plan due December 2028",
+      "Reference-based pricing: GMCB sets the method by rule in 2027; prices effective hospital FY2028 (statutory deadline FY2027)",
+      "Hospital global budgets mandatory FY2028–2030 (non-CAH hospitals first; Medicare alignment unresolved)",
+      "Statewide Health Care Delivery Strategic Plan due on or before January 15, 2028",
       "AHS organizational restructuring mandate",
       "$2M transformation grants authorized",
       "Mandatory hospital HIE connectivity (VITL/VHIE)",
       "2.5% commercial spending reduction required FY2026",
     ],
-    nextMilestone: "RBP effective FY2027",
+    nextMilestone: "GMCB sets RBP method by rule in 2027",
   },
 ];
 
 const UPCOMING_MILESTONES = [
   { date: "FY2026 (Current)", title: "2.5% Commercial Rate Reduction + Transformation Planning", desc: "All Vermont hospitals reduce commercial rates by 2.5%. RHRC technical assistance process for 14-hospital transformation plans underway. AHS restructuring in progress." },
-  { date: "FY2027", title: "Reference-Based Pricing Effective", desc: "Mandatory RBP replaces negotiated hospital-payer contracts. First observable premium reduction for Vermont consumers expected." },
-  { date: "FY2028–2030", title: "Hospital Global Budgets — Mandatory", desc: "All non-CAH hospitals operate under statutory global budgets. Full all-payer global budget model operational." },
-  { date: "December 2028", title: "Statewide Strategic Plan Due", desc: "AHS delivers the Statewide Health Care Delivery Strategic Plan to the Vermont Legislature with specific, measurable commitments." },
+  { date: "2027 → FY2028", title: "Reference-Based Pricing", desc: "GMCB sets the RBP method by rule in 2027; mandatory RBP prices take effect in hospital FY2028, replacing negotiated hospital-payer contracts. First observable premium reduction for Vermont consumers expected." },
+  { date: "FY2028–2030", title: "Hospital Global Budgets — Mandatory", desc: "Non-CAH hospitals operate under statutory global budgets from FY2028, all hospitals by FY2030. Set by the State for commercial payers and Medicaid; Medicare alignment is unresolved after the AHEAD withdrawal." },
+  { date: "January 15, 2028", title: "Statewide Strategic Plan Due", desc: "AHS delivers the Statewide Health Care Delivery Strategic Plan to the Vermont Legislature on or before January 15, 2028 (18 V.S.A. § 9403(d)(3)), with updates every three years from December 1, 2030." },
 ];
 
 const STATUS_STYLES = {

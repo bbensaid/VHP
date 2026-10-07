@@ -54,7 +54,12 @@ export type ReportSectionType =
   | "Financial Results"
   | "Quality Results"
   | "Lessons Learned"
-  | "Next Steps";
+  | "Next Steps"
+  | "Pillar Readiness Scores"
+  | "Dependency Gates"
+  | "Binding Constraint"
+  | "Equity Imperative Test"
+  | "Sequenced Action Plan";
 
 export interface ReportSection {
   id: string;
@@ -140,7 +145,24 @@ export const SECTION_TYPES: ReportSectionType[] = [
   "Appendix",
 ];
 
-export const REPORT_TEMPLATES: Record<string, { label: string; sections: ReportSectionType[] }> = {
+export const REPORT_TEMPLATES: Record<string, {
+  label: string;
+  sections: ReportSectionType[];
+  /** Optional starter text per section — used by the book-framework templates to pose the question each section must answer. */
+  prompts?: Partial<Record<ReportSectionType, string>>;
+}> = {
+  fivePillar: {
+    label: "Five-Pillar Sequencing Analysis (the book's framework)",
+    sections: ["Executive Summary", "Pillar Readiness Scores", "Dependency Gates", "Binding Constraint", "Equity Imperative Test", "Sequenced Action Plan"],
+    prompts: {
+      "Executive Summary": "In one paragraph: is this organization (or state) building its pillars in dependency order, and if not, which gate is it ahead of? (Book Ch. 1 §1.8)",
+      "Pillar Readiness Scores": "Score each pillar 0-100 with your own numbers, answering its diagnostic question: Policy — is it permissible? Technology — is it possible? Economics — is it sustainable? Clinical — is it effective? Operations — is it executable? Run the scores on the HTR Simulator (/htr-simulator) and paste the delivered composite here.",
+      "Dependency Gates": "For each of the nine dependencies (Ch. 1 §1.4), state whether the upstream pillar is delivering the currency the downstream one needs: Policy → AUTHORITY, Technology → INFORMATION, Economics → INCENTIVES, Clinical → OUTCOMES, Operations → CAPACITY. Mark each gate open, partial, or closed.",
+      "Binding Constraint": "Name the one pillar whose improvement lifts delivered readiness most (the Friction Index finds it by sensitivity — /transformation-friction-index). Explain why it outranks the lowest-scoring pillar if they differ.",
+      "Equity Imperative Test": "For each pillar, does the design close gaps or only raise the average? Note any pillar that would penalize safety-net providers or widen a disparity (Ch. 10). Equity is a test of every pillar, not a sixth score.",
+      "Sequenced Action Plan": "List actions in build order — Policy, Technology, Economics, Clinical, Operations — and flag any funded initiative that sits behind a closed gate (premature investment, Ch. 7 / Ch. 15).",
+    },
+  },
   cea: {
     label: "CEA Research Brief",
     sections: ["Background", "Clinical Question", "Methodology", "ICER Results", "WTP Assessment", "Conclusions"],
@@ -160,6 +182,18 @@ export const REPORT_TEMPLATES: Record<string, { label: string; sections: ReportS
 };
 
 export const COMP_TEMPLATES: Record<string, { label: string; dimensions: { name: string; unit: string }[] }> = {
+  fivePillar: {
+    label: "Five-Pillar Readiness Comparison (the book's framework)",
+    dimensions: [
+      { name: "Policy readiness — is it permissible?", unit: "0-100" },
+      { name: "Technology readiness — is it possible?", unit: "0-100" },
+      { name: "Economics readiness — is it sustainable?", unit: "0-100" },
+      { name: "Clinical readiness — is it effective?", unit: "0-100" },
+      { name: "Operations readiness — is it executable?", unit: "0-100" },
+      { name: "Delivered composite after dependency gates (HTR Simulator)", unit: "0-100" },
+      { name: "Equity Imperative — gaps closed, not averaged", unit: "pass/fail" },
+    ],
+  },
   payment: {
     label: "Payment Model Comparison",
     dimensions: [

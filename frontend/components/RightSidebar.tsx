@@ -70,7 +70,7 @@ function getPageContext(path: string): string | undefined {
   if (path.startsWith("/vermont-act-68")) return "Vermont Act 68 — healthcare cost containment";
   if (path.startsWith("/vermont-rht-program")) return "Vermont Rural Health Transformation Program";
   if (path.startsWith("/vermont-medicaid")) return "Vermont Medicaid program";
-  if (path.startsWith("/ahead-model")) return "AHEAD Model — federal all-payer health equity initiative";
+  if (path.startsWith("/ahead-model")) return "AHEAD Model — CMS state total cost of care model";
   if (path.startsWith("/california-calaim")) return "California CalAIM — Medi-Cal transformation initiative";
 
   // Research lab

@@ -3,6 +3,7 @@
 import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import LabPageShell from '@/components/research/LabPageShell'
+import ToolBookCallout from '@/components/research/ToolBookCallout'
 import { toolBadgeClass } from '@/lib/taxonomy/badges'
 
 const APMDesignLab                = dynamic(() => import('@/components/research/APMDesignLab'),                { ssr: false })
@@ -100,6 +101,8 @@ export default function PaymentModelsClient() {
           </button>
         ))}
       </nav>
+
+      <ToolBookCallout href={`/research-lab/payment-models?tab=${activeTab}`} />
 
       {/* Active tool panel */}
       {activeTab === 'apm-design'   && <div><ToolHeader icon="🏗️" label="APM Design Lab"                        badge="Payment Innovation" desc={TABS[0].desc} /><APMDesignLab /></div>}

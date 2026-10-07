@@ -13,7 +13,7 @@
  * Logic: lib/framework/sequence-engine.ts (npm run test:engine).
  */
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { PillarId } from "@/lib/taxonomy/pillars";
 import { BUILD_ORDER } from "@/lib/framework/dependencies";
 import { runSequence, type PillarScores } from "@/lib/framework/sequence-engine";
@@ -68,6 +68,25 @@ const DEFAULT_FRICTION: Record<PillarId, number> = {
   operations: 50,
 };
 
+// A saved scoring, kept in this browser only, so a reader can re-score later and see which
+// pillar's friction is RISING (Chapter 14 §14.6: rising friction shows in the operating data
+// a year before it becomes a legislative problem). Per-viewer convenience — not shared state.
+const SNAPSHOT_KEY = "htr-friction-snapshot-v1";
+interface Snapshot {
+  savedAt: string;
+  friction: Record<PillarId, number>;
+}
+function readSnapshot(): Snapshot | null {
+  try {
+    const raw = window.localStorage.getItem(SNAPSHOT_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as Snapshot;
+    return parsed && parsed.friction && parsed.savedAt ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
 function band(score: number) {
   if (score >= 70) return { label: "SEVERE", cls: "bg-rose-100 text-rose-800 border-rose-200" };
   if (score >= 40) return { label: "SIGNIFICANT", cls: "bg-amber-100 text-amber-800 border-amber-200" };
@@ -77,6 +96,19 @@ function band(score: number) {
 export default function FrictionScorer() {
   const [friction, setFriction] = useState<Record<PillarId, number>>(DEFAULT_FRICTION);
   const [equityFriction, setEquityFriction] = useState(40);
+  const [snapshot, setSnapshot] = useState<Snapshot | null>(null);
+  useEffect(() => {
+    setSnapshot(readSnapshot());
+  }, []);
+  const saveSnapshot = () => {
+    const snap: Snapshot = { savedAt: new Date().toISOString(), friction };
+    try {
+      window.localStorage.setItem(SNAPSHOT_KEY, JSON.stringify(snap));
+    } catch {
+      // storage unavailable (private window, blocked site data) — keep it for this visit only
+    }
+    setSnapshot(snap);
+  };
 
   const { compositeFriction, binding, delivered } = useMemo(() => {
     // Friction inverted is readiness, which is what the dependency engine takes.
@@ -176,6 +208,48 @@ export default function FrictionScorer() {
               </p>
             </div>
           )}
+
+          <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+            <div className="flex items-center justify-between gap-3 mb-1">
+              <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Is friction rising?</p>
+              <button
+                type="button"
+                onClick={saveSnapshot}
+                className="text-[10px] font-black uppercase tracking-wider text-slate-700 bg-white border border-slate-300 hover:border-slate-500 rounded px-2 py-1"
+              >
+                Save this scoring
+              </button>
+            </div>
+            {snapshot ? (
+              <>
+                <p className="text-[11px] text-slate-500 mb-2">
+                  Change since your scoring of {new Date(snapshot.savedAt).toLocaleDateString()}:
+                </p>
+                <ul className="space-y-1">
+                  {BUILD_ORDER.map((id) => {
+                    const delta = friction[id] - (snapshot.friction[id] ?? friction[id]);
+                    return (
+                      <li key={id} className="flex justify-between text-xs">
+                        <span className="text-slate-700">{DIMENSION[id].label}</span>
+                        <span
+                          data-testid={`friction-delta-${id}`}
+                          className={`font-black tabular-nums ${delta > 0 ? "text-rose-700" : delta < 0 ? "text-emerald-700" : "text-slate-400"}`}
+                        >
+                          {delta > 0 ? `rising +${delta}` : delta < 0 ? `falling ${delta}` : "flat"}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </>
+            ) : (
+              <p className="text-[11px] text-slate-500 leading-relaxed">
+                Save today&apos;s scoring, then come back and re-score as your operating data moves. A pillar whose friction keeps
+                rising is the early warning Chapter 14 describes — visible here well before it becomes a political story.
+                Saved in this browser only.
+              </p>
+            )}
+          </div>
 
           <div className="rounded-xl border border-violet-200 bg-violet-50/60 p-4">
             <div className="flex items-baseline justify-between mb-1.5">

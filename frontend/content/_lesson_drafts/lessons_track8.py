@@ -75,7 +75,7 @@ LESSONS = [
             {
                 "type": "text",
                 "heading": "Project, Program, Portfolio: Getting the Levels Right",
-                "body": "The diagnostic question is not whether this infrastructure is needed -- Oliver Wyman answered that in August 2024 -- but whether it is being built fast enough. The honest answer from AHS's own November 2025 report is no. AHS is managing Vermont's transformation as a collection of projects without the program or portfolio infrastructure to coordinate them, sequenced by who is available rather than by what the portfolio needs.\n\nA single concrete example carries all three levels at once. The VHCURES analytics-vendor deployment is a project, with its own scope, schedule, and budget. It sits inside the Technology pillar's program, which coordinates it with VITL expansion, the CIN build-out, and the statewide AI-governance framework to produce a benefit -- real-time, disaggregated population visibility -- that no single one of those projects delivers alone. And that program is one of five feeding the portfolio as a whole, which exists to hit Act 167's statutory goals on the December 2028 deadline.",
+                "body": "The diagnostic question is not whether this infrastructure is needed -- Oliver Wyman answered that in August 2024 -- but whether it is being built fast enough. The honest answer from AHS's own November 2025 report is no. AHS is managing Vermont's transformation as a collection of projects without the program or portfolio infrastructure to coordinate them, sequenced by who is available rather than by what the portfolio needs.\n\nA single concrete example carries all three levels at once. The VHCURES analytics-vendor deployment is a project, with its own scope, schedule, and budget. It sits inside the Technology pillar's program, which coordinates it with VITL expansion, the CIN build-out, and the statewide AI-governance framework to produce a benefit -- real-time, disaggregated population visibility -- that no single one of those projects delivers alone. And that program is one of five feeding the portfolio as a whole, which exists to hit Act 167's statutory goals on the schedule Act 68 sets, beginning with the January 15, 2028 Strategic Plan deadline.",
             },
             {
                 "type": "comparison_table",
@@ -149,7 +149,7 @@ LESSONS = [
             {
                 "type": "text",
                 "heading": "The Portfolio Risk Register",
-                "body": "PMI's discipline scores each risk as probability times impact. Two risks tie for Vermont's highest score of 20: the analytics vendor not being operational by January 2027 (hospitals entering AHEAD without financial-management capability), and portfolio-management infrastructure itself not being established before the 2027 deadlines -- a risk that is, notably, the primary motivation for this lesson.\n\nA lower-scored risk deserves specific attention because of what it reveals about the equity sequencing error covered earlier in this course: social-risk adjustment not being adopted before FY2028 budgets scores only 12, precisely because its formal deadline is comparatively distant -- yet it is exactly the kind of component the sequencing test above says should be running in parallel right now, not scheduled by its own due date.",
+                "body": "PMI's discipline scores each risk as probability times impact. Two risks tie for Vermont's highest score of 20: the analytics vendor not being operational by January 2027 (hospitals entering global budgets without financial-management capability), and portfolio-management infrastructure itself not being established before the 2027 deadlines -- a risk that is, notably, the primary motivation for this lesson.\n\nA lower-scored risk deserves specific attention because of what it reveals about the equity sequencing error covered earlier in this course: social-risk adjustment not being adopted before FY2028 budgets scores only 12, precisely because its formal deadline is comparatively distant -- yet it is exactly the kind of component the sequencing test above says should be running in parallel right now, not scheduled by its own due date.",
             },
             {
                 "type": "key_stat",
@@ -161,7 +161,7 @@ LESSONS = [
                     },
                     {
                         "value": "<2%",
-                        "label": "Cost of a staffed Portfolio Management Office as a share of the portfolio value it protects (roughly $195M in RHT capital, about $150M a year in EAST Fund, and $300M-plus in projected RBP savings)",
+                        "label": "Cost of a staffed Portfolio Management Office as a share of the portfolio value it protects (roughly $195M a year in RHT capital and $300M-plus in projected RBP savings; the EAST Fund, once expected at about $150M a year, fell away when Vermont left AHEAD in July 2026)",
                         "source": "PMI Pulse of the Profession (2017); Vermont RHT Program Application",
                     },
                     {
@@ -375,12 +375,12 @@ LESSONS = [
             {
                 "type": "text",
                 "heading": "What's Hard to Reverse",
-                "body": "Federal agreements. The AHEAD State Agreement, signed with CMS in January 2025, is a binding federal-state agreement with a nine-year performance period. Reversal requires CMS consent and forfeits enhanced PMPM payments and capital.\n\nCapital already committed. The Rural Health Transformation Program's roughly $195 million a year for five years is federal capital already flowing into Vermont's system. The CIN infrastructure, IT upgrades, and analytics platforms it buys create constituencies for their own continuation once built.\n\nThe reform cascade. Act 167, Act 51, and Act 68 built legitimacy incrementally; each act created institutions -- the Health Care Delivery Advisory Committee, expanded GMCB authority, the AHS HSA-coordinator model -- that are now constituencies for the next reform. Dismantling Act 68 would mean dismantling those institutions too.\n\nThe financial crisis itself. Oliver Wyman's projection of 13 of 14 hospitals in operating losses by 2028 does not disappear if Act 68 is weakened. The case for transformation rests on a reality that is not politically manufactured.",
+                "body": "Federal agreements. The AHEAD State Agreement, signed with CMS in January 2025, was meant to bind Vermont into a federal-state model running through 2035. It proved less durable than its form suggested: after CMS renegotiated the terms and capped the expected EAST Fund near $10 million (from roughly $138 million), Vermont withdrew in July 2026, before its performance period began.\n\nCapital already committed. The Rural Health Transformation Program's $195 million FY2026 award -- an annual amount in a program that runs through FY2030, not a five-year total -- is federal capital already flowing into Vermont's system. The CIN infrastructure, IT upgrades, and analytics platforms it buys create constituencies for their own continuation once built.\n\nThe reform cascade. Act 167, Act 51, and Act 68 built legitimacy incrementally; each act created institutions -- the Health Care Delivery Advisory Committee, expanded GMCB authority, the AHS HSA-coordinator model -- that are now constituencies for the next reform. Dismantling Act 68 would mean dismantling those institutions too.\n\nThe financial crisis itself. Oliver Wyman's projection of 13 of 14 hospitals in operating losses by 2028 does not disappear if Act 68 is weakened. The case for transformation rests on a reality that is not politically manufactured.",
             },
             {
                 "type": "text",
                 "heading": "What's Politically Exposed",
-                "body": "RBP methodology. RBP is mandatory from FY2027, but the methodology that sets reference prices is a GMCB regulatory determination -- it can be set so reference prices sit close to current commercial rates, or with exemptions broad enough that little repricing actually happens. Hospital lobbying targets the methodology, not the mandate itself.\n\nGlobal-budget levels. Act 68 requires global budgets from FY2028, but GMCB sets the levels. Budgets calibrated to require no behavioral change produce no transformation. The risk here is not repeal -- it is the appearance of accountability without its substance.\n\nStrategic Plan scope. Act 68 requires the December 2028 plan but does not fully specify its content. A plan that is descriptive rather than committal satisfies the statute while producing none of the intended outcomes -- the most politically convenient failure mode.\n\nFederal Medicaid funding. H.R. 1's $911 billion in Medicaid cuts, enacted in July 2025, pressure Vermont's transformation financing directly, since EAST Fund investments are partly financed through enhanced federal PMPM payments.",
+                "body": "RBP methodology. Act 68 requires RBP no later than hospital FY2027 -- GMCB sets the method by rule in 2027, with prices effective in hospital FY2028 -- but the methodology that sets reference prices is a GMCB regulatory determination -- it can be set so reference prices sit close to current commercial rates, or with exemptions broad enough that little repricing actually happens. Hospital lobbying targets the methodology, not the mandate itself.\n\nGlobal-budget levels. Act 68 requires global budgets from FY2028, but GMCB sets the levels. Budgets calibrated to require no behavioral change produce no transformation. The risk here is not repeal -- it is the appearance of accountability without its substance.\n\nStrategic Plan scope. Act 68 requires the Strategic Plan on or before January 15, 2028 but does not fully specify its content. A plan that is descriptive rather than committal satisfies the statute while producing none of the intended outcomes -- the most politically convenient failure mode.\n\nFederal Medicaid funding. H.R. 1's $911 billion in Medicaid cuts, enacted in July 2025, pressure Vermont's transformation financing directly.",
             },
             {
                 "type": "comparison_table",
@@ -388,8 +388,8 @@ LESSONS = [
                 "rows": [
                     {
                         "label": "Federal agreement",
-                        "left": "AHEAD State Agreement (January 2025): nine-year performance period, CMS consent required to exit.",
-                        "right": "Its methodology and total-cost-of-care targets are negotiated year to year -- durable in form, adjustable in substance.",
+                        "left": "AHEAD State Agreement (January 2025): a model term running through 2035, on terms CMS could renegotiate.",
+                        "right": "CMS did renegotiate, capping the expected EAST Fund near $10 million, and Vermont withdrew in July 2026 -- durable in form, adjustable in substance.",
                     },
                     {
                         "label": "Statutory deadline",
@@ -398,8 +398,8 @@ LESSONS = [
                     },
                     {
                         "label": "Capital",
-                        "left": "$195M a year in RHT Program funding already committed and flowing.",
-                        "right": "EAST Fund spending levels and the December 2028 Strategic Plan's actual content remain discretionary in practice, even where required in form.",
+                        "left": "$195M FY2026 RHT Program award (an annual amount, not a five-year total) committed and flowing.",
+                        "right": "The January 2028 Strategic Plan's actual content remains discretionary in practice, even where required in form.",
                     },
                     {
                         "label": "Institutions",
@@ -426,13 +426,13 @@ LESSONS = [
             {
                 "type": "text",
                 "heading": "The UVMMC Test Case: What 'Mandatory' Actually Means",
-                "body": "A mandatory regime is only as real as its enforcement. Act 68 gives GMCB subpoena authority and data-sharing power with the Department of Financial Regulation. GMCB's FY23 enforcement actions against UVMMC ($80.3 million overage) and Rutland Regional Medical Center ($11.1 million overage) were the first such actions in Vermont's regulatory history.\n\nUVMMC -- Vermont's largest, most politically influential hospital system -- challenged that enforcement in court. The challenge was decided against UVMMC, and the ruling did not turn on a narrow technicality that leaves the broader question open; GMCB's core enforcement authority was upheld.\n\nThree things follow. First, GMCB's corrective-action and budget-order mechanisms are now judicially tested, not merely statutory -- a materially stronger form of 'mandatory' than untested authority. Second, the precedent was set against the largest and most capable potential challenger, and it went against the hospital. Third, for any hospital weighing noncompliance heading into the FY2027-2028 transition, the 'we'll fight it in court and win' branch is now foreclosed by precedent, not just by statute.",
+                "body": "A mandatory regime is only as real as its enforcement. Act 68 gives GMCB subpoena authority and data-sharing power with the Department of Financial Regulation. GMCB's FY23 enforcement actions against UVMMC ($80.3 million overage) and Rutland Regional Medical Center ($11.1 million overage) were the first such actions in Vermont's regulatory history.\n\nUVMMC -- Vermont's largest, most politically influential hospital system -- appealed GMCB's FY23 enforcement order and its FY25 budget order in October 2024. There was no court ruling. Under an April 4, 2025 settlement, UVMMC dismissed its appeals; the enforcement order was stayed and the remaining reductions were spread over FY26 and FY27.\n\nThree things follow -- and one does not. First, GMCB's corrective-action and budget-order mechanisms were challenged by the largest and most capable potential opponent, and the challenge ended with the hospital dismissing its appeals and accepting the reductions on a revised schedule. Second, the settlement shows the practical shape of enforcement: the reductions stood, but their timing was negotiable. Third, what does not follow: because no court ruled, there is no judicial precedent. For any hospital weighing noncompliance heading into the FY2027-2028 transition, how a court would treat GMCB's authority remains legally untested.",
             },
             {
                 "type": "callout",
                 "variant": "info",
-                "heading": "Why a Tested Precedent Outranks an Untested Statute",
-                "body": "A statute never enforced against a determined, well-resourced opponent is a hypothesis about what 'mandatory' means. UVMMC v. GMCB is the test: the state's largest, most capable hospital system challenged the regulator directly and lost. That is the strongest available evidence that Vermont's mandatory architecture is real rather than aspirational -- and it is exactly the kind of evidence a reader should look for before assuming any other state's 'mandatory' reform will hold.",
+                "heading": "What a Settled Challenge Does and Does Not Prove",
+                "body": "A statute never enforced against a determined, well-resourced opponent is a hypothesis about what 'mandatory' means. UVMMC's appeals were the first test: the state's largest, most capable hospital system challenged the regulator directly, then dismissed its appeals under an April 2025 settlement that kept the reductions while spreading them over FY26-FY27. That is real evidence that Vermont's mandatory architecture has teeth -- but it is a negotiated outcome, not a court ruling, and a reader should weigh it as such before assuming any state's 'mandatory' reform will hold.",
             },
             {
                 "type": "comparison_table",
@@ -454,7 +454,7 @@ LESSONS = [
                         "right": "Severity: High. Monitor GMCB's FY2028 budget guidance.",
                     },
                     {
-                        "label": "December 2028 plan still 'in progress' in November 2028 reports",
+                        "label": "January 2028 plan still 'in progress' in December 2027 reports",
                         "left": "Indicates an operations failure, with the deadline unlikely to be met.",
                         "right": "Severity: High. Monitor AHS monthly transformation reports.",
                     },
@@ -468,14 +468,14 @@ LESSONS = [
             {
                 "type": "text",
                 "heading": "Four Strategies for Operating Inside Political Risk",
-                "body": "Build investments that are hard to reverse. An organization that hires the staff, builds the workflows, and stands up the data infrastructure creates facts on the ground that survive a change in the political environment -- a hospital that completes NCQA PCMH recognition, or deploys the Collaborative Care Model, holds a capability that produces value under any payment model, not only under AHEAD's specific design.\n\nEngage the regulatory process early and substantively. RBP methodology and global-budget levels are set through GMCB's rulemaking. Organizations that show up with real financial data and model the impact of specific methodology choices shape outcomes more than those that engage only through public opposition.\n\nMaintain scenario plans for disruption. Every organization with AHEAD exposure should model at least three scenarios: RBP delayed 18-plus months, global-budget levels set 10 percent or more above current commercial rates, and EAST Fund cuts of 30 percent or more. These are planning inputs, not predictions -- the point is to prioritize investments that hold value across all three.\n\nDocument and communicate progress. AHS's monthly transformation reports, required by Act 68, are the primary vehicle for demonstrating that transformation is working. Political protection ultimately rests on evidence, not argument.",
+                "body": "Build investments that are hard to reverse. An organization that hires the staff, builds the workflows, and stands up the data infrastructure creates facts on the ground that survive a change in the political environment -- a hospital that completes NCQA PCMH recognition, or deploys the Collaborative Care Model, holds a capability that produces value under any payment model, not only under AHEAD's specific design.\n\nEngage the regulatory process early and substantively. RBP methodology and global-budget levels are set through GMCB's rulemaking. Organizations that show up with real financial data and model the impact of specific methodology choices shape outcomes more than those that engage only through public opposition.\n\nMaintain scenario plans for disruption. Every organization with global-budget exposure should model at least three scenarios: RBP delayed 18-plus months, global-budget levels set 10 percent or more above current commercial rates, and cuts of 30 percent or more to expected federal transformation funding. These are planning inputs, not predictions -- the point is to prioritize investments that hold value across all three.\n\nDocument and communicate progress. AHS's monthly transformation reports, required by Act 68, are the primary vehicle for demonstrating that transformation is working. Political protection ultimately rests on evidence, not argument.",
             },
             {
                 "type": "key_stat",
                 "stats": [
                     {
                         "value": "35-45%",
-                        "label": "HTR's assessed probability of a 30%+ EAST Fund cut, driven by H.R. 1's federal Medicaid reductions -- the single highest-probability disruption scenario on Vermont's political risk register",
+                        "label": "HTR's assessed probability of a 30%+ EAST Fund cut, driven by H.R. 1's federal Medicaid reductions -- the single highest-probability disruption scenario on Vermont's political risk register -- since overtaken: CMS capped the expected EAST Fund near $10 million and Vermont withdrew from AHEAD in July 2026",
                         "source": "HTR Advisory political-risk assessment, April 2026",
                     },
                     {
@@ -511,15 +511,15 @@ LESSONS = [
                     },
                     {
                         "label": "Vermont's equivalent choice",
-                        "left": "GMCB's authority is statutory and has been judicially tested (UVMMC) -- closer to Maryland's design.",
-                        "right": "AHEAD's federal agreement still requires ongoing CMS negotiation -- closer to Arkansas's exposure, which is why a CMS AHEAD waiver-modification request is flagged as a 'Very High' severity signal.",
+                        "left": "GMCB's authority is statutory and has been tested by a real challenge (UVMMC's appeals, dismissed under an April 2025 settlement) -- closer to Maryland's design.",
+                        "right": "The AHEAD agreement depended on CMS's continuing terms -- closer to Arkansas's exposure, and it played out that way: CMS renegotiated, capped the expected EAST Fund near $10 million, and Vermont withdrew from AHEAD in July 2026.",
                     },
                 ],
             },
             {
                 "type": "text",
                 "heading": "The Reform Cascade as Political-Sustainability Architecture",
-                "body": "Vermont's Act 167 to Act 51 to Act 68 sequence is itself a sustainability design, not just a legislative history. Act 167's 230-plus public meetings and 3,100-plus participants created legitimacy for Act 68's mandates by making the crisis visible and involving the communities affected. Communities that helped diagnose their own system's problems are harder to convince the problems do not exist.\n\nAct 68 adds a second feature: it makes failure visible. Monthly legislative reports, quarterly GMCB rate-setting updates, and the December 2028 deadline create continuous public accountability -- if the mandate is weakened, the weakening shows up in public reporting, which makes deliberate erosion politically costly rather than quiet.\n\nThe transferable lesson for any state: diagnosis before legislation, public process before mandate, incremental capacity-building before full accountability, and continuous public reporting that makes both progress and failure equally visible. States that attempt the whole architecture in one bill hand opponents a single target instead of three.",
+                "body": "Vermont's Act 167 to Act 51 to Act 68 sequence is itself a sustainability design, not just a legislative history. Act 167's 230-plus public meetings and 3,100-plus participants created legitimacy for Act 68's mandates by making the crisis visible and involving the communities affected. Communities that helped diagnose their own system's problems are harder to convince the problems do not exist.\n\nAct 68 adds a second feature: it makes failure visible. Monthly legislative reports, quarterly GMCB rate-setting updates, and the January 15, 2028 Strategic Plan deadline create continuous public accountability -- if the mandate is weakened, the weakening shows up in public reporting, which makes deliberate erosion politically costly rather than quiet.\n\nThe transferable lesson for any state: diagnosis before legislation, public process before mandate, incremental capacity-building before full accountability, and continuous public reporting that makes both progress and failure equally visible. States that attempt the whole architecture in one bill hand opponents a single target instead of three.",
             },
             {
                 "type": "callout",
@@ -806,14 +806,14 @@ LESSONS = [
                     {
                         "label": "Sustain acceleration (Step 7)",
                         "left": "Original formulation: use early wins to drive deeper change.",
-                        "right": "Vermont: the statutory mandate itself -- Act 68's December 2028 deadline -- is the mechanism, because momentum has to survive multiple election cycles and budget battles, not just one leadership tenure.",
+                        "right": "Vermont: the statutory mandate itself -- Act 68's January 15, 2028 Strategic Plan deadline -- is the mechanism, because momentum has to survive multiple election cycles and budget battles, not just one leadership tenure.",
                     },
                 ],
             },
             {
                 "type": "text",
                 "heading": "The Transformation Pace Problem",
-                "body": "One of the most consequential technical-assistance questions is pace: how fast can an organization or system realistically change, and what happens when the required pace exceeds available capacity? Vermont's statutory deadlines -- RBP by FY2027, global budgets by FY2028 -- set the required pace; whether organizational capacity can match it is the open execution question.\n\nThe pace problem has three distinct dimensions. Hard capacity constraints: if AHS lacks staff to manage 14 hospital transformation plans at once, the plans get managed sequentially, and some hospitals end up with rushed or superficial plans through no fault of their own. Soft capacity constraints: organizational cultures process change slowly, governing boards need to be educated before they can decide, and community buy-in that is not genuinely gathered gets politically reversed even when it is technically correct. External constraints: federal program timelines set by someone else (AHEAD's January 2028 launch is a federal decision, not Vermont's), hospital financial positions that can force emergency decisions preempting a planned timeline, and the political relationships a state's hospital community boards hold with legislators.",
+                "body": "One of the most consequential technical-assistance questions is pace: how fast can an organization or system realistically change, and what happens when the required pace exceeds available capacity? Vermont's statutory deadlines -- RBP by FY2027, global budgets by FY2028 -- set the required pace; whether organizational capacity can match it is the open execution question.\n\nThe pace problem has three distinct dimensions. Hard capacity constraints: if AHS lacks staff to manage 14 hospital transformation plans at once, the plans get managed sequentially, and some hospitals end up with rushed or superficial plans through no fault of their own. Soft capacity constraints: organizational cultures process change slowly, governing boards need to be educated before they can decide, and community buy-in that is not genuinely gathered gets politically reversed even when it is technically correct. External constraints: federal program timelines set by someone else (AHEAD's January 2028 launch was a federal decision, not Vermont's -- and Vermont withdrew from AHEAD in July 2026, before its performance period began), hospital financial positions that can force emergency decisions preempting a planned timeline, and the political relationships a state's hospital community boards hold with legislators.",
             },
             {
                 "type": "text",

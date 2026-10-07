@@ -400,6 +400,10 @@ interface TierDist {
 
 function PopulationSegmentation() {
   const [panelSize, setPanelSize] = useState(5000);
+  // Share of the panel that can be attributed to a primary care relationship (e.g. a
+  // qualifying primary-care visit in the lookback window). User-set assumption — the
+  // attribution rule is contract-specific, so no default here is presented as data.
+  const [attributedPct, setAttributedPct] = useState(85);
   const [payer, setPayer] = useState({ Medicare: 40, Medicaid: 25, Commercial: 30, Uninsured: 5 });
   const [tierDist, setTierDist] = useState<TierDist>({
     "Very Low": 20,
@@ -912,6 +916,56 @@ function PopulationSegmentation() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Attribution — what a population budget is set on. Chapter 4 §4.9 sends readers
+            here to "see the attribution that global budgets require"; Appendix H Stage 2 asks
+            for "an attribution list and a total-cost-of-care view." */}
+        <div className="bg-white/10 rounded-lg p-4 mt-4" data-testid="attribution-view">
+          <div className="flex items-baseline justify-between mb-1">
+            <div className="text-xs text-rose-200 font-semibold uppercase">Attribution → total-cost-of-care budget</div>
+            <span className="text-sm font-bold text-white">{attributedPct}% attributable</span>
+          </div>
+          <input
+            type="range"
+            min={40}
+            max={100}
+            step={1}
+            value={attributedPct}
+            onChange={(e) => setAttributedPct(Number(e.target.value))}
+            className="w-full accent-rose-400"
+            aria-label="Share of panel attributable to a primary care relationship"
+          />
+          {(() => {
+            const attributed = Math.round(panelSize * (attributedPct / 100));
+            const unattributed = panelSize - attributed;
+            const perPatient = metrics.totalCost / panelSize;
+            const budgetBase = attributed * perPatient;
+            return (
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
+                <div>
+                  <div className="text-xs text-rose-200">Attributed lives</div>
+                  <div className="text-xl font-bold">{attributed.toLocaleString()}</div>
+                  <div className="text-[10px] text-rose-300">the attribution list a TCOC budget is set on</div>
+                </div>
+                <div>
+                  <div className="text-xs text-rose-200">Risk-weighted budget base</div>
+                  <div className="text-xl font-bold">${(budgetBase / 1_000_000).toFixed(1)}M</div>
+                  <div className="text-[10px] text-rose-300">${Math.round(perPatient / 12).toLocaleString()} PMPM at this tier mix</div>
+                </div>
+                <div>
+                  <div className="text-xs text-rose-200">Not attributable</div>
+                  <div className="text-xl font-bold">{unattributed.toLocaleString()}</div>
+                  <div className="text-[10px] text-rose-300">patients you treat but cannot budget or manage</div>
+                </div>
+              </div>
+            );
+          })()}
+          <p className="text-[10px] text-rose-300 mt-3 leading-relaxed">
+            The attributable share is your assumption — attribution rules are contract-specific. Unattributed patients are
+            assumed to share the panel&apos;s tier mix. The point the chapter makes: a budget can only be managed for the population
+            you can see, so the attribution list and the risk stratification have to exist before the budget does.
+          </p>
         </div>
       </div>
     </div>

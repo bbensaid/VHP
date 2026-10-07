@@ -83,10 +83,10 @@ CATALOG = [
     },
     {
         "id": "ahead-model",
-        "label": "Vermont AHEAD Model",
+        "label": "AHEAD Model",
         "url": "/ahead-model",
         "category": "Vermont",
-        "description": "Vermont's All-Payer Health Expenditure Approach — the CMMI model Vermont withdrew from in July 2026 after a federal funding renegotiation cut expected funds from ~$138M to a ~$10M cap. Covers the original structure and milestones, and why Act 68's state mandate carried the reform forward without it.",
+        "description": "CMS's AHEAD (Achieving Healthcare Efficiency through Accountable Design) state total cost of care model — participants Maryland, Connecticut, Hawaii, Rhode Island and a downstate New York region. Vermont signed in January 2025 and withdrew in July 2026 after a federal funding renegotiation cut expected funds from ~$138M to a ~$10M cap; covers why Act 68's state mandate carried the reform forward without it.",
         "keywords": ["ahead model", "all-payer model", "vermont ahead", "cmmi vermont", "green mountain care board"],
     },
     {

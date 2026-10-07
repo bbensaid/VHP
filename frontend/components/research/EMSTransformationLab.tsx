@@ -9,7 +9,7 @@ import { TrendingUp, Clock } from "lucide-react";
 // Vermont has 31 separate EMS agencies — fragmentation that drives avoidable ED
 // utilization. RHT funds (a) regionalization to cut operational redundancy and
 // (b) community paramedicine "treat-and-refer," keeping non-emergency patients
-// out of the ED. Under global budgets (Act 68 / AHEAD), every prevented ED visit
+// out of the ED. Under global budgets (Act 68), every prevented ED visit
 // and admission improves margin. This models the diversion volume and savings.
 //
 // Self-contained; Vermont-anchored planning figures. Illustrative.

@@ -146,7 +146,7 @@ function VCCIProgramOverview() {
       <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-xl text-xs">
         <p className="font-black text-indigo-800 mb-2">VCCI Within the Vermont Health System Architecture</p>
         <p className="text-indigo-700 leading-relaxed">
-          VCCI does not operate in isolation. It is one node in Vermont&apos;s multi-layer care management infrastructure: <strong>Blueprint for Health</strong> community health teams (CHTs) handle medium-risk members, <strong>VCCI</strong> handles high/very-high Medicaid members, and <strong>Vermont AHEAD ACO</strong> care management handles the attributed Medicare/commercial population. VCCI uses the same risk stratification tools and shared care plan processes as the ACO — enabling warm handoffs as patients move between Medicaid and Medicare. The CDPS risk score used by VCCI for Medicaid is the counterpart to the HCC RAF score used by AHEAD for Medicare.
+          VCCI does not operate in isolation. It is one node in Vermont&apos;s multi-layer care management infrastructure: <strong>Blueprint for Health</strong> community health teams (CHTs) handle medium-risk members, <strong>VCCI</strong> handles high/very-high Medicaid members, and <strong>Medicare ACO</strong> care management handles attributed Medicare members. VCCI uses the same risk stratification tools and shared care plan processes as the ACO — enabling warm handoffs as patients move between Medicaid and Medicare. The CDPS risk score used by VCCI for Medicaid is the counterpart to the HCC RAF score used for Medicare.
         </p>
       </div>
     </div>

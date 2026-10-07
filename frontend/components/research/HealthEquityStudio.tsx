@@ -544,7 +544,7 @@ const VERMONT_EQUITY_PRESETS = [
   {
     id: "vt_statewide",
     label: "Vermont Statewide Demographics",
-    badge: "AHEAD Equity Benchmark Baseline",
+    badge: "Statewide Equity Baseline",
     pop: { white: 94, black: 1, hispanic: 2, asian: 2, aian: 1 },
   },
   {
@@ -1573,6 +1573,80 @@ function HEROIComposite({
 }
 
 // ══════════════════════════════════════════════════════════════════════════════
+// GAP vs. AVERAGE TEST
+// Chapter 10 §10.17: "Whether an intervention closes the gap or just raises the average
+// while the gap persists." Pure arithmetic on the reader's own before/after rates —
+// the starting values are an example to overwrite, not data.
+// ══════════════════════════════════════════════════════════════════════════════
+function GapVsAverageTest() {
+  const [refBefore, setRefBefore] = useState(70);
+  const [refAfter, setRefAfter] = useState(78);
+  const [grpBefore, setGrpBefore] = useState(55);
+  const [grpAfter, setGrpAfter] = useState(58);
+  const [grpShare, setGrpShare] = useState(20);
+
+  const w = grpShare / 100;
+  const avgBefore = refBefore * (1 - w) + grpBefore * w;
+  const avgAfter = refAfter * (1 - w) + grpAfter * w;
+  const gapBefore = refBefore - grpBefore;
+  const gapAfter = refAfter - grpAfter;
+  const avgDelta = avgAfter - avgBefore;
+  const gapDelta = gapAfter - gapBefore;
+
+  const verdict =
+    gapDelta < -0.05
+      ? { label: "Closes the gap", cls: "bg-emerald-50 border-emerald-300 text-emerald-800" }
+      : gapDelta > 0.05
+        ? { label: avgDelta > 0 ? "Raises the average — and widens the gap" : "Widens the gap", cls: "bg-rose-50 border-rose-300 text-rose-800" }
+        : { label: avgDelta > 0 ? "Raises the average — the gap persists" : "No change in the gap", cls: "bg-amber-50 border-amber-300 text-amber-800" };
+
+  const num = (label: string, value: number, set: (v: number) => void) => (
+    <label className="flex items-center justify-between gap-2 text-xs text-slate-600">
+      {label}
+      <input
+        type="number"
+        step={0.5}
+        value={value}
+        onChange={(e) => set(Number(e.target.value) || 0)}
+        className="w-20 border border-slate-200 rounded-lg px-2 py-1 text-right font-bold text-slate-800"
+      />
+    </label>
+  );
+
+  return (
+    <div className="mt-6 bg-white border border-slate-200 rounded-xl p-5" data-testid="gap-vs-average">
+      <SectionLabel>Gap vs. average test</SectionLabel>
+      <p className="text-xs text-slate-500 mb-4 leading-relaxed">
+        Enter one outcome (higher = better, e.g. % with blood pressure controlled) for the reference group and the priority group,
+        before and after an intervention. The example values show the failure Chapter 10 warns about; replace them with yours.
+      </p>
+      <div className="grid sm:grid-cols-3 gap-4">
+        <div className="space-y-2">
+          <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Reference group</p>
+          {num("Before (%)", refBefore, setRefBefore)}
+          {num("After (%)", refAfter, setRefAfter)}
+        </div>
+        <div className="space-y-2">
+          <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Priority group</p>
+          {num("Before (%)", grpBefore, setGrpBefore)}
+          {num("After (%)", grpAfter, setGrpAfter)}
+          {num("Share of population (%)", grpShare, (v) => setGrpShare(Math.min(100, Math.max(0, v))))}
+        </div>
+        <div className="space-y-2">
+          <div className={`rounded-lg border-2 px-3 py-2 text-sm font-bold ${verdict.cls}`}>{verdict.label}</div>
+          <p className="text-xs text-slate-700">
+            Population average: {avgBefore.toFixed(1)} → <strong>{avgAfter.toFixed(1)}</strong> ({avgDelta >= 0 ? "+" : ""}{avgDelta.toFixed(1)})
+          </p>
+          <p className="text-xs text-slate-700">
+            Gap: {gapBefore.toFixed(1)} → <strong>{gapAfter.toFixed(1)}</strong> points ({gapDelta >= 0 ? "+" : ""}{gapDelta.toFixed(1)})
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
 // ROOT COMPONENT
 // ══════════════════════════════════════════════════════════════════════════════
 const TABS = [
@@ -1688,6 +1762,7 @@ export default function HealthEquityStudio() {
               </span>
             </div>
             <HEROIComposite pop={equityPop} setPop={setEquityPop} sdohValues={equitySdohValues} />
+            <GapVsAverageTest />
           </>
         )}
       </div>

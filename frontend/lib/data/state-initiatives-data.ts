@@ -103,7 +103,7 @@ export const STATE_INITIATIVES: Record<string, StateInitiativesProfile> = {
     region: "Northeast",
     heroColor: "bg-sky-100 text-sky-800",
     summary:
-      "Maine voters approved Medicaid expansion via referendum in 2017 after years of gubernatorial vetoes — a watershed moment that influenced Medicaid expansion ballot strategies nationally. Maine participates in the AHEAD Model and is building integrated behavioral health infrastructure to address high rates of substance use disorder.",
+      "Maine voters approved Medicaid expansion via referendum in 2017 after years of gubernatorial vetoes — a watershed moment that influenced Medicaid expansion ballot strategies nationally. Maine is building integrated behavioral health infrastructure to address high rates of substance use disorder.",
     initiatives: [
       {
         id: "me-medicaid-expansion",
@@ -115,18 +115,6 @@ export const STATE_INITIATIVES: Record<string, StateInitiativesProfile> = {
         year: 2019,
         externalUrl: "https://www.maine.gov/dhhs/oms/programs-services/mainecare",
         tags: ["Medicaid expansion", "coverage", "ballot initiative"],
-      },
-      {
-        id: "me-ahead",
-        name: "AHEAD Model (Maine)",
-        description:
-          "Maine joined the CMS AHEAD Model to establish statewide total cost of care targets for Medicare beneficiaries, with the goal of extending the model's accountability to commercial payers over time. Maine's participation focuses heavily on rural access and the high costs of its aging population.",
-        type: "Federal Program",
-        status: "Active",
-        year: 2024,
-        internalLink: "/ahead-model",
-        externalUrl: "https://innovation.cms.gov/innovation-models/ahead",
-        tags: ["AHEAD", "CMS", "total cost of care", "rural"],
       },
       {
         id: "me-behavioral-health-homes",
@@ -441,7 +429,7 @@ export const STATE_INITIATIVES: Record<string, StateInitiativesProfile> = {
     region: "Northeast",
     heroColor: "bg-sky-100 text-sky-800",
     summary:
-      "Pennsylvania expanded Medicaid in 2015 and operates one of the nation's most complex Medicaid programs through HealthChoices managed care. Pennsylvania participates in the AHEAD Model and has been expanding LTSS managed care through Community HealthChoices, serving over 400,000 physically disabled and older adult enrollees.",
+      "Pennsylvania expanded Medicaid in 2015 and operates one of the nation's most complex Medicaid programs through HealthChoices managed care. Pennsylvania has been expanding LTSS managed care through Community HealthChoices, serving over 400,000 physically disabled and older adult enrollees.",
     initiatives: [
       {
         id: "pa-healthchoices",
@@ -464,18 +452,6 @@ export const STATE_INITIATIVES: Record<string, StateInitiativesProfile> = {
         year: 2018,
         externalUrl: "https://www.dhs.pa.gov/Services/Assistance/Pages/Community-HealthChoices.aspx",
         tags: ["LTSS", "HCBS", "dual eligible", "managed care", "disability"],
-      },
-      {
-        id: "pa-ahead",
-        name: "AHEAD Model (Pennsylvania)",
-        description:
-          "Pennsylvania joined the CMS AHEAD Model with a focus on rural communities and underserved populations. Pennsylvania's participation is structured around total cost of care targets for Medicare beneficiaries statewide, with a goal of extending the accountability framework to commercial and Medicaid payers over the model's performance period.",
-        type: "Federal Program",
-        status: "Active",
-        year: 2024,
-        internalLink: "/ahead-model",
-        externalUrl: "https://innovation.cms.gov/innovation-models/ahead",
-        tags: ["AHEAD", "CMS", "total cost of care", "rural"],
       },
     ],
   },
@@ -1339,7 +1315,7 @@ export const STATE_INITIATIVES: Record<string, StateInitiativesProfile> = {
     region: "Midwest",
     heroColor: "bg-indigo-100 text-indigo-800",
     summary:
-      "Minnesota is a consistent national leader in health system quality and value-based care. Its Integrated Health Partnerships (IHP) program is one of the nation's most mature state-operated ACO programs. Minnesota also operates MinnesotaCare as a Basic Health Program — one of only two states using this ACA option — and participates in the federal AHEAD Model.",
+      "Minnesota is a consistent national leader in health system quality and value-based care. Its Integrated Health Partnerships (IHP) program is one of the nation's most mature state-operated ACO programs. Minnesota also operates MinnesotaCare as a Basic Health Program — one of only two states using this ACA option.",
     initiatives: [
       {
         id: "mn-ihp",
@@ -1362,18 +1338,6 @@ export const STATE_INITIATIVES: Record<string, StateInitiativesProfile> = {
         year: 2015,
         externalUrl: "https://mn.gov/dhs/minnesotacare/",
         tags: ["Basic Health Program", "BHP", "coverage", "ACA Section 1331"],
-      },
-      {
-        id: "mn-ahead",
-        name: "AHEAD Model (Minnesota)",
-        description:
-          "Minnesota joined the CMS AHEAD Model building on its IHP ACO infrastructure. The model establishes a Medicare total cost of care growth target for the state and provides infrastructure funding to extend population health accountability into commercial markets. Minnesota's deep ACO infrastructure makes it one of the AHEAD states best positioned to achieve statewide spending target compliance.",
-        type: "Federal Program",
-        status: "Active",
-        year: 2024,
-        internalLink: "/ahead-model",
-        externalUrl: "https://innovation.cms.gov/innovation-models/ahead",
-        tags: ["AHEAD", "CMS", "total cost of care", "ACO", "commercial payers"],
       },
     ],
   },

@@ -55,6 +55,23 @@ export default function ShortfallPropagation() {
   );
   const healthy = useMemo(() => runSequence(BASELINE).effectiveComposite, []);
 
+  // Slack ranking (Chapter 15 §15.14: "which components have no slack: the ones whose
+  // slip moves other pillars' outcomes"). The same slip applied to every pillar in turn;
+  // a pillar has no slack if its slip moves at least one OTHER pillar's result.
+  const slack = useMemo(
+    () =>
+      BUILD_ORDER.map((id) => {
+        const { arrivals: hits } = propagateShortfall(BASELINE, id, dropTo, HORIZON, 3);
+        return {
+          id,
+          moved: hits.length,
+          otherDrop: Math.round(hits.reduce((a, h) => a + h.drop, 0) * 10) / 10,
+          firstMonth: hits.length ? hits[0].month : null,
+        };
+      }).sort((a, b) => b.otherDrop - a.otherDrop),
+    [dropTo],
+  );
+
   const x = (m: number) => PAD.left + (m / HORIZON) * (W - PAD.left - PAD.right);
   const y = (v: number) => PAD.top + (1 - v / 100) * (H - PAD.top - PAD.bottom);
 
@@ -192,6 +209,38 @@ export default function ShortfallPropagation() {
               ))}
             </ul>
           )}
+        </div>
+
+        {/* Slack ranking */}
+        <div>
+          <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">
+            Which components have no slack? (every pillar slipped to {dropTo})
+          </p>
+          <ul className="space-y-1.5" data-testid="slack-ranking">
+            {slack.map((r) => (
+              <li key={r.id} className="flex items-center gap-3 text-xs bg-slate-50 border border-slate-200 rounded-lg px-4 py-2">
+                <strong className="w-24 shrink-0" style={{ color: COLOR[r.id] }}>{LABEL[r.id]}</strong>
+                {r.moved > 0 ? (
+                  <>
+                    <span className="text-[10px] font-black uppercase tracking-wider text-rose-700 bg-rose-50 border border-rose-200 rounded px-2 py-0.5 shrink-0">
+                      No slack
+                    </span>
+                    <span className="text-slate-700">
+                      moves {r.moved} other pillar{r.moved !== 1 ? "s" : ""} by{" "}
+                      <strong className="tabular-nums">{r.otherDrop}</strong> points in total, first at month {r.firstMonth}
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <span className="text-[10px] font-black uppercase tracking-wider text-emerald-700 bg-emerald-50 border border-emerald-200 rounded px-2 py-0.5 shrink-0">
+                      Has slack
+                    </span>
+                    <span className="text-slate-700">a slip here costs its own capability only</span>
+                  </>
+                )}
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="rounded-xl bg-slate-900 px-5 py-4">

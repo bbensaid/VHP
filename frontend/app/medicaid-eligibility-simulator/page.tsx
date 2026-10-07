@@ -273,6 +273,79 @@ function computeResults(inputs: SimInputs): EligibilityResult[] {
 
 // ── Progress bar ──────────────────────────────────────────────────────────────
 
+// ── Coverage transitions ───────────────────────────────────────────────────────
+// Chapter 3 §3.8 sends readers here to see "where coverage transitions create gaps the
+// clinical and equity imperatives must absorb." Every threshold below is one the
+// eligibility logic above already applies — this only asks what happens to THIS household
+// when a birthday, a raise, or the end of a postpartum year moves it across one.
+
+type Transition = { title: string; body: string };
+
+function computeTransitions(inputs: SimInputs): Transition[] {
+  if (!inputs.isVermont) return [];
+  const fpl = getFPL(inputs.householdSize);
+  const fplPct = inputs.annualIncome > 0 ? (inputs.annualIncome / fpl) * 100 : 0;
+  const usd = (n: number) => `$${Math.round(n).toLocaleString()}`;
+  const out: Transition[] = [];
+  const adult = inputs.age >= 19 && inputs.age <= 64 && !inputs.hasMedicare;
+
+  if (adult && fplPct > 0 && fplPct <= 138 && fplPct >= 120) {
+    out.push({
+      title: "One raise from the adult Medicaid cliff",
+      body: `At ${fplPct.toFixed(0)}% FPL you are ${usd(((138 - fplPct) / 100) * fpl)} a year below the 138% line. Cross it and adult Medicaid ends; coverage moves to a Vermont Health Connect plan with premiums and cost-sharing — the point where people most often go uninsured between programs.`,
+    });
+  }
+  if ((inputs.isPregnant || inputs.isPostpartum) && fplPct > 138 && fplPct <= 208) {
+    out.push({
+      title: "Pregnancy coverage ends; the adult limit does not move with it",
+      body: `Pregnancy and postpartum coverage run to 208% FPL, through 12 months after birth. At ${fplPct.toFixed(0)}% FPL the parent is above the 138% adult limit, so when the postpartum year ends Medicaid ends with it — mid-way through the year a new infant needs the most care.`,
+    });
+  }
+  if (inputs.hasChildren && inputs.childrenUnder19 > 0 && fplPct > 138 && fplPct <= 317) {
+    out.push({
+      title: "Each child loses Dr. Dynasaur at 19",
+      body: `Children are covered to 317% FPL; adults only to 138%. At ${fplPct.toFixed(0)}% FPL every child in this household loses Medicaid on their 19th birthday unless household income falls below 138% — a coverage break timed to the transition into adult care.`,
+    });
+  }
+  if (inputs.isFosterCareYouth && inputs.age < 26 && fplPct > 138) {
+    out.push({
+      title: "Former-foster-youth coverage ends at 26",
+      body: `Coverage is income-blind until age 26. At ${fplPct.toFixed(0)}% FPL, standard adult rules would not cover you after that birthday — plan the move to a Vermont Health Connect plan before it.`,
+    });
+  }
+  if (adult && inputs.age >= 63 && fplPct > 0 && fplPct <= 138) {
+    out.push({
+      title: "Adult Medicaid hands off to Medicare at 65",
+      body: "Adult Medicaid stops at 65 and Medicare begins. Enroll in Medicare on time and check the Medicare Savings Programs — a late hand-off is a gap, not just paperwork.",
+    });
+  }
+  return out;
+}
+
+function TransitionGaps({ inputs }: { inputs: SimInputs }) {
+  const items = computeTransitions(inputs);
+  return (
+    <div className="mb-8 rounded-2xl border border-amber-200 bg-amber-50 p-5" data-testid="coverage-transitions">
+      <h3 className="font-black text-sm text-slate-900 mb-1">Coverage transitions to watch</h3>
+      {items.length === 0 ? (
+        <p className="text-xs text-slate-600 leading-relaxed">
+          No program threshold sits close to this household&apos;s situation. Income changes, a birthday, or the end of a
+          postpartum year are what move a household from one program to the next — re-run the simulator when one of those changes.
+        </p>
+      ) : (
+        <ul className="space-y-3">
+          {items.map((t) => (
+            <li key={t.title}>
+              <p className="text-xs font-bold text-amber-900">{t.title}</p>
+              <p className="text-xs text-slate-700 leading-relaxed">{t.body}</p>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
 function ProgressBar({ step, total }: { step: number; total: number }) {
   return (
     <div className="mb-8">
@@ -585,6 +658,9 @@ export default function MedicaidEligibilitySimulatorPage() {
           <div className="space-y-3 mb-8">
             {results.map((r, i) => <ResultCard key={i} result={r} />)}
           </div>
+
+          {/* Where this household's coverage breaks next */}
+          <TransitionGaps inputs={inputs} />
 
           {/* Next steps */}
           <div className="bg-slate-950 rounded-2xl p-6 text-white mb-6">

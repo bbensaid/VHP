@@ -669,7 +669,7 @@ export default function CaliforniaCalAIMPage() {
             Both programs reflect the same federal thesis: that total cost of care reform, whole-person
             care integration, and social determinants investment are the only levers large enough to
             bend the U.S. healthcare cost curve. States leading on both Medicaid and Medicare transformation
-            — California on Medi-Cal, Vermont on AHEAD — are the laboratories for the next generation
+            — California on Medi-Cal, Vermont on state-mandated hospital global budgets (Act 68), after withdrawing from AHEAD in July 2026 — are the laboratories for the next generation
             of federal health policy.
           </p>
           <div className="flex gap-3 flex-wrap">

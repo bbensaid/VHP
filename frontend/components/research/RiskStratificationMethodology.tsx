@@ -14,7 +14,7 @@ const HCC_HIERARCHY_RULES = [
   { rule: 'HCC 85 (CHF) interacts with HCC 111 (COPD)', explanation: 'CMS v28 HCC has explicit disease interaction coefficients. A patient with both CHF and COPD gets an additional interaction coefficient (0.139) added on top of the individual HCC weights, because the co-occurrence is known to substantially increase cost beyond the additive individual costs.', icd10Examples: ['I50.x + J44.x → Interaction HCC bonus'] },
   { rule: 'Severe malnutrition (HCC 21) has the highest single coefficient', explanation: 'HCC 21 (Protein-Calorie Malnutrition) carries a coefficient of 0.455 in v28 — higher than CHF, COPD, or T2DM with complications. It is chronically undercoded because clinicians focus on the primary diagnosis. Nutritional status should be assessed and coded for every complex patient.', icd10Examples: ['E43 → HCC 21 (0.455)', 'E44.0 → HCC 21 (moderate)'] },
   { rule: 'Age/sex demographic baseline is always added', explanation: 'Every RAF score starts with a demographic factor based on age and sex (e.g., Female 65–69 = 0.378). Disease HCC coefficients are added on top. A patient with no chronic conditions still has a RAF > 0 based purely on demographics.', icd10Examples: ['Female 65–69: +0.378', 'Male 75–79: +0.495'] },
-  { rule: 'Enrollment type modifies the final score', explanation: 'CMS applies different RAF multipliers based on enrollment type: Community Non-Dual Institutional = 1.0 (reference), Institutional (nursing home) = separate model, New Enrollee = simplified demographic model only. Vermont AHEAD uses the community model for ACO attribution.', icd10Examples: [] },
+  { rule: 'Enrollment type modifies the final score', explanation: 'CMS applies different RAF multipliers based on enrollment type: Community Non-Dual Institutional = 1.0 (reference), Institutional (nursing home) = separate model, New Enrollee = simplified demographic model only.', icd10Examples: [] },
 ];
 
 const ALGORITHM_COMPARISON = [
@@ -22,12 +22,12 @@ const ALGORITHM_COMPARISON = [
     name: 'CMS HCC v28',
     owner: 'Centers for Medicare & Medicaid Services',
     public: true,
-    primaryUse: 'Medicare ACOs, MSSP, ACO REACH, Vermont AHEAD (Medicare)',
+    primaryUse: 'Medicare ACOs, MSSP, ACO REACH, Medicare Advantage',
     inputData: 'ICD-10 diagnoses from inpatient, outpatient, and ER claims in the base year',
     outputUnit: 'RAF Score (1.0 = average expected cost)',
     strengthsArr: ['Fully public — weights and HCC mappings published annually', 'Used by CMS for all Medicare VBC contracts', 'Audit-able and explainable at the diagnosis level', 'Well-validated against actual Medicare spend'],
     weaknessArr: ['Claims-based — requires prior-year diagnosis history', 'Does not use lab values, vitals, or functional status', 'Retrospective — does not predict future events, only adjusts payment', 'New Medicare enrollees have limited claims history'],
-    vermontNote: 'This is the operative risk adjustment methodology for Vermont AHEAD Medicare-attributed lives. RAF scores update annually with prior-year diagnoses.',
+    vermontNote: 'This is the operative risk adjustment methodology for Medicare ACO-attributed lives in Vermont (MSSP, ACO REACH). RAF scores update annually with prior-year diagnoses.',
   },
   {
     name: 'Johns Hopkins ACG',
@@ -38,7 +38,7 @@ const ALGORITHM_COMPARISON = [
     outputUnit: 'ACG Cell (1 of 81 population health cells) + Resource Utilization Band (RUB 0–5)',
     strengthsArr: ['Highly validated prospective predictor — predicts next-year cost from current diagnoses', 'Covers all ages and payer types (not Medicare-specific)', 'Captures morbidity burden comprehensively using ADG concept', 'Used in several state Medicaid programs'],
     weaknessArr: ['Proprietary — algorithm weights and grouper require a license from Johns Hopkins', 'Cannot be implemented authentically without licensed software', 'Less transparent than HCC for audit/appeal purposes', 'Requires volume of diagnoses across multiple encounters to assign accurate ACG cell'],
-    vermontNote: 'ACG is conceptually appropriate for Vermont Medicaid risk adjustment but requires a Johns Hopkins license. Vermont uses CDPS (below) for Medicaid PMPM benchmarking in AHEAD.',
+    vermontNote: 'ACG is conceptually appropriate for Vermont Medicaid risk adjustment but requires a Johns Hopkins license. Vermont uses CDPS (below) for Medicaid PMPM benchmarking.',
   },
   {
     name: 'CDPS (Chronic Illness and Disability Payment System)',
@@ -48,8 +48,8 @@ const ALGORITHM_COMPARISON = [
     inputData: 'ICD-10 diagnoses from Medicaid claims — mapped to 20+ chronic condition categories',
     outputUnit: 'CDPS score (relative resource use index)',
     strengthsArr: ['Designed specifically for Medicaid populations', 'Better captures disability and mental health burden than HCC', 'Used in Vermont Medicaid capitation payments'],
-    weaknessArr: ['Less transparent than HCC', 'Limited prospective validity compared to ACG', 'Separate from Medicare HCC — creates dual-model complexity in AHEAD blended populations'],
-    vermontNote: 'Vermont uses CDPS for Medicaid risk adjustment in the AHEAD global budget. Providers need to understand both HCC (Medicare) and CDPS (Medicaid) to fully understand their risk-adjusted benchmarks.',
+    weaknessArr: ['Less transparent than HCC', 'Limited prospective validity compared to ACG', 'Separate from Medicare HCC — creates dual-model complexity in blended Medicare-Medicaid populations'],
+    vermontNote: 'Vermont uses CDPS for Medicaid risk adjustment. Providers need to understand both HCC (Medicare) and CDPS (Medicaid) to fully understand their risk-adjusted benchmarks.',
   },
   {
     name: 'Charlson Comorbidity Index',
@@ -206,6 +206,106 @@ function HCCPatientWalkthrough({ patient }: { patient: SyntheticPatient }) {
   );
 }
 
+// ─── STAFFING BY RISK ─────────────────────────────────────────────────────────
+// Chapter 8 §8.8: "Stratify a clinical panel by risk tier and match staffing intensity —
+// how panel design changes when staffing follows risk rather than volume." Tier shares are
+// the midpoints of the population ranges this tool already states for each tier; caseloads
+// are adjustable assumptions (no published standard fits every program), not data.
+const STAFF_TIERS = [
+  { key: 'very-high', label: 'Very High Risk', share: 7.5,  caseload: 50,   text: 'text-red-700' },
+  { key: 'high',      label: 'High Risk',      share: 12.5, caseload: 150,  text: 'text-orange-700' },
+  { key: 'rising',    label: 'Rising Risk',    share: 25,   caseload: 400,  text: 'text-amber-700' },
+  { key: 'low',       label: 'Low Risk',       share: 55,   caseload: 2000, text: 'text-emerald-700' },
+] as const;
+
+function StaffingByRisk() {
+  const [panel, setPanel] = useState(5000);
+  const [caseloads, setCaseloads] = useState<Record<string, number>>(
+    Object.fromEntries(STAFF_TIERS.map(t => [t.key, t.caseload])),
+  );
+  const rows = STAFF_TIERS.map(t => {
+    const patients = Math.round(panel * (t.share / 100));
+    const fte = patients / Math.max(1, caseloads[t.key]);
+    return { ...t, patients, fte };
+  });
+  const totalFte = rows.reduce((a, r) => a + r.fte, 0);
+
+  return (
+    <div className="mb-6 border border-slate-200 rounded-xl overflow-hidden" data-testid="staffing-by-risk">
+      <div className="px-4 py-3 bg-slate-50 border-b border-slate-200">
+        <p className="text-xs font-black uppercase tracking-widest text-slate-600">Match staffing intensity to risk tier</p>
+        <p className="text-[11px] text-slate-500 mt-0.5">
+          Same care-management team, two ways to deploy it: by headcount (volume) or by risk. Edit the panel size and the
+          caseload each care manager can carry in each tier.
+        </p>
+      </div>
+      <div className="p-4 bg-white">
+        <label className="flex items-center gap-3 text-xs text-slate-600 mb-3">
+          Panel size
+          <input
+            type="number"
+            min={100}
+            step={100}
+            value={panel}
+            onChange={e => setPanel(Math.max(100, Number(e.target.value) || 0))}
+            className="w-28 border border-slate-200 rounded-lg px-2 py-1 text-xs font-bold"
+          />
+        </label>
+        <div className="overflow-x-auto">
+          <table className="w-full text-xs">
+            <thead>
+              <tr className="text-[10px] uppercase tracking-wider text-slate-500 border-b border-slate-200">
+                <th className="text-left py-1.5 pr-3">Tier</th>
+                <th className="text-right py-1.5 pr-3">Patients</th>
+                <th className="text-right py-1.5 pr-3">Caseload / CM</th>
+                <th className="text-right py-1.5 pr-3">Care-manager FTE</th>
+                <th className="text-right py-1.5 pr-3">Staff share — by volume</th>
+                <th className="text-right py-1.5">Staff share — by risk</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map(r => (
+                <tr key={r.key} className="border-b border-slate-100">
+                  <td className={`py-1.5 pr-3 font-bold ${r.text}`}>{r.label}</td>
+                  <td className="py-1.5 pr-3 text-right tabular-nums">{r.patients.toLocaleString()}</td>
+                  <td className="py-1.5 pr-3 text-right">
+                    <input
+                      type="number"
+                      min={10}
+                      step={10}
+                      value={caseloads[r.key]}
+                      onChange={e => setCaseloads(prev => ({ ...prev, [r.key]: Math.max(10, Number(e.target.value) || 0) }))}
+                      className="w-20 border border-slate-200 rounded px-1.5 py-0.5 text-right text-xs"
+                      aria-label={`${r.label} caseload per care manager`}
+                    />
+                  </td>
+                  <td className="py-1.5 pr-3 text-right tabular-nums font-bold">{r.fte.toFixed(1)}</td>
+                  <td className="py-1.5 pr-3 text-right tabular-nums text-slate-500">{r.share}%</td>
+                  <td className="py-1.5 text-right tabular-nums font-bold">{totalFte > 0 ? Math.round((r.fte / totalFte) * 100) : 0}%</td>
+                </tr>
+              ))}
+              <tr>
+                <td className="py-1.5 pr-3 font-black text-slate-800">Total</td>
+                <td className="py-1.5 pr-3 text-right tabular-nums">{panel.toLocaleString()}</td>
+                <td />
+                <td className="py-1.5 pr-3 text-right tabular-nums font-black">{totalFte.toFixed(1)}</td>
+                <td className="py-1.5 pr-3 text-right text-slate-500">100%</td>
+                <td className="py-1.5 text-right font-black">100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-[11px] text-slate-600 mt-3 leading-relaxed">
+          Staffed by volume, the very-high tier gets {rows[0].share}% of care-management time; staffed by risk it gets{' '}
+          <strong>{totalFte > 0 ? Math.round((rows[0].fte / totalFte) * 100) : 0}%</strong>. That shift — not a bigger team — is the
+          panel redesign the chapter describes. Tier shares are the midpoints of the population ranges shown in the pyramid below;
+          caseloads are your assumptions.
+        </p>
+      </div>
+    </div>
+  );
+}
+
 // ─── POPULATION TIER VIEW ─────────────────────────────────────────────────────
 
 function PopulationTierView() {
@@ -232,7 +332,7 @@ function PopulationTierView() {
     <div>
       <div className="mb-4 p-4 bg-blue-50 border border-blue-200 rounded-xl">
         <p className="text-xs text-blue-800 leading-relaxed">
-          <strong>Population Stratification in VBC:</strong> Risk stratification divides an attributed population into tiers based on predicted cost and utilization. The goal is not to withhold care from lower tiers, but to direct the intensity of care management resources where they generate the highest ROI. Vermont AHEAD explicitly requires participating ACOs to demonstrate a documented risk stratification strategy as a prerequisite for shared savings eligibility.
+          <strong>Population Stratification in VBC:</strong> Risk stratification divides an attributed population into tiers based on predicted cost and utilization. The goal is not to withhold care from lower tiers, but to direct the intensity of care management resources where they generate the highest ROI.
         </p>
       </div>
 
@@ -256,6 +356,8 @@ function PopulationTierView() {
           );
         })}
       </div>
+
+      <StaffingByRisk />
 
       {/* Tier detail cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -398,7 +500,7 @@ export default function RiskStratificationMethodology() {
         <div>
           <div className="mb-4 p-4 bg-amber-50 border border-amber-200 rounded-xl">
             <p className="text-xs text-amber-800 leading-relaxed">
-              <strong>Why Multiple Algorithms Exist:</strong> Different risk stratification models were developed for different purposes — Medicare payment adjustment (HCC), Medicaid payment (CDPS), prospective care management (ACG), and clinical research (Charlson/Elixhauser). In a blended Medicare-Medicaid environment like Vermont AHEAD, organizations may need to navigate multiple models simultaneously.
+              <strong>Why Multiple Algorithms Exist:</strong> Different risk stratification models were developed for different purposes — Medicare payment adjustment (HCC), Medicaid payment (CDPS), prospective care management (ACG), and clinical research (Charlson/Elixhauser). In a blended Medicare-Medicaid environment like Vermont&apos;s, organizations may need to navigate multiple models simultaneously.
             </p>
           </div>
           <div className="space-y-4">
@@ -437,7 +539,7 @@ export default function RiskStratificationMethodology() {
                   </div>
                   {algo.vermontNote && (
                     <div className="mt-4 p-3 bg-emerald-50 border border-emerald-200 rounded-lg text-xs">
-                      <p className="text-[10px] font-black uppercase tracking-widest text-emerald-700 mb-1">Vermont AHEAD Context</p>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-emerald-700 mb-1">Vermont Context</p>
                       <p className="text-emerald-800">{algo.vermontNote}</p>
                     </div>
                   )}
