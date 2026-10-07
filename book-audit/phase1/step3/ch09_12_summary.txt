@@ -1,0 +1,148 @@
+PHASE 1 STEP 3 - CHAPTERS 9-12 FACT/CONSISTENCY AUDIT (read-only)
+Date: 2026-10-06/07.  HTR_Book_v42.docx was NOT modified by this audit.
+Note: the repo .docx changed at 2026-10-06 20:41 while this audit was running
+(another process; the preface_ch04 step-3 files landed in this folder at the same
+time). Every anchor was re-verified against that newer file.
+
+FILES
+  ch09_12_findings.jsonl     68 findings, one JSON object per line
+  edits_ch09_12.py           75 raw ops (EDITS list, patch_docx format)
+  c12_12_wire_find.xml / c12_12_wire_replace.xml   long anchor for op C12-12,
+                             loaded by edits_ch09_12.py
+
+VERIFICATION DONE
+  - audit_chapter.py 9, 10, 11, 12: all automated criteria PASS (Ch11 PPS/CAH
+    "Operating profit" pair is legitimate and left alone).
+  - All 75 finds: count == 1 in the current document.xml. Every raw op except
+    C12-12 (a deliberate two-paragraph merge) sits inside one <w:t> run.
+  - The whole list was applied in memory, in order, with patch_docx.apply():
+    no anchor collisions. The result was written to a scratch .docx and
+    check_format.py was run on that copy (it reads argv[1]): "clean".
+  - After the dry run, a sweep of Ch9-12 for AHEAD / EAST Fund / "5 new" /
+    "planned July" / White River found only source citations and the new
+    withdrawal wording. The "January 2028" hits that remain are all the
+    Strategic Plan deadline, which is correct.
+  - Prior fix scripts fix_ch09..fix_ch12.py: all their ops are already in the
+    manuscript, including both Figure 11.9 anchors (the U+00A0 problem is gone).
+    Prior Ch9 HIGH defects are fixed: Fig 9.1 now says behavioral health ED
+    visit / FUM, and Fig 9.3 now says 10-15 practices.
+  - Already-fixed whole-book items (UVMMC settlement, Plan due Jan 15 2028,
+    Medicaid HGB/CMS letter, work requirements 2027, RBP FY2027/FY2028, CCBHC
+    4 of 5) read correctly wherever they appear in Ch9-12.
+  - Platform (criterion 5): every Research Lab route and tab id cited in Fig 9.6,
+    10.11 and 11.10 exists (policy-quality quality/scorecard;
+    vbc-clinical-quality value; interoperability risk; population-equity
+    equity/population; knowledge-workspace scorecard/workforce/cin/ems/
+    evidence/workspace). The Health Equity Studio implements the 5-dimension
+    HEROI and disparity decomposition.
+
+COUNTS BY TYPE (68 findings; 59 have proposed text, 9 are flagged only)
+  STALE 39 | CONTRADICTION 8 | WRONG_FACT 7 | REPETITION 6 | OTHER 3 |
+  DANGLING_REF 2 | FORMAT 2 | FRONT_MATTER_CONFLICT 1
+
+PROPOSED OPS (finding id: what it fixes)
+ Ch9
+  C9-1   PCMH as the gate to "AHEAD enhanced payments" -> the Blueprint's own payments
+  C9-2   "AHEAD transition support ... to Primary Care AHEAD" -> the loss of
+         Medicare Blueprint payments, offset with state funds in 2026
+  C9-3   panels accountable "under Blueprint and AHEAD" (carry-over item)
+  C9-4   HEDIS as "AHEAD quality accountability" language
+  C9-5   §9.5.1 Step 3: AHEAD accountability / AHEAD PHM (2 ops)
+  C9-6   Fig 9.4 "AHEAD implementation team"
+  C9-7   Fig 9.4 "AHEAD governance" (2 ops)
+  C9-8   Fig 9.5: "5 planned CCBHCs" -> 6 certified; FMAP "8 years" -> 4-year demo
+  C9-9   §9.7 AHEAD implementation / AHEAD model's accountability
+  C9-10  §9.7 "AHEAD provides the financial incentive"
+  C9-11  Implications: AHEAD attribution / "services AHEAD measures" (2 ops)
+  C9-12  Implications: "AHEAD financial incentives"
+  C9-13  Key Concepts: "global budget levels under AHEAD"
+  C9-14  HCC: diabetes complication status no longer moves RAF under V28
+ Ch10
+  C10-1  §10.1 restates §10.2.2's 94/82, PCP and delay-care data (2 ops, label moved)
+  C10-2  §10.2.1 NEK lead-in contradicted by Fig 10.1 (prior MISMATCH 1)
+  C10-3  NVRH called Tier 3; Ch11 Fig 11.5 and App C say Tier 2
+  C10-4..7  EAST Fund / AHEAD participation in Fig 10.3 and Fig 10.4 (4 ops)
+  C10-8  GLP-1 count 16-4 != 13: North Carolina reinstated (KFF)
+  C10-9  duplicate GLP-1 coverage sentence
+  C10-10/11  BALANCE Part D "January 2028" -> postponed from Jan 2027, no
+         earlier than 2028 (2 ops)
+  C10-12 BALANCE deadline Jan 2026 vs June 2026 -> July 31, 2026 RFA (2 ops)
+  C10-13 NKHS CCBHC "planned July 2026" -> certified July 1, 2026 (2 ops)
+  C10-14 Fig 10.8 "Vermont AHEAD: active SRA design question"
+  C10-15 "Comprehensive and Professional Direct Contracting" -> ACO REACH health
+         equity benchmark adjustment; AHEAD global budget -> Act 68 (2 ops)
+  C10-16 Fig 10.9 "AHEAD quality reporting"
+  C10-17 Implications: AHEAD's equity framework applied to Vermont executives
+  C10-18 Implications: EAST Fund as the legislator's vehicle (2 ops)
+  C10-19 HEROI as GMCB requirement / state tool / statutory requirement vs
+         "proprietary, never computed" (3 ops; prior MISMATCH 8)
+  C10-20 Fig 10.7 FUH -> FUM; "alcohol use" -> "substance use" (FUA)
+ Ch11
+  C11-1  "$1.2M in AHEAD cooperative agreement funds" in the current budget
+  C11-2  "newly contracted" RHRC vs the contract that concluded Oct 2025
+  C11-3  Fig 11.1 DVHA "Managing AHEAD Medicaid alignment"
+  C11-4  "5 new CCBHCs by July 2026" + "AHEAD's EAST Fund" -> 4 of 5 certified; RHT
+  C11-5  Mt. Ascutney is in Windsor, not White River Junction (2 ops)
+  C11-6  "HRSA recognizes no HPSAs in Vermont" (same wording as the Ch8 fix)
+  C11-7  370 FTE != 112+190 -> "including" (matches Appendix A)
+  C11-8  Fig 11.7 "AHEAD total cost of care targets"
+  C11-9  Act 68 "requires" negotiating AHEAD implementation
+  C11-10 capital "(RHT Program, AHEAD EAST Fund ...)" (2 ops)
+  C11-11 AHEAD in the quality-reporting program list
+  C11-12 Fig 11.9 "+ AHEAD + RBP"
+  C11-13 "Medicare and AHEAD-attributed population"
+  C11-14 V24 HCC numbers 18/19/136 -> V28-accurate wording
+  C11-15 "is the mechanism" -> "was" (RHRC concluded)
+ Ch12
+  C12-1  "AHEAD global budget entry in January 2028" client segment
+  C12-2  AHS "managing simultaneous AHEAD implementation"
+  C12-3  Fig 12.2 coalition "the AHEAD negotiating team"
+  C12-4  "AHEAD's January 2028 launch" as constraint -> CMS July 2026 decision
+  C12-5  "population health improvement AHEAD measures"
+  C12-6  the PMO "manages ... the RHRC engagement" (contract over)
+  C12-7  "$2.4B 5-year deficit" -> Preface's $700M-$2.4B range
+  C12-8  The Wire: weekly vs real-time vs daily -> continuous + daily briefing (2 ops)
+  C12-9  the frame says "this chapter describes" a PMO and learning collaboratives
+         the body never covers -> "calls for" / "described in Chapter 15" (4 ops)
+  C12-12 Key Concepts "The Wire" term on its own unstyled paragraph -> merged and
+         bold blue like the other entries (span op; render after applying)
+
+DELIBERATELY NOT PROPOSED (flagged only)
+  C10-21 FORMAT  Fig 10.1 first data row is shaded and bold like a header (rule-26
+         shape). There is no black-on-navy today: explicit cell fill and text
+         colour override the style, and check_format.py is clean. A safe fix has
+         to change tblLook and the row-1 bold/fill together. Otherwise the
+         style's navy firstRow fill comes back under black text, and no
+         LibreOffice render can show that. This needs an XML check after it is
+         applied.
+  C10-22 REPETITION  §10.9 one-sentence bridge + §10.10 restated bridge (same at
+         §11.9/§11.10). Fixing it means removing a numbered heading and
+         renumbering, which is structural.
+  C10-23 / C11-16 REPETITION  Ch10 and Ch11 italic deks repeat their own opening
+         paragraphs. Deks are a recurring design element (Ch3/6/7/9/10/11), so
+         this is the author's call.
+  C12-10 REPETITION  §12.2.1 and §12.2.2 both present the platform's "four
+         components". The fix is a structural sub-section deletion, and §12.2.1
+         holds the only URLs and contact.
+  C12-11 DANGLING_REF  "Policy Impact Assessment Framework", "HCC Gap Closure
+         Playbook" (and "FHIR Implementation Guide", which on the platform is the
+         "FHIR R4 Implementation Checklist") are promised in Fig 12.1/12.3 but do
+         not exist on the platform. Under the standing rule "extend the tool,
+         don't reword the book down" and rule 16, this is the author's call.
+  C11-17 OTHER  Porter: Tier 3 in Ch11, Tier 2 in Appendix C. The appendices are
+         outside this unit, and Oliver Wyman's own assignment was not verified.
+  C11-18 OTHER  91% (AHS) vs 90% (VDH BRFSS) adults with a PCP. These are
+         different sources and years, and each is attributed.
+  C12-13 OTHER  a "14-hospital Vermont CIN" with RHT-funded shared services is
+         presented as existing in Ch10/11/12. UNVERIFIED, not proposed.
+  Also not proposed:
+  - the Ch2 L1818 copy of the HPSA claim (outside this unit; rule-13 handoff)
+  - BALANCE: whether Vermont actually applied by July 31, 2026 (could not verify;
+    the proposed wording stays conditional)
+  - the remaining 68 FTE breakdown of the 370 (RHT application not checked)
+  - AHEAD source citations in figure/Sources lines (historical citations,
+    legitimate)
+
+STOP-HOOK NOTE
+  The PostToolUse format hook fired because the .docx mtime changed (another
+  process, 20:41). This audit made no .docx edit and makes no layout claim.

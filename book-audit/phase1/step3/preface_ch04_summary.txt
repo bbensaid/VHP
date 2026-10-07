@@ -1,0 +1,82 @@
+PHASE 1 STEP 3 -- Preface, Introduction, Chapters 1-4 -- fact/consistency audit (read-only)
+2026-10-06.  HTR_Book_v42.docx was NOT modified; patch_docx.py was NOT run.
+
+Files
+  edits_preface_ch04.py        45 proposed ops (EDITS list, template format, one comment per op)
+  preface_ch04_findings.jsonl  59 findings: 45 proposed + 14 found-but-not-proposed (proposed_text null)
+
+Verification
+  - Every find was checked against the current word/document.xml: count == 1 for all 45,
+    each raw find inside a single <w:t> run.
+  - The whole list was dry-run in memory with patch_docx.apply(): every op applies, the XML
+    parses, and exactly one table row is removed (C2-2). The C2-5a/5b bullet swap was confirmed.
+  - ORDER: C2-5a must be applied before C2-5b.
+  - audit_chapter.py 1-4: all automated criteria pass. The near-duplicate pairs it flags are
+    legitimate recurrence (N-13).
+
+Proposed ops by type
+  STALE 22 | WRONG_FACT 16 | CONTRADICTION 5 | REPETITION 1 | DANGLING_REF 1   (total 45)
+  By chapter: Ch1 4, Ch2 11, Ch3 20, Ch4 10. Preface/Introduction 0 (see below).
+
+Ch1
+  C1-1  Fig 1.1 "~8-year run" -> "2017-2025 run" (conflicts with Intro "nine years" and Ch2 2017-2025)
+  C1-2  Fig 1.5 CCBHC "5 entities by July 2026" -> 4 of 5 certified July 1, 2026
+  C1-3  §1.14.1 repeats §1.6's three-dependency sentence -> one-line cross-reference
+  C1-4  §1.6 "Blueprint's CCBHC expansion": CCBHCs are a DMH program, not Blueprint
+Ch2
+  C2-1  Fig T.1 FY2027 row: price cap is the statutory deadline; rule 2027, effective FY2028
+  C2-2  Fig T.1: delete the duplicate "Jan 2028 Act 68 global budgets (FY2028)" row (AHEAD leftover)
+  C2-3  Fig 2.3: drop "commercial global budgets phase in January 2028" (not in Act 68)
+  C2-4  Fig 2.4 Vermont row: still on the old FY2026 rule / FY2027 prices timeline
+  C2-5a/b Reform Cascade box: RBP "implemented" listed before rulemaking -> swap into true order
+  C2-6  §2.8 CCBHC "five ... by July 2026" -> four certified July 1, 2026
+  C2-7  Fig 2.1 "HRSA recognizes no HPSAs in Vermont" -> same correction as committed Ch8 fix
+  C2-8  Callout: realistic scenario mislabelled "(7-8% expense growth)" (prior M14)
+  C2-9  Callout: "38% since 2018" widens the 2018-2022 window (prior M15)
+  C2-10 "By the mid-2030s ... nearly as many over 65 as under 20": the crossover has already
+        happened (Census 2024) -> cross-reference to the Preface
+Ch3
+  C3-1/2  Making Care Primary: recommended as viable, but CMS ended it Dec 31, 2025
+  C3-3    BPCI Advanced: called viable, but it ended Dec 31, 2025 (TEAM replaces it, 2026-2030)
+  C3-4    ACO REACH: final year is 2026; LEAD succeeds it Jan 2027
+  C3-5    BALANCE: "Medicare Part D January 2028" -> Part D launch postponed April 2026
+  C3-6    Fig 3.1: AHEAD listed as mandatory for hospitals (hospital participation is voluntary)
+  C3-7/8/9 Work requirements: H.R.1 MANDATES them (Jan 1, 2027); "Vermont has not signaled intent" is wrong
+  C3-10   Fig 3.4: six-month redeterminations "2026" -> January 2027
+  C3-11/12 "H.R. 1 included prior authorization provisions": it included none (heading fixed too)
+  C3-13   Act 167 PA work was assigned to DFR + GMCB, not AHS
+  C3-14/15 "Act 68 requires insurers ... PA ... medical loss ratio": no such provision in Act 68
+  C3-16   Global Commitment: January 2025 was an amendment, not a renewal
+  C3-17/18/19/20 AHEAD-as-live: Fig 3.3 example; §3.9 "January 2028"; §3.9 "layer beneath AHEAD";
+          §3.5.1 withdrawal rights described without noting Vermont used them
+Ch4
+  C4-1/5/6/7/8 AHEAD-as-live: §4.3.2, §4.8, §4.10 (x2, "AHEAD performance year", "January 2028"),
+          Act 62 Key Concept
+  C4-2    Fig 4.3 "HSA Coordinator model (Chapter 3)" -> Chapter 16
+  C4-3    §4.6.1 scribe "30 to 45 minutes" contradicts Ch5's corrected 15-25 min/day
+  C4-4    "47 state applications" -> all 50 states applied
+  C4-9/10 "Act 68 §10 mandated integration": §10 makes it conditional (not before Jan 1, 2027,
+          and only on a Steering Committee majority vote)
+
+Preface / Introduction
+  No edit proposed. The step 1-2 fixes in the front matter (UVMMC settlement, AHEAD withdrawal
+  framing) were checked and read correctly. Three candidate defects could not be verified:
+  N-1 EAST Fund "$138M" total vs per year (Ch3 and later chapters say "/year"); N-2 Preface
+  median-age figures (Census 2024 has Maine at 44.8, not 45.1); N-3 Intro "22% over the same
+  period" vs Ch2's 2018-2022.
+
+Found but deliberately not proposed (details in the jsonl)
+  N-1..N-3 above; N-4 Oliver Wyman participant arithmetic (needs the source); N-5 Act 167 9410(e)
+  repeal (strike-through unreadable); N-6 Vermont BALANCE opt-in status unknown; N-7 Fig 3.4
+  SDP/provider-tax dates (imprecise but defensible); N-8 the Ch1 EAST restatement (a legitimate
+  worked example); N-9 Preface dated Dec 2025 (author's call); N-10 GMCB dashboard release status
+  not checked; N-11 "global budgets mandatory FY2028" (statutory-deadline wording, kept per scope;
+  Act 68 says "to the extent resources are available ... one or more"); N-12 Oliver Wyman's
+  "enough PCPs" vs the 370-FTE shortage (would need new prose); N-13 audit-script duplicate pairs
+  (legitimate); N-14 §3.9 "federal investment Vermont has committed to" (ambiguous).
+
+Rule-13 leads OUTSIDE this unit (same subject, not fixed here)
+  - "HRSA recognizes no Health Profession Shortage Areas in Vermont": Ch11 (md ~5039), App A (md ~6704)
+  - Making Care Primary: Ch7 §7.8 heading and body; Bibliography line (md ~7459)
+  - ACO REACH "maturing": Ch13 (md ~5654); ACO REACH as current: Ch7 (md ~3544)
+  - "$138 million annually / per year": Conclusion (md ~6510), App G (md ~7114)
