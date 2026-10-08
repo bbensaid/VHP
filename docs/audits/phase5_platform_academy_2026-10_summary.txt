@@ -1,0 +1,44 @@
+HTR phase 5 (platform + Academy + launch): summary, 2026-10-07
+Ledger: docs/audits/phase5_platform_academy_2026-10.jsonl (one JSON line per change, FIXED|LEFT)
+Backups (pre-edit, never overwritten): sanity-backups/phase5-2026-10-07/
+Nothing committed.
+
+A-C (earlier session, committed 6a875ed): AHEAD page PCI targets, DA page (11 DAs, beds, URLs), /vermont-medicaid H.R. 1 section.
+
+D. /dashboard (Sanity rhtState / statePerformanceIndex / hospital; Supabase fallbacks)
+  FIXED  perfIndex-vermont narrative: "leads the nation in All-Payer models" replaced with the ACO model 2017-2025, AHEAD signed Jan 2025 and withdrawn July 2026, and Act 68 global budgets/RBP.
+  FIXED  rhtState-vermont awardAmount $195,000,000 -> $195,053,740 (CMS first-year award).
+  FIXED  hospital-vt-1 North Country Hospital: Rural PPS -> Critical Access.
+         (These three were patched by the interrupted run after backup. This session re-fetched them, confirmed they are live, and logged them.)
+  FIXED  The award labels now read "RHT First-Year (FY2026) Award" (state header) and "FY2026 Award" (scorecard), so the figure cannot be misread as a 5-year total.
+  LEFT   Strategic Plan, RBP timing, UVMMC court, HGB and CCBHC claims do not appear in any of the 255 dashboard docs. Supabase fallbacks: rht_profiles does not exist, the other two tables return 0 rows.
+  LEFT   The 50-state seed outside Vermont is unverified. Maryland "Total Cost of Care" is stale; Georgia's AHEAD claim checks out.
+
+E1. welcome-htr-framework: chose to WRITE the lesson rather than unpublish
+  Why: the author deliberately restored it as a standalone orientation (commit 36ff52d), and it is a 15-minute on-ramp that hands off to Five Pillars, One Imperative, not a duplicate of it.
+  FIXED  New Sanity academyModule "welcome-htr-framework": 47 blocks, 7 sections, every figure taken from the Preface/Introduction, 6 sources, takeaway and quiz included. Supabase sanity_slug and objectives set. audit-courses: 1/1 DONE. Sidebar link kept.
+  Script: frontend/content/_lesson_welcome_htr_framework.py (starts with exec(open('CONTENT_TEMPLATE.py').read())).
+
+E2. sanity_slug held the Sanity _id instead of slug.current (12 lessons)
+  FIXED  10 rows (precision-medicine m1-m6, vbc module-2/3/4, vbc-clinical-m5). Their text matched the embedded content_blocks copy exactly, so the rendered lesson is unchanged but now comes from Sanity.
+  FIXED  2 rows (patient-reported-outcomes, quality-measures-hedis-ecqm) used to show 3-4 legacy blocks. Their Sanity docs were corrected first (FDA "accelerated approval conditional on PROs", "Project PRO", BPCI-A KOOS-12, CPC+; NQF-as-endorser -> Battelle CBE/PQM, 2020 rule scope, the "600 measures" JAMA claim -> Casalino 2016, the MA equity reward cancelled April 2026), then their slugs were switched.
+  Verified: the slug probe now finds 0 unresolved slugs, and all lesson pages tested on the dev server render the Sanity text.
+
+E3. "2024 Medicaid CHW Coverage Rule ... by 2026" and the "AHEAD health equity / SDOH investment fund": both false
+  FIXED  Replaced with: Medicaid CHW coverage is a state option (2013 rule, effective 2014; 29 of 48 states per KFF 2022); Medicare CHI codes G0019/G0022 (CY2024 PFS); AHEAD gives up to $12M per state and requires an equity plan, with no SDOH fund.
+         Patched in: Sanity policyAnalysis vbc-fundamentals-module-5 (paragraph + table cell), Sanity vbc-equity-m6 (a related "first-time Medicare and Medicaid CHW codes" error), the Supabase sanity-vbc-equity fallback, and 5 local source JSONs.
+
+E4. Module-2 MACRA table (BPCI-A / PCF row)
+  FIXED  Row now says BPCI Advanced and PCF both ended Dec 31 2025, with TEAM (from Jan 2026) and LEAD (succeeds REACH Jan 2027) as successors. The rest of the same "2026" table was also wrong and was corrected: the 5% QP bonus has lapsed (0.75% vs 0.25% CF), Partial QP gets no bonus, the 75%/50% QP thresholds, the MIPS rows rebuilt on the 75-point threshold, and 6 quality measures. The prose above the table ("receives the 5% bonus", "50% of revenue") was fixed too.
+         Applied to both Sanity docs (academyModule + policyAnalysis), the Supabase fallback and 3 local sources. PCF present tense was also fixed in vbc-rvu.
+  LEFT   module-3 economics: BPCI-A "$2,100/episode, $900M" and an ROI table citing evaluations that cannot be found. Needs sourcing or removal.
+
+F. Launch
+  FIXED  proxy.ts beta gate exempts exactly /robots.txt, /sitemap.xml and /opengraph-image (verified: 200 without the cookie, while /about still 307s to /beta).
+  FIXED  Deleted components/sidebar/PolicyCalendar.tsx (unreferenced). The path in the brief, components/PolicyCalendar.tsx, never existed.
+  FIXED  app/opengraph-image.tsx: host-branded 1200x630 card with the pillar palette; both brands rendered and inspected. twitter card changed to summary_large_image.
+  FIXED  Per-host self-canonical: proxy passes the path in x-htr-pathname, and the root layout sets alternates.canonical = <host><path>.
+  Checks: tsc 0 errors; eslint clean on touched files; e2e/launch-readiness.spec.ts 20/20 passed against the dev server (5 new tests: crawler access without the cookie, the gate still blocks pages, self-canonical + og:image).
+
+Re-post hazard: frontend/content/course_value_based_care.json, courses_tier1.json and sanity/content/academy/vbc_*.json now carry the E3/E4 fixes, but the phase-3 note still applies to course_five_pillars.json / _build_five_pillars_course.py. Re-running those posters or seeds would revert the phase-3 Sanity corrections.
+Helper scripts (untracked): frontend/scripts/_phase5_{dump_dashboard,academy_probe,slug_probe,slug_diff,set_sanity_slug,lessons_io,grep_lessons}.mjs

@@ -7641,7 +7641,7 @@
                   {
                     "_type": "span",
                     "_key": "m6s015",
-                    "text": "CMS has taken meaningful steps to address this. The 2024 Medicaid CHW Coverage Rule created a federal minimum standard requiring all state Medicaid programs to provide reimbursement for defined CHW services by 2026. The AHEAD Model gives each participating state up to $12 million in cooperative agreement funding and requires a state health equity plan. Vermont signed on to AHEAD in January 2025 but withdrew in July 2026, before its performance period began, so it has no AHEAD-linked CHW funding stream.",
+                    "text": "CMS has taken meaningful steps to address this. No federal rule requires state Medicaid programs to pay for CHW services: coverage is a state option, possible since a 2013 CMS rule (effective 2014) let Medicaid pay for preventive services recommended by a licensed practitioner, and 29 of 48 responding states reported paying for CHW services in KFF's 2022 survey. For Medicare, the CY2024 Physician Fee Schedule created the first Community Health Integration codes (G0019, G0022), which pay for CHW services furnished under a billing practitioner's supervision. The AHEAD Model gives each participating state up to $12 million in cooperative agreement funding and requires a state health equity plan. Vermont signed on to AHEAD in January 2025 but withdrew in July 2026, before its performance period began, so it has no AHEAD-linked CHW funding stream.",
                     "marks": []
                   }
                 ],
@@ -7908,7 +7908,7 @@
                     "_key": "m6stp24",
                     "number": 4,
                     "title": "Build a CHW Program Now",
-                    "description": "The CHW ROI evidence and the 2024 Medicaid CHW Coverage Rule make 2026 the right year to build or expand a CHW program. Hire CHWs with lived experience of the specific communities and social challenges your highest-need patients face. Do not hire case managers and call them CHWs."
+                    "description": "The CHW ROI evidence, Medicare's Community Health Integration codes (in place since 2024) and Medicaid CHW coverage in more than half of states make 2026 the right year to build or expand a CHW program; confirm your own state's Medicaid CHW policy first. Hire CHWs with lived experience of the specific communities and social challenges your highest-need patients face. Do not hire case managers and call them CHWs."
                   },
                   {
                     "_key": "m6stp25",
@@ -8202,7 +8202,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The practical effect of MACRA\u2019s two-track architecture is to create a structured pathway from fee-for-service through MIPS participation toward Advanced APM engagement, with financial incentives escalating at each stage. A solo primary care physician in rural Wyoming who bills Medicare exclusively on a fee-for-service basis is automatically enrolled in MIPS and will receive payment adjustments \u2014 upward or downward \u2014 based on their quality reporting, EHR utilization, and cost performance. The same physician who joins a CMMI-approved Accountable Care Organization and generates 50% of their Medicare revenue through that ACO qualifies as an Advanced APM participant, receives the 5% bonus, and escapes the MIPS reporting burden. MACRA\u2019s architecture was designed to make this progression financially attractive enough that providers would voluntarily move toward advanced VBC structures over time, without the political controversy of making VBC participation legally mandatory.",
+                    "text": "The practical effect of MACRA\u2019s two-track architecture is to create a structured pathway from fee-for-service through MIPS participation toward Advanced APM engagement, with financial incentives escalating at each stage. A solo primary care physician in rural Wyoming who bills Medicare exclusively on a fee-for-service basis is automatically enrolled in MIPS and will receive payment adjustments \u2014 upward or downward \u2014 based on their quality reporting, EHR utilization, and cost performance. The same physician who joins an Advanced APM, such as a two-sided Medicare ACO, and receives at least 75% of their Medicare Part B payments (or sees 50% of their Medicare patients) through it qualifies as an Advanced APM participant, earns the higher QP fee-schedule update (the original 5% lump-sum bonus lapsed after the 2024 performance year), and escapes the MIPS reporting burden. MACRA\u2019s architecture was designed to make this progression financially attractive enough that providers would voluntarily move toward advanced VBC structures over time, without the political controversy of making VBC participation legally mandatory.",
                     "marks": []
                   }
                 ]
@@ -8214,41 +8214,41 @@
                 "language": "json",
                 "code": [
                   {
-                    "Track": "MIPS \u2014 Exceptional Performance",
-                    "Payment Adjustment": "+9% of Medicare Part B payments",
-                    "Qualifying Criteria": "MIPS composite score 75+ out of 100",
-                    "Quality Reporting Burden": "High (45 quality measures, cost attribution, PI attestation)",
-                    "Risk Level": "Low (no downside financial risk)",
+                    "Track": "MIPS \u2014 At or Above Threshold",
+                    "Payment Adjustment": "Positive, budget-neutral and scaled (statutory cap +9%; actual bonuses are small). The separate exceptional-performance bonus ended after the 2022 performance year",
+                    "Qualifying Criteria": "MIPS final score of 75 or higher (the performance threshold)",
+                    "Quality Reporting Burden": "High (6 quality measures incl. 1 outcome measure, plus cost, Promoting Interoperability and improvement activities)",
+                    "Risk Level": "Low (no penalty at or above the threshold)",
                     "Typical Participant": "Solo/small group practices, non-ACO hospitals"
                   },
                   {
-                    "Track": "MIPS \u2014 Average Performance",
-                    "Payment Adjustment": "0% to +3%",
-                    "Qualifying Criteria": "MIPS composite score 45\u201374",
+                    "Track": "MIPS \u2014 Below Threshold",
+                    "Payment Adjustment": "Negative, scaled from just under 0% (scores near 75) toward \u20139%",
+                    "Qualifying Criteria": "MIPS final score between 18.75 and 75",
                     "Quality Reporting Burden": "High",
-                    "Risk Level": "Low",
-                    "Typical Participant": "Majority of Medicare-billing physicians"
+                    "Risk Level": "Medium (penalty applies)",
+                    "Typical Participant": "Many Medicare-billing clinicians outside Advanced APMs"
                   },
                   {
-                    "Track": "MIPS \u2014 Below Average",
-                    "Payment Adjustment": "-1% to -9%",
-                    "Qualifying Criteria": "MIPS composite score below 45",
+                    "Track": "MIPS \u2014 Lowest Scores",
+                    "Payment Adjustment": "\u20139% (maximum penalty)",
+                    "Qualifying Criteria": "MIPS final score of 18.75 or lower",
                     "Quality Reporting Burden": "High",
-                    "Risk Level": "Low-Medium (penalty applies)",
+                    "Risk Level": "High (maximum penalty)",
                     "Typical Participant": "Providers with poor data systems or low Medicare volume"
                   },
                   {
                     "Track": "Advanced APM \u2014 Qualifying Participant",
-                    "Payment Adjustment": "+5% lump-sum bonus; exempt from MIPS",
-                    "Qualifying Criteria": "50%+ Medicare revenue through CMS-approved APM; nominal risk threshold",
+                    "Payment Adjustment": "No lump-sum bonus for 2025+ performance (the APM Incentive Payment fell from 5% to 3.5% and 1.88%, then lapsed); from 2026, a 0.75% fee-schedule update vs. 0.25% for non-QPs; exempt from MIPS",
+                    "Qualifying Criteria": "75% of Medicare Part B payments or 50% of patients through an Advanced APM (from the 2025 performance year); more than nominal risk",
                     "Quality Reporting Burden": "Low-Medium (APM-specific metrics only)",
                     "Risk Level": "Medium (shared savings/losses through APM)",
-                    "Typical Participant": "ACO participants, BPCI Advanced participants, Primary Care First"
+                    "Typical Participant": "MSSP two-sided ACOs, ACO REACH (ends Dec 31, 2026; LEAD succeeds it Jan 2027), TEAM Track 2/3 hospitals (from Jan 2026). BPCI Advanced and Primary Care First both ended Dec 31, 2025"
                   },
                   {
                     "Track": "Advanced APM \u2014 Partial QP",
-                    "Payment Adjustment": "+5% bonus if voluntary reporting submitted",
-                    "Qualifying Criteria": "25\u201349% Medicare revenue through APM",
+                    "Payment Adjustment": "No bonus; may choose whether to be scored under MIPS",
+                    "Qualifying Criteria": "50\u201374% of payments or 35\u201349% of patients through an Advanced APM (from the 2025 performance year)",
                     "Quality Reporting Burden": "Medium",
                     "Risk Level": "Low-Medium",
                     "Typical Participant": "Organizations in early APM transition"

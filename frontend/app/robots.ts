@@ -7,9 +7,8 @@ import { ACCESS_DOMAINS, normalizeHost } from "@/lib/brand";
 // (Vercel preview deployments, localhost) is disallowed entirely so preview
 // URLs never compete with the production domains in search results.
 //
-// NOTE: while the beta gate is on, proxy.ts redirects /robots.txt and
-// /sitemap.xml to /beta like any other page (it exempts only /beta, /api/ and
-// /studio). That is deliberate access policy and is not changed here.
+// NOTE: proxy.ts exempts /robots.txt and /sitemap.xml from the beta gate, so
+// crawlers can read them while page navigation is still gated.
 
 const PRIVATE_PATHS = [
   "/api/",
