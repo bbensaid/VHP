@@ -1,0 +1,621 @@
+{
+  "_createdAt": "2026-05-31T03:18:05Z",
+  "_id": "fee-for-service-origins",
+  "_rev": "2zkDeD7zc2Ko2DfFHnbWyj",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T03:18:05Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Birth of Fee-for-Service: A 1965 Bargain With Medicine"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When President Lyndon B. Johnson signed the Social Security Amendments of 1965 on July 30, Medicare and Medicaid were created to extend health coverage to elderly and low-income Americans. To win the cooperation of organized medicine — particularly the American Medical Association, which had fiercely opposed government health insurance — the law was structured around a simple payment principle: physicians would be paid a fee for each service they delivered, just as they billed private patients. Fee-for-service (FFS) was not a deliberate policy choice so much as a political accommodation to secure physician participation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "When Medicare services formally began on July 1, 1966, more than 19 million Americans age 65 and older enrolled in the program. Physician payments were based on \"customary, prevailing, and reasonable\" (CPR) charges — essentially whatever a doctor had historically charged. This created an immediate structural problem: every new claim submitted at a higher charge raised the future benchmark, producing a ratchet effect that drove spending upward with no automatic governor."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the first two decades, policymakers treated the escalating costs as a managed problem rather than a systemic one. Various fee schedule updates, assignment rules, and charge limits were layered on top of CPR without fundamentally questioning the underlying incentive architecture. By the 1980s, it was clear that the \"more services = more revenue\" logic was deeply embedded in American healthcare finance — and that it was not going away without deliberate reform."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: Fee-for-service is a payment model in which a provider receives a separate, discrete payment for each individual service rendered — a visit, a test, a procedure, a prescription. Volume, not value, drives revenue under this model."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Americans age 65+ enrolled when Medicare services began July 1, 1966 — Social Security Administration",
+          "label": "Original Medicare Enrollees (1966)",
+          "value": "19M+"
+        },
+        {
+          "_key": "s2",
+          "context": "Total national health expenditures reached $5.3 trillion in 2024, driven partly by FFS volume incentives — CMS National Health Expenditure Report",
+          "label": "U.S. Health Spending 2024",
+          "value": "$5.3T"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Fee-for-Service Distorts Clinical Incentives"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The defining feature of fee-for-service is that it pays providers for activity, not outcomes. A surgeon who performs an operation is paid regardless of whether the patient recovers well or poorly. A primary care physician who spends 45 minutes counseling a patient on lifestyle changes to prevent diabetes earns less than a specialist who performs a 15-minute procedure. A hospital that discharges a patient quickly — reducing the episode cost — earns less than one that extends the stay. In each case, the financial incentives and the clinical incentives point in opposite directions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This misalignment is not a flaw in individual physician character; it is the predictable output of a well-functioning incentive system pointed in the wrong direction. When volume is the revenue driver, rational economic actors — hospitals, physician groups, imaging centers — respond by increasing volume. This dynamic is widely documented. A survey published in JAMA Internal Medicine found that physicians themselves reported approximately 20% of overall medical care as unnecessary, including 22% of prescriptions, 25% of tests, and 11% of procedures."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The consequences extend beyond wasteful spending. Overutilization exposes patients to real harms: unnecessary surgeries carry surgical risk, excessive imaging involves radiation exposure, and over-prescription of antibiotics contributes to antimicrobial resistance. Fee-for-service also systematically under-incentivizes prevention, care coordination, and the management of chronic disease — precisely the areas where the U.S. population most urgently needs investment, given rising rates of diabetes, hypertension, and heart disease."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "FFS Rewards (Revenue-Generating)",
+        "points": [
+          "High-volume procedure throughput",
+          "Repeat specialist visits and imaging",
+          "Inpatient admissions and extended stays",
+          "Fragmented, siloed care delivery",
+          "Reactive treatment of acute illness"
+        ]
+      },
+      "right": {
+        "label": "Patient Need (Health-Generating)",
+        "points": [
+          "Comprehensive chronic disease management",
+          "Preventive screenings and counseling",
+          "Coordinated transitions between care settings",
+          "Integrated primary and specialty care",
+          "Proactive wellness and risk reduction"
+        ]
+      },
+      "title": "What Fee-for-Service Rewards vs. What Patients Need"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Overutilization: The $750 Billion Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scale of waste in fee-for-service medicine is staggering and well-documented. A landmark 2012 analysis by the Institute of Medicine (now the National Academy of Medicine) estimated that the United States wasted roughly $750 billion out of $2.6 trillion in annual healthcare spending — approximately 30% of all health expenditures. That analysis identified six categories of waste: unnecessary services, inefficient care delivery, excess administrative costs, inflated prices, prevention failures, and fraud. Unnecessary services — a direct product of FFS incentives — was the single largest category."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "More recent estimates have adjusted the figures but not the conclusion. Overtreatment and low-value care are estimated to cost approximately $200 billion annually in the United States. These are not edge cases or outlier events; they are the normal output of a system designed to pay for doing more. The geographic variation in Medicare spending — a well-studied phenomenon — illustrates this clearly: regions with more FFS-driven care often show higher spending but not better health outcomes than lower-spending peers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Defensive medicine — the practice of ordering additional tests or procedures primarily to guard against malpractice liability rather than for clinical necessity — compounds the problem. Physicians practicing under FFS are simultaneously incentivized by payment and by fear of liability to order more. The result is a system with two powerful engines pushing utilization upward and few structural forces pulling it back."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3an1",
+      "_type": "analogyBlock",
+      "analogy": "Imagine paying a taxi driver by the mile, then asking them to recommend the best route across town. They might genuinely believe the longer route is better — more scenic, fewer lights — but the meter is also running in their favor. In fee-for-service medicine, providers have the same structural conflict: the payment system rewards more care, even when the right clinical answer is less.",
+      "concept": "Fee-for-Service Incentive Misalignment"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "IOM (2012) estimated ~$750B of $2.6T in annual US health spending was wasteful — Institute of Medicine Report on U.S. Health Care",
+          "label": "Estimated FFS Waste",
+          "value": "~30%"
+        },
+        {
+          "_key": "s2",
+          "context": "Physicians themselves report ~20% of medical care as unnecessary, including 25% of tests — JAMA Internal Medicine survey",
+          "label": "Care Physicians Call Unnecessary",
+          "value": "20%"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Outcomes Paradox: Spending More, Getting Less"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The United States spends more on healthcare than any other country on Earth — by a significant margin. In 2023, the U.S. spent approximately $14,885 per capita on health, compared to an OECD average of $5,967. That is more than two-and-a-half times the average spending of other wealthy nations. And yet, by nearly every population health measure, the U.S. performs poorly relative to its peer countries."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "U.S. life expectancy was 78.4 years in 2023 — 2.7 years below the OECD average and nearly 4 years shorter than the average among comparable high-income nations (82.5 years). The U.S. performs worse than the OECD average on 77% of health status indicators, including obesity rates (43% in the U.S. versus 26% OECD average) and opioid mortality (223 per million in the U.S. versus 30 per million OECD average). The fee-for-service structure contributes to this paradox by over-investing in acute, high-intensity intervention while systematically under-investing in the primary and preventive care that drives population health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This mismatch between spending and outcomes is not inevitable. Countries that organize care around primary care-centered, capitated or globally budgeted payment models consistently achieve better population health at lower cost. The evidence from international comparison does not indict American physicians or hospitals — it indicts the payment architecture that shapes how those physicians and hospitals behave."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "Vermont launched the nation's first statewide All-Payer Accountable Care Organization (ACO) model in 2018, moving the state's major payers — Medicare, Medicaid, and commercial insurers — toward value-based payment simultaneously. Rather than paying providers separately for each service, the model provides a single, globally-negotiated budget for a defined population. Vermont has historically had one of the highest rates of primary care utilization in the nation, contributing to better health outcomes relative to its spending level.\nThe model demonstrates that shifting the payment architecture — not just layering quality bonuses onto FFS — is what produces durable change in care delivery patterns.",
+      "title": "Vermont All-Payer ACO Model"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Early Attempts to Fix the System: Managed Care and the SGR"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Policymakers began serious attempts to constrain FFS-driven spending in the 1980s and 1990s. The most influential structural response was managed care — health maintenance organizations (HMOs) and preferred provider organizations (PPOs) that used capitation, utilization review, and gatekeeping to moderate volume. Managed care did succeed in slowing spending growth through the mid-1990s, but a political and consumer backlash against restricted access and coverage denials led Congress to pass patient protection legislation and effectively defanged many of managed care's cost-control mechanisms by the early 2000s."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "For Medicare, Congress attempted a different fix with the Sustainable Growth Rate (SGR) formula, enacted as part of the Balanced Budget Act of 1997. The SGR tied aggregate physician payment updates to GDP growth, theoretically preventing physician spending from outpacing the broader economy. In practice, it failed. When physician spending exceeded the SGR target, the formula required automatic fee cuts — often exceeding 20% — that Congress consistently overrode with emergency \"doc fix\" legislation rather than allow payments to fall. By 2015, the proposed SGR-driven cut was 21.2% — an amount both politically and practically impossible to implement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The SGR experience illustrated a fundamental truth: you cannot fix a volume-driven payment system by threatening to reduce the per-unit price when volume rises, because those whose livelihoods depend on that volume will always find a way to reverse the cuts. The only durable solution is to restructure the underlying payment model — to make it financially neutral or advantageous to deliver less but better care. That insight became the foundation for the value-based care movement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Social Security Amendments of 1965 established FFS as the default payment architecture for government health insurance programs.",
+          "title": "1965 — Medicare & Medicaid Created"
+        },
+        {
+          "_key": "step2",
+          "description": "Medicare introduced diagnosis-related group (DRG) payments for hospitals, a first move toward prospective (pre-set) rather than retrospective (cost-plus) payment.",
+          "title": "1983 — DRG Prospective Payment"
+        },
+        {
+          "_key": "step3",
+          "description": "The Resource-Based Relative Value Scale replaced CPR charges for Medicare physician payment, standardizing relative payment across services.",
+          "title": "1992 — RBRVS Physician Fee Schedule"
+        },
+        {
+          "_key": "step4",
+          "description": "The Balanced Budget Act of 1997 introduced the SGR formula to link physician payment updates to GDP, attempting to cap FFS-driven volume growth.",
+          "title": "1997 — Sustainable Growth Rate"
+        },
+        {
+          "_key": "step5",
+          "description": "The ACA established the Center for Medicare & Medicaid Innovation (CMMI) to test alternative payment models at scale, marking the formal launch of value-based care.",
+          "title": "2010 — Affordable Care Act"
+        },
+        {
+          "_key": "step6",
+          "description": "The Medicare Access and CHIP Reauthorization Act permanently repealed the SGR and created the Quality Payment Program — the most significant shift in Medicare physician payment since 1992.",
+          "title": "2015 — MACRA Repeals SGR"
+        }
+      ],
+      "title": "The Path from FFS to Value: Key Legislative Milestones"
+    },
+    {
+      "_key": "s6h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why FFS Persists Despite Its Flaws"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Given the weight of evidence against fee-for-service, a reasonable question is why it remains the dominant payment model in American healthcare. The answer involves entrenched financial interests, administrative complexity, and the genuine difficulty of measuring \"value\" in health. Provider organizations that have built their revenue models, staffing levels, and capital investments around FFS volume face existential risk in a rapid transition to different payment structures. Hospitals whose margins depend on high-acuity inpatient admissions cannot easily restructure overnight."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "There is also the measurement problem. Value-based payment requires robust quality metrics, attribution methodologies (to determine which provider is responsible for a patient's outcomes), risk adjustment (to avoid penalizing providers who care for sicker patients), and data infrastructure capable of tracking patients across settings over time. These systems are expensive to build, slow to validate, and contested in their design. FFS, by contrast, is administratively simple: the claim defines the service, the fee schedule defines the payment, and the transaction is complete."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite these barriers, the trajectory is clear. CMS has set explicit targets for moving Medicare toward value-based payment, and the commercial insurance market has followed. Understanding why FFS fails — at the level of incentive structure, not just cost — is the essential first step toward understanding why every major reform initiative of the past 15 years has been an attempt to move away from it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6w1",
+      "_type": "warningBlock",
+      "message": "Fee-for-service is sometimes confused with \"privatized\" healthcare, but it is actually the dominant payment model within both public (Medicare, Medicaid) and private insurance programs in the United States. The problem is not who pays, but what behavior the payment incentivizes. Both public and private FFS payers face the same volume-driven cost dynamic.",
+      "title": "Common Misconception"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Fee-for-service was adopted in 1965 not as a deliberate design choice but as a political accommodation to secure physician participation in Medicare.",
+        "FFS pays for activity (volume), not outcomes, creating a structural incentive for providers to deliver more services regardless of clinical necessity.",
+        "Physicians themselves estimate approximately 20% of medical care is unnecessary — a direct consequence of volume-based payment incentives.",
+        "The U.S. spends more than $14,000 per capita on healthcare — over 2.5x the OECD average — yet ranks below average on life expectancy and most health status indicators.",
+        "The Sustainable Growth Rate (SGR) formula was a failed attempt to constrain FFS volume by threatening fee cuts, but Congress overrode those cuts every year for nearly two decades.",
+        "The Affordable Care Act (2010) and MACRA (2015) represent the legislative foundation of the shift away from FFS, creating CMMI and the Quality Payment Program respectively.",
+        "The persistence of FFS reflects entrenched financial interests, administrative simplicity, and the genuine difficulty of measuring and attributing health value — not ignorance of its flaws."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The SGR formula, enacted in 1997, was intended to tie physician payment updates to GDP growth and cut fees automatically when spending exceeded targets. However, Congress passed emergency \"doc fix\" legislation every year to override those cuts — by 2015 the pending cut was 21.2%. MACRA permanently repealed the SGR in April 2015.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The SGR formula required physicians to submit quality data that was too burdensome to collect."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Congress repeatedly overrode the automatic fee cuts the SGR required when physician spending exceeded targets."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The SGR only applied to hospital payments, not physician services."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The SGR was immediately repealed when Medicare was created in 1965."
+        }
+      ],
+      "question": "Which of the following best explains why the Sustainable Growth Rate (SGR) formula failed to control Medicare physician spending?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] CMS National Health Expenditure Data — https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/nhe-fact-sheet — U.S. health spending $5.3T in 2024 and $4.9T in 2023"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] OECD Health at a Glance 2025: United States — https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/united-states_3517f35e-en.html — U.S. per-capita spending $14,885 vs. OECD average $5,967; life expectancy 78.4 years vs. 82.5 peer average"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Institute of Medicine (2012), \"Best Care at Lower Cost\" / Third Way, \"The Case Against Fee-for-Service Health Care\" — https://www.thirdway.org/report/the-case-against-fee-for-service-health-care — ~$750B annual waste estimate, 20% unnecessary care physician survey"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] PMC: \"Sustainable Growth Rate Repealed, MACRA Revealed\" — https://pmc.ncbi.nlm.nih.gov/articles/PMC7959940/ — SGR history, Congressional doc-fix patches, 21.2% pending cut, MACRA repeal April 2015"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Social Security Administration, LBJ Medicare signing — https://www.ssa.gov/history/ssa/lbjmedicare1.html — Medicare signed July 30, 1965; services began July 1, 1966; 19 million initial enrollees"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Peterson-KFF Health System Tracker, U.S. Life Expectancy — https://www.healthsystemtracker.org/chart-collection/u-s-life-expectancy-compare-countries/ — U.S. life expectancy 2.7 years below OECD average"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 1,
+  "slug": {
+    "_type": "slug",
+    "current": "fee-for-service-origins"
+  },
+  "title": "Why Fee-for-Service Fails: Incentives & Consequences"
+}

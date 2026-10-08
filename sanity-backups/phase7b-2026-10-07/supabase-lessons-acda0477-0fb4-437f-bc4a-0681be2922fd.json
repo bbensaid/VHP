@@ -1,0 +1,35 @@
+{
+  "id": "acda0477-0fb4-437f-bc4a-0681be2922fd",
+  "slug": "algorithmic-bias-healthcare",
+  "sanity_slug": "algorithmic-bias-healthcare",
+  "content_blocks": [
+    {
+      "body": "There is a widespread assumption that algorithms and AI are more objective than human judgment. This is false. Algorithms trained on historical data inherit the biases embedded in that data. Algorithms designed without equity analysis can produce outputs that discriminate — consistently and at scale — without any human intending it.\n\nThe consequences in healthcare are serious: algorithms that guide who gets care management, who gets referred to specialists, whose pain is taken seriously, or who qualifies for transplant — all can amplify existing disparities if not carefully designed and evaluated.",
+      "type": "text",
+      "heading": "Automation is not neutrality"
+    },
+    {
+      "body": "For decades, the standard formula for estimating kidney function (eGFR — estimated Glomerular Filtration Rate) included a 'race correction': it assigned Black patients higher scores, estimating that Black patients had higher baseline kidney function.\n\nThe consequence: Black patients' kidney function was systematically overestimated. They appeared healthier on paper than they were, which delayed referrals to nephrologists, delayed transplant evaluation, and resulted in Black patients being sicker when they were finally listed for kidney transplants.\n\nIn 2021, NKF and ASN recommended eliminating race from the eGFR equation. Most major health systems have adopted race-free eGFR. This is a case where the algorithm encoded a contested biological assumption that turned out to be wrong — and caused measurable harm.",
+      "type": "text",
+      "heading": "Case 1: The kidney function algorithm (eGFR)"
+    },
+    {
+      "body": "A 2019 Science paper analyzed an algorithm used by Optum (and widely licensed to health systems) to identify patients who should be enrolled in high-touch care management programs. The algorithm used *healthcare costs* as a proxy for health needs — patients who had spent the most were predicted to need the most care.\n\nThe problem: Black patients, on average, spend less on health care than white patients with the same health needs — because of less access, less trust, and systemic undertreatment. By using costs as a proxy for needs, the algorithm systematically underidentified Black patients as eligible for care management. Among patients the algorithm flagged as high-need, only 17.7% were Black — when their true share by health status should have been 46.5%.",
+      "type": "text",
+      "heading": "Case 2: The Optum care management algorithm"
+    },
+    {
+      "body": "1. What data was this trained on? Does the training data reflect historical inequities?\n2. Was the algorithm's performance validated separately for different racial, ethnic, and socioeconomic groups?\n3. What proxy measures does it use — and are those proxies distributed differently across groups?\n4. Who is the algorithm designed to help, and who might it systematically disadvantage?\n5. Is there an ongoing bias monitoring protocol after deployment?",
+      "type": "callout",
+      "heading": "Questions to ask when evaluating a clinical algorithm",
+      "variant": "tip"
+    },
+    {
+      "type": "video",
+      "caption": "Algorithmic bias in healthcare — STAT News and Harvard explainer (~8 min)",
+      "videoId": "UG_X_7g63rY",
+      "mediaType": "youtube",
+      "durationSeconds": 480
+    }
+  ]
+}

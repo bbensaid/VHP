@@ -1859,7 +1859,7 @@
             {
               "type": "text",
               "heading": "Polygenic Risk Scores: When the Training Data Is Not Diverse",
-              "body": "A 2019 study in Cell found that PRS trained on European populations had substantially lower predictive accuracy when applied to non-European populations — and that the gap was largest for individuals of African ancestry, who were farthest from the training population genetically. Using a PRS with known poor accuracy for a patient of African ancestry without disclosing this limitation is a form of health inequity embedded in the technology itself."
+              "body": "A 2019 study in Nature Genetics (Martin et al.) found that polygenic scores built from predominantly European data predicted risk about 4.5 times more accurately for people of European ancestry than for people of African ancestry, who are genetically farthest from the training population. Using a PRS with known poor accuracy for a patient of African ancestry without disclosing this limitation is a form of health inequity embedded in the technology itself."
             },
             {
               "type": "callout",
@@ -1931,7 +1931,7 @@
             {
               "type": "text",
               "heading": "Rural Populations and Precision Medicine Access Barriers",
-              "body": "Rural populations face a distinct set of precision medicine access barriers that are structural rather than cultural. These include geographic distance from specialized genetic services, limited broadband access needed for telegenetics, provider shortages that mean primary care physicians have little time to engage with genomic complexity, and insurance gaps that make high-cost genomic testing and targeted therapies financially inaccessible.\n\nRural patients with cancer face documented disparities in receiving tumor genomic profiling — the first step in precision oncology. A study published in JNCI Cancer Spectrum in 2023 found that rural cancer patients were significantly less likely to receive comprehensive genomic profiling than urban patients, even after controlling for insurance status, cancer stage, and cancer type. This means rural patients are less likely to be identified as candidates for targeted therapies they might benefit from."
+              "body": "Rural populations face a distinct set of precision medicine access barriers that are structural rather than cultural. These include geographic distance from specialized genetic services, limited broadband access needed for telegenetics, provider shortages that mean primary care physicians have little time to engage with genomic complexity, and insurance gaps that make high-cost genomic testing and targeted therapies financially inaccessible.\n\nRural patients with cancer have historically had less access to tumor genomic profiling — the first step in precision oncology — because testing and molecular expertise concentrate in academic centers. Programs that bring testing to community practices can close that gap: a 2024 study in JNCI Cancer Spectrum of 1,258 patients in the Maine Cancer Genomics Initiative, which deployed tumor testing through community and rural oncology practices, found that rurality was not associated with receipt of genome-matched treatment. Access, not geography itself, is the barrier."
             },
             {
               "type": "text",

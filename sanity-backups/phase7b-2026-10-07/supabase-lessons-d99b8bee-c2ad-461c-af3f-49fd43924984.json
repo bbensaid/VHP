@@ -1,0 +1,51 @@
+{
+  "id": "d99b8bee-c2ad-461c-af3f-49fd43924984",
+  "slug": "ai-ml-core-concepts",
+  "sanity_slug": "aiml-core-concepts",
+  "content_blocks": [
+    {
+      "body": "Artificial intelligence (AI) refers broadly to machines performing tasks that would typically require human intelligence. Machine learning (ML) is a subset of AI: instead of being explicitly programmed with rules, ML systems learn patterns from data. Deep learning is a subset of ML that uses neural networks with many layers — it powers the most impressive recent advances in image recognition, language understanding, and clinical prediction.\n\nIn health care, when someone says 'AI,' they usually mean one of three things: a predictive model (will this patient be readmitted?), a computer vision tool (does this chest X-ray show pneumonia?), or a language model (summarize this clinical note).",
+      "type": "text",
+      "heading": "AI is a broad term — here's how to navigate it"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "The model learns from labeled examples — inputs paired with correct outputs. Train on 10,000 labeled chest X-rays; the model learns to classify new ones. Most clinical AI is supervised.",
+          "icon": "ti-tag",
+          "title": "Supervised learning"
+        },
+        {
+          "body": "The model finds patterns in unlabeled data — clustering similar patients together, detecting anomalies. Used in patient stratification and cohort discovery.",
+          "icon": "ti-topology-ring",
+          "title": "Unsupervised learning"
+        },
+        {
+          "body": "The model learns by trial and error, receiving rewards for good decisions. Used in robotic surgery, treatment protocol optimization, and dosing algorithms.",
+          "icon": "ti-trophy",
+          "title": "Reinforcement learning"
+        }
+      ],
+      "heading": "The three main ML paradigms"
+    },
+    {
+      "body": "A supervised learning model is only as good as its training data. The model learns the relationship between inputs (e.g., lab values, vital signs, demographics) and outputs (e.g., sepsis in next 6 hours: yes/no) from historical examples.\n\nIf the training data reflects historical biases — for example, if underdiagnosis of a condition in Black patients means fewer true positives in the training set — the model will learn those biases. If training data comes from one hospital system, the model may not generalize to different patient populations, clinical workflows, or EHR documentation styles.\n\nThis is why 'the algorithm was trained on millions of records' is not sufficient assurance of quality — the question is what was in those records.",
+      "type": "text",
+      "heading": "Training data: the model's foundation"
+    },
+    {
+      "body": "ML models find statistical patterns. They have no understanding of mechanism, no concept of causality, and no ability to reason about novel situations. A model trained to predict sepsis might learn that low blood pressure correlates with sepsis — but it might also learn that certain nursing documentation patterns correlate, because nurses document more thoroughly for sicker patients. Both patterns predict sepsis, but only one is clinically meaningful. This is why human oversight remains essential.",
+      "type": "callout",
+      "heading": "Correlation is not causation — and AI doesn't know the difference",
+      "variant": "warning"
+    },
+    {
+      "type": "video",
+      "caption": "Machine learning in medicine — MIT overview (~10 min)",
+      "videoId": "ukzFI9rgwfU",
+      "mediaType": "youtube",
+      "durationSeconds": 600
+    }
+  ]
+}

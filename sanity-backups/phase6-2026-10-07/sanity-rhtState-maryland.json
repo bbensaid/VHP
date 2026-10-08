@@ -1,0 +1,53 @@
+{
+  "_createdAt": "2026-03-10T13:54:24Z",
+  "_id": "rhtState-maryland",
+  "_rev": "G7Tfo59YVwcDW2O5CBrecJ",
+  "_type": "rhtState",
+  "_updatedAt": "2026-03-10T13:54:24Z",
+  "awardAmount": "$168,000,000",
+  "description": "Building on Maryland's unique all-payer global budget model, the RHT program extends its reach to underserved rural communities on the Eastern Shore, pairing financial reform with targeted health equity investments.",
+  "initiatives": [
+    {
+      "_key": "ini-0",
+      "description": "Extending the Maryland Total Cost of Care model to smaller rural hospitals not yet participating in global budgets.",
+      "title": "Rural Global Budget Pilots"
+    },
+    {
+      "_key": "ini-1",
+      "description": "Targeted workforce recruitment, mobile health units, and broadband expansion for the underserved Eastern Shore region.",
+      "title": "Eastern Shore Equity Initiative"
+    },
+    {
+      "_key": "ini-2",
+      "description": "Subsidized housing and loan forgiveness programs to retain clinicians in rural Maryland counties.",
+      "title": "Workforce Housing & Retention"
+    }
+  ],
+  "metrics": [
+    {
+      "_key": "metric-0",
+      "label": "New Global Budget Hospitals",
+      "status": "Pending",
+      "target": "8 Facilities"
+    },
+    {
+      "_key": "metric-1",
+      "label": "Eastern Shore Screenings",
+      "status": "In Progress",
+      "target": "+15,000/yr"
+    },
+    {
+      "_key": "metric-2",
+      "label": "Clinician Retention Rate",
+      "status": "Pending",
+      "target": "+12%"
+    }
+  ],
+  "stateId": {
+    "_type": "slug",
+    "current": "maryland"
+  },
+  "stateName": "Maryland",
+  "status": "Active",
+  "strategicFocus": "Global Budget Expansion & Rural Equity"
+}

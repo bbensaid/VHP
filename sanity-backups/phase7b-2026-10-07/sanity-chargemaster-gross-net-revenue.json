@@ -1,0 +1,457 @@
+{
+  "_createdAt": "2026-05-31T07:21:57Z",
+  "_id": "chargemaster-gross-net-revenue",
+  "_rev": "rL4Cn5Sfo5Z8rzPmEBWlAW",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T07:21:57Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The $5,000 MRI That Nobody Pays $5,000 For"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A hospital lists an MRI at $5,000. A commercial insurer pays $1,200 for it. Medicare pays perhaps $500. A cash-paying patient might be quoted $3,200. The uninsured patient who never negotiates gets billed the full $5,000. Same machine, same scan, same hospital — four wildly different prices, none of which has much to do with what the scan actually costs to perform. Welcome to the strangest pricing system in the American economy, governed by a document called the chargemaster."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The chargemaster — formally the charge description master (CDM) — is a comprehensive listing of every billable item and service a hospital offers, each paired with a price and standardized billing codes. Every blood test, surgical supply, medication dose, room-day, and procedure has its own line item, and a large hospital’s chargemaster can contain tens of thousands of entries. The price attached to each item is called the gross charge or \"list price.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Understanding the chargemaster is the key to one of hospital finance’s most important distinctions: the difference between what a hospital charges (gross revenue) and what it actually collects (net revenue). Confusing the two leads to wildly wrong conclusions about hospital finances — and the gap between them is where almost all the action in hospital revenue lives."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: The chargemaster (CDM) is a hospital’s master list of every billable item and its gross charge (list price). Gross charges are the starting point for billing, but they are not what the hospital actually collects — net revenue is."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "The average hospital’s charges are about 3.4 times the actual cost of providing care, with some exceeding a 10x charge-to-cost ratio (Health Affairs / NIH studies)",
+          "label": "Charges vs. Actual Cost",
+          "value": "~3.4x"
+        },
+        {
+          "_key": "s2",
+          "context": "Hospitals’ chargemaster list prices are on average about 164% higher than negotiated prices for the same services (Health Affairs)",
+          "label": "List Price Over Negotiated",
+          "value": "164%"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Gross Revenue, Contractual Allowances, and Net Revenue"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The relationship among the key terms is best understood as a subtraction. Gross revenue (or gross charges) is the total amount a hospital bills for its services during a period, calculated at full chargemaster prices. But almost no one pays full chargemaster prices. Each insurer has a negotiated rate — the contractually agreed amount it will actually pay — that is far lower. The difference between the gross charge and what is contractually allowed is called the contractual allowance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Net patient revenue is what remains after subtracting contractual allowances, charity care, and bad debt from gross charges. It is the money the hospital actually expects to collect — and it is dramatically lower than gross revenue. Using the earlier example: a $5,000 chargemaster MRI with an insurer’s $1,200 negotiated rate generates a $3,800 contractual allowance and just $1,200 in net revenue. The $5,000 gross charge is essentially a fiction; the $1,200 is the financial reality."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2steps1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "The full chargemaster list price for every item billed — e.g., $5,000 for an MRI.",
+          "title": "Start with the gross charge"
+        },
+        {
+          "_key": "step2",
+          "description": "The difference between the list price and the payer’s negotiated rate — the discount the hospital agreed to.",
+          "title": "Subtract contractual allowances"
+        },
+        {
+          "_key": "step3",
+          "description": "Care provided free to those who qualify, plus bills that go uncollected.",
+          "title": "Subtract charity care and bad debt"
+        },
+        {
+          "_key": "step4",
+          "description": "What the hospital actually expects to collect — the only revenue figure that reflects financial reality.",
+          "title": "Arrive at net patient revenue"
+        }
+      ],
+      "title": "From Gross Charge to Net Revenue"
+    },
+    {
+      "_key": "s2w1",
+      "_type": "warningBlock",
+      "message": "Gross revenue figures are inflated by chargemaster fiction and can be several times higher than net revenue. Headlines about hospitals \"charging\" enormous sums almost always cite gross charges. The number that matters for solvency, margins, and analysis is net patient revenue.",
+      "title": "Never Judge a Hospital by Gross Charges"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Chargemaster Prices Are So High — and So Meaningless"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "If almost no one pays them, why are chargemaster prices set so absurdly high? The answer is a self-reinforcing cycle that has little to do with cost. Hospitals inflate chargemaster prices because insurers negotiate discounts off the list price; insurers then demand steeper discounts as prices rise; and hospitals raise list prices further to preserve revenue after those discounts. Over time this ratchet detaches list prices from any rational basis. Between 1996 and 2017, chargemaster markups increased by an average of 155% across more than 3,400 acute-care hospitals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The result is markups that strain belief. The average hospital’s charges run about 3.4 times the actual cost of care, and the average charge-to-cost ratio across patient-care departments has been measured anywhere from 1.8 to 28.5, with for-profit hospitals carrying notably higher ratios than government hospitals. Researchers have found that both cash prices and commercial negotiated rates are typically set as a consistent percentage discount off the chargemaster — cash prices averaging around 64% and commercial negotiated rates around 58% of chargemaster prices — which is why the inflated list price still influences what real payers pay."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3an1",
+      "_type": "analogyBlock",
+      "analogy": "The chargemaster works like the \"manufacturer’s suggested retail price\" on a car windshield that no one actually pays. The sticker says $50,000; the dealer expects to negotiate down to $38,000; a savvy buyer pays $35,000; and only the customer who walks in and pays the sticker without haggling gets soaked. The sticker exists mainly to anchor the negotiation — and in hospitals, the uninsured are the ones most likely to be billed the sticker.",
+      "concept": "Chargemaster list prices vs. negotiated rates"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why chargemaster prices are described as essentially meaningless as a measure of value, yet harmful in practice. They are meaningless because they reflect a negotiating posture rather than cost or quality. They are harmful because the people least able to negotiate — the uninsured and out-of-network patients — are precisely those most likely to be charged the full, inflated list price, turning the chargemaster into a regressive engine of medical debt."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Price Transparency: Forcing the Fiction Into the Open"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For decades, chargemaster prices and negotiated rates were closely guarded secrets, making it impossible for patients to shop or for researchers to compare. Federal hospital price transparency rules changed that. Hospitals are now required to publish a machine-readable file disclosing five standard charges for their items and services: the gross chargemaster charge, the discounted cash price, the payer-specific negotiated charge, and the de-identified minimum and maximum negotiated charges."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has steadily tightened the requirements. Starting in July 2024, hospitals must use a standardized CMS template in a non-proprietary format (CSV or JSON), making the data far more usable. Enforcement carries teeth: CMS can levy fines of up to $5,500 per day for non-compliance at hospitals with 30 or more beds. As of late 2024, roughly 70% of hospitals were substantially compliant with all five required data elements, about 15% posted partial files (often missing payer-specific negotiated rates), and about 15% remained non-compliant."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "Compliance has been uneven. A 2024 HHS Office of Inspector General audit of 100 hospitals found 37 failed to meet key price-transparency requirements, with 34 not complying with the machine-readable file rules — yet CMS had fined only 18 hospitals nationwide.\n\nIn February 2025, a federal executive order directed agencies to ramp up enforcement of price transparency within 90 days, signaling that the era of lax enforcement may be ending. For hospital finance teams, transparency has shifted from a back-office compliance task to a strategic exposure: published negotiated rates can now be seen by competitors, employers, and the insurers across the negotiating table.",
+      "title": "Transparency Meets Enforcement (2024–2025)"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why This Matters Beyond the Billing Office"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The chargemaster is not just an administrative artifact; it sits at the center of how hospitals manage revenue. The chargemaster team must keep tens of thousands of codes and prices accurate and current — an error in a single high-volume code can cost or expose the hospital to millions. Because cash prices and negotiated rates are often calculated as percentages of chargemaster prices, the list price still cascades into real collections, which is why hospitals continue to maintain and update it even as everyone acknowledges it is largely fiction."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "For patients, the gross-versus-net gap is the source of enormous confusion and harm. A patient who receives a bill at full chargemaster rates is seeing a number almost no insured person would ever pay. Understanding that gross charges are negotiable — and that hospitals routinely collect a fraction of them — is the foundation of medical-bill advocacy and of the charity-care and financial-assistance policies that nonprofit hospitals are obligated to offer."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Finally, the chargemaster illustrates exactly why value-based care exists. A payment system built on inflated, arbitrary list prices and opaque negotiated discounts is the antithesis of paying for value. The push toward transparency, reference pricing, and ultimately models that pay for outcomes rather than line-item charges is, in large part, an effort to escape the distorting gravity of the chargemaster. To understand hospital revenue, you must first understand that the prices are not real — and then understand the elaborate machinery that turns those fictional prices into the very real dollars a hospital lives on."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "The chargemaster (charge description master, or CDM) is a hospital’s master list of every billable item and its gross charge (list price), often containing tens of thousands of entries.",
+        "Gross revenue is what a hospital bills at full chargemaster prices; net patient revenue is what it actually collects after subtracting contractual allowances, charity care, and bad debt — and it is far lower.",
+        "A contractual allowance is the difference between the chargemaster price and a payer’s negotiated rate; it represents the discount the hospital agreed to and is not real revenue.",
+        "Chargemaster prices are extremely inflated — averaging about 3.4 times actual cost and roughly 164% above negotiated prices — because of a self-reinforcing cycle of list-price inflation and insurer discounting, not because of cost.",
+        "List prices are largely meaningless as a measure of value but harmful in practice, because the uninsured and out-of-network patients are the ones most likely to be billed the full inflated charge.",
+        "Federal price transparency rules now require hospitals to publish five standard charges (gross, cash, payer-specific negotiated, and de-identified min/max) in a standardized CMS machine-readable template (CSV/JSON) as of July 2024.",
+        "Enforcement is tightening: fines reach up to $5,500/day for larger non-compliant hospitals; ~70% were substantially compliant by late 2024, and a February 2025 executive order directed stronger enforcement.",
+        "Because cash prices and negotiated rates are often set as percentages of chargemaster prices, the fictional list price still cascades into real collections — and the whole distorted system is a core argument for value-based payment."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] TechTarget RevCycleManagement: \"The Role of the Hospital Chargemaster in Revenue Cycle Management\" — https://www.techtarget.com/revcyclemanagement/feature/The-Role-of-the-Hospital-Chargemaster-in-Revenue-Cycle-Management — chargemaster/CDM definition, gross charges, and net patient revenue after contractual allowances and bad debt."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Health Affairs: \"The Relationships Among Cash Prices, Negotiated Rates, And Chargemaster Prices For Shoppable Hospital Services\" — https://www.healthaffairs.org/doi/abs/10.1377/hlthaff.2022.00977 — cash prices ~64% and commercial negotiated rates ~58% of chargemaster prices; consistent percentage discounting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] PMC/NIH: \"Hospital Price Transparency in the US: Chargemaster, Cash, and Negotiated Price Variation for 14 Common Procedures\" — https://pmc.ncbi.nlm.nih.gov/articles/PMC9464687/ — charge-to-cost ratios (1.8–28.5), list prices ~164% above negotiated, for-profit vs. government markup differences."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] BillKarma: \"Hospital Chargemaster Explained\" — https://billkarma.app/guides/hospital-chargemaster-explained/ — the self-reinforcing inflation cycle; charges ~3.4x cost; 1996–2017 markup growth of ~155%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] CMS: \"Hospital Price Transparency Frequently Asked Questions\" — https://www.cms.gov/files/document/hospital-price-transparency-frequently-asked-questions.pdf — five required standard charges; July 2024 standardized template (CSV/JSON); penalties up to $5,500/day for 30+ bed hospitals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] HHS OIG audit coverage / February 2025 executive order reporting — https://www.techtarget.com/revcyclemanagement/news/366600486/Hospital-Chargemaster-Heavily-Influences-Cash-Prices-Payer-Rates — 2024 OIG audit (37 of 100 hospitals non-compliant), ~70% substantial compliance, and the Feb 2025 executive order to ramp up enforcement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "hospital-finance",
+  "order": 5,
+  "slug": {
+    "_type": "slug",
+    "current": "chargemaster-gross-net-revenue"
+  },
+  "title": "The Chargemaster and Gross vs. Net Revenue: Why Hospital Prices Are Fiction"
+}

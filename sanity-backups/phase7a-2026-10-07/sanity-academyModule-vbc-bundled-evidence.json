@@ -1,0 +1,356 @@
+{
+  "_createdAt": "2026-05-27T19:30:36Z",
+  "_id": "academyModule-vbc-bundled-evidence",
+  "_rev": "oEdzoBJnHz58jGhpZT1CcQ",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-27T19:30:36Z",
+  "body": [
+    {
+      "_key": "bev-intro",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "When CMS and the broader policy community embarked on bundled payment experimentation in the early 2010s, the theoretical logic was compelling but the empirical evidence was thin. A decade later, there is a substantial body of peer-reviewed research and CMS evaluation data to assess bundled payment's actual effects on spending, quality, and care delivery. The picture that emerges is more heterogeneous than the model's proponents hoped: bundled payments work well in specific clinical contexts — primarily musculoskeletal — but have shown weaker evidence in medical episodes and have raised legitimate concerns about patient selection, spillover effects, and the sustainability of savings over time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-h2-bpcia",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "BPCI-Advanced Results: Which Episodes Saved Money"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bev-p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS evaluations of BPCI-Advanced through the first several performance years found that the model generated aggregate net savings to Medicare, with results concentrated in a subset of clinical episodes. Lower extremity joint replacement (LEJR) emerged as the clear savings driver: BPCI-A participants managing LEJR episodes consistently generated savings of 2-5% relative to target prices, primarily through reductions in skilled nursing facility (SNF) utilization. Cardiac episodes — major joint replacement, coronary artery bypass graft, cardiac valve procedures — showed more modest savings, while most medical episodes (pneumonia, COPD, sepsis) generated near-zero or negative net savings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The differential performance across episode types reflects fundamental differences in modifiability. In surgical episodes like joint replacement, post-acute care utilization is the dominant variable: historical SNF use has been high relative to clinical necessity, surgeons have direct influence over discharge destination, and the post-acute spend is large enough that even modest reductions produce meaningful savings. Medical episodes like pneumonia are driven more by acute care intensity and readmission rates — factors more closely tied to underlying clinical complexity and comorbidity burden — making them harder to manage through care coordination interventions alone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-h2-cjr",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The CJR Mandatory Model: The Cleanest Evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bev-p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Comprehensive Care for Joint Replacement (CJR) model, which randomly assigned geographic markets to mandatory bundled payment participation rather than allowing voluntary self-selection, provides the most internally valid evidence on bundled payment effectiveness. The CJR randomized design eliminates the selection bias that plagues voluntary model evaluations — where the most capable and motivated organizations volunteer — allowing credible causal inference."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The CJR evaluation by Finkelstein, Ji, Mahoney, and Skinner, published in the New England Journal of Medicine in 2018, found that CJR reduced Medicare spending per episode by approximately $812 (about 3.7%), driven almost entirely by reductions in post-acute care spending — specifically, a decline in SNF use and a shift toward home health. Readmission rates did not increase, and patient-reported outcomes on functional recovery and patient experience were not significantly different between CJR and control markets. The quality findings are arguably as important as the savings findings: they suggest that reducing SNF utilization did not harm patients, validating the key premise of post-acute care reduction strategies."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Subsequent analyses of CJR found that savings were concentrated in hospitals that started with high baseline SNF utilization — consistent with the theoretical prediction that bundled payment opportunity is proportional to prior inefficiency. Hospitals that already had low SNF use achieved minimal savings in CJR, while those with SNF utilization rates above 35% achieved the largest reductions. This pattern has important implications for how bundled payment should be designed and where it should be deployed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-h2-quality",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality Outcomes: Readmissions, Complications, and Patient-Reported Outcomes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bev-p7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "One of the central concerns about bundled payment is that financial pressure to reduce episode cost might lead providers to discharge patients too quickly, under-invest in post-acute care, or select healthier patients in the first place. The evidence to date does not strongly support these concerns for joint replacement episodes. Studies of BPCI and CJR consistently find no significant increase in readmission rates, and several find modest reductions in 90-day readmissions consistent with better care coordination during the post-acute period."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-p8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Complication rates — including surgical site infections, periprosthetic joint infections, and implant failures — have not shown significant increases in bundled payment environments. Patient-reported outcome studies in joint replacement, including analyses using PROMIS measures and condition-specific instruments like the HOOS and KOOS, have found similar or slightly better functional outcomes at 90 days and 1 year for patients managed under bundled payment compared to matched fee-for-service controls. This evidence, while not definitive, suggests that the cost savings in bundled payment reflect elimination of low-value post-acute care rather than under-treatment of patients who genuinely need it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-h2-cream-skim",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Cream-Skimming: The Patient Selection Concern"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bev-p9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "A persistent concern in bundled payment research is cream-skimming: the practice of preferentially treating low-complexity patients (who generate low episode costs and easy savings) while avoiding high-complexity patients (who generate high episode costs and potential losses). Because bundled payment creates a direct financial incentive for each episode's cost — unlike per-service fee-for-service where each additional service generates revenue — the model could theoretically incentivize patient selection by risk-averse providers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-p10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Several studies have investigated cream-skimming in BPCI and CJR with mixed findings. Analyses by Navathe and colleagues found that some BPCI participants showed shifts in case mix toward lower-complexity patients after joining the model, consistent with selective referral patterns. However, the CJR evaluation, which covers all Medicare joint replacement patients in participating markets regardless of patient complexity, found no evidence of population-level cream-skimming since participation was mandatory. Whether voluntary bundled payment participants systematically avoid complex patients remains an open question with important equity implications."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-h2-pac-reduction",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Post-Acute Care Reduction Story: Where the Savings Come From"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bev-p11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Every rigorous evaluation of bundled payment that finds savings identifies the same mechanism: reductions in skilled nursing facility utilization. Prior to widespread bundled payment, SNF use after joint replacement was substantial and geographically variable in ways that tracked physician and hospital culture rather than clinical need. SNF stays for hip and knee replacement averaged 10-20 days and cost Medicare $15,000-$25,000 per stay — adding 30-50% to total episode costs for patients who were often clinically capable of recovering at home with outpatient therapy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-p12",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Under bundled payment, hospitals developed preferred networks of high-quality, lower-cost post-acute providers and implemented clinical protocols for discharge destination. These protocols — typically based on functional assessment criteria developed with physical therapists — identify patients who are clinically appropriate for home discharge and direct them there. Patient education programs (often begun before surgery) address patient and family anxiety about going home, reducing the demand-side pull toward SNF even among patients who could safely recover at home."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-h2-spillover",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Spillover Effects: Do Bundles Change Care for Non-Bundled Patients"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bev-p13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "One of the more intriguing findings in bundled payment research is the evidence of spillover effects — changes in care delivery for patients not covered by the bundle. Studies of CJR and BPCI found that hospitals participating in bundled payment for joint replacement showed reductions in SNF utilization for other orthopedic and non-orthopedic patients as well, suggesting that the behavioral and organizational changes induced by the bundle generalized beyond the targeted episodes. This spillover effect, if real and durable, would substantially increase bundled payment's return on investment beyond what episode-specific analyses capture."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-p14",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The mechanism for spillover is organizational: once a hospital has built a preferred post-acute network, trained discharge planners in evidence-based discharge criteria, and engaged surgeons in post-acute utilization management, those capabilities apply across patient populations, not just to bundled payment patients. This suggests that the organizational investment required for bundled payment participation generates value beyond the financial reconciliation — it builds population health management capabilities that have system-wide application."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-h2-orthopedic-sweetspot",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Orthopedics Has Been the Sweet Spot"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bev-p15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The concentration of bundled payment savings in orthopedic episodes is not coincidental. Joint replacement sits at an unusual intersection of clinical and financial characteristics that makes it ideal for bundled payment: high volume, clinically predictable, modifiable post-acute utilization, financially meaningful episode costs, engaged specialty surgeons, and meaningful variation in practice patterns that reflects inefficiency rather than clinical necessity. When policy designers look for the next generation of episodes to bundle, they are searching for conditions that share these characteristics — and the list is shorter than the theoretical potential suggests."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-p16",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Medical episodes like pneumonia, COPD, and heart failure have higher clinical variability, more complex social determinants, greater overlap with other conditions, and fewer clear behavioral targets than surgical episodes. The patient who is readmitted for pneumonia because of poor housing, food insecurity, and inadequate outpatient follow-up is a fundamentally different management challenge than the joint replacement patient being directed from SNF to home health. Bundled payment for medical episodes requires care management capabilities that go well beyond post-acute utilization management — and the evidence suggests that most participating organizations have not yet developed those capabilities sufficiently to generate savings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bev-synthesis",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The bundled payment evidence base, now over a decade deep, supports a clear conclusion: bundles work well when the following conditions hold — high-volume, clinically predictable episodes; large, modifiable post-acute spend; engaged specialist physicians aligned with episode outcomes; and organizational capacity to manage preferred networks and patient education. When these conditions are absent, the savings are elusive. Future bundled payment design should build on these lessons by identifying episodes with these characteristics, investing in risk adjustment that prevents cream-skimming, building in mechanisms for equity monitoring, and ensuring that savings generated by reducing low-value post-acute care are reinvested in the care coordination infrastructure that makes the model work."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseTitle": "Value-Based Care: From Fee-for-Service to Outcomes",
+  "estimatedReadTime": 15,
+  "level": "Intermediate",
+  "moduleNumber": 8,
+  "pillar": "Economics",
+  "slug": {
+    "_type": "slug",
+    "current": "vbc-bundled-payment-evidence"
+  },
+  "summary": "The evidence on bundled payment effectiveness is more nuanced than either its advocates or critics suggest. Joint replacement bundles have consistently generated savings driven by post-acute care reduction; cardiac and medical episodes show weaker evidence; and the mandatory CJR model provides the cleanest causal test. This lesson synthesizes BPCI-A results, the CJR evaluation, quality outcome evidence, cream-skimming concerns, and the lessons emerging from over a decade of bundled payment research.",
+  "title": "Bundled Payment Evidence: What the Research Shows"
+}

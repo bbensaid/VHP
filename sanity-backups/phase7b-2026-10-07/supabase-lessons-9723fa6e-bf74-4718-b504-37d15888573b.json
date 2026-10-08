@@ -1,0 +1,79 @@
+{
+  "id": "9723fa6e-bf74-4718-b504-37d15888573b",
+  "slug": "governance-consent-ethics",
+  "sanity_slug": "hie-governance-consent-ethics",
+  "content_blocks": [
+    {
+      "rows": [
+        {
+          "left": "Single organization controls all data and governance decisions",
+          "label": "Centralized",
+          "right": "Efficient but concentrated risk; VITL's VHIE is primarily centralized"
+        },
+        {
+          "left": "Data stays at source organizations; queries go to each node",
+          "label": "Federated",
+          "right": "Greater local control; more complex to operate; CommonWell model"
+        },
+        {
+          "left": "Central coordination with distributed data governance",
+          "label": "Hybrid",
+          "right": "Most realistic for statewide networks balancing control and trust"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "HIE governance models",
+      "leftLabel": "Model",
+      "rightLabel": "Characteristics"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "VHIE uses opt-out consent: patients are included by default and can choose to exclude their data. Maximizes data completeness while preserving patient autonomy.",
+          "icon": "ti-lock-open",
+          "title": "Vermont opt-out model"
+        },
+        {
+          "body": "Legal frameworks governing how HIE data can be used by researchers, payers, and analytics platforms. Define permitted uses and prohibited disclosures.",
+          "icon": "ti-file-certificate",
+          "title": "Data use agreements"
+        },
+        {
+          "body": "HIE Steering Committee, AHS leadership, VITL Board, and GMCB (for regulatory matters) shape Vermont's HIE governance landscape.",
+          "icon": "ti-users-group",
+          "title": "Governance bodies"
+        },
+        {
+          "body": "Patients and providers must be able to understand what data is in the HIE, who has accessed it, and for what purpose. Audit trails are mandatory.",
+          "icon": "ti-eye",
+          "title": "Transparency"
+        }
+      ],
+      "heading": "Consent and governance foundations"
+    },
+    {
+      "body": "Just because data can be accessed doesn't mean it should be. Every data use decision in an HIE should be evaluated against three principles:\n\n**Purpose limitation**: Is this use consistent with the purpose for which the data was originally collected? Patient data shared for treatment purposes should not be repurposed for commercial interests without explicit consent.\n\n**Proportionality (minimum necessary)**: Are you using the minimum amount of data needed to accomplish the legitimate purpose? This mirrors HIPAA's minimum necessary standard.\n\n**Benefit**: Does this use serve patients and the public? Who benefits, and who bears the risk?\n\nThese are not just legal questions — they are ethical ones, and every employee who touches data is a data steward.",
+      "type": "text",
+      "heading": "Ethics in data use decisions"
+    },
+    {
+      "body": "Patients can opt out of the VHIE at any time. An opt-out means:\n• Their data will not appear in query results for authorized providers\n• Their data will not be included in population analytics\n• They can opt back in at any time\n• Their care will not be affected by their opt-out decision\n\nApproximately 3–5% of Vermont patients have opted out. Understanding the opt-out process is important for provider relations and patient-facing staff.",
+      "type": "callout",
+      "heading": "Vermont's VHIE opt-out mechanics",
+      "variant": "info"
+    },
+    {
+      "hint": "Recommended: Your governance lead, privacy officer, or executive director walks through how your organization makes data use decisions — specific examples of requests approved and denied. 10–15 minutes.",
+      "type": "audio_slot",
+      "label": "Our data governance principles and decision-making process"
+    },
+    {
+      "type": "video",
+      "caption": "Health data governance fundamentals — trust and accountability in HIE (~10 min)",
+      "videoId": "nLxuBmUvOEQ",
+      "mediaType": "youtube",
+      "durationSeconds": 600
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "_createdAt": "2026-05-29T22:04:00Z",
+  "_id": "hie-21st-century-cures",
+  "_rev": "glqH7a4yvZFQerxZd1Geo5",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-29T22:04:00Z",
+  "body": [
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "What Is the 21st Century Cures Act?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 21st Century Cures Act — officially H.R. 34 — is one of the most consequential pieces of health legislation enacted in the United States in the past decade. President Barack Obama signed it into law on December 13, 2016, capping a multi-year, bipartisan effort to modernize the country's biomedical research enterprise, overhaul the federal mental health system, and drag the healthcare information technology sector into a genuinely interoperable future. The law passed by overwhelming margins — 392 to 26 in the House on November 30, 2016, and 94 to 5 in the Senate on December 7, 2016 — a rarity in an era of polarized legislating that underscores how broadly supported its core goals were across party lines."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "At its core, the Act is best understood as three distinct but interlocking policy packages bundled into a single statute. The first package dramatically accelerates biomedical research by creating a dedicated NIH Innovation Account funded at $4.976 billion over ten years, with sub-appropriations targeting cancer, the brain, and precision medicine. The second package reforms the nation's fractured mental health delivery system by incorporating the long-stalled Helping Families in Mental Health Crisis Act and committing $1 billion in opioid crisis grants to states. The third package — and arguably the most operationally far-reaching — mandates true electronic health information interoperability, prohibits \"information blocking,\" and requires federally certified EHR systems to offer open, standards-based APIs that patients can use to access their own records at no cost."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The total authorized funding across all three packages reaches $6.3 billion, making the Cures Act not just a policy milestone but a substantial investment in infrastructure. Critics at the time noted that authorization does not guarantee appropriation — Congress still had to fund the accounts annually — but supporters argued that the ring-fenced NIH Innovation Account structure created a more durable funding mechanism than ordinary discretionary spending, insulating flagship research programs from year-to-year budget battles."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1co",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1cos",
+          "_type": "span",
+          "marks": [],
+          "text": "The 21st Century Cures Act (H.R. 34, 2016) is a tripartite law that (1) funds landmark biomedical research through a dedicated NIH Innovation Account, (2) restructures federal mental health and substance use programs, and (3) mandates open, interoperable health IT through binding prohibitions on information blocking and requirements for FHIR-based patient access APIs."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "November 30, 2016 — one of the most lopsided health-bill votes in years",
+          "label": "House Vote",
+          "value": "392–26"
+        },
+        {
+          "_key": "s2",
+          "context": "December 7, 2016 — near-unanimous bipartisan passage",
+          "label": "Senate Vote",
+          "value": "94–5"
+        },
+        {
+          "_key": "s3",
+          "context": "Across all three major policy pillars of the Act",
+          "label": "Total Authorized",
+          "value": "$6.3B"
+        },
+        {
+          "_key": "s4",
+          "context": "Dedicated 10-year fund for research moonshots",
+          "label": "NIH Innovation Account",
+          "value": "$4.976B"
+        }
+      ]
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Research Funding: Cancer, Brain, and Precision Medicine"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The centerpiece of the Cures Act's research agenda is the NIH Innovation Account, a dedicated fund that sits outside the normal appropriations process and is designed to provide predictable, multi-year financing for three flagship initiatives. This structural choice was deliberate. Biomedical research programs that require sustained investment — building tissue banks, running decade-long longitudinal cohorts, funding research consortia — have historically been vulnerable to the unpredictability of annual appropriations. The Innovation Account attempts to solve that problem by giving Congress a framework to pre-commit funding over a ten-year window, even if the actual dollar transfers still require annual appropriation action."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The three flagship initiatives funded through the NIH Innovation Account each represent a different dimension of the federal research agenda. The Cancer Moonshot, later formally renamed the \"Beau Biden Cancer Moonshot\" in honor of Vice President Biden's son who died of brain cancer in 2015, received $1.8 billion to accelerate cancer prevention, detection, treatment, and data sharing. The BRAIN (Brain Research through Advancing Innovative Neurotechnologies) Initiative received $1.5 billion to map neural circuitry at unprecedented resolution and develop new tools for treating neurological and psychiatric conditions. The Precision Medicine Initiative — which later became the All of Us Research Program — also received $1.5 billion to build a national cohort of one million or more participants whose genomic, environmental, and lifestyle data would inform individually tailored treatments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond the three research flagships, the Act also invested $1 billion in opioid grants to states — a recognition that the opioid crisis ravaging communities across the country required not just more research but immediate, on-the-ground infrastructure to expand treatment access and improve prescription drug monitoring. The FDA provisions of the Act further accelerated the pipeline from research bench to patient bedside through new approval pathways for breakthrough devices and a framework for using real-world evidence from electronic health records and claims databases in post-market studies. Taken together, the research title of the Cures Act represents the most ambitious single legislative investment in biomedical science since the National Cancer Act of 1971."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2hl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hls",
+          "_type": "span",
+          "marks": [],
+          "text": "The Cancer Moonshot was named for Beau Biden, son of then-Vice President Joe Biden, who died of glioblastoma multiforme at age 46 in May 2015. Vice President Biden personally championed the initiative and led the White House Cancer Moonshot Task Force before the Cures Act codified and funded it."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s2sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Beau Biden Cancer Moonshot — prevention, detection, treatment, and data sharing",
+          "label": "Cancer Moonshot",
+          "value": "$1.8B"
+        },
+        {
+          "_key": "s2",
+          "context": "Mapping neural circuitry; new tools for neurological and psychiatric conditions",
+          "label": "BRAIN Initiative",
+          "value": "$1.5B"
+        },
+        {
+          "_key": "s3",
+          "context": "All of Us Research Program — one million+ participant cohort",
+          "label": "Precision Medicine",
+          "value": "$1.5B"
+        },
+        {
+          "_key": "s4",
+          "context": "State grants over two years for treatment infrastructure and PDMPs",
+          "label": "Opioid Grants",
+          "value": "$1.0B"
+        }
+      ]
+    },
+    {
+      "_key": "s2ex",
+      "_type": "exampleBlock",
+      "content": "Under ordinary appropriations, NIH funding for a specific initiative must be re-requested and re-approved every fiscal year, creating uncertainty that can disrupt multi-year research programs. The NIH Innovation Account works differently: the Cures Act established the account in statute and authorized specific annual transfer amounts for each year from FY2017 through FY2026. This means Congress pre-committed to a funding trajectory in the authorizing legislation itself, rather than leaving each year's level entirely to the appropriations process. While actual transfers still require appropriations action, the statutory schedule creates a strong expectation — and a political baseline — that provides more stability for grantees, university research programs, and NIH program officers than traditional year-by-year discretionary spending would allow.",
+      "title": "NIH Innovation Account: How the 10-Year Model Works"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Mental Health and the Opioid Crisis"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The mental health title of the Cures Act represented the culmination of years of work by Representative Tim Murphy (R-PA), a clinical psychologist who had spent much of his congressional tenure fighting for what he called \"evidence-based mental health care.\" His Helping Families in Mental Health Crisis Act, introduced in multiple sessions of Congress, was incorporated nearly wholesale into the Cures Act after years of stalling. The legislation's core insight was that the federal mental health bureaucracy had become fragmented, underfunded, and disconnected from the evidence base — funding peer support and awareness programs while failing to adequately support the clinical treatment and hospital-based care that severe psychiatric illness actually requires."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most structurally significant change in the mental health title was the creation of a new Assistant Secretary for Mental Health and Substance Use within the Department of Health and Human Services — a position that elevated mental health policy to the same bureaucratic level as other major health domains. The legislation also reorganized the Substance Abuse and Mental Health Services Administration (SAMHSA), tightened requirements around evidence-based practices, and expanded the ability of states to use Assisted Outpatient Treatment (AOT) — court-ordered community-based care for individuals with severe mental illness who have a history of treatment non-adherence. Privacy rule clarifications in the Act also made it easier for providers to share mental health information with family members in crisis situations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The $1 billion in opioid state grants represented one of the federal government's most direct financial interventions in the opioid crisis up to that point. The grants were authorized over two fiscal years and structured to flow through a formula-based allocation process that weighted states' burden of opioid overdose deaths and the capacity of their existing treatment infrastructure. States were required to submit plans demonstrating how funds would be used for evidence-based interventions — including medication-assisted treatment (MAT) expansion, prescription drug monitoring program (PDMP) improvements, and naloxone distribution — rather than general public awareness campaigns."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "HHS distributes grant funds to states using a formula weighted by opioid overdose death rates and treatment capacity gaps — states with the highest burden receive proportionally more.",
+          "title": "Formula Allocation"
+        },
+        {
+          "_key": "step2",
+          "description": "Each state must submit a plan to SAMHSA detailing how it will use the funds for evidence-based interventions, ensuring dollars are tied to measurable outcomes rather than open-ended programming.",
+          "title": "State Plan Submission"
+        },
+        {
+          "_key": "step3",
+          "description": "A significant share of funds is directed toward upgrading prescription drug monitoring programs — the state databases that track controlled substance prescriptions — to improve cross-state data sharing and real-time prescriber access.",
+          "title": "PDMP Improvements"
+        },
+        {
+          "_key": "step4",
+          "description": "States use funds to expand medication-assisted treatment (MAT) capacity, including buprenorphine and methadone access, and to reduce barriers for individuals seeking treatment in rural and underserved communities.",
+          "title": "Treatment Access Expansion"
+        },
+        {
+          "_key": "step5",
+          "description": "Remaining funds support training for physicians, nurses, pharmacists, and peer recovery coaches to increase the number of providers equipped to treat opioid use disorder with evidence-based protocols.",
+          "title": "Workforce Training"
+        }
+      ],
+      "title": "How the $1 Billion Opioid Grant Funds Flow to States"
+    },
+    {
+      "_key": "s3w",
+      "_type": "warningBlock",
+      "message": "The $1 billion in opioid grants authorized by the Cures Act funds system infrastructure — PDMPs, workforce training, treatment capacity expansion — not direct payments for individual patient treatment services. Patients do not receive grants; states and local health agencies do. This distinction matters because it means the grants improve the system's ability to deliver care without replacing the insurance coverage and Medicaid financing that actually pays for individual treatment episodes.",
+      "title": "Not Direct Treatment Funding"
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Information Blocking: The New Prohibition"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Of all the provisions in the 21st Century Cures Act, the information blocking prohibition has proven to be the most disruptive to established business practices in the health IT industry. For years, critics argued that EHR vendors, hospitals, and health information exchanges were intentionally making it difficult — or prohibitively expensive — for patients and providers to access, exchange, or use electronic health information. The Act addressed this directly by making \"information blocking\" a federal offense subject to civil monetary penalties. The statutory definition is deliberately broad: any practice by a regulated actor that is likely to interfere with access, exchange, or use of electronic health information (EHI) — unless the practice falls within one of eight defined exceptions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Cures Act subjects three categories of actors to the information blocking rules. Health IT developers of certified health information technology (the EHR vendors themselves) are covered. Health information exchanges (HIEs) and health information networks (HINs) are covered. And healthcare providers — hospitals, physician practices, clinics — are covered. This tripartite scope was intentional: Congress recognized that information blocking could originate at any node in the health IT ecosystem, not just at the vendor level. The ONC Cures Act Final Rule, published May 1, 2020 in the Federal Register and effective June 30, 2020, fleshed out the specific regulatory definitions that give the statute operational meaning."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Enforcement of the information blocking rules began April 5, 2021 — the date when actors could first be formally reported to the Office of the Inspector General (OIG) of HHS for suspected violations. As of February 2026, OIG had received nearly 1,600 complaints, reflecting the breadth of perceived violations across the industry. Active enforcement actions began in September 2025. For health IT developers and HIEs/HINs, penalties can reach up to $1 million per violation — a figure large enough to create genuine compliance pressure even for the largest vendors. Healthcare providers face a different enforcement mechanism: disincentives established under a July 2024 final rule, which can affect Medicare reimbursement rates and meaningful use attestation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4co",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4cos",
+          "_type": "span",
+          "marks": [],
+          "text": "Information blocking is defined as any practice by a covered actor (health IT developer, HIE/HIN, or healthcare provider) that is likely to interfere with, prevent, or materially discourage access, exchange, or use of electronic health information — unless the practice qualifies under one of the eight regulatory exceptions established by ONC."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s4cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Examples of Information Blocking",
+        "points": [
+          "Charging excessive fees to access or export patient data that are not cost-based",
+          "Deploying non-standard or proprietary interfaces that prevent third-party apps from connecting",
+          "Including contract \"gag clauses\" that prevent customers from disclosing interoperability limitations",
+          "Delaying responses to API queries without technical justification",
+          "Conditioning data access on the purchase of additional vendor products or services"
+        ]
+      },
+      "right": {
+        "label": "The 8 Regulatory Exceptions (Permitted Practices)",
+        "points": [
+          "Privacy Exception — practices required to protect patient privacy under applicable law",
+          "Security Exception — practices necessary to protect the security of EHI",
+          "Preventing Harm Exception — practices needed to prevent endangerment of patients or others",
+          "Infeasibility Exception — practices technically or legally not feasible to perform",
+          "Health IT Performance Exception — routine system maintenance and downtime",
+          "Licensing Exception — reasonable and non-discriminatory licensing of IP",
+          "Content/Manner Exception — responding in a different form or manner than requested",
+          "Fees Exception — charging reasonable, cost-based fees for access or export"
+        ]
+      },
+      "title": "Information Blocking vs. Legitimate Restrictions"
+    },
+    {
+      "_key": "s4w",
+      "_type": "warningBlock",
+      "message": "The Office of Inspector General (OIG) of HHS is authorized to impose civil monetary penalties of up to $1 million per information blocking violation against health IT developers and HIEs/HINs. Healthcare providers face separate disincentives under a July 2024 HHS final rule, including reductions in Medicare reimbursement tied to meaningful use and promoting interoperability programs. OIG had received nearly 1,600 complaints as of February 2026, with active enforcement actions commencing in September 2025.",
+      "title": "OIG Enforcement: Up to $1 Million Per Violation"
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Interoperability: FHIR APIs and Patient Access"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The interoperability mandates in the Cures Act translate its broad policy goals into specific, enforceable technical requirements. The ONC Cures Act Final Rule — published May 1, 2020 and effective June 30, 2020 — requires that all ONC-certified health IT systems support FHIR (Fast Healthcare Interoperability Resources) Release 4.0.1 as the technical standard for patient-facing access APIs. FHIR R4 is a specification published by HL7 International that defines how healthcare data should be structured and exchanged using modern web standards — RESTful APIs, JSON, and OAuth 2.0 authentication. By mandating FHIR R4 specifically, ONC locked in a single, vendor-neutral standard that any compliant application can connect to, regardless of which EHR system a hospital uses."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The minimum data set that must be accessible through the FHIR API is defined by the United States Core Data for Interoperability version 1 (USCDI v1), which includes clinical notes, laboratory results, medications, allergies, immunizations, vital signs, demographics, and care team members. Patients have the right to access this data through any SMART on FHIR-compatible application of their choosing, at no cost, without the provider or EHR vendor being able to block or restrict that access. The Act also mandated the development of the Trusted Exchange Framework and Common Agreement (TEFCA) — a nationwide governance framework that establishes the legal, technical, and policy rules for how health information networks can share data across organizational and geographic boundaries."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The combined effect of the FHIR mandate, the information blocking prohibition, and TEFCA is to create — for the first time — a coherent federal framework for nationwide health data exchange. Before the Cures Act, the health IT landscape was a patchwork of proprietary interfaces, regional health information organizations with incompatible standards, and contractual barriers that prevented patients from exercising meaningful control over their own records. After the Act, any certified EHR system must publish a standards-based FHIR API, attest that it is not engaging in information blocking, and — as TEFCA networks mature — participate in a national exchange framework. The transformation is still in progress, but the legal architecture is now in place."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an",
+      "_type": "analogyBlock",
+      "analogy": "Requiring all certified EHRs to support FHIR Release 4.0.1 is like mandating the USB-C connector standard for all consumer electronics: once every device uses the same port, any compliant cable or accessory works with any device — no proprietary adapter needed. Before FHIR R4 was mandated, each EHR vendor had its own proprietary API (or no API at all), so a patient-facing app had to build a separate integration for each vendor. The standard port means the app only needs to be built once.",
+      "concept": "FHIR R4 Mandate as the USB-C Standard for Health Data"
+    },
+    {
+      "_key": "s5st",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Develop and make publicly available a FHIR Release 4.0.1 compliant API that allows any authorized third-party application to request patient data using standard web protocols — at no cost to the patient or the application developer for access to USCDI data.",
+          "title": "Publish a FHIR R4 API"
+        },
+        {
+          "_key": "step2",
+          "description": "Ensure the FHIR API surfaces at least the full USCDI v1 data set, including clinical notes, lab results, medications, allergies, immunizations, vital signs, problems, and demographics.",
+          "title": "Support USCDI v1 Minimum Data Set"
+        },
+        {
+          "_key": "step3",
+          "description": "Submit attestation to ONC that the developer is not engaging in any information blocking practice and that the API is genuinely accessible to third-party developers without unreasonable conditions.",
+          "title": "Attest to No Information Blocking"
+        },
+        {
+          "_key": "step4",
+          "description": "Conduct and publish results of real-world testing of the FHIR API with at least one third-party application to demonstrate that the API functions as documented under actual operating conditions.",
+          "title": "Real-World Testing"
+        },
+        {
+          "_key": "step5",
+          "description": "As TEFCA governance matures, participate in or connect to a Qualified Health Information Network (QHIN) recognized under TEFCA to enable nationwide data exchange across organizational boundaries.",
+          "title": "Join or Connect to a TEFCA-Recognized Network"
+        }
+      ],
+      "title": "What Certified EHR Developers Must Do Under the Cures Act"
+    },
+    {
+      "_key": "s5ex",
+      "_type": "exampleBlock",
+      "content": "Epic Systems — the largest EHR vendor in the United States, used by roughly 35% of U.S. hospitals — built its \"App Orchard\" ecosystem directly in response to the Cures Act interoperability mandates. App Orchard is a marketplace where third-party developers publish SMART on FHIR applications that connect to Epic's FHIR R4 API. Patients at Epic-using hospitals can authorize any App Orchard application — or any SMART on FHIR app they choose — to receive their health data via the standard API. Competitors like Oracle Health (Cerner) and Meditech built comparable API ecosystems. The result is that the Cures Act effectively forced the entire certified EHR market to open its data layer to patient-authorized third-party applications, creating the infrastructure for a generation of consumer health apps.",
+      "title": "Epic's App Orchard and SMART on FHIR: A Cures Act Response"
+    },
+    {
+      "_key": "s6h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6hs",
+          "_type": "span",
+          "marks": [],
+          "text": "FDA Provisions and Real-World Evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The FDA title of the Cures Act addresses a set of long-standing criticisms of the regulatory pathway from medical innovation to patient access. The Act created or strengthened several mechanisms designed to accelerate the availability of breakthrough products while maintaining safety standards. The Breakthrough Device Designation program — building on the existing Breakthrough Therapy designation for drugs — allows novel medical devices that provide more effective treatment or diagnosis of life-threatening or irreversibly debilitating conditions to receive priority FDA review, with more frequent interaction between developers and FDA reviewers during the development process. The Act also expanded expanded access (compassionate use) pathways, making it easier for patients with serious conditions to access investigational products outside of clinical trials."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Perhaps the most forward-looking FDA provision in the Cures Act is the real-world evidence (RWE) framework. Traditional drug and device approval relies on randomized controlled trials — expensive, time-consuming, and often conducted on patient populations that do not reflect the diversity of real-world patients. The Cures Act directed FDA to develop a framework for using real-world data — including data from electronic health records, insurance claims databases, patient registries, and wearable devices — to support regulatory decisions, including post-approval studies and, in some cases, new indications for already-approved products. The Act also clarified the regulatory status of software as a medical device (SaMD), explicitly excluding certain low-risk wellness and administrative software from FDA oversight while preserving the agency's authority over clinical decision support tools that could cause patient harm if they malfunctioned."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Manufacturers of novel combination products and diagnostics",
+          "label": "Accelerated access pathway for devices treating life-threatening conditions; priority review and frequent FDA interaction",
+          "value": "Breakthrough Device"
+        },
+        {
+          "_key": "s2",
+          "context": "Drug and device manufacturers seeking label expansions or post-market confirmations",
+          "label": "Post-approval and new-indication studies using EHR, claims, and registry data rather than traditional RCTs",
+          "value": "Real-World Evidence"
+        },
+        {
+          "_key": "s3",
+          "context": "Digital health developers building apps, wellness tools, and EHR-embedded analytics",
+          "label": "Excluded low-risk wellness and administrative software from FDA device regulation; preserved oversight of clinical decision support that poses patient risk",
+          "value": "SaMD Clarification"
+        }
+      ]
+    },
+    {
+      "_key": "tw1",
+      "_type": "takeawayBlock",
+      "points": [
+        "The 21st Century Cures Act (H.R. 34) was signed December 13, 2016, with near-unanimous bipartisan support (392–26 House, 94–5 Senate), authorizing $6.3 billion across three policy pillars: research funding, mental health reform, and health IT interoperability.",
+        "The NIH Innovation Account ($4.976B over 10 years) funds three flagship research programs: the Cancer Moonshot ($1.8B), the BRAIN Initiative ($1.5B), and the Precision Medicine Initiative ($1.5B), with an additional $1B in opioid grants to states.",
+        "The Act incorporated the Helping Families in Mental Health Crisis Act (Rep. Tim Murphy), created the Assistant Secretary for Mental Health and Substance Use, and restructured SAMHSA around evidence-based practices.",
+        "Information blocking — any practice by a health IT developer, HIE/HIN, or provider that interferes with access to electronic health information — is now a federal offense with penalties up to $1 million per violation for developers and HIEs; providers face Medicare reimbursement disincentives.",
+        "Eight regulatory exceptions exist to the information blocking prohibition, covering privacy, security, harm prevention, infeasibility, IT performance, licensing, content/manner, and reasonable cost-based fees.",
+        "The ONC Cures Act Final Rule (effective June 30, 2020) mandates FHIR Release 4.0.1 as the standard for patient access APIs and USCDI v1 as the minimum data set — giving patients a legally enforceable right to their health data through any authorized app, at no cost.",
+        "FDA provisions established the Breakthrough Device Designation, expanded real-world evidence frameworks for regulatory decisions, and clarified that low-risk wellness software is excluded from FDA medical device oversight — shaping the entire digital health regulatory landscape."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "The Office of Inspector General (OIG) of HHS — not ONC — is the enforcement authority for information blocking penalties against health IT developers and HIEs/HINs, with authority to impose civil monetary penalties of up to $1 million per violation. ONC administers the certification program and receives complaints, but it is OIG that investigates and adjudicates penalties. CMS administers the provider disincentive process established by the July 2024 final rule. The FTC has no information blocking enforcement authority under the Cures Act.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Office of the National Coordinator for Health IT (ONC)"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Office of Inspector General (OIG) of HHS"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Centers for Medicare & Medicaid Services (CMS)"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Federal Trade Commission (FTC)"
+        }
+      ],
+      "question": "Under the 21st Century Cures Act, which federal entity is authorized to investigate and impose civil monetary penalties for information blocking committed by health IT developers and health information exchanges?"
+    },
+    {
+      "_key": "srch",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srchs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "1. Congress.gov — H.R.34, 21st Century Cures Act (114th Congress). Passage dates, vote margins, and full statutory text. https://www.congress.gov/bill/114th-congress/house-bill/34"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "2. National Institutes of Health — 21st Century Cures Act Overview. NIH Innovation Account authorized amounts, flagship initiative descriptions. https://www.nih.gov/21st-century-cures-act"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "3. Office of the National Coordinator for Health IT (ONC) — Cures Act Final Rule Overview. FHIR R4 requirement, information blocking definition, actor categories, eight exceptions, April 2021 enforcement start. https://www.healthit.gov/topic/oncs-cures-act-final-rule"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "4. Federal Register, May 1, 2020 — 21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program; Final Rule. Regulatory text, effective date (June 30, 2020), USCDI v1 data set, TEFCA mandate. https://www.federalregister.gov/documents/2020/05/01/2020-07419/21st-century-cures-act-interoperability-information-blocking-and-the-onc-health-it-certification"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "5. HHS Office of Inspector General — Information Blocking Enforcement. OIG enforcement authority, $1 million per violation, complaint statistics (~1,600 as of February 2026), enforcement commencement September 2025. https://oig.hhs.gov/reports/featured/information-blocking/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "hie-21st-century-cures"
+  },
+  "title": "The 21st Century Cures Act"
+}

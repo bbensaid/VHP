@@ -1,0 +1,692 @@
+{
+  "_createdAt": "2026-05-29T03:45:06Z",
+  "_id": "interop-ehr-burden",
+  "_rev": "X6w3bu3dUaiAMZ8jIUnr8g",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-15T02:30:10Z",
+  "body": [
+    {
+      "_key": "s1h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Burden Problem: Physicians Spend More Time on EHRs Than on Patients"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When the electronic health record was introduced into American medicine, it arrived with a promise: replace error-prone paper charts with a searchable, shareable digital record that would improve care quality and save time. Decades later, the promise has been only partially kept. The digital record exists — but the time savings never arrived. Instead, a mountain of peer-reviewed evidence now documents one of the most consequential unintended consequences in modern medicine: physicians routinely spend more hours each day interacting with their EHR than they spend in face-to-face contact with patients. This is not hyperbole — it is a measurable, replicated finding that is reshaping how health systems think about clinician well-being and workforce sustainability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A landmark time-motion study by Sinsky and colleagues, published in the Annals of Internal Medicine, found that for every hour physicians spent in direct clinical face time with patients, they spent nearly two additional hours on EHR and desk work. Subsequent research has only deepened this picture. A 2024 study published in the Annals of Family Medicine found that for every 8 hours of scheduled patient visits, primary care physicians logged 5.3 additional hours in the EHR — 2.1 of those hours devoted exclusively to clinical documentation. Overall, physicians today report spending roughly 13 hours per week on indirect patient care tasks such as order entry, documentation, and referral management, within a 57.8-hour reported workweek. That math leaves precious little time for the human encounter that drew most physicians to medicine in the first place."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "What is perhaps most striking is what happens after clinic hours. Researchers coined the term \"pajama time\" to describe the hours physicians spend in the EHR at home, after their clinical day has technically ended. A study in the Annals of Family Medicine found that primary care physicians spent approximately 86 minutes — nearly an hour and a half — on the EHR after clinic hours every day. Among upper-year family medicine residents, nearly one-third report spending three or more additional hours per day on after-hours EHR work. This chronic overflow of documentation into personal time has been directly linked to burnout, reduced professional satisfaction, and lower examination performance. The AMA's 2024 national burnout survey of nearly 18,000 physicians across 43 states found that 43.2 percent of physicians reported at least one burnout symptom — and ineffective EHR systems ranked among the most consistently cited sources of occupational stress."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Widely cited figure from Sinsky et al., time-motion research",
+          "label": "Daily EHR burden per physician",
+          "value": "5.9 hrs"
+        },
+        {
+          "_key": "s2",
+          "context": "EHR use after clinic hours; primary care physicians, Annals of Family Medicine",
+          "label": "After-hours \"pajama time\" daily",
+          "value": "86 min"
+        },
+        {
+          "_key": "s3",
+          "context": "AMA 2024 national survey of ~18,000 physicians across 43 states",
+          "label": "Physicians with burnout symptoms",
+          "value": "43.2%"
+        },
+        {
+          "_key": "s4",
+          "context": "For every 1 hr with patients, ~2 hrs on EHR and desk work (Sinsky et al.)",
+          "label": "EHR vs. patient face time ratio",
+          "value": "2:1"
+        }
+      ]
+    },
+    {
+      "_key": "s1an",
+      "_type": "analogyBlock",
+      "analogy": "Imagine hiring a carpenter whose tools are so cumbersome that they spend two hours filing paperwork for every hour they actually build. The carpenter is technically productive — paperwork is real work — but the building is going up slower, and the carpenter is exhausted. That is the situation facing American physicians with today's EHR systems: real documentation is necessary, but the cognitive and time burden has grown so large that it crowds out the core work of patient care.",
+      "concept": "EHR documentation burden displacing clinical time"
+    },
+    {
+      "_key": "s2h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Root Causes: Poor Design, Alert Fatigue, and Fragmented Data"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Understanding why EHRs consume so much physician time requires looking beneath the surface of the software itself. Most commercial EHR systems were not designed with usability as the primary objective — they were designed to fulfill billing and compliance requirements, and the clinical workflow was often an afterthought. As a result, physicians routinely navigate dozens of screens, click through cascading dropdown menus, and manually enter data that could theoretically be auto-populated if systems communicated with one another. Poor interoperability is at the heart of this problem: when a patient arrives from another health system, their prior lab results, imaging reports, and medication lists frequently do not follow them. The physician or their staff must manually re-enter that information, dramatically extending visit preparation time and increasing the risk of transcription errors."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "One of the most pervasive and dangerous documentation behaviors to emerge from EHR design failures is copy-forward documentation — the practice of copying a prior note into the current encounter and editing only minimally. A 2022 analysis of over 100 million EHR notes found that 50.1 percent of all text in clinical notes was duplicated from prior documentation on the same patient. As many as 90 percent of clinicians admit to using copy-and-paste functions in the EHR. While this behavior saves time in the short run, it systematically degrades note quality: outdated medication lists persist, resolved problems remain active, and contradictory information accumulates across encounters. Patient safety researchers at the Agency for Healthcare Research and Quality have documented that copy-forward errors contribute directly to diagnostic mistakes and adverse events, including hospitalizations that might have been prevented had the clinical record been accurate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Alert fatigue is another root cause that compounds the burden of fragmented data. Clinical decision support (CDS) systems embedded in EHRs are designed to catch dangerous drug interactions, flag abnormal values, and remind clinicians of overdue preventive care. In theory, these alerts save lives. In practice, the volume has become overwhelming: some physicians and nurses report receiving between 100 and 200 CDS alerts per day. At Brigham and Women's Hospital — one of the most prestigious academic medical centers in the country — physicians override approximately 98 percent of medication order alerts. Research published in JMIR Medical Informatics found that in one medication-related CDS system, only 7.3 percent of generated alerts were clinically appropriate. When physicians learn that the vast majority of alerts are irrelevant, they begin dismissing them reflexively — a conditioned response that creates exactly the kind of cognitive blind spot the alerts were designed to prevent. The result is a system that adds burden without proportional benefit, eroding trust in the very tools meant to support clinical judgment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Billing-First EHR Design",
+        "points": [
+          "Optimized for code capture and compliance documentation",
+          "Complex multi-screen workflows for each order",
+          "Copy-forward encouraged by poor note templates",
+          "Alert thresholds set broadly to minimize liability",
+          "Limited FHIR integration — manual data re-entry required"
+        ]
+      },
+      "right": {
+        "label": "Clinician-First EHR Design",
+        "points": [
+          "Streamlined workflows matching clinical thought process",
+          "Smart defaults and auto-population from prior visits",
+          "Structured templates that discourage copy-forward",
+          "Alert logic refined to clinically actionable thresholds",
+          "FHIR APIs pre-populate data from external health systems"
+        ]
+      },
+      "title": "EHR System Design: Billing-First vs. Clinician-First"
+    },
+    {
+      "_key": "s2warn",
+      "_type": "warningBlock",
+      "message": "When physicians override 98% of EHR alerts — as documented at Brigham and Women's Hospital — the few clinically critical warnings become invisible in the noise. Alert fatigue is not just a workflow inefficiency; it is a direct mechanism for medication errors and missed diagnoses.",
+      "title": "Alert Fatigue Is a Patient Safety Issue"
+    },
+    {
+      "_key": "s3h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Prior Authorization Crisis: When Interoperability Gaps Meet Insurance Bureaucracy"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "No single administrative burden in American medicine has generated more physician frustration — or caused more direct patient harm — than prior authorization. Prior authorization is the process by which insurers require physicians to obtain approval before prescribing certain medications, ordering specific imaging studies, or proceeding with recommended procedures. In principle, it is a cost-management tool. In practice, it has become a bureaucratic labyrinth that consumes an extraordinary share of physician and staff time. The AMA's 2024 nationwide survey of 1,000 practicing physicians found that practices complete an average of 39 prior authorization requests per physician per week, consuming approximately 13 hours of physician and staff time — roughly one and a half business days — every single week. Two in five physician practices employ staff dedicated exclusively to prior authorization tasks."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The connection to EHR interoperability is direct and underappreciated. Prior authorization processes are slow largely because clinical data does not flow automatically between provider EHR systems and insurer systems. Physicians must manually extract clinical information from the EHR, re-enter it into insurer portals or fax it via paper forms, and then wait — sometimes for days — for a decision. If interoperable APIs existed to transmit structured clinical data directly, the information exchange could happen in minutes rather than days. The status quo is expensive in human terms: 94 percent of physicians in the 2024 AMA survey reported that prior authorization contributes to physician burnout. That near-universal figure makes prior authorization one of the most universally agreed-upon sources of professional dissatisfaction in medicine today."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The patient consequences are equally alarming. According to the 2024 AMA survey, 93 percent of physicians reported that prior authorization causes care delays, with more than half saying delays occur \"always\" or \"often.\" Seventy-eight percent of physicians reported that prior authorization often or sometimes results in patients abandoning a recommended course of treatment entirely — unable or unwilling to wait for approval, they simply go without care. Most seriously, nearly one in four physicians (24 percent) reported that prior authorization has led to a serious adverse event for a patient in their care, including hospitalization, permanent impairment, or death. Of those reporting adverse events, 19 percent cited delays leading to hospitalization, 13 percent identified life-threatening events, and 7 percent reported disability, birth defects, or patient death as downstream consequences of authorization delays."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "AMA 2024 survey; average across 1,000 practicing physicians",
+          "label": "Prior auth requests per physician",
+          "value": "39/week"
+        },
+        {
+          "_key": "s2",
+          "context": "Physician + staff combined; ~1.5 business days per week (AMA 2024)",
+          "label": "Weekly staff time on prior auth",
+          "value": "13 hrs"
+        },
+        {
+          "_key": "s3",
+          "context": "AMA 2024 prior authorization physician survey",
+          "label": "Physicians: prior auth causes burnout",
+          "value": "94%"
+        },
+        {
+          "_key": "s4",
+          "context": "Includes hospitalization, disability, or death (AMA 2024)",
+          "label": "Physicians: prior auth caused serious harm",
+          "value": "24%"
+        }
+      ]
+    },
+    {
+      "_key": "s3ex",
+      "_type": "exampleBlock",
+      "content": "A primary care physician prescribes a biologic medication for a patient with severe rheumatoid arthritis. The insurer requires prior authorization. The physician's staff submits a paper form. Nine days pass. The insurer requests additional clinical documentation. The staff re-submits. Five more days pass. The patient, unable to manage pain and unable to take time off work for repeated calls to the insurer, abandons the prescription and returns to lower-efficacy over-the-counter options. Three months later, the patient presents to the emergency department with advanced joint damage. The total cost of the ED visit and specialist follow-up exceeds the annual cost of the biologic — and the patient has suffered irreversible harm. This scenario plays out thousands of times each day across the United States.",
+      "title": "The Cascading Harm of a Delayed Authorization"
+    },
+    {
+      "_key": "s4h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Regulation Is Doing About EHR Burden"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Federal policymakers have recognized for years that EHR burden and poor interoperability are not merely nuisances — they are structural failures of the health information technology ecosystem that cause measurable patient harm. The legislative response began in earnest with the 21st Century Cures Act of 2016, which included sweeping provisions designed to promote the free flow of electronic health information and prohibit \"information blocking\" — practices by EHR vendors, health systems, or health information networks that impede access to or exchange of patient data. Penalties for information blocking violations can reach up to $1 million per violation for health IT developers and health information networks. Enforcement against healthcare providers became effective July 1, 2024, marking a turning point in the federal government's willingness to hold the ecosystem accountable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "On the interoperability infrastructure side, the Office of the National Coordinator for Health IT (ONC) has advanced the Trusted Exchange Framework and Common Agreement (TEFCA), a nationwide framework designed to enable any HIPAA-covered entity to connect to a single network and exchange data with any provider connected to any participating Qualified Health Information Network (QHIN). The ONC's HTI-1 Final Rule, which took effect March 11, 2024, further implements the EHR Reporting Program from the Cures Act, requiring transparent reporting on certified health IT metrics. Together, these initiatives aim to shift the EHR ecosystem from fragmentation toward genuine clinical interoperability — a shift that, if successful, would directly reduce the manual data re-entry burden that consumes so much physician time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most targeted federal intervention on prior authorization specifically is the CMS Interoperability and Prior Authorization Final Rule, known as CMS-0057-F. Finalized in early 2024, the rule requires impacted payers — including Medicaid managed care plans, CHIP managed care entities, and qualified health plan issuers on federal exchanges — to implement FHIR-based Prior Authorization APIs, establish turnaround time limits of 72 hours for expedited requests and 7 calendar days for standard requests, and provide specific reasons for denial decisions. The operational provisions took effect January 1, 2026, with full API requirements due January 1, 2027. The rule also requires payers to implement a Provider Access API, enabling in-network providers to retrieve patient claims and encounter data directly — a foundational step toward the kind of data pre-population that could eliminate much of today's manual re-entry burden."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Prohibits information blocking; mandates open APIs for patient data access; establishes ONC health IT certification requirements.",
+          "title": "21st Century Cures Act (2016)"
+        },
+        {
+          "_key": "step2",
+          "description": "Defines eight narrow exceptions to the information blocking prohibition; applies to EHR developers, health information networks, and providers.",
+          "title": "ONC Information Blocking Rule (2021)"
+        },
+        {
+          "_key": "step3",
+          "description": "Implements EHR Reporting Program; expands information blocking enforcement; advances USCDI data standards for interoperability.",
+          "title": "HTI-1 Final Rule (March 2024)"
+        },
+        {
+          "_key": "step4",
+          "description": "Mandates FHIR-based Prior Auth APIs; requires 72-hr expedited / 7-day standard decision turnaround; operational compliance began January 1, 2026.",
+          "title": "CMS-0057-F Prior Authorization Rule (2024)"
+        },
+        {
+          "_key": "step5",
+          "description": "Penalties for provider information blocking became enforceable; ONC gains authority to refer providers to relevant accrediting bodies.",
+          "title": "Information Blocking Enforcement for Providers (July 2024)"
+        }
+      ],
+      "title": "Key Federal Interventions Targeting EHR Burden and Interoperability"
+    },
+    {
+      "_key": "s4call",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4calls",
+          "_type": "span",
+          "marks": [],
+          "text": "The U.S. Surgeon General and the AMA have both issued formal calls for systemic action on EHR burden. In 2022, Surgeon General Vivek Murthy's advisory on health worker burnout explicitly identified EHR and administrative burden as a primary structural driver of the crisis, and called on health systems, payers, and technology vendors to redesign workflows that prioritize clinician well-being alongside patient safety."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Interventions That Actually Work: From Ambient AI to FHIR Pre-Population"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Amid the grim statistics on EHR burden, a set of interventions has emerged with genuine evidence of efficacy. The most discussed — and arguably the most promising — is ambient artificial intelligence documentation, often called the \"ambient AI scribe.\" These systems use natural language processing to listen to physician-patient conversations and automatically generate structured clinical notes inside the EHR, dramatically reducing the manual typing and clicking that consumes so much of a physician's cognitive bandwidth. A quality improvement study of 263 physicians and advanced practice practitioners across six health care systems — published in JAMA Network Open — found that after 30 days of using an ambient AI scribe, burnout rates dropped significantly from 51.9 percent to 38.8 percent. The odds of burnout fell by 74 percent. Eighty-four percent of physicians reported a positive effect on patient communication, and 82 percent said their overall work satisfaction improved."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Health systems deploying ambient AI at scale are reporting similarly encouraging results. Between October 2023 and December 2024, 7,260 Permanente physicians used ambient AI tools across more than 2.5 million patient encounters, saving an estimated 15,791 hours of documentation time — equivalent to approximately 1,800 eight-hour workdays. Platforms such as Nuance DAX Copilot (integrated with Epic and other major EHRs), Abridge, and Suki are now deployed across hundreds of health systems. Studies consistently report reductions in after-hours charting, decreased cognitive load, and improved patient-physician eye contact and conversation quality. A 2026 real-world prospective observational time-motion study published in JMIR Medical Informatics documented significant time savings per clinical encounter using ambient AI tools in outpatient settings. Fifty-six percent of patients reported that ambient AI scribes had a positive impact on the quality of their visit, suggesting that the benefits extend beyond the clinician experience to the patient relationship itself."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond ambient AI, several other high-impact interventions have evidence behind them. FHIR-enabled data pre-population — where a patient's prior labs, medications, and diagnoses flow automatically into the new encounter note from external health systems — directly attacks the manual re-entry burden that fragmented interoperability creates. Team-based inbox management, in which clinical staff handle prescription refill requests, routine test result communications, and referral coordination, can reduce physician inbox volume by 30 to 40 percent in well-designed implementations. Human medical scribes remain effective where ambient AI is not yet deployed: studies show they reduce physician documentation time by approximately 10 minutes per patient encounter and are associated with reduced after-hours EHR time. ONC's SAFER (Safety Assurance Factors for EHR Resilience) guides provide health systems with a structured self-assessment framework for identifying and mitigating EHR-related patient safety risks — including alert fatigue, poor workflow design, and inadequate usability testing — before they cause harm."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Status Quo (Fragmented, Manual)",
+        "points": [
+          "Physician types full note after each encounter",
+          "Labs and outside records re-entered by hand",
+          "Alert fatigue from 100–200 daily CDS alerts",
+          "86+ min of after-hours charting every day",
+          "Prior auth submitted by fax; 9+ days for decision"
+        ]
+      },
+      "right": {
+        "label": "Optimized Workflow (AI + FHIR + Team-Based)",
+        "points": [
+          "Ambient AI generates note during encounter; physician reviews",
+          "FHIR APIs pre-populate prior data from all connected systems",
+          "Alert logic refined to high-yield, actionable thresholds",
+          "After-hours charting reduced 50–70% in AI scribe studies",
+          "FHIR Prior Auth API returns decision in 72 hrs or less"
+        ]
+      },
+      "title": "Documentation Burden: Status Quo vs. Optimized Workflow"
+    },
+    {
+      "_key": "s5ex",
+      "_type": "exampleBlock",
+      "content": "Mass General Brigham — the Boston-based academic health system — conducted a formal evaluation of ambient AI documentation technology across its clinical enterprise. The program demonstrated reductions in physician burnout, improved patient interaction quality, and meaningful decreases in time spent on post-visit documentation. Physicians reported being able to make eye contact with patients during conversations rather than focusing on a screen, and many described rediscovering aspects of the clinical encounter they had lost to years of EHR demands. Mass General Brigham's public reporting on this program has become a reference point for health systems evaluating ambient AI investments nationally.",
+      "title": "Mass General Brigham: Ambient Documentation at Scale"
+    },
+    {
+      "_key": "tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "Physicians spend more time in the EHR than with patients: roughly 5.9 hrs of daily EHR work, plus ~86 minutes of \"pajama time\" after hours, creating a chronic source of burnout.",
+        "43.2% of U.S. physicians reported at least one burnout symptom in the 2024 AMA survey; ineffective EHR systems and administrative tasks rank among the most cited stressors.",
+        "Alert fatigue is a patient safety crisis: physicians at leading hospitals override up to 98% of EHR medication alerts, rendering critical warnings invisible in the noise.",
+        "Copy-forward documentation — used by ~90% of clinicians — saves time but propagates errors; over 50% of EHR note text is duplicated from prior encounters in large-scale studies.",
+        "Prior authorization consumes 13 hours of physician and staff time per week (AMA 2024); 94% of physicians say it causes burnout, and 24% report it has led to serious patient harm.",
+        "CMS-0057-F mandates FHIR-based Prior Auth APIs and 72-hr expedited decision turnarounds, with compliance effective January 2026 — a landmark shift toward automated authorization.",
+        "Ambient AI scribes cut burnout from 51.9% to 38.8% in a 6-system study; 82% of physicians reported improved work satisfaction; 15,000+ physician hours saved at Kaiser Permanente alone.",
+        "FHIR data pre-population, team-based inbox management, and ONC SAFER guides are proven complementary tools for reducing EHR burden without waiting for regulatory mandates."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "The 2024 AMA survey of 1,000 practicing physicians found that approximately 24 percent — nearly one in four — reported that prior authorization had led to a serious adverse event for a patient in their care, including hospitalization, permanent impairment, or death. This statistic is particularly striking because it demonstrates that the harm from prior authorization is not merely financial or bureaucratic, but clinically concrete: 19% cited delays causing hospitalization, 13% identified life-threatening events, and 7% reported disability or death as downstream consequences of authorization delays.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "About 5% — prior authorization delays are mostly administrative inconveniences"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "About 24% — nearly one in four physicians have seen serious patient harm from prior auth delays"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "About 50% — a majority of physicians have witnessed serious adverse events"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "About 75% — the vast majority of physicians report prior auth causing severe patient harm"
+        }
+      ],
+      "question": "According to the 2024 AMA prior authorization survey, approximately what percentage of physicians reported that prior authorization has led to a serious adverse event — including hospitalization, permanent impairment, or death — for a patient in their care?"
+    },
+    {
+      "_key": "srch2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srch2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] AMA — Physician Burnout Statistics 2024: Latest Changes and Trends — https://www.ama-assn.org/practice-management/physician-health/physician-burnout-statistics-2024-latest-changes-and-trends — Source for 43.2% burnout rate, 18,000-physician survey scope, and EHR as top stressor."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] AMA — Fixing Prior Auth: Nearly 40 Prior Authorizations a Week Is Way Too Many — https://www.ama-assn.org/practice-management/prior-authorization/fixing-prior-auth-nearly-40-prior-authorizations-week-way — Source for 39 requests/week, 13 hours staff time, 94% burnout link, and 24% serious adverse events."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS — CMS Interoperability and Prior Authorization Final Rule CMS-0057-F Fact Sheet — https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-prior-authorization-final-rule-cms-0057-f — Source for FHIR API mandates, 72-hour expedited / 7-day standard turnaround, and January 2026 compliance date."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] JAMA Network Open — Use of Ambient AI Scribes to Reduce Administrative Burden and Professional Burnout — https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2839542 — Source for burnout drop from 51.9% to 38.8%, 74% reduced odds of burnout, 82% improved work satisfaction."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Annals of Family Medicine / AMA — Pajama Time: Primary Care Physicians and After-Hours EHR Work — https://www.ama-assn.org/practice-management/physician-health/doctors-work-fewer-hours-ehr-still-follows-them-home — Source for 86 minutes after-hours EHR time, 5.3 additional hours per 8-hr clinic day, and pajama time burnout link."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] PMC / JMIR Medical Informatics — Appropriateness of Alerts and Physicians' Responses in a Medication CDS System — https://pmc.ncbi.nlm.nih.gov/articles/PMC9579928/ — Source for 92.9% override rate, only 7.3% of alerts clinically appropriate; Brigham 98% override rate cited."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] PSNet / AHRQ — EHR Copy and Paste and Patient Safety — https://psnet.ahrq.gov/perspective/ehr-copy-and-paste-and-patient-safety — Source for 50.1% duplicated EHR note text, ~90% of clinicians using copy-paste, and adverse event linkage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "[8] AMA / Mass General Brigham — AI Scribes Save 15,000 Hours and Restore the Human Side of Medicine — https://www.ama-assn.org/practice-management/digital-health/ai-scribes-save-15000-hours-and-restore-human-side-medicine — Source for 15,791 hours saved across 2.5 million Kaiser Permanente encounters with ambient AI tools."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "emqeliftw7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "emqeliftw8",
+          "_type": "span",
+          "marks": [],
+          "text": "Apply It in the EMR/EHR Lab"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "emqeliftw9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "emqeliftwa",
+          "_type": "span",
+          "marks": [],
+          "text": "Use the EMR/EHR Lab's Workflow Sim to model a clinician's daily EHR time by vendor and patient panel, then toggle scribes, ambient AI, and team-based care to see documentation burden and burnout cost fall against the ~360 min/day national benchmark."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "emqeliftwc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "emqeliftwd",
+          "_type": "span",
+          "marks": [
+            "emqeliftwb"
+          ],
+          "text": "Open the EMR/EHR Lab → workflow mode"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "emqeliftwb",
+          "_type": "link",
+          "href": "/research-lab/interoperability?tab=emr&mode=workflow"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-ehr-burden"
+  },
+  "title": "EHR Burden and Clinician Burnout: How Poor Interoperability Hurts Clinicians"
+}

@@ -1,0 +1,83 @@
+{
+  "id": "2a0c6d1d-eaa0-4211-b8d8-bb207a46c2be",
+  "slug": "fee-for-service-vs-value-based-care",
+  "sanity_slug": "hie-ffs-vs-vbc",
+  "content_blocks": [
+    {
+      "rows": [
+        {
+          "left": "Volume — each service rendered generates payment",
+          "label": "Payment basis",
+          "right": "Outcomes — quality, efficiency, and cost reduction generate payment"
+        },
+        {
+          "left": "Do more (more visits, tests, procedures = more revenue)",
+          "label": "Incentive",
+          "right": "Do better (prevent hospitalizations, close care gaps = more revenue)"
+        },
+        {
+          "left": "Penalized — coordination takes time with no direct billing",
+          "label": "Care coordination",
+          "right": "Rewarded — coordinated care reduces avoidable costs"
+        },
+        {
+          "left": "Billing codes and claims",
+          "label": "Data needs",
+          "right": "Complete longitudinal patient data — exactly what HIE provides"
+        },
+        {
+          "left": "Payer bears all financial risk",
+          "label": "Risk",
+          "right": "Risk shared or transferred to provider based on model tier"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "Fee-for-service vs value-based care",
+      "leftLabel": "Fee-for-Service",
+      "rightLabel": "Value-Based Care"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Provider keeps a portion of savings below a benchmark. Upside-only (no downside risk) to two-sided (shares losses too). ACO MSSP is the federal model.",
+          "icon": "ti-percentage",
+          "title": "Shared savings"
+        },
+        {
+          "body": "Single payment for an episode of care (e.g., hip replacement + 90-day recovery). Provider accountable for total cost and quality of the episode.",
+          "icon": "ti-package",
+          "title": "Bundled payments"
+        },
+        {
+          "body": "Fixed per-member-per-month payment regardless of utilization. Full risk transfer to provider. Requires robust population health management.",
+          "icon": "ti-users",
+          "title": "Capitation / PMPM"
+        },
+        {
+          "body": "Accountable Care Organizations — networks of providers sharing accountability for a defined patient population's costs and quality outcomes.",
+          "icon": "ti-building-hospital",
+          "title": "ACOs"
+        }
+      ],
+      "heading": "Value-based payment models"
+    },
+    {
+      "body": "In 2017, Vermont became the first state to implement an All-Payer Accountable Care Organization Model, aligning Medicare, Medicaid, and commercial payers around shared value-based goals. OneCare Vermont is the ACO that operates under this model.\n\nThe model sets statewide per-capita cost and quality targets. Providers who meet targets share in savings; those who miss face potential penalties. The model covers most Vermonters and is the economic backbone of Act 167 and Act 68's transformation agenda.\n\nHIE data is foundational to this model: attribution, quality measurement, care gap identification, and outcome tracking all depend on complete, longitudinal patient data.",
+      "type": "text",
+      "heading": "Vermont's All-Payer Model — a national first"
+    },
+    {
+      "hint": "Recommended: A senior leader from your economics, finance, or strategy team explains how Vermont's APM affects your organization's contracts, incentives, and priorities. 8–12 minutes.",
+      "type": "audio_slot",
+      "label": "Vermont's All-Payer Model: an insider perspective"
+    },
+    {
+      "type": "video",
+      "caption": "Value-based care explained — from fee-for-service to outcomes-based payment (~9 min)",
+      "videoId": "aSFP6-mguYU",
+      "mediaType": "youtube",
+      "durationSeconds": 540
+    }
+  ]
+}

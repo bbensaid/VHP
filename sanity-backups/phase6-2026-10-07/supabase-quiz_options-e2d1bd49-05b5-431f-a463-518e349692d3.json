@@ -1,0 +1,8 @@
+{
+  "id": "e2d1bd49-05b5-431f-a463-518e349692d3",
+  "question_id": "f54c656a-af31-48a5-89ef-e09dcb32451c",
+  "order": 4,
+  "text": "Design applies only to Medicare programs; management applies only to commercial payer contracts",
+  "is_correct": false,
+  "explanation": "Both design and management apply across payer types -- Vermont's RBP, global budgets, and AHEAD all involve both design and management regardless of payer."
+}

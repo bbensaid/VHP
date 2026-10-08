@@ -1,0 +1,26 @@
+[
+  {
+    "id": "4dcf6358-0133-43f9-a182-61d635d42faf",
+    "question_id": "6dcd9539-487a-42f5-bb5a-09e0d28688bc",
+    "order": 1,
+    "text": "The challenge was decided against UVMMC, and GMCB's core enforcement authority was upheld",
+    "is_correct": true,
+    "explanation": null
+  },
+  {
+    "id": "6fd9cd00-f2d5-4004-9e2f-743dac8278c4",
+    "question_id": "6dcd9539-487a-42f5-bb5a-09e0d28688bc",
+    "order": 2,
+    "text": "The case is still pending as of this lesson",
+    "is_correct": false,
+    "explanation": "The case is documented as already decided against UVMMC, not pending."
+  },
+  {
+    "id": "e3d7e318-f3ae-4a55-95c9-140b5e916bcb",
+    "question_id": "6dcd9539-487a-42f5-bb5a-09e0d28688bc",
+    "order": 3,
+    "text": "UVMMC won a partial ruling narrowing GMCB's enforcement authority to smaller hospitals",
+    "is_correct": false,
+    "explanation": "The ruling upheld GMCB's core authority against the largest, most capable potential challenger -- it did not carve out an exemption for large systems."
+  }
+]

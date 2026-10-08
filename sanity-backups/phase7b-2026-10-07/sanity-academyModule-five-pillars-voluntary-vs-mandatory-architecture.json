@@ -1,0 +1,665 @@
+{
+  "_createdAt": "2026-09-19T04:08:09Z",
+  "_id": "academyModule-five-pillars-voluntary-vs-mandatory-architecture",
+  "_rev": "cGE63aJqei6oB7VsSNsro1",
+  "_type": "academyModule",
+  "_updatedAt": "2026-09-19T04:08:09Z",
+  "body": [
+    {
+      "_key": "fc19bc6afc3c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8252cb1b75c3",
+          "_type": "span",
+          "marks": [],
+          "text": "The opt-out problem, stated precisely"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "3cd33b6813c3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "239f62dd47f1",
+          "_type": "span",
+          "marks": [],
+          "text": "The generic version of this argument is that voluntary programs let high-cost actors free-ride. That is close, but imprecise enough to be misleading. The actual mechanism is narrower and more damaging."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6036b6ef4e6d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "344d20916499",
+          "_type": "span",
+          "marks": [],
+          "text": "In a total-cost or global-budget arrangement, the model's financial logic depends on holding a defined population's spending against a benchmark. Participation is chosen by each payer and provider individually, and each one chooses on the basis of its own expected result. Organizations that expect to beat the benchmark join. Organizations that expect to lose against it — typically the highest-priced and highest-volume actors, whose current revenue depends on the thing the model is trying to change — decline, or join and then leave."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "925622ec6a36",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "277e193517d2",
+          "_type": "span",
+          "marks": [],
+          "text": "What remains inside the model is not a random sample of the market. It is a sample selected on expected performance. Two consequences follow, and they are distinct. First, the model cannot deliver system-level savings, because the spending it most needed to reach is outside it. Second, whatever savings it does report cannot be attributed to the model, because the participants were selected on their expected ability to produce them. The first consequence is a policy failure; the second is an evidence failure; and a program suffering the second cannot prove it is not suffering the first."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "832a481633bf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4247e494c3f5",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont tried four times"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "a2ced2fb723b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a9529e495555",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont has attempted a hospital global budget architecture four times in the past decade and a half: the GMCB net patient revenue cap in 2012, a Rutland Regional pilot proposed in 2014 that was never implemented, the Vermont All-Payer ACO Model from 2017 through 2025, and the current Act 167 / Act 68 mandate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "3a0a6793c161",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "caea7632ee38",
+          "_type": "span",
+          "marks": [],
+          "text": "The first three shared one design feature. Participation was elective for at least one class of actor who mattered. A hospital could decline; a payer could decline; and the arrangement had no mechanism to hold the resulting gap."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b595b88d5250",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f61977e4328e",
+          "_type": "span",
+          "marks": [],
+          "text": "Act 68 is the first of the four to remove the option. It directs GMCB to establish reference-based prices by rule across the commercial market and global budgets for non-critical-access hospitals by FY2028 and all hospitals by 2030. That change — from an arrangement participants elect into, to a rule they operate under — is the single most important difference between Vermont's current trajectory and everything that preceded it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "25135ffad497",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "bbe63e9d95f0",
+          "_type": "span",
+          "marks": [],
+          "text": "OneCare: what voluntary participation actually cost"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "b19df9c788fa",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9f0c5451a83c",
+          "_type": "span",
+          "marks": [],
+          "text": "OneCare Vermont was the lead accountable care organization under the Vermont All-Payer ACO Model. Its participation was voluntary, and the Oliver Wyman Act 167 report listed that plainly in its perception-versus-reality analysis: Vermont did not have a statewide ACO, it had a voluntary one that did not include several hospitals or many community-based providers. The same analysis noted that Vermont's \"all-payer\" model excluded fee-for-service Medicare and roughly 40% of commercially insured Vermonters — so the label described a minority of total health care spending."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "67c780d0e14b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "171e64a695ef",
+          "_type": "span",
+          "marks": [],
+          "text": "The opt-out became concrete on January 1, 2023, when Blue Cross Blue Shield of Vermont, the state's largest insurer, declined to renew its OneCare contract. Roughly 93,000 enrollees — about a third of OneCare's total attributed population — left the model in a single step. No management decision inside OneCare could replace them, because the state had no authority to require the payer to stay."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "394f7cece353",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7f3826fb7415",
+          "_type": "span",
+          "marks": [],
+          "text": "OneCare announced in November 2024 that it would wind down at the close of 2025, coinciding with the scheduled end of the All-Payer ACO Model. The lesson is not that ACOs do not work. It is that a model holding a population accountable for total cost cannot survive the unilateral departure of a third of that population, and a voluntary architecture guarantees that departure is always available."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "f7e59e75b70f",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "155891629c88",
+          "context": "Source: Vermont Business Magazine / GMCB budget record",
+          "label": "Enrollees removed from OneCare Vermont in one step when Blue Cross Blue Shield of Vermont declined to renew, effective January 1, 2023 — about a third of its attributed population",
+          "value": "~93,000"
+        },
+        {
+          "_key": "0e3edc285522",
+          "context": "Source: Barnett et al., New England Journal of Medicine, 2019",
+          "label": "Savings per joint replacement episode under Medicare's mandatory CJR bundle — a 3.1% reduction, with no increase in complication rates",
+          "value": "$812"
+        },
+        {
+          "_key": "58fbbd5a2f7f",
+          "context": "Source: CMS, Comprehensive Care for Joint Replacement Model final rule, 2015",
+          "label": "Metropolitan statistical areas randomly assigned by Medicare to mandatory bundled payments in 2016, creating the randomization that makes CJR evaluable",
+          "value": "67 of 196"
+        },
+        {
+          "_key": "d584809dd365",
+          "context": "Source: Milbank Memorial Fund, 2024",
+          "label": "Oregon hospitals subject to the SB 1067 payment cap after rural and sole-community exemptions — all of which remained in network",
+          "value": "24 of 62"
+        }
+      ]
+    },
+    {
+      "_key": "a488257ea0c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "48639a066276",
+          "_type": "span",
+          "marks": [],
+          "text": "Voluntary versus mandatory architecture"
+        }
+      ],
+      "markDefs": [],
+      "style": "h4"
+    },
+    {
+      "_key": "47150c4a527d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "d03942b6e26c",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Who participates — "
+        },
+        {
+          "_key": "10d57b8623c6",
+          "_type": "span",
+          "marks": [],
+          "text": "Voluntary: organizations that expect to beat the benchmark → Mandatory: every organization in the defined class, whatever it expects"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "32b977f0c950",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7ecfee5d2855",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Population coverage — "
+        },
+        {
+          "_key": "4d816ccf63f8",
+          "_type": "span",
+          "marks": [],
+          "text": "A selected subset; the highest-cost spending is frequently outside it → The full defined population, so the financial logic applies to the spending that matters"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "657b49b8e22c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "69f6298af334",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Evidence value — "
+        },
+        {
+          "_key": "eb57f846e97f",
+          "_type": "span",
+          "marks": [],
+          "text": "Results confound program effect with selection — savings cannot be attributed to the design → Results are attributable, especially where assignment is random as in CJR"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "84ea1b7c4595",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4dc413ad11fa",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Exit risk — "
+        },
+        {
+          "_key": "3bc5d9fff424",
+          "_type": "span",
+          "marks": [],
+          "text": "Any participant may leave at renewal, and the largest ones have the most reason to → Exit requires changing the rule, which is a legislative or rulemaking act with a public record"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "3ed245106f14",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f707a46a9d06",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Characteristic failure mode — "
+        },
+        {
+          "_key": "7c3b8ccec3bf",
+          "_type": "span",
+          "marks": [],
+          "text": "Erosion — the model shrinks toward the participants who needed it least → Litigation and carve-out pressure — the fight moves to the scope of the rule, in public"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1d11d0ef11d4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7da595483f28",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland: the mandate underneath the model"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "87138cb1093c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1075c546ad0e",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland is usually cited as the American proof that hospital global budgets work. The more useful point is what sits beneath them. Maryland has had mandatory all-payer hospital rate regulation since the Health Services Cost Review Commission began setting rates in 1974, made binding on federal payers by a 1977 Medicare waiver. Every payer in the state pays on the same basis, by law."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "9637ac1f88db",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4e25a76943d5",
+          "_type": "span",
+          "marks": [],
+          "text": "When Maryland layered global budget revenue onto that foundation under its All-Payer Model in 2014, hospital participation in the global budget contracts was technically elective — and every hospital participated anyway. That is the part worth understanding. The election was not meaningful, because the alternative was operating outside a rate system that governed all of the hospital's payers. A mandate one level down made the choice one level up a formality."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1aa056920b81",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c388f1990592",
+          "_type": "span",
+          "marks": [],
+          "text": "The results are documented. Over the All-Payer Model's first five years, Maryland saved Medicare $1.4 billion in hospital expenditures, with hospital expenditure growth running 8.74% below the national rate since 2013, and $869 million in total cost of care including non-hospital spending. Under the successor Total Cost of Care Model, CMS's evaluation found Medicare fee-for-service spending reduced by 2.1% and hospital admissions down 16.2%, with $689 million in reduced total Medicare spending from 2019 to 2021."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "9e2932dfb8fe",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a438e393d6aa",
+          "_type": "span",
+          "marks": [],
+          "text": "CJR versus BPCI: the cleanest natural experiment in U.S. payment policy"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "2e64a46af84f",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "302a5cf94ef2",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare ran the controlled version of this question. In 2016, CMS randomly assigned hospitals in 67 of 196 metropolitan statistical areas to mandatory participation in the Comprehensive Care for Joint Replacement model. CMS was explicit about why: required participation avoids the selection bias inherent in any voluntary model. Because the CJR mandate captured hospitals with and without prior experience in the voluntary Bundled Payments for Care Improvement program, it also created a direct comparison between self-selected and compelled participants."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6123a8ee60bf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "2a128c0e2eb7",
+          "_type": "span",
+          "marks": [],
+          "text": "The two-year evaluation, published by Barnett and colleagues in the *New England Journal of Medicine* in 2019, found that mandatory bundles reduced spending by $812 per episode, a 3.1% decrease, driven almost entirely by reduced use of skilled nursing facilities after discharge, with no increase in complication rates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1e0f7ae98240",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "415a7d7dec56",
+          "_type": "span",
+          "marks": [],
+          "text": "That is a modest number, and its modesty is the finding. Voluntary bundled payment programs had reported larger effects. When the same intervention was applied to a randomly assigned set of hospitals — including hospitals with no interest in participating and no prior investment in post-acute redesign — the effect was real but small. The difference between the two figures is a measurement of how much of the voluntary result was selection rather than program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bd2d3263bcae",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "69708c8a0bc2",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Voluntary-model results are not evidence of what a mandate would do\n"
+        },
+        {
+          "_key": "a42719989bbc",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the most common analytical error in value-based care planning. A health system reads that a voluntary program produced an X% reduction, then builds a business case assuming a statewide mandate would produce the same. It will not, because the reported X came from organizations that chose to participate on the basis of expecting to achieve it. The only defensible way to estimate a mandate's effect is from a mandate — which is why the CJR randomization matters far more than its dollar figure suggests."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "645f20b06a62",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "6f1b9edd58a9",
+          "_type": "span",
+          "marks": [],
+          "text": "Oregon: a mandate with carve-outs is still a mandate"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "75af136e3135",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8056a492acd1",
+          "_type": "span",
+          "marks": [],
+          "text": "Oregon's SB 1067, enacted in 2017 and effective in October 2019 for educators and January 2020 for public employees, capped hospital payments under the state employee plans at 200% of Medicare in network and 185% out of network. The legislature exempted small, rural, critical access and certain sole-community hospitals in counties under 70,000 people that drew at least 40% of revenue from Medicare. Only 24 of Oregon's 62 hospitals were subject to the cap."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "0b980a8079a3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8fc6f253858f",
+          "_type": "span",
+          "marks": [],
+          "text": "The cap saved the state $107.5 million in its first 27 months. All of the hospitals subject to it remained in network, and researchers found no evidence that they raised prices for other commercial payers to compensate. Subsequent work published in *Health Affairs* found hospital revenues, expenses, margins, operations and patient experience essentially stable afterward. The design point is that a rule covering 39% of a state's hospitals with a clear exemption test behaves like a mandate for those hospitals. Carve-outs narrow a mandate's scope; they do not convert it into a voluntary program, as long as the covered class cannot elect out."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fc99c861aef6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8ff789c17ed2",
+          "_type": "span",
+          "marks": [],
+          "text": "Montana: the same policy without a statute"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "34111ebafa9e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "462dfbe659d4",
+          "_type": "span",
+          "marks": [],
+          "text": "Montana shows what happens when the policy is right and the architecture is administrative. In July 2016 the state employee health plan, covering roughly 31,000 members, renegotiated contracts with all eleven of Montana's acute care hospitals using Medicare reference-based pricing. An independent analysis published through the National Academy for State Health Policy found the plan saved $47.8 million in the two years after implementation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6cab839de16a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8e5a18a7d227",
+          "_type": "span",
+          "marks": [],
+          "text": "By October 2022 the state was publicly signaling a step back from the model, amid a change of third-party administrator and a new contract projecting a smaller $28 million in savings over three years with fewer specifics on how. Nothing about the underlying economics had changed. What the arrangement lacked was statutory grounding: it existed as a set of contracts a subsequent administration could renegotiate. Vermont's choice to legislate rather than demonstrate is a direct response to exactly this fragility."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "8ba60c35ed75",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ce7b8d9afe8a",
+          "_type": "span",
+          "marks": [],
+          "text": "What Act 68 does differently"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "3e17be5a776f",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "bc3c4b38d9f2",
+          "_type": "span",
+          "marks": [],
+          "text": "Act 68 places the obligation on the rule rather than on the contract. GMCB sets maximum allowable payments by rule; hospitals may not bill patients or insurers above them; global budgets follow on a statutory schedule. A hospital that objects does not exercise an opt-out, because there is none. It litigates, or it seeks an amendment in a legislative session — both of which happen in public, on the record, against an administrative record built over the Act 167 process."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a21c8a3b7b31",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "96bff4d80ed1",
+          "_type": "span",
+          "marks": [],
+          "text": "That is the honest description of what a mandate buys. It does not eliminate opposition. It relocates opposition from a private renewal decision, where a single payer can remove a third of a model's population without a hearing, to a public forum where the burden falls on the party seeking the exception. For a Policy pillar whose diagnostic question is \"is it permissible?\", that relocation is the whole point."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "c16afa8a50af",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "36a565f705e2",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "The counter-argument, taken seriously\n"
+        },
+        {
+          "_key": "74e83a698c86",
+          "_type": "span",
+          "marks": [],
+          "text": "Mandates carry their own failure modes and it is not honest to teach only one side. They invite litigation. They generate carve-out pressure that can, session by session, hollow out the covered class. They require an administrator with the resources to defend its own orders. And a mandate written against a wrong diagnosis is harder to correct than a voluntary program nobody joined. The claim is not that mandatory architecture is always right — it is that a voluntary architecture cannot hold a population-level financial commitment, because the participants who most affect the result are the ones most able to leave."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "062ff5d08acc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ad1ae3fb4d41",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "From the Book — Chapter 2\n"
+        },
+        {
+          "_key": "3fc385ab1407",
+          "_type": "span",
+          "marks": [],
+          "text": "Chapter 2 covers the enforcement mechanics behind the mandate — what 'mandatory' means in practice, what GMCB can actually do, and the reference-based pricing design that eliminates the opt-out.\n\nRead it at /read/chapter-02."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    }
+  ],
+  "courseTitle": "Five Pillars, One Imperative",
+  "estimatedReadTime": 20,
+  "learningObjectives": [
+    "Explain the participation-selection mechanism by which voluntary payment models lose the population whose costs they were designed to manage",
+    "Trace Vermont's four attempts at hospital global budgets and identify the design feature common to every failure",
+    "Use Medicare's CJR randomization to explain why savings reported by a voluntary model are not evidence of what a mandate would achieve",
+    "Distinguish a mandate with defined carve-outs from a voluntary program, and assess the durability of each"
+  ],
+  "level": "Intermediate",
+  "moduleNumber": 7,
+  "nextModuleSlug": "cmmi-waivers-federal-state-interface",
+  "pillar": "Policy",
+  "prevModuleSlug": "legislative-architecture-reform-cascade",
+  "slug": {
+    "_type": "slug",
+    "current": "voluntary-vs-mandatory-architecture"
+  },
+  "summary": "A reform that depends on voluntary participation by the actors with the most to lose will be defeated by exactly those actors. This lesson traces the mechanism through Vermont's four failed global budget attempts, Maryland's mandatory rate-setting foundation, and Medicare's randomized mandatory-versus-voluntary bundled payment experiment.",
+  "title": "Voluntary vs. Mandatory — Why Architecture Beats Ambition",
+  "totalModules": 24
+}

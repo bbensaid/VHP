@@ -1,0 +1,497 @@
+{
+  "_type": "academyModule",
+  "title": "From Mutation to Medicine: How Precision Medicine Is Changing Clinical Practice",
+  "slug": {"_type": "slug", "current": "precision-medicine-m5-clinical"},
+  "courseTitle": "Precision Medicine Fundamentals",
+  "moduleNumber": 5,
+  "totalModules": 6,
+  "pillar": "Clinical",
+  "level": "Intermediate",
+  "estimatedReadTime": 22,
+  "summary": "Precision medicine is no longer a research concept — it is reshaping the clinical encounter in oncology, primary care, and rare disease diagnosis. This module traces how tumor profiling, pharmacogenomics, and whole-exome sequencing are moving from academic medical centers into everyday practice. You will see how clinical decision support, newborn screening programs, and genetic counseling translate genomic science into patient care decisions. By the end, you will understand what precision medicine looks like from the clinician's perspective and how Vermont providers are beginning to integrate these tools.",
+  "learningObjectives": [
+    "Explain how tumor profiling and targeted therapies differ from traditional chemotherapy",
+    "Identify the key pharmacogenomic gene-drug pairs relevant to primary care prescribing",
+    "Describe how whole-exome sequencing is shortening the diagnostic odyssey for rare disease patients",
+    "Explain the role of genetic counselors in pre-test and post-test communication",
+    "Recognize how newborn screening programs represent population-level precision medicine",
+    "Understand liquid biopsy as a tool for cancer monitoring and treatment response"
+  ],
+  "prevModuleSlug": "precision-medicine-m4-technology",
+  "nextModuleSlug": "precision-medicine-m6-equity",
+  "publishedAt": "2026-03-08T00:00:00Z",
+  "body": [
+    {
+      "_type": "block",
+      "_key": "m5blk001",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn001", "text": "For most of the twentieth century, cancer treatment followed a simple logic: if the tumor was in the breast, you gave breast cancer drugs; if it was in the colon, you gave colon cancer drugs. The location of the tumor defined the treatment. Precision medicine has upended that logic entirely.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk002",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn002", "text": "Today, oncologists increasingly ask: what mutation is driving this tumor? The answer can point toward a targeted therapy that works regardless of where in the body the cancer originated. A lung cancer with an EGFR mutation and a colon cancer with an EGFR mutation may respond to the same drug. The tissue of origin matters less than the molecular fingerprint.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk003",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m5spn003", "text": "Oncology as the Leading Edge: Tumor Profiling and Targeted Therapy", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk004",
+      "style": "callout",
+      "children": [{"_type": "span", "_key": "m5spn004", "text": "Tumor profiling (also called comprehensive genomic profiling or CGP) is the laboratory process of sequencing the DNA of a patient's cancer cells to identify the specific mutations driving tumor growth. These mutations become targets for drugs designed to block them precisely.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk005",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn005", "text": "Traditional chemotherapy works by killing rapidly dividing cells — which kills cancer cells, but also damages hair follicles, the gut lining, and bone marrow. Targeted therapies work differently: they are designed to inhibit a specific protein or pathway that a particular mutation activates. The result is often a dramatically different side-effect profile and, in many cases, dramatically better outcomes.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "analogyBlock",
+      "_key": "m5an0001",
+      "concept": "Targeted therapy vs. chemotherapy",
+      "analogy": "Imagine your home has a pest problem. Traditional chemotherapy is like fumigating the entire house — it kills the pests, but it also kills the houseplants, drives out the family pets, and makes the house temporarily uninhabitable. Targeted therapy is like hiring a specialist who identifies exactly which pest is causing the problem and applies a precise treatment only to that species.",
+      "bridge": "In cancer biology, the 'pest' is a specific mutated protein — like a hyperactive EGFR receptor or a BCR-ABL fusion protein — and the targeted drug is engineered to block exactly that protein while leaving normal cells largely untouched."
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk006",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn006", "text": "The landmark example is imatinib (Gleevec), approved in 2001 for chronic myeloid leukemia (CML). CML is driven by the BCR-ABL fusion gene — a chromosomal rearrangement that creates a constantly active kinase enzyme. Imatinib was designed specifically to block BCR-ABL. Within a decade of its approval, the five-year survival rate for CML had risen from roughly 30% to over 90% (NEJM, 2017).", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "statGrid",
+      "_key": "m5sg0001",
+      "title": "The Precision Oncology Landscape",
+      "stats": [
+        {"_key": "m5st001a", "value": "90%+", "label": "CML 5-year survival with targeted therapy", "context": "Chronic myeloid leukemia survival rose from ~30% to over 90% after imatinib targeting BCR-ABL. (NEJM, 2017)", "trend": "up"},
+        {"_key": "m5st001b", "value": "~60%", "label": "NSCLC patients with actionable mutations", "context": "Roughly 60% of non-small cell lung cancer patients have a potentially actionable genomic alteration identifiable by comprehensive profiling. (ASCO, 2024)", "trend": "up"},
+        {"_key": "m5st001c", "value": "80+", "label": "FDA-approved targeted cancer therapies", "context": "As of 2025, more than 80 tumor-agnostic or mutation-targeted cancer therapies have received FDA approval. (FDA Drug Approvals, 2025)", "trend": "up"}
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk007",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m5spn007", "text": "Immunotherapy Biomarkers: PD-L1, MSI-H, and TMB", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk008",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn008", "text": "Not all precision oncology involves targeted kinase inhibitors. Immunotherapy — specifically immune checkpoint inhibitors — represents a second major category. These drugs work by releasing the brakes on the immune system, allowing it to recognize and destroy cancer cells. The challenge is predicting who will respond.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk009",
+      "style": "callout",
+      "children": [{"_type": "span", "_key": "m5spn009", "text": "Three key biomarkers predict immunotherapy response: PD-L1 expression (a protein on tumor cells that suppresses immune attack), MSI-H/dMMR status (microsatellite instability-high, indicating a defect in DNA mismatch repair that creates many mutant proteins for the immune system to target), and TMB (tumor mutational burden, the total number of mutations in the tumor genome). Higher values on each measure generally predict better response to checkpoint inhibitors.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk010",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn010", "text": "Pembrolizumab (Keytruda) received the first tumor-agnostic FDA approval in 2017 — it is approved for any solid tumor that is MSI-H or dMMR, regardless of where in the body the cancer originated. This was a regulatory landmark: for the first time, a cancer drug was approved based on a molecular biomarker alone, not a tissue type.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk011",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m5spn011", "text": "Basket Trials and the MATCH Trial: Rethinking Clinical Research", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk012",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn012", "text": "Precision oncology has also forced a rethinking of how clinical trials are designed. Traditional trials enroll patients by cancer type — all participants have the same cancer. But if we are treating based on mutation rather than tissue type, we need new trial architectures.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk013",
+      "style": "callout",
+      "children": [{"_type": "span", "_key": "m5spn013", "text": "A basket trial enrolls patients based on a shared molecular alteration (e.g., a specific mutation), regardless of cancer type. Multiple tumor types are tested in 'baskets' within the same trial. A platform trial or umbrella trial tests multiple targeted agents within a single cancer type, matching each patient to the arm that targets their specific mutation.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk014",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn014", "text": "The NCI-MATCH (Molecular Analysis for Therapy Choice) trial, launched in 2015, became the flagship example of this approach. It screens patients with any solid tumor or lymphoma for specific genetic alterations and then assigns them to treatment arms targeting those alterations. By 2024, MATCH had screened over 6,000 patients across dozens of molecular arms, generating data no traditional trial structure could have produced.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "exampleBlock",
+      "_key": "m5ex0001",
+      "eyebrow": "Real-World Example",
+      "title": "NCI-MATCH Trial",
+      "body": "The National Cancer Institute's Molecular Analysis for Therapy Choice (MATCH) trial launched in 2015 as the largest precision oncology trial in U.S. history. Patients with any refractory solid tumor or lymphoma undergo tumor sequencing; if an actionable mutation is found, they are matched to a corresponding treatment arm. The trial simultaneously tests dozens of targeted agents across multiple cancer types, dramatically accelerating evidence generation for rare mutation-treatment combinations.",
+      "outcome": "By 2024, MATCH had enrolled over 6,000 patients and produced published results for more than 30 molecular treatment arms, providing FDA-relevant efficacy data for mutation-drug pairings that would have taken decades to study in traditional single-cancer trials.",
+      "source": "National Cancer Institute, NCI-MATCH Trial; NEJM Evidence, 2022"
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk015",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m5spn015", "text": "Pharmacogenomics in Primary Care: The Drugs Your Patients Are Already Taking", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk016",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn016", "text": "Precision medicine is not confined to oncology. Pharmacogenomics — the study of how genetic variation affects drug metabolism and response — is increasingly relevant to primary care prescribing. Millions of patients are on medications whose effectiveness or safety is meaningfully affected by common genetic variants.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk017",
+      "style": "callout",
+      "children": [{"_type": "span", "_key": "m5spn017", "text": "The cytochrome P450 (CYP) enzyme family metabolizes the majority of clinically used drugs. Genetic variants in CYP genes create four metabolizer categories: poor metabolizers (drug builds up to toxic levels), intermediate metabolizers (reduced clearance), normal metabolizers, and ultra-rapid metabolizers (drug is cleared so fast it never reaches therapeutic levels). A single blood or saliva test can identify a patient's metabolizer status across multiple CYP genes simultaneously.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk018",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn018", "text": "CYP2C19 is clinically critical for clopidogrel (Plavix), the antiplatelet drug used after heart attacks and stent placement. Clopidogrel is a prodrug — it must be converted by CYP2C19 into its active form. Patients who are CYP2C19 poor metabolizers cannot convert the drug effectively, which means they are not getting the antiplatelet protection they need. This is associated with higher rates of stent thrombosis and adverse cardiac events.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk019",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn019", "text": "CYP2D6 metabolizes many commonly prescribed antidepressants and antipsychotics, including fluoxetine, paroxetine, codeine, and tramadol. Ultra-rapid CYP2D6 metabolizers who receive codeine may convert it to morphine so rapidly that they experience dangerous opioid toxicity — a phenomenon that has caused fatalities, including in children who received codeine after tonsillectomy.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "warningBlock",
+      "_key": "m5wn0001",
+      "misconception": "Pharmacogenomic testing is only relevant for cancer patients or those on specialty medications.",
+      "reality": "Some of the most clinically consequential pharmacogenomic interactions involve common primary care drugs: clopidogrel (cardiovascular), codeine (pain), SSRIs (mental health), and warfarin (anticoagulation). CYP2C19 poor metabolizer status affects roughly 2-3% of the U.S. population and has direct implications for antiplatelet therapy after cardiac events."
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk020",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn020", "text": "HLA-B*5701 and abacavir represents one of the clearest success stories in pharmacogenomics. Abacavir is a key antiretroviral medication used in HIV treatment. Approximately 5-8% of patients with the HLA-B*5701 allele develop a severe, potentially fatal hypersensitivity reaction to the drug. Prospective screening for this allele before prescribing abacavir has essentially eliminated abacavir hypersensitivity reactions in clinical practice — a model example of precision medicine preventing harm.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "comparisonBlock",
+      "_key": "m5cm0001",
+      "title": "Traditional Prescribing vs. Pharmacogenomics-Guided Prescribing",
+      "leftLabel": "Traditional (One-Size-Fits-All)",
+      "rightLabel": "Pharmacogenomics-Guided",
+      "rows": [
+        {"_key": "m5rw001a", "aspect": "Dose selection", "left": "Standard population-average dose", "right": "Dose adjusted for predicted metabolizer status"},
+        {"_key": "m5rw001b", "aspect": "Drug selection", "left": "First-line drug regardless of metabolism", "right": "Drug chosen to avoid known gene-drug interactions"},
+        {"_key": "m5rw001c", "aspect": "Adverse event prediction", "left": "Trial and error; react after adverse event", "right": "Predict and prevent adverse events before first dose"},
+        {"_key": "m5rw001d", "aspect": "Antidepressant selection", "left": "Standard SSRI, titrate over weeks to months", "right": "CYP2D6/CYP2C19 testing informs which SSRI is likely to work"},
+        {"_key": "m5rw001e", "aspect": "Cost model", "left": "Lower upfront cost; higher downstream cost from failures", "right": "Higher upfront testing cost; lower downstream failure and hospitalization cost"}
+      ]
+    },
+    {
+      "_type": "statGrid",
+      "_key": "m5sg0002",
+      "title": "Pharmacogenomics by the Numbers",
+      "stats": [
+        {"_key": "m5st002a", "value": "~7%", "label": "U.S. population with CYP2C19 poor metabolizer status", "context": "Varies by ancestry: ~2-3% of Europeans, ~15-20% of East Asians. These patients do not effectively activate clopidogrel. (CPIC Guidelines, 2022)", "trend": "neutral"},
+        {"_key": "m5st002b", "value": "95%+", "label": "Abacavir hypersensitivity reactions prevented by HLA-B*5701 screening", "context": "Prospective HLA-B*5701 screening before abacavir prescribing has virtually eliminated this life-threatening drug reaction. (Lancet, 2008)", "trend": "up"},
+        {"_key": "m5st002c", "value": "99%", "label": "People with at least one actionable pharmacogenomic variant", "context": "A 2022 CPIC analysis found that virtually everyone has at least one clinically actionable pharmacogenomic variant when tested across a panel of major genes. (CPIC, 2022)", "trend": "neutral"}
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk021",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m5spn021", "text": "The Rare Disease Diagnostic Odyssey — and How Genomics Is Ending It", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk022",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn022", "text": "Rare diseases affect approximately 1 in 10 Americans — about 30 million people — yet most are caused by single-gene mutations and individually affect fewer than 200,000 people. This combination of commonality in aggregate and rarity in specificity has historically made them profoundly difficult to diagnose.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk023",
+      "style": "callout",
+      "children": [{"_type": "span", "_key": "m5spn023", "text": "The 'diagnostic odyssey' describes the years-long journey rare disease patients typically travel before receiving a correct diagnosis. On average, patients with rare genetic diseases see 7-8 physicians over 4-5 years before getting an accurate diagnosis. During that time, they often receive incorrect diagnoses, inappropriate treatments, and significant psychological burden.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk024",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn024", "text": "Whole-exome sequencing (WES) sequences the approximately 1-2% of the genome that encodes proteins — the exome. Because most disease-causing mutations affect protein-coding genes, WES captures the clinically relevant variation at a fraction of the cost of whole-genome sequencing. For rare disease diagnosis, WES has transformed the landscape.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk025",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn025", "text": "Studies of WES in pediatric rare disease patients have reported diagnostic yields of 25-40%, meaning that roughly one-third of children who had previously been undiagnosed receive a molecular diagnosis from WES. More importantly, in many cases WES compresses the diagnostic timeline from years to weeks. For families who have spent years in uncertainty, this can be transformative even when treatment options are limited.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "exampleBlock",
+      "_key": "m5ex0002",
+      "eyebrow": "Real-World Example",
+      "title": "Undiagnosed Diseases Network (UDN)",
+      "body": "The NIH Undiagnosed Diseases Network was established in 2014 to bring the power of whole-genome and whole-exome sequencing to patients who had exhausted conventional diagnostic workup. Patients are evaluated at one of the UDN's clinical sites, which includes comprehensive sequencing and expert multidisciplinary review. The program has identified novel disease-causing genes and provided diagnoses to patients who had been undiagnosed for decades.",
+      "outcome": "By 2024, the UDN had evaluated over 2,000 participants and identified diagnoses in approximately 35% of cases, including novel gene discoveries that expanded the scientific understanding of human disease.",
+      "source": "NIH Undiagnosed Diseases Network; NEJM, 2021"
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk026",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m5spn026", "text": "Genetic Counseling: The Clinical Skill That Makes Genomics Actionable", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk027",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn027", "text": "A genomic test result is not self-interpreting. The clinical value of a genetic test depends entirely on whether the patient understands what the result means — and does not mean — and can act on that understanding. This is the role of genetic counseling.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk028",
+      "style": "callout",
+      "children": [{"_type": "span", "_key": "m5spn028", "text": "Genetic counselors are healthcare professionals with specialized graduate training in medical genetics and counseling. They help patients understand what genetic tests measure, interpret results in the context of personal and family history, communicate implications for family members, and support decision-making about testing, surveillance, and intervention. Pre-test counseling occurs before testing; post-test counseling interprets results after they arrive.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk029",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn029", "text": "One of the most challenging communications in clinical genetics involves variants of uncertain significance (VUS). A VUS is a genetic change found in a patient's DNA that has not yet been classified as either pathogenic (disease-causing) or benign. With the expanding use of genomic testing, VUS findings are extremely common — and they create real clinical and psychological challenges.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk030",
+      "style": "highlight",
+      "children": [{"_type": "span", "_key": "m5spn030", "text": "A variant of uncertain significance is NOT a diagnosis. Patients and providers sometimes interpret VUS findings as evidence of disease, leading to unnecessary anxiety, surveillance, and even preventive surgery. Communicating clearly that 'uncertain' does not mean 'dangerous' requires counseling skill — not just medical knowledge.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "stepBlock",
+      "_key": "m5st0001",
+      "title": "The Genetic Counseling Process: From Referral to Follow-Up",
+      "steps": [
+        {"_key": "m5sp001a", "number": 1, "title": "Pre-test counseling session", "description": "The genetic counselor reviews the patient's personal and family history, explains what the test measures and its limitations, discusses possible result categories (positive, negative, VUS), and explores what the patient will do with different results."},
+        {"_key": "m5sp001b", "number": 2, "title": "Informed consent and test ordering", "description": "The patient provides informed consent for testing, understanding the implications including potential insurance or employment considerations. The test is ordered — often requiring prior authorization from the insurer."},
+        {"_key": "m5sp001c", "number": 3, "title": "Result interpretation", "description": "Results typically arrive in 2-4 weeks. The laboratory report classifies variants as pathogenic, likely pathogenic, VUS, likely benign, or benign. The genetic counselor reviews the report and prepares to communicate findings."},
+        {"_key": "m5sp001d", "number": 4, "title": "Post-test counseling session", "description": "The counselor explains the result in plain language, addresses the clinical implications, discusses implications for biological relatives, and develops a surveillance or management plan in coordination with the patient's clinical team."},
+        {"_key": "m5sp001e", "number": 5, "title": "Family communication support", "description": "The counselor helps the patient communicate results to at-risk family members, who may then pursue cascade testing. This is often the most emotionally complex part of the process."}
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk031",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m5spn031", "text": "BRCA Testing and Preventive Decisions: When Genomics Meets Surgery", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk032",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn032", "text": "BRCA1 and BRCA2 are tumor suppressor genes. Pathogenic variants in these genes substantially increase lifetime risk of breast and ovarian cancer. Women with BRCA1 pathogenic variants face roughly 55-72% lifetime risk of breast cancer and 44-46% lifetime risk of ovarian cancer — compared with approximately 12% and 1.3% in the general population.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk033",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn033", "text": "These risk estimates are high enough that many BRCA-positive individuals choose risk-reducing surgeries — prophylactic bilateral mastectomy and/or salpingo-oophorectomy (removal of the fallopian tubes and ovaries). These decisions are deeply personal and require extensive counseling about risk reduction, surgical menopause, fertility implications, and reconstruction options.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk034",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn034", "text": "Angelina Jolie's public disclosure of her BRCA1 status and prophylactic mastectomy in 2013 created what researchers called the 'Angelina Jolie effect' — a measurable increase in BRCA testing rates following her op-ed in the New York Times. This is a reminder that celebrity disclosure can function as a form of public health communication, with both beneficial (increased testing) and complex (inappropriate testing outside guidelines) effects.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk035",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m5spn035", "text": "Liquid Biopsy: Reading the Blood to Monitor Cancer", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk036",
+      "style": "callout",
+      "children": [{"_type": "span", "_key": "m5spn036", "text": "A liquid biopsy is a blood test that detects circulating tumor DNA (ctDNA) — fragments of cancer cell DNA that are shed into the bloodstream as tumors grow, respond to treatment, or acquire new mutations. Unlike a traditional tissue biopsy, a liquid biopsy is non-invasive, can be repeated frequently, and can capture heterogeneity across multiple tumor sites simultaneously.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk037",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn037", "text": "Liquid biopsy has multiple clinical applications: early cancer detection (screening asymptomatic individuals), treatment monitoring (is the tumor responding?), minimal residual disease detection (are there still cancer cells after treatment?), and resistance mutation identification (what mutation caused the tumor to stop responding to treatment?).", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "analogyBlock",
+      "_key": "m5an0002",
+      "concept": "Liquid biopsy for treatment monitoring",
+      "analogy": "Think of ctDNA in the bloodstream like exhaust from a car engine. If the engine is running hard, there is a lot of exhaust. If the engine is well-tuned, there is very little. And if the engine stops entirely, the exhaust disappears. You can assess what the engine is doing without opening the hood — just by sampling what comes out.",
+      "bridge": "When cancer cells are active, they shed more ctDNA into the bloodstream. When treatment is working, ctDNA levels fall. When resistance develops and the tumor starts growing again, ctDNA rises — often weeks before the tumor is large enough to appear on imaging."
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk038",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m5spn038", "text": "Newborn Screening: Precision Medicine at Population Scale", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk039",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn039", "text": "Newborn screening (NBS) programs represent one of the oldest and most successful applications of precision medicine — though they predate the term. A few drops of blood from a heel stick, collected within 24-48 hours of birth, are tested for dozens of metabolic, endocrine, and genetic disorders. Early identification allows treatment to begin before symptoms appear, preventing intellectual disability, organ damage, or death.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk040",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn040", "text": "The Recommended Uniform Screening Panel (RUSP) in the United States currently includes 35 core conditions and 26 secondary conditions. States implement the RUSP at their own pace; Vermont screens for all RUSP core conditions plus several additional disorders. Phenylketonuria (PKU), congenital hypothyroidism, and sickle cell disease are among the most well-known conditions detected through NBS.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk041",
+      "style": "highlight",
+      "children": [{"_type": "span", "_key": "m5spn041", "text": "Spinal muscular atrophy (SMA) is now on the RUSP and represents a new frontier in NBS. SMA is caused by mutations in the SMN1 gene and, without treatment, leads to progressive muscle weakness and early death. Gene therapy with onasemnogene abeparvovec (Zolgensma) — when given in the first weeks of life before symptom onset — can prevent disease progression entirely. This is precision medicine at its most dramatic: a single treatment delivering near-normal outcomes for what was once a fatal disease.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "statGrid",
+      "_key": "m5sg0003",
+      "title": "Newborn Screening and Rare Disease Numbers",
+      "stats": [
+        {"_key": "m5st003a", "value": "4M+", "label": "U.S. newborns screened annually", "context": "More than 4 million babies are screened through state newborn screening programs each year, making NBS the most universal public health genomics program in the country. (ACMG, 2024)", "trend": "neutral"},
+        {"_key": "m5st003b", "value": "1 in 300", "label": "Newborns identified with a screened condition", "context": "Approximately 1 in 300 newborns is identified with a condition through newborn screening each year across the U.S. (HRSA Newborn Screening Data, 2023)", "trend": "neutral"},
+        {"_key": "m5st003c", "value": "~$2.1M", "label": "Cost of Zolgensma gene therapy for SMA", "context": "Onasemnogene abeparvovec (Zolgensma) is one of the most expensive drugs in history, highlighting the tension between transformative outcomes and healthcare access equity. (AveXis/Novartis, 2019)", "trend": "neutral"}
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk042",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m5spn042", "text": "Clinical Decision Support Tools for Genomic Prescribing", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk043",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn043", "text": "Even when pharmacogenomic data is available, it has little clinical value if physicians cannot access it at the point of care. Clinical decision support (CDS) tools embedded in electronic health record (EHR) systems are the mechanism through which genomic information becomes actionable in real-time prescribing.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk044",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn044", "text": "The CPIC (Clinical Pharmacogenomics Implementation Consortium) publishes evidence-based guidelines for gene-drug pairs, which EHR vendors and health systems use to build CDS alerts. When a provider orders clopidogrel for a patient whose CYP2C19 status is already on file as a poor metabolizer, the EHR can fire an alert recommending an alternative antiplatelet agent — preventing a potentially catastrophic prescribing error.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk045",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn045", "text": "The challenge is that most patients do not have pharmacogenomic data in their EHR. This is changing as health systems implement pre-emptive genotyping programs — testing patients for a panel of pharmacogenomic variants before they need any specific drug, then storing results in the EHR to inform future prescribing. Vanderbilt University Medical Center's PREDICT program, launched in 2010, was among the first large-scale implementations of this model.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk046",
+      "style": "h2",
+      "children": [{"_type": "span", "_key": "m5spn046", "text": "Integrating Genomics into Primary Care: Vermont's Context", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk047",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn047", "text": "Vermont's primary care landscape presents both opportunities and challenges for genomic medicine integration. The state has a relatively small, relationship-based primary care system where patients often have long-term relationships with their providers — an ideal environment for the longitudinal conversations that genomic medicine requires.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk048",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn048", "text": "The University of Vermont Medical Center (UVMMC) has a genetics and genomics program that provides consultation services and collaborates with Vermont's regional critical access hospitals. Vermont's participation in the NIH All of Us Research Program gives Vermont residents the opportunity to contribute their genomic and health data to a nationally representative biobank — and to receive their own genetic results as part of participation.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "_key": "m5blk049",
+      "style": "normal",
+      "children": [{"_type": "span", "_key": "m5spn049", "text": "However, Vermont's rural geography creates access barriers. Genetic counselors are concentrated at UVMMC in Burlington, and many Vermont residents face significant travel burdens to access in-person genetic services. Telegenetics — genetic counseling delivered via telehealth — has become increasingly important in Vermont, particularly following the expansion of telehealth infrastructure during the COVID-19 pandemic.", "marks": []}],
+      "markDefs": []
+    },
+    {
+      "_type": "warningBlock",
+      "_key": "m5wn0002",
+      "misconception": "Genetic counseling is only needed for patients with a known family history of genetic disease.",
+      "reality": "Genetic counseling is appropriate before any genetic test that could have significant clinical or psychological implications — including BRCA testing in patients without a family history who qualify under USPSTF guidelines, pharmacogenomic testing before starting psychiatric medications, and prenatal testing for all pregnant individuals regardless of family history. Counseling ensures informed decision-making, not just result interpretation."
+    },
+    {
+      "_type": "knowledgeCheck",
+      "_key": "m5kc0001",
+      "question": "A 58-year-old patient receives a coronary stent after an acute MI and is started on clopidogrel. Two weeks later, she suffers a stent thrombosis. A pharmacogenomic test reveals she is a CYP2C19 poor metabolizer. What is the most likely explanation for the stent thrombosis, and what should happen next?",
+      "hint": "Think about what CYP2C19 does to clopidogrel and what 'poor metabolizer' means for a prodrug.",
+      "answer": "Clopidogrel is a prodrug that requires conversion by CYP2C19 into its active antiplatelet form. A CYP2C19 poor metabolizer cannot perform this conversion effectively, meaning the patient was not receiving adequate antiplatelet protection despite being prescribed the drug at standard dose. The stent thrombosis is most likely attributable to inadequate platelet inhibition due to her metabolizer status. The next step should be switching to an antiplatelet agent that does not require CYP2C19 activation — such as prasugrel or ticagrelor — both of which are recommended alternatives in CPIC guidelines for CYP2C19 poor metabolizers after ACS."
+    },
+    {
+      "_type": "knowledgeCheck",
+      "_key": "m5kc0002",
+      "question": "A patient returns from a direct-to-consumer (DTC) genetic test with a report showing a 'variant of uncertain significance' in BRCA2. She is very distressed and asks if she should have a preventive mastectomy. How should a clinician respond?",
+      "hint": "What does 'uncertain significance' mean, and how does VUS status differ from a pathogenic variant finding?",
+      "answer": "A variant of uncertain significance (VUS) is not a diagnosis of increased cancer risk. It means that the laboratory has identified a change in the BRCA2 gene, but there is currently insufficient evidence to determine whether that change is harmful, benign, or irrelevant. A VUS finding should NOT prompt preventive surgery. The appropriate clinical response is: (1) refer to a board-certified genetic counselor who can explain VUS in plain language and review the patient's full family history; (2) confirm that DTC test results for VUS findings should be validated in a CLIA-certified clinical laboratory before any clinical action; (3) reassure the patient that VUS reclassification over time (often toward benign) is common as more data accumulates; and (4) screen for and address the patient's anxiety, which is a real and valid consequence of this type of ambiguous result."
+    },
+    {
+      "_type": "takeawayBlock",
+      "_key": "m5tk0001",
+      "title": "Module 5 Key Takeaways",
+      "points": [
+        "Tumor profiling identifies the specific mutations driving a cancer, enabling targeted therapies that block those mutations with greater precision and often fewer side effects than traditional chemotherapy.",
+        "Immunotherapy biomarkers — PD-L1, MSI-H, and TMB — help predict which patients will respond to immune checkpoint inhibitors, which are now approved in a tumor-agnostic manner for MSI-H cancers.",
+        "Basket trials and platform trials are clinical research innovations designed for precision oncology, testing drugs across multiple cancer types based on shared molecular alterations rather than tissue of origin.",
+        "Pharmacogenomics affects primary care prescribing: CYP2C19 status is critical for clopidogrel effectiveness, CYP2D6 affects metabolism of many antidepressants and opioids, and HLA-B*5701 screening prevents abacavir hypersensitivity.",
+        "Whole-exome sequencing is transforming rare disease diagnosis, compressing the diagnostic odyssey from years to weeks for many patients and achieving diagnostic yields of 25-40%.",
+        "Genetic counselors are essential clinical partners for interpreting genomic results, communicating uncertainty (especially VUS findings), and supporting decision-making for patients facing high-stakes choices like preventive surgery.",
+        "Newborn screening programs are one of the most successful applications of precision medicine, screening millions of infants annually and enabling early treatment that prevents disability and death.",
+        "Liquid biopsy uses circulating tumor DNA from blood samples to monitor cancer treatment response, detect minimal residual disease, and identify resistance mutations non-invasively."
+      ]
+    }
+  ]
+}

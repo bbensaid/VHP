@@ -1,0 +1,92 @@
+{
+  "id": "27d44eb8-6369-40ba-94cb-3a500db23497",
+  "slug": "welcome-htr-framework",
+  "sanity_slug": "welcome-htr-framework",
+  "content_blocks": [
+    {
+      "hint": "Upload a personal welcome message from your executive director or CEO. Recommended: 3–5 minutes, MP3 or WAV.",
+      "type": "audio_slot",
+      "label": "Welcome from HTR leadership"
+    },
+    {
+      "body": "Health transformation is complex. It sits at the intersection of law, technology, clinical practice, economics, and social justice. New employees — regardless of their specialty — are more effective when they understand all five pillars and the Equity Imperative that tests every one of them.\n\nThis course gives you that foundation. You will not become an expert in every pillar, but you will gain the vocabulary, context, and conceptual map to work across disciplines and contribute meaningfully from day one.",
+      "type": "text",
+      "heading": "Why this course exists"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Federal and state legislation, regulatory frameworks, and governance structures that define what HIEs can and must do.",
+          "icon": "ti-shield",
+          "title": "Policy"
+        },
+        {
+          "body": "Standards (HL7, FHIR), infrastructure (integration engines, MPI), and interoperability frameworks that make data exchange possible.",
+          "icon": "ti-cpu",
+          "title": "Technology"
+        },
+        {
+          "body": "Payment models, value-based care incentives, and the financial levers that drive or impede transformation.",
+          "icon": "ti-coin",
+          "title": "Economics"
+        },
+        {
+          "body": "Quality measures, population health management, and evidence-based care practices that define what good health outcomes look like.",
+          "icon": "ti-heart-rate-monitor",
+          "title": "Clinical"
+        },
+        {
+          "body": "Workforce, governance, organizational design, and the day-to-day systems that make a health reform organization function.",
+          "icon": "ti-settings",
+          "title": "Operations"
+        }
+      ],
+      "heading": "The five pillars, in the order transformation has to happen"
+    },
+    {
+      "body": "Equity is the test applied to every pillar, at every stage: is it just? Access disparities, social determinants of health, and the imperative to ensure transformation benefits everyone — not just the well-resourced.",
+      "type": "callout",
+      "heading": "The Equity Imperative: not a sixth pillar",
+      "variant": "info"
+    },
+    {
+      "body": "A decision about FHIR API architecture (Technology) has implications for patient consent (Policy), data completeness across populations (the Equity Imperative), care gap identification (Clinical), and cost of implementation (Economics). Always think across pillars.",
+      "type": "callout",
+      "heading": "The pillars are not independent",
+      "variant": "tip"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "of Americans live in rural areas",
+          "value": "~20%",
+          "source": "AAMC"
+        },
+        {
+          "label": "of physicians practice in rural areas",
+          "value": "11%",
+          "source": "AAMC"
+        },
+        {
+          "label": "US annual healthcare spend (2023)",
+          "value": "$4.5T",
+          "source": "CMS"
+        },
+        {
+          "label": "estimated low-value care spending",
+          "value": "30%",
+          "source": "NEJM"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "caption": "Introduction to Health Information Exchange — ONC overview (~8 min)",
+      "videoId": "x2hzI9rJMpg",
+      "mediaType": "youtube",
+      "durationSeconds": 480
+    }
+  ]
+}

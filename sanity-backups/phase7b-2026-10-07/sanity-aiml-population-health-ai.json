@@ -1,0 +1,650 @@
+{
+  "_createdAt": "2026-05-30T04:29:59Z",
+  "_id": "aiml-population-health-ai",
+  "_rev": "2zkDeD7zc2Ko2DfFHkIWnm",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T04:29:59Z",
+  "body": [
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "From Sick Care to Population Health: Why AI Is Now Essential"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "American healthcare has long been organized around a fundamentally reactive premise: wait for a patient to arrive sick, treat the episode, and discharge. This model delivers heroic acute care but is poorly suited to the chronic-disease landscape that now dominates spending and suffering. Population health management (PHM) flips the logic: it asks organizations to continuously surveil defined groups of people -- plan members, attributed patients, Medicaid beneficiaries -- and intervene before acute episodes crystallize. The Institute for Healthcare Improvement (IHI) codified this orientation in its Triple Aim framework, first described in a landmark 2008 article by Berwick, Nolan, and Whittington: simultaneously improve the patient experience of care, improve the health of populations, and reduce per capita costs. A widely adopted fourth dimension -- improving the experience of clinicians and care teams -- has given rise to the Quadruple Aim, recognizing that a burned-out workforce cannot sustain the Triple Aim's ambitions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The data challenge that underlies population health is staggering. A single large health system or payer may carry claims, clinical notes, lab results, pharmacy fills, ADT feeds, social service referrals, and remote monitoring streams for hundreds of thousands of individuals -- generating tens of billions of data points annually. No human analyst team can continuously stratify that population, surface rising-risk members, reconcile care gaps, and trigger the right outreach channel for each person. Machine learning models trained on longitudinal patient data can do this at scale, identifying signals that would be invisible to traditional reporting: the diabetic patient whose refill cadence just slipped, the recently discharged heart-failure patient who has not yet scheduled a follow-up, the Medicaid child flagged by a food-insecurity screen whose preventive visits are overdue. AI is not simply a faster version of existing workflows -- it enables a qualitatively different kind of population stewardship."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The financial case for proactive population management is unambiguous. According to AHRQ Statistical Brief #560, drawing on the Medical Expenditure Panel Survey, the top 5 percent of spenders accounted for approximately 49.7 percent of all healthcare expenditures in 2022, with an average annual spend of $67,300 per person in that tier. The top 1 percent alone absorbed 21.7 percent of total spending. These concentrations are not random: the highest-cost individuals almost always carry multiple chronic conditions -- hypertension (42.9%), hyperlipidemia (35.6%), and musculoskeletal or back pain (30.6%) are the top three -- layered with functional limitations and social vulnerabilities. AI-powered PHM targets precisely this population, aiming to lower the trajectory of high utilizers while preventing lower-risk members from escalating into that expensive tier."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Top 5% of spenders account for nearly half of all US healthcare expenditures (AHRQ MEPS 2022)",
+          "label": "Top 5% Spending Share",
+          "value": "49.7%"
+        },
+        {
+          "_key": "s2",
+          "context": "The single most expensive percentile absorbs over a fifth of total spending (AHRQ 2022)",
+          "label": "Top 1% Spending Share",
+          "value": "21.7%"
+        },
+        {
+          "_key": "s3",
+          "context": "Average per-person healthcare expenditure for the highest-cost tier in 2022",
+          "label": "Avg Annual Spend -- Top 5%",
+          "value": "$67,300"
+        },
+        {
+          "_key": "s4",
+          "context": "Quadruple Aim: patient experience, population health, per capita cost, clinician well-being",
+          "label": "Simultaneous Aims",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk Stratification: Finding Who Needs Help Before Crisis"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk stratification is the engine of population health management -- it produces a ranked list of individuals ordered by their likelihood of adverse outcomes or high utilization, so that limited care management resources can be allocated where they will have the greatest effect. The fundamental insight is that risk is heterogeneous: within any attributed population, a small fraction of people will drive the vast majority of future costs and hospitalizations, and proactive identification of those individuals before crisis strikes is the central value proposition of the entire field."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The dominant risk-adjustment framework in Medicare is the CMS Hierarchical Condition Category (HCC) model, implemented by the Centers for Medicare and Medicaid Services in 2004. HCC coding maps more than 9,000 ICD-10 diagnosis codes to 79 HCC categories, grouped hierarchically so that more severe manifestations of a condition supersede less severe ones -- a patient coded for diabetic ketoacidosis (HCC 17) receives that higher-severity score rather than the lower diabetic neuropathy score (HCC 18). Demographic factors -- age, sex, dual-eligibility status, institutional status -- combine with condition categories to produce a risk score predicting the relative cost of caring for that beneficiary versus an average Medicare enrollee. Medicare Advantage plans are paid capitated rates adjusted by these scores, creating a powerful financial incentive for accurate and complete HCC documentation. AI tools in this space include natural language processing (NLP) engines that mine clinical notes for undocumented or under-coded diagnoses, closing coding gaps that would otherwise deflate a plan's risk scores."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For Medicaid populations, the most widely used methodology is the Chronic Illness and Disability Payment System (CDPS), developed at the University of California San Diego. As of the most recent published analysis, 33 of the 38 state Medicaid programs that risk-adjust payments to managed care organizations rely on CDPS. The model encompasses 20 major diagnostic categories linked to body systems or chronic disease types, each subdivided by severity and expected cost impact. An enhanced version, CDPS+Rx, incorporates 15 pharmacy-based categories to capture risk in patients whose diagnostic coding is sparse but whose prescription patterns reveal significant burden. Because Medicaid beneficiaries often have fragmented claims histories and higher rates of social complexity, CDPS scores are increasingly augmented with social determinants data to improve predictive accuracy for this population."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "A third framework with extensive international validation is the Adjusted Clinical Groups (ACG) System, developed over three decades at Johns Hopkins Bloomberg School of Public Health. ACG assigns each individual to a single mutually exclusive group reflecting their overall morbidity burden -- not just one condition but the full pattern of illness across an entire year of encounters. ACG produces output variables on the number of chronic conditions, frailty indicators, and concurrent resource utilization, making it well-suited for identifying individuals with complex, long-term needs rather than simply flagging high-cost episodes. Peer-reviewed research has confirmed the ACG System's validity across diverse healthcare systems including Norway, Canada, and Spain, and it is now in use on five continents. Modern AI-augmented PHM platforms layer predictive machine learning models on top of these validated actuarial foundations, adding dynamic features like recent care-utilization velocity, medication adherence signals, and real-time ADT events to produce risk scores that update continuously rather than at annual contract cycles."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2an",
+      "_type": "analogyBlock",
+      "analogy": "Traditional risk stratification is like a weather forecast issued once a year: it tells you whether last year was wet or dry. AI-powered continuous stratification is like a live Doppler radar: it updates every few minutes and alerts you the moment conditions start to change.",
+      "concept": "Static annual HCC coding vs. dynamic AI risk scoring updated in near-real-time"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Traditional (HCC/CDPS Annual)",
+        "points": [
+          "Risk scores updated once per contract year",
+          "Based on prior-year claims only",
+          "Misses patients whose risk escalates mid-year",
+          "No behavioral or social signal integration",
+          "Requires manual coder review of charts"
+        ]
+      },
+      "right": {
+        "label": "AI-Augmented Continuous Stratification",
+        "points": [
+          "Scores refresh daily or weekly from live data feeds",
+          "Integrates claims, EHR, pharmacy, ADT, SDOH",
+          "Surfaces rising-risk members before hospitalization",
+          "NLP mines clinical notes for undocumented diagnoses",
+          "Automated alerts routed to care managers in real time"
+        ]
+      },
+      "title": "Traditional vs. AI-Powered Risk Stratification"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Closing Care Gaps at Scale"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk stratification tells you who is at risk; care gap analysis tells you what preventive or chronic-disease services they are missing. A care gap exists when a patient who meets eligibility criteria for a recommended service -- a colorectal cancer screen, an annual diabetic retinal exam, an ACE inhibitor prescription for heart failure -- has not received it within the measurement period. The Healthcare Effectiveness Data and Information Set (HEDIS), maintained by the National Committee for Quality Assurance (NCQA), provides the most widely adopted library of care-gap measures in the United States. Health plans, ACOs, and integrated delivery networks use HEDIS measure performance as a proxy for population health management quality, and CMS ties Medicare Advantage Star Ratings -- which directly affect plan revenue -- to a subset of HEDIS measures."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The practical problem with care gaps is volume. A mid-sized health plan serving 200,000 members may identify hundreds of thousands of open gaps across dozens of measures simultaneously. Manual outreach -- care coordinators calling from a printed list -- cannot keep pace. Research reported by automated outreach platforms indicates that manual care-gap campaigns typically close only 18 to 25 percent of identified gaps before the annual measurement window closes, while automated multi-channel outreach (SMS, patient portal message, automated voice, secure email, and direct EHR inbox routing) pushes closure rates to the 35 to 45 percent range, with some high-performing implementations reaching 62 to 68 percent. Practices deploying automated workflows have also reported a 15 to 20 percent improvement in closure rates within the first 30 days. The operational math is equally compelling: a care coordinator making outbound calls averages 8 to 12 completed conversations per hour, while an automated system can simultaneously contact thousands of members with a personalized, measure-specific message."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "AI adds three layers of intelligence to care-gap closure. First, prioritization: not all open gaps are equal -- an AI model can rank gaps by clinical urgency, member engagement propensity, and the financial value of closure (particularly relevant for Star Ratings uplift), so care coordinators focus their human capacity on the hardest-to-reach, highest-risk members. Second, channel optimization: machine learning models trained on historical outreach response data learn which members respond to SMS versus phone versus patient-portal nudges, reducing opt-outs and improving connection rates. Third, timing intelligence: models can predict the hour and day that a given member is most likely to engage, scheduling outreach accordingly. Integrated population health platforms can also close the loop by writing care-gap closure events back into the EHR as discrete data elements, enabling real-time dashboards that track performance against HEDIS targets throughout the measurement year rather than only in retrospective audits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex",
+      "_type": "exampleBlock",
+      "content": "A 12-provider rural ACO with 45,000 attributed Medicare Advantage lives used an AI-powered PHM platform to identify 3,200 members overdue for an annual diabetic retinal exam -- a key HEDIS measure (Eye Exam for Patients with Diabetes). The platform ranked members by gap closure propensity, routed high-propensity members to an automated SMS-and-portal campaign, and flagged low-propensity members for personal outreach by care coordinators. Within the 90-day campaign, 1,680 members scheduled and completed exams -- a 52 percent closure rate compared to a prior-year manual baseline of 24 percent. The improvement lifted the ACO's measure from the 55th to the 78th NCQA percentile, contributing to a Star Rating improvement and an estimated $420,000 in quality bonus payments.",
+      "title": "A Regional ACO Closes Diabetic Retinal Exam Gaps"
+    },
+    {
+      "_key": "s3sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Typical HEDIS care-gap closure using traditional phone-based outreach campaigns",
+          "label": "Manual Gap Closure Rate",
+          "value": "18-25%"
+        },
+        {
+          "_key": "s2",
+          "context": "Multi-channel AI-optimized outreach achieves substantially higher closure before measurement period ends",
+          "label": "Automated Closure Range",
+          "value": "35-68%"
+        },
+        {
+          "_key": "s3",
+          "context": "Reduction in staff time spent on recall campaigns when automated outreach is deployed",
+          "label": "Staff Time Saved",
+          "value": "82%"
+        },
+        {
+          "_key": "s4",
+          "context": "Estimated additional quality incentive payments per year for a 10-provider practice using automated outreach",
+          "label": "Added Quality Revenue",
+          "value": "$85K-$142K"
+        }
+      ]
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "SDOH Integration in AI Population Health Models"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical data -- diagnoses, labs, medications, procedures -- captures what has happened to a patient inside the healthcare system. But the social, economic, and environmental conditions in which people live, work, and age -- collectively called Social Determinants of Health (SDOH) -- are estimated to drive 30 to 55 percent of health outcomes. Housing instability, food insecurity, transportation barriers, utility insecurity, and interpersonal safety concerns each independently predict higher rates of emergency department use, avoidable hospitalizations, and poor chronic-disease control. A risk model built only on clinical claims will systematically underestimate risk for socially vulnerable populations who have had less healthcare contact precisely because of those barriers, and will miss the most actionable intervention: connecting the person to community resources before a health crisis erupts."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two foundational standards govern how SDOH data is captured and exchanged in clinical settings. The CMS Accountable Health Communities (AHC) Health-Related Social Needs (HRSN) Screening Tool, launched as part of the AHC Model in May 2017, standardized a 10-question screen across five core domains: housing instability, food insecurity, transportation problems, utility help needs, and interpersonal safety. The AHC Model tested whether universal HRSN screening embedded in Medicare and Medicaid clinical encounters -- followed by navigation support for positive screens -- could improve outcomes and reduce costs. On the interoperability side, the Gravity Project, operating through HL7, has produced the SDOH Clinical Care FHIR Implementation Guide -- currently at version 2.3.0 (STU 2.3) with STU 3.0 planned for ballot in early 2026 -- which defines how to exchange coded SDOH screening results, diagnoses, goals, and referrals using standardized FHIR resources. Washington State named the Gravity SDOH Clinical Care IG as a core interoperability standard in its 2025 FHIR Infrastructure Roadmap, signaling accelerating adoption across payers and states."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "When SDOH variables are incorporated into machine learning risk models, predictive accuracy improves -- particularly for Medicaid and low-income populations. Transportation barriers, for example, are strongly associated with missed follow-up appointments and medication non-adherence, and including them in a model helps distinguish between a patient who is clinically stable and one who is clinically stable but at high social risk of destabilizing. However, SDOH integration also introduces a critical equity hazard. Historically, SDOH data collection has been uneven: patients at well-resourced practices with robust screening programs are more likely to have documented SDOH needs than patients at resource-constrained clinics -- not because the latter have fewer needs but because they are screened less. A model trained on these uneven data may learn spurious signals about geographic or demographic groups, effectively penalizing or rewarding communities based on data availability rather than true risk. This is one mechanism by which algorithmic bias enters population health AI, mirroring the broader lesson from pulse oximetry research: when biased inputs are used to train a model without correction, the model encodes and amplifies existing disparities at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w",
+      "_type": "warningBlock",
+      "message": "Incomplete SDOH screening coverage -- which disproportionately affects under-resourced communities -- can cause AI models to underestimate social risk for the populations that need the most support. Before incorporating SDOH variables, audit your data completeness by race, ethnicity, geography, and insurance type. Impute missing values carefully or exclude the variable until coverage is adequate.",
+      "title": "Equity Risk: SDOH Data Gaps Can Encode Disparities"
+    },
+    {
+      "_key": "s4st",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Before using SDOH variables, calculate the proportion of your attributed population with a documented SDOH screen in the past 12 months, stratified by race, ethnicity, insurance type, and geographic area. Identify coverage gaps.",
+          "title": "Audit screening coverage"
+        },
+        {
+          "_key": "step2",
+          "description": "Map SDOH observations to LOINC and SNOMED codes defined in the Gravity SDOH Clinical Care FHIR IG (v2.3.0) so data is interoperable and consistently structured across source systems.",
+          "title": "Standardize terminology using Gravity IG"
+        },
+        {
+          "_key": "step3",
+          "description": "A missing SDOH record does not mean no need -- it may mean no screen was administered. Build a \"screened and negative\" flag separate from \"no screen on record.\" Avoid treating missingness as a negative finding.",
+          "title": "Distinguish documented need from absence of need"
+        },
+        {
+          "_key": "step4",
+          "description": "Stratify model accuracy metrics (AUC, sensitivity, PPV) by race/ethnicity, insurance type, and SDOH subgroup before deployment. Require parity within acceptable thresholds across all groups before go-live.",
+          "title": "Test model performance by subgroup"
+        },
+        {
+          "_key": "step5",
+          "description": "Track care management referral rates, outreach response rates, and intervention uptake by demographic group on an ongoing basis. Unexplained disparities in referral rates should trigger an operational and algorithmic review.",
+          "title": "Monitor for disparate impact post-deployment"
+        }
+      ],
+      "title": "Incorporating SDOH Into a Risk Model Responsibly"
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Implementation: Data Quality, Vendor Landscape, and Equity Guardrails"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Building a functional AI population health management capability requires solving a data infrastructure problem before it becomes an analytics problem. The typical large health plan or integrated delivery network draws PHM data from five to eight source systems: the core adjudicated claims feed, one or more EHR platforms (often in different formats across affiliated practices), a pharmacy benefits manager (PBM) feed, ADT event streams, laboratory result feeds, SDOH screening records, and increasingly remote patient monitoring telemetry. Each source operates on its own refresh cadence, uses its own identity representation for members and patients, and contains its own data quality artifacts -- duplicate records, coding inconsistencies, missing demographic fields, and provider-attribution errors. A member who appears in a Medicaid claims file under one Member ID may appear in a community health center EHR under an entirely different identifier. Without a reliable Master Patient Index (MPI) to deduplicate and link these identities, risk scores will be computed on incomplete longitudinal histories, care gaps will be miscounted, and outreach will reach the wrong person or generate duplicates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The PHM vendor landscape has consolidated significantly through 2025. Leading platforms -- including Innovaccer, Health Catalyst, Arcadia, Lightbeam Health, and Episource -- each take a broadly similar architectural approach: a cloud-based data integration layer that ingests and normalizes multi-source feeds; a risk analytics engine that applies configurable models (HCC, CDPS, ACG, or proprietary ML); a care gap identification module aligned to HEDIS and CMS measure specifications; and a care management workflow tool that routes work items to coordinators with context-rich member profiles. Differentiation increasingly centers on AI capability depth (predictive model sophistication, NLP for chart mining, generative AI for care-plan drafting), breadth of social determinants integration, and quality of pre-built payer and EHR connectors. Smaller, more specialized vendors focus on specific populations -- Medicaid managed care, maternal health, or behavioral health -- where general-purpose models underperform."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Equity guardrails must be designed into the implementation, not retrofitted after deployment. This means several concrete practices. First, disparate impact testing should be a gate in the model validation pipeline: before any predictive model goes live, validate its performance metrics separately for each race/ethnicity group and require that false-negative rates -- failing to flag high-risk members -- do not differ significantly across groups. Second, model interpretability should be a procurement requirement -- black-box scores that cannot be audited for feature contributions make it impossible to identify when a model is weighting a proxy for race rather than true clinical risk. Third, outreach equity monitoring should be embedded in operational dashboards: if automated outreach is connecting with 70 percent of white members but only 45 percent of Black or Hispanic members, that disparity must trigger an operational response -- translated content, alternative channels, community health worker routing -- not just a data note. Finally, governance structures should include clinician review of model decisions for high-stakes use cases such as exclusion from care management programs, providing a human check on algorithmic recommendations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5hl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hls",
+          "_type": "span",
+          "marks": [],
+          "text": "The most mature PHM implementations treat AI as a system for augmenting human judgment at scale -- not replacing it. Care coordinators who understand why a member was flagged, what data drove the risk score, and what social context shapes the outreach strategy will always outperform coordinators who receive only a ranked list of names. Explainability is not just a regulatory safeguard; it is the mechanism by which AI systems earn and sustain clinical trust."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s5cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Common Pitfalls",
+        "points": [
+          "Deploying risk model before MPI deduplication is complete",
+          "Using race as a direct model input rather than a monitoring variable",
+          "Measuring performance only in aggregate, missing subgroup disparities",
+          "No feedback loop from outreach outcomes back to model retraining",
+          "Treating SDOH missingness as a negative finding"
+        ]
+      },
+      "right": {
+        "label": "Best Practices",
+        "points": [
+          "Require data quality audit and MPI validation before model training",
+          "Remove race from model features; monitor outputs by race post-deployment",
+          "Stratify AUC, sensitivity, and PPV by demographic subgroup at validation",
+          "Build a continuous learning loop: close outcomes feed back into training data",
+          "Flag unscreened members separately; exclude low-coverage SDOH variables"
+        ]
+      },
+      "title": "PHM AI Implementation: Common Pitfalls vs. Best Practices"
+    },
+    {
+      "_key": "tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "The top 5% of healthcare spenders account for nearly 50% of all expenditures (AHRQ 2022), making proactive identification of rising-risk individuals the central value proposition of AI population health management.",
+        "HCC coding (Medicare), CDPS (Medicaid -- 33 of 38 risk-adjusting states), and the ACG System (Johns Hopkins) are the three validated actuarial foundations on which AI risk models are built.",
+        "AI-powered PHM augments traditional scoring with real-time data feeds, NLP chart mining, and behavioral signals, enabling continuous stratification rather than annual snapshots.",
+        "Automated multi-channel care-gap outreach closes 35-68% of HEDIS gaps versus 18-25% for manual campaigns, with an 82% reduction in staff time and substantial quality incentive revenue uplift.",
+        "The Gravity Project FHIR IG (v2.3.0) and the CMS AHC HRSN Screening Tool provide the interoperability and data-capture standards required to incorporate SDOH into risk models in structured, exchangeable form.",
+        "SDOH integration improves predictive accuracy but introduces equity hazards: uneven screening coverage by race and geography can cause models to underestimate risk for the most vulnerable populations.",
+        "Disparate impact testing before deployment and ongoing equity monitoring post-deployment are non-negotiable guardrails -- not optional enhancements.",
+        "Explainability is both a governance requirement and a practical prerequisite for clinician trust: care coordinators who understand why a member was flagged act on AI recommendations more effectively."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "AHRQ Statistical Brief #560 reports that the top 5 percent of spenders accounted for approximately 49.7 percent -- essentially half -- of all healthcare expenditures in the US civilian non-institutionalized population in 2022. This concentration is the foundational economic rationale for AI-powered population health management: if you can identify and intervene with the highest-risk 5 percent before costly acute events occur, the leverage on total spending is enormous.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "About 25 percent"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "About 35 percent"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": true,
+          "text": "About 50 percent"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "About 65 percent"
+        }
+      ],
+      "question": "According to AHRQ Medical Expenditure Panel Survey data for 2022, approximately what share of total US healthcare expenditures was consumed by the top 5% of spenders?"
+    },
+    {
+      "_key": "srch",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srchs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] AHRQ Statistical Brief #560: Concentration of Healthcare Expenditures and Selected Characteristics of People with High Expenses, United States Civilian Noninstitutionalized Population, 2018-2022 -- https://meps.ahrq.gov/data_files/publications/st560/stat560.shtml -- Supports the 49.7% top-5% spending concentration statistic and the $67,300 average annual spend figure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] IHI: The Triple Aim -- Care, Health, and Cost -- https://www.ihi.org/resources/publications/triple-aim-care-health-and-cost -- Source for the Triple Aim framework (Berwick, Nolan, Whittington 2008) and the IHI Quadruple Aim extension."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS HCC Risk Adjustment Model overview -- https://www.agshealth.com/blog/understanding-the-cms-hierarchical-condition-category-hcc-coding-model/ -- Documents the CMS-HCC model structure: 9,000+ ICD-10 codes mapped to 79 HCC categories, implemented 2004, used for Medicare Advantage capitation risk adjustment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] PMC: Updating the Chronic Illness and Disability Payment System -- https://pmc.ncbi.nlm.nih.gov/articles/PMC10871574/ -- Confirms 33 of 38 Medicaid programs risk-adjusting MCO payments use CDPS; describes the 20-category diagnostic structure and CDPS+Rx pharmacy extension."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Johns Hopkins ACG System -- https://www.hopkinsacg.org/document/identifying-complex-patients-using-adjusted-clinical-groups-risk-stratification-tool/ -- Documents the ACG System methodology, 30-year development history, international validation across Norway, Canada, and Spain, and five-continent deployment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] HL7 Gravity Project SDOH Clinical Care FHIR IG v2.3.0 -- https://hl7.org/fhir/us/sdoh-clinicalcare/ -- Current published version of the Gravity FHIR IG; STU 3.0 planned for ballot early 2026. Named a core interoperability standard in Washington State's 2025 FHIR roadmap."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] CMS AHC HRSN Screening Tool -- https://www.cms.gov/priorities/innovation/files/worksheets/ahcm-screeningtool.pdf -- Source for the 10-question, 5-domain AHC screening tool (housing, food, transportation, utilities, interpersonal safety) launched as part of the AHC Model in May 2017."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "[8] US Tech Automations: Care Gap Closure Automation Guide 2026 -- https://ustechautomations.com/resources/blog/healthcare-care-gap-outreach-how-to-2026 -- Source for automated vs. manual HEDIS care-gap closure statistics (18-25% manual vs. 35-68% automated), 82% staff time reduction, and quality incentive revenue estimates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "aiml-population-health-ai"
+  },
+  "title": "AI for Population Health Management: Stratification, Gaps, and Proactive Outreach"
+}

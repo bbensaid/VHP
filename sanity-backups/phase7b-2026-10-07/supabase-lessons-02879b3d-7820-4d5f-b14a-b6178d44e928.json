@@ -1,0 +1,89 @@
+{
+  "id": "02879b3d-7820-4d5f-b14a-b6178d44e928",
+  "slug": "21st-century-cures-act",
+  "sanity_slug": "hie-21st-century-cures",
+  "content_blocks": [
+    {
+      "body": "The 21st Century Cures Act (enacted December 2016, with final ONC/CMS rules in 2020) fundamentally reshaped the health IT landscape. Three provisions are most relevant to HIE staff:\n\n**1. Information blocking prohibition** — It is illegal for health IT developers, health information networks, and healthcare providers to engage in practices that unreasonably interfere with access, exchange, or use of electronic health information (EHI).\n\n**2. Standardized API mandate** — Certified EHRs must provide FHIR R4-based APIs for patient and population services. This is the technical foundation for app-based access to health data.\n\n**3. TEFCA** — The Trusted Exchange Framework and Common Agreement establishes a nationwide framework for health information exchange through Qualified Health Information Networks (QHINs).",
+      "type": "text",
+      "heading": "What the Cures Act changed"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Any practice that unreasonably restricts access, exchange, or use of EHI. Applies to health IT developers, HIE networks, and providers.",
+          "icon": "ti-ban",
+          "title": "Information blocking"
+        },
+        {
+          "body": "Preventing harm, privacy, security, infeasibility, health IT performance, content and manner, fees, and licensing. Know these — they define your compliance space.",
+          "icon": "ti-list-check",
+          "title": "8 exceptions"
+        },
+        {
+          "body": "Certified EHRs must expose standardized FHIR R4 APIs for patient-facing and population-level data access. No information blocking through technical barriers.",
+          "icon": "ti-api",
+          "title": "FHIR R4 APIs"
+        },
+        {
+          "body": "Qualified Health Information Networks operate under a Common Agreement to enable nationwide interoperability. Your HIE may connect through a QHIN.",
+          "icon": "ti-network",
+          "title": "TEFCA / QHINs"
+        },
+        {
+          "body": "Patients have a right to access their EHI electronically at no cost through third-party apps. Blocking this is a violation.",
+          "icon": "ti-user-check",
+          "title": "Patient access rights"
+        },
+        {
+          "body": "Information blocking by health IT developers: up to $1M per violation. Providers: referred to OIG for appropriate disincentives.",
+          "icon": "ti-alert-triangle",
+          "title": "Penalties"
+        }
+      ],
+      "heading": "Key Cures Act concepts"
+    },
+    {
+      "body": "1. Preventing Harm Exception\n2. Privacy Exception\n3. Security Exception\n4. Infeasibility Exception\n5. Health IT Performance Exception\n6. Content and Manner Exception\n7. Fees Exception\n8. Licensing Exception\n\nThese exceptions are narrow and specific. When in doubt, consult your compliance team — the burden of proof is on the actor claiming an exception.",
+      "type": "callout",
+      "heading": "The 8 information blocking exceptions",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        {
+          "left": "Up to $1M per violation",
+          "label": "Health IT developers (EHR vendors)",
+          "right": "Must not build features that restrict data access"
+        },
+        {
+          "left": "OIG referral / disincentives",
+          "label": "Health Information Networks (HIEs)",
+          "right": "Must not create barriers to data sharing"
+        },
+        {
+          "left": "OIG referral / disincentives",
+          "label": "Healthcare providers",
+          "right": "Must not unreasonably withhold patient data"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "Who the information blocking rules apply to",
+      "leftLabel": "Actor",
+      "rightLabel": "Primary obligation"
+    },
+    {
+      "hint": "Recommended: Your CTO or compliance lead walks through specific changes your organization made to comply with the Cures Act — API implementations, policy updates, workflow changes. 5–10 minutes.",
+      "type": "audio_slot",
+      "label": "Cures Act compliance: what changed in our operations"
+    },
+    {
+      "type": "video",
+      "caption": "21st Century Cures Act & information blocking explained — ONC (~12 min)",
+      "videoId": "9RqI7OBH_mk",
+      "mediaType": "youtube",
+      "durationSeconds": 720
+    }
+  ]
+}

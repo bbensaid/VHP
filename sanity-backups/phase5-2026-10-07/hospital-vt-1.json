@@ -1,0 +1,14 @@
+{
+ "_createdAt": "2026-03-10T13:56:33Z",
+ "_id": "hospital-vt-1",
+ "_rev": "GIKqHwCOFsUvADyibzlK0x",
+ "_type": "hospital",
+ "_updatedAt": "2026-03-10T13:56:33Z",
+ "avgLengthOfStay": 4.1,
+ "city": "Newport",
+ "name": "North Country Hospital",
+ "qualityScore": 88,
+ "stateSlug": "vermont",
+ "totalDischarges": 2100,
+ "type": "Rural PPS"
+}

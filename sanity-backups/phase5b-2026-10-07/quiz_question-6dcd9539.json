@@ -1,0 +1,9 @@
+{
+  "id": "6dcd9539-487a-42f5-bb5a-09e0d28688bc",
+  "quiz_id": "3efd56c2-19d2-4119-a6df-0bb7a9fc5d2a",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "What was the outcome of UVMMC's court challenge to GMCB's FY23 enforcement action?",
+  "explanation": "The challenge was decided against UVMMC, and GMCB's core enforcement authority was upheld -- not on a narrow technicality.",
+  "points": 1
+}

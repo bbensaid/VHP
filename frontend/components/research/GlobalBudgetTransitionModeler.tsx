@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import { GMCH, GMCH_LABEL, GMCH_DISCLAIMER, GMCH_OPERATING_MARGIN_PCT } from '@/lib/data/green-mountain-community-hospital'
 
 const ORG_PRESETS = [
   {
@@ -29,6 +30,20 @@ const ORG_PRESETS = [
     selfPayPct: 6,
     operatingMarginPct: -3.2,
     fteCount: 180,
+  },
+  {
+    // Book Appendix H's fictional worked example (Stage 3 opens this tool).
+    id: 'gmch-example',
+    label: `${GMCH_LABEL} (fictional)`,
+    beds: GMCH.beds,
+    annualRevenueM: Math.round(GMCH.totalRevenue / 100_000) / 10,
+    medicaidPct: GMCH.medicaidPct,
+    medicarePct: GMCH.medicarePct,
+    commercialPct: GMCH.commercialPct,
+    selfPayPct: GMCH.selfPayPct,
+    operatingMarginPct: Math.round(GMCH_OPERATING_MARGIN_PCT * 10) / 10,
+    fteCount: GMCH.fteCount,
+    note: `${GMCH_DISCLAIMER} Payer mix is Vermont's statewide mix (GMCB); no per-CAH mix is published.`,
   },
   {
     id: 'community',

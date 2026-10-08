@@ -302,8 +302,8 @@
       "eyebrow": "Real-World Example",
       "title": "Vanderbilt University Medical Center — PREDICT Program",
       "body": "Vanderbilt's Pharmacogenomic Resource for Enhanced Decisions in Care and Treatment (PREDICT) program pre-emptively genotyped more than 14,000 patients for CYP variants relevant to commonly prescribed drugs. Genomic results were embedded directly into the EHR, generating clinical decision support alerts when a provider attempted to prescribe a drug whose metabolism would be affected by that patient's variant.",
-      "outcome": "Among patients with actionable CYP2C19 variants, the program increased prescribing of alternative antiplatelet agents from 4.5% to 72.9%, demonstrating that pre-emptive genotyping with EHR integration can successfully redirect prescribing before harm occurs.",
-      "source": "Pulley et al., Clinical Pharmacology & Therapeutics, 2012; Vanderbilt PREDICT Program reports."
+      "outcome": "Among 2,676 genotyped patients, 514 (19.2%) carried a CYP2C19 variant affecting clopidogrel; within 12 months, 57.6% of poor metabolizers and 33.2% of intermediate metabolizers had been switched to an alternative antiplatelet drug, and genotype was the strongest predictor of switching — showing that pre-emptive genotyping with EHR integration can redirect prescribing before harm occurs.",
+      "source": "Pulley et al., Clinical Pharmacology & Therapeutics, 2012; Peterson et al., Clinical Pharmacology & Therapeutics, 2016."
     },
     {
       "_type": "block",
@@ -406,7 +406,7 @@
       "title": "OneCare Vermont and Population Health Analytics",
       "body": "OneCare Vermont, the state's accountable care organization, manages care for approximately 190,000 Vermonters under the all-payer model. OneCare's population health analytics platform tracks utilization patterns and outcome metrics across its attributed population. As pharmacogenomic testing data becomes linkable to claims and EHR data, OneCare is positioned to evaluate precision medicine interventions at the population level — assessing whether specific genomic screening programs reduce hospitalizations or adverse drug events across its patient panel.",
       "outcome": "Vermont's integrated data infrastructure — including the Vermont Health Information Exchange — makes genomic-clinical data linkage more feasible here than in states lacking comparable health IT coordination.",
-      "source": "OneCare Vermont 2025 Annual Report; Vermont Health Information Exchange overview."
+      "source": "OneCare Vermont wind-down announcement (November 2024), reported by VTDigger; Vermont Health Information Exchange overview."
     },
     {
       "_type": "statGrid",
@@ -416,8 +416,8 @@
         {
           "_key": "ae7sg3s1",
           "value": "$528B",
-          "label": "Estimated annual US cost of ineffective drug prescribing",
-          "context": "A significant portion of this cost is attributable to drugs prescribed to patients who, due to genetic variation, cannot respond to or safely metabolize them. Source: Personalized Medicine Coalition, 2023.",
+          "label": "Estimated annual US cost of non-optimized medication therapy (2016)",
+          "context": "Illness and death from non-optimized medication therapy cost an estimated $528.4 billion in 2016 — about 16% of US health spending. Genetic variation in drug response is one contributor pharmacogenomics can address. Source: Watanabe, McInnis & Hirsch, Annals of Pharmacotherapy, 2018.",
           "trend": "down"
         },
         {
@@ -429,9 +429,9 @@
         },
         {
           "_key": "ae7sg3s3",
-          "value": "2.3M",
-          "label": "Genomic tests ordered annually in the US (estimated)",
-          "context": "Genomic test utilization has grown at roughly 15% annually since 2018, driven by oncology, hereditary disease screening, and pharmacogenomics. Source: Personalized Medicine Coalition Annual Report 2024.",
+          "value": "~75,000",
+          "label": "Genetic tests on the US market",
+          "context": "Roughly 75,000 genetic tests were on the US market, with about ten new tests entering every day. Source: Phillips et al., Health Affairs, 2018.",
           "trend": "up"
         }
       ]

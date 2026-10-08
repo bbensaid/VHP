@@ -41,7 +41,7 @@ export const OPS = [
        'A 2019 FMEA of the Radiation Planning Assistant, an automated contouring and treatment-planning tool, identified 290 failure modes, 126 of them unique to the automated workflow; the ten highest-risk failure modes were driven by automation bias, operator error, and software error — none of which would have been visible without prospective analysis.']] },
   { id: 'aiml-change-management', key: 's5p2', pairs: [
       ['The AHRQ 2018 Patient Safety Survey found that 47 percent of respondents felt that unsafe event reports were held against them,',
-       'In AHRQ\'s 2018 Hospital Survey on Patient Safety Culture database, covering more than half a million staff in 1,128 hospitals, "nonpunitive response to error" was the lowest-scoring dimension — only 47 percent responded positively, meaning roughly half of staff feel their mistakes and event reports are held against them —']] },
+       'In AHRQ\'s 2018 Hospital Survey on Patient Safety Culture database, covering 630 hospitals, "nonpunitive response to error" was the lowest-scoring dimension — only 47 percent responded positively, meaning roughly half of staff feel their mistakes and event reports are held against them —']] },
   { id: 'aiml-change-management', key: 's5sg', stats: {
       s1: { context: 'AHRQ Hospital Survey on Patient Safety Culture, 2018 database (lowest-scoring dimension)', label: 'Staff responding positively on "nonpunitive response to error"', value: '47%' },
       s3: { context: 'Lee et al., Informatics, 2020 — 22 of 32 EHR-embedded predictive models that reported clinical outcomes', label: 'of EHR-embedded predictive models showed improved outcomes', value: '69%' } } },
@@ -68,8 +68,8 @@ export const OPS = [
 
   // ---------------- interop
   { id: 'interop-hie-models', key: 's5p3', pairs: [
-      ['and 78 percent of countries with electronic health data exchange regulations now mandate or advise FHIR.',
-       'and 78 percent reported regulations for electronic health data exchange, with 73 percent saying FHIR is mandated or formally advised.']] },
+      ['A 2025 global FHIR adoption survey found that 71 percent of respondents reported FHIR actively used in their country, up from 66 percent in 2024, and 78 percent of countries with electronic health data exchange regulations now mandate or advise FHIR.',
+       'The 2025 State of FHIR survey by HL7 International and Firely, with respondents from 57 countries, found that 71 percent reported FHIR already in use for at least a few use cases in their country, and that FHIR is mandated or recommended in 73 percent of countries with health data regulation.']] },
   { id: 'interop-vermont-vitl', key: 's2_p5', pairs: [["Under Beth Anderson's leadership as CEO (2020-2025)", "Under Beth Anderson's leadership as CEO (2019-2025)"]] },
   { id: 'interop-vermont-vitl', key: 's5_p6', pairs: [
       ["The 2025 VITL Annual Report (submitted to the Vermont Legislature in January 2026) noted that the VITL team spent the end of 2025 mapping a new strategic future — exploring new technologies and interoperability approaches to meet the health system's evolving needs in 2026 and beyond. With a new CEO in place following Beth Anderson's departure in July 2025,",
@@ -77,14 +77,27 @@ export const OPS = [
   { id: 'interop-ehr-burden', key: 's1p2', pairs: [
       ['A 2024 study published in the Annals of Family Medicine found that for every 8 hours of scheduled patient visits, primary care physicians logged 5.3 additional hours in the EHR — 2.1 of those hours devoted exclusively to clinical documentation.',
        'A 2024 study of 141 academic primary care physicians, published in the Annals of Family Medicine, found that their EHR time per 8 hours of scheduled appointments kept rising after the pandemic — up 28.4 minutes (7.8%) between 2019–20 and 2022–23, driven by order entry (+58.9%) and the inbox (+24.4%).']] },
+  // AMA names its surveys by fielding year: the 2024 survey (fielded Dec 2024, 1,000 physicians) = 39 PAs/week, 13 hrs,
+  // 89% burnout, 29% serious adverse event; the 2023 survey (fielded Dec 2023) = 94% delays, 78% abandonment, 24% / 19% / 13% / 7%.
   { id: 'interop-ehr-burden', key: 'qz1', pairs: [
       ['The 2024 AMA survey of 1,000 practicing physicians found that approximately 24 percent — nearly one in four — reported',
-       'The 2024 AMA survey of 1,000 practicing physicians found that 29 percent — more than one in four — reported'],
+       'The 2024 AMA survey of 1,000 practicing physicians (fielded December 2024) found that 29 percent — more than one in four — reported'],
       ['19% cited delays causing hospitalization, 13% identified life-threatening events, and 7% reported disability or death as downstream consequences of authorization delays.',
-       '8% reported that prior authorization led to a patient\'s disability, permanent bodily damage, or death.'],
+       'In the AMA\'s previous survey, fielded a year earlier, the share was 24 percent — the problem is growing, not shrinking.'],
       ['About 24% — nearly one in four physicians have seen serious patient harm from prior auth delays', 'About 29% — more than one in four physicians have seen serious patient harm from prior auth delays']] },
-  { id: 'interop-ehr-burden', key: 'tkwy', pairs: [['and 24% report it has led to serious patient harm.', 'and 29% report it has led to serious patient harm.']] },
-  { id: 'interop-ehr-burden', key: 's3sg', pairs: [['"value":"24%"', null]], stats: { __byLabel: { 'Physicians: prior auth caused serious harm': { value: '29%' } } } },
+  { id: 'interop-ehr-burden', key: 'tkwy', pairs: [['94% of physicians say it causes burnout, and 24% report it has led to serious patient harm.', '89% of physicians say it contributes to burnout, and 29% report it has led to serious patient harm.']] },
+  { id: 'interop-ehr-burden', key: 's3sg', stats: { __byLabel: {
+      'Physicians: prior auth causes burnout': { context: 'AMA 2024 prior authorization physician survey (fielded December 2024): somewhat or significantly contributes to burnout', label: 'Physicians: prior auth contributes to burnout', value: '89%' },
+      'Physicians: prior auth caused serious harm': { context: 'Serious adverse event such as hospitalization or permanent bodily damage (AMA 2024 survey, fielded December 2024)', value: '29%' } } } },
+  { id: 'interop-ehr-burden', key: 's3p2', pairs: [
+      ['94 percent of physicians in the 2024 AMA survey reported that prior authorization contributes to physician burnout.',
+       '89 percent of physicians in the AMA\'s 2024 survey (fielded December 2024) reported that prior authorization somewhat or significantly contributes to physician burnout.']] },
+  { id: 'interop-ehr-burden', key: 's3p3', pairs: [
+      ['According to the 2024 AMA survey, 93 percent of physicians reported that prior authorization causes care delays, with more than half saying delays occur "always" or "often."',
+       'According to the AMA\'s 2023 survey (fielded December 2023), 94 percent of physicians reported that prior authorization delays patients\' access to care.'],
+      ['as downstream consequences of authorization delays.', 'as downstream consequences of authorization delays. In the AMA\'s 2024 survey, the share reporting a serious adverse event rose to 29 percent.']] },
+  { id: 'interop-ehr-burden', key: 'src2', pairs: [
+      ['94% burnout link, and 24% serious adverse events.', '89% burnout link, and 29% serious adverse events (2024 survey, fielded December 2024).']] },
   { id: 'interop-why-it-matters', key: 's1sg', stats: { __byLabel: { 'Redundant Testing Waste Per Year': {
       context: 'Among 85 patients transferred between two hospitals with incompatible EHRs, 32% had a test repeated within 12 hours and 20% at least one duplicate that was not clinically indicated (Stewart et al., JAMIA, 2010)',
       label: 'Transferred Patients With Duplicate Tests Within 12 Hours', value: '32%' } } } },
@@ -98,8 +111,8 @@ export const OPS = [
   { id: 'interop-why-it-matters', key: 's8tk', pairs: [
       [', with redundant testing alone costing up to $5 billion per year in the United States.', ', and duplicate testing rises when records cannot follow the patient across incompatible EHRs.']] },
   { id: 'interop-why-it-matters', key: 's8qz', pairs: [
-      ['while $5 billion estimates annual duplicate testing waste and $42 billion is the WHO\'s estimate of global annual medication error costs.',
-       '$42 billion is the WHO\'s estimate of global annual medication error costs, and $5 billion is not a CAQH figure.']] },
+      [', while $5 billion estimates annual duplicate testing waste and $42 billion is the WHO\'s estimate of global annual medication error costs.',
+       '; $42 billion is the WHO\'s estimate of global annual medication error costs, and $5 billion does not come from the CAQH Index.']] },
   { id: 'interop-why-it-matters', key: 's9s3', pairs: [
       ['Vest JR, Kern LM, Silver MD, Kaushal R. "The Potential For Increased Use Of Health Information Exchange To Reduce Costs And Improve Quality." Health Affairs.',
        'Chen M, Guo S, Tan X. "Does Health Information Exchange Improve Patient Outcomes? Empirical Evidence From Florida Hospitals." Health Affairs, 2019;38(2):197-204.']] },
@@ -109,7 +122,9 @@ export const OPS = [
   { id: 'interop-davinci-gravity', key: 's3example', pairs: [['At HIMSS 2025, MultiCare', 'At HIMSS23, MultiCare']] },
   { id: 'hie-21st-century-cures', key: 's5ex', pairs: [
       ['Epic Systems — the largest EHR vendor in the United States, used by roughly 35% of U.S. hospitals — built its "App Orchard" ecosystem directly in response to the Cures Act interoperability mandates. App Orchard is a marketplace where third-party developers publish SMART on FHIR applications that connect to Epic\'s FHIR R4 API.',
-       'Epic Systems — the largest EHR vendor in the United States, used by about 42% of U.S. acute care hospitals at the end of 2024 (KLAS) — had launched its App Orchard developer marketplace around 2017, before the Cures Act rules took effect; App Orchard was renamed App Market in 2021 and shut in December 2022, replaced by Connection Hub, Vendor Services, and later Showroom. What the Cures Act changed was the floor: ONC\'s 2020 rule required certified EHRs to expose a standardized FHIR R4 API that third-party SMART on FHIR applications can connect to.']] },
+       'Epic Systems — the largest EHR vendor in the United States, used by about 42% of U.S. acute care hospitals at the end of 2024 (KLAS) — had launched its App Orchard developer marketplace in 2015, before the Cures Act was passed, and replaced it with Connection Hub and the Epic Showroom in 2022–2023. What the Cures Act changed was the floor: ONC\'s 2020 rule required certified EHRs to expose a standardized FHIR R4 API that third-party SMART on FHIR applications can connect to.'],
+      ['Patients at Epic-using hospitals can authorize any App Orchard application — or any SMART on FHIR app they choose —', 'Patients at Epic-using hospitals can authorize any SMART on FHIR app they choose'],
+      ["Epic's App Orchard and SMART on FHIR: A Cures Act Response", 'Epic and SMART on FHIR: What the Cures Act Changed']] },
 
   // ---------------- readmissions, quality, payment
   { id: 'aiml-readmission-prediction', key: 's1p3', pairs: [
@@ -138,7 +153,7 @@ export const OPS = [
       ['found that only six produced statistically significant savings — and none exceeded about $220 million in annual savings. Factoring in CMMI’s operating budget, its net budgetary impact has been only marginally negative.',
        'found that only six of the 49 models it examined produced statistically significant savings, and that over 2011–2020 CMMI increased federal direct spending by about $5.4 billion — roughly 0.1 percent of net Medicare spending — once its operating costs were counted.']] },
   { id: 'chargemaster-gross-net-revenue', key: 's4ex1', pairs: [
-      ['— yet CMS had fined only 18 hospitals nationwide.', '— yet by February 2024 CMS had issued only 14 civil monetary penalties, totaling about $4 million.']] },
+      ['— yet CMS had fined only 18 hospitals nationwide.', '— yet by September 2024 CMS had issued only 14 civil monetary penalties nationwide, totaling about $4 million.']] },
   { id: 'aiml-population-health-ai', key: 's3ex', pairs: [
       ['A 12-provider rural ACO', 'Consider a hypothetical illustration: a 12-provider rural ACO'],
       ['A Regional ACO Closes Diabetic Retinal Exam Gaps', 'Illustrative Scenario: A Regional ACO Closes Diabetic Retinal Exam Gaps']] },
@@ -161,7 +176,7 @@ export const OPS = [
                   label: 'Genetic tests on the US market', value: '~75,000' } } },
   { id: 'academyModule-precision-medicine-m1', key: 'ae6example2', pairs: [
       ['managed care for approximately 190,000 Vermonters until both the model and OneCare wound down at the end of 2025.', 'coordinated care for Vermonters attributed through Medicare, Medicaid, and commercial payers until both the model and OneCare wound down at the end of 2025.'],
-      ['OneCare Vermont 2025 Annual Report; Vermont Health Information Exchange overview.', 'OneCare Vermont wind-down announcement (November 7, 2024), reported by VTDigger; Vermont Health Information Exchange overview.']] },
+      ['OneCare Vermont 2025 Annual Report; Vermont Health Information Exchange overview.', 'OneCare Vermont wind-down announcement (November 2024), reported by VTDigger; Vermont Health Information Exchange overview.']] },
   { id: 'academyModule-precision-medicine-m1', key: 'ad4example1', pairs: [
       ['Among patients with actionable CYP2C19 variants, the program increased prescribing of alternative antiplatelet agents from 4.5% to 72.9%, demonstrating that pre-emptive genotyping with EHR integration can successfully redirect prescribing before harm occurs.',
        'Among 2,676 genotyped patients, 514 (19.2%) carried a CYP2C19 variant affecting clopidogrel; within 12 months, 57.6% of poor metabolizers and 33.2% of intermediate metabolizers had been switched to an alternative antiplatelet drug, and genotype was the strongest predictor of switching — showing that pre-emptive genotyping with EHR integration can redirect prescribing before harm occurs.'],

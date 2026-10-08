@@ -1,0 +1,56 @@
+{
+  "id": "c7a51d9c-b635-49a0-93ad-782e40b02a3e",
+  "slug": "health-equity-definitions",
+  "sanity_slug": "health-equity-definitions",
+  "content_blocks": [
+    {
+      "body": "Health equity means that everyone has a fair and just opportunity to be as healthy as possible. It requires removing obstacles to health — poverty, discrimination, inadequate housing, unsafe neighborhoods, poor education — that systematically disadvantage certain groups.\n\nHealth equity is not the same as health equality. Equality means giving everyone the same thing. Equity means giving people what they need, which differs based on their circumstances. A useful illustration: three people of different heights trying to watch a game over a fence. Equality gives each person one box. Equity gives the shortest person two boxes, the tallest none — so everyone can see.\n\nHealth equity is also not the same as diversity, inclusion, or belonging — though these are related. Equity is specifically about outcomes and the conditions that produce them.",
+      "type": "text",
+      "heading": "What health equity means — and what it doesn't"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Life expectancy gap between Black and white Americans (2023)",
+          "value": "3.4 years",
+          "source": "CDC"
+        },
+        {
+          "label": "Higher maternal mortality rate for Black women vs. white women",
+          "value": "2-3x",
+          "source": "CDC"
+        },
+        {
+          "label": "Higher infant mortality for babies born to Black mothers vs. white mothers in some states",
+          "value": "5x",
+          "source": "CDC"
+        },
+        {
+          "label": "Life expectancy gap between richest and poorest US counties",
+          "value": "20 years",
+          "source": "JAMA"
+        }
+      ]
+    },
+    {
+      "body": "Not all disparities are inequities. A disparity is any measurable difference between groups. An inequity is a disparity that is unjust and avoidable — the result of systemic disadvantage rather than biology or free choice. Framing matters: calling disparities 'inequities' assigns moral weight and implies action. Research increasingly shows that most racial health disparities are not explained by biology but by social and structural factors.",
+      "type": "callout",
+      "heading": "Disparity vs. inequity: a critical distinction",
+      "variant": "info"
+    },
+    {
+      "type": "video",
+      "caption": "What is health equity? — RWJF foundational explainer (~5 min)",
+      "videoId": "SExDNF83fvQ",
+      "mediaType": "youtube",
+      "durationSeconds": 300
+    },
+    {
+      "body": "The British Whitehall Studies (1960s–1980s) followed civil servants across salary grades. Even controlling for lifestyle factors, higher-grade civil servants had dramatically better health outcomes than lower-grade ones — and this gradient held at every rung, not just at the bottom. Health disadvantage is not only about poverty; it tracks social status, power, and control throughout the socioeconomic ladder.",
+      "type": "callout",
+      "heading": "The Whitehall Study: status, not just poverty",
+      "variant": "tip"
+    }
+  ]
+}

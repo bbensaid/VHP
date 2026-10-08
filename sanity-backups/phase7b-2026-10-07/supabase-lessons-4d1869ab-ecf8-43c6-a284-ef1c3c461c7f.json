@@ -1,0 +1,56 @@
+{
+  "id": "4d1869ab-ecf8-43c6-a284-ef1c3c461c7f",
+  "slug": "bundled-payment-mechanics",
+  "sanity_slug": "bundled-payment-mechanics",
+  "content_blocks": [
+    {
+      "body": "A bundled payment sets a single price for all care related to a defined episode — for example, a hip replacement plus 90 days of follow-up care. If the hospital and its partners spend less than the bundle price while meeting quality thresholds, they keep the difference. If they overspend, they owe the difference back.\n\nBundled payments differ from ACOs in scope: ACOs take accountability for all care for a population over a year. Bundles take accountability for one specific episode — a surgery, a hospitalization for heart failure, a chemotherapy course — plus a defined post-acute window.",
+      "type": "text",
+      "heading": "Paying for the whole episode, not each piece"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "The triggering hospitalization or procedure (e.g., total knee arthroplasty) that begins the episode.",
+          "icon": "ti-calendar",
+          "title": "Anchor event"
+        },
+        {
+          "body": "The time period included in the bundle — typically 30, 60, or 90 days post-anchor. All related care during this window falls within the bundle.",
+          "icon": "ti-clock",
+          "title": "Episode window"
+        },
+        {
+          "body": "The pre-determined spending target for the episode, based on historical spending adjusted for clinical and geographic factors.",
+          "icon": "ti-cash",
+          "title": "Target price"
+        },
+        {
+          "body": "At the end of the performance period, CMS compares actual spending to target. The participant repays overspending or receives a share of savings.",
+          "icon": "ti-scale",
+          "title": "Reconciliation"
+        }
+      ],
+      "heading": "Key bundled payment terms"
+    },
+    {
+      "body": "In most bundled payment conditions, post-acute care (skilled nursing facilities, home health, inpatient rehab) accounts for 40–60% of episode costs. The largest savings opportunity is not in the surgery itself but in reducing unnecessarily long SNF stays, shifting patients to lower-cost settings, and preventing readmissions. High-performing bundle participants carefully manage where patients go after discharge.",
+      "type": "callout",
+      "heading": "Post-acute care: where the money is",
+      "variant": "tip"
+    },
+    {
+      "body": "Bundled Payments for Care Improvement Advanced (BPCI Advanced) is CMS's current voluntary bundled payment model. Participants — hospitals or physician group practices — take two-sided risk on 32 clinical episode types, including major joint replacement, hip fracture, COPD, and acute myocardial infarction.\n\nSuccessful participants have typically invested in: dedicated care coordinators who follow patients from hospital to post-acute, preferred SNF networks with data-sharing agreements, and real-time tracking of episode spending.",
+      "type": "text",
+      "heading": "BPCI Advanced: the current Medicare bundle program"
+    },
+    {
+      "type": "video",
+      "caption": "Bundled payments explained — CMS Innovation Center overview (~6 min)",
+      "videoId": "LGHlUA0p0kI",
+      "mediaType": "youtube",
+      "durationSeconds": 360
+    }
+  ]
+}

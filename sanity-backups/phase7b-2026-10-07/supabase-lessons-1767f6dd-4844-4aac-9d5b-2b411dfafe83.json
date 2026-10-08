@@ -1,0 +1,78 @@
+{
+  "id": "1767f6dd-4844-4aac-9d5b-2b411dfafe83",
+  "slug": "clinical-quality-measures",
+  "sanity_slug": "hie-clinical-quality-measures",
+  "content_blocks": [
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "What resources, systems, and organizational features are in place? EHR adoption, board certification rates, care coordination staffing, HIE participation.",
+          "icon": "ti-building",
+          "title": "Structure"
+        },
+        {
+          "body": "Was the right thing done? Flu vaccine administered, A1c tested, colorectal screening completed, diabetic eye exam performed. Most HEDIS measures are process measures.",
+          "icon": "ti-list-check",
+          "title": "Process"
+        },
+        {
+          "body": "What happened to the patient? 30-day readmission rates, mortality, blood pressure control, HbA1c <7%, emergency department utilization.",
+          "icon": "ti-heart",
+          "title": "Outcome"
+        },
+        {
+          "body": "CAHPS surveys measure communication quality, care coordination, access to care, and overall care experience from the patient's perspective.",
+          "icon": "ti-message-circle",
+          "title": "Patient experience"
+        }
+      ],
+      "heading": "The four measure domains"
+    },
+    {
+      "rows": [
+        {
+          "left": "Health Effectiveness Data and Information Set",
+          "label": "HEDIS (NCQA)",
+          "right": "Health plan quality reporting — 90+ measures across preventive care, chronic disease, behavioral health"
+        },
+        {
+          "left": "MIPS, APM incentives, Hospital Compare",
+          "label": "CMS Quality Programs",
+          "right": "Medicare and Medicaid provider payment adjustments based on quality performance"
+        },
+        {
+          "left": "Patient-Centered Medical Home recognition",
+          "label": "PCMH (NCQA)",
+          "right": "Primary care quality designation used in Blueprint for Health"
+        },
+        {
+          "left": "Vermont-specific measure set",
+          "label": "Vermont Blueprint",
+          "right": "Multi-payer quality targets aligned with All-Payer Model goals"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "Major quality measurement frameworks",
+      "leftLabel": "Framework",
+      "rightLabel": "Primary use"
+    },
+    {
+      "body": "Electronic Clinical Quality Measures (eCQMs) pull directly from structured EHR data rather than claims. HIE data dramatically amplifies eCQM accuracy:\n\n**Without HIE**: A primary care provider only sees clinical data from their own EHR. A patient who had a mammogram at a different facility, filled a prescription at an independent pharmacy, or was hospitalized at a regional hospital appears to have care gaps that don't actually exist.\n\n**With HIE**: The provider's eCQM calculation includes data from all connected facilities. Fewer false care gaps, more accurate population health reports, better-targeted outreach.\n\nThis 'longitudinal view' is one of the highest-value propositions of HIE — and why HIE participation rates directly affect quality measurement accuracy.",
+      "type": "text",
+      "heading": "eCQMs: where HIE data changes everything"
+    },
+    {
+      "hint": "Recommended: Your clinical quality or analytics team describes which measures your organization tracks, how HIE data improves them, and what the biggest gaps are. 8–12 minutes.",
+      "type": "audio_slot",
+      "label": "Our quality measure portfolio and HIE data strategy"
+    },
+    {
+      "type": "video",
+      "caption": "Introduction to clinical quality measures and eCQMs (~11 min)",
+      "videoId": "8q1V9RB-B5I",
+      "mediaType": "youtube",
+      "durationSeconds": 660
+    }
+  ]
+}

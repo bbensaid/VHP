@@ -1,0 +1,31 @@
+{
+ "_createdAt": "2026-03-10T13:55:31Z",
+ "_id": "perfIndex-vermont",
+ "_rev": "ZDU5b4qioPbFp0EQfvWpIY",
+ "_type": "statePerformanceIndex",
+ "_updatedAt": "2026-03-10T13:55:31Z",
+ "economicsMetrics": {
+  "insuranceCoverage": 95,
+  "spendingPerCapita": 75,
+  "workforceGaps": 80
+ },
+ "narrativeSummary": "Vermont leads the nation in its aggressive adoption of All-Payer and Value-Based Care models, though rural broadband access remains a key challenge for telehealth expansion.",
+ "narrativeTitle": "Pioneering State-Wide Value Models",
+ "performanceScore": 82,
+ "policyMetrics": {
+  "scopeOfPractice": 78,
+  "telehealth": 85,
+  "vbpAdoption": 90
+ },
+ "stateId": {
+  "_type": "slug",
+  "current": "vermont"
+ },
+ "stateName": "Vermont",
+ "status": "Leading",
+ "technologyMetrics": {
+  "broadbandAccess": 70,
+  "ehrAdoption": 92,
+  "hieAdoption": 88
+ }
+}

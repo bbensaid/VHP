@@ -1,0 +1,759 @@
+{
+  "_createdAt": "2026-05-28T18:41:10Z",
+  "_id": "aiml-change-management",
+  "_rev": "rL4Cn5Sfo5Z8rzPmDvjijw",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T04:26:38Z",
+  "body": [
+    {
+      "_key": "s1h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why AI Implementations Fail: The Human Factor"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Healthcare artificial intelligence promises transformational impact: earlier sepsis detection, more accurate radiology reads, reduced administrative burden, and smarter resource allocation. Yet the gap between that promise and clinical reality is enormous. A widely cited analysis drawing on data from RAND Corporation and McKinsey found that nearly 79 percent of healthcare AI initiatives fail to deliver their intended value. More starkly, research from MIT's NANDA initiative concluded that 95 percent of enterprise AI pilots fail to deliver measurable return on investment, even as organizations collectively pour between 30 and 40 billion dollars into generative AI annually. These are not fringe failures — they represent the dominant outcome for AI in clinical settings today."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The instinct is to blame the technology. Perhaps the algorithm was undertrained, or the data was noisy, or the regulatory pathway was unclear. But the evidence tells a different story. Gartner's analysis of AI model performance found that 85 percent of failures trace back to poor data quality and operational misalignment rather than flawed algorithms. More tellingly, over 63 percent of AI projects fail specifically due to staff resistance and inadequate change management. The technology often works exactly as designed — it just lands in a workflow that was never prepared to receive it. Clinicians and administrators who were never consulted, trained, or engaged simply route around it, reverting to the manual processes they trust."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This failure pattern is not unique to AI. It echoes decades of electronic health record implementations, clinical decision support rollouts, and quality improvement initiatives that promised transformation and delivered frustration. The lesson, learned repeatedly, is that deploying technology into a clinical environment is fundamentally a human endeavor. The algorithm is the easy part. The hard part — and the part that determines whether any AI investment pays off — is preparing people, processes, and organizational culture to integrate a new tool into the messy, high-stakes, time-pressured reality of patient care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "RAND/McKinsey analysis of healthcare AI deployments",
+          "label": "AI initiatives fail to deliver intended value",
+          "value": "79%"
+        },
+        {
+          "_key": "s2",
+          "context": "MIT NANDA initiative research",
+          "label": "Enterprise AI pilots yield no measurable ROI",
+          "value": "95%"
+        },
+        {
+          "_key": "s3",
+          "context": "Logicon/HealthTech Digital implementation analysis",
+          "label": "Failures attributed to staff resistance",
+          "value": "63%+"
+        },
+        {
+          "_key": "s4",
+          "context": "Gartner AI model performance analysis",
+          "label": "Failures traced to data/operational issues",
+          "value": "85%"
+        }
+      ]
+    },
+    {
+      "_key": "s1w1",
+      "_type": "warningBlock",
+      "message": "Organizations that invest heavily in AI procurement while underfunding change management are statistically likely to join the failure majority. Budget for human adoption — training, champions, command centers, feedback systems — at a ratio of at least 1:1 with technology spend.",
+      "title": "The Technology Trap"
+    },
+    {
+      "_key": "s2h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Stakeholder Engagement and Clinical Champion Networks"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "No single factor predicts AI implementation success more reliably than the presence of engaged clinical champions. A 2022 systematic review published in Implementation Science Communications screened over 7,500 records and synthesized 35 studies on champion effectiveness across healthcare innovation deployments. The review found that champions serve as promoters and cultural translators — bridging the language gap between technology teams and frontline clinicians, and lending social credibility to tools that might otherwise be viewed with suspicion. The most effective champions shared a specific profile: they were respected peers at the clinical level, possessed genuine subject-matter expertise, and carried formal backing from executive leadership."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A champion network is not a single person. Effective implementations build layered structures: an executive sponsor who owns the strategic vision and removes systemic barriers; physician champions embedded in each major service line who model adoption and troubleshoot in real time; nursing informatics champions who understand both the clinical workflow and the data system; and super users — frontline staff trained to a level of deep system expertise who provide \"at-the-elbow\" support to colleagues during and after go-live. Each layer serves a different function. The executive sponsor makes the AI initiative visible and funded. The physician champion makes it credible. The super user makes it accessible."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Stakeholder engagement must begin far before any system goes live. The most common mistake is presenting a nearly finished AI tool to clinical staff for \"feedback\" when the architecture is already locked. True engagement means involving frontline nurses, physicians, and allied health professionals in use-case selection, workflow mapping, and interface design from the earliest planning stages. This is not merely a morale exercise — it catches critical workflow mismatches before they become expensive post-launch failures. It also builds the psychological investment that transforms reluctant users into genuine advocates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Seek clinicians who are respected by their peers for clinical judgment first. Enthusiasm for technology is secondary — credibility is the coin that matters for peer adoption.",
+          "title": "Identify by Influence, Not Just Enthusiasm"
+        },
+        {
+          "_key": "step2",
+          "description": "Champions must understand the AI system at a mechanistic level: what data it ingests, how it generates outputs, where it is known to be unreliable. Surface-level familiarity breeds dangerous overconfidence.",
+          "title": "Provide Substantive Training"
+        },
+        {
+          "_key": "step3",
+          "description": "A champion who is expected to lead adoption while carrying a full clinical load will fail. Protected time and clear organizational authority are prerequisites, not perks.",
+          "title": "Grant Formal Authority and Time"
+        },
+        {
+          "_key": "step4",
+          "description": "Champions should have a direct, low-friction path to report workflow problems, clinician concerns, and near-misses to technical and operational leadership — and those reports should demonstrably drive changes.",
+          "title": "Create Feedback Channels Back to the Implementation Team"
+        },
+        {
+          "_key": "step5",
+          "description": "Champion roles must persist through post-launch optimization. The first 90 days after go-live generate the most actionable feedback and the highest risk of workflow abandonment.",
+          "title": "Sustain the Network Beyond Go-Live"
+        }
+      ],
+      "title": "Building a Clinical Champion Network"
+    },
+    {
+      "_key": "s2ex",
+      "_type": "exampleBlock",
+      "content": "During EHR-based predictive model deployments studied in a 2020 PMC systematic review, 22 of 32 studies (69%) that included structured clinical engagement demonstrated improvement in patient outcomes after model implementation. Systems that lacked designated clinical advocates showed consistently lower adoption rates and higher rates of alert fatigue — clinicians learned to dismiss AI outputs reflexively rather than engage with them thoughtfully.",
+      "title": "When Champions Made the Difference"
+    },
+    {
+      "_key": "s3h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Workflow Analysis and Redesign Before Go-Live"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The single most preventable cause of clinical AI failure is deploying a tool into an unexamined workflow. When a new AI system is bolted onto existing clinical processes without systematic analysis, it invariably adds friction rather than removing it. A hospitalist confronted with a sepsis prediction tool that requires a separate login and manual re-entry of data already sitting in the EHR will not use that tool — not because the prediction is wrong, but because the implementation treats the clinician's time as an infinite resource. The predictable result is abandonment, sometimes accompanied by a dangerous false sense of security among administrators who believe the system is active when it is functionally ignored."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Current-state workflow mapping is the foundational step before any go-live. This means documenting, in granular detail, how clinical work actually flows today — not how the protocol says it should flow, but how it actually happens on a Tuesday night when the unit is short-staffed. Process mapping walks through each action, decision point, handoff, and information exchange in the target workflow, identifying where the AI system will intersect with clinical work and what it will require of the user at that intersection. This analysis frequently reveals that the proposed integration point is wrong, the alert timing is clinically inappropriate, or the output format is incompatible with how decisions are actually made."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Healthcare Failure Mode and Effects Analysis — HFMEA — is the risk assessment complement to workflow mapping. Developed with support from the Agency for Healthcare Research and Quality and the Department of Veterans Affairs, HFMEA asks teams to enumerate every way a new process could fail before it goes live, then score each failure mode on severity, probability of occurrence, and likelihood of detection. For AI implementations, this means explicitly asking: What happens if the model produces a false positive? What if it produces a false negative at a critical decision point? What if the interface goes down during a code? Who is responsible for each failure mode, and what is the mitigation? A 2022 PubMed-indexed study applying FMEA to an automated clinical contouring and treatment planning tool identified 126 distinct workflow errors — the leading categories were automation bias, operator error, and software error — none of which would have been visible without prospective analysis."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Rushed Deployment",
+        "points": [
+          "AI tool integrated into existing workflow without mapping",
+          "Training is a one-time vendor demo session",
+          "Pilot site chosen for convenience, not representativeness",
+          "Go-live defined as the day the system turns on",
+          "Failure modes identified reactively after patient harm"
+        ]
+      },
+      "right": {
+        "label": "Prepared Deployment",
+        "points": [
+          "Current-state workflow mapped; redesigned to reduce friction",
+          "Role-based simulation training before go-live",
+          "Pilot site selected to represent highest-complexity use cases",
+          "Go-live defined as sustained adoption across user groups",
+          "HFMEA completed pre-launch; mitigations built into design"
+        ]
+      },
+      "title": "Rushed vs. Prepared AI Go-Live"
+    },
+    {
+      "_key": "s3an",
+      "_type": "analogyBlock",
+      "analogy": "Introducing a clinical AI tool without workflow analysis is like installing a new traffic signal at an intersection without studying traffic patterns — the signal may function perfectly while making gridlock worse.",
+      "concept": "Workflow analysis is the prerequisite that determines whether a technically correct AI system actually improves — rather than degrades — clinical performance."
+    },
+    {
+      "_key": "s4h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Training, Monitoring, and Feedback Loops Post-Launch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Go-live is not the finish line — it is the starting gun for the hardest phase of AI implementation. The first 90 days after launch concentrate the highest risk of workflow abandonment, dangerous workarounds, and alert fatigue. Effective organizations treat this period with the same intensity as a clinical emergency response: visible leadership presence, real-time monitoring, rapid cycle improvement, and embedded support that meets users where they are."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The go-live command center is the operational hub of this response. Drawn from Epic's widely adopted implementation model and adapted across the industry, a command center combines issue resolution, end-user education, and project management into a single staffed function that operates 24 hours a day, 7 days a week for the critical initial period. Command center staff triage inbound problems in real time — distinguishing training gaps from workflow design failures from true technical defects — and route them to the right resolution team. Simultaneously, super users fan out across units providing at-the-elbow support: the kind of immediate, peer-level coaching that no training module can replicate. Research consistently shows that at-the-elbow support is the highest-impact intervention for early adoption, particularly for clinicians who struggle with the system in the pressure of real patient care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Post-implementation surveillance is the discipline of monitoring whether the AI system is actually performing as intended in production — not just whether it is technically operational, but whether it is clinically effective, equitable, and safe. This requires defining the right metrics before go-live and building dashboards to track them continuously afterward. Alert acceptance rate measures what fraction of AI-generated recommendations clinicians act on — chronic rates below 20 percent signal alert fatigue or loss of clinical trust. Override rate tracks how often clinicians dismiss AI outputs without documented rationale — studies have documented override rates of 90 to 96 percent for some clinical decision support tools, rendering them functionally inert. Time-in-workflow captures whether the AI interaction is adding or removing steps from clinical tasks. Outcome metrics — the actual patient results the AI was designed to improve — close the loop, confirming whether the implementation is delivering real value or just generating activity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Agree on alert acceptance rate, override rate, time-in-workflow, and clinical outcome targets before the system goes live. Post-hoc metric selection invites rationalization of poor results.",
+          "title": "Define Metrics Pre-Launch"
+        },
+        {
+          "_key": "step2",
+          "description": "Plan command center staffing schedules for a minimum of two weeks post-launch for major implementations, with on-call support continuing for 90 days.",
+          "title": "Staff the Command Center for 24/7 Coverage"
+        },
+        {
+          "_key": "step3",
+          "description": "Super user presence should be heaviest during the highest-volume clinical periods — morning rounds, shift changes, high-census events — not during administrative hours.",
+          "title": "Deploy Super Users at Peak Clinical Hours"
+        },
+        {
+          "_key": "step4",
+          "description": "Convene champion networks and technical teams weekly in the first quarter post-launch to review metric trends, surface emerging problems, and implement iterative fixes.",
+          "title": "Run Weekly Rapid-Cycle Improvement Reviews"
+        },
+        {
+          "_key": "step5",
+          "description": "A structured review at 90 days should assess adoption rates, clinical impact, equity of outcomes across patient populations, and readiness to scale or modify the deployment.",
+          "title": "Conduct Formal 90-Day Post-Implementation Review"
+        }
+      ],
+      "title": "Post-Launch Monitoring Framework"
+    },
+    {
+      "_key": "s4co",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4cos",
+          "_type": "span",
+          "marks": [],
+          "text": "Alert acceptance and override rates are early warning signals. If clinicians are overriding AI recommendations at rates above 80 percent without documented rationale, the system is generating noise, not insight — and the implementation requires urgent intervention before trust is permanently lost."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Organizational Culture: Psychological Safety and the Learning Health System"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Technology deployments succeed or fail within cultures, not vacuums. The National Academy of Medicine — formerly the Institute of Medicine — has articulated the learning health system as the aspirational standard for healthcare organizations: an ecosystem in which all stakeholders contribute, share, and analyze data, and in which continuous learning cycles generate knowledge that feeds back into improved care. The IOM's Quality Chasm series established continuous learning as a foundational principle, arguing that the rapid and seamless integration of evidence into practice requires organizations that treat every clinical interaction as a source of learning, not just a transaction. Clinical AI, at its best, is the technological expression of this philosophy — but only if the organizational culture can support honest assessment of what the AI is doing and when it is wrong."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Psychological safety — the degree to which a work environment is perceived as safe for interpersonal risk-taking — is the cultural prerequisite for that honesty. Dr. Lucian Leape, one of the foundational figures in the patient safety movement, stated plainly: \"The single greatest impediment to error prevention in the medical industry is that we punish people for making mistakes.\" That same dynamic operates when AI makes mistakes. If clinicians fear professional or institutional consequences for reporting that an AI system generated a dangerous recommendation, they will not report it — and the system will continue generating dangerous recommendations. The AHRQ 2018 Patient Safety Survey found that 47 percent of respondents felt that unsafe event reports were held against them, a finding that underscores how far most health systems remain from the psychological safety required for genuine learning."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "James Reason's Swiss Cheese Model, developed in 1990 and now the dominant paradigm for analyzing medical errors, offers a direct lens for understanding AI safety failures. Reason's model frames safety not as the absence of defects in any single layer of defense, but as the alignment of multiple imperfect protective layers. When the holes in each slice — algorithm error, interface design flaw, clinician fatigue, inadequate training, absent override documentation — happen to align, harm reaches the patient. Clinical AI does not eliminate these holes; it introduces new ones while potentially closing others. The governance implication is that organizations must build redundant human checks around AI outputs at every layer: technical validation, clinical review, patient safety reporting, and continuous outcome surveillance. ECRI's 2026 patient safety concerns listed AI diagnostic risks as a top hazard, reflecting the field's growing recognition that AI safety requires systemic, multi-layer mitigation, not algorithmic perfection."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "\"The single greatest impediment to error prevention in the medical industry is that we punish people for making mistakes.\" — Dr. Lucian Leape, patient safety pioneer"
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "s5hl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hls",
+          "_type": "span",
+          "marks": [],
+          "text": "A learning health system treats every AI output — including every wrong one — as data. Organizations that create safe, structured channels for clinicians to report AI errors and near-misses will build better AI systems over time. Those that do not will discover their AI's failure modes through patient harm."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s5sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "AHRQ 2018 Patient Safety Survey",
+          "label": "of staff feel AI/safety reports are held against them",
+          "value": "47%"
+        },
+        {
+          "_key": "s2",
+          "context": "Foundational patient safety framework",
+          "label": "Year Reason's Swiss Cheese Model was published",
+          "value": "1990"
+        },
+        {
+          "_key": "s3",
+          "context": "PMC systematic review, 2020",
+          "label": "of EHR AI deployments with engaged staff showed improved outcomes",
+          "value": "69%"
+        },
+        {
+          "_key": "s4",
+          "context": "ECRI Institute 2026 report",
+          "label": "AI diagnostic risks ranked top patient safety concern",
+          "value": "#1"
+        }
+      ]
+    },
+    {
+      "_key": "s6h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Framework for Sustainable AI Change Management"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Synthesizing the evidence, a practical framework for clinical AI change management emerges across five sequential phases. In the readiness phase, organizations assess cultural readiness, data infrastructure, and governance structures before any AI procurement decision is made. In the co-design phase, clinical champions, frontline staff, and affected patient populations are engaged in shaping the use case, interface design, and integration logic. In the preparation phase, workflow mapping and HFMEA are completed, pilot sites are selected for their representativeness rather than convenience, and simulation-based training is delivered in role-specific formats before any system touches live patient data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The launch phase activates the command center, deploys super users at maximum density, and establishes real-time metric dashboards from day one. Issues are triaged within hours, not weeks. In the optimization phase — which is not a phase with an end date but a permanent operating posture — adoption metrics, clinical outcomes, equity indicators, and safety event reports feed into regular improvement cycles. The champion network evolves from go-live support function into an ongoing AI governance structure: reviewing new model versions, assessing drift in model performance over time, and ensuring that the AI system continues to serve the clinical mission as patient populations and care patterns change."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Equity deserves explicit attention throughout this framework. AI systems trained predominantly on data from academic medical centers may perform worse for rural populations, elderly patients, or patients with limited English proficiency — precisely the populations that Vermont and similar states disproportionately serve. Post-implementation surveillance must include stratified outcome analysis by patient demographic groups, and any detected performance disparity must trigger a formal review of the underlying model. Change management that ignores equity is not truly managing change — it is institutionalizing existing disparities at algorithmic speed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6st",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Evaluate organizational culture, data infrastructure, governance structures, and clinical leadership capacity before committing to any AI deployment. Fix foundational gaps before they become implementation failures.",
+          "title": "Phase 1 — Readiness Assessment"
+        },
+        {
+          "_key": "step2",
+          "description": "Involve frontline clinicians, champion networks, and patient representatives in use-case definition, workflow integration logic, and interface design. Do not present a finished product for rubber-stamp approval.",
+          "title": "Phase 2 — Co-Design and Stakeholder Engagement"
+        },
+        {
+          "_key": "step3",
+          "description": "Map current-state workflows, conduct prospective risk analysis, redesign integration points to minimize friction, and deliver simulation-based role-specific training before go-live. Select pilot sites for representativeness.",
+          "title": "Phase 3 — Workflow Redesign, HFMEA, and Simulation Training"
+        },
+        {
+          "_key": "step4",
+          "description": "Staff a 24/7 command center, deploy at-the-elbow super users at peak clinical hours, and monitor real-time adoption metrics from day one. Treat the first 90 days as a critical care period.",
+          "title": "Phase 4 — Activated Launch with Command Center and Super Users"
+        },
+        {
+          "_key": "step5",
+          "description": "Build permanent governance structures for ongoing AI performance review, model drift detection, safety event reporting, and stratified equity analysis. Change management does not end at go-live.",
+          "title": "Phase 5 — Continuous Optimization and Equity Monitoring"
+        }
+      ],
+      "title": "Five-Phase AI Change Management Framework"
+    },
+    {
+      "_key": "tw01",
+      "_type": "takeawayBlock",
+      "points": [
+        "Approximately 79 percent of healthcare AI initiatives fail to deliver intended value — and the primary driver is human and organizational, not technical.",
+        "Over 63 percent of AI project failures are attributed specifically to staff resistance and inadequate change management.",
+        "Clinical champions — respected peers with substantive expertise and formal authority — are the single most evidence-backed predictor of successful AI adoption.",
+        "Current-state workflow mapping and Healthcare Failure Mode and Effects Analysis (HFMEA) must be completed before any AI system touches live patient care.",
+        "Go-live command centers and at-the-elbow super users are the highest-impact post-launch interventions for sustaining adoption through the critical first 90 days.",
+        "Alert override rates above 80 percent signal alert fatigue or clinical distrust and require immediate intervention before trust is permanently eroded.",
+        "The National Academy of Medicine's learning health system framework requires psychological safety — clinicians must feel protected when reporting AI errors.",
+        "Equity monitoring — stratified outcome analysis by patient demographics — is not optional; it is a core component of responsible AI change management."
+      ]
+    },
+    {
+      "_key": "qz01",
+      "_type": "knowledgeCheck",
+      "explanation": "A 90-91 percent undocumented override rate is a classic signal of alert fatigue or erosion of clinical trust — it means the AI is generating noise rather than actionable signal, and clinicians have learned to dismiss it reflexively. This requires urgent change management intervention: investigating workflow friction, re-engaging clinical champions, reviewing alert thresholds, and rebuilding clinician confidence — not necessarily replacing the algorithm or abandoning the project.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The AI algorithm has a fundamental design flaw that requires vendor replacement."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Alert fatigue or a loss of clinical trust that requires urgent workflow and change management intervention."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Physicians are appropriately exercising clinical judgment and the system is working as intended."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The tool should be deactivated immediately and the implementation project terminated."
+        }
+      ],
+      "question": "A hospital deploys an AI-powered sepsis prediction tool. Three months post-launch, the clinical informatics team finds that physicians are overriding 91 percent of the tool's alerts without documenting a reason. What does this most likely indicate?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] \"The AI Implementation Gap: Why 80% of Healthcare AI Projects Fail to Scale Beyond Pilot Phase\" — healthtechdigital.com/the-ai-implementation-gap — Supports 80% pilot-phase failure rate and 63% staff-resistance failure attribution."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] \"MIT: 95% of enterprise AI pilots fail to deliver measurable ROI\" — healthcareitnews.com/news/mit-95-enterprise-ai-pilots-fail-deliver-measurable-roi — Supports MIT NANDA finding on 95% of AI pilots failing to deliver measurable ROI despite $30-40B in enterprise AI investment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] \"The effectiveness of champions in implementing innovations in health care: a systematic review\" — implementationsciencecomms.biomedcentral.com/articles/10.1186/s43058-022-00315-0 — Supports champion model effectiveness findings: 35-study synthesis, respected peers with formal authority as most effective champion profile."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] \"Using Failure Mode and Effects Analysis to Evaluate Risk in the Clinical Adoption of Automated Contouring and Treatment Planning Tools\" — PubMed 35305941 — Supports HFMEA application to AI clinical tools; 126 workflow errors identified, led by automation bias, operator error, software error."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] \"A Continuously Learning Health Care System in the United States\" — nam.edu/perspectives/a-continuously-learning-health-care-system-in-the-united-states — Supports IOM/NAM learning health system definition and continuous learning principle."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] \"Psychological Safety and Error Reporting in Healthcare\" — dovepress.com/individual-characteristics-that-promote-or-prevent-psychological-safety — Supports psychological safety statistics and Dr. Lucian Leape quote on error punishment as primary impediment to safety improvement; AHRQ 2018 survey finding that 47% of staff feel reports are held against them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] \"The Swiss Cheese Model of Safety Incidents\" — ncbi.nlm.nih.gov/pmc/articles/PMC1298298 — Supports James Reason Swiss Cheese Model description, 1990 origin, and application to multi-layer safety defense in clinical settings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "[8] \"AI diagnostic risks top ECRI's 2026 patient safety concerns\" — healthjournalism.org/blog/2026/03/ai-diagnostic-risks-top-ecris-2026-patient-safety-concerns — Supports ECRI 2026 ranking of AI diagnostic risks as the top patient safety concern."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "aiml-change-management"
+  },
+  "title": "Clinical AI Change Management: Implementing AI Tools Without Breaking Clinical Workflows"
+}
