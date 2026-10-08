@@ -48,7 +48,7 @@ const DESIGNATED_AGENCIES = [
     name: "Lamoille County Mental Health Services",
     region: "Lamoille County",
     counties: ["Lamoille"],
-    website: "https://lcmhsvt.org",
+    website: "https://lamoille.org",
     designation: "Mental Health & Developmental Disabilities Designated Agency",
     highlight: "Serves Morrisville/Stowe area. One of Vermont's smaller DAs by county, but covers a region with growing population and significant tourism economy workforce.",
     sustainability: false,
@@ -57,7 +57,7 @@ const DESIGNATED_AGENCIES = [
     name: "Northwestern Counseling & Support Services (NCSS)",
     region: "Franklin & Grand Isle Counties",
     counties: ["Franklin", "Grand Isle"],
-    website: "https://ncssvt.org",
+    website: "https://ncssinc.org",
     designation: "Mental Health & Developmental Disabilities Designated Agency",
     highlight: "Certified CCBHC (July 1, 2026). Serves St. Albans and northwestern Vermont including Grand Isle islands. Franklin County has high rates of SUD and opioid-related presentations.",
     sustainability: false,
@@ -84,9 +84,9 @@ const DESIGNATED_AGENCIES = [
     name: "Rutland Mental Health Services",
     region: "Rutland County",
     counties: ["Rutland"],
-    website: "https://rutlandmentalhealth.org",
+    website: "https://rmhsccn.org",
     designation: "Mental Health & Developmental Disabilities Designated Agency",
-    highlight: "Serves Rutland City and county — Vermont's second-largest city, with among the highest rates of MH/SUD burden, opioid overdose, and poverty in the state. One of the highest-acuity DA service areas.",
+    highlight: "Certified CCBHC (one of Vermont's first two demonstration sites, selected fall 2023). Serves Rutland City and county — Vermont's second-largest city, with among the highest rates of MH/SUD burden, opioid overdose, and poverty in the state. One of the highest-acuity DA service areas.",
     sustainability: true,
   },
   {
@@ -108,20 +108,28 @@ const DESIGNATED_AGENCIES = [
     sustainability: false,
   },
   {
+    name: "Clara Martin Center",
+    region: "Orange County",
+    counties: ["Orange"],
+    website: "https://www.claramartin.org",
+    designation: "Mental Health & Substance Use Designated Agency",
+    highlight: "Certified CCBHC (one of Vermont's first two demonstration sites, selected fall 2023). Headquartered in Randolph; founded 1966. Provides mental health, substance use, 24-hour crisis, school-based, and integrated primary care services to Orange County and the greater Upper Valley.",
+    sustainability: false,
+  },
+  {
     name: "Upper Valley Services",
     region: "Orange County",
     counties: ["Orange"],
     website: "https://uvs-vt.org",
-    designation: "Mental Health & Developmental Disabilities Designated Agency",
-    highlight: "Serves Bradford/Randolph area in Orange County — a rural county with significant access challenges due to limited transportation and distance from hub services.",
+    designation: "Developmental Disabilities Designated Agency",
+    highlight: "The developmental disability services DA for Orange County; mental health and substance use services in the county are provided by Clara Martin Center.",
     sustainability: false,
   },
 ];
 
 const SSA_AGENCIES = [
-  { name: "Brattleboro Retreat", role: "Specialized inpatient psychiatric hospital — private, non-profit. Vermont's only private psychiatric hospital. 138 adult and adolescent beds. Closely connected to HCRS DA for Windham/Windsor discharge planning.", website: "https://brattlebororetreat.org" },
-  { name: "Vermont Psychiatric Care Hospital (VPCH)", role: "State-operated inpatient psychiatric hospital — 25 beds. The hospital of last resort for highest-acuity, forensic, and treatment-resistant cases. Located in Berlin, VT.", website: "https://mentalhealth.vermont.gov/services/vermont-psychiatric-care-hospital" },
-  { name: "Clara Martin Center", role: "Specialized Service Agency for Orange County — also covers some developmental disability services alongside Upper Valley Services.", website: "https://claramartincenter.org" },
+  { name: "Brattleboro Retreat", role: "Specialized inpatient psychiatric hospital — private, non-profit. Vermont's only private psychiatric hospital. 111 total beds (VDH 2026 Hospital Report Card). Closely connected to HCRS DA for Windham/Windsor discharge planning.", website: "https://brattlebororetreat.org" },
+  { name: "Vermont Psychiatric Care Hospital (VPCH)", role: "State-operated inpatient psychiatric hospital — 25 beds (DMH). The hospital of last resort for highest-acuity, forensic, and treatment-resistant cases. Located in Berlin, VT.", website: "https://mentalhealth.vermont.gov" },
 ];
 
 export default function VermontDesignatedAgenciesPage() {
@@ -152,7 +160,7 @@ export default function VermontDesignatedAgenciesPage() {
       {/* STATS */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
         {[
-          { value: "11", label: "Designated Agencies", sub: "One per geographic region" },
+          { value: "11", label: "Designated Agencies", sub: "Regional; Orange County has two (MH/SUD and DD)" },
           { value: "14", label: "Counties Covered", sub: "Every Vermont county" },
           { value: "16", label: "Vermont Care Partners Members", sub: "DAs + SSAs + affiliates" },
           { value: "100K+", label: "Vermonters Served", sub: "MH, SUD & DD services annually" },
@@ -230,7 +238,7 @@ export default function VermontDesignatedAgenciesPage() {
 
       {/* SPECIALIZED SERVICE AGENCIES */}
       <div className="mb-12">
-        <SectionHeader label="Related Facilities" title="Specialized Service Agencies & Inpatient Facilities" />
+        <SectionHeader label="Related Facilities" title="Inpatient Psychiatric Facilities" />
         <div className="space-y-3">
           {SSA_AGENCIES.map(ssa => (
             <div key={ssa.name} className="bg-white border border-slate-200 rounded-xl p-5">

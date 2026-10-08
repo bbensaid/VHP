@@ -201,6 +201,53 @@ export default function VermontMedicaidPage() {
         <StatPill value="317%" label="FPL maximum for children under Dr. Dynasaur" />
       </div>
 
+      {/* ── H.R. 1 CHANGES (JAN 1, 2027) ─────────────────────────────────── */}
+      <div className="mb-14">
+        <SectionHeader label="Federal Changes · H.R. 1" title="Work Requirements & Six-Month Renewals Begin January 1, 2027" />
+        <p className="text-sm text-slate-500 mb-6 -mt-4">
+          H.R. 1 (the federal budget reconciliation law signed July 2025) requires states to apply community engagement
+          (&ldquo;work&rdquo;) requirements and more frequent eligibility reviews to Medicaid expansion adults. Vermont begins both on
+          January 1, 2027. Other members — children, pregnant and postpartum members, and AABD/Choices for Care
+          enrollees — are not subject to these two changes.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+          <div className="bg-white border border-rose-200 rounded-xl p-5">
+            <p className="text-[10px] font-black uppercase tracking-widest text-rose-600 mb-2">Who</p>
+            <p className="text-sm text-slate-700 leading-relaxed">
+              Expansion adults age 19–64 (the &ldquo;Medicaid for Adults&rdquo; group above). Exemptions include pregnant and
+              postpartum members, parents and caretakers of children under 14, and people with a qualifying disability,
+              among others.
+            </p>
+          </div>
+          <div className="bg-white border border-rose-200 rounded-xl p-5">
+            <p className="text-[10px] font-black uppercase tracking-widest text-rose-600 mb-2">Community engagement</p>
+            <p className="text-sm text-slate-700 leading-relaxed">
+              At least 80 hours a month of work, community service, or school (or a combination), or monthly income of at
+              least about $580 — 80 hours at the federal minimum wage.
+            </p>
+          </div>
+          <div className="bg-white border border-rose-200 rounded-xl p-5">
+            <p className="text-[10px] font-black uppercase tracking-widest text-rose-600 mb-2">Six-month renewals</p>
+            <p className="text-sm text-slate-700 leading-relaxed">
+              Expansion adults renew every six months instead of every twelve. DVHA began notifying affected members ages
+              19–64 in summer 2026 and verifies data electronically first, asking for documents only when it must.
+            </p>
+          </div>
+        </div>
+        <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm">
+          <p className="font-bold text-amber-800 mb-1">What members should do now</p>
+          <p className="text-amber-700 leading-relaxed">
+            Keep contact information current at Vermont Health Connect and open every notice from DVHA. Every Medicaid
+            decision can be appealed; Vermont Legal Aid&apos;s Office of the Health Care Advocate helps members free of charge.
+          </p>
+          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+            <ExternalLink href="https://dvha.vermont.gov/medicaid-changes">DVHA: Medicaid changes (StayCoveredVT)</ExternalLink>
+            <ExternalLink href="https://ccf.georgetown.edu/feature/tracking-vermont-implementation-of-hr-1-medicaid-work-reporting-requirements/">Georgetown CCF: Vermont H.R. 1 implementation tracker</ExternalLink>
+            <ExternalLink href="https://www.wcax.com/2026/08/24/vermont-agencies-prepare-recipients-medicaid-overhaul/">WCAX: Vermont agencies prepare recipients (Aug 2026)</ExternalLink>
+          </div>
+        </div>
+      </div>
+
       {/* ── PROGRAMS ─────────────────────────────────────────────────────── */}
       <div className="mb-14">
         <SectionHeader label="Coverage Programs" title="Vermont Medicaid Programs at a Glance" />
