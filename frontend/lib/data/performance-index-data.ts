@@ -270,9 +270,9 @@ export const performanceIndexData: Record<string, PerformanceIndexProfile> = {
     },
     equityImperative: { racialEquityGap: 55, ruralUrbanGap: 62, sdohIntegration: 74 },
     narrative: {
-      title: "Global Budget Model Expanding to Rural Hospitals",
+      title: "All-Payer Global Budgets, Now Under AHEAD",
       summary:
-        "Maryland's unique all-payer global budget system is a national policy benchmark. The RHT program extends this financial reform to rural and Eastern Shore hospitals that have not yet been integrated, pairing it with equity investments.",
+        "Maryland’s all-payer hospital global budget system is a national policy benchmark; after the Total Cost of Care Model ended on December 31, 2025, Maryland entered the CMS AHEAD Model as its Cohort 1 state in January 2026. Its RHT program targets the rural workforce, primary care access, mobile health and food access rather than hospital payment reform.",
     },
   },
 
