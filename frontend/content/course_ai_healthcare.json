@@ -106,13 +106,6 @@
               "variant": "warning",
               "heading": "Correlation is not causation \u2014 and AI doesn't know the difference",
               "body": "ML models find statistical patterns. They have no understanding of mechanism, no concept of causality, and no ability to reason about novel situations. A model trained to predict sepsis might learn that low blood pressure correlates with sepsis \u2014 but it might also learn that certain nursing documentation patterns correlate, because nurses document more thoroughly for sicker patients. Both patterns predict sepsis, but only one is clinically meaningful. This is why human oversight remains essential."
-            },
-            {
-              "type": "video",
-              "mediaType": "youtube",
-              "videoId": "ukzFI9rgwfU",
-              "caption": "Machine learning in medicine \u2014 MIT overview (~10 min)",
-              "durationSeconds": 600
             }
           ],
           "quiz": {

@@ -1,0 +1,14 @@
+{ "ops": [
+{ "docs": ["ahead-model-year-one-financial-outcomes"], "key": "ahead-68", "mirror": true,
+  "old": "and an opportunity for up to two additional states to join in July 2026 for performance starting in 2028 or 2029 (CMS).",
+  "new": "and CMS offered an opportunity for two additional states to participate in the model starting in 2028 and/or 2029 (CMS, AHEAD overview, fall 2025).",
+  "claim": "Opportunity for up to two additional AHEAD states to join 'in July 2026'", "verdict": "REAL",
+  "sources": "CMS, 'AHEAD Overview' fall 2025 slides (cms.gov/priorities/innovation/files/ahead-overview-fall2025-slides.pdf): 'Opportunity for two additional states to participate in the model starting in 2028 and/or 2029'",
+  "note": "Substance confirmed by CMS; the 'July 2026' timing appears only in secondary summaries (e.g., AHCA/NCAL blog), so it was dropped. Module 2's contrary 'no further cohorts' line was corrected to match (ops file 06)." },
+{ "docs": ["ahead-model-year-one-financial-outcomes"], "key": "ahead-93", "mirror": true,
+  "old": "whether the additional-states window (July 2026) attracts more participants,",
+  "new": "whether CMS's offer to add two more states attracts applicants,",
+  "claim": "'additional-states window (July 2026)'", "verdict": "UNVERIFIABLE",
+  "sources": "As above; no CMS primary source for a July 2026 window",
+  "note": "Timing dropped; point kept." }
+] }

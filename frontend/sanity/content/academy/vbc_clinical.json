@@ -40,9 +40,9 @@
       "_key": "m5sg01",
       "title": "Why Clinical Practice Must Change",
       "stats": [
-        {"_key": "m5st01", "value": "27%", "label": "Preventable Hospital Admissions", "context": "Roughly 1 in 4 hospital admissions in the US is considered preventable — avoidable with better outpatient management. Source: Agency for Healthcare Research and Quality.", "trend": "down"},
-        {"_key": "m5st02", "value": "20%", "label": "30-Day Readmission Rate", "context": "1 in 5 Medicare patients is readmitted within 30 days of discharge — often due to poor care transitions, not clinical failure. Source: CMS, 2023.", "trend": "down"},
-        {"_key": "m5st03", "value": "$528B", "label": "Annual Chronic Disease Spend", "context": "The US spends over $528 billion annually on the top 10 chronic diseases — almost all of which are manageable or preventable in primary care. Source: Milken Institute.", "trend": "up"}
+        {"_key": "m5st01", "value": "12.9%", "label": "Potentially Preventable Adult Stays", "context": "In 2017, 3.5 million potentially preventable adult hospital stays — 12.9% of all nonobstetric adult stays — cost $33.7 billion; heart failure was the most common reason. Source: AHRQ HCUP Statistical Brief #259.", "trend": "down"},
+        {"_key": "m5st02", "value": "19.6%", "label": "30-Day Readmissions Before HRRP", "context": "In 2003–04, 19.6% of Medicare beneficiaries discharged from a hospital were readmitted within 30 days — the finding that helped prompt the Hospital Readmissions Reduction Program. Source: Jencks, Williams & Coleman, New England Journal of Medicine, 2009.", "trend": "down"},
+        {"_key": "m5st03", "value": "$1.1T", "label": "Direct Cost of Chronic Disease", "context": "Direct US health care costs for chronic conditions totaled $1.1 trillion in 2016 — nearly 6% of GDP — led by cardiovascular conditions, diabetes, and Alzheimer's disease. Source: Milken Institute, The Costs of Chronic Disease in the U.S. (2018).", "trend": "up"}
       ]
     },
     {
@@ -174,8 +174,8 @@
       "title": "Population Health by the Numbers",
       "stats": [
         {"_key": "m5st04", "value": "5%", "label": "Patients Drive 50% of Costs", "context": "Consistently, the sickest 5% of patients account for roughly 50% of total healthcare spending. VBC practices identify and intensively manage this group. Source: AHRQ.", "trend": "neutral"},
-        {"_key": "m5st05", "value": "70%", "label": "Chronic Disease Is Preventable", "context": "The CDC estimates that 70% of chronic disease burden is preventable through lifestyle changes and early intervention — exactly what population health management targets.", "trend": "neutral"},
-        {"_key": "m5st06", "value": "3x", "label": "Impact of Care Management", "context": "Patients enrolled in structured care management programs have 3x better adherence to treatment plans and significantly fewer ED visits. Source: Health Affairs, 2022.", "trend": "up"}
+        {"_key": "m5st05", "value": "90%", "label": "Spending Tied to Chronic Conditions", "context": "Ninety percent of the nation's annual health care expenditures are for people with chronic and mental health conditions — the population that population health management targets. Source: CDC, Fast Facts: Health and Economic Costs of Chronic Conditions.", "trend": "neutral"},
+        {"_key": "m5st06", "value": "8.3% vs 11.9%", "label": "Care Transitions Coaching", "context": "In a randomized trial, older patients who received four weeks of care-transitions coaching after discharge had a 30-day rehospitalization rate of 8.3%, versus 11.9% for controls. Source: Coleman et al., Archives of Internal Medicine, 2006.", "trend": "down"}
       ]
     },
     {
@@ -190,9 +190,9 @@
       "_key": "m5ex01",
       "eyebrow": "Real-World Example",
       "title": "ChenMed — Intensive Primary Care for High-Risk Seniors",
-      "body": "ChenMed operates primary care clinics specifically designed for high-risk Medicare patients. Their model flips the standard formula: instead of seeing 24 patients per day in 15-minute slots, ChenMed physicians see 8 to 10 patients per day for 40-minute visits. Every patient has a dedicated care team. Transportation to appointments is provided. Patients receive monthly wellness visits even when they are feeling fine.",
-      "outcome": "ChenMed patients have 30 to 40 percent fewer hospitalizations and emergency department visits than matched comparison groups. Source: Health Affairs, 2020.",
-      "source": "Health Affairs, 2020; ChenMed internal outcomes reporting"
+      "body": "ChenMed operates primary care centers designed for older, lower-income Medicare Advantage patients with complex chronic illness. Its model inverts the usual primary care formula: physicians carry small patient panels, see patients far more often, and spend more face-to-face time with them, supported by on-site care teams and transportation to appointments.",
+      "outcome": "In a matched comparison of 5,695 patients from each model, ChenMed's 'high-touch' patients averaged 8.7 primary care visits a year versus 3.8 under standard care, had 50% fewer hospital admissions, and cost 28% less. The study was led by ChenMed clinicians with University of Miami co-investigators, so it is not independent.",
+      "source": "Ghany R et al., 'High-Touch Care Leads to Better Outcomes and Lower Costs in a Senior Population,' American Journal of Managed Care, September 2018"
     },
     {
       "_type": "block",
@@ -227,9 +227,8 @@
       "_key": "m5sg03",
       "title": "The Cost of Poor Care Coordination",
       "stats": [
-        {"_key": "m5st07", "value": "$27.2B", "label": "Annual Coordination Failure Cost", "context": "Poor coordination — duplicated tests, medication errors, missed follow-ups — costs the US an estimated $27.2 billion annually. Source: Annals of Internal Medicine.", "trend": "down"},
-        {"_key": "m5st08", "value": "58%", "label": "Adults with Multiple Chronic Conditions", "context": "More than half of US adults have at least 2 chronic conditions, requiring active coordination among multiple providers. Source: CDC, 2023.", "trend": "up"},
-        {"_key": "m5st09", "value": "1 in 3", "label": "Patients Experience Coordination Failures", "context": "One in three patients reports experiencing at least one care coordination problem in the past two years. Source: Commonwealth Fund 2022 International Health Policy Survey.", "trend": "neutral"}
+        {"_key": "m5st07", "value": "$27–78B", "label": "Annual Coordination Failure Cost", "context": "Failures of care coordination — duplicated tests, missed follow-ups, avoidable complications after transitions — waste an estimated $27.2 billion to $78.2 billion a year. Source: Shrank, Rogstad & Parekh, JAMA, 2019.", "trend": "down"},
+        {"_key": "m5st08", "value": "51.4%", "label": "Adults with Multiple Chronic Conditions", "context": "In 2023, 51.4% of US adults — about 130 million people — reported multiple chronic conditions, including 78.8% of adults 65 and older, requiring active coordination among multiple providers. Source: CDC, Preventing Chronic Disease, 2025 (BRFSS 2013–2023).", "trend": "up"}
       ]
     },
     {
@@ -381,9 +380,9 @@
       "_key": "m5ex03",
       "eyebrow": "Vermont in Focus",
       "title": "Copley Hospital — Rural VBC in Morrisville, Vermont",
-      "body": "Copley Hospital is a 25-bed critical access hospital in Morrisville serving a largely rural population. As a member of OneCare Vermont, Copley participates in population health management for its attributed patients. The hospital invested in a care transition program: every patient discharged is followed by a registered nurse for 30 days post-discharge, and a risk stratification tool identifies patients most likely to be readmitted for intensified outreach.",
-      "outcome": "Copley has maintained readmission rates well below state and national averages for a hospital serving a comparably complex patient population — demonstrating that rural hospitals can achieve VBC goals with the right team structure.",
-      "source": "Vermont DVHA All-Payer Model evaluation, OneCare Vermont reporting"
+      "body": "Copley Hospital is a 25-bed critical access hospital in Morrisville serving a largely rural population. In its 2018 community health needs assessment progress report, filed with the Green Mountain Care Board, Copley described two concrete steps to cut 30-day all-cause readmissions: arranging follow-up with a primary care provider within 7 days of discharge, and reviewing each inpatient readmission in real time to find what went wrong.",
+      "outcome": "Copley reported 30-day all-cause readmission rates of 4.4%–17.0% across January–September 2017 (Vermont critical access hospitals: 8.7%–16.8%) and 6.92% for January–April 2018 — below or on par with its critical access peers, showing that a small rural hospital can move the measures VBC contracts reward with simple, disciplined transition steps.",
+      "source": "Copley Hospital, Community Health Needs Assessment Progress Report 2018 (Green Mountain Care Board hospital budget filing B19H31)"
     },
     {
       "_type": "block",
@@ -410,7 +409,7 @@
       "_type": "block",
       "_key": "m5hl02",
       "style": "highlight",
-      "children": [{"_type": "span", "_key": "m5hls2", "text": "Physician burnout is at crisis levels: 63% of physicians report burnout symptoms, with administrative burden and loss of clinical autonomy cited as primary drivers. VBC, done well, can restore what drew clinicians to medicine: time with patients, team support, and a payment system that rewards doing what is actually right for the patient. Source: AMA National Burnout Survey, 2025.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m5hls2", "text": "Physician burnout peaked at 62.8% in 2021 and, though it has eased since — 43.2% of physicians reported at least one symptom in 2024 — it remains high, with administrative burden a leading driver. VBC, done well, can restore what drew clinicians to medicine: time with patients, team support, and a payment system that rewards doing what is actually right for the patient. Source: American Medical Association national burnout survey data, 2021–2024.", "marks": []}],
       "markDefs": []
     },
     {

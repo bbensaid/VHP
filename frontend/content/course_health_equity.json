@@ -106,13 +106,6 @@
               "body": "Not all disparities are inequities. A disparity is any measurable difference between groups. An inequity is a disparity that is unjust and avoidable \u2014 the result of systemic disadvantage rather than biology or free choice. Framing matters: calling disparities 'inequities' assigns moral weight and implies action. Research increasingly shows that most racial health disparities are not explained by biology but by social and structural factors."
             },
             {
-              "type": "video",
-              "mediaType": "youtube",
-              "videoId": "SExDNF83fvQ",
-              "caption": "What is health equity? \u2014 RWJF foundational explainer (~5 min)",
-              "durationSeconds": 300
-            },
-            {
               "type": "callout",
               "variant": "tip",
               "heading": "The Whitehall Study: status, not just poverty",
@@ -348,13 +341,6 @@
               "variant": "info",
               "heading": "The American Health Disadvantage is not uniform",
               "body": "A 2013 National Academies study ('Shorter Lives, Poorer Health') found that the US health disadvantage is concentrated in specific populations: uninsured, low-income, Black and Hispanic Americans drive most of the gap with peer nations. White, college-educated, insured Americans have health outcomes roughly comparable to their counterparts in other countries. The overall US underperformance is a story of who is left behind."
-            },
-            {
-              "type": "video",
-              "mediaType": "youtube",
-              "videoId": "qSjGouBmo0M",
-              "caption": "Why is US healthcare so expensive? \u2014 Vox explainer (~8 min)",
-              "durationSeconds": 480
             }
           ],
           "quiz": {
@@ -513,13 +499,6 @@
                   "source": "NACHC"
                 }
               ]
-            },
-            {
-              "type": "video",
-              "mediaType": "youtube",
-              "videoId": "d7OdKQwTyKo",
-              "caption": "Social determinants of health \u2014 WHO explainer (~3 min)",
-              "durationSeconds": 180
             }
           ],
           "quiz": {
@@ -1277,13 +1256,6 @@
               "variant": "tip",
               "heading": "Questions to ask when evaluating a clinical algorithm",
               "body": "1. What data was this trained on? Does the training data reflect historical inequities?\n2. Was the algorithm's performance validated separately for different racial, ethnic, and socioeconomic groups?\n3. What proxy measures does it use \u2014 and are those proxies distributed differently across groups?\n4. Who is the algorithm designed to help, and who might it systematically disadvantage?\n5. Is there an ongoing bias monitoring protocol after deployment?"
-            },
-            {
-              "type": "video",
-              "mediaType": "youtube",
-              "videoId": "UG_X_7g63rY",
-              "caption": "Algorithmic bias in healthcare \u2014 STAT News and Harvard explainer (~8 min)",
-              "durationSeconds": 480
             }
           ],
           "quiz": {

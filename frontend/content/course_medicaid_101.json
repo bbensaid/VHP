@@ -148,13 +148,6 @@
               ]
             },
             {
-              "type": "video",
-              "mediaType": "youtube",
-              "videoId": "3cBhsHb4Sp4",
-              "caption": "Medicaid at a glance \u2014 Kaiser Family Foundation overview (~7 min)",
-              "durationSeconds": 420
-            },
-            {
               "type": "callout",
               "variant": "info",
               "heading": "Medicaid is not one program",
@@ -647,13 +640,6 @@
               "variant": "warning",
               "heading": "Most disenrollments were procedural",
               "body": "The majority of people losing Medicaid coverage during the unwinding were disenrolled for procedural reasons \u2014 outdated addresses, returned mail, inability to reach enrollees \u2014 not because they were actually ineligible. Many were still poor enough to qualify but lost coverage anyway. This highlighted structural failures in state eligibility systems."
-            },
-            {
-              "type": "video",
-              "mediaType": "youtube",
-              "videoId": "Z7hGgqm26LE",
-              "caption": "Medicaid unwinding \u2014 KFF explainer on the redetermination process (~6 min)",
-              "durationSeconds": 360
             }
           ],
           "quiz": {

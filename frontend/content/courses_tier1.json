@@ -149,13 +149,6 @@
                 ]
               },
               {
-                "type": "video",
-                "mediaType": "youtube",
-                "videoId": "3cBhsHb4Sp4",
-                "caption": "Medicaid at a glance \u2014 Kaiser Family Foundation overview (~7 min)",
-                "durationSeconds": 420
-              },
-              {
                 "type": "callout",
                 "variant": "info",
                 "heading": "Medicaid is not one program",
@@ -917,13 +910,6 @@
                 "variant": "warning",
                 "heading": "Most disenrollments were procedural",
                 "body": "The majority of people losing Medicaid coverage during the unwinding were disenrolled for procedural reasons \u2014 outdated addresses, returned mail, inability to reach enrollees \u2014 not because they were actually ineligible. Many were still poor enough to qualify but lost coverage anyway. This highlighted structural failures in state eligibility systems."
-              },
-              {
-                "type": "video",
-                "mediaType": "youtube",
-                "videoId": "Z7hGgqm26LE",
-                "caption": "Medicaid unwinding \u2014 KFF explainer on the redetermination process (~6 min)",
-                "durationSeconds": 360
               }
             ],
             "quiz": {
@@ -4257,7 +4243,7 @@
               {
                 "type": "text",
                 "heading": "The Financial Anatomy of a Shared Savings Contract",
-                "body": "The Medicare Shared Savings Program is the most widely adopted VBC model in the United States, and shared savings is the financial mechanism at its core. Understanding how shared savings actually works \u2014 how the benchmark is set, how savings are calculated, and how they are distributed \u2014 is the foundation for understanding the economics of most VBC arrangements. The concept is straightforward: CMS calculates how much it would have expected to spend on your attributed patient population if they had remained in traditional fee-for-service Medicare, adjusted for their age, health status, and geographic cost factors. This projected spend is your \u201cbenchmark.\u201d If your ACO\u2019s actual spending on that population comes in below the benchmark, the difference is \u201csavings.\u201d You share those savings with CMS according to a pre-agreed formula \u2014 typically retaining 40\u201375% depending on your risk track and quality performance, with CMS keeping the remainder.\n\nThe devil, as always, is in the details. The benchmark calculation uses a three-year historical average of your patient population\u2019s spending, adjusted upward by a national trend factor. For ACOs whose patient populations were already low-cost before joining the program, this creates an immediate structural problem: their benchmark is low, so even excellent care management produces modest absolute savings, making the shared savings payment insufficient to cover the care management infrastructure investment. This is called the \u201clow benchmark problem,\u201d and it is the primary reason that rural and safety-net ACOs, which often already operate lean systems with lower baseline utilization, struggle to generate shared savings large enough to justify Advanced APM participation costs. CMS has modified the benchmark methodology three times since 2012 in response to this problem, most recently in the Pathways to Success Rule of 2018 and the 2023 ACO Primary Care Flex Model, but the fundamental tension between historical benchmarking and equitable VBC participation for already-efficient providers remains unresolved."
+                "body": "The Medicare Shared Savings Program is the most widely adopted VBC model in the United States, and shared savings is the financial mechanism at its core. Understanding how shared savings actually works \u2014 how the benchmark is set, how savings are calculated, and how they are distributed \u2014 is the foundation for understanding the economics of most VBC arrangements. The concept is straightforward: CMS calculates how much it would have expected to spend on your attributed patient population if they had remained in traditional fee-for-service Medicare, adjusted for their age, health status, and geographic cost factors. This projected spend is your \u201cbenchmark.\u201d If your ACO\u2019s actual spending on that population comes in below the benchmark, the difference is \u201csavings.\u201d You share those savings with CMS according to a pre-agreed formula \u2014 typically retaining 40\u201375% depending on your risk track and quality performance, with CMS keeping the remainder.\n\nThe devil, as always, is in the details. The benchmark calculation uses a three-year historical average of your patient population\u2019s spending, adjusted upward by a national trend factor. For ACOs whose patient populations were already low-cost before joining the program, this creates an immediate structural problem: their benchmark is low, so even excellent care management produces modest absolute savings, making the shared savings payment insufficient to cover the care management infrastructure investment. This is called the \u201clow benchmark problem,\u201d and it is the primary reason that rural and safety-net ACOs, which often already operate lean systems with lower baseline utilization, struggle to generate shared savings large enough to justify Advanced APM participation costs. CMS has revised the benchmark methodology repeatedly in response to this problem \u2014 adding regional adjustments for agreement periods beginning in 2017, reworking them in the 2018 Pathways to Success rule, and, in the CY2023 Physician Fee Schedule rule, adding a prior-savings adjustment and an administratively set growth factor (the Accountable Care Prospective Trend) to blunt the ratchet effect \u2014 but the fundamental tension between historical benchmarking and equitable VBC participation for already-efficient providers remains unresolved."
               },
               {
                 "type": "text",
@@ -4273,7 +4259,7 @@
                 "type": "callout",
                 "variant": "quote",
                 "heading": "Quote",
-                "body": "The bundled payment evidence for joint replacement is about as clean as healthcare economics gets: when you make the hospital financially responsible for what happens after the patient leaves, patients spend less time in nursing homes, have fewer complications, and cost Medicare significantly less money. The same logic applies to any high-volume procedure with a predictable post-acute care pattern. The challenge is applying it to medical conditions where the post-acute trajectory is far less predictable."
+                "body": "The bundled payment evidence for joint replacement is about as clean as healthcare economics gets: when you make the hospital financially responsible for what happens after the patient leaves, patients spend less time in nursing homes, without more complications or readmissions, and cost Medicare less money. The same logic applies to any high-volume procedure with a predictable post-acute care pattern. The challenge is applying it to medical conditions where the post-acute trajectory is far less predictable."
               },
               {
                 "type": "text",
@@ -4283,7 +4269,7 @@
               {
                 "type": "text",
                 "heading": "How PMPM Rates Are Set: The Actuarial Core of Capitation",
-                "body": "The financial success or failure of a capitation arrangement is largely determined before any patient is seen, at the point where the PMPM rate is negotiated or set. If the rate is set too low relative to the actual cost of providing care to the enrolled population, no amount of care management efficiency will produce a viable financial model. If the rate is set appropriately \u2014 reflecting the health acuity, demographic profile, and social complexity of the enrolled population \u2014 a well-managed capitated provider can generate margins of 3\u20138% while delivering care that is demonstrably better in quality and lower in total cost than the fee-for-service alternative. The actuarial process of setting a PMPM rate involves risk adjustment models that account for enrollee diagnoses, functional status, and social determinants of health, applied to utilization cost data from comparable populations. For Medicare Advantage plans, CMS sets the base rate using the county-level fee-for-service benchmark and adjusts it upward or downward based on each enrollee\u2019s Hierarchical Condition Category (HCC) risk score, a diagnosis-based model that attempts to predict expected healthcare utilization for that individual in the coming year."
+                "body": "The financial success or failure of a capitation arrangement is largely determined before any patient is seen, at the point where the PMPM rate is negotiated or set. If the rate is set too low relative to the actual cost of providing care to the enrolled population, no amount of care management efficiency will produce a viable financial model. If the rate is set appropriately \u2014 reflecting the health acuity, demographic profile, and social complexity of the enrolled population \u2014 a well-managed capitated provider can generate a positive margin while delivering better-coordinated, lower-cost care than the fee-for-service alternative. The actuarial process of setting a PMPM rate involves risk adjustment models that account for enrollee diagnoses, functional status, and social determinants of health, applied to utilization cost data from comparable populations. For Medicare Advantage plans, CMS sets the base rate using the county-level fee-for-service benchmark and adjusts it upward or downward based on each enrollee\u2019s Hierarchical Condition Category (HCC) risk score, a diagnosis-based model that attempts to predict expected healthcare utilization for that individual in the coming year."
               },
               {
                 "type": "text",
@@ -4299,7 +4285,7 @@
               {
                 "type": "text",
                 "heading": "Primary Care Investment as Economic Infrastructure",
-                "body": "One of the most powerful and counterintuitive findings in health economics is that investment in primary care produces returns that are comparable to, and in many cases superior to, investment in specialty care infrastructure \u2014 not in terms of individual clinical case intensity, but in terms of total population health spending and outcomes. The economic mechanism is straightforward once articulated: primary care reduces the incidence of the expensive downstream events \u2014 hospitalizations, emergency visits, specialist procedures, complications of uncontrolled chronic disease \u2014 that account for the vast majority of total healthcare spending. A study published in Health Affairs in 2024 analyzing Medicare spending patterns across 306 hospital referral regions found that regions with above-median primary care physician supply had 11.2% lower total Medicare spending per beneficiary, 18.4% fewer preventable hospital admissions, and 14.7% lower 30-day readmission rates than regions with below-median primary care supply, after controlling for demographic and health status differences.\n\nThe economic return on primary care investment is particularly relevant for value-based care organizations making resource allocation decisions. Under fee-for-service, a hospital has limited financial incentive to invest in expanding primary care capacity in its community \u2014 more primary care visits may mean fewer specialist referrals and fewer hospitalizations, which means less hospital revenue. Under a capitated or shared savings VBC model, the same investment in primary care capacity is a direct cost reduction strategy: every diabetic patient who sees their primary care provider quarterly and maintains target HbA1c levels is a patient who is unlikely to generate an $18,000 diabetic complication admission. The VBC payment model converts primary care from a cost center competing with hospital services for capital allocation into a return-generating infrastructure investment \u2014 which is the single most important realignment that value-based payment architecture produces.\n\nThe evidence in the table above carries an important lesson: the interventions that paid for themselves in trials were targeted ones \u2014 transition coaching for patients leaving the hospital, community health workers for patients with documented unmet social needs \u2014 while broad primary care payment models that spread enhanced payments across whole practice panels reduced hospital use without producing net Medicare savings. An organization implementing a care coordinator program without a functioning risk stratification system to identify which patients the coordinator should prioritize will see substantially lower returns \u2014 because care management applied uniformly across a population is far less efficient than care management targeted to the patients most likely to have high-cost events in the next 12 months. The technology readiness discussion in Module 4 is therefore directly connected to the economics of VBC investment: organizations that build population health data infrastructure before scaling care management programs generate significantly better returns than those that sequence these investments in reverse order.\n\nCare coordination works when it is aimed at the right patients: its effectiveness depends on a functioning risk stratification system that identifies which patients are genuinely high-risk, not just high-cost in the prior year.\n\nPost-discharge transition support has some of the strongest trial evidence in care management: in Coleman\u2019s randomized trial of 750 older adults, transition coaching cut 30-day rehospitalizations from 11.9% to 8.3% and lowered six-month hospital costs, because the cost of coaching is small relative to the cost of a readmission.\n\nCommunity health worker programs are the intervention most directly connected to social determinants of health \u2014 addressing food insecurity, housing instability, and transportation barriers that drive utilization patterns that clinical care alone cannot change \u2014 and Penn\u2019s IMPaCT program returned $2.47 to Medicaid for every dollar invested, within a single fiscal year.\n\nAdvanced primary care transformation is the most comprehensive intervention, but the federal evidence is sobering: neither CPC+ nor Primary Care First produced net Medicare savings once their enhanced payments were counted, and CPC+ practices with incentives to control total cost of care, such as Shared Savings Program participants, did better at lowering costs \u2014 which is why primary care investment pays off most reliably inside a total-cost-of-care arrangement rather than as a stand-alone add-on."
+                "body": "One of the most powerful and counterintuitive findings in health economics is that investment in primary care produces returns that are comparable to, and in many cases superior to, investment in specialty care infrastructure \u2014 not in terms of individual clinical case intensity, but in terms of total population health spending and outcomes. The economic mechanism is straightforward once articulated: primary care reduces the incidence of the expensive downstream events \u2014 hospitalizations, emergency visits, specialist procedures, complications of uncontrolled chronic disease \u2014 that account for the vast majority of total healthcare spending. The evidence is strongest on outcomes and quality: Baicker and Chandra (Health Affairs, 2004) found that states with more general practitioners per capita delivered higher-quality care to Medicare beneficiaries at lower spending, while states with more specialists spent more for lower quality; and Basu and colleagues (JAMA Internal Medicine, 2019) found that every 10 additional primary care physicians per 100,000 people was associated with a 51.5-day increase in life expectancy. Supply alone is not a cost-control lever, however \u2014 a 2009 Health Affairs analysis found that simply having more primary care physicians did not slow spending growth \u2014 which is why payment models that reward primary care for total cost matter.\n\nThe economic return on primary care investment is particularly relevant for value-based care organizations making resource allocation decisions. Under fee-for-service, a hospital has limited financial incentive to invest in expanding primary care capacity in its community \u2014 more primary care visits may mean fewer specialist referrals and fewer hospitalizations, which means less hospital revenue. Under a capitated or shared savings VBC model, the same investment in primary care capacity is a direct cost reduction strategy: every diabetic patient who sees their primary care provider quarterly and maintains target HbA1c levels is a patient less likely to generate a costly admission for a diabetic complication. The VBC payment model converts primary care from a cost center competing with hospital services for capital allocation into a return-generating infrastructure investment \u2014 which is the single most important realignment that value-based payment architecture produces.\n\nThe evidence in the table above carries an important lesson: the interventions that paid for themselves in trials were targeted ones \u2014 transition coaching for patients leaving the hospital, community health workers for patients with documented unmet social needs \u2014 while broad primary care payment models that spread enhanced payments across whole practice panels reduced hospital use without producing net Medicare savings. An organization implementing a care coordinator program without a functioning risk stratification system to identify which patients the coordinator should prioritize will see substantially lower returns \u2014 because care management applied uniformly across a population is far less efficient than care management targeted to the patients most likely to have high-cost events in the next 12 months. The technology readiness discussion in Module 4 is therefore directly connected to the economics of VBC investment: organizations that build population health data infrastructure before scaling care management programs generate significantly better returns than those that sequence these investments in reverse order.\n\nCare coordination works when it is aimed at the right patients: its effectiveness depends on a functioning risk stratification system that identifies which patients are genuinely high-risk, not just high-cost in the prior year.\n\nPost-discharge transition support has some of the strongest trial evidence in care management: in Coleman\u2019s randomized trial of 750 older adults, transition coaching cut 30-day rehospitalizations from 11.9% to 8.3% and lowered six-month hospital costs, because the cost of coaching is small relative to the cost of a readmission.\n\nCommunity health worker programs are the intervention most directly connected to social determinants of health \u2014 addressing food insecurity, housing instability, and transportation barriers that drive utilization patterns that clinical care alone cannot change \u2014 and Penn\u2019s IMPaCT program returned $2.47 to Medicaid for every dollar invested, within a single fiscal year.\n\nAdvanced primary care transformation is the most comprehensive intervention, but the federal evidence is sobering: neither CPC+ nor Primary Care First produced net Medicare savings once their enhanced payments were counted, and CPC+ practices with incentives to control total cost of care, such as Shared Savings Program participants, did better at lowering costs \u2014 which is why primary care investment pays off most reliably inside a total-cost-of-care arrangement rather than as a stand-alone add-on."
               },
               {
                 "type": "callout",
@@ -4366,7 +4352,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The devil, as always, is in the details. The benchmark calculation uses a three-year historical average of your patient population\u2019s spending, adjusted upward by a national trend factor. For ACOs whose patient populations were already low-cost before joining the program, this creates an immediate structural problem: their benchmark is low, so even excellent care management produces modest absolute savings, making the shared savings payment insufficient to cover the care management infrastructure investment. This is called the \u201clow benchmark problem,\u201d and it is the primary reason that rural and safety-net ACOs, which often already operate lean systems with lower baseline utilization, struggle to generate shared savings large enough to justify Advanced APM participation costs. CMS has modified the benchmark methodology three times since 2012 in response to this problem, most recently in the Pathways to Success Rule of 2018 and the 2023 ACO Primary Care Flex Model, but the fundamental tension between historical benchmarking and equitable VBC participation for already-efficient providers remains unresolved.",
+                    "text": "The devil, as always, is in the details. The benchmark calculation uses a three-year historical average of your patient population\u2019s spending, adjusted upward by a national trend factor. For ACOs whose patient populations were already low-cost before joining the program, this creates an immediate structural problem: their benchmark is low, so even excellent care management produces modest absolute savings, making the shared savings payment insufficient to cover the care management infrastructure investment. This is called the \u201clow benchmark problem,\u201d and it is the primary reason that rural and safety-net ACOs, which often already operate lean systems with lower baseline utilization, struggle to generate shared savings large enough to justify Advanced APM participation costs. CMS has revised the benchmark methodology repeatedly in response to this problem \u2014 adding regional adjustments for agreement periods beginning in 2017, reworking them in the 2018 Pathways to Success rule, and, in the CY2023 Physician Fee Schedule rule, adding a prior-savings adjustment and an administratively set growth factor (the Accountable Care Prospective Trend) to blunt the ratchet effect \u2014 but the fundamental tension between historical benchmarking and equitable VBC participation for already-efficient providers remains unresolved.",
                     "marks": []
                   }
                 ]
@@ -4512,7 +4498,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The bundled payment evidence for joint replacement is about as clean as healthcare economics gets: when you make the hospital financially responsible for what happens after the patient leaves, patients spend less time in nursing homes, have fewer complications, and cost Medicare significantly less money. The same logic applies to any high-volume procedure with a predictable post-acute care pattern. The challenge is applying it to medical conditions where the post-acute trajectory is far less predictable.",
+                    "text": "The bundled payment evidence for joint replacement is about as clean as healthcare economics gets: when you make the hospital financially responsible for what happens after the patient leaves, patients spend less time in nursing homes, without more complications or readmissions, and cost Medicare less money. The same logic applies to any high-volume procedure with a predictable post-acute care pattern. The challenge is applying it to medical conditions where the post-acute trajectory is far less predictable.",
                     "marks": []
                   }
                 ]
@@ -4572,7 +4558,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The financial success or failure of a capitation arrangement is largely determined before any patient is seen, at the point where the PMPM rate is negotiated or set. If the rate is set too low relative to the actual cost of providing care to the enrolled population, no amount of care management efficiency will produce a viable financial model. If the rate is set appropriately \u2014 reflecting the health acuity, demographic profile, and social complexity of the enrolled population \u2014 a well-managed capitated provider can generate margins of 3\u20138% while delivering care that is demonstrably better in quality and lower in total cost than the fee-for-service alternative. The actuarial process of setting a PMPM rate involves risk adjustment models that account for enrollee diagnoses, functional status, and social determinants of health, applied to utilization cost data from comparable populations. For Medicare Advantage plans, CMS sets the base rate using the county-level fee-for-service benchmark and adjusts it upward or downward based on each enrollee\u2019s Hierarchical Condition Category (HCC) risk score, a diagnosis-based model that attempts to predict expected healthcare utilization for that individual in the coming year.",
+                    "text": "The financial success or failure of a capitation arrangement is largely determined before any patient is seen, at the point where the PMPM rate is negotiated or set. If the rate is set too low relative to the actual cost of providing care to the enrolled population, no amount of care management efficiency will produce a viable financial model. If the rate is set appropriately \u2014 reflecting the health acuity, demographic profile, and social complexity of the enrolled population \u2014 a well-managed capitated provider can generate a positive margin while delivering better-coordinated, lower-cost care than the fee-for-service alternative. The actuarial process of setting a PMPM rate involves risk adjustment models that account for enrollee diagnoses, functional status, and social determinants of health, applied to utilization cost data from comparable populations. For Medicare Advantage plans, CMS sets the base rate using the county-level fee-for-service benchmark and adjusts it upward or downward based on each enrollee\u2019s Hierarchical Condition Category (HCC) risk score, a diagnosis-based model that attempts to predict expected healthcare utilization for that individual in the coming year.",
                     "marks": []
                   }
                 ]
@@ -4644,7 +4630,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "One of the most powerful and counterintuitive findings in health economics is that investment in primary care produces returns that are comparable to, and in many cases superior to, investment in specialty care infrastructure \u2014 not in terms of individual clinical case intensity, but in terms of total population health spending and outcomes. The economic mechanism is straightforward once articulated: primary care reduces the incidence of the expensive downstream events \u2014 hospitalizations, emergency visits, specialist procedures, complications of uncontrolled chronic disease \u2014 that account for the vast majority of total healthcare spending. A study published in Health Affairs in 2024 analyzing Medicare spending patterns across 306 hospital referral regions found that regions with above-median primary care physician supply had 11.2% lower total Medicare spending per beneficiary, 18.4% fewer preventable hospital admissions, and 14.7% lower 30-day readmission rates than regions with below-median primary care supply, after controlling for demographic and health status differences.",
+                    "text": "One of the most powerful and counterintuitive findings in health economics is that investment in primary care produces returns that are comparable to, and in many cases superior to, investment in specialty care infrastructure \u2014 not in terms of individual clinical case intensity, but in terms of total population health spending and outcomes. The economic mechanism is straightforward once articulated: primary care reduces the incidence of the expensive downstream events \u2014 hospitalizations, emergency visits, specialist procedures, complications of uncontrolled chronic disease \u2014 that account for the vast majority of total healthcare spending. The evidence is strongest on outcomes and quality: Baicker and Chandra (Health Affairs, 2004) found that states with more general practitioners per capita delivered higher-quality care to Medicare beneficiaries at lower spending, while states with more specialists spent more for lower quality; and Basu and colleagues (JAMA Internal Medicine, 2019) found that every 10 additional primary care physicians per 100,000 people was associated with a 51.5-day increase in life expectancy. Supply alone is not a cost-control lever, however \u2014 a 2009 Health Affairs analysis found that simply having more primary care physicians did not slow spending growth \u2014 which is why payment models that reward primary care for total cost matter.",
                     "marks": []
                   }
                 ]
@@ -4656,7 +4642,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The economic return on primary care investment is particularly relevant for value-based care organizations making resource allocation decisions. Under fee-for-service, a hospital has limited financial incentive to invest in expanding primary care capacity in its community \u2014 more primary care visits may mean fewer specialist referrals and fewer hospitalizations, which means less hospital revenue. Under a capitated or shared savings VBC model, the same investment in primary care capacity is a direct cost reduction strategy: every diabetic patient who sees their primary care provider quarterly and maintains target HbA1c levels is a patient who is unlikely to generate an $18,000 diabetic complication admission. The VBC payment model converts primary care from a cost center competing with hospital services for capital allocation into a return-generating infrastructure investment \u2014 which is the single most important realignment that value-based payment architecture produces.",
+                    "text": "The economic return on primary care investment is particularly relevant for value-based care organizations making resource allocation decisions. Under fee-for-service, a hospital has limited financial incentive to invest in expanding primary care capacity in its community \u2014 more primary care visits may mean fewer specialist referrals and fewer hospitalizations, which means less hospital revenue. Under a capitated or shared savings VBC model, the same investment in primary care capacity is a direct cost reduction strategy: every diabetic patient who sees their primary care provider quarterly and maintains target HbA1c levels is a patient less likely to generate a costly admission for a diabetic complication. The VBC payment model converts primary care from a cost center competing with hospital services for capital allocation into a return-generating infrastructure investment \u2014 which is the single most important realignment that value-based payment architecture produces.",
                     "marks": []
                   }
                 ]
@@ -4882,12 +4868,6 @@
                 "_type": "image",
                 "caption": "A three-panel economic visualization for value-based care. The left panel shows a waterfall chart illustrating the volume-to-value transition financial model over five years, with fee-for-service revenue declining in a stepped pattern as care management reduces utilization, shared savings revenue growing from year two onward, and net financial position crossing from negative to positive at year three. The center panel shows the ROI comparison across six care management intervention types as a horizontal bar chart, sorted by ROI ratio, with investment cost and savings bars color-coded in contrasting colors. The right panel shows a scatter plot of 200 MSSP ACOs with years of participation on the x-axis and net savings per beneficiary on the y-axis, illustrating the maturity curve with a regression line showing the inflection point at year three to four of participation. Data source: CMS MSSP Financial and Quality Results 2024.",
                 "alt": "Three-panel economic visualization showing the volume-to-value financial transition model, care management intervention ROI comparison, and MSSP ACO savings maturity curve over years of participation."
-              },
-              {
-                "_key": "blk038",
-                "_type": "video",
-                "url": "https://www.youtube.com/watch?v=HTRAcademy2026M3",
-                "caption": "This 26-minute HTR Academy video module walks through the shared savings contract financial model step by step, using a realistic example of a 6,000-beneficiary ACO to illustrate how the benchmark is calculated, how the minimum savings rate threshold works, how savings are distributed between the ACO and CMS, and what the five-year net financial trajectory looks like under three performance scenarios. A downloadable Excel model is available to HTR Academy subscribers for adaptation to their own organization\u2019s patient population and cost structure."
               }
             ]
           }
@@ -4987,13 +4967,6 @@
                 "type": "text",
                 "heading": "BPCI Advanced: the current Medicare bundle program",
                 "body": "Bundled Payments for Care Improvement Advanced (BPCI Advanced) is CMS's current voluntary bundled payment model. Participants \u2014 hospitals or physician group practices \u2014 take two-sided risk on 32 clinical episode types, including major joint replacement, hip fracture, COPD, and acute myocardial infarction.\n\nSuccessful participants have typically invested in: dedicated care coordinators who follow patients from hospital to post-acute, preferred SNF networks with data-sharing agreements, and real-time tracking of episode spending."
-              },
-              {
-                "type": "video",
-                "mediaType": "youtube",
-                "videoId": "LGHlUA0p0kI",
-                "caption": "Bundled payments explained \u2014 CMS Innovation Center overview (~6 min)",
-                "durationSeconds": 360
               }
             ],
             "quiz": {
@@ -6306,23 +6279,23 @@
                 "stats": [
                   {
                     "_key": "m5st01",
-                    "value": "27%",
-                    "label": "Preventable Hospital Admissions",
-                    "context": "Roughly 1 in 4 hospital admissions in the US is considered preventable \u2014 avoidable with better outpatient management. Source: Agency for Healthcare Research and Quality.",
+                    "value": "12.9%",
+                    "label": "Potentially Preventable Adult Stays",
+                    "context": "In 2017, 3.5 million potentially preventable adult hospital stays \u2014 12.9% of all nonobstetric adult stays \u2014 cost $33.7 billion; heart failure was the most common reason. Source: AHRQ HCUP Statistical Brief #259.",
                     "trend": "down"
                   },
                   {
                     "_key": "m5st02",
-                    "value": "20%",
-                    "label": "30-Day Readmission Rate",
-                    "context": "1 in 5 Medicare patients is readmitted within 30 days of discharge \u2014 often due to poor care transitions, not clinical failure. Source: CMS, 2023.",
+                    "value": "19.6%",
+                    "label": "30-Day Readmissions Before HRRP",
+                    "context": "In 2003\u201304, 19.6% of Medicare beneficiaries discharged from a hospital were readmitted within 30 days \u2014 the finding that helped prompt the Hospital Readmissions Reduction Program. Source: Jencks, Williams & Coleman, New England Journal of Medicine, 2009.",
                     "trend": "down"
                   },
                   {
                     "_key": "m5st03",
-                    "value": "$528B",
-                    "label": "Annual Chronic Disease Spend",
-                    "context": "The US spends over $528 billion annually on the top 10 chronic diseases \u2014 almost all of which are manageable or preventable in primary care. Source: Milken Institute.",
+                    "value": "$1.1T",
+                    "label": "Direct Cost of Chronic Disease",
+                    "context": "Direct US health care costs for chronic conditions totaled $1.1 trillion in 2016 \u2014 nearly 6% of GDP \u2014 led by cardiovascular conditions, diabetes, and Alzheimer's disease. Source: Milken Institute, The Costs of Chronic Disease in the U.S. (2018).",
                     "trend": "up"
                   }
                 ]
@@ -6591,17 +6564,17 @@
                   },
                   {
                     "_key": "m5st05",
-                    "value": "70%",
-                    "label": "Chronic Disease Is Preventable",
-                    "context": "The CDC estimates that 70% of chronic disease burden is preventable through lifestyle changes and early intervention \u2014 exactly what population health management targets.",
+                    "value": "90%",
+                    "label": "Spending Tied to Chronic Conditions",
+                    "context": "Ninety percent of the nation's annual health care expenditures are for people with chronic and mental health conditions \u2014 the population that population health management targets. Source: CDC, Fast Facts: Health and Economic Costs of Chronic Conditions.",
                     "trend": "neutral"
                   },
                   {
                     "_key": "m5st06",
-                    "value": "3x",
-                    "label": "Impact of Care Management",
-                    "context": "Patients enrolled in structured care management programs have 3x better adherence to treatment plans and significantly fewer ED visits. Source: Health Affairs, 2022.",
-                    "trend": "up"
+                    "value": "8.3% vs 11.9%",
+                    "label": "Care Transitions Coaching",
+                    "context": "In a randomized trial, older patients who received four weeks of care-transitions coaching after discharge had a 30-day rehospitalization rate of 8.3%, versus 11.9% for controls. Source: Coleman et al., Archives of Internal Medicine, 2006.",
+                    "trend": "down"
                   }
                 ]
               },
@@ -6624,9 +6597,9 @@
                 "_key": "m5ex01",
                 "eyebrow": "Real-World Example",
                 "title": "ChenMed \u2014 Intensive Primary Care for High-Risk Seniors",
-                "body": "ChenMed operates primary care clinics specifically designed for high-risk Medicare patients. Their model flips the standard formula: instead of seeing 24 patients per day in 15-minute slots, ChenMed physicians see 8 to 10 patients per day for 40-minute visits. Every patient has a dedicated care team. Transportation to appointments is provided. Patients receive monthly wellness visits even when they are feeling fine.",
-                "outcome": "ChenMed patients have 30 to 40 percent fewer hospitalizations and emergency department visits than matched comparison groups. Source: Health Affairs, 2020.",
-                "source": "Health Affairs, 2020; ChenMed internal outcomes reporting"
+                "body": "ChenMed operates primary care centers designed for older, lower-income Medicare Advantage patients with complex chronic illness. Its model inverts the usual primary care formula: physicians carry small patient panels, see patients far more often, and spend more face-to-face time with them, supported by on-site care teams and transportation to appointments.",
+                "outcome": "In a matched comparison of 5,695 patients from each model, ChenMed's 'high-touch' patients averaged 8.7 primary care visits a year versus 3.8 under standard care, had 50% fewer hospital admissions, and cost 28% less. The study was led by ChenMed clinicians with University of Miami co-investigators, so it is not independent.",
+                "source": "Ghany R et al., 'High-Touch Care Leads to Better Outcomes and Lower Costs in a Senior Population,' American Journal of Managed Care, September 2018"
               },
               {
                 "_type": "block",
@@ -6691,24 +6664,17 @@
                 "stats": [
                   {
                     "_key": "m5st07",
-                    "value": "$27.2B",
+                    "value": "$27\u201378B",
                     "label": "Annual Coordination Failure Cost",
-                    "context": "Poor coordination \u2014 duplicated tests, medication errors, missed follow-ups \u2014 costs the US an estimated $27.2 billion annually. Source: Annals of Internal Medicine.",
+                    "context": "Failures of care coordination \u2014 duplicated tests, missed follow-ups, avoidable complications after transitions \u2014 waste an estimated $27.2 billion to $78.2 billion a year. Source: Shrank, Rogstad & Parekh, JAMA, 2019.",
                     "trend": "down"
                   },
                   {
                     "_key": "m5st08",
-                    "value": "58%",
+                    "value": "51.4%",
                     "label": "Adults with Multiple Chronic Conditions",
-                    "context": "More than half of US adults have at least 2 chronic conditions, requiring active coordination among multiple providers. Source: CDC, 2023.",
+                    "context": "In 2023, 51.4% of US adults \u2014 about 130 million people \u2014 reported multiple chronic conditions, including 78.8% of adults 65 and older, requiring active coordination among multiple providers. Source: CDC, Preventing Chronic Disease, 2025 (BRFSS 2013\u20132023).",
                     "trend": "up"
-                  },
-                  {
-                    "_key": "m5st09",
-                    "value": "1 in 3",
-                    "label": "Patients Experience Coordination Failures",
-                    "context": "One in three patients reports experiencing at least one care coordination problem in the past two years. Source: Commonwealth Fund 2022 International Health Policy Survey.",
-                    "trend": "neutral"
                   }
                 ]
               },
@@ -7020,9 +6986,9 @@
                 "_key": "m5ex03",
                 "eyebrow": "Vermont in Focus",
                 "title": "Copley Hospital \u2014 Rural VBC in Morrisville, Vermont",
-                "body": "Copley Hospital is a 25-bed critical access hospital in Morrisville serving a largely rural population. As a member of OneCare Vermont, Copley participates in population health management for its attributed patients. The hospital invested in a care transition program: every patient discharged is followed by a registered nurse for 30 days post-discharge, and a risk stratification tool identifies patients most likely to be readmitted for intensified outreach.",
-                "outcome": "Copley has maintained readmission rates well below state and national averages for a hospital serving a comparably complex patient population \u2014 demonstrating that rural hospitals can achieve VBC goals with the right team structure.",
-                "source": "Vermont DVHA All-Payer Model evaluation, OneCare Vermont reporting"
+                "body": "Copley Hospital is a 25-bed critical access hospital in Morrisville serving a largely rural population. In its 2018 community health needs assessment progress report, filed with the Green Mountain Care Board, Copley described two concrete steps to cut 30-day all-cause readmissions: arranging follow-up with a primary care provider within 7 days of discharge, and reviewing each inpatient readmission in real time to find what went wrong.",
+                "outcome": "Copley reported 30-day all-cause readmission rates of 4.4%\u201317.0% across January\u2013September 2017 (Vermont critical access hospitals: 8.7%\u201316.8%) and 6.92% for January\u2013April 2018 \u2014 below or on par with its critical access peers, showing that a small rural hospital can move the measures VBC contracts reward with simple, disciplined transition steps.",
+                "source": "Copley Hospital, Community Health Needs Assessment Progress Report 2018 (Green Mountain Care Board hospital budget filing B19H31)"
               },
               {
                 "_type": "block",
@@ -7074,7 +7040,7 @@
                   {
                     "_type": "span",
                     "_key": "m5hls2",
-                    "text": "Physician burnout is at crisis levels: 63% of physicians report burnout symptoms, with administrative burden and loss of clinical autonomy cited as primary drivers. VBC, done well, can restore what drew clinicians to medicine: time with patients, team support, and a payment system that rewards doing what is actually right for the patient. Source: AMA National Burnout Survey, 2025.",
+                    "text": "Physician burnout peaked at 62.8% in 2021 and, though it has eased since \u2014 43.2% of physicians reported at least one symptom in 2024 \u2014 it remains high, with administrative burden a leading driver. VBC, done well, can restore what drew clinicians to medicine: time with patients, team support, and a payment system that rewards doing what is actually right for the patient. Source: American Medical Association national burnout survey data, 2021\u20132024.",
                     "marks": []
                   }
                 ],
@@ -8070,7 +8036,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The good news for learners approaching this material is that you do not need to become a healthcare attorney to understand the policy landscape for VBC. What you do need is a working knowledge of four things: the major federal legislation that authorized and funds VBC programs, the agency \u2014 CMS and its Innovation Center \u2014 that designs and operates most federal VBC models, the specific legal waivers that allow VBC arrangements to operate outside standard fee-for-service rules, and the state-level Medicaid policy environment that governs VBC adoption for the Medicaid population, which represents 22% of all U.S. healthcare spending and the majority of payer mix for rural and safety-net hospitals. This module covers all four in sequence, with enough practical depth that you can apply the concepts to your organization\u2019s specific situation.",
+                    "text": "The good news for learners approaching this material is that you do not need to become a healthcare attorney to understand the policy landscape for VBC. What you do need is a working knowledge of four things: the major federal legislation that authorized and funds VBC programs, the agency \u2014 CMS and its Innovation Center \u2014 that designs and operates most federal VBC models, the specific legal waivers that allow VBC arrangements to operate outside standard fee-for-service rules, and the state-level Medicaid policy environment that governs VBC adoption for the Medicaid population, which accounts for about 18% of all U.S. healthcare spending and the majority of payer mix for rural and safety-net hospitals. This module covers all four in sequence, with enough practical depth that you can apply the concepts to your organization\u2019s specific situation.",
                     "marks": []
                   }
                 ]
@@ -8094,7 +8060,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The Center for Medicare and Medicaid Innovation, universally known as CMMI, was established by Section 3021 of the Affordable Care Act in 2010 with a mandatory appropriation of $10 billion over ten years and a statutory mission to test, evaluate, and scale new payment and delivery models that reduce spending while preserving or improving quality. CMMI\u2019s legal authority is significant: it can implement new payment models for Medicare and Medicaid without going through the standard notice-and-comment rulemaking process that governs most federal regulation, as long as the model operates within specific statutory parameters and is evaluated by CMS\u2019s Office of the Actuary. This streamlined authority was deliberately designed to allow rapid policy experimentation \u2014 the legislative drafters recognized that VBC model design requires iteration and learning, and that subjecting every model modification to a 12-month rulemaking cycle would make meaningful innovation impossible.",
+                    "text": "The Center for Medicare and Medicaid Innovation, universally known as CMMI, was established by Section 3021 of the Affordable Care Act in 2010 with a mandatory appropriation of $10 billion over ten years and a statutory mission to test, evaluate, and scale new payment and delivery models that reduce spending while preserving or improving quality. CMMI\u2019s legal authority is significant: it can implement new payment models for Medicare and Medicaid without going through the standard notice-and-comment rulemaking process that governs most federal regulation, as long as the model operates within specific statutory parameters; expanding a model nationally additionally requires the CMS Chief Actuary to certify that expansion would not increase net program spending. This streamlined authority was deliberately designed to allow rapid policy experimentation \u2014 the legislative drafters recognized that VBC model design requires iteration and learning, and that subjecting every model modification to a 12-month rulemaking cycle would make meaningful innovation impossible.",
                     "marks": []
                   }
                 ]
@@ -8106,7 +8072,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "Since 2011, CMMI has launched more than 50 distinct payment model pilots across Medicare and Medicaid, covering primary care transformation, specialty care bundling, accountable care organizations, direct contracting, and state-level all-payer models. The budget allocated per model varies enormously \u2014 from small demonstration projects covering a few thousand beneficiaries to large-scale national programs like the Medicare Shared Savings Program, which enrolled 11.2 million beneficiaries by 2025. CMMI\u2019s mandate requires it to demonstrate that each model either reduces net Medicare spending, improves quality without increasing spending, or both. Models that fail to meet these thresholds are terminated. As of 2025, CMMI has terminated 14 models for insufficient evidence of savings or quality improvement, a track record that reflects honest evaluation but has also generated criticism from providers who invested substantially in model infrastructure before termination decisions.",
+                    "text": "Since 2011, CMMI has launched more than 50 distinct payment model pilots across Medicare and Medicaid, covering primary care transformation, specialty care bundling, accountable care organizations, direct contracting, and state-level all-payer models. The budget allocated per model varies enormously \u2014 from small demonstration projects covering a few thousand beneficiaries to large-scale national programs like the Medicare Shared Savings Program, which enrolled 11.2 million beneficiaries by 2025. CMMI\u2019s mandate requires it to demonstrate that each model either reduces net Medicare spending, improves quality without increasing spending, or both. Models that fail to meet these thresholds can be modified or terminated. CMMI's own 2021 strategy review found that only six of its more than 50 models had produced statistically significant savings, and in March 2025 it announced it would end four models early, effective December 31, 2025 \u2014 Primary Care First, Making Care Primary, ESRD Treatment Choices, and the Maryland Total Cost of Care Model \u2014 citing evaluations and forecasts of increased spending; it is a record that reflects honest evaluation but has also drawn criticism from providers who invested substantially in model infrastructure before termination decisions.",
                     "marks": []
                   }
                 ]
@@ -8118,7 +8084,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "CMMI\u2019s authority to move faster than the standard rulemaking process is its most valuable feature and its most politically contested one. Every model CMMI launches is a hypothesis about how to organize care better. Some hypotheses are wrong. The question is whether the system is learning fast enough from both successes and failures. \u2014 Dr. Rahul Rajkumar, former CMMI Deputy Director, Health Affairs Blog, 2024.",
+                    "text": "CMMI\u2019s authority to move faster than the standard rulemaking process is its most valuable feature and its most politically contested one. Every model CMMI launches is a hypothesis about how to organize care better. Some hypotheses are wrong. The question is whether the system is learning fast enough from both successes and failures.",
                     "marks": []
                   }
                 ]
@@ -8154,7 +8120,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "MACRA\u2019s two tracks work as follows. Physicians who remain in traditional fee-for-service Medicare participate in the Merit-based Incentive Payment System, or MIPS, which adjusts their annual Medicare payments up or down by up to 9% based on performance across four categories: quality (45% weight), promoting interoperability (25%), improvement activities (15%), and cost (15%). MIPS is designed as a transitional step \u2014 it maintains the fee-for-service base payment structure while adding a performance overlay that rewards quality and penalizes inefficiency. The alternative track, and the one that MACRA\u2019s architects intended as the destination, is participation in an Advanced Alternative Payment Model, or APM, which includes CMS-approved VBC arrangements that meet specific risk and quality criteria. Physicians who generate a sufficient share of their Medicare revenue through APM participation receive a 5% lump-sum bonus payment and are exempt from MIPS reporting requirements \u2014 a substantial financial incentive to move toward more advanced VBC structures.",
+                    "text": "MACRA\u2019s two tracks work as follows. Physicians who remain in traditional fee-for-service Medicare participate in the Merit-based Incentive Payment System, or MIPS, which adjusts their annual Medicare payments up or down by up to 9% based on performance across four categories: quality (30% weight), cost (30%), promoting interoperability (25%), and improvement activities (15%) \u2014 the weights in effect since the 2022 performance year. MIPS is designed as a transitional step \u2014 it maintains the fee-for-service base payment structure while adding a performance overlay that rewards quality and penalizes inefficiency. The alternative track, and the one that MACRA\u2019s architects intended as the destination, is participation in an Advanced Alternative Payment Model, or APM, which includes CMS-approved VBC arrangements that meet specific risk and quality criteria. Physicians who generate a sufficient share of their Medicare revenue through APM participation become Qualifying APM Participants \u2014 originally earning a 5% lump-sum bonus (since reduced and, for 2025 performance onward, lapsed) and a higher fee-schedule update \u2014 and are exempt from MIPS reporting requirements \u2014 a substantial financial incentive to move toward more advanced VBC structures.",
                     "marks": []
                   }
                 ]
@@ -8238,7 +8204,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "Policy Insight for Practice Leaders: If your organization\u2019s physicians are currently in MIPS and scoring below 75, you are almost certainly paying more in administrative reporting costs than you are receiving in payment bonuses. The CMS data consistently shows that the cost of MIPS compliance for small and independent practices averages $12,800 per physician per year in staff time and technology costs. Joining an ACO or Advanced APM eliminates this burden while generating shared savings upside. The question is not whether to make the move \u2014 it is when your organization has the infrastructure to do it responsibly.",
+                    "text": "Policy Insight for Practice Leaders: If your organization\u2019s physicians are currently in MIPS and scoring below 75, you are almost certainly paying more in administrative reporting costs than you are receiving in payment bonuses. A 2021 study of independent practices by Khullar and colleagues (JAMA Health Forum) put the cost of MIPS participation at $12,811 per physician per year in 2019, driven by about 200 hours of physician and staff time. Joining an ACO or Advanced APM eliminates this burden while generating shared savings upside. The question is not whether to make the move \u2014 it is when your organization has the infrastructure to do it responsibly.",
                     "marks": []
                   }
                 ]
@@ -8274,7 +8240,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "Consider a simple VBC arrangement: a hospital wants to share a portion of the savings generated by an ACO with the primary care physicians who successfully manage their attributed patient panels and reduce unnecessary hospitalizations. Under a strict reading of the Anti-Kickback Statute, this payment could be characterized as remuneration to physicians for reducing referrals to the hospital \u2014 which is exactly what the statute was written to prohibit when the financial relationship runs in the other direction. In November 2020, CMS and the Department of Justice\u2019s Office of Inspector General simultaneously published new rules \u2014 commonly called the Stark Law and AKS VBC Exceptions \u2014 that created explicit regulatory safe harbors for value-based arrangements meeting specific criteria. These exceptions are the legal foundation on which most current VBC contract structures rest, and understanding their existence (if not their full technical detail) is important context for any leader involved in VBC contract negotiation.",
+                    "text": "Consider a simple VBC arrangement: a hospital wants to share a portion of the savings generated by an ACO with the primary care physicians who successfully manage their attributed patient panels and reduce unnecessary hospitalizations. Under a strict reading of the Anti-Kickback Statute, this payment could be characterized as remuneration to physicians for reducing referrals to the hospital \u2014 which is exactly what the statute was written to prohibit when the financial relationship runs in the other direction. In November 2020, CMS (for the Stark Law) and the HHS Office of Inspector General (for the Anti-Kickback Statute) simultaneously published new rules \u2014 commonly called the Stark Law and AKS VBC Exceptions \u2014 that created explicit regulatory safe harbors for value-based arrangements meeting specific criteria. These exceptions are the legal foundation on which most current VBC contract structures rest, and understanding their existence (if not their full technical detail) is important context for any leader involved in VBC contract negotiation.",
                     "marks": []
                   }
                 ]
@@ -8322,7 +8288,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "Medicaid, the joint federal-state health insurance program for low-income Americans, covers 90 million people and represents 22% of all U.S. healthcare spending. For rural and safety-net hospitals, Medicaid is often the dominant payer \u2014 in some Critical Access Hospitals, Medicaid accounts for more than 40% of patient volume. Any serious discussion of VBC adoption must therefore grapple with Medicaid policy, and Medicaid policy is, by design, a state-level affair. Under the Social Security Act, the federal government sets minimum Medicaid standards and matches state spending at rates ranging from 50% to 90% depending on state per-capita income \u2014 but states have substantial flexibility in how they design their Medicaid programs, including how they pay providers. This flexibility has produced a 50-state patchwork of Medicaid VBC approaches that range from nationally leading to years behind, often with little correlation to state wealth or healthcare system capacity.",
+                    "text": "Medicaid, the joint federal-state health insurance program for low-income Americans, covered about 76 million people together with CHIP at the end of 2025 and accounts for about 18% of all U.S. healthcare spending. For rural and safety-net hospitals, Medicaid is often the dominant payer \u2014 in some Critical Access Hospitals, Medicaid accounts for more than 40% of patient volume. Any serious discussion of VBC adoption must therefore grapple with Medicaid policy, and Medicaid policy is, by design, a state-level affair. Under the Social Security Act, the federal government sets minimum Medicaid standards and matches state spending at a regular rate (FMAP) that runs from a 50% floor to about 77% depending on state per-capita income, with a separate 90% match for the ACA expansion population \u2014 but states have substantial flexibility in how they design their Medicaid programs, including how they pay providers. This flexibility has produced a 50-state patchwork of Medicaid VBC approaches that range from nationally leading to years behind, often with little correlation to state wealth or healthcare system capacity.",
                     "marks": []
                   }
                 ]
@@ -8334,7 +8300,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "States access this flexibility primarily through two mechanisms: Section 1115 waivers, which allow states to use Medicaid funds in ways not otherwise permitted by federal statute in exchange for CMS approval of a formal waiver application and evaluation framework, and Section 1915 waivers, which allow states to require Medicaid beneficiaries to enroll in managed care organizations rather than traditional fee-for-service Medicaid. As of 2025, 41 states operate Medicaid managed care programs covering at least some beneficiary populations, and 24 states have active Section 1115 waivers that include VBC-oriented payment reform components. The remaining states continue to operate primarily fee-for-service Medicaid programs, creating a two-tier national Medicaid environment where the VBC infrastructure, data systems, and provider capabilities in a given state depend heavily on decisions made by state legislatures and Medicaid agencies that most healthcare professionals are only vaguely aware of.",
+                    "text": "States access this flexibility primarily through two mechanisms: Section 1115 waivers, which allow states to use Medicaid funds in ways not otherwise permitted by federal statute in exchange for CMS approval of a formal waiver application and evaluation framework, and Section 1915 waivers, which allow states to require Medicaid beneficiaries to enroll in managed care organizations rather than traditional fee-for-service Medicaid. As of 2025, 41 states (including DC) contract with comprehensive Medicaid managed care organizations, and many states use Section 1115 waivers to add VBC-oriented payment reform components. The remaining states continue to operate primarily fee-for-service Medicaid programs, creating a two-tier national Medicaid environment where the VBC infrastructure, data systems, and provider capabilities in a given state depend heavily on decisions made by state legislatures and Medicaid agencies that most healthcare professionals are only vaguely aware of.",
                     "marks": []
                   }
                 ]
@@ -8347,7 +8313,7 @@
                 "code": [
                   {
                     "State": "Massachusetts",
-                    "Medicaid VBC Approach": "MassHealth ACO Program \u2014 full-risk global budget ACOs",
+                    "Medicaid VBC Approach": "MassHealth ACO Program \u2014 Accountable Care Partnership Plans take full capitated risk; Primary Care ACOs take shared risk without insurance risk",
                     "Key Waiver": "Section 1115 \u2014 MassHealth Delivery System Reform",
                     "SDOH Integration": "Required: housing, food, transportation screenings"
                   },
@@ -8367,7 +8333,7 @@
                     "State": "North Carolina",
                     "Medicaid VBC Approach": "NC Medicaid Managed Care with VBC incentive overlays",
                     "Key Waiver": "Section 1115 \u2014 Healthy Opportunities Pilots",
-                    "SDOH Integration": "Pilots in 5 regions covering food, housing, transportation"
+                    "SDOH Integration": "Pilots in 3 regions covering food, housing, transportation, interpersonal safety; services paused July 1, 2025 when state funding lapsed"
                   },
                   {
                     "State": "Texas",
@@ -8414,7 +8380,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The CMS All-Payer Health Equity Approaches and Development Model, known as AHEAD, launched in 2023 and represents the most ambitious federal VBC policy experiment currently active in the United States. AHEAD is fundamentally different from previous CMS models in one critical way: it operates across all payers simultaneously, not just Medicare. In the participating states \u2014 Maryland, Connecticut, Hawaii, Rhode Island, and downstate New York (Vermont signed in January 2025 but withdrew in July 2026) \u2014 CMS is working with state governments and commercial insurers to establish coordinated spending targets that apply to Medicare, Medicaid, and commercial insurance simultaneously. The goal is to eliminate the perverse incentive created by single-payer VBC models, where a provider that successfully reduces costs for its Medicare ACO population may simply shift utilization to its commercially insured population, producing savings for Medicare at the expense of commercial payer spending.",
+                    "text": "The CMS AHEAD Model \u2014 announced in 2023 as the States Advancing All-Payer Health Equity Approaches and Development Model and renamed Achieving Healthcare Efficiency through Accountable Design after CMS redesigned it in September 2025 \u2014 represents the most ambitious federal VBC policy experiment currently active in the United States. AHEAD is fundamentally different from previous CMS models in one critical way: it operates across all payers simultaneously, not just Medicare. In the participating states \u2014 Maryland, Connecticut, Hawaii, Rhode Island, and downstate New York (Vermont signed in January 2025 but withdrew in July 2026) \u2014 CMS is working with state governments and commercial insurers to establish coordinated spending targets that apply to Medicare, Medicaid, and commercial insurance simultaneously. The goal is to eliminate the perverse incentive created by single-payer VBC models, where a provider that successfully reduces costs for its Medicare ACO population may simply shift utilization to its commercially insured population, producing savings for Medicare at the expense of commercial payer spending.",
                     "marks": []
                   }
                 ]
@@ -8426,7 +8392,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "AHEAD\u2019s architecture has three components that build on each other. Hospital Global Budgets establish annual spending targets for inpatient and outpatient hospital care, similar to the model Maryland has operated since 1977 under a waiver from standard Medicare payment rules. Primary Care Investment establishes a per-capita funding floor for primary care services in each participating state, addressing the underfunding of primary care that Module 1 identified as a structural driver of the U.S. spending-outcomes gap. And the Health Equity Plan requires each participating state to establish specific, measurable goals for reducing health outcome disparities across racial, ethnic, geographic, and socioeconomic dimensions, with CMS oversight of progress toward those goals as a condition of continued model participation. AHEAD\u2019s early results will not be statistically meaningful until 2027 at the earliest, but its structural design represents the most coherent attempt yet to address the whole-system payment reform that health economists have argued is necessary for genuine transformation.",
+                    "text": "AHEAD\u2019s architecture has three components that build on each other. Hospital Global Budgets establish annual spending targets for inpatient and outpatient hospital care, similar to the all-payer hospital global budgets Maryland has operated statewide since 2014, built on the all-payer rate-setting system it has run under a Medicare waiver since 1977. Primary Care Investment establishes a per-capita funding floor for primary care services in each participating state, addressing the underfunding of primary care that Module 1 identified as a structural driver of the U.S. spending-outcomes gap. And population health accountability \u2014 originally a state Health Equity Plan with disparity-reduction goals \u2014 was replaced in CMS's September 2025 redesign by statewide and hospital Population Health Accountability Plans focused on preventive care and chronic disease prevention, while the requirements to report quality by race and ethnicity and to submit demographic data were dropped and states must now adopt at least two policies promoting choice and competition. AHEAD\u2019s early results will not be statistically meaningful until 2027 at the earliest, but its structural design represents the most coherent attempt yet to address the whole-system payment reform that health economists have argued is necessary for genuine transformation.",
                     "marks": []
                   }
                 ]
@@ -8438,7 +8404,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The AHEAD Model is not a pilot. It is a policy architecture for what the American healthcare payment system could look like at scale \u2014 one where no payer is an island, where primary care is funded as infrastructure rather than as a commodity, and where health equity is a contractual obligation rather than an aspiration. Whether it works depends entirely on whether the participating states build the administrative and data infrastructure to make the targets meaningful.",
+                    "text": "The AHEAD Model is not a pilot. It is a policy architecture for what the American healthcare payment system could look like at scale \u2014 one where no payer is an island, where primary care is funded as infrastructure rather than as a commodity, and where population health is a contractual obligation rather than an aspiration. Whether it works depends entirely on whether the participating states build the administrative and data infrastructure to make the targets meaningful.",
                     "marks": []
                   }
                 ]
@@ -8554,7 +8520,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The most important single insight from this module is that policy does not just regulate VBC \u2014 it enables it. The shared savings that MSSP ACOs distribute to physicians are legal because of CMMI\u2019s model authority and the AKS safe harbor. The global budgets that Maryland hospitals operate under are legal because of a 47-year-old CMS waiver. The care coordination resources that a hospital shares with its independent physician partners are legally protected because of the 2020 VBC exceptions. Every advanced VBC arrangement you will encounter in your career rests on a specific legal and regulatory foundation. Understanding that foundation \u2014 at least at the level of knowing which questions to ask your legal team \u2014 is not optional for any leader who wants to move their organization toward value.",
+                    "text": "The most important single insight from this module is that policy does not just regulate VBC \u2014 it enables it. The shared savings that MSSP ACOs distribute to physicians are legal because of CMMI\u2019s model authority and the AKS safe harbor. The global budgets that Maryland hospitals operate under rest on the state\u2019s all-payer rate-setting authority, first granted by a Medicare waiver in 1977 and continued today under its AHEAD agreement. The care coordination resources that a hospital shares with its independent physician partners are legally protected because of the 2020 VBC exceptions. Every advanced VBC arrangement you will encounter in your career rests on a specific legal and regulatory foundation. Understanding that foundation \u2014 at least at the level of knowing which questions to ask your legal team \u2014 is not optional for any leader who wants to move their organization toward value.",
                     "marks": []
                   }
                 ]
@@ -8596,7 +8562,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "Determine whether your state is an AHEAD Model participant. If yes, begin engaging your state hospital association and state health department about the hospital global budget timeline and what data your organization will need to submit. If no, note that CMS's September 2025 redesign of AHEAD announced no further cohorts; the existing cohorts run through December 31, 2035.",
+                    "text": "Determine whether your state is an AHEAD Model participant. If yes, begin engaging your state hospital association and state health department about the hospital global budget timeline and what data your organization will need to submit. If no, note that CMS's September 2025 redesign of AHEAD offered an opportunity for two additional states to participate starting in 2028 and/or 2029; all cohorts now run through December 31, 2035.",
                     "marks": []
                   }
                 ]
@@ -8632,12 +8598,6 @@
                 "_type": "image",
                 "caption": "A two-panel policy architecture diagram for U.S. value-based care. The left panel shows the federal policy stack as a vertical hierarchy: Congress at the top (MACRA, ACA Section 3021), then CMS, then CMMI, then individual model types (ACOs, bundles, capitation, AHEAD), with arrows showing authority flow and legal waivers annotated at each level. The right panel shows the state-federal Medicaid relationship as a Venn diagram with the federal minimum standards circle, the state flexibility circle, and Section 1115 and 1915 waiver authority shown as the overlap zone where VBC Medicaid innovation occurs. Key programs are labeled within each zone.",
                 "alt": "Federal and state policy architecture diagram showing the legal and regulatory structure enabling value-based care in the United States, from Congressional authorization through CMMI model design to state Medicaid waiver programs."
-              },
-              {
-                "_key": "blk046",
-                "_type": "video",
-                "url": "https://www.youtube.com/watch?v=HTRAcademy2026M2",
-                "caption": "This 22-minute HTR Academy video module covers the MACRA payment track decision framework, walking through a real-world scenario of a 12-physician primary care practice deciding between remaining in MIPS and joining an ACO as an Advanced APM participant. The video uses a side-by-side financial model to show the five-year revenue implications of each track under three performance scenarios, and identifies the three data infrastructure investments the practice would need to make before APM participation would be financially rational."
               }
             ],
             "tags": []
@@ -8648,7 +8608,7 @@
             "pillar": "technology",
             "order": 6,
             "title": "Value-Based Care Fundamentals \u2014 Module 4: The Technology Pillar \u2014 Data, AI, and the Digital Infrastructure That Makes VBC Work",
-            "summary": "Module 4 of the HTR Academy Value-Based Care Fundamentals course examines the technology infrastructure that value-based care requires to function \u2014 and what happens when that infrastructure is missing. This module explains, in plain language, what interoperable electronic health records, health information exchange, and AI-powered risk stratification tools actually do in a VBC context, why 34% of rural Critical Access Hospitals remain technology-unready for advanced VBC participation, and how the federal interoperability agenda \u2014 including the 21st Century Cures Act, the CMS Interoperability Rule, and the TEFCA framework \u2014 is building the data infrastructure that VBC depends upon. By the end of this module, learners will understand the specific technology capabilities that VBC models require, the sequence in which they should be built, and the federal programs that fund them.",
+            "summary": "Module 4 of the HTR Academy Value-Based Care Fundamentals course examines the technology infrastructure that value-based care requires to function \u2014 and what happens when that infrastructure is missing. This module explains, in plain language, what interoperable electronic health records, health information exchange, and AI-powered risk stratification tools actually do in a VBC context, why many rural Critical Access Hospitals remain technology-unready for advanced VBC participation, and how the federal interoperability agenda \u2014 including the 21st Century Cures Act, the CMS Interoperability Rule, and the TEFCA framework \u2014 is building the data infrastructure that VBC depends upon. By the end of this module, learners will understand the specific technology capabilities that VBC models require, the sequence in which they should be built, and the federal programs that fund them.",
             "estimatedMinutes": 25,
             "objectives": [
               {
@@ -8728,11 +8688,13 @@
                 "style": "normal",
                 "children": [
                   {
+                    "_key": "blk005-s",
                     "_type": "span",
-                    "text": "The United States made a massive federal investment in EHR adoption through the HITECH Act of 2009, which appropriated $27 billion in Medicare and Medicaid incentive payments to encourage providers to implement certified EHR systems and demonstrate \u201cmeaningful use\u201d \u2014 a defined set of capabilities including electronic prescribing, clinical decision support, and patient portal access. By 2021, 88% of hospitals and 78% of office-based physicians had implemented certified EHR systems, a transformation from the 9% hospital adoption rate that existed in 2008. This is one of the most rapid technology adoption curves in the history of any industry, and it created the clinical data foundation that value-based care analytics requires. However, EHR adoption rates mask significant quality variation that is directly relevant to VBC capability. Having a certified EHR does not mean having a fully configured, fully utilized EHR that generates high-quality structured data. Many providers, particularly smaller rural practices and critical access hospitals, implemented EHR systems at the minimum level required to qualify for HITECH incentive payments, resulting in EHR installations that function primarily as billing and documentation tools rather than population health data platforms.",
-                    "marks": []
+                    "marks": [],
+                    "text": "The United States made a massive federal investment in EHR adoption through the HITECH Act of 2009, which appropriated $27 billion in Medicare and Medicaid incentive payments to encourage providers to implement certified EHR systems and demonstrate \u201cmeaningful use\u201d \u2014 a defined set of capabilities including electronic prescribing, clinical decision support, and patient portal access. Certified EHR adoption among non-federal acute-care hospitals rose from roughly 10% in 2008 to about 96% by 2021 (Health Affairs; ONC), one of the most rapid technology adoption curves in any industry, and it created the clinical data foundation that value-based care analytics requires. However, adoption rates mask significant quality variation that is directly relevant to VBC capability. Having a certified EHR does not mean having a fully configured, fully utilized EHR that generates high-quality structured data. Many providers, particularly smaller rural practices and critical access hospitals, implemented EHR systems at the minimum level required to qualify for HITECH incentive payments, resulting in installations that function primarily as billing and documentation tools rather than population health data platforms."
                   }
-                ]
+                ],
+                "markDefs": []
               },
               {
                 "_key": "blk006",
@@ -8741,7 +8703,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The VBC-relevant EHR capabilities that matter most are not the basic documentation features that HITECH required, but the advanced data quality and interoperability features that turn an EHR from a digital chart room into a population health intelligence system. These include structured problem lists and medication lists that use standardized coding (ICD-10 for diagnoses, RxNorm for medications, SNOMED CT for clinical concepts) rather than free-text notes; care gap reporting that identifies patients overdue for preventive services or chronic disease monitoring; patient panel management tools that allow care coordinators to view their entire assigned patient population sorted by risk level; and FHIR API connectivity that allows the EHR to exchange data with external systems using the standardized data format that the 21st Century Cures Act mandated in 2020. As of 2024, only 54% of Critical Access Hospitals have all four of these capabilities fully implemented and actively used, compared to 79% of urban academic medical centers \u2014 a technology readiness gap that directly correlates with rural hospital VBC participation rates.",
+                    "text": "The VBC-relevant EHR capabilities that matter most are not the basic documentation features that HITECH required, but the advanced data quality and interoperability features that turn an EHR from a digital chart room into a population health intelligence system. These include structured problem lists and medication lists that use standardized coding (ICD-10 for diagnoses, RxNorm for medications, SNOMED CT for clinical concepts) rather than free-text notes; care gap reporting that identifies patients overdue for preventive services or chronic disease monitoring; patient panel management tools that allow care coordinators to view their entire assigned patient population sorted by risk level; and FHIR API connectivity that allows the EHR to exchange data with external systems using the standardized data format that the 21st Century Cures Act mandated in 2020. Federal data show the gap is real: in 2023, 70% of non-federal acute care hospitals engaged in all four domains of interoperable exchange (sending, receiving, finding, and integrating patient data), but only 43% did so routinely, and small, rural, critical access, and independent hospitals engaged less often than better-resourced hospitals (ONC Data Brief No. 71, 2024).",
                     "marks": []
                   }
                 ]
@@ -8777,7 +8739,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The 21st Century Cures Act\u2019s information blocking prohibition changed the competitive dynamics of health IT in a way that CMS\u2019s interoperability rules alone could not have. When vendors and health systems face $1 million penalties for restricting data access, the legal calculus of data hoarding changes overnight. The challenge now is not permission \u2014 it is infrastructure. Building the pipes to carry the data that is now legally required to flow is the work of this decade. \u2014 Don Rucker, former National Coordinator for Health Information Technology, Health IT Buzz, 2024.",
+                    "text": "The 21st Century Cures Act\u2019s information blocking prohibition changed the competitive dynamics of health IT in a way that CMS\u2019s interoperability rules alone could not have. When health IT developers and exchanges face penalties of up to $1 million per violation for restricting data access, and providers face their own federal disincentives, the legal calculus of data hoarding changes overnight. The challenge now is not permission \u2014 it is infrastructure. Building the pipes to carry the data that is now legally required to flow is the work of this decade.",
                     "marks": []
                   }
                 ]
@@ -8813,72 +8775,8 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "TEFCA establishes a set of technical and legal standards that health information networks must meet to become Qualified Health Information Networks (QHINs), and creates a framework under which QHINs are required to share data with each other upon request, effectively creating a nationwide health information exchange network for the first time. As of early 2026, six organizations have been designated as QHINs: eHealth Exchange, Epic Nexus, CommonWell Health Alliance, Kno2, MedAllies, and KONZA National Network. The coverage of these networks is extensive in urban and suburban markets but remains uneven in rural areas, where the combination of fewer participating providers, older EHR systems, and limited broadband infrastructure creates connectivity gaps that directly limit rural ACO and VBC participants\u2019 ability to receive real-time patient data from non-network sources. The FCC\u2019s Healthcare Connect Fund and USDA\u2019s ReConnect Program are the primary federal mechanisms for addressing rural broadband gaps, but as of 2025, 18% of rural hospital locations still lack broadband access meeting the minimum 25 Mbps threshold that reliable EHR connectivity requires.",
+                    "text": "TEFCA establishes a set of technical and legal standards that health information networks must meet to become Qualified Health Information Networks (QHINs), and creates a framework under which QHINs are required to share data with each other upon request, effectively creating a nationwide health information exchange network for the first time. By early 2026, eleven networks had been designated as QHINs \u2014 eHealth Exchange, Epic Nexus, Health Gorilla, KONZA National Network, and MedAllies (December 2023); CommonWell Health Alliance and Kno2 (February 2024); Netsmart; eClinicalWorks; Surescripts; and Oracle Health Information Network (November 2025). The coverage of these networks is extensive in urban and suburban markets but remains uneven in rural areas, where the combination of fewer participating providers, older EHR systems, and limited broadband infrastructure creates connectivity gaps that directly limit rural ACO and VBC participants\u2019 ability to receive real-time patient data from non-network sources. The FCC\u2019s Rural Health Care Program (including its Healthcare Connect Fund) and USDA\u2019s ReConnect Program are the primary federal mechanisms for addressing rural broadband gaps, and rural providers\u2019 requests to the FCC program routinely exceed its annual funding cap.",
                     "marks": []
-                  }
-                ]
-              },
-              {
-                "_key": "blk013",
-                "_type": "code",
-                "title": "Health Information Exchange Capability Gap: Rural vs. Urban Healthcare Organizations, 2025",
-                "language": "json",
-                "code": [
-                  {
-                    "Capability": "EHR System: Fully Certified (2015 Edition)",
-                    "Rural CAHs (%)": "66%",
-                    "Urban Hospitals (%)": "94%",
-                    "Gap": "-28 points",
-                    "VBC Impact": "Limits FHIR API connectivity and advanced analytics integration"
-                  },
-                  {
-                    "Capability": "FHIR R4 API: Fully Implemented",
-                    "Rural CAHs (%)": "41%",
-                    "Urban Hospitals (%)": "78%",
-                    "Gap": "-37 points",
-                    "VBC Impact": "Prevents third-party population health app connectivity"
-                  },
-                  {
-                    "Capability": "ADT Alerts: Active (Admit-Discharge-Transfer)",
-                    "Rural CAHs (%)": "52%",
-                    "Urban Hospitals (%)": "87%",
-                    "Gap": "-35 points",
-                    "VBC Impact": "Care coordinators cannot receive real-time patient event notifications"
-                  },
-                  {
-                    "Capability": "State HIE Connected: Active",
-                    "Rural CAHs (%)": "59%",
-                    "Urban Hospitals (%)": "83%",
-                    "Gap": "-24 points",
-                    "VBC Impact": "Limits cross-organizational care gap identification"
-                  },
-                  {
-                    "Capability": "Broadband: 25+ Mbps at facility",
-                    "Rural CAHs (%)": "82%",
-                    "Urban Hospitals (%)": "99%",
-                    "Gap": "-17 points",
-                    "VBC Impact": "EHR performance and telehealth reliability affected"
-                  },
-                  {
-                    "Capability": "Population Health Platform: Deployed",
-                    "Rural CAHs (%)": "31%",
-                    "Urban Hospitals (%)": "72%",
-                    "Gap": "-41 points",
-                    "VBC Impact": "No panel management or risk stratification capability"
-                  },
-                  {
-                    "Capability": "Care Gap Reporting: Active",
-                    "Rural CAHs (%)": "38%",
-                    "Urban Hospitals (%)": "76%",
-                    "Gap": "-38 points",
-                    "VBC Impact": "Cannot systematically identify patients overdue for preventive care"
-                  },
-                  {
-                    "Capability": "AI Risk Stratification: Deployed",
-                    "Rural CAHs (%)": "12%",
-                    "Urban Hospitals (%)": "54%",
-                    "Gap": "-42 points",
-                    "VBC Impact": "High-risk patient identification relies on manual clinical judgment"
                   }
                 ]
               },
@@ -8889,7 +8787,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The capability gap data in the table above represents a structural VBC readiness disparity that policy interventions alone cannot close without significant capital investment. A rural Critical Access Hospital that lacks FHIR R4 API implementation, state HIE connectivity, and a population health platform is not technically capable of the patient data workflows that MSSP ACO participation requires \u2014 not because of organizational will or leadership quality, but because the digital infrastructure that enables those workflows has not been built. The federal programs designed to address this gap \u2014 including the FCC Healthcare Connect Fund\u2019s $7.1 billion rural broadband commitment, ONC\u2019s Health IT Certification Program, and HRSA\u2019s Rural Health Information Technology funding stream \u2014 are necessary but insufficient at their current funding levels to close the rural-urban technology gap within a policy-relevant timeframe.",
+                    "text": "The capability gap between lower-resourced rural hospitals and better-resourced systems represents a structural VBC readiness disparity that policy interventions alone cannot close without significant capital investment. A rural Critical Access Hospital that lacks FHIR R4 API implementation, state HIE connectivity, and a population health platform is not technically capable of the patient data workflows that MSSP ACO participation requires \u2014 not because of organizational will or leadership quality, but because the digital infrastructure that enables those workflows has not been built. The federal programs designed to address this gap \u2014 including the FCC\u2019s Rural Health Care Program, capped at about $724 million for funding year 2025, ONC\u2019s Health IT Certification Program, and HRSA\u2019s Rural Health Information Technology funding stream \u2014 are necessary but insufficient at their current funding levels to close the rural-urban technology gap within a policy-relevant timeframe.",
                     "marks": []
                   }
                 ]
@@ -8925,7 +8823,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "Modern AI-powered risk stratification uses machine learning models trained on large clinical datasets to predict future utilization risk based on a much richer set of signals than historical spending alone. These models incorporate diagnosis trajectories (the sequence and pattern of diagnoses over time, not just their presence or absence), medication adherence signals derived from pharmacy data and EHR medication reconciliation records, laboratory value trends (a gradually rising HbA1c over three visits is a stronger predictor of near-term hospitalization than a single elevated value), social determinants of health flags derived from screening questionnaires and zip-code-level data, and behavioral health diagnoses and substance use disorder flags that are strongly predictive of high-cost medical utilization. The predictive accuracy of leading AI risk stratification models, as measured by the C-statistic \u2014 the probability that the model correctly identifies a patient who will be hospitalized as higher risk than a patient who will not \u2014 has improved from approximately 0.70 for traditional claims-based models to 0.82\u20130.87 for the leading AI models that incorporate multi-modal EHR data, a meaningful improvement that translates directly into better care management targeting and higher ROI on care coordinator time.",
+                    "text": "Modern AI-powered risk stratification uses machine learning models trained on large clinical datasets to predict future utilization risk based on a much richer set of signals than historical spending alone. These models incorporate diagnosis trajectories (the sequence and pattern of diagnoses over time, not just their presence or absence), medication adherence signals derived from pharmacy data and EHR medication reconciliation records, laboratory value trends (a gradually rising HbA1c over three visits is a stronger predictor of near-term hospitalization than a single elevated value), social determinants of health flags derived from screening questionnaires and zip-code-level data, and behavioral health diagnoses and substance use disorder flags that are strongly predictive of high-cost medical utilization. Predictive accuracy is usually reported as the C-statistic \u2014 the probability that the model ranks a patient who will be hospitalized above one who will not \u2014 and models that add clinical EHR data to claims generally discriminate better than claims-only models, though published gains vary widely by population and outcome and should be validated locally before they drive care coordinator workloads.",
                     "marks": []
                   }
                 ]
@@ -8960,11 +8858,13 @@
                 "style": "quote",
                 "children": [
                   {
+                    "_key": "blk019b-s",
                     "_type": "span",
-                    "text": "We audited five commercial risk stratification products used by our ACO network and found that four of them showed statistically significant underestimation of risk for patients in the lowest income quintile. This is not a vendor quality problem \u2014 it is a training data problem. If your model learns from utilization data generated in a fee-for-service world with documented access barriers, it will encode those barriers as predicted need. \u2014 Ziad Obermeyer, UC Berkeley School of Public Health, NEJM Catalyst, 2025.",
-                    "marks": []
+                    "marks": [],
+                    "text": "Algorithmic bias in risk stratification is a documented, real-world problem. Obermeyer and colleagues (Science, 2019) showed that a widely used commercial risk-prediction algorithm systematically underestimated the health needs of Black patients, because it was trained on historical cost data shaped by unequal access \u2014 the model learned to encode access barriers as lower predicted need. The lesson for VBC: a risk model trained on fee-for-service utilization in a world with documented access barriers will reproduce those barriers unless it is explicitly audited and recalibrated for equity."
                   }
-                ]
+                ],
+                "markDefs": []
               },
               {
                 "_key": "blk020",
@@ -8996,11 +8896,13 @@
                 "style": "normal",
                 "children": [
                   {
+                    "_key": "blk022-s",
                     "_type": "span",
-                    "text": "The COVID-19 pandemic produced one technology outcome that has proven durably beneficial for value-based care: the rapid normalization of telehealth as a routine care delivery modality. Between March and June 2020, CMS issued emergency waivers that allowed Medicare to reimburse telehealth visits at parity with in-person visits, removed geographic restrictions that had historically limited telehealth to rural areas, and authorized audio-only visits for patients without video capability. Telehealth utilization increased from approximately 840,000 visits per week in the pre-pandemic baseline to 52 million visits per week at the April 2020 peak, a 6,100% increase in utilization that demonstrated both the latent demand for telehealth and the clinical feasibility of delivering a substantial proportion of primary care and chronic disease management visits via video or phone. For value-based care organizations, telehealth is a care management efficiency multiplier: it allows care coordinators and physicians to conduct follow-up visits, medication reviews, and chronic disease check-ins at a fraction of the cost and scheduling friction of in-person visits, enabling more frequent touchpoints with high-risk patients than would be operationally feasible in a purely in-person model.",
-                    "marks": []
+                    "marks": [],
+                    "text": "The COVID-19 pandemic produced one technology outcome that has proven durably beneficial for value-based care: the rapid normalization of telehealth as a routine care delivery modality. Between March and June 2020, CMS issued emergency waivers that allowed Medicare to reimburse telehealth visits at parity with in-person visits, removed geographic restrictions that had historically limited telehealth to rural areas, and authorized audio-only visits for patients without video capability. Telehealth surged from about 0.2% of outpatient evaluation-and-management visits in February 2020 to a peak of roughly 50.7% in April 2020 \u2014 on the order of 78 times the pre-pandemic level (CDC MMWR; HHS ASPE) \u2014 demonstrating both latent demand and the clinical feasibility of delivering much of primary care and chronic disease management by video or phone. For value-based care organizations, telehealth is a care management efficiency multiplier: it lets care coordinators and physicians conduct follow-ups, medication reviews, and chronic disease check-ins at a fraction of the cost and scheduling friction of in-person visits, enabling more frequent contact with high-risk patients than a purely in-person model allows."
                   }
-                ]
+                ],
+                "markDefs": []
               },
               {
                 "_key": "blk022b",
@@ -9009,64 +8911,8 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The impact of telehealth on VBC care management efficiency is supported by utilization and outcome data from CMS\u2019s post-pandemic evaluation of Medicare telehealth claims, which documents the specific visit types, patient populations, and clinical conditions where telehealth has demonstrated both patient adoption and comparable clinical outcomes to in-person care. This evidence base is directly relevant for VBC organizations making decisions about which components of their care management model to deliver via telehealth versus in person.",
+                    "text": "The scale of Medicare adoption is documented: the HHS Office of Inspector General found that more than 28 million Medicare beneficiaries \u2014 over 2 in 5 \u2014 used telehealth in the first year of the pandemic, using 88 times more telehealth services than the year before, with office visits making up just under half of that use. The same review found urban beneficiaries more likely than rural ones to use telehealth \u2014 a reminder that the rural populations with the most to gain also face the broadband and device barriers that limit uptake.",
                     "marks": []
-                  }
-                ]
-              },
-              {
-                "_key": "blk022c",
-                "_type": "code",
-                "title": "Telehealth Utilization in Medicare VBC Programs: Visit Type, Adoption, and Clinical Equivalence Evidence, 2025",
-                "language": "json",
-                "code": [
-                  {
-                    "Visit Type": "Primary Care Chronic Disease Follow-Up",
-                    "Telehealth Adoption (VBC Patients)": "68%",
-                    "Patient Satisfaction vs. In-Person": "Equal (4.2/5.0 vs 4.3/5.0)",
-                    "Clinical Outcome Equivalence": "Demonstrated (HbA1c, BP control equivalent)",
-                    "Cost per Encounter (Telehealth)": "$67",
-                    "Cost per Encounter (In-Person)": "$142"
-                  },
-                  {
-                    "Visit Type": "Behavioral Health Therapy",
-                    "Telehealth Adoption (VBC Patients)": "74%",
-                    "Patient Satisfaction vs. In-Person": "Higher (4.6/5.0 vs 4.1/5.0)",
-                    "Clinical Outcome Equivalence": "Demonstrated (PHQ-9 improvement equivalent)",
-                    "Cost per Encounter (Telehealth)": "$89",
-                    "Cost per Encounter (In-Person)": "$178"
-                  },
-                  {
-                    "Visit Type": "Post-Discharge Follow-Up (30-day)",
-                    "Telehealth Adoption (VBC Patients)": "71%",
-                    "Patient Satisfaction vs. In-Person": "Equal (4.1/5.0 vs 4.2/5.0)",
-                    "Clinical Outcome Equivalence": "Demonstrated (30-day readmission rate equivalent)",
-                    "Cost per Encounter (Telehealth)": "$54",
-                    "Cost per Encounter (In-Person)": "$138"
-                  },
-                  {
-                    "Visit Type": "Medication Management Review",
-                    "Telehealth Adoption (VBC Patients)": "61%",
-                    "Patient Satisfaction vs. In-Person": "Equal (4.0/5.0 vs 4.1/5.0)",
-                    "Clinical Outcome Equivalence": "Demonstrated (adherence rates equivalent)",
-                    "Cost per Encounter (Telehealth)": "$72",
-                    "Cost per Encounter (In-Person)": "$156"
-                  },
-                  {
-                    "Visit Type": "Specialist Consultation (Non-procedural)",
-                    "Telehealth Adoption (VBC Patients)": "44%",
-                    "Patient Satisfaction vs. In-Person": "Slightly lower (3.8/5.0 vs 4.2/5.0)",
-                    "Clinical Outcome Equivalence": "Partial (appropriate for stable conditions)",
-                    "Cost per Encounter (Telehealth)": "$118",
-                    "Cost per Encounter (In-Person)": "$287"
-                  },
-                  {
-                    "Visit Type": "Acute Care (Low Acuity)",
-                    "Telehealth Adoption (VBC Patients)": "38%",
-                    "Patient Satisfaction vs. In-Person": "Equal (4.0/5.0 vs 4.0/5.0)",
-                    "Clinical Outcome Equivalence": "Demonstrated (ED diversion rate 62%)",
-                    "Cost per Encounter (Telehealth)": "$78",
-                    "Cost per Encounter (In-Person / ED)": "$1,240"
                   }
                 ]
               },
@@ -9077,7 +8923,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The policy question that followed the pandemic\u2019s emergency waivers was whether CMS would make the telehealth flexibilities permanent. The Consolidated Appropriations Act of 2023 and the CAA of 2024 extended most telehealth flexibilities through 2025, and the Telehealth Modernization Act of 2026 \u2014 currently in Senate committee as of March 2026 \u2014 would make them permanent for Medicare beneficiaries and extend audio-only coverage as a permanent benefit for patients without access to broadband or video-capable devices. For rural VBC providers, the permanence of telehealth reimbursement parity is not a convenience issue \u2014 it is a care model viability issue. An ACO serving a rural population where 40% of attributed patients live more than 30 miles from the nearest primary care office cannot achieve the visit frequency that effective chronic disease management requires without telehealth as a structural component of its care model.",
+                    "text": "The policy question that followed the pandemic\u2019s emergency waivers was whether CMS would make the telehealth flexibilities permanent. Congress answered with a series of short-term extensions rather than a permanent fix: the Consolidated Appropriations Act, 2023 carried the flexibilities through 2024, later stopgap bills carried them into 2025, they briefly lapsed during the funding gaps of late 2025 and January 31, 2026, and the Consolidated Appropriations Act, 2026 (H.R. 7148, enacted February 2026) extended them \u2014 including home as an originating site, audio-only visits, and FQHC/RHC distant-site services \u2014 through December 31, 2027. For rural VBC providers, the permanence of these telehealth payment rules is not a convenience issue \u2014 it is a care model viability issue. An ACO serving a rural population where 40% of attributed patients live more than 30 miles from the nearest primary care office cannot achieve the visit frequency that effective chronic disease management requires without telehealth as a structural component of its care model.",
                     "marks": []
                   }
                 ]
@@ -9100,11 +8946,13 @@
                 "style": "normal",
                 "children": [
                   {
+                    "_key": "blk025-s",
                     "_type": "span",
-                    "text": "For healthcare leaders assessing their organization\u2019s VBC technology readiness, the most common mistake is attempting to deploy advanced analytics capabilities before the foundational data quality and connectivity infrastructure is in place. A population health platform fed by an EHR with poorly configured structured data will generate inaccurate risk scores. A care gap reporting system connected to an EHR that does not have standardized problem list coding will miss a significant proportion of the gaps it is supposed to identify. Technology investment in VBC should follow a deliberate sequence, with each layer validated before the next layer is added. The following roadmap reflects the sequence used by the highest-performing rural VBC organizations in HTR\u2019s research, based on analysis of MSSP ACO performance data correlated with technology adoption patterns.",
-                    "marks": []
+                    "marks": [],
+                    "text": "For healthcare leaders assessing their organization\u2019s VBC technology readiness, the most common mistake is attempting to deploy advanced analytics capabilities before the foundational data quality and connectivity infrastructure is in place. A population health platform fed by an EHR with poorly configured structured data will generate inaccurate risk scores. A care gap reporting system connected to an EHR that does not have standardized problem list coding will miss a significant proportion of the gaps it is supposed to identify. Technology investment in VBC should follow a deliberate sequence, with each layer validated before the next is added."
                   }
-                ]
+                ],
+                "markDefs": []
               },
               {
                 "_key": "blk026",
@@ -9195,7 +9043,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The technology infrastructure required for effective value-based care is not exotic or cutting-edge by the standards of other industries. What VBC requires is reliable clinical data capture, standards-based data exchange, and analytics capable of turning population data into actionable care management intelligence. These are not science-fiction capabilities. They exist today in mature form at health systems like Kaiser Permanente, Intermountain Healthcare, and Geisinger. The challenge is not invention \u2014 it is diffusion. The 34% of rural Critical Access Hospitals that lack the foundational technology capabilities for advanced VBC participation are not being held back by the absence of technology. They are being held back by the absence of capital, broadband infrastructure, and technical implementation support that would allow them to deploy technology that already exists.",
+                    "text": "The technology infrastructure required for effective value-based care is not exotic or cutting-edge by the standards of other industries. What VBC requires is reliable clinical data capture, standards-based data exchange, and analytics capable of turning population data into actionable care management intelligence. These are not science-fiction capabilities. They exist today in mature form at health systems like Kaiser Permanente, Intermountain Healthcare, and Geisinger. The challenge is not invention \u2014 it is diffusion. The rural Critical Access Hospitals that lack the foundational technology capabilities for advanced VBC participation are not being held back by the absence of technology. They are being held back by the absence of capital, broadband infrastructure, and technical implementation support that would allow them to deploy technology that already exists.",
                     "marks": []
                   }
                 ]
@@ -9235,7 +9083,7 @@
                 "children": [
                   {
                     "_type": "span",
-                    "text": "The 21st Century Cures Act\u2019s information blocking prohibition and FHIR API mandate are the legal and technical foundations of modern health IT interoperability. Any EHR vendor or health system that restricts data sharing in violation of these provisions faces civil monetary penalties of up to $1 million per violation.",
+                    "text": "The 21st Century Cures Act\u2019s information blocking prohibition and FHIR API mandate are the legal and technical foundations of modern health IT interoperability. Health IT developers, health information exchanges, and networks that engage in information blocking face civil monetary penalties of up to $1 million per violation; health care providers face separate federal disincentives, such as losing Promoting Interoperability credit under MIPS, under a 2024 HHS rule.",
                     "marks": []
                   }
                 ]
@@ -9285,12 +9133,6 @@
                 "_type": "image",
                 "caption": "A three-layer technology architecture diagram for value-based care, designed as a pyramid. The foundation layer (EHR and structured data capture) is shown in blue at the base, with icons representing certified EHR systems, FHIR API connectivity, and standardized clinical coding. The middle layer (HIE and data exchange) is shown in green, with icons representing state HIE connections, ADT alert feeds, TEFCA QHIN connectivity, and bidirectional data flows between hospitals, physicians, pharmacies, and post-acute facilities. The top layer (analytics and intelligence) is shown in purple, with icons representing population health platforms, AI risk stratification models, care gap dashboards, and care coordinator workflow tools. Red annotations on each layer indicate the specific percentage of rural CAHs that lack that capability, based on the capability gap table data from this module.",
                 "alt": "Three-layer pyramid diagram showing the technology infrastructure required for value-based care, from EHR data foundation through health information exchange to AI-powered population health analytics, with rural capability gap annotations."
-              },
-              {
-                "_key": "blk041",
-                "_type": "video",
-                "url": "https://www.youtube.com/watch?v=HTRAcademy2026M4",
-                "caption": "This 29-minute HTR Academy video module demonstrates the five-phase VBC technology readiness roadmap using a case study of a 4-hospital rural health system in western North Carolina that progressed from Phase 1 data foundation work in 2022 to full AI risk stratification deployment in 2025, including the specific EHR configuration changes, HIE connectivity steps, and population health platform selection process the system used at each phase. The video includes a downloadable Technology Readiness Assessment checklist that learners can use to determine their own organization\u2019s current phase and priority next steps."
               }
             ],
             "tags": []
@@ -9407,13 +9249,6 @@
                 "variant": "info",
                 "heading": "Disparity vs. inequity: a critical distinction",
                 "body": "Not all disparities are inequities. A disparity is any measurable difference between groups. An inequity is a disparity that is unjust and avoidable \u2014 the result of systemic disadvantage rather than biology or free choice. Framing matters: calling disparities 'inequities' assigns moral weight and implies action. Research increasingly shows that most racial health disparities are not explained by biology but by social and structural factors."
-              },
-              {
-                "type": "video",
-                "mediaType": "youtube",
-                "videoId": "SExDNF83fvQ",
-                "caption": "What is health equity? \u2014 RWJF foundational explainer (~5 min)",
-                "durationSeconds": 300
               },
               {
                 "type": "callout",
@@ -9651,13 +9486,6 @@
                 "variant": "info",
                 "heading": "The American Health Disadvantage is not uniform",
                 "body": "A 2013 National Academies study ('Shorter Lives, Poorer Health') found that the US health disadvantage is concentrated in specific populations: uninsured, low-income, Black and Hispanic Americans drive most of the gap with peer nations. White, college-educated, insured Americans have health outcomes roughly comparable to their counterparts in other countries. The overall US underperformance is a story of who is left behind."
-              },
-              {
-                "type": "video",
-                "mediaType": "youtube",
-                "videoId": "qSjGouBmo0M",
-                "caption": "Why is US healthcare so expensive? \u2014 Vox explainer (~8 min)",
-                "durationSeconds": 480
               }
             ],
             "quiz": {
@@ -9813,13 +9641,6 @@
                     "source": "NACHC"
                   }
                 ]
-              },
-              {
-                "type": "video",
-                "mediaType": "youtube",
-                "videoId": "d7OdKQwTyKo",
-                "caption": "Social determinants of health \u2014 WHO explainer (~3 min)",
-                "durationSeconds": 180
               }
             ],
             "quiz": {
@@ -10568,13 +10389,6 @@
                 "variant": "tip",
                 "heading": "Questions to ask when evaluating a clinical algorithm",
                 "body": "1. What data was this trained on? Does the training data reflect historical inequities?\n2. Was the algorithm's performance validated separately for different racial, ethnic, and socioeconomic groups?\n3. What proxy measures does it use \u2014 and are those proxies distributed differently across groups?\n4. Who is the algorithm designed to help, and who might it systematically disadvantage?\n5. Is there an ongoing bias monitoring protocol after deployment?"
-              },
-              {
-                "type": "video",
-                "mediaType": "youtube",
-                "videoId": "UG_X_7g63rY",
-                "caption": "Algorithmic bias in healthcare \u2014 STAT News and Harvard explainer (~8 min)",
-                "durationSeconds": 480
               }
             ],
             "quiz": {
@@ -11450,13 +11264,6 @@
                 "variant": "warning",
                 "heading": "Correlation is not causation \u2014 and AI doesn't know the difference",
                 "body": "ML models find statistical patterns. They have no understanding of mechanism, no concept of causality, and no ability to reason about novel situations. A model trained to predict sepsis might learn that low blood pressure correlates with sepsis \u2014 but it might also learn that certain nursing documentation patterns correlate, because nurses document more thoroughly for sicker patients. Both patterns predict sepsis, but only one is clinically meaningful. This is why human oversight remains essential."
-              },
-              {
-                "type": "video",
-                "mediaType": "youtube",
-                "videoId": "ukzFI9rgwfU",
-                "caption": "Machine learning in medicine \u2014 MIT overview (~10 min)",
-                "durationSeconds": 600
               }
             ],
             "quiz": {
