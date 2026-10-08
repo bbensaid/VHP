@@ -128,7 +128,135 @@ const TERMINOLOGY_MAPPINGS: {
     term: "Hyperlipidemia",
     icd10: { code: "E78.5", display: "Hyperlipidemia, unspecified" },
     snomed: { code: "55822004", display: "Hyperlipidemia (disorder)" },
-    rxnorm: { code: "41493", display: "Atorvastatin" },
+    // RXCUI 83367 = atorvastatin (IN), verified RxNav 2026-10-08. Was 41493,
+    // which RxNav resolves to meloxicam.
+    rxnorm: { code: "83367", display: "atorvastatin" },
+  },
+];
+
+// NDC → RxNorm. Every package NDC verified 2026-10-08 in the FDA NDC Directory
+// (openFDA drug/ndc, no marketing end date) and via RxNav ndcstatus (ACTIVE,
+// mapped to the RXCUI below); ingredient RXCUIs from RxNav related?tty=IN.
+// ndc11 is the 5-4-2 zero-padded form used on HIPAA pharmacy/medical claims.
+const NDC_RXNORM_MAPPINGS: {
+  ndc: string;
+  ndc11: string;
+  product: string;
+  labeler: string;
+  rxcui: { code: string; display: string; tty: "SBD" };
+  ingredient: { code: string; display: string };
+  indicationTerm?: string; // links to TERMINOLOGY_MAPPINGS.term
+}[] = [
+  {
+    ndc: "58151-155-77",
+    ndc11: "58151-0155-77",
+    product: "Lipitor 10 mg, 90 film-coated tablets in 1 bottle",
+    labeler: "Viatris Specialty LLC",
+    rxcui: { code: "617314", display: "atorvastatin 10 MG Oral Tablet [Lipitor]", tty: "SBD" },
+    ingredient: { code: "83367", display: "atorvastatin" },
+    indicationTerm: "Hyperlipidemia",
+  },
+  {
+    ndc: "0003-0894-21",
+    ndc11: "00003-0894-21",
+    product: "Eliquis 5 mg, 60 film-coated tablets in 1 bottle",
+    labeler: "E.R. Squibb & Sons, L.L.C.",
+    rxcui: { code: "1364447", display: "apixaban 5 MG Oral Tablet [Eliquis]", tty: "SBD" },
+    ingredient: { code: "1364430", display: "apixaban" },
+    indicationTerm: "Atrial fibrillation",
+  },
+  {
+    ndc: "0597-0152-30",
+    ndc11: "00597-0152-30",
+    product: "Jardiance 10 mg, 30 film-coated tablets in 1 bottle",
+    labeler: "Boehringer Ingelheim Pharmaceuticals, Inc.",
+    rxcui: { code: "1545664", display: "empagliflozin 10 MG Oral Tablet [Jardiance]", tty: "SBD" },
+    ingredient: { code: "1545653", display: "empagliflozin" },
+    indicationTerm: "Diabetes mellitus type 2",
+  },
+  {
+    ndc: "0088-2219-05",
+    ndc11: "00088-2219-05",
+    product: "Lantus SoloStar 100 units/mL, 5 x 3 mL pens in 1 carton",
+    labeler: "sanofi-aventis U.S. LLC",
+    rxcui: { code: "847232", display: "3 ML insulin glargine 100 UNT/ML Pen Injector [Lantus]", tty: "SBD" },
+    ingredient: { code: "274783", display: "insulin glargine" },
+    indicationTerm: "Diabetes mellitus type 2",
+  },
+  {
+    ndc: "0169-4130-13",
+    ndc11: "00169-4130-13",
+    product: "Ozempic 1.34 mg/mL, 1 x 3 mL pen in 1 carton",
+    labeler: "Novo Nordisk Pharmaceutical Industries, LP",
+    rxcui: { code: "2398842", display: "3 ML semaglutide 1.34 MG/ML Pen Injector [Ozempic]", tty: "SBD" },
+    ingredient: { code: "1991302", display: "semaglutide" },
+    indicationTerm: "Diabetes mellitus type 2",
+  },
+  {
+    ndc: "69547-627-02",
+    ndc11: "69547-0627-02",
+    product: "Narcan 4 mg/0.1 mL nasal spray, 2 single-dose devices in 1 carton",
+    labeler: "Emergent Devices Inc.",
+    rxcui: { code: "1725064", display: "naloxone hydrochloride 40 MG/ML Nasal Spray [Narcan]", tty: "SBD" },
+    ingredient: { code: "7242", display: "naloxone" },
+  },
+];
+
+// HCPCS Level II. Codes and long descriptors copied from the CMS October 2026
+// Alpha-Numeric HCPCS file (HCPC2026_OCT_ANWEB_09232026.txt); each has a blank
+// termination date there. (J2310 naloxone injection was rejected: terminated
+// 2025-06-30.) HCPCS has no official crosswalk to RxNorm or ICD-10; the
+// related term is the typical clinical context only.
+const HCPCS_CODES: {
+  code: string;
+  display: string;
+  section: string;
+  contextTerm?: string; // links to TERMINOLOGY_MAPPINGS.term
+}[] = [
+  {
+    code: "G0438",
+    display: "Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit",
+    section: "G: procedures / professional services (temporary)",
+  },
+  {
+    code: "G0439",
+    display: "Annual wellness visit, includes a personalized prevention plan of service (pps), subsequent visit",
+    section: "G: procedures / professional services (temporary)",
+  },
+  {
+    code: "G0444",
+    display: "Annual depression screening, 5 to 15 minutes",
+    section: "G: procedures / professional services (temporary)",
+    contextTerm: "Major depressive disorder",
+  },
+  {
+    code: "A4253",
+    display: "Blood glucose test or reagent strips for home blood glucose monitor, per 50 strips",
+    section: "A: medical and surgical supplies",
+    contextTerm: "Diabetes mellitus type 2",
+  },
+  {
+    code: "E0607",
+    display: "Home blood glucose monitor",
+    section: "E: durable medical equipment",
+    contextTerm: "Diabetes mellitus type 2",
+  },
+  {
+    code: "E0601",
+    display: "Continuous positive airway pressure (cpap) device",
+    section: "E: durable medical equipment",
+  },
+  {
+    code: "J1815",
+    display: "Injection, insulin, per 5 units",
+    section: "J: drugs administered other than oral method",
+    contextTerm: "Diabetes mellitus type 2",
+  },
+  {
+    code: "J0696",
+    display: "Injection, ceftriaxone sodium, per 250 mg",
+    section: "J: drugs administered other than oral method",
+    contextTerm: "Pneumonia",
   },
 ];
 
@@ -967,7 +1095,7 @@ function BuilderTab() {
 // TAB 2 — Terminology Mapper
 // ─────────────────────────────────────────────────────────────────────────────
 
-type SourceTerminology = "ICD-10" | "SNOMED CT" | "LOINC" | "RxNorm" | "CPT";
+type SourceTerminology = "ICD-10" | "SNOMED CT" | "LOINC" | "RxNorm" | "CPT" | "NDC" | "HCPCS";
 type TargetTerminology = "FHIR CodeableConcept" | "ICD-10" | "SNOMED CT" | "LOINC";
 
 const SYSTEM_URLS: Record<string, string> = {
@@ -976,7 +1104,11 @@ const SYSTEM_URLS: Record<string, string> = {
   LOINC: "http://loinc.org",
   RxNorm: "http://www.nlm.nih.gov/research/umls/rxnorm",
   CPT: "http://www.ama-assn.org/go/cpt",
+  NDC: "http://hl7.org/fhir/sid/ndc",
+  HCPCS: "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
 };
+
+const ICD10_BY_TERM = Object.fromEntries(TERMINOLOGY_MAPPINGS.map((m) => [m.term, m.icd10]));
 
 function MapperTab() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -994,6 +1126,34 @@ function MapperTab() {
         m.snomed.code.includes(q)
     );
   }, [searchTerm]);
+
+  const ndcResults = useMemo(() => {
+    const q = searchTerm.trim().toLowerCase();
+    if (!q) return NDC_RXNORM_MAPPINGS;
+    const digits = q.replace(/\D/g, "");
+    return NDC_RXNORM_MAPPINGS.filter(
+      (m) =>
+        m.product.toLowerCase().includes(q) ||
+        m.ingredient.display.toLowerCase().includes(q) ||
+        m.rxcui.code.includes(q) ||
+        (m.indicationTerm ?? "").toLowerCase().includes(q) ||
+        (digits.length >= 4 && (m.ndc.replace(/-/g, "").includes(digits) || m.ndc11.replace(/-/g, "").includes(digits)))
+    );
+  }, [searchTerm]);
+
+  const hcpcsResults = useMemo(() => {
+    const q = searchTerm.trim().toLowerCase();
+    if (!q) return HCPCS_CODES;
+    return HCPCS_CODES.filter(
+      (h) =>
+        h.code.toLowerCase().includes(q) ||
+        h.display.toLowerCase().includes(q) ||
+        h.section.toLowerCase().includes(q) ||
+        (h.contextTerm ?? "").toLowerCase().includes(q)
+    );
+  }, [searchTerm]);
+
+  const isProductSource = source === "NDC" || source === "HCPCS";
 
   function getTargetData(mapping: (typeof TERMINOLOGY_MAPPINGS)[0]) {
     switch (target) {
@@ -1024,7 +1184,7 @@ function MapperTab() {
             <Search className="absolute left-3 top-2.5 w-4 h-4 text-slate-400" />
             <input
               className="w-full rounded-lg border border-indigo-200 bg-white pl-9 pr-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-              placeholder="diabetes, I10, sepsis…"
+              placeholder={source === "NDC" ? "apixaban, 0003-0894-21…" : source === "HCPCS" ? "G0438, insulin, glucose…" : "diabetes, I10, sepsis…"}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -1037,7 +1197,7 @@ function MapperTab() {
             value={source}
             onChange={(e) => setSource(e.target.value as SourceTerminology)}
           >
-            {(["ICD-10", "SNOMED CT", "LOINC", "RxNorm", "CPT"] as SourceTerminology[]).map((s) => (
+            {(["ICD-10", "SNOMED CT", "LOINC", "RxNorm", "CPT", "NDC", "HCPCS"] as SourceTerminology[]).map((s) => (
               <option key={s}>{s}</option>
             ))}
           </select>
@@ -1045,8 +1205,10 @@ function MapperTab() {
         <div>
           <label className="block text-xs font-medium text-indigo-700 mb-1">Target Terminology</label>
           <select
-            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="w-full rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:opacity-50"
             value={target}
+            disabled={isProductSource}
+            title={isProductSource ? `${source} codes map to RxNorm / clinical context, shown in the table below` : undefined}
             onChange={(e) => setTarget(e.target.value as TargetTerminology)}
           >
             {(["FHIR CodeableConcept", "ICD-10", "SNOMED CT", "LOINC"] as TargetTerminology[]).map((t) => (
@@ -1056,6 +1218,114 @@ function MapperTab() {
         </div>
       </div>
 
+      {source === "NDC" && (
+        <div className="space-y-3">
+          <div className="text-xs text-slate-500 flex items-center gap-2">
+            <Info className="w-3.5 h-3.5 text-indigo-400" />
+            Showing {ndcResults.length} of {NDC_RXNORM_MAPPINGS.length} NDC packages. NDC ({SYSTEM_URLS.NDC}) identifies a labeler&apos;s package; RxNorm ({SYSTEM_URLS.RxNorm}) normalizes it to a clinical drug. Claims carry the 11-digit 5-4-2 form.
+          </div>
+          <div className="overflow-auto rounded-xl border border-indigo-100">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-indigo-50 text-indigo-700">
+                  <th className="px-4 py-3 text-left font-semibold text-xs uppercase tracking-wide">Package (labeler)</th>
+                  <th className="px-4 py-3 text-left font-semibold text-xs uppercase tracking-wide">NDC / NDC-11</th>
+                  <th className="px-4 py-3 text-left font-semibold text-xs uppercase tracking-wide">→ RxNorm RXCUI (SBD)</th>
+                  <th className="px-4 py-3 text-left font-semibold text-xs uppercase tracking-wide">Ingredient RXCUI</th>
+                  <th className="px-4 py-3 text-left font-semibold text-xs uppercase tracking-wide">Example indication (ICD-10)</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-indigo-50">
+                {ndcResults.map((m) => {
+                  const icd = m.indicationTerm ? ICD10_BY_TERM[m.indicationTerm] : undefined;
+                  return (
+                    <tr key={m.ndc} className="hover:bg-indigo-50/40 transition-colors align-top">
+                      <td className="px-4 py-3 text-slate-800">
+                        <div className="font-medium">{m.product}</div>
+                        <div className="text-xs text-slate-500">{m.labeler}</div>
+                      </td>
+                      <td className="px-4 py-3 whitespace-nowrap">
+                        <span className="font-mono text-xs bg-gray-100 text-slate-700 px-2 py-0.5 rounded">{m.ndc}</span>
+                        <div className="font-mono text-[11px] text-slate-500 mt-1">{m.ndc11}</div>
+                      </td>
+                      <td className="px-4 py-3">
+                        <span className="font-mono text-xs bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded">{m.rxcui.code}</span>
+                        <div className="text-xs text-slate-600 mt-1">{m.rxcui.display}</div>
+                      </td>
+                      <td className="px-4 py-3">
+                        <span className="font-mono text-xs bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded">{m.ingredient.code}</span>
+                        <div className="text-xs text-slate-600 mt-1">{m.ingredient.display}</div>
+                      </td>
+                      <td className="px-4 py-3 text-xs text-slate-600">
+                        {icd ? (
+                          <>
+                            <span className="font-mono bg-gray-100 text-slate-700 px-2 py-0.5 rounded">{icd.code}</span> {m.indicationTerm}
+                          </>
+                        ) : (
+                          <span className="text-slate-400 italic">Opioid overdose reversal (no diagnosis row in this demo)</span>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-[11px] text-slate-400">
+            Sources: FDA NDC Directory (openFDA) and NLM RxNav ndcstatus / related, checked 2026-10-08. NDCs change as labelers repackage; resolve live codes through RxNav before production use.
+          </p>
+        </div>
+      )}
+
+      {source === "HCPCS" && (
+        <div className="space-y-3">
+          <div className="text-xs text-slate-500 flex items-center gap-2">
+            <Info className="w-3.5 h-3.5 text-indigo-400" />
+            Showing {hcpcsResults.length} of {HCPCS_CODES.length} HCPCS Level II codes ({SYSTEM_URLS.HCPCS}). Level I is CPT; Level II covers supplies, DME, drugs and Medicare-specific services.
+          </div>
+          <div className="overflow-auto rounded-xl border border-indigo-100">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-indigo-50 text-indigo-700">
+                  <th className="px-4 py-3 text-left font-semibold text-xs uppercase tracking-wide">HCPCS Code</th>
+                  <th className="px-4 py-3 text-left font-semibold text-xs uppercase tracking-wide">Long Descriptor (CMS)</th>
+                  <th className="px-4 py-3 text-left font-semibold text-xs uppercase tracking-wide">Section</th>
+                  <th className="px-4 py-3 text-left font-semibold text-xs uppercase tracking-wide">Clinical Context (ICD-10)</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-indigo-50">
+                {hcpcsResults.map((h) => {
+                  const icd = h.contextTerm ? ICD10_BY_TERM[h.contextTerm] : undefined;
+                  return (
+                    <tr key={h.code} className="hover:bg-indigo-50/40 transition-colors align-top">
+                      <td className="px-4 py-3">
+                        <span className="font-mono text-xs bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded">{h.code}</span>
+                      </td>
+                      <td className="px-4 py-3 text-xs text-slate-700">{h.display}</td>
+                      <td className="px-4 py-3 text-xs text-slate-600">{h.section}</td>
+                      <td className="px-4 py-3 text-xs text-slate-600">
+                        {icd ? (
+                          <>
+                            <span className="font-mono bg-gray-100 text-slate-700 px-2 py-0.5 rounded">{icd.code}</span> {h.contextTerm}
+                          </>
+                        ) : (
+                          "—"
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-[11px] text-slate-400">
+            Source: CMS Alpha-Numeric HCPCS file, October 2026 quarterly update (all codes active, no termination date). HCPCS has no official crosswalk to ICD-10; the context column is illustrative.
+          </p>
+        </div>
+      )}
+
+      {!isProductSource && (
+      <>
       <div className="text-xs text-slate-500 flex items-center gap-2">
         <Info className="w-3.5 h-3.5 text-indigo-400" />
         Showing {results.length} of {TERMINOLOGY_MAPPINGS.length} mappings
@@ -1118,6 +1388,8 @@ function MapperTab() {
             </tbody>
           </table>
         </div>
+      )}
+      </>
       )}
     </div>
   );
