@@ -1,0 +1,132 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "academyModule-vbc-social-risk"
+   ],
+   "key": "sr-p4",
+   "old": "The report distinguished between two different uses of social risk data in payment: adjusting payment to reflect differences in expected costs (payment risk adjustment), and adjusting performance standards to reflect differences in expected quality outcomes (performance standard adjustment). The NASEM committee concluded that adjusting payment for social risk is appropriate when social factors predict expected costs; adjusting performance standards — holding providers to lower quality targets — is not appropriate because it would entrench disparities.",
+   "new": "The committee set out four goals for accounting for social risk — reducing disparities in access, quality and outcomes; improving quality and efficiency for all patients; fair and accurate public reporting; and paying providers and plans fairly — and four strategies for pursuing them: stratified public reporting, adjusting performance measure scores for social risk, adjusting payments directly, and restructuring payment incentives (for example, rewarding improvement or achievement for socially at-risk patients). Its conclusion was that these goals are best achieved by paying on performance scores adjusted for social risk factors (or adjusting payment directly) combined with public reporting stratified by patient characteristics within each provider — so that adjustment protects fair payment while stratification keeps disparities visible.",
+   "mirror": true,
+   "claim": "NASEM concluded adjusting payment for social risk is appropriate but adjusting performance standards is not, because it would entrench disparities",
+   "verdict": "FABRICATED",
+   "sources": "NASEM, Accounting for Social Risk Factors in Medicare Payment (2017), ch. on methods (nationalacademies.org/read/23635): four goals; four strategies (stratified public reporting, adjusting measure scores, direct payment adjustment, restructuring incentive design); goals best achieved by payment based on measure scores adjusted for social risk (or direct payment adjustment) combined with stratified public reporting; AHA News summary of the final report",
+   "note": "The text inverted NASEM's actual conclusion, which endorsed social-risk adjustment of measure scores combined with stratified reporting."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-social-risk"
+   ],
+   "key": "sr-p5",
+   "old": "The NASEM report's key recommendations included: stratify quality reporting by social risk factors to make disparities visible; use social risk data for payment adjustment only when it predicts additional cost beyond clinical risk; invest in building the data infrastructure (collecting SDOH data systematically in claims and EHRs) needed to improve social risk models; and create accountability for reducing disparities rather than just adjusting them away.",
+   "new": "The NASEM series also urged better data — collecting social risk information systematically in claims and EHRs so that adjustment and stratification can rest on individual-level measures rather than proxies — and warned that adjustment must be paired with transparent reporting so that it does not mask poor care for socially at-risk patients.",
+   "mirror": true,
+   "claim": "NASEM recommendations: stratify; use social risk only for payment when it predicts added cost; build data; accountability rather than adjust away",
+   "verdict": "FABRICATED",
+   "sources": "NASEM, Accounting for Social Risk Factors in Medicare Payment (2017), ch. on methods (nationalacademies.org/read/23635): four goals; four strategies (stratified public reporting, adjusting measure scores, direct payment adjustment, restructuring incentive design); goals best achieved by payment based on measure scores adjusted for social risk (or direct payment adjustment) combined with stratified public reporting; AHA News summary of the final report",
+   "note": "Rewritten to match the report."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-social-risk"
+   ],
+   "key": "sr-p6",
+   "old": "As of 2024, CMS policy on social risk in payment programs has largely followed the NASEM recommendation to stratify rather than adjust. In MSSP, CMS produces stratified quality reports showing ACO performance separately for dual-eligible and non-dual-eligible beneficiaries, making disparities visible without adjusting the financial targets based on social risk. In the Hospital Value-Based Purchasing program, CMS stratifies hospital quality scores by patient social risk but does not adjust the financial reward-penalty calculations. In Medicare Advantage Star Ratings, CMS has introduced the Categorical Adjustment Index (CAI), which adjusts Star Ratings for plans with high proportions of low-income and dual-eligible enrollees — a partial form of social risk adjustment specific to the Star Rating context.",
+   "new": "CMS has taken a mix of approaches. In the Hospital Readmissions Reduction Program, the 21st Century Cures Act required CMS, from fiscal year 2019, to compare hospitals within peer groups defined by their share of dual-eligible patients — an indirect social risk adjustment. The Hospital Value-Based Purchasing program adopted a Health Equity Adjustment (bonus points for high-performing hospitals serving more dual-eligible patients) beginning in fiscal year 2026. MSSP added a health equity adjustment to ACO quality scores in 2023 and a Health Equity Benchmark Adjustment in 2025. And in Medicare Advantage Star Ratings, the Categorical Adjustment Index (CAI), used since the 2017 Star Ratings, adjusts plan ratings for their share of low-income-subsidy/dual-eligible and disabled enrollees — a partial form of social risk adjustment specific to the Star Rating context.",
+   "mirror": true,
+   "claim": "CMS \"stratify rather than adjust\" as of 2024; MSSP produces dual/non-dual stratified quality reports; Hospital VBP stratifies but does not adjust",
+   "verdict": "FABRICATED",
+   "sources": "21st Century Cures Act sec. 15002 (HRRP peer grouping, FY2019); FY2024 IPPS final rule (Hospital VBP Health Equity Adjustment from FY2026); CMS CY2023 and CY2025 PFS final rule fact sheets (MSSP); CMS Star Ratings Technical Notes (CAI since 2017)",
+   "note": "Several programs already adjust; the stratify-not-adjust characterisation was wrong."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-social-risk"
+   ],
+   "key": "sr-p8",
+   "old": "Approximately 12 million Americans are dually enrolled, representing roughly 15% of Medicaid enrollees but nearly 40% of Medicaid spending, and approximately 20% of Medicare beneficiaries but 35% of Medicare spending.",
+   "new": "In 2021, 12.8 million Americans were dually enrolled for at least one month, representing 13% of Medicaid beneficiaries but 27% of Medicaid spending, and 19% of Medicare beneficiaries but 35% of Medicare spending.",
+   "mirror": true,
+   "claim": "Duals ~12M; 15% of Medicaid enrollees / ~40% of Medicaid spending; 20% of Medicare / 35% of spending",
+   "verdict": "FABRICATED",
+   "sources": "MedPAC & MACPAC, Data Book: Beneficiaries Dually Eligible for Medicare and Medicaid (January 2024, CY2021 data)",
+   "note": "Medicaid spending share overstated (27%, not ~40%); figures aligned to the data book."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-social-risk"
+   ],
+   "key": "sr-p10",
+   "old": "and Z64 (Problems related to certain psychosocial circumstances including inadequate food and homelessness).",
+   "new": "and Z64 (Problems related to certain psychosocial circumstances). Homelessness (Z59.0-) and food insecurity (Z59.41) are coded within Z59.",
+   "mirror": true,
+   "claim": "Z64 includes inadequate food and homelessness",
+   "verdict": "FABRICATED",
+   "sources": "ICD-10-CM 2024 tabular list: Z59.0- homelessness, Z59.41 food insecurity (Z59 category); Z64 = problems related to certain psychosocial circumstances",
+   "note": "Code category misassigned."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-social-risk"
+   ],
+   "key": "sr-p11",
+   "old": "Studies have found that fewer than 1-2% of Medicare beneficiaries have any Z-code documented in their claims in a given year,",
+   "new": "CMS found that only 1.59% of Medicare fee-for-service beneficiaries had a Z-code on a claim in 2019,",
+   "mirror": true,
+   "claim": "Fewer than 1-2% of Medicare beneficiaries have a Z-code",
+   "verdict": "REAL",
+   "sources": "CMS Office of Minority Health, Data Highlight No. 24, \"Utilization of Z Codes for Social Determinants of Health among Medicare FFS Beneficiaries, 2019\" (2021)",
+   "note": "Real; given a precise source."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-social-risk"
+   ],
+   "key": "sr-h2-state-labs",
+   "old": "Vermont and Maryland as Policy Laboratories",
+   "new": "Massachusetts and Maryland as Policy Laboratories",
+   "mirror": true,
+   "claim": "Heading naming Vermont as a social-risk-adjustment laboratory",
+   "verdict": "FABRICATED",
+   "sources": "See sr-p12",
+   "note": "Heading follows the corrected paragraph."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-social-risk"
+   ],
+   "key": "sr-p12",
+   "old": "Several states have taken more direct approaches to social risk adjustment than federal CMS policy permits. Vermont's OneCare Vermont ACO model uses a social risk index based on area deprivation scores, housing instability data, and Vermont's Medicaid enrollment rates to adjust ACO financial targets at the regional level. This approach adjusts the aggregate benchmark rather than individual patient risk scores, partially addressing the safety-net equity concern without requiring individual-level social data.",
+   "new": "Several states have taken more direct approaches to social risk adjustment than federal programs. Massachusetts became an early example when MassHealth, its Medicaid program, added social determinants to the risk-adjustment model used to pay its managed care plans and, later, its ACOs — including a census-based Neighborhood Stress Score, unstable housing, and disability — so that payments rise for members facing greater social adversity (Ash and colleagues, JAMA Internal Medicine, 2017). The approach adjusts payment using area-level and administrative data rather than requiring detailed individual social needs screening.",
+   "mirror": true,
+   "claim": "OneCare Vermont uses a social risk index (area deprivation, housing instability, Medicaid enrollment) to adjust ACO financial targets regionally",
+   "verdict": "FABRICATED",
+   "sources": "Ash AS, Mick EO, Ellis RP, Kiefe CI, Allison JJ, Clark MA, \"Social Determinants of Health in Managed Care Payment Formulas,\" JAMA Intern Med 2017;177(10):1424-30 (MassHealth model with Neighborhood Stress Score, unstable housing); no OneCare or GMCB document found describing a social risk index applied to OneCare financial targets",
+   "note": "Known open item closed: the OneCare social-risk index does not exist; replaced with a real state example."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-social-risk"
+   ],
+   "key": "sr-p13",
+   "old": "Maryland's All-Payer Model has included social determinants adjustments in its hospital global budget calculations since the 2014 model update. Maryland hospitals in socioeconomically disadvantaged areas receive higher global budget revenue allocations that reflect the expected higher costs of caring for their populations — an explicit social risk adjustment built into hospital-level payment.",
+   "new": "Maryland's Health Services Cost Review Commission, which sets all-payer hospital global budgets, built an explicit equity incentive into its Readmission Reduction Incentive Program: a within-hospital readmission disparity gap measure based on a Patient Adversity Index combining Medicaid status, race, and Area Deprivation Index score, rewarding hospitals on pace to halve the gap over eight years — the only statewide program in the nation with an all-payer incentive to reduce readmission disparities.",
+   "mirror": true,
+   "claim": "Maryland global budgets include SDOH adjustments since 2014; hospitals in disadvantaged areas get higher GBR allocations",
+   "verdict": "UNVERIFIABLE",
+   "sources": "HSCRC RRIP policy memos RY2023-RY2027 (hscrc.maryland.gov): PAI (Medicaid status, race, ADI), disparity gap measure, 50% reduction over 8 years, rewards 0.25-0.50% IP revenue",
+   "note": "Unsupported GBR claim replaced with Maryland's real social-risk mechanism."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity academyModule-vbc-social-risk",
+   "block_key": "sr-p9",
+   "claim": "Dual status in CMS-HCC; duals deemed LIS-eligible; CAI uses LIS/DE",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "CMS-HCC model documentation (full/partial dual segments); Part D LIS deeming rules; Star Ratings Technical Notes",
+   "status": "LEFT",
+   "note": ""
+  }
+ ]
+}

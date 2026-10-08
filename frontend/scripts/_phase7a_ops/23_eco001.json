@@ -1,0 +1,105 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "policyAnalysis-eco-001"
+   ],
+   "field": "summary",
+   "old": "$637/beneficiary (+40% since 2021)",
+   "new": "$637/beneficiary",
+   "claim": "Per-beneficiary savings \"+40% since 2021\"",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\": $637 per beneficiary, $2.48B, 8th year, $5.4B of $6.6B — no +40%-since-2021 figure",
+   "note": "Specific dropped."
+  },
+  {
+   "docs": [
+    "policyAnalysis-eco-001"
+   ],
+   "key": "vbc-5",
+   "old": "Per-beneficiary savings reached $637, a 40% increase since 2021,",
+   "new": "Per-beneficiary savings reached $637,",
+   "mirror": true,
+   "claim": "\"+40% since 2021\"",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\": $637 per beneficiary, $2.48B, 8th year, $5.4B of $6.6B — no +40%-since-2021 figure",
+   "note": ""
+  },
+  {
+   "docs": [
+    "policyAnalysis-eco-001"
+   ],
+   "key": "vbc-9",
+   "old": "at $637 per beneficiary (up 40% since 2021),",
+   "new": "at $637 per beneficiary,",
+   "mirror": true,
+   "claim": "\"+40% since 2021\"",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\": $637 per beneficiary, $2.48B, 8th year, $5.4B of $6.6B — no +40%-since-2021 figure",
+   "note": ""
+  },
+  {
+   "docs": [
+    "policyAnalysis-eco-001"
+   ],
+   "key": "vbc-23",
+   "old": "$637 saved (+40% since 2021)",
+   "new": "$637 saved",
+   "mirror": true,
+   "claim": "\"+40% since 2021\"",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\": $637 per beneficiary, $2.48B, 8th year, $5.4B of $6.6B — no +40%-since-2021 figure",
+   "note": ""
+  },
+  {
+   "docs": [
+    "policyAnalysis-eco-001"
+   ],
+   "key": "vbc-32",
+   "old": "(in 2023 it included 132 ACOs managing care for more than two million beneficiaries and overseeing $26.6 billion in Medicare Part A and B spending), serving as the program where the most risk-tolerant organizations operate (McDermott+).",
+   "new": "(in 2023 it included 132 ACOs with 23 million beneficiary-months of alignment, generating $1.64 billion in gross and $694.6 million in net savings to CMS), serving as the program where the most risk-tolerant organizations operate (CMS). CMS has announced that REACH will end after 2026, succeeded in 2027 by the 10-year LEAD Model.",
+   "mirror": true,
+   "claim": "REACH 2023: >2M beneficiaries, $26.6B Parts A/B spending (McDermott+)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS ACO REACH PY2023 results fact sheet; McDermott+ link now redirects to an unrelated page (figures not retrievable); AHLA \"New LEAD Model to Follow the End of ACO REACH\"",
+   "note": "Unretrievable figures replaced with CMS's; REACH end date added."
+  },
+  {
+   "docs": [
+    "policyAnalysis-eco-001"
+   ],
+   "key": "vbc-54",
+   "old": "McDermott+ — ACO REACH: What Recent Performance Results Could Mean for the Model's Future",
+   "new": "CMS — ACO REACH PY2023 Financial and Quality Performance Results",
+   "mirror": true,
+   "claim": "Source: McDermott+ blog (dead link)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "URL 301-redirects to mcdermottlaw.com/continuing-the-conversation/ with no REACH content",
+   "note": "Link text replaced; href fixed below."
+  },
+  {
+   "docs": [
+    "policyAnalysis-eco-001"
+   ],
+   "key": "vbc-54",
+   "old": "https://www.mcdermottplus.com/blog/regs-eggs/aco-reach-what-recent-performance-results-could-mean-for-future-models/",
+   "new": "https://www.cms.gov/priorities/innovation/aco-reach-py2023-financial-and-quality-performance-results-fact-sheet",
+   "mirror": false,
+   "claim": "Dead McDermott+ source URL",
+   "verdict": "UNVERIFIABLE",
+   "sources": "WebFetch: 301 to unrelated page; CMS fact sheet verified live",
+   "note": ""
+  },
+  {
+   "log_only": true,
+   "doc": "sanity policyAnalysis-eco-001",
+   "block_key": "vbc-5/vbc-13/vbc-19",
+   "claim": "476 ACOs, 75%, 80% of 10.3M, $2.48B, 8th year, $637, ~$240 net, two-thirds/$5.4B of $6.6B, Aledade >$1B",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\": $637 per beneficiary, $2.48B, 8th year, $5.4B of $6.6B — no +40%-since-2021 figure; CMS PY2024 fact sheet; Aledade press release 2025-09-02 (BusinessWire): >$1B saved, >$320M to taxpayers",
+   "status": "LEFT",
+   "note": "CMS later updated net savings to $2.5B ($245 net per capita); $2.48B was the initial figure — left as attributed."
+  }
+ ]
+}

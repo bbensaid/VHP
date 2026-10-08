@@ -1,0 +1,145 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "s1sg1",
+   "old": "A record number of ACOs participated in the Medicare Shared Savings Program in performance year 2024.",
+   "new": "In performance year 2024, 476 ACOs participated in the Medicare Shared Savings Program, and the highest share of ACOs since the program began earned performance payments.",
+   "mirror": true,
+   "claim": "\"A record number of ACOs participated\" in PY2024",
+   "verdict": "FABRICATED",
+   "sources": "CMS fact sheet \"Medicare Shared Savings Program ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 75% earning $4.1B; 10.3M assigned; Medicare saved $2.5B; $245 net / $651 gross per capita; highest share earning and highest savings since inception; low-revenue $319 vs high-revenue $180; BP 77.80% -> 79.49%; MSSP peaked at 561 ACOs in 2018 (CMS Fast Facts)",
+   "note": "476 is well below the 2018 peak; CMS's record was the share earning payments."
+  },
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "s1sg1",
+   "old": "MSSP ACOs generated $2.4 billion in net savings to Medicare in performance year 2024, a new program record.",
+   "new": "Medicare saved $2.5 billion relative to ACO benchmarks in performance year 2024, the highest since the program began.",
+   "mirror": true,
+   "claim": "Net savings $2.4B",
+   "verdict": "FABRICATED",
+   "sources": "CMS fact sheet \"Medicare Shared Savings Program ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 75% earning $4.1B; 10.3M assigned; Medicare saved $2.5B; $245 net / $651 gross per capita; highest share earning and highest savings since inception; low-revenue $319 vs high-revenue $180; BP 77.80% -> 79.49%",
+   "note": "CMS updated fact sheet states $2.5B."
+  },
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "s1sg1",
+   "old": "$2.4B",
+   "new": "$2.5B",
+   "mirror": false,
+   "claim": "Stat value $2.4B net savings",
+   "verdict": "FABRICATED",
+   "sources": "CMS fact sheet \"Medicare Shared Savings Program ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 75% earning $4.1B; 10.3M assigned; Medicare saved $2.5B; $245 net / $651 gross per capita; highest share earning and highest savings since inception; low-revenue $319 vs high-revenue $180; BP 77.80% -> 79.49%",
+   "note": "Value aligned to updated CMS figure."
+  },
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "s4p2",
+   "old": "Under the \"Pathways to Success\" redesign finalized in 2018, CMS reduced the maximum time an ACO can remain in upside-only risk from six years to two years for most ACOs, with an extension to three years for low-revenue (typically physician-led) ACOs.",
+   "new": "The \"Pathways to Success\" redesign finalized in 2018 sharply shortened the time an ACO could remain in upside-only risk, but CMS later loosened that limit: the CY2023 Physician Fee Schedule rule let eligible ACOs stay upside-only for up to seven performance years, and in the CY2026 rulemaking CMS moved to cut the maximum back to five.",
+   "mirror": true,
+   "claim": "Pathways cut upside-only time from 6 to 2 years (3 for low-revenue) — stated as current",
+   "verdict": "FABRICATED",
+   "sources": "CMS fact sheet \"Medicare Shared Savings Program ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 75% earning $4.1B; 10.3M assigned; Medicare saved $2.5B; $245 net / $651 gross per capita; highest share earning and highest savings since inception; low-revenue $319 vs high-revenue $180; BP 77.80% -> 79.49% (CY2026 PFS proposal: one-sided BASIC limited to 5 years \"instead of a maximum of 7 performance years\"); CMS Pathways to Success fact sheet (Dec 2018)",
+   "note": "Stated as current policy though reversed by the CY2023 rule."
+  },
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "s4p3",
+   "old": "In 2024, two-thirds of MSSP ACOs were operating in the Level E or ENHANCED track, meaning the majority of the program now carries downside risk. This is a marked shift from the program's early years, when nearly all ACOs stayed in upside-only tracks indefinitely. High-risk-track ACOs generated more than two-thirds of all net savings in 2024—$5.4 billion of the $6.6 billion total gross savings—demonstrating that financial accountability correlates with stronger performance.",
+   "new": "A growing share of MSSP ACOs now carries downside risk — a marked shift from the program's early years, when nearly all ACOs stayed in upside-only tracks. Performance in 2024 also varied by organization type: low-revenue ACOs, typically physician-led or built around FQHCs and rural health clinics, generated $319 in net per capita savings versus $180 for high-revenue, typically hospital-led ACOs, and ACOs composed predominantly of primary care clinicians generated $403 versus $224.",
+   "mirror": true,
+   "claim": "Two-thirds of ACOs in Level E/ENHANCED in 2024; high-risk ACOs $5.4B of $6.6B gross savings",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS fact sheet \"Medicare Shared Savings Program ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 75% earning $4.1B; 10.3M assigned; Medicare saved $2.5B; $245 net / $651 gross per capita; highest share earning and highest savings since inception; low-revenue $319 vs high-revenue $180; BP 77.80% -> 79.49%",
+   "note": "Neither figure appears in CMS PY2024 results; replaced with CMS-published comparisons."
+  },
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "s4cmp1",
+   "old": "Eligible for additional investment payments",
+   "new": "Highest loss-sharing exposure",
+   "mirror": true,
+   "claim": "ENHANCED track \"eligible for additional investment payments\"",
+   "verdict": "FABRICATED",
+   "sources": "CMS CY2023 PFS final rule: advance investment payments limited to new, inexperienced, low-revenue ACOs entering the BASIC track",
+   "note": "AIPs are not an ENHANCED-track feature."
+  },
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "s6p1",
+   "old": "which itself evolved from the Pioneer ACO Model (2012–2016). In 2023, 132 ACOs participated in ACO REACH, managing care for more than two million Medicare beneficiaries and overseeing $26.6 billion in Medicare Parts A and B expenditures.",
+   "new": "which itself built on the Next Generation ACO (2016–2021) and Pioneer ACO (2012–2016) models. In 2023, 132 ACOs participated in ACO REACH, accounting for 23 million beneficiary-months of alignment and generating about $1.64 billion in gross savings (5.8%), of which $694.6 million (2.6%) was net savings to CMS.",
+   "mirror": true,
+   "claim": "REACH 2023: >2M beneficiaries, $26.6B expenditures; GPDC evolved from Pioneer",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS ACO REACH PY2023 Financial and Quality Performance Results fact sheet: 132 ACOs, 23M beneficiary months, gross $1.643B (5.8%), net to CMS $694.6M (2.6%), HNP 13.3%, New Entrant 4.8%, Standard 2.8%",
+   "note": "$26.6B not in the CMS fact sheet; replaced with its figures. HNP/standard/new-entrant rates verified REAL."
+  },
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "src6",
+   "old": "Supports ACO REACH statistics: 132 ACOs, 2M+ beneficiaries, $26.6B expenditures, savings rates by ACO type.",
+   "new": "Supports ACO REACH statistics: 132 ACOs, 23M beneficiary-months, $1.64B gross and $694.6M net savings, savings rates by ACO type.",
+   "mirror": true,
+   "claim": "Source note listing $26.6B / 2M+",
+   "verdict": "UNVERIFIABLE",
+   "sources": "As s6p1",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "src1",
+   "old": "$2.4B net savings",
+   "new": "$2.5B savings to Medicare",
+   "mirror": true,
+   "claim": "Source note $2.4B",
+   "verdict": "FABRICATED",
+   "sources": "CMS fact sheet \"Medicare Shared Savings Program ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 75% earning $4.1B; 10.3M assigned; Medicare saved $2.5B; $245 net / $651 gross per capita; highest share earning and highest savings since inception; low-revenue $319 vs high-revenue $180; BP 77.80% -> 79.49%",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "tw",
+   "old": "Two-thirds of MSSP ACOs now operate under two-sided (downside) risk as of 2024, a major shift from the program's early years, with high-risk-track ACOs generating over two-thirds of all program savings.",
+   "new": "A growing share of MSSP ACOs now operates under two-sided (downside) risk, a major shift from the program's early years, and low-revenue, physician-led ACOs continue to generate larger per capita savings than hospital-led ones.",
+   "mirror": true,
+   "claim": "Takeaway repeating two-thirds / two-thirds claims",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS fact sheet \"Medicare Shared Savings Program ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 75% earning $4.1B; 10.3M assigned; Medicare saved $2.5B; $245 net / $651 gross per capita; highest share earning and highest savings since inception; low-revenue $319 vs high-revenue $180; BP 77.80% -> 79.49%",
+   "note": ""
+  },
+  {
+   "log_only": true,
+   "doc": "sanity aco-basics",
+   "block_key": "s1sg1/s5p2/s6ex1",
+   "claim": "476 ACOs; 10.3M; 75% earning $4.1B; BP 77.80->79.49%; HNP 13.3% / Standard 2.8% / New Entrant 4.8%",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "CMS fact sheet \"Medicare Shared Savings Program ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 75% earning $4.1B; 10.3M assigned; Medicare saved $2.5B; $245 net / $651 gross per capita; highest share earning and highest savings since inception; low-revenue $319 vs high-revenue $180; BP 77.80% -> 79.49%; CMS ACO REACH PY2023 fact sheet",
+   "status": "LEFT",
+   "note": ""
+  }
+ ]
+}

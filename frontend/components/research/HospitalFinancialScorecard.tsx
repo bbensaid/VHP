@@ -9,44 +9,44 @@ type PeerGroup = "cah" | "rural_pps" | "urban_community" | "urban_tertiary";
 
 // ─── VERMONT PRESET SCENARIOS ─────────────────────────────────────────────────
 //
-// DATA SOURCING (queue item #11 — all 14 Vermont hospitals, 2026-09-22)
+// DATA SOURCING (refreshed 2026-10-08 to GMCB FY2025 ACTUALS + FY2026
+// PROJECTIONS; the earlier FY2024 actual-or-projected baseline from the FY25
+// Hospital Budget Review decks, queue item #11 of 2026-09-22, is superseded)
 // ──────────────────────────────────────────────────────────────────────────
-// totalRevenue / operatingExpense: REAL, SOURCED. Pulled directly from the
-// "Operating Margin Growth" and "Operating Revenue / Operating Expense" tables
-// in the Green Mountain Care Board's FY2025 Hospital Budget Review decks
-// (the GMCB's own FY2024 actual-or-projected figures — the latest year GMCB
-// has audited/near-final numbers for every hospital). Sources:
-//   - GMCB, "Hospital Budget Review: Review of Hospital Budget Requests & Key
-//     Metrics" (Sept 6 & 9, 2024) — Day 1 (SVMC, Copley, RRMC, Grace Cottage,
-//     Gifford, North Country, Mt. Ascutney) and Day 2 (NMC, Brattleboro,
-//     NVRH, Springfield, UVMMC, CVMC, Porter) decks.
+// totalRevenue / operatingExpense / laborCost: REAL, SOURCED. "Total Operating
+// revenue", "Total Operating Expense" and "Fees, salaries & benefits" in the
+// FY25 Actuals column of each hospital's "Actuals Income Summary" slide in:
+//   - GMCB, "Vermont Hospital System FY2025 Financials" (actuals presentation,
+//     3/18/2026), linked from https://gmcboard.vermont.gov/FY25Actuals —
 //     https://gmcboard.vermont.gov/sites/gmcb/files/documents/
-//     FY25%20Hospital%20Budget%20Review%20-%20SEPT%20-%20Hospital%20Budget%20
-//     Details%20(PART%201).pdf  and  ...(PART%202).pdf
-//   - GMCB, "Impact of FY25 Budget Requests & Summary of Staff
-//     Recommendations" (Sept 4, 2024) — system-wide NPR/margin/DCOH summary
-//     tables cross-checked against the per-hospital decks above.
+//     Final%20actuals%20presentation_0.pdf
+//   Each hospital's resulting margin reproduces the deck's own "Operating
+//   Margin" FY25 column (e.g. BMH -3.1%, RRMC 5.6%, UVMMC 1.3%). The 14 rows
+//   sum to $4,375.6M operating revenue vs the deck's system total of
+//   $4,375.4M (<0.01% rounding/restatement difference).
+// cashOnHand: SOURCED-DERIVED. The same deck's FY25 "Days Cash on Hand"
+//     ratio × (FY25 operating expense / 365), so this tool's DCOH at baseline
+//     equals GMCB's published FY25 figure. (GMCB's denominator excludes
+//     depreciation/amortization, so the implied dollar balance is slightly
+//     high; the ratio — what the scorecard grades — is exact.)
+// currentAssets: SOURCED-DERIVED. The deck's FY25 "Current Ratio" × the
+//     estimated current liabilities below, so the tool shows the real ratio.
+// currentLiabilities / annualDebtService: ESTIMATED. GMCB publishes no dollar
+//     balance-sheet or debt-service figures in these decks. Current
+//     liabilities = 10% of FY25 operating revenue; annual debt service =
+//     2.5% (CAH), 3.0% (Rural PPS) or 1.5% (academic tertiary) of FY25
+//     operating revenue. Flagged ESTIMATED in the UI.
+// fy26Projected: REAL, SOURCED. FY2026 PROJECTED operating margin, days cash
+//     on hand and current ratio per hospital from GMCB, "FY27 Hospital Budget
+//     Review — Staff Overview" (August 2026), linked from
+//     https://gmcboard.vermont.gov/fy27-prof-staff-analysis —
 //     https://gmcboard.vermont.gov/sites/gmcb/files/documents/
-//     FY25%20Hospital%20Budget%20Review%20-%20SEPT%20-%20Staff%20Analysis%20
-//     and%20Recommendations.pdf
-//   - GMCB Press Release, "Green Mountain Care Board Announces FY2025
-//     Hospital Budget Decisions and Enforcement of FY2023 Hospital Budgets"
-//     (Sept 13, 2024) — confirms the official 14-hospital roster.
-// laborCost: SOURCED-DERIVED. Real GMCB "Top Expenses as % of Total Operating
-//     Expense" labor share for FY2024, applied to the real FY2024 expense $.
-// cashOnHand: SOURCED-DERIVED. Real GMCB "Days Cash on Hand" (FY24 Projected)
-//     ratio, converted to a dollar figure via (DCOH × FY24 daily expense).
-// currentAssets / currentLiabilities / annualDebtService: ESTIMATED. GMCB
-//     publishes Current Ratio and Debt Service Coverage Ratio as charted
-//     RATIOS only — never as the underlying dollar figures — so no real $
-//     figure exists to cite for these three fields. They are modeled as
-//     (a) current liabilities = 10% of FY24 operating revenue, scaled to
-//     current assets using this same tool's own peer-benchmark current
-//     ratio (see PEER_BENCHMARKS below, itself sourced to the AHA Annual
-//     Survey / Kaufman Hall), and (b) annual debt service = 2.5% (CAH),
-//     3.0% (Rural PPS) or 1.5% (academic tertiary) of FY24 operating
-//     revenue — the same rough ratio the tool's original 3 presets used.
-//     Flagged ESTIMATED in the UI (grey "E" chip) wherever shown.
+//     FY27%20-%20AUG%20-%20Staff%20Overview%20%28Final%29.pdf
+//     (slides 31-34). That deck excludes Brattleboro Memorial Hospital (BMH's
+//     FY27 budget was reviewed separately), so BMH carries null. GMCB has not
+//     published FY2026 per-hospital DOLLAR projections in a comparable table,
+//     so the dollar baseline is FY2025 actual and FY2026 is shown alongside
+//     as GMCB's own projected ratios — never relabelled as a dollar baseline.
 //
 // Peer-group / Critical Access Hospital (CAH) designation verified against:
 //   - VAHHS, "Critical Access Hospital Overview" (2018): "Eight of Vermont's
@@ -70,14 +70,6 @@ type PeerGroup = "cah" | "rural_pps" | "urban_community" | "urban_tertiary";
 //   tertiary center, mapped to "urban_tertiary" (the closest of this tool's
 //   4 peer categories — Vermont has no "urban" hospital in the literal
 //   sense).
-//
-// NOTE ON PRE-EXISTING NVRH / CVMC FIGURES: the tool's original NVRH preset
-// used a totalRevenue of $48.2M and CVMC used $185M. Real GMCB FY2024
-// figures are $127.4M (NVRH) and $307.7M (CVMC) — both were unsourced
-// placeholders, off by more than 2x. They are corrected below using the same
-// GMCB deck citations as the 11 newly-added hospitals. Gifford's original
-// preset ($58.5M) was reasonably close to its real FY2024 NPR trajectory and
-// is replaced here with the exact sourced GMCB figure for consistency.
 //
 // SCENARIO PRESETS (extended 2026-09-28 to match HTR_Book_v42 §7.6.2, which
 // tells a CFO they can run FOUR scenarios: RBP at 200% of Medicare (Oliver
@@ -105,6 +97,8 @@ interface Preset {
   hr1PhaseYear?: number | null;
   /** Years elapsed since the transformation investment. null = not modeled. */
   transformYears?: number | null;
+  /** GMCB FY2026 projected ratios (FY27 Staff Overview). null = not published. */
+  fy26Projected?: { marginPct: number; dcoh: number; currentRatio: number } | null;
   /** Fictional example (book Appendix H's Green Mountain Community Hospital). */
   fictional?: boolean;
 }
@@ -147,7 +141,7 @@ const HR1_YEARS = [2027, 2028, 2029, 2030, 2031];
 
 // ─── TRANSFORMATION INVESTMENT ────────────────────────────────────────────────
 // The book's $195M Rural Health Transformation (RHT) award. Allocated to a
-// single hospital pro-rata by its share of the 14-hospital FY2024 revenue base
+// single hospital pro-rata by its share of the 14-hospital FY2025 revenue base
 // — an explicit allocation RULE, not a published per-hospital award (no such
 // allocation has been published). Capital is amortized straight-line; recurring
 // savings are expressed as a % of operating expense, ramping to full effect
@@ -170,15 +164,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "bmh",
     label: "Brattleboro Memorial Hospital",
-    badge: "Rural PPS · GMCB FY24",
+    badge: "Rural PPS · GMCB FY25 actual",
     peerGroup: "rural_pps" as PeerGroup,
-    totalRevenue: 117_763_464,
-    operatingExpense: 117_935_458,
-    cashOnHand: 36_220_845,
-    annualDebtService: 3_532_904,
-    currentAssets: 24_730_327,
-    currentLiabilities: 11_776_346,
-    laborCost: 67_223_211,
+    totalRevenue: 123_606_496,
+    operatingExpense: 127_382_821,
+    cashOnHand: 25_022_872,
+    annualDebtService: 3_708_195,
+    currentAssets: 32_137_690,
+    currentLiabilities: 12_360_650,
+    laborCost: 68_768_018,
+    fy26Projected: null,
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -187,15 +182,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "cvmc",
     label: "Central VT Medical Center",
-    badge: "Rural PPS · GMCB FY24",
+    badge: "Rural PPS · GMCB FY25 actual",
     peerGroup: "rural_pps" as PeerGroup,
-    totalRevenue: 307_720_295,
-    operatingExpense: 305_635_372,
-    cashOnHand: 60_792_113,
-    annualDebtService: 9_231_609,
-    currentAssets: 64_621_262,
-    currentLiabilities: 30_772_030,
-    laborCost: 195_606_638,
+    totalRevenue: 329_763_533,
+    operatingExpense: 332_183_877,
+    cashOnHand: 74_263_574,
+    annualDebtService: 9_892_906,
+    currentAssets: 42_869_259,
+    currentLiabilities: 32_976_353,
+    laborCost: 202_099_496,
+    fy26Projected: { marginPct: -3.2, dcoh: 69.6, currentRatio: 1.2 },
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -204,15 +200,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "copley",
     label: "Copley Hospital",
-    badge: "CAH · GMCB FY24",
+    badge: "CAH · GMCB FY25 actual",
     peerGroup: "cah" as PeerGroup,
-    totalRevenue: 111_709_076,
-    operatingExpense: 111_672_475,
-    cashOnHand: 17_714_621,
-    annualDebtService: 2_792_727,
-    currentAssets: 20_107_634,
-    currentLiabilities: 11_170_908,
-    laborCost: 60_303_137,
+    totalRevenue: 117_087_392,
+    operatingExpense: 115_885_012,
+    cashOnHand: 17_779_618,
+    annualDebtService: 2_927_185,
+    currentAssets: 23_417_478,
+    currentLiabilities: 11_708_739,
+    laborCost: 58_123_914,
+    fy26Projected: { marginPct: 0.6, dcoh: 59.5, currentRatio: 2.4 },
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -221,15 +218,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "grace_cottage",
     label: "Grace Cottage Hospital",
-    badge: "CAH · GMCB FY24",
+    badge: "CAH · GMCB FY25 actual",
     peerGroup: "cah" as PeerGroup,
-    totalRevenue: 30_075_634,
-    operatingExpense: 32_085_830,
-    cashOnHand: 7_472_095,
-    annualDebtService: 751_891,
-    currentAssets: 5_413_614,
-    currentLiabilities: 3_007_563,
-    laborCost: 22_780_939,
+    totalRevenue: 31_302_522,
+    operatingExpense: 32_436_627,
+    cashOnHand: 7_384_887,
+    annualDebtService: 782_563,
+    currentAssets: 2_817_227,
+    currentLiabilities: 3_130_252,
+    laborCost: 24_362_604,
+    fy26Projected: { marginPct: 0.0, dcoh: 85.4, currentRatio: 1.0 },
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -238,15 +236,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "gifford",
     label: "Gifford Medical Center",
-    badge: "CAH · GMCB FY24",
+    badge: "CAH · GMCB FY25 actual",
     peerGroup: "cah" as PeerGroup,
-    totalRevenue: 63_100_782,
-    operatingExpense: 65_825_042,
-    cashOnHand: 18_232_576,
-    annualDebtService: 1_577_520,
-    currentAssets: 11_358_140,
-    currentLiabilities: 6_310_078,
-    laborCost: 34_887_272,
+    totalRevenue: 70_958_508,
+    operatingExpense: 69_642_901,
+    cashOnHand: 21_904_123,
+    annualDebtService: 1_773_963,
+    currentAssets: 17_030_042,
+    currentLiabilities: 7_095_851,
+    laborCost: 33_063_412,
+    fy26Projected: { marginPct: -4.5, dcoh: 89.1, currentRatio: 2.4 },
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -255,15 +254,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "mt_ascutney",
     label: "Mt. Ascutney Hospital & Health Ctr",
-    badge: "CAH · GMCB FY24",
+    badge: "CAH · GMCB FY25 actual",
     peerGroup: "cah" as PeerGroup,
-    totalRevenue: 72_931_426,
-    operatingExpense: 72_839_678,
-    cashOnHand: 44_801_547,
-    annualDebtService: 1_823_286,
-    currentAssets: 13_127_657,
-    currentLiabilities: 7_293_143,
-    laborCost: 43_703_807,
+    totalRevenue: 76_311_642,
+    operatingExpense: 75_725_935,
+    cashOnHand: 45_663_776,
+    annualDebtService: 1_907_791,
+    currentAssets: 12_209_862,
+    currentLiabilities: 7_631_164,
+    laborCost: 44_858_383,
+    fy26Projected: { marginPct: -1.4, dcoh: 194.2, currentRatio: 1.3 },
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -272,15 +272,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "north_country",
     label: "North Country Hospital",
-    badge: "CAH · GMCB FY24",
+    badge: "CAH · GMCB FY25 actual",
     peerGroup: "cah" as PeerGroup,
-    totalRevenue: 107_590_732,
-    operatingExpense: 107_987_646,
-    cashOnHand: 59_108_051,
-    annualDebtService: 2_689_768,
-    currentAssets: 19_366_331,
-    currentLiabilities: 10_759_073,
-    laborCost: 65_872_464,
+    totalRevenue: 111_601_884,
+    operatingExpense: 108_497_363,
+    cashOnHand: 56_537_530,
+    annualDebtService: 2_790_047,
+    currentAssets: 22_320_376,
+    currentLiabilities: 11_160_188,
+    laborCost: 67_658_064,
+    fy26Projected: { marginPct: 4.7, dcoh: 183.0, currentRatio: 4.2 },
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -289,15 +290,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "nvrh",
     label: "NVRH — Northeastern VT Regional",
-    badge: "CAH · GMCB FY24",
+    badge: "CAH · GMCB FY25 actual",
     peerGroup: "cah" as PeerGroup,
-    totalRevenue: 127_353_530,
-    operatingExpense: 128_298_007,
-    cashOnHand: 34_236_197,
-    annualDebtService: 3_183_838,
-    currentAssets: 22_923_635,
-    currentLiabilities: 12_735_353,
-    laborCost: 82_110_724,
+    totalRevenue: 133_959_077,
+    operatingExpense: 136_658_366,
+    cashOnHand: 34_595_159,
+    annualDebtService: 3_348_977,
+    currentAssets: 32_150_179,
+    currentLiabilities: 13_395_908,
+    laborCost: 81_492_102,
+    fy26Projected: { marginPct: 0.1, dcoh: 94.7, currentRatio: 2.8 },
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -306,15 +308,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "nmc",
     label: "Northwestern Medical Center",
-    badge: "Rural PPS · GMCB FY24",
+    badge: "Rural PPS · GMCB FY25 actual",
     peerGroup: "rural_pps" as PeerGroup,
-    totalRevenue: 134_223_302,
-    operatingExpense: 135_270_258,
-    cashOnHand: 89_500_644,
-    annualDebtService: 4_026_699,
-    currentAssets: 28_186_893,
-    currentLiabilities: 13_422_330,
-    laborCost: 82_514_857,
+    totalRevenue: 143_107_677,
+    operatingExpense: 147_983_203,
+    cashOnHand: 93_452_406,
+    annualDebtService: 4_293_230,
+    currentAssets: 80_140_301,
+    currentLiabilities: 14_310_768,
+    laborCost: 83_675_604,
+    fy26Projected: { marginPct: -6.3, dcoh: 199.0, currentRatio: 6.5 },
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -323,15 +326,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "porter",
     label: "Porter Medical Center",
-    badge: "CAH · GMCB FY24",
+    badge: "CAH · GMCB FY25 actual",
     peerGroup: "cah" as PeerGroup,
-    totalRevenue: 124_316_772,
-    operatingExpense: 119_344_460,
-    cashOnHand: 36_522_594,
-    annualDebtService: 3_107_919,
-    currentAssets: 22_377_019,
-    currentLiabilities: 12_431_677,
-    laborCost: 68_026_342,
+    totalRevenue: 135_580_975,
+    operatingExpense: 128_984_579,
+    cashOnHand: 49_049_478,
+    annualDebtService: 3_389_524,
+    currentAssets: 77_281_159,
+    currentLiabilities: 13_558_098,
+    laborCost: 79_016_816,
+    fy26Projected: { marginPct: 1.6, dcoh: 128.4, currentRatio: 6.3 },
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -340,15 +344,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "rutland",
     label: "Rutland Regional Medical Center",
-    badge: "Rural PPS · GMCB FY24",
+    badge: "Rural PPS · GMCB FY25 actual",
     peerGroup: "rural_pps" as PeerGroup,
-    totalRevenue: 352_732_684,
-    operatingExpense: 345_558_192,
-    cashOnHand: 191_808_371,
-    annualDebtService: 10_581_981,
-    currentAssets: 74_073_863,
-    currentLiabilities: 35_273_268,
-    laborCost: 193_512_588,
+    totalRevenue: 382_420_922,
+    operatingExpense: 360_860_974,
+    cashOnHand: 247_758_247,
+    annualDebtService: 11_472_628,
+    currentAssets: 248_573_598,
+    currentLiabilities: 38_242_092,
+    laborCost: 189_835_862,
+    fy26Projected: { marginPct: -1.2, dcoh: 248.7, currentRatio: 6.3 },
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -357,15 +362,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "springfield",
     label: "Springfield Hospital",
-    badge: "CAH · GMCB FY24",
+    badge: "CAH · GMCB FY25 actual",
     peerGroup: "cah" as PeerGroup,
-    totalRevenue: 63_902_963,
-    operatingExpense: 63_826_600,
-    cashOnHand: 8_760_836,
-    annualDebtService: 1_597_574,
-    currentAssets: 11_502_533,
-    currentLiabilities: 6_390_296,
-    laborCost: 36_381_162,
+    totalRevenue: 70_770_332,
+    operatingExpense: 70_273_563,
+    cashOnHand: 10_666_179,
+    annualDebtService: 1_769_258,
+    currentAssets: 14_154_066,
+    currentLiabilities: 7_077_033,
+    laborCost: 39_117_205,
+    fy26Projected: { marginPct: -5.2, dcoh: 28.7, currentRatio: 1.8 },
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -374,15 +380,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "svmc",
     label: "Southwestern VT Medical Center",
-    badge: "Rural PPS · GMCB FY24",
+    badge: "Rural PPS · GMCB FY25 actual",
     peerGroup: "rural_pps" as PeerGroup,
-    totalRevenue: 216_314_408,
-    operatingExpense: 213_938_841,
-    cashOnHand: 25_614_043,
-    annualDebtService: 6_489_432,
-    currentAssets: 45_426_026,
-    currentLiabilities: 21_631_441,
-    laborCost: 130_502_693,
+    totalRevenue: 230_565_700,
+    operatingExpense: 227_470_563,
+    cashOnHand: 21_313_680,
+    annualDebtService: 6_916_971,
+    currentAssets: 20_750_913,
+    currentLiabilities: 23_056_570,
+    laborCost: 136_435_271,
+    fy26Projected: { marginPct: 0.0, dcoh: 22.0, currentRatio: 0.8 },
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -391,15 +398,16 @@ const VERMONT_PRESETS: Preset[] = [
   {
     id: "uvmmc",
     label: "UVM Medical Center",
-    badge: "Academic Tertiary · GMCB FY24",
+    badge: "Academic Tertiary · GMCB FY25 actual",
     peerGroup: "urban_tertiary" as PeerGroup,
-    totalRevenue: 2_267_584_149,
-    operatingExpense: 2_199_398_007,
-    cashOnHand: 709_231_552,
-    annualDebtService: 34_013_762,
-    currentAssets: 634_923_562,
-    currentLiabilities: 226_758_415,
-    laborCost: 1_253_656_864,
+    totalRevenue: 2_418_541_275,
+    operatingExpense: 2_386_528_481,
+    cashOnHand: 966_380_574,
+    annualDebtService: 36_278_119,
+    currentAssets: 1_039_972_750,
+    currentLiabilities: 241_854_128,
+    laborCost: 1_301_005_640,
+    fy26Projected: { marginPct: -1.2, dcoh: 136.2, currentRatio: 4.5 },
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -410,13 +418,13 @@ const VERMONT_PRESETS: Preset[] = [
     label: "Act 68 RBP Scenario (FY2027)",
     badge: "Stress Test · RBP benchmark 200% / 250% of Medicare",
     peerGroup: "cah" as PeerGroup,
-    totalRevenue: 127_353_530,
-    operatingExpense: 128_298_007,
-    cashOnHand: 34_236_197,
-    annualDebtService: 3_183_838,
-    currentAssets: 22_923_635,
-    currentLiabilities: 12_735_353,
-    laborCost: 82_110_724,
+    totalRevenue: 133_959_077,
+    operatingExpense: 136_658_366,
+    cashOnHand: 34_595_159,
+    annualDebtService: 3_348_977,
+    currentAssets: 32_150_179,
+    currentLiabilities: 13_395_908,
+    laborCost: 81_492_102,
     medicaidCutPct: 0,
     // RBP compression is now modeled explicitly by the benchmark control below
     // (commercial share × the gap between today's price and the cap), not as a
@@ -431,13 +439,13 @@ const VERMONT_PRESETS: Preset[] = [
     label: "Act 68 Global Budget (FY2028–30)",
     badge: "Stress Test · Mandatory Global Hospital Budget",
     peerGroup: "cah" as PeerGroup,
-    totalRevenue: 127_353_530,
-    operatingExpense: 128_298_007,
-    cashOnHand: 34_236_197,
-    annualDebtService: 3_183_838,
-    currentAssets: 22_923_635,
-    currentLiabilities: 12_735_353,
-    laborCost: 82_110_724,
+    totalRevenue: 133_959_077,
+    operatingExpense: 136_658_366,
+    cashOnHand: 34_595_159,
+    annualDebtService: 3_348_977,
+    currentAssets: 32_150_179,
+    currentLiabilities: 13_395_908,
+    laborCost: 81_492_102,
     medicaidCutPct: 0,
     // A global budget caps total revenue regardless of volume growth, so
     // volume gains that would normally add revenue are modeled as lost
@@ -453,13 +461,13 @@ const VERMONT_PRESETS: Preset[] = [
     label: "H.R. 1 Medicaid Cuts (Phasing 2027–2031)",
     badge: "Stress Test · $911B Cuts, phased",
     peerGroup: "cah" as PeerGroup,
-    totalRevenue: 127_353_530,
-    operatingExpense: 128_298_007,
-    cashOnHand: 34_236_197,
-    annualDebtService: 3_183_838,
-    currentAssets: 22_923_635,
-    currentLiabilities: 12_735_353,
-    laborCost: 82_110_724,
+    totalRevenue: 133_959_077,
+    operatingExpense: 136_658_366,
+    cashOnHand: 34_595_159,
+    annualDebtService: 3_348_977,
+    currentAssets: 32_150_179,
+    currentLiabilities: 13_395_908,
+    laborCost: 81_492_102,
     medicaidCutPct: HR1_FULL_CUT_PCT,
     volumeChangePct: -5,
     travelNurseIncreasePct: 15,
@@ -471,13 +479,13 @@ const VERMONT_PRESETS: Preset[] = [
     label: "RHT Transformation Investment ($195M)",
     badge: "Scenario · Rural Health Transformation capital",
     peerGroup: "cah" as PeerGroup,
-    totalRevenue: 127_353_530,
-    operatingExpense: 128_298_007,
-    cashOnHand: 34_236_197,
-    annualDebtService: 3_183_838,
-    currentAssets: 22_923_635,
-    currentLiabilities: 12_735_353,
-    laborCost: 82_110_724,
+    totalRevenue: 133_959_077,
+    operatingExpense: 136_658_366,
+    cashOnHand: 34_595_159,
+    annualDebtService: 3_348_977,
+    currentAssets: 32_150_179,
+    currentLiabilities: 13_395_908,
+    laborCost: 81_492_102,
     medicaidCutPct: 0,
     volumeChangePct: 0,
     travelNurseIncreasePct: 0,
@@ -515,25 +523,26 @@ const VERMONT_PRESETS: Preset[] = [
 // million against break-even." Ch.1's platform table and Ch.15 §H.4 both cite
 // this tool as where a reader "reproduces" / makes that finding "your own
 // number." The defaults below are exactly those two Oliver Wyman rates,
-// applied here to compound forward from THIS tool's own real, sourced FY2024
+// applied here to compound forward from THIS tool's own real, sourced FY2025
 // per-hospital baselines (see VERMONT_PRESETS above) — not from Oliver
 // Wyman's own underlying dataset, which is not public at the hospital level.
 // A reader can drag either rate to run their own scenario, which is the
 // literal mechanic Ch.15 §H.4 is describing.
 const REAL_HOSPITALS = VERMONT_PRESETS.filter(p => p.sourced);
-const PROJECTION_BASE_YEAR = 2024; // FY2024 — this tool's real baseline year
+const PROJECTION_BASE_YEAR = 2025; // FY2025 — latest GMCB audited-actuals year
 const BOOK_DEFAULT_REVENUE_GROWTH = 3.5; // Oliver Wyman conservative scenario, non-340B revenue
 const BOOK_DEFAULT_EXPENSE_GROWTH = 5;   // Oliver Wyman conservative scenario, expense growth
-const BOOK_DEFAULT_HORIZON_YEARS = 4;    // FY2024 -> FY2028, matching the book's cited endpoint
+const BOOK_DEFAULT_HORIZON_YEARS = 3;    // FY2025 -> FY2028, matching the book's cited endpoint
 //
-// HONEST RE-RUN RESULT (verified 2026-09-22, at these exact defaults against
-// the 14-hospital FY2024 baseline above): 14/14 hospitals in operating loss
-// by FY2028 (all 14 already by FY2027), cumulative FY2025-28 system deficit
-// ≈ $317M against break-even (≈$581M if the horizon is extended to FY2029,
-// a literal 5-year window). This does NOT match the book's cited "13 of 14
-// by 2028 / $700M cumulative 5-year deficit" — the hospital count is worse
-// (14, not 13) and reached a year earlier, while the dollar figure is lower.
-// This is expected, not a bug: this baseline is FY2024 GMCB actuals, while
+// HONEST RE-RUN RESULT (re-verified 2026-10-08, at these exact defaults
+// against the 14-hospital FY2025 ACTUALS baseline above): 10/14 hospitals in
+// operating loss in FY2026, 12/14 by FY2027-28, 13/14 by FY2029, 14/14 by
+// FY2030. Cumulative FY2026-28 system result ≈ -$234M; a literal 5-year
+// window (FY2026-30) ≈ -$782M. The book's cited "13 of 14 by 2028 / $700M
+// cumulative 5-year deficit" is close on the dollar figure; the 13th hospital
+// arrives one year later here (FY2029). (The superseded FY2024 baseline gave
+// 14/14 by FY2028 and ≈ -$317M FY2025-28.)
+// This is expected, not a bug: this baseline is FY2025 GMCB actuals, while
 // Oliver Wyman's published figures were modeled from FY2023 data with
 // different 340B treatment and payer-mix assumptions this tool cannot see.
 // Do not "fix" the output to land on 13/$700M — see the file's top-of-file
@@ -647,7 +656,7 @@ export default function HospitalFinancialScorecard() {
   const [transformAmortYears, setTransformAmortYears] = useState(TRANSFORM_AMORT_YEARS_DEFAULT);
 
   // Pro-rata share of the $195M statewide RHT award, by this hospital's share
-  // of the 14-hospital FY2024 revenue base.
+  // of the 14-hospital FY2025 revenue base.
   const systemRevenue = REAL_HOSPITALS.reduce((a, h) => a + h.totalRevenue, 0);
   function rhtShareFor(revenue: number) {
     return Math.round((revenue / systemRevenue) * RHT_STATEWIDE_AWARD);
@@ -757,7 +766,7 @@ export default function HospitalFinancialScorecard() {
       rbpCapPct, commercialPricePct, commercialSharePct, hr1PhaseYear,
       transformYears, transformInvestment, transformSavingsPct, transformAmortYears]);
 
-  // Compounds each of the 14 real FY2024 baselines forward year-by-year at
+  // Compounds each of the 14 real FY2025 baselines forward year-by-year at
   // the two adjustable growth rates, exactly as Oliver Wyman's cited
   // methodology does (revenue and expense growing at independent constant
   // annual rates, no other stress factors applied).
@@ -777,7 +786,7 @@ export default function HospitalFinancialScorecard() {
     });
 
     const yearlyAggregate = Array.from({ length: horizonYears }, (_, i) => {
-      const pathIdx = i + 1; // 0 is the FY2024 baseline row
+      const pathIdx = i + 1; // 0 is the FY2025 baseline row
       const year = PROJECTION_BASE_YEAR + i + 1;
       const rows = hospitalTrajectories.map(h => h.path[pathIdx]);
       const hospitalsInLoss = rows.filter(r => r.margin < 0).length;
@@ -831,7 +840,7 @@ export default function HospitalFinancialScorecard() {
         <span className="text-[10px] text-slate-400 ml-1">
           {mode === "stress"
             ? "One hospital, one year, adjustable shocks."
-            : "All 14 real FY2024 baselines, compounded forward under adjustable growth rates."}
+            : "All 14 real GMCB FY2025-actual baselines, compounded forward under adjustable growth rates."}
         </span>
       </div>
 
@@ -872,10 +881,11 @@ export default function HospitalFinancialScorecard() {
             </div>
             <p className="text-[9px] text-slate-400 mt-2 leading-relaxed">
               <BadgeCheck size={9} className="inline text-emerald-600 mr-0.5 -mt-0.5" />
-              Revenue / expense / labor share / days-cash sourced from GMCB FY2025
-              Hospital Budget Review filings (FY2024 actual or projected).
-              Current assets/liabilities and annual debt service are <strong>estimated</strong>
-              (GMCB charts these only as ratios, never as dollar figures) — see code comments for method.
+              Revenue / expense / labor / days-cash / current ratio are GMCB FY2025
+              <strong>actuals</strong> (Vermont Hospital System FY2025 Financials, Mar 2026);
+              FY2026 projected margin and days cash are GMCB&apos;s FY27 budget-review figures (Aug 2026).
+              Current liabilities and annual debt service are <strong>estimated</strong>
+              (GMCB publishes ratios, not dollar balances) — see code comments for method.
               <FlaskConical size={9} className="inline text-amber-600 ml-1.5 mr-0.5 -mt-0.5" />
               Stress-test scenarios are modeled, not hospital filings.
               {" "}{GMCH_LABEL} is the book&apos;s fictional Appendix H example (median of the 8 Vermont CAHs).
@@ -1176,6 +1186,38 @@ export default function HospitalFinancialScorecard() {
               selected hospital&apos;s real GMCB baseline, not a real reported result.
             </div>
           )}
+          {activePresetData?.sourced && (
+            <div className="rounded-xl border border-sky-200 bg-white px-4 py-3">
+              <p className="text-[10px] font-black uppercase tracking-widest text-sky-700 mb-1.5 flex items-center gap-1">
+                <BadgeCheck size={11} className="text-emerald-600" /> GMCB trajectory · {activePresetData.label}
+              </p>
+              <div className="grid grid-cols-3 gap-2 text-[11px]">
+                <div>
+                  <p className="text-slate-400 text-[9px] uppercase font-bold">FY2025 actual margin</p>
+                  <p className="font-black text-slate-800">
+                    {fmt(((activePresetData.totalRevenue - activePresetData.operatingExpense) / activePresetData.totalRevenue) * 100, 1)}%
+                  </p>
+                </div>
+                <div>
+                  <p className="text-slate-400 text-[9px] uppercase font-bold">FY2026 projected margin</p>
+                  <p className="font-black text-slate-800">
+                    {activePresetData.fy26Projected ? `${fmt(activePresetData.fy26Projected.marginPct, 1)}%` : "not published"}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-slate-400 text-[9px] uppercase font-bold">FY2026 projected days cash</p>
+                  <p className="font-black text-slate-800">
+                    {activePresetData.fy26Projected ? `${fmt(activePresetData.fy26Projected.dcoh, 0)} days` : "not published"}
+                  </p>
+                </div>
+              </div>
+              <p className="text-[9px] text-slate-400 mt-1.5 leading-relaxed">
+                FY2026 figures are GMCB&apos;s own projections from the FY27 Hospital Budget Review staff
+                overview (Aug 2026){activePresetData.fy26Projected ? "" : "; that deck excludes Brattleboro Memorial Hospital"}.
+                The scorecard below runs on the FY2025 actual dollars.
+              </p>
+            </div>
+          )}
 
           {/* Overall status */}
           <div className={`rounded-2xl p-5 border ${STATUS_CONFIG[overallStatus].bg}`}>
@@ -1267,8 +1309,8 @@ export default function HospitalFinancialScorecard() {
 
           <p className="text-[10px] text-slate-400 leading-relaxed">
             Peer benchmarks based on AHA Annual Survey 2024 and Kaufman Hall National Hospital Flash Report.
-            Hospital baselines sourced from Green Mountain Care Board FY2025 Hospital Budget Review filings
-            (FY2024 actual/projected) — see source citations in the component&apos;s code comments. Stress-test
+            Hospital baselines are Green Mountain Care Board FY2025 actuals (FY2025 Financials, Mar 2026),
+            with GMCB FY2026 projections from the FY27 budget review — see source citations in the component&apos;s code comments. Stress-test
             parameters apply proportional adjustments and are modeled scenarios, not filings. For planning
             purposes only.
           </p>
@@ -1282,7 +1324,7 @@ export default function HospitalFinancialScorecard() {
           <div className="bg-sky-50 border border-sky-200 rounded-xl p-4">
             <p className="text-[10px] font-black uppercase tracking-widest text-sky-700 mb-2">Multi-Year Projection</p>
             <p className="text-[11px] text-slate-600 leading-relaxed">
-              Compounds all <strong>14 real, GMCB-sourced FY2024 baselines</strong> above forward
+              Compounds all <strong>14 real, GMCB-sourced FY2025-actual baselines</strong> above forward
               year-by-year at the growth rates below — independent of the hospital picker and
               single-year stress sliders, which don&apos;t apply here.
             </p>
@@ -1290,7 +1332,7 @@ export default function HospitalFinancialScorecard() {
               <BadgeCheck size={9} className="inline text-emerald-600 mr-0.5 -mt-0.5" />
               Defaults reproduce HTR_Book_v42 §6.9&apos;s cited Oliver Wyman
               &quot;conservative scenario&quot; growth rates (3.5%/yr revenue, 5%/yr expense),
-              applied here to this tool&apos;s own real FY2024 baselines — not Oliver Wyman&apos;s
+              applied here to this tool&apos;s own real FY2025 baselines — not Oliver Wyman&apos;s
               underlying dataset, which isn&apos;t public at the hospital level. Drag either rate
               to run your own scenario.
             </p>
@@ -1328,7 +1370,7 @@ export default function HospitalFinancialScorecard() {
             <input type="range" min={1} max={10} step={1} value={horizonYears}
               onChange={e => setHorizonYears(parseInt(e.target.value, 10))}
               className="w-full h-1.5 rounded-full appearance-none bg-slate-200 accent-indigo-600 cursor-pointer" />
-            <p className="text-[9px] text-slate-400 mt-1">Default (4 yrs) lands on FY2028, the book&apos;s cited endpoint.</p>
+            <p className="text-[9px] text-slate-400 mt-1">Default (3 yrs) lands on FY2028, the book&apos;s cited endpoint.</p>
           </div>
 
           <button
@@ -1353,7 +1395,7 @@ export default function HospitalFinancialScorecard() {
               <p className={`text-3xl font-black ${projection.finalYear.hospitalsInLoss >= 10 ? "text-rose-600" : "text-amber-600"}`}>
                 {projection.finalYear.hospitalsInLoss} <span className="text-lg text-slate-400 font-bold">/ 14</span>
               </p>
-              <p className="text-[10px] text-slate-500 mt-1">by FY{projection.targetYear} · vs. {projection.baselineInLoss}/14 in the FY2024 baseline</p>
+              <p className="text-[10px] text-slate-500 mt-1">by FY{projection.targetYear} · vs. {projection.baselineInLoss}/14 in the FY2025 actual baseline</p>
             </div>
             <div className={`rounded-2xl p-4 border ${projection.cumulativeNetIncome < 0 ? "bg-rose-50 border-rose-200" : "bg-emerald-50 border-emerald-200"}`}>
               <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">Cumulative System Result</p>
@@ -1434,8 +1476,8 @@ export default function HospitalFinancialScorecard() {
           </div>
 
           <p className="text-[10px] text-slate-400 leading-relaxed">
-            Projection compounds each hospital&apos;s real FY2024 total net revenue and total
-            operating expense (Green Mountain Care Board FY2025 Hospital Budget Review filings)
+            Projection compounds each hospital&apos;s real FY2025 total operating revenue and total
+            operating expense (Green Mountain Care Board, Vermont Hospital System FY2025 Financials)
             independently at the two rates above — no volume, payer-mix, or labor-market factors
             beyond what those two rates imply, matching Oliver Wyman&apos;s stated methodology.
             &quot;In loss&quot; means a negative operating margin in that fiscal year. Cumulative

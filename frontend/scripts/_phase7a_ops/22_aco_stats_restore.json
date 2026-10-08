@@ -1,0 +1,143 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "s4p3",
+   "old": "A growing share of MSSP ACOs now carries downside risk — a marked shift",
+   "new": "In 2024, two-thirds of MSSP ACOs were in the Level E or ENHANCED track, carrying downside risk, and they delivered more than two-thirds of all savings — $5.4 billion of $6.6 billion in gross savings, according to an Accountable for Health analysis of CMS data — a marked shift",
+   "mirror": false,
+   "claim": "Two-thirds of ACOs in Level E/ENHANCED delivered $5.4B of $6.6B (2024)",
+   "verdict": "REAL",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\" (accountableforhealth.org, from CMS PY2024 data): two-thirds of ACOs in Level E/ENHANCED delivered $5.4B of $6.6B total savings; record $2.48B net; 8th consecutive year; cumulative $35B gross / $13.6B net",
+   "note": "VERDICT CORRECTION: earlier in this run the claim was logged UNVERIFIABLE/FABRICATED and removed; it is REAL (secondary source citing CMS data; $2.4B was CMS's initial $2.48B, since updated to $2.5B). Restored with attribution."
+  },
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "tw",
+   "old": "A growing share of MSSP ACOs now operates under two-sided (downside) risk,",
+   "new": "Two-thirds of MSSP ACOs operated under two-sided (downside) risk in 2024, delivering more than two-thirds of savings,",
+   "mirror": false,
+   "claim": "Takeaway: two-thirds in downside risk",
+   "verdict": "REAL",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\" (accountableforhealth.org, from CMS PY2024 data): two-thirds of ACOs in Level E/ENHANCED delivered $5.4B of $6.6B total savings; record $2.48B net; 8th consecutive year; cumulative $35B gross / $13.6B net",
+   "note": "VERDICT CORRECTION: earlier in this run the claim was logged UNVERIFIABLE/FABRICATED and removed; it is REAL (secondary source citing CMS data; $2.4B was CMS's initial $2.48B, since updated to $2.5B). Restored with attribution."
+  },
+  {
+   "docs": [
+    "aco-performance-evidence"
+   ],
+   "key": "s2p2",
+   "old": "Organization type mattered:",
+   "new": "ACOs in the Level E and ENHANCED tracks, which carry two-sided risk, generated $5.4 billion of the $6.6 billion in gross savings (Accountable for Health analysis of CMS data). Organization type also mattered:",
+   "mirror": false,
+   "claim": "Level E/ENHANCED ACOs generated $5.4B of $6.6B gross savings",
+   "verdict": "REAL",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\" (accountableforhealth.org, from CMS PY2024 data): two-thirds of ACOs in Level E/ENHANCED delivered $5.4B of $6.6B total savings; record $2.48B net; 8th consecutive year; cumulative $35B gross / $13.6B net",
+   "note": "VERDICT CORRECTION: earlier in this run the claim was logged UNVERIFIABLE/FABRICATED and removed; it is REAL (secondary source citing CMS data; $2.4B was CMS's initial $2.48B, since updated to $2.5B). Restored with attribution."
+  },
+  {
+   "docs": [
+    "aco-performance-evidence"
+   ],
+   "key": "s2p1",
+   "old": "the highest savings since the program began.",
+   "new": "the highest savings since the program began. Since the program's inception, ACOs have generated about $35 billion in gross savings and $13.6 billion in net savings to Medicare (Accountable for Health, from CMS data).",
+   "mirror": false,
+   "claim": "Cumulative $35B gross / $13.6B net since inception",
+   "verdict": "REAL",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\" (accountableforhealth.org, from CMS PY2024 data): two-thirds of ACOs in Level E/ENHANCED delivered $5.4B of $6.6B total savings; record $2.48B net; 8th consecutive year; cumulative $35B gross / $13.6B net",
+   "note": "VERDICT CORRECTION: earlier in this run the claim was logged UNVERIFIABLE/FABRICATED and removed; it is REAL (secondary source citing CMS data; $2.4B was CMS's initial $2.48B, since updated to $2.5B). Restored with attribution."
+  },
+  {
+   "docs": [
+    "aco-population-health-strategy"
+   ],
+   "key": "s2p3",
+   "old": "Real downside risk is meant to drive serious population health investment:",
+   "new": "In 2024, ACOs in the risk-bearing Level E and ENHANCED tracks delivered more than two-thirds of all program savings, and real downside risk drives serious population health investment:",
+   "mirror": false,
+   "claim": "Two-sided-risk ACOs generated the large majority of 2024 savings",
+   "verdict": "REAL",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\" (accountableforhealth.org, from CMS PY2024 data): two-thirds of ACOs in Level E/ENHANCED delivered $5.4B of $6.6B total savings; record $2.48B net; 8th consecutive year; cumulative $35B gross / $13.6B net",
+   "note": "VERDICT CORRECTION: earlier in this run the claim was logged UNVERIFIABLE/FABRICATED and removed; it is REAL (secondary source citing CMS data; $2.4B was CMS's initial $2.48B, since updated to $2.5B). Restored with attribution."
+  },
+  {
+   "docs": [
+    "mssp-aco-overview"
+   ],
+   "key": "s4p1",
+   "old": "generated about $2.4 billion in net savings to Medicare",
+   "new": "generated nearly $2.5 billion in net savings to Medicare",
+   "mirror": false,
+   "claim": "PY2024 net savings \"about $2.4B\" (initial CMS figure $2.48B; updated $2.5B)",
+   "verdict": "REAL",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\" (accountableforhealth.org, from CMS PY2024 data): two-thirds of ACOs in Level E/ENHANCED delivered $5.4B of $6.6B total savings; record $2.48B net; 8th consecutive year; cumulative $35B gross / $13.6B net",
+   "note": "VERDICT CORRECTION: earlier in this run the claim was logged UNVERIFIABLE/FABRICATED and removed; it is REAL (secondary source citing CMS data; $2.4B was CMS's initial $2.48B, since updated to $2.5B). Restored with attribution."
+  },
+  {
+   "docs": [
+    "mssp-aco-overview"
+   ],
+   "objKey": "s1",
+   "expect": "Highest in program history (CMS)",
+   "set": {
+    "value": "~$2.5B"
+   },
+   "mirror": false,
+   "claim": "Stat $2.4B net savings PY2024",
+   "verdict": "REAL",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\" (accountableforhealth.org, from CMS PY2024 data): two-thirds of ACOs in Level E/ENHANCED delivered $5.4B of $6.6B total savings; record $2.48B net; 8th consecutive year; cumulative $35B gross / $13.6B net; CMS updated PY2024 fact sheet 2025-09-29 ($2.5B)",
+   "note": "Rounded to the CMS figure (2.48 -> ~2.5)."
+  },
+  {
+   "docs": [
+    "mssp-aco-overview"
+   ],
+   "key": "tw",
+   "old": "generated a record ~$2.4 billion in net savings,",
+   "new": "generated a record ~$2.5 billion in net savings,",
+   "mirror": false,
+   "claim": "Takeaway ~$2.4B",
+   "verdict": "REAL",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\" (accountableforhealth.org, from CMS PY2024 data): two-thirds of ACOs in Level E/ENHANCED delivered $5.4B of $6.6B total savings; record $2.48B net; 8th consecutive year; cumulative $35B gross / $13.6B net",
+   "note": "VERDICT CORRECTION: earlier in this run the claim was logged UNVERIFIABLE/FABRICATED and removed; it is REAL (secondary source citing CMS data; $2.4B was CMS's initial $2.48B, since updated to $2.5B). Restored with attribution."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity mssp-aco-overview",
+   "block_key": "s3p3/s4p2/s4p3/s2p1",
+   "claim": "Two-thirds of ACOs in Level E/ENHANCED generate most savings; 476 ACOs in 2025; 5,000 minimum; REACH capitation options",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\" (accountableforhealth.org, from CMS PY2024 data): two-thirds of ACOs in Level E/ENHANCED delivered $5.4B of $6.6B total savings; record $2.48B net; 8th consecutive year; cumulative $35B gross / $13.6B net; CMS 2025 SSP Fast Facts; 42 CFR 425.110; CMS ACO REACH page",
+   "status": "LEFT",
+   "note": ""
+  },
+  {
+   "log_only": true,
+   "doc": "sanity aco-quality-reporting",
+   "block_key": "all",
+   "claim": "APP 3 measures 2024 / Web Interface 10 measures; eCQM/MIPS CQM/Medicare CQM collection types; QPS 30th/40th percentile, 10th-percentile outcome floor; APP Plus 6 measures from 2025",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "42 CFR 425 Subpart F; CMS MSSP 2024 collection-types guide (qpp-cm-prod-content PDF); CY2025 PFS final rule (APP Plus)",
+   "status": "LEFT",
+   "note": "No fabricated quotes, studies, people or media found; technical content matches CMS rules."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity aco-basics / aco-performance-evidence / aco-population-health-strategy",
+   "block_key": "s1sg1,s2sg1,s3sg1,tw",
+   "claim": "Earlier replacements of $2.4B -> $2.5B and 476/10.3M/75% stats",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "Accountable for Health, \"Accountability Delivered: Shared Savings Program Results from 2024\" (accountableforhealth.org, from CMS PY2024 data): two-thirds of ACOs in Level E/ENHANCED delivered $5.4B of $6.6B total savings; record $2.48B net; 8th consecutive year; cumulative $35B gross / $13.6B net; CMS updated PY2024 fact sheet",
+   "status": "LEFT",
+   "note": "VERDICT CORRECTION for this run's earlier lines on these docs: $2.4B (initial CMS $2.48B), the two-thirds/$5.4B/$6.6B split, and cumulative $35B/$13.6B were REAL (Accountable for Health citing CMS), not FABRICATED/UNVERIFIABLE. Text now uses CMS's updated figures and restores the risk/cumulative claims with attribution."
+  }
+ ]
+}

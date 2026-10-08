@@ -1,0 +1,28 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "academyModule-vbc-pro"
+   ],
+   "key": "pro-p14",
+   "old": "Studies by Ethan Basch and colleagues published in JAMA and the New England Journal of Medicine demonstrated",
+   "new": "A randomized trial by Ethan Basch and colleagues, published in the Journal of Clinical Oncology (2016) with survival results in JAMA (2017), demonstrated",
+   "mirror": true,
+   "claim": "Basch symptom-monitoring studies \"published in JAMA and the New England Journal of Medicine\"",
+   "verdict": "FABRICATED",
+   "sources": "Basch E et al., J Clin Oncol 2016;34(6):557-65 (fewer ED visits, better QoL); Basch E et al., JAMA 2017;318(2):197-8 (overall survival 31.2 vs 26.0 months); Denis F et al., JAMA 2019 (replication in lung cancer)",
+   "note": "Findings real; NEJM venue was wrong."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity academyModule-vbc-pro",
+   "block_key": "pro-p4/p9/p12",
+   "claim": "PROMIS NIH 2004/HealthMeasures; HOOS JR/KOOS JR in CJR since 2016 and IQR THA/TKA PRO-PM; FDA June 2021 draft guidance on core PROs; EOM ePRO requirement",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "HealthMeasures (Northwestern); CMS CJR and IQR THA/TKA PRO-PM pages; FDA draft guidance June 2021; CMS EOM overview (ePRO implementation)",
+   "status": "LEFT",
+   "note": ""
+  }
+ ]
+}

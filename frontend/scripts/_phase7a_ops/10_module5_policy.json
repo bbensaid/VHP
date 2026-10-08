@@ -1,0 +1,323 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk004",
+   "old": "The most comprehensive evaluation of MSSP clinical outcomes, published by CMS in 2025 using 12 years of program data, found that ACOs in their fifth year or beyond reduced preventable hospital admissions by 8.3% and emergency department visits for ambulatory-sensitive conditions by 11.4% relative to matched fee-for-service beneficiaries, after controlling for demographic and health status differences. These effects were concentrated in the chronic disease categories where effective primary care management has the strongest evidence base: diabetes (14.2% reduction in preventable admissions), congestive heart failure (18.7% reduction), and chronic obstructive pulmonary disease (12.4% reduction). Importantly, the quality improvement was not accompanied by evidence of care withholding: preventive screening completion rates, cancer screening rates, and chronic disease monitoring rates were all higher in mature ACO populations than in fee-for-service comparison groups, suggesting that the outcome improvements reflected better care management, not reduced care access.",
+   "new": "The most cited peer-reviewed evaluation of MSSP clinical and spending performance, by McWilliams and colleagues in the New England Journal of Medicine (2016), compared 220 ACOs with local non-ACO providers using Medicare claims. ACOs that entered in 2012 reduced spending by about $144 per beneficiary — roughly 1.4% — by 2013, while the 2013 entry cohort showed no significant savings in its first year, an early sign that savings take time to develop. Savings were consistently larger in independent primary care groups than in hospital-integrated ones. Importantly, the savings were not accompanied by evidence of care withholding: ACO contracts were associated with improved performance on some quality measures — including fewer hospitalizations for COPD and asthma — and unchanged performance on the rest, suggesting that the spending reductions reflected better care management, not reduced access.",
+   "mirror": true,
+   "claim": "CMS 2025 \"MSSP 12-Year Evaluation\" found mature ACOs cut preventable admissions 8.3%, ambulatory-sensitive ED visits 11.4%, diabetes 14.2%, CHF 18.7%, COPD 12.4%",
+   "verdict": "FABRICATED",
+   "sources": "McWilliams JM et al., \"Early Performance of Accountable Care Organizations in Medicare,\" NEJM 2016;374:2357-66 (220 ACOs; 2012 cohort -$144/beneficiary, 1.4%, in 2013; 2013 cohort -$3, NS; improved on some quality measures, unchanged on others; savings greater in independent primary care groups)",
+   "note": "No CMS \"MSSP 12-Year Evaluation Report\" exists; all five percentages were invented. Replaced with the real peer-reviewed MSSP evaluation."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "objKey": "blk005",
+   "expect": "After twelve years of MSSP data, we can say with reasonable ",
+   "drop": true,
+   "mirror": true,
+   "claim": "Quote attributed to \"CMS Office of Enterprise Data and Analytics, MSSP 12-Year Evaluation Report, 2025\"",
+   "verdict": "FABRICATED",
+   "sources": "No such CMS report exists (CMS publishes annual SSP financial/quality results, not a 12-year evaluation); quote not findable",
+   "note": "Fabricated quote removed."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk009",
+   "old": "\"Evidence Strength\": \"Strong\",\n    \"Key Findings\": \"8-14% reduction in preventable admissions; improved chronic disease monitoring rates\",\n    \"Best Evidence Source\": \"MSSP 12-Year Evaluation, CMS 2025\",\n    \"Confidence Level\": \"High\"",
+   "new": "\"Evidence Strength\": \"Moderate\",\n    \"Key Findings\": \"Modest spending reductions (about 1.4% for the 2012 entry cohort by 2013) that take time to develop; quality improved on some measures and was unchanged on others\",\n    \"Best Evidence Source\": \"McWilliams et al., New England Journal of Medicine, 2016\",\n    \"Confidence Level\": \"High\"",
+   "mirror": true,
+   "claim": "Table row: \"8-14% reduction in preventable admissions\", source \"MSSP 12-Year Evaluation, CMS 2025\"",
+   "verdict": "FABRICATED",
+   "sources": "McWilliams JM et al., \"Early Performance of Accountable Care Organizations in Medicare,\" NEJM 2016;374:2357-66 (220 ACOs; 2012 cohort -$144/beneficiary, 1.4%, in 2013; 2013 cohort -$3, NS; improved on some quality measures, unchanged on others; savings greater in independent primary care groups)",
+   "note": "Fabricated source and figures replaced."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk009",
+   "old": "\"Best Evidence Source\": \"Health Affairs Systematic Review 2024\"",
+   "new": "\"Best Evidence Source\": \"HTR synthesis (no single definitive study)\"",
+   "mirror": true,
+   "claim": "Table source \"Health Affairs Systematic Review 2024\" for complex multimorbid ACO patients",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No Health Affairs 2024 systematic review matching this description found",
+   "note": "Specific attribution dropped; general point kept."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk009",
+   "old": "\"Best Evidence Source\": \"JAMA Psychiatry 2024\"",
+   "new": "\"Best Evidence Source\": \"HTR synthesis (no single definitive study)\"",
+   "mirror": true,
+   "claim": "Table source \"JAMA Psychiatry 2024\" for ACO behavioral health comorbidity",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No identifiable JAMA Psychiatry 2024 study matching the row",
+   "note": "Specific attribution dropped; general point kept."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk009",
+   "old": "\"Best Evidence Source\": \"CMMI BPCI Advanced Medical Episode Analysis 2024\"",
+   "new": "\"Best Evidence Source\": \"BPCI Advanced evaluation reports (Lewin Group for CMS)\"",
+   "mirror": true,
+   "claim": "Table source \"CMMI BPCI Advanced Medical Episode Analysis 2024\"",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No CMMI publication by that title; BPCI-A results are published in the Lewin Group evaluation reports (cms.gov BPCI Advanced page)",
+   "note": "Re-attributed to the real evaluation series."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk009",
+   "old": "\"Model & Population\": \"Medicare Advantage / Stable Elderly\",\n    \"Evidence Strength\": \"Strong\",\n    \"Key Findings\": \"Consistent preventive care improvement; lower ED utilization; higher patient satisfaction\",\n    \"Best Evidence Source\": \"Commonwealth Fund MA Benchmark Study 2025\",\n    \"Confidence Level\": \"High\"",
+   "new": "\"Model & Population\": \"Medicare Advantage / Stable Elderly\",\n    \"Evidence Strength\": \"Mixed\",\n    \"Key Findings\": \"Lower utilization than traditional Medicare, but favorable selection and coding intensity make outcome and cost comparisons unreliable\",\n    \"Best Evidence Source\": \"MedPAC, March 2024 Report to Congress (Medicare Advantage status report)\",\n    \"Confidence Level\": \"Medium\"",
+   "mirror": true,
+   "claim": "MA row: \"Strong\" evidence; \"higher patient satisfaction\"; source \"Commonwealth Fund MA Benchmark Study 2025\"",
+   "verdict": "FABRICATED",
+   "sources": "MedPAC March 2024 Report to Congress ch. 12: MA payments ~122% of FFS-equivalent spending, driven by coding intensity and favorable selection",
+   "note": "No such Commonwealth Fund study; evidence characterised as Strong was overstated."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk009",
+   "old": "\"Key Findings\": \"Quality metrics often below standalone Medicare; SDOH factors not adequately risk-adjusted\",\n    \"Best Evidence Source\": \"KFF Dual-Eligible VBC Analysis 2025\"",
+   "new": "\"Key Findings\": \"Dual-eligible beneficiaries had worse outcomes on many quality measures even within the same providers, and providers serving more of them fared worse under Medicare value-based purchasing programs\",\n    \"Best Evidence Source\": \"ASPE, Report to Congress: Social Risk Factors and Performance Under Medicare's Value-Based Purchasing Programs, 2016\"",
+   "mirror": true,
+   "claim": "Dual-eligible row source \"KFF Dual-Eligible VBC Analysis 2025\"",
+   "verdict": "UNVERIFIABLE",
+   "sources": "ASPE (HHS) Report to Congress, Dec 2016: dual enrollment was the most powerful predictor of poor outcomes; providers serving more duals performed worse in VBP programs",
+   "note": "Unfindable KFF title replaced with the real primary source for the same point."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk009",
+   "old": "Systematic Review Summary 2025",
+   "new": "HTR Evidence Synthesis",
+   "mirror": true,
+   "claim": "Table caption \"Systematic Review Summary 2025\"",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No such systematic review",
+   "note": "Caption now labels the table as HTR synthesis."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk014",
+   "old": "A 2024 study in Health Affairs found that ACOs serving the highest quartile of dual-eligible beneficiaries — patients enrolled in both Medicare and Medicaid, who face the most complex social and clinical needs — were 2.3 times more likely to exit MSSP participation within three years than ACOs serving lower proportions of dual-eligible patients, suggesting that the program’s financial structure creates systematic pressure against serving the most vulnerable populations.",
+   "new": "A 2019 study in Health Affairs by Markovitz and colleagues found that because MSSP does not raise an ACO’s benchmark when its patients’ risk scores rise, ACOs have an incentive to shed increasingly sick patients — and beneficiaries at the 95th percentile of risk had a 21.6% chance of exiting MSSP attribution, against 16.0% for beneficiaries at the median. HHS’s 2016 Report to Congress on social risk factors likewise found that providers serving more dual-eligible beneficiaries fared worse under Medicare’s value-based purchasing programs.",
+   "mirror": true,
+   "claim": "2024 Health Affairs study: ACOs in top dual-eligible quartile 2.3x more likely to exit MSSP within 3 years",
+   "verdict": "FABRICATED",
+   "sources": "Markovitz AA et al., \"Risk Adjustment In Medicare ACO Program Deters Coding Increases But May Lead ACOs To Drop High-Risk Beneficiaries,\" Health Affairs 2019;38(2) (21.6% vs 16.0%); ASPE Report to Congress Dec 2016",
+   "note": "The 2.3x finding does not exist; replaced with the real study on the same mechanism."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "objKey": "blk015",
+   "expect": "A value-based care model that makes it financially rational ",
+   "drop": true,
+   "mirror": true,
+   "claim": "Quote attributed to Atul Gawande, The New Yorker, 2024",
+   "verdict": "FABRICATED",
+   "sources": "No such Gawande New Yorker piece/quote found",
+   "note": "Fabricated quote removed."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk018",
+   "old": "CMS made its most significant commitment to SDOH risk adjustment in the 2022 MSSP final rule, which introduced a Health Equity Benchmark Adjustment that increases the spending benchmark for ACOs serving high proportions of patients with low-income subsidy status — a proxy for overall socioeconomic disadvantage — by up to 3.5%. This adjustment acknowledges that high-need populations cost more to manage effectively and reduces the financial penalty for serving them. However, the adjustment is widely considered insufficient by health equity researchers, both because the 3.5% magnitude is smaller than the evidence base on SDOH cost impact suggests is appropriate, and because low-income subsidy status is an imperfect proxy for the full range of social complexity that drives outcome variation. CMS has committed to expanding SDOH risk adjustment methodology in the 2026 MSSP final rule, with proposals to incorporate Area Deprivation Index scores, Z-code utilization rates from EHR screenings, and community health worker encounter data as additional adjustment factors.",
+   "new": "CMS has moved toward social-risk adjustment in MSSP in steps. The CY2023 Physician Fee Schedule final rule (November 2022) added a health equity adjustment that awards up to 10 bonus points to the quality scores of high-performing ACOs serving large shares of dual-eligible, low-income-subsidy, or high Area Deprivation Index beneficiaries, and created advance investment payments for new low-revenue ACOs in underserved areas. The CY2025 final rule (November 2024) added a Health Equity Benchmark Adjustment that raises the spending benchmark for ACOs based on their proportion of beneficiaries enrolled in the Part D low-income subsidy or dually eligible for Medicaid. These adjustments acknowledge that high-need populations cost more to manage effectively and reduce the financial penalty for serving them. Health equity researchers argue they remain partial, because low-income subsidy and dual-eligible status are imperfect proxies for the full range of social complexity that drives outcome variation.",
+   "mirror": true,
+   "claim": "2022 MSSP final rule \"Health Equity Benchmark Adjustment\" up to 3.5%; CMS \"committed\" to ADI/Z-code/CHW-encounter adjustment in the 2026 MSSP final rule",
+   "verdict": "FABRICATED",
+   "sources": "CMS fact sheet, CY2023 PFS final rule — Shared Savings Program (2022-11-01: health equity adjustment, up to 10 bonus points; advance investment payments); CMS fact sheet, CY2025 PFS final rule CMS-1807-F (2024-11-01: Health Equity Benchmark Adjustment based on LIS/dual proportion)",
+   "note": "Wrong year, invented 3.5% cap, and an invented 2026 commitment; replaced with the two real rules."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk019",
+   "old": "[\n  {\n    \"SDOH Factor\": \"Food Insecurity\",\n    \"Prevalence in High-Risk VBC Populations\": \"34%\",\n    \"Association with Preventable Hospitalization\": \"2.1x higher risk\",\n    \"Evidence of Clinical Intervention Effectiveness\": \"CHW food assistance referrals reduce admits 18%\",\n    \"CMS Coverage for Addressing Factor\": \"Limited (nutrition benefits in some MA plans)\"\n  },\n  {\n    \"SDOH Factor\": \"Housing Instability / Homelessness\",\n    \"Prevalence in High-Risk VBC Populations\": \"18%\",\n    \"Association with Preventable Hospitalization\": \"4.2x higher risk\",\n    \"Evidence of Clinical Intervention Effectiveness\": \"Housing-first programs reduce ED visits 40%\",\n    \"CMS Coverage for Addressing Factor\": \"Limited (no dedicated federal funding stream; AHEAD requires a health equity plan but has no SDOH fund)\"\n  },\n  {\n    \"SDOH Factor\": \"Transportation Barriers\",\n    \"Prevalence in High-Risk VBC Populations\": \"29%\",\n    \"Association with Preventable Hospitalization\": \"1.7x higher risk (missed appointments)\",\n    \"Evidence of Clinical Intervention Effectiveness\": \"NEMT programs reduce missed appointment rate 31%\",\n    \"CMS Coverage for Addressing Factor\": \"Required NEMT benefit in Medicaid\"\n  },\n  {\n    \"SDOH Factor\": \"Social Isolation / Loneliness\",\n    \"Prevalence in High-Risk VBC Populations\": \"41%\",\n    \"Association with Preventable Hospitalization\": \"1.9x higher risk\",\n    \"Evidence of Clinical Intervention Effectiveness\": \"Community health worker social support reduces admits 14%\",\n    \"CMS Coverage for Addressing Factor\": \"Emerging (MA supplemental benefits)\"\n  },\n  {\n    \"SDOH Factor\": \"Low Health Literacy\",\n    \"Prevalence in High-Risk VBC Populations\": \"36%\",\n    \"Association with Preventable Hospitalization\": \"2.4x higher risk (medication non-adherence)\",\n    \"Evidence of Clinical Intervention Effectiveness\": \"Plain-language education reduces readmissions 22%\",\n    \"CMS Coverage for Addressing Factor\": \"Included in patient education billing codes\"\n  },\n  {\n    \"SDOH Factor\": \"Adverse Childhood Experiences (ACEs)\",\n    \"Prevalence in High-Risk VBC Populations\": \"48%\",\n    \"Association with Preventable Hospitalization\": \"3.1x higher risk (multi-morbidity)\",\n    \"Evidence of Clinical Intervention Effectiveness\": \"Trauma-informed care reduces utilization 15-24%\",\n    \"CMS Coverage for Addressing Factor\": \"Screening reimbursable; interventions limited\"\n  }\n]",
+   "new": "[\n  {\n    \"SDOH Factor\": \"Food Insecurity\",\n    \"Why It Matters in VBC\": \"Undermines diet-sensitive chronic disease control (diabetes, heart failure)\",\n    \"CMS Coverage for Addressing Factor\": \"Limited (nutrition benefits in some MA plans)\"\n  },\n  {\n    \"SDOH Factor\": \"Housing Instability / Homelessness\",\n    \"Why It Matters in VBC\": \"Disrupts medication storage, follow-up, and recovery after discharge\",\n    \"CMS Coverage for Addressing Factor\": \"Limited (no dedicated federal funding stream)\"\n  },\n  {\n    \"SDOH Factor\": \"Transportation Barriers\",\n    \"Why It Matters in VBC\": \"Drives missed appointments and delayed care\",\n    \"CMS Coverage for Addressing Factor\": \"Required NEMT benefit in Medicaid\"\n  },\n  {\n    \"SDOH Factor\": \"Social Isolation / Loneliness\",\n    \"Why It Matters in VBC\": \"Associated with higher utilization and poorer self-management\",\n    \"CMS Coverage for Addressing Factor\": \"Emerging (MA supplemental benefits)\"\n  },\n  {\n    \"SDOH Factor\": \"Low Health Literacy\",\n    \"Why It Matters in VBC\": \"Linked to medication non-adherence and readmissions\",\n    \"CMS Coverage for Addressing Factor\": \"Included in patient education billing codes\"\n  },\n  {\n    \"SDOH Factor\": \"Adverse Childhood Experiences (ACEs)\",\n    \"Why It Matters in VBC\": \"Associated with multimorbidity in adulthood\",\n    \"CMS Coverage for Addressing Factor\": \"Screening reimbursable; interventions limited\"\n  }\n]",
+   "mirror": true,
+   "claim": "SDOH table: prevalence 34/18/29/41/36/48%; 2.1x/4.2x/1.7x/1.9x/2.4x/3.1x risk; CHW referrals -18%, housing-first ED -40%, NEMT -31%, CHW -14%, plain language -22%, trauma-informed -15-24%; \"AHEAD requires a health equity plan\"",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No source given for any figure; none traceable to a single study. AHEAD health equity plan replaced by Population Health Accountability Plans in CMS September 2025 redesign (AHEAD Overview fall 2025 slides)",
+   "note": "All unsourced numeric columns dropped; qualitative mechanism and CMS coverage columns kept."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk019",
+   "old": "Evidence on Impact on Healthcare Outcomes and Costs, 2024",
+   "new": "How Social Risk Shapes VBC Performance",
+   "mirror": true,
+   "claim": "Table caption \"Evidence on Impact on Healthcare Outcomes and Costs, 2024\"",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No source",
+   "note": "Caption no longer implies a sourced 2024 dataset."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk021",
+   "old": "a 2024 meta-analysis of 47 randomized controlled trials found that CHW programs targeting high-risk populations produced an average 22% reduction in preventable hospitalizations, a 31% improvement in chronic disease monitoring completion, and a 4.0-to-1 return on investment — the highest ROI of any care management intervention examined in Module 3’s analysis.",
+   "new": "in a randomized controlled trial of Penn Medicine’s IMPaCT program (Kangovi et al., JAMA Internal Medicine, 2018), patients assigned a community health worker spent fewer total days in the hospital and reported better quality of care than controls, and a follow-up analysis (Health Affairs, 2020) estimated a return of $2.47 to a Medicaid payer for every dollar invested.",
+   "mirror": true,
+   "claim": "2024 meta-analysis of 47 RCTs: CHW programs cut preventable hospitalizations 22%, +31% monitoring, 4.0:1 ROI (highest in Module 3)",
+   "verdict": "FABRICATED",
+   "sources": "Kangovi S et al., JAMA Intern Med 2018;178(12):1635-43 (IMPaCT RCT); Kangovi S et al., Health Affairs 2020;39(2):207-13 ($2.47 per dollar); Module 3 already cites IMPaCT $2.47 (verified phase 6)",
+   "note": "No such meta-analysis; 4.0:1 contradicted Module 3. Replaced with the real RCT and ROI study."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk022",
+   "old": "it gives each participating state up to $12 million in cooperative agreement funding and requires a Statewide Health Equity Plan plus social-risk adjustment in hospital global budgets and Primary Care AHEAD payments.",
+   "new": "it gives each participating state up to $12 million in cooperative agreement funding, and CMS’s September 2025 redesign replaced the original Statewide Health Equity Plan with Population Health Accountability Plans focused on prevention and chronic disease.",
+   "mirror": true,
+   "claim": "AHEAD \"requires a Statewide Health Equity Plan\"",
+   "verdict": "FABRICATED",
+   "sources": "CMS, AHEAD Overview fall 2025 slides (cms.gov/priorities/innovation/files/ahead-overview-fall2025-slides.pdf): PHAPs replace the health equity plan",
+   "note": "Out of date since Sept 2025; aligned with the Module 2 fix."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk023",
+   "old": "the CHW ROI evidence and the new Medicaid coverage rule make 2026 the right year to build one.",
+   "new": "the CHW ROI evidence and Medicare’s Community Health Integration billing codes make now the right time to build one.",
+   "mirror": true,
+   "claim": "\"the new Medicaid coverage rule\" (CHW)",
+   "verdict": "FABRICATED",
+   "sources": "Medicaid CHW coverage is a state option since a 2013 CMS rule effective 2014 (blk022, verified earlier); Medicare CHI codes G0019/G0022 from CY2024 PFS",
+   "note": "No new Medicaid CHW coverage rule exists."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk028",
+   "old": "before the Medicaid reimbursement rule takes effect rather than waiting for guaranteed funding.",
+   "new": "before reimbursement for it is guaranteed rather than waiting for dedicated funding.",
+   "mirror": true,
+   "claim": "\"the Medicaid reimbursement rule\" taking effect",
+   "verdict": "FABRICATED",
+   "sources": "As blk023",
+   "note": "Reference to a nonexistent rule removed."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk025",
+   "old": "occurring before age 75.",
+   "new": "occurring before age 80.",
+   "mirror": true,
+   "claim": "Rural excess deaths from five leading causes \"before age 75\"",
+   "verdict": "FABRICATED",
+   "sources": "Moy E et al., MMWR Surveill Summ 2017;66(1) and Garcia MC et al., MMWR 2017: potentially excess deaths defined among persons aged <80; NCHS Data Brief 417 (2021): rural age-adjusted death rate 20% higher than urban in 2019 (REAL)",
+   "note": "20% rural mortality gap verified (NCHS Data Brief 417); age threshold corrected."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk026",
+   "old": "As of 2025, only 23% of rural Critical Access Hospital service areas are covered by an MSSP ACO, compared to 71% of urban hospital referral regions. ",
+   "new": "",
+   "mirror": true,
+   "claim": "Only 23% of rural CAH service areas covered by an MSSP ACO vs 71% of urban HRRs (2025)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No source found for either figure",
+   "note": "Specific dropped; the general point (lower rural participation) stands."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "key": "blk035",
+   "old": "the MSSP 12-year data,",
+   "new": "the peer-reviewed MSSP evaluations,",
+   "mirror": true,
+   "claim": "Conclusion cites \"the MSSP 12-year data\"",
+   "verdict": "FABRICATED",
+   "sources": "See blk004",
+   "note": "Reference to the nonexistent evaluation removed."
+  },
+  {
+   "docs": [
+    "vbc-fundamentals-module-5-clinical-equity-pillars"
+   ],
+   "objKey": "blk044",
+   "expect": "This 34-minute HTR Academy video module presents the complet",
+   "drop": true,
+   "mirror": true,
+   "claim": "34-minute HTR Academy video (youtube.com/watch?v=HTRAcademy2026M5) with a downloadable VBC Organizational Readiness Assessment",
+   "verdict": "FABRICATED",
+   "sources": "YouTube v=HTRAcademy2026M5 is not a valid video id (same pattern as M2/M3, oEmbed 400); no downloadable assessment exists",
+   "note": "Fake media block removed."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity vbc-fundamentals-module-5-clinical-equity-pillars",
+   "block_key": "blk042",
+   "claim": "Image block describing a four-quadrant equity dashboard (\"illustrative ... MSSP equity benchmark analysis ... 2025\")",
+   "verdict": "UNVERIFIABLE",
+   "action": "none",
+   "sources": "Image block has no asset; AcademyContent/ArticlePageTemplate render nothing",
+   "status": "LEFT",
+   "note": "Non-rendering placeholder; left (same as modules 2-4)."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity vbc-fundamentals-module-5-clinical-equity-pillars",
+   "block_key": "blk017",
+   "claim": "SDOH account for 30-55% of health outcomes vs 10-20% for clinical care",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "WHO, Social determinants of health (30-55%); Hood CM et al., Am J Prev Med 2016 / County Health Rankings model (clinical care ~16-20%)",
+   "status": "LEFT",
+   "note": ""
+  },
+  {
+   "log_only": true,
+   "doc": "sanity vbc-fundamentals-module-5-clinical-equity-pillars",
+   "block_key": "blk022",
+   "claim": "CHI codes G0019/G0022 (CY2024 PFS); Medicaid CHW state option since 2014; 29 of 48 states (KFF 2022); AHEAD up to $12M; 5 states",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "CMS CY2024 PFS final rule; KFF 2022 Medicaid budget survey; CMS AHEAD page (verified in earlier modules this run)",
+   "status": "LEFT",
+   "note": ""
+  }
+ ]
+}

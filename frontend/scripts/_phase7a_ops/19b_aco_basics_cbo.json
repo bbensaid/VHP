@@ -1,0 +1,30 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "s3w1",
+   "old": "The Congressional Budget Office's April 2024 review found \"mixed results\" when comparing ACO spending to counterfactual estimates rather than to program benchmarks.",
+   "new": "The Congressional Budget Office's April 2024 review of research that compares ACO spending with counterfactual estimates, rather than program benchmarks, found savings concentrated in certain types of ACOs — those led by independent physician groups, with more primary care providers, and with higher baseline spending.",
+   "mirror": true,
+   "claim": "CBO \"mixed results\" quote",
+   "verdict": "FABRICATED",
+   "sources": "CBO, \"Medicare Accountable Care Organizations: Past Performance and Future Directions\" (2024-04-16, cbo.gov/publication/60213) — a review of research: greater savings associated with ACOs led by independent physician groups, with a larger share of primary care providers, and with baseline spending above the regional average",
+   "note": "Quoted phrase not found in CBO report."
+  },
+  {
+   "docs": [
+    "aco-basics"
+   ],
+   "key": "src4",
+   "old": "Supports discussion of selection bias, counterfactual savings estimates, and \"mixed results\" finding.",
+   "new": "Supports discussion of selection bias and counterfactual savings estimates.",
+   "mirror": true,
+   "claim": "Source note",
+   "verdict": "FABRICATED",
+   "sources": "CBO, \"Medicare Accountable Care Organizations: Past Performance and Future Directions\" (2024-04-16, cbo.gov/publication/60213) — a review of research: greater savings associated with ACOs led by independent physician groups, with a larger share of primary care providers, and with baseline spending above the regional average",
+   "note": ""
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "capitation-mechanics-rvu-volume"
+   ],
+   "key": "cap-78",
+   "old": "a hospital global budget (as in Maryland, Pennsylvania's rural model, Vermont's Act 167, and the federal AHEAD program)",
+   "new": "a hospital global budget (as in Maryland, the now-ended Pennsylvania Rural Health Model, Vermont's Act 68 of 2025, and the federal AHEAD program)",
+   "mirror": true,
+   "claim": "Vermont hospital global budgets attributed to \"Act 167\"",
+   "verdict": "FABRICATED",
+   "sources": "Vermont Act 68 (2025): hospital reference-based pricing FY2027 and global budgets FY2028 (GMCB); Act 167 (2022) directed community engagement on hospital transformation, not global budgets; CMS PA Rural Health Model page (2017-2024)",
+   "note": "Known open item closed: Act 167 -> Act 68."
+  },
+  {
+   "docs": [
+    "capitation-mechanics-rvu-volume"
+   ],
+   "key": "cap-78",
+   "old": "The Pennsylvania Rural Health Model demonstrated the payoff directly: globally-budgeted rural hospitals proved more resilient to volume loss during COVID-19, when fee-for-service hospitals saw revenue crater as elective volume vanished but budgeted hospitals kept their fixed income. That natural experiment is the clearest proof that decoupling revenue from volume works exactly as the theory predicts.",
+   "new": "The Pennsylvania Rural Health Model (2017–2024) illustrated the stability argument during COVID-19: when elective volume vanished, its participating rural hospitals continued to receive their fixed global-budget payments while fee-for-service revenue cratered elsewhere. That is the core of the theory — revenue that does not depend on volume — although the model never grew beyond a small group of hospitals, and stability is not the same as proof that global budgets improve care or reduce cost.",
+   "mirror": true,
+   "claim": "PA Rural Health Model \"demonstrated the payoff directly\"; \"clearest proof\" via COVID natural experiment",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS PA Rural Health Model page (all-payer global budgets 2019-2024; ended 2024-12-31); no evaluation establishing the COVID comparison as proof",
+   "note": "Overstated evidentiary claim softened to what is documented; model ended."
+  },
+  {
+   "docs": [
+    "capitation-mechanics-rvu-volume"
+   ],
+   "key": "cap-80",
+   "old": "and the early evidence that budgeted hospitals weather volume shocks better is the empirical case for the transition.",
+   "new": "and the experience of budgeted hospitals during the COVID-19 volume shock is the practical case for the transition.",
+   "mirror": true,
+   "claim": "\"early evidence that budgeted hospitals weather volume shocks better\"",
+   "verdict": "UNVERIFIABLE",
+   "sources": "As cap-78",
+   "note": ""
+  }
+ ]
+}

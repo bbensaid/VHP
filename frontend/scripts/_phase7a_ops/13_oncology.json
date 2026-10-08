@@ -1,0 +1,184 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "academyModule-vbc-oncology"
+   ],
+   "key": "ocm-intro",
+   "old": "Cancer care accounts for approximately $190 billion in annual US healthcare spending,",
+   "new": "National expenditures for cancer care in the United States totaled nearly $209 billion in 2020 (National Cancer Institute estimate),",
+   "mirror": true,
+   "claim": "Cancer care ~$190B annual US spending",
+   "verdict": "UNVERIFIABLE",
+   "sources": "NCI Cancer Trends Progress Report, Financial Burden of Cancer Care: ~$208.9B in 2020",
+   "note": "Unsourced figure replaced with NCI's published estimate."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-oncology"
+   ],
+   "key": "ocm-p4",
+   "old": "When drug costs represent 60-80% of oncology episode spending,",
+   "new": "When drugs are the largest component of oncology episode spending,",
+   "mirror": true,
+   "claim": "Drugs = 60-80% of oncology episode spending",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No source for the 60-80% range",
+   "note": "Specific dropped; point kept."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-oncology"
+   ],
+   "key": "ocm-p7",
+   "old": "At peak enrollment, approximately 175 practices participated, treating roughly 155,000 Medicare beneficiaries annually. OCM also included a quality performance requirement: practices had to achieve quality thresholds across 12 measures spanning",
+   "new": "Nearly 200 physician group practices and 17 commercial payers joined at launch in 2016. OCM also included a quality performance requirement: practices had to achieve quality thresholds on measures spanning",
+   "mirror": true,
+   "claim": "~175 practices at peak, ~155,000 beneficiaries/year; 12 quality measures",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS OCM announcement, June 2016 (\"nearly 200 physician group practices and 17 health insurance companies\")",
+   "note": "Unverifiable counts replaced with CMS launch figures."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-oncology"
+   ],
+   "key": "ocm-p9",
+   "old": "The emergency department reduction was the most financially meaningful operational change across OCM participants. Research by Kline and colleagues found that OCM participation was associated with a 9-14% reduction in emergency department visits among chemotherapy patients relative to matched controls — a meaningful quality improvement (since ED visits represent care failures for oncology patients) that also generated meaningful cost savings. Hospital admission rates also declined modestly. These changes were achievable because they reflected addressable care gaps: chemotherapy patients presenting to EDs for symptoms that could have been managed by oncology practices with the staffing and protocols to handle them.",
+   "new": "These changes targeted a real care gap — chemotherapy patients presenting to emergency departments for symptoms that an oncology practice with the right staffing and protocols could have managed. Yet the independent evaluation found that OCM had no measurable impact on emergency department visits or hospitalizations: practices changed their processes, but the utilization outcomes the changes were meant to move did not shift relative to comparison practices.",
+   "mirror": true,
+   "claim": "\"Research by Kline and colleagues\": OCM associated with 9-14% fewer ED visits; admissions declined",
+   "verdict": "FABRICATED",
+   "sources": "Abt Associates, Evaluation of the Oncology Care Model: Final Report (for CMS): relative reduction of $616/episode in Medicare payments excluding MEOS/PBP, $1,282 in final period; net loss to Medicare $639M over 6 years; no significant impact on utilization or quality. Abt PP1-5 report: no change in ED visits or hospitalizations",
+   "note": "Contradicted by the CMS evaluation; replaced with its finding."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-oncology"
+   ],
+   "key": "ocm-p10",
+   "old": "found that OCM did not generate statistically significant net savings to Medicare in its first several performance periods. Gross savings from reduced utilization (ED visits, hospitalizations, post-acute care) were real and consistent, but these savings were largely offset by the MEOS payments CMS made to participating practices. On net, OCM's financial impact on Medicare was approximately zero — a finding that disappointed proponents who had expected the model to generate substantial savings.",
+   "new": "found that OCM reduced Medicare episode payments by an average of $616 per episode relative to comparison episodes — a reduction that grew to $1,282 in the final performance period — but these gross savings did not cover the MEOS and performance-based payments CMS made to participating practices. On net, OCM cost Medicare about $639 million over its six years, a finding that disappointed proponents who had expected the model to generate substantial savings.",
+   "mirror": true,
+   "claim": "OCM net financial impact \"approximately zero\"",
+   "verdict": "FABRICATED",
+   "sources": "Abt Associates, Evaluation of the Oncology Care Model: Final Report (for CMS): relative reduction of $616/episode in Medicare payments excluding MEOS/PBP, $1,282 in final period; net loss to Medicare $639M over 6 years; no significant impact on utilization or quality. Abt PP1-5 report: no change in ED visits or hospitalizations",
+   "note": "Net result was a $639M loss, not zero."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-oncology"
+   ],
+   "key": "ocm-p11",
+   "old": "Quality outcomes in OCM were more positive. Participating practices showed improvements in care planning documentation, patient experience scores, and end-of-life care quality indicators including increased hospice use and reduced aggressive care in the last 30 days of life. The improvement in end-of-life care quality — moving patients toward goal-concordant care earlier in terminal illness — is arguably the most important quality achievement in oncology value-based care, with both patient welfare and cost implications that are substantial.",
+   "new": "Quality results were similarly muted: the final evaluation found no significant impact on measured quality of care. Earlier evaluation reports did find lower spending at the end of life, with the largest effect on hospitalizations in the last month of life — and moving patients toward goal-concordant care earlier in terminal illness remains one of the most important goals in oncology value-based care, with substantial patient welfare and cost implications.",
+   "mirror": true,
+   "claim": "OCM improved care planning documentation, patient experience scores, hospice use, and reduced aggressive end-of-life care",
+   "verdict": "FABRICATED",
+   "sources": "Abt Associates, Evaluation of the Oncology Care Model: Final Report (for CMS): relative reduction of $616/episode in Medicare payments excluding MEOS/PBP, $1,282 in final period; net loss to Medicare $639M over 6 years; no significant impact on utilization or quality. Abt PP1-5 report: no change in ED visits or hospitalizations; Abt PP1-5 report: end-of-life spending decreased, greatest impact on hospitalizations in last month of life",
+   "note": "Overstated quality findings replaced with the evaluation's results."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-oncology"
+   ],
+   "key": "ocm-p13",
+   "old": "Several large oncology groups withdrew from OCM specifically because they could not manage their financial exposure to drug cost trends that bore no relationship to their care management decisions.",
+   "new": "Practices bearing two-sided risk were exposed to drug cost trends that bore no relationship to their care management decisions.",
+   "mirror": true,
+   "claim": "Several large oncology groups withdrew from OCM specifically over drug-cost exposure",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No source identifying such withdrawals and reasons",
+   "note": "Specific dropped; mechanism kept."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-oncology"
+   ],
+   "key": "ocm-p14",
+   "old": "It increased the Monthly Enhanced Oncology Services payment from $160 to $750 per beneficiary per month to fund more robust care management.",
+   "new": "It actually lowered the Monthly Enhanced Oncology Services payment, from OCM's $160 to $70 per beneficiary per month (plus $30 for dual-eligible beneficiaries), then raised it to $110 ($140 for dual-eligible beneficiaries) in 2024 refinements, and it required participants to take on two-sided risk.",
+   "mirror": true,
+   "claim": "EOM raised MEOS from $160 to $750 PBPM",
+   "verdict": "FABRICATED",
+   "sources": "CMS EOM payment methodology: MEOS $70 PBPM + $30 for duals; CMS May 2024 refinements: $110 base, $140 duals (Healthcare Innovation, \"CMMI Refines and Extends Enhancing Oncology Model\")",
+   "note": "MEOS went down, not up."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-oncology"
+   ],
+   "key": "ocm-p14",
+   "old": "It also added explicit health equity requirements — practices must collect and report race and ethnicity data and implement interventions targeting disparities for each episode initiator patient.",
+   "new": "It also added health equity requirements: participants must screen patients for health-related social needs, collect sociodemographic data, and maintain health equity plans.",
+   "mirror": true,
+   "claim": "EOM requires interventions targeting disparities for each episode initiator patient",
+   "verdict": "FABRICATED",
+   "sources": "CMS EOM model overview (HRSN screening, sociodemographic data collection, health equity plans); consistent with hedis-p19 (phase 5)",
+   "note": "Overstated requirement corrected."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-oncology"
+   ],
+   "key": "ocm-p15",
+   "old": "EOM also made partial progress on the drug cost problem by excluding very high-cost therapies from the bundle (a carve-out approach) for specified conditions where drug cost variability is driven by treatment selection rather than care management.",
+   "new": "EOM did not remove drugs from accountability: participants remain responsible for the total cost of care for each episode, drugs included, so the drug cost problem carries over.",
+   "mirror": true,
+   "claim": "EOM excludes very high-cost therapies from the bundle (carve-out)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS EOM payment methodology: participants responsible for total cost of care incl. drugs",
+   "note": "Unsupported carve-out claim replaced."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-oncology"
+   ],
+   "key": "ocm-p15",
+   "old": "reflect genuine learning from OCM's decade of operation",
+   "new": "reflect genuine learning from OCM's six years of operation",
+   "mirror": true,
+   "claim": "OCM's \"decade of operation\"",
+   "verdict": "FABRICATED",
+   "sources": "OCM ran July 2016 - June 2022 (CMS)",
+   "note": ""
+  },
+  {
+   "docs": [
+    "academyModule-vbc-oncology"
+   ],
+   "key": "ocm-synthesis",
+   "old": "The EOM's equity requirements and higher care management payments represent genuine progress",
+   "new": "The EOM's equity requirements and mandatory two-sided risk represent genuine progress",
+   "mirror": true,
+   "claim": "EOM \"higher care management payments\"",
+   "verdict": "FABRICATED",
+   "sources": "As ocm-p14",
+   "note": ""
+  },
+  {
+   "docs": [
+    "academyModule-vbc-oncology"
+   ],
+   "key": "ocm-synthesis",
+   "old": "but it succeeded in demonstrating that systematic care management investment in oncology can reduce emergency utilization, improve end-of-life care quality, and support goal-concordant care.",
+   "new": "and the care-delivery changes it prompted — navigation, 24/7 access, treatment pathways — did not translate into measurable reductions in emergency utilization.",
+   "mirror": true,
+   "claim": "OCM demonstrated reduced emergency utilization and improved end-of-life quality",
+   "verdict": "FABRICATED",
+   "sources": "Abt Associates, Evaluation of the Oncology Care Model: Final Report (for CMS): relative reduction of $616/episode in Medicare payments excluding MEOS/PBP, $1,282 in final period; net loss to Medicare $639M over 6 years; no significant impact on utilization or quality. Abt PP1-5 report: no change in ED visits or hospitalizations",
+   "note": "Synthesis aligned with the evaluation."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity academyModule-vbc-oncology",
+   "block_key": "ocm-p4/p6/p12/p14",
+   "claim": "Keytruda $100-200K/yr; CAR-T $400-500K; MEOS $160; ASP+6%; EOM July 2023, 7 cancer types",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "CMS OCM/EOM model pages; Kymriah list $475K, Yescarta $373K; Medicare Part B ASP+6%",
+   "status": "LEFT",
+   "note": ""
+  }
+ ]
+}

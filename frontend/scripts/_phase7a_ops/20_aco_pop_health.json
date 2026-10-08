@@ -1,0 +1,157 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "aco-population-health-strategy"
+   ],
+   "key": "s1p3",
+   "old": "generated record net savings of roughly $2.4 billion,",
+   "new": "generated record net savings of roughly $2.5 billion,",
+   "mirror": true,
+   "claim": "PY2024 net savings ~$2.4B",
+   "verdict": "FABRICATED",
+   "sources": "CMS fact sheet \"MSSP ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 10.3M; Medicare saved $2.5B; 75% earning; low-revenue $319 vs high-revenue $180; primary-care-heavy ACOs $403 vs $224 net per capita",
+   "note": "CMS updated figure is $2.5B."
+  },
+  {
+   "docs": [
+    "aco-population-health-strategy"
+   ],
+   "key": "s2p3",
+   "old": "In 2024, two-sided-risk ACOs generated the large majority of all savings, because real downside risk drives serious population health investment. Risk is the engine:",
+   "new": "Real downside risk is meant to drive serious population health investment:",
+   "mirror": true,
+   "claim": "2024: two-sided-risk ACOs generated the large majority of savings",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS fact sheet \"MSSP ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 10.3M; Medicare saved $2.5B; 75% earning; low-revenue $319 vs high-revenue $180; primary-care-heavy ACOs $403 vs $224 net per capita (no track-level savings split published)",
+   "note": "Specific dropped."
+  },
+  {
+   "docs": [
+    "aco-population-health-strategy"
+   ],
+   "key": "s3p3",
+   "old": "top-performing ACOs have markedly higher primary-care utilization — one analysis found about 2.5 times the PCP service use of the MSSP average — because strong primary care prevents the downstream expensive events.",
+   "new": "ACOs composed predominantly of primary care clinicians saved Medicare $403 per beneficiary in 2024 versus $224 for ACOs with fewer primary care clinicians (CMS), because strong primary care prevents the downstream expensive events.",
+   "mirror": true,
+   "claim": "Avalere: top ACOs ~2.5x the MSSP-average PCP service use",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Avalere article (avalerehealth.com) contains no 2.5x figure; CMS fact sheet \"MSSP ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 10.3M; Medicare saved $2.5B; 75% earning; low-revenue $319 vs high-revenue $180; primary-care-heavy ACOs $403 vs $224 net per capita",
+   "note": "Replaced with CMS-published primary-care comparison."
+  },
+  {
+   "docs": [
+    "aco-population-health-strategy"
+   ],
+   "objKey": "s2",
+   "expect": "8th consecutive year of savings (CMS)",
+   "set": {
+    "value": "~$2.5B"
+   },
+   "mirror": true,
+   "claim": "Stat ~$2.4B",
+   "verdict": "FABRICATED",
+   "sources": "CMS fact sheet \"MSSP ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 10.3M; Medicare saved $2.5B; 75% earning; low-revenue $319 vs high-revenue $180; primary-care-heavy ACOs $403 vs $224 net per capita",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-population-health-strategy"
+   ],
+   "objKey": "s3",
+   "expect": "Risk-bearing ACOs generated the majority of 2024 savings",
+   "set": {
+    "value": "$319 vs $180",
+    "label": "Low- vs High-Revenue ACOs",
+    "context": "Net per capita savings, physician-led (low-revenue) vs hospital-led (high-revenue) ACOs, 2024 (CMS)"
+   },
+   "mirror": true,
+   "claim": "Stat: risk-bearing ACOs generated majority of 2024 savings (CMS)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS fact sheet \"MSSP ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 10.3M; Medicare saved $2.5B; 75% earning; low-revenue $319 vs high-revenue $180; primary-care-heavy ACOs $403 vs $224 net per capita",
+   "note": "Replaced with CMS-published comparison."
+  },
+  {
+   "docs": [
+    "aco-population-health-strategy"
+   ],
+   "objKey": "s4",
+   "expect": "Top performers vs. MSSP average primary-care utilization (Avalere)",
+   "set": {
+    "value": "$403 vs $224",
+    "label": "Primary-Care-Heavy ACOs",
+    "context": "Net per capita savings, ACOs mostly of primary care clinicians vs others, 2024 (CMS)"
+   },
+   "mirror": true,
+   "claim": "Stat: ~2.5x PCP use, top ACOs (Avalere)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS fact sheet \"MSSP ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 10.3M; Medicare saved $2.5B; 75% earning; low-revenue $319 vs high-revenue $180; primary-care-heavy ACOs $403 vs $224 net per capita",
+   "note": "Replaced with CMS-published comparison."
+  },
+  {
+   "docs": [
+    "aco-population-health-strategy"
+   ],
+   "key": "tw",
+   "old": "generated record net savings of ~$2.4 billion,",
+   "new": "generated record net savings of ~$2.5 billion,",
+   "mirror": true,
+   "claim": "Takeaway $2.4B",
+   "verdict": "FABRICATED",
+   "sources": "CMS fact sheet \"MSSP ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 10.3M; Medicare saved $2.5B; 75% earning; low-revenue $319 vs high-revenue $180; primary-care-heavy ACOs $403 vs $224 net per capita",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-population-health-strategy"
+   ],
+   "key": "tw",
+   "old": "two-sided (downside) risk drives the majority of savings because real risk drives serious investment.",
+   "new": "two-sided (downside) risk is meant to drive serious population health investment.",
+   "mirror": true,
+   "claim": "Takeaway: two-sided risk drives majority of savings",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS fact sheet \"MSSP ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 10.3M; Medicare saved $2.5B; 75% earning; low-revenue $319 vs high-revenue $180; primary-care-heavy ACOs $403 vs $224 net per capita",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-population-health-strategy"
+   ],
+   "key": "tw",
+   "old": "primary-care investment (top ACOs ~2.5x PCP use).",
+   "new": "primary-care investment (primary-care-heavy ACOs saved $403 vs $224 per beneficiary in 2024).",
+   "mirror": true,
+   "claim": "Takeaway ~2.5x",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS fact sheet \"MSSP ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 10.3M; Medicare saved $2.5B; 75% earning; low-revenue $319 vs high-revenue $180; primary-care-heavy ACOs $403 vs $224 net per capita",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-population-health-strategy"
+   ],
+   "key": "src2",
+   "old": "~$2.4B net savings; eighth consecutive year; two-sided risk driving savings",
+   "new": "record savings; eighth consecutive year of savings",
+   "mirror": true,
+   "claim": "Source note",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS fact sheet \"MSSP ACOs Updated Performance Year 2024 Financial and Quality Results\" (2025-09-29): 476 ACOs; 10.3M; Medicare saved $2.5B; 75% earning; low-revenue $319 vs high-revenue $180; primary-care-heavy ACOs $403 vs $224 net per capita",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-population-health-strategy"
+   ],
+   "key": "src5",
+   "old": "top ACOs ~2.5x PCP utilization; complex-patient focus",
+   "new": "complex-patient focus of top-performing ACOs",
+   "mirror": true,
+   "claim": "Source note ~2.5x",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Avalere page",
+   "note": ""
+  }
+ ]
+}

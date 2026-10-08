@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { AlertTriangle, CheckCircle } from "lucide-react";
 import { fmt, fmtUSD } from "../APMDesignLab.data";
+import { APM_MODEL_TYPES, computeApm, getModelType, type RiskArrangement } from "../APMDesignLab.models";
 import {
   SectionCard, SliderField, SelectField, StatBox, ViabilityBadge,
 } from "../APMDesignLab.atoms";
@@ -33,63 +34,44 @@ export function APMArchitectureDesigner() {
   const [actualSpendPct, setActualSpendPct] = useState(94);
   const [qualityScore, setQualityScore] = useState(72);
 
+  const model = getModelType(modelType);
+
+  // Selecting a model type loads that program's own parameters (see
+  // APMDesignLab.models.ts for the CMS / HSCRC source of each default).
+  function selectModelType(id: string) {
+    const m = getModelType(id);
+    setModelType(m.id);
+    if (m.riskArrangement !== "none") setRiskArrangement(m.riskArrangement);
+    setUpsideShare(m.upsideShare);
+    setDownsideShare(m.downsideShare);
+    setMsr(m.msr);
+    setMlr(m.mlr);
+    setSavingsCap(m.savingsCap);
+    setLossCap(m.lossCap);
+    setQualityWithhold(m.qualityWithhold);
+    setQualityThreshold(Math.max(40, m.qualityThreshold));
+  }
+
+  const effectiveRisk = model.id === "hybrid" ? riskArrangement : model.riskArrangement;
+
   const results = useMemo(() => {
-    const totalBenchmark = attributedLives * benchmarkPMPM * 12;
-    const totalActual = totalBenchmark * (actualSpendPct / 100);
-    const grossSavings = totalBenchmark - totalActual;
-    const grossSavingsPct = (grossSavings / totalBenchmark) * 100;
-
-    // MSR / MLR gate
-    const msrThreshold = totalBenchmark * (msr / 100);
-    const mlrThreshold = totalBenchmark * (mlr / 100);
-
-    let netACOPosition = 0;
-    let msrMet = false;
-    let mlrTriggered = false;
-
-    if (grossSavings > 0) {
-      msrMet = grossSavings >= msrThreshold;
-      if (msrMet) {
-        // Apply savings cap
-        const cappedSavings = Math.min(
-          grossSavings,
-          totalBenchmark * (savingsCap / 100)
-        );
-        netACOPosition = cappedSavings * (upsideShare / 100);
-      }
-    } else {
-      // Loss scenario
-      if (
-        riskArrangement !== "one_sided" &&
-        Math.abs(grossSavings) >= mlrThreshold
-      ) {
-        mlrTriggered = true;
-        const cappedLoss = Math.min(
-          Math.abs(grossSavings),
-          totalBenchmark * (lossCap / 100)
-        );
-        netACOPosition = -cappedLoss * (downsideShare / 100);
-      }
-    }
-
-    // Quality withhold
-    const withholdAmount = totalBenchmark * (qualityWithhold / 100);
-    const qualityPenalty =
-      qualityScore < qualityThreshold ? -withholdAmount : 0;
-    const finalPosition = netACOPosition + qualityPenalty;
-
-    const pmpmEquivalent = finalPosition / (attributedLives * 12);
-
-    // Break-even: what actual spend % would yield zero net position
-    const breakEvenActualPct =
-      100 - msr - (qualityPenalty < 0 ? qualityWithhold : 0);
+    const r = computeApm(model, {
+      attributedLives, benchmarkPMPM, actualSpendPct, qualityScore,
+      upsideShare, downsideShare, msr, mlr, savingsCap, lossCap,
+      qualityWithhold, qualityThreshold,
+      riskArrangement: riskArrangement as RiskArrangement,
+    });
+    const { totalBenchmark, finalPosition } = r;
 
     // Viability
     let viability: "green" | "amber" | "red";
     let viabilityReason: string;
     const finalPct = (finalPosition / totalBenchmark) * 100;
 
-    if (finalPosition > 0 && finalPct >= 1) {
+    if (model.mechanism === "none") {
+      viability = "amber";
+      viabilityReason = "Fee-for-service baseline: no reconciliation, so spending below the benchmark earns nothing. Compare against the other seven model types.";
+    } else if (finalPosition > 0 && finalPct >= 1) {
       viability = "green";
       viabilityReason = `Strong positive position of ${fmtUSD(
         finalPosition
@@ -103,7 +85,7 @@ export function APMArchitectureDesigner() {
       viability = "amber";
       viabilityReason = `Moderate loss of ${fmtUSD(
         Math.abs(finalPosition)
-      )}. Downside risk exposure may challenge ACO participation.`;
+      )}. Downside risk exposure may challenge participation.`;
     } else {
       viability = "red";
       viabilityReason = `Significant loss position of ${fmtUSD(
@@ -111,82 +93,37 @@ export function APMArchitectureDesigner() {
       )} (${Math.abs(finalPct).toFixed(1)}% of benchmark). Model structure creates excessive downside risk.`;
     }
 
-    // Waterfall steps
     const waterfall = [
+      { label: "Gross Benchmark", value: totalBenchmark, type: "base" as const },
+      ...(r.discountAmount > 0
+        ? [{ label: `CMS Discount (${model.discountPct}%)`, value: -r.discountAmount, type: "negative" as const }]
+        : []),
+      { label: "Actual Spend", value: r.totalActual, type: r.grossSavings >= 0 ? ("positive" as const) : ("negative" as const) },
       {
-        label: "Gross Benchmark",
-        value: totalBenchmark,
-        delta: 0,
-        type: "base" as const,
-      },
-      {
-        label: "Actual Spend",
-        value: totalActual,
-        delta: -grossSavings,
-        type: grossSavings >= 0 ? ("positive" as const) : ("negative" as const),
-      },
-      {
-        label: msrMet
-          ? "After MSR Gate (met)"
-          : mlrTriggered
-          ? "After MLR Gate"
-          : "MSR/MLR Gate (not met)",
-        value:
-          grossSavings > 0
-            ? msrMet
-              ? grossSavings
-              : 0
-            : mlrTriggered
-            ? grossSavings
-            : 0,
-        delta: grossSavings > 0 && !msrMet ? -grossSavings : 0,
+        label: model.mechanism === "none"
+          ? "No reconciliation (FFS)"
+          : model.mechanism === "flat"
+          ? (r.msrMet ? "After MSR Gate (met)" : r.mlrTriggered ? "After MLR Gate" : "MSR/MLR Gate (not met)")
+          : "Savings / Loss vs Target",
+        value: model.mechanism === "flat" ? (r.msrMet || r.mlrTriggered ? r.grossSavings : 0) : model.mechanism === "none" ? 0 : r.grossSavings,
         type: "neutral" as const,
       },
       {
-        label: "Sharing Rate Applied",
-        value: netACOPosition,
-        delta:
-          netACOPosition -
-          (grossSavings > 0 && msrMet
-            ? Math.min(grossSavings, totalBenchmark * (savingsCap / 100))
-            : Math.abs(grossSavings) > mlrThreshold && mlrTriggered
-            ? grossSavings
-            : 0),
-        type: netACOPosition >= 0 ? ("positive" as const) : ("negative" as const),
+        label: model.mechanism === "corridor" ? "Risk Corridors Applied" : model.mechanism === "full_retention" ? "Full Retention (100%)" : "Sharing Rate Applied",
+        value: r.netACOPosition,
+        type: r.netACOPosition >= 0 ? ("positive" as const) : ("negative" as const),
       },
       {
-        label:
-          qualityPenalty < 0 ? "Quality Withhold (penalty)" : "Quality (passed)",
-        value: qualityPenalty,
-        delta: qualityPenalty,
-        type: qualityPenalty < 0 ? ("negative" as const) : ("positive" as const),
+        label: model.quality === "none" ? "Quality (no separate adjustment)" : r.qualityAdjustment < 0 ? "Quality Adjustment (penalty)" : "Quality Adjustment",
+        value: r.qualityAdjustment,
+        type: r.qualityAdjustment < 0 ? ("negative" as const) : ("positive" as const),
       },
-      {
-        label: "Net ACO Position",
-        value: finalPosition,
-        delta: qualityPenalty,
-        type: finalPosition >= 0 ? ("positive" as const) : ("negative" as const),
-      },
+      { label: "Net Provider Position", value: finalPosition, type: finalPosition >= 0 ? ("positive" as const) : ("negative" as const) },
     ];
 
-    return {
-      totalBenchmark,
-      totalActual,
-      grossSavings,
-      grossSavingsPct,
-      netACOPosition,
-      finalPosition,
-      pmpmEquivalent,
-      breakEvenActualPct,
-      viability,
-      viabilityReason,
-      waterfall,
-      msrMet,
-      mlrTriggered,
-      withholdAmount,
-      qualityPenalty,
-    };
+    return { ...r, viability, viabilityReason, waterfall, qualityPenalty: r.qualityAdjustment };
   }, [
+    model,
     attributedLives,
     benchmarkPMPM,
     actualSpendPct,
@@ -213,27 +150,52 @@ export function APMArchitectureDesigner() {
         {/* Section A */}
         <SectionCard title="A — Payment Structure">
           <SelectField
-            label="Model Type"
+            label="Model Type (8)"
             value={modelType}
-            onChange={setModelType}
-            options={[
-              { value: "ffs_baseline", label: "Fee-for-Service Baseline" },
-              { value: "episode", label: "Episode-Based" },
-              { value: "capitation", label: "Capitation" },
-              { value: "global_budget", label: "Global Budget" },
-              { value: "hybrid", label: "Hybrid" },
-            ]}
+            onChange={selectModelType}
+            options={APM_MODEL_TYPES.map((m) => ({ value: m.id, label: `${m.label} — ${m.hcpLan}` }))}
           />
-          <SelectField
-            label="Risk Arrangement"
-            value={riskArrangement}
-            onChange={setRiskArrangement}
-            options={[
-              { value: "one_sided", label: "One-Sided (Upside Only)" },
-              { value: "two_sided", label: "Two-Sided (Upside + Downside)" },
-              { value: "full_risk", label: "Full Risk" },
-            ]}
-          />
+          <div className="mb-4 rounded-lg border border-gray-700 bg-gray-800/60 p-3 text-xs" data-testid="apm-model-flow">
+            <div className="text-emerald-400 font-semibold mb-1">{model.realProgram}</div>
+            <p className="text-slate-300 leading-relaxed">{model.paymentFlow}</p>
+            {model.corridors && (
+              <p className="text-slate-400 mt-1">
+                Risk corridors (share kept):{" "}
+                {model.corridors.map((c, i) => {
+                  const lo = i === 0 ? 0 : model.corridors![i - 1].upToPct;
+                  return `${lo}${Number.isFinite(c.upToPct) ? `–${c.upToPct}` : "+"}% → ${Math.round(c.providerShare * 100)}%`;
+                }).join(" · ")}
+                {model.id === "full_capitation" && " (PY2026; bands above 10% assumed unchanged from PY2025 — see source note)"}
+              </p>
+            )}
+            {model.msrFromLives && (
+              <p className="text-slate-400 mt-1">MSR set by CMS sliding scale for {fmt(attributedLives)} assigned beneficiaries: {results.effectiveMsr.toFixed(2)}%</p>
+            )}
+            {model.lossRateFromQuality && (
+              <p className="text-slate-400 mt-1">Shared loss rate at quality {qualityScore}/100: {results.effectiveLossRate.toFixed(0)}% (1 − 0.75 × quality, bounded 40–75%)</p>
+            )}
+            <p className="text-slate-500 mt-1">Source: {model.source}</p>
+          </div>
+          {model.id === "hybrid" ? (
+            <SelectField
+              label="Risk Arrangement"
+              value={riskArrangement}
+              onChange={setRiskArrangement}
+              options={[
+                { value: "one_sided", label: "One-Sided (Upside Only)" },
+                { value: "two_sided", label: "Two-Sided (Upside + Downside)" },
+                { value: "full_risk", label: "Full Risk" },
+              ]}
+            />
+          ) : (
+            <div className="mb-4 text-xs text-slate-400">
+              Risk arrangement:{" "}
+              <span className="text-slate-200 font-semibold">
+                {{ none: "None (FFS)", one_sided: "One-sided (upside only)", two_sided: "Two-sided", full_risk: "Full risk" }[model.riskArrangement]}
+              </span>{" "}
+              — fixed by {model.realProgram}.
+            </div>
+          )}
           <SelectField
             label="Attribution Method"
             value={attributionMethod}
@@ -268,6 +230,15 @@ export function APMArchitectureDesigner() {
 
         {/* Section B */}
         <SectionCard title="B — Financial Parameters">
+          {model.mechanism !== "flat" && (
+            <p className="mb-4 text-xs text-amber-300 bg-gray-800 rounded-lg p-2" data-testid="apm-mechanism-note">
+              {model.mechanism === "none"
+                ? "Fee-for-service has no settlement: sharing, MSR/MLR and cap sliders do not apply."
+                : model.mechanism === "corridor"
+                ? "This model settles through the risk corridors shown above, not flat sharing rates: sharing, MSR/MLR and cap sliders do not apply. Quality withhold does."
+                : "A global budget keeps 100% of savings and absorbs 100% of losses: sharing, MSR/MLR and cap sliders do not apply. Quality adjusts revenue ±."}
+            </p>
+          )}
           <SliderField
             label="Sharing Rate — Upside"
             value={upsideShare}
@@ -319,7 +290,7 @@ export function APMArchitectureDesigner() {
             display={`${lossCap}%`}
           />
           <SliderField
-            label="Quality Withhold"
+            label={model.quality === "cqs" ? "CQS Adjustment (max % of reconciliation)" : model.quality === "symmetric" ? "Quality Revenue at Risk (±)" : "Quality Withhold"}
             value={qualityWithhold}
             min={0}
             max={10}
@@ -327,7 +298,7 @@ export function APMArchitectureDesigner() {
             onChange={setQualityWithhold}
             display={`${qualityWithhold}%`}
           />
-          <SliderField
+          {model.quality !== "cqs" && <SliderField
             label="Quality Threshold Score"
             sub="(below = withhold applies)"
             value={qualityThreshold}
@@ -335,7 +306,7 @@ export function APMArchitectureDesigner() {
             max={80}
             onChange={setQualityThreshold}
             display={`${qualityThreshold}/100`}
-          />
+          />}
         </SectionCard>
 
         {/* Section C */}
@@ -389,7 +360,7 @@ export function APMArchitectureDesigner() {
               positive={results.grossSavings >= 0}
             />
             <StatBox
-              label="Net ACO Position"
+              label="Net Provider Position"
               value={fmtUSD(results.finalPosition)}
               sub="After all adjustments"
               positive={results.finalPosition >= 0}
@@ -419,7 +390,6 @@ export function APMArchitectureDesigner() {
                   maxAbsWaterfall > 0
                     ? (Math.abs(step.value) / maxAbsWaterfall) * 100
                     : 0;
-                const isPositive = step.value >= 0;
                 const barColor =
                   step.type === "base"
                     ? "bg-gray-500"
@@ -472,17 +442,23 @@ export function APMArchitectureDesigner() {
                   ? "Savings exceed MSR threshold"
                   : results.grossSavings < 0
                   ? "N/A (deficit scenario)"
-                  : `Savings below ${msr}% MSR — no shared savings earned`,
+                  : `Savings below ${results.effectiveMsr}% MSR — no shared savings earned`,
               },
               {
                 label: "Downside Exposure",
-                met: riskArrangement === "one_sided",
+                met: effectiveRisk === "one_sided" || effectiveRisk === "none",
                 note:
-                  riskArrangement === "one_sided"
+                  effectiveRisk === "none"
+                    ? "Fee-for-service: no settlement either way"
+                    : effectiveRisk === "one_sided"
                     ? "One-sided: no downside risk"
-                    : `Exposed up to ${lossCap}% of benchmark (${fmtUSD(
+                    : model.mechanism === "flat"
+                    ? `Exposed up to ${lossCap}% of benchmark (${fmtUSD(
                         results.totalBenchmark * (lossCap / 100)
-                      )})`,
+                      )})`
+                    : model.mechanism === "corridor"
+                    ? "Losses shared through the risk corridors above"
+                    : "Uncapped: 100% of any overrun is absorbed",
               },
               {
                 label: "Quality Withhold",
